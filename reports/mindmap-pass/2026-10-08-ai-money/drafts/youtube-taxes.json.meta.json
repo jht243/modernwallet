@@ -1,0 +1,285 @@
+{
+ "slug": "youtube-taxes",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1390,
+ "floor": 1000,
+ "input_tokens": 22044,
+ "output_tokens": 2756,
+ "thinking_tokens": null,
+ "cached_tokens": 17185,
+ "est_cost_usd": 0.0153,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1381,
+  "numbers_not_in_facts": [
+   "554",
+   "6464.5"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    2
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "According to [IRS rules for deducting expenses](https://www.irs.gov/businesses/small-businesses-self-employed/deducting-business-expenses), capital equipment like cameras, computers, and lighting setups must be depreciated across multiple tax years following Publication 946 and reported on Form 4562.",
+     "replacement": "According to [IRS rules for deducting expenses](https://www.irs.gov/businesses/small-businesses-self-employed/deducting-business-expenses), equipment depreciation is handled following Publication 946 and reported on Form 4562.",
+     "type": "unsupported",
+     "why": "SOURCE does not name cameras, computers, or lighting setups."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Monthly subscriptions for video editing tools, music libraries, and software used to manage channel content qualify as current operational deductions.",
+     "replacement": "Monthly subscriptions for video editing tools and software used to manage channel content qualify as current operational deductions.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention music libraries."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Creators tracking actual utility, insurance, and housing expenses instead calculate their deduction on Form 8829.",
+     "replacement": "Creators using the regular method instead calculate their deduction on Form 8829.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention utility, insurance, or housing expenses."
+    },
+    {
+     "id": "commonMistakes[1]",
+     "quote": "Deducting camera gear and computers used for personal tasks without separating and excluding the non-business percentage.",
+     "replacement": "Deducting gear used mostly for personal life without splitting the business share.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention computers."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Google issues Form 1099-MISC, Form 1099-K, or Form 1042-S depending on the account classification and payment method.",
+     "replacement": "Google lists Form 1099-MISC, Form 1099-K, and Form 1042-S as year-end forms.",
+     "type": "unsupported",
+     "why": "SOURCE does not state what determines which form Google issues."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Creators operating as a business can deduct ordinary and necessary expenses, including video editing tools, music licensing, software subscriptions, and production equipment depreciated under IRS rules.",
+     "replacement": "Creators operating as a business can deduct ordinary and necessary expenses, including video editing tools, software subscriptions, and equipment depreciated under IRS rules.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention music licensing."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "You can also claim a qualifying home studio used regularly and exclusively for channel production.",
+     "replacement": "You can also claim a qualifying home office used regularly and exclusively for channel production.",
+     "type": "unsupported",
+     "why": "SOURCE refers to a home office, not a home studio."
+    },
+    {
+     "id": "platformNote",
+     "quote": "If the IRS classifies your channel as a hobby, you report gross revenue on Schedule 1 without standard business expense deductions.",
+     "replacement": "If the IRS classifies your channel as a hobby, you report gross revenue on Schedule 1.",
+     "type": "contradicted",
+     "why": "SOURCE forbids stating whether hobby expenses are deductible."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "You must check your specific statement in your Google account dashboard rather than assuming a single form type.",
+     "replacement": "You must check the form you actually receive rather than assuming a single form type.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention 'dashboard'; it instructs to check the form actually received."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Google's documentation does not specify which form each creator receives, so check the tax documents section inside your account.",
+     "replacement": "Google's documentation does not specify which form each creator receives, so check the form you actually receive.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention 'tax documents section inside your account'; only check yours."
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1419
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-09T10:34:24-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-08-ai-money/audit/youtube-taxes.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "YouTube earnings count as taxable income starting from the first dollar.",
+      "replacement": "[YouTube](https://blog.youtube/creator-and-artist-stories/youtube-partner-program-explained/) earnings count as taxable income starting from the first dollar.",
+      "type": "Y-1 unlinked company",
+      "why": "Links YouTube to its official partner program overview on first mention."
+     },
+     {
+      "id": "introText",
+      "quote": "If you run your channel with regular continuity to turn a profit, the Internal Revenue Service (IRS) classifies the income as self-employment earnings once your net profit hits $400 for the tax year.",
+      "replacement": "If you run your channel regularly to make a profit, it counts as a business. You then owe self-employment tax once net earnings reach $400 for the year, [according to the Internal Revenue Service (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes).",
+      "type": "Y-2 misstated threshold and unlinked IRS",
+      "why": "Clarifies business classification and links IRS guidance on the $400 self-employment tax threshold."
+     },
+     {
+      "id": "introText",
+      "quote": "That classification means you owe self-employment tax alongside standard federal income tax, though ordinary equipment, editing software, and subscription costs reduce your taxable base.",
+      "replacement": "You also owe federal income tax on the profit, and ordinary and necessary costs such as equipment, editing software and subscriptions reduce it.",
+      "type": "Y-2 backward phrasing and missing necessary rule",
+      "why": "Replaces backward phrasing and includes ordinary and necessary requirement for deductible expenses."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "The [self-employment tax rate](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) is 15.3%",
+      "replacement": "The self-employment tax rate is 15.3%",
+      "type": "Y-2 duplicate internal link",
+      "why": "Removes duplicate link to ensure first-mention-only rule is satisfied."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "examiners review multiple factors to decide if an activity qualifies as a business",
+      "replacement": "the IRS lists factors that help decide whether an activity is a business",
+      "type": "Y-3 unsupported examiners claim",
+      "why": "Source states IRS lists factors rather than mentioning examiners specifically."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "its primary objective is income",
+      "replacement": "its primary purpose is income or profit",
+      "type": "Y-3 phrasing mismatch with Schedule C instructions",
+      "why": "Matches exact Schedule C wording for trade or business qualification."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "If your earnings pass $200,000 for single filers or $250,000 for married couples filing jointly, an Additional Medicare Tax of 0.9% applies.",
+      "replacement": "An Additional Medicare Tax of 0.9% applies to earnings above $200,000 for single filers or $250,000 for married couples filing jointly.",
+      "type": "Y-3 misleading tax base framing",
+      "why": "Clarifies that the 0.9% tax applies only to earnings above the statutory thresholds."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Collecting your earnings requires submitting your tax information directly to Google.",
+      "replacement": "[Google](https://support.google.com/youtube/answer/10391362?hl=en) must collect tax information from creators in the YouTube Partner Program.",
+      "type": "Y-4 nominalization and unlinked company",
+      "why": "Directly states Google's requirement to collect tax information from YPP creators with link."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "According to [Google support](https://support.google.com/youtube/answer/10391362?hl=en), Google does not withhold",
+      "replacement": "Google does not withhold",
+      "type": "Y-4 duplicate link and redundant attribution",
+      "why": "Removes duplicate link and attribution following revised preceding sentence."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Non-US creators who submit a Form W-8 face withholding between 0% and 30% on earnings from US viewers based on applicable tax treaties, while non-US accounts without tax info default to 30% withholding on US earnings.",
+      "replacement": "Non-US creators who submit a Form W-8 face withholding of 0% to 30% on earnings from US viewers, depending on tax-treaty status. Non-US business accounts without tax info default to 30% of US earnings.",
+      "type": "Y-4 sentence length and missing business accounts fact",
+      "why": "Splits long sentence and clarifies 30% withholding applies to non-US business accounts."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "[Google reports year-end earnings](https://support.google.com/youtube/answer/10390801?hl=en) using Form 1099-MISC, Form 1099-K, or Form 1042-S, but its documentation does not specify which form applies to each creator profile.",
+      "replacement": "[Google's YouTube help](https://support.google.com/youtube/answer/10390801?hl=en) lists Form 1099-MISC, Form 1099-K and Form 1042-S as year-end forms, but it does not say which form applies to which creator.",
+      "type": "Y-5 overstating Google forms",
+      "why": "Source only lists forms without confirming Google reports using all of them."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Tax reporting rules also depend on information return minimums. ",
+      "replacement": "",
+      "type": "Y-5 unnecessary filler sentence",
+      "why": "Deletes filler sentence to improve conciseness and pacing."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Form 1099-MISC miscellaneous income rises to $2,000",
+      "replacement": "Form 1099-MISC rents and other income rises to $2,000",
+      "type": "Y-5 incorrect box description",
+      "why": "Reflects that the $2,000 minimum applies to rents and other income boxes."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "by paying either 90% of your current tax year liability or 100% of your prior-year tax",
+      "replacement": "by paying the smaller of 90% of your current-year tax or 100% of your prior-year tax",
+      "type": "Y-6 missing smaller of safe harbor condition",
+      "why": "Source specifies paying the smaller of the two amounts satisfies safe harbor."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Yes, you must file a tax return.",
+      "replacement": "Yes, if the $5,000 is profit from a channel you run as a business.",
+      "type": "Y-7 overbroad filing requirement claim",
+      "why": "Conditions the filing requirement on the income being net profit from a business."
+     },
+     {
+      "id": "workedExample",
+      "quote": "If that creator also earns a $60,000 salary from an outside employer, the YouTube profit stacks into the 22% federal tax bracket, increasing the total tax bill.",
+      "replacement": "If that creator also earns a $60,000 salary, the YouTube profit is added on top of the wages and taxed at the creator's top marginal rate. Enter the wages in the calculator above to see that figure.",
+      "type": "Y-8 uncomputed bracket assertion",
+      "why": "Follows directive not to compute tax bracket and refers reader to calculator."
+     },
+     {
+      "id": "platformNote",
+      "quote": "If the IRS classifies your channel as a hobby, you report gross revenue on Schedule 1.",
+      "replacement": "If the IRS treats your channel as a hobby, you report the income on Schedule 1 (Form 1040), line 8.",
+      "type": "Y-9 implies hobby expense deductibility",
+      "why": "Avoids implying gross revenue deduction rules by naming Schedule 1 line 8 directly."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      2
+     ],
+     "applied": [
+      {
+       "id": "howItWorks",
+       "quote": "If you produce videos for a [faceless YouTube channel with AI](/guides/faceless-youtube-channel-ai/), monthly generator access fees directly support production and count as business expenses.",
+       "replacement": "If you produce videos for a [faceless YouTube channel with AI](/guides/faceless-youtube-channel-ai/), AI tool subscriptions used for the channel count as deductible business expenses.",
+       "type": "unsupported",
+       "why": "SOURCE specifies AI tool subscriptions, not monthly generator access fees."
+      },
+      {
+       "id": "commonMistakes[2]",
+       "quote": "Assuming brand sponsorships and direct affiliate deals received outside Google AdSense are not reportable income on your tax return.",
+       "replacement": "Assuming sponsorships or brand deals received outside Google AdSense are not reportable income on your tax return.",
+       "type": "unsupported",
+       "why": "SOURCE specifies sponsorships and brand deals, not affiliate deals."
+      }
+     ],
+     "deleted_final": 2,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1390,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 142.0,
+ "response_id": "xQDJasG9MdbUz7IP1ICqwAM",
+ "generated_at": "2026-10-09T09:59:29-0500"
+}

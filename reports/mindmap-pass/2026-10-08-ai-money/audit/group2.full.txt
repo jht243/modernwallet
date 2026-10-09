@@ -1,0 +1,413 @@
+PHASE 4 ADVERSARIAL AUDIT: 4 API-generated pages, mindmap-pass 2026-10-08-ai-money
+
+What I loaded and checked: _content-standard.md ## AUDITOR, _anti-ai-language.md ## AUDITOR, _experience.md, mindmap-pass/phase-4-audit.md and _remediation-ladder.md. I checked every page against its row prompt, its closed fact list (the same list for all 4 rows) and allowed-urls.all.txt.
+
+Load receipt: OK. The 2026-10-09T14:45 phase-3 ledger entry hashes (cs 7a486edc, aa ed445917, exp 31d70e56) match `shasum -a 256` of the current files.
+
+Disclaimer: `SiteFooter.astro` renders "not financial advice" on every page, so disclaimer-missing does not apply.
+
+SELF-SERVING DISCLAIMER grep: 0 hits on all 4 pages. Every "independent" hit is "independent contractor".
+Byline-in-body: none.
+Em-dashes: none. The only "--" hits are table separator rows.
+"honest": none.
+`/youtube-money-calculator/`: not linked anywhere.
+Disallowed external URLs: none.
+Title Case: every heading passes.
+
+Simulation check: I applied every FIX below to an in-memory copy of each draft. All quotes match exactly once in the stated field, and post-fix depth still clears the floor. JSON note: replacements containing straight double quotes must be escaped as \" when spliced.
+
+## DEPTH (source count: intro + section bodies + FAQ answers, link markup stripped, `wc`-equivalent split)
+
+| page | floor | now | after fixes |
+|---|---|---|---|
+| ai-training-jobs | 1,200 | 1,542 | 1,662 |
+| is-dataannotation-legit | 1,500 | 1,546 | 1,592 |
+| is-outlier-ai-legit | 1,500 | 1,874 | 1,765 |
+| is-mercor-legit | 1,500 | 1,655 | 1,627 |
+
+- Distribution: 4 passing, 0 failing, median 1,600.
+- The DataAnnotation page sits within 3% of its floor (`depth: is-dataannotation-legit 1,546 barely clears floor 1,500`). Any further deletions there must be replaced, not just cut.
+
+## RUN-LEVEL HARD FAILS (chart records; not page text)
+
+**R1. GATE Medium/row records and GATE Register.** The chart rows in `reports/mindmap-pass/2026-10-08-ai-money.md` for all 4 slugs have no `register:` record. `page type` and `medium` (text → text) are present.
+- Fix (orchestrator, chart edit): add `register: operator` to all 4 rows. All 4 pages are already written in operator "you" voice.
+
+**R2. GATE Anchor and GATE Tee-up.** No row carries `anchor-exempt:` or `teeup-exempt:`.
+- Fix (chart): add `anchor-exempt: content property, editorial "we" only (_experience.md SPECIFICS)` to all 4 rows.
+- Add `teeup-exempt: API page, claim check removed the "At ModernWallet" sentence` to ai-training-jobs and is-mercor-legit, which have no tee-up.
+- On DataAnnotation and Outlier the tee-up is in the wrong position (sentence 3); the page fixes below move it.
+
+**R3. GATE Links: NOT FIXABLE IN PLACE under the closed URL list.**
+- These organisations are named on the pages, but the allowed list has no first-party URL for them, so their first mention cannot be linked: Scale AI, Labelbox, Toloka, Stryder Corp., PayPal, Airtm, Stripe, Wise, Payoneer, Tipalti, Persona, Meta, Upwork, HireArt, Felicis, Benchmark, General Catalyst, LiteLLM, Wired, The Verge, New York Magazine.
+- Every organisation that does have an allowed URL is linked at first mention by the fixes below.
+- The orchestrator has to choose: add official URLs to `allowed-urls.all.txt` and splice the links, or accept this as a known exception for the run. I have not counted it toward any page's verdict.
+
+---
+
+## 1. ai-training-jobs (guide, floor 1,200). VERDICT: FAIL, fix-in-place (23)
+
+Reader-question gate: OK.
+- The row carries its PAA evidence tag.
+- The first sentence of `introText` and of `sections[0]` gives the verdict, and the platform table follows.
+- All 6 on-topic PAA questions are in the FAQ.
+
+1. **title**: `"AI Training Jobs: Legitimate Platforms, Rates, and Catches"` → `"Which AI Training Jobs Are Real and What Each Platform Pays"` (59 chars).
+   - Why: headline tell (colon two-clause formula plus a headline tricolon).
+2. **h1**: `"AI Training Jobs: Legitimate Platforms, Pay Rates, and What Workers Face"` → `"Which AI Training Jobs Are Real and What Each Platform Pays"`.
+   - Why: same headline tell.
+3. **introText**: `"Companies like DataAnnotation, Outlier, Mercor, Alignerr, Mindrift, Handshake AI, and Prolific pay"` → `"Companies like [DataAnnotation](https://www.dataannotation.tech/faqs), [Outlier](https://outlier.ai/faq), [Mercor](https://talent.docs.mercor.com/how-to/payments), [Alignerr](https://www.alignerr.com/), [Mindrift](https://mindrift.ai/), [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32264709473303), and [Prolific](https://researcher-help.prolific.com/en/article/2273bd) pay"`.
+   - Why: unlinked-company. These are the first mentions, and the intro is rendered through `linkify`.
+4. **introText**: `"onboarding tests are frequently unpaid, and any platform asking you to pay an upfront fee is an outright scam."` → `"most platforms do not say whether onboarding tests are paid, and any platform asking you to pay an upfront fee is a scam."`.
+   - Why: unsupported. The fact list marks onboarding pay as UNKNOWN for DataAnnotation, Outlier, Mindrift, Alignerr and Prolific.
+5. **sections[0].body** (repeat-link strip, needed once #3 is applied). Unlink each table cell:
+   - `"| [DataAnnotation](https://www.dataannotation.tech/faqs) |"` → `"| DataAnnotation |"`
+   - `"| [Outlier](https://outlier.ai/faq) |"` → `"| Outlier |"`
+   - `"| [Mercor](https://talent.docs.mercor.com/how-to/payments) |"` → `"| Mercor |"`
+   - `"| [Alignerr](https://www.alignerr.com/) |"` → `"| Alignerr |"`
+   - `"| [Mindrift](https://mindrift.ai/) |"` → `"| Mindrift |"`
+   - `"| [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) |"` → `"| Handshake AI |"`
+   - `"| [Prolific](https://researcher-help.prolific.com/en/article/2273bd) |"` → `"| Prolific |"`
+   - Why: links on first mention only.
+6. **sections[0].body**: `"For general work, entry-level rates begin around $15 to $25 per hour, while technical domains reach $40 to $125 or more per hour."` → `"Mindrift lists entry-level work at $15 to $30 per hour, and DataAnnotation's coding projects start at $40 to $150 or more per hour."`.
+   - Why: "$15 to $25" is not a published figure. The sourced figures are Mindrift $15–30 and DataAnnotation coding $40–150+.
+7. **sections[0].body**: `"| Platform | Operator | Published Pay | Payment Method | Best Suited For |"` → `"| Platform | Operator | Published Pay (as of October 2026) | Payment Method | Best Suited For |"`.
+   - Why: the row prompt requires "as of October 2026" on rates.
+8. **sections[0].body**: `"| Weekly payout |"` → `"| Not published (paid weekly) |"`.
+   - Why: the column is the payment method. Alignerr's provider is UNKNOWN; the fact list only says it pays weekly.
+9. **sections[1].heading**: `"What the Work Actually Involves Daily"` → `"What the Work Involves Day to Day"`.
+   - Why: headline tell ("actually").
+10. **sections[1].body** (repeat links):
+    - `"According to [DataAnnotation's official FAQ](https://www.dataannotation.tech/faqs), contributors"` → `"According to DataAnnotation's FAQ, contributors"`
+    - `"Workers on [Outlier](https://outlier.ai/faq) generate"` → `"Workers on Outlier generate"`
+    - `"On the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303), fellows"` → `"On the Handshake AI Fellowship, fellows"`
+11. **sections[2].body** (repeat links):
+    - `"At [DataAnnotation](https://www.dataannotation.tech/faqs), the initial"` → `"At DataAnnotation, the initial"`
+    - `"Onboarding on [Outlier](https://outlier.ai/faq) takes"` → `"Onboarding on Outlier takes"`
+    - `"the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) restricts"` → `"the Handshake AI Fellowship restricts"`
+12. **sections[2].body**: `"Whether onboarding and assessment time is paid varies sharply by platform."` → `"Most platforms in the table do not publish whether onboarding and assessment time is paid."`.
+    - Why: unsupported. Pay is unknown for most platforms, so a claim that it "varies sharply" has no source.
+13. **sections[3].body**:
+    - `"Each training platform uses distinct disbursement processors and payout schedules. [DataAnnotation](https://www.dataannotation.tech/faqs) delivers"` → `"Each platform publishes its own payout schedule and payment processors. DataAnnotation delivers"`. Why: false as written, because DataAnnotation and Outlier both use PayPal; also strips a repeat link.
+    - `"[Outlier](https://outlier.ai/faq) processes"` → `"Outlier processes"`
+    - `"According to [Mercor talent documentation](https://talent.docs.mercor.com/how-to/payments), payments"` → `"According to Mercor's talent documentation, payments"`
+14. **sections[4].heading**: `"The Real Catches: Project Droughts, Rate Drops, and Lawsuits"` → `"Work Droughts and Worker Lawsuits Across Platforms"`.
+    - Why: headline tell (colon-drama, "Real", tricolon).
+15. **sections[4].body**:
+    - Quote: `"Contractors face frequent periods without work, abrupt account closures, and sudden rate shifts. On Trustpilot, reviews for [DataAnnotation](https://www.trustpilot.com/review/dataannotation.tech) (3.9 score out of 5 from 1,973 reviews) and [Outlier](https://www.trustpilot.com/review/outlier.ai) (4.1 score out of 5 from 5,483 reviews) highlight recurring themes of empty project queues, unpaid test steps, and sudden deactivations with slow support."`
+    - Replacement: `"Contractors on these platforms report long periods without work and sudden account closures. As of October 2026, DataAnnotation scores 3.9 out of 5 from 1,973 reviews on [Trustpilot](https://www.trustpilot.com/review/dataannotation.tech), and Outlier scores [4.1 from 5,483 reviews](https://www.trustpilot.com/review/outlier.ai). Recurring complaint themes across both include empty project queues, unpaid test steps, sudden deactivations, and slow support."`
+    - Why: the original states Trustpilot themes as fact, the Trustpilot name itself is unlinked, the second sentence is overloaded (39 words), and the scores need a date.
+16. **sections[4].body**:
+    - Quote: `"that Mercor concluded a Meta project named Musen, which peaked at over 5,000 workers, and subsequently offered a replacement project named Nova at $16 per hour, which was $5 less than the Musen rate."`
+    - Replacement: `"that Mercor ended a Meta project named Musen, which peaked at over 5,000 workers. Mercor then offered a similar project, Nova, at $16 per hour, $5 less than Musen paid. Mercor called the report inaccurate."`
+    - Why: the sentence is overloaded (40 words) and omits Mercor's sourced denial.
+17. **sections[4].body** (McKinney settlement):
+    - Quote: `"As documented by [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement), a $12,500,000 settlement was negotiated covering California contributors between December 2020 and February 2026, with a final approval hearing set for October 30, 2026."`
+    - Replacement: `"According to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement), Scale AI agreed to a $12,500,000 settlement covering California contributors between December 2020 and February 2026. The settlement is pending final approval at an October 30, 2026 hearing, and the defendants deny the allegations."`
+    - Why: the settlement must be described as pending final approval, with the defendants' denial, per the fact list.
+18. **sections[4].body** (Surge AI):
+    - Quote: `"Additionally, a May 2025 misclassification suit was filed against [Surge AI](https://clarksonlawfirm.com/clarkson-represents-surge-ai-workers-in-labor-law-class-action), though public court documents do not name DataAnnotation as a party."`
+    - Replacement: `"In May 2025, [Clarkson Law Firm](https://clarksonlawfirm.com/clarkson-represents-surge-ai-workers-in-labor-law-class-action) filed a misclassification class action against Surge AI. News reports cited on [Wikipedia](https://en.wikipedia.org/wiki/Surge_AI) have linked Surge AI to DataAnnotation, but DataAnnotation's site does not confirm that, and the firm's announcement does not name DataAnnotation."`
+    - Why: the original ties Surge AI to DataAnnotation by implication without framing the link as reported and unconfirmed. "Public court documents" is also unsupported: only the firm's page and a CourtListener search were checked.
+19. **sections[5].body**:
+    - `"Criminals regularly impersonate AI platforms to steal personal information or recruit victims into financial schemes."` → `"Scammers pose as recruiters for AI rating and review work to get victims to send them money."` Why: unsupported, since the FTC sources say nothing about stealing personal information.
+    - `"As [DataAnnotation's FAQ](https://www.dataannotation.tech/faqs) states"` → `"As DataAnnotation's FAQ states"` (repeat link).
+    - `"Similarly, [Mindrift's blog](https://mindrift.ai/blog/how-mindrift-pays) clarifies that applications and qualification tests are completely free, and contributors never need to buy courses or materials."` → `"Similarly, Mindrift's blog says joining and assessments should be free, and contributors never have to buy courses or credentials."` Why: overstated (the source says "should be free" and "courses or credentials"); also a repeat link.
+20. **sections[6].body**:
+    - Quote: `"Earnings from AI training jobs constitute self-employment income, meaning platforms do not withhold federal, state, or FICA taxes from your payments. [Mercor's tax documentation](https://talent.docs.mercor.com/policies/us-taxes) explicitly informs contractors that they must fulfill their own tax obligations, noting that US workers"`
+    - Replacement: `"Earnings from AI training jobs are 1099 contractor income, so you handle your own taxes. [Mercor's tax documentation](https://talent.docs.mercor.com/policies/us-taxes) says Mercor does not deduct taxes from payments. It adds that US workers"`
+    - Why: "platforms do not withhold" is generalised to every platform, but DataAnnotation's and Outlier's tax policies are UNKNOWN. The Mercor sentence was overloaded (35 words).
+21. **sections[6].body**:
+    - `"Similarly, [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32263614087575-Handshake-AI-payments-processing) notes"` → `"Similarly, Handshake AI notes"` (repeat link).
+    - `"For general contractor rules, check our [dataannotation taxes guide](/self-employment-tax/dataannotation-taxes/) or use our [self-employment tax calculator](/self-employment-tax/) to determine your exact tax obligations."` → `"For the platform-specific rules, read our [DataAnnotation taxes guide](/self-employment-tax/dataannotation-taxes/) or use our [self-employment tax calculator](/self-employment-tax/) to estimate what you owe."` Why: brand casing, and the calculator gives an estimate, not an exact figure.
+22. **faqs[2].answer** and **faqs[3].answer**: neither answers its question, because the claim check cut the answering sentence.
+    - faqs[2]: `"Handshake AI and Mercor require graduate degrees or domain expertise."` → `"Going by published requirements, Mindrift and DataAnnotation have lower entry bars than Handshake AI or Mercor. Mindrift lists entry-level work at $15 to $30 per hour, and DataAnnotation asks for a bachelor's degree or equivalent real-world experience plus fluent English. Handshake AI fellowships mostly require a Master's, PhD, or Postdoc, and Mercor recruits domain experts such as scientists, doctors, and lawyers."`
+    - faqs[3]: `"Technical projects in software engineering, law, and medicine require verified professional credentials or degrees."` → `"Some platforms accept applicants without specialist experience. DataAnnotation asks for a bachelor's degree or equivalent real-world experience, Outlier asks for at least an associate degree, and Mindrift advertises entry-level work at $15 to $30 per hour. Professional projects in law, finance, or medicine require credentials."` Why: "software engineering" credentials is also unsupported.
+23. **faqs[4].answer** and **faqs[5].answer**:
+    - faqs[4]: `"Pay ranges from $15 to $30 per hour for entry-level tasks on Mindrift to over $85 per hour on Mercor according to TechCrunch. Highly specialized coding or STEM projects on DataAnnotation advertise rates starting at $40 to $150 or more per hour."` → `"Published rates run from $15 to $30 per hour for entry-level tasks on Mindrift to $30 to $125 per hour for Handshake AI fellows. TechCrunch reported that Mercor experts average over $85 per hour. DataAnnotation advertises coding projects starting at $40 to $150 or more per hour and STEM projects at $40 to $125 or more."` Why: the original treats an average as the top of the range, and STEM is $40–125+, not $40–150+.
+    - faqs[5]: `"Yes, US contractors earning reportable freelance income receive a tax form from the platform or its payment processor. For example, Mercor"` → `"It depends on the platform. Mercor"`
+    - faqs[5]: `"during the tax year."` → `"during the tax year. DataAnnotation and Outlier do not publish a tax-form policy."` Why: the original generalises a 1099 to every platform, but those two policies are UNKNOWN.
+
+Advisory:
+- sections[6] repeats Mercor's "$600" 1099-NEC figure without noting the IRS 1099-NEC threshold of $2,000 for tax years after 2025 (the Mercor page does note it).
+- The `meta.guards` flag "emptied by the claim check" lists five sections that are not empty. This looks like a false-positive flag in `content_gen.py`.
+- The sections[0] heading is a question plus a second clause, but it is the heading the row mandated, so I left it.
+- `low information gain`: sections[1].
+
+---
+
+## 2. is-dataannotation-legit (review, floor 1,500). VERDICT: FAIL, fix-in-place (24)
+
+The claim flagged in meta (`"Outlier faced … culminating in a preliminar…"`) is confirmed unsupported.
+- The fact list has no preliminary approval at all.
+- It also requires "pending final approval 2026-10-30, defendants deny". Fixed in #18.
+
+The DataAnnotation↔Surge AI link in sections[4] is correctly framed as reported and unconfirmed. Keep it.
+
+1. **title** and **h1**: `"Is DataAnnotation Legit? Real Pay Rates and Worker Risks"` → `"Is DataAnnotation Legit and Does It Pay Contractors?"` (52 chars).
+   - Why: headline tell (question spliced to a second promise, with "Real" standing in for a fact).
+2. **introText**:
+   - Quote: `"DataAnnotation is a legitimate contractor platform that pays contributors through PayPal to train artificial intelligence (AI) models. Its published pay rates range from $20 to more than $150 per hour depending on the project tier, and its site reports paying over $20 million to contractors since 2020. At ModernWallet, we evaluate gig platforms so workers know what to expect before taking screening exams."`
+   - Replacement: `"[DataAnnotation](https://www.dataannotation.tech/faqs) is a legitimate contractor platform that pays contributors through PayPal to train artificial intelligence (AI) models. At ModernWallet, we evaluate gig platforms so workers know what to expect before taking screening exams. DataAnnotation's published pay rates range from $20 to more than $150 per hour depending on the project tier, and its FAQ reports paying over $20 million to contractors since 2020."`
+   - Why: the tee-up was sentence 3 and must be sentence 2, and the first mention of DataAnnotation was unlinked.
+3. **introText**:
+   - Quote: `"While the company is real, applicants run into steep practical hurdles. The platform allows only one attempt on its Starter Assessment, leaves rejected applicants with no status reply, and provides highly variable project volume even to active workers. Understanding these mechanics prevents lost time and helps you decide whether to pursue work on the platform."`
+   - Replacement: `"The hurdles are practical. DataAnnotation allows only one attempt at its Starter Assessment, and its FAQ says it cannot reply to every applicant. Reviewers on [Trustpilot](https://www.trustpilot.com/review/dataannotation.tech) also report long stretches with no available work, even after they are accepted."`
+   - Why: coy-abstraction (×3); a Trustpilot theme stated as fact; a nominalized filler closing sentence; Trustpilot's first mention unlinked.
+4. **sections[0].body**:
+   - Quote: `"DataAnnotation is a legitimate business, but it operates as a selective contractor marketplace rather than steady employment. Contractors complete"`
+   - Replacement: `"DataAnnotation is a legitimate business that pays contractors through PayPal, with general projects listed at "Starting at $25-$50+ per hour" and coding at $40 to $150 or more. The risks are a one-attempt Starter Assessment that may get no reply, uneven work volume, and fake recruiters using the DataAnnotation name. Contractors complete"`
+   - Why: the row's answer_placement requires an extractable verdict up front (pays, PayPal, rate, risks). The original's first 2–3 sentences give neither pay nor risks.
+5. **sections[0].body**: `"The [DataAnnotation FAQs](https://www.dataannotation.tech/faqs) state that the company connects"` → `"The DataAnnotation FAQ states that DataAnnotation connects"`.
+   - Why: repeat link and coy-abstraction.
+6. **sections[0].body**: `"In the Pay section of the platform's documentation, base pay starts at $20 to $50 or more per hour. However, the site contains conflicting figures across different answers."` → `"In the Pay section of the DataAnnotation FAQ, starting rates run from $20 or more per hour for multilingual projects to $40 to $150 or more for coding."`
+   - Why: "$20 to $50" merges two tiers and misstates both. The second sentence restates the final paragraph. Also coy-abstraction.
+7. **sections[0].body**: `"Take note of internal inconsistencies in the platform's self-reported pay figures. While the dedicated Pay section lists general projects at starting at $25 to $50 or more per hour, other FAQ answers claim general projects start at $25 to $30 or more."` → `"The DataAnnotation FAQ contradicts its own Pay section. The Pay section lists general projects at $25 to $50 or more per hour, while other FAQ answers say general projects start at $25 to $30 or more."`
+   - Why: coy-abstraction, a garbled "at starting at", and the sentence was overloaded (31 words).
+8. **sections[0].body**: `"whereas the main pay table states $40 to $150 or more per hour."` → `"whereas the main pay table states $40 to $150 or more per hour. Plan your income around the lower figures."`
+   - Why: dead-end. The page raises the inconsistency without telling the reader what to do about it.
+9. **sections[1].body**: `"You receive only one attempt at the Starter Assessment. The platform policy strictly enforces that there are no retakes or second chances. The site does not state"` → `"You get only one attempt at the Starter Assessment. The FAQ says, "There are no retakes or second chances." The FAQ does not state"`
+   - Why: restatement and coy-abstraction.
+10. **sections[1].body**:
+    - Quote: `"Approval communication is asymmetrical. DataAnnotation notes that accepted applicants receive contact within a few days if their test passes review and matching work exists. If the platform lacks matching work or an applicant fails the test, the company sends no notice. The site explicitly states that it is unable to provide direct responses to every applicant due to high application volume."`
+    - Replacement: `"DataAnnotation says approval notices arrive within a few days, but only if your assessment passes review and it has work that matches your skills. Otherwise you may never hear back, because the FAQ says DataAnnotation is unable to provide direct responses for every applicant given the number of applications."`
+    - Why: "asymmetrical" fails the say-it-out-loud test; "sends no notice" overstates the FAQ, which says it is unable to respond to every applicant; coy-abstraction ×2.
+11. **sections[2].body**: `"Earnings transfer directly through PayPal. The platform FAQ notes that contractors request withdrawals directly, with deposits delivered within a few days after each request. It also states that the business has paid"` → `"DataAnnotation pays through PayPal. Its FAQ says contractors request withdrawals and deposits arrive within a few days of each request. The FAQ also says DataAnnotation has paid"`
+    - Why: coy-abstraction ×2 and a doubled "directly".
+12. **sections[2].body**: `"\n\n Anyone without access to a valid PayPal account in an eligible region cannot receive funds from the platform. The platform does not charge fees to sign up or take assessments."` → `"\n\nPayPal is the only payout method the FAQ names, so you need a PayPal account to get paid. DataAnnotation charges no signup fees."`
+    - Why: "eligible region" is invented, the paragraph has a stray leading space, and coy-abstraction.
+13. **sections[3].body**: `"Public sentiment highlights recurring operational bottlenecks alongside positive feedback on scheduling freedom. On [Trustpilot](https://www.trustpilot.com/review/dataannotation.tech), DataAnnotation holds a TrustScore"` → `"As of October 2026, DataAnnotation holds a Trustpilot TrustScore"`
+    - Why: vague abstraction plus restatement; repeat link once #3 is applied; the score needs a date.
+14. **sections[3].body**: `"Positive feedback concentrates on schedule flexibility and dashboard simplicity."` → `"Positive reviews center on flexibility and ease of use."`
+    - Why: drifts from the sourced praise themes ("flexibility and ease of use").
+15. **sections[4].body**: `"The DataAnnotation platform operates with minimal corporate disclosure on its consumer-facing site. Its official documentation names Persona"` → `"DataAnnotation's FAQ names Persona"`
+    - Why: filler restated by the next clause.
+16. **sections[4].body** (Surge AI suit and dockets):
+    - Quote: `"The complaint alleged that data annotators were misclassified as independent contractors and that training time was unpaid. Coverage on [Bloomberg Law](https://news.bloomberglaw.com/financial-accounting/ai-training-firm-surge-ai-hit-with-worker-misclassification-suit) outlined the dispute, but the lawsuit docket does not name the DataAnnotation platform. Federal dockets on CourtListener show no lawsuits naming DataAnnotation directly."`
+    - Replacement: `"The firm says the suit alleges that "Data Annotator" workers were misclassified as independent contractors and that training and project-familiarization time was unpaid. [Bloomberg Law](https://news.bloomberglaw.com/financial-accounting/ai-training-firm-surge-ai-hit-with-worker-misclassification-suit) covered it under the headline "AI Training Firm Surge AI Hit With Worker Misclassification Suit." Clarkson's announcement does not name the DataAnnotation platform, so whether the suit covers DataAnnotation workers is not confirmed. A search of federal court dockets on October 9, 2026 found no case naming DataAnnotation."`
+    - Why: no one read the complaint or the docket. The source is the firm's page, and Bloomberg Law was seen in search only. CourtListener's first mention was also unlinked, with no allowed URL to link it to.
+17. **sections[5].body**:
+    - `"Scammers frequently impersonate online job platforms to steal personal information or collect upfront payments."` → `"Scammers pose as recruiters for online rating and review jobs to collect money from job seekers."` Why: "steal personal information" is unsupported.
+    - `"If someone contacting you on messaging apps demands an upfront payment or background check fee under the company name, that contact is fraudulent."` → `"If someone using the DataAnnotation name on a messaging app asks you for money, treat it as a scam and report it at ReportFraud.ftc.gov."` Why: "background check fee" is invented, coy-abstraction, and the original never tells the reader where to report.
+18. **sections[7].body** (the meta-flagged claim):
+    - Quote: `"Outlier faced independent contractor wage litigation culminating in a preliminary $12.5 million settlement in McKinney v. Scale AI, according to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement)."`
+    - Replacement: `"Scale AI agreed to a $12.5 million settlement of McKinney v. Scale AI, a California worker-misclassification case covering Outlier contributors, according to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement). The settlement is pending final approval at an October 30, 2026 hearing, and the defendants deny the allegations."`
+    - Why: "preliminary" is unsupported, and the required "pending final approval" and "defendants deny" were missing.
+19. **sections[7].body**: `"but their operations show major structural differences."` → `"but they differ on entry requirements and pay timing."`
+    - Why: vague abstraction.
+20. **sections[7].body**: `"If you want steady income, this platform is not for you. The high rate of unanswered applications and sudden dashboard dry spells make it an unreliable sole income source."` → `"If you want steady income, DataAnnotation is not for you. Unanswered applications and the dry spells Trustpilot reviewers describe make it an unreliable sole income source."`
+    - Why: coy-abstraction; "high rate" is an unsupported quantity; the dry spells are a review theme stated as fact.
+21. **sections[7].body**: `"taking the one-hour test is a reasonable move."` → `"taking the one-hour test is a reasonable move. Our verdict would change if DataAnnotation stopped paying PayPal withdrawals within a few days, or if a court confirmed that the Surge AI suit covers DataAnnotation workers."`
+    - Why: required page element "what would change our answer" was missing on a verdict page.
+22. **sections[6].body**: `"The company's documentation does not publish a formal tax-form distribution policy, meaning contractors must track earnings independently."` → `"DataAnnotation's FAQ gives no tax-form policy, so track your earnings yourself."`
+    - Also: `"though lower $600 thresholds remain in states like Massachusetts, Maryland, Vermont, and Virginia."` → `"though PayPal applies a $600 threshold in Massachusetts, Maryland, Vermont, and Virginia."` Why: coy-abstraction; the $600 figure is PayPal's state threshold, not a state rule.
+23. **faqs[1].answer** and **faqs[2].answer**:
+    - faqs[1]: `"Specialized STEM and professional tiers start at $40 to $125 or more per hour, although other FAQ answers cite conflicting baseline ranges of $25 to $30 per hour."` → `"Specialized STEM and professional tiers start at $40 to $125 or more per hour. Other FAQ answers give a lower general starting range of $25 to $30 per hour."` Why: overloaded (36-word) sentence.
+    - faqs[2]: `"The company explicitly states in its FAQ that it does not send status updates or rejections to unsuccessful applicants due to high application volume."` → `"Its FAQ says that, given the number of applications, DataAnnotation is unable to provide direct responses for every applicant, so you may never hear back."` Why: misquotes the FAQ, and coy-abstraction.
+24. **faqs[0].answer** and **faqs[4].answer**:
+    - faqs[0]: `"The platform delivers earnings"` → `"DataAnnotation delivers earnings"`
+    - faqs[4]: `"the platform delivers deposits"` → `"DataAnnotation delivers deposits"`
+    - Why: coy-abstraction.
+
+Advisory:
+- "The Verge and New York Magazine" are cited through the linked Wikipedia page and have no allowed URL (see R3).
+- In sections[6], PayPal's 1099-K goods-and-services threshold may not apply to platform payouts at all. Consider softening it.
+- The metaDescription opens with the question and a 5-item list. It is not a blocking issue.
+- `low information gain`: sections[2].
+- Dead-end (soft): sections[3] lists complaints without a workaround beyond the section[7] verdict.
+
+---
+
+## 3. is-outlier-ai-legit (review, floor 1,500). VERDICT: FAIL, fix-in-place (26)
+
+Hard catches on this page:
+- The forbidden "$10–$50" range IS stated (sections[3]). Fixed in #12.
+- The McKinney settlement is described as "without admitting wrongdoing" rather than "defendants deny". Fixed in #17.
+
+1. **title** `"Is Outlier AI Legit? Verdict, Pay, and Lawsuits"` and **h1** `"Is Outlier AI Legit? Real Contractor Pay, Lawsuits, and Risks"` → both `"Is Outlier AI Legit and Does It Pay Contractors?"` (48 chars).
+   - Why: headline tricolon.
+2. **metaDescription**: `"Is Outlier AI legit? We review real contractor pay, Scale AI ownership, Trustpilot ratings, wage lawsuits, and scam warning signs as of October 2026."` → `"Outlier AI is a real Scale AI platform that pays weekly but publishes no pay range. Payouts, lawsuits, Trustpilot themes and scam signs as of October 2026."` (155 chars).
+   - Why: "real contractor pay" implies a published figure, and Outlier publishes none.
+3. **introText**:
+   - Quote: `"Outlier AI is a real data-training platform operated by Scale AI that pays independent contractors weekly on Tuesdays through PayPal, Airtm, or ACH bank transfers. The company does not publish a platform-wide pay rate card, so your exact hourly earnings depend on individual project assignments that you review before accepting."`
+   - Replacement: `"[Outlier AI](https://outlier.ai/faq) is a real data-training platform operated by Scale AI that pays independent contractors weekly on Tuesdays through PayPal, Airtm, or ACH bank transfers. At ModernWallet, we built this review from Outlier's own FAQ, court dockets, and [Trustpilot reviews](https://www.trustpilot.com/review/outlier.ai) so you can weigh the tradeoffs before signing up. Outlier does not publish a platform-wide pay rate card, so your hourly earnings depend on each project's rate, which you see before starting."`
+   - Why: first mentions unlinked; tee-up moved from sentence 3 to sentence 2; coy-abstraction.
+4. **introText**:
+   - Quote: `"At ModernWallet, we review flexible earning platforms by analyzing verified business filings, court records, and official policies so you can evaluate the financial tradeoffs before signing up. While Outlier distributes real money to contributors, workers face unpredictable task volumes, sudden deactivations, and ongoing litigation regarding worker classification in California court dockets."`
+   - Replacement: `"Reviewers on Trustpilot report unpredictable task volume and sudden deactivations. A $12.5 million California worker-misclassification settlement involving Scale AI is pending final approval on October 30, 2026."`
+   - Why: GATE Experience truth. "Verified business filings" is an invented methodology. The paragraph also states Trustpilot themes as fact.
+5. **sections[0].body**: `"The platform is not an outright scam, but it does not offer guaranteed hours, stable employment, or a fixed baseline wage."` → `"Outlier is not a scam, but it offers no guaranteed hours and publishes no pay range. You see each project's rate before you start."`
+   - Why: coy-abstraction, and the verdict lacked the row's "no published range" answer.
+6. **sections[0].body**:
+   - Quote: `"Contributors generate prompts, evaluate model responses, rank outputs, and improve model responses. The company processes payouts every Tuesday for work logged through the preceding Monday midnight UTC via PayPal, Airtm, or ACH direct deposits. However, independent contractor reviews highlight frequent project removals, onboarding delays, and sudden account deactivations that leave contributors without predictable monthly income."`
+   - Replacement: `"Contributors generate prompts, rank AI outputs, and improve model responses. Outlier pays every Tuesday for work completed from the previous Tuesday through Monday (midnight UTC), via PayPal, Airtm, or ACH bank transfer. Trustpilot reviewers describe project removals, onboarding glitches, and deactivations with little explanation, so income from Outlier is irregular."`
+   - Why: invented task wording; coy-abstraction; review themes overstated as "frequent" and unattributed.
+7. **sections[0].body**: `"Furthermore, parent firm Scale AI faces substantial legal scrutiny over contractor treatment. A $12.5 million settlement resolving class action claims alleging worker misclassification in California is pending final approval on October 30, 2026."` → `"Scale AI, which operates Outlier, has faced several worker lawsuits. A $12.5 million settlement of California class claims alleging worker misclassification is pending final approval on October 30, 2026, and the defendants deny the allegations."`
+   - Why: filler and vague abstraction; the required defendants' denial was missing.
+8. **sections[1].body**: `"Outlier is an operational platform owned and managed by [Scale AI](https://outlier.ai/faq), with website footers identifying intellectual property under Smart Ecosystems Inc."` → `"Outlier is operated by Scale AI, and its site footer reads "powered by Scale AI · © 2026 Smart Ecosystems.""`
+   - Why: "owned" and "Inc." are unsupported, the Scale AI anchor pointed at Outlier's FAQ, and it was a repeat link.
+9. **sections[1].body** (three edits):
+   - `"founding chief executive officer Alexandr Wang"` → `"chief executive officer Alexandr Wang"`. Why: "founding" is unsupported.
+   - `"Shortly after the leadership change, corporate restructuring triggered significant workforce reductions across the business."` → `""`. Why: banned word "significant", and the next paragraph restates it.
+   - `"Droege noted in the staff memorandum that the business had ramped up its generative AI capacity too quickly."` → `"Droege's memo said Scale AI had "ramped up our GenAI capacity too quickly.""`. Why: uses the sourced quote and the real name.
+10. **sections[2].body**: `"According to the [Outlier FAQ](https://outlier.ai/faq), contributors generate prompts, rank AI outputs, improve model responses, or complete other tasks.\n\n \n\n"` → `"According to the Outlier FAQ, contributors generate prompts, rank AI outputs, improve model responses, or complete other tasks.\n\n"`
+    - Why: repeat link and an empty whitespace paragraph (formatting).
+11. **sections[3].body**: `"According to the official [Outlier FAQ](https://outlier.ai/faq), tasking"` → `"According to the Outlier FAQ, tasking"`
+    - Why: repeat link.
+12. **sections[3].body**: `"Unofficial search engine snippets have previously claimed that Outlier pays between $10 and $50 per hour, but that range is unverified, and the company publishes no minimum or maximum dollar figure on its live website. "` → `"As of October 2026, the FAQ gives no minimum or maximum dollar figure."`
+    - Why: the row explicitly says to never state $10–$50; the item is secondary and unverified. This edit also breaks the `monotone-rhythm` run of 10+ long sentences across sections[2] and [3] (lengths 16 to 35).
+13. **sections[4].body** (three edits):
+    - `"according to platform documentation"` → `"according to the Outlier FAQ"`
+    - `"and present a valid government-issued photo identification card along with a mobile phone registered in their country of residence."` → `"and have a valid ID and mobile phone from their country of residence."` Why: "photo" and "registered" are embellishments the source does not support.
+    - `"Crucially, Outlier does not state"` → `"Outlier does not state"`. Why: banned word "crucial".
+14. **sections[5].body**: `"Outlier maintains a predictable payment schedule for approved, completed project work. According to the [Outlier FAQ](https://outlier.ai/faq), payments"` → `"Outlier pays on a fixed weekly schedule. According to the Outlier FAQ, payments"`
+    - Why: repeat link, plus the unsupported "approved".
+15. **sections[5].body**: `"Payout regularity remains one of the primary points of praise among active platform contributors. Outlier processes funds every seven days provided your account remains in good standing."` → `"Trustpilot reviewers praise on-time pay."`
+    - Why: unattributed review theme; "good standing" is an invented condition; the second sentence restates weekly pay.
+16. **sections[6].body** (four edits):
+    - `"The [Outlier FAQ](https://outlier.ai/faq) states plainly that you work as a freelancer, and the company does not provide visa sponsorship."` → `"The Outlier FAQ says you work as an independent contractor or freelancer, and Outlier does not offer visa sponsorship."` Why: repeat link and coy-abstraction.
+    - `"Self-employment tax equals 15.3% on 92.35% of your net business earnings, comprising 12.4% for Social Security up to the annual wage limit ($176,100 in 2025) and 2.9% for Medicare, plus an additional 0.9% Medicare tax above statutory thresholds."` → `"Self-employment tax is 15.3%: 12.4% for Social Security, up to the $176,100 wage base for 2025, and 2.9% for Medicare. It applies to 92.35% of your net earnings, and an extra 0.9% Medicare tax applies above $200,000 for single filers."` Why: overloaded 38-word sentence.
+    - `"Under Internal Revenue Service rules, businesses"` → `"Under [IRS rules](https://www.irs.gov/instructions/i1099mec), businesses"`. Why: unlinked first mention of the IRS.
+    - `"though certain states enforce lower $600 reporting minimums."` → `"though PayPal applies a $600 threshold in Vermont, Massachusetts, Virginia, and Maryland."` Why: misattributed; this is PayPal's threshold, not a state rule.
+17. **sections[7].body** (McKinney; six edits):
+    - `"Scale AI has faced extensive labor disputes regarding how it manages and classifies Outlier taskers."` → `"Scale AI has faced several labor lawsuits over how it pays and classifies Outlier taskers."`
+    - `"alleging that the company misclassified"` → `"alleging that Scale AI misclassified"`
+    - `"According to settlement administration records on [ClaimDepot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement),"` → `"According to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement),"`. Why: Claim Depot is not the settlement administrator.
+    - `"and related California actions without admitting wrongdoing."` → `"and related California actions. The defendants deny the allegations."`. Why: the fact list says the defendants deny.
+    - `"on Outlier or Remotasks between"` → `"on Outlier or [Remotasks](https://www.remotasks.com/) between"`. Why: unlinked first mention.
+    - `"and the San Francisco court scheduled the final approval hearing for October 30, 2026."` → `"and the final approval hearing is set for October 30, 2026, so the settlement is not yet final."`. Why: states the pending status explicitly.
+18. **sections[7].body** (Schuster):
+    - Quote: `"six contributors filed *Schuster v. Scale AI, Inc.* in the U.S. District Court for the Northern District of California (Docket 3:25-cv-00620 on [CourtListener](https://www.courtlistener.com/docket/69556383/schuster-v-scale-ai-inc/)), alleging psychological harm resulting from writing disturbing training prompts."`
+    - Replacement: `"six Outlier contributors filed *Schuster v. Scale AI, Inc.* in federal court in the Northern District of California (Docket 3:25-cv-00620 on [CourtListener](https://www.courtlistener.com/docket/69556383/schuster-v-scale-ai-inc/)). The suit alleges psychological harm from writing disturbing prompts."`
+    - Why: overloaded sentence.
+19. **sections[7].body**: `"against competitor Mercor and"` → `"against competitor [Mercor](/guides/is-mercor-legit/) and"`
+    - Why: unlinked first mention. The sibling route is on the allowed internal list.
+20. **sections[8].body**: `"User feedback across major review repositories reflects sharp divisions between positive payment mechanics and negative operational experiences. On [Trustpilot](https://www.trustpilot.com/review/outlier.ai), Outlier maintains a TrustScore of 4.1 out of 5 based on 5,483 contractor reviews, with 19% of contributors awarding a 1-star rating."` → `"As of October 2026, Outlier holds a Trustpilot TrustScore of 4.1 out of 5 based on 5,483 reviews, and 19% of those reviews give 1 star."`
+    - Why: unsayable sentence; "major review repositories" is unsupported because only Trustpilot was reviewed; repeat link.
+21. **sections[8].body**: `"Praise on Trustpilot primarily focuses on the speed of Tuesday payments, the convenience of remote work, and schedule autonomy. "` → `"Praise on Trustpilot centers on on-time pay and flexibility."`
+    - Why: embellishes the sourced themes.
+22. **sections[8].body**:
+    - Quote: `"Reviewers also criticize slow customer support and volatile task volumes that evaporate overnight. These wild shifts make it essential to build sound financial habits, which you can map out using our guide on [how to budget with irregular income](/guides/how-to-budget-with-irregular-income/)."`
+    - Replacement: `"Reviewers also describe onboarding glitches, slow support, and unpredictable task volume. If Outlier pays part of your bills, our guide on [how to budget with irregular income](/guides/how-to-budget-with-irregular-income/) shows how to plan around weeks with no tasks."`
+    - Why: banned word "essential"; "evaporate overnight" embellishes; vague phrasing.
+23. **sections[9].body** (three edits):
+    - `"Scammers frequently impersonate remote work platforms to steal personal information and money."` → `"Scammers pose as recruiters for remote rating work to get job seekers to send them money."`. Why: "steal personal information" is unsupported.
+    - `"offering remote data-rater positions via SMS, WhatsApp, and Telegram."` → `"offering remote "online assessor" jobs by text, WhatsApp, and Telegram."`. Why: uses the FTC's actual wording.
+    - `"Legitimate Outlier onboarding communications originate strictly through official company infrastructure. The platform identifies onboarding@outlier.ai on its [FAQ page](https://outlier.ai/faq) as its authorized contact."` → `"The Outlier FAQ lists onboarding@outlier.ai as its official sign-up contact, so be wary of sign-up messages from other addresses."`. Why: vague abstraction, coy-abstraction, repeat link.
+24. **sections[10].body**:
+    - `"relying on sporadic AI tasking will create severe budget shortfalls when task volumes drop."` → `"relying on Outlier tasks can leave you short when task volume drops."` Why: overclaim.
+    - Quote: `"If you prefer freelance work with transparent, published minimums, compare options like Prolific, which sets researcher pay floors at £6 or $8 per hour on its [researcher help center](https://researcher-help.prolific.com/en/article/2273bd), or explore peer platforms such as [Mindrift](https://mindrift.ai/), which lists entry-level rates from $15 to $30 per hour. Highly credentialed professionals may also explore domain-expert platforms or traditional freelance marketplaces."`
+    - Replacement: `"If you prefer published minimums, [Prolific](https://researcher-help.prolific.com/en/article/2273bd) requires researchers to pay participants at least £6 or $8 per hour. [Mindrift](https://mindrift.ai/) lists entry-level rates of $15 to $30 per hour. If you hold a Master's or PhD, the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) lists $30 to $125 per hour."`
+    - Why: the first sentence was overloaded (46 words), Prolific's first mention was unlinked, and the closing sentence was vague.
+25. **sections[10].body** (two edits):
+    - `"Our verdict on Outlier would become significantly more favorable if the platform introduced standardized pay floors, established formal appeal mechanisms for account deactivations, and paid workers for initial assessment time."` → `"Our verdict on Outlier would improve if Outlier published a pay floor, offered a formal appeal for deactivations, and said it pays for assessment time."`. Why: banned word "significantly", and coy-abstraction.
+    - `"verify all tax withholding using our"` → `"estimate your quarterly tax payments with our"`. Why: wrong. Nothing is withheld, so there is no withholding to verify.
+26. **FAQ answers** (three edits):
+    - faqs[1]: `"and uncompensated onboarding assessments."` → `"and onboarding assessments that Outlier does not say are paid."`. Why: whether onboarding is paid is UNKNOWN; "uncompensated" states it as fact.
+    - faqs[2]: `"However, recurring complaints regarding sudden project removals and a pending $12.5 million California worker misclassification settlement demonstrate meaningful operational and legal controversies."` → `"Recurring complaints cite sudden project removals, and a $12.5 million California worker-misclassification settlement involving Scale AI is pending final approval on October 30, 2026."`. Why: vague abstraction.
+    - faqs[3]: `"but the company does not publish"` → `"but Outlier does not publish"`. Why: coy-abstraction.
+
+Advisory:
+- `low information gain`: sections[2], which is thin and mostly internal links.
+- The July 2025 contractor cuts in sections[1] are not tied to what they mean for a contributor.
+- Unlinked organisations with no allowed URL: Scale AI, Upwork, HireArt, Meta (see R3).
+
+---
+
+## 4. is-mercor-legit (review, floor 1,500). VERDICT: FAIL, fix-in-place (21)
+
+Checks that pass:
+- No CBS $105/$50 figures.
+- The $70–110 listing is labelled as a single listing.
+- The 1099 section notes the IRS $2,000 threshold.
+- No invented AI-interview or cheating-detection claims.
+
+New finding: sections[0] names "Robinhood Ventures". `richBody` → `linkify` auto-links every bare "Robinhood" in section bodies to the sponsored Robinhood referral URL. That puts an affiliate link on a Mercor investor mention. Fixed in #5.
+
+1. **title** `"Is Mercor Legit? Pay, Risks, and Review (2026)"` and **h1** `"Is Mercor Legit? Pay, Risks, and Contractor Review"` → both `"Is Mercor Legit and Is It Worth Applying?"` (41 chars).
+   - Why: headline tricolon. The new title matches the reader question.
+2. **introText**: `"Mercor is a legitimate, venture-backed marketplace"` → `"[Mercor](https://talent.docs.mercor.com/how-to/payments) is a legitimate, venture-backed marketplace"`
+   - Why: unlinked first mention.
+3. **introText**:
+   - Quote: `"Backed by a $350 million Series C round at a $10 billion valuation, the company pays contractors weekly via Stripe Connect or Wise, with rates reported by TechCrunch to average over $85 per hour. The platform is not a scam, but it carries distinct operational risks: contracts depend on fluctuating client projects that can end or reset at lower rates, and a spring 2026 cybersecurity breach resulted in multiple class-action lawsuits."`
+   - Replacement: `"Mercor raised a $350 million Series C at a $10 billion valuation, and it pays contractors weekly via Stripe Connect or Wise. [TechCrunch](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/) reported that Mercor's experts average over $85 per hour. Mercor is not a scam, but it carries two risks. Projects can end or be re-priced lower, and a data breach in late March 2026 drew eight class-action lawsuits from contractors."`
+   - Why: coy-abstraction ×2; overloaded 34- and 37-word sentences; TechCrunch's first mention unlinked.
+4. **introText**: `"\n\n If you have advanced credentials in law, medicine, or science, Mercor offers genuine high-hourly projects. However, treating the platform as stable full-time employment carries risk because project contracts can end or be re-priced."` → `"\n\nIf you have advanced credentials in law, medicine, or science, Mercor's hourly projects are worth applying for as supplemental income. They are a poor fit if you need guaranteed weekly hours."`
+   - Why: restates paragraph 1, coy-abstraction, stray leading space. The replacement answers "worth applying?" and states who it is not for.
+5. **sections[0].body**: `"The business raised a $350 million Series C funding round at a $10 billion valuation led by Felicis, with participation from Benchmark, General Catalyst, and Robinhood Ventures, as reported by [TechCrunch](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/)."` → `"Felicis led its $350 million Series C, with Benchmark and General Catalyst also investing, according to TechCrunch."`
+   - Why: the "Robinhood" auto-link would insert a sponsored referral link; the sentence was overloaded; this was a repeat link once #3 is applied.
+6. **sections[0].body**:
+   - Quote: `"Working on Mercor involves significant freelance friction that every applicant should consider. First, work is organized around discrete client projects rather than permanent employment. Contracts are project-length arrangements that can end or be re-priced. Second, Mercor experienced a data breach in late March 2026 linked to a LiteLLM supply-chain attack, which exposed contractor information and triggered at least eight federal class-action lawsuits. The company delivers real weekly payments for completed work, but contractors should treat it as variable project income rather than dependable primary wages."`
+   - Replacement: `"Mercor's work comes in client projects that can end or be re-priced. [Business Insider reported](https://www.aol.com/articles/ai-startup-powering-meta-openai-230627434.html) that a follow-on Meta project paid $16 per hour, and Mercor called that report inaccurate. Mercor also had a data breach in late March 2026 linked to a LiteLLM supply-chain attack. Contractors then filed eight federal class actions alleging their data was exposed. Mercor pays weekly for completed work, so treat it as variable project income instead of a dependable primary wage."`
+   - Why:
+     - Banned word "significant".
+     - The original restates itself.
+     - "Exposed contractor information" is stated as fact, but the suits only allege it.
+     - The row's verdict requires the $16/hr Business Insider report and Mercor's denial in section 1.
+     - Coy-abstraction.
+7. **sections[1].body** (also absorbs the deleted section, see #8):
+   - Quote: `"Mercor operates as an AI-talent marketplace that connects AI labs with domain experts to train models. Mercor connects AI labs with domain experts, including lawyers, doctors, scientists, and journalists. AI developers hire these subject-matter experts to train models in specialized fields."`
+   - Replacement: `"Mercor connects AI labs with domain experts, such as scientists, doctors, and lawyers, who train models in their own fields. One Mercor listing also recruited news analysts, reporters, and journalists. Mercor screens applicants before matching them with client projects, and its interview format is not described on the Mercor pages we reviewed."`
+   - Why: restatement ×2. The journalists claim is properly scoped to the single listing.
+8. **sections[5]** (heading `"The Mercor Screening and Interview Process"` + body `"Mercor screens candidates before matching them with client projects. \n\n Its interview format is not described on the documentation pages we reviewed."`) → delete the whole section element. Its content moves into sections[1] (#7).
+   - Why: formatting slop (a header over a two-sentence section) and a backward pronoun across paragraphs.
+9. **sections[2].body**: `"Business Insider reported through [syndication](https://www.aol.com/articles/ai-startup-powering-meta-openai-230627434.html) that"` → `"Business Insider reported through AOL syndication that"`
+   - Why: repeat link after #6.
+10. **sections[3].body** (two edits):
+    - `"According to official [Mercor payment documentation](https://talent.docs.mercor.com/how-to/payments), hourly"` → `"According to Mercor's payment documentation, hourly"`. Why: repeat link after #2.
+    - `"\n\n Tracking these deposits against your core living costs is easier when you plan around weekly cycles using our [budget calculator](/budget/)."` → `"\n\nOur [budget calculator](/budget/) lets you plan living costs around a weekly pay cycle."`. Why: nominalization and a stray leading space.
+11. **sections[3].body**: `"denominated strictly in United States dollars (USD)."` → `"denominated strictly in United States dollars (USD), so your pay rate is fixed in dollars whatever currency your bank uses."`
+    - Why: bare-feature with no consequence for the reader.
+12. **sections[4].body**: `"Mercor classifies all its contributors as independent contractors, not formal employees. Under [Mercor US tax policies](https://talent.docs.mercor.com/policies/us-taxes), the company does not withhold federal, state, or payroll taxes from your earnings."` → `"Mercor treats its contributors as independent contractors. Under [Mercor's US tax policy](https://talent.docs.mercor.com/policies/us-taxes), Mercor does not deduct taxes from your payments."`
+    - Why: "X, not Y" antithesis; coy-abstraction; the source says "does not deduct taxes" without listing federal, state and payroll.
+13. **sections[4].body**: `"If you expect to owe at least $1,000 in federal tax, you must submit quarterly estimated tax payments using Form 1040-ES on four annual deadlines: April 15, June 15, September 15, and January 15 of the following year."` → `"If you expect to owe at least $1,000, you generally must make quarterly estimated tax payments using Form 1040-ES. The [IRS deadlines](https://www.irs.gov/faqs/estimated-tax) are April 15, June 15, September 15, and January 15 of the following year."`
+    - Why: overloaded 38-word sentence, and the IRS rule is "generally required" (safe harbor applies).
+14. **sections[4].body**: `"To determine the exact portion of each paycheck you should reserve for tax season, reference our detailed breakdown of"` → `"To estimate how much of each payout to set aside for taxes, read our breakdown of"`
+    - Why: "exact" overclaims, and a contractor gets payouts, not a paycheck.
+15. **sections[6].heading**: `"Security Breaches, Lawsuits, and Platform Risks"` → `"Mercor's Data Breach and Lawsuits"`
+    - Why: headline tricolon and a vague noun.
+16. **sections[6].body**: `"While Mercor is a legitimate commercial entity, working on the platform involves notable legal and data security considerations. Contractors must evaluate three primary risks before submitting personal identity data.\n\nFirst, the platform suffered a significant cybersecurity breach in late March 2026."` → `"Mercor carries legal and data-security risks to weigh before you upload identity documents.\n\nMercor suffered a data breach in late March 2026."`
+    - Why: banned words "notable" and "significant"; coy-abstraction; throat-clearing; the First/Second/Third paragraph structure is formatting slop (see #18).
+17. **sections[6].body** (lawsuit list):
+    - Quote: `"The breach led to at least eight federal class-action lawsuits filed by affected contractors, including *Esson v. Mercor.io* (Case No. 3:26-cv-02839) in the Northern District of California, accessible via [CourtListener](https://www.courtlistener.com/docket/73131170/esson-v-mercorio-corporation/), alongside filings by Deboni, Gill, Lofton, Massman, Ramos, Ananthula, and White."`
+    - Replacement: `"Contractors then filed eight federal class actions, including *Esson v. Mercor.io* (Case No. 3:26-cv-02839) in the Northern District of California, which is on [CourtListener](https://www.courtlistener.com/docket/73131170/esson-v-mercorio-corporation/). The others were brought by plaintiffs named Deboni, Gill, Lofton, Massman, Ramos, Ananthula, and White, and CourtListener shows the Gill, Lofton, and Massman cases terminated on May 20, 2026. If you uploaded documents to Mercor before April 2026, follow the Esson docket for updates."`
+    - Why: overloaded 45-word sentence; omits the sourced May 20 terminations; dead-end with no next step for affected readers.
+18. **sections[6].body** (two edits):
+    - `"Second, Mercor faces intellectual property litigation from competitors. In September 2025"` → `"Mercor also faces a trade-secret suit from a competitor. In September 2025"`
+    - `"Third, public customer sentiment data remains thin. The Mercor profile on [Trustpilot](https://www.trustpilot.com/review/mercor.com) holds only 5 reviews with a 2.5 TrustScore as of October 2026. Five reviews represent an insufficient sample size to establish a definitive statistical pattern of contributor satisfaction."` → `"Worker reviews give little to go on. Mercor's [Trustpilot](https://www.trustpilot.com/review/mercor.com) profile holds only 5 reviews with a 2.5 TrustScore as of October 2026, too few to show a pattern."`
+    - Why: First/Second/Third parallel paragraphs; "competitors" plural is wrong (there is one); the closing sentence restates the one before and fails say-it-out-loud.
+19. **sections[7].body** (three edits):
+    - `"published consumer alerts regarding remote job scams, noting that"` → `"published an April 30, 2026 consumer alert noting that"`. Why: there is one sourced alert, not several.
+    - `"emphasizes that legitimate businesses never charge onboarding fees, never demand payment for training modules, and never conduct overpayment check schemes."` → `"says legitimate employers don't charge you to get a job, and it warns about fake-check overpayment schemes."`. Why: "training modules" is unsupported, and the triple "never" is parallel-list padding.
+    - `"Apply to Mercor solely through verified company domains such as mercor.com. If an individual contacts you on an encrypted messaging app claiming to offer an unlisted Mercor contract, asks for an upfront equipment deposit, or sends an unverified cashier's check, cease contact and report the incident at ReportFraud.ftc.gov."` → `"Mercor's own job listings sit on work.mercor.com, so apply through that site. If someone on WhatsApp or Telegram offers you Mercor work and then asks you to deposit money or sends you a check, stop replying and report it at ReportFraud.ftc.gov."`. Why: "equipment deposit" and "cashier's check" are invented, and the sentence was overloaded (37 words).
+20. **sections[8].body**: `"before relying on freelance platform revenue as primary household income."` → `"before relying on freelance platform revenue as primary household income. Mercor is not for you if you need guaranteed weekly hours or lack domain credentials. Our verdict would change if Mercor published a rate card or a minimum project length, or if the breach lawsuits ended in findings against it."`
+    - Why: required page elements ("who this is not for" in the body, "what would change our answer") were missing.
+21. **FAQ answers**:
+    - faqs[0]: `"the company faced class-action litigation following a spring 2026 data breach."` → `"contractors filed class actions against Mercor after a March 2026 data breach."` Why: coy-abstraction.
+    - faqs[1]: `"on the platform."` → `"on Mercor."` Why: coy-abstraction.
+    - faqs[2]: `"such as the Nova assignment reported at $16 per hour."` → `"such as the Nova assignment Business Insider reported at $16 per hour, a report Mercor called inaccurate."` Why: adds the attribution and Mercor's denial.
+    - faqs[3]: `"Payments are denominated in United States dollars and issued automatically via Stripe Connect or Wise depending on your geographic region."` → `"Payments are in US dollars. Mercor assigns Stripe Connect or Wise based on your region."` Why: breaks the FAQ `monotone-rhythm` run (10 consecutive long sentences, lengths 17 to 26).
+    - faqs[5]: `"The breach exposed contractor Social Security numbers, home addresses, and interview recordings, prompting at least eight federal class-action lawsuits in California and Texas, as well as reporting that Meta paused active work with the platform."` → `"Contractors then filed eight federal class actions in California and Texas alleging exposure of Social Security numbers, addresses, and interview recordings. HR Dive, citing Wired, reported that Meta paused work with Mercor after the breach."` Why: alleged exposure stated as fact, overloaded sentence, coy-abstraction.
+
+Advisory:
+- The reader question is about the AI interview, and the fact list has nothing to answer it. The page now says so in one sentence. To cover the PAA interview questions, the fact list needs expanding (Rung 2 material), not an invented answer.
+- Unlinked organisations with no allowed URL: Stripe, Wise, Felicis, Benchmark, General Catalyst, LiteLLM, Meta, Wired (see R3).
+- The metaDescription (157 chars) is fine.
+
+---
+
+## PER-PAGE STATUS
+
+- ai-training-jobs: FIX-IN-PLACE (23). Depth 1,542 → 1,662 (floor 1,200).
+- is-dataannotation-legit: FIX-IN-PLACE (24). Depth 1,546 → 1,592 (floor 1,500, tight). This includes the meta-flagged McKinney "preliminary" claim (#18).
+- is-outlier-ai-legit: FIX-IN-PLACE (26). Depth 1,874 → 1,765. This includes the forbidden $10–$50 range (#12).
+- is-mercor-legit: FIX-IN-PLACE (21), including one section deletion (#8). Depth 1,655 → about 1,627. This includes the Robinhood referral auto-link (#5).
+
+Run-level before ship: R1 and R2 are one-line chart record edits by the orchestrator. R3 needs an orchestrator decision on the closed URL list.
+
+None of the findings needs Rung 2 rework. Every replacement restates the fact list or deletes text. After splicing, re-run Rung 0, then have the reviewer re-read only the edited fields in their paragraph.
+
+Files:
+- /Users/jonathanteplitsky/Desktop/Github Projects/Growth Sites/WealthFinance/reports/mindmap-pass/2026-10-08-ai-money/drafts/{ai-training-jobs,is-dataannotation-legit,is-outlier-ai-legit,is-mercor-legit}.json
+- /Users/jonathanteplitsky/Desktop/Github Projects/Growth Sites/WealthFinance/reports/mindmap-pass/2026-10-08-ai-money.md (chart; R1/R2)
+- /Users/jonathanteplitsky/Desktop/Github Projects/Growth Sites/WealthFinance/src/lib/richtext.ts (Robinhood auto-link in `linkify`, used by `richBody`)

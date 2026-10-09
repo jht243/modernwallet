@@ -1,0 +1,570 @@
+{
+ "slug": "is-outlier-ai-legit",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2005,
+ "floor": 1500,
+ "input_tokens": 33051,
+ "output_tokens": 4674,
+ "thinking_tokens": null,
+ "cached_tokens": 17751,
+ "est_cost_usd": 0.0303,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2116,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 4404,
+   "floor": 1500,
+   "ratio": 2.94,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    14,
+    10,
+    0
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "In 2026, the company agreed to a preliminary $12.5 million settlement to resolve class action claims alleging worker misclassification in California.",
+     "replacement": "A $12.5 million settlement resolving class action claims alleging worker misclassification in California is pending final approval on October 30, 2026.",
+     "type": "unsupported",
+     "why": "SOURCE does not state agreement year or describe the settlement as preliminary."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Corporate shifting directly impacts contractor stability on Outlier, where staffing levels change rapidly based on underlying client contracts.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Outlier staffing levels change based on client contracts."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Work on Outlier consists of human data feedback to train large language models developed by major technology firms.",
+     "replacement": "Work on Outlier consists of human data feedback to train artificial intelligence models.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that tasks train models developed by major technology firms."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Tasks range from general conversational evaluations to specialized technical assignments requiring coding expertise, multilingual translation, or professional knowledge.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE attributes coding, multilingual, and professional tiers to DataAnnotation, not Outlier."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Work availability fluctuates based on external client demand rather than your personal schedule.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that work availability fluctuates based on external client demand."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "A contributor might complete tasks for several days in a row, only to see their project dashboard empty without warning.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this multi-day tasking scenario."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Highly technical roles, such as software development or advanced STEM tasks, generally command higher rates than entry-level writing assessments across the broader data industry.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this industry-wide role comparison."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Because your weekly earnings depend entirely on the rates assigned to your queue, calculate your minimum acceptable hourly rate using our [freelance rate calculator](/freelance-rate/) before spending unpaid time taking platform tests.",
+     "replacement": "Because your weekly earnings depend entirely on the rates assigned to your queue, calculate your minimum acceptable hourly rate using our [freelance rate calculator](/freelance-rate/) before taking platform tests.",
+     "type": "unsupported",
+     "why": "SOURCE does not confirm whether platform tests are paid or unpaid."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "After submitting initial documentation, applicants complete specialized screening assessments designed to evaluate language comprehension, reasoning, or technical domain skills.",
+     "replacement": "After submitting initial documentation, applicants complete skill screenings followed by project-specific onboarding.",
+     "type": "unsupported",
+     "why": "SOURCE does not state screenings evaluate language comprehension, reasoning, or domain skills."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Multiple contributor complaints indicate that applicants frequently spend hours taking complex qualification exams without receiving any pay, only to be placed in an inactive queue if no matching projects are currently open.",
+     "replacement": "Contributor complaint themes on Trustpilot cite long unpaid tests.",
+     "type": "unsupported",
+     "why": "SOURCE does not state complaints about being placed in an inactive queue."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Unlike platforms that impose multi-week holding rules, Outlier processes funds every seven days provided your account remains in good standing.",
+     "replacement": "Outlier processes funds every seven days provided your account remains in good standing.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that other platforms impose multi-week holding rules."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "The [Outlier FAQ](https://outlier.ai/faq) states plainly that you work as a freelancer, meaning Outlier does not withhold federal, state, or local income taxes from your Tuesday disbursements, nor does the company provide visa sponsorship.",
+     "replacement": "The [Outlier FAQ](https://outlier.ai/faq) states plainly that you work as a freelancer, and the company does not provide visa sponsorship.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Outlier's tax withholding policy."
+    },
+    {
+     "id": "sections[8].body",
+     "quote": "Contractors who secure ongoing projects appreciate logging hours directly from home without strict daily time commitments.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what contractors who secure ongoing projects appreciate."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Working for Outlier AI is safe from a corporate legitimacy standpoint, as it is run by Scale AI and does not charge signup fees.",
+     "replacement": "Working for Outlier AI is safe from a corporate legitimacy standpoint, as it is a real platform run by Scale AI.",
+     "type": "unsupported",
+     "why": "SOURCE states DataAnnotation charges no signup fees, not Outlier."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Contributors generate text prompts, evaluate model responses, rank competing outputs, and correct factual errors.",
+     "replacement": "Contributors generate prompts, evaluate model responses, rank outputs, and improve model responses.",
+     "type": "unsupported",
+     "why": "SOURCE lists generating prompts, ranking outputs, and improving model responses, not correcting errors."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Droege noted in the staff memorandum that the business had ramped up its generative AI capacity too quickly during earlier demand surges.",
+     "replacement": "Droege noted in the staff memorandum that the business had ramped up its generative AI capacity too quickly.",
+     "type": "unsupported",
+     "why": "SOURCE does not state earlier demand surges."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "According to the [Outlier FAQ](https://outlier.ai/faq), contributors write complex user prompts, evaluate AI responses, rank comparative answers, and edit machine text to improve factual accuracy.",
+     "replacement": "According to the [Outlier FAQ](https://outlier.ai/faq), contributors generate prompts, rank AI outputs, improve model responses, or complete other tasks.",
+     "type": "unsupported",
+     "why": "SOURCE does not state complex user prompts or editing text for factual accuracy."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "However, contractors who experience account flags or unexpected suspensions report delays in accessing accumulated balances.",
+     "replacement": "However, Trustpilot reviewers report facing pending earnings after deactivation.",
+     "type": "unsupported",
+     "why": "SOURCE notes Trustpilot complaints of pending earnings after deactivation, not account flags."
+    },
+    {
+     "id": "sections[8].body",
+     "quote": "Conversely, recurring complaint themes describe sudden project removals without performance feedback, long unpaid onboarding tests, and abrupt account deactivations that leave pending earnings frozen during administrative review.",
+     "replacement": "Conversely, recurring complaint themes describe project removals or deactivations with little explanation, long unpaid tests, and pending earnings after deactivation.",
+     "type": "unsupported",
+     "why": "SOURCE states little explanation and pending earnings after deactivation, not administrative review."
+    },
+    {
+     "id": "sections[9].body",
+     "quote": "Due to widespread interest in remote AI roles, criminal scammers frequently impersonate Outlier to steal personal information and money.",
+     "replacement": "Scammers frequently impersonate remote work platforms to steal personal information and money.",
+     "type": "unsupported",
+     "why": "SOURCE does not state widespread interest in remote AI roles."
+    },
+    {
+     "id": "sections[9].body",
+     "quote": "Common fraud schemes include task scams, where criminals pay small initial sums for basic rating tasks before demanding that the worker deposit cryptocurrency or wire money to unlock higher earning tiers.",
+     "replacement": "Common fraud schemes include task scams, where workers receive small initial sums for rating or reviewing before being asked to deposit their own money.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention cryptocurrency, wiring money, or unlocking higher tiers."
+    },
+    {
+     "id": "sections[9].body",
+     "quote": "Other operations involve fake checks sent to purchase home office equipment, as detailed in the FTC guide on [job scams](https://consumer.ftc.gov/articles/job-scams).",
+     "replacement": "Other operations involve fake-check overpayment schemes, as detailed in the FTC guide on [job scams](https://consumer.ftc.gov/articles/job-scams).",
+     "type": "unsupported",
+     "why": "SOURCE mentions fake-check overpayment schemes, not purchasing home office equipment."
+    },
+    {
+     "id": "sections[9].body",
+     "quote": "Real employers and legitimate platforms will never charge fees for job applications, equipment setups, or onboarding tests.",
+     "replacement": "Real employers and legitimate platforms will never charge fees to get a job.",
+     "type": "unsupported",
+     "why": "SOURCE states legitimate employers do not charge you to get a job."
+    },
+    {
+     "id": "sections[9].body",
+     "quote": "If a recruiter messages you on an encrypted chat app asking for money or gift cards, flag the message immediately at ReportFraud.ftc.gov.",
+     "replacement": "If a recruiter messages you on a chat app asking for money, report it immediately at ReportFraud.ftc.gov.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention gift cards."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2340
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-09T10:40:13-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-08-ai-money/audit/is-outlier-ai-legit.findings.txt",
+    "applied": [
+     {
+      "id": "title",
+      "quote": "Is Outlier AI Legit? Verdict, Pay, and Lawsuits",
+      "replacement": "Is Outlier AI Legit and Does It Pay Contractors?",
+      "type": "headline tricolon",
+      "why": "Headline tricolon defect."
+     },
+     {
+      "id": "h1",
+      "quote": "Is Outlier AI Legit? Real Contractor Pay, Lawsuits, and Risks",
+      "replacement": "Is Outlier AI Legit and Does It Pay Contractors?",
+      "type": "headline tricolon",
+      "why": "Headline tricolon defect."
+     },
+     {
+      "id": "metaDescription",
+      "quote": "Is Outlier AI legit? We review real contractor pay, Scale AI ownership, Trustpilot ratings, wage lawsuits, and scam warning signs as of October 2026.",
+      "replacement": "Outlier AI is a real Scale AI platform that pays weekly but publishes no pay range. Payouts, lawsuits, Trustpilot themes and scam signs as of October 2026.",
+      "type": "unsupported implication of published pay",
+      "why": "Outlier publishes no pay range."
+     },
+     {
+      "id": "introText",
+      "quote": "Outlier AI is a real data-training platform operated by Scale AI that pays independent contractors weekly on Tuesdays through PayPal, Airtm, or ACH bank transfers. The company does not publish a platform-wide pay rate card, so your exact hourly earnings depend on individual project assignments that you review before accepting.",
+      "replacement": "[Outlier AI](https://outlier.ai/faq) is a real data-training platform operated by Scale AI that pays independent contractors weekly on Tuesdays through PayPal, Airtm, or ACH bank transfers. At ModernWallet, we built this review from Outlier's own FAQ, court dockets, and [Trustpilot reviews](https://www.trustpilot.com/review/outlier.ai) so you can weigh the tradeoffs before signing up. Outlier does not publish a platform-wide pay rate card, so your hourly earnings depend on each project's rate, which you see before starting.",
+      "type": "unlinked first mention, tee-up position, coy-abstraction",
+      "why": "Links first mentions, repositions tee-up, and removes coy abstraction."
+     },
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we review flexible earning platforms by analyzing verified business filings, court records, and official policies so you can evaluate the financial tradeoffs before signing up. While Outlier distributes real money to contributors, workers face unpredictable task volumes, sudden deactivations, and ongoing litigation regarding worker classification in California court dockets.",
+      "replacement": "Reviewers on Trustpilot report unpredictable task volume and sudden deactivations. A $12.5 million California worker-misclassification settlement involving Scale AI is pending final approval on October 30, 2026.",
+      "type": "GATE Experience truth and stating review themes as fact",
+      "why": "Removes invented methodology claim and attributes Trustpilot review themes."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "The platform is not an outright scam, but it does not offer guaranteed hours, stable employment, or a fixed baseline wage.",
+      "replacement": "Outlier is not a scam, but it offers no guaranteed hours and publishes no pay range. You see each project's rate before you start.",
+      "type": "coy-abstraction and missing verdict element",
+      "why": "Removes coy abstraction and adds unpublished pay range fact."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Contributors generate prompts, evaluate model responses, rank outputs, and improve model responses. The company processes payouts every Tuesday for work logged through the preceding Monday midnight UTC via PayPal, Airtm, or ACH direct deposits. However, independent contractor reviews highlight frequent project removals, onboarding delays, and sudden account deactivations that leave contributors without predictable monthly income.",
+      "replacement": "Contributors generate prompts, rank AI outputs, and improve model responses. Outlier pays every Tuesday for work completed from the previous Tuesday through Monday (midnight UTC), via PayPal, Airtm, or ACH bank transfer. Trustpilot reviewers describe project removals, onboarding glitches, and deactivations with little explanation, so income from Outlier is irregular.",
+      "type": "invented task wording and unattributed review themes",
+      "why": "Aligns tasks with source and properly attributes Trustpilot themes."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Furthermore, parent firm Scale AI faces substantial legal scrutiny over contractor treatment. A $12.5 million settlement resolving class action claims alleging worker misclassification in California is pending final approval on October 30, 2026.",
+      "replacement": "Scale AI, which operates Outlier, has faced several worker lawsuits. A $12.5 million settlement of California class claims alleging worker misclassification is pending final approval on October 30, 2026, and the defendants deny the allegations.",
+      "type": "vague abstraction and missing defendants' denial",
+      "why": "Removes filler and adds required defendants' denial."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Outlier is an operational platform owned and managed by [Scale AI](https://outlier.ai/faq), with website footers identifying intellectual property under Smart Ecosystems Inc.",
+      "replacement": "Outlier is operated by Scale AI, and its site footer reads \"powered by Scale AI \u00b7 \u00a9 2026 Smart Ecosystems.\"",
+      "type": "unsupported terms and repeat link",
+      "why": "Matches source wording and removes redundant link."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "founding chief executive officer Alexandr Wang",
+      "replacement": "chief executive officer Alexandr Wang",
+      "type": "unsupported descriptor",
+      "why": "Removes unsupported word founding."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Shortly after the leadership change, corporate restructuring triggered significant workforce reductions across the business.",
+      "replacement": "",
+      "type": "banned word and redundant filler",
+      "why": "Removes banned word significant and redundant sentence."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Droege noted in the staff memorandum that the business had ramped up its generative AI capacity too quickly.",
+      "replacement": "Droege's memo said Scale AI had \"ramped up our GenAI capacity too quickly.\"",
+      "type": "imprecise quotation",
+      "why": "Uses the exact sourced quote from memo."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "According to the [Outlier FAQ](https://outlier.ai/faq), contributors generate prompts, rank AI outputs, improve model responses, or complete other tasks.",
+      "replacement": "According to the Outlier FAQ, contributors generate prompts, rank AI outputs, improve model responses, or complete other tasks.",
+      "type": "repeat link",
+      "why": "Removes repeat link."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "According to the official [Outlier FAQ](https://outlier.ai/faq), tasking",
+      "replacement": "According to the Outlier FAQ, tasking",
+      "type": "repeat link",
+      "why": "Removes repeat link."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Unofficial search engine snippets have previously claimed that Outlier pays between $10 and $50 per hour, but that range is unverified, and the company publishes no minimum or maximum dollar figure on its live website.",
+      "replacement": "As of October 2026, the FAQ gives no minimum or maximum dollar figure.",
+      "type": "forbidden dollar range and monotone rhythm",
+      "why": "Removes forbidden $10-$50 mention and breaks monotone sentence rhythm."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "according to platform documentation",
+      "replacement": "according to the Outlier FAQ",
+      "type": "imprecise citation",
+      "why": "Specifies Outlier FAQ."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "and present a valid government-issued photo identification card along with a mobile phone registered in their country of residence.",
+      "replacement": "and have a valid ID and mobile phone from their country of residence.",
+      "type": "unsupported embellishments",
+      "why": "Matches exact FAQ requirements from source."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Crucially, Outlier does not state",
+      "replacement": "Outlier does not state",
+      "type": "banned word",
+      "why": "Removes banned word crucially."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Outlier maintains a predictable payment schedule for approved, completed project work. According to the [Outlier FAQ](https://outlier.ai/faq), payments",
+      "replacement": "Outlier pays on a fixed weekly schedule. According to the Outlier FAQ, payments",
+      "type": "unsupported qualifier and repeat link",
+      "why": "Removes repeat link and unsupported approved qualifier."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Payout regularity remains one of the primary points of praise among active platform contributors. Outlier processes funds every seven days provided your account remains in good standing.",
+      "replacement": "Trustpilot reviewers praise on-time pay.",
+      "type": "unattributed review theme and invented condition",
+      "why": "Attributes review theme to Trustpilot and removes invented condition."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "The [Outlier FAQ](https://outlier.ai/faq) states plainly that you work as a freelancer, and the company does not provide visa sponsorship.",
+      "replacement": "The Outlier FAQ says you work as an independent contractor or freelancer, and Outlier does not offer visa sponsorship.",
+      "type": "repeat link and coy abstraction",
+      "why": "Removes repeat link and aligns with FAQ phrasing."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Self-employment tax equals 15.3% on 92.35% of your net business earnings, comprising 12.4% for Social Security up to the annual wage limit ($176,100 in 2025) and 2.9% for Medicare, plus an additional 0.9% Medicare tax above statutory thresholds.",
+      "replacement": "Self-employment tax is 15.3%: 12.4% for Social Security, up to the $176,100 wage base for 2025, and 2.9% for Medicare. It applies to 92.35% of your net earnings, and an extra 0.9% Medicare tax applies above $200,000 for single filers.",
+      "type": "overloaded sentence",
+      "why": "Splits overloaded sentence and clarifies threshold."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Under Internal Revenue Service rules, businesses",
+      "replacement": "Under [IRS rules](https://www.irs.gov/instructions/i1099mec), businesses",
+      "type": "unlinked first mention",
+      "why": "Links first mention to allowed IRS URL."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "Scale AI has faced extensive labor disputes regarding how it manages and classifies Outlier taskers.",
+      "replacement": "Scale AI has faced several labor lawsuits over how it pays and classifies Outlier taskers.",
+      "type": "vague wording",
+      "why": "Specifies labor lawsuits over pay and classification."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "alleging that the company misclassified",
+      "replacement": "alleging that Scale AI misclassified",
+      "type": "vague reference",
+      "why": "Clarifies entity name as Scale AI."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "According to settlement administration records on [ClaimDepot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement),",
+      "replacement": "According to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement),",
+      "type": "inaccurate entity description",
+      "why": "Claim Depot is not the settlement administrator."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "and related California actions without admitting wrongdoing.",
+      "replacement": "and related California actions. The defendants deny the allegations.",
+      "type": "inaccurate denial phrasing",
+      "why": "Matches source fact that defendants deny allegations."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "on Outlier or Remotasks between",
+      "replacement": "on Outlier or [Remotasks](https://www.remotasks.com/) between",
+      "type": "unlinked first mention",
+      "why": "Links Remotasks to allowed URL."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "and the San Francisco court scheduled the final approval hearing for October 30, 2026.",
+      "replacement": "and the final approval hearing is set for October 30, 2026, so the settlement is not yet final.",
+      "type": "unclear settlement status",
+      "why": "Clarifies that the settlement is pending final approval."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "six contributors filed *Schuster v. Scale AI, Inc.* in the U.S. District Court for the Northern District of California (Docket 3:25-cv-00620 on [CourtListener](https://www.courtlistener.com/docket/69556383/schuster-v-scale-ai-inc/)), alleging psychological harm resulting from writing disturbing training prompts.",
+      "replacement": "six Outlier contributors filed *Schuster v. Scale AI, Inc.* in federal court in the Northern District of California (Docket 3:25-cv-00620 on [CourtListener](https://www.courtlistener.com/docket/69556383/schuster-v-scale-ai-inc/)). The suit alleges psychological harm from writing disturbing prompts.",
+      "type": "overloaded sentence",
+      "why": "Splits long sentence into two clear statements."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "against competitor Mercor and",
+      "replacement": "against competitor [Mercor](/guides/is-mercor-legit/) and",
+      "type": "unlinked first mention",
+      "why": "Links Mercor to sibling route."
+     },
+     {
+      "id": "sections[8].body",
+      "quote": "User feedback across major review repositories reflects sharp divisions between positive payment mechanics and negative operational experiences. On [Trustpilot](https://www.trustpilot.com/review/outlier.ai), Outlier maintains a TrustScore of 4.1 out of 5 based on 5,483 contractor reviews, with 19% of contributors awarding a 1-star rating.",
+      "replacement": "As of October 2026, Outlier holds a Trustpilot TrustScore of 4.1 out of 5 based on 5,483 reviews, and 19% of those reviews give 1 star.",
+      "type": "unsayable sentence and repeat link",
+      "why": "Simplifies wording and avoids referencing unreviewed repositories."
+     },
+     {
+      "id": "sections[8].body",
+      "quote": "Praise on Trustpilot primarily focuses on the speed of Tuesday payments, the convenience of remote work, and schedule autonomy.",
+      "replacement": "Praise on Trustpilot centers on on-time pay and flexibility.",
+      "type": "embellished themes",
+      "why": "Aligns with sourced themes of on-time pay and flexibility."
+     },
+     {
+      "id": "sections[8].body",
+      "quote": "Reviewers also criticize slow customer support and volatile task volumes that evaporate overnight. These wild shifts make it essential to build sound financial habits, which you can map out using our guide on [how to budget with irregular income](/guides/how-to-budget-with-irregular-income/).",
+      "replacement": "Reviewers also describe onboarding glitches, slow support, and unpredictable task volume. If Outlier pays part of your bills, our guide on [how to budget with irregular income](/guides/how-to-budget-with-irregular-income/) shows how to plan around weeks with no tasks.",
+      "type": "banned word and embellishment",
+      "why": "Removes banned word essential and hyperbolic phrasing."
+     },
+     {
+      "id": "sections[9].body",
+      "quote": "Scammers frequently impersonate remote work platforms to steal personal information and money.",
+      "replacement": "Scammers pose as recruiters for remote rating work to get job seekers to send them money.",
+      "type": "unsupported claim",
+      "why": "Matches FTC focus on sending money."
+     },
+     {
+      "id": "sections[9].body",
+      "quote": "offering remote data-rater positions via SMS, WhatsApp, and Telegram.",
+      "replacement": "offering remote \"online assessor\" jobs by text, WhatsApp, and Telegram.",
+      "type": "inaccurate terminology",
+      "why": "Uses FTC alert wording online assessor."
+     },
+     {
+      "id": "sections[9].body",
+      "quote": "Legitimate Outlier onboarding communications originate strictly through official company infrastructure. The platform identifies onboarding@outlier.ai on its [FAQ page](https://outlier.ai/faq) as its authorized contact.",
+      "replacement": "The Outlier FAQ lists onboarding@outlier.ai as its official sign-up contact, so be wary of sign-up messages from other addresses.",
+      "type": "vague abstraction and repeat link",
+      "why": "Removes repeat link and vague phrasing."
+     },
+     {
+      "id": "sections[10].body",
+      "quote": "relying on sporadic AI tasking will create severe budget shortfalls when task volumes drop.",
+      "replacement": "relying on Outlier tasks can leave you short when task volume drops.",
+      "type": "overclaim",
+      "why": "Softens overclaim to match reality."
+     },
+     {
+      "id": "sections[10].body",
+      "quote": "If you prefer freelance work with transparent, published minimums, compare options like Prolific, which sets researcher pay floors at \u00a36 or $8 per hour on its [researcher help center](https://researcher-help.prolific.com/en/article/2273bd), or explore peer platforms such as [Mindrift](https://mindrift.ai/), which lists entry-level rates from $15 to $30 per hour. Highly credentialed professionals may also explore domain-expert platforms or traditional freelance marketplaces.",
+      "replacement": "If you prefer published minimums, [Prolific](https://researcher-help.prolific.com/en/article/2273bd) requires researchers to pay participants at least \u00a36 or $8 per hour. [Mindrift](https://mindrift.ai/) lists entry-level rates of $15 to $30 per hour. If you hold a Master's or PhD, the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) lists $30 to $125 per hour.",
+      "type": "overloaded sentence and unlinked mention",
+      "why": "Breaks overloaded sentence, links Prolific, and adds Handshake data."
+     },
+     {
+      "id": "sections[10].body",
+      "quote": "Our verdict on Outlier would become significantly more favorable if the platform introduced standardized pay floors, established formal appeal mechanisms for account deactivations, and paid workers for initial assessment time.",
+      "replacement": "Our verdict on Outlier would improve if Outlier published a pay floor, offered a formal appeal for deactivations, and said it pays for assessment time.",
+      "type": "banned word and coy abstraction",
+      "why": "Removes banned word significantly and tightens prose."
+     },
+     {
+      "id": "sections[10].body",
+      "quote": "verify all tax withholding using our",
+      "replacement": "estimate your quarterly tax payments with our",
+      "type": "factual error",
+      "why": "Contractors have no withholding; they make estimated payments."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "and uncompensated onboarding assessments.",
+      "replacement": "and onboarding assessments that Outlier does not say are paid.",
+      "type": "unsupported certainty",
+      "why": "Whether onboarding is paid is unpublished, not known uncompensated."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "However, recurring complaints regarding sudden project removals and a pending $12.5 million California worker misclassification settlement demonstrate meaningful operational and legal controversies.",
+      "replacement": "Recurring complaints cite sudden project removals, and a $12.5 million California worker-misclassification settlement involving Scale AI is pending final approval on October 30, 2026.",
+      "type": "vague abstraction",
+      "why": "Replaces vague wording with concrete facts."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "but the company does not publish",
+      "replacement": "but Outlier does not publish",
+      "type": "coy-abstraction",
+      "why": "Replaces the company with Outlier."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[6].body",
+      "quote": "though certain states enforce lower $600 reporting minimums.",
+      "finding": "misattributed threshold",
+      "why": "Clarifies threshold is applied by PayPal.",
+      "replacement": "though PayPal applies a $600 threshold in Vermont, Massachusetts, Virginia, and Maryland.",
+      "reason": "replacement adds ['Vermont', 'Massachusetts', 'Virginia', 'Maryland'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "deleted_final": 0,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 2005,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 237.4,
+ "response_id": "wwPJavmHKd3pz7IP9bbJqQk",
+ "generated_at": "2026-10-09T10:13:51-0500"
+}

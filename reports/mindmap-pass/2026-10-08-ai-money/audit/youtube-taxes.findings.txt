@@ -1,0 +1,50 @@
+RUN-LEVEL FAILS: NOT FIXABLE IN PLACE (chart or orchestrator)
+
+- **R-1 GATE Register / Medium and row records.** The chart rows for all four slugs in reports/mindmap-pass/2026-10-08-ai-money.md carry no `register:` record. Medium and page type are present. All four pages are clearly `register: operator` because they address the reader as "you". Add the record to each row.
+- **R-2 GATE Tee-up.** None of the four pages has a tee-up after the claim-check deleted the "At ModernWallet, we…" sentences. No row carries a `teeup-exempt:` note.
+  - The fix is to add `teeup-exempt: API-generated; claim-check removed unsupported first-person` to the four rows.
+  - The alternative is a tee-up licensed by _experience.md, which the orchestrator would have to write.
+- **R-3 Row prompt error (youtube-taxes WORKED NUMBERS).** The row prompt says a $60,000 salary puts the channel profit in the "22% bracket". From my own knowledge of the 2026 brackets (Rev. Proc. 2025-32, not on the fact list): the single 12% bracket runs to $50,400. $60,000 − $16,100 = $43,900 of taxable wages. Adding about $6,505 of profit (after the half-SE deduction) reaches only about $50,405. So nearly all of the profit is taxed at 12%. The page text is fixed below (Y-8). Correct the prompt too.
+
+
+- **Word count:** 1,265. Depth passes.
+- **Title:** 40 characters. **Meta description:** 141. Both pass.
+- **Google's form is not asserted** in faqs[3]. howItWorks paragraph 4 overstates it; see Y-5.
+- **meta.guards numbers:**
+  - "554" is Topic 554, which is legitimate.
+  - "6464.5" is $7,000 × 0.9235, which is arithmetically correct. See the advisory notes.
+- **Rhythm FAIL:** `monotone-rhythm: sentences 38-47` (the howItWorks tail through workedExample), all long. The overall distribution is S 4 / M 9 / L 47. Y-6 and Y-8 break it; re-measure afterwards.
+
+FIX-IN-PLACE
+Y-1. **introText** `"YouTube earnings count as taxable income starting from the first dollar."` → `"[YouTube](https://blog.youtube/creator-and-artist-stories/youtube-partner-program-explained/) earnings count as taxable income starting from the first dollar."`
+     Why: unlinked-company.
+Y-2. **introText** `"If you run your channel with regular continuity to turn a profit, the Internal Revenue Service (IRS) classifies the income as self-employment earnings once your net profit hits $400 for the tax year. That classification means you owe self-employment tax alongside standard federal income tax, though ordinary equipment, editing software, and subscription costs reduce your taxable base."`
+     → `"If you run your channel regularly to make a profit, it counts as a business. You then owe self-employment tax once net earnings reach $400 for the year, [according to the Internal Revenue Service (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes). You also owe federal income tax on the profit, and ordinary and necessary costs such as equipment, editing software and subscriptions reduce it."`
+     Why: it misstated the rule. $400 is the threshold for owing SE tax, not the point where income becomes SE income. It also had an unlinked IRS mention, a backward "That classification", and "ordinary" without "necessary".
+     Pair this with: howItWorks `"The [self-employment tax rate](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) is 15.3%"` → `"The self-employment tax rate is 15.3%"` (first-mention-only).
+Y-3. **howItWorks**:
+     - `"examiners review multiple factors to decide if an activity qualifies as a business"` → `"the IRS lists factors that help decide whether an activity is a business"` ("examiners" is unsupported)
+     - `"its primary objective is income"` → `"its primary purpose is income or profit"`
+     - `"If your earnings pass $200,000 for single filers or $250,000 for married couples filing jointly, an Additional Medicare Tax of 0.9% applies."` → `"An Additional Medicare Tax of 0.9% applies to earnings above $200,000 for single filers or $250,000 for married couples filing jointly."`
+       Why: the original implies the tax applies to all earnings.
+Y-4. **howItWorks**:
+     - `"Collecting your earnings requires submitting your tax information directly to Google. According to [Google support](https://support.google.com/youtube/answer/10391362?hl=en), Google does not withhold"` → `"[Google](https://support.google.com/youtube/answer/10391362?hl=en) must collect tax information from creators in the YouTube Partner Program. Google does not withhold"`
+       Why: a nominalization, and the first "Google" was unlinked.
+     - `"Non-US creators who submit a Form W-8 face withholding between 0% and 30% on earnings from US viewers based on applicable tax treaties, while non-US accounts without tax info default to 30% withholding on US earnings."` → `"Non-US creators who submit a Form W-8 face withholding of 0% to 30% on earnings from US viewers, depending on tax-treaty status. Non-US business accounts without tax info default to 30% of US earnings."`
+       Why: overloaded at 36 words, and the fact says "business accounts".
+Y-5. **howItWorks**:
+     - `"[Google reports year-end earnings](https://support.google.com/youtube/answer/10390801?hl=en) using Form 1099-MISC, Form 1099-K, or Form 1042-S, but its documentation does not specify which form applies to each creator profile."` → `"[Google's YouTube help](https://support.google.com/youtube/answer/10390801?hl=en) lists Form 1099-MISC, Form 1099-K and Form 1042-S as year-end forms, but it does not say which form applies to which creator."`
+       Why: "reports… using" asserts what Google issues. The source only "lists" the forms.
+     - `"Tax reporting rules also depend on information return minimums. "` → `""` (filler)
+     - `"Form 1099-MISC miscellaneous income rises to $2,000"` → `"Form 1099-MISC rents and other income rises to $2,000"` (boxes 1 and 3 only)
+Y-6. **howItWorks** `"by paying either 90% of your current tax year liability or 100% of your prior-year tax"` → `"by paying the smaller of 90% of your current-year tax or 100% of your prior-year tax"`
+     Why: the fact says "the smaller of".
+Y-7. **faqs[1].answer** `"Yes, you must file a tax return."` → `"Yes, if the $5,000 is profit from a channel you run as a business."`
+     Why: the original answer was unconditional, but the $400 rule applies to net SE earnings from a business.
+Y-8. **workedExample** `"If that creator also earns a $60,000 salary from an outside employer, the YouTube profit stacks into the 22% federal tax bracket, increasing the total tax bill."`
+     → `"If that creator also earns a $60,000 salary, the YouTube profit is added on top of the wages and taxed at the creator's top marginal rate. Enter the wages in the calculator above to see that figure."`
+     Why: the row prompt says "Do not compute it". The 22% claim is also likely wrong (see R-3); nearly all of the profit falls in the 12% bracket.
+Y-9. **platformNote** `"If the IRS classifies your channel as a hobby, you report gross revenue on Schedule 1."` → `"If the IRS treats your channel as a hobby, you report the income on Schedule 1 (Form 1040), line 8."`
+     Why: "gross revenue" implies the hobby-expense rule, which the prompt forbids stating.
+
+TEE-UP RULING (orchestrator): add the tee-up as the 2nd sentence of introText using ONLY this licensed framing: "At ModernWallet, every guide we write starts from the platform's own published rules and pay pages." Adjust the platform noun to fit (e.g. 'the IRS's and each platform's own pages' on tax pages).

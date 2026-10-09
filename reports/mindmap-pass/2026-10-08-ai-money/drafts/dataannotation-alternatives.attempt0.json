@@ -1,0 +1,278 @@
+{
+  "slug": "dataannotation-alternatives",
+  "updated": "2026-10-09",
+  "title": "6 Best DataAnnotation Alternatives for AI Training (2026)",
+  "metaDescription": "Compare the best DataAnnotation alternatives for AI training work, including Outlier, Mercor, Alignerr, Mindrift, Handshake AI, and Prolific.",
+  "targetKeyword": "DataAnnotation alternatives",
+  "category": "ai training platforms",
+  "angle": "alternatives",
+  "h1": "6 Best DataAnnotation Alternatives for AI Training Work",
+  "introText": "The best [DataAnnotation](https://www.dataannotation.tech/faqs) alternatives for remote AI training work are [Outlier](https://outlier.ai/faq), [Mercor](https://talent.docs.mercor.com/how-to/payments), [Alignerr](https://www.alignerr.com/), [Mindrift](https://mindrift.ai/), [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) and [Prolific](https://www.prolific.com/ai-taskers). Each platform uses a different pay model and entry standard, ranging from Mindrift's published $15 to $30 hourly entry rate to Handshake AI's $30 to $125 hourly range for graduate degree holders.\n\nDataAnnotation's [Trustpilot reviews](https://www.trustpilot.com/review/dataannotation.tech) list long stretches with no available work and balances held during account review among the recurring complaints. A second platform gives you somewhere to work when one queue is empty.",
+  "rankingCriteria": "Each option is compared on four factors: pay transparency, payout method and schedule, entry requirements, and track record. Pay transparency means a published hourly range rather than pay set per project or listing. Track record covers lawsuits, settlements, regulator actions and data breaches found on court dockets and in named news reports. The platforms are listed in order of how directly their workflow replaces DataAnnotation's mix of general and coding task work, rather than as a quality ranking.",
+  "options": [
+    {
+      "name": "Outlier",
+      "bestFor": "Workers seeking direct task-based prompt ranking with weekly ACH or PayPal payouts",
+      "description": "Outlier is an AI training platform operated by Scale AI where contributors generate prompts, rank model outputs, and evaluate text responses. It serves as the most direct functional replacement for DataAnnotation's core prompt-evaluation workflow, requiring an associate degree, resume, and LinkedIn profile to join.",
+      "strengths": [
+        "Processes payments weekly on Tuesdays via PayPal, Airtm, or ACH bank transfer",
+        "Shows the specific tasking rate before you begin each project",
+        "Covers generalist tasks like ranking model outputs and reviewing AI responses",
+        "Onboarding typically takes 30 to 90 minutes"
+      ],
+      "limitations": [
+        "Does not publish a standard hourly pay range on its live FAQ",
+        "A proposed $12.5 million settlement of California misclassification suits against Scale AI awaits final approval on October 30, 2026; Scale AI denies the allegations",
+        "Scale AI faced a federal class action alleging psychological harm from prompt creation",
+        "Trustpilot complaints cite sudden deactivations and unpredictable project availability"
+      ],
+      "pricing": "Rates vary by expertise, project complexity, and location; set per project and shown before tasking"
+    },
+    {
+      "name": "Mercor",
+      "bestFor": "Credentialed domain experts, scientists, and lawyers wanting high-rate contract roles",
+      "description": "Mercor is an AI talent marketplace connecting specialized professionals like doctors, lawyers, and scientists with AI labs to train models.",
+      "strengths": [
+        "[TechCrunch reported](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/) in October 2025 that Mercor experts average over $85 per hour",
+        "Regular weekly payments delivered every Wednesday via Stripe Connect or Wise in USD",
+        "Mercor's help page says US workers who submit a W-9 and earn over $600 get a Form 1099-NEC through Stripe by February",
+        "One listing for news analysts and journalists showed $70 to $110 per hour"
+      ],
+      "limitations": [
+        "No platform-wide rate card; pay rates are determined individually per job listing",
+        "A March 2026 breach tied to the LiteLLM supply-chain attack was followed by contractor class actions alleging exposure of SSNs, addresses and interview recordings",
+        "Enforces a mandatory 7-day holding period on first payouts through Stripe",
+        "[Business Insider reported](https://www.aol.com/articles/ai-startup-powering-meta-openai-230627434.html) a Meta project, Nova, offered at $16 per hour, $5 less than the project it replaced; Mercor called the report inaccurate"
+      ],
+      "pricing": "Set per listing; TechCrunch reported an average over $85/hr (Oct 2025)"
+    },
+    {
+      "name": "Alignerr",
+      "bestFor": "Specialized writers and language professionals looking for advertised weekly pay",
+      "description": "Alignerr is an AI platform powered by Labelbox that contracts contributors for specialized language and expert roles. It highlights an advertised average rate on its homepage alongside specialized openings.",
+      "strengths": [
+        "Advertises an average pay of $80 per hour directly on its homepage",
+        "Promotes a weekly payout model for active contributors",
+        "Features specialized listings such as Japanese language experts from $30 to $35 per hour",
+        "No lawsuits against Alignerr or Labelbox found in an October 2026 search"
+      ],
+      "limitations": [
+        "One [Greenhouse posting](https://job-boards.greenhouse.io/alignerr/jobs/4859253007) listed $25 to $38 per hour for US-based candidates",
+        "Payment platform mechanics and time-tracking rules remain unconfirmed after community FAQ redirects",
+        "Whether onboarding or assessment time is paid is not stated on its website"
+      ],
+      "pricing": "$80/hr shown as \"Average pay\" on homepage; listed roles $30 to $35/hr up to $40 to $120/hr"
+    },
+    {
+      "name": "Mindrift",
+      "bestFor": "Freelancers wanting transparent entry-level hourly benchmarks and fixed pay dates",
+      "description": "Mindrift is built by Toloka AI BV as a project-based platform connecting experts with AI training opportunities.",
+      "strengths": [
+        "Publishes entry-level pay estimates of $15 to $30 per hour",
+        "Lists domain expert earnings ranging from $60 to $100+ per hour with monthly caps up to $8,000",
+        "Shows task earnings upfront before contributors begin work",
+        "Mindrift's blog says joining and assessments should be free"
+      ],
+      "limitations": [
+        "Pays on a twice-monthly schedule on the 5th and 20th rather than weekly",
+        "Restricts several regions including Kenya, Switzerland, Taiwan, and DR Congo because ID-verification or payment rails are unavailable there",
+        "Payments are issued per task, meaning rejected or expired tasks yield zero earnings",
+        "Payment rails are limited to Payoneer or Tipalti"
+      ],
+      "pricing": "$15-$30/hr published entry-level; $60-$100+/hr for domain experts"
+    },
+    {
+      "name": "Handshake AI",
+      "bestFor": "Advanced degree holders seeking structured weekly research fellowships",
+      "description": "Handshake AI runs an AI Fellowship whose fellows create prompts, evaluate AI responses and correct content with citations. Handshake hires fellows as 1099 independent contractors, and most roles need a Master's, PhD or Postdoc.",
+      "strengths": [
+        "Publishes compensation rates ranging from $30 to $125 per hour",
+        "Payouts typically sent by Wednesday afternoon for the prior Monday to Sunday week, through Stripe",
+        "Flexible commitment allowing fellows to choose their own schedule between 5 and 20 hours weekly",
+        "Contracted and paid directly by Handshake rather than downstream labs"
+      ],
+      "limitations": [
+        "Requires a Master's degree, PhD, or Postdoc for most roles",
+        "Faces a federal wage lawsuit under the Fair Labor Standards Act filed in July 2026",
+        "Onboarding compensation varies, with updated policies stating unpaid time unless explicitly promised",
+        "[Business Insider reported](https://www.aol.com/articles/contractors-worked-openai-projects-handshake-050101409.html) that contractors on OpenAI projects said Handshake AI suspended accounts and withheld pay with no appeal process"
+      ],
+      "pricing": "$30 to $125/hr published range based on education level and project"
+    },
+    {
+      "name": "Prolific",
+      "bestFor": "Study participants who want a researcher-set minimum hourly rate and PayPal cashouts",
+      "description": "Prolific connects participants with researchers for study and AI tasking projects. Prolific requires researchers to pay participants at least £6 / $8 per hour and recommends at least £9 / $12.",
+      "strengths": [
+        "Enforces a mandatory minimum pay rate of $8 (£6) per hour, recommending $12 (£9) per hour",
+        "Transfers earnings directly via PayPal through Hyperwallet with no platform cash-out fees",
+        "Dedicated AI Tasker program with standardized 60-minute core skills assessments"
+      ],
+      "limitations": [
+        "Payments can only be transferred through PayPal",
+        "Specific AI Tasker pay rates are not published on the tasker portal",
+        "PayPal may charge for currency conversion"
+      ],
+      "pricing": "Researcher minimum of $8/hr (£6/hr); recommended $12/hr (£9/hr); AI Tasker pay not published"
+    }
+  ],
+  "comparisonTable": {
+    "headers": [
+      "Platform",
+      "Operator",
+      "Published pay",
+      "Paid via",
+      "Entry bar"
+    ],
+    "rows": [
+      {
+        "name": "Outlier",
+        "href": "https://outlier.ai/faq",
+        "values": [
+          "Scale AI",
+          "Set per project",
+          "PayPal, Airtm, ACH",
+          "Associate degree, resume, ID screening"
+        ]
+      },
+      {
+        "name": "Mercor",
+        "href": "https://talent.docs.mercor.com/how-to/payments",
+        "values": [
+          "Mercor",
+          "Set per listing",
+          "Stripe Connect, Wise",
+          "Not published"
+        ]
+      },
+      {
+        "name": "Alignerr",
+        "href": "https://www.alignerr.com/",
+        "values": [
+          "Labelbox",
+          "$80/hr advertised avg",
+          "Not confirmed",
+          "Not published"
+        ]
+      },
+      {
+        "name": "Mindrift",
+        "href": "https://mindrift.ai/",
+        "values": [
+          "Toloka AI BV",
+          "$15 to $30/hr entry; $60 to $100+/hr expert",
+          "Payoneer, Tipalti",
+          "CV, skill test, identity verification"
+        ]
+      },
+      {
+        "name": "Handshake AI",
+        "href": "https://support.joinhandshake.com/hc/en-us/articles/32264709473303",
+        "values": [
+          "Handshake",
+          "$30 to $125/hr published",
+          "Stripe",
+          "Master's, PhD, or Postdoc credentials"
+        ]
+      },
+      {
+        "name": "Prolific",
+        "href": "https://www.prolific.com/ai-taskers",
+        "values": [
+          "Prolific",
+          "$8/hr (£6) researcher minimum",
+          "PayPal (Hyperwallet)",
+          "60-minute core skills assessment"
+        ]
+      }
+    ]
+  },
+  "verdict": "Choose Outlier if you want the closest direct alternative to DataAnnotation's project workflow, provided you are comfortable with rates that adjust per task. If you hold an advanced credential such as a law degree, medical license, or PhD, apply to Mercor or Handshake AI, where Handshake AI publishes $30 to $125 per hour and TechCrunch reported Mercor experts average over $85. For generalist writers seeking published entry benchmarks without advanced degrees, Mindrift provides a baseline at $15 to $30 per hour, while Prolific requires researchers to pay study participants at least $8 an hour.\n\nNone of these platforms fits someone who needs guaranteed hours or a steady paycheck: Mindrift pays only approved tasks, and none of these platforms' FAQs promises a set volume of work. Our answer would change if Outlier or Mercor published a platform-wide pay range, or if the McKinney settlement's final approval on October 30, 2026 changed how Scale AI classifies Outlier contributors.",
+  "sections": [
+    {
+      "heading": "How These Platforms Differ from DataAnnotation",
+      "content": "DataAnnotation structures its work around a Starter Assessment, advertising general work starting at $25 to $50+ per hour and coding starting at $40 to $150+, paid through PayPal. Its alternatives differ primarily in their hiring standards, pay transparency, and client contracts.\n\nMercor distributes pay weekly on Wednesdays via Stripe Connect or Wise, rather than using PayPal withdrawals. Outlier, operated by Scale AI, offers similar prompt-writing and response-ranking tasks but requires an associate degree, a resume and a LinkedIn profile.\n\nTwo platforms are left out of this list. TELUS Digital has no official page publishing its rater pay or payment method. [Remotasks](https://www.remotasks.com/) shut down in Kenya, Nigeria and Pakistan in 2024, [Rest of World reported](https://restofworld.org/2024/scale-ai-remotasks-banned-workers/), and its current status is unconfirmed."
+    },
+    {
+      "heading": "Which Alternative Fits Your Background",
+      "content": "Your degree and professional credentials decide which of these platforms will take you and at what rate. In March 2026, [Deel](https://www.deel.com/deel-works/ai-trainers-fast-growing-job) put AI-trainer pay at about $15 an hour for annotators in the Philippines up to about $100 an hour for US physicians.\n\nGeneralist writers without specialized degrees should start with Mindrift or Outlier. Mindrift publishes baseline rates of $15 to $30 per hour for entry-level tasks, while Outlier offers prompt-ranking projects that mirror generalist work on DataAnnotation. Prolific also takes generalists, and it requires researchers to pay study participants at least $8 per hour, with a recommended benchmark of $12 per hour.\n\nCoders and credentialed specialists should look at Handshake AI, Mercor and DataAnnotation's own coding tier. Handshake AI publishes rates from $30 to $125 per hour, though its fellowship primarily recruits Master's, PhD, and Postdoc candidates. Mercor connects scientists, doctors, and lawyers directly to AI labs, with TechCrunch reporting average expert earnings above $85 per hour and one listing for news analysts and journalists paying $70 to $110 per hour."
+    },
+    {
+      "heading": "Red Flags When You Search for AI Training Work",
+      "content": "Legitimate AI training platforms never charge workers signup fees or assessment testing fees. The Federal Trade Commission issued a consumer alert warning job seekers about remote work scams where fraudulent recruiters contact candidates via text message or messaging apps offering online assessor jobs.\n\nThe FTC notes that scam operations frequently ask victims to deposit money to unlock higher task earnings or send fraudulent checks. DataAnnotation's FAQ says it charges no signup fees and \"will never ask for money from you for anything,\" and Mindrift's blog says joining and assessments should be free. If an entity posing as an AI annotation platform asks you to deposit money or pay fees, report the encounter to the FTC at ReportFraud.ftc.gov immediately."
+    },
+    {
+      "heading": "Taxes on AI Training Income",
+      "content": "Earnings from AI training platforms represent taxable self-employment income that must be reported to the [Internal Revenue Service](https://www.irs.gov/instructions/i1040sc) regardless of whether you receive a tax form. When you complete tasks on platforms like Outlier, Mindrift, or DataAnnotation, you operate as an independent contractor rather than an employee.\n\nMercor says it does not deduct taxes from your payments, and Handshake AI says you are responsible for taxes on your own income. Mercor notes in its tax policies that US workers submitting a Form W-9 receive Form 1099-NEC if earnings exceed $600 in a calendar year. You can calculate your federal self-employment tax burden and quarterly obligations using our [1099 tax calculator](/self-employment-tax/1099-tax-calculator/) or explore detailed reporting strategies in our guide to [DataAnnotation taxes](/self-employment-tax/dataannotation-taxes/)."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What are some websites similar to DataAnnotation?",
+      "answer": "The most direct websites similar to DataAnnotation are Outlier, Alignerr, and Mindrift. Outlier is operated by Scale AI and offers similar text evaluation and prompt generation tasks. Mindrift publishes $15 to $30 per hour for entry-level work, and Alignerr, run by Labelbox, lists roles from $30 to $35 per hour up to $40 to $120 per hour on its homepage."
+    },
+    {
+      "question": "What are some companies similar to Mercor?",
+      "answer": "Companies similar to Mercor include Handshake AI, which publishes $30 to $125 per hour for fellows who mostly hold graduate degrees, and DataAnnotation's STEM and professional tiers, which advertise rates starting at $40 to $125+ per hour. Mercor itself connects doctors, lawyers and scientists with AI labs, and TechCrunch reported its experts average over $85 per hour."
+    },
+    {
+      "question": "Which AI training platform pays the most?",
+      "answer": "On published ranges, DataAnnotation's coding tier is highest, advertising rates starting at $40 to $150+ per hour. Handshake AI publishes $30 to $125 per hour, mostly for graduate-degree holders, and one Mercor listing showed $70 to $110 per hour. Entry-level rates are lower: Mindrift publishes $15 to $30 per hour. All of these are advertised rates, not guaranteed earnings."
+    },
+    {
+      "question": "Is there an Outlier AI alternative that pays weekly?",
+      "answer": "Yes, Mercor, Handshake AI, and Alignerr all use weekly payment schedules. Mercor pays contractors every Wednesday via Stripe Connect or Wise, Handshake AI issues payouts by Wednesday afternoon, and Alignerr states on its homepage that contributors are paid weekly."
+    },
+    {
+      "question": "Can I sign up for several AI training platforms at once?",
+      "answer": "Yes. None of these platforms' FAQs prohibits working on other platforms, but read each contractor agreement before you sign it."
+    }
+  ],
+  "sources": [
+    {
+      "label": "DataAnnotation, FAQs",
+      "url": "https://www.dataannotation.tech/faqs"
+    },
+    {
+      "label": "Outlier, Worker FAQ",
+      "url": "https://outlier.ai/faq"
+    },
+    {
+      "label": "Mercor, Payments Documentation",
+      "url": "https://talent.docs.mercor.com/how-to/payments"
+    },
+    {
+      "label": "Mercor, US Taxes Policy",
+      "url": "https://talent.docs.mercor.com/policies/us-taxes"
+    },
+    {
+      "label": "Mindrift, Platform Homepage",
+      "url": "https://mindrift.ai/"
+    },
+    {
+      "label": "Mindrift, How Mindrift Pays",
+      "url": "https://mindrift.ai/blog/how-mindrift-pays"
+    },
+    {
+      "label": "Handshake, AI Fellowship Overview",
+      "url": "https://support.joinhandshake.com/hc/en-us/articles/32264709473303"
+    },
+    {
+      "label": "Prolific, AI Taskers Portal",
+      "url": "https://www.prolific.com/ai-taskers"
+    },
+    {
+      "label": "Federal Trade Commission, Job Offer Text Scams Alert",
+      "url": "https://www.consumer.ftc.gov/consumer-alerts/2026/04/job-offer-text-probably-scam"
+    }
+  ],
+  "relatedComparisons": [
+    "dataannotation-vs-outlier"
+  ],
+  "calculatorLinks": [
+    {
+      "label": "Self-Employment Tax Calculator",
+      "href": "/self-employment-tax/"
+    }
+  ]
+}

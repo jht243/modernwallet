@@ -1,0 +1,172 @@
+{
+ "slug": "whop-clipping",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1685,
+ "floor": 1200,
+ "input_tokens": 23980,
+ "output_tokens": 3689,
+ "thinking_tokens": null,
+ "cached_tokens": 17751,
+ "est_cost_usd": 0.0198,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['Can You Make Money Clipping on Whop?', 'How Whop Content Rewards Campaigns Work', 'The Math Behind Clipping Payouts', 'Why Many Clips Earn Nothing', 'Platform Legitimacy and Fee Structures'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1685,
+  "numbers_not_in_facts": [
+   "1000000",
+   "250",
+   "2500",
+   "554"
+  ],
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    13,
+    1,
+    1
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "Clipping on Whop pays only when your submitted video clears a brand's minimum view threshold, passes manual review, and stays under the total campaign budget cap.",
+     "replacement": "Clipping on Whop pays only when your submitted video clears a brand's minimum view threshold, passes brand review, and stays under the total campaign budget cap.",
+     "type": "unsupported",
+     "why": "SOURCE states brand review and approval, not manual review."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Participating creators download source footage, edit short clips, and post those videos to their own social media accounts.",
+     "replacement": "Participating creators post clips to their own social media accounts.",
+     "type": "unsupported",
+     "why": "SOURCE does not state creators download source footage."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "After posting, you submit your clip link to Whop.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state submitting clip links to Whop."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The brand then manually approves or rejects each submission on its dashboard.",
+     "replacement": "The brand then approves or rejects each submission.",
+     "type": "unsupported",
+     "why": "SOURCE states brand approves or rejects submissions, not manually on dashboard."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "If your clip does not align with the brand guidelines, the brand can turn it down.",
+     "replacement": "If your clip does not meet the offer criteria, the brand can turn it down.",
+     "type": "unsupported",
+     "why": "SOURCE specifies rejection only for unmet offer criteria, not brand guidelines."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Whop is a legitimate marketplace platform, but participants must understand the fee structure and payment rules outlined in its legal terms.",
+     "replacement": "Participants must understand the fee structure and payment rules outlined in Whop's legal terms.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Whop as a marketplace platform."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Review your specific account payout terms inside your dashboard before relying on regular disbursements.",
+     "replacement": "",
+     "type": "unlinked-directive",
+     "why": "Directive sending reader to outside source without a markdown link."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Many clippers utilize generic AI clipping tools that auto-cut long videos into short vertical segments to increase output.",
+     "replacement": "Many clippers utilize generic AI clipping tools that auto-cut long videos into short vertical segments.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that clippers use tools to increase output."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "While software can generate clips quickly, posting unoriginal cut-downs can jeopardize your personal social media accounts, particularly on YouTube.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state software generates clips quickly or jeopardizes accounts."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "You can start by joining active Content Rewards campaigns on Whop, creating social media accounts on TikTok, YouTube Shorts, X, or Instagram Reels, and downloading the campaign's source footage.",
+     "replacement": "You can start by joining active Content Rewards campaigns on Whop and creating accounts on TikTok, YouTube Shorts, X, or Instagram Reels.",
+     "type": "unsupported",
+     "why": "SOURCE does not state downloading source footage."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Edit the material into short vertical clips, publish them to your accounts, and submit the live post links to Whop for brand review.",
+     "replacement": "You then post clips to your accounts and submit them for brand approval.",
+     "type": "unsupported",
+     "why": "SOURCE does not state submitting live post links to Whop."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Creator payout methods and potential withdrawal fees are not published on Whop's public docs, so check your account settings directly.",
+     "replacement": "Whop's documentation does not state the creator-side payout method or schedule.",
+     "type": "unlinked-directive",
+     "why": "Unlinked directive to outside source; withdrawal fees not mentioned in SOURCE."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Whop clipping is a legitimate performance-based marketing program run through Whop Content Rewards.",
+     "replacement": "Whop clipping is a pay-per-view program run through Whop Content Rewards.",
+     "type": "unsupported",
+     "why": "SOURCE does not define Whop clipping as a marketing program."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Brands can fund reward budgets using their Whop balance, payment cards, or Cash App, but the documentation we reviewed omits how creators pull funds into their personal bank accounts.",
+     "replacement": "Brands can fund reward budgets using their Whop balance, payment cards, or Cash App, but the documentation we reviewed omits creator payout details.",
+     "type": "unsupported",
+     "why": "SOURCE does not state funds are pulled into personal bank accounts."
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we look at the exact mechanics behind digital income streams so you know the math before investing your time.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION licenses only specific editorial framings, not this custom statement."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 1805
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 223.6,
+ "response_id": "xADJasG1GtqlqtsP7o-6gAc",
+ "generated_at": "2026-10-09T10:00:51-0500"
+}

@@ -1,0 +1,219 @@
+## Run-level checks (all 4 pages)
+
+**Depth (measured from source):** introText + section bodies + FAQ answers, counted with `wc -w`.
+- how-to-make-money-with-ai: 1,887
+- how-to-make-money-with-claude: 1,753
+- how-to-make-money-with-chatgpt: 1,460
+- ai-automation-agency: 1,526
+- Result: 4 passing, 0 failing, median 1,640 against the 1,200 floor. The median is not within 10% of the floor.
+
+**Checks that passed:**
+- **Load receipt:** `reports/standards-ledger.jsonl` has a mindmap-pass phase-3 `via:load-script` entry at 2026-10-09T14:45. Its hashes (7a486edc / ed445917 / 31d70e56) match `shasum` of the current three files.
+- **Links:** every external URL is in `allowed-urls.all.txt`, every internal link is on the allowed list, no page links to itself, and nothing links to `/youtube-money-calculator/`.
+- **Title Case:** every h1 and section heading passes.
+- **Byline in body:** none.
+- **Em-dash, "honest", exclamation marks, raw HTML:** none. (The `---` strings are table separators.)
+- **Self-serving disclaimer grep:** one hit, Claude `sections[0].body` "provided you do not resell the software". That describes Anthropic's terms, so it is not a neutrality claim. That sentence is still fixed below for a separate reason.
+- **"Secondary — unverified" facts:** none are stated as fact on any page.
+- **Title and meta length:** every title is 60 characters or less and every metaDescription is 160 or less, both as drafted and after the fixes below.
+
+**R1 — Row records missing (GATE Register / GATE Medium-and-row-records / GATE Anchor). NOT FIXABLE IN PLACE; fix it in the chart row, not the draft.**
+- Neither the chart (`reports/mindmap-pass/2026-10-08-ai-money.md`) nor the 4 prompts carry `register:` or an `anchor-exempt:` note.
+- `page type:` and medium (text → text) are present.
+- Fix: add `register: operator` and an `anchor-exempt: no client specifics in _experience.md` note to all 4 rows.
+
+**R2 — `disclaimer-missing` (YMYL).** `src/pages/guides/[slug].astro` renders no disclaimer for guides, and no page has one. Each page gets a per-page fix-in-place below that appends the disclaimer to its final section. Existing guides in `guides.ts` put it in body copy the same way.
+
+**R3 — Unlinked company first mentions with no allowed URL. NOT FIXABLE IN PLACE.**
+- Names: Toloka, Labelbox, Stripe, PayPal (as a payout rail), Payoneer, Tipalti, TikTok, Instagram, YouGov, Business Insider (the AOL link covers its story).
+- The only entity this repo auto-links is Robinhood (`src/lib/richtext.ts`).
+- You need to decide: add these to the registry, or accept them as names that appear next to an already-linked platform.
+
+**R4 — advisory:** each page's `meta.guards` flag says the claim check "emptied" 5 sections. None of those sections is empty, so the guard output is wrong and the claim-check reporting in `scripts/lib/content_gen.py` should be looked at.
+
+**Fix-in-place format:** each fix lists the field, the exact FROM text, the exact TO text, and the reason. Every FROM string was checked with a script and occurs exactly once in its field. `\n` means a JSON newline. `""` means delete.
+
+---
+
+
+ORCHESTRATOR RULINGS: unlinkable organisations (R3) are accepted unlinked; row records are fixed in the chart, not the draft.
+
+## PAGE 2: how-to-make-money-with-claude — VERDICT: FAIL — 1,753 words
+
+**1. title**
+- FROM: How to Make Money With Claude: Real Paths and Costs
+- TO: How to Make Money With Claude in 2026
+- WHY: Colon two-clause headline tell.
+
+**2. introText**
+- FROM: People make money with Claude by selling client work that Claude speeds up, not by running an autonomous software program that generates cash on its own.
+- TO: People make money with Claude by selling client work that Claude helps them finish faster. At ModernWallet, we show the math, which here means working out how many billable hours a Claude plan has to save before it pays for itself.
+- WHY: "X, not Y" antithesis, and the tee-up was missing with no `teeup-exempt:` note.
+
+**3. introText**
+- FROM: Anthropic assigns you its right and interest in outputs under its consumer terms
+- TO: [Anthropic](https://www.anthropic.com/legal/consumer-terms) assigns you its right, title and interest, if any, in outputs under its consumer terms
+- WHY: Unlinked first mention, and the wording now matches the source.
+
+**4. introText**
+- FROM: Freelancers use the model to draft client documents, analyze datasets, and write code faster.
+- TO: Freelancers use Claude to draft client documents, analyze data, and write code.
+- WHY: Coy abstraction ("the model").
+
+**5. introText**
+- FROM: A paid subscription is an overhead expense that requires a concrete return. According to the July 2026 Upwork Future Workforce Index,
+- TO: According to the July 2026 [Upwork Future Workforce Index](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates),
+- WHY: The first sentence uses only placeholder nouns. Upwork was unlinked on first mention.
+
+**6. introText**
+- FROM: Making that extra income requires domain judgment, billable clients, and an understanding of the software's true operational costs.
+- TO: Upwork itself adds that "not all AI work is becoming more valuable."
+- WHY: Coy "the software's", filler "true", unsupported claim.
+
+**7. sections[0].body**
+- FROM: People earn income with Claude by using the assistant to accelerate deliverables they sell to paying clients. Anthropic's [Consumer Terms](https://www.anthropic.com/legal/consumer-terms) state that subject to compliance with the terms, Anthropic assigns to you all of its right, title, and interest in outputs.
+- TO: Yes, people make money with Claude, and the three routes with evidence behind them are freelance services, software built with Claude Code, and automations for small businesses. Claude Code is included on every paid Claude plan but not on Free.
+- WHY: The opener restated the intro, "the assistant" is a coy abstraction, and the link was a duplicate (now in the intro). The row answer's Claude Code fact was missing.
+
+**8. sections[0].body**
+- FROM: provided you do not resell the software or build a competing service.
+- TO: provided you do not resell Claude or build a service that competes with it.
+- WHY: Coy abstraction ("the software").
+
+**9. sections[0].body**
+- FROM: `\n\n On [Upwork](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates), AI-augmented professional services grew 72% in volume with earnings up 22% year over year. \n\n`
+- TO: `\n\nFor freelance services, Upwork reports that AI-augmented professional services grew 72% in volume, with earnings up 22%.\n\n`
+- WHY:
+  - The link was a duplicate (now in the intro).
+  - "Year over year" is not in the source for the 72% and 22% figures.
+  - There was stray whitespace.
+  - The sentence did not tie the figure to a route.
+
+**10. sections[0].body**
+- FROM: Software development and automations provide another avenue. On [Fiverr](https://finviz.com/news/360535/businesses-race-to-hire-claude-code-specialists-as-demand-surges-938), searches for Claude Code specialists rose 938% between November 2025 and April 2026 compared to the prior six months.
+- TO: For software and automations, [Fiverr](https://www.fiverr.com/news/business-trends-index-ai-2026) reported that searches for Claude Code specialists rose 938% from November 2025 to April 2026 compared with the prior six months.
+- WHY: [S] fact needs attribution; the replacement also prefers the primary URL.
+
+**11. sections[1].body**
+- FROM: Freelancers using Claude see significant variation in earnings depending on the complexity of their work.
+- TO: Upwork's data shows that AI freelancing pays more for complex work than for simple work.
+- WHY: "Significant" is a banned word, and the claim is unsupported for Claude specifically.
+
+**12. sections[2].body**
+- FROM: To protect software products or scripts built with Claude Code, you must contribute substantial human expression, custom architectural logic, and original code. When selling software directly to business clients, protect your deliverables through written client contracts and service agreements rather than relying solely on automated code generation.
+- TO: The Copyright Office says parts you write, edit or arrange yourself can be protected, decided case by case. When you sell software to a business client, set ownership and use terms in a written contract, because copyright may not cover the AI-generated parts.
+- WHY: "Must" overclaims; the source says case by case. The second sentence does not parse on first read.
+
+**13. sections[3].body**
+- FROM: Many remote workers pursue AI data evaluation to earn hourly income, but some platforms strictly forbid external assistants. The Handshake AI Fellowship hires
+- TO: Some AI-training work pays by the hour but bans using Claude on the job. The [Handshake](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) AI Fellowship hires
+- WHY: "Many" is unsupported, and Handshake was unlinked on first mention.
+
+**14. sections[3].body**
+- FROM: , as documented in their [fellowship support guide](https://support.joinhandshake.com/hc/en-us/articles/32264709473303).
+- TO: .
+- WHY: The link moved to the first mention.
+
+**15. sections[3].body**
+- FROM: that contractors on Handshake AI projects experienced suspended accounts and unpaid invoices over alleged rule violations without an appeal process.
+- TO: that contractors on OpenAI projects said Handshake AI suspended accounts and withheld pay over alleged rule violations, with "no appeal process."
+- WHY: Reported claims were stated as fact.
+
+**16. sections[3].body**
+- FROM: If you want to earn money evaluating machine learning models through approved workflows, review our guide to verified [AI training jobs](/guides/ai-training-jobs/) instead of risking account penalties by feeding client prompts into personal assistants.
+- TO: Our guide to [AI training jobs](/guides/ai-training-jobs/) covers pay and rules on the main platforms, so read each platform's AI-tool policy before you apply.
+- WHY: Fails first read, and "verified" is unsupported.
+
+**17. sections[4].body (table header row)**
+- FROM: | Plan | Price | Claude Code Included | Best Fit |
+- TO: | Plan | Price | Claude Code Included | Hours It Must Save at $40/Hour |
+- WHY: See fix 18.
+
+**18. sections[4].body (table rows)**
+- FROM:
+```
+| Free | $0 | No | Not published |\n| Pro | $20/month ($17/month billed annually) | Yes | Not published |\n| Max 5x | $100/month | Yes | Not published |\n| Max 20x | $200/month | Yes | Not published |\n| Team | $25/seat/month ($20 billed annually) | Yes | Not published |
+```
+- TO:
+```
+| Free | $0 | No | None |\n| Pro | $20/month ($17/month billed annually) | Yes | 30 minutes |\n| Max 5x | $100/month | Yes | 2.5 hours |\n| Max 20x | $200/month | Yes | 5 hours |\n| Team | $25/seat/month ($20 billed annually) | Yes | 37.5 minutes per seat |
+```
+- WHY: A column of "Not published" carries no information, and "Best fit" was a judgment the writer could not source. The replacement column is break-even arithmetic from listed prices: price ÷ $40.
+
+**19. sections[4].body**
+- FROM: Anthropic support documentation notes that [Max plans](https://support.claude.com/en/articles/11049741-what-is-the-max-plan) include Max 5x at $100 per month and Max 20x at $200 per month.
+- TO: Anthropic's pricing page lists Max "from $100" a month, and its [Max plan help article](https://support.claude.com/en/articles/11049741-what-is-the-max-plan) gives the $100 Max 5x and $200 Max 20x prices for web subscriptions.
+- WHY: The sentence restated the table. The [S] condition ("web subscriptions") was missing.
+
+**20. sections[4].body**
+- FROM: the software pays for itself
+- TO: Claude Pro pays for itself
+- WHY: Coy abstraction.
+
+**21. sections[4].body**
+- FROM: the Max plan breaks even
+- TO: Max 5x breaks even
+- WHY: Names the specific plan.
+
+**22. sections[5].body**
+- FROM: Federal regulators actively prosecute companies marketing deceptive AI business schemes that promise automated riches.
+- TO: Federal regulators have sued companies that sold AI business schemes with promises of automated income.
+- WHY: These are civil cases, so "prosecute" is wrong.
+
+**23. sections[5].body**
+- FROM: charged multiple operations for falsely claiming AI software could generate
+- TO: charged multiple operations over allegedly false claims that AI software could generate
+- WHY: Allegations were stated as fact.
+
+**24. sections[5].body**
+- FROM: Ascend Ecom faced a $25 million judgment and a ban on selling business opportunities after the FTC alleged it deceived consumers with false promises of five-figure passive monthly storefront income.
+- TO: [Ascend Ecom](https://www.ftc.gov/news-events/news/press-releases/2025/06/ftc-case-leads-order-banning-ascend-ecom-its-owners-business-opportunity-marketing) agreed to a proposed order with a permanent ban on selling business opportunities and a $25 million judgment, partially suspended, after the FTC alleged it promised consumers "five-figure monthly income by the second year."
+- WHY: A proposed order was described as final. The first mention was unlinked.
+
+**25. sections[5].body**
+- FROM: The FTC also took enforcement actions against [Ecommerce Empire Builders](https://www.ftc.gov/news-events/news/press-releases/2025/05/ftc-action-ends-ecommerce-empire-builders-online-business-opportunity-scam), which resulted in a $9.7 million judgment, and [FBA Machine](https://www.ftc.gov/news-events/news/press-releases/2025/07/ftc-obtains-permanent-ban-e-commerce-business-opportunity-scheme-operator), which settled for a $15.7 million judgment.
+- TO: The FTC also sued [Ecommerce Empire Builders](https://www.ftc.gov/news-events/news/press-releases/2025/05/ftc-action-ends-ecommerce-empire-builders-online-business-opportunity-scam), where a court entered a $9,786,124 judgment, partially suspended. [FBA Machine](https://www.ftc.gov/news-events/news/press-releases/2025/07/ftc-obtains-permanent-ban-e-commerce-business-opportunity-scheme-operator) faces a proposed order with a $15.7 million judgment, also partially suspended.
+- WHY: The source figure is $9,786,124; "$9.7 million" truncates it and was flagged by the guard. FBA Machine's order is proposed, so "settled" presented it as final.
+
+**26. sections[5].body**
+- FROM: , resulting in an $18 million settlement in March 2026.
+- TO: . A proposed settlement announced in March 2026 includes an $18 million judgment, mostly suspended.
+- WHY: A proposed settlement was presented as final.
+
+**27. sections[5].body**
+- FROM: sellers making earnings claims must maintain written substantiation showing the exact percentage of purchasers who achieved those figures.
+- TO: sellers making earnings claims must have written substantiation and give buyers an earnings claim statement showing the number and percentage of buyers who reached those earnings.
+- WHY: The original conflated substantiation with the earnings claim statement.
+
+**28. sections[6].body**
+- FROM: Income earned by providing services with Claude counts as self-employment income subject to federal and state taxation.
+- TO: Money you earn selling work done with Claude is self-employment income.
+- WHY: "And state" is unsupported. The change also breaks a monotone rhythm run: sentences 54 to 63 were all 15 words or longer.
+
+**29. sections[6].body**
+- FROM: to ensure your operating write-offs comply with IRS standards.
+- TO: to ensure your operating write-offs comply with IRS standards.\n\nThis is general information, not financial, tax or legal advice.
+- WHY: disclaimer-missing (R2).
+
+**30. faqs[0].answer**
+- FROM: The model does not generate passive cash autonomously; users get paid by delivering completed projects to clients.
+- TO: Claude does not earn money on its own. Users get paid when they deliver finished projects to clients.
+- WHY: Semicolon-stacked sentence and coy "The model".
+
+**31. faqs[1].answer**
+- FROM: If your workload does not hit standard Pro usage limits or your hourly billing rate is lower, the $20 Pro plan makes more financial sense.
+- TO: If Max 5x would save you fewer hours than that, the $20 Pro plan costs less and still includes Claude Code.
+- WHY: Pro usage limits are not in the fact list.
+
+**32. faqs[2].answer**
+- FROM: However, the U.S. Copyright Office has ruled that purely AI-generated text or art without sufficient human creative control cannot be copyrighted. You must add human expression and edits to obtain statutory copyright protection.
+- TO: However, the U.S. Copyright Office says purely AI-generated material is not copyrightable. Parts you write, edit or arrange yourself can be protected, decided case by case.
+- WHY: "Ruled" and "must" overstate an [S] source.
+
+**Advisory:**
+- The answer placement asked for a list in section 1; it is still prose. The reader-question gate passes after fix 7.
+- The 938% figure appears in both sections[0] and sections[2].
+- "Federal Trade Commission (FTC)" is unlinked in the sentence where it is first written out; the link sits on "Operation AI Comply".
+
+---
+

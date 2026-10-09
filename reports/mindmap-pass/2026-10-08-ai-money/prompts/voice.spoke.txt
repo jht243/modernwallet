@@ -1,0 +1,63 @@
+  {
+    calculator: "self-employment-tax",
+    slug: "twitch-taxes",
+    updated: "2026-09-05",
+    title: "Twitch Taxes for Streamers (2026 Guide)",
+    metaDescription:
+      "Twitch taxes in 2026: royalties versus service income, the hobby-loss trap, and which streaming equipment you can deduct. See what you owe.",
+    targetKeyword: "Twitch taxes",
+    estimatedVolume: 110,
+    estimatedKD: 15,
+    h1: "Twitch Taxes: What Streamers Owe on Their Income",
+    introText:
+      "Twitch income is taxable from the first dollar, and the platform withholds nothing for a US streamer. The two questions that decide your bill are whether the IRS treats your channel as a business or a hobby, and how each stream of revenue is classified.\n\nA streamer earning $8,000 with $2,500 of deductible equipment and software has $5,500 of profit and owes $777.13 — all of it self-employment tax.",
+    howItWorks:
+      "Start with the hobby-versus-business test, because nothing else matters until it is settled. If your channel is a business, you file Schedule C, deduct your expenses against your income, and pay self-employment tax on the profit. If it is a hobby, you still report the income — but you cannot deduct expenses against it, and a loss cannot offset your other income. The IRS looks at whether you run the activity in a businesslike way, whether you depend on the income, whether you have expertise, and whether you have made a profit in some years. A channel run seriously with the intent to earn is a business; one that costs more than it earns indefinitely with no attempt to change that looks like a hobby.\n\nThat distinction is the reason streaming tax advice is so often wrong. A new streamer who spends $4,000 on a PC and earns $500 does not automatically get a $3,500 deductible loss. If the activity is a hobby, that loss is unusable.\n\nRevenue classification is the second wrinkle, and Twitch is unusual here. Payments can be reported as royalties or as nonemployee compensation depending on the type of revenue and how Twitch characterises it, and the two are taxed differently: royalties reported on a 1099-MISC are not automatically subject to self-employment tax, while nonemployee compensation is. In practice, if streaming is your trade or business, income from it is generally self-employment income regardless of which box it arrives in. Check your own tax documents in the Twitch dashboard and, if you receive a royalties form for a channel you run as a business, take that specific question to a preparer rather than assuming either treatment.\n\nThe deductions, once you are a business, are equipment-led: cameras, microphones, lighting, capture cards, and the computer itself, either depreciated or expensed depending on cost and the elections available. Streaming software subscriptions, editing tools, music licensing, graphics and emote commissions, and the business-use share of your internet connection are all deductible. So is a home office, if a space is used regularly and exclusively for the channel.\n\nGames are the contested one. A game you play on stream as the content is defensible as a business expense; your entire Steam library is not, and treating personal entertainment as inventory is exactly the pattern that draws scrutiny. Deduct what you actually stream, keep the record, and be prepared to explain the split.\n\nAt $5,500 of profit the standard deduction removes federal income tax entirely and the whole bill is self-employment tax at 14.13%. Most streamers also have a job, though, in which case the streaming profit stacks at their top marginal rate — enter your W-2 wages above to see that figure.",
+    commonMistakes: [
+      ...UNIVERSAL_MISTAKES,
+      "Assuming an early-years loss is deductible. If the IRS treats the channel as a hobby, expenses cannot offset the income and the loss cannot offset your salary.",
+      "Deducting an entire game library. Games you actually stream are defensible content costs; buying personal entertainment and calling it inventory is not.",
+      "Ignoring how the income was classified. Royalties and nonemployee compensation arrive on different forms and are not automatically taxed the same way — check your Twitch tax documents rather than assuming.",
+    ],
+    workedExample:
+      "A streamer earns $8,000 from subscriptions, bits, and ads. They deduct $1,400 for a camera, microphone, and lighting, $600 for streaming and editing software plus music licensing, and $500 for the business-use share of their internet connection, alongside $1,500 of the cost of the PC claimed this year — but only $2,500 of deductions apply after allocating the computer and connection between personal and business use honestly. Net profit is $5,500. Self-employment tax is $777.13 and federal income tax is zero, since profit is far below the $16,100 standard deduction. If the same streamer also earns $60,000 at a day job, the streaming profit instead stacks in the 22% bracket and the tax on it more than doubles.",
+    faqs: [
+      {
+        question: "Do I have to pay taxes on Twitch income?",
+        answer:
+          "Yes, from the first dollar. Twitch withholds nothing for US streamers, and the IRS requires income to be reported whether or not any form is issued. If streaming is a business you file Schedule C and owe self-employment tax once net earnings reach $400. If it is a hobby you still report the income, but you cannot deduct expenses against it.",
+      },
+      {
+        question: "Is my Twitch channel a hobby or a business?",
+        answer:
+          "The IRS weighs whether you run it in a businesslike manner, whether you depend on the income, your expertise, the time and effort you put in, and whether the activity has ever been profitable. A channel run with genuine profit intent — tracked finances, a real attempt to grow revenue — is a business and its expenses are deductible. One that loses money indefinitely with no attempt to change that is likely a hobby, and its expenses are not.",
+      },
+      {
+        question: "What can Twitch streamers deduct?",
+        answer:
+          "Cameras, microphones, lighting, capture cards, and computers used for streaming, streaming and editing software, music licensing, commissioned graphics and emotes, the business-use share of your internet connection, and a home office if the space is used regularly and exclusively for the channel. Games you actually stream are defensible; a general games library bought for personal use is not.",
+      },
+      {
+        question: "Why did Twitch report my income as royalties?",
+        answer:
+          "Some streaming revenue is characterised as royalties and reported on a Form 1099-MISC rather than as nonemployee compensation on a 1099-NEC. The distinction matters because royalty income is not automatically subject to self-employment tax, while business income is. If you run the channel as a trade or business, income from it is generally self-employment income regardless. Check your Twitch tax documents and raise this specific point with a preparer rather than guessing.",
+      },
+      {
+        question: "Do I owe tax on Twitch income under $2,000?",
+        answer:
+          "If your net self-employment earnings reach $400 for the year, yes — that is the threshold that triggers self-employment tax and the filing requirement. The $2,000 figure is the 2026 Form 1099-NEC filing threshold, raised from $600, and it only determines whether a payer sends you a form. The IRS states that gig income is reportable even when no information return is issued.",
+      },
+    ],
+    sources: [IRS_GIG, IRS_HOBBY, IRS_SE_TAX, IRS_1099NEC, IRS_SCHED_C],
+    toolHeading: "Twitch streamer tax calculator",
+    toolSubheading: "Enter profit after equipment and software",
+    preset: {
+      netProfit: 5500,
+      filingStatus: "single",
+      applyQbi: true,
+      incomeLabel: "Twitch profit (revenue minus equipment and software)",
+      platformNote:
+        "This assumes the IRS would treat your channel as a business. If it is a hobby, you report the income but cannot deduct expenses against it — and the profit figure to enter here is your full revenue.",
+    },
+    relatedSlugs: ["1099-tax-calculator", "fiverr-taxes", "how-much-to-set-aside-for-taxes"],
+  }

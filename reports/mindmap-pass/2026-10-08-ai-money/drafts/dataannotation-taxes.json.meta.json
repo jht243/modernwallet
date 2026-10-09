@@ -1,0 +1,260 @@
+{
+ "slug": "dataannotation-taxes",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1195,
+ "floor": 1000,
+ "input_tokens": 29778,
+ "output_tokens": 2600,
+ "thinking_tokens": null,
+ "cached_tokens": 17185,
+ "est_cost_usd": 0.0205,
+ "guards": {
+  "repairs": [
+   "removed 1 off-list link(s), kept the text"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [
+   "https://mercor.com"
+  ],
+  "words": 1258,
+  "numbers_not_in_facts": [
+   "554"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    1
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "If you purchase hardware, reference [IRS guidance on deducting business expenses](https://www.irs.gov/businesses/small-businesses-self-employed/deducting-business-expenses) to depreciate equipment over time or expense qualifying assets.",
+     "replacement": "If you purchase hardware, reference [IRS guidance on deducting business expenses](https://www.irs.gov/businesses/small-businesses-self-employed/deducting-business-expenses) to depreciate equipment over time.",
+     "type": "unsupported",
+     "why": "SOURCE mentions depreciation but does not mention expensing qualifying assets."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "The IRS does not allow contractors to wait until April to pay their full tax liability. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state contractors cannot wait until April to pay liability."
+    },
+    {
+     "id": "commonMistakes[2]",
+     "quote": "Filing separate Schedule C forms or failing to combine contractor income earned across multiple platforms, such as DataAnnotation, Outlier, and Mercor, when calculating total net earnings for self-employment tax.",
+     "replacement": "Failing to combine contractor income earned across multiple platforms, such as DataAnnotation, Outlier, and Mercor, because earnings add up on one Schedule C.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that filing separate Schedule C forms is a mistake."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "If you purchase hardware, reference [IRS guidance on deducting business expenses](https://www.irs.gov/businesses/small-businesses-self-employed/deducting-business-expenses) to depreciate equipment over time.",
+     "replacement": "",
+     "type": "unlinked-directive",
+     "why": "Sends reader to outside IRS source to reference without linking it in sentence or unsupported phrasing"
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1300
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-09T10:34:58-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-08-ai-money/audit/dataannotation-taxes.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "You must pay taxes on DataAnnotation income because the platform treats workers as independent contractors, does not withhold taxes, and triggers self-employment tax once your net earnings reach $400.",
+      "replacement": "Yes, you owe tax on [DataAnnotation](https://www.dataannotation.tech/faqs) income. DataAnnotation's FAQ calls its workers contractors and describes no tax withholding, and you owe self-employment tax once your net earnings reach $400.",
+      "type": "Fix 1 / introText fact and link",
+      "why": "DataAnnotation tax policy is unknown; unlinked company; reword to supported phrasing"
+     },
+     {
+      "id": "introText",
+      "quote": "Whether you receive a tax form depends on payment rails: DataAnnotation pays through PayPal and publishes no tax-form policy, and PayPal only issues Form 1099-K if gross payments exceed $20,000 and 200 transactions nationally, while Mercor states it distributes Form 1099-NEC through Stripe for earnings over $600.",
+      "replacement": "DataAnnotation pays through [PayPal](https://www.paypal.com/us/cshelp/article/current-form-1099-k-reporting-thresholds-2025-update-help1131) and publishes no tax-form policy. PayPal sends a Form 1099-K only above $20,000 and 200 transactions a year, with lower thresholds in a few states.",
+      "type": "Fix 2 / introText overloaded and unlinked PayPal",
+      "why": "Overloaded sentence, unlinked PayPal on first mention, remove Mercor from intro"
+     },
+     {
+      "id": "introText",
+      "quote": "The Internal Revenue Service (IRS) requires",
+      "replacement": "The [Internal Revenue Service (IRS)](https://www.irs.gov/instructions/i1040sc) requires",
+      "type": "Fix 3 / unlinked IRS",
+      "why": "Link IRS on first mention using allowed instructions URL"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Worker classification across major AI data platforms defines how you file. ",
+      "replacement": "",
+      "type": "Fix 4 / unsayable sentence",
+      "why": "Unsayable filler sentence"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "The [DataAnnotation FAQ](https://www.dataannotation.tech/faqs) classifies workers as contractors",
+      "replacement": "The DataAnnotation FAQ calls workers contractors",
+      "type": "Fix 1 pair / first-mention-only link rule",
+      "why": "DataAnnotation was already linked in introText"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "[Handshake AI support documentation](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) states fellows are hired as 1099 independent contractors, complete tax setup via Form W-9 or Form W-8 on Stripe, and remain responsible for their own taxes.",
+      "replacement": "[Handshake AI support documentation](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) says fellows are hired as 1099 independent contractors. [Its payments page](https://support.joinhandshake.com/hc/en-us/articles/32263614087575-Handshake-AI-payments-processing) says tax setup uses a W-8 or W-9 through Stripe and that you are responsible for taxes on your own income.",
+      "type": "Fix 4 / split and link payments page",
+      "why": "Overloaded sentence; W-8/W-9/Stripe facts come from payments page"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "[PayPal reporting thresholds](https://www.paypal.com/us/cshelp/article/current-form-1099-k-reporting-thresholds-2025-update-help1131)",
+      "replacement": "PayPal's published thresholds",
+      "type": "Fix 2 pair / first-mention-only link rule",
+      "why": "PayPal link already used in introText"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "you must calculate and submit estimated quarterly tax payments if you expect to owe at least $1,000",
+      "replacement": "you generally must make estimated quarterly tax payments if you expect to owe at least $1,000",
+      "type": "Fix 5 / IRS says generally",
+      "why": "IRS guidance uses 'generally'; don't make it absolute"
+     },
+     {
+      "id": "commonMistakes[1]",
+      "quote": "Treating unpaid starter assessment time, skill screening tests, or identity verification onboarding hours as tax-deductible business losses, because the tax code permits deducting financial expenses but never the value of unpaid time.",
+      "replacement": "Treating the hours spent on the Starter Assessment, skill screenings or ID verification as a deduction. You can deduct money you spend on the work, never the value of your own time.",
+      "type": "Fix 6 / unsupported unpaid and overloaded",
+      "why": "Assessment pay status is unknown; overloaded sentence"
+     },
+     {
+      "id": "commonMistakes[2]",
+      "quote": "Failing to combine contractor income earned across multiple platforms, such as DataAnnotation, Outlier, and Mercor, because earnings add up on one Schedule C.",
+      "replacement": "Forgetting that income from DataAnnotation, Outlier and Mercor adds up on one Schedule C, so several small balances can together pass the $400 self-employment tax threshold.",
+      "type": "Fix 7 / causal because reads backwards",
+      "why": "Causal framing backwards; clarify $400 threshold"
+     },
+     {
+      "id": "workedExample",
+      "quote": "A contractor earns $6,000 from AI-training tasks, with $600 of deductible costs (the business share of a computer and internet), has $5,400 of profit and owes $763.00 of self-employment tax ($5,400 \u00d7 92.35% \u00d7 15.3%).",
+      "replacement": "A contractor earns $6,000 from AI-training tasks and has $600 of deductible costs (the business share of a computer and internet), leaving $5,400 of profit. That profit carries $763.00 of self-employment tax ($5,400 \u00d7 92.35% \u00d7 15.3%).",
+      "type": "Fix 8 / ungrammatical worked example sentence",
+      "why": "Fix run-on / ungrammatical sentence structure"
+     },
+     {
+      "id": "workedExample",
+      "quote": "(2026, site fact)",
+      "replacement": "(2026)",
+      "type": "Fix 8 / internal annotation leak",
+      "why": "Remove internal prompt annotation from reader copy"
+     },
+     {
+      "id": "workedExample",
+      "quote": "With a day job, the profit stacks at their top marginal rate, the calculator shows it when W-2 wages are entered.",
+      "replacement": "With a day job, the profit is taxed at your top marginal rate. Enter your W-2 wages in the calculator above to see that figure.",
+      "type": "Fix 8 / comma splice and their pronoun",
+      "why": "Fix comma splice and third-person pronoun in operator register"
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "DataAnnotation treats workers as independent contractors, which means zero taxes are withheld from your payouts.",
+      "replacement": "DataAnnotation's FAQ calls its workers contractors and describes no tax withholding, so plan to pay the tax yourself.",
+      "type": "Fix 9 / unsupported withholding claim",
+      "why": "Tax-withholding policy is unknown; backup withholding can apply"
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "unless you live in states with lower thresholds such as Vermont, Massachusetts, Virginia, Maryland ($600), or Illinois ($1,000 and 4 transactions)",
+      "replacement": "except in Vermont, Massachusetts, Virginia and Maryland ($600) and Illinois (more than $1,000 and 4 or more transactions)",
+      "type": "Fix 10 / exact state thresholds and closed list",
+      "why": "Exact thresholds from source and eliminate 'such as'"
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Because no income tax or payroll tax is withheld from weekly payouts, you must report",
+      "replacement": "Outlier's FAQ describes no tax withholding, so you must report",
+      "type": "Fix 11 / unsupported Outlier tax policy",
+      "why": "Outlier tax withholding policy is unknown"
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "model your withholding needs",
+      "replacement": "work out how much to save",
+      "type": "Fix 12 / wrong collocation for contractors",
+      "why": "Contractors do not have withholding"
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      4
+     ],
+     "applied": [
+      {
+       "id": "introText",
+       "quote": "DataAnnotation's FAQ calls its workers contractors and describes no tax withholding, and you owe self-employment tax once your net earnings reach $400.",
+       "replacement": "",
+       "type": "unsupported",
+       "why": "DataAnnotation FAQ publishes no tax-form policy; withholding is not mentioned."
+      },
+      {
+       "id": "faqs[0].answer",
+       "quote": "DataAnnotation's FAQ calls its workers contractors and describes no tax withholding, so plan to pay the tax yourself.",
+       "replacement": "",
+       "type": "unsupported",
+       "why": "DataAnnotation FAQ publishes no tax-form policy; withholding is not mentioned."
+      },
+      {
+       "id": "faqs[2].answer",
+       "quote": "Outlier's FAQ describes no tax withholding, so you must report the earnings on Schedule C and pay self-employment tax on net earnings of $400 or more.",
+       "replacement": "Because independent contractors have no tax withheld, you must report the earnings on Schedule C and pay self-employment tax on net earnings of $400 or more.",
+       "type": "unsupported",
+       "why": "Outlier's FAQ does not mention tax withholding."
+      },
+      {
+       "id": "faqs[4].answer",
+       "quote": "Self-employment tax takes 15.3% on 92.35% of your net earnings, while federal and state income tax depends on your overall tax bracket.",
+       "replacement": "Self-employment tax takes 15.3% on 92.35% of your net earnings, while federal income tax depends on your overall tax bracket.",
+       "type": "unsupported",
+       "why": "SOURCE does not mention state income tax."
+      }
+     ],
+     "deleted_final": 4,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1195,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 93.4,
+ "response_id": "PwLJaqWPHdfpz7IPjr-mkQk",
+ "generated_at": "2026-10-09T10:04:57-0500"
+}

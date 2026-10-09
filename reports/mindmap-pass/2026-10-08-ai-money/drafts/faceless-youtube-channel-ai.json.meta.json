@@ -1,0 +1,107 @@
+{
+ "slug": "faceless-youtube-channel-ai",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2202,
+ "floor": 1200,
+ "input_tokens": 24025,
+ "output_tokens": 4714,
+ "thinking_tokens": null,
+ "cached_tokens": 17751,
+ "est_cost_usd": 0.0237,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['Can AI Faceless Channels Be Monetized?', 'The Two YouTube Partner Program Thresholds', 'How Advertising Revenue and Earnings Math Work', 'Faceless Formats Allowed by Policy Versus Inauthentic Formats', 'Rules for Artificial Intelligence Content Disclosure Labels'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2202,
+  "numbers_not_in_facts": [
+   "1000000",
+   "400000",
+   "800"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    6,
+    0
+   ],
+   "applied": [
+    {
+     "id": "sections[1].body",
+     "quote": "Valid public uploads",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE lists no upload count requirement for the standard tier."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Long-form video revenue derives directly from the ads served on that specific video.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that long-form revenue derives from ads on that video."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "- Minor aesthetic adjustments, including video filters, background blur, color grading, and auto-generated captions",
+     "replacement": "- Minor aesthetic adjustments, including video filters, background blur, captions, or upscaling",
+     "type": "unsupported",
+     "why": "SOURCE lists upscaling, not color grading, as an exempt aesthetic edit."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "In a January 2026 letter covered by [Variety Reporting](https://au.variety.com/2026/digital/global/youtube-channels-using-ai-tools-reduce-slop-neal-mohan-letter-32190/), YouTube Chief Executive Officer Neal Mohan highlighted systems targeting low-quality, repetitive media.",
+     "replacement": "In a January 2026 letter covered by [Variety Reporting](https://au.variety.com/2026/digital/global/youtube-channels-using-ai-tools-reduce-slop-neal-mohan-letter-32190/), Neal Mohan highlighted systems targeting low-quality, repetitive media.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Neal Mohan's title as Chief Executive Officer."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Income earned from YouTube Partner Program ads, memberships, and brand deals is self-employment income under federal tax law.",
+     "replacement": "Income earned from YouTube Partner Program ads and memberships is self-employment income under federal tax law.",
+     "type": "unsupported",
+     "why": "SOURCE does not list brand deals as creator income."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Deductions can include editing software, computer equipment, audio gear, and hosting fees.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not list software, equipment, audio gear, or hosting fees as deductions."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2236
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 190.0,
+ "response_id": "9v_IaqTdJqjwqtsP1a2GwAE",
+ "generated_at": "2026-10-09T09:56:50-0500"
+}

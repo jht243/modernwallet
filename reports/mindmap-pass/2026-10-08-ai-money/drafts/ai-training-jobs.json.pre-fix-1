@@ -1,0 +1,122 @@
+{
+  "slug": "ai-training-jobs",
+  "title": "AI Training Jobs: Legitimate Platforms, Rates, and Catches",
+  "metaDescription": "Real AI training jobs pay $15 to $125+ per hour as 1099 contract work. Compare DataAnnotation, Outlier, Mercor, Mindrift, pay rails, and legal risks.",
+  "h1": "AI Training Jobs: Legitimate Platforms, Pay Rates, and What Workers Face",
+  "cardBlurb": "AI training jobs offer real 1099 freelance work paying $15 to $125 or more per hour, but project droughts, unpaid setup, and tax obligations are common.",
+  "introText": "You can get paid to train artificial intelligence (AI) models, and several prominent platforms offer legitimate contract work. Companies like DataAnnotation, Outlier, Mercor, Alignerr, Mindrift, Handshake AI, and Prolific pay independent contractors to evaluate chatbot answers, write difficult prompts, and review code.\n\nPublished compensation spans from roughly $15 to $30 per hour for entry-level tasks on Mindrift to over $100 per hour for specialized STEM, legal, or coding roles. \n\nThese roles are classified as 1099 independent contractor arrangements rather than steady employment. Available work fluctuates without warning, onboarding tests are frequently unpaid, and any platform asking you to pay an upfront fee is an outright scam.",
+  "sections": [
+    {
+      "heading": "Is AI Training a Real Job? Who Pays and How Much",
+      "body": "AI training jobs are legitimate freelance gigs where companies pay remote contractors hourly or per completed task to evaluate, correct, and improve machine learning models. Verified platforms hire workers directly as independent contractors, but task volume is never guaranteed from week to week.\n\nPublished compensation depends heavily on whether a project requires general writing skills or advanced credentials in software engineering, law, or medicine. For general work, entry-level rates begin around $15 to $25 per hour, while technical domains reach $40 to $125 or more per hour.\n\n| Platform | Operator | Published Pay | Payment Method | Best Suited For |\n| --- | --- | --- | --- | --- |\n| [DataAnnotation](https://www.dataannotation.tech/faqs) | Unnamed operator | General: starting at $25 to $50+/hr; Coding: $40 to $150+/hr; STEM: $40 to $125+/hr | PayPal | General writers and software coders |\n| [Outlier](https://outlier.ai/faq) | Scale AI | Rates shown per project (platform publishes no rate card) | PayPal, Airtm, ACH bank transfer | Generalists and domain specialists |\n| [Mercor](https://talent.docs.mercor.com/how-to/payments) | Mercor.io Corporation | Per listing (e.g. $70 to $110/hr); [TechCrunch reports experts average over $85/hr](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/) | Stripe Connect, Wise | Advanced domain experts in law, science, and medicine |\n| [Alignerr](https://www.alignerr.com/) | Labelbox | Homepage lists $80/hr average pay; listings range from $30 to $120/hr | Weekly payout | Language specialists and technical experts |\n| [Mindrift](https://mindrift.ai/) | Toloka AI BV | Entry-level: $15 to $30/hr; Domain experts: $60 to $100+/hr (paid per approved task) | Payoneer, Tipalti (PayPal) | Global freelance writers and editors |\n| [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) | Stryder Corp. | $30 to $125/hr | Stripe | Master's, PhD, and Postdoc degree holders |\n| [Prolific](https://researcher-help.prolific.com/en/article/2273bd) | Prolific | Minimum £6 / $8/hr (recommends at least £9 / $12/hr) | PayPal | Entry-level survey participants and basic testers |\n\nIf you want predictable earnings, this line of work is not for you. You should look at standard hourly employment or traditional freelance contracts instead. Our verdict on these platforms would flip if a provider began offering guaranteed baseline hours or covering onboarding time across all projects."
+    },
+    {
+      "heading": "What the Work Actually Involves Daily",
+      "body": "Daily tasks in AI training jobs focus on refining language model outputs through human feedback. According to [DataAnnotation's official FAQ](https://www.dataannotation.tech/faqs), contributors evaluate chatbot responses for accuracy, compare competing outputs, flag factual errors, test synthetic images, write challenging prompts, and review software code for mistakes.\n\nWorkers on [Outlier](https://outlier.ai/faq) generate prompts, rank AI outputs, and improve model responses. On the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303), fellows create prompts, evaluate AI responses, and correct content with citations."
+    },
+    {
+      "heading": "How Hiring and Assessment Tests Work",
+      "body": "Landing AI training jobs requires passing screening tests and identity checks before getting access to paid tasks. At [DataAnnotation](https://www.dataannotation.tech/faqs), the initial Starter Assessment takes about one hour to complete, while specialized technical tests run between one and two hours. DataAnnotation allows only one attempt at the Starter Assessment with no retakes permitted, and identity verification is handled via Persona using a government photo ID and a selfie.\n\nOnboarding on [Outlier](https://outlier.ai/faq) takes 30 to 90 minutes and requires at least an associate degree, a resume, a LinkedIn profile, and a national identity document. Meanwhile, the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) restricts most roles to candidates holding a Master's degree, PhD, or Postdoc credential.\n\nWhether onboarding and assessment time is paid varies sharply by platform. Handshake's updated [earning guidelines](https://support.joinhandshake.com/hc/en-us/articles/33614619791767-Earning-on-Handshake-AI) state that some projects include paid onboarding time while others do not, making clear that onboarding is unpaid unless explicitly promised. DataAnnotation, Outlier, Mindrift, and Alignerr do not state on their public FAQ pages whether initial skill assessments are compensated."
+    },
+    {
+      "heading": "Payment Schedules and Disbursement Rails",
+      "body": "Each training platform uses distinct disbursement processors and payout schedules. [DataAnnotation](https://www.dataannotation.tech/faqs) delivers contractor funds through PayPal within a few days of a worker submitting a withdrawal request.\n\n[Outlier](https://outlier.ai/faq) processes compensation weekly on Tuesdays for tasks logged during the previous Tuesday through Monday cycle, sending payments via PayPal, Airtm, or direct ACH bank transfer. According to [Mercor talent documentation](https://talent.docs.mercor.com/how-to/payments), payments process every Wednesday around 12:00 PM Pacific Time for the prior Saturday-through-Friday period using Stripe Connect or Wise. Mercor requires all bank accounts to be in the contractor's legal name, and Stripe enforces a mandatory seven-day holding period on your first payout.\n\nAccording to the [Mindrift payment guide](https://mindrift.ai/blog/how-mindrift-pays), disbursements run twice a month on the 5th and 20th through Payoneer or Tipalti. Payout rails on [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32263614087575-Handshake-AI-payments-processing) run via Stripe, with disbursements sent by Wednesday afternoon for the previous week's logged production."
+    },
+    {
+      "heading": "The Real Catches: Project Droughts, Rate Drops, and Lawsuits",
+      "body": "Contractors face frequent periods without work, abrupt account closures, and sudden rate shifts. On Trustpilot, reviews for [DataAnnotation](https://www.trustpilot.com/review/dataannotation.tech) (3.9 score out of 5 from 1,973 reviews) and [Outlier](https://www.trustpilot.com/review/outlier.ai) (4.1 score out of 5 from 5,483 reviews) highlight recurring themes of empty project queues, unpaid test steps, and sudden deactivations with slow support.\n\nPay rates can also decrease between assignments. Business Insider reported via [AOL syndication](https://www.aol.com/articles/ai-startup-powering-meta-openai-230627434.html) that Mercor concluded a Meta project named Musen, which peaked at over 5,000 workers, and subsequently offered a replacement project named Nova at $16 per hour, which was $5 less than the Musen rate.\n\nLegal actions over contractor status and compensation have also emerged across the industry. Outlier's parent company faced a class action in California, *McKinney v. Scale AI*, alleging worker misclassification. As documented by [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement), a $12,500,000 settlement was negotiated covering California contributors between December 2020 and February 2026, with a final approval hearing set for October 30, 2026. Handshake operator Stryder Corp. was named in an FLSA unpaid wage lawsuit, [*Boggs v. Stryder Corp.*](https://www.courtlistener.com/docket/73643581/boggs-v-stryder-corp/), filed on July 20, 2026. Additionally, a May 2025 misclassification suit was filed against [Surge AI](https://clarksonlawfirm.com/clarkson-represents-surge-ai-workers-in-labor-law-class-action), though public court documents do not name DataAnnotation as a party."
+    },
+    {
+      "heading": "How to Identify Fake AI Training Scams",
+      "body": "Criminals regularly impersonate AI platforms to steal personal information or recruit victims into financial schemes. The Federal Trade Commission (FTC) issued a consumer alert regarding [fraudulent job offer text messages](https://www.consumer.ftc.gov/consumer-alerts/2026/04/job-offer-text-probably-scam) detailing how scammers pose as recruiters offering remote online assessor positions through text, WhatsApp, or Telegram. These schemes frequently use fake-check scams or task scams where victims are given small introductory payments before being instructed to deposit their own money.\n\nLegitimate platforms never require you to pay money to receive work. As [DataAnnotation's FAQ](https://www.dataannotation.tech/faqs) states: 'We will never ask for money from you for anything.' Similarly, [Mindrift's blog](https://mindrift.ai/blog/how-mindrift-pays) clarifies that applications and qualification tests are completely free, and contributors never need to buy courses or materials.\n\nThe FTC's broader warning on [job scams](https://consumer.ftc.gov/articles/job-scams) emphasizes that any entity demanding upfront fees to secure an assignment is fraudulent. If you encounter these solicitations, report them immediately to ReportFraud.ftc.gov and your state attorney general."
+    },
+    {
+      "heading": "Taxes on 1099 Contractor Income",
+      "body": "Earnings from AI training jobs constitute self-employment income, meaning platforms do not withhold federal, state, or FICA taxes from your payments. [Mercor's tax documentation](https://talent.docs.mercor.com/policies/us-taxes) explicitly informs contractors that they must fulfill their own tax obligations, noting that US workers who submit a Form W-9 and earn over $600 receive a Form 1099-NEC through Stripe by February. Similarly, [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32263614087575-Handshake-AI-payments-processing) notes that workers operate as 1099 contractors responsible for reporting their own income.\n\nThe Internal Revenue Service (IRS) imposes [self-employment tax](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) of 15.3%, consisting of 12.4% for Social Security and 2.9% for Medicare. Anyone earning net self-employment earnings of $400 or more must file Schedule SE. For general contractor rules, check our [dataannotation taxes guide](/self-employment-tax/dataannotation-taxes/) or use our [self-employment tax calculator](/self-employment-tax/) to determine your exact tax obligations.\n\nBecause no employer withholds taxes from gig payments, you generally must pay [quarterly estimated taxes](https://www.irs.gov/faqs/estimated-tax) using Form 1040-ES if you expect to owe $1,000 or more for the year. To keep your cash flow predictable, calculate your obligations on our [quarterly estimated tax calculator](/self-employment-tax/quarterly-estimated-tax-calculator/) and review allowable write-offs in our [self-employed tax deductions guide](/guides/self-employed-tax-deductions/)."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/self-employment-tax/",
+      "label": "Self-Employment Tax Calculator"
+    },
+    {
+      "href": "/self-employment-tax/quarterly-estimated-tax-calculator/",
+      "label": "Quarterly Estimated Tax Calculator"
+    },
+    {
+      "href": "/freelance-rate/",
+      "label": "Freelance Rate Calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do AI trainers get paid?",
+      "answer": "Yes, verified platforms pay AI trainers hourly or per task for completed, approved work. Payments are distributed through processors like PayPal, Stripe, Wise, Airtm, or direct ACH transfer, though task availability varies."
+    },
+    {
+      "question": "Is AI training a legitimate job?",
+      "answer": "Yes, AI training is legitimate freelance contract work for major technology labs. You work as an independent 1099 contractor rather than a W-2 employee, meaning you receive no employment benefits, paid leave, or guaranteed weekly hours."
+    },
+    {
+      "question": "What is the easiest AI job to get?",
+      "answer": "Handshake AI and Mercor require graduate degrees or domain expertise."
+    },
+    {
+      "question": "Can I get an AI job with no experience?",
+      "answer": "Technical projects in software engineering, law, and medicine require verified professional credentials or degrees."
+    },
+    {
+      "question": "How much do AI trainers make?",
+      "answer": "Pay ranges from $15 to $30 per hour for entry-level tasks on Mindrift to over $85 per hour on Mercor according to TechCrunch. Highly specialized coding or STEM projects on DataAnnotation advertise rates starting at $40 to $150 or more per hour."
+    },
+    {
+      "question": "Do AI training jobs send a 1099?",
+      "answer": "Yes, US contractors earning reportable freelance income receive a tax form from the platform or its payment processor. For example, Mercor provides a Form 1099-NEC through Stripe for contractors who submit a Form W-9 and earn more than $600 during the tax year."
+    }
+  ],
+  "sources": [
+    {
+      "label": "DataAnnotation FAQ",
+      "url": "https://www.dataannotation.tech/faqs"
+    },
+    {
+      "label": "Outlier Contributor FAQ",
+      "url": "https://outlier.ai/faq"
+    },
+    {
+      "label": "Mercor Talent Payments Policy",
+      "url": "https://talent.docs.mercor.com/how-to/payments"
+    },
+    {
+      "label": "Mercor US Taxes Documentation",
+      "url": "https://talent.docs.mercor.com/policies/us-taxes"
+    },
+    {
+      "label": "Mindrift Contributor Pay Guide",
+      "url": "https://mindrift.ai/blog/how-mindrift-pays"
+    },
+    {
+      "label": "Handshake AI Fellowship Overview",
+      "url": "https://support.joinhandshake.com/hc/en-us/articles/32264709473303"
+    },
+    {
+      "label": "Prolific Researcher Minimum Payment Policy",
+      "url": "https://researcher-help.prolific.com/en/article/2273bd"
+    },
+    {
+      "label": "FTC Job Offer Text Scam Alert",
+      "url": "https://www.consumer.ftc.gov/consumer-alerts/2026/04/job-offer-text-probably-scam"
+    },
+    {
+      "label": "IRS Self-Employment Tax Rules",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

@@ -1,0 +1,114 @@
+{
+  "slug": "whop-clipping",
+  "title": "Whop Clipping Pays per 1,000 Views Only on Approved Clips",
+  "metaDescription": "Whop clipping pays a brand-set rate per 1,000 views, but only on approved clips that clear the campaign minimum. See the payout math and tax rules.",
+  "h1": "Can You Make Money with Whop Clipping?",
+  "cardBlurb": "Whop Content Rewards pay per 1,000 views on approved clips, and clippers generally owe self-employment tax on what they earn.",
+  "introText": "You can make money clipping on [Whop](https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards), but pay depends on each campaign's rules and your view counts, with no hourly wage. At ModernWallet, every guide we write starts from the platform's own rules, so this one works from Whop's Content Rewards documentation and terms. Brands set their own rates: Whop says clippers average $1 per 1,000 views, and [NPR](https://www.npr.org/2026/05/12/nx-s1-5794670/influencers-creators-video-clips) found offers from $0.50 to $25 per 1,000 views.\n\nClipping on Whop pays only when your video clears the campaign's minimum payout and the brand approves it. Views after the campaign's max payout or end date earn nothing.",
+  "sections": [
+    {
+      "heading": "Can You Make Money Clipping on Whop?",
+      "body": "Clipping on Whop produces real cash payouts, but earnings fluctuate heavily based on campaign rates and review decisions. Brands choose their own pay-per-view payouts per 1,000 views, which means two creators with identical view counts can earn drastically different sums.\n\nA blog post published by [Whop](https://whop.com/blog/content-rewards/) notes that clippers average $1 per 1,000 views across campaigns, and mentions a $190,000 monthly budget allocated for payouts through Whop Clips. NPR's reporting found wider offers. One agency offered $1 per 1,000 views for pro baseball clips, and an AI startup offered $25 per 1,000 views. Polymarket offered $0.50 per 1,000 views with a $70,000 total campaign budget.\n\nYou do not earn a flat hourly rate for clipping content. If a video fails to get traction or fails brand approval, you receive zero compensation for the editing hours spent. Readers comparing flexible work options can evaluate alternative models in our [side hustle ideas](/guides/side-hustle-ideas/) guide."
+    },
+    {
+      "heading": "How Whop Content Rewards Campaigns Work",
+      "body": "Whop runs clipping initiatives through a feature called Content Rewards. Per [Whop documentation](https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards), a brand establishes a payout rate per 1,000 views alongside a total campaign budget cap. Participating creators post clips to their own social media accounts.\n\nThe documentation lists four supported clipping platforms: TikTok, [YouTube Shorts](https://support.google.com/youtube/answer/12504220), X, and Instagram Reels. The brand then approves or rejects each submission. The documentation states plainly that payment happens only after the brand approves a post, after which Whop pays out automatically based on verified view counts.\n\nWhop categorizes Content Rewards into two campaign styles: Clipping and user-generated content (UGC). The documentation notes that user-generated content typically pays higher rates than standard clipping campaigns. If you would rather earn from your own channel, our guide to a [faceless YouTube channel with AI](/guides/faceless-youtube-channel-ai/) covers YouTube's monetization rules."
+    },
+    {
+      "heading": "The Math Behind Clipping Payouts",
+      "body": "Your earnings on Whop follow a straightforward formula: views divided by 1,000, multiplied by the campaign rate, subject to minimum thresholds and maximum caps. Because documented rates run from $0.50 to $25 per 1,000 views, the return per post varies widely.\n\nThis table multiplies the documented rates by three view counts, before any minimum, cap, or rejection:\n\n| Views | $0.50 per 1,000 | $1 per 1,000 | $3 per 1,000 | $25 per 1,000 |\n| --- | --- | --- | --- | --- |\n| 2,000 | $1 | $2 | $6 | $50 |\n| 10,000 | $5 | $10 | $30 | $250 |\n| 100,000 | $50 | $100 | $300 | $2,500 |\n\nCampaigns can also include an optional flat-fee bonus alongside performance pay. Whop's documentation gives an example: a $10 flat fee plus $3 per 1,000 views pays $16 for an approved video with 2,000 views ($10 + $6). Brands can also impose a maximum payout cap. For instance, Whop documentation illustrates a $3,000 cap on a $3 per 1,000 rate, which stops accumulating earnings once a video hits 1,000,000 views."
+    },
+    {
+      "heading": "Why a Clip Can Earn Nothing",
+      "body": "A submitted clip earns nothing if it never clears the campaign's minimum payout. Per Whop documentation, a video must earn at least the campaign minimum payout before it even enters the review queue. Under a $3 per 1,000 views rate with a $6 minimum threshold, a clip must reach about 2,000 views just to be eligible for brand evaluation.\n\nSubmissions that clear the view minimum can still face rejection. According to the [Whop Content Rewards Terms of Service](https://whop.com/content-rewards-terms-of-service/), brands (the terms call them sellers) may reject submissions only for unmet offer criteria, terms violations, or reasonable suspicion of fraud.\n\nCampaign budgets and deadlines introduce another hard stop. The terms specify that brands can reject submissions if the campaign has reached its maximum payout or passed its end date. Furthermore, the terms explicitly state that participants receive no pay for views that occur after a video reaches its cap or after the campaign end date passes."
+    },
+    {
+      "heading": "Whop's Fees and Payout Terms",
+      "body": "Whop charges its 10% Content Reward Fee to the brand, and the terms we read name no fee for clippers. The Content Rewards Terms of Service state that Whop deducts the fee from the seller's (brand's) account, based on amounts paid to participants.\n\nBrands fund reward budgets with their Whop balance, a payment card, or Cash App. Whop's public documentation does not state how or when clippers get paid out, so the published guarantee stops at automatic payment after a brand approves your clip.\n\nThe terms also require all participants to be at least 18 years old. In addition, the terms state that participants are paid without tax withholding and remain responsible for reporting and paying all applicable federal and state taxes."
+    },
+    {
+      "heading": "AI Clipping Tools and Platform Policies",
+      "body": "AI clipping tools auto-cut a long video into short vertical clips, and those clips still fall under YouTube's monetization rules if you post them on your own channel.\n\nOn July 15, 2025, YouTube updated its policies, renaming its repetitious content monetization rules to [inauthentic content](https://support.google.com/youtube/answer/1311392). YouTube targets content that looks like it is made with a template or feels repetitive to viewers across a single channel. Under this policy, YouTube does not monetize AI-generated content made with generic or unoriginal templates that give the impression of mass production. Image slideshows and templated storylines with minimal narrative or educational value are not monetizable either.\n\nThe reused content policy is a separate YouTube rule. YouTube bars monetization for clips of moments edited together with little or no narrative, or content copied from online sources without substantive modifications. If you build a clipping channel on YouTube Shorts, policy enforcement on reused content impacts your eligibility for the YouTube Partner Program, independent of any Whop campaign payments. For other ways to earn with AI tools, see our guide on [how to make money with AI](/guides/how-to-make-money-with-ai/)."
+    },
+    {
+      "heading": "Taxes on Whop Clipping Earnings",
+      "body": "Whop clipping income is generally self-employment income when you clip as a business. The [Internal Revenue Service (IRS) Schedule C instructions](https://www.irs.gov/instructions/i1040sc) count an activity as a business when its main purpose is profit and you run it regularly and continuously. Hobby income goes on Schedule 1 (Form 1040), line 8. Because Whop pays participants without tax withholding, you must calculate and remit your own income taxes and self-employment taxes.\n\nUnder IRS rules published in [Tax Topic 554](https://www.irs.gov/taxtopics/tc554) and the [IRS self-employment tax guide](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes), self-employment tax is 15.3%, consisting of 12.4% for Social Security and 2.9% for Medicare. You must file Schedule SE and pay self-employment tax if your net self-employment earnings reach $400 or more in a tax year. You can compute your tax liability using our [self-employment tax calculator](/self-employment-tax/) or budget quarterly savings using our guide on [how much to set aside for taxes](/self-employment-tax/how-much-to-set-aside-for-taxes/).\n\nReporting rules also govern information forms. Under IRS instructions for [Form 1099-NEC](https://www.irs.gov/instructions/i1099mec), businesses report nonemployee compensation of $2,000 or more for tax years beginning after 2025. The [IRS Form 1099-K guidance](https://www.irs.gov/newsroom/irs-issues-faqs-on-form-1099-k-threshold-under-the-one-big-beautiful-bill-dollar-limit-reverts-to-20000) says a third-party settlement organization need not file Form 1099-K unless gross payments exceed $20,000 and transactions exceed 200. Remember that receiving no tax form does not relieve you of the legal obligation to report every dollar of clipping earnings on your tax return."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/self-employment-tax/",
+      "label": "Self-Employment Tax Calculator"
+    },
+    {
+      "href": "/self-employment-tax/1099-tax-calculator/",
+      "label": "1099 Tax Calculator"
+    },
+    {
+      "href": "/budget/",
+      "label": "Budget Calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How can I start clipping on Whop?",
+      "answer": "You can start by joining active Content Rewards campaigns on Whop and creating accounts on TikTok, YouTube Shorts, X, or Instagram Reels. You then post clips to your accounts and submit them for brand approval."
+    },
+    {
+      "question": "Is Whop clipping free?",
+      "answer": "The Content Rewards terms we read name no fee for clippers. Whop charges its 10% Content Reward Fee to the brand hosting the campaign. Whop's documentation does not state the creator-side payout method or schedule."
+    },
+    {
+      "question": "Can you make money from clipping?",
+      "answer": "Yes, you can make money if your clips hit campaign view minimums and receive brand approval. Payouts are performance-based per 1,000 views rather than guaranteed wages, meaning unapproved clips or videos with low views earn nothing."
+    },
+    {
+      "question": "Is Whop clipping legit?",
+      "answer": "Whop clipping is a pay-per-view program run through Whop Content Rewards. Payments are distributed automatically after a brand verifies and approves your post, subject to campaign budgets and published terms of service."
+    },
+    {
+      "question": "How much do clippers make per 1,000 views?",
+      "answer": "Whop's blog states that clippers average $1 per 1,000 views across its campaigns. Documented campaigns range from $0.50 per 1,000 views for Polymarket to $25 per 1,000 views for an AI startup, as reported by NPR."
+    },
+    {
+      "question": "Do you pay taxes on clipping income?",
+      "answer": "Yes, you must pay taxes on clipping income because Whop distributes payouts without tax withholding. Clipping run as a business is generally self-employment income, so you owe federal income tax plus the 15.3% self-employment tax once net self-employment earnings reach $400."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Whop Content Rewards Documentation",
+      "url": "https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards"
+    },
+    {
+      "label": "Whop Content Rewards Terms of Service",
+      "url": "https://whop.com/content-rewards-terms-of-service/"
+    },
+    {
+      "label": "Whop Blog, Content Rewards",
+      "url": "https://whop.com/blog/content-rewards/"
+    },
+    {
+      "label": "NPR, Influencers, Creators, and Video Clips",
+      "url": "https://www.npr.org/2026/05/12/nx-s1-5794670/influencers-creators-video-clips"
+    },
+    {
+      "label": "YouTube Help, Inauthentic and Reused Content Policies",
+      "url": "https://support.google.com/youtube/answer/1311392"
+    },
+    {
+      "label": "IRS, Self-Employment Tax Information",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+    },
+    {
+      "label": "IRS, Form 1099-K Threshold Notice",
+      "url": "https://www.irs.gov/newsroom/irs-issues-faqs-on-form-1099-k-threshold-under-the-one-big-beautiful-bill-dollar-limit-reverts-to-20000"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

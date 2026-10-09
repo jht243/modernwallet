@@ -1,0 +1,81 @@
+{
+ "slug": "side-hustle-ideas--ai-side-hustles",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 261,
+ "floor": 0,
+ "input_tokens": 26604,
+ "output_tokens": 501,
+ "thinking_tokens": null,
+ "cached_tokens": 17751,
+ "est_cost_usd": 0.0098,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 261,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L3",
+     "quote": "Digital assets and content can generate income, but they pay later, after unpaid upfront production and distribution.",
+     "replacement": "Content and product routes pay later.",
+     "type": "unsupported",
+     "why": "SOURCE states content and product routes pay later, not unpaid upfront production."
+    },
+    {
+     "id": "L3",
+     "quote": "If you want cash for hours logged this month, paid client work and model evaluation are the two documented paths.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state cash for hours logged this month; Mindrift pays per task."
+    },
+    {
+     "id": "L7",
+     "quote": "Freelancing with AI tools offers an immediate hourly lift, but the type of work matters.",
+     "replacement": "Freelancing with AI tools can pay more per hour, but the type of work matters.",
+     "type": "unsupported",
+     "why": "SOURCE does not state AI freelancing offers an immediate hourly lift."
+    },
+    {
+     "id": "L7",
+     "quote": "Basic prompt execution faces falling rates as supply grows, while technical and domain-specific roles capture the premium.",
+     "replacement": "Upwork reads this as a sign that lower-complexity AI execution may become less lucrative as it scales.",
+     "type": "inference",
+     "why": "SOURCE does not state prompt execution, growing supply, or technical roles capturing premiums."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 292
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 66.6,
+ "response_id": "bgLJatzqDZjFqtsP2ae5iAQ",
+ "generated_at": "2026-10-09T10:05:20-0500"
+}

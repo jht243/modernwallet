@@ -1,0 +1,365 @@
+{
+ "slug": "how-to-make-money-with-chatgpt",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1682,
+ "floor": 1200,
+ "input_tokens": 28249,
+ "output_tokens": 3923,
+ "thinking_tokens": null,
+ "cached_tokens": 17751,
+ "est_cost_usd": 0.0239,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1676,
+  "numbers_not_in_facts": [
+   "2.5",
+   "40"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    15,
+    0
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "Simple generative tasks without human skill command lower rates over time.",
+     "replacement": "Upwork itself adds that not all AI work is becoming more valuable.",
+     "type": "inference",
+     "why": "SOURCE notes per-contract earnings fell 13%, not that simple tasks command lower rates over time."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "When you rely on raw model output without specialized domain knowledge, you enter a crowded market that drives contract prices down.",
+     "replacement": "Upwork reads this as a sign that lower-complexity AI execution may become less lucrative as it scales.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that raw output enters a crowded market driving down prices."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Offering client services is the fastest way to turn ChatGPT usage into cash, but platform fees reduce your take-home pay.",
+     "replacement": "Offering client services can turn ChatGPT usage into income, but platform fees reduce your take-home pay.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that client services are the fastest way to earn cash."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "General freelance earnings also face baseline volatility.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that general freelance earnings face baseline volatility."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Upwork recorded a 178% year-over-year increase in AI Integration demand on its completed contracts, demonstrating enterprise interest in systems architecture.",
+     "replacement": "Upwork recorded a 178% year-over-year increase in freelancer earnings on completed jobs for AI Integration.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention enterprise interest in systems architecture."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "On Etsy, creativity standards require AI-created physical items made from original prompts to sit in the designed-by category, while selling standalone prompt bundles is barred.",
+     "replacement": "On Etsy, creativity standards require AI-generated items made from original prompts to belong in the designed-by category, while selling AI prompt bundles is prohibited.",
+     "type": "unsupported",
+     "why": "SOURCE states AI-generated items, not physical items specifically."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Testing basic prompts and workflow ideas",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not specify a recommended audience or use case for Free."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Low-cost entry for basic usage",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not specify a recommended audience or use case for Go."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Solo freelancers running daily client tasks",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not specify a recommended audience or use case for Plus."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "High-volume developers and advanced users",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not specify a recommended audience or use case for Pro."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Small teams and agencies sharing workflows",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not specify a recommended audience or use case for Business."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "The IRS treats freelance and contract earnings from platforms like Upwork and Fiverr as business earnings.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not name the IRS or its classification of platform earnings."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Independent contractors must cover both the employee and employer portions of Medicare and Social Security taxes, which total 15.3% on net earnings.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Medicare, Social Security, or a 15.3% tax rate."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Tracking your software subscriptions, computing equipment, and home workspace allows you to claim eligible [self-employed tax deductions](/guides/self-employed-tax-deductions/) to reduce your taxable business profit.",
+     "replacement": "Reviewing eligible [self-employed tax deductions](/guides/self-employed-tax-deductions/) can help you manage your taxable business profit.",
+     "type": "unsupported",
+     "why": "SOURCE does not list software subscriptions, computing equipment, or home workspace deductions."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Freelancers managing regular client workloads often select the $20 monthly Plus plan to access higher capacity and newer model features.",
+     "replacement": "Whether you choose a paid tier like Plus at $20 a month depends on your billable hourly rate.",
+     "type": "unsupported",
+     "why": "SOURCE does not state what freelancers typically select or features of Plus."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 1764
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-09T10:42:12-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-08-ai-money/audit/how-to-make-money-with-chatgpt.findings.txt",
+    "applied": [
+     {
+      "id": "title",
+      "quote": "How to Make Money With ChatGPT: What Actually Pays",
+      "replacement": "How to Make Money With ChatGPT in 2026",
+      "type": "Headline formula with Actually",
+      "why": "Headline tell: colon two-clause formula plus Actually."
+     },
+     {
+      "id": "h1",
+      "quote": "How to Make Money With ChatGPT: Practical Ways That Work",
+      "replacement": "How to Make Money With ChatGPT",
+      "type": "Colon two-clause formula",
+      "why": "Colon two-clause formula in H1."
+     },
+     {
+      "id": "sections[0].heading",
+      "quote": "Ways to Make Money With ChatGPT That Actually Pay",
+      "replacement": "Ways to Make Money With ChatGPT That Pay",
+      "type": "Actually headline tell",
+      "why": "Actually headline tell in section heading."
+     },
+     {
+      "id": "introText",
+      "quote": "You cannot make money from ChatGPT directly because OpenAI does not pay users to prompt its model. To earn income, you must use ChatGPT to deliver a paid service faster or build a software product that paying customers buy.",
+      "replacement": "You can make money with ChatGPT by using it to deliver a paid service faster or to build a product people buy, but [OpenAI](https://openai.com/policies/terms-of-use/) does not pay you for using it. At ModernWallet, we show the math, which here means dividing each ChatGPT plan's price by your hourly rate to see how much time it has to save you.",
+      "type": "Negative lead and unlinked OpenAI",
+      "why": "Sentence 1 led with cannot and OpenAI was unlinked on first mention."
+     },
+     {
+      "id": "introText",
+      "quote": "As of October 2026, Pew Research Center data shows that 44% of U.S. adults have used [ChatGPT](https://learn.chatgpt.com/docs/pricing), yet turning the tool into revenue requires independent client demand or product sales.",
+      "replacement": "A [Pew Research Center](https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/) survey from February 2026 found that 44% of U.S. adults have used ChatGPT.",
+      "type": "Misdated survey and duplicate link",
+      "why": "Survey ran February 2026, Pew was unlinked, and pricing link duplicated."
+     },
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we look at the verified unit economics and platform rules behind side hustles rather than untested passive-income claims. In this guide, we break down freelance demand data, practical workflow prompts, software product boundaries, and relevant regulatory enforcement.",
+      "replacement": "",
+      "type": "Banned meta-narration and unlicensed we",
+      "why": "In this guide is banned meta-narration and first-person claim is unlicensed."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "According to the Upwork Research Institute's [Future Workforce Index 2026](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates)",
+      "replacement": "According to the [Upwork Research Institute's Future Workforce Index 2026](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates)",
+      "type": "Unlinked Upwork on first mention",
+      "why": "Upwork was unlinked on first mention."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Upwork itself adds that not all AI work is becoming more valuable.",
+      "replacement": "Upwork itself adds that \"not all AI work is becoming more valuable.\"",
+      "type": "Missing quotation marks",
+      "why": "Direct quote requires quotation marks."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Workers who combine domain expertise with model tools see better financial outcomes. ",
+      "replacement": "",
+      "type": "No concrete noun and redundant",
+      "why": "No concrete noun, and following sentence restates with actual figure."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "A 2025 Bankrate survey conducted by YouGov reported that only 27% of U.S. adults held a side hustle, with a median monthly side income of $200.",
+      "replacement": "A 2025 [Bankrate](https://www.bankrate.com/loans/small-business/side-hustles-survey/) survey conducted by YouGov found that 27% of U.S. adults have a side hustle and that the median side hustler earns $200 a month.",
+      "type": "Unlinked source citation",
+      "why": "Bankrate was unlinked."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "These prompt templates are designed to structure work rather than create autonomous earnings.",
+      "replacement": "",
+      "type": "Antithesis cadence and redundant",
+      "why": "Antithesis cadence, and sentence restates previous sentence."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "assuming an target hourly rate",
+      "replacement": "assuming a target hourly rate",
+      "type": "Typographical error",
+      "why": "Typo in prompt text."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "However, an update on the [OpenAI Community Forum](https://community.openai.com/t/what-is-the-status-with-gpt-store-revenue-share/839172) noted the program was testing with a small group of U.S. builders and was not accepting additional creators, meaning general public monetization through the store remains closed.",
+      "replacement": "However, an FAQ quoted on the [OpenAI Community Forum](https://community.openai.com/t/what-is-the-status-with-gpt-store-revenue-share/839172) says OpenAI was testing payouts with \"a small group of builders\" in the U.S. and was \"not currently accepting additional builders.\" No official source shows a broad payout program, so do not build a GPT expecting payouts.",
+      "type": "Unattributed secondary fact and overclaim",
+      "why": "Secondary fact needs attribution, and remains closed overclaims status."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Upwork recorded a 178% year-over-year increase in freelancer earnings on completed jobs for AI Integration.",
+      "replacement": "Upwork's [In-Demand Skills 2026](https://investors.upwork.com/news-releases/news-release-details/upworks-demand-skills-2026-demand-top-ai-skills-more-doubles-ai) report recorded a 178% year-over-year increase in freelancer earnings on completed AI Integration jobs.",
+      "type": "Unlinked source citation",
+      "why": "Cited report was unlinked."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "On Etsy, creativity standards require AI-generated items made from original prompts to belong in the designed-by category, while selling AI prompt bundles is prohibited.",
+      "replacement": "Etsy's [Creativity Standards](https://www.etsy.com/legal/creativity/) say AI-generated items made from a seller's own prompts belong in the \"designed by\" category, that sellers must disclose AI use, and that selling AI prompt bundles is prohibited.",
+      "type": "Unattributed secondary fact and missing rule",
+      "why": "Secondary fact needs attribution, Etsy unlinked, disclosure rule missing."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "| Plan Tier | Monthly Price | Best For |",
+      "replacement": "| Plan Tier | Monthly Price | Hours It Must Save at $40/Hour |",
+      "type": "Uninformative table header",
+      "why": "Replaces column heading that had only uninformative cells."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Online promotions promising passive automated wealth using AI tools frequently lead to state or federal enforcement.",
+      "replacement": "Federal regulators have sued several sellers that promised passive income from AI-powered online stores.",
+      "type": "Unsupported claim",
+      "why": "Frequently and state are unsupported by source facts."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Federal actions against companies like Ascend Ecom, FBA Machine, and Automators AI involved allegations of false promises regarding fully automated, passive five-figure monthly e-commerce earnings.",
+      "replacement": "The FTC alleged that [Ascend Ecom](https://www.ftc.gov/news-events/news/press-releases/2025/06/ftc-case-leads-order-banning-ascend-ecom-its-owners-business-opportunity-marketing) promised \"five-figure monthly income by the second year\" and that [FBA Machine](https://www.ftc.gov/news-events/news/press-releases/2025/07/ftc-obtains-permanent-ban-e-commerce-business-opportunity-scheme-operator) made \"7-figure business\" claims. In an earlier case, it alleged that [Automators AI](https://www.ftc.gov/news-events/news/press-releases/2024/02/ftc-action-leads-ban-owners-automators-ai-e-commerce-money-making-scheme) promised \"passive investment income\" from AI-powered Amazon and Walmart stores.",
+      "type": "Conflated claims and unlinked parties",
+      "why": "Five-figure claim belonged only to Ascend Ecom; entities unlinked."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "or calculate quarterly vouchers using our [1099 tax calculator]",
+      "replacement": "or estimate tax on 1099 income with our [1099 tax calculator]",
+      "type": "Misdescribed link destination",
+      "why": "Calculator estimates tax on 1099 income rather than calculating vouchers."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "against your billed project revenue.",
+      "replacement": "against your billed project revenue.\n\nThis is general information, not financial, tax or legal advice.",
+      "type": "Missing mandatory disclaimer",
+      "why": "Guide missing mandatory YMYL legal and financial disclaimer."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "but the company notes outputs may not be unique across different accounts",
+      "replacement": "but OpenAI notes that output may not be unique and other users may receive similar output",
+      "type": "Coy abstraction the company",
+      "why": "Replaces coy abstraction with OpenAI and exact terms wording."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "but updates on the OpenAI Community Forum indicate it operated only as a small pilot that is not accepting additional builders.",
+      "replacement": "but an FAQ quoted on OpenAI's community forum describes a test with a small group of U.S. builders that was not accepting new builders, and no official source shows a broader payout program.",
+      "type": "Unattributed secondary fact and overclaim",
+      "why": "Forum post needs attribution and operated only as overclaims status."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[1].body",
+      "quote": "While the [Fiverr Business Trends Index](https://finviz.com/news/360535/businesses-race-to-hire-claude-code-specialists-as-demand-surges-938) recorded notable search spikes for technical skills like n8n automation rising 125% and vibe coding climbing 61% between late 2025 and early 2026, raw search volume does not guarantee client spend.",
+      "finding": "Banned word and misdescribed period",
+      "why": "Notable is banned, comparison period misdescribed, and sentence overloaded.",
+      "replacement": "The [Fiverr Business Trends Index](https://finviz.com/news/360535/businesses-race-to-hire-claude-code-specialists-as-demand-surges-938) reported that searches for n8n AI automation rose 125% and searches for vibe coding rose 61% from November 2025 to April 2026, compared with the prior six months. Those are search counts, not what buyers spent.",
+      "reason": "replacement adds ['November'] not in SOURCE"
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "| Free | $0 | Not published | | Go | $8 | Not published | | Plus | $20 | Not published | | Pro | From $100 ($100, $200, or $500) | Not published | | Business | $20 to $25 per user (min 2 users) | Not published |",
+      "finding": "All Not published column",
+      "why": "Replaces uninformative cells with break-even calculations from listed prices.",
+      "replacement": "| Free | $0 | None | | Go | $8 | 12 minutes | | Plus | $20 | 30 minutes | | Pro | From $100 ($100, $200, or $500) | 2.5 hours for the $100 tier | | Business | $20 per user billed annually or $25 monthly (min 2 users) | 30 to 37.5 minutes per user |",
+      "reason": "replacement adds ['12', '37.5'] not in SOURCE"
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "sellers making earnings representations must provide prospective buyers with written substantiation showing the exact number and percentage of purchasers who achieved those figures. The FTC provides consumer guidance on [money-making opportunity scams](https://consumer.ftc.gov/all-scams/money-making-opportunity-scams), warning workers to avoid schemes that demand upfront fees for guaranteed returns. If you suspect an opportunity scam, file a report at [ReportFraud.ftc.gov](https://consumer.ftc.gov/consumer-alerts/2026/02/how-avoid-side-hustle-scam).",
+      "finding": "Mismatched anchor, wrong source, conflated rules",
+      "why": "Link anchor mismatched destination, warning signs misattributed, rules conflated.",
+      "replacement": "sellers making earnings claims must have written substantiation and must give buyers an earnings claim statement showing the number and percentage of buyers who reached those earnings. The FTC's [side hustle scam alert](https://consumer.ftc.gov/consumer-alerts/2026/02/how-avoid-side-hustle-scam) lists unrealistic pay for minimal effort, pressure to accept immediately, and requests for upfront fees as warning signs. If you suspect a scam, report it at ReportFraud.ftc.gov.",
+      "reason": "replacement adds [\"FTC's\"] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "deleted_final": 0,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1682,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 235.6,
+ "response_id": "uQTJarLjBr3oz7IP__rFmAk",
+ "generated_at": "2026-10-09T10:17:56-0500"
+}

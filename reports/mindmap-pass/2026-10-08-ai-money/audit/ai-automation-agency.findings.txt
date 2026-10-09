@@ -1,0 +1,194 @@
+## Run-level checks (all 4 pages)
+
+**Depth (measured from source):** introText + section bodies + FAQ answers, counted with `wc -w`.
+- how-to-make-money-with-ai: 1,887
+- how-to-make-money-with-claude: 1,753
+- how-to-make-money-with-chatgpt: 1,460
+- ai-automation-agency: 1,526
+- Result: 4 passing, 0 failing, median 1,640 against the 1,200 floor. The median is not within 10% of the floor.
+
+**Checks that passed:**
+- **Load receipt:** `reports/standards-ledger.jsonl` has a mindmap-pass phase-3 `via:load-script` entry at 2026-10-09T14:45. Its hashes (7a486edc / ed445917 / 31d70e56) match `shasum` of the current three files.
+- **Links:** every external URL is in `allowed-urls.all.txt`, every internal link is on the allowed list, no page links to itself, and nothing links to `/youtube-money-calculator/`.
+- **Title Case:** every h1 and section heading passes.
+- **Byline in body:** none.
+- **Em-dash, "honest", exclamation marks, raw HTML:** none. (The `---` strings are table separators.)
+- **Self-serving disclaimer grep:** one hit, Claude `sections[0].body` "provided you do not resell the software". That describes Anthropic's terms, so it is not a neutrality claim. That sentence is still fixed below for a separate reason.
+- **"Secondary — unverified" facts:** none are stated as fact on any page.
+- **Title and meta length:** every title is 60 characters or less and every metaDescription is 160 or less, both as drafted and after the fixes below.
+
+**R1 — Row records missing (GATE Register / GATE Medium-and-row-records / GATE Anchor). NOT FIXABLE IN PLACE; fix it in the chart row, not the draft.**
+- Neither the chart (`reports/mindmap-pass/2026-10-08-ai-money.md`) nor the 4 prompts carry `register:` or an `anchor-exempt:` note.
+- `page type:` and medium (text → text) are present.
+- Fix: add `register: operator` and an `anchor-exempt: no client specifics in _experience.md` note to all 4 rows.
+
+**R2 — `disclaimer-missing` (YMYL).** `src/pages/guides/[slug].astro` renders no disclaimer for guides, and no page has one. Each page gets a per-page fix-in-place below that appends the disclaimer to its final section. Existing guides in `guides.ts` put it in body copy the same way.
+
+**R3 — Unlinked company first mentions with no allowed URL. NOT FIXABLE IN PLACE.**
+- Names: Toloka, Labelbox, Stripe, PayPal (as a payout rail), Payoneer, Tipalti, TikTok, Instagram, YouGov, Business Insider (the AOL link covers its story).
+- The only entity this repo auto-links is Robinhood (`src/lib/richtext.ts`).
+- You need to decide: add these to the registry, or accept them as names that appear next to an already-linked platform.
+
+**R4 — advisory:** each page's `meta.guards` flag says the claim check "emptied" 5 sections. None of those sections is empty, so the guard output is wrong and the claim-check reporting in `scripts/lib/content_gen.py` should be looked at.
+
+**Fix-in-place format:** each fix lists the field, the exact FROM text, the exact TO text, and the reason. Every FROM string was checked with a script and occurs exactly once in its field. `\n` means a JSON newline. `""` means delete.
+
+---
+
+
+ORCHESTRATOR RULINGS: unlinkable organisations (R3) are accepted unlinked; row records are fixed in the chart, not the draft.
+
+## PAGE 4: ai-automation-agency — VERDICT: FAIL — 1,526 words
+
+**1. title**
+- FROM: AI Automation Agency: How to Start and Set Pricing
+- TO: How to Start an AI Automation Agency and Price It
+- WHY: Colon two-clause headline tell.
+
+**2. metaDescription**
+- FROM: and navigate self-employment taxes.
+- TO: and handle self-employment taxes.
+- WHY: "Navigate" is an LLM filler verb.
+
+**3. introText**
+- FROM: build it on workflow software like n8n or Make,
+- TO: build it on workflow software like [n8n](https://n8n.io/pricing/) or [Make](https://www.make.com/en/pricing),
+- WHY: Both were unlinked on first mention.
+
+**4. introText**
+- FROM: Client acquisition, not tooling, remains the bottleneck in running an agency.
+- TO: At ModernWallet, we show the math, which here means turning each published agency price into an hourly rate you can check against your own. Finding clients takes more work than the tooling, which can start free on n8n's self-hosted Community Edition.
+- WHY: "X, not Y" antithesis, and the tee-up was missing.
+
+**5. introText**
+- FROM: ` Reliable execution requires matching your service fees to actual labor hours and software overhead. This guide walks through the complete setup sequence, realistic client pricing models, platform subscription costs, consumer-protection rules, and your self-employment tax obligations as of October 2026.` (includes the leading space)
+- TO: ""
+- WHY: "This guide walks through" is meta-narration, and the first sentence is vague.
+
+**6. sections[0].body**
+- FROM: Starting an AI automation agency requires a sequential operating plan centered on repeatable workflow delivery.
+- TO: You start an AI automation agency by selling one tested workflow to a few local businesses, then repeating it.
+- WHY: Unsayable filler.
+
+**7. sections[0].body**
+- FROM: 3. Build the automation prototype using a dedicated automation tool to confirm that data flows cleanly between services.
+- TO: 3. Build a working prototype in n8n or Make and confirm that data passes cleanly between the client's apps.
+- WHY: Coy abstraction ("a dedicated automation tool") on a page that names the tools.
+
+**8. sections[0].body**
+- FROM: 4. Set your pricing structure as an upfront deployment charge paired with an ongoing monthly support retainer.
+- TO: 4. Price it as a setup fee plus a monthly retainer. The only detailed published dataset, self-published by [Aumiqx](https://aumiqx.com/services/ai-automation-agency/), puts median entry prices near $1,000 per workflow and $1,423 a month for a build retainer.
+- WHY: `intent-answered-late`. The "what can I charge" half of the reader question first got a figure in section 3. This puts the row answer's figure inside the step sequence.
+
+**9. sections[1].heading**
+- FROM: What an AI Automation Agency Actually Sells
+- TO: What an AI Automation Agency Sells
+- WHY: "Actually" headline tell.
+
+**10. sections[1].body**
+- FROM: On [Upwork](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates), this function is categorized under the role of AI Orchestrator, defined as someone who pairs generative models with domain judgment to deliver practical business results.
+- TO: [Upwork](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates)'s Future Workforce Index 2026 names a matching emerging role, the "AI Orchestrator": someone who connects AI tools to domain expertise, applies judgment, and turns AI output into business results.
+- WHY: "Categorized under" overstates what the source says.
+
+**11. sections[2].body**
+- FROM: No government regulator or neutral industry research group publishes an independent benchmark of agency retainers.
+- TO: The published figures on AI automation agency pricing all come from vendors or agencies with a commercial interest.
+- WHY: The fact list says "found no" such benchmark; the draft made it an absolute claim.
+
+**12. sections[2].body**
+- FROM: compiled by [Aumiqx](https://aumiqx.com/services/ai-automation-agency/), an agency services company
+- TO: compiled by Aumiqx, an agency services company
+- WHY: The link moved to the first mention.
+
+**13. sections[3].body**
+- FROM: On [n8n](https://n8n.io/pricing/), hosted cloud
+- TO: On n8n, hosted cloud
+- WHY: The link moved to the first mention.
+
+**14. sections[3].body**
+- FROM: On [Make](https://www.make.com/en/pricing), plans include
+- TO: On Make, plans include
+- WHY: The link moved to the first mention.
+
+**15. sections[3].body**
+- FROM: Developing client prompts requires professional artificial intelligence subscriptions.
+- TO: A paid AI model plan adds to those costs.
+- WHY: False as written: free tiers exist.
+
+**16. sections[3].body**
+- FROM: Both platforms grant user ownership rights over generated outputs according to their terms of service, allowing commercial use of prompt outputs in client systems.
+- TO: [Anthropic's consumer terms](https://www.anthropic.com/legal/consumer-terms) and [OpenAI's terms of use](https://openai.com/policies/terms-of-use/) both assign you their rights in the output, and Anthropic's terms contain no general ban on commercial use.
+- WHY: "Both platforms" is a coy abstraction, and the commercial-use claim is unsupported for OpenAI.
+
+**17. sections[4].body**
+- FROM: In March 2026, the FTC entered a proposed settlement including a ban on selling business opportunities and an $18 million judgment against the company and its operators.
+- TO: In March 2026, the FTC announced a [proposed settlement](https://www.ftc.gov/news-events/news/press-releases/2026/03/air-ai-its-owners-will-be-banned-marketing-business-opportunities-settle-ftc-charges-company-misled) with a ban on selling business opportunities and an $18 million judgment against Air AI and its owners, mostly suspended.
+- WHY: "Entered" implies a final order. "The company" is a coy abstraction. "Mostly suspended" was missing. The cited source was unlinked.
+
+**18. sections[4].body**
+- FROM: Building an agency is a professional service business that depends on sales outreach and client retention, not a passive income turnkey system.
+- TO: An agency earns money only while you find clients and keep them on retainers.
+- WHY: "X, not Y" antithesis.
+
+**19. sections[5].heading**
+- FROM: Market Trends: Generic Bots vs Complex Integrations
+- TO: Upwork Pay Trends for Simple and Complex AI Work
+- WHY: Colon-drama headline.
+
+**20. sections[5].body**
+- FROM: According to the [Upwork Future Workforce Index 2026](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates),
+- TO: According to Upwork's Future Workforce Index 2026,
+- WHY: Duplicate link; it is already linked in sections[1].
+
+**21. sections[5].body**
+- FROM: In contrast, Upwork reported that freelancers delivering complex workflows experienced a 45% increase in annual earnings.
+- TO: In contrast, Upwork reported that freelancers doing more complex work with AI saw earnings rise 45% year over year.
+- WHY: The draft misparaphrased the source.
+
+**22. sections[5].body**
+- FROM: Freelancers performing skilled AI work on Upwork earned 34% more per hour than non-AI peers, though Upwork emphasized that basic tasks face downward rate pressure.
+- TO: Freelancers who do AI work on Upwork earn 34% more per hour than those who don't use AI, though Upwork adds that "not all AI work is becoming more valuable."
+- WHY: "Skilled" and "downward rate pressure" are unsupported.
+
+**23. sections[5].body**
+- FROM: Selling generic chat widgets or off-the-shelf text generators no longer commands premium fees. Agency work focuses on selling outcomes for a specific niche rather than generic chatbots.
+- TO: For an agency, that data argues for selling a specific outcome to one niche instead of a generic chatbot.
+- WHY: Unsupported claim, and "no longer" presupposes a change the reader never saw.
+
+**24. sections[6].body**
+- FROM: You can project your tax liability using our [self-employment tax calculator](/self-employment-tax/) to avoid surprise year-end balances.
+- TO: Our [self-employment tax calculator](/self-employment-tax/) estimates the bill.
+- WHY: `monotone-rhythm`: sentences 62 to 71 are all 15 words or longer.
+
+**25. sections[6].body**
+- FROM: Under Internal Revenue Service (IRS) regulations,
+- TO: Under [Internal Revenue Service](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) (IRS) rules,
+- WHY: Unlinked first mention.
+
+**26. sections[6].body**
+- FROM: Payments follow statutory deadlines on April 15, June 15, September 15, and January 15 of the following tax year.
+- TO: The due dates are April 15, June 15, September 15 and January 15 of the next year.
+- WHY: Rhythm: sentences 65 to 69 are all within 3 words of each other.
+
+**27. sections[6].body**
+- FROM: Software subscriptions like Make, Zapier, and paid AI development accounts qualify as ordinary and necessary operating expenses when used exclusively for business operations.
+- TO: Subscriptions such as Make, Zapier or a paid AI plan are deductible only if they meet that ordinary-and-necessary test for your business.
+- WHY: "Exclusively" imports the home-office rule into general expenses, and "qualify" overclaims.
+
+**28. sections[6].body**
+- FROM: as your principal place of business.
+- TO: as your principal place of business.\n\nThis is general information, not financial, tax or legal advice.
+- WHY: disclaimer-missing (R2).
+
+**29. faqs[5].answer**
+- FROM: The named workflow-automation tools are n8n, Make, and Zapier.
+- TO: n8n, Make and Zapier are workflow-automation tools, and each has a free way to start: n8n's self-hosted Community Edition, Make's Free plan and Zapier's Free plan. Build one prototype on a free plan before you sell anything to see how much code your workflow needs.
+- WHY: The answer did not address the question (dead end). The replacement uses only listed facts and makes no no-code claim.
+
+**Advisory:**
+- faqs[0] second sentence restates the first (weak, non-blocking).
+- faqs[2] mentions the freelance rate calculator without linking it (fine; it is linked in the body).
+- n8n Pro "€50 per month" omits "billed annually".
+- The step sequence has no example workflow; the chart's examples were not in the fact list, which is correct.
+
+---

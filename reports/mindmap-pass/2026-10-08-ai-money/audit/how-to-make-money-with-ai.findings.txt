@@ -1,0 +1,292 @@
+## Run-level checks (all 4 pages)
+
+**Depth (measured from source):** introText + section bodies + FAQ answers, counted with `wc -w`.
+- how-to-make-money-with-ai: 1,887
+- how-to-make-money-with-claude: 1,753
+- how-to-make-money-with-chatgpt: 1,460
+- ai-automation-agency: 1,526
+- Result: 4 passing, 0 failing, median 1,640 against the 1,200 floor. The median is not within 10% of the floor.
+
+**Checks that passed:**
+- **Load receipt:** `reports/standards-ledger.jsonl` has a mindmap-pass phase-3 `via:load-script` entry at 2026-10-09T14:45. Its hashes (7a486edc / ed445917 / 31d70e56) match `shasum` of the current three files.
+- **Links:** every external URL is in `allowed-urls.all.txt`, every internal link is on the allowed list, no page links to itself, and nothing links to `/youtube-money-calculator/`.
+- **Title Case:** every h1 and section heading passes.
+- **Byline in body:** none.
+- **Em-dash, "honest", exclamation marks, raw HTML:** none. (The `---` strings are table separators.)
+- **Self-serving disclaimer grep:** one hit, Claude `sections[0].body` "provided you do not resell the software". That describes Anthropic's terms, so it is not a neutrality claim. That sentence is still fixed below for a separate reason.
+- **"Secondary — unverified" facts:** none are stated as fact on any page.
+- **Title and meta length:** every title is 60 characters or less and every metaDescription is 160 or less, both as drafted and after the fixes below.
+
+**R1 — Row records missing (GATE Register / GATE Medium-and-row-records / GATE Anchor). NOT FIXABLE IN PLACE; fix it in the chart row, not the draft.**
+- Neither the chart (`reports/mindmap-pass/2026-10-08-ai-money.md`) nor the 4 prompts carry `register:` or an `anchor-exempt:` note.
+- `page type:` and medium (text → text) are present.
+- Fix: add `register: operator` and an `anchor-exempt: no client specifics in _experience.md` note to all 4 rows.
+
+**R2 — `disclaimer-missing` (YMYL).** `src/pages/guides/[slug].astro` renders no disclaimer for guides, and no page has one. Each page gets a per-page fix-in-place below that appends the disclaimer to its final section. Existing guides in `guides.ts` put it in body copy the same way.
+
+**R3 — Unlinked company first mentions with no allowed URL. NOT FIXABLE IN PLACE.**
+- Names: Toloka, Labelbox, Stripe, PayPal (as a payout rail), Payoneer, Tipalti, TikTok, Instagram, YouGov, Business Insider (the AOL link covers its story).
+- The only entity this repo auto-links is Robinhood (`src/lib/richtext.ts`).
+- You need to decide: add these to the registry, or accept them as names that appear next to an already-linked platform.
+
+**R4 — advisory:** each page's `meta.guards` flag says the claim check "emptied" 5 sections. None of those sections is empty, so the guard output is wrong and the claim-check reporting in `scripts/lib/content_gen.py` should be looked at.
+
+**Fix-in-place format:** each fix lists the field, the exact FROM text, the exact TO text, and the reason. Every FROM string was checked with a script and occurs exactly once in its field. `\n` means a JSON newline. `""` means delete.
+
+---
+
+
+ORCHESTRATOR RULINGS: unlinkable organisations (R3) are accepted unlinked; row records are fixed in the chart, not the draft.
+
+## PAGE 1: how-to-make-money-with-ai — VERDICT: FAIL — 1,887 words
+
+**1. title**
+- FROM: How to Make Money With AI: What Actually Pays in 2026
+- TO: How to Make Money With AI in 2026
+- WHY: Headline tell: colon two-clause formula plus "Actually".
+
+**2. h1**
+- FROM: How to Make Money With AI: What Actually Pays, Ranked
+- TO: How to Make Money With AI
+- WHY: Same headline tell.
+
+**3. sections[0].heading**
+- FROM: Ways to Make Money With AI, Ranked by What They Actually Pay
+- TO: AI Money Methods Ranked by Published Pay
+- WHY: "actually" headline tell. The row spec dictated this wording, but the anti-AI standard outranks it.
+
+**4. introText**
+- FROM: Artificial intelligence creates paid work when you sell human labor or technical problem-solving, not push-button passive income.
+- TO: AI can make you money, mostly as paid work where you sell your own labor or technical skill.
+- WHY: "X, not Y" antithesis, and sentence 1 did not directly answer "can AI make you money".
+
+**5. introText (tee-up)**
+- FROM: At ModernWallet, we show the math, name what moves it, and explain the tradeoff.
+- TO: At ModernWallet, we show the math, so every pay figure below comes with its source and the condition attached.
+- WHY: The tee-up is the site tagline verbatim and could sit on any page (bolted-on tee-up and tricolon). The replacement is still licensed by _experience ("we show the math").
+
+**6. introText**
+- FROM: The methods that deliver steady cash require active contract work or specialized workflows.
+- TO: The methods with published pay rates are active work: AI-training contracts, freelancing, and building automations for clients.
+- WHY: "Steady cash" is unsupported, and "specialized workflows" names nothing.
+
+**7. sections[0].body (whole table body; header and separator rows stay)**
+- FROM:
+```
+| AI Training and Annotation | Prompt creation, output evaluation, code review | Starting at $25 to $50+ per hour on DataAnnotation; $15 to $30 entry-level on Mindrift | Days to weeks | Unpaid screening tests, sudden project dry spells, and account deactivations |\n| Freelancing With AI | Writing, coding, workflow building, video editing | Marketplace freelancers using AI earn 34% more per hour on Upwork | Weeks to months | Basic generative AI work saw contract earnings fall 13%; platform service fees reach up to 20% |\n| Selling AI Automations | Multi-app business workflows, custom bots | No independent pricing survey; self-published agency medians list $1,000 per workflow | Months | Software subscription overhead; community licenses prohibit white-labeling or hosting as a service |\n| YouTube and Video Clipping | Faceless videos, short clips for brands | Whop clippers average $1 per 1,000 views; YouTube shares 55% of long-form ad revenue | Months to years | Stricter inauthentic content policies; reaching 4,000 watch hours or view thresholds takes time |\n| Digital Products and Music | E-books, print printables, stock tracks | No standardized floor; Suno requires Pro or Premier for commercial rights | Months | AI-only outputs lack federal copyright protection; marketplace disclosure mandates |
+```
+- TO:
+```
+| AI Training and Annotation | Prompt writing, output evaluation, code review | Starting at $25 to $50+ per hour on [DataAnnotation](https://www.dataannotation.tech/faqs); $15 to $30 entry-level on [Mindrift](https://mindrift.ai/) | Days to weeks | Screening tests that may be unpaid, stretches with no available work, and account deactivations |\n| Freelancing With AI | Writing, coding, workflow building, video editing | Freelancers who do AI work on [Upwork](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates) earn 34% more per hour | Weeks to months | Per-contract earnings for generative AI and creative work fell 13%; marketplace fees run up to 20% |\n| Selling AI Automations | Multi-app business workflows, custom bots | No independent survey; [Aumiqx](https://aumiqx.com/services/ai-automation-agency/)'s self-published median is about $1,000 per workflow | Months | Tool subscriptions; n8n's free Community Edition license bars hosting it as a service for clients or white-labeling it |\n| AI-Assisted YouTube Channels | Faceless long-form videos and Shorts | [YouTube](https://blog.youtube/creator-and-artist-stories/youtube-partner-program-explained/) shares 55% of long-form ad revenue with creators | Months to years | Ad revenue needs 1,000 subscribers plus 4,000 watch hours or 10 million Shorts views; templated AI videos are not monetizable |\n| Clipping Campaigns | Short clips of a brand's content posted on your own accounts | [Whop](https://whop.com/blog/content-rewards/) says clippers average $1 per 1,000 views | Days to weeks | Brands approve each post before paying and cap payouts per video |\n| Digital Products and Music | E-books, printables, AI music | No published figure; [Suno](https://help.suno.com/en/articles/2416769) grants commercial rights only on Pro or Premier | Months | Purely AI-generated work cannot be copyrighted; marketplaces require AI disclosure |\n| AI Influencers and UGC Ads | Sponsored short videos for brands | No published figure; Whop's docs say UGC campaigns typically pay more than clipping | Weeks | Each post needs brand approval, and realistic AI-generated people may need YouTube's AI disclosure label |
+```
+- WHY:
+  - The answer placement specifies 7 rows. The draft merged YouTube with clipping and dropped the AI influencers / UGC row.
+  - DataAnnotation, Mindrift, Upwork, Whop, YouTube and Suno were unlinked on their first mention.
+  - The Aumiqx figure was unattributed.
+  - "Community licenses" overgeneralised n8n's license.
+  - "Stricter" implied an unsupported change.
+  - "Unpaid screening tests" overstated a "not stated" fact.
+  - "No standardized floor" did not match the specified "no published figure".
+
+**8. sections[1].body**
+- FROM: - [DataAnnotation](https://www.dataannotation.tech/faqs) states
+- TO: - DataAnnotation states
+- WHY: First-mention-only rule. The link moves to the table.
+
+**9. sections[1].body**
+- FROM: - [Mindrift](https://mindrift.ai/), operated by Toloka
+- TO: - Mindrift, operated by Toloka
+- WHY: First-mention-only rule. The link moves to the table.
+
+**10. sections[1].body**
+- FROM: The platform notes in other FAQ sections that general work starts at $25 to $30+ and coding spans $50 to $100.
+- TO: DataAnnotation's FAQ gives different figures elsewhere: general work starting at $25 to $30+ and coding from $50 to $100.
+- WHY: Coy abstraction ("The platform").
+
+**11. sections[1].body**
+- FROM: `The trade-offs center on contract stability. ` (includes the trailing space)
+- TO: ""
+- WHY: No concrete noun, and the next sentences already state the risk.
+
+**12. sections[2].body**
+- FROM: Using artificial intelligence in freelance service delivery boosts productivity, but client demand depends entirely on complexity.
+- TO: Freelancing with AI pays more per hour on Upwork, but the premium depends on how complex the work is.
+- WHY: "Boosts productivity" is unsupported and a hype verb. "Depends entirely" overclaims.
+
+**13. sections[2].body**
+- FROM: on the [Upwork](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates) marketplace
+- TO: on the Upwork marketplace
+- WHY: Duplicate link; it now sits in the table.
+
+**14. sections[2].body**
+- FROM: However, market demand is splitting by task complexity. While basic generative AI creative starts surged 90% year over year, per-contract earnings dropped 13%.
+- TO: Contract starts for generative AI and creative production work grew 90% year over year, but per-contract earnings fell 13%.
+- WHY: "Creative starts" does not parse on first read, and the first sentence restated the opener.
+
+**15. sections[2].body**
+- FROM: Marketplace search interest shows where clients seek outside help. In Upwork's In-Demand Skills 2026 report, skills referencing artificial intelligence rose 109% year over year.
+- TO: Upwork's [In-Demand Skills 2026](https://investors.upwork.com/news-releases/news-release-details/upworks-demand-skills-2026-demand-top-ai-skills-more-doubles-ai) report, which measures freelancer earnings on completed jobs, found that skills referencing AI grew 109% year over year.
+- WHY: Factual error: the Upwork data measures earnings, not search interest. The cited source was also unlinked.
+
+**16. sections[2].body**
+- FROM: On [Fiverr](https://www.fiverr.com/news/business-trends-index-ai-2026), buyer searches for Claude Code specialists jumped 938% between late 2025 and early 2026, while searches for n8n automation grew 125%.
+- TO: [Fiverr](https://www.fiverr.com/news/business-trends-index-ai-2026) reported that searches for Claude Code specialists rose 938% from November 2025 to April 2026 compared with the prior six months, and searches for n8n AI automation rose 125%. Those figures count searches, not earnings.
+- WHY: This is an [S] fact, so it must be attributed. The comparison period was misdescribed. The spec requires labelling it as search growth, not earnings.
+
+**17. sections[2].body**
+- FROM: Fiverr retains a flat 20% cut of seller earnings.
+- TO: Fiverr keeps 20% of each purchase amount.
+- WHY: The source says 20% of the purchase amount, not of seller earnings.
+
+**18. sections[3].body**
+- FROM: Local small businesses often pay contractors to connect disconnected software systems.
+- TO: Selling automations means charging a small business to build workflows that pass data between its software tools.
+- WHY: "Often" is unsupported, and "connect disconnected" is garbled.
+
+**19. sections[3].body**
+- FROM: This license permits client setup consulting, but explicitly bars white-labeling or hosting workflow automation as a managed service. Hosted cloud tiers begin at €20 monthly.
+- TO: n8n's [license FAQ](https://docs.n8n.io/n8n-community-license/community-license/license-faq) allows charging clients for workflow setup and consulting, but bars hosting n8n as a service for clients or white-labeling it. n8n Cloud starts at €20 a month billed annually.
+- WHY: [S] fact needs attribution. "Hosting workflow automation" overbroadens the restriction. The "billed annually" condition was missing.
+
+**20. sections[3].body**
+- FROM: followed by paid plans starting at $9 per month for 10,000 operations.
+- TO: followed by Core at $9 a month with 10,000 credits. Make's pricing page does not say whether that price assumes annual billing.
+- WHY: The source says credits, not operations, and the billing basis is unclear on the source.
+
+**21. sections[3].body**
+- FROM: No independent government body or academic institution tracks automation agency client pricing.
+- TO: The only published figures on automation agency pricing come from vendors and agencies with a commercial interest.
+- WHY: The fact list says "found no" such survey; the draft turned that into an absolute claim.
+
+**22. sections[4].heading**
+- FROM: Content Routes: YouTube and Video Clipping
+- TO: YouTube Channels and Clipping Campaigns
+- WHY: Colon two-clause headline tell.
+
+**23. sections[4].body**
+- FROM: Building automated channels requires navigating strict monetization policies and long build times.
+- TO: A YouTube channel earns ad revenue only after it clears YouTube's Partner Program thresholds and its inauthentic-content policy.
+- WHY: "Navigating" is filler, and the original was vague.
+
+**24. sections[4].body**
+- FROM: YouTube's inauthentic content policy explicitly bars generic AI-generated content built on mass-production templates, slideshows with minimal commentary, and synthetic personas offering financial or medical guidance.
+- TO: YouTube's [inauthentic content policy](https://support.google.com/youtube/answer/1311392) does not monetize generic AI videos made from mass-production templates or slideshows with little or no commentary. It also bars AI personas presenting as experts on health, legal or financial topics.
+- WHY: The policy denies monetization; it does not ban the content. The cited source was unlinked, and the sentence was overloaded.
+
+**25. sections[4].body**
+- FROM: Brands establish specific view-rate payouts, often averaging $1 per 1,000 views, along with project caps and review checks. Whop assesses a 10% seller fee on reward payouts.
+- TO: Each brand sets its own rate per 1,000 views, a total budget and a per-video cap, and pays only for posts it approves. Whop's 10% Content Reward Fee is paid by the brand, so it does not come out of a clipper's payout.
+- WHY: The fee was a bare feature with no consequence for the reader, and "often averaging" muddled a single published average.
+
+**26. sections[5].body**
+- FROM: Publishing AI-assisted goods requires compliance with platform disclosures and federal intellectual property rules.
+- TO: Selling AI-generated books, art and music means following each platform's disclosure rules and accepting copyright limits.
+- WHY: Factual error: KDP does not require disclosure for AI-assisted content.
+
+**27. sections[5].body**
+- FROM: On Etsy, AI-crafted items must fit the 'designed by' category with full disclosure, while selling raw prompt bundles is strictly prohibited.
+- TO: AI-assisted content, such as your own writing refined with AI, does not need disclosure on KDP. Etsy's [Creativity Standards](https://www.etsy.com/legal/creativity/) say AI-generated items made from a seller's own prompts belong in the "designed by" category, that sellers must disclose AI use, and that selling AI prompt bundles is prohibited.
+- WHY: Etsy is an [S] fact that must be attributed, and Etsy was unlinked on first mention. "Full disclosure" overstates the rule. The KDP AI-assisted exception is now stated.
+
+**28. sections[5].body**
+- FROM: Under [Suno](https://help.suno.com/en/articles/2416769) terms of service, users retain commercial ownership
+- TO: According to Suno's help center, users retain commercial ownership
+- WHY: The source is a help article, not the terms of service, and the link now sits in the table.
+
+**29. sections[6].body**
+- FROM: Both providers assign user ownership rights to generated outputs subject to platform terms, with neither imposing general commercial-use bans. Crucially, neither platform operates an open consumer revenue-share program. Early tests of GPT Store payouts were restricted to select pilot builders, meaning you cannot rely on chatbot marketplaces for automated royalty checks.
+- TO: [Anthropic's consumer terms](https://www.anthropic.com/legal/consumer-terms) and [OpenAI's terms of use](https://openai.com/policies/terms-of-use/) both assign you their rights in the output, and Anthropic's terms contain no general ban on commercial use. Neither company runs an open revenue-share program for consumers. An FAQ quoted on [OpenAI's community forum](https://community.openai.com/t/what-is-the-status-with-gpt-store-revenue-share/839172) says GPT Store payouts were tested with a small group of U.S. builders and new builders were not being accepted, so do not build a GPT expecting payouts.
+- WHY:
+  - "Crucially" is a banned word, and "neither platform" is a coy abstraction.
+  - The "no commercial-use ban" fact applies to Anthropic only, so it was unsupported for OpenAI.
+  - The GPT Store status is an [S] fact and needs attribution.
+
+**30. sections[7].body**
+- FROM: The Federal Trade Commission (FTC) actively prosecutes fraudulent schemes promising automated wealth. Through enforcement sweeps like Operation AI Comply, the [FTC](https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes) has shut down several prominent business opportunity promoters.
+- TO: The [Federal Trade Commission](https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes) (FTC) has sued several sellers of AI-powered business opportunities over earnings claims it says were false. Its Operation AI Comply sweep, announced in September 2024, covered five actions at once.
+- WHY:
+  - "Shut down" presents proposed orders as final.
+  - These are civil cases, so "prosecutes" is wrong.
+  - "Prominent" is filler.
+  - The first mention of the FTC was unlinked.
+
+**31. sections[7].body**
+- FROM: Federal court records document extensive consumer harm in passive income schemes:
+- TO: The FTC's complaints allege large losses:
+- WHY: The sources are FTC allegations, not court findings.
+
+**32. sections[7].body**
+- FROM: - Ascend Ecom allegedly defrauded consumers of at least $25 million by promising automated storefronts generating five-figure monthly returns, resulting in a proposed lifetime industry ban.
+- TO: - [Ascend Ecom](https://www.ftc.gov/news-events/news/press-releases/2025/06/ftc-case-leads-order-banning-ascend-ecom-its-owners-business-opportunity-marketing) allegedly cost consumers at least $25 million by promising AI-powered stores with "five-figure monthly income by the second year." A proposed order would permanently ban its owners from selling business opportunities.
+- WHY: "Lifetime industry ban" misstates the order's scope. The first mention was unlinked.
+
+**33. sections[7].body**
+- FROM: - FBA Machine cost consumers over $15.9 million through deceptive claims of automated seven-figure storefronts, resulting in a proposed $15.7 million judgment.
+- TO: - [FBA Machine](https://www.ftc.gov/news-events/news/press-releases/2025/07/ftc-obtains-permanent-ban-e-commerce-business-opportunity-scheme-operator) allegedly cost consumers more than $15.9 million with "7-figure business" claims, and a proposed order carries a $15.7 million judgment, partially suspended.
+- WHY: The loss figure is an allegation but was stated as fact. The first mention was unlinked.
+
+**34. sections[7].body**
+- FROM: - Click Profit generated over $14 million in losses by pitching passive Amazon and TikTok stores, despite roughly 95% of client stores facing platform bans.
+- TO: - [Click Profit](https://www.ftc.gov/news-events/news/press-releases/2025/03/ftc-acts-stop-click-profit-online-business-opportunity-has-cost-consumers-least-14-million) allegedly cost consumers at least $14 million selling "passive income" stores on Amazon, Walmart and TikTok, and the FTC says about 95% of those stores were blocked, suspended or terminated by Amazon.
+- WHY: Allegations were stated as fact. "Despite" was illogical. Walmart was missing. The first mention was unlinked.
+
+**35. sections[7].body**
+- FROM: - Air AI faced enforcement over claims that buyers would recoup tens of thousands of dollars within days or months.
+- TO: - [Air AI](https://www.ftc.gov/news-events/news/press-releases/2025/08/ftc-sues-stop-air-ai-using-deceptive-claims-about-business-growth-earnings-potential-refund) was sued in August 2025 over claims that buyers would earn back "tens of thousands of dollars in a matter of days or months."
+- WHY: First mention was unlinked, and this uses the exact quoted claim.
+
+**36. sections[7].body**
+- FROM: Under the FTC Business Opportunity Rule (16 CFR Part 437), any business opportunity seller making earnings representations must provide a formal written earnings claim statement disclosing historical success rates.
+- TO: Under the FTC's [Business Opportunity Rule](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-437) (16 CFR Part 437), a seller who makes an earnings claim must have written substantiation and give buyers an earnings claim statement showing the number and percentage of buyers who reached those earnings.
+- WHY: "Historical success rates" is inaccurate, and the [S] source was unlinked.
+
+**37. sections[7].body**
+- FROM: guaranteed daily returns as a scam.
+- TO: guaranteed daily returns as a scam, and report it at ReportFraud.ftc.gov.
+- WHY: Dead end; the reader now has somewhere to go.
+
+**38. sections[8].body**
+- FROM: is treated as taxable self-employment income by the Internal Revenue Service (IRS).
+- TO: is treated as taxable self-employment income by the [Internal Revenue Service](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) (IRS).
+- WHY: Unlinked first mention.
+
+**39. sections[8].body**
+- FROM: to calculate quarterly payments.
+- TO: to calculate quarterly payments.\n\nThis is general information, not financial, tax or legal advice.
+- WHY: disclaimer-missing (R2).
+
+**40. faqs[0].answer**
+- FROM: Unsupervised passive income systems rarely generate stable returns.
+- TO: Pitches for passive AI income match the claims the FTC has sued over in its AI business-opportunity cases.
+- WHY: Unsupported claim; the replacement is sourced.
+
+**41. faqs[1].answer**
+- FROM: The right tool depends entirely on your target service. ChatGPT Plus and Claude Pro assign commercial rights for generated text, code, and project analysis.
+- TO: The paid task matters more than the tool. Anthropic's and OpenAI's terms both assign you their rights in what Claude and ChatGPT produce.
+- WHY: Hedged non-conclusion. Output rights come from the terms, not from the Plus or Pro plans.
+
+**42. faqs[2].answer**
+- FROM: The FTC has shut down operations like Ascend Ecom and Click Profit for making unsubstantiated automated earnings claims that resulted in millions of dollars in consumer losses.
+- TO: The FTC has sued sellers such as Ascend Ecom and Click Profit over passive-income claims, alleging consumer losses of at least $25 million and $14 million.
+- WHY: Ascend Ecom's order is proposed, and "shut down" described it as final.
+
+**43. faqs[3].answer**
+- FROM: Contractors take screening tests to evaluate model responses, audit factual claims, and review code.
+- TO: After passing a screening assessment, contractors evaluate model responses, flag factual errors, and review code.
+- WHY: First-read failure: screening tests are not how contractors evaluate responses.
+
+**44. faqs[4].answer**
+- FROM: Entry-level microtask platforms like Prolific pay participants a minimum of $8 per hour for surveys and evaluations.
+- TO: Prolific requires researchers to pay study participants at least $8 an hour.
+- WHY: "Evaluations" implies an AI-tasker rate, and Prolific publishes none.
+
+**Advisory:**
+- FAQ question "Can AI actually make you money?" keeps "actually". It is verbatim PAA, which the reader-question gate requires, so it is left in place.
+- Semicolons inside table cells are acceptable.
+- Handshake "with graduate degrees": the source says most roles, not all. Consider "most roles require a master's, PhD or postdoc".
+- Plan prices in sections[6] lack "as of October 2026".
+- metaDescription opens with "A grounded look at" (filler, non-blocking).
+- Reader-question gate passes: the section 1 table delivers the ranked answer.
+
+---
+

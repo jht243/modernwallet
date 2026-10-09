@@ -1,0 +1,228 @@
+{
+ "slug": "dataannotation-alternatives",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": true,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2760,
+ "floor": 1500,
+ "input_tokens": 36503,
+ "output_tokens": 5968,
+ "thinking_tokens": null,
+ "cached_tokens": 18924,
+ "est_cost_usd": 0.037,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2760,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 3695,
+   "floor": 1500,
+   "ratio": 2.46,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    12,
+    12,
+    0
+   ],
+   "applied": [
+    {
+     "id": "options[1].bestFor",
+     "quote": "Credentialed domain experts seeking high hourly rates",
+     "replacement": "Credentialed domain experts seeking specialized hourly rates",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Mercor rates as high."
+    },
+    {
+     "id": "options[2].description",
+     "quote": "The platform evaluates applicants through skill assessments covering language, writing, or specialized technical fields.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Alignerr's screening or evaluation procedures."
+    },
+    {
+     "id": "options[2].limitations[2]",
+     "quote": "Applicants must pass specialized screening tests before receiving access to tasks",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Alignerr requires specialized screening tests."
+    },
+    {
+     "id": "options[3].strengths[2]",
+     "quote": "Publishes high domain-expert rates ranging from $60 to $100+ per hour",
+     "replacement": "Publishes domain-expert rates ranging from $60 to $100+ per hour",
+     "type": "unsupported",
+     "why": "SOURCE does not characterize these rates as high."
+    },
+    {
+     "id": "options[4].strengths[0]",
+     "quote": "Publishes high hourly fellowship rates ranging from $30 to $125 per hour",
+     "replacement": "Publishes hourly fellowship rates ranging from $30 to $125 per hour",
+     "type": "unsupported",
+     "why": "SOURCE does not characterize these rates as high."
+    },
+    {
+     "id": "comparisonTable.rows[2].values[3]",
+     "quote": "Skill screenings",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state Alignerr's entry requirements."
+    },
+    {
+     "id": "verdict",
+     "quote": "Check current task availability before investing hours into unpaid onboarding assessments.",
+     "replacement": "Check current task availability before investing hours into onboarding assessments.",
+     "type": "unsupported",
+     "why": "SOURCE does not state whether assessments are unpaid."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Outlier requires an associate degree and assigns conversational evaluation and prompt generation tasks.",
+     "replacement": "Outlier requires an associate degree and assigns prompt generation and model response tasks.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Outlier tasks as conversational evaluation."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "These schemes frequently direct applicants to reply by text, participate in fake-check overpayment traps, or complete small initial tasks before demanding cryptocurrency or cash deposits to unlock additional work.",
+     "replacement": "These schemes frequently direct applicants to reply by text, participate in fake-check traps, or complete small initial tasks before demanding deposits of your own money to unlock additional work.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention cryptocurrency."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Anyone asking you to pay for identity verification, onboarding software, or task clearance is operating an unauthorized scheme.",
+     "replacement": "Anyone asking you to pay to get a job or get paid is operating a scam.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention fees for onboarding software or task clearance."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Platforms report non-employee compensation using Form 1099.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state tax-form reporting policies for all platforms."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Operating across multiple services helps mitigate empty task queues, though you must never reuse proprietary task materials between competing platforms.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention reusing proprietary task materials between platforms."
+    },
+    {
+     "id": "options[1].description",
+     "quote": "Payouts process through Stripe Connect or Wise into a personal bank account denominated in USD.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE states contracts are denominated in USD, not the bank account."
+    },
+    {
+     "id": "options[2].bestFor",
+     "quote": "Contributors seeking advertised weekly pay for language and technical projects",
+     "replacement": "Contributors seeking advertised weekly pay across listed roles",
+     "type": "unsupported",
+     "why": "SOURCE does not mention technical projects for Alignerr."
+    },
+    {
+     "id": "options[2].description",
+     "quote": "Individual roles listed on its site range from $30 to $35 per hour for Japanese language specialists up to $40 to $120 per hour for technical domain tasks.",
+     "replacement": "Individual roles listed on its site range from $30 to $35 per hour for Japanese language specialists up to $40 to $120 per hour.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the $40 to $120 roles as technical domain tasks."
+    },
+    {
+     "id": "options[2].description",
+     "quote": "However, separate job postings on Greenhouse for United States candidates list lower hourly pay ranges starting between $25 and $38 per hour depending on qualifications.",
+     "replacement": "However, one Greenhouse posting for United States candidates listed $25 to $38 per hour depending on skills and location.",
+     "type": "unsupported",
+     "why": "SOURCE lists only one Greenhouse posting, not separate job postings."
+    },
+    {
+     "id": "options[5].description",
+     "quote": "Prolific is an online research platform that connects study participants and AI taskers with academic researchers and commercial labs.",
+     "replacement": "Prolific is an online research platform that connects study participants and AI taskers with researchers.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention commercial labs."
+    },
+    {
+     "id": "options[5].description",
+     "quote": "Earnings depend entirely on researcher study availability and successful completion of study requirements.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this dependency."
+    },
+    {
+     "id": "options[5].description",
+     "quote": "Because Prolific operates on a per-study submission model, task volume fluctuates based on demographic eligibility and current research demands.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention demographic eligibility or research demands."
+    },
+    {
+     "id": "options[5].strengths[3]",
+     "quote": "Provides established academic research tasks alongside artificial intelligence evaluation",
+     "replacement": "Connects participants with researchers alongside an AI tasker program",
+     "type": "unsupported",
+     "why": "SOURCE does not describe tasks as established academic research tasks."
+    },
+    {
+     "id": "options[5].limitations[3]",
+     "quote": "Study access depends on researcher demographic criteria rather than continuous queues",
+     "replacement": "Does not publish a country list or pay rate on its AI Taskers page",
+     "type": "unsupported",
+     "why": "SOURCE does not mention demographic criteria or continuous queues."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Alignerr advertises technical and language roles spanning $30 to $120 per hour.",
+     "replacement": "Alignerr lists roles on its website ranging from $30 to $120 per hour.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Alignerr's roles as technical and language roles."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Payment processors like PayPal may issue separate Form 1099-K documentation depending on applicable transaction thresholds.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE contains no facts about Form 1099-K or payment processor reporting thresholds."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Because independent contractors face quarterly estimated tax deadlines, tracking your gross receipts and business expenses from your first payout is essential.",
+     "replacement": "Tracking your gross receipts and business expenses from your first payout is essential.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention quarterly estimated tax deadlines."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2899
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 339.0,
+ "response_id": "8gvJasbQKc-zqtsPvvve2QU",
+ "generated_at": "2026-10-09T10:49:42-0500"
+}

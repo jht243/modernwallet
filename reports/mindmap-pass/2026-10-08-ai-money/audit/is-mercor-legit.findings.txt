@@ -1,0 +1,101 @@
+## RUN-LEVEL HARD FAILS (chart records; not page text)
+
+**R1. GATE Medium/row records and GATE Register.** The chart rows in `reports/mindmap-pass/2026-10-08-ai-money.md` for all 4 slugs have no `register:` record. `page type` and `medium` (text → text) are present.
+- Fix (orchestrator, chart edit): add `register: operator` to all 4 rows. All 4 pages are already written in operator "you" voice.
+
+**R2. GATE Anchor and GATE Tee-up.** No row carries `anchor-exempt:` or `teeup-exempt:`.
+- Fix (chart): add `anchor-exempt: content property, editorial "we" only (_experience.md SPECIFICS)` to all 4 rows.
+- Add `teeup-exempt: API page, claim check removed the "At ModernWallet" sentence` to ai-training-jobs and is-mercor-legit, which have no tee-up.
+- On DataAnnotation and Outlier the tee-up is in the wrong position (sentence 3); the page fixes below move it.
+
+**R3. GATE Links: NOT FIXABLE IN PLACE under the closed URL list.**
+- These organisations are named on the pages, but the allowed list has no first-party URL for them, so their first mention cannot be linked: Scale AI, Labelbox, Toloka, Stryder Corp., PayPal, Airtm, Stripe, Wise, Payoneer, Tipalti, Persona, Meta, Upwork, HireArt, Felicis, Benchmark, General Catalyst, LiteLLM, Wired, The Verge, New York Magazine.
+- Every organisation that does have an allowed URL is linked at first mention by the fixes below.
+- The orchestrator has to choose: add official URLs to `allowed-urls.all.txt` and splice the links, or accept this as a known exception for the run. I have not counted it toward any page's verdict.
+
+---
+
+
+ORCHESTRATOR RULINGS: unlinkable organisations (R3) are accepted unlinked; row records are fixed in the chart, not the draft.
+
+## 4. is-mercor-legit (review, floor 1,500). VERDICT: FAIL, fix-in-place (21)
+
+Checks that pass:
+- No CBS $105/$50 figures.
+- The $70–110 listing is labelled as a single listing.
+- The 1099 section notes the IRS $2,000 threshold.
+- No invented AI-interview or cheating-detection claims.
+
+New finding: sections[0] names "Robinhood Ventures". `richBody` → `linkify` auto-links every bare "Robinhood" in section bodies to the sponsored Robinhood referral URL. That puts an affiliate link on a Mercor investor mention. Fixed in #5.
+
+1. **title** `"Is Mercor Legit? Pay, Risks, and Review (2026)"` and **h1** `"Is Mercor Legit? Pay, Risks, and Contractor Review"` → both `"Is Mercor Legit and Is It Worth Applying?"` (41 chars).
+   - Why: headline tricolon. The new title matches the reader question.
+2. **introText**: `"Mercor is a legitimate, venture-backed marketplace"` → `"[Mercor](https://talent.docs.mercor.com/how-to/payments) is a legitimate, venture-backed marketplace"`
+   - Why: unlinked first mention.
+3. **introText**:
+   - Quote: `"Backed by a $350 million Series C round at a $10 billion valuation, the company pays contractors weekly via Stripe Connect or Wise, with rates reported by TechCrunch to average over $85 per hour. The platform is not a scam, but it carries distinct operational risks: contracts depend on fluctuating client projects that can end or reset at lower rates, and a spring 2026 cybersecurity breach resulted in multiple class-action lawsuits."`
+   - Replacement: `"Mercor raised a $350 million Series C at a $10 billion valuation, and it pays contractors weekly via Stripe Connect or Wise. [TechCrunch](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/) reported that Mercor's experts average over $85 per hour. Mercor is not a scam, but it carries two risks. Projects can end or be re-priced lower, and a data breach in late March 2026 drew eight class-action lawsuits from contractors."`
+   - Why: coy-abstraction ×2; overloaded 34- and 37-word sentences; TechCrunch's first mention unlinked.
+4. **introText**: `"\n\n If you have advanced credentials in law, medicine, or science, Mercor offers genuine high-hourly projects. However, treating the platform as stable full-time employment carries risk because project contracts can end or be re-priced."` → `"\n\nIf you have advanced credentials in law, medicine, or science, Mercor's hourly projects are worth applying for as supplemental income. They are a poor fit if you need guaranteed weekly hours."`
+   - Why: restates paragraph 1, coy-abstraction, stray leading space. The replacement answers "worth applying?" and states who it is not for.
+5. **sections[0].body**: `"The business raised a $350 million Series C funding round at a $10 billion valuation led by Felicis, with participation from Benchmark, General Catalyst, and Robinhood Ventures, as reported by [TechCrunch](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/)."` → `"Felicis led its $350 million Series C, with Benchmark and General Catalyst also investing, according to TechCrunch."`
+   - Why: the "Robinhood" auto-link would insert a sponsored referral link; the sentence was overloaded; this was a repeat link once #3 is applied.
+6. **sections[0].body**:
+   - Quote: `"Working on Mercor involves significant freelance friction that every applicant should consider. First, work is organized around discrete client projects rather than permanent employment. Contracts are project-length arrangements that can end or be re-priced. Second, Mercor experienced a data breach in late March 2026 linked to a LiteLLM supply-chain attack, which exposed contractor information and triggered at least eight federal class-action lawsuits. The company delivers real weekly payments for completed work, but contractors should treat it as variable project income rather than dependable primary wages."`
+   - Replacement: `"Mercor's work comes in client projects that can end or be re-priced. [Business Insider reported](https://www.aol.com/articles/ai-startup-powering-meta-openai-230627434.html) that a follow-on Meta project paid $16 per hour, and Mercor called that report inaccurate. Mercor also had a data breach in late March 2026 linked to a LiteLLM supply-chain attack. Contractors then filed eight federal class actions alleging their data was exposed. Mercor pays weekly for completed work, so treat it as variable project income instead of a dependable primary wage."`
+   - Why:
+     - Banned word "significant".
+     - The original restates itself.
+     - "Exposed contractor information" is stated as fact, but the suits only allege it.
+     - The row's verdict requires the $16/hr Business Insider report and Mercor's denial in section 1.
+     - Coy-abstraction.
+7. **sections[1].body** (also absorbs the deleted section, see #8):
+   - Quote: `"Mercor operates as an AI-talent marketplace that connects AI labs with domain experts to train models. Mercor connects AI labs with domain experts, including lawyers, doctors, scientists, and journalists. AI developers hire these subject-matter experts to train models in specialized fields."`
+   - Replacement: `"Mercor connects AI labs with domain experts, such as scientists, doctors, and lawyers, who train models in their own fields. One Mercor listing also recruited news analysts, reporters, and journalists. Mercor screens applicants before matching them with client projects, and its interview format is not described on the Mercor pages we reviewed."`
+   - Why: restatement ×2. The journalists claim is properly scoped to the single listing.
+8. **sections[5]** (heading `"The Mercor Screening and Interview Process"` + body `"Mercor screens candidates before matching them with client projects. \n\n Its interview format is not described on the documentation pages we reviewed."`) → delete the whole section element. Its content moves into sections[1] (#7).
+   - Why: formatting slop (a header over a two-sentence section) and a backward pronoun across paragraphs.
+9. **sections[2].body**: `"Business Insider reported through [syndication](https://www.aol.com/articles/ai-startup-powering-meta-openai-230627434.html) that"` → `"Business Insider reported through AOL syndication that"`
+   - Why: repeat link after #6.
+10. **sections[3].body** (two edits):
+    - `"According to official [Mercor payment documentation](https://talent.docs.mercor.com/how-to/payments), hourly"` → `"According to Mercor's payment documentation, hourly"`. Why: repeat link after #2.
+    - `"\n\n Tracking these deposits against your core living costs is easier when you plan around weekly cycles using our [budget calculator](/budget/)."` → `"\n\nOur [budget calculator](/budget/) lets you plan living costs around a weekly pay cycle."`. Why: nominalization and a stray leading space.
+11. **sections[3].body**: `"denominated strictly in United States dollars (USD)."` → `"denominated strictly in United States dollars (USD), so your pay rate is fixed in dollars whatever currency your bank uses."`
+    - Why: bare-feature with no consequence for the reader.
+12. **sections[4].body**: `"Mercor classifies all its contributors as independent contractors, not formal employees. Under [Mercor US tax policies](https://talent.docs.mercor.com/policies/us-taxes), the company does not withhold federal, state, or payroll taxes from your earnings."` → `"Mercor treats its contributors as independent contractors. Under [Mercor's US tax policy](https://talent.docs.mercor.com/policies/us-taxes), Mercor does not deduct taxes from your payments."`
+    - Why: "X, not Y" antithesis; coy-abstraction; the source says "does not deduct taxes" without listing federal, state and payroll.
+13. **sections[4].body**: `"If you expect to owe at least $1,000 in federal tax, you must submit quarterly estimated tax payments using Form 1040-ES on four annual deadlines: April 15, June 15, September 15, and January 15 of the following year."` → `"If you expect to owe at least $1,000, you generally must make quarterly estimated tax payments using Form 1040-ES. The [IRS deadlines](https://www.irs.gov/faqs/estimated-tax) are April 15, June 15, September 15, and January 15 of the following year."`
+    - Why: overloaded 38-word sentence, and the IRS rule is "generally required" (safe harbor applies).
+14. **sections[4].body**: `"To determine the exact portion of each paycheck you should reserve for tax season, reference our detailed breakdown of"` → `"To estimate how much of each payout to set aside for taxes, read our breakdown of"`
+    - Why: "exact" overclaims, and a contractor gets payouts, not a paycheck.
+15. **sections[6].heading**: `"Security Breaches, Lawsuits, and Platform Risks"` → `"Mercor's Data Breach and Lawsuits"`
+    - Why: headline tricolon and a vague noun.
+16. **sections[6].body**: `"While Mercor is a legitimate commercial entity, working on the platform involves notable legal and data security considerations. Contractors must evaluate three primary risks before submitting personal identity data.\n\nFirst, the platform suffered a significant cybersecurity breach in late March 2026."` → `"Mercor carries legal and data-security risks to weigh before you upload identity documents.\n\nMercor suffered a data breach in late March 2026."`
+    - Why: banned words "notable" and "significant"; coy-abstraction; throat-clearing; the First/Second/Third paragraph structure is formatting slop (see #18).
+17. **sections[6].body** (lawsuit list):
+    - Quote: `"The breach led to at least eight federal class-action lawsuits filed by affected contractors, including *Esson v. Mercor.io* (Case No. 3:26-cv-02839) in the Northern District of California, accessible via [CourtListener](https://www.courtlistener.com/docket/73131170/esson-v-mercorio-corporation/), alongside filings by Deboni, Gill, Lofton, Massman, Ramos, Ananthula, and White."`
+    - Replacement: `"Contractors then filed eight federal class actions, including *Esson v. Mercor.io* (Case No. 3:26-cv-02839) in the Northern District of California, which is on [CourtListener](https://www.courtlistener.com/docket/73131170/esson-v-mercorio-corporation/). The others were brought by plaintiffs named Deboni, Gill, Lofton, Massman, Ramos, Ananthula, and White, and CourtListener shows the Gill, Lofton, and Massman cases terminated on May 20, 2026. If you uploaded documents to Mercor before April 2026, follow the Esson docket for updates."`
+    - Why: overloaded 45-word sentence; omits the sourced May 20 terminations; dead-end with no next step for affected readers.
+18. **sections[6].body** (two edits):
+    - `"Second, Mercor faces intellectual property litigation from competitors. In September 2025"` → `"Mercor also faces a trade-secret suit from a competitor. In September 2025"`
+    - `"Third, public customer sentiment data remains thin. The Mercor profile on [Trustpilot](https://www.trustpilot.com/review/mercor.com) holds only 5 reviews with a 2.5 TrustScore as of October 2026. Five reviews represent an insufficient sample size to establish a definitive statistical pattern of contributor satisfaction."` → `"Worker reviews give little to go on. Mercor's [Trustpilot](https://www.trustpilot.com/review/mercor.com) profile holds only 5 reviews with a 2.5 TrustScore as of October 2026, too few to show a pattern."`
+    - Why: First/Second/Third parallel paragraphs; "competitors" plural is wrong (there is one); the closing sentence restates the one before and fails say-it-out-loud.
+19. **sections[7].body** (three edits):
+    - `"published consumer alerts regarding remote job scams, noting that"` → `"published an April 30, 2026 consumer alert noting that"`. Why: there is one sourced alert, not several.
+    - `"emphasizes that legitimate businesses never charge onboarding fees, never demand payment for training modules, and never conduct overpayment check schemes."` → `"says legitimate employers don't charge you to get a job, and it warns about fake-check overpayment schemes."`. Why: "training modules" is unsupported, and the triple "never" is parallel-list padding.
+    - `"Apply to Mercor solely through verified company domains such as mercor.com. If an individual contacts you on an encrypted messaging app claiming to offer an unlisted Mercor contract, asks for an upfront equipment deposit, or sends an unverified cashier's check, cease contact and report the incident at ReportFraud.ftc.gov."` → `"Mercor's own job listings sit on work.mercor.com, so apply through that site. If someone on WhatsApp or Telegram offers you Mercor work and then asks you to deposit money or sends you a check, stop replying and report it at ReportFraud.ftc.gov."`. Why: "equipment deposit" and "cashier's check" are invented, and the sentence was overloaded (37 words).
+20. **sections[8].body**: `"before relying on freelance platform revenue as primary household income."` → `"before relying on freelance platform revenue as primary household income. Mercor is not for you if you need guaranteed weekly hours or lack domain credentials. Our verdict would change if Mercor published a rate card or a minimum project length, or if the breach lawsuits ended in findings against it."`
+    - Why: required page elements ("who this is not for" in the body, "what would change our answer") were missing.
+21. **FAQ answers**:
+    - faqs[0]: `"the company faced class-action litigation following a spring 2026 data breach."` → `"contractors filed class actions against Mercor after a March 2026 data breach."` Why: coy-abstraction.
+    - faqs[1]: `"on the platform."` → `"on Mercor."` Why: coy-abstraction.
+    - faqs[2]: `"such as the Nova assignment reported at $16 per hour."` → `"such as the Nova assignment Business Insider reported at $16 per hour, a report Mercor called inaccurate."` Why: adds the attribution and Mercor's denial.
+    - faqs[3]: `"Payments are denominated in United States dollars and issued automatically via Stripe Connect or Wise depending on your geographic region."` → `"Payments are in US dollars. Mercor assigns Stripe Connect or Wise based on your region."` Why: breaks the FAQ `monotone-rhythm` run (10 consecutive long sentences, lengths 17 to 26).
+    - faqs[5]: `"The breach exposed contractor Social Security numbers, home addresses, and interview recordings, prompting at least eight federal class-action lawsuits in California and Texas, as well as reporting that Meta paused active work with the platform."` → `"Contractors then filed eight federal class actions in California and Texas alleging exposure of Social Security numbers, addresses, and interview recordings. HR Dive, citing Wired, reported that Meta paused work with Mercor after the breach."` Why: alleged exposure stated as fact, overloaded sentence, coy-abstraction.
+
+Advisory:
+- The reader question is about the AI interview, and the fact list has nothing to answer it. The page now says so in one sentence. To cover the PAA interview questions, the fact list needs expanding (Rung 2 material), not an invented answer.
+- Unlinked organisations with no allowed URL: Stripe, Wise, Felicis, Benchmark, General Catalyst, LiteLLM, Meta, Wired (see R3).
+- The metaDescription (157 chars) is fine.
+
+---

@@ -1,0 +1,382 @@
+{
+ "slug": "is-dataannotation-legit",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1776,
+ "floor": 1500,
+ "input_tokens": 32532,
+ "output_tokens": 3836,
+ "thinking_tokens": null,
+ "cached_tokens": 17751,
+ "est_cost_usd": 0.0268,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1768,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 4404,
+   "floor": 1500,
+   "ratio": 2.94,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    11,
+    1
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we evaluate gig platforms so workers know what to expect before spending hours on unpaid screening exams.",
+     "replacement": "At ModernWallet, we evaluate gig platforms so workers know what to expect before taking screening exams.",
+     "type": "unsupported",
+     "why": "SOURCE states whether assessments are paid is not stated."
+    },
+    {
+     "id": "introText",
+     "quote": "While the company is real, thousands of applicants run into steep practical hurdles.",
+     "replacement": "While the company is real, applicants run into steep practical hurdles.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that thousands of applicants face hurdles."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "However, the site contains conflicting figures across different answers, creating minor confusion for new applicants.",
+     "replacement": "However, the site contains conflicting figures across different answers.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that conflicting figures create confusion for applicants."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Multilingual fluency; English fluency",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not list specific requirements for multilingual projects."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Software development skills",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not list requirements for coding projects."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The application process begins with identity verification followed by an intensive written screening.",
+     "replacement": "The onboarding process includes identity verification and a Starter Assessment.",
+     "type": "unsupported",
+     "why": "SOURCE does not state the screening order or call it an intensive written screening."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Identity verification runs through Persona using a government-issued photo ID and a live selfie.",
+     "replacement": "Identity verification runs through Persona using a government-issued photo ID and a selfie.",
+     "type": "unsupported",
+     "why": "SOURCE states verification uses a selfie, not specified as live."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Earnings accumulate per completed task and transfer directly through PayPal.",
+     "replacement": "Earnings transfer directly through PayPal.",
+     "type": "unsupported",
+     "why": "SOURCE lists hourly rates for DataAnnotation, not pay per completed task."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Unlike traditional payroll services, the company does not offer automated direct deposit to bank accounts or paper checks.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention traditional payroll services, direct deposit, or paper checks."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Because remote AI training is popular, scammers frequently impersonate brand names to steal personal information or collect upfront payments.",
+     "replacement": "Scammers frequently impersonate online job platforms to steal personal information or collect upfront payments.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that remote AI training is popular or why scammers impersonate brands."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "If you pass the assessment, set aside 25 to 30 percent of every PayPal withdrawal for quarterly taxes immediately.",
+     "replacement": "If you pass the assessment, set aside funds from every PayPal withdrawal for quarterly estimated taxes.",
+     "type": "unsupported",
+     "why": "SOURCE does not state a recommended 25 to 30 percent tax set-aside rate."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [
+    {
+     "quote": "Outlier faced independent contractor wage litigation culminating in a preliminary $12.5 million settlement in McKinney v. Scale AI, according to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement).",
+     "type": "unsupported",
+     "why": "SOURCE states settlement is not yet final-approved; word 'preliminary' is not in SOURCE.",
+     "replacement": "Outlier faced independent contractor wage litigation involving a proposed $12.5 million settlement in McKinney v. Scale AI that is not yet final-approved, according to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement).",
+     "id": "sections[7].body",
+     "reason": "delete pass: quote spans several sentences; left for the auditor"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "sections[7].body",
+     "quote": "Outlier faced independent contractor wage litigation culminating in a preliminary $12.5 million settlement in McKinney v. Scale AI, according to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement).",
+     "type": "unsupported",
+     "reason": "delete pass: quote spans several sentences; left for the auditor"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1817
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-09T10:39:58-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-08-ai-money/audit/is-dataannotation-legit.findings.txt",
+    "applied": [
+     {
+      "id": "title",
+      "quote": "Is DataAnnotation Legit? Real Pay Rates and Worker Risks",
+      "replacement": "Is DataAnnotation Legit and Does It Pay Contractors?",
+      "type": "headline tell",
+      "why": "Removes question spliced to second promise and unsourced 'Real'."
+     },
+     {
+      "id": "h1",
+      "quote": "Is DataAnnotation Legit? Real Pay Rates and Worker Risks",
+      "replacement": "Is DataAnnotation Legit and Does It Pay Contractors?",
+      "type": "headline tell",
+      "why": "Removes question spliced to second promise and unsourced 'Real'."
+     },
+     {
+      "id": "introText",
+      "quote": "DataAnnotation is a legitimate contractor platform that pays contributors through PayPal to train artificial intelligence (AI) models. Its published pay rates range from $20 to more than $150 per hour depending on the project tier, and its site reports paying over $20 million to contractors since 2020. At ModernWallet, we evaluate gig platforms so workers know what to expect before taking screening exams.",
+      "replacement": "[DataAnnotation](https://www.dataannotation.tech/faqs) is a legitimate contractor platform that pays contributors through PayPal to train artificial intelligence (AI) models. At ModernWallet, we evaluate gig platforms so workers know what to expect before taking screening exams. DataAnnotation's published pay rates range from $20 to more than $150 per hour depending on the project tier, and its FAQ reports paying over $20 million to contractors since 2020.",
+      "type": "tee-up placement and unlinked first mention",
+      "why": "Moves tee-up to sentence 2 and links DataAnnotation at first mention."
+     },
+     {
+      "id": "introText",
+      "quote": "While the company is real, applicants run into steep practical hurdles. The platform allows only one attempt on its Starter Assessment, leaves rejected applicants with no status reply, and provides highly variable project volume even to active workers. Understanding these mechanics prevents lost time and helps you decide whether to pursue work on the platform.",
+      "replacement": "The hurdles are practical. DataAnnotation allows only one attempt at its Starter Assessment, and its FAQ says it cannot reply to every applicant. Reviewers on [Trustpilot](https://www.trustpilot.com/review/dataannotation.tech) also report long stretches with no available work, even after they are accepted.",
+      "type": "coy-abstraction, unlinked source, Trustpilot theme as fact",
+      "why": "Attributes review theme, removes filler closing sentence, and links Trustpilot at first mention."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "DataAnnotation is a legitimate business, but it operates as a selective contractor marketplace rather than steady employment. Contractors complete",
+      "replacement": "DataAnnotation is a legitimate business that pays contractors through PayPal, with general projects listed at \"Starting at $25-$50+ per hour\" and coding at $40 to $150 or more. The risks are a one-attempt Starter Assessment that may get no reply, uneven work volume, and fake recruiters using the DataAnnotation name. Contractors complete",
+      "type": "verdict placement missing pay and risks",
+      "why": "Supplies upfront extractable verdict covering pay, PayPal, and risks per row specifications."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "The [DataAnnotation FAQs](https://www.dataannotation.tech/faqs) state that the company connects",
+      "replacement": "The DataAnnotation FAQ states that DataAnnotation connects",
+      "type": "repeat link and coy-abstraction",
+      "why": "Removes repeat URL link and robotic phrasing."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "In the Pay section of the platform's documentation, base pay starts at $20 to $50 or more per hour. However, the site contains conflicting figures across different answers.",
+      "replacement": "In the Pay section of the DataAnnotation FAQ, starting rates run from $20 or more per hour for multilingual projects to $40 to $150 or more for coding.",
+      "type": "inaccurate tier figures and restatement",
+      "why": "Accurately states starting rates across tiers and eliminates redundant restatement."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Take note of internal inconsistencies in the platform's self-reported pay figures. While the dedicated Pay section lists general projects at starting at $25 to $50 or more per hour, other FAQ answers claim general projects start at $25 to $30 or more.",
+      "replacement": "The DataAnnotation FAQ contradicts its own Pay section. The Pay section lists general projects at $25 to $50 or more per hour, while other FAQ answers say general projects start at $25 to $30 or more.",
+      "type": "coy-abstraction and garbled syntax",
+      "why": "Clarifies conflicting FAQ numbers and removes wordy abstraction."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "whereas the main pay table states $40 to $150 or more per hour.",
+      "replacement": "whereas the main pay table states $40 to $150 or more per hour. Plan your income around the lower figures.",
+      "type": "dead-end",
+      "why": "Provides practical reader advice on handling conflicting rate figures."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "You receive only one attempt at the Starter Assessment. The platform policy strictly enforces that there are no retakes or second chances. The site does not state",
+      "replacement": "You get only one attempt at the Starter Assessment. The FAQ says, \"There are no retakes or second chances.\" The FAQ does not state",
+      "type": "restatement and coy-abstraction",
+      "why": "Streamlines wording and directly quotes the official FAQ."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Approval communication is asymmetrical. DataAnnotation notes that accepted applicants receive contact within a few days if their test passes review and matching work exists. If the platform lacks matching work or an applicant fails the test, the company sends no notice. The site explicitly states that it is unable to provide direct responses to every applicant due to high application volume.",
+      "replacement": "DataAnnotation says approval notices arrive within a few days, but only if your assessment passes review and it has work that matches your skills. Otherwise you may never hear back, because the FAQ says DataAnnotation is unable to provide direct responses for every applicant given the number of applications.",
+      "type": "jargon and overstatement of FAQ",
+      "why": "Replaces unnatural phrasing and accurately represents the FAQ's response policy."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Earnings transfer directly through PayPal. The platform FAQ notes that contractors request withdrawals directly, with deposits delivered within a few days after each request. It also states that the business has paid",
+      "replacement": "DataAnnotation pays through PayPal. Its FAQ says contractors request withdrawals and deposits arrive within a few days of each request. The FAQ also says DataAnnotation has paid",
+      "type": "coy-abstraction and duplicate wording",
+      "why": "Removes passive phrasing and repeated 'directly'."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Anyone without access to a valid PayPal account in an eligible region cannot receive funds from the platform. The platform does not charge fees to sign up or take assessments.",
+      "replacement": "PayPal is the only payout method the FAQ names, so you need a PayPal account to get paid. DataAnnotation charges no signup fees.",
+      "type": "invented eligibility claim and coy-abstraction",
+      "why": "Removes unsupported 'eligible region' claim and clarifies PayPal requirement."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Public sentiment highlights recurring operational bottlenecks alongside positive feedback on scheduling freedom. On [Trustpilot](https://www.trustpilot.com/review/dataannotation.tech), DataAnnotation holds a TrustScore",
+      "replacement": "As of October 2026, DataAnnotation holds a Trustpilot TrustScore",
+      "type": "vague abstraction and repeat link",
+      "why": "Adds required date stamp and removes redundant link."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Positive feedback concentrates on schedule flexibility and dashboard simplicity.",
+      "replacement": "Positive reviews center on flexibility and ease of use.",
+      "type": "unsupported wording drift",
+      "why": "Aligns praise themes strictly with source data."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "The DataAnnotation platform operates with minimal corporate disclosure on its consumer-facing site. Its official documentation names Persona",
+      "replacement": "DataAnnotation's FAQ names Persona",
+      "type": "filler abstraction",
+      "why": "Cuts filler phrasing to state the factual attribution directly."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Scammers frequently impersonate online job platforms to steal personal information or collect upfront payments.",
+      "replacement": "Scammers pose as recruiters for online rating and review jobs to collect money from job seekers.",
+      "type": "unsupported scam detail",
+      "why": "Replaces unsupported 'steal personal information' with documented job scam pattern."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "If someone contacting you on messaging apps demands an upfront payment or background check fee under the company name, that contact is fraudulent.",
+      "replacement": "If someone using the DataAnnotation name on a messaging app asks you for money, treat it as a scam and report it at ReportFraud.ftc.gov.",
+      "type": "invented fee type and missing reporting link",
+      "why": "Removes invented background fee and provides FTC fraud reporting destination."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "The company's documentation does not publish a formal tax-form distribution policy, meaning contractors must track earnings independently.",
+      "replacement": "DataAnnotation's FAQ gives no tax-form policy, so track your earnings yourself.",
+      "type": "coy-abstraction",
+      "why": "Simplifies sentence into direct, actionable guidance."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "though lower $600 thresholds remain in states like Massachusetts, Maryland, Vermont, and Virginia.",
+      "replacement": "though PayPal applies a $600 threshold in Massachusetts, Maryland, Vermont, and Virginia.",
+      "type": "misattributed threshold",
+      "why": "Correctly identifies the $600 state limits as PayPal policy."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "but their operations show major structural differences.",
+      "replacement": "but they differ on entry requirements and pay timing.",
+      "type": "vague abstraction",
+      "why": "Replaces generic phrasing with concrete operational distinctions."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "Outlier faced independent contractor wage litigation culminating in a preliminary $12.5 million settlement in McKinney v. Scale AI, according to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement).",
+      "replacement": "Scale AI agreed to a $12.5 million settlement of McKinney v. Scale AI, a California worker-misclassification case covering Outlier contributors, according to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement). The settlement is pending final approval at an October 30, 2026 hearing, and the defendants deny the allegations.",
+      "type": "unsupported 'preliminary' and missing required context",
+      "why": "Removes 'preliminary' and adds required pending final approval and denial context."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "If you want steady income, this platform is not for you. The high rate of unanswered applications and sudden dashboard dry spells make it an unreliable sole income source.",
+      "replacement": "If you want steady income, DataAnnotation is not for you. Unanswered applications and the dry spells Trustpilot reviewers describe make it an unreliable sole income source.",
+      "type": "coy-abstraction and review theme as fact",
+      "why": "Names platform explicitly, cuts unquantified 'high rate', and attributes dry spells."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "taking the one-hour test is a reasonable move.",
+      "replacement": "taking the one-hour test is a reasonable move. Our verdict would change if DataAnnotation stopped paying PayPal withdrawals within a few days, or if a court confirmed that the Surge AI suit covers DataAnnotation workers.",
+      "type": "missing 'what would change our verdict' condition",
+      "why": "Adds specific conditions required to overturn verdict recommendation."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "The platform delivers earnings",
+      "replacement": "DataAnnotation delivers earnings",
+      "type": "coy-abstraction",
+      "why": "Replaces robotic reference with platform name."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Specialized STEM and professional tiers start at $40 to $125 or more per hour, although other FAQ answers cite conflicting baseline ranges of $25 to $30 per hour.",
+      "replacement": "Specialized STEM and professional tiers start at $40 to $125 or more per hour. Other FAQ answers give a lower general starting range of $25 to $30 per hour.",
+      "type": "overloaded sentence",
+      "why": "Splits into two readable, distinct statements."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "The company explicitly states in its FAQ that it does not send status updates or rejections to unsuccessful applicants due to high application volume.",
+      "replacement": "Its FAQ says that, given the number of applications, DataAnnotation is unable to provide direct responses for every applicant, so you may never hear back.",
+      "type": "misquoted FAQ and coy-abstraction",
+      "why": "Accurately reflects the FAQ's exact phrasing regarding volume."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "the platform delivers deposits",
+      "replacement": "DataAnnotation delivers deposits",
+      "type": "coy-abstraction",
+      "why": "Replaces generic noun with specific company name."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[4].body",
+      "quote": "The complaint alleged that data annotators were misclassified as independent contractors and that training time was unpaid. Coverage on [Bloomberg Law](https://news.bloomberglaw.com/financial-accounting/ai-training-firm-surge-ai-hit-with-worker-misclassification-suit) outlined the dispute, but the lawsuit docket does not name the DataAnnotation platform. Federal dockets on CourtListener show no lawsuits naming DataAnnotation directly.",
+      "finding": "unverified source attribution and unlinked mention",
+      "why": "Accurately attributes firm announcement and search snippet per source restrictions.",
+      "replacement": "The firm says the suit alleges that \"Data Annotator\" workers were misclassified as independent contractors and that training and project-familiarization time was unpaid. [Bloomberg Law](https://news.bloomberglaw.com/financial-accounting/ai-training-firm-surge-ai-hit-with-worker-misclassification-suit) covered it under the headline \"AI Training Firm Surge AI Hit With Worker Misclassification Suit.\" Clarkson's announcement does not name the DataAnnotation platform, so whether the suit covers DataAnnotation workers is not confirmed. A search of federal court dockets on October 9, 2026 found no case naming DataAnnotation.",
+      "reason": "replacement adds [\"Clarkson's\"] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "deleted_final": 0,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1776,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 122.0,
+ "response_id": "PwLJavK2H5SwqtsP_fGNiQc",
+ "generated_at": "2026-10-09T10:05:25-0500"
+}

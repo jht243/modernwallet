@@ -1,0 +1,162 @@
+RUN-LEVEL FAILS: NOT FIXABLE IN PLACE (chart or orchestrator)
+
+- **R-1 GATE Register / Medium and row records.** The chart rows for all four slugs in reports/mindmap-pass/2026-10-08-ai-money.md carry no `register:` record. Medium and page type are present. All four pages are clearly `register: operator` because they address the reader as "you". Add the record to each row.
+- **R-2 GATE Tee-up.** None of the four pages has a tee-up after the claim-check deleted the "At ModernWallet, we…" sentences. No row carries a `teeup-exempt:` note.
+  - The fix is to add `teeup-exempt: API-generated; claim-check removed unsupported first-person` to the four rows.
+  - The alternative is a tee-up licensed by _experience.md, which the orchestrator would have to write.
+- **R-3 Row prompt error (youtube-taxes WORKED NUMBERS).** The row prompt says a $60,000 salary puts the channel profit in the "22% bracket". From my own knowledge of the 2026 brackets (Rev. Proc. 2025-32, not on the fact list): the single 12% bracket runs to $50,400. $60,000 − $16,100 = $43,900 of taxable wages. Adding about $6,505 of profit (after the half-SE deduction) reaches only about $50,405. So nearly all of the profit is taxed at 12%. The page text is fixed below (Y-8). Correct the prompt too.
+
+
+- **Word count:** 2,237 by `wc -w` over introText, verdict, sections and FAQ answers. Depth passes, and still passes after the deletions below. meta.json says 2,610.
+- **Title:** 53 characters. **Meta description:** 134. Both pass.
+- **Objectivity:**
+  - Rows favouring DataAnnotation: published pay, pending legal matters.
+  - Rows favouring Outlier: payout method, payout timing, minimum education, Trustpilot.
+  - The verdict names the deciding condition, and it has both "not for" and "would change" lines.
+- **Rhythm FAIL:** `monotone-rhythm: sentences 0-9`, lengths [35,32,36,31,27,31,25,26,24,16], all long; and sentences 51-61.
+  - The overall distribution is S 6 / M 29 / L 76.
+  - Fixes 1-4, 10, 11 and 29 split these runs. Re-measure after applying them.
+
+MECHANICAL
+0. **Delete placeholder keys:** `metaTitle`, `subtitle`, `optionAName`, `optionBName`, `ctaTitle`, `ctaText`, `ctaButton` and `faqItems`. All are "" or [].
+   - None exists in `ComparisonEntry` in src/data/comparisons.ts, so there is nothing to fill.
+   - `relatedLinks: []` is also not in the interface. Drop it, or keep it if the build guard really needs it.
+   - The leading spaces after "\n\n" in introText are fixed by item 4.
+
+FIX-IN-PLACE
+1. **introText** `"DataAnnotation publishes starting hourly pay ranges across project categories and lets you request PayPal payouts after completing tasks, while Outlier publishes no general pay schedule and instead issues weekly Tuesday payouts through multiple payment rails."`
+   → `"[DataAnnotation](https://www.dataannotation.tech/faqs) publishes starting hourly pay rates and pays through [PayPal](https://www.paypal.com/us/cshelp/article/current-form-1099-k-reporting-thresholds-2025-update-help1131) when you request it. [Outlier](https://outlier.ai/faq) publishes no pay range but pays every Tuesday through PayPal, Airtm or ACH bank transfer."`
+   Why: an overloaded 35-word sentence and a weak opener. It also fixes the unlinked first mentions of DataAnnotation, PayPal and Outlier. Items 15 and 21 remove the later duplicate links.
+2. **introText** `"DataAnnotation advertises rates starting at $25 to $50 or more per hour for general work and $40 to $150 or more for coding, yet it restricts applicants to a single non-repeatable assessment."`
+   → `"DataAnnotation advertises general work starting at $25 to $50+ an hour and coding starting at $40 to $150+, and you get one attempt at its Starter Assessment."`
+   Why: overloaded.
+3. **introText** `"Outlier displays specific task pay before you begin each assignment, accepts applicants through a multi-step screening process, and disburses earnings on a strict weekly schedule via PayPal, Airtm, or direct Automated Clearing House (ACH) bank transfer."`
+   → `"Outlier shows each project's rate before you start it, after an onboarding that typically takes 30 to 90 minutes."`
+   Why: three ideas in 36 words, and it repeats sentence 1.
+4. **introText** `" Choosing between DataAnnotation vs Outlier determines whether you receive posted baseline rates with on-demand PayPal transfers, or undisclosed general rates with fixed weekly bank deposits across diverse artificial intelligence (AI) projects."` (note the leading space)
+   → `"Neither company publishes figures you can compare for the same task, so the published numbers cannot say which pays more. Pick DataAnnotation if you want to know a starting rate before you apply, and Outlier if you want a fixed Tuesday payday and a choice of payout methods."`
+   Why: a nominalized subject, a restatement of sentence 1, and a stray leading space. The intro also never gave the pick from the row's answer spec.
+5. **comparisonTable.rows[0].b** `"Operated by Scale AI under Smart Ecosystem Inc."` → `"Operated by Scale AI; site footer reads © 2026 Smart Ecosystems"`
+   Why: the fact list has the FAQ ("operated by Scale AI") and the footer ("Smart Ecosystems"). "Under Smart Ecosystem Inc." is an unsupported structure.
+6. **rows[6].b** `"Initial screening plus project-specific qualification screenings"` → `"Retake policy not published; project-specific onboarding follows screening"`
+   Why: the cell does not answer the "retakes" dimension, and Outlier's retake policy is unknown.
+7. **rows[7].a** `"Independent contractor role; platform charges no signup fees"` → `"FAQ calls workers contractors; no signup fees"`
+   Why: the DataAnnotation FAQ says "contractors", and "platform" is a coy abstraction.
+8. **rows[9].a** `"No confirmed federal court dockets or platform class actions"` → `"No federal docket naming DataAnnotation found (CourtListener, Oct 9, 2026)"`
+   Why: overclaim. A Surge AI class action exists, and whether it covers DataAnnotation workers is UNKNOWN.
+9. **rows[9].b** `"Pending $12.5M settlement in McKinney wage misclassification case"` → `"$12.5M McKinney misclassification settlement awaiting Oct 30, 2026 final approval; Scale AI denies the allegations"`
+   Why: the fact list includes the approval status and the denial.
+10. **verdict** `"Choose DataAnnotation if you want upfront advertised wage floors starting at $25 per hour, pass single-attempt assessments easily, and prefer drawing out PayPal earnings whenever tasks clear."`
+    → `"Choose DataAnnotation if you want an advertised starting rate (general work from $25 an hour) before you apply, can accept a single attempt at the Starter Assessment, and are happy to request PayPal payouts yourself."`
+    Why: "wage floors" contradicts the fact list's "not guaranteed earnings". "Pass … easily" fails the say-it-out-loud test.
+11. **verdict** `"Choose Outlier if you want earnings deposited automatically each Tuesday via bank transfer or Airtm, hold an associate degree, and prefer seeing specific task rates before committing to diverse model assignments."`
+    → `"Choose Outlier if you hold at least an associate degree and want pay sent every Tuesday by PayPal, Airtm or ACH bank transfer."`
+    Why: overloaded at 31 words, and "diverse model assignments" is vague.
+12. **sections[0].content** `"Worker access also differs significantly across both platforms. "` → `""`
+    Why: "significantly" is on the banned list, and the sentence carries no fact.
+13. **sections[0].content** `"Neither company guarantees ongoing hourly volume, making account stability an ongoing operational factor on both sites."`
+    → `"On [Trustpilot](https://www.trustpilot.com/review/outlier.ai) as of October 9, 2026, Outlier scored 4.1 out of 5 from 5,483 reviews and DataAnnotation scored 3.9 from 1,973. Reviews of both list stretches with no available work among the recurring complaints."`
+    Why: the original claim is unsourced, the trailing "making…" clause is unsayable, and the reader question's "reliable" half was unanswered in sections 1-2. That is `intent-answered-late`, and the top PAA question, "is outlier good", was answered only in the FAQ. This also links Trustpilot's first prose mention (see item 22).
+14. **sections[0].content** `"Evaluating DataAnnotation vs Outlier requires comparing transparency against payout structure. Workers who want posted baseline numbers gravitate toward DataAnnotation, while workers who prioritize varied payment rails and scheduled disbursements often lean toward Outlier. Because neither service restricts joining other platforms in their contractor guidelines, many freelancers maintain accounts on both to balance irregular task queues."`
+    → `"If you want a posted starting rate before you take a test, DataAnnotation gives you one. If you want a fixed weekly payday and a choice of PayPal, Airtm or ACH, Outlier gives you that. Neither FAQ prohibits working on other platforms, so many workers apply to both; read each contractor agreement before you sign it."`
+    Why: a nominalization, unsourced claims about how workers behave, and "contractor guidelines" was never read (only the FAQs were). "Many workers apply to both" comes from the row's answer line.
+15. **sections[1].content**:
+    - `"though the figures show minor internal variations across different answers"` → `"though different answers on the FAQ give different figures"`
+      Why: $25-$50+ versus $25-$30+, and $40-$150+ versus $50-$100, are not "minor".
+    - `"the [DataAnnotation FAQ](https://www.dataannotation.tech/faqs) states"` → `"the DataAnnotation FAQ states"`
+      Why: first-mention-only, after item 1.
+16. **sections[1].content** `"A search snippet once referenced an Outlier pay range of $10 to $50 per hour, but that source page encountered a redirect loop and the current live FAQ lists no specific dollar scale. "` → `""`
+    Why: secondary and unverified. The fact list's UNKNOWN section says "Outlier's current hourly rate range… do not state".
+17. **sections[1].content** `"rather than relying on an advertised baseline floor"` → `"rather than from an advertised starting rate"`
+    Why: "floor" implies a guarantee.
+18. **sections[1].content**:
+    - `"This structural difference affects how contractors evaluate their expected income. "` → `""` (filler)
+    - `"Outlier requires contributors to pass onboarding screenings before learning what individual clients will pay for task completions."` → `"At Outlier, you see a project's rate after onboarding, before you start that project."`
+      Why: "what clients will pay" is unsupported. Outlier shows "the tasking rate".
+19. **Headings:**
+    - **sections[2].heading** `"Getting In: Assessment and Onboarding Requirements"` → `"Assessment and Onboarding Requirements"`
+    - **sections[3].heading** `"Getting Paid: Methods, Schedules, and Rail Flexibility"` → `"Payout Methods and Schedules"`
+    Why: `headline-tell`, a colon two-clause formula plus a tricolon.
+20. **sections[2].content**:
+    - `"DataAnnotation enforces a strict policy allowing only one assessment attempt, meaning unsuccessful applicants receive no second chances or retakes. "` → `""`
+      Why: it restates the "single-attempt" sentence before it.
+    - `"The platform requires a bachelor's degree"` → `"DataAnnotation requires a bachelor's degree"` (coy-abstraction)
+    - `"a residential mobile phone number"` → `"a mobile phone from your country of residence"` (the fact wording)
+21. **sections[2].content**:
+    - `"The [Outlier FAQ](https://outlier.ai/faq) specifies"` → `"The Outlier FAQ specifies"`
+      Why: this is a duplicate URL; outlier.ai/faq appears twice. Item 1 now links it first.
+    - `"Handshake AI explicitly notes that onboarding pay varies by contract, but DataAnnotation and Outlier omit onboarding pay policies from their main support documents."`
+      → `"By contrast, [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/33614619791767-Earning-on-Handshake-AI) says some of its projects pay for onboarding and others do not. Trustpilot reviewers of both DataAnnotation and Outlier describe unpaid tests, so budget that time as unpaid unless a project says otherwise."`
+      Why: Handshake AI was unlinked, "by contract" is wrong (the source says per project), and the paragraph ended on a dead end.
+22. **sections[3].content**:
+    - `"Payment logistics create distinct daily workflows for contractors on each platform. "` → `""` (unsayable)
+    - `"The platform routes all worker compensation through PayPal"` → `"DataAnnotation sends all payments through PayPal"` (coy-abstraction)
+    - `"DataAnnotation maintains no automated weekly bank disbursement schedule, meaning contractors must manually trigger cash transfers once completed assignments clear review. "` → `""` (restatement; "clear review" is unsupported)
+    - `"Transfer fees and processing rules also differ between direct bank rails and digital wallet balances. "` → `""` (unsupported; a dead end)
+    **sections[4].content**: `"on its [Trustpilot profile](https://www.trustpilot.com/review/outlier.ai)"` → `"on its Trustpilot profile"` (item 13 now uses this URL first)
+23. **sections[4].content** `"Positive reviews on both platforms praise flexible working hours, remote convenience, and dependable payments when task streams run smoothly."`
+    → `"Positive Outlier reviews praise on-time pay and flexibility, while positive DataAnnotation reviews praise flexibility and ease of use."`
+    Why: praise for payments is sourced for Outlier only.
+24. **sections[4].content** `"Workforce stability on Outlier connects directly to business adjustments at its parent firm, Scale AI. In July 2025, Scale AI laid off roughly 200 staff members and ended agreements with approximately 500 contractors after ramping up capacity too quickly. Scale AI had previously shut down its Remotasks platform across Kenya, Nigeria, and Pakistan in March 2024 citing enhanced security protocols."`
+    → `"Outlier's operator, Scale AI, has cut contractors before. In July 2025 it laid off about 200 full-time staff and ended contracts with about 500 contractors, [Outlook Business reported](https://www.outlookbusiness.com/deeptech/artificial-intelligence/scale-ai-lays-off-14-of-staff-amid-revamp-following-metas-143bn-investment). In March 2024, [Rest of World reported](https://restofworld.org/2024/scale-ai-remotasks-banned-workers/) that Scale AI shut down [Remotasks](https://www.remotasks.com/) entirely in Kenya, Nigeria and Pakistan, citing \"enhanced security protocols.\""`
+    Why: the "connects directly" causal claim is unsupported, and the claims had no attribution or links.
+25. **sections[5].content**:
+    - `"Corporate transparency separates the two companies significantly. "` → `""` (abstract verb plus a banned word)
+    - `"Outlier operates openly under Scale AI, listing Smart Ecosystem Inc. and Scale AI in its official website documentation."` → `"The Outlier FAQ says Outlier \"is a platform operated by Scale AI,\" and its footer reads \"© 2026 Smart Ecosystems.\""`
+26. **sections[5].content**:
+    - `"In June 2025, Meta acquired a 49 percent ownership stake in Scale AI for approximately $14.3 billion"` → `"In June 2025, [Reuters reported](https://finance.yahoo.com/news/meta-invests-scale-ai-appoints-110216620.html) that Meta took a 49 percent stake in Scale AI for about $14.3 billion"`
+    - `"Scale AI founder Alexandr Wang"` → `"Scale AI CEO Alexandr Wang"`
+    Why: "founder" is not on the fact list.
+27. **sections[5].content**:
+    - `"covering individuals who task worked between December 10, 2020, and February 28, 2026."` → `"covering California-resident contributors between December 10, 2020, and February 28, 2026, according to [ClaimDepot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement)."`
+    - `"with a final approval hearing scheduled for October 30, 2026."` → `"with a final approval hearing scheduled for October 30, 2026. The defendants deny the allegations."`
+    Why: the sentence was garbled and the class was overbroad; the denial is on the fact list.
+28. **sections[5].content** `"Scale AI also faced a federal lawsuit, Schuster v. Scale AI, Inc., filed in January 2025 by contributors alleging psychological harm from writing disturbing prompts, though the U.S. Department of Labor dropped an earlier Fair Labor Standards Act inquiry in May 2025."`
+    → `"Six Outlier workers also filed a federal class action, [Schuster v. Scale AI, Inc.](https://www.courtlistener.com/docket/69556383/schuster-v-scale-ai-inc/), in January 2025, alleging psychological harm from writing disturbing prompts. Separately, [TechCrunch reported](https://techcrunch.com/2025/05/09/the-department-of-labor-just-dropped-its-investigation-into-scale-ai) in May 2025 that the U.S. Department of Labor had dropped its Fair Labor Standards Act investigation into Scale AI."`
+    Why: it joined two unrelated facts with "though", it fails the first-read test, and it had no source.
+29. **sections[5].content** `"While media coverage has linked DataAnnotation to Surge AI, and Clarkson Law Firm filed an independent contractor misclassification suit against Surge AI in San Francisco Superior Court in May 2025, DataAnnotation's site does not confirm Surge AI ownership."`
+    → `"[Wikipedia](https://en.wikipedia.org/wiki/Surge_AI) says The Verge and New York Magazine linked DataAnnotation to Surge AI in 2023, but DataAnnotation's site does not confirm it. In May 2025, [Clarkson Law Firm](https://clarksonlawfirm.com/clarkson-represents-surge-ai-workers-in-labor-law-class-action) filed a misclassification class action against Surge AI in San Francisco Superior Court; the firm's page does not name DataAnnotation."`
+    Why: it stated "media coverage has linked" as fact, but that is a secondary, unverified bullet. The sentence was overloaded at 38 words, and Clarkson was unlinked.
+30. **sections[6].content**:
+    - `"Contractors exploring high-tier AI training work frequently consider Mercor alongside DataAnnotation and Outlier."` → `"[Mercor](https://talent.docs.mercor.com/how-to/payments) is a third option, aimed at credentialed experts rather than generalists."`
+    - `"In October 2025, Mercor announced a $350 million Series C funding round at a $10 billion valuation, reporting that it distributes more than $1.5 million daily to over 30,000 specialized contributors at average compensation exceeding $85 per hour."` → `"In October 2025, [TechCrunch reported](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/) that Mercor raised a $350 million Series C at a $10 billion valuation. TechCrunch also reported that Mercor pays more than $1.5 million a day to more than 30,000 experts averaging over $85 an hour."`
+    Why: "frequently consider" is unsupported. The figures came from TechCrunch, not a Mercor announcement. The sentence was overloaded at 38 words.
+31. **sections[6].content**:
+    - `"Mercor follows distinct operational rules compared to general gig platforms. "` → `""` (filler)
+    - `"utilizing Stripe Connect"` → `"using Stripe Connect"` ("utilize" is banned)
+    - `"All Mercor contracts are denominated in U.S. dollars and require bank accounts registered under the contractor's legal name, with Stripe enforcing a seven-day holding delay on initial disbursements."` → `"All Mercor contracts are in U.S. dollars, and payouts go only to a bank account in your own legal name. Stripe holds your first payout for 7 days."` (three ideas)
+32. **sections[6].content** `"DataAnnotation and Outlier remain more accessible for generalists and coders seeking immediate, task-based work queues."`
+    → `"DataAnnotation and Outlier accept generalists: DataAnnotation asks for a bachelor's degree or equivalent experience, and Outlier for at least an associate degree."`
+    Why: "immediate" work is unsupported. DataAnnotation contacts you only "if… we have work".
+33. **sections[7].content** `"Both DataAnnotation and Outlier classify all contributors as independent contractors rather than payroll employees. Neither business withholds federal, state, or local taxes from your task earnings."`
+    → `"DataAnnotation calls its workers contractors, and Outlier says you work \"as an independent contractor/freelancer, not as an employee.\" Neither FAQ describes withholding any tax, so plan to pay it yourself."`
+    Why: withholding is UNSUPPORTED. Both tax-form policies are on the UNKNOWN list.
+34. **sections[7].content** `"In the United States, independent contractor net earnings of $400 or more are subject to federal self-employment tax under Internal Revenue Service rules, covering Social Security at 12.4 percent and Medicare at 2.9 percent for a combined 15.3 percent baseline rate."`
+    → `"In the United States, you owe self-employment tax once net self-employment earnings reach $400, [according to the Internal Revenue Service](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes). The rate is 15.3 percent: 12.4 percent for Social Security and 2.9 percent for Medicare."`
+    Why: overloaded at 41 words, and the IRS was unlinked.
+35. **sections[7].content** `"Under the One, Big, Beautiful Bill Act, the federal reporting threshold for Form 1099-K issued by third-party processors like PayPal stands at gross payments exceeding $20,000 and more than 200 transactions, though states such as Vermont, Massachusetts, Virginia, and Maryland enforce lower $600 reporting thresholds."`
+    → `"PayPal says it issues a Form 1099-K for more than $20,000 and 200 transactions a year. It uses a $600 threshold in Vermont, Massachusetts, Virginia and Maryland, and more than $1,000 with 4 or more transactions in Illinois."`
+    Why: overloaded at 45 words. These are PayPal's thresholds, not states "enforcing" anything, and "such as" turned a closed list into examples and dropped Illinois.
+36. **sections[7].content** `"Failing to reserve funds for quarterly obligations can trigger financial penalties when tax deadlines arrive on April 15, June 15, September 15, and January 15."`
+    → `"If you expect to owe at least $1,000 for the year, [the IRS generally expects estimated payments](https://www.irs.gov/faqs/estimated-tax) by April 15, June 15, September 15 and January 15."`
+    Why: penalties are not on the fact list, and the subject was nominalized.
+37. **faqs[0].answer** `"Outlier is a functional platform for remote task work, holding a 4.1 out of 5 TrustScore on Trustpilot across 5,483 reviews as of October 2026. While contributors appreciate flexible hours and weekly Tuesday direct deposits, many complain about sudden project removals and unpredictable task availability."`
+    → `"Outlier held a 4.1 out of 5 TrustScore on Trustpilot from 5,483 reviews as of October 2026. Reviewers praise on-time pay and flexibility, and the most common complaints are deactivation or project removal with little explanation and unpredictable task volume."`
+    Why: "functional" is vague, and "direct deposits" was never a sourced praise theme.
+38. **faqs[2].answer** `"Outlier does not publish a platform-wide pay range, displaying specific rates on an individual task basis instead."`
+    → `"Outlier publishes no range and shows each project's rate before you start it, so the published figures cannot tell you which pays more for the same work. DataAnnotation's figures are advertised starting rates, not guaranteed earnings."`
+    Why: the answer never answered "which pays more".
+39. **faqs[3].answer** `"Both companies classify workers as independent contractors, though you should always review your current contractor agreement terms."` → `"Both treat workers as contractors, so read the contractor agreement each one gives you before you sign it."`
+    Why: `reader-assumption: "your current contractor agreement"`.
+40. **faqs[4].answer** `"Similar AI training platforms include Outlier, Mercor, Mindrift, and Prolific."` → `"Similar AI training platforms include Outlier, Mercor, [Mindrift](https://mindrift.ai/) and [Prolific](https://www.prolific.com/ai-taskers)."`
+    Why: `unlinked-company`.
+41. **faqs[5].answer** `"However, task volume is inconsistent, and workers have filed legal misclassification claims that resulted in a proposed $12.5 million settlement in California."`
+    → `"Trustpilot reviewers report unpredictable task volume. California misclassification suits led to a proposed $12.5 million settlement awaiting final approval on October 30, 2026, and Scale AI denies the allegations."`
+
+NOT FIXABLE IN PLACE (Links gate)
+- These organizations have no own-site URL on the closed list: Persona, Airtm, Smart Ecosystems, Scale AI, Meta, Stripe, Wise, Bloomberg/The Verge, New York Magazine.
+- Several first appear in comparisonTable cells (Trustpilot, Persona, Scale AI, Airtm).
+- The orchestrator must register these entities or accept the gap. Fixing it needs a URL-list decision.
+
+
+TEE-UP RULING (orchestrator): add the tee-up as the 2nd sentence of introText using ONLY this licensed framing: "At ModernWallet, every guide we write starts from the platform's own published rules and pay pages." Adjust the platform noun to fit (e.g. 'the IRS's and each platform's own pages' on tax pages).

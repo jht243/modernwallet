@@ -1,0 +1,130 @@
+{
+  "slug": "ai-automation-agency",
+  "title": "How to Start an AI Automation Agency and Price It",
+  "metaDescription": "Learn how to launch an AI automation agency, price setup fees and retainers, budget tool costs, and handle self-employment taxes.",
+  "h1": "How to Start an AI Automation Agency and Set Your Pricing",
+  "cardBlurb": "Learn how to launch an AI automation agency, structure setup and retainer pricing, compare workflow tool costs, and manage your small-business taxes.",
+  "introText": "To start an AI automation agency, pick one specific business workflow, build it on workflow software like [n8n](https://n8n.io/pricing/) or [Make](https://www.make.com/en/pricing), and sell that setup to local clients with an ongoing maintenance retainer. At ModernWallet, we show the math, which here means turning each published agency price into an hourly rate you can check against your own. Finding clients takes more work than the tooling, which can start free on n8n's self-hosted Community Edition.\n\nPublic pricing surveys for automation agencies remain scarce, with only self-reported vendor datasets available to review.",
+  "sections": [
+    {
+      "heading": "How to Start an AI Automation Agency, Step by Step",
+      "body": "You start an AI automation agency by selling one tested workflow to a few local businesses, then repeating it.\n\n1. Pick a single business niche, so you solve one problem well.\n2. Choose one specific, repeatable workflow.\n3. Build a working prototype in n8n or Make and confirm that data passes cleanly between the client's apps.\n4. Price it as a setup fee plus a monthly retainer. The only detailed published dataset, self-published by [Aumiqx](https://aumiqx.com/services/ai-automation-agency/), puts median entry prices near $1,000 per workflow and $1,423 a month for a build retainer.\n5. Pitch your functional prototype to a small group of local business owners who handle repetitive data entry.\n6. Secure your first client on a recurring maintenance retainer to support ongoing API updates and error handling.\n7. Document the setup process and repeat the exact workflow delivery for similar businesses in the same vertical."
+    },
+    {
+      "heading": "What an AI Automation Agency Sells",
+      "body": "An AI automation agency sells the integration that connects artificial intelligence models to existing operational business systems. [Upwork](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates)'s Future Workforce Index 2026 names a matching emerging role, the \"AI Orchestrator\": someone who connects AI tools to domain expertise, applies judgment, and turns AI output into business results.\n\nMarketplace data shows shifting demand toward practical software integration. According to [Upwork's in-demand skills release](https://investors.upwork.com/news-releases/news-release-details/upworks-demand-skills-2026-demand-top-ai-skills-more-doubles-ai), freelancer earnings on completed jobs for AI Integration grew 178% year over year, while AI Chatbot Development expanded 71%. Similarly, [Fiverr's business trends index](https://finviz.com/news/360535/businesses-race-to-hire-claude-code-specialists-as-demand-surges-938) reported a 125% increase in searches for n8n AI automation and a 49% rise in queries for AI voice agents over a six-month period. These marketplace search metrics reflect commercial interest in integration skills, though search volume does not guarantee contract earnings.\n\nIf client work is not for you, our guide on [how to make money with AI](/guides/how-to-make-money-with-ai/) compares the other paths, and [how to make money with Claude](/guides/how-to-make-money-with-claude/) covers building tools with Claude Code."
+    },
+    {
+      "heading": "AI Automation Agency Pricing Models and Retainers",
+      "body": "The published figures on AI automation agency pricing all come from vendors or agencies with a commercial interest. The most detailed figures come from a self-published dataset compiled by Aumiqx, an agency services company that analyzed 177 pricing points across 48 agencies on September 23, 2026. Because this dataset originates from a commercial service provider rather than an independent audit, you should treat these figures as an unverified directional reference rather than an industry standard.\n\nThe Aumiqx figures report a median entry price of roughly $1,000 for a single workflow deployment, $3,556 for a multi-workflow build, $1,423 per month for an ongoing build retainer, and approximately $286 per month for basic maintenance.\n\nAvoid setting fixed quotes without checking your production time against our [freelance rate calculator](/freelance-rate/). If building a workflow requires 20 hours of configuration and troubleshooting, a $1,000 flat price yields a gross return of $50 per hour before software expenses, taxes, and customer support. Retainers can cover ongoing maintenance."
+    },
+    {
+      "heading": "Software Subscriptions and Infrastructure Operating Costs",
+      "body": "Running an automation firm requires maintaining subscriptions for workflow automation software and underlying language models. On n8n, hosted cloud accounts cost €20 per month billed annually for the Starter tier with 2,500 executions, while the Pro tier costs €50 per month for 10,000 executions. The [n8n Community Edition license](https://docs.n8n.io/n8n-community-license/community-license/license-faq) is free to self-host, but its terms prohibit white-labeling or hosting n8n as a managed service for clients.\n\nAlternative workflow software provides different pricing structures. On Make, plans include a free tier offering 1,000 credits, Core at $9, Pro at $16, and Teams at $29 per month, each supporting 10,000 credits, though Make's pricing page does not clarify if those rates require annual billing. [Zapier](https://zapier.com/pricing) offers a Free tier with 100 monthly tasks, a Professional plan at $19.99 monthly billed annually or $29.99 monthly for 750 tasks, and a Team tier at $69 monthly billed annually or $103.50 billed monthly for 2,000 tasks.\n\nA paid AI model plan adds to those costs. [Anthropic's Claude](https://claude.com/pricing) offers a Pro tier at $20 monthly billed month-to-month, or $17 per month billed annually, which includes access to Claude Code. According to [OpenAI's pricing documentation](https://learn.chatgpt.com/docs/pricing), ChatGPT Plus costs $20 per month, while ChatGPT Pro starts at $100 per month. [Anthropic's consumer terms](https://www.anthropic.com/legal/consumer-terms) and [OpenAI's terms of use](https://openai.com/policies/terms-of-use/) both assign you their rights in the output, and Anthropic's terms contain no general ban on commercial use."
+    },
+    {
+      "heading": "Income Claims and Federal Trade Commission Rules",
+      "body": "Prospective agency owners should critically evaluate promotional sales pitches that promise rapid wealth from automation agencies. The [FTC's AI enforcement actions](https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes) have targeted promoters using misleading claims about artificial intelligence business profitability. In August 2025, the [FTC sued Air AI](https://www.ftc.gov/news-events/news/press-releases/2025/08/ftc-sues-stop-air-ai-using-deceptive-claims-about-business-growth-earnings-potential-refund), alleging deceptive promotions that buyers would generate tens of thousands of dollars within days or months. In March 2026, the FTC announced a [proposed settlement](https://www.ftc.gov/news-events/news/press-releases/2026/03/air-ai-its-owners-will-be-banned-marketing-business-opportunities-settle-ftc-charges-company-misled) with a ban on selling business opportunities and an $18 million judgment against Air AI and its owners, mostly suspended.\n\nFederal regulations mandate strict disclosure standards for individuals selling business programs. Under the [FTC Business Opportunity Rule (16 CFR Part 437)](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-437), any promoter marketing an earning potential must have a reasonable basis and written substantiation for those numbers. Sellers making earnings claims must provide prospects with a formal Earnings Claim Statement showing the specific percentage and number of past buyers who achieved those stated returns.\n\nIf an online program urges you to launch an agency using unverified revenue screenshots, request their statutory earnings claim statement. The [FTC's warning on side hustle scams](https://consumer.ftc.gov/consumer-alerts/2026/02/how-avoid-side-hustle-scam) highlights high upfront costs, urgent sales pressure, and unrealistic income representations as warning signs of fraudulent schemes. An agency earns money only while you find clients and keep them on retainers."
+    },
+    {
+      "heading": "Upwork Pay Trends for Simple and Complex AI Work",
+      "body": "The economic value of automated services is separating by project complexity. According to Upwork's Future Workforce Index 2026, contract starts for generative AI and creative production work increased 90% year over year, yet earnings per contract dropped 13%. Upwork reads this as a sign that lower-complexity AI execution may become less lucrative as it scales.\n\nIn contrast, Upwork reported that freelancers doing more complex work with AI saw earnings rise 45% year over year. In addition, AI-augmented professional services expanded 72% in contract volume with a 22% increase in earnings. Freelancers who do AI work on Upwork earn 34% more per hour than those who don't use AI, though Upwork adds that \"not all AI work is becoming more valuable.\"\n\nFor an agency, that data argues for selling a specific outcome to one niche instead of a generic chatbot."
+    },
+    {
+      "heading": "Small Business Taxes and Legal Recordkeeping",
+      "body": "Revenue from an automation agency constitutes taxable self-employment income that requires dedicated tax accounting. The self-employment tax rate totals 15.3%, consisting of 12.4% for Social Security and 2.9% for Medicare. Under Internal Revenue Service (IRS) rules, net self-employment earnings of $400 or more require filing Schedule SE, with 92.35% of net profit subject to self-employment tax. Our [self-employment tax calculator](/self-employment-tax/) estimates the bill.\n\nOperating as an independent contractor generally requires making quarterly estimated tax payments if you anticipate owing $1,000 or more in federal taxes. The due dates are April 15, June 15, September 15 and January 15 of the next year. Review our guide on [how much to set aside for taxes](/self-employment-tax/how-much-to-set-aside-for-taxes/) to ensure you reserve adequate funds from every client invoice.\n\nOur [self-employed tax deductions guide](/guides/self-employed-tax-deductions/) covers the rules. The IRS allows deductions for expenses that are ordinary, meaning common in your trade, and necessary, meaning helpful to your operations. Subscriptions such as Make, Zapier or a paid AI plan are deductible only if they meet that ordinary-and-necessary test for your business. Review our [home office deduction guide](/guides/home-office-deduction/) if you maintain a dedicated workspace used regularly and exclusively as your principal place of business.\n\nThis is general information, not financial, tax or legal advice."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/freelance-rate/",
+      "label": "Freelance Rate"
+    },
+    {
+      "href": "/self-employment-tax/",
+      "label": "Self-Employment Tax"
+    },
+    {
+      "href": "/budget/",
+      "label": "Budget"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What do AI automation agencies do?",
+      "answer": "An AI automation agency builds and maintains software connections between artificial intelligence models and common business applications. The agency connects AI tools to domain expertise and business workflows to deliver results."
+    },
+    {
+      "question": "How do I start my own AI automation agency?",
+      "answer": "Start by selecting a single industry niche and identifying one repetitive data workflow to automate. Build and test a working prototype using integration software like n8n, Make, or Zapier, then pitch that specific solution to local business owners as a setup project with an ongoing support retainer."
+    },
+    {
+      "question": "How much does an AI automation agency charge?",
+      "answer": "Agency fees vary widely without official regulatory benchmarks, but self-published data from Aumiqx across 48 agencies reports medians of approximately $1,000 for single-workflow setup and $1,423 monthly for active build retainers. Use our freelance rate calculator to confirm your quotes cover development hours and software costs."
+    },
+    {
+      "question": "Do you need to pay for AI agents?",
+      "answer": "Not necessarily. n8n's Community Edition is free to self-host, and Make and Zapier have free plans. Tool subscriptions range from free tiers to paid plans on Zapier and Make, while hosted n8n Cloud starts at €20 per month, alongside commercial plans like Claude Pro at $20 monthly or ChatGPT Plus at $20 monthly."
+    },
+    {
+      "question": "Is an AI automation agency worth it?",
+      "answer": "An agency can be viable if you focus on complex operational workflows rather than generic chatbots. Upwork data indicates that basic generative tasks saw per-contract pay decline 13%, while complex AI project earnings expanded 45% year over year."
+    },
+    {
+      "question": "Do I need to know how to code to start an AI automation agency?",
+      "answer": "n8n, Make and Zapier are workflow-automation tools, and each has a free way to start: n8n's self-hosted Community Edition, Make's Free plan and Zapier's Free plan. Build one prototype on a free plan before you sell anything to see how much code your workflow needs."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Upwork, Future Workforce Index 2026",
+      "url": "https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates"
+    },
+    {
+      "label": "Upwork, In-Demand Skills 2026",
+      "url": "https://investors.upwork.com/news-releases/news-release-details/upworks-demand-skills-2026-demand-top-ai-skills-more-doubles-ai"
+    },
+    {
+      "label": "Fiverr, Business Trends Index 2026 via Finviz",
+      "url": "https://finviz.com/news/360535/businesses-race-to-hire-claude-code-specialists-as-demand-surges-938"
+    },
+    {
+      "label": "Aumiqx, AI Automation Agency Pricing",
+      "url": "https://aumiqx.com/services/ai-automation-agency/"
+    },
+    {
+      "label": "Federal Trade Commission, Air AI Enforcement Action",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/03/air-ai-its-owners-will-be-banned-marketing-business-opportunities-settle-ftc-charges-company-misled"
+    },
+    {
+      "label": "eCFR, FTC Business Opportunity Rule (16 CFR Part 437)",
+      "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-437"
+    },
+    {
+      "label": "n8n, Pricing Plans",
+      "url": "https://n8n.io/pricing/"
+    },
+    {
+      "label": "Make, Pricing Plans",
+      "url": "https://www.make.com/en/pricing"
+    },
+    {
+      "label": "Zapier, Pricing Plans",
+      "url": "https://zapier.com/pricing"
+    },
+    {
+      "label": "Anthropic, Claude Pricing",
+      "url": "https://claude.com/pricing"
+    },
+    {
+      "label": "OpenAI, ChatGPT Pricing",
+      "url": "https://learn.chatgpt.com/docs/pricing"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

@@ -1,0 +1,519 @@
+{
+ "slug": "is-mercor-legit",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1823,
+ "floor": 1500,
+ "input_tokens": 32667,
+ "output_tokens": 4337,
+ "thinking_tokens": null,
+ "cached_tokens": 17751,
+ "est_cost_usd": 0.0288,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "emptied by the claim check (nothing in the fact list could carry it): ['Is Mercor Legit? The Verdict', 'What Mercor Is and Who It Hires', 'Mercor Pay Rates and Earnings Reality', 'How Mercor Pays Contractors', 'Mercor Taxes and 1099 Obligations'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1860,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 4404,
+   "floor": 1500,
+   "ratio": 2.94,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    16,
+    13,
+    0
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "If you have advanced credentials in law, medicine, science, or technology, Mercor offers genuine high-hourly projects.",
+     "replacement": "If you have advanced credentials in law, medicine, or science, Mercor offers genuine high-hourly projects.",
+     "type": "unsupported",
+     "why": "SOURCE lists scientists, doctors, and lawyers, not technology credentials."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Mercor is a legitimate AI-talent marketplace that reliably pays independent contractors for training frontier models.",
+     "replacement": "Mercor is a legitimate AI-talent marketplace that reliably pays independent contractors for training models.",
+     "type": "unsupported",
+     "why": "SOURCE states domain experts train models, not specifically frontier models."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Unlike crowd-working platforms that rely on broad public sign-ups for simple labeling, Mercor targets specialized professionals including lawyers, doctors, scientists, software developers, and research journalists.",
+     "replacement": "Unlike crowd-working platforms that rely on broad public sign-ups for simple labeling, Mercor targets specialized professionals including lawyers, doctors, scientists, and journalists.",
+     "type": "unsupported",
+     "why": "SOURCE lists scientists, doctors, lawyers, and journalists, not software developers."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "AI developers hire these subject-matter experts to write complex prompts, check technical reasoning, and verify factual assertions in specialized fields.",
+     "replacement": "AI developers hire these subject-matter experts to train models in specialized fields.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe task activities like writing complex prompts for Mercor."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "You complete assignments directly inside partner interfaces or Mercor's tooling depending on the specific model deployment.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state whether assignments use partner interfaces or proprietary tooling."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Mercor specifically focuses on high-skill vertical expertise where an ordinary generalist cannot evaluate model accuracy.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe vertical expertise or evaluate generalist model accuracy."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Because payment delivery runs directly through standard commercial payment networks, you do not face arbitrary platform token balances or minimum cash-out vouchers.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention platform token balances or cash-out vouchers for Mercor."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Applicants submit credentials, work history, and subject-matter domains through the company portal to verify their background.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state how applicants submit credentials or verify their background."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Prospective workers frequently search online for details regarding Mercor's automated interview mechanisms, cheating detection flags, or test scoring criteria.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "TASK forbids inventing cheating-detection claims; fact list has no interview details."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Mercor does not publish the technical specifications, evaluation scoring thresholds, or internal interview monitoring mechanics of its screening pipeline on the documentation pages we reviewed.",
+     "replacement": "Its interview format is not described on the documentation pages we reviewed.",
+     "type": "unsupported",
+     "why": "SOURCE states only that its interview format is not described on reviewed pages."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Do not rely on unauthorized third-party forum rumors claiming specific grading rubrics.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention third-party forum rumors or specific grading rubrics."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Submit standard professional credentials and demonstrate your domain knowledge directly during the evaluation process.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the evaluation process or candidate submission instructions."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "Scammers routinely create deceptive social media profiles pretending to represent venture-backed companies like Mercor, Outlier, or DataAnnotation.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state scammers create social media profiles impersonating these platforms."
+    },
+    {
+     "id": "sections[8].body",
+     "quote": "If you plan to apply to Mercor, confirm that your professional background aligns with specialized domain training needs in areas like law, medicine, software engineering, or technical writing.",
+     "replacement": "If you plan to apply to Mercor, confirm that your professional background aligns with specialized domain training needs in areas like law, medicine, science, or journalism.",
+     "type": "unsupported",
+     "why": "SOURCE lists scientists, doctors, lawyers, and journalists, not software engineering or technical writing."
+    },
+    {
+     "id": "sections[8].body",
+     "quote": "To manage the income variability of project-based AI contracting, estimate your baseline living costs and maintain a dedicated tax reserve of 25% to 30% of each deposit.",
+     "replacement": "To manage the income variability of project-based AI contracting, estimate your baseline living costs and set aside funds for your self-employment tax obligations.",
+     "type": "unsupported",
+     "why": "SOURCE does not specify maintaining a 25% to 30% tax reserve."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Working for Mercor is worth considering if you possess advanced credentials in fields like law, science, medicine, or software development and want flexible, high-hourly contract work.",
+     "replacement": "Working for Mercor is worth considering if you possess advanced credentials in fields like law, science, or medicine and want flexible, high-hourly contract work.",
+     "type": "unsupported",
+     "why": "SOURCE lists scientists, doctors, and lawyers, not software development."
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we review flexible-work platforms to help independent contractors evaluate earning potential against real financial risks before they apply.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support reviewing flexible-work platforms."
+    },
+    {
+     "id": "introText",
+     "quote": "However, treating the platform as stable full-time employment can lead to cash-flow shocks when tech firms adjust their training budgets.",
+     "replacement": "However, treating the platform as stable full-time employment carries risk because project contracts can end or be re-priced.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that tech firms adjust training budgets."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Mercor is a legitimate AI-talent marketplace that reliably pays independent contractors for training models.",
+     "replacement": "Mercor is a legitimate AI-talent marketplace that pays independent contractors for training models.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Mercor's payments as reliable."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "When an AI lab finishes a training run or shifts direction, project hours can dry up immediately.",
+     "replacement": "Contracts are project-length arrangements that can end or be re-priced.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that project hours dry up when labs finish runs."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Mercor operates as an AI-talent marketplace that sources domain experts to evaluate, refine, and generate data for machine learning models.",
+     "replacement": "Mercor operates as an AI-talent marketplace that connects AI labs with domain experts to train models.",
+     "type": "unsupported",
+     "why": "SOURCE does not state domain experts evaluate, refine, and generate data."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Unlike crowd-working platforms that rely on broad public sign-ups for simple labeling, Mercor targets specialized professionals including lawyers, doctors, scientists, and journalists.",
+     "replacement": "Mercor connects AI labs with domain experts, including lawyers, doctors, scientists, and journalists.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe or compare crowd-working platforms relying on public sign-ups."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Contractors work remotely on a project-by-project schedule.",
+     "replacement": "Contractors work on a project-by-project schedule.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Mercor contractors work remotely."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Project scopes change frequently in the AI training industry.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that project scopes change frequently in the industry."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "United States citizens and resident aliens must submit a Form W-9 before collecting disbursements, while non-US contractors complete a Form W-8BEN.",
+     "replacement": "US persons submit a Form W-9, while non-US persons submit a Form W-8BEN.",
+     "type": "unsupported",
+     "why": "SOURCE states US persons submit W-9 without specifying disbursement timing rules."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "The incident stemmed from a supply-chain attack involving LiteLLM, resulting in unauthorized access to contractor Social Security numbers, physical home addresses, and interview video recordings, as reported by [HR Dive](https://www.hrdive.com/news/ai-industry-recruiting-platform-faces-multiple-lawsuits-data-breach/817319/).",
+     "replacement": "The incident stemmed from a supply-chain attack involving LiteLLM, resulting in alleged exposure of contractor Social Security numbers, addresses, and interview recordings, as reported by [HR Dive](https://www.hrdive.com/news/ai-industry-recruiting-platform-faces-multiple-lawsuits-data-breach/817319/).",
+     "type": "unsupported",
+     "why": "SOURCE states suits allege exposure of interview recordings, not video recordings."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Unlike established gig marketplaces with thousands of reviews, Mercor's rapid expansion means contractors must rely primarily on official corporate disclosures and court records to evaluate operational stability.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Mercor underwent rapid expansion requiring reliance on disclosures."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "The rapid growth of AI training platforms has led to an increase in impersonation fraud.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that platform growth caused an increase in fraud."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "It connects verified subject-matter experts with artificial intelligence labs and pays contractors weekly through Stripe Connect or Wise.",
+     "replacement": "It connects domain experts with artificial intelligence labs and pays contractors weekly through Stripe Connect or Wise.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe domain experts as verified."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2132
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-09T10:41:11-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-08-ai-money/audit/is-mercor-legit.findings.txt",
+    "applied": [
+     {
+      "id": "title",
+      "quote": "Is Mercor Legit? Pay, Risks, and Review (2026)",
+      "replacement": "Is Mercor Legit and Is It Worth Applying?",
+      "type": "headline tricolon",
+      "why": "Headline tricolon. Matches reader question."
+     },
+     {
+      "id": "h1",
+      "quote": "Is Mercor Legit? Pay, Risks, and Contractor Review",
+      "replacement": "Is Mercor Legit and Is It Worth Applying?",
+      "type": "headline tricolon",
+      "why": "Headline tricolon. Matches reader question."
+     },
+     {
+      "id": "introText",
+      "quote": "Mercor is a legitimate, venture-backed marketplace",
+      "replacement": "[Mercor](https://talent.docs.mercor.com/how-to/payments) is a legitimate, venture-backed marketplace",
+      "type": "unlinked first mention",
+      "why": "Links first mention of Mercor to official docs."
+     },
+     {
+      "id": "introText",
+      "quote": "Backed by a $350 million Series C round at a $10 billion valuation, the company pays contractors weekly via Stripe Connect or Wise, with rates reported by TechCrunch to average over $85 per hour. The platform is not a scam, but it carries distinct operational risks: contracts depend on fluctuating client projects that can end or reset at lower rates, and a spring 2026 cybersecurity breach resulted in multiple class-action lawsuits.",
+      "replacement": "Mercor raised a $350 million Series C at a $10 billion valuation, and it pays contractors weekly via Stripe Connect or Wise. [TechCrunch](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/) reported that Mercor's experts average over $85 per hour. Mercor is not a scam, but it carries two risks. Projects can end or be re-priced lower, and a data breach in late March 2026 drew eight class-action lawsuits from contractors.",
+      "type": "coy-abstraction, overloaded sentence",
+      "why": "Removes coy abstraction, unlinks repeat, links TechCrunch, shortens sentences."
+     },
+     {
+      "id": "introText",
+      "quote": "If you have advanced credentials in law, medicine, or science, Mercor offers genuine high-hourly projects. However, treating the platform as stable full-time employment carries risk because project contracts can end or be re-priced.",
+      "replacement": "If you have advanced credentials in law, medicine, or science, Mercor's hourly projects are worth applying for as supplemental income. They are a poor fit if you need guaranteed weekly hours.",
+      "type": "restatement, coy-abstraction",
+      "why": "Answers whether it is worth applying and who it is not for."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "The business raised a $350 million Series C funding round at a $10 billion valuation led by Felicis, with participation from Benchmark, General Catalyst, and Robinhood Ventures, as reported by [TechCrunch](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/).",
+      "replacement": "Felicis led its $350 million Series C, with Benchmark and General Catalyst also investing, according to TechCrunch.",
+      "type": "affiliate link risk, repeat link",
+      "why": "Removes Robinhood auto-link risk, overloaded sentence, and duplicate link."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Working on Mercor involves significant freelance friction that every applicant should consider. First, work is organized around discrete client projects rather than permanent employment. Contracts are project-length arrangements that can end or be re-priced. Second, Mercor experienced a data breach in late March 2026 linked to a LiteLLM supply-chain attack, which exposed contractor information and triggered at least eight federal class-action lawsuits. The company delivers real weekly payments for completed work, but contractors should treat it as variable project income rather than dependable primary wages.",
+      "replacement": "Mercor's work comes in client projects that can end or be re-priced. [Business Insider reported](https://www.aol.com/articles/ai-startup-powering-meta-openai-230627434.html) that a follow-on Meta project paid $16 per hour, and Mercor called that report inaccurate. Mercor also had a data breach in late March 2026 linked to a LiteLLM supply-chain attack. Contractors then filed eight federal class actions alleging their data was exposed. Mercor pays weekly for completed work, so treat it as variable project income instead of a dependable primary wage.",
+      "type": "banned word, restatement, unsubstantiated claim",
+      "why": "Removes banned word, coy abstraction, adds BI $16/hr report and Mercor denial."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Mercor operates as an AI-talent marketplace that connects AI labs with domain experts to train models. Mercor connects AI labs with domain experts, including lawyers, doctors, scientists, and journalists. AI developers hire these subject-matter experts to train models in specialized fields.",
+      "replacement": "Mercor connects AI labs with domain experts, such as scientists, doctors, and lawyers, who train models in their own fields. One Mercor listing also recruited news analysts, reporters, and journalists. Mercor screens applicants before matching them with client projects, and its interview format is not described on the Mercor pages we reviewed.",
+      "type": "restatement, missing screening context",
+      "why": "Eliminates restatement, scopes journalists to single listing, absorbs screening section."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Mercor screens candidates before matching them with client projects. \n\n Its interview format is not described on the documentation pages we reviewed.",
+      "replacement": "",
+      "type": "formatting slop",
+      "why": "Absorbed into section 1; removing stub section."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Business Insider reported through [syndication](https://www.aol.com/articles/ai-startup-powering-meta-openai-230627434.html) that",
+      "replacement": "Business Insider reported through AOL syndication that",
+      "type": "repeat link",
+      "why": "Removes duplicate link after earlier mention."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "According to official [Mercor payment documentation](https://talent.docs.mercor.com/how-to/payments), hourly",
+      "replacement": "According to Mercor's payment documentation, hourly",
+      "type": "repeat link",
+      "why": "Removes duplicate link after intro link."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "denominated strictly in United States dollars (USD).",
+      "replacement": "denominated strictly in United States dollars (USD), so your pay rate is fixed in dollars whatever currency your bank uses.",
+      "type": "bare feature",
+      "why": "Adds consequence of USD currency denomination for reader."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Tracking these deposits against your core living costs is easier when you plan around weekly cycles using our [budget calculator](/budget/).",
+      "replacement": "Our [budget calculator](/budget/) lets you plan living costs around a weekly pay cycle.",
+      "type": "nominalization",
+      "why": "Removes nominalization and improves flow."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Mercor classifies all its contributors as independent contractors, not formal employees. Under [Mercor US tax policies](https://talent.docs.mercor.com/policies/us-taxes), the company does not withhold federal, state, or payroll taxes from your earnings.",
+      "replacement": "Mercor treats its contributors as independent contractors. Under [Mercor's US tax policy](https://talent.docs.mercor.com/policies/us-taxes), Mercor does not deduct taxes from your payments.",
+      "type": "antithesis, coy abstraction, overclaim",
+      "why": "Removes antithesis and aligns with exact source phrasing."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "If you expect to owe at least $1,000 in federal tax, you must submit quarterly estimated tax payments using Form 1040-ES on four annual deadlines: April 15, June 15, September 15, and January 15 of the following year.",
+      "replacement": "If you expect to owe at least $1,000, you generally must make quarterly estimated tax payments using Form 1040-ES. The [IRS deadlines](https://www.irs.gov/faqs/estimated-tax) are April 15, June 15, September 15, and January 15 of the following year.",
+      "type": "overloaded sentence, absolute requirement claim",
+      "why": "Qualifies rule with 'generally' and adds IRS deadlines link."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "To determine the exact portion of each paycheck you should reserve for tax season, reference our detailed breakdown of",
+      "replacement": "To estimate how much of each payout to set aside for taxes, read our breakdown of",
+      "type": "overclaim, inaccurate term",
+      "why": "Replaces 'exact' and 'paycheck' with appropriate freelance terms."
+     },
+     {
+      "id": "sections[6].heading",
+      "quote": "Security Breaches, Lawsuits, and Platform Risks",
+      "replacement": "Mercor's Data Breach and Lawsuits",
+      "type": "headline tricolon, vague noun",
+      "why": "Removes tricolon and vague noun."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "While Mercor is a legitimate commercial entity, working on the platform involves notable legal and data security considerations. Contractors must evaluate three primary risks before submitting personal identity data.\n\nFirst, the platform suffered a significant cybersecurity breach in late March 2026.",
+      "replacement": "Mercor carries legal and data-security risks to weigh before you upload identity documents. Mercor suffered a data breach in late March 2026.",
+      "type": "banned words, formatting slop",
+      "why": "Removes banned words 'notable' and 'significant', and throat-clearing."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "The breach led to at least eight federal class-action lawsuits filed by affected contractors, including *Esson v. Mercor.io* (Case No. 3:26-cv-02839) in the Northern District of California, accessible via [CourtListener](https://www.courtlistener.com/docket/73131170/esson-v-mercorio-corporation/), alongside filings by Deboni, Gill, Lofton, Massman, Ramos, Ananthula, and White.",
+      "replacement": "Contractors then filed eight federal class actions, including *Esson v. Mercor.io* (Case No. 3:26-cv-02839) in the Northern District of California, which is on [CourtListener](https://www.courtlistener.com/docket/73131170/esson-v-mercorio-corporation/). The others were brought by plaintiffs named Deboni, Gill, Lofton, Massman, Ramos, Ananthula, and White, and CourtListener shows the Gill, Lofton, and Massman cases terminated on May 20, 2026. If you uploaded documents to Mercor before April 2026, follow the Esson docket for updates.",
+      "type": "overloaded sentence, omitted terminations",
+      "why": "Shortens sentence, adds terminated dockets, and provides reader next step."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Second, Mercor faces intellectual property litigation from competitors. In September 2025",
+      "replacement": "Mercor also faces a trade-secret suit from a competitor. In September 2025",
+      "type": "formatting slop, inaccurate plural",
+      "why": "Corrects plural competitors to single competitor and removes ordinal structure."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Third, public customer sentiment data remains thin. The Mercor profile on [Trustpilot](https://www.trustpilot.com/review/mercor.com) holds only 5 reviews with a 2.5 TrustScore as of October 2026. Five reviews represent an insufficient sample size to establish a definitive statistical pattern of contributor satisfaction.",
+      "replacement": "Worker reviews give little to go on. Mercor's [Trustpilot](https://www.trustpilot.com/review/mercor.com) profile holds only 5 reviews with a 2.5 TrustScore as of October 2026, too few to show a pattern.",
+      "type": "formatting slop, restatement",
+      "why": "Removes ordinal, simplifies restatement, improves tone."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "published consumer alerts regarding remote job scams, noting that",
+      "replacement": "published an April 30, 2026 consumer alert noting that",
+      "type": "inaccurate plural",
+      "why": "Accurately references the single April 30, 2026 FTC consumer alert."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "emphasizes that legitimate businesses never charge onboarding fees, never demand payment for training modules, and never conduct overpayment check schemes.",
+      "replacement": "says legitimate employers don't charge you to get a job, and it warns about fake-check overpayment schemes.",
+      "type": "unsupported detail, parallel padding",
+      "why": "Removes unsupported training modules and parallel 'never' padding."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "Apply to Mercor solely through verified company domains such as mercor.com. If an individual contacts you on an encrypted messaging app claiming to offer an unlisted Mercor contract, asks for an upfront equipment deposit, or sends an unverified cashier's check, cease contact and report the incident at ReportFraud.ftc.gov.",
+      "replacement": "Mercor's own job listings sit on work.mercor.com, so apply through that site. If someone on WhatsApp or Telegram offers you Mercor work and then asks you to deposit money or sends you a check, stop replying and report it at ReportFraud.ftc.gov.",
+      "type": "invented details, overloaded sentence",
+      "why": "Points to work.mercor.com, removes invented terms, grounds scams in FTC alert."
+     },
+     {
+      "id": "sections[8].body",
+      "quote": "before relying on freelance platform revenue as primary household income.",
+      "replacement": "before relying on freelance platform revenue as primary household income. Mercor is not for you if you need guaranteed weekly hours or lack domain credentials. Our verdict would change if Mercor published a rate card or a minimum project length, or if the breach lawsuits ended in findings against it.",
+      "type": "missing required elements",
+      "why": "Adds 'who this is not for' and 'what would change our answer'."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "the company faced class-action litigation following a spring 2026 data breach.",
+      "replacement": "contractors filed class actions against Mercor after a March 2026 data breach.",
+      "type": "coy abstraction",
+      "why": "Replaces passive phrasing with active, concrete description."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "on the platform.",
+      "replacement": "on Mercor.",
+      "type": "coy abstraction",
+      "why": "Names platform directly instead of coy abstraction."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "such as the Nova assignment reported at $16 per hour.",
+      "replacement": "such as the Nova assignment Business Insider reported at $16 per hour, a report Mercor called inaccurate.",
+      "type": "unattributed claim",
+      "why": "Attributes $16/hr Nova report to Business Insider and notes Mercor's denial."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "Payments are denominated in United States dollars and issued automatically via Stripe Connect or Wise depending on your geographic region.",
+      "replacement": "Payments are in US dollars. Mercor assigns Stripe Connect or Wise based on your region.",
+      "type": "monotone rhythm",
+      "why": "Breaks monotone sentence rhythm across FAQ answers."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "The breach exposed contractor Social Security numbers, home addresses, and interview recordings, prompting at least eight federal class-action lawsuits in California and Texas, as well as reporting that Meta paused active work with the platform.",
+      "replacement": "Contractors then filed eight federal class actions in California and Texas alleging exposure of Social Security numbers, addresses, and interview recordings. HR Dive, citing Wired, reported that Meta paused work with Mercor after the breach.",
+      "type": "unsubstantiated fact, overloaded sentence",
+      "why": "Clarifies exposure was alleged in lawsuits, cites HR Dive/Wired on Meta."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[5].heading",
+      "quote": "The Mercor Screening and Interview Process",
+      "finding": "formatting slop",
+      "why": "Section absorbed into section 1 to remove two-sentence header stub.",
+      "replacement": "",
+      "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [
+      {
+       "id": "sections[6].body",
+       "quote": "If you uploaded documents to Mercor before April 2026, follow the Esson docket for updates.",
+       "replacement": "",
+       "type": "unlinked-directive",
+       "why": "Directs reader to check an outside source without a markdown link in that sentence."
+      }
+     ],
+     "deleted_final": 1,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1823,
+    "flags": [
+     "emptied by the claim check (nothing in the fact list could carry it): ['Is Mercor Legit? The Verdict', 'What Mercor Is and Who It Hires', 'Mercor Pay Rates and Earnings Reality', 'How Mercor Pays Contractors', 'Mercor Taxes and 1099 Obligations'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+    ]
+   }
+  ]
+ },
+ "seconds": 264.4,
+ "response_id": "PwLJapjtI6TVz7IPk6jTwQ0",
+ "generated_at": "2026-10-09T10:07:48-0500"
+}

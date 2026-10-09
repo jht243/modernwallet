@@ -1,0 +1,125 @@
+RUN-LEVEL FAILS: NOT FIXABLE IN PLACE (chart or orchestrator)
+
+- **R-1 GATE Register / Medium and row records.** The chart rows for all four slugs in reports/mindmap-pass/2026-10-08-ai-money.md carry no `register:` record. Medium and page type are present. All four pages are clearly `register: operator` because they address the reader as "you". Add the record to each row.
+- **R-2 GATE Tee-up.** None of the four pages has a tee-up after the claim-check deleted the "At ModernWallet, we…" sentences. No row carries a `teeup-exempt:` note.
+  - The fix is to add `teeup-exempt: API-generated; claim-check removed unsupported first-person` to the four rows.
+  - The alternative is a tee-up licensed by _experience.md, which the orchestrator would have to write.
+- **R-3 Row prompt error (youtube-taxes WORKED NUMBERS).** The row prompt says a $60,000 salary puts the channel profit in the "22% bracket". From my own knowledge of the 2026 brackets (Rev. Proc. 2025-32, not on the fact list): the single 12% bracket runs to $50,400. $60,000 − $16,100 = $43,900 of taxable wages. Adding about $6,505 of profit (after the half-SE deduction) reaches only about $50,405. So nearly all of the profit is taxed at 12%. The page text is fixed below (Y-8). Correct the prompt too.
+
+
+- **Word count:** 1,329 over introText, rankingCriteria, option descriptions, verdict, section contents and FAQ answers. meta.json reports 2,264, which counts other fields.
+- **DEPTH: HARD FAIL.** The page is 171 words under its floor. This is NOT FIXABLE IN PLACE (Rung 2 rework, writer). Fixes 3 and 4 below cut roughly another 60 words.
+- **Expansion material that is already on the fact list:**
+  - DataAnnotation's internally inconsistent FAQ rates
+  - Mindrift's pay periods and the 5th/20th payouts, and its "only approved tasks are paid" rule
+  - Handshake's per-project onboarding-pay policy and its 48-hour payout lag
+  - Mercor's USD contracts, own-name bank rule and 7-day first-payout hold
+  - Prolific's 60-minute AI Tasker exam
+  - Deel's $15 to $100/hr AI-trainer range
+  - the FTC "reply YES" and fake-check patterns
+- **Title:** 57 characters. **Meta description:** 141. Both pass.
+- **Neutrality:** the site is never an option, and each option has at least one limitation. But "who this is not for" is missing, which is a Required page elements FAIL (item 27). The self-serving grep came back clean.
+- **Rhythm FAIL:** `monotone-rhythm: sentences 42-53`, all long. The overall distribution is S 0 / M 16 / L 49.
+
+FIX-IN-PLACE (apply during the rework)
+1. **introText** `"The best DataAnnotation alternatives for remote AI training work are Outlier, Mercor, Alignerr, Mindrift, Handshake AI, and Prolific."`
+   → `"The best [DataAnnotation](https://www.dataannotation.tech/faqs) alternatives for remote AI training work are [Outlier](https://outlier.ai/faq), [Mercor](https://talent.docs.mercor.com/how-to/payments), [Alignerr](https://www.alignerr.com/), [Mindrift](https://mindrift.ai/), [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) and [Prolific](https://www.prolific.com/ai-taskers)."`
+   Why: seven `unlinked-company` first mentions. No prose on this page reuses these URLs.
+2. **introText** `" Many workers look for sites like DataAnnotation when they experience empty project queues, account reviews, or want a second source of task volume."`
+   → `"DataAnnotation's [Trustpilot reviews](https://www.trustpilot.com/review/dataannotation.tech) list long stretches with no available work and balances held during account review among the recurring complaints. A second platform gives you somewhere to work when one queue is empty."`
+   Why: "many workers" is unsourced, and there is a stray leading space.
+3. **introText** `"These six platforms are evaluated using only verified records, published company pricing, legal dockets, and official worker documentation as of October 2026. Because compensation rules and project availability vary significantly by background, this guide examines how each platform handles task pricing, payout schedules, and worker vetting."` → `""`
+   Why: meta-narration ("this guide examines"), "significantly", and it duplicates rankingCriteria.
+4. **rankingCriteria** (whole field), from `"Each option is evaluated across four concrete operational factors based strictly on verified records. First, pay transparency,"` through `"or reported data breaches."`
+   → `"Each option is compared on four factors: pay transparency, payout method and schedule, entry requirements, and track record. Pay transparency means a published hourly range rather than pay set per project or listing. Track record covers lawsuits, settlements, regulator actions and data breaches found on court dockets and in named news reports. The platforms are listed in order of how directly their workflow replaces DataAnnotation's mix of general and coding task work, rather than as a quality ranking."`
+   Why: formatting slop (First/Second/Third/Fourth fragments), and "bi-monthly" is wrong; Mindrift pays twice monthly.
+5. **options[0].limitations[1]** `"Parent company Scale AI agreed to a $12.5 million settlement in California misclassification suits"`
+   → `"A proposed $12.5 million settlement of California misclassification suits against Scale AI awaits final approval on October 30, 2026; Scale AI denies the allegations"`
+6. **options[1].strengths[0]** `"High reported earning potential, with TechCrunch reporting average expert earnings over $85 per hour"`
+   → `"[TechCrunch reported](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/) in October 2025 that Mercor experts average over $85 per hour"`
+   Why: TechCrunch was unlinked.
+7. **options[1].strengths[2]** `"Provides clear tax documentation with Form 1099-NEC delivered via Stripe for US workers earning over $600"`
+   → `"Mercor's help page says US workers who submit a W-9 and earn over $600 get a Form 1099-NEC through Stripe by February"`
+8. **options[1].strengths[3]** `"Individual listings show substantial compensation, such as $70 to $110 per hour for news analysts"` → `"One listing for news analysts and journalists showed $70 to $110 per hour"`
+   Why: the fact list has a single listing, not a plural.
+9. **options[1].limitations[1]** `"Experienced a data breach in March 2026 leading to multiple federal lawsuits over exposed personal data"`
+   → `"A March 2026 breach tied to the LiteLLM supply-chain attack was followed by contractor class actions alleging exposure of SSNs, addresses and interview recordings"`
+   Why: the exposure is alleged, not established.
+10. **options[1].limitations[3]** `"Lower-tier projects can see rate drops, such as the Nova project offered at $16 per hour"`
+    → `"[Business Insider reported](https://www.aol.com/articles/ai-startup-powering-meta-openai-230627434.html) a Meta project, Nova, offered at $16 per hour, $5 less than the project it replaced; Mercor called the report inaccurate"`
+11. **options[1].pricing** `"Set per listing; reported expert roles average over $85/hr, with listings from $16/hr to $110/hr"` → `"Set per listing; TechCrunch reported an average over $85/hr (Oct 2025)"`
+    Why: the $16 to $110 "listings" range was synthesized from a reported project offer and one listing.
+12. **options[2].strengths[3]** `"No major worker misclassification or breach lawsuits identified on court dockets"` → `"No lawsuits against Alignerr or Labelbox found in an October 2026 search"`
+    Why: "No major" implies minor suits exist.
+13. **options[2].limitations[0]** `"Job boards show lower baseline US rates, including $25 to $38 per hour on Greenhouse"`
+    → `"One [Greenhouse posting](https://job-boards.greenhouse.io/alignerr/jobs/4859253007) listed $25 to $38 per hour for US-based candidates"`
+14. **options[2].pricing** `"$80/hr advertised average pay; listings range from $25-$38/hr to $40-$120/hr"`
+    → `"$80/hr shown as \"Average pay\" on homepage; listed roles $30 to $35/hr up to $40 to $120/hr"`
+    Why: the homepage roles start at $30 to $35. The $25 to $38 figure is a separate posting.
+15. **options[3].strengths[3]** `"Explicitly states that assessments and onboarding are completely free"` → `"Mindrift's blog says joining and assessments should be free"`
+16. **options[3].limitations[1]** `"due to payment rail limits"` → `"because ID-verification or payment rails are unavailable there"`
+17. **options[4].description** `"Handshake AI runs an AI Fellowship that hires advanced degree holders as independent contractors to create complex prompts and fact-check model responses with rigorous citations. The platform serves as a high-paying alternative for researchers with graduate credentials."`
+    → `"Handshake AI runs an AI Fellowship whose fellows create prompts, evaluate AI responses and correct content with citations. Handshake hires fellows as 1099 independent contractors, and most roles need a Master's, PhD or Postdoc."`
+    Why: "rigorous" is embellishment, "The platform" is a coy abstraction, and "high-paying" is unsupported.
+18. **options[4].strengths[1]** `"Predictable weekly payouts sent via Stripe by Wednesday afternoon"` → `"Payouts typically sent by Wednesday afternoon for the prior Monday to Sunday week, through Stripe"`
+    Why: the source says "typically" and "can often take 48 hours".
+19. **options[4].limitations[3]** `"Reported contractor disputes over account suspensions and unpaid earnings on external projects"`
+    → `"[Business Insider reported](https://www.aol.com/articles/contractors-worked-openai-projects-handshake-050101409.html) that contractors on OpenAI projects said Handshake AI suspended accounts and withheld pay with no appeal process"`
+20. **options[5].bestFor** `"General contributors wanting guaranteed hourly wage floors and flexible cashouts"` → `"Study participants who want a researcher-set minimum hourly rate and PayPal cashouts"`
+21. **options[5].description** `"It enforces strict minimum compensation standards for every task hosted on the platform."` → `"Prolific requires researchers to pay participants at least £6 / $8 per hour and recommends at least £9 / $12."`
+    Why: "every task" overclaims. AI Tasker pay is unpublished.
+22. **options[5].limitations[0]** `"Overall pay ceiling is lower than specialized coding or domain-expert platforms"` → `"Payments can only be transferred through PayPal"`
+    Why: the original is unsupported, and the replacement is a sourced limitation.
+23. **options[5].limitations[2]** `"Subject to PayPal currency conversion fees for non-domestic earnings"` → `"PayPal may charge for currency conversion"`
+24. **comparisonTable.rows[5].values[1]** `"$8/hr minimum floor"` → `"$8/hr (£6) researcher minimum"`
+25. **sections[0].heading** `"How These Platforms Differ From DataAnnotation"` → `"How These Platforms Differ from DataAnnotation"`
+    Why: `heading-case`; "from" is a minor word.
+26. **verdict**:
+    - `"where published and reported hourly rates frequently exceed $70 to $100 per hour"` → `"where Handshake AI publishes $30 to $125 per hour and TechCrunch reported Mercor experts average over $85"`
+    - `"while Prolific guarantees an $8 hourly floor for research-backed studies"` → `"while Prolific requires researchers to pay study participants at least $8 an hour"`
+27. **verdict** paragraph 2: `"Our recommendation would change if legal proceedings alter independent contractor operations across these platforms. Scale AI's $12.5 million settlement in California worker misclassification lawsuits and Handshake's unpaid wage litigation under the Fair Labor Standards Act indicate rising regulatory pressure on task classifications. If platforms transition from flexible 1099 contracts to structured agency employment, project flexibility and onboarding standards will shift."`
+    → `"None of these platforms fits someone who needs guaranteed hours or a steady paycheck: Mindrift pays only approved tasks, and none of these platforms' FAQs promises a set volume of work. Our answer would change if Outlier or Mercor published a platform-wide pay range, or if the McKinney settlement's final approval on October 30, 2026 changed how Scale AI classifies Outlier contributors."`
+    Why: "who this is not for" was missing. "Rising regulatory pressure" is unsupported; the Department of Labor dropped its Scale AI probe. The last sentence was speculative.
+28. **sections[0].content**:
+    - `"paying contractors starting at $25 to $50 per hour for general tasks and $40 to $150 per hour for coding projects via PayPal"` → `"advertising general work starting at $25 to $50+ per hour and coding starting at $40 to $150+, paid through PayPal"`
+      Why: "+" was dropped, and advertised rates were stated as pay.
+    - `" Mercor distributes pay weekly"` → `"Mercor distributes pay weekly"` (stray leading space)
+29. **sections[0].content** `"uses an automated tasking queue similar to DataAnnotation but requires an associate degree, resume, and LinkedIn profile during onboarding."`
+    → `"offers similar prompt-writing and response-ranking tasks but requires an associate degree, a resume and a LinkedIn profile."`
+    Why: "automated tasking queue" is unsupported.
+30. **sections[0].content**:
+    - `"We excluded two older crowdsourcing providers from this roundup."` → `"Two platforms are left out of this list."` ("older" is unsupported)
+    - `"TELUS Digital does not publish verified rate cards or payment mechanics on an official worker page, and Remotasks halted new signups across several international markets while its current status remains unconfirmed."` → `"TELUS Digital has no official page publishing its rater pay or payment method. [Remotasks](https://www.remotasks.com/) shut down in Kenya, Nigeria and Pakistan in 2024, [Rest of World reported](https://restofworld.org/2024/scale-ai-remotasks-banned-workers/), and its current status is unconfirmed."`
+31. **sections[1].content** `"Your academic background and professional credentials determine which platform yields the highest return on your tasking time. AI labs pay wide rate spreads depending on whether a task requires basic natural language fluency or specialized technical domain knowledge."`
+    → `"Your degree and professional credentials decide which of these platforms will take you and at what rate. In March 2026, [Deel](https://www.deel.com/deel-works/ai-trainers-fast-growing-job) put AI-trainer pay at about $15 an hour for annotators in the Philippines up to about $100 an hour for US physicians."`
+    Why: the original claim was unsourced. The replacement is sourced and adds depth.
+32. **sections[1].content**:
+    - `"Prolific also serves generalist contributors well by guaranteeing a minimum researcher wage of $8 per hour"` → `"Prolific also takes generalists, and it requires researchers to pay study participants at least $8 per hour"`
+    - `"Coders and STEM specialists should focus on Alignerr, Handshake AI, or Mercor."` → `"Coders and credentialed specialists should look at Handshake AI, Mercor and DataAnnotation's own coding tier."` (nothing sources Alignerr for coders)
+    - `"and individual job listings paying up to $110 per hour for news analysts and journalists"` → `"and one listing for news analysts and journalists paying $70 to $110 per hour"`
+33. **sections[2].content**:
+    - `"Legitimate AI training platforms never charge workers signup fees, equipment costs, or assessment testing fees. The Federal Trade Commission issued a consumer alert warning job seekers about remote work scams where fraudulent recruiters contact candidates via text message or messaging apps offering online assessor jobs."` → `"The [Federal Trade Commission](https://consumer.ftc.gov/articles/job-scams) says legitimate employers don't charge you to get a job. Its April 2026 [consumer alert](https://www.consumer.ftc.gov/consumer-alerts/2026/04/job-offer-text-probably-scam) warns of fake recruiters who text or message candidates on WhatsApp or Telegram offering remote \"online assessor\" jobs."`
+      Why: the original was an unattributed universal claim, and the FTC was unlinked.
+    - `"Both DataAnnotation and Mindrift state on their official websites that joining, assessments, and onboarding tests are completely free."` → `"DataAnnotation's FAQ says it charges no signup fees and \"will never ask for money from you for anything,\" and Mindrift's blog says joining and assessments should be free."`
+34. **sections[3].content**:
+    - `"must be reported to the Internal Revenue Service regardless"` → `"must be reported to the [Internal Revenue Service](https://www.irs.gov/instructions/i1040sc) regardless"`
+    - `"Platforms do not withhold federal income tax, Social Security, or Medicare from your task payouts."` → `"Mercor says it does not deduct taxes from your payments, and Handshake AI says you are responsible for taxes on your own income."`
+      Why: the blanket no-withholding claim is unsupported.
+35. **faqs[0].answer** `"Mindrift provides entry-level writing and annotation work starting at $15 to $30 per hour, while Alignerr offers alignment projects across technical and language domains."`
+    → `"Mindrift publishes $15 to $30 per hour for entry-level work, and Alignerr, run by Labelbox, lists roles from $30 to $35 per hour up to $40 to $120 per hour on its homepage."`
+    Why: the claim-check removed "alignment" elsewhere on the page but left it here.
+36. **faqs[1].answer** (whole) `"Companies similar to Mercor include Handshake AI and the expert recruitment tiers of Outlier and DataAnnotation. While Mercor matches doctors, lawyers, and scientists with frontier AI labs at reported average rates over $85 per hour, Handshake AI recruits graduate degree holders for research fellowships paying $30 to $125 per hour."`
+    → `"Companies similar to Mercor include Handshake AI, which publishes $30 to $125 per hour for fellows who mostly hold graduate degrees, and DataAnnotation's STEM and professional tiers, which advertise rates starting at $40 to $125+ per hour. Mercor itself connects doctors, lawyers and scientists with AI labs, and TechCrunch reported its experts average over $85 per hour."`
+    Why: Outlier "expert recruitment tiers" is unsupported, and "frontier" is embellishment.
+37. **faqs[2].answer** (whole) `"Specialized platforms like Handshake AI and Mercor offer the highest published rates, with Handshake publishing ranges up to $125 per hour for graduate-level fellows and Mercor listing specialized roles up to $110 per hour. DataAnnotation advertises specialized coding tiers from $40 to $150 per hour, while generalist task platforms publish lower entry-level baselines between $15 and $30 per hour."`
+    → `"On published ranges, DataAnnotation's coding tier is highest, advertising rates starting at $40 to $150+ per hour. Handshake AI publishes $30 to $125 per hour, mostly for graduate-degree holders, and one Mercor listing showed $70 to $110 per hour. Entry-level rates are lower: Mindrift publishes $15 to $30 per hour. All of these are advertised rates, not guaranteed earnings."`
+    Why: the original contradicts itself. It calls Handshake and Mercor highest, then cites DataAnnotation at $150+.
+38. **faqs[3].answer** `"all utilize weekly payment schedules"` → `"all use weekly payment schedules"`
+39. **faqs[4].answer** `"Yes, contractors can sign up for multiple AI training platforms simultaneously. None of the official FAQs reviewed prohibit working across platforms, though contributors should review each platform's terms."`
+    → `"Yes. None of these platforms' FAQs prohibits working on other platforms, but read each contractor agreement before you sign it."`
+
+NOT FIXABLE IN PLACE (Links gate)
+- These organizations have no own-site URL on the closed list: Scale AI, Labelbox, Toloka, Stripe, Wise, Payoneer, Tipalti, Hyperwallet, Airtm, TELUS Digital. The only TELUS URL is the secondary aitrainer.work.
+
+
+TEE-UP RULING (orchestrator): add the tee-up as the 2nd sentence of introText using ONLY this licensed framing: "At ModernWallet, every guide we write starts from the platform's own published rules and pay pages." Adjust the platform noun to fit (e.g. 'the IRS's and each platform's own pages' on tax pages).

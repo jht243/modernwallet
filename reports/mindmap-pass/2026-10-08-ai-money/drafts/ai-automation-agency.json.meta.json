@@ -1,0 +1,429 @@
+{
+ "slug": "ai-automation-agency",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1777,
+ "floor": 1200,
+ "input_tokens": 30288,
+ "output_tokens": 4102,
+ "thinking_tokens": null,
+ "cached_tokens": 17751,
+ "est_cost_usd": 0.0261,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "emptied by the claim check (nothing in the fact list could carry it): ['How to Start an AI Automation Agency, Step by Step', 'What an AI Automation Agency Sells', 'AI Automation Agency Pricing Models and Retainers', 'Software Subscriptions and Infrastructure Operating Costs', 'Income Claims and Federal Trade Commission Rules'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1762,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    15,
+    1,
+    3
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "Client acquisition remains the real hurdle in running an agency, because operating the software is straightforward once you master the integration logic.",
+     "replacement": "Client acquisition, not tooling, remains the bottleneck in running an agency.",
+     "type": "unsupported",
+     "why": "SOURCE states client acquisition is the bottleneck, not that software is straightforward."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Targeting a single industry allows you to reuse integrations instead of designing custom logic from scratch for every contract.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that targeting an industry allows reusing integrations."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "This repeatable deployment keeps client delivery predictable and prevents scope creep from eroding your working hours.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that repeatable deployment prevents scope creep."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Clients rarely purchase standalone language models; they pay for software that moves customer inquiries, records, and files across operational applications automatically.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what clients purchase or pay for across applications."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "According to [Upwork's in-demand skills release](https://investors.upwork.com/news-releases/news-release-details/upworks-demand-skills-2026-demand-top-ai-skills-more-doubles-ai), completed contract volume measuring AI Integration grew 178% year over year, while AI Chatbot Development expanded 71%.",
+     "replacement": "According to [Upwork's in-demand skills release](https://investors.upwork.com/news-releases/news-release-details/upworks-demand-skills-2026-demand-top-ai-skills-more-doubles-ai), freelancer earnings on completed jobs for AI Integration grew 178% year over year, while AI Chatbot Development expanded 71%.",
+     "type": "contradicted",
+     "why": "Upwork measured freelancer earnings on completed jobs, not completed contract volume."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "An entry-level single workflow setup typically covers connecting a lead intake form to an internal notification channel.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe what a single workflow setup typically covers."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Multi-workflow implementations integrate multiple business departments, such as syncing appointment booking software with customer relationship management tools and accounting platforms.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe what multi-workflow implementations integrate."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Retainers should account for ongoing maintenance time, because third-party application programming interfaces (APIs) periodically update, break, or require credential re-authentication.",
+     "replacement": "Retainers can cover ongoing maintenance.",
+     "type": "unsupported",
+     "why": "SOURCE does not state why APIs break or require re-authentication."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Upwork's analysis concluded that simple execution tasks lose pricing power as foundational models become widely accessible to non-technical users.",
+     "replacement": "Upwork reads this as a sign that lower-complexity AI execution may become less lucrative as it scales.",
+     "type": "unsupported",
+     "why": "SOURCE says lower-complexity execution may become less lucrative as it scales, not accessible models."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Profitable agency owners position their services around tangible back-office outcomes, such as updating inventory records or reducing intake errors.",
+     "replacement": "Agency work focuses on selling outcomes for a specific niche rather than generic chatbots.",
+     "type": "unsupported",
+     "why": "SOURCE does not state inventory records or intake errors as examples."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Long-term client retainers depend on integrating specialized business data that simple chatbots cannot process independently.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what client retainers depend on."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Instead of manual data entry, the agency sets up automated sequences to route customer inquiries, organize records, and process workplace documentation.",
+     "replacement": "The agency connects AI tools to domain expertise and business workflows to deliver results.",
+     "type": "unsupported",
+     "why": "SOURCE does not state routing inquiries, organizing records, or processing documentation."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Yes, operating automation workflows requires paying for underlying software and model usage.",
+     "replacement": "Not necessarily, because n8n Community Edition is free to self-host, and other tools provide free tiers.",
+     "type": "contradicted",
+     "why": "n8n Community Edition is free to self-host, and tools offer free tiers."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "You do not necessarily need advanced coding experience to begin, as platforms like Zapier, Make, and n8n provide visual workflow builders.",
+     "replacement": "The named workflow-automation tools are n8n, Make, and Zapier; check each tool's documentation for technical requirements.",
+     "type": "unsupported",
+     "why": "SOURCE does not state coding requirements or call tools visual workflow builders."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "However, understanding API documentation, data payloads, and authentication methods is essential to troubleshoot broken integrations and handle custom client requests.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention data payloads or authentication methods."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "The named workflow-automation tools are n8n, Make, and Zapier; check each tool's documentation for technical requirements.",
+     "replacement": "The named workflow-automation tools are n8n, Make, and Zapier.",
+     "type": "unlinked-directive",
+     "why": "Directs reader to check documentation without a markdown link in that sentence."
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we evaluate new freelance paths by looking at verified costs and transparent market numbers rather than promotional hype.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION licenses only specific framings, not evaluating freelance paths by verified costs."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "1. Pick a single business niche, such as dental clinics, real estate brokerages, or local contractors, so you solve one problem well.",
+     "replacement": "1. Pick a single business niche, so you solve one problem well.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention dental clinics, real estate brokerages, or local contractors."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "2. Choose one specific workflow, such as forwarding web-form leads into a customer database or drafting email replies.",
+     "replacement": "2. Choose one specific, repeatable workflow.",
+     "type": "unsupported",
+     "why": "SOURCE does not specify forwarding web-form leads into customer databases or email replies."
+    }
+   ],
+   "deleted_final": 3,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 1978
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-09T10:40:51-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-08-ai-money/audit/ai-automation-agency.findings.txt",
+    "applied": [
+     {
+      "id": "title",
+      "quote": "AI Automation Agency: How to Start and Set Pricing",
+      "replacement": "How to Start an AI Automation Agency and Price It",
+      "type": "Colon two-clause headline tell",
+      "why": "Avoid colon two-clause structure in headings and titles."
+     },
+     {
+      "id": "metaDescription",
+      "quote": "and navigate self-employment taxes.",
+      "replacement": "and handle self-employment taxes.",
+      "type": "LLM filler verb",
+      "why": "Replace filler verb 'navigate'."
+     },
+     {
+      "id": "introText",
+      "quote": "build it on workflow software like n8n or Make,",
+      "replacement": "build it on workflow software like [n8n](https://n8n.io/pricing/) or [Make](https://www.make.com/en/pricing),",
+      "type": "Unlinked first mention",
+      "why": "Link tools on first mention to allowed pricing URLs."
+     },
+     {
+      "id": "introText",
+      "quote": "Client acquisition, not tooling, remains the bottleneck in running an agency.",
+      "replacement": "At ModernWallet, we show the math, which here means turning each published agency price into an hourly rate you can check against your own. Finding clients takes more work than the tooling, which can start free on n8n's self-hosted Community Edition.",
+      "type": "Antithesis tell and missing site voice framing",
+      "why": "Add allowed editorial framing and remove 'X, not Y' phrasing."
+     },
+     {
+      "id": "introText",
+      "quote": " Reliable execution requires matching your service fees to actual labor hours and software overhead. This guide walks through the complete setup sequence, realistic client pricing models, platform subscription costs, consumer-protection rules, and your self-employment tax obligations as of October 2026.",
+      "replacement": "",
+      "type": "Meta-narration and vague filler",
+      "why": "Remove meta-narration guide announcement and filler sentences."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Starting an AI automation agency requires a sequential operating plan centered on repeatable workflow delivery.",
+      "replacement": "You start an AI automation agency by selling one tested workflow to a few local businesses, then repeating it.",
+      "type": "Corporate filler wording",
+      "why": "Simplify opening sentence into direct operator instructions."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "3. Build the automation prototype using a dedicated automation tool to confirm that data flows cleanly between services.",
+      "replacement": "3. Build a working prototype in n8n or Make and confirm that data passes cleanly between the client's apps.",
+      "type": "Coy abstraction",
+      "why": "Name concrete workflow tools supported by the fact list."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "4. Set your pricing structure as an upfront deployment charge paired with an ongoing monthly support retainer.",
+      "replacement": "4. Price it as a setup fee plus a monthly retainer. The only detailed published dataset, self-published by [Aumiqx](https://aumiqx.com/services/ai-automation-agency/), puts median entry prices near $1,000 per workflow and $1,423 a month for a build retainer.",
+      "type": "Intent answered late",
+      "why": "Provide core pricing numbers directly in the initial step sequence."
+     },
+     {
+      "id": "sections[1].heading",
+      "quote": "What an AI Automation Agency Actually Sells",
+      "replacement": "What an AI Automation Agency Sells",
+      "type": "Headline tell",
+      "why": "Remove 'actually' from heading."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "On [Upwork](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates), this function is categorized under the role of AI Orchestrator, defined as someone who pairs generative models with domain judgment to deliver practical business results.",
+      "replacement": "[Upwork](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates)'s Future Workforce Index 2026 names a matching emerging role, the \"AI Orchestrator\": someone who connects AI tools to domain expertise, applies judgment, and turns AI output into business results.",
+      "type": "Source overstatement",
+      "why": "Align description strictly with Upwork Future Workforce Index definition."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "No government regulator or neutral industry research group publishes an independent benchmark of agency retainers.",
+      "replacement": "The published figures on AI automation agency pricing all come from vendors or agencies with a commercial interest.",
+      "type": "Absolute claim",
+      "why": "State that published figures originate from vendors rather than claiming universality."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "compiled by [Aumiqx](https://aumiqx.com/services/ai-automation-agency/), an agency services company",
+      "replacement": "compiled by Aumiqx, an agency services company",
+      "type": "Duplicate link",
+      "why": "Aumiqx URL moved to first mention in section 1."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "On [n8n](https://n8n.io/pricing/), hosted cloud",
+      "replacement": "On n8n, hosted cloud",
+      "type": "Duplicate link",
+      "why": "n8n URL linked earlier on first mention."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "On [Make](https://www.make.com/en/pricing), plans include",
+      "replacement": "On Make, plans include",
+      "type": "Duplicate link",
+      "why": "Make URL linked earlier on first mention."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Developing client prompts requires professional artificial intelligence subscriptions.",
+      "replacement": "A paid AI model plan adds to those costs.",
+      "type": "Factual inaccuracy",
+      "why": "Paid plans are not required to develop prompts since free tiers exist."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Both platforms grant user ownership rights over generated outputs according to their terms of service, allowing commercial use of prompt outputs in client systems.",
+      "replacement": "[Anthropic's consumer terms](https://www.anthropic.com/legal/consumer-terms) and [OpenAI's terms of use](https://openai.com/policies/terms-of-use/) both assign you their rights in the output, and Anthropic's terms contain no general ban on commercial use.",
+      "type": "Coy abstraction and unsupported claim",
+      "why": "Name specific terms accurately without inferring general commercial permissions."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "In March 2026, the FTC entered a proposed settlement including a ban on selling business opportunities and an $18 million judgment against the company and its operators.",
+      "replacement": "In March 2026, the FTC announced a [proposed settlement](https://www.ftc.gov/news-events/news/press-releases/2026/03/air-ai-its-owners-will-be-banned-marketing-business-opportunities-settle-ftc-charges-company-misled) with a ban on selling business opportunities and an $18 million judgment against Air AI and its owners, mostly suspended.",
+      "type": "Inaccurate legal status and missing link",
+      "why": "Announced proposed settlement, mostly suspended judgment, and link FTC release."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Building an agency is a professional service business that depends on sales outreach and client retention, not a passive income turnkey system.",
+      "replacement": "An agency earns money only while you find clients and keep them on retainers.",
+      "type": "Antithesis tell",
+      "why": "Eliminate 'X, not Y' sentence pattern."
+     },
+     {
+      "id": "sections[5].heading",
+      "quote": "Market Trends: Generic Bots vs Complex Integrations",
+      "replacement": "Upwork Pay Trends for Simple and Complex AI Work",
+      "type": "Colon-drama heading",
+      "why": "Remove colon and dramatic contrast phrasing."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "According to the [Upwork Future Workforce Index 2026](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates),",
+      "replacement": "According to Upwork's Future Workforce Index 2026,",
+      "type": "Duplicate link",
+      "why": "Upwork report URL was already linked in section 2."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "In contrast, Upwork reported that freelancers delivering complex workflows experienced a 45% increase in annual earnings.",
+      "replacement": "In contrast, Upwork reported that freelancers doing more complex work with AI saw earnings rise 45% year over year.",
+      "type": "Inaccurate paraphrase",
+      "why": "Source states 'freelancers doing more complex work with AI saw earnings rise 45% year over year'."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Freelancers performing skilled AI work on Upwork earned 34% more per hour than non-AI peers, though Upwork emphasized that basic tasks face downward rate pressure.",
+      "replacement": "Freelancers who do AI work on Upwork earn 34% more per hour than those who don't use AI, though Upwork adds that \"not all AI work is becoming more valuable.\"",
+      "type": "Unsupported phrasing",
+      "why": "Use exact findings from Upwork report without adding unsupported descriptors."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Selling generic chat widgets or off-the-shelf text generators no longer commands premium fees. Agency work focuses on selling outcomes for a specific niche rather than generic chatbots.",
+      "replacement": "For an agency, that data argues for selling a specific outcome to one niche instead of a generic chatbot.",
+      "type": "Unsupported assumption",
+      "why": "Frame conclusion strictly around Upwork survey data."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Under Internal Revenue Service (IRS) regulations,",
+      "replacement": "Under [Internal Revenue Service](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) (IRS) rules,",
+      "type": "Unlinked first mention",
+      "why": "Link IRS on first mention to allowed self-employment tax URL."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "You can project your tax liability using our [self-employment tax calculator](/self-employment-tax/) to avoid surprise year-end balances.",
+      "replacement": "Our [self-employment tax calculator](/self-employment-tax/) estimates the bill.",
+      "type": "Monotone sentence rhythm",
+      "why": "Vary sentence length in section."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Payments follow statutory deadlines on April 15, June 15, September 15, and January 15 of the following tax year.",
+      "replacement": "The due dates are April 15, June 15, September 15 and January 15 of the next year.",
+      "type": "Sentence length clustering",
+      "why": "Shorten to balance section rhythm."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Software subscriptions like Make, Zapier, and paid AI development accounts qualify as ordinary and necessary operating expenses when used exclusively for business operations.",
+      "replacement": "Subscriptions such as Make, Zapier or a paid AI plan are deductible only if they meet that ordinary-and-necessary test for your business.",
+      "type": "Fact conflation and overclaim",
+      "why": "'Exclusively' belongs to home-office deduction; clarify ordinary-and-necessary test applies."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "as your principal place of business.",
+      "replacement": "as your principal place of business.\n\nThis is general information, not financial, tax or legal advice.",
+      "type": "Missing required disclaimer",
+      "why": "Append general information disclaimer to end of tax section."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "faqs[5].answer",
+      "quote": "The named workflow-automation tools are n8n, Make, and Zapier.",
+      "finding": "Non-responsive answer",
+      "why": "Answer question using free tiers to test workflows without making no-code claims.",
+      "replacement": "n8n, Make and Zapier are workflow-automation tools, and each has a free way to start: n8n's self-hosted Community Edition, Make's Free plan and Zapier's Free plan. Build one prototype on a free plan before you sell anything to see how much code your workflow needs.",
+      "reason": "replacement adds [\"Make's\", \"Zapier's\"] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [
+      {
+       "id": "sections[6].body",
+       "quote": "Under [Internal Revenue Service](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) (IRS) rules, net self-employment earnings of $400 or more require filing Schedule SE, with 92.35% of net profit subject to self-employment tax.",
+       "replacement": "Under Internal Revenue Service (IRS) rules, net self-employment earnings of $400 or more require filing Schedule SE, with 92.35% of net profit subject to self-employment tax.",
+       "type": "unsupported",
+       "why": "IRS URL is not permitted on the closed URL list."
+      }
+     ],
+     "deleted_final": 1,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1777,
+    "flags": [
+     "emptied by the claim check (nothing in the fact list could carry it): ['How to Start an AI Automation Agency, Step by Step', 'What an AI Automation Agency Sells', 'AI Automation Agency Pricing Models and Retainers', 'Software Subscriptions and Infrastructure Operating Costs', 'Income Claims and Federal Trade Commission Rules'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+    ]
+   }
+  ]
+ },
+ "seconds": 336.6,
+ "response_id": "PwLJarz9IM6LqtsPyeWo2QY",
+ "generated_at": "2026-10-09T10:09:00-0500"
+}

@@ -1,0 +1,116 @@
+## RUN-LEVEL HARD FAILS (chart records; not page text)
+
+**R1. GATE Medium/row records and GATE Register.** The chart rows in `reports/mindmap-pass/2026-10-08-ai-money.md` for all 4 slugs have no `register:` record. `page type` and `medium` (text → text) are present.
+- Fix (orchestrator, chart edit): add `register: operator` to all 4 rows. All 4 pages are already written in operator "you" voice.
+
+**R2. GATE Anchor and GATE Tee-up.** No row carries `anchor-exempt:` or `teeup-exempt:`.
+- Fix (chart): add `anchor-exempt: content property, editorial "we" only (_experience.md SPECIFICS)` to all 4 rows.
+- Add `teeup-exempt: API page, claim check removed the "At ModernWallet" sentence` to ai-training-jobs and is-mercor-legit, which have no tee-up.
+- On DataAnnotation and Outlier the tee-up is in the wrong position (sentence 3); the page fixes below move it.
+
+**R3. GATE Links: NOT FIXABLE IN PLACE under the closed URL list.**
+- These organisations are named on the pages, but the allowed list has no first-party URL for them, so their first mention cannot be linked: Scale AI, Labelbox, Toloka, Stryder Corp., PayPal, Airtm, Stripe, Wise, Payoneer, Tipalti, Persona, Meta, Upwork, HireArt, Felicis, Benchmark, General Catalyst, LiteLLM, Wired, The Verge, New York Magazine.
+- Every organisation that does have an allowed URL is linked at first mention by the fixes below.
+- The orchestrator has to choose: add official URLs to `allowed-urls.all.txt` and splice the links, or accept this as a known exception for the run. I have not counted it toward any page's verdict.
+
+---
+
+
+ORCHESTRATOR RULINGS: unlinkable organisations (R3) are accepted unlinked; row records are fixed in the chart, not the draft.
+
+## 3. is-outlier-ai-legit (review, floor 1,500). VERDICT: FAIL, fix-in-place (26)
+
+Hard catches on this page:
+- The forbidden "$10–$50" range IS stated (sections[3]). Fixed in #12.
+- The McKinney settlement is described as "without admitting wrongdoing" rather than "defendants deny". Fixed in #17.
+
+1. **title** `"Is Outlier AI Legit? Verdict, Pay, and Lawsuits"` and **h1** `"Is Outlier AI Legit? Real Contractor Pay, Lawsuits, and Risks"` → both `"Is Outlier AI Legit and Does It Pay Contractors?"` (48 chars).
+   - Why: headline tricolon.
+2. **metaDescription**: `"Is Outlier AI legit? We review real contractor pay, Scale AI ownership, Trustpilot ratings, wage lawsuits, and scam warning signs as of October 2026."` → `"Outlier AI is a real Scale AI platform that pays weekly but publishes no pay range. Payouts, lawsuits, Trustpilot themes and scam signs as of October 2026."` (155 chars).
+   - Why: "real contractor pay" implies a published figure, and Outlier publishes none.
+3. **introText**:
+   - Quote: `"Outlier AI is a real data-training platform operated by Scale AI that pays independent contractors weekly on Tuesdays through PayPal, Airtm, or ACH bank transfers. The company does not publish a platform-wide pay rate card, so your exact hourly earnings depend on individual project assignments that you review before accepting."`
+   - Replacement: `"[Outlier AI](https://outlier.ai/faq) is a real data-training platform operated by Scale AI that pays independent contractors weekly on Tuesdays through PayPal, Airtm, or ACH bank transfers. At ModernWallet, we built this review from Outlier's own FAQ, court dockets, and [Trustpilot reviews](https://www.trustpilot.com/review/outlier.ai) so you can weigh the tradeoffs before signing up. Outlier does not publish a platform-wide pay rate card, so your hourly earnings depend on each project's rate, which you see before starting."`
+   - Why: first mentions unlinked; tee-up moved from sentence 3 to sentence 2; coy-abstraction.
+4. **introText**:
+   - Quote: `"At ModernWallet, we review flexible earning platforms by analyzing verified business filings, court records, and official policies so you can evaluate the financial tradeoffs before signing up. While Outlier distributes real money to contributors, workers face unpredictable task volumes, sudden deactivations, and ongoing litigation regarding worker classification in California court dockets."`
+   - Replacement: `"Reviewers on Trustpilot report unpredictable task volume and sudden deactivations. A $12.5 million California worker-misclassification settlement involving Scale AI is pending final approval on October 30, 2026."`
+   - Why: GATE Experience truth. "Verified business filings" is an invented methodology. The paragraph also states Trustpilot themes as fact.
+5. **sections[0].body**: `"The platform is not an outright scam, but it does not offer guaranteed hours, stable employment, or a fixed baseline wage."` → `"Outlier is not a scam, but it offers no guaranteed hours and publishes no pay range. You see each project's rate before you start."`
+   - Why: coy-abstraction, and the verdict lacked the row's "no published range" answer.
+6. **sections[0].body**:
+   - Quote: `"Contributors generate prompts, evaluate model responses, rank outputs, and improve model responses. The company processes payouts every Tuesday for work logged through the preceding Monday midnight UTC via PayPal, Airtm, or ACH direct deposits. However, independent contractor reviews highlight frequent project removals, onboarding delays, and sudden account deactivations that leave contributors without predictable monthly income."`
+   - Replacement: `"Contributors generate prompts, rank AI outputs, and improve model responses. Outlier pays every Tuesday for work completed from the previous Tuesday through Monday (midnight UTC), via PayPal, Airtm, or ACH bank transfer. Trustpilot reviewers describe project removals, onboarding glitches, and deactivations with little explanation, so income from Outlier is irregular."`
+   - Why: invented task wording; coy-abstraction; review themes overstated as "frequent" and unattributed.
+7. **sections[0].body**: `"Furthermore, parent firm Scale AI faces substantial legal scrutiny over contractor treatment. A $12.5 million settlement resolving class action claims alleging worker misclassification in California is pending final approval on October 30, 2026."` → `"Scale AI, which operates Outlier, has faced several worker lawsuits. A $12.5 million settlement of California class claims alleging worker misclassification is pending final approval on October 30, 2026, and the defendants deny the allegations."`
+   - Why: filler and vague abstraction; the required defendants' denial was missing.
+8. **sections[1].body**: `"Outlier is an operational platform owned and managed by [Scale AI](https://outlier.ai/faq), with website footers identifying intellectual property under Smart Ecosystems Inc."` → `"Outlier is operated by Scale AI, and its site footer reads "powered by Scale AI · © 2026 Smart Ecosystems.""`
+   - Why: "owned" and "Inc." are unsupported, the Scale AI anchor pointed at Outlier's FAQ, and it was a repeat link.
+9. **sections[1].body** (three edits):
+   - `"founding chief executive officer Alexandr Wang"` → `"chief executive officer Alexandr Wang"`. Why: "founding" is unsupported.
+   - `"Shortly after the leadership change, corporate restructuring triggered significant workforce reductions across the business."` → `""`. Why: banned word "significant", and the next paragraph restates it.
+   - `"Droege noted in the staff memorandum that the business had ramped up its generative AI capacity too quickly."` → `"Droege's memo said Scale AI had "ramped up our GenAI capacity too quickly.""`. Why: uses the sourced quote and the real name.
+10. **sections[2].body**: `"According to the [Outlier FAQ](https://outlier.ai/faq), contributors generate prompts, rank AI outputs, improve model responses, or complete other tasks.\n\n \n\n"` → `"According to the Outlier FAQ, contributors generate prompts, rank AI outputs, improve model responses, or complete other tasks.\n\n"`
+    - Why: repeat link and an empty whitespace paragraph (formatting).
+11. **sections[3].body**: `"According to the official [Outlier FAQ](https://outlier.ai/faq), tasking"` → `"According to the Outlier FAQ, tasking"`
+    - Why: repeat link.
+12. **sections[3].body**: `"Unofficial search engine snippets have previously claimed that Outlier pays between $10 and $50 per hour, but that range is unverified, and the company publishes no minimum or maximum dollar figure on its live website. "` → `"As of October 2026, the FAQ gives no minimum or maximum dollar figure."`
+    - Why: the row explicitly says to never state $10–$50; the item is secondary and unverified. This edit also breaks the `monotone-rhythm` run of 10+ long sentences across sections[2] and [3] (lengths 16 to 35).
+13. **sections[4].body** (three edits):
+    - `"according to platform documentation"` → `"according to the Outlier FAQ"`
+    - `"and present a valid government-issued photo identification card along with a mobile phone registered in their country of residence."` → `"and have a valid ID and mobile phone from their country of residence."` Why: "photo" and "registered" are embellishments the source does not support.
+    - `"Crucially, Outlier does not state"` → `"Outlier does not state"`. Why: banned word "crucial".
+14. **sections[5].body**: `"Outlier maintains a predictable payment schedule for approved, completed project work. According to the [Outlier FAQ](https://outlier.ai/faq), payments"` → `"Outlier pays on a fixed weekly schedule. According to the Outlier FAQ, payments"`
+    - Why: repeat link, plus the unsupported "approved".
+15. **sections[5].body**: `"Payout regularity remains one of the primary points of praise among active platform contributors. Outlier processes funds every seven days provided your account remains in good standing."` → `"Trustpilot reviewers praise on-time pay."`
+    - Why: unattributed review theme; "good standing" is an invented condition; the second sentence restates weekly pay.
+16. **sections[6].body** (four edits):
+    - `"The [Outlier FAQ](https://outlier.ai/faq) states plainly that you work as a freelancer, and the company does not provide visa sponsorship."` → `"The Outlier FAQ says you work as an independent contractor or freelancer, and Outlier does not offer visa sponsorship."` Why: repeat link and coy-abstraction.
+    - `"Self-employment tax equals 15.3% on 92.35% of your net business earnings, comprising 12.4% for Social Security up to the annual wage limit ($176,100 in 2025) and 2.9% for Medicare, plus an additional 0.9% Medicare tax above statutory thresholds."` → `"Self-employment tax is 15.3%: 12.4% for Social Security, up to the $176,100 wage base for 2025, and 2.9% for Medicare. It applies to 92.35% of your net earnings, and an extra 0.9% Medicare tax applies above $200,000 for single filers."` Why: overloaded 38-word sentence.
+    - `"Under Internal Revenue Service rules, businesses"` → `"Under [IRS rules](https://www.irs.gov/instructions/i1099mec), businesses"`. Why: unlinked first mention of the IRS.
+    - `"though certain states enforce lower $600 reporting minimums."` → `"though PayPal applies a $600 threshold in Vermont, Massachusetts, Virginia, and Maryland."` Why: misattributed; this is PayPal's threshold, not a state rule.
+17. **sections[7].body** (McKinney; six edits):
+    - `"Scale AI has faced extensive labor disputes regarding how it manages and classifies Outlier taskers."` → `"Scale AI has faced several labor lawsuits over how it pays and classifies Outlier taskers."`
+    - `"alleging that the company misclassified"` → `"alleging that Scale AI misclassified"`
+    - `"According to settlement administration records on [ClaimDepot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement),"` → `"According to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement),"`. Why: Claim Depot is not the settlement administrator.
+    - `"and related California actions without admitting wrongdoing."` → `"and related California actions. The defendants deny the allegations."`. Why: the fact list says the defendants deny.
+    - `"on Outlier or Remotasks between"` → `"on Outlier or [Remotasks](https://www.remotasks.com/) between"`. Why: unlinked first mention.
+    - `"and the San Francisco court scheduled the final approval hearing for October 30, 2026."` → `"and the final approval hearing is set for October 30, 2026, so the settlement is not yet final."`. Why: states the pending status explicitly.
+18. **sections[7].body** (Schuster):
+    - Quote: `"six contributors filed *Schuster v. Scale AI, Inc.* in the U.S. District Court for the Northern District of California (Docket 3:25-cv-00620 on [CourtListener](https://www.courtlistener.com/docket/69556383/schuster-v-scale-ai-inc/)), alleging psychological harm resulting from writing disturbing training prompts."`
+    - Replacement: `"six Outlier contributors filed *Schuster v. Scale AI, Inc.* in federal court in the Northern District of California (Docket 3:25-cv-00620 on [CourtListener](https://www.courtlistener.com/docket/69556383/schuster-v-scale-ai-inc/)). The suit alleges psychological harm from writing disturbing prompts."`
+    - Why: overloaded sentence.
+19. **sections[7].body**: `"against competitor Mercor and"` → `"against competitor [Mercor](/guides/is-mercor-legit/) and"`
+    - Why: unlinked first mention. The sibling route is on the allowed internal list.
+20. **sections[8].body**: `"User feedback across major review repositories reflects sharp divisions between positive payment mechanics and negative operational experiences. On [Trustpilot](https://www.trustpilot.com/review/outlier.ai), Outlier maintains a TrustScore of 4.1 out of 5 based on 5,483 contractor reviews, with 19% of contributors awarding a 1-star rating."` → `"As of October 2026, Outlier holds a Trustpilot TrustScore of 4.1 out of 5 based on 5,483 reviews, and 19% of those reviews give 1 star."`
+    - Why: unsayable sentence; "major review repositories" is unsupported because only Trustpilot was reviewed; repeat link.
+21. **sections[8].body**: `"Praise on Trustpilot primarily focuses on the speed of Tuesday payments, the convenience of remote work, and schedule autonomy. "` → `"Praise on Trustpilot centers on on-time pay and flexibility."`
+    - Why: embellishes the sourced themes.
+22. **sections[8].body**:
+    - Quote: `"Reviewers also criticize slow customer support and volatile task volumes that evaporate overnight. These wild shifts make it essential to build sound financial habits, which you can map out using our guide on [how to budget with irregular income](/guides/how-to-budget-with-irregular-income/)."`
+    - Replacement: `"Reviewers also describe onboarding glitches, slow support, and unpredictable task volume. If Outlier pays part of your bills, our guide on [how to budget with irregular income](/guides/how-to-budget-with-irregular-income/) shows how to plan around weeks with no tasks."`
+    - Why: banned word "essential"; "evaporate overnight" embellishes; vague phrasing.
+23. **sections[9].body** (three edits):
+    - `"Scammers frequently impersonate remote work platforms to steal personal information and money."` → `"Scammers pose as recruiters for remote rating work to get job seekers to send them money."`. Why: "steal personal information" is unsupported.
+    - `"offering remote data-rater positions via SMS, WhatsApp, and Telegram."` → `"offering remote "online assessor" jobs by text, WhatsApp, and Telegram."`. Why: uses the FTC's actual wording.
+    - `"Legitimate Outlier onboarding communications originate strictly through official company infrastructure. The platform identifies onboarding@outlier.ai on its [FAQ page](https://outlier.ai/faq) as its authorized contact."` → `"The Outlier FAQ lists onboarding@outlier.ai as its official sign-up contact, so be wary of sign-up messages from other addresses."`. Why: vague abstraction, coy-abstraction, repeat link.
+24. **sections[10].body**:
+    - `"relying on sporadic AI tasking will create severe budget shortfalls when task volumes drop."` → `"relying on Outlier tasks can leave you short when task volume drops."` Why: overclaim.
+    - Quote: `"If you prefer freelance work with transparent, published minimums, compare options like Prolific, which sets researcher pay floors at £6 or $8 per hour on its [researcher help center](https://researcher-help.prolific.com/en/article/2273bd), or explore peer platforms such as [Mindrift](https://mindrift.ai/), which lists entry-level rates from $15 to $30 per hour. Highly credentialed professionals may also explore domain-expert platforms or traditional freelance marketplaces."`
+    - Replacement: `"If you prefer published minimums, [Prolific](https://researcher-help.prolific.com/en/article/2273bd) requires researchers to pay participants at least £6 or $8 per hour. [Mindrift](https://mindrift.ai/) lists entry-level rates of $15 to $30 per hour. If you hold a Master's or PhD, the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) lists $30 to $125 per hour."`
+    - Why: the first sentence was overloaded (46 words), Prolific's first mention was unlinked, and the closing sentence was vague.
+25. **sections[10].body** (two edits):
+    - `"Our verdict on Outlier would become significantly more favorable if the platform introduced standardized pay floors, established formal appeal mechanisms for account deactivations, and paid workers for initial assessment time."` → `"Our verdict on Outlier would improve if Outlier published a pay floor, offered a formal appeal for deactivations, and said it pays for assessment time."`. Why: banned word "significantly", and coy-abstraction.
+    - `"verify all tax withholding using our"` → `"estimate your quarterly tax payments with our"`. Why: wrong. Nothing is withheld, so there is no withholding to verify.
+26. **FAQ answers** (three edits):
+    - faqs[1]: `"and uncompensated onboarding assessments."` → `"and onboarding assessments that Outlier does not say are paid."`. Why: whether onboarding is paid is UNKNOWN; "uncompensated" states it as fact.
+    - faqs[2]: `"However, recurring complaints regarding sudden project removals and a pending $12.5 million California worker misclassification settlement demonstrate meaningful operational and legal controversies."` → `"Recurring complaints cite sudden project removals, and a $12.5 million California worker-misclassification settlement involving Scale AI is pending final approval on October 30, 2026."`. Why: vague abstraction.
+    - faqs[3]: `"but the company does not publish"` → `"but Outlier does not publish"`. Why: coy-abstraction.
+
+Advisory:
+- `low information gain`: sections[2], which is thin and mostly internal links.
+- The July 2025 contractor cuts in sections[1] are not tied to what they mean for a contributor.
+- Unlinked organisations with no allowed URL: Scale AI, Upwork, HireArt, Meta (see R3).
+
+---
+

@@ -1,0 +1,405 @@
+PHASE 4 ADVERSARIAL AUDIT: 2026-10-08-ai-money, four API-generated pages
+
+I loaded and applied these files: _content-standard.md AUDITOR (lines 478 onward), _anti-ai-language.md AUDITOR, _experience.md, mindmap-pass/phase-4-audit.md and _remediation-ladder.md. I checked every page against its row prompt's closed fact list and its own CLOSED URL LIST. I confirmed that every replacement URL proposed below is on that page's own list. The text I audited is the current draft JSON, after the claim-check pass. These pages came from content_gen.py, so they are exempt from INTRO HUMANIZE, and their intros are in scope here.
+
+Checks that passed on all four pages:
+- **Self-serving-disclaimer grep** (exact phase-4 regex): zero hits on every page.
+- **Punctuation:** no em-dashes, en-dashes or exclamation marks.
+- **Wording:** no "honest". No byline or date sentence in prose.
+- **Links:** no off-list external URLs. No link to /youtube-money-calculator/.
+- **Disclaimer:** a sitewide "not advice" disclaimer is in src/components/SiteFooter.astro, so it is the page's final element.
+- **Load receipt:** the latest ledger entry is mindmap-pass phase-3, 2026-10-09T14:45. Its hashes are cs 7a486edc, aa ed445917 and exp 31d70e56, and they match `shasum` of the current files. This audit is read-only, so it did not write its own receipt.
+- **Tax math checks out:**
+  - $5,400 × 0.9235 × 0.153 = $762.9957, which rounds to **$763.00**.
+  - $7,000 × 0.9235 × 0.153 = $989.0685, which rounds to **$989.07**.
+  - meta.guards number "554" is IRS Topic 554 (irs.gov/taxtopics/tc554). It is legitimate.
+  - meta.guards number "6464.5" is $7,000 × 92.35% = $6,464.50. The arithmetic is right, but see the YouTube advisory notes.
+
+RUN-LEVEL FAILS: NOT FIXABLE IN PLACE (chart or orchestrator)
+
+- **R-1 GATE Register / Medium and row records.** The chart rows for all four slugs in reports/mindmap-pass/2026-10-08-ai-money.md carry no `register:` record. Medium and page type are present. All four pages are clearly `register: operator` because they address the reader as "you". Add the record to each row.
+- **R-2 GATE Tee-up.** None of the four pages has a tee-up after the claim-check deleted the "At ModernWallet, we…" sentences. No row carries a `teeup-exempt:` note.
+  - The fix is to add `teeup-exempt: API-generated; claim-check removed unsupported first-person` to the four rows.
+  - The alternative is a tee-up licensed by _experience.md, which the orchestrator would have to write.
+- **R-3 Row prompt error (youtube-taxes WORKED NUMBERS).** The row prompt says a $60,000 salary puts the channel profit in the "22% bracket". From my own knowledge of the 2026 brackets (Rev. Proc. 2025-32, not on the fact list): the single 12% bracket runs to $50,400. $60,000 − $16,100 = $43,900 of taxable wages. Adding about $6,505 of profit (after the half-SE deduction) reaches only about $50,405. So nearly all of the profit is taxed at 12%. The page text is fixed below (Y-8). Correct the prompt too.
+
+=====================================================================
+PAGE 1: dataannotation-vs-outlier (comparison, floor 1,500). VERDICT: FAIL
+=====================================================================
+- **Word count:** 2,237 by `wc -w` over introText, verdict, sections and FAQ answers. Depth passes, and still passes after the deletions below. meta.json says 2,610.
+- **Title:** 53 characters. **Meta description:** 134. Both pass.
+- **Objectivity:**
+  - Rows favouring DataAnnotation: published pay, pending legal matters.
+  - Rows favouring Outlier: payout method, payout timing, minimum education, Trustpilot.
+  - The verdict names the deciding condition, and it has both "not for" and "would change" lines.
+- **Rhythm FAIL:** `monotone-rhythm: sentences 0-9`, lengths [35,32,36,31,27,31,25,26,24,16], all long; and sentences 51-61.
+  - The overall distribution is S 6 / M 29 / L 76.
+  - Fixes 1-4, 10, 11 and 29 split these runs. Re-measure after applying them.
+
+MECHANICAL
+0. **Delete placeholder keys:** `metaTitle`, `subtitle`, `optionAName`, `optionBName`, `ctaTitle`, `ctaText`, `ctaButton` and `faqItems`. All are "" or [].
+   - None exists in `ComparisonEntry` in src/data/comparisons.ts, so there is nothing to fill.
+   - `relatedLinks: []` is also not in the interface. Drop it, or keep it if the build guard really needs it.
+   - The leading spaces after "\n\n" in introText are fixed by item 4.
+
+FIX-IN-PLACE
+1. **introText** `"DataAnnotation publishes starting hourly pay ranges across project categories and lets you request PayPal payouts after completing tasks, while Outlier publishes no general pay schedule and instead issues weekly Tuesday payouts through multiple payment rails."`
+   → `"[DataAnnotation](https://www.dataannotation.tech/faqs) publishes starting hourly pay rates and pays through [PayPal](https://www.paypal.com/us/cshelp/article/current-form-1099-k-reporting-thresholds-2025-update-help1131) when you request it. [Outlier](https://outlier.ai/faq) publishes no pay range but pays every Tuesday through PayPal, Airtm or ACH bank transfer."`
+   Why: an overloaded 35-word sentence and a weak opener. It also fixes the unlinked first mentions of DataAnnotation, PayPal and Outlier. Items 15 and 21 remove the later duplicate links.
+2. **introText** `"DataAnnotation advertises rates starting at $25 to $50 or more per hour for general work and $40 to $150 or more for coding, yet it restricts applicants to a single non-repeatable assessment."`
+   → `"DataAnnotation advertises general work starting at $25 to $50+ an hour and coding starting at $40 to $150+, and you get one attempt at its Starter Assessment."`
+   Why: overloaded.
+3. **introText** `"Outlier displays specific task pay before you begin each assignment, accepts applicants through a multi-step screening process, and disburses earnings on a strict weekly schedule via PayPal, Airtm, or direct Automated Clearing House (ACH) bank transfer."`
+   → `"Outlier shows each project's rate before you start it, after an onboarding that typically takes 30 to 90 minutes."`
+   Why: three ideas in 36 words, and it repeats sentence 1.
+4. **introText** `" Choosing between DataAnnotation vs Outlier determines whether you receive posted baseline rates with on-demand PayPal transfers, or undisclosed general rates with fixed weekly bank deposits across diverse artificial intelligence (AI) projects."` (note the leading space)
+   → `"Neither company publishes figures you can compare for the same task, so the published numbers cannot say which pays more. Pick DataAnnotation if you want to know a starting rate before you apply, and Outlier if you want a fixed Tuesday payday and a choice of payout methods."`
+   Why: a nominalized subject, a restatement of sentence 1, and a stray leading space. The intro also never gave the pick from the row's answer spec.
+5. **comparisonTable.rows[0].b** `"Operated by Scale AI under Smart Ecosystem Inc."` → `"Operated by Scale AI; site footer reads © 2026 Smart Ecosystems"`
+   Why: the fact list has the FAQ ("operated by Scale AI") and the footer ("Smart Ecosystems"). "Under Smart Ecosystem Inc." is an unsupported structure.
+6. **rows[6].b** `"Initial screening plus project-specific qualification screenings"` → `"Retake policy not published; project-specific onboarding follows screening"`
+   Why: the cell does not answer the "retakes" dimension, and Outlier's retake policy is unknown.
+7. **rows[7].a** `"Independent contractor role; platform charges no signup fees"` → `"FAQ calls workers contractors; no signup fees"`
+   Why: the DataAnnotation FAQ says "contractors", and "platform" is a coy abstraction.
+8. **rows[9].a** `"No confirmed federal court dockets or platform class actions"` → `"No federal docket naming DataAnnotation found (CourtListener, Oct 9, 2026)"`
+   Why: overclaim. A Surge AI class action exists, and whether it covers DataAnnotation workers is UNKNOWN.
+9. **rows[9].b** `"Pending $12.5M settlement in McKinney wage misclassification case"` → `"$12.5M McKinney misclassification settlement awaiting Oct 30, 2026 final approval; Scale AI denies the allegations"`
+   Why: the fact list includes the approval status and the denial.
+10. **verdict** `"Choose DataAnnotation if you want upfront advertised wage floors starting at $25 per hour, pass single-attempt assessments easily, and prefer drawing out PayPal earnings whenever tasks clear."`
+    → `"Choose DataAnnotation if you want an advertised starting rate (general work from $25 an hour) before you apply, can accept a single attempt at the Starter Assessment, and are happy to request PayPal payouts yourself."`
+    Why: "wage floors" contradicts the fact list's "not guaranteed earnings". "Pass … easily" fails the say-it-out-loud test.
+11. **verdict** `"Choose Outlier if you want earnings deposited automatically each Tuesday via bank transfer or Airtm, hold an associate degree, and prefer seeing specific task rates before committing to diverse model assignments."`
+    → `"Choose Outlier if you hold at least an associate degree and want pay sent every Tuesday by PayPal, Airtm or ACH bank transfer."`
+    Why: overloaded at 31 words, and "diverse model assignments" is vague.
+12. **sections[0].content** `"Worker access also differs significantly across both platforms. "` → `""`
+    Why: "significantly" is on the banned list, and the sentence carries no fact.
+13. **sections[0].content** `"Neither company guarantees ongoing hourly volume, making account stability an ongoing operational factor on both sites."`
+    → `"On [Trustpilot](https://www.trustpilot.com/review/outlier.ai) as of October 9, 2026, Outlier scored 4.1 out of 5 from 5,483 reviews and DataAnnotation scored 3.9 from 1,973. Reviews of both list stretches with no available work among the recurring complaints."`
+    Why: the original claim is unsourced, the trailing "making…" clause is unsayable, and the reader question's "reliable" half was unanswered in sections 1-2. That is `intent-answered-late`, and the top PAA question, "is outlier good", was answered only in the FAQ. This also links Trustpilot's first prose mention (see item 22).
+14. **sections[0].content** `"Evaluating DataAnnotation vs Outlier requires comparing transparency against payout structure. Workers who want posted baseline numbers gravitate toward DataAnnotation, while workers who prioritize varied payment rails and scheduled disbursements often lean toward Outlier. Because neither service restricts joining other platforms in their contractor guidelines, many freelancers maintain accounts on both to balance irregular task queues."`
+    → `"If you want a posted starting rate before you take a test, DataAnnotation gives you one. If you want a fixed weekly payday and a choice of PayPal, Airtm or ACH, Outlier gives you that. Neither FAQ prohibits working on other platforms, so many workers apply to both; read each contractor agreement before you sign it."`
+    Why: a nominalization, unsourced claims about how workers behave, and "contractor guidelines" was never read (only the FAQs were). "Many workers apply to both" comes from the row's answer line.
+15. **sections[1].content**:
+    - `"though the figures show minor internal variations across different answers"` → `"though different answers on the FAQ give different figures"`
+      Why: $25-$50+ versus $25-$30+, and $40-$150+ versus $50-$100, are not "minor".
+    - `"the [DataAnnotation FAQ](https://www.dataannotation.tech/faqs) states"` → `"the DataAnnotation FAQ states"`
+      Why: first-mention-only, after item 1.
+16. **sections[1].content** `"A search snippet once referenced an Outlier pay range of $10 to $50 per hour, but that source page encountered a redirect loop and the current live FAQ lists no specific dollar scale. "` → `""`
+    Why: secondary and unverified. The fact list's UNKNOWN section says "Outlier's current hourly rate range… do not state".
+17. **sections[1].content** `"rather than relying on an advertised baseline floor"` → `"rather than from an advertised starting rate"`
+    Why: "floor" implies a guarantee.
+18. **sections[1].content**:
+    - `"This structural difference affects how contractors evaluate their expected income. "` → `""` (filler)
+    - `"Outlier requires contributors to pass onboarding screenings before learning what individual clients will pay for task completions."` → `"At Outlier, you see a project's rate after onboarding, before you start that project."`
+      Why: "what clients will pay" is unsupported. Outlier shows "the tasking rate".
+19. **Headings:**
+    - **sections[2].heading** `"Getting In: Assessment and Onboarding Requirements"` → `"Assessment and Onboarding Requirements"`
+    - **sections[3].heading** `"Getting Paid: Methods, Schedules, and Rail Flexibility"` → `"Payout Methods and Schedules"`
+    Why: `headline-tell`, a colon two-clause formula plus a tricolon.
+20. **sections[2].content**:
+    - `"DataAnnotation enforces a strict policy allowing only one assessment attempt, meaning unsuccessful applicants receive no second chances or retakes. "` → `""`
+      Why: it restates the "single-attempt" sentence before it.
+    - `"The platform requires a bachelor's degree"` → `"DataAnnotation requires a bachelor's degree"` (coy-abstraction)
+    - `"a residential mobile phone number"` → `"a mobile phone from your country of residence"` (the fact wording)
+21. **sections[2].content**:
+    - `"The [Outlier FAQ](https://outlier.ai/faq) specifies"` → `"The Outlier FAQ specifies"`
+      Why: this is a duplicate URL; outlier.ai/faq appears twice. Item 1 now links it first.
+    - `"Handshake AI explicitly notes that onboarding pay varies by contract, but DataAnnotation and Outlier omit onboarding pay policies from their main support documents."`
+      → `"By contrast, [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/33614619791767-Earning-on-Handshake-AI) says some of its projects pay for onboarding and others do not. Trustpilot reviewers of both DataAnnotation and Outlier describe unpaid tests, so budget that time as unpaid unless a project says otherwise."`
+      Why: Handshake AI was unlinked, "by contract" is wrong (the source says per project), and the paragraph ended on a dead end.
+22. **sections[3].content**:
+    - `"Payment logistics create distinct daily workflows for contractors on each platform. "` → `""` (unsayable)
+    - `"The platform routes all worker compensation through PayPal"` → `"DataAnnotation sends all payments through PayPal"` (coy-abstraction)
+    - `"DataAnnotation maintains no automated weekly bank disbursement schedule, meaning contractors must manually trigger cash transfers once completed assignments clear review. "` → `""` (restatement; "clear review" is unsupported)
+    - `"Transfer fees and processing rules also differ between direct bank rails and digital wallet balances. "` → `""` (unsupported; a dead end)
+    **sections[4].content**: `"on its [Trustpilot profile](https://www.trustpilot.com/review/outlier.ai)"` → `"on its Trustpilot profile"` (item 13 now uses this URL first)
+23. **sections[4].content** `"Positive reviews on both platforms praise flexible working hours, remote convenience, and dependable payments when task streams run smoothly."`
+    → `"Positive Outlier reviews praise on-time pay and flexibility, while positive DataAnnotation reviews praise flexibility and ease of use."`
+    Why: praise for payments is sourced for Outlier only.
+24. **sections[4].content** `"Workforce stability on Outlier connects directly to business adjustments at its parent firm, Scale AI. In July 2025, Scale AI laid off roughly 200 staff members and ended agreements with approximately 500 contractors after ramping up capacity too quickly. Scale AI had previously shut down its Remotasks platform across Kenya, Nigeria, and Pakistan in March 2024 citing enhanced security protocols."`
+    → `"Outlier's operator, Scale AI, has cut contractors before. In July 2025 it laid off about 200 full-time staff and ended contracts with about 500 contractors, [Outlook Business reported](https://www.outlookbusiness.com/deeptech/artificial-intelligence/scale-ai-lays-off-14-of-staff-amid-revamp-following-metas-143bn-investment). In March 2024, [Rest of World reported](https://restofworld.org/2024/scale-ai-remotasks-banned-workers/) that Scale AI shut down [Remotasks](https://www.remotasks.com/) entirely in Kenya, Nigeria and Pakistan, citing \"enhanced security protocols.\""`
+    Why: the "connects directly" causal claim is unsupported, and the claims had no attribution or links.
+25. **sections[5].content**:
+    - `"Corporate transparency separates the two companies significantly. "` → `""` (abstract verb plus a banned word)
+    - `"Outlier operates openly under Scale AI, listing Smart Ecosystem Inc. and Scale AI in its official website documentation."` → `"The Outlier FAQ says Outlier \"is a platform operated by Scale AI,\" and its footer reads \"© 2026 Smart Ecosystems.\""`
+26. **sections[5].content**:
+    - `"In June 2025, Meta acquired a 49 percent ownership stake in Scale AI for approximately $14.3 billion"` → `"In June 2025, [Reuters reported](https://finance.yahoo.com/news/meta-invests-scale-ai-appoints-110216620.html) that Meta took a 49 percent stake in Scale AI for about $14.3 billion"`
+    - `"Scale AI founder Alexandr Wang"` → `"Scale AI CEO Alexandr Wang"`
+    Why: "founder" is not on the fact list.
+27. **sections[5].content**:
+    - `"covering individuals who task worked between December 10, 2020, and February 28, 2026."` → `"covering California-resident contributors between December 10, 2020, and February 28, 2026, according to [ClaimDepot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement)."`
+    - `"with a final approval hearing scheduled for October 30, 2026."` → `"with a final approval hearing scheduled for October 30, 2026. The defendants deny the allegations."`
+    Why: the sentence was garbled and the class was overbroad; the denial is on the fact list.
+28. **sections[5].content** `"Scale AI also faced a federal lawsuit, Schuster v. Scale AI, Inc., filed in January 2025 by contributors alleging psychological harm from writing disturbing prompts, though the U.S. Department of Labor dropped an earlier Fair Labor Standards Act inquiry in May 2025."`
+    → `"Six Outlier workers also filed a federal class action, [Schuster v. Scale AI, Inc.](https://www.courtlistener.com/docket/69556383/schuster-v-scale-ai-inc/), in January 2025, alleging psychological harm from writing disturbing prompts. Separately, [TechCrunch reported](https://techcrunch.com/2025/05/09/the-department-of-labor-just-dropped-its-investigation-into-scale-ai) in May 2025 that the U.S. Department of Labor had dropped its Fair Labor Standards Act investigation into Scale AI."`
+    Why: it joined two unrelated facts with "though", it fails the first-read test, and it had no source.
+29. **sections[5].content** `"While media coverage has linked DataAnnotation to Surge AI, and Clarkson Law Firm filed an independent contractor misclassification suit against Surge AI in San Francisco Superior Court in May 2025, DataAnnotation's site does not confirm Surge AI ownership."`
+    → `"[Wikipedia](https://en.wikipedia.org/wiki/Surge_AI) says The Verge and New York Magazine linked DataAnnotation to Surge AI in 2023, but DataAnnotation's site does not confirm it. In May 2025, [Clarkson Law Firm](https://clarksonlawfirm.com/clarkson-represents-surge-ai-workers-in-labor-law-class-action) filed a misclassification class action against Surge AI in San Francisco Superior Court; the firm's page does not name DataAnnotation."`
+    Why: it stated "media coverage has linked" as fact, but that is a secondary, unverified bullet. The sentence was overloaded at 38 words, and Clarkson was unlinked.
+30. **sections[6].content**:
+    - `"Contractors exploring high-tier AI training work frequently consider Mercor alongside DataAnnotation and Outlier."` → `"[Mercor](https://talent.docs.mercor.com/how-to/payments) is a third option, aimed at credentialed experts rather than generalists."`
+    - `"In October 2025, Mercor announced a $350 million Series C funding round at a $10 billion valuation, reporting that it distributes more than $1.5 million daily to over 30,000 specialized contributors at average compensation exceeding $85 per hour."` → `"In October 2025, [TechCrunch reported](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/) that Mercor raised a $350 million Series C at a $10 billion valuation. TechCrunch also reported that Mercor pays more than $1.5 million a day to more than 30,000 experts averaging over $85 an hour."`
+    Why: "frequently consider" is unsupported. The figures came from TechCrunch, not a Mercor announcement. The sentence was overloaded at 38 words.
+31. **sections[6].content**:
+    - `"Mercor follows distinct operational rules compared to general gig platforms. "` → `""` (filler)
+    - `"utilizing Stripe Connect"` → `"using Stripe Connect"` ("utilize" is banned)
+    - `"All Mercor contracts are denominated in U.S. dollars and require bank accounts registered under the contractor's legal name, with Stripe enforcing a seven-day holding delay on initial disbursements."` → `"All Mercor contracts are in U.S. dollars, and payouts go only to a bank account in your own legal name. Stripe holds your first payout for 7 days."` (three ideas)
+32. **sections[6].content** `"DataAnnotation and Outlier remain more accessible for generalists and coders seeking immediate, task-based work queues."`
+    → `"DataAnnotation and Outlier accept generalists: DataAnnotation asks for a bachelor's degree or equivalent experience, and Outlier for at least an associate degree."`
+    Why: "immediate" work is unsupported. DataAnnotation contacts you only "if… we have work".
+33. **sections[7].content** `"Both DataAnnotation and Outlier classify all contributors as independent contractors rather than payroll employees. Neither business withholds federal, state, or local taxes from your task earnings."`
+    → `"DataAnnotation calls its workers contractors, and Outlier says you work \"as an independent contractor/freelancer, not as an employee.\" Neither FAQ describes withholding any tax, so plan to pay it yourself."`
+    Why: withholding is UNSUPPORTED. Both tax-form policies are on the UNKNOWN list.
+34. **sections[7].content** `"In the United States, independent contractor net earnings of $400 or more are subject to federal self-employment tax under Internal Revenue Service rules, covering Social Security at 12.4 percent and Medicare at 2.9 percent for a combined 15.3 percent baseline rate."`
+    → `"In the United States, you owe self-employment tax once net self-employment earnings reach $400, [according to the Internal Revenue Service](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes). The rate is 15.3 percent: 12.4 percent for Social Security and 2.9 percent for Medicare."`
+    Why: overloaded at 41 words, and the IRS was unlinked.
+35. **sections[7].content** `"Under the One, Big, Beautiful Bill Act, the federal reporting threshold for Form 1099-K issued by third-party processors like PayPal stands at gross payments exceeding $20,000 and more than 200 transactions, though states such as Vermont, Massachusetts, Virginia, and Maryland enforce lower $600 reporting thresholds."`
+    → `"PayPal says it issues a Form 1099-K for more than $20,000 and 200 transactions a year. It uses a $600 threshold in Vermont, Massachusetts, Virginia and Maryland, and more than $1,000 with 4 or more transactions in Illinois."`
+    Why: overloaded at 45 words. These are PayPal's thresholds, not states "enforcing" anything, and "such as" turned a closed list into examples and dropped Illinois.
+36. **sections[7].content** `"Failing to reserve funds for quarterly obligations can trigger financial penalties when tax deadlines arrive on April 15, June 15, September 15, and January 15."`
+    → `"If you expect to owe at least $1,000 for the year, [the IRS generally expects estimated payments](https://www.irs.gov/faqs/estimated-tax) by April 15, June 15, September 15 and January 15."`
+    Why: penalties are not on the fact list, and the subject was nominalized.
+37. **faqs[0].answer** `"Outlier is a functional platform for remote task work, holding a 4.1 out of 5 TrustScore on Trustpilot across 5,483 reviews as of October 2026. While contributors appreciate flexible hours and weekly Tuesday direct deposits, many complain about sudden project removals and unpredictable task availability."`
+    → `"Outlier held a 4.1 out of 5 TrustScore on Trustpilot from 5,483 reviews as of October 2026. Reviewers praise on-time pay and flexibility, and the most common complaints are deactivation or project removal with little explanation and unpredictable task volume."`
+    Why: "functional" is vague, and "direct deposits" was never a sourced praise theme.
+38. **faqs[2].answer** `"Outlier does not publish a platform-wide pay range, displaying specific rates on an individual task basis instead."`
+    → `"Outlier publishes no range and shows each project's rate before you start it, so the published figures cannot tell you which pays more for the same work. DataAnnotation's figures are advertised starting rates, not guaranteed earnings."`
+    Why: the answer never answered "which pays more".
+39. **faqs[3].answer** `"Both companies classify workers as independent contractors, though you should always review your current contractor agreement terms."` → `"Both treat workers as contractors, so read the contractor agreement each one gives you before you sign it."`
+    Why: `reader-assumption: "your current contractor agreement"`.
+40. **faqs[4].answer** `"Similar AI training platforms include Outlier, Mercor, Mindrift, and Prolific."` → `"Similar AI training platforms include Outlier, Mercor, [Mindrift](https://mindrift.ai/) and [Prolific](https://www.prolific.com/ai-taskers)."`
+    Why: `unlinked-company`.
+41. **faqs[5].answer** `"However, task volume is inconsistent, and workers have filed legal misclassification claims that resulted in a proposed $12.5 million settlement in California."`
+    → `"Trustpilot reviewers report unpredictable task volume. California misclassification suits led to a proposed $12.5 million settlement awaiting final approval on October 30, 2026, and Scale AI denies the allegations."`
+
+NOT FIXABLE IN PLACE (Links gate)
+- These organizations have no own-site URL on the closed list: Persona, Airtm, Smart Ecosystems, Scale AI, Meta, Stripe, Wise, Bloomberg/The Verge, New York Magazine.
+- Several first appear in comparisonTable cells (Trustpilot, Persona, Scale AI, Airtm).
+- The orchestrator must register these entities or accept the gap. Fixing it needs a URL-list decision.
+
+=====================================================================
+PAGE 2: dataannotation-alternatives (roundup, floor 1,500). VERDICT: FAIL
+=====================================================================
+- **Word count:** 1,329 over introText, rankingCriteria, option descriptions, verdict, section contents and FAQ answers. meta.json reports 2,264, which counts other fields.
+- **DEPTH: HARD FAIL.** The page is 171 words under its floor. This is NOT FIXABLE IN PLACE (Rung 2 rework, writer). Fixes 3 and 4 below cut roughly another 60 words.
+- **Expansion material that is already on the fact list:**
+  - DataAnnotation's internally inconsistent FAQ rates
+  - Mindrift's pay periods and the 5th/20th payouts, and its "only approved tasks are paid" rule
+  - Handshake's per-project onboarding-pay policy and its 48-hour payout lag
+  - Mercor's USD contracts, own-name bank rule and 7-day first-payout hold
+  - Prolific's 60-minute AI Tasker exam
+  - Deel's $15 to $100/hr AI-trainer range
+  - the FTC "reply YES" and fake-check patterns
+- **Title:** 57 characters. **Meta description:** 141. Both pass.
+- **Neutrality:** the site is never an option, and each option has at least one limitation. But "who this is not for" is missing, which is a Required page elements FAIL (item 27). The self-serving grep came back clean.
+- **Rhythm FAIL:** `monotone-rhythm: sentences 42-53`, all long. The overall distribution is S 0 / M 16 / L 49.
+
+FIX-IN-PLACE (apply during the rework)
+1. **introText** `"The best DataAnnotation alternatives for remote AI training work are Outlier, Mercor, Alignerr, Mindrift, Handshake AI, and Prolific."`
+   → `"The best [DataAnnotation](https://www.dataannotation.tech/faqs) alternatives for remote AI training work are [Outlier](https://outlier.ai/faq), [Mercor](https://talent.docs.mercor.com/how-to/payments), [Alignerr](https://www.alignerr.com/), [Mindrift](https://mindrift.ai/), [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) and [Prolific](https://www.prolific.com/ai-taskers)."`
+   Why: seven `unlinked-company` first mentions. No prose on this page reuses these URLs.
+2. **introText** `" Many workers look for sites like DataAnnotation when they experience empty project queues, account reviews, or want a second source of task volume."`
+   → `"DataAnnotation's [Trustpilot reviews](https://www.trustpilot.com/review/dataannotation.tech) list long stretches with no available work and balances held during account review among the recurring complaints. A second platform gives you somewhere to work when one queue is empty."`
+   Why: "many workers" is unsourced, and there is a stray leading space.
+3. **introText** `"These six platforms are evaluated using only verified records, published company pricing, legal dockets, and official worker documentation as of October 2026. Because compensation rules and project availability vary significantly by background, this guide examines how each platform handles task pricing, payout schedules, and worker vetting."` → `""`
+   Why: meta-narration ("this guide examines"), "significantly", and it duplicates rankingCriteria.
+4. **rankingCriteria** (whole field), from `"Each option is evaluated across four concrete operational factors based strictly on verified records. First, pay transparency,"` through `"or reported data breaches."`
+   → `"Each option is compared on four factors: pay transparency, payout method and schedule, entry requirements, and track record. Pay transparency means a published hourly range rather than pay set per project or listing. Track record covers lawsuits, settlements, regulator actions and data breaches found on court dockets and in named news reports. The platforms are listed in order of how directly their workflow replaces DataAnnotation's mix of general and coding task work, rather than as a quality ranking."`
+   Why: formatting slop (First/Second/Third/Fourth fragments), and "bi-monthly" is wrong; Mindrift pays twice monthly.
+5. **options[0].limitations[1]** `"Parent company Scale AI agreed to a $12.5 million settlement in California misclassification suits"`
+   → `"A proposed $12.5 million settlement of California misclassification suits against Scale AI awaits final approval on October 30, 2026; Scale AI denies the allegations"`
+6. **options[1].strengths[0]** `"High reported earning potential, with TechCrunch reporting average expert earnings over $85 per hour"`
+   → `"[TechCrunch reported](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/) in October 2025 that Mercor experts average over $85 per hour"`
+   Why: TechCrunch was unlinked.
+7. **options[1].strengths[2]** `"Provides clear tax documentation with Form 1099-NEC delivered via Stripe for US workers earning over $600"`
+   → `"Mercor's help page says US workers who submit a W-9 and earn over $600 get a Form 1099-NEC through Stripe by February"`
+8. **options[1].strengths[3]** `"Individual listings show substantial compensation, such as $70 to $110 per hour for news analysts"` → `"One listing for news analysts and journalists showed $70 to $110 per hour"`
+   Why: the fact list has a single listing, not a plural.
+9. **options[1].limitations[1]** `"Experienced a data breach in March 2026 leading to multiple federal lawsuits over exposed personal data"`
+   → `"A March 2026 breach tied to the LiteLLM supply-chain attack was followed by contractor class actions alleging exposure of SSNs, addresses and interview recordings"`
+   Why: the exposure is alleged, not established.
+10. **options[1].limitations[3]** `"Lower-tier projects can see rate drops, such as the Nova project offered at $16 per hour"`
+    → `"[Business Insider reported](https://www.aol.com/articles/ai-startup-powering-meta-openai-230627434.html) a Meta project, Nova, offered at $16 per hour, $5 less than the project it replaced; Mercor called the report inaccurate"`
+11. **options[1].pricing** `"Set per listing; reported expert roles average over $85/hr, with listings from $16/hr to $110/hr"` → `"Set per listing; TechCrunch reported an average over $85/hr (Oct 2025)"`
+    Why: the $16 to $110 "listings" range was synthesized from a reported project offer and one listing.
+12. **options[2].strengths[3]** `"No major worker misclassification or breach lawsuits identified on court dockets"` → `"No lawsuits against Alignerr or Labelbox found in an October 2026 search"`
+    Why: "No major" implies minor suits exist.
+13. **options[2].limitations[0]** `"Job boards show lower baseline US rates, including $25 to $38 per hour on Greenhouse"`
+    → `"One [Greenhouse posting](https://job-boards.greenhouse.io/alignerr/jobs/4859253007) listed $25 to $38 per hour for US-based candidates"`
+14. **options[2].pricing** `"$80/hr advertised average pay; listings range from $25-$38/hr to $40-$120/hr"`
+    → `"$80/hr shown as \"Average pay\" on homepage; listed roles $30 to $35/hr up to $40 to $120/hr"`
+    Why: the homepage roles start at $30 to $35. The $25 to $38 figure is a separate posting.
+15. **options[3].strengths[3]** `"Explicitly states that assessments and onboarding are completely free"` → `"Mindrift's blog says joining and assessments should be free"`
+16. **options[3].limitations[1]** `"due to payment rail limits"` → `"because ID-verification or payment rails are unavailable there"`
+17. **options[4].description** `"Handshake AI runs an AI Fellowship that hires advanced degree holders as independent contractors to create complex prompts and fact-check model responses with rigorous citations. The platform serves as a high-paying alternative for researchers with graduate credentials."`
+    → `"Handshake AI runs an AI Fellowship whose fellows create prompts, evaluate AI responses and correct content with citations. Handshake hires fellows as 1099 independent contractors, and most roles need a Master's, PhD or Postdoc."`
+    Why: "rigorous" is embellishment, "The platform" is a coy abstraction, and "high-paying" is unsupported.
+18. **options[4].strengths[1]** `"Predictable weekly payouts sent via Stripe by Wednesday afternoon"` → `"Payouts typically sent by Wednesday afternoon for the prior Monday to Sunday week, through Stripe"`
+    Why: the source says "typically" and "can often take 48 hours".
+19. **options[4].limitations[3]** `"Reported contractor disputes over account suspensions and unpaid earnings on external projects"`
+    → `"[Business Insider reported](https://www.aol.com/articles/contractors-worked-openai-projects-handshake-050101409.html) that contractors on OpenAI projects said Handshake AI suspended accounts and withheld pay with no appeal process"`
+20. **options[5].bestFor** `"General contributors wanting guaranteed hourly wage floors and flexible cashouts"` → `"Study participants who want a researcher-set minimum hourly rate and PayPal cashouts"`
+21. **options[5].description** `"It enforces strict minimum compensation standards for every task hosted on the platform."` → `"Prolific requires researchers to pay participants at least £6 / $8 per hour and recommends at least £9 / $12."`
+    Why: "every task" overclaims. AI Tasker pay is unpublished.
+22. **options[5].limitations[0]** `"Overall pay ceiling is lower than specialized coding or domain-expert platforms"` → `"Payments can only be transferred through PayPal"`
+    Why: the original is unsupported, and the replacement is a sourced limitation.
+23. **options[5].limitations[2]** `"Subject to PayPal currency conversion fees for non-domestic earnings"` → `"PayPal may charge for currency conversion"`
+24. **comparisonTable.rows[5].values[1]** `"$8/hr minimum floor"` → `"$8/hr (£6) researcher minimum"`
+25. **sections[0].heading** `"How These Platforms Differ From DataAnnotation"` → `"How These Platforms Differ from DataAnnotation"`
+    Why: `heading-case`; "from" is a minor word.
+26. **verdict**:
+    - `"where published and reported hourly rates frequently exceed $70 to $100 per hour"` → `"where Handshake AI publishes $30 to $125 per hour and TechCrunch reported Mercor experts average over $85"`
+    - `"while Prolific guarantees an $8 hourly floor for research-backed studies"` → `"while Prolific requires researchers to pay study participants at least $8 an hour"`
+27. **verdict** paragraph 2: `"Our recommendation would change if legal proceedings alter independent contractor operations across these platforms. Scale AI's $12.5 million settlement in California worker misclassification lawsuits and Handshake's unpaid wage litigation under the Fair Labor Standards Act indicate rising regulatory pressure on task classifications. If platforms transition from flexible 1099 contracts to structured agency employment, project flexibility and onboarding standards will shift."`
+    → `"None of these platforms fits someone who needs guaranteed hours or a steady paycheck: Mindrift pays only approved tasks, and none of these platforms' FAQs promises a set volume of work. Our answer would change if Outlier or Mercor published a platform-wide pay range, or if the McKinney settlement's final approval on October 30, 2026 changed how Scale AI classifies Outlier contributors."`
+    Why: "who this is not for" was missing. "Rising regulatory pressure" is unsupported; the Department of Labor dropped its Scale AI probe. The last sentence was speculative.
+28. **sections[0].content**:
+    - `"paying contractors starting at $25 to $50 per hour for general tasks and $40 to $150 per hour for coding projects via PayPal"` → `"advertising general work starting at $25 to $50+ per hour and coding starting at $40 to $150+, paid through PayPal"`
+      Why: "+" was dropped, and advertised rates were stated as pay.
+    - `" Mercor distributes pay weekly"` → `"Mercor distributes pay weekly"` (stray leading space)
+29. **sections[0].content** `"uses an automated tasking queue similar to DataAnnotation but requires an associate degree, resume, and LinkedIn profile during onboarding."`
+    → `"offers similar prompt-writing and response-ranking tasks but requires an associate degree, a resume and a LinkedIn profile."`
+    Why: "automated tasking queue" is unsupported.
+30. **sections[0].content**:
+    - `"We excluded two older crowdsourcing providers from this roundup."` → `"Two platforms are left out of this list."` ("older" is unsupported)
+    - `"TELUS Digital does not publish verified rate cards or payment mechanics on an official worker page, and Remotasks halted new signups across several international markets while its current status remains unconfirmed."` → `"TELUS Digital has no official page publishing its rater pay or payment method. [Remotasks](https://www.remotasks.com/) shut down in Kenya, Nigeria and Pakistan in 2024, [Rest of World reported](https://restofworld.org/2024/scale-ai-remotasks-banned-workers/), and its current status is unconfirmed."`
+31. **sections[1].content** `"Your academic background and professional credentials determine which platform yields the highest return on your tasking time. AI labs pay wide rate spreads depending on whether a task requires basic natural language fluency or specialized technical domain knowledge."`
+    → `"Your degree and professional credentials decide which of these platforms will take you and at what rate. In March 2026, [Deel](https://www.deel.com/deel-works/ai-trainers-fast-growing-job) put AI-trainer pay at about $15 an hour for annotators in the Philippines up to about $100 an hour for US physicians."`
+    Why: the original claim was unsourced. The replacement is sourced and adds depth.
+32. **sections[1].content**:
+    - `"Prolific also serves generalist contributors well by guaranteeing a minimum researcher wage of $8 per hour"` → `"Prolific also takes generalists, and it requires researchers to pay study participants at least $8 per hour"`
+    - `"Coders and STEM specialists should focus on Alignerr, Handshake AI, or Mercor."` → `"Coders and credentialed specialists should look at Handshake AI, Mercor and DataAnnotation's own coding tier."` (nothing sources Alignerr for coders)
+    - `"and individual job listings paying up to $110 per hour for news analysts and journalists"` → `"and one listing for news analysts and journalists paying $70 to $110 per hour"`
+33. **sections[2].content**:
+    - `"Legitimate AI training platforms never charge workers signup fees, equipment costs, or assessment testing fees. The Federal Trade Commission issued a consumer alert warning job seekers about remote work scams where fraudulent recruiters contact candidates via text message or messaging apps offering online assessor jobs."` → `"The [Federal Trade Commission](https://consumer.ftc.gov/articles/job-scams) says legitimate employers don't charge you to get a job. Its April 2026 [consumer alert](https://www.consumer.ftc.gov/consumer-alerts/2026/04/job-offer-text-probably-scam) warns of fake recruiters who text or message candidates on WhatsApp or Telegram offering remote \"online assessor\" jobs."`
+      Why: the original was an unattributed universal claim, and the FTC was unlinked.
+    - `"Both DataAnnotation and Mindrift state on their official websites that joining, assessments, and onboarding tests are completely free."` → `"DataAnnotation's FAQ says it charges no signup fees and \"will never ask for money from you for anything,\" and Mindrift's blog says joining and assessments should be free."`
+34. **sections[3].content**:
+    - `"must be reported to the Internal Revenue Service regardless"` → `"must be reported to the [Internal Revenue Service](https://www.irs.gov/instructions/i1040sc) regardless"`
+    - `"Platforms do not withhold federal income tax, Social Security, or Medicare from your task payouts."` → `"Mercor says it does not deduct taxes from your payments, and Handshake AI says you are responsible for taxes on your own income."`
+      Why: the blanket no-withholding claim is unsupported.
+35. **faqs[0].answer** `"Mindrift provides entry-level writing and annotation work starting at $15 to $30 per hour, while Alignerr offers alignment projects across technical and language domains."`
+    → `"Mindrift publishes $15 to $30 per hour for entry-level work, and Alignerr, run by Labelbox, lists roles from $30 to $35 per hour up to $40 to $120 per hour on its homepage."`
+    Why: the claim-check removed "alignment" elsewhere on the page but left it here.
+36. **faqs[1].answer** (whole) `"Companies similar to Mercor include Handshake AI and the expert recruitment tiers of Outlier and DataAnnotation. While Mercor matches doctors, lawyers, and scientists with frontier AI labs at reported average rates over $85 per hour, Handshake AI recruits graduate degree holders for research fellowships paying $30 to $125 per hour."`
+    → `"Companies similar to Mercor include Handshake AI, which publishes $30 to $125 per hour for fellows who mostly hold graduate degrees, and DataAnnotation's STEM and professional tiers, which advertise rates starting at $40 to $125+ per hour. Mercor itself connects doctors, lawyers and scientists with AI labs, and TechCrunch reported its experts average over $85 per hour."`
+    Why: Outlier "expert recruitment tiers" is unsupported, and "frontier" is embellishment.
+37. **faqs[2].answer** (whole) `"Specialized platforms like Handshake AI and Mercor offer the highest published rates, with Handshake publishing ranges up to $125 per hour for graduate-level fellows and Mercor listing specialized roles up to $110 per hour. DataAnnotation advertises specialized coding tiers from $40 to $150 per hour, while generalist task platforms publish lower entry-level baselines between $15 and $30 per hour."`
+    → `"On published ranges, DataAnnotation's coding tier is highest, advertising rates starting at $40 to $150+ per hour. Handshake AI publishes $30 to $125 per hour, mostly for graduate-degree holders, and one Mercor listing showed $70 to $110 per hour. Entry-level rates are lower: Mindrift publishes $15 to $30 per hour. All of these are advertised rates, not guaranteed earnings."`
+    Why: the original contradicts itself. It calls Handshake and Mercor highest, then cites DataAnnotation at $150+.
+38. **faqs[3].answer** `"all utilize weekly payment schedules"` → `"all use weekly payment schedules"`
+39. **faqs[4].answer** `"Yes, contractors can sign up for multiple AI training platforms simultaneously. None of the official FAQs reviewed prohibit working across platforms, though contributors should review each platform's terms."`
+    → `"Yes. None of these platforms' FAQs prohibits working on other platforms, but read each contractor agreement before you sign it."`
+
+NOT FIXABLE IN PLACE (Links gate)
+- These organizations have no own-site URL on the closed list: Scale AI, Labelbox, Toloka, Stripe, Wise, Payoneer, Tipalti, Hyperwallet, Airtm, TELUS Digital. The only TELUS URL is the secondary aitrainer.work.
+
+=====================================================================
+PAGE 3: dataannotation-taxes (calculator spoke, floor 1,000). VERDICT: FAIL
+=====================================================================
+- **Word count:** 1,135 over introText, howItWorks, workedExample, commonMistakes and FAQ answers. Depth passes.
+- **Title:** 46 characters. **Meta description:** 133. Both pass.
+- **Rhythm passes:** S 2 / M 13 / L 38, with no run.
+- **Worked numbers** match the row prompt exactly. "554" is legitimate.
+- **meta.guards flag (mercor.com link removed):** the remaining sentence is supported by talent.docs.mercor.com/policies/us-taxes. Fix 2 drops it from the intro anyway.
+
+FIX-IN-PLACE
+1. **introText** `"You must pay taxes on DataAnnotation income because the platform treats workers as independent contractors, does not withhold taxes, and triggers self-employment tax once your net earnings reach $400."`
+   → `"Yes, you owe tax on [DataAnnotation](https://www.dataannotation.tech/faqs) income. DataAnnotation's FAQ calls its workers contractors and describes no tax withholding, and you owe self-employment tax once your net earnings reach $400."`
+   Why:
+   - "does not withhold" is unsupported, since the DataAnnotation tax policy is UNKNOWN.
+   - "the platform" is a coy abstraction.
+   - DataAnnotation does not "trigger" SE tax.
+   - DataAnnotation was unlinked.
+   Pair this with: howItWorks `"The [DataAnnotation FAQ](https://www.dataannotation.tech/faqs) classifies workers as contractors"` → `"The DataAnnotation FAQ calls workers contractors"` (first-mention-only).
+2. **introText** `"Whether you receive a tax form depends on payment rails: DataAnnotation pays through PayPal and publishes no tax-form policy, and PayPal only issues Form 1099-K if gross payments exceed $20,000 and 200 transactions nationally, while Mercor states it distributes Form 1099-NEC through Stripe for earnings over $600."`
+   → `"DataAnnotation pays through [PayPal](https://www.paypal.com/us/cshelp/article/current-form-1099-k-reporting-thresholds-2025-update-help1131) and publishes no tax-form policy. PayPal sends a Form 1099-K only above $20,000 and 200 transactions a year, with lower thresholds in a few states."`
+   Why: overloaded at 47 words, and PayPal was unlinked on first mention. Mercor is covered in howItWorks and faqs[3].
+   Pair this with: howItWorks `"[PayPal reporting thresholds](https://www.paypal.com/us/cshelp/article/current-form-1099-k-reporting-thresholds-2025-update-help1131)"` → `"PayPal's published thresholds"`.
+3. **introText** `"The Internal Revenue Service (IRS) requires"` → `"The [Internal Revenue Service (IRS)](https://www.irs.gov/instructions/i1040sc) requires"`
+   Why: unlinked-company. This URL is not used elsewhere on the page.
+4. **howItWorks**:
+   - `"Worker classification across major AI data platforms defines how you file. "` → `""` (unsayable)
+   - `"[Handshake AI support documentation](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) states fellows are hired as 1099 independent contractors, complete tax setup via Form W-9 or Form W-8 on Stripe, and remain responsible for their own taxes."` → `"[Handshake AI support documentation](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) says fellows are hired as 1099 independent contractors. [Its payments page](https://support.joinhandshake.com/hc/en-us/articles/32263614087575-Handshake-AI-payments-processing) says tax setup uses a W-8 or W-9 through Stripe and that you are responsible for taxes on your own income."`
+     Why: overloaded, and the W-8/W-9, Stripe and "responsible" facts come from the payments page, not the linked page.
+5. **howItWorks** `"you must calculate and submit estimated quarterly tax payments if you expect to owe at least $1,000"` → `"you generally must make estimated quarterly tax payments if you expect to owe at least $1,000"`
+   Why: the IRS says "generally". The draft made the statement firmer than the source.
+6. **commonMistakes[1]** `"Treating unpaid starter assessment time, skill screening tests, or identity verification onboarding hours as tax-deductible business losses, because the tax code permits deducting financial expenses but never the value of unpaid time."`
+   → `"Treating the hours spent on the Starter Assessment, skill screenings or ID verification as a deduction. You can deduct money you spend on the work, never the value of your own time."`
+   Why: whether the assessment is paid is on the UNKNOWN list, so "unpaid" is unsupported. The sentence was also overloaded.
+7. **commonMistakes[2]** `"Failing to combine contractor income earned across multiple platforms, such as DataAnnotation, Outlier, and Mercor, because earnings add up on one Schedule C."`
+   → `"Forgetting that income from DataAnnotation, Outlier and Mercor adds up on one Schedule C, so several small balances can together pass the $400 self-employment tax threshold."`
+   Why: the causal "because" reads backwards.
+8. **workedExample**:
+   - `"A contractor earns $6,000 from AI-training tasks, with $600 of deductible costs (the business share of a computer and internet), has $5,400 of profit and owes $763.00 of self-employment tax ($5,400 × 92.35% × 15.3%)."` → `"A contractor earns $6,000 from AI-training tasks and has $600 of deductible costs (the business share of a computer and internet), leaving $5,400 of profit. That profit carries $763.00 of self-employment tax ($5,400 × 92.35% × 15.3%)."` (ungrammatical)
+   - `"(2026, site fact)"` → `"(2026)"` (an internal annotation leaked into reader copy)
+   - `"With a day job, the profit stacks at their top marginal rate, the calculator shows it when W-2 wages are entered."` → `"With a day job, the profit is taxed at your top marginal rate. Enter your W-2 wages in the calculator above to see that figure."` (comma splice, and "their")
+9. **faqs[0].answer** `"DataAnnotation treats workers as independent contractors, which means zero taxes are withheld from your payouts."`
+   → `"DataAnnotation's FAQ calls its workers contractors and describes no tax withholding, so plan to pay the tax yourself."`
+   Why: unsupported, and PayPal backup withholding at 24% can apply.
+10. **faqs[1].answer** `"unless you live in states with lower thresholds such as Vermont, Massachusetts, Virginia, Maryland ($600), or Illinois ($1,000 and 4 transactions)"`
+    → `"except in Vermont, Massachusetts, Virginia and Maryland ($600) and Illinois (more than $1,000 and 4 or more transactions)"`
+    Why: the fact says more than $1,000 and 4 or more transactions, and "such as" turned a closed list into examples.
+11. **faqs[2].answer** `"Because no income tax or payroll tax is withheld from weekly payouts, you must report"` → `"Outlier's FAQ describes no tax withholding, so you must report"`
+    Why: Outlier's tax policy is UNKNOWN.
+12. **faqs[4].answer** `"model your withholding needs"` → `"work out how much to save"`
+    Why: contractors have no withholding, so this is a wrong collocation.
+
+=====================================================================
+PAGE 4: youtube-taxes (calculator spoke, floor 1,000). VERDICT: FAIL
+=====================================================================
+- **Word count:** 1,265. Depth passes.
+- **Title:** 40 characters. **Meta description:** 141. Both pass.
+- **Google's form is not asserted** in faqs[3]. howItWorks paragraph 4 overstates it; see Y-5.
+- **meta.guards numbers:**
+  - "554" is Topic 554, which is legitimate.
+  - "6464.5" is $7,000 × 0.9235, which is arithmetically correct. See the advisory notes.
+- **Rhythm FAIL:** `monotone-rhythm: sentences 38-47` (the howItWorks tail through workedExample), all long. The overall distribution is S 4 / M 9 / L 47. Y-6 and Y-8 break it; re-measure afterwards.
+
+FIX-IN-PLACE
+Y-1. **introText** `"YouTube earnings count as taxable income starting from the first dollar."` → `"[YouTube](https://blog.youtube/creator-and-artist-stories/youtube-partner-program-explained/) earnings count as taxable income starting from the first dollar."`
+     Why: unlinked-company.
+Y-2. **introText** `"If you run your channel with regular continuity to turn a profit, the Internal Revenue Service (IRS) classifies the income as self-employment earnings once your net profit hits $400 for the tax year. That classification means you owe self-employment tax alongside standard federal income tax, though ordinary equipment, editing software, and subscription costs reduce your taxable base."`
+     → `"If you run your channel regularly to make a profit, it counts as a business. You then owe self-employment tax once net earnings reach $400 for the year, [according to the Internal Revenue Service (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes). You also owe federal income tax on the profit, and ordinary and necessary costs such as equipment, editing software and subscriptions reduce it."`
+     Why: it misstated the rule. $400 is the threshold for owing SE tax, not the point where income becomes SE income. It also had an unlinked IRS mention, a backward "That classification", and "ordinary" without "necessary".
+     Pair this with: howItWorks `"The [self-employment tax rate](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) is 15.3%"` → `"The self-employment tax rate is 15.3%"` (first-mention-only).
+Y-3. **howItWorks**:
+     - `"examiners review multiple factors to decide if an activity qualifies as a business"` → `"the IRS lists factors that help decide whether an activity is a business"` ("examiners" is unsupported)
+     - `"its primary objective is income"` → `"its primary purpose is income or profit"`
+     - `"If your earnings pass $200,000 for single filers or $250,000 for married couples filing jointly, an Additional Medicare Tax of 0.9% applies."` → `"An Additional Medicare Tax of 0.9% applies to earnings above $200,000 for single filers or $250,000 for married couples filing jointly."`
+       Why: the original implies the tax applies to all earnings.
+Y-4. **howItWorks**:
+     - `"Collecting your earnings requires submitting your tax information directly to Google. According to [Google support](https://support.google.com/youtube/answer/10391362?hl=en), Google does not withhold"` → `"[Google](https://support.google.com/youtube/answer/10391362?hl=en) must collect tax information from creators in the YouTube Partner Program. Google does not withhold"`
+       Why: a nominalization, and the first "Google" was unlinked.
+     - `"Non-US creators who submit a Form W-8 face withholding between 0% and 30% on earnings from US viewers based on applicable tax treaties, while non-US accounts without tax info default to 30% withholding on US earnings."` → `"Non-US creators who submit a Form W-8 face withholding of 0% to 30% on earnings from US viewers, depending on tax-treaty status. Non-US business accounts without tax info default to 30% of US earnings."`
+       Why: overloaded at 36 words, and the fact says "business accounts".
+Y-5. **howItWorks**:
+     - `"[Google reports year-end earnings](https://support.google.com/youtube/answer/10390801?hl=en) using Form 1099-MISC, Form 1099-K, or Form 1042-S, but its documentation does not specify which form applies to each creator profile."` → `"[Google's YouTube help](https://support.google.com/youtube/answer/10390801?hl=en) lists Form 1099-MISC, Form 1099-K and Form 1042-S as year-end forms, but it does not say which form applies to which creator."`
+       Why: "reports… using" asserts what Google issues. The source only "lists" the forms.
+     - `"Tax reporting rules also depend on information return minimums. "` → `""` (filler)
+     - `"Form 1099-MISC miscellaneous income rises to $2,000"` → `"Form 1099-MISC rents and other income rises to $2,000"` (boxes 1 and 3 only)
+Y-6. **howItWorks** `"by paying either 90% of your current tax year liability or 100% of your prior-year tax"` → `"by paying the smaller of 90% of your current-year tax or 100% of your prior-year tax"`
+     Why: the fact says "the smaller of".
+Y-7. **faqs[1].answer** `"Yes, you must file a tax return."` → `"Yes, if the $5,000 is profit from a channel you run as a business."`
+     Why: the original answer was unconditional, but the $400 rule applies to net SE earnings from a business.
+Y-8. **workedExample** `"If that creator also earns a $60,000 salary from an outside employer, the YouTube profit stacks into the 22% federal tax bracket, increasing the total tax bill."`
+     → `"If that creator also earns a $60,000 salary, the YouTube profit is added on top of the wages and taxed at the creator's top marginal rate. Enter the wages in the calculator above to see that figure."`
+     Why: the row prompt says "Do not compute it". The 22% claim is also likely wrong (see R-3); nearly all of the profit falls in the 12% bracket.
+Y-9. **platformNote** `"If the IRS classifies your channel as a hobby, you report gross revenue on Schedule 1."` → `"If the IRS treats your channel as a hobby, you report the income on Schedule 1 (Form 1040), line 8."`
+     Why: "gross revenue" implies the hobby-expense rule, which the prompt forbids stating.
+
+=====================================================================
+ADVISORY NOTES (non-blocking)
+=====================================================================
+- **Depth distribution:** 3 passing, 1 failing, median 1,297. Floors differ by type, so check each page against its own floor. The roundup is the only page under its floor.
+- **dataannotation-vs-outlier:**
+  - The H1 "DataAnnotation vs Outlier: Which Pays Better and Stays Reliable?" is a colon plus question. The question matches the query, so it is acceptable, but watch it.
+  - The FAQ "Is Outlier AI job legit or not?" could link /guides/is-outlier-ai-legit/, which is an allowed and unused link.
+  - The table cells use hyphen ranges ("$25-$50+") that mirror the FAQ wording. Consider "to".
+- **dataannotation-taxes:** commonMistakes[0] ("no tax… without issuing a Form 1099-K") overlaps the site's universal mistake "no 1099 means no tax", which the contract says not to repeat. The row prompt asked for the PayPal angle. Keep it or reword it, at the orchestrator's choice.
+- **youtube-taxes:**
+  - `workedExample` "($6,464.50)" is correct arithmetic but is a figure the row prompt did not supply. The contract says "never compute a new tax figure". The optional fix is `"($6,464.50) "` → `""`.
+  - The H1/title "YouTube Taxes: What Creators Owe…" follows the existing spoke convention ("Rover Taxes: What Sitters and Walkers Owe").
+- **toolHeading:** values are in sentence case, which matches the existing spokes-gig-online.ts convention. They are not a Title Case failure.
+- **Links gate exceptions:** across all pages, the NOT FIXABLE IN PLACE Links items need one orchestrator decision: register the entities, or add own-site URLs to the closed list.
+- **Re-audit scope:** after the Rung 1 fixes are applied, re-read only the edited fields. Then re-run the rhythm measurement on all three pages that failed it.

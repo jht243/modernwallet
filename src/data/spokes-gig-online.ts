@@ -92,7 +92,7 @@ export const GIG_ONLINE_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "twitch-taxes",
-    updated: "2026-09-05",
+    updated: "2026-10-09",
     title: "Twitch Taxes for Streamers (2026 Guide)",
     metaDescription:
       "Twitch taxes in 2026: royalties versus service income, the hobby-loss trap, and which streaming equipment you can deduct. See what you owe.",
@@ -150,13 +150,13 @@ export const GIG_ONLINE_SPOKES: SpokeEntry[] = [
       platformNote:
         "This assumes the IRS would treat your channel as a business. If it is a hobby, you report the income but cannot deduct expenses against it — and the profit figure to enter here is your full revenue.",
     },
-    relatedSlugs: ["1099-tax-calculator", "fiverr-taxes", "how-much-to-set-aside-for-taxes"],
+    relatedSlugs: ["1099-tax-calculator", "youtube-taxes", "fiverr-taxes", "how-much-to-set-aside-for-taxes"],
   },
 
   {
     calculator: "self-employment-tax",
     slug: "upwork-taxes",
-    updated: "2026-09-05",
+    updated: "2026-10-09",
     title: "Upwork Taxes: What Freelancers Owe in 2026",
     metaDescription:
       "Upwork taxes for 2026. Your 1099-K reports gross contract value before Upwork's fee — deduct it, and see the self-employment tax on what is left.",
@@ -214,7 +214,7 @@ export const GIG_ONLINE_SPOKES: SpokeEntry[] = [
       platformNote:
         "Your 1099-K, if you get one, reports gross client payments before Upwork's service fee. Report the gross on Schedule C and deduct the fee — do not simply report your withdrawals.",
     },
-    relatedSlugs: ["fiverr-taxes", "1099-tax-calculator", "how-much-to-set-aside-for-taxes"],
+    relatedSlugs: ["fiverr-taxes", "dataannotation-taxes", "1099-tax-calculator", "how-much-to-set-aside-for-taxes"],
   },
 
   {
@@ -344,4 +344,122 @@ export const GIG_ONLINE_SPOKES: SpokeEntry[] = [
     },
     relatedSlugs: ["fiverr-taxes", "1099-tax-calculator", "how-much-to-set-aside-for-taxes"],
   },
+  // ── mindmap-pass 2026-10-09 (ai-money): dataannotation-taxes ──
+  {
+    "calculator": "self-employment-tax",
+    "slug": "dataannotation-taxes",
+    "updated": "2026-10-09",
+    "title": "DataAnnotation Taxes (2026 Calculator & Guide)",
+    "metaDescription": "DataAnnotation taxes in 2026: contractor rules, PayPal 1099-K thresholds, deductions, and quarterly payments. Calculate what you owe.",
+    "targetKeyword": "DataAnnotation taxes",
+    "estimatedVolume": 70,
+    "estimatedKD": 21,
+    "h1": "DataAnnotation Taxes: What AI Trainers Owe on Their Earnings",
+    "introText": "Yes, you owe tax on [DataAnnotation](https://www.dataannotation.tech/faqs) income. DataAnnotation pays through [PayPal](https://www.paypal.com/us/cshelp/article/current-form-1099-k-reporting-thresholds-2025-update-help1131) and publishes no tax-form policy. PayPal sends a Form 1099-K only above $20,000 and 200 transactions a year, with lower thresholds in a few states. The [Internal Revenue Service (IRS)](https://www.irs.gov/instructions/i1040sc) requires you to report all taxable gig earnings even if no payer sends you an information return.\n\nA contractor earning $6,000 from AI-training tasks, with $600 of deductible costs for the business share of a computer and internet, has $5,400 of profit and owes $763.00 of self-employment tax ($5,400 × 92.35% × 15.3%). With no other income, federal income tax is zero because the profit is below the $16,100 standard deduction.",
+    "howItWorks": "The DataAnnotation FAQ calls workers contractors and provides no tax-form policy. [Outlier](https://outlier.ai/faq) states contributors work as independent contractors or freelancers, rather than employees. [Mercor help documentation](https://talent.docs.mercor.com/policies/us-taxes) says Mercor does not deduct taxes and asks United States persons for a Form W-9. Mercor sends a Form 1099-NEC through Stripe to W-9 filers who earn over $600. [Handshake AI support documentation](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) says fellows are hired as 1099 independent contractors. [Its payments page](https://support.joinhandshake.com/hc/en-us/articles/32263614087575-Handshake-AI-payments-processing) says tax setup uses a W-8 or W-9 through Stripe and that you are responsible for taxes on your own income. Similarly, [Mindrift](https://mindrift.ai/blog/how-mindrift-pays) states contributors must declare earnings and meet tax obligations in their country of residence. Non-US contractors who submit a Form W-8BEN do not receive a Form 1099 through Mercor.\n\nWhich year-end tax forms you receive depends on the platform and payout processor. For directly contracted work, businesses issue Form 1099-NEC for nonemployee compensation. Under the [IRS Form 1099-NEC instructions](https://www.irs.gov/instructions/i1099mec), the national reporting threshold for payers rose to $2,000 for tax years beginning after 2025, although individual platforms may still distribute forms at lower historical amounts. When a platform deposits payments through a third-party processor like PayPal, different reporting rules apply. Under [IRS Form 1099-K guidance](https://www.irs.gov/newsroom/irs-issues-faqs-on-form-1099-k-threshold-under-the-one-big-beautiful-bill-dollar-limit-reverts-to-20000) and PayPal's published thresholds, PayPal issues Form 1099-K only when gross payments exceed $20,000 and 200 transactions. However, PayPal enforces a $600 threshold in Vermont, Massachusetts, Virginia, and Maryland, and more than $1,000 with four or more transactions in Illinois. PayPal also applies 24% backup withholding if your taxpayer identification details are missing.\n\nEvery dollar of net business profit is reported to the IRS on Schedule C of Form 1040, regardless of whether a Form 1099 arrives. Under [IRS self-employment tax guidelines](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes), you must file Schedule SE whenever your net self-employment earnings reach $400 or more. The self-employment tax rate is 15.3%, consisting of 12.4% for Social Security and 2.9% for Medicare. As outlined in [IRS Topic 554](https://www.irs.gov/taxtopics/tc554), self-employment tax applies to 92.35% of your net Schedule C earnings, and you can deduct one-half of the resulting self-employment tax when calculating your adjusted gross income on Form 1040.\n\nYou can reduce your taxable earnings by claiming business deductions. According to the [IRS business expense guide](https://www.irs.gov/faqs/small-business-self-employed-other-business/income-expenses), deductible expenses must be ordinary, meaning common and accepted in your trade, and necessary, meaning helpful and appropriate. Personal and living expenses cannot be deducted. For a dedicated workspace, the [IRS home office deduction rules](https://www.irs.gov/businesses/small-businesses-self-employed/home-office-deduction) require regular and exclusive use as your principal place of business. Under the [simplified home office option](https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction), you can deduct $5 per square foot up to 300 square feet, for a maximum deduction of $1,500. You can also deduct the tracked business-use share of your computer and home internet connection.\n\nIndependent contractors must also manage their own payments throughout the year. Under [IRS Form 1040-ES](https://www.irs.gov/forms-pubs/about-form-1040-es), you generally must make estimated quarterly tax payments if you expect to owe at least $1,000 in federal tax after subtracting withholding and refundable tax credits. [IRS estimated tax rules](https://www.irs.gov/faqs/estimated-tax) establish quarterly due dates on April 15, June 15, September 15, and January 15 of the following year, which shift to the next business day if a deadline lands on a weekend or legal holiday. To avoid underpayment penalties, you can satisfy safe harbor rules by paying the smaller of 90% of your current-year tax obligation or 100% of your prior-year tax, which rises to 110% if your prior-year adjusted gross income exceeded $150,000.\n\nIf you have not started yet, read [whether DataAnnotation is legit and what it pays](/guides/is-dataannotation-legit/) and our overview of [AI training jobs](/guides/ai-training-jobs/).",
+    "commonMistakes": [
+      ...UNIVERSAL_MISTAKES,
+      "Assuming no tax is due because DataAnnotation deposited earnings through PayPal without issuing a Form 1099-K or Form 1099-NEC.",
+      "Treating the hours spent on the Starter Assessment, skill screenings or ID verification as a deduction. You can deduct money you spend on the work, never the value of your own time.",
+      "Forgetting that income from DataAnnotation, Outlier and Mercor adds up on one Schedule C, so several small balances can together pass the $400 self-employment tax threshold.",
+    ],
+    "workedExample": "A contractor earns $6,000 from AI-training tasks and has $600 of deductible costs (the business share of a computer and internet), leaving $5,400 of profit. That profit carries $763.00 of self-employment tax ($5,400 × 92.35% × 15.3%). With no other income, federal income tax is zero because the profit is below the $16,100 standard deduction (2026). With a day job, the profit is taxed at your top marginal rate. Enter your W-2 wages in the calculator above to see that figure.",
+    "faqs": [
+      {
+        "question": "Do I have to pay taxes on DataAnnotation?",
+        "answer": "Yes, you must pay taxes on your DataAnnotation earnings. You must report all net business profit on Schedule C and pay self-employment tax once your net earnings reach $400 or more."
+      },
+      {
+        "question": "Do you get a 1099 from DataAnnotation?",
+        "answer": "DataAnnotation publishes no tax-form policy on its website and delivers payouts through PayPal. PayPal only issues Form 1099-K if your gross payments exceed $20,000 and 200 transactions, except in Vermont, Massachusetts, Virginia and Maryland ($600) and Illinois (more than $1,000 and 4 or more transactions). You are legally required to report your income even if neither platform sends you a Form 1099."
+      },
+      {
+        "question": "Do you pay taxes on Outlier AI income?",
+        "answer": "Yes, you must pay taxes on Outlier earnings. Outlier states that contributors work as independent contractors and freelancers rather than employees. Because independent contractors have no tax withheld, you must report the earnings on Schedule C and pay self-employment tax on net earnings of $400 or more."
+      },
+      {
+        "question": "Does Mercor send a 1099?",
+        "answer": "Yes, Mercor states in its tax policy that United States contributors who submit a Form W-9 and earn more than $600 in a year receive a Form 1099-NEC through Stripe by February. Non-US contributors who provide a Form W-8BEN do not receive a Form 1099."
+      },
+      {
+        "question": "How much should I set aside for taxes from AI training work?",
+        "answer": "You should set aside enough to cover both self-employment tax and income tax. Self-employment tax takes 15.3% on 92.35% of your net earnings, while federal income tax depends on your overall tax bracket. You can work out how much to save using our guide on [how much to set aside for taxes](/self-employment-tax/how-much-to-set-aside-for-taxes/)."
+      }
+    ],
+    "sources": [IRS_GIG, IRS_SE_TAX, IRS_1099NEC, IRS_1099K, IRS_ES, IRS_SCHED_C],
+    "toolHeading": "DataAnnotation tax calculator",
+    "toolSubheading": "Estimate your self-employment and income tax liability",
+    "preset": {
+      "netProfit": 5400,
+      "filingStatus": "single",
+      "applyQbi": true,
+      "incomeLabel": "DataAnnotation profit (gross earnings minus business deductions)",
+      "platformNote": "This tool assumes your AI training tasks are carried out as an independent trade or business. Enter your net profit after deducting ordinary business expenses like computer equipment and internet service."
+    },
+    "relatedSlugs": [
+      "upwork-taxes",
+      "1099-tax-calculator",
+      "how-much-to-set-aside-for-taxes"
+    ],
+  },
+  // ── end dataannotation-taxes ──
+  // ── mindmap-pass 2026-10-09 (ai-money): youtube-taxes ──
+  {
+    "calculator": "self-employment-tax",
+    "slug": "youtube-taxes",
+    "updated": "2026-10-09",
+    "title": "YouTube Taxes: What Creators Owe in 2026",
+    "metaDescription": "Calculate your YouTube taxes for 2026. Learn self-employment tax rates, AdSense W-9 withholding rules, 1099 thresholds, and valid deductions.",
+    "targetKeyword": "YouTube taxes",
+    "estimatedVolume": 210,
+    "estimatedKD": 26,
+    "h1": "YouTube Taxes: What Creators Owe on Channel Earnings",
+    "introText": "[YouTube](https://blog.youtube/creator-and-artist-stories/youtube-partner-program-explained/) earnings count as taxable income starting from the first dollar. If you run your channel regularly to make a profit, it counts as a business. You then owe self-employment tax once net earnings reach $400 for the year, [according to the Internal Revenue Service (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes). You also owe federal income tax on the profit, and ordinary and necessary costs such as equipment, editing software and subscriptions reduce it.\n\nA creator with $9,000 of YouTube revenue and $2,000 of deductible gear, editing software and AI tool subscriptions has $7,000 of profit and owes $989.07 of self-employment tax ($7,000 × 92.35% × 15.3%). At $7,000 of profit and no other income, federal income tax is zero because the profit is below the $16,100 standard deduction.",
+    "howItWorks": "Tax reporting starts with the IRS hobby-versus-business evaluation. Under [IRS guidance](https://www.irs.gov/newsroom/heres-how-to-tell-the-difference-between-a-hobby-and-a-business-for-tax-purposes), the IRS lists factors that help decide whether an activity is a business. These factors include keeping businesslike books, the time and effort invested, reliance on the income, changes made to improve profits, creator expertise, past business history, and whether the activity makes a profit in some years. According to [Schedule C instructions](https://www.irs.gov/instructions/i1040sc), an activity qualifies as a trade or business when its primary purpose is income or profit and you carry it on with continuity and regularity. Sporadic activities do not qualify. If your channel is treated as a hobby, you must still report all payments on Schedule 1 (Form 1040), line 8.\n\nWhen your channel operates as a business, you calculate net profit on Schedule C and pay self-employment tax using Schedule SE once net earnings reach $400 or more. The self-employment tax rate is 15.3%, consisting of 12.4% for Social Security and 2.9% for Medicare. As outlined in [IRS Topic 554](https://www.irs.gov/taxtopics/tc554), self-employment tax applies to 92.35% of your net business earnings rather than your total gross revenue. You also deduct one-half of the calculated self-employment tax from your gross income when figuring your adjusted gross income. For the 2025 tax year, the Social Security portion applies up to the $176,100 wage base limit according to [Schedule SE instructions](https://www.irs.gov/instructions/i1040sse). An Additional Medicare Tax of 0.9% applies to earnings above $200,000 for single filers or $250,000 for married couples filing jointly.\n\n[Google](https://support.google.com/youtube/answer/10391362?hl=en) must collect tax information from creators in the YouTube Partner Program. Google does not withhold federal taxes from US creators who provide a valid Form W-9, though creators must resubmit this form if their legal address changes. If you do not supply tax information, individual and business accounts in the United States face backup withholding at a mandatory 24% rate applied to total worldwide earnings. Non-US creators who submit a Form W-8 face withholding of 0% to 30% on earnings from US viewers, depending on tax-treaty status. Non-US business accounts without tax info default to 30% of US earnings. Google sets a submission deadline of December 10 each year, and submitted tax profiles expire after the third full calendar year following the signature date.\n\nAt tax time, [Google's YouTube help](https://support.google.com/youtube/answer/10390801?hl=en) lists Form 1099-MISC, Form 1099-K and Form 1042-S as year-end forms, but it does not say which form applies to which creator. You must check the form you actually receive rather than assuming a single form type. Under [IRS 1099 instructions](https://www.irs.gov/instructions/i1099mec), the threshold for Form 1099-NEC nonemployee compensation and Form 1099-MISC rents and other income rises to $2,000 for tax years beginning after 2025, though Form 1099-MISC box 2 for royalties stays at $10. Payment processors like [PayPal report transactions](https://www.paypal.com/us/cshelp/article/current-form-1099-k-reporting-thresholds-2025-update-help1131) on Form 1099-K only when gross payments exceed $20,000 and 200 transactions, matching [IRS 1099-K guidance](https://www.irs.gov/newsroom/irs-issues-faqs-on-form-1099-k-threshold-under-the-one-big-beautiful-bill-dollar-limit-reverts-to-20000). None of these information thresholds alter your legal obligation to report and pay tax on every dollar earned.\n\nTo lower net profit on Schedule C, claim all [deductible business expenses](https://www.irs.gov/faqs/small-business-self-employed-other-business/income-expenses). The IRS requires business write-offs to be ordinary, meaning common and accepted in your line of work, and necessary, meaning helpful and appropriate for the business. Personal and family expenses remain non-deductible. According to [IRS rules for deducting expenses](https://www.irs.gov/businesses/small-businesses-self-employed/deducting-business-expenses), equipment depreciation is handled following Publication 946 and reported on Form 4562. Monthly subscriptions for video editing tools and software used to manage channel content qualify as current operational deductions. If you produce videos for a [faceless YouTube channel with AI](/guides/faceless-youtube-channel-ai/), AI tool subscriptions used for the channel count as deductible business expenses.\n\nA dedicated production workspace may also qualify for the [home office deduction](https://www.irs.gov/businesses/small-businesses-self-employed/home-office-deduction). To claim this write-off, you must use a specific area of your home exclusively and regularly as your principal place of business. Under the [simplified home office option](https://www.irs.gov/businesses/small-businesses-self-employed/simplified-option-for-home-office-deduction), you can deduct $5 per square foot for up to 300 square feet of dedicated working space, providing a standard maximum deduction of $1,500. Creators using the regular method instead calculate their deduction on Form 8829.\n\nBecause YouTube does not withhold taxes from US creators who file a W-9, you must make [quarterly estimated tax payments](https://www.irs.gov/forms-pubs/about-form-1040-es) throughout the year. As noted in [IRS estimated tax rules](https://www.irs.gov/faqs/estimated-tax), you must generally make quarterly payments using Form 1040-ES if you expect to owe at least $1,000 in federal tax after subtracting withholding and credits. To avoid underpayment penalties, you can satisfy safe harbor rules by paying the smaller of 90% of your current-year tax or 100% of your prior-year tax, which increases to 110% if your prior-year adjusted gross income exceeded $150,000. Quarterly payments are due April 15, June 15, September 15, and January 15 of the following year, shifting to the next business day if a date falls on a weekend or legal holiday. Creators balancing multiple platforms can review our [Twitch taxes guide](/self-employment-tax/twitch-taxes/) to compare income reporting across live video streaming.\n\nMoney you earn from Whop clipping campaigns goes on the same Schedule C as your YouTube income. Our guide to [Whop clipping pay](/guides/whop-clipping/) explains how those campaigns pay per 1,000 views.",
+    "commonMistakes": [
+      ...UNIVERSAL_MISTAKES,
+      "Ignoring the Google tax profile submission until backup withholding deducts 24% from your worldwide earnings automatically.",
+      "Deducting gear used mostly for personal life without splitting the business share.",
+      "Assuming sponsorships or brand deals received outside Google AdSense are not reportable income on your tax return.",
+    ],
+    "workedExample": "A creator earns $9,000 of gross YouTube revenue and claims $2,000 of deductible gear, editing software and AI tool subscriptions, leaving $7,000 of net profit. Self-employment tax applies to 92.35% of that profit ($6,464.50) at the 15.3% rate, resulting in $989.07 of self-employment tax. Because the $7,000 profit remains below the $16,100 standard deduction, federal income tax is zero if the creator has no other income. If that creator also earns a $60,000 salary, the YouTube profit is added on top of the wages and taxed at the creator's top marginal rate. Enter the wages in the calculator above to see that figure.",
+    "faqs": [
+      {
+        "question": "Do you pay taxes on income from YouTube?",
+        "answer": "Yes, every dollar of income earned from YouTube is taxable. If your channel runs as a business and you reach $400 or more in net profit, you must file Schedule SE to pay self-employment tax alongside standard income tax."
+      },
+      {
+        "question": "Do I have to file taxes if I only made $5,000 on YouTube?",
+        "answer": "Yes, if the $5,000 is profit from a channel you run as a business. The IRS threshold requiring self-employed individuals to file and pay self-employment tax is $400 in net earnings, meaning $5,000 of YouTube profit requires filing Schedule C and Schedule SE."
+      },
+      {
+        "question": "Does Google withhold taxes from YouTube payments?",
+        "answer": "Google does not withhold federal tax on earnings for US creators who submit a valid Form W-9. If a US creator fails to provide valid tax documentation, Google must apply 24% backup withholding to their worldwide earnings."
+      },
+      {
+        "question": "What tax form does YouTube send?",
+        "answer": "Google lists Form 1099-MISC, Form 1099-K, and Form 1042-S as year-end forms. Google's documentation does not specify which form each creator receives, so check the form you actually receive."
+      },
+      {
+        "question": "What can YouTubers deduct?",
+        "answer": "Creators operating as a business can deduct ordinary and necessary expenses, including video editing tools, software subscriptions, and equipment depreciated under IRS rules. You can also claim a qualifying home office used regularly and exclusively for channel production."
+      }
+    ],
+    "sources": [IRS_GIG, IRS_SE_TAX, IRS_1099NEC, IRS_1099K, IRS_ES, IRS_SCHED_C],
+    "toolHeading": "YouTube tax calculator",
+    "toolSubheading": "Estimate self-employment tax on channel profit",
+    "preset": {
+      "netProfit": 7000,
+      "filingStatus": "single",
+      "applyQbi": true,
+      "incomeLabel": "YouTube profit (revenue minus business expenses)",
+      "platformNote": "This calculation assumes your YouTube channel operates as a business. If the IRS treats your channel as a hobby, you report the income on Schedule 1 (Form 1040), line 8."
+    },
+    "relatedSlugs": [
+      "twitch-taxes",
+      "1099-tax-calculator",
+      "how-much-to-set-aside-for-taxes"
+    ],
+  },
+  // ── end youtube-taxes ──
 ];

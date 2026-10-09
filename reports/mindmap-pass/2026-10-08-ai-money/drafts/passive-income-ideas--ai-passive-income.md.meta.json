@@ -1,0 +1,69 @@
+{
+ "slug": "passive-income-ideas--ai-passive-income",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 288,
+ "floor": 0,
+ "input_tokens": 25151,
+ "output_tokens": 461,
+ "thinking_tokens": null,
+ "cached_tokens": 17751,
+ "est_cost_usd": 0.0086,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 288,
+  "numbers_not_in_facts": [
+   "21"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L5",
+     "quote": "If you generate audio with [Suno](https://help.suno.com/en/articles/2416769), you receive commercial rights only while paying for a Pro or Premier subscription.",
+     "replacement": "If you generate audio with [Suno](https://help.suno.com/en/articles/2416769), you receive commercial rights only on Pro or Premier plans.",
+     "type": "contradicted",
+     "why": "Suno commercial-use rights continue after canceling a Pro or Premier plan."
+    },
+    {
+     "id": "L11",
+     "quote": "If you want reliable earnings, explore the active, client-facing services detailed in our guide on [how to make money with AI](/guides/how-to-make-money-with-ai/).",
+     "replacement": "If you want to earn income, explore paid AI work detailed in our guide on [how to make money with AI](/guides/how-to-make-money-with-ai/).",
+     "type": "unsupported",
+     "why": "Source specifies paid AI work, not reliable earnings or client-facing services."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 291
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 79.3,
+ "response_id": "bgLJasiJIZLqz7IP0LGYmQk",
+ "generated_at": "2026-10-09T10:05:32-0500"
+}

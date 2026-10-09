@@ -30,6 +30,1248 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── mindmap-pass 2026-10-09 (ai-money): faceless-youtube-channel-ai ──
+  {
+    "updated": "2026-10-09",
+    "slug": "faceless-youtube-channel-ai",
+    "title": "When a Faceless YouTube Channel Made with AI Gets Monetized",
+    "metaDescription": "A faceless AI YouTube channel can be monetized if it clears Partner Program thresholds and avoids the inauthentic-content rule. See the ad math.",
+    "h1": "Can a Faceless YouTube Channel Made with AI Be Monetized?",
+    "cardBlurb": "AI faceless channels can earn YouTube ad revenue when each video shows original creative input. Videos that look template-made and mass-produced are not monetizable.",
+    "introText": "A faceless AI YouTube channel can be monetized if it clears the [YouTube Partner Program](https://support.google.com/youtube/answer/72851) thresholds and each video demonstrates original creative vision. At ModernWallet, every guide we write starts from the platform's own rules, so this one quotes YouTube's policy pages and shows the revenue arithmetic.\n\nMass-produced, templated AI videos fall directly under YouTube's inauthentic content policy and cannot earn ad revenue. Ad earnings equal views ÷ 1,000 × your revenue per mille (RPM), and YouTube publishes no RPM figures by niche.",
+    "sections": [
+      {
+        "heading": "Can AI Faceless Channels Be Monetized?",
+        "body": "Yes, an artificial intelligence (AI) faceless channel can qualify for monetization if your uploads provide genuine creative input and substantive modification. YouTube permits content created with automated assistance as long as the material expresses a unique creative voice. The [YouTube Channel Monetization Policies](https://support.google.com/youtube/answer/1311392) state that using AI to visualize a unique character and narrative you invented is allowed.\n\nOn July 15, 2025, YouTube renamed its repetitious content policy to inauthentic content. Under this policy, YouTube denies monetization to AI-generated content made with generic or unoriginal templates giving the impression of mass production. Content that looks templated or feels repetitive across multiple videos from the same channel violates these rules. Furthermore, YouTube explicitly bars AI personas presenting as experts on sensitive topics, including health, legal, or financial advice.\n\nMonetization also depends on the reused content policy. This rule targets channels that repurpose content already found on YouTube or other online destinations without original commentary or substantive editing. The reused content policy applies even if you have explicit permission from the original creator. Copying videos without substantive changes, or stitching clips together with little or no narrative, disqualifies a channel from earning ad revenue."
+      },
+      {
+        "heading": "The Two YouTube Partner Program Thresholds",
+        "body": "YouTube splits its monetization program into two distinct tiers. The expanded tier gives access to fan funding and Shopping, while the standard tier pays a share of ad revenue.\n\n| Partner Tier | Subscriber Requirement | Upload Requirement | Watch Time or Shorts Metric | Features Included |\n| --- | --- | --- | --- | --- |\n| Expanded Tier (Fan Funding) | 500 subscribers | 3 valid public uploads in the last 90 days | 3,000 public long-form watch hours in 12 months, OR 3 million public Shorts views in 90 days | Channel memberships, Super Chat, Super Stickers, Super Thanks, Jewels and gifts, Shopping |\n| Standard Tier (Ad Revenue) | 1,000 subscribers | None listed | 4,000 public long-form watch hours in 12 months, OR 10 million public Shorts views in 90 days | Long-form ad share, Shorts ad share |\n\nPer the [YouTube Partner Program Overview](https://support.google.com/youtube/answer/72851), watch hours from Shorts in the Shorts Feed do not count toward the 4,000 public watch hours needed for ad monetization. Creators relying strictly on vertical video must reach the 10 million Shorts views benchmark in 90 days to share in advertising revenue. In eligible countries, channels meeting the lower requirements can start with fan-funding tools through the [YouTube Partner Program Expanded Availability](https://support.google.com/youtube/answer/13429240)."
+      },
+      {
+        "heading": "How Advertising Revenue and Earnings Math Work",
+        "body": "YouTube pays creators a fixed percentage of ad revenue based on the video format. According to the [YouTube Partner Program Guide](https://blog.youtube/creator-and-artist-stories/youtube-partner-program-explained/), creators receive 55% of revenue for long-form videos and 45% for Shorts.\n\nShort-form revenue uses a different distribution system. The [YouTube Shorts Monetization Policies](https://support.google.com/youtube/answer/12504220) explain that ad revenue from the Shorts Feed is pooled monthly. A portion of this total pool pays for music licensing, and the remaining Creator Pool is distributed to creators based on their share of total engaged views across each country. Creators keep 45% of their allocated share regardless of whether they used licensed music.\n\nTwo metrics govern your video payouts. As documented in the [YouTube Metric Definitions](https://support.google.com/youtube/answer/9314357), cost per 1,000 impressions (CPM) measures what advertisers pay to show ads on YouTube. Revenue per mille (RPM) measures how much money you earn per 1,000 video views. Your earnings follow a simple formula: (Views ÷ 1,000) × RPM.\n\nConsider a video with 100,000 views. Each $1 of RPM yields exactly $100 in total revenue. At a hypothetical $3 RPM, 100,000 views generate $300. At a hypothetical $8 RPM, the same 100,000 views yield $800. YouTube does not publish official RPM figures by niche. Third-party vendor reports often present contradictory estimates, meaning you cannot rely on assumed figures. You must check your actual RPM in YouTube Analytics after achieving monetization.\n\nTo determine how many views you need to earn $2,000 a month, use this arithmetic formula: ($2,000 ÷ RPM) × 1,000. The RPMs below are hypothetical and show only the arithmetic. At a $2 RPM, you need 1,000,000 views. At $5, you need 400,000 views. At $10, you need 200,000 views."
+      },
+      {
+        "heading": "Faceless Formats Allowed by Policy Versus Inauthentic Formats",
+        "body": "The difference between an approved faceless channel and a rejected account centers on creative substance. Automated generation alone does not breach policy, but channels relying on repetitive output fail monetization review.\n\nFormats that violate the inauthentic content and reused content rules:\n- Image slideshows or scrolling text with minimal narrative or educational value\n- AI-generated videos built on unoriginal templates giving the impression of mass production\n- Videos repeating the identical scenario with the identical outcome across uploads\n- Clips from television shows edited together with little or no narrative\n- Content copied from other online sources without substantive modifications\n\nFormats permitted under YouTube policy:\n- Content expressing your unique creative voice with original storytelling\n- Visualizations of unique, original characters and narratives you invented\n- Automated video templates where the final work demonstrates your creative vision\n- Reused third-party footage that includes your original commentary, storyline, or substantive editing\n- Channels using standard intro and outro sequences where the bulk of the video content is distinct\n\nIf you want broader ideas for online revenue, review our breakdown of [side hustle ideas](/guides/side-hustle-ideas/) and evaluate methods for [how to make money with AI](/guides/how-to-make-money-with-ai/).\n\nIf you would rather be paid to post clips of other creators' videos, our guide to [Whop clipping pay](/guides/whop-clipping/) explains how Whop clipping campaigns pay per 1,000 views."
+      },
+      {
+        "heading": "Rules for Artificial Intelligence Content Disclosure Labels",
+        "body": "YouTube creators must label certain synthetic elements. Under the [YouTube Synthetic Content Guidelines](https://support.google.com/youtube/answer/14328491), creators must disclose when they use AI to meaningfully alter or generate photorealistic content. Examples include realistic scenes that never happened and altered footage of real events. AI music as the main focus of a video also counts, as does making a real person appear to say or do something they did not.\n\nMany common faceless video workflows do not require this disclosure label:\n- Cloning your own voice for voiceovers\n- Using AI to assist with scripts, titles, thumbnails, or topic brainstorming\n- Unrealistic animations, fantasy settings, and stylized artwork\n- Minor aesthetic adjustments, including video filters, background blur, captions, or upscaling\n\nAdding an AI disclosure label does not reduce your video distribution or restrict your monetization eligibility. However, creators who repeatedly fail to disclose required photorealistic content risk penalties. YouTube may apply a label itself, and penalties can include removal or suspension from the YouTube Partner Program."
+      },
+      {
+        "heading": "Enforcement Actions and Channel Terminations",
+        "body": "On December 18, 2025, YouTube confirmed it had terminated two channels, Screen Culture and KH Studio. As reported by [TheWrap](https://www.thewrap.com/?p=7915970), the channels made AI-generated fake movie trailers and had well over a billion views. YouTube spokesperson Jack Malon confirmed that after regaining monetization, the channels reverted to clear violations of spam and misleading metadata policies.\n\nIn his annual letter in January 2026, covered by [Variety](https://au.variety.com/2026/digital/global/youtube-channels-using-ai-tools-reduce-slop-neal-mohan-letter-32190/), Neal Mohan said YouTube is building on its spam and clickbait systems to reduce low-quality, repetitive content. The same letter, per Variety, said more than 1 million channels used YouTube's AI creation tools daily, on average, in December 2025.\n\nIn a late-2025 single-account test published in the [Kapwing Slop Report](https://www.kapwing.com/blog/ai-slop-report-the-global-rise-of-low-quality-ai-videos/), 104 of the first 500 Shorts served to a simulated user account (21%) were classified as AI-generated. This figure comes from one simulated account, so it is not a platform-wide rate."
+      },
+      {
+        "heading": "Self-Employment Taxes and Creator Withholding Obligations",
+        "body": "Income from YouTube Partner Program ads and memberships is generally self-employment income when you run the channel as a business. The [Internal Revenue Service (IRS) Schedule C instructions](https://www.irs.gov/instructions/i1040sc) count an activity as a business when its main purpose is profit and you run it regularly and continuously. A sporadic activity or a hobby does not qualify, and hobby income goes on Schedule 1 (Form 1040), line 8. For complete guidance on your tax filing obligations, consult our guide on [YouTube taxes](/self-employment-tax/youtube-taxes/).\n\n[Google collects tax information](https://support.google.com/youtube/answer/10391362?hl=en) from every monetized creator. Google's tax-information rules state that United States creators who submit a valid Form W-9 experience zero tax withholding on their payouts. However, if a United States creator fails to provide valid tax details, Google defaults to 24% backup withholding on total worldwide earnings. Non-US creators face withholding rates between 0% and 30% on earnings generated from US viewers, depending on tax-treaty status. Tax forms expire after the third full calendar year following submission, and annual tax documents must be submitted by December 10.\n\nGoogle's [YouTube tax help page](https://support.google.com/youtube/answer/10390801?hl=en) lists year-end forms as Form 1099-MISC, Form 1099-K, and Form 1042-S, but it does not say which form applies to which US creator.\n\nNet self-employment earnings of $400 or more require paying self-employment tax. Under [IRS Self-Employment Tax Rules](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes), this tax consists of 12.4% for Social Security and 2.9% for Medicare, totaling 15.3%. According to [IRS Tax Topic 554](https://www.irs.gov/taxtopics/tc554), self-employment tax generally applies to 92.35% of your net earnings from self-employment. The 2025 [Social Security wage base](https://www.irs.gov/instructions/i1040sse) is $176,100. High earners also face an Additional Medicare Tax of 0.9% on self-employment earnings above $200,000 for single filers or $250,000 for married couples filing jointly.\n\nCreators who expect to owe at least $1,000 after withholding and refundable credits generally must pay quarterly estimated taxes using Form 1040-ES. The [IRS Estimated Tax Guidelines](https://www.irs.gov/faqs/estimated-tax) outline deadlines on April 15, June 15, September 15, and January 15 of the following year. You can calculate your liability with our [quarterly estimated tax calculator](/self-employment-tax/quarterly-estimated-tax-calculator/) or project your net take-home using our [1099 tax calculator](/self-employment-tax/1099-tax-calculator/).\n\nYou can reduce net business earnings by claiming ordinary and necessary expenses under the [IRS Business Expense Rules](https://www.irs.gov/faqs/small-business-self-employed-other-business/income-expenses). If you manage your production from a dedicated area, use our guide on the [home office deduction](/guides/home-office-deduction/) to evaluate regular and simplified filing options."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/budget/",
+        "label": "Budget Calculator"
+      },
+      {
+        "href": "/emergency-fund-calculator/",
+        "label": "Emergency Fund Calculator"
+      },
+      {
+        "href": "/self-employment-tax/",
+        "label": "Self-Employment Tax Calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can AI faceless YouTube channels be monetized?",
+        "answer": "Yes, AI faceless channels can be monetized if they satisfy YouTube Partner Program thresholds and deliver original creative value. YouTube bars mass-produced, repetitive, or templated synthetic videos under its inauthentic content policy."
+      },
+      {
+        "question": "How many views on YouTube do you need to make $2,000 a month?",
+        "answer": "The views required to earn $2,000 depend on your specific RPM using the formula ($2,000 ÷ RPM) × 1,000. Using hypothetical RPMs only to show the arithmetic, a $2 RPM needs 1,000,000 views and a $10 RPM needs 200,000 views. Read your own RPM in YouTube Analytics once your channel is monetized."
+      },
+      {
+        "question": "Which YouTube niche is most profitable?",
+        "answer": "YouTube does not publish official RPM figures by niche, and third-party vendor reports share conflicting estimates. You must view your own verified RPM in YouTube Analytics once your channel qualifies for the YouTube Partner Program."
+      },
+      {
+        "question": "Can 500 subscribers make money on YouTube?",
+        "answer": "Yes, channels with 500 subscribers and 3 public uploads in 90 days can qualify for the expanded tier with either 3,000 long-form watch hours or 3 million Shorts views. That tier pays through memberships, Super Chat, and Shopping, while ad revenue requires the 1,000-subscriber tier."
+      },
+      {
+        "question": "Do I have to disclose AI on YouTube?",
+        "answer": "You must disclose AI if you generate or alter realistic content that depicts events that never happened or shows real people doing things they did not do. Disclosures are not required for animation, cloned personal voiceovers, or AI script assistance."
+      },
+      {
+        "question": "Can you monetize AI voiceovers?",
+        "answer": "Cloning your own voice for voiceovers needs no AI disclosure label, and disclosure does not limit monetization eligibility. The risk is the video around the voiceover: YouTube does not monetize slideshows or scrolling text with minimal narrative, commentary, or educational value, or AI videos made with templates that look mass-produced."
+      },
+      {
+        "question": "Does YouTube demonetize AI content?",
+        "answer": "YouTube does not demonetize videos simply for incorporating AI tools, but it rejects content that is unoriginal, repetitive, or mass-produced. Channels that repeatedly fail to disclose realistic AI content can be suspended or removed from the YouTube Partner Program, and copied content without substantive changes is not monetizable."
+      }
+    ],
+    "sources": [
+      {
+        "label": "YouTube Partner Program Overview",
+        "url": "https://support.google.com/youtube/answer/72851"
+      },
+      {
+        "label": "YouTube Channel Monetization Policies",
+        "url": "https://support.google.com/youtube/answer/1311392"
+      },
+      {
+        "label": "YouTube Partner Program Expanded Availability",
+        "url": "https://support.google.com/youtube/answer/13429240"
+      },
+      {
+        "label": "YouTube Synthetic Content Guidelines",
+        "url": "https://support.google.com/youtube/answer/14328491"
+      },
+      {
+        "label": "YouTube Partner Program Explained",
+        "url": "https://blog.youtube/creator-and-artist-stories/youtube-partner-program-explained/"
+      },
+      {
+        "label": "YouTube Shorts Monetization Policies",
+        "url": "https://support.google.com/youtube/answer/12504220"
+      },
+      {
+        "label": "YouTube Metric Definitions",
+        "url": "https://support.google.com/youtube/answer/9314357"
+      },
+      {
+        "label": "Google Creator Tax Information Rules",
+        "url": "https://support.google.com/youtube/answer/10391362?hl=en"
+      },
+      {
+        "label": "Google Tax Reporting Guide",
+        "url": "https://support.google.com/youtube/answer/10390801?hl=en"
+      },
+      {
+        "label": "IRS Self-Employment Tax Rules",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+      },
+      {
+        "label": "IRS Net Earnings Guidance",
+        "url": "https://www.irs.gov/taxtopics/tc554"
+      },
+      {
+        "label": "IRS Schedule SE Instructions",
+        "url": "https://www.irs.gov/instructions/i1040sse"
+      },
+      {
+        "label": "IRS Estimated Tax Guidelines",
+        "url": "https://www.irs.gov/faqs/estimated-tax"
+      },
+      {
+        "label": "IRS Business Expense Rules",
+        "url": "https://www.irs.gov/faqs/small-business-self-employed-other-business/income-expenses"
+      },
+      {
+        "label": "TheWrap Coverage on Channel Terminations",
+        "url": "https://www.thewrap.com/?p=7915970"
+      },
+      {
+        "label": "Variety Reporting on Neal Mohan Letter",
+        "url": "https://au.variety.com/2026/digital/global/youtube-channels-using-ai-tools-reduce-slop-neal-mohan-letter-32190/"
+      },
+      {
+        "label": "Kapwing Slop Report",
+        "url": "https://www.kapwing.com/blog/ai-slop-report-the-global-rise-of-low-quality-ai-videos/"
+      }
+    ]
+  },
+  // ── end faceless-youtube-channel-ai ──
+  // ── mindmap-pass 2026-10-09 (ai-money): ai-automation-agency ──
+  {
+    "updated": "2026-10-09",
+    "slug": "ai-automation-agency",
+    "title": "How to Start an AI Automation Agency and Price It",
+    "metaDescription": "Learn how to launch an AI automation agency, price setup fees and retainers, budget tool costs, and handle self-employment taxes.",
+    "h1": "How to Start an AI Automation Agency and Set Your Pricing",
+    "cardBlurb": "Learn how to launch an AI automation agency, structure setup and retainer pricing, compare workflow tool costs, and manage your small-business taxes.",
+    "introText": "To start an AI automation agency, pick one specific business workflow, build it on workflow software like [n8n](https://n8n.io/pricing/) or [Make](https://www.make.com/en/pricing), and sell that setup to local clients with an ongoing maintenance retainer. At ModernWallet, we show the math, which here means turning each published agency price into an hourly rate you can check against your own. Finding clients takes more work than the tooling, which can start free on n8n's self-hosted Community Edition.\n\nPublic pricing surveys for automation agencies remain scarce, with only self-reported vendor datasets available to review.",
+    "sections": [
+      {
+        "heading": "How to Start an AI Automation Agency, Step by Step",
+        "body": "You start an AI automation agency by selling one tested workflow to a few local businesses, then repeating it.\n\n1. Pick a single business niche, so you solve one problem well.\n2. Choose one specific, repeatable workflow.\n3. Build a working prototype in n8n or Make and confirm that data passes cleanly between the client's apps.\n4. Price it as a setup fee plus a monthly retainer. The only detailed published dataset, self-published by [Aumiqx](https://aumiqx.com/services/ai-automation-agency/), puts median entry prices near $1,000 per workflow and $1,423 a month for a build retainer.\n5. Pitch your functional prototype to a small group of local business owners who handle repetitive data entry.\n6. Secure your first client on a recurring maintenance retainer to support ongoing API updates and error handling.\n7. Document the setup process and repeat the exact workflow delivery for similar businesses in the same vertical."
+      },
+      {
+        "heading": "What an AI Automation Agency Sells",
+        "body": "An AI automation agency sells the integration that connects artificial intelligence models to existing operational business systems. [Upwork](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates)'s Future Workforce Index 2026 names a matching emerging role, the \"AI Orchestrator\": someone who connects AI tools to domain expertise, applies judgment, and turns AI output into business results.\n\nMarketplace data shows shifting demand toward practical software integration. According to [Upwork's in-demand skills release](https://investors.upwork.com/news-releases/news-release-details/upworks-demand-skills-2026-demand-top-ai-skills-more-doubles-ai), freelancer earnings on completed jobs for AI Integration grew 178% year over year, while AI Chatbot Development expanded 71%. Similarly, [Fiverr's business trends index](https://finviz.com/news/360535/businesses-race-to-hire-claude-code-specialists-as-demand-surges-938) reported a 125% increase in searches for n8n AI automation and a 49% rise in queries for AI voice agents over a six-month period. These marketplace search metrics reflect commercial interest in integration skills, though search volume does not guarantee contract earnings.\n\nIf client work is not for you, our guide on [how to make money with AI](/guides/how-to-make-money-with-ai/) compares the other paths, and [how to make money with Claude](/guides/how-to-make-money-with-claude/) covers building tools with Claude Code."
+      },
+      {
+        "heading": "AI Automation Agency Pricing Models and Retainers",
+        "body": "The published figures on AI automation agency pricing all come from vendors or agencies with a commercial interest. The most detailed figures come from a self-published dataset compiled by Aumiqx, an agency services company that analyzed 177 pricing points across 48 agencies on September 23, 2026. Because this dataset originates from a commercial service provider rather than an independent audit, you should treat these figures as an unverified directional reference rather than an industry standard.\n\nThe Aumiqx figures report a median entry price of roughly $1,000 for a single workflow deployment, $3,556 for a multi-workflow build, $1,423 per month for an ongoing build retainer, and approximately $286 per month for basic maintenance.\n\nAvoid setting fixed quotes without checking your production time against our [freelance rate calculator](/freelance-rate/). If building a workflow requires 20 hours of configuration and troubleshooting, a $1,000 flat price yields a gross return of $50 per hour before software expenses, taxes, and customer support. Retainers can cover ongoing maintenance."
+      },
+      {
+        "heading": "Software Subscriptions and Infrastructure Operating Costs",
+        "body": "Running an automation firm requires maintaining subscriptions for workflow automation software and underlying language models. On n8n, hosted cloud accounts cost €20 per month billed annually for the Starter tier with 2,500 executions, while the Pro tier costs €50 per month for 10,000 executions. The [n8n Community Edition license](https://docs.n8n.io/n8n-community-license/community-license/license-faq) is free to self-host, but its terms prohibit white-labeling or hosting n8n as a managed service for clients.\n\nAlternative workflow software provides different pricing structures. On Make, plans include a free tier offering 1,000 credits, Core at $9, Pro at $16, and Teams at $29 per month, each supporting 10,000 credits, though Make's pricing page does not clarify if those rates require annual billing. [Zapier](https://zapier.com/pricing) offers a Free tier with 100 monthly tasks, a Professional plan at $19.99 monthly billed annually or $29.99 monthly for 750 tasks, and a Team tier at $69 monthly billed annually or $103.50 billed monthly for 2,000 tasks.\n\nA paid AI model plan adds to those costs. [Anthropic's Claude](https://claude.com/pricing) offers a Pro tier at $20 monthly billed month-to-month, or $17 per month billed annually, which includes access to Claude Code. According to [OpenAI's pricing documentation](https://learn.chatgpt.com/docs/pricing), ChatGPT Plus costs $20 per month, while ChatGPT Pro starts at $100 per month. [Anthropic's consumer terms](https://www.anthropic.com/legal/consumer-terms) and [OpenAI's terms of use](https://openai.com/policies/terms-of-use/) both assign you their rights in the output, and Anthropic's terms contain no general ban on commercial use."
+      },
+      {
+        "heading": "Income Claims and Federal Trade Commission Rules",
+        "body": "Prospective agency owners should critically evaluate promotional sales pitches that promise rapid wealth from automation agencies. The [FTC's AI enforcement actions](https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes) have targeted promoters using misleading claims about artificial intelligence business profitability. In August 2025, the [FTC sued Air AI](https://www.ftc.gov/news-events/news/press-releases/2025/08/ftc-sues-stop-air-ai-using-deceptive-claims-about-business-growth-earnings-potential-refund), alleging deceptive promotions that buyers would generate tens of thousands of dollars within days or months. In March 2026, the FTC announced a [proposed settlement](https://www.ftc.gov/news-events/news/press-releases/2026/03/air-ai-its-owners-will-be-banned-marketing-business-opportunities-settle-ftc-charges-company-misled) with a ban on selling business opportunities and an $18 million judgment against Air AI and its owners, mostly suspended.\n\nFederal regulations mandate strict disclosure standards for individuals selling business programs. Under the [FTC Business Opportunity Rule (16 CFR Part 437)](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-437), any promoter marketing an earning potential must have a reasonable basis and written substantiation for those numbers. Sellers making earnings claims must provide prospects with a formal Earnings Claim Statement showing the specific percentage and number of past buyers who achieved those stated returns.\n\nIf an online program urges you to launch an agency using unverified revenue screenshots, request their statutory earnings claim statement. The [FTC's warning on side hustle scams](https://consumer.ftc.gov/consumer-alerts/2026/02/how-avoid-side-hustle-scam) highlights high upfront costs, urgent sales pressure, and unrealistic income representations as warning signs of fraudulent schemes. An agency earns money only while you find clients and keep them on retainers."
+      },
+      {
+        "heading": "Upwork Pay Trends for Simple and Complex AI Work",
+        "body": "The economic value of automated services is separating by project complexity. According to Upwork's Future Workforce Index 2026, contract starts for generative AI and creative production work increased 90% year over year, yet earnings per contract dropped 13%. Upwork reads this as a sign that lower-complexity AI execution may become less lucrative as it scales.\n\nIn contrast, Upwork reported that freelancers doing more complex work with AI saw earnings rise 45% year over year. In addition, AI-augmented professional services expanded 72% in contract volume with a 22% increase in earnings. Freelancers who do AI work on Upwork earn 34% more per hour than those who don't use AI, though Upwork adds that \"not all AI work is becoming more valuable.\"\n\nFor an agency, that data argues for selling a specific outcome to one niche instead of a generic chatbot."
+      },
+      {
+        "heading": "Small Business Taxes and Legal Recordkeeping",
+        "body": "Revenue from an automation agency constitutes taxable self-employment income that requires dedicated tax accounting. The self-employment tax rate totals 15.3%, consisting of 12.4% for Social Security and 2.9% for Medicare. Under Internal Revenue Service (IRS) rules, net self-employment earnings of $400 or more require filing Schedule SE, with 92.35% of net profit subject to self-employment tax. Our [self-employment tax calculator](/self-employment-tax/) estimates the bill.\n\nOperating as an independent contractor generally requires making quarterly estimated tax payments if you anticipate owing $1,000 or more in federal taxes. The due dates are April 15, June 15, September 15 and January 15 of the next year. Review our guide on [how much to set aside for taxes](/self-employment-tax/how-much-to-set-aside-for-taxes/) to ensure you reserve adequate funds from every client invoice.\n\nOur [self-employed tax deductions guide](/guides/self-employed-tax-deductions/) covers the rules. The IRS allows deductions for expenses that are ordinary, meaning common in your trade, and necessary, meaning helpful to your operations. Subscriptions such as Make, Zapier or a paid AI plan are deductible only if they meet that ordinary-and-necessary test for your business. Review our [home office deduction guide](/guides/home-office-deduction/) if you maintain a dedicated workspace used regularly and exclusively as your principal place of business.\n\nThis is general information, not financial, tax or legal advice."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/freelance-rate/",
+        "label": "Freelance Rate"
+      },
+      {
+        "href": "/self-employment-tax/",
+        "label": "Self-Employment Tax"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What do AI automation agencies do?",
+        "answer": "An AI automation agency builds and maintains software connections between artificial intelligence models and common business applications. The agency connects AI tools to domain expertise and business workflows to deliver results."
+      },
+      {
+        "question": "How do I start my own AI automation agency?",
+        "answer": "Start by selecting a single industry niche and identifying one repetitive data workflow to automate. Build and test a working prototype using integration software like n8n, Make, or Zapier, then pitch that specific solution to local business owners as a setup project with an ongoing support retainer."
+      },
+      {
+        "question": "How much does an AI automation agency charge?",
+        "answer": "Agency fees vary widely without official regulatory benchmarks, but self-published data from Aumiqx across 48 agencies reports medians of approximately $1,000 for single-workflow setup and $1,423 monthly for active build retainers. Use our freelance rate calculator to confirm your quotes cover development hours and software costs."
+      },
+      {
+        "question": "Do you need to pay for AI agents?",
+        "answer": "Not necessarily. n8n's Community Edition is free to self-host, and Make and Zapier have free plans. Tool subscriptions range from free tiers to paid plans on Zapier and Make, while hosted n8n Cloud starts at €20 per month, alongside commercial plans like Claude Pro at $20 monthly or ChatGPT Plus at $20 monthly."
+      },
+      {
+        "question": "Is an AI automation agency worth it?",
+        "answer": "An agency can be viable if you focus on complex operational workflows rather than generic chatbots. Upwork data indicates that basic generative tasks saw per-contract pay decline 13%, while complex AI project earnings expanded 45% year over year."
+      },
+      {
+        "question": "Do I need to know how to code to start an AI automation agency?",
+        "answer": "n8n, Make and Zapier are workflow-automation tools, and each has a free way to start: n8n's self-hosted Community Edition, Make's Free plan and Zapier's Free plan. Build one prototype on a free plan before you sell anything to see how much code your workflow needs."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Upwork, Future Workforce Index 2026",
+        "url": "https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates"
+      },
+      {
+        "label": "Upwork, In-Demand Skills 2026",
+        "url": "https://investors.upwork.com/news-releases/news-release-details/upworks-demand-skills-2026-demand-top-ai-skills-more-doubles-ai"
+      },
+      {
+        "label": "Fiverr, Business Trends Index 2026 via Finviz",
+        "url": "https://finviz.com/news/360535/businesses-race-to-hire-claude-code-specialists-as-demand-surges-938"
+      },
+      {
+        "label": "Aumiqx, AI Automation Agency Pricing",
+        "url": "https://aumiqx.com/services/ai-automation-agency/"
+      },
+      {
+        "label": "Federal Trade Commission, Air AI Enforcement Action",
+        "url": "https://www.ftc.gov/news-events/news/press-releases/2026/03/air-ai-its-owners-will-be-banned-marketing-business-opportunities-settle-ftc-charges-company-misled"
+      },
+      {
+        "label": "eCFR, FTC Business Opportunity Rule (16 CFR Part 437)",
+        "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-437"
+      },
+      {
+        "label": "n8n, Pricing Plans",
+        "url": "https://n8n.io/pricing/"
+      },
+      {
+        "label": "Make, Pricing Plans",
+        "url": "https://www.make.com/en/pricing"
+      },
+      {
+        "label": "Zapier, Pricing Plans",
+        "url": "https://zapier.com/pricing"
+      },
+      {
+        "label": "Anthropic, Claude Pricing",
+        "url": "https://claude.com/pricing"
+      },
+      {
+        "label": "OpenAI, ChatGPT Pricing",
+        "url": "https://learn.chatgpt.com/docs/pricing"
+      }
+    ]
+  },
+  // ── end ai-automation-agency ──
+  // ── mindmap-pass 2026-10-09 (ai-money): ai-training-jobs ──
+  {
+    "updated": "2026-10-09",
+    "slug": "ai-training-jobs",
+    "title": "Which AI Training Jobs Are Real and What Each Platform Pays",
+    "metaDescription": "Real AI training jobs pay $15 to $125+ per hour as 1099 contract work. Compare DataAnnotation, Outlier, Mercor, Mindrift, pay rails, and legal risks.",
+    "h1": "Which AI Training Jobs Are Real and What Each Platform Pays",
+    "cardBlurb": "AI training jobs offer real 1099 freelance work paying $15 to $125 or more per hour, but project droughts, unpaid setup, and tax obligations are common.",
+    "introText": "You can get paid to train artificial intelligence (AI) models, and several platforms offer legitimate contract work. Companies like [DataAnnotation](https://www.dataannotation.tech/faqs), [Outlier](https://outlier.ai/faq), [Mercor](https://talent.docs.mercor.com/how-to/payments), [Alignerr](https://www.alignerr.com/), [Mindrift](https://mindrift.ai/), [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32264709473303), and [Prolific](https://researcher-help.prolific.com/en/article/2273bd) pay independent contractors to evaluate chatbot answers, write difficult prompts, and review code.\n\nPublished compensation spans from roughly $15 to $30 per hour for entry-level tasks on Mindrift to over $100 per hour for specialized STEM, legal, or coding roles.\n\nThese roles are classified as 1099 independent contractor arrangements rather than steady employment. Available work fluctuates without warning, most platforms do not say whether onboarding tests are paid, and any platform asking you to pay an upfront fee is a scam.",
+    "sections": [
+      {
+        "heading": "Is AI Training a Real Job? Who Pays and How Much",
+        "body": "AI training jobs are legitimate freelance gigs where companies pay remote contractors hourly or per completed task to evaluate, correct, and improve machine learning models. Verified platforms hire workers directly as independent contractors, but task volume is never guaranteed from week to week.\n\nPublished compensation depends heavily on whether a project requires general writing skills or advanced credentials in software engineering, law, or medicine. Mindrift lists entry-level work at $15 to $30 per hour, and DataAnnotation's coding projects start at $40 to $150 or more per hour.\n\n| Platform | Operator | Published Pay (as of October 2026) | Payment Method | Best Suited For |\n| --- | --- | --- | --- | --- |\n| DataAnnotation | Unnamed operator | General: starting at $25 to $50+/hr; Coding: $40 to $150+/hr; STEM: $40 to $125+/hr | PayPal | General writers and software coders |\n| Outlier | Scale AI | Rates shown per project (platform publishes no rate card) | PayPal, Airtm, ACH bank transfer | Generalists and domain specialists |\n| Mercor | Mercor.io Corporation | Per listing (e.g. $70 to $110/hr); [TechCrunch reports experts average over $85/hr](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/) | Stripe Connect, Wise | Advanced domain experts in law, science, and medicine |\n| Alignerr | Labelbox | Homepage lists $80/hr average pay; listings range from $30 to $120/hr | Not published (paid weekly) | Language specialists and technical experts |\n| Mindrift | Toloka AI BV | Entry-level: $15 to $30/hr; Domain experts: $60 to $100+/hr (paid per approved task) | Payoneer, Tipalti (PayPal) | Global freelance writers and editors |\n| Handshake AI | Stryder Corp. | $30 to $125/hr | Stripe | Master's, PhD, and Postdoc degree holders |\n| Prolific | Prolific | Minimum £6 / $8/hr (recommends at least £9 / $12/hr) | PayPal | Entry-level survey participants and basic testers |\n\nIf you want predictable earnings, this line of work is not for you. You should look at standard hourly employment or traditional freelance contracts instead. Our verdict on these platforms would flip if a provider began offering guaranteed baseline hours or covering onboarding time across all projects.\n\nBefore you apply, check [whether DataAnnotation is legit and what it pays](/guides/is-dataannotation-legit/), [whether Outlier AI really pays](/guides/is-outlier-ai-legit/), and [whether Mercor is worth applying to](/guides/is-mercor-legit/)."
+      },
+      {
+        "heading": "What the Work Involves Day to Day",
+        "body": "Daily tasks in AI training jobs focus on refining language model outputs through human feedback. According to DataAnnotation's FAQ, contributors evaluate chatbot responses for accuracy, compare competing outputs, flag factual errors, test synthetic images, write challenging prompts, and review software code for mistakes.\n\nWorkers on Outlier generate prompts, rank AI outputs, and improve model responses. On the Handshake AI Fellowship, fellows create prompts, evaluate AI responses, and correct content with citations."
+      },
+      {
+        "heading": "How Hiring and Assessment Tests Work",
+        "body": "Landing AI training jobs requires passing screening tests and identity checks before getting access to paid tasks. At DataAnnotation, the initial Starter Assessment takes about one hour to complete, while specialized technical tests run between one and two hours. DataAnnotation allows one attempt at the Starter Assessment. There are no retakes. Identity verification runs through Persona with a government photo ID and a selfie.\n\nOnboarding on Outlier takes 30 to 90 minutes and requires at least an associate degree, a resume, a LinkedIn profile, and a national identity document. Meanwhile, the Handshake AI Fellowship restricts most roles to candidates holding a Master's degree, PhD, or Postdoc credential.\n\nMost platforms in the table do not publish whether onboarding and assessment time is paid. Handshake's updated [earning guidelines](https://support.joinhandshake.com/hc/en-us/articles/33614619791767-Earning-on-Handshake-AI) state that some projects include paid onboarding time while others do not, making clear that onboarding is unpaid unless explicitly promised. DataAnnotation, Outlier, Mindrift, and Alignerr do not state on their public FAQ pages whether initial skill assessments are compensated."
+      },
+      {
+        "heading": "Payment Schedules and Disbursement Rails",
+        "body": "DataAnnotation delivers contractor funds through PayPal within a few days of a worker submitting a withdrawal request.\n\nOutlier processes compensation weekly on Tuesdays for tasks logged during the previous Tuesday through Monday cycle, sending payments via PayPal, Airtm, or direct ACH bank transfer. According to Mercor's talent documentation, payments process every Wednesday around 12:00 PM Pacific Time for the prior Saturday-through-Friday period using Stripe Connect or Wise. Payouts go only to a bank account in your own legal name. Stripe holds your first payout for seven days.\n\nAccording to the [Mindrift payment guide](https://mindrift.ai/blog/how-mindrift-pays), disbursements run twice a month on the 5th and 20th through Payoneer or Tipalti. Payout rails on [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32263614087575-Handshake-AI-payments-processing) run via Stripe, with disbursements sent by Wednesday afternoon for the previous week's logged production."
+      },
+      {
+        "heading": "Work Droughts and Worker Lawsuits Across Platforms",
+        "body": "Contractors on these platforms report long periods without work and sudden account closures. As of October 2026, DataAnnotation scores 3.9 out of 5 from 1,973 reviews on [Trustpilot](https://www.trustpilot.com/review/dataannotation.tech), and Outlier scores [4.1 from 5,483 reviews](https://www.trustpilot.com/review/outlier.ai). Recurring complaint themes across both include empty project queues, unpaid test steps, sudden deactivations, and slow support.\n\nPay rates can also decrease between assignments. Business Insider reported via [AOL syndication](https://www.aol.com/articles/ai-startup-powering-meta-openai-230627434.html) that Mercor ended a Meta project named Musen, which peaked at over 5,000 workers. Mercor then offered a similar project, Nova, at $16 per hour, $5 less than Musen paid. Mercor called the report inaccurate.\n\nLegal actions over contractor status and compensation have also emerged across the industry. Outlier's parent company faced a class action in California, *McKinney v. Scale AI*, alleging worker misclassification. According to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement), Scale AI agreed to a $12,500,000 settlement covering California contributors between December 2020 and February 2026. The settlement is pending final approval at an October 30, 2026 hearing, and the defendants deny the allegations. Handshake operator Stryder Corp. was named in an FLSA unpaid wage lawsuit, [*Boggs v. Stryder Corp.*](https://www.courtlistener.com/docket/73643581/boggs-v-stryder-corp/), filed on July 20, 2026. In May 2025, [Clarkson Law Firm](https://clarksonlawfirm.com/clarkson-represents-surge-ai-workers-in-labor-law-class-action) filed a misclassification class action against Surge AI. News reports cited on [Wikipedia](https://en.wikipedia.org/wiki/Surge_AI) have linked Surge AI to DataAnnotation, but DataAnnotation's site does not confirm that, and the firm's announcement does not name DataAnnotation."
+      },
+      {
+        "heading": "How to Identify Fake AI Training Scams",
+        "body": "Scammers pose as recruiters for AI rating and review work to get victims to send them money. The Federal Trade Commission (FTC) issued a consumer alert regarding [fraudulent job offer text messages](https://www.consumer.ftc.gov/consumer-alerts/2026/04/job-offer-text-probably-scam) detailing how scammers pose as recruiters offering remote online assessor positions through text, WhatsApp, or Telegram. These schemes frequently use fake-check scams or task scams where victims are given small introductory payments before being instructed to deposit their own money.\n\nLegitimate platforms never require you to pay money to receive work. As DataAnnotation's FAQ states: 'We will never ask for money from you for anything.' Similarly, Mindrift's blog says joining and assessments should be free, and contributors never have to buy courses or credentials.\n\nThe FTC's broader warning on [job scams](https://consumer.ftc.gov/articles/job-scams) emphasizes that any entity demanding upfront fees to secure an assignment is fraudulent. If you encounter these solicitations, report them immediately to ReportFraud.ftc.gov and your state attorney general."
+      },
+      {
+        "heading": "Taxes on 1099 Contractor Income",
+        "body": "Earnings from AI training jobs are 1099 contractor income, so you handle your own taxes. [Mercor's tax documentation](https://talent.docs.mercor.com/policies/us-taxes) says Mercor does not deduct taxes from payments. It adds that US workers who submit a Form W-9 and earn over $600 receive a Form 1099-NEC through Stripe by February. Similarly, Handshake AI notes that workers operate as 1099 contractors responsible for reporting their own income.\n\nThe Internal Revenue Service (IRS) imposes [self-employment tax](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) of 15.3%, consisting of 12.4% for Social Security and 2.9% for Medicare. Anyone earning net self-employment earnings of $400 or more must file Schedule SE. For the platform-specific rules, read our [DataAnnotation taxes guide](/self-employment-tax/dataannotation-taxes/) or use our [self-employment tax calculator](/self-employment-tax/) to estimate what you owe.\n\nBecause no employer withholds taxes from gig payments, you generally must pay [quarterly estimated taxes](https://www.irs.gov/faqs/estimated-tax) using Form 1040-ES if you expect to owe $1,000 or more for the year. To keep your cash flow predictable, calculate your obligations on our [quarterly estimated tax calculator](/self-employment-tax/quarterly-estimated-tax-calculator/) and review allowable write-offs in our [self-employed tax deductions guide](/guides/self-employed-tax-deductions/)."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/self-employment-tax/",
+        "label": "Self-Employment Tax Calculator"
+      },
+      {
+        "href": "/self-employment-tax/quarterly-estimated-tax-calculator/",
+        "label": "Quarterly Estimated Tax Calculator"
+      },
+      {
+        "href": "/freelance-rate/",
+        "label": "Freelance Rate Calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Do AI trainers get paid?",
+        "answer": "Yes, verified platforms pay AI trainers hourly or per task for completed, approved work. Payments are distributed through processors like PayPal, Stripe, Wise, Airtm, or direct ACH transfer, though task availability varies."
+      },
+      {
+        "question": "Is AI training a legitimate job?",
+        "answer": "Yes, AI training is legitimate freelance contract work. Handshake AI hires fellows as 1099 independent contractors, and Outlier's FAQ says you will not be an Outlier employee."
+      },
+      {
+        "question": "What is the easiest AI job to get?",
+        "answer": "Going by published requirements, Mindrift and DataAnnotation have lower entry bars than Handshake AI or Mercor. Mindrift lists entry-level work at $15 to $30 per hour, and DataAnnotation asks for a bachelor's degree or equivalent real-world experience plus fluent English. Handshake AI fellowships mostly require a Master's, PhD, or Postdoc, and Mercor recruits domain experts such as scientists, doctors, and lawyers."
+      },
+      {
+        "question": "Can I get an AI job with no experience?",
+        "answer": "Some platforms accept applicants without specialist experience. DataAnnotation asks for a bachelor's degree or equivalent real-world experience, Outlier asks for at least an associate degree, and Mindrift advertises entry-level work at $15 to $30 per hour. Professional projects in law, finance, or medicine require credentials."
+      },
+      {
+        "question": "How much do AI trainers make?",
+        "answer": "Published rates run from $15 to $30 per hour for entry-level tasks on Mindrift to $30 to $125 per hour for Handshake AI fellows. TechCrunch reported that Mercor experts average over $85 per hour. DataAnnotation advertises coding projects starting at $40 to $150 or more per hour and STEM projects at $40 to $125 or more."
+      },
+      {
+        "question": "Do AI training jobs send a 1099?",
+        "answer": "It depends on the platform. Mercor provides a Form 1099-NEC through Stripe for contractors who submit a Form W-9 and earn more than $600 during the tax year. DataAnnotation and Outlier do not publish a tax-form policy."
+      }
+    ],
+    "sources": [
+      {
+        "label": "DataAnnotation FAQ",
+        "url": "https://www.dataannotation.tech/faqs"
+      },
+      {
+        "label": "Outlier Contributor FAQ",
+        "url": "https://outlier.ai/faq"
+      },
+      {
+        "label": "Mercor Talent Payments Policy",
+        "url": "https://talent.docs.mercor.com/how-to/payments"
+      },
+      {
+        "label": "Mercor US Taxes Documentation",
+        "url": "https://talent.docs.mercor.com/policies/us-taxes"
+      },
+      {
+        "label": "Mindrift Contributor Pay Guide",
+        "url": "https://mindrift.ai/blog/how-mindrift-pays"
+      },
+      {
+        "label": "Handshake AI Fellowship Overview",
+        "url": "https://support.joinhandshake.com/hc/en-us/articles/32264709473303"
+      },
+      {
+        "label": "Prolific Researcher Minimum Payment Policy",
+        "url": "https://researcher-help.prolific.com/en/article/2273bd"
+      },
+      {
+        "label": "FTC Job Offer Text Scam Alert",
+        "url": "https://www.consumer.ftc.gov/consumer-alerts/2026/04/job-offer-text-probably-scam"
+      },
+      {
+        "label": "IRS Self-Employment Tax Rules",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+      }
+    ]
+  },
+  // ── end ai-training-jobs ──
+  // ── mindmap-pass 2026-10-09 (ai-money): how-to-make-money-with-chatgpt ──
+  {
+    "updated": "2026-10-09",
+    "slug": "how-to-make-money-with-chatgpt",
+    "title": "How to Make Money With ChatGPT in 2026",
+    "metaDescription": "Real ways to make money with ChatGPT through freelancing and software, backed by Upwork data, platform fee rules, OpenAI terms, and FTC enforcement warnings.",
+    "h1": "How to Make Money With ChatGPT",
+    "cardBlurb": "Learn how to make money with ChatGPT through freelance work, practical prompts, software, and real platform terms while avoiding passive-income traps.",
+    "introText": "You can make money with ChatGPT by using it to deliver a paid service faster or to build a product people buy, but [OpenAI](https://openai.com/policies/terms-of-use/) does not pay you for using it. At ModernWallet, we show the math, which here means dividing each ChatGPT plan's price by your hourly rate to see how much time it has to save you. A [Pew Research Center](https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/) survey from February 2026 found that 44% of U.S. adults have used ChatGPT.",
+    "sections": [
+      {
+        "heading": "Ways to Make Money With ChatGPT That Pay",
+        "body": "The workable ways to make money with ChatGPT involve speeding up deliverable production for freelance clients, offering technical integration services, or building workflow automations. According to the [Upwork Research Institute's Future Workforce Index 2026](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates), freelancers who perform AI work on the Upwork marketplace earn 34% more per hour than workers who do not use AI.\n\nUpwork itself adds that \"not all AI work is becoming more valuable.\" The same Upwork report found that contract starts for basic generative AI and creative production grew 90% year over year, while per-contract earnings fell 13%. Upwork reads that as a sign simple AI work may pay less as it scales. To learn about broader technical income paths across other large language model tools, read our breakdown on [how to make money with AI](/guides/how-to-make-money-with-ai/) alongside our guide on [how to make money with Claude](/guides/how-to-make-money-with-claude/).\n\nUpwork found that freelancers doing complex work with AI increased their earnings by 45% year over year. Upwork identifies an emerging role called the AI Orchestrator, who connects AI systems to business expertise and applies human judgment to convert raw machine text into commercial results."
+      },
+      {
+        "heading": "Freelance Services and Marketplace Economics",
+        "body": "Platform fees cut what you keep from client work. On [Upwork](https://www.upwork.com/resources/is-upwork-free), freelancers face a standard contract service fee ranging between 0% and 15% depending on contract type and demand. Freelancers can also opt for a Freelancer Plus subscription at $19.99 a month, which includes 100 Connects, with extra Connects priced at $0.15 each in minimum bundles of 10.\n\n[Fiverr](https://www.fiverr.com/legal-portal/legal-terms/payment-terms-of-service) keeps 20% of the purchase amount on both gig listings and hourly contracts. The [Fiverr Business Trends Index](https://finviz.com/news/360535/businesses-race-to-hire-claude-code-specialists-as-demand-surges-938) reported that searches for n8n AI automation rose 125% and searches for vibe coding rose 61% from November 2025 to April 2026, compared with the prior six months. Those are search counts, not what buyers spent.\n\nA 2025 [Bankrate](https://www.bankrate.com/loans/small-business/side-hustles-survey/) survey conducted by YouGov found that 27% of U.S. adults have a side hustle and that the median side hustler earns $200 a month. You can test your billable targets with our [freelance rate calculator](/freelance-rate/) before committing full-time hours."
+      },
+      {
+        "heading": "Prompts to Speed Up Client Deliverables",
+        "body": "Using concrete prompts helps you handle project scoping, proposal drafting, initial drafts, quality checks, and pricing research.\n\n\"Act as an operations consultant. Break down the scope of work, key deliverables, milestone timelines, and client assumptions for this project brief: [Insert project details].\"\n\n\"Draft an initial working outline for a client deliverable based on these requirements, tone specifications, and target audience notes: [Insert specifications].\"\n\n\"Act as a copy editor. Review the text below for factual claims, unsupported generalizations, repetitive phrases, and passive voice: [Insert draft text].\"\n\n\"Draft a three-paragraph freelance proposal addressing the client problem, outlining the proposed solution steps, and stating milestone delivery dates for this job posting: [Insert posting].\"\n\n\"Analyze the task hours required for this scope of work, list potential project delay risks, and calculate a baseline flat rate assuming a target hourly rate of [Insert hourly rate]: [Insert scope].\"\n\nAlways edit and verify the generated text yourself before sending files to clients."
+      },
+      {
+        "heading": "Building Digital Products, Automations, and Custom Tools",
+        "body": "Relying on direct store payouts from OpenAI will not generate reliable income. OpenAI announced a GPT builder revenue program in January 2024 for United States builders based on user engagement in the [GPT Store](https://openai.com/index/introducing-the-gpt-store/). However, an FAQ quoted on the [OpenAI Community Forum](https://community.openai.com/t/what-is-the-status-with-gpt-store-revenue-share/839172) says OpenAI was testing payouts with \"a small group of builders\" in the U.S. and was \"not currently accepting additional builders.\" No official source shows a broad payout program, so do not build a GPT expecting payouts.\n\nSelling setup and workflow solutions to small businesses is a practical alternative. You can design automated workflows connecting company data to language models as outlined in our guide to starting an [AI automation agency](/guides/ai-automation-agency/). Upwork's [In-Demand Skills 2026](https://investors.upwork.com/news-releases/news-release-details/upworks-demand-skills-2026-demand-top-ai-skills-more-doubles-ai) report recorded a 178% year-over-year increase in freelancer earnings on completed AI Integration jobs.\n\nDigital content products must follow strict disclosure rules on major distribution platforms. [Amazon KDP](https://kdp.amazon.com/en_US/help/topic/G200672390) requires authors to disclose AI-generated text, images, or translations when publishing or republishing books. Etsy's [Creativity Standards](https://www.etsy.com/legal/creativity/) say AI-generated items made from a seller's own prompts belong in the \"designed by\" category, that sellers must disclose AI use, and that selling AI prompt bundles is prohibited. Furthermore, the [U.S. Copyright Office](https://www.federalregister.gov/documents/2023/03/16/2023-05321/copyright-registration-guidance-works-containing-material-generated-by-artificial-intelligence) established that purely AI-generated text without substantial human expression cannot receive federal copyright protection."
+      },
+      {
+        "heading": "OpenAI Pricing Plans and Break-Even Math",
+        "body": "Selecting the right tier depends on matching software costs against your billable hours. As detailed in the official [OpenAI pricing documentation](https://learn.chatgpt.com/docs/pricing), options span multiple price points for individuals and teams.\n\n| Plan Tier | Monthly Price | Hours It Must Save at $40/Hour |\n| --- | --- | --- |\n| Free | $0 | None |\n| Go | $8 | 12 minutes |\n| Plus | $20 | 30 minutes |\n| Pro | From $100 ($100, $200, or $500) | 2.5 hours for the $100 tier |\n| Business | $20 per user billed annually or $25 monthly (min 2 users) | 30 to 37.5 minutes per user |\n\nTo find your break-even point, divide the plan price by your hourly billable rate. If you bill $40 per hour on freelance contracts, the $20 monthly Plus plan pays for itself if it saves you 30 minutes of working time each month. The Pro tier starting at $100 requires 2.5 hours of billable savings at that same rate to justify the monthly expense."
+      },
+      {
+        "heading": "Why Automated Get-Rich Schemes Trigger Regulatory Action",
+        "body": "Federal regulators have sued several sellers that promised passive income from AI-powered online stores. The Federal Trade Commission announced a major enforcement sweep called [Operation AI Comply](https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes) targeting deceptive business opportunity schemes built around artificial intelligence claims. The FTC alleged that [Ascend Ecom](https://www.ftc.gov/news-events/news/press-releases/2025/06/ftc-case-leads-order-banning-ascend-ecom-its-owners-business-opportunity-marketing) promised \"five-figure monthly income by the second year\" and that [FBA Machine](https://www.ftc.gov/news-events/news/press-releases/2025/07/ftc-obtains-permanent-ban-e-commerce-business-opportunity-scheme-operator) made \"7-figure business\" claims. In an earlier case, it alleged that [Automators AI](https://www.ftc.gov/news-events/news/press-releases/2024/02/ftc-action-leads-ban-owners-automators-ai-e-commerce-money-making-scheme) promised \"passive investment income\" from AI-powered Amazon and Walmart stores.\n\nIn March 2025, the FTC halted operations at [Click Profit](https://www.ftc.gov/news-events/news/press-releases/2025/03/ftc-acts-stop-click-profit-online-business-opportunity-has-cost-consumers-least-14-million), alleging the promoters collected $45,000 management fees for AI-powered e-commerce stores while causing at least $14 million in consumer losses. The FTC also took action against [Air AI](https://www.ftc.gov/news-events/news/press-releases/2025/08/ftc-sues-stop-air-ai-using-deceptive-claims-about-business-growth-earnings-potential-refund) for deceptive business growth claims, resulting in a proposed settlement banning the operators from selling business opportunities.\n\nUnder the federal [Business Opportunity Rule](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-437), sellers making earnings claims must have written substantiation and must give buyers an earnings claim statement showing the number and percentage of buyers who reached those earnings. The FTC's [side hustle scam alert](https://consumer.ftc.gov/consumer-alerts/2026/02/how-avoid-side-hustle-scam) lists unrealistic pay for minimal effort, pressure to accept immediately, and requests for upfront fees as warning signs. If you suspect a scam, report it at ReportFraud.ftc.gov."
+      },
+      {
+        "heading": "Self-Employment Taxes on Artificial Intelligence Earnings",
+        "body": "Income made using ChatGPT is taxable commercial revenue subject to ordinary income tax and self-employment taxes.\n\nYou can estimate your tax obligations using our [self-employment tax calculator](/self-employment-tax/) or estimate tax on 1099 income with our [1099 tax calculator](/self-employment-tax/1099-tax-calculator/). For platform-specific deductions and filing steps, review our guides for [Upwork taxes](/self-employment-tax/upwork-taxes/), [Fiverr taxes](/self-employment-tax/fiverr-taxes/), and [Etsy taxes](/self-employment-tax/etsy-taxes/). Reviewing eligible [self-employed tax deductions](/guides/self-employed-tax-deductions/) can help you manage your taxable business profit.\n\nTo move forward, pick a distinct service skill you understand, sign up for a freelance platform, and track your software expenses against your billed project revenue.\n\nThis is general information, not financial, tax or legal advice."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/freelance-rate/",
+        "label": "Freelance Rate"
+      },
+      {
+        "href": "/self-employment-tax/",
+        "label": "Self-Employment Tax"
+      },
+      {
+        "href": "/self-employment-tax/1099-tax-calculator/",
+        "label": "1099 Tax"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can you ask ChatGPT how to make money?",
+        "answer": "You can ask ChatGPT for business ideas, but ChatGPT cannot generate money on its own. It provides generalized brainstorming text that requires manual execution, market demand, and business validation."
+      },
+      {
+        "question": "How to make $1000 a day with AI?",
+        "answer": "There is no verified method to generate an automated $1,000 a day using AI tools. Claims promising guaranteed daily passive income using AI storefronts have triggered FTC enforcement actions against deceptive business opportunity operators."
+      },
+      {
+        "question": "Can you sell content made with ChatGPT?",
+        "answer": "OpenAI terms assign output ownership to the user, but OpenAI notes that output may not be unique and other users may receive similar output. Purely AI-generated text cannot be copyrighted under U.S. Copyright Office rules, and publishing platforms like Amazon KDP require formal disclosure of AI-generated content."
+      },
+      {
+        "question": "Does the GPT Store pay creators?",
+        "answer": "OpenAI announced a revenue-sharing program for U.S. creators in early 2024, but an FAQ quoted on OpenAI's community forum describes a test with a small group of U.S. builders that was not accepting new builders, and no official source shows a broader payout program."
+      },
+      {
+        "question": "Which ChatGPT plan do I need to make money?",
+        "answer": "You can begin using the Free plan at $0. Whether you choose a paid tier like Plus at $20 a month depends on your billable hourly rate."
+      },
+      {
+        "question": "Is ChatGPT free to use?",
+        "answer": "Yes, OpenAI provides a Free plan at $0 that gives users access to its core chatbot features without requiring a paid monthly subscription."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Upwork Future Workforce Index 2026",
+        "url": "https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates"
+      },
+      {
+        "label": "FTC Operation AI Comply Enforcement Action",
+        "url": "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes"
+      },
+      {
+        "label": "FTC Click Profit Business Opportunity Action",
+        "url": "https://www.ftc.gov/news-events/news/press-releases/2025/03/ftc-acts-stop-click-profit-online-business-opportunity-has-cost-consumers-least-14-million"
+      },
+      {
+        "label": "FTC Air AI Deceptive Earnings Action",
+        "url": "https://www.ftc.gov/news-events/news/press-releases/2025/08/ftc-sues-stop-air-ai-using-deceptive-claims-about-business-growth-earnings-potential-refund"
+      },
+      {
+        "label": "U.S. Copyright Office AI Registration Guidance",
+        "url": "https://www.federalregister.gov/documents/2023/03/16/2023-05321/copyright-registration-guidance-works-containing-material-generated-by-artificial-intelligence"
+      },
+      {
+        "label": "OpenAI Documentation Pricing Guide",
+        "url": "https://learn.chatgpt.com/docs/pricing"
+      },
+      {
+        "label": "Amazon KDP Content Guidelines and AI Disclosure",
+        "url": "https://kdp.amazon.com/en_US/help/topic/G200672390"
+      },
+      {
+        "label": "Bankrate Side Hustles Survey 2025",
+        "url": "https://www.bankrate.com/loans/small-business/side-hustles-survey/"
+      }
+    ]
+  },
+  // ── end how-to-make-money-with-chatgpt ──
+  // ── mindmap-pass 2026-10-09 (ai-money): whop-clipping ──
+  {
+    "updated": "2026-10-09",
+    "slug": "whop-clipping",
+    "title": "Whop Clipping Pays per 1,000 Views Only on Approved Clips",
+    "metaDescription": "Whop clipping pays a brand-set rate per 1,000 views, but only on approved clips that clear the campaign minimum. See the payout math and tax rules.",
+    "h1": "Can You Make Money with Whop Clipping?",
+    "cardBlurb": "Whop Content Rewards pay per 1,000 views on approved clips, and clippers generally owe self-employment tax on what they earn.",
+    "introText": "You can make money clipping on [Whop](https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards), but pay depends on each campaign's rules and your view counts, with no hourly wage. At ModernWallet, every guide we write starts from the platform's own rules, so this one works from Whop's Content Rewards documentation and terms. Brands set their own rates: Whop says clippers average $1 per 1,000 views, and [NPR](https://www.npr.org/2026/05/12/nx-s1-5794670/influencers-creators-video-clips) found offers from $0.50 to $25 per 1,000 views.\n\nClipping on Whop pays only when your video clears the campaign's minimum payout and the brand approves it. Views after the campaign's max payout or end date earn nothing.",
+    "sections": [
+      {
+        "heading": "Can You Make Money Clipping on Whop?",
+        "body": "Clipping on Whop produces real cash payouts, but earnings fluctuate heavily based on campaign rates and review decisions. Brands choose their own pay-per-view payouts per 1,000 views, which means two creators with identical view counts can earn drastically different sums.\n\nA blog post published by [Whop](https://whop.com/blog/content-rewards/) notes that clippers average $1 per 1,000 views across campaigns, and mentions a $190,000 monthly budget allocated for payouts through Whop Clips. NPR's reporting found wider offers. One agency offered $1 per 1,000 views for pro baseball clips, and an AI startup offered $25 per 1,000 views. Polymarket offered $0.50 per 1,000 views with a $70,000 total campaign budget.\n\nYou do not earn a flat hourly rate for clipping content. If a video fails to get traction or fails brand approval, you receive zero compensation for the editing hours spent. Readers comparing flexible work options can evaluate alternative models in our [side hustle ideas](/guides/side-hustle-ideas/) guide."
+      },
+      {
+        "heading": "How Whop Content Rewards Campaigns Work",
+        "body": "Whop runs clipping initiatives through a feature called Content Rewards. Per [Whop documentation](https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards), a brand establishes a payout rate per 1,000 views alongside a total campaign budget cap. Participating creators post clips to their own social media accounts.\n\nThe documentation lists four supported clipping platforms: TikTok, [YouTube Shorts](https://support.google.com/youtube/answer/12504220), X, and Instagram Reels. The brand then approves or rejects each submission. The documentation states plainly that payment happens only after the brand approves a post, after which Whop pays out automatically based on verified view counts.\n\nWhop categorizes Content Rewards into two campaign styles: Clipping and user-generated content (UGC). The documentation notes that user-generated content typically pays higher rates than standard clipping campaigns. If you would rather earn from your own channel, our guide to a [faceless YouTube channel with AI](/guides/faceless-youtube-channel-ai/) covers YouTube's monetization rules."
+      },
+      {
+        "heading": "The Math Behind Clipping Payouts",
+        "body": "Your earnings on Whop follow a straightforward formula: views divided by 1,000, multiplied by the campaign rate, subject to minimum thresholds and maximum caps. Because documented rates run from $0.50 to $25 per 1,000 views, the return per post varies widely.\n\nThis table multiplies the documented rates by three view counts, before any minimum, cap, or rejection:\n\n| Views | $0.50 per 1,000 | $1 per 1,000 | $3 per 1,000 | $25 per 1,000 |\n| --- | --- | --- | --- | --- |\n| 2,000 | $1 | $2 | $6 | $50 |\n| 10,000 | $5 | $10 | $30 | $250 |\n| 100,000 | $50 | $100 | $300 | $2,500 |\n\nCampaigns can also include an optional flat-fee bonus alongside performance pay. Whop's documentation gives an example: a $10 flat fee plus $3 per 1,000 views pays $16 for an approved video with 2,000 views ($10 + $6). Brands can also impose a maximum payout cap. For instance, Whop documentation illustrates a $3,000 cap on a $3 per 1,000 rate, which stops accumulating earnings once a video hits 1,000,000 views."
+      },
+      {
+        "heading": "Why a Clip Can Earn Nothing",
+        "body": "A submitted clip earns nothing if it never clears the campaign's minimum payout. Per Whop documentation, a video must earn at least the campaign minimum payout before it even enters the review queue. Under a $3 per 1,000 views rate with a $6 minimum threshold, a clip must reach about 2,000 views just to be eligible for brand evaluation.\n\nSubmissions that clear the view minimum can still face rejection. According to the [Whop Content Rewards Terms of Service](https://whop.com/content-rewards-terms-of-service/), brands (the terms call them sellers) may reject submissions only for unmet offer criteria, terms violations, or reasonable suspicion of fraud.\n\nCampaign budgets and deadlines introduce another hard stop. The terms specify that brands can reject submissions if the campaign has reached its maximum payout or passed its end date. Furthermore, the terms explicitly state that participants receive no pay for views that occur after a video reaches its cap or after the campaign end date passes."
+      },
+      {
+        "heading": "Whop's Fees and Payout Terms",
+        "body": "Whop charges its 10% Content Reward Fee to the brand, and the terms we read name no fee for clippers. The Content Rewards Terms of Service state that Whop deducts the fee from the seller's (brand's) account, based on amounts paid to participants.\n\nBrands fund reward budgets with their Whop balance, a payment card, or Cash App. Whop's public documentation does not state how or when clippers get paid out, so the published guarantee stops at automatic payment after a brand approves your clip.\n\nThe terms also require all participants to be at least 18 years old. In addition, the terms state that participants are paid without tax withholding and remain responsible for reporting and paying all applicable federal and state taxes."
+      },
+      {
+        "heading": "AI Clipping Tools and Platform Policies",
+        "body": "AI clipping tools auto-cut a long video into short vertical clips, and those clips still fall under YouTube's monetization rules if you post them on your own channel.\n\nOn July 15, 2025, YouTube updated its policies, renaming its repetitious content monetization rules to [inauthentic content](https://support.google.com/youtube/answer/1311392). YouTube targets content that looks like it is made with a template or feels repetitive to viewers across a single channel. Under this policy, YouTube does not monetize AI-generated content made with generic or unoriginal templates that give the impression of mass production. Image slideshows and templated storylines with minimal narrative or educational value are not monetizable either.\n\nThe reused content policy is a separate YouTube rule. YouTube bars monetization for clips of moments edited together with little or no narrative, or content copied from online sources without substantive modifications. If you build a clipping channel on YouTube Shorts, policy enforcement on reused content impacts your eligibility for the YouTube Partner Program, independent of any Whop campaign payments. For other ways to earn with AI tools, see our guide on [how to make money with AI](/guides/how-to-make-money-with-ai/)."
+      },
+      {
+        "heading": "Taxes on Whop Clipping Earnings",
+        "body": "Whop clipping income is generally self-employment income when you clip as a business. The [Internal Revenue Service (IRS) Schedule C instructions](https://www.irs.gov/instructions/i1040sc) count an activity as a business when its main purpose is profit and you run it regularly and continuously. Hobby income goes on Schedule 1 (Form 1040), line 8. Because Whop pays participants without tax withholding, you must calculate and remit your own income taxes and self-employment taxes.\n\nUnder IRS rules published in [Tax Topic 554](https://www.irs.gov/taxtopics/tc554) and the [IRS self-employment tax guide](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes), self-employment tax is 15.3%, consisting of 12.4% for Social Security and 2.9% for Medicare. You must file Schedule SE and pay self-employment tax if your net self-employment earnings reach $400 or more in a tax year. You can compute your tax liability using our [self-employment tax calculator](/self-employment-tax/) or budget quarterly savings using our guide on [how much to set aside for taxes](/self-employment-tax/how-much-to-set-aside-for-taxes/).\n\nReporting rules also govern information forms. Under IRS instructions for [Form 1099-NEC](https://www.irs.gov/instructions/i1099mec), businesses report nonemployee compensation of $2,000 or more for tax years beginning after 2025. The [IRS Form 1099-K guidance](https://www.irs.gov/newsroom/irs-issues-faqs-on-form-1099-k-threshold-under-the-one-big-beautiful-bill-dollar-limit-reverts-to-20000) says a third-party settlement organization need not file Form 1099-K unless gross payments exceed $20,000 and transactions exceed 200. Remember that receiving no tax form does not relieve you of the legal obligation to report every dollar of clipping earnings on your tax return."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/self-employment-tax/",
+        "label": "Self-Employment Tax Calculator"
+      },
+      {
+        "href": "/self-employment-tax/1099-tax-calculator/",
+        "label": "1099 Tax Calculator"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget Calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How can I start clipping on Whop?",
+        "answer": "You can start by joining active Content Rewards campaigns on Whop and creating accounts on TikTok, YouTube Shorts, X, or Instagram Reels. You then post clips to your accounts and submit them for brand approval."
+      },
+      {
+        "question": "Is Whop clipping free?",
+        "answer": "The Content Rewards terms we read name no fee for clippers. Whop charges its 10% Content Reward Fee to the brand hosting the campaign. Whop's documentation does not state the creator-side payout method or schedule."
+      },
+      {
+        "question": "Can you make money from clipping?",
+        "answer": "Yes, you can make money if your clips hit campaign view minimums and receive brand approval. Payouts are performance-based per 1,000 views rather than guaranteed wages, meaning unapproved clips or videos with low views earn nothing."
+      },
+      {
+        "question": "Is Whop clipping legit?",
+        "answer": "Whop clipping is a pay-per-view program run through Whop Content Rewards. Payments are distributed automatically after a brand verifies and approves your post, subject to campaign budgets and published terms of service."
+      },
+      {
+        "question": "How much do clippers make per 1,000 views?",
+        "answer": "Whop's blog states that clippers average $1 per 1,000 views across its campaigns. Documented campaigns range from $0.50 per 1,000 views for Polymarket to $25 per 1,000 views for an AI startup, as reported by NPR."
+      },
+      {
+        "question": "Do you pay taxes on clipping income?",
+        "answer": "Yes, you must pay taxes on clipping income because Whop distributes payouts without tax withholding. Clipping run as a business is generally self-employment income, so you owe federal income tax plus the 15.3% self-employment tax once net self-employment earnings reach $400."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Whop Content Rewards Documentation",
+        "url": "https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards"
+      },
+      {
+        "label": "Whop Content Rewards Terms of Service",
+        "url": "https://whop.com/content-rewards-terms-of-service/"
+      },
+      {
+        "label": "Whop Blog, Content Rewards",
+        "url": "https://whop.com/blog/content-rewards/"
+      },
+      {
+        "label": "NPR, Influencers, Creators, and Video Clips",
+        "url": "https://www.npr.org/2026/05/12/nx-s1-5794670/influencers-creators-video-clips"
+      },
+      {
+        "label": "YouTube Help, Inauthentic and Reused Content Policies",
+        "url": "https://support.google.com/youtube/answer/1311392"
+      },
+      {
+        "label": "IRS, Self-Employment Tax Information",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+      },
+      {
+        "label": "IRS, Form 1099-K Threshold Notice",
+        "url": "https://www.irs.gov/newsroom/irs-issues-faqs-on-form-1099-k-threshold-under-the-one-big-beautiful-bill-dollar-limit-reverts-to-20000"
+      }
+    ]
+  },
+  // ── end whop-clipping ──
+  // ── mindmap-pass 2026-10-09 (ai-money): how-to-make-money-with-claude ──
+  {
+    "updated": "2026-10-09",
+    "slug": "how-to-make-money-with-claude",
+    "title": "How to Make Money With Claude in 2026",
+    "metaDescription": "Learn how to make money with Claude through freelancing and coding, what plans cost, break-even math, and FTC rules on AI earnings claims.",
+    "h1": "How to Make Money With Claude",
+    "cardBlurb": "Learn how freelancers and developers earn money with Claude, calculate your break-even hours on paid plans, and review commercial terms.",
+    "introText": "People make money with Claude by selling client work that Claude helps them finish faster. At ModernWallet, we show the math, which here means working out how many billable hours a Claude plan has to save before it pays for itself. [Anthropic](https://www.anthropic.com/legal/consumer-terms) assigns you its right, title and interest, if any, in outputs under its consumer terms, which allows commercial work while prohibiting you from reselling the service itself. Freelancers use Claude to draft client documents, analyze data, and write code.\n\nAccording to the July 2026 [Upwork Future Workforce Index](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates), freelancers who perform AI work on the Upwork Marketplace earn 34% more per hour than those who do not use AI. Upwork itself adds that \"not all AI work is becoming more valuable.\"",
+    "sections": [
+      {
+        "heading": "Ways People Make Money With Claude",
+        "body": "Yes, people make money with Claude, and the three routes with evidence behind them are freelance services, software built with Claude Code, and automations for small businesses. Claude Code is included on every paid Claude plan but not on Free. You can sell code, research summaries, marketing copy, and business workflows you generate, provided you do not resell Claude or build a service that competes with it.\n\nFor freelance services, Upwork reports that AI-augmented professional services grew 72% in volume, with earnings up 22%.\n\nFor software and automations, [Fiverr](https://www.fiverr.com/news/business-trends-index-ai-2026) reported that searches for Claude Code specialists rose 938% from November 2025 to April 2026 compared with the prior six months. For broader context on automated systems, read our guide on starting an [AI automation agency](/guides/ai-automation-agency/)."
+      },
+      {
+        "heading": "Freelancing With Claude and Platform Fees",
+        "body": "Upwork's data shows that AI freelancing pays more for complex work than for simple work. The Upwork Future Workforce Index shows that freelancers performing more complex work with AI saw earnings rise 45% year over year. Simple generative AI and creative production work experienced a 90% increase in contract starts, but per-contract earnings fell 13%. Upwork reads this as a sign that lower-complexity AI execution may become less lucrative as it scales.\n\nMarketplace transaction fees reduce your take-home pay on every invoice. According to the [Upwork fee schedule](https://www.upwork.com/resources/is-upwork-free), standard contracts carry a freelancer service fee between 0% and 15%, which is displayed before you submit a proposal. Upwork also charges clients a fee of 3% or 5% on Basic plans, or 8% or 10% on Business Plus. You can calculate your net take-home pay using our [Upwork taxes guide](/self-employment-tax/upwork-taxes/).\n\nSelling services on Fiverr involves a different fee structure. Under the [Fiverr payment terms](https://www.fiverr.com/legal-portal/legal-terms/payment-terms-of-service), sellers receive 80% of the purchase amount, meaning Fiverr keeps 20% on both gig orders and hourly contracts. Before pricing your services on either platform, run your numbers through our [freelance rate calculator](/freelance-rate/) to ensure your rates cover platform cuts, software costs, and non-billable administrative hours."
+      },
+      {
+        "heading": "Building and Selling With Claude Code",
+        "body": "Claude Code is included in paid Anthropic subscriptions, allowing users to build small tools and automations. Fiverr reported that marketplace searches for vibe coding grew 61% over a six-month period, while searches for Claude Code specialists grew 938%. These figures measure growth in searches on Fiverr rather than spending or freelancer earnings.\n\nWhile Anthropic assigns its rights in model outputs to users, statutory copyright protection has strict limits. Guidance from the [U.S. Copyright Office](https://www.federalregister.gov/documents/2023/03/16/2023-05321/copyright-registration-guidance-works-containing-material-generated-by-artificial-intelligence) establishes that material generated purely by artificial intelligence without human creative input is not registrable. The Copyright Office's 2025 report on [Copyright and Artificial Intelligence](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf) affirmed that prompts alone do not provide sufficient human control under current technology.\n\nThe Copyright Office says parts you write, edit or arrange yourself can be protected, decided case by case. When you sell software to a business client, set ownership and use terms in a written contract, because copyright may not cover the AI-generated parts. If you want to compare other development workflows, explore our guide on [how to make money with ChatGPT](/guides/how-to-make-money-with-chatgpt/)."
+      },
+      {
+        "heading": "AI Training Jobs That Prohibit Claude",
+        "body": "Some AI-training work pays by the hour but bans using Claude on the job. The [Handshake](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) AI Fellowship hires 1099 independent contractors at hourly rates ranging from $30 to $125 to write prompts, evaluate model responses, and correct factual citations.\n\nHandshake AI strictly prohibits contractors from using external AI tools such as Claude or ChatGPT while performing task evaluations. Business Insider reported via [AOL](https://www.aol.com/articles/contractors-worked-openai-projects-handshake-050101409.html) that contractors on OpenAI projects said Handshake AI suspended accounts and withheld pay over alleged rule violations, with \"no appeal process.\"\n\nHandshake was also named in a federal unpaid wages lawsuit, [Boggs v. Stryder Corp.](https://www.courtlistener.com/docket/73643581/boggs-v-stryder-corp/), filed under the Fair Labor Standards Act in the Northern District of California in July 2026. Our guide to [AI training jobs](/guides/ai-training-jobs/) covers pay and rules on the main platforms, so read each platform's AI-tool policy before you apply."
+      },
+      {
+        "heading": "Claude Plan Costs and Break-Even Math",
+        "body": "Choosing the right Claude tier requires comparing subscription costs against the billable hours Claude saves you each month. As of October 2026, [Anthropic pricing](https://claude.com/pricing) offers several subscription tiers:\n\n| Plan | Price | Claude Code Included | Hours It Must Save at $40/Hour |\n| --- | --- | --- | --- |\n| Free | $0 | No | None |\n| Pro | $20/month ($17/month billed annually) | Yes | 30 minutes |\n| Max 5x | $100/month | Yes | 2.5 hours |\n| Max 20x | $200/month | Yes | 5 hours |\n| Team | $25/seat/month ($20 billed annually) | Yes | 37.5 minutes per seat |\n\nAnthropic's pricing page lists Max \"from $100\" a month, and its [Max plan help article](https://support.claude.com/en/articles/11049741-what-is-the-max-plan) gives the $100 Max 5x and $200 Max 20x prices for web subscriptions. Developers requiring programmatic connections can review Anthropic's [API pricing](https://platform.claude.com/docs/en/about-claude/pricing) for pay-as-you-go token rates.\n\nTo determine whether a paid plan makes financial sense, use this break-even formula: subscription cost divided by your billable hourly rate equals the minimum hours Claude must save you each month. If you bill $40 per hour and subscribe to Claude Pro at $20 monthly, Claude Pro pays for itself if it saves you 30 minutes of billable labor. If you consider the Max 5x plan at $100 monthly, you need it to save 2.5 billable hours each month at that same $40 rate. If you bill $100 per hour, Max 5x breaks even by saving just one billable hour."
+      },
+      {
+        "heading": "Unsubstantiated AI Income Schemes and FTC Rules",
+        "body": "Federal regulators have sued companies that sold AI business schemes with promises of automated income. Under [Operation AI Comply](https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes), the Federal Trade Commission (FTC) charged multiple operations over allegedly false claims that AI software could generate thousands of dollars in passive monthly revenue. [Ascend Ecom](https://www.ftc.gov/news-events/news/press-releases/2025/06/ftc-case-leads-order-banning-ascend-ecom-its-owners-business-opportunity-marketing) agreed to a proposed order with a permanent ban on selling business opportunities and a $25 million judgment, partially suspended, after the FTC alleged it promised consumers \"five-figure monthly income by the second year.\"\n\nThe FTC also sued [Ecommerce Empire Builders](https://www.ftc.gov/news-events/news/press-releases/2025/05/ftc-action-ends-ecommerce-empire-builders-online-business-opportunity-scam), where a court entered a $9,786,124 judgment, partially suspended. [FBA Machine](https://www.ftc.gov/news-events/news/press-releases/2025/07/ftc-obtains-permanent-ban-e-commerce-business-opportunity-scheme-operator) faces a proposed order with a $15.7 million judgment, also partially suspended. Both operations marketed AI-powered online storefronts. In August 2025, the FTC sued [Air AI](https://www.ftc.gov/news-events/news/press-releases/2025/08/ftc-sues-stop-air-ai-using-deceptive-claims-about-business-growth-earnings-potential-refund) for claiming buyers could earn tens of thousands of dollars in days or months. A proposed settlement announced in March 2026 includes an $18 million judgment, mostly suspended.\n\nUnder the FTC's [Business Opportunity Rule](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-437), sellers making earnings claims must have written substantiation and give buyers an earnings claim statement showing the number and percentage of buyers who reached those earnings. The FTC provides a [consumer alert on side hustle scams](https://consumer.ftc.gov/consumer-alerts/2026/02/how-avoid-side-hustle-scam) cautioning workers against opportunities demanding upfront fees or promising large payments for minimal labor. Anthropic offers no consumer revenue-sharing program, and reselling direct chat access violates its service agreement."
+      },
+      {
+        "heading": "Taxes on Freelance Claude Earnings",
+        "body": "Money you earn selling work done with Claude is self-employment income. If your net earnings from self-employment reach $400 or more during the calendar year, the Internal Revenue Service (IRS) requires you to file Schedule SE and pay [self-employment taxes](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes). The self-employment tax rate is 15.3%, consisting of 12.4% for Social Security and 2.9% for Medicare.\n\nAccording to [IRS Topic 554](https://www.irs.gov/taxtopics/tc554), self-employment tax applies to 92.35% of your net earnings from self-employment, and you can deduct half of your self-employment tax when calculating your adjusted gross income. When operating as an independent contractor, you may need to submit quarterly estimated payments using [Form 1040-ES](https://www.irs.gov/forms-pubs/about-form-1040-es). Review the [IRS estimated tax rules](https://www.irs.gov/faqs/estimated-tax) to determine whether you meet safe harbor requirements, and use our [quarterly estimated tax calculator](/self-employment-tax/quarterly-estimated-tax-calculator/) to plan cash flow.\n\nSoftware subscriptions like Claude Pro qualify as tax deductions if they satisfy [IRS business expense rules](https://www.irs.gov/faqs/small-business-self-employed-other-business/income-expenses) by being ordinary and necessary for your trade or business. An expense is ordinary if it is common and accepted in your industry, and necessary if it is helpful and appropriate for your operations. Explore our guide on [self-employed tax deductions](/guides/self-employed-tax-deductions/) to ensure your operating write-offs comply with IRS standards.\n\nThis is general information, not financial, tax or legal advice."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/freelance-rate/",
+        "label": "Freelance Rate"
+      },
+      {
+        "href": "/self-employment-tax/",
+        "label": "Self-Employment Tax"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Are people using Claude to make money?",
+        "answer": "Yes, people use Claude to earn money by speeding up client work they sell as freelancers, developers, or consultants. Upwork research shows that freelancers who use AI on its platform earn 34% more per hour than those who do not. Claude does not earn money on its own. Users get paid when they deliver finished projects to clients."
+      },
+      {
+        "question": "Is Claude worth $100 a month?",
+        "answer": "Claude is worth $100 a month on the Max 5x plan only if it saves you enough billable time to offset the fee. If you bill $50 per hour, the plan pays for itself if it saves you at least two billable hours each month. If Max 5x would save you fewer hours than that, the $20 Pro plan costs less and still includes Claude Code."
+      },
+      {
+        "question": "Do I own what Claude writes?",
+        "answer": "Under Anthropic's consumer terms, Anthropic assigns all of its right, title, and interest in outputs to you, provided you comply with its terms. However, the U.S. Copyright Office says purely AI-generated material is not copyrightable. Parts you write, edit or arrange yourself can be protected, decided case by case."
+      },
+      {
+        "question": "Can I sell code written with Claude Code?",
+        "answer": "Yes, you can sell software and automation scripts developed with Claude Code to clients. Anthropic's terms do not ban commercial use of outputs, though they prohibit reselling access to Claude itself. Because purely machine-generated code lacks federal copyright protection, protect your deliverables through written client contracts and original architectural logic."
+      },
+      {
+        "question": "Is Claude Code included in the free plan?",
+        "answer": "No, Claude Code is not included in Anthropic's free plan. Access to Claude Code requires a paid subscription, starting with Claude Pro at $20 per month or $17 per month billed annually. It is also included in Max, Team, and Enterprise accounts."
+      },
+      {
+        "question": "How to make $1,000 a day with AI?",
+        "answer": "There is no verified evidence supporting claims that automated AI systems reliably generate $1,000 a day in hands-free income. The Federal Trade Commission brought major enforcement actions under Operation AI Comply against multiple businesses for marketing deceptive AI passive income schemes. Legitimate AI earnings come from selling specialized freelance skills, software, and consulting."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Upwork Future Workforce Index 2026",
+        "url": "https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates"
+      },
+      {
+        "label": "Anthropic Consumer Terms",
+        "url": "https://www.anthropic.com/legal/consumer-terms"
+      },
+      {
+        "label": "Anthropic Pricing",
+        "url": "https://claude.com/pricing"
+      },
+      {
+        "label": "FTC Operation AI Comply Enforcement Crackdown",
+        "url": "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes"
+      },
+      {
+        "label": "U.S. Copyright Office AI Registration Guidance",
+        "url": "https://www.federalregister.gov/documents/2023/03/16/2023-05321/copyright-registration-guidance-works-containing-material-generated-by-artificial-intelligence"
+      },
+      {
+        "label": "IRS Self-Employment Taxes",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+      }
+    ]
+  },
+  // ── end how-to-make-money-with-claude ──
+  // ── mindmap-pass 2026-10-09 (ai-money): is-mercor-legit ──
+  {
+    "updated": "2026-10-09",
+    "slug": "is-mercor-legit",
+    "title": "Is Mercor Legit and Is It Worth Applying?",
+    "metaDescription": "Is Mercor legit? We examine its $10B valuation, contractor pay rates averaging over $85/hr, payment schedules, taxes, breach lawsuits, and project stability.",
+    "h1": "Is Mercor Legit and Is It Worth Applying?",
+    "cardBlurb": "Mercor is a legitimate venture-backed AI marketplace paying contractors weekly, but volatile project lengths and recent breach lawsuits carry real risks.",
+    "introText": "[Mercor](https://talent.docs.mercor.com/how-to/payments) is a legitimate, venture-backed marketplace that connects domain experts with artificial intelligence (AI) labs to train models. Mercor raised a $350 million Series C at a $10 billion valuation, and it pays contractors weekly via Stripe Connect or Wise. [TechCrunch](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/) reported that Mercor's experts average over $85 per hour. Mercor is not a scam, but it carries two risks. Projects can end or be re-priced lower, and a data breach in late March 2026 drew eight class-action lawsuits from contractors.\n\nIf you have advanced credentials in law, medicine, or science, Mercor's hourly projects are worth applying for as supplemental income. They are a poor fit if you need guaranteed weekly hours.",
+    "sections": [
+      {
+        "heading": "Is Mercor Legit? The Verdict",
+        "body": "Mercor is a legitimate AI-talent marketplace that pays independent contractors for training models. Felicis led its $350 million Series C, with Benchmark and General Catalyst also investing, according to TechCrunch. TechCrunch also reported that Mercor distributes more than $1.5 million per day across more than 30,000 domain experts.\n\nMercor's work comes in client projects that can end or be re-priced. [Business Insider reported](https://www.aol.com/articles/ai-startup-powering-meta-openai-230627434.html) that a follow-on Meta project paid $16 per hour, and Mercor called that report inaccurate. Mercor also had a data breach in late March 2026 linked to a LiteLLM supply-chain attack. Contractors then filed eight federal class actions alleging their data was exposed. Mercor pays weekly for completed work, so treat it as variable project income instead of a dependable primary wage."
+      },
+      {
+        "heading": "What Mercor Is and Who It Hires",
+        "body": "Mercor connects AI labs with domain experts, such as scientists, doctors, and lawyers, who train models in their own fields. One Mercor listing also recruited news analysts, reporters, and journalists. Mercor screens applicants before matching them with client projects, and its interview format is not described on the Mercor pages we reviewed.\n\nContractors work on a project-by-project schedule. For workers comparing different AI contributor networks, our review of [AI training jobs](/guides/ai-training-jobs/) covers how specialized platforms differ from entry-level microtask platforms."
+      },
+      {
+        "heading": "Mercor Pay Rates and Earnings Reality",
+        "body": "Mercor publishes no platform-wide rate card, meaning hourly compensation is established on an individual job-listing basis. TechCrunch reported that Mercor's active experts average over $85 per hour across its network. Specific postings reflect this professional focus: one listing for news analysts, reporters, and journalists published a range of $70 to $110 per hour on the official [Mercor job board](https://work.mercor.com/jobs/list_AAABoCWePXSd7eviYb5KxJNg/news-analysts-reporters-and-journalists).\n\nAdvertised rates on individual postings do not represent lifetime earning guarantees. For instance, Business Insider reported through AOL syndication that Mercor concluded a Meta project codenamed 'Musen' that engaged over 5,000 workers at its peak, and subsequently offered a follow-on project named 'Nova' paying $16 per hour. Mercor described that reporting as inaccurate without providing itemized specifics, but the episode illustrates how individual contract rates can shift between separate project assignments.\n\nIf you want to benchmark these numbers against other contractor ecosystems, explore our guide to [DataAnnotation alternatives](/roundup/dataannotation-alternatives/). You can also calculate what your actual net hourly take-home pay equals after accounting for non-billable downtime and equipment costs using our [freelance rate calculator](/freelance-rate/)."
+      },
+      {
+        "heading": "How Mercor Pays Contractors",
+        "body": "Mercor issues contractor payments on a weekly schedule. According to Mercor's payment documentation, hourly contractors receive payouts every Wednesday around 12:00 PM PST covering work completed during the prior Saturday through Friday work week.\n\nMercor manages its disbursements through automated payment rails tailored to contractor residency:\n\n* **Payment Rails by Region:** Mercor assigns Stripe Connect in countries where Stripe operates, and uses Wise for contractors in other jurisdictions.\n* **Initial Holding Period:** Stripe mandates a seven-day holding period on your first payout before transferring funds to your linked account.\n* **Currency Denomination:** All Mercor contracts and compensation amounts are denominated strictly in United States dollars (USD), so your pay rate is fixed in dollars whatever currency your bank uses.\n* **Account Identity Rules:** Payouts can only be routed into a verified bank account held in your own legal name.\n\nOur [budget calculator](/budget/) lets you plan living costs around a weekly pay cycle."
+      },
+      {
+        "heading": "Mercor Taxes and 1099 Obligations",
+        "body": "Mercor treats its contributors as independent contractors. Under [Mercor's US tax policy](https://talent.docs.mercor.com/policies/us-taxes), Mercor does not deduct taxes from your payments. You bear sole responsibility for reporting income and calculating self-employment obligations in your local jurisdiction.\n\nUS persons submit a Form W-9, while non-US persons submit a Form W-8BEN. Mercor states that US contractors who submit a W-9 and earn over $600 during the calendar year receive a Form 1099-NEC through Stripe by February. For tax year 2026, the statutory federal information-return threshold under [IRS instructions](https://www.irs.gov/instructions/i1099mec) for Form 1099-NEC box 1a nonemployee compensation is $2,000. Regardless of whether you reach the reporting threshold to trigger a physical form, you are legally required to report all freelance earnings on your tax return.\n\nIndependent contractors face the federal self-employment tax rate of 15.3%, which combines 12.4% for Social Security and 2.9% for Medicare, as outlined by the [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes). The self-employment tax applies to 92.35% of your net freelance profit once you earn $400 or more. If you expect to owe at least $1,000, you generally must make quarterly estimated tax payments using Form 1040-ES. The [IRS deadlines](https://www.irs.gov/faqs/estimated-tax) are April 15, June 15, September 15, and January 15 of the following year.\n\nTo estimate how much of each payout to set aside for taxes, read our breakdown of [DataAnnotation taxes](/self-employment-tax/dataannotation-taxes/) or use our dedicated [self-employment tax calculator](/self-employment-tax/)."
+      },
+      {
+        "heading": "Mercor's Data Breach and Lawsuits",
+        "body": "Mercor carries legal and data-security risks to weigh before you upload identity documents. Mercor suffered a data breach in late March 2026. The incident stemmed from a supply-chain attack involving LiteLLM, resulting in alleged exposure of contractor Social Security numbers, addresses, and interview recordings, as reported by [HR Dive](https://www.hrdive.com/news/ai-industry-recruiting-platform-faces-multiple-lawsuits-data-breach/817319/). Contractors then filed eight federal class actions, including *Esson v. Mercor.io* (Case No. 3:26-cv-02839) in the Northern District of California, which is on [CourtListener](https://www.courtlistener.com/docket/73131170/esson-v-mercorio-corporation/). The others were brought by plaintiffs named Deboni, Gill, Lofton, Massman, Ramos, Ananthula, and White, and CourtListener shows the Gill, Lofton, and Massman cases terminated on May 20, 2026. HR Dive reported, citing Wired, that major client Meta paused work with Mercor following the breach.\n\nMercor also faces a trade-secret suit from a competitor. In September 2025, Scale AI filed a federal trade-secret misappropriation lawsuit against Mercor and former employee Eugene Ling in the Northern District of California (Case No. 3:25-cv-07402), as documented by [CourtListener](https://www.courtlistener.com/docket/71260080/scale-ai-inc-v-mercorio-corporation/) and covered by [TechCrunch](https://techcrunch.com/2025/09/03/scale-ai-is-suing-a-former-employee-and-rival-mercor-alleging-they-tried-to-steal-its-biggest-customers).\n\nWorker reviews give little to go on. Mercor's [Trustpilot](https://www.trustpilot.com/review/mercor.com) profile holds only 5 reviews with a 2.5 TrustScore as of October 2026, too few to show a pattern."
+      },
+      {
+        "heading": "Protecting Yourself Against Job Recruiter Scams",
+        "body": "The Federal Trade Commission (FTC) published an April 30, 2026 consumer alert noting that [fraudulent recruiters contact targets](https://www.consumer.ftc.gov/consumer-alerts/2026/04/job-offer-text-probably-scam) via text message, WhatsApp, or Telegram offering remote assessment roles. The FTC's general guidance on [job scams](https://consumer.ftc.gov/articles/job-scams) says legitimate employers don't charge you to get a job, and it warns about fake-check overpayment schemes.\n\nMercor's own job listings sit on work.mercor.com, so apply through that site. If someone on WhatsApp or Telegram offers you Mercor work and then asks you to deposit money or sends you a check, stop replying and report it at ReportFraud.ftc.gov."
+      },
+      {
+        "heading": "Next Steps for Prospective Mercor Contractors",
+        "body": "If you plan to apply to Mercor, confirm that your professional background aligns with specialized domain training needs in areas like law, medicine, science, or journalism. Verify that your banking profile is established in your legal name to avoid initial payout rejections, and plan for a seven-day hold on your first disbursement via Stripe Connect.\n\nTo manage the income variability of project-based AI contracting, estimate your baseline living costs and set aside funds for your self-employment tax obligations. Set up a liquid safety cushion with our [emergency fund calculator](/emergency-fund-calculator/) before relying on freelance platform revenue as primary household income. Mercor is not for you if you need guaranteed weekly hours or lack domain credentials. Our verdict would change if Mercor published a rate card or a minimum project length, or if the breach lawsuits ended in findings against it."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/freelance-rate/",
+        "label": "Freelance Rate"
+      },
+      {
+        "href": "/self-employment-tax/",
+        "label": "Self-Employment Tax"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      },
+      {
+        "href": "/emergency-fund-calculator/",
+        "label": "Emergency Fund"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Mercor legit?",
+        "answer": "Yes, Mercor is a legitimate venture-backed AI-talent marketplace valued at $10 billion following a $350 million Series C funding round. It connects domain experts with AI labs. Mercor pays weekly through Stripe Connect or Wise. However, project availability fluctuates and contractors filed class actions against Mercor after a March 2026 data breach."
+      },
+      {
+        "question": "Is working for Mercor worth it?",
+        "answer": "Working for Mercor is worth considering if you possess advanced credentials in fields like law, science, or medicine and want flexible, high-hourly contract work. TechCrunch reported that experts average over $85 per hour on Mercor. It is less suitable for generalists seeking guaranteed weekly hours or long-term employment security."
+      },
+      {
+        "question": "How much does Mercor pay?",
+        "answer": "Mercor does not use a single platform-wide wage card, setting compensation on an individual project basis instead. TechCrunch reported that active domain experts average over $85 per hour, and an individual posting for news analysts listed $70 to $110 per hour. However, contract rates can drop on subsequent project phases, such as the Nova assignment Business Insider reported at $16 per hour, a report Mercor called inaccurate."
+      },
+      {
+        "question": "How does Mercor pay you?",
+        "answer": "Mercor pays hourly contractors every Wednesday around 12:00 PM PST for the prior Saturday through Friday work week. Payments are in US dollars. Mercor assigns Stripe Connect or Wise based on your region. Stripe enforces a seven-day holding period on your first payout, and bank accounts must match your legal name."
+      },
+      {
+        "question": "Does Mercor send a 1099?",
+        "answer": "Yes, Mercor issues Form 1099-NEC through Stripe by February to United States contractors who submit a Form W-9 and earn more than $600 during the year. For tax year 2026, the general IRS information-return filing threshold for Form 1099-NEC nonemployee compensation is $2,000. You must report all net earnings of $400 or more for self-employment taxes regardless of form delivery."
+      },
+      {
+        "question": "Was Mercor hacked?",
+        "answer": "Yes, Mercor experienced a cybersecurity breach in late March 2026 resulting from a supply-chain attack on LiteLLM. Contractors then filed eight federal class actions in California and Texas alleging exposure of Social Security numbers, addresses, and interview recordings. HR Dive, citing Wired, reported that Meta paused work with Mercor after the breach."
+      }
+    ],
+    "sources": [
+      {
+        "label": "TechCrunch, Mercor Series C Funding and Valuation",
+        "url": "https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/"
+      },
+      {
+        "label": "Mercor Talent Docs, Contractor Payments",
+        "url": "https://talent.docs.mercor.com/how-to/payments"
+      },
+      {
+        "label": "Mercor Talent Docs, United States Tax Policy",
+        "url": "https://talent.docs.mercor.com/policies/us-taxes"
+      },
+      {
+        "label": "HR Dive, Mercor Data Breach and Lawsuits",
+        "url": "https://www.hrdive.com/news/ai-industry-recruiting-platform-faces-multiple-lawsuits-data-breach/817319/"
+      },
+      {
+        "label": "CourtListener, Esson v. Mercor.io Corporation Docket",
+        "url": "https://www.courtlistener.com/docket/73131170/esson-v-mercorio-corporation/"
+      },
+      {
+        "label": "CourtListener, Scale AI v. Mercor.io Corporation Docket",
+        "url": "https://www.courtlistener.com/docket/71260080/scale-ai-inc-v-mercorio-corporation/"
+      },
+      {
+        "label": "IRS, Self-Employment Tax Rules",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+      },
+      {
+        "label": "FTC, Job Scams Consumer Guidance",
+        "url": "https://consumer.ftc.gov/articles/job-scams"
+      }
+    ]
+  },
+  // ── end is-mercor-legit ──
+  // ── mindmap-pass 2026-10-09 (ai-money): is-outlier-ai-legit ──
+  {
+    "updated": "2026-10-09",
+    "slug": "is-outlier-ai-legit",
+    "title": "Is Outlier AI Legit and Does It Pay Contractors?",
+    "metaDescription": "Outlier AI is a real Scale AI platform that pays weekly but publishes no pay range. Payouts, lawsuits, Trustpilot themes and scam signs as of October 2026.",
+    "h1": "Is Outlier AI Legit and Does It Pay Contractors?",
+    "cardBlurb": "Outlier AI is a legitimate platform operated by Scale AI that pays contractors weekly, but unpublished rates, project removals, and wage litigation require caution.",
+    "introText": "[Outlier AI](https://outlier.ai/faq) is a real data-training platform operated by Scale AI that pays independent contractors weekly on Tuesdays through PayPal, Airtm, or ACH bank transfers. At ModernWallet, we built this review from Outlier's own FAQ, court dockets, and [Trustpilot reviews](https://www.trustpilot.com/review/outlier.ai) so you can weigh the tradeoffs before signing up. Outlier does not publish a platform-wide pay rate card, so your hourly earnings depend on each project's rate, which you see before starting.\n\nReviewers on Trustpilot report unpredictable task volume and sudden deactivations. A $12.5 million California worker-misclassification settlement involving Scale AI is pending final approval on October 30, 2026.",
+    "sections": [
+      {
+        "heading": "Verdict on Whether Outlier AI Is Legit",
+        "body": "Outlier AI is a legitimate data-annotation website that pays independent contractors weekly for completing human-in-the-loop artificial intelligence (AI) training tasks. Outlier is not a scam, but it offers no guaranteed hours and publishes no pay range. You see each project's rate before you start.\n\nContributors generate prompts, rank AI outputs, and improve model responses. Outlier pays every Tuesday for work completed from the previous Tuesday through Monday (midnight UTC), via PayPal, Airtm, or ACH bank transfer. Trustpilot reviewers describe project removals, onboarding glitches, and deactivations with little explanation, so income from Outlier is irregular.\n\nScale AI, which operates Outlier, has faced several worker lawsuits. A $12.5 million settlement of California class claims alleging worker misclassification is pending final approval on October 30, 2026, and the defendants deny the allegations. If you need steady cash flow to cover basic living expenses, do not rely on Outlier AI as a primary job."
+      },
+      {
+        "heading": "Ownership Structure and Corporate Instability at Scale AI",
+        "body": "Outlier is operated by Scale AI, and its site footer reads \"powered by Scale AI · © 2026 Smart Ecosystems.\" In June 2025, Reuters reported via [Yahoo Finance](https://finance.yahoo.com/news/meta-invests-scale-ai-appoints-110216620.html) that Meta acquired a 49% ownership stake in Scale AI for approximately $14.3 billion, an investment that valued Scale AI at roughly $29 billion.\n\nFollowing that corporate transaction, chief executive officer Alexandr Wang transitioned to Meta, and Jason Droege assumed leadership as interim chief executive officer.\n\nAccording to an executive memo reported by [Outlook Business](https://www.outlookbusiness.com/deeptech/artificial-intelligence/scale-ai-lays-off-14-of-staff-amid-revamp-following-metas-143bn-investment) in July 2025, Scale AI laid off approximately 200 full-time employees, representing 14% of internal staff, and terminated contracts with roughly 500 contractors. Droege's memo said Scale AI had \"ramped up our GenAI capacity too quickly.\""
+      },
+      {
+        "heading": "Contractor Tasks and Day-to-Day Responsibilities",
+        "body": "Work on Outlier consists of human data feedback to train artificial intelligence models. According to the Outlier FAQ, contributors generate prompts, rank AI outputs, improve model responses, or complete other tasks.\n\nTo learn more about the broader data-labeling market, read our breakdown of [AI training jobs](/guides/ai-training-jobs/) across top industry platforms. Similar assignments appear on competitors, which you can evaluate in our [DataAnnotation vs Outlier](/compare/dataannotation-vs-outlier/) comparison guide."
+      },
+      {
+        "heading": "Pay Structure and Rate Transparency",
+        "body": "Outlier publishes no rate card. According to the Outlier FAQ, tasking rates vary depending on your personal expertise, the technical complexity of the project, and your geographic location.\n\nContractors see an assigned pay rate inside their dashboard before beginning any specific project, allowing them to accept or decline the work. As of October 2026, the FAQ gives no minimum or maximum dollar figure.\n\nBecause your weekly earnings depend entirely on the rates assigned to your queue, calculate your minimum acceptable hourly rate using our [freelance rate calculator](/freelance-rate/) before taking platform tests. You can also benchmark your expected income against our guide on [how to make money with AI](/guides/how-to-make-money-with-ai/)."
+      },
+      {
+        "heading": "Onboarding Hurdles and Application Requirements",
+        "body": "The onboarding process on Outlier typically takes 30 to 90 minutes to complete according to the Outlier FAQ. Applicants must submit a current resume, provide an active LinkedIn profile link, and have a valid ID and mobile phone from their country of residence.\n\nOutlier sets a minimum educational threshold for applicants, explicitly requiring contributors to hold at least an associate degree. After submitting initial documentation, applicants complete skill screenings followed by project-specific onboarding.\n\nOutlier does not state on its website whether screening or onboarding assessments are paid. Contributor complaint themes on Trustpilot cite long unpaid tests. If you take an assessment, prepare for the possibility that your time will not be compensated."
+      },
+      {
+        "heading": "Weekly Payout Rails and Payment Schedules",
+        "body": "Outlier pays on a fixed weekly schedule. According to the Outlier FAQ, payments are distributed weekly on Tuesdays for all billable tasks finished during the previous Tuesday-through-Monday pay period ending at midnight UTC.\n\nWorkers can receive funds through PayPal, Airtm, or direct ACH bank transfers. Trustpilot reviewers praise on-time pay.\n\nHowever, Trustpilot reviewers report facing pending earnings after deactivation. If you rely on this income, pair your earnings with a dedicated cash buffer calculated using our [emergency fund calculator](/emergency-fund-calculator/) to protect against missed weekly cycles."
+      },
+      {
+        "heading": "Independent Contractor Status and Tax Obligations",
+        "body": "Outlier treats every worker as a contractor. The Outlier FAQ says you work as an independent contractor or freelancer, and Outlier does not offer visa sponsorship.\n\nIn the United States, contractors who earn net self-employment income of $400 or more must pay federal self-employment taxes covering Social Security and Medicare. Self-employment tax is 15.3%: 12.4% for Social Security, up to the $176,100 wage base for 2025, and 2.9% for Medicare. It applies to 92.35% of your net earnings, and an extra 0.9% Medicare tax applies above $200,000 for single filers.\n\nUnder [IRS rules](https://www.irs.gov/instructions/i1099mec), businesses issue Form 1099-NEC for nonemployee compensation of $2,000 or more beginning with tax years after 2025. Third-party settlement organizations such as PayPal issue Form 1099-K if gross payments exceed $20,000 and 200 transactions under reinstated federal thresholds, though PayPal applies a $600 threshold in Vermont, Massachusetts, Virginia, and Maryland. Review our detailed guide on [DataAnnotation taxes](/self-employment-tax/dataannotation-taxes/) to understand the identical quarterly tax rules that apply to Outlier earnings, or estimate your liability using our [1099 tax calculator](/self-employment-tax/1099-tax-calculator/)."
+      },
+      {
+        "heading": "Lawsuits and Regulatory Scrutiny Surrounding Scale AI",
+        "body": "Scale AI has faced several labor lawsuits over how it pays and classifies Outlier taskers. In December 2024, workers filed *McKinney v. Scale AI* in San Francisco Superior Court (Case No. CGC-24-620481), alleging that Scale AI misclassified Outlier contributors as independent contractors rather than employees under California wage statutes, as covered by [TechCrunch](https://techcrunch.com/2025/01/22/scale-ai-is-facing-a-third-worker-lawsuit-in-about-a-month).\n\nAccording to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement), Scale AI, Smart Ecosystem Inc., and staffing partner HireArt agreed to a $12,500,000 settlement to resolve *McKinney* and related California actions. The defendants deny the allegations. The settlement class covers California residents who contributed work on Outlier or [Remotasks](https://www.remotasks.com/) between December 10, 2020, and February 28, 2026. The formal claim submission and opt-out deadline passed on September 3, 2026, and the final approval hearing is set for October 30, 2026, so the settlement is not yet final.\n\nLegal challenges extend into other venues as well. In January 2025, [TechCrunch reported](https://techcrunch.com/2025/01/09/scale-ai-hit-by-its-second-employee-wage-lawsuit-in-less-than-a-month) a second wage suit alleging sub-minimum wage compensation. On January 17, 2025, six Outlier contributors filed *Schuster v. Scale AI, Inc.* in federal court in the Northern District of California (Docket 3:25-cv-00620 on [CourtListener](https://www.courtlistener.com/docket/69556383/schuster-v-scale-ai-inc/)). The suit alleges psychological harm from writing disturbing prompts. On the administrative front, [TechCrunch confirmed](https://techcrunch.com/2025/05/09/the-department-of-labor-just-dropped-its-investigation-into-scale-ai) on May 9, 2025, that the U.S. Department of Labor dropped its Fair Labor Standards Act investigation into Scale AI and partners Upwork and HireArt. Meanwhile, Scale AI filed a federal trade-secret lawsuit against competitor [Mercor](/guides/is-mercor-legit/) and a former employee in September 2025 (Docket 3:25-cv-07402 on [CourtListener](https://www.courtlistener.com/docket/71260080/scale-ai-inc-v-mercorio-corporation/))."
+      },
+      {
+        "heading": "Trustpilot Ratings and Contractor Feedback Themes",
+        "body": "As of October 2026, Outlier holds a Trustpilot TrustScore of 4.1 out of 5 based on 5,483 reviews, and 19% of those reviews give 1 star.\n\nPraise on Trustpilot centers on on-time pay and flexibility.\n\nConversely, recurring complaint themes describe project removals or deactivations with little explanation, long unpaid tests, and pending earnings after deactivation. Reviewers also describe onboarding glitches, slow support, and unpredictable task volume. If Outlier pays part of your bills, our guide on [how to budget with irregular income](/guides/how-to-budget-with-irregular-income/) shows how to plan around weeks with no tasks."
+      },
+      {
+        "heading": "Recognizing Job Recruitment Scams and Impersonation Fraud",
+        "body": "Scammers pose as recruiters for remote rating work to get job seekers to send them money. On April 30, 2026, the Federal Trade Commission published a consumer alert on [job offer text scams](https://www.consumer.ftc.gov/consumer-alerts/2026/04/job-offer-text-probably-scam), warning job seekers about fraudulent recruiters offering remote \"online assessor\" jobs by text, WhatsApp, and Telegram.\n\nCommon fraud schemes include task scams, where workers receive small initial sums for rating or reviewing before being asked to deposit their own money. Other operations involve fake-check overpayment schemes, as detailed in the FTC guide on [job scams](https://consumer.ftc.gov/articles/job-scams). Real employers and legitimate platforms will never charge fees to get a job.\n\nThe Outlier FAQ lists onboarding@outlier.ai as its official sign-up contact, so be wary of sign-up messages from other addresses. If a recruiter messages you on a chat app asking for money, report it immediately at ReportFraud.ftc.gov."
+      },
+      {
+        "heading": "Who Outlier AI Is Not For and Practical Alternatives",
+        "body": "Outlier is not suitable for workers who require a guaranteed base salary, consistent weekly hours, employer-sponsored benefits, or visa sponsorship. If you lack financial reserves or carry high monthly debt obligations, relying on Outlier tasks can leave you short when task volume drops.\n\nIf you prefer published minimums, [Prolific](https://researcher-help.prolific.com/en/article/2273bd) requires researchers to pay participants at least £6 or $8 per hour. [Mindrift](https://mindrift.ai/) lists entry-level rates of $15 to $30 per hour. If you hold a Master's or PhD, the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) lists $30 to $125 per hour.\n\nOur verdict on Outlier would improve if Outlier published a pay floor, offered a formal appeal for deactivations, and said it pays for assessment time. If you decide to apply, treat Outlier strictly as supplementary income, estimate your quarterly tax payments with our [quarterly estimated tax calculator](/self-employment-tax/quarterly-estimated-tax-calculator/), and track your hours carefully."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/freelance-rate/",
+        "label": "Freelance Rate"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      },
+      {
+        "href": "/emergency-fund-calculator/",
+        "label": "Emergency Fund"
+      },
+      {
+        "href": "/self-employment-tax/1099-tax-calculator/",
+        "label": "1099 Tax"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does Outlier AI really pay?",
+        "answer": "Yes, Outlier AI really pays contractors for completed, approved work. Payouts are distributed weekly on Tuesdays for tasks logged during the previous Tuesday-through-Monday cycle via PayPal, Airtm, or ACH direct deposits."
+      },
+      {
+        "question": "Is it safe to work for Outlier AI?",
+        "answer": "Working for Outlier AI is safe from a corporate legitimacy standpoint, as it is a real platform run by Scale AI. However, contributors face financial risk from unpredictable task availability, sudden account deactivations, and onboarding assessments that Outlier does not say are paid."
+      },
+      {
+        "question": "Is Outlier a trusted website?",
+        "answer": "Outlier is a real platform operated by Scale AI with a 4.1 rating from 5,483 reviews on Trustpilot. Recurring complaints cite sudden project removals, and a $12.5 million California worker-misclassification settlement involving Scale AI is pending final approval on October 30, 2026."
+      },
+      {
+        "question": "Is Outlier AI currently hiring?",
+        "answer": "Outlier accepts contractor applications online, but Outlier does not publish active headcount figures or open task volume. Passing onboarding does not guarantee that active projects will be immediately assigned to your dashboard."
+      },
+      {
+        "question": "Does Outlier hire everyone?",
+        "answer": "No, Outlier does not hire everyone. Applicants must hold at least an associate degree, provide a valid government ID and mobile phone from their country of residence, submit a resume and LinkedIn profile, and pass specialized screening assessments."
+      },
+      {
+        "question": "How much do people make on Outlier AI?",
+        "answer": "Outlier does not publish fixed earnings figures or platform-wide hourly ranges. Pay rates vary based on your expertise, project complexity, and location, and each project displays its specific tasking rate in the dashboard before you begin work."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Outlier AI FAQ",
+        "url": "https://outlier.ai/faq"
+      },
+      {
+        "label": "Reuters via Yahoo Finance, Meta Investment in Scale AI",
+        "url": "https://finance.yahoo.com/news/meta-invests-scale-ai-appoints-110216620.html"
+      },
+      {
+        "label": "Outlook Business, Scale AI Restructuring and Layoffs",
+        "url": "https://www.outlookbusiness.com/deeptech/artificial-intelligence/scale-ai-lays-off-14-of-staff-amid-revamp-following-metas-143bn-investment"
+      },
+      {
+        "label": "ClaimDepot, McKinney v. Scale AI Settlement Details",
+        "url": "https://www.claimdepot.com/settlements/mckinney-scaleai-settlement"
+      },
+      {
+        "label": "CourtListener, Schuster v. Scale AI Docket",
+        "url": "https://www.courtlistener.com/docket/69556383/schuster-v-scale-ai-inc/"
+      },
+      {
+        "label": "TechCrunch, Scale AI Labor Department Investigation Dropped",
+        "url": "https://techcrunch.com/2025/05/09/the-department-of-labor-just-dropped-its-investigation-into-scale-ai"
+      },
+      {
+        "label": "FTC, Job Offer Text Scams Consumer Alert",
+        "url": "https://www.consumer.ftc.gov/consumer-alerts/2026/04/job-offer-text-probably-scam"
+      },
+      {
+        "label": "Trustpilot, Outlier AI Reviews",
+        "url": "https://www.trustpilot.com/review/outlier.ai"
+      }
+    ]
+  },
+  // ── end is-outlier-ai-legit ──
+  // ── mindmap-pass 2026-10-09 (ai-money): is-dataannotation-legit ──
+  {
+    "updated": "2026-10-09",
+    "slug": "is-dataannotation-legit",
+    "title": "Is DataAnnotation Legit and Does It Pay Contractors?",
+    "metaDescription": "Is DataAnnotation legit? We review published pay rates, PayPal payouts, the single-attempt Starter Assessment, worker complaints, and contractor taxes.",
+    "h1": "Is DataAnnotation Legit and Does It Pay Contractors?",
+    "cardBlurb": "DataAnnotation is a legitimate contractor platform paying via PayPal, but uneven task volume and a strict single-attempt screening test create real friction.",
+    "introText": "[DataAnnotation](https://www.dataannotation.tech/faqs) is a legitimate contractor platform that pays contributors through PayPal to train artificial intelligence (AI) models. At ModernWallet, we evaluate gig platforms so workers know what to expect before taking screening exams. DataAnnotation's published pay rates range from $20 to more than $150 per hour depending on the project tier, and its FAQ reports paying over $20 million to contractors since 2020.\n\nThe hurdles are practical. DataAnnotation allows only one attempt at its Starter Assessment, and its FAQ says it cannot reply to every applicant. Reviewers on [Trustpilot](https://www.trustpilot.com/review/dataannotation.tech) also report long stretches with no available work, even after they are accepted.",
+    "sections": [
+      {
+        "heading": "The Verdict and Published Pay Rates",
+        "body": "DataAnnotation is a legitimate business that pays contractors through PayPal, with general projects listed at \"Starting at $25-$50+ per hour\" and coding at $40 to $150 or more. The risks are a one-attempt Starter Assessment that may get no reply, uneven work volume, and fake recruiters using the DataAnnotation name. Contractors complete tasks such as evaluating chatbot responses, comparing AI outputs, flagging factual errors, testing AI images, writing prompts, and reviewing code. The DataAnnotation FAQ states that DataAnnotation connects over 100,000 contractors globally.\n\nPublished pay rates depend heavily on skill track and specialized credentials. In the Pay section of the DataAnnotation FAQ, starting rates run from $20 or more per hour for multilingual projects to $40 to $150 or more for coding.\n\n| Project Tier | Published Hourly Rate | Stated Requirement |\n|---|---|---|\n| General Projects | Starting at $25-$50+ per hour | Bachelor's degree or equivalent real-world experience; English fluency |\n| Multilingual Projects | Starting at $20+ per hour | Not published |\n| Coding Projects | Starting at $40-$150+ per hour | Not published |\n| STEM Projects | Starting at $40-$125+ per hour | Master's degree, PhD, or bachelor's degree plus 10+ years experience |\n| Professional Projects | Starting at $40-$125+ per hour | Credentials in law, finance, or medicine |\n\nThe DataAnnotation FAQ contradicts its own Pay section. The Pay section lists general projects at $25 to $50 or more per hour, while other FAQ answers say general projects start at $25 to $30 or more. Similarly, other answers list coding projects ranging from $50 to $100 per hour, whereas the main pay table states $40 to $150 or more per hour. Plan your income around the lower figures."
+      },
+      {
+        "heading": "How the Starter Assessment and Screening Work",
+        "body": "The onboarding process includes identity verification and a Starter Assessment. Identity verification runs through Persona using a government-issued photo ID and a selfie. Most Starter Assessments take about an hour to complete, while specialized assessments take one to two hours.\n\nYou get only one attempt at the Starter Assessment. The FAQ says, \"There are no retakes or second chances.\" The FAQ does not state whether time spent completing the initial assessment is compensated.\n\nDataAnnotation says approval notices arrive within a few days, but only if your assessment passes review and it has work that matches your skills. Otherwise you may never hear back, because the FAQ says DataAnnotation is unable to provide direct responses for every applicant given the number of applications."
+      },
+      {
+        "heading": "Payment Delivery via PayPal",
+        "body": "DataAnnotation pays through PayPal. Its FAQ says contractors request withdrawals and deposits arrive within a few days of each request. The FAQ also says DataAnnotation has paid over $20 million to contractors since 2020.\n\nPayPal is the only payout method the FAQ names, so you need a PayPal account to get paid. DataAnnotation charges no signup fees."
+      },
+      {
+        "heading": "Worker Complaints and Platform Risks",
+        "body": "As of October 2026, DataAnnotation holds a Trustpilot TrustScore of 3.9 out of 5 based on 1,973 reviews, with 21 percent of reviews awarding 1 star. Positive reviews center on flexibility and ease of use.\n\nNegative reviews center on specific recurring operational themes: sudden long stretches with no available tasks on the dashboard, unpaid qualification steps, account reviews that temporarily hold balances, identity re-verification loops, and unresponsive support channels. In its official documentation, DataAnnotation acknowledges that projects can vanish from a dashboard following subpar or problematic task submissions."
+      },
+      {
+        "heading": "Corporate Ownership and Surge AI Reports",
+        "body": "DataAnnotation's FAQ names Persona as an identity-verification partner but names no corporate parent entity. Entries on [Wikipedia](https://en.wikipedia.org/wiki/Surge_AI) cite 2023 reports from The Verge and New York Magazine that linked DataAnnotation to Surge AI (Surge Labs Inc.), though DataAnnotation's site does not confirm this relationship.\n\nIn May 2025, [Clarkson Law Firm](https://clarksonlawfirm.com/clarkson-represents-surge-ai-workers-in-labor-law-class-action) filed a labor misclassification class action against Surge AI in San Francisco Superior Court. The firm says the suit alleges that \"Data Annotator\" workers were misclassified as independent contractors and that training and project-familiarization time was unpaid. [Bloomberg Law](https://news.bloomberglaw.com/financial-accounting/ai-training-firm-surge-ai-hit-with-worker-misclassification-suit) covered it under the headline \"AI Training Firm Surge AI Hit With Worker Misclassification Suit.\" Clarkson's announcement does not name the DataAnnotation platform, so whether the suit covers DataAnnotation workers is not confirmed. A search of federal court dockets on October 9, 2026 found no case naming DataAnnotation."
+      },
+      {
+        "heading": "Scam Red Flags and Impersonation Warnings",
+        "body": "Scammers pose as recruiters for online rating and review jobs to collect money from job seekers. The Federal Trade Commission (FTC) published an alert titled [That job offer text is probably a scam](https://www.consumer.ftc.gov/consumer-alerts/2026/04/job-offer-text-probably-scam) detailing how fraudulent recruiters send texts, WhatsApp messages, or Telegram messages offering remote online assessor roles. Some send fake checks. Others are task scams that ask you to deposit your own money.\n\nThe FTC's broader guide on [Job Scams](https://consumer.ftc.gov/articles/job-scams) emphasizes that legitimate employers never charge job seekers to start work. DataAnnotation confirms this directly on its site, stating that it will never ask for money for anything and charges no sign-up fees. If someone using the DataAnnotation name on a messaging app asks you for money, treat it as a scam and report it at ReportFraud.ftc.gov."
+      },
+      {
+        "heading": "Tax Obligations for Independent Contractors",
+        "body": "DataAnnotation treats all workers as independent contractors. DataAnnotation's FAQ gives no tax-form policy, so track your earnings yourself. Net earnings of $400 or more from self-employment trigger federal self-employment tax obligations according to the [Internal Revenue Service (IRS)](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes).\n\nSelf-employment tax equals 15.3 percent, consisting of 12.4 percent for Social Security and 2.9 percent for Medicare. Under IRS rules, 92.35 percent of your net earnings are subject to this tax, and filers can deduct half of the self-employment tax when calculating adjusted gross income. You can plan your tax set-asides using our [1099 tax calculator](/self-employment-tax/1099-tax-calculator/) or calculate quarterly burdens on our [quarterly estimated tax calculator](/self-employment-tax/quarterly-estimated-tax-calculator/). For platform-specific steps, review our breakdown on [DataAnnotation taxes](/self-employment-tax/dataannotation-taxes/).\n\nReporting thresholds changed under the One Big Beautiful Bill Act of 2025. As noted by the [IRS 1099-K reporting guidance](https://www.irs.gov/newsroom/irs-issues-faqs-on-form-1099-k-threshold-under-the-one-big-beautiful-bill-dollar-limit-reverts-to-20000), third-party settlement organizations only issue Form 1099-K if gross payments exceed $20,000 and 200 transactions. [PayPal's 1099-K policy](https://www.paypal.com/us/cshelp/article/current-form-1099-k-reporting-thresholds-2025-update-help1131) enforces this federal benchmark, though PayPal applies a $600 threshold in Massachusetts, Maryland, Vermont, and Virginia. Even if PayPal issues no form, you must report all income on Schedule C."
+      },
+      {
+        "heading": "Comparison with Outlier and Next Steps",
+        "body": "When evaluating AI training work, DataAnnotation is often compared to Outlier, an AI contributor platform operated by Scale AI. Both platforms hire independent contractors to evaluate and improve AI responses, but they differ on entry requirements and pay timing.\n\nOnboarding at Outlier typically takes 30 to 90 minutes and requires a resume, a LinkedIn profile, and at least an associate degree, as detailed on the [Outlier FAQ](https://outlier.ai/faq). Outlier processes payments weekly on Tuesdays via PayPal, Airtm, or ACH bank transfer, whereas DataAnnotation pays on-demand through PayPal within a few days of submission. Scale AI agreed to a $12.5 million settlement of McKinney v. Scale AI, a California worker-misclassification case covering Outlier contributors, according to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement). The settlement is pending final approval at an October 30, 2026 hearing, and the defendants deny the allegations.\n\nIf you want steady income, DataAnnotation is not for you. Unanswered applications and the dry spells Trustpilot reviewers describe make it an unreliable sole income source. However, if you already have a stable job and want flexible, high-hourly supplemental work, setting up an account and taking the one-hour test is a reasonable move. Our verdict would change if DataAnnotation stopped paying PayPal withdrawals within a few days, or if a court confirmed that the Surge AI suit covers DataAnnotation workers. You can read our head-to-head breakdown in [DataAnnotation vs Outlier](/compare/dataannotation-vs-outlier/) or explore competitors in our list of [DataAnnotation alternatives](/roundup/dataannotation-alternatives/). If you pass the assessment, set aside funds from every PayPal withdrawal for quarterly estimated taxes."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/self-employment-tax/1099-tax-calculator/",
+        "label": "1099 Tax Calculator"
+      },
+      {
+        "href": "/self-employment-tax/quarterly-estimated-tax-calculator/",
+        "label": "Quarterly Estimated Tax Calculator"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget Calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is DataAnnotation a legitimate company?",
+        "answer": "Yes. DataAnnotation is a legitimate business that connects over 100,000 contractors worldwide to train and test artificial intelligence systems. DataAnnotation delivers earnings to workers through PayPal and states that it has paid over $20 million to contractors since 2020."
+      },
+      {
+        "question": "How much does DataAnnotation pay?",
+        "answer": "Published pay rates in the Pay section of the FAQ start at $25 to $50 or more per hour for general projects, $20 or more for multilingual work, and $40 to $150 or more for coding. Specialized STEM and professional tiers start at $40 to $125 or more per hour. Other FAQ answers give a lower general starting range of $25 to $30 per hour."
+      },
+      {
+        "question": "Why haven't I heard back from DataAnnotation?",
+        "answer": "DataAnnotation only contacts applicants who pass the Starter Assessment and match open projects. Its FAQ says that, given the number of applications, DataAnnotation is unable to provide direct responses for every applicant, so you may never hear back."
+      },
+      {
+        "question": "Can you retake the DataAnnotation assessment?",
+        "answer": "No. DataAnnotation enforces a strict policy allowing only one attempt on the Starter Assessment. There are no retakes, retests, or second chances offered if you do not pass."
+      },
+      {
+        "question": "How does DataAnnotation pay you?",
+        "answer": "DataAnnotation pays contractors exclusively through PayPal. Workers request funds from their account balance, and DataAnnotation delivers deposits within a few days of the request."
+      },
+      {
+        "question": "Do you pay taxes on DataAnnotation income?",
+        "answer": "Yes. Workers operate as independent contractors, making net self-employment earnings of $400 or more subject to the 15.3 percent self-employment tax. Contractors must report all income to the IRS on Schedule C regardless of whether PayPal issues a Form 1099-K."
+      }
+    ],
+    "sources": [
+      {
+        "label": "DataAnnotation FAQs",
+        "url": "https://www.dataannotation.tech/faqs"
+      },
+      {
+        "label": "Trustpilot, DataAnnotation Reviews",
+        "url": "https://www.trustpilot.com/review/dataannotation.tech"
+      },
+      {
+        "label": "Clarkson Law Firm, Surge AI Class Action",
+        "url": "https://clarksonlawfirm.com/clarkson-represents-surge-ai-workers-in-labor-law-class-action"
+      },
+      {
+        "label": "Bloomberg Law, Surge AI Misclassification Suit",
+        "url": "https://news.bloomberglaw.com/financial-accounting/ai-training-firm-surge-ai-hit-with-worker-misclassification-suit"
+      },
+      {
+        "label": "Federal Trade Commission, Job Offer Text Scam Alert",
+        "url": "https://www.consumer.ftc.gov/consumer-alerts/2026/04/job-offer-text-probably-scam"
+      },
+      {
+        "label": "Federal Trade Commission, Job Scams",
+        "url": "https://consumer.ftc.gov/articles/job-scams"
+      },
+      {
+        "label": "Internal Revenue Service, Self-Employment Tax",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+      },
+      {
+        "label": "Internal Revenue Service, 1099-K Threshold Guidance",
+        "url": "https://www.irs.gov/newsroom/irs-issues-faqs-on-form-1099-k-threshold-under-the-one-big-beautiful-bill-dollar-limit-reverts-to-20000"
+      },
+      {
+        "label": "PayPal, 1099-K Reporting Thresholds",
+        "url": "https://www.paypal.com/us/cshelp/article/current-form-1099-k-reporting-thresholds-2025-update-help1131"
+      },
+      {
+        "label": "Outlier FAQs",
+        "url": "https://outlier.ai/faq"
+      },
+      {
+        "label": "Claim Depot, McKinney v Scale AI Settlement",
+        "url": "https://www.claimdepot.com/settlements/mckinney-scaleai-settlement"
+      },
+      {
+        "label": "Wikipedia, Surge AI",
+        "url": "https://en.wikipedia.org/wiki/Surge_AI"
+      }
+    ]
+  },
+  // ── end is-dataannotation-legit ──
+  // ── mindmap-pass 2026-10-09 (ai-money): how-to-make-money-with-ai ──
+  {
+    "updated": "2026-10-09",
+    "slug": "how-to-make-money-with-ai",
+    "title": "How to Make Money With AI in 2026",
+    "metaDescription": "A grounded look at how to make money with AI: data annotation, freelancing, automations, and content routes, with published pay rates and red flags.",
+    "h1": "How to Make Money With AI",
+    "cardBlurb": "Published pay rates, platform fees, and contract terms for AI annotation, freelancing, workflow builds, and media creation.",
+    "introText": "AI can make you money, mostly as paid work where you sell your own labor or technical skill. At ModernWallet, we show the math, so every pay figure below comes with its source and the condition attached.\n\nAccording to a 2025 survey by [Bankrate](https://www.bankrate.com/loans/small-business/side-hustles-survey/), the median side hustler earns $200 a month. The methods with published pay rates are active work: AI-training contracts, freelancing, and building automations for clients. Passive AI storefront schemes have repeatedly resulted in regulatory crackdowns and steep consumer losses.",
+    "sections": [
+      {
+        "heading": "AI Money Methods Ranked by Published Pay",
+        "body": "Making money with AI primarily comes from selling specialized labor to platforms or clients. Data annotation platforms offer published hourly rates. Traditional freelance marketplaces show higher earnings for complex technical implementation. Content and digital product creation take far longer to return revenue and face strict platform rules.\n\n| Method | What You Sell | Published Pay or Price Signal | Time to First Dollar | The Catch |\n| --- | --- | --- | --- | --- |\n| AI Training and Annotation | Prompt writing, output evaluation, code review | Starting at $25 to $50+ per hour on [DataAnnotation](https://www.dataannotation.tech/faqs); $15 to $30 entry-level on [Mindrift](https://mindrift.ai/) | Days to weeks | Screening tests that may be unpaid, stretches with no available work, and account deactivations |\n| Freelancing With AI | Writing, coding, workflow building, video editing | Freelancers who do AI work on [Upwork](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates) earn 34% more per hour | Weeks to months | Per-contract earnings for generative AI and creative work fell 13%; marketplace fees run up to 20% |\n| Selling AI Automations | Multi-app business workflows, custom bots | No independent survey; [Aumiqx](https://aumiqx.com/services/ai-automation-agency/)'s self-published median is about $1,000 per workflow | Months | Tool subscriptions; n8n's free Community Edition license bars hosting it as a service for clients or white-labeling it |\n| AI-Assisted YouTube Channels | Faceless long-form videos and Shorts | [YouTube](https://blog.youtube/creator-and-artist-stories/youtube-partner-program-explained/) shares 55% of long-form ad revenue with creators | Months to years | Ad revenue needs 1,000 subscribers plus 4,000 watch hours or 10 million Shorts views; templated AI videos are not monetizable |\n| Clipping Campaigns | Short clips of a brand's content posted on your own accounts | [Whop](https://whop.com/blog/content-rewards/) says clippers average $1 per 1,000 views | Days to weeks | Brands approve each post before paying and cap payouts per video |\n| Digital Products and Music | E-books, printables, AI music | No published figure; [Suno](https://help.suno.com/en/articles/2416769) grants commercial rights only on Pro or Premier | Months | Purely AI-generated work cannot be copyrighted; marketplaces require AI disclosure |\n| AI Influencers and UGC Ads | Sponsored short videos for brands | No published figure; Whop's docs say UGC campaigns typically pay more than clipping | Weeks | Each post needs brand approval, and realistic AI-generated people may need YouTube's AI disclosure label |"
+      },
+      {
+        "heading": "AI Training and Data-Annotation Contract Work",
+        "body": "Data annotation platforms pay human contractors to benchmark large language models. Typical tasks include comparing model answers, flagging factual errors, testing output images, writing adversarial prompts, and verifying code logic. If you are comparing platforms, read our [DataAnnotation vs Outlier](/compare/dataannotation-vs-outlier/) comparison.\n\nPay rates vary by skill requirements across several active platforms:\n- DataAnnotation states that general projects start at $25 to $50+ per hour. Coding projects list pay from $40 to $150+ per hour. Specialized STEM projects list $40 to $125+ per hour for holders of advanced degrees or extensive experience. DataAnnotation's FAQ gives different figures elsewhere: general work starting at $25 to $30+ and coding from $50 to $100. Payouts transfer via PayPal.\n- Mindrift, operated by Toloka, lists entry-level pay of $15 to $30 per hour. Domain expert tiers list $60 to $100+ per hour, with task earnings shown before starting. Payouts process twice monthly through Payoneer or Tipalti.\n- [Alignerr](https://www.alignerr.com/), powered by Labelbox, features an average pay figure of $80 per hour on its homepage. Listed roles range from $30 to $35 per hour for language experts to $40 to $120 per hour for technical specialties.\n- The [Handshake](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) AI Fellowship lists hourly rates of $30 to $125 for independent contractors with graduate degrees. Payouts route through Stripe.\n- [Prolific](https://researcher-help.prolific.com/en/article/2273bd) enforces an absolute minimum floor of $8 per hour for study participants.\n\nReview our guides on [AI training jobs](/guides/ai-training-jobs/), [is DataAnnotation legit](/guides/is-dataannotation-legit/), and [is Outlier AI legit](/guides/is-outlier-ai-legit/). Starter assessments take one to two hours without pay guarantees. Platforms provide no guaranteed minimum volume, and contractor dashboards can empty unexpectedly."
+      },
+      {
+        "heading": "Freelancing With AI Tools",
+        "body": "Freelancing with AI pays more per hour on Upwork, but the premium depends on how complex the work is. The Upwork Future Workforce Index 2026 revealed that freelancers who do AI work on the Upwork marketplace earn 34% more per hour than non-AI peers.\n\nContract starts for generative AI and creative production work grew 90% year over year, but per-contract earnings fell 13%. In contrast, freelancers doing more complex work with AI saw earnings rise 45% year over year.\n\nUpwork's [In-Demand Skills 2026](https://investors.upwork.com/news-releases/news-release-details/upworks-demand-skills-2026-demand-top-ai-skills-more-doubles-ai) report, which measures freelancer earnings on completed jobs, found that skills referencing AI grew 109% year over year. AI video generation surged 329%, AI integration gained 178%, and AI data annotation grew 154%. [Fiverr](https://www.fiverr.com/news/business-trends-index-ai-2026) reported that searches for Claude Code specialists rose 938% from November 2025 to April 2026 compared with the prior six months, and searches for n8n AI automation rose 125%. Those figures count searches, not earnings.\n\nTake marketplace fees into account before pricing your services. Check our [freelance rate calculator](/freelance-rate/) to determine your baseline quote. Upwork charges a 0% to 15% freelancer service fee on standard contracts, plus paid Connects. Fiverr keeps 20% of each purchase amount."
+      },
+      {
+        "heading": "Selling Automations to Businesses",
+        "body": "Selling automations means charging a small business to build workflows that pass data between its software tools. For an in-depth breakdown of this model, consult our guide to building an [AI automation agency](/guides/ai-automation-agency/).\n\nSoftware expenses impact agency margins directly:\n- [n8n](https://n8n.io/pricing/) offers a free, self-hosted Community Edition under a Sustainable Use License. n8n's [license FAQ](https://docs.n8n.io/n8n-community-license/community-license/license-faq) allows charging clients for workflow setup and consulting, but bars hosting n8n as a service for clients or white-labeling it. n8n Cloud starts at €20 a month billed annually.\n- [Make](https://www.make.com/en/pricing) offers a free tier with 1,000 monthly credits, followed by Core at $9 a month with 10,000 credits. Make's pricing page does not say whether that price assumes annual billing.\n- [Zapier](https://zapier.com/pricing) starts at $19.99 monthly on an annual contract for 750 tasks, with team tiers starting at $69 per month.\n\nThe only published figures on automation agency pricing come from vendors and agencies with a commercial interest. Self-published data from Aumiqx across 48 agencies reports a median charge of roughly $1,000 for single-workflow builds and $3,556 for multi-workflow setups. Treat this self-published dataset as weak sourcing."
+      },
+      {
+        "heading": "YouTube Channels and Clipping Campaigns",
+        "body": "A YouTube channel earns ad revenue only after it clears YouTube's Partner Program thresholds and its inauthentic-content policy. If you are exploring video, see our walkthrough on running a [faceless YouTube channel with AI](/guides/faceless-youtube-channel-ai/).\n\nTo earn ad revenue on [YouTube](https://support.google.com/youtube/answer/72851), your channel must cross 1,000 subscribers and 4,000 valid public watch hours in 12 months, or 10 million Shorts views over 90 days. YouTube pays creators 55% of revenue on long-form video views and 45% from pooled Shorts ads. YouTube's [inauthentic content policy](https://support.google.com/youtube/answer/1311392) does not monetize generic AI videos made from mass-production templates or slideshows with little or no commentary. It also bars AI personas presenting as experts on health, legal or financial topics.\n\nShort-form clipping campaigns provide faster monetization without channel partner thresholds. On [Whop](https://docs.whop.com/memberships-and-access/third-party-apps/content-rewards), brands launch Content Rewards campaigns for clippers on TikTok, Instagram Reels, and YouTube Shorts. For more details, explore our guide on [Whop clipping](/guides/whop-clipping/). Each brand sets its own rate per 1,000 views, a total budget and a per-video cap, and pays only for posts it approves. Whop's 10% Content Reward Fee is paid by the brand, so it does not come out of a clipper's payout."
+      },
+      {
+        "heading": "Digital Products, Books, Art, and Music",
+        "body": "Selling AI-generated books, art and music means following each platform's disclosure rules and accepting copyright limits. [Amazon KDP](https://kdp.amazon.com/en_US/help/topic/G200672390) requires authors to disclose AI-generated text, art, or translations during publication. AI-assisted content, such as your own writing refined with AI, does not need disclosure on KDP. Etsy's [Creativity Standards](https://www.etsy.com/legal/creativity/) say AI-generated items made from a seller's own prompts belong in the \"designed by\" category, that sellers must disclose AI use, and that selling AI prompt bundles is prohibited.\n\nAudio generation tools restrict commercial ownership by account tier. According to Suno's help center, users retain commercial ownership only for tracks created while subscribed to Pro or Premier tiers. Songs produced on free tiers remain non-commercial assets, and subsequent paid upgrades do not grant retroactive commercial rights.\n\nFederal copyright law limits ownership of AI media. The [U.S. Copyright Office](https://www.federalregister.gov/documents/2023/03/16/2023-05321/copyright-registration-guidance-works-containing-material-generated-by-artificial-intelligence) established that purely AI-generated text or images lack human authorship and cannot receive copyright protection. Because purely AI-generated material is not copyrightable, a pure-AI product can be copied."
+      },
+      {
+        "heading": "Tools and What They Cost",
+        "body": "Running an AI side hustle incurs subscription overhead. [Anthropic](https://claude.com/pricing) offers Claude Free, a Pro plan at $20 monthly, and Max plans starting at $100 per month. Claude Pro includes Claude Code. Explore our guide on [how to make money with Claude](/guides/how-to-make-money-with-claude/) to see compliant ways to monetize workflows.\n\n[OpenAI](https://learn.chatgpt.com/docs/pricing) provides ChatGPT Free, Go at $8 per month, Plus at $20 per month, and Pro tiers starting at $100 monthly. Read our walkthrough on [how to make money with ChatGPT](/guides/how-to-make-money-with-chatgpt/) for practical business applications.\n\n[Anthropic's consumer terms](https://www.anthropic.com/legal/consumer-terms) and [OpenAI's terms of use](https://openai.com/policies/terms-of-use/) both assign you their rights in the output, and Anthropic's terms contain no general ban on commercial use. Neither company runs an open revenue-share program for consumers. An FAQ quoted on [OpenAI's community forum](https://community.openai.com/t/what-is-the-status-with-gpt-store-revenue-share/839172) says GPT Store payouts were tested with a small group of U.S. builders and new builders were not being accepted, so do not build a GPT expecting payouts."
+      },
+      {
+        "heading": "Red Flags and E-Commerce Store Scams",
+        "body": "The [Federal Trade Commission](https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes) (FTC) has sued several sellers of AI-powered business opportunities over earnings claims it says were false. Its Operation AI Comply sweep, announced in September 2024, covered five actions at once.\n\nThe FTC's complaints allege large losses:\n- [Ascend Ecom](https://www.ftc.gov/news-events/news/press-releases/2025/06/ftc-case-leads-order-banning-ascend-ecom-its-owners-business-opportunity-marketing) allegedly cost consumers at least $25 million by promising AI-powered stores with \"five-figure monthly income by the second year.\" A proposed order would permanently ban its owners from selling business opportunities.\n- [FBA Machine](https://www.ftc.gov/news-events/news/press-releases/2025/07/ftc-obtains-permanent-ban-e-commerce-business-opportunity-scheme-operator) allegedly cost consumers more than $15.9 million with \"7-figure business\" claims, and a proposed order carries a $15.7 million judgment, partially suspended.\n- [Click Profit](https://www.ftc.gov/news-events/news/press-releases/2025/03/ftc-acts-stop-click-profit-online-business-opportunity-has-cost-consumers-least-14-million) allegedly cost consumers at least $14 million selling \"passive income\" stores on Amazon, Walmart and TikTok, and the FTC says about 95% of those stores were blocked, suspended or terminated by Amazon.\n- [Air AI](https://www.ftc.gov/news-events/news/press-releases/2025/08/ftc-sues-stop-air-ai-using-deceptive-claims-about-business-growth-earnings-potential-refund) was sued in August 2025 over claims that buyers would earn back \"tens of thousands of dollars in a matter of days or months.\"\n\nUnder the FTC's [Business Opportunity Rule](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-437) (16 CFR Part 437), a seller who makes an earnings claim must have written substantiation and give buyers an earnings claim statement showing the number and percentage of buyers who reached those earnings. Treat any promoter selling turnkey automated stores or guaranteed daily returns as a scam, and report it at ReportFraud.ftc.gov."
+      },
+      {
+        "heading": "Tax Rules for AI Side Income",
+        "body": "Income from AI contract work, freelancing, or digital sales is treated as taxable self-employment income by the [Internal Revenue Service](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) (IRS). Once your net self-employment earnings reach $400 in a calendar year, you are required to pay federal self-employment tax along with your standard income tax.\n\nHandshake AI hires fellows as 1099 independent contractors. When receiving payments via PayPal or Stripe, keep detailed records of your earnings and expenses throughout the year.\n\nUse our [self-employment tax calculator](/self-employment-tax/) to estimate your federal tax obligations. Contractors completing labeling work should reference our guide on [DataAnnotation taxes](/self-employment-tax/dataannotation-taxes/) to calculate quarterly payments.\n\nThis is general information, not financial, tax or legal advice."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/freelance-rate/",
+        "label": "Freelance Rate Calculator"
+      },
+      {
+        "href": "/self-employment-tax/",
+        "label": "Self-Employment Tax Calculator"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget Calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can AI actually make you money?",
+        "answer": "Yes, but primarily by doing paid hourly or project work using AI tools. High-demand routes include data annotation contracts, technical freelancing, and building software automations. Pitches for passive AI income match the claims the FTC has sued over in its AI business-opportunity cases."
+      },
+      {
+        "question": "Which AI tool is best for earning money?",
+        "answer": "The paid task matters more than the tool. Anthropic's and OpenAI's terms both assign you their rights in what Claude and ChatGPT produce. For automation agencies, platforms like n8n, Make, and Zapier handle business workflows."
+      },
+      {
+        "question": "Can I make $1,000 a day using AI?",
+        "answer": "There is no credible evidence supporting turnkey systems that yield $1,000 per day. The FTC has sued sellers such as Ascend Ecom and Click Profit over passive-income claims, alleging consumer losses of at least $25 million and $14 million."
+      },
+      {
+        "question": "How can I train AI and earn money?",
+        "answer": "You can apply as an independent contractor on data annotation platforms like DataAnnotation, Mindrift, Alignerr, or Handshake AI. After passing a screening assessment, contractors evaluate model responses, flag factual errors, and review code."
+      },
+      {
+        "question": "Can I make money with AI with no experience?",
+        "answer": "Prolific requires researchers to pay study participants at least $8 an hour. While Mindrift lists entry-level projects at $15 to $30 per hour, platforms like DataAnnotation generally seek candidates with bachelor's degrees or equivalent professional backgrounds."
+      },
+      {
+        "question": "Is AI passive income real?",
+        "answer": "True passive income with AI is largely a myth. Generating ad revenue on YouTube, selling digital assets, or licensing music requires ongoing human creative direction, manual editing, compliance tracking, and platform maintenance."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Bankrate, Side Hustles Survey 2025",
+        "url": "https://www.bankrate.com/loans/small-business/side-hustles-survey/"
+      },
+      {
+        "label": "Upwork, Future Workforce Index 2026",
+        "url": "https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates"
+      },
+      {
+        "label": "Upwork, In-Demand Skills 2026",
+        "url": "https://investors.upwork.com/news-releases/news-release-details/upworks-demand-skills-2026-demand-top-ai-skills-more-doubles-ai"
+      },
+      {
+        "label": "FTC, Operation AI Comply Press Release",
+        "url": "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes"
+      },
+      {
+        "label": "DataAnnotation, Platform FAQ",
+        "url": "https://www.dataannotation.tech/faqs"
+      },
+      {
+        "label": "U.S. Copyright Office, Registration Guidance on AI Works",
+        "url": "https://www.federalregister.gov/documents/2023/03/16/2023-05321/copyright-registration-guidance-works-containing-material-generated-by-artificial-intelligence"
+      }
+    ]
+  },
+  // ── end how-to-make-money-with-ai ──
   // ── mindmap-pass 2026-10-08 ──
   {
     "slug": "how-to-claim-a-trump-account",
@@ -3392,7 +4634,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "passive-income-ideas",
-    updated: "2026-09-09",
+    updated: "2026-10-09",
     title: "Passive Income Ideas: Realistic Streams That Actually Work",
     metaDescription:
       "Passive income ideas with the math: dividends, REITs, high-yield savings, rentals, digital products, and car sharing. What's truly passive and what isn't.",
@@ -3406,6 +4648,7 @@ export const GUIDES: Guide[] = [
       { heading: "Idea 2: REITs and rental property", body: "Real estate is one of the most popular passive income ideas, and one of the least truly passive. A REIT is a company that owns income-producing real estate and pays out most of its profits as dividends. REITs trade like stocks, so they need no landlord work at all.\n\nOwning a rental property is different. You handle tenants, repairs, and vacancies, or you pay a manager 8% to 12% of rent to do it. Model the cash flow before you buy with our [rental cash flow calculator](/real-estate/cash-flow-calculator/). A property with negative monthly cash flow is not passive income, it is a bet on price appreciation." },
       { heading: "Idea 3: High-yield savings and CDs", body: "A high-yield savings account (HYSA) pays interest on cash you keep in a bank. It is the most truly passive stream on this list because no setup skill is required. FDIC insurance covers deposits up to $250,000 per depositor, per insured bank.\n\nThe tradeoff is scale. Even at a 4% rate, $10,000 in an HYSA pays only about $400 a year, and that interest is taxed as ordinary income. Use our [high-yield savings calculator](/investing/high-yield-savings-calculator/) to see what any balance and rate actually pays. HYSAs work best for emergency funds and short-term goals, not as your only income stream." },
       { heading: "Idea 4: Digital products and content", body: "Digital products like courses, ebooks, templates, and stock photos can pay for years after you make them. The upside is huge scale with no per-unit cost to produce a copy. The downside is the front-loaded work, which often takes hundreds of hours before the first dollar arrives.\n\nMost digital products earn very little. The realistic failure mode is spending months building an asset for a market that never buys. Validate demand first with a smaller free version or a paid pre-order. If a market pays for the prototype, the larger product is worth building." },
+      { heading: "Can AI Create Passive Income?", body: "Artificial intelligence does not create truly passive income. AI tools cut the initial cost of producing ebooks, digital art, or background music, but sustained sales still depend on marketing, distribution, and ongoing upkeep.\n\nSelling AI-created goods also introduces platform requirements and legal limits. [Amazon KDP](https://kdp.amazon.com/en_US/help/topic/G200672390) requires publishers to disclose AI-generated text, images, or translations when releasing a book. [Etsy's Creativity Standards](https://www.etsy.com/legal/creativity/) place items generated from a seller's own prompts in the \"designed by\" category, require AI disclosure in listings, and prohibit selling AI prompt bundles. If you generate audio with [Suno](https://help.suno.com/en/articles/2416769), you receive commercial rights only on Pro or Premier plans. Music created on Suno's free tier remains non-commercial, and Suno keeps ownership of those tracks.\n\nIntellectual property rights create another commercial hurdle. The [U.S. Copyright Office's registration guidance](https://www.federalregister.gov/documents/2023/03/16/2023-05321/copyright-registration-guidance-works-containing-material-generated-by-artificial-intelligence) says material generated purely by AI is not registrable. Its 2025 report adds that prompts alone do not give enough human control with current technology, so copyright does not protect a purely AI-generated ebook or image from being copied. Human expression or arrangement you add can be protected, decided case by case.\n\nUnrealistic promises around automated earnings have also triggered regulatory penalties. [Federal Trade Commission (FTC)](https://www.ftc.gov/industry/technology/artificial-intelligence) enforcement actions target businesses that market AI-powered online stores as passive investments. In February 2024, the FTC settled with the operators of [Automators AI](https://www.ftc.gov/news-events/news/press-releases/2024/02/ftc-action-leads-ban-owners-automators-ai-e-commerce-money-making-scheme), who the FTC alleged pitched \"passive investment income\" from AI-powered Amazon and Walmart stores. The resulting settlement banned those operators from e-commerce business opportunities and set a $21,765,902.65 judgment, partially suspended. Later that year, the FTC [sued Ascend Ecom](https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes), alleging false claims that AI-powered tools would earn consumers thousands of dollars a month in passive income.\n\nTreat artificial intelligence as a production tool rather than an automated income stream. If you want to earn income, explore paid AI work detailed in our guide on [how to make money with AI](/guides/how-to-make-money-with-ai/)." },
       { heading: "Your car as an income asset", body: "Peer-to-peer car sharing allows an owner to list a personal vehicle on a marketplace like [Turo](https://turo.com/) so paying drivers can rent it. The financial return depends on the balance between booking utilization and vehicle depreciation. An idle car still loses resale value and incurs financing costs every month it sits unbooked. Frequent bookings generate cash flow, but they also accelerate mechanical wear and push down resale value.\n\nMany drivers ask whether autonomous robotaxis offer a hands-off income stream, but no consumer option exists today. On September 3, 2026, Tesla published an interest form at [Tesla's robotaxi interest page](https://www.tesla.com/robotaxi/interest) aimed at commercial fleet buyers rather than individual consumers. Tesla disclosed no retail price, delivery timeline, or revenue split with that form. At ModernWallet, we cover [whether you can buy a Cybercab](/guides/can-you-buy-a-cybercab/) in its own guide. Private owners cannot purchase a vehicle or run one on an autonomous network today.\n\nA financed vehicle is the least passive asset on this page. Unlike dividend index funds or savings accounts, a vehicle generates ongoing cash outflows for commercial insurance, cleaning, routine maintenance, and debt service even when it sits empty. Compare the numbers in our guide on [buying versus leasing a car](/compare/buying-vs-leasing-a-car/) and review [what driving pays after vehicle costs](/guides/how-much-do-uber-drivers-make/) before acquiring a vehicle for rental use. Treat any car-sharing plan as a small business that happens to own a car. It is not passive income, and you need to calculate your true cost per mile before spending money." },
       { heading: "The decision rule most guides skip", body: "Pick a stream that matches what you actually have. If you have money but not time, dividends, REITs, and HYSAs need no ongoing work. If you have time and skills but less money, digital products can scale without capital.\n\nRental property sits in the middle and needs both. Diversifying across two or three streams protects you when one underperforms, like when rates drop and HYSA yields fall. Start with the one that fits your situation, and expand only after it works." },
     ],
@@ -5688,7 +6931,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "side-hustle-ideas",
-    updated: "2026-09-09",
+    updated: "2026-10-09",
     title: "Side Hustle Ideas: Realistic Pay, Effort & Tax Rules",
     metaDescription:
       "Side hustle ideas grouped by real hourly pay and startup effort — plus the tax rules (1099s, self-employment tax) most guides leave out.",
@@ -5714,16 +6957,20 @@ export const GUIDES: Guide[] = [
         body: "Digital products (templates, courses, an e-book, a print-on-demand shop) and content platforms (a YouTube channel, a blog, a Substack) can pay for months or years after the initial work, but almost all of that work happens before the first dollar arrives — often hundreds of unpaid hours. This is the opposite trade-off from gig-app driving: little to no pay upfront, in exchange for a shot at income that keeps arriving with no new hourly work.\n\nThe realistic failure mode is spending months on a product or channel that never finds an audience. Validate demand cheaply first — a small paid pre-order, a free sample chapter, a handful of short-form posts — before committing serious time to the full version. If a small test doesn't get any real interest, a larger version usually won't either.\n\nThis category overlaps with, but isn't the same as, [passive income](/guides/passive-income-ideas/): a digital product needs real upfront work and often ongoing marketing to keep selling, so it's better described as a side hustle with a long payoff than something that runs itself from day one.",
       },
       {
+        heading: "AI Side Hustles That Pay by the Hour",
+        body: "Two AI side hustles have published pay figures, and both are paid work: AI-training contract work and freelancing with AI tools. Content and product routes pay later.\n\nAI-training platforms pay hourly or per-task rates to evaluate chatbot responses, compare outputs, flag factual errors, and review code. For general projects, the [DataAnnotation FAQ](https://www.dataannotation.tech/faqs) lists rates starting at $25 to $50+ per hour, though other answers on the same page state $25 to $30+. [Mindrift](https://mindrift.ai/) lists entry-level pay of $15 to $30 per hour, alongside monthly caps such as up to $6,400 for STEM work. Specialized tiers command higher figures: DataAnnotation lists professional and STEM tracks at $40 to $125+ per hour, and coding at $40 to $150+ per hour. For a complete look at platforms and requirements, review our guide to [AI training jobs](/guides/ai-training-jobs/).\n\nFreelancing with AI tools can pay more per hour, but the type of work matters. The [Upwork Future Workforce Index 2026](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates) reported that freelancers who do AI work earn 34% more per hour than those who do not use AI. Upwork also noted that not all AI tasks are gaining value. For generative AI and creative production work, contract starts jumped 90% year over year, while per-contract earnings dropped 13%. In contrast, freelancers handling more complex tasks with AI saw earnings rise 45% year over year. Upwork reads this as a sign that lower-complexity AI execution may become less lucrative as it scales. Our guide on [how to make money with AI](/guides/how-to-make-money-with-ai/) covers more ways to earn with AI tools.",
+      },
+      {
         heading: "Overlooked income you can add with almost no new effort",
         body: "Paid online market research (survey panels and user-testing platforms that pay for opinions or a recorded 15-minute session) pays modestly per task, usually a few dollars to a few dollars an hour, but it layers on top of anything else on this list since it needs no dedicated time block, just spare minutes. Renting out something you already own, a car sitting idle most of the week, a parking spot, unused tools, or a spare room, can pay more per hour of actual effort than any task-app driving on this list, since the asset earns while you do something else entirely. Renting out a car is the version people ask about most, and our [passive income guide](/guides/passive-income-ideas/) covers what utilization and depreciation do to that return. Housesitting through a dedicated marketplace works the same way as pet sitting, trading a few days of your presence for pay plus free lodging, and needs no special skill to start.\n\nA cash-back shopping browser extension or app pays a small percentage back on purchases you were already going to make, which isn't really a side hustle so much as a way to stop leaving money on the table on routine spending, and some retailers separately pay a small credit for a detailed written product review after a verified purchase. Unused or unwanted gift cards can be resold on a dedicated marketplace for roughly 70% to 92% of face value depending on the retailer, turning a card that would otherwise sit forgotten in a drawer into cash within a few days. And a hobby you already have, photography, video, or simply talking through a topic you know well, can become a modest content-platform income (stock photo sales, a podcast, live streaming) once you treat it as the same validate-demand-first project described above under digital products, rather than a separate category with its own rules. None of these add up to a full income stream on their own, but stacked together they add real dollars for close to zero dedicated hours.",
       },
       {
         heading: "The tax rules most side hustle lists skip",
-        body: "Side hustle income is taxable starting with your very first dollar, whether or not you receive a tax form for it. Payment apps and marketplaces are required to send you a Form 1099-K once your payments cross the IRS reporting threshold for the year, but the IRS is clear that all income is reportable regardless of whether a 1099 arrives.\n\nMost side hustlers report this income on Schedule C as self-employment income, which also triggers self-employment tax — an additional 15.3% covering Social Security and Medicare, on top of your regular income tax rate — once net self-employment earnings exceed $400 in a year. Setting aside 25% to 30% of side hustle income for taxes as you earn it, rather than at filing time, avoids a painful surprise the following April.",
+        body: "Side hustle income is taxable starting with your very first dollar, whether or not you receive a tax form for it. Payment apps and marketplaces are required to send you a Form 1099-K once your payments cross the IRS reporting threshold for the year, but the IRS is clear that all income is reportable regardless of whether a 1099 arrives.\n\nMost side hustlers report this income on Schedule C as self-employment income, which also triggers self-employment tax — an additional 15.3% covering Social Security and Medicare, on top of your regular income tax rate — once net self-employment earnings exceed $400 in a year. Setting aside 25% to 30% of side hustle income for taxes as you earn it, rather than at filing time, avoids a painful surprise the following April.\n\nIf your side hustle is a YouTube channel, our [YouTube taxes guide](/self-employment-tax/youtube-taxes/) covers what creators owe and what they can deduct.",
       },
       {
         heading: "Red flags worth avoiding",
-        body: "Be skeptical of any \"side hustle\" that requires you to pay a large upfront fee for training, a starter kit, or exclusive access before you can start earning — legitimate gig platforms and marketplaces never charge you to join. The [FTC](https://consumer.ftc.gov/articles/job-scams) has flagged this pattern, often paired with vague promises of guaranteed high pay, as a recurring scam structure.\n\nAlso watch for \"reshipping\" or \"money transfer\" job offers that ask you to receive and forward packages or funds on someone else's behalf — these are common vehicles for fraud and can expose you to legal liability even if you didn't realize what was happening.",
+        body: "Be skeptical of any \"side hustle\" that requires you to pay a large upfront fee for training, a starter kit, or exclusive access before you can start earning — legitimate gig platforms and marketplaces never charge you to join. The [FTC](https://consumer.ftc.gov/articles/job-scams) has flagged this pattern, often paired with vague promises of guaranteed high pay, as a recurring scam structure.\n\nAlso watch for \"reshipping\" or \"money transfer\" job offers that ask you to receive and forward packages or funds on someone else's behalf — these are common vehicles for fraud and can expose you to legal liability even if you didn't realize what was happening.\n\nPrograms selling \"AI-powered\" stores or done-for-you AI income are the newest version of the upfront-fee scheme above, and the FTC has sued several of them. In September 2024, the FTC announced [Operation AI Comply](https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes), a crackdown on deceptive AI claims that included three cases over AI-powered online-store schemes. In one, the FTC alleged that Ascend Ecom promised \"five-figure monthly income by the second year\" from AI-powered online stores and caused at least $25 million in consumer losses. In 2025, the FTC sued [Click Profit](https://www.ftc.gov/news-events/news/press-releases/2025/03/ftc-acts-stop-click-profit-online-business-opportunity-has-cost-consumers-least-14-million) over alleged losses of at least $14 million, alleging about 95% of its stores were blocked, suspended, or terminated by Amazon. Under the [Business Opportunity Rule](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-437), a seller of a business opportunity who makes an earnings claim must give buyers a written earnings claim statement with the number and percentage of buyers who reached those earnings. Ask for that document before paying anyone.",
       },
     ],
     tools: [
@@ -6368,7 +7615,7 @@ export const GUIDES: Guide[] = [
 
   // ─── 2. AI Chatbots for Financial Advice: A Practical Guide ───────────────
   {
-    updated: "2026-09-09",
+    updated: "2026-10-09",
     slug: "ai-financial-advice-chatbots-guide",
     title: "AI Chatbots for Financial Advice: A Practical Guide",
     metaDescription:
@@ -6378,7 +7625,7 @@ export const GUIDES: Guide[] = [
     introText:
       "As of mid-2026, 44% of U.S. adults say they've used [ChatGPT](https://chatgpt.com/), according to Pew Research Center, more than double the share when Pew first asked in 2023. A growing number are also turning to it with money questions it was never built to get right every time. This guide explains what AI chatbots handle well, where they fail specifically on personal finance, and how to use a concrete framework for prompting, verifying, and protecting your data.",
     sections: [
-      { heading: "What AI chatbots are actually good at", body: "Chatbots like ChatGPT, [Gemini](https://gemini.google.com/), and [Claude](https://claude.ai/) are genuinely useful for explaining concepts in plain language: what a Roth IRA is, how amortization works, what the difference is between a 401(k) and a brokerage account. They're also decent at drafting a first-pass structure, like a rough monthly budget outline or a list of pros and cons for options you've already researched yourself.\n\nThey're fast and they don't judge. You can ask a question about credit card debt or a low emergency fund at midnight without the discomfort of asking a person, and that alone gets some people to engage with a money problem they'd otherwise avoid. Treat that as the real value: a low-friction first pass, not a final answer." },
+      { heading: "What AI chatbots are actually good at", body: "Chatbots like ChatGPT, [Gemini](https://gemini.google.com/), and [Claude](https://claude.ai/) are genuinely useful for explaining concepts in plain language: what a Roth IRA is, how amortization works, what the difference is between a 401(k) and a brokerage account. They're also decent at drafting a first-pass structure, like a rough monthly budget outline or a list of pros and cons for options you've already researched yourself.\n\nThey're fast and they don't judge. You can ask a question about credit card debt or a low emergency fund at midnight without the discomfort of asking a person, and that alone gets some people to engage with a money problem they'd otherwise avoid. Treat that as the real value: a low-friction first pass, not a final answer.\n\nIf you want to earn with these tools rather than ask them for advice, see [how to make money with ChatGPT](/guides/how-to-make-money-with-chatgpt/) and [how to make money with Claude](/guides/how-to-make-money-with-claude/)." },
       { heading: "Where chatbots get personal finance wrong", body: "Chatbots hallucinate, and they do it with total confidence. A chatbot can state a wrong 401(k) contribution limit, a wrong tax bracket, or a wrong interest-rate calculation as flatly as it states a correct one, with no visible signal that it's guessing. The [CFPB's own research on chatbots in consumer finance](https://www.consumerfinance.gov/data-research/research-reports/chatbots-in-consumer-finance/chatbots-in-consumer-finance/) found that even chatbots deployed by banks themselves can give inaccurate information, especially as questions get more complex.\n\nTraining cutoffs compound this for money questions specifically, since IRS contribution limits, tax brackets, and standard deductions are adjusted for inflation every year. A chatbot trained before this year's adjustments were announced may confidently cite last year's numbers as current.\n\nMost importantly, a general-purpose chatbot has no fiduciary duty to you. The [SEC, NASAA, and FINRA jointly warned investors](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-alerts/artificial-intelligence-fraud) that AI-generated investment information can rely on data that's inaccurate or misleading, and that unlike a registered investment adviser, a chatbot doesn't disclose conflicts of interest, can't assess your actual risk tolerance, and isn't subject to any regulatory oversight for the advice it gives you." },
       { heading: "The privacy problem: what not to paste into a chatbot", body: "Never paste your Social Security number, full account numbers, or a screenshot of a real financial statement into a general-purpose chatbot. Many of these platforms retain conversations and may use them to improve future models unless you specifically opt out in your account settings, and a data breach at the chat provider becomes your problem, not just theirs. The FTC's guidance on [protecting your personal information from hackers and scammers](https://consumer.ftc.gov/articles/protect-your-personal-information-hackers-and-scammers) applies just as much to what you type into a chatbot as to what you click in an email.\n\nDescribe your situation with rounded numbers and no identifying account details instead. 'I have about $40,000 in a 401(k) and $8,000 in credit card debt at roughly 22% APR' gives a chatbot everything it needs to reason about your situation without exposing anything a scammer could use." },
       { heading: "How to prompt an AI chatbot well for money questions", body: "Layer in context progressively instead of dumping your entire financial picture into one message. Start with the general question, see what assumptions the chatbot makes in its first answer, then correct or add detail in a follow-up. This lets you catch a wrong assumption, like an incorrect tax filing status or an outdated contribution limit, before it gets baked into a longer answer you might not fully read.\n\nAsk the chatbot to show its math, not just its conclusion. If it recommends a debt payoff order or estimates your tax bill, ask it to lay out the formula and the numbers it used, so you have something concrete to check. Then ask directly what could make the answer wrong, or what it isn't accounting for, rather than accepting the first confident-sounding response." },

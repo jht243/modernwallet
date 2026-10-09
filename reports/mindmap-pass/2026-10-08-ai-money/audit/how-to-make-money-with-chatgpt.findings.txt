@@ -1,0 +1,192 @@
+## Run-level checks (all 4 pages)
+
+**Depth (measured from source):** introText + section bodies + FAQ answers, counted with `wc -w`.
+- how-to-make-money-with-ai: 1,887
+- how-to-make-money-with-claude: 1,753
+- how-to-make-money-with-chatgpt: 1,460
+- ai-automation-agency: 1,526
+- Result: 4 passing, 0 failing, median 1,640 against the 1,200 floor. The median is not within 10% of the floor.
+
+**Checks that passed:**
+- **Load receipt:** `reports/standards-ledger.jsonl` has a mindmap-pass phase-3 `via:load-script` entry at 2026-10-09T14:45. Its hashes (7a486edc / ed445917 / 31d70e56) match `shasum` of the current three files.
+- **Links:** every external URL is in `allowed-urls.all.txt`, every internal link is on the allowed list, no page links to itself, and nothing links to `/youtube-money-calculator/`.
+- **Title Case:** every h1 and section heading passes.
+- **Byline in body:** none.
+- **Em-dash, "honest", exclamation marks, raw HTML:** none. (The `---` strings are table separators.)
+- **Self-serving disclaimer grep:** one hit, Claude `sections[0].body` "provided you do not resell the software". That describes Anthropic's terms, so it is not a neutrality claim. That sentence is still fixed below for a separate reason.
+- **"Secondary — unverified" facts:** none are stated as fact on any page.
+- **Title and meta length:** every title is 60 characters or less and every metaDescription is 160 or less, both as drafted and after the fixes below.
+
+**R1 — Row records missing (GATE Register / GATE Medium-and-row-records / GATE Anchor). NOT FIXABLE IN PLACE; fix it in the chart row, not the draft.**
+- Neither the chart (`reports/mindmap-pass/2026-10-08-ai-money.md`) nor the 4 prompts carry `register:` or an `anchor-exempt:` note.
+- `page type:` and medium (text → text) are present.
+- Fix: add `register: operator` and an `anchor-exempt: no client specifics in _experience.md` note to all 4 rows.
+
+**R2 — `disclaimer-missing` (YMYL).** `src/pages/guides/[slug].astro` renders no disclaimer for guides, and no page has one. Each page gets a per-page fix-in-place below that appends the disclaimer to its final section. Existing guides in `guides.ts` put it in body copy the same way.
+
+**R3 — Unlinked company first mentions with no allowed URL. NOT FIXABLE IN PLACE.**
+- Names: Toloka, Labelbox, Stripe, PayPal (as a payout rail), Payoneer, Tipalti, TikTok, Instagram, YouGov, Business Insider (the AOL link covers its story).
+- The only entity this repo auto-links is Robinhood (`src/lib/richtext.ts`).
+- You need to decide: add these to the registry, or accept them as names that appear next to an already-linked platform.
+
+**R4 — advisory:** each page's `meta.guards` flag says the claim check "emptied" 5 sections. None of those sections is empty, so the guard output is wrong and the claim-check reporting in `scripts/lib/content_gen.py` should be looked at.
+
+**Fix-in-place format:** each fix lists the field, the exact FROM text, the exact TO text, and the reason. Every FROM string was checked with a script and occurs exactly once in its field. `\n` means a JSON newline. `""` means delete.
+
+---
+
+
+ORCHESTRATOR RULINGS: unlinkable organisations (R3) are accepted unlinked; row records are fixed in the chart, not the draft.
+
+## PAGE 3: how-to-make-money-with-chatgpt — VERDICT: FAIL — 1,460 words
+
+**1. title**
+- FROM: How to Make Money With ChatGPT: What Actually Pays
+- TO: How to Make Money With ChatGPT in 2026
+- WHY: Headline tell: colon two-clause formula plus "Actually".
+
+**2. h1**
+- FROM: How to Make Money With ChatGPT: Practical Ways That Work
+- TO: How to Make Money With ChatGPT
+- WHY: Colon two-clause formula.
+
+**3. sections[0].heading**
+- FROM: Ways to Make Money With ChatGPT That Actually Pay
+- TO: Ways to Make Money With ChatGPT That Pay
+- WHY: "Actually" headline tell.
+
+**4. introText**
+- FROM: You cannot make money from ChatGPT directly because OpenAI does not pay users to prompt its model. To earn income, you must use ChatGPT to deliver a paid service faster or build a software product that paying customers buy.
+- TO: You can make money with ChatGPT by using it to deliver a paid service faster or to build a product people buy, but [OpenAI](https://openai.com/policies/terms-of-use/) does not pay you for using it. At ModernWallet, we show the math, which here means dividing each ChatGPT plan's price by your hourly rate to see how much time it has to save you.
+- WHY: Sentence 1 led with "cannot" instead of the answer. The tee-up belongs in sentence 2. OpenAI was unlinked on first mention.
+
+**5. introText**
+- FROM: As of October 2026, Pew Research Center data shows that 44% of U.S. adults have used [ChatGPT](https://learn.chatgpt.com/docs/pricing), yet turning the tool into revenue requires independent client demand or product sales.
+- TO: A [Pew Research Center](https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/) survey from February 2026 found that 44% of U.S. adults have used ChatGPT.
+- WHY:
+  - The survey ran in February 2026, so "As of October 2026" misdates it.
+  - Pew was unlinked.
+  - The pricing link was a duplicate of the one in sections[4].
+  - "The tool" is a coy abstraction, and the clause restated sentence 1.
+
+**6. introText**
+- FROM: `\n\nAt ModernWallet, we look at the verified unit economics and platform rules behind side hustles rather than untested passive-income claims. In this guide, we break down freelance demand data, practical workflow prompts, software product boundaries, and relevant regulatory enforcement.`
+- TO: ""
+- WHY:
+  - "In this guide" is banned meta-narration.
+  - The first-person claim is not licensed by _experience.
+  - It is a second "we", and the tee-up was in the wrong position.
+
+**7. sections[0].body**
+- FROM: According to the Upwork Research Institute's [Future Workforce Index 2026](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates)
+- TO: According to the [Upwork Research Institute's Future Workforce Index 2026](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates)
+- WHY: Upwork was unlinked on first mention.
+
+**8. sections[0].body**
+- FROM: Upwork itself adds that not all AI work is becoming more valuable.
+- TO: Upwork itself adds that "not all AI work is becoming more valuable."
+- WHY: This is a direct quote and needs quotation marks.
+
+**9. sections[0].body**
+- FROM: `Workers who combine domain expertise with model tools see better financial outcomes. ` (includes the trailing space)
+- TO: ""
+- WHY: No concrete noun, and the next sentence restates it with the actual figure.
+
+**10. sections[1].body**
+- FROM: While the [Fiverr Business Trends Index](https://finviz.com/news/360535/businesses-race-to-hire-claude-code-specialists-as-demand-surges-938) recorded notable search spikes for technical skills like n8n automation rising 125% and vibe coding climbing 61% between late 2025 and early 2026, raw search volume does not guarantee client spend.
+- TO: The [Fiverr Business Trends Index](https://finviz.com/news/360535/businesses-race-to-hire-claude-code-specialists-as-demand-surges-938) reported that searches for n8n AI automation rose 125% and searches for vibe coding rose 61% from November 2025 to April 2026, compared with the prior six months. Those are search counts, not what buyers spent.
+- WHY: "Notable" is a banned word, the comparison period was misdescribed, and the 37-word sentence was overloaded.
+
+**11. sections[1].body**
+- FROM: `\n\n A 2025 Bankrate survey conducted by YouGov reported that only 27% of U.S. adults held a side hustle, with a median monthly side income of $200.`
+- TO: `\n\nA 2025 [Bankrate](https://www.bankrate.com/loans/small-business/side-hustles-survey/) survey conducted by YouGov found that 27% of U.S. adults have a side hustle and that the median side hustler earns $200 a month.`
+- WHY: The cited source was unlinked, and there was a stray leading space.
+
+**12. sections[2].body**
+- FROM: These prompt templates are designed to structure work rather than create autonomous earnings.
+- TO: ""
+- WHY: Antithesis cadence, and the sentence restates the previous one.
+
+**13. sections[2].body**
+- FROM: assuming an target hourly rate
+- TO: assuming a target hourly rate
+- WHY: Typo.
+
+**14. sections[3].body**
+- FROM: However, an update on the [OpenAI Community Forum](https://community.openai.com/t/what-is-the-status-with-gpt-store-revenue-share/839172) noted the program was testing with a small group of U.S. builders and was not accepting additional creators, meaning general public monetization through the store remains closed.
+- TO: However, an FAQ quoted on the [OpenAI Community Forum](https://community.openai.com/t/what-is-the-status-with-gpt-store-revenue-share/839172) says OpenAI was testing payouts with "a small group of builders" in the U.S. and was "not currently accepting additional builders." No official source shows a broad payout program, so do not build a GPT expecting payouts.
+- WHY: [S] fact needs attribution, and "remains closed" overclaims current status.
+
+**15. sections[3].body**
+- FROM: Upwork recorded a 178% year-over-year increase in freelancer earnings on completed jobs for AI Integration.
+- TO: Upwork's [In-Demand Skills 2026](https://investors.upwork.com/news-releases/news-release-details/upworks-demand-skills-2026-demand-top-ai-skills-more-doubles-ai) report recorded a 178% year-over-year increase in freelancer earnings on completed AI Integration jobs.
+- WHY: The cited source was unlinked.
+
+**16. sections[3].body**
+- FROM: On Etsy, creativity standards require AI-generated items made from original prompts to belong in the designed-by category, while selling AI prompt bundles is prohibited.
+- TO: Etsy's [Creativity Standards](https://www.etsy.com/legal/creativity/) say AI-generated items made from a seller's own prompts belong in the "designed by" category, that sellers must disclose AI use, and that selling AI prompt bundles is prohibited.
+- WHY: [S] fact needs attribution. Etsy was unlinked. The disclosure rule was missing.
+
+**17. sections[4].body (table header row)**
+- FROM: | Plan Tier | Monthly Price | Best For |
+- TO: | Plan Tier | Monthly Price | Hours It Must Save at $40/Hour |
+- WHY: See fix 18.
+
+**18. sections[4].body (table rows)**
+- FROM:
+```
+| Free | $0 | Not published |\n| Go | $8 | Not published |\n| Plus | $20 | Not published |\n| Pro | From $100 ($100, $200, or $500) | Not published |\n| Business | $20 to $25 per user (min 2 users) | Not published |
+```
+- TO:
+```
+| Free | $0 | None |\n| Go | $8 | 12 minutes |\n| Plus | $20 | 30 minutes |\n| Pro | From $100 ($100, $200, or $500) | 2.5 hours for the $100 tier |\n| Business | $20 per user billed annually or $25 monthly (min 2 users) | 30 to 37.5 minutes per user |
+```
+- WHY: An all-"Not published" column carries no information. The replacement is arithmetic from listed prices, and the Business billing condition is restored.
+
+**19. sections[5].body**
+- FROM: Online promotions promising passive automated wealth using AI tools frequently lead to state or federal enforcement.
+- TO: Federal regulators have sued several sellers that promised passive income from AI-powered online stores.
+- WHY: "Frequently" and "state" are unsupported.
+
+**20. sections[5].body**
+- FROM: Federal actions against companies like Ascend Ecom, FBA Machine, and Automators AI involved allegations of false promises regarding fully automated, passive five-figure monthly e-commerce earnings.
+- TO: The FTC alleged that [Ascend Ecom](https://www.ftc.gov/news-events/news/press-releases/2025/06/ftc-case-leads-order-banning-ascend-ecom-its-owners-business-opportunity-marketing) promised "five-figure monthly income by the second year" and that [FBA Machine](https://www.ftc.gov/news-events/news/press-releases/2025/07/ftc-obtains-permanent-ban-e-commerce-business-opportunity-scheme-operator) made "7-figure business" claims. In an earlier case, it alleged that [Automators AI](https://www.ftc.gov/news-events/news/press-releases/2024/02/ftc-action-leads-ban-owners-automators-ai-e-commerce-money-making-scheme) promised "passive investment income" from AI-powered Amazon and Walmart stores.
+- WHY: The "five-figure" claim belonged only to Ascend Ecom. All three were unlinked on first mention.
+
+**21. sections[5].body**
+- FROM: sellers making earnings representations must provide prospective buyers with written substantiation showing the exact number and percentage of purchasers who achieved those figures. The FTC provides consumer guidance on [money-making opportunity scams](https://consumer.ftc.gov/all-scams/money-making-opportunity-scams), warning workers to avoid schemes that demand upfront fees for guaranteed returns. If you suspect an opportunity scam, file a report at [ReportFraud.ftc.gov](https://consumer.ftc.gov/consumer-alerts/2026/02/how-avoid-side-hustle-scam).
+- TO: sellers making earnings claims must have written substantiation and must give buyers an earnings claim statement showing the number and percentage of buyers who reached those earnings. The FTC's [side hustle scam alert](https://consumer.ftc.gov/consumer-alerts/2026/02/how-avoid-side-hustle-scam) lists unrealistic pay for minimal effort, pressure to accept immediately, and requests for upfront fees as warning signs. If you suspect a scam, report it at ReportFraud.ftc.gov.
+- WHY:
+  - The anchor text "ReportFraud.ftc.gov" linked to a different page, which misleads the reader.
+  - The warning-sign claims were credited to a page whose content is not in the fact list.
+  - Substantiation and the earnings claim statement were conflated.
+
+**22. sections[6].body**
+- FROM: or calculate quarterly vouchers using our [1099 tax calculator]
+- TO: or estimate tax on 1099 income with our [1099 tax calculator]
+- WHY: The link label misdescribes the tool's purpose.
+
+**23. sections[6].body**
+- FROM: against your billed project revenue.
+- TO: against your billed project revenue.\n\nThis is general information, not financial, tax or legal advice.
+- WHY: disclaimer-missing (R2).
+
+**24. faqs[2].answer**
+- FROM: but the company notes outputs may not be unique across different accounts
+- TO: but OpenAI notes that output may not be unique and other users may receive similar output
+- WHY: Coy abstraction ("the company"); the replacement matches the source wording.
+
+**25. faqs[3].answer**
+- FROM: but updates on the OpenAI Community Forum indicate it operated only as a small pilot that is not accepting additional builders.
+- TO: but an FAQ quoted on OpenAI's community forum describes a test with a small group of U.S. builders that was not accepting new builders, and no official source shows a broader payout program.
+- WHY: [S] fact needs attribution, and "operated only as" overclaims.
+
+**Advisory:**
+- Section 1 is prose rather than the specified list. The reader-question gate still passes because the section names the paid uses with evidence.
+- The tax section has no figures; that is acceptable because the fact list has none for this page.
+- The Fiverr link uses the finviz syndication; fiverr.com is the primary source.
+- faqs[5] says "core chatbot features", which is mildly unsupported.
+- The plan table lacks "as of October 2026".
+
+---
+

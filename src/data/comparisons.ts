@@ -30,6 +30,168 @@ export interface ComparisonEntry {
 }
 
 export const COMPARISONS: ComparisonEntry[] = [
+  // ── mindmap-pass 2026-10-09 (ai-money): dataannotation-vs-outlier ──
+  {
+    "updated": "2026-10-09",
+    "slug": "dataannotation-vs-outlier",
+    "title": "DataAnnotation vs Outlier: Pay and Reliability (2026)",
+    "metaDescription": "DataAnnotation vs Outlier compared on pay rates, payout timing, onboarding tests, and account reliability for remote AI training work.",
+    "targetKeyword": "DataAnnotation vs Outlier",
+    "optionA": "DataAnnotation",
+    "optionB": "Outlier",
+    "h1": "DataAnnotation vs Outlier: Which Pays Better and Stays Reliable?",
+    "introText": "[DataAnnotation](https://www.dataannotation.tech/faqs) publishes starting hourly pay rates and pays through [PayPal](https://www.paypal.com/us/cshelp/article/current-form-1099-k-reporting-thresholds-2025-update-help1131) when you request it. [Outlier](https://outlier.ai/faq) publishes no pay range but pays every Tuesday through PayPal, Airtm or ACH bank transfer. DataAnnotation advertises general work starting at $25 to $50+ an hour and coding starting at $40 to $150+, and you get one attempt at its Starter Assessment. Outlier shows each project's rate before you start it, after an onboarding that typically takes 30 to 90 minutes.\n\nNeither company publishes figures you can compare for the same task, so the published numbers cannot say which pays more. Pick DataAnnotation if you want to know a starting rate before you apply, and Outlier if you want a fixed Tuesday payday and a choice of payout methods.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Operator",
+          "a": "Unconfirmed parent entity; uses Persona for identity verification",
+          "b": "Operated by Scale AI; site footer reads © 2026 Smart Ecosystems"
+        },
+        {
+          "dimension": "Published pay",
+          "a": "General starting at $25-$50+ hourly; coding starting at $40-$150+ hourly",
+          "b": "No platform-wide hourly range published; task rates shown before work begins"
+        },
+        {
+          "dimension": "Payout method",
+          "a": "PayPal transfers only",
+          "b": "PayPal, Airtm, or ACH bank transfers"
+        },
+        {
+          "dimension": "Payout timing",
+          "a": "Delivered within a few days after contractor submits a withdrawal request",
+          "b": "Weekly processing on Tuesdays for work completed through Monday midnight UTC"
+        },
+        {
+          "dimension": "Onboarding and assessment",
+          "a": "Starter assessment taking about 1 hour; specialized tests taking 1 to 2 hours",
+          "b": "Screening and onboarding process typically taking 30 to 90 minutes"
+        },
+        {
+          "dimension": "Minimum education",
+          "a": "Bachelor's degree or equivalent real-world experience",
+          "b": "At least an associate degree"
+        },
+        {
+          "dimension": "Assessment retakes",
+          "a": "Single attempt only with no retakes or second chances permitted",
+          "b": "Retake policy not published; project-specific onboarding follows screening"
+        },
+        {
+          "dimension": "Contractor status statement",
+          "a": "FAQ calls workers contractors; no signup fees",
+          "b": "Independent contractor or freelancer role; no visa sponsorship provided"
+        },
+        {
+          "dimension": "Trustpilot score",
+          "a": "3.9 out of 5 based on 1,973 reviews as of October 9, 2026",
+          "b": "4.1 out of 5 based on 5,483 reviews as of October 9, 2026"
+        },
+        {
+          "dimension": "Pending legal matters",
+          "a": "No federal docket naming DataAnnotation found (CourtListener, Oct 9, 2026)",
+          "b": "$12.5M McKinney misclassification settlement awaiting Oct 30, 2026 final approval; Scale AI denies the allegations"
+        },
+        {
+          "dimension": "Who it suits",
+          "a": "Contractors seeking upfront advertised rate baselines and on-demand PayPal cashouts",
+          "b": "Contractors wanting multiple payout options and automatic weekly direct deposits"
+        }
+      ]
+    },
+    "verdict": "Choose DataAnnotation if you want an advertised starting rate (general work from $25 an hour) before you apply, can accept a single attempt at the Starter Assessment, and are happy to request PayPal payouts yourself. Choose Outlier if you hold at least an associate degree and want pay sent every Tuesday by PayPal, Airtm or ACH bank transfer. Neither suits someone who needs guaranteed hours. Both treat workers as contractors, so neither offers employee benefits. Our verdict would change if DataAnnotation introduced automatic bank deposits or retake policies, or if Outlier published a platform-wide hourly pay range.",
+    "sections": [
+      {
+        "heading": "DataAnnotation vs Outlier at a Glance",
+        "content": "DataAnnotation publishes explicit starting hourly pay figures on its website, whereas Outlier presents individual compensation amounts only after a worker views an assigned project. Both websites contract remote contributors to generate text prompts, rate chatbot responses, and evaluate model outputs. DataAnnotation handles contractor payouts exclusively through PayPal once a worker requests a balance withdrawal. Outlier automates worker distributions every Tuesday using direct bank deposit, PayPal, or Airtm.\n\nDataAnnotation requires applicants to complete a core Starter Assessment that takes about an hour, but it strictly prohibits retakes if an applicant does not pass. Outlier requires an associate degree, a resume, a mobile phone number, and a LinkedIn profile, guiding applicants through an initial onboarding process lasting 30 to 90 minutes. On [Trustpilot](https://www.trustpilot.com/review/outlier.ai) as of October 9, 2026, Outlier scored 4.1 out of 5 from 5,483 reviews and DataAnnotation scored 3.9 from 1,973. Reviews of both list stretches with no available work among the recurring complaints.\n\nIf you want a posted starting rate before you take a test, DataAnnotation gives you one. If you want a fixed weekly payday and a choice of PayPal, Airtm or ACH, Outlier gives you that. Neither FAQ prohibits working on other platforms, so many workers apply to both; read each contractor agreement before you sign it."
+      },
+      {
+        "heading": "Pay Transparency and Hourly Earning Potential",
+        "content": "DataAnnotation provides direct pay numbers within the FAQ section of its website, though different answers on the FAQ give different figures. On its formal pay section, the DataAnnotation FAQ states that general projects start at $25 to $50 or more per hour, while multilingual assignments start at $20 or more per hour. Coding projects start at $40 to $150 or more per hour, and specialized STEM or professional tracks in law, finance, or medicine list starting rates of $40 to $125 or more per hour. However, separate answers on that same FAQ page state that general work starts at $25 to $30 or more per hour, while coding tasks range from $50 to $100 per hour. The company notes it has distributed more than $20 million to contractors since 2020.\n\nOutlier does not publish general platform-wide hourly compensation rates on its public pages. According to the Outlier FAQ, rates vary based on personal expertise, project complexity, and geographical location, with specific task rates presented to contributors before each project starts. Outlier contributors must evaluate compensation on a project-by-project basis rather than from an advertised starting rate.\n\nDataAnnotation lets prospective applicants calculate baseline earnings before taking their entrance tests, assuming project volume remains available. At Outlier, you see a project's rate after onboarding, before you start that project. If you want to calculate how irregular hourly income impacts your quarterly tax obligations, test your estimated numbers with our [1099 tax calculator](/self-employment-tax/1099-tax-calculator/)."
+      },
+      {
+        "heading": "Assessment and Onboarding Requirements",
+        "content": "The application process at DataAnnotation relies on a single-attempt entry exam. Applicants complete a core Starter Assessment that takes approximately one hour, with specialized testing modules taking between one and two hours. DataAnnotation requires a bachelor's degree or equivalent real-world experience, English fluency, and identity verification using government photo credentials and a selfie managed by Persona.\n\nOutlier structures its entrance process around credentials, resume review, and multi-stage screening. The Outlier FAQ specifies that applicants need at least an associate degree, a current resume, an active LinkedIn profile, a mobile phone from your country of residence, and a valid government identification document. Core onboarding generally takes 30 to 90 minutes, covering initial identity checks and core skill evaluations before contributors advance to project-specific training modules.\n\nNeither platform states on its FAQ whether contributors receive pay for the time spent completing introductory tests or qualification screenings. By contrast, [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/33614619791767-Earning-on-Handshake-AI) says some of its projects pay for onboarding and others do not. Trustpilot reviewers of both DataAnnotation and Outlier describe unpaid tests, so budget that time as unpaid unless a project says otherwise."
+      },
+      {
+        "heading": "Payout Methods and Schedules",
+        "content": "Outlier operates on a strict, automated weekly schedule, processing payments every Tuesday for work logged between the prior Tuesday and Monday at midnight UTC. Outlier supports three payout rails: PayPal, Airtm, and direct ACH bank transfers.\n\nDataAnnotation requires manual withdrawal requests and restricts disbursements to a single vendor. DataAnnotation sends all payments through PayPal, delivering funds within a few days after a contractor initiates a withdrawal.\n\nFor freelancers managing inconsistent cash inflows across platforms, our [irregular income budgeting guide](/guides/how-to-budget-with-irregular-income/) provides structured cash-flow allocation strategies."
+      },
+      {
+        "heading": "Platform Reliability and Complaint Patterns",
+        "content": "Both platforms exhibit common complaint patterns related to task availability and sudden loss of project access. On Trustpilot, the [DataAnnotation review profile](https://www.trustpilot.com/review/dataannotation.tech) held a TrustScore of 3.9 out of 5 across 1,973 reviews as of October 9, 2026, with 21 percent of ratings at one star. Negative reviews focus on extended stretches with zero dashboard assignments, unpaid qualification tests, account balance holds during account review, repetitive identity verification prompts, and absent customer support. DataAnnotation notes in its FAQ that it cannot provide direct responses to every applicant and that subpar work can result in project removals.\n\nOutlier held a TrustScore of 4.1 out of 5 across 5,483 reviews on its Trustpilot profile as of October 9, 2026, with 19 percent of ratings at one star. Recurring contributor complaints highlight abrupt account deactivations, sudden removal from active projects, unpaid test requirements, onboarding technical glitches, slow customer service, and delayed disbursement of pending earnings following account closures. Positive Outlier reviews praise on-time pay and flexibility, while positive DataAnnotation reviews praise flexibility and ease of use.\n\nOutlier's operator, Scale AI, has cut contractors before. In July 2025 it laid off about 200 full-time staff and ended contracts with about 500 contractors, [Outlook Business reported](https://www.outlookbusiness.com/deeptech/artificial-intelligence/scale-ai-lays-off-14-of-staff-amid-revamp-following-metas-143bn-investment). In March 2024, [Rest of World reported](https://restofworld.org/2024/scale-ai-remotasks-banned-workers/) that Scale AI shut down [Remotasks](https://www.remotasks.com/) entirely in Kenya, Nigeria and Pakistan, citing \"enhanced security protocols.\""
+      },
+      {
+        "heading": "Legal Background and Corporate Ownership",
+        "content": "The Outlier FAQ says Outlier \"is a platform operated by Scale AI,\" and its footer reads \"© 2026 Smart Ecosystems.\" In June 2025, [Reuters reported](https://finance.yahoo.com/news/meta-invests-scale-ai-appoints-110216620.html) that Meta took a 49 percent stake in Scale AI for about $14.3 billion, valuing Scale AI at around $29 billion. Scale AI CEO Alexandr Wang joined Meta, while Jason Droege assumed leadership as interim CEO.\n\nScale AI has faced substantial contractor legal challenges in California courts. In December 2024, workers filed McKinney v. Scale AI in San Francisco Superior Court alleging worker misclassification. A $12.5 million settlement was proposed to resolve the McKinney litigation and related California claims involving Outlier and Remotasks contractors, covering California-resident contributors between December 10, 2020, and February 28, 2026, according to [ClaimDepot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement). The claim and exclusion deadline was September 3, 2026, with a final approval hearing scheduled for October 30, 2026. The defendants deny the allegations. Six Outlier workers also filed a federal class action, [Schuster v. Scale AI, Inc.](https://www.courtlistener.com/docket/69556383/schuster-v-scale-ai-inc/), in January 2025, alleging psychological harm from writing disturbing prompts. Separately, [TechCrunch reported](https://techcrunch.com/2025/05/09/the-department-of-labor-just-dropped-its-investigation-into-scale-ai) in May 2025 that the U.S. Department of Labor had dropped its Fair Labor Standards Act investigation into Scale AI.\n\nDataAnnotation's FAQ names no parent corporation, identifying only Persona as an external identity authentication vendor. [Wikipedia](https://en.wikipedia.org/wiki/Surge_AI) says The Verge and New York Magazine linked DataAnnotation to Surge AI in 2023, but DataAnnotation's site does not confirm it. In May 2025, [Clarkson Law Firm](https://clarksonlawfirm.com/clarkson-represents-surge-ai-workers-in-labor-law-class-action) filed a misclassification class action against Surge AI in San Francisco Superior Court; the firm's page does not name DataAnnotation. Searches of federal CourtListener records reveal no federal dockets naming DataAnnotation directly."
+      },
+      {
+        "heading": "Where Mercor Fits as an Alternative Option",
+        "content": "[Mercor](https://talent.docs.mercor.com/how-to/payments) is a third option, aimed at credentialed experts rather than generalists. Mercor operates as a selective talent network that pairs AI research labs with specialized domain authorities, including physicians, attorneys, and scientists. In October 2025, [TechCrunch reported](https://techcrunch.com/2025/10/27/mercor-quintuples-valuation-to-10b-with-350m-series-c/) that Mercor raised a $350 million Series C at a $10 billion valuation. TechCrunch also reported that Mercor pays more than $1.5 million a day to more than 30,000 experts averaging over $85 an hour.\n\nMercor issues payments every Wednesday around 12:00 PM PST for the prior week's work, using Stripe Connect where supported and Wise for other regions. All Mercor contracts are in U.S. dollars, and payouts go only to a bank account in your own legal name. Stripe holds your first payout for 7 days. To learn more about its hiring standards and enterprise projects, read our [Mercor platform review](/guides/is-mercor-legit/).\n\nScale AI filed a federal trade-secret lawsuit against Mercor and a former employee in September 2025, alleging trade-secret misappropriation. Mercor also faced data-breach class actions in early 2026 following a supply-chain cyberattack. While Mercor connects AI labs with domain experts such as scientists, doctors, and lawyers, DataAnnotation and Outlier accept generalists: DataAnnotation asks for a bachelor's degree or equivalent experience, and Outlier for at least an associate degree."
+      },
+      {
+        "heading": "Contractor Taxes and Self-Employment Obligations",
+        "content": "DataAnnotation calls its workers contractors, and Outlier says you work \"as an independent contractor/freelancer, not as an employee.\" Neither FAQ describes withholding any tax, so plan to pay it yourself. In the United States, you owe self-employment tax once net self-employment earnings reach $400, [according to the Internal Revenue Service](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes). The rate is 15.3 percent: 12.4 percent for Social Security and 2.9 percent for Medicare.\n\nContractors must track gross earnings independently to prepare for quarterly estimated tax deadlines. PayPal says it issues a Form 1099-K for more than $20,000 and 200 transactions a year. It uses a $600 threshold in Vermont, Massachusetts, Virginia and Maryland, and more than $1,000 with 4 or more transactions in Illinois.\n\nIf you expect to owe at least $1,000 for the year, [the IRS generally expects estimated payments](https://www.irs.gov/faqs/estimated-tax) by April 15, June 15, September 15 and January 15. Contractors can deduct ordinary and necessary business expenses, such as home office workspace allocations and equipment depreciation, to reduce net taxable profit. Review our complete guide to [DataAnnotation contractor taxes](/self-employment-tax/dataannotation-taxes/) to learn how to structure your quarterly filings, track allowable write-offs, and calculate your self-employment obligations."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Outlier any good?",
+        "answer": "Outlier held a 4.1 out of 5 TrustScore on Trustpilot from 5,483 reviews as of October 2026. Reviewers praise on-time pay and flexibility, and the most common complaints are deactivation or project removal with little explanation and unpredictable task volume."
+      },
+      {
+        "question": "Does Outlier really pay you?",
+        "answer": "Yes, Outlier processes payments every Tuesday for work completed through the previous Monday at midnight UTC. Contributor payments are disbursed via PayPal, Airtm, or direct ACH bank transfer."
+      },
+      {
+        "question": "Which pays more, DataAnnotation or Outlier?",
+        "answer": "DataAnnotation publishes starting hourly pay ranges on its website, listing general work starting at $25 to $50 or more per hour and coding tasks starting at $40 to $150 or more per hour. Outlier publishes no range and shows each project's rate before you start it, so the published figures cannot tell you which pays more for the same work. DataAnnotation's figures are advertised starting rates, not guaranteed earnings."
+      },
+      {
+        "question": "Can you work for DataAnnotation and Outlier at the same time?",
+        "answer": "Neither platform's public FAQ explicitly bans contractors from working on other data platforms. Both treat workers as contractors, so read the contractor agreement each one gives you before you sign it."
+      },
+      {
+        "question": "What are some other websites similar to DataAnnotation?",
+        "answer": "Similar AI training platforms include Outlier, Mercor, [Mindrift](https://mindrift.ai/) and [Prolific](https://www.prolific.com/ai-taskers). You can explore a broader comparison of hiring models, credential requirements, and hourly pay structures in our [DataAnnotation alternatives guide](/roundup/dataannotation-alternatives/)."
+      },
+      {
+        "question": "Is Outlier AI job legit or not?",
+        "answer": "Outlier is a legitimate AI training platform operated by Scale AI, an artificial intelligence data company valued at roughly $29 billion following a 49 percent investment from Meta. Trustpilot reviewers report unpredictable task volume. California misclassification suits led to a proposed $12.5 million settlement awaiting final approval on October 30, 2026, and Scale AI denies the allegations."
+      }
+    ],
+    "sources": [
+      {
+        "label": "DataAnnotation FAQ",
+        "url": "https://www.dataannotation.tech/faqs"
+      },
+      {
+        "label": "Outlier FAQ",
+        "url": "https://outlier.ai/faq"
+      },
+      {
+        "label": "Trustpilot DataAnnotation",
+        "url": "https://www.trustpilot.com/review/dataannotation.tech"
+      },
+      {
+        "label": "Trustpilot Outlier",
+        "url": "https://www.trustpilot.com/review/outlier.ai"
+      },
+      {
+        "label": "IRS Self-Employment Tax",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+      }
+    ],
+    "relatedComparisons": [],
+    "calculatorLinks": [
+      {
+        "label": "Self-Employment Tax Calculator",
+        "href": "/self-employment-tax/"
+      }
+    ]
+  },
+  // ── end dataannotation-vs-outlier ──
   // ── mindmap-pass 2026-10-08 ──
   {
     "updated": "2026-10-08",

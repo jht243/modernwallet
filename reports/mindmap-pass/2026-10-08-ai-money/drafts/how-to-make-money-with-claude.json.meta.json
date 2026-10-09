@@ -1,0 +1,456 @@
+{
+ "slug": "how-to-make-money-with-claude",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1938,
+ "floor": 1200,
+ "input_tokens": 31868,
+ "output_tokens": 4340,
+ "thinking_tokens": null,
+ "cached_tokens": 17751,
+ "est_cost_usd": 0.0282,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1937,
+  "numbers_not_in_facts": [
+   "2.5",
+   "40",
+   "554"
+  ],
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    16,
+    1,
+    1
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "Freelance professional services represent the largest documented channel.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not rank professional services as the largest channel."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Clients pay for completed projects such as contract reviews, technical documentation, and strategic outlines that domain specialists refine.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention contract reviews, technical documentation, or strategic outlines."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Software development and automation scripts provide a second established avenue.",
+     "replacement": "Software development and automations provide another avenue.",
+     "type": "unsupported",
+     "why": "SOURCE does not rank software development as a second avenue."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Buyers seek contractors who use the command-line tool to build custom utilities, fix bugs, and connect workplace applications.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Claude Code as a command-line tool or list these buyer tasks."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "When everyone can produce basic prose with a prompt, commodity deliverables lose pricing power.",
+     "replacement": "Upwork reads this as a sign that lower-complexity AI execution may become less lucrative as it scales.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that commodity deliverables lose pricing power."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Claude Code is a command-line interface tool included in paid Anthropic subscriptions that lets developers build applications, automate terminal tasks, and refactor codebases.",
+     "replacement": "Claude Code is included in paid Anthropic subscriptions, allowing users to build small tools and automations.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Claude Code as a command-line tool for terminal tasks or refactoring."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Those search spikes measure employer interest in hiring specialized talent rather than direct freelancer revenue.",
+     "replacement": "These figures measure growth in searches on Fiverr rather than spending or freelancer earnings.",
+     "type": "unsupported",
+     "why": "SOURCE states figures measure searches on Fiverr, not spending or earnings."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Violating this rule can result in immediate contract cancellation and withheld earnings.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that rule violations cause immediate contract cancellation and withheld earnings."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Occasional research, learning prompts",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state best-fit audiences or use cases for the Free plan."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Freelance writers, solopreneurs, coders",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state best-fit audiences for the Pro plan."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "High-volume developers, active consultants",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state best-fit audiences for the Max 5x plan."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Heavy commercial agencies, power users",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state best-fit audiences for the Max 20x plan."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Multi-member agencies needing central billing",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state best-fit audiences or central billing for Team plans."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Anthropic details that its [Max plans](https://support.claude.com/en/articles/11049741-what-is-the-max-plan) scale usage allowances above regular Pro limits for power users.",
+     "replacement": "Anthropic support documentation notes that [Max plans](https://support.claude.com/en/articles/11049741-what-is-the-max-plan) include Max 5x at $100 per month and Max 20x at $200 per month.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Max plans scale usage allowances for power users."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Both operations claimed proprietary machine learning systems could run hands-free online stores.",
+     "replacement": "Both operations marketed AI-powered online storefronts.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that either operation claimed proprietary machine learning systems."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Access to the command-line interface tool requires a paid subscription, starting with Claude Pro at $20 per month or $17 per month billed annually.",
+     "replacement": "Access to Claude Code requires a paid subscription, starting with Claude Pro at $20 per month or $17 per month billed annually.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Claude Code as a command-line interface tool."
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we evaluate AI tools through real operational costs and verifiable earnings data. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not support evaluating AI tools or this first-person claim."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "If you use a single Claude account for both personal hobbies and business tasks, you can deduct only the business-use portion.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state rules on deducting a business-use portion of software subscriptions."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2051
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-09T10:41:13-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-08-ai-money/audit/how-to-make-money-with-claude.findings.txt",
+    "applied": [
+     {
+      "id": "title",
+      "quote": "How to Make Money With Claude: Real Paths and Costs",
+      "replacement": "How to Make Money With Claude in 2026",
+      "type": "Colon two-clause headline tell",
+      "why": "Remove colon two-clause headline format."
+     },
+     {
+      "id": "introText",
+      "quote": "People make money with Claude by selling client work that Claude speeds up, not by running an autonomous software program that generates cash on its own.",
+      "replacement": "People make money with Claude by selling client work that Claude helps them finish faster. At ModernWallet, we show the math, which here means working out how many billable hours a Claude plan has to save before it pays for itself.",
+      "type": "X not Y antithesis and missing tee-up",
+      "why": "Remove antithesis and add site editorial tee-up."
+     },
+     {
+      "id": "introText",
+      "quote": "Anthropic assigns you its right and interest in outputs under its consumer terms",
+      "replacement": "[Anthropic](https://www.anthropic.com/legal/consumer-terms) assigns you its right, title and interest, if any, in outputs under its consumer terms",
+      "type": "Unlinked first mention and exact terms wording",
+      "why": "Link Anthropic and match source terms wording."
+     },
+     {
+      "id": "introText",
+      "quote": "Freelancers use the model to draft client documents, analyze datasets, and write code faster.",
+      "replacement": "Freelancers use Claude to draft client documents, analyze data, and write code.",
+      "type": "Coy abstraction",
+      "why": "Replace \"the model\" with Claude and simplify."
+     },
+     {
+      "id": "introText",
+      "quote": "A paid subscription is an overhead expense that requires a concrete return. According to the July 2026 Upwork Future Workforce Index,",
+      "replacement": "According to the July 2026 [Upwork Future Workforce Index](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates),",
+      "type": "Placeholder nouns and unlinked first mention",
+      "why": "Remove filler sentence and link Upwork on first mention."
+     },
+     {
+      "id": "introText",
+      "quote": "Making that extra income requires domain judgment, billable clients, and an understanding of the software's true operational costs.",
+      "replacement": "Upwork itself adds that \"not all AI work is becoming more valuable.\"",
+      "type": "Coy abstraction, filler, and unsupported claim",
+      "why": "Replace unsourced claim with Upwork report nuance."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "People earn income with Claude by using the assistant to accelerate deliverables they sell to paying clients.",
+      "replacement": "Yes, people make money with Claude, and the three routes with evidence behind them are freelance services, software built with Claude Code, and automations for small businesses.",
+      "type": "Restated intro and coy abstraction",
+      "why": "Answer reader question directly and remove coy abstraction."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Anthropic's [Consumer Terms](https://www.anthropic.com/legal/consumer-terms) state that subject to compliance with the terms, Anthropic assigns to you all of its right, title, and interest in outputs.",
+      "replacement": "Claude Code is included on every paid Claude plan but not on Free.",
+      "type": "Duplicate link and missing row answer fact",
+      "why": "Remove duplicate link and add Claude Code availability."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "provided you do not resell the software or build a competing service.",
+      "replacement": "provided you do not resell Claude or build a service that competes with it.",
+      "type": "Coy abstraction",
+      "why": "Replace \"the software\" with Claude."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "On [Upwork](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates), AI-augmented professional services grew 72% in volume with earnings up 22% year over year.",
+      "replacement": "For freelance services, Upwork reports that AI-augmented professional services grew 72% in volume, with earnings up 22%.",
+      "type": "Duplicate link and unsupported year over year",
+      "why": "Remove duplicate link and unsourced year-over-year claim."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Software development and automations provide another avenue. On [Fiverr](https://finviz.com/news/360535/businesses-race-to-hire-claude-code-specialists-as-demand-surges-938), searches for Claude Code specialists rose 938% between November 2025 and April 2026 compared to the prior six months.",
+      "replacement": "For software and automations, [Fiverr](https://www.fiverr.com/news/business-trends-index-ai-2026) reported that searches for Claude Code specialists rose 938% from November 2025 to April 2026 compared with the prior six months.",
+      "type": "Unattributed snippet fact and secondary link",
+      "why": "Attribute search stat to Fiverr and use primary URL."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Freelancers using Claude see significant variation in earnings depending on the complexity of their work.",
+      "replacement": "Upwork's data shows that AI freelancing pays more for complex work than for simple work.",
+      "type": "Banned word and unsupported specific claim",
+      "why": "Remove \"significant\" and attribute trend to Upwork."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "To protect software products or scripts built with Claude Code, you must contribute substantial human expression, custom architectural logic, and original code.",
+      "replacement": "The Copyright Office says parts you write, edit or arrange yourself can be protected, decided case by case.",
+      "type": "Overclaimed necessity",
+      "why": "Replace \"must\" with Copyright Office case-by-case standard."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "When selling software directly to business clients, protect your deliverables through written client contracts and service agreements rather than relying solely on automated code generation.",
+      "replacement": "When you sell software to a business client, set ownership and use terms in a written contract, because copyright may not cover the AI-generated parts.",
+      "type": "Poor phrasing and legal precision",
+      "why": "Clarify reason for client contract protections."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Many remote workers pursue AI data evaluation to earn hourly income, but some platforms strictly forbid external assistants. The Handshake AI Fellowship hires",
+      "replacement": "Some AI-training work pays by the hour but bans using Claude on the job. The [Handshake](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) AI Fellowship hires",
+      "type": "Unsupported quantifier and unlinked first mention",
+      "why": "Remove unsupported \"many\" and link Handshake on first mention."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": ", as documented in their [fellowship support guide](https://support.joinhandshake.com/hc/en-us/articles/32264709473303).",
+      "replacement": ".",
+      "type": "Moved link",
+      "why": "Link moved to earlier mention of Handshake."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "that contractors on Handshake AI projects experienced suspended accounts and unpaid invoices over alleged rule violations without an appeal process.",
+      "replacement": "that contractors on OpenAI projects said Handshake AI suspended accounts and withheld pay over alleged rule violations, with \"no appeal process.\"",
+      "type": "Allegations stated as fact",
+      "why": "Attribute contractor claims properly from source report."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "If you want to earn money evaluating machine learning models through approved workflows, review our guide to verified [AI training jobs](/guides/ai-training-jobs/) instead of risking account penalties by feeding client prompts into personal assistants.",
+      "replacement": "Our guide to [AI training jobs](/guides/ai-training-jobs/) covers pay and rules on the main platforms, so read each platform's AI-tool policy before you apply.",
+      "type": "Unsupported claim and poor phrasing",
+      "why": "Remove unsupported \"verified\" and simplify sentence."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "| Plan | Price | Claude Code Included | Best Fit |",
+      "replacement": "| Plan | Price | Claude Code Included | Hours It Must Save at $40/Hour |",
+      "type": "Uninformative column header",
+      "why": "Replace unsourced fit column with break-even hours calculation."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Anthropic support documentation notes that [Max plans](https://support.claude.com/en/articles/11049741-what-is-the-max-plan) include Max 5x at $100 per month and Max 20x at $200 per month.",
+      "replacement": "Anthropic's pricing page lists Max \"from $100\" a month, and its [Max plan help article](https://support.claude.com/en/articles/11049741-what-is-the-max-plan) gives the $100 Max 5x and $200 Max 20x prices for web subscriptions.",
+      "type": "Table redundancy and missing snippet condition",
+      "why": "Include official pricing page citation and web subscription condition."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "the software pays for itself",
+      "replacement": "Claude Pro pays for itself",
+      "type": "Coy abstraction",
+      "why": "Name the specific subscription tier."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "the Max plan breaks even",
+      "replacement": "Max 5x breaks even",
+      "type": "Vague plan reference",
+      "why": "Name the specific plan tier."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Federal regulators actively prosecute companies marketing deceptive AI business schemes that promise automated riches.",
+      "replacement": "Federal regulators have sued companies that sold AI business schemes with promises of automated income.",
+      "type": "Legal inaccuracies",
+      "why": "Civil regulatory enforcement is suing, not prosecuting."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "charged multiple operations for falsely claiming AI software could generate",
+      "replacement": "charged multiple operations over allegedly false claims that AI software could generate",
+      "type": "Allegations stated as fact",
+      "why": "Properly frame FTC civil allegations."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Ascend Ecom faced a $25 million judgment and a ban on selling business opportunities after the FTC alleged it deceived consumers with false promises of five-figure passive monthly storefront income.",
+      "replacement": "[Ascend Ecom](https://www.ftc.gov/news-events/news/press-releases/2025/06/ftc-case-leads-order-banning-ascend-ecom-its-owners-business-opportunity-marketing) agreed to a proposed order with a permanent ban on selling business opportunities and a $25 million judgment, partially suspended, after the FTC alleged it promised consumers \"five-figure monthly income by the second year.\"",
+      "type": "Proposed order stated as final and unlinked mention",
+      "why": "Clarify order is proposed, link first mention, and quote exact claim."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "The FTC also took enforcement actions against [Ecommerce Empire Builders](https://www.ftc.gov/news-events/news/press-releases/2025/05/ftc-action-ends-ecommerce-empire-builders-online-business-opportunity-scam), which resulted in a $9.7 million judgment, and [FBA Machine](https://www.ftc.gov/news-events/news/press-releases/2025/07/ftc-obtains-permanent-ban-e-commerce-business-opportunity-scheme-operator), which settled for a $15.7 million judgment.",
+      "replacement": "The FTC also sued [Ecommerce Empire Builders](https://www.ftc.gov/news-events/news/press-releases/2025/05/ftc-action-ends-ecommerce-empire-builders-online-business-opportunity-scam), where a court entered a $9,786,124 judgment, partially suspended. [FBA Machine](https://www.ftc.gov/news-events/news/press-releases/2025/07/ftc-obtains-permanent-ban-e-commerce-business-opportunity-scheme-operator) faces a proposed order with a $15.7 million judgment, also partially suspended.",
+      "type": "Truncated number and proposed order stated as final",
+      "why": "Use exact judgment amount and specify FBA Machine order is proposed."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": ", resulting in an $18 million settlement in March 2026.",
+      "replacement": ". A proposed settlement announced in March 2026 includes an $18 million judgment, mostly suspended.",
+      "type": "Proposed settlement stated as final",
+      "why": "Specify settlement is proposed and judgment mostly suspended."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "sellers making earnings claims must maintain written substantiation showing the exact percentage of purchasers who achieved those figures.",
+      "replacement": "sellers making earnings claims must have written substantiation and give buyers an earnings claim statement showing the number and percentage of buyers who reached those earnings.",
+      "type": "Conflated substantiation with earnings statement",
+      "why": "Distinguish substantiation requirement from disclosure statement requirements."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Income earned by providing services with Claude counts as self-employment income subject to federal and state taxation.",
+      "replacement": "Money you earn selling work done with Claude is self-employment income.",
+      "type": "Unsupported state tax claim and sentence rhythm",
+      "why": "Remove unsourced state tax reference and vary sentence length."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "to ensure your operating write-offs comply with IRS standards.",
+      "replacement": "to ensure your operating write-offs comply with IRS standards.\n\nThis is general information, not financial, tax or legal advice.",
+      "type": "Missing YMYL disclaimer",
+      "why": "Add mandatory general disclaimer to end of guide."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "The model does not generate passive cash autonomously; users get paid by delivering completed projects to clients.",
+      "replacement": "Claude does not earn money on its own. Users get paid when they deliver finished projects to clients.",
+      "type": "Semicolon stack and coy abstraction",
+      "why": "Replace \"the model\" with Claude and remove semicolon."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "If your workload does not hit standard Pro usage limits or your hourly billing rate is lower, the $20 Pro plan makes more financial sense.",
+      "replacement": "If Max 5x would save you fewer hours than that, the $20 Pro plan costs less and still includes Claude Code.",
+      "type": "Unsupported Pro usage limits",
+      "why": "Remove unsourced Pro usage limits reference."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "However, the U.S. Copyright Office has ruled that purely AI-generated text or art without sufficient human creative control cannot be copyrighted.",
+      "replacement": "However, the U.S. Copyright Office says purely AI-generated material is not copyrightable.",
+      "type": "Overstated guidance",
+      "why": "Replace \"has ruled\" with \"says\" to reflect guidance report."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "You must add human expression and edits to obtain statutory copyright protection.",
+      "replacement": "Parts you write, edit or arrange yourself can be protected, decided case by case.",
+      "type": "Overstated necessity",
+      "why": "Reflect case-by-case standard for copyrightability of human contributions."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[4].body",
+      "quote": "| Free | $0 | No | Not published | | Pro | $20/month ($17/month billed annually) | Yes | Not published | | Max 5x | $100/month | Yes | Not published | | Max 20x | $200/month | Yes | Not published | | Team | $25/seat/month ($20 billed annually) | Yes | Not published |",
+      "finding": "Uninformative Not published column cells",
+      "why": "Replace \"Not published\" with break-even hours arithmetic.",
+      "replacement": "| Free | $0 | No | None | | Pro | $20/month ($17/month billed annually) | Yes | 30 minutes | | Max 5x | $100/month | Yes | 2.5 hours | | Max 20x | $200/month | Yes | 5 hours | | Team | $25/seat/month ($20 billed annually) | Yes | 37.5 minutes per seat |",
+      "reason": "replacement adds ['37.5'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "deleted_final": 0,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1938,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 265.0,
+ "response_id": "PwLJatW0IMiez7IPrYa0wQM",
+ "generated_at": "2026-10-09T10:07:48-0500"
+}

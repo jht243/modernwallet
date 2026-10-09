@@ -1,0 +1,179 @@
+  {
+    slug: "best-invoicing-apps-for-freelancers",
+    updated: "2026-09-05",
+    title: "Best Invoicing Apps for Freelancers in 2026",
+    metaDescription:
+      "The best invoicing apps for freelancers in 2026, compared on price, payment fees, and automatic reminders — with two capable free options.",
+    targetKeyword: "best invoicing app for freelancers",
+    category: "invoicing apps for freelancers",
+    angle: "best",
+    h1: "Best Invoicing Apps for Freelancers",
+    introText:
+      "The best invoicing app is the one that gets you paid soonest, which usually means the one that chases late invoices without you having to. Two of the options here do that for free.\n\nWe compared five tools on price, payment processing fees, automatic reminders, and how quickly a client can actually pay — because the fee you pay to accept a card is often larger than the software subscription.",
+    rankingCriteria:
+      "We scored on four criteria. First, cost of the plan that a solo freelancer can actually use, not a headline entry tier with a five-client cap. Second, payment processing fees, which for most freelancers exceed the subscription: 2.9% on $60,000 of invoices is $1,740 a year, dwarfing any price difference on this list. Third, whether the tool sends automatic late payment reminders, since chasing invoices is the least pleasant part of freelancing and the most valuable thing to automate. Fourth, how fast a client can pay from the invoice itself.\n\nWe did not weight invoice template design. It has no measurable effect on payment speed, and it is the feature vendors market hardest.\n\nPrices below are the regular list prices published on each vendor's own pricing page at the time of writing, not promotional or first-year rates. Software pricing changes frequently, so check the current figure before subscribing.",
+    options: [
+      {
+        name: "Zoho Invoice",
+        bestFor: "Freelancers who want full invoicing at no cost",
+        description:
+          "Zoho Invoice gives away what most competitors charge for: recurring invoices, automatic payment reminders, quotes, a client portal, time logging, and expense tracking, free for up to 500 invoices a year. For a solo freelancer that ceiling is effectively unlimited, and the automatic reminders are the feature most likely to shorten how long you wait to get paid.",
+        strengths: [
+          "Free for up to 500 invoices a year — beyond what most freelancers issue",
+          "Automatic payment reminders included at no cost",
+          "Recurring invoices, quotes, and a client portal",
+          "Time logging so billable hours flow into invoices",
+        ],
+        limitations: [
+          "Zoho branding appears on free-plan invoices",
+          "Limited to two users and three projects",
+          "Payment processing depends on the gateway you connect",
+        ],
+        pricing: "Free for up to 500 invoices/year, 2 users, 3 projects.",
+      },
+      {
+        name: "Wave",
+        bestFor: "Freelancers who want invoicing plus bookkeeping free",
+        description:
+          "Wave's free plan covers unlimited invoices with no client cap, and pairs them with actual bookkeeping, so income recorded on an invoice flows into the records you will need at tax time. Card payments run at 2.9% + $0.60, in line with standard processing rates.",
+        strengths: [
+          "Unlimited invoices and estimates on the free plan, no client cap",
+          "Bookkeeping included, so invoices feed year-end records",
+          "Card payments at 2.9% + $0.60 per transaction",
+          "Pro plan adds branded invoices and automated late payment reminders",
+        ],
+        limitations: [
+          "Automated late payment reminders require the paid Pro plan",
+          "Invoice branding is a Pro feature",
+          "Bank transaction imports are paid-only",
+        ],
+        pricing: "Free plan. Pro $19/month or $190/year. Payments 2.9% + $0.60; Pro discounts the fixed fee on the first 10 transactions monthly.",
+      },
+      {
+        name: "FreshBooks",
+        bestFor: "Freelancers billing hourly across several clients",
+        description:
+          "FreshBooks turns tracked time into invoices with the least friction of anything here, and its reminder and recurring-billing automation is mature. If you bill hourly, the time-to-invoice pipeline is the product and it is worth the subscription; if you bill by project, much of what you are paying for goes unused.",
+        strengths: [
+          "Time tracking that converts directly into billable invoices",
+          "Mature automatic late payment reminders and recurring billing",
+          "Retainers, proposals, and estimates included",
+          "Well-regarded client-facing payment experience",
+        ],
+        limitations: [
+          "Lite plan caps you at 5 billable clients",
+          "Unlimited clients requires the $70/month Premium tier",
+          "Overkill for a freelancer sending a few invoices a month",
+        ],
+        pricing: "Lite $23/month (5 clients), Plus $43/month (50 clients), Premium $70/month (unlimited clients).",
+      },
+      {
+        name: "Bonsai",
+        bestFor: "Freelancers who send a contract with every invoice",
+        description:
+          "Bonsai's case is that an invoice is the last step of a chain that starts with a proposal and a signed contract, and it keeps all three in one place. For freelancers who currently assemble contracts by hand, that consolidation is worth more than any invoicing feature — but note that invoicing sits on the Essentials tier, not the cheapest one.",
+        strengths: [
+          "Proposals, contracts, and e-signature in the same tool as invoices",
+          "Client CRM keeps invoice history against the relationship",
+          "Time tracking and project management included",
+          "Scales to collaborators if you subcontract",
+        ],
+        limitations: [
+          "Invoicing requires Essentials at $25/user/month, not the $15 Basic tier",
+          "Per-user pricing raises the cost as soon as you add anyone",
+          "More product than a simple invoicing need justifies",
+        ],
+        pricing: "Basic $15/user/month; invoicing from Essentials at $25/user/month. Annual billing is cheaper.",
+      },
+      {
+        name: "QuickBooks Solopreneur",
+        bestFor: "Freelancers who want invoices inside their bookkeeping",
+        description:
+          "Invoicing here is one function of a bookkeeping product rather than the point of it. That is the right trade if you were going to pay for bookkeeping and mileage tracking anyway, and the wrong one if you simply need to send invoices — a job two free tools on this list do well.",
+        strengths: [
+          "Invoices recorded directly into your books",
+          "Mileage tracking and expense capture bundled",
+          "Familiar to most US accountants and preparers",
+          "Clear path into tax filing",
+        ],
+        limitations: [
+          "$20/month for invoicing alone is poor value against free options",
+          "Invoicing features are simpler than the dedicated tools here",
+          "Solopreneur is limited compared with full QuickBooks Online",
+        ],
+        pricing: "Listed at $20/month or $120/year.",
+      },
+    ],
+    comparisonTable: {
+      headers: ["App", "Price", "Auto reminders", "Card fees", "Best for"],
+      rows: [
+        { name: "Zoho Invoice", values: ["Free (500/yr)", "Yes, free", "Gateway-dependent", "Free full invoicing"] },
+        { name: "Wave", values: ["Free; Pro $19/mo", "Pro only", "2.9% + $0.60", "Invoicing + bookkeeping"] },
+        { name: "FreshBooks", values: ["$23–$70/mo", "Yes", "Gateway-dependent", "Hourly billing"] },
+        { name: "Bonsai", values: ["$25/user/mo", "Yes", "Gateway-dependent", "Contracts + invoices"] },
+        { name: "QuickBooks Solopreneur", values: ["$20/mo", "Yes", "Gateway-dependent", "Books-first invoicing"] },
+      ],
+    },
+    verdict:
+      "Zoho Invoice is the best free choice, and for most solo freelancers the best choice outright: automatic payment reminders — the feature that most directly shortens how long you wait to be paid — are included at no cost, where Wave puts them behind the $19 Pro tier. Wave is the better free pick if you want invoicing and bookkeeping in one place and can chase late payers yourself.\n\nPay only for a specific job. FreshBooks earns its price when tracked time becomes invoices automatically. Bonsai earns its price when proposals and contracts live in the same place as the invoice. And keep the fees in perspective: at 2.9%, processing $60,000 of invoices costs about $1,740 a year, which is several times any subscription on this list. Getting paid by bank transfer where a client will accept it saves more than any software decision here.",
+    sections: [
+      {
+        heading: "Processing fees usually cost more than the software",
+        content:
+          "A freelancer invoicing $60,000 a year and accepting all of it by card pays roughly $1,740 in processing at 2.9%, plus the per-transaction fixed fee. The most expensive subscription on this list is $840 a year, and the cheapest is nothing. The fee, not the software, is the larger line.\n\nThat suggests two practical moves. Offer bank transfer or ACH as the default for larger invoices, where the fee is typically a flat amount rather than a percentage, and reserve card payment for smaller or international clients where convenience genuinely wins the sale. And do not choose an invoicing tool on a $10 monthly price difference while ignoring how it processes payments.",
+      },
+      {
+        heading: "Automatic reminders are the feature that actually pays",
+        content:
+          "Late payment is the most common cash-flow problem in freelancing, and chasing it is the task most likely to be postponed — because it is uncomfortable, not because it is difficult. Automating the reminder removes the discomfort entirely: the client hears from the system, not from you, and the first nudge arrives on time rather than three weeks late.\n\nThis is the main reason Zoho Invoice's free tier ranks so highly here. Including reminders at no cost, where Wave gates them behind a paid plan, matters more for getting paid than any difference in templates or dashboards.",
+      },
+      {
+        heading: "What to put on an invoice so it gets paid",
+        content:
+          "An invoice number, the date issued, a clear due date rather than \"net 30\" alone, an itemised description of what was delivered, the total, and the payment methods you accept with the details needed to use them. Ambiguity is what delays payment: an invoice that says \"net 30\" without a date makes the client do arithmetic, and clients who have to do arithmetic pay later.\n\nAgree payment terms in the contract rather than discovering them on the first invoice, and for larger projects take a deposit up front. The best invoicing software cannot fix terms that were never set.",
+      },
+      {
+        heading: "Invoices are also your tax records",
+        content:
+          "The invoices you issue are the primary record of the income you report on Schedule C, and they need to reconcile with what platforms and clients report to the IRS. That matters more in 2026 than it used to: the Form 1099-NEC threshold rose to $2,000, so plenty of genuine client income will now arrive with no form at all — and it is fully reportable regardless.\n\nKeeping invoices in a tool that also records income means the year-end total is a report rather than a reconstruction. It also lets you see what remains unpaid at the year end, which is a different figure from what you were paid, and the one your bookkeeping should distinguish. Our [1099 tax calculator](/self-employment-tax/1099-tax-calculator/) turns that profit figure into what you owe.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the best free invoicing app for freelancers?",
+        answer:
+          "Zoho Invoice, which is free for up to 500 invoices a year and includes automatic payment reminders, recurring invoices, quotes, and a client portal. Wave is the other genuinely free option and adds bookkeeping, but it puts automated late payment reminders behind its $19 monthly Pro plan. For getting paid on time without paying for software, Zoho Invoice is the stronger free tier.",
+      },
+      {
+        question: "How much does it cost to accept card payments on an invoice?",
+        answer:
+          "Around 2.9% plus a fixed per-transaction fee is standard, and Wave publishes 2.9% + $0.60. On $60,000 of annual invoicing that is roughly $1,740 — considerably more than any subscription on this list. Offering bank transfer or ACH for larger invoices, where fees are usually a small flat amount, saves more than any choice of software.",
+      },
+      {
+        question: "Should freelancers charge late fees?",
+        answer:
+          "A late fee is only enforceable if it was agreed in the contract before the work started, so the decision belongs at the contract stage rather than the invoice stage. In practice the automatic reminder does more work than the fee: most late payments are administrative rather than deliberate, and a polite nudge on the due date resolves them faster than a penalty clause.",
+      },
+      {
+        question: "Do I need invoicing software or is a template enough?",
+        answer:
+          "A template is fine if you send a few invoices a month and are willing to track what is unpaid yourself. Software earns its place through the follow-up — knowing at a glance which invoices are outstanding, and sending reminders automatically. Since two capable options here are free, the practical answer is to use one rather than maintain a spreadsheet of who owes you what.",
+      },
+      {
+        question: "What should be on a freelance invoice?",
+        answer:
+          "An invoice number, the issue date, an explicit due date, an itemised description of the work, the total amount, and the payment methods you accept with the details required to use them. Include your business name and address, and the client's. If you agreed a deposit or milestone schedule in the contract, reference it, so the invoice matches what the client is expecting to pay.",
+      },
+    ],
+    sources: [
+      { label: "IRS — Instructions for Forms 1099-MISC and 1099-NEC (2026)", url: "https://www.irs.gov/instructions/i1099mec" },
+      { label: "Wave — Pricing", url: "https://www.waveapps.com/pricing" },
+      { label: "Zoho Invoice — Pricing", url: "https://www.zoho.com/us/invoice/pricing/" },
+      { label: "FreshBooks — Pricing", url: "https://www.freshbooks.com/pricing" },
+    ],
+    calculatorLinks: [
+      { label: "Freelance Rate Calculator", href: "/freelance-rate/" },
+      { label: "1099 Tax Calculator", href: "/self-employment-tax/1099-tax-calculator/" },
+      { label: "Billable Hours Calculator", href: "/freelance-rate/billable-hours-calculator/" },
+    ],
+  }

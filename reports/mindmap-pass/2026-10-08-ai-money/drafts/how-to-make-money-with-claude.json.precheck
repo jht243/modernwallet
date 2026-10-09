@@ -1,0 +1,110 @@
+{
+  "slug": "how-to-make-money-with-claude",
+  "title": "How to Make Money With Claude: Real Paths and Costs",
+  "metaDescription": "Learn how to make money with Claude through freelancing and coding, what plans cost, break-even math, and FTC rules on AI earnings claims.",
+  "h1": "How to Make Money With Claude",
+  "cardBlurb": "Learn how freelancers and developers earn money with Claude, calculate your break-even hours on paid plans, and review commercial terms.",
+  "introText": "People make money with Claude by selling client work that Claude speeds up, not by running an autonomous software program that generates cash on its own. Anthropic assigns you its right and interest in outputs under its consumer terms, which allows commercial work while prohibiting you from reselling the service itself. Freelancers use the model to draft client documents, analyze datasets, and write code faster.\n\nAt ModernWallet, we evaluate AI tools through real operational costs and verifiable earnings data. A paid subscription is an overhead expense that requires a concrete return. According to the July 2026 Upwork Future Workforce Index, freelancers who perform AI work on the Upwork Marketplace earn 34% more per hour than those who do not use AI. Making that extra income requires domain judgment, billable clients, and an understanding of the software's true operational costs.",
+  "sections": [
+    {
+      "heading": "Ways People Make Money With Claude",
+      "body": "People earn income with Claude by using the assistant to accelerate deliverables they sell to paying clients. Anthropic's [Consumer Terms](https://www.anthropic.com/legal/consumer-terms) state that subject to compliance with the terms, Anthropic assigns to you all of its right, title, and interest in outputs. You can sell code, research summaries, marketing copy, and business workflows you generate, provided you do not resell the software or build a competing service.\n\nFreelance professional services represent the largest documented channel. On [Upwork](https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates), AI-augmented professional services grew 72% in volume with earnings up 22% year over year. Clients pay for completed projects such as contract reviews, technical documentation, and strategic outlines that domain specialists refine.\n\nSoftware development and automation scripts provide a second established avenue. On [Fiverr](https://finviz.com/news/360535/businesses-race-to-hire-claude-code-specialists-as-demand-surges-938), searches for Claude Code specialists rose 938% between November 2025 and April 2026 compared to the prior six months. Buyers seek contractors who use the command-line tool to build custom utilities, fix bugs, and connect workplace applications. For broader context on automated systems, read our guide on starting an [AI automation agency](/guides/ai-automation-agency/)."
+    },
+    {
+      "heading": "Freelancing With Claude and Platform Fees",
+      "body": "Freelancers using Claude see significant variation in earnings depending on the complexity of their work. The Upwork Future Workforce Index shows that freelancers performing more complex work with AI saw earnings rise 45% year over year. Simple generative AI and creative production work experienced a 90% increase in contract starts, but per-contract earnings fell 13%. When everyone can produce basic prose with a prompt, commodity deliverables lose pricing power.\n\nMarketplace transaction fees reduce your take-home pay on every invoice. According to the [Upwork fee schedule](https://www.upwork.com/resources/is-upwork-free), standard contracts carry a freelancer service fee between 0% and 15%, which is displayed before you submit a proposal. Upwork also charges clients a fee of 3% or 5% on Basic plans, or 8% or 10% on Business Plus. You can calculate your net take-home pay using our [Upwork taxes guide](/self-employment-tax/upwork-taxes/).\n\nSelling services on Fiverr involves a different fee structure. Under the [Fiverr payment terms](https://www.fiverr.com/legal-portal/legal-terms/payment-terms-of-service), sellers receive 80% of the purchase amount, meaning Fiverr keeps 20% on both gig orders and hourly contracts. Before pricing your services on either platform, run your numbers through our [freelance rate calculator](/freelance-rate/) to ensure your rates cover platform cuts, software costs, and non-billable administrative hours."
+    },
+    {
+      "heading": "Building and Selling With Claude Code",
+      "body": "Claude Code is a command-line interface tool included in paid Anthropic subscriptions that lets developers build applications, automate terminal tasks, and refactor codebases. Fiverr reported that marketplace searches for vibe coding grew 61% over a six-month period, while searches for Claude Code specialists grew 938%. Those search spikes measure employer interest in hiring specialized talent rather than direct freelancer revenue.\n\nWhile Anthropic assigns its rights in model outputs to users, statutory copyright protection has strict limits. Guidance from the [U.S. Copyright Office](https://www.federalregister.gov/documents/2023/03/16/2023-05321/copyright-registration-guidance-works-containing-material-generated-by-artificial-intelligence) establishes that material generated purely by artificial intelligence without human creative input is not registrable. The Copyright Office's 2025 report on [Copyright and Artificial Intelligence](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf) affirmed that prompts alone do not provide sufficient human control under current technology.\n\nTo protect software products or scripts built with Claude Code, you must contribute substantial human expression, custom architectural logic, and original code. When selling software directly to business clients, protect your deliverables through written client contracts and service agreements rather than relying solely on automated code generation. If you want to compare other development workflows, explore our guide on [how to make money with ChatGPT](/guides/how-to-make-money-with-chatgpt/)."
+    },
+    {
+      "heading": "AI Training Jobs That Prohibit Claude",
+      "body": "Many remote workers pursue AI data evaluation to earn hourly income, but some platforms strictly forbid external assistants. The Handshake AI Fellowship hires 1099 independent contractors at hourly rates ranging from $30 to $125 to write prompts, evaluate model responses, and correct factual citations, as documented in their [fellowship support guide](https://support.joinhandshake.com/hc/en-us/articles/32264709473303).\n\nHandshake AI strictly prohibits contractors from using external AI tools such as Claude or ChatGPT while performing task evaluations. Violating this rule can result in immediate contract cancellation and withheld earnings. Business Insider reported via [AOL](https://www.aol.com/articles/contractors-worked-openai-projects-handshake-050101409.html) that contractors on Handshake AI projects experienced suspended accounts and unpaid invoices over alleged rule violations without an appeal process.\n\nHandshake was also named in a federal unpaid wages lawsuit, [Boggs v. Stryder Corp.](https://www.courtlistener.com/docket/73643581/boggs-v-stryder-corp/), filed under the Fair Labor Standards Act in the Northern District of California in July 2026. If you want to earn money evaluating machine learning models through approved workflows, review our guide to verified [AI training jobs](/guides/ai-training-jobs/) instead of risking account penalties by feeding client prompts into personal assistants."
+    },
+    {
+      "heading": "Claude Plan Costs and Break-Even Math",
+      "body": "Choosing the right Claude tier requires comparing subscription costs against the billable hours the tool saves you each month. As of October 2026, [Anthropic pricing](https://claude.com/pricing) offers several subscription tiers:\n\n| Plan | Price | Claude Code Included | Best Fit |\n| --- | --- | --- | --- |\n| Free | $0 | No | Occasional research, learning prompts |\n| Pro | $20/month ($17/month billed annually) | Yes | Freelance writers, solopreneurs, coders |\n| Max 5x | $100/month | Yes | High-volume developers, active consultants |\n| Max 20x | $200/month | Yes | Heavy commercial agencies, power users |\n| Team | $25/seat/month ($20 billed annually) | Yes | Multi-member agencies needing central billing |\n\nAnthropic details that its [Max plans](https://support.claude.com/en/articles/11049741-what-is-the-max-plan) scale usage allowances above regular Pro limits for power users. Developers requiring programmatic connections can review Anthropic's [API pricing](https://platform.claude.com/docs/en/about-claude/pricing) for pay-as-you-go token rates.\n\nTo determine whether a paid plan makes financial sense, use this break-even formula: subscription cost divided by your billable hourly rate equals the minimum hours Claude must save you each month. If you bill $40 per hour and subscribe to Claude Pro at $20 monthly, the software pays for itself if it saves you 30 minutes of billable labor. If you consider the Max 5x plan at $100 monthly, you need it to save 2.5 billable hours each month at that same $40 rate. If you bill $100 per hour, the Max plan breaks even by saving just one billable hour."
+    },
+    {
+      "heading": "Unsubstantiated AI Income Schemes and FTC Rules",
+      "body": "Federal regulators actively prosecute companies marketing deceptive AI business schemes that promise automated riches. Under [Operation AI Comply](https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes), the Federal Trade Commission (FTC) charged multiple operations for falsely claiming AI software could generate thousands of dollars in passive monthly revenue. Ascend Ecom faced a $25 million judgment and a ban on selling business opportunities after the FTC alleged it deceived consumers with false promises of five-figure passive monthly storefront income.\n\nThe FTC also took enforcement actions against [Ecommerce Empire Builders](https://www.ftc.gov/news-events/news/press-releases/2025/05/ftc-action-ends-ecommerce-empire-builders-online-business-opportunity-scam), which resulted in a $9.7 million judgment, and [FBA Machine](https://www.ftc.gov/news-events/news/press-releases/2025/07/ftc-obtains-permanent-ban-e-commerce-business-opportunity-scheme-operator), which settled for a $15.7 million judgment. Both operations claimed proprietary machine learning systems could run hands-free online stores. In August 2025, the FTC sued [Air AI](https://www.ftc.gov/news-events/news/press-releases/2025/08/ftc-sues-stop-air-ai-using-deceptive-claims-about-business-growth-earnings-potential-refund) for claiming buyers could earn tens of thousands of dollars in days or months, resulting in an $18 million settlement in March 2026.\n\nUnder the FTC's [Business Opportunity Rule](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-437), sellers making earnings claims must maintain written substantiation showing the exact percentage of purchasers who achieved those figures. The FTC provides a [consumer alert on side hustle scams](https://consumer.ftc.gov/consumer-alerts/2026/02/how-avoid-side-hustle-scam) cautioning workers against opportunities demanding upfront fees or promising large payments for minimal labor. Anthropic offers no consumer revenue-sharing program, and reselling direct chat access violates its service agreement."
+    },
+    {
+      "heading": "Taxes on Freelance Claude Earnings",
+      "body": "Income earned by providing services with Claude counts as self-employment income subject to federal and state taxation. If your net earnings from self-employment reach $400 or more during the calendar year, the Internal Revenue Service (IRS) requires you to file Schedule SE and pay [self-employment taxes](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes). The self-employment tax rate is 15.3%, consisting of 12.4% for Social Security and 2.9% for Medicare.\n\nAccording to [IRS Topic 554](https://www.irs.gov/taxtopics/tc554), self-employment tax applies to 92.35% of your net earnings from self-employment, and you can deduct half of your self-employment tax when calculating your adjusted gross income. When operating as an independent contractor, you may need to submit quarterly estimated payments using [Form 1040-ES](https://www.irs.gov/forms-pubs/about-form-1040-es). Review the [IRS estimated tax rules](https://www.irs.gov/faqs/estimated-tax) to determine whether you meet safe harbor requirements, and use our [quarterly estimated tax calculator](/self-employment-tax/quarterly-estimated-tax-calculator/) to plan cash flow.\n\nSoftware subscriptions like Claude Pro qualify as tax deductions if they satisfy [IRS business expense rules](https://www.irs.gov/faqs/small-business-self-employed-other-business/income-expenses) by being ordinary and necessary for your trade or business. An expense is ordinary if it is common and accepted in your industry, and necessary if it is helpful and appropriate for your operations. If you use a single Claude account for both personal hobbies and business tasks, you can deduct only the business-use portion. Explore our guide on [self-employed tax deductions](/guides/self-employed-tax-deductions/) to ensure your operating write-offs comply with IRS standards."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/freelance-rate/",
+      "label": "Freelance Rate"
+    },
+    {
+      "href": "/self-employment-tax/",
+      "label": "Self-Employment Tax"
+    },
+    {
+      "href": "/budget/",
+      "label": "Budget"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Are people using Claude to make money?",
+      "answer": "Yes, people use Claude to earn money by speeding up client work they sell as freelancers, developers, or consultants. Upwork research shows that freelancers who use AI on its platform earn 34% more per hour than those who do not. The model does not generate passive cash autonomously; users get paid by delivering completed projects to clients."
+    },
+    {
+      "question": "Is Claude worth $100 a month?",
+      "answer": "Claude is worth $100 a month on the Max 5x plan only if it saves you enough billable time to offset the fee. If you bill $50 per hour, the plan pays for itself if it saves you at least two billable hours each month. If your workload does not hit standard Pro usage limits or your hourly billing rate is lower, the $20 Pro plan makes more financial sense."
+    },
+    {
+      "question": "Do I own what Claude writes?",
+      "answer": "Under Anthropic's consumer terms, Anthropic assigns all of its right, title, and interest in outputs to you, provided you comply with its terms. However, the U.S. Copyright Office has ruled that purely AI-generated text or art without sufficient human creative control cannot be copyrighted. You must add human expression and edits to obtain statutory copyright protection."
+    },
+    {
+      "question": "Can I sell code written with Claude Code?",
+      "answer": "Yes, you can sell software and automation scripts developed with Claude Code to clients. Anthropic's terms do not ban commercial use of outputs, though they prohibit reselling access to Claude itself. Because purely machine-generated code lacks federal copyright protection, protect your deliverables through written client contracts and original architectural logic."
+    },
+    {
+      "question": "Is Claude Code included in the free plan?",
+      "answer": "No, Claude Code is not included in Anthropic's free plan. Access to the command-line interface tool requires a paid subscription, starting with Claude Pro at $20 per month or $17 per month billed annually. It is also included in Max, Team, and Enterprise accounts."
+    },
+    {
+      "question": "How to make $1,000 a day with AI?",
+      "answer": "There is no verified evidence supporting claims that automated AI systems reliably generate $1,000 a day in hands-free income. The Federal Trade Commission brought major enforcement actions under Operation AI Comply against multiple businesses for marketing deceptive AI passive income schemes. Legitimate AI earnings come from selling specialized freelance skills, software, and consulting."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Upwork Future Workforce Index 2026",
+      "url": "https://www.upwork.com/press/releases/upworks-future-workforce-index-2026-how-ai-is-redefining-the-value-of-work-as-skilled-freelancing-accelerates"
+    },
+    {
+      "label": "Anthropic Consumer Terms",
+      "url": "https://www.anthropic.com/legal/consumer-terms"
+    },
+    {
+      "label": "Anthropic Pricing",
+      "url": "https://claude.com/pricing"
+    },
+    {
+      "label": "FTC Operation AI Comply Enforcement Crackdown",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes"
+    },
+    {
+      "label": "U.S. Copyright Office AI Registration Guidance",
+      "url": "https://www.federalregister.gov/documents/2023/03/16/2023-05321/copyright-registration-guidance-works-containing-material-generated-by-artificial-intelligence"
+    },
+    {
+      "label": "IRS Self-Employment Taxes",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

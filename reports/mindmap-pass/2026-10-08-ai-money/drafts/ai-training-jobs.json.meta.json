@@ -1,0 +1,467 @@
+{
+ "slug": "ai-training-jobs",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1845,
+ "floor": 1200,
+ "input_tokens": 32824,
+ "output_tokens": 4280,
+ "thinking_tokens": null,
+ "cached_tokens": 17751,
+ "est_cost_usd": 0.0287,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "emptied by the claim check (nothing in the fact list could carry it): ['Is AI Training a Real Job? Who Pays and How Much', 'What the Work Involves Day to Day', 'How Hiring and Assessment Tests Work', 'Payment Schedules and Disbursement Rails', 'Work Droughts and Worker Lawsuits Across Platforms'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1760,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 4404,
+   "floor": 1200,
+   "ratio": 3.67,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    6,
+    3
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we evaluate these flexible gigs alongside traditional freelance work to help you separate viable earnings from unpaid administrative friction.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support evaluating flexible gigs or this specific claim."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Workers on [Outlier](https://outlier.ai/faq) generate creative prompts, rank model responses, and rewrite text to improve clarity and tone.",
+     "replacement": "Workers on [Outlier](https://outlier.ai/faq) generate prompts, rank AI outputs, and improve model responses.",
+     "type": "unsupported",
+     "why": "SOURCE states contributors generate prompts, rank AI outputs, and improve model responses."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "High-tier technical tasks require evaluating whether generated code compiles properly and follows functional requirements.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that code must compile properly or follow functional requirements."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Across all platforms, contributors must read dense style guides, follow rigorous grading rubrics, and explain the reasoning behind their ratings.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention reading style guides, rubrics, or explaining reasoning behind ratings."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "The FTC's broader warning on [job scams](https://consumer.ftc.gov/articles/job-scams) emphasizes that any entity demanding upfront fees, gift cards, or crypto transfers to secure an assignment is fraudulent.",
+     "replacement": "The FTC's broader warning on [job scams](https://consumer.ftc.gov/articles/job-scams) emphasizes that any entity demanding upfront fees to secure an assignment is fraudulent.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention gift cards or crypto transfers."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Handshake AI and Mercor require graduate degrees, published work, or technical coding expertise.",
+     "replacement": "Handshake AI and Mercor require graduate degrees or domain expertise.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Handshake AI or Mercor require published work."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "On the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303), fellows compose rigorous prompts, grade model reasoning, and supply verifiable factual citations to verify accuracy.",
+     "replacement": "On the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303), fellows create prompts, evaluate AI responses, and correct content with citations.",
+     "type": "unsupported",
+     "why": "SOURCE says fellows create prompts, evaluate AI responses, and correct content with citations."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Platforms like Prolific and Mindrift offer the lowest barrier to entry, requiring general English fluency and basic reading comprehension rather than advanced academic credentials.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state reading comprehension requirements for Prolific or Mindrift entry level."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Yes, general annotation and prompt-evaluation projects on platforms like Mindrift or Prolific accept beginners who pass an initial reading and writing screening test.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Mindrift or Prolific require a reading and writing test."
+    }
+   ],
+   "deleted_final": 3,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1879
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-09T10:41:48-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-08-ai-money/audit/ai-training-jobs.findings.txt",
+    "applied": [
+     {
+      "id": "title",
+      "quote": "AI Training Jobs: Legitimate Platforms, Rates, and Catches",
+      "replacement": "Which AI Training Jobs Are Real and What Each Platform Pays",
+      "type": "headline tell",
+      "why": "Avoid colon formula and headline tricolon."
+     },
+     {
+      "id": "h1",
+      "quote": "AI Training Jobs: Legitimate Platforms, Pay Rates, and What Workers Face",
+      "replacement": "Which AI Training Jobs Are Real and What Each Platform Pays",
+      "type": "headline tell",
+      "why": "Avoid colon formula and headline tricolon."
+     },
+     {
+      "id": "introText",
+      "quote": "Companies like DataAnnotation, Outlier, Mercor, Alignerr, Mindrift, Handshake AI, and Prolific pay",
+      "replacement": "Companies like [DataAnnotation](https://www.dataannotation.tech/faqs), [Outlier](https://outlier.ai/faq), [Mercor](https://talent.docs.mercor.com/how-to/payments), [Alignerr](https://www.alignerr.com/), [Mindrift](https://mindrift.ai/), [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32264709473303), and [Prolific](https://researcher-help.prolific.com/en/article/2273bd) pay",
+      "type": "unlinked first mention",
+      "why": "Add links to first mentions with allowed URLs."
+     },
+     {
+      "id": "introText",
+      "quote": "onboarding tests are frequently unpaid, and any platform asking you to pay an upfront fee is an outright scam.",
+      "replacement": "most platforms do not say whether onboarding tests are paid, and any platform asking you to pay an upfront fee is a scam.",
+      "type": "unsupported onboarding claim",
+      "why": "Most platforms do not state whether onboarding is paid."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "For general work, entry-level rates begin around $15 to $25 per hour, while technical domains reach $40 to $125 or more per hour.",
+      "replacement": "Mindrift lists entry-level work at $15 to $30 per hour, and DataAnnotation's coding projects start at $40 to $150 or more per hour.",
+      "type": "unsupported pay range",
+      "why": "Use sourced figures from Mindrift and DataAnnotation."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "| Platform | Operator | Published Pay | Payment Method | Best Suited For |",
+      "replacement": "| Platform | Operator | Published Pay (as of October 2026) | Payment Method | Best Suited For |",
+      "type": "missing rate date qualifier",
+      "why": "Rates require as of October 2026 qualifier."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "| [DataAnnotation](https://www.dataannotation.tech/faqs) |",
+      "replacement": "| DataAnnotation |",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "| [Outlier](https://outlier.ai/faq) |",
+      "replacement": "| Outlier |",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "| [Mercor](https://talent.docs.mercor.com/how-to/payments) |",
+      "replacement": "| Mercor |",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "| [Alignerr](https://www.alignerr.com/) |",
+      "replacement": "| Alignerr |",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "| Weekly payout |",
+      "replacement": "| Not published (paid weekly) |",
+      "type": "incorrect table cell content",
+      "why": "Alignerr payment method is not published."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "| [Mindrift](https://mindrift.ai/) |",
+      "replacement": "| Mindrift |",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "| [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) |",
+      "replacement": "| Handshake AI |",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "| [Prolific](https://researcher-help.prolific.com/en/article/2273bd) |",
+      "replacement": "| Prolific |",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[1].heading",
+      "quote": "What the Work Actually Involves Daily",
+      "replacement": "What the Work Involves Day to Day",
+      "type": "headline tell",
+      "why": "Remove actually from heading."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "According to [DataAnnotation's official FAQ](https://www.dataannotation.tech/faqs), contributors",
+      "replacement": "According to DataAnnotation's FAQ, contributors",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Workers on [Outlier](https://outlier.ai/faq) generate",
+      "replacement": "Workers on Outlier generate",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "On the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303), fellows",
+      "replacement": "On the Handshake AI Fellowship, fellows",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "At [DataAnnotation](https://www.dataannotation.tech/faqs), the initial",
+      "replacement": "At DataAnnotation, the initial",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Onboarding on [Outlier](https://outlier.ai/faq) takes",
+      "replacement": "Onboarding on Outlier takes",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) restricts",
+      "replacement": "the Handshake AI Fellowship restricts",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Whether onboarding and assessment time is paid varies sharply by platform.",
+      "replacement": "Most platforms in the table do not publish whether onboarding and assessment time is paid.",
+      "type": "unsupported claim",
+      "why": "Most platforms do not state onboarding pay status."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Each training platform uses distinct disbursement processors and payout schedules. [DataAnnotation](https://www.dataannotation.tech/faqs) delivers",
+      "replacement": "Each platform publishes its own payout schedule and payment processors. DataAnnotation delivers",
+      "type": "inaccurate claim and repeat link",
+      "why": "Processors are not completely distinct across platforms."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "[Outlier](https://outlier.ai/faq) processes",
+      "replacement": "Outlier processes",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "According to [Mercor talent documentation](https://talent.docs.mercor.com/how-to/payments), payments",
+      "replacement": "According to Mercor's talent documentation, payments",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[4].heading",
+      "quote": "The Real Catches: Project Droughts, Rate Drops, and Lawsuits",
+      "replacement": "Work Droughts and Worker Lawsuits Across Platforms",
+      "type": "headline tell",
+      "why": "Avoid colon drama and tricolon formula."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Contractors face frequent periods without work, abrupt account closures, and sudden rate shifts. On Trustpilot, reviews for [DataAnnotation](https://www.trustpilot.com/review/dataannotation.tech) (3.9 score out of 5 from 1,973 reviews) and [Outlier](https://www.trustpilot.com/review/outlier.ai) (4.1 score out of 5 from 5,483 reviews) highlight recurring themes of empty project queues, unpaid test steps, and sudden deactivations with slow support.",
+      "replacement": "Contractors on these platforms report long periods without work and sudden account closures. As of October 2026, DataAnnotation scores 3.9 out of 5 from 1,973 reviews on [Trustpilot](https://www.trustpilot.com/review/dataannotation.tech), and Outlier scores [4.1 from 5,483 reviews](https://www.trustpilot.com/review/outlier.ai). Recurring complaint themes across both include empty project queues, unpaid test steps, sudden deactivations, and slow support.",
+      "type": "framing of reviews as facts",
+      "why": "Frame Trustpilot scores as dated themes and link Trustpilot."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "that Mercor concluded a Meta project named Musen, which peaked at over 5,000 workers, and subsequently offered a replacement project named Nova at $16 per hour, which was $5 less than the Musen rate.",
+      "replacement": "that Mercor ended a Meta project named Musen, which peaked at over 5,000 workers. Mercor then offered a similar project, Nova, at $16 per hour, $5 less than Musen paid. Mercor called the report inaccurate.",
+      "type": "sentence length and missing denial",
+      "why": "Shorten sentence and include Mercor denial."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "As documented by [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement), a $12,500,000 settlement was negotiated covering California contributors between December 2020 and February 2026, with a final approval hearing set for October 30, 2026.",
+      "replacement": "According to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement), Scale AI agreed to a $12,500,000 settlement covering California contributors between December 2020 and February 2026. The settlement is pending final approval at an October 30, 2026 hearing, and the defendants deny the allegations.",
+      "type": "settlement status incomplete",
+      "why": "State settlement is pending approval and defendants deny allegations."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Additionally, a May 2025 misclassification suit was filed against [Surge AI](https://clarksonlawfirm.com/clarkson-represents-surge-ai-workers-in-labor-law-class-action), though public court documents do not name DataAnnotation as a party.",
+      "replacement": "In May 2025, [Clarkson Law Firm](https://clarksonlawfirm.com/clarkson-represents-surge-ai-workers-in-labor-law-class-action) filed a misclassification class action against Surge AI. News reports cited on [Wikipedia](https://en.wikipedia.org/wiki/Surge_AI) have linked Surge AI to DataAnnotation, but DataAnnotation's site does not confirm that, and the firm's announcement does not name DataAnnotation.",
+      "type": "implication of corporate link",
+      "why": "Clarify DataAnnotation connection is unconfirmed by DataAnnotation."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Criminals regularly impersonate AI platforms to steal personal information or recruit victims into financial schemes.",
+      "replacement": "Scammers pose as recruiters for AI rating and review work to get victims to send them money.",
+      "type": "unsupported statement",
+      "why": "FTC alert focuses on money requests in job scams."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "As [DataAnnotation's FAQ](https://www.dataannotation.tech/faqs) states",
+      "replacement": "As DataAnnotation's FAQ states",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Similarly, [Mindrift's blog](https://mindrift.ai/blog/how-mindrift-pays) clarifies that applications and qualification tests are completely free, and contributors never need to buy courses or materials.",
+      "replacement": "Similarly, Mindrift's blog says joining and assessments should be free, and contributors never have to buy courses or credentials.",
+      "type": "overstated wording and repeat link",
+      "why": "Match blog phrasing and remove repeat link."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Earnings from AI training jobs constitute self-employment income, meaning platforms do not withhold federal, state, or FICA taxes from your payments. [Mercor's tax documentation](https://talent.docs.mercor.com/policies/us-taxes) explicitly informs contractors that they must fulfill their own tax obligations, noting that US workers",
+      "replacement": "Earnings from AI training jobs are 1099 contractor income, so you handle your own taxes. [Mercor's tax documentation](https://talent.docs.mercor.com/policies/us-taxes) says Mercor does not deduct taxes from payments. It adds that US workers",
+      "type": "overgeneralized withholding claim",
+      "why": "Only some platforms state tax policy."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Similarly, [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32263614087575-Handshake-AI-payments-processing) notes",
+      "replacement": "Similarly, Handshake AI notes",
+      "type": "repeat link",
+      "why": "Link on first mention only."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "For general contractor rules, check our [dataannotation taxes guide](/self-employment-tax/dataannotation-taxes/) or use our [self-employment tax calculator](/self-employment-tax/) to determine your exact tax obligations.",
+      "replacement": "For the platform-specific rules, read our [DataAnnotation taxes guide](/self-employment-tax/dataannotation-taxes/) or use our [self-employment tax calculator](/self-employment-tax/) to estimate what you owe.",
+      "type": "inaccurate promise and branding",
+      "why": "Calculators estimate rather than determine exact taxes."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Handshake AI and Mercor require graduate degrees or domain expertise.",
+      "replacement": "Going by published requirements, Mindrift and DataAnnotation have lower entry bars than Handshake AI or Mercor. Mindrift lists entry-level work at $15 to $30 per hour, and DataAnnotation asks for a bachelor's degree or equivalent real-world experience plus fluent English. Handshake AI fellowships mostly require a Master's, PhD, or Postdoc, and Mercor recruits domain experts such as scientists, doctors, and lawyers.",
+      "type": "incomplete answer",
+      "why": "Provide full answer based on published requirements."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "Technical projects in software engineering, law, and medicine require verified professional credentials or degrees.",
+      "replacement": "Some platforms accept applicants without specialist experience. DataAnnotation asks for a bachelor's degree or equivalent real-world experience, Outlier asks for at least an associate degree, and Mindrift advertises entry-level work at $15 to $30 per hour. Professional projects in law, finance, or medicine require credentials.",
+      "type": "incomplete answer",
+      "why": "State platform requirements for entry-level and experienced candidates."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "Pay ranges from $15 to $30 per hour for entry-level tasks on Mindrift to over $85 per hour on Mercor according to TechCrunch. Highly specialized coding or STEM projects on DataAnnotation advertise rates starting at $40 to $150 or more per hour.",
+      "replacement": "Published rates run from $15 to $30 per hour for entry-level tasks on Mindrift to $30 to $125 per hour for Handshake AI fellows. TechCrunch reported that Mercor experts average over $85 per hour. DataAnnotation advertises coding projects starting at $40 to $150 or more per hour and STEM projects at $40 to $125 or more.",
+      "type": "inaccurate range representation",
+      "why": "Mercor $85 is an average; STEM is $40 to $125."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "Yes, US contractors earning reportable freelance income receive a tax form from the platform or its payment processor. For example, Mercor",
+      "replacement": "It depends on the platform. Mercor",
+      "type": "overgeneralized tax policy",
+      "why": "Not all platforms publish tax-form policies."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "during the tax year.",
+      "replacement": "during the tax year. DataAnnotation and Outlier do not publish a tax-form policy.",
+      "type": "missing context on unknown platforms",
+      "why": "State that DataAnnotation and Outlier policies are unpublished."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      4
+     ],
+     "applied": [
+      {
+       "id": "introText",
+       "quote": "You can get paid to train artificial intelligence (AI) models, and several prominent platforms offer legitimate contract work.",
+       "replacement": "You can get paid to train artificial intelligence (AI) models, and several platforms offer legitimate contract work.",
+       "type": "unsupported",
+       "why": "SOURCE does not describe the platforms as prominent."
+      },
+      {
+       "id": "sections[3].body",
+       "quote": "Each platform publishes its own payout schedule and payment processors.",
+       "replacement": "",
+       "type": "contradicted",
+       "why": "Alignerr does not publish its payment processor or payout schedule."
+      },
+      {
+       "id": "faqs[1].answer",
+       "quote": "Yes, AI training is legitimate freelance contract work for major technology labs.",
+       "replacement": "Yes, AI training is legitimate freelance contract work.",
+       "type": "unsupported",
+       "why": "SOURCE does not state work is for major technology labs."
+      },
+      {
+       "id": "faqs[1].answer",
+       "quote": "You work as an independent 1099 contractor rather than a W-2 employee, meaning you receive no employment benefits, paid leave, or guaranteed weekly hours.",
+       "replacement": "",
+       "type": "unsupported",
+       "why": "SOURCE does not mention W-2 status, employment benefits, or paid leave."
+      }
+     ],
+     "deleted_final": 4,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1845,
+    "flags": [
+     "emptied by the claim check (nothing in the fact list could carry it): ['Is AI Training a Real Job? Who Pays and How Much', 'What the Work Involves Day to Day', 'How Hiring and Assessment Tests Work', 'Payment Schedules and Disbursement Rails', 'Work Droughts and Worker Lawsuits Across Platforms'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+    ]
+   }
+  ]
+ },
+ "seconds": 182.9,
+ "response_id": "PwLJapuzIp6I6dkP7aSnyAM",
+ "generated_at": "2026-10-09T10:06:26-0500"
+}

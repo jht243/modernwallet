@@ -1,0 +1,67 @@
+{
+ "slug": "side-hustle-ideas--ai-red-flags",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "low",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 130,
+ "floor": 0,
+ "input_tokens": 24315,
+ "output_tokens": 218,
+ "thinking_tokens": null,
+ "cached_tokens": 17751,
+ "est_cost_usd": 0.0071,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 130,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L1",
+     "quote": "Among those targets, Ascend Ecom resulted in at least $25 million in alleged consumer losses after falsely promising fast five-figure monthly returns from automated storefronts.",
+     "replacement": "Among those targets, Ascend Ecom resulted in at least $25 million in alleged consumer losses after falsely promising five-figure monthly income by the second year from automated storefronts.",
+     "type": "unsupported",
+     "why": "SOURCE states five-figure monthly income was promised by the second year, not quickly."
+    },
+    {
+     "id": "L1",
+     "quote": "In 2025, the FTC sued Click Profit over alleged losses of at least $14 million, finding about 95% of its stores were blocked, suspended, or terminated by Amazon.",
+     "replacement": "In 2025, the FTC sued Click Profit over alleged losses of at least $14 million, alleging about 95% of its stores were blocked, suspended, or terminated by Amazon.",
+     "type": "unsupported",
+     "why": "SOURCE states the FTC alleged the Amazon store blocks, rather than finding them."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 127
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 42.3,
+ "response_id": "bgLJap7QDsrBqtsP7oy_2QU",
+ "generated_at": "2026-10-09T10:04:55-0500"
+}

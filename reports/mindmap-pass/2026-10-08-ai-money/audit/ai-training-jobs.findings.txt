@@ -1,0 +1,111 @@
+## RUN-LEVEL HARD FAILS (chart records; not page text)
+
+**R1. GATE Medium/row records and GATE Register.** The chart rows in `reports/mindmap-pass/2026-10-08-ai-money.md` for all 4 slugs have no `register:` record. `page type` and `medium` (text → text) are present.
+- Fix (orchestrator, chart edit): add `register: operator` to all 4 rows. All 4 pages are already written in operator "you" voice.
+
+**R2. GATE Anchor and GATE Tee-up.** No row carries `anchor-exempt:` or `teeup-exempt:`.
+- Fix (chart): add `anchor-exempt: content property, editorial "we" only (_experience.md SPECIFICS)` to all 4 rows.
+- Add `teeup-exempt: API page, claim check removed the "At ModernWallet" sentence` to ai-training-jobs and is-mercor-legit, which have no tee-up.
+- On DataAnnotation and Outlier the tee-up is in the wrong position (sentence 3); the page fixes below move it.
+
+**R3. GATE Links: NOT FIXABLE IN PLACE under the closed URL list.**
+- These organisations are named on the pages, but the allowed list has no first-party URL for them, so their first mention cannot be linked: Scale AI, Labelbox, Toloka, Stryder Corp., PayPal, Airtm, Stripe, Wise, Payoneer, Tipalti, Persona, Meta, Upwork, HireArt, Felicis, Benchmark, General Catalyst, LiteLLM, Wired, The Verge, New York Magazine.
+- Every organisation that does have an allowed URL is linked at first mention by the fixes below.
+- The orchestrator has to choose: add official URLs to `allowed-urls.all.txt` and splice the links, or accept this as a known exception for the run. I have not counted it toward any page's verdict.
+
+---
+
+
+ORCHESTRATOR RULINGS: unlinkable organisations (R3) are accepted unlinked; row records are fixed in the chart, not the draft.
+
+## 1. ai-training-jobs (guide, floor 1,200). VERDICT: FAIL, fix-in-place (23)
+
+Reader-question gate: OK.
+- The row carries its PAA evidence tag.
+- The first sentence of `introText` and of `sections[0]` gives the verdict, and the platform table follows.
+- All 6 on-topic PAA questions are in the FAQ.
+
+1. **title**: `"AI Training Jobs: Legitimate Platforms, Rates, and Catches"` → `"Which AI Training Jobs Are Real and What Each Platform Pays"` (59 chars).
+   - Why: headline tell (colon two-clause formula plus a headline tricolon).
+2. **h1**: `"AI Training Jobs: Legitimate Platforms, Pay Rates, and What Workers Face"` → `"Which AI Training Jobs Are Real and What Each Platform Pays"`.
+   - Why: same headline tell.
+3. **introText**: `"Companies like DataAnnotation, Outlier, Mercor, Alignerr, Mindrift, Handshake AI, and Prolific pay"` → `"Companies like [DataAnnotation](https://www.dataannotation.tech/faqs), [Outlier](https://outlier.ai/faq), [Mercor](https://talent.docs.mercor.com/how-to/payments), [Alignerr](https://www.alignerr.com/), [Mindrift](https://mindrift.ai/), [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32264709473303), and [Prolific](https://researcher-help.prolific.com/en/article/2273bd) pay"`.
+   - Why: unlinked-company. These are the first mentions, and the intro is rendered through `linkify`.
+4. **introText**: `"onboarding tests are frequently unpaid, and any platform asking you to pay an upfront fee is an outright scam."` → `"most platforms do not say whether onboarding tests are paid, and any platform asking you to pay an upfront fee is a scam."`.
+   - Why: unsupported. The fact list marks onboarding pay as UNKNOWN for DataAnnotation, Outlier, Mindrift, Alignerr and Prolific.
+5. **sections[0].body** (repeat-link strip, needed once #3 is applied). Unlink each table cell:
+   - `"| [DataAnnotation](https://www.dataannotation.tech/faqs) |"` → `"| DataAnnotation |"`
+   - `"| [Outlier](https://outlier.ai/faq) |"` → `"| Outlier |"`
+   - `"| [Mercor](https://talent.docs.mercor.com/how-to/payments) |"` → `"| Mercor |"`
+   - `"| [Alignerr](https://www.alignerr.com/) |"` → `"| Alignerr |"`
+   - `"| [Mindrift](https://mindrift.ai/) |"` → `"| Mindrift |"`
+   - `"| [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) |"` → `"| Handshake AI |"`
+   - `"| [Prolific](https://researcher-help.prolific.com/en/article/2273bd) |"` → `"| Prolific |"`
+   - Why: links on first mention only.
+6. **sections[0].body**: `"For general work, entry-level rates begin around $15 to $25 per hour, while technical domains reach $40 to $125 or more per hour."` → `"Mindrift lists entry-level work at $15 to $30 per hour, and DataAnnotation's coding projects start at $40 to $150 or more per hour."`.
+   - Why: "$15 to $25" is not a published figure. The sourced figures are Mindrift $15–30 and DataAnnotation coding $40–150+.
+7. **sections[0].body**: `"| Platform | Operator | Published Pay | Payment Method | Best Suited For |"` → `"| Platform | Operator | Published Pay (as of October 2026) | Payment Method | Best Suited For |"`.
+   - Why: the row prompt requires "as of October 2026" on rates.
+8. **sections[0].body**: `"| Weekly payout |"` → `"| Not published (paid weekly) |"`.
+   - Why: the column is the payment method. Alignerr's provider is UNKNOWN; the fact list only says it pays weekly.
+9. **sections[1].heading**: `"What the Work Actually Involves Daily"` → `"What the Work Involves Day to Day"`.
+   - Why: headline tell ("actually").
+10. **sections[1].body** (repeat links):
+    - `"According to [DataAnnotation's official FAQ](https://www.dataannotation.tech/faqs), contributors"` → `"According to DataAnnotation's FAQ, contributors"`
+    - `"Workers on [Outlier](https://outlier.ai/faq) generate"` → `"Workers on Outlier generate"`
+    - `"On the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303), fellows"` → `"On the Handshake AI Fellowship, fellows"`
+11. **sections[2].body** (repeat links):
+    - `"At [DataAnnotation](https://www.dataannotation.tech/faqs), the initial"` → `"At DataAnnotation, the initial"`
+    - `"Onboarding on [Outlier](https://outlier.ai/faq) takes"` → `"Onboarding on Outlier takes"`
+    - `"the [Handshake AI Fellowship](https://support.joinhandshake.com/hc/en-us/articles/32264709473303) restricts"` → `"the Handshake AI Fellowship restricts"`
+12. **sections[2].body**: `"Whether onboarding and assessment time is paid varies sharply by platform."` → `"Most platforms in the table do not publish whether onboarding and assessment time is paid."`.
+    - Why: unsupported. Pay is unknown for most platforms, so a claim that it "varies sharply" has no source.
+13. **sections[3].body**:
+    - `"Each training platform uses distinct disbursement processors and payout schedules. [DataAnnotation](https://www.dataannotation.tech/faqs) delivers"` → `"Each platform publishes its own payout schedule and payment processors. DataAnnotation delivers"`. Why: false as written, because DataAnnotation and Outlier both use PayPal; also strips a repeat link.
+    - `"[Outlier](https://outlier.ai/faq) processes"` → `"Outlier processes"`
+    - `"According to [Mercor talent documentation](https://talent.docs.mercor.com/how-to/payments), payments"` → `"According to Mercor's talent documentation, payments"`
+14. **sections[4].heading**: `"The Real Catches: Project Droughts, Rate Drops, and Lawsuits"` → `"Work Droughts and Worker Lawsuits Across Platforms"`.
+    - Why: headline tell (colon-drama, "Real", tricolon).
+15. **sections[4].body**:
+    - Quote: `"Contractors face frequent periods without work, abrupt account closures, and sudden rate shifts. On Trustpilot, reviews for [DataAnnotation](https://www.trustpilot.com/review/dataannotation.tech) (3.9 score out of 5 from 1,973 reviews) and [Outlier](https://www.trustpilot.com/review/outlier.ai) (4.1 score out of 5 from 5,483 reviews) highlight recurring themes of empty project queues, unpaid test steps, and sudden deactivations with slow support."`
+    - Replacement: `"Contractors on these platforms report long periods without work and sudden account closures. As of October 2026, DataAnnotation scores 3.9 out of 5 from 1,973 reviews on [Trustpilot](https://www.trustpilot.com/review/dataannotation.tech), and Outlier scores [4.1 from 5,483 reviews](https://www.trustpilot.com/review/outlier.ai). Recurring complaint themes across both include empty project queues, unpaid test steps, sudden deactivations, and slow support."`
+    - Why: the original states Trustpilot themes as fact, the Trustpilot name itself is unlinked, the second sentence is overloaded (39 words), and the scores need a date.
+16. **sections[4].body**:
+    - Quote: `"that Mercor concluded a Meta project named Musen, which peaked at over 5,000 workers, and subsequently offered a replacement project named Nova at $16 per hour, which was $5 less than the Musen rate."`
+    - Replacement: `"that Mercor ended a Meta project named Musen, which peaked at over 5,000 workers. Mercor then offered a similar project, Nova, at $16 per hour, $5 less than Musen paid. Mercor called the report inaccurate."`
+    - Why: the sentence is overloaded (40 words) and omits Mercor's sourced denial.
+17. **sections[4].body** (McKinney settlement):
+    - Quote: `"As documented by [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement), a $12,500,000 settlement was negotiated covering California contributors between December 2020 and February 2026, with a final approval hearing set for October 30, 2026."`
+    - Replacement: `"According to [Claim Depot](https://www.claimdepot.com/settlements/mckinney-scaleai-settlement), Scale AI agreed to a $12,500,000 settlement covering California contributors between December 2020 and February 2026. The settlement is pending final approval at an October 30, 2026 hearing, and the defendants deny the allegations."`
+    - Why: the settlement must be described as pending final approval, with the defendants' denial, per the fact list.
+18. **sections[4].body** (Surge AI):
+    - Quote: `"Additionally, a May 2025 misclassification suit was filed against [Surge AI](https://clarksonlawfirm.com/clarkson-represents-surge-ai-workers-in-labor-law-class-action), though public court documents do not name DataAnnotation as a party."`
+    - Replacement: `"In May 2025, [Clarkson Law Firm](https://clarksonlawfirm.com/clarkson-represents-surge-ai-workers-in-labor-law-class-action) filed a misclassification class action against Surge AI. News reports cited on [Wikipedia](https://en.wikipedia.org/wiki/Surge_AI) have linked Surge AI to DataAnnotation, but DataAnnotation's site does not confirm that, and the firm's announcement does not name DataAnnotation."`
+    - Why: the original ties Surge AI to DataAnnotation by implication without framing the link as reported and unconfirmed. "Public court documents" is also unsupported: only the firm's page and a CourtListener search were checked.
+19. **sections[5].body**:
+    - `"Criminals regularly impersonate AI platforms to steal personal information or recruit victims into financial schemes."` → `"Scammers pose as recruiters for AI rating and review work to get victims to send them money."` Why: unsupported, since the FTC sources say nothing about stealing personal information.
+    - `"As [DataAnnotation's FAQ](https://www.dataannotation.tech/faqs) states"` → `"As DataAnnotation's FAQ states"` (repeat link).
+    - `"Similarly, [Mindrift's blog](https://mindrift.ai/blog/how-mindrift-pays) clarifies that applications and qualification tests are completely free, and contributors never need to buy courses or materials."` → `"Similarly, Mindrift's blog says joining and assessments should be free, and contributors never have to buy courses or credentials."` Why: overstated (the source says "should be free" and "courses or credentials"); also a repeat link.
+20. **sections[6].body**:
+    - Quote: `"Earnings from AI training jobs constitute self-employment income, meaning platforms do not withhold federal, state, or FICA taxes from your payments. [Mercor's tax documentation](https://talent.docs.mercor.com/policies/us-taxes) explicitly informs contractors that they must fulfill their own tax obligations, noting that US workers"`
+    - Replacement: `"Earnings from AI training jobs are 1099 contractor income, so you handle your own taxes. [Mercor's tax documentation](https://talent.docs.mercor.com/policies/us-taxes) says Mercor does not deduct taxes from payments. It adds that US workers"`
+    - Why: "platforms do not withhold" is generalised to every platform, but DataAnnotation's and Outlier's tax policies are UNKNOWN. The Mercor sentence was overloaded (35 words).
+21. **sections[6].body**:
+    - `"Similarly, [Handshake AI](https://support.joinhandshake.com/hc/en-us/articles/32263614087575-Handshake-AI-payments-processing) notes"` → `"Similarly, Handshake AI notes"` (repeat link).
+    - `"For general contractor rules, check our [dataannotation taxes guide](/self-employment-tax/dataannotation-taxes/) or use our [self-employment tax calculator](/self-employment-tax/) to determine your exact tax obligations."` → `"For the platform-specific rules, read our [DataAnnotation taxes guide](/self-employment-tax/dataannotation-taxes/) or use our [self-employment tax calculator](/self-employment-tax/) to estimate what you owe."` Why: brand casing, and the calculator gives an estimate, not an exact figure.
+22. **faqs[2].answer** and **faqs[3].answer**: neither answers its question, because the claim check cut the answering sentence.
+    - faqs[2]: `"Handshake AI and Mercor require graduate degrees or domain expertise."` → `"Going by published requirements, Mindrift and DataAnnotation have lower entry bars than Handshake AI or Mercor. Mindrift lists entry-level work at $15 to $30 per hour, and DataAnnotation asks for a bachelor's degree or equivalent real-world experience plus fluent English. Handshake AI fellowships mostly require a Master's, PhD, or Postdoc, and Mercor recruits domain experts such as scientists, doctors, and lawyers."`
+    - faqs[3]: `"Technical projects in software engineering, law, and medicine require verified professional credentials or degrees."` → `"Some platforms accept applicants without specialist experience. DataAnnotation asks for a bachelor's degree or equivalent real-world experience, Outlier asks for at least an associate degree, and Mindrift advertises entry-level work at $15 to $30 per hour. Professional projects in law, finance, or medicine require credentials."` Why: "software engineering" credentials is also unsupported.
+23. **faqs[4].answer** and **faqs[5].answer**:
+    - faqs[4]: `"Pay ranges from $15 to $30 per hour for entry-level tasks on Mindrift to over $85 per hour on Mercor according to TechCrunch. Highly specialized coding or STEM projects on DataAnnotation advertise rates starting at $40 to $150 or more per hour."` → `"Published rates run from $15 to $30 per hour for entry-level tasks on Mindrift to $30 to $125 per hour for Handshake AI fellows. TechCrunch reported that Mercor experts average over $85 per hour. DataAnnotation advertises coding projects starting at $40 to $150 or more per hour and STEM projects at $40 to $125 or more."` Why: the original treats an average as the top of the range, and STEM is $40–125+, not $40–150+.
+    - faqs[5]: `"Yes, US contractors earning reportable freelance income receive a tax form from the platform or its payment processor. For example, Mercor"` → `"It depends on the platform. Mercor"`
+    - faqs[5]: `"during the tax year."` → `"during the tax year. DataAnnotation and Outlier do not publish a tax-form policy."` Why: the original generalises a 1099 to every platform, but those two policies are UNKNOWN.
+
+Advisory:
+- sections[6] repeats Mercor's "$600" 1099-NEC figure without noting the IRS 1099-NEC threshold of $2,000 for tax years after 2025 (the Mercor page does note it).
+- The `meta.guards` flag "emptied by the claim check" lists five sections that are not empty. This looks like a false-positive flag in `content_gen.py`.
+- The sections[0] heading is a question plus a second clause, but it is the heading the row mandated, so I left it.
+- `low information gain`: sections[1].
+
+---
+
