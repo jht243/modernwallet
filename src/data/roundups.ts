@@ -16,6 +16,8 @@ export interface RoundupEntry {
    *  edited; the byline and schema fall back to the site-wide LAST_UPDATED. */
   updated?: string;
   slug: string;
+  /** true = no Mediavine ads on this page (paid sponsor placements). */
+  noAds?: boolean;
   title: string;
   metaDescription: string;
   targetKeyword: string;
@@ -3908,6 +3910,7 @@ export const ROUNDUPS: RoundupEntry[] = [
   {
     updated: "2026-10-08",
     slug: "best-estate-planning-software",
+    noAds: true,
     title: "Best Estate Planning Software 2026: Verified Picks",
     metaDescription:
       "Best estate planning software of 2026: Trust & Will, LegalZoom, Nolo, FreeWill compared. Wills, trusts, POA, healthcare directives — pricing and use cases.",

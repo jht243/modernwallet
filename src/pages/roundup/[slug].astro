@@ -76,7 +76,7 @@ const relatedEntries = entry.relatedComparisons
       .filter((c): c is NonNullable<typeof c> => c !== undefined)
   : [];
 ---
-<BaseLayout title={entry.title} description={entry.metaDescription}>
+<BaseLayout title={entry.title} description={entry.metaDescription} noAds={entry.noAds}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdItemList)} />
   {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
