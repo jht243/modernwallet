@@ -556,18 +556,32 @@ def _anth_key_dead(err: str) -> bool:
 
 
 def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinking: str) -> dict:
-    effort = "low" if CMD == "preflight" else ANTHROPIC_EFFORT
+    # CLAUDE-PARITY (2026-10-10): parity with the Gemini/OpenAI calls — the claim checker (a JSON auditor) runs at
+    # the level it asks for (CONTENT_CLAIMCHECK_THINKING, medium); page/section writers at ANTHROPIC_EFFORT.
+    if CMD == "preflight":
+        effort = "low"
+    elif os.environ.get("CONTENT_KIND") == "claim-check" and thinking in ("low", "medium", "high"):
+        effort = thinking
+    else:
+        effort = ANTHROPIC_EFFORT
     # CLAUDE-TOKEN-FLOOR (2026-10-10): thinking counts against max_tokens, and radar callers pass ~12k caps sized for
     # Gemini — at effort high Opus spent them thinking and came back truncated (billed, discarded).
     # Streaming bills only tokens actually produced, so a writer call gets at least 32k.
     if CMD != "preflight":
         max_tokens = max(max_tokens, int(os.environ.get("CONTENT_ANTHROPIC_MIN_TOKENS", "32000")))
+    # Gemini gets responseMimeType=application/json and OpenAI json_object; Claude has no
+    # schema-free JSON mode, so JSON calls carry the instruction at the END of the user turn
+    # (the cached system prompt stays byte-identical).
+    if JSON_MODE:
+        prompt = (prompt or "") + ("\n\nReturn ONLY the JSON object: no prose before or after it, "
+                                   "no markdown code fences.")
     payload = {"model": model, "max_tokens": min(max_tokens, 128000),
-               "system": [{"type": "text", "text": system or " ",
-                           **({"cache_control": {"type": "ephemeral"}} if CACHE_ON and len(system or "") >= 8000 else {})}],
                "messages": [{"role": "user", "content": prompt}],
                "thinking": {"type": "adaptive"},
                "output_config": {"effort": effort}}
+    if (system or "").strip():   # a whitespace-only system block is a 400 on Claude
+        payload["system"] = [{"type": "text", "text": system,
+                              **({"cache_control": {"type": "ephemeral"}} if CACHE_ON and len(system) >= 8000 else {})}]
     errors = []
     for name, key in _anthropic_keys():
         try:
@@ -576,6 +590,10 @@ def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinki
             if _anth_key_dead(str(e)):
                 _ANTH_DRY.add(name)
                 log(f"anthropic key {name} unusable ({str(e)[:120]}) — trying the next key in the pool")
+                errors.append(f"{name}: {str(e)[:160]}")
+                continue
+            if "HTTP 429" in str(e) or "HTTP 529" in str(e) or "overloaded" in str(e):
+                log(f"anthropic key {name} rate-limited/overloaded after retries — trying the next key")
                 errors.append(f"{name}: {str(e)[:160]}")
                 continue
             raise
