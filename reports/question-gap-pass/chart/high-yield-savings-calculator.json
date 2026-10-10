@@ -1,0 +1,288 @@
+{
+ "route": "/investing/high-yield-savings-calculator/",
+ "slug": "high-yield-savings-calculator",
+ "file": "src/data/spokes-investing.ts",
+ "kind": "INVESTING_SPOKES",
+ "clicks": 1,
+ "impressions": 260,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "www.sofi.com",
+  "www.bankrate.com",
+  "www.cit.com",
+  "bell.bank",
+  "www.raisin.com"
+ ],
+ "forum_dominated": false,
+ "questions": [
+  {
+   "q": "How much money will $10,000 make in a high-yield savings account?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "FAQ lump-sum amounts",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How much will $100,000 grow in a high-yield savings account?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Same FAQ ($4,500 year one)",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered year one"
+  },
+  {
+   "q": "Which bank gives 7% interest on savings?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Best/highest APY FAQ; 0.38% national rate",
+   "elsewhere": "/roundup/best-high-yield-savings-accounts/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "How much will $100,000 make in a high-yield savings?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Same FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Can you live off interest of $100,000?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "$100,000 earns about $4,500 stated, never framed as monthly income",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Derivable from page figures; PAA + AI Overview topic"
+  },
+  {
+   "q": "How much money do I need to make $3,000 a month in interest?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "$1,000/month FAQ gives $266,667 method",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Merge with live-off-interest into one FAQ; scale of existing figure"
+  },
+  {
+   "q": "What does HYSA mean?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 1",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How accurate is it?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 2",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "APY vs interest rate?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 3",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is it safe / FDIC?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQs",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is it a good investment?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Do rates change?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is interest taxable / 1099-INT?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Withdraw anytime / limits?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Bank fails?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Credit score impact?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Transfer time?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "HYSA or pay off debt?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "HYSA vs CD / money market?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Links in howItWorks",
+   "elsewhere": "/compare/hysa-vs-cd/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "How big an emergency fund?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Mistakes list link",
+   "elsewhere": "/guides/how-much-emergency-fund/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "Joint/business accounts?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Sign-up bonuses taxable?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Daily vs monthly compounding difference?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Monthly compounding stated",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 low value",
+   "reason": "Minor"
+  },
+  {
+   "q": "What is a good HYSA rate today?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "0.38% national, 4x-5x; 4.5% example",
+   "elsewhere": "/roundup/best-high-yield-savings-accounts/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Add",
+   "q": "Can you live off the interest from $100,000, and how much do you need to earn $3,000 a month?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "At this page's 4.5% example APY, $100,000 earns about $4,500 a year (stated in FAQ 'How much will $10,000, $20,000, or $100,000 make')",
+     "source": "page"
+    },
+    {
+     "fact": "$266,667 earns about $12,000 a year / $1,000 a month at 4.5% (stated in FAQ 'How much money do I need to make $1,000 a month in interest')",
+     "source": "page"
+    },
+    {
+     "fact": "Derived arithmetic only: $4,500/12 = $375 a month; $3,000 a month = $36,000 a year = about $800,000 at 4.5% (3 x $266,667)",
+     "source": "page figures, arithmetic"
+    },
+    {
+     "fact": "Rates are variable; interest taxed as ordinary income",
+     "source": "page FAQs; https://www.irs.gov/forms-pubs/about-form-1099-int"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/forms-pubs/about-form-1099-int"
+   ],
+   "task": "Append one FAQ combining both PAA. Use only the figures above ($4,500/yr, $375/mo, ~$800,000 for $3,000/mo at 4.5%), note the 4.5% is the page's example not a guarantee and interest is taxable before spending, say $100,000 alone covers little of a monthly budget. Link /investing/withdrawal-calculator/ only if it exists in site-index; no other figures."
+  }
+ ]
+}

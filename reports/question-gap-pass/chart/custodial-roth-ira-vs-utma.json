@@ -1,0 +1,305 @@
+{
+ "route": "/compare/custodial-roth-ira-vs-utma/",
+ "slug": "custodial-roth-ira-vs-utma",
+ "file": "src/data/comparisons.ts",
+ "kind": "COMPARISONS",
+ "clicks": 1,
+ "impressions": 94,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "www.fidelity.com",
+  "meetfabric.com",
+  "www.youtube.com",
+  "mlaem.fs.ml.com",
+  "www.merceradvisors.com",
+  "investor.vanguard.com"
+ ],
+ "forum_dominated": true,
+ "questions": [
+  {
+   "q": "What is the loophole for traditional IRA to Roth conversion?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "-",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 off-topic",
+   "reason": "About adult conversions; not this topic"
+  },
+  {
+   "q": "What happens to the custodial account when a child turns 18?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Table control row; core trade-off text",
+   "elsewhere": "/guides/utma-custodial-account-explained/",
+   "value": "High",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "Does Wells Fargo have Roth IRA?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "-",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 off-topic",
+   "reason": "Brand-specific, off-topic"
+  },
+  {
+   "q": "How much tax will I pay on a $50,000 Roth IRA conversion?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "-",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 off-topic",
+   "reason": "Adult conversion, off-topic"
+  },
+  {
+   "q": "What does Dave Ramsey say about Roth conversions?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "-",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 off-topic",
+   "reason": "Opinion-bait"
+  },
+  {
+   "q": "How much will $10,000 in a Roth IRA be worth in 20 years?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "Not covered",
+   "elsewhere": "/investing/roth-ira-calculator/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Calculator exists; not linked"
+  },
+  {
+   "q": "Can I convert or roll a UTMA into a custodial Roth IRA?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "One sentence in smart-move section: 'doesn't roll over automatically'",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Top GSC query for the page ('convert utma to roth ira'); only a one-line mention; IRS cash/compensation rules groundable"
+  },
+  {
+   "q": "Can my child withdraw from the custodial Roth early without penalty?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Table: contributions withdrawable anytime; 'Roth rules make spending costly'",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Gates the access decision; IRS 10% tax on includible part"
+  },
+  {
+   "q": "Is there a minimum age?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Over-contribution penalty?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Which is better?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Can a child have both?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Roth vs custodial brokerage?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Does a child need a job for a UTMA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Financial aid?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Custodian dies?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Lose money?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "UTMA vs UGMA?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Section links utma-vs-ugma",
+   "elsewhere": "/compare/utma-vs-ugma/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "Kiddie tax details / avoid it?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Table threshold; links guide",
+   "elsewhere": "/guides/custodial-account-taxes-kiddie-tax/",
+   "value": "High",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "UTMA vs 529?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Links 529-vs-utma",
+   "elsewhere": "/compare/529-vs-utma/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "Fees / grandparent opening?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Roundup linked",
+   "elsewhere": "/roundup/best-custodial-roth-ira-providers/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "Can parent take UTMA money back?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Core trade-off: irrevocable",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How to open a custodial Roth?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Links guide",
+   "elsewhere": "/guides/custodial-roth-ira-for-kids/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Add",
+   "q": "Can I convert or roll a UTMA into a custodial Roth IRA?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "Roth IRA contributions must be 'in the form of money (cash, check, or money order)'; property cannot be contributed",
+     "source": "https://www.irs.gov/publications/p590a"
+    },
+    {
+     "fact": "2025 IRA limit is the smaller of $7,000 or taxable compensation; interest, dividend and rental income are not compensation",
+     "source": "https://www.irs.gov/publications/p590a"
+    },
+    {
+     "fact": "Page: UTMA assets are the child's; gains face the kiddie tax; Roth capped at earned income, max $7,000 (2025)",
+     "source": "page table and core trade-off"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/publications/p590a",
+    "https://www.irs.gov/taxtopics/tc553"
+   ],
+   "task": "Append FAQ 3-4 sentences: no direct conversion or rollover exists; UTMA money is not compensation and only cash goes into a Roth, up to the lesser of earned income or $7,000 (2025); selling UTMA investments to fund it can trigger taxable gains under the kiddie tax; the Roth must be funded from the child's earnings (a gift can cover it, per page). Link /compare/custodial-roth-ira-vs-brokerage-account/ (already linked on page) and /investing/roth-ira-calculator/. No other figures."
+  },
+  {
+   "action": "Add",
+   "q": "Can my child take money out of a custodial Roth IRA early without penalty?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "Page table: Roth contributions are withdrawable anytime; Roth rules discourage early spending",
+     "source": "page table row 'What the money is for'"
+    },
+    {
+     "fact": "IRS: early distributions are generally those before age 59 1/2 and the 10% additional tax applies to the part of the distribution included in gross income, in addition to regular income tax",
+     "source": "https://www.irs.gov/taxtopics/tc557"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/taxtopics/tc557",
+    "https://www.irs.gov/publications/p590b"
+   ],
+   "task": "Append FAQ 3 sentences: contributions (what was put in) can come out without the early-withdrawal tax per page; earnings taken before 59 1/2 can be taxable and face the IRS 10% additional tax on the includible part; do not describe 5-year rule or exceptions; point to Pub 590-B."
+  },
+  {
+   "action": "Link",
+   "q": "How much will $10,000 in a Roth IRA be worth in 20 years?",
+   "target": "link-from:Add FAQ above or section 'The smart move for a working teen'",
+   "link_to": "/investing/roth-ira-calculator/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one in-context link to the Roth IRA calculator for projecting growth."
+  }
+ ]
+}

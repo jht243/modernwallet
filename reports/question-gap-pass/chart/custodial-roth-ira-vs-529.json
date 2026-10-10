@@ -1,0 +1,311 @@
+{
+ "route": "/compare/custodial-roth-ira-vs-529/",
+ "slug": "custodial-roth-ira-vs-529",
+ "file": "src/data/comparisons.ts",
+ "kind": "COMPARISONS",
+ "clicks": 0,
+ "impressions": 110,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [],
+ "forum_dominated": true,
+ "questions": [
+  {
+   "q": "Which is better, Roth or 529?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Verdict + \"When to use both together\"",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Verdict states 529 for young kids/college, custodial Roth once child earns; use both."
+  },
+  {
+   "q": "Why is an IRA better than an investment account?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/compare/brokerage-vs-ira/",
+   "value": "Low",
+   "action": "Link",
+   "reason": "Different comparison; /compare/brokerage-vs-ira/ answers it."
+  },
+  {
+   "q": "How much money should a 5 year old have in 529?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/guides/college-savings-by-age/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Age-benchmark answer lives on /guides/college-savings-by-age/."
+  },
+  {
+   "q": "Who should not use a Roth IRA?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Earned-income gate section",
+   "elsewhere": "/guides/custodial-roth-ira-for-kids/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Already linked guide covers eligibility; page states the earned-income gate."
+  },
+  {
+   "q": "Why don't more people use Roth IRA?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — off-topic",
+   "reason": "Opinion-bait, not a follow-up for this decision."
+  },
+  {
+   "q": "What does Warren Buffett say about Roth IRA?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — off-topic",
+   "reason": "Celebrity opinion."
+  },
+  {
+   "q": "Can a child have both a custodial Roth IRA and a 529?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 1",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Direct FAQ."
+  },
+  {
+   "q": "Does a 529 need earned income?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 2; table",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Direct FAQ."
+  },
+  {
+   "q": "What is the custodial Roth IRA contribution limit this year?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Table + earned-income section ($7,000, 2025)",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Strengthen",
+   "reason": "Page cites 2025 $7,000; IRS 2026 limit is $7,500 (stale figure on a limit that gates eligibility)."
+  },
+  {
+   "q": "Can a custodial Roth IRA be used to pay for college?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Table row \"Non-qualified withdrawal\"; FAQ \"Which is better for college savings?\"",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Page says Roth is \"retirement, not education\" but never says earnings can leave for college without the 10% penalty (income tax may still apply)."
+  },
+  {
+   "q": "Can parents put their own money into a child's custodial Roth?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Earned-income gate",
+   "elsewhere": "/guides/custodial-roth-ira-for-kids/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Guide states a parent can gift the contribution as long as the child earned at least that much; already linked from this page."
+  },
+  {
+   "q": "What counts as earned income for a child (babysitting, allowance)?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Earned-income gate (babysitting, lawn care)",
+   "elsewhere": "/guides/custodial-roth-ira-for-kids/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Guide has a dedicated section and FAQ; already linked."
+  },
+  {
+   "q": "Does a 529 hurt financial aid?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Table + \"Limits, aid\" section",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "5.64% parental asset rate stated."
+  },
+  {
+   "q": "Does a custodial Roth count on the FAFSA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Table; Limits section",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Retirement accounts not reported."
+  },
+  {
+   "q": "Can 529 money roll into a Roth IRA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 4; SECURE 2.0 section",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "$35,000, 15-year rule covered."
+  },
+  {
+   "q": "What happens to a custodial Roth at 18 or 21?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 5",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Control transfers at age of majority."
+  },
+  {
+   "q": "What if my child does not use the 529 for school?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Table row non-qualified withdrawal; Roth rollover",
+   "elsewhere": "/guides/529-leftover-money-options/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Dedicated 5-option leftover guide; not yet linked from this page."
+  },
+  {
+   "q": "Which state tax break does the 529 give?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Table \"most states\"",
+   "elsewhere": "/guides/529-plan-tax-deduction-by-state/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "State-by-state guide exists."
+  },
+  {
+   "q": "Can grandparents contribute to either account?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Earned-income gate (grandparent funds 529)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — low value",
+   "reason": "Mentioned for 529; Roth gifting covered in linked guide."
+  },
+  {
+   "q": "Where do I open a custodial Roth IRA?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/roundup/best-custodial-roth-ira-providers/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Provider roundup exists."
+  },
+  {
+   "q": "Is the gift-tax exclusion a limit on 529 contributions?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Table + Limits section",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "~$19,000/yr and lifetime exemption explained."
+  },
+  {
+   "q": "Is a Trump Account a better option than either?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/compare/custodial-roth-ira-vs-trump-account/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated comparison exists."
+  },
+  {
+   "q": "What if my teen has a job but low income?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Table: lesser of earnings or limit",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Cap is child's earnings."
+  },
+  {
+   "q": "How do I weigh a custodial Roth vs a UTMA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Last section link",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Already linked."
+  }
+ ],
+ "actions": [
+  {
+   "action": "Strengthen",
+   "q": "What is the custodial Roth IRA contribution limit this year?",
+   "target": "section:The earned-income gate decides eligibility (also table row \"Annual contribution limit\" and intro/verdict mentions of $7,000)",
+   "fact_basis": [
+    {
+     "fact": "2026 IRA contribution limit is $7,500, up from $7,000 for 2025",
+     "source": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+    },
+    {
+     "fact": "Page text: \"The IRS caps the contribution at the child's earnings or the annual IRA limit ($7,000 in 2025), whichever is lower.\"",
+     "source": "this page, section \"The earned-income gate decides eligibility\""
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+   ],
+   "task": "Update the stale $7,000 (2025) limit to the 2026 figure of $7,500 wherever the page states it (intro, table, earned-income section), keeping the \"lesser of child's earnings or the limit\" rule; one sentence, no other new figures."
+  },
+  {
+   "action": "Add",
+   "q": "Can a custodial Roth IRA be used to pay for college?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "Roth IRA contributions can be withdrawn anytime tax- and penalty-free (page table, FAQ text and \"Different tax breaks\" section)",
+     "source": "this page, \"Different tax breaks for different goals\""
+    },
+    {
+     "fact": "Withdrawals from an IRA (traditional or Roth) before 59½ for qualified higher education expenses (tuition, fees, books, supplies, equipment) of the owner, spouse, child or grandchild are not subject to the 10% additional tax; income tax may still be owed on the taxable part",
+     "source": "https://www.irs.gov/publications/p970 (Education Exception to Additional Tax on Early IRA Distributions)"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/publications/p970"
+   ],
+   "task": "Add FAQ \"Can a custodial Roth IRA pay for college?\": yes in practice (contributions out tax/penalty-free; earnings used for qualified higher-ed expenses skip the 10% additional tax but income tax can still apply), so a Roth can back up a 529 but a 529 is cleaner for tuition; no dollar figures; link [529 leftover options](/guides/529-leftover-money-options/) only if natural."
+  },
+  {
+   "action": "Link",
+   "q": "What if my child does not use the 529 for school?",
+   "target": "link-from:FAQ \"Can 529 money be moved into a Roth IRA?\" or section \"Limits, aid, and the SECURE 2.0 bridge\"",
+   "link_to": "/guides/529-leftover-money-options/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one in-text link to the leftover-529 guide where the SECURE 2.0 Roth rollover is mentioned."
+  },
+  {
+   "action": "Link",
+   "q": "How much money should a 5 year old have in 529?",
+   "target": "link-from:section \"When to use both together\"",
+   "link_to": "/guides/college-savings-by-age/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a short in-text link to the college-savings-by-age guide for benchmark amounts."
+  }
+ ]
+}

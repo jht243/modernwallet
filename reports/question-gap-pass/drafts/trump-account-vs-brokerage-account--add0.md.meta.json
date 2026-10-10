@@ -1,0 +1,67 @@
+{
+ "slug": "trump-account-vs-brokerage-account--add0",
+ "schema": "none",
+ "kind": "section",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 75,
+ "floor": 0,
+ "input_tokens": 25159,
+ "output_tokens": 937,
+ "thinking_tokens": null,
+ "cached_tokens": 24177,
+ "est_cost_usd": 0.0275,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 75,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L1",
+     "quote": "It is held with a financial institution under IRA-style rules: the money is locked until January 1 of the year the child turns 18, and it can only hold an S&P 500 or U.S.-equity index fund.",
+     "replacement": "Under its rules, the money is locked until January 1 of the year the child turns 18, and it can only hold an S&P 500 or U.S.-equity index fund.",
+     "type": "unsupported",
+     "why": "Fact list never says it is held with a financial institution."
+    },
+    {
+     "id": "L1",
+     "quote": "After 18 it works like a traditional IRA, with withdrawals taxed as ordinary income, while a taxable brokerage account is fully liquid and can hold any investment.",
+     "replacement": "After 18 it works like a traditional IRA, while a brokerage account is fully liquid and can hold any investment.",
+     "type": "unsupported",
+     "why": "Ordinary-income taxation and 'taxable' brokerage are not in the fact list."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 89
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 16.7,
+ "response_id": "msg_011CfuLj4MrqzFRLyv1s6v78",
+ "generated_at": "2026-10-10T22:25:15+0000"
+}

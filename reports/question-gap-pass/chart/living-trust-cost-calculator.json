@@ -1,0 +1,293 @@
+{
+ "route": "/estate-planning/living-trust-cost-calculator/",
+ "slug": "living-trust-cost-calculator",
+ "file": "src/data/spokes-estate-planning.ts",
+ "kind": "ESTATE_PLANNING_SPOKES",
+ "clicks": 2,
+ "impressions": 55,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "www.nationwide.com",
+  "www.chase.com",
+  "www.youtube.com",
+  "www.aflac.com",
+  "www.progressive.com",
+  "www.ethos.com",
+  "www.wsj.com",
+  "www.texastrustlaw.com",
+  "www.martellalaw.com",
+  "www.investopedia.com"
+ ],
+ "forum_dominated": false,
+ "questions": [
+  {
+   "q": "Is it smart to put a life insurance policy in a trust?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "FAQs on ILIT disadvantages and how-to",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered by two FAQs"
+  },
+  {
+   "q": "What are the disadvantages of putting life insurance in trust?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What should you not put in a trust?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "FAQ funding cost mentions assets that should stay out via roundup",
+   "elsewhere": "/roundup/best-estate-planning-software/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "What is the 3 year rule for life insurance trust?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "FAQs cite IRC 2035(a)",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What are five assets that should never be included in a living trust?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Same as above",
+   "elsewhere": "/roundup/best-estate-planning-software/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "How much does it cost to put life insurance in a trust?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "FAQ $2,500-$4,000",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How much does a living trust cost?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 1",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Living trust vs will?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 2",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Revocable vs irrevocable?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 3",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Step-by-step setup?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 4",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How long does it take?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ timeline is qualitative",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 low value",
+   "reason": "No grounded figures available; qualitative answer adequate"
+  },
+  {
+   "q": "Cost to fund?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Medicaid protection?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Online setup?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Maintenance cost?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Successor trustee?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is it worth the cost?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered; links guide"
+  },
+  {
+   "q": "Downside?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "7-year rule?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Does a living trust protect me if I become incapacitated?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Only in passing in successor trustee FAQ",
+   "elsewhere": "/compare/power-of-attorney-vs-trust/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Dedicated comparison covers incapacity planning vs POA; not linked"
+  },
+  {
+   "q": "Living trust vs Lady Bird deed (cheaper probate avoidance)?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "Not covered",
+   "elsewhere": "/compare/living-trust-vs-lady-bird-deed/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated comparison; not linked"
+  },
+  {
+   "q": "Probate cost vs trust cost for my estate?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Probate fee discussion in howItWorks; links probate calculator",
+   "elsewhere": "/probate/cost-vs-trust-calculator/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated calculator; not linked (probate fee calculator is linked)"
+  },
+  {
+   "q": "Does the trust get its own tax return?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Maintenance FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Can I retitle my IRA/401(k) into the trust?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "Only beneficiary designation advice",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 ungrounded",
+   "reason": "IRS Pub 590-A/B fetched do not state retitling treatment in visible text"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Link",
+   "q": "Does a living trust protect me if I become incapacitated?",
+   "target": "link-from:FAQ 'Living trust vs will \u2014 which do I need?'",
+   "link_to": "/compare/power-of-attorney-vs-trust/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one in-context link to the power-of-attorney vs trust comparison with a clause about incapacity planning."
+  },
+  {
+   "action": "Link",
+   "q": "Living trust vs Lady Bird deed (cheaper probate avoidance)?",
+   "target": "link-from:FAQ 'Is a living trust worth the cost?'",
+   "link_to": "/compare/living-trust-vs-lady-bird-deed/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one in-context link to the Lady Bird deed comparison for readers wanting a cheaper probate-avoidance alternative."
+  },
+  {
+   "action": "Link",
+   "q": "Probate cost vs trust cost for my estate?",
+   "target": "link-from:FAQ 'Is a living trust worth the cost?'",
+   "link_to": "/probate/cost-vs-trust-calculator/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one in-context link to the probate vs trust cost calculator."
+  }
+ ]
+}

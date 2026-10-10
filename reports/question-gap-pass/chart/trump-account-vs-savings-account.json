@@ -1,0 +1,293 @@
+{
+ "route": "/compare/trump-account-vs-savings-account/",
+ "slug": "trump-account-vs-savings-account",
+ "file": "src/data/comparisons.ts",
+ "kind": "COMPARISONS",
+ "clicks": 3,
+ "impressions": 77,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "www.cnn.com",
+  "www.fidelity.com",
+  "www.wbaltv.com",
+  "www.usbank.com",
+  "www.fdic.gov",
+  "abc7ny.com",
+  "www.jacksonhewitt.com",
+  "www.youtube.com",
+  "www.forbes.com"
+ ],
+ "forum_dominated": false,
+ "questions": [
+  {
+   "q": "What is the downside of the new Trump Account?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Sections on liquidity and trade-off; FAQs lock-up, FDIC",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How do Trump savings accounts work?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Intro; verdict links trump-savings-account guide",
+   "elsewhere": "/guides/trump-savings-account/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "How is a Trump Account different than an investment account?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Comparison to savings only; brokerage comparison linked",
+   "elsewhere": "/compare/trump-account-vs-brokerage-account/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "Who benefits from Trump accounts?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Verdict; teen FAQ; eligibility sections",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered by fit guidance"
+  },
+  {
+   "q": "Who owns the money in a Trump account?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "Page covers savings-account ownership only",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Ownership/control is a real fit question; IRS 'exclusive benefit of certain children' + who may establish"
+  },
+  {
+   "q": "How do I open a Trump account?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Link to how-to-open at end of section 'When a savings account still wins'",
+   "elsewhere": "/guides/how-to-open-a-trump-account/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "Does the Trump Account pay interest / what is the rate?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 'which grows more'",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is it FDIC-insured?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ FDIC",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Can I withdraw like a savings account?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ withdraw",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Financial aid impact?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ financial aid",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "SNAP/Medicaid effect?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ benefits",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Teenager?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ teenager",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Move money to savings near 18?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ near 18",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Use both?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ both",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is it worth it?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ 'better choice' links worth-it",
+   "elsewhere": "/guides/trump-account-worth-it/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "Is there a $250 deposit for older kids?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "Not covered",
+   "elsewhere": "/guides/dell-trump-account-250/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated guide; related search 'Trump account for older kids $250'; not linked"
+  },
+  {
+   "q": "When will the $1,000 seed be deposited?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "Not covered",
+   "elsewhere": "/guides/when-will-trump-account-be-funded/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated guide; not linked"
+  },
+  {
+   "q": "How much does the account grow?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Section 'core trade-off'",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is interest on a savings account taxed?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Liquidity, taxes section",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Contribution cap?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Table",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Penalty for early withdrawal after 18?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "Not covered",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 ungrounded",
+   "reason": "No fetched official source states it"
+  },
+  {
+   "q": "What does a savings account earn today?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "~4% in table",
+   "elsewhere": "/investing/high-yield-savings-calculator/",
+   "value": "Low",
+   "action": "Skip \u2014 low value",
+   "reason": "Already linked calculator"
+  },
+  {
+   "q": "Trump account vs IRA?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "Not covered",
+   "elsewhere": "/compare/trump-account-vs-roth-ira/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Related search; comparison exists; not linked from this page"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Add",
+   "q": "Who owns the money in a Trump Account?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "IRS: account is 'a new type of individual retirement account' for a child, established by 'parents, guardians and other authorized individuals'; the publication says it is 'for the exclusive benefit of certain children'",
+     "source": "https://www.irs.gov/trumpaccounts"
+    },
+    {
+     "fact": "Page: locked until Jan 1 of the year the child turns 18; kids savings account is often joint/custodial with a parent as co-owner",
+     "source": "page FAQ 'Who owns a kids savings account'"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/trumpaccounts",
+    "https://www.irs.gov/publications/p590a"
+   ],
+   "task": "Append FAQ 'Who owns the money in a Trump Account?' 2-3 sentences: it is an IRA-type account for the exclusive benefit of the child, opened by a parent/guardian/authorized individual; do NOT state legal ownership transfer mechanics or age specifics beyond the lock-up date; contrast with the savings-account ownership FAQ; point to the Trump Account rules guide (/guides/trump-account-rules/)."
+  },
+  {
+   "action": "Link",
+   "q": "Is there a $250 deposit for older kids?",
+   "target": "link-from:FAQ 'Is a Trump account or savings account the better choice if my child is already a teenager'",
+   "link_to": "/guides/dell-trump-account-250/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one in-context link to the Dell $250 guide in the teenager FAQ where seed eligibility is discussed."
+  },
+  {
+   "action": "Link",
+   "q": "When will the $1,000 seed be deposited?",
+   "target": "link-from:section 'Liquidity, taxes, and the $1,000 seed'",
+   "link_to": "/guides/when-will-trump-account-be-funded/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one in-context link to the funding timeline guide after the $1,000 seed sentence."
+  }
+ ]
+}

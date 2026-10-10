@@ -1,0 +1,60 @@
+{
+ "slug": "trump-account-vs-savings-account--add0",
+ "schema": "none",
+ "kind": "section",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 83,
+ "floor": 0,
+ "input_tokens": 25177,
+ "output_tokens": 830,
+ "thinking_tokens": null,
+ "cached_tokens": 24177,
+ "est_cost_usd": 0.0254,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 83,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L1",
+     "quote": "The money in a Trump Account stays locked until January 1 of the year the child turns 18, and the [Trump Account rules guide](/guides/trump-account-rules/) covers the account's other limits.",
+     "replacement": "The money in a Trump Account stays locked until January 1 of the year the child turns 18, and the [Trump Account rules guide](/guides/trump-account-rules/) covers the account's rules.",
+     "type": "unsupported",
+     "why": "SOURCE lists no limits beyond the lock-up date."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 84
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 17.7,
+ "response_id": "msg_011CfuLj4QbGtkaHuZu5fm14",
+ "generated_at": "2026-10-10T22:25:16+0000"
+}

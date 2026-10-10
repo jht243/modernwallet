@@ -1,0 +1,263 @@
+{
+ "route": "/auto-loan/payoff-calculator/",
+ "slug": "payoff-calculator",
+ "file": "src/data/spokes-auto.ts",
+ "kind": "AUTO_SPOKES",
+ "clicks": 0,
+ "impressions": 261,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "www.marketusafcu.com",
+  "www.bankrate.com",
+  "www.mysccu.com",
+  "www.thezebra.com"
+ ],
+ "forum_dominated": false,
+ "questions": [
+  {
+   "q": "What happens if I pay an extra $100 a month on my car loan?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "workedExample ($1,050 saved, 10 months)",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Exact worked example"
+  },
+  {
+   "q": "How to pay off a 7 year car loan in 3 years?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "PAA; decision-gating process question; answerable with no figures via calculator + CFPB principal instruction"
+  },
+  {
+   "q": "How much should I spend on a car if I make $70,000 a year?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": "/auto-loan/car-affordability-calculator/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Car affordability calculator exists"
+  },
+  {
+   "q": "What happens if I pay $50 extra on my car loan?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "workedExample / calculator",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Same mechanics; calculator"
+  },
+  {
+   "q": "Is it worth paying extra on car payment?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "FAQ: Does paying off early save; howItWorks link",
+   "elsewhere": "/auto-loan/early-payoff-calculator/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Compare-vs-investing page already linked"
+  },
+  {
+   "q": "How many years can 1 extra principal payment a year shorten my loan?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 low value",
+   "reason": "Medium value; no grounded figure"
+  },
+  {
+   "q": "How does a payoff calculator work?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Do auto loans have prepayment penalties?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "How do I ensure extra payments go to principal?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Does early payoff hurt credit?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Lump sum vs monthly extra",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "How do I get a payoff quote?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Pay with a credit card?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Does an extra payment lower my monthly payment?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "howItWorks (shortens term)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 low value",
+   "reason": "Implied; medium"
+  },
+  {
+   "q": "Precomputed interest loans",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "commonMistakes",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Should I refinance instead of paying extra?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "workedExample link",
+   "elsewhere": "/auto-loan/refinance-calculator/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Already linked /auto-loan/refinance-calculator/"
+  },
+  {
+   "q": "How much total interest will I pay on my car loan?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "workedExample",
+   "elsewhere": "/auto-loan/interest-calculator/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Interest calculator exists"
+  },
+  {
+   "q": "Emergency fund before extra payments",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "commonMistakes",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "What happens after payoff: title release",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 ungrounded",
+   "reason": "No fetched primary source"
+  },
+  {
+   "q": "Biweekly payments",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 low value",
+   "reason": "Low value"
+  },
+  {
+   "q": "Why is payoff amount different from statement balance",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "commonMistakes + FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Add",
+   "q": "How can I pay off a 7-year car loan in 3 years?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "Extra money applied to principal shortens the term; CFPB: lenders apply payments to fees and interest first, tell the lender in writing to apply extra to principal; check for prepayment penalty; precomputed-interest loans save less.",
+     "source": "quoted from this page (commonMistakes + FAQs)"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.consumerfinance.gov/"
+   ],
+   "task": "New FAQ, 3-4 sentences, NO new figures: enter balance, rate and remaining term, then raise the extra monthly amount until the payoff date lands about 36 months out (the extra is large, so confirm it fits the budget); alternatively a lump sum now; instruct lender to apply to principal, check prepayment penalty and precomputed interest; consider refinancing only if the rate drops (link /auto-loan/refinance-calculator/)."
+  },
+  {
+   "action": "Link",
+   "q": "How much should I spend on a car if I make $70,000 a year?",
+   "target": "link-from:commonMistakes (draining emergency savings bullet) or toolSubheading",
+   "link_to": "/auto-loan/car-affordability-calculator/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a short inline link to the car affordability calculator, e.g. \"Not sure the payment fits your income? Start with the car affordability calculator.\""
+  },
+  {
+   "action": "Link",
+   "q": "How much total interest will I pay on my car loan?",
+   "target": "link-from:howItWorks (amortization paragraph)",
+   "link_to": "/auto-loan/interest-calculator/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a short inline link to the interest calculator."
+  }
+ ]
+}

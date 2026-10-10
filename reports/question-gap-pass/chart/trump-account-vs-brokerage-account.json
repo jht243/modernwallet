@@ -1,0 +1,303 @@
+{
+ "route": "/compare/trump-account-vs-brokerage-account/",
+ "slug": "trump-account-vs-brokerage-account",
+ "file": "src/data/comparisons.ts",
+ "kind": "COMPARISONS",
+ "clicks": 5,
+ "impressions": 233,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "www.monotelo.com",
+  "www.psca.org",
+  "www.acorns.com",
+  "www.nerdwallet.com",
+  "www.cato.org",
+  "www.fidelity.com",
+  "crr.bc.edu",
+  "www.cnn.com",
+  "www.youtube.com",
+  "adamnmichel.substack.com"
+ ],
+ "forum_dominated": true,
+ "questions": [
+  {
+   "q": "Is it worth investing in a Trump Account?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Verdict; decision rule; FAQ 'Is a Trump Account better...'",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Answered with conditions"
+  },
+  {
+   "q": "Are the Trump accounts brokerage accounts?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Only implied ('works like a traditional IRA'; custodian holds investments)",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Never states plainly it is an IRA-type account, not a brokerage account; IRS wording available"
+  },
+  {
+   "q": "What is the downside to a brokerage account?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Section 'A brokerage account taxes you yearly...'",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What brokerage does the Trump Account use?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Section 3 links to what-are-trump-accounts-invested-in",
+   "elsewhere": "/guides/what-are-trump-accounts-invested-in/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "Is a brokerage account better than a Trump account?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "FAQ 'Is a Trump Account better than a brokerage account'",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Can I open a Trump account at Fidelity?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "Not named",
+   "elsewhere": "/guides/how-to-open-a-trump-account/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked (decision rule paragraph)"
+  },
+  {
+   "q": "Are there fees to open or maintain a Trump Account?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ 'open both' says generally free",
+   "elsewhere": "/guides/trump-account-worth-it/",
+   "value": "High",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "Can my employer or grandparents add money, and does it count toward the $5,000 cap?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Table: '$5,000/yr combined from all private sources'",
+   "elsewhere": "/guides/trump-account-employer-contributions/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated guide; not linked from this page"
+  },
+  {
+   "q": "What if I never claim the Trump Account for my child?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "Not covered",
+   "elsewhere": "/guides/how-to-claim-a-trump-account/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated guide on claiming after auto-enrollment; not linked"
+  },
+  {
+   "q": "Is the $1,000 seed taxed on deposit?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ seed taxed",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Does either account hurt financial aid?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ financial aid",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Can I lose money in a Trump Account?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ lose money",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Can I withdraw before 18?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ withdraw before 18; table",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How is each taxed?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ taxed compared",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How much will the seed grow to?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ seed growth",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Can I roll a brokerage account into a Trump Account?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ transfer or roll over",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is the money safe if the brokerage fails (SIPC)?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ SIPC",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is there a deadline to claim the seed?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ seed expire",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is a custodial brokerage taxed under the kiddie tax?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Section 2 mentions kiddie tax in passing",
+   "elsewhere": "/compare/trump-account-vs-custodial-account/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "Trump Account vs 529 for college?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Last line of section 3",
+   "elsewhere": "/compare/trump-account-vs-529/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "Trump Account vs Roth IRA?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Section 3 link",
+   "elsewhere": "/compare/trump-account-vs-roth-ira/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "already linked"
+  },
+  {
+   "q": "Penalty for withdrawing after 18 but before 59 1/2?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "Not covered",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 ungrounded",
+   "reason": "IRS Trump Accounts page fetched does not state early-distribution rules; cannot ground"
+  },
+  {
+   "q": "Can the child hold anything other than an index fund after 18?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "Not covered",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 ungrounded",
+   "reason": "No fetched official source"
+  },
+  {
+   "q": "What does Dave Ramsey say about Trump accounts?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "-",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 off-topic",
+   "reason": "Opinion-bait"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Add",
+   "q": "Is a Trump Account a brokerage account?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "The IRS describes it as 'a new type of individual retirement account' for a child, set up by parents, guardians or other authorized individuals",
+     "source": "https://www.irs.gov/trumpaccounts"
+    },
+    {
+     "fact": "Page text: 'After 18 the account works like a traditional IRA'; 'It can only hold an S&P 500 or U.S.-equity index fund'; money locked until Jan 1 of the year the child turns 18; brokerage 'fully liquid', any investment",
+     "source": "page: Trump Account vs Brokerage Account (table and section 3)"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/trumpaccounts"
+   ],
+   "task": "Append FAQ 'Is a Trump Account a brokerage account?' 2-3 sentences: no, IRS calls it a new type of IRA; it is held with a financial institution but has IRA-style rules (locked until Jan 1 of year child turns 18, index fund only, ordinary-income withdrawals), unlike a taxable brokerage. No new figures."
+  },
+  {
+   "action": "Link",
+   "q": "Can my employer or grandparents add money, and does it count toward the $5,000 cap?",
+   "target": "link-from:FAQ 'Can I open both...' or table Contribution cap row",
+   "link_to": "/guides/trump-account-employer-contributions/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one in-context link to the employer contribution guide where the $5,000 combined cap is mentioned."
+  },
+  {
+   "action": "Link",
+   "q": "What if I never claim the Trump Account for my child?",
+   "target": "link-from:section 'The free $1,000 seed...' near TrumpAccounts.gov sentence",
+   "link_to": "/guides/how-to-claim-a-trump-account/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one in-context link to the claim guide near the sentence about opening accounts through TrumpAccounts.gov."
+  }
+ ]
+}

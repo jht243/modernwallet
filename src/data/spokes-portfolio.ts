@@ -53,6 +53,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
   },
 
   {
+    updated: "2026-10-10",
     calculator: "portfolio",
     slug: "60-40-portfolio-calculator",
     title: "60/40 Portfolio Calculator: Return, Risk & Growth",
@@ -63,7 +64,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
     estimatedKD: 36,
     h1: "60/40 Portfolio Calculator",
     introText:
-      "A 60/40 portfolio is a classic balanced mix of 60% stocks and 40% bonds. The calculator above shows its expected return, risk, and how it might grow over time. Enter your stock and bond amounts to see the figures for your own money. These are long-run model estimates, not guarantees.\n\nHow much you hold in stocks versus bonds can also change as you age. Use the [asset allocation calculator](/portfolio/asset-allocation-calculator/) to see how that mix should shift over time.",
+      "A 60/40 portfolio is a classic balanced mix of 60% stocks and 40% bonds. The calculator above shows its expected return, risk, and how it might grow over time. Enter your stock and bond amounts to see the figures for your own money. These are long-run model estimates, not guarantees.\n\nHow much you hold in stocks versus bonds can also change as you age. Use the [asset allocation calculator](/portfolio/asset-allocation-calculator/) to see how that mix should shift over time.\n\nFor more detail, see [Asset Allocation by Age](/guides/asset-allocation-by-age/).",
     howItWorks:
       "A 60/40 portfolio blends the growth of stocks with the steadier nature of bonds. The calculator above weights each asset by its share of your money. Stocks are modeled at a 10% return with 16% volatility. Bonds are modeled at a 4% return with 5% volatility. Both sides are commonly built with a single broad index fund. See our [best index funds](/roundup/best-index-funds/) roundup for specific picks.\n\nThe tool then combines these to find your portfolio's expected return, its volatility, and its Sharpe ratio. The Sharpe ratio measures return earned above a 2.5% risk-free rate per unit of risk. Higher is better. The growth projection compounds your expected return over the years you choose. To try other splits, use the [asset allocation calculator](/portfolio/asset-allocation-calculator/).",
     commonMistakes: [
@@ -90,6 +91,10 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
       { question: "How do I actually build a 60/40 portfolio myself?", answer: "You build a 60/40 portfolio by putting 60% of your money into one broad U.S. stock index fund and 40% into one broad bond index fund at any major brokerage, then rebalancing back to that split about once a year. Most investors hold a single total-stock-market fund for the stock side and a single total-bond-market fund for the bond side, which keeps the portfolio to two funds and the ongoing cost low. See [how and when to rebalance](/guides/portfolio-rebalancing/) for the tax-smart way to handle that yearly check-in." },
       { question: "How long will $1,000,000 last using the 4% rule?", answer: "At a 4% initial withdrawal rate, $1,000,000 supports about $40,000 a year and has historically sustained roughly 30 years of retirement in most market scenarios. See our [withdrawal calculator](/investing/withdrawal-calculator/) to model your own balance and withdrawal amount against that 30-year benchmark." },
       { question: "How many Americans have $1,000,000 in retirement?", answer: "No published figure covers retirement-account balances alone. The Federal Reserve's Survey of Consumer Finances instead publishes a total-net-worth cutoff, roughly $1.46 million for the top 10% across all ages and asset types. Retirement accounts are only one slice of that combined figure alongside home equity and other assets. The actual share of Americans holding $1 million specifically inside retirement accounts is therefore smaller than that headline number suggests. See the [net worth percentile calculator](/net-worth/net-worth-percentile-calculator/) for the full set of total-net-worth cutoffs." },
+      {
+        question: "How much could a 60/40 portfolio lose in a bad year?",
+        answer: "Using the model's 7.60% expected return and 10.00% volatility, a simple statistical rule of thumb puts a bad year near -12.4%, or a $12,400 loss on a $100,000 60/40 portfolio. Roughly two of three years fall between a $2,400 loss and a $17,600 gain, and about 19 of 20 fall between a $12,400 loss and a $27,600 gain. That figure is not a guarantee or a floor: real markets have fatter tails than this rule, and in 2022 stocks and bonds fell together (see [is the 60/40 portfolio dead](/guides/is-60-40-portfolio-dead/)).",
+      },
     ],
     sources: [
       { label: "SEC Investor.gov — Asset Allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },

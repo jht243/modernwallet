@@ -1,0 +1,311 @@
+{
+ "route": "/retirement/military-retirement-calculator/",
+ "slug": "military-retirement-calculator",
+ "file": "src/data/spokes-retirement.ts",
+ "kind": "RETIREMENT_SPOKES",
+ "clicks": 1,
+ "impressions": 4,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "militarypay.defense.gov",
+  "veteran.com",
+  "www.militaryonesource.mil",
+  "myarmybenefits.us.army.mil",
+  "myairforcebenefits.us.af.mil",
+  "www.youtube.com"
+ ],
+ "forum_dominated": false,
+ "questions": [
+  {
+   "q": "What is the difference between legacy High-3 and BRS?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ: legacy vs BRS (formula only)",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Strengthen",
+   "reason": "Formulas covered but not WHO is in which system (auto-enrolled after Jan 2018; earlier members chose; no switching now). Fit question."
+  },
+  {
+   "q": "Which retirement system am I under?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "intro \"most who entered after Jan 1 2018\"; REDUX FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 low value",
+   "reason": "Duplicate; merged into the sibling action"
+  },
+  {
+   "q": "What is the military retirement pay chart for 2026?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Already added"
+  },
+  {
+   "q": "What happens to my retirement pay at 65?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Already added"
+  },
+  {
+   "q": "How much is E7 retirement pay with 20 years?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Already strengthened"
+  },
+  {
+   "q": "How much does a retired military member make a month?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Already strengthened"
+  },
+  {
+   "q": "How much does the govt match in TSP?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ + commonMistakes",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "What if I leave before 20 years?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ + commonMistakes",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Is military retirement pay taxable?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Survivor Benefit Plan: should I elect it?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ x2",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Divorce division of retired pay",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Guard/Reserve retirement",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Can I take a lump sum under BRS?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Does High-3 include BAH/BAS?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Can I collect Social Security with military pension?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Can I collect military and federal civilian pension?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "What is REDUX?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "VA disability with retired pay (CRDP/CRSC)",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ + link",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear; linked"
+  },
+  {
+   "q": "Medical retirement under 20 years",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "howItWorks link",
+   "elsewhere": "/compare/military-retirement-vs-medical-retirement/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Already linked to /compare/military-retirement-vs-medical-retirement/"
+  },
+  {
+   "q": "What is the TSP contribution limit and does the calculator cap it?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": "/investing/tsp-calculator/",
+   "value": "High",
+   "action": "Link",
+   "reason": "TSP calculator exists (planned link from earlier pass, not applied)"
+  },
+  {
+   "q": "TSP vs civilian 401(k) after separation",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "howItWorks link",
+   "elsewhere": "/compare/tsp-vs-401k/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Already linked /compare/tsp-vs-401k/"
+  },
+  {
+   "q": "Can I access TSP early (Rule of 55)",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Does military retirement pay get COLA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "commonMistakes",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "What health coverage do I get after retiring (TRICARE) before 65?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ at 65 only",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 ungrounded",
+   "reason": "Pre-65 plan details need tricare.mil figures not fetched"
+  },
+  {
+   "q": "Continuation pay amount",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "howItWorks (refers to service tables)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 ungrounded",
+   "reason": "No grounded figures; page deliberately defers"
+  },
+  {
+   "q": "Can I retire early with fewer than 20 years (TERA)?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 ungrounded",
+   "reason": "No fetched source"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Strengthen",
+   "q": "Which retirement system am I under, legacy High-3 or BRS?",
+   "target": "What is the difference between the legacy High-3 plan and BRS?",
+   "fact_basis": [
+    {
+     "fact": "Service members who joined after January 2018 are automatically enrolled in BRS; other service members either chose BRS or kept the legacy plan; those who kept legacy cannot currently switch.",
+     "source": "https://militaryonesource.mil/financial-legal/military-retirement/blended-retirement-system/ (fetched)"
+    },
+    {
+     "fact": "BRS pension multiplier 2.0%, legacy 2.5%, matching up to 5%",
+     "source": "quoted from this page FAQ"
+    }
+   ],
+   "allowed_urls": [
+    "https://militaryonesource.mil/financial-legal/military-retirement/blended-retirement-system/",
+    "https://militarypay.defense.gov/"
+   ],
+   "task": "Append 2-3 sentences to the existing FAQ answer: who falls under each system (auto-enrolled if joined after Jan 2018; earlier members chose BRS or kept legacy; legacy members cannot switch now) and tell readers to confirm theirs with their service personnel/retirement office or myPay. No dates beyond Jan 2018, no other figures."
+  },
+  {
+   "action": "Link",
+   "q": "Does this calculator cap my TSP contribution at the annual limit?",
+   "target": "link-from:howItWorks (TSP projection paragraph)",
+   "link_to": "/investing/tsp-calculator/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a short inline link to the TSP calculator in the howItWorks paragraph that says the calculator projects your TSP balance."
+  }
+ ]
+}

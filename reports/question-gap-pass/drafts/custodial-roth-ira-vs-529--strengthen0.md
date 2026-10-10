@@ -1,0 +1,5 @@
+A custodial Roth IRA can only be funded if the child has earned income, such as wages from a job or self-employment like babysitting or lawn care. The IRS caps the contribution at the child's earnings or the annual IRA limit, whichever is lower, and [that limit is $7,500 for 2026](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500), up from $7,000 for 2025.
+
+The earned-income rule is the biggest difference in who can open each account. A newborn with no income cannot have a funded custodial Roth. A 529 plan has no such rule. A parent, grandparent, or anyone else can open and fund it from the day the child is born.
+
+That is why the 529 is the default for early college savings. The custodial Roth becomes an option later, once the child starts working.

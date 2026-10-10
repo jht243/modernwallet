@@ -1,0 +1,284 @@
+{
+ "route": "/portfolio/60-40-portfolio-calculator/",
+ "slug": "60-40-portfolio-calculator",
+ "file": "src/data/spokes-portfolio.ts",
+ "kind": "PORTFOLIO_SPOKES",
+ "clicks": 1,
+ "impressions": 41,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [],
+ "forum_dominated": false,
+ "questions": [
+  {
+   "q": "What is a 60/40 portfolio?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ + intro",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What return does the calculator assume?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ + how it works",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "10%/4%, 7.60%"
+  },
+  {
+   "q": "Is 60/40 still a good strategy?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": "/guides/is-60-40-portfolio-dead/",
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered, linked"
+  },
+  {
+   "q": "How much could 60/40 grow in 30 years?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ + worked example",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "$900,260"
+  },
+  {
+   "q": "How much could a 60/40 portfolio lose in a bad year?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Common mistakes (10.00% volatility 'a single bad year can land well below the average')",
+   "elsewhere": "/guides/is-60-40-portfolio-dead/",
+   "value": "High",
+   "action": "Add",
+   "reason": "Never quantified; page has the inputs to size a typical range (derived from on-page 7.60% / 10.00%)"
+  },
+  {
+   "q": "Why hold bonds instead of all stocks?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is 60/40 good for retirement?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What fees does a 60/40 portfolio have?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Does 60/40 protect against inflation?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How does 60/40 compare to 90/10 or 100% stocks?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Two FAQs",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Does the projection include inflation or taxes?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How do I build a 60/40 portfolio?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ (already added)",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How long will $1M last with 4% rule?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ (already added)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How often should I rebalance?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Common mistakes (rebalancing)",
+   "elsewhere": "/guides/portfolio-rebalancing/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Full guide; already linked"
+  },
+  {
+   "q": "What stock/bond mix is right for my age?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Intro + mistakes link to asset allocation calculator",
+   "elsewhere": "/guides/asset-allocation-by-age/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Age guide exists and is not linked"
+  },
+  {
+   "q": "Is there a single fund that holds 60/40 (balanced fund)?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — ungrounded",
+   "reason": "Investor.gov (403) unreachable; no fetched primary source for balanced-fund facts"
+  },
+  {
+   "q": "What has the historical average return of 60/40 been?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": "/guides/is-60-40-portfolio-dead/",
+   "value": "High",
+   "action": "Skip — ungrounded",
+   "reason": "No fetched primary-source historical numbers; guide covers 2022 and rebound"
+  },
+  {
+   "q": "Which accounts should hold the bond side (tax placement)?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — ungrounded",
+   "reason": "No fetched primary source"
+  },
+  {
+   "q": "What is the Sharpe ratio and is 0.51 good?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "How it works",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — low value",
+   "reason": "Defined; judgment low value"
+  },
+  {
+   "q": "Can I use this calculator with my own stock/bond amounts?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Intro",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "60/40 vs 70/30?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Common mistakes link",
+   "elsewhere": "/compare/70-30-vs-60-40-portfolio/",
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered, linked"
+  },
+  {
+   "q": "Does 60/40 beat target-date funds?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Retirement FAQ link",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is 60/40 a Vanguard or Fidelity product?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — low value",
+   "reason": "Branded-search noise"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Add",
+   "q": "How much could a 60/40 portfolio lose in a bad year?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "Model expected return 7.60% and volatility 10.00% for 60/40; stocks 16% volatility",
+     "source": "page: workedExample / FAQ What return does the calculator assume"
+    },
+    {
+     "fact": "Illustrative arithmetic: one standard deviation = 7.60% +/- 10.00% = about -2.4% to +17.6% (on $100,000: -$2,400 to +$17,600); two standard deviations = about -12.4% to +27.6% (-$12,400 on $100,000)",
+     "source": "arithmetic from the page's own inputs; label as simple statistical rule of thumb, roughly two of three years within one SD, about 19 of 20 within two"
+    },
+    {
+     "fact": "2022: stocks and bonds fell together",
+     "source": "page: FAQ Is the 60/40 portfolio still a good strategy?"
+    }
+   ],
+   "allowed_urls": [],
+   "task": "Append FAQ 'How much could a 60/40 portfolio lose in a bad year?' (80-110 words). Use only the arithmetic above on a $100,000 example, say real markets have fatter tails than this rule (2022, both asset classes fell), it is not a guarantee or a floor, and link [is the 60/40 portfolio dead](/guides/is-60-40-portfolio-dead/). No historical return figures."
+  },
+  {
+   "action": "Link",
+   "q": "What mix is right for my age?",
+   "target": "link-from:intro paragraph beside asset-allocation-calculator link",
+   "link_to": "/guides/asset-allocation-by-age/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-sentence contextual link to /guides/asset-allocation-by-age/ in intro paragraph beside asset-allocation-calculator link"
+  },
+  {
+   "action": "Link",
+   "q": "How often rebalance (already linked)",
+   "target": "link-from:already linked in Common mistakes",
+   "link_to": "/guides/portfolio-rebalancing/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "No change needed: already linked in Common mistakes"
+  }
+ ]
+}

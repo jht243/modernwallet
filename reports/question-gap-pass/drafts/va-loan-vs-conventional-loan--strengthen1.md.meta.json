@@ -1,0 +1,81 @@
+{
+ "slug": "va-loan-vs-conventional-loan--strengthen1",
+ "schema": "none",
+ "kind": "section",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 122,
+ "floor": 0,
+ "input_tokens": 25314,
+ "output_tokens": 1014,
+ "thinking_tokens": null,
+ "cached_tokens": 24177,
+ "est_cost_usd": 0.0297,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 122,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L1",
+     "quote": "The VA funding fee is a one-time charge of 1.25% to 3.3% of the loan amount, typically rolled into the loan balance.",
+     "replacement": "The VA funding fee on a purchase loan is 1.25% to 3.3% of the loan amount.",
+     "type": "unsupported",
+     "why": "SOURCE gives 1.25%-3.3% of loan amount; not one-time or rolled in"
+    },
+    {
+     "id": "L1",
+     "quote": "It funds the VA guarantee program so it costs taxpayers nothing.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE states no purpose of the fee or taxpayer cost"
+    },
+    {
+     "id": "L1",
+     "quote": "Veterans with a service-connected disability rating of 10% or higher are completely exempt, saving $4,375 to $11,550 on a typical $350,000 loan.",
+     "replacement": "Veterans who receive VA compensation for a service-connected disability are exempt, which on a $350,000 loan means not paying $4,375 to $11,550.",
+     "type": "unsupported",
+     "why": "SOURCE says VA disability compensation, no 10% rating or typical loan"
+    },
+    {
+     "id": "L1",
+     "quote": "Purple Heart recipients and surviving spouses of veterans who died in service or from a service-connected disability are also exempt.",
+     "replacement": "Purple Heart recipients on active duty and surviving spouses receiving DIC are also exempt.",
+     "type": "unsupported",
+     "why": "SOURCE says Purple Heart (active duty) and surviving spouses receiving DIC"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 145
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 26.0,
+ "response_id": "msg_011CfuLmNBELXZn7LjTFCGPV",
+ "generated_at": "2026-10-10T22:25:56+0000"
+}

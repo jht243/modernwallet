@@ -1,0 +1,306 @@
+{
+ "pages": {
+  "/compare/etf-vs-mutual-fund/": {
+   "query": "active etf expense ratio vs mutual fund",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "unread",
+   "error": "SERP read failed: task 40101 Internal SE Server Error."
+  },
+  "/auto-loan/payoff-calculator/": {
+   "query": "additional payment calculator auto",
+   "paa": [
+    "What happens if I pay an extra $100 a month on my car loan?",
+    "How to pay off a 7 year car loan in 3 years?",
+    "How much should I spend on a car if I make $70,000 a year?",
+    "What happens if I pay $50 extra on my car loan?",
+    "Is it worth paying extra on car payment?",
+    "How many years can 1 extra principal a year shorten my loan?"
+   ],
+   "related_searches": [
+    "Additional payment calculator auto loan",
+    "Remaining car loan payoff calculator",
+    "Pay off loan early calculator with extra payments",
+    "Remaining car loan payoff calculator Excel",
+    "Pay off car loan early calculator lump sum",
+    "Auto loan early payoff calculator NerdWallet",
+    "Car loan calculator with extra payments Excel",
+    "Auto loan principal payment calculator"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.marketusafcu.com",
+    "www.bankrate.com",
+    "www.mysccu.com",
+    "www.thezebra.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.myeecu.org",
+    "www.bankrate.com",
+    "www.flagstar.com",
+    "www.fortbraggfcu.org",
+    "usaaef.org",
+    "www.marketusafcu.com",
+    "www.calculator.net",
+    "www.isabellabank.com",
+    "www.kohlercu.com",
+    "www.bankfirstfed.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/compare/va-loan-vs-conventional-loan/": {
+   "query": "are va rates lower than conventional",
+   "paa": [
+    "Why does Dave Ramsey not recommend VA loans?",
+    "Will we ever see a 3% mortgage rate again?",
+    "What is the 4% rule for VA loans?",
+    "How much is a 300,000 VA loan monthly payment?",
+    "How much do I need to make to afford a $250000 house with a VA loan?",
+    "Can a 70 year old get a 20 year mortgage?"
+   ],
+   "related_searches": [
+    "Are va rates lower than conventional reddit",
+    "Pros and cons of VA loan vs conventional loan",
+    "Current 30-year VA mortgage rates",
+    "VA loan vs conventional loan interest rates",
+    "Current VA loan rates",
+    "Are VA loan rates higher than conventional",
+    "Current VA home loan interest rates",
+    "VA conventional loan rates",
+    "VA loan vs conventional loan for seller"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.veteransunited.com",
+    "www.experian.com",
+    "www.usaa.com",
+    "valoannetwork.com",
+    "www.waterstonemortgage.com",
+    "www.bankrate.com",
+    "rmniowa.com",
+    "www.herringbank.com",
+    "www.military.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.veteransunited.com",
+    "www.rocketmortgage.com",
+    "www.herringbank.com",
+    "www.waterstonemortgage.com",
+    "www.bankrate.com",
+    "www.usaa.com",
+    "tomo.com",
+    "www.experian.com",
+    "www.experian.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/compare/custodial-roth-ira-vs-529/": {
+   "query": "529 or ira",
+   "paa": [
+    "Which is better, Roth or 529?",
+    "Why is an IRA better than an investment account?",
+    "How much money should a 5 year old have in 529?",
+    "Who should not use a Roth IRA?",
+    "Why don't more people use Roth IRA?",
+    "What does Warren Buffett say about Roth IRA?"
+   ],
+   "related_searches": [
+    "529 or ira reddit",
+    "Best 529 or ira"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.mainstreetplanning.com",
+    "coyotewealth.com",
+    "www.facebook.com",
+    "360fingroup.com",
+    "www.reddit.com",
+    "tool.teamzlab.com",
+    "www.tampabay.com",
+    "tool.teamzlab.com",
+    "www.plr.me",
+    "www.quora.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/compare/529-vs-coverdell-esa/": {
+   "query": "529 plan vs coverdell",
+   "paa": [
+    "Is a coverdell the same thing as a 529?",
+    "What is an ESA account?",
+    "How much money should a 5 year old have in 529?",
+    "Can I cash out a Coverdell education savings account?",
+    "What happens to Coverdell if child doesn't go to college?",
+    "Can I transfer my Coverdell to a Roth IRA?"
+   ],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.savingforcollege.com",
+    "www.schwab.com",
+    "www.key.com",
+    "www.ramseysolutions.com",
+    "www.westernsouthern.com",
+    "kirtlandcu.org",
+    "www.peopledrivencu.org",
+    "www.abbybank.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "thelink.ascensus.com",
+    "americanprivatewealth.com",
+    "research.com",
+    "blog.taxact.com",
+    "www.kitces.com",
+    "www.mybanktracker.com",
+    "tool.teamzlab.com",
+    "www.reddit.com",
+    "themilitarywallet.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/compare/roth-401k-vs-traditional-401k/": {
+   "query": "401 k or roth",
+   "paa": [
+    "Is it better to have money in a Roth or 401k?",
+    "How much will $10,000 in a Roth IRA be worth in 20 years?",
+    "What does Dave Ramsey say about Roth 401(k)?",
+    "How much will $20,000 in 401k be worth in 20 years?",
+    "Can I retire at 62 with $400,000 in 401k?",
+    "Does a 401k double every 7 years?"
+   ],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.fidelity.com",
+    "www.irs.gov",
+    "www.benefits.ml.com",
+    "www.schwab.com",
+    "www.johnsonfinancialgroup.com",
+    "www.mutualofamerica.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.fidelity.com",
+    "www.irs.gov",
+    "www.benefits.ml.com",
+    "www.prudential.com",
+    "www.umcu.org",
+    "www.johnsonfinancialgroup.com",
+    "www.investor.gov",
+    "www.mutualofamerica.com",
+    "www.empower.com"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers"
+  },
+  "/compare/utma-vs-ugma/": {
+   "query": "custodial account vs utma",
+   "paa": [
+    "Can you open an UTMA for someone over 18?",
+    "What is an UGMA account at Fidelity investments?",
+    "Who owns the money in a custodial account?",
+    "What does UGMA and UTMA mean?",
+    "Do parents pay taxes on UTMA?",
+    "What are the downsides of an UTMA account?"
+   ],
+   "related_searches": [
+    "UGMA vs UTMA",
+    "Types of custodial accounts",
+    "UTMA account",
+    "What happens to a custodial account when the child turns 18",
+    "Custodial account for adults",
+    "UTMA vs 529",
+    "How to open a custodial account",
+    "Custodial account taxes"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.fidelity.com",
+    "www.nerdwallet.com",
+    "investor.vanguard.com",
+    "www.savingforcollege.com",
+    "www.newyorklife.com",
+    "finaid.org",
+    "www.wellsfargo.com",
+    "www.chase.com",
+    "dfhlaw.com",
+    "www.linkedin.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.troweprice.com",
+    "meetfabric.com",
+    "www.investopedia.com",
+    "www.capitalgroup.com",
+    "www.kidvestors.co",
+    "www.instagram.com",
+    "www.investopedia.com",
+    "www.investopedia.com",
+    "www.bethsilverman.com",
+    "frankkraft.com"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present"
+  },
+  "/estate-planning/will-cost-calculator/": {
+   "query": "cost of a simple will",
+   "paa": [
+    "How much does a lawyer cost for a simple will?",
+    "What are the downsides of a living trust?",
+    "Who is the best person to draw up a will?",
+    "What is the 5 by 5 rule in estate planning?",
+    "What are five assets that should never be included in a living trust?",
+    "Is it better to inherit a house or put it in a trust?"
+   ],
+   "related_searches": [
+    "Cost of a simple will calculator",
+    "Cost of making a will with a lawyer",
+    "Cost of a simple will in texas",
+    "Average cost of a will and trust",
+    "Average cost of a will and Trust Calculator",
+    "NetLaw will and Trust cost",
+    "Average cost for will and estate planning near me",
+    "Cost of trust vs will"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.ocelderlaw.com",
+    "smartasset.com",
+    "mpopc.com",
+    "www.ocelderlaw.com",
+    "www.thumbtack.com",
+    "silverslawfl.com",
+    "jarosmackinnon.com",
+    "pufflaw.com",
+    "www.avvo.com",
+    "www.facebook.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  }
+ },
+ "cost": "DataForSEO: 8 calls, $0.03105 of $2.00 budget"
+}

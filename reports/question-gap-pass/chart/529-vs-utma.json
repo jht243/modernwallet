@@ -1,0 +1,318 @@
+{
+ "route": "/compare/529-vs-utma/",
+ "slug": "529-vs-utma",
+ "file": "src/data/comparisons.ts",
+ "kind": "COMPARISONS",
+ "clicks": 1,
+ "impressions": 33,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "www.westernsouthern.com",
+  "www.savingforcollege.com",
+  "www.farther.com",
+  "mlaem.fs.ml.com",
+  "walknercondon.com",
+  "greenleaftrust.com"
+ ],
+ "forum_dominated": true,
+ "questions": [
+  {
+   "q": "Why is UTMA over 529?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "When a UTMA actually makes sense",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What is the purpose of a 529 college savings plan?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Tax difference section; FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What is better, UTMA or Trump Account?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": "/compare/trump-account-vs-custodial-account/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Dedicated comparison exists; not linked from this page"
+  },
+  {
+   "q": "Can I use UTMA funds for college?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "FAQ 'Can my child spend a UTMA on anything?'; table",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Implied, never answered directly with aid and tax consequences"
+  },
+  {
+   "q": "What are the downsides of a UTMA account?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Control, FAFSA, kiddie tax sections",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What happens to 529 if kids don't go to college?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "FAQ + leftover guide link",
+   "elsewhere": "/guides/529-leftover-money-options/",
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered, linked"
+  },
+  {
+   "q": "Is a 529 or UTMA better for college savings?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Verdict + FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Does a UTMA hurt financial aid more?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAFSA section + FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered with example"
+  },
+  {
+   "q": "Can I convert a UTMA to a 529?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Can a UTMA or 529 lose money?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is there a state tax deduction for 529 contributions?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": "/guides/529-plan-tax-deduction-by-state/",
+   "value": "High",
+   "action": "Link",
+   "reason": "State-deduction guide exists; not linked"
+  },
+  {
+   "q": "What counts as a qualified 529 expense?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Tax difference section (tuition, fees, books, room and board, K-12, loans)",
+   "elsewhere": "/guides/529-qualified-expenses/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Guide exists; not linked"
+  },
+  {
+   "q": "Can I open both a 529 and a UTMA?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Verdict (default 529; UTMA for flexibility)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — low value",
+   "reason": "Implied by verdict; low gating value"
+  },
+  {
+   "q": "What age does the child take control of a UTMA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Control section + FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What happens to a UTMA if the custodian dies?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": "/compare/custodial-roth-ira-vs-utma/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Answered on the Roth vs UTMA page"
+  },
+  {
+   "q": "What is the kiddie tax and when does it end?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Tax section (2025 brackets)",
+   "elsewhere": "/guides/custodial-account-taxes-kiddie-tax/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated guide with age rules; not linked"
+  },
+  {
+   "q": "Can I take money back out of a UTMA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Control section ('irrevocably your child's')",
+   "elsewhere": "/guides/utma-custodial-account-explained/",
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What is a 529 contribution limit?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Table",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Does a grandparent-owned 529 count on the FAFSA?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — ungrounded",
+   "reason": "Rule changed for 2024-25 but only secondary sources reached; studentaid.gov fetch returned 503"
+  },
+  {
+   "q": "Can I change the 529 beneficiary?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Control section + FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What if my child gets a scholarship?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": "/guides/529-leftover-money-options/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Leftover-money guide (linked) covers; no on-page facts"
+  },
+  {
+   "q": "What fees do 529 plans and UTMAs charge?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — ungrounded",
+   "reason": "No fetched primary source on fees"
+  },
+  {
+   "q": "What do Reddit or Suze Orman say?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — off-topic",
+   "reason": "Opinion-bait"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Add",
+   "q": "Can I use UTMA funds to pay for college?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "UTMA: any purpose the custodian (then child) chooses; custodian controls until majority, then child owns it fully (18 to 21, up to 25 in some states)",
+     "source": "page: table + Control section"
+    },
+    {
+     "fact": "UTMA counts as the student's asset, assessed at 20% on FAFSA; parent-owned 529 assessed up to 5.64%; $50,000 saved adds about $10,000 vs $2,820",
+     "source": "page: FAFSA section"
+    },
+    {
+     "fact": "Kiddie tax: unearned income above $2,700 taxed at parents' rate (2025); selling holdings can trigger capital gains",
+     "source": "page: tax section + 'Can I convert a UTMA to a 529' FAQ"
+    }
+   ],
+   "allowed_urls": [],
+   "task": "Append FAQ 'Can I use UTMA funds to pay for college?' (80-110 words): yes, nothing restricts the money to education (it belongs to the child; spending must be for their benefit); but there is no tax shelter (selling holdings can create taxable gains under the kiddie tax), it counts as a student asset at 20% on the FAFSA vs up to 5.64% for a parent-owned 529, and at majority the child, not the parent, decides how it is spent. End with a link to [UTMA custodial account explained](/guides/utma-custodial-account-explained/). No new figures beyond those listed."
+  },
+  {
+   "action": "Link",
+   "q": "UTMA vs Trump Account",
+   "target": "link-from:FAQ section end or 'When a UTMA actually makes sense' paragraph",
+   "link_to": "/compare/trump-account-vs-custodial-account/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-sentence contextual link to /compare/trump-account-vs-custodial-account/ in FAQ section end or 'When a UTMA actually makes sense' paragraph"
+  },
+  {
+   "action": "Link",
+   "q": "529 state tax deduction",
+   "target": "link-from:'The tax difference' section",
+   "link_to": "/guides/529-plan-tax-deduction-by-state/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-sentence contextual link to /guides/529-plan-tax-deduction-by-state/ in 'The tax difference' section"
+  },
+  {
+   "action": "Link",
+   "q": "529 qualified expenses",
+   "target": "link-from:'The tax difference' section, qualified expenses sentence",
+   "link_to": "/guides/529-qualified-expenses/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-sentence contextual link to /guides/529-qualified-expenses/ in 'The tax difference' section, qualified expenses sentence"
+  },
+  {
+   "action": "Link",
+   "q": "Custodian dies",
+   "target": "link-from:'Control' section",
+   "link_to": "/compare/custodial-roth-ira-vs-utma/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-sentence contextual link to /compare/custodial-roth-ira-vs-utma/ in 'Control' section"
+  },
+  {
+   "action": "Link",
+   "q": "Kiddie tax detail",
+   "target": "link-from:'The tax difference' section, kiddie tax sentence",
+   "link_to": "/guides/custodial-account-taxes-kiddie-tax/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-sentence contextual link to /guides/custodial-account-taxes-kiddie-tax/ in 'The tax difference' section, kiddie tax sentence"
+  }
+ ]
+}

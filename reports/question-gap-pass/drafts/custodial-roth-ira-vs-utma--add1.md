@@ -1,0 +1,1 @@
+A child can withdraw the contributions to a custodial Roth IRA (the dollars originally put in) at any time. For distributions taken before age 59 1/2, the [IRS generally adds a 10% additional tax](https://www.irs.gov/taxtopics/tc557) on the part of the distribution included in gross income, on top of regular income tax.

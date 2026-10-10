@@ -1,0 +1,316 @@
+{
+ "route": "/compare/va-loan-vs-conventional-loan/",
+ "slug": "va-loan-vs-conventional-loan",
+ "file": "src/data/comparisons.ts",
+ "kind": "COMPARISONS",
+ "clicks": 0,
+ "impressions": 253,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "www.veteransunited.com",
+  "www.experian.com",
+  "www.usaa.com",
+  "valoannetwork.com",
+  "www.waterstonemortgage.com",
+  "www.bankrate.com",
+  "rmniowa.com",
+  "www.herringbank.com",
+  "www.military.com",
+  "www.youtube.com"
+ ],
+ "forum_dominated": true,
+ "questions": [
+  {
+   "q": "Why does Dave Ramsey not recommend VA loans?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 off-topic",
+   "reason": "Opinion-bait"
+  },
+  {
+   "q": "Will we ever see a 3% mortgage rate again?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 off-topic",
+   "reason": "Off-topic"
+  },
+  {
+   "q": "What is the 4% rule for VA loans?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Most likely the VA 4% cap on seller concessions; missing; cost gate; official va.gov"
+  },
+  {
+   "q": "How much is a $300,000 VA loan monthly payment?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "none (VA calculator link present)",
+   "elsewhere": "/mortgage/va-loan-calculator/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Payment depends on rate; VA loan calculator already linked on page"
+  },
+  {
+   "q": "How much income to afford $250k house with VA loan?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "residual income paragraph; affordability link",
+   "elsewhere": "/mortgage/home-affordability-calculator/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Already linked /mortgage/home-affordability-calculator/"
+  },
+  {
+   "q": "Can a 70-year-old get a 20-year mortgage?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 low value",
+   "reason": "Age-specific; low relevance"
+  },
+  {
+   "q": "Are VA rates lower than conventional?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "section VA rates",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "What does the funding fee cost at different down payments?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ: funding fee says 1.25-3.3%, 5%+ reduces fee",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Strengthen",
+   "reason": "Tiers not stated; grounded on va.gov table"
+  },
+  {
+   "q": "Who is exempt from the funding fee?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ + section",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Can seller pay my closing costs on a VA loan?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 low value",
+   "reason": "Duplicate; merged into the sibling action"
+  },
+  {
+   "q": "Eligibility / COE",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "section",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Credit score / DTI requirements",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "table + residual income",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 low value",
+   "reason": "Partial; lender-specific, no official figure"
+  },
+  {
+   "q": "Can I use a VA loan for investment property?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "section",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "VA loan for condos",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "section",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Reusing VA benefit",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Does VA loan need down payment?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "VA vs FHA",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": "/compare/fha-loan-vs-va-loan/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Dedicated comparison"
+  },
+  {
+   "q": "Can someone assume my VA loan / assumable?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": "/compare/assumable-mortgage-vs-refinance/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Assumable mortgage comparison exists"
+  },
+  {
+   "q": "Closing costs on VA loan",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "funding fee only",
+   "elsewhere": "/mortgage/closing-cost-calculator/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Closing cost calculator"
+  },
+  {
+   "q": "Minimum property requirements / appraisal",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "section",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "VA IRRRL refinance",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 low value",
+   "reason": "Medium value, outside comparison scope"
+  },
+  {
+   "q": "Does VA PMI-free mean cheaper than 20% down conventional?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "verdict + when conventional wins",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "VA loan limits",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "section + FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Add",
+   "q": "What is the 4% rule for VA loans, and can the seller pay my closing costs?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "VA does not limit credits for closing costs but limits seller concessions to no more than 4% of the home's reasonable value (shown on the VA Notice of Value).",
+     "source": "https://www.va.gov/housing-assistance/home-loans/funding-fee-and-closing-costs/"
+    },
+    {
+     "fact": "Concessions include credits for the funding fee, debt payoff, or prepaying hazard insurance.",
+     "source": "same"
+    },
+    {
+     "fact": "On a purchase loan only the funding fee can be financed; all other fees must be paid at closing.",
+     "source": "same"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.va.gov/housing-assistance/home-loans/funding-fee-and-closing-costs/"
+   ],
+   "task": "New FAQ, 3-4 sentences, practical tone (forum-dominated SERP): the 4% figure is the cap on seller concessions, based on reasonable value from the Notice of Value; list what counts; note only the funding fee can be financed; link /mortgage/closing-cost-calculator/."
+  },
+  {
+   "action": "Strengthen",
+   "q": "What does the VA funding fee cost at different down payments?",
+   "target": "What is the VA loan funding fee and who is exempt?",
+   "fact_basis": [
+    {
+     "fact": "Purchase loans: less than 5% down 2.15% first use / 3.3% after; 5% to under 10% down 1.5%; 10% or more down 1.25%. Fee is a percent of loan amount.",
+     "source": "https://www.va.gov/housing-assistance/home-loans/funding-fee-and-closing-costs/"
+    },
+    {
+     "fact": "Exempt: receives VA compensation for service-connected disability, eligible but receiving retirement/active-duty pay, surviving spouses receiving DIC, Purple Heart (active duty).",
+     "source": "same"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.va.gov/housing-assistance/home-loans/funding-fee-and-closing-costs/"
+   ],
+   "task": "Append 2 sentences to the existing FAQ answer giving the three down-payment tiers (2.15%/3.3%, 1.5%, 1.25%), noting percent of loan not price. Do not alter existing exemption text."
+  },
+  {
+   "action": "Link",
+   "q": "VA vs FHA",
+   "target": "link-from:section When a conventional loan beats a VA loan (end) or verdict",
+   "link_to": "/compare/fha-loan-vs-va-loan/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one sentence with inline link: \"Weighing FHA instead? See FHA vs VA.\""
+  },
+  {
+   "action": "Link",
+   "q": "Assumable VA loan",
+   "target": "link-from:FAQ: Can a veteran use a VA loan more than once?",
+   "link_to": "/compare/assumable-mortgage-vs-refinance/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-clause inline link to the assumable mortgage comparison in that FAQ."
+  }
+ ]
+}

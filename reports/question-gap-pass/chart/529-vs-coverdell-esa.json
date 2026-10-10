@@ -1,0 +1,321 @@
+{
+ "route": "/compare/529-vs-coverdell-esa/",
+ "slug": "529-vs-coverdell-esa",
+ "file": "src/data/comparisons.ts",
+ "kind": "COMPARISONS",
+ "clicks": 0,
+ "impressions": 97,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "www.savingforcollege.com",
+  "www.schwab.com",
+  "www.key.com",
+  "www.ramseysolutions.com",
+  "www.westernsouthern.com",
+  "kirtlandcu.org",
+  "www.peopledrivencu.org",
+  "www.abbybank.com",
+  "www.youtube.com"
+ ],
+ "forum_dominated": true,
+ "questions": [
+  {
+   "q": "Is a Coverdell the same thing as a 529?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Intro; \"The tax deal is nearly identical\"; table",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Side-by-side explains differences."
+  },
+  {
+   "q": "What is an ESA account?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Intro + FAQ 3",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Coverdell ESA defined by limit/uses."
+  },
+  {
+   "q": "How much money should a 5 year old have in 529?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/guides/college-savings-by-age/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Age benchmark guide exists."
+  },
+  {
+   "q": "Can I cash out a Coverdell education savings account?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "FAQ 4 (age 30); \"Deadlines and leftover money\"",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Page says tax + 10% on earnings at 30 but not the exceptions or the rollover/beneficiary-change/529 routes."
+  },
+  {
+   "q": "What happens to Coverdell if child doesn't go to college?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "\"Deadlines and leftover money\" (age-30 clock only)",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Only the penalty path is described; family rollover (under 30) and 529 contribution are missing."
+  },
+  {
+   "q": "Can I transfer my Coverdell to a Roth IRA?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Not covered; Roth rollover rule applies to 529s, not Coverdells. Fold into same FAQ as leftover question."
+  },
+  {
+   "q": "What is the Coverdell income limit?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Table and FAQ 3 (\"income phase-outs apply\", no figures)",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Strengthen",
+   "reason": "Dollar thresholds never stated; this gates who can contribute."
+  },
+  {
+   "q": "Until what age can you contribute to a Coverdell?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Strengthen",
+   "reason": "Contributions only for beneficiaries under 18 (or special needs); not on page. Fold into limit FAQ."
+  },
+  {
+   "q": "What happens if I contribute more than $2,000?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — low value",
+   "reason": "6% excise tax is detail; low decision value after cap is stated."
+  },
+  {
+   "q": "Can I fund both a 529 and a Coverdell?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 2",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Direct FAQ."
+  },
+  {
+   "q": "Is the Coverdell better than a 529 for K-12?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "\"Why the Coverdell lost most of its old edge\"; FAQ 5",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "$20,000 K-12 explained."
+  },
+  {
+   "q": "Which gives a state tax deduction?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Table \"State tax break\"",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "529 only."
+  },
+  {
+   "q": "What expenses does a Coverdell cover?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Table K-12 coverage; \"Why the Coverdell lost...\"",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Tuition, books, tutoring + college; 529 expenses link."
+  },
+  {
+   "q": "Does a Coverdell or 529 hurt financial aid?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/compare/529-vs-utma/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Aid treatment of 529 covered in 529-vs-UTMA and custodial Roth/529 comparisons."
+  },
+  {
+   "q": "Who owns a Coverdell, parent or child?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — low value",
+   "reason": "Not decision-gating vs 529 choice; ungrounded detail."
+  },
+  {
+   "q": "What are the Coverdell investment options?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Table \"Investment choice\"; tax-deal section",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Self-directed stocks, funds, ETFs."
+  },
+  {
+   "q": "Can grandparents open a Coverdell?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "$2,000 cap across all accounts",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — low value",
+   "reason": "Cap covers all contributors."
+  },
+  {
+   "q": "How much will $2,000 a year grow to by 18?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "$36,000 before growth",
+   "elsewhere": "/investing/compound-interest-calculator/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Calculator models growth."
+  },
+  {
+   "q": "What happens to unused 529 money?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Deadlines section; Roth rollover",
+   "elsewhere": "/guides/529-leftover-money-options/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Page covers Roth rollover; full options guide not linked."
+  },
+  {
+   "q": "Is a Coverdell worth it at all?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Verdict; \"Why the Coverdell lost...\"",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Verdict answers."
+  },
+  {
+   "q": "Do 529 plans have investment restrictions Coverdells do not?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Table",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Menu of portfolios vs self-directed."
+  },
+  {
+   "q": "Can a Coverdell be rolled into a 529?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Fold into leftover-money FAQ; IRS counts a 529 contribution as a qualified Coverdell expense."
+  }
+ ],
+ "actions": [
+  {
+   "action": "Strengthen",
+   "q": "What is the Coverdell ESA contribution limit?",
+   "target": "What is the Coverdell ESA contribution limit?",
+   "fact_basis": [
+    {
+     "fact": "For 2025 the total of all contributions to all Coverdell ESAs for one beneficiary can't be more than $2,000 (from all sources); the $2,000 limit is unchanged on this page",
+     "source": "https://www.irs.gov/publications/p970 (Coverdell ESA, \"Limit for each designated beneficiary\")"
+    },
+    {
+     "fact": "MAGI $95,000-$110,000 (single) / $190,000-$220,000 (joint): the $2,000 limit is gradually reduced; at $110,000 / $220,000 or more you can't contribute",
+     "source": "https://www.irs.gov/publications/p970 (Coverdell ESA, \"Reduced limit\")"
+    },
+    {
+     "fact": "A Coverdell ESA can be held for a beneficiary who is under age 18 or is a special needs beneficiary",
+     "source": "https://www.irs.gov/publications/p970 (Coverdell ESA, \"Who can have a Coverdell ESA?\")"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/publications/p970"
+   ],
+   "task": "Extend the existing FAQ answer: state the MAGI phase-out range ($95,000-$110,000 single, $190,000-$220,000 joint; no contributions at or above the top) and that contributions are only allowed for a beneficiary under 18 (or special needs). Keep the $2,000 figure; 3-4 sentences total."
+  },
+  {
+   "action": "Add",
+   "q": "What happens to a Coverdell ESA if my child does not go to college, and can I roll it to a Roth IRA?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "Distributions not used for qualified education expenses are taxable (earnings) and generally carry a 10% additional tax on the amount included in income",
+     "source": "https://www.irs.gov/publications/p970 (Coverdell ESA, \"Additional Tax on Taxable Distributions\")"
+    },
+    {
+     "fact": "10% additional tax exceptions: distribution after the beneficiary's death, because the beneficiary is disabled, or to the extent of a tax-free scholarship/educational assistance",
+     "source": "https://www.irs.gov/publications/p970 (Coverdell ESA, \"Exceptions\")"
+    },
+    {
+     "fact": "Not taxable if rolled over (within 60 days) to another Coverdell ESA for the same beneficiary or a family member under age 30; the beneficiary can also be changed to a family member under 30 with no tax",
+     "source": "https://www.irs.gov/publications/p970 (Coverdell ESA, \"Rollovers\" and \"Changing the Designated Beneficiary\")"
+    },
+    {
+     "fact": "A contribution to a 529 (QTP) on behalf of the Coverdell beneficiary (or, after a beneficiary change, a family member) is a qualified education expense",
+     "source": "https://www.irs.gov/publications/p970 (Coverdell ESA, \"Contributions to a qualified tuition program (QTP)\")"
+    },
+    {
+     "fact": "The SECURE 2.0 rollover to a Roth IRA is described for long-term 529 plans (QTPs) only, in the same publication; the Coverdell rollover rules name only another Coverdell",
+     "source": "https://www.irs.gov/publications/p970 (QTP \"Rollover to Roth IRA\" reminder vs Coverdell \"Rollovers\")"
+    },
+    {
+     "fact": "Page text: funds generally must be used by age 30 or are distributed with tax and 10% penalty on earnings",
+     "source": "this page, FAQ \"Does a Coverdell have to be used by a certain age?\""
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/publications/p970"
+   ],
+   "task": "New FAQ answering the three PAA questions (cash out / child skips college / Roth IRA): leftover can go to a family member under 30 via rollover or beneficiary change, or into a 529 for the same beneficiary; cashing out pays income tax on earnings plus 10% except for death, disability or scholarship; the 529-to-Roth rule does not apply to a Coverdell (rolling a Coverdell into a 529 first is not described by the IRS as a Roth route). No Roth promise. Practical tone, short."
+  },
+  {
+   "action": "Link",
+   "q": "How much money should a 5 year old have in 529?",
+   "target": "link-from:section \"The $2,000 cap is the Coverdell's dealbreaker\"",
+   "link_to": "/guides/college-savings-by-age/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Short in-text link to the college-savings-by-age guide."
+  },
+  {
+   "action": "Link",
+   "q": "What happens to unused 529 money?",
+   "target": "link-from:section \"Deadlines and leftover money\"",
+   "link_to": "/guides/529-leftover-money-options/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Link after the Roth-rollover sentence to the 5-options leftover guide."
+  }
+ ]
+}

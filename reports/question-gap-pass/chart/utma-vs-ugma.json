@@ -1,0 +1,309 @@
+{
+ "route": "/compare/utma-vs-ugma/",
+ "slug": "utma-vs-ugma",
+ "file": "src/data/comparisons.ts",
+ "kind": "COMPARISONS",
+ "clicks": 0,
+ "impressions": 69,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "www.fidelity.com",
+  "www.nerdwallet.com",
+  "investor.vanguard.com",
+  "www.savingforcollege.com",
+  "www.newyorklife.com",
+  "finaid.org",
+  "www.wellsfargo.com",
+  "www.chase.com",
+  "dfhlaw.com",
+  "www.linkedin.com"
+ ],
+ "forum_dominated": false,
+ "questions": [
+  {
+   "q": "Can you open an UTMA for someone over 18?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — ungrounded",
+   "reason": "Only non-official sources found (law firm/broker pages); state statutes vary. Cannot ground."
+  },
+  {
+   "q": "What is an UGMA account at Fidelity Investments?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — low value",
+   "reason": "Broker-specific."
+  },
+  {
+   "q": "Who owns the money in a custodial account?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Table \"Ownership\"; \"What UGMA and UTMA actually are\"",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Irrevocably the child's."
+  },
+  {
+   "q": "What does UGMA and UTMA mean?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Table full names; \"What... actually are\"",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Defined."
+  },
+  {
+   "q": "Do parents pay taxes on UTMA?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "FAQ \"taxed differently?\" (kiddie tax tiers)",
+   "elsewhere": "/guides/custodial-account-taxes-kiddie-tax/",
+   "value": "High",
+   "action": "Strengthen",
+   "reason": "Tiers are given but not who reports the income or the parents' Form 8814 election; kiddie guide does not cover 8814."
+  },
+  {
+   "q": "What are the downsides of an UTMA account?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "\"When the child takes control\"; FAQ aid",
+   "elsewhere": "/guides/utma-custodial-account-explained/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Already linked guide has the full pros/cons."
+  },
+  {
+   "q": "What is the difference between a custodial account and a UTMA?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Intro: custodial = UTMA/UGMA",
+   "elsewhere": "/guides/utma-custodial-account-explained/",
+   "value": "Low",
+   "action": "Link",
+   "reason": "Guide covers."
+  },
+  {
+   "q": "At what age does the child take control?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 6; section",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "State-by-state examples."
+  },
+  {
+   "q": "Can the custodian spend the money on themselves/child's needs?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "—",
+   "elsewhere": "/guides/utma-custodial-account-explained/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Guide FAQ: spend only for child's benefit; page says nothing on custodian duties."
+  },
+  {
+   "q": "Is a UTMA taxed differently from UGMA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 4",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Same kiddie tax."
+  },
+  {
+   "q": "Does it affect financial aid?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 5; table",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Up to 20% vs 5.64%."
+  },
+  {
+   "q": "Can I take the money back?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "\"What UGMA and UTMA actually are\"",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Completed gift."
+  },
+  {
+   "q": "Can I choose between UGMA and UTMA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 3",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Usually no."
+  },
+  {
+   "q": "Is there a limit on how much I can put in?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/guides/gift-tax-limit-2026/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Gift-tax exclusion explained there."
+  },
+  {
+   "q": "How is a UTMA different from a 529?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Verdict link",
+   "elsewhere": "/compare/529-vs-utma/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Already linked."
+  },
+  {
+   "q": "UTMA vs custodial Roth IRA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Last section link",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Already linked."
+  },
+  {
+   "q": "How do I open a UTMA?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/guides/how-to-open-a-custodial-brokerage-account-for-kids/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Step-by-step guide."
+  },
+  {
+   "q": "What happens to a UTMA when the custodian dies?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — ungrounded",
+   "reason": "No official source fetched."
+  },
+  {
+   "q": "Can a UTMA be transferred to a 529?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/compare/529-vs-utma/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "529 vs UTMA page."
+  },
+  {
+   "q": "Does the child have to file a tax return?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/guides/custodial-account-taxes-kiddie-tax/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated section on filing thresholds."
+  },
+  {
+   "q": "Which states allow transfer to 25?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 6",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "CA and FL listed."
+  },
+  {
+   "q": "Can UTMA hold real estate or crypto?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Table: real estate, art, patents",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — low value",
+   "reason": "Crypto is broker-specific."
+  }
+ ],
+ "actions": [
+  {
+   "action": "Strengthen",
+   "q": "Do parents pay taxes on UTMA?",
+   "target": "Are UTMA and UGMA accounts taxed differently?",
+   "fact_basis": [
+    {
+     "fact": "Parents can elect to report a child's income on their own return on Form 8814 if the child was under 19 (under 24 if full-time student), had only interest and dividends (incl. capital gain distributions), had gross income under $13,500 (2025), and is required to file; the child then does not file a return",
+     "source": "https://www.irs.gov/pub/irs-pdf/i8814.pdf (2025 Instructions for Form 8814, Purpose of Form)"
+    },
+    {
+     "fact": "Under the election the first $1,350 is not taxed and the next $1,350 (to $2,700) is taxed at 10%; with qualified dividends/capital gain distributions it can cost up to $135 more than a separate return",
+     "source": "https://www.irs.gov/pub/irs-pdf/i8814.pdf (Rate may be higher)"
+    },
+    {
+     "fact": "A separate Form 8814 is needed per child; election made by attaching to the parent's timely filed return",
+     "source": "https://www.irs.gov/pub/irs-pdf/i8814.pdf (How to make the election)"
+    },
+    {
+     "fact": "Page text: 2025 kiddie tax tiers $1,350 / next $1,350 / above $2,700 at parents' rate",
+     "source": "this page, FAQ \"Are UTMA and UGMA accounts taxed differently?\""
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/pub/irs-pdf/i8814.pdf"
+   ],
+   "task": "Add 2-3 sentences to the existing FAQ: the account's income belongs to the child (reported under the child's SSN), above-threshold income is taxed at the parents' rate via the kiddie tax, and parents may instead report qualifying interest/dividend income on their own return with Form 8814 (conditions above); mention it can cost slightly more. Add link to [custodial account taxes and the kiddie tax](/guides/custodial-account-taxes-kiddie-tax/)."
+  },
+  {
+   "action": "Link",
+   "q": "What are the downsides of an UTMA account?",
+   "target": "link-from:section \"When the child takes control\"",
+   "link_to": "/guides/utma-custodial-account-explained/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Already linked from \"What UGMA and UTMA actually are\"; add pros-and-cons mention here only if natural (already linked otherwise)."
+  },
+  {
+   "action": "Link",
+   "q": "Is there a limit on how much I can put in?",
+   "target": "link-from:section \"What UGMA and UTMA actually are\"",
+   "link_to": "/guides/gift-tax-limit-2026/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "One in-text link to the gift tax limit guide after \"completed gift\"."
+  },
+  {
+   "action": "Link",
+   "q": "How do I open a UTMA?",
+   "target": "link-from:section \"Why you rarely get to choose\"",
+   "link_to": "/guides/how-to-open-a-custodial-brokerage-account-for-kids/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Link to the opening guide where it says \"whichever your broker opens\"."
+  },
+  {
+   "action": "Link",
+   "q": "Do parents pay taxes on UTMA?",
+   "target": "link-from:FAQ \"Are UTMA and UGMA accounts taxed differently?\"",
+   "link_to": "/guides/custodial-account-taxes-kiddie-tax/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Covered by the Strengthen task link."
+  }
+ ]
+}

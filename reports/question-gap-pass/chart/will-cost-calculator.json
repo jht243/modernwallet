@@ -1,0 +1,310 @@
+{
+ "route": "/estate-planning/will-cost-calculator/",
+ "slug": "will-cost-calculator",
+ "file": "src/data/spokes-estate-planning.ts",
+ "kind": "ESTATE_PLANNING_SPOKES",
+ "clicks": 0,
+ "impressions": 54,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [],
+ "forum_dominated": false,
+ "questions": [
+  {
+   "q": "How much does a lawyer cost for a simple will?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Intro; FAQ 2-3; howItWorks",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "$300-$800 simple, ranges by complexity, flat-fee share."
+  },
+  {
+   "q": "What are the downsides of a living trust?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "FAQ 7 (cost vs trust tradeoff)",
+   "elsewhere": "/guides/is-a-living-trust-worth-it/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated guide; not yet linked."
+  },
+  {
+   "q": "Who is the best person to draw up a will?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "howItWorks: attorney vs online triggers",
+   "elsewhere": "/compare/online-will-vs-lawyer/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated comparison; not yet linked."
+  },
+  {
+   "q": "What is the 5 by 5 rule in estate planning?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — off-topic",
+   "reason": "Niche trust-power term, unrelated to will pricing."
+  },
+  {
+   "q": "What are five assets that should never be included in a living trust?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/guides/how-to-fund-a-trust/",
+   "value": "Low",
+   "action": "Link",
+   "reason": "Funding guide covers what to retitle."
+  },
+  {
+   "q": "Is it better to inherit a house or put it in a trust?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/compare/probate-vs-trust/",
+   "value": "Low",
+   "action": "Link",
+   "reason": "Dedicated comparison."
+  },
+  {
+   "q": "How much does an online will cost?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 2; howItWorks",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Prices per provider."
+  },
+  {
+   "q": "Are online wills legal?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 4",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Execution caveats."
+  },
+  {
+   "q": "Do I need a power of attorney and healthcare directive too?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 6",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Costs included."
+  },
+  {
+   "q": "Will vs living trust cost?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 7",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Dollar ranges and links."
+  },
+  {
+   "q": "How long does it take to get a will?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 8",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Added previously."
+  },
+  {
+   "q": "How much will it cost in my state?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 5; howItWorks multipliers; tool",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "State multipliers given."
+  },
+  {
+   "q": "Does my will need a notary or witnesses?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "howItWorks; common mistakes",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Two witnesses, self-proving affidavit, LA/CO/ND."
+  },
+  {
+   "q": "Is a handwritten will valid?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "howItWorks (~27 states holographic)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered with fallback caveat."
+  },
+  {
+   "q": "How much does it cost to update a will?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "commonMistakes ($150-$500)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Stated."
+  },
+  {
+   "q": "What does probate cost even with a will?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/probate/fee-calculator/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Probate fee calculator by state."
+  },
+  {
+   "q": "What happens if I die without a will?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/guides/first-time-estate-planning/",
+   "value": "High",
+   "action": "Link",
+   "reason": "First-time estate planning guide covers intestacy; state-specific pages cannot be linked from the index."
+  },
+  {
+   "q": "Does a will cover accounts with a named beneficiary?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/guides/first-time-estate-planning/",
+   "value": "High",
+   "action": "Link",
+   "reason": "That guide states beneficiary designations override the will."
+  },
+  {
+   "q": "Does a will avoid estate tax?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/estate-planning/estate-tax-calculator/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Estate tax calculator and trust pages cover it."
+  },
+  {
+   "q": "Do I need a will if I have a living trust?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ 7",
+   "elsewhere": "/compare/living-trust-vs-will/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Already linked."
+  },
+  {
+   "q": "Can I write a will for free?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 2/4 (FreeWill $0)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Stated."
+  },
+  {
+   "q": "Where should I keep my will?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — ungrounded",
+   "reason": "No official source fetched."
+  },
+  {
+   "q": "Do couples need separate wills?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "workedExample: couple plans",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — low value",
+   "reason": "Couple pricing shown; legal nuance state-specific, ungrounded."
+  },
+  {
+   "q": "What does an executor cost?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/probate/fee-calculator/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Probate fee calculator."
+  },
+  {
+   "q": "Hidden fees: notary, filing, storage?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ 4 notary mention",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — low value",
+   "reason": "Low decision value, ungrounded dollar amounts."
+  }
+ ],
+ "actions": [
+  {
+   "action": "Link",
+   "q": "What does probate cost even with a will?",
+   "target": "link-from:FAQ \"How does a will's cost compare to a living trust?\"",
+   "link_to": "/probate/fee-calculator/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "One in-text link after \"a will goes through public probate court\"."
+  },
+  {
+   "action": "Link",
+   "q": "Who is the best person to draw up a will?",
+   "target": "link-from:section howItWorks (attorney vs online sentence)",
+   "link_to": "/compare/online-will-vs-lawyer/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Link the \"attorney-drafted becomes worth it for blended families...\" sentence to the online-will-vs-lawyer comparison."
+  },
+  {
+   "action": "Link",
+   "q": "What happens if I die without a will?",
+   "target": "link-from:FAQ \"Do I need a power of attorney and healthcare directive with my will?\"",
+   "link_to": "/guides/first-time-estate-planning/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Link to the first-time estate planning guide (documents, beneficiary designations, order of operations)."
+  },
+  {
+   "action": "Link",
+   "q": "What are the downsides of a living trust?",
+   "target": "link-from:FAQ \"How does a will's cost compare to a living trust?\"",
+   "link_to": "/guides/is-a-living-trust-worth-it/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Link to the living-trust-worth-it guide."
+  },
+  {
+   "action": "Link",
+   "q": "Does a will avoid estate tax?",
+   "target": "link-from:howItWorks closing sentence",
+   "link_to": "/estate-planning/estate-tax-calculator/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add estate-tax-calculator link next to the estate-planning calculator link."
+  }
+ ]
+}

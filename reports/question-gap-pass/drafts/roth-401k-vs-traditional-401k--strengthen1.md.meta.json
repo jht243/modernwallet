@@ -1,0 +1,88 @@
+{
+ "slug": "roth-401k-vs-traditional-401k--strengthen1",
+ "schema": "none",
+ "kind": "section",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 155,
+ "floor": 0,
+ "input_tokens": 25439,
+ "output_tokens": 1743,
+ "thinking_tokens": null,
+ "cached_tokens": 24177,
+ "est_cost_usd": 0.0447,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 155,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    5,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L3",
+     "quote": "A 100% Roth 401(k) saver can therefore build a Traditional balance from the match, and that pre-tax match is taxed when withdrawn in retirement.",
+     "replacement": "A 100% Roth 401(k) saver can therefore build a Traditional balance from the match.",
+     "type": "unsupported",
+     "why": "SOURCE says nothing about how the match is taxed at withdrawal"
+    },
+    {
+     "id": "L3",
+     "quote": "It is not a reason to avoid Roth deferrals.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE makes no evaluation of whether to avoid Roth deferrals"
+    },
+    {
+     "id": "L5",
+     "quote": "Only vested match money qualifies, and a Roth match counts as taxable income in the year it is allocated to your account.",
+     "replacement": "Only vested match money qualifies, and a Roth match is not excludable from your gross income.",
+     "type": "unsupported",
+     "why": "SOURCE says not excludable from gross income; gives no timing"
+    },
+    {
+     "id": "L7",
+     "quote": "Whether a plan offers a Roth match is written into its plan document.",
+     "replacement": "To see whether your plan offers a Roth match, check the plan document.",
+     "type": "unsupported",
+     "why": "SOURCE does not say where a plan records the Roth match option"
+    },
+    {
+     "id": "L9",
+     "quote": "Pre-tax by default; since SECURE 2.0, a plan may offer vested match as Roth, taxed in the year allocated",
+     "replacement": "Pre-tax by default; since SECURE 2.0, a plan may offer vested match as Roth, not excludable from gross income",
+     "type": "unsupported",
+     "why": "SOURCE gives no year-allocated timing, only not excludable from income"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 180
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 48.0,
+ "response_id": "msg_011CfuLfWmzPBgeD8FtQhQjU",
+ "generated_at": "2026-10-10T22:24:59+0000"
+}

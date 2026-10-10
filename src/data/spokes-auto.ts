@@ -10,6 +10,7 @@ import type { SpokeEntry } from "./types";
 
 export const AUTO_SPOKES: SpokeEntry[] = [
   {
+    updated: "2026-10-10",
     calculator: "auto-loan",
     slug: "payoff-calculator",
     title: "Auto Loan Payoff Calculator: See Your Payoff Date Fast",
@@ -22,7 +23,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
     introText:
       "This auto loan payoff calculator shows exactly when you'll pay off your car loan and how much sooner you can get there with extra payments. Enter your balance, rate, term, and any extra monthly amount in the calculator above. It will map out your payoff date and the interest you'll save, so you can test a plan before committing a dollar.",
     howItWorks:
-      "An auto loan payoff calculator works by recreating your loan's monthly schedule, called an amortization schedule. Enter your current balance, and the payoff date it returns tells you exactly how many months you have left. The schedule below that date shows your exact remaining balance after any payment number you pick. Each month, interest is charged on your remaining balance first. Whatever is left from your payment then reduces the principal you owe. Because the balance shrinks over time, more of each payment goes to principal as the loan ages.\n\nExtra money you add is applied straight to the principal balance, which is the key to paying off sooner. A smaller balance means less interest charged next month. That compounding effect is why even a modest extra payment can erase months from your term. Want a deeper breakdown? Open the full [auto loan amortization schedule](/auto-loan/amortization-schedule/).\n\nWeighing extra payments against investing that cash, or against paying down higher-rate debt like credit cards first? The [pay off car loan early calculator](/auto-loan/early-payoff-calculator/) walks through that comparison.",
+      "An auto loan payoff calculator works by recreating your loan's monthly schedule, called an amortization schedule. Enter your current balance, and the payoff date it returns tells you exactly how many months you have left. The schedule below that date shows your exact remaining balance after any payment number you pick. Each month, interest is charged on your remaining balance first. Whatever is left from your payment then reduces the principal you owe. Because the balance shrinks over time, more of each payment goes to principal as the loan ages.\n\nExtra money you add is applied straight to the principal balance, which is the key to paying off sooner. A smaller balance means less interest charged next month. That compounding effect is why even a modest extra payment can erase months from your term. Want a deeper breakdown? Open the full [auto loan amortization schedule](/auto-loan/amortization-schedule/).\n\nWeighing extra payments against investing that cash, or against paying down higher-rate debt like credit cards first? The [pay off car loan early calculator](/auto-loan/early-payoff-calculator/) walks through that comparison.\n\nFor more detail, see [Auto Loan Interest Calculator](/auto-loan/interest-calculator/).",
     commonMistakes: [
       "Assuming your extra payment automatically reduces principal. The CFPB notes lenders apply payments to fees and interest first. Some servicers hold the extra and apply it to your next scheduled payment unless you tell them in writing to apply it to principal.",
       "Forgetting to check for a prepayment penalty. Auto loans can carry one, especially on terms under five years. Review your contract and Truth in Lending disclosures before making a large lump-sum payment.",
@@ -72,6 +73,10 @@ export const AUTO_SPOKES: SpokeEntry[] = [
         question: "Can I pay off my auto loan with a credit card, including a 0% intro APR card?",
         answer:
           "Most auto loan servicers do not accept credit card payments directly, and card issuers commonly code any transfer to a lender as a cash advance, which carries its own fee and starts accruing interest right away, even on a 0% intro APR card. If you're weighing a 0% intro card to help pay off debt faster, check [what credit score you typically need to qualify for one](/guides/credit-score-for-0-apr-credit-card/) and read the offer terms closely, since a deferred-interest offer can charge interest retroactively if the balance isn't cleared in time.",
+      },
+      {
+        question: "How can I pay off a 7-year car loan in 3 years?",
+        answer: "To pay off a 7-year car loan in 3 years, enter the balance, rate, and remaining term, then raise the extra monthly payment until the payoff date lands about 36 months out. Check that the larger payment fits your monthly budget, or pay a lump sum toward principal now instead. Tell the lender in writing to apply the extra to principal, because the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/) says lenders apply payments to fees and interest first. Some loans carry a prepayment penalty, and precomputed-interest loans save less. Refinancing helps only if it lowers your rate; compare it with the [auto loan refinance calculator](/auto-loan/refinance-calculator/).",
       },
     ],
     sources: [

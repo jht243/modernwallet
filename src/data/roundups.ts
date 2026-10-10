@@ -4187,7 +4187,7 @@ export const ROUNDUPS: RoundupEntry[] = [
 
   // ── Best Estate Planning Software ────────────────────────────────────────
   {
-    updated: "2026-10-08",
+    updated: "2026-10-10",
     slug: "best-estate-planning-software",
     noAds: true,
     title: "Best Estate Planning Software 2026: Verified Picks",
@@ -4199,7 +4199,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     segment: "Estate Planning",
     h1: "Best Estate Planning Software of 2026",
     introText:
-      "The best estate planning software includes all four core documents (a will, revocable living trust, durable POA, and advance healthcare directive) along with state-specific execution instructions and clear funding guidance.\n\nWe evaluated Trust & Will, LegalZoom, Nolo Quicken WillMaker, FreeWill, Killswitch, Mama Bear Legal Forms, and Rocket Lawyer based on document breadth, state coverage, pricing transparency, and attorney-review availability. Trust & Will is the leader for households that need both a will and a trust. FreeWill is genuinely $0 for simple-to-moderate estates, while Nolo Plus, at $139, is the cheapest RLT-included path. Killswitch charges $99 once for a will, financial power of attorney, and healthcare directive, which makes it the low-cost web pick if you don't need a trust. LegalZoom Premium offers the best budget attorney-consultation bundle.\n\nBefore you choose, verify your specific plan tier with our [estate planning calculator](/estate-planning/). It maps your family and asset situation to the right document set.",
+      "The best estate planning software includes all four core documents (a will, revocable living trust, durable POA, and advance healthcare directive) along with state-specific execution instructions and clear funding guidance.\n\nWe evaluated Trust & Will, LegalZoom, Nolo Quicken WillMaker, FreeWill, Killswitch, Mama Bear Legal Forms, and Rocket Lawyer based on document breadth, state coverage, pricing transparency, and attorney-review availability. Trust & Will is the leader for households that need both a will and a trust. FreeWill is genuinely $0 for simple-to-moderate estates, while Nolo Plus, at $139, is the cheapest RLT-included path. Killswitch charges $99 once for a will, financial power of attorney, and healthcare directive, which makes it the low-cost web pick if you don't need a trust. LegalZoom Premium offers the best budget attorney-consultation bundle.\n\nBefore you choose, verify your specific plan tier with our [estate planning calculator](/estate-planning/). It maps your family and asset situation to the right document set.\n\nFor more detail, see [Best Online Will Makers of 2026](/roundup/best-online-will-makers/).",
     rankingCriteria:
       "Rankings weighted: document breadth (will + trust + POA + healthcare directive; 25%), state coverage including Louisiana + holographic + notarization-only states (20%), pricing transparency (15%), attorney-review option (15%), update/versioning model (15%), and desktop/web/mobile format (10%).",
     options: [
@@ -4359,7 +4359,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         heading: "When you outgrow estate planning software",
         content:
-          "Skip software and hire an attorney when: your net worth is above the 2026 federal $15M exemption or a state estate tax threshold (Oregon $1M, Massachusetts $2M, Washington $3M), you need an irrevocable trust (ILIT, MAPT, dynasty — online tools can't produce them), you have blended family or business interests, you have a testamentary trust with age-based distributions past 18, you have cross-state property with unusual titling, or you're in Louisiana. See our [estate planning calculator](/estate-planning/) for the specific plan tier your net worth calls for, and the [estate tax calculator](/estate-planning/estate-tax-calculator/) for federal + state exposure.",
+          "Skip software and hire an attorney when: your net worth is above the 2026 federal $15M exemption or a state estate tax threshold (Oregon $1M, Massachusetts $2M, Washington $3M), you need an irrevocable trust (ILIT, MAPT, dynasty — online tools can't produce them), you have blended family or business interests, you have a testamentary trust with age-based distributions past 18, you have cross-state property with unusual titling, or you're in Louisiana. See our [estate planning calculator](/estate-planning/) for the specific plan tier your net worth calls for, and the [estate tax calculator](/estate-planning/estate-tax-calculator/) for federal + state exposure.\n\nFor more detail, see [Online Will vs Lawyer](/compare/online-will-vs-lawyer/).",
       },
     ],
     faqs: [
@@ -4371,7 +4371,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         question: "Can I do a whole estate plan with software?",
         answer:
-          "Yes for simple-to-moderate estates. Trust & Will, LegalZoom, Nolo, FreeWill, and Mama Bear all produce valid wills, POAs, and healthcare directives in every U.S. state; Trust & Will, LegalZoom, and Nolo Plus also produce revocable living trusts. Software is not appropriate for: net worth above the $15M federal exemption or a state estate tax threshold; irrevocable trusts (ILIT, MAPT, dynasty); blended families; business succession; testamentary trusts with age-based distributions to minor children; contested beneficiaries; or Louisiana residents (notarial testament requirement).",
+          "Yes for simple-to-moderate estates. Trust & Will, LegalZoom, Nolo, FreeWill, and Mama Bear all produce valid wills, POAs, and healthcare directives in every U.S. state; Trust & Will, LegalZoom, and Nolo Plus also produce revocable living trusts. Software is not appropriate for: net worth above the $15M federal exemption or a state estate tax threshold; irrevocable trusts (ILIT, MAPT, dynasty); blended families; business succession; testamentary trusts with age-based distributions to minor children; contested beneficiaries; or Louisiana residents (notarial testament requirement). For more detail, see [Best Living Trust Services of 2026](/roundup/best-living-trust-services/).",
       },
       {
         question: "How much does estate planning software cost?",

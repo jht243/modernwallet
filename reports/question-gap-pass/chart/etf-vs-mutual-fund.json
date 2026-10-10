@@ -1,0 +1,286 @@
+{
+ "route": "/compare/etf-vs-mutual-fund/",
+ "slug": "etf-vs-mutual-fund",
+ "file": "src/data/comparisons.ts",
+ "kind": "COMPARISONS",
+ "clicks": 0,
+ "impressions": 282,
+ "serp_verdict": "unread",
+ "ai_overview_cited_domains": [],
+ "forum_dominated": false,
+ "questions": [
+  {
+   "q": "Are actively managed ETFs cheaper than actively managed mutual funds?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "sections Active vs passive (\"expensive active ETF (if you could find one)\"); FAQ index fund mentions active ETFs",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Top GSC query (active ETF expense ratio vs mutual fund); page is vague and its parenthetical undersells active ETFs. Answer without figures: fee is set per fund, compare prospectus fee tables."
+  },
+  {
+   "q": "Do mutual funds charge sales loads or 12b-1 fees?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "only redemption-fee FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Cost gate; ETFs not subject to loads but pay brokerage commission/spread. Grounded in investor.gov."
+  },
+  {
+   "q": "Do ETFs have hidden trading costs?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Can a mutual fund charge for selling too soon?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Is an ETF better than a mutual fund?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Can you lose money in an ETF?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "ETF vs index fund difference",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": "/compare/index-fund-vs-etf/",
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear; /compare/index-fund-vs-etf/ exists"
+  },
+  {
+   "q": "Do ETFs pay dividends?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Are ETFs safer?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "What is a good expense ratio?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "section Why expense ratios matter; table",
+   "elsewhere": "/guides/what-is-a-good-expense-ratio/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Dedicated benchmark guide"
+  },
+  {
+   "q": "Which is better in a 401(k) or IRA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "section When mutual funds are better",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Target-date funds: which to choose?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "section (mention)",
+   "elsewhere": "/guides/what-target-date-fund-should-i-choose/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Guide exists"
+  },
+  {
+   "q": "Which index funds/ETFs should a beginner buy?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "VTI, FZROX mentions",
+   "elsewhere": "/roundup/best-index-funds/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Roundup exists"
+  },
+  {
+   "q": "How are ETF/mutual fund gains taxed when I sell?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ dividends only",
+   "elsewhere": "/compare/ordinary-income-vs-capital-gains-tax/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Capital gains comparison exists"
+  },
+  {
+   "q": "Minimum investment / fractional shares",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "table; section",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How do I buy an ETF?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 low value",
+   "reason": "Low value"
+  },
+  {
+   "q": "Does ETF in-kind tax advantage hold for active ETFs?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "tax efficiency section",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 low value",
+   "reason": "Folded into active-ETF Add"
+  },
+  {
+   "q": "Wash sale rule when swapping funds",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": "/guides/wash-sale-rule-explained/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Guide exists"
+  },
+  {
+   "q": "Closing/liquidation risk of ETFs",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 low value",
+   "reason": "Low value"
+  },
+  {
+   "q": "Do ETFs have automatic investing/DRIP?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "table",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "SPY vs VOO type fund pairs",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 low value",
+   "reason": "Off-topic for page"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Add",
+   "q": "Are actively managed ETFs cheaper than actively managed mutual funds?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "Funds (mutual funds and ETFs) must provide a standardized fee table in the prospectus with shareholder fees and annual operating expenses; the bottom-line figure is the expense ratio.",
+     "source": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/mutual-fund-and-etf-fees-and-expenses-investor-bulletin"
+    },
+    {
+     "fact": "Page: actively managed ETFs exist; ETFs avoid capital gains distributions via in-kind redemption; mutual funds distribute gains; bid-ask spread cost.",
+     "source": "quoted from this page (FAQ index fund; tax efficiency section; bid-ask FAQ)"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/mutual-fund-and-etf-fees-and-expenses-investor-bulletin"
+   ],
+   "task": "New FAQ, 3-4 sentences, NO numeric fee claims: the ETF wrapper does not set the fee; an active ETF and an active mutual fund each charge their own expense ratio, so compare the prospectus fee tables; active ETFs keep the in-kind tax advantage but add a bid-ask spread; the same cost-first rule applies. Link /guides/what-is-a-good-expense-ratio/."
+  },
+  {
+   "action": "Add",
+   "q": "Do mutual funds charge sales loads or 12b-1 fees that ETFs do not?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "A front-end load is paid at purchase and a back-end load at sale; both are shareholder fees disclosed in the prospectus fee table.",
+     "source": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/mutual-fund-and-etf-fees-and-expenses-investor-bulletin"
+    },
+    {
+     "fact": "12b-1 fees pay for distribution and sometimes shareholder services, are paid from fund assets, and by law cannot exceed 1 percent of average net assets per year.",
+     "source": "https://www.investor.gov/introduction-investing/investing-basics/glossary/12b-1-fees"
+    },
+    {
+     "fact": "The prospectus fee table does not show brokerage commissions or intermediary fees.",
+     "source": "investor.gov bulletin above"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.investor.gov/introduction-investing/investing-basics/glossary/12b-1-fees",
+    "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/mutual-fund-and-etf-fees-and-expenses-investor-bulletin"
+   ],
+   "task": "New FAQ after the redemption-fee FAQ, 3-4 sentences: some mutual fund share classes charge front-end/back-end sales loads and 12b-1 fees (capped at 1% of assets/yr by law); no-load index funds exist; ETFs have no sales load but you pay trading costs; check the prospectus fee table."
+  },
+  {
+   "action": "Link",
+   "q": "What is a good expense ratio?",
+   "target": "link-from:section Why ETF expense ratios matter so much",
+   "link_to": "/guides/what-is-a-good-expense-ratio/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one inline link to the expense-ratio benchmark guide at the end of the first paragraph of that section."
+  },
+  {
+   "action": "Link",
+   "q": "Target-date funds: which to choose?",
+   "target": "link-from:section When mutual funds are the better choice (target-date paragraph)",
+   "link_to": "/guides/what-target-date-fund-should-i-choose/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one inline link in the target-date paragraph."
+  }
+ ]
+}

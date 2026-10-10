@@ -92,7 +92,7 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
   },
 
   {
-    updated: "2026-09-23",
+    updated: "2026-10-10",
     calculator: "investing",
     slug: "high-yield-savings-calculator",
     title: "High Yield Savings (HYSA) Calculator: APY Earnings",
@@ -139,6 +139,10 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
       { question: "Can a business open a high-yield savings account, or open one jointly with someone else?", answer: "Yes, individuals can open a joint high-yield savings account (HYSA) with a co-owner, and businesses can establish dedicated commercial accounts. Joint accounts provide equal withdrawal rights and qualify for separate Federal Deposit Insurance Corporation (FDIC) coverage up to $250,000 per co-owner, totaling $500,000 for two owners. For businesses, commercial savings accounts are a separate product from consumer accounts. A business account application requires entity documents and an Employer Identification Number (EIN), and the account may feature different rate tiers than a personal HYSA." },
       { question: "Are high-yield savings account sign-up bonuses worth it, and are they taxable?", answer: "Bank sign-up bonuses are generally worth taking because they provide extra cash for meeting straightforward requirements like a minimum deposit or a qualifying direct deposit, but the payout is taxable. The Internal Revenue Service (IRS) treats cash account-opening bonuses the same way it treats interest income. Depending on the institution's reporting practices, the bank typically reports the bonus on Form 1099-INT or Form 1099-MISC, and the money is taxed as ordinary income in the year received." },
       { question: "What are the disadvantages of a high-yield savings account compared to a regular savings account?", answer: "The main disadvantage of a high-yield savings account (HYSA) compared to a regular savings account is that most HYSAs operate through online-only banks without physical branch access for in-person service. The higher annual percentage yield (APY) is also variable, meaning the institution can lower your rate at any time. Otherwise, both account types share identical mechanics, including Federal Deposit Insurance Corporation (FDIC) coverage and the same everyday liquidity rules, making the higher yield the only substantive difference." },
+      {
+        question: "Can you live off the interest from $100,000, and how much do you need to earn $3,000 a month?",
+        answer: "No, $100,000 alone cannot cover much of a monthly budget: at this page's 4.5% example APY, it pays about $4,500 a year, or roughly $375 a month. Earning $3,000 a month ($36,000 a year) at that same 4.5% takes about $800,000, three times the $266,667 needed for $1,000 a month. The 4.5% is an example rate and carries no guarantee because rates are variable, and interest is taxed as ordinary income (reported on [Form 1099-INT](https://www.irs.gov/forms-pubs/about-form-1099-int)), so the amount left to spend is lower than these figures. To see how long a balance lasts when you spend it down instead, try the [withdrawal calculator](/investing/withdrawal-calculator/).",
+      },
     ],
     sources: [
       { label: "FDIC — National Rates and Rate Caps", url: "https://www.fdic.gov/national-rates-and-rate-caps" },

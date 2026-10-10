@@ -1,0 +1,51 @@
+{
+ "slug": "high-yield-savings-calculator--add0",
+ "schema": "none",
+ "kind": "section",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 89,
+ "floor": 0,
+ "input_tokens": 25254,
+ "output_tokens": 719,
+ "thinking_tokens": null,
+ "cached_tokens": 24177,
+ "est_cost_usd": 0.0235,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 89,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 1,
+   "found": [
+    0
+   ],
+   "applied": [],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 89
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 14.5,
+ "response_id": "msg_011CfuLdL7EmaSav2UbewQvz",
+ "generated_at": "2026-10-10T22:23:55+0000"
+}

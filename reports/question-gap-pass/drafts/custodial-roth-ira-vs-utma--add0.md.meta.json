@@ -1,0 +1,69 @@
+{
+ "slug": "custodial-roth-ira-vs-utma--add0",
+ "schema": "none",
+ "kind": "section",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 94,
+ "floor": 0,
+ "input_tokens": 25236,
+ "output_tokens": 1481,
+ "thinking_tokens": null,
+ "cached_tokens": 24177,
+ "est_cost_usd": 0.0387,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 94,
+  "numbers_not_in_facts": [
+   "590"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L1",
+     "quote": "A Roth accepts only money, not property such as UTMA shares, and its 2025 limit is the smaller of $7,000 or the child's earned income, because UTMA interest and dividends do not count as compensation ([IRS Publication 590-A](https://www.irs.gov/publications/p590a)).",
+     "replacement": "A Roth accepts only money, not property such as UTMA shares, and its 2025 limit is the smaller of $7,000 or the child's earned income; UTMA interest and dividends do not count as compensation ([IRS Publication 590-A](https://www.irs.gov/publications/p590a)).",
+     "type": "inference",
+     "why": "SOURCE does not say the limit exists because UTMA income isn't compensation."
+    },
+    {
+     "id": "L1",
+     "quote": "Selling UTMA investments to raise that cash can create taxable gains under the [kiddie tax](https://www.irs.gov/taxtopics/tc553), though a gift can supply the cash as long as the child has earnings to match.",
+     "replacement": "Selling UTMA investments to raise that cash can create taxable gains under the [kiddie tax](https://www.irs.gov/taxtopics/tc553), and contributions stay capped at the child's earned income.",
+     "type": "unsupported",
+     "why": "Gift funding the Roth is not in the closed fact list."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 102
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 29.5,
+ "response_id": "msg_011CfuLb9e9P45uxtunV5cXS",
+ "generated_at": "2026-10-10T22:23:41+0000"
+}

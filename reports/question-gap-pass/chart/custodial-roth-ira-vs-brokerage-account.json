@@ -1,0 +1,299 @@
+{
+ "route": "/compare/custodial-roth-ira-vs-brokerage-account/",
+ "slug": "custodial-roth-ira-vs-brokerage-account",
+ "file": "src/data/comparisons.ts",
+ "kind": "COMPARISONS",
+ "clicks": 1,
+ "impressions": 61,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "www.nerdwallet.com",
+  "www.fidelity.com",
+  "www.schwab.com",
+  "www.investopedia.com",
+  "www.kidvestors.co",
+  "www.youtube.com"
+ ],
+ "forum_dominated": false,
+ "questions": [
+  {
+   "q": "Is a custodial Roth IRA a good idea?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "verdict + intro",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Verdict gives the decision rule"
+  },
+  {
+   "q": "How much will $10,000 in a Roth IRA be worth in 20 years?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Tax-free compounding section points to calculator",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Link",
+   "reason": "Answered by calculator, already linked; any figure would need an assumed return"
+  },
+  {
+   "q": "Where is the best place to open a Roth IRA for my child?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "FAQ: Which broker is best for a custodial Roth IRA?",
+   "elsewhere": "/roundup/best-custodial-roth-ira-providers/",
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Brokers named, roundup linked"
+  },
+  {
+   "q": "Can I open a Roth IRA for my 5 year old child?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "FAQ: Can my child have a custodial Roth IRA without a job?; FAQ 18-year-old (no age gate)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Earned income is the gate, not age"
+  },
+  {
+   "q": "What is the disadvantage of a Roth IRA for kids?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "Earned-income wall section; Non-obvious insight section",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Earned-income rule and locked-up earnings both covered"
+  },
+  {
+   "q": "What is the best way to invest $1000 for a child?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "FAQ: which is better; verdict",
+   "elsewhere": "/guides/best-investment-account-for-kids/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Pillar guide covers it; already linked in last section"
+  },
+  {
+   "q": "What is the 2026 custodial Roth IRA contribution limit?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Table + FAQ 'How much can go into...' state 2025 $7,000 only",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Strengthen",
+   "reason": "Page is a year stale; IRS 2026 limit is $7,500 (fetched)"
+  },
+  {
+   "q": "What counts as earned income for a child's Roth IRA, and how do I document it?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Earned-income wall section (examples, 'document')",
+   "elsewhere": "/guides/custodial-roth-ira-for-kids/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Dedicated section + FAQ in guide; already linked from the wall section"
+  },
+  {
+   "q": "Does the kiddie tax apply to a child's Roth IRA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Tax-free compounding section",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Roth growth is tax-free; kiddie tax contrasted"
+  },
+  {
+   "q": "Can a parent or grandparent put money in my teen's Roth?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Smart move section ('match' paragraph)",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Gift allowed up to child's earned income"
+  },
+  {
+   "q": "What happens if I over-contribute to a custodial Roth IRA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: more than my child earned",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "6% excise tax and fix"
+  },
+  {
+   "q": "Can I move money from a brokerage account into a Roth?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: move money from custodial brokerage into Roth",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Can money be withdrawn from a custodial Roth for college?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: custodial Roth used for college",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered incl. penalty waiver"
+  },
+  {
+   "q": "Which hurts financial aid more?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: financial aid; table",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Who controls the account and what happens at 18?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Table 'Who controls it'; UTMA majority 18-25",
+   "elsewhere": "/guides/utma-custodial-account-explained/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Detail on UTMA handover lives in the UTMA guide; already linked"
+  },
+  {
+   "q": "Does my child have to file a tax return to open or fund a Roth?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": "/guides/custodial-account-taxes-kiddie-tax/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Filing section in kiddie-tax guide; page already links it (kiddie tax). Not groundable here"
+  },
+  {
+   "q": "What happens if the custodian dies?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Earned-income wall section (successor custodian)",
+   "elsewhere": "/compare/custodial-roth-ira-vs-utma/",
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered and linked"
+  },
+  {
+   "q": "Can I lose money in a custodial account?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: lose money",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is a custodial brokerage account the same as a UTMA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What fees do custodial accounts charge?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ: which broker (no minimum / clear annual fee)",
+   "elsewhere": "/roundup/best-custodial-roth-ira-providers/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Roundup has fee comparison; already linked twice"
+  },
+  {
+   "q": "Should a teen skip the Roth and use a savings account for near-term goals?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Non-obvious insight (links savings comparison)",
+   "elsewhere": "/compare/custodial-account-vs-savings-account/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Already linked in insight section"
+  },
+  {
+   "q": "Can my 18-year-old open their own account instead?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What does Reddit / Dave Ramsey say about custodial Roth for kids?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — off-topic",
+   "reason": "Opinion-bait"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Strengthen",
+   "q": "How much can go into a custodial Roth IRA vs a brokerage account each year?",
+   "target": "How much can go into a custodial Roth IRA vs a brokerage account each year?",
+   "fact_basis": [
+    {
+     "fact": "2026 IRA contribution limit is $7,500 (up from $7,000 in 2025); contributions can't exceed the lesser of the limit or taxable compensation",
+     "source": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits"
+    },
+    {
+     "fact": "Existing page text: 'capped at the lesser of the child's earned income or $7,000 for 2025'; gift-tax exclusion 'about $19,000 per giver in 2025'",
+     "source": "page: FAQ How much can go into..."
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits",
+    "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+   ],
+   "task": "Rewrite the answer to lead with the current year: Roth cap is the lesser of the child's taxable compensation or $7,500 for 2026 ($7,000 in 2025); give one example (child earned $3,000 -> max $3,000). Keep the existing brokerage no-cap/gift-tax sentence and roundup link. Do not change the gift-exclusion figure."
+  },
+  {
+   "action": "Link",
+   "q": "What counts as earned income / how to document it",
+   "target": "link-from:already linked in 'earned-income wall' section",
+   "link_to": "/guides/custodial-roth-ira-for-kids/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "No change needed: already linked in 'earned-income wall' section"
+  },
+  {
+   "action": "Link",
+   "q": "Best way to invest $1,000 for a child",
+   "target": "link-from:already linked in last section",
+   "link_to": "/guides/best-investment-account-for-kids/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "No change needed: already linked in last section"
+  },
+  {
+   "action": "Link",
+   "q": "Roth growth over 20 years",
+   "target": "link-from:already linked in tax-free compounding section",
+   "link_to": "/investing/roth-ira-calculator/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "No change needed: already linked in tax-free compounding section"
+  }
+ ]
+}

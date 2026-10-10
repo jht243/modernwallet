@@ -1,5 +1,5 @@
 {
- "run_date": "2026-10-03",
+ "run_date": "2026-10-10",
  "pages_analyzed": [
   "/compare/trump-account-vs-brokerage-account/",
   "/compare/trump-account-vs-savings-account/",
@@ -31,18 +31,28 @@
   "/estate-planning/will-cost-calculator/louisiana/",
   "/estate-planning/will-cost-calculator/maryland/",
   "/estate-planning/will-cost-calculator/missouri/",
-  "/estate-planning/will-cost-calculator/oregon/"
+  "/estate-planning/will-cost-calculator/oregon/",
+  "/auto-loan/payoff-calculator/",
+  "/compare/etf-vs-mutual-fund/",
+  "/compare/custodial-roth-ira-vs-529/",
+  "/compare/va-loan-vs-conventional-loan/",
+  "/compare/utma-vs-ugma/",
+  "/estate-planning/will-cost-calculator/",
+  "/compare/roth-401k-vs-traditional-401k/",
+  "/compare/529-vs-coverdell-esa/"
  ],
  "sections_added": {
   "/compare/trump-account-vs-brokerage-account/": [
    "If the market drops right before my child turns 18, can I leave the Trump Account invested longer instead of withdrawing?",
-   "Does the $1,000 Trump Account seed expire, or is there a deadline to claim it?"
+   "Does the $1,000 Trump Account seed expire, or is there a deadline to claim it?",
+   "Is a Trump Account a brokerage account?"
   ],
   "/compare/trump-account-vs-baby-bonds/": [
    "Can Congress cancel or defund the Trump Account program after it's already started?"
   ],
   "/compare/trump-account-vs-savings-account/": [
-   "Does a Trump Account or a kids savings account affect eligibility for SNAP, Medicaid, or other need-based benefits?"
+   "Does a Trump Account or a kids savings account affect eligibility for SNAP, Medicaid, or other need-based benefits?",
+   "Who owns the money in a Trump Account?"
   ],
   "/trump-account/": [
    "Does an adopted child qualify for a Trump Account the same as a biological child?"
@@ -71,11 +81,14 @@
   ],
   "/investing/high-yield-savings-calculator/": [
    "How much money do I need to make $1000 a month in interest?",
-   "How much will $10,000, $20,000, or $100,000 make in a high-yield savings account?"
+   "How much will $10,000, $20,000, or $100,000 make in a high-yield savings account?",
+   "Can you live off the interest from $100,000, and how much do you need to earn $3,000 a month?"
   ],
   "/compare/custodial-roth-ira-vs-utma/": [
    "What happens to the account if the custodian dies before the child turns 18?",
-   "Can I lose money in a custodial Roth IRA or a UTMA if the market drops?"
+   "Can I lose money in a custodial Roth IRA or a UTMA if the market drops?",
+   "Can I convert or roll a UTMA into a custodial Roth IRA?",
+   "Can my child take money out of a custodial Roth IRA early without penalty?"
   ],
   "/roundup/best-estate-planning-software/": [
    "What are five assets that should never be included in a living trust?",
@@ -89,7 +102,8 @@
   "/portfolio/60-40-portfolio-calculator/": [
    "How do I actually build a 60/40 portfolio myself?",
    "How long will $1,000,000 last using the 4% rule?",
-   "How many Americans have $1,000,000 in retirement?"
+   "How many Americans have $1,000,000 in retirement?",
+   "How much could a 60/40 portfolio lose in a bad year?"
   ],
   "/retirement/couples-retirement-calculator/": [
    "Should we combine our retirement accounts as a couple, or can we have a joint IRA?",
@@ -136,7 +150,8 @@
    "Do I need a will if my spouse and I already own everything jointly in Washington?"
   ],
   "/compare/529-vs-utma/": [
-   "Can a 529 or UTMA lose money if the market drops?"
+   "Can a 529 or UTMA lose money if the market drops?",
+   "Can I use UTMA funds to pay for college?"
   ],
   "/estate-planning/will-cost-calculator/louisiana/": [
    "Can I disinherit my child in Louisiana?"
@@ -149,6 +164,25 @@
   ],
   "/estate-planning/will-cost-calculator/oregon/": [
    "Does my will still cover my ex-spouse after a divorce in Oregon?"
+  ],
+  "/auto-loan/payoff-calculator/": [
+   "How can I pay off a 7-year car loan in 3 years?"
+  ],
+  "/compare/etf-vs-mutual-fund/": [
+   "Are actively managed ETFs cheaper than actively managed mutual funds?",
+   "Do mutual funds charge sales loads or 12b-1 fees that ETFs do not?"
+  ],
+  "/compare/custodial-roth-ira-vs-529/": [
+   "Can a custodial Roth IRA be used to pay for college?"
+  ],
+  "/compare/va-loan-vs-conventional-loan/": [
+   "What is the 4% rule for VA loans, and can the seller pay my closing costs?"
+  ],
+  "/compare/roth-401k-vs-traditional-401k/": [
+   "When can I withdraw Roth 401(k) money tax-free?"
+  ],
+  "/compare/529-vs-coverdell-esa/": [
+   "What happens to a Coverdell ESA if my child does not go to college, and can I roll it to a Roth IRA?"
   ]
  },
  "strengthened": {
@@ -159,14 +193,16 @@
    "What is the disadvantage of a custodial Roth IRA?"
   ],
   "/compare/custodial-roth-ira-vs-brokerage-account/": [
-   "What is the disadvantage of a Roth IRA for kids?"
+   "What is the disadvantage of a Roth IRA for kids?",
+   "How much can go into a custodial Roth IRA vs a brokerage account each year?"
   ],
   "/investing/withdrawal-calculator/": [
    "How long will $500,000 last in retirement at 62?"
   ],
   "/retirement/military-retirement-calculator/": [
    "How much is E7 retirement pay with 20 years?",
-   "How much does a retired military member make a month?"
+   "How much does a retired military member make a month?",
+   "Which retirement system am I under, legacy High-3 or BRS?"
   ],
   "/estate-planning/living-trust-cost-calculator/": [
    "What is the downside of having a living trust?"
@@ -179,6 +215,25 @@
   ],
   "/estate-planning/will-cost-calculator/washington/": [
    "lawContext: connected the $3M estate-tax threshold to the practical need to check total estate value (one-sentence in-context edit, not API-generated)"
+  ],
+  "/compare/custodial-roth-ira-vs-529/": [
+   "What is the custodial Roth IRA contribution limit this year?"
+  ],
+  "/compare/trump-account-vs-baby-bonds/": [
+   "Which states besides Connecticut and California have (or are planning) a baby bonds program?"
+  ],
+  "/compare/va-loan-vs-conventional-loan/": [
+   "What does the VA funding fee cost at different down payments?"
+  ],
+  "/compare/utma-vs-ugma/": [
+   "Do parents pay taxes on UTMA?"
+  ],
+  "/compare/roth-401k-vs-traditional-401k/": [
+   "Do Roth 401(k)s have required minimum distributions?",
+   "Is the employer match always pre-tax?"
+  ],
+  "/compare/529-vs-coverdell-esa/": [
+   "What is the Coverdell ESA contribution limit?"
   ]
  },
  "planned_links": {
@@ -194,7 +249,9 @@
    "Is there an income limit on who can open or contribute to a Trump Account? -> /guides/trump-account-worth-it/",
    "Is TrumpAccounts.gov legit, or is it a scam? -> /trump-account/",
    "Fidelity Trump Accounts -> /guides/how-to-open-a-trump-account/ (identified, not yet applied)",
-   "What brokerage does the Trump Account use? -> /guides/what-are-trump-accounts-invested-in/ (applied 2026-10-03)"
+   "What brokerage does the Trump Account use? -> /guides/what-are-trump-accounts-invested-in/ (applied 2026-10-03)",
+   "Can my employer or grandparents add money, and does it count toward the $5,000 cap? -> /guides/trump-account-employer-contributions/",
+   "What if I never claim the Trump Account for my child? -> /guides/how-to-claim-a-trump-account/"
   ],
   "/compare/trump-account-vs-savings-account/": [
    "Are the Trump accounts worth it? -> /guides/trump-account-worth-it/",
@@ -209,7 +266,9 @@
    "Trump account vs high yield savings \u2014 which grows more? -> /guides/trump-savings-account/ (interest-rate mechanism sentence woven into existing FAQ)",
    "What accounts are better than Trump accounts? -> /guides/trump-account-alternatives/ (identified, not yet applied)",
    "Is TrumpAccount.com legit? -> /guides/trump-account-scams/ (identified, not yet applied)",
-   "Trump account vs IRA -> /compare/trump-account-vs-roth-ira/ (identified, not yet applied)"
+   "Trump account vs IRA -> /compare/trump-account-vs-roth-ira/ (identified, not yet applied)",
+   "Is there a $250 deposit for older kids? -> /guides/dell-trump-account-250/",
+   "When will the $1,000 seed be deposited? -> /guides/when-will-trump-account-be-funded/"
   ],
   "/compare/trump-account-vs-baby-bonds/": [
    "Is there a downside to Trump accounts? -> /guides/trump-account-worth-it/",
@@ -220,7 +279,10 @@
    "What is better than Trump's account? -> /guides/trump-account-alternatives/ (identified, not yet applied)",
    "Are Trump accounts worth it for older kids? -> /guides/trump-account-worth-it/ (identified, not yet applied)",
    "What babies qualify for the Trump account? -> /guides/trump-account-eligibility/ (applied 2026-10-03)",
-   "What is better than Trump's account? -> /guides/trump-account-alternatives/ (applied 2026-10-03)"
+   "What is better than Trump's account? -> /guides/trump-account-alternatives/ (applied 2026-10-03)",
+   "How to claim a Trump Account -> /guides/how-to-claim-a-trump-account/",
+   "Trump Account taxes -> /guides/trump-account-taxes/",
+   "When will it be funded -> /guides/when-will-trump-account-be-funded/"
   ],
   "/trump-account/": [
    "How much will $1000 grow in 20 years? -> /investing/compound-interest-calculator/",
@@ -261,12 +323,17 @@
    "Can I take the UTMA money back for myself? -> /compare/custodial-account-vs-savings-account/",
    "How much will $10,000 in a Roth IRA be worth in 20 years? -> /investing/roth-ira-calculator/ (identified, not yet applied)",
    "Where is the best place to open a Roth IRA for my child? -> /roundup/best-custodial-roth-ira-providers/ (identified, not yet applied)",
-   "Can I gift $7,000 to my grandchild for him to open a Roth IRA? -> /roundup/best-custodial-roth-ira-providers/ (identified, not yet applied)"
+   "Can I gift $7,000 to my grandchild for him to open a Roth IRA? -> /roundup/best-custodial-roth-ira-providers/ (identified, not yet applied)",
+   "How much will $10,000 in a Roth IRA be worth in 20 years? -> /investing/roth-ira-calculator/"
   ],
   "/roundup/best-estate-planning-software/": [
    "Is it better to put your estate in a trust or a will? -> /compare/living-trust-vs-will/",
    "What is the cheapest way to probate a will? -> /probate/fee-calculator/ (identified, not yet applied)",
-   "Which bank accounts avoid probate? -> /guides/probate-process-guide/ (identified, not yet applied)"
+   "Which bank accounts avoid probate? -> /guides/probate-process-guide/ (identified, not yet applied)",
+   "Can you do a will and trust yourself? / online vs lawyer -> /compare/online-will-vs-lawyer/",
+   "Is Killswitch worth $99? -> /guides/killswitch-review/",
+   "Is Quicken WillMaker good? / other will makers -> /roundup/best-online-will-makers/",
+   "Which software for a living trust? -> /roundup/best-living-trust-services/"
   ],
   "/compare/custodial-roth-ira-vs-brokerage-account/": [
    "How much will $10,000 in a Roth IRA be worth in 20 years? -> /investing/roth-ira-calculator/",
@@ -274,7 +341,10 @@
    "Should I choose a custodial Roth IRA or a 529 plan instead? -> /compare/custodial-roth-ira-vs-529/",
    "How do I actually open a custodial brokerage account? -> /guides/how-to-open-a-custodial-brokerage-account-for-kids/",
    "Can I gift $7,000 to my grandchild for him to open a Roth IRA? -> /roundup/best-custodial-roth-ira-providers/ (identified, not yet applied)",
-   "Custodial Roth IRA vs brokerage vs 529 \u2014 which for a newborn? -> /guides/best-investment-account-for-kids/ (identified, not yet applied)"
+   "Custodial Roth IRA vs brokerage vs 529 \u2014 which for a newborn? -> /guides/best-investment-account-for-kids/ (identified, not yet applied)",
+   "What counts as earned income / how to document it -> /guides/custodial-roth-ira-for-kids/",
+   "Best way to invest $1,000 for a child -> /guides/best-investment-account-for-kids/",
+   "Roth growth over 20 years -> /investing/roth-ira-calculator/"
   ],
   "/portfolio/60-40-portfolio-calculator/": [
    "Is the 60/40 portfolio outdated? -> /guides/is-60-40-portfolio-dead/",
@@ -283,7 +353,9 @@
    "How does 60/40 compare to a 70/30 split? -> /compare/70-30-vs-60-40-portfolio/",
    "What happens to a 60/40 portfolio in a market crash? -> /guides/is-60-40-portfolio-dead/",
    "How often should I rebalance a 60/40 portfolio? -> /guides/portfolio-rebalancing/",
-   "How long will $1,000,000 last using the 4% rule? -> /investing/withdrawal-calculator/"
+   "How long will $1,000,000 last using the 4% rule? -> /investing/withdrawal-calculator/",
+   "What mix is right for my age? -> /guides/asset-allocation-by-age/",
+   "How often rebalance (already linked) -> /guides/portfolio-rebalancing/"
   ],
   "/compare/trump-account-vs-529/": [
    "What's the catch with Trump accounts? -> /guides/trump-account-worth-it/",
@@ -321,17 +393,27 @@
    "Is there a better option than a 529 plan? -> /guides/best-investment-account-for-kids/ (identified, not yet applied)",
    "529 vs Trump Account vs UTMA -> /compare/trump-account-vs-529-vs-utma/ (identified, not yet applied)",
    "What happens to a UTMA if the custodian dies before 18? -> /compare/custodial-roth-ira-vs-utma/ (identified, not yet applied)",
-   "Can I take the 529 or UTMA money back for myself? -> /compare/custodial-account-vs-savings-account/ (identified, not yet applied)"
+   "Can I take the 529 or UTMA money back for myself? -> /compare/custodial-account-vs-savings-account/ (identified, not yet applied)",
+   "UTMA vs Trump Account -> /compare/trump-account-vs-custodial-account/",
+   "529 state tax deduction -> /guides/529-plan-tax-deduction-by-state/",
+   "529 qualified expenses -> /guides/529-qualified-expenses/",
+   "Custodian dies -> /compare/custodial-roth-ira-vs-utma/",
+   "Kiddie tax detail -> /guides/custodial-account-taxes-kiddie-tax/"
   ],
   "/investing/high-yield-savings-calculator/": [
    "Should I put money in a HYSA or pay off debt first? -> /guides/pay-off-debt-or-invest/"
   ],
   "/estate-planning/living-trust-cost-calculator/": [
    "What assets cannot be placed in a trust? -> /roundup/best-estate-planning-software/",
-   "Should I name my living trust as beneficiary of my life insurance policy? -> /roundup/best-estate-planning-software/ (identified, not yet applied)"
+   "Should I name my living trust as beneficiary of my life insurance policy? -> /roundup/best-estate-planning-software/ (identified, not yet applied)",
+   "Does a living trust protect me if I become incapacitated? -> /compare/power-of-attorney-vs-trust/",
+   "Living trust vs Lady Bird deed (cheaper probate avoidance)? -> /compare/living-trust-vs-lady-bird-deed/",
+   "Probate cost vs trust cost for my estate? -> /probate/cost-vs-trust-calculator/"
   ],
   "/elder-care/special-needs-trust-calculator/": [
-   "SNT vs ABLE account -> /compare/special-needs-trust-vs-able-account/"
+   "SNT vs ABLE account -> /compare/special-needs-trust-vs-able-account/",
+   "Will an inheritance or gift cut off my child's SSI? -> /guides/ssi-and-inheritance/",
+   "Does the trust pay income tax on its earnings? -> /guides/trust-tax-rates-explained/"
   ],
   "/estate-planning/will-cost-calculator/new-mexico/": [
    "What happens if I die without a will in New Mexico? -> /guides/probate-process-guide/ (identified, not yet applied)",
@@ -347,7 +429,47 @@
    "Is an out-of-state will valid once I move to Washington? -> /roundup/best-estate-planning-software/ (identified, not yet applied)"
   ],
   "/retirement/military-retirement-calculator/": [
-   "Does this calculator cap my TSP contribution at the annual IRS/TSP limit? -> /investing/tsp-calculator/ (identified, not yet applied)"
+   "Does this calculator cap my TSP contribution at the annual IRS/TSP limit? -> /investing/tsp-calculator/ (identified, not yet applied)",
+   "Does this calculator cap my TSP contribution at the annual limit? -> /investing/tsp-calculator/"
+  ],
+  "/auto-loan/payoff-calculator/": [
+   "How much should I spend on a car if I make $70,000 a year? -> /auto-loan/car-affordability-calculator/",
+   "How much total interest will I pay on my car loan? -> /auto-loan/interest-calculator/"
+  ],
+  "/compare/etf-vs-mutual-fund/": [
+   "What is a good expense ratio? -> /guides/what-is-a-good-expense-ratio/",
+   "Target-date funds: which to choose? -> /guides/what-target-date-fund-should-i-choose/"
+  ],
+  "/compare/custodial-roth-ira-vs-529/": [
+   "What if my child does not use the 529 for school? -> /guides/529-leftover-money-options/",
+   "How much money should a 5 year old have in 529? -> /guides/college-savings-by-age/"
+  ],
+  "/compare/va-loan-vs-conventional-loan/": [
+   "VA vs FHA -> /compare/fha-loan-vs-va-loan/",
+   "Assumable VA loan -> /compare/assumable-mortgage-vs-refinance/"
+  ],
+  "/compare/utma-vs-ugma/": [
+   "What are the downsides of an UTMA account? -> /guides/utma-custodial-account-explained/",
+   "Is there a limit on how much I can put in? -> /guides/gift-tax-limit-2026/",
+   "How do I open a UTMA? -> /guides/how-to-open-a-custodial-brokerage-account-for-kids/",
+   "Do parents pay taxes on UTMA? -> /guides/custodial-account-taxes-kiddie-tax/"
+  ],
+  "/estate-planning/will-cost-calculator/": [
+   "What does probate cost even with a will? -> /probate/fee-calculator/",
+   "Who is the best person to draw up a will? -> /compare/online-will-vs-lawyer/",
+   "What happens if I die without a will? -> /guides/first-time-estate-planning/",
+   "What are the downsides of a living trust? -> /guides/is-a-living-trust-worth-it/",
+   "Does a will avoid estate tax? -> /estate-planning/estate-tax-calculator/"
+  ],
+  "/compare/roth-401k-vs-traditional-401k/": [
+   "What are the 401(k) contribution limits this year? -> /guides/401k-contribution-limits-2026/",
+   "Roth 401(k) vs Roth IRA: which first? -> /compare/roth-ira-vs-roth-401k/",
+   "Is it better to have money in a Roth or 401k? -> /compare/401k-vs-roth-ira/",
+   "How much will $20,000 in 401k be worth in 20 years? -> /retirement/401k-calculator/"
+  ],
+  "/compare/529-vs-coverdell-esa/": [
+   "How much money should a 5 year old have in 529? -> /guides/college-savings-by-age/",
+   "What happens to unused 529 money? -> /guides/529-leftover-money-options/"
   ]
  },
  "status": "success"

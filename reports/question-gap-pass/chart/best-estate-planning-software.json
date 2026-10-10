@@ -1,0 +1,298 @@
+{
+ "route": "/roundup/best-estate-planning-software/",
+ "slug": "best-estate-planning-software",
+ "file": "src/data/roundups.ts",
+ "kind": "ROUNDUPS",
+ "clicks": 1,
+ "impressions": 60,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "www.cnbc.com",
+  "www.aaepa.com",
+  "www.ncoa.org",
+  "www.clio.com",
+  "www.amazon.com",
+  "www.wealthcounsel.com"
+ ],
+ "forum_dominated": true,
+ "questions": [
+  {
+   "q": "What is the best software for creating a will?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "FAQ: What is the best estate planning software?; verdict",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What is the 5 by 5 rule in estate planning?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — low value",
+   "reason": "Trust-powers trivia, not a software-choice question; ungrounded here"
+  },
+  {
+   "q": "Can you do a will and trust yourself?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "FAQ: Can I do a whole estate plan with software?; When you outgrow section",
+   "elsewhere": "/compare/online-will-vs-lawyer/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Clear on page; the dedicated comparison is not yet linked"
+  },
+  {
+   "q": "How much does Trust & Will software cost?",
+   "source": "paa",
+   "coverage": "clear",
+   "where": "FAQ: How much does estate planning software cost?",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Prices listed"
+  },
+  {
+   "q": "Is it better to have a will or a trust or both?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "What each document does; link to living trust vs will",
+   "elsewhere": "/compare/living-trust-vs-will/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Already linked in documents section"
+  },
+  {
+   "q": "Is Quicken WillMaker and Trust good?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Nolo Plus $139 RLT mentions",
+   "elsewhere": "/roundup/best-online-will-makers/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "No Nolo-specific review on page; roundup is not linked"
+  },
+  {
+   "q": "Is an online will as legally valid as one from a lawyer?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ: valid if company shuts down; execution rules",
+   "elsewhere": "/compare/online-will-vs-lawyer/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Validity depends on signing; comparison page covers"
+  },
+  {
+   "q": "Do I need a lawyer, or is software enough?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "When you outgrow software section",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Clear trigger list"
+  },
+  {
+   "q": "What documents do I need besides a will?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "What each document does",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Four docs explained"
+  },
+  {
+   "q": "Which software works for a living trust?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ: Can I do a whole estate plan; cost FAQ",
+   "elsewhere": "/roundup/best-living-trust-services/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Trust-specific roundup not linked"
+  },
+  {
+   "q": "How do I fund a trust after buying it?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Documents section (retitle accounts)",
+   "elsewhere": "/guides/how-to-fund-a-trust/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Funding guide exists; funding mentioned and linked to worth-it guide"
+  },
+  {
+   "q": "What happens if I die without a plan?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How do I sign and witness it correctly?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "State-specific rules section",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — ungrounded",
+   "reason": "Generic witness/self-proving rules need a primary source; usa.gov page 404, no official source fetched"
+  },
+  {
+   "q": "Can I use remote online notarization?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ RON",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What if I make a mistake in the software?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ (already added 2026-10-03)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What assets shouldn't go in a living trust?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ (already added)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Which child should be executor?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ (already added)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Does the will remain valid if I move states?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How often should I update it?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is Killswitch legit / worth $99?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Intro + cost FAQ",
+   "elsewhere": "/guides/killswitch-review/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated review exists, not linked"
+  },
+  {
+   "q": "Does a will avoid probate?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Documents section says trust bypasses probate",
+   "elsewhere": "/compare/probate-vs-trust/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Probate cost comparison covers it"
+  },
+  {
+   "q": "Do I need a power of attorney as well as a will?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Documents section",
+   "elsewhere": "/compare/power-of-attorney-vs-will/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Brief linking opportunity; page explains POA already"
+  },
+  {
+   "q": "Is my data safe on these sites / can I cancel for a refund?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — ungrounded",
+   "reason": "No verified vendor policy facts; vendor terms change"
+  },
+  {
+   "q": "What does estate tax mean for me?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Outgrow section; estate tax calculator link",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Link",
+   "q": "Can you do a will and trust yourself? / online vs lawyer",
+   "target": "link-from:'When you outgrow estate planning software' section",
+   "link_to": "/compare/online-will-vs-lawyer/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-sentence contextual link to /compare/online-will-vs-lawyer/ in 'When you outgrow estate planning software' section"
+  },
+  {
+   "action": "Link",
+   "q": "Is Killswitch worth $99?",
+   "target": "link-from:intro or cost FAQ (Killswitch mention)",
+   "link_to": "/guides/killswitch-review/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-sentence contextual link to /guides/killswitch-review/ in intro or cost FAQ (Killswitch mention)"
+  },
+  {
+   "action": "Link",
+   "q": "Is Quicken WillMaker good? / other will makers",
+   "target": "link-from:'What each document does' section",
+   "link_to": "/roundup/best-online-will-makers/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-sentence contextual link to /roundup/best-online-will-makers/ in 'What each document does' section"
+  },
+  {
+   "action": "Link",
+   "q": "Which software for a living trust?",
+   "target": "link-from:FAQ: Can I do a whole estate plan with software?",
+   "link_to": "/roundup/best-living-trust-services/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-sentence contextual link to /roundup/best-living-trust-services/ in FAQ: Can I do a whole estate plan with software?"
+  }
+ ]
+}

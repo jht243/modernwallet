@@ -1,0 +1,295 @@
+{
+ "route": "/compare/trump-account-vs-baby-bonds/",
+ "slug": "trump-account-vs-baby-bonds",
+ "file": "src/data/comparisons.ts",
+ "kind": "COMPARISONS",
+ "clicks": 1,
+ "impressions": 33,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [],
+ "forum_dominated": false,
+ "questions": [
+  {
+   "q": "What is better than Trump's account?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Which one applies; alternatives link",
+   "elsewhere": "/guides/trump-account-alternatives/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Already linked"
+  },
+  {
+   "q": "What are the pros and cons of a Trump Account compared to a 529?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Which one applies section",
+   "elsewhere": "/compare/trump-account-vs-529/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Already linked"
+  },
+  {
+   "q": "Are there cons to the Trump Account?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Table (locked to 18, taxed like IRA)",
+   "elsewhere": "/guides/trump-account-worth-it/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Cons stated in table/FAQ; worth-it guide linked repeatedly"
+  },
+  {
+   "q": "Can I lose money in a Trump account?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "How the Trump Account works ('index-fund balance can also fall')",
+   "elsewhere": "/compare/trump-account-vs-brokerage-account/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Stated and linked in same paragraph"
+  },
+  {
+   "q": "What is the catch for the Trump account?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Table + FAQ funds usage",
+   "elsewhere": "/guides/trump-account-worth-it/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Same as cons"
+  },
+  {
+   "q": "Are Trump accounts baby bonds?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What is the main difference?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ + table",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Are baby bonds a real active program?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Can my child have both?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Which states have baby bonds?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ 'Which states besides Connecticut and California...' (vague, no names)",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Strengthen",
+   "reason": "Related search; FAQ names no state; Vermont pilot verified on treasurer .gov page"
+  },
+  {
+   "q": "Is baby bond enrollment automatic?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "What if I move before 18?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Does a baby bond affect SNAP or Medicaid?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Is the seed the same in every state?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Do I need citizenship for state baby bonds?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "Who funds each account?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How do I claim or open a Trump Account?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Which one applies (links how-to-open)",
+   "elsewhere": "/guides/how-to-claim-a-trump-account/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Claim guide exists, not linked; open guide linked"
+  },
+  {
+   "q": "When will the Trump Account be funded?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": "/guides/when-will-trump-account-be-funded/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Dedicated guide"
+  },
+  {
+   "q": "Is the Trump Account safe from scams?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": "/guides/trump-account-scams/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated guide, safety angle"
+  },
+  {
+   "q": "How much will the Trump Account grow?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "How the Trump Account works ($3,513 / $89,657 / $182,980)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered"
+  },
+  {
+   "q": "How is it taxed?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "How it works + table",
+   "elsewhere": "/guides/trump-account-taxes/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Taxes guide exists; not linked"
+  },
+  {
+   "q": "Does it affect financial aid?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Which one applies (link)",
+   "elsewhere": "/guides/do-trump-accounts-affect-fafsa/",
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered, linked"
+  },
+  {
+   "q": "What do politicians or celebrities say about it?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — off-topic",
+   "reason": "Opinion-bait"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Strengthen",
+   "q": "Which states besides Connecticut and California have (or are planning) a baby bonds program?",
+   "target": "Which states besides Connecticut and California have (or are planning) a baby bonds program?",
+   "fact_basis": [
+    {
+     "fact": "Vermont's 'First Steps Forward' baby bonds is a pilot authorized by the Legislature in 2025 (H.55), 'currently in the fundraising phase'; covers Caledonia, Essex and Orleans counties; proposed model invests $3,200 for every Vermont child born on Medicaid; about 450 babies born July 1, 2027 to June 30, 2030; funds accessible ages 18-30 for Vermont home purchase, Vermont business, education/job training, or retirement",
+     "source": "https://www.vermonttreasurer.gov/economic-empowerment-division/baby-bonds"
+    },
+    {
+     "fact": "The same page names Connecticut as the only state with a statewide program ('first state to implement' in 2023)",
+     "source": "https://www.vermonttreasurer.gov/economic-empowerment-division/baby-bonds"
+    },
+    {
+     "fact": "Existing page text: Connecticut up to $3,200 HUSKY births, claim 18-30; California HOPE for Children Trust Account",
+     "source": "page: How baby bonds work section"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.vermonttreasurer.gov/economic-empowerment-division/baby-bonds"
+   ],
+   "task": "Rewrite the FAQ answer keeping the 'check your state treasurer' close: name Vermont as a pilot (not yet funded, 3 northeastern counties, $3,200 proposed per Medicaid-born child, births July 2027 - June 2030, claim at 18-30 for approved uses) as the example of how limited and early-stage other states are; say other states have bills or frameworks and status changes, so verify. Do not name Rhode Island, DC, Hawaii or Washington (unverified)."
+  },
+  {
+   "action": "Link",
+   "q": "How to claim a Trump Account",
+   "target": "link-from:'Which one applies' section, next to how-to-open link",
+   "link_to": "/guides/how-to-claim-a-trump-account/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-sentence contextual link to /guides/how-to-claim-a-trump-account/ in 'Which one applies' section, next to how-to-open link"
+  },
+  {
+   "action": "Link",
+   "q": "Trump Account taxes",
+   "target": "link-from:'How the Trump Account works' paragraph, tax-deferred sentence",
+   "link_to": "/guides/trump-account-taxes/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-sentence contextual link to /guides/trump-account-taxes/ in 'How the Trump Account works' paragraph, tax-deferred sentence"
+  },
+  {
+   "action": "Link",
+   "q": "When will it be funded",
+   "target": "link-from:intro of 'How the Trump Account works' (seed timing)",
+   "link_to": "/guides/when-will-trump-account-be-funded/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add a one-sentence contextual link to /guides/when-will-trump-account-be-funded/ in intro of 'How the Trump Account works' (seed timing)"
+  }
+ ]
+}

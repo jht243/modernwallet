@@ -1,0 +1,339 @@
+{
+ "route": "/compare/roth-401k-vs-traditional-401k/",
+ "slug": "roth-401k-vs-traditional-401k",
+ "file": "src/data/comparisons.ts",
+ "kind": "COMPARISONS",
+ "clicks": 0,
+ "impressions": 85,
+ "serp_verdict": "winnable",
+ "ai_overview_cited_domains": [
+  "www.fidelity.com",
+  "www.irs.gov",
+  "www.benefits.ml.com",
+  "www.schwab.com",
+  "www.johnsonfinancialgroup.com",
+  "www.mutualofamerica.com"
+ ],
+ "forum_dominated": true,
+ "questions": [
+  {
+   "q": "Is it better to have money in a Roth or 401k?",
+   "source": "paa",
+   "coverage": "partial",
+   "where": "Page compares Roth vs Traditional 401(k), not Roth IRA vs 401(k)",
+   "elsewhere": "/compare/401k-vs-roth-ira/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated comparison exists."
+  },
+  {
+   "q": "How much will $10,000 in a Roth IRA be worth in 20 years?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/investing/roth-ira-calculator/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Calculator answers by return assumption."
+  },
+  {
+   "q": "What does Dave Ramsey say about Roth 401(k)?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — off-topic",
+   "reason": "Celebrity opinion."
+  },
+  {
+   "q": "How much will $20,000 in 401k be worth in 20 years?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/retirement/401k-calculator/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "401(k) growth calculator."
+  },
+  {
+   "q": "Can I retire at 62 with $400,000 in 401k?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/retirement/retirement-income-calculator/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Retirement income calculator covers duration of savings."
+  },
+  {
+   "q": "Does a 401k double every 7 years?",
+   "source": "paa",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/investing/compound-interest-calculator/",
+   "value": "Low",
+   "action": "Link",
+   "reason": "Rule-of-72 style growth is calculator territory."
+  },
+  {
+   "q": "Do Roth 401(k)s have required minimum distributions?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Section \"Roth 401(k) and required minimum distributions\"; table; FAQ 4",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Strengthen",
+   "reason": "Page says Roth 401(k) has RMDs at 73; IRS: RMD rules do not apply to designated Roth accounts while the owner is alive. Page is wrong/outdated."
+  },
+  {
+   "q": "Is the employer match always pre-tax?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Section \"The employer match always goes in pre-tax\"; table",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Strengthen",
+   "reason": "Heading says \"always\" yet the section later says SECURE 2.0 allows Roth matching; plan-optional and vested-only details missing."
+  },
+  {
+   "q": "When can I withdraw Roth 401(k) money tax-free (5-year rule)?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "No withdrawal rules on page; qualified-distribution definition gates the whole Roth benefit."
+  },
+  {
+   "q": "What are the 401(k) contribution limits this year?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Table and FAQ 2 ($23,000, 2024)",
+   "elsewhere": "/guides/401k-contribution-limits-2026/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Page figures are 2024; dedicated 2026 guide ($24,500) exists. Page figures should be refreshed separately."
+  },
+  {
+   "q": "Does Roth vs traditional change my employer match?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Match section",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — low value",
+   "reason": "Folded into match Strengthen."
+  },
+  {
+   "q": "Should I split between Roth and Traditional?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "\"When to use both\"; FAQ 1-2",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "Worked bracket example."
+  },
+  {
+   "q": "Which is better if I am young or low income?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Tax math; verdict",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "12% vs 22% example."
+  },
+  {
+   "q": "Do Roth 401(k) contributions lower my taxable income?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ 3",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "No."
+  },
+  {
+   "q": "Are there income limits on Roth 401(k)?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "Table; FAQ 4",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip — already clear",
+   "reason": "None."
+  },
+  {
+   "q": "Can I roll a Roth 401(k) into a Roth IRA?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "RMD section",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — already clear",
+   "reason": "Covered."
+  },
+  {
+   "q": "Is Roth better than traditional for high earners with catch-up?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/compare/roth-ira-vs-roth-401k/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Roth 401(k) vs Roth IRA page covers the 2026 high-earner Roth catch-up rule."
+  },
+  {
+   "q": "Roth 401(k) vs Roth IRA: which first?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "FAQ 4",
+   "elsewhere": "/compare/roth-ira-vs-roth-401k/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated comparison."
+  },
+  {
+   "q": "What happens to my Roth 401(k) if I change jobs?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": "/compare/roth-ira-vs-roth-401k/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "FAQ there covers rollover options."
+  },
+  {
+   "q": "Can I withdraw Roth 401(k) contributions early?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Add",
+   "reason": "Folded into 5-year/qualified-distribution FAQ (pro-rata earnings rule)."
+  },
+  {
+   "q": "How do I know my future tax bracket?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "Tax math: \"nobody knows\"",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip — low value",
+   "reason": "Honest answer already given."
+  },
+  {
+   "q": "What if my employer only offers traditional?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "—",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip — low value",
+   "reason": "Unanswerable beyond \"ask HR\"."
+  }
+ ],
+ "actions": [
+  {
+   "action": "Strengthen",
+   "q": "Do Roth 401(k)s have required minimum distributions?",
+   "target": "section:Roth 401(k) and required minimum distributions (also table row \"Required minimum distributions\" and FAQ \"Is the Roth 401(k) better than a Roth IRA?\")",
+   "fact_basis": [
+    {
+     "fact": "\"The RMD rules do not apply to Roth IRAs or Designated Roth accounts while the owner is alive.\" Beneficiaries of these accounts are still subject to RMD rules",
+     "source": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-required-minimum-distributions"
+    },
+    {
+     "fact": "RMDs generally begin at age 73 (applies to traditional 401(k))",
+     "source": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-required-minimum-distributions"
+    },
+    {
+     "fact": "Page text currently says: \"Both Roth and Traditional 401(k) accounts are subject to required minimum distributions (RMDs) starting at age 73.\"",
+     "source": "this page, section \"Roth 401(k) and required minimum distributions\""
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-required-minimum-distributions"
+   ],
+   "task": "Correct the section: Roth 401(k) balances have no lifetime RMDs while the owner is alive (SECURE 2.0, from 2024); Traditional 401(k) RMDs still start at 73; beneficiaries still follow RMD rules. Keep the Roth IRA rollover as optional (still useful for fund menu/simplicity), and fix the table row and the Roth-IRA-vs-Roth-401(k) FAQ wording that implies the 401(k) forces RMDs. Do not invent dates beyond \"starting in 2024\"."
+  },
+  {
+   "action": "Strengthen",
+   "q": "Is the employer match always pre-tax?",
+   "target": "section:The employer match always goes in pre-tax (also table row \"Employer match taxation\")",
+   "fact_basis": [
+    {
+     "fact": "SECURE 2.0 section 604 makes optional the treatment of employer matching/nonelective contributions as Roth; the contribution must be nonforfeitable (vested) when received; it is not excludable from gross income",
+     "source": "https://www.irs.gov/pub/irs-drop/n-24-02.pdf (Notice 2024-2, Part L, \"Section 604 of the SECURE 2.0 Act\")"
+    },
+    {
+     "fact": "Page text: \"Since the SECURE 2.0 Act (2022), employers can now offer Roth matching — some companies have updated their plans... Check with your HR department.\"",
+     "source": "this page, section \"The employer match always goes in pre-tax\""
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/pub/irs-drop/n-24-02.pdf"
+   ],
+   "task": "Reword heading/body so it reads: match is pre-tax by default; since SECURE 2.0 a plan may (not must) let you take vested match money as Roth, taxed in the year allocated. Tell reader to check the plan document or HR. Fix the table row the same way. No new figures."
+  },
+  {
+   "action": "Add",
+   "q": "When can I withdraw Roth 401(k) money tax-free?",
+   "target": "faq",
+   "fact_basis": [
+    {
+     "fact": "A qualified distribution is generally one made after a 5-taxable-year period of participation and either on/after age 59½, after death, or due to disability; the 5-year period ends when five consecutive taxable years have passed, starting the first day of the taxable year of the first designated Roth contribution",
+     "source": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-on-designated-roth-accounts"
+    },
+    {
+     "fact": "A nonqualified distribution includes the earnings portion in gross income; the tax-free basis portion is the distribution times the ratio of Roth contributions to total account balance (IRS example: $5,000 from $9,400 contributions + $600 earnings = $4,700 tax-free, $300 taxable)",
+     "source": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-on-designated-roth-accounts"
+    }
+   ],
+   "allowed_urls": [
+    "https://www.irs.gov/retirement-plans/retirement-plans-faqs-on-designated-roth-accounts"
+   ],
+   "task": "New FAQ: tax-free only if the 5-year period is met AND age 59½/death/disability; otherwise earnings share is taxable pro rata (use the IRS $5,000 example or a simple ratio sentence). Practical tone; do not state a 10% penalty figure unless sourced (omit it)."
+  },
+  {
+   "action": "Link",
+   "q": "What are the 401(k) contribution limits this year?",
+   "target": "link-from:FAQ \"Can I have both a Roth and Traditional 401(k) in the same plan?\" and table row \"2024 contribution limit\"",
+   "link_to": "/guides/401k-contribution-limits-2026/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Link the limit to the 2026 guide; flag that the page's $23,000 / $30,500 (2024) figures are stale vs the 2026 $24,500 limit and need a separate refresh."
+  },
+  {
+   "action": "Link",
+   "q": "Roth 401(k) vs Roth IRA: which first?",
+   "target": "link-from:FAQ \"Is the Roth 401(k) better than a Roth IRA?\"",
+   "link_to": "/compare/roth-ira-vs-roth-401k/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add link to the dedicated comparison."
+  },
+  {
+   "action": "Link",
+   "q": "Is it better to have money in a Roth or 401k?",
+   "target": "link-from:FAQ \"Should I choose Roth or Traditional 401(k)?\"",
+   "link_to": "/compare/401k-vs-roth-ira/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "One link for readers who really mean Roth IRA vs 401(k)."
+  },
+  {
+   "action": "Link",
+   "q": "How much will $20,000 in 401k be worth in 20 years?",
+   "target": "link-from:end of section \"When to use both at the same time\"",
+   "link_to": "/retirement/401k-calculator/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Swap/add link to 401(k) growth calculator (the page currently links only /retirement/)."
+  }
+ ]
+}

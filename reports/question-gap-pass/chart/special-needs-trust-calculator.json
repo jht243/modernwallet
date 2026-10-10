@@ -1,0 +1,253 @@
+{
+ "route": "/elder-care/special-needs-trust-calculator/",
+ "slug": "special-needs-trust-calculator",
+ "file": "src/data/spokes-elder-care.ts",
+ "kind": "ELDER_CARE_SPOKES",
+ "clicks": 1,
+ "impressions": 5,
+ "serp_verdict": "unread",
+ "ai_overview_cited_domains": [],
+ "forum_dominated": false,
+ "questions": [
+  {
+   "q": "What is a special needs trust calculator?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: What is a special needs trust calculator?",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 already clear",
+   "reason": "Defined"
+  },
+  {
+   "q": "First-party vs third-party SNT: what is the difference?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ + section First-Party vs. Third-Party",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Fully covered"
+  },
+  {
+   "q": "How much does it cost to set up a special needs trust?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: How much does it cost; howItWorks",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Setup and ongoing costs given"
+  },
+  {
+   "q": "Are there ongoing trustee fees?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: Are there ongoing costs",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "~1%/yr stated"
+  },
+  {
+   "q": "Does an SNT affect SSI or Medicaid?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: Does an SNT affect SSI or Medicaid?",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear incl. ISM/PMV"
+  },
+  {
+   "q": "How much money can a special needs trust hold?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: How much money can a special needs trust hold?",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Already added"
+  },
+  {
+   "q": "What is the downside of a special needs trust?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: What is the downside",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Already strengthened"
+  },
+  {
+   "q": "What can a special needs trust pay for?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: What can a special needs trust pay for?",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Who should be trustee? Can a family member?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: trustee x2",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Two FAQs"
+  },
+  {
+   "q": "Can a first-party SNT be converted to third-party?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: Can a first-party SNT be converted",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "No, explained"
+  },
+  {
+   "q": "What is a pooled SNT?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "FAQ: pooled",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "Can a person over 65 use an SNT?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "howItWorks; commonMistakes",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  },
+  {
+   "q": "SNT or ABLE account?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "intro link; FAQ capacity",
+   "elsewhere": "/compare/special-needs-trust-vs-able-account/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Dedicated comparison, already linked on page"
+  },
+  {
+   "q": "Will an inheritance or gift cut off my child's SSI?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "commonMistakes (direct gift counts toward $2,000 limit)",
+   "elsewhere": "/guides/ssi-and-inheritance/",
+   "value": "High",
+   "action": "Link",
+   "reason": "Dedicated guide exists; page not yet linking it"
+  },
+  {
+   "q": "Does the trust pay income tax on its earnings?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": "/guides/trust-tax-rates-explained/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Trust tax guide exists"
+  },
+  {
+   "q": "Do I need an SNT if the beneficiary gets SSDI rather than SSI?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 ungrounded",
+   "reason": "Needs SSA source for SSDI not means-tested; ssa.gov fetches returned 403, cannot ground"
+  },
+  {
+   "q": "How long does it take to set up an SNT?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 ungrounded",
+   "reason": "No sourced timeline"
+  },
+  {
+   "q": "What happens to the trust if the beneficiary marries or moves states?",
+   "source": "generated",
+   "coverage": "missing",
+   "where": "none",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 ungrounded",
+   "reason": "No sourced facts; state-variable"
+  },
+  {
+   "q": "Can I put my house in an SNT?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "commonMistakes (shelter costs)",
+   "elsewhere": null,
+   "value": "Med",
+   "action": "Skip \u2014 low value",
+   "reason": "Medium value, no grounding"
+  },
+  {
+   "q": "How do I choose a special needs attorney?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "commonMistakes link to elder-law attorney comparison",
+   "elsewhere": "/compare/elder-law-attorney-vs-estate-planning-attorney/",
+   "value": "Med",
+   "action": "Link",
+   "reason": "Already linked to /compare/elder-law-attorney-vs-estate-planning-attorney/"
+  },
+  {
+   "q": "Can the Medicaid spend-down rules affect the SNT?",
+   "source": "generated",
+   "coverage": "partial",
+   "where": "commonMistakes link to spend-down calc",
+   "elsewhere": null,
+   "value": "Low",
+   "action": "Skip \u2014 low value",
+   "reason": "Already linked"
+  },
+  {
+   "q": "Should a will leave assets directly to a disabled child?",
+   "source": "generated",
+   "coverage": "clear",
+   "where": "commonMistakes: direct inheritance; howItWorks testamentary",
+   "elsewhere": null,
+   "value": "High",
+   "action": "Skip \u2014 already clear",
+   "reason": "Clear"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Link",
+   "q": "Will an inheritance or gift cut off my child's SSI?",
+   "target": "link-from:commonMistakes (direct gift/inheritance bullet)",
+   "link_to": "/guides/ssi-and-inheritance/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one inline link to the SSI-and-inheritance guide in the commonMistakes bullet about giving the beneficiary a direct gift or inheritance."
+  },
+  {
+   "action": "Link",
+   "q": "Does the trust pay income tax on its earnings?",
+   "target": "link-from:section First-Party vs. Third-Party / FAQ: What is the downside",
+   "link_to": "/guides/trust-tax-rates-explained/",
+   "fact_basis": [],
+   "allowed_urls": [],
+   "task": "Add one short inline link to the trust-tax-rates guide where trust costs are mentioned (ongoing costs FAQ), phrased as \"trust income is taxed under its own rate schedule\"."
+  }
+ ]
+}
