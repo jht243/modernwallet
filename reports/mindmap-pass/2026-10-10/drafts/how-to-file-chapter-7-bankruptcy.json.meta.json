@@ -1,0 +1,153 @@
+{
+ "slug": "how-to-file-chapter-7-bankruptcy",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 3551,
+ "floor": 1200,
+ "input_tokens": 63426,
+ "output_tokens": 35482,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.9633,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['How to File Chapter 7, Step by Step', 'Means Test Eligibility and the Eight-Year Repeat Bar', 'Documents and Forms You Need to File Chapter 7', 'What the Automatic Stay Stops on Filing Day', 'The 341 Meeting of Creditors and the Trustee'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 3551,
+  "numbers_not_in_facts": [
+   "130",
+   "171.25",
+   "20000",
+   "2028",
+   "285.83",
+   "30000",
+   "7500",
+   "80000"
+  ],
+  "fact_budget": {
+   "fact_words": 8940,
+   "floor": 1200,
+   "ratio": 7.45,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    9,
+    2
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we wrote this guide from the federal courts' [Chapter 7 rules](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics) and the Bankruptcy Code text, so each step below carries its own deadline.",
+     "replacement": "At The Modern Wallet, we wrote this guide from the federal courts' [Chapter 7 rules](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics) and the Bankruptcy Code text.",
+     "type": "unsupported",
+     "why": "Site is named The Modern Wallet; steps 3 and 5 carry no deadline."
+    },
+    {
+     "id": "introText",
+     "quote": "One course must happen before you file and a second course after, or the court closes the case without wiping out any debt.",
+     "replacement": "One course must happen before you file and a second course after, and without the second, the clerk closes the case without a discharge.",
+     "type": "inference",
+     "why": "Closing without discharge applies to a missing debtor-education certificate, not to counseling."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "The debtor education certificate is the step people can miss after the hard part is over.",
+     "replacement": "The debtor education certificate is a separate requirement after filing.",
+     "type": "unsupported",
+     "why": "SOURCE says nothing about what people typically miss."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "The most recent federal figure is a [Government Accountability Office study](https://www.gao.gov/products/gao-08-697) estimating the average fee rose from $712 in early 2005 to $1,078 in early 2007.",
+     "replacement": "A 2008 [Government Accountability Office study](https://www.gao.gov/products/gao-08-697) estimated the average fee rose from $712 in early 2005 to $1,078 in early 2007.",
+     "type": "unsupported",
+     "why": "SOURCE does not say GAO is the most recent federal figure."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "The two required courses add less.",
+     "replacement": "The two required courses carry their own fees.",
+     "type": "unsupported",
+     "why": "SOURCE makes no comparison of course costs to attorney fees."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Money in your accounts is property you list on Schedule A/B, and Chapter 7 sells nonexempt property to pay creditors, so what you keep depends on the exemptions you claim on Schedule C.",
+     "replacement": "You list all your property on Schedule A/B, and Chapter 7 sells nonexempt property to pay creditors, so what you keep depends on the exemptions you claim on Schedule C.",
+     "type": "inference",
+     "why": "SOURCE never says bank balances go on Schedule A/B."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Emptying an account to pay one creditor before filing can backfire, since the trustee can set aside many payments made in the last 90 days.",
+     "replacement": "Paying one creditor before filing also matters, since the trustee can set aside certain payments to creditors made in the 90 days before filing.",
+     "type": "unsupported",
+     "why": "\"Backfire\" and \"many payments\" overstate; \u00a7547 has insolvency and other conditions."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "It usually refers to two rules.",
+     "replacement": "Two Chapter 7 rules use a 90-day window.",
+     "type": "unsupported",
+     "why": "SOURCE says nothing about what the phrase usually refers to."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Chapter 7 leaves certain taxes, domestic support, most student loans, government fines, criminal restitution and debts from intoxicated driving in place.",
+     "replacement": "Chapter 7 leaves certain taxes, domestic support, student loans unless repaying them would impose an undue hardship, government fines, criminal restitution and debts from intoxicated driving in place.",
+     "type": "unsupported",
+     "why": "SOURCE says student loans survive unless undue hardship; no \"most\"."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Creditors and the trustee have 60 days after the first date set for the 341 meeting to file a complaint objecting to your discharge.",
+     "replacement": "A complaint objecting to your discharge must be filed within 60 days after the first date set for the 341 meeting.",
+     "type": "unsupported",
+     "why": "Rule 4004(a)(1) sets the 60-day deadline; SOURCE does not name who may file."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "The two required courses carry their own fees.",
+     "replacement": "Approved providers of the two required courses may charge a fee.",
+     "type": "unsupported",
+     "why": "SOURCE says providers may charge a fee; courses can also be free."
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3560
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 415.4,
+ "response_id": "msg_011CfuHTMXgns4ziNvnAiVBs",
+ "generated_at": "2026-10-10T16:49:00-0500"
+}

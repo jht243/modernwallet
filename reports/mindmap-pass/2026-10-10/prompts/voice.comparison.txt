@@ -1,0 +1,117 @@
+  {
+    slug: "iul-vs-roth-ira",
+    updated: "2026-08-30",
+    title: "IUL vs Roth IRA Turns on Income and Contribution Caps",
+    metaDescription:
+      "IUL vs Roth IRA compared on 2026 IRS limits, income phase-outs, fees, and withdrawal access, plus when an indexed universal life policy earns its premium.",
+    targetKeyword: "iul vs roth ira",
+    optionA: "Indexed Universal Life (IUL)",
+    optionB: "Roth IRA",
+    h1: "IUL vs Roth IRA for Tax-Free Retirement Money",
+    introText:
+      "In the IUL vs. Roth IRA debate, the Roth IRA wins for almost every saver who is allowed to fund one. The mistake we see readers make most often is treating the Roth IRA income phase-out as a permanent lockout, even though a backdoor Roth reopens it.\n\nA Roth IRA is an individual retirement arrangement (IRA) funded with after-tax money. You invest that money as you choose, and qualified withdrawals are tax-free. An indexed universal life (IUL) policy, by contrast, is a life insurance contract whose cash value earns a credit tied to a stock index without ever holding the index. The carrier puts a floor under the loss and a cap over the gain.\n\nBoth can provide tax-free money later. But with an IUL, you also pay for a death benefit the whole way there.",
+    comparisonTable: {
+      rows: [
+        { dimension: "What it is", a: "Permanent life insurance with index-linked cash value", b: "A retirement account you own and invest yourself" },
+        { dimension: "2026 contribution cap", a: "No federal contribution cap, bounded by IRC 7702 premium limits and the MEC line", b: "$7,500, or $8,600 at age 50 and older" },
+        { dimension: "Income limit to contribute", a: "None", b: "Phases out at $153,000 to $168,000 single, $242,000 to $252,000 joint" },
+        { dimension: "Ongoing cost", a: "Cost of insurance plus admin and rider charges, deducted from cash value", b: "Only the expense ratio of the funds you buy" },
+        { dimension: "What you can hold", a: "The carrier's index crediting formula, with a cap or participation rate", b: "Any stock, bond, or index fund your broker offers" },
+        { dimension: "Getting money out early", a: "Policy loan or withdrawal, with surrender charges in the early years", b: "Contributions out at any age, with no tax and no penalty" },
+        { dimension: "At death", a: "Death benefit passes income-tax-free to your beneficiary", b: "Balance passes tax-free, and most heirs must empty it within 10 years" },
+        { dimension: "Verdict", a: "Earns a place after every tax-advantaged account is full and permanent coverage is needed", b: "Fund it every year you qualify, directly or through the back door" },
+      ],
+    },
+    verdict:
+      "Fund a Roth IRA to the 2026 limit of $7,500 before you consider an IUL premium. It costs you nothing beyond the expense ratio of the funds you buy, and you can take your contributions back out at any time without tax or penalty. An IUL earns a place after that, for a household that has filled every tax-advantaged account and needs a death benefit with no end date. It also has to fund the policy well above the minimum. A high income is not a reason to buy one, because a backdoor Roth still gets $7,500 a year into the account. Anyone shopping an IUL mainly as a Roth IRA substitute should open the Roth IRA first.",
+    sections: [
+      {
+        heading: "What an IUL and a Roth IRA Each Do with Your Money",
+        content:
+          "A Roth IRA is an account you own, while an IUL is a contract you buy from an insurance carrier. Money in a Roth IRA sits in whatever you bought with it. The [Internal Revenue Service](https://www.irs.gov/retirement-plans/roth-iras) (IRS) taxes none of the growth as long as you follow the distribution rules.\n\nAn IUL premium is not fully invested. The carrier deducts insurance, administration, and rider charges from the policy account value first, as the [Financial Industry Regulatory Authority](https://www.finra.org/investors/investing/investment-products/insurance) (FINRA) describes.\n\nSo a Roth IRA dollar compounds from the day it lands. An IUL dollar compounds after the charges come out, and only up to the carrier's cap or participation rate.",
+      },
+      {
+        heading: "What the 2026 IRS Limits Let You Put into a Roth IRA",
+        content:
+          "The IRS caps 2026 Roth IRA contributions at $7,500, or $8,600 if you are 50 or older. Both figures come from the IRS announcement of the [2026 retirement plan limits](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500), which raised the base amount from $7,000.\n\nThat ceiling is low against a whole retirement plan. Fifteen years of maxed contributions at $7,500 puts $112,500 of your own money into the account before any growth at all. The cap also applies across every IRA you own combined, so a traditional IRA contribution uses up the same $7,500.\n\nThe number moves most years with inflation. Confirm the current figure on the [IRS IRA contribution limits page](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits) before you set an automatic monthly transfer, so you do not over-contribute.",
+      },
+      {
+        heading: "How IUL vs Roth IRA Changes above the Income Phase-Out",
+        content:
+          "Above the Roth IRA income limit you cannot contribute directly, and an IUL sales pitch is built to fill that gap. For 2026 the IRS phases out direct Roth IRA contributions between $153,000 and $168,000 of modified adjusted gross income (MAGI) for single filers and heads of household. For married couples filing jointly the range runs from $242,000 to $252,000, and a married person filing separately phases out between $0 and $10,000.\n\nThe door reopens through a backdoor Roth. You contribute to a traditional IRA, then convert that money to a Roth IRA, and no income limit restricts the conversion. Our guide to [Roth conversion rules](/guides/roth-conversion-rules/) covers the pro-rata rule that decides how much of your conversion is taxable.\n\nA workplace plan can move far more than $7,500. A [mega backdoor Roth 401(k)](/guides/mega-backdoor-roth-401k/) routes after-tax 401(k) money into Roth treatment, well past the IRA cap. Work through both before you price a policy.",
+      },
+      {
+        heading: "Why the Contribution Ceiling Is the Strongest IUL Argument",
+        content:
+          "An IUL has no IRS contribution limit, and for a saver who has run out of tax-advantaged room that is a real advantage. The comparison is $7,500 a year against whatever premium a carrier is willing to accept. Nothing else about an IUL favors it by anything close to that margin.\n\nTwo tax rules bound the premium in place of the IRS. Internal Revenue Code (IRC) [section 7702](https://www.law.cornell.edu/uscode/text/26/7702) caps what a contract can take in and still be treated as life insurance. [IRC section 7702A](https://www.law.cornell.edu/uscode/text/26/7702A) reclassifies anything past the seven-pay test as a modified endowment contract (MEC).\n\nA MEC keeps the death benefit and loses the tax treatment you bought the policy for. Money you pull out comes gain first and gets taxed, plus a 10 percent additional tax if you are under 59½. Ask your carrier for the seven-pay limit in writing, then fund under it.",
+      },
+      {
+        heading: "Where the Roth IRA Beats an IUL on Cost and Access",
+        content:
+          "A Roth IRA carries no insurance charge, no surrender schedule, and no restriction on what you buy inside it. Hold a broad index fund for a few basis points a year and you keep the rest of the return. An IUL charges cost of insurance, administration, and rider fees against cash value every month you own it.\n\nAccess is the sharper difference. You can withdraw your Roth IRA contributions at any age, for any reason, with no tax and no penalty, because you already paid tax on that money. Earnings are the part that waits for age 59½ and the five-year clock, and the ordering rules sit in [IRS Publication 590-B](https://www.irs.gov/publications/p590b).\n\nAn IUL gives cash value back through a policy loan or a withdrawal, and an early surrender returns less than you paid in premium. The surrender mechanics sit in our [IUL vs 401k comparison](/compare/iul-vs-401k/), including what to ask the carrier for before you sign. Money you might need inside ten years belongs in a savings account rather than in either one.",
+      },
+      {
+        heading: "Why Cost of Insurance Has No Roth IRA Equivalent",
+        content:
+          "Cost of insurance (COI) inside an IUL climbs every year you hold it, because the carrier is pricing a death benefit on an older life. The charge is taken from cash value instead of billed to you. Underfund the policy and those charges can drain it until the contract ends and the gain turns taxable, which our [IUL vs 401k comparison](/compare/iul-vs-401k/) works through in detail. A Roth IRA has no equivalent failure, because stopping your contributions simply leaves the balance invested.",
+      },
+      {
+        heading: "When an IUL Fits Alongside a Roth IRA",
+        content:
+          "An IUL fits a household that already maxes a Roth IRA every year and has filled its workplace plan and health savings account. That household also needs a death benefit with no end date and will pay far more than the minimum premium. Miss that last condition and you have bought the lapse risk without the benefit that pays for it.\n\nThe need has to outlast you. An estate that would otherwise sell a building to cover what it owes at death has that need. So does a parent of a special-needs child, whose support has to continue after both parents are gone.\n\nLevel term life covers a temporary need for a small fraction of the premium. Our guide to [indexed universal life insurance](/guides/indexed-universal-life-insurance/) walks through how the crediting formula works. [Private placement life insurance](/guides/private-placement-life-insurance/) covers the version sold to accredited investors, which is where the comparison to a Roth IRA first came from.",
+      },
+      {
+        heading: "Who Should Not Buy an IUL",
+        content:
+          "Skip an IUL if you have not maxed a Roth IRA and your workplace plan first. Skip it if your coverage need ends when your children finish school. Skip it if the most you would ever pay is the carrier's minimum premium, because that version lapses most often.\n\nA high MAGI is not a reason on its own. Do a backdoor Roth, add a mega backdoor Roth if your plan allows one, then use a taxable brokerage account. If your plan also offers an employer match, our [IUL vs 401k comparison](/compare/iul-vs-401k/) covers why that dollar comes ahead of both.\n\nAsk for the guaranteed-rate column of the illustration before you sign. It shows the credit the contract obliges the carrier to pay, while the sales presentation runs on an assumed rate. Compare that column against a plain index fund in a Roth IRA.",
+      },
+      {
+        heading: "What Would Change Our Answer on IUL vs Roth IRA",
+        content:
+          "Closing the backdoor Roth by statute would change our answer more than anything else. High earners would lose the workaround that makes the income phase-out survivable, and an IUL would become one of the few places left to put tax-free money.\n\nTwo smaller changes would also move us. A large increase to the $7,500 IRA limit would shrink the ceiling argument that carries the IUL. A carrier crediting an uncapped index gain over a real floor would change the return side.\n\nNone of that holds in 2026. Model any policy at its guaranteed rate before you sign an application, and run your own IUL vs Roth IRA numbers in the [Roth IRA calculator](/investing/roth-ira-calculator/) first.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the downside to IUL?",
+        answer:
+          "Against a Roth IRA, the biggest downside is that you pay for insurance you may not need. Insurance, administration, and rider charges come out of cash value every month, while a Roth IRA index fund costs a few basis points a year. A cap also keeps part of any index gain, and money you take out early runs into a surrender charge. If the coverage is not the point, buy level term life and send the difference to the Roth IRA.",
+      },
+      {
+        question: "How much money do I need to open an IUL?",
+        answer:
+          "Most carriers will issue an IUL on a few hundred dollars a month. The premium that makes the policy work is much higher than the premium that opens it. A contract funded at its minimum sends very little to cash value and lapses most often. Ask for two numbers before you apply: the minimum premium that keeps the contract in force, and the maximum allowed before it becomes a modified endowment contract. Fund near the top of that range or put the money in a Roth IRA instead.",
+      },
+      {
+        question: "Do wealthy people use IUL?",
+        answer:
+          "Yes, though usually as the account after a Roth IRA rather than instead of one. The Roth IRA stops at $7,500 a year, which a household earning several hundred thousand dollars fills without noticing. An IUL takes premium the Roth IRA cannot. An irrevocable life insurance trust can also hold the policy outside the taxable estate, so the appeal is estate planning more than investment return. If you still have unused Roth IRA room this year, none of that reasoning reaches you.",
+      },
+      {
+        question: "How much will $10,000 in a Roth IRA be worth in 20 years?",
+        answer:
+          "At an assumed 7 percent annual return, $10,000 grows to about $38,700 in 20 years. The arithmetic is $10,000 multiplied by 1.07 to the 20th power, and 1.07 to the 20th is roughly 3.87. Treat that 7 percent as an assumption rather than a forecast. At 5 percent the same $10,000 reaches about $26,500, and at 9 percent about $56,000. Run your own rate in the [Roth IRA calculator](/investing/roth-ira-calculator/).",
+      },
+      {
+        question: "How long will $750,000 last in retirement at 62?",
+        answer:
+          "About 25 years at $30,000 a year, if the portfolio only keeps pace with inflation. That $30,000 is a 4 percent withdrawal rate, and retiring at 62 means planning for 30 years or more, so 4 percent sits at the aggressive end for that age. The account it comes from changes what you can spend. A $30,000 draw from a Roth IRA costs no income tax, while the same $30,000 from a traditional 401(k) is taxed as ordinary income.",
+      },
+      {
+        question: "Is $200 a month enough for Roth IRA?",
+        answer:
+          "Yes, $200 a month is a solid Roth IRA contribution, and it adds up to $2,400 a year against the 2026 limit of $7,500. Raising it to $625 a month fills the account. If $200 a month is what you have, ask whether an IUL premium would take the same $200. A policy funded at that level sits near its minimum premium, which is the version most likely to lapse.",
+      },
+    ],
+    sources: [
+      { label: "IRS: 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+      { label: "IRS: Roth IRAs", url: "https://www.irs.gov/retirement-plans/roth-iras" },
+      { label: "Legal Information Institute: 26 U.S. Code § 7702", url: "https://www.law.cornell.edu/uscode/text/26/7702" },
+      { label: "FINRA: Insurance", url: "https://www.finra.org/investors/investing/investment-products/insurance" },
+    ],
+    relatedComparisons: ["iul-vs-401k", "401k-vs-roth-ira", "roth-ira-vs-traditional-ira", "whole-life-vs-universal-life-insurance", "iul-vs-vul"],
+    calculatorLinks: [
+      { label: "Run your own IUL projection", href: "/iul-calculator/" },
+      { label: "Roth IRA Calculator", href: "/investing/roth-ira-calculator/" },
+    ],
+  }

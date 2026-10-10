@@ -1,0 +1,161 @@
+{
+ "slug": "bankruptcy-alternatives",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2317,
+ "floor": 1200,
+ "input_tokens": 34099,
+ "output_tokens": 4559,
+ "thinking_tokens": null,
+ "cached_tokens": 17735,
+ "est_cost_usd": 0.0307,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['The Alternatives to Bankruptcy, Side by Side', 'Nonprofit Debt Management Plans', 'Debt Settlement Risks, Fees, and Tax Rules', 'Consolidation Loans and Balance Transfers', 'Negotiating Directly Through Creditor Hardship Programs'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
+   "claim check: 1 claim(s) still unsupported after 2 pass(es) \u2014 auditor must cut or source: 'Filing fees, attorney fees, and trustee administrative costs'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2317,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 3944,
+   "floor": 1200,
+   "ratio": 3.29,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    11,
+    1
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we see readers weigh these options when minimum payments become impossible.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not license this first-person brand claim"
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Initial inquiry ding, followed by potential score gains from lower utilization",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state inquiry dings or score gains from utilization for loans"
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Moving balances to a 0% introductory annual percentage rate card",
+     "replacement": "Moving balances to a card with a promotional interest rate",
+     "type": "unsupported",
+     "why": "SOURCE does not state a 0% rate for balance transfers"
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Hard inquiry drop; potential score increase from higher aggregate credit limit",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state inquiry drops or aggregate limit effects for cards"
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Varies; creditor may close or freeze the account",
+     "replacement": "Varies",
+     "type": "unsupported",
+     "why": "SOURCE does not state account closures for direct hardship plans"
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Stays on credit reports for up to seven to ten years",
+     "replacement": "Stays on credit reports for up to ten years",
+     "type": "unsupported",
+     "why": "SOURCE states bankruptcies can stay on credit reports for up to ten years"
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The FTC cautions that organizations may charge setup fees and monthly administrative costs, so you should obtain a price quote in writing before signing an agreement.",
+     "replacement": "As the CFPB notes, credit counselors may charge fees for their services, so you should obtain a price quote in writing before signing an agreement.",
+     "type": "unsupported",
+     "why": "SOURCE attributes fee cautions and getting written quotes to CFPB, not FTC"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "If you secure a lower interest rate, more of your monthly payment goes toward the principal balance, accelerating your debt payoff timeline.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state principal acceleration consequences for consolidation loans"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Balance-transfer credit cards operate similarly by moving balances to a card with a temporary 0% annual percentage rate.",
+     "replacement": "Balance-transfer credit cards operate similarly by moving balances to a card with a temporary promotional interest rate.",
+     "type": "unsupported",
+     "why": "SOURCE states promotional interest rate, not 0% annual percentage rate"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "The creditor may close or temporarily suspend your charging privileges while you participate in an internal hardship program, preventing you from accumulating additional debt on that card.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that creditors close or suspend accounts in hardship programs"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If you lack property or wages that creditors can legally seize, you may be considered judgment-proof under state and federal collection laws.",
+     "replacement": "If you lack property or wages that creditors can legally seize, your income and assets may be protected from collection.",
+     "type": "contradicted",
+     "why": "SOURCE explicitly forbids attributing the term judgment-proof to federal sources or laws"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [
+    {
+     "quote": "Filing fees, attorney fees, and trustee administrative costs",
+     "type": "unsupported",
+     "why": "SOURCE does not list Chapter 13 filing fees, attorney fees, or trustee costs.",
+     "replacement": "Not published",
+     "id": "sections[0].body",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "sections[0].body",
+     "quote": "Filing fees, attorney fees, and trustee administrative costs",
+     "type": "unsupported",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2410
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 344.7,
+ "response_id": "x77KapqPOYTpqtsP3Y294Ag",
+ "generated_at": "2026-10-10T17:45:50-0500"
+}

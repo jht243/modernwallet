@@ -1,0 +1,138 @@
+{
+  "slug": "how-long-does-bankruptcy-stay-on-credit-report",
+  "title": "How Long Does Bankruptcy Stay on Your Credit Report?",
+  "metaDescription": "Chapter 7 can stay on your credit report up to 10 years and a completed Chapter 13 for 7. See each bureau's rule and how to dispute an entry that is wrong.",
+  "h1": "How Long Bankruptcy Stays on Your Credit Report",
+  "cardBlurb": "The exact reporting period for Chapter 7 and Chapter 13, when the accounts inside a bankruptcy drop off, and how to dispute an entry that is wrong.",
+  "introText": "How long bankruptcy stays on your credit report depends on the chapter: up to 10 years for Chapter 7 and 7 years for a completed Chapter 13, both counted from the month you filed. At ModernWallet, we start every guide from the primary sources, so the periods here come from the [Fair Credit Reporting Act](https://www.law.cornell.edu/uscode/text/15/1681c) (FCRA) and from the credit bureaus' own published rules.\n\nAn accurate bankruptcy entry cannot be removed early, by you or by a company you pay. An entry with a wrong filing date, the wrong chapter, or a reporting period that has already ended can be disputed with each bureau for free.",
+  "sections": [
+    {
+      "heading": "How Long Each Type of Bankruptcy Stays on Your Report",
+      "body": "A Chapter 7 bankruptcy can stay on your credit report for up to 10 years from the filing date, and a completed Chapter 13 drops off after 7 years. Early removal works only for an inaccurate entry that you dispute with each bureau, and paying a company to remove an accurate bankruptcy does not work.\n\n| Item | How long it can be reported | Measured from | Source |\n|---|---|---|---|\n| Chapter 7 case, filed and discharged | 10 years | Filing date | [Experian](https://www.experian.com/blogs/ask-experian/when-does-bankruptcy-fall-off-my-credit-report/), [Equifax](https://www.equifax.com/personal/help/article-list/-/h/a/information-stays-equifax-credit-report/), [myFICO](https://www.myfico.com/credit-education/faq/negative-reasons/bankruptcy-types) |\n| Chapter 13 case, completed | 7 years | Filing date | Experian, Equifax, myFICO |\n| Chapter 13 plan not completed | 10 years | Not stated | [TransUnion](https://www.transunion.com/blog/credit-advice/how-long-does-bankruptcy-stay-on-credit-report) |\n| Dismissed case | 7 years | Filing date | Equifax (all chapters); Experian (Chapters 7, 11 and 12) |\n| Chapter 11 case, discharged | 10 years | Filing date | Experian, Equifax |\n| Chapter 12 case | 10 years at Experian, 7 years at Equifax | Filing date | Experian, Equifax |\n| Accounts included in the bankruptcy | 7 years | Original delinquency date, or the filing date if the account was never late | Experian, myFICO |\n| Legal ceiling for any bankruptcy case | 10 years | Order for relief or date of adjudication | FCRA, 15 U.S.C. §1681c(a)(1) |\n\nTwo rows depend on the bureau. Chapter 12 cases run 10 years at Experian and 7 at Equifax. For a Chapter 13 plan that ends without completion, TransUnion says the bankruptcy stays 10 years, while Equifax lists every dismissed case at 7 years from filing."
+    },
+    {
+      "heading": "Why Chapter 7 and Chapter 13 Get Different Periods",
+      "body": "The 10-year figure is the legal maximum for every chapter, and the 7-year period for a completed Chapter 13 is the bureaus' stated practice. The FCRA bars a report from including a bankruptcy case more than 10 years old, measured from the order for relief or the date of adjudication. The [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/ask-cfpb/how-long-does-a-bankruptcy-appear-on-credit-reports-en-325/) (CFPB) lists Chapters 7, 11, 12 and 13 under that same 10-year limit.\n\nThe FCRA also requires a report to name the chapter a case was filed under, when the source provides it, so each entry shows the chapter that sets its period. If you withdraw a case before a final judgment, the bureau must note the withdrawal once it receives documentation certifying it.\n\nBoth clocks start on the filing date, and the discharge does not restart them. In Chapter 7, [U.S. Courts](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics) says the meeting of creditors is held 21 to 40 days after the petition, and the discharge generally comes 60 to 90 days after the date first set for that meeting. Adding those ranges puts the discharge about 81 to 130 days after filing, and those months already count toward the 10 years.\n\nChapter 13 plans run three years when income is below the state median and generally five years when it is above, and no plan may run longer than five. Reported for 7 years from filing, a completed five-year plan stays on your report about two years after the last payment, and a three-year plan stays about four. At TransUnion, a plan that ends without completion moves to the 10-year row, and our guide on [getting out of Chapter 13 early](/guides/how-to-get-out-of-chapter-13-early/) explains how a plan can end before completion.\n\nReporting time is one difference between the chapters, and our [Chapter 7 vs Chapter 13 comparison](/compare/chapter-7-vs-chapter-13-bankruptcy/) lays out the others. Courts, trustees and local rules vary, so a bankruptcy attorney, a legal-aid office or a nonprofit credit counselor can apply these rules to your case."
+    },
+    {
+      "heading": "When Accounts Included in the Bankruptcy Drop Off",
+      "body": "Each account included in a bankruptcy follows its own seven-year clock, so those accounts can leave your report years before the bankruptcy entry does. Experian says included accounts stay seven years from the original delinquency date, and an account that was never late before the filing stays seven years from the filing date instead. TransUnion describes the period as up to seven years from the date of closing or last activity, regardless of chapter.\n\nTake a credit card that first went late in March 2017, followed by a Chapter 7 filing in March 2019. Under Experian's rule, the card's entry would drop off around March 2024, while the bankruptcy entry would stay until about March 2029. Equifax's help page words the period for included accounts differently and ties it to the bankruptcy type, which does not match Experian, myFICO or the seven-year limit for adverse items in §1681c(a)(5).\n\nWhile those accounts remain, they should show as discharged with no balance owed. Experian says included accounts should be recorded as \"discharged\" with a $0 balance after the discharge, and it shows a zero balance on accounts in Chapter 7, 11 and 12 cases. Since Feb. 16, 2018, Experian has shown Chapter 13 petition balances as blank.\n\nThe account history freezes at the filing. Experian does not display status or payment changes reported after the petition date, and late payments from before the bankruptcy stay on the report. On a joint account where only one borrower filed, the other borrower's account keeps displaying normally with its balance.\n\nLook at each included account for four things:\n\n- It appears as discharged only if the debt was part of your filing, a check myFICO recommends.\n- It shows a zero balance, which is item 12 on the CFPB's [credit report review checklist](https://files.consumerfinance.gov/f/documents/201701_cfpb_credit-report-review-checklist.pdf).\n- Its status reads included in or discharged in bankruptcy. For Chapter 13, Experian changes the status to discharged once the plan is complete.\n- Its original delinquency date matches your records, because that date sets its seven-year clock.\n\nThese errors happen often enough that regulators have written them up. CFPB examiners found furnishers continuing to report accounts that had been discharged in bankruptcy in the [December 2024 Supervisory Highlights](https://files.consumerfinance.gov/f/documents/cfpb_Supervisory-Highlights-Issue-37_Winter-2024.pdf), and a 2019 edition found furnishers failing to update charged-off balances after discharge even though their own records showed the change.\n\nEquifax says included accounts are not automatically removed from its report, and it suggests contacting the creditor first, then disputing errors with the bureaus. If an account is missing its included-in-bankruptcy status, Experian asks for the Schedule A document from your filing that lists the account."
+    },
+    {
+      "heading": "Disputing an Inaccurate or Outdated Bankruptcy Entry",
+      "body": "A bankruptcy comes off your report early only when the entry is inaccurate, incomplete or cannot be verified. Experian states there is no way to remove an accurate bankruptcy record, and it names an entry kept past its expiration date or showing an incorrect filing date as grounds for a dispute. The CFPB's guidance is to dispute information only when it is inaccurate.\n\nWork through the dispute in this order:\n\n1. Pull your reports from all three bureaus. The [Federal Trade Commission](https://consumer.ftc.gov/articles/free-credit-reports) (FTC) says each bureau lets you check your report once a week for free at [AnnualCreditReport.com](https://www.annualcreditreport.com/index.action), the only site authorized to fill the free reports, or by phone at 1-877-322-8228.\n2. Compare each bankruptcy entry with your court papers: the chapter, the filing month and the status.\n3. File a dispute with every bureau that shows the error. State what is wrong and attach a copy of the court document that shows the correct date or chapter.\n4. Send the same dispute to the creditor that supplied a wrong account entry. The CFPB's [dispute page](https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/) says furnishers generally must investigate and respond within 30 days of receiving it.\n5. Keep copies of everything you send and the date each bureau received it, because the deadlines run from receipt.\n\nUnder [15 U.S.C. §1681i](https://www.law.cornell.edu/uscode/text/15/1681i), a bureau must reinvestigate free of charge, or delete the item, within 30 days of receiving your dispute. That period can stretch by up to 15 more days if you send relevant information during the first 30, but the extension does not apply when the item is found inaccurate or unverifiable within those 30 days. Once the reinvestigation ends, the bureau has 5 business days to send you written results.\n\nIf the item is inaccurate, incomplete or cannot be verified, the bureau must promptly delete or modify it. The [FTC's dispute guide](https://consumer.ftc.gov/articles/disputing-errors-your-credit-reports) adds that a business that finds its own information inaccurate must tell the bureau to update or delete it. If the creditor stands by its information, the CFPB says you can ask it to include a statement explaining your dispute."
+    },
+    {
+      "heading": "Why Paid Bankruptcy Removal Does Not Work",
+      "body": "Credit repair companies cannot legally remove an accurate, current bankruptcy, and both the CFPB and the FTC say so directly. The CFPB [explains](https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-credit-counseling-and-debt-settlement-debt-consolidation-or-credit-repair-en-1449/) what happens when a company disputes an accurate item anyway: the item disappears temporarily while the bureau verifies it, then reappears after verification.\n\nThe FTC's [credit repair FAQ](https://consumer.ftc.gov/articles/fixing-your-credit-faqs) says no one promising to repair your credit can legally remove information that is both accurate and current, and that disputing mistakes or outdated items is free. Its warning signs of a scam include:\n\n- Insisting you pay before they help you.\n- Telling you not to contact the credit bureaus directly.\n- Telling you to dispute accurate information or to lie on credit applications.\n\nThe [Credit Repair Organizations Act](https://www.law.cornell.edu/uscode/text/15/1679b) (CROA) backs those warnings with rules. A credit repair organization may not charge or receive any money for a service before that service is fully performed. It may not make untrue or misleading statements about its services, or advise you to alter your identification to hide accurate adverse information.\n\nThe FTC adds that these companies must give you a written contract that explains your rights, including a three-day right to cancel without charge. A goodwill letter does not help here either, because Experian says goodwill requests are not meant for serious marks such as bankruptcy, and creditors do not have to agree to them. Pay-for-delete requests apply to collection accounts, which are a different entry, and our guide to [pay-for-delete letters](/guides/pay-for-delete-letters-explained/) covers them.\n\nNone of this moves an entry that is accurate and inside its period. The answer changes only if your report shows a mistake: a wrong filing date, the wrong chapter, a debt you did not include, or an entry past its expiration. For an accurate entry, new on-time payment history is what improves your score while you wait."
+    },
+    {
+      "heading": "What to Do When Bankruptcy Stays on Your Credit Report Too Long",
+      "body": "An expired bankruptcy should drop off with no action from you, because Experian says it deletes the entry automatically 7 or 10 years after filing, depending on the chapter. Experian dates that expiration from the month you first filed, so count from the filing month on your court papers. The discharge date does not start the clock.\n\nCompare your end date with each bureau's period for your chapter, since Chapter 12 and unfinished Chapter 13 cases carry different periods at different bureaus. If the date has passed at a bureau that still shows the entry, file a dispute with that bureau and attach the court document that shows your filing date. The 30-day reinvestigation deadline applies to that dispute like any other.\n\nA discharged debt that comes back as a collection call is a separate problem with its own remedy. Under [11 U.S.C. §524](https://www.law.cornell.edu/uscode/text/11/524), a discharge works as an injunction against acts to collect a discharged debt as a personal liability, and U.S. Courts says you can file a motion with the court reporting a creditor's collection attempt. The CFPB [states](https://www.consumerfinance.gov/ask-cfpb/can-a-debt-collector-try-to-collect-on-a-debt-that-was-discharged-in-bankruptcy-en-1425/) that debt collectors cannot try to collect discharged debts.\n\n[Regulation F](https://www.consumerfinance.gov/rules-policy/regulations/1006/30/) also bars a debt collector from selling or placing for collection a debt it knows or should know was discharged in bankruptcy. One exception applies to secured debt: a lender with a repossession right, such as an auto lender, may still repossess after discharge if the debt is unpaid. The CFPB has also said that student loan servicers collecting on loans a bankruptcy court discharged are likely engaging in an unfair practice, and our guide on [dealing with debt collectors](/guides/how-to-deal-with-debt-collectors/) covers your contact and complaint rights."
+    },
+    {
+      "heading": "When a Bankruptcy Can Appear After Its Reporting Period",
+      "body": "The FCRA's time limits do not apply to three kinds of report, so a bankruptcy older than 10 years can legally appear in them. The exceptions cover reports used for:\n\n- A credit transaction expected to involve a principal amount of $150,000 or more.\n- Underwriting life insurance with a face amount of $150,000 or more.\n- Employment at an annual salary of $75,000 or more.\n\nThe CFPB's [summary of reporting periods](https://www.consumerfinance.gov/ask-cfpb/how-long-does-information-stay-on-my-credit-report-en-323/) describes the same exceptions and notes that in certain instances bankruptcy can be reported beyond 10 years. A mortgage of $150,000 or more is a credit transaction above that line, and our guide to [buying a house after bankruptcy](/guides/buying-a-house-after-bankruptcy/) covers mortgage applications after a filing.\n\nBankruptcy is also the only public record left on credit reports. Under a settlement called the National Consumer Assistance Plan (NCAP), civil judgments came off reports in July 2017 and the last tax liens were gone by April 2018, while the number of reported bankruptcies stayed virtually unchanged, according to the CFPB's [retrospective](https://www.consumerfinance.gov/archive/blog/new-retrospective-on-removing-public-records/)."
+    },
+    {
+      "heading": "Living with a Bankruptcy While It Is on Your Report",
+      "body": "A bankruptcy keeps counting against your score until it falls off, but its weight lessens as it ages. myFICO says a bankruptcy will always be considered a very negative event and is factored into your score until it leaves the report, with an impact that lessens over time. Experian says the same: the negative impact lessens until the bankruptcy expires.\n\nThe size of the first drop depends on the rest of your file. myFICO says someone with a score in the mid 700s might see it fall by 100 points or more, and filings that include more accounts tend to hurt more. In a [2010 presentation](https://www.frbsf.org/community-development/files/Foreclosure_Lives_Quinn.pdf) by Fair Isaac (FICO), hosted by the Federal Reserve Bank of San Francisco, a hypothetical consumer at 680 fell to 530 to 550 after a bankruptcy posted, and one at 780 fell to 540 to 560.\n\nThe same presentation said that as negative information ages, fewer points are lost to recency, assuming no new late payments reach the file. Those are 2010-era illustrations. FICO does not publish a current bankruptcy point-drop table, and no primary source publishes how many years a score takes to recover.\n\nWhat you add now carries the most weight. Equifax says scoring models weigh the past 24 months more heavily, so open accounts kept in good standing can help scores improve within about two years. The CFPB's own rebuilding guide says rebuilding takes time and there are no shortcuts or secrets.\n\nOur guide on [how to rebuild credit after bankruptcy](/guides/how-to-rebuild-credit-after-bankruptcy/) walks through secured cards, credit builder loans and on-time payment habits, and [what counts as a good credit score](/guides/what-is-a-good-credit-score/) gives you a target. Pull your three free reports this week, find the filing month on each bankruptcy entry, and add 7 or 10 years for your chapter to see how long the bankruptcy stays on your credit report."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/budget/",
+      "label": "Budget"
+    },
+    {
+      "href": "/emergency-fund-calculator/",
+      "label": "Emergency fund"
+    },
+    {
+      "href": "/credit-card-payoff/",
+      "label": "Credit card payoff"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can you remove Chapter 7 from a credit report before 10 years?",
+      "answer": "Not if the entry is accurate. Experian says there is no way to remove an accurate bankruptcy record, and the CFPB says credit repair companies cannot legally remove accurate, timely information. You can dispute a Chapter 7 entry that shows a wrong filing date or stays past 10 years from filing, and the bureau must reinvestigate within 30 days of receiving the dispute."
+    },
+    {
+      "question": "Is it true that after 7 years your credit is clear?",
+      "answer": "Not for every item. The CFPB says most negative information can be reported for seven years, but a Chapter 7 bankruptcy can stay up to 10 years from the filing date. A completed Chapter 13 drops off at 7 years under the bureaus' practice, and reports pulled for a job paying $75,000 or more, or for $150,000 or more in credit or life insurance, are exempt from the time limits."
+    },
+    {
+      "question": "Does bankruptcy stay on your credit report forever?",
+      "answer": "No. The FCRA caps standard reporting of a bankruptcy case at 10 years, and Experian deletes an expired bankruptcy automatically 7 or 10 years after filing, depending on the chapter. The exception is a report pulled for $150,000 or more of credit or life insurance, or for a job paying $75,000 or more, where the time limits do not apply."
+    },
+    {
+      "question": "Why is bankruptcy still on my credit report?",
+      "answer": "The reporting period may not have ended yet, because it runs from the month you filed. A Chapter 7 discharged months after filing still counts its 10 years from the filing month, and a completed Chapter 13 counts 7 years from the same starting point. If that end date has passed, or the entry lists the wrong chapter or filing date, dispute it with each bureau that shows it."
+    },
+    {
+      "question": "Does a dismissed bankruptcy show on your credit report?",
+      "answer": "Yes. Equifax says dismissed bankruptcies of all chapters remain for 7 years from the filing date, and Experian lists dismissed Chapter 7, 11 and 12 cases at 7 years from filing. TransUnion says a Chapter 13 plan that is not completed keeps the bankruptcy on the report for 10 years, so the period can differ by bureau. A case you withdraw before final judgment must be noted as withdrawn once the bureau receives documentation."
+    },
+    {
+      "question": "Do accounts included in bankruptcy drop off at the same time as the bankruptcy?",
+      "answer": "Not necessarily. Experian says included accounts stay seven years from their original delinquency date, or seven years from the filing date if the account was never late. An account that went late before the filing starts its clock earlier than the bankruptcy entry does, so it can leave the report years sooner."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Cornell LII - 15 U.S.C. §1681c: Requirements Relating to Information Contained in Consumer Reports",
+      "url": "https://www.law.cornell.edu/uscode/text/15/1681c"
+    },
+    {
+      "label": "Cornell LII - 15 U.S.C. §1681i: Procedure in Case of Disputed Accuracy",
+      "url": "https://www.law.cornell.edu/uscode/text/15/1681i"
+    },
+    {
+      "label": "Cornell LII - 15 U.S.C. §1679b: Credit Repair Organizations Act Prohibited Practices",
+      "url": "https://www.law.cornell.edu/uscode/text/15/1679b"
+    },
+    {
+      "label": "CFPB - How Long Does a Bankruptcy Appear on Credit Reports?",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/how-long-does-a-bankruptcy-appear-on-credit-reports-en-325/"
+    },
+    {
+      "label": "CFPB - How Do I Dispute an Error on My Credit Report?",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/"
+    },
+    {
+      "label": "CFPB - Credit Counseling vs Debt Settlement, Consolidation or Credit Repair",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-credit-counseling-and-debt-settlement-debt-consolidation-or-credit-repair-en-1449/"
+    },
+    {
+      "label": "FTC - Disputing Errors on Your Credit Reports",
+      "url": "https://consumer.ftc.gov/articles/disputing-errors-your-credit-reports"
+    },
+    {
+      "label": "FTC - Fixing Your Credit FAQs",
+      "url": "https://consumer.ftc.gov/articles/fixing-your-credit-faqs"
+    },
+    {
+      "label": "Experian - When Does Bankruptcy Fall Off My Credit Report?",
+      "url": "https://www.experian.com/blogs/ask-experian/when-does-bankruptcy-fall-off-my-credit-report/"
+    },
+    {
+      "label": "Experian - Data Furnisher Reporting FAQ",
+      "url": "https://www.experian.com/business/solutions/data-furnisher-reporting/frequently-asked-questions"
+    },
+    {
+      "label": "Equifax - How Long Information Stays on Your Equifax Credit Report",
+      "url": "https://www.equifax.com/personal/help/article-list/-/h/a/information-stays-equifax-credit-report/"
+    },
+    {
+      "label": "U.S. Courts - Chapter 13 Bankruptcy Basics",
+      "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

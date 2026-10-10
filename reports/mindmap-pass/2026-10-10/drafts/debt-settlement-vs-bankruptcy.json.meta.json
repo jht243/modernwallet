@@ -1,0 +1,232 @@
+{
+ "slug": "debt-settlement-vs-bankruptcy",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 3276,
+ "floor": 1500,
+ "input_tokens": 48507,
+ "output_tokens": 29458,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.7832,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)"
+  ],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionAName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionBName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 3276,
+  "numbers_not_in_facts": [
+   "10000",
+   "15000",
+   "30000",
+   "40000",
+   "5000",
+   "7.5"
+  ],
+  "fact_budget": {
+   "fact_words": 3944,
+   "floor": 1500,
+   "ratio": 2.63,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    14,
+    3,
+    5
+   ],
+   "applied": [
+    {
+     "id": "comparisonTable.rows[2].b",
+     "quote": "Court filing fees plus a required credit counseling course before filing",
+     "replacement": "A required credit counseling course before filing",
+     "type": "unsupported",
+     "why": "Fact list never mentions court filing fees"
+    },
+    {
+     "id": "comparisonTable.rows[3].a",
+     "quote": "Nothing stops a lawsuit during the program",
+     "replacement": "A creditor may file a collection lawsuit during the program",
+     "type": "inference",
+     "why": "SOURCE only says settlement may lead to a collection lawsuit"
+    },
+    {
+     "id": "comparisonTable.rows[6].b",
+     "quote": "Most pre-filing debts, minus Section 523 exceptions like support and most student loans",
+     "replacement": "Pre-filing debts, minus Section 523 exceptions like support and student loans without undue hardship",
+     "type": "unsupported",
+     "why": "\u00a7523 excepts student loans unless undue hardship; 'most' not stated"
+    },
+    {
+     "id": "comparisonTable.rows[8].a",
+     "quote": "Private agreements between you and each creditor",
+     "replacement": "Agreements between you and each creditor",
+     "type": "unsupported",
+     "why": "Privacy not stated; credit records identify settled accounts"
+    },
+    {
+     "id": "verdict",
+     "quote": "Without that money, settlement means more than a year of missed payments with nothing to stop a lawsuit, plus possible tax on whatever each creditor forgives.",
+     "replacement": "Without that money, settlement means more than a year of missed payments during which a creditor may sue, plus possible tax on whatever each creditor forgives.",
+     "type": "inference",
+     "why": "SOURCE says settlement may lead to a lawsuit, not that nothing stops one"
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "The best-known completion figure is low.",
+     "replacement": "The published completion figure is low.",
+     "type": "unsupported",
+     "why": "No source ranks how well-known the figure is"
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Recent spending on credit cards can also stay with you.",
+     "replacement": "Recent spending can also stay with you.",
+     "type": "unsupported",
+     "why": "\u00a7523(a)(2)(C) covers luxury goods and cash advances, not specifically credit cards"
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Bankruptcy costs include court filing fees and the required counseling course, and our guide to [what it costs to file bankruptcy](/guides/how-much-does-it-cost-to-file-bankruptcy/) has the current fee figures.",
+     "replacement": "Bankruptcy requires a credit counseling course before filing, and our guide to [what it costs to file bankruptcy](/guides/how-much-does-it-cost-to-file-bankruptcy/) has the current fee figures.",
+     "type": "unsupported",
+     "why": "Fact list never mentions court filing fees"
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "The main exclusion outside bankruptcy is insolvency.",
+     "replacement": "One exclusion outside bankruptcy is insolvency.",
+     "type": "unsupported",
+     "why": "SOURCE lists insolvency as an exclusion, not the main one"
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Both paths hurt your score in the short term.",
+     "replacement": "Both paths can hurt your credit.",
+     "type": "unsupported",
+     "why": "SOURCE does not say the harm is short-term"
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "Settlement is a poor fit if a creditor has already sued you, because nothing in a settlement program stops the lawsuit.",
+     "replacement": "Settlement is a poor fit if a creditor has already sued you, because the automatic stay that halts lawsuits comes from a bankruptcy filing.",
+     "type": "inference",
+     "why": "SOURCE says settlement may lead to lawsuits; stay comes from a bankruptcy petition"
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "and the [CFPB says many card companies](https://www.consumerfinance.gov/ask-cfpb/what-should-i-do-if-i-cant-pay-my-credit-card-bills-en-1697/) will change your payment during a financial emergency.",
+     "replacement": "and the [CFPB says many card companies](https://www.consumerfinance.gov/ask-cfpb/what-should-i-do-if-i-cant-pay-my-credit-card-bills-en-1697/) are willing to work with you to change your payment during a financial emergency.",
+     "type": "unsupported",
+     "why": "CFPB says many are willing to work with you, not that they will"
+    },
+    {
+     "id": "sections[7].content",
+     "quote": "A broad exclusion for all settled consumer debt would remove settlement's largest added cost, which we would then weigh against its lawsuit risk.",
+     "replacement": "A broad exclusion for all settled consumer debt would remove settlement's tax cost, which we would then weigh against its lawsuit risk.",
+     "type": "unsupported",
+     "why": "SOURCE does not rank tax as settlement's largest cost"
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "No, a settled account usually stays on your credit report for less time than a bankruptcy, though both lower your score.",
+     "replacement": "A settled account usually stays on your credit report for less time than a bankruptcy, though both lower your score.",
+     "type": "unsupported",
+     "why": "SOURCE compares reporting periods only, not overall credit harm"
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "The five-year line comes from Chapter 13, where a court-approved repayment plan can never run longer than five years.",
+     "replacement": "The five-year line comes from Chapter 13, where a repayment plan can never run longer than five years.",
+     "type": "unsupported",
+     "why": "SOURCE says plans cannot exceed five years; never says court-approved"
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "Income from Social Security or veterans benefits changes the math for both paths.",
+     "replacement": "Income from Social Security or veterans benefits has its own protections from collectors.",
+     "type": "inference",
+     "why": "SOURCE gives benefit protections from collectors, not effects on either path"
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Settlement avoids new borrowing, but the CFPB says the forgiven amount could leave you owing taxes.",
+     "replacement": "With settlement, the CFPB says the forgiven amount could leave you owing taxes.",
+     "type": "inference",
+     "why": "SOURCE never states settlement avoids new borrowing"
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "The five-year line comes from Chapter 13, where a repayment plan can never run longer than five years.",
+     "replacement": "Chapter 13 repayment plans can never run longer than five years.",
+     "type": "inference",
+     "why": "SOURCE does not say the five-year threshold derives from Chapter 13"
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "A debt settlement program has you stop paying your creditors and save a set amount each month, then uses those savings to offer each creditor less than the balance.",
+     "replacement": "A debt settlement program usually advises you to stop paying your creditors and set aside money each month, then uses those savings to offer each creditor less than the balance.",
+     "type": "unsupported",
+     "why": "SOURCE says programs usually advise or often encourage stopping payments, not always"
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Your savings must sit at an insured financial institution, in an account you own, run by an administrator with no ties to the settlement company.",
+     "replacement": "If the company requires a dedicated account, your savings must sit at an insured financial institution, in an account you own, run by an administrator with no ties to the settlement company.",
+     "type": "unsupported",
+     "why": "Rule applies only if the provider requires a dedicated account"
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Bankruptcy brings a court-ordered discharge and an automatic stay on collection.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Discharge is granted unless a legal bar applies; not promised"
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "A settlement program has no legal power to stop that suit, while a bankruptcy filing triggers an automatic stay.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state settlement programs' legal powers"
+    }
+   ],
+   "deleted_final": 5,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3313
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 493.9,
+ "response_id": "msg_011CfuJaeGZn1B1BR3KzQ2iy",
+ "generated_at": "2026-10-10T17:05:04-0500"
+}

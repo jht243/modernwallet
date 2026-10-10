@@ -1,0 +1,120 @@
+{
+ "slug": "how-long-does-bankruptcy-stay-on-credit-report",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 3250,
+ "floor": 1200,
+ "input_tokens": 46738,
+ "output_tokens": 32662,
+ "thinking_tokens": null,
+ "cached_tokens": 25238,
+ "est_cost_usd": 0.7443,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['How Long Each Type of Bankruptcy Stays on Your Report', 'Why Chapter 7 and Chapter 13 Get Different Periods', 'When Accounts Included in the Bankruptcy Drop Off', 'Disputing an Inaccurate or Outdated Bankruptcy Entry', 'Why Paid Bankruptcy Removal Does Not Work'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 3250,
+  "numbers_not_in_facts": [
+   "130",
+   "2029",
+   "81"
+  ],
+  "fact_budget": {
+   "fact_words": 4122,
+   "floor": 1200,
+   "ratio": 3.44,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    5,
+    2
+   ],
+   "applied": [
+    {
+     "id": "sections[1].body",
+     "quote": "The FCRA also requires a report to name the chapter a case was filed under, when the source provides it, so each entry shows the chapter that sets its period.",
+     "replacement": "The FCRA also requires a report to name the chapter a case was filed under, when the source provides it.",
+     "type": "inference",
+     "why": "SOURCE states the chapter-identification rule, not this consequence."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "These errors happen often enough that regulators have written them up.",
+     "replacement": "Regulators have written up these errors.",
+     "type": "unsupported",
+     "why": "No frequency claim in SOURCE; only that examiners found these errors."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "For an accurate entry, new on-time payment history is what improves your score while you wait.",
+     "replacement": "For an accurate entry, Equifax says keeping open accounts in good standing can help scores improve while you wait.",
+     "type": "unsupported",
+     "why": "SOURCE does not say on-time history is what improves the score."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "The CFPB's [summary of reporting periods](https://www.consumerfinance.gov/ask-cfpb/how-long-does-information-stay-on-my-credit-report-en-323/) describes the same exceptions and notes that in certain instances bankruptcy can be reported beyond 10 years.",
+     "replacement": "The CFPB's [summary of reporting periods](https://www.consumerfinance.gov/ask-cfpb/how-long-does-information-stay-on-my-credit-report-en-323/) describes the same exceptions, and the CFPB notes elsewhere that in certain instances bankruptcy can be reported beyond 10 years.",
+     "type": "unsupported",
+     "why": "'Certain instances' line comes from the other CFPB page (en-325), not en-323."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Under a settlement called the National Consumer Assistance Plan (NCAP), civil judgments came off reports in July 2017 and the last tax liens were gone by April 2018, while the number of reported bankruptcies stayed virtually unchanged, according to the CFPB's [retrospective](https://www.consumerfinance.gov/archive/blog/new-retrospective-on-removing-public-records/).",
+     "replacement": "Under a settlement called the National Consumer Assistance Plan (NCAP), the CFPB says civil judgments came off reports in July 2017 while the number of reported bankruptcies stayed virtually unchanged, and its [retrospective](https://www.consumerfinance.gov/archive/blog/new-retrospective-on-removing-public-records/) found the last tax liens were gone by April 2018.",
+     "type": "unsupported",
+     "why": "Judgments and bankruptcy-count facts come from the 2018 CFPB post, not the retrospective."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "A mortgage of $150,000 or more is a credit transaction above that line, and our guide to [buying a house after bankruptcy](/guides/buying-a-house-after-bankruptcy/) covers mortgage applications after a filing.",
+     "replacement": "Our guide to [buying a house after bankruptcy](/guides/buying-a-house-after-bankruptcy/) covers mortgage applications after a filing.",
+     "type": "inference",
+     "why": "SOURCE never applies the $150,000 exception to mortgages."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "What you add now carries the most weight.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Equifax says the past 24 months get more weight, not the most."
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3280
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 417.4,
+ "response_id": "msg_011CfuJ3fTeRayyLRCmDyUuj",
+ "generated_at": "2026-10-10T16:56:47-0500"
+}

@@ -1,0 +1,153 @@
+{
+ "slug": "buying-a-house-after-bankruptcy",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 3020,
+ "floor": 1200,
+ "input_tokens": 67256,
+ "output_tokens": 33359,
+ "thinking_tokens": null,
+ "cached_tokens": 25238,
+ "est_cost_usd": 0.8403,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['Waiting Periods by Loan Type', 'When the Waiting Period Starts After Bankruptcy', 'Buying a House During a Chapter 13 Plan', 'Extenuating Circumstances That Shorten the Wait', 'What Underwriters Check After a Bankruptcy'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 3020,
+  "numbers_not_in_facts": [
+   "2029"
+  ],
+  "fact_budget": {
+   "fact_words": 5317,
+   "floor": 1200,
+   "ratio": 4.43,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    4
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we took each waiting period from the agency's own handbook, selling guide or regulation.",
+     "replacement": "At The Modern Wallet, we took each waiting period from the agency's own handbook, selling guide or regulation.",
+     "type": "unsupported",
+     "why": "Site self-description names the site The Modern Wallet, not ModernWallet."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Each agency counts to a different end date.",
+     "replacement": "FHA, VA and USDA count to different end dates.",
+     "type": "unsupported",
+     "why": "SOURCE gives end dates only for FHA, VA and USDA, not Fannie or Freddie."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The request starts with the trustee.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE says consult the trustee; FHA wants court permission. No stated starting step."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "That trustee-only route can leave an FHA file short, because HUD's handbook wording asks for permission from the bankruptcy court.",
+     "replacement": "HUD's FHA handbook wording asks for written permission from the bankruptcy court and does not mention the trustee.",
+     "type": "inference",
+     "why": "SOURCE states only the handbook wording, not this consequence for FHA files."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Fannie Mae names a divorce decree as supporting paperwork, so the same divorce can carry different weight depending on the loan.",
+     "replacement": "Fannie Mae names a divorce decree as an example of supporting paperwork.",
+     "type": "inference",
+     "why": "SOURCE lists the divorce decree as an example document only. It draws no weighting conclusion."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Meeting the waiting period gets a file considered, and underwriters then look for re-established credit and proof the cause will not repeat.",
+     "replacement": "Beyond the waiting period, underwriters look for re-established credit.",
+     "type": "unsupported",
+     "why": "No general underwriting sequence stated; non-recurrence proof is FHA-only."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "These options do not fit a Chapter 7 discharged less than 12 months ago.",
+     "replacement": "A Chapter 7 discharged less than 12 months ago falls short of the FHA, VA and conventional rules.",
+     "type": "unsupported",
+     "why": "USDA sets no bar under 12 months, and VA says only generally not possible."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "A Chapter 13 that ends in dismissal pushes conventional loans out to four years from the dismissal date, which can make FHA, VA or USDA the faster route.",
+     "replacement": "A Chapter 13 that ends in dismissal pushes conventional loans out to four years from the dismissal date, or two with documented extenuating circumstances.",
+     "type": "inference",
+     "why": "SOURCE gives no FHA/VA/USDA rule after a Chapter 13 dismissal."
+    },
+    {
+     "id": "metaDescription",
+     "quote": "Waiting periods to buy a house after Chapter 7 or Chapter 13 bankruptcy for government-backed and conventional loans, and what lenders check after discharge.",
+     "replacement": "Waiting periods to buy a house after Chapter 7 or Chapter 13 bankruptcy for FHA, VA, USDA and conventional loans, and what lenders check after discharge.",
+     "type": "unsupported",
+     "why": "SOURCE never calls FHA, VA or USDA loans 'government-backed'."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "FHA, VA and USDA rules allow a home loan during a Chapter 13 plan once 12 months of on-time plan payments are made and the new debt is approved.",
+     "replacement": "Under FHA, VA and USDA rules, a home loan can be possible during a Chapter 13 plan once 12 months of on-time plan payments are made and the new debt is approved.",
+     "type": "unsupported",
+     "why": "SOURCE says these programs do not disqualify or may favorably consider. It does not say they allow the loan."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Fannie Mae gives these as examples of supporting documents:\n\n- A divorce decree\n- Medical reports or bills\n- A notice of job layoff\n- Job severance papers\n\nThe agencies do not count the same events.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE gives no comparison of which events each agency counts."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Request Loan Estimates from several lenders, since every lender uses the same standard form.",
+     "replacement": "Request Loan Estimates from several lenders so you can compare them. Every lender uses the same standard form.",
+     "type": "inference",
+     "why": "SOURCE states both facts but never links them as cause and reason."
+    }
+   ],
+   "deleted_final": 4,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3074
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 406.9,
+ "response_id": "msg_011CfuKD9iP8tZjLb2wXMky8",
+ "generated_at": "2026-10-10T17:11:53-0500"
+}

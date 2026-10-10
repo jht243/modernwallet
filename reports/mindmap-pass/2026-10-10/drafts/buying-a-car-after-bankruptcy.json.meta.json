@@ -1,0 +1,236 @@
+{
+ "slug": "buying-a-car-after-bankruptcy",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "gemini-3.8-flash",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2092,
+ "floor": 1200,
+ "input_tokens": 49727,
+ "output_tokens": 4273,
+ "thinking_tokens": 771,
+ "cached_tokens": 17735,
+ "est_cost_usd": 0.0442,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['Steps for Buying a Car After Chapter 7 Discharge', 'Handling an Existing Car Loan: Reaffirm, Redeem, or Surrender', 'Purchasing a Vehicle During Chapter 13 Repayment', 'Financing Sources and Dealership Traps to Avoid', 'Loan Structure, Add-Ons, and Affordability Rules'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2092,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 5317,
+   "floor": 1200,
+   "ratio": 4.43,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    14,
+    4,
+    6
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we examine the statutory rules and financing data so you can secure reliable transportation without falling into predatory loan agreements.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not license this first-person brand claim."
+    },
+    {
+     "id": "introText",
+     "quote": "Creditors evaluate your recent discharge, proof of income, and credit report marks before extending an offer.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that creditors evaluate proof of income for auto loans."
+    },
+    {
+     "id": "introText",
+     "quote": "Local court procedures, bankruptcy trustees, and state exemption laws vary widely, so a local bankruptcy attorney or an accredited credit counselor can help apply these rules to your specific case.",
+     "replacement": "Local court procedures, bankruptcy trustees, and local rules vary widely, so a bankruptcy attorney or a nonprofit credit counselor can apply this to your specific case.",
+     "type": "unsupported",
+     "why": "SOURCE specifies a nonprofit credit counselor, not an accredited credit counselor."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Chapter 7 cases generally close within three to four months from the filing date, leaving you with zero personal liability on discharged balances.",
+     "replacement": "Chapter 7 discharge is generally entered 60 to 90 days after the meeting of creditors, leaving you with zero personal liability on discharged balances.",
+     "type": "unsupported",
+     "why": "SOURCE gives 60 to 90 days after meeting, forbidding unlisted month timelines."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "This claim reflects the fair market value of the collateral rather than the full contract balance.",
+     "replacement": "Under \u00a7 722 and 11 U.S.C. \u00a7 506, this allowed secured claim roughly reflects the collateral's value rather than the full contract balance.",
+     "type": "unsupported",
+     "why": "SOURCE forbids stating a valuation method; allowed secured claim requires citing \u00a7722 plus \u00a7506."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Federal credit unions and community banks generally provide lower interest rates on post-bankruptcy auto loans than specialized dealership finance departments.",
+     "replacement": "Financing directly through a bank or credit union can offer better terms than financing arranged through a dealership.",
+     "type": "unsupported",
+     "why": "SOURCE does not state community banks or credit unions generally provide lower rates."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "A [CFPB subprime auto loan study](https://files.consumerfinance.gov/f/documents/cfpb_subprime-auto_data-point_2021-09.pdf) found that subprime borrowers with credit scores of 620 or less faced average interest rates of approximately 10 percent at commercial banks, compared to 15 to 20 percent at finance companies and buy-here-pay-here dealers.",
+     "replacement": "A 2021 [CFPB subprime auto loan study](https://files.consumerfinance.gov/f/documents/cfpb_subprime-auto_data-point_2021-09.pdf) found that subprime borrowers with credit scores of 620 or less faced average interest rates of approximately 10 percent at commercial banks, compared to 15 to 20 percent at finance companies and buy-here-pay-here dealers.",
+     "type": "unsupported",
+     "why": "SOURCE mandates these CFPB auto loan figures must always be dated as 2021."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Dealership add-on products can inflate the amount financed by thousands of dollars.",
+     "replacement": "Dealership add-on products can increase the amount financed.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that add-ons inflate financing by thousands of dollars."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "You also maintain the legal right to cancel optional GAP insurance or an extended service contract at any point to receive a prorated refund.",
+     "replacement": "You also maintain the legal right to cancel optional GAP insurance or an extended service contract at any point to reduce your costs and end coverage.",
+     "type": "unsupported",
+     "why": "SOURCE states cancellation reduces costs or ends coverage, not a prorated refund."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Take action today by pulling your free weekly credit reports from the major bureaus through the official government portal to confirm that all discharged debts show a zero balance before applying for a car loan after Chapter 7.",
+     "replacement": "Confirm that all discharged debts show a zero balance on your credit reports before applying for a car loan after Chapter 7.",
+     "type": "unlinked-directive",
+     "why": "Sends reader to an outside source with no link; not a government portal."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Specific dealership approval depends on their partner lenders and whether your trustee has issued an approved financing order.",
+     "replacement": "Approval to incur new debt depends on whether your trustee or the bankruptcy court approves the financing terms.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention partner lenders or dealership approval policies."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "If you keep the car and reaffirm, you risk a deficiency judgment and repossession if you default later, so evaluate whether your budget realistically supports the ongoing payments.",
+     "replacement": "If you keep the car and reaffirm, you remain personally liable on the debt and risk repossession if you default later, so evaluate whether your budget realistically supports the ongoing payments.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that debtors risk a deficiency judgment."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "A CFPB study showed subprime borrowers at finance companies and buy-here-pay-here lots averaged 15 to 20 percent rates, while bank subprime loans averaged roughly 10 percent, making rate shopping vital.",
+     "replacement": "A 2021 CFPB study showed subprime borrowers at finance companies and buy-here-pay-here lots averaged 15 to 20 percent rates, while bank subprime loans averaged roughly 10 percent, making rate shopping vital.",
+     "type": "unsupported",
+     "why": "SOURCE mandates these CFPB auto loan figures must always be dated as 2021."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "You can keep your car in Chapter 7 if your equity is exempt under applicable bankruptcy exemptions and you choose an approved statutory path: reaffirming the loan, redeeming the car for its fair market value in a lump sum under 11 U.S.C. \u00a7 722, or maintaining payments if permitted by local court practice.",
+     "replacement": "You can keep your car in Chapter 7 if your equity is exempt and you choose an approved statutory path: reaffirming the loan under 11 U.S.C. \u00a7 524 or redeeming the vehicle under 11 U.S.C. \u00a7 722 by paying the allowed secured claim in a lump sum.",
+     "type": "unsupported",
+     "why": "SOURCE lacks maintaining payments and forbids stating fair market value as valuation."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "6. Make regular on-time payments for twelve consecutive months, then evaluate refinancing options at a lower interest rate.",
+     "replacement": "6. Make regular on-time payments, then evaluate refinancing options as your credit history improves.",
+     "type": "unsupported",
+     "why": "Fact list lacks 12-month car refinancing timeline; instructions forbid unlisted X months timeline."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Getting pre-approved gives you an exact interest rate and maximum loan amount, which establishes a baseline that prevents dealership finance offices from inflating loan charges.",
+     "replacement": "Getting pre-approved provides a loan quote that includes an interest rate, loan length, and maximum loan amount.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that pre-approval prevents dealers from inflating loan charges."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Under the [CFPB loan finalization guidelines](https://www.consumerfinance.gov/ask-cfpb/what-should-i-know-before-i-finalize-a-car-or-auto-loan-en-2131/), lenders must provide written disclosures showing the APR, finance charge, amount financed, and total payments.",
+     "replacement": "Under the [CFPB loan finalization guidelines](https://www.consumerfinance.gov/ask-cfpb/what-should-i-know-before-i-finalize-a-car-or-auto-loan-en-2131/), lenders must provide written disclosures with all of the important details of your loan terms fully filled out before you sign the paperwork.",
+     "type": "unsupported",
+     "why": "SOURCE specifies all important details fully filled out, not these specific listed disclosures."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Under the [Fair Credit Reporting Act (FCRA), 15 U.S.C. \u00a7 1681c(a)(1)](https://www.law.cornell.edu/uscode/text/15/1681c), a bankruptcy case cannot be reported on a consumer credit report for more than 10 years from the date of filing.",
+     "replacement": "Under the [Fair Credit Reporting Act (FCRA), 15 U.S.C. \u00a7 1681c(a)(1)](https://www.law.cornell.edu/uscode/text/15/1681c), a bankruptcy case cannot be reported on a consumer credit report for more than 10 years from the date of entry of the order for relief or adjudication.",
+     "type": "contradicted",
+     "why": "FCRA \u00a7 1681c(a)(1) measures 10 years from the order for relief or adjudication, not filing."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "3. Save a cash down payment to reduce the total balance financed and lower your loan-to-value ratio.",
+     "replacement": "3. Save a cash down payment to reduce the total balance financed.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention loan-to-value ratios."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "4. Shop for a reliable vehicle priced within your household budget rather than maximizing your pre-approval limit.",
+     "replacement": "4. Shop for a vehicle priced within your household budget rather than maximizing your pre-approval limit.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe vehicles as reliable."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Timing your purchase correctly prevents duplicate credit inquiries and unfavorable terms. Chapter 7 discharge is generally entered 60 to 90 days after the meeting of creditors, leaving you with zero personal liability on discharged balances.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that timing a purchase prevents duplicate credit inquiries."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "For represented debtors whose monthly budget shows negative cash flow, a legal presumption of undue hardship applies under 11 U.S.C. \u00a7 524(m)(1), though 11 U.S.C. \u00a7 524(m)(2) exempts credit union creditors from this presumption.",
+     "replacement": "If your monthly income less expenses is less than the scheduled payments, a legal presumption of undue hardship applies under 11 U.S.C. \u00a7 524(m)(1), though 11 U.S.C. \u00a7 524(m)(2) exempts credit union creditors from this presumption.",
+     "type": "contradicted",
+     "why": "Hardship presumption applies when income minus expenses is less than scheduled payments, not negative cash flow."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The [U.S. Courts Chapter 13 guidelines](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics) specify that plans last three to five years, during which debtors cannot take on substantial new debt without direct consultation.",
+     "replacement": "The [U.S. Courts Chapter 13 guidelines](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics) specify that plans last three to five years, during which debtors cannot take on new debt without direct consultation.",
+     "type": "unsupported",
+     "why": "SOURCE states debtors may not incur new debt, not substantial new debt."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "State-chartered institutions and non-depository lenders do not share this federal cap.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE states the cap applies to federal credit unions only, not state-chartered ones."
+    }
+   ],
+   "deleted_final": 6,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2195
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 398.2,
+ "response_id": "0L7Kau2eApKKqtsP_pCHiAg",
+ "generated_at": "2026-10-10T17:46:53-0500"
+}

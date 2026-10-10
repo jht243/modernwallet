@@ -1,0 +1,137 @@
+{
+ "slug": "how-to-rebuild-credit-after-bankruptcy",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 3263,
+ "floor": 1200,
+ "input_tokens": 47207,
+ "output_tokens": 39360,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.976,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): [\"The Rebuild Sequence, Starting the Day You're Discharged\", 'Fixing Your Credit Reports Before You Rebuild Credit After Bankruptcy', 'Accounts That Rebuild Credit After Bankruptcy', 'What Moves a FICO Score with a Fresh Bankruptcy', 'How Long It Takes to Rebuild Credit After Bankruptcy'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
+   "claim check: 1 claim(s) still unsupported after 2 pass(es) \u2014 auditor must cut or source: 'New accounts start young, and only time grows this'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 3263,
+  "numbers_not_in_facts": [
+   "150",
+   "200",
+   "65"
+  ],
+  "fact_budget": {
+   "fact_words": 4122,
+   "floor": 1200,
+   "ratio": 3.44,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    7,
+    1
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "Payment history is the largest FICO factor, and an account that never reports adds nothing to it.",
+     "replacement": "Payment history is the largest FICO factor, and myFICO says to choose a secured card that reports to all three major bureaus.",
+     "type": "inference",
+     "why": "SOURCE never says a non-reporting account adds nothing; myFICO only advises three-bureau reporting"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Each one adds history in a different way and carries a different cost.",
+     "replacement": "Each one works in a different way.",
+     "type": "unsupported",
+     "why": "SOURCE gives no cost for authorized-user status or comparative costs"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Taking one out also appeared to reduce borrowers' ability to keep up other loan payments, so if you left bankruptcy with a car payment or a reaffirmed debt, start with the secured card.",
+     "replacement": "Taking one out also appeared to reduce borrowers' ability to keep up other loan payments.",
+     "type": "inference",
+     "why": "SOURCE gives no recommendation to start with a secured card in that case"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "The score impact lessens as the entry ages, well before it disappears.",
+     "replacement": "The score impact lessens as the entry ages.",
+     "type": "inference",
+     "why": "SOURCE says impact lessens over time until expiry; no 'well before'"
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "A car loan and a mortgage are the larger loans to plan toward, and each has its own rules after a bankruptcy.",
+     "replacement": "A car loan and a mortgage are the larger loans to plan toward.",
+     "type": "unsupported",
+     "why": "SOURCE states no car-loan or mortgage rules after bankruptcy"
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "Both applications will draw on the reports and payment history you build in steps 3 to 6.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE says nothing about what car or mortgage lenders review"
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "For a home, the FCRA time limits do not apply to reports for credit of $150,000 or more, so a mortgage lender may see a bankruptcy older than the usual reporting period.",
+     "replacement": "For a home, the FCRA time limits do not apply to reports for credit of $150,000 or more.",
+     "type": "inference",
+     "why": "SOURCE states the $150,000 exemption only, not mortgage-lender consequences"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [
+    {
+     "quote": "New accounts start young, and only time grows this",
+     "type": "unsupported",
+     "why": "SOURCE gives only the 15% weight, nothing on how this factor grows",
+     "replacement": "Not published",
+     "id": "sections[3].body",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "sections[3].body",
+     "quote": "New accounts start young, and only time grows this",
+     "type": "unsupported",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3326
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 425.8,
+ "response_id": "msg_011CfuHzLEum1SiDHQq5nf2v",
+ "generated_at": "2026-10-10T16:56:11-0500"
+}

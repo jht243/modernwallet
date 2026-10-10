@@ -30,6 +30,1058 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── mindmap-pass 2026-10-10 (bankruptcy): buying-a-car-after-bankruptcy ──
+  {
+    "updated": "2026-10-10",
+    "slug": "buying-a-car-after-bankruptcy",
+    "title": "Buying a Car After Chapter 7: Financing Steps and Timing",
+    "metaDescription": "Learn how buying a car after Chapter 7 works, from post-discharge financing and reaffirmation rules to credit union pre-approval and budgeting tips.",
+    "h1": "Buying a Car After Chapter 7: Approval Steps and Rules",
+    "cardBlurb": "How to finance an auto loan after Chapter 7 discharge, protect your rights, and handle existing car debt.",
+    "introText": "You can finance a car after a Chapter 7 discharge, but expect a higher interest rate than you had before the bankruptcy. A Chapter 7 discharge is generally entered 60 to 90 days after the date first set for the meeting of creditors. It ends your personal liability on the debts it covers. During Chapter 13, by contrast, you cannot incur new debt without permission from your bankruptcy trustee or the court.",
+    "sections": [
+      {
+        "heading": "Steps for Buying a Car After Chapter 7 Discharge",
+        "body": "You can apply for an auto loan as soon as the court enters your Chapter 7 discharge order. Work through these six steps in order:\n\n1. Check that your bankruptcy court has entered your discharge order before you apply for new credit. [U.S. Courts](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics) says it generally comes 60 to 90 days after the date first set for the meeting of creditors.\n2. Obtain pre-approval from an independent lender such as a bank or credit union before visiting any dealership.\n3. Save a cash down payment to reduce the total balance financed.\n4. Shop for a vehicle priced within your household budget rather than maximizing your pre-approval limit.\n5. Read the written loan disclosures, fully filled out, before you sign any financing agreement.\n6. Make regular on-time payments, then evaluate refinancing options as your credit history improves.\n\nA preapproval gives you a loan quote with an interest rate, loan length and maximum loan amount, so you can compare it with any dealer offer. Expect that rate to be higher than before the bankruptcy. The [CFPB](https://www.consumerfinance.gov/ask-cfpb/what-should-i-know-before-i-shop-for-auto-loan-at-a-bank-credit-union-dealership-or-other-lender-en-755/) says the lower your credit score, the more likely you'll receive a higher interest rate, and the exact rate depends on the lender and your new credit history."
+      },
+      {
+        "heading": "What Happens to the Car You Already Have in Chapter 7",
+        "body": "If you have a car loan when you file Chapter 7, the Bankruptcy Code gives you three choices for the car: reaffirm the loan, redeem the car, or surrender it. Under [11 U.S.C. § 521(a)(2)](https://www.law.cornell.edu/uscode/text/11/521), you must file a statement of intention within 30 days of filing your petition or on or before the meeting of creditors, whichever is earlier. You must then perform that intention within 30 days after the first date set for the meeting of creditors. Under 11 U.S.C. § 521(a)(6), if you have not reaffirmed or redeemed within 45 days after the first meeting of creditors, the automatic stay ends for the car. The lender may then take whatever action nonbankruptcy law permits. Separately, [11 U.S.C. § 362(h)](https://www.law.cornell.edu/uscode/text/11/362) ends the stay if you miss the statement-of-intention deadline or do not carry out your stated intention on time.\n\nIf you reaffirm an auto loan under [11 U.S.C. § 524(c)](https://www.law.cornell.edu/uscode/text/11/524), you keep the car and stay personally liable on the loan. The agreement must be signed before the discharge is granted. Under 11 U.S.C. § 524(k), the agreement must conspicuously disclose the Amount Reaffirmed and the Annual Percentage Rate (APR). If you are not represented by an attorney, the court must review and approve the agreement to ensure it does not create an undue hardship. For 60 days after the agreement is filed, 11 U.S.C. § 524(m)(1) presumes undue hardship if your monthly income less your monthly expenses is less than the scheduled payments. Under § 524(m)(2), that presumption does not apply when the lender is a credit union. You hold the right to rescind any reaffirmation agreement at any time prior to discharge or within 60 days after it is filed with the court, whichever occurs later.\n\nRedemption under [11 U.S.C. § 722](https://www.law.cornell.edu/uscode/text/11/722) allows you to purchase the vehicle from the lienholder by paying the allowed secured claim in a single lump sum. Under § 722 and 11 U.S.C. § 506, this allowed secured claim roughly reflects the collateral's value rather than the full contract balance. If the car is worth less than you owe, redemption lets you keep it for that lower amount. You need the full sum at the time of redemption. Surrender means you give the car back to the lender. Unlike reaffirmation, it does not leave you agreeing to remain liable on that loan after the discharge."
+      },
+      {
+        "heading": "Purchasing a Vehicle During Chapter 13 Repayment",
+        "body": "Financing a car during an active Chapter 13 plan means taking on new debt, so you need approval first, from the trustee or the court depending on your district. Under [11 U.S.C. § 1305(c)](https://www.law.cornell.edu/uscode/text/11/1305), a post-petition consumer claim will be disallowed if the creditor knew or should have known that prior trustee approval was practicable and was not obtained. The [U.S. Courts Chapter 13 guidelines](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics) say plans run three to five years and that a debtor \"may not incur new debt without consulting the trustee\" during that time.\n\nCourt procedures for post-petition vehicle financing vary across judicial districts. For instance, the [U.S. Bankruptcy Court for the Northern District of Ohio](https://www.ohnb.uscourts.gov/sites/default/files/administrative_orders/ao-21-1-governing-postpetition-vehicle-financing-chapter-13-cases-canton-and-cleveland-court.pdf) uses a two-step process under Administrative Order 21-1. The trustee first issues a shopping letter that caps the payment. After you submit the specific car and loan terms, the trustee issues a final approval letter, which must come before you sign. Conversely, [Western District of Washington Local Bankruptcy Rule 3015-2](https://www.wawb.uscourts.gov/node/883) allows debtors to submit a written request directly to the trustee for authority to incur debt without a separate court order. Check your district's local rules and your trustee's website. Courts, trustees and local rules vary, so a bankruptcy attorney, a legal-aid office or a nonprofit credit counselor can apply this to your case.\n\nExisting vehicle loans in Chapter 13 are also subject to the statutory lookback rule in [11 U.S.C. § 1325(a)](https://www.law.cornell.edu/uscode/text/11/1325). Under this provision, often called the 910-day rule, your plan cannot reduce (\"cram down\") a purchase-money car loan to the car's value if the debt was incurred within the 910 days preceding the bankruptcy petition. If you bought the car within that 910-day window for personal use, your repayment plan must pay the full contractual balance rather than only the value of the collateral."
+      },
+      {
+        "heading": "Financing Sources and Dealership Traps to Avoid",
+        "body": "Financing directly through a bank or credit union can offer better terms than financing arranged through a dealership. The [National Credit Union Administration (NCUA)](https://ncua.gov/newsroom/press-release/2026/ncua-board-extends-loan-interest-rate-ceiling) Board in February 2026 extended a temporary 18 percent interest rate ceiling on loans made by federal credit unions to September 10, 2027. The Federal Credit Union Act's general ceiling is 15 percent, and the cap does not cover state-chartered credit unions. You can compare institutional structures in our [credit union vs bank guide](/compare/credit-union-vs-bank/) and evaluate tools through our [auto loan calculator roundup](/roundup/best-auto-loan-calculators-by-bank-and-credit-union/).\n\nRates through a dealer are generally higher, according to the [CFPB auto financing advisory](https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-dealer-arranged-and-bank-financing-en-759/). The lender quotes the dealer a \"buy rate,\" and the dealer adds interest on top to compensate itself for handling your financing. A preapproval from your own bank or credit union gives you a rate and a maximum loan amount to hold against the dealer's offer.\n\nBuy Here, Pay Here (BHPH) dealers finance borrowers with no or poor credit, and the CFPB says their interest rates tend to be higher. A 2021 [CFPB subprime auto loan study](https://files.consumerfinance.gov/f/documents/cfpb_subprime-auto_data-point_2021-09.pdf) found that subprime borrowers with credit scores of 620 or less faced average interest rates of approximately 10 percent at commercial banks, compared to 15 to 20 percent at finance companies and buy-here-pay-here dealers. The same study revealed that the likelihood of a subprime loan becoming at least 60 days delinquent within three years was roughly 15 percent at banks, but reached between 25 and 40 percent at finance companies and BHPH lots. Under [FTC used car rules](https://consumer.ftc.gov/articles/buying-used-car-dealer), commercial dealers must display a Buyers Guide in the vehicle window disclosing whether the car carries a warranty or is sold as-is. The FTC says the Buyers Guide overrides anything in your sales contract."
+      },
+      {
+        "heading": "Keeping the Car Loan Affordable",
+        "body": "Keeping your total loan balance small protects your budget from high financing charges after bankruptcy. Calculate your total purchase costs using our [auto loan calculator](/auto-loan/) to see how different repayment windows affect total interest. The [CFPB car shopping advisory](https://www.consumerfinance.gov/ask-cfpb/what-things-can-i-negotiate-when-shopping-for-a-car-or-auto-loan-en-2132/) warns that a longer loan can reduce your monthly payment but means paying more interest over the life of the loan. Learn how to balance monthly payments against loan duration in our guide on [how long a car loan should be](/guides/how-long-should-a-car-loan-be/).\n\nDealership add-on products can increase the amount financed. The CFPB notes that add-ons such as service contracts, credit insurance, and Guaranteed Asset Protection (GAP) insurance are optional and their prices are negotiable. As explained in the [CFPB GAP insurance advisory](https://www.consumerfinance.gov/ask-cfpb/what-is-guaranteed-asset-protection-gap-insurance-en-797/), GAP is intended to cover the difference between what you owe on the loan and what the insurance company pays if the car is stolen or totaled. If GAP really is required to get the loan, its cost must be included in the finance charge and reflected in the disclosed APR. If it is optional, you can decline it. You also maintain the legal right to cancel optional GAP insurance or an extended service contract at any point to reduce your costs and end coverage.\n\nReview the completed written disclosure form before signing any binding sales contract. The [CFPB explains](https://www.consumerfinance.gov/ask-cfpb/what-should-i-know-before-i-finalize-a-car-or-auto-loan-en-2131/) that the federal Truth in Lending Act requires lenders to provide written disclosures with all of the important details of your loan terms fully filled out before you sign the paperwork. Never sign a blank or partially completed contract. Avoid common financing pitfalls detailed in our review of [costly car loan mistakes](/guides/car-loan-mistakes/)."
+      },
+      {
+        "heading": "Refinancing Your Car Loan as Credit Improves",
+        "body": "A refinance offer depends on the credit report a new lender sees, and the bankruptcy stays on that report for years. Under the [Fair Credit Reporting Act (FCRA), 15 U.S.C. § 1681c(a)(1)](https://www.law.cornell.edu/uscode/text/15/1681c), a bankruptcy case cannot be reported on a consumer credit report for more than 10 years from the date of entry of the order for relief or adjudication. As explained by the [CFPB credit report guidance](https://www.consumerfinance.gov/ask-cfpb/how-long-does-a-bankruptcy-appear-on-credit-reports-en-325/), the 10-year limit covers Chapters 7, 11, 12 and 13. The bureaus' stated practice is shorter for Chapter 13. [Experian](https://www.experian.com/blogs/ask-experian/when-does-bankruptcy-fall-off-my-credit-report/) and [Equifax](https://www.equifax.com/personal/help/article-list/-/h/a/information-stays-equifax-credit-report/) say a Chapter 13 bankruptcy comes off seven years from the filing date, while a discharged Chapter 7 can stay 10 years.\n\nThe CFPB's rebuilding advice includes paying your bills \"on time, every time,\" and that includes the new car loan. Under [NCUA consumer loan rules](https://mycreditunion.gov/manage-your-money/consumer-loans-credit-cards), federal credit unions cannot charge prepayment penalties, allowing you to pay off or refinance high-rate debt early without added fees. Explore additional steps to rebuild your score in our guide on [rebuilding credit after bankruptcy](/guides/how-to-rebuild-credit-after-bankruptcy/) and compare the filing differences in our [Chapter 7 vs Chapter 13 comparison](/compare/chapter-7-vs-chapter-13-bankruptcy/).\n\nWhen you are ready to shop for replacement financing, organize your rate shopping into a narrow window. The CFPB says to keep auto loan credit inquiries within 14 to 45 days of each other. Then they're counted as only one inquiry. Before you apply, check that every debt discharged in your Chapter 7 shows a $0 balance. [Experian](https://www.experian.com/blogs/ask-experian/removing-included-in-bankruptcy-status-from-closed-accounts/) says discharged accounts should be recorded as \"discharged\" with the balance at $0."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/auto-loan/",
+        "label": "Auto Loan"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      },
+      {
+        "href": "/credit-card-payoff/",
+        "label": "Credit Card Payoff"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I buy a car right after Chapter 7?",
+        "answer": "Yes, you can apply for an auto loan immediately after the court grants your Chapter 7 discharge. The discharge order is generally entered 60 to 90 days after the date first set for the meeting of creditors."
+      },
+      {
+        "question": "Does CarMax work with Chapter 13?",
+        "answer": "Any dealer or lender that finances a car during an active Chapter 13 case is extending new debt, so you need approval first. Under 11 U.S.C. § 1305(c), the lender's claim can be disallowed if it knew or should have known that prior trustee approval was practicable and was not obtained. Whether the trustee or the court gives that approval depends on your district."
+      },
+      {
+        "question": "Should I reaffirm my car loan?",
+        "answer": "Reaffirming an auto loan under 11 U.S.C. § 524 makes you legally responsible for the debt even after bankruptcy discharge. Before you sign, check the payment against your budget. If your monthly income less expenses falls short of it, § 524(m) presumes undue hardship for 60 days after filing, unless the lender is a credit union. You can rescind before discharge or within 60 days after the agreement is filed, whichever is later."
+      },
+      {
+        "question": "Will I get a high interest rate after bankruptcy?",
+        "answer": "Expect a higher rate. The CFPB says the lower your credit score, the more likely you'll receive a higher interest rate. Its September 2021 data point found that subprime borrowers (scores of 620 or less) averaged about 10 percent at banks and 15 to 20 percent at finance companies and buy-here-pay-here dealers. Those are 2021 figures, and your rate depends on the lender and your new credit history."
+      },
+      {
+        "question": "Can I keep my car in Chapter 7?",
+        "answer": "Yes, if you act in time. Within 45 days after the first meeting of creditors, you either reaffirm the loan under 11 U.S.C. § 524(c) or redeem the car under 11 U.S.C. § 722. Redemption means paying the allowed secured claim in full, and it is open only if the car is exempt or has been abandoned by the estate."
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Courts - Chapter 7 Bankruptcy Basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics"
+      },
+      {
+        "label": "U.S. Courts - Chapter 13 Bankruptcy Basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics"
+      },
+      {
+        "label": "CFPB - What is the Difference Between Dealer-Arranged and Bank Financing?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-dealer-arranged-and-bank-financing-en-759/"
+      },
+      {
+        "label": "CFPB - Subprime Auto Loan Outcomes by Lender Type",
+        "url": "https://files.consumerfinance.gov/f/documents/cfpb_subprime-auto_data-point_2021-09.pdf"
+      },
+      {
+        "label": "NCUA - Board Extends Loan Interest Rate Ceiling",
+        "url": "https://ncua.gov/newsroom/press-release/2026/ncua-board-extends-loan-interest-rate-ceiling"
+      },
+      {
+        "label": "FTC - Buying a Used Car From a Dealer",
+        "url": "https://consumer.ftc.gov/articles/buying-used-car-dealer"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-10-10 (bankruptcy): bankruptcy-alternatives ──
+  {
+    "updated": "2026-10-10",
+    "slug": "bankruptcy-alternatives",
+    "title": "Bankruptcy Alternatives: 6 Options Compared",
+    "metaDescription": "Compare realistic bankruptcy alternatives on cost, credit impact, taxes, and legal protection, from debt management plans to settlement and direct negotiation.",
+    "h1": "Bankruptcy Alternatives: Every Option Compared",
+    "cardBlurb": "Compare debt management plans, debt settlement, consolidation, direct creditor negotiation, and waiting out the clock against bankruptcy protection.",
+    "introText": "You can resolve unmanageable debt without filing bankruptcy by using a nonprofit debt management plan, negotiating a settlement, taking out a consolidation loan, requesting a direct creditor hardship plan, or waiting out collection if your income is legally protected. Every path involves trade-offs among total cost, credit report impact, income taxes on forgiven balances, and legal protection against creditor lawsuits.",
+    "sections": [
+      {
+        "heading": "The Alternatives to Bankruptcy, Side by Side",
+        "body": "The primary alternatives to bankruptcy are debt management plans, debt settlement, consolidation loans, balance transfers, direct creditor hardship plans, and waiting out the collection period if you have legally protected income.\n\nEach non-bankruptcy option avoids a court record but trades it for a longer timeline, a possible tax bill on forgiven debt, or no legal protection from collection lawsuits. Chapter 13 is in the table as the in-bankruptcy alternative to Chapter 7.\n\n| Option | How It Works | Cost | Credit-Report Effect | Tax on Forgiven Debt | Protection From Lawsuits | Best Fit |\n| --- | --- | --- | --- | --- | --- | --- |\n| Debt Management Plan (DMP) | Nonprofit counselor sets a unified payment plan with creditors | Counselor setup and monthly fees vary by agency | Possible initial negative impact from closing most accounts | None; full principal is repaid | None; creditors participate voluntarily | Steady income, mostly credit card balances |\n| Debt Settlement | For-profit firm negotiates lump sums after accounts become delinquent | Settlement fees paid only after successful negotiation; late fees and interest accrue | Negative; missed payments, possible charge-off and the settled account can be reported for up to seven years | Forgiven amount is taxable income unless an exclusion such as insolvency applies | None; lawsuits remain possible during negotiations | Can save lump sums while accounts go unpaid; accepts lawsuit risk |\n| Consolidation Loan | New loan used to repay several separate debts | Interest charges and loan origination points | Not published | None; debt is fully repaid | None; you owe the new lender in full | Good credit score and sufficient income to qualify |\n| Balance-Transfer Card | Moving balances to a card with a promotional interest rate | Transfer fee: a percentage of the amount or a fixed fee, whichever is more | Not published | None; debt is fully repaid | None; regular card terms apply | Strong credit and ability to clear the balance in the promo window |\n| Direct Hardship Plan | Agreement with original creditor for temporary lower payments | Creditor-waived fees or lowered interest; no third-party fee | Varies | None if repaid in full; taxable if a balance portion is forgiven | None; informal agreement without court enforcement | Temporary emergency where you can name an affordable payment and a restart date |\n| Waiting It Out | Not paying and relying on protected income and, over time, the statute of limitations | No fees; unpaid debt accumulates interest and late fees | Delinquent accounts can be reported for up to seven years | Taxable if the creditor formally cancels unpaid balances | None until the statute of limitations expires; federal law limits wage garnishment and protects two months of directly deposited benefits | Judgment-proof individuals with protected benefit income |\n| Chapter 13 Bankruptcy | Court-supervised repayment plan, usually three to five years | Varies by court and attorney | Stays on credit reports for up to ten years | Discharged debt is entirely excluded from taxable income | Automatic stay on filing halts lawsuits, judgment enforcement and collection | Saving a home from foreclosure; unsecured debt under $526,700 and secured debt under $1,580,125 |"
+      },
+      {
+        "heading": "Nonprofit Debt Management Plans",
+        "body": "A debt management plan is a structured repayment program administered by a credit counseling agency. Under a plan, you deposit money each month with the credit counseling organization, according to the [FTC](https://consumer.ftc.gov/sites/default/files/articles/pdf/pdf-0040-choosing-a-credit-counselor.pdf). The credit counselor then distributes those funds to your unsecured creditors based on an agreed schedule.\n\nAccording to the [CFPB](https://www.consumerfinance.gov/ask-cfpb/what-is-credit-counseling-en-1451/), credit counseling organizations are typically nonprofits that advise you on money and debt management. A debt management plan typically lowers your monthly payments to creditors as well as interest charges and fees. In exchange, the program generally requires you to close most or all of your credit card accounts, which can cause an initial drop in your credit scores. Plans take substantial discipline: the FTC notes that completing a plan could take 48 months or more, while the [National Foundation for Credit Counseling](https://www.nfcc.org/blog/debt-relief-programs-the-pros-and-cons-of-each-type/) (NFCC) says plans run anywhere from 36 to 60 months.\n\nNonprofit status does not mean the service is completely free. As the CFPB notes, credit counselors may charge fees for their services, so you should obtain a price quote in writing before signing an agreement. The CFPB suggests starting your search with the NFCC or the [Department of Justice list of approved agencies](https://www.justice.gov/ust/list-credit-counseling-agencies-approved-pursuant-11-usc-111), and checking with your state attorney general. That list approves agencies for pre-bankruptcy counseling only. The Justice Department has not reviewed their debt management plans."
+      },
+      {
+        "heading": "Debt Settlement Risks, Fees, and Tax Rules",
+        "body": "Debt settlement involves negotiating with creditors to accept a lump-sum payment that is less than the full balance owed. As explained by the [CFPB](https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-relief-program-and-how-do-i-know-if-i-should-use-one-en-1457/), debt settlement companies are usually for-profit businesses that instruct you to stop making monthly payments to your creditors. Instead, you deposit funds into a dedicated savings account until enough money accumulates to make a settlement offer.\n\nStopping payments creates severe financial and legal risks. While you save money in a dedicated account, accounts become delinquent, accumulating late fees and penalty interest charges. Creditors have no legal obligation to negotiate, and the missed payments can lead to debt collection lawsuits. The [FTC Telemarketing Sales Rule](https://www.law.cornell.edu/cfr/text/16/310.4) bans upfront fees for telemarketed debt relief. A company cannot collect a fee until it has settled or changed the terms of at least one of your debts and you have made at least one payment under that deal.\n\nWhat we see readers get wrong most often is counting a settlement's savings and forgetting that the forgiven amount can be taxed. According to the [IRS](https://www.irs.gov/taxtopics/tc431), if a debt is canceled, forgiven, or discharged for less than the amount owed, the forgiven portion is considered taxable income. Under the [IRS Instructions for Forms 1099-A and 1099-C](https://www.irs.gov/instructions/i1099ac), certain creditors file Form 1099-C when they cancel $600 or more, but [IRS Publication 4681](https://www.irs.gov/publications/p4681) says you must report canceled debt as income even without the form. Outside bankruptcy, [26 U.S.C. 108](https://www.law.cornell.edu/uscode/text/26/108) lets you exclude canceled debt from gross income to the extent you were insolvent immediately before the cancellation, meaning your total liabilities exceeded the fair market value of all your assets. For a full comparison of these paths, read our breakdown of [debt settlement vs bankruptcy](/compare/debt-settlement-vs-bankruptcy/)."
+      },
+      {
+        "heading": "Consolidation Loans and Balance Transfers",
+        "body": "A debt consolidation loan replaces multiple unsecured accounts with a single monthly payment. The [CFPB](https://www.consumerfinance.gov/ask-cfpb/what-do-i-need-to-know-if-im-thinking-about-consolidating-my-credit-card-debt-en-1861/) cautions that taking on new debt to pay off old debt \"may just be kicking the can down the road.\"\n\nA low interest rate may be a teaser rate that applies only for a limited time. Consolidation loans can also involve upfront origination costs, which the [FTC](https://consumer.ftc.gov/articles/how-get-out-debt) notes may include points where one point equals 1% of the total amount borrowed. If you use a home equity loan to consolidate credit cards and fail to make repayments, you risk losing your home to foreclosure. You can evaluate whether a loan saves you money using our [debt consolidation calculator](/debt-consolidation-calculator/).\n\nBalance-transfer credit cards operate similarly by moving balances to a card with a temporary promotional interest rate. Card issuers typically charge a balance transfer fee that equals a fixed dollar amount or a percentage of the total transferred balance. If you do not pay off the balance before the promotional rate expires, the remaining balance is subject to regular ongoing interest rates. You can review how to select the right card terms in our guide on [how to choose a balance transfer credit card](/guides/how-to-choose-a-balance-transfer-credit-card/)."
+      },
+      {
+        "heading": "Negotiating Directly Through Creditor Hardship Programs",
+        "body": "You can negotiate with your lenders yourself. The FTC points out that you can do it for free instead of paying a company to talk to your creditor. Many card issuers maintain formal loss mitigation or internal hardship programs designed for cardholders experiencing acute financial distress.\n\nAccording to the [CFPB](https://www.consumerfinance.gov/ask-cfpb/what-should-i-do-if-i-cant-pay-my-credit-card-bills-en-1697/), you should contact your credit card issuer immediately when you realize you cannot make the minimum payment. Be prepared to explain the exact cause of your financial emergency, the specific payment amount you can afford each month, and when you anticipate resuming standard payments. Many card companies will work with you to change your payment during a financial emergency.\n\nAlways request written confirmation of any modified repayment terms before sending your revised payment. For payoff methods such as the snowball and avalanche, see [how to pay off debt](/guides/how-to-pay-off-debt/)."
+      },
+      {
+        "heading": "Protected Income and Time-Barred Debt",
+        "body": "Waiting it out relies on your income being protected from collection. Federal law caps how much a creditor can garnish from your wages after winning a lawsuit. Under [15 U.S.C. 1673](https://www.law.cornell.edu/uscode/text/15/1673), weekly wage garnishment cannot exceed the lesser of 25% of your disposable earnings or the amount by which weekly disposable earnings exceed 30 times the federal minimum wage. According to the [Department of Labor](https://www.dol.gov/agencies/whd/fact-sheets/30-cppa), if your weekly disposable earnings are $217.50 or less, your wages cannot be garnished for ordinary consumer debts.\n\nCertain federal benefit payments receive even stronger statutory protections. Under [31 CFR 212.6](https://www.law.cornell.edu/cfr/text/31/212.6), banks must ensure account holders retain full access to a protected amount of federal benefits, including Social Security, Supplemental Security Income, and Veterans Affairs payments. When an account receives a garnishment order, the financial institution must review deposits from the preceding two-month period under [31 CFR 212.3](https://www.law.cornell.edu/cfr/text/31/212.3) and shield two months of direct-deposited federal benefits from being frozen.\n\nOld debts can also pass the statute of limitations, which varies by state and debt type. Under [12 CFR 1006.26](https://www.consumerfinance.gov/rules-policy/regulations/1006/26/), a debt collector is prohibited from suing or threatening to sue you on a time-barred debt. Collectors can still contact you about a time-barred debt by letter or phone. The [CFPB](https://www.consumerfinance.gov/ask-cfpb/can-debt-collectors-collect-a-debt-thats-several-years-old-en-1423/) warns that a partial payment or acknowledging an old debt may restart the time period, even after it has expired. If you are currently communicating with collection agencies, review our step-by-step guidance on [how to deal with debt collectors](/guides/how-to-deal-with-debt-collectors/)."
+      },
+      {
+        "heading": "When Bankruptcy Remains the Stronger Legal Remedy",
+        "body": "Bankruptcy is the only route here that stops collection without your creditors' consent and erases qualifying debt without a tax bill. When you file a bankruptcy petition, [11 U.S.C. 362](https://www.law.cornell.edu/uscode/text/11/362) triggers an automatic stay. The automatic stay immediately halts collection calls, wage garnishments, debt collection lawsuits, and foreclosure proceedings without requiring voluntary agreement from your creditors.\n\nIn Chapter 7, the court grants a discharge of qualifying debts that arose before the case under [11 U.S.C. 727](https://www.law.cornell.edu/uscode/text/11/727). In Chapter 13, the discharge comes after you complete all plan payments under [11 U.S.C. 1328](https://www.law.cornell.edu/uscode/text/11/1328). Unlike debt settlement, debts discharged through a title 11 bankruptcy case are completely excluded from gross income for tax purposes under 26 U.S.C. 108, meaning you will not face an unexpected income tax bill on the eliminated balances.\n\nBankruptcy is not suitable for every debt type or borrower. Under [11 U.S.C. 523](https://www.law.cornell.edu/uscode/text/11/523), certain obligations cannot be discharged, including child support, alimony, certain taxes, and student loans unless you demonstrate undue hardship. Bankruptcy also affects your credit profile: under [15 U.S.C. 1681c](https://www.law.cornell.edu/uscode/text/15/1681c), bankruptcy cases can remain on consumer credit reports for up to 10 years. To compare court-supervised repayment options against asset liquidation, see our comparison of [Chapter 7 vs Chapter 13 bankruptcy](/compare/chapter-7-vs-chapter-13-bankruptcy/) and review the [cost to file bankruptcy](/guides/how-much-does-it-cost-to-file-bankruptcy/). Courts, trustees and local rules vary, so a bankruptcy attorney, a legal-aid office or a nonprofit credit counselor can tell you how these rules apply to your case."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/debt-consolidation-calculator/",
+        "label": "Debt consolidation calculator"
+      },
+      {
+        "href": "/credit-card-payoff/",
+        "label": "Credit card payoff calculator"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are the alternatives to Chapter 13 bankruptcy?",
+        "answer": "Inside bankruptcy, the alternative is Chapter 7, whose discharge covers qualifying debts that arose before the case. Outside bankruptcy, the options are a nonprofit debt management plan, debt settlement, a consolidation loan or balance transfer, a hardship plan with each lender, or waiting out collection on protected income."
+      },
+      {
+        "question": "Is a debt management plan better than bankruptcy?",
+        "answer": "A debt management plan avoids a formal bankruptcy record on your credit report and has you repay what you owe at lower interest, over a period the FTC says could take 48 months or more. It does not give you an automatic stay against lawsuits, and each creditor has to accept the plan."
+      },
+      {
+        "question": "Will debt settlement hurt my credit less than bankruptcy?",
+        "answer": "Not necessarily, since settlement usually starts with months of missed payments and most settlements happen after charge-off. Those delinquent accounts can be reported for up to seven years, counted from 180 days after the delinquency began, while a bankruptcy can stay on your report for up to 10 years. The CFPB and FTC publish no score comparison. The NFCC says settlement can drop scores by 100 points or more."
+      },
+      {
+        "question": "Do I pay taxes on settled debt?",
+        "answer": "Generally yes. The IRS treats the forgiven amount as income whether or not you get a Form 1099-C, which certain creditors file when they cancel $600 or more. You can exclude it to the extent you were insolvent just before the cancellation, and debt discharged in a bankruptcy case is not taxed."
+      },
+      {
+        "question": "Can creditors take my Social Security if I don't file bankruptcy?",
+        "answer": "A collector must first sue you and win a judgment, according to the [CFPB](https://www.consumerfinance.gov/ask-cfpb/can-a-debt-collector-take-my-social-security-or-va-benefits-en-1157/). Even then, banks must protect two months of directly deposited federal benefits, though not benefits paid by paper check. Social Security and SSDI can sometimes be taken for government debts such as taxes and student loans or for child or spousal support, while SSI is generally protected even from those."
+      },
+      {
+        "question": "What happens if I just stop paying my debts?",
+        "answer": "If you stop paying, you will usually incur late fees, penalty interest and other charges. After 180 days without payment, the FTC says your creditor will write the debt off as a loss, your credit score will take a big hit, and you will still owe the debt. Creditors can also file a lawsuit against you, obtain a court judgment, and seek to garnish non-exempt wages or bank accounts."
+      }
+    ],
+    "sources": [
+      {
+        "label": "FTC - How to Get Out of Debt",
+        "url": "https://consumer.ftc.gov/articles/how-get-out-debt"
+      },
+      {
+        "label": "FTC - Choosing a Credit Counselor",
+        "url": "https://consumer.ftc.gov/sites/default/files/articles/pdf/pdf-0040-choosing-a-credit-counselor.pdf"
+      },
+      {
+        "label": "CFPB - What is a Debt Relief Program?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-relief-program-and-how-do-i-know-if-i-should-use-one-en-1457/"
+      },
+      {
+        "label": "CFPB - What is Credit Counseling?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-credit-counseling-en-1451/"
+      },
+      {
+        "label": "IRS - Topic 431: Canceled Debt",
+        "url": "https://www.irs.gov/taxtopics/tc431"
+      },
+      {
+        "label": "U.S. Department of Labor - Fact Sheet #30: Garnishment Limits",
+        "url": "https://www.dol.gov/agencies/whd/fact-sheets/30-cppa"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-10-10 (bankruptcy): buying-a-house-after-bankruptcy ──
+  {
+    "updated": "2026-10-10",
+    "slug": "buying-a-house-after-bankruptcy",
+    "title": "How Long After Bankruptcy Can I Buy a House?",
+    "metaDescription": "FHA and VA loans need two years after a Chapter 7 discharge, conventional loans four. See the Chapter 13 rules and how USDA reviews a recent discharge.",
+    "h1": "How Long After Bankruptcy Can I Buy a House?",
+    "cardBlurb": "FHA, VA and conventional waiting periods after Chapter 7 and Chapter 13, with USDA's 36-month review of a recent discharge.",
+    "introText": "Federal Housing Administration (FHA) and [Department of Veterans Affairs](https://www.knowva.ebenefits.va.gov/system/templates/selfservice/va_ssnew/help/customer/locale/en-US/portal/554400000001018/content/554400000330850/VA-Pamphlet-VAP26-7-Chapter-04-Credit-Underwriting) (VA) loans generally need two years after a Chapter 7 discharge, while conventional loans under [Fannie Mae](https://selling-guide.fanniemae.com/sel/b3-5.3-07/significant-derogatory-credit-events-waiting-periods-and-re-establishing-credit) and [Freddie Mac](https://guide.freddiemac.com/app/guide/section/5202.1) rules need four. At The Modern Wallet, we took each waiting period from the agency's own handbook, selling guide or regulation.\n\nA Chapter 13 works differently. FHA, VA and [U.S. Department of Agriculture](https://www.law.cornell.edu/cfr/text/7/3555.151) (USDA) loans can be possible after 12 months of on-time plan payments, with court or trustee approval. USDA's regulation treats a bankruptcy discharged within 36 months of application as \"significant derogatory credit\" that needs further review on a manually underwritten loan.",
+    "sections": [
+      {
+        "heading": "Waiting Periods by Loan Type",
+        "body": "The minimum wait after a Chapter 7 discharge is two years for FHA and VA loans and four years for conventional loans under Fannie Mae and Freddie Mac rules. During a Chapter 13 plan, FHA, VA and USDA loans can be possible after 12 months of on-time payments with court or trustee approval.\n\n| Loan type | After Chapter 7 | During or after Chapter 13 | With extenuating circumstances | Source |\n|---|---|---|---|---|\n| FHA | 2 years from discharge, counted at FHA case number assignment | During the plan: 12 months of on-time payments plus written permission from the bankruptcy court | Chapter 7: 12 to 24 months may be acceptable | Department of Housing and Urban Development (HUD) Handbook 4000.1 |\n| VA | 2 years from discharge, counted to the closing date | During the plan: 12 months of satisfactory payments plus trustee or judge approval. After a completed plan, the lender may treat credit as re-established | Chapter 7: 1 to 2 years if the cause was beyond your control and verified, and you have paid new credit satisfactorily | VA Pamphlet 26-7, Chapter 4 |\n| USDA | On a manually underwritten loan, a discharge within 36 months of application is \"significant derogatory credit\" needing further review | During the plan: 12 consecutive on-time payments plus trustee or judge approval | Lender may weigh temporary, beyond-control causes and lower housing costs | Code of Federal Regulations (CFR), 7 CFR 3555.151 |\n| Conventional (Fannie Mae) | 4 years from discharge or dismissal | 2 years from discharge, 4 years from dismissal. During the plan: not published in our sources, ask the lender | Chapter 7 and Chapter 13 dismissal: 2 years. No exception after a Chapter 13 discharge | Fannie Mae Selling Guide B3-5.3-07 |\n| Conventional (Freddie Mac) | 48 months from discharge or dismissal | 24 months from discharge, 48 months from dismissal. During the plan: not published in our sources, ask the lender | 24 months from discharge or dismissal, any chapter | Freddie Mac Guide 5202.1 (manual underwriting) |\n\nThe FHA row comes from HUD's FHA handbook. HUD updates that handbook, so confirm the current rule with an FHA lender before you plan around a date.\n\nEvery figure in the table is an agency minimum, and lenders may add stricter requirements of their own. The Freddie Mac row shows its recovery periods for manually underwritten loans, and its rule for automated approvals is not published in our sources.\n\nTwo or more bankruptcy filings in the past seven years mean a longer wait. Fannie Mae requires five years from the most recent discharge or dismissal, or three with documented extenuating circumstances. Freddie Mac requires 60 months from the most recent discharge or dismissal."
+      },
+      {
+        "heading": "When the Waiting Period Starts After Bankruptcy",
+        "body": "For every loan in the table, the time after a bankruptcy is counted from the discharge or dismissal date, which can fall months after the day you filed. A Chapter 7 discharge is generally entered 60 to 90 days after the date first set for the meeting of creditors, and that meeting is held 21 to 40 days after the petition, according to [U.S. Courts](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics).\n\nFHA, VA and USDA count to different end dates. HUD's FHA handbook measures two years to the date the FHA case number is assigned, so the application and closing dates do not count. VA measures to the closing date, and USDA looks back 36 months from the application date.\n\nSay a Chapter 7 discharge is dated March 1, 2025. An FHA case number could be assigned on or after March 1, 2027, and a VA loan could close after that date. A Fannie Mae or Freddie Mac loan would wait until March 1, 2029, or until March 1, 2027 with documented extenuating circumstances.\n\nThe split between discharge and dismissal matters most after a Chapter 13. A filer who completes all plan payments is entitled to a discharge, subject to conditions, and Fannie Mae and Freddie Mac then wait two years. If the plan is dismissed before completion, both wait four years from the dismissal date, or two years with documented extenuating circumstances.\n\nA foreclosure tied to the bankruptcy can move the start date. VA dates re-established credit from the later of the discharge date or the date title to the home transferred. Freddie Mac lets the Chapter 7 period run from the discharge date when the mortgage was extinguished in the Chapter 7, foreclosure did not begin before the filing, and the mortgage was not reaffirmed."
+      },
+      {
+        "heading": "Buying a House During a Chapter 13 Plan",
+        "body": "Under FHA, VA and USDA rules, a home loan can be possible during a Chapter 13 plan once 12 months of on-time plan payments are made and the new debt is approved. [U.S. Courts](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics) says plans last three years for filers below their state's median income unless the court approves longer, and generally five years for filers above it. For how the two chapters differ, see [Chapter 7 vs Chapter 13 Bankruptcy](/compare/chapter-7-vs-chapter-13-bankruptcy/).\n\nEach program names who must sign off:\n\n- FHA: HUD's handbook asks for 12 months of satisfactory, on-time payments and written permission from the bankruptcy court. Its text does not mention the trustee.\n- VA: the trustee or the bankruptcy judge must approve the new credit after at least 12 months of satisfactory payments.\n- USDA: 12 consecutive on-time payments, with approval from the trustee or the bankruptcy judge.\n\nU.S. Courts says a Chapter 13 debtor may not take on new debt without consulting the trustee, and each district sets its own procedure. In the [Western District of Washington](https://www.wawb.uscourts.gov/node/883), a debtor can send a written request straight to the Chapter 13 trustee to take on post-confirmation debt, and trustee approval means no separate court order is needed.\n\nHUD's FHA handbook wording asks for written permission from the bankruptcy court and does not mention the trustee. The same district rule lets a debtor file the request with the court by motion instead, so ask the FHA lender which approval it needs before you send anything.\n\nCourts, trustees and local rules vary, so a bankruptcy attorney, a legal-aid office or a nonprofit credit counselor can apply these rules to your own case."
+      },
+      {
+        "heading": "Extenuating Circumstances That Shorten the Wait",
+        "body": "Extenuating circumstances are one-time events outside your control that caused the financial trouble, and documenting them can cut a conventional wait after Chapter 7 from four years to two. Fannie Mae's [definition](https://selling-guide.fanniemae.com/sel/b3-5.3-08/extenuating-circumstances-derogatory-credit) is \"nonrecurring events that are beyond the borrower's control that result in a sudden, significant, and prolonged reduction in income or a catastrophic increase in financial obligations.\" Freddie Mac describes a nonrecurring or isolated circumstance beyond the borrower's control that reduced income or increased expenses and left the borrower unable to repay as agreed.\n\nFannie Mae wants the case made in writing. The lender must get a written explanation, such as a letter or email, showing the borrower had no reasonable option other than to default. VA lists unemployment, prolonged strikes and medical bills not covered by insurance, but says divorce is not generally viewed as beyond the borrower's control. Fannie Mae names a divorce decree as an example of supporting paperwork.\n\nFreddie Mac says overcoming derogatory credit from financial mismanagement takes a longer and more convincing reestablishment period than overcoming extenuating circumstances. Even with extenuating circumstances, Freddie Mac will not accept serious adverse credit within the most recent two years.\n\nFor FHA, HUD's handbook allows a Chapter 7 discharged 12 to 24 months earlier when extenuating circumstances caused it and the borrower has since shown a documented ability to manage money responsibly. USDA lets lenders weigh whether the problems were temporary, whether they were beyond the applicant's control, and whether the loan \"would significantly reduce the applicant's housing expenses.\""
+      },
+      {
+        "heading": "What Underwriters Check After a Bankruptcy",
+        "body": "Beyond the waiting period, underwriters look for re-established credit. Fannie Mae treats credit as re-established only when all four of its conditions are met:\n\n- The waiting period and its related requirements are met.\n- The loan gets a recommendation from Fannie Mae's automated underwriting system that is acceptable for delivery.\n- The borrower has a traditional credit history.\n- The file does not rely on nontraditional credit or a thin file.\n\nThe other agencies use different tests. HUD's FHA handbook asks that, over the most recent two years, the borrower has either reestablished good credit or chosen not to take on new credit. The lender must also document that the events behind the bankruptcy are not likely to recur.\n\nVA says a lack of credit since a bankruptcy is not generally an adverse factor, and VA has no minimum credit score requirement. Minimum scores for FHA, USDA and conventional loans are not in the agency sections cited here, and lenders may set their own.\n\nExpect a paper trail. FHA lenders pull the bankruptcy and discharge documents when the credit report does not verify the discharge date. For a bankruptcy in the last seven years, Freddie Mac wants copies of the petition, schedule of debts and discharge or dismissal, plus evidence that debts the bankruptcy did not satisfy are paid or being paid.\n\nCheck your credit reports before a lender does. The [Federal Trade Commission](https://consumer.ftc.gov/articles/free-credit-reports) (FTC) says [AnnualCreditReport.com](https://www.annualcreditreport.com/index.action) is the only site authorized to fill orders for free reports, and the three bureaus let you check each one weekly for free. Accounts discharged in the bankruptcy should show a zero balance, which is item 12 on the Consumer Financial Protection Bureau (CFPB) [credit report review checklist](https://files.consumerfinance.gov/f/documents/201701_cfpb_credit-report-review-checklist.pdf).\n\nIf a discharged account still shows a balance, [dispute it with the bureau](https://consumer.ftc.gov/articles/disputing-errors-your-credit-reports). The FTC says the bureau has 30 days to investigate, and the investigation is free.\n\nThe bankruptcy itself keeps weighing on scores while it sits on the report. [myFICO](https://www.myfico.com/credit-education/faq/improving-a-score/considering-bankruptcy) says someone with a score in the mid 700s might see a drop of 100 points or more, and the impact lessens over time. The CFPB says a bankruptcy can stay on a credit report up to 10 years. [Experian](https://www.experian.com/blogs/ask-experian/when-does-bankruptcy-fall-off-my-credit-report/) dates removal from the month of filing, so the report clock and the mortgage clock start on different dates.\n\nFor the reporting timeline by chapter, read [How Long Bankruptcy Stays on Your Credit Report](/guides/how-long-does-bankruptcy-stay-on-credit-report/). For the payment habits behind re-established credit, read [How to Rebuild Credit After Bankruptcy](/guides/how-to-rebuild-credit-after-bankruptcy/)."
+      },
+      {
+        "heading": "Choosing a Mortgage After Bankruptcy",
+        "body": "Start with the loan whose waiting period you already meet. After a Chapter 7, FHA and VA open at two years and conventional loans at four, while USDA reviews a discharge from the last 36 months more closely on manually underwritten loans.\n\n- Pick VA if you can use a VA loan and want a program with no minimum credit score, where a lack of new credit since the bankruptcy is not generally held against you. [FHA Loan vs VA Loan](/compare/fha-loan-vs-va-loan/) compares the two.\n- Pick FHA if two years have passed and you have either rebuilt credit or stayed away from new debt. FHA also spells out a 12-to-24-month path for documented extenuating circumstances, and [FHA vs Conventional Loan](/compare/fha-vs-conventional-loan/) sets it against a conventional mortgage.\n- Pick a conventional loan if four years have passed since a Chapter 7, or two since a Chapter 13 discharge, and you have a traditional credit history. Fannie Mae does not accept a thin file as re-established credit.\n- Look at USDA if you can use a USDA loan and are ready for a manual review of a recent discharge. [USDA Loan vs FHA Loan](/compare/usda-loan-vs-fha-loan/) compares the two programs.\n\nA Chapter 7 discharged less than 12 months ago falls short of the FHA, VA and conventional rules. HUD's FHA handbook sets 12 months as the floor even with extenuating circumstances. VA says approval within 12 months will generally not be possible. Fannie Mae and Freddie Mac allow no less than two years. Use that year to build a record of on-time payments.\n\nTwo events would change this order. A HUD handbook update could move the FHA terms. A Chapter 13 that ends in dismissal pushes conventional loans out to four years from the dismissal date, or two with documented extenuating circumstances."
+      },
+      {
+        "heading": "Getting Ready to Buy a House After Bankruptcy",
+        "body": "Get preapproved early, because the CFPB says [preapproval](https://www.consumerfinance.gov/ask-cfpb/whats-the-difference-between-a-prequalification-letter-and-a-preapproval-letter-en-127/) can be a good way to spot credit problems in time to correct them. A preapproval letter states how much a lender is willing to lend under certain assumptions, and the CFPB notes it is not a guaranteed loan offer. If a lender reviews your credit and says you do not qualify, it must give you an adverse action notice.\n\nAfter you apply, the lender must send a [Loan Estimate](https://www.consumerfinance.gov/ask-cfpb/what-is-a-loan-estimate-en-1995/) within three business days, and every lender uses the same standard form. The CFPB's [Loan Estimate explainer](https://www.consumerfinance.gov/owning-a-home/loan-estimate/) recommends requesting several from different lenders so you can compare them.\n\nThe CFPB's [Buying a house](https://www.consumerfinance.gov/owning-a-home/) hub splits the process into four stages:\n\n1. Prepare to shop\n2. Explore loan choices\n3. Choosing a loan offer\n4. Get ready to close\n\nIf you are near the two-year mark for an FHA loan, ask the lender when it would request the case number, since HUD's handbook counts the two years to that date.\n\nBudget the payment before you shop. Run prices, rates and down payments through the [mortgage calculator](/mortgage/) to see the monthly payment, then test it against your monthly spending in the [budget calculator](/budget/). The [First-Time Home Buyer Guide](/guides/first-time-home-buyer-guide/) covers the rest of the purchase.\n\nFind the discharge or dismissal date on your bankruptcy paperwork, then count forward with the waiting-period table to see how long after bankruptcy you can buy a house with each loan."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/mortgage/",
+        "label": "Mortgage"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      },
+      {
+        "href": "/emergency-fund-calculator/",
+        "label": "Emergency fund"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How long do you have to wait to buy a house after Chapter 7?",
+        "answer": "Two years for FHA and VA loans and four years for Fannie Mae and Freddie Mac conventional loans, counted from the discharge date. With documented extenuating circumstances, FHA may accept 12 to 24 months, VA may approve after 1 to 2 years, and Fannie Mae and Freddie Mac allow two years. USDA treats a discharge within 36 months of application as significant derogatory credit that needs further review on a manually underwritten loan."
+      },
+      {
+        "question": "How long after Chapter 7 can I get an FHA loan?",
+        "answer": "Two years from the discharge date, measured to the day the FHA case number is assigned, according to HUD's FHA handbook. A gap of 12 to 24 months may be acceptable if extenuating circumstances beyond your control caused the bankruptcy and you have since managed your finances responsibly. A loan inside that two-year window must be manually underwritten."
+      },
+      {
+        "question": "Can I still get a house loan after Chapter 7 bankruptcy?",
+        "answer": "Yes. VA says a bankruptcy does not in itself disqualify a loan, and HUD's FHA handbook says a Chapter 7 does not disqualify a borrower once two years have passed since discharge. Conventional loans under Fannie Mae and Freddie Mac rules open after four years, or two with documented extenuating circumstances."
+      },
+      {
+        "question": "How long after Chapter 13 bankruptcy can I get a mortgage?",
+        "answer": "Fannie Mae and Freddie Mac require two years after a Chapter 13 discharge and four years after a dismissal. FHA, VA and USDA loans can be possible before discharge, after 12 months of on-time plan payments with approval from the court or trustee. After a completed plan, VA lets the lender conclude your credit is re-established."
+      },
+      {
+        "question": "Which mortgage lenders accept bankrupts?",
+        "answer": "Lenders offering FHA, VA, USDA and conventional loans can approve a borrower with a past bankruptcy once that program's rules are met. Each agency sets a minimum waiting period or review, and individual lenders may add stricter requirements of their own. Request Loan Estimates from several lenders so you can compare them. Every lender uses the same standard form."
+      },
+      {
+        "question": "Can I buy a house while in Chapter 13?",
+        "answer": "Yes, with an FHA, VA or USDA loan, after 12 months of on-time plan payments. HUD's FHA handbook asks for written permission from the bankruptcy court, while VA and USDA accept approval from the trustee or the bankruptcy judge. U.S. Courts says a Chapter 13 debtor may not take on new debt without consulting the trustee, and the request process differs by district."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fannie Mae Selling Guide B3-5.3-07: Significant Derogatory Credit Events, Waiting Periods and Re-establishing Credit",
+        "url": "https://selling-guide.fanniemae.com/sel/b3-5.3-07/significant-derogatory-credit-events-waiting-periods-and-re-establishing-credit"
+      },
+      {
+        "label": "Fannie Mae Selling Guide B3-5.3-08: Extenuating Circumstances for Derogatory Credit",
+        "url": "https://selling-guide.fanniemae.com/sel/b3-5.3-08/extenuating-circumstances-derogatory-credit"
+      },
+      {
+        "label": "Freddie Mac Seller/Servicer Guide 5202.1: Credit Assessment for Manually Underwritten Mortgages",
+        "url": "https://guide.freddiemac.com/app/guide/section/5202.1"
+      },
+      {
+        "label": "VA Pamphlet 26-7, Chapter 4: Credit Underwriting",
+        "url": "https://www.knowva.ebenefits.va.gov/system/templates/selfservice/va_ssnew/help/customer/locale/en-US/portal/554400000001018/content/554400000330850/VA-Pamphlet-VAP26-7-Chapter-04-Credit-Underwriting"
+      },
+      {
+        "label": "7 CFR 3555.151: USDA Guaranteed Loan Eligibility Requirements",
+        "url": "https://www.law.cornell.edu/cfr/text/7/3555.151"
+      },
+      {
+        "label": "U.S. Courts - Chapter 7 Bankruptcy Basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics"
+      },
+      {
+        "label": "U.S. Courts - Chapter 13 Bankruptcy Basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics"
+      },
+      {
+        "label": "U.S. Bankruptcy Court, W.D. Washington - Local Bankruptcy Rule 3015-2",
+        "url": "https://www.wawb.uscourts.gov/node/883"
+      },
+      {
+        "label": "CFPB - Prequalification vs Preapproval Letters",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/whats-the-difference-between-a-prequalification-letter-and-a-preapproval-letter-en-127/"
+      },
+      {
+        "label": "CFPB - What Is a Loan Estimate?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-loan-estimate-en-1995/"
+      },
+      {
+        "label": "CFPB - Loan Estimate Explainer",
+        "url": "https://www.consumerfinance.gov/owning-a-home/loan-estimate/"
+      },
+      {
+        "label": "CFPB - Buying a House",
+        "url": "https://www.consumerfinance.gov/owning-a-home/"
+      },
+      {
+        "label": "CFPB - Credit Report Review Checklist",
+        "url": "https://files.consumerfinance.gov/f/documents/201701_cfpb_credit-report-review-checklist.pdf"
+      },
+      {
+        "label": "FTC - Free Credit Reports",
+        "url": "https://consumer.ftc.gov/articles/free-credit-reports"
+      },
+      {
+        "label": "FTC - Disputing Errors on Your Credit Reports",
+        "url": "https://consumer.ftc.gov/articles/disputing-errors-your-credit-reports"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-10-10 (bankruptcy): how-long-does-bankruptcy-stay-on-credit-report ──
+  {
+    "updated": "2026-10-10",
+    "slug": "how-long-does-bankruptcy-stay-on-credit-report",
+    "title": "How Long Does Bankruptcy Stay on Your Credit Report?",
+    "metaDescription": "Chapter 7 can stay on your credit report up to 10 years and a completed Chapter 13 for 7. A wrong entry can be disputed with each bureau for free.",
+    "h1": "How Long Bankruptcy Stays on Your Credit Report",
+    "cardBlurb": "Chapter 7 bankruptcy can be reported up to 10 years from filing, while the bureaus drop a completed Chapter 13 after 7 years.",
+    "introText": "How long bankruptcy stays on your credit report depends on the chapter: up to 10 years for Chapter 7 and 7 years for a completed Chapter 13. At ModernWallet, we start every guide from the primary sources, so the periods here come from the [Fair Credit Reporting Act](https://www.law.cornell.edu/uscode/text/15/1681c) (FCRA) and from the credit bureaus' own published rules.",
+    "sections": [
+      {
+        "heading": "How Long Each Type of Bankruptcy Stays on Your Report",
+        "body": "A Chapter 7 bankruptcy can stay on your credit report for up to 10 years from the filing date, and a completed Chapter 13 drops off after 7 years. Early removal works only for an inaccurate entry that you dispute with each bureau, and paying a company to remove an accurate bankruptcy does not work.\n\n| Item | How long it can be reported | Measured from | Source |\n|---|---|---|---|\n| Chapter 7 case, filed and discharged | 10 years | Filing date | [Experian](https://www.experian.com/blogs/ask-experian/when-does-bankruptcy-fall-off-my-credit-report/), [Equifax](https://www.equifax.com/personal/help/article-list/-/h/a/information-stays-equifax-credit-report/), [myFICO](https://www.myfico.com/credit-education/faq/negative-reasons/bankruptcy-types) |\n| Chapter 13 case, completed | 7 years | Filing date | Experian, Equifax, myFICO |\n| Chapter 13 plan not completed | 10 years | Not stated | [TransUnion](https://www.transunion.com/blog/credit-advice/how-long-does-bankruptcy-stay-on-credit-report) |\n| Dismissed case | 7 years | Filing date | Equifax (all chapters); Experian (Chapters 7, 11 and 12) |\n| Chapter 11 case, discharged | 10 years | Filing date | Experian, Equifax |\n| Chapter 12 case | 10 years at Experian, 7 years at Equifax | Filing date | Experian, Equifax |\n| Accounts included in the bankruptcy | 7 years at Experian and myFICO; up to 10 years on one Equifax help page | Original delinquency date, or the filing date if never late (Experian); date of last activity (Equifax) | Experian, myFICO, Equifax |\n| Legal ceiling for any bankruptcy case | 10 years | Order for relief or date of adjudication | FCRA, 15 U.S.C. §1681c(a)(1) |\n\nThree rows depend on the bureau. Chapter 12 cases run 10 years at Experian and 7 at Equifax. For a Chapter 13 plan that ends without completion, TransUnion says the bankruptcy stays 10 years, while Equifax lists every dismissed case at 7 years from filing."
+      },
+      {
+        "heading": "Why Chapter 7 and Chapter 13 Get Different Periods",
+        "body": "The 10-year figure is the legal maximum for every chapter, and the 7-year period for a completed Chapter 13 is the bureaus' stated practice. The FCRA bars a report from including a bankruptcy case more than 10 years old, measured from the order for relief or the date of adjudication. The [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/ask-cfpb/how-long-does-a-bankruptcy-appear-on-credit-reports-en-325/) (CFPB) lists Chapters 7, 11, 12 and 13 under that same 10-year limit.\n\nThe FCRA also requires a report to name the chapter a case was filed under, when the source provides it. If you withdraw a case before a final judgment, the bureau must note the withdrawal once it receives documentation certifying it.\n\nThe bureaus count both chapters from the filing date. The discharge does not restart the count. In Chapter 7, [U.S. Courts](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics) says the meeting of creditors is held 21 to 40 days after the petition. The discharge generally comes 60 to 90 days after the date first set for that meeting. Adding those ranges puts the discharge about 81 to 130 days after filing, and those months already count toward the 10 years.\n\nChapter 13 plans run three years when income is below the state median and generally five years when it is above, and no plan may run longer than five. The bureaus report a completed Chapter 13 for 7 years from filing. With a five-year plan, the entry stays on your report about two years after the last payment, and with a three-year plan about four years. TransUnion says a plan that is not completed keeps the bankruptcy on the report for 10 years. Our guide on [getting out of Chapter 13 early](/guides/how-to-get-out-of-chapter-13-early/) explains how a plan can end before completion.\n\nReporting time is one difference between the chapters, and our [Chapter 7 vs Chapter 13 comparison](/compare/chapter-7-vs-chapter-13-bankruptcy/) lays out the others. Courts, trustees and local rules vary, so a bankruptcy attorney, a legal-aid office or a nonprofit credit counselor can apply these rules to your case."
+      },
+      {
+        "heading": "When Accounts Included in the Bankruptcy Drop Off",
+        "body": "Each account included in a bankruptcy follows its own clock, so those accounts can leave your report years before the bankruptcy entry does. Experian says included accounts stay seven years from the original delinquency date. An account that was never late before the filing stays seven years from the filing date instead. TransUnion describes the period as up to seven years from the date of closing or last activity, regardless of chapter.\n\nTake a credit card that first went late in March 2017, followed by a Chapter 7 filing in March 2019. Under Experian's rule, the card's entry would drop off around March 2024, while the bankruptcy entry would stay until about March 2029. Equifax's help page says included accounts can remain up to 10 years from the date of last activity, depending on the bankruptcy type. Equifax's figure does not match Experian, myFICO or the seven-year limit for adverse items in §1681c(a)(5).\n\nWhile those accounts remain, Experian says they should be recorded as \"discharged\" with a $0 balance after the discharge. Experian shows a zero balance on included accounts in Chapter 7, 11 and 12 cases. Since Feb. 16, 2018, Experian has shown Chapter 13 petition balances as blank.\n\nThe account history freezes at the filing. Experian does not display status or payment changes reported after the petition date, and late payments from before the bankruptcy stay on the report. On a joint account where only one borrower filed, the other borrower's account keeps displaying normally with its balance.\n\nLook at each included account for four things:\n\n- It appears as discharged only if the debt was part of your filing, a check myFICO recommends.\n- It shows a zero balance, which is item 12 on the CFPB's [credit report review checklist](https://files.consumerfinance.gov/f/documents/201701_cfpb_credit-report-review-checklist.pdf).\n- Its status reads included in or discharged in bankruptcy. For Chapter 13, Experian changes the status to discharged once the plan is complete.\n- Its original delinquency date matches your records, because Experian counts the account's seven years from that date.\n\nIn its [December 2024 Supervisory Highlights](https://files.consumerfinance.gov/f/documents/cfpb_Supervisory-Highlights-Issue-37_Winter-2024.pdf), the CFPB said examiners found furnishers continuing to report accounts that had been discharged in bankruptcy. A December 2019 edition found furnishers failing to update charged-off balances after discharge, even though their own records showed the change.\n\nEquifax says included accounts are not automatically removed from its report, and it suggests contacting the creditor first, then disputing errors with the bureaus. If an account is missing its included-in-bankruptcy status, Experian asks for the Schedule A document from your filing that lists the account."
+      },
+      {
+        "heading": "Disputing an Inaccurate or Outdated Bankruptcy Entry",
+        "body": "A bankruptcy comes off your report early only when the entry is inaccurate, incomplete or cannot be verified. Experian states there is no way to remove an accurate bankruptcy record. Experian names an entry kept past its expiration date, or one showing an incorrect filing date, as grounds for a dispute. The CFPB's guidance is to dispute information only when it is inaccurate.\n\nWork through the dispute in this order:\n\n1. Pull your reports from all three bureaus. The [Federal Trade Commission](https://consumer.ftc.gov/articles/free-credit-reports) (FTC) says each bureau lets you check your report once a week for free at [AnnualCreditReport.com](https://www.annualcreditreport.com/index.action). The FTC calls AnnualCreditReport.com the only website authorized to fill orders for the free reports, and you can also order by phone at 1-877-322-8228.\n2. Compare each bankruptcy entry with your court papers: the chapter, the filing month and the status.\n3. File a dispute with every bureau that shows the error. State what is wrong and attach a copy of the court document that shows the correct date or chapter.\n4. Send the same dispute to the creditor that supplied a wrong account entry. The CFPB's [dispute page](https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/) says furnishers generally must investigate and respond within 30 days of receiving it.\n5. Keep copies of everything you send and the date each bureau received it, because the deadlines run from receipt.\n\nUnder [15 U.S.C. §1681i](https://www.law.cornell.edu/uscode/text/15/1681i), a bureau must reinvestigate free of charge, or delete the item, within 30 days of receiving your dispute. That period can stretch by up to 15 more days if you send relevant information during the first 30. The extension does not apply when the item is found inaccurate or unverifiable within those 30 days. After the reinvestigation, the bureau has 5 business days to send written results.\n\nIf the item is inaccurate, incomplete or cannot be verified, the bureau must promptly delete or modify it. The [FTC's dispute guide](https://consumer.ftc.gov/articles/disputing-errors-your-credit-reports) adds that a business that finds its own information inaccurate must tell the bureau to update or delete it. If the creditor stands by its information, the CFPB says you can ask it to include a statement explaining your dispute."
+      },
+      {
+        "heading": "Why Paid Bankruptcy Removal Does Not Work",
+        "body": "Credit repair companies cannot legally remove an accurate, current bankruptcy, and both the CFPB and the FTC say so directly. The CFPB [explains](https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-credit-counseling-and-debt-settlement-debt-consolidation-or-credit-repair-en-1449/) what happens when a company disputes an accurate item anyway: the item disappears temporarily while the bureau verifies it, then reappears after verification.\n\nThe FTC's [credit repair FAQ](https://consumer.ftc.gov/articles/fixing-your-credit-faqs) adds that disputing mistakes or outdated items yourself is free. The FAQ lists these warning signs of a scam:\n\n- Insisting you pay before they help you.\n- Telling you not to contact the credit bureaus directly.\n- Telling you to dispute accurate information or to lie on credit applications.\n\nThe [Credit Repair Organizations Act](https://www.law.cornell.edu/uscode/text/15/1679b) (CROA) backs those warnings with rules. A credit repair organization may not charge or receive any money for a service before that service is fully performed. It may not make untrue or misleading statements about its services, or advise you to alter your identification to hide accurate adverse information.\n\nThe FTC adds that these companies must give you a written contract that explains your rights, including a three-day right to cancel without charge. A goodwill letter asks a creditor to remove a legitimate negative mark. Experian says goodwill letters are not meant for serious marks such as bankruptcy, and creditors do not have to agree to them. Pay-for-delete requests apply to collection accounts, which are a different entry, and our guide to [pay-for-delete letters](/guides/pay-for-delete-letters-explained/) covers them.\n\nAn accurate bankruptcy entry stays until its reporting period ends. Early removal needs a mistake on your report: a wrong filing date, the wrong chapter, a debt you did not include, or an entry past its expiration. For an accurate entry, Equifax says keeping open accounts in good standing can help scores improve while you wait."
+      },
+      {
+        "heading": "What to Do When Bankruptcy Stays on Your Credit Report Too Long",
+        "body": "An expired bankruptcy should drop off with no action from you, because Experian says it deletes the entry automatically 7 or 10 years after filing, depending on the chapter. Experian dates that expiration from the month you first filed, so count from the filing month on your court papers. The discharge date does not start the clock.\n\nCompare your end date with each bureau's period for your chapter, since Chapter 12 and unfinished Chapter 13 cases carry different periods at different bureaus. If the date has passed at a bureau that still shows the entry, file a dispute with that bureau and attach the court document that shows your filing date. The 30-day reinvestigation deadline applies to that dispute like any other.\n\nA discharged debt that comes back as a collection call is a separate problem with its own remedy. Under [11 U.S.C. §524](https://www.law.cornell.edu/uscode/text/11/524), a discharge works as an injunction against acts to collect a discharged debt as a personal liability. If a creditor tries to collect, U.S. Courts says you can file a motion with the court reporting the attempt. The CFPB [states](https://www.consumerfinance.gov/ask-cfpb/can-a-debt-collector-try-to-collect-on-a-debt-that-was-discharged-in-bankruptcy-en-1425/) that debt collectors cannot try to collect discharged debts.\n\n[Regulation F](https://www.consumerfinance.gov/rules-policy/regulations/1006/30/) also bars a debt collector from selling or placing for collection a debt it knows or should know was discharged in bankruptcy. The CFPB adds that a lender with a repossession right, such as an auto lender, may still repossess after discharge if the debt is unpaid. The CFPB has also said that student loan servicers collecting on loans a bankruptcy court discharged are likely engaging in an unfair practice. Our guide on [dealing with debt collectors](/guides/how-to-deal-with-debt-collectors/) covers your contact and complaint rights."
+      },
+      {
+        "heading": "When a Bankruptcy Can Appear After Its Reporting Period",
+        "body": "The FCRA's time limits do not apply to three kinds of report, so a bankruptcy older than 10 years can legally appear in them. The exceptions cover reports used for:\n\n- A credit transaction expected to involve a principal amount of $150,000 or more.\n- Underwriting life insurance with a face amount of $150,000 or more.\n- Employment at an annual salary of $75,000 or more.\n\nThe CFPB's [summary of reporting periods](https://www.consumerfinance.gov/ask-cfpb/how-long-does-information-stay-on-my-credit-report-en-323/) describes the same exceptions, and the CFPB notes elsewhere that in certain instances bankruptcy can be reported beyond 10 years. Our guide to [buying a house after bankruptcy](/guides/buying-a-house-after-bankruptcy/) covers mortgage applications after a filing.\n\nBankruptcy is also the only public record left on credit reports. The CFPB says civil judgments came off reports in July 2017 under a settlement called the National Consumer Assistance Plan (NCAP). The number of reported bankruptcies stayed virtually unchanged. The CFPB's [retrospective](https://www.consumerfinance.gov/archive/blog/new-retrospective-on-removing-public-records/) found the last tax liens were gone by April 2018."
+      },
+      {
+        "heading": "Living with a Bankruptcy While It Is on Your Report",
+        "body": "A bankruptcy counts against your FICO Score until it falls off your report, and myFICO and Experian both say its impact lessens over time. myFICO adds that a bankruptcy will always be considered a very negative event by your FICO Score.\n\nThe size of the first drop depends on the rest of your file. myFICO says someone with a score in the mid 700s might see it fall by 100 points or more, and filings that include more accounts tend to hurt more. A [2010 presentation](https://www.frbsf.org/community-development/files/Foreclosure_Lives_Quinn.pdf) by Fair Isaac (FICO), hosted by the Federal Reserve Bank of San Francisco, used two hypothetical consumers. After a bankruptcy posted, the consumer at 680 fell to 530 to 550, and the consumer at 780 fell to 540 to 560.\n\nThe same presentation said that as negative information ages, fewer points are lost to recency, assuming no new late payments reach the file. Those are 2010-era illustrations. myFICO's current table of how credit actions affect FICO Scores does not include bankruptcy.\n\nEquifax says scoring models weigh the past 24 months more heavily, so open accounts kept in good standing can help scores improve within about two years. The CFPB's own rebuilding guide says rebuilding takes time and there are no shortcuts or secrets.\n\nOur guide on [how to rebuild credit after bankruptcy](/guides/how-to-rebuild-credit-after-bankruptcy/) walks through secured cards, credit builder loans and on-time payment habits. Our guide to [what counts as a good credit score](/guides/what-is-a-good-credit-score/) gives you a target. Pull your three free reports and find the filing month on each bankruptcy entry. Add 7 or 10 years, depending on your chapter and the bureau, to see how long the bankruptcy stays on your credit report."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      },
+      {
+        "href": "/emergency-fund-calculator/",
+        "label": "Emergency fund"
+      },
+      {
+        "href": "/credit-card-payoff/",
+        "label": "Credit card payoff"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can you remove Chapter 7 from a credit report before 10 years?",
+        "answer": "Not if the entry is accurate. Experian says there is no way to remove an accurate bankruptcy record, and the CFPB says credit repair companies cannot legally remove accurate, timely information. You can dispute a Chapter 7 entry that shows a wrong filing date or stays past 10 years from filing. The bureau must reinvestigate within 30 days of receiving the dispute."
+      },
+      {
+        "question": "Is it true that after 7 years your credit is clear?",
+        "answer": "Not for every item. The CFPB says most negative information can be reported for seven years, but a bankruptcy can stay up to 10 years. Under the bureaus' practice, a Chapter 7 stays 10 years from the filing date and a completed Chapter 13 drops off at 7. Reports pulled for a job paying $75,000 or more, or for $150,000 or more in credit or life insurance, are exempt from the time limits."
+      },
+      {
+        "question": "Does bankruptcy stay on your credit report forever?",
+        "answer": "No. The FCRA caps standard reporting of a bankruptcy case at 10 years, and Experian deletes an expired bankruptcy automatically 7 or 10 years after filing, depending on the chapter. The exception is a report pulled for $150,000 or more of credit or life insurance, or for a job paying $75,000 or more, where the time limits do not apply."
+      },
+      {
+        "question": "Why is bankruptcy still on my credit report?",
+        "answer": "The reporting period may not have ended yet, because it runs from the month you filed. A Chapter 7 discharged months after filing still counts its 10 years from the filing month, and a completed Chapter 13 counts 7 years from the same starting point. If that end date has passed, or the entry lists the wrong chapter or filing date, dispute it with each bureau that shows it."
+      },
+      {
+        "question": "Does a dismissed bankruptcy show on your credit report?",
+        "answer": "Yes. Equifax says dismissed bankruptcies of all chapters remain for 7 years from the filing date, and Experian lists dismissed Chapter 7, 11 and 12 cases at 7 years from filing. TransUnion says a Chapter 13 plan that is not completed keeps the bankruptcy on the report for 10 years, so the period can differ by bureau. A case you withdraw before final judgment must be noted as withdrawn once the bureau receives documentation."
+      },
+      {
+        "question": "Do accounts included in bankruptcy drop off at the same time as the bankruptcy?",
+        "answer": "Not necessarily. Experian says included accounts stay seven years from their original delinquency date, or seven years from the filing date if the account was never late. An account that went late before the filing starts its clock earlier than the bankruptcy entry does, so it can leave the report years sooner. One Equifax help page instead says included accounts can remain up to 10 years from the date of last activity, so the timing can differ by bureau."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Cornell LII - 15 U.S.C. §1681c: Requirements Relating to Information Contained in Consumer Reports",
+        "url": "https://www.law.cornell.edu/uscode/text/15/1681c"
+      },
+      {
+        "label": "Cornell LII - 15 U.S.C. §1681i: Procedure in Case of Disputed Accuracy",
+        "url": "https://www.law.cornell.edu/uscode/text/15/1681i"
+      },
+      {
+        "label": "Cornell LII - 15 U.S.C. §1679b: Credit Repair Organizations Act Prohibited Practices",
+        "url": "https://www.law.cornell.edu/uscode/text/15/1679b"
+      },
+      {
+        "label": "CFPB - How Long Does a Bankruptcy Appear on Credit Reports?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/how-long-does-a-bankruptcy-appear-on-credit-reports-en-325/"
+      },
+      {
+        "label": "CFPB - How Do I Dispute an Error on My Credit Report?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/"
+      },
+      {
+        "label": "CFPB - Credit Counseling vs Debt Settlement, Consolidation or Credit Repair",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-credit-counseling-and-debt-settlement-debt-consolidation-or-credit-repair-en-1449/"
+      },
+      {
+        "label": "FTC - Disputing Errors on Your Credit Reports",
+        "url": "https://consumer.ftc.gov/articles/disputing-errors-your-credit-reports"
+      },
+      {
+        "label": "FTC - Fixing Your Credit FAQs",
+        "url": "https://consumer.ftc.gov/articles/fixing-your-credit-faqs"
+      },
+      {
+        "label": "Experian - When Does Bankruptcy Fall Off My Credit Report?",
+        "url": "https://www.experian.com/blogs/ask-experian/when-does-bankruptcy-fall-off-my-credit-report/"
+      },
+      {
+        "label": "Experian - Data Furnisher Reporting FAQ",
+        "url": "https://www.experian.com/business/solutions/data-furnisher-reporting/frequently-asked-questions"
+      },
+      {
+        "label": "Equifax - How Long Information Stays on Your Equifax Credit Report",
+        "url": "https://www.equifax.com/personal/help/article-list/-/h/a/information-stays-equifax-credit-report/"
+      },
+      {
+        "label": "U.S. Courts - Chapter 13 Bankruptcy Basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-10-10 (bankruptcy): how-to-rebuild-credit-after-bankruptcy ──
+  {
+    "updated": "2026-10-10",
+    "slug": "how-to-rebuild-credit-after-bankruptcy",
+    "title": "How to Rebuild Credit After Bankruptcy in Six Steps",
+    "metaDescription": "To rebuild credit after bankruptcy, fix discharged accounts on your reports, then pay one secured card on time. In Chapter 13, consult your trustee first.",
+    "h1": "How to Rebuild Credit After Bankruptcy",
+    "cardBlurb": "After Chapter 7 or 13, fix discharged accounts on your reports first, then build on-time history with one secured card while the bankruptcy ages.",
+    "introText": "You rebuild credit after bankruptcy by fixing your credit reports, then paying one or two small new accounts on time with low balances. At ModernWallet, we show the math, and we source every rebuilding step to the credit bureaus, FICO or the federal courts. Start the week your discharge order arrives.\n\nThe bankruptcy entry stays on your report for years, but [FICO](https://www.myfico.com/credit-education/faq/negative-reasons/minimizing-bankruptcy-effects) says its impact lessens over time. No credit bureau and no FICO page publishes a fixed recovery timeline, so every step here works on the parts of your score you control.\n\nThe order is the same after [Chapter 7 and Chapter 13](/compare/chapter-7-vs-chapter-13-bankruptcy/). A Chapter 13 filer can start during the repayment plan but must consult the trustee before taking on new debt.",
+    "sections": [
+      {
+        "heading": "The Rebuild Sequence, Starting the Day You're Discharged",
+        "body": "The rebuild sequence has six steps, and each one works on a part of your credit score you can still change. Run them in this order.\n\n1. Pull your credit reports from all three nationwide bureaus the week your discharge order arrives. They are free every week, and you need to see what a lender sees before you apply for anything.\n2. Check that every account included in the bankruptcy reads \"discharged\" with a $0 balance. Dispute any that do not, because [Equifax](https://www.equifax.com/personal/education/personal-finance/articles/-/learn/rebuilding-credit-after-bankruptcy/) says outdated information can lower your scores more than necessary.\n3. Open one secured card or credit-builder loan that reports to all three bureaus. Payment history is the largest FICO factor, at 35 percent of the score.\n4. Pay every bill on time, every time. The [Consumer Financial Protection Bureau (CFPB)](https://files.consumerfinance.gov/f/documents/201702_cfpb_rebuild_credit_english_OaH.pdf) counts a payment as on time only when it reaches the company by the due date, so schedule payments a few days early.\n5. Keep each card balance low. Amounts owed is the second-largest FICO factor, and the CFPB cites expert advice to use no more than 30 percent of your total credit limit.\n6. Space out new applications. The CFPB says your score may go down if you apply for or open a lot of new accounts in a short time.\n\nIf you are in a Chapter 13 plan, every step applies except step 3, which waits until you have consulted your trustee. If your reports already show every discharged account correctly, step 2 is done and you can go straight to step 3.\n\nThese steps cannot remove an accurate bankruptcy entry, and no bureau or FICO page publishes a fixed recovery timeline. The entry's weight on your score fades as it ages while your new on-time history builds."
+      },
+      {
+        "heading": "Fixing Your Credit Reports Before You Rebuild Credit After Bankruptcy",
+        "body": "You can get all three of your credit reports free every week, and every discharged account on them should read \"discharged\" with a $0 balance. The [Federal Trade Commission (FTC)](https://consumer.ftc.gov/articles/free-credit-reports) says the three nationwide bureaus permanently extended free weekly reports, and [AnnualCreditReport.com](https://www.annualcreditreport.com/index.action) is the only website authorized to fill orders for the free reports. You can also order by phone at 1-877-322-8228.\n\n[Experian](https://www.experian.com/blogs/ask-experian/removing-included-in-bankruptcy-status-from-closed-accounts/) says accounts included in a bankruptcy should be recorded as \"discharged\" with the balance at $0 upon discharge. The account history stays, including any late payments from before the filing. On a joint account where only one borrower filed, the other borrower's account keeps displaying its balance normally, according to Experian's [guidance for data furnishers](https://www.experian.com/business/solutions/data-furnisher-reporting/frequently-asked-questions).\n\nRead every account line. CFPB examiners reported in [December 2024](https://files.consumerfinance.gov/f/documents/cfpb_Supervisory-Highlights-Issue-37_Winter-2024.pdf) that weak furnisher accuracy policies led to problems such as continuing to report accounts discharged in bankruptcy. The CFPB's [credit report review checklist](https://files.consumerfinance.gov/f/documents/201701_cfpb_credit-report-review-checklist.pdf) tells you to confirm that zero balances are recorded for debts discharged in bankruptcy.\n\nEquifax suggests a two-step fix for a wrong balance. Contact the creditor first, then dispute with the bureaus. You can also dispute with [the business that reported the account](https://www.consumerfinance.gov/ask-cfpb/how-do-i-dispute-an-error-on-my-credit-report-en-314/), which generally must investigate and respond within 30 days. If an account is missing its bankruptcy status, Experian asks for the Schedule A document from your filing that lists the account.\n\nUnder the [Fair Credit Reporting Act (FCRA)](https://www.law.cornell.edu/uscode/text/15/1681i), a bureau must reinvestigate your dispute free of charge within 30 days of receiving it. That deadline can stretch by up to 15 days if you send relevant information during those 30 days. An item found inaccurate, incomplete or unverifiable must be deleted or corrected, and written results are due within 5 business days after the reinvestigation ends.\n\nThe discharge also stops collection on the debts it covers. Under [11 U.S.C. §524](https://www.law.cornell.edu/uscode/text/11/524), a discharge operates as an injunction against any act to collect a discharged debt as a personal liability, and [U.S. Courts](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/discharge-bankruptcy-bankruptcy-basics) calls it a permanent order. If a creditor tries to collect anyway, you can file a motion with the court reporting it.\n\nThe CFPB says [debt collectors cannot collect](https://www.consumerfinance.gov/ask-cfpb/can-a-debt-collector-try-to-collect-on-a-debt-that-was-discharged-in-bankruptcy-en-1425/) on discharged debts, though a lender with a repossession right, such as an auto lender, may still repossess if the debt is unpaid. For student loans discharged by a bankruptcy court, the CFPB has said servicers that keep collecting are likely engaging in an [unfair practice](https://www.consumerfinance.gov/compliance/supervisory-guidance/cfpb-bulletin-2023-01-unfair-billing-and-collection-practices-after-bankruptcy-discharges-of-certain-student-loan-debts/). Keep a record of every contact and use our guide on [dealing with debt collectors](/guides/how-to-deal-with-debt-collectors/) to respond in writing."
+      },
+      {
+        "heading": "Accounts That Rebuild Credit After Bankruptcy",
+        "body": "Three account types can help rebuild credit after a bankruptcy: a secured credit card, a credit-builder loan, and authorized-user status on someone else's card.\n\nmyFICO says a good practice is to get a secured card and make every payment on time. You put down a deposit equal to your credit limit, and the CFPB warns that fees and interest rates can be high. myFICO says to pick a card that [reports to all three major bureaus](https://www.myfico.com/credit-education/credit-scores/how-to-rebuild-credit).\n\nCompare current options in our [best secured credit cards](/roundup/best-secured-credit-cards/) roundup. Our comparison of [secured vs unsecured credit cards](/compare/secured-credit-card-vs-unsecured-credit-card/) explains how the two card types differ.\n\nA [credit-builder loan](https://www.consumerfinance.gov/ask-cfpb/what-are-some-ways-to-start-or-rebuild-a-good-credit-history-en-2155/) from a bank or credit union lets you build credit and savings at the same time, because the money is released only after you finish paying. A [2020 CFPB study](https://www.consumerfinance.gov/data-research/research-reports/targeting-credit-builder-loans/) found these loans worked better for people who entered without existing debt. Taking one out also appeared to reduce borrowers' ability to keep up other loan payments.\n\nEquifax says becoming an authorized user on someone else's card may give a small score increase if the primary owner pays on time. If someone cosigns a loan for you instead, Equifax notes that your late payments hurt the cosigner's credit too.\n\n| | Secured card | Credit-builder loan | Authorized user |\n|---|---|---|---|\n| How it works | You deposit an amount equal to your credit limit | The lender holds the loan money and releases it after you finish paying | You are added to someone else's card |\n| What to watch | Fees and interest rates can be high | CFPB research found it appeared to reduce borrowers' ability to keep up other loan payments | Any benefit depends on the owner paying on time |\n| Best fit | Your first account, which myFICO suggests getting soon after filing | You have no other loan payments running | Someone you trust pays their card on time |\n\nSome products do not rebuild credit at all. The CFPB lists four:\n\n- Debit cards or cash\n- Prepaid cards\n- Payday loans, where even on-time repayments might not help\n- Buy here, pay here auto loans, unless the lender promises in writing to report on-time payments"
+      },
+      {
+        "heading": "What Moves a FICO Score with a Fresh Bankruptcy",
+        "body": "Payment history and amounts owed make up 65 percent of a FICO score (35 plus 30), so on-time payments and low balances carry the most weight while you rebuild. [FICO's published weights](https://www.myfico.com/credit-education/whats-in-your-credit-score) are in the table below, and FICO says the weights may be different for different credit profiles.\n\n| Factor | Weight | What it means after a bankruptcy |\n|---|---|---|\n| Payment history | 35% | Each on-time payment on a new account adds to this record |\n| Amounts owed | 30% | Keep balances under 30% of your total limit, or under 10% if you can |\n| Length of credit history | 15% | New accounts opened after the bankruptcy start with a short history |\n| New credit | 10% | Many applications in a short time may lower your score |\n| Credit mix | 10% | Tied with new credit for the smallest weight |\n\nOn a small secured card, the 30 percent and 10 percent lines leave little room. Say your deposit, and so your limit, is $500. Then 30 percent is $150 and 10 percent is $50, so a $200 balance is over both lines. Pay the card down before the balance climbs that high.\n\nFICO treats a bankruptcy as [a very negative event](https://www.myfico.com/credit-education/faq/negative-reasons/bankruptcy-types), and filings that include more accounts tend to hurt more. Equifax says scoring models put more weight on the past 24 months, so keeping open accounts in good standing can help scores improve within about two years. Tactics that apply to anyone, such as credit-limit increases and rent reporting, are covered in our guide to [building credit fast](/guides/how-to-build-credit-fast/)."
+      },
+      {
+        "heading": "How Long It Takes to Rebuild Credit After Bankruptcy",
+        "body": "A Chapter 7 bankruptcy comes off Experian and Equifax reports 10 years after the filing date, and a completed Chapter 13 comes off after 7 years. The score impact lessens as the entry ages. [Experian](https://www.experian.com/blogs/ask-experian/when-does-bankruptcy-fall-off-my-credit-report/) dates the timeline from the month you first filed, and the entry is [deleted automatically](https://www.experian.com/blogs/ask-experian/removing-bankruptcy-from-your-credit-report/) with no action from you.\n\n| | Chapter 7 | Chapter 13 |\n|---|---|---|\n| Experian and Equifax, discharged or completed case | 10 years from filing | 7 years from filing |\n| Dismissed case, Equifax practice | 7 years from filing | 7 years from filing |\n| Legal maximum under the FCRA | 10 years | 10 years |\n\nThe figures in the first two rows come from the bureaus' own pages, including [Equifax's reporting periods](https://www.equifax.com/personal/help/article-list/-/h/a/information-stays-equifax-credit-report/). The 7-year Chapter 13 period is bureau practice, and the law allows up to 10 years for every chapter under [15 U.S.C. §1681c](https://www.law.cornell.edu/uscode/text/15/1681c). The CFPB [adds](https://www.consumerfinance.gov/ask-cfpb/how-long-does-a-bankruptcy-appear-on-credit-reports-en-325/) that in certain instances a bankruptcy can be reported beyond 10 years.\n\nThose time limits do not apply to reports used for credit or life insurance of $150,000 or more. They also do not apply to reports for a job paying $75,000 a year or more. Accounts included in the bankruptcy follow their own clock. Experian says they drop off 7 years from the original delinquency date, or 7 years from filing if the account was never late.\n\nOur guide to [how long bankruptcy stays on your credit report](/guides/how-long-does-bankruptcy-stay-on-credit-report/) has the full reporting rules. The drop at filing depends on your whole profile, and myFICO says someone with a score in the mid 700s might see it fall by 100 points or more.\n\nFICO presented a hypothetical illustration in March 2010, hosted by the [Federal Reserve Bank of San Francisco](https://www.frbsf.org/community-development/files/Foreclosure_Lives_Quinn.pdf). In it, posting a bankruptcy moved a 680 profile to 530 to 550 and a 780 profile to 540 to 560. The same presentation says fewer points are lost for recency as derogatory information ages, assuming no new late payments hit the file. Keep every new account current so that aging keeps working in your favor.\n\nFICO and the bureaus do not publish how long it takes to reach 700 or 800 after Chapter 7, or whether a given file gets there before the entry expires. myFICO says rebuilding can take months or years, and that a bankruptcy may require a longer timeline. For where 700 and 800 fall on the scale, see [what counts as a good credit score](/guides/what-is-a-good-credit-score/)."
+      },
+      {
+        "heading": "Rebuilding Credit During a Chapter 13 Plan",
+        "body": "A Chapter 13 filer can rebuild during the plan, but [U.S. Courts' Chapter 13 overview](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics) says the debtor may not incur new debt without consulting the trustee. The stated reason is that added debt may compromise completing the plan. A plan runs three years if your income is below the state median and generally five years if above, and never longer than five.\n\nThe bankruptcy code gives lenders a reason to care about trustee approval. Under [11 U.S.C. §1305](https://www.law.cornell.edu/uscode/text/11/1305), a lender's claim for a new consumer debt can be disallowed if the trustee's prior approval was not obtained. That applies when the lender knew or should have known that getting approval first was practicable.\n\nThe dollar threshold and procedure for new debt vary by district, plan and trustee. One example is the [District of New Mexico's local rule](https://www.nmb.uscourts.gov/node/2207), which lets a debtor take on less than $1,000 of non-mortgage consumer debt per calendar year without approval. Above that, the debtor submits a written application to the trustee with amended Schedules I and J.\n\nCourts, trustees and local rules differ, so a bankruptcy attorney, a legal-aid office or a nonprofit credit counselor can apply these rules to your case.\n\nWhile you wait on the trustee's answer, pull your reports, check that accounts in the plan show their bankruptcy status, and pay existing bills on time. Since February 16, 2018, Experian has shown a blank balance on accounts included in a Chapter 13 petition. Those accounts switch to \"discharged\" when the plan is complete.\n\nIf you are weighing whether the plan can end sooner, see [how to get out of Chapter 13 early](/guides/how-to-get-out-of-chapter-13-early/)."
+      },
+      {
+        "heading": "Mistakes and Traps After Bankruptcy",
+        "body": "Watch for three traps after a bankruptcy: a reaffirmed debt you still owe, up-front fees for credit, and credit repair companies that promise to remove accurate items.\n\nA reaffirmation is an agreement to stay liable on a debt the discharge would otherwise wipe out, according to [U.S. Courts' Chapter 7 overview](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics). It must be signed and filed with the court before the discharge is entered, and a judge must approve it unless an attorney represents you. Treat a reaffirmed payment like any other bill in step 4, since you remain liable for it.\n\nSection 524(c) lets you rescind a reaffirmation before the discharge or within 60 days after the agreement is filed, whichever is later. Section 524(f) separately lets you voluntarily repay any discharged debt.\n\nThe FTC has brought cases against scammers who [promise a credit card or loan](https://www.ftc.gov/news-events/topics/consumer-finance/credit-cards) in return for an up-front fee, especially to people with bad credit, no credit or a bankruptcy. The FTC's advice on [advance-fee loans](https://consumer.ftc.gov/articles/what-know-about-advance-fee-loans) is that any fee a lender wants before granting the loan is a cue to walk away. Under the Telemarketing Sales Rule, telemarketers who claim a high success rate cannot collect fees before you are offered credit.\n\nExperian says there is no way to remove an accurate bankruptcy record from a credit report, and [goodwill letters](https://www.experian.com/blogs/ask-experian/what-is-goodwill-letter/) are not meant for bankruptcy either. The CFPB says [credit repair companies](https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-credit-counseling-and-debt-settlement-debt-consolidation-or-credit-repair-en-1449/) cannot legally get accurate, timely information removed. When they dispute accurate items anyway, those items disappear temporarily during verification and then reappear.\n\nUnder the [Credit Repair Organizations Act (CROA)](https://www.law.cornell.edu/uscode/text/15/1679b), a credit repair company cannot charge you before a service is fully performed or make untrue or misleading statements. The FTC's warning signs include a company that insists on payment before helping or tells you not to contact the bureaus directly. You can [dispute errors yourself for free](https://consumer.ftc.gov/articles/fixing-your-credit-faqs), and any credit repair contract must give you a three-day right to cancel."
+      },
+      {
+        "heading": "Car Loan and Mortgage Milestones",
+        "body": "A car loan and a mortgage are the larger loans to plan toward.\n\nFor a car, a buy here, pay here loan helps your credit only if the lender promises in writing to report on-time payments. Our guide to [buying a car after bankruptcy](/guides/buying-a-car-after-bankruptcy/) walks through that purchase.\n\nFor a home, the FCRA time limits do not apply to a report for credit of $150,000 or more, so that report can include a bankruptcy older than 10 years. See [buying a house after bankruptcy](/guides/buying-a-house-after-bankruptcy/) for the mortgage side.\n\nBefore either application, run your monthly costs through the [budget calculator](/budget/) so a new payment fits next to the card you already pay on time. Start this week: pull your three free reports and check that every discharged account shows a $0 balance."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      },
+      {
+        "href": "/emergency-fund-calculator/",
+        "label": "Emergency fund"
+      },
+      {
+        "href": "/credit-card-payoff/",
+        "label": "Credit card payoff"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can you get a 700 credit score after Chapter 7?",
+        "answer": "FICO and the credit bureaus do not publish whether or when a score reaches 700 after Chapter 7. myFICO says the bankruptcy counts in your FICO score until it falls off the report, but its impact lessens over time. Equifax says scoring models weight the past 24 months more, so accounts kept in good standing can help scores improve within about two years."
+      },
+      {
+        "question": "Is it possible to get an 800 credit score after Chapter 7 bankruptcy?",
+        "answer": "No FICO or bureau source publishes data on reaching 800 after Chapter 7. Experian and Equifax keep a Chapter 7 entry for 10 years from the filing date, and FICO factors it in until it falls off. On-time payments and low balances, which together make up 65 percent of a FICO score, are the parts you control in the meantime."
+      },
+      {
+        "question": "How long does it take to build a credit score from 500 to 700?",
+        "answer": "No bureau or FICO page publishes a timeline for that climb. myFICO says rebuilding can take months or years for most people, and that a bankruptcy may require a longer timeline. The pace depends on your whole profile, including how many accounts the bankruptcy included and whether any new payments are late."
+      },
+      {
+        "question": "How do I raise my credit score by 100 points?",
+        "answer": "No method guarantees a set number of points, and the CFPB says rebuilding takes time with no shortcuts or secrets. Start by disputing any discharged account that still shows a balance, since a bureau must delete or correct an item it finds inaccurate. Then work on payment history (35 percent of a FICO score) and amounts owed (30 percent) with on-time payments and balances under 30 percent of your total credit limit."
+      },
+      {
+        "question": "Should I get a credit card right after bankruptcy?",
+        "answer": "myFICO's guidance is to rebuild soon after filing with a secured credit card paid on time every month. The CFPB warns that secured card fees and interest rates can be high, so compare costs before you apply. If you are in a Chapter 13 plan, consult your trustee before opening one, because Chapter 13 debtors may not take on new debt without doing so."
+      },
+      {
+        "question": "Does a Chapter 13 filer have to wait until discharge to rebuild?",
+        "answer": "No, a Chapter 13 filer can start rebuilding during the plan by pulling reports, checking account statuses and paying existing bills on time. Taking on new debt, including a new card, requires consulting the trustee first. The dollar threshold and procedure for that approval vary by district, plan and trustee."
+      }
+    ],
+    "sources": [
+      {
+        "label": "myFICO - What's in My FICO Scores",
+        "url": "https://www.myfico.com/credit-education/whats-in-your-credit-score"
+      },
+      {
+        "label": "myFICO - Minimizing the Effects of Bankruptcy",
+        "url": "https://www.myfico.com/credit-education/faq/negative-reasons/minimizing-bankruptcy-effects"
+      },
+      {
+        "label": "CFPB - How to Rebuild Your Credit (PDF)",
+        "url": "https://files.consumerfinance.gov/f/documents/201702_cfpb_rebuild_credit_english_OaH.pdf"
+      },
+      {
+        "label": "FTC - Free Credit Reports",
+        "url": "https://consumer.ftc.gov/articles/free-credit-reports"
+      },
+      {
+        "label": "Experian - Removing Included in Bankruptcy Status From Closed Accounts",
+        "url": "https://www.experian.com/blogs/ask-experian/removing-included-in-bankruptcy-status-from-closed-accounts/"
+      },
+      {
+        "label": "Equifax - Rebuilding Credit After Bankruptcy",
+        "url": "https://www.equifax.com/personal/education/personal-finance/articles/-/learn/rebuilding-credit-after-bankruptcy/"
+      },
+      {
+        "label": "15 U.S.C. §1681i - Procedure in Case of Disputed Accuracy",
+        "url": "https://www.law.cornell.edu/uscode/text/15/1681i"
+      },
+      {
+        "label": "15 U.S.C. §1681c - Requirements Relating to Information Contained in Consumer Reports",
+        "url": "https://www.law.cornell.edu/uscode/text/15/1681c"
+      },
+      {
+        "label": "11 U.S.C. §524 - Effect of Discharge",
+        "url": "https://www.law.cornell.edu/uscode/text/11/524"
+      },
+      {
+        "label": "U.S. Courts - Chapter 13 Bankruptcy Basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics"
+      },
+      {
+        "label": "CFPB - Credit Counseling vs Debt Settlement, Consolidation or Credit Repair",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-credit-counseling-and-debt-settlement-debt-consolidation-or-credit-repair-en-1449/"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-10-10 (bankruptcy): how-much-does-it-cost-to-file-bankruptcy ──
+  {
+    "updated": "2026-10-10",
+    "slug": "how-much-does-it-cost-to-file-bankruptcy",
+    "title": "How Much Does It Cost to File Bankruptcy in 2026?",
+    "metaDescription": "Chapter 7 court fees total $338 and Chapter 13 fees total $313. A Chapter 7 filer under 150% of the poverty line can ask the court to waive the fee.",
+    "h1": "How Much Does It Cost to File Bankruptcy?",
+    "cardBlurb": "Court fees are $338 for Chapter 7 and $313 for Chapter 13, and only the Chapter 7 fee can be waived.",
+    "introText": "Filing bankruptcy costs $338 in federal court fees for Chapter 7 and $313 for Chapter 13, plus two required courses and any attorney fee. At The Modern Wallet, we built this breakdown from the federal fee schedule, the bankruptcy statutes, and five court orders that set presumptively reasonable lawyer fees.\n\nThe court fee is set by federal statute and the federal fee schedule. The cost to file bankruptcy depends most on the lawyer, whose fee can run several times the court fee and varies by district. If money is the obstacle, Chapter 7 offers a fee waiver for low-income filers, and both chapters let you ask to pay the court fee in installments.",
+    "sections": [
+      {
+        "heading": "What Filing Bankruptcy Costs, Fee by Fee",
+        "body": "The federal court fee to file bankruptcy is $338 for Chapter 7 and $313 for Chapter 13. Both chapters also require two courses, and a fee of $50 or less for each is presumed reasonable. Every published attorney fee figure is higher than the court fee, and attorney fees vary by district.\n\n| Cost | Chapter 7 | Chapter 13 | Notes and source |\n| --- | --- | --- | --- |\n| Court filing fee | $338 ($245 filing + $78 administrative + $15 trustee surcharge) | $313 ($235 filing + $78 administrative) | Federal fee schedule effective December 1, 2023. Only the Chapter 7 fee can be waived. |\n| Credit counseling course (before filing) | $50 or less presumed reasonable | $50 or less presumed reasonable | Providers must waive all or part of the fee if you cannot pay. |\n| Debtor education course (after filing) | $50 or less presumed reasonable | $50 or less presumed reasonable | Same waiver duty as credit counseling. |\n| Attorney fee | $1,000 to $3,000 (Upsolve estimate); $1,078 average in 2007 (GAO) | $4,500 to $5,500 base presumed-reasonable fee in five districts; add-ons and caps apply in some | Varies by district. Get written quotes. |\n| Chapter 13 trustee fee | Does not apply | Up to 10% of plan payments | Statutory cap for filers who are not family farmers. The statute does not set the actual rate. |\n\nThe Chapter 7 attorney figures come from [Upsolve](https://upsolve.org/learn/how-much-does-bankruptcy-cost/), a nonprofit whose explainer, updated in January 2026, gives a $1,000 to $3,000 range. The [U.S. Government Accountability Office (GAO)](https://www.gao.gov/products/gao-08-697) supplies the $1,078 average, which dates from 2007. The Chapter 13 range spans the presumed-reasonable fees set by five bankruptcy courts. It is not a national average, and each court sets its own figure."
+      },
+      {
+        "heading": "Court Filing Fee Components by Chapter",
+        "body": "The Chapter 7 court fee totals $338 and the Chapter 13 fee totals $313 under the [Bankruptcy Court Miscellaneous Fee Schedule](https://www.uscourts.gov/court-programs/fees/bankruptcy-court-miscellaneous-fee-schedule), which is marked effective December 1, 2023. Each total adds a filing fee set by statute to charges from the schedule.\n\n- Chapter 7: a $245 filing fee under [Title 28 of the United States Code (U.S.C.), section 1930](https://www.law.cornell.edu/uscode/text/28/1930), plus a $78 administrative fee and a $15 trustee surcharge, for $338.\n- Chapter 13: a $235 filing fee under the same section plus the $78 administrative fee, for $313.\n- Joint petition: only one filing fee and one administrative fee are charged.\n\n[One bankruptcy court's fee page](https://www.akb.uscourts.gov/node/81) lists the same $338 and $313 totals. The uscourts.gov basics pages for [Chapter 7](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics) and [Chapter 13](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics) show an older, lower administrative fee, so use the $78 figure from the fee schedule when you add up costs.\n\nThe [Judicial Conference](https://www.orb.uscourts.gov/sites/orb/files/documents/news/2026%20Fee%20Schedule%20Changes.pdf) raised certain bankruptcy fees for inflation effective December 1, 2026, the first such adjustment since March 2023. The $338 and $313 filing totals are not among the fees changing. The increases apply to filings made later in a case. Amending schedules goes from $34 to $38, and a motion for relief from the automatic stay goes from $199 to $221. A notice of appeal goes from $307 to $372.\n\nSeparately, the [Bankruptcy Administration Improvement Act](https://www.govinfo.gov/content/pkg/PLAW-119publ76/html/PLAW-119publ76.htm), enacted in February 2026, raised Chapter 7 trustee pay per case. The law states that it will not alter the Chapter 7 filing fee.\n\nA few other fees can come up after filing. Converting a Chapter 13 case to Chapter 7 costs $25 (the $15 surcharge plus a $10 conversion fee), and converting from Chapter 7 to Chapter 13 has no fee. If you are in Chapter 13 and weighing a switch, see [how to get out of Chapter 13 early](/guides/how-to-get-out-of-chapter-13-early/).\n\nReopening a closed case costs $245 for Chapter 7 or $235 for Chapter 13. That fee does not apply when the case is reopened to correct an administrative error, and the court should waive it if no additional assets are found."
+      },
+      {
+        "heading": "Bankruptcy Fee Waiver and Installment Payments",
+        "body": "If you cannot pay the court fee up front, Chapter 7 filers can ask the court to waive it. Filers in either chapter can ask to pay the fee in up to four installments.\n\nUnder section 1930(f), the court may waive the Chapter 7 filing fee if your income is less than 150% of the official poverty line for your family size. You must also be unable to pay the fee in installments. The court may also waive certain other court fees for those filers. The statute has no matching waiver for Chapter 13, because that subsection covers only Chapter 7 cases.\n\nYou apply for the waiver with [Official Form 103B](https://www.uscourts.gov/file/18714/download). Under [Rule 1006 of the Federal Rules of Bankruptcy Procedure](https://www.law.cornell.edu/rules/frbp/rule_1006), the clerk must accept a Chapter 7 petition filed with a completed, signed Form 103B. You do not have to pay the fee before you file.\n\nYou sign Form 103B under penalty of perjury, declaring that you cannot afford the fee in full or in installments. The form also asks whether you have paid, or expect to pay, an attorney or a petition preparer for the case, and how much. Answer that question completely, since the whole form is signed under oath.\n\nTo pay in installments, file [Official Form 103A](https://www.uscourts.gov/file/18700/download). Rule 1006 allows up to four payments, all due within 120 days after filing. The court can extend a payment for cause, but the last one must be paid within 180 days.\n\nForm 103A warns that your debts will not be discharged until the entire fee is paid, and that a missed payment can lead to dismissal. Installments also limit how you pay a lawyer. Until the filing fee is paid in full, Rule 1006 bars you or a Chapter 13 trustee from making any further payment to an attorney or anyone else helping with the case.\n\nSome courts set stricter local terms for installment requests, and trustees and local rules vary too. A bankruptcy attorney, a legal-aid office funded by the [Legal Services Corporation (LSC)](https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help), or a nonprofit credit counselor can apply these rules to your case."
+      },
+      {
+        "heading": "Credit Counseling and Debtor Education Course Costs",
+        "body": "Bankruptcy requires two separate courses, and federal rules presume a fee of $50 or less for each one is reasonable. The [U.S. Trustee Program (USTP)](https://www.justice.gov/ust/credit-counseling-debtor-education-information) publishes the lists of approved agencies and providers. The USTP says credit counseling must be completed before you file, and debtor education is a separate course taken after you file. Credit counseling must fall within 180 days before your filing date.\n\nThe fee limits come from Title 28 of the Code of Federal Regulations (CFR). Under [28 CFR 58.21](https://www.law.cornell.edu/cfr/text/28/58.21), a credit counseling fee of $50 or less is presumed reasonable, and a higher fee needs prior approval from the U.S. Trustee. [28 CFR 58.34](https://www.law.cornell.edu/cfr/text/28/58.34) sets the same $50 presumption for the debtor education course.\n\nYou may not have to pay either fee. [11 U.S.C. section 111](https://www.law.cornell.edu/uscode/text/11/111) requires approved providers to deliver services without regard to ability to pay. The regulations require a provider to waive the fee in whole or in part when you show you cannot pay. A household income under 150% of the poverty guidelines is presumed to show you cannot pay.\n\nThe USTP's [frequently asked questions (FAQ) page on credit counseling](https://www.justice.gov/ust/frequently-asked-questions-faqs-credit-counseling) says these services are available free or at a reduced rate based on ability to pay. For reference, Upsolve's explainer puts the required courses at $10 to $50, and GAO found in 2008 that fees for the two requirements typically totaled about $100."
+      },
+      {
+        "heading": "Bankruptcy Attorney Cost for Chapter 7 and Chapter 13",
+        "body": "When we reviewed the published research, we found no current national average for bankruptcy attorney fees from a government or academic source. The newest government figures are in GAO's 2008 [full report](https://www.gao.gov/assets/a277577.html).\n\nGAO estimated the average Chapter 7 attorney fee at $712 for February and March 2005. By February and March 2007, its estimate was $1,078. For Chapter 13, it found that court-set standard fees rose 55% or more in more than half of the instances it reviewed.\n\nUpsolve's explainer, updated in January 2026 and written by an attorney, gives a Chapter 7 range of $1,000 to $3,000. It says Chapter 13 fees are generally higher but gives no dollar range.\n\nUpsolve says the remaining Chapter 13 attorney fees get paid through the repayment plan. GAO notes that approved Chapter 13 attorney fees are paid from the debtor's estate as an administrative claim. [11 U.S.C. section 1326](https://www.law.cornell.edu/uscode/text/11/1326) requires those claims to be paid before or at the time of each payment to creditors. In the Northern Division of the [Northern District of Alabama](https://www.alnb.uscourts.gov/sites/alnb/files/general-ordes/Admin%20Order%2022-03.pdf), the Chapter 13 trustee pays up to $3,500 of the fee from post-confirmation plan payments. That cap is reduced by anything paid before filing, and the trustee pays the rest in fixed monthly amounts.\n\nThe same plan payments carry the standing trustee's percentage fee, which [28 U.S.C. section 586](https://www.law.cornell.edu/uscode/text/28/586) caps at 10% of plan payments for filers who are not family farmers. The statute sets only the cap, so ask a bankruptcy attorney in your district what rate the local standing Chapter 13 trustee charges.\n\nEach bankruptcy court sets its own presumptively reasonable Chapter 13 fee by local rule or general order. Five examples:\n\n- [Southern District of Indiana](https://www.insb.uscourts.gov/sites/insb/files/General%20Order%2025-0001.pdf): up to $5,000 for cases filed on or after December 1, 2025, plus $500 for each adversary proceeding to avoid an unsecured mortgage.\n- [Northern District of Indiana](https://www.innb.uscourts.gov/sites/innb/files/Order%20Amending%20Local%20Bankruptcy%20Rule%20B-2016-1.pdf): $4,500 for a routine consumer Chapter 13 case, under an order dated July 27, 2026.\n- [Eastern District of Wisconsin](https://www.wieb.uscourts.gov/sites/default/files/forms/Presumptively%20Reasonable%20Fees%205-1-24v2.pdf): $5,500 through at least plan confirmation for cases filed on or after May 1, 2024, or $6,000 with the court's mortgage modification mediation program.\n- [Middle District of North Carolina](https://www.ncmb.uscourts.gov/sites/default/files/general-ordes/25-02%20Ch%2013%20Presumptive%20Fee%20Standing%20Order%20Revised%205.16.25.pdf): $5,200 for below-median-income filers and $5,500 for above-median filers, or $5,700 and $6,000 if the lawyer has 7 hours of bankruptcy continuing legal education. The fee is capped at $2,500 when total plan payments are under $7,000.\n- Northern District of Alabama (Northern Division): up to $4,500 without a detailed fee application, for cases filed on or after October 1, 2022.\n\nA Chapter 13 fee can be owed even if the case ends early. In the Eastern District of Wisconsin, a $1,500 presumed fee may be allowed if the case is dismissed before confirmation. The Chapter 13 trustee can deduct that fee before returning any funds to the debtor.\n\nFees vary by district, so get written quotes from more than one bankruptcy attorney and compare what each quote covers. To weigh the two chapters, see [Chapter 7 vs Chapter 13 bankruptcy](/compare/chapter-7-vs-chapter-13-bankruptcy/) and the steps in [how to file Chapter 7](/guides/how-to-file-chapter-7-bankruptcy/). The USTP's [means testing page](https://www.justice.gov/ust/means-testing) posts the data used on the means test forms (122A and 122C). Its median income figures apply to cases filed on or after April 1, 2026."
+      },
+      {
+        "heading": "Free and Low-Cost Ways to File Without a Lawyer",
+        "body": "You can file bankruptcy without an attorney, which the federal courts call filing pro se, and the official bankruptcy forms are free. The courts' [filing without an attorney page](https://www.uscourts.gov/court-programs/bankruptcy/filing-without-attorney) strongly recommends a qualified attorney and says Chapter 7 and Chapter 13 filings take careful preparation and an understanding of legal issues.\n\nThe same page says people who cannot afford an attorney may qualify for free legal services. LSC funds 129 independent nonprofit legal aid organizations in every state, the District of Columbia, and U.S. territories, and its site has a locator for the nearest one.\n\n[Upsolve's home page](https://upsolve.org/) describes it as a 501(c)(3) nonprofit whose tools are 100% free. According to [its FAQ](https://upsolve.org/learn/frequently-asked-questions-about-upsolve/), Upsolve serves only individual Chapter 7 filers with simple cases. It does not help couples filing jointly, homeowners, people earning above their state's median income, or people who currently or recently owned a formal business entity.\n\nThe Upsolve FAQ also says Upsolve is not a law firm, is not your lawyer, and is not a bankruptcy petition preparer. If Upsolve does not take your case and you cannot afford an attorney, an LSC-funded legal aid office may provide free legal services.\n\nA bankruptcy petition preparer is someone other than your attorney who prepares bankruptcy documents for pay, as defined in [11 U.S.C. section 110](https://www.law.cornell.edu/uscode/text/11/110). By law, a preparer can only enter information into forms, cannot give legal advice, and cannot receive payment for court fees. The preparer must disclose fees received in the 12 months before filing.\n\nThe court must disallow any preparer fee above the value of the services and order it turned over to the trustee. A preparer who breaks the section's rules can be fined up to $500 for each failure.\n\nThe [Federal Trade Commission (FTC)](https://consumer.ftc.gov/articles/free-credit-reports) says the three nationwide bureaus let you check your credit report from each once a week for free."
+      },
+      {
+        "heading": "Comparing Bankruptcy Costs with the Alternatives",
+        "body": "Weigh the court fee, the courses, and any lawyer against what your debts cost if you keep paying them. Enter your balances and rates in the [credit card payoff calculator](/credit-card-payoff/) to see the interest and months a payoff takes. Test a lower-rate loan in the [debt consolidation calculator](/debt-consolidation-calculator/), and check what you can spare each month with the [budget calculator](/budget/).\n\nThe [bankruptcy alternatives](/guides/bankruptcy-alternatives/) guide covers options short of filing, and [debt settlement vs bankruptcy](/compare/debt-settlement-vs-bankruptcy/) compares the two side by side. If collectors are calling now, see [how to deal with debt collectors](/guides/how-to-deal-with-debt-collectors/).\n\nTo see how much it will cost to file bankruptcy in your case, add the court fee and course fees to each attorney quote you collect."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/credit-card-payoff/",
+        "label": "Credit card payoff"
+      },
+      {
+        "href": "/debt-consolidation-calculator/",
+        "label": "Debt consolidation"
+      },
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much does Chapter 7 cost?",
+        "answer": "The Chapter 7 court fee is $338: a $245 filing fee, a $78 administrative fee, and a $15 trustee surcharge. Add two required courses, each presumed reasonable at $50 or less, and any lawyer's fee, which Upsolve estimates at $1,000 to $3,000. If your income is under 150% of the poverty line and you cannot pay in installments, you can apply to waive the court fee with Official Form 103B."
+      },
+      {
+        "question": "How much does Chapter 13 cost?",
+        "answer": "The Chapter 13 court fee is $313: a $235 filing fee plus a $78 administrative fee. You also pay for the two courses and any attorney fee, which can be paid through the plan. The standing trustee's percentage fee is capped by statute at 10% of plan payments. In five district court orders, the base presumed-reasonable Chapter 13 attorney fee runs from $4,500 to $5,500. Add-ons in some orders raise it, and one district caps it at $2,500 when total plan payments are under $7,000."
+      },
+      {
+        "question": "Can I file bankruptcy for free?",
+        "answer": "It is possible in Chapter 7. The court may waive the Chapter 7 fee if your income is under 150% of the poverty line for your family size and you cannot pay in installments. Course providers must waive their fees in whole or in part if you cannot pay. The forms are free, Upsolve offers a free tool for simple individual Chapter 7 cases, and people who cannot afford a lawyer may qualify for free legal services. Chapter 13 has no fee waiver in the statute, but you can ask to pay the Chapter 13 fee in installments."
+      },
+      {
+        "question": "Can I pay the bankruptcy filing fee in installments?",
+        "answer": "Yes. File Official Form 103A to ask for up to four installments, all paid within 120 days after filing, with extensions for cause up to 180 days. Your debts are not discharged until the full fee is paid, and a missed payment can get the case dismissed. Until the fee is paid in full, you cannot make further payments to your attorney."
+      },
+      {
+        "question": "Do bankruptcy lawyers take payment plans?",
+        "answer": "In Chapter 13, approved attorney fees can be paid through the repayment plan as an administrative claim paid before or at the time of each payment to creditors. Some courts set the schedule. In the Northern Division of the Northern District of Alabama, the trustee pays up to $3,500 of the fee from plan payments after confirmation. For Chapter 7, ask each attorney about payment terms when you get a written quote. If you pay the court fee in installments, Rule 1006 bars any further payment to your attorney until that fee is paid in full."
+      },
+      {
+        "question": "Why does bankruptcy cost money?",
+        "answer": "The court fee combines a filing fee set by statute, a $78 administrative fee from the federal fee schedule, and, in Chapter 7, a $15 surcharge paid to trustees. The two courses are required by law, and Chapter 13 plan payments also fund the standing trustee's percentage fee. The federal courts say filing under Chapter 7 or Chapter 13 takes careful preparation and an understanding of legal issues."
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Courts - Bankruptcy Court Miscellaneous Fee Schedule",
+        "url": "https://www.uscourts.gov/court-programs/fees/bankruptcy-court-miscellaneous-fee-schedule"
+      },
+      {
+        "label": "28 U.S.C. 1930 - Bankruptcy Fees",
+        "url": "https://www.law.cornell.edu/uscode/text/28/1930"
+      },
+      {
+        "label": "Judicial Conference - 2026 Fee Schedule Changes",
+        "url": "https://www.orb.uscourts.gov/sites/orb/files/documents/news/2026%20Fee%20Schedule%20Changes.pdf"
+      },
+      {
+        "label": "Public Law 119-76 - Bankruptcy Administration Improvement Act",
+        "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ76/html/PLAW-119publ76.htm"
+      },
+      {
+        "label": "Federal Rule of Bankruptcy Procedure 1006 - Filing Fee",
+        "url": "https://www.law.cornell.edu/rules/frbp/rule_1006"
+      },
+      {
+        "label": "Official Form 103B - Application to Have the Chapter 7 Filing Fee Waived",
+        "url": "https://www.uscourts.gov/file/18714/download"
+      },
+      {
+        "label": "Official Form 103A - Application to Pay the Filing Fee in Installments",
+        "url": "https://www.uscourts.gov/file/18700/download"
+      },
+      {
+        "label": "U.S. Trustee Program - Credit Counseling and Debtor Education",
+        "url": "https://www.justice.gov/ust/credit-counseling-debtor-education-information"
+      },
+      {
+        "label": "28 CFR 58.21 - Credit Counseling Fees",
+        "url": "https://www.law.cornell.edu/cfr/text/28/58.21"
+      },
+      {
+        "label": "28 CFR 58.34 - Debtor Education Fees",
+        "url": "https://www.law.cornell.edu/cfr/text/28/58.34"
+      },
+      {
+        "label": "11 U.S.C. 111 - Nonprofit Budget and Credit Counseling Agencies",
+        "url": "https://www.law.cornell.edu/uscode/text/11/111"
+      },
+      {
+        "label": "GAO-08-697 - Dollar Costs Associated with the Bankruptcy Abuse Prevention and Consumer Protection Act",
+        "url": "https://www.gao.gov/products/gao-08-697"
+      },
+      {
+        "label": "11 U.S.C. 1326 - Payments",
+        "url": "https://www.law.cornell.edu/uscode/text/11/1326"
+      },
+      {
+        "label": "28 U.S.C. 586 - Duties of U.S. Trustees",
+        "url": "https://www.law.cornell.edu/uscode/text/28/586"
+      },
+      {
+        "label": "11 U.S.C. 110 - Bankruptcy Petition Preparers",
+        "url": "https://www.law.cornell.edu/uscode/text/11/110"
+      },
+      {
+        "label": "U.S. Courts - Filing Without an Attorney",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/filing-without-attorney"
+      },
+      {
+        "label": "Legal Services Corporation - Get Legal Help",
+        "url": "https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-10-10 (bankruptcy): how-to-file-chapter-7-bankruptcy ──
+  {
+    "updated": "2026-10-10",
+    "slug": "how-to-file-chapter-7-bankruptcy",
+    "title": "How to File Chapter 7 Bankruptcy in 8 Steps with Deadlines",
+    "metaDescription": "The eight steps to file Chapter 7 bankruptcy in order, from credit counseling in the 180 days before filing to the discharge order.",
+    "h1": "How to File Chapter 7 Bankruptcy, Step by Step",
+    "cardBlurb": "The eight Chapter 7 filing steps in order, with the timing federal bankruptcy rules set for each deadline.",
+    "introText": "You file Chapter 7 bankruptcy in eight steps, starting with a credit counseling course and ending with a discharge order from the bankruptcy court. At The Modern Wallet, every guide we write starts from the primary rule, which for Chapter 7 means the Bankruptcy Code and the federal courts' [Chapter 7 rules](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics).\n\nChapter 7 requires one course before you file and a second course after. Without the second course, the clerk closes the case without a discharge. The trustee can undo some payments to creditors made in the 90 days before filing. Some recent luxury charges and cash advances can also survive the bankruptcy.",
+    "sections": [
+      {
+        "heading": "How to File Chapter 7, Step by Step",
+        "body": "Filing Chapter 7 follows eight steps in a fixed order, and four of them carry a deadline counted from your filing date or from the meeting of creditors.\n\n1. Take credit counseling. Under [11 U.S.C. §109(h)](https://www.law.cornell.edu/uscode/text/11/109), you must get a briefing from an [approved nonprofit credit counseling agency](https://www.justice.gov/ust/list-credit-counseling-agencies-approved-pursuant-11-usc-111) during the 180 days before you file. The briefing can be done by phone or online.\n2. Check the means test. If your current monthly income is above your state's median, the means test decides whether the court presumes your case is an abuse of Chapter 7. You work through it on the 122A forms.\n3. Gather your records. You need a list of every creditor and what you owe each one, plus a list of all your property. You also need your income by source, amount and frequency, and your monthly living expenses. If you are married, you gather your spouse's information too, even if only one of you files.\n4. File the petition, schedules and fee. You file Official Form 101 and your schedules with the bankruptcy court for your district. The court fees are $338, unless the court lets you pay in installments or waives the fee.\n5. The automatic stay begins. The stay starts the moment you file, with no judge's order, and it halts most lawsuits, wage garnishments and collection calls.\n6. Attend the 341 meeting. The meeting of creditors is held 21 to 40 days after filing in most Chapter 7 cases, and the trustee questions you under oath.\n7. Complete debtor education. After filing, you take a personal financial management course from an [approved provider](https://www.justice.gov/ust/list-approved-providers-personal-financial-management-instructional-courses-debtor-education), and the completion certificate is due within 60 days after the first date set for the 341 meeting.\n8. Receive the discharge. If no one objects, the court generally issues the discharge order 60 to 90 days after the date first set for the meeting of creditors.\n\nThe debtor education certificate is a separate requirement after filing. Under [Rule 4004](https://www.law.cornell.edu/rules/frbp/rule_4004), the court does not grant a Chapter 7 discharge without it, and the clerk closes the case with no discharge. The course provider may file the certificate on your behalf, and if it does not, the filing is your job.\n\nA complaint objecting to your discharge must be filed within 60 days after the first date set for the 341 meeting. On a rough calendar, the meeting falls 21 to 40 days after filing. The discharge then comes 60 to 90 days after the first meeting date, or roughly 81 to 130 days after you file. Excluding dismissed or converted cases, the federal courts report that individual debtors receive a discharge in more than 99 percent of Chapter 7 cases."
+      },
+      {
+        "heading": "Means Test Eligibility and the Eight-Year Repeat Bar",
+        "body": "Two rules limit who can get a Chapter 7 discharge: the means test, which applies only if your income is above your state's median, and a time bar on repeat discharges.\n\nCurrent monthly income is your average monthly income over the six calendar months before you file, not counting Social Security income. Multiply your household's current monthly income, including your spouse's, by 12. If the result is at or below the median family income for your state and household size, [11 U.S.C. §707(b)](https://www.law.cornell.edu/uscode/text/11/707) bars anyone from bringing a means-test motion against you. The [U.S. Trustee Program's means-testing page](https://www.justice.gov/ust/means-testing) publishes the state median incomes and the expense standards the 122A forms use. The page's median figures apply to cases filed on or after April 1, 2026, and its expense figures to cases filed on or after July 15, 2026.\n\nAbove the median, the forms subtract allowed expenses from your current monthly income and multiply what is left by 60. Abuse is presumed if that five-year figure reaches a threshold. The threshold is 25% of your nonpriority unsecured debt, but never less than $10,275 and never more than $17,150. You can rebut the presumption only by showing special circumstances.\n\nTwo examples show where the line falls. Say you have $30,000 of nonpriority unsecured debt. A 25% share is $7,500, which is below $10,275, so the threshold is $10,275. Divided by 60 months, $10,275 is $171.25, so abuse is presumed if $171.25 or more a month is left after allowed expenses. With $80,000 of that debt, a 25% share is $20,000. The $20,000 share is above $17,150, so the threshold is $17,150, or about $285.83 a month.\n\nWhen abuse is presumed and no special circumstances apply, the court may dismiss the case or, with your consent, convert it to Chapter 11 or 13. Chapter 13 lets you keep property and repay debts over time, usually three to five years, and [Chapter 7 vs Chapter 13 Bankruptcy](/compare/chapter-7-vs-chapter-13-bankruptcy/) compares the two.\n\nThe repeat-discharge bar is a separate rule. Under [11 U.S.C. §727(a)(8)](https://www.law.cornell.edu/uscode/text/11/727), you cannot get a Chapter 7 discharge if you received one in a case started within 8 years before your new filing date. After a Chapter 13 discharge, the bar is six years. The six-year bar lifts if that Chapter 13 plan paid at least 100% of allowed unsecured claims. The bar also lifts at 70% of those claims if you proposed the plan in good faith as your best effort."
+      },
+      {
+        "heading": "Documents and Forms You Need to File Chapter 7",
+        "body": "A Chapter 7 filing is Official Form 101 plus a set of schedules and statements, and every official form is free on the federal courts' [bankruptcy forms page](https://www.uscourts.gov/forms-rules/forms/bankruptcy-forms). The current [Form 101, Voluntary Petition for Individuals Filing for Bankruptcy](https://www.uscourts.gov/forms-rules/forms/voluntary-petition-individuals-filing-bankruptcy), took effect June 22, 2024.\n\nThe individual forms that go with it are:\n\n- Schedule A/B (Form 106A/B): your property\n- Schedule C (Form 106C): the property you claim as exempt\n- Schedules D, E/F, G and H (Forms 106D, 106E/F, 106G and 106H)\n- Schedule I (Form 106I): your income, and Schedule J (Form 106J): your expenses\n- Form 107: Statement of Financial Affairs\n- Form 108: Statement of Intention for Individuals Filing Under Chapter 7\n- Form 121: your statement about your Social Security numbers\n- Forms 122A-1, 122A-1Supp and 122A-2: the means test\n- Form 103A to pay the fee in installments, or Form 103B to ask for a waiver\n\n[Rule 1007](https://www.law.cornell.edu/rules/frbp/rule_1007) groups these into schedules of assets and liabilities, a schedule of current income and expenditures, a statement of financial affairs, and a schedule of executory contracts and unexpired leases. If your debts are mainly consumer debts, you also file your credit counseling certificate, evidence of payment from employers received in the 60 days before filing, and a statement of monthly net income. You also file a record of any interest in a federal or state education or tuition account, and you give the trustee your most recent tax return or a transcript of it.\n\nThe court fees total $338: a $245 filing fee, a $78 administrative fee and a $15 trustee surcharge, per the [Bankruptcy Court Miscellaneous Fee Schedule](https://www.uscourts.gov/court-programs/fees/bankruptcy-court-miscellaneous-fee-schedule). A married couple filing a joint petition pays one set of these fees. The [Judicial Conference's inflation adjustments effective December 1, 2026](https://www.orb.uscourts.gov/sites/orb/files/documents/news/2026%20Fee%20Schedule%20Changes.pdf) raise some other fees, such as amending your schedules from $34 to $38. The $338 Chapter 7 total is not among the fees that change.\n\nWith Form 103A, you can apply to pay in up to four installments, with the last one due within 120 days of filing. For cause, the court can extend the last payment to no later than 180 days after filing. Your debts are not discharged until the whole fee is paid, and a missed installment can get the case dismissed. Under [Rule 1006](https://www.law.cornell.edu/rules/frbp/rule_1006), you cannot make further payments to an attorney or anyone else helping with the case until the filing fee is paid in full.\n\nForm 103B asks the court to waive the fee entirely. [28 U.S.C. §1930(f)](https://www.law.cornell.edu/uscode/text/28/1930) allows that when your income is below 150 percent of the poverty line and you cannot pay in installments. The clerk must accept a Chapter 7 petition filed with a completed and signed Form 103B."
+      },
+      {
+        "heading": "What the Automatic Stay Stops on Filing Day",
+        "body": "The automatic stay takes effect the moment you file Chapter 7 and stops most efforts to collect debts that arose before your case began. It arises by operation of law, so no judge has to sign anything. Under [11 U.S.C. §362](https://www.law.cornell.edu/uscode/text/11/362), it covers starting or continuing lawsuits against you, enforcing earlier judgments, creating or enforcing liens, and any other act to collect a pre-filing claim.\n\nThe federal courts say creditors generally may not start or continue lawsuits, wage garnishments, or even phone calls demanding payment while the stay is in effect. For the rules collectors must follow outside bankruptcy, see [How to Deal With Debt Collectors](/guides/how-to-deal-with-debt-collectors/).\n\nThe stay has exceptions. Criminal cases continue. So do actions to establish paternity or to set or change a support order, along with collection of domestic support from property outside the bankruptcy estate.\n\nPrior cases can shorten the stay or block it. If you had a case pending in the past year that was dismissed, the stay in a new case ends on the 30th day after filing. The court can extend the stay only after finding the new case was filed in good faith. With two or more cases dismissed in the past year, the stay does not take effect at all.\n\nA separate rule in §109(g) can block the filing itself. You cannot be a debtor if you had a case pending in the past 180 days that was dismissed because you willfully failed to follow court orders or to appear. The same bar applies if you asked for and got a voluntary dismissal after a creditor requested relief from the stay."
+      },
+      {
+        "heading": "The 341 Meeting of Creditors and the Trustee",
+        "body": "The 341 meeting of creditors is not a court hearing. At the meeting, the case trustee questions you under oath about your filing, usually 21 to 40 days after you file. [Rule 2003](https://www.law.cornell.edu/rules/frbp/rule_2003) requires the U.S. trustee to call it no fewer than 21 and no more than 40 days after the order for relief in a Chapter 7 case. If the meeting place is not regularly staffed by the U.S. trustee or an assistant, the meeting can be held up to 60 days after filing.\n\nThe judge is not part of this meeting, because [11 U.S.C. §341](https://www.law.cornell.edu/uscode/text/11/341) says the court may not preside at or attend it. The trustee puts you under oath, and both the trustee and your creditors may ask questions. If you and your spouse filed a joint petition, you both must attend and answer.\n\nThe trustee must also question you on four topics:\n\n- how a discharge affects your credit history\n- your ability to file under a different chapter\n- the effect of the discharge itself\n- the effect of reaffirming a debt\n\n[How Long Bankruptcy Stays on Your Credit Report](/guides/how-long-does-bankruptcy-stay-on-credit-report/) and [How to Rebuild Credit After Bankruptcy](/guides/how-to-rebuild-credit-after-bankruptcy/) cover the credit side in detail. Reread your filed schedules before the meeting so your sworn answers match what you filed.\n\nThe case trustee is an impartial person the U.S. trustee appoints to run your case and sell any nonexempt assets. When everything you own is exempt or covered by valid liens, the trustee normally files a no-asset report. The federal courts say most individual Chapter 7 cases are no-asset cases. Within 10 days after the meeting, the U.S. trustee reports to the court whether your case should be presumed an abuse under the means test."
+      },
+      {
+        "heading": "Traps to Avoid Before You File Chapter 7",
+        "body": "The three main traps before filing Chapter 7 are recent payments to creditors, large luxury charges or cash advances shortly before filing, and moving property to other people.\n\n- Paying a creditor in the 90 days before filing. Under [11 U.S.C. §547](https://www.law.cornell.edu/uscode/text/11/547), the trustee can set aside a payment on an old debt made in the 90 days before filing. The set-aside requires that you were insolvent and that the payment gave the creditor more than it would get in a Chapter 7 liquidation. For a creditor who is an insider, the window reaches back one year.\n- Luxury charges and cash advances. Under [11 U.S.C. §523(a)(2)(C)](https://www.law.cornell.edu/uscode/text/11/523), consumer debts over $900 owed to one creditor for luxury goods or services incurred within 90 days before filing are presumed nondischargeable. Cash advances totaling more than $1,250 on an open-end credit plan within 70 days before filing get the same presumption. Goods or services reasonably necessary to support you or a dependent do not count as luxury.\n- Moving property to someone else. Repaying a relative who counts as an insider falls inside the one-year preference window. Before you sell, transfer or give away property ahead of a filing, get advice from a bankruptcy attorney or a legal aid office funded by the [Legal Services Corporation](https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help).\n\nThe $900 and $1,250 figures took effect April 1, 2025, through a [Federal Register notice](https://www.govinfo.gov/content/pkg/FR-2025-02-04/html/2025-02207.htm), and they apply only to cases filed on or after that date. Under [11 U.S.C. §104](https://www.law.cornell.edu/uscode/text/11/104), these amounts adjust every three years for inflation, so the next scheduled change is April 1, 2028.\n\nThe filing date also sets your means-test income. Current monthly income averages the six calendar months before you file, so the month you file decides which paychecks the test counts."
+      },
+      {
+        "heading": "Debts Chapter 7 Does Not Erase",
+        "body": "A Chapter 7 discharge leaves several categories of debt in place, and 11 U.S.C. §523(a) lists them. The main ones are:\n\n- certain taxes, plus debts taken on to pay taxes that cannot be discharged\n- domestic support obligations, plus other divorce or separation debts owed to a spouse, former spouse or child\n- student loans, unless repaying them would impose an undue hardship on you and your dependents\n- government fines, penalties and forfeitures, and criminal restitution orders\n- debts for death or personal injury caused by operating a vehicle, boat or aircraft while intoxicated\n- certain debts not listed in your schedules\n- certain loans from a retirement plan\n\nThree more categories survive only if the creditor acts:\n\n- debts obtained by false pretenses, a false representation or actual fraud\n- debts from fraud or defalcation while acting as a fiduciary, or from embezzlement or larceny\n- debts for willful and malicious injury\n\nUnder §523(c), these three kinds of debt are discharged unless the creditor files a timely action and the court rules them nondischargeable.\n\nA discharge also does not extinguish a lien on property, so a lender with a lien on your car keeps that lien after the discharge. Chapter 13's discharge is somewhat broader, covering debts for willful and malicious injury to property, debts incurred to pay nondischargeable taxes, and divorce property-settlement debts. If most of what you owe falls into these categories, [Bankruptcy Alternatives](/guides/bankruptcy-alternatives/) lays out other routes."
+      },
+      {
+        "heading": "Filing Chapter 7 on Your Own vs with an Attorney",
+        "body": "You can legally file Chapter 7 without a lawyer, which the federal courts call filing pro se. Their [filing without an attorney page](https://www.uscourts.gov/court-programs/bankruptcy/filing-without-attorney) still strongly recommends a qualified attorney's advice, because bankruptcy has long-term financial and legal outcomes and mistakes in the process can affect your rights. Court employees and bankruptcy judges are prohibited by law from giving legal advice.\n\nPro se filers are expected to follow the Bankruptcy Code, the federal bankruptcy rules and their own court's local rules, and many courts require local forms on top of the official ones. A bankruptcy petition preparer can only enter information into forms. By law, preparers cannot give legal advice, explain answers to legal questions, or help you in court.\n\n[Upsolve](https://upsolve.org/), a 501(c)(3) nonprofit, offers a free filing tool. Its [own FAQ](https://upsolve.org/learn/frequently-asked-questions-about-upsolve/) limits it to simple individual Chapter 7 cases and excludes joint filings, homeowners, people earning above their state's median income, and people who own or recently owned a formal business entity. Upsolve also says it is not a law firm and not your lawyer.\n\nWe could not find a current national government or academic study of Chapter 7 attorney fees. A 2008 [Government Accountability Office study](https://www.gao.gov/products/gao-08-697) estimated the average fee rose from $712 in early 2005 to $1,078 in early 2007. Upsolve's [cost explainer](https://upsolve.org/learn/how-much-does-bankruptcy-cost/) estimates Chapter 7 lawyer fees at $1,000 to $3,000.\n\nApproved providers of the two required courses may charge a fee. A course fee of $50 or less is presumed reasonable, and both courses are available free or at a reduced rate based on your ability to pay. [Cost to File Bankruptcy](/guides/how-much-does-it-cost-to-file-bankruptcy/) breaks down every cost, including the $338 court fees.\n\nIf you cannot afford an attorney, the federal courts say you may qualify for free legal services, and the Legal Services Corporation funds 129 nonprofit legal aid organizations across every state. Courts, trustees and local rules vary by district, so a bankruptcy attorney, a legal aid office or a nonprofit credit counselor can apply these steps to your own debts and property. Your average income over the last six calendar months is the current monthly income the means test uses. The [budget calculator](/budget/) helps you list the monthly living expenses that Schedule J asks for."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      },
+      {
+        "href": "/debt-consolidation-calculator/",
+        "label": "Debt consolidation"
+      },
+      {
+        "href": "/credit-card-payoff/",
+        "label": "Credit card payoff"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I file Chapter 7 myself?",
+        "answer": "Yes. Federal courts allow individuals to file bankruptcy without an attorney, called filing pro se, though the courts strongly recommend getting a qualified attorney's advice. Court staff and judges cannot give legal advice, and a petition preparer can only enter information into the forms. If you cannot afford a lawyer, you may qualify for free help from a legal aid office."
+      },
+      {
+        "question": "How much money can I have in the bank for Chapter 7?",
+        "answer": "The federal courts' Chapter 7 guidance does not set a single bank-balance limit. You list all your property on Schedule A/B, and Chapter 7 sells nonexempt property to pay creditors, so what you keep depends on the exemptions you claim on Schedule C. If all your assets are exempt or covered by valid liens, the trustee normally files a no-asset report. Paying one creditor before filing also matters, since the trustee can set aside certain payments to creditors made in the 90 days before filing."
+      },
+      {
+        "question": "What is the 90 day rule for Chapter 7?",
+        "answer": "Two Chapter 7 rules use a 90-day window. The trustee can set aside payments on old debts made to creditors in the 90 days before filing, or one year before filing for insiders. Consumer debts over $900 owed to one creditor for luxury goods or services in those 90 days are presumed nondischargeable. A separate 70-day window applies to cash advances totaling more than $1,250."
+      },
+      {
+        "question": "Does Chapter 7 wipe out all debt?",
+        "answer": "No. Chapter 7 does not erase certain taxes, domestic support, government fines, criminal restitution or debts from intoxicated driving. Student loans also survive unless repaying them would impose an undue hardship. Debts from fraud, fiduciary misconduct or willful and malicious injury are discharged unless the creditor files in time and wins, and liens on property survive the discharge."
+      },
+      {
+        "question": "How long does Chapter 7 take?",
+        "answer": "The meeting of creditors is usually held 21 to 40 days after filing. The discharge generally comes 60 to 90 days after the date first set for that meeting, or roughly 81 to 130 days from filing. An objection to discharge, a motion to extend the deadline, or a missing debtor education certificate can delay or prevent it."
+      },
+      {
+        "question": "Do I need credit counseling before filing Chapter 7?",
+        "answer": "Yes. You must complete a briefing from an approved nonprofit credit counseling agency in the 180 days before you file, with exceptions for emergencies or a shortage of approved agencies. A counseling fee of $50 or less is presumed reasonable, and agencies must serve you regardless of ability to pay. Households under 150 percent of the poverty level are presumptively entitled to a fee waiver or reduction."
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Courts - Chapter 7 Bankruptcy Basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics"
+      },
+      {
+        "label": "U.S. Courts - Filing Without an Attorney",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/filing-without-attorney"
+      },
+      {
+        "label": "U.S. Courts - Bankruptcy Forms",
+        "url": "https://www.uscourts.gov/forms-rules/forms/bankruptcy-forms"
+      },
+      {
+        "label": "U.S. Courts - Official Form 101, Voluntary Petition for Individuals",
+        "url": "https://www.uscourts.gov/forms-rules/forms/voluntary-petition-individuals-filing-bankruptcy"
+      },
+      {
+        "label": "U.S. Courts - Bankruptcy Court Miscellaneous Fee Schedule",
+        "url": "https://www.uscourts.gov/court-programs/fees/bankruptcy-court-miscellaneous-fee-schedule"
+      },
+      {
+        "label": "U.S. Trustee Program - Means Testing",
+        "url": "https://www.justice.gov/ust/means-testing"
+      },
+      {
+        "label": "U.S. Trustee Program - Approved Credit Counseling Agencies",
+        "url": "https://www.justice.gov/ust/list-credit-counseling-agencies-approved-pursuant-11-usc-111"
+      },
+      {
+        "label": "U.S. Trustee Program - Approved Debtor Education Providers",
+        "url": "https://www.justice.gov/ust/list-approved-providers-personal-financial-management-instructional-courses-debtor-education"
+      },
+      {
+        "label": "Federal Register - Adjustment of Bankruptcy Dollar Amounts (90 FR 8941)",
+        "url": "https://www.govinfo.gov/content/pkg/FR-2025-02-04/html/2025-02207.htm"
+      },
+      {
+        "label": "11 U.S.C. §362 - Automatic Stay",
+        "url": "https://www.law.cornell.edu/uscode/text/11/362"
+      },
+      {
+        "label": "11 U.S.C. §523 - Exceptions to Discharge",
+        "url": "https://www.law.cornell.edu/uscode/text/11/523"
+      },
+      {
+        "label": "11 U.S.C. §547 - Preferences",
+        "url": "https://www.law.cornell.edu/uscode/text/11/547"
+      },
+      {
+        "label": "11 U.S.C. §707 - Dismissal and the Means Test",
+        "url": "https://www.law.cornell.edu/uscode/text/11/707"
+      },
+      {
+        "label": "11 U.S.C. §727 - Chapter 7 Discharge",
+        "url": "https://www.law.cornell.edu/uscode/text/11/727"
+      },
+      {
+        "label": "Fed. R. Bankr. P. 2003 - Meeting of Creditors",
+        "url": "https://www.law.cornell.edu/rules/frbp/rule_2003"
+      },
+      {
+        "label": "Fed. R. Bankr. P. 4004 - Grant or Denial of Discharge",
+        "url": "https://www.law.cornell.edu/rules/frbp/rule_4004"
+      },
+      {
+        "label": "Legal Services Corporation - Get Legal Help",
+        "url": "https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-10-10 (bankruptcy): how-to-get-out-of-chapter-13-early ──
+  {
+    "updated": "2026-10-10",
+    "slug": "how-to-get-out-of-chapter-13-early",
+    "title": "How to Get Out of Chapter 13 Early Under the Bankruptcy Code",
+    "metaDescription": "Four legal ways to end a Chapter 13 plan early: payoff, hardship discharge, conversion to Chapter 7, or dismissal. Only dismissal ends with no discharge.",
+    "h1": "How to Get Out of Chapter 13 Early",
+    "cardBlurb": "Compare the four legal exits from a Chapter 13 plan by what each does to your debts and your right to file again.",
+    "introText": "Yes, you can end a Chapter 13 case early, and federal bankruptcy law gives you four ways to do it. The four are an early payoff, a hardship discharge, a conversion to Chapter 7, and a dismissal.\n\nA Chapter 13 plan usually runs three to five years, according to the [federal courts' Chapter 13 overview](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics). Stopping payments on your own is not one of the four exits. Under [11 U.S.C. §1307(c)](https://www.law.cornell.edu/uscode/text/11/1307), a material default on a confirmed plan lets a creditor or the U.S. trustee ask the court to dismiss your case or convert it to Chapter 7.\n\nWhich exit fits depends on whether you can still pay, whether you would now qualify for Chapter 7, and whether you need a discharge when the case ends.",
+    "sections": [
+      {
+        "heading": "The Four Ways Out of a Chapter 13 Plan",
+        "body": "There are four legal ways out of a Chapter 13 plan before its term ends: pay the plan off early through the court, ask for a hardship discharge, convert the case to Chapter 7, or ask the court to dismiss it. Only the first three can end with a discharge of your debts. Dismissal is the fastest exit, and it brings back every debt along with the creditors' right to collect it.\n\n| Exit | Who can use it | What happens to your debts | What happens to the case and collection protection | The catch |\n|---|---|---|---|---|\n| Pay the plan off early | Debtors who can fund the remaining balance, through the court. A plan shorter than 3 or 5 years is allowed if it pays all allowed unsecured claims in full under [§1325(b)(4)(B)](https://www.law.cornell.edu/uscode/text/11/1325) | After the last payment, the court discharges the debts the plan provided for under [§1328(a)](https://www.law.cornell.edu/uscode/text/11/1328) | The case runs until the plan is complete and the discharge is entered | Courts are split on paying off early with less than 100% to unsecured creditors, so the rule depends on your court |\n| Hardship discharge | Debtors with a confirmed plan who meet all three conditions in §1328(b) | Unsecured debts the plan provided for are discharged, except long-term debts under [§1322(b)(5)](https://www.law.cornell.edu/uscode/text/11/1322) and debts of a kind listed in [§523(a)](https://www.law.cornell.edu/uscode/text/11/523) | The case ends with a narrower discharge | It needs a court hearing, and debts that Chapter 7 cannot discharge survive |\n| Convert to Chapter 7 | Any Chapter 13 debtor, at any time, under §1307(a) | The case becomes a Chapter 7 liquidation, which can end in a Chapter 7 discharge | The case continues under Chapter 7 with the original filing date, per [§348(a)](https://www.law.cornell.edu/uscode/text/11/348) | A $25 conversion fee, the means test, and possible sale of nonexempt property |\n| Voluntary dismissal | Any debtor whose case did not come into Chapter 13 by conversion from Chapter 7, 11 or 12 (§1307(b)) | No discharge. The debts are owed again | The automatic stay ends, and creditors can resume collection | Refiling limits under [§109(g)](https://www.law.cornell.edu/uscode/text/11/109) and [§362(c)](https://www.law.cornell.edu/uscode/text/11/362) |"
+      },
+      {
+        "heading": "Paying a Chapter 13 Plan Off Early",
+        "body": "Paying a Chapter 13 plan off early goes through the bankruptcy court, and the amount you must pay depends on your income and your court. Under §1322(d), a plan for a household at or above the state median family income can run up to 5 years. Below the median, the plan runs 3 years unless the court approves a longer period for cause, and never more than 5.\n\nThat 3- or 5-year span is the applicable commitment period in §1325(b)(4). The statute lets a plan run shorter only if it pays all allowed unsecured claims in full over the shorter period. A lump sum that covers every allowed unsecured claim at 100% fits that exception, so it sidesteps the court dispute over partial payoffs.\n\nPaying off early with less than 100% to unsecured creditors is contested, and each court opinion on it binds only its own jurisdiction. In [In re Fridley](https://www.caeb.uscourts.gov/documents/Judges/Opinions/published/fridley-07-1276.pdf) (2007), the Ninth Circuit Bankruptcy Appellate Panel held that such a debtor must use the modification procedure in [§1329](https://www.law.cornell.edu/uscode/text/11/1329), and it upheld the refusal of an early discharge. In [In re Niday](https://www.vawb.uscourts.gov/sites/default/files/opinions/Niday%2008.27.13.pdf) (2013), a bankruptcy court in the Western District of Virginia found that a below-median debtor had no \"unqualified right\" to pay off early, and that a modification request needed good faith and an evidentiary hearing.\n\nOther courts allow it. In [In re Tibbs](https://www.govinfo.gov/content/pkg/USCOURTS-flsb-9_11-bk-18943/pdf/USCOURTS-flsb-9_11-bk-18943-0.pdf) (2012), a Florida bankruptcy court let debtors pay off a five-year plan about four years early with a lump sum from a family gift, even though unsecured creditors received about 6.8% of their allowed claims. None of the three opinions treats a partial payoff as something you can do by sending the trustee a lump sum.\n\nThe Niday opinion also describes In re Murphy, a 2007 Fourth Circuit case. There, refinancing a home mortgage to fund an early payoff did not by itself change the debtor's financial condition enough to support a §1329 modification.\n\nIf you cannot raise a lump sum, a §1329 modification can change the plan instead. After confirmation and before the last payment, you can ask for a modification, and so can the trustee or an unsecured creditor. A modification can increase or reduce payments on a class of claims, or extend or reduce the time for those payments. Under §1329(c), a modified plan cannot run past the original 3- or 5-year commitment period, counted from the date the first payment under the original plan was due. The court can approve a longer period for cause, but never past five years from that date.\n\nYou can use the free [budget calculator](/budget/) to check a lower or higher modified payment against your monthly income before you ask for one.\n\nFor an early payoff, work through these steps in order:\n\n1. Get the remaining plan balance in writing from your Chapter 13 trustee, who collects your plan payments and pays your creditors. The federal Chapter 13 overview does not publish a standard payoff procedure.\n2. Compare your lump sum, whether it comes from savings, a sale or a refinance, with the total of allowed unsecured claims to see whether it pays them in full.\n3. If it falls short, expect a §1329 modification request or a motion to the court, which in Niday required an evidentiary hearing.\n4. Finish the personal financial management course before the last payment, because §1328(g)(1) blocks the discharge without it and [Rule 1007](https://www.law.cornell.edu/rules/frbp/rule_1007) makes the certificate due by the date of your last plan payment.\n5. Certify that any domestic support obligations are paid, if you have them, and the court grants the discharge as soon as practicable after the last payment."
+      },
+      {
+        "heading": "Chapter 13 Hardship Discharge Requirements",
+        "body": "A Chapter 13 hardship discharge lets the court grant a discharge before you finish the plan, but only after confirmation, after notice and a hearing, and only if all three conditions in §1328(b) are met:\n\n1. Your failure to finish the payments is due to circumstances for which you \"should not justly be held accountable.\"\n2. The value paid so far on each allowed unsecured claim is at least what that claim would have received if your estate had been liquidated under Chapter 7 on that date.\n3. Modifying the plan under §1329 is \"not practicable.\"\n\nThe federal courts give one example: an injury or illness that keeps you from earning enough to fund even a modified plan. The third condition means the court looks at a modification first. If a lower or longer plan is practicable, the statute's test is not met.\n\nThe hardship discharge is narrower than the discharge you get by finishing the plan. Under §1328(c), it covers only unsecured debts the plan provided for, and it leaves in place long-term debts under §1322(b)(5) and any debt of a kind listed in §523(a). The federal courts' overview says it does not apply to any debt that is nondischargeable in a Chapter 7 case.\n\nThe §523(a) list includes domestic support obligations, certain taxes, debts obtained by fraud, and education loans unless repaying them would impose an undue hardship. A full discharge after you complete the plan reaches further. It can cover debts for willful and malicious injury to property and divorce property-settlement debts, for example.\n\nYou ask for a hardship discharge by motion to the bankruptcy court, filed through your attorney or with the court directly. Rule 1007 makes your financial management course certificate due no later than the date you file that motion.\n\nA hardship discharge counts as a §1328 discharge if you ever file again. Under [§727(a)(9)](https://www.law.cornell.edu/uscode/text/11/727), a Chapter 7 discharge is barred if you received a §1328 discharge in a case commenced within six years before the new petition. The bar does not apply if plan payments reached 100% of allowed unsecured claims. The bar also lifts at 70% if the plan was proposed in good faith and was your best effort. Under §1328(f)(2), a new Chapter 13 discharge is barred if you received a Chapter 13 discharge in a case filed during the 2 years before."
+      },
+      {
+        "heading": "Converting Chapter 13 to Chapter 7",
+        "body": "You can convert a Chapter 13 case to Chapter 7 at any time, and §1307(a) makes any waiver of that right unenforceable. Conversion is an order for relief under Chapter 7, but under §348(a) it does not change the date you originally filed. The federal courts charge a $25 fee to convert, and our guide to the [cost to file bankruptcy](/guides/how-much-does-it-cost-to-file-bankruptcy/) lists the other court fees.\n\n[Chapter 7](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics) is a liquidation, where the trustee sells nonexempt property and pays creditors from the proceeds. The federal courts report that most Chapter 7 cases involving individual debtors are no-asset cases, where everything is exempt or covered by valid liens.\n\nThe main hurdle is the means test in [§707(b)](https://www.law.cornell.edu/uscode/text/11/707), which applies to individuals with primarily consumer debts whose current monthly income is above the state median. Current monthly income is your average income over the six calendar months before the case began, excluding Social Security income. The [U.S. Trustee Program](https://www.justice.gov/ust/means-testing) publishes the state median income figures and the expense standards used on the means-test forms.\n\nAbuse is presumed when your monthly income after allowed expenses, multiplied by 60, reaches a threshold. The threshold is 25% of your nonpriority unsecured debt, but never less than $10,275 and never more than $17,150. Take $40,000 in nonpriority unsecured debt as an example. A 25% share is $10,000, which is under the floor, so the threshold is $10,275. Divided by 60 months, $10,275 is $171.25 a month. In that example, $171.25 a month or more left after allowed expenses triggers the presumption, which the federal courts say can be rebutted only by special circumstances.\n\nIf your household income is at or below the state median, §707(b)(7)(A) bars anyone from filing a means-test motion against you.\n\nProperty rules depend on good faith. In a good-faith conversion, §348(f)(1)(A) limits the Chapter 7 estate to property of the estate as of the original filing date that you still have on the conversion date. In a bad-faith conversion, §348(f)(2) uses the estate as of the conversion date instead.\n\nChapter 13 valuations of your property and secured claims do not carry over into Chapter 7, under §348(f)(1)(B). Our [Chapter 7 filing guide](/guides/how-to-file-chapter-7-bankruptcy/) covers the Chapter 7 process step by step."
+      },
+      {
+        "heading": "Voluntary vs Involuntary Chapter 13 Dismissal",
+        "body": "A Chapter 13 dismissal ends the case without a discharge, so your debts are owed again and the automatic stay against collection ends. Dismissal is voluntary when you ask for it: under §1307(b), the court \"shall dismiss\" on your request at any time, unless the case came into Chapter 13 by conversion from Chapter 7, 11 or 12. It is involuntary when a creditor or the U.S. trustee asks for it under §1307(c) for cause, such as failing to start timely payments or a material default on a confirmed plan.\n\nUnder [§349](https://www.law.cornell.edu/uscode/text/11/349), dismissal returns estate property to whoever held it before the case began. It also preserves your ability to discharge those same debts in a later case, unless the court orders otherwise for cause. If the court dismisses a case before confirming a plan, the trustee may keep some funds for costs but must return the rest, other than amounts already paid or due to creditors.\n\nOnce the stay is gone, creditors can restart lawsuits, wage garnishments and payment calls. Our guide on [dealing with debt collectors](/guides/how-to-deal-with-debt-collectors/) covers the rules collectors must follow when that happens.\n\nRefiling after a dismissal has three limits:\n\n- §109(g) bars a new filing for 180 days in two situations. One is a dismissal for willful failure to obey court orders or to appear. The other is a voluntary dismissal you requested after a creditor filed a motion for relief from the automatic stay.\n- Under §362(c)(3), if one prior case pending within the past year was dismissed, the stay in the new case ends on the 30th day. The court can extend it on a showing of good faith, after a hearing completed within those 30 days.\n- Under §362(c)(4), if two or more prior cases pending within the past year were dismissed, no stay goes into effect when you file.\n\nUnder §362(c)(3)(C), a refiling is presumed not in good faith if the earlier case was dismissed after you failed to perform a confirmed plan. You can rebut that presumption only with clear and convincing evidence."
+      },
+      {
+        "heading": "How Long It Takes to Get Out of Chapter 13",
+        "body": "Finishing a Chapter 13 plan takes 3 to 5 years, depending on your income, and the discharge follows the last payment. Payments start within 30 days after filing, even before the court approves the plan. Under §1328(a), the court grants the discharge \"as soon as practicable\" after the last payment.\n\nEach early exit runs on its own timeline. A hardship discharge can come at any time after confirmation, once the court holds its hearing. After a conversion, Chapter 7's schedule applies, and the federal courts say a Chapter 7 discharge order generally comes 60 to 90 days after the date first set for the meeting of creditors.\n\nA dismissal can end the case fastest, because §1307(b) requires the court to dismiss on your request. It ends with no discharge, so the debts are still yours. An early payoff ends at the discharge, and the wait depends on whether your court allows the payoff and whether it requires a modification hearing.\n\nThe statutes behind these four exits do not set how long a Chapter 13 case appears on a credit report. Our guide on [how long bankruptcy stays on your credit report](/guides/how-long-does-bankruptcy-stay-on-credit-report/) covers that timeline. The steps after a discharge are in our guide to [rebuilding credit after bankruptcy](/guides/how-to-rebuild-credit-after-bankruptcy/)."
+      },
+      {
+        "heading": "Choosing a Way to Get Out of Chapter 13 Early",
+        "body": "The exit that fits depends on whether you can pay, why your income changed, and whether you would now qualify for Chapter 7. Match your situation to the statute that governs it:\n\n- If you can pay every allowed unsecured claim in full, an early payoff fits the §1325(b)(4)(B) exception and ends with the full Chapter 13 discharge.\n- If you can pay off early but for less than 100%, the outcome depends on your court, and the request goes through a §1329 modification or a motion.\n- If your income dropped for reasons outside your control, a §1329 modification comes first, and a hardship discharge applies only if modification is not practicable.\n- If your income dropped and you would now pass the Chapter 7 means test, conversion keeps the case open and can end in a Chapter 7 discharge.\n- If you need out regardless of the cost, voluntary dismissal is available, with no discharge and the refiling limits in §109(g) and §362(c).\n\nA hardship discharge needs a confirmed plan, because §1328(b) applies only after confirmation. Conversion and dismissal are available at any time under §1307(a) and (b). If you have not filed yet, our [Chapter 7 vs Chapter 13 comparison](/compare/chapter-7-vs-chapter-13-bankruptcy/) is the better starting point. A ruling from your own district or circuit on partial early payoffs would change the payoff analysis, because Fridley, Niday and Tibbs bind only their own courts.\n\nCourts, trustees and local rules vary. A bankruptcy attorney, a legal-aid office or a nonprofit credit counselor from the [U.S. Trustee Program's approved agency list](https://www.justice.gov/ust/list-credit-counseling-agencies-approved-pursuant-11-usc-111) can apply these rules to your case.\n\nBefore you choose how to get out of Chapter 13 early, write down your remaining plan balance, your last six months of income and any pending creditor motions."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/budget/",
+        "label": "Budget"
+      },
+      {
+        "href": "/emergency-fund-calculator/",
+        "label": "Emergency fund"
+      },
+      {
+        "href": "/debt-consolidation-calculator/",
+        "label": "Debt consolidation"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can you end a Chapter 13 early?",
+        "answer": "Yes. You can end a Chapter 13 case early by paying the plan off, getting a hardship discharge, converting to Chapter 7, or asking the court to dismiss it. Paying less than 100% to unsecured creditors early is contested, and courts decide it differently, so that route goes through a court request."
+      },
+      {
+        "question": "How can I get out of Chapter 13 faster?",
+        "answer": "The fastest exit is a voluntary dismissal, which the court must grant on your request under §1307(b), but it ends with no discharge. A payoff that covers all allowed unsecured claims in full lets the plan end before 3 or 5 years with a discharge. Converting to Chapter 7 is another route, and a Chapter 7 discharge generally comes 60 to 90 days after the first date set for the meeting of creditors."
+      },
+      {
+        "question": "How to qualify for Chapter 13 hardship discharge?",
+        "answer": "You need a confirmed plan and all three conditions in §1328(b). Your failure to finish must come from circumstances you should not justly be held accountable for. Each allowed unsecured claim must have received at least what a Chapter 7 liquidation would have paid it. A modification of the plan must not be practicable. The court decides after notice and a hearing."
+      },
+      {
+        "question": "How hard is it to recover from Chapter 13?",
+        "answer": "It depends on how the case ends. Finishing the plan brings a discharge of the debts the plan provided for, and the federal courts describe that Chapter 13 discharge as broader than a Chapter 7 discharge. A dismissal ends with no discharge, so the debts remain and creditors can collect again."
+      },
+      {
+        "question": "How long is credit ruined after Chapter 13?",
+        "answer": "The bankruptcy statutes that govern ending a Chapter 13 case do not set a credit-reporting period. Our guide on how long bankruptcy stays on your credit report covers that timeline, and our guide on rebuilding credit after bankruptcy covers the steps that follow a discharge."
+      },
+      {
+        "question": "What happens if my Chapter 13 is dismissed?",
+        "answer": "Your case ends without a discharge, so your debts are owed again and the automatic stay against collection ends. Under §349, you can still discharge those debts in a later case unless the court orders otherwise. Refiling limits apply, including a 180-day bar in some situations under §109(g) and a stay that ends after 30 days under §362(c)(3) if one prior case was dismissed within the past year."
+      }
+    ],
+    "sources": [
+      {
+        "label": "United States Courts - Chapter 13 Bankruptcy Basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics"
+      },
+      {
+        "label": "United States Courts - Chapter 7 Bankruptcy Basics",
+        "url": "https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics"
+      },
+      {
+        "label": "11 U.S.C. § 1307 - Conversion or Dismissal",
+        "url": "https://www.law.cornell.edu/uscode/text/11/1307"
+      },
+      {
+        "label": "11 U.S.C. § 1325 - Confirmation of Plan",
+        "url": "https://www.law.cornell.edu/uscode/text/11/1325"
+      },
+      {
+        "label": "11 U.S.C. § 1328 - Discharge",
+        "url": "https://www.law.cornell.edu/uscode/text/11/1328"
+      },
+      {
+        "label": "11 U.S.C. § 1329 - Modification of Plan After Confirmation",
+        "url": "https://www.law.cornell.edu/uscode/text/11/1329"
+      },
+      {
+        "label": "11 U.S.C. § 348 - Effect of Conversion",
+        "url": "https://www.law.cornell.edu/uscode/text/11/348"
+      },
+      {
+        "label": "11 U.S.C. § 349 - Effect of Dismissal",
+        "url": "https://www.law.cornell.edu/uscode/text/11/349"
+      },
+      {
+        "label": "11 U.S.C. § 362 - Automatic Stay",
+        "url": "https://www.law.cornell.edu/uscode/text/11/362"
+      },
+      {
+        "label": "11 U.S.C. § 109 - Who May Be a Debtor",
+        "url": "https://www.law.cornell.edu/uscode/text/11/109"
+      },
+      {
+        "label": "In re Fridley (9th Cir. BAP 2007)",
+        "url": "https://www.caeb.uscourts.gov/documents/Judges/Opinions/published/fridley-07-1276.pdf"
+      },
+      {
+        "label": "In re Niday (Bankr. W.D. Va. 2013)",
+        "url": "https://www.vawb.uscourts.gov/sites/default/files/opinions/Niday%2008.27.13.pdf"
+      },
+      {
+        "label": "In re Tibbs (Bankr. S.D. Fla. 2012)",
+        "url": "https://www.govinfo.gov/content/pkg/USCOURTS-flsb-9_11-bk-18943/pdf/USCOURTS-flsb-9_11-bk-18943-0.pdf"
+      },
+      {
+        "label": "U.S. Trustee Program - Means Testing",
+        "url": "https://www.justice.gov/ust/means-testing"
+      }
+    ]
+  },
   // ── mindmap-pass 2026-10-09 (ai-money): faceless-youtube-channel-ai ──
   {
     "updated": "2026-10-09",
@@ -2006,7 +3058,7 @@ export const GUIDES: Guide[] = [
   // ── competitor-monitor 2026-10-07 ──
   {
     "slug": "pay-for-delete-letters-explained",
-    "updated": "2026-10-07",
+    "updated": "2026-10-10",
     "title": "Pay for Delete Letters and Credit Reports Explained",
     "metaDescription": "Pay for delete asks collectors to remove negative records for payment. Learn how requests work, what collectors agree to, scoring impacts, and risks.",
     "h1": "Pay for Delete Requests Rarely Remove Collections from Credit Reports",
@@ -2027,7 +3079,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "heading": "How Long Collection Accounts Remain on Credit Files",
-        "body": "Negative records, including collection accounts, can remain on your credit report for up to seven years under the Fair Credit Reporting Act (FCRA). You can review your existing records across all three bureaus weekly at no cost at [AnnualCreditReport.com](https://www.consumerfinance.gov/ask-cfpb/how-long-does-negative-information-remain-on-my-credit-report-en-323/).\n\nThe seven-year reporting clock begins on the date of first delinquency on the original account. It does not reset when the original creditor charges off the balance, nor does it restart when a debt buyer purchases the debt or assigns it to a third-party collection agency.\n\nCollectors sometimes attempt to collect debts that have passed their credit reporting shelf life. A debt that has passed the seven-year mark must drop off your credit profile regardless of whether you pay the balance."
+        "body": "Negative records, including collection accounts, can remain on your credit report for up to seven years under the Fair Credit Reporting Act (FCRA). You can review your existing records across all three bureaus weekly at no cost at [AnnualCreditReport.com](https://www.consumerfinance.gov/ask-cfpb/how-long-does-negative-information-remain-on-my-credit-report-en-323/).\n\nThe seven-year reporting clock begins on the date of first delinquency on the original account. It does not reset when the original creditor charges off the balance, nor does it restart when a debt buyer purchases the debt or assigns it to a third-party collection agency.\n\nCollectors sometimes attempt to collect debts that have passed their credit reporting shelf life. A debt that has passed the seven-year mark must drop off your credit profile regardless of whether you pay the balance. A bankruptcy entry follows its own reporting rules, covered in [how long bankruptcy stays on your credit report](/guides/how-long-does-bankruptcy-stay-on-credit-report/)."
       },
       {
         "heading": "How Paid Collections Impact Credit Scoring Formulas",
@@ -2107,7 +3159,7 @@ export const GUIDES: Guide[] = [
   },
   {
     "slug": "how-to-build-credit-fast",
-    "updated": "2026-10-07",
+    "updated": "2026-10-10",
     "title": "How to Build Credit Fast: Practical Steps That Work",
     "metaDescription": "Learn how to build credit fast by lowering utilization before statement dates, disputing errors, and managing reporting cycles effectively.",
     "h1": "How to Build Credit Fast and Move Your Score Within Cycles",
@@ -2144,7 +3196,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "heading": "Handling Collections and Negative Historical Marks",
-        "body": "Old derogatory marks, charge-offs, and third-party collections depress credit scores and take substantial time to overcome. A collection account represents a debt transferred or sold to an outside collector after extended nonpayment. As with late payments, negative information generally remains on your report for up to seven years under federal guidelines, as confirmed by the CFPB.\n\nPaying off a collection account updates the balance status with the bureaus, though how that update affects your score depends on which scoring model a lender uses. Newer formulas treat paid collections more favorably than unpaid balances, while older models may reflect minimal change. For detailed strategies on communicating with third-party agencies, read our [debt collectors guide](/guides/how-to-deal-with-debt-collectors/)."
+        "body": "Old derogatory marks, charge-offs, and third-party collections depress credit scores and take substantial time to overcome. A collection account represents a debt transferred or sold to an outside collector after extended nonpayment. As with late payments, negative information generally remains on your report for up to seven years under federal guidelines, as confirmed by the CFPB.\n\nPaying off a collection account updates the balance status with the bureaus, though how that update affects your score depends on which scoring model a lender uses. Newer formulas treat paid collections more favorably than unpaid balances, while older models may reflect minimal change. For detailed strategies on communicating with third-party agencies, read our [debt collectors guide](/guides/how-to-deal-with-debt-collectors/). After a bankruptcy, follow [the rebuild sequence that starts the day you're discharged](/guides/how-to-rebuild-credit-after-bankruptcy/)."
       },
       {
         "heading": "Actions That Harm Credit and Services to Avoid",
@@ -4518,6 +5570,7 @@ export const GUIDES: Guide[] = [
 
 
   {
+    updated: "2026-10-10",
     slug: "first-time-home-buyer-guide",
     title: "First Time Home Buyer Guide: Steps to Buying a Home",
     metaDescription:
@@ -4531,7 +5584,7 @@ export const GUIDES: Guide[] = [
       { heading: "Step 2: Save your down payment and understand PMI", body: "Your down payment is the cash you put toward the home price up front. A larger down payment lowers your loan and your monthly payment. When you put down less than 20% on a conventional loan, lenders require private mortgage insurance (PMI), which protects the lender, not you.\n\nSome loans need less cash to start. Conventional loans can go as low as 3% down, and FHA loans backed by HUD allow as little as 3.5%. Putting 20% down avoids PMI on a conventional loan. Use our [down payment calculator](/mortgage/down-payment-calculator/) to see how different amounts change your costs. Once you're preapproved, see our [mortgage mistakes to avoid before applying](/guides/mortgage-mistakes-before-applying/) so a new credit card, a big undocumented deposit, or a job change doesn't derail your approval before closing." },
       { heading: "Step 3: Budget for closing costs", body: "Closing costs are separate fees you pay to finalize the loan, on top of your down payment. They cover things like the appraisal, title insurance, taxes, and prepaid items such as homeowners insurance. These costs typically run about 2% to 5% of the loan amount.\n\nMany first-time buyers forget to budget for this cash. Your lender lists every fee on your Loan Estimate, so review it carefully — and see our [questions to ask a mortgage lender](/guides/questions-to-ask-a-mortgage-lender/) guide for what to ask before you compare that Loan Estimate against another lender's. Use our [closing cost calculator](/mortgage/closing-cost-calculator/) to estimate this amount and avoid a surprise at the closing table. One line item, real estate transfer tax, is set by state law and varies more than any other closing cost; see our [real estate transfer tax guide](/guides/real-estate-transfer-tax-explained/) to check what your own state and county charge before you budget." },
       { heading: "Step 4: Understand the monthly payment and paying it down", body: "Your monthly payment is more than just principal and interest. It often includes property taxes, homeowners insurance, and PMI if you put down less than 20%. Knowing the full payment helps you plan your budget honestly.\n\nPaying extra toward principal can shrink your loan years faster and save interest. Even small extra payments add up over time. Use our [mortgage payoff calculator](/mortgage/payoff-calculator/) to see how extra payments shorten your loan and cut total interest." },
-      { heading: "Step 5: Make sure you're financially ready", body: "Being financially ready means more than affording the payment. You should have an emergency fund for repairs and a clear picture of your overall finances. Owning a home brings new costs, so a cash cushion protects you when something breaks.\n\nTracking your net worth shows whether you are on solid ground before you buy. It adds up what you own and subtracts what you owe. Use our [net worth calculator](/net-worth/) to check your full financial picture before you commit to a mortgage." },
+      { heading: "Step 5: Make sure you're financially ready", body: "Being financially ready means more than affording the payment. You should have an emergency fund for repairs and a clear picture of your overall finances. Owning a home brings new costs, so a cash cushion protects you when something breaks.\n\nTracking your net worth shows whether you are on solid ground before you buy. It adds up what you own and subtracts what you owe. Use our [net worth calculator](/net-worth/) to check your full financial picture before you commit to a mortgage. If you have a bankruptcy in your past, check [how long you must wait to buy a house after bankruptcy](/guides/buying-a-house-after-bankruptcy/) for each loan type." },
       { heading: "Step 6: Bought a house? You now need a will", body: "The single biggest financial asset most first-time buyers acquire is the home. Without a will, at death that home passes under state intestacy law — usually to a spouse and children, but with court supervision through probate and no guardian named for minor kids. A basic will handles both: it directs how the home passes and names a guardian for the children. If you own real estate in more than one state (say, a home plus an inherited family cabin), a revocable living trust also avoids ancillary probate in each state.\n\nAttorney costs run $300 to $2,500 depending on state and complexity; online services like Trust & Will ($199 individual / $299 couple), LegalZoom Basic ($129/$229), or FreeWill ($0) work for straightforward cases. See specifics with our [will cost calculator](/estate-planning/will-cost-calculator/), or run the full plan tier through the [estate planning calculator](/estate-planning/). This applies from the day you close on your first home." },
     ],
     tools: [
@@ -4557,6 +5610,7 @@ export const GUIDES: Guide[] = [
   },
 
   {
+    updated: "2026-10-10",
     slug: "how-to-buy-a-car",
     title: "How to Buy a Car: A Step-by-Step Car Buying Guide",
     metaDescription:
@@ -4567,7 +5621,7 @@ export const GUIDES: Guide[] = [
       "Learning how to buy a car starts with one key idea: the sticker price isn't the real price. This car buying guide takes you through every step, from setting a budget to signing the loan. You'll learn what a car truly costs, how to avoid the most common traps, and how to run the numbers yourself at every stage using the free tools linked below.",
     sections: [
       { heading: "Step 1: Set a realistic budget before you shop", body: "Your car budget should cover far more than the monthly payment. A common rule is 20/4/10: put 20% down, finance for no more than four years, and keep total car costs under 10% of your income. The CFPB warns that the true cost of ownership also includes insurance, registration, gas, maintenance, and repairs.\n\nFigure out a safe price range before you fall in love with a car. Use our [car affordability calculator](/auto-loan/car-affordability-calculator/) to see what you can comfortably spend. Knowing your ceiling keeps you from stretching the loan to fit the car. Already leasing and thinking about keeping the car instead? The buying math is different — see our [auto lease buyout calculator guide](/guides/auto-lease-buyout-calculator/) for what you'd actually pay. Still deciding between the two paths in the first place? Our [buying vs. leasing a car](/compare/buying-vs-leasing-a-car/) comparison breaks down the real cost difference with a worked example." },
-      { heading: "Step 2: Get preapproved and understand the loan", body: "Getting preapproved before you visit a dealer puts you in control. A preapproval is a loan offer from a bank or credit union that lists your rate, term, and maximum amount. The CFPB recommends getting preapproved so you can shop around and compare it against any dealer financing.\n\nFour things shape every car loan: the price, your down payment, the interest rate, and the loan term. Change any one and the payment moves. Test different combinations with our [auto loan calculator](/auto-loan/) so you know your numbers before you negotiate." },
+      { heading: "Step 2: Get preapproved and understand the loan", body: "Getting preapproved before you visit a dealer puts you in control. A preapproval is a loan offer from a bank or credit union that lists your rate, term, and maximum amount. The CFPB recommends getting preapproved so you can shop around and compare it against any dealer financing.\n\nFour things shape every car loan: the price, your down payment, the interest rate, and the loan term. Change any one and the payment moves. Test different combinations with our [auto loan calculator](/auto-loan/) so you know your numbers before you negotiate. With a bankruptcy in your past, follow [the steps to finance a car after Chapter 7](/guides/buying-a-car-after-bankruptcy/)." },
       { heading: "Step 3: Know what the interest really costs", body: "Interest is the price you pay to borrow, and it adds up quietly over the years. The CFPB advises comparing the APR and total amount financed, not just the monthly payment. A lower payment often hides a higher total cost.\n\nSee exactly how much interest you would pay over the life of a loan with our [auto loan interest calculator](/auto-loan/interest-calculator/). When you can see the full interest cost, a slightly higher payment on a shorter loan often looks like the better deal." },
       { heading: "Step 4: Plan to pay it off faster and save", body: "Paying extra each month shrinks both your loan and your total interest. Because interest is charged on the balance you still owe, lowering that balance sooner saves real money. Even small extra payments can shorten the loan by months.\n\nBefore you sign, model a faster payoff with our [auto loan payoff calculator](/auto-loan/payoff-calculator/). It shows how added payments cut your interest and free you from the loan early. Confirm there is no prepayment penalty in your contract first." },
       { heading: "Step 5: Avoid the traps at the dealership", body: "The biggest mistakes happen at signing, not on the test drive. Long loan terms lower the payment but raise total interest and can leave you owing more than the car is worth, a problem called negative equity. The CFPB notes that dealers may mark up your interest rate, so your preapproval is your bargaining chip.\n\nThe FTC says to focus on the total out-the-door price in writing, including every fee and add-on, rather than the monthly payment. You can say no to add-ons like extended warranties or paint protection. Recheck the final deal against our [auto loan calculator](/auto-loan/) before you sign anything." },
@@ -9661,7 +10715,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "what-is-a-good-credit-score",
-    updated: "2026-09-19",
+    updated: "2026-10-10",
     title: "What Is a Good Credit Score? FICO Ranges Explained",
     metaDescription:
       "A good credit score is 670 to 739 on the FICO scale. See all 5 score ranges, the 5 factors behind your score, and what you need for a mortgage or top card.",
@@ -9676,7 +10730,7 @@ export const GUIDES: Guide[] = [
       { heading: "How to Get Your Free Credit Report Every Week", body: "You can pull your credit report from [Equifax](https://www.equifax.com/), [Experian](https://www.experian.com/), and [TransUnion](https://www.transunion.com/) once a week, from every bureau, at no cost — not just once a year. The [FTC](https://consumer.ftc.gov/consumer-alerts/2023/10/you-now-have-permanent-access-free-weekly-credit-reports) made this weekly access permanent in October 2023, after the three bureaus first ran it as a temporary pandemic-era program starting in 2020. Request all three at once through AnnualCreditReport.com, the only site authorized to give out these free reports, call 1-877-322-8228 if you'd rather request by phone (your reports arrive by mail within 15 days), or mail a completed Annual Credit Report Request Form to Annual Credit Report Request Service, P.O. Box 105281, Atlanta, GA 30348-5281. Even if you skip the weekly option, federal law still guarantees one free report per bureau every 12 months no matter what.\n\nGetting the report is only step one. Read it for two things: mistakes and strangers. Check that every account, balance, and payment entry actually belongs to you and looks accurate, since a wrong late payment or someone else's account mixed into your file can drag your score down for a mistake you didn't make. Then scan for accounts you don't recognize at all, a card, loan, or address you never opened or lived at, since that's often the first sign someone else is using your identity. The three bureaus don't always show identical information, because they don't all get reports from the same lenders, which is exactly why checking all three matters.\n\nIf you find an error, dispute it in writing with both the credit bureau and whichever company reported the bad information, describing each mistake and attaching any supporting documents. The [FTC](https://consumer.ftc.gov/articles/disputing-errors-your-credit-reports) says the credit bureau generally has 30 days to investigate once it receives your dispute and must give you the results in writing. If the bureau doesn't fix it, you can ask that a statement of your dispute be added to your file, or file a complaint directly with the CFPB." },
       { heading: "How Long It Takes to Improve Your Score", body: "Your score can move within a single billing cycle when the change involves utilization, since issuers typically report your balance to the bureaus about once a month. Paying down a high balance before your statement closes can raise your score noticeably at the next update.\n\nOther changes take longer. A new account needs time to season before it meaningfully helps your length-of-history factor. A missed payment can stay on your credit report for up to seven years, per the [CFPB](https://www.consumerfinance.gov/ask-cfpb/how-long-does-information-stay-on-my-credit-report-en-323/), though its effect on your score fades well before it disappears from your report.\n\nThere's no single timeline that fits everyone, since your starting score and the type of negative mark both change the math. Someone with one late payment and an otherwise clean file usually recovers faster than someone rebuilding after a bankruptcy or a charge-off." },
       { heading: "What Score You Actually Need for Common Goals", body: "Lenders set their own cutoffs, so no single score guarantees approval anywhere, but general tiers hold up across most lenders. A conventional mortgage typically wants good credit or better, while government-backed loan programs are built to work with lower scores — check current requirements directly with a HUD-approved lender, since specific cutoffs can change. Run your own numbers through the [mortgage calculator](/mortgage/) once you know roughly where your score sits.\n\nAn auto loan follows a similar pattern: very good to exceptional credit unlocks a lender's lowest advertised rates, while fair credit can still get approved, just at a meaningfully higher APR. Test a few rate scenarios in our [auto loan calculator](/auto-loan/) before you shop.\n\nThe best rewards credit cards, with the richest sign-up bonuses and point values, are generally reserved for good to exceptional credit. See what actually moves the needle in [which credit card perks are worth it](/guides/credit-card-perks-worth-it/), or check the exact [score you need for a 0% APR card](/guides/credit-score-for-0-apr-credit-card/) if that's your near-term goal." },
-      { heading: "Building or Rebuilding From Fair Credit", body: "If your score sits in the fair range, a handful of specific moves close the gap fastest. Paying every bill on time going forward is the single biggest lever, since payment history alone is over a third of your score.\n\nA secured card or a credit-builder loan can add positive payment history if your file is thin rather than damaged. Once your score improves, a [balance transfer card](/guides/balance-transfer-credit-card-approval-odds/) or a [personal loan for excellent credit](/guides/personal-loans-for-excellent-credit/) both become realistic ways to consolidate debt at a far better rate than fair-credit terms allow.\n\nAvoid opening several new accounts at once while you're rebuilding. Each hard inquiry has a small, temporary effect on your score, and a cluster of new accounts can also drag down your average account age right when you need it working for you." },
+      { heading: "Building or Rebuilding From Fair Credit", body: "If your score sits in the fair range, a handful of specific moves close the gap fastest. Paying every bill on time going forward is the single biggest lever, since payment history alone is over a third of your score.\n\nA secured card or a credit-builder loan can add positive payment history if your file is thin rather than damaged. Once your score improves, a [balance transfer card](/guides/balance-transfer-credit-card-approval-odds/) or a [personal loan for excellent credit](/guides/personal-loans-for-excellent-credit/) both become realistic ways to consolidate debt at a far better rate than fair-credit terms allow.\n\nAvoid opening several new accounts at once while you're rebuilding. Each hard inquiry has a small, temporary effect on your score, and a cluster of new accounts can also drag down your average account age right when you need it working for you. If the damage came from a bankruptcy, see [how to rebuild credit after bankruptcy](/guides/how-to-rebuild-credit-after-bankruptcy/)." },
     ],
     tools: [
       { href: "/mortgage/", label: "Mortgage" },
@@ -10698,6 +11752,7 @@ export const GUIDES: Guide[] = [
     ],
   },
   {
+    updated: "2026-10-10",
     slug: "how-to-deal-with-debt-collectors",
     title: "How to Deal With Debt Collectors and Know Your Rights",
     metaDescription:
@@ -10710,7 +11765,7 @@ export const GUIDES: Guide[] = [
       { heading: "Your Rights Start With the First Contact", body: "Federal law protects you starting with the very first phone call or letter. The Fair Debt Collection Practices Act covers debt collectors, meaning companies that collect debts on behalf of someone else, and it bans abusive, unfair, or deceptive collection tactics. It applies whether the debt is a credit card, medical bill, or old utility account.\n\nDo not let pressure on that first call push you into agreeing to anything. A collector may push for an immediate payment or a fast verbal commitment, but you are allowed to say you need time to review your records before you discuss the debt further. Get the collector's name, company, and a callback number, then hang up if you need to." },
       { heading: "Know What a Collector Can and Cannot Do", body: "A collector can call you, but only within limited hours and only so often. Under [federal rules](https://www.consumerfinance.gov/ask-cfpb/what-laws-limit-what-debt-collectors-can-say-or-do-en-329/), collectors generally may not call before 8 a.m. or after 9 p.m. in your time zone. Calling you repeatedly with the intent to annoy or harass is against the law, even within that window.\n\nSeveral tactics are always off-limits. A collector cannot threaten arrest or jail time for an unpaid debt, since debt collection is a civil matter, not a criminal one. A collector cannot lie about the amount you owe, claim to be a government official, or discuss your debt with your employer, family, or neighbors beyond confirming how to reach you.\n\nYou can also stop calls at your workplace. If you tell a collector, in writing or verbally, that your employer does not allow personal calls, they must stop calling you there. You can send a written request asking a collector to stop contacting you entirely, though that does not erase the debt itself." },
       { heading: "Gather the Facts: Ask for Debt Validation", body: "Ask for written proof before you send a single dollar. Within five days of first contacting you, a collector must send a [validation notice](https://www.consumerfinance.gov/rules-policy/regulations/1006/34/) listing the amount owed, the name of the original creditor, and your right to dispute the debt. That notice is your evidence, so keep it.\n\nYou then have 30 days from receiving that notice to dispute the debt in writing. Once you dispute it within that window, the collector must stop collection activity until they provide verification, such as an account statement or the original signed agreement. If the debt is not yours, was already paid, or the amount looks wrong, this written dispute is the tool that forces the collector to prove it.\n\nDo not skip this step even if you recognize the debt. Old debts sometimes get sold to multiple collection agencies, and errors in amount, ownership, or duplicate accounts are common. A written dispute costs you nothing and protects your credit report from an unverified entry." },
-      { heading: "Never Ignore a Court Summons", body: "Never ignore a court summons from a debt collector, even if you believe the debt is old, small, or invalid. If you do not respond by the deadline listed on the paperwork, the court can enter a default judgment against you automatically, without you ever presenting your side.\n\nA default judgment can lead to wage garnishment or a bank account levy, depending on your state's laws. Responding to the summons, even with a simple written answer, keeps the case active and forces the collector to prove their claim in court. Many public law libraries and legal aid organizations can help you file a basic answer for little or no cost.\n\nPay attention to your state's statute of limitations on debt, since it limits how long a collector can sue you and win. Making even a small payment or verbally acknowledging an old debt can restart that clock in some states, turning a debt that was nearly too old to collect back into one a collector can pursue again." },
+      { heading: "Never Ignore a Court Summons", body: "Never ignore a court summons from a debt collector, even if you believe the debt is old, small, or invalid. If you do not respond by the deadline listed on the paperwork, the court can enter a default judgment against you automatically, without you ever presenting your side.\n\nA default judgment can lead to wage garnishment or a bank account levy, depending on your state's laws. Responding to the summons, even with a simple written answer, keeps the case active and forces the collector to prove their claim in court. Many public law libraries and legal aid organizations can help you file a basic answer for little or no cost.\n\nPay attention to your state's statute of limitations on debt, since it limits how long a collector can sue you and win. Making even a small payment or verbally acknowledging an old debt can restart that clock in some states, turning a debt that was nearly too old to collect back into one a collector can pursue again. If several creditors are suing, [debt settlement vs bankruptcy](/compare/debt-settlement-vs-bankruptcy/) compares how each one handles collection lawsuits." },
       { heading: "Choose a Payoff or Dispute Method", body: "Once you know the debt is real and yours, you generally have three paths. You can pay it in full, negotiate a lump-sum settlement for less than the full balance, or set up a payment plan you can actually sustain. Get any settlement or payment agreement in writing before you send money, since a verbal promise from a collector is hard to enforce later.\n\nHere is a worked example. A collector is chasing a $4,000 charged-off credit card balance. Many collectors buy old debt for a fraction of its face value, so they often accept a lump-sum settlement well below the full amount. Offering 40%, or $1,600, as a one-time payment is a common opening counter, and it would save $2,400 off the original balance if accepted. Before agreeing, check what you can realistically pay by running your budget through ModernWallet's [budget tool](/budget/), and compare a settlement against a structured payoff using the [credit card payoff calculator](/credit-card-payoff/) if the account is still open." },
       { heading: "File a Complaint if a Collector Breaks the Rules", body: "If a collector breaks any of these rules, you have real recourse. File a complaint directly with the [CFPB](https://www.consumerfinance.gov/complaint/), which forwards your complaint to the company and typically requires a response within 15 days. Keep records of every call, letter, and voicemail, including dates and what was said, since that documentation is what makes a complaint effective.\n\nYou can also pursue the debt collector directly for FDCPA violations, including in small claims court, and successful claims can recover statutory damages plus actual damages and attorney's fees. A consultation with a consumer law attorney, often free for a first meeting, can tell you quickly whether a specific violation is worth pursuing on its own.\n\nDealing with a debt collector does not require accepting whatever they say at face value. Ask for written validation before paying anything, know the calling-hour and contact rules, and never ignore a summons. If a collector crosses a line, the CFPB complaint process and small claims court both exist specifically so you are not stuck absorbing a company's illegal behavior." },
     ],
@@ -13515,7 +14570,7 @@ export const GUIDES: Guide[] = [
   // -- competitor-monitor 2026-09-16: car-loan-mistakes --
   {
     slug: "car-loan-mistakes",
-    updated: "2026-09-16",
+    updated: "2026-10-10",
     title: "10 Costly Car Loan Mistakes to Avoid When Financing",
     metaDescription: "Avoid the most expensive car loan mistakes. Learn why focusing on monthly payments, skipping preapproval, and rolling in add-ons cost thousands.",
     h1: "Car Loan Mistakes: Avoid Costly Traps When Financing a Vehicle",
@@ -13527,7 +14582,7 @@ export const GUIDES: Guide[] = [
       { heading: "Mistake 3: Skipping a Down Payment", body: "Putting zero money down might feel convenient at closing, but it creates structural debt problems from day one. When you finance the entire purchase price, your starting loan balance often exceeds the market value of the vehicle once depreciation takes effect. This dynamic creates immediate negative equity, leaving you owing more on the vehicle than an insurer or trade-in buyer would pay.\n\nSkipping a down payment also forces you to finance a larger principal, which increases the total amount of interest you pay across the entire life of the loan. Supplying a down payment of cash or trade equity creates an instant financial cushion. It reduces your required monthly obligation, lowers total borrowing costs, and protects you from negative equity if the vehicle is totaled or sold early." },
       { heading: "Mistake 4: Focusing on the Monthly Payment Instead of Total Cost", body: "Negotiating based purely on a target monthly payment is one of the easiest ways to overpay. The [Federal Trade Commission (FTC)](https://consumer.ftc.gov/financing-or-leasing-car) notes that focusing solely on the monthly figure allows sellers to quietly extend loan terms or raise the vehicle price while matching your requested payment. A smaller payment spread across an extended term masks a much higher total borrowing expense.\n\nThe [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/consumer-tools/auto-loans/) advises evaluating the loan APR, the term length, and the total out-the-door price together. The APR includes the interest rate plus mandatory lender finance charges, giving you a true apples-to-apples basis for comparison. Check the total interest charges using our [auto loan calculator](/auto-loan/) before agreeing to any restructured payment offer." },
       { heading: "Mistake 5: Skipping Preapproval and Using Only Dealer Financing", body: "Relying exclusively on dealership financing hands the seller complete control over your borrowing terms. When a dealership arranges financing through its network of lenders, it may mark up the interest rate above the rate the lender originally approved. This markup represents dealer compensation that directly raises your monthly payment and interest expense.\n\nThe [CFPB recommends getting preapproved](https://www.consumerfinance.gov/ask-cfpb/how-do-i-compare-auto-loan-offers-what-should-i-look-at-besides-the-monthly-payment-en-753/) by an independent bank or credit union before walking into a dealership showroom. A valid preapproval letter gives you an established interest rate and maximum loan amount. With a preapproved offer in hand, you force the dealership's finance office to either beat your existing rate or lose the financing portion of the transaction entirely." },
-      { heading: "Mistake 6: Applying Without Checking Your Credit Score First", body: "Lenders assign auto loan interest rates based heavily on your credit standing. Research from [Experian](https://www.experian.com/blogs/ask-experian/average-car-loan-interest-rates-by-credit-score/) demonstrates that your credit tier serves as the primary driver of the APR you receive. Borrowers in prime tiers secure significantly lower interest rates than borrowers placed in subprime tiers, representing thousands of dollars in interest differences.\n\nApplying for financing without pulling your credit reports leaves you vulnerable to expensive surprises. Erroneous collections, inaccurate account balances, or identity reporting errors can artificially drag down your score right before your credit pull. Check your credit reports months in advance so you can dispute inaccuracies and improve your standing before lenders evaluate your application." },
+      { heading: "Mistake 6: Applying Without Checking Your Credit Score First", body: "Lenders assign auto loan interest rates based heavily on your credit standing. Research from [Experian](https://www.experian.com/blogs/ask-experian/average-car-loan-interest-rates-by-credit-score/) demonstrates that your credit tier serves as the primary driver of the APR you receive. Borrowers in prime tiers secure significantly lower interest rates than borrowers placed in subprime tiers, representing thousands of dollars in interest differences.\n\nApplying for financing without pulling your credit reports leaves you vulnerable to expensive surprises. Erroneous collections, inaccurate account balances, or identity reporting errors can artificially drag down your score right before your credit pull. Check your credit reports months in advance so you can dispute inaccuracies and improve your standing before lenders evaluate your application. If a recent bankruptcy is on your report, see [how to buy a car after bankruptcy](/guides/buying-a-car-after-bankruptcy/) before you apply." },
       { heading: "Mistake 7: Choosing an Extended Loan Term to Lower Payments", body: "Spreading an auto loan over 72, 84, or 96 months produces an attractive monthly payment, but it sharply inflates your total interest expense. A longer loan amortization schedule means your monthly payments allocate less money toward principal reduction during the early years. The CFPB warns that extended terms substantially lengthen the duration of negative equity, leaving you underwater on the vehicle for several years.\n\nWhen a car loan outlasts your ownership horizon or warranty period, you face paying for mechanical repairs while still making payments on a depreciated asset. You can run scenarios through our [auto loan interest calculator](/auto-loan/interest-calculator/) to observe how extending terms trades temporary payment relief for massive total interest additions. Keeping loan terms within reasonable lengths protects your equity." },
       { heading: "Mistake 8: Financing Unwanted Add-ons, Extra Fees, and Sales Tax", body: "Dealership finance offices routinely offer backend products including extended warranties, paint protection packages, window etching, and Guaranteed Asset Protection (GAP) insurance. The FTC states clearly that dealers cannot require or charge you for optional add-on items without your explicit agreement. You retain the right to decline every single optional add-on presented at signing.\n\nRolling add-on costs and vehicle sales tax directly into your loan principal creates long-term interest liabilities. For example, say a buyer finances a $1,500 warranty and $2,000 in sales tax alongside a five-year loan: that $3,500 sits inside the principal for the full term, so every monthly payment carries interest on those non-asset dollars, not just on the car itself. Pay necessary government taxes and mandatory registration fees with upfront cash whenever possible, and decline discretionary dealer add-ons to keep your principal minimal." },
       { heading: "Mistake 9: Rolling Negative Equity from an Old Car into the New Loan", body: "Trading in a vehicle when you still owe more than its current market value is an easy way to damage your balance sheet. When you carry negative equity into a new purchase, the unpaid balance does not vanish. Instead, the dealer rolls that deficiency directly into your new loan balance, meaning you borrow far more than the replacement car is actually worth on day one.\n\nThe CFPB flags negative equity rollovers as a dangerous practice that traps consumers in a cycle of persistent debt. Starting a car loan with negative equity leaves you immediately underwater, raises your monthly payment, and forces you to pay interest on an old vehicle you no longer own. If your current vehicle is underwater, consider keeping it until the balance matches market value, or model a lower rate using our [auto loan refinance calculator](/auto-loan/refinance-calculator/)." },
@@ -13596,6 +14651,7 @@ export const GUIDES: Guide[] = [
   },
   // -- keyword-gap-pass-auto 2026-09-13: how-to-pay-off-debt --
   {
+    updated: "2026-10-10",
     slug: "how-to-pay-off-debt",
     title: "How to Pay Off Debt the Fastest Way for Your Situation",
     metaDescription:
@@ -13609,8 +14665,8 @@ export const GUIDES: Guide[] = [
       { heading: "Mechanics of the Minimum Payment Trap", body: "Credit card issuers calculate minimum payments to maximize interest collection while keeping accounts in good standing. When your monthly payment covers only the finance charge plus a tiny fraction of principal, repayment stalls. This condition is known as negative or no amortization. In negative amortization, the balance fails to decline, or actually increases, even while you make on-time monthly payments.\n\nThe [Federal Reserve](https://www.federalreserve.gov/releases/g19/current/) and the [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/rules-policy/regulations/1026/7/) enforce strict disclosure rules under Regulation Z (12 CFR 1026.7(b)(12)(ii)). When a card's minimum payment causes negative or no amortization, issuers must display a specific warning on monthly statements.\n\nThe mandated text states: \"Minimum Payment Warning: Even if you make no more charges using this card, if you make only the minimum payment each month we estimate you will never pay off the balance shown on this statement because your payment will be less than the interest charged each month.\" If that warning appears on your statement, you are trapped in perpetual debt. Paying only the minimum guarantees you will never eliminate the balance." },
       { heading: "Snowball and Avalanche Frameworks for Repayment", body: "The two primary self-directed payoff methods are the debt snowball and the debt avalanche. Both methods require paying minimums on all accounts while targeting extra cash at one balance. They differ entirely in how they select that first target.\n\nThe debt snowball targets the smallest balance first, regardless of interest rate. You wipe out that small balance quickly. Then roll that payment into the next balance. This sequence produces quick psychological wins that keep you motivated. The debt avalanche targets the account with the highest interest rate first. Mathematically, the avalanche saves the most money in total finance charges and clears your debt in the shortest time.\n\nChoose the method that matches your behavior. If you need early momentum to stay committed, pick the snowball. If minimizing interest expense drives your discipline, pick the avalanche. You can compare the tradeoffs directly in our [debt snowball vs. avalanche](/compare/debt-snowball-vs-avalanche/) analysis, or model exact payoff timelines on our [credit card payoff calculator](/credit-card-payoff/)." },
       { heading: "Debt Consolidation Options and Borrowing Benchmarks", body: "Debt consolidation replaces multiple unsecured balances with a single fixed-rate loan or promotional credit line. Consolidation only works when the new annual percentage rate (APR) sits substantially below your current average card rate. Otherwise, you merely shift debt without reducing costs.\n\nBenchmark any consolidation offer against national consumer lending figures. The Federal Reserve's G.19 Consumer Credit report indicated that the average APR on credit card accounts assessed interest was 22.15% in the second quarter of 2026, rising from 21.52% in the first quarter of 2026. The average APR across all credit card accounts reached 20.94% in the second quarter of 2026, while new credit card offers averaged 23.82%.\n\nIf you qualify for an unsecured personal loan with a single-digit or low double-digit rate, consolidation can cut interest costs. Borrowers with high credit scores can review terms in our guide to [personal loans for excellent credit](/guides/personal-loans-for-excellent-credit/). Run the numbers on our [personal loan calculator](/personal-loan/) to confirm monthly savings. However, consolidation fails if you continue using credit cards and accumulate fresh balances on top of the new loan." },
-      { heading: "Nonprofit Credit Counseling and Management Plans", body: "When high interest rates prevent self-directed payoff and consolidation loans are out of reach, nonprofit credit counseling provides structured relief. The [National Foundation for Credit Counseling](https://www.nfcc.org/debt-management-plan/) (NFCC), established in 1951, represents the largest and longest-serving nonprofit credit-counseling network in the United States. Its certified counselors operate across all fifty states.\n\nAn initial credit counseling session typically lasts between thirty and sixty minutes. During this session, the counselor conducts a comprehensive review of your income, living expenses, and outstanding accounts to produce an action plan.\n\nFor eligible borrowers, counselors set up a debt management plan (DMP). Under an NFCC debt management plan, your unsecured debts are consolidated into a single monthly payment sent directly to the counseling agency, which disburses funds to your creditors. These plans typically last thirty-six to sixty months. Counselors negotiate with credit card issuers to reduce or waive interest rates and late fees. Creditors may require you to close accounts enrolled in a DMP to prevent new charges." },
-      { heading: "Bankruptcy Proceedings Under Chapter 7 and Chapter 13", body: "When total liabilities far exceed your repayment capacity, legal bankruptcy offers a legitimate statutory path to relief. Filing bankruptcy stops collection calls, freezes wage garnishments, and discharges qualifying debts under federal law.\n\nChapter 7 bankruptcy is a liquidation process administered through the federal courts. Under [Chapter 7 bankruptcy basics](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics), a court-appointed trustee sells non-exempt assets and distributes the proceeds to your creditors. Chapter 7 does not involve a multi-year repayment plan. Eligible debtors receive a direct discharge of unsecured liabilities, allowing a clean financial restart.\n\nChapter 13 bankruptcy uses a court-approved repayment plan lasting three to five years, as detailed in the [Chapter 13 bankruptcy basics](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics) guidelines from the U.S. Courts. Debtors with household income below their state median follow a three-year plan, while those above the median follow a five-year plan. No plan can exceed five years. Chapter 13 allows borrowers to halt foreclosure, protect home equity, and catch up on delinquent secured debt. It also discharges specific obligations, such as certain divorce property-settlement liabilities, that Chapter 7 excludes. Eligibility caps require non-contingent, liquidated unsecured debts below $526,700 and secured debts under $1,580,125 as of the filing date." },
+      { heading: "Nonprofit Credit Counseling and Management Plans", body: "When high interest rates prevent self-directed payoff and consolidation loans are out of reach, nonprofit credit counseling provides structured relief. The [National Foundation for Credit Counseling](https://www.nfcc.org/debt-management-plan/) (NFCC), established in 1951, represents the largest and longest-serving nonprofit credit-counseling network in the United States. Its certified counselors operate across all fifty states.\n\nAn initial credit counseling session typically lasts between thirty and sixty minutes. During this session, the counselor conducts a comprehensive review of your income, living expenses, and outstanding accounts to produce an action plan.\n\nFor eligible borrowers, counselors set up a debt management plan (DMP). Under an NFCC debt management plan, your unsecured debts are consolidated into a single monthly payment sent directly to the counseling agency, which disburses funds to your creditors. These plans typically last thirty-six to sixty months. Counselors negotiate with credit card issuers to reduce or waive interest rates and late fees. Creditors may require you to close accounts enrolled in a DMP to prevent new charges. To see a management plan next to settlement, consolidation and bankruptcy, compare [the alternatives to bankruptcy](/guides/bankruptcy-alternatives/)." },
+      { heading: "Bankruptcy Proceedings Under Chapter 7 and Chapter 13", body: "When total liabilities far exceed your repayment capacity, legal bankruptcy offers a legitimate statutory path to relief. Filing bankruptcy stops collection calls, freezes wage garnishments, and discharges qualifying debts under federal law.\n\nChapter 7 bankruptcy is a liquidation process administered through the federal courts. Under [Chapter 7 bankruptcy basics](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-7-bankruptcy-basics), a court-appointed trustee sells non-exempt assets and distributes the proceeds to your creditors. Chapter 7 does not involve a multi-year repayment plan. Eligible debtors receive a direct discharge of unsecured liabilities, allowing a clean financial restart.\n\nChapter 13 bankruptcy uses a court-approved repayment plan lasting three to five years, as detailed in the [Chapter 13 bankruptcy basics](https://www.uscourts.gov/court-programs/bankruptcy/bankruptcy-basics/chapter-13-bankruptcy-basics) guidelines from the U.S. Courts. Debtors with household income below their state median follow a three-year plan, while those above the median follow a five-year plan. No plan can exceed five years. Chapter 13 allows borrowers to halt foreclosure, protect home equity, and catch up on delinquent secured debt. It also discharges specific obligations, such as certain divorce property-settlement liabilities, that Chapter 7 excludes. Eligibility caps require non-contingent, liquidated unsecured debts below $526,700 and secured debts under $1,580,125 as of the filing date. If you are weighing a settlement program instead, compare [debt settlement vs bankruptcy](/compare/debt-settlement-vs-bankruptcy/) and check [what filing bankruptcy costs](/guides/how-much-does-it-cost-to-file-bankruptcy/)." },
       { heading: "Situations Where Aggressive Payoff Fails", body: "Aggressive debt payoff fails when a household possesses zero liquid savings. Directing every dollar of surplus cash into debt elimination without an emergency fund creates immediate fragility. When an unexpected car repair or medical copay occurs, a borrower with empty bank accounts must charge the expense back onto a credit card.\n\nSave a small emergency cushion sized to your own basic living costs before accelerating debt repayment. That modest cushion acts as a financial shock absorber, keeping your debt-reduction plan intact when unforeseen costs arise.\n\nAggressive payoff also fails if you carry debts with active collections lawsuits while ignoring basic survival necessities. Rent, utilities, and food must take priority over unsecured credit cards. Read our framework on [pay off debt or invest](/guides/pay-off-debt-or-invest/) to establish proper financial sequencing." },
       { heading: "Factors That Shift the Payoff Strategy", body: "Our recommendation shifts away from self-directed snowball or avalanche plans when your contractual minimum payments consume more than fifty percent of your net household income. If minimum payments exceed disposable cash flow, or if balances continue growing despite consistent payments, self-pay strategies cannot succeed.\n\nIn those circumstances, contact an NFCC-accredited nonprofit credit counseling agency to discuss a debt management plan. If your unsecured debts exceed your total annual income and repayment within five years is mathematically impossible, consult a bankruptcy attorney to evaluate Chapter 7 or Chapter 13 protection.\n\nTake action today. List every debt, then verify your monthly surplus. Choose one target account, and commit until your balances reach zero." },
     ],
