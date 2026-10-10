@@ -1,0 +1,88 @@
+{
+  "status": "OK",
+  "site": "sc-domain:themodernwallet.com",
+  "base_url": "https://www.themodernwallet.com",
+  "generated_at": "2026-10-10T17:12:02.119895+00:00",
+  "mode": "FIX",
+  "mode_override": null,
+  "google_update_ongoing": [],
+  "windows": {
+    "w90": [
+      "2026-07-09",
+      "2026-10-06"
+    ],
+    "w28": [
+      "2026-09-09",
+      "2026-10-06"
+    ],
+    "age_window": [
+      "2026-06-09",
+      "2026-08-22"
+    ]
+  },
+  "google_updates": {
+    "ongoing": [],
+    "recent_60d": [
+      {
+        "name": "September 2026 spam update",
+        "begin": "2026-09-24",
+        "end": "2026-10-08"
+      },
+      {
+        "name": "August 2026 spam update",
+        "begin": "2026-08-18",
+        "end": "2026-08-21"
+      }
+    ]
+  },
+  "band_median_ctr": {
+    "(0, 5)": 0.0,
+    "(5, 10)": 0.0014,
+    "(10, 15)": 0.02752,
+    "(15, 20.5)": 0.0
+  },
+  "pages": [],
+  "skipped": [
+    {
+      "path": "/guides/trump-account-alternatives",
+      "why": "cooldown (35 days)"
+    }
+  ],
+  "backlog": [
+    {
+      "path": "/guides/trump-account-alternatives",
+      "lane": "RANK",
+      "gain": 6.2
+    }
+  ],
+  "demand": [],
+  "unstable": [],
+  "stats": {
+    "pages_90d": 310,
+    "below_impression_floor": 290,
+    "too_young": 0,
+    "nav_or_hub": 0,
+    "mostly_synthetic": 1,
+    "beyond_page_2": 17,
+    "ctr_ok": 1,
+    "cooldown": 1,
+    "recently_edited": 0,
+    "impression_floor": 150,
+    "candidates": 1,
+    "picked": 0,
+    "top_pages_facts_only": 0
+  },
+  "provenance": {
+    "sources": [
+      "searchconsole.googleapis.com",
+      "analyticsdata.googleapis.com",
+      "status.search.google.com"
+    ],
+    "gsc_property": "sc-domain:themodernwallet.com",
+    "ga4_property": "543459487",
+    "service_account": "indexing-api-bot@caracas-research.iam.gserviceaccount.com",
+    "gsc_data_state": "final",
+    "third_party_sources": [],
+    "sha256": "656b0719fdf7bdaf36ecb7d2e272f59b6a5df5d979e250cf1e986dd4ccb49086"
+  }
+}
