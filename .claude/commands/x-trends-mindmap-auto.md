@@ -73,18 +73,28 @@ Phases that matter most: `phase-build-brief.md` → `phase-3-new-content.md` (AP
 Append one line per processed thread to `reports/x-trends/ledger.jsonl`, commit it with the run (it ships in the same `push`):
 `{"thread_id":"<id>","date":"<YYYY-MM-DD>","bullets":<n>,"published":[...urls],"enriched":[...urls],"status":"done|empty|nothing-shipped"}`
 
-If anything shipped, write `/tmp/x-trends-<YYYY-MM-DD>.md` with, in order:
-1. `## New pages` — every new URL as a markdown link, with the bullet that produced it after the dash.
-2. `## Enrichments` — every enriched URL, naming the section added.
-3. `## Dropped` — every bullet mindmap discarded, one-line reason each.
+If anything shipped, write `/tmp/x-trends-<YYYY-MM-DD>.md`. The owner reads this to see **which page came from which Grok Bot finding**, so every page line names its source bullet. Sections, in order:
+
+1. `## New pages` — one block per new page, exactly this shape:
+   ```
+   - **New page:** [<page title>](<live URL>)
+     **Based on Grok Bot <type>:** <the bullet's topic, in a few words> — <the reader question/angle from the bullet>
+     **Why now (per Grok):** <the bullet's "Why now" line>
+     **Grok sources:** <1–3 of the bullet's source links>
+   ```
+   `<type>` is one of: **trend**, **person**, **tool/product**, **company**, **question**, **comparison**, **law/regulation**, **event**. Pick the one that best describes what the bullet identified (e.g. "Based on Grok Bot person: Zain Javaid / Ghost Core", "Based on Grok Bot trend: HOA right-to-charge disputes").
+2. `## Enriched pages` — same block shape, starting `- **Enriched page:** [<title>](<URL>) — added "<section name>"`, then the same three **Based on / Why now / Grok sources** lines.
+3. `## Grok bullets not used` — every bullet from this site's section that did not become a page or enrichment: the bullet topic in a few words + one-line reason (already covered at <URL>, no demand, failed audit twice, out of scope, unverifiable claim, etc.). Every bullet received appears in exactly one of the three sections above.
 4. `## Live verification` — HTTP status for every changed URL.
 5. `## Writer` — which model wrote the prose (from the `.meta.json` files); say so plainly if it fell back from Claude.
+
+The `--summary` line names the count and the first page, e.g. `2 new pages from today's Grok Bot scout: "Can an HOA block an EV charger?" + 1 more.`
 
 ```bash
 REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
 .claude/scripts/send-routine-email.py --status success --skill x-trends-mindmap-auto \
   --site "$X_TRENDS_SITE" --repo "$REPO" --branch main --commit-sha "$(git rev-parse HEAD)" \
-  --summary "<N> new pages, <M> enrichments from today's X trend scout." \
+  --summary "<the summary line described above>" \
   --details-file /tmp/x-trends-<YYYY-MM-DD>.md
 ```
 Nothing shipped → no email (the ledger line still records the run).
