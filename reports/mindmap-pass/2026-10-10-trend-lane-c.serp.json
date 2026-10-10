@@ -1,0 +1,523 @@
+{
+ "rows": [
+  {
+   "keyword": "best home loan lenders",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.scotsmanguide.com",
+    "www.experian.com",
+    "www.nerdwallet.com",
+    "wallethub.com",
+    "wallethub.com",
+    "themortgagereports.com",
+    "wallethub.com",
+    "www.marketwatch.com",
+    "bestcompany.com",
+    "wallethub.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "local_pack": 3,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Which mortgage companies are the best in New Jersey?",
+    "How much commission do loan officers make on a $500,000 loan?",
+    "How much is a $300,000 mortgage at 7% interest?",
+    "Which bank is best for a housing loan?",
+    "Which Bank has the lowest housing loan rate?",
+    "Which Bank is easier to get a home loan?"
+   ],
+   "related_searches": [
+    "Best home loan lenders in usa",
+    "Best mortgage lenders for first-time buyers",
+    "Top 50 mortgage companies in USA",
+    "Top 100 Mortgage companies in USA",
+    "Best mortgage lenders with low interest rates",
+    "Top 25 Mortgage companies",
+    "List of mortgage companies in USA",
+    "Top 20 Mortgage companies in USA"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 114
+  },
+  {
+   "keyword": "last will online",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.freewill.com",
+    "www.freewill.com",
+    "www.reddit.com",
+    "www.uslegalwills.com",
+    "myend.com",
+    "www.youtube.com",
+    "www.doyourownwill.com",
+    "www.totallegal.com",
+    "carbon-gaul.com",
+    "www.metromin.org"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How do I create a will in Pennsylvania?",
+    "What is the best software to create a living trust?",
+    "Is it okay to do your will online?",
+    "What is the biggest mistake with wills?",
+    "What to never put in your will?",
+    "Who should you never name as a beneficiary?"
+   ],
+   "related_searches": [
+    "Last will online free",
+    "Example of a will PDF",
+    "Will Maker software Costco",
+    "Free will maker",
+    "Quicken WillMaker",
+    "Quicken WillMaker & Trust premium",
+    "Quicken WillMaker & Trust 2026 book online software kit",
+    "Best free online will maker"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 118
+  },
+  {
+   "keyword": "roth 401k versus traditional 401k",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.umcu.org",
+    "www.nerdwallet.com",
+    "www.benefits.ml.com",
+    "www.johnsonfinancialgroup.com",
+    "www.fidelity.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.benefits.ml.com",
+    "www.umcu.org",
+    "www.irs.gov",
+    "www.fidelity.com",
+    "www.johnsonfinancialgroup.com",
+    "www.mutualofamerica.com",
+    "www.empower.com",
+    "www.schwab.com",
+    "www.nerdwallet.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How much will $20,000 in 401k be worth in 20 years?",
+    "What is the downside to a Roth 401k?",
+    "What does Dave Ramsey say about Roth 401(k)?",
+    "At what salary should you not use a Roth 401(k)?",
+    "Can I max out my 401k and Roth 401k in the same year?",
+    "Should I split my 401k contribution between Roth and traditional?"
+   ],
+   "related_searches": [
+    "Roth 401k versus traditional 401k reddit",
+    "Roth vs traditional 401k calculator",
+    "Roth 401k versus traditional 401k withdrawal",
+    "Why Roth 401k is bad",
+    "Roth 401k versus traditional 401k fidelity",
+    "Roth 401k versus traditional 401k taxes",
+    "Roth 401k versus traditional 401k 2021",
+    "Roth 401k vs Roth IRA"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com) incl. #1; AI Overview present, cites www.umcu.org, www.nerdwallet.com, www.benefits.ml.com, www.johnsonfinancialgroup.com",
+   "se_results_count": 107
+  },
+  {
+   "keyword": "custodial account vs savings account",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.synchrony.com",
+    "www.bergerfinancialgroup.com",
+    "www.savingforcollege.com",
+    "www.schwab.com",
+    "www.youtube.com",
+    "heritagefcu.com",
+    "www.investopedia.com",
+    "www.facebook.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.nerdwallet.com",
+    "www.kpmcpa.com",
+    "reidadvisorsllc.com",
+    "www.youtube.com",
+    "www.businessinsider.com",
+    "www.maxwellfm.com",
+    "www.wellsfargo.com",
+    "www.reddit.com",
+    "www.facebook.com",
+    "meetfabric.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.reddit.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Does Vanguard have custodial accounts?",
+    "What is the difference between a student account and a savings account?",
+    "What are the key differences between a custodial IRA and a brokerage account?",
+    "What is a custodial etrade account?",
+    "What are the downsides of a custodial account?",
+    "What is the best investment account for a teen?"
+   ],
+   "related_searches": [
+    "Custodial account vs savings account reddit",
+    "Wells fargo custodial account vs savings account",
+    "Custodial account vs savings account taxes",
+    "Custodial account vs savings account pros and cons",
+    "Custodial account vs savings account fidelity",
+    "Types of custodial accounts",
+    "Custodial account vs 529",
+    "How to open a custodial account",
+    "What is custodial brokerage account",
+    "Custodial account for adults"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.youtube.com, www.reddit.com, www.facebook.com); AI Overview present, cites www.synchrony.com, www.bergerfinancialgroup.com, www.savingforcollege.com, www.schwab.com",
+   "se_results_count": 117
+  },
+  {
+   "keyword": "529 vs brokerage account",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.savingforcollege.com",
+    "www.farther.com",
+    "www.morningstar.com",
+    "www.youtube.com",
+    "www.cnbc.com",
+    "blog.acadviser.com",
+    "slpwealth.com",
+    "useorigin.com",
+    "www.investopedia.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.finra.org",
+    "www.facebook.com",
+    "www.merrilledge.com",
+    "investor.vanguard.com",
+    "www.linkedin.com",
+    "www.bogleheads.org",
+    "www.facebook.com",
+    "augustuswealth.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.facebook.com",
+    "www.linkedin.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What do 529 plans cover?",
+    "Is there a difference between an investment account and a brokerage account?",
+    "Is an education savings account the same as a 529?",
+    "Who should own a 529 account?",
+    "What does Dave Ramsey say about 529?",
+    "How much money should a 5 year old have in 529?",
+    "What happens to 529 when a child turns 21?"
+   ],
+   "related_searches": [
+    "529 vs brokerage account reddit",
+    "529 vs brokerage account vs 401k",
+    "Best 529 vs brokerage account",
+    "Fidelity 529 vs brokerage account",
+    "529 A",
+    "529 K-12 limit",
+    "Types of college savings accounts",
+    "Finra 529 plans",
+    "529 vs brokerage account calculator",
+    "529 account",
+    "529 vs Roth IRA",
+    "Best 529 plans"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.linkedin.com) incl. #1; AI Overview present, cites www.savingforcollege.com, www.farther.com, www.morningstar.com, www.youtube.com",
+   "se_results_count": 144
+  },
+  {
+   "keyword": "living trusts usa reviews",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "oag.ca.gov",
+    "www.facebook.com",
+    "www.askmyattorney.net",
+    "www.legalshield.com",
+    "www.youtube.com",
+    "www.contractscounsel.com",
+    "livingtrustcalifornia.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.yelp.com",
+    "ktelderlaw.com",
+    "www.attorneypaulcampo.com",
+    "www.elderlawanswers.com",
+    "www.yelp.com",
+    "livingtrustcalifornia.com",
+    "www.youtube.com",
+    "www.yelp.com",
+    "schomerlawgroup.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are the benefits of forming a living trust in California?",
+    "Who is the National Association of Family Services?",
+    "What are five things that should not be placed in a trust?",
+    "What is cheaper than a living trust?",
+    "What to never put in your will?",
+    "Can a nursing home take your house if it's in a trust?"
+   ],
+   "related_searches": [
+    "Living trusts usa reviews reddit",
+    "Living trusts usa reviews complaints",
+    "Living trusts usa reviews yelp",
+    "Living trusts usa reviews bbb",
+    "National Association of Family services reviews",
+    "National Association of Family Services reviews Yelp",
+    "National Association of Family Services reviews reddit",
+    "What is a living trust"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; AI Overview present, cites oag.ca.gov, www.facebook.com, www.askmyattorney.net, www.legalshield.com",
+   "se_results_count": 126
+  },
+  {
+   "keyword": "can custodial accounts be garnished",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.stash.com",
+    "www.avvo.com",
+    "www.reddit.com",
+    "www.unitedway.org",
+    "www.peoples-law.org",
+    "www.alperlaw.com",
+    "www.schwabmoneywise.com",
+    "ag.ny.gov",
+    "texaslawhelp.org",
+    "www.wellsfargo.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What type of accounts cannot be garnished?",
+    "Who owns the money in a custodial account?",
+    "Can a creditor take money from my child's bank account?",
+    "How do I protect my bank account from garnishment?",
+    "What states prohibit bank account garnishments?",
+    "How to stop garnishment immediately?"
+   ],
+   "related_searches": [
+    "Can custodial accounts be garnished reddit",
+    "Can custodial accounts be garnished in california",
+    "Can custodial accounts be garnished in texas",
+    "Can your bank account be garnished without notice",
+    "How long can child support freeze your bank account",
+    "How much can child support take from my bank account",
+    "CCPA garnishment",
+    "Child support garnishment rules"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 119
+  },
+  {
+   "keyword": "chase ultimate rewards points value",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.chase.com",
+    "www.nerdwallet.com",
+    "thepointsguy.com",
+    "www.cnbc.com",
+    "www.dailydrop.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.chase.com",
+    "www.nerdwallet.com",
+    "www.chase.com",
+    "thepointsguy.com",
+    "www.reddit.com",
+    "www.cnbc.com",
+    "www.facebook.com",
+    "www.thepointcalculator.com",
+    "www.chase.com",
+    "www.bankrate.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How much are 100,000 Chase Ultimate points worth?",
+    "How much are 50,000 Chase points worth in dollars?",
+    "Is 500,000 Chase points a lot?",
+    "How much are 200,000 Chase points worth?",
+    "Is 150,000 Chase Sapphire points a lot?",
+    "How long does it take to get 100,000 Chase points?"
+   ],
+   "related_searches": [
+    "Chase ultimate rewards points value sapphire",
+    "How much is 10,000 Chase points worth",
+    "Chase points value calculator",
+    "How much Is 100,000 Chase points worth",
+    "How much is 75,000 Chase points worth for travel",
+    "Chase Ultimate Rewards customer service phone number",
+    "125,000 Chase points to dollars",
+    "How much is $1,000 Chase points worth"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.chase.com, www.nerdwallet.com, thepointsguy.com, www.cnbc.com",
+   "se_results_count": 99
+  },
+  {
+   "keyword": "best lenders for home loans",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.forbes.com",
+    "www.clearlending.com",
+    "www.forbes.com",
+    "bestcompany.com",
+    "www.zillow.com",
+    "www.hsh.com",
+    "wallethub.com",
+    "wallethub.com",
+    "money.usnews.com",
+    "www.nerdwallet.com"
+   ],
+   "major_domains": [
+    "www.forbes.com",
+    "www.forbes.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "people_also_search": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Which mortgage companies are the best in New Jersey?",
+    "How much commission do loan officers make on a $500,000 loan?",
+    "What is the average rate of a home equity loan?",
+    "Which bank is best for a housing loan?",
+    "Which Bank has the lowest housing loan rate?",
+    "Which Bank is easier to get a home loan?"
+   ],
+   "related_searches": [
+    "Best lenders for home loans reddit",
+    "Best mortgage lenders for first-time buyers",
+    "Best lenders for home loans 2022",
+    "Rocket Mortgage",
+    "Top online mortgage lenders",
+    "Best mortgage lenders in NJ",
+    "Best mortgage lenders Indianapolis",
+    "Best mortgage rates"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "2/10 major platforms (www.forbes.com, www.forbes.com); AI Overview present",
+   "se_results_count": 119
+  }
+ ],
+ "cost": "DataForSEO: 9 calls, $0.03735 of $2.00 budget"
+}
