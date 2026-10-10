@@ -67,3 +67,28 @@
 | /compare/custodial-account-vs-savings-account/ | 2026-10-03 | custodial account vs savings account | none (no AIO) | n/a | n/a | none | n/a |
 | /roundup/best-tax-relief-companies/ | 2026-10-03 | irs approved 2290 providers | ABSENT | no | irs.gov/expresstrucktax.com/truckdues.com (+2 more) | none | n/a |
 | /roundup/best-money-market-accounts/ | 2026-10-03 | find me money market account options with top account accessibility. | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /roundup/best-mortgage-lenders/ | 2026-10-10 | best company for mortgage loans | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /roundup/best-online-will-makers/ | 2026-10-10 | build a will online | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| / | 2026-10-10 | best iul calculator free | ABSENT | no | insurancegeek.com/locallifeagents.com/ispyinsurance.com (+3 more) | none | n/a |
+| /compare/custodial-account-vs-savings-account/ | 2026-10-10 | custodial account vs savings account | ABSENT | no | synchrony.com/bergerfinancialgroup.com/savingforcollege.com (+5 more) | none | n/a |
+| /roundup/best-living-trust-services/ | 2026-10-10 | cheap irrevocable trust | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /guides/defensive-investment-strategy/ | 2026-10-10 | defensive equity | ABSENT | no | investopedia.com/morningstar.com/corporatefinanceinstitute.com (+7 more) | none | n/a |
+| /guides/trump-account-worth-it/ | 2026-10-10 | are the trump accounts a good idea | ABSENT | no | cato.org/usbank.com/bipartisanpolicy.org (+7 more) | none | n/a |
+| /compare/llc-vs-c-corp/ | 2026-10-10 | c corp to run llc | ABSENT | no | guidantfinancial.com/reddit.com/youtube.com (+5 more) | none | n/a |
+| /compare/bilt-rewards-vs-chase-ultimate-rewards/ | 2026-10-10 | are bilt points worth more than chase ultimate rewards? | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /budget/ | 2026-10-10 | nerdwallet budget calculator | ABSENT | no | nerdwallet.com/youtube.com | none | n/a |
+| /roundup/best-money-market-accounts/ | 2026-10-10 | find me money market account options with top account accessibility. | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /compare/529-vs-brokerage-account/ | 2026-10-10 | 529 brokerage account | ABSENT | no | savingforcollege.com/fidelity.com/schwab.com (+5 more) | none | n/a |
+| /compare/roth-401k-vs-traditional-401k/ | 2026-10-10 | roth 401k tax rate | ABSENT | no | fidelity.com/irs.gov/crr.bc.edu (+4 more) | none | n/a |
+| /about/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /business-line-of-credit/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /merchant-cash-advance/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /invoice-factoring/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /roundup/best-net-worth-tracker/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /guides/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /investing/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /roundup/best-401k-providers-for-small-business/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /auto-loan/payoff-calculator/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /compliance/colorado-antitrust-premerger-notification-update/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /compliance/colorado-cottage-foods-act-expansion/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /methodology/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
