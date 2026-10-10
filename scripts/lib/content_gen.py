@@ -5,7 +5,13 @@ ONE generator for every routine that writes new pages. The MODEL is a config val
 code path, so swapping models fleet-wide is one env change:
 
     CONTENT_MODEL=gemini-3.8-flash          primary  (default)
-    CONTENT_FALLBACK_MODEL=gpt-6.1-sol    used ONLY when the primary fails; always logged
+    CONTENT_FALLBACK_MODEL=gpt-6.1-sol    used ONLY when the primary fails; always logged.
+                                            A comma list is an ordered chain, e.g. growth sites:
+                                            CONTENT_MODEL=claude-opus-5-5
+                                            CONTENT_FALLBACK_MODEL=gemini-3.8-flash,gpt-6.1-sol
+    CONTENT_ANTHROPIC_EFFORT=high           Claude effort (adaptive thinking); CONTENT_THINKING
+                                            keeps governing the Gemini/OpenAI fallbacks
+    CONTENT_ANTHROPIC_KEY / _KEY_2          Claude key POOL: key 2 takes over when key 1 is dry
     CONTENT_THINKING=high                   reasoning effort (gemini thinkingLevel / openai effort)
     CONTENT_SECTION_THINKING=high           ceiling for `section` enrichments (never above CONTENT_THINKING)
     CONTENT_MAX_TOKENS=40000                thinking tokens count against this on Gemini
@@ -81,8 +87,6 @@ import urllib.error
 import urllib.request
 
 # ───────────────────────────── config ─────────────────────────────
-MODEL = os.environ.get("CONTENT_MODEL", "gemini-3.8-flash")
-FALLBACK = os.environ.get("CONTENT_FALLBACK_MODEL", "gpt-6.1-sol")
 # Reasoning effort is HIGH for every writer model (Gemini thinkingLevel, OpenAI reasoning
 # effort, Anthropic extended thinking). Standard set 2026-09-06. An empty or unrecognised
 # value falls back to "high" rather than silently omitting reasoning; a numeric value is a
@@ -104,6 +108,27 @@ def _load_repo_config() -> None:
         if (c / ".git").exists():
             return
 _load_repo_config()
+# OPUS-PRIMARY (2026-10-09): read AFTER the repo file loads — read before it, a CONTENT_MODEL line in
+# .claude/content-gen.env was silently ignored.
+MODEL = os.environ.get("CONTENT_MODEL", "gemini-3.8-flash")
+FALLBACK = os.environ.get("CONTENT_FALLBACK_MODEL", "gpt-6.1-sol")
+ANTHROPIC_EFFORT = os.environ.get("CONTENT_ANTHROPIC_EFFORT", "high").strip().lower()
+if ANTHROPIC_EFFORT not in ("low", "medium", "high", "xhigh", "max"):
+    ANTHROPIC_EFFORT = "high"
+
+
+def _fallbacks() -> list:
+    """FALLBACK as an ordered list (a comma list is a chain), primary and repeats removed."""
+    out = []
+    for m in (FALLBACK or "").split(","):
+        m = m.strip()
+        if m and m != MODEL and m not in out:
+            out.append(m)
+    return out
+
+
+def _chain() -> list:
+    return [MODEL] + _fallbacks()
 _t = os.environ.get("CONTENT_THINKING", "high").strip().lower()
 THINKING = _t if (_t in ("low", "medium", "high") or _t.lstrip("-").isdigit()) else "high"
 if _t and THINKING != _t:
@@ -135,7 +160,12 @@ RATES = {
     "gemini-3.1-flash-lite": (0.25, 1.50),
     "gpt-6.1-sol": (2.00, 10.00),
     "gpt-6-sol": (2.00, 10.00),
+    "claude-opus-5-5": (4.00, 20.00),
+    "claude-sonnet-5-5": (2.00, 10.00),
 }
+# Cached-input share of the input rate where it differs from CACHED_RATE (Claude cache reads
+# bill $0.20 vs $4.00 on Opus 5.5 = 0.05).
+CACHED_RATES = {"claude-opus-5-5": 0.05, "claude-sonnet-5-5": 0.10}
 # Explicit context caching (2026-09-12): the system prompt is byte-identical for every page in a
 # run (~25k tokens), so it is cached ONCE per run and referenced per call. Cached input bills at
 # a fraction of the input rate (CONTENT_RATE_CACHED, default 0.10 of input — Google's published
@@ -281,7 +311,8 @@ def resolve_key(provider: str) -> tuple[str, str]:
         # Site-scoped key first, then the repo default. NEVER a client-scoped key by default
         # (billing attribution is per site — memory: openai-cost-attribution-split).
         "openai": ("CONTENT_OPENAI_KEY", "OPENAI_API_KEY"),
-        "anthropic": ("ANTHROPIC_API_KEY",),
+        # Dedicated content keys only (a pool: _KEY_2 takes over when _KEY is out of credit).
+        "anthropic": ("CONTENT_ANTHROPIC_KEY", "CONTENT_ANTHROPIC_KEY_2"),
     }[provider]
     for n in names:
         v = os.environ.get(n, "").strip()
@@ -437,24 +468,124 @@ def call_openai(model: str, system: str, prompt: str, max_tokens: int, thinking:
             "thinking_tokens": det.get("reasoning_tokens"), "response_id": resp.get("id")}
 
 
+# OPUS-PRIMARY (2026-10-09) — Claude as a writer. Opus 5.5 rejects budget_tokens and disabled thinking (400):
+# thinking is adaptive and depth is output_config.effort (CONTENT_ANTHROPIC_EFFORT, default
+# high; its API default is medium). Streamed so a long page never hits an idle HTTP timeout.
+# The system prompt (~21k tokens, identical across a run) is cached: reads bill at 5% of input.
+_ANTH_DRY = set()   # key names that came back out-of-credit / unauthorised this process
+
+
+def _anthropic_keys() -> list:
+    load_secrets()
+    keys = []
+    # Content keys ONLY — never ANTHROPIC_API_KEY, which may be another account's CLI key.
+    for n in ("CONTENT_ANTHROPIC_KEY", "CONTENT_ANTHROPIC_KEY_2"):
+        v = os.environ.get(n, "").strip()
+        if v and n not in _ANTH_DRY and v not in [k for _, k in keys]:
+            keys.append((n, v))
+    if not keys:
+        raise KeyError("no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2)"
+                       + (f" — dry: {', '.join(sorted(_ANTH_DRY))}" if _ANTH_DRY else ""))
+    return keys
+
+
+def _post_stream_anthropic(key: str, payload: dict, timeout: int = 900) -> dict:
+    """POST /v1/messages with stream=true; returns a message-shaped dict (text, usage, stop)."""
+    body = json.dumps(dict(payload, stream=True), ensure_ascii=True).encode("utf-8")
+    headers = {"x-api-key": key, "anthropic-version": "2023-06-01",
+               "Content-Type": "application/json", "accept": "text/event-stream"}
+    last = None
+    for attempt in range(1, RETRIES + 1):
+        req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, headers=headers)
+        try:
+            msg = {"id": None, "model": payload["model"], "stop_reason": None, "stop_details": None,
+                   "usage": {}, "text": []}
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                event = None
+                for raw in r:
+                    line = raw.decode("utf-8", "replace").rstrip("\r\n")
+                    if line.startswith("event:"):
+                        event = line[6:].strip()
+                        continue
+                    if not line.startswith("data:"):
+                        continue
+                    d = json.loads(line[5:].strip() or "{}")
+                    t = d.get("type") or event
+                    if t == "message_start":
+                        m = d.get("message") or {}
+                        msg["id"] = m.get("id"); msg["model"] = m.get("model", msg["model"])
+                        msg["usage"].update(m.get("usage") or {})
+                    elif t == "content_block_delta":
+                        delta = d.get("delta") or {}
+                        if delta.get("type") == "text_delta":
+                            msg["text"].append(delta.get("text", ""))
+                    elif t == "message_delta":
+                        delta = d.get("delta") or {}
+                        msg["stop_reason"] = delta.get("stop_reason") or msg["stop_reason"]
+                        msg["stop_details"] = delta.get("stop_details") or msg["stop_details"]
+                        msg["usage"].update({k: v for k, v in (d.get("usage") or {}).items() if v is not None})
+                    elif t == "error":
+                        err = d.get("error") or {}
+                        raise RuntimeError(f"stream error {err.get('type')}: {str(err.get('message'))[:300]}")
+            if msg["stop_reason"] is None:
+                raise RuntimeError("stream ended without message_delta (connection cut)")
+            msg["text"] = "".join(msg["text"])
+            return msg
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode("utf-8", "replace")[:600]
+            last = f"HTTP {e.code}: {detail}"
+            if e.code not in (429, 500, 502, 503, 504, 529) and 400 <= e.code < 500:
+                raise RuntimeError(last)
+        except RuntimeError as e:
+            last = str(e)
+            if "overloaded" not in last and "api_error" not in last and "connection cut" not in last:
+                raise
+        except Exception as e:  # noqa: BLE001
+            last = f"{type(e).__name__}: {e}"
+        if attempt < RETRIES:
+            wait = min(2 ** attempt, BACKOFF_CAP)
+            log(f"retry {attempt}/{RETRIES - 1} in {wait}s ({last[:110]})")
+            time.sleep(wait)
+    raise RuntimeError(f"all {RETRIES} attempts failed. Last: {last}")
+
+
+def _anth_key_dead(err: str) -> bool:
+    e = err.lower()
+    return ("credit balance" in e or "billing" in e or "HTTP 401" in err or "HTTP 403" in err
+            or "authentication_error" in e or "permission_error" in e)
+
+
 def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinking: str) -> dict:
-    name, key = resolve_key("anthropic")
-    payload = {"model": model, "max_tokens": min(max_tokens, 64000), "system": system,
-               "messages": [{"role": "user", "content": prompt}]}
-    # extended thinking: "high" ≈ a large budget; low/medium scale down. Budget must be < max_tokens.
-    if thinking in ("low", "medium", "high"):
-        budget = {"low": 2048, "medium": 8192, "high": 16384}[thinking]
-        payload["thinking"] = {"type": "enabled", "budget_tokens": min(budget, payload["max_tokens"] - 4096)}
-    resp = _post("https://api.anthropic.com/v1/messages",
-                 {"x-api-key": key, "anthropic-version": "2023-06-01",
-                  "Content-Type": "application/json"}, payload)
-    text = "\n".join(b.get("text", "") for b in resp.get("content", []) if b.get("type") == "text")
-    u = resp.get("usage") or {}
-    finish = "MAX_TOKENS" if resp.get("stop_reason") == "max_tokens" else "STOP"
-    return {"text": text, "finish": finish, "key_source": name, "model": resp.get("model", model),
-            "provider": "anthropic", "input_tokens": u.get("input_tokens"),
-            "output_tokens": u.get("output_tokens"), "thinking_tokens": None,
-            "response_id": resp.get("id")}
+    effort = "low" if CMD == "preflight" else ANTHROPIC_EFFORT
+    payload = {"model": model, "max_tokens": min(max_tokens, 128000),
+               "system": [{"type": "text", "text": system or " ",
+                           **({"cache_control": {"type": "ephemeral"}} if CACHE_ON and len(system or "") >= 8000 else {})}],
+               "messages": [{"role": "user", "content": prompt}],
+               "thinking": {"type": "adaptive"},
+               "output_config": {"effort": effort}}
+    errors = []
+    for name, key in _anthropic_keys():
+        try:
+            resp = _post_stream_anthropic(key, payload)
+        except RuntimeError as e:
+            if _anth_key_dead(str(e)):
+                _ANTH_DRY.add(name)
+                log(f"anthropic key {name} unusable ({str(e)[:120]}) — trying the next key in the pool")
+                errors.append(f"{name}: {str(e)[:160]}")
+                continue
+            raise
+        if resp["stop_reason"] == "refusal":
+            cat = (resp.get("stop_details") or {}).get("category")
+            raise RuntimeError(f"refusal (category={cat}) — handing the call to the next model")
+        u = resp["usage"]
+        cached = u.get("cache_read_input_tokens") or 0
+        total_in = (u.get("input_tokens") or 0) + cached + (u.get("cache_creation_input_tokens") or 0)
+        finish = "MAX_TOKENS" if resp["stop_reason"] == "max_tokens" else "STOP"
+        return {"text": resp["text"], "finish": finish, "key_source": name, "model": resp.get("model") or model,
+                "provider": "anthropic", "input_tokens": total_in, "cached_tokens": cached,
+                "output_tokens": u.get("output_tokens"), "thinking_tokens": None,   # output includes thinking
+                "effort": effort, "response_id": resp.get("id")}
+    raise RuntimeError("every anthropic key in the pool failed: " + " | ".join(errors))
 
 
 CALLERS = {"gemini": call_gemini, "openai": call_openai, "anthropic": call_anthropic}
@@ -604,7 +735,7 @@ def generate(system: str, prompt: str) -> dict:
     if LAST_SCOPE["dropped_sections"] or LAST_SCOPE["html_comments_dropped"]:
         log(f"writer scope: dropped ≈{LAST_SCOPE['tokens_dropped_est']:,} tokens from the system prompt "
             f"({', '.join(LAST_SCOPE['dropped_sections'])[:160]}); ≈{LAST_SCOPE['tokens_sent_est']:,} sent")
-    chain = [MODEL] + ([FALLBACK] if FALLBACK and FALLBACK != MODEL else [])
+    chain = _chain()
     errors = []
     for i, model in enumerate(chain):
         if i == 0 and FORCE_FALLBACK:
@@ -621,7 +752,7 @@ def generate(system: str, prompt: str) -> dict:
         why = "provider reported MAX_TOKENS" if r["finish"] == "MAX_TOKENS" else looks_truncated(r["text"], JSON_MODE)
         if why:
             # Cheapest rung first: the SAME model with double the cap, once, before falling back.
-            cap = {"gemini": 65536, "openai": 128000, "anthropic": 64000}[provider_for(model)]
+            cap = {"gemini": 65536, "openai": 128000, "anthropic": 128000}[provider_for(model)]
             retry_tokens = min(MAX_TOKENS * 2, cap)
             log(f"{model}: truncated ({why}) at MAX_TOKENS={MAX_TOKENS} — retrying once "
                 f"with {retry_tokens} (provider ceiling {cap})")
@@ -700,9 +831,10 @@ def complete(system: str, prompt: str, *, model: str = None, max_tokens: int = N
                 log(f"complete(): json_mode output not parseable from {r['model']} — regenerating once")
                 r2 = generate(system or "", prompt); t2 = strip_fences(r2["text"])
                 if _ok(t2): return t2
-                if FALLBACK and FALLBACK != MODEL:
-                    log(f"complete(): still not JSON — trying fallback {FALLBACK}")
-                    m0 = MODEL; MODEL = FALLBACK
+                if _fallbacks():
+                    fb = _fallbacks()[0]
+                    log(f"complete(): still not JSON — trying fallback {fb}")
+                    m0 = MODEL; MODEL = fb
                     try:
                         r3 = generate(system or "", prompt); t3 = strip_fences(r3["text"])
                     finally:
@@ -1402,15 +1534,18 @@ def est_cost(model: str, it, ot, tt, ct=0) -> float | None:
     if not rate or it is None or ot is None:
         return None
     ct = min(ct or 0, it)   # cached tokens are part of promptTokenCount, billed at the cached rate
-    return round(((it - ct) * rate[0] + ct * rate[0] * CACHED_RATE + (ot + (tt or 0)) * rate[1]) / 1_000_000, 4)
+    cr = CACHED_RATES.get(model.lower(), CACHED_RATE)
+    return round(((it - ct) * rate[0] + ct * rate[0] * cr + (ot + (tt or 0)) * rate[1]) / 1_000_000, 4)
 
 
 def cmd_preflight(a) -> int:
     global CMD
     CMD = "preflight"
-    chain = [MODEL] + ([FALLBACK] if FALLBACK else [])
+    chain = _chain()
     print(f"[content_gen] primary   : {MODEL} ({provider_for(MODEL)})")
-    print(f"[content_gen] fallback  : {FALLBACK or 'none'}")
+    print(f"[content_gen] fallback  : {' -> '.join(_fallbacks()) or 'none'}")
+    if provider_for(MODEL) == "anthropic":
+        print(f"[content_gen] claude effort: {ANTHROPIC_EFFORT} (adaptive thinking)")
     print(f"[content_gen] thinking  : {THINKING}   max_tokens: {MAX_TOKENS}")
     # "Never block a routine on a dry key": the run may proceed if the PRIMARY answers, or —
     # failing that — the FALLBACK does (write() then falls back, loudly). A cloud sandbox that
