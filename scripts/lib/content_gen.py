@@ -174,10 +174,11 @@ RATES = {
     "gpt-6-sol": (2.00, 10.00),
     "claude-opus-5-5": (4.00, 20.00),
     "claude-sonnet-5-5": (2.00, 10.00),
+    "claude-haiku-5-5": (0.10, 0.50),
 }
 # Cached-input share of the input rate where it differs from CACHED_RATE (Claude cache reads
 # bill $0.20 vs $4.00 on Opus 5.5 = 0.05).
-CACHED_RATES = {"claude-opus-5-5": 0.05, "claude-sonnet-5-5": 0.10}
+CACHED_RATES = {"claude-opus-5-5": 0.05, "claude-sonnet-5-5": 0.10, "claude-haiku-5-5": 0.10}
 # Explicit context caching (2026-09-12): the system prompt is byte-identical for every page in a
 # run (~25k tokens), so it is cached ONCE per run and referenced per call. Cached input bills at
 # a fraction of the input rate (CONTENT_RATE_CACHED, default 0.10 of input — Google's published
@@ -250,7 +251,7 @@ def record(r: dict, *, kind: str, discarded: bool = False, note: str = None) -> 
     try:
         it, ot, tt = r.get("input_tokens"), r.get("output_tokens"), r.get("thinking_tokens")
         ct = r.get("cached_tokens") or 0
-        cost = est_cost(r.get("model", "?"), it, ot, tt, ct)
+        cost = _cost_of(r)
         _RUN["calls"] += 1
         _RUN["in"] += it or 0; _RUN["out"] += ot or 0; _RUN["think"] += tt or 0
         if cost is None and (it or ot):
@@ -262,7 +263,7 @@ def record(r: dict, *, kind: str, discarded: bool = False, note: str = None) -> 
             "caller": CALLER, "kind": kind, "model": r.get("model"),
             "provider": r.get("provider"), "input_tokens": it, "output_tokens": ot,
             "thinking_tokens": tt, "cached_tokens": ct, "cost_usd": cost, "thinking": THINKING,
-            "cmd": CMD,
+            "cmd": CMD, "service_tier": r.get("service_tier"),
             "fallback_used": bool(r.get("fallback_used")), "finish": r.get("finish"),
             "discarded": discarded, "note": note, "repo": (_repo_root().name if _repo_root() else None),
             "response_id": r.get("response_id"),
@@ -561,6 +562,59 @@ def _post_stream_anthropic(key: str, payload: dict, timeout: int = 900) -> dict:
     raise RuntimeError(f"all {RETRIES} attempts failed. Last: {last}")
 
 
+# CLAUDE-BATCH (2026-10-10): the Message Batches API bills EVERY token (cache reads/writes included) at 50%, with the
+# same model, effort and prompt — identical quality. Measured 2026-10-10: a full Opus page batch
+# ended in ~6 min (same as a live call), a small call in ~2.3 min. Unattended routines/crons use it
+# by default; CONTENT_ANTHROPIC_BATCH=0 for a live (faster) call. A batch not ended within
+# CONTENT_ANTHROPIC_BATCH_WAIT seconds is cancelled and the call is made live instead.
+def _batch_anthropic(key: str, payload: dict) -> dict:
+    H = {"x-api-key": key, "anthropic-version": "2023-06-01", "Content-Type": "application/json"}
+    base = "https://api.anthropic.com/v1/messages/batches"
+
+    def req(method, url, body=None, tries=5):
+        last = None
+        for attempt in range(1, tries + 1):
+            r = urllib.request.Request(url, method=method, headers=H,
+                                       data=json.dumps(body, ensure_ascii=True).encode() if body is not None else None)
+            try:
+                with urllib.request.urlopen(r, timeout=120) as x:
+                    return x.read().decode("utf-8", "replace")
+            except urllib.error.HTTPError as e:
+                last = f"HTTP {e.code}: {e.read().decode('utf-8', 'replace')[:600]}"
+                if e.code not in (429, 500, 502, 503, 504, 529):
+                    raise RuntimeError(last)
+            except Exception as e:  # noqa: BLE001
+                last = f"{type(e).__name__}: {e}"
+            time.sleep(min(2 ** attempt, BACKOFF_CAP))
+        raise RuntimeError(f"batch request failed: {last}")
+
+    wait = int(os.environ.get("CONTENT_ANTHROPIC_BATCH_WAIT", "2400"))
+    b = json.loads(req("POST", base, {"requests": [{"custom_id": "content_gen", "params": payload}]}))
+    bid, t0, delay = b["id"], time.time(), 10
+    log(f"anthropic batch {bid} submitted (50% tier) — polling")
+    while True:
+        time.sleep(delay); delay = min(delay + 5, 30)
+        st = json.loads(req("GET", f"{base}/{bid}"))
+        if st.get("processing_status") == "ended":
+            break
+        if time.time() - t0 > wait:
+            try: req("POST", f"{base}/{bid}/cancel", {})
+            except Exception: pass  # noqa: BLE001
+            raise TimeoutError(f"batch {bid} not ended after {wait}s — cancelled")
+    line = next((l for l in req("GET", st["results_url"]).splitlines() if l.strip()), "{}")
+    res = json.loads(line).get("result") or {}
+    if res.get("type") != "succeeded":
+        err = (res.get("error") or {}).get("error") or res.get("error") or {}
+        if res.get("type") in ("expired", "canceled"):
+            raise TimeoutError(f"batch {bid} {res.get('type')}")
+        raise RuntimeError(f"HTTP 400: batch {res.get('type')} {err.get('type')}: {str(err.get('message'))[:300]}")
+    m = res["message"]
+    log(f"anthropic batch {bid} ended in {time.time() - t0:.0f}s")
+    return {"id": m.get("id"), "model": m.get("model"), "stop_reason": m.get("stop_reason"),
+            "stop_details": m.get("stop_details"), "usage": m.get("usage") or {}, "service_tier": "batch",
+            "text": "".join(c.get("text", "") for c in m.get("content") or [] if c.get("type") == "text")}
+
+
 def _anth_key_dead(err: str) -> bool:
     e = err.lower()
     return ("credit balance" in e or "billing" in e or "HTTP 401" in err or "HTTP 403" in err
@@ -594,6 +648,11 @@ def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinki
     # the level it asks for (CONTENT_CLAIMCHECK_THINKING, medium); page/section writers at ANTHROPIC_EFFORT.
     # FIXED-CHAIN-LEVELS (2026-10-10): USER RULE — every Claude call runs at ANTHROPIC_EFFORT (high), the claim checker too.
     effort = "low" if CMD == "preflight" else ANTHROPIC_EFFORT
+    # CHECKER-MODEL: CONTENT_CLAIMCHECK_CLAUDE_EFFORT=native runs the claim checker at the level each
+    # pass asks for (medium, final pass low — the tuned levels); a level name pins it.
+    _cce = os.environ.get("CONTENT_CLAIMCHECK_CLAUDE_EFFORT", "").strip().lower()
+    if CMD != "preflight" and os.environ.get("CONTENT_KIND") == "claim-check" and _cce:
+        effort = (thinking if thinking in ("low", "medium", "high") else "medium") if _cce == "native" else _cce
     # CLAUDE-TOKEN-FLOOR (2026-10-10): thinking counts against max_tokens, and radar callers pass ~12k caps sized for
     # Gemini — at effort high Opus spent them thinking and came back truncated (billed, discarded).
     # Streaming bills only tokens actually produced, so a writer call gets at least 32k.
@@ -617,7 +676,14 @@ def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinki
     errors = []
     for name, key in _anthropic_keys():
         try:
-            resp = _post_stream_anthropic(key, payload)
+            resp = None
+            if CMD != "preflight" and os.environ.get("CONTENT_ANTHROPIC_BATCH", "1") != "0":
+                try:
+                    resp = _batch_anthropic(key, payload)
+                except TimeoutError as te:
+                    log(f"{te} — making the call live instead")
+            if resp is None:
+                resp = _post_stream_anthropic(key, payload)
         except RuntimeError as e:
             if _anth_key_dead(str(e)):
                 _ANTH_DRY.add(name)
@@ -640,7 +706,8 @@ def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinki
                 "key_source": name, "model": resp.get("model") or model,
                 "provider": "anthropic", "input_tokens": total_in, "cached_tokens": cached,
                 "output_tokens": u.get("output_tokens"), "thinking_tokens": None,   # output includes thinking
-                "effort": effort, "response_id": resp.get("id")}
+                "effort": effort, "response_id": resp.get("id"), "service_tier": resp.get("service_tier"),
+                "thinking_tokens_reported": (u.get("output_tokens_details") or {}).get("thinking_tokens")}
     raise RuntimeError("every anthropic key in the pool failed: " + " | ".join(errors))
 
 
@@ -845,7 +912,7 @@ def generate(system: str, prompt: str) -> dict:
         # Always log a successful generation: a silent success is invisible in cron logs, and
         # "did this run actually use Gemini?" must be answerable from the log alone.
         log(f"ok model={r['model']} in={r.get('input_tokens')} out={r.get('output_tokens')} "
-            f"think={r.get('thinking_tokens')} cached={r.get('cached_tokens') or 0} cost≈${est_cost(r['model'], r.get('input_tokens'), r.get('output_tokens'), r.get('thinking_tokens'), r.get('cached_tokens') or 0)}"
+            f"think={r.get('thinking_tokens')} cached={r.get('cached_tokens') or 0} cost≈${_cost_of(r)}{' batch' if r.get('service_tier') == 'batch' else ''}"
             f"{' FALLBACK' if i > 0 else ''}")
         record(r, kind=os.environ.get("CONTENT_KIND", "generate"))
         return r
@@ -1462,7 +1529,10 @@ def _checker_call(system: str, prompt: str, thinking: str = None) -> list | None
     saved_kind, saved_t = os.environ.get("CONTENT_KIND"), TEMPERATURE
     os.environ["CONTENT_KIND"] = "claim-check"; TEMPERATURE = 0.2
     try:
+        # CHECKER-MODEL (2026-10-10): the claim checker may run on its own model (CONTENT_CLAIMCHECK_MODEL, e.g.
+        # claude-sonnet-5-5); the normal fallback chain still applies behind it.
         text = complete(system, prompt, json_mode=True, writer_scope=False, thinking=thinking or CLAIMCHECK_THINKING,
+                        model=os.environ.get("CONTENT_CLAIMCHECK_MODEL") or None,
                         max_tokens=CLAIMCHECK_MAX_TOKENS)
     except Exception as e:  # noqa: BLE001
         log(f"claim check unavailable ({type(e).__name__}: {str(e)[:140]})"); return None
@@ -1587,6 +1657,13 @@ def _finish_guards(page, fmt: str, a, report: dict, cc: dict) -> tuple:
 
 
 # ───────────────────────────── commands ─────────────────────────────
+def _cost_of(r: dict) -> float | None:
+    """CLAUDE-BATCH (2026-10-10): est_cost for a provider result; the Message Batches tier bills every token at 50%."""
+    c = est_cost(r.get("model") or "?", r.get("input_tokens"), r.get("output_tokens"), r.get("thinking_tokens"),
+                 r.get("cached_tokens") or 0)
+    return round(c * 0.5, 4) if c is not None and r.get("service_tier") == "batch" else c
+
+
 def est_cost(model: str, it, ot, tt, ct=0) -> float | None:
     rin = os.environ.get("CONTENT_RATE_IN"); rout = os.environ.get("CONTENT_RATE_OUT")
     rate = (float(rin), float(rout)) if rin and rout else RATES.get(model.lower())
@@ -1855,7 +1932,7 @@ def cmd_write(a) -> int:
         "finish_reason": r["finish"], "words": report["words"], "floor": a.floor,
         "input_tokens": r["input_tokens"], "output_tokens": r["output_tokens"],
         "thinking_tokens": r["thinking_tokens"], "cached_tokens": r.get("cached_tokens") or 0,
-        "est_cost_usd": est_cost(r["model"], r["input_tokens"], r["output_tokens"], r["thinking_tokens"], r.get("cached_tokens") or 0),
+        "est_cost_usd": _cost_of(r), "service_tier": r.get("service_tier"),
         "guards": {**report, "writer_scope": LAST_SCOPE}, "seconds": round(time.time() - t0, 1),
         "response_id": r["response_id"],
         "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
