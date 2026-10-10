@@ -555,6 +555,28 @@ def _anth_key_dead(err: str) -> bool:
             or "authentication_error" in e or "permission_error" in e)
 
 
+def _bare_json(text: str) -> str:
+    """CLAUDE-BARE-JSON (2026-10-10): Gemini (responseMimeType) and OpenAI (json_object) return bare JSON; Claude may
+    wrap it in a ```json fence or add a sentence around it. looks_truncated() parses the raw
+    text, so a fenced reply read as "cut mid-structure" — retried at 2x the cap, billed, discarded
+    (travel radar 2026-10-10). Return the bare JSON when the reply contains a parseable object."""
+    t = strip_fences(text or "")
+    try:
+        json.loads(t, strict=False); return t
+    except Exception:  # noqa: BLE001
+        pass
+    starts = [i for i in (t.find("{"), t.find("[")) if i >= 0]
+    if starts:
+        i = min(starts); j = max(t.rfind("}"), t.rfind("]"))
+        if j > i:
+            cand = t[i:j + 1]
+            try:
+                json.loads(cand, strict=False); return cand
+            except Exception:  # noqa: BLE001
+                pass
+    return text   # genuinely cut off or not JSON: let looks_truncated() decide
+
+
 def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinking: str) -> dict:
     # CLAUDE-PARITY (2026-10-10): parity with the Gemini/OpenAI calls — the claim checker (a JSON auditor) runs at
     # the level it asks for (CONTENT_CLAIMCHECK_THINKING, medium); page/section writers at ANTHROPIC_EFFORT.
@@ -604,7 +626,8 @@ def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinki
         cached = u.get("cache_read_input_tokens") or 0
         total_in = (u.get("input_tokens") or 0) + cached + (u.get("cache_creation_input_tokens") or 0)
         finish = "MAX_TOKENS" if resp["stop_reason"] == "max_tokens" else "STOP"
-        return {"text": resp["text"], "finish": finish, "key_source": name, "model": resp.get("model") or model,
+        return {"text": _bare_json(resp["text"]) if JSON_MODE else resp["text"], "finish": finish,
+                "key_source": name, "model": resp.get("model") or model,
                 "provider": "anthropic", "input_tokens": total_in, "cached_tokens": cached,
                 "output_tokens": u.get("output_tokens"), "thinking_tokens": None,   # output includes thinking
                 "effort": effort, "response_id": resp.get("id")}
