@@ -3033,10 +3033,10 @@ export const ROUNDUPS: RoundupEntry[] = [
         name: "Fidelity Self-Employed 401(k)",
         bestFor: "Solo business owners (no employees) wanting maximum contribution limits and zero plan fees",
         description:
-          "The Fidelity Self-Employed 401(k) (also called an Individual 401(k) or Solo 401(k)) is designed for self-employed individuals with no full-time employees other than a spouse. It allows contributions as both employee and employer — up to $70,000 total for 2025 ($77,500 with catch-up if 50+).\n\nFidelity charges no administrative fees, no setup fees, and offers its full investment lineup including ZERO expense ratio index funds. It's the lowest-cost way for sole proprietors to shelter the maximum amount.",
+          "The Fidelity Self-Employed 401(k) (also called an Individual 401(k) or Solo 401(k)) is designed for self-employed individuals with no full-time employees other than a spouse. It allows contributions as both employee and employer — up to $72,000 total for 2026 ($80,000 with catch-up if 50+, or $83,250 if 60–63).\n\nFidelity charges no administrative fees, no setup fees, and offers its full investment lineup including ZERO expense ratio index funds. It's the lowest-cost way for sole proprietors to shelter the maximum amount.",
         strengths: [
           "No plan fees — zero administrative or setup cost",
-          "Highest contribution limits of any self-employed retirement account (up to $70,000 in 2025)",
+          "Highest contribution limits of any self-employed retirement account (up to $72,000 in 2026)",
           "Access to Fidelity's full investment lineup including ZERO funds",
           "Roth Solo 401(k) option available",
           "Loan provision available",
@@ -3105,7 +3105,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         heading: "What are the tax advantages of a small business 401(k)?",
         content:
-          "A 401(k) plan offers two distinct tax benefits to small business owners: employee contribution deductions and employer contribution deductions. Employee contributions reduce taxable income for the participant (Traditional 401(k)) or grow tax-free (Roth 401(k)). Employer contributions are deductible as a business expense on the company's tax return.\n\nFor S-corp and C-corp business owners who pay themselves a W-2 salary, the 401(k) is one of the most powerful tax reduction tools available. A solo 401(k) allows you to contribute both as the employee (up to $23,500 in 2025) and as the employer (up to 25% of compensation) — for a combined maximum of $70,000.\n\nOur <a href=\"/retirement/\">retirement calculator</a> can model how consistent 401(k) contributions reduce your tax burden and grow over time.",
+          "A 401(k) plan offers two distinct tax benefits to small business owners: employee contribution deductions and employer contribution deductions. Employee contributions reduce taxable income for the participant (Traditional 401(k)) or grow tax-free (Roth 401(k)). Employer contributions are deductible as a business expense on the company's tax return.\n\nFor S-corp and C-corp business owners who pay themselves a W-2 salary, the 401(k) is one of the most powerful tax reduction tools available. A solo 401(k) allows you to contribute both as the employee (up to $24,500 in 2026) and as the employer (up to 25% of compensation) — for a combined maximum of $72,000.\n\nOur <a href=\"/retirement/\">retirement calculator</a> can model how consistent 401(k) contributions reduce your tax burden and grow over time.",
       },
       {
         heading: "What is a Safe Harbor 401(k) and does your business need one?",
@@ -3135,9 +3135,9 @@ export const ROUNDUPS: RoundupEntry[] = [
           "Setup costs range from $0 (Fidelity and Vanguard solo 401(k)s have no setup fee) to several hundred dollars for some traditional providers. Ongoing costs typically include a monthly base fee ($49–$150+) plus a per-participant fee ($4–$10/month per employee) at modern providers like Guideline and Human Interest. Custom-priced providers (ADP, Paychex) may bundle fees differently. The SECURE 2.0 Act of 2022 provides tax credits of up to $5,000/year for three years to offset startup costs for new small business retirement plans — significantly reducing the net cost for many employers.",
       },
       {
-        question: "What is the 401(k) contribution limit for small business owners in 2025?",
+        question: "What is the 401(k) contribution limit for small business owners in 2026?",
         answer:
-          "In 2025, the 401(k) employee contribution limit is $23,500 ($31,000 if 50 or older, including the $7,500 catch-up). The total combined limit (employee + employer contributions) is $70,000 ($77,500 with catch-up). For solo 401(k)s, business owners can contribute as both employee and employer — making the maximum $70,000 achievable with sufficient business income. Employer matching contributions are deductible as a business expense up to 25% of total eligible compensation.",
+          "In 2026, the 401(k) employee contribution limit is $24,500 ($32,500 if 50 or older, including the $8,000 catch-up; ages 60–63 can use an $11,250 catch-up instead). The total combined limit (employee + employer contributions) is $72,000 ($80,000 with catch-up, or $83,250 for ages 60–63). For solo 401(k)s, business owners can contribute as both employee and employer — making the maximum $72,000 achievable with sufficient business income. Employer matching contributions are deductible as a business expense up to 25% of total eligible compensation.",
       },
       {
         question: "Do small businesses have to offer 401(k) matches?",
@@ -3152,7 +3152,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         question: "What are the alternatives to a 401(k) for a small business?",
         answer:
-          "A 401(k) isn't the only retirement plan a small business can offer. A SIMPLE IRA trades a lower employee deferral limit ($16,500 in 2025, plus a $3,500 catch-up) for far less administrative overhead — no Form 5500 filing, no nondiscrimination testing — in exchange for a mandatory employer match (or 2% non-elective contribution) every year; see our [SIMPLE IRA vs. 401(k)](/compare/simple-ira-vs-401k/) breakdown for the full contribution and admin-cost comparison. If you're self-employed with no full-time employees, a SEP IRA or Solo 401(k) usually beats either option: a Solo 401(k) allows the highest combined contribution room (up to $70,000 in 2025 across employee and employer contributions) plus a Roth option, while a SEP IRA is the simpler of the two to administer — our [SEP IRA vs. Solo 401(k)](/compare/sep-ira-vs-solo-401k/) guide walks through which fits your situation.",
+          "A 401(k) isn't the only retirement plan a small business can offer. A SIMPLE IRA trades a lower employee deferral limit ($17,000 in 2026, plus a $4,000 catch-up for most plans) for far less administrative overhead — no Form 5500 filing, no nondiscrimination testing — in exchange for a mandatory employer match (or 2% non-elective contribution) every year; see our [SIMPLE IRA vs. 401(k)](/compare/simple-ira-vs-401k/) breakdown for the full contribution and admin-cost comparison. If you're self-employed with no full-time employees, a SEP IRA or Solo 401(k) usually beats either option: a Solo 401(k) allows the highest combined contribution room (up to $72,000 in 2026 across employee and employer contributions) plus a Roth option, while a SEP IRA is the simpler of the two to administer — our [SEP IRA vs. Solo 401(k)](/compare/sep-ira-vs-solo-401k/) guide walks through which fits your situation.",
       },
       {
         question: "Do part-time or seasonal employees have to be included in a 401(k) plan?",
@@ -3163,7 +3163,7 @@ export const ROUNDUPS: RoundupEntry[] = [
     sources: [
       { label: "IRS — 401(k) Plans for Small Businesses", url: "https://www.irs.gov/retirement-plans/401k-plans" },
       { label: "DOL — SECURE 2.0 Act Summary", url: "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/faqs/secure-2-0-act" },
-      { label: "IRS — 2025 Retirement Plan Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits" },
+      { label: "IRS — 2026 Retirement Plan Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits" },
     ],
     relatedComparisons: ["401k-vs-roth-ira", "roth-401k-vs-traditional-401k", "sep-ira-vs-solo-401k", "simple-ira-vs-401k"],
     calculatorLinks: [
