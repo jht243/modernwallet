@@ -129,6 +129,18 @@ def _fallbacks() -> list:
 
 def _chain() -> list:
     return [MODEL] + _fallbacks()
+
+
+# FIXED-CHAIN-LEVELS (2026-10-10): CONTENT_FALLBACK_THINKING pins the Gemini/OpenAI level for EVERY call (radar, people
+# radar, section ceilings, claim checker) so the chain is exactly: Claude at ANTHROPIC_EFFORT,
+# fallbacks at this level. Unset = the per-call level as before.
+FALLBACK_THINKING = os.environ.get("CONTENT_FALLBACK_THINKING", "").strip().lower()
+
+
+def _think_for(model: str) -> str:
+    if provider_for(model) != "anthropic" and FALLBACK_THINKING in ("low", "medium", "high"):
+        return FALLBACK_THINKING
+    return THINKING
 _t = os.environ.get("CONTENT_THINKING", "high").strip().lower()
 THINKING = _t if (_t in ("low", "medium", "high") or _t.lstrip("-").isdigit()) else "high"
 if _t and THINKING != _t:
@@ -580,12 +592,8 @@ def _bare_json(text: str) -> str:
 def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinking: str) -> dict:
     # CLAUDE-PARITY (2026-10-10): parity with the Gemini/OpenAI calls — the claim checker (a JSON auditor) runs at
     # the level it asks for (CONTENT_CLAIMCHECK_THINKING, medium); page/section writers at ANTHROPIC_EFFORT.
-    if CMD == "preflight":
-        effort = "low"
-    elif os.environ.get("CONTENT_KIND") == "claim-check" and thinking in ("low", "medium", "high"):
-        effort = thinking
-    else:
-        effort = ANTHROPIC_EFFORT
+    # FIXED-CHAIN-LEVELS (2026-10-10): USER RULE — every Claude call runs at ANTHROPIC_EFFORT (high), the claim checker too.
+    effort = "low" if CMD == "preflight" else ANTHROPIC_EFFORT
     # CLAUDE-TOKEN-FLOOR (2026-10-10): thinking counts against max_tokens, and radar callers pass ~12k caps sized for
     # Gemini — at effort high Opus spent them thinking and came back truncated (billed, discarded).
     # Streaming bills only tokens actually produced, so a writer call gets at least 32k.
@@ -788,7 +796,7 @@ def generate(system: str, prompt: str) -> dict:
             errors.append(f"{model}: CONTENT_FORCE_FALLBACK=1 (test hook)")
             continue
         try:
-            r = CALLERS[provider_for(model)](model, system, prompt, MAX_TOKENS, THINKING)
+            r = CALLERS[provider_for(model)](model, system, prompt, MAX_TOKENS, _think_for(model))
         except Exception as e:  # noqa: BLE001
             errors.append(f"{model}: {type(e).__name__}: {str(e)[:200]}")
             log(f"{model} failed -> {errors[-1][:160]}")
@@ -805,7 +813,7 @@ def generate(system: str, prompt: str) -> dict:
             record(r, kind="truncated-discarded", discarded=True,
                    note=f"{why}; output thrown away; retried at {retry_tokens}")
             try:
-                r = CALLERS[provider_for(model)](model, system, prompt, retry_tokens, THINKING)
+                r = CALLERS[provider_for(model)](model, system, prompt, retry_tokens, _think_for(model))
             except Exception as e:  # noqa: BLE001
                 errors.append(f"{model}: retry failed: {str(e)[:160]}"); continue
             why2 = ("provider reported MAX_TOKENS" if r["finish"] == "MAX_TOKENS"
