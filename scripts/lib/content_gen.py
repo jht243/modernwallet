@@ -557,6 +557,11 @@ def _anth_key_dead(err: str) -> bool:
 
 def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinking: str) -> dict:
     effort = "low" if CMD == "preflight" else ANTHROPIC_EFFORT
+    # CLAUDE-TOKEN-FLOOR (2026-10-10): thinking counts against max_tokens, and radar callers pass ~12k caps sized for
+    # Gemini — at effort high Opus spent them thinking and came back truncated (billed, discarded).
+    # Streaming bills only tokens actually produced, so a writer call gets at least 32k.
+    if CMD != "preflight":
+        max_tokens = max(max_tokens, int(os.environ.get("CONTENT_ANTHROPIC_MIN_TOKENS", "32000")))
     payload = {"model": model, "max_tokens": min(max_tokens, 128000),
                "system": [{"type": "text", "text": system or " ",
                            **({"cache_control": {"type": "ephemeral"}} if CACHE_ON and len(system or "") >= 8000 else {})}],
