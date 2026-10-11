@@ -1,12 +1,13 @@
 import { useMemo, useState } from "react";
-import { computePortfolio, type PortfolioInput } from "../lib/portfolio";
+import { computePortfolio, ASSETS, type PortfolioInput } from "../lib/portfolio";
+import { useDraft } from "./calc-ui";
 import { fmtUSD, fmtPct, fmtNum } from "../lib/format";
 
 // PortfolioIQ island. Asset-allocation analysis: weighted expected return, volatility, Sharpe ratio,
 // a likely 1-year range, and a long-run growth projection. Fully standalone — no host coupling.
 
 interface Props {
-  initialData?: Partial<PortfolioInput>;
+  initialData?: Partial<PortfolioInput> & { show6040Gap?: boolean };
   heading?: string;
   subheading?: string;
 }
@@ -20,7 +21,10 @@ const SLICE_COLORS: Record<string, string> = {
 };
 
 export default function PortfolioCalculator({ initialData, heading, subheading }: Props) {
-  const [v, setV] = useState<PortfolioInput>({ ...DEFAULTS, ...initialData });
+  // show6040Gap (60/40 page): show what a 60/40 split of the reader's own total would be next to what they hold,
+  // and the per-asset return/volatility assumptions behind the headline numbers.
+  const { show6040Gap, ...preset } = initialData ?? {};
+  const [v, setV] = useState<PortfolioInput>({ ...DEFAULTS, ...preset });
   const [showSchedule, setShowSchedule] = useState(false);
   const r = useMemo(() => computePortfolio(v), [v]);
   const set = (p: Partial<PortfolioInput>) => setV((s) => ({ ...s, ...p }));
@@ -84,6 +88,18 @@ export default function PortfolioCalculator({ initialData, heading, subheading }
           <div style={S.note}>
             A typical year could range from <strong>{fmtUSD(r.oneYearWorst)}</strong> to <strong>{fmtUSD(r.oneYearBest)}</strong> (expected return ± one standard deviation). Higher Sharpe = more return per unit of risk.
           </div>
+          {show6040Gap && r.total != null && r.total > 0 && (
+            <div style={S.note}>
+              A 60/40 split of your {fmtUSD(r.total)} is <strong>{fmtUSD(r.total * 0.6)} stocks / {fmtUSD(r.total * 0.4)} bonds</strong>. You hold {fmtUSD(v.stocks)} / {fmtUSD(v.bonds)}
+              {(v.realEstate ?? 0) + v.cash > 0 ? `, plus ${fmtUSD((v.realEstate ?? 0) + v.cash)} in real estate and cash` : ""}.
+            </div>
+          )}
+          {show6040Gap && (
+            <div style={S.assumptions}>
+              Assumed long-run yearly return / volatility:{" "}
+              {Object.values(ASSETS).map((a) => `${a.label} ${fmtPct(a.expectedReturn * 100, 1)} / ${fmtPct(a.volatility * 100, 0)}`).join(" · ")}. Estimates, not guarantees.
+            </div>
+          )}
 
           {(v.years ?? 0) > 0 && (
             <div style={S.proj}>
@@ -120,20 +136,21 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
   return <label style={S.field}><span style={S.label}>{label}</span>{children}</label>;
 }
 function Money({ v, on }: { v: number; on: (n: number) => void }) {
+  const d = useDraft(v, on, (v) => v.toLocaleString("en-US"));
   return (
     <div style={S.suffixWrap}>
       <span style={S.prefix}>$</span>
-      <input style={{ ...S.input, paddingLeft: 22 }} inputMode="numeric" value={v === 0 ? "" : v.toLocaleString("en-US")} placeholder="0" onChange={(e) => on(parse(e.target.value))} />
+      <input style={{ ...S.input, paddingLeft: 22 }} inputMode="numeric" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} />
     </div>
   );
 }
 function Plain({ v, on }: { v: number; on: (n: number) => void }) {
-  return <input style={S.input} inputMode="numeric" value={v} onChange={(e) => on(parse(e.target.value))} />;
+  const d = useDraft(v, on);
+  return <input style={S.input} inputMode="numeric" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} />;
 }
 function Stat({ label, value }: { label: string; value: string }) {
   return <div style={S.stat}><span style={S.statLabel}>{label}</span><span style={S.statValue}>{value}</span></div>;
 }
-function parse(s: string): number { if (s === "") return 0; return Math.max(0, Number(s.replace(/[^0-9.]/g, "")) || 0); }
 
 const PRIMARY = "#0E7C66";
 const S: Record<string, React.CSSProperties> = {
@@ -164,6 +181,7 @@ const S: Record<string, React.CSSProperties> = {
   statLabel: { fontSize: "0.78rem", color: "#666" },
   statValue: { fontSize: "1.12rem", fontWeight: 700, fontVariantNumeric: "tabular-nums" },
   note: { fontSize: "0.83rem", color: "#5a6b66", background: "#F1F8F5", border: "1px solid #DCECE6", borderRadius: 8, padding: "10px 12px", lineHeight: 1.5 },
+  assumptions: { fontSize: "0.76rem", color: "#7a8783", lineHeight: 1.5 },
   proj: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, paddingTop: 4, borderTop: "1px solid #E6F0EC" },
   toggle: { marginTop: 2, padding: "9px 12px", border: "1px solid #CFE3DC", background: "#fff", borderRadius: 8, fontSize: "0.88rem", fontWeight: 600, color: PRIMARY, cursor: "pointer" },
   tableWrap: { marginTop: 18, overflowX: "auto", border: "1px solid #EAEFED", borderRadius: 10 },

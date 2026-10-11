@@ -3,6 +3,7 @@ import {
   projectRetirement, early401kWithdrawal, computeRMD,
   type RetirementProjectionInput, type EarlyWithdrawalInput,
 } from "../lib/retirement";
+import { useDraft } from "./calc-ui";
 import { fmtUSD, fmtPct, fmtNum } from "../lib/format";
 
 // RetirementIQ island. One component, three modes (chosen via initialData.mode):
@@ -46,6 +47,11 @@ function Projection({ data }: { data?: Record<string, unknown> }) {
   });
   const r = useMemo(() => projectRetirement(v), [v]);
   const set = (p: Partial<RetirementProjectionInput>) => setV((s) => ({ ...s, ...p }));
+  // showSocialSecurity (Social Security page): the reader adds the monthly benefit from their own SSA
+  // statement; total income = 4%-rule income + that benefit. No benefit is estimated here.
+  const showSocialSecurity = Boolean(data?.showSocialSecurity);
+  const [ssBenefit, setSsBenefit] = useState(0);
+  const totalMonthly = r.monthlyRetirementIncome == null ? null : r.monthlyRetirementIncome + ssBenefit;
   return (
     <div style={S.grid}>
       <div style={S.inputs}>
@@ -59,6 +65,9 @@ function Projection({ data }: { data?: Record<string, unknown> }) {
           <Field label="Annual return %"><Pct v={v.annualReturnPct} on={(n) => set({ annualReturnPct: n })} /></Field>
           <Field label="Inflation %"><Pct v={v.inflationPct ?? 3} on={(n) => set({ inflationPct: n })} /></Field>
         </div>
+        {showSocialSecurity && (
+          <Field label="Monthly Social Security benefit (from your SSA statement, optional)"><Money v={ssBenefit} on={setSsBenefit} /></Field>
+        )}
       </div>
       <div style={S.results}>
         <div style={S.bigStat}>
@@ -66,6 +75,12 @@ function Projection({ data }: { data?: Record<string, unknown> }) {
           <span style={S.bigValue}>{fmtUSD(r.balanceAtRetirement)}</span>
           <span style={S.bigSub}>≈ {fmtUSD(r.balanceAtRetirementTodaysDollars)} in today's dollars</span>
         </div>
+        {showSocialSecurity && ssBenefit > 0 && (
+          <div style={S.statRow}>
+            <Stat label="Total monthly income" value={fmtUSD(totalMonthly)} />
+            <Stat label="Social Security" value={fmtUSD(ssBenefit)} />
+          </div>
+        )}
         <div style={S.statRow}>
           <Stat label="Monthly income (4% rule)" value={fmtUSD(r.monthlyRetirementIncome)} />
           <Stat label="You contribute" value={fmtUSD(r.totalContributions)} />
@@ -170,25 +185,27 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
   return <label style={S.field}><span style={S.label}>{label}</span>{children}</label>;
 }
 function Money({ v, on }: { v: number; on: (n: number) => void }) {
+  const d = useDraft(v, on, (v) => v.toLocaleString("en-US"));
   return (
     <div style={S.suffixWrap}>
       <span style={S.prefix}>$</span>
       <input style={{ ...S.input, paddingLeft: 22 }} inputMode="numeric"
-        value={v === 0 ? "" : v.toLocaleString("en-US")} placeholder="0"
-        onChange={(e) => on(parse(e.target.value))} />
+        value={d.text} placeholder="0"
+        onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} />
     </div>
   );
 }
 function Pct({ v, on }: { v: number; on: (n: number) => void }) {
-  return <div style={S.suffixWrap}><input style={S.input} inputMode="decimal" value={v} onChange={(e) => on(parse(e.target.value))} /><span style={S.suffix}>%</span></div>;
+  const d = useDraft(v, on);
+  return <div style={S.suffixWrap}><input style={S.input} inputMode="decimal" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} /><span style={S.suffix}>%</span></div>;
 }
 function Plain({ v, on }: { v: number; on: (n: number) => void }) {
-  return <input style={S.input} inputMode="numeric" value={v} onChange={(e) => on(parse(e.target.value))} />;
+  const d = useDraft(v, on);
+  return <input style={S.input} inputMode="numeric" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} />;
 }
 function Stat({ label, value }: { label: string; value: string }) {
   return <div style={S.stat}><span style={S.statLabel}>{label}</span><span style={S.statValue}>{value}</span></div>;
 }
-function parse(s: string): number { if (s === "") return 0; return Math.max(0, Number(s.replace(/[^0-9.]/g, "")) || 0); }
 function num(x: unknown, d: number): number { const n = Number(x); return Number.isFinite(n) && n !== 0 ? n : (x === 0 || x === "0" ? 0 : d); }
 
 const PRIMARY = "#0E7C66";

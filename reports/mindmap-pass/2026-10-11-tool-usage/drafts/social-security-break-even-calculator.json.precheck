@@ -1,0 +1,48 @@
+{
+  "metaTitle": "Social Security Break Even Calculator: 62 vs 67 vs 70",
+  "metaDescription": "Free Social Security break even calculator. Enter your full retirement age benefit and see the age when claiming later pays more in total.",
+  "introText": "A Social Security break even calculator finds your break-even age, which is the age past which claiming later instead of earlier has paid you more in total. For anyone born in 1960 or later, full retirement age is 67. Waiting from 62 to full retirement age breaks even at age 78 and 8 months. Waiting from full retirement age to 70 breaks even at age 82 and 6 months. Enter your own benefit, birth year and two claiming ages in the calculator above to find your break-even age.\n\nFor example, take a $2,000 monthly benefit at full retirement age for someone born in 1962. Claiming at 62 pays $1,400 a month. Claiming at 70 pays $2,480 a month. By age 80, the claim at 62 has paid $302,400 in total. The claim at 67 has paid $312,000 by then. By age 85, those totals reach $386,400 and $432,000.",
+  "howItWorks": "The calculator first sets your full retirement age from your birth year, then cuts the benefit for each month you claim before that age. Full retirement age is 66 for people born 1943 through 1954. It rises by two months for each birth year after 1954. Anyone born 1960 or later has a full retirement age of 67. The cut is 5/9 of 1% per month for the first 36 months early. Each month beyond 36 costs another 5/12 of 1%. With a full retirement age of 67, claiming at 62 pays 70% of the full benefit. That 30% reduction turns a $2,000 benefit into $1,400 a month.\n\nAfter full retirement age, the calculator adds delayed retirement credits of 2/3 of 1% per month, which is 8% a year. Credits stop at 70. With a full retirement age of 67, claiming at 70 pays 124% of the full benefit. On a $2,000 benefit, that is $2,480 a month. The results show each claim's monthly benefit next to its share of the full benefit, so the reduction and the credit sit side by side.\n\nThe break-even age is the first age at which the later claim's running total reaches the earlier claim's total. Each total starts at its own claiming age and adds one monthly payment per month, so the earlier claim builds a lead that the larger later payment has to close. In the example, waiting from 62 to full retirement age breaks even at age 78 and 8 months. Waiting from full retirement age to 70 breaks even at age 82 and 6 months. The table lists each claim's total in five-year steps from age 70 to 95. At age 80, claiming at 62 has paid $302,400. Claiming at 67 has paid $312,000. At age 85, those totals are $386,400 and $432,000.\n\nThe optional cost-of-living input raises both claims by the same percentage each year. Left at its default, every amount stays in today's dollars. Because the increase scales both claims alike, it changes the dollar totals in the table more than it moves the break-even age. The calculator does not supply a cost-of-living rate, so any number you enter is your own assumption.\n\nClaiming ages are whole years from 62 to 70. The benefit you type is the full retirement age amount from your Social Security statement, and the calculator does not estimate it. The earnings test, income taxes, and spousal and survivor benefits are not modeled. Treat the break-even age as one input to the decision, alongside your health, your other income and a spouse's benefits. Once you pick a claiming age, add that monthly benefit to a savings projection in the [Social Security retirement calculator](/retirement/social-security-retirement-calculator/).",
+  "faqs": [
+    {
+      "question": "What is a Social Security break-even calculator?",
+      "answer": "A Social Security break-even calculator finds the age at which a later claim has paid more in total than an earlier one. You enter your full retirement age benefit, your birth year and two claiming ages. It returns the break-even age, the monthly benefit for each claim, and running totals by age."
+    },
+    {
+      "question": "What is the break-even age for claiming at 62 vs 67?",
+      "answer": "For anyone born in 1960 or later, full retirement age is 67. Waiting from 62 to full retirement age breaks even at age 78 and 8 months. If you live past 78 and 8 months, claiming at 67 has paid more in total."
+    },
+    {
+      "question": "Should I take Social Security at 65 or 67?",
+      "answer": "Take a $2,000 benefit with a full retirement age of 67. Claiming at 65 pays $1,733 a month. Waiting until 67 breaks even at age 80. The better choice depends on your health, your other income and a spouse's benefits, which this calculator does not weigh."
+    },
+    {
+      "question": "How much more do I get by waiting until 70?",
+      "answer": "With a full retirement age of 67, waiting until 70 pays 124% of the full benefit. On a $2,000 benefit, that is $2,480 a month. Compared with claiming at full retirement age, the wait breaks even at age 82 and 6 months. Compared with claiming at 62, it breaks even at age 80 and 5 months."
+    },
+    {
+      "question": "Where do I find my benefit at full retirement age?",
+      "answer": "Your benefit at full retirement age is on your Social Security statement, which you can view in a [my Social Security account](https://www.ssa.gov/myaccount/). Enter that monthly amount in the calculator as shown. The calculator does not estimate it for you."
+    },
+    {
+      "question": "Does working before full retirement age change the math?",
+      "answer": "Yes, if you claim before full retirement age and keep working, the Social Security Administration (SSA) [2026 earnings test](https://www.ssa.gov/oact/cola/rtea.html) can withhold benefits. Before the year you reach full retirement age, SSA withholds $1 for every $2 earned above $24,480. In that year, it withholds $1 for every $3 above $65,160. Withheld benefits are not lost, since SSA raises your monthly benefit at full retirement age, but this calculator does not model the earnings test."
+    },
+    {
+      "question": "Does this calculator include spousal or survivor benefits?",
+      "answer": "No. The calculator compares two claims on your own benefit only. SSA's rules for spousal and survivor benefits differ from the rules for your own retirement benefit, so the break-even age shown here does not cover them."
+    },
+    {
+      "question": "Is Social Security taxable?",
+      "answer": "This calculator does not model income taxes, so every total it shows is before tax. The guide [is Social Security taxable](/guides/is-social-security-taxable/) covers when benefits are taxed."
+    }
+  ],
+  "slug": "social-security-break-even-calculator",
+  "h1": "",
+  "subtitle": "",
+  "sections": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

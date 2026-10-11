@@ -53,7 +53,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
   },
 
   {
-    updated: "2026-10-10",
+    updated: "2026-10-11",
     calculator: "portfolio",
     slug: "60-40-portfolio-calculator",
     title: "60/40 Portfolio Calculator: Return, Risk & Growth",
@@ -66,7 +66,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
     introText:
       "A 60/40 portfolio is a classic balanced mix of 60% stocks and 40% bonds. The calculator above shows its expected return, risk, and how it might grow over time. Enter your stock and bond amounts to see the figures for your own money. These are long-run model estimates, not guarantees.\n\nHow much you hold in stocks versus bonds can also change as you age. Use the [asset allocation calculator](/portfolio/asset-allocation-calculator/) to see how that mix should shift over time.\n\nFor more detail, see [Asset Allocation by Age](/guides/asset-allocation-by-age/).",
     howItWorks:
-      "A 60/40 portfolio blends the growth of stocks with the steadier nature of bonds. The calculator above weights each asset by its share of your money. Stocks are modeled at a 10% return with 16% volatility. Bonds are modeled at a 4% return with 5% volatility. Both sides are commonly built with a single broad index fund. See our [best index funds](/roundup/best-index-funds/) roundup for specific picks.\n\nThe tool then combines these to find your portfolio's expected return, its volatility, and its Sharpe ratio. The Sharpe ratio measures return earned above a 2.5% risk-free rate per unit of risk. Higher is better. The growth projection compounds your expected return over the years you choose. To try other splits, use the [asset allocation calculator](/portfolio/asset-allocation-calculator/).",
+      "A 60/40 portfolio blends the growth of stocks with the steadier nature of bonds. The calculator above weights each asset by its share of your money. Stocks are modeled at a 10% return with 16% volatility. Bonds are modeled at a 4% return with 5% volatility. Both sides are commonly built with a single broad index fund. See our [best index funds](/roundup/best-index-funds/) roundup for specific picks.\n\nThe tool then combines these to find your portfolio's expected return, its volatility, and its Sharpe ratio. The Sharpe ratio measures return earned above a 2.5% risk-free rate per unit of risk. Higher is better. The growth projection compounds your expected return over the years you choose. To try other splits, use the [asset allocation calculator](/portfolio/asset-allocation-calculator/). To see how much to buy or sell to get back to 60/40, use the [portfolio rebalancing calculator](/portfolio-rebalancing-calculator/).",
     commonMistakes: [
       "Treating the 10% stock and 4% bond figures as guaranteed. They are long-run model assumptions, and real returns vary widely year to year.",
       "Assuming stocks and bonds always move in opposite directions. In some years, such as 2022, both fell together and challenged the 60/40 mix; see [how the mix has performed since](/guides/is-60-40-portfolio-dead/) for the fuller picture.",
@@ -103,7 +103,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
     ],
     toolHeading: "Analyze the classic 60/40 portfolio",
     toolSubheading: "See the expected return, risk, and growth of a 60% stock, 40% bond mix.",
-    preset: { stocks: 60000, bonds: 40000, realEstate: 0, cash: 0, monthlyContribution: 0, years: 30 },
+    preset: { stocks: 60000, bonds: 40000, realEstate: 0, cash: 0, monthlyContribution: 0, years: 30, show6040Gap: true },
     relatedSlugs: ["asset-allocation-calculator", "expected-return-calculator", "portfolio-risk-calculator"],
   },
 

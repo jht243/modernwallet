@@ -733,6 +733,7 @@ export const CALCULATORS: CalculatorDef[] = [
 
   {
     id: "trump-account",
+    updated: "2026-10-11",
     islandId: "trump-account",
     label: "Trump Account",
     navOrder: 13,
@@ -1664,6 +1665,204 @@ export const CALCULATORS: CalculatorDef[] = [
     ],
     updated: "2026-10-11",
     defaultPreset: {"startBalance": 10000, "monthlyContribution": 500, "years": 30, "grossReturnPct": 7, "ratioAPct": 0.05, "ratioBPct": 1},
+  },
+  // Social Security Break-Even calculator — tool-usage pass (2026-10-11), the next tool after a used seed tool. Prose generated via
+  // scripts/lib/content_gen.py (meta beside the draft in reports/mindmap-pass/2026-10-11-tool-usage/drafts/).
+  {
+    id: "social-security-break-even-calculator",
+    islandId: "social-security-break-even-calculator",
+    label: "Social Security Break-Even",
+    navOrder: 46,
+    metaTitle: "Social Security Break Even Calculator: 62 vs 67 vs 70",
+    metaDescription:
+      "Free Social Security break even calculator. Enter your full retirement age benefit and see the age when claiming later pays more in total.",
+    targetKeyword: "social security break even calculator",
+    h1: "Social Security Break-Even Calculator",
+    introText:
+      "A Social Security break even calculator finds your break-even age, which is the age past which claiming later instead of earlier has paid you more in total. For anyone born in 1960 or later, full retirement age is 67. Waiting from 62 to full retirement age breaks even at age 78 and 8 months. Waiting from full retirement age to 70 breaks even at age 82 and 6 months. Enter your own benefit, birth year and two claiming ages in the calculator above to find your break-even age.\n\nFor example, take a $2,000 monthly benefit at full retirement age for someone born in 1962. Claiming at 62 pays $1,400 a month, and claiming at 67 pays $2,000. Claiming at 70 pays $2,480 a month. By age 80, the claim at 62 has paid $302,400 in total. The claim at 67 has paid $312,000 by then. By age 85, those totals reach $386,400 and $432,000.",
+    howItWorks:
+      "The calculator first sets your full retirement age from your birth year, then cuts the benefit for each month you claim before that age. Full retirement age is 66 for people born 1943 through 1954. It rises by two months for each birth year after 1954. Anyone born 1960 or later has a full retirement age of 67. The cut is 5/9 of 1% per month for the first 36 months early. Each month beyond 36 costs another 5/12 of 1%. With a full retirement age of 67, claiming at 62 pays 70% of the full benefit. That 30% reduction turns a $2,000 benefit into $1,400 a month.\n\nAfter full retirement age, the calculator adds delayed retirement credits of 2/3 of 1% per month, which is 8% a year. Credits stop at 70. With a full retirement age of 67, claiming at 70 pays 124% of the full benefit. On a $2,000 benefit, that is $2,480 a month. The results show each claim's monthly benefit next to its share of the full benefit, so the reduction and the credit sit side by side.\n\nThe break-even age is the first age at which the later claim's running total reaches the earlier claim's total. Each total starts at its own claiming age and adds one monthly payment per month, so the earlier claim builds a lead that the larger later payment has to close. In the example, waiting from 62 to full retirement age breaks even at age 78 and 8 months. Waiting from full retirement age to 70 breaks even at age 82 and 6 months. The table lists each claim's total by ages 70, 75, 80, 85, 90 and 95. At age 80, claiming at 62 has paid $302,400. Claiming at 67 has paid $312,000. At age 85, those totals are $386,400 and $432,000.\n\nThe optional cost-of-living input raises both claims by the same percentage each year. Left at its default, every amount stays in today's dollars. Because the increase scales both claims alike, it changes the dollar totals in the table more than it moves the break-even age. \n\nClaiming ages are whole years from 62 to 70. The benefit you type is the full retirement age amount from your Social Security statement, and the calculator does not estimate it. The earnings test, income taxes, and spousal and survivor benefits are not modeled. Treat the break-even age as one input to the decision, alongside your health, your other income and a spouse's benefits. Once you pick a claiming age, add that monthly benefit to a savings projection in the [Social Security retirement calculator](/retirement/social-security-retirement-calculator/).",
+    faqs: [
+      {
+        question: "What is a Social Security break-even calculator?",
+        answer:
+          "A Social Security break-even calculator finds the age at which a later claim has paid more in total than an earlier one. You enter your full retirement age benefit, your birth year and two claiming ages. It returns the break-even age, the monthly benefit for each claim, and running totals by age.",
+      },
+      {
+        question: "What is the break-even age for claiming at 62 vs 67?",
+        answer:
+          "For anyone born in 1960 or later, full retirement age is 67. Waiting from 62 to full retirement age breaks even at age 78 and 8 months. If you live past 78 and 8 months, claiming at 67 has paid more in total.",
+      },
+      {
+        question: "Should I take Social Security at 65 or 67?",
+        answer:
+          "Take a $2,000 benefit with a full retirement age of 67. Claiming at 65 pays $1,733 a month. Waiting until 67 breaks even at age 80. The better choice depends on your health, your other income and a spouse's benefits, which this calculator does not weigh.",
+      },
+      {
+        question: "How much more do I get by waiting until 70?",
+        answer:
+          "With a full retirement age of 67, waiting until 70 pays 124% of the full benefit. On a $2,000 benefit, that is $2,480 a month. Compared with claiming at full retirement age, the wait breaks even at age 82 and 6 months. Compared with claiming at 62, it breaks even at age 80 and 5 months.",
+      },
+      {
+        question: "Where do I find my benefit at full retirement age?",
+        answer:
+          "Your benefit at full retirement age is on your Social Security statement, which you can view in a [my Social Security account](https://www.ssa.gov/myaccount/). Enter that monthly amount in the calculator's first field. The calculator does not estimate it for you.",
+      },
+      {
+        question: "Does working before full retirement age change the math?",
+        answer:
+          "Yes, if you claim before full retirement age and keep working, the Social Security Administration (SSA) [2026 earnings test](https://www.ssa.gov/oact/cola/rtea.html) can withhold benefits. Before the year you reach full retirement age, SSA withholds $1 for every $2 earned above $24,480. In that year, it withholds $1 for every $3 above $65,160. Withheld benefits are not lost, since SSA raises your monthly benefit at full retirement age, but this calculator does not model the earnings test.",
+      },
+      {
+        question: "Does this calculator include spousal or survivor benefits?",
+        answer:
+          "No. The calculator compares two claims on your own benefit only. SSA's rules for spousal and survivor benefits differ from the rules for your own retirement benefit, so the break-even age shown here does not cover them.",
+      },
+      {
+        question: "Is Social Security taxable?",
+        answer:
+          "This calculator does not model income taxes, so every total it shows is before tax. The guide [is Social Security taxable](/guides/is-social-security-taxable/) covers when benefits are taxed.",
+      },
+    ],
+    sources: [
+      { label: "SSA: Retirement age and benefit reduction", url: "https://www.ssa.gov/benefits/retirement/planner/agereduction.html" },
+      { label: "SSA: Delayed retirement credits", url: "https://www.ssa.gov/benefits/retirement/planner/delayret.html" },
+      { label: "SSA: Full retirement age by year of birth", url: "https://www.ssa.gov/benefits/retirement/planner/ageincrease.html" },
+      { label: "SSA: Exempt amounts under the earnings test", url: "https://www.ssa.gov/oact/cola/rtea.html" },
+    ],
+    updated: "2026-10-11",
+    defaultPreset: {"benefitAtFra": 2000, "birthYear": 1962, "claimAgeA": 62, "claimAgeB": 67, "colaPct": 0},
+  },
+  // Mileage Reimbursement calculator — tool-usage pass (2026-10-11), the next tool after a used seed tool. Prose generated via
+  // scripts/lib/content_gen.py (meta beside the draft in reports/mindmap-pass/2026-10-11-tool-usage/drafts/).
+  {
+    id: "mileage-reimbursement-calculator",
+    islandId: "mileage-reimbursement-calculator",
+    label: "Mileage Reimbursement",
+    navOrder: 47,
+    metaTitle: "Mileage Reimbursement Calculator for 2026 Business Miles",
+    metaDescription:
+      "Free mileage reimbursement calculator. Enter business miles and your employer's rate to see what you're owed at the 2026 federal rates and what's taxable.",
+    targetKeyword: "mileage reimbursement calculator",
+    h1: "Mileage Reimbursement Calculator",
+    introText:
+      "A mileage reimbursement calculator works out what you're owed by multiplying business miles by a rate per mile. Unless your employer sets its own rate, use the Internal Revenue Service (IRS) business rate: 72.5 cents a mile for January through June 2026, and 76 cents a mile from July 1. Enter your miles for each half of the year in the calculator above, plus your employer's rate if it has one. Under an accountable plan, a reimbursement at or below the IRS rate is not taxable wages.\n\nFor example, say you drive 1,200 business miles from January to June and 1,000 miles from July to December. At the IRS rates, the first half pays $870 and the second half pays $760. That's a total reimbursement of $1,630, a blended rate of about 74.09 cents a mile. If your employer pays 80 cents a mile instead, you get $1,760. The $130 above the IRS-rate amount counts as taxable wages. At 60 cents a mile, you get $1,320, which is $310 less than the IRS-rate amount.",
+    howItWorks:
+      "The calculator takes business miles in two batches because the IRS business rate changed partway through 2026. The rate is 72.5 cents a mile from January 1 to June 30, and 76 cents a mile from July 1 to December 31. Each batch of miles is multiplied by its own rate, and the two results are added to give the mileage portion. If you leave the employer rate blank, the calculator uses the IRS rate for each half. Earlier rates, including 70 cents a mile for 2025, are in the [IRS mileage rate history](/guides/irs-mileage-rate-history/).\n\nThe worked example shows the math step by step. The 1,200 miles from January to June, times 72.5 cents, come to $870. The 1,000 miles from July to December, times 76 cents, add $760. Together that's $1,630 for the year. Divide $1,630 by 2,200 miles and the blended rate is about 74.09 cents a mile.\n\nWhen an employer pays its own rate, the calculator measures the gap against the IRS rate half by half, since the IRS rate changed on July 1. At 80 cents a mile, the same 2,200 miles pay $1,760. That is $130 more than the IRS-rate amount of $1,630, and the IRS includes that $130 in the employee's wages. At 60 cents a mile, the reimbursement is $1,320, or $310 below the IRS-rate amount. Under an accountable plan none of that $1,320 is wages, and most employees cannot deduct unreimbursed mileage on their federal return.\n\nBusiness tolls and parking fees are separate from the per-mile rate, so the calculator adds them on top of the mileage portion. Parking at your regular workplace is a commuting expense, so leave it out. Count business miles only. The regular commute from home to your usual workplace is not business mileage.\n\nYour employer's written policy decides what rate it pays, and federal law does not require an employer to use the IRS rate. Some states set their own reimbursement rules, which the [state mileage reimbursement guide](/guides/state-mileage-reimbursement-law-california-texas-michigan/) covers. If you're self-employed and deduct mileage instead of being reimbursed, the same rates apply on the [2026 IRS mileage deduction page](/mileage-deduction/irs-mileage-rate-2026/). Record every business trip in the [mileage log template](/templates/mileage-log-template/), then enter each half's total miles in the calculator above.",
+    faqs: [
+      {
+        question: "How do I calculate mileage reimbursement?",
+        answer:
+          "Multiply your business miles by the reimbursement rate, then add any business tolls and parking. In 2026, use 72.5 cents a mile for January through June and 76 cents a mile from July 1, unless your employer sets its own rate. For example, 1,200 first-half miles and 1,000 second-half miles come to $1,630 at the IRS rates.",
+      },
+      {
+        question: "What are the IRS mileage rates for 2026?",
+        answer:
+          "The IRS business standard mileage rate is 72.5 cents a mile from January 1 to June 30, 2026. It rises to 76 cents a mile from July 1 to December 31, 2026. Both rates are listed in the [IRS standard mileage rates table](https://www.irs.gov/tax-professionals/standard-mileage-rates). The 2025 business rate was 70 cents a mile.",
+      },
+      {
+        question: "Is mileage reimbursement taxable?",
+        answer:
+          "Mileage reimbursement is not taxable when it's paid at or below the IRS rate under an accountable plan. [IRS Publication 463](https://www.irs.gov/publications/p463) keeps that allowance out of your wages. Any part paid above the IRS rate is included in wages. In the worked example, an 80-cent rate pays $1,760, and $130 of it counts as wages.",
+      },
+      {
+        question: "What is the IRS rule for mileage reimbursement?",
+        answer:
+          "Under an accountable plan, a mileage allowance at or below the federal rate is not included in the employee's wages, and the part above that rate is. The rule is set out in [IRS Publication 463](https://www.irs.gov/publications/p463). Because the IRS rate changed on July 1, 2026, the calculator measures any excess half by half. [IRS Publication 15](https://www.irs.gov/publications/p15) is the employer's tax guide.",
+      },
+      {
+        question: "Does my employer have to pay the IRS mileage rate?",
+        answer:
+          "No, federal law does not require an employer to use the IRS rate, and the employer's written policy decides what it pays. Some states set their own reimbursement rules, covered in the [state mileage reimbursement guide](/guides/state-mileage-reimbursement-law-california-texas-michigan/). Enter your employer's rate in the calculator above to see any gap. At 60 cents a mile, the example's miles pay $310 less than the IRS-rate amount.",
+      },
+      {
+        question: "Can I deduct mileage my employer doesn't reimburse?",
+        answer:
+          "Most employees cannot deduct unreimbursed mileage on their federal return. IRS Publication 463 limits that deduction to a few groups, such as Armed Forces reservists and qualified performing artists.",
+      },
+      {
+        question: "Are tolls and parking reimbursed separately?",
+        answer:
+          "Business tolls and parking fees are separate from the per-mile rate, so the calculator adds them on top of the mileage portion. Parking at your regular workplace is a commuting expense, so leave it out. Your employer's written policy decides what it pays.",
+      },
+      {
+        question: "Does my commute count as business mileage?",
+        answer:
+          "No, the regular commute from home to your usual workplace is not business mileage. Enter only business miles in the calculator, and record each trip in a [mileage log](/templates/mileage-log-template/). Parking at your regular workplace is a commuting expense too.",
+      },
+    ],
+    sources: [
+      { label: "IRS: Standard mileage rates", url: "https://www.irs.gov/tax-professionals/standard-mileage-rates" },
+      { label: "IRS Publication 463: Travel, Gift, and Car Expenses", url: "https://www.irs.gov/publications/p463" },
+      { label: "IRS Publication 15: Employer's Tax Guide", url: "https://www.irs.gov/publications/p15" },
+    ],
+    updated: "2026-10-11",
+    defaultPreset: {"milesFirstHalf": 1200, "milesSecondHalf": 1000, "employerRateCents": 0, "tollsAndParking": 0},
+  },
+  // Portfolio Rebalancing calculator — tool-usage pass (2026-10-11), the next tool after a used seed tool. Prose generated via
+  // scripts/lib/content_gen.py (meta beside the draft in reports/mindmap-pass/2026-10-11-tool-usage/drafts/).
+  {
+    id: "portfolio-rebalancing-calculator",
+    islandId: "portfolio-rebalancing-calculator",
+    label: "Portfolio Rebalancing",
+    navOrder: 48,
+    metaTitle: "Portfolio Rebalancing Calculator: How Much to Buy or Sell",
+    metaDescription:
+      "Free portfolio rebalancing calculator. See how much to buy or sell in each holding to reach your target mix, or use new money so you don't have to sell.",
+    targetKeyword: "portfolio rebalancing calculator",
+    h1: "Portfolio Rebalancing Calculator",
+    introText:
+      "A portfolio rebalancing calculator shows how much to buy or sell in each holding: multiply the holding's target percentage by the portfolio total, then subtract what the holding is worth now. A positive result is the dollar amount to buy, and a negative result is the amount to sell. Enter the current value and target percentage for Stocks, Bonds, Real estate / other, and Cash in the calculator above, plus any new money you plan to invest.\n\nFor example, take a portfolio with $70,000 in Stocks, $25,000 in Bonds and $5,000 in Cash. That is a total of $100,000, and the current split is 70% / 25% / 5%. Say the target is 60% Stocks, 35% Bonds and 5% Cash. The calculator says to sell $10,000 of Stocks and buy $10,000 of Bonds, while Cash needs no trade. If you would rather not sell, check the new-money-only box: adding $30,000 lands the portfolio exactly on target without a single sale.",
+    howItWorks:
+      "The calculator first works out what each holding should be worth, then compares that figure to what the holding is worth now. A holding's target value is its target percentage times the portfolio total, and the total includes any new money you enter. The trade is the target value minus the current value, so a positive result is a buy and a negative result is a sale.\n\nIn the default example, the portfolio holds $70,000 in Stocks, $25,000 in Bonds and $5,000 in Cash, with no new money added. The targets are 60% Stocks, 35% Bonds and 5% Cash. Stocks should be worth 60% of $100,000, or $60,000. That is $10,000 less than the current $70,000, so the table shows a sale of $10,000. Bonds should be worth $35,000 against $25,000 now, so the table shows a buy of $10,000. Cash already sits on target and needs no trade.\n\nChecking the \"Use new money only\" box tells the calculator to skip every sale. New money goes only to holdings below target, split in proportion to how far below target each one is. With $10,000 to invest in the default example, nothing is sold. The calculator sends $9,642.86 to Bonds and $357.14 to Cash. The mix ends at about 63.6% / 31.5% / 4.9%, which is closer to the target without reaching it.\n\nEnough new money closes every gap. With $30,000 to invest, the portfolio grows to $130,000 and the calculator sends $8,000 to Stocks. It sends $20,500 to Bonds and $1,500 to Cash. That lands the portfolio exactly on 60% / 35% / 5% with nothing sold. If you enter more new money than it takes to fill every gap, the remainder is split by target percentage. To see the expected return and risk of the mix you are aiming for, run it through the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/).\n\nThe calculator is pure arithmetic on the numbers you enter. Selling in a taxable account can trigger capital gains tax, and trades can carry costs, but the calculator models neither one. Rebalancing inside a tax-advantaged account, or with new money, avoids the question of whether a sale creates a tax bill. The tool does not recommend a target mix, and the [portfolio rebalancing guide](/guides/portfolio-rebalancing/) covers when and how often to rebalance. If your targets do not add up to 100%, a note appears, so fix the percentages before you place any trade.",
+    faqs: [
+      {
+        question: "How do I calculate how much to rebalance?",
+        answer:
+          "Multiply each holding's target percentage by the portfolio total, including any new money, then subtract what the holding is worth now. A positive result is the amount to buy, and a negative result is the amount to sell. Take $70,000 in Stocks inside a $100,000 portfolio with a 60% Stocks target. The calculation says to sell $10,000 of Stocks.",
+      },
+      {
+        question: "Can I rebalance without selling?",
+        answer:
+          "Yes, if you have new money to add. Check the \"Use new money only\" box, and the calculator sends new money only to holdings below target, in proportion to how far below each one is. In the default example, $30,000 of new money lands exactly on target. With $10,000, the mix ends closer to target without reaching it.",
+      },
+      {
+        question: "How often should I rebalance my portfolio?",
+        answer:
+          "This calculator answers how much to trade, and it does not set a schedule or a drift trigger. The [portfolio rebalancing guide](/guides/portfolio-rebalancing/) covers when and how often to rebalance. Once you decide to act, enter your current values and targets above to get the dollar amounts.",
+      },
+      {
+        question: "Does rebalancing trigger taxes?",
+        answer:
+          "It can. Selling a holding in a taxable account can trigger capital gains tax, and the calculator does not model that tax or any trading costs. Rebalancing inside a tax-advantaged account, or using the new-money-only box so nothing is sold, avoids the sale question.",
+      },
+      {
+        question: "What if my target percentages don't add up to 100%?",
+        answer:
+          "The calculator shows a note when your targets do not add up to 100%. Adjust the percentages until they do.",
+      },
+      {
+        question: "Can I use this for a 60/40 portfolio?",
+        answer:
+          "Yes. Set the Stocks target to 60 and the Bonds target to 40, set the other holdings to zero, and the table shows what to buy or sell. For the expected return and risk of that mix, use the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/).",
+      },
+      {
+        question: "Does the calculator recommend an allocation?",
+        answer:
+          "No. The tool runs arithmetic on the target you enter and does not suggest a mix. The U.S. Securities and Exchange Commission (SEC) has an introduction to the topic on its [Investor.gov asset allocation page](https://www.investor.gov/introduction-investing/getting-started/asset-allocation).",
+      },
+      {
+        question: "Where can I learn more about rebalancing?",
+        answer:
+          "You can read more in the [rebalancing entry in the SEC's Investor.gov glossary](https://www.investor.gov/introduction-investing/investing-basics/glossary/rebalancing). For when and how often to rebalance, read the [portfolio rebalancing guide](/guides/portfolio-rebalancing/). You can also run your funds through the [expense ratio calculator](/expense-ratio-calculator/).",
+      },
+    ],
+    sources: [
+      { label: "Investor.gov (SEC): Rebalancing", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/rebalancing" },
+      { label: "Investor.gov (SEC): Asset allocation", url: "https://www.investor.gov/introduction-investing/getting-started/asset-allocation" },
+    ],
+    updated: "2026-10-11",
+    defaultPreset: {"holdings": [{"label": "Stocks", "value": 70000, "targetPct": 60}, {"label": "Bonds", "value": 25000, "targetPct": 35}, {"label": "Real estate / other", "value": 0, "targetPct": 0}, {"label": "Cash", "value": 5000, "targetPct": 5}], "newMoney": 0, "noSell": false},
   },
   {
     id: "pto-cashout",

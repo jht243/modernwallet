@@ -1,0 +1,178 @@
+{
+ "rows": [
+  {
+   "keyword": "social security break even calculator",
+   "volume": 8100,
+   "volume_low": 8100,
+   "volume_high": 8100,
+   "kd": 11,
+   "cpc": 3.79,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "when to take social security calculator",
+   "volume": 480,
+   "volume_low": 480,
+   "volume_high": 480,
+   "kd": 53,
+   "cpc": 1.21,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "portfolio rebalancing calculator",
+   "volume": 170,
+   "volume_low": 170,
+   "volume_high": 170,
+   "kd": 0,
+   "cpc": 5.19,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "rebalancing calculator",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": 0,
+   "cpc": 6.03,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "mileage reimbursement calculator",
+   "volume": 6600,
+   "volume_low": 6600,
+   "volume_high": 6600,
+   "kd": 9,
+   "cpc": 3.81,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "social security calculator",
+   "volume": 49500,
+   "volume_low": 49500,
+   "volume_high": 49500,
+   "kd": 60,
+   "cpc": 0.56,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "cd vs savings calculator",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": 10,
+   "cpc": 2.92,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "rebalance portfolio calculator",
+   "volume": 170,
+   "volume_low": 170,
+   "volume_high": 170,
+   "kd": 0,
+   "cpc": 5.19,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "social security age calculator",
+   "volume": 2900,
+   "volume_low": 2900,
+   "volume_high": 2900,
+   "kd": 74,
+   "cpc": 1.06,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "mileage deduction calculator",
+   "volume": 140,
+   "volume_low": 140,
+   "volume_high": 140,
+   "kd": 1,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "trump account calculator",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 10 live autocomplete completions (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "ahrefs unusable (no AHREFS_API_KEY)",
+  "volume: using dataforseo (quality order ahrefs > dataforseo > semrush)",
+  "dataforseo returned volume for 10/11 phrases",
+  "semrush unusable (no SEMRUSH_API_KEY)",
+  "kd: using dataforseo (quality order ahrefs > semrush > dataforseo)",
+  "No tool volume for 1 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 11/11 rows corroborated live"
+ ]
+}

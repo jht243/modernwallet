@@ -1,0 +1,104 @@
+{
+ "slug": "mileage-reimbursement-calculator",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1033,
+ "floor": 560,
+ "input_tokens": 26627,
+ "output_tokens": 8339,
+ "thinking_tokens": null,
+ "cached_tokens": 23882,
+ "est_cost_usd": 0.1825,
+ "guards": {
+  "repairs": [
+   "slug None -> 'mileage-reimbursement-calculator'"
+  ],
+  "flags": [
+   "missing 'h1' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'sections' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1033,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 240,
+   "floor": 560,
+   "ratio": 0.43,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    3
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "Divide $1,630 by 2,200 miles and the blended rate is about 74.09 cents a mile, which is the figure to compare against any single per-mile rate your employer pays.",
+     "replacement": "Divide $1,630 by 2,200 miles and the blended rate is about 74.09 cents a mile.",
+     "type": "inference",
+     "why": "SOURCE gives the blended rate but no guidance to compare it against employer rates."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Employers running the taxable excess through payroll can use [IRS Publication 15](https://www.irs.gov/publications/p15), the employer's tax guide.",
+     "replacement": "[IRS Publication 15](https://www.irs.gov/publications/p15) is the employer's tax guide.",
+     "type": "unsupported",
+     "why": "SOURCE only describes Pub 15 as employer's tax guide, not payroll use for the excess."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Under an accountable plan none of that $1,320 is wages, but most employees cannot deduct the $310 gap on a federal return.",
+     "replacement": "Under an accountable plan none of that $1,320 is wages, and most employees cannot deduct unreimbursed mileage on their federal return.",
+     "type": "inference",
+     "why": "SOURCE says most employees cannot deduct unreimbursed mileage; applying it to the $310 gap is inferred"
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "If you're self-employed, you deduct business mileage instead, at the same rates shown on the [2026 IRS mileage deduction page](/mileage-deduction/irs-mileage-rate-2026/).",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE only says the linked page covers the self-employed deduction at the same rates"
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "Your employer's written policy decides whether it pays these costs.",
+     "replacement": "Your employer's written policy decides what it pays.",
+     "type": "inference",
+     "why": "SOURCE says policy decides what it pays; reimbursement of tolls and parking is not stated"
+    }
+   ],
+   "deleted_final": 3,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1078
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 89.1,
+ "response_id": "msg_011Cfvz9pPjUZMH6YbgxWKUG",
+ "generated_at": "2026-10-11T19:17:50+0000"
+}

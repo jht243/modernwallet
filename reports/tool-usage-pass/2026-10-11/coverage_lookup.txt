@@ -1,0 +1,81 @@
+coverage_lookup: 3 candidate(s) vs 723 repo pages / 711 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 545 past-chart lines
+
+### /social-security-break-even-calculator  — row 8 · create new content
+keyword: what is my income; Social Security break-even; social security break even calculator
+reader question (new page intent): At what age does waiting to claim Social Security pay off? [PAA 0 returned; ac 11/11 break-even-by-age verdict pattern]
+lookup terms: social security break even income   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/social-security-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.6 on social security income]
+    title: Social Security vs 401(k): Planning Retirement Income
+    desc:  Social Security vs 401(k) compared: how each is funded, when income starts, how taxes work, and how to use both in a retirement plan.
+- /guides/is-social-security-taxable  [in sitemap · src/data/guides.ts · topic match 0.6 on social security income]
+    title: Is Social Security Taxable? 2026 Thresholds Explained
+    desc:  Social Security becomes taxable once combined income tops $25,000 (single) or $32,000 (married). See the IRS formula, thresholds, and how to lower it.
+- /guides/does-retirement-income-count-as-income-for-social-security  [in sitemap · src/data/guides.ts · topic match 0.6 on social security income]
+    title: Does Retirement Income Count as Income for Social Security?
+    desc:  Does retirement income count as income for Social Security? Learn why 401(k) withdrawals and pensions don't trigger the earnings test, and how limits work.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-11-tool-usage.md [table] | 3 | Lens 1 (tool usage, retirement — 10 people). Persona: 58-year-old with $310k and an SSA statement showing ~$2,300/mo at FRA. Walkthrough: no field to enter the Social Security benefit, although the tool subhead pro
+- 2026-10-11-tool-usage.md [table] | 4 | Lens 1 (tool usage, retirement page body). Persona above reads the earnings-test paragraph: it cites the 2025 threshold ($23,400) on a page read in late 2026. SSA's 2026 exempt amounts: $24,480 (under FRA all year)
+- 2026-10-11-tool-usage.md [table] | 8 | Lens 2 (adjacent to retirement persona — the next decision after "what is my income"). Cluster "Social Security break-even": `social security break even calculator` 8,100/mo KD 11; `social security break even calcu
+- 2026-10-11-tool-usage.md [table] | Social Security break-even | social security break even calculator (8,100); when to take social security calculator (480); social security break even calculator by age (210) | coverage gap at theme level — real user of
+- 2026-10-11-tool-usage.md [exclusions] - **Lens 3 (comparison / alternatives / pricing):** the brief's entities are our own free calculators and federal programs (Social Security, Trump Accounts, IRS mileage rates); there is no commercial vendor to compare or
+- 2026-10-11-tool-usage.md [exclusions] - **Dedup:** `git log -S` on each new slug (`social-security-break-even-calculator`, `mileage-reimbursement-calculator`, `portfolio-rebalancing-calculator`) — no prior commits create any of them (b9d4534 mentions `social
+Commits naming the topic: none
+Same run overlap: none
+
+### /mileage-reimbursement-calculator  — row 9 · create new content
+keyword: mileage reimbursement; mileage reimbursement calculator; irs mileage reimbursement calculator
+reader question (new page intent): How do I calculate mileage reimbursement? [PAA 3/6 how-to/rate/taxable; ac 3/4 how-much]
+lookup terms: mileage reimbursement irs   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /mileage-deduction/irs-mileage-rate-2026  [in sitemap · src/data/spokes-mileage.ts · topic match 0.67 on mileage irs]
+    title: IRS Mileage Rate 2026: 72.5¢ and 76¢ Explained
+    desc:  The 2026 IRS mileage rate is 72.5 cents through June 30 and 76 cents from July 1. See both rates, why they changed mid-year, and how to split your miles.
+- /templates/mileage-log-template  [in sitemap · src/data/templates.ts · topic match 0.67 on mileage irs]
+    title: Free Mileage Log Template (2026 IRS Rates)
+    desc:  A free mileage log template built for 2026's two IRS rates — 72.5¢ through June and 76¢ from July. Includes the fields the IRS actually requires.
+- /guides/irs-mileage-rate-history  [in sitemap · src/data/guides.ts · topic match 0.67 on mileage irs]
+    title: IRS Mileage Rate History: Rates by Year (2010 to 2026)
+    desc:  Complete IRS mileage rate history by year from 2010 to 2026. View historical rates for business, medical, moving, and charitable driving in one table.
+- /guides/state-mileage-reimbursement-law-california-texas-michigan  [in sitemap · src/data/guides.ts · topic match 0.67 on mileage reimbursement · same format: calculator]
+    title: Mileage Reimbursement Calculator California Rules and Rates
+    desc:  Calculate your payout under state labor rules. Our mileage reimbursement calculator California guide reviews laws across California, Texas, and Michigan.
+- /guides/mileage-reimbursement-rates-uk-canada-ireland-nz  [in sitemap · src/data/guides.ts · topic match 0.67 on mileage reimbursement · same format: calculator]
+    title: Mileage Allowance Calculator HMRC Rates and Global Rules
+    desc:  Calculate vehicle travel using a mileage allowance calculator HMRC guide covering official reimbursement rates in the UK, Canada, Ireland, and New Zealand.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-30.md [exclusions] - **IRS mileage rate "what does it include" (gas, tolls, insurance, depreciation), medical and EV rate questions** — already answered on /mileage-deduction/irs-mileage-rate-2026/ (intro covers what the rate is built to c
+- 2026-10-11-tool-usage.md [table] | 6 | Lens 1 (tool usage, mileage-deduction — 4 people / 67 views). Persona: self-employed delivery driver on a phone, 17,600 business miles. Walkthrough completed the job cleanly (deduction $13,054, "standard mileage wi
+- 2026-10-11-tool-usage.md [table] | 9 | Lens 2 (adjacent to mileage persona — the employee side of the same mileage). Cluster "mileage reimbursement": `mileage reimbursement calculator` 6,600/mo KD 9; `irs mileage reimbursement calculator` 1,300 KD 8; `c
+- 2026-10-11-tool-usage.md [table] | Mileage reimbursement | mileage reimbursement calculator (6,600); irs mileage reimbursement calculator (1,300); cents per mile calculator (480) | coverage gap — only a state-law guide and a non-US guide exist | partial
+- 2026-10-11-tool-usage.md [exclusions] - **Lens 3 (comparison / alternatives / pricing):** the brief's entities are our own free calculators and federal programs (Social Security, Trump Accounts, IRS mileage rates); there is no commercial vendor to compare or
+- 2026-10-11-tool-usage.md [exclusions] - **Dedup:** `git log -S` on each new slug (`social-security-break-even-calculator`, `mileage-reimbursement-calculator`, `portfolio-rebalancing-calculator`) — no prior commits create any of them (b9d4534 mentions `social
+Commits naming the topic: none
+Same run overlap: none
+
+### /portfolio-rebalancing-calculator  — row 10 · create new content
+keyword: portfolio rebalancing; portfolio rebalancing calculator; rebalance portfolio calculator
+reader question (new page intent): How much of each fund do I buy or sell to get back to my target allocation? [verb-only — no PAA, no completions]
+lookup terms: portfolio rebalancing rebalance   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/portfolio-rebalancing  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on portfolio rebalancing]
+    title: Portfolio Rebalancing: When and How to Do It
+    desc:  Portfolio rebalancing keeps your asset mix on target. See calendar vs. threshold rebalancing, the tax cost in a taxable account, and a simple rule.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-30-robinhood.cannibalization.md [table] | /guides/wash-sale-rule-explained | /roundup/best-robo-advisors ("wash-sale trap" section), /guides/portfolio-rebalancing (FAQ) | no: in-body mentions only; neither targets "wash sale rule" (14,800) | leave alone; add a
+- 2026-10-11-tool-usage.md [table] | 10 | Lens 2 (adjacent to portfolio persona — the action after seeing their mix). Cluster "portfolio rebalancing": `portfolio rebalancing calculator` 170/mo KD 0; `rebalance portfolio calculator` 170 KD 0; `rebalancing 
+- 2026-10-11-tool-usage.md [table] | Portfolio rebalancing | portfolio rebalancing calculator (170); rebalance portfolio calculator (170); portfolio allocation calculator (390) | intent mismatch — the guide explains when, no tool gives trade amounts | par
+- 2026-10-11-tool-usage.md [exclusions] - **Dedup:** `git log -S` on each new slug (`social-security-break-even-calculator`, `mileage-reimbursement-calculator`, `portfolio-rebalancing-calculator`) — no prior commits create any of them (b9d4534 mentions `social
+Commits naming the topic: none
+Same run overlap: none
+

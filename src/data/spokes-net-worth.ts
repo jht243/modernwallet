@@ -97,6 +97,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
   },
 
   {
+    updated: "2026-10-11",
     calculator: "net-worth",
     slug: "liquid-net-worth-calculator",
     title: "Free Liquid Net Worth Calculator: What Can You Spend?",
@@ -141,7 +142,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
     ],
     toolHeading: "Calculate your spendable wealth",
     toolSubheading: "Liquid assets only — minus every debt.",
-    preset: { cash: 30000, investments: 80000, retirement: 60000, realEstate: 0, vehicles: 20000, mortgage: 0, autoLoans: 15000, studentLoans: 10000, creditCards: 5000, age: 45 },
+    preset: { cash: 30000, investments: 80000, retirement: 60000, realEstate: 0, vehicles: 20000, mortgage: 0, autoLoans: 15000, studentLoans: 10000, creditCards: 5000, age: 45, liquidFocus: true },
     relatedSlugs: ["how-to-calculate-net-worth", "net-worth-by-age-calculator", "net-worth-projection-calculator", "net-worth-percentile-calculator"],
   },
 

@@ -821,6 +821,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
   },
 
   {
+    updated: "2026-10-11",
     calculator: "retirement",
     slug: "social-security-retirement-calculator",
     title: "Social Security Retirement Calculator",
@@ -833,16 +834,16 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
     introText:
       "Choosing when to claim Social Security is one of the highest-impact retirement decisions most people make. According to the Social Security Administration, claiming at 62 instead of 70 can change your monthly benefit by more than 75%. That difference is permanent, paid for life, and adjusted for inflation each year through Cost-of-Living Adjustments (COLA).\n\nUse the calculator above to project your savings, then follow the guidance below to model how your SSA benefit changes at each claiming age.",
     howItWorks:
-      "The calculator projects your savings-side balance — your 401(k), IRA, or other accounts — at your expected return until retirement. To add your Social Security income, estimate your benefit using the Social Security Administration's own [Retirement Estimator](https://www.ssa.gov/benefits/retirement/estimator.html) at ssa.gov — which uses your actual earnings record, something this tool does not have access to — then add that monthly amount to the portfolio withdrawal your balance supports.\n\nThe key variables: Your Full Retirement Age (FRA) is 67 if you were born in 1960 or later, per SSA rules. Claiming before FRA permanently reduces your benefit — by up to 30% if you claim at 62. Delaying past FRA permanently increases your benefit by 8% per year (Delayed Retirement Credits), up to age 70. There are no additional credits for delaying past 70. The break-even calculation: delaying from 67 to 70 requires roughly 11 to 12 years of higher payments to offset the three years of foregone benefits — meaning if you live past roughly age 81, delaying to 70 pays more in total lifetime benefits. For couples, see the [couples retirement calculator](/retirement/couples-retirement-calculator/) for spousal benefit coordination.",
+      "The calculator projects your savings-side balance — your 401(k), IRA, or other accounts — at your expected return until retirement. To add your Social Security income, estimate your benefit using the Social Security Administration's own [Retirement Estimator](https://www.ssa.gov/benefits/retirement/estimator.html) at ssa.gov — which uses your actual earnings record, something this tool does not have access to — then enter that monthly amount in the calculator's Social Security field to see it added to the portfolio withdrawal your balance supports.\n\nThe key variables: Your Full Retirement Age (FRA) is 67 if you were born in 1960 or later, per SSA rules. Claiming before FRA permanently reduces your benefit — by up to 30% if you claim at 62. Delaying past FRA permanently increases your benefit by 8% per year (Delayed Retirement Credits), up to age 70. There are no additional credits for delaying past 70. The break-even calculation: delaying from 67 to 70 requires about 12 and a half years of higher payments to offset the three years of foregone benefits — meaning if you live past roughly age 82 and a half, delaying to 70 pays more in total lifetime benefits. To run it for your own benefit and claiming ages, use the [Social Security break-even calculator](/social-security-break-even-calculator/). For couples, see the [couples retirement calculator](/retirement/couples-retirement-calculator/) for spousal benefit coordination.",
     commonMistakes: [
       "Claiming at 62 without modeling the long-term cost. The 30% reduction at 62 versus FRA (67) is permanent. For someone who lives to 85, claiming at 62 versus 67 often means collecting $50,000 to $100,000 less in total lifetime benefits, depending on the benefit amount.",
       "Assuming Social Security will fully fund retirement. Social Security is designed to replace approximately 40% of pre-retirement income for average earners, according to SSA. It is a supplement to savings, not a substitute.",
-      "Forgetting the earnings test before FRA. If you claim Social Security before your FRA and continue working, SSA withholds $1 in benefits for every $2 earned above an annual threshold ($23,400 in 2025 per SSA). Withheld amounts are eventually recredited after FRA, but the cash flow impact matters.",
+      "Forgetting the earnings test before FRA. If you claim Social Security before your FRA and keep working, SSA withholds $1 in benefits for every $2 you earn above $24,480 in 2026. In the year you reach FRA, SSA withholds $1 for every $3 above $65,160 ([SSA](https://www.ssa.gov/oact/cola/rtea.html)). Withheld amounts are eventually recredited after FRA, but the cash flow impact matters.",
       "Not accounting for Social Security taxation. Up to 85% of Social Security benefits may be subject to federal income tax if your combined income (adjusted gross income + nontaxable interest + half of Social Security) exceeds $34,000 for singles or $44,000 for married couples filing jointly, per IRS rules.",
       "Overlooking the COLA guarantee. Social Security benefits are adjusted annually for inflation via Cost-of-Living Adjustments tied to the CPI-W. This built-in inflation protection is a significant advantage over fixed pension payments or fixed annuities, and it compounds in value over a long retirement.",
     ],
     workedExample:
-      "You are 55 with $400,000 in savings, contributing $1,500 per month, and planning to retire at your FRA of 67. The calculator projects your balance at 67 is approximately $1,122,000. SSA estimates your monthly benefit at FRA as $2,200. At 4% withdrawal, your savings support $3,740/month. Total: $2,200 (SSA) + $3,740 (savings) = $5,940/month. Now consider delaying to 70: your benefit becomes roughly $2,816/month (8% × 3 years × $2,200). But you work three extra years, growing savings to about $1,367,000 — supporting $4,557/month from savings. Total at 70: $2,816 + $4,557 = $7,373/month. Whether to retire at 67 or 70 depends on health, lifestyle, and longevity expectations, but the numbers make the trade-off concrete.",
+      "You are 55 with $400,000 in savings, contributing $1,500 per month, and planning to retire at your FRA of 67. The calculator projects your balance at 67 is approximately $1,122,000. SSA estimates your monthly benefit at FRA as $2,200. At 4% withdrawal, your savings support $3,740/month. Total: $2,200 (SSA) + $3,740 (savings) = $5,940/month. Now consider delaying to 70: your benefit becomes roughly $2,728/month ($2,200 plus 8% a year for 3 years, or 24%). But you work three extra years, growing savings to about $1,367,000 — supporting $4,557/month from savings. Total at 70: $2,728 + $4,557 = $7,285/month. Whether to retire at 67 or 70 depends on health, lifestyle, and longevity expectations, but the numbers make the trade-off concrete.",
     faqs: [
       {
         question: "What is the Full Retirement Age for Social Security?",
@@ -862,7 +863,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       {
         question: "At what age does delaying Social Security to 70 break even?",
         answer:
-          "The break-even age for delaying from FRA (67) to 70 is approximately age 81. If you live past 81, the higher monthly payments from delaying to 70 will have paid out more in total lifetime benefits than claiming at 67 would have. If you expect a shorter lifespan or have an immediate income need, claiming earlier may make more sense for your situation.",
+          "The break-even age for delaying from FRA (67) to 70 is approximately age 82 and a half. If you live past that age, the higher monthly payments from delaying to 70 will have paid out more in total lifetime benefits than claiming at 67 would have. If you expect a shorter lifespan or have an immediate income need, claiming earlier may make more sense for your situation.",
       },
       {
         question: "Are Social Security benefits taxable?",
@@ -894,13 +895,17 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
         url: "https://www.ssa.gov/pubs/EN-05-10035.pdf",
       },
       {
+        label: "SSA — Exempt Amounts Under the Earnings Test",
+        url: "https://www.ssa.gov/oact/cola/rtea.html",
+      },
+      {
         label: "IRS — Publication 915: Social Security and Equivalent Railroad Retirement Benefits",
         url: "https://www.irs.gov/publications/p915",
       },
     ],
     toolHeading: "Project your savings and Social Security income together",
     toolSubheading: "See your portfolio balance at retirement, then add your SSA benefit estimate for your total monthly income.",
-    preset: { mode: "projection", currentAge: 55, retirementAge: 67, currentSavings: 400000, monthlyContribution: 1500, annualReturnPct: 7 },
+    preset: { mode: "projection", currentAge: 55, retirementAge: 67, currentSavings: 400000, monthlyContribution: 1500, annualReturnPct: 7, showSocialSecurity: true },
     relatedSlugs: ["retirement-savings-calculator", "couples-retirement-calculator", "early-retirement-calculator"],
   },
 ];

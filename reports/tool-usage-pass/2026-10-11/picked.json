@@ -1,0 +1,62 @@
+[
+ {
+  "tool": "investing",
+  "path": "/investing/high-yield-savings-calculator/",
+  "people": 32,
+  "uses": 36,
+  "views": 62,
+  "use_rate": 0.581,
+  "people_7d": 32,
+  "lane": "persona"
+ },
+ {
+  "tool": "trump-account",
+  "path": "/trump-account/",
+  "people": 12,
+  "uses": 12,
+  "views": 27,
+  "use_rate": 0.444,
+  "people_7d": 12,
+  "lane": "persona"
+ },
+ {
+  "tool": "retirement",
+  "path": "/retirement/social-security-retirement-calculator/",
+  "people": 10,
+  "uses": 12,
+  "views": 28,
+  "use_rate": 0.429,
+  "people_7d": 10,
+  "lane": "persona"
+ },
+ {
+  "tool": "portfolio",
+  "path": "/portfolio/60-40-portfolio-calculator/",
+  "people": 6,
+  "uses": 6,
+  "views": 25,
+  "use_rate": 0.24,
+  "people_7d": 6,
+  "lane": "persona"
+ },
+ {
+  "tool": "mileage-deduction",
+  "path": "/mileage-deduction/irs-mileage-rate-2026/",
+  "people": 4,
+  "uses": 4,
+  "views": 67,
+  "use_rate": 0.06,
+  "people_7d": 4,
+  "lane": "persona"
+ },
+ {
+  "tool": "net-worth",
+  "path": "/net-worth/liquid-net-worth-calculator/",
+  "people": 1,
+  "uses": 1,
+  "views": 13,
+  "use_rate": 0.077,
+  "people_7d": 1,
+  "lane": "low-use"
+ }
+]

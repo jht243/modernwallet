@@ -92,7 +92,7 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
   },
 
   {
-    updated: "2026-10-10",
+    updated: "2026-10-11",
     calculator: "investing",
     slug: "high-yield-savings-calculator",
     title: "High Yield Savings (HYSA) Calculator: APY Earnings",
@@ -152,7 +152,7 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
     ],
     toolHeading: "How much will your savings earn?",
     toolSubheading: "Enter your balance, deposits, and APY to see interest earned over time.",
-    preset: { currentBalance: 10000, monthlyContribution: 300, annualReturnPct: 4.5, years: 10 },
+    preset: { currentBalance: 10000, monthlyContribution: 300, annualReturnPct: 4.5, years: 10, savingsMode: true },
     relatedSlugs: ["compound-interest-calculator", "investment-growth-calculator", "savings-goal-calculator"],
   },
 

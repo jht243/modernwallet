@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { computeNetWorth, type NetWorthInput } from "../lib/net-worth";
+import { useDraft } from "./calc-ui";
 import { fmtUSD, fmtPct } from "../lib/format";
 
 // WealthCheck island: a balance sheet that adds up assets and subtracts liabilities, with an
@@ -7,7 +8,7 @@ import { fmtUSD, fmtPct } from "../lib/format";
 // Fully standalone — no external host coupling.
 
 interface Props {
-  initialData?: Partial<NetWorthInput>;
+  initialData?: Partial<NetWorthInput> & { liquidFocus?: boolean };
   heading?: string;
   subheading?: string;
 }
@@ -38,7 +39,10 @@ const LIABILITIES = [
 ] as const;
 
 export default function NetWorthCalculator({ initialData, heading, subheading }: Props) {
-  const [v, setV] = useState<NetWorthInput>({ ...DEFAULTS, ...initialData });
+  // liquidFocus (liquid net worth page): liquid net worth leads, total net worth moves to the stat row, and a
+  // line spells out what counts as liquid. Both figures always stay on screen.
+  const { liquidFocus, ...preset } = initialData ?? {};
+  const [v, setV] = useState<NetWorthInput>({ ...DEFAULTS, ...preset });
   const r = useMemo(() => computeNetWorth(v), [v]);
   const set = (p: Partial<NetWorthInput>) => setV((s) => ({ ...s, ...p }));
   const positive = (r.netWorth ?? 0) >= 0;
@@ -75,16 +79,33 @@ export default function NetWorthCalculator({ initialData, heading, subheading }:
         </div>
 
         <div style={S.results}>
-          <div style={S.bigStat}>
-            <span style={S.bigLabel}>Net worth</span>
-            <span style={{ ...S.bigValue, color: positive ? PRIMARY : NEGATIVE }}>{fmtUSD(r.netWorth)}</span>
-            <span style={S.bigSub}>{fmtUSD(r.totalAssets)} in assets minus {fmtUSD(r.totalLiabilities)} in debt</span>
-          </div>
-
-          <div style={S.statRow}>
-            <Stat label="Liquid net worth" value={fmtUSD(r.liquidNetWorth)} />
-            <Stat label="Debt-to-asset" value={fmtPct(r.debtToAssetPct, 1)} />
-          </div>
+          {liquidFocus ? (
+            <>
+              <div style={S.bigStat}>
+                <span style={S.bigLabel}>Liquid net worth</span>
+                <span style={{ ...S.bigValue, color: (r.liquidNetWorth ?? 0) >= 0 ? PRIMARY : NEGATIVE }}>{fmtUSD(r.liquidNetWorth)}</span>
+                <span style={S.bigSub}>
+                  Cash + taxable investments ({fmtUSD(r.liquidAssets)}) minus all debts ({fmtUSD(r.totalLiabilities)}). Retirement accounts, real estate, vehicles and other assets are not counted.
+                </span>
+              </div>
+              <div style={S.statRow}>
+                <Stat label="Net worth (everything)" value={fmtUSD(r.netWorth)} />
+                <Stat label="Debt-to-asset" value={fmtPct(r.debtToAssetPct, 1)} />
+              </div>
+            </>
+          ) : (
+            <>
+              <div style={S.bigStat}>
+                <span style={S.bigLabel}>Net worth</span>
+                <span style={{ ...S.bigValue, color: positive ? PRIMARY : NEGATIVE }}>{fmtUSD(r.netWorth)}</span>
+                <span style={S.bigSub}>{fmtUSD(r.totalAssets)} in assets minus {fmtUSD(r.totalLiabilities)} in debt</span>
+              </div>
+              <div style={S.statRow}>
+                <Stat label="Liquid net worth" value={fmtUSD(r.liquidNetWorth)} />
+                <Stat label="Debt-to-asset" value={fmtPct(r.debtToAssetPct, 1)} />
+              </div>
+            </>
+          )}
 
           {r.medianNetWorthForAge != null && (
             <div style={r.aboveMedian ? S.goodNote : S.warnNote}>
@@ -126,22 +147,23 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
   return <label style={S.field}><span style={S.label}>{label}</span>{children}</label>;
 }
 function Money({ v, on }: { v: number; on: (n: number) => void }) {
+  const d = useDraft(v, on, (v) => v.toLocaleString("en-US"));
   return (
     <div style={S.suffixWrap}>
       <span style={S.prefix}>$</span>
       <input style={{ ...S.input, paddingLeft: 22 }} inputMode="numeric"
-        value={v === 0 ? "" : v.toLocaleString("en-US")} placeholder="0"
-        onChange={(e) => on(parse(e.target.value))} />
+        value={d.text} placeholder="0"
+        onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} />
     </div>
   );
 }
 function Plain({ v, on }: { v: number; on: (n: number) => void }) {
-  return <input style={S.input} inputMode="numeric" value={v} onChange={(e) => on(parse(e.target.value))} />;
+  const d = useDraft(v, on);
+  return <input style={S.input} inputMode="numeric" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} />;
 }
 function Stat({ label, value }: { label: string; value: string }) {
   return <div style={S.stat}><span style={S.statLabel}>{label}</span><span style={S.statValue}>{value}</span></div>;
 }
-function parse(s: string): number { if (s === "") return 0; return Math.max(0, Number(s.replace(/[^0-9.]/g, "")) || 0); }
 
 const S: Record<string, React.CSSProperties> = {
   wrap: { fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", color: "#1A1A1A" },

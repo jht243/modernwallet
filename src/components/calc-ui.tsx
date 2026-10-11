@@ -11,23 +11,28 @@ export function Field({ label, children }: { label: string; children: React.Reac
   );
 }
 export function MoneyInput({ value, onChange }: { value: number; onChange: (v: number) => void }) {
+  const d = useDraft(value, onChange, (v) => v.toLocaleString("en-US"));
   return (
     <div style={S.suffixWrap}>
       <span style={S.prefix}>$</span>
       <input
         style={{ ...S.input, paddingLeft: 22 }}
         inputMode="numeric"
-        value={value === 0 ? "" : value.toLocaleString("en-US")}
+        value={d.text}
         placeholder="0"
-        onChange={(e) => { const n = parseFloat(e.target.value.replace(/[^0-9.]/g, "")); onChange(Number.isFinite(n) ? Math.max(0, n) : 0); }}
+        onChange={(e) => d.onChange(e.target.value)}
+        onBlur={d.onBlur}
       />
     </div>
   );
 }
-function useDraft(value: number, onChange: (v: number) => void) {
+// Keeps what the reader typed (e.g. "4." on the way to "4.1") while the field is being edited, so a
+// trailing decimal point is never erased by re-rendering the parsed number. `format` renders the
+// committed value when the field is not being edited.
+export function useDraft(value: number, onChange: (v: number) => void, format: (v: number) => string = String) {
   const [draft, setDraft] = useState<string | null>(null);
   return {
-    text: draft ?? (value === 0 ? "" : String(value)),
+    text: draft ?? (value === 0 ? "" : format(value)),
     onChange: (raw: string) => {
       const cleaned = raw.replace(/[^0-9.]/g, "");
       setDraft(cleaned);

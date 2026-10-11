@@ -15,6 +15,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/s-corp-tax/", label: "Would an S-corp election save you money?" },
   ],
   "mileage-deduction": [
+    { href: "/mileage-reimbursement-calculator/", label: "Reimbursed by your employer? What you're owed" },
     { href: "/self-employment-tax/", label: "What you owe after the deduction" },
     { href: "/self-employment-tax/doordash-taxes/", label: "DoorDash taxes explained" },
     { href: "/auto-loan/", label: "Financing the car you drive for work" },
@@ -69,6 +70,24 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/cd-calculator/", label: "Model a CD's maturity value" },
     { href: "/budget/", label: "See where your spending goes" },
   ],
+  "social-security-break-even-calculator": [
+    { href: "/retirement/social-security-retirement-calculator/", label: "Add Social Security to your retirement income" },
+    { href: "/guides/is-social-security-taxable/", label: "Is Social Security taxable?" },
+    { href: "/retirement/", label: "Project retirement savings" },
+    { href: "/coast-fire/", label: "Coast FIRE: is your savings already enough?" },
+  ],
+  "mileage-reimbursement-calculator": [
+    { href: "/mileage-deduction/irs-mileage-rate-2026/", label: "Self-employed? Your 2026 mileage deduction" },
+    { href: "/templates/mileage-log-template/", label: "Mileage log template" },
+    { href: "/guides/irs-mileage-rate-history/", label: "IRS mileage rate history" },
+    { href: "/guides/state-mileage-reimbursement-law-california-texas-michigan/", label: "State mileage reimbursement laws" },
+  ],
+  "portfolio-rebalancing-calculator": [
+    { href: "/portfolio/60-40-portfolio-calculator/", label: "Check return and risk of a 60/40 mix" },
+    { href: "/guides/portfolio-rebalancing/", label: "When and how to rebalance" },
+    { href: "/portfolio/", label: "Analyze your portfolio" },
+    { href: "/expense-ratio-calculator/", label: "What fund fees cost over time" },
+  ],
   "expense-ratio-calculator": [
     { href: "/guides/what-is-a-good-expense-ratio/", label: "What is a good expense ratio?" },
     { href: "/compare/etf-vs-mutual-fund/", label: "ETF vs mutual fund" },
@@ -118,6 +137,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/net-worth/", label: "Track your total net worth" },
   ],
   "retirement": [
+    { href: "/social-security-break-even-calculator/", label: "When does waiting to claim Social Security pay off?" },
     { href: "/investing/", label: "Grow your investments" },
     { href: "/iul-calculator/", label: "Pitched an IUL? Run the numbers" },
     { href: "/net-worth/", label: "Track your net worth" },
@@ -143,6 +163,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/how-to-invest-100k-to-1-million/", label: "How long $100k takes to reach $1M" },
   ],
   "portfolio": [
+    { href: "/portfolio-rebalancing-calculator/", label: "How much to buy or sell to rebalance" },
     { href: "/investing/", label: "Project investment growth" },
     { href: "/retirement/", label: "Plan your retirement" },
     { href: "/net-worth/", label: "Track your net worth" },

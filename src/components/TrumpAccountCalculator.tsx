@@ -4,7 +4,9 @@ import {
   type TrumpAccountInput,
   FAMILY_AGGREGATE_CAP,
   EMPLOYER_SUBCAP,
+  SEED_AMOUNT,
 } from "../lib/trump-account";
+import { useDraft } from "./calc-ui";
 import { fmtUSD } from "../lib/format";
 
 // Trump Account calculator island. Projects the $1,000 federal seed + capped annual contributions
@@ -49,10 +51,15 @@ export default function TrumpAccountCalculator({ initialData, heading, subheadin
             <Field label="Child's age now"><Plain v={v.childCurrentAge} max={17} on={(x) => set({ childCurrentAge: x })} /></Field>
             <Field label="Federal seed"><Money v={v.seedDeposit} on={(x) => set({ seedDeposit: x })} /></Field>
           </div>
-          <Field label={`Yearly family contribution (max $${FAMILY_AGGREGATE_CAP.toLocaleString()})`}>
+          {v.childCurrentAge >= 1 && v.seedDeposit > 0 && (
+            <div style={S.hint}>
+              The {fmtUSD(SEED_AMOUNT)} federal seed goes only to children born 2025 through 2028. If your child was born before 2025, set the federal seed to $0.
+            </div>
+          )}
+          <Field label={`Yearly family contribution (family + employer max $${FAMILY_AGGREGATE_CAP.toLocaleString()})`}>
             <Money v={v.annualFamilyContribution} on={(x) => set({ annualFamilyContribution: x })} />
           </Field>
-          <Field label={`Yearly employer contribution (max $${EMPLOYER_SUBCAP.toLocaleString()})`}>
+          <Field label={`Yearly employer contribution (max $${EMPLOYER_SUBCAP.toLocaleString()}, counts toward the $${FAMILY_AGGREGATE_CAP.toLocaleString()})`}>
             <Money v={v.annualEmployerContribution} on={(x) => set({ annualEmployerContribution: x })} />
           </Field>
           <Field label="Expected annual return %"><Pct v={v.annualReturnPct} on={(x) => set({ annualReturnPct: x })} /></Field>
@@ -133,23 +140,25 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
   return <label style={S.field}><span style={S.label}>{label}</span>{children}</label>;
 }
 function Money({ v, on }: { v: number; on: (n: number) => void }) {
+  const d = useDraft(v, on, (v) => v.toLocaleString("en-US"));
   return (
     <div style={S.suffixWrap}>
       <span style={S.prefix}>$</span>
-      <input style={{ ...S.input, paddingLeft: 22 }} inputMode="numeric" value={v === 0 ? "" : v.toLocaleString("en-US")} placeholder="0" onChange={(e) => on(parse(e.target.value))} />
+      <input style={{ ...S.input, paddingLeft: 22 }} inputMode="numeric" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} />
     </div>
   );
 }
 function Pct({ v, on }: { v: number; on: (n: number) => void }) {
-  return <div style={S.suffixWrap}><input style={S.input} inputMode="decimal" value={v} onChange={(e) => on(parse(e.target.value))} /><span style={S.suffix}>%</span></div>;
+  const d = useDraft(v, on);
+  return <div style={S.suffixWrap}><input style={S.input} inputMode="decimal" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} /><span style={S.suffix}>%</span></div>;
 }
 function Plain({ v, on, max }: { v: number; on: (n: number) => void; max?: number }) {
-  return <input style={S.input} inputMode="numeric" value={v} onChange={(e) => on(clamp(parse(e.target.value), max))} />;
+  const d = useDraft(v, (x) => on(clamp(x, max)));
+  return <input style={S.input} inputMode="numeric" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} />;
 }
 function Stat({ label, value }: { label: string; value: string }) {
   return <div style={S.stat}><span style={S.statLabel}>{label}</span><span style={S.statValue}>{value}</span></div>;
 }
-function parse(s: string): number { if (s === "") return 0; return Math.max(0, Number(s.replace(/[^0-9.]/g, "")) || 0); }
 function clamp(n: number, max?: number): number { return typeof max === "number" ? Math.min(n, max) : n; }
 function n(x: unknown, d: number): number { const v = Number(x); return Number.isFinite(v) ? v : d; }
 
@@ -169,6 +178,7 @@ const S: Record<string, React.CSSProperties> = {
   suffixWrap: { position: "relative", display: "flex", alignItems: "center" },
   prefix: { position: "absolute", left: 11, color: "#888", fontSize: "0.95rem", pointerEvents: "none" },
   suffix: { position: "absolute", right: 12, color: "#888", fontSize: "0.95rem", pointerEvents: "none" },
+  hint: { fontSize: "0.82rem", color: "#555", lineHeight: 1.45, margin: "-4px 0 0" },
   warn: { fontSize: "0.82rem", color: "#8a5a00", background: "#FDF6E7", border: "1px solid #F0DFB0", borderRadius: 8, padding: "9px 11px", lineHeight: 1.45 },
   results: { background: "linear-gradient(180deg,#F4FAF8 0%,#FFFFFF 100%)", border: "1px solid #D8EEE6", borderRadius: 14, padding: 18, display: "flex", flexDirection: "column", gap: 12, alignSelf: "start" },
   bigStat: { display: "flex", flexDirection: "column", gap: 2, paddingBottom: 10, borderBottom: "1px solid #E6F0EC" },

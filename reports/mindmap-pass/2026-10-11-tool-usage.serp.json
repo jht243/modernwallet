@@ -1,0 +1,495 @@
+{
+ "rows": [
+  {
+   "keyword": "social security break even calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.ssa.gov",
+    "www.aarp.org",
+    "www.nerdwallet.com",
+    "www.thrivent.com",
+    "www.socialsecurityintelligence.com",
+    "www.merceradvisors.com",
+    "advisors.vanguard.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "advisors.vanguard.com",
+    "smartasset.com",
+    "www.youtube.com",
+    "www.maximizemysocialsecurity.com",
+    "www.fidelity.com",
+    "www.dinkytown.net",
+    "www.bigpictureretirement.com",
+    "www.moneyrates.com",
+    "www.consumerfinance.gov",
+    "www.reddit.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19
+   },
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.ssa.gov, www.aarp.org, www.nerdwallet.com, www.thrivent.com",
+   "se_results_count": 155
+  },
+  {
+   "keyword": "mileage reimbursement calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "ramp.com",
+    "navan.com",
+    "www.irs.gov",
+    "www.namequick.app"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.perk.com",
+    "www.perk.com",
+    "www.youtube.com",
+    "www.easy-expense.com",
+    "companymileage.com",
+    "www.perk.com",
+    "www.csgnetwork.com",
+    "www.fsafeds.gov",
+    "mycarcalc.com",
+    "fitsmallbusiness.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How do I calculate mileage reimbursement?",
+    "What are the IRS mileage rates for 2026?",
+    "What is the formula for figuring out gas mileage?",
+    "Is mileage reimbursement taxable?",
+    "What is the IRS rule for mileage reimbursement?",
+    "What is the $75 rule in the IRS?"
+   ],
+   "related_searches": [
+    "Irs mileage reimbursement calculator",
+    "Cents per mile calculator",
+    "Mileage reimbursement calculator 2026",
+    "Mileage reimbursement calculator map",
+    "California mileage reimbursement calculator",
+    "Free mileage reimbursement calculator",
+    "70 cents per mile calculator",
+    "Texas mileage reimbursement calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites ramp.com, navan.com, www.irs.gov, www.namequick.app",
+   "se_results_count": 132
+  },
+  {
+   "keyword": "portfolio rebalancing calculator",
+   "verdict": "contested",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.portseido.com",
+    "www.youtube.com",
+    "www.whitecoatinvestor.com",
+    "www.optimizedportfolio.com",
+    "walletburst.com",
+    "poptools.org",
+    "www.freelancerfinance.net",
+    "calk-usa.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.proshares.com",
+    "apps.apple.com",
+    "smartasset.com",
+    "quantstock.cc",
+    "www.bogleheads.org",
+    "apps.apple.com",
+    "www.reddit.com",
+    "www.wealthclaude.com",
+    "apps.apple.com",
+    "apps.apple.com"
+   ],
+   "major_domains": [
+    "apps.apple.com",
+    "apps.apple.com",
+    "apps.apple.com",
+    "apps.apple.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "Portfolio rebalancing calculator Excel",
+    "Portfolio rebalancing calculator mutual fund",
+    "Portfolio percentage calculator",
+    "Portfolio allocation calculator",
+    "Asset allocation calculator Excel",
+    "Portfolio diversification calculator",
+    "Portfolio sector allocation calculator",
+    "Asset allocation calculator free"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "4/10 major platforms (apps.apple.com, apps.apple.com, apps.apple.com, apps.apple.com); AI Overview present, cites www.portseido.com, www.youtube.com, www.whitecoatinvestor.com, www.optimizedportfolio.com",
+   "se_results_count": 95
+  },
+  {
+   "keyword": "high yield savings calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.sofi.com",
+    "www.bankrate.com",
+    "bell.bank",
+    "www.cit.com",
+    "www.nerdwallet.com",
+    "www.raisin.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.bankrate.com",
+    "www.sofi.com",
+    "www.nerdwallet.com",
+    "bell.bank",
+    "www.firstcitycu.org",
+    "www.marcus.com",
+    "www.cit.com",
+    "finred.usalearning.gov",
+    "www.calculator.net",
+    "www.ally.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How much money will $10,000 make in a high-yield savings account?",
+    "How much will $100,000 grow in a high-yield savings account?",
+    "Which bank gives 7% interest on savings?",
+    "How much will $100,000 make in a high-yield savings?",
+    "Can you live off interest of $100,000?",
+    "How much money do I need to make $3,000 a month in interest?"
+   ],
+   "related_searches": [
+    "Saving account interest calculator monthly",
+    "High-yield savings account monthly calculator",
+    "Best high yield savings",
+    "High-yield savings calculator Amex",
+    "High-yield savings account calculator compounded monthly",
+    "High-yield calculator",
+    "High-yield savings calculator Capital One",
+    "Monthly savings calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.sofi.com, www.bankrate.com, bell.bank, www.cit.com",
+   "se_results_count": 102
+  },
+  {
+   "keyword": "trump account calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.omnicalculator.com",
+    "finance.yahoo.com",
+    "trumpaccounts.gov",
+    "www.richify.ai",
+    "www.levelall.com",
+    "remotelaws.com",
+    "stewardship.pro",
+    "www.nytimes.com",
+    "trumpaccounts.wiki",
+    "7saturdaysfinancial.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.omnicalculator.com",
+    "www.myexpattaxes.com",
+    "beaconhillwm.ca",
+    "trumpaccounts.gov",
+    "www.levelall.com",
+    "banzai.org",
+    "www.richify.ai",
+    "www.nytimes.com",
+    "www.trumpaccountestimate.com",
+    "banzai.org"
+   ],
+   "major_domains": [
+    "www.nytimes.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Do all Trump accounts get $1000?",
+    "How much would a Trump account be worth at 65?",
+    "What is the income limit for a Trump account?",
+    "How long does it take to get $1000 in a Trump account?",
+    "Is there a catch to the Trump investment account?",
+    "How do I open the $1000 Trump account?"
+   ],
+   "related_searches": [
+    "Trump Account growth calculator",
+    "Trump Account growth chart",
+    "Trump account interest rate",
+    "Trump calculator",
+    "Trump account for older kids $250",
+    "Investment calculator",
+    "Trump child Account calculator",
+    "Trump account $250",
+    "Trump account vs 529"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (www.nytimes.com); AI Overview present, cites www.omnicalculator.com, finance.yahoo.com, trumpaccounts.gov, www.richify.ai",
+   "se_results_count": 73500000
+  },
+  {
+   "keyword": "social security retirement calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.ssa.gov",
+    "www.aarp.org",
+    "www.ameriprise.com",
+    "www.nerdwallet.com",
+    "smartasset.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.ssa.gov",
+    "www.communityamerica.com",
+    "www.citizensbank.com",
+    "money.usnews.com",
+    "www.moneybee.net",
+    "incomeamerica.com",
+    "ssa.gov",
+    "www.carrolladvisory.com",
+    "www.psccu.org",
+    "wb.ml.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How much Social Security will I get at age 62?",
+    "How does divorce affect Social Security benefits?",
+    "How do I calculate my monthly income?",
+    "What age can I retire comfortably?",
+    "How much do you have to make to get $3,000 a month in Social Security?",
+    "What are 10 signs that it's time to retire?"
+   ],
+   "related_searches": [
+    "Social Security calculator by age",
+    "Early retirement calculator with Social Security",
+    "Social Security benefits pay chart calculator",
+    "Retirement calculator with Social Security and pension",
+    "Best retirement withdrawal calculator with Social Security",
+    "Retirement withdrawal calculator with Social Security and taxes",
+    "Realistic retirement calculator",
+    "401k calculator with Social Security"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.ssa.gov, www.aarp.org, www.ameriprise.com, www.nerdwallet.com",
+   "se_results_count": 163
+  },
+  {
+   "keyword": "60/40 portfolio calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.syfe.com",
+    "dqydj.com",
+    "www.fncalculator.com",
+    "tradecleverly.com",
+    "investingoal.com",
+    "www.fncalculator.com",
+    "www.fncalculator.com",
+    "www.youtube.com",
+    "justcalculators.app",
+    "moneyvibe.ai"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How did the 60/40 portfolio perform in terms of historical returns compared to the S&P 500?",
+    "How much will I have in 10 years if I invest $100 a month?",
+    "How do I calculate the total return on an investment?",
+    "Does Vanguard recommend a 40/60 portfolio for 2026?",
+    "Is the 60/40 portfolio outdated?",
+    "Is a $300,000 investment better in Vanguard or in Fidelity?"
+   ],
+   "related_searches": [
+    "60 40 portfolio calculator mutual fund",
+    "Stock total return calculator",
+    "Individual stock return calculator",
+    "ETF total return calculator",
+    "Stock return calculator with dividends",
+    "Stock return calculator by date",
+    "Dqydj stock Return Calculator",
+    "Stock return calculator comparison"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 31
+  },
+  {
+   "keyword": "liquid net worth calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.americanexpress.com",
+    "www.nerdwallet.com",
+    "www.omnicalculator.com",
+    "ajelix.com",
+    "finance.yahoo.com",
+    "www.inc.com",
+    "projectionlab.com",
+    "www.bonsave.app",
+    "smartasset.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.omnicalculator.com",
+    "www.americanexpress.com",
+    "www.nerdwallet.com",
+    "www.ramseysolutions.com",
+    "wealthtender.com",
+    "instacalc.com",
+    "www.sofi.com",
+    "investor.sebi.gov.in",
+    "www.wiseradvisor.com",
+    "www.inc.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How many Americans have $1,000,000 in liquid assets?",
+    "Is a 401k considered part of liquid net worth?",
+    "Is 2 million liquid net worth rich?",
+    "Does a house count as liquid net worth?",
+    "What is the average net worth of a 65 year old couple?",
+    "What assets are not considered liquid?"
+   ],
+   "related_searches": [
+    "Liquid net worth calculator with steps",
+    "Liquid net worth percentile",
+    "Liquid net worth vs net worth",
+    "Does liquid net worth include 401k",
+    "Liquid net worth by age",
+    "Average liquid net worth",
+    "Are stocks liquid net worth",
+    "What is total net worth"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.americanexpress.com, www.nerdwallet.com, www.omnicalculator.com, ajelix.com",
+   "se_results_count": 92
+  },
+  {
+   "keyword": "hysa vs cd calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.bankrate.com",
+    "www.northshorebank.com",
+    "www.umcu.org",
+    "www.raisin.com",
+    "www.cdvalet.com",
+    "www.nerdwallet.com",
+    "www.cbsnews.com",
+    "www.firstmerchants.com",
+    "www.cabrillocu.com",
+    "www.cit.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Which banks give 7% interest in savings?",
+    "What are the penalties for early CD withdrawal?",
+    "How much will $10,000 make in a high-yield savings?",
+    "Why CD instead of Hysa?",
+    "Which is better for me, a CD or a high-yield savings account?",
+    "How much does a $10,000 CD make in 1 year?"
+   ],
+   "related_searches": [
+    "HYSA calculator",
+    "High yield savings account",
+    "Normal CD calculator",
+    "CD rates",
+    "First Merchants bank CD rates Calculator",
+    "CD monthly interest calculator",
+    "Best CD rates",
+    "Saving account interest calculator monthly"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 107
+  }
+ ],
+ "cost": "DataForSEO: 9 calls, $0.03705 of $2.00 budget"
+}

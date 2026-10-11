@@ -1,0 +1,8 @@
+# Cannibalization advisory — tool-usage pass 2026-10-11 (Phase 1, detection only)
+
+Impressions/clicks: no GSC access in this cloud run (no service-account credentials), so no per-page impressions or clicks could be read. Tool-usage numbers are the only traffic signal on hand. **No source file was changed by this phase.**
+
+| New route | Existing route | Shared query cluster | Traffic | Recommendation |
+|---|---|---|---|---|
+| /social-security-break-even-calculator/ (new) | /retirement/social-security-retirement-calculator/ (10 tool users / 28 views in 3 days; GSC n/a) | "when to take social security" / break-even age. The existing page has break-even FAQs and a break-even paragraph, but its tool projects savings plus a 4% draw | new page: none yet | **DO NOT consolidate.** The two pages answer different questions: total monthly retirement income vs. the age at which claiming later pays off. Keep them distinct and link both ways (Phase 6: a "next step" link from the SS retirement page to the break-even tool, and from the break-even page back). |
+| /mileage-reimbursement-calculator/ (new) | /guides/state-mileage-reimbursement-law-california-texas-michigan (GSC n/a) | "mileage reimbursement calculator". The guide's title starts "Mileage Reimbursement Calculator California…" but the guide covers state labor law and has no calculator | new page: none yet | **DO NOT consolidate.** Differentiate: the new page is the U.S. IRS-rate calculator, and the guide covers the CA/TX/MI rules. A human may want to retitle the guide toward "state mileage reimbursement law" later. This is a manual decision, and no metadata edit was made in this run. |

@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { computeInvestment, type InvestmentInput } from "../lib/investment";
+import { useDraft } from "./calc-ui";
 import { fmtUSD, fmtPct } from "../lib/format";
 
 // InvestmentIQ island. Default "growth" view (future value); "goal" view (monthly needed to hit a
@@ -7,7 +8,7 @@ import { fmtUSD, fmtPct } from "../lib/format";
 // interest. Fully standalone — no external host coupling.
 
 interface Props {
-  initialData?: Record<string, unknown> & { goalMode?: boolean; showFrequency?: boolean };
+  initialData?: Record<string, unknown> & { goalMode?: boolean; showFrequency?: boolean; savingsMode?: boolean };
   heading?: string;
   subheading?: string;
 }
@@ -22,6 +23,9 @@ const FREQ = [
 export default function InvestmentCalculator({ initialData, heading, subheading }: Props) {
   const goalMode = Boolean(initialData?.goalMode);
   const showFrequency = Boolean(initialData?.showFrequency);
+  // savingsMode (HYSA page): savings wording (APY, interest earned) and an optional second APY to compare against.
+  const savingsMode = Boolean(initialData?.savingsMode);
+  const [compareApy, setCompareApy] = useState(0);
   const [v, setV] = useState<InvestmentInput>({
     currentBalance: n(initialData?.currentBalance, goalMode ? 20000 : 10000),
     monthlyContribution: n(initialData?.monthlyContribution, goalMode ? 0 : 500),
@@ -32,6 +36,8 @@ export default function InvestmentCalculator({ initialData, heading, subheading 
   });
   const [showSchedule, setShowSchedule] = useState(false);
   const r = useMemo(() => computeInvestment(v), [v]);
+  // Same deposits and compounding at the reader's current account APY; the gap is the extra interest the new rate earns.
+  const cmp = useMemo(() => (savingsMode && compareApy > 0 ? computeInvestment({ ...v, annualReturnPct: compareApy }) : null), [savingsMode, compareApy, v]);
   const set = (p: Partial<InvestmentInput>) => setV((s) => ({ ...s, ...p }));
 
   return (
@@ -55,9 +61,12 @@ export default function InvestmentCalculator({ initialData, heading, subheading 
             <Field label="Monthly contribution"><Money v={v.monthlyContribution} on={(x) => set({ monthlyContribution: x })} /></Field>
           )}
           <div style={S.row2}>
-            <Field label="Annual return %"><Pct v={v.annualReturnPct} on={(x) => set({ annualReturnPct: x })} /></Field>
+            <Field label={savingsMode ? "APY %" : "Annual return %"}><Pct v={v.annualReturnPct} on={(x) => set({ annualReturnPct: x })} /></Field>
             <Field label="Years"><Plain v={v.years} on={(x) => set({ years: x })} /></Field>
           </div>
+          {savingsMode && (
+            <Field label="Compare: your current account's APY (optional)"><Pct v={compareApy} on={setCompareApy} /></Field>
+          )}
           {showFrequency && (
             <Field label="Compounding frequency">
               <select style={S.input} value={v.compoundsPerYear} onChange={(e) => set({ compoundsPerYear: Number(e.target.value) })}>
@@ -83,7 +92,7 @@ export default function InvestmentCalculator({ initialData, heading, subheading 
           )}
           <div style={S.statRow}>
             <Stat label="You put in" value={fmtUSD(r.totalContributions)} />
-            <Stat label="Investment growth" value={fmtUSD(r.totalGrowth)} />
+            <Stat label={savingsMode ? "Interest earned" : "Investment growth"} value={fmtUSD(r.totalGrowth)} />
           </div>
           {!goalMode && r.totalGrowth != null && r.futureValue != null && r.futureValue > 0 && (
             <div style={S.barWrap} aria-hidden="true">
@@ -95,6 +104,11 @@ export default function InvestmentCalculator({ initialData, heading, subheading 
                 <span><span style={{ ...S.dot, background: PRIMARY }} /> Contributions</span>
                 <span><span style={{ ...S.dot, background: ACCENT }} /> Growth</span>
               </div>
+            </div>
+          )}
+          {cmp && cmp.futureValue != null && r.futureValue != null && (
+            <div style={S.note}>
+              At {v.annualReturnPct}% you earn <strong>{fmtUSD(r.futureValue - cmp.futureValue)}</strong> more interest over {v.years} years than at your current {compareApy}% ({fmtUSD(cmp.totalGrowth)} interest).
             </div>
           )}
           {goalMode && r.progressPct != null && (
@@ -133,23 +147,25 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
   return <label style={S.field}><span style={S.label}>{label}</span>{children}</label>;
 }
 function Money({ v, on }: { v: number; on: (n: number) => void }) {
+  const d = useDraft(v, on, (v) => v.toLocaleString("en-US"));
   return (
     <div style={S.suffixWrap}>
       <span style={S.prefix}>$</span>
-      <input style={{ ...S.input, paddingLeft: 22 }} inputMode="numeric" value={v === 0 ? "" : v.toLocaleString("en-US")} placeholder="0" onChange={(e) => on(parse(e.target.value))} />
+      <input style={{ ...S.input, paddingLeft: 22 }} inputMode="numeric" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} />
     </div>
   );
 }
 function Pct({ v, on }: { v: number; on: (n: number) => void }) {
-  return <div style={S.suffixWrap}><input style={S.input} inputMode="decimal" value={v} onChange={(e) => on(parse(e.target.value))} /><span style={S.suffix}>%</span></div>;
+  const d = useDraft(v, on);
+  return <div style={S.suffixWrap}><input style={S.input} inputMode="decimal" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} /><span style={S.suffix}>%</span></div>;
 }
 function Plain({ v, on }: { v: number; on: (n: number) => void }) {
-  return <input style={S.input} inputMode="numeric" value={v} onChange={(e) => on(parse(e.target.value))} />;
+  const d = useDraft(v, on);
+  return <input style={S.input} inputMode="numeric" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} />;
 }
 function Stat({ label, value }: { label: string; value: string }) {
   return <div style={S.stat}><span style={S.statLabel}>{label}</span><span style={S.statValue}>{value}</span></div>;
 }
-function parse(s: string): number { if (s === "") return 0; return Math.max(0, Number(s.replace(/[^0-9.]/g, "")) || 0); }
 function n(x: unknown, d: number): number { const v = Number(x); return Number.isFinite(v) ? v : d; }
 
 const PRIMARY = "#0E7C66";

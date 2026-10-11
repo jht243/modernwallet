@@ -58,6 +58,9 @@ import EmergencyFundCalculator from "./EmergencyFundCalculator";
 import InflationCalculator from "./InflationCalculator";
 import ExpenseRatioCalculator from "./ExpenseRatioCalculator";
 import DebtConsolidationCalculator from "./DebtConsolidationCalculator";
+import SocialSecurityBreakEvenCalculator from "./SocialSecurityBreakEvenCalculator";
+import MileageReimbursementCalculator from "./MileageReimbursementCalculator";
+import PortfolioRebalancingCalculator from "./PortfolioRebalancingCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -130,6 +133,12 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   // keyword-gap-pass (2026-10-11): purchasing power / future cost, and fund fee drag.
   "inflation-calculator": InflationCalculator,
   "expense-ratio-calculator": ExpenseRatioCalculator,
+  // tool-usage pass (2026-10-11): the next tool each persona reached for — claiming-age break-even
+  // (seed: Social Security retirement), employee mileage reimbursement (seed: IRS mileage 2026),
+  // and buy/sell rebalancing trades (seed: 60/40 portfolio).
+  "social-security-break-even-calculator": SocialSecurityBreakEvenCalculator,
+  "mileage-reimbursement-calculator": MileageReimbursementCalculator,
+  "portfolio-rebalancing-calculator": PortfolioRebalancingCalculator,
   // PTO / leave-days cash-out — competitor-monitor pass (2026-08-17): sell-back payout calculator
   // that also shows an estimated net-of-tax figure and the unpaid-time-off value for comparison.
   "pto-cashout": PtoCashoutCalculator,

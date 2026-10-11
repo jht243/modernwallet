@@ -5,6 +5,7 @@ import {
   BUSINESS_RATE_2026_H1,
   BUSINESS_RATE_2026_H2,
 } from "../lib/mileage-deduction";
+import { useDraft } from "./calc-ui";
 import { fmtUSD, fmtNum, fmtPct } from "../lib/format";
 
 // Business mileage deduction island. Two design decisions that separate it from every other
@@ -110,6 +111,7 @@ export default function MileageDeductionCalculator({ initialData, heading, subhe
           <label style={S.checkRow}>
             <input
               type="checkbox"
+              style={S.checkbox}
               checked={input.firstYearForVehicle === true}
               onChange={(e) => set({ firstYearForVehicle: e.target.checked })}
             />
@@ -204,33 +206,33 @@ function PlainInput({
   onChange: (v: number) => void;
   suffix?: string;
 }) {
+  const d = useDraft(value, onChange, (v) => v.toLocaleString("en-US"));
   return (
     <div style={S.suffixWrap}>
       <input
         style={S.input}
         inputMode="decimal"
-        value={value === 0 ? "" : value.toLocaleString("en-US")}
+        value={d.text}
         placeholder="0"
-        onChange={(e) =>
-          onChange(e.target.value === "" ? 0 : Math.max(0, Number(e.target.value.replace(/[^0-9.]/g, ""))))
-        }
+        onChange={(e) => d.onChange(e.target.value)}
+        onBlur={d.onBlur}
       />
       {suffix && <span style={S.suffix}>{suffix}</span>}
     </div>
   );
 }
 function MoneyInput({ value, onChange }: { value: number; onChange: (v: number) => void }) {
+  const d = useDraft(value, onChange, (v) => v.toLocaleString("en-US"));
   return (
     <div style={S.suffixWrap}>
       <span style={S.prefix}>$</span>
       <input
         style={{ ...S.input, paddingLeft: 22 }}
         inputMode="decimal"
-        value={value === 0 ? "" : value.toLocaleString("en-US")}
+        value={d.text}
         placeholder="0"
-        onChange={(e) =>
-          onChange(e.target.value === "" ? 0 : Math.max(0, Number(e.target.value.replace(/[^0-9.]/g, ""))))
-        }
+        onChange={(e) => d.onChange(e.target.value)}
+        onBlur={d.onBlur}
       />
     </div>
   );
@@ -271,7 +273,8 @@ const S: Record<string, React.CSSProperties> = {
   toggleRow: { display: "flex", gap: 6 },
   toggleBtnSm: { flex: 1, padding: "8px 4px", fontSize: "0.82rem", fontWeight: 600, border: "1px solid #D0DAD6", borderRadius: 8, background: "#fff", color: "#444", cursor: "pointer" },
   toggleBtnActive: { background: PRIMARY, borderColor: PRIMARY, color: "#fff" },
-  checkRow: { display: "flex", alignItems: "flex-start", gap: 8, cursor: "pointer" },
+  checkRow: { display: "flex", alignItems: "center", gap: 10, cursor: "pointer", minHeight: 40 },
+  checkbox: { width: 20, height: 20, margin: 0, flexShrink: 0, accentColor: PRIMARY, cursor: "pointer" },
   checkLabel: { fontSize: "0.85rem", color: "#444", lineHeight: 1.4 },
   results: { background: "linear-gradient(180deg,#F4FAF8 0%,#FFFFFF 100%)", border: "1px solid #D8EEE6", borderRadius: 14, padding: 18, display: "flex", flexDirection: "column", gap: 12, alignSelf: "start" },
   bigStat: { display: "flex", flexDirection: "column", gap: 2, paddingBottom: 8, borderBottom: "1px solid #E6F0EC" },

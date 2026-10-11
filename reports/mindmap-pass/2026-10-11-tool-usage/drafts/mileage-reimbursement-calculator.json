@@ -1,0 +1,48 @@
+{
+  "metaTitle": "Mileage Reimbursement Calculator for 2026 Business Miles",
+  "metaDescription": "Free mileage reimbursement calculator. Enter business miles and your employer's rate to see what you're owed at the 2026 federal rates and what's taxable.",
+  "introText": "A mileage reimbursement calculator works out what you're owed by multiplying business miles by a rate per mile. Unless your employer sets its own rate, use the Internal Revenue Service (IRS) business rate: 72.5 cents a mile for January through June 2026, and 76 cents a mile from July 1. Enter your miles for each half of the year in the calculator above, plus your employer's rate if it has one. Under an accountable plan, a reimbursement at or below the IRS rate is not taxable wages.\n\nFor example, say you drive 1,200 business miles from January to June and 1,000 miles from July to December. At the IRS rates, the first half pays $870 and the second half pays $760. That's a total reimbursement of $1,630, a blended rate of about 74.09 cents a mile. If your employer pays 80 cents a mile instead, you get $1,760. The $130 above the IRS-rate amount counts as taxable wages. At 60 cents a mile, you get $1,320, which is $310 less than the IRS-rate amount.",
+  "howItWorks": "The calculator takes business miles in two batches because the IRS business rate changed partway through 2026. The rate is 72.5 cents a mile from January 1 to June 30, and 76 cents a mile from July 1 to December 31. Each batch of miles is multiplied by its own rate, and the two results are added to give the mileage portion. If you leave the employer rate blank, the calculator uses the IRS rate for each half. Earlier rates, including 70 cents a mile for 2025, are in the [IRS mileage rate history](/guides/irs-mileage-rate-history/).\n\nThe worked example shows the math step by step. The 1,200 miles from January to June, times 72.5 cents, come to $870. The 1,000 miles from July to December, times 76 cents, add $760. Together that's $1,630 for the year. Divide $1,630 by 2,200 miles and the blended rate is about 74.09 cents a mile.\n\nWhen an employer pays its own rate, the calculator measures the gap against the IRS rate half by half, since the IRS rate changed on July 1. At 80 cents a mile, the same 2,200 miles pay $1,760. That is $130 more than the IRS-rate amount of $1,630, and the IRS includes that $130 in the employee's wages. At 60 cents a mile, the reimbursement is $1,320, or $310 below the IRS-rate amount. Under an accountable plan none of that $1,320 is wages, and most employees cannot deduct unreimbursed mileage on their federal return.\n\nBusiness tolls and parking fees are separate from the per-mile rate, so the calculator adds them on top of the mileage portion. Parking at your regular workplace is a commuting expense, so leave it out. Count business miles only. The regular commute from home to your usual workplace is not business mileage.\n\nYour employer's written policy decides what rate it pays, and federal law does not require an employer to use the IRS rate. Some states set their own reimbursement rules, which the [state mileage reimbursement guide](/guides/state-mileage-reimbursement-law-california-texas-michigan/) covers. If you're self-employed and deduct mileage instead of being reimbursed, the same rates apply on the [2026 IRS mileage deduction page](/mileage-deduction/irs-mileage-rate-2026/). Record every business trip in the [mileage log template](/templates/mileage-log-template/), then enter each half's total miles in the calculator above.",
+  "faqs": [
+    {
+      "question": "How do I calculate mileage reimbursement?",
+      "answer": "Multiply your business miles by the reimbursement rate, then add any business tolls and parking. In 2026, use 72.5 cents a mile for January through June and 76 cents a mile from July 1, unless your employer sets its own rate. For example, 1,200 first-half miles and 1,000 second-half miles come to $1,630 at the IRS rates."
+    },
+    {
+      "question": "What are the IRS mileage rates for 2026?",
+      "answer": "The IRS business standard mileage rate is 72.5 cents a mile from January 1 to June 30, 2026. It rises to 76 cents a mile from July 1 to December 31, 2026. Both rates are listed in the [IRS standard mileage rates table](https://www.irs.gov/tax-professionals/standard-mileage-rates). The 2025 business rate was 70 cents a mile."
+    },
+    {
+      "question": "Is mileage reimbursement taxable?",
+      "answer": "Mileage reimbursement is not taxable when it's paid at or below the IRS rate under an accountable plan. [IRS Publication 463](https://www.irs.gov/publications/p463) keeps that allowance out of your wages. Any part paid above the IRS rate is included in wages. In the worked example, an 80-cent rate pays $1,760, and $130 of it counts as wages."
+    },
+    {
+      "question": "What is the IRS rule for mileage reimbursement?",
+      "answer": "Under an accountable plan, a mileage allowance at or below the federal rate is not included in the employee's wages, and the part above that rate is. The rule is set out in [IRS Publication 463](https://www.irs.gov/publications/p463). Because the IRS rate changed on July 1, 2026, the calculator measures any excess half by half. [IRS Publication 15](https://www.irs.gov/publications/p15) is the employer's tax guide."
+    },
+    {
+      "question": "Does my employer have to pay the IRS mileage rate?",
+      "answer": "No, federal law does not require an employer to use the IRS rate, and the employer's written policy decides what it pays. Some states set their own reimbursement rules, covered in the [state mileage reimbursement guide](/guides/state-mileage-reimbursement-law-california-texas-michigan/). Enter your employer's rate in the calculator above to see any gap. At 60 cents a mile, the example's miles pay $310 less than the IRS-rate amount."
+    },
+    {
+      "question": "Can I deduct mileage my employer doesn't reimburse?",
+      "answer": "Most employees cannot deduct unreimbursed mileage on their federal return. IRS Publication 463 limits that deduction to a few groups, such as Armed Forces reservists and qualified performing artists."
+    },
+    {
+      "question": "Are tolls and parking reimbursed separately?",
+      "answer": "Business tolls and parking fees are separate from the per-mile rate, so the calculator adds them on top of the mileage portion. Parking at your regular workplace is a commuting expense, so leave it out. Your employer's written policy decides what it pays."
+    },
+    {
+      "question": "Does my commute count as business mileage?",
+      "answer": "No, the regular commute from home to your usual workplace is not business mileage. Enter only business miles in the calculator, and record each trip in a [mileage log](/templates/mileage-log-template/). Parking at your regular workplace is a commuting expense too."
+    }
+  ],
+  "slug": "mileage-reimbursement-calculator",
+  "h1": "",
+  "subtitle": "",
+  "sections": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

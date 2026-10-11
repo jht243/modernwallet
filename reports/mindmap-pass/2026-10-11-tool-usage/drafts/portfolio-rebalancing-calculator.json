@@ -1,0 +1,48 @@
+{
+  "metaTitle": "Portfolio Rebalancing Calculator: How Much to Buy or Sell",
+  "metaDescription": "Free portfolio rebalancing calculator. See how much to buy or sell in each holding to reach your target mix, or use new money so you don't have to sell.",
+  "introText": "A portfolio rebalancing calculator shows how much to buy or sell in each holding: multiply the holding's target percentage by the portfolio total, then subtract what the holding is worth now. A positive result is the dollar amount to buy, and a negative result is the amount to sell. Enter the current value and target percentage for Stocks, Bonds, Real estate / other, and Cash in the calculator above, plus any new money you plan to invest.\n\nFor example, take a portfolio with $70,000 in Stocks, $25,000 in Bonds and $5,000 in Cash. That is a total of $100,000, and the current split is 70% / 25% / 5%. Say the target is 60% Stocks, 35% Bonds and 5% Cash. The calculator says to sell $10,000 of Stocks and buy $10,000 of Bonds, while Cash needs no trade. If you would rather not sell, check the new-money-only box: adding $30,000 lands the portfolio exactly on target without a single sale.",
+  "howItWorks": "The calculator first works out what each holding should be worth, then compares that figure to what the holding is worth now. A holding's target value is its target percentage times the portfolio total, and the total includes any new money you enter. The trade is the target value minus the current value, so a positive result is a buy and a negative result is a sale.\n\nIn the default example, the portfolio holds $70,000 in Stocks, $25,000 in Bonds and $5,000 in Cash, with no new money added. The targets are 60% Stocks, 35% Bonds and 5% Cash. Stocks should be worth 60% of $100,000, or $60,000. That is $10,000 less than the current $70,000, so the table shows a sale of $10,000. Bonds should be worth $35,000 against $25,000 now, so the table shows a buy of $10,000. Cash already sits on target and needs no trade.\n\nChecking the \"Use new money only\" box tells the calculator to skip every sale. New money goes only to holdings below target, split in proportion to how far below target each one is. With $10,000 to invest in the default example, nothing is sold. The calculator sends $9,642.86 to Bonds and $357.14 to Cash. The mix ends at about 63.6% / 31.5% / 4.9%, which is closer to the target without reaching it.\n\nEnough new money closes every gap. With $30,000 to invest, the portfolio grows to $130,000 and the calculator sends $8,000 to Stocks. It sends $20,500 to Bonds and $1,500 to Cash. That lands the portfolio exactly on 60% / 35% / 5% with nothing sold. If you enter more new money than it takes to fill every gap, the remainder is split by target percentage. To see the expected return and risk of the mix you are aiming for, run it through the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/).\n\nThe calculator is pure arithmetic on the numbers you enter. Selling in a taxable account can trigger capital gains tax, and trades can carry costs, but the calculator models neither one. Rebalancing inside a tax-advantaged account, or with new money, avoids the question of whether a sale creates a tax bill. The tool does not recommend a target mix, and the [portfolio rebalancing guide](/guides/portfolio-rebalancing/) covers when and how often to rebalance. If your targets do not add up to 100%, a note appears, so fix the percentages before you place any trade.",
+  "faqs": [
+    {
+      "question": "How do I calculate how much to rebalance?",
+      "answer": "Multiply each holding's target percentage by the portfolio total, including any new money, then subtract what the holding is worth now. A positive result is the amount to buy, and a negative result is the amount to sell. Take $70,000 in Stocks inside a $100,000 portfolio with a 60% Stocks target. The calculation says to sell $10,000 of Stocks."
+    },
+    {
+      "question": "Can I rebalance without selling?",
+      "answer": "Yes, if you have new money to add. Check the \"Use new money only\" box, and the calculator sends new money only to holdings below target, in proportion to how far below each one is. In the default example, $30,000 of new money lands exactly on target. With $10,000, the mix ends closer to target without reaching it."
+    },
+    {
+      "question": "How often should I rebalance my portfolio?",
+      "answer": "This calculator answers how much to trade, and it does not set a schedule or a drift trigger. The [portfolio rebalancing guide](/guides/portfolio-rebalancing/) covers when and how often to rebalance. Once you decide to act, enter your current values and targets above to get the dollar amounts."
+    },
+    {
+      "question": "Does rebalancing trigger taxes?",
+      "answer": "It can. Selling a holding in a taxable account can trigger capital gains tax, and the calculator does not model that tax or any trading costs. Rebalancing inside a tax-advantaged account, or using the new-money-only box so nothing is sold, avoids the sale question."
+    },
+    {
+      "question": "What if my target percentages don't add up to 100%?",
+      "answer": "The calculator shows a note when your targets do not add up to 100%. Adjust the percentages until they do."
+    },
+    {
+      "question": "Can I use this for a 60/40 portfolio?",
+      "answer": "Yes. Set the Stocks target to 60 and the Bonds target to 40, set the other holdings to zero, and the table shows what to buy or sell. For the expected return and risk of that mix, use the [60/40 portfolio calculator](/portfolio/60-40-portfolio-calculator/)."
+    },
+    {
+      "question": "Does the calculator recommend an allocation?",
+      "answer": "No. The tool runs arithmetic on the target you enter and does not suggest a mix. The U.S. Securities and Exchange Commission (SEC) has an introduction to the topic on its [Investor.gov asset allocation page](https://www.investor.gov/introduction-investing/getting-started/asset-allocation)."
+    },
+    {
+      "question": "Where can I learn more about rebalancing?",
+      "answer": "You can read more in the [rebalancing entry in the SEC's Investor.gov glossary](https://www.investor.gov/introduction-investing/investing-basics/glossary/rebalancing). For when and how often to rebalance, read the [portfolio rebalancing guide](/guides/portfolio-rebalancing/). You can also run your funds through the [expense ratio calculator](/expense-ratio-calculator/)."
+    }
+  ],
+  "slug": "portfolio-rebalancing-calculator",
+  "h1": "",
+  "subtitle": "",
+  "sections": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}
