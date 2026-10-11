@@ -12,12 +12,15 @@ Act on every **new-content** row in the chart. The row's `format` column routes 
 - **`article` / no format** → generate the page.
 - **`comparison table/database` whose target is a real comparison page type in THIS repo** →
   generate it as a real page (JSON stores: `--schema comparison`). Otherwise it is a spec.
-- **`interactive tool`, `calculator`, `quiz/assessment`, `template`, `glossary/reference`,
-  `data report` (as an interactive asset)** → this phase does NOT build the asset and does NOT
-  call the generator. Write a one-page asset spec at `reports/mindmap-pass/specs/<slug>-spec.md`
-  (route, format + rationale, what it does — inputs→outputs / question flow / column schema /
-  data sources — keywords, scope, dependencies). `git add` it; Phase 4 reviews the spec. Never
-  write stub page content for these.
+- **`interactive tool`, `calculator`, `quiz/assessment`** → BUILT in this run, for real: follow
+  `.claude/commands/mindmap-pass/phase-3c-tool-build.md` (mirror this repo's existing tool wiring,
+  defensible logic, `data-tool` root, page prose from the API writer). A working tool on a live
+  route — never a spec, never a stub. (MINDMAP-BUILDS-TOOLS)
+- **`template`, `glossary/reference`, `data report` (as an interactive asset)** → this phase does
+  NOT build the asset and does NOT call the generator. Write a one-page asset spec at
+  `reports/mindmap-pass/specs/<slug>-spec.md` (route, format + rationale, what it does — column
+  schema / data sources — keywords, scope, dependencies). `git add` it; Phase 4 reviews the spec.
+  Never write stub page content for these.
 
 > **NET-NEW ONLY.** This phase creates brand-new routes. Never overwrite, regenerate, or
 > replace an existing page. A "new-content" row pointing at a route that already exists → STOP
@@ -127,7 +130,7 @@ one-line fix. **`git add` every `.meta.json`** — it is the provenance record.
 ## Project specifics for this routine
 
 Match the page template + schema builders Phase 0 discovered so new pages carry the same
-scaffolding as existing pages. Asset specs → `reports/mindmap-pass/specs/<slug>-spec.md`.
+scaffolding as existing pages. Tool rows → built per `phase-3c-tool-build.md`; other asset specs → `reports/mindmap-pass/specs/<slug>-spec.md`.
 **The INTRO HUMANIZE step is SKIPPED for every page this phase generated** — they are exempt
 per the content standard's INTRO HUMANIZE section (the generator carries its guards).
 

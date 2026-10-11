@@ -116,13 +116,13 @@ Three top-level sections — `# Trends` (Lane A's verdict + what mindmap built f
 - **<route>** — <section added> (source: trend / coverage / top-10)
 
 ## Flagged specs, not built (N)
-- <slug> — <calculator/tool/quiz/template spec path>
+- <slug> — <template/glossary/data-report spec path> (tool/calculator/quiz rows are built, not specced)
 
 ## Over cap, not built (N)
 - <slug> — over the 25-page per-run cap. NOT ledgered — re-competes next run.
 
 ## Dropped by mindmap (N)
-- <slug> — <source> — <reason: exists / ledger / winner protection / weak demand / SERP locked / metadata or redirect row / non-article format / non-groundable YMYL fact / failed audit>
+- <slug> — <source> — <reason: exists / ledger / winner protection / weak demand / SERP locked / metadata or redirect row / spec-only format (template/glossary/data report) / non-groundable YMYL fact / failed audit>
 
 ## Cannibalization advisory
 <pairs mindmap's advisory phase flagged, or "None this run">

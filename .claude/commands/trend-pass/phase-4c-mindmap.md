@@ -22,7 +22,7 @@
 - **No metadata rows** — drop any `update existing metadata` row from the chart; never run mindmap phase-2.
 - **No consolidation/redirects** — mindmap phase-1 runs in its ADVISORY form only (writes no edits); drop any row that would 301/canonicalize.
 - **Additive only** — `update existing body text` rows ADD a section via `content_gen.py section`; never rewrite existing copy. `add internal links` rows are allowed.
-- **Format guard** — only `article` / `comparison table/database` rows are auto-built; tool/calculator/quiz/template rows go to the digest as flagged specs (`reports/mindmap-pass/specs/<slug>-spec.md`). **On this calculator site:** a new spoke page in a `src/data/spokes-*.ts` registry that reuses an EXISTING `src/lib/*` engine unmodified (the 2026-07-13 `retirement/ira-early-withdrawal-calculator` precedent) counts as an `article` row; any row that needs new or changed calculator code in `src/lib/*` / `src/components/*` is a spec, never built here.
+- **Format guard** — `article` / `comparison table/database` rows AND tool rows (`interactive tool` / `calculator` / `quiz/assessment`) are auto-built — tool rows by mindmap Phase 3c (`.claude/commands/mindmap-pass/phase-3c-tool-build.md`: mirror this repo's existing tool wiring, client-side logic, `data-tool` root) and audited by Phase 4's tool checklist; only `template` / `glossary/reference` / `data report` rows go to the digest as flagged specs (`reports/mindmap-pass/specs/<slug>-spec.md`). (MINDMAP-BUILDS-TOOLS) **On this calculator site:** a new spoke page in a `src/data/spokes-*.ts` registry that reuses an EXISTING `src/lib/*` engine unmodified (the 2026-07-13 `retirement/ira-early-withdrawal-calculator` precedent) counts as an `article` row; a row that needs new or changed calculator code in `src/lib/*` / `src/components/*` is a TOOL row, built via Phase 3c.
 - **Prose rule + audit invariant** — API writer only (`scripts/lib/content_gen.py`); every output audited before it ships.
 
 ## Finance / YMYL guardrails (BINDING — this is a personal-finance site)
@@ -68,4 +68,4 @@ Read each file; do not paraphrase:
 Do **NOT** run mindmap's phase-2 (metadata), 7, 8 or 9 — Phase 5 of this pass does the build check, ledgers, the one commit, deploy, 200-verify, IndexNow and the digest.
 
 ## 5. Hand-off to Phase 5
-Pass: pages shipped, enrichments, over-cap rows, flagged non-article rows (specs), cannibalization advisory, and every dropped row with its reason — each tagged with its source (`trend` / `coverage` / `top-10`). Also the keyword demand-ladder rung BUILD-BRIEF used.
+Pass: pages shipped, enrichments, over-cap rows, flagged spec-only rows (template/glossary/data report), cannibalization advisory, and every dropped row with its reason — each tagged with its source (`trend` / `coverage` / `top-10`). Also the keyword demand-ladder rung BUILD-BRIEF used.

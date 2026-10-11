@@ -4,11 +4,23 @@ This phase IS the gate for Phase 3. It checks **only the net-new pages created i
 
 **Check the `format` column of each Phase 3 row before applying the checklist.** Article rows and non-article rows have different review criteria:
 
-**For non-article format rows (`interactive tool`, `calculator`, `quiz/assessment`, `template`, `comparison table/database`, `glossary/reference`, `data report`):** Phase 3 produced a spec file, not prose. Audit the spec — not the placeholder route — against this checklist:
+**For BUILT tool rows (`interactive tool`, `calculator`, `quiz/assessment` — Phase 3c, MINDMAP-BUILDS-TOOLS):** audit the working tool AND its page. The page prose gets the full standard checklist below (it is a page). The tool gets this checklist on top — any ✗ is hard-fail rework:
+- Logic: work 3 realistic inputs by hand; the tool's outputs match. Every number in the code is a named constant with a stated source/assumption ✓/✗
+- Edge inputs (empty, zero, negative, huge, all-default) never crash or show NaN/undefined ✓/✗
+- It answers the row's `reader_question` start to finish, and the result can be kept (print/copy/download/fullscreen) when the reader's job ends in a thing ✓/✗
+- Mirrors an existing tool's wiring in this repo (registry/IA entry, layout, schema/JSON-LD, related links, sitemap source) — no invented pattern ✓/✗
+- `data-tool="<slug>"` root present, slug = route's last segment ✓/✗
+- Client-side and deterministic: no per-use paid API call, no new backend, no runtime dependency over ~30 KB gz ✓/✗
+- Works at 390px and desktop width, labelled controls, no console errors; the site build passes and the route rendered ✓/✗
+- Print-to-PDF (if the tool prints): only the output, white page, title + Name/Date + directions, not bunched at the top ✓/✗
+- The page prose describes the tool that was built (labels, steps, defaults, worked example match the code) ✓/✗
+Fix in place per the remediation ladder; a tool that still fails after 2 reworks is reverted (route, registry entry, component) and its row is dropped with the reason.
+
+**For other non-article format rows (`template`, `comparison table/database`, `glossary/reference`, `data report`):** Phase 3 produced a spec file, not prose. Audit the spec — not the placeholder route — against this checklist:
 - Spec file exists at `reports/mindmap-pass/specs/<slug>-spec.md` ✓/✗
 - Target route is named ✓/✗
 - Format is named with a rationale tied to the cluster's query signals ✓/✗
-- What the asset does is described in enough detail to build it (inputs→outputs for tools; question flow for quizzes; column schema for tables; data sources for reports) ✓/✗
+- What the asset does is described in enough detail to build it (column schema for tables; data sources for reports; sections for templates) ✓/✗
 - Primary and secondary keywords are listed ✓/✗
 - Technical dependencies are noted (components needed, data required, etc.) ✓/✗
 - A placeholder exists at the target route (if the framework expects a route file) ✓/✗

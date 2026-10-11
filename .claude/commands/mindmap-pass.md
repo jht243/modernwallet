@@ -82,6 +82,7 @@ Each phase's full instructions + reviewer checklist live in its own file. When y
 | 1 — Cannibalization detection (**advisory only**, no edits) | `.claude/commands/mindmap-pass/phase-1-consolidation.md` | reviewer checklist in file |
 | 2 — Metadata fixes | `.claude/commands/mindmap-pass/phase-2-metadata.md` | reviewer checklist in file |
 | 3 — New content | `.claude/commands/mindmap-pass/phase-3-new-content.md` | gated by Phase 4 |
+| 3c — Build tool rows | `.claude/commands/mindmap-pass/phase-3c-tool-build.md` | called from Phase 3; gated by Phase 4 |
 | 4 — New-content audit | `.claude/commands/mindmap-pass/phase-4-audit.md` | this IS the gate for Phase 3 |
 | 5 — Body text | `.claude/commands/mindmap-pass/phase-5-body.md` | reviewer checklist in file |
 | 6 — Internal linking | `.claude/commands/mindmap-pass/phase-6-internal-linking.md` | reviewer checklist in file |
