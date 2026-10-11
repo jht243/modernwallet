@@ -1,0 +1,127 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-10",
+  "window_start": "2026-10-10",
+  "window_end": "2026-10-10",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 35,
+      "sessions": 35,
+      "active_users": 30,
+      "clicks": 35
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 24,
+      "sessions": 24,
+      "active_users": 22,
+      "clicks": 24
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 14,
+      "sessions": 13,
+      "active_users": 12,
+      "clicks": 14
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 10,
+      "sessions": 10,
+      "active_users": 9,
+      "clicks": 10
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 10,
+      "sessions": 10,
+      "active_users": 9,
+      "clicks": 10
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 8,
+      "sessions": 10,
+      "active_users": 8,
+      "clicks": 8
+    },
+    {
+      "page": "/",
+      "views": 7,
+      "sessions": 7,
+      "active_users": 7,
+      "clicks": 7
+    },
+    {
+      "page": "/guides/how-to-claim-a-trump-account/",
+      "views": 7,
+      "sessions": 8,
+      "active_users": 6,
+      "clicks": 7
+    },
+    {
+      "page": "/guides/senior-deduction-social-security/",
+      "views": 7,
+      "sessions": 7,
+      "active_users": 7,
+      "clicks": 7
+    },
+    {
+      "page": "/trump-account/",
+      "views": 7,
+      "sessions": 7,
+      "active_users": 6,
+      "clicks": 7
+    }
+  ],
+  "top10_pages_total_views": 129,
+  "top10_pages_total_clicks": 129,
+  "channel_split": {
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 33,
+      "Unassigned": 3,
+      "Direct": 2
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 19,
+      "Organic Social": 4,
+      "Unassigned": 2
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 13,
+      "Unassigned": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 10
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 9,
+      "Direct": 1
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 9,
+      "Unassigned": 1
+    },
+    "/guides/how-to-claim-a-trump-account/": {
+      "Organic Search": 7,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/trump-account/": {
+      "Organic Search": 6,
+      "Direct": 1
+    },
+    "/": {
+      "Referral": 5,
+      "Direct": 1,
+      "Organic Search": 1
+    },
+    "/guides/senior-deduction-social-security/": {
+      "Organic Search": 4,
+      "Direct": 3
+    }
+  }
+}
