@@ -5,3 +5,4 @@
 reports/standards-ledger.jsonl merge=union
 reports/**/ledger.md           merge=union
 reports/content-gen-usage.jsonl merge=union
+reports/x-trends/ledger.jsonl   merge=union
