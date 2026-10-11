@@ -20,7 +20,21 @@
             "command": "$CLAUDE_PROJECT_DIR/.claude/tools/no-background-agents.sh"
           }
         ]
+      },
+      {
+        "matcher": "Edit|Write|MultiEdit|NotebookEdit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/tools/tool-usage-gates.sh"
+          }
+        ]
       }
     ]
+  },
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "medium"
+    }
   }
 }
