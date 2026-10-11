@@ -51,14 +51,14 @@ If the same term comes back tomorrow, it goes to mindmap again. Re-deciding a te
 ## Not this routine's job — repo checklists
 Do not add synthetic "we should also have X" rows to the brief (missing hub pages, series completeness, keyword wishlists). Those belong to the keyword/trend routines. On layer3 a checklist block once put 9 synthetic rows ahead of 20 real questions and consumed the run. The brief is what visitors searched for. Nothing else goes in it.
 
-## STEP 3 — Feed them to mindmap
-Write the surviving questions **and searches** into one brief and run the mindmap engine. **Read each phase file; do not paraphrase.**
+## STEP 3 — Feed them to mindmap (the full pass, unattended)
+Write the surviving questions **and searches** into one brief and run **`/mindmap-pass` in full** — every phase, in order, the same way the X-trends routine does. **Read each phase file; do not paraphrase.**
 
-- `.claude/commands/mindmap-pass/phase-build-brief.md` — brief = the raw terms, verbatim, one per line, each tagged with its `kind` and the `paths` page it came from. Force-create: a real person asked, so low search volume never vetoes it. SEMRUSH (optional) sharpens the angle only.
-- `.claude/commands/mindmap-pass/phase-3-new-content.md` — write the pages
-- `.claude/commands/mindmap-pass/phase-4-audit.md` — adversarial audit; hard-fail after 2 reworks → drop that topic and move on (do not record it anywhere; if it comes back tomorrow it gets another look)
-- `.claude/commands/mindmap-pass/phase-7-sitemap-indexnow.md`
-- `.claude/commands/mindmap-pass/phase-9-commit-deliver.md` — commit → deploy → 200-verify → IndexNow
+Brief = the raw terms, verbatim, one per line, each tagged with its `kind` and the `paths` page it came from. Demand rule: a real person asked, so low search volume never vetoes a term on its own; SEMRUSH/DataForSEO (optional) sharpens the angle only. Everything else is mindmap's normal process — including its coverage lookup (duplicate protection) and its lever ladder (create / add to an existing page / drop as already covered).
+
+> Unattended run: save the chart to `reports/mindmap-pass/<YYYY-MM-DD>-search-gap.md` (this exact name, so it never collides with another mindmap run today), treat the Phase 0 manifest as approved, and continue to Phase 9 without stopping.
+
+Phases that matter most: `phase-build-brief.md` (coverage lookup + lever ladder) → `phase-3-new-content.md` (API writer, see the prose rule) → `phase-4-audit.md` (hard-fail after 2 reworks → drop that topic; do not record it anywhere, if it comes back tomorrow it gets another look) → **`phase-5-body.md` (the "add to an existing page" rows — this is where a question already half-answered by a page gets its missing section)** → `phase-6-internal-linking.md` → `phase-7-sitemap-indexnow.md` → `phase-9-commit-deliver.md` (commit → deploy → 200-verify → IndexNow).
 
 **No cap. Work the entire brief.** Every candidate gets addressed in this run — there is no per-run page limit, no "roll to the next run", and no stopping early because the list is long. Mindmap's own dedup decides new-page-vs-existing; that is its job, not yours.
 
@@ -77,6 +77,7 @@ Write `/tmp/search-gap-<YYYY-MM-DD>.md` with the sections below **before** you s
 
 **Required sections, in order:**
 
+0. **`## Duplicate check`** — one line, copied from the Phase 0 manifest's Duplicate check row: `passed — {N} new-page rows checked, {M} matched an existing page` (or `FAILED — …` with the rows). Every new page in the next section went through it.
 1. **`## New pages`** — every net-new URL published this run. One per line, as a markdown link. Example:
    ```
    - [<page title>](https://www.themodernwallet.com/<path>) — from "<the search term>" (search, /<page they were on>)
