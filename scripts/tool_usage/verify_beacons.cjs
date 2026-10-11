@@ -14,7 +14,10 @@
  *   CHROME  (default: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome)
  */
 const PW_CORE = process.env.PW_CORE || '/Users/jonathanteplitsky/Desktop/Github Projects/OpenAI/is_it_safe_travel/node_modules/playwright-core';
-const CHROME = process.env.CHROME || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+const fs = require('fs');
+// Local Mac Chrome, else the cloud image's bundled Chromium (/opt/pw-browsers/chromium-*/chrome-linux/chrome).
+const CLOUD_CHROME = (() => { try { const d = fs.readdirSync('/opt/pw-browsers').filter(n => /^chromium-\d+$/.test(n)).sort().pop(); return d ? `/opt/pw-browsers/${d}/chrome-linux/chrome` : ''; } catch { return ''; } })();
+const CHROME = process.env.CHROME || ['/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', CLOUD_CHROME].find(p => p && fs.existsSync(p)) || '';
 const { chromium } = require(PW_CORE);
 
 const [base, ...paths] = process.argv.slice(2);
@@ -22,7 +25,7 @@ if (!base || !paths.length) { console.error('usage: verify_beacons.cjs <baseUrl>
 
 (async () => {
   // Cloud runs have no system Chrome: fall back to Playwright's own Chromium.
-  const browser = await chromium.launch({ headless: true, executablePath: require('fs').existsSync(CHROME) ? CHROME : undefined });
+  const browser = await chromium.launch({ headless: true, executablePath: CHROME || undefined });
   let failed = 0;
   for (const path of paths) {
     const ctx = await browser.newContext();
