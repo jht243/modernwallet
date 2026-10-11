@@ -1,0 +1,549 @@
+{
+ "slug": "types-of-mortgage-loans",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 2409,
+ "floor": 1200,
+ "input_tokens": 31502,
+ "output_tokens": 19534,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.5167,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2614,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    10,
+    1
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "There are three main types of mortgage loans: conventional loans, government-backed loans, and special programs run by state or local housing agencies.",
+     "replacement": "There are three main types of mortgage loans: conventional loans, government-backed loans, and special programs.",
+     "type": "contradicted",
+     "why": "Special programs also include Special Purpose Credit Programs from private lenders"
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we organize our mortgage comparisons around the same three choices, so each page settles one decision at a time.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not support this specific editorial practice claim"
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Most borrowers. Conforming is the most common loan type.",
+     "replacement": "The majority of loans. Conforming is the most common loan type.",
+     "type": "inference",
+     "why": "SOURCE says conventional is the majority of loans, not for most borrowers"
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Ask a lender that offers USDA loans whether your income and the property's location qualify.",
+     "replacement": "Other eligibility rules are not covered on this page.",
+     "type": "unsupported",
+     "why": "Nothing on USDA lenders or qualification rules is on the list"
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The loan type also sets the house price range you can consider, because it controls how much you can borrow.",
+     "replacement": "The loan type also affects the house price range you can consider.",
+     "type": "inference",
+     "why": "SOURCE says loan type affects price range; no causal 'sets/controls' claim"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Each program has its own eligibility rules, and you still need the credit and income to support the loan.",
+     "replacement": "Each program serves a different group of borrowers.",
+     "type": "inference",
+     "why": "Credit and income requirement is stated only for VA loans"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Ask a lender that offers USDA loans whether your income and the property's location qualify.",
+     "replacement": "Other eligibility rules are not covered on this page.",
+     "type": "unsupported",
+     "why": "Nothing on USDA lenders or qualification rules is on the list"
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "A quote from last month may not reflect today's prices.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE says nothing about quotes going stale over time"
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "Loan limits and program rules vary by county and by lender, and a lender's Loan Estimate is what applies these categories to your own numbers.",
+     "replacement": "Loan limits vary by county, and rules for jumbo and other non-conforming loans vary by lender.",
+     "type": "inference",
+     "why": "SOURCE: limits vary by county; non-conforming rules vary by lender; nothing more"
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "The risks the CFPB names most directly are rising ARM payments and risky loan features.",
+     "replacement": "Risks the CFPB names include rising ARM payments and risky loan features.",
+     "type": "unsupported",
+     "why": "SOURCE does not rank which risks the CFPB names most directly"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Rates vary among lenders, especially for shorter terms, so ask each lender to quote both lengths on the same day.",
+     "replacement": "Rates vary among lenders, especially for shorter terms, so ask each lender to quote both lengths.",
+     "type": "inference",
+     "why": "SOURCE never says rates change day to day or that quote timing matters."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2697
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-11T07:19:33+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-11/audit/types-of-mortgage-loans.findings.txt",
+    "applied": [
+     {
+      "id": "sections[0].body",
+      "quote": "Other eligibility rules are not covered on this page.",
+      "replacement": "Check eligibility with USDA before applying.",
+      "type": "1. USDA cell self-reference, dead end",
+      "why": "Self-reference. The source only supports income and rural limits, plus a pointer to USDA."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Other eligibility rules are not covered on this page.",
+      "replacement": "Check your eligibility with USDA before you compare quotes.",
+      "type": "1. USDA section 4 self-reference",
+      "why": "Same dead end. The source says to send the reader to USDA, and 'USDA sets those rules' is unlisted."
+     },
+     {
+      "id": "introText",
+      "quote": "The [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/owning-a-home/loan-options/) describes every home loan as a mix of those three choices.",
+      "replacement": "The [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/owning-a-home/loan-options/) describes every home loan as a mix of loan type, loan term and interest rate type.",
+      "type": "2. 'three choices' collides with 'three main types'",
+      "why": "Names the three elements so they are not confused with the three loan categories."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "The table on this page lists five main loan types: conforming conventional, jumbo, FHA, VA and USDA, plus programs from state or local housing agencies.",
+      "replacement": "The CFPB sorts mortgages into three categories: conventional, government and special programs, and the overview table splits them into six rows: conforming, jumbo, FHA, VA, USDA and state or local housing agency programs.",
+      "type": "2. FAQ five major types miscount",
+      "why": "The table has six rows. CFPB sorts mortgages into three categories."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "The CFPB groups them more broadly into conventional loans, government loans and special programs.",
+      "replacement": "",
+      "type": "2. FAQ five major types rewrite",
+      "why": "Merged into the rewritten first sentence."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Each program serves a different group of borrowers.",
+      "replacement": "",
+      "type": "3. redundant filler sentence",
+      "why": "Repeats the sentence before it."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Treat the three choices as separate decisions.",
+      "replacement": "",
+      "type": "3. redundant filler sentence",
+      "why": "Repeats the section's opening point."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "The arithmetic on that minimum is simple.",
+      "replacement": "",
+      "type": "4. arithmetic paragraph AI tell",
+      "why": "Filler lead-in."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "With 3.5 percent down, the loan covers the other 96.5 percent of the purchase price.",
+      "replacement": "With 3.5 percent down, the loan covers 96.5 percent of the purchase price.",
+      "type": "4. arithmetic paragraph rewrite",
+      "why": "Tightens the wording to the audit's version. Same meaning."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "With 20 percent down on a conventional loan, the loan covers 80 percent of the price.",
+      "replacement": "With 20 percent down, a conventional loan covers 80 percent.",
+      "type": "4. arithmetic paragraph rewrite",
+      "why": "Tightens the wording to the audit's version. Same meaning."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "The term decision comes down to which you want more: room in your monthly budget or a smaller total interest bill.",
+      "replacement": "A shorter term costs more each month and less in total. A longer term leaves more room in the monthly budget but costs more overall.",
+      "type": "5. 'comes down to' tell",
+      "why": "Removes the clich\u00e9 and keeps the CFPB payment-versus-total-cost tradeoff."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Our [15-year vs 30-year mortgage comparison](/compare/15-year-vs-30-year-mortgage/) sets the two terms side by side, and our [40-year mortgage guide](/guides/40-year-mortgage-explained/) covers a longer term.",
+      "replacement": "Our [15-year vs 30-year mortgage comparison](/compare/15-year-vs-30-year-mortgage/) shows both terms on payment and total interest, and our [40-year mortgage guide](/guides/40-year-mortgage-explained/) covers a longer term.",
+      "type": "5. 'side by side' tell",
+      "why": "Rewritten link sentence as the audit specifies. The links are kept."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "The way to compare types of mortgage loans is to get official [Loan Estimates](https://www.consumerfinance.gov/owning-a-home/loan-estimate/) from several lenders for each type that fits you, then compare the total cost.",
+      "replacement": "Compare types of mortgage loans by getting official Loan Estimates from several lenders for each type that fits you, then comparing the total cost.",
+      "type": "6. section 8 opener wording; link moves to section 7",
+      "why": "Removes the 'The way to' tell. The link moves to its first mention in section 7."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "The CFPB says never make a final decision about a loan before you have them.",
+      "replacement": "The CFPB says never make a final decision about a loan before you have Loan Estimates in hand.",
+      "type": "6. vague pronoun",
+      "why": "Spells out what 'them' refers to."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "Loan limits vary by county, and rules for jumbo and other non-conforming loans vary by lender.",
+      "replacement": "",
+      "type": "6. redundant sentence",
+      "why": "Repeats section 3."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "ask for a second Loan Estimate",
+      "replacement": "ask for a second [Loan Estimate](https://www.consumerfinance.gov/owning-a-home/loan-estimate/)",
+      "type": "7. link first Loan Estimate mention",
+      "why": "The closed-list URL belongs on the first mention."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Our [fixed vs ARM mortgage comparison](/compare/fixed-vs-arm-mortgage/) lays out both rate types side by side.",
+      "replacement": "Our [fixed vs ARM mortgage comparison](/compare/fixed-vs-arm-mortgage/) weighs the two rate types on cost and risk.",
+      "type": "8. 'side by side' tell",
+      "why": "Rewritten link sentence as the audit specifies."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "A fixed-rate mortgage keeps the same interest rate and the same monthly principal and interest payment, while an adjustable-rate mortgage (ARM) has a rate that can rise or fall after an initial period.",
+      "replacement": "A fixed-rate mortgage keeps the same interest rate and the same monthly principal and interest payment. An adjustable-rate mortgage (ARM) has a rate that can rise or fall after an initial period.",
+      "type": "8. sentence over length limit",
+      "why": "Splits the 33-word sentence in two."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "Prepayment penalties, balloon payments, negative amortization and interest-only payments all call for caution, and nonqualified mortgages can be riskier or more expensive, so ask for a Loan Estimate without the feature to compare.",
+      "replacement": "Prepayment penalties, balloon payments, negative amortization and interest-only payments all call for caution, and nonqualified mortgages can be riskier or more expensive. Ask for a Loan Estimate without the feature to compare.",
+      "type": "9. FAQ sentence over 30 words",
+      "why": "Splits the long sentence in two."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Loans above that county figure are non-conforming jumbo loans, and lenders usually require good credit and a high down payment.",
+      "replacement": "Loans above that county figure are non-conforming jumbo loans.",
+      "type": "10. repeated jumbo tail",
+      "why": "The qualification tail repeats section 3. The limit definition is kept."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Our [FHA vs conventional loan comparison](/compare/fha-vs-conventional-loan/) sets the two side by side for buyers with a smaller down payment.",
+      "replacement": "Our [FHA vs conventional loan comparison](/compare/fha-vs-conventional-loan/) compares the two on cost and eligibility for buyers with a smaller down payment.",
+      "type": "10. 'side by side' tell",
+      "why": "Rewritten link sentence as the audit specifies."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "deleted_final": 0,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 2557,
+    "flags": []
+   },
+   {
+    "round": 2,
+    "at": "2026-10-11T07:21:42+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-11/audit/types-of-mortgage-loans.findings2.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "Every mortgage also pairs that loan type with a loan term, such as 15 or 30 years, and a rate type, fixed or adjustable.",
+      "replacement": "Every mortgage also pairs that loan type with a loan term, such as 15 or 30 years, and a rate type, fixed or adjustable, which is how the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/owning-a-home/loan-options/) frames every home loan.",
+      "type": "1. Intro restatement",
+      "why": "Merge the CFPB framing into this sentence so the next sentence can be removed."
+     },
+     {
+      "id": "introText",
+      "quote": "The [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/owning-a-home/loan-options/) describes every home loan as a mix of loan type, loan term and interest rate type.",
+      "replacement": "",
+      "type": "1. Intro restatement",
+      "why": "Repeats the previous sentence; its content and link are now merged there."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "A shorter term costs more each month and less in total.",
+      "replacement": "",
+      "type": "2. Section 6 restatement",
+      "why": "Restates the tradeoff already given in the opening sentences."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "A longer term leaves more room in the monthly budget but costs more overall.",
+      "replacement": "",
+      "type": "2. Section 6 restatement",
+      "why": "Restates the tradeoff already given in the opening sentences."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "Pick the types of mortgage loans you qualify for, request a Loan Estimate for each from several lenders, and compare the total cost of each offer line by line.",
+      "replacement": "",
+      "type": "3. Section 8 restatement",
+      "why": "Repeats the section's opening answer; the paragraph should end on the first-time buyer guide."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Our [FHA vs conventional loan comparison](/compare/fha-vs-conventional-loan/) compares the two on cost and eligibility for buyers with a smaller down payment.",
+      "replacement": "Our [FHA vs conventional loan comparison](/compare/fha-vs-conventional-loan/) is the next read for buyers with a smaller down payment.",
+      "type": "4. Repeated link-sentence template",
+      "why": "Uses the reviewer's supplied wording to break the repeated template."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Our [USDA loan vs FHA loan comparison](/compare/usda-loan-vs-fha-loan/) covers how the two programs differ.",
+      "replacement": "For how the two programs differ, see our [USDA loan vs FHA loan comparison](/compare/usda-loan-vs-fha-loan/).",
+      "type": "4. Repeated link-sentence template",
+      "why": "Restructures the sentence with the same link and claim, avoiding the 'Our X comparison' opener."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Our [fixed vs ARM mortgage comparison](/compare/fixed-vs-arm-mortgage/) weighs the two rate types on cost and risk.",
+      "replacement": "To weigh the two rate types on cost and risk, read our [fixed vs ARM mortgage comparison](/compare/fixed-vs-arm-mortgage/).",
+      "type": "4. Repeated link-sentence template",
+      "why": "Gives the sentence a different structure; same link and same claim."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Our [15-year vs 30-year mortgage comparison](/compare/15-year-vs-30-year-mortgage/) shows both terms on payment and total interest, and our [40-year mortgage guide](/guides/40-year-mortgage-explained/) covers a longer term.",
+      "replacement": "Payment and total interest for both terms sit side by side in our [15-year vs 30-year mortgage comparison](/compare/15-year-vs-30-year-mortgage/), and the [40-year mortgage guide](/guides/40-year-mortgage-explained/) covers a longer term.",
+      "type": "4. Repeated link-sentence template",
+      "why": "Changes the sentence shape; keeps both links and the same claims."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      3
+     ],
+     "applied": [
+      {
+       "id": "sections[3].body",
+       "quote": "Check your eligibility with USDA before you compare quotes.",
+       "replacement": "",
+       "type": "unlinked-directive",
+       "why": "Sends reader to USDA with no link; no USDA URL in SOURCE"
+      },
+      {
+       "id": "sections[7].body",
+       "quote": "VA loans need a Certificate of Eligibility, and USDA loans are limited to low- to middle-income rural borrowers.",
+       "replacement": "A Certificate of Eligibility shows a VA lender that you qualify, and USDA loans are for low- to middle-income rural borrowers.",
+       "type": "inference",
+       "why": "SOURCE says a COE shows a lender you qualify, not that it is required"
+      }
+     ],
+     "deleted_final": 2,
+     "unapplied": [
+      {
+       "quote": "Check eligibility with USDA before applying.",
+       "type": "unlinked-directive",
+       "why": "Sends reader to USDA with no link; no USDA URL in SOURCE",
+       "replacement": "Not published",
+       "id": "sections[0].body",
+       "reason": "replacement would change the table's columns"
+      }
+     ],
+     "remaining": [
+      {
+       "id": "sections[0].body",
+       "quote": "Check eligibility with USDA before applying.",
+       "type": "unlinked-directive",
+       "reason": "replacement would change the table's columns"
+      }
+     ],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 2492,
+    "flags": [
+     "emptied by the claim check (nothing in the fact list could carry it): ['The Main Types of Mortgage Loans at a Glance', 'Three Choices Every Mortgage Combines', 'Conforming, Jumbo and Other Conventional Loans', 'Government-Backed Loans from FHA, VA and USDA', 'Fixed-Rate vs Adjustable-Rate Mortgages'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Check eligibility with USDA before applying.'"
+    ]
+   },
+   {
+    "round": 3,
+    "at": "2026-10-11T07:23:15+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-11/audit/types-of-mortgage-loans.findings3.txt",
+    "applied": [
+     {
+      "id": "sections[7].body",
+      "quote": "If only one loan type fits your situation, skip the comparison across types and compare that one type across several lenders instead.",
+      "replacement": "",
+      "type": "1: restates the intro",
+      "why": "Repeats the intro's one-type-fits point; the auditor asked for deletion."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "The ranking between types can change with the market, your credit score or your down payment.",
+      "replacement": "",
+      "type": "1: delete ranking sentence",
+      "why": "The auditor asked for deletion; the preceding sentences already cover credit and down payment."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Payment and total interest for both terms sit side by side in our [15-year vs 30-year mortgage comparison](/compare/15-year-vs-30-year-mortgage/), and the [40-year mortgage guide](/guides/40-year-mortgage-explained/) covers a longer term.",
+      "replacement": "Our [15-year vs 30-year mortgage comparison](/compare/15-year-vs-30-year-mortgage/) covers the two terms, and the [40-year mortgage guide](/guides/40-year-mortgage-explained/) covers a longer term.",
+      "type": "2: asserts linked page content",
+      "why": "Describes the content of a linked page that the fact list does not cover."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "If you are offered one, ask why the loan does not qualify and request a quote on a qualified mortgage to compare.",
+      "replacement": "If you are offered one, compare Loan Estimates from several lenders.",
+      "type": "3: advice not in fact list",
+      "why": "The fact list only supports comparing Loan Estimates, not this request."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "deleted_final": 0,
+     "unapplied": [
+      {
+       "quote": "Check eligibility with USDA before applying.",
+       "type": "unlinked-directive",
+       "why": "Sends reader to USDA to verify; no USDA link exists in the closed list",
+       "replacement": "Not published",
+       "id": "sections[0].body",
+       "reason": "replacement would change the table's columns"
+      }
+     ],
+     "remaining": [
+      {
+       "id": "sections[0].body",
+       "quote": "Check eligibility with USDA before applying.",
+       "type": "unlinked-directive",
+       "reason": "replacement would change the table's columns"
+      }
+     ],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 2435,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Check eligibility with USDA before applying.'"
+    ]
+   },
+   {
+    "round": 4,
+    "at": "2026-10-11T07:25:38+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-11/audit/types-of-mortgage-loans.findings4.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "Every mortgage also pairs that loan type with a loan term, such as 15 or 30 years, and a rate type, fixed or adjustable, which is how the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/owning-a-home/loan-options/) frames every home loan.",
+      "replacement": "Every mortgage also pairs that loan type with a loan term, such as 15 or 30 years, and a rate type, fixed or adjustable. The [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/owning-a-home/loan-options/) frames every home loan this way.",
+      "type": "1: intro sentence 2 too long",
+      "why": "A 37-word sentence chains three ideas; splitting it into two keeps the same CFPB framing."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "With 3.5 percent down, the loan covers 96.5 percent of the purchase price.",
+      "replacement": "",
+      "type": "2: figures not on fact list",
+      "why": "96.5 percent is not on the fact list; the auditor asked to delete it."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "With 20 percent down, a conventional loan covers 80 percent.",
+      "replacement": "",
+      "type": "2: figures not on fact list",
+      "why": "The 80 percent coverage figure is not on the fact list; the auditor asked to delete it."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Which of the two costs less depends on your profile.",
+      "replacement": "Whether FHA or conventional costs less depends on your profile.",
+      "type": "2: reword following sentence",
+      "why": "Once the prior sentences are deleted, it must name FHA and conventional explicitly."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "The CFPB sorts mortgages into three categories: conventional, government and special programs, and the overview table splits them into six rows: conforming, jumbo, FHA, VA, USDA and state or local housing agency programs.",
+      "replacement": "The CFPB sorts mortgages into three categories: conventional, government and special programs. Within them, the main loan types are conforming, jumbo, FHA, VA, USDA and state or local housing agency programs.",
+      "type": "3: FAQ five major types answer",
+      "why": "Replaces the run-on with the auditor's wording, using only supported categories and types."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "deleted_final": 0,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 2409,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 231.9,
+ "response_id": "msg_011Cfv2wQ1Z9Fhu4DjpPSBZn",
+ "generated_at": "2026-10-11T07:16:11+0000"
+}
