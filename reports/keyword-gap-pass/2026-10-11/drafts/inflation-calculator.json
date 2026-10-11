@@ -1,0 +1,48 @@
+{
+  "metaTitle": "Inflation Calculator: Future Cost and Buying Power",
+  "metaDescription": "Free inflation calculator. See what an amount of money will cost or buy in future years at the inflation rate you choose, plus your real return after inflation.",
+  "introText": "An inflation calculator shows what an amount of money will cost or buy in the future at an average annual inflation rate you choose. Enter an amount in today's dollars, a number of years, and an inflation rate in the calculator above. You can also add an optional annual return if the money is invested. The tool has no historical price data built in. For measured price changes, use the [Consumer Price Index (CPI) data from the Bureau of Labor Statistics (BLS)](https://www.bls.gov/cpi/).\n\nFor example, enter $10,000, a 3% inflation rate, and 10 years. The same purchases then cost $13,439. Held unchanged, the $10,000 buys only what $7,441 buys today. That is a 25.6% loss of buying power. Kept as cash, the money has a real return of -2.91% a year. Add a 5% annual return and the real return after inflation becomes 1.94% a year. The balance grows to $16,289, which is worth $12,121 in today's dollars.",
+  "howItWorks": "The calculator takes an amount in today's dollars and raises the price of what it buys by your inflation rate, compounded once a year for the number of years you enter. The formula is future cost = amount x (1 + inflation)^years. Enter $10,000, a 3% rate, and 10 years. The same purchases then cost $13,439 at the end of the period.\n\nBuying power uses the same math in reverse. The calculator divides your amount by (1 + inflation)^years to show what it will buy later, measured in today's dollars. With the same inputs, $10,000 held unchanged buys what $7,441 buys today, a 25.6% loss of buying power. The calculator also reports how long buying power takes to halve, using ln 2 / ln(1 + inflation), which comes to about 23.4 years at 3%.\n\nReal return is what money earns each year after inflation is taken out, and the calculator computes it as (1 + nominal return) / (1 + inflation) - 1. Held as cash at 0%, the money has a real return of -2.91% a year against 3% inflation. At a 5% annual return, the real return rises to 1.94% a year. The $10,000 then grows to $16,289 in future dollars, which is worth $12,121 in today's dollars. Compare that $12,121 with the $7,441 the same money buys after sitting as cash.\n\nThe inflation rate is an input because one rate cannot describe every year or every budget. Real inflation changes from year to year, and the prices of different things rise at different speeds. The 3% in the tool is a placeholder for you to replace, so run several rates and watch how far the future cost and real return move. Measured price changes come from the CPI program the BLS publishes, and this calculator does not include that data.\n\nThe calculator assumes one steady inflation rate in every year of the period. It does not model taxes or fees on the return, so the ending balance and the real return are both shown before those costs. To work out a return figure first, use the [compound interest calculator](/investing/compound-interest-calculator/), the [high-yield savings calculator](/investing/high-yield-savings-calculator/), or the [CD calculator](/cd-calculator/), then enter that rate here to see what it earns after inflation.",
+  "faqs": [
+    {
+      "question": "How do I calculate the effect of inflation on money?",
+      "answer": "Multiply the amount by (1 + inflation rate) raised to the number of years to get the future cost of the same purchases. Divide the amount by that same factor to see what it buys later in today's dollars. For example, enter $10,000 and 3% for 10 years in the calculator above. The future cost is $13,439, and the unchanged amount buys what $7,441 buys today."
+    },
+    {
+      "question": "What is the formula for future cost with inflation?",
+      "answer": "Future cost equals the amount times (1 + inflation) raised to the number of years. Enter the rate as a decimal, so 3% becomes 0.03. Applied to $10,000 over 10 years, the formula gives $13,439."
+    },
+    {
+      "question": "What inflation rate should I enter?",
+      "answer": "The calculator does not pick a rate for you. The 3% in the tool is a placeholder, and you can test several rates to see how much the future cost and buying power change. For measured price changes, use the [Consumer Price Index data from the Bureau of Labor Statistics](https://www.bls.gov/cpi/)."
+    },
+    {
+      "question": "What does real return mean?",
+      "answer": "Real return is the yearly growth of your money after inflation is removed. The calculator uses (1 + nominal return) / (1 + inflation) - 1. A 5% return with 3% inflation gives a real return of 1.94% a year. For a second explanation, read the [real rate of return entry on Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/glossary/real-rate-return), the investor site of the Securities and Exchange Commission (SEC)."
+    },
+    {
+      "question": "Why does money held as cash lose value?",
+      "answer": "Cash in this calculator earns 0%, so prices rise each year while the balance stays the same. At 3% inflation, cash has a real return of -2.91% a year. Over 10 years, $10,000 held as cash buys what $7,441 buys today. That is 25.6% less buying power."
+    },
+    {
+      "question": "How long does it take for inflation to halve my buying power?",
+      "answer": "At 3% inflation, buying power halves in about 23.4 years. The calculator finds this with ln 2 / ln(1 + inflation)."
+    },
+    {
+      "question": "Does this calculator use historical CPI data?",
+      "answer": "No. The calculator has no historical CPI data built in, so you supply the inflation rate yourself. Measured price changes are published by the [Bureau of Labor Statistics CPI program](https://www.bls.gov/cpi/)."
+    },
+    {
+      "question": "Can I use this for retirement planning?",
+      "answer": "It covers one part of retirement planning. The calculator shows how a fixed amount loses buying power over a retirement-length horizon at the rate you enter, and the optional return shows the ending balance in today's dollars. It does not model taxes, fees, withdrawals, or a rate that changes over time. For a full projection, use the [retirement planning pages](/retirement/)."
+    }
+  ],
+  "slug": "inflation-calculator",
+  "h1": "",
+  "subtitle": "",
+  "sections": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

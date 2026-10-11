@@ -1,0 +1,48 @@
+{
+  "metaTitle": "Expense Ratio Calculator: Fund Fee Cost Over Time",
+  "metaDescription": "Free expense ratio calculator. Compare two funds' annual fees and see how much each one takes from your ending balance over the years you invest.",
+  "introText": "An expense ratio calculator shows how much a fund's annual fee costs over time by comparing the ending balances of two funds that differ only in their expense ratio. Enter your starting balance, monthly contribution, years invested, an assumed return before fund costs, and the expense ratio of Fund A and Fund B in the calculator above. It returns each fund's ending balance, the dollar gap between them, the growth each ratio takes compared with a no-fee benchmark, and the total you put in.\n\nFor example, start with $10,000, add $500 a month, and invest for 30 years. Assume a 7% return before fund costs, then give Fund A a 0.05% expense ratio and Fund B a 1% ratio. Fund A ends at $654,429 and Fund B ends at $544,691, a gap of $109,738 from the same deposits.",
+  "howItWorks": "An expense ratio is an annual percentage of a fund's assets that is taken out of the fund itself. The calculator subtracts each fund's ratio from the return you assume before fund costs, which gives a net annual return for Fund A and a separate one for Fund B. In the math, a 1% ratio lowers a 7% assumed return to 6%. Each net return then compounds monthly, and each monthly contribution is added at the end of the month.\n\nThe worked example starts with $10,000 and adds $500 a month for 30 years. That puts $190,000 into each fund. With no fund cost at all, the same deposits growing at 7% end at $660,849, and that no-fee balance is the benchmark both funds are measured against.\n\nFund A, at a 0.05% expense ratio, ends at $654,429, so its ratio takes $6,419 of growth compared with the no-fee benchmark. Fund B, at a 1% expense ratio, ends at $544,691, so its ratio takes $116,157 of growth. Read each cost-of-ratio row as the dollars of growth that fund's fee removed. The dollar gap between the two funds is $109,738, which equals $116,157 minus $6,419.\n\nThe gap widens with time because the expense ratio is charged on the whole balance, including growth from earlier years. Every dollar the fee removes in an early year also stops earning returns for all the years that follow, so the cost compounds along with the balance. Change the years invested above to watch the gap shift, or use the [compound interest calculator](/compound-interest-calculator/) to see the same deposits grow with no fund cost.\n\nThe calculator assumes one steady return every year and treats the expense ratio as the only difference between the two funds, so trading costs, sales loads, taxes and differences in holdings are not modeled. The 7% return and the 0.05% and 1% ratios loaded in the tool are placeholders for your own numbers, and none of them is a typical or recommended value. A lower ratio does not guarantee a higher return, and each fund's real expense ratio is listed in its prospectus or fact sheet. Pull the ratios for the two funds you are weighing, enter them as Fund A and Fund B, and set the return and years to match your own plan.",
+  "faqs": [
+    {
+      "question": "How much does an expense ratio cost over time?",
+      "answer": "Over 30 years in the worked example above, a 1% expense ratio takes $116,157 of growth. A 0.05% ratio takes $6,419 over the same period. That example starts with $10,000, adds $500 a month and assumes a 7% return before fund costs. Enter your own balance, contributions and years in the calculator above to see your figure."
+    },
+    {
+      "question": "How is an expense ratio calculated?",
+      "answer": "An expense ratio is stated as an annual percentage of a fund's assets, and that percentage is taken out of the fund. In this calculator, each fund's ratio is subtracted from your assumed return to give a net annual return. That net return compounds monthly, with each contribution added at the end of the month."
+    },
+    {
+      "question": "Where do I find a fund's expense ratio?",
+      "answer": "A fund's prospectus and fact sheet both list its expense ratio. Enter that figure as Fund A or Fund B in the calculator above. For more background, read the Investor.gov [glossary entry on expense ratios](https://www.investor.gov/introduction-investing/investing-basics/glossary/expense-ratio)."
+    },
+    {
+      "question": "What is a good expense ratio?",
+      "answer": "This calculator sets no benchmark for a good ratio, because it only compares the two ratios you enter. Our guide on [what counts as a good expense ratio](/guides/what-is-a-good-expense-ratio/) covers that question. Use the calculator to put a dollar amount on the gap between two specific ratios over the years you plan to invest."
+    },
+    {
+      "question": "Do ETFs and mutual funds charge the same expense ratio?",
+      "answer": "Exchange-traded funds (ETFs) and mutual funds both charge expense ratios, and the ratio varies from fund to fund within each type. Compare the two specific funds you are considering by entering both ratios in the calculator above. For how the two fund types differ in other ways, see [ETF vs. mutual fund](/compare/etf-vs-mutual-fund/)."
+    },
+    {
+      "question": "Does a lower expense ratio mean a better fund?",
+      "answer": "No. The expense ratio is one cost among many, and it does not predict a fund's return. Two funds can also differ in holdings, trading costs, sales loads and taxes, and this calculator models none of those. Use the calculator to measure the fee's dollar cost, then weigh that number alongside what each fund holds."
+    },
+    {
+      "question": "Does the calculator include other fees?",
+      "answer": "No. Sales loads, trading costs and taxes are not modeled, so the expense ratio is the only difference between Fund A and Fund B. Read the Investor.gov [glossary entry on mutual fund fees and expenses](https://www.investor.gov/introduction-investing/investing-basics/glossary/mutual-fund-fees-and-expenses) for more on those other costs."
+    },
+    {
+      "question": "How does the expense ratio affect my return?",
+      "answer": "The calculator subtracts the expense ratio from your assumed return, so a 1% ratio on a 7% assumed return leaves a 6% net return. A 0.05% ratio on the same assumption leaves 6.95%. Because that net return compounds on the whole balance, the dollar difference between two funds keeps growing the longer the money stays invested."
+    }
+  ],
+  "slug": "expense-ratio-calculator",
+  "h1": "",
+  "subtitle": "",
+  "sections": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

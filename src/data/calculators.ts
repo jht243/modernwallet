@@ -1535,6 +1535,136 @@ export const CALCULATORS: CalculatorDef[] = [
     updated: "2026-10-07",
     defaultPreset: { debts: [{ balance: 8000, aprPct: 24, payment: 250 }, { balance: 5000, aprPct: 19, payment: 150 }, { balance: 3000, aprPct: 29, payment: 100 }, { balance: 0, aprPct: 0, payment: 0 }], newAprPct: 12, newTermMonths: 48, feePct: 3 },
   },
+  // Inflation calculator — keyword-gap-pass (2026-10-11). Prose generated via scripts/lib/content_gen.py (meta beside the draft in
+  // reports/keyword-gap-pass/2026-10-11/drafts/). The rate / return inputs are the reader's; none is built in.
+  {
+    id: "inflation-calculator",
+    islandId: "inflation-calculator",
+    label: "Inflation",
+    navOrder: 44,
+    metaTitle: "Inflation Calculator: Future Cost and Buying Power",
+    metaDescription:
+      "Free inflation calculator. See what an amount of money will cost or buy in future years at the inflation rate you choose, plus your real return after inflation.",
+    targetKeyword: "inflation calculator",
+    h1: "Inflation Calculator",
+    introText:
+      "An inflation calculator shows what an amount of money will cost or buy in the future at an average annual inflation rate you choose. Enter an amount in today's dollars, a number of years, and an inflation rate in the calculator above. You can also add an optional annual return if the money is invested. The tool has no historical price data built in. For measured price changes, use the [Consumer Price Index (CPI) data from the Bureau of Labor Statistics (BLS)](https://www.bls.gov/cpi/).\n\nFor example, enter $10,000, a 3% inflation rate, and 10 years. The same purchases then cost $13,439. Held unchanged, the $10,000 buys only what $7,441 buys today. That is a 25.6% loss of buying power. Kept as cash, the money has a real return of -2.91% a year. Add a 5% annual return and the real return after inflation becomes 1.94% a year. The balance grows to $16,289, which is worth $12,121 in today's dollars.",
+    howItWorks:
+      "The calculator takes an amount in today's dollars and raises the price of what it buys by your inflation rate, compounded once a year for the number of years you enter. The formula is future cost = amount x (1 + inflation)^years. Enter $10,000, a 3% rate, and 10 years. The same purchases then cost $13,439 at the end of the period.\n\nBuying power uses the same math in reverse. The calculator divides your amount by (1 + inflation)^years to show what it will buy later, measured in today's dollars. With the same inputs, $10,000 held unchanged buys what $7,441 buys today, a 25.6% loss of buying power. The calculator also reports how long buying power takes to halve, using ln 2 / ln(1 + inflation), which comes to about 23.4 years at 3%.\n\nReal return is what money earns each year after inflation is taken out, and the calculator computes it as (1 + nominal return) / (1 + inflation) - 1. Held as cash at 0%, the money has a real return of -2.91% a year against 3% inflation. At a 5% annual return, the real return rises to 1.94% a year. The $10,000 then grows to $16,289 in future dollars, which is worth $12,121 in today's dollars. Compare that $12,121 with the $7,441 the same money buys after sitting as cash.\n\nThe inflation rate is an input because one rate cannot describe every year or every budget. Real inflation changes from year to year, and the prices of different things rise at different speeds. The 3% in the tool is a placeholder for you to replace, so run several rates and watch how far the future cost and real return move. Measured price changes come from the CPI program the BLS publishes, and this calculator does not include that data.\n\nThe calculator assumes one steady inflation rate in every year of the period. It does not model taxes or fees on the return, so the ending balance and the real return are both shown before those costs. To work out a return figure first, use the [compound interest calculator](/investing/compound-interest-calculator/), the [high-yield savings calculator](/investing/high-yield-savings-calculator/), or the [CD calculator](/cd-calculator/), then enter that rate here to see what it earns after inflation.",
+    faqs: [
+      {
+        question: "How do I calculate the effect of inflation on money?",
+        answer:
+          "Multiply the amount by (1 + inflation rate) raised to the number of years to get the future cost of the same purchases. Divide the amount by that same factor to see what it buys later in today's dollars. For example, enter $10,000 and 3% for 10 years in the calculator above. The future cost is $13,439, and the unchanged amount buys what $7,441 buys today.",
+      },
+      {
+        question: "What is the formula for future cost with inflation?",
+        answer:
+          "Future cost equals the amount times (1 + inflation) raised to the number of years. In the formula the rate is written as a decimal, so 3% becomes 0.03, while the calculator takes it as a percent. Applied to $10,000 over 10 years, the formula gives $13,439.",
+      },
+      {
+        question: "What inflation rate should I enter?",
+        answer:
+          "The calculator does not pick a rate for you. The 3% in the tool is a placeholder, and you can test several rates to see how much the future cost and buying power change. For measured price changes, use the [Consumer Price Index data from the Bureau of Labor Statistics](https://www.bls.gov/cpi/).",
+      },
+      {
+        question: "What does real return mean?",
+        answer:
+          "Real return is the yearly growth of your money after inflation is removed. The calculator uses (1 + nominal return) / (1 + inflation) - 1. A 5% return with 3% inflation gives a real return of 1.94% a year. For a second explanation, read the [real rate of return entry on Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/glossary/real-rate-return), the investor site of the Securities and Exchange Commission (SEC).",
+      },
+      {
+        question: "Why does money held as cash lose value?",
+        answer:
+          "Cash in this calculator earns 0%, so prices rise each year while the balance stays the same. At 3% inflation, cash has a real return of -2.91% a year. Over 10 years, $10,000 held as cash buys what $7,441 buys today. That is 25.6% less buying power.",
+      },
+      {
+        question: "How long does it take for inflation to halve my buying power?",
+        answer:
+          "At 3% inflation, buying power halves in about 23.4 years. The calculator finds this with ln 2 / ln(1 + inflation).",
+      },
+      {
+        question: "Does this calculator use historical CPI data?",
+        answer:
+          "No. The calculator has no historical CPI data built in, so you supply the inflation rate yourself. Measured price changes are published by the [Bureau of Labor Statistics CPI program](https://www.bls.gov/cpi/).",
+      },
+      {
+        question: "Can I use this for retirement planning?",
+        answer:
+          "It covers one part of retirement planning. The calculator shows how a fixed amount loses buying power over a retirement-length horizon at the rate you enter, and the optional return shows the ending balance in today's dollars. It does not model taxes, fees, withdrawals, or a rate that changes over time. For a full projection, use the [retirement planning pages](/retirement/).",
+      },
+    ],
+    sources: [
+      { label: "Bureau of Labor Statistics: Consumer Price Index", url: "https://www.bls.gov/cpi/" },
+      { label: "Investor.gov (SEC): Inflation", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/inflation" },
+    ],
+    updated: "2026-10-11",
+    defaultPreset: {"amount": 10000, "years": 10, "inflationPct": 3, "nominalReturnPct": 0},
+  },
+  // Expense Ratio calculator — keyword-gap-pass (2026-10-11). Prose generated via scripts/lib/content_gen.py (meta beside the draft in
+  // reports/keyword-gap-pass/2026-10-11/drafts/). The rate / return inputs are the reader's; none is built in.
+  {
+    id: "expense-ratio-calculator",
+    islandId: "expense-ratio-calculator",
+    label: "Expense Ratio",
+    navOrder: 45,
+    metaTitle: "Expense Ratio Calculator: Fund Fee Cost Over Time",
+    metaDescription:
+      "Free expense ratio calculator. Compare two funds' annual fees and see how much each one takes from your ending balance over the years you invest.",
+    targetKeyword: "expense ratio calculator",
+    h1: "Expense Ratio Calculator",
+    introText:
+      "An expense ratio calculator shows how much a fund's annual fee costs over time by comparing the ending balances of two funds that differ only in their expense ratio. Enter your starting balance, monthly contribution, years invested, an assumed return before fund costs, and the expense ratio of Fund A and Fund B in the calculator above. It returns each fund's ending balance, the dollar gap between them, the growth each ratio takes compared with a no-fee benchmark, and the total you put in.\n\nFor example, start with $10,000, add $500 a month, and invest for 30 years. Assume a 7% return before fund costs, then give Fund A a 0.05% expense ratio and Fund B a 1% ratio. Fund A ends at $654,429 and Fund B ends at $544,691, a gap of $109,738 from the same deposits.",
+    howItWorks:
+      "An expense ratio is an annual percentage of a fund's assets that is taken out of the fund itself. The calculator subtracts each fund's ratio from the return you assume before fund costs, which gives a net annual return for Fund A and a separate one for Fund B. In the math, a 1% ratio lowers a 7% assumed return to 6%. Each net return then compounds monthly, and each monthly contribution is added at the end of the month.\n\nThe worked example starts with $10,000 and adds $500 a month for 30 years. That puts $190,000 into each fund. With no fund cost at all, the same deposits growing at 7% end at $660,849, and that no-fee balance is the benchmark both funds are measured against.\n\nFund A, at a 0.05% expense ratio, ends at $654,429, so its ratio takes $6,419 of growth compared with the no-fee benchmark. Fund B, at a 1% expense ratio, ends at $544,691, so its ratio takes $116,157 of growth. Read each cost-of-ratio row as the dollars of growth that fund's fee removed. The dollar gap between the two funds is $109,738, which equals $116,157 minus $6,419.\n\nThe gap widens with time because the expense ratio is charged on the whole balance, including growth from earlier years. Every dollar the fee removes in an early year also stops earning returns for all the years that follow, so the cost compounds along with the balance. Change the years invested above to watch the gap shift, or use the [compound interest calculator](/investing/compound-interest-calculator/) to see the same deposits grow with no fund cost.\n\nThe calculator assumes one steady return every year and treats the expense ratio as the only difference between the two funds, so trading costs, sales loads, taxes and differences in holdings are not modeled. The 7% return and the 0.05% and 1% ratios loaded in the tool are placeholders for your own numbers, and none of them is a typical or recommended value. A lower ratio does not guarantee a higher return, and each fund's real expense ratio is listed in its prospectus or fact sheet. Pull the ratios for the two funds you are weighing, enter them as Fund A and Fund B, and set the return and years to match your own plan.",
+    faqs: [
+      {
+        question: "How much does an expense ratio cost over time?",
+        answer:
+          "Over 30 years in the worked example above, a 1% expense ratio takes $116,157 of growth. A 0.05% ratio takes $6,419 over the same period. That example starts with $10,000, adds $500 a month and assumes a 7% return before fund costs. Enter your own balance, contributions and years in the calculator above to see your figure.",
+      },
+      {
+        question: "How is an expense ratio calculated?",
+        answer:
+          "An expense ratio is stated as an annual percentage of a fund's assets, and that percentage is taken out of the fund. In this calculator, each fund's ratio is subtracted from your assumed return to give a net annual return. That net return compounds monthly, with each contribution added at the end of the month.",
+      },
+      {
+        question: "Where do I find a fund's expense ratio?",
+        answer:
+          "A fund's prospectus and fact sheet both list its expense ratio. Enter that figure as Fund A or Fund B in the calculator above. For more background, read the Investor.gov [glossary entry on expense ratios](https://www.investor.gov/introduction-investing/investing-basics/glossary/expense-ratio).",
+      },
+      {
+        question: "What is a good expense ratio?",
+        answer:
+          "This calculator sets no benchmark for a good ratio, because it only compares the two ratios you enter. Our guide on [what counts as a good expense ratio](/guides/what-is-a-good-expense-ratio/) covers that question. Use the calculator to put a dollar amount on the gap between two specific ratios over the years you plan to invest.",
+      },
+      {
+        question: "Do ETFs and mutual funds charge the same expense ratio?",
+        answer:
+          "Exchange-traded funds (ETFs) and mutual funds both charge expense ratios, and the ratio varies from fund to fund within each type. Compare the two specific funds you are considering by entering both ratios in the calculator above. For how the two fund types differ in other ways, see [ETF vs. mutual fund](/compare/etf-vs-mutual-fund/).",
+      },
+      {
+        question: "Does a lower expense ratio mean a better fund?",
+        answer:
+          "No. The expense ratio is one cost among many, and it does not predict a fund's return. Two funds can also differ in holdings, trading costs, sales loads and taxes, and this calculator models none of those. Use the calculator to measure the fee's dollar cost, then weigh that number alongside what each fund holds.",
+      },
+      {
+        question: "Does the calculator include other fees?",
+        answer:
+          "No. Sales loads, trading costs and taxes are not modeled, so the expense ratio is the only difference between Fund A and Fund B. Read the Investor.gov [glossary entry on mutual fund fees and expenses](https://www.investor.gov/introduction-investing/investing-basics/glossary/mutual-fund-fees-and-expenses) for more on those other costs.",
+      },
+      {
+        question: "How does the expense ratio affect my return?",
+        answer:
+          "The calculator subtracts the expense ratio from your assumed return, so a 1% ratio on a 7% assumed return leaves a 6% net return. A 0.05% ratio on the same assumption leaves 6.95%. Because that net return compounds on the whole balance, the dollar difference between two funds keeps growing the longer the money stays invested.",
+      },
+    ],
+    sources: [
+      { label: "Investor.gov (SEC): Expense ratio", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/expense-ratio" },
+      { label: "Investor.gov (SEC): Mutual fund fees and expenses", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/mutual-fund-fees-and-expenses" },
+    ],
+    updated: "2026-10-11",
+    defaultPreset: {"startBalance": 10000, "monthlyContribution": 500, "years": 30, "grossReturnPct": 7, "ratioAPct": 0.05, "ratioBPct": 1},
+  },
   {
     id: "pto-cashout",
     islandId: "pto-cashout",

@@ -1,0 +1,86 @@
+{
+ "slug": "inflation-calculator",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 1001,
+ "floor": 560,
+ "input_tokens": 26131,
+ "output_tokens": 8185,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.2682,
+ "guards": {
+  "repairs": [
+   "slug None -> 'inflation-calculator'"
+  ],
+  "flags": [
+   "missing 'h1' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'sections' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "thin fact list: \u2248104 fact words for a 560-word floor (ratio 0.19); expand it with sourced facts before any regeneration"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1001,
+  "numbers_not_in_facts": [
+   "0.03"
+  ],
+  "fact_budget": {
+   "fact_words": 104,
+   "floor": 560,
+   "ratio": 0.19,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "The same purchases then cost $13,439 at the end of the period, and the dollar increase gets larger each year because every increase applies to the previous year's higher price.",
+     "replacement": "The same purchases then cost $13,439 at the end of the period.",
+     "type": "inference",
+     "why": "SOURCE gives the formula and result, not year-by-year increase behavior"
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Enter a higher rate and the halving time gets shorter, while a lower rate makes it longer.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE states only the 3% halving time, no rate comparisons"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1036
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 103.9,
+ "response_id": "msg_011Cfv83zPX3mbBtYrJwB3D5",
+ "generated_at": "2026-10-11T08:21:06+0000"
+}

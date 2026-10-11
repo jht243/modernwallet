@@ -12417,3 +12417,5 @@ All 22 actionable rows are queued for execution (Phases 1–9 of `/autocomplete-
 | /mortgage/payoff-calculator/ | mortgage payoff calculator | mortgage payoff estimator; pay off mortgage early calculator; early mortgage payoff calculator; pay down mortgage calculator |
 | /mortgage/extra-payment-calculator/ | mortgage extra payment calculator | mortgage calculator with extra payments; extra payment mortgage calculator |
 | /commercial-mortgage-calculator/ | commercial mortgage calculator | commercial mortgage payment calculator; commercial property loan calculator; commercial real estate loan calculator; commercial mortgage balloon payment; dscr calculator commercial loan |
+| /inflation-calculator/ | inflation calculator | calculator inflation; calculator for inflation rate; purchasing power calculator; future value inflation calculator |
+| /expense-ratio-calculator/ | expense ratio calculator | total expense ratio; mutual fund fee calculator; etf expense ratio calculator; investment fee calculator |

@@ -16,118 +16,118 @@
   "live_competitors": [
     {
       "domain": "nerdwallet.com",
-      "intersections": 80,
-      "avg_position": 18.8
+      "intersections": 75,
+      "avg_position": 19.1
     },
     {
       "domain": "smartasset.com",
-      "intersections": 62,
-      "avg_position": 32.0
+      "intersections": 58,
+      "avg_position": 31.9
     },
     {
       "domain": "investopedia.com",
-      "intersections": 55,
-      "avg_position": 19.3
+      "intersections": 53,
+      "avg_position": 19.0
     },
     {
       "domain": "fidelity.com",
-      "intersections": 44,
-      "avg_position": 9.2
+      "intersections": 43,
+      "avg_position": 8.8
     },
     {
       "domain": "forbes.com",
-      "intersections": 41,
-      "avg_position": 24.5
+      "intersections": 38,
+      "avg_position": 25.3
     },
     {
       "domain": "calculator.net",
-      "intersections": 41,
-      "avg_position": 11.9
+      "intersections": 38,
+      "avg_position": 10.9
     },
     {
       "domain": "cnbc.com",
-      "intersections": 39,
-      "avg_position": 15.6
+      "intersections": 36,
+      "avg_position": 15.1
     },
     {
       "domain": "usnews.com",
-      "intersections": 38,
-      "avg_position": 25.0
+      "intersections": 36,
+      "avg_position": 24.3
     },
     {
       "domain": "schwab.com",
-      "intersections": 34,
-      "avg_position": 13.0
-    },
-    {
-      "domain": "ramseysolutions.com",
-      "intersections": 32,
-      "avg_position": 19.9
-    },
-    {
-      "domain": "bankrate.com",
-      "intersections": 32,
-      "avg_position": 9.3
-    },
-    {
-      "domain": "businessinsider.com",
-      "intersections": 32,
-      "avg_position": 34.4
-    },
-    {
-      "domain": "vanguard.com",
-      "intersections": 30,
-      "avg_position": 9.7
-    },
-    {
-      "domain": "aarp.org",
-      "intersections": 30,
-      "avg_position": 12.6
+      "intersections": 31,
+      "avg_position": 12.0
     },
     {
       "domain": "fool.com",
       "intersections": 30,
-      "avg_position": 30.1
+      "avg_position": 29.9
+    },
+    {
+      "domain": "aarp.org",
+      "intersections": 29,
+      "avg_position": 13.0
+    },
+    {
+      "domain": "businessinsider.com",
+      "intersections": 29,
+      "avg_position": 35.4
+    },
+    {
+      "domain": "ramseysolutions.com",
+      "intersections": 28,
+      "avg_position": 19.1
+    },
+    {
+      "domain": "vanguard.com",
+      "intersections": 28,
+      "avg_position": 9.0
+    },
+    {
+      "domain": "bankrate.com",
+      "intersections": 28,
+      "avg_position": 10.2
     },
     {
       "domain": "sofi.com",
-      "intersections": 27,
+      "intersections": 25,
       "avg_position": 22.2
     },
     {
       "domain": "gobankingrates.com",
-      "intersections": 26,
-      "avg_position": 54.0
+      "intersections": 24,
+      "avg_position": 53.7
     },
     {
       "domain": "morningstar.com",
-      "intersections": 25,
-      "avg_position": 24.0
+      "intersections": 24,
+      "avg_position": 24.7
     },
     {
-      "domain": "justanswer.com",
-      "intersections": 25,
-      "avg_position": 37.5
+      "domain": "usbank.com",
+      "intersections": 23,
+      "avg_position": 17.6
     }
   ],
   "our_keyword_count": 160,
-  "tracked_keyword_count": 234,
+  "tracked_keyword_count": 245,
   "competitor_rows_pulled": 1800,
-  "new_gap_count": 483,
-  "core_count": 333,
+  "new_gap_count": 479,
+  "core_count": 329,
   "adjacent_count": 150,
   "cost": "DataForSEO: 1 calls, $0.01440 of $2.00 budget",
   "notes": [
-    "themodernwallet.com: cache (6d old, 160 rows)",
-    "calculator.net: cache (6d old, 200 rows)",
-    "bankrate.com: cache (6d old, 200 rows)",
-    "nerdwallet.com: cache (6d old, 200 rows)",
-    "smartasset.com: cache (6d old, 200 rows)",
-    "investopedia.com: cache (6d old, 200 rows)",
-    "mortgagecalculator.org: cache (6d old, 200 rows)",
-    "ramseysolutions.com: cache (6d old, 200 rows)",
-    "fidelity.com: cache (6d old, 200 rows)",
-    "themodestwallet.com: cache (6d old, 200 rows)"
+    "themodernwallet.com: cache (13d old, 160 rows)",
+    "calculator.net: cache (13d old, 200 rows)",
+    "bankrate.com: cache (13d old, 200 rows)",
+    "nerdwallet.com: cache (13d old, 200 rows)",
+    "smartasset.com: cache (13d old, 200 rows)",
+    "investopedia.com: cache (13d old, 200 rows)",
+    "mortgagecalculator.org: cache (13d old, 200 rows)",
+    "ramseysolutions.com: cache (13d old, 200 rows)",
+    "fidelity.com: cache (13d old, 200 rows)",
+    "themodestwallet.com: cache (13d old, 200 rows)"
   ],
   "gaps": [
     {
@@ -4641,19 +4641,6 @@
       "score": 1100.0
     },
     {
-      "keyword": "commercial property loan calculator",
-      "volume": 12100,
-      "kd": 10,
-      "cpc": 4.75,
-      "tier": "core",
-      "competitors": [
-        "mortgagecalculator.org"
-      ],
-      "best_pos": 1,
-      "num_competitors": 1,
-      "score": 1100.0
-    },
-    {
       "keyword": "mortgage calculator and amortization",
       "volume": 60500,
       "kd": 55,
@@ -4732,19 +4719,6 @@
       "score": 1003.7
     },
     {
-      "keyword": "commercial mortgage calculator",
-      "volume": 9900,
-      "kd": 9,
-      "cpc": 3.84,
-      "tier": "core",
-      "competitors": [
-        "mortgagecalculator.org"
-      ],
-      "best_pos": 1,
-      "num_competitors": 1,
-      "score": 990.0
-    },
-    {
       "keyword": "florida income tax",
       "volume": 12100,
       "kd": 12,
@@ -4782,19 +4756,6 @@
       "best_pos": 1,
       "num_competitors": 1,
       "score": 903.3
-    },
-    {
-      "keyword": "commercial mortgage payment calculator",
-      "volume": 9900,
-      "kd": 10,
-      "cpc": 3.84,
-      "tier": "core",
-      "competitors": [
-        "mortgagecalculator.org"
-      ],
-      "best_pos": 1,
-      "num_competitors": 1,
-      "score": 900.0
     },
     {
       "keyword": "state of california tax calculator",
@@ -4860,19 +4821,6 @@
       "best_pos": 1,
       "num_competitors": 1,
       "score": 874.2
-    },
-    {
-      "keyword": "commercial real estate loan calculator",
-      "volume": 12100,
-      "kd": 13,
-      "cpc": 4.75,
-      "tier": "core",
-      "competitors": [
-        "mortgagecalculator.org"
-      ],
-      "best_pos": 1,
-      "num_competitors": 1,
-      "score": 864.3
     },
     {
       "keyword": "tax calculator in california",

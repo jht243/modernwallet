@@ -62,6 +62,20 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/debt-consolidation-calculator/", label: "Carrying high-rate debt? Compare a consolidation loan" },
     { href: "/compare/sinking-fund-vs-emergency-fund/", label: "Sinking fund vs emergency fund" },
   ],
+  "inflation-calculator": [
+    { href: "/investing/compound-interest-calculator/", label: "Grow money against inflation: compound interest" },
+    { href: "/retirement/", label: "Project retirement savings" },
+    { href: "/investing/", label: "Model an investment return" },
+    { href: "/cd-calculator/", label: "Model a CD's maturity value" },
+    { href: "/budget/", label: "See where your spending goes" },
+  ],
+  "expense-ratio-calculator": [
+    { href: "/guides/what-is-a-good-expense-ratio/", label: "What is a good expense ratio?" },
+    { href: "/compare/etf-vs-mutual-fund/", label: "ETF vs mutual fund" },
+    { href: "/compare/index-fund-vs-mutual-fund/", label: "Index fund vs mutual fund" },
+    { href: "/investing/", label: "Model an investment return" },
+    { href: "/retirement/", label: "Project retirement savings" },
+  ],
   "debt-consolidation-calculator": [
     { href: "/credit-card-payoff/", label: "Pay off one card: time and interest" },
     { href: "/personal-loan/", label: "Model a personal loan payment" },
