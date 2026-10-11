@@ -174,10 +174,11 @@ RATES = {
     "gpt-6-sol": (2.00, 10.00),
     "claude-opus-5-5": (4.00, 20.00),
     "claude-sonnet-5-5": (2.00, 10.00),
+    "claude-haiku-5-5": (0.10, 0.50),
 }
 # Cached-input share of the input rate where it differs from CACHED_RATE (Claude cache reads
 # bill $0.20 vs $4.00 on Opus 5.5 = 0.05).
-CACHED_RATES = {"claude-opus-5-5": 0.05, "claude-sonnet-5-5": 0.10}
+CACHED_RATES = {"claude-opus-5-5": 0.05, "claude-sonnet-5-5": 0.10, "claude-haiku-5-5": 0.10}
 # Explicit context caching (2026-09-12): the system prompt is byte-identical for every page in a
 # run (~25k tokens), so it is cached ONCE per run and referenced per call. Cached input bills at
 # a fraction of the input rate (CONTENT_RATE_CACHED, default 0.10 of input — Google's published
@@ -594,6 +595,11 @@ def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinki
     # the level it asks for (CONTENT_CLAIMCHECK_THINKING, medium); page/section writers at ANTHROPIC_EFFORT.
     # FIXED-CHAIN-LEVELS (2026-10-10): USER RULE — every Claude call runs at ANTHROPIC_EFFORT (high), the claim checker too.
     effort = "low" if CMD == "preflight" else ANTHROPIC_EFFORT
+    # CHECKER-MODEL: CONTENT_CLAIMCHECK_CLAUDE_EFFORT=native runs the claim checker at the level each
+    # pass asks for (medium, final pass low — the tuned levels); a level name pins it.
+    _cce = os.environ.get("CONTENT_CLAIMCHECK_CLAUDE_EFFORT", "").strip().lower()
+    if CMD != "preflight" and os.environ.get("CONTENT_KIND") == "claim-check" and _cce:
+        effort = (thinking if thinking in ("low", "medium", "high") else "medium") if _cce == "native" else _cce
     # CLAUDE-TOKEN-FLOOR (2026-10-10): thinking counts against max_tokens, and radar callers pass ~12k caps sized for
     # Gemini — at effort high Opus spent them thinking and came back truncated (billed, discarded).
     # Streaming bills only tokens actually produced, so a writer call gets at least 32k.
@@ -1462,7 +1468,10 @@ def _checker_call(system: str, prompt: str, thinking: str = None) -> list | None
     saved_kind, saved_t = os.environ.get("CONTENT_KIND"), TEMPERATURE
     os.environ["CONTENT_KIND"] = "claim-check"; TEMPERATURE = 0.2
     try:
+        # CHECKER-MODEL (2026-10-10): the claim checker may run on its own model (CONTENT_CLAIMCHECK_MODEL, e.g.
+        # claude-sonnet-5-5); the normal fallback chain still applies behind it.
         text = complete(system, prompt, json_mode=True, writer_scope=False, thinking=thinking or CLAIMCHECK_THINKING,
+                        model=os.environ.get("CONTENT_CLAIMCHECK_MODEL") or None,
                         max_tokens=CLAIMCHECK_MAX_TOKENS)
     except Exception as e:  # noqa: BLE001
         log(f"claim check unavailable ({type(e).__name__}: {str(e)[:140]})"); return None
