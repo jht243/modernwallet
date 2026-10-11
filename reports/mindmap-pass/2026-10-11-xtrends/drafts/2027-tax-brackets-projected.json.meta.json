@@ -1,0 +1,160 @@
+{
+ "slug": "2027-tax-brackets-projected",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 1627,
+ "floor": 1100,
+ "input_tokens": 27847,
+ "output_tokens": 12752,
+ "thinking_tokens": null,
+ "cached_tokens": 25278,
+ "est_cost_usd": 0.2704,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['Projected 2027 Tax Brackets by Filing Status', 'Projected 2027 Standard Deduction', 'Why the 2027 Tax Brackets Are Estimates', 'How the Projected 2027 Tax Brackets Compare with 2026', 'A Worked Example for a Single Filer Earning $70,000'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1627,
+  "numbers_not_in_facts": [
+   "1000",
+   "110",
+   "13100",
+   "1322750",
+   "1625",
+   "16650",
+   "17625",
+   "20775",
+   "24950",
+   "25",
+   "3.2",
+   "3250",
+   "3425",
+   "400",
+   "500",
+   "5450",
+   "60",
+   "6550",
+   "6850",
+   "750",
+   "800",
+   "8325"
+  ],
+  "fact_budget": {
+   "fact_words": 361,
+   "floor": 1100,
+   "ratio": 0.33,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    6,
+    4
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "The dollar ranges apply to taxable income, which is your income after the standard deduction or other deductions.",
+     "replacement": "The dollar ranges apply to taxable income, which is your income after the standard deduction.",
+     "type": "unsupported",
+     "why": "SOURCE only shows taxable income as wages minus standard deduction"
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Each projected amount sits a few hundred dollars above the IRS's 2026 figure.",
+     "replacement": "Each projected amount sits $500 to $1,000 above the IRS's 2026 figure.",
+     "type": "contradicted",
+     "why": "Increases are $500 to $1,000; joint rises $1,000"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Checkpoint based its math on Internal Revenue Code (IRC) section 1(f), the provision that ties the brackets to inflation.",
+     "replacement": "Checkpoint based its math on Internal Revenue Code (IRC) section 1(f).",
+     "type": "unsupported",
+     "why": "SOURCE names section 1(f) but does not describe what it does"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "That missing month is one reason the IRS's final 2027 numbers could land a little above or below the projections.",
+     "replacement": "The IRS's final 2027 numbers could differ from the projections.",
+     "type": "inference",
+     "why": "SOURCE states no cause or size of divergence"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "The projected 2027 tax brackets use the same seven rates as the IRS's 2026 brackets, with every dollar threshold moved higher.",
+     "replacement": "The projected 2027 tax brackets use the same seven rates as the IRS's 2026 brackets, with every single and joint dollar threshold moved higher.",
+     "type": "unsupported",
+     "why": "SOURCE lacks 2026 head of household thresholds"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "The projections are close enough to sketch a budget and too early to file with.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE makes no accuracy judgment about the projections"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The 2027 tax brackets are estimates because the IRS sets the yearly inflation adjustments itself, and as of October 2, 2026, it had not published them on irs.gov.",
+     "replacement": "The 2027 tax brackets are estimates because, as of October 2, 2026, the IRS had not published its 2027 inflation adjustments on irs.gov.",
+     "type": "inference",
+     "why": "SOURCE does not say the IRS sets adjustments itself as the cause."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "The low-end thresholds rise about 3.2%, so the same income falls a little lower in the schedule.",
+     "replacement": "The low-end thresholds rise about 3.2%.",
+     "type": "inference",
+     "why": "SOURCE states no consequence of threshold increases."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "If your 2027 income rises by less than these thresholds do, part of it can move into a lower bracket than it would sit in under the 2026 schedule.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE states no such bracket-movement consequence."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If the IRS figures differ from Checkpoint's, the IRS figures govern 2027 returns.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state which figures govern 2027 returns."
+    }
+   ],
+   "deleted_final": 4,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1719
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 156.6,
+ "response_id": "msg_011CfvoEKQpp7WpNk18vufa1",
+ "generated_at": "2026-10-11T16:55:45+0000"
+}

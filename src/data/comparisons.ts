@@ -3563,6 +3563,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── 8. Fixed vs ARM Mortgage ─────────────────────────────────────────────
   {
     slug: "fixed-vs-arm-mortgage",
+    updated: "2026-10-11",
     title: "Fixed vs ARM Mortgage: Which Rate Will Save You More?",
     metaDescription:
       "Fixed vs ARM mortgage compared: rate stability, initial rates, long-term cost, and which loan type saves more for your situation.",
@@ -3595,6 +3596,11 @@ export const COMPARISONS: ComparisonEntry[] = [
         heading: "When ARMs save real money",
         content:
           "In a high-rate environment, ARMs offer a meaningful payment discount. In 2024, a typical 5/1 ARM was running about 0.5–1.0% below 30-year fixed rates. On a $400,000 loan, a 1% rate difference is about $265/month — $15,900 over 5 years.\n\nIf you sell or refinance before the ARM adjusts, you pocket the full savings with no downside. The ARM is especially attractive for buyers who know they'll move within 5–7 years (job relocation, family plans, downsizing).\n\nThe non-obvious risk: you may not move on schedule. Life changes, markets shift, and the home you planned to sell may not sell on your timeline. ARMs reward disciplined planners but punish those who overstay the initial period in a rising-rate environment.",
+      },
+      {
+        heading: "ARM vs Fixed When 30-Year Rates Are Above 7%",
+        content:
+          "An adjustable-rate mortgage (ARM) can be worth it when 30-year fixed rates are above 7%, but only if you expect to sell or refinance before the first reset. The early savings are real, and you pay for them by taking on reset risk.\n\nIn September 2026, the 30-year fixed averaged 7.1% and the 5/1 ARM averaged 6.2%, according to Mortgage Bankers Association (MBA) data published on the National Association of Home Builders (NAHB) [Eye on Housing blog](https://eyeonhousing.org/2026/10/arm-share-increased-as-mortgage-rates-spiked/). The fixed rate was 28 basis points higher than in August and 64 basis points above a year earlier. ARMs made up 9.3% of applications that month, and 10.3% in the MBA weekly survey for the week ending September 25, the highest weekly share since October 2025.\n\nTake a $400,000 loan with 30-year amortization and no points or fees. The 5/1 ARM at 6.2% costs $2,449.88 a month, and the fixed loan at 7.1% costs $2,688.13. That $238.25 monthly gap adds up to $14,295 over the 60 months the ARM rate is locked, and the ARM balance after those 60 payments is $373,126.\n\nNow stress the loan at the 2-point first-adjustment cap described in the caps section above, which moves the rate to 8.2% for the remaining 300 months. The payment rises to $2,929.45. That is $479.57 more than the old ARM payment and $241.32 more than the fixed payment ($2,929.45 minus $2,688.13).\n\nAt a $241.32 monthly gap, 59 months after the reset ($241.32 x 59 = $14,238) roughly cancels the $14,295 you saved. If rates sit at the cap, the ARM gives back its savings around month 119, close to year 10 of the loan. The rate can also reset lower or stay flat, so read 8.2% as a stress test of the cap. It does not predict where rates will go.\n\nSkip the ARM if you plan to keep the home past year 10 and could not absorb a $479.57 payment jump in year 6. Refinancing before the first adjustment is another way out, but it comes with closing costs of 2% to 5% of the loan. Run your own loan amount and both rates through the [mortgage calculator](/mortgage/) before you choose between a 5/1 ARM and a 30-year fixed.",
       },
       {
         heading: "Fixed-rate mortgages: predictability at a price",
@@ -3632,6 +3638,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     sources: [
       { label: "CFPB — Adjustable-rate mortgages", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-an-adjustable-rate-mortgage-arm-en-100/" },
       { label: "Freddie Mac — Primary Mortgage Market Survey", url: "https://www.freddiemac.com/pmms" },
+      { label: "NAHB Eye on Housing — ARM share increased as mortgage rates spiked (MBA data)", url: "https://eyeonhousing.org/2026/10/arm-share-increased-as-mortgage-rates-spiked/" },
     ],
     relatedComparisons: ["15-year-vs-30-year-mortgage", "renting-vs-buying"],
     calculatorLinks: [

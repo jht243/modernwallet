@@ -19414,6 +19414,187 @@ export const GUIDES: Guide[] = [
       }
     ]
   },
+  // -- x-trends-mindmap-auto 2026-10-11: 2027-tax-brackets-projected --
+  {
+  "slug": "2027-tax-brackets-projected",
+  "title": "Projected 2027 Tax Brackets and Standard Deduction",
+  "metaDescription": "Projected 2027 tax brackets: the single 10% rate tops out at $12,800 and 37% starts above $661,375. Estimates until the Internal Revenue Service publishes.",
+  "h1": "Projected 2027 Tax Brackets and Standard Deduction by Filing Status",
+  "cardBlurb": "Thomson Reuters Checkpoint projects the 2027 tax brackets and standard deduction, compared here with the Internal Revenue Service's 2026 figures.",
+  "introText": "The projected 2027 tax brackets from [Thomson Reuters Checkpoint](https://tax.thomsonreuters.com/news/key-2027-figures-calculated-by-thomson-reuters-checkpoint-based-on-inflation-data-now-available/) keep seven rates from 10% to 37%: the single filer's 10% bracket tops out at $12,800, and the 37% bracket starts above $661,375. The [Internal Revenue Service (IRS)](https://www.irs.gov/filing/federal-income-tax-rates-and-brackets) has not published its 2027 figures, so every 2027 number here is a Checkpoint estimate. The 2027 brackets cover income earned during 2027 and apply to returns filed in 2028. A return filed in early 2027 uses the IRS's 2026 brackets. To turn either set of brackets into a dollar figure for your own income, see [how much tax you will pay](/guides/how-much-tax-will-i-pay/).",
+  "sections": [
+    {
+      "heading": "Projected 2027 Tax Brackets by Filing Status",
+      "body": "Thomson Reuters Checkpoint projects seven 2027 tax brackets for each filing status, taxed at 10%, 12%, 22%, 24%, 32%, 35%, and 37%. The dollar ranges apply to taxable income, which is your income after the standard deduction.\n\nSingle filers:\n- 10%: $0 to $12,800\n- 12%: $12,800 to $52,025\n- 22%: $52,025 to $109,125\n- 24%: $109,125 to $208,325\n- 32%: $208,325 to $264,550\n- 35%: $264,550 to $661,375\n- 37%: over $661,375\n\nMarried filing jointly and surviving spouses:\n- 10%: $0 to $25,600\n- 12%: $25,600 to $104,050\n- 22%: $104,050 to $218,250\n- 24%: $218,250 to $416,650\n- 32%: $416,650 to $529,100\n- 35%: $529,100 to $793,650\n- 37%: over $793,650\n\nHead of household:\n- 10%: $0 to $18,250\n- 12%: $18,250 to $69,650\n- 22%: $69,650 to $109,100\n- 24%: $109,100 to $208,300\n- 32%: $208,300 to $264,550\n- 35%: $264,550 to $661,350\n- 37%: over $661,350\n\nThe joint thresholds are exactly double the single thresholds from the 10% bracket through the 32% bracket. For example, $12,800 times 2 is $25,600, and $264,550 times 2 is $529,100. The 37% bracket breaks that pattern: it starts at $793,650 for joint filers, far below double the single threshold of $661,375, which would be $1,322,750.\n\nHead of household filers get wider low brackets than single filers. Their 10% bracket runs $5,450 higher ($18,250 versus $12,800), and their 12% bracket runs $17,625 higher ($69,650 versus $52,025). From the 24% bracket up, the two schedules nearly match, and the 37% threshold differs by only $25."
+    },
+    {
+      "heading": "Projected 2027 Standard Deduction",
+      "body": "Thomson Reuters Checkpoint projects a 2027 standard deduction of $16,600 for single filers and $33,200 for married couples filing jointly. Each projected amount sits $500 to $1,000 above the IRS's 2026 figure.\n\n- Married filing jointly and surviving spouses: $33,200 projected for 2027, up $1,000 from $32,200 in 2026\n- Single: $16,600 projected, up $500 from $16,100\n- Head of household: $24,900 projected, up $750 from $24,150\n- Married filing separately: $16,600 projected, up $500 from $16,100\n\nThe standard deduction comes off your income before any bracket applies. A single filer with $70,000 in wages would have $53,400 of taxable income on the 2027 projection ($70,000 minus $16,600), compared with $53,900 under the 2026 figure ($70,000 minus $16,100).\n\nAt a 22% top rate, that extra $500 of deduction is worth $110 in tax ($500 times 22%). At a 12% top rate, it is worth $60."
+    },
+    {
+      "heading": "Why the 2027 Tax Brackets Are Estimates",
+      "body": "The 2027 tax brackets are estimates because, as of October 2, 2026, the IRS had not published its 2027 inflation adjustments on irs.gov. Thomson Reuters Checkpoint released its projections on September 11, 2026, and labels them as estimates calculated from public data.\n\nCheckpoint based its math on Internal Revenue Code (IRC) section 1(f). It used 11 months of published Consumer Price Index (CPI) data, running from September 2025 through August 2026.\n\nThe October 2025 CPI reading was never published because of the 2025 government shutdown. The IRS's final 2027 numbers could differ from the projections. Checkpoint states the IRS will publish its figures later in 2026. The IRS has not announced a release date on the pages checked, and the 2026 adjustments came out in October 2025 in [Revenue Procedure 2025-32](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill)."
+    },
+    {
+      "heading": "How the Projected 2027 Tax Brackets Compare with 2026",
+      "body": "The projected 2027 tax brackets use the same seven rates as the IRS's 2026 brackets, with every single and joint dollar threshold moved higher. The low-end thresholds rise about 3.2%.\n\nSingle filers, top of each bracket (2026 IRS figure, then 2027 projection):\n- 10%: $12,400 to $12,800, up $400\n- 12%: $50,400 to $52,025, up $1,625\n- 22%: $105,700 to $109,125, up $3,425\n- 24%: $201,775 to $208,325, up $6,550\n- 32%: $256,225 to $264,550, up $8,325\n- 35%: $640,600 to $661,375, up $20,775\n\nMarried filing jointly, top of each bracket:\n- 10%: $24,800 to $25,600, up $800\n- 12%: $100,800 to $104,050, up $3,250\n- 22%: $211,400 to $218,250, up $6,850\n- 24%: $403,550 to $416,650, up $13,100\n- 32%: $512,450 to $529,100, up $16,650\n- 35%: $768,700 to $793,650, up $24,950\n\nFor the 2026 head of household thresholds, see the IRS [federal income tax rates and brackets](https://www.irs.gov/filing/federal-income-tax-rates-and-brackets) page."
+    },
+    {
+      "heading": "A Worked Example for a Single Filer Earning $70,000",
+      "body": "A single filer with $70,000 in wages and only the standard deduction would owe $6,289.50 in federal income tax on the 2027 projections, $280.50 less than the $6,570 owed under the 2026 IRS figures.\n\nThe 2027 projection works out like this:\n- Taxable income: $70,000 minus the $16,600 standard deduction equals $53,400\n- 10% on the first $12,800: $1,280\n- 12% on the next $39,225 (from $12,800 to $52,025): $4,707\n- 22% on the last $1,375 (from $52,025 to $53,400): $302.50\n- Total: $6,289.50\n\nUnder the 2026 figures, the same $70,000 leaves $53,900 of taxable income after the $16,100 standard deduction, and the tax comes to $6,570. This filer's top bracket is 22% in both years. Only $1,375 of income is taxed at 22% on the projection, and the overall tax equals about 9% of the $70,000 in wages.\n\nTreat the example as an illustration. It ignores tax credits, payroll taxes under the Federal Insurance Contributions Act (FICA), state income tax, and any income besides wages. It also assumes wages stay at $70,000 in both years."
+    },
+    {
+      "heading": "How to Use Projected Numbers for Planning",
+      "body": "Use the projected 2027 numbers for rough planning, then replace them with the IRS's figures once they are published. \n\n- Budgeting: run your expected 2027 income through the projected brackets and standard deduction to get a ballpark federal tax bill.\n- Withholding: compare that ballpark figure with what your paychecks will withhold, and plan a change if the gap is large.\n- Estimated payments: if you pay tax on income without withholding, use the projected tax as a starting estimate and rerun it after the IRS releases the 2027 adjustments.\n\nThese projections do not serve anyone filing a return for the 2026 tax year, which includes returns filed in early 2027. For that return, use the 2026 brackets in [Revenue Procedure 2025-32](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill). The projections also give no 2027 figures for capital gains rates, 401(k) or IRA limits, or the FICA wage base, so plan those from published numbers only.\n\nIf a lower projected tax frees up cash, the [retirement calculators](/retirement/) and the [pay off debt or invest](/guides/pay-off-debt-or-invest/) guide can help you decide where it goes. Your next step is to run your own 2027 income through the projected 2027 tax brackets above, then rerun it on the IRS [federal income tax rates and brackets](https://www.irs.gov/filing/federal-income-tax-rates-and-brackets) page once 2027 figures appear there."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/guides/how-much-tax-will-i-pay/",
+      "label": "How much tax will I pay"
+    },
+    {
+      "href": "/retirement/",
+      "label": "Retirement calculators"
+    },
+    {
+      "href": "/investing/",
+      "label": "Investing calculators"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What are the 2027 tax brackets?",
+      "answer": "The 2027 tax brackets exist only as projections: Thomson Reuters Checkpoint estimates seven rates from 10% to 37%. For single filers, the 10% bracket tops out at $12,800 and the 37% bracket starts above $661,375. For joint filers, those thresholds are $25,600 and $793,650. The IRS has not published its 2027 figures."
+    },
+    {
+      "question": "Are the 2027 tax brackets official?",
+      "answer": "No. The 2027 brackets circulating now are estimates that Thomson Reuters Checkpoint published on September 11, 2026, using 11 months of Consumer Price Index (CPI) data. As of October 2, 2026, the IRS had not published its 2027 inflation adjustments."
+    },
+    {
+      "question": "When will the IRS release the 2027 tax brackets?",
+      "answer": "The IRS has not announced a release date. Thomson Reuters Checkpoint states the IRS will publish its figures later in 2026. For reference, the IRS released the 2026 adjustments in October 2025 in [Revenue Procedure 2025-32](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill)."
+    },
+    {
+      "question": "What is the projected 2027 standard deduction?",
+      "answer": "Thomson Reuters Checkpoint projects a 2027 standard deduction of $16,600 for single filers and $33,200 for married couples filing jointly. Head of household is projected at $24,900, and married filing separately at $16,600. Each is $500 to $1,000 above the 2026 IRS amount."
+    },
+    {
+      "question": "Do the 2027 brackets apply to my 2026 tax return?",
+      "answer": "No. The 2027 brackets apply to income earned in 2027, reported on returns filed in 2028. A 2026 tax return, filed in early 2027, uses the IRS's 2026 brackets, where the single 10% bracket tops out at $12,400."
+    },
+    {
+      "question": "Are tax brackets marginal?",
+      "answer": "Yes. Each slice of taxable income is taxed at its own rate. A single filer with $53,400 of taxable income on the 2027 projections pays 10% on the first $12,800, 12% on the next $39,225, and 22% only on the last $1,375, for a total of $6,289.50."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Thomson Reuters Checkpoint: Key 2027 figures calculated based on inflation data now available",
+      "url": "https://tax.thomsonreuters.com/news/key-2027-figures-calculated-by-thomson-reuters-checkpoint-based-on-inflation-data-now-available/"
+    },
+    {
+      "label": "IRS: Tax inflation adjustments for tax year 2026 (Revenue Procedure 2025-32)",
+      "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+    },
+    {
+      "label": "IRS: Federal income tax rates and brackets",
+      "url": "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets"
+    }
+  ],
+  "updated": "2026-10-11"
+},
+
+  // -- x-trends-mindmap-auto 2026-10-11: pay-off-mortgage-early-or-invest --
+  {
+  "slug": "pay-off-mortgage-early-or-invest",
+  "title": "Pay Off Mortgage Early or Invest at a 3% or 7.5% Rate",
+  "metaDescription": "Pay off mortgage early or invest? At a 3% rate, investing $500 a month came out ahead in the example. At 7.5%, prepaying won at both 5% and 7% returns.",
+  "h1": "Should You Pay Off Your Mortgage Early or Invest? Worked Examples at 3% and 7.5%",
+  "cardBlurb": "Compare your mortgage rate to a realistic return. At 3%, investing led in the example, while at 7.5%, prepaying beat a 7% return.",
+  "introText": "Whether you should pay off your mortgage early or invest depends on your mortgage rate compared with the return you can reasonably expect from investing. In two worked examples with a $300,000 balance, the loan at 3% ended further ahead by investing an extra $500 a month at an assumed 5% to 7% return. The new loan at 7.5% ended further ahead by prepaying that same $500, even against a 7% return. At ModernWallet, we ran both examples with the same $500 a month. For the broader order of employer 401(k) match, emergency fund, and high-rate debt, start with our [pay off debt or invest](/guides/pay-off-debt-or-invest/) guide.",
+  "sections": [
+    {
+      "heading": "The Rate Comparison That Decides Mortgage Payoff or Investing",
+      "body": "Paying extra on a mortgage earns a guaranteed return equal to the mortgage rate, before taxes, while an investment return is an assumption. If your loan charges 3%, every extra dollar of principal earns 3% with certainty. If your loan charges 7.5%, every extra dollar earns 7.5% with certainty.\n\nCompare two numbers: your mortgage rate and the annual return you expect from investing the same money. In the examples that follow, a 3% rate lost to both a 5% and a 7% assumed return. A 7.5% rate beat both.\n\nTwo groups of readers face this choice with very different rates. Owners who locked in a loan near 3% are one group, and new borrowers paying around 7% to 7.5% are the other. [Mortgage Bankers Association (MBA) data reported by the National Association of Home Builders (NAHB)](https://eyeonhousing.org/2026/10/arm-share-increased-as-mortgage-rates-spiked/) put the September 2026 average 30-year fixed contract rate at 7.1%.\n\nCheck today's rate on the [Freddie Mac Primary Mortgage Market Survey (PMMS)](https://www.freddiemac.com/pmms) page before you plug a number into the comparison."
+    },
+    {
+      "heading": "Worked Example for a Locked-In Owner at 3%",
+      "body": "For a locked-in owner at 3%, investing the extra $500 a month ended ahead of prepaying at both a 5% and a 7% assumed return. The example starts with a $300,000 balance at 3% and 25 years (300 months) left, with a required payment of $1,422.63 a month. Paid on schedule, the remaining interest totals $126,790.\n\nOn the prepay path, adding $500 a month pays the loan off in 199 months, about 16.6 years. Total interest drops to $80,729, a saving of $46,061. After payoff, this path invests the freed-up $1,922.63 a month (the old payment plus the extra $500) for the remaining 101 months, through month 300.\n\nOn the invest path, you keep the regular payment and invest $500 a month for all 300 months. That puts $150,000 of contributions into the account. Here is where each path stands at month 300:\n\n- Invest $500 a month from month 1: $297,755 at 5%, $405,036 at 7%\n- Prepay, then invest $1,922.63 a month after payoff: $240,821 at 5%, $263,479 at 7%\n- Invest-first lead: $56,934 at 5% ($297,755 minus $240,821) and $141,557 at 7% ($405,036 minus $263,479)\n\nBoth paths finish month 300 with the mortgage fully paid, so the gap is the size of the investment account. The invest-first account carries market risk that the prepay path avoids while the loan is open. The $46,061 of interest saved is guaranteed."
+    },
+    {
+      "heading": "Worked Example for a New Borrower at 7.5%",
+      "body": "For a new borrower at 7.5%, prepaying the extra $500 a month ended ahead of investing it at both a 5% and a 7% assumed return. The example is a $300,000 loan at 7.5% over 30 years, with a payment of $2,097.64 a month. Paid on schedule, total interest is $455,152.\n\nAdding $500 a month pays the loan off in 206 months, about 17.2 years. Total interest falls to $233,428, a saving of $221,724. The prepay path then invests the freed $2,597.64 a month for the remaining 154 months.\n\nThe invest path keeps the regular payment and invests $500 a month for all 360 months, which adds up to $180,000 in contributions. At month 360, the totals look like this:\n\n- Invest $500 a month from month 1: $416,129 at 5%, $609,986 at 7%\n- Prepay, then invest $2,597.64 a month after payoff: $559,292 at 5%, $645,302 at 7%\n- Prepay lead: $143,163 at 5% ($559,292 minus $416,129) and $35,316 at 7% ($645,302 minus $609,986)\n\nA guaranteed 7.5% beat an assumed 7%, with no market risk on the extra $500 while the loan was open. New borrowers still choosing a loan type can compare a [fixed vs adjustable-rate mortgage](/compare/fixed-vs-arm-mortgage/) before deciding how much to prepay."
+    },
+    {
+      "heading": "What the Examples Leave Out",
+      "body": "The worked examples use level payments and monthly compounding, and they leave out several items that can move your result. They do not include:\n\n- income taxes on investment gains\n- the mortgage interest deduction\n- investment fees\n\nThe 5% and 7% returns are assumptions chosen to show a range. They are not forecasts of what any account will earn over 25 or 30 years.\n\nThe guaranteed-versus-uncertain difference also sits outside the totals. A dollar of interest saved by prepaying is locked in at the loan rate. A projected account balance depends on returns landing close to the assumption for the full period, so give the guarantee extra weight when the two paths end up close.\n\nThe figures are arithmetic and are not tax advice. Your after-tax result depends on your own tax situation, which the examples do not model, so treat the gaps above as pre-tax gaps."
+    },
+    {
+      "heading": "A Decision Rule to Pay Off Your Mortgage Early or Invest",
+      "body": "Prepay when your mortgage rate is at or above the return you expect from investing, and invest when the expected return is clearly higher and you can accept market risk. Here is how the two examples line up with that rule:\n\n- Rate near 3%, expected return of 5% to 7%: investing ended ahead by $56,934 to $141,557 in the locked-in owner example.\n- Rate near 7.5%, expected return of 5% to 7%: prepaying ended ahead by $35,316 to $143,163 in the new borrower example, with no market risk on the extra payments.\n- Rate and expected return close together: the guarantee deserves more weight.\n\nCapture any employer 401(k) match, build a starter emergency fund, and handle high-rate debt before applying this rule. Those steps come first in the [pay off debt or invest](/guides/pay-off-debt-or-invest/) guide.\n\nTwo changes would flip the verdict. If you expect investments to earn less than 3%, prepaying a 3% loan wins on the same guaranteed-return logic. If you expect returns above 7.5%, the 7.5% case moves toward investing, though that higher return would still be uncertain."
+    },
+    {
+      "heading": "Where the Extra Money Should Go First",
+      "body": "Extra money should go to an employer 401(k) match, a starter emergency fund, and high-rate debt before either extra mortgage payments or investing. That order comes from our [pay off debt or invest](/guides/pay-off-debt-or-invest/) guide.\n\nOnce the match is captured, compare a [401(k) vs Roth IRA (individual retirement account)](/compare/401k-vs-roth-ira/) for your retirement dollars. Size your cushion with [how much emergency fund you need](/guides/how-much-emergency-fund/) before you lock extra cash into the loan.\n\nIf you choose prepayment, check your loan for a prepayment penalty and tell your servicer that extra money should apply to principal, as the Consumer Financial Protection Bureau (CFPB) advises on its [page about paying extra on a mortgage](https://www.consumerfinance.gov/ask-cfpb/should-i-pay-extra-on-my-mortgage-en-1999/). More mortgage tools sit on the [mortgage hub](/mortgage/).\n\nThen enter your balance, rate, and extra amount in the [extra payment calculator](/mortgage/extra-payment-calculator/). Run the same monthly amount through the [compound interest calculator](/investing/compound-interest-calculator/), and compare both totals before you decide whether to pay off your mortgage early or invest."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/mortgage/extra-payment-calculator/",
+      "label": "Extra mortgage payment"
+    },
+    {
+      "href": "/mortgage/early-payoff-calculator/",
+      "label": "Early mortgage payoff"
+    },
+    {
+      "href": "/investing/compound-interest-calculator/",
+      "label": "Compound interest"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Should I pay off my mortgage early or invest?",
+      "answer": "Compare your mortgage rate to the return you expect from investing. In a $300,000 example, investing $500 a month beat prepaying a 3% loan at both 5% and 7% returns, while prepaying a 7.5% loan beat investing at both. The prepay return is guaranteed, and the investment return is an assumption. Capture any employer 401(k) match and build a starter emergency fund before either choice."
+    },
+    {
+      "question": "Is it better to invest than pay extra on a 3% mortgage?",
+      "answer": "In the worked example, investing came out ahead. Investing $500 a month for 300 months reached $297,755 at 5% and $405,036 at 7%, ahead of the prepay-then-invest path by $56,934 and $141,557. That lead depends on assumed returns, while the $46,061 interest saving from prepaying is guaranteed."
+    },
+    {
+      "question": "Is it worth paying extra on a 7.5% mortgage?",
+      "answer": "Yes, in the worked example. Adding $500 a month to a $300,000 loan at 7.5% saved $221,724 in interest and paid the loan off in about 17.2 years. Prepaying and then investing ended ahead of investing alone by $143,163 at a 5% return and $35,316 at 7%."
+    },
+    {
+      "question": "Does the mortgage interest deduction change the math?",
+      "answer": "The worked examples leave the deduction out, so its effect is not in these numbers. They also leave out taxes on investment gains and investment fees. The figures are pre-tax arithmetic and are not tax advice."
+    },
+    {
+      "question": "What if I need the money later?",
+      "answer": "Build a starter emergency fund before prepaying or investing, following the order in the [pay off debt or invest](/guides/pay-off-debt-or-invest/) guide. In both examples, the prepay path has no investment account until the loan is paid off in month 199 or 206. The invest path builds an account from the first month."
+    },
+    {
+      "question": "Should I do both?",
+      "answer": "Yes, you can split the extra money between prepaying and investing. The examples did not model a split. Run each half through the [extra payment calculator](/mortgage/extra-payment-calculator/) and the [compound interest calculator](/investing/compound-interest-calculator/) to see your own totals."
+    }
+  ],
+  "sources": [
+    {
+      "label": "CFPB: Should I pay extra on my mortgage?",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/should-i-pay-extra-on-my-mortgage-en-1999/"
+    },
+    {
+      "label": "Freddie Mac: Primary Mortgage Market Survey (PMMS)",
+      "url": "https://www.freddiemac.com/pmms"
+    },
+    {
+      "label": "NAHB Eye on Housing: ARM share increased as mortgage rates spiked",
+      "url": "https://eyeonhousing.org/2026/10/arm-share-increased-as-mortgage-rates-spiked/"
+    }
+  ],
+  "updated": "2026-10-11"
+},
 ];
 
 export const GUIDE_BY_SLUG: Record<string, Guide> = Object.fromEntries(GUIDES.map((g) => [g.slug, g]));
