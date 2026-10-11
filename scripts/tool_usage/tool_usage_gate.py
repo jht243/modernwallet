@@ -145,6 +145,13 @@ def cmd_chart(a):
     (run / "coverage_lookup.txt").write_text(out.stdout + out.stderr)
     if out.returncode != 0:
         fail(f"coverage_lookup.py failed (see {run}/coverage_lookup.txt)")
+    creates = sum(1 for r in rows if "create new content" in r.get("bucket", "").lower())
+    m2 = re.search(r"coverage_lookup:\s*(\d+)\s+candidate", out.stdout)
+    seen = int(m2.group(1)) if m2 else 0
+    if creates and seen < creates:
+        fail(f"coverage_lookup.py read {seen} of {creates} create-new-content rows from the chart — its parser needs a "
+             f"leading row-number column (`| # | problem | solution | bucket | target | ...` with 1, 2, 3 in col 1). "
+             f"Fix the chart so every new page really gets the duplicate check.")
     ok("CHART", run, f"{len(rows)} chart rows, duplicate lookup saved")
 
 
