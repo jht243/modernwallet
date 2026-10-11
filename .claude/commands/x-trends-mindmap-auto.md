@@ -75,6 +75,7 @@ Append one line per processed thread to `reports/x-trends/ledger.jsonl`, commit 
 
 If anything shipped, write `/tmp/x-trends-<YYYY-MM-DD>.md`. The owner reads this to see **which page came from which Grok Bot finding**, so every page line names its source bullet. Sections, in order:
 
+0. `## Duplicate check` — one line copied from the Phase 0 manifest's Duplicate check row (`passed — N new-page rows checked, M matched an existing page`, or `FAILED — <rows>`).
 1. `## New pages` — one block per new page, exactly this shape:
    ```
    - **New page:** [<page title>](<live URL>)

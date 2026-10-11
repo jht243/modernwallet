@@ -102,6 +102,8 @@ The "Continuing to Phase <n+1>" line is a statement of fact, NOT a question. Aft
 ## Final report (after Phase 9)
 Totals by bucket, files created/modified, **the interpreted brief + the adjacent-demand clusters SEMRUSH surfaced and how each was actioned (new content / enriched page / metadata / flagged)**, consolidation losers, **Live verification (each created/changed URL → 200 OK or FAILED)**, IndexNow status, commit SHA / PR URL, and every "Ambiguous / skipped" row for the user to resolve manually.
 
+**The report MUST open with a `## Duplicate check` section** — one line copied from the Phase 0 manifest's Duplicate check row (`passed — N new-page rows checked, M matched an existing page`, or `FAILED — <rows>`). Any routine that wraps /mindmap-pass (X trends, search gap, chat requests, trend pass, hype radar, inbox, YouTube) puts this same section first in the email it sends.
+
 **The report MUST end with a `🔗 New pages` section**: a clickable markdown link (page title as text, full absolute `https://` URL as target) for EVERY newly created page that verified 200, so the user can open each page directly from the chat. Enriched existing pages get a separate `Updated pages` link list; failed/reverted pages a separate `⚠️ Not live` list. Nothing comes after this section. (Details in `phase-9-commit-deliver.md` step 8.)
 
 ## IndexNow Fallback Key (workflow-wide)
