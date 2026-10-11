@@ -96,16 +96,41 @@ if re.search(r"content_gen\.py\s+(write|section)", cmd) and not (has("PERSONA") 
 if "tool_usage_gate.py" in cmd:
     sys.exit(0)
 
-# Bash that writes files outside reports/ and /tmp (heredoc redirects, sed -i, python open(..,'w'), cp/mv, tee)
+# Bash that writes into the site's code (heredoc redirects, sed -i, python open(..,'w'), cp/mv, tee).
+# Heredoc BODIES are stripped first: a script's own `x > 0` or `=>` is not a file write.
+CODE_DIRS = ("src", "app", "templates", "server", "pages", "public", "static", "content", "data",
+             "components", "lib", "layouts", "styles", "api", "routes")
+def strip_heredocs(c):
+    out, lines, i = [], c.split("\n"), 0
+    while i < len(lines):
+        out.append(lines[i])
+        m = re.search(r"<<-?\s*['\"]?(\w+)['\"]?", lines[i])
+        if m:
+            end = m.group(1); i += 1
+            while i < len(lines) and lines[i].strip() != end:
+                i += 1
+        i += 1
+    return "\n".join(out)
+def code_target(w):
+    w = w.strip("'\"")
+    if not w or w.startswith(("$", "/dev/", "&", "/tmp", "-")):
+        return False
+    rel = os.path.relpath(w, os.getcwd()) if os.path.isabs(w) else w
+    if rel.startswith(".."):
+        return False
+    return rel.split("/")[0] in CODE_DIRS or rel.endswith((".astro", ".tsx", ".jsx", ".vue", ".svelte"))
 if not (has("PERSONA") and has("CHART")):
-    writes = re.findall(r"(?:>>?|tee\s+(?:-a\s+)?)\s*['\"]?([\w./-]+)", cmd)
-    writes += re.findall(r"sed\s+-i[^\n]*?\s([\w./-]+\.\w+)", cmd)
-    writes += re.findall(r"open\(\s*['\"]([^'\"]+)['\"]\s*,\s*['\"][wa]", cmd)
-    writes += re.findall(r"\b(?:cp|mv)\s+[^\n;&|]*?\s([\w./-]+)\s*(?:$|[;&|\n])", cmd)
-    writes += re.findall(r"\b(?:cp|mv)\s+-?\w*\s*[\w./-]+\s+([\w./-]+)", cmd)
-    py_edit = re.search(r"\bpython3?\b[^\n]*<<", cmd) and re.search(r"\.write\(|write_text\(", cmd) \
-        and re.search(r"['\"](?:src|app|templates|server|pages|public|static|content|data|components|lib)/", cmd)
-    if py_edit or any(is_code_path(w) and not w.startswith(("/dev/", "&")) for w in writes):
+    body = strip_heredocs(cmd)
+    writes = re.findall(r"(?:^|[^<>=\-0-9])>>?\s*([^\s;&|<>]+)", body)
+    writes += re.findall(r"tee\s+(?:-a\s+)?([^\s;&|]+)", body)
+    writes += re.findall(r"sed\s+-i\S*\s+(?:'[^']*'|\"[^\"]*\"|\S+)\s+([^\s;&|]+)", body)
+    writes += re.findall(r"\b(?:cp|mv|install)\s+(?:-\w+\s+)*\S+\s+([^\s;&|]+)", body)
+    py_edit = re.search(r"open\(\s*['\"]([^'\"]+)['\"]\s*,\s*['\"][wa]", cmd)
+    py_targets = re.findall(r"open\(\s*['\"]([^'\"]+)['\"]\s*,\s*['\"][wa]", cmd)
+    py_targets += re.findall(r"Path\(\s*['\"]([^'\"]+)['\"]\s*\)\.write_text", cmd)
+    py_targets += [m for m in re.findall(r"['\"]((?:%s)/[^'\"]+)['\"]" % "|".join(CODE_DIRS), cmd)
+                   if re.search(r"\.write\(|write_text\(", cmd)]
+    if any(code_target(w) for w in writes + py_targets):
         need_edit()
 sys.exit(0)
 PY
