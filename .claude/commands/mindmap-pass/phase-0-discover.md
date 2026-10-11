@@ -32,7 +32,7 @@ After selecting:
 
 ## Pre-execution manifest gate (HARD HUMAN GATE)
 
-After parsing the chart, **STOP and print the manifest table, then wait for the user's explicit approval before starting Phase 1.** Never auto-proceed past this gate.
+After parsing the chart, count the `create new content` rows whose col 1 `problem` text contains `lookup:` — that is the Duplicate check row (passed only when every such row has one). Then **STOP and print the manifest table, then wait for the user's explicit approval before starting Phase 1.** Never auto-proceed past this gate.
 
 The manifest mirrors the format of the Phase 8 end-of-run summary so the user sees the same shape going in and coming out. One table, three columns: **Phase / Rows / Plan**. No redundant bucket column — each phase maps to exactly one bucket.
 
@@ -40,6 +40,7 @@ The manifest mirrors the format of the Phase 8 end-of-run summary so the user se
 
 | Phase                  | Rows | Plan |
 |------------------------|------|------|
+| Duplicate check        | {N} checked | "**passed** — every `create new content` row carries a `lookup:` entry from `scripts/mindmap/coverage_lookup.py` (`{M}` matched an existing page, `{N−M}` no match)" — or "**FAILED** — rows {list} have no `lookup:` entry; fix the chart before approval" |
 | 1 — Cannibalization detection (advisory) | {N}  | Per-row plan: "FLAG /page-a vs /page-b (same cluster) — recommend manual-consolidate / differentiate; **no edits, detection only**" |
 | 2 — Metadata           | {N}  | Per-row plan: "Rewrite metaTitle+desc on: {target 1}, {target 2}, ..." (or "skipped — no rows") |
 | 3 — New content        | {N}  | Per-row plan: "Create /route-a [article, page type + its depth floor — e.g. `comparison, ≥1,500 words`] — **answers "{reader_question}" in {answer_placement}**; create /route-b [calculator — user inputs X → outputs Y, spec only] — answers "{reader_question}"; ..." — name format for each row, the floor from the `phase-3-new-content.md` table, AND the chart's `reader_question` + `answer_placement` (cols 10–12) so the user approves the *question each page answers*, not just its topic |

@@ -67,7 +67,7 @@ python3 .claude/tools/autocomplete-paa/autocomplete.py \
 1. **Extract seeds from the interpreted brief.** List the concrete topics/entities/audiences/angles the user wants. Convert each into 1–3 candidate search phrases (how a real searcher phrases it), not marketing copy.
 2. **Validate on SEMRUSH.** Batch the candidates through `phrase_these` (volume, CPC, competition) and `phrase_kdi` (difficulty). For the strongest 3–5, run `phrase_organic` to see who ranks and how contested the SERP is. **No fabrication** — real phrases and real figures only; a phrase SEMRUSH returns no data for is labeled `no tool volume` (still may be worth a long-tail slot, but say so — never invent a number).
 3. **Decide the home + lever** for each validated intent using the ladder in "Decide the lever" below. Name the exact target file/route.
-4. A brief item the site **already answers well** with a dedicated, intent-matched page is **not** a new row — record it under exclusions ("already covered by `<route>`"), don't pad the table.
+4. A brief item the site **already answers well** with a dedicated, intent-matched page is **not** a new row — record it under exclusions ("already covered by `<route>`"), don't pad the table. "Already answers well" is judged from the **coverage lookup** (see "Decide the lever"), not from memory.
 
 ## LENS 2 — Adjacent-demand discovery (CORE TENET — run on every pass)
 
@@ -79,7 +79,7 @@ Lens 1 stays inside what the user typed. Lens 2 reads the **demand space around 
    - The cluster's phrases carry SEMRUSH volume (or repeated Autocomplete completions) but no existing page squarely targets the theme — a coverage gap at the *theme* level.
    - An existing page surfaces for the cluster but is an intent/format mismatch (a pillar that structurally can't satisfy a "vs"/pricing/calculator query).
    - **News-driven demand** the brief pointed at (if the input was an article): translate the breaking theme into the phrases searchers will reach for; validate plausibility with SEMRUSH volume where it exists, or label it `demand inferred from live news/Autocomplete — no tool volume yet` and cite the signal. First-mover clusters often have no competitor footprint — that's the upside, not a reason to drop.
-   - A cluster the site ALREADY answers well with a dedicated page is **not** emerging — drop it (note under exclusions if noteworthy).
+   - A cluster the site ALREADY answers well with a dedicated page is **not** emerging — drop it (note under exclusions if noteworthy). Judge "already answers well" from the coverage lookup (see "Decide the lever"), not from memory.
 4. **Decide the lever per cluster** (ladder below) and emit each actionable cluster as a real row **and** as a row in the required `## Emerging search patterns (clusters)` block.
 
 ## LENS 3 — Comparison / Alternatives / Pricing (CORE TENET — run on every pass)
@@ -225,6 +225,16 @@ approves the *question* and its *evidence* and not just the *topic*, and are wha
 Phase 0 parsing as ambiguous; a row whose col 10 carries no evidence tag is treated as missing.
 
 ## Decide the lever per row/cluster (top to bottom; first match wins — same ladder as seo-gsc-pass)
+
+**Evidence first — run the coverage lookup before you judge any rung.** The ladder below asks whether an existing page is a "reasonable home" or "already covers it". Do not answer that from memory: run
+
+```bash
+python3 scripts/mindmap/coverage_lookup.py --site-url <BASE_URL> --candidate "<proposed route>|<keyword phrase(s)>|<reader question>"   # repeat --candidate per row; or --chart <draft chart> once the table exists
+```
+
+For every candidate it lists the existing pages that may already serve the same reader — from `data/*.ts` (live **and** not-yet-deployed), the sitemaps / `search-index.json`, the redirects (a topic deliberately merged elsewhere), past mindmap charts (what earlier runs shipped or dropped, and why), commit messages, and the other rows of this run — each with its title + description. It is evidence only; it never decides. `<BASE_URL>` is the site origin from Phase 0; the tool reads the live sitemap when the repo has no local one (database-backed and build-time-sitemap sites) and fetches titles for pages it only knows from the sitemap.
+
+For each listed page, write one line on **what its reader is trying to do** (from its title + description — nothing more is read) and compare that with the row's reader question (col 10). Same reader goal → the ladder's "already covers it" / "right topical home" rungs apply, exactly as before; a different goal on the same topic → say so and continue down the ladder. The row's col 1 `problem` text must name the strongest lookup match (`lookup: /route — <its reader intent>`) or `lookup: no match`. A page the lookup flags as **NOT IN SITEMAP** counts as existing (another routine built it, or it is live and the sitemap misses it). A **PARENT PAGE** is the broader page the candidate sits under (e.g. `/guides/claude-dashboards` for `claude-dashboards-vs-power-bi`): say whether its reader goal is the same or narrower. "Same run overlap" means two rows of this chart would compete — merge or drop one.
 - **No existing page is a reasonable home for this intent →** `create new content` (a new page/hub for the topic). This is the primary engine for net-new pages — exactly what the user is asking for when they say "things I want added."
 - **An existing page is the right topical home but doesn't address this angle/subtopic →** `update existing body text` (add a section/FAQ — additive only, never a rewrite).
 - **An existing page already covers it in the body AND ranks, but the title/meta/snippet doesn't reflect the framing →** `update existing metadata`.
@@ -299,7 +309,7 @@ In the saved file, col 3 uses the **exact canonical bucket wording** (the machin
 ## Duplicate-suppression gate (adversarial reviewer — runs after the table is built, BEFORE the chart is saved)
 
 The author of the chart does not clear its own duplicates. After the table is produced but before saving, spawn a read-only adversarial reviewer (Agent tool, `subagent_type: Explore`) that did NOT build the chart. Hand it the proposed rows + the repo, and have it independently:
-1. Check the commits (`git log -20 --stat` for topic context + `git log -p -- <target>` per row, and `reports/mindmap-pass/*.md`), without trusting the author's dedup.
+1. Check the commits (`git log -20 --stat` for topic context + `git log -p -- <target>` per row, and `reports/mindmap-pass/*.md`), without trusting the author's dedup. Also run `python3 scripts/mindmap/coverage_lookup.py --site-url <BASE_URL> --chart <draft chart>` yourself and check every row's `lookup:` claim against the tool's output — a row that names no match while the tool lists a page with the same reader intent, or that omits a `lookup:` entry, fails the gate. The tool runs the same everywhere (cloud included), so when no reviewer subagent can be spawned the orchestrator runs it inline and records that it did.
 2. For each row, decide whether the work is **already shipped** per the three-bucket duplicate definitions (page created / body section added / metadata rewritten for that term).
 3. Return `KEEP` or `DROP — already shipped in <SHA>`, SHA cited.
 4. **Cluster rows get TWO extra checks (Lens 2 integrity):**

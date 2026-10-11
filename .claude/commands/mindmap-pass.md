@@ -77,7 +77,7 @@ Each phase's full instructions + reviewer checklist live in its own file. When y
 
 | Phase | Instruction file (read this when you reach the phase) | Gate |
 |---|---|---|
-| STEP 1 — Build chart from the input brief | `.claude/commands/mindmap-pass/phase-build-brief.md` | **Duplicate-suppression gate** (adversarial reviewer drops already-shipped rows) + Phase 0 manifest gate |
+| STEP 1 — Build chart from the input brief | `.claude/commands/mindmap-pass/phase-build-brief.md` | **Duplicate-suppression gate** (adversarial reviewer drops already-shipped rows) — fed by `scripts/mindmap/coverage_lookup.py` (existing pages that may serve the same reader, with title + description; evidence only) + Phase 0 manifest gate |
 | 0 — Load chart + discover + manifest | `.claude/commands/mindmap-pass/phase-0-discover.md` | **HARD HUMAN GATE** — manifest approval |
 | 1 — Cannibalization detection (**advisory only**, no edits) | `.claude/commands/mindmap-pass/phase-1-consolidation.md` | reviewer checklist in file |
 | 2 — Metadata fixes | `.claude/commands/mindmap-pass/phase-2-metadata.md` | reviewer checklist in file |
