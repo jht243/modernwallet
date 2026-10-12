@@ -327,28 +327,53 @@ def git_grep(term: str, n: int = 8) -> list[str]:
 # ---------------------------------------------------------------- candidates
 
 def parse_chart(path: Path, all_rows: bool) -> list[dict]:
-    cands = []
+    """Read every chart table by its HEADER names, so both chart formats work: the
+    numbered one (`| # | problem | solution | bucket | target | ...`) and the plain one
+    (`| problem | solution | bucket | target | ...`, used by hype / x-trends / trend-pass /
+    keyword-gap charts). The clusters block (`| Cluster (theme) | Member queries | ... |
+    Lever | Target |`) is read too; a route already taken from the main table is skipped."""
+    cands, seen, cols = [], set(), None
+    def cell(cells, *names):
+        for n in names:
+            if n in cols and cols[n] < len(cells):
+                return cells[cols[n]]
+        return ""
     for line in path.read_text(errors="replace").splitlines():
-        if not line.startswith("| ") or line.startswith("| ---"):
+        if not line.startswith("|"):
+            if line.startswith("#"):        # a new section ends the table; blank/prose lines inside a table do not
+                cols = None
+            continue
+        if re.match(r"^\|\s*:?-{3,}", line):
             continue
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        if len(cells) < 5 or not cells[0].isdigit():
+        low = [re.sub(r"[^a-z_ ]", "", c.lower()).strip() for c in cells]
+        if ("target" in low) and ({"bucket", "lever"} & set(low)):
+            cols = {name: i for i, name in enumerate(low)}
             continue
-        problem, solution, bucket, target = cells[1], cells[2], cells[3], cells[4]
-        if not all_rows and "create new content" not in bucket:
+        if cols is None:
             continue
-        # the target cell reads "data/guides-new.ts → /guides/<slug>": take a route, never a file path
+        bucket = cell(cells, "bucket", "lever")
+        if not all_rows and "create new content" not in bucket.lower():
+            continue
+        target, solution = cell(cells, "target"), cell(cells, "solution")
         route = ""
-        for cell in (target, solution):
-            m = re.search(r"(?<![\w./])(/[a-z0-9][a-z0-9/-]*)(?![\w.])", cell)
+        for c in (target, solution):
+            m = re.search(r"(?<![\w./])(/[a-z0-9][a-z0-9/-]*)(?![\w.])", c)
             if m:
                 route = m.group(1).rstrip("/")
                 break
-        question = cells[10] if len(cells) > 10 else ""
+        if route and route in seen:
+            continue
+        seen.add(route)
+        problem = cell(cells, "problem", "cluster theme", "cluster")
+        members = cell(cells, "member queries")
         kw = re.findall(r"[\"“`]([^\"”`]{3,80})[\"”`]", problem)
-        kw = [k for k in kw if not k.startswith("/") and "/" not in k[:1]]
+        kw = [k for k in kw if not k.startswith("/")]
+        if not kw and members:
+            kw = [m.strip() for m in members.split(";") if m.strip()][:3]
         cands.append({"route": route, "keyword": "; ".join(kw[:3]) or last_segment(route).replace("-", " "),
-                      "question": question, "bucket": bucket, "row": cells[0]})
+                      "question": cell(cells, "reader_question", "reader question"), "bucket": bucket,
+                      "row": cells[0] if cells and cells[0].isdigit() else str(len(cands) + 1)})
     return cands
 
 
