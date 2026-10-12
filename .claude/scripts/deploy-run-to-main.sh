@@ -38,6 +38,8 @@
 #   0  pushed to main
 #   3  could not land cleanly (a conflict outside deploy-regenerable.txt, or a repeatedly-moving base) -> caller does the safe
 #      ephemeral-branch fallback + manual-merge email. NEVER force-push main.
+#   4  .claude/scripts/deploy-precheck.sh rejected the merged tree -> nothing pushed; fix the
+#      reported file (or drop the bad row), commit, and run push again.
 #
 set -uo pipefail
 
@@ -129,6 +131,21 @@ rebase_or_regen() {
   return 1
 }
 
+# PRE-PUSH PRECHECK — a repo-specific gate run on the merged tree right before every push.
+# If .claude/scripts/deploy-precheck.sh exists it gets the files this run changed vs
+# origin/main as args; non-zero = nothing is pushed (exit 4). Catches a data-file break
+# BEFORE it reaches main, where it would fail every build for every routine (2026-10-12
+# layer3labs: a merged-entry duplicate-key break blocked all deploys 05:05-12:08 UTC).
+PRECHECK="$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.claude/scripts/deploy-precheck.sh"
+run_precheck() {
+  [ -f "$PRECHECK" ] || return 0
+  local changed
+  changed="$(git diff --name-only --diff-filter=ACMR origin/main HEAD)"
+  [ -n "$changed" ] || return 0
+  # shellcheck disable=SC2086
+  bash "$PRECHECK" $changed
+}
+
 case "$cmd" in
   mark)
     # Record the tip we inherited. Everything committed after this is THIS run's work.
@@ -178,6 +195,10 @@ case "$cmd" in
     # commit below our run's commits is already on the remote, so a plain rebase now
     # replays ONLY our commits — it can never re-introduce foreign work.
     for attempt in 1 2 3; do
+      if ! run_precheck; then
+        echo "[deploy] PRECHECK FAILED: this run's changes would break the build; NOT pushed (see errors above)." >&2
+        exit 4
+      fi
       if git push origin HEAD:main; then
         echo "[deploy] pushed $(git rev-parse --short HEAD) to main (attempt ${attempt})."
         rm -f "$base_file"
@@ -208,7 +229,10 @@ case "$cmd" in
     # new deploy lands, so "200" alone proves nothing there — pass URL=NewVendorName.
     shift
     [ $# -eq 0 ] && { echo "usage: deploy-run-to-main.sh verify URL[=needle]..." >&2; exit 2; }
-    deadline=$(( $(date +%s) + ${VERIFY_DEADLINE:-420} ))
+    start=$(date +%s)
+    deadline=$(( start + ${VERIFY_DEADLINE:-420} ))
+    nudge_at=$(( start + ${VERIFY_DEADLINE:-420} / 2 ))
+    nudged=""
     pending=("$@")
     while [ ${#pending[@]} -gt 0 ]; do
       still=()
@@ -227,6 +251,24 @@ case "$cmd" in
       if [ "$(date +%s)" -ge "$deadline" ]; then
         for spec in "${pending[@]}"; do u="${spec%%=*}"; echo "FAIL $(curl -sL -o /dev/null -w '%{http_code}' --max-time 20 "$u" || echo 000) $spec"; done
         echo "[verify] deadline passed with ${#pending[@]} URL(s) not live" >&2; exit 1
+      fi
+      # NUDGE — still not live halfway through: push ONE empty commit to main so the host
+      # starts a fresh build. A Render build can die before it starts (2026-10-12 ec60750:
+      # "could not read Username for 'https://github.com'" on clone, a transient GitHub-auth
+      # blip) and Render never retries it, so the change sits unpublished until some other
+      # routine happens to push. The empty commit is built on origin/main's tree, so it never
+      # touches the working tree or ships anything new. VERIFY_NUDGE=0 turns it off.
+      if [ -z "$nudged" ] && [ "${VERIFY_NUDGE:-1}" != "0" ] && [ "$(date +%s)" -ge "$nudge_at" ]; then
+        nudged=1
+        for _ in 1 2 3; do
+          git fetch -q origin main || continue
+          c="$(git commit-tree 'origin/main^{tree}' -p origin/main -m "redeploy: not live after $(( $(date +%s) - start ))s; retrigger host build [skip-content]")" || break
+          if git push -q origin "$c:main"; then
+            echo "[verify] not live yet -> pushed empty redeploy commit $(git rev-parse --short "$c") to main" >&2
+            deadline=$(( deadline + ${VERIFY_NUDGE_EXTRA:-300} ))
+            break
+          fi
+        done
       fi
       sleep 10
     done
