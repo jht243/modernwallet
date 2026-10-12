@@ -1,0 +1,133 @@
+{
+ "rows": [
+  {
+   "keyword": "disadvantages of a 529 plan",
+   "volume": 260,
+   "volume_low": 260,
+   "volume_high": 260,
+   "kd": 9,
+   "cpc": 0.81,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "529 plan pros and cons",
+   "volume": 1000,
+   "volume_low": 1000,
+   "volume_high": 1000,
+   "kd": 12,
+   "cpc": 2.47,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "is a 529 plan worth it",
+   "volume": 880,
+   "volume_low": 880,
+   "volume_high": 880,
+   "kd": 7,
+   "cpc": 2.83,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "why 529 plans are a bad idea",
+   "volume": 3600,
+   "volume_low": 3600,
+   "volume_high": 3600,
+   "kd": 0,
+   "cpc": 3.38,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "what is a 529 plan",
+   "volume": 27100,
+   "volume_low": 27100,
+   "volume_high": 27100,
+   "kd": 44,
+   "cpc": 2.65,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "529 plan",
+   "volume": 135000,
+   "volume_low": 135000,
+   "volume_high": 135000,
+   "kd": 64,
+   "cpc": 3.36,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "529 plan downsides",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 6 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "what happens to 529 when child turns 21",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "ahrefs unusable (no AHREFS_API_KEY)",
+  "volume: using dataforseo (quality order ahrefs > dataforseo > semrush)",
+  "dataforseo returned volume for 6/8 phrases",
+  "semrush unusable (no SEMRUSH_API_KEY)",
+  "kd: using dataforseo (quality order ahrefs > semrush > dataforseo)",
+  "No tool volume for 2 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 8/8 rows corroborated live"
+ ]
+}

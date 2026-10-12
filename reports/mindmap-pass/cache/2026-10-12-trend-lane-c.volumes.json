@@ -1,0 +1,223 @@
+{
+ "rows": [
+  {
+   "keyword": "best home loan lenders",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": 11,
+   "cpc": 20.44,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "best mortgage lenders",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": 22,
+   "cpc": 20.44,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "best home loan",
+   "volume": 880,
+   "volume_low": 880,
+   "volume_high": 880,
+   "kd": 34,
+   "cpc": 20.72,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "custodial account vs savings account",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 21,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "best lenders for home loans",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": 22,
+   "cpc": 20.44,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "last will online",
+   "volume": 6600,
+   "volume_low": 6600,
+   "volume_high": 6600,
+   "kd": 40,
+   "cpc": 9.82,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "will online",
+   "volume": 6600,
+   "volume_low": 6600,
+   "volume_high": 6600,
+   "kd": 33,
+   "cpc": 9.82,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "529 vs brokerage account",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": 1,
+   "cpc": 10.89,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "best home mortgage lender",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": 22,
+   "cpc": 20.44,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "best mortgage lenders today",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 89,
+   "cpc": 15.49,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "chase ultimate rewards points to dollars conversion",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": 52,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "roth 401k versus traditional 401k",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": 4,
+   "cpc": 1.84,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "make a will online",
+   "volume": 1000,
+   "volume_low": 1000,
+   "volume_high": 1000,
+   "kd": 39,
+   "cpc": 9.69,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "are trump accounts for kids a scam",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  }
+ ],
+ "notes": [
+  "ahrefs unusable (no AHREFS_API_KEY)",
+  "volume: using dataforseo (quality order ahrefs > dataforseo > semrush)",
+  "dataforseo returned volume for 13/14 phrases",
+  "semrush unusable (no SEMRUSH_API_KEY)",
+  "kd: using dataforseo (quality order ahrefs > semrush > dataforseo)",
+  "No tool volume for 1 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 12/14 rows corroborated live"
+ ]
+}

@@ -30,6 +30,96 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── mindmap-pass 2026-10-12 (trend-lane-c, 529 worth it): is-a-529-plan-worth-it ──
+  {
+    "updated": "2026-10-12",
+    "slug": "is-a-529-plan-worth-it",
+    "title": "Is a 529 Plan Worth It? The Break-Even Math",
+    "metaDescription": "Is a 529 plan worth it? The tax break-even math, the downsides, when the 10% additional tax is waived, and options if the child does not use it.",
+    "h1": "Is a 529 Plan Worth It?",
+    "cardBlurb": "The break-even math on a 529, what a non-qualified withdrawal costs, and where the money can go if the child does not use it.",
+    "introText": "A 529 plan is worth it when the money will pay qualified education expenses, because the earnings then come out free of federal income tax. At ModernWallet, we build free calculators and plain-language money guides, and every guide we write starts from the math.\n\nTwo rules cut the other way. Contributions are not deductible on your federal return, and earnings withdrawn for non-qualified spending are taxed as income and generally owe a 10% additional tax. The rules also offer several ways to redirect unused money, and each route has its own limit.",
+    "sections": [
+      {
+        "heading": "Is a 529 Plan Worth It? The Break-Even",
+        "body": "A 529 plan pays off when its withdrawals cover qualified education expenses, because the earnings in that case owe no federal income tax. It is a weaker fit when the beneficiary may not use the money. Earnings withdrawn for other spending are taxed as income and generally owe a 10% additional tax. Contributions never get a federal deduction, so the tax-free withdrawal of earnings is the federal benefit.\n\n[IRS Publication 970](https://www.irs.gov/publications/p970) shows how a qualified withdrawal works. In its example, parents contributed $18,000 over the years and the account grew to $27,000. The student had $8,300 of qualified expenses, and a tax-free scholarship covered $3,100 of that, which leaves $5,200 of adjusted qualified education expenses (AQEE).\n\nThe parents withdrew $5,300, and Form 1099-Q showed that $950 of it was earnings. The tax-free share of the earnings is $950 x $5,200 / $5,300, or $932, so only $18 of earnings is taxable. If the parents also claimed a $2,500 American opportunity credit on $4,000 of the same expenses, AQEE drops to $1,200, tax-free earnings fall to $215, and $735 becomes taxable.\n\nA non-qualified withdrawal works differently. As a plain illustration rather than an IRS example, say you take out $10,000 for something other than education, and 40% of it is earnings. The $4,000 of earnings is added to your income and taxed at your ordinary rate. The 10% additional tax on it is $400. The $6,000 of contributions comes back untaxed.\n\n| Scenario | Earnings withdrawn | Earnings taxed as income | Earnings tax-free |\n|---|---|---|---|\n| IRS example 1, withdrawal of $5,300 against $5,200 of AQEE | $950 | $18 | $932 |\n| IRS example 2, same withdrawal plus a $2,500 American opportunity credit | $950 | $735 | $215 |\n| Illustration, non-qualified withdrawal of $10,000 | $4,000 | $4,000, plus a $400 additional tax | $0 |\n\nThe tax-free share of earnings equals AQEE divided by the withdrawal. The rest is taxed as income and generally owes the extra 10%, unless an exception applies. Claiming an education credit on the same expenses shrinks the tax-free share, because the same expenses cannot count for both the credit and the tax-free withdrawal.\n\nTiming also counts, since the earnings are the federal benefit. The IRS notes that a plan set up while the student is already enrolled may not build enough earnings to be of immediate benefit."
+      },
+      {
+        "heading": "Tax-Free Earnings and Owner Control in a 529 Plan",
+        "body": "A 529 plan lets earnings build up without federal tax and come out tax free when they pay qualified education expenses. The [IRS 529 Q&A](https://www.irs.gov/newsroom/529-plans-questions-and-answers) adds that those earnings are generally not subject to state tax either when used that way. Congress created 529 plans in 1996 and named them for section 529 of the Internal Revenue Code.\n\nPublication 970 calls them qualified tuition programs (QTPs). States may set up programs that let you prepay or contribute to an account for a student's qualified education expenses at an eligible educational institution.\n\nEligibility is wide. The IRS sets no income restrictions on the contributor or the beneficiary, and you can name anyone as beneficiary, including a relative, a friend or yourself. There is no limit on the number of plans you set up, though each account has one designated beneficiary.\n\nThe person who buys the plan is the custodian and controls the money until it is withdrawn. The cost on the way in is the missing federal deduction, since contributions are not deductible.\n\nPlans come in two basic types, prepaid tuition plans and savings plans. Each state has its own plan, and a state may offer both types. The [U.S. Securities and Exchange Commission (SEC)](https://www.investor.gov/introduction-investing/investing-basics/glossary/529-plans) says that states, state agencies or educational institutions sponsor 529 plans. All 50 states and the District of Columbia sponsor at least one type.\n\nA group of private colleges and universities sponsors a prepaid tuition plan. The SEC does not regulate or oversee 529 plans, and the IRS says you are not restricted to your own state's plan and should compare features."
+      },
+      {
+        "heading": "The Cost and Limit of Each 529 Plan Downside",
+        "body": "A 529 plan has five downsides, and each one comes with a cost and a rule that limits it.\n\n| Downside | What it costs | What limits the cost |\n|---|---|---|\n| No federal deduction | Contributions are not deductible federally | Earnings still come out federally tax free for qualified expenses |\n| Non-qualified withdrawals | Earnings are taxed as income plus a 10% additional tax | Contributions come back as a return of investment, and several exceptions waive the 10% |\n| Contribution ceiling | Contributions cannot exceed what the beneficiary's qualified expenses need | Leftover money can move to a family member, a Roth IRA or student loans |\n| Plans set by each state | Plan features differ from state to state | You are not restricted to your own state's plan |\n| Narrow expense rules | Only qualified expenses get tax-free treatment, with caps on room and board and K-12 tuition | The list includes computers, apprenticeship costs and up to $10,000 of student loans |\n\nThe missing deduction applies to your federal return. State treatment of contributions varies by state, and our [529 plan tax deduction by state](/guides/529-plan-tax-deduction-by-state/) guide covers it. The IRS also notes that your own state's plan may offer incentives.\n\nThe non-qualified withdrawal cost falls only on earnings. Publication 970 treats the part of a withdrawal that represents what you paid in as a return of investment, which is not included in income. Form 1099-Q splits every withdrawal into earnings in box 2 and basis in box 3.\n\nThe contribution ceiling also answers when to stop adding money: contributions cannot go beyond what the beneficiary's qualified education expenses need. If your 529 contributions plus other gifts to one beneficiary pass $19,000 in a year, there may be gift tax consequences. The Form 709 instructions describe a special rule for 529 plans.\n\nOnly qualified expenses get the tax-free treatment. [IRS Topic 313](https://www.irs.gov/taxtopics/tc313) and Publication 970 list them:\n\n- Tuition and fees.\n- Books, supplies and equipment.\n- Room and board for students enrolled at least half-time, capped at the greater of the school's cost-of-attendance room and board allowance or the actual amount charged for school-owned housing.\n- Computer equipment, software and internet access used primarily by the beneficiary while enrolled.\n- Fees, books, supplies and equipment for registered apprenticeship programs.\n- Certain postsecondary credentialing expenses.\n- Up to $10,000 lifetime of principal or interest on qualified student loans of the beneficiary or a sibling.\n- Kindergarten through 12th grade (K-12) tuition and certain other expenses at an eligible elementary or secondary school, up to $20,000 per year from all of the beneficiary's QTPs.\n\nThe K-12 limit was $10,000 before Dec. 31, 2025. A withdrawal larger than the beneficiary's AQEE makes part of the earnings taxable, using the same formula as the IRS example above. Our guide to [529 qualified expenses](/guides/529-qualified-expenses/) goes through each item."
+      },
+      {
+        "heading": "When the 10% Additional Tax Does Not Apply",
+        "body": "Publication 970 lists these situations where the 10% additional tax does not apply, although the earnings share of the withdrawal can still be taxed as income:\n\n- The withdrawal is paid on or after the death of the beneficiary.\n- The beneficiary is disabled.\n- The withdrawal is included in income because the beneficiary received a tax-free scholarship, veterans' educational assistance, employer educational assistance or other tax-free educational assistance.\n- The beneficiary attends a U.S. military academy, up to the costs of advanced education.\n- The withdrawal is included in income only because the expenses were used for the American opportunity credit or the lifetime learning credit.\n\nFor the scholarship and educational assistance exception, the waiver covers only an amount up to that assistance. Its earnings share is still taxed as income.\n\nIn the second IRS example, claiming the American opportunity credit on the same expenses raised taxable earnings from $18 to $735."
+      },
+      {
+        "heading": "Options for a 529 the Child Does Not Use",
+        "body": "If the child does not use the 529, the money has five routes to try before a taxable withdrawal:\n\n- Change the beneficiary to a member of the beneficiary's family, which has no income tax consequences.\n- Roll the money within 60 days into another QTP for the same beneficiary or a family member.\n- Roll it within 60 days into an Achieving a Better Life Experience (ABLE) account for the beneficiary or a family member, up to the ABLE annual limit.\n- Roll the money into the beneficiary's Roth individual retirement account (IRA), under the conditions listed below.\n- Pay up to $10,000 lifetime of principal or interest on the beneficiary's or a sibling's qualified student loans.\n\nPublication 970 counts these as family:\n\n- The beneficiary's spouse.\n- Children (step, foster and adopted included) and their descendants.\n- Brothers and sisters (half and step included).\n- Parents and ancestors.\n- Stepparents.\n- Nieces and nephews.\n- Aunts and uncles.\n- In-laws.\n- First cousins.\n- Spouses of any of these.\n\nFor a QTP-to-QTP rollover that keeps the same beneficiary, generally only one is allowed within 12 months.\n\nThe Roth IRA rollover has six conditions:\n\n- The money goes to the 529 beneficiary's own Roth IRA.\n- The distribution happens after Dec. 31, 2023.\n- The move is a direct trustee-to-trustee transfer.\n- Each rollover counts against the Roth IRA annual contribution limit, and the lifetime total is $35,000.\n- The 529 account has been open at least 15 years.\n- The amount cannot exceed what was contributed to the 529 before the 5-year period ending on the date of the distribution, plus the earnings on those contributions.\n\nThe student loan route has its own catch. Interest paid with 529 money does not qualify for the student loan interest deduction, so the same interest cannot get both tax breaks.\n\nIf none of those routes fit, a non-qualified withdrawal returns contributions untaxed and taxes the earnings share as income. The 10% additional tax applies on top unless one of the exceptions above covers it. Our guide to [what happens to leftover 529 money](/guides/529-leftover-money-options/) walks through each route in more detail."
+      },
+      {
+        "heading": "Deciding Whether a 529 Plan Is Worth It",
+        "body": "The tax rules favor a 529 plan most when the money is likely to reach qualified education expenses. The federal benefit comes only through tax-free earnings on those expenses, so the decision turns on how likely that use is.\n\nThe rules line up well when:\n\n- The beneficiary is likely to have qualified expenses such as tuition, room and board, or registered apprenticeship costs.\n- You want the account owner to control the money until it is withdrawn.\n- You want room to switch the beneficiary within the family without income tax.\n- There are years before enrollment for earnings to build up.\n\nThe rules work against a 529 when:\n\n- You want a federal deduction for contributing, which 529 contributions do not get.\n- The money may go to non-education spending, where earnings owe income tax plus the 10% additional tax.\n- The student is already enrolled, so the account may not build enough earnings to be of immediate benefit.\n- You want to put in more than the beneficiary's qualified expenses need, which the contribution ceiling does not allow.\n\nYour own state's plan may offer incentives. If the beneficiary may not have qualified expenses for years, the exit routes carry more weight. The Roth IRA rollover caps at $35,000 for life and needs a 15-year-old account."
+      },
+      {
+        "heading": "Related 529 Comparisons and Guides",
+        "body": "Each comparison below puts a 529 plan beside one other account:\n\n- [529 vs brokerage account](/compare/529-vs-brokerage-account/)\n- [529 vs Uniform Transfers to Minors Act (UTMA) account](/compare/529-vs-utma/)\n- [529 vs Roth IRA](/compare/529-vs-roth-ira/)\n- [529 vs Coverdell education savings account (ESA)](/compare/529-vs-coverdell-esa/)\n- [Trump Account vs 529](/compare/trump-account-vs-529/)\n- [Custodial Roth IRA vs 529](/compare/custodial-roth-ira-vs-529/)\n\nFor how a 529 can be invested as the beneficiary gets older, see our [529 investment strategy by age](/guides/529-investment-strategy-by-age/) guide.\n\nTo see whether a 529 plan is worth it on your own timeline, run your numbers through the [529 savings calculator](/529-savings-calculator/), then weigh the result against the tax rules above."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/529-savings-calculator/",
+        "label": "529 savings calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the downside of a 529 plan?",
+        "answer": "The main downsides are the missing federal deduction and the cost of non-qualified withdrawals. Contributions are not deductible on your federal return, and earnings withdrawn for non-qualified spending are taxed as income plus a 10% additional tax. Contributions also cannot exceed what the beneficiary's qualified expenses need, and caps apply to room and board and to K-12 tuition."
+      },
+      {
+        "question": "What happens to a 529 if the child doesn't go to college?",
+        "answer": "The money stays under the account owner's control and has several routes. The beneficiary can be changed to a member of the beneficiary's family with no income tax, or the money can be rolled to another family member's 529. Up to $35,000 over a lifetime can move to the beneficiary's Roth IRA if the account has been open at least 15 years and the other conditions are met. Up to $10,000 lifetime can pay qualified student loans. Registered apprenticeship costs also count as qualified expenses. A non-qualified withdrawal returns contributions untaxed, while the earnings are taxed as income plus the 10% additional tax unless an exception applies."
+      },
+      {
+        "question": "Who owns the money in a 529 account?",
+        "answer": "The person who buys the plan controls the money. The IRS says whoever purchases the plan is the custodian and controls the funds until they are withdrawn. The beneficiary is the person the money is meant for, and changing the beneficiary to a family member has no income tax consequences."
+      },
+      {
+        "question": "Can a child have multiple 529 plans?",
+        "answer": "Yes. The IRS says there is no limit on the number of 529 plans you can set up, and each account names one designated beneficiary. The $20,000 annual K-12 limit counts withdrawals from all of the beneficiary's plans together."
+      },
+      {
+        "question": "Are 529 contributions tax deductible?",
+        "answer": "Not on your federal return. IRS Publication 970 says you cannot deduct payments or contributions to a qualified tuition program, and the IRS 529 Q&A repeats that contributions are not deductible. State treatment of contributions varies by state."
+      },
+      {
+        "question": "What can 529 funds be used for?",
+        "answer": "529 funds can pay qualified education expenses tax free. That list covers tuition and fees, books, supplies and equipment, room and board for students enrolled at least half-time (up to a cap), and computer equipment, software and internet access used primarily by the beneficiary while enrolled. It also covers registered apprenticeship costs, certain credentialing expenses, up to $10,000 lifetime of qualified student loans, and up to $20,000 per year of K-12 tuition."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS - Publication 970, Tax Benefits for Education",
+        "url": "https://www.irs.gov/publications/p970"
+      },
+      {
+        "label": "IRS - Topic 313, Qualified Tuition Programs (QTPs)",
+        "url": "https://www.irs.gov/taxtopics/tc313"
+      },
+      {
+        "label": "IRS - 529 Plans: Questions and Answers",
+        "url": "https://www.irs.gov/newsroom/529-plans-questions-and-answers"
+      },
+      {
+        "label": "SEC Investor.gov - 529 Plans",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/529-plans"
+      }
+    ]
+  },
   // ── mindmap-pass 2026-10-11 (trend-lane-c, mortgage types): types-of-mortgage-loans ──
   {
     "updated": "2026-10-11",
@@ -6930,6 +7020,7 @@ export const GUIDES: Guide[] = [
 
   // Kids-accounts autocomplete pass (2026-07-04) — 7 guides
   {
+    updated: "2026-10-12",
     slug: "529-leftover-money-options",
     title: "What Happens to Leftover 529 Money",
     metaDescription: "Have 529 leftover money? You can change the beneficiary, roll up to $35,000 to a Roth IRA, use it for grad school, or withdraw it. Here are all 5 options.",
@@ -6959,7 +7050,7 @@ export const GUIDES: Guide[] = [
       },
       {
         heading: "How to choose the right option",
-        body: "Rank the options by tax cost. Keeping the money inside a 529 — by changing the beneficiary, spending it on more school, or rolling it to a Roth IRA — preserves the tax break entirely. A non-qualified withdrawal is the only path that triggers tax and a penalty, and even then only on earnings.\n\nA simple decision rule: if anyone in the family will ever need education funds, keep the account and switch the beneficiary. If not, use the Roth rollover first, then withdraw the rest.\n\nDeciding how much to put in up front? Model it with our [529 savings calculator](/529-savings-calculator/), or step back to the [best investment account for kids](/guides/best-investment-account-for-kids/) to compare 529s with other options."
+        body: "Rank the options by tax cost. Keeping the money inside a 529 — by changing the beneficiary, spending it on more school, or rolling it to a Roth IRA — preserves the tax break entirely. A non-qualified withdrawal is the only path that triggers tax and a penalty, and even then only on earnings.\n\nA simple decision rule: if anyone in the family will ever need education funds, keep the account and switch the beneficiary. If not, use the Roth rollover first, then withdraw the rest.\n\nDeciding how much to put in up front? Model it with our [529 savings calculator](/529-savings-calculator/), or step back to the [best investment account for kids](/guides/best-investment-account-for-kids/) to compare 529s with other options. Still deciding whether a 529 fits at all? [Is a 529 plan worth it?](/guides/is-a-529-plan-worth-it/) weighs the downsides against the tax break."
       }
     ],
     tools: [
@@ -16314,7 +16405,7 @@ export const GUIDES: Guide[] = [
     "metaDescription": "Learn what is a Pell Grant, who qualifies, how much it pays for 2026-27, and how to apply for federal aid money you do not need to pay back.",
     "h1": "What Is a Pell Grant?",
     "cardBlurb": "Federal Pell Grants provide up to $7,395 for college undergraduate costs without repayment requirements.",
-    "introText": "A Federal Pell Grant is federal student aid awarded to undergraduate students with exceptional financial need that generally does not have to be repaid. At The Modern Wallet, we build tools and write guides to help students evaluate college funding without taking on unnecessary debt. The grant pays up to $7,395 for the 2026-27 award year, and you qualify automatically when you submit the Free Application for Federal Student Aid (FAFSA). Because this aid acts like cash rather than a debt burden, securing it early changes how much you need to borrow from private or federal loan programs.",
+    "introText": "A Federal Pell Grant is federal student aid awarded to undergraduate students with exceptional financial need that generally does not have to be repaid. At ModernWallet, we build tools and write guides to help students evaluate college funding without taking on unnecessary debt. The grant pays up to $7,395 for the 2026-27 award year, and you qualify automatically when you submit the Free Application for Federal Student Aid (FAFSA). Because this aid acts like cash rather than a debt burden, securing it early changes how much you need to borrow from private or federal loan programs.",
     "sections": [
       {
         "heading": "What Is a Pell Grant and How It Compares to Loans",
@@ -16404,7 +16495,7 @@ export const GUIDES: Guide[] = [
     "metaDescription": "Compare the main types of student loans. Learn how subsidized, unsubsidized, Direct PLUS, and private loans work so you can borrow the right way.",
     "h1": "Types of Student Loans: How Federal and Private Options Compare",
     "cardBlurb": "Understand subsidized, unsubsidized, Direct PLUS, and private student loans before you borrow.",
-    "introText": "Student loans split into two broad categories: federal loans funded by the government and private loans issued by banks, credit unions, and online lenders. Picking the wrong category or borrowing out of order can cost you thousands of dollars in avoidable interest charges and leave you without basic repayment safeguards. At The Modern Wallet, we build financial calculators and borrowing guides to help students run the numbers before signing a promissory note. Every borrowing decision should protect your budget during school and after graduation.",
+    "introText": "Student loans split into two broad categories: federal loans funded by the government and private loans issued by banks, credit unions, and online lenders. Picking the wrong category or borrowing out of order can cost you thousands of dollars in avoidable interest charges and leave you without basic repayment safeguards. At ModernWallet, we build financial calculators and borrowing guides to help students run the numbers before signing a promissory note. Every borrowing decision should protect your budget during school and after graduation.",
     "sections": [
       {
         "heading": "The Primary Division Between Federal and Private Borrowing",

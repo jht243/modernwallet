@@ -1,0 +1,561 @@
+{
+ "rows": [
+  {
+   "keyword": "best home loan lenders",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.experian.com",
+    "wallethub.com",
+    "money.usnews.com",
+    "bestcompany.com",
+    "wallethub.com",
+    "themortgagereports.com",
+    "wallethub.com",
+    "www.marketwatch.com",
+    "www.thetruthaboutmortgage.com",
+    "wallethub.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "local_pack": 3,
+    "organic": 20,
+    "people_also_ask": 1,
+    "people_also_search": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Which bank mortgage loan is the best?",
+    "What salary do you need for a $400,000 mortgage?",
+    "What is a mortgage broker?",
+    "What is the best loan for buying a house?",
+    "What not to tell a mortgage lender?",
+    "Can I afford a $300 k house on a $70 k salary?"
+   ],
+   "related_searches": [
+    "Best home loan lenders in the world",
+    "Best home loan lenders in usa",
+    "Best mortgage lenders for first-time buyers",
+    "Rocket Mortgage",
+    "Top 10 mortgage companies in USA",
+    "Top 50 mortgage companies in USA",
+    "Best mortgage lenders in PA for first-time buyers",
+    "Top online mortgage lenders"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "no entrenched incumbents or SERP features detected",
+   "se_results_count": 112
+  },
+  {
+   "keyword": "best mortgage lenders",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.forbes.com",
+    "wallethub.com",
+    "www.zillow.com",
+    "money.usnews.com",
+    "wallethub.com",
+    "www.scotsmanguide.com",
+    "bestcompany.com",
+    "wallethub.com",
+    "www.marketwatch.com",
+    "smartasset.com"
+   ],
+   "major_domains": [
+    "www.forbes.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "local_pack": 3,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What salary do you need for a $400,000 mortgage?",
+    "Will mortgage rates get to 4% in 2026?",
+    "What are the current 30-year mortgage interest rates?",
+    "Which bank mortgage loan is the best?",
+    "Who are the top 5 mortgage lenders?",
+    "What is a red flag in a mortgage?",
+    "What should you not tell a mortgage lender?",
+    "What looks bad on bank statements for a mortgage?"
+   ],
+   "related_searches": [
+    "Best mortgage lenders near me",
+    "Best mortgage lenders in usa",
+    "Best mortgage lenders in california",
+    "Best mortgage lenders for first-time buyers",
+    "Rocket Mortgage",
+    "Best mortgage lenders 2025",
+    "Best mortgage lenders in michigan",
+    "Top 10 mortgage companies in USA",
+    "Reddit best mortgage lenders",
+    "Best mortgage loans",
+    "Best mortgage lenders reddit 2025"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (www.forbes.com); AI Overview present",
+   "se_results_count": 117
+  },
+  {
+   "keyword": "will online",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.freewill.com",
+    "www.marketwatch.com",
+    "www.freewill.com",
+    "www.completewills.com",
+    "trustandwill.com",
+    "www.senioradvisor.com",
+    "www.youtube.com",
+    "www.uslegalwills.com",
+    "trustandwill.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the typical cost of creating a will in Texas?",
+    "How to write a legal will?",
+    "What is the biggest mistake with wills?",
+    "When should I write a will?",
+    "What should you not put in a will?",
+    "Who cannot be a beneficiary of a will?"
+   ],
+   "related_searches": [
+    "Free will online",
+    "Instant Will online",
+    "Can I write my own will and have it notarized",
+    "Joint will online",
+    "Free will",
+    "How to write a will",
+    "Online will reviews",
+    "Will format",
+    "Online will and poa"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 115
+  },
+  {
+   "keyword": "custodial account vs savings account",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.fidelity.com",
+    "www.reddit.com",
+    "www.chase.com",
+    "www.schwab.com",
+    "www.pnc.com",
+    "dfhlaw.com",
+    "www.bergerfinancialgroup.com",
+    "www.schwabmoneywise.com",
+    "www.investopedia.com",
+    "www.synchrony.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are the downsides of a custodial account?",
+    "Is a 529 better than a savings account for a child?",
+    "Do parents pay taxes on custodial accounts?",
+    "What is the best way to put money away for kids?",
+    "What is the best way to invest $1000 for your child?",
+    "At what age should you have $100,000 saved?"
+   ],
+   "related_searches": [
+    "Custodial account vs savings account vs brokerage account",
+    "Custodial account vs savings account reddit",
+    "Custodial account vs savings account taxes",
+    "Custodial account vs savings account pros and cons",
+    "Custodial account vs savings account fidelity",
+    "Custodial account vs 529",
+    "Fidelity custodial account",
+    "Types of custodial accounts"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 131
+  },
+  {
+   "keyword": "529 vs brokerage account",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.savingforcollege.com",
+    "www.farther.com",
+    "www.morningstar.com",
+    "blog.acadviser.com",
+    "slpwealth.com",
+    "www.cnbc.com",
+    "www.youtube.com",
+    "useorigin.com",
+    "www.investopedia.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.farther.com",
+    "www.savingforcollege.com",
+    "slpwealth.com",
+    "useorigin.com",
+    "www.morningstar.com",
+    "blog.acadviser.com",
+    "districtcapitalmanagement.com",
+    "www.facebook.com",
+    "augustuswealth.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the downside of a 529 plan?",
+    "What does Dave Ramsey say about 529?",
+    "How much money should a 5 year old have in 529?",
+    "Why are people boycotting 529 plans?",
+    "What happens to 529 when a child turns 21?",
+    "Is there a better alternative to a 529 plan?"
+   ],
+   "related_searches": [
+    "529 vs brokerage account reddit",
+    "Best 529 vs brokerage account",
+    "Fidelity 529 vs brokerage account",
+    "529 vs brokerage account calculator",
+    "529 account",
+    "529 vs Roth IRA",
+    "Best 529 plans",
+    "529 vs ETF"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com) incl. #1; AI Overview present, cites www.savingforcollege.com, www.farther.com, www.morningstar.com, blog.acadviser.com",
+   "se_results_count": 131
+  },
+  {
+   "keyword": "roth 401k versus traditional 401k",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.fidelity.com",
+    "www.irs.gov",
+    "www.benefits.ml.com",
+    "www.johnsonfinancialgroup.com",
+    "www.mutualofamerica.com",
+    "www.schwab.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.benefits.ml.com",
+    "www.umcu.org",
+    "www.fidelity.com",
+    "www.irs.gov",
+    "www.johnsonfinancialgroup.com",
+    "www.mutualofamerica.com",
+    "www.empower.com",
+    "www.schwab.com",
+    "www.nerdwallet.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How much will $20,000 in 401k be worth in 20 years?",
+    "What is the downside of a Roth 401k?",
+    "What does Dave Ramsey say about Roth 401(k)?",
+    "At what salary should you not use a Roth 401(k)?",
+    "Can I max out my 401k and Roth 401k in the same year?",
+    "How many Americans have $1,000,000 in their 401k?"
+   ],
+   "related_searches": [
+    "Roth 401k versus traditional 401k reddit",
+    "Roth vs traditional 401k calculator",
+    "Roth 401k versus traditional 401k withdrawal",
+    "Why Roth 401k is bad",
+    "Roth 401k versus traditional 401k fidelity",
+    "Roth 401k versus traditional 401k taxes",
+    "Roth 401k versus traditional 401k 2021",
+    "Roth 401k vs Roth IRA"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com) incl. #1; AI Overview present, cites www.fidelity.com, www.irs.gov, www.benefits.ml.com, www.johnsonfinancialgroup.com",
+   "se_results_count": 107
+  },
+  {
+   "keyword": "are trump accounts for kids a scam",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.irs.gov",
+    "www.mapscu.com",
+    "www.facebook.com",
+    "eshelcpa.com",
+    "mackecpas.com",
+    "www.jessietax.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.usatoday.com",
+    "www.reddit.com",
+    "eshelcpa.com",
+    "www.mapscu.com",
+    "www.facebook.com",
+    "www.jessietax.com",
+    "www.instagram.com",
+    "www.thepinpointpress.com",
+    "neal.house.gov",
+    "www.facebook.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "How do I know if my kid gets a Trump account?",
+    "Who is funding the Trump child account?",
+    "Are Trump accounts actually called Trump accounts?",
+    "How to claim Trump account for baby?",
+    "Are the Trump accounts legal?",
+    "What is the best way to invest $1000 for a child?"
+   ],
+   "related_searches": [
+    "Trump account for kids",
+    "Trump account for older kids $250",
+    "Who is eligible for Trump Accounts",
+    "Trump account app",
+    "Trump account fine print",
+    "Is Trump account worth it",
+    "What is the official website for Trump Accounts",
+    "Trump Account login"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com); AI Overview present, cites www.irs.gov, www.mapscu.com, www.facebook.com, eshelcpa.com",
+   "se_results_count": 20400000
+  },
+  {
+   "keyword": "chase ultimate rewards points to dollars conversion",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "www.chase.com",
+    "thepointsguy.com",
+    "www.cnbc.com",
+    "www.cardonomics.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.nerdwallet.com",
+    "www.chase.com",
+    "www.chase.com",
+    "www.reddit.com",
+    "www.thepointcalculator.com",
+    "thepointsguy.com",
+    "awardtravelfinder.com",
+    "wallethub.com",
+    "www.cnbc.com",
+    "www.forbes.com"
+   ],
+   "major_domains": [
+    "www.forbes.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How much are 50,000 Chase points worth in dollars?",
+    "How much are 100,000 Chase points worth in dollars?",
+    "How much are 20,000 Chase Ultimate Rewards points worth?",
+    "Is 500,000 Chase points a lot?",
+    "How often does Chase Sapphire offer 100,000 points?",
+    "What to do with 250000 Chase points?"
+   ],
+   "related_searches": [
+    "How much is 10,000 Chase points worth",
+    "Chase ultimate rewards points to dollars conversion review",
+    "100,000 Chase points to dollars",
+    "Chase points value calculator",
+    "125,000 Chase points to dollars",
+    "$1,000 Chase points to dollars",
+    "How to calculate Chase points to dollars",
+    "120000 Chase points to dollars"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (www.forbes.com); AI Overview present, cites www.nerdwallet.com, www.chase.com, thepointsguy.com, www.cnbc.com",
+   "se_results_count": 101
+  },
+  {
+   "keyword": "best home loan",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.usbank.com",
+    "money.usnews.com",
+    "www.bankrate.com",
+    "money.usnews.com",
+    "www.creditkarma.com",
+    "www.nerdwallet.com",
+    "www.fool.com",
+    "better.com",
+    "www.loanry.com",
+    "www.nerdwallet.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "What salary do you need for a $400,000 mortgage?",
+    "What is the current interest rate for home loans?",
+    "How can I lower my mortgage rate?",
+    "Which bank mortgage loan is the best?",
+    "Who are the top 5 mortgage lenders?",
+    "What is a red flag in a mortgage?"
+   ],
+   "related_searches": [
+    "Best home loan reddit",
+    "Best home loan calculator",
+    "Best home loan 2022",
+    "Best mortgage lenders for first-time buyers",
+    "Best home loan company",
+    "10 year mortgage calculator",
+    "Interest rates today: 30-year fixed",
+    "10-year home loan rates"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "AI Overview present",
+   "se_results_count": 102
+  },
+  {
+   "keyword": "make a will online",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.freewill.com",
+    "www.redcross.org",
+    "www.cnbc.com",
+    "trustandwill.com",
+    "www.statefarm.com",
+    "www.rocketlawyer.com",
+    "michiganlegalhelp.org",
+    "www.legalzoom.com",
+    "www.aarp.org",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "people_also_search": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Are online wills legitimate?",
+    "Can I legally make a will online?",
+    "Do online wills hold up in court?",
+    "Can I create a will without a lawyer?",
+    "What is the biggest mistake with wills?",
+    "Who inherits if there is no will?"
+   ],
+   "related_searches": [
+    "Make a will online free",
+    "Can I write my own will and have it notarized",
+    "How to make a will without a lawyer",
+    "Free online will and trust",
+    "Best online will maker",
+    "Make a will online reddit",
+    "Best free online will maker",
+    "AARP free will forms"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 132
+  }
+ ],
+ "cost": "DataForSEO: 10 calls, $0.04150 of $2.00 budget"
+}

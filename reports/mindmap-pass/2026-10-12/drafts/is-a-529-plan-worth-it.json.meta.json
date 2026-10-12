@@ -1,0 +1,395 @@
+{
+ "slug": "is-a-529-plan-worth-it",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 2642,
+ "floor": 1200,
+ "input_tokens": 30502,
+ "output_tokens": 21943,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.5609,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2680,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    9,
+    1
+   ],
+   "applied": [
+    {
+     "id": "sections[1].body",
+     "quote": "That control means the owner decides when withdrawals happen and, within the family rules covered below, who the beneficiary is.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE says the custodian controls funds; it never says the owner picks beneficiaries"
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The SEC does not regulate or oversee 529 plans, so each plan's sponsor sets its terms, and the IRS tells savers to compare plan features before picking one.",
+     "replacement": "The SEC does not regulate or oversee 529 plans, and the IRS says you are not restricted to your own state's plan and should compare features.",
+     "type": "inference",
+     "why": "SOURCE never says sponsors set terms because the SEC does not regulate"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Contributions go in with money already taxed",
+     "replacement": "Contributions are not deductible federally",
+     "type": "inference",
+     "why": "SOURCE only says contributions are not deductible federally"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Form 1099-Q splits every withdrawal into earnings in box 2 and basis in box 3, so you can see the taxable portion before you file.",
+     "replacement": "Form 1099-Q splits every withdrawal into earnings in box 2 and basis in box 3.",
+     "type": "inference",
+     "why": "SOURCE gives the box split only, not a filing-timing use"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Claiming the American opportunity credit on the same expenses raised taxable earnings from $18 to $735, and that increase came only from using the expenses for the credit, so it falls under this exception.",
+     "replacement": "In that example, claiming the American opportunity credit on the same expenses raised taxable earnings from $18 to $735.",
+     "type": "inference",
+     "why": "SOURCE never applies the exception to Pub. 970 example 2"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "A state income tax deduction, where your state offers one, adds a benefit on the way in that the federal rules lack.",
+     "replacement": "Your own state's plan may offer incentives.",
+     "type": "unsupported",
+     "why": "State tax deductions are on the NOT FOUND list"
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Each comparison below puts a 529 plan beside one other account, which helps if the education use is still uncertain:",
+     "replacement": "Each comparison below puts a 529 plan beside one other account:",
+     "type": "unsupported",
+     "why": "Use-case claim about the comparisons is not in SOURCE"
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "The owner can change the beneficiary to a member of the beneficiary's family with no income tax, or roll the money to another family member's 529.",
+     "replacement": "The beneficiary can be changed to a member of the beneficiary's family with no income tax, or the money can be rolled to another family member's 529.",
+     "type": "inference",
+     "why": "SOURCE does not say who changes the beneficiary"
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "The beneficiary is the person the money is meant for, and the owner can change the beneficiary to a family member without income tax.",
+     "replacement": "The beneficiary is the person the money is meant for, and changing the beneficiary to a family member has no income tax consequences.",
+     "type": "inference",
+     "why": "SOURCE does not say the owner is the one who changes beneficiaries"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "A 529 plan has five downsides, and each one comes with a dollar cost and a rule that limits it.",
+     "replacement": "A 529 plan has five downsides, and each one comes with a cost and a rule that limits it.",
+     "type": "inference",
+     "why": "Not every listed downside has a dollar cost in SOURCE."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2754
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-12T07:23:19+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-12/audit/is-a-529-plan-worth-it.findings.txt",
+    "applied": [
+     {
+      "id": "sections[0].body",
+      "quote": "Every dollar of earnings that reaches a qualified expense skips federal income tax.",
+      "replacement": "The share of earnings that is tax free tracks adjusted qualified education expenses (AQEE) as a fraction of the withdrawal: earnings above that share are taxed as income and generally owe the extra 10%, unless an exception applies.",
+      "type": "1: overstatement of tax-free earnings",
+      "why": "Pub. 970 makes earnings tax free pro rata by the AQEE ratio, and the 10% has exceptions."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Every dollar of earnings that misses one is taxed as income and generally owes the extra 10%.",
+      "replacement": "",
+      "type": "1: overstatement of tax-free earnings",
+      "why": "The replacement sentence above already covers this point."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "and five exceptions waive the 10%",
+      "replacement": "and several exceptions waive the 10%",
+      "type": "2: fixed count of exceptions",
+      "why": "Use the auditor's wording instead of a fixed count."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Publication 970 lists five situations where the 10% additional tax does not apply",
+      "replacement": "Publication 970 lists these situations where the 10% additional tax does not apply",
+      "type": "2b: fixed count of exceptions",
+      "why": "Use the auditor's wording instead of a fixed count."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "The credit exception fits the second IRS example. In that example, claiming",
+      "replacement": "In the second IRS example, claiming",
+      "type": "3: inference applying exception to example 2",
+      "why": "The source does not apply the exception to example 2. The next sentence keeps its referent."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "the money has four tax-free routes to try before a taxable withdrawal",
+      "replacement": "the money has four routes to try before a taxable withdrawal",
+      "type": "4: tax-free routes overstatement",
+      "why": "Remove the unsupported 'tax-free' label from the routes."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "has several tax-free routes",
+      "replacement": "has several routes",
+      "type": "4: tax-free routes overstatement (FAQ 2)",
+      "why": "Remove the unsupported 'tax-free' label from the routes."
+     },
+     {
+      "id": "introText",
+      "quote": ", so this one works through the Internal Revenue Service (IRS) examples line by line.",
+      "replacement": ".",
+      "type": "6: narrates the page; 5: unlinked IRS",
+      "why": "End the sentence at 'starts from the math'. The IRS link now sits at its first linked mention."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "A beneficiary who stays unlikely to have qualified expenses for many years shifts the weight onto the escape routes and their limits, such as the $35,000 Roth IRA ceiling and the 15-year account age.",
+      "replacement": "If the beneficiary is unlikely to have qualified expenses for many years, more depends on the escape routes and their limits, such as the Roth IRA rollover's $35,000 lifetime ceiling and 15-year account age.",
+      "type": "7: awkward wording",
+      "why": "Plainer phrasing with the same supported limits."
+     },
+     {
+      "id": "title",
+      "quote": "Is a 529 Plan Worth It if the Money Might Go Unused?",
+      "replacement": "Is a 529 Plan Worth It If the Money Might Go Unused?",
+      "type": "8: title case",
+      "why": "Capitalize 'If' in title case."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "is the entire federal benefit",
+      "replacement": "is the federal benefit",
+      "type": "advisory: 'entire federal benefit'",
+      "why": "Drop the absolute intensifier."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "since the earnings are the whole federal benefit",
+      "replacement": "since the earnings are the federal benefit",
+      "type": "advisory: 'whole federal benefit'",
+      "why": "Drop the absolute intensifier."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "IRS example 1, qualified withdrawal of $5,300",
+      "replacement": "IRS example 1, withdrawal of $5,300 against $5,200 of AQEE",
+      "type": "advisory: table row label",
+      "why": "The withdrawal exceeded AQEE, so it was not fully qualified."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[0].body",
+      "quote": "[IRS Publication 970](https://www.irs.gov/publications/p970)",
+      "finding": "5: first IRS mention linked and expanded",
+      "why": "Expand the acronym at the first linked IRS mention, now that the intro mention is removed.",
+      "replacement": "[Internal Revenue Service (IRS) Publication 970](https://www.irs.gov/publications/p970)",
+      "reason": "replacement adds ['Service'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "deleted_final": 0,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 2667,
+    "flags": []
+   },
+   {
+    "round": 2,
+    "at": "2026-10-12T07:25:50+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-12/audit/is-a-529-plan-worth-it.findings2.txt",
+    "applied": [
+     {
+      "id": "title",
+      "quote": "Is a 529 Plan Worth It If the Money Might Go Unused?",
+      "replacement": "Is a 529 Plan Worth It? The Break-Even Math",
+      "type": "1. title rule",
+      "why": "Title should lead with the primary keyword and break-even framing."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Two facts can move this read. Your own state's plan may offer incentives. If the beneficiary is unlikely to have qualified expenses for many years, more depends on the escape routes and their limits, such as the Roth IRA rollover's $35,000 lifetime ceiling and 15-year account age.",
+      "replacement": "Your own state's plan may offer incentives. If the beneficiary may not have qualified expenses for years, the exit routes carry more weight. The Roth IRA rollover caps at $35,000 for life and needs a 15-year-old account.",
+      "type": "2. overloaded, \"Two facts\" wrong",
+      "why": "Split the overloaded sentence and drop the wrong count framing."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "The share of earnings that is tax free tracks adjusted qualified education expenses (AQEE) as a fraction of the withdrawal: earnings above that share are taxed as income and generally owe the extra 10%, unless an exception applies.",
+      "replacement": "The tax-free share of earnings equals AQEE divided by the withdrawal. The rest is taxed as income and generally owes the extra 10%, unless an exception applies.",
+      "type": "3. 38 words, re-expands AQEE",
+      "why": "Shorten the sentence and use the AQEE abbreviation already defined."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "The $4,000 of earnings is added to your income and taxed at your ordinary rate, the 10% additional tax on it is $400, and the $6,000 of contributions comes back untaxed.",
+      "replacement": "The $4,000 of earnings is added to your income and taxed at your ordinary rate. The 10% additional tax on it is $400. The $6,000 of contributions comes back untaxed.",
+      "type": "4. run-on sentence",
+      "why": "Split the comma-spliced list into separate sentences."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      2
+     ],
+     "applied": [
+      {
+       "id": "introText",
+       "quote": "At ModernWallet, we build free calculators and plain-language money guides, and every guide we write starts from the math.",
+       "replacement": "At The Modern Wallet, we build free calculators and plain-language money guides, and every guide we write starts from the math.",
+       "type": "unsupported",
+       "why": "Site self-description names the site The Modern Wallet, not ModernWallet"
+      },
+      {
+       "id": "faqs[5].answer",
+       "quote": "That list covers tuition and fees, books, supplies and equipment, room and board for students enrolled at least half-time (up to a cap), and computer equipment, software and internet access used by the beneficiary while enrolled.",
+       "replacement": "That list covers tuition and fees, books, supplies and equipment, room and board for students enrolled at least half-time (up to a cap), and computer equipment, software and internet access used primarily by the beneficiary while enrolled.",
+       "type": "unsupported",
+       "why": "SOURCE requires computer items be used primarily by the beneficiary"
+      }
+     ],
+     "deleted_final": 2,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 2645,
+    "flags": [
+     "emptied by the claim check (nothing in the fact list could carry it): ['Is a 529 Plan Worth It? The Break-Even', 'Tax-Free Earnings and Owner Control in a 529 Plan', 'The Cost and Limit of Each 529 Plan Downside', 'When the 10% Additional Tax Does Not Apply', 'Options for a 529 the Child Does Not Use'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+    ]
+   },
+   {
+    "round": 3,
+    "at": "2026-10-12T07:28:30+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-12/audit/is-a-529-plan-worth-it.findings3.txt",
+    "applied": [
+     {
+      "id": "sections[4].body",
+      "quote": "Roll the money within 60 days into another QTP for the same beneficiary or a family member, or into an Achieving a Better Life Experience (ABLE) account for the beneficiary or a family member, subject to the ABLE annual limit.",
+      "replacement": "Roll the money within 60 days into another QTP for the same beneficiary or a family member. - Roll it within 60 days into an Achieving a Better Life Experience (ABLE) account for the beneficiary or a family member, up to the ABLE annual limit.",
+      "type": "1: overloaded bullet, split in two",
+      "why": "Two separate rollover routes are packed into one bullet; splitting them makes each route clear."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "the money has four routes to try before a taxable withdrawal:",
+      "replacement": "the money has five routes to try before a taxable withdrawal:",
+      "type": "1: lead-in count must match split",
+      "why": "The split makes five bullets, so the lead-in count must say five."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Publication 970 counts as family the beneficiary's spouse, children (including step, foster and adopted children) and their descendants, brothers and sisters (including half and step siblings), parents and ancestors, stepparents, nieces and nephews, aunts and uncles, in-laws, first cousins, and the spouses of any of these.",
+      "replacement": "Publication 970 counts these as family: - The beneficiary's spouse. - Children (step, foster and adopted included) and their descendants. - Brothers and sisters (half and step included). - Parents and ancestors. - Stepparents. - Nieces and nephews. - Aunts and uncles. - In-laws. - First cousins. - Spouses of any of these.",
+      "type": "2: long family list sentence",
+      "why": "The run-on list reads more clearly as bullets; the content is unchanged."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "According to the U.S. Securities and Exchange Commission (SEC) on [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/glossary/529-plans), 529 plans are sponsored by states, state agencies or educational institutions, and all 50 states and the District of Columbia sponsor at least one type.",
+      "replacement": "The [U.S. Securities and Exchange Commission (SEC)](https://www.investor.gov/introduction-investing/investing-basics/glossary/529-plans) says that states, state agencies or educational institutions sponsor 529 plans. All 50 states and the District of Columbia sponsor at least one type.",
+      "type": "3: SEC sponsor sentence wording",
+      "why": "Puts the link on the SEC name, uses active voice and splits the long sentence."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "It is a weaker fit when the beneficiary may not use the money, since earnings withdrawn for other spending are taxed as income and generally owe a 10% additional tax.",
+      "replacement": "It is a weaker fit when the beneficiary may not use the money. Earnings withdrawn for other spending are taxed as income and generally owe a 10% additional tax.",
+      "type": "4: split verdict sentence",
+      "why": "Splitting the sentence shortens it; the meaning stays the same."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Room and board for students enrolled at least half-time, capped at the greater of the school's cost-of-attendance allowance for room and board or the actual amount charged for school-owned housing.",
+      "replacement": "Room and board for students enrolled at least half-time, capped at the greater of the school's cost-of-attendance room and board allowance or the actual amount charged for school-owned housing.",
+      "type": "5: wordy room and board bullet",
+      "why": "Tightens the phrasing and keeps the source's cost-of-attendance allowance wording."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "The withdrawal is included in income because the beneficiary received a tax-free scholarship, veterans' educational assistance, employer educational assistance or other tax-free educational assistance, up to the amount of that assistance.",
+      "replacement": "The withdrawal is included in income because the beneficiary received a tax-free scholarship, veterans' educational assistance, employer educational assistance or other tax-free educational assistance.",
+      "type": "6: end bullet after assistance list",
+      "why": "Shortens the bullet; the limit moves to the sentence after the list."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "The scholarship exception means a withdrawal up to the amount of a tax-free scholarship avoids the extra 10%.",
+      "replacement": "For the scholarship and educational assistance exception, the waiver covers only an amount up to that assistance.",
+      "type": "6: add limit sentence after list",
+      "why": "Restates the 'only to the extent of the assistance' limit after the list, as the source supports."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "deleted_final": 0,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 2642,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 238.4,
+ "response_id": "msg_011Cfww2pRgoXqMW46XQM36G",
+ "generated_at": "2026-10-12T07:20:01+0000"
+}
