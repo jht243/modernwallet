@@ -746,6 +746,7 @@ def _clipped_strings(node, out=None, where=""):
             _clipped_strings(v, out, f"{where}[{i}]")
     elif isinstance(node, str):
         s = node.strip()
+        s = re.sub(r"[*_`~]+$", "", s).strip()  # ITALIC-END: closing emphasis is not a cut-off
         key = re.sub(r"\[\d+\]", "", where).split(".")[-1].lower()
         if key not in _PROSE_KEYS:
             return out
@@ -780,6 +781,10 @@ def looks_truncated(text: str, json_mode: bool) -> str:
     # CLAUDE-64K-AND-HTML-END (2026-10-10): judge the TEXT, not a closing tag — "...policies.</p>" ends cleanly (it was read as
     # "stops mid-sentence" and a finished section was billed and thrown away).
     last = re.sub(r"(?:\s*</?[A-Za-z][^<>]*>)+\s*$", "", last).strip()
+    # ITALIC-END (2026-10-11): a closing markdown emphasis/code marker is not a cut-off.
+    # "...speak with an attorney licensed in your state.*" ends cleanly (an Opus page was
+    # thrown away for it and Gemini wrote the page instead); judge the text inside the marker.
+    last = re.sub(r"[*_`~]+$", "", last).strip()
     if last.startswith("```") or _TABLE_ROW.match(last) or last.startswith("#") or last.startswith("|"):
         return ""
     if len(last) >= _PROSE_MIN and len(last.split()) >= 10 and not _ENDS_CLEAN.search(last):
