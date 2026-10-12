@@ -57,6 +57,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/investing/", label: "Compare to stock-market returns" },
   ],
   "emergency-fund-calculator": [
+    { href: "/hurricane-deductible-calculator/", label: "Florida homeowner? What a hurricane deductible costs" },
     { href: "/guides/how-much-emergency-fund/", label: "How much emergency fund is enough?" },
     { href: "/cd-calculator/", label: "Model a CD for part of the fund" },
     { href: "/budget/", label: "Find your essential monthly costs" },
@@ -71,6 +72,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/budget/", label: "See where your spending goes" },
   ],
   "social-security-break-even-calculator": [
+    { href: "/guides/2027-social-security-cola/", label: "2027 Social Security COLA: the estimated raise" },
     { href: "/retirement/social-security-retirement-calculator/", label: "Add Social Security to your retirement income" },
     { href: "/guides/is-social-security-taxable/", label: "Is Social Security taxable?" },
     { href: "/retirement/", label: "Project retirement savings" },
@@ -81,6 +83,12 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/templates/mileage-log-template/", label: "Mileage log template" },
     { href: "/guides/irs-mileage-rate-history/", label: "IRS mileage rate history" },
     { href: "/guides/state-mileage-reimbursement-law-california-texas-michigan/", label: "State mileage reimbursement laws" },
+  ],
+  "hurricane-deductible-calculator": [
+    { href: "/emergency-fund-calculator/", label: "How big should your emergency fund be?" },
+    { href: "/guides/how-much-emergency-fund/", label: "How much emergency fund do you need?" },
+    { href: "/budget/", label: "Build a budget that covers a deductible" },
+    { href: "/net-worth/", label: "Track your net worth" },
   ],
   "portfolio-rebalancing-calculator": [
     { href: "/portfolio/60-40-portfolio-calculator/", label: "Check return and risk of a 60/40 mix" },

@@ -61,6 +61,7 @@ import DebtConsolidationCalculator from "./DebtConsolidationCalculator";
 import SocialSecurityBreakEvenCalculator from "./SocialSecurityBreakEvenCalculator";
 import MileageReimbursementCalculator from "./MileageReimbursementCalculator";
 import PortfolioRebalancingCalculator from "./PortfolioRebalancingCalculator";
+import HurricaneDeductibleCalculator from "./HurricaneDeductibleCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -139,6 +140,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "social-security-break-even-calculator": SocialSecurityBreakEvenCalculator,
   "mileage-reimbursement-calculator": MileageReimbursementCalculator,
   "portfolio-rebalancing-calculator": PortfolioRebalancingCalculator,
+  // x-trends pass (2026-10-12): Florida hurricane deductible in dollars, with the calendar-year carryover.
+  "hurricane-deductible-calculator": HurricaneDeductibleCalculator,
   // PTO / leave-days cash-out — competitor-monitor pass (2026-08-17): sell-back payout calculator
   // that also shows an estimated net-of-tax figure and the unpaid-time-off value for comparison.
   "pto-cashout": PtoCashoutCalculator,

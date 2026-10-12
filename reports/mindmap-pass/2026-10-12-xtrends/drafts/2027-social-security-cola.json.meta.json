@@ -1,0 +1,115 @@
+{
+ "slug": "2027-social-security-cola",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1566,
+ "floor": 1000,
+ "input_tokens": 27743,
+ "output_tokens": 15505,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.4211,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['Estimated 2027 Social Security COLA and Its Announcement Date', 'How the Social Security COLA Is Calculated', 'What a 3.5% Raise Looks Like on a $2,000 Check', 'Why the Net Raise Can Look Smaller After Medicare Part B', 'Past Social Security COLAs Compared with the 2027 Estimate'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1566,
+  "numbers_not_in_facts": [
+   "12",
+   "1500",
+   "17.9",
+   "2068",
+   "2072",
+   "38.1",
+   "52.5",
+   "68",
+   "72",
+   "74.56",
+   "816",
+   "864"
+  ],
+  "fact_budget": {
+   "fact_words": 423,
+   "floor": 1000,
+   "ratio": 0.42,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    1
+   ],
+   "applied": [
+    {
+     "id": "sections[1].body",
+     "quote": "CPI-W is the inflation index the BLS releases each month, and the September release is the one that closes out the quarter.",
+     "replacement": "The September CPI-W release is the one that closes out the quarter.",
+     "type": "unsupported",
+     "why": "SOURCE does not say BLS releases CPI-W each month."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "A September reading above 328.481 would push the COLA above that 3.4% baseline, and a lower reading would pull it below.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE gives only the equal-to-August case, not above/below effects."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Every estimate in the 2027 COLA range moves with that single September figure, which arrives on October 14.",
+     "replacement": "The September figure arrives on October 14.",
+     "type": "inference",
+     "why": "Forecasts use projections; SOURCE doesn't say estimates move with actual figure."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If your 2025 MAGI was above the IRMAA thresholds, plan for a premium above the standard amount.",
+     "replacement": "If your 2025 MAGI was above the 2026 IRMAA thresholds, a surcharge could raise your premium above the standard amount.",
+     "type": "inference",
+     "why": "SOURCE gives only 2026 thresholds; 2027 thresholds not listed."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If you are a new Medicare enrollee in 2027 or pay income-related amounts, the hold-harmless rule may not apply to you, so redo the subtraction with the premium on your own Medicare notice.",
+     "replacement": "If you are a new Medicare enrollee in 2027 or pay income-related amounts, the hold-harmless rule may not apply to you, so redo the subtraction with your own premium.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention a Medicare notice"
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1609
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 167.1,
+ "response_id": "msg_011Cfxh9cPxQSVGpwoPkRC3D",
+ "generated_at": "2026-10-12T16:57:22+0000"
+}

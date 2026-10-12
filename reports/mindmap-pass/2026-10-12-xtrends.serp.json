@@ -1,0 +1,135 @@
+{
+ "rows": [
+  {
+   "keyword": "hurricane deductible calculator",
+   "verdict": "unread",
+   "evidence": "SERP read failed: task 40101 Internal SE Server Error.",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "2027 social security cola",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "finance.yahoo.com",
+    "www.al.com",
+    "www.forbes.com",
+    "www.buckeyextra.com",
+    "www.freep.com",
+    "www.nbcchicago.com",
+    "www.newsweek.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.ssa.gov",
+    "finance.yahoo.com",
+    "seniorsleague.org",
+    "www.youtube.com",
+    "www.thestreet.com",
+    "www.cnbc.com",
+    "www.asppa-net.org",
+    "www.facebook.com",
+    "www.investopedia.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.facebook.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Will everyone on Social Security get stimulus?",
+    "What is the highest Social Security monthly payment at age 70?",
+    "Why did I get a $6000 check from Social Security?",
+    "Who will receive $1800 Social Security payment?",
+    "Can a person get Social Security if they have never worked?",
+    "Are seniors getting a stimulus check this month?",
+    "Why did I get a 90.00 check from Social Security?",
+    "Will seniors get a stimulus check in 2026 for social security?"
+   ],
+   "related_searches": [
+    "What is the projected COLA for 2027",
+    "Social Security 2027 COLA increase chart",
+    "SSA COLA 2027 estimate update",
+    "Social Security COLA 2027 disability",
+    "Social Security COLA 2026",
+    "Social Security COLA 2027 estimate calculator",
+    "2027 social security cola increase",
+    "Social Security 2027 COLA increase chart PDF",
+    "Social Security COLA 2027 update",
+    "2027 social security cola announcement"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.youtube.com, www.facebook.com); AI Overview present, cites finance.yahoo.com, www.al.com, www.forbes.com, www.buckeyextra.com",
+   "se_results_count": 104
+  },
+  {
+   "keyword": "social security cola 2027",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "finance.yahoo.com",
+    "www.al.com",
+    "www.forbes.com",
+    "www.buckeyextra.com",
+    "www.freep.com",
+    "www.nbcchicago.com",
+    "www.newsweek.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.psca.org",
+    "seniorsleague.org",
+    "finance.yahoo.com",
+    "finance.yahoo.com",
+    "www.napa-net.org",
+    "www.youtube.com",
+    "www.fool.com",
+    "www.youtube.com",
+    "www.cbsnews.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.youtube.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "What is the projected COLA for 2027",
+    "Social Security 2027 COLA increase chart",
+    "Social Security COLA 2026",
+    "Social Security COLA 2027 estimate update",
+    "Social Security COLA 2027 estimate calculator",
+    "Social Security 2026 COLA increase chart",
+    "Social Security 2027 COLA increase chart PDF",
+    "Social Security COLA 2027 update today",
+    "Social Security COLA 2027 disability"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.youtube.com); AI Overview present, cites finance.yahoo.com, www.al.com, www.forbes.com, www.buckeyextra.com",
+   "se_results_count": 40600000
+  }
+ ],
+ "cost": "DataForSEO: 3 calls, $0.01015 of $2.00 budget"
+}

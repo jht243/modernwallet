@@ -1,0 +1,26 @@
+# ROW DATA (data only; standing rules are in system.md)
+route: /guides/2027-social-security-cola/   slug: 2027-social-security-cola   page type: guide   depth floor: 1000 words
+primary keyword: 2027 social security cola   secondary: social security cola 2027; 2027 cola estimate; social security raise 2027; cost of living adjustment 2027
+intent: informational and time-sensitive; the reader wants to know the likely 2027 raise, when the official number lands, and what they actually keep.
+reader question: "How much will Social Security go up in 2027?"
+answer: Nobody knows yet: the official 2027 COLA is announced October 14, 2026. Forecasters estimate roughly 3.4% to 3.6%, which is about $70 a month on a $2,000 benefit before Medicare Part B.
+answer placement: introText and section 1 "Estimated 2027 COLA and when it is announced"
+Also deliver: say plainly in the intro that these are estimates and that the official figure is announced Wednesday October 14, 2026 at 8:30 a.m. ET with the BLS release of September CPI-W; tell the reader to check the Social Security Administration for the official number (link https://www.ssa.gov/cola/ only for that purpose). Explain how the COLA is computed (CPI-W third quarter vs the prior year's third quarter). Include the net-raise math (Part B). Do not write any sentence that states or implies the official number is known.
+sections to cover: Estimated 2027 COLA and when it is announced; How the COLA is calculated; What a 3.5% raise looks like on a $2,000 check; Why the net raise can look smaller (Medicare Part B, hold harmless, income-related surcharges); Past COLAs for comparison; What to do with the number once it is announced.
+
+## CLOSED FACT LIST (anything not on this list, you do not know. Never invent a figure, date, or URL; if something is unpublished say so and tell the reader to verify with the Social Security Administration.)
+Source A (AARP, "2027 Social Security COLA increase estimate"): AARP projects a 3.6% COLA for 2027, which would raise the average retired worker's benefit by about $75 a month. AARP's forecast uses CPI-W data from October 2025 through August 2026 plus Federal Reserve Bank of Cleveland projections for September. CPI-W rose 3.5 percent in August compared with a year earlier. The 2027 COLA will be announced Oct. 14, after the BLS releases September inflation data, and takes effect with January payments. The COLA is based on how much the CPI-W changes in the third quarter (July, August, September) compared with the same period the prior year.
+Source A, 2026 COLA: 2.8%, effective January 2026, raised the average monthly retired-worker benefit by about $56, from $2,015 to $2,071.
+Source B (24/7 Wall St., Oct 8, 2026): The Senior Citizens League projects a 3.5% 2027 COLA, which the article calls "a forecast rather than an official number." If September's CPI-W equals August's (328.481), the COLA would be roughly 3.4%. The official figure comes after the BLS releases September CPI-W on October 14, 2026 at 8:30 a.m. ET. Prior COLAs: 2.8% (2026), 2.5% (2025), 3.2% (2024).
+Source B, Medicare: most Part B enrollees have the premium deducted from their Social Security benefit. Standard Part B premium: $185.00 (2025), $202.90 (2026), and a projected $209.50 for 2027 from the 2026 Medicare Trustees Report, an increase of $6.60 (about 3.3%); CMS sets the final amount later. Income-related surcharges (IRMAA): in 2026 the surcharge starts above $109,000 modified adjusted gross income for individuals or $218,000 for married couples filing jointly; about 8% of beneficiaries pay these amounts; 2027 premiums generally use 2025 income. Hold-harmless rule: generally limits the Part B increase to the dollar increase in the Social Security benefit; it does not cover everyone, including new enrollees and some who pay the income-related amounts.
+WORKED EXAMPLE (computed; use exactly): a $2,000 monthly benefit with a 3.5% COLA adds $70 a month, to $2,070, which is $840 a year. If Part B rises from $202.90 to $209.50, that is $6.60 more, so the net monthly gain is $63.40. It is a simplified illustration: other deductions such as taxes on benefits or a Part D premium are not included, and the actual COLA and premium are not yet set.
+Do not state: the Social Security taxable-benefit thresholds, the earnings limit, the 2027 wage base, or any 2027 maximum benefit; they are not on this list. You may say that part of benefits can be taxable and link the internal page.
+
+## CLOSED URL LIST (only external hrefs allowed)
+https://www.aarp.org/social-security/cola-2027-increase-estimate/
+https://247wallst.com/investing/2026/10/08/your-2027-social-security-raise-may-be-smaller-than-it-looks/
+https://www.ssa.gov/cola/
+
+## INTERNAL ROUTES allowed
+/retirement/social-security-retirement-calculator/  /social-security-break-even-calculator/  /guides/is-social-security-taxable/  /guides/senior-deduction-social-security/  /guides/states-that-tax-social-security/  /retirement/  /guides/
+FAQ questions (verbatim): How much will Social Security go up in 2027? | When will the 2027 COLA be announced? | How is the Social Security COLA calculated? | Will Medicare Part B take part of my 2027 raise? | What was the 2026 Social Security COLA? | Will my COLA be taxed?
