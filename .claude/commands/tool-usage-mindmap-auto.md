@@ -12,7 +12,7 @@ argument-hint: "(no arguments; TOOL_SITE and BASE_URL come from the routine prom
 
 # /tool-usage-mindmap-auto — used tools → better tools + the next tools
 
-> **‼️ AUTONOMOUS.** No human checkpoint. Never print "Approve?". Nothing to work → exit 0 silently.
+> **‼️ AUTONOMOUS.** No human checkpoint. Never print "Approve?". **Every run ends with an owner email (USER RULE 2026-10-11)** — shipped, nothing to work, or failed (STEP 8).
 > Run `.claude/scripts/deploy-run-to-main.sh mark` FIRST, before any commit.
 
 **Inputs from the routine prompt:** `TOOL_SITE` (the bare domain as tracked, e.g. `chalkbox.org`) and `BASE_URL` (the host that answers 200, e.g. `https://chalkbox.org`).
@@ -44,7 +44,7 @@ Returns `{data_days, tools:[{tool, path, people, uses, views, use_rate, people_7
 - `low-use` — 10+ views but under 25% of viewers touched it → persona pass focused on "why did they leave without using it" (STEP 3 only)
 - `thin` — listed in the email, not worked
 
-`error` in the output, or no `persona`/`low-use` tools → exit 0 silently.
+`error` in the output → STEP 8 email with `--status failure` (say what failed). No `persona`/`low-use` tools → STEP 8 email with `--status no-op` listing every tool and its numbers ("nothing crossed the bar this week"), then exit 0.
 
 Otherwise open the run now: `python3 scripts/tool_usage/tool_usage_gate.py start --site "$TOOL_SITE" --base-url "$BASE_URL"`.
 
@@ -125,29 +125,35 @@ Append one line per tool to `reports/tool-usage-pass/ledger.jsonl` and commit it
 `{"date","tool","lane","people","people_7d","views","use_rate","persona","findings":[...],"shipped":[...],"status":"worked"}`
 and one `{"date","tool":"<new slug>","seed":"<tool>","status":"built"|"spec"|"dropped","reason"}` line per new-tool row.
 
-## STEP 8 — Email the owner (only if something shipped)
-The hook blocks this email until `tool_usage_gate.py live` has passed; use its `live.md` as the `## Live verification` section.
-Write `/tmp/tool-usage-<YYYY-MM-DD>.md`, then send it with `--details-file`. Written for a person reading their inbox. Sections, in order:
+## STEP 8 — Email the owner — EVERY run (USER RULE 2026-10-11)
+Every run sends exactly one email through `.claude/scripts/send-routine-email.py`, the same script and layout as the other routines. Pick the status:
+- `--status success` — something shipped. The hook blocks this until `tool_usage_gate.py live` has passed; use its `live.md` as the `## Live verification` section.
+- `--status no-op` — the run worked but nothing changed (no tool crossed the bar, or every row was dropped). Still list the data and why nothing shipped.
+- `--status failure` — a step or gate failed and could not be fixed. Name the step, the error, and what is left on the `claude/*` branch.
 
-0. **`## Data`** — one line: `<TOOL_SITE>, <data_days> days tracked. Worked: <tool> (<people> people), …` and a note when `data_days` < 30 that the numbers are early.
-1. **`## Fixes shipped`** — per tool: the persona in one line, then each fix as `- [<tool name>](<live url>) — <what changed> (why: "<persona quote>")`.
-2. **`## New tools`** — `- [<name>](<live url>) — <what it does>. Next step after [<seed tool>](<url>).`
-3. **`## Next in line`** — tool rows specced, not built this week (built first next run).
-4. **`## Dropped`** — every row mindmap or the auditor dropped, with the one-line reason.
-5. **`## Live verification`** — HTTP status + tracking PASS/FAIL for every new and changed URL. Any failure is a run failure, not a footnote.
+Write `/tmp/tool-usage-<YYYY-MM-DD>.md` first and pass it with `--details-file`. Written for a person reading their inbox. Sections, in order (skip a section only when it is empty, and say so in `## What changed`):
+
+0. **`## Duplicate check`** — the Phase 0 manifest row (or "no new-page rows").
+1. **`## What changed`** — 2–4 plain sentences: how many tools fixed, how many new tools, anything notable (a site-wide bug, a corrected figure). On a no-op/failure run, say why.
+2. **`## Data`** — `<TOOL_SITE>, <data_days> days tracked. Worked: <tool> (<people> people), …`; note when `data_days` < 30 that the numbers are early.
+3. **`## Fixes shipped`** — per tool: the persona in one line, then each fix as `- [<tool name>](<live url>) — <what changed> (why: "<persona quote>")`.
+4. **`## New tools`** — `- [<name>](<live url>) — <what it does>. Next step after [<seed tool>](<url>).`
+5. **`## Next in line`** — tool rows specced, not built this week.
+6. **`## Dropped`** — every row mindmap or the auditor dropped, with the one-line reason.
+7. **`## Live verification`** — the gate's `live.md` (HTTP status + tracking for every new and changed URL).
 
 ```bash
 REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
-.claude/scripts/send-routine-email.py --status success --skill tool-usage-mindmap-auto \
+.claude/scripts/send-routine-email.py --status <success|no-op|failure> --skill tool-usage-mindmap-auto \
   --site "$TOOL_SITE" --repo "$REPO" --branch main --commit-sha "$(git rev-parse HEAD)" \
   --summary "<N> tool fixes, <M> new tools from real tool usage." \
   --details-file /tmp/tool-usage-<YYYY-MM-DD>.md
 ```
-Nothing shipped → no email (the ledger still commits).
+A run that ends without sending this email is a failed run.
 
 ## Rolling this routine out to another fleet site (no shortcuts there either)
 Copy ALL of these into the target repo, then pilot one run before scheduling more:
-1. `.claude/commands/tool-usage-mindmap-auto.md`, `scripts/tool_usage/{site_tool_usage.py,tool_usage_gate.py,verify_beacons.cjs}`, `.claude/tools/tool-usage-gates.sh` (chmod +x).
+1. `.claude/commands/tool-usage-mindmap-auto.md`, `scripts/tool_usage/{site_tool_usage.py,tool_usage_gate.py,verify_beacons.cjs}`, `.claude/tools/tool-usage-gates.sh` (chmod +x), and `.claude/tool-usage.site.json` = `{"site": "<tracked domain>", "base_url": "https://…", "build_cmd": "<the site's real build>"}` (the `build` gate runs `build_cmd`).
 2. In `.claude/settings.json`: add `$CLAUDE_PROJECT_DIR/.claude/tools/tool-usage-gates.sh` as a PreToolUse hook with matcher `Edit|Write|MultiEdit|NotebookEdit|Bash`, and `"modelSettings": {"claude-opus-5-5": {"effortLevel": "medium"}}`.
 3. The repo's mindmap-pass must have Phase 3c (MINDMAP-BUILDS-TOOLS). `scripts/mindmap/coverage_lookup.py` must exist.
 4. Routine: `model: claude-opus-5-5` on the trigger (RemoteTrigger update `{"model": "claude-opus-5-5"}`), branch `claude/tool-usage-<site>` (the hook keys on the `claude/tool-usage` prefix), prompt cloned from Chalkbox's (`trig_01VG4Bqr2GvqHCiihMCwLCq6`) with that site's keys.

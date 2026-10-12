@@ -54,7 +54,7 @@ if not marker.exists():
     if tool == "Bash" and ("tool_usage_gate.py" in cmd or "site_tool_usage.py" in cmd):
         sys.exit(0)
     risky = (tool in ("Edit", "Write", "MultiEdit", "NotebookEdit") and not str(target).startswith(("/tmp", "reports/"))) or \
-        "deploy-run-to-main.sh push" in cmd or "send-routine-email.py" in cmd or re.search(r"content_gen\.py\s+(write|section)", cmd)
+        "deploy-run-to-main.sh push" in cmd or ("send-routine-email.py" in cmd and not re.search(r"--status[\s=]+['\"]?(failure|no-op|no-changes)", cmd)) or re.search(r"content_gen\.py\s+(write|section)", cmd)
     if risky:
         deny("this tool-usage run never opened its gate.",
              "`python3 scripts/tool_usage/tool_usage_gate.py start --site <TOOL_SITE> --base-url <BASE_URL>` right after STEP 1.")
@@ -88,7 +88,7 @@ if tool != "Bash":
 if "deploy-run-to-main.sh push" in cmd and not has("FINAL"):
     deny("deploy is locked until every pre-deploy check passes.",
          "`python3 scripts/tool_usage/tool_usage_gate.py build` then `... final` and fix what it lists.")
-if "send-routine-email.py" in cmd and not has("LIVE") and not re.search(r"--status\s+['\"]?(failure|error)", cmd):
+if "send-routine-email.py" in cmd and not has("LIVE") and not re.search(r"--status[\s=]+['\"]?(failure|no-op|no-changes)", cmd):
     deny("the owner email is locked until the live check passes.",
          "`python3 scripts/tool_usage/tool_usage_gate.py live` (after deploy), then put its live.md in the email.")
 if re.search(r"content_gen\.py\s+(write|section)", cmd) and not (has("PERSONA") and has("CHART")):

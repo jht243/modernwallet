@@ -158,12 +158,14 @@ def cmd_chart(a):
 def cmd_build(a):
     m, run = load_run()
     need(run, "PERSONA", "CHART")
-    if Path("package.json").exists() and '"build"' in Path("package.json").read_text():
+    cfg = Path(".claude/tool-usage.site.json")
+    site_cmd = json.loads(cfg.read_text()).get("build_cmd") if cfg.exists() else None
+    if site_cmd:
+        cmd = site_cmd                              # the site's own declared build — not the run's choice
+    elif Path("package.json").exists() and '"build"' in Path("package.json").read_text():
         cmd = "npm run build"
-    elif a.cmd:
-        cmd = a.cmd
     else:
-        fail("no package.json build script — pass --cmd '<this site's build/check command>'")
+        fail("no build_cmd in .claude/tool-usage.site.json and no package.json build script — the site must declare its build")
     r = subprocess.run(cmd, shell=True, capture_output=True, text=True)
     (run / "build.log").write_text(r.stdout[-20000:] + r.stderr[-20000:])
     if r.returncode != 0:
@@ -282,7 +284,7 @@ if __name__ == "__main__":
     s = sp.add_parser("start"); s.add_argument("--site", required=True); s.add_argument("--base-url", required=True)
     for n in ("persona", "chart", "final", "live", "status"):
         sp.add_parser(n)
-    b = sp.add_parser("build"); b.add_argument("--cmd")
+    b = sp.add_parser("build")
     a = ap.parse_args()
     {"start": cmd_start, "persona": cmd_persona, "chart": cmd_chart, "build": cmd_build,
      "final": cmd_final, "live": cmd_live, "status": cmd_status}[a.cmd_name](a)

@@ -1,0 +1,5 @@
+{
+  "site": "themodernwallet.com",
+  "base_url": "https://www.themodernwallet.com",
+  "build_cmd": "npm run build"
+}
