@@ -1,0 +1,5 @@
+"Build a simple worksheet before you touch the return. That column total is the figure you hold up against the standard amount." -- dangling reference "That column total" (defining sentence was deleted); rewrite so it stands alone.
+"Itemizing means you report each category on Schedule A (Form 1040)" -- "each category reported separately" is not on the fact list; say only that itemized deductions go on Schedule A.
+"Our Tax Tips guide covers more." / "See also our HSA vs FSA comparison." / "See also our Common Tax Filing Mistakes guide." / "See also our Ordinary Income vs Capital Gains Tax comparison." -- bare link drops that say nothing; fold into a sentence saying why the reader would follow each, or delete.
+"Housing costs cover mortgage interest." and "Gifts to charity form their own category." -- choppy orphan lines; merge into the surrounding paragraph.
+"A limited standard figure is easier to beat. A modest Schedule A total that would lose against the full amount can come out ahead." and "If you cannot document a figure, leave it out of the comparison." -- inferences not on the fact list; delete.

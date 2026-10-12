@@ -1,0 +1,107 @@
+{
+  "slug": "vtsax-vs-vti",
+  "metaTitle": "VTSAX vs VTI: Which Vanguard Total Market Fund Fits You",
+  "metaDescription": "VTSAX vs VTI compared on trading, minimums, expense ratios, and taxes. Both hold the same Vanguard total US stock market portfolio in a different wrapper.",
+  "h1": "VTSAX vs VTI for a Total US Stock Market Portfolio",
+  "subtitle": "How the mutual fund and exchange-traded versions of one Vanguard index portfolio differ for taxable and retirement accounts.",
+  "optionAName": "VTSAX (Vanguard Total Stock Market Index Fund Admiral Shares)",
+  "optionBName": "VTI (Vanguard Total Stock Market ETF)",
+  "introText": "VTSAX and VTI hold the same [Vanguard](https://investor.vanguard.com) total US stock market portfolio, so the VTSAX vs VTI choice comes down to how you want to buy it. VTSAX is the mutual fund share class that prices once a day and usually has a minimum investment. VTI is the exchange-traded fund (ETF) version that trades all day and can be bought for the price of one share, or less through a broker offering fractional shares.\n\n What we see readers get wrong most often is treating the two tickers as different investments. The stocks inside are the same, so the decision rests on your broker, your starting amount, and the type of account the fund will sit in.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Fund type",
+        "a": "Mutual fund (Admiral Shares class) issued by Vanguard",
+        "b": "Exchange-traded fund (ETF) issued by Vanguard"
+      },
+      {
+        "dimension": "How and when it trades",
+        "a": "Bought and sold once a day at net asset value (NAV), calculated at the end of the trading day",
+        "b": "Trades on an exchange during market hours at a live market price"
+      },
+      {
+        "dimension": "Minimum to start",
+        "a": "Has historically required a minimum initial investment set by Vanguard; see the current amount on [Vanguard's fund page](https://investor.vanguard.com)",
+        "b": "No fund minimum; the price of one share, or the fraction of a share your broker allows"
+      },
+      {
+        "dimension": "Expense ratio",
+        "a": "Very low and slightly different from VTI's; see the current figure on [Vanguard's fund page](https://investor.vanguard.com)",
+        "b": "0.03% at the time of writing; see the current figure on [Vanguard's fund page](https://investor.vanguard.com)"
+      },
+      {
+        "dimension": "Index tracked",
+        "a": "CRSP US Total Market Index, the same index VTI follows, covering large-, mid-, and small-cap US stocks",
+        "b": "The same index as VTSAX, held as 100% US stocks with no bonds or international holdings"
+      },
+      {
+        "dimension": "Tax treatment in a taxable account",
+        "a": "A tax-efficient index fund, though mutual funds are generally considered less tax-efficient than ETFs",
+        "b": "Generally considered more tax-efficient because of how ETFs handle share creation and redemption"
+      },
+      {
+        "dimension": "Automatic investing",
+        "a": "Supports automatic investments and exact-dollar purchases at Vanguard",
+        "b": "Bought share by share through a broker; buying part of a share needs a broker that offers fractional shares"
+      },
+      {
+        "dimension": "Where you can buy it",
+        "a": "Automatic and exact-dollar purchases are supported at Vanguard",
+        "b": "Any broker that offers it; most major US brokerages offer commission-free ETF trading"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Same Portfolio, Different Wrapper",
+      "content": "VTSAX and VTI are two versions of one Vanguard portfolio, so owning either gives you the same set of US stocks. Both track the CRSP US Total Market Index, which covers large-, mid-, and small-cap US stocks. Both are 100% US equity funds, with no bond holdings and no international holdings.\n\nThe difference is the wrapper around that portfolio. VTSAX is Vanguard Total Stock Market Index Fund Admiral Shares, a mutual fund bought and sold at its net asset value (NAV), calculated once at the end of the trading day. VTI is Vanguard Total Stock Market ETF, which trades on an exchange during market hours at a live market price.\n\nThat wrapper controls when your order fills, how much money you need to start, where you can buy, and how tax-efficient the fund is in a taxable account. It leaves the holdings untouched. For the general case beyond these two tickers, our [ETF vs Mutual Fund](/compare/etf-vs-mutual-fund/) comparison walks through both structures, and [Index Fund vs Mutual Fund](/compare/index-fund-vs-mutual-fund/) explains where index funds fit."
+    },
+    {
+      "heading": "How VTSAX and VTI Trade and Price During the Day",
+      "content": "VTI trades at a live market price throughout market hours, and VTSAX trades once a day at its end-of-day NAV. Place a VTI order while the market is open and it fills at the exchange price at that moment. Place a VTSAX order and it goes through at the NAV calculated after the close, so you do not see your exact price when you submit the order.\n\nBecause VTI's price moves while the market is open, two buyers on the same day can pay different prices for the same share. Every VTSAX buyer on a given day gets the same NAV. Neither setup changes what you own; it changes only the moment your price is set.\n\nThe unit you buy differs too. With VTSAX at Vanguard, you can make exact-dollar purchases, so you choose the dollar amount and the share count follows from that day's NAV. With VTI, the unit is a share, and a broker that offers fractional shares lets you buy part of one, while a broker without them makes you pay the full share price.\n\nOur [Index Fund vs ETF](/compare/index-fund-vs-etf/) guide covers the same trading split."
+    },
+    {
+      "heading": "Costs and Minimums for VTSAX vs VTI",
+      "content": "Both funds charge very low expense ratios that sit close to each other. VTI's expense ratio was 0.03% at the time of writing, and VTSAX's figure is slightly different. Confirm both current numbers on [Vanguard's fund pages](https://investor.vanguard.com) before you buy.\n\nTo turn a ratio into dollars, multiply it by your balance. At 0.03%, a $10,000 VTI position costs about $3 a year in fund expenses ($10,000 × 0.0003 = $3). Run the same multiplication with VTSAX's current ratio from [Vanguard's fund pages](https://investor.vanguard.com) to see the yearly dollar gap on your own balance.\n\nVTSAX has historically required a minimum initial investment set by Vanguard, and you can find the current amount on [Vanguard's fund page](https://investor.vanguard.com). VTI has no fund minimum. Your starting cost is the price of one share, or the fraction of a share your broker allows.\n\nWhere you buy also affects what you pay to trade. Most major US brokerages offer commission-free ETF trading, so you can buy VTI at many brokers without a per-trade fee. If you have not picked a broker yet, our [Vanguard vs Fidelity](/compare/vanguard-vs-fidelity/) comparison sets two of them side by side."
+    },
+    {
+      "heading": "Taxable Brokerage Accounts Versus Retirement Accounts",
+      "content": "The choice between the mutual fund and the ETF matters most in a taxable brokerage account and drops out inside an individual retirement account (IRA) or 401(k). Gains inside an IRA or 401(k) are not taxed year to year, so the tax-efficiency gap between the two wrappers has no effect there. In a retirement account, pick on convenience: automatic investing, your broker, and the minimum.\n\nIn a taxable account, ETFs such as VTI are generally considered more tax-efficient than mutual funds because of how they handle share creation and redemption. Vanguard's mutual funds, VTSAX included, are also tax-efficient index funds, so treat the ETF advantage as a general tendency. A tax professional can tell you how either fund would affect your own return.\n\nThe account type should drive the wrapper choice before anything else on this page. A taxable purchase is the harder one to undo, because moving between VTSAX and VTI there may mean selling one fund and buying the other, which can trigger capital gains. \n\nIf you hold both account types, you can split the choice. Use VTSAX in an IRA at Vanguard where you want automatic exact-dollar contributions, and use VTI in the taxable account where the ETF structure is generally considered more tax-efficient. Because both funds hold the same portfolio, your US stock exposure is the same across the two accounts."
+    },
+    {
+      "heading": "Switching Between the Mutual Fund and the ETF",
+      "content": "Switching from VTSAX to VTI, or the reverse, may require selling one fund and buying the other. In a taxable account, that sale can trigger capital gains, even though the stocks you own afterward are the same. Inside an IRA or 401(k), gains are not taxed year to year, so that tax concern does not apply there.\n\nBefore you switch, ask [Vanguard](https://investor.vanguard.com) how the move would be handled for your account, and ask a tax professional about the capital gains it could create. A switch changes only the wrapper, so the reasons to make one are practical: trading during market hours, buying through a broker other than Vanguard, or getting past a minimum.\n\nIf you already hold one of the two funds and none of those reasons applies, leaving it in place avoids the sale and any tax that comes with it."
+    },
+    {
+      "heading": "Choosing VTSAX vs VTI Based on How You Invest",
+      "content": "VTSAX suits an investor with an account at Vanguard who clears the minimum and wants automatic investments in exact dollar amounts. It also fits a retirement account, where the tax-efficiency difference between the two wrappers does not matter.\n\nVTI suits an investor who uses a broker other than Vanguard, has less than the VTSAX minimum, or wants to see a live price while the market is open. It is also our default for a taxable account, where ETFs are generally considered more tax-efficient. With fractional shares, you can buy part of a VTI share instead of saving up for a whole one.\n\nNeither fund holds bonds or international stocks, so either one covers only the US stock portion of a portfolio. If you want those other pieces, our [Best Index Funds](/roundup/best-index-funds/) roundup is a place to start, and [VTI vs VOO](/compare/vti-vs-voo/) compares VTI with VOO. To estimate how regular contributions to a stock index fund could grow, try our [S&P 500 Calculator](/investing/sp500-calculator/).\n\nCheck whether your broker offers commission-free ETF trading and fractional shares, and confirm the current VTSAX minimum and both expense ratios on [Vanguard's fund pages](https://investor.vanguard.com). Then set up automatic monthly contributions to VTSAX at Vanguard, or a recurring transfer to the broker that will hold your VTI."
+    }
+  ],
+  "verdict": "Pick VTI if you buy through a broker other than Vanguard, have less than the VTSAX minimum, or are investing in a taxable account, where ETFs are generally considered more tax-efficient than mutual funds. Pick VTSAX if your account is at Vanguard, you clear its minimum, and you want automatic investments in exact dollar amounts at the end-of-day NAV, especially inside an IRA or 401(k) where the tax difference does not matter. Neither fund serves an investor who wants bonds or international stocks in a single holding, because both are 100% US equity. Our answer would change in two cases. If the VTSAX minimum blocks you, VTI is the route in any account type. If your broker does not offer fractional ETF shares and a full VTI share is more than you want to invest at one time, VTSAX's exact-dollar purchases at Vanguard become the easier choice once you meet its minimum.",
+  "faqItems": [
+    {
+      "question": "What is the difference between VTSAX and VTI?",
+      "answer": "VTSAX and VTI hold the same Vanguard total US stock market portfolio, and the difference is the wrapper. VTSAX is a mutual fund that prices once a day at its NAV and has historically required a minimum initial investment. VTI is an ETF that trades on an exchange during market hours at a live price, with no fund minimum beyond the price of a share or the fraction your broker allows."
+    },
+    {
+      "question": "Is VTI or VTSAX better for long-term investing?",
+      "answer": "Neither fund holds a better portfolio for long-term investing, because both track the CRSP US Total Market Index with low expense ratios. The better pick depends on your account. VTSAX fits a Vanguard account where you want automatic exact-dollar investing. VTI fits other brokers, smaller starting amounts, and taxable accounts, where ETFs are generally considered more tax-efficient."
+    },
+    {
+      "question": "Can I convert VTSAX to VTI?",
+      "answer": "Moving from VTSAX to VTI may require selling VTSAX and buying VTI. In a taxable account, that sale can trigger capital gains. Inside an IRA or 401(k), gains are not taxed year to year, so that tax concern does not apply there. Ask [Vanguard](https://investor.vanguard.com) how the move would work for your account, and talk to a tax professional before switching in a taxable account."
+    },
+    {
+      "question": "Is VTI more tax-efficient than VTSAX?",
+      "answer": "In a taxable account, VTI's ETF structure is generally considered more tax-efficient than a mutual fund because of how ETFs handle share creation and redemption. VTSAX is also a tax-efficient index fund, so treat the gap as a general tendency. Inside an IRA or 401(k), the difference does not matter. A tax professional can tell you how either fund would affect your own return."
+    },
+    {
+      "question": "Do VTSAX and VTI hold the same stocks?",
+      "answer": "Yes, VTSAX and VTI invest in the same Vanguard US total stock market portfolio and track the CRSP US Total Market Index, which covers large-, mid-, and small-cap US stocks. Neither fund holds bonds or international stocks. To compare what each one costs to hold, look up the current expense ratios on [Vanguard's fund pages](https://investor.vanguard.com)."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

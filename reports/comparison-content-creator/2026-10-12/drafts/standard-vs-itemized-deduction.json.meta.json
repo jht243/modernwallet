@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "CONTENT_ANTHROPIC_KEY_2",
  "finish_reason": "STOP",
- "words": 1961,
+ "words": 1936,
  "floor": 1500,
  "input_tokens": 29779,
  "output_tokens": 13459,
@@ -20,12 +20,7 @@
  "est_cost_usd": 0.3883,
  "guards": {
   "repairs": [],
-  "flags": [
-   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "thin fact list: \u2248363 fact words for a 1500-word floor (ratio 0.24); expand it with sourced facts before any regeneration"
-  ],
+  "flags": [],
   "disallowed_urls_removed": [],
   "words": 1961,
   "numbers_not_in_facts": [
@@ -269,7 +264,117 @@
    "html_comments_dropped": 0,
    "tokens_dropped_est": 0,
    "tokens_sent_est": 1169
-  }
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-12T08:23:46+0000",
+    "findings_file": "reports/comparison-content-creator/2026-10-12/audit/standard-vs-itemized-deduction.findings.txt",
+    "applied": [
+     {
+      "id": "sections[3].content",
+      "quote": "That column total is the figure you hold up against the standard amount.",
+      "replacement": "The total of your allowable items on that worksheet is the figure you hold up against the standard amount.",
+      "type": "dangling reference \"That column total\"",
+      "why": "Referent was deleted; make the sentence stand alone."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "Itemizing means you report each category on Schedule A (Form 1040), so keep the paperwork behind every figure you add.",
+      "replacement": "Itemized deductions go on Schedule A (Form 1040), so keep the paperwork behind every figure you add.",
+      "type": "\"each category reported separately\" unsupported",
+      "why": "Fact list only says itemized deductions go on Schedule A."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "Our [Tax Tips](/guides/tax-tips/) guide covers more.",
+      "replacement": "For other ways to prepare your return, see our [Tax Tips](/guides/tax-tips/) guide.",
+      "type": "bare link drop",
+      "why": "Says nothing; give the reader a reason to follow."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "See also our [HSA vs FSA](/compare/hsa-vs-fsa/) comparison.",
+      "replacement": "If you pay health costs through an account, our [HSA vs FSA](/compare/hsa-vs-fsa/) comparison explains the two options.",
+      "type": "bare link drop",
+      "why": "Says nothing; tie to the medical-expense context."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "See also our [Common Tax Filing Mistakes](/guides/common-tax-filing-mistakes/) guide.",
+      "replacement": "Our [Common Tax Filing Mistakes](/guides/common-tax-filing-mistakes/) guide covers other errors to check before you file.",
+      "type": "bare link drop",
+      "why": "Says nothing; tie to recordkeeping errors."
+     },
+     {
+      "id": "sections[6].content",
+      "quote": "See also our [Ordinary Income vs Capital Gains Tax](/compare/ordinary-income-vs-capital-gains-tax/) comparison.",
+      "replacement": "To see how different kinds of income are taxed, read our [Ordinary Income vs Capital Gains Tax](/compare/ordinary-income-vs-capital-gains-tax/) comparison.",
+      "type": "bare link drop",
+      "why": "Says nothing; give a reason to follow."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "Housing costs cover mortgage interest.\n\nGifts to charity form their own category.",
+      "replacement": "Mortgage interest and gifts to charity each form their own group.",
+      "type": "choppy orphan lines",
+      "why": "Merge the two short lines into one sentence."
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "A limited standard figure is easier to beat.",
+      "replacement": "",
+      "type": "inference not on fact list",
+      "why": "Unsupported inference; delete."
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "A modest Schedule A total that would lose against the full amount can come out ahead.",
+      "replacement": "",
+      "type": "inference not on fact list",
+      "why": "Unsupported inference; delete."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "If you cannot document a figure, leave it out of the comparison.",
+      "replacement": "",
+      "type": "inference not on fact list",
+      "why": "Unsupported inference; delete."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      2
+     ],
+     "applied": [
+      {
+       "id": "sections[1].content",
+       "quote": "If either condition applies to you or your spouse, include that additional amount before you compare.",
+       "replacement": "If either condition applies to you, include that additional amount before you compare.",
+       "type": "unsupported",
+       "why": "SOURCE ties the additional amount to the taxpayer only, not a spouse."
+      },
+      {
+       "id": "sections[3].content",
+       "quote": "A Schedule A total that depends on an amount you cannot back up gives you a false reading.",
+       "replacement": "",
+       "type": "unsupported",
+       "why": "SOURCE says nothing about documentation or substantiation consequences."
+      }
+     ],
+     "deleted_final": 2,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1936,
+    "flags": []
+   }
+  ]
  },
  "seconds": 206.0,
  "response_id": "msg_011Cfx1YCsKvVxXx35nySFEB",

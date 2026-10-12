@@ -1,0 +1,9 @@
+"We do not state a liability dollar figure for credit cards here." -- meta-narration about the page; delete or replace with "check your card agreement for the credit card liability rules".
+"We do not state an interest rate on this page, so enter the rate from your own card when you run the numbers." -- meta-narration; rewrite as a direct instruction to use the card's own rate.
+"We do not list reward rates or fee amounts on this page." -- meta-narration; delete.
+"The inversion case matters for some readers." -- vague filler; say the concrete point or delete.
+"The cost side flips the picture." -- vague filler; state the concrete point or delete.
+"You can borrow debit's ceiling while using credit." -- unparseable; rewrite plainly or delete.
+"which is the main budgeting difference between them" -- unsupported superlative; remove.
+"reported on the third business day or later" -- CFPB wording is "after two business days"; use that.
+"so interest never builds on groceries and gas" -- invented example; delete.

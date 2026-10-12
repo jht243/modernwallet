@@ -1,0 +1,3 @@
+"At ModernWallet, we publish plain-language money guides built around one decision at a time, and VFIAX vs VOO is a decision about the wrapper around one portfolio." -- unsupported editorial-practice claim; use a minimal true company claim ("At ModernWallet, we publish plain-language money guides.").
+FAQ: "Neither is better across the board, because both track the S&P 500 index with low expense ratios." -- hedge; lead with the account-based pick.
+"check with Vanguard on Vanguard's site" (repeated about five times) -- clumsy repetition; vary or cut to once or twice.

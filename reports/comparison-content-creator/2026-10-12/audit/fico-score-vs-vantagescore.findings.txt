@@ -1,0 +1,7 @@
+"At ModernWallet, we publish free calculators and plain-language money guides, and every credit guide we write starts from the score the lender will read." -- unsupported claim about editorial practice; replace with a minimal true company claim ("At ModernWallet, we publish plain-language money guides and free calculators.") and drop the rest.
+"We do not quote a minimum credit history for either one." -- meta-narration; delete.
+"We do not give a percentage weight for each factor on this page." -- meta-narration; delete.
+"The useful point for a borrower is direction:" -- filler setup; state the point directly.
+"That signal is about direction only." -- aphoristic fragment; fold into the previous sentence or delete.
+"Our guide to the credit score for a 0% annual percentage rate (APR) credit card shows how that works for one card type." -- unsupported claim about linked guide's content; say only that the guide covers credit scores for 0% APR cards.
+"Pull your credit reports this week" -- invented timing; remove "this week".

@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "CONTENT_ANTHROPIC_KEY_2",
  "finish_reason": "STOP",
- "words": 1935,
+ "words": 1849,
  "floor": 1500,
  "input_tokens": 29909,
  "output_tokens": 15055,
@@ -20,12 +20,7 @@
  "est_cost_usd": 0.4207,
  "guards": {
   "repairs": [],
-  "flags": [
-   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "thin fact list: \u2248431 fact words for a 1500-word floor (ratio 0.29); expand it with sourced facts before any regeneration"
-  ],
+  "flags": [],
   "disallowed_urls_removed": [],
   "words": 1935,
   "numbers_not_in_facts": [
@@ -179,7 +174,124 @@
    "html_comments_dropped": 0,
    "tokens_dropped_est": 0,
    "tokens_sent_est": 1169
-  }
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-12T08:23:51+0000",
+    "findings_file": "reports/comparison-content-creator/2026-10-12/audit/credit-card-vs-debit-card.findings.txt",
+    "applied": [
+     {
+      "id": "sections[1].content",
+      "quote": "We do not state a liability dollar figure for credit cards here.",
+      "replacement": "Check your card agreement for the credit card liability rules.",
+      "type": "meta-narration about credit liability figure",
+      "why": "Narrates the page itself; replace with direct instruction from SOURCE."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "We do not state an interest rate on this page, so enter the rate from your own card when you run the numbers.",
+      "replacement": "Enter the rate from your own card agreement when you run the numbers.",
+      "type": "meta-narration about interest rate",
+      "why": "Narrates the page; rewrite as direct instruction."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "We do not list reward rates or fee amounts on this page.",
+      "replacement": "",
+      "type": "meta-narration about reward rates",
+      "why": "Narrates the page; delete."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "The inversion case matters for some readers.",
+      "replacement": "",
+      "type": "vague filler",
+      "why": "Empty lead-in; the next sentence carries the point."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "The cost side flips the picture.",
+      "replacement": "",
+      "type": "vague filler",
+      "why": "Empty transition; following sentence states the concrete cost difference."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "You can borrow debit's ceiling while using credit.",
+      "replacement": "You can keep a debit-style spending limit while using credit.",
+      "type": "unparseable sentence",
+      "why": "Meaning unclear; rewrite plainly."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "A debit card enforces a spending ceiling and a credit card does not, which is the main budgeting difference between them.",
+      "replacement": "A debit card enforces a spending ceiling and a credit card does not.",
+      "type": "unsupported superlative",
+      "why": "\"Main difference\" ranking not in SOURCE; remove clause."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "reported on the third business day or later",
+      "replacement": "reported after two business days",
+      "type": "wording differs from CFPB",
+      "why": "CFPB says \"after two business days\"; match source wording."
+     },
+     {
+      "id": "faqItems[4].answer",
+      "quote": " so interest never builds on groceries and gas",
+      "replacement": "",
+      "type": "invented example",
+      "why": "Groceries and gas example not in SOURCE; delete."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      4
+     ],
+     "applied": [
+      {
+       "id": "comparisonTable.rows[1].b",
+       "quote": "Generally not a credit-building activity, so everyday use does not add to your credit history",
+       "replacement": "Not published",
+       "type": "inference",
+       "why": "SOURCE says only 'generally not'; absolute consequence overstates it"
+      },
+      {
+       "id": "sections[3].content",
+       "quote": "If the money for a purchase is already sitting in checking, putting it on a credit card and paying the full statement balance gives you the credit-history benefit with no interest.",
+       "replacement": "If the money for a purchase is already sitting in checking, putting it on a credit card and paying the full statement balance can help build credit history with no interest.",
+       "type": "inference",
+       "why": "SOURCE says card use 'can help' build credit, not guaranteed benefit"
+      },
+      {
+       "id": "sections[3].content",
+       "quote": "Setting autopay for the full statement balance removes the chance that a forgotten payment turns into interest.",
+       "replacement": "Set autopay for the full statement balance.",
+       "type": "inference",
+       "why": "SOURCE states no effect of autopay"
+      },
+      {
+       "id": "sections[4].content",
+       "quote": "If you pay in full, you keep the rewards and pay no interest; if you carry a balance, the interest on those purchases cuts into whatever the rewards returned.",
+       "replacement": "If you pay in full, you pay no interest; if you carry a balance, you pay interest on those purchases.",
+       "type": "inference",
+       "why": "SOURCE gives no comparison of interest against rewards value"
+      }
+     ],
+     "deleted_final": 4,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1849,
+    "flags": []
+   }
+  ]
  },
  "seconds": 185.4,
  "response_id": "msg_011Cfx1YCprC8CXsVbGUJKNi",

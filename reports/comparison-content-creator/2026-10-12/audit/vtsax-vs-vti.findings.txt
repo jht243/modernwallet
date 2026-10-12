@@ -1,0 +1,5 @@
+"What we see readers get wrong most often is treating the two tickers as different investments." -- invented experience claim; rewrite as a plain statement that the two tickers are the same portfolio in two wrappers.
+"It is also our default for a taxable account" -- invented stance; rewrite as a general statement.
+"Our Index Fund vs ETF guide covers the same trading split." / "Index Fund vs Mutual Fund explains where index funds fit." -- unsupported claims about linked pages; say only what the linked page's title says.
+"automatic monthly contributions" -- invented cadence; say automatic contributions.
+FAQ: "Neither fund holds a better portfolio for long-term investing... The better pick depends on your account." -- hedge; lead with the account-based pick.

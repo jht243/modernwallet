@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "CONTENT_ANTHROPIC_KEY_2",
  "finish_reason": "STOP",
- "words": 2182,
+ "words": 2062,
  "floor": 1500,
  "input_tokens": 29910,
  "output_tokens": 19196,
@@ -20,12 +20,7 @@
  "est_cost_usd": 0.5036,
  "guards": {
   "repairs": [],
-  "flags": [
-   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "thin fact list: \u2248442 fact words for a 1500-word floor (ratio 0.29); expand it with sourced facts before any regeneration"
-  ],
+  "flags": [],
   "disallowed_urls_removed": [],
   "words": 2182,
   "numbers_not_in_facts": [],
@@ -126,7 +121,110 @@
    "html_comments_dropped": 0,
    "tokens_dropped_est": 0,
    "tokens_sent_est": 1169
-  }
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-12T08:23:50+0000",
+    "findings_file": "reports/comparison-content-creator/2026-10-12/audit/fico-score-vs-vantagescore.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we publish free calculators and plain-language money guides, and every credit guide we write starts from the score the lender will read.",
+      "replacement": "At ModernWallet, we publish plain-language money guides and free calculators.",
+      "type": "unsupported editorial practice claim",
+      "why": "Practice claim about credit guides not licensed; keep minimal true company claim."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "We do not quote a minimum credit history for either one.",
+      "replacement": "",
+      "type": "meta-narration",
+      "why": "Narrates page omissions instead of informing reader."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "We do not give a percentage weight for each factor on this page.",
+      "replacement": "",
+      "type": "meta-narration",
+      "why": "Narrates page omissions instead of informing reader."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "The useful point for a borrower is direction: a habit that improves these inputs usually lifts both scores together.",
+      "replacement": "A habit that improves these inputs usually lifts both scores together.",
+      "type": "filler setup",
+      "why": "Remove setup phrase; state the point directly."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "The two usually move in the same direction when your habits change. That signal is about direction only.",
+      "replacement": "The two usually move in the same direction when your habits change, but that signal shows direction only.",
+      "type": "aphoristic fragment",
+      "why": "Fold fragment into the previous sentence."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "Our guide to the [credit score for a 0% annual percentage rate (APR) credit card](/guides/credit-score-for-0-apr-credit-card/) shows how that works for one card type.",
+      "replacement": "Our guide to the [credit score for a 0% annual percentage rate (APR) credit card](/guides/credit-score-for-0-apr-credit-card/) covers credit scores for 0% APR cards.",
+      "type": "unsupported claim about linked guide",
+      "why": "Say only what the guide covers."
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "Pull your credit reports this week, write down which model each free score uses, and ask your next lender which score it pulls.",
+      "replacement": "Pull your credit reports, write down which model each free score uses, and ask your next lender which score it pulls.",
+      "type": "invented timing",
+      "why": "\"This week\" is an invented timeframe."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      4
+     ],
+     "applied": [
+      {
+       "id": "sections[0].content",
+       "quote": "Because the scales match, a FICO number and a VantageScore number look interchangeable on a screen, even though separate formulas produced them.",
+       "replacement": "",
+       "type": "inference",
+       "why": "SOURCE does not say the numbers look interchangeable to readers."
+      },
+      {
+       "id": "sections[0].content",
+       "quote": "If your file is thin, read our comparison of [secured vs unsecured credit cards](/compare/secured-credit-card-vs-unsecured-credit-card/) and our list of the [best secured credit cards](/roundup/best-secured-credit-cards/) before you apply for a first card.",
+       "replacement": "",
+       "type": "unsupported",
+       "why": "SOURCE never links secured cards to thin files or first cards."
+      },
+      {
+       "id": "sections[5].content",
+       "quote": "The score on a free credit app is a real score from a real scoring model, though it may come from a different model than the one a lender pulls.",
+       "replacement": "The score on a free credit app may come from a different model than the one a lender pulls.",
+       "type": "unsupported",
+       "why": "SOURCE does not vouch that free app scores are real scores."
+      },
+      {
+       "id": "faqItems[4].answer",
+       "quote": "Yes, a free app shows a real credit score, though it is one of several scores you have.",
+       "replacement": "A free app shows one of several scores you have.",
+       "type": "unsupported",
+       "why": "SOURCE does not vouch that free app scores are real scores."
+      }
+     ],
+     "deleted_final": 4,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 2062,
+    "flags": []
+   }
+  ]
  },
  "seconds": 220.7,
  "response_id": "msg_011Cfx1YCegVpcjnWhKBnGYo",

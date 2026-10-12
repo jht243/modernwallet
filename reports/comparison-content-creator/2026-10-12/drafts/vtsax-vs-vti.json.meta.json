@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "CONTENT_ANTHROPIC_KEY_2",
  "finish_reason": "STOP",
- "words": 2106,
+ "words": 2066,
  "floor": 1500,
  "input_tokens": 30023,
  "output_tokens": 20369,
@@ -20,12 +20,7 @@
  "est_cost_usd": 0.5275,
  "guards": {
   "repairs": [],
-  "flags": [
-   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "thin fact list: \u2248438 fact words for a 1500-word floor (ratio 0.29); expand it with sourced facts before any regeneration"
-  ],
+  "flags": [],
   "disallowed_urls_removed": [],
   "words": 2106,
   "numbers_not_in_facts": [
@@ -115,7 +110,82 @@
    "html_comments_dropped": 0,
    "tokens_dropped_est": 0,
    "tokens_sent_est": 1169
-  }
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-12T08:23:45+0000",
+    "findings_file": "reports/comparison-content-creator/2026-10-12/audit/vtsax-vs-vti.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "What we see readers get wrong most often is treating the two tickers as different investments.",
+      "replacement": "The two tickers are the same portfolio in two different wrappers.",
+      "type": "invented experience claim",
+      "why": "Fabricated reader observation; restate as plain fact about same portfolio in two wrappers."
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "It is also our default for a taxable account, where ETFs are generally considered more tax-efficient.",
+      "replacement": "It can also suit a taxable account, where ETFs are generally considered more tax-efficient.",
+      "type": "invented stance",
+      "why": "No source for a site default; state generally."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "Our [Index Fund vs ETF](/compare/index-fund-vs-etf/) guide covers the same trading split.",
+      "replacement": "See also our [Index Fund vs ETF](/compare/index-fund-vs-etf/) comparison.",
+      "type": "unsupported claim about linked page",
+      "why": "Content of linked page unverified; reference title only."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "[Index Fund vs Mutual Fund](/compare/index-fund-vs-mutual-fund/) explains where index funds fit.",
+      "replacement": "[Index Fund vs Mutual Fund](/compare/index-fund-vs-mutual-fund/) compares those two.",
+      "type": "unsupported claim about linked page",
+      "why": "Content of linked page unverified; reference title only."
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "automatic monthly contributions",
+      "replacement": "automatic contributions",
+      "type": "invented cadence",
+      "why": "Source says automatic investments, no monthly cadence."
+     },
+     {
+      "id": "faqItems[1].answer",
+      "quote": "Neither fund holds a better portfolio for long-term investing, because both track the CRSP US Total Market Index with low expense ratios. The better pick depends on your account.",
+      "replacement": "Pick by account, since both track the CRSP US Total Market Index with low expense ratios.",
+      "type": "FAQ hedge",
+      "why": "Lead with account-based pick instead of hedging."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [
+      {
+       "id": "sections[3].content",
+       "quote": "The account type should drive the wrapper choice before anything else on this page.",
+       "replacement": "",
+       "type": "inference",
+       "why": "SOURCE does not rank account type above broker or minimum."
+      }
+     ],
+     "deleted_final": 1,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 2066,
+    "flags": []
+   }
+  ]
  },
  "seconds": 216.2,
  "response_id": "msg_011Cfx1YD7TLohNiR2Hiz3VZ",
