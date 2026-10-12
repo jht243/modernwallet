@@ -1,0 +1,98 @@
+{
+  "slug": "vfiax-vs-voo",
+  "metaTitle": "VFIAX vs VOO: Choosing Vanguard's S&P 500 Fund in 2026",
+  "metaDescription": "VFIAX vs VOO compared on trading, minimums, costs, and taxes. One Vanguard S&P 500 portfolio in a mutual fund or an exchange-traded fund wrapper.",
+  "h1": "VFIAX vs VOO Compared for Owning the Vanguard S&P 500 Portfolio",
+  "subtitle": "A side-by-side look at how the mutual fund and exchange-traded fund versions of Vanguard's S&P 500 fund trade and how each fits taxable and retirement accounts.",
+  "optionAName": "VFIAX (Vanguard 500 Index Fund Admiral Shares)",
+  "optionBName": "VOO (Vanguard S&P 500 ETF)",
+  "introText": "VFIAX and VOO hold the same S&P 500 portfolio from [Vanguard](https://investor.vanguard.com). They differ in how you buy and hold it. At ModernWallet, we publish plain-language money guides built around one decision at a time, and VFIAX vs VOO is a decision about the wrapper around one portfolio.\n\nVFIAX is a mutual fund that prices once a day and has historically required a minimum initial investment. VOO is an exchange-traded fund (ETF) that trades all day through a broker, with no fund minimum. Your account type, your broker, and whether you want automatic dollar-amount purchases decide which one fits.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Fund type",
+        "a": "Mutual fund, sold as Vanguard 500 Index Fund Admiral Shares",
+        "b": "Exchange-traded fund, sold as Vanguard S&P 500 ETF"
+      },
+      {
+        "dimension": "How and when it trades",
+        "a": "Bought and sold at net asset value, calculated once at the end of the trading day",
+        "b": "Trades on an exchange during market hours at a live market price"
+      },
+      {
+        "dimension": "Minimum to start",
+        "a": "Minimum initial investment set by Vanguard (dollar amount not stated on this page)",
+        "b": "No fund minimum, only the price of one share or the fraction your broker allows"
+      },
+      {
+        "dimension": "Expense ratio",
+        "a": "Low, very close to VOO's figure and slightly different",
+        "b": "0.03% at the time of writing"
+      },
+      {
+        "dimension": "Tax treatment in a taxable account",
+        "a": "Vanguard's index mutual funds are tax-efficient",
+        "b": "ETFs are generally considered more tax-efficient than mutual funds"
+      },
+      {
+        "dimension": "Automatic investing",
+        "a": "Supports automatic investments and exact-dollar purchases at Vanguard",
+        "b": "Bought through a broker in whole shares or the fractions that broker allows"
+      },
+      {
+        "dimension": "Where you can buy it",
+        "a": "At Vanguard, where automatic and exact-dollar purchases are supported",
+        "b": "Any broker that offers it, and most major US brokerages offer commission-free ETF trading"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Same Index, Different Wrapper",
+      "content": "VFIAX and VOO are the mutual fund and exchange-traded versions of the same Vanguard S&P 500 portfolio. VFIAX prices once a day and has historically required a minimum investment, while VOO trades all day and is bought through a broker.\n\nThe full names spell out the split. VFIAX is Vanguard 500 Index Fund Admiral Shares, and VOO is Vanguard S&P 500 ETF. Both track the S&P 500 index, which covers roughly 500 of the largest US companies, so choosing one over the other does not change the companies you own.\n\nThe two differ in how you trade them and what you need to start. VFIAX is bought and sold at net asset value (NAV), which is calculated once at the end of the trading day. VOO trades on an exchange during market hours at a live market price, and your entry cost is one share or the fraction of a share your broker allows.\n\nBefore you buy either one, settle three things: which account the money goes into, which company will hold the shares, and whether you plan to invest a fixed dollar amount on a schedule. For the general case of how mutual funds and ETFs differ as structures, our [ETF vs Mutual Fund](/compare/etf-vs-mutual-fund/) guide covers both."
+    },
+    {
+      "heading": "Trading and Pricing in VFIAX vs VOO",
+      "content": "VFIAX trades once a day at net asset value, and VOO trades throughout market hours at a live market price. A VFIAX order fills at the NAV Vanguard calculates at the end of the trading day, so you learn your price after the close.\n\nVOO trades on an exchange during market hours. You place an order with a broker while the market is open, and the trade goes through at the market price at that moment. If you want to see the price before you commit to a trade, buy VOO.\n\nSelling follows the same pattern. A VFIAX sale goes through at that day's end-of-day NAV, and a VOO sale fills at the live price during market hours. Neither timing changes the portfolio you own, since both track the S&P 500.\n\nIf you would rather place an order and let the end-of-day NAV set the price, VFIAX handles that without you watching the market. If you want control over the moment you buy or sell, VOO gives you that control. VOO is also one of several S&P 500 ETFs, and we compare it with the SPDR S&P 500 ETF in [VOO vs SPY](/compare/voo-vs-spy/) and with the iShares Core S&P 500 ETF in [IVV vs VOO](/compare/ivv-vs-voo/)."
+    },
+    {
+      "heading": "Costs and Minimums for VFIAX vs VOO",
+      "content": "Both VFIAX and VOO carry low expense ratios, and VOO lists 0.03% at the time of writing. VFIAX's expense ratio is very close to VOO's and slightly different, so confirm both current figures on [Vanguard's fund pages](https://investor.vanguard.com) before you compare them to the decimal.\n\nThe arithmetic shows how small these costs are in dollars. At 0.03%, VOO costs $3 a year on a $10,000 balance ($10,000 × 0.0003) and $30 a year on a $100,000 balance. Because VFIAX's ratio sits very close to that, the expense ratio is unlikely to be the reason you pick one over the other.\n\nThe starting minimum is the larger difference between the two. VFIAX has historically required a minimum initial investment set by Vanguard, and this page does not state the dollar amount, so read the current figure on [Vanguard's VFIAX page](https://investor.vanguard.com) before you plan a first purchase. If your starting sum is below that minimum, VFIAX is off the table until you save more.\n\nVOO has no fund minimum. Your entry cost is the price of one share, or the fraction of a share your broker allows, and fractional-share support varies by broker. Most major US brokerages offer commission-free ETF trading, so buying VOO at one of them adds no commission on top of the share price.\n\nFractional shares matter most for a small first deposit. If a broker does not support fractional shares and one VOO share costs more than you have to invest, you cannot buy VOO there yet. Pick a broker with fractional-share support if your budget is below the price of one share."
+    },
+    {
+      "heading": "Taxable Accounts Versus Retirement Accounts",
+      "content": "The account type decides whether tax efficiency matters to this choice at all. In a taxable brokerage account, ETFs are generally considered more tax-efficient than mutual funds, which gives VOO an edge there.\n\nVanguard's index mutual funds are also tax-efficient, so VFIAX still fits a taxable account. The ETF edge is a general one, and its dollar value depends on your tax situation. Ask a tax professional how it applies to you, and review both funds on [Vanguard's site](https://investor.vanguard.com) before you decide.\n\nInside an individual retirement account (IRA) or a 401(k), the tax-efficiency difference does not matter, because gains there are not taxed year to year. In those accounts, choose on minimums, trading style, and automatic investing. Some 401(k) plans offer only mutual funds, and if a plan you contribute to lists VFIAX and no ETFs, that settles the choice for that account.\n\nIn a taxable account, decide the wrapper before the first purchase. Switching from VFIAX to VOO, or from VOO to VFIAX, can trigger capital gains there, so the fund you pick with your first taxable dollar is one you may hold for years. If you already hold VFIAX or VOO in a taxable account with gains, check with Vanguard on [Vanguard's site](https://investor.vanguard.com) and ask a tax professional before you switch.\n\nFor someone with both account types, one split follows from these facts. Put VOO in the taxable account, where the general ETF tax edge applies, and use VFIAX in a 401(k) plan that offers only mutual funds. Inside an IRA, either one works on tax grounds, so let the minimum and your broker decide."
+    },
+    {
+      "heading": "Reasons to Pick VFIAX or VOO",
+      "content": "VFIAX fits investors who want automatic, exact-dollar investing at Vanguard, and VOO fits investors who want no fund minimum and a broker of their choice. The rest of the decision comes down to account type and trading style.\n\nPick VFIAX if you want automatic investments and exact-dollar purchases at Vanguard. You can invest a fixed amount, such as $200 a month, at each day's NAV without working out share counts. VFIAX also fits a 401(k) plan that offers only mutual funds, since VOO is not an option in that plan.\n\nPick VOO if your starting sum is below VFIAX's minimum, because VOO has no fund minimum. Pick it as well if you want to trade during market hours at a live price, or if you keep your accounts at a broker other than Vanguard. In a taxable account, VOO also carries the general ETF tax-efficiency edge.\n\nFor related choices, see our [VTI vs VOO](/compare/vti-vs-voo/) and [VTSAX vs VTI](/compare/vtsax-vs-vti/) comparisons, plus the [Best Index Funds](/roundup/best-index-funds/) roundup. To see what a monthly contribution could grow to over your own timeline, run it through our [S&P 500 Calculator](/investing/sp500-calculator/)."
+    }
+  ],
+  "verdict": "Choose VOO if you are opening a taxable brokerage account, starting with less than VFIAX's minimum, or keeping your money at a broker other than Vanguard. VOO has no fund minimum, trades during market hours at a live price, and carries the general ETF tax-efficiency edge in a taxable account. Choose VFIAX if you invest at Vanguard and want automatic, exact-dollar contributions each month, or if a 401(k) plan you use offers only mutual funds. Inside an IRA, either fund works on tax grounds, so let the minimum and automatic investing decide. This recommendation is not for someone who already holds VFIAX in a taxable account with gains and wants to move to VOO for the ETF tax edge alone, because the switch can trigger capital gains. That investor should ask a tax professional and check with Vanguard on [Vanguard's site](https://investor.vanguard.com) before selling anything. Our answer would change if Vanguard lowered the VFIAX minimum below your starting sum, if your broker dropped the fractional-share support a small VOO purchase needs, or if the two expense ratios moved apart. Start by confirming VFIAX's current minimum and both expense ratios on [Vanguard's fund pages](https://investor.vanguard.com), then make the VFIAX vs VOO choice in the account you picked.",
+  "faqItems": [
+    {
+      "question": "What is the difference between VFIAX and VOO?",
+      "answer": "VFIAX is the mutual fund version of Vanguard's S&P 500 portfolio, and VOO is the exchange-traded fund version. VFIAX prices once a day at net asset value and has historically required a minimum initial investment. VOO trades on an exchange during market hours at a live price, has no fund minimum, and is bought through a broker."
+    },
+    {
+      "question": "Is VOO or VFIAX better?",
+      "answer": "Neither is better across the board, because both track the S&P 500 index with low expense ratios. VOO fits a taxable account, a starting sum below VFIAX's minimum, or a broker other than Vanguard. VFIAX fits automatic exact-dollar investing at Vanguard and 401(k) plans that offer only mutual funds."
+    },
+    {
+      "question": "Can I convert VFIAX to VOO?",
+      "answer": "You can move from VFIAX to VOO, but in a taxable account the switch can trigger capital gains. Before you act, check with Vanguard on [Vanguard's site](https://investor.vanguard.com) and ask a tax professional how the gain would affect your tax bill. Inside an IRA, gains are not taxed year to year, so the capital gains concern from a taxable account does not apply there."
+    },
+    {
+      "question": "Is VOO more tax-efficient than VFIAX?",
+      "answer": "In a taxable account, VOO has the general edge, because ETFs are generally considered more tax-efficient than mutual funds. Vanguard's index mutual funds, VFIAX among them, are also tax-efficient, so the gap is a general tendency. Ask a tax professional how it applies to you, and review both funds on [Vanguard's site](https://investor.vanguard.com)."
+    },
+    {
+      "question": "Which is better in a Roth IRA, VFIAX or VOO?",
+      "answer": "In a Roth IRA, the tax-efficiency difference between VFIAX and VOO does not matter, because gains inside an IRA are not taxed year to year. Choose VFIAX if you want automatic exact-dollar purchases at Vanguard and can meet its minimum. Choose VOO if you want no fund minimum or hold your Roth IRA at another broker."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

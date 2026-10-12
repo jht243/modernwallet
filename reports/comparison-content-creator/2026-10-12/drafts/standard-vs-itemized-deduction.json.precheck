@@ -1,0 +1,106 @@
+{
+  "slug": "standard-vs-itemized-deduction",
+  "metaTitle": "Standard Deduction vs Itemized Deductions on Form 1040",
+  "metaDescription": "Standard deduction vs itemized deduction: add up your Schedule A items, compare the total to the flat amount for your filing status, and take the larger.",
+  "h1": "Standard Deduction vs Itemized Deductions on a Federal Tax Return",
+  "subtitle": "A side-by-side look at how each deduction method is set and when federal rules require you to use one of them.",
+  "optionAName": "Standard Deduction",
+  "optionBName": "Itemized Deductions",
+  "introText": "Take whichever deduction is larger. The standard deduction is a flat amount set by your filing status, and itemizing only pays off when your allowable deductions add up to more than that flat amount. That one comparison settles the standard deduction vs itemized deduction choice on any return where both options are open to you.\n\nAt ModernWallet, we write every tax guide around the number you need to find, and here that number is the total of your Schedule A items. Deductions reduce your taxable income, according to the [Internal Revenue Service (IRS)](https://www.irs.gov/taxtopics/tc501). In general, you either take the standard deduction or itemize, and you pick one method for each return.\n\nThe flat amount is the default starting point. Itemizing is the alternative you test against it.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Who it is for",
+        "a": "Filers whose standard amount is larger than their allowable itemized total, and who are allowed to use it",
+        "b": "Filers whose allowable Schedule A total is larger, plus filers who cannot use the standard deduction at all"
+      },
+      {
+        "dimension": "How the amount is set",
+        "a": "A flat amount based on filing status, with an additional amount for filers 65 and older or blind, adjusted each year for inflation",
+        "b": "The sum of your allowable expenses in each Schedule A category, after the IRS dollar limits for each category"
+      },
+      {
+        "dimension": "What you must track or document",
+        "a": "Your filing status, your age, and whether you are blind",
+        "b": "Every expense you add, such as tax bills, mortgage interest, charity gifts, medical bills, and disaster or gambling losses"
+      },
+      {
+        "dimension": "Schedule or form used",
+        "a": "No Schedule A; the flat amount for your filing status applies",
+        "b": "Schedule A (Form 1040), with each category reported separately"
+      },
+      {
+        "dimension": "Common deductions that count",
+        "a": "None to add up; the amount does not depend on what you spent",
+        "b": "State and local income or sales taxes, real and personal property taxes, mortgage interest, charity gifts, disaster losses, and certain gambling losses and medical expenses"
+      },
+      {
+        "dimension": "When it wins",
+        "a": "When it is larger than your allowable itemized total, or when the two are equal",
+        "b": "When your allowable itemized total is larger, or when your standard deduction is limited because someone claims you as a dependent"
+      },
+      {
+        "dimension": "Filing statuses and restrictions",
+        "a": "Not available if you file separately and your spouse itemizes, file a short-year return after an accounting period change, are a nonresident or dual-status alien (spouse-election exception), or file for an estate, trust, common trust fund, or partnership",
+        "b": "Available to every filer, and required for anyone barred from the standard deduction"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "How to Decide on Standard Deduction vs Itemized Deduction",
+      "content": "You should itemize when your total allowable itemized deductions are greater than your standard deduction, and take the standard deduction in every other case where you are allowed to use it. The IRS states the rule that way in [Topic 501](https://www.irs.gov/taxtopics/tc501). A second trigger applies too: you must itemize if you cannot use the standard deduction at all.\n\nStart with the standard side. The amount depends on your filing status: single, married filing separately, married filing jointly, head of household, or qualifying surviving spouse. If you are 65 or older, or blind, you may get an additional amount on top of the base figure.\n\nThe IRS adjusts the standard deduction every year for inflation. A figure copied from an old return may be wrong for the year you are filing. Look up the current amount for your filing status on [IRS Topic 501](https://www.irs.gov/taxtopics/tc501) before you compare anything.\n\nThen build the itemized side. Add up each allowable expense you paid during the year in the Schedule A categories: state and local income or sales taxes, real property taxes, personal property taxes, mortgage interest, disaster losses, gifts to charity, and certain gambling losses and medical expenses. These categories carry dollar limits, so count only the allowed amount in each one.\n\nPut the two totals side by side. If the Schedule A total is larger, itemize. If the standard deduction is larger, or the two totals match, take the standard deduction, since it gives at least the same reduction without filling out Schedule A.\n\nOur [Tax Deductions Checklist](/guides/tax-deductions-checklist/) lists the paperwork to gather before you start adding."
+    },
+    {
+      "heading": "When the Standard Deduction Wins",
+      "content": "The standard deduction wins whenever it is larger than your allowable itemized total and nothing in your filing situation bars you from using it. That happens when your Schedule A categories add up to a small figure. A year with no mortgage interest, few gifts to charity, and no disaster or gambling losses is the typical picture.\n\nThe additional amount for filers who are 65 and older or blind raises the standard figure. A higher standard figure means your itemized total has to be higher before itemizing comes out ahead. If either condition applies to you or your spouse, include that additional amount before you compare.\n\nThe standard deduction also asks less of you. You need your filing status and, where they apply, your age and whether you are blind. You do not total categories or work through category limits.\n\nIf you take the standard deduction, your remaining chances to lower the bill come from credits, account contributions, and filing choices. Our [Tax Tips](/guides/tax-tips/) guide covers those next steps."
+    },
+    {
+      "heading": "When Itemizing Wins",
+      "content": "Itemizing wins when your allowable Schedule A deductions add up to more than the standard deduction for your filing status. The total grows fastest in a year when several categories land at once. Buying a home, for example, can add mortgage interest and real property taxes in the same year.\n\nGroup the categories as you add them. Taxes paid include state and local income or sales taxes, real property taxes, and personal property taxes. Housing costs cover mortgage interest.\n\nGifts to charity form their own category. If you give through a congregation, our guide on whether [church donations are tax deductible](/guides/are-church-donations-tax-deductible/) walks through how those gifts fit on Schedule A.\n\nThe last group covers losses and health costs: disaster losses, certain gambling losses, and certain medical expenses. Medical expenses have their own IRS rules, laid out in [Topic 502](https://www.irs.gov/taxtopics/tc502). If you use a health savings or flexible spending account, our [HSA vs FSA](/compare/hsa-vs-fsa/) comparison explains how each account works.\n\nEvery one of these categories is subject to dollar limits set by the IRS. Add the allowed amount for each category, never the raw amount you paid. The capped total is the number you compare to the standard deduction."
+    },
+    {
+      "heading": "Records to Keep If You Itemize",
+      "content": "Itemizing means you report each category on Schedule A (Form 1040), so keep the paperwork behind every figure you add. Save property tax bills, mortgage interest statements, receipts for gifts to charity, and medical bills. For disaster and gambling losses, keep the records that show what you lost and when.\n\nBuild a simple worksheet before you touch the return. Give each category its own line, apply the IRS limit for that category, and total the column only after every line is capped. That column total is the figure you hold up against the standard amount.\n\nIf you cannot document a figure, leave it out of the comparison. A Schedule A total that depends on an amount you cannot back up gives you a false reading. Our [Common Tax Filing Mistakes](/guides/common-tax-filing-mistakes/) guide covers other errors to catch before you file."
+    },
+    {
+      "heading": "Filing Situations That Rule Out the Standard Deduction",
+      "content": "Some filers cannot take the standard deduction at all, and for them itemizing is required whatever the totals show. You cannot use the standard deduction if you are married filing separately and your spouse itemizes. The same bar applies if you file a return for less than 12 months because of a change in accounting period.\n\nNonresident aliens and dual-status aliens also cannot take the standard deduction, with an exception tied to a spouse election. Read the exact terms of that exception on [IRS Topic 501](https://www.irs.gov/taxtopics/tc501) before you assume it covers you. Returns filed for an estate, trust, common trust fund, or partnership cannot use the standard deduction either.\n\nThe married filing separately rule changes the math for couples. If your spouse itemizes on a separate return, you must itemize too, even if your own Schedule A total sits far below the standard amount you would otherwise get. Before either of you files separately, add up both itemized totals and agree on which method both returns will use.\n\nFor these filers, the comparison step drops out. The work shifts to building the most complete allowable Schedule A total you can document."
+    },
+    {
+      "heading": "Dependents and a Limited Standard Deduction",
+      "content": "If another taxpayer claims you as a dependent, your standard deduction may be limited, and that can make itemizing the better choice. A limited standard figure is easier to beat. A modest Schedule A total that would lose against the full amount can come out ahead.\n\nThe usual comparison misleads here. If someone claims you, compare your itemized total against your limited standard amount. Do not compare it against the full amount for your filing status.\n\nFind the limited figure on [IRS Topic 501](https://www.irs.gov/taxtopics/tc501), then run the same side-by-side test. If you paid state or local taxes, gave to charity, or had qualifying medical costs on your own, those items may be enough to tip the result."
+    },
+    {
+      "heading": "Mistakes in the Standard Deduction vs Itemized Deduction Comparison",
+      "content": "The most common way to get this comparison wrong is to use a standard deduction figure from a prior year. The IRS adjusts the amount annually for inflation, so look up the current figure every time you file.\n\nCounting raw spending is the next trap. Schedule A categories are subject to dollar limits, and an uncapped total can make itemizing look better than it is.\n\nLeaving out the additional amount for filers 65 and older or blind does the opposite. It makes the standard side look smaller and can push you toward itemizing when the flat amount would have been larger.\n\nYou also cannot claim both methods on one return. Pick one, and if you itemize, let Schedule A carry the whole deduction.\n\nCouples filing separately sometimes treat the decision as two independent choices. If one spouse itemizes, the other must itemize too.\n\nOnce your deduction is set, the rest of the return turns on what kind of income you have. Our [Ordinary Income vs Capital Gains Tax](/compare/ordinary-income-vs-capital-gains-tax/) comparison covers how different types of income are taxed. Your next step is concrete: total your capped Schedule A items and set the result next to the standard amount for your filing status."
+    }
+  ],
+  "verdict": "Take the standard deduction if your allowable Schedule A total comes out smaller than the flat amount for your filing status, or equal to it. It needs only your filing status, your age, and whether you are blind. Itemize if your capped Schedule A total is larger, or if your standard deduction is limited because another taxpayer claims you as a dependent. The standard deduction recommendation does not serve married people filing separately whose spouse itemizes, nonresident or dual-status aliens outside the spouse-election exception, filers of short-year returns after an accounting period change, or estates, trusts, common trust funds, and partnerships. Those filers must itemize, so their job is to document every allowable Schedule A item. Our answer flips toward itemizing in a year with heavy mortgage interest, property taxes, charitable gifts, or medical bills, because those costs can push your Schedule A total past the flat amount. Total your Schedule A items, look up the current standard amount for your filing status on [IRS Topic 501](https://www.irs.gov/taxtopics/tc501), and claim the larger figure in the standard deduction vs itemized deduction comparison.",
+  "faqItems": [
+    {
+      "question": "Should I take the standard deduction or itemize?",
+      "answer": "Take whichever is larger. The standard deduction is a flat amount based on your filing status, and you should itemize on Schedule A only if your total allowable itemized deductions are greater than that amount. You must also itemize if you cannot use the standard deduction, for example when you file separately and your spouse itemizes."
+    },
+    {
+      "question": "Can I take both the standard deduction and itemize?",
+      "answer": "No. You choose one method for each return. Add up your allowable Schedule A items, compare that total to the standard deduction for your filing status, and claim only the larger of the two."
+    },
+    {
+      "question": "Can I switch between standard and itemized from year to year?",
+      "answer": "Yes. The choice is made on each return, so run the comparison again every year. The standard amount changes with inflation, and your Schedule A total changes with what you paid, so last year's answer may not hold this year."
+    },
+    {
+      "question": "What if my spouse itemizes and we file separately?",
+      "answer": "You must itemize too. If you are married filing separately and your spouse itemizes, you cannot take the standard deduction, even if your own itemized total is small. Compare both spouses' totals before deciding to file separately."
+    },
+    {
+      "question": "Does the standard deduction change every year?",
+      "answer": "Yes. The IRS adjusts the standard deduction annually for inflation, and filers who are 65 and older or blind may get an additional amount. Look up the current figure for your filing status on [IRS Topic 501](https://www.irs.gov/taxtopics/tc501) before you compare it to your itemized total."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

@@ -1,0 +1,277 @@
+{
+ "slug": "standard-vs-itemized-deduction",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1961,
+ "floor": 1500,
+ "input_tokens": 29779,
+ "output_tokens": 13459,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.3883,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "thin fact list: \u2248363 fact words for a 1500-word floor (ratio 0.24); expand it with sourced facts before any regeneration"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1961,
+  "numbers_not_in_facts": [
+   "502"
+  ],
+  "fact_budget": {
+   "fact_words": 363,
+   "floor": 1500,
+   "ratio": 0.24,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    13,
+    2,
+    15
+   ],
+   "applied": [
+    {
+     "id": "comparisonTable.rows[3].b",
+     "quote": "Schedule A (Form 1040), with each category reported separately",
+     "replacement": "Schedule A (Form 1040)",
+     "type": "unsupported",
+     "why": "SOURCE names Schedule A only; separate category reporting not stated"
+    },
+    {
+     "id": "comparisonTable.rows[6].b",
+     "quote": "Available to every filer, and required for anyone barred from the standard deduction",
+     "replacement": "Required for anyone barred from the standard deduction",
+     "type": "unsupported",
+     "why": "SOURCE never says itemizing is available to every filer"
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "If the standard deduction is larger, or the two totals match, take the standard deduction, since it gives at least the same reduction without filling out Schedule A.",
+     "replacement": "If the standard deduction is larger, or the two totals match, take the standard deduction.",
+     "type": "inference",
+     "why": "SOURCE does not state the reason about skipping Schedule A"
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "A year with no mortgage interest, few gifts to charity, and no disaster or gambling losses is the typical picture.",
+     "replacement": "A year with no mortgage interest, few gifts to charity, and no disaster or gambling losses is one example.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe a typical case"
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "The standard deduction also asks less of you.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE makes no comparison of effort between methods"
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "If you take the standard deduction, your remaining chances to lower the bill come from credits, account contributions, and filing choices.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Credits, contributions, filing choices not in SOURCE"
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Our [Tax Tips](/guides/tax-tips/) guide covers those next steps.",
+     "replacement": "Our [Tax Tips](/guides/tax-tips/) guide covers more.",
+     "type": "unsupported",
+     "why": "Refers to deleted unsupported claim about other tax-lowering steps"
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "The total grows fastest in a year when several categories land at once.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this"
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Buying a home, for example, can add mortgage interest and real property taxes in the same year.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Home-buying scenario not in SOURCE"
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Every one of these categories is subject to dollar limits set by the IRS.",
+     "replacement": "Itemized deductions are subject to dollar limitations.",
+     "type": "inference",
+     "why": "SOURCE says itemized deductions are subject to dollar limitations, not each category"
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "The most common way to get this comparison wrong is to use a standard deduction figure from a prior year.",
+     "replacement": "One way to get this comparison wrong is to use a standard deduction figure from a prior year.",
+     "type": "unsupported",
+     "why": "SOURCE gives no frequency ranking of mistakes"
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "Couples filing separately sometimes treat the decision as two independent choices.",
+     "replacement": "Couples filing separately cannot treat the decision as two independent choices.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe what couples typically do"
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "Once your deduction is set, the rest of the return turns on what kind of income you have.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE says nothing about income types driving the return"
+    },
+    {
+     "id": "introText",
+     "quote": "The flat amount is the default starting point.",
+     "replacement": "Start from the flat amount for your filing status.",
+     "type": "unsupported",
+     "why": "SOURCE fact list never calls the standard deduction the default."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Medical expenses have their own IRS rules, laid out in [Topic 502](https://www.irs.gov/taxtopics/tc502).",
+     "replacement": "Only certain medical expenses count; see [Topic 502](https://www.irs.gov/taxtopics/tc502).",
+     "type": "unsupported",
+     "why": "SOURCE does not say what Topic 502 covers or that it has medical rules."
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we write every tax guide around the number you need to find, and here that number is the total of your Schedule A items.",
+     "replacement": "Here the number you need to find is the total of your Schedule A items.",
+     "type": "unsupported",
+     "why": "Site self-description does not support this specific first-person claim about tax guides."
+    },
+    {
+     "id": "comparisonTable.rows[1].b",
+     "quote": "The sum of your allowable expenses in each Schedule A category, after the IRS dollar limits for each category",
+     "replacement": "Not published",
+     "type": "inference",
+     "why": "SOURCE says deductions subject to dollar limitations, not per-category limits."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "These categories carry dollar limits, so count only the allowed amount in each one.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE says deductions are subject to dollar limitations, not per-category."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "Our [Tax Deductions Checklist](/guides/tax-deductions-checklist/) lists the paperwork to gather before you start adding.",
+     "replacement": "See our [Tax Deductions Checklist](/guides/tax-deductions-checklist/) before you start adding.",
+     "type": "unsupported",
+     "why": "Content of linked guide not stated in SOURCE."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "You do not total categories or work through category limits.",
+     "replacement": "You do not total itemized categories.",
+     "type": "inference",
+     "why": "SOURCE does not describe category limits."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "If you give through a congregation, our guide on whether [church donations are tax deductible](/guides/are-church-donations-tax-deductible/) walks through how those gifts fit on Schedule A.",
+     "replacement": "See also our guide on whether [church donations are tax deductible](/guides/are-church-donations-tax-deductible/).",
+     "type": "unsupported",
+     "why": "Linked guide content not stated in SOURCE."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "If you use a health savings or flexible spending account, our [HSA vs FSA](/compare/hsa-vs-fsa/) comparison explains how each account works.",
+     "replacement": "See also our [HSA vs FSA](/compare/hsa-vs-fsa/) comparison.",
+     "type": "unsupported",
+     "why": "Linked page content not stated in SOURCE."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Add the allowed amount for each category, never the raw amount you paid.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE gives no per-category limit detail."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Save property tax bills, mortgage interest statements, receipts for gifts to charity, and medical bills.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE lists no specific document types."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "For disaster and gambling losses, keep the records that show what you lost and when.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE states no recordkeeping requirements for losses."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Give each category its own line, apply the IRS limit for that category, and total the column only after every line is capped.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE gives no per-category limits."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Our [Common Tax Filing Mistakes](/guides/common-tax-filing-mistakes/) guide covers other errors to catch before you file.",
+     "replacement": "See also our [Common Tax Filing Mistakes](/guides/common-tax-filing-mistakes/) guide.",
+     "type": "unsupported",
+     "why": "Linked guide content not in SOURCE."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Before either of you files separately, add up both itemized totals and agree on which method both returns will use.",
+     "replacement": "Before either of you files separately, add up both itemized totals.",
+     "type": "inference",
+     "why": "SOURCE doesn't say both returns must use the same method."
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "Schedule A categories are subject to dollar limits, and an uncapped total can make itemizing look better than it is.",
+     "replacement": "Itemized deductions are subject to dollar limitations, and an uncapped total can make itemizing look better than it is.",
+     "type": "inference",
+     "why": "SOURCE says itemized deductions subject to dollar limitations, nothing more."
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "Our [Ordinary Income vs Capital Gains Tax](/compare/ordinary-income-vs-capital-gains-tax/) comparison covers how different types of income are taxed.",
+     "replacement": "See also our [Ordinary Income vs Capital Gains Tax](/compare/ordinary-income-vs-capital-gains-tax/) comparison.",
+     "type": "unsupported",
+     "why": "Linked page content not in SOURCE."
+    }
+   ],
+   "deleted_final": 15,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2240
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 206.0,
+ "response_id": "msg_011Cfx1YCsKvVxXx35nySFEB",
+ "generated_at": "2026-10-12T08:18:35+0000"
+}

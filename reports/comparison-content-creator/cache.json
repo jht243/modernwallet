@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-10-05",
+ "lastRun": "2026-10-12",
  "dropped": [
   {
    "slug": "equipment-financing-vs-sba-loan",
@@ -563,6 +563,62 @@
    "slug": "zelle-vs-venmo",
    "reason": "off-niche payments app, 2026-10-05",
    "score": 0
+  },
+  {
+   "slug": "vym-vs-vig",
+   "optionA": "VYM",
+   "optionB": "VIG",
+   "reason": "measured 1900/mo but not selected this run (capacity); candidate for next run (2026-10-12)",
+   "score": 0
+  },
+  {
+   "slug": "paypal-vs-venmo",
+   "optionA": "PayPal",
+   "optionB": "Venmo",
+   "reason": "2900/mo; payments-app fit weak for the site (2026-10-12)",
+   "score": 0
+  },
+  {
+   "slug": "cash-app-vs-venmo",
+   "optionA": "Cash App",
+   "optionB": "Venmo",
+   "reason": "2900/mo; payments-app fit weak (2026-10-12)",
+   "score": 0
+  },
+  {
+   "slug": "spy-vs-qqq",
+   "optionA": "SPY",
+   "optionB": "QQQ",
+   "reason": "2400/mo; partially covered by voo-vs-spy-vs-qqq (2026-10-12)",
+   "score": 0
+  },
+  {
+   "slug": "roth-ira-vs-brokerage-account",
+   "optionA": "Roth IRA",
+   "optionB": "Brokerage Account",
+   "reason": "3600/mo; DUPLICATE of brokerage-vs-ira (2026-10-12)",
+   "score": 0
+  },
+  {
+   "slug": "vxus-vs-vti",
+   "optionA": "VXUS",
+   "optionB": "VTI",
+   "reason": "1300/mo; next-run candidate (2026-10-12)",
+   "score": 0
+  },
+  {
+   "slug": "coinbase-vs-robinhood",
+   "optionA": "Coinbase",
+   "optionB": "Robinhood",
+   "reason": "1300/mo; crypto off-niche (2026-10-12)",
+   "score": 0
+  },
+  {
+   "slug": "schg-vs-vug",
+   "optionA": "SCHG",
+   "optionB": "VUG",
+   "reason": "1000/mo; next-run candidate (2026-10-12)",
+   "score": 0
   }
  ],
  "published": [
@@ -1117,6 +1173,31 @@
    "slug": "checking-vs-savings-account",
    "format": "comparison",
    "date": "2026-10-05"
+  },
+  {
+   "slug": "standard-vs-itemized-deduction",
+   "format": "comparison",
+   "date": "2026-10-12"
+  },
+  {
+   "slug": "credit-card-vs-debit-card",
+   "format": "comparison",
+   "date": "2026-10-12"
+  },
+  {
+   "slug": "fico-score-vs-vantagescore",
+   "format": "comparison",
+   "date": "2026-10-12"
+  },
+  {
+   "slug": "vtsax-vs-vti",
+   "format": "comparison",
+   "date": "2026-10-12"
+  },
+  {
+   "slug": "vfiax-vs-voo",
+   "format": "comparison",
+   "date": "2026-10-12"
   }
  ]
 }

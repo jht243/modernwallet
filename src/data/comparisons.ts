@@ -30,6 +30,607 @@ export interface ComparisonEntry {
 }
 
 export const COMPARISONS: ComparisonEntry[] = [
+  // ── comparison-content-auto 2026-10-12 ──
+  {
+    "updated": "2026-10-12",
+    "slug": "standard-vs-itemized-deduction",
+    "title": "Standard Deduction vs Itemized Deductions on Form 1040",
+    "metaDescription": "Standard deduction vs itemized deduction: add up your Schedule A items, compare the total to the flat amount for your filing status, and take the larger.",
+    "targetKeyword": "standard deduction vs itemized deduction",
+    "optionA": "Standard Deduction",
+    "optionB": "Itemized Deductions",
+    "segment": "tax",
+    "h1": "Standard Deduction vs Itemized Deductions on a Federal Tax Return",
+    "introText": "Take whichever deduction is larger. The standard deduction is a flat amount set by your filing status, and itemizing only pays off when your allowable deductions add up to more than that flat amount. That one comparison settles the standard deduction vs itemized deduction choice on any return where both options are open to you.\n\nHere the number you need to find is the total of your Schedule A items. Deductions reduce your taxable income, according to the [Internal Revenue Service (IRS)](https://www.irs.gov/taxtopics/tc501). In general, you either take the standard deduction or itemize, and you pick one method for each return.\n\nStart from the flat amount for your filing status. Itemizing is the alternative you test against it.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Who it is for",
+          "a": "Filers whose standard amount is larger than their allowable itemized total, and who are allowed to use it",
+          "b": "Filers whose allowable Schedule A total is larger, plus filers who cannot use the standard deduction at all"
+        },
+        {
+          "dimension": "How the amount is set",
+          "a": "A flat amount based on filing status, with an additional amount for filers 65 and older or blind, adjusted each year for inflation",
+          "b": "Not published"
+        },
+        {
+          "dimension": "What you must track or document",
+          "a": "Your filing status, your age, and whether you are blind",
+          "b": "Every expense you add, such as tax bills, mortgage interest, charity gifts, medical bills, and disaster or gambling losses"
+        },
+        {
+          "dimension": "Schedule or form used",
+          "a": "No Schedule A; the flat amount for your filing status applies",
+          "b": "Schedule A (Form 1040)"
+        },
+        {
+          "dimension": "Common deductions that count",
+          "a": "None to add up; the amount does not depend on what you spent",
+          "b": "State and local income or sales taxes, real and personal property taxes, mortgage interest, charity gifts, disaster losses, and certain gambling losses and medical expenses"
+        },
+        {
+          "dimension": "When it wins",
+          "a": "When it is larger than your allowable itemized total, or when the two are equal",
+          "b": "When your allowable itemized total is larger, or when your standard deduction is limited because someone claims you as a dependent"
+        },
+        {
+          "dimension": "Filing statuses and restrictions",
+          "a": "Not available if you file separately and your spouse itemizes, file a short-year return after an accounting period change, are a nonresident or dual-status alien (spouse-election exception), or file for an estate, trust, common trust fund, or partnership",
+          "b": "Required for anyone barred from the standard deduction"
+        }
+      ]
+    },
+    "verdict": "Take the standard deduction if your allowable Schedule A total comes out smaller than the flat amount for your filing status, or equal to it. It needs only your filing status, your age, and whether you are blind. Itemize if your capped Schedule A total is larger, or if your standard deduction is limited because another taxpayer claims you as a dependent. The standard deduction recommendation does not serve married people filing separately whose spouse itemizes, nonresident or dual-status aliens outside the spouse-election exception, filers of short-year returns after an accounting period change, or estates, trusts, common trust funds, and partnerships. Those filers must itemize, so their job is to document every allowable Schedule A item. Our answer flips toward itemizing in a year with heavy mortgage interest, property taxes, charitable gifts, or medical bills, because those costs can push your Schedule A total past the flat amount. Total your Schedule A items, look up the current standard amount for your filing status on [IRS Topic 501](https://www.irs.gov/taxtopics/tc501), and claim the larger figure in the standard deduction vs itemized deduction comparison.",
+    "sections": [
+      {
+        "heading": "How to Decide on Standard Deduction vs Itemized Deduction",
+        "content": "You should itemize when your total allowable itemized deductions are greater than your standard deduction, and take the standard deduction in every other case where you are allowed to use it. The IRS states the rule that way in [Topic 501](https://www.irs.gov/taxtopics/tc501). A second trigger applies too: you must itemize if you cannot use the standard deduction at all.\n\nStart with the standard side. The amount depends on your filing status: single, married filing separately, married filing jointly, head of household, or qualifying surviving spouse. If you are 65 or older, or blind, you may get an additional amount on top of the base figure.\n\nThe IRS adjusts the standard deduction every year for inflation. A figure copied from an old return may be wrong for the year you are filing. Look up the current amount for your filing status on [IRS Topic 501](https://www.irs.gov/taxtopics/tc501) before you compare anything.\n\nThen build the itemized side. Add up each allowable expense you paid during the year in the Schedule A categories: state and local income or sales taxes, real property taxes, personal property taxes, mortgage interest, disaster losses, gifts to charity, and certain gambling losses and medical expenses. \n\nPut the two totals side by side. If the Schedule A total is larger, itemize. If the standard deduction is larger, or the two totals match, take the standard deduction.\n\nSee our [Tax Deductions Checklist](/guides/tax-deductions-checklist/) before you start adding."
+      },
+      {
+        "heading": "When the Standard Deduction Wins",
+        "content": "The standard deduction wins whenever it is larger than your allowable itemized total and nothing in your filing situation bars you from using it. That happens when your Schedule A categories add up to a small figure. A year with no mortgage interest, few gifts to charity, and no disaster or gambling losses is one example.\n\nThe additional amount for filers who are 65 and older or blind raises the standard figure. A higher standard figure means your itemized total has to be higher before itemizing comes out ahead. If either condition applies to you or your spouse, include that additional amount before you compare.\n\n You need your filing status and, where they apply, your age and whether you are blind. You do not total itemized categories.\n\n Our [Tax Tips](/guides/tax-tips/) guide covers more."
+      },
+      {
+        "heading": "When Itemizing Wins",
+        "content": "Itemizing wins when your allowable Schedule A deductions add up to more than the standard deduction for your filing status. \n\nGroup the categories as you add them. Taxes paid include state and local income or sales taxes, real property taxes, and personal property taxes. Housing costs cover mortgage interest.\n\nGifts to charity form their own category. See also our guide on whether [church donations are tax deductible](/guides/are-church-donations-tax-deductible/).\n\nThe last group covers losses and health costs: disaster losses, certain gambling losses, and certain medical expenses. Only certain medical expenses count; see [Topic 502](https://www.irs.gov/taxtopics/tc502). See also our [HSA vs FSA](/compare/hsa-vs-fsa/) comparison.\n\nItemized deductions are subject to dollar limitations. The capped total is the number you compare to the standard deduction."
+      },
+      {
+        "heading": "Records to Keep If You Itemize",
+        "content": "Itemizing means you report each category on Schedule A (Form 1040), so keep the paperwork behind every figure you add. \n\nBuild a simple worksheet before you touch the return. That column total is the figure you hold up against the standard amount.\n\nIf you cannot document a figure, leave it out of the comparison. A Schedule A total that depends on an amount you cannot back up gives you a false reading. See also our [Common Tax Filing Mistakes](/guides/common-tax-filing-mistakes/) guide."
+      },
+      {
+        "heading": "Filing Situations That Rule Out the Standard Deduction",
+        "content": "Some filers cannot take the standard deduction at all, and for them itemizing is required whatever the totals show. You cannot use the standard deduction if you are married filing separately and your spouse itemizes. The same bar applies if you file a return for less than 12 months because of a change in accounting period.\n\nNonresident aliens and dual-status aliens also cannot take the standard deduction, with an exception tied to a spouse election. Read the exact terms of that exception on [IRS Topic 501](https://www.irs.gov/taxtopics/tc501) before you assume it covers you. Returns filed for an estate, trust, common trust fund, or partnership cannot use the standard deduction either.\n\nThe married filing separately rule changes the math for couples. If your spouse itemizes on a separate return, you must itemize too, even if your own Schedule A total sits far below the standard amount you would otherwise get. Before either of you files separately, add up both itemized totals.\n\nFor these filers, the comparison step drops out. The work shifts to building the most complete allowable Schedule A total you can document."
+      },
+      {
+        "heading": "Dependents and a Limited Standard Deduction",
+        "content": "If another taxpayer claims you as a dependent, your standard deduction may be limited, and that can make itemizing the better choice. A limited standard figure is easier to beat. A modest Schedule A total that would lose against the full amount can come out ahead.\n\nThe usual comparison misleads here. If someone claims you, compare your itemized total against your limited standard amount. Do not compare it against the full amount for your filing status.\n\nFind the limited figure on [IRS Topic 501](https://www.irs.gov/taxtopics/tc501), then run the same side-by-side test. If you paid state or local taxes, gave to charity, or had qualifying medical costs on your own, those items may be enough to tip the result."
+      },
+      {
+        "heading": "Mistakes in the Standard Deduction vs Itemized Deduction Comparison",
+        "content": "One way to get this comparison wrong is to use a standard deduction figure from a prior year. The IRS adjusts the amount annually for inflation, so look up the current figure every time you file.\n\nCounting raw spending is the next trap. Itemized deductions are subject to dollar limitations, and an uncapped total can make itemizing look better than it is.\n\nLeaving out the additional amount for filers 65 and older or blind does the opposite. It makes the standard side look smaller and can push you toward itemizing when the flat amount would have been larger.\n\nYou also cannot claim both methods on one return. Pick one, and if you itemize, let Schedule A carry the whole deduction.\n\nCouples filing separately cannot treat the decision as two independent choices. If one spouse itemizes, the other must itemize too.\n\n See also our [Ordinary Income vs Capital Gains Tax](/compare/ordinary-income-vs-capital-gains-tax/) comparison. Your next step is concrete: total your capped Schedule A items and set the result next to the standard amount for your filing status."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Should I take the standard deduction or itemize?",
+        "answer": "Take whichever is larger. The standard deduction is a flat amount based on your filing status, and you should itemize on Schedule A only if your total allowable itemized deductions are greater than that amount. You must also itemize if you cannot use the standard deduction, for example when you file separately and your spouse itemizes."
+      },
+      {
+        "question": "Can I take both the standard deduction and itemize?",
+        "answer": "No. You choose one method for each return. Add up your allowable Schedule A items, compare that total to the standard deduction for your filing status, and claim only the larger of the two."
+      },
+      {
+        "question": "Can I switch between standard and itemized from year to year?",
+        "answer": "Yes. The choice is made on each return, so run the comparison again every year. The standard amount changes with inflation, and your Schedule A total changes with what you paid, so last year's answer may not hold this year."
+      },
+      {
+        "question": "What if my spouse itemizes and we file separately?",
+        "answer": "You must itemize too. If you are married filing separately and your spouse itemizes, you cannot take the standard deduction, even if your own itemized total is small. Compare both spouses' totals before deciding to file separately."
+      },
+      {
+        "question": "Does the standard deduction change every year?",
+        "answer": "Yes. The IRS adjusts the standard deduction annually for inflation, and filers who are 65 and older or blind may get an additional amount. Look up the current figure for your filing status on [IRS Topic 501](https://www.irs.gov/taxtopics/tc501) before you compare it to your itemized total."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS, Topic no. 501, Should I itemize?",
+        "url": "https://www.irs.gov/taxtopics/tc501"
+      },
+      {
+        "label": "IRS, Topic no. 502, Medical and dental expenses",
+        "url": "https://www.irs.gov/taxtopics/tc502"
+      }
+    ],
+    "relatedComparisons": [
+      "ordinary-income-vs-capital-gains-tax",
+      "hsa-vs-fsa"
+    ]
+  },
+  {
+    "updated": "2026-10-12",
+    "slug": "credit-card-vs-debit-card",
+    "title": "Credit Card vs Debit Card: Which to Use Every Day",
+    "metaDescription": "Credit card vs debit card compared on whose money you spend, stolen-card liability, credit history, interest, and overspending, with a clear pick.",
+    "targetKeyword": "credit card vs debit card",
+    "optionA": "Credit Card",
+    "optionB": "Debit Card",
+    "segment": "banking",
+    "h1": "Credit Card vs Debit Card for Everyday Spending",
+    "introText": "For everyday purchases, a credit card is the better pick if you pay the full statement balance every month, and a debit card is the better pick if you tend to carry a balance. The credit card vs debit card choice comes down to whose money leaves first, the lender's or yours.\n\nThat difference shows up in three places. It decides what happens to your cash when a card is stolen. It also decides whether your spending builds a credit history and what you pay if a bill goes unpaid.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Source of the money",
+          "a": "Borrowed from the card issuer and repaid later when the statement arrives",
+          "b": "Taken directly from money already in your checking account"
+        },
+        {
+          "dimension": "Effect on credit history",
+          "a": "The issuer reports purchases and on-time payments to the credit bureaus, which can build a credit history if you manage the card well",
+          "b": "Generally not a credit-building activity, so everyday use does not add to your credit history"
+        },
+        {
+          "dimension": "What happens if the card is stolen",
+          "a": "Covered by separate federal dispute protections, and the dispute is over money the lender fronted. Liability terms are in your card agreement",
+          "b": "Losses come out of your account first. Your share is capped at $50 or less if reported within two business days, and can reach $500 after that"
+        },
+        {
+          "dimension": "Cost if you carry a balance",
+          "a": "Interest is charged on any balance you do not pay in full",
+          "b": "No interest, because there is no borrowed balance to carry"
+        },
+        {
+          "dimension": "Overdraft or fee exposure",
+          "a": "Not published",
+          "b": "Can trigger overdraft or other bank fees, depending on how the account is set up"
+        },
+        {
+          "dimension": "Rewards potential",
+          "a": "Many cards offer rewards on purchases",
+          "b": "Not published"
+        },
+        {
+          "dimension": "Budgeting control",
+          "a": "Your own discipline sets the pace until the statement arrives",
+          "b": "Spending stops at your checking balance, unless an overdraft lets a purchase through"
+        }
+      ]
+    },
+    "verdict": "Use a credit card for everyday purchases if you pay the full statement balance every month. You get a credit history built from on-time payments and rewards on many cards. A fraud dispute is also over the lender's money instead of your checking balance. Use a debit card if you carry a balance or expect to, because a credit card charges interest on every unpaid dollar while a debit card charges none.\n\nThis recommendation is not for anyone who carries credit card debt from month to month. If that describes you, keep everyday spending on debit and use the [Credit Card Payoff Calculator](/credit-card-payoff/) to plan the payoff first. The answer flips the month you stop paying in full, because a rolled-over balance starts costing interest that a debit card would never have charged. \n\nBefore you settle the credit card vs debit card question, pull out your card agreement and read its section on disputes and unauthorized charges. Then set autopay for the full statement balance.",
+    "sections": [
+      {
+        "heading": "Whose Money You Are Spending with a Credit Card vs Debit Card",
+        "content": "A credit card spends the card issuer's money and bills you later, while a debit card pulls money straight from your checking account. With credit, you are borrowing. With debit, you are paying with cash you already have.\n\nMost of the other differences follow from that. The issuer reports your purchases and on-time payments to the credit bureaus, which can help build a credit history if you manage the card well. A debit card creates no debt, so there is nothing to repay, but a thief or a billing error hits your checking balance first.\n\nThe cost side flips the picture. A credit card charges interest on any balance you do not pay in full, while a debit card charges no interest but can trigger overdraft or other bank fees depending on your account.\n\nIf you are choosing where your spending money sits, our [Checking vs Savings Account](/compare/checking-vs-savings-account/) comparison lays out both account types."
+      },
+      {
+        "heading": "What Happens When a Card Is Stolen",
+        "content": "A stolen debit card puts your own money at risk first, and how much you can lose depends on how fast you report it. The [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/how-do-i-get-my-money-back-after-i-discover-an-unauthorized-transaction-or-money-missing-from-my-bank-account-en-1017/) lays out the timing rules for debit card losses.\n\nReport a lost or stolen debit card to your bank or credit union within two business days of discovering it, and you cannot be held responsible for more than $50 or the amount of the unauthorized transactions, whichever is less. Wait longer than two business days, and you could be responsible for up to $500.\n\nA separate clock runs on your statement. If an unauthorized withdrawal shows up there, notify the bank within 60 days. Wait longer, and you could also have to pay the full amount of any transactions that happened after the 60-day period and before you told the bank.\n\nTake an $800 fraudulent charge as an example. Reported within two business days, your share is capped at $50; reported on the third business day or later, your share could reach $500, which is $450 more for the same theft. On a $30 charge reported in time, your share is $30, because the lesser of the two amounts applies.\n\nGetting the money back takes time. Once you notify the bank of an unauthorized transaction, it generally has ten business days to investigate. It must correct an error within one business day after determining one occurred, and then has three business days to report its findings.\n\nDuring those days, the money is already gone from your account. A debit dispute can leave you short on cash while the bank investigates. A credit card dispute works differently, because it is a disagreement over money the lender fronted and your checking balance is not the money in question.\n\nCredit cards carry their own federal dispute protections. We do not state a liability dollar figure for credit cards here. The terms that apply to your account are in your card agreement, so read its section on unauthorized charges before you rely on any number."
+      },
+      {
+        "heading": "Credit History and the Cost of Carrying a Balance",
+        "content": "A credit card can help build your credit history, and a debit card generally cannot. The card issuer reports your purchases and on-time payments to the credit bureaus, so a card you use and pay on time adds a record of borrowing and repaying. Debit card use is generally not a credit-building activity, and you should confirm with your issuer how your own card reports.\n\nFor the scoring side, the CFPB explains [what a FICO score is](https://www.consumerfinance.gov/ask-cfpb/what-is-a-fico-score-en-315/). Our guide on [what makes a good credit score](/guides/what-is-a-good-credit-score/) covers that question. If you are weighing your first credit card, our [Secured vs Unsecured Credit Card](/compare/secured-credit-card-vs-unsecured-credit-card/) comparison walks through both types.\n\nThe credit-building benefit has a price if the balance rolls over. A credit card charges interest on any balance you do not pay in full. A debit card has no borrowed balance and charges no interest.\n\nIf you already carry a balance, our [Credit Card Payoff Calculator](/credit-card-payoff/) can help you plan the payoff. We do not state an interest rate on this page, so enter the rate from your own card when you run the numbers."
+      },
+      {
+        "heading": "Credit or Debit for Budgeting and Overspending",
+        "content": "A debit card enforces a spending ceiling and a credit card does not, which is the main budgeting difference between them. With debit, you can spend only what is in your checking account, unless an overdraft lets a purchase go through and triggers a fee depending on your account. With credit, you spend the lender's money first and see the total when the statement arrives, so your own discipline sets the pace until the bill comes.\n\n If the money for a purchase is already sitting in checking, putting it on a credit card and paying the full statement balance gives you the credit-history benefit with no interest. If the money is not there, the card is lending you the difference, and interest starts on whatever you do not pay in full.\n\nYou can borrow debit's ceiling while using credit. Track your card spending against your checking balance, and treat each charge as money already spent from that account. Setting autopay for the full statement balance removes the chance that a forgotten payment turns into interest.\n\nThe inversion case matters for some readers. If you know you will not pay in full, debit's ceiling protects you from interest a credit card would add."
+      },
+      {
+        "heading": "Rewards and Fees in the Credit Card vs Debit Card Decision",
+        "content": "Many credit cards offer rewards on purchases, while debit cards carry no interest but can trigger overdraft or other bank fees depending on the account. Rewards and interest land on the same purchases. If you pay in full, you keep the rewards and pay no interest; if you carry a balance, the interest on those purchases cuts into whatever the rewards returned.\n\nWe do not list reward rates or fee amounts on this page. If rewards are part of your reason for choosing credit, our [Best Cash Back Credit Cards](/roundup/best-cash-back-credit-cards/) roundup compares specific cards.\n\nOn the debit side, the cost to watch is overdraft and other bank fees, which depend on how your checking account is set up."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is it better to use a credit card or a debit card?",
+        "answer": "A credit card is better if you pay the full statement balance every month, because it can build credit history and a fraud loss does not come out of your checking account first. A debit card is better if you tend to carry a balance, since it charges no interest and limits spending to the money in your account, apart from overdrafts."
+      },
+      {
+        "question": "Is a debit card safer than a credit card?",
+        "answer": "The two cards handle fraud differently, and the difference is whose money is at stake. With a debit card, stolen money leaves your checking account first. The CFPB says your loss is capped at $50 or the unauthorized amount, whichever is less, if you report within two business days, and can reach $500 after that. Credit cards have their own federal dispute protections over money the lender fronted, and your card agreement sets out the exact terms."
+      },
+      {
+        "question": "Does using a debit card build credit?",
+        "answer": "Debit card use is generally not a credit-building activity. Credit card issuers report purchases and on-time payments to the credit bureaus, which can help build a credit history if you manage the card well. Confirm with your own issuer how your card reports."
+      },
+      {
+        "question": "What happens if my debit card is stolen?",
+        "answer": "Your money is at risk until you report it, so notify your bank or credit union as soon as you discover the loss. Within two business days, your responsibility is capped at $50 or the unauthorized amount, whichever is less; after two business days, it can reach $500. The bank generally has ten business days to investigate, must correct a confirmed error within one business day, and then has three business days to report its findings, according to the CFPB."
+      },
+      {
+        "question": "Should I use a credit card for everyday purchases?",
+        "answer": "Yes, if you pay the full statement balance every month. Everyday purchases on a credit card can build credit history and, on many cards, earn rewards, with no interest when the balance is paid in full. If you cannot pay in full, put daily spending on debit so interest never builds on groceries and gas."
+      }
+    ],
+    "sources": [
+      {
+        "label": "CFPB, How do I get my money back after an unauthorized transaction?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/how-do-i-get-my-money-back-after-i-discover-an-unauthorized-transaction-or-money-missing-from-my-bank-account-en-1017/"
+      },
+      {
+        "label": "CFPB, What is a credit score?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-fico-score-en-315/"
+      }
+    ],
+    "relatedComparisons": [
+      "checking-vs-savings-account",
+      "secured-credit-card-vs-unsecured-credit-card",
+      "credit-union-vs-bank"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "Credit card payoff calculator",
+        "href": "/credit-card-payoff/"
+      }
+    ]
+  },
+  {
+    "updated": "2026-10-12",
+    "slug": "fico-score-vs-vantagescore",
+    "title": "FICO Score vs VantageScore for Loans and Free Apps",
+    "metaDescription": "FICO Score vs VantageScore use the same 300 to 850 range but different formulas. See why your two scores differ and how to find the one your lender pulls.",
+    "targetKeyword": "FICO score vs VantageScore",
+    "optionA": "FICO Score",
+    "optionB": "VantageScore",
+    "segment": "credit",
+    "h1": "FICO Score vs VantageScore on the Same Credit Report",
+    "introText": "[FICO Score](https://www.fico.com/en/products/fico-score) and [VantageScore](https://www.vantagescore.com) are two competing credit scoring models that both read your credit report and both generally run from 300 to 850. The practical difference in FICO Score vs VantageScore is which model a given lender pulls and how each one handles a thin or recent credit file. At ModernWallet, we publish free calculators and plain-language money guides, and every credit guide we write starts from the score the lender will read.\n\nThe [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-a-fico-score-en-315/) states that you do not have just one credit score. A score can differ by scoring model, by data source, and even by the day it was calculated. Two different numbers on two screens can both be legitimate readings of the same credit history.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Brand behind the score",
+          "a": "The FICO brand, one of the two best-known credit scoring brands",
+          "b": "The VantageScore brand, the other best-known credit scoring brand"
+        },
+        {
+          "dimension": "Typical score range",
+          "a": "300 to 850 in its widely used versions, the same range the CFPB gives for most credit scores",
+          "b": "300 to 850 in its widely used versions, so the number alone does not reveal which model produced it"
+        },
+        {
+          "dimension": "Data source",
+          "a": "Credit report data from the credit bureaus, run through the FICO formula",
+          "b": "The same kind of credit bureau data, run through the separate VantageScore formula"
+        },
+        {
+          "dimension": "Common lender use",
+          "a": "Many mortgage, auto, and credit card lenders use a FICO version",
+          "b": "Lenders can choose it, so ask the lender on each application which model and version it pulls"
+        },
+        {
+          "dimension": "Treatment of newer credit files",
+          "a": "Scores thin or recent files under its own rules",
+          "b": "Scores thin or recent files under different rules from FICO"
+        },
+        {
+          "dimension": "Where consumers usually see it",
+          "a": "In lending decisions at the many mortgage, auto, and card lenders that use a FICO version",
+          "b": "On some free credit monitoring services"
+        },
+        {
+          "dimension": "Versions",
+          "a": "Comes in multiple versions, and each lender picks the version it uses",
+          "b": "Not published"
+        }
+      ]
+    },
+    "verdict": "Watch the FICO Score if a lender confirms it pulls a FICO version for a mortgage, auto loan, or credit card application, because that number drives the decision. Treat a free VantageScore as a trend line between applications. It shows whether your habits are moving your credit in the right direction, even though its number will not match the lender's. This advice does not serve a borrower whose lender says it pulls VantageScore. In that case, watch VantageScore closely and use any FICO number you can get as the trend line instead. It also does not serve someone with a thin or recent file who needs an exact score to clear a lender's cutoff, because each model scores thin files under its own rules. That borrower should ask the lender for the exact score it used and read our secured card comparison before applying for new credit. Our answer would change if a lender told you it uses VantageScore, or if a free service began showing the same model and version your lender pulls, because the free number would then track the decision directly. Before your next application, ask the lender whether it pulls a FICO Score or a VantageScore, and which version.",
+    "sections": [
+      {
+        "heading": "Two Models, One Credit Report",
+        "content": "FICO and VantageScore are two scoring brands that run the same kind of credit report data through different formulas. The CFPB describes a credit score as a prediction of your credit behavior, such as how likely you are to pay a loan back on time. Companies build that prediction with a scoring model, which is a mathematical formula applied to the information in your credit report.\n\nThe data both models read comes from the credit bureaus. Both brands use the 300 to 850 range in their widely used versions, and the CFPB notes that most credit scores fall in that range. Because the scales match, a FICO number and a VantageScore number look interchangeable on a screen, even though separate formulas produced them.\n\nLenders choose which model and which version they use. Many mortgage, auto, and credit card lenders use a FICO version, and some free credit monitoring services show VantageScore. For any single application, the score that counts is the one that lender pulls, so ask the lender which model and version it uses.\n\nEach model also has its own way of scoring a thin or recent credit file, meaning a report with little history on it. We do not quote a minimum credit history for either one. If your file is thin, read our comparison of [secured vs unsecured credit cards](/compare/secured-credit-card-vs-unsecured-credit-card/) and our list of the [best secured credit cards](/roundup/best-secured-credit-cards/) before you apply for a first card."
+      },
+      {
+        "heading": "Why Your Two Scores Do Not Match",
+        "content": "Your FICO Score and VantageScore will not match because of three causes the CFPB names: the scoring model, the data source, and the day the score was calculated. Each cause can move the number on its own. Together they explain why an app and a lender can show different figures in the same week.\n\nThe scoring model is the first cause. FICO and VantageScore weigh your report with different formulas, and the CFPB adds that the model used can depend on the type of loan product the score is for. A lender scoring an auto loan and a free app scoring your file for general monitoring may be running different formulas.\n\nThe data source is the second cause. Both models read credit report data from the credit bureaus, and a score built from one data source starts from different inputs than a score built from another. When two scores come from different sources, part of the gap exists in the data before any formula runs.\n\nThe calculation date is the third cause. A score can differ depending on the day it was calculated. Compare scores calculated close together if you want to isolate the model difference.\n\nA gap between the two numbers does not mean either score is wrong. Both models compute from the same kind of credit report data, so the scores usually move in the same direction when your habits change. A rising VantageScore and a rising FICO Score point to the same improvement, even when the two numbers never line up."
+      },
+      {
+        "heading": "What Both Scoring Models Weigh",
+        "content": "FICO and VantageScore both draw on the factors the CFPB lists as typical inputs to scoring models. Three of those factors describe how you pay: your bill-paying history, your current unpaid debt, and how much of your available credit you are using. Three more describe the shape of your file: the number and type of loan accounts, how long accounts have been open, and new applications for credit.\n\nThe last factor on the CFPB list is whether you have had a debt sent to collections, a foreclosure, or a bankruptcy, and how long ago it happened. We do not give a percentage weight for each factor on this page. The useful point for a borrower is direction: a habit that improves these inputs usually lifts both scores together.\n\nBill-paying history and how much available credit you use are data that FICO and VantageScore both read. According to the CFPB, a higher score usually makes it easier to qualify for a loan and may bring a better interest rate or loan terms. Our guide to the [credit score for a 0% annual percentage rate (APR) credit card](/guides/credit-score-for-0-apr-credit-card/) shows how that works for one card type.\n\nIf you plan to move a balance from one card to another, compare offers in our [best balance transfer credit cards](/roundup/best-balance-transfer-credit-cards/) list. If you are still deciding whether to use credit at all, our [credit card vs debit card](/compare/credit-card-vs-debit-card/) comparison covers that choice first."
+      },
+      {
+        "heading": "Accuracy in the FICO Score vs VantageScore Question",
+        "content": "We have no independent accuracy comparison of FICO and VantageScore to cite, so we do not name a winner on accuracy. Each model is a prediction of the same thing, your chance of paying back a loan on time, built with its own formula. For a borrower, the useful test is whether the score you watch is the same model and version the lender reads.\n\nA VantageScore still helps when the lender pulls FICO. The two usually move in the same direction when your habits change. That signal is about direction only.\n\nA VantageScore cannot tell you the exact number a FICO-based lender will see. If an offer lists a minimum score, ask the lender which model sets that cutoff before you compare it with any free score. Matching the model first keeps you from applying on the strength of a number the lender never uses."
+      },
+      {
+        "heading": "Which Score to Watch Before You Apply",
+        "content": "Watch the score your lender uses, and between applications, watch the trend in one free score from one source. Both models usually move in the same direction when your habits change, while their numbers stay apart.\n\nPick one free score and stick with it. Note the model name it shows, check it on a regular schedule, and compare each reading with the last reading from the same app. Switching apps breaks the comparison, because a change of model or data source can move the number with no change in your habits.\n\nDo not read the gap between a VantageScore on an app and a FICO Score from a lender as a drop in your credit. That gap comes from the model, the data source, or the calculation date, the three causes the CFPB lists. Your payment habits may be exactly the same as last month.\n\nBefore an application, ask the lender two questions: which scoring model and version it uses, and which credit bureau report it pulls. With those answers, you can tell whether your free score comes from the same model as the decision or serves only as a general trend line."
+      },
+      {
+        "heading": "Free Credit Apps and the FICO Score vs VantageScore Gap",
+        "content": "The score on a free credit app is a real score from a real scoring model, though it may come from a different model than the one a lender pulls. Some free monitoring services show VantageScore. That means the number on an app and the number behind a loan decision can come from different formulas.\n\nYou can get your scores for free through several legitimate channels; see our guide to [what a good credit score is](/guides/what-is-a-good-credit-score/). Before you compare a free score with a lender's number, confirm which model the free score uses. Look for the model name next to the score, and if the app does not show one, treat the number as a general signal until you know its source.\n\nPull your credit reports this week, write down which model each free score uses, and ask your next lender which score it pulls."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between FICO and VantageScore?",
+        "answer": "FICO and VantageScore are two competing credit scoring models that read the same kind of credit report data with different formulas. Both use a 300 to 850 range in their widely used versions. The practical difference is which model a lender pulls and how each handles a thin or recent credit file, so the same credit history can produce two different, legitimate numbers."
+      },
+      {
+        "question": "Which is more accurate, FICO or VantageScore?",
+        "answer": "We do not name either model as more accurate, because we have no independent accuracy comparison to cite. Each is a prediction of how likely you are to pay a loan back on time. For a loan application, the more useful score is the one the lender pulls, so ask the lender which model and version it uses."
+      },
+      {
+        "question": "Why is my VantageScore different from my FICO score?",
+        "answer": "Your VantageScore and FICO Score differ because they come from different scoring models, and the CFPB notes that scores can also differ by data source and by the day they were calculated. Both models read the same kind of credit report data, so they usually move in the same direction when your habits change. The two numbers are not expected to match."
+      },
+      {
+        "question": "Do lenders use FICO or VantageScore?",
+        "answer": "Lenders choose which scoring model and which version they use. Many mortgage, auto, and credit card lenders use a FICO version, and some free credit monitoring services show VantageScore. We cannot give a percentage of lenders using each model, so ask the lender which score it pulls before you apply."
+      },
+      {
+        "question": "Is the score on my free credit app my real credit score?",
+        "answer": "Yes, a free app shows a real credit score, though it is one of several scores you have. The CFPB states that you do not have just one credit score, and some free services show VantageScore while a lender may pull a FICO version. Confirm which model the app uses before you compare it with a lender's number."
+      }
+    ],
+    "sources": [
+      {
+        "label": "CFPB, What is a credit score?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-fico-score-en-315/"
+      },
+      {
+        "label": "FICO, FICO Score",
+        "url": "https://www.fico.com/en/products/fico-score"
+      },
+      {
+        "label": "VantageScore",
+        "url": "https://www.vantagescore.com"
+      }
+    ],
+    "relatedComparisons": [
+      "credit-card-vs-debit-card",
+      "secured-credit-card-vs-unsecured-credit-card"
+    ]
+  },
+  {
+    "updated": "2026-10-12",
+    "slug": "vtsax-vs-vti",
+    "title": "VTSAX vs VTI: Which Vanguard Total Market Fund Fits You",
+    "metaDescription": "VTSAX vs VTI compared on trading, minimums, expense ratios, and taxes. Both hold the same Vanguard total US stock market portfolio in a different wrapper.",
+    "targetKeyword": "VTSAX vs VTI",
+    "optionA": "VTSAX (Vanguard Total Stock Market Index Fund Admiral Shares)",
+    "optionB": "VTI (Vanguard Total Stock Market ETF)",
+    "segment": "investing",
+    "h1": "VTSAX vs VTI for a Total US Stock Market Portfolio",
+    "introText": "VTSAX and VTI hold the same [Vanguard](https://investor.vanguard.com) total US stock market portfolio, so the VTSAX vs VTI choice comes down to how you want to buy it. VTSAX is the mutual fund share class that prices once a day and usually has a minimum investment. VTI is the exchange-traded fund (ETF) version that trades all day and can be bought for the price of one share, or less through a broker offering fractional shares.\n\n What we see readers get wrong most often is treating the two tickers as different investments. The stocks inside are the same, so the decision rests on your broker, your starting amount, and the type of account the fund will sit in.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Fund type",
+          "a": "Mutual fund (Admiral Shares class) issued by Vanguard",
+          "b": "Exchange-traded fund (ETF) issued by Vanguard"
+        },
+        {
+          "dimension": "How and when it trades",
+          "a": "Bought and sold once a day at net asset value (NAV), calculated at the end of the trading day",
+          "b": "Trades on an exchange during market hours at a live market price"
+        },
+        {
+          "dimension": "Minimum to start",
+          "a": "Has historically required a minimum initial investment set by Vanguard; see the current amount on [Vanguard's fund page](https://investor.vanguard.com)",
+          "b": "No fund minimum; the price of one share, or the fraction of a share your broker allows"
+        },
+        {
+          "dimension": "Expense ratio",
+          "a": "Very low and slightly different from VTI's; see the current figure on [Vanguard's fund page](https://investor.vanguard.com)",
+          "b": "0.03% at the time of writing; see the current figure on [Vanguard's fund page](https://investor.vanguard.com)"
+        },
+        {
+          "dimension": "Index tracked",
+          "a": "CRSP US Total Market Index, the same index VTI follows, covering large-, mid-, and small-cap US stocks",
+          "b": "The same index as VTSAX, held as 100% US stocks with no bonds or international holdings"
+        },
+        {
+          "dimension": "Tax treatment in a taxable account",
+          "a": "A tax-efficient index fund, though mutual funds are generally considered less tax-efficient than ETFs",
+          "b": "Generally considered more tax-efficient because of how ETFs handle share creation and redemption"
+        },
+        {
+          "dimension": "Automatic investing",
+          "a": "Supports automatic investments and exact-dollar purchases at Vanguard",
+          "b": "Bought share by share through a broker; buying part of a share needs a broker that offers fractional shares"
+        },
+        {
+          "dimension": "Where you can buy it",
+          "a": "Automatic and exact-dollar purchases are supported at Vanguard",
+          "b": "Any broker that offers it; most major US brokerages offer commission-free ETF trading"
+        }
+      ]
+    },
+    "verdict": "Pick VTI if you buy through a broker other than Vanguard, have less than the VTSAX minimum, or are investing in a taxable account, where ETFs are generally considered more tax-efficient than mutual funds. Pick VTSAX if your account is at Vanguard, you clear its minimum, and you want automatic investments in exact dollar amounts at the end-of-day NAV, especially inside an IRA or 401(k) where the tax difference does not matter. Neither fund serves an investor who wants bonds or international stocks in a single holding, because both are 100% US equity. Our answer would change in two cases. If the VTSAX minimum blocks you, VTI is the route in any account type. If your broker does not offer fractional ETF shares and a full VTI share is more than you want to invest at one time, VTSAX's exact-dollar purchases at Vanguard become the easier choice once you meet its minimum.",
+    "sections": [
+      {
+        "heading": "Same Portfolio, Different Wrapper",
+        "content": "VTSAX and VTI are two versions of one Vanguard portfolio, so owning either gives you the same set of US stocks. Both track the CRSP US Total Market Index, which covers large-, mid-, and small-cap US stocks. Both are 100% US equity funds, with no bond holdings and no international holdings.\n\nThe difference is the wrapper around that portfolio. VTSAX is Vanguard Total Stock Market Index Fund Admiral Shares, a mutual fund bought and sold at its net asset value (NAV), calculated once at the end of the trading day. VTI is Vanguard Total Stock Market ETF, which trades on an exchange during market hours at a live market price.\n\nThat wrapper controls when your order fills, how much money you need to start, where you can buy, and how tax-efficient the fund is in a taxable account. It leaves the holdings untouched. For the general case beyond these two tickers, our [ETF vs Mutual Fund](/compare/etf-vs-mutual-fund/) comparison walks through both structures, and [Index Fund vs Mutual Fund](/compare/index-fund-vs-mutual-fund/) explains where index funds fit."
+      },
+      {
+        "heading": "How VTSAX and VTI Trade and Price During the Day",
+        "content": "VTI trades at a live market price throughout market hours, and VTSAX trades once a day at its end-of-day NAV. Place a VTI order while the market is open and it fills at the exchange price at that moment. Place a VTSAX order and it goes through at the NAV calculated after the close, so you do not see your exact price when you submit the order.\n\nBecause VTI's price moves while the market is open, two buyers on the same day can pay different prices for the same share. Every VTSAX buyer on a given day gets the same NAV. Neither setup changes what you own; it changes only the moment your price is set.\n\nThe unit you buy differs too. With VTSAX at Vanguard, you can make exact-dollar purchases, so you choose the dollar amount and the share count follows from that day's NAV. With VTI, the unit is a share, and a broker that offers fractional shares lets you buy part of one, while a broker without them makes you pay the full share price.\n\nOur [Index Fund vs ETF](/compare/index-fund-vs-etf/) guide covers the same trading split."
+      },
+      {
+        "heading": "Costs and Minimums for VTSAX vs VTI",
+        "content": "Both funds charge very low expense ratios that sit close to each other. VTI's expense ratio was 0.03% at the time of writing, and VTSAX's figure is slightly different. Confirm both current numbers on [Vanguard's fund pages](https://investor.vanguard.com) before you buy.\n\nTo turn a ratio into dollars, multiply it by your balance. At 0.03%, a $10,000 VTI position costs about $3 a year in fund expenses ($10,000 × 0.0003 = $3). Run the same multiplication with VTSAX's current ratio from [Vanguard's fund pages](https://investor.vanguard.com) to see the yearly dollar gap on your own balance.\n\nVTSAX has historically required a minimum initial investment set by Vanguard, and you can find the current amount on [Vanguard's fund page](https://investor.vanguard.com). VTI has no fund minimum. Your starting cost is the price of one share, or the fraction of a share your broker allows.\n\nWhere you buy also affects what you pay to trade. Most major US brokerages offer commission-free ETF trading, so you can buy VTI at many brokers without a per-trade fee. If you have not picked a broker yet, our [Vanguard vs Fidelity](/compare/vanguard-vs-fidelity/) comparison sets two of them side by side."
+      },
+      {
+        "heading": "Taxable Brokerage Accounts Versus Retirement Accounts",
+        "content": "The choice between the mutual fund and the ETF matters most in a taxable brokerage account and drops out inside an individual retirement account (IRA) or 401(k). Gains inside an IRA or 401(k) are not taxed year to year, so the tax-efficiency gap between the two wrappers has no effect there. In a retirement account, pick on convenience: automatic investing, your broker, and the minimum.\n\nIn a taxable account, ETFs such as VTI are generally considered more tax-efficient than mutual funds because of how they handle share creation and redemption. Vanguard's mutual funds, VTSAX included, are also tax-efficient index funds, so treat the ETF advantage as a general tendency. A tax professional can tell you how either fund would affect your own return.\n\nThe account type should drive the wrapper choice before anything else on this page. A taxable purchase is the harder one to undo, because moving between VTSAX and VTI there may mean selling one fund and buying the other, which can trigger capital gains. \n\nIf you hold both account types, you can split the choice. Use VTSAX in an IRA at Vanguard where you want automatic exact-dollar contributions, and use VTI in the taxable account where the ETF structure is generally considered more tax-efficient. Because both funds hold the same portfolio, your US stock exposure is the same across the two accounts."
+      },
+      {
+        "heading": "Switching Between the Mutual Fund and the ETF",
+        "content": "Switching from VTSAX to VTI, or the reverse, may require selling one fund and buying the other. In a taxable account, that sale can trigger capital gains, even though the stocks you own afterward are the same. Inside an IRA or 401(k), gains are not taxed year to year, so that tax concern does not apply there.\n\nBefore you switch, ask [Vanguard](https://investor.vanguard.com) how the move would be handled for your account, and ask a tax professional about the capital gains it could create. A switch changes only the wrapper, so the reasons to make one are practical: trading during market hours, buying through a broker other than Vanguard, or getting past a minimum.\n\nIf you already hold one of the two funds and none of those reasons applies, leaving it in place avoids the sale and any tax that comes with it."
+      },
+      {
+        "heading": "Choosing VTSAX vs VTI Based on How You Invest",
+        "content": "VTSAX suits an investor with an account at Vanguard who clears the minimum and wants automatic investments in exact dollar amounts. It also fits a retirement account, where the tax-efficiency difference between the two wrappers does not matter.\n\nVTI suits an investor who uses a broker other than Vanguard, has less than the VTSAX minimum, or wants to see a live price while the market is open. It is also our default for a taxable account, where ETFs are generally considered more tax-efficient. With fractional shares, you can buy part of a VTI share instead of saving up for a whole one.\n\nNeither fund holds bonds or international stocks, so either one covers only the US stock portion of a portfolio. If you want those other pieces, our [Best Index Funds](/roundup/best-index-funds/) roundup is a place to start, and [VTI vs VOO](/compare/vti-vs-voo/) compares VTI with VOO. To estimate how regular contributions to a stock index fund could grow, try our [S&P 500 Calculator](/investing/sp500-calculator/).\n\nCheck whether your broker offers commission-free ETF trading and fractional shares, and confirm the current VTSAX minimum and both expense ratios on [Vanguard's fund pages](https://investor.vanguard.com). Then set up automatic monthly contributions to VTSAX at Vanguard, or a recurring transfer to the broker that will hold your VTI."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between VTSAX and VTI?",
+        "answer": "VTSAX and VTI hold the same Vanguard total US stock market portfolio, and the difference is the wrapper. VTSAX is a mutual fund that prices once a day at its NAV and has historically required a minimum initial investment. VTI is an ETF that trades on an exchange during market hours at a live price, with no fund minimum beyond the price of a share or the fraction your broker allows."
+      },
+      {
+        "question": "Is VTI or VTSAX better for long-term investing?",
+        "answer": "Neither fund holds a better portfolio for long-term investing, because both track the CRSP US Total Market Index with low expense ratios. The better pick depends on your account. VTSAX fits a Vanguard account where you want automatic exact-dollar investing. VTI fits other brokers, smaller starting amounts, and taxable accounts, where ETFs are generally considered more tax-efficient."
+      },
+      {
+        "question": "Can I convert VTSAX to VTI?",
+        "answer": "Moving from VTSAX to VTI may require selling VTSAX and buying VTI. In a taxable account, that sale can trigger capital gains. Inside an IRA or 401(k), gains are not taxed year to year, so that tax concern does not apply there. Ask [Vanguard](https://investor.vanguard.com) how the move would work for your account, and talk to a tax professional before switching in a taxable account."
+      },
+      {
+        "question": "Is VTI more tax-efficient than VTSAX?",
+        "answer": "In a taxable account, VTI's ETF structure is generally considered more tax-efficient than a mutual fund because of how ETFs handle share creation and redemption. VTSAX is also a tax-efficient index fund, so treat the gap as a general tendency. Inside an IRA or 401(k), the difference does not matter. A tax professional can tell you how either fund would affect your own return."
+      },
+      {
+        "question": "Do VTSAX and VTI hold the same stocks?",
+        "answer": "Yes, VTSAX and VTI invest in the same Vanguard US total stock market portfolio and track the CRSP US Total Market Index, which covers large-, mid-, and small-cap US stocks. Neither fund holds bonds or international stocks. To compare what each one costs to hold, look up the current expense ratios on [Vanguard's fund pages](https://investor.vanguard.com)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Vanguard, Investor Home",
+        "url": "https://investor.vanguard.com"
+      }
+    ],
+    "relatedComparisons": [
+      "vfiax-vs-voo",
+      "vti-vs-voo",
+      "etf-vs-mutual-fund",
+      "index-fund-vs-etf",
+      "index-fund-vs-mutual-fund"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "S&P 500 calculator",
+        "href": "/investing/sp500-calculator/"
+      },
+      {
+        "label": "Investment growth calculator",
+        "href": "/investing/investment-growth-calculator/"
+      }
+    ]
+  },
+  {
+    "updated": "2026-10-12",
+    "slug": "vfiax-vs-voo",
+    "title": "VFIAX vs VOO: Choosing Vanguard's S&P 500 Fund in 2026",
+    "metaDescription": "VFIAX vs VOO compared on trading, minimums, costs, and taxes. One Vanguard S&P 500 portfolio in a mutual fund or an exchange-traded fund wrapper.",
+    "targetKeyword": "VFIAX vs VOO",
+    "optionA": "VFIAX (Vanguard 500 Index Fund Admiral Shares)",
+    "optionB": "VOO (Vanguard S&P 500 ETF)",
+    "segment": "investing",
+    "h1": "VFIAX vs VOO Compared for Owning the Vanguard S&P 500 Portfolio",
+    "introText": "VFIAX and VOO hold the same S&P 500 portfolio from [Vanguard](https://investor.vanguard.com). They differ in how you buy and hold it. At ModernWallet, we publish plain-language money guides built around one decision at a time, and VFIAX vs VOO is a decision about the wrapper around one portfolio.\n\nVFIAX is a mutual fund that prices once a day and has historically required a minimum initial investment. VOO is an exchange-traded fund (ETF) that trades all day through a broker, with no fund minimum. Your account type, your broker, and whether you want automatic dollar-amount purchases decide which one fits.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Fund type",
+          "a": "Mutual fund, sold as Vanguard 500 Index Fund Admiral Shares",
+          "b": "Exchange-traded fund, sold as Vanguard S&P 500 ETF"
+        },
+        {
+          "dimension": "How and when it trades",
+          "a": "Bought and sold at net asset value, calculated once at the end of the trading day",
+          "b": "Trades on an exchange during market hours at a live market price"
+        },
+        {
+          "dimension": "Minimum to start",
+          "a": "Minimum initial investment set by Vanguard (dollar amount not stated on this page)",
+          "b": "No fund minimum, only the price of one share or the fraction your broker allows"
+        },
+        {
+          "dimension": "Expense ratio",
+          "a": "Low, very close to VOO's figure and slightly different",
+          "b": "0.03% at the time of writing"
+        },
+        {
+          "dimension": "Tax treatment in a taxable account",
+          "a": "Vanguard's index mutual funds are tax-efficient",
+          "b": "ETFs are generally considered more tax-efficient than mutual funds"
+        },
+        {
+          "dimension": "Automatic investing",
+          "a": "Supports automatic investments and exact-dollar purchases at Vanguard",
+          "b": "Bought through a broker in whole shares or the fractions that broker allows"
+        },
+        {
+          "dimension": "Where you can buy it",
+          "a": "At Vanguard, where automatic and exact-dollar purchases are supported",
+          "b": "Any broker that offers it, and most major US brokerages offer commission-free ETF trading"
+        }
+      ]
+    },
+    "verdict": "Choose VOO if you are opening a taxable brokerage account, starting with less than VFIAX's minimum, or keeping your money at a broker other than Vanguard. VOO has no fund minimum, trades during market hours at a live price, and carries the general ETF tax-efficiency edge in a taxable account. Choose VFIAX if you invest at Vanguard and want automatic, exact-dollar contributions, or if a 401(k) plan you use offers only mutual funds. Inside an IRA, either fund works on tax grounds, so let the minimum and automatic investing decide. This recommendation is not for someone who already holds VFIAX in a taxable account with gains and wants to move to VOO for the ETF tax edge alone, because the switch can trigger capital gains. That investor should ask a tax professional and check with Vanguard on [Vanguard's site](https://investor.vanguard.com) before selling anything. Our answer would change if Vanguard lowered the VFIAX minimum below your starting sum, if your broker dropped the fractional-share support a small VOO purchase needs, or if the two expense ratios moved apart. Start by confirming VFIAX's current minimum and both expense ratios on [Vanguard's fund pages](https://investor.vanguard.com), then make the VFIAX vs VOO choice in the account you picked.",
+    "sections": [
+      {
+        "heading": "Same Index, Different Wrapper",
+        "content": "VFIAX and VOO are the mutual fund and exchange-traded versions of the same Vanguard S&P 500 portfolio. VFIAX prices once a day and has historically required a minimum investment, while VOO trades all day and is bought through a broker.\n\nThe full names spell out the split. VFIAX is Vanguard 500 Index Fund Admiral Shares, and VOO is Vanguard S&P 500 ETF. Both track the S&P 500 index, which covers roughly 500 of the largest US companies, so choosing one over the other does not change the companies you own.\n\nThe two differ in how you trade them and what you need to start. VFIAX is bought and sold at net asset value (NAV), which is calculated once at the end of the trading day. VOO trades on an exchange during market hours at a live market price, and your entry cost is one share or the fraction of a share your broker allows.\n\nBefore you buy either one, settle three things: which account the money goes into, which company will hold the shares, and whether you plan to invest a fixed dollar amount on a schedule. For the general case of how mutual funds and ETFs differ as structures, our [ETF vs Mutual Fund](/compare/etf-vs-mutual-fund/) guide covers both."
+      },
+      {
+        "heading": "Trading and Pricing in VFIAX vs VOO",
+        "content": "VFIAX trades once a day at net asset value, and VOO trades throughout market hours at a live market price. A VFIAX order fills at the NAV Vanguard calculates at the end of the trading day, so you learn your price after the close.\n\nVOO trades on an exchange during market hours. You place an order with a broker while the market is open, and the trade goes through at the market price at that moment. If you want to see the price before you commit to a trade, buy VOO.\n\nSelling follows the same pattern. A VFIAX sale goes through at that day's end-of-day NAV, and a VOO sale fills at the live price during market hours. Neither timing changes the portfolio you own, since both track the S&P 500.\n\nIf you would rather place an order and let the end-of-day NAV set the price, VFIAX handles that without you watching the market. If you want control over the moment you buy or sell, VOO gives you that control. VOO is also one of several S&P 500 ETFs, and we compare it with the SPDR S&P 500 ETF in [VOO vs SPY](/compare/voo-vs-spy/) and with the iShares Core S&P 500 ETF in [IVV vs VOO](/compare/ivv-vs-voo/)."
+      },
+      {
+        "heading": "Costs and Minimums for VFIAX vs VOO",
+        "content": "Both VFIAX and VOO carry low expense ratios, and VOO lists 0.03% at the time of writing. VFIAX's expense ratio is very close to VOO's and slightly different, so confirm both current figures on [Vanguard's fund pages](https://investor.vanguard.com) before you compare them to the decimal.\n\nThe arithmetic shows how small these costs are in dollars. At 0.03%, VOO costs $3 a year on a $10,000 balance ($10,000 × 0.0003) and $30 a year on a $100,000 balance. VFIAX's ratio sits very close to that.\n\nThe starting minimum is another difference between the two. VFIAX has historically required a minimum initial investment set by Vanguard, and this page does not state the dollar amount, so read the current figure on [Vanguard's VFIAX page](https://investor.vanguard.com) before you plan a first purchase. If your starting sum is below that minimum, VFIAX is off the table until you save more.\n\nVOO has no fund minimum. Your entry cost is the price of one share, or the fraction of a share your broker allows, and fractional-share support varies by broker. Most major US brokerages offer commission-free ETF trading, so buying VOO at one of them adds no commission on top of the share price.\n\nFractional shares matter most for a small first deposit. If a broker does not support fractional shares and one VOO share costs more than you have to invest, you cannot buy VOO there yet. Pick a broker with fractional-share support if your budget is below the price of one share."
+      },
+      {
+        "heading": "Taxable Accounts Versus Retirement Accounts",
+        "content": "The account type decides whether tax efficiency matters to this choice at all. In a taxable brokerage account, ETFs are generally considered more tax-efficient than mutual funds, which gives VOO an edge there.\n\nVanguard's index mutual funds are also tax-efficient, so VFIAX still fits a taxable account. The ETF edge is a general one. Ask a tax professional how it applies to you, and review both funds on [Vanguard's site](https://investor.vanguard.com) before you decide.\n\nInside an individual retirement account (IRA) or a 401(k), the tax-efficiency difference does not matter, because gains there are not taxed year to year. In those accounts, choose on minimums, trading style, and automatic investing. Some 401(k) plans offer only mutual funds, and if a plan you contribute to lists VFIAX and no ETFs, that settles the choice for that account.\n\nIn a taxable account, decide the wrapper before the first purchase. Switching from VFIAX to VOO, or from VOO to VFIAX, can trigger capital gains there. If you already hold VFIAX or VOO in a taxable account with gains, check with Vanguard on [Vanguard's site](https://investor.vanguard.com) and ask a tax professional before you switch.\n\nFor someone with both account types, one split follows from these facts. Put VOO in the taxable account, where the general ETF tax edge applies, and use VFIAX in a 401(k) plan that offers only mutual funds. Inside an IRA, either one works on tax grounds, so let the minimum and your broker decide."
+      },
+      {
+        "heading": "Reasons to Pick VFIAX or VOO",
+        "content": "VFIAX fits investors who want automatic, exact-dollar investing at Vanguard, and VOO fits investors who want no fund minimum and a broker of their choice. The rest of the decision comes down to account type and trading style.\n\nPick VFIAX if you want automatic investments and exact-dollar purchases at Vanguard. You can invest a fixed dollar amount at the day's NAV without working out share counts. VFIAX also fits a 401(k) plan that offers only mutual funds, since VOO is not an option in that plan.\n\nPick VOO if your starting sum is below VFIAX's minimum, because VOO has no fund minimum. Pick it as well if you want to trade during market hours at a live price, or if you keep your accounts at a broker other than Vanguard. In a taxable account, VOO also carries the general ETF tax-efficiency edge.\n\nFor related choices, see our [VTI vs VOO](/compare/vti-vs-voo/) and [VTSAX vs VTI](/compare/vtsax-vs-vti/) comparisons, plus the [Best Index Funds](/roundup/best-index-funds/) roundup. To see what a monthly contribution could grow to over your own timeline, run it through our [S&P 500 Calculator](/investing/sp500-calculator/)."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between VFIAX and VOO?",
+        "answer": "VFIAX is the mutual fund version of Vanguard's S&P 500 portfolio, and VOO is the exchange-traded fund version. VFIAX prices once a day at net asset value and has historically required a minimum initial investment. VOO trades on an exchange during market hours at a live price, has no fund minimum, and is bought through a broker."
+      },
+      {
+        "question": "Is VOO or VFIAX better?",
+        "answer": "Neither is better across the board, because both track the S&P 500 index with low expense ratios. VOO fits a taxable account, a starting sum below VFIAX's minimum, or a broker other than Vanguard. VFIAX fits automatic exact-dollar investing at Vanguard and 401(k) plans that offer only mutual funds."
+      },
+      {
+        "question": "Can I convert VFIAX to VOO?",
+        "answer": "You can move from VFIAX to VOO, but in a taxable account the switch can trigger capital gains. Before you act, check with Vanguard on [Vanguard's site](https://investor.vanguard.com) and ask a tax professional how the gain would affect your tax bill. Inside an IRA, gains are not taxed year to year, so the capital gains concern from a taxable account does not apply there."
+      },
+      {
+        "question": "Is VOO more tax-efficient than VFIAX?",
+        "answer": "In a taxable account, VOO has the general edge, because ETFs are generally considered more tax-efficient than mutual funds. Vanguard's index mutual funds, VFIAX among them, are also tax-efficient, so the gap is a general tendency. Ask a tax professional how it applies to you, and review both funds on [Vanguard's site](https://investor.vanguard.com)."
+      },
+      {
+        "question": "Which is better in a Roth IRA, VFIAX or VOO?",
+        "answer": "In a Roth IRA, the tax-efficiency difference between VFIAX and VOO does not matter, because gains inside an IRA are not taxed year to year. Choose VFIAX if you want automatic exact-dollar purchases at Vanguard and can meet its minimum. Choose VOO if you want no fund minimum or hold your Roth IRA at another broker."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Vanguard, Investor Home",
+        "url": "https://investor.vanguard.com"
+      }
+    ],
+    "relatedComparisons": [
+      "vtsax-vs-vti",
+      "voo-vs-spy",
+      "ivv-vs-voo",
+      "etf-vs-mutual-fund",
+      "index-fund-vs-mutual-fund"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "S&P 500 calculator",
+        "href": "/investing/sp500-calculator/"
+      },
+      {
+        "label": "Investment growth calculator",
+        "href": "/investing/investment-growth-calculator/"
+      }
+    ]
+  },
   // ── mindmap-pass 2026-10-10 (bankruptcy): debt-settlement-vs-bankruptcy ──
   {
     "updated": "2026-10-10",

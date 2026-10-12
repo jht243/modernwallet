@@ -1,0 +1,123 @@
+{
+ "slug": "vtsax-vs-vti",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 2106,
+ "floor": 1500,
+ "input_tokens": 30023,
+ "output_tokens": 20369,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.5275,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "thin fact list: \u2248438 fact words for a 1500-word floor (ratio 0.29); expand it with sourced facts before any regeneration"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2106,
+  "numbers_not_in_facts": [
+   "0.0003",
+   "10000"
+  ],
+  "fact_budget": {
+   "fact_words": 438,
+   "floor": 1500,
+   "ratio": 0.29,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    5
+   ],
+   "applied": [
+    {
+     "id": "comparisonTable.rows[7].a",
+     "quote": "At Vanguard, with automatic and exact-dollar purchases supported there",
+     "replacement": "Automatic and exact-dollar purchases are supported at Vanguard",
+     "type": "unsupported",
+     "why": "SOURCE does not say where VTSAX can be bought, only Vanguard features"
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Both funds charge very low expense ratios that sit close to each other, so the minimum investment is the cost line to check first.",
+     "replacement": "Both funds charge very low expense ratios that sit close to each other.",
+     "type": "inference",
+     "why": "SOURCE does not rank the minimum as the first cost to check"
+    },
+    {
+     "id": "verdict",
+     "quote": "Neither fund serves an investor who wants bonds or international stocks in a single holding, because both are 100% US equity; that investor should pair either one with separate bond and international funds.",
+     "replacement": "Neither fund serves an investor who wants bonds or international stocks in a single holding, because both are 100% US equity.",
+     "type": "unsupported",
+     "why": "SOURCE gives no advice to pair with separate bond and international funds"
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we publish plain-language guides on index funds and brokerage accounts, and for this page we compared the two share classes on trading, minimums, costs, taxes, and switching.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Self-description licenses general framings, not this specific claim of comparison work"
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "Both track the CRSP (Center for Research in Security Prices) US Total Market Index, which covers large-, mid-, and small-cap US stocks.",
+     "replacement": "Both track the CRSP US Total Market Index, which covers large-, mid-, and small-cap US stocks.",
+     "type": "unsupported",
+     "why": "SOURCE does not expand the CRSP acronym"
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Our [Index Fund vs ETF](/compare/index-fund-vs-etf/) guide covers the same trading split across other fund families.",
+     "replacement": "Our [Index Fund vs ETF](/compare/index-fund-vs-etf/) guide covers the same trading split.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the linked guide's content"
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Inside an IRA, the same switch carries no year-to-year tax, so a wrong first pick costs less to fix.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not say a switch costs less to fix"
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "That setup lets you schedule contributions without tracking share prices, since every purchase settles at the end-of-day NAV.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not say this about tracking share prices"
+    }
+   ],
+   "deleted_final": 5,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2206
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 216.2,
+ "response_id": "msg_011Cfx1YD7TLohNiR2Hiz3VZ",
+ "generated_at": "2026-10-12T08:18:45+0000"
+}

@@ -1,0 +1,98 @@
+{
+  "slug": "credit-card-vs-debit-card",
+  "metaTitle": "Credit Card vs Debit Card: Which to Use Every Day",
+  "metaDescription": "Credit card vs debit card compared on whose money you spend, stolen-card liability, credit history, interest, and overspending, with a clear pick.",
+  "h1": "Credit Card vs Debit Card for Everyday Spending",
+  "subtitle": "A side-by-side look at how credit and debit cards differ when a card is stolen and when a balance goes unpaid.",
+  "optionAName": "Credit Card",
+  "optionBName": "Debit Card",
+  "introText": "For everyday purchases, a credit card is the better pick if you pay the full statement balance every month, and a debit card is the better pick if you tend to carry a balance. At ModernWallet, we publish free money calculators and plain-language guides, and we compared these two cards on the points that change your bill and your risk. The credit card vs debit card choice comes down to whose money leaves first, the lender's or yours.\n\nThat difference shows up in three places. It decides what happens to your cash when a card is stolen. It also decides whether your spending builds a credit history and what you pay if a bill goes unpaid.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Source of the money",
+        "a": "Borrowed from the card issuer and repaid later when the statement arrives",
+        "b": "Taken directly from money already in your checking account"
+      },
+      {
+        "dimension": "Effect on credit history",
+        "a": "The issuer reports purchases and on-time payments to the credit bureaus, which can build a credit history if you manage the card well",
+        "b": "Generally not a credit-building activity, so everyday use does not add to your credit history"
+      },
+      {
+        "dimension": "What happens if the card is stolen",
+        "a": "Covered by separate federal dispute protections, and the dispute is over money the lender fronted. Liability terms are in your card agreement",
+        "b": "Losses come out of your account first. Your share is capped at $50 or less if reported within two business days, and can reach $500 after that"
+      },
+      {
+        "dimension": "Cost if you carry a balance",
+        "a": "Interest is charged on any balance you do not pay in full",
+        "b": "No interest, because there is no borrowed balance to carry"
+      },
+      {
+        "dimension": "Overdraft or fee exposure",
+        "a": "Purchases do not draw on your checking account, so they cannot overdraw it. Any card fees are set in the card agreement",
+        "b": "Can trigger overdraft or other bank fees, depending on how the account is set up"
+      },
+      {
+        "dimension": "Rewards potential",
+        "a": "Many cards offer rewards on purchases",
+        "b": "Rewards depend on the bank account, and this comparison assumes no standard debit rewards"
+      },
+      {
+        "dimension": "Budgeting control",
+        "a": "Your own discipline sets the pace until the statement arrives",
+        "b": "Spending stops at your checking balance, unless an overdraft lets a purchase through"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Whose Money You Are Spending with a Credit Card vs Debit Card",
+      "content": "A credit card spends the card issuer's money and bills you later, while a debit card pulls money straight from your checking account. With credit, you are borrowing. With debit, you are paying with cash you already have.\n\nMost of the other differences follow from that. Because the issuer fronts the money, it reports your purchases and on-time payments to the credit bureaus, which can help build a credit history if you manage the card well. A debit card creates no debt, so there is nothing to repay, but a thief or a billing error hits your checking balance first.\n\nThe cost side flips the picture. A credit card charges interest on any balance you do not pay in full, while a debit card charges no interest but can trigger overdraft or other bank fees depending on your account.\n\nIf you are choosing where your spending money sits, our [Checking vs Savings Account](/compare/checking-vs-savings-account/) comparison lays out both account types. Debit cards are issued by a bank or credit union, and our [Credit Union vs Bank](/compare/credit-union-vs-bank/) comparison covers that choice."
+    },
+    {
+      "heading": "What Happens When a Card Is Stolen",
+      "content": "A stolen debit card puts your own money at risk first, and how much you can lose depends on how fast you report it. The [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/how-do-i-get-my-money-back-after-i-discover-an-unauthorized-transaction-or-money-missing-from-my-bank-account-en-1017/) lays out the timing rules for debit card losses.\n\nReport a lost or stolen debit card to your bank or credit union within two business days of discovering it, and you cannot be held responsible for more than $50 or the amount of the unauthorized transactions, whichever is less. Wait longer than two business days, and you could be responsible for up to $500.\n\nA separate clock runs on your statement. If an unauthorized withdrawal shows up there, notify the bank within 60 days. Wait longer, and you could also have to pay the full amount of any transactions that happened after the 60-day period and before you told the bank.\n\nTake an $800 fraudulent charge as an example. Reported within two business days, your share is capped at $50; reported on the third business day or later, your share could reach $500, which is $450 more for the same theft. On a $30 charge reported in time, your share is $30, because the lesser of the two amounts applies.\n\nGetting the money back takes time. Once you notify the bank of an unauthorized transaction, it generally has ten business days to investigate. It must correct an error within one business day after determining one occurred, and then has three business days to report its findings.\n\nDuring those days, the money is already gone from your account. A debit dispute can leave you short on cash while the bank investigates, and a bill that drafts from the same checking account in that window can overdraw it and trigger fees, depending on the account. A credit card dispute works differently, because it is a disagreement over money the lender fronted and your checking balance is not the money in question.\n\nCredit cards carry their own federal dispute protections. We do not state a liability dollar figure for credit cards here. The terms that apply to your account are in your card agreement, so read its section on unauthorized charges before you rely on any number."
+    },
+    {
+      "heading": "Credit History and the Cost of Carrying a Balance",
+      "content": "A credit card can help build your credit history, and a debit card generally cannot. The card issuer reports your purchases and on-time payments to the credit bureaus, so a card you use and pay on time adds a record of borrowing and repaying. Debit card use is generally not a credit-building activity, and you should confirm with your issuer how your own card reports.\n\nFor the scoring side, the CFPB explains [what a FICO score is](https://www.consumerfinance.gov/ask-cfpb/what-is-a-fico-score-en-315/). Our guide on [what makes a good credit score](/guides/what-is-a-good-credit-score/) covers the score ranges. If you are weighing your first credit card, our [Secured vs Unsecured Credit Card](/compare/secured-credit-card-vs-unsecured-credit-card/) comparison walks through both types.\n\nThe credit-building benefit has a price if the balance rolls over. A credit card charges interest on any balance you do not pay in full, so a card opened to build credit can end up costing more than the purchases it carried. A debit card has no borrowed balance and charges no interest.\n\nIf you already carry a balance, our [Credit Card Payoff Calculator](/credit-card-payoff/) shows how long payoff takes and how much interest it adds. We do not state an interest rate on this page, so enter the rate from your own card when you run the numbers."
+    },
+    {
+      "heading": "Credit or Debit for Budgeting and Overspending",
+      "content": "A debit card enforces a spending ceiling and a credit card does not, which is the main budgeting difference between them. With debit, you can spend only what is in your checking account, unless an overdraft lets a purchase go through and triggers a fee depending on your account. With credit, you spend the lender's money first and see the total when the statement arrives, so your own discipline sets the pace until the bill comes.\n\nIn the guides we publish here, one rule comes up again and again: charge only what you could have paid with debit today. If the money for a purchase is already sitting in checking, putting it on a credit card and paying the full statement balance gives you the credit-history benefit with no interest. If the money is not there, the card is lending you the difference, and interest starts on whatever you do not pay in full.\n\nYou can borrow debit's ceiling while using credit. Track your card spending against your checking balance, and treat each charge as money already spent from that account. Setting autopay for the full statement balance removes the chance that a forgotten payment turns into interest.\n\nThe inversion case matters for some readers. If you know you will not pay in full, debit's ceiling protects you from interest a credit card would add. If your checking account charges overdraft fees and you often spend close to zero, a credit card paid in full avoids those overdrafts, because its purchases do not draw on checking."
+    },
+    {
+      "heading": "Rewards and Fees in the Credit Card vs Debit Card Decision",
+      "content": "Many credit cards offer rewards on purchases, while debit cards carry no interest but can trigger overdraft or other bank fees depending on the account. Rewards and interest land on the same purchases. If you pay in full, you keep the rewards and pay no interest; if you carry a balance, the interest on those purchases cuts into whatever the rewards returned.\n\nWe do not list reward rates or fee amounts on this page, because they vary by card and by account. If rewards are part of your reason for choosing credit, our [Best Cash Back Credit Cards](/roundup/best-cash-back-credit-cards/) roundup compares specific cards.\n\nOn the debit side, the cost to watch is overdraft and other bank fees, which depend on how your checking account is set up. Those fees are most likely to appear when you swipe a debit card with a balance near zero. Keeping a cushion in checking, or moving that spending to a credit card you pay in full, takes that risk off the table."
+    }
+  ],
+  "verdict": "Use a credit card for everyday purchases if you pay the full statement balance every month. You get a credit history built from on-time payments and rewards on many cards. A fraud dispute is also over the lender's money instead of your checking balance. Use a debit card if you carry a balance or expect to, because a credit card charges interest on every unpaid dollar while a debit card charges none.\n\nThis recommendation is not for anyone who carries credit card debt from month to month. If that describes you, keep everyday spending on debit and use the [Credit Card Payoff Calculator](/credit-card-payoff/) to plan the payoff first. The answer flips the month you stop paying in full, because a rolled-over balance starts costing interest that a debit card would never have charged. It moves further toward credit if your checking account charges overdraft fees and you often spend close to zero.\n\nBefore you settle the credit card vs debit card question, pull out your card agreement and read its section on disputes and unauthorized charges. Then set autopay for the full statement balance.",
+  "faqItems": [
+    {
+      "question": "Is it better to use a credit card or a debit card?",
+      "answer": "A credit card is better if you pay the full statement balance every month, because it can build credit history and a fraud loss does not come out of your checking account first. A debit card is better if you tend to carry a balance, since it charges no interest and limits spending to the money in your account, apart from overdrafts."
+    },
+    {
+      "question": "Is a debit card safer than a credit card?",
+      "answer": "The two cards handle fraud differently, and the difference is whose money is at stake. With a debit card, stolen money leaves your checking account first. The CFPB says your loss is capped at $50 or the unauthorized amount, whichever is less, if you report within two business days, and can reach $500 after that. Credit cards have their own federal dispute protections over money the lender fronted, and your card agreement sets out the exact terms."
+    },
+    {
+      "question": "Does using a debit card build credit?",
+      "answer": "Debit card use is generally not a credit-building activity, because no borrowing takes place. Credit card issuers report purchases and on-time payments to the credit bureaus, which can help build a credit history if you manage the card well. Confirm with your own issuer how your card reports."
+    },
+    {
+      "question": "What happens if my debit card is stolen?",
+      "answer": "Your money is at risk until you report it, so notify your bank or credit union as soon as you discover the loss. Within two business days, your responsibility is capped at $50 or the unauthorized amount, whichever is less; after two business days, it can reach $500. The bank generally has ten business days to investigate, must correct a confirmed error within one business day, and then has three business days to report its findings, according to the CFPB."
+    },
+    {
+      "question": "Should I use a credit card for everyday purchases?",
+      "answer": "Yes, if you pay the full statement balance every month. Everyday purchases on a credit card can build credit history and, on many cards, earn rewards, with no interest when the balance is paid in full. If you cannot pay in full, put daily spending on debit so interest never builds on groceries and gas."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

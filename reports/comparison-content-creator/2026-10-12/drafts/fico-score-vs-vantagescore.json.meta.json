@@ -1,0 +1,134 @@
+{
+ "slug": "fico-score-vs-vantagescore",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 2182,
+ "floor": 1500,
+ "input_tokens": 29910,
+ "output_tokens": 19196,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.5036,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "thin fact list: \u2248442 fact words for a 1500-word floor (ratio 0.29); expand it with sourced facts before any regeneration"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2182,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 442,
+   "floor": 1500,
+   "ratio": 0.29,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    6
+   ],
+   "applied": [
+    {
+     "id": "comparisonTable.rows[4].a",
+     "quote": "Scores thin or recent files under its own rules, which vary by version",
+     "replacement": "Scores thin or recent files under its own rules",
+     "type": "unsupported",
+     "why": "SOURCE does not say thin-file rules vary by version"
+    },
+    {
+     "id": "comparisonTable.rows[4].b",
+     "quote": "Scores thin or recent files under different rules from FICO, which also vary by version",
+     "replacement": "Scores thin or recent files under different rules from FICO",
+     "type": "unsupported",
+     "why": "SOURCE does not say thin-file rules vary by version"
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "The exact rules vary by model and version, and we do not quote a minimum credit history for either one.",
+     "replacement": "We do not quote a minimum credit history for either one.",
+     "type": "unsupported",
+     "why": "SOURCE does not say thin-file rules vary by version"
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Your report changes as balances post, accounts open, and payments arrive, so a score pulled at the start of a month can differ from one pulled weeks later.",
+     "replacement": "A score can differ depending on the day it was calculated.",
+     "type": "unsupported",
+     "why": "SOURCE only says scores can differ by day calculated"
+    },
+    {
+     "id": "subtitle",
+     "quote": "A side-by-side look at the two main credit scoring models and why the score on a free app may not match the one a lender pulls.",
+     "replacement": "A side-by-side look at the two best-known credit scoring brands and why the score on a free app may not match the one a lender pulls.",
+     "type": "unsupported",
+     "why": "SOURCE says two best-known brands, not main models."
+    },
+    {
+     "id": "comparisonTable.rows[6].b",
+     "quote": "Comes in multiple versions, and the version shown depends on the lender or free service displaying it",
+     "replacement": "Not published",
+     "type": "inference",
+     "why": "SOURCE does not say how free services choose VantageScore versions."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Paying every bill on time and keeping balances low against your credit limits changes data that FICO and VantageScore both read.",
+     "replacement": "Bill-paying history and how much available credit you use are data that FICO and VantageScore both read.",
+     "type": "inference",
+     "why": "SOURCE lists factors only; does not give this behavioral advice."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "The two usually move in the same direction, so a free VantageScore that climbs over several months suggests the FICO version the lender uses is climbing too.",
+     "replacement": "The two usually move in the same direction when your habits change.",
+     "type": "inference",
+     "why": "SOURCE says scores usually move together; months-long inference not stated."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "The trend tells you more than any single reading.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Comparative claim not stated in SOURCE."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "You can get your scores for free through several legitimate channels, and our guide to [what a good credit score is](/guides/what-is-a-good-credit-score/) lists them.",
+     "replacement": "You can get your scores for free through several legitimate channels; see our guide to [what a good credit score is](/guides/what-is-a-good-credit-score/).",
+     "type": "unsupported",
+     "why": "SOURCE names a credit-score guide, not this guide as listing channels."
+    }
+   ],
+   "deleted_final": 6,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2262
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 220.7,
+ "response_id": "msg_011Cfx1YCegVpcjnWhKBnGYo",
+ "generated_at": "2026-10-12T08:18:49+0000"
+}
