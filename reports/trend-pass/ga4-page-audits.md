@@ -265,3 +265,5 @@
 | /guides/senior-deduction-social-security/ | 2026-10-10 | 8 | 0/0/0/0/0 | 0 |
 | /investing/high-yield-savings-calculator/ | 2026-10-11 | 8 | 0/0/1/0/0 | 0 |
 | /guides/how-to-claim-a-trump-account/ | 2026-10-11 | 7 | 0/0/0/0/0 | 0 |
+| /guides/what-to-do-with-an-inheritance/ | 2026-10-12 | 6 | 0/0/0/0/0 | 0 |
+| /guides/best-investment-account-for-kids/ | 2026-10-12 | 5 | 0/0/0/0/0 | 0 |

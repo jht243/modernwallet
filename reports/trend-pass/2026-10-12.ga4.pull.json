@@ -1,0 +1,126 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-11",
+  "window_start": "2026-10-11",
+  "window_end": "2026-10-11",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 29,
+      "sessions": 30,
+      "active_users": 25,
+      "clicks": 29
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 28,
+      "sessions": 25,
+      "active_users": 20,
+      "clicks": 28
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 22,
+      "sessions": 23,
+      "active_users": 19,
+      "clicks": 22
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 17,
+      "sessions": 16,
+      "active_users": 15,
+      "clicks": 17
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 10,
+      "sessions": 11,
+      "active_users": 10,
+      "clicks": 10
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 9,
+      "sessions": 10,
+      "active_users": 8,
+      "clicks": 9
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 7,
+      "sessions": 7,
+      "active_users": 7,
+      "clicks": 7
+    },
+    {
+      "page": "/trump-account/",
+      "views": 7,
+      "sessions": 6,
+      "active_users": 5,
+      "clicks": 7
+    },
+    {
+      "page": "/guides/what-to-do-with-an-inheritance/",
+      "views": 6,
+      "sessions": 7,
+      "active_users": 5,
+      "clicks": 6
+    },
+    {
+      "page": "/guides/best-investment-account-for-kids/",
+      "views": 5,
+      "sessions": 4,
+      "active_users": 2,
+      "clicks": 5
+    }
+  ],
+  "top10_pages_total_views": 140,
+  "top10_pages_total_clicks": 140,
+  "channel_split": {
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 27,
+      "Direct": 3,
+      "Unassigned": 2
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 22,
+      "Unassigned": 1
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 18,
+      "Unassigned": 4,
+      "Direct": 3,
+      "Referral": 2
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 16
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 10,
+      "AI Assistant": 1
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 10,
+      "Unassigned": 1
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 7,
+      "Unassigned": 3
+    },
+    "/guides/what-to-do-with-an-inheritance/": {
+      "Organic Search": 6,
+      "Direct": 1
+    },
+    "/guides/best-investment-account-for-kids/": {
+      "Organic Search": 4
+    },
+    "/trump-account/": {
+      "Organic Search": 4,
+      "Referral": 1,
+      "Unassigned": 1
+    }
+  }
+}
