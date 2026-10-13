@@ -6,11 +6,13 @@ The routine may not skip the persona walkthrough or mindmap's full pass. Each st
 hook) blocks code edits, page writing, deploy and the owner email until the right stamps exist.
 
   start   --site <tracked domain> --base-url <https://host>   open the run (writes /tmp marker)
-  persona                 STEP 3 done: one persona file + 2 screenshots per picked tool
+  persona                 STEP 3 done: one persona file + 2 screenshots per picked tool, each with a
+                          `## Monetization` verdict (fit / no-fit / blocked)
   chart                   mindmap chart saved in full (12 columns, lookup: on every create row)
   build                   run the site's build; stamp only on exit 0
   final                   everything before deploy (manifest, audit, standards, links, ledger)
-  live                    after deploy: every changed URL answers 200 with its data-tool root
+  live                    after deploy: every changed URL answers 200 with its data-tool root; every
+                          `tool monetize` page ships the site's own Amazon tag
   status                  print which stamps exist
 
 Run dir: reports/tool-usage-pass/<YYYY-MM-DD>/   Chart: reports/mindmap-pass/<YYYY-MM-DD>-tool-usage.md
@@ -23,7 +25,8 @@ MARKER = Path("/tmp/tool-usage-run.json")
 CHART_COLS = ["problem", "solution", "bucket", "target", "format", "best_medium",
               "resolved_deliverable", "serp_verdict", "serp_evidence",
               "reader_question", "answer", "answer_placement"]
-PERSONA_SECTIONS = ["## Evidence", "## Persona", "## Walkthrough", "## Friction"]
+PERSONA_SECTIONS = ["## Evidence", "## Persona", "## Walkthrough", "## Friction", "## Monetization"]
+VERDICT_RE = re.compile(r"^\s*\**verdict\**\s*:\s*\**\s*(fit|no-fit|blocked)\b", re.I | re.M)
 SKIP_DIRS = {".git", "node_modules", "dist", ".next", "build", "reports", ".astro", "__pycache__", ".venv"}
 
 
@@ -70,6 +73,28 @@ def chart_rows(text):
     return [], []
 
 
+def site_cfg():
+    cfg = Path(".claude/tool-usage.site.json")
+    return json.loads(cfg.read_text()) if cfg.exists() else {}
+
+
+def is_fix(r):
+    """Rows Phase 5 applies as CODE in the tool's component, not as prose."""
+    f = r.get("format", "").lower()
+    return "tool fix" in f or "tool monetize" in f
+
+
+def monetize_verdicts(run):
+    """{tool slug: fit|no-fit|blocked} from each persona file's ## Monetization section."""
+    out = {}
+    for f in (run / "personas").glob("*.md"):
+        sec = f.read_text().split("## Monetization", 1)
+        if len(sec) == 2:
+            m = VERDICT_RE.search(sec[1].split("\n## ", 1)[0])
+            out[f.stem] = m.group(1).lower() if m else None
+    return out
+
+
 def picked(run):
     p = run / "picked.json"
     if not p.exists():
@@ -108,6 +133,15 @@ def cmd_persona(a):
         walk = s.split("## Walkthrough", 1)[-1].split("## Friction", 1)[0]
         if not re.search(r"1366|desktop", walk, re.I) or not re.search(r"390|phone|mobile", walk, re.I):
             probs.append(f"{slug}: Walkthrough must record BOTH the desktop (1366px) and phone (390px) runs")
+        mon = s.split("## Monetization", 1)[-1].split("\n## ", 1)[0]
+        if "## Monetization" in s and not VERDICT_RE.search(mon):
+            probs.append(f"{slug}: ## Monetization needs a `Verdict: fit|no-fit|blocked` line (STEP 3b)")
+        elif VERDICT_RE.search(mon) and VERDICT_RE.search(mon).group(1).lower() == "fit" \
+                and len(re.findall(r"^\s*\d+[.)]\s", mon, re.M)) < 3:
+            probs.append(f"{slug}: Monetization verdict is fit but there is no ranked list of 3+ product types "
+                         f"(numbered, highest priority first) — variety rule, STEP 3b")
+        elif "## Monetization" in s and len(mon.split()) < 25:
+            probs.append(f"{slug}: ## Monetization is under 25 words — name what they'd buy for THEIR result, or why nothing fits")
         if len(walk.split()) < 60:
             probs.append(f"{slug}: Walkthrough is under 60 words — record what the persona actually did and saw")
         for view in ("desktop", "mobile"):
@@ -140,6 +174,14 @@ def cmd_chart(a):
               if (t["tool"] if isinstance(t, dict) else t).lower() not in text]
     if absent:
         fail(f"picked tools never reach the chart (each needs its fix rows or an explicit 'no friction' line): {absent}")
+    mon_rows = " ".join((r.get("target", "") + " " + r.get("problem", "")).lower()
+                        for r in rows if "tool monetize" in r.get("format", "").lower())
+    unrowed = [t for t, v in monetize_verdicts(run).items() if v == "fit" and t.lower() not in mon_rows]
+    if unrowed:
+        fail(f"Monetization verdict is `fit` but no `tool monetize` chart row names the tool: {unrowed}")
+    if mon_rows and not site_cfg().get("amazon_tag"):
+        fail("chart has `tool monetize` rows but .claude/tool-usage.site.json has no amazon_tag — "
+             "mark those tools `Verdict: blocked` instead (STEP 3b); only the owner sets the tag")
     out = subprocess.run([sys.executable, "scripts/mindmap/coverage_lookup.py", "--site-url", m["base_url"],
                           "--chart", str(cp)], capture_output=True, text=True)
     (run / "coverage_lookup.txt").write_text(out.stdout + out.stderr)
@@ -208,7 +250,7 @@ def cmd_final(a):
         at = audit.read_text()
         for r in rows:
             b = r.get("bucket", "").lower()
-            if ("create new content" in b or "tool fix" in r.get("format", "").lower()) and r.get("target", "") \
+            if ("create new content" in b or is_fix(r)) and r.get("target", "") \
                     and r["target"].strip("`") not in at:
                 probs.append(f"audit.md never mentions row target {r['target']}")
         if re.search(r"^\s*(VERDICT|FINAL)\s*:\s*FAIL", at, re.I | re.M):
@@ -217,7 +259,7 @@ def cmd_final(a):
     today = [l for l in (led.read_text().splitlines() if led.exists() else []) if m["date"] in l]
     if any("create new content" in r.get("bucket", "").lower() for r in rows) and not any('"phase-3"' in l for l in today):
         probs.append("no phase-3 entry in reports/standards-ledger.jsonl today (load-standards.sh was skipped)")
-    if any("update existing body text" in r.get("bucket", "").lower() and "tool fix" not in r.get("format", "").lower()
+    if any("update existing body text" in r.get("bucket", "").lower() and not is_fix(r)
            for r in rows) and not any('"phase-5"' in l for l in today):
         probs.append("no phase-5 entry in reports/standards-ledger.jsonl today")
     metas = glob.glob(f"reports/mindmap-pass/{m['date']}*/**/*.meta.json", recursive=True)
@@ -267,10 +309,55 @@ def cmd_live(a):
         report.append(f"- {url} — {code}{'' if tool_ok else ' — NO data-tool root'}")
         if code != 200:
             bad.append(url)
+    tag = site_cfg().get("amazon_tag")
+    for r in rows:
+        if "tool monetize" not in r.get("format", "").lower():
+            continue
+        route = r.get("target", "").strip("` ").split(" ")[0]
+        if not route.startswith("/"):
+            route = next((t["path"] for t in picked(run) if isinstance(t, dict) and t.get("tool", "").lower()
+                          in r.get("target", "").lower()), "")
+        if not route.startswith("/"):
+            bad.append(f"tool monetize row {r.get('target')!r} has no route"); continue
+        slug = route.strip("/").split("/")[-1]
+        text = page_bundle(m["base_url"], route)
+        row_text = " ".join(r.values())
+        asins = sorted(set(re.findall(r"\b(B0[A-Z0-9]{8}|\d{9}[\dX])\b", row_text)))  # product ASINs + book ISBN-10s
+        miss = [x for x in asins if x not in text]
+        checks = {f'data-tool-picks="{slug}"': f'data-tool-picks="{slug}"' in text or
+                  ("data-tool-picks" in text and slug in text),
+                  f"tag {tag}": bool(tag) and tag in text,
+                  f"{len(asins)} pinned ASINs": not miss}
+        failed = [k for k, v in checks.items() if not v]
+        report.append(f"- {m['base_url'] + route} — affiliate picks: "
+                      + ("OK (" + ", ".join(checks) + ")" if not failed else "MISSING " + ", ".join(failed)
+                         + (f" {miss}" if miss else "")))
+        if failed:
+            bad.append(f"{route} (picks not live: {', '.join(failed)})")
     (run / "live.md").write_text("## Live verification\n" + "\n".join(report) + "\n")
     if bad:
-        fail(f"non-200 live URLs: {bad} (revert those pages per the routine)")
+        fail(f"live check failed: {bad} (fix, or revert those pages per the routine)")
     ok("LIVE", run, f"{len(routes)} URLs 200 — {run}/live.md")
+
+
+def fetch(url):
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "tool-usage-gate"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return r.read().decode("utf-8", "ignore")
+    except Exception:
+        return ""
+
+
+def page_bundle(base, route):
+    """Picks render after the visitor computes, so read the page AND its same-origin JS chunks."""
+    html = fetch(base + route)
+    parts = [html]
+    for src in re.findall(r'<script[^>]+src="([^"]+)"', html):
+        if src.startswith("//") or (src.startswith("http") and not src.startswith(base)):
+            continue
+        parts.append(fetch(src if src.startswith("http") else base + "/" + src.lstrip("/")))
+    return "\n".join(parts)
 
 
 def cmd_status(a):

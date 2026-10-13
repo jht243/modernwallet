@@ -1,5 +1,7 @@
 {
   "site": "themodernwallet.com",
   "base_url": "https://www.themodernwallet.com",
-  "build_cmd": "npm run build"
+  "build_cmd": "npm run build",
+  "amazon_tag": "soulcircle01-20",
+  "affiliate_placement": "in-tool"
 }

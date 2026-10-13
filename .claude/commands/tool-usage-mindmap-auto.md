@@ -1,5 +1,5 @@
 ---
-description: AUTONOMOUS weekly tool-usage pass for ONE fleet site. Reads which of this site's tools real visitors used (our own tracking, the same data as the fleet tool-usage dashboard), becomes the person using each one, and runs /mindmap-pass on what that person needs — (1) fixes to the tool they used, (2) the next tools they'd want, built for real (max 3 per run). Usage in, better + new tools out. NO human gates. One copy of this file lives in each fleet repo that runs it; the site comes from the routine prompt.
+description: AUTONOMOUS weekly tool-usage pass for ONE fleet site. Reads which of this site's tools real visitors used (our own tracking, the same data as the fleet tool-usage dashboard), becomes the person using each one, and runs /mindmap-pass on what that person needs — (1) fixes to the tool they used, (2) the next tools they'd want, built for real (max 3 per run), (3) what they'd buy for their result, placed in the tool as affiliate picks. Usage in, better + new + monetized tools out. NO human gates. One copy of this file lives in each fleet repo that runs it; the site comes from the routine prompt.
 argument-hint: "(no arguments; TOOL_SITE and BASE_URL come from the routine prompt)"
 ---
 
@@ -17,7 +17,7 @@ argument-hint: "(no arguments; TOOL_SITE and BASE_URL come from the routine prom
 
 **Inputs from the routine prompt:** `TOOL_SITE` (the bare domain as tracked, e.g. `chalkbox.org`) and `BASE_URL` (the host that answers 200, e.g. `https://chalkbox.org`).
 
-**The whole idea:** people used these tools. Be that person, find what got in their way, fix it, then build the tool they'd reach for next. This is a thin wrapper around the mindmap engine — mindmap does validation, dedup, writing, audit, linking, sitemap, IndexNow, deploy and live verification. This file only adds the persona work, the `tool fix` rows, and a 3-new-tools-per-run cap; mindmap itself builds tool rows (Phase 3c).
+**The whole idea:** people used these tools. Be that person, find what got in their way, fix it, ask what they'd buy now that they have their answer, then build the tool they'd reach for next. This is a thin wrapper around the mindmap engine — mindmap does validation, dedup, writing, audit, linking, sitemap, IndexNow, deploy and live verification. This file only adds the persona work, the `tool fix` and `tool monetize` rows, and a 3-new-tools-per-run cap; mindmap itself builds tool rows (Phase 3c).
 
 ## ‼️ NO SHORTCUTS — enforced by hooks, not by trust (USER RULE 2026-10-11)
 The 2026-10-11 pilot edited tools before walking them, never saved a mindmap chart, skipped mindmap phases 0/1/2/5/6/8 and still shipped. So every stage now ends with a gate command, and `.claude/tools/tool-usage-gates.sh` (PreToolUse hook) **blocks** the next stage until that gate has passed:
@@ -25,11 +25,11 @@ The 2026-10-11 pilot edited tools before walking them, never saved a mindmap cha
 | Gate (`python3 scripts/tool_usage/tool_usage_gate.py …`) | Run it after | It requires | Unlocks |
 |---|---|---|---|
 | `start --site "$TOOL_SITE" --base-url "$BASE_URL"` | STEP 1 found work | — | the run (until then every edit, deploy and email is blocked on this branch) |
-| `persona` | STEP 3 | `picked.json`; per tool `personas/<tool>.md` (Evidence / Persona / Walkthrough with desktop+phone / Friction) + `screenshots/<tool>-desktop.png` and `-mobile.png` | — |
+| `persona` | STEP 3 + 3b | `picked.json`; per tool `personas/<tool>.md` (Evidence / Persona / Walkthrough with desktop+phone / Friction / Monetization with a `Verdict:` line) + `screenshots/<tool>-desktop.png` and `-mobile.png` | — |
 | `chart` | mindmap build-brief + Phase 0 | `reports/mindmap-pass/<DATE>-tool-usage.md` with all 12 build-brief columns, `lookup:` on every create row, every picked tool present; it runs `coverage_lookup.py` itself | code edits, page writing (`content_gen.py`) |
 | `build` | Phases 1–8 | the site's real build exits 0 | — |
 | `final` | build | `phase0-manifest.md` (Duplicate check passed), `audit.md` (auditor report naming every row, no FAIL verdict), standards-ledger phase-3/phase-5 entries, a `.meta.json` per new page, an inbound link to every new route, `phase8-summary.md`, ledger lines | `deploy-run-to-main.sh push` |
-| `live` | deploy | every changed URL 200 with its `data-tool` root → writes `live.md` | the owner email |
+| `live` | deploy | every changed URL 200 with its `data-tool` root; every `tool monetize` page ships its `data-tool-picks` block, the site's `amazon_tag` and every pinned ASIN → writes `live.md` | the owner email |
 
 Run dir = `reports/tool-usage-pass/<DATE>/`. Stamps (`*.ok`) and `/tmp/tool-usage-run.json` are written ONLY by the gate script; the hook blocks hand-made ones. A blocked call means: do the step it names. Never work around a block — there is no "small fix" exception.
 
@@ -55,6 +55,8 @@ Ledger = `reports/tool-usage-pass/ledger.jsonl` (one JSON object per line, this 
 
 Work up to **5 `persona` tools** (most people first) and **2 `low-use` tools** (most views first). The rest wait for next week.
 
+**Monetization catch-up (lane `monetize`).** Tools skipped above for a recent `worked` line still get a monetization look if they have **3+ people** and no `monetize` verdict in the ledger in the last 28 days — or whose last shipped picks cover fewer than 3 product types (`pick_types` missing or < 3: re-do it with the variety rule below) — add up to **3** of them (most people first) with `"lane": "monetize"`. They get the full STEP 3 walk (you can't pick products for a result you haven't seen) but no new friction work: their `## Friction` says `Monetization catch-up — friction worked <date>, not re-worked`. Skip STEP 4 for them.
+
 Write them to `reports/tool-usage-pass/<DATE>/picked.json` — a list of the STEP 1 objects (`tool`, `path`, `people`, `lane`…).
 
 ## STEP 3 — Become the person using each tool (Lane A: fix what's in their way)
@@ -73,7 +75,7 @@ For each picked tool, in order:
    - no way to keep what they made (print, copy, download, fullscreen/project, share link) when their "done" needs one
    - phone layout breaks, controls too small, console errors, slow or broken load
    - `low-use` tools: what on the page, before the tool, would make them leave without trying it (tool below the fold, unclear first step, intimidating form)
-4. **Write the persona file** `reports/tool-usage-pass/<DATE>/personas/<tool>.md` with exactly these sections: `## Evidence` (queries or "no GSC access", the STEP 1 numbers), `## Persona` (the card), `## Walkthrough` (what they did and saw at desktop 1366px AND phone 390px, step by step), `## Friction` (each item, or "none").
+4. **Write the persona file** `reports/tool-usage-pass/<DATE>/personas/<tool>.md` with exactly these sections: `## Evidence` (queries or "no GSC access", the STEP 1 numbers), `## Persona` (the card), `## Walkthrough` (what they did and saw at desktop 1366px AND phone 390px, step by step), `## Friction` (each item, or "none"), `## Monetization` (STEP 3b — write it before running the gate).
    After the last tool: `python3 scripts/tool_usage/tool_usage_gate.py persona`. Until it passes you cannot edit code.
 5. **Turn each friction into a chart row** for the brief:
    - Tool behaviour/code → bucket `update existing body text`, **format `tool fix`**, target = the component file + route, solution = the exact change, problem = the persona quote + evidence.
@@ -86,7 +88,36 @@ For each picked tool, in order:
 - No new per-use paid API calls, no new runtime dependency over ~30 KB gz (the bundle gate will fail the build anyway).
 - Math changes need a stated reason + a worked example in the row; if the right formula isn't certain, the fix is an explanation on the page, not new math.
 
-## STEP 4 — What would they reach for next? (Lane B: new tools)
+## STEP 3b — What would they buy for this result? (Lane C: monetization)
+Same person, same walkthrough, one more question: **now that they have their answer, what do they buy to act on it?** The hardware calculator is the model case — the visitor learns they need 24 GB of VRAM; the next thing they do is shop for a 24 GB card or a Mac with enough unified memory. Putting the right product, for THEIR number, under the answer is a service, not an ad.
+
+**Site config first** — `.claude/tool-usage.site.json`:
+- `amazon_tag` — this site's own Amazon tracking ID. Missing → every fitting tool is `Verdict: blocked` (no row, no code). Use only the tag the owner set there — it may be shared across fleet sites (owner rule 2026-10-12: untagged sites share `soulcircle01-20`, and the owner lists each site on the Associates account); never pick or copy a tag yourself.
+- `affiliate_placement` — `in-tool` (default), `footer-only` or `off`. Anything but `in-tool` → `Verdict: no-fit (site rule: <value>)`.
+- The site's existing monetization wins where it fits better: its own product/store (rank 1 on the monetization ladder) or an existing affiliate engine/helper (layer3: `src/utils/affiliate.ts` `amazonProductLink()` + referral constants, `data/affiliate/catalog.ts`). Reuse the site's helper; hand-write a URL only when the site has none.
+
+**The fit test** (natural fit is the gate — a forced pick is as bad as a missed one):
+- `fit` — the purchase follows directly from the visitor's RESULT, and someone with that result would plausibly buy it to finish the job. Hardware calculator → GPU/workstation for the computed VRAM tier. Shaving cost calculator → the razor/blades the math favoured. Classroom noise meter → a printed voice-level chart or a classroom timer. Trip packing tool → the gear on their list.
+- **Legal, medical, tax and money tools (YMYL) → books (owner rule 2026-10-12).** Their visitor's next step is understanding their situation, so the picks are books on THEIR result's topic: a TSP withdrawal result → a federal-retirement planning book; a VA claim estimate → a VA-claims guide; a psychedelic-law lookup → a book on that law or the research behind it; a metabolic tool → a book by a physician or researcher on that marker. Book rules: current edition (or the standard text), a credentialed author or established publisher (Nolo, academic/medical presses, recognised practitioners), mainstream and evidence-based — no fringe, miracle-cure or get-rich titles. Heading = "Further reading on <their topic>"; one line on what the book helps them do. Never present a book as a substitute for a lawyer, doctor or adviser, and never place it inside a diagnosis, dosage, legal-outcome or buy/sell answer — under the result, after any "talk to a professional" line the tool already shows. No physical products, supplements, devices or treatments on these tools.
+- `no-fit` — the honest answer is "nothing", or a product or book would read as bolted on. Say why in one line.
+- `blocked` — it fits but the site has no `amazon_tag` (or the user must decide something). List the picks you would ship so the owner can unblock it.
+
+**Pick the products (fit only):**
+1. **Variety, ranked (owner rule 2026-10-13).** List EVERY kind of item this person could buy to act on the result — not one product type. Hardware calculator example: complete computers (Mac Studio / Mac mini with enough unified memory, prebuilt AI workstations, mini PCs), the GPU itself, then what the build also needs (RAM, power supply, NVMe drive), then books/courses on running local models. Rank the list by priority: (1) how directly it completes the visitor's job for THIS result, (2) how likely this persona buys it (a dev lead buys a whole machine before parts), (3) order value. Aim for **3+ product types** in the ranked list for every `fit` tool.
+   Then map the tool's OUTPUT tiers to the ranked list (e.g. ≤16 GB → Mac mini 24–32 GB, 16 GB card, 32 GB RAM kit · ≤24 GB → Mac Studio 64 GB, RTX 4090 prebuilt, 24 GB card · ≤48 GB → Mac Studio 128 GB, 48 GB workstation card · above → "rent, don't buy"). Every tier gets its picks **in priority order, highest first**, or an explicit "nothing to buy here" (rent / use what you own). Books work on any tool where a book genuinely helps more than a product (search with `--index Books`). Include the honest non-purchase option when one exists (cloud GPU, a free alternative) — via the site's referral constant if it has one.
+2. Find real listings: `python3 scripts/tool_usage/amazon_pick.py "<exact product phrase>" ["<phrase 2>" …] --index Electronics` (`--index Books` for books — search by exact title + author) (Creators API; returns real ASINs + titles with the site's tag). Pin the ASIN whose title names the exact brand + model you mean — no resellers, renewed units, clones or bundles. Nothing confident → keep the search link it returns. **Never type an ASIN the script didn't return.**
+3. Write `## Monetization` in the persona file: `Verdict: fit|no-fit|blocked`, then the reasoning in the persona's terms, then (fit/blocked) the **ranked product-type list** (numbered, highest priority first) and the tier → pick table with ASINs and the one-line "why this, for this result".
+
+**Each `fit` becomes one chart row:** bucket `update existing body text`, **format `tool monetize`**, target = the component file + route, problem = the persona + the result that triggers the purchase, solution = the tier → product table with ASINs, the link helper, and where it renders. The `chart` gate fails if a `fit` tool has no `tool monetize` row.
+
+**How picks appear in the tool** (the auditor fails a row that breaks one; the Tool-fix guardrails below apply too):
+- Inside the result panel, BELOW the answer, only after the visitor computes; picks change when the result changes. Never above the answer, never a popup, never delaying or hiding the result.
+- Wrapped in `<div data-tool-picks="<tool slug>">` (the `live` gate looks for it). Heading in plain words tied to the result ("Hardware that fits 24 GB"). Up to 5 picks per tier, shown in priority order (highest first), mixing product types where they fit (a complete computer, the part, the accessory); each = product name + one line on why it fits THIS number + a "Check price on Amazon" button.
+- No price, rating, stars, stock or "deal" claims stored in code (Amazon's 24-hour rule) — the button sends them to the live price.
+- Links: the site's helper with its tag, `target="_blank"`, `rel="sponsored nofollow noopener noreferrer"`. One disclosure line directly under the picks: "As an Amazon Associate we earn from qualifying purchases."
+- Monetization stays in the tool: no affiliate links added to the page's prose in this run (that is /monetization-pass's job).
+
+
 For each `persona` tool only: list the 2–3 jobs this same person does right before or right after this one (noise meter → a voice-level chart to print, a "quiet work" timer that ties to the meter; TSP withdrawal calculator → TSP vs IRA rollover comparison). Each becomes a `create new content` row, format `interactive tool` / `calculator` / `quiz/assessment`, with the seed tool + persona card as the `problem` evidence and what the tool DOES (inputs → outputs) in `solution`.
 
 Client-side, deterministic tools only (no tool that costs us an API call per use). Do not dedup or validate here — mindmap's coverage lookup and demand ladder do that.
@@ -111,6 +142,9 @@ mindmap's Phase 3 builds `interactive tool` / `calculator` / `quiz/assessment` r
 ### `tool fix` rows — Phase 5 applies them, Phase 4's tool checklist audits them
 Phase 5 routes `format: tool fix` rows to a code change in the named component (not the prose writer), then bumps the page's "last updated" date in the same change, per the Phase 4 editor rule. The same independent auditor checks every tool-fix diff against Phase 4's tool checklist plus: the diff only touches what the row says, and every STEP 3 guardrail holds. Fail → fix in place (2 tries), then drop that row.
 
+### `tool monetize` rows — same path as `tool fix`
+Phase 5 applies them as code in the named component; the Phase 4 auditor additionally checks: the picks follow from each result tier (not generic), every ASIN re-resolves to the named product (`amazon_pick.py` on the same phrase), the tag is this site's `amazon_tag`, rel + disclosure + `data-tool-picks` present, no stored price/rating, the result itself is unchanged. Fail → fix in place (2 tries), then drop the row and log it under Dropped.
+
 Phases 6 (internal linking — every new tool gets a link FROM its seed tool's page, "next step" style, plus its hub), 7 (sitemap + IndexNow), 7b, 8 and 9 (commit → deploy → 200-verify → IndexNow) run unchanged.
 
 ## STEP 6 — Verify before you trust it
@@ -118,11 +152,13 @@ Phases 6 (internal linking — every new tool gets a link FROM its seed tool's p
 - Every new and changed tool URL answers 200 live.
 - Tracking still works on every new and changed tool: `PW_CORE=/tmp/pw/node_modules/playwright-core node scripts/tool_usage/verify_beacons.cjs "$BASE_URL" <path> [...]` → PASS (1 view + 1 use). No browser → `curl -s` the live page and confirm `data-tool="<slug>"` is in the HTML.
 - Re-do the persona's job once on each fixed tool: the friction you fixed is gone.
+- Monetized tools: compute at least two different result tiers in the browser — the picks change with the result, each link opens `amazon.com` with this site's tag, the disclosure shows, and the phone layout holds.
 - Any page that can't reach 200 after 2 fixes → revert it; never leave a 404 live.
 
 ## STEP 7 — Ledger
 Append one line per tool to `reports/tool-usage-pass/ledger.jsonl` and commit it with the run:
-`{"date","tool","lane","people","people_7d","views","use_rate","persona","findings":[...],"shipped":[...],"status":"worked"}`
+`{"date","tool","lane","people","people_7d","views","use_rate","persona","findings":[...],"shipped":[...],"monetize":"shipped"|"no-fit"|"blocked"|"dropped","picks":["<ASIN or search phrase>",...],"pick_types":["computer","gpu","ram",...],"status":"worked"}`
+(`monetize` lane tools: same line with `"status":"monetized"`.) STEP 2's catch-up reads the `monetize` field.
 and one `{"date","tool":"<new slug>","seed":"<tool>","status":"built"|"spec"|"dropped","reason"}` line per new-tool row.
 
 ## STEP 8 — Email the owner — EVERY run (USER RULE 2026-10-11)
@@ -138,22 +174,24 @@ Write `/tmp/tool-usage-<YYYY-MM-DD>.md` first and pass it with `--details-file`.
 2. **`## Data`** — `<TOOL_SITE>, <data_days> days tracked. Worked: <tool> (<people> people), …`; note when `data_days` < 30 that the numbers are early.
 3. **`## Fixes shipped`** — per tool: the persona in one line, then each fix as `- [<tool name>](<live url>) — <what changed> (why: "<persona quote>")`.
 4. **`## New tools`** — `- [<name>](<live url>) — <what it does>. Next step after [<seed tool>](<url>).`
-5. **`## Next in line`** — tool rows specced, not built this week.
-6. **`## Dropped`** — every row mindmap or the auditor dropped, with the one-line reason.
-7. **`## Live verification`** — the gate's `live.md` (HTTP status + tracking for every new and changed URL).
+5. **`## Monetization`** — per tool: verdict + one line. Shipped → `- [<tool>](<live url>) — <tier → product, …>`. Blocked → what it needs (e.g. "create an Amazon tracking ID for <site>, add the site to the Associates account, set `amazon_tag` in `.claude/tool-usage.site.json`") + the picks that would ship. No-fit → why.
+6. **`## Next in line`** — tool rows specced, not built this week.
+7. **`## Dropped`** — every row mindmap or the auditor dropped, with the one-line reason.
+8. **`## Live verification`** — the gate's `live.md` (HTTP status + tracking for every new and changed URL).
 
 ```bash
 REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
 .claude/scripts/send-routine-email.py --status <success|no-op|failure> --skill tool-usage-mindmap-auto \
   --site "$TOOL_SITE" --repo "$REPO" --branch main --commit-sha "$(git rev-parse HEAD)" \
-  --summary "<N> tool fixes, <M> new tools from real tool usage." \
+  --summary "<N> tool fixes, <M> new tools, <K> tools monetized from real tool usage." \
   --details-file /tmp/tool-usage-<YYYY-MM-DD>.md
 ```
 A run that ends without sending this email is a failed run.
 
 ## Rolling this routine out to another fleet site (no shortcuts there either)
 Copy ALL of these into the target repo, then pilot one run before scheduling more:
-1. `.claude/commands/tool-usage-mindmap-auto.md`, `scripts/tool_usage/{site_tool_usage.py,tool_usage_gate.py,verify_beacons.cjs}`, `.claude/tools/tool-usage-gates.sh` (chmod +x), and `.claude/tool-usage.site.json` = `{"site": "<tracked domain>", "base_url": "https://…", "build_cmd": "<the site's real build>"}` (the `build` gate runs `build_cmd`).
+1. `.claude/commands/tool-usage-mindmap-auto.md`, `scripts/tool_usage/{site_tool_usage.py,tool_usage_gate.py,verify_beacons.cjs,amazon_pick.py}`, `.claude/tools/tool-usage-gates.sh` (chmod +x), and `.claude/tool-usage.site.json` = `{"site": "<tracked domain>", "base_url": "https://…", "build_cmd": "<the site's real build>", "amazon_tag": "<this site's tracking ID, or omit>", "affiliate_placement": "in-tool"}` (the `build` gate runs `build_cmd`; no `amazon_tag` → monetization runs as `blocked` and the email says what to set up).
+   Real ASINs need `AMZ_CLIENT_ID` / `AMZ_CLIENT_SECRET` (layer3labs' Creators API client) exported in the routine prompt; without them `amazon_pick.py` falls back to tagged search links.
 2. In `.claude/settings.json`: add `$CLAUDE_PROJECT_DIR/.claude/tools/tool-usage-gates.sh` as a PreToolUse hook with matcher `Edit|Write|MultiEdit|NotebookEdit|Bash`, and `"modelSettings": {"claude-opus-5-5": {"effortLevel": "medium"}}`.
 3. The repo's mindmap-pass must have Phase 3c (MINDMAP-BUILDS-TOOLS). `scripts/mindmap/coverage_lookup.py` must exist.
 4. Routine: `model: claude-opus-5-5` on the trigger (RemoteTrigger update `{"model": "claude-opus-5-5"}`), branch `claude/tool-usage-<site>` (the hook keys on the `claude/tool-usage` prefix), prompt cloned from Chalkbox's (`trig_01VG4Bqr2GvqHCiihMCwLCq6`) with that site's keys.
