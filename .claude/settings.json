@@ -13,7 +13,7 @@
     ],
     "PreToolUse": [
       {
-        "matcher": "Agent|Task|Bash",
+        "matcher": "Agent|Task|Bash|Monitor",
         "hooks": [
           {
             "type": "command",
