@@ -4243,7 +4243,7 @@ export const ROUNDUPS: RoundupEntry[] = [
         name: "Killswitch",
         bestFor: "Best low-cost web option: build and read the will free, pay once at download",
         description:
-          "Web-based estate planning software from Outpost Labs LLC, launched July 2025, covering all 50 states plus DC. A will is $69, a financial power of attorney is $39, and an advance healthcare directive is $39, or $99 for all three (versus $147 bought separately). You build and preview each document free; the preview carries a watermark, and paying unlocks the clean PDF with your state's signing and witnessing instructions. Templates are drafted from published state statutes and uniform codes, and each state page cites its statute. No attorney reviewed them. Our [full review](/guides/killswitch-review/) covers pricing, limits, and who it fits.",
+          "[Killswitch](https://killswitch.rip/?utm_source=modern_wallet&utm_medium=article-roundup) is web-based estate planning software from Outpost Labs LLC, launched July 2025, covering all 50 states plus DC. A will is $69, a financial power of attorney is $39, and an advance healthcare directive is $39, or $99 for all three (versus $147 bought separately). You build and preview each document free; the preview carries a watermark, and paying unlocks the clean PDF with your state's signing and witnessing instructions. Templates are drafted from published state statutes and uniform codes, and each state page cites its statute. No attorney reviewed them. Our [full review](/guides/killswitch-review/) covers pricing, limits, and who it fits.",
         strengths: [
           "$99 one-time for will + financial POA + healthcare directive",
           "Free to build and read the full document before paying",
