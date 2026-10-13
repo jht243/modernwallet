@@ -1,0 +1,7 @@
+[keyword_data] ahrefs unusable (no AHREFS_API_KEY)
+[keyword_data] volume: using dataforseo (quality order ahrefs > dataforseo > semrush)
+[keyword_data] dataforseo returned volume for 9/10 phrases
+[keyword_data] semrush unusable (no SEMRUSH_API_KEY)
+[keyword_data] kd: using dataforseo (quality order ahrefs > semrush > dataforseo)
+[keyword_data] No tool volume for 1 phrases — autocomplete band (source=estimate, NOT measured)
+[keyword_data] Autocomplete: 9/10 rows corroborated live

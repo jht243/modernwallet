@@ -1,0 +1,39 @@
+---
+mindmap_pass_date: 2026-10-13
+source: free-form input brief (top-10 GSC queries 2026-10-06→2026-10-13 + trend-pass research pack), demand-validated
+interpreted_brief: Our 10 top Google queries for the 7 days ending 2026-10-13 (1 click total; the same mortgage-lender and online-will variants as yesterday, plus custodial/529/Roth-401k comparison queries) plus research that finds no new trend and no uncovered top-20 query. Build what the demand implies the site lacks. Autocomplete and the SERP read on "custodial account vs savings account" pointed to one adjacent gap: the site has custodial-vs-savings, custodial-vs-529 (as 529-vs-utma), Roth-IRA-vs-trust-fund and Trump Account comparisons, but no page answering "custodial account or trust".
+generated_by: mindmap-pass build phase — keyword demand ladder (volume=dataforseo, kd=dataforseo; Ahrefs/SEMRUSH not configured) + Autocomplete miner (mortgage lender choice 85, will cost 146, custodial account vs 53, roth 401k vs traditional 160 suggestions) + live SERP reality check (5 heads read, $0.02075 of $2.00) + coverage_lookup + adversarial duplicate-suppression reviewer
+demand_source: dataforseo
+serp_reads: 5 heads, $0.02075 of $2.00
+status: executed — 0 pages built (1 row HELD)
+---
+
+Keyword data: volume=dataforseo, kd=dataforseo (Ahrefs and SEMRUSH keys not configured). Raw: reports/mindmap-pass/cache/2026-10-13-trend-lane-c.volumes.json; reports/mindmap-pass/2026-10-13-trend-lane-c.serp.json.
+
+## Main action table
+
+| problem | solution | bucket | target | format | best_medium | resolved_deliverable | serp_verdict | serp_evidence | reader_question | answer | answer_placement | source |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Lens 2 (adjacent to top-10 query "custodial account vs savings account", 4 impr). Cluster: `custodial account vs trust` 110/mo KD 3 (DataForSEO measured, Autocomplete corroborated 7 completions); `custodial account or trust` est. 150-1500 (autocomplete estimate, NOT measured); related searches "custodial account vs trust taxes", "custodial account vs 529 vs trust"; Autocomplete "custodial account or trust", "custodial account vs trust fund", "custodial brokerage account vs trust". Site has custodial-vs-savings, 529-vs-utma, utma-vs-ugma, custodial-roth-ira-vs-trust-fund, trump-account-vs-custodial-account, but no page whose reader goal is custodial account versus a trust for a child. lookup: /compare/custodial-roth-ira-vs-trust-fund — reader choosing a Roth IRA vs a trust fund (different account, different goal); /guides/utma-custodial-account-explained — reader learning what a UTMA is (different goal); no match for the proposed route. No prior commits touch the route. | Create /compare/custodial-account-vs-trust/ — UTMA/UGMA custodial account vs a trust for a child: who controls the money and until what age, taxes on the child's income (kiddie tax vs compressed trust brackets), cost and setup, flexibility to set conditions, financial-aid treatment; verdict with the break-even for when a trust earns its cost | create new content | /compare/custodial-account-vs-trust/ | comparison table/database — pick shape, two options with a situation-dependent verdict | text | text | winnable (AI Overview) | kbgrp.com, policygenius.com, braverman-law.com, reddit.com, wellsfargo.com; AI Overview cites smartasset.com, meetfabric.com; not forum-dominated (2/10) | "Is it better to open a custodial account or a trust for my child?" [PAA 3/6 on-topic (custodial vs trust, trust fund good idea for a child, custodial account or not); 3/6 off-topic/tangential: trust vs estate accounts, trust category, best way to put money away for kids; ac 4/4 on-topic] | Pick with its boundary: a custodial account for simple, low-cost savings with no conditions; a trust only when the parent wants control past the age of majority or conditions on spending, accepting legal cost and steeper trust tax brackets | section 1: "Custodial Account or Trust? The Short Answer" | top-10 (Lens 2) |
+
+## Emerging search patterns (clusters)
+| Cluster (theme) | Member queries (from demand ladder / Autocomplete / SERP PAA) | Why emerging / under-served | Current coverage | Lever | Target | Format | Best medium | Resolved deliverable | SERP verdict | SERP evidence |
+|---|---|---|---|---|---|---|---|---|---|---|
+| custodial account vs trust | custodial account vs trust (110); custodial account or trust (est., NOT measured); custodial account vs trust fund; custodial brokerage account vs trust; PAA: Is a trust fund a good idea for a child? | coverage gap at theme level: no custodial-vs-trust page | partial | create new content | /compare/custodial-account-vs-trust/ | comparison table/database | text | text | winnable (AI Overview) | kbgrp.com, policygenius.com, braverman-law.com; AIO cites smartasset.com, meetfabric.com |
+
+## Exclusions / candidates considered
+Volumes DataForSEO measured unless marked estimate.
+- best mortgage lenders / best home loan lenders / best home mortgage lenders / best lenders for home loans — DROP: /roundup/best-mortgage-lenders/ is the dedicated page; ledger 2026-10-10/11/12 stand.
+- how to choose a mortgage lender (880/mo KD 17; SERP forum-dominated, PAA wanders to affordability) — DROP: /guides/questions-to-ask-a-mortgage-lender and /roundup/best-mortgage-lenders serve the same reader goal; /guides/who-overpays-on-mortgages and /guides/types-of-mortgage-loans cover the rest. PAA affordability questions are the HELD 400k-income row.
+- how to find out who my mortgage lender is (20/mo, KD 26) — DROP: weak demand, servicer-lookup intent not groundable.
+- how much does a will cost (3,600/mo KD 6) — DROP: dedicated spoke exists (src/data/spokes-estate-planning.ts will-cost calculator, src/lib/will-cost.ts) plus /compare/online-will-vs-lawyer, /guides/killswitch-review and the will-maker roundup.
+- last will online / make a will online — DROP: /roundup/best-online-will-makers/ (ledger 2026-10-09/10/12).
+- custodial account vs 529 (1,300/mo KD 0) — DROP: same reader goal served by /compare/529-vs-utma/ (custodial account = UTMA/UGMA) and /compare/custodial-roth-ira-vs-529/.
+- custodial account vs joint account (10/mo, forum-dominated, AIO) — DROP: weak demand; PAA (downsides, who owns the money, taxes) answered on /guides/utma-custodial-account-explained and /guides/custodial-account-taxes-kiddie-tax.
+- custodial account vs savings account, 529 vs brokerage account, chase ultimate rewards, are trump accounts a scam — DROP: dedicated pages exist (ledger 2026-10-10/11/12).
+- roth 401k versus traditional 401k (12,100/mo) — HELD, unchanged: existing page carries stale facts (ledger 2026-10-10/12).
+- can custodial accounts be garnished — HELD, unchanged (state-law sources unreachable).
+
+## Reviewer and outcome
+- Duplicate-suppression reviewer (Explore subagent): KEEP /compare/custodial-account-vs-trust/ with conditions: frame as UTMA/UGMA vs trust, cross-link both ways with /compare/custodial-roth-ira-vs-trust-fund (comparisons.ts:6003), and do not reuse the prose of its FAQs at lines ~6093 and ~6097 (tax and control already answered there). Reviewer also corrected the row's `lookup:` line: the trust-fund page is a neighbour, not a non-match. All three checked exclusions (choose a mortgage lender, will cost, custodial vs 529) agreed.
+- Phase 3 grounding attempt: IRS sources loaded (Topic 553: kiddie-tax threshold $2,700; 2025 Form 1041 instructions: trust schedule 10% to $3,150, 24% to $11,450, 35% to $15,650, 37% above). The UTMA/UGMA structural facts the page turns on (irrevocable gift, custodian duties, age at which control passes) have no primary source reachable from the runner: investor.gov 403, FINRA 404, Cornell LII 404, Fidelity/Schwab pages empty, CFPB page has no UTMA text. Result: row HELD (source unreachable), 0 pages built, no content_gen call. Re-competes next run.

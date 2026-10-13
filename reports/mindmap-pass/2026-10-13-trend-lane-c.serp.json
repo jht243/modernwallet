@@ -1,0 +1,289 @@
+{
+ "rows": [
+  {
+   "keyword": "custodial account vs trust",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "smartasset.com",
+    "meetfabric.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "kbgrp.com",
+    "www.policygenius.com",
+    "www.braverman-law.com",
+    "www.reddit.com",
+    "www.getearlybird.io",
+    "www.wellsfargo.com",
+    "www.facebook.com",
+    "www.thebalancemoney.com",
+    "www.wellsfargo.com",
+    "www.thebalancemoney.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the difference between trust and estate accounts?",
+    "Is a trust fund a good idea for a child?",
+    "What category does a trust fall under?",
+    "Is it better to open a custodial account or not?",
+    "Do parents pay taxes on custodial accounts?",
+    "What is the best way to put money away for kids?"
+   ],
+   "related_searches": [
+    "Custodial account vs trust taxes",
+    "Custodial account vs trust reddit",
+    "Types of custodial accounts",
+    "Custodial account vs 529",
+    "Custodial savings account for child",
+    "UGMA account",
+    "Chase custodial account",
+    "UTMA account Wells Fargo"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites smartasset.com, meetfabric.com",
+   "se_results_count": 164
+  },
+  {
+   "keyword": "custodial account vs joint account",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.synchrony.com",
+    "www.merckcu.com",
+    "www.usbank.com",
+    "www.chase.com",
+    "www.schwab.com",
+    "dfhlaw.com",
+    "www.wellsfargo.com",
+    "www.savingforcollege.com",
+    "www.investopedia.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.merckcu.com",
+    "www.fidelity.com",
+    "www.synchrony.com",
+    "dfhlaw.com",
+    "www.chase.com",
+    "www.schwabmoneywise.com",
+    "www.schwab.com",
+    "www.pnc.com",
+    "www.wellsfargo.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are the downsides of a custodial account?",
+    "Who owns the money in a custodial account?",
+    "Do I pay taxes on my child's custodial account?",
+    "Can a parent take money out of a custodial account?",
+    "At what age does a custodial account end?",
+    "How do I transfer ownership of a custodial account?"
+   ],
+   "related_searches": [
+    "Custodial account vs joint account reddit",
+    "Custodial account vs joint account vs brokerage account",
+    "Custodial account vs joint account wells fargo",
+    "Custodial account vs joint account taxes",
+    "Custodial account vs joint account fidelity",
+    "Types of custodial accounts",
+    "Custodial account vs brokerage account",
+    "Fidelity custodial account"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com) incl. #1; AI Overview present, cites www.synchrony.com, www.merckcu.com, www.usbank.com, www.chase.com",
+   "se_results_count": 131
+  },
+  {
+   "keyword": "how to choose a mortgage lender",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.bankrate.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.hud.gov",
+    "www.bankrate.com",
+    "www.firstcitizensbank.com",
+    "consumer.ftc.gov",
+    "yourhome.fanniemae.com",
+    "www.regions.com",
+    "www.atfcu.org",
+    "www.youtube.com",
+    "www.experian.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the 3 7 3 rule for a mortgage?",
+    "What salary do you need for a $400,000 mortgage?",
+    "What not to say to a mortgage lender?",
+    "How much income do I need to qualify for a $250000 mortgage?",
+    "How much house can I afford if I make $70,000 a year?",
+    "Can I afford a 250k house on a 40k salary?"
+   ],
+   "related_searches": [
+    "How to choose a mortgage lender reddit",
+    "How to choose a mortgage lender for a house",
+    "How to choose a mortgage lender calculator",
+    "How to find a lender for first time home buyers",
+    "Best mortgage lenders for first-time buyers",
+    "How to find mortgage lender on a property",
+    "What is a mortgage lender",
+    "How to choose a mortgage broker"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; AI Overview present, cites www.bankrate.com",
+   "se_results_count": 128
+  },
+  {
+   "keyword": "how much does a will cost",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.ocelderlaw.com",
+    "www.reddit.com",
+    "jm.legal",
+    "simplytrust.com",
+    "avonlaw.us",
+    "www.youtube.com",
+    "lifeplanlegalaz.com",
+    "simplytrust.com",
+    "grivaslaw.com",
+    "www.legalshieldassociate.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Who pays out money from a will?",
+    "What is a living will?",
+    "What is the biggest mistake with wills?",
+    "Is it cheaper to set up a will or a trust?",
+    "Can a nursing home take your house if it's in a trust?",
+    "Is it better to leave your house in a will or trust?"
+   ],
+   "related_searches": [
+    "how much does a will cost near california",
+    "how much does a will cost near texas",
+    "How much does a will cost for a house",
+    "How much does a will cost in texas",
+    "Cost of making a will with a lawyer",
+    "Average cost of a will and trust",
+    "Free will",
+    "Living will",
+    "How much does a will cost in florida"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 97
+  },
+  {
+   "keyword": "custodial account vs 529",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.acorns.com",
+    "www.chase.com",
+    "www.bergerfinancialgroup.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.skgbarnum.com",
+    "www.farther.com",
+    "www.reddit.com",
+    "www.fidelity.com",
+    "halfmore.co",
+    "saverlife.org",
+    "finance.yahoo.com",
+    "hb.cpa",
+    "www.youtube.com",
+    "forum.whitecoatinvestor.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are the key differences between a 529 plan and a regular savings account?",
+    "What are some good educational accounts for kids?",
+    "Is it better to open a custodial account or not?",
+    "Who owns a 529 account, parent or child?",
+    "Which is better for my child, a 529 plan or a custodial account?",
+    "What does Dave Ramsey say about 529?"
+   ],
+   "related_searches": [
+    "Custodial account vs 529 reddit",
+    "Fidelity custodial account vs 529",
+    "Custodial account vs 529 taxes",
+    "Why 529 plans are a bad idea",
+    "Custodial account vs 529 vs trust",
+    "529 vs brokerage account Reddit",
+    "529 college fund",
+    "Custodial vs individual 529 pros and cons"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.acorns.com, www.chase.com, www.bergerfinancialgroup.com",
+   "se_results_count": 115
+  }
+ ],
+ "cost": "DataForSEO: 5 calls, $0.02075 of $2.00 budget"
+}
