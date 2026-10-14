@@ -1,0 +1,1 @@
+Return ONLY markdown for an enrichment of an existing guide. For a section: exactly one `## ` heading (noun phrase) then 2 to 4 short paragraphs or a short list. For an FAQ answer: no heading, 2 to 4 sentences, plain text. Links as [text](url) from the allowed lists only. No H1. Brand first-"we" rule: "At The Modern Wallet, we..." if "we" is used.

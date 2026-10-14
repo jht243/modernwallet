@@ -74,7 +74,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/budget/", label: "See where your spending goes" },
   ],
   "social-security-break-even-calculator": [
-    { href: "/guides/2027-social-security-cola/", label: "2027 Social Security COLA: the estimated raise" },
+    { href: "/guides/2027-social-security-cola/", label: "2027 Social Security COLA: the official 3.6% raise" },
     { href: "/retirement/social-security-retirement-calculator/", label: "Add Social Security to your retirement income" },
     { href: "/guides/is-social-security-taxable/", label: "Is Social Security taxable?" },
     { href: "/retirement/", label: "Project retirement savings" },

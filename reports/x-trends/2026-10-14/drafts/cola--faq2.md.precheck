@@ -1,0 +1,1 @@
+The Social Security Administration announced the 2027 COLA on Wednesday, October 14, 2026, and set it at 3.6%. The raise starts with January 2027 payments, and Supplemental Security Income (SSI) recipients see it starting December 31, 2026. You can read the official figure on the [Social Security Administration COLA page](https://www.ssa.gov/cola/).
