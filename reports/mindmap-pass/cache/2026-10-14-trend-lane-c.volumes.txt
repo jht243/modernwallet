@@ -1,0 +1,131 @@
+[keyword_data] ahrefs unusable (no AHREFS_API_KEY)
+[keyword_data] volume: using dataforseo (quality order ahrefs > dataforseo > semrush)
+[keyword_data] dataforseo returned volume for 9/12 phrases
+[keyword_data] semrush unusable (no SEMRUSH_API_KEY)
+[keyword_data] kd: using dataforseo (quality order ahrefs > semrush > dataforseo)
+[keyword_data] No tool volume for 3 phrases — autocomplete band (source=estimate, NOT measured)
+[keyword_data] Autocomplete: 10/12 rows corroborated live
+{
+ "rows": [
+  {
+   "keyword": "money market account vs money market fund",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": 6,
+   "cpc": 8.7,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "money market account vs savings account",
+   "volume": 1600,
+   "volume_low": 1600,
+   "volume_high": 1600,
+   "kd": 0,
+   "cpc": 5.63,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "money market account vs checking account",
+   "volume": 170,
+   "volume_low": 170,
+   "volume_high": 170,
+   "kd": 4,
+   "cpc": 6.93,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "money market account vs brokerage account",
+   "volume": 90,
+   "volume_low": 90,
+   "volume_high": 90,
+   "kd": 21,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "money market account vs roth ira",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": 5,
+   "cpc": 5.62,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "money market fund vs money market account",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": 6,
+   "cpc": 8.7,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "budget calculator for couples",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": 47,
+   "cpc": 4.23,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "get a will online",
+   "volume": 590,
+   "volume_low": 590,
+   "volume_high": 590,
+   "kd": 38,
+   "cpc": 14.39,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "nerdwallet budget cal

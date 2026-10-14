@@ -1,0 +1,125 @@
+{
+ "rows": [
+  {
+   "keyword": "money market account vs money market fund",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.fidelity.com",
+    "www.zynlobank.com",
+    "www.bankrate.com",
+    "www.investopedia.com",
+    "investor.vanguard.com",
+    "www.chase.com",
+    "www.cnbc.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.experian.com",
+    "www.citizensbank.com",
+    "www.ccu.com",
+    "www.whitakerwealth.com",
+    "www.bankrate.com",
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.ally.com",
+    "www.joinarc.com",
+    "us.etrade.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "people_also_search": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are the disadvantages of having a money market account?",
+    "What does Suze Orman say about money market accounts?",
+    "What is the difference between the money market and the financial market?",
+    "Why are money market funds not FDIC insured?",
+    "Where do millionaires keep their money if banks only insure $250k?",
+    "Is a money market account 100% safe?"
+   ],
+   "related_searches": [
+    "Money market account vs money market fund vs savings account",
+    "Money market account vs money market fund vs vanguard",
+    "Money market account vs money market fund fidelity",
+    "Money market account vs high yield savings account",
+    "Money market vs savings account",
+    "Is a money market account a checking account",
+    "Money Market vs savings account Ally",
+    "Money market account interest rates"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.fidelity.com, www.zynlobank.com, www.bankrate.com, www.investopedia.com",
+   "se_results_count": 109
+  },
+  {
+   "keyword": "money market account vs savings account",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.bankrate.com",
+    "www.fidelity.com",
+    "www.santanderbank.com",
+    "www.associatedbank.com",
+    "www.citizensbank.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.bankrate.com",
+    "www.fidelity.com",
+    "www.citizensbank.com",
+    "www.reddit.com",
+    "www.hoyne.com",
+    "www.bankwithunited.com",
+    "www.santanderbank.com",
+    "www.key.com",
+    "www.capitalone.com",
+    "www.ccu.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the downside to a money market account?",
+    "How much will $10,000 make in a money market account?",
+    "How much will $2500 make in a money market account?",
+    "How much will $50,000 make in a money market account?",
+    "What is better, a CD or money market?",
+    "What is the smartest thing to do with $50,000?"
+   ],
+   "related_searches": [
+    "Money market account vs savings account reddit",
+    "Money market account vs savings account interest rates",
+    "Money market account vs savings account vs fidelity",
+    "Money market account vs savings account pros and cons",
+    "Money market account vs high yield savings account",
+    "Money market account minimum balance",
+    "Money market account vs CD",
+    "Is a money market account a checking account"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.bankrate.com, www.fidelity.com, www.santanderbank.com, www.associatedbank.com",
+   "se_results_count": 126
+  }
+ ],
+ "cost": "DataForSEO: 2 calls, $0.00830 of $2.00 budget"
+}

@@ -1,0 +1,106 @@
+{
+  "slug": "money-market-account-vs-money-market-fund",
+  "metaTitle": "Money Market Account vs Money Market Fund Compared",
+  "metaDescription": "Money market account vs money market fund: one is an insured bank deposit, the other a mutual fund with no deposit insurance. See how each one works.",
+  "h1": "Money Market Account vs Money Market Fund for Holding Cash",
+  "subtitle": "How a bank money market deposit account and a money market mutual fund differ on deposit insurance and on where the cash goes.",
+  "optionAName": "Money Market Account",
+  "optionBName": "Money Market Fund",
+  "introText": "A money market account is a bank deposit, and a money market fund is a mutual fund. At ModernWallet, we write plain-language money guides, and when we compare cash products we start by asking whether the money is a deposit or an investment. Only the account carries [Federal Deposit Insurance Corporation (FDIC)](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance/) insurance, within limits. The account holds money as a deposit. The fund pools money from many investors and buys short-term debt securities, cash, and cash equivalents, so each share is part ownership of that portfolio.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "What kind of product it is",
+        "a": "A bank deposit account, formally called a money market deposit account (MMDA)",
+        "b": "A mutual fund, which is a [Securities and Exchange Commission (SEC)](https://www.investor.gov/introduction-investing/investing-basics/glossary/mutual-funds) registered open-end investment company"
+      },
+      {
+        "dimension": "Who offers it",
+        "a": "A bank, as one of its deposit accounts",
+        "b": "The fund itself, or a financial intermediary such as a broker or investment adviser"
+      },
+      {
+        "dimension": "FDIC insurance",
+        "a": "Covered up to $250,000 per depositor, per FDIC-insured bank, for each account ownership category",
+        "b": "Not covered, even when an FDIC-insured bank offers the fund"
+      },
+      {
+        "dimension": "Where your cash goes",
+        "a": "Held as a deposit at the bank",
+        "b": "Pooled with other investors' money and invested in liquid, short-term debt securities, cash, and cash equivalents"
+      },
+      {
+        "dimension": "How the return is set",
+        "a": "A variable rate, with the rate and account terms varying by bank",
+        "b": "Dividends that generally reflect short-term interest rates"
+      },
+      {
+        "dimension": "How you buy and sell",
+        "a": "Deposit into and withdraw from the account balance, with withdrawal limits that vary by bank",
+        "b": "Buy shares at net asset value (NAV) plus any purchase fees, and sell them back at NAV minus any redemption fees"
+      },
+      {
+        "dimension": "What to read before opening",
+        "a": "The bank's account terms for rate, minimum balance, and fees, which vary by bank",
+        "b": "The fund's prospectus and its most recent shareholder report"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Two Products, One Name",
+      "content": "A money market account is a money market deposit account (MMDA) at a bank, and a money market fund is a mutual fund, so the shared name hides two different kinds of product. The FDIC lists money market deposit accounts among the deposits it insures at FDIC-insured banks, next to checking accounts, savings accounts, and certificates of deposit. On the insurance question, a money market account sits in the same group as a checking or savings account at the same bank.\n\nThe Securities and Exchange Commission (SEC) defines a money market fund on its [Investor.gov glossary](https://www.investor.gov/introduction-investing/investing-basics/glossary/money-market-funds) as a type of mutual fund that invests in liquid, short-term debt securities, cash, and cash equivalents. A [mutual fund](https://www.investor.gov/introduction-investing/investing-basics/glossary/mutual-funds) is an SEC-registered open-end investment company that pools money from many investors. Each share represents part ownership of the fund's portfolio and the income it generates.\n\nThat ownership stake is an investment, and FDIC insurance covers deposits only. The FDIC names mutual funds on its list of products it does not insure. A money market fund sits outside FDIC coverage from the start.\n\nWho sells the product does not change what it is. FDIC insurance does not cover non-deposit investment products, even when an FDIC-insured bank offers them, so a money market fund offered by a bank is a mutual fund with no FDIC coverage. For the bank product on its own, our explainer on [how money market accounts work](/guides/money-market-account/) goes deeper."
+    },
+    {
+      "heading": "What FDIC Insurance Covers and What It Skips",
+      "content": "FDIC insurance covers up to $250,000 per depositor, per FDIC-insured bank, for each account ownership category, and it applies to a money market account because that account is a deposit. Ownership categories include single accounts, joint accounts, certain retirement accounts such as individual retirement accounts (IRAs), and trust accounts. The coverage also depends on the bank, since deposits are insured only if the bank itself is FDIC-insured.\n\nThe limit counts deposits in the same category at the same bank together. Picture one person with a single-owner money market account and a single-owner savings account at one insured bank. Both balances sit in the single-account category, so one $250,000 limit covers the two combined.\n\nDeposits at a second FDIC-insured bank get their own $250,000 limit for the same category. Certain retirement accounts, such as IRAs, form a separate category with its own $250,000 limit at the same bank. Any amount above $250,000 in one category at one bank is uninsured.\n\nThe FDIC's [list of insured and uninsured financial products](https://www.fdic.gov/resources/deposit-insurance/financial-products-insured) names what deposit insurance skips: stock investments, bond investments, mutual funds, annuities, life insurance policies, U.S. Treasury bills, bonds or notes, municipal securities, and crypto assets. A money market fund falls under mutual funds on that list. The $250,000 limit therefore has no bearing on a fund balance of any size.\n\nMoney market funds are not FDIC insured because the FDIC insures deposits, and a fund share is an ownership stake in a portfolio. The value of that share is not guaranteed by a deposit insurer. Between these two products, only the money market account at an FDIC-insured bank, kept within the limit, carries FDIC deposit insurance."
+    },
+    {
+      "heading": "Where the Cash Goes and Where the Return Comes From",
+      "content": "Cash in a money market account stays a deposit at the bank, while cash in a money market fund buys shares of a portfolio of short-term debt securities, cash, and cash equivalents. The account pays a variable rate, and the fund pays dividends.\n\nMoney market account rates are variable, so the rate at opening can change later. The rate, minimum balance, and fees vary by bank, and no single figure applies across banks. Our [roundup of the best money market accounts](/roundup/best-money-market-accounts/) lists providers to compare before opening one.\n\nA money market fund pays dividends that generally reflect short-term interest rates, according to the SEC. The SEC also describes money market funds as relatively low risk compared with other mutual funds and most other investments, though they have historically had lower returns. Yields and fund expenses vary by fund and are not fixed.\n\nMany investors use money market funds to store cash or as an alternative to bank savings vehicles, the SEC notes. Using a fund that way does not make it a deposit, so FDIC coverage still does not apply. Neither side offers a fixed return: the account rate is variable, and the fund's dividends move with short-term interest rates."
+    },
+    {
+      "heading": "How You Buy and Sell Each One",
+      "content": "You buy money market fund shares from the fund or through a financial intermediary such as a broker or investment adviser, and you open a money market account at a bank. The two transactions work differently. A fund trade has a share price and possible fees, while an account deposit adds to the balance.\n\nThe price of a mutual fund share is its per-share net asset value (NAV) plus any fees charged at purchase. Shares are redeemable, which means you can sell them back to the fund at NAV minus any fees charged at redemption. When a fund charges no purchase or redemption fee, the buy and sell price is the NAV.\n\nWhether a given money market fund charges those fees varies by fund. The SEC's [mutual fund glossary entry](https://www.investor.gov/introduction-investing/investing-basics/glossary/mutual-funds) explains the NAV and fee structure behind those prices.\n\nA money market account has no share price: money goes in as a deposit and comes out as a withdrawal. Withdrawal limits and the ways to reach the money, such as card access, vary by bank, and no single rule applies to every account. If card access matters, our guide to [money market accounts with debit cards](/guides/money-market-account-debit-card/) covers that question."
+    },
+    {
+      "heading": "Reading the Fine Print on a Money Market Account vs Money Market Fund",
+      "content": "The paperwork shows which product you are looking at. A money market account is described as a deposit with FDIC language, while a money market fund comes with shares, a net asset value, and a prospectus. The words money market appear in both names. The name alone tells you nothing about insurance.\n\nDeposit language means you are looking at the account. A money market deposit account is a deposit, and the FDIC covers it only if the bank is FDIC-insured. The FDIC points readers to its BankFind Suite search tool to confirm a bank is insured, as its [deposit insurance overview](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance/) explains.\n\nFund language means you are looking at the fund. Mutual fund shares are priced at net asset value, and a money market fund has a prospectus and shareholder report. The SEC advises reading a money market fund's prospectus and its most recent shareholder report before investing, per its [money market fund glossary entry](https://www.investor.gov/introduction-investing/investing-basics/glossary/money-market-funds).\n\nThe seller says nothing about insurance. A fund offered by an FDIC-insured bank is a non-deposit investment product, and FDIC insurance does not cover it. Read the product description instead of relying on the bank's name at the top of the page.\n\nThe balance size comes last. For an account, keep each ownership category at one bank at or below $250,000 if full coverage is the goal. For a fund, the $250,000 figure does not apply, because the fund is outside FDIC coverage at any balance."
+    },
+    {
+      "heading": "Money Market Fund vs Savings Account",
+      "content": "A money market fund is not a savings account. A savings account is a bank deposit covered by FDIC insurance within limits, and a money market fund is a mutual fund outside that coverage. The SEC notes that many investors use money market funds as an alternative to bank savings vehicles. That use describes how people hold the fund and does not change what the fund is.\n\nA money market account sits on the bank side of this line, next to savings accounts on the FDIC's insured list. Choosing between those two bank deposits is a separate question, and our [high-yield savings account (HYSA) vs money market account comparison](/compare/hysa-vs-money-market/) works through it. For a certificate of deposit (CD) against a money market account, see our [CD vs money market account comparison](/compare/cd-vs-money-market/)."
+    },
+    {
+      "heading": "Weighing a Money Market Account vs Money Market Fund for Cash",
+      "content": "The choice between a money market account and a money market fund turns on whether the cash needs FDIC coverage and where the cash already sits. Start with coverage. If the money must be protected by deposit insurance, only a money market account at an FDIC-insured bank qualifies, and only up to $250,000 per depositor, per bank, per ownership category.\n\nThen look at where the cash is held. Money market fund shares are bought from the fund or through a financial intermediary such as a broker or investment adviser, and the SEC notes that many investors use these funds to store cash. If you already hold cash at a brokerage, a money market fund bought there comes with the trade-off of no FDIC coverage.\n\nFor an emergency fund, our guide on [how much emergency fund you need](/guides/how-much-emergency-fund/) helps size the balance before you choose where to hold it. If the account side looks like the fit, our guide on whether [a money market account is worth it](/guides/is-a-money-market-account-worth-it/) goes through that decision. Before moving any cash, read the product description for the word deposit or the word prospectus, and settle the money market account vs money market fund choice on FDIC coverage first."
+    }
+  ],
+  "verdict": "Pick the money market account if the cash needs FDIC deposit insurance, because it is a bank deposit covered up to $250,000 per depositor, per FDIC-insured bank, per ownership category. A money market fund fits a different situation, where cash already sits with a broker or investment adviser and FDIC coverage is not the requirement. The SEC describes these funds as relatively low risk among mutual funds. Historically they have had lower returns. The money market fund is the wrong match for anyone who needs a deposit insurer standing behind the balance, since FDIC insurance does not cover mutual funds even when an FDIC-insured bank offers them. The money market account is a poor match for a balance above $250,000 in one ownership category at one bank. The amount above the limit is uninsured, unless you spread it across other ownership categories or other FDIC-insured banks. Our verdict flips if the bank is not FDIC-insured. That removes the coverage that sets the account apart. It would also change if a fund's prospectus showed purchase or redemption fees, since you would buy above NAV and sell below it. Look up the bank's insurance status with the FDIC's BankFind Suite, described on its [deposit insurance overview](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance/), before opening the account.",
+  "faqItems": [
+    {
+      "question": "What is the difference between a money market account and a money market fund?",
+      "answer": "A money market account is a deposit account at a bank, and a money market fund is a mutual fund that invests in liquid, short-term debt securities, cash, and cash equivalents. The account is covered by FDIC insurance up to $250,000 per depositor, per FDIC-insured bank, per ownership category. The fund is not covered, because FDIC insurance applies to deposits and a fund share is part ownership of a portfolio. The account pays a variable rate, while the fund pays dividends that generally reflect short-term interest rates."
+    },
+    {
+      "question": "Why are money market funds not FDIC insured?",
+      "answer": "Money market funds are not FDIC insured because they are mutual funds, and FDIC insurance only covers deposits. The FDIC lists mutual funds among the products it does not insure, along with stocks, bonds, annuities, and U.S. Treasury bills, bonds, and notes. That rule holds even when an FDIC-insured bank offers the fund, since FDIC insurance does not cover non-deposit investment products. A fund share's value is not guaranteed by a deposit insurer."
+    },
+    {
+      "question": "Is a money market account 100% safe?",
+      "answer": "A money market account is covered by FDIC insurance up to $250,000 per depositor, per FDIC-insured bank, for each account ownership category, and that coverage has limits. Any balance above $250,000 in one category at one bank is uninsured. The account is covered only if the bank itself is FDIC-insured, so an account at a bank without FDIC insurance has no FDIC protection. Spreading deposits across ownership categories or across more than one FDIC-insured bank keeps more of a large balance within the limits."
+    },
+    {
+      "question": "What are the disadvantages of having a money market account?",
+      "answer": "Limits of a money market account include a variable rate and FDIC coverage that stops at $250,000 per depositor, per FDIC-insured bank, per ownership category. The rate can change after opening, and minimum balances, fees, and withdrawal limits vary by bank. A bank may also offer non-deposit investment products, such as mutual funds, and those products are not FDIC insured even though the bank is."
+    },
+    {
+      "question": "Is a money market fund the same as a savings account?",
+      "answer": "No, a money market fund is a mutual fund, and a savings account is a bank deposit. FDIC insurance covers savings accounts at FDIC-insured banks within the $250,000 limits, and it does not cover mutual funds. The SEC notes that many investors use money market funds as an alternative to bank savings vehicles, but that use does not make the fund a deposit. Fund shares are bought at net asset value plus any purchase fees and sold back at net asset value minus any redemption fees."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}
