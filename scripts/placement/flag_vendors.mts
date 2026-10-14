@@ -22,9 +22,12 @@ const v = verticalById(vertical);
 if (!v?.roundupSlug) throw new Error(`vertical ${vertical} has no roundupSlug`);
 const rowsFile = `reports/vendor-roundup/rows/${vertical}.json`;
 const nameOf = listedOn(v.roundupSlug);
-const domains = process.argv.includes("--all-listed") || !existsSync(rowsFile)
+// Clients are listed on merit but are never prospects: never registered, never flagged.
+const NEVER_PITCH = new Set(["killswitch.rip"]);
+const domains = (process.argv.includes("--all-listed") || !existsSync(rowsFile)
   ? [...nameOf.keys()]
-  : JSON.parse(readFileSync(rowsFile, "utf8")).rows.map((r: any) => normalizeDomain(r.domain));
+  : JSON.parse(readFileSync(rowsFile, "utf8")).rows.map((r: any) => normalizeDomain(r.domain)))
+  .filter((d: string) => !NEVER_PITCH.has(d));
 
 const url = pageUrl(v);
 const res = await fetch(url, { redirect: "follow", headers: { "user-agent": "modernwallet-roundup-flag/1" } });
