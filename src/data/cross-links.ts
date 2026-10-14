@@ -50,6 +50,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/compare/401k-loan-vs-heloc/", label: "401(k) loan vs HELOC" },
   ],
   "cd-calculator": [
+    { href: "/annuity-calculator/", label: "Compare with an annuity payout" },
     { href: "/emergency-fund-calculator/", label: "Parking an emergency fund? Size it first" },
     { href: "/compare/cd-vs-money-market/", label: "CD vs money market account" },
     { href: "/compare/cd-vs-treasury-bill/", label: "CD vs Treasury bill" },
@@ -65,6 +66,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/compare/sinking-fund-vs-emergency-fund/", label: "Sinking fund vs emergency fund" },
   ],
   "inflation-calculator": [
+    { href: "/annuity-calculator/", label: "Value a fixed payment stream or lump sum payout" },
     { href: "/investing/compound-interest-calculator/", label: "Grow money against inflation: compound interest" },
     { href: "/retirement/", label: "Project retirement savings" },
     { href: "/investing/", label: "Model an investment return" },
@@ -83,6 +85,27 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/templates/mileage-log-template/", label: "Mileage log template" },
     { href: "/guides/irs-mileage-rate-history/", label: "IRS mileage rate history" },
     { href: "/guides/state-mileage-reimbursement-law-california-texas-michigan/", label: "State mileage reimbursement laws" },
+  ],
+  "annuity-calculator": [
+    { href: "/compare/annuity-vs-cd/", label: "Annuity vs CD: which pays more?" },
+    { href: "/compare/pension-vs-annuity/", label: "Pension vs annuity" },
+    { href: "/retirement/", label: "Project retirement savings" },
+    { href: "/inflation-calculator/", label: "What a fixed payment buys later" },
+    { href: "/cd-calculator/", label: "Model a CD's maturity value" },
+  ],
+  "credit-card-interest-calculator": [
+    { href: "/credit-card-payoff/", label: "How long will it take to pay the balance off?" },
+    { href: "/guides/good-apr-for-credit-card/", label: "What counts as a good credit card APR" },
+    { href: "/guides/how-to-choose-a-balance-transfer-credit-card/", label: "Consider a 0% balance transfer card" },
+    { href: "/debt-consolidation-calculator/", label: "Several balances? Compare one loan" },
+    { href: "/budget/", label: "Build a payoff plan into your budget" },
+  ],
+  "loan-payment-calculator": [
+    { href: "/personal-loan/", label: "Personal loan calculator with fees" },
+    { href: "/auto-loan/", label: "Auto loan calculator" },
+    { href: "/mortgage/", label: "Mortgage calculator with taxes and insurance" },
+    { href: "/debt-consolidation-calculator/", label: "Compare consolidating several debts" },
+    { href: "/budget/", label: "Does the payment fit your budget?" },
   ],
   "hurricane-deductible-calculator": [
     { href: "/emergency-fund-calculator/", label: "How big should your emergency fund be?" },
@@ -104,6 +127,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/retirement/", label: "Project retirement savings" },
   ],
   "debt-consolidation-calculator": [
+    { href: "/loan-payment-calculator/", label: "Check a consolidation loan's monthly payment" },
     { href: "/credit-card-payoff/", label: "Pay off one card: time and interest" },
     { href: "/personal-loan/", label: "Model a personal loan payment" },
     { href: "/compare/debt-snowball-vs-avalanche/", label: "Debt snowball vs avalanche" },
@@ -194,6 +218,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/lending-money-to-family-boundaries/", label: "Lending money to family? Set boundaries first" },
   ],
   "personal-loan": [
+    { href: "/loan-payment-calculator/", label: "Check the monthly payment on any fixed-rate loan" },
     { href: "/debt-consolidation-calculator/", label: "Consolidating debt? Compare the total cost" },
     { href: "/heloc-calculator/", label: "Own a home? Compare a HELOC payment" },
     { href: "/budget/", label: "Does the payment fit your budget?" },
@@ -205,6 +230,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/is-possible-finance-a-good-personal-loan-option/", label: "Considering Possible Finance? Check the real APR" },
   ],
   "credit-card-payoff": [
+    { href: "/credit-card-interest-calculator/", label: "See one billing cycle's interest charge" },
     { href: "/debt-consolidation-calculator/", label: "Several balances? Compare one consolidation loan" },
     { href: "/personal-loan/", label: "Compare a fixed-rate personal loan instead" },
     { href: "/budget/", label: "Build a payoff plan into your budget" },

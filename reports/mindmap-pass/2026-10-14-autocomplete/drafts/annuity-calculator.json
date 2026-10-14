@@ -1,0 +1,48 @@
+{
+  "metaTitle": "Annuity Calculator: Payout, Growth & Value Today",
+  "metaDescription": "Free annuity calculator. See what a lump sum pays each month, what level deposits grow to, or what a stream of payments is worth as one sum today.",
+  "introText": "An annuity calculator finds one of three numbers: what a lump sum pays out each period, what level deposits grow to, or what a stream of payments is worth as one sum today. Pick the question in the calculator above, then enter the amount, the interest rate, the term in years, and how often payments happen. You also choose whether each payment falls at the end of the period or at the start.\n\nFor example, take a $100,000 lump sum paid out over 20 years at 5% a year, with a payment at the end of each month. The calculator returns $659.96 a month across 240 payments. Those payments total $158,389.38, and $58,389.38 of that is interest. Shorten the term to 10 years and the payment rises to $1,060.66 a month. The 5% rate is a placeholder, so replace it with the rate you want to test.",
+  "howItWorks": "The calculator answers three questions, and each one starts from a different amount. The payout question starts from a lump sum and returns the level payment it supports each period. The growth question starts from a deposit per period and returns the ending balance. The value-today question starts from a payment per period and returns what that stream is worth as one sum now. All three use the annual rate, the term in years, the payment frequency (monthly, quarterly, semiannual, or annual), and the payment timing. Each result also shows the total of all payments, the interest in the result, and the number of payments.\n\nThe payout payment is the lump sum divided by a present-value factor, (1 − (1 + i)^−n) ÷ i. In that factor, i is the annual rate divided by payments per year, and n is the number of years times payments per year. In the $100,000 example, i is the 5% annual rate divided by 12 monthly payments. Over 20 years, n is 240 payments, and the payment comes out to $659.96. Cut the term to 10 years and n drops to 120, which raises the payment to $1,060.66. Those payments total $127,278.62, and subtracting the $100,000 principal leaves $27,278.62 of interest. At a 0% rate the factor is simply n, so the payment is the lump sum divided by the number of payments.\n\nAn ordinary annuity makes each payment at the end of the period, and an annuity due makes it at the start. For an annuity due, the calculator multiplies the factor by (1 + i). The same lump sum then supports a smaller payment. On the $100,000 example, the end-of-month payment is $659.96. With payments at the start of each month, it is $657.22, and the payments total $157,732.16.\n\nThe growth result is the payment times ((1 + i)^n − 1) ÷ i. Take $500 deposited each month at 6% a year. Over 20 years that is 240 deposits totaling $120,000. The ending balance is $231,020.45, so growth accounts for $111,020.45. The value-today result is the payment times the same present-value factor used for payouts. Take $1,000 a month for 10 years, discounted at 5%. The 120 payments total $120,000, but as one sum today they are worth $94,281.35. The $25,718.65 gap is the discount. If the payments arrive at the start of each month, the value today rises to $94,674.19.\n\nThe calculator assumes a fixed rate and level payments for the whole term. It leaves out fees, taxes, and any inflation adjustment. It is also not an insurer's quote. A real annuity contract prices life expectancy and the insurer's margin, so a contract's payment will differ from the result above. To weigh an annuity against other choices, see [annuity vs CD](/compare/annuity-vs-cd/) and [pension vs annuity](/compare/pension-vs-annuity/).",
+  "faqs": [
+    {
+      "question": "How do I calculate my annuity payment?",
+      "answer": "Divide the lump sum by the present-value factor, (1 − (1 + i)^−n) ÷ i. Here i is the annual rate divided by payments per year, and n is the number of years times payments per year. The calculator above does this for you once you choose the payout question and enter the lump sum, rate, term, and payment frequency."
+    },
+    {
+      "question": "How much does a $100,000 annuity pay per month?",
+      "answer": "It depends on the rate and term you enter. Over 20 years at 5%, it pays $659.96 a month with payments at the end of each month. Over 10 years at the same rate, it pays $1,060.66 a month. Enter your own rate and term above to see your figure."
+    },
+    {
+      "question": "What is the difference between an ordinary annuity and an annuity due?",
+      "answer": "An ordinary annuity makes each payment at the end of the period, and an annuity due makes it at the start. For an annuity due, the calculator multiplies the present-value factor by (1 + i). On the $100,000 payout example, that moves the monthly payment from $659.96 to $657.22."
+    },
+    {
+      "question": "How do I find the present value of an annuity?",
+      "answer": "Multiply the payment by the present-value factor, (1 − (1 + i)^−n) ÷ i. Take $1,000 a month for 10 years, discounted at 5%. Those 120 payments total $120,000 but are worth $94,281.35 as one sum today."
+    },
+    {
+      "question": "How do I find the future value of an annuity?",
+      "answer": "Multiply the payment by ((1 + i)^n − 1) ÷ i. At 6% a year, $500 a month grows to $231,020.45. That takes 240 deposits over 20 years, totaling $120,000."
+    },
+    {
+      "question": "Does this annuity calculator give me an insurer's quote?",
+      "answer": "No, it returns the math for a fixed rate and level payments, with no fees, taxes, or inflation adjustment. A real annuity contract also prices life expectancy and the insurer's margin, so its quote will differ from the result here. For one contract type, see [QLAC explained](/guides/qlac-qualified-longevity-annuity-contract/)."
+    },
+    {
+      "question": "What happens to the payment if the interest rate is 0%?",
+      "answer": "The present-value factor becomes simply n, so the payment is the lump sum divided by the number of payments. Spread over 240 monthly payments, a $100,000 lump sum pays $416.67 a month. The payments total exactly $100,000, so no interest is included."
+    },
+    {
+      "question": "Does the calculator account for inflation or taxes?",
+      "answer": "No, results assume a fixed rate and level payments with no tax or inflation adjustment. To see how inflation changes what a fixed payment buys over time, use the [inflation calculator](/inflation-calculator/)."
+    }
+  ],
+  "slug": "annuity-calculator",
+  "h1": "",
+  "subtitle": "",
+  "sections": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

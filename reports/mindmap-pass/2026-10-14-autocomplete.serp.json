@@ -1,0 +1,207 @@
+{
+ "rows": [
+  {
+   "keyword": "annuity calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.schwab.com",
+    "www.calculator.net",
+    "www.immediateannuities.com",
+    "www.annuity.org",
+    "www.boldin.com",
+    "johnstevenson.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.moaa.org",
+    "www.annuityadvantage.com",
+    "content.commonwealth.com",
+    "www.brighthousefinancial.com",
+    "www.ameritas.com",
+    "www.schwab.wallst.com",
+    "www.retirementline.co.uk",
+    "www.omnicalculator.com",
+    "www.omnicalculator.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How can I calculate my annuity?",
+    "How can I get an annuity quote online?",
+    "What is a variable annuity?",
+    "What is the 5 year annuity rule?",
+    "How much does a $100,000 annuity pay in 10 years after?",
+    "What is the downside of getting an annuity?"
+   ],
+   "related_searches": [
+    "Annuity calculator payout",
+    "Pension annuity calculator",
+    "Fixed annuity calculator",
+    "Lifetime annuity calculator",
+    "Immediate annuity calculator",
+    "Annuity calculator Bankrate",
+    "Immediate annuity calculator monthly payout",
+    "MoneyHelper annuity calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.schwab.com, www.calculator.net, www.immediateannuities.com, www.annuity.org",
+   "se_results_count": 140
+  },
+  {
+   "keyword": "credit card interest calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "www.discover.com",
+    "www.calculator.net"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "yourfinancecoach.net",
+    "www.culookup.com",
+    "debtmeltpro.com",
+    "abacktools.com",
+    "calcx.us",
+    "holdingcost.com",
+    "www.getzenquery.com",
+    "perkario.com",
+    "creditinterestcalculator.com",
+    "debtmeltpro.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "How much is 30% of $1000 on a credit card?",
+    "Is 29.99% APR bad?",
+    "How do I calculate my credit card interest?",
+    "What is the 2/3/4 rule for credit cards?",
+    "How rare is an 820 credit score?",
+    "Why does Dave Ramsey say not to use credit cards?"
+   ],
+   "related_searches": [
+    "Monthly credit card interest calculator",
+    "Monthly payment credit card calculator",
+    "Monthly savings interest calculator",
+    "Monthly interest payment calculator",
+    "How to calculate credit card minimum payment with 0 interest",
+    "Interest compounded monthly calculator",
+    "Monthly interest loan calculator",
+    "How to calculate interest rate per day"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.nerdwallet.com, www.discover.com, www.calculator.net",
+   "se_results_count": 41
+  },
+  {
+   "keyword": "loan payment calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.bankrate.com",
+    "www.calculator.net",
+    "www.ent.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.taxact.com",
+    "www.fidelitybanknc.com",
+    "www.navyfederal.org",
+    "www.bankflorida.com",
+    "www.mortgagecalculator.org",
+    "www.bankrate.com",
+    "www.omnicalculator.com",
+    "www.thecitizens.com",
+    "smartasset.com",
+    "money.usnews.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "Loan calculator",
+    "401k loan payment calculator",
+    "Personal loan payment calculator",
+    "20000 loan payment calculator",
+    "401k loan calculator bi weekly payments",
+    "401k loan payment calculator Fidelity",
+    "401k loan payment calculator Empower",
+    "$10,000 personal loan monthly payment",
+    "Best 401k loan calculator monthly payment",
+    "401k loan interest rate calculator",
+    "401k loan calculator weekly payments"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.bankrate.com, www.calculator.net, www.ent.com",
+   "se_results_count": 85
+  },
+  {
+   "keyword": "paycheck calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.adp.com",
+    "smartasset.com",
+    "www.adp.com",
+    "www.paycheckcity.com",
+    "www.sco.ca.gov",
+    "paycheckcalculator.accountantsworld.com",
+    "play.google.com",
+    "gusto.com",
+    "www.surepayroll.com",
+    "www.adp.com"
+   ],
+   "major_domains": [
+    "play.google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "paycheck calculator near california",
+    "paycheck calculator near texas",
+    "Hourly paycheck calculator",
+    "Paycheck calculator VA",
+    "Paycheck calculator by state",
+    "Paycheck calculator wi",
+    "Monthly Paycheck Calculator",
+    "Weekly paycheck calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (play.google.com); AI Overview present",
+   "se_results_count": 105
+  }
+ ],
+ "cost": "DataForSEO: 4 calls, $0.01630 of $2.00 budget"
+}

@@ -1,0 +1,4 @@
+annuity calculator
+credit card interest calculator
+loan payment calculator
+paycheck calculator
