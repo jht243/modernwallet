@@ -267,3 +267,5 @@
 | /guides/how-to-claim-a-trump-account/ | 2026-10-11 | 7 | 0/0/0/0/0 | 0 |
 | /guides/what-to-do-with-an-inheritance/ | 2026-10-12 | 6 | 0/0/0/0/0 | 0 |
 | /guides/best-investment-account-for-kids/ | 2026-10-12 | 5 | 0/0/0/0/0 | 0 |
+| /mileage-deduction/irs-mileage-rate-2026/ | 2026-10-14 | 60 | 1/0/1/0/0 | 0 |
+| /guides/is-social-security-taxable/ | 2026-10-14 | 54 | 0/0/0/0/0 | 0 |

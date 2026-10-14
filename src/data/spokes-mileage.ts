@@ -42,7 +42,7 @@ export const MILEAGE_SPOKES: SpokeEntry[] = [
       {
         question: "What is the IRS mileage rate for 2026?",
         answer:
-          "72.5 cents per business mile for miles driven January 1 through June 30, 2026, and 76 cents per business mile from July 1 through December 31. Medical and qualified military moving mileage is 20.5 cents in the first half and 23.5 cents in the second. The charitable rate is 14 cents throughout, because Congress sets it by statute rather than adjusting it for costs.",
+          "72.5 cents per business mile for miles driven January 1 through June 30, 2026, and 76 cents per business mile from July 1 through December 31. Medical and qualified military moving mileage is 20.5 cents in the first half and 23.5 cents in the second. The charitable rate is 14 cents throughout, because Congress sets it by statute rather than adjusting it for costs. See the [medical, charity and moving mileage rates for 2026](/guides/medical-charity-moving-mileage-rates-2026/) for who can deduct each.",
       },
       {
         question: "Why did the IRS change the mileage rate mid-year?",

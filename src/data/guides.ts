@@ -30,6 +30,104 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // -- ga4-top-pages-pass 2026-10-14: medical-charity-moving-mileage-rates-2026 (adjacent spoke of /mileage-deduction/irs-mileage-rate-2026/) --
+  {
+    "updated": "2026-10-14",
+    "slug": "medical-charity-moving-mileage-rates-2026",
+    "title": "2026 Medical Mileage Rate with Charity and Moving Rates",
+    "metaDescription": "The 2026 medical mileage rate is 20.5 cents through June 30 and 23.5 cents from July 1. Military moving matches it. Charity is 14 cents.",
+    "h1": "2026 Medical Mileage Rate and the Charity and Military Moving Rates",
+    "cardBlurb": "Medical and military moving miles are 20.5 cents, then 23.5 cents from July 1, 2026, and charity miles are 14 cents all year.",
+    "introText": "In 2026, the [Internal Revenue Service (IRS)](https://www.irs.gov/tax-professionals/standard-mileage-rates) rate for medical and military moving miles is 20.5 cents through June 30 and 23.5 cents from July 1, while charity miles are 14 cents all year. That puts the 2026 medical mileage rate at 23.5 cents for any appointment you drive to from July 1 through December 31. The business rate of 72.5 cents, then 76 cents, does not apply to any of these trips. Each rate has its own deduction rule, and medical mileage counts only once your total medical costs pass 7.5% of adjusted gross income (AGI).",
+    "sections": [
+      {
+        "heading": "2026 Medical, Moving and Charity Mileage Rates",
+        "body": "Medical and military moving mileage rates rose on July 1, 2026, while the charity rate stayed at 14 cents for the whole year. The [IRS standard mileage rates page](https://www.irs.gov/tax-professionals/standard-mileage-rates) lists these 2026 figures in cents per mile:\n\n- Medical: 20.5 cents from January 1 to June 30, then 23.5 cents from July 1 to December 31\n- Military moving: 20.5 cents, then 23.5 cents, on the same dates\n- Charity: 14 cents in both halves of the year\n- Business, for comparison only: 72.5 cents, then 76 cents\n\nThe January to June rates were announced in IRS notice IR-2025-128. The July to December rates came in IR-2026-29.\n\nIf the [IRS standard mileage rates page](https://www.irs.gov/tax-professionals/standard-mileage-rates) shows a newer 2026 notice than IR-2026-29, use the figures from that notice. For work driving, our [2026 IRS business mileage rate](/mileage-deduction/irs-mileage-rate-2026/) page covers the 72.5 and 76 cent rates. Rates for earlier years are listed in our [IRS mileage rate history](/guides/irs-mileage-rate-history/)."
+      },
+      {
+        "heading": "Who Can Deduct Medical Mileage at the 2026 Rate",
+        "body": "You can deduct medical mileage only if you itemize on Schedule A (Form 1040), and only the part of your medical costs above 7.5% of your AGI counts. [IRS Topic 502](https://www.irs.gov/taxtopics/tc502) sets both rules.\n\nYour driving miles become one more medical expense. Taxi, bus, train and ambulance fares for medical care also qualify, so add those to the same total.\n\nOn the mileage side, 600 medical miles driven in the second half of 2026 at 23.5 cents come to $141.00. Tolls and parking for those trips go on top of that figure. The $141.00 joins your other medical costs, and it only helps if the total clears 7.5% of AGI.\n\nIf you do not itemize, medical mileage produces no deduction at either rate. Keep the log through the year anyway, so the miles are ready if you end up itemizing."
+      },
+      {
+        "heading": "Charity Mileage at 14 Cents",
+        "body": "The charity mileage rate is 14 cents per mile for all of 2026. It is set by statute, so it did not rise on July 1 when the medical and moving rates did. The volunteer mileage rate for 2026 is the same 14 cents.\n\n[IRS Publication 526](https://www.irs.gov/publications/p526) sets two conditions for the deduction. The charity must be a qualified organization, and you must itemize.\n\nA volunteer who drives 200 miles for a qualified charity in 2026 can count $28.00 (200 miles × $0.14). Using the 76-cent business rate on the same 200 miles would give $152.00, and that figure is wrong for charity driving. Instead of 14 cents a mile, you can deduct the actual cost of gas and oil for the charity trips."
+      },
+      {
+        "heading": "Military Moving Mileage",
+        "body": "The 2026 moving mileage rate is 20.5 cents per mile through June 30 and 23.5 cents from July 1, and it applies only to members of the Armed Forces on active duty. The move must come from a military order and a permanent change of station.\n\nA civilian who moves for a new job cannot use this rate. The [IRS standard mileage rates page](https://www.irs.gov/tax-professionals/standard-mileage-rates) lists the moving rate as military only.\n\nDate your moving miles by when you drove them. A drive that starts in late June uses 20.5 cents for miles driven before July 1 and 23.5 cents for miles driven from July 1 on."
+      },
+      {
+        "heading": "The 2026 Medical Mileage Rate or Actual Gas and Oil Costs",
+        "body": "For both medical and charity driving, you can use the standard mileage rate or your actual out-of-pocket costs for gas and oil. The two methods work like this:\n\n- Medical, standard method: 20.5 or 23.5 cents per mile, depending on the date, plus tolls and parking\n- Medical, actual-cost method: what you spent on gas and oil for your personal car\n- Charity, standard method: 14 cents per mile\n- Charity, actual-cost method: what you spent on gas and oil for the trips\n\nTo choose, add up your gas and oil receipts for the trips and compare that total with your miles times the rate. Use the method that gives the larger figure.\n\nOur [standard mileage vs. actual expenses](/mileage-deduction/standard-mileage-vs-actual-expenses/) guide walks through the same comparison for business driving."
+      },
+      {
+        "heading": "Records to Keep for Medical, Charity and Moving Miles",
+        "body": "The IRS general rules in [Publication 463](https://www.irs.gov/publications/p463) and [Publication 526](https://www.irs.gov/publications/p526) call for a log with the date, miles and purpose of each trip. If you would rather log trips on your phone, compare the options in our [best mileage tracker apps](/roundup/best-mileage-tracker-apps/) roundup."
+      },
+      {
+        "heading": "Which Rate Applies to Which Trip",
+        "body": "The purpose of the trip picks the rate, and for medical and moving miles the date picks the half-year figure.\n\n- Driving to a medical appointment: 20.5 cents before July 1, 23.5 cents from July 1, plus tolls and parking\n- Driving as a volunteer for a qualified charity: 14 cents all year\n- An active-duty military move under a permanent change of station order: 20.5 cents, then 23.5 cents\n- Driving for work: 72.5 cents, then 76 cents, covered on our [business mileage rate](/mileage-deduction/irs-mileage-rate-2026/) page\n\nThe July 1 change moves the dollar amount on the same miles. 600 medical miles driven before July 1 come to $123.00 at 20.5 cents. The same 600 miles driven after June 30 come to $141.00 at 23.5 cents, a difference of $18.00.\n\nStart a trip log today with our [mileage log template](/templates/mileage-log-template/), and apply the 2026 medical mileage rate of 23.5 cents to every medical trip from July 1 onward."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/mileage-deduction/",
+        "label": "Mileage deduction"
+      },
+      {
+        "href": "/mileage-reimbursement-calculator/",
+        "label": "Mileage reimbursement calculator"
+      },
+      {
+        "href": "/templates/mileage-log-template/",
+        "label": "Mileage log template"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the IRS medical mileage rate for 2026?",
+        "answer": "The IRS medical mileage rate for 2026 is 20.5 cents per mile from January 1 to June 30 and 23.5 cents per mile from July 1 to December 31. Tolls and parking are added on top. The deduction applies only if you itemize and your total medical costs exceed 7.5% of AGI."
+      },
+      {
+        "question": "What is the charity mileage rate for 2026?",
+        "answer": "The charity mileage rate for 2026 is 14 cents per mile for the whole year. It is set by statute and did not change on July 1. To deduct it, you must itemize and the charity must be a qualified organization."
+      },
+      {
+        "question": "Can I deduct mileage for medical appointments?",
+        "answer": "Yes, if you itemize on Schedule A (Form 1040) and your total medical costs exceed 7.5% of your AGI. Count the miles at 20.5 or 23.5 cents depending on the date, plus tolls and parking, or use your actual gas and oil costs instead. Only the part of your total medical costs above 7.5% of AGI is deductible."
+      },
+      {
+        "question": "What is the military moving mileage rate for 2026?",
+        "answer": "The military moving mileage rate is 20.5 cents per mile from January 1 to June 30, 2026 and 23.5 cents from July 1 to December 31. Only members of the Armed Forces on active duty who move because of a military order and a permanent change of station can use it."
+      },
+      {
+        "question": "Can I use the business mileage rate for volunteer driving?",
+        "answer": "No. Volunteer driving for a qualified charity uses the 14-cent charity rate. For 200 volunteer miles that comes to $28.00, while the 76-cent business rate would give $152.00, which is wrong for charity driving."
+      },
+      {
+        "question": "Do I add tolls and parking to medical mileage?",
+        "answer": "Yes. When you use the standard medical mileage rate, tolls and parking for medical trips are added on top of the per-mile amount. For example, 600 medical miles in the second half of 2026 come to $141.00 before tolls and parking."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS: Standard mileage rates",
+        "url": "https://www.irs.gov/tax-professionals/standard-mileage-rates"
+      },
+      {
+        "label": "IRS: Topic 502, Medical and dental expenses",
+        "url": "https://www.irs.gov/taxtopics/tc502"
+      },
+      {
+        "label": "IRS: Publication 463, Travel, gift, and car expenses",
+        "url": "https://www.irs.gov/publications/p463"
+      },
+      {
+        "label": "IRS: Publication 526, Charitable contributions",
+        "url": "https://www.irs.gov/publications/p526"
+      }
+    ]
+  },
   // -- x-trends-mindmap-auto 2026-10-12: 2027-social-security-cola --
   {
     "updated": "2026-10-12",

@@ -1,0 +1,99 @@
+{
+ "slug": "medical-charity-moving-mileage-rates-2026",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1437,
+ "floor": 900,
+ "input_tokens": 27524,
+ "output_tokens": 12911,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.3683,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['2026 Medical, Moving and Charity Mileage Rates', 'Who Can Deduct Medical Mileage at the 2026 Rate', 'Charity Mileage at 14 Cents', 'Military Moving Mileage', 'The 2026 Medical Mileage Rate or Actual Gas and Oil Costs'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1437,
+  "numbers_not_in_facts": [
+   "0.14",
+   "123",
+   "18"
+  ],
+  "fact_budget": {
+   "fact_words": 318,
+   "floor": 900,
+   "ratio": 0.35,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    2
+   ],
+   "applied": [
+    {
+     "id": "sections[4].body",
+     "quote": "If you did not save gas and oil receipts, the standard rate is the only method you can support, because it needs just the mileage log.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE states no receipt requirement or substantiation rule for either method."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Our free [mileage log template](/templates/mileage-log-template/) has columns for date, miles and purpose.",
+     "replacement": "Use our free [mileage log template](/templates/mileage-log-template/) to record the date, miles and purpose of each trip.",
+     "type": "unsupported",
+     "why": "Template's columns are not described in SOURCE or site self-description."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The $141.00 joins your other medical costs, and it reduces your taxable income only if the total clears 7.5% of AGI.",
+     "replacement": "The $141.00 joins your other medical costs, and it only helps if the total clears 7.5% of AGI.",
+     "type": "inference",
+     "why": "SOURCE does not say it reduces taxable income."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Keep these items for every rate on this page:\n\n- The date of each trip\n- The miles driven\n- The purpose, such as the clinic you visited or the charity you drove for\n- Toll and parking receipts for medical trips\n- Gas and oil receipts if you use the actual-cost method\n- A copy of the permanent change of station order for a military move\n\nUse our free [mileage log template](/templates/mileage-log-template/) to record the date, miles and purpose of each trip.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE records list is only date, miles, purpose."
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1545
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 141.7,
+ "response_id": "msg_011Cg1tLwqq7FVBLzcn89fdr",
+ "generated_at": "2026-10-14T09:25:32+0000"
+}
