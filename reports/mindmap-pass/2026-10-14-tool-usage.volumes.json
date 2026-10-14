@@ -1,0 +1,208 @@
+{
+ "rows": [
+  {
+   "keyword": "pay off mortgage or invest calculator",
+   "volume": 260,
+   "volume_low": 260,
+   "volume_high": 260,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "pay off mortgage early or invest calculator",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 7,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "mortgage recast calculator",
+   "volume": 18100,
+   "volume_low": 18100,
+   "volume_high": 18100,
+   "kd": 8,
+   "cpc": 5.71,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "biweekly mortgage calculator",
+   "volume": 1900,
+   "volume_low": 1900,
+   "volume_high": 1900,
+   "kd": 0,
+   "cpc": 1.71,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "remaining mortgage balance calculator",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": 10,
+   "cpc": 1.94,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "social security tax calculator",
+   "volume": 3600,
+   "volume_low": 3600,
+   "volume_high": 3600,
+   "kd": 30,
+   "cpc": 0.36,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "asset allocation calculator by age",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": 24,
+   "cpc": 1.63,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "retirement withdrawal calculator",
+   "volume": 9900,
+   "volume_low": 9900,
+   "volume_high": 9900,
+   "kd": 17,
+   "cpc": 2.53,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "hysa vs cd calculator",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "cd vs high yield savings calculator",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "trump account vs 529 calculator",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "high yield savings calculator after tax",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "mortgage payoff calculator with remaining balance",
+   "volume": 250,
+   "volume_low": 250,
+   "volume_high": 2500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 250-2500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "ahrefs unusable (no AHREFS_API_KEY)",
+  "volume: using dataforseo (quality order ahrefs > dataforseo > semrush)",
+  "dataforseo returned volume for 8/13 phrases",
+  "semrush unusable (no SEMRUSH_API_KEY)",
+  "kd: using dataforseo (quality order ahrefs > semrush > dataforseo)",
+  "No tool volume for 5 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 11/13 rows corroborated live"
+ ]
+}

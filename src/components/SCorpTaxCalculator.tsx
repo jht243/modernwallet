@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { useDraft } from "./calc-ui";
 import {
   calculateSCorp,
   type SCorpInput,
@@ -181,17 +182,18 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
   );
 }
 function MoneyInput({ value, onChange }: { value: number; onChange: (v: number) => void }) {
+  // useDraft keeps a typed "6." while the reader enters cents (re-rendering the parsed number dropped the point).
+  const d = useDraft(value, onChange, (v) => v.toLocaleString("en-US"));
   return (
     <div style={S.suffixWrap}>
       <span style={S.prefix}>$</span>
       <input
         style={{ ...S.input, paddingLeft: 22 }}
         inputMode="decimal"
-        value={value === 0 ? "" : value.toLocaleString("en-US")}
+        value={d.text}
         placeholder="0"
-        onChange={(e) =>
-          onChange(e.target.value === "" ? 0 : Math.max(0, Number(e.target.value.replace(/[^0-9.]/g, ""))))
-        }
+        onChange={(e) => d.onChange(e.target.value)}
+        onBlur={d.onBlur}
       />
     </div>
   );

@@ -17,7 +17,7 @@ export const MILEAGE_SPOKES: SpokeEntry[] = [
   {
     calculator: "mileage-deduction",
     slug: "irs-mileage-rate-2026",
-    updated: "2026-10-11",
+    updated: "2026-10-14",
     title: "IRS Mileage Rate 2026: 72.5¢ and 76¢ Explained",
     metaDescription:
       "The 2026 IRS mileage rate is 72.5 cents through June 30 and 76 cents from July 1. See both rates, why they changed mid-year, and how to split your miles.",
@@ -95,7 +95,7 @@ export const MILEAGE_SPOKES: SpokeEntry[] = [
   {
     calculator: "mileage-deduction",
     slug: "standard-mileage-vs-actual-expenses",
-    updated: "2026-09-30",
+    updated: "2026-10-14",
     title: "Standard Mileage vs Actual Expenses: Which Wins?",
     metaDescription:
       "Standard mileage or actual expenses? Compare both methods with 2026 IRS rates, and see the first-year rule that can lock you out of the mileage rate for good.",
@@ -161,7 +161,7 @@ export const MILEAGE_SPOKES: SpokeEntry[] = [
   {
     calculator: "mileage-deduction",
     slug: "doordash-mileage-deduction",
-    updated: "2026-09-05",
+    updated: "2026-10-14",
     title: "DoorDash Mileage Deduction: What Dashers Can Claim",
     metaDescription:
       "The DoorDash mileage deduction at 2026 rates. Which miles count, why the in-app estimate is low, and what the deduction is really worth in tax.",

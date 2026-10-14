@@ -49,7 +49,34 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/compare/home-equity-loan-vs-personal-loan/", label: "Home equity loan vs personal loan" },
     { href: "/compare/401k-loan-vs-heloc/", label: "401(k) loan vs HELOC" },
   ],
+  // tool-usage pass (2026-10-14): the three new next-step tools and their seed tools.
+  "hysa-vs-cd-calculator": [
+    { href: "/investing/high-yield-savings-calculator/", label: "Adding money monthly? Project a HYSA" },
+    { href: "/cd-calculator/", label: "Model one CD's maturity value" },
+    { href: "/compare/hysa-vs-cd/", label: "HYSA vs CD: the rules side by side" },
+    { href: "/emergency-fund-calculator/", label: "Size your emergency fund first" },
+    { href: "/roundup/best-high-yield-savings-accounts/", label: "Best high-yield savings accounts" },
+  ],
+  "trump-account-vs-529-calculator": [
+    { href: "/trump-account/", label: "Project a Trump Account on its own" },
+    { href: "/529-savings-calculator/", label: "Project a 529 on its own" },
+    { href: "/compare/trump-account-vs-529/", label: "Trump Account vs 529: the rules" },
+    { href: "/compare/trump-account-vs-529-vs-utma/", label: "Add a UTMA to the comparison" },
+    { href: "/guides/trump-accounts/", label: "What is a Trump Account?" },
+  ],
+  "trump-account": [
+    { href: "/trump-account-vs-529-calculator/", label: "Trump Account or 529? Compare after-tax at 18" },
+    { href: "/529-savings-calculator/", label: "Saving for college? Project a 529" },
+    { href: "/compare/trump-account-vs-529/", label: "Trump Account vs 529: the rules" },
+  ],
+  "mortgage-recast-calculator": [
+    { href: "/mortgage/payoff-calculator/", label: "Paying extra each month instead? See the payoff date" },
+    { href: "/mortgage/early-payoff-calculator/", label: "Early payoff calculator" },
+    { href: "/guides/pay-off-mortgage-early-or-invest/", label: "Pay off the mortgage or invest the lump sum?" },
+    { href: "/mortgage/", label: "Mortgage payment calculator" },
+  ],
   "cd-calculator": [
+    { href: "/hysa-vs-cd-calculator/", label: "CD or high-yield savings? Compare both on your deposit" },
     { href: "/annuity-calculator/", label: "Compare with an annuity payout" },
     { href: "/emergency-fund-calculator/", label: "Parking an emergency fund? Size it first" },
     { href: "/compare/cd-vs-money-market/", label: "CD vs money market account" },

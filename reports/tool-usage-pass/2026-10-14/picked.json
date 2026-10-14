@@ -1,0 +1,62 @@
+[
+ {
+  "tool": "investing",
+  "path": "/investing/high-yield-savings-calculator/",
+  "people": 72,
+  "uses": 92,
+  "views": 150,
+  "use_rate": 0.613,
+  "people_7d": 72,
+  "lane": "persona"
+ },
+ {
+  "tool": "retirement",
+  "path": "/retirement/social-security-retirement-calculator/",
+  "people": 36,
+  "uses": 43,
+  "views": 100,
+  "use_rate": 0.43,
+  "people_7d": 36,
+  "lane": "persona"
+ },
+ {
+  "tool": "mileage-deduction",
+  "path": "/mileage-deduction/irs-mileage-rate-2026/",
+  "people": 22,
+  "uses": 24,
+  "views": 324,
+  "use_rate": 0.074,
+  "people_7d": 22,
+  "lane": "persona"
+ },
+ {
+  "tool": "portfolio",
+  "path": "/portfolio/60-40-portfolio-calculator/",
+  "people": 13,
+  "uses": 13,
+  "views": 59,
+  "use_rate": 0.22,
+  "people_7d": 13,
+  "lane": "persona"
+ },
+ {
+  "tool": "mortgage",
+  "path": "/mortgage/payoff-calculator/",
+  "people": 7,
+  "uses": 7,
+  "views": 16,
+  "use_rate": 0.438,
+  "people_7d": 7,
+  "lane": "persona"
+ },
+ {
+  "tool": "trump-account",
+  "path": "/trump-account/",
+  "people": 21,
+  "uses": 21,
+  "views": 47,
+  "use_rate": 0.447,
+  "people_7d": 21,
+  "lane": "monetize"
+ }
+]

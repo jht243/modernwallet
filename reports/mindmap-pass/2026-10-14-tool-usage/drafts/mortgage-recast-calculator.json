@@ -1,0 +1,41 @@
+{
+  "metaTitle": "Mortgage Recast Calculator: New Payment & Interest Saved",
+  "metaDescription": "Mortgage recast calculator. Enter your balance, rate and lump sum to see the new payment, interest saved, and how a recast compares to prepaying.",
+  "introText": "A recast lowers your monthly payment by spreading a smaller balance over the same months left at the same rate. Enter your current balance, interest rate, months left and lump sum in the mortgage recast calculator below, along with any recast fee your servicer charges. The calculator returns the new payment, the interest saved and the months a fee takes to earn back, and it also shows the same lump sum prepaid without a recast.\n\nFor example, take a $238,000 balance at 6.875% with 312 months left. The payment is $1,639.33 a month in principal and interest. A $30,000 recast cuts it to $1,432.69, which is $206.64 a month less.",
+  "howItWorks": "The mortgage recast calculator sets a payment with payment = balance × r ÷ (1 − (1 + r)^−n), where r is the annual rate divided by 12 and n is the months left. A recast reruns the formula on the lower balance with the same r and n. On the example loan, the new $208,000 balance gives a payment of $1,432.69, down from $1,639.33.\n\nEnter the recast fee your servicer charges, and the calculator shows how many months of the lower payment it takes to earn the fee back. On the example, a $250 fee is earned back in 2 months, and the recast still saves $34,221.26 in interest after the fee.\n\nPrepay $30,000 without a recast and keep paying $1,639.33, and the lower balance clears the example loan in 228 months. That is 84 months, or 7 years, sooner, with $109,002.12 saved in interest. The recast saves $34,471.26, so it gives up interest savings in exchange for a lower required payment.\n\nA recast fits a borrower who wants a lower required payment, for example after a home sale or a drop in income. If you want to shorten the loan, prepay without a recast and use the [mortgage payoff calculator](/mortgage/payoff-calculator/) to test monthly extra payments. To compare paying down the mortgage with investing the lump sum, read the [pay off mortgage early or invest](/guides/pay-off-mortgage-early-or-invest/) guide.\n\nThe calculator assumes a fixed-rate loan and shows principal and interest only, so taxes and insurance are not included. Your servicer sets the recast fee and the minimum lump sum. The servicer also decides whether a loan can be recast at all. Many servicers do not recast government-backed loans such as [Federal Housing Administration (FHA)](https://www.hud.gov/federal_housing_administration) and [U.S. Department of Veterans Affairs (VA)](https://www.va.gov/housing-assistance/home-loans/) loans, so if the servicer will not recast your loan, use the prepay results instead.",
+  "faqs": [
+    {
+      "question": "How much will my payment drop if I recast my mortgage?",
+      "answer": "Your payment drops to whatever the formula gives on the lower balance, using the same rate and months left. Take a $238,000 balance at 6.875% with 312 months left. A $30,000 recast lowers the payment from $1,639.33 to $1,432.69. That is $206.64 a month less."
+    },
+    {
+      "question": "What are the downsides of recasting a mortgage?",
+      "answer": "A recast saves less interest than prepaying the same lump sum without one. On the example loan, the recast saves $34,471.26, while prepaying saves $109,002.12. Your servicer may charge a recast fee, and it may not recast your loan at all."
+    },
+    {
+      "question": "What are the benefits of recasting?",
+      "answer": "A recast lowers your required monthly payment and keeps the same rate and months left. On the example loan, a $30,000 lump sum lowers the payment by $206.64 a month. It also saves $34,471.26 in interest over the remaining 312 months."
+    },
+    {
+      "question": "Is it better to recast or just pay extra principal?",
+      "answer": "Paying extra principal without a recast saves more interest, and a recast gives a lower required payment. With the same $30,000, prepaying ends the example loan 84 months sooner and saves $109,002.12. The recast saves $34,471.26 but cuts the payment by $206.64 a month. Pick the recast for the lower payment, and prepay to get the loan gone sooner."
+    },
+    {
+      "question": "How long does it take to earn back a recast fee?",
+      "answer": "The calculator shows how many months of the lower payment it takes to cover the fee you enter. A $250 fee against a $206.64 monthly drop is earned back in 2 months. After that fee, the example recast still saves $34,221.26 in interest. A higher fee takes longer to earn back."
+    },
+    {
+      "question": "Can every mortgage be recast?",
+      "answer": "No. Your servicer decides which loans can be recast, and it sets the fee and the minimum lump sum. Many servicers do not recast government-backed loans such as FHA and VA loans. If your servicer will not recast the loan, you can still put the lump sum toward principal, and the calculator's prepay result shows the interest that saves. The calculator also assumes a fixed-rate loan."
+    },
+    {
+      "question": "Does recasting change my interest rate or loan term?",
+      "answer": "No. A recast keeps the same interest rate and the same months left, so only the balance and the payment change. On the example loan, the rate stays at 6.875% with 312 months left. The payment falls to $1,432.69 on the $208,000 balance."
+    },
+    {
+      "question": "How do I cut years off my mortgage instead?",
+      "answer": "Prepay principal without a recast and keep making your current payment. Putting $30,000 toward the example loan and keeping the $1,639.33 payment ends it in 228 months. That is 7 years sooner. To test monthly extra payments, use the [mortgage payoff calculator](/mortgage/payoff-calculator/)."
+    }
+  ],
+  "slug": "mortgage-recast-calculator"
+}

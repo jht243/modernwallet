@@ -103,7 +103,7 @@ export const MILEAGE_DEDUCTION_HUB: CalculatorDef = {
   islandId: "mileage-deduction",
   label: "Mileage Deduction",
   navOrder: 36,
-  updated: "2026-09-05",
+  updated: "2026-10-14",
 
   metaTitle: "Mileage Deduction Calculator (2026 IRS Rates)",
   metaDescription:

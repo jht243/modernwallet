@@ -1,13 +1,15 @@
 import { useMemo, useState } from "react";
 import { computeAutoLoan, type AutoLoanInput } from "../lib/auto-loan";
 import { fmtUSD, fmtMonths } from "../lib/format";
+import { useDraft } from "./calc-ui";
+import ToolPicks, { book } from "./ToolPicks";
 
 // AutoIQ calculator island. Reads its initial inputs from the `initialData` prop (the page's
 // preset) instead of any injected global — fully standalone, no external host coupling.
 
 interface Props {
   // Mortgage mode adds optional escrow inputs (property tax, insurance, HOA) for a true PITI total.
-  initialData?: Partial<AutoLoanInput> & { propertyTaxAnnual?: number; homeInsuranceAnnual?: number; hoaMonthly?: number };
+  initialData?: Partial<AutoLoanInput> & { propertyTaxAnnual?: number; homeInsuranceAnnual?: number; hoaMonthly?: number; existingLoanOption?: boolean };
   heading?: string;
   subheading?: string;
   /** When true, this calculator is being used for a mortgage (relabels "vehicle price" → "home price"). */
@@ -34,8 +36,22 @@ const MORTGAGE_TERMS = [120, 180, 240, 360];
 export default function AutoLoanCalculator({ initialData, heading, subheading, mortgageMode = false }: Props) {
   const [input, setInput] = useState<AutoLoanInput>({ ...DEFAULTS, ...initialData });
   const [showSchedule, setShowSchedule] = useState(false);
+  // Mortgage mode: "I already have this mortgage" models a loan in progress. The price field becomes the
+  // current balance (no down payment) and the term becomes the time left on the statement.
+  const [existing, setExisting] = useState(false);
+  const [left, setLeft] = useState({ years: 26, months: 0 });
+  const monthsLeft = Math.max(1, Math.round(left.years) * 12 + Math.round(left.months));
+  // Offered on the payoff page only (preset flag), where readers already have a loan.
+  const existingLoanOption = mortgageMode && Boolean(initialData?.existingLoanOption);
+  const isExisting = existingLoanOption && existing;
+  const calcInput = useMemo<AutoLoanInput>(
+    () => (isExisting ? { ...input, downPayment: 0, loanTermMonths: monthsLeft } : input),
+    [input, isExisting, monthsLeft],
+  );
 
-  const result = useMemo(() => computeAutoLoan(input), [input]);
+  const result = useMemo(() => computeAutoLoan(calcInput), [calcInput]);
+  // Keeps a typed "6." while the reader is still entering "6.875" (shared calc-ui draft helper).
+  const rateDraft = useDraft(input.interestRatePct, (v) => set({ interestRatePct: v }));
 
   const set = (patch: Partial<AutoLoanInput>) => setInput((s) => ({ ...s, ...patch }));
   const num = (v: string) => (v === "" ? 0 : Math.max(0, Number(v.replace(/[^0-9.]/g, ""))));
@@ -55,7 +71,7 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
     URL.revokeObjectURL(url);
   };
 
-  const priceLabel = mortgageMode ? "Home price" : "Vehicle price";
+  const priceLabel = isExisting ? "Current loan balance" : mortgageMode ? "Home price" : "Vehicle price";
   const terms = mortgageMode ? MORTGAGE_TERMS : TERM_OPTIONS;
   const hasExtra = (input.extraMonthlyPayment ?? 0) > 0;
 
@@ -65,7 +81,8 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
     homeInsuranceAnnual: Number(initialData?.homeInsuranceAnnual) || 0,
     hoaMonthly: Number(initialData?.hoaMonthly) || 0,
   });
-  const pmiMonthly = mortgageMode && input.vehiclePrice > 0 && (result.loanAmount ?? 0) > 0 &&
+  // No PMI estimate for an existing loan: we don't know the home's value, so the loan-to-value is unknown.
+  const pmiMonthly = mortgageMode && !isExisting && input.vehiclePrice > 0 && (result.loanAmount ?? 0) > 0 &&
     (input.downPayment ?? 0) / input.vehiclePrice < 0.2
     ? ((result.loanAmount ?? 0) * 0.006) / 12 : 0;
   const escrowMonthly = escrow.propertyTaxAnnual / 12 + escrow.homeInsuranceAnnual / 12 + escrow.hoaMonthly + pmiMonthly;
@@ -88,12 +105,20 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
       <div style={S.grid}>
         {/* ---- Inputs ---- */}
         <div style={S.inputs}>
+          {existingLoanOption && (
+            <label style={S.check}>
+              <input type="checkbox" style={S.checkBox} checked={existing} onChange={(e) => setExisting(e.target.checked)} />
+              <span>I already have this mortgage (use my current balance and time left)</span>
+            </label>
+          )}
           <Field label={priceLabel}>
             <MoneyInput value={input.vehiclePrice} onChange={(v) => set({ vehiclePrice: v })} />
           </Field>
-          <Field label="Down payment">
-            <MoneyInput value={input.downPayment ?? 0} onChange={(v) => set({ downPayment: v })} />
-          </Field>
+          {!isExisting && (
+            <Field label="Down payment">
+              <MoneyInput value={input.downPayment ?? 0} onChange={(v) => set({ downPayment: v })} />
+            </Field>
+          )}
 
           {!mortgageMode && (
             <div style={S.row2}>
@@ -112,13 +137,27 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
                 <input
                   style={S.input}
                   inputMode="decimal"
-                  value={input.interestRatePct}
-                  onChange={(e) => set({ interestRatePct: num(e.target.value) })}
+                  value={rateDraft.text}
+                  placeholder="0"
+                  onChange={(e) => rateDraft.onChange(e.target.value)}
+                  onBlur={rateDraft.onBlur}
                   aria-label="Interest rate percent"
                 />
                 <span style={S.suffix}>%</span>
               </div>
             </Field>
+            {isExisting ? (
+              <div style={S.row2}>
+                <Field label="Years left">
+                  <input style={S.input} inputMode="numeric" value={left.years || ""} placeholder="0" aria-label="Years left on the loan"
+                    onChange={(e) => setLeft((l) => ({ ...l, years: Math.min(40, num(e.target.value)) }))} />
+                </Field>
+                <Field label="Months left">
+                  <input style={S.input} inputMode="numeric" value={left.months || ""} placeholder="0" aria-label="Extra months left on the loan"
+                    onChange={(e) => setLeft((l) => ({ ...l, months: Math.min(11, num(e.target.value)) }))} />
+                </Field>
+              </div>
+            ) : (
             <Field label="Loan term">
               <select
                 style={S.input}
@@ -133,6 +172,7 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
                 ))}
               </select>
             </Field>
+            )}
           </div>
 
           <Field label="Extra payment per month (optional)">
@@ -202,7 +242,7 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
               <strong>{fmtUSD(result.interestSaved)}</strong> in interest and pay off{" "}
               <strong>{fmtMonths(result.monthsSaved)}</strong> sooner
               {result.baselineMonths != null && (
-                <span style={S.savingsSub}> (vs. {fmtMonths(result.baselineMonths)} on the original schedule)</span>
+                <span style={S.savingsSub}> (vs. {fmtMonths(result.baselineMonths)} on {isExisting ? "your current" : "the original"} schedule)</span>
               )}
             </div>
           )}
@@ -216,6 +256,22 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
                 Download full schedule (CSV)
               </button>
             </div>
+          )}
+
+          {existingLoanOption && result.monthlyPaymentPI != null && (
+            <ToolPicks
+              tool="mortgage"
+              heading={hasExtra || isExisting ? "Further reading on paying off a mortgage early" : "Further reading on buying a home"}
+              picks={hasExtra || isExisting
+                ? [
+                    book("totalMoneyMakeover", "A step-by-step plan for putting extra money toward the house."),
+                    book("bogleheads", "The investing side of the choice, if the extra might earn more elsewhere."),
+                  ]
+                : [
+                    book("noloFirstHome", "Covers the buying steps around the payment you just priced."),
+                    book("totalMoneyMakeover", "A plan for the debts to clear before you take on a mortgage."),
+                  ]}
+            />
           )}
         </div>
       </div>
@@ -324,6 +380,8 @@ const S: Record<string, React.CSSProperties> = {
   statLabel: { fontSize: "0.78rem", color: "#666" },
   statValue: { fontSize: "1.15rem", fontWeight: 700, fontVariantNumeric: "tabular-nums" },
   barWrap: { marginTop: 4 },
+  check: { display: "flex", alignItems: "center", gap: 10, fontSize: "0.88rem", color: "#333", cursor: "pointer", minHeight: 32 },
+  checkBox: { width: 20, height: 20, margin: 0, flexShrink: 0 },
   barTrack: { display: "flex", height: 10, borderRadius: 6, overflow: "hidden", background: "#EEF4F2" },
   barPrincipal: { background: PRIMARY, height: "100%" },
   barInterest: { background: ACCENT, height: "100%" },

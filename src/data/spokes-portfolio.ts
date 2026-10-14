@@ -53,7 +53,7 @@ export const PORTFOLIO_SPOKES: SpokeEntry[] = [
   },
 
   {
-    updated: "2026-10-11",
+    updated: "2026-10-14",
     calculator: "portfolio",
     slug: "60-40-portfolio-calculator",
     title: "60/40 Portfolio Calculator: Return, Risk & Growth",

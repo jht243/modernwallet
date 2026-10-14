@@ -65,6 +65,9 @@ import HurricaneDeductibleCalculator from "./HurricaneDeductibleCalculator";
 import AnnuityCalculator from "./AnnuityCalculator";
 import CreditCardInterestCalculator from "./CreditCardInterestCalculator";
 import LoanPaymentCalculator from "./LoanPaymentCalculator";
+import HysaVsCdCalculator from "./HysaVsCdCalculator";
+import TrumpVs529Calculator from "./TrumpVs529Calculator";
+import MortgageRecastCalculator from "./MortgageRecastCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -149,6 +152,11 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "annuity-calculator": AnnuityCalculator,
   "credit-card-interest-calculator": CreditCardInterestCalculator,
   "loan-payment-calculator": LoanPaymentCalculator,
+  // tool-usage pass (2026-10-14): the next tool each persona reached for — HYSA vs CD (seed: HYSA calculator),
+  // Trump Account vs 529 (seed: Trump Account), lump-sum recast (seed: mortgage payoff).
+  "hysa-vs-cd-calculator": HysaVsCdCalculator,
+  "trump-account-vs-529-calculator": TrumpVs529Calculator,
+  "mortgage-recast-calculator": MortgageRecastCalculator,
   // PTO / leave-days cash-out — competitor-monitor pass (2026-08-17): sell-back payout calculator
   // that also shows an estimated net-of-tax figure and the unpaid-time-off value for comparison.
   "pto-cashout": PtoCashoutCalculator,

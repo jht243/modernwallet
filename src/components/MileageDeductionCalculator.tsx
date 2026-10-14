@@ -7,6 +7,7 @@ import {
 } from "../lib/mileage-deduction";
 import { useDraft } from "./calc-ui";
 import { fmtUSD, fmtNum, fmtPct } from "../lib/format";
+import ToolPicks, { book } from "./ToolPicks";
 
 // Business mileage deduction island. Two design decisions that separate it from every other
 // mileage calculator:
@@ -178,6 +179,31 @@ export default function MileageDeductionCalculator({ initialData, heading, subhe
             </div>
           )}
 
+          <div style={S.whoNote}>
+            This estimate is for self-employed (Schedule C) driving. Most employees can't deduct
+            unreimbursed mileage on a federal return; <a href="https://www.irs.gov/taxtopics/tc511" target="_blank" rel="noopener noreferrer">IRS Topic 511</a> lists
+            the exceptions. Reimbursed by your employer? Use the{" "}
+            <a href="/mileage-reimbursement-calculator/">mileage reimbursement calculator</a>.
+          </div>
+
+          {result.chosenDeduction > 0 && (
+            <ToolPicks
+              tool="mileage-deduction"
+              heading="Further reading on business vehicle deductions"
+              picks={result.chosenDeduction < 5000
+                ? [
+                    book("workingForYourself", "Covers the Schedule C basics behind a part-time driving deduction."),
+                    book("deductIt", "Lists the other business deductions that sit beside your mileage."),
+                    book("lasser2027", "Line-by-line help for filing your 2026 return."),
+                  ]
+                : [
+                    book("deductIt", "Walks through the vehicle method choice and the records the IRS expects."),
+                    book("taxSavvy", "Plans the rest of the year's taxes when driving is core to the business."),
+                    book("lasser2027", "Line-by-line help for filing your 2026 return."),
+                  ]}
+            />
+          )}
+
           <div style={S.disclaimer}>
             Estimate only, using the 2026 IRS business standard mileage rates. It assumes you own or
             lease the vehicle and keep a contemporaneous mileage log, and it does not model
@@ -294,5 +320,6 @@ const S: Record<string, React.CSSProperties> = {
   noteWarn: { background: "#FBF4E4", borderColor: "#F0DEB4" },
   noteLabel: { fontSize: "0.78rem", fontWeight: 600, color: "#666", textTransform: "uppercase", letterSpacing: "0.03em" },
   noteText: { fontSize: "0.8rem", color: "#777", lineHeight: 1.5 },
+  whoNote: { fontSize: "0.8rem", color: "#4a5b56", background: "#F6FAF8", border: "1px solid #DCECE6", borderRadius: 8, padding: "8px 10px", lineHeight: 1.5 },
   disclaimer: { fontSize: "0.76rem", color: "#7a8783", lineHeight: 1.5, marginTop: 2 },
 };

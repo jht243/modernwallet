@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { useDraft } from "./calc-ui";
 import { computeMca, type McaInput, type PaymentFrequency } from "../lib/merchant-cash-advance";
 import { fmtUSD, fmtPct, fmtNum } from "../lib/format";
 
@@ -26,6 +27,8 @@ export default function MerchantCashAdvanceCalculator({ initialData, heading, su
   const [showSchedule, setShowSchedule] = useState(false);
   const result = useMemo(() => computeMca(input), [input]);
   const set = (patch: Partial<McaInput>) => setInput((s) => ({ ...s, ...patch }));
+  // useDraft keeps a typed "1." while the reader enters "1.35"; the 0 to 3 clamp from clampNum still applies.
+  const factorDraft = useDraft(input.factorRate, (v) => set({ factorRate: Math.min(3, Math.max(0, v)) }));
 
   const apr = result.effectiveAprPct;
   const aprTone = apr == null ? "" : apr >= 60 ? S.aprBad : apr >= 35 ? S.aprWarn : S.aprOk;
@@ -50,8 +53,10 @@ export default function MerchantCashAdvanceCalculator({ initialData, heading, su
               <input
                 style={S.input}
                 inputMode="decimal"
-                value={input.factorRate}
-                onChange={(e) => set({ factorRate: clampNum(e.target.value, 0, 3) })}
+                value={factorDraft.text}
+                placeholder="0"
+                onChange={(e) => factorDraft.onChange(e.target.value)}
+                onBlur={factorDraft.onBlur}
                 aria-label="Factor rate"
               />
             </Field>

@@ -1,0 +1,8 @@
+hysa-vs-cd-calculator.howItWorks: '\n\n A CD fits' -> '\n\nA CD fits'
+hysa-vs-cd-calculator.howItWorks: 'Federal Deposit Insurance Corporation (FDIC) insurance covers' -> '[Federal Deposit Insurance Corporation (FDIC)](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance) insurance covers'
+trump-account-vs-529-calculator.introText: 'Trump Account vs 529 calculator above' -> 'Trump Account vs 529 calculator below'
+mortgage-recast-calculator.introText: 'mortgage recast calculator above' -> 'mortgage recast calculator below'
+mortgage-recast-calculator.howItWorks: 'in interest after the fee. \n\n' -> 'in interest after the fee.\n\n'
+mortgage-recast-calculator.howItWorks: 'government-backed loans such as FHA and VA loans' -> 'government-backed loans such as [Federal Housing Administration (FHA)](https://www.hud.gov/federal_housing_administration) and [U.S. Department of Veterans Affairs (VA)](https://www.va.gov/housing-assistance/home-loans/) loans'
+hysa-vs-cd-calculator.howItWorks (post-fix re-link): 'Federal Deposit Insurance Corporation (FDIC) insurance covers' -> '[Federal Deposit Insurance Corporation (FDIC)](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance) insurance covers'
+mortgage-recast-calculator.howItWorks (post-fix re-link): 'government-backed loans such as FHA and VA loans, so' -> 'government-backed loans such as [Federal Housing Administration (FHA)](https://www.hud.gov/federal_housing_administration) and [U.S. Department of Veterans Affairs (VA)](https://www.va.gov/housing-assistance/home-loans/) loans, so'

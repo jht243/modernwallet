@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { computePortfolio, ASSETS, type PortfolioInput } from "../lib/portfolio";
 import { useDraft } from "./calc-ui";
 import { fmtUSD, fmtPct, fmtNum } from "../lib/format";
+import ToolPicks, { book } from "./ToolPicks";
 
 // PortfolioIQ island. Asset-allocation analysis: weighted expected return, volatility, Sharpe ratio,
 // a likely 1-year range, and a long-run growth projection. Fully standalone — no host coupling.
@@ -92,6 +93,9 @@ export default function PortfolioCalculator({ initialData, heading, subheading }
             <div style={S.note}>
               A 60/40 split of your {fmtUSD(r.total)} is <strong>{fmtUSD(r.total * 0.6)} stocks / {fmtUSD(r.total * 0.4)} bonds</strong>. You hold {fmtUSD(v.stocks)} / {fmtUSD(v.bonds)}
               {(v.realEstate ?? 0) + v.cash > 0 ? `, plus ${fmtUSD((v.realEstate ?? 0) + v.cash)} in real estate and cash` : ""}.
+              {" "}To reach 60/40: <strong>stocks {gapText(v.stocks - r.total * 0.6)}</strong> · <strong>bonds {gapText(v.bonds - r.total * 0.4)}</strong>
+              {(v.realEstate ?? 0) + v.cash > 0 ? ` (the ${fmtUSD((v.realEstate ?? 0) + v.cash)} in real estate and cash counts toward the total but sits outside both targets)` : ""}.
+              {" "}Plan the trades in the <a href="/portfolio-rebalancing-calculator/">portfolio rebalancing calculator</a>.
             </div>
           )}
           {show6040Gap && (
@@ -111,6 +115,29 @@ export default function PortfolioCalculator({ initialData, heading, subheading }
             <button style={S.toggle} type="button" onClick={() => setShowSchedule((x) => !x)}>
               {showSchedule ? "Hide" : "Show"} year-by-year projection
             </button>
+          )}
+          {show6040Gap && r.total != null && r.total > 0 && (
+            <ToolPicks
+              tool="portfolio"
+              heading="Further reading on holding your allocation"
+              picks={v.stocks / r.total > 0.65
+                ? [
+                    book("fourPillars", "Explains the risk of a mix that has drifted above its stock target."),
+                    book("randomWalk", "Market history that shows why a drifted mix can fall harder."),
+                    book("bogleheads", "A simple rebalancing routine for an index portfolio."),
+                  ]
+                : v.stocks / r.total >= 0.55
+                  ? [
+                      book("bogleheads", "Keeps a near-60/40 index mix on a simple, repeatable plan."),
+                      book("littleBook", "The low-cost index fund case behind a 60/40 portfolio."),
+                      book("fourPillars", "How to pick and hold a target allocation through downturns."),
+                    ]
+                  : [
+                      book("fourPillars", "What a lower stock share costs in long-run growth, and when it fits."),
+                      book("randomWalk", "Long-run return history for stocks and bonds."),
+                      book("littleBook", "The low-cost index fund case behind a 60/40 portfolio."),
+                    ]}
+            />
           )}
         </div>
       </div>
@@ -191,3 +218,9 @@ const S: Record<string, React.CSSProperties> = {
   right: { textAlign: "right" },
   tableNote: { fontSize: "0.78rem", color: "#888", padding: "8px 12px", margin: 0 },
 };
+
+// "$18,000 over target" / "$38,000 under target" / "on target" for the 60/40 gap line.
+function gapText(diff: number): string {
+  if (Math.abs(diff) < 1) return "on target";
+  return `${fmtUSD(Math.abs(diff))} ${diff > 0 ? "over" : "under"} target`;
+}

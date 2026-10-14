@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { useDraft } from "./calc-ui";
 import { computeLoc, type LocInput } from "../lib/business-line-of-credit";
 import { fmtUSD, fmtPct } from "../lib/format";
 
@@ -25,6 +26,9 @@ export default function BusinessLineOfCreditCalculator({ initialData, heading, s
   const [showSchedule, setShowSchedule] = useState(false);
   const result = useMemo(() => computeLoc(input), [input]);
   const set = (patch: Partial<LocInput>) => setInput((s) => ({ ...s, ...patch }));
+  // useDraft keeps a typed "6." while the reader enters "6.5" (re-rendering the parsed number dropped the point).
+  const aprDraft = useDraft(input.aprPct, (v) => set({ aprPct: v }));
+  const feeDraft = useDraft(input.drawFeePct ?? 0, (v) => set({ drawFeePct: v }));
 
   return (
     <div style={S.wrap}>
@@ -46,8 +50,10 @@ export default function BusinessLineOfCreditCalculator({ initialData, heading, s
                 <input
                   style={S.input}
                   inputMode="decimal"
-                  value={input.aprPct}
-                  onChange={(e) => set({ aprPct: Math.max(0, Number(e.target.value.replace(/[^0-9.]/g, ""))) })}
+                  value={aprDraft.text}
+                  placeholder="0"
+                  onChange={(e) => aprDraft.onChange(e.target.value)}
+                  onBlur={aprDraft.onBlur}
                   aria-label="Interest rate percent"
                 />
                 <span style={S.suffix}>%</span>
@@ -71,8 +77,10 @@ export default function BusinessLineOfCreditCalculator({ initialData, heading, s
               <input
                 style={S.input}
                 inputMode="decimal"
-                value={input.drawFeePct ?? 0}
-                onChange={(e) => set({ drawFeePct: Math.max(0, Number(e.target.value.replace(/[^0-9.]/g, ""))) })}
+                value={feeDraft.text}
+                placeholder="0"
+                onChange={(e) => feeDraft.onChange(e.target.value)}
+                onBlur={feeDraft.onBlur}
                 aria-label="Draw fee percent"
               />
               <span style={S.suffix}>%</span>

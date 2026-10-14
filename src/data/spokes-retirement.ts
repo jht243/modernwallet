@@ -821,7 +821,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
   },
 
   {
-    updated: "2026-10-11",
+    updated: "2026-10-14",
     calculator: "retirement",
     slug: "social-security-retirement-calculator",
     title: "Social Security Retirement Calculator",

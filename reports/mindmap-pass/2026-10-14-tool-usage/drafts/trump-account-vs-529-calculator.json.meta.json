@@ -1,0 +1,128 @@
+{
+ "slug": "trump-account-vs-529-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1132,
+ "floor": 600,
+ "input_tokens": 26568,
+ "output_tokens": 7265,
+ "thinking_tokens": null,
+ "cached_tokens": 23551,
+ "est_cost_usd": 0.1621,
+ "guards": {
+  "repairs": [
+   "slug None -> 'trump-account-vs-529-calculator'"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1080,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 313,
+   "floor": 600,
+   "ratio": 0.52,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    0
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "A 529 has no federal yearly contribution limit, so the calculator shows a warning when your yearly amount goes above the Trump Account cap.",
+     "replacement": "A 529 has no federal yearly contribution limit, and the calculator shows a warning when your yearly amount goes above the Trump Account cap.",
+     "type": "inference",
+     "why": "The warning is caused by the Trump Account cap, not the 529 rule."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1080
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-14T19:52:58+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-14-tool-usage/audit/trump-account-vs-529-calculator.findings.txt",
+    "applied": [
+     {
+      "id": "howItWorks",
+      "quote": "When the money is cashed out at 18 for something other than college, the Trump Account comes out ahead. Its family contributions come out untaxed, so only the seed and the growth are taxed: $5,574.81 of income tax plus $4,645.67 of additional tax.",
+      "replacement": "When the money is cashed out at 18 for something other than college, the Trump Account comes out ahead in the example. The difference comes from the $1,000 seed. Both accounts return family contributions untaxed and tax the growth at your rate plus a 10% additional tax. Only the Trump Account also holds the seed and the seed's growth. The Trump Account owes $5,574.81 of income tax plus $4,645.67 of additional tax.",
+      "type": "Finding 1: non-college edge misattributed",
+      "why": "Edge comes entirely from the seed; 529 also returns contributions untaxed."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "That leaves $79,436.26 in the Trump Account and $76,696.48 in the 529, a gap of $2,739.78.",
+      "replacement": "That leaves $79,436.26 in the Trump Account and $76,696.48 in the 529, a gap of $2,739.78. Without the seed, and at $5,000 a year or less, both accounts leave the same amount for a non-college use.",
+      "type": "Finding 2: add no-seed boundary",
+      "why": "SOURCE states both accounts leave the same amount without the seed at $5,000 or less."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Its family contributions come out untaxed, while the 529 taxes its earnings plus a 10% additional tax on those earnings.",
+      "replacement": "The $1,000 seed makes the difference, because both accounts return family contributions untaxed and tax the growth plus a 10% additional tax.",
+      "type": "Finding 3: FAQ 3 misattributes edge",
+      "why": "Both accounts return contributions untaxed; the seed creates the difference."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "State tax breaks on 529 contributions and financial aid are left out, and the tool cashes both accounts out at 18, while a Trump Account can stay invested after 18 under traditional individual retirement account (IRA) rules.",
+      "replacement": "State tax breaks on 529 contributions and financial aid are left out. The calculator cashes both accounts out at 18, while a Trump Account can stay invested after 18 under traditional individual retirement account (IRA) rules.",
+      "type": "Finding 4: overloaded sentence",
+      "why": "Split into two sentences; same meaning."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "To project one account on its own, use the [Trump Account calculator](/trump-account/) or the [529 savings calculator](/529-savings-calculator/); if the money is for college only, the 529 savings calculator is the simpler tool.",
+      "replacement": "To project one account on its own, use the [Trump Account calculator](/trump-account/) or the [529 savings calculator](/529-savings-calculator/). If the money is for college only, the 529 savings calculator is the simpler one to use.",
+      "type": "Finding 5: semicolon splice",
+      "why": "Replace semicolon splice with two sentences."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "deleted_final": 0,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1132,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 74.0,
+ "response_id": "msg_011Cg2geCxktGjtenzCKom8H",
+ "generated_at": "2026-10-14T19:31:32+0000"
+}

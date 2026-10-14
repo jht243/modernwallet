@@ -5,6 +5,7 @@ import {
 } from "../lib/retirement";
 import { useDraft } from "./calc-ui";
 import { fmtUSD, fmtPct, fmtNum } from "../lib/format";
+import ToolPicks, { book } from "./ToolPicks";
 
 // RetirementIQ island. One component, three modes (chosen via initialData.mode):
 //   "projection" (accumulation + 4% drawdown), "early-withdrawal" (401k penalty+tax), "rmd".
@@ -52,6 +53,9 @@ function Projection({ data }: { data?: Record<string, unknown> }) {
   const showSocialSecurity = Boolean(data?.showSocialSecurity);
   const [ssBenefit, setSsBenefit] = useState(0);
   const totalMonthly = r.monthlyRetirementIncome == null ? null : r.monthlyRetirementIncome + ssBenefit;
+  // SSA statement estimates are in today's dollars, so the like-for-like total pairs the benefit with
+  // 4% of the today's-dollar balance (same 4% rule as the nominal line above).
+  const totalMonthlyToday = r.balanceAtRetirementTodaysDollars == null ? null : (r.balanceAtRetirementTodaysDollars * 0.04) / 12 + ssBenefit;
   return (
     <div style={S.grid}>
       <div style={S.inputs}>
@@ -78,7 +82,12 @@ function Projection({ data }: { data?: Record<string, unknown> }) {
         {showSocialSecurity && ssBenefit > 0 && (
           <div style={S.statRow}>
             <Stat label="Total monthly income" value={fmtUSD(totalMonthly)} />
-            <Stat label="Social Security" value={fmtUSD(ssBenefit)} />
+            <Stat label="Social Security (today's dollars)" value={fmtUSD(ssBenefit)} />
+          </div>
+        )}
+        {showSocialSecurity && ssBenefit > 0 && totalMonthlyToday != null && (
+          <div style={S.todayNote}>
+            ≈ <strong>{fmtUSD(totalMonthlyToday)}/month in today's dollars</strong>: your {fmtUSD(ssBenefit)} benefit plus 4% of the {fmtUSD(r.balanceAtRetirementTodaysDollars)} today's-dollar balance. Your SSA statement shows benefits in today's dollars (<a href="https://www.ssa.gov/myaccount/statement.html" target="_blank" rel="noopener noreferrer">SSA</a>), so compare this figure with today's bills.
           </div>
         )}
         <div style={S.statRow}>
@@ -94,6 +103,26 @@ function Projection({ data }: { data?: Record<string, unknown> }) {
             ? `On track — at a 4% withdrawal rate, your savings last through age ${v.lifeExpectancy ?? 95}.`
             : `Heads up — at a 4% withdrawal rate, your savings run low before age ${v.lifeExpectancy ?? 95}. Consider saving more or retiring later.`}
         </div>
+        {showSocialSecurity && (
+          <ToolPicks
+            tool="retirement"
+            heading={ssBenefit <= 0 ? "Further reading on your Social Security benefit" : r.lastsThroughLifeExpectancy ? "Further reading on drawing retirement income" : "Further reading on making savings last"}
+            picks={ssBenefit <= 0
+              ? [
+                  book("ssMadeSimple", "Explains the benefit figure on your SSA statement before you add it here."),
+                  book("getWhatsYours", "Covers claiming ages and spousal rules that change the benefit you enter."),
+                ]
+              : r.lastsThroughLifeExpectancy
+                ? [
+                    book("pfauGuidebook", "Plans the order of withdrawals for a plan that already covers your horizon."),
+                    book("ssMadeSimple", "Checks whether your claiming age is the best one for your benefit."),
+                  ]
+                : [
+                    book("moneyLast", "Ways to stretch savings that run low, including delaying Social Security."),
+                    book("getWhatsYours", "Shows how a later claiming age raises the monthly benefit."),
+                  ]}
+          />
+        )}
       </div>
     </div>
   );
@@ -233,6 +262,7 @@ const S: Record<string, React.CSSProperties> = {
   stat: { display: "flex", flexDirection: "column", gap: 1 },
   statLabel: { fontSize: "0.78rem", color: "#666" },
   statValue: { fontSize: "1.12rem", fontWeight: 700, fontVariantNumeric: "tabular-nums" },
+  todayNote: { fontSize: "0.85rem", color: "#2A4A40", background: "#F1F8F5", border: "1px solid #DCECE6", borderRadius: 8, padding: "10px 12px", lineHeight: 1.5 },
   goodNote: { fontSize: "0.85rem", color: "#1f5d3f", background: "#E8F6EF", border: "1px solid #C5E6D6", borderRadius: 8, padding: "10px 12px", lineHeight: 1.5 },
   warnNote: { fontSize: "0.85rem", color: "#7a5b1e", background: "#FBF4E4", border: "1px solid #F0DEB4", borderRadius: 8, padding: "10px 12px", lineHeight: 1.5 },
 };

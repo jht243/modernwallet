@@ -11,6 +11,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
   {
     calculator: "mortgage",
     slug: "payoff-calculator",
+    updated: "2026-10-14",
     title: "Mortgage Payoff Calculator: See Your Early Payoff Date",
     metaDescription:
       "Use our mortgage payoff calculator to see when your loan ends and how much extra payments save you in interest. Free, fast, and based on 2026 rules.",
@@ -21,7 +22,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     introText:
       "A mortgage payoff calculator shows when you'll pay off your loan and how much interest you can save with extra payments. Enter your balance, rate, term, and any extra monthly amount in the calculator above to instantly see your new payoff date.\n\nThe biggest takeaway is that paying extra principal early in a 30-year loan saves far more than paying the same amount near the end. That's because interest is charged on your remaining balance, so reducing it sooner prevents more interest from ever accruing.",
     howItWorks:
-      "This calculator compares two paths: your scheduled payoff and a faster payoff with extra principal. It uses your balance, interest rate, and term to build an amortization schedule, then adds your extra payment to principal each month.\n\nEvery dollar of extra payment lowers your balance, so less interest is charged going forward. The CFPB explains that most of an early payment goes to interest, with the rest reducing principal and building equity. As your balance falls, more of each regular payment shifts to principal, which speeds up payoff. Always confirm with your servicer that extra money is applied to principal, not held or pushed to next month's bill.",
+      "This calculator compares two paths: your scheduled payoff and a faster payoff with extra principal. It uses your balance, interest rate, and term to build an amortization schedule, then adds your extra payment to principal each month.\n\nEvery dollar of extra payment lowers your balance, so less interest is charged going forward. The CFPB explains that most of an early payment goes to interest, with the rest reducing principal and building equity. As your balance falls, more of each regular payment shifts to principal, which speeds up payoff. Always confirm with your servicer that extra money is applied to principal, not held or pushed to next month's bill.\n\nIf you have a lump sum rather than a monthly extra, the [mortgage recast calculator](/mortgage-recast-calculator/) shows how much a recast lowers your payment.",
     commonMistakes: [
       "Not telling your servicer to apply extra money to principal. Mark each extra payment as 'principal only' or it may be held or counted as an early next-month payment.",
       "Assuming a prepayment penalty applies. Many mortgages have none, and per the CFPB penalties usually apply only if you pay off the whole loan within the first three to five years.",
@@ -85,7 +86,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     ],
     toolHeading: "Calculate your mortgage payoff",
     toolSubheading: "Add an extra monthly payment to see your new payoff date and interest saved.",
-    preset: { vehiclePrice: 300000, downPayment: 0, interestRatePct: 6.5, loanTermMonths: 360, extraMonthlyPayment: 200 },
+    preset: { vehiclePrice: 300000, downPayment: 0, interestRatePct: 6.5, loanTermMonths: 360, extraMonthlyPayment: 200, existingLoanOption: true },
     relatedSlugs: ["extra-payment-calculator", "refinance-calculator", "early-payoff-calculator"],
   },
 
@@ -219,6 +220,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
   {
     calculator: "mortgage",
     slug: "early-payoff-calculator",
+    updated: "2026-10-14",
     title: "Pay Off Mortgage Early Calculator: See Your Savings",
     metaDescription:
       "Use our pay off mortgage early calculator to see how extra payments cut years and interest. See a $250,000 example and decide if early payoff fits your goals.",
@@ -229,7 +231,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     introText:
       "A pay off mortgage early calculator shows you how extra monthly payments can shorten your loan and slash the total interest you pay. Enter your balance, rate, term, and extra payment in the calculator above to instantly see your new payoff date. The results can help you decide whether paying down your mortgage beats other uses for that money. Before you commit, use the calculator to compare a few extra-payment amounts.",
     howItWorks:
-      "Paying off a mortgage early works by sending extra money toward principal, which is the amount you still owe. Every dollar of extra principal removes future interest from your loan. The calculator above takes your loan details and adds your extra payment to each month's principal. It then rebuilds your amortization schedule to find a new, earlier payoff date.\n\nThe tool reports two numbers that matter most: total interest saved and months removed from your term. Compare those savings against your mortgage rate. If your rate is higher than the yield on a safe investment, prepaying often wins. If a safe investment or higher-rate debt beats your rate, that money may work harder elsewhere.",
+      "Paying off a mortgage early works by sending extra money toward principal, which is the amount you still owe. Every dollar of extra principal removes future interest from your loan. The calculator above takes your loan details and adds your extra payment to each month's principal. It then rebuilds your amortization schedule to find a new, earlier payoff date.\n\nThe tool reports two numbers that matter most: total interest saved and months removed from your term. Compare those savings against your mortgage rate. If your rate is higher than the yield on a safe investment, prepaying often wins. If a safe investment or higher-rate debt beats your rate, that money may work harder elsewhere.\n\nIf you have a lump sum rather than a monthly extra, the [mortgage recast calculator](/mortgage-recast-calculator/) shows how much a recast lowers your payment.",
     commonMistakes: [
       "Prepaying before building an emergency fund. The CFPB stresses keeping cash for surprise costs, because money sent to your mortgage is hard to get back.",
       "Ignoring higher-rate debt. Credit cards and other loans often cost far more than your mortgage, so pay those off first.",

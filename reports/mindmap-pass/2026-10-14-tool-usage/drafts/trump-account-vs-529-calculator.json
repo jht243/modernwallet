@@ -1,0 +1,41 @@
+{
+  "metaTitle": "Trump Account vs 529 Calculator: Which Leaves More at 18",
+  "metaDescription": "Free Trump Account vs 529 calculator. Enter your child's age, yearly savings and tax rate to see which account leaves more after tax at 18.",
+  "introText": "Yes, a child can have both a Trump Account and a 529. The account that should get this year's money depends on whether the money will pay for college. For college, the 529 usually leaves more because qualified education withdrawals are free of federal income tax, while the Trump Account taxes the seed and the growth. If the money is cashed out at 18 for something else, the Trump Account can leave more. Enter your child's age, yearly savings, expected return and tax rate in the Trump Account vs 529 calculator below to see which account leaves more for your family.\n\nTake a newborn who gets the $1,000 seed, with $2,400 a year going in at a 7% return. The money pays for college, and the tax rate on the withdrawal is 12%. The 529 reaches $86,144.21 at 18 and owes no tax. The Trump Account reaches $89,656.74, but $5,574.81 of tax leaves $84,081.94. The 529 comes out $2,062.27 ahead.",
+  "howItWorks": "The calculator puts the same yearly money into both accounts, spreads it evenly by month, and compounds it monthly at the same return until age 18. Trump Account family contributions are after-tax money, so they come out untaxed, while the seed and the growth are taxed at your withdrawal rate. A 529 spent on qualified education owes no federal income tax, so in the college example it leaves $86,144.21 against $84,081.94 for the Trump Account. The 10% additional tax on early Trump Account withdrawals does not apply here, because qualified higher-education costs are an exception.\n\nWhen the money is cashed out at 18 for something other than college, the Trump Account comes out ahead in the example. The difference comes from the $1,000 seed. Both accounts return family contributions untaxed and tax the growth at your rate plus a 10% additional tax. Only the Trump Account also holds the seed and the seed's growth. The Trump Account owes $5,574.81 of income tax plus $4,645.67 of additional tax. The 529 taxes its earnings at your rate plus a 10% additional tax on those earnings, which comes to $5,153.30 plus $4,294.42. That leaves $79,436.26 in the Trump Account and $76,696.48 in the 529, a gap of $2,739.78. Without the seed, and at $5,000 a year or less, both accounts leave the same amount for a non-college use.\n\nA Trump Account takes at most $5,000 a year from all private sources combined, and an employer may give up to $2,500 of that. A 529 has no federal yearly contribution limit, and the calculator shows a warning when your yearly amount goes above the Trump Account cap. At $6,000 a year from birth with the seed, the Trump Account is held to $5,000 and reaches $182,979.63. The 529 takes the full amount and reaches $215,360.51.\n\nThe $1,000 federal seed goes to U.S.-citizen children with a Social Security number. The child must be born between January 1, 2025 and December 31, 2028. Because a child can have both accounts, a family can open the Trump Account to collect the seed and still save for college in a 529. To project one account on its own, use the [Trump Account calculator](/trump-account/) or the [529 savings calculator](/529-savings-calculator/). If the money is for college only, the 529 savings calculator is the simpler one to use.\n\nThe return you enter is a placeholder for comparison and does not forecast markets. State tax breaks on 529 contributions and financial aid are left out. The calculator cashes both accounts out at 18, while a Trump Account can stay invested after 18 under traditional individual retirement account (IRA) rules. The result can flip on whether your child goes to college, the tax rate at withdrawal, and yearly savings above $5,000. For the full rules side by side, read the [Trump Account vs 529 comparison](/compare/trump-account-vs-529/).",
+  "faqs": [
+    {
+      "question": "Can you have both a Trump Account and a 529 account?",
+      "answer": "Yes, a child can have both a Trump Account and a 529. A family can open the Trump Account to collect the $1,000 federal seed and still save for college in a 529. Run your numbers in the calculator above to see which account should get this year's money."
+    },
+    {
+      "question": "Which leaves more for college, a Trump Account or a 529?",
+      "answer": "The 529 usually leaves more for college, because withdrawals spent on qualified education costs are free of federal income tax. The Trump Account taxes the seed and the growth at your rate. Take a newborn with $2,400 a year at 7% and a 12% tax rate. The 529 leaves $2,062.27 more after tax."
+    },
+    {
+      "question": "When does a Trump Account come out ahead of a 529?",
+      "answer": "A Trump Account can come out ahead when the money is cashed out at 18 for something other than college. The $1,000 seed makes the difference, because both accounts return family contributions untaxed and tax the growth plus a 10% additional tax. In the newborn example at $2,400 a year, the Trump Account leaves $79,436.26 and the 529 leaves $76,696.48."
+    },
+    {
+      "question": "How much is $100 a month in a 529 for 18 years?",
+      "answer": "Saving $100 a month in a 529 from birth reaches $43,072.10 at age 18. That figure assumes a 7% return, which is a placeholder for comparison. Enter your own amount and return in the [529 savings calculator](/529-savings-calculator/)."
+    },
+    {
+      "question": "How are Trump Account withdrawals taxed?",
+      "answer": "Family contributions come out untaxed because they went in as after-tax money. The seed, employer money and growth are taxed as ordinary income when withdrawn. A 10% additional tax applies to withdrawals before age 59½ unless an exception applies, and qualified higher-education costs are an exception."
+    },
+    {
+      "question": "What happens to 529 money that is not spent on school?",
+      "answer": "A non-qualified 529 withdrawal taxes the earnings as income plus a 10% additional tax on the earnings. In the newborn example cashed out at 18, the 529 owes $5,153.30 of tax plus $4,294.42 of additional tax. Pick the non-college option in the calculator above to see your own figure."
+    },
+    {
+      "question": "Is there a limit on how much I can put in each account?",
+      "answer": "A Trump Account takes at most $5,000 a year from all private sources combined, and an employer may give up to $2,500 of that. A 529 has no federal yearly contribution limit. The calculator shows a warning when your yearly amount goes above the Trump Account cap."
+    },
+    {
+      "question": "Who gets the $1,000 Trump Account seed?",
+      "answer": "The $1,000 federal seed goes to U.S.-citizen children who have a Social Security number. The child must be born between January 1, 2025 and December 31, 2028. For how the account works beyond the seed, read [what is a Trump Account](/guides/trump-accounts/)."
+    }
+  ],
+  "slug": "trump-account-vs-529-calculator"
+}

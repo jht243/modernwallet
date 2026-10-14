@@ -1,0 +1,41 @@
+{
+  "metaTitle": "HYSA vs CD Calculator: Which Earns More on Your Deposit",
+  "metaDescription": "Free HYSA vs CD calculator: compare a high-yield savings account (HYSA) with a certificate of deposit (CD), see which earns more, and test a rate drop.",
+  "introText": "The account with the higher annual percentage yield (APY) earns more, as long as the savings rate holds for your term. This HYSA vs CD calculator compares a certificate of deposit (CD) with a high-yield savings account (HYSA) on the same deposit and term, then shows the savings rate that would tie them. The starting APYs are placeholders, so enter your deposit, your term in months and the rates on the CD and savings account you are weighing.\n\nTake a $25,000 deposit held for 12 months. The CD pays 4.25% APY and the HYSA pays 4.00% APY. The CD earns $1,062.50 and the HYSA earns $1,000.00, so the CD comes out $62.50 ahead if both rates hold.",
+  "howItWorks": "This calculator grows each deposit from its APY and compares the interest each account earns over your term. APY already includes compounding, so the deposit grows by (1 + APY) each year. The calculator applies that monthly as (1 + APY)^(1/12). On the example deposit, that math gives the CD $1,062.50 of interest against $1,000.00 for the HYSA, a $62.50 lead.\n\nA CD rate stays fixed for the term, but a HYSA rate can change at any time. The calculator takes an optional later HYSA APY and the month it starts. If the example HYSA drops to 3.50% APY after month 6, its interest falls to $937.42. The CD's lead grows to $125.08. To tie the CD, the HYSA would need about 4.50% APY for months 7 to 12.\n\nAn early-withdrawal penalty is a number of months of interest at the CD rate on the deposit. Each bank sets its own penalty, so copy the figure from the CD's terms. Break the example CD at month 6 with a 3-month interest penalty, and it is worth $25,525.72 before the penalty. The $260.59 penalty leaves $25,265.14 in cash. By month 6 the HYSA would hold $25,495.10 with no penalty, which is $229.96 more than the CD pays out.\n\nA CD fits money with a fixed date that you will not touch until it matures. For that case, see the [CD calculator](/cd-calculator/). The answer changes in two cases: the HYSA rate falls below the tie rate, which favors the CD, or you need the money before the CD matures, which can favor the HYSA.\n\nThe calculator leaves out taxes on interest, fees and any deposits after day one. If you will add money every month, use the [high-yield savings calculator](/investing/high-yield-savings-calculator/) instead. [Federal Deposit Insurance Corporation (FDIC)](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance) insurance covers deposits up to $250,000 per depositor, per insured bank, per ownership category, for both CDs and savings accounts at FDIC-insured banks. For the tradeoffs beyond the interest math, read the [HYSA vs CD comparison](/compare/hysa-vs-cd/).",
+  "faqs": [
+    {
+      "question": "Is it better to put my money in a CD or a high-yield savings account?",
+      "answer": "The account with the higher APY earns more, as long as the HYSA rate holds and you keep the CD to maturity. On a $25,000 deposit for 12 months, the CD earns $62.50 more. That assumes a CD at 4.25% APY and a HYSA at 4.00% APY that both hold. If you may need the money before the term ends, the HYSA avoids an early-withdrawal penalty."
+    },
+    {
+      "question": "How much will a $10,000 CD make in one year?",
+      "answer": "At 4.25% APY, a $10,000 CD makes $425 of interest. APY is one year's interest on the deposit, so that figure assumes you hold the CD for the full year. A different APY changes the result, so enter your CD's rate in the calculator above."
+    },
+    {
+      "question": "How much will $10,000 make in a high-yield savings account?",
+      "answer": "At 4.00% APY, $10,000 in a high-yield savings account makes $400 of interest. That figure covers one year, because APY is one year's interest on the deposit. A HYSA rate can change at any time, so the result moves with the APY the bank pays."
+    },
+    {
+      "question": "What happens if my HYSA rate drops?",
+      "answer": "The HYSA earns less, and a CD with a fixed rate pulls further ahead. In the example, a drop to 3.50% APY after month 6 cuts HYSA interest to $937.42. The CD then earns $125.08 more. The HYSA would need about 4.50% APY for months 7 to 12 to tie the CD."
+    },
+    {
+      "question": "What does breaking a CD early cost?",
+      "answer": "Breaking a CD early costs the penalty in the CD's terms, counted as months of interest at the CD rate on the deposit. The example CD, broken at month 6 with a 3-month penalty, pays out $25,265.14. The penalty is $260.59, and the HYSA would hold $25,495.10 by then with no penalty. Each bank sets its own penalty, so copy it from your CD's terms into the calculator."
+    },
+    {
+      "question": "Is it smart to put $100,000 in a CD?",
+      "answer": "It depends on whether the money can stay put for the full term. If you might need part of it before the CD matures, the early-withdrawal penalty can leave you with less than a HYSA would hold. FDIC insurance covers deposits up to $250,000 per depositor, per insured bank, per ownership category. Run the amount, term and both APYs through the calculator above to see which earns more."
+    },
+    {
+      "question": "Are CDs and high-yield savings accounts FDIC insured?",
+      "answer": "Yes, when the bank is FDIC-insured. Federal Deposit Insurance Corporation (FDIC) insurance covers deposits up to $250,000 per depositor, per insured bank, per ownership category. Both CDs and savings accounts at FDIC-insured banks are covered, so the same limit applies to either account."
+    },
+    {
+      "question": "Which is better for an emergency fund?",
+      "answer": "A high-yield savings account fits an emergency fund better, because you may need the money before a CD term ends. Size the fund first with the [emergency fund calculator](/emergency-fund-calculator/), then compare rates in our list of [best high-yield savings accounts](/roundup/best-high-yield-savings-accounts/)."
+    }
+  ],
+  "slug": "hysa-vs-cd-calculator"
+}

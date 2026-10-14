@@ -1,0 +1,122 @@
+coverage_lookup: 3 candidate(s) vs 732 repo pages / 730 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 632 past-chart lines
+
+### /hysa-vs-cd-calculator  — row 13 · create new content
+keyword: hysa vs cd calculator; cd vs high yield savings calculator
+reader question (new page intent): "Is it better to put my money in a CD or a high-yield savings account?" [PAA 3/6 which-earns-more; ac 1/1]
+lookup terms: hysa cd high yield saving   format cues: calculator vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /hysa-vs-cd-calculator  [EXACT SLUG · in sitemap · (sitemap only) · topic match 0.4 on hysa cd · same format: calculator vs]
+    title: HYSA vs CD Calculator
+- /investing/high-yield-savings-calculator  [PARENT PAGE · in sitemap · src/data/spokes-investing.ts · topic match 0.8 on hysa high yield saving · same format: calculator]
+    title: High Yield Savings (HYSA) Calculator: APY Earnings
+    desc:  Use this high yield savings calculator to see how much your money earns over time at a given APY, with monthly deposits and compounding.
+- /compare/trump-account-vs-savings-account  [in sitemap · src/data/comparisons.ts · topic match 0.8 on hysa high yield saving · same format: vs]
+    title: Trump Account vs High-Yield Savings Account (HYSA)
+    desc:  Trump Account vs a high-yield savings account (HYSA) for kids: invested growth and a $1,000 seed vs FDIC-insured, liquid cash. See which fits your goals.
+- /compare/hysa-vs-money-market  [in sitemap · (sitemap only) · topic match 0.8 on hysa high yield saving · same format: vs]
+    title: HYSA vs Money Market Account: Which Earns More Interest?
+- /compare/custodial-roth-ira-vs-hysa  [in sitemap · src/data/comparisons.ts · topic match 0.8 on hysa high yield saving · same format: vs]
+    title: Custodial Roth IRA vs High-Yield Savings Account
+    desc:  Compare a custodial Roth IRA and a high-yield savings account (HYSA) on taxes, withdrawal access, and rules to help you choose the right account.
+- /guides/hysa-vs-roth-ira-vs-brokerage-account  [in sitemap · src/data/guides.ts · topic match 0.8 on hysa high yield saving · same format: vs]
+    title: High Yield Savings Account vs Roth IRA vs Brokerage
+    desc:  Deciding between a high yield savings account vs Roth IRA vs taxable brokerage? Compare 2026 contribution limits, tax treatment, and liquidity rules.
+- /roundup/best-high-yield-savings-accounts  [in sitemap · src/data/roundups.ts · topic match 0.6 on high yield saving]
+    title: Best High-Yield Savings Accounts of 2026
+    desc:  Compare the best high-yield savings accounts of 2026 by APY range, fees, and sign-up bonuses — no fabricated rates, just what to verify.
+- /guides/international-high-yield-savings-accounts  [in sitemap · src/data/guides.ts · topic match 0.6 on high yield saving]
+    title: International High-Yield Savings Accounts: What to Know
+    desc:  Our high-yield savings guides cover FDIC-insured U.S. accounts. International savers: find your own country's official deposit protection scheme here.
+- /compare/hysa-vs-cd  [PARENT PAGE · in sitemap · src/data/comparisons.ts · topic match 0.4 on hysa cd · same format: vs]
+    title: HYSA vs CD: Which One Earns More Interest in 2024?
+    desc:  High-yield savings account vs CD compared: APY, liquidity, flexibility, and which account earns more given today's rates.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-14-tool-usage.md [table] | 4 | Lens 1 (tool usage, investing — 72 people, top tool). Persona: renter moving $25,000 to a 4.1% APY HYSA, $500/mo, 5 yrs. Result "$8,911 interest earned" — quote: "my bank sends a 1099-INT and I pay tax on that, rig
+- 2026-10-14-tool-usage.md [table] | 9 | Lens C (monetize, investing). Persona has an interest number; next job = automate the savings / decide what to do beyond an emergency fund. Verdict fit — books. Pick types: savings-system book, money-mindset book, 
+- 2026-10-14-tool-usage.md [table] | 13 | Lens 1/2 (next tool after investing — the HYSA persona deciding whether to lock part of the fund in a CD; queued as a spec 2026-10-11, built first this week per STEP 2). Cluster: `hysa vs cd calculator` est. 500–5
+- 2026-10-14-tool-usage.md [table] | HYSA vs CD (personal answer) | hysa vs cd calculator; cd vs high yield savings calculator; Is it better to put my money in a CD or Hysa? (PAA) | intent mismatch — the site has a general comparison article, no calculato
+- 2026-10-14-trend-lane-c.md [table] | Lens 2 (adjacent to top-20 query "money market account wharton", 1 impr, and the site's money-market cluster). Cluster: `money market account vs money market fund` 720/mo KD 6 (DataForSEO measured, Autocomplete corrobo
+- 2026-10-14-trend-lane-c.md [exclusions] - money market account vs savings account (1,600/mo KD 0) — DROP: same reader goal as /compare/hysa-vs-money-market (deposit account vs deposit account) and /guides/is-a-money-market-account-worth-it.
+Commits naming the topic: none
+Same run overlap: none
+
+### /trump-account-vs-529-calculator  — row 14 · create new content
+keyword: trump account vs 529 calculator
+reader question (new page intent): "Can you have both a Trump Account and a 529, and which should get this year's money?" [PAA 1/6 both-accounts; 2/6 529-amount; ac 0 — verb-only for "calculator"]
+lookup terms: trump account v529   format cues: calculator vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /trump-account-vs-529-calculator  [EXACT SLUG · in sitemap · (sitemap only) · topic match 1.0 on trump account v529 · same format: calculator vs]
+    title: Trump Account vs 529 Calculator
+- /compare/trump-account-vs-529  [in sitemap · src/data/comparisons.ts · topic match 1.0 on trump account v529 · same format: vs]
+    title: Trump Account vs 529: What's the Difference?
+    desc:  Trump Account vs 529 (sometimes called a 530A account): one is tax-deferred and usable for anything at 18, the other is tax-free but school-only. Compare.
+- /compare/trump-account-vs-529-vs-utma  [in sitemap · src/data/comparisons.ts · topic match 1.0 on trump account v529 · same format: vs]
+    title: Trump Account vs 529 vs UTMA: 3-Way Compared
+    desc:  Trump Account vs 529 vs UTMA compared: the free $1,000 seed, tax-free college savings, and flexible custodial money. See which account fits your kid.
+- /trump-account  [in sitemap · (sitemap only) · topic match 0.67 on trump account · same format: calculator]
+    title: Trump Account Calculator
+- /guides/trump-accounts  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on trump account]
+    title: What Is a Trump Account? Rules & How to Open
+    desc:  What is a Trump Account? A tax-advantaged account for kids with a $1,000 federal seed. See eligibility, contribution limits, taxes, and how to open one.
+- /guides/trump-account-worth-it  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on trump account]
+    title: Are Trump Accounts Worth It? An Honest Look
+    desc:  Are Trump Accounts worth it? An honest, balanced guide to the free $1,000 seed, the tax and lock-up catches, and whether to open one for your child.
+- /guides/trump-account-alternatives  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on trump account]
+    title: Trump Account Alternatives: 6 Options by Goal
+    desc:  Alternatives to Trump Accounts: 529, custodial Roth IRA, UTMA, Coverdell, savings, I bonds. See which fits your goal, plus who else can fund an account.
+- /compare/trump-account-trustees  [in sitemap · src/data/comparisons.ts · topic match 0.67 on trump account · same format: vs]
+    title: Trump Account Trustees: Robinhood vs Fidelity, Vanguard
+    desc:  Compare Trump Account trustees: Robinhood holds initial accounts, while Fidelity, Vanguard, and Schwab await Treasury rules. Check current rollover status.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-14-tool-usage.cannibalization.md [table] | /trump-account-vs-529-calculator/ (new) vs /compare/trump-account-vs-529 | trump account vs 529 | no GSC access | DO NOT consolidate — rules article vs projection calculator. Link both ways. |
+- 2026-10-14-tool-usage.md [table] | 12 | Lens C (monetize catch-up, trump-account — 21 people, no monetize verdict yet). Persona: new parent with a $107,603-at-18 result; next job = teach the child about money and invest it sensibly. Verdict fit — books.
+- 2026-10-14-tool-usage.md [table] | 14 | Lens 1/2 (next tool after trump-account — parent deciding where this year's money goes; queued as a spec 2026-10-11). `trump account vs 529 calculator` est. 0–25/mo (estimate, NOT measured) — demand inferred: a re
+- 2026-10-14-tool-usage.md [table] | Trump Account vs 529 (personal answer) | trump account vs 529 calculator; Can you have both a Trump Account and a 529 account? (PAA) | intent mismatch — rules articles only; demand inferred from real seed-tool users | 
+- 2026-10-14-tool-usage.md [exclusions] - **Lens 3 (comparison / alternatives / pricing):** the brief's entities are our own free calculators and federal programs/accounts (Social Security, Trump Accounts, 529s, IRS mileage rates). The two account-vs-account r
+- 2026-10-14-trend-lane-c.md [exclusions] - are trump accounts (for kids) a scam / trump accounts are a scam / is the trump account a scam — DROP: /guides/trump-account-worth-it/ (carries an explicit "scam" FAQ) and trump-account-app/eligibility siblings; trends
+Commits naming the topic: none
+Same run overlap: none
+
+### /mortgage-recast-calculator  — row 15 · create new content
+keyword: mortgage recast calculator
+reader question (new page intent): "How much will my payment drop if I recast my mortgage?" [PAA 2/6 recast pros/cons; 2/6 pay-off-faster; ac 1/1]
+lookup terms: mortgage recast   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /mortgage-recast-calculator  [EXACT SLUG · in sitemap · (sitemap only) · topic match 1.0 on mortgage recast · same format: calculator]
+    title: Mortgage Recast Calculator
+- /mortgage  [in sitemap · (sitemap only) · topic match 0.5 on mortgage · same format: calculator]
+    title: Mortgage Calculator
+- /guides/commercial-mortgage-calculator-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage · same format: calculator]
+    title: Commercial Mortgage Calculator: Payment & Balloon
+    desc:  Estimate a commercial mortgage payment, the DSCR lenders require, and the balloon balance due at the end of a typical 10-year loan term.
+- /mortgage/piti-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on mortgage · same format: calculator]
+    title: PITI Mortgage Calculator: All-In Monthly Payment
+    desc:  Calculate your full PITI mortgage payment — principal, interest, property taxes, homeowner's insurance, and PMI — to see what you truly owe each month.
+- /mortgage/affordability-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on mortgage · same format: calculator]
+    title: Mortgage Affordability Calculator: How Much House?
+    desc:  Find out how much house you can afford based on your income, debts, and down payment. Uses the 28/36 DTI rules lenders actually apply.
+- /commercial-mortgage-calculator  [in sitemap · (sitemap only) · topic match 0.5 on mortgage · same format: calculator]
+    title: Commercial Mortgage Calculator
+- /mortgage/payoff-calculator  [in sitemap · (sitemap only) · topic match 0.5 on mortgage · same format: calculator]
+    title: Mortgage Payoff Calculator
+- /mortgage/refinance-calculator  [in sitemap · (sitemap only) · topic match 0.5 on mortgage · same format: calculator]
+    title: Mortgage Refinance Calculator
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-14-tool-usage.md [table] | 7 | Lens C (monetize, mortgage). Persona has a payoff date + interest-saved number; next job = decide prepaying vs investing (or, for a new purchase, the buying process). Verdict fit — YMYL → books. Pick types: debt-pa
+- 2026-10-14-tool-usage.md [table] | 15 | Lens 2 (next tool after mortgage — the payoff persona with a lump sum asks recast vs extra payments). `mortgage recast calculator` 18,100/mo KD 8 (dataforseo measured, Autocomplete corroborated). lookup: no recast
+- 2026-10-14-tool-usage.md [table] | 16 | Lens 1 (tool usage — found walking the mortgage persona, row 1, then confirmed by a browser sweep of every live calculator on the local build): typing "6.5" into a rate/percent field shows 65 on 15 more calculator
+- 2026-10-14-tool-usage.md [table] | Mortgage recast | mortgage recast calculator; What are the downsides of recasting a mortgage? (PAA); What are the benefits of recasting? (PAA) | coverage gap — recast appears only as FAQ definitions, no calculator | pa
+- 2026-10-14-tool-usage.md [table] | Existing-loan payoff | mortgage payoff calculator with remaining balance; remaining mortgage balance calculator; What happens if I pay an extra $200 a month on my 30 year mortgage? (PAA) | intent mismatch — payoff tool
+- 2026-10-14-trend-lane-c.md [exclusions] - best home loan lenders / best mortgage lenders today / best company for mortgage loan / best home mortgage lenders / best lender for home loan — DROP: /roundup/best-mortgage-lenders/ is the dedicated page; ledger 2026-
+Commits naming the topic: none
+Same run overlap: none
+

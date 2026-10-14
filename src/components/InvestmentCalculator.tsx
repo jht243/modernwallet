@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { computeInvestment, type InvestmentInput } from "../lib/investment";
 import { useDraft } from "./calc-ui";
 import { fmtUSD, fmtPct } from "../lib/format";
+import ToolPicks, { book } from "./ToolPicks";
 
 // InvestmentIQ island. Default "growth" view (future value); "goal" view (monthly needed to hit a
 // target) when initialData.goalMode is set. Optional compounding-frequency control for compound
@@ -12,6 +13,9 @@ interface Props {
   heading?: string;
   subheading?: string;
 }
+
+// Federal ordinary-income brackets (IRS). Savings interest is taxed as ordinary income (IRS Topic 403).
+const TAX_BRACKETS = [10, 12, 22, 24, 32, 35, 37];
 
 const FREQ = [
   { label: "Annually", value: 1 },
@@ -26,6 +30,8 @@ export default function InvestmentCalculator({ initialData, heading, subheading 
   // savingsMode (HYSA page): savings wording (APY, interest earned) and an optional second APY to compare against.
   const savingsMode = Boolean(initialData?.savingsMode);
   const [compareApy, setCompareApy] = useState(0);
+  // Optional federal bracket (HYSA page): shows what is left of the interest after federal income tax.
+  const [taxBracket, setTaxBracket] = useState(0);
   const [v, setV] = useState<InvestmentInput>({
     currentBalance: n(initialData?.currentBalance, goalMode ? 20000 : 10000),
     monthlyContribution: n(initialData?.monthlyContribution, goalMode ? 0 : 500),
@@ -67,6 +73,14 @@ export default function InvestmentCalculator({ initialData, heading, subheading 
           {savingsMode && (
             <Field label="Compare: your current account's APY (optional)"><Pct v={compareApy} on={setCompareApy} /></Field>
           )}
+          {savingsMode && (
+            <Field label="Federal tax bracket (optional)">
+              <select style={S.input} value={taxBracket} onChange={(e) => setTaxBracket(Number(e.target.value))} aria-label="Federal tax bracket">
+                <option value={0}>Not set</option>
+                {TAX_BRACKETS.map((b) => <option key={b} value={b}>{b}%</option>)}
+              </select>
+            </Field>
+          )}
           {showFrequency && (
             <Field label="Compounding frequency">
               <select style={S.input} value={v.compoundsPerYear} onChange={(e) => set({ compoundsPerYear: Number(e.target.value) })}>
@@ -106,6 +120,11 @@ export default function InvestmentCalculator({ initialData, heading, subheading 
               </div>
             </div>
           )}
+          {savingsMode && taxBracket > 0 && r.totalGrowth != null && (
+            <div style={S.note}>
+              After federal income tax at {taxBracket}%: about <strong>{fmtUSD(r.totalGrowth * (1 - taxBracket / 100))}</strong> of the {fmtUSD(r.totalGrowth)} interest is yours to keep. Savings interest is taxed as ordinary income each year (<a href="https://www.irs.gov/taxtopics/tc403" target="_blank" rel="noopener noreferrer">IRS Topic 403</a>); state tax may apply too.
+            </div>
+          )}
           {cmp && cmp.futureValue != null && r.futureValue != null && (
             <div style={S.note}>
               At {v.annualReturnPct}% you earn <strong>{fmtUSD(r.futureValue - cmp.futureValue)}</strong> more interest over {v.years} years than at your current {compareApy}% ({fmtUSD(cmp.totalGrowth)} interest).
@@ -118,6 +137,22 @@ export default function InvestmentCalculator({ initialData, heading, subheading 
             <button style={S.toggle} type="button" onClick={() => setShowSchedule((x) => !x)}>
               {showSchedule ? "Hide" : "Show"} year-by-year growth
             </button>
+          )}
+          {savingsMode && r.futureValue != null && r.futureValue > 0 && (
+            <ToolPicks
+              tool="investing"
+              heading={r.futureValue < 50000 ? "Further reading on building your savings" : "Further reading on money beyond an emergency fund"}
+              picks={r.futureValue < 50000
+                ? [
+                    book("iwtytbr", "Sets up automatic transfers so the deposits in this projection happen without effort."),
+                    book("ymoyl", "Helps you decide what this savings balance is for before you spend it."),
+                  ]
+                : [
+                    book("bogleheads", "Explains where money past a 3 to 6 month cushion can go next."),
+                    book("littleBook", "Makes the case for low-cost index funds for long-horizon money."),
+                    book("ymoyl", "Helps you decide what this savings balance is for before you spend it."),
+                  ]}
+            />
           )}
         </div>
       </div>

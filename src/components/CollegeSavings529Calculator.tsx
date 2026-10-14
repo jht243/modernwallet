@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { useDraft } from "./calc-ui";
 import { computeCollegeSavings, type CollegeSavingsInput } from "../lib/college-savings";
 import { fmtUSD } from "../lib/format";
 
@@ -148,7 +149,9 @@ function Money({ v, on }: { v: number; on: (n: number) => void }) {
   );
 }
 function Pct({ v, on }: { v: number; on: (n: number) => void }) {
-  return <div style={S.suffixWrap}><input style={S.input} inputMode="decimal" value={v} onChange={(e) => on(parse(e.target.value))} /><span style={S.suffix}>%</span></div>;
+  // useDraft keeps a typed "6." while the reader enters "6.5" (re-rendering the parsed number dropped the point).
+  const d = useDraft(v, on);
+  return <div style={S.suffixWrap}><input style={S.input} inputMode="decimal" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} /><span style={S.suffix}>%</span></div>;
 }
 function Plain({ v, on, max }: { v: number; on: (n: number) => void; max?: number }) {
   return <input style={S.input} inputMode="numeric" value={v} onChange={(e) => on(clamp(parse(e.target.value), max))} />;

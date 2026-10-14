@@ -8,6 +8,7 @@ import {
 } from "../lib/trump-account";
 import { useDraft } from "./calc-ui";
 import { fmtUSD } from "../lib/format";
+import ToolPicks, { book } from "./ToolPicks";
 
 // Trump Account calculator island. Projects the $1,000 federal seed + capped annual contributions
 // to the child's 18th birthday, tax-deferred at a chosen return. Enforces the $5,000 aggregate /
@@ -105,6 +106,22 @@ export default function TrumpAccountCalculator({ initialData, heading, subheadin
             Estimate only. Assumes one fixed return compounded monthly; real S&P 500 returns vary year to year.
             Trump Account funds must be invested in a U.S.-equity index fund and grow tax-deferred until 18.
           </div>
+          {!matured && fv > 0 && (
+            <ToolPicks
+              tool="trump-account"
+              heading="Further reading for the parent of a future account holder"
+              picks={v.childCurrentAge < 10
+                ? [
+                    book("kidMoneyGenius", "Age-by-age money lessons, so your child is ready to manage this balance at 18."),
+                    book("littleBook", "The index-fund logic behind the U.S.-equity fund this account must hold."),
+                    book("moneyForCouples", "Helps two parents agree on how much to put in each year."),
+                  ]
+                : [
+                    book("kidMoneyGenius", "Your child will control this money soon. Its teen chapters cover what to teach now."),
+                    book("bogleheads", "A plain guide to the index investing your child inherits with this account."),
+                  ]}
+            />
+          )}
         </div>
       </div>
 

@@ -733,7 +733,7 @@ export const CALCULATORS: CalculatorDef[] = [
 
   {
     id: "trump-account",
-    updated: "2026-10-11",
+    updated: "2026-10-14",
     islandId: "trump-account",
     label: "Trump Account",
     navOrder: 13,
@@ -1411,7 +1411,7 @@ export const CALCULATORS: CalculatorDef[] = [
           "Certificates of deposit and Treasury bills differ in their structure, rules, and access terms. Review current offers across both options to see which matches your holding timeframe. You can read our detailed side-by-side comparison in [CD vs Treasury bills](/compare/cd-vs-treasury-bill/).",
       },
     ],
-    updated: "2026-10-07",
+    updated: "2026-10-14",
     defaultPreset: { deposit: 10000, apyPct: 4.5, termMonths: 12, taxRatePct: 22, penaltyMonths: 3, withdrawMonth: 6 },
   },
   // Emergency fund calculator — autocomplete-pass (2026-10-07): target from essential monthly bills times a chosen number of months, the gap, and time to goal. The months to cover is a user input, not a recommendation. Prose generated via scripts/lib/content_gen.py (meta beside the draft in
@@ -2420,6 +2420,93 @@ export const CALCULATORS: CalculatorDef[] = [
     ],
     updated: "2026-10-14",
     defaultPreset: {"amount": 25000, "aprPct": 8, "years": 5, "extraMonthly": 0},
+  },
+  // HYSA vs CD calculator — tool-usage pass (2026-10-14). Prose generated via scripts/lib/content_gen.py
+  // (meta beside the draft in reports/mindmap-pass/2026-10-14-tool-usage/drafts/).
+  {
+    id: "hysa-vs-cd-calculator",
+    islandId: "hysa-vs-cd-calculator",
+    label: "HYSA vs CD",
+    navOrder: 53,
+    metaTitle: "HYSA vs CD Calculator: Which Earns More on Your Deposit",
+    metaDescription:
+      "Free HYSA vs CD calculator: compare a high-yield savings account (HYSA) with a certificate of deposit (CD), see which earns more, and test a rate drop.",
+    targetKeyword: "hysa vs cd calculator",
+    h1: "HYSA vs CD Calculator",
+    introText:
+      "The account with the higher annual percentage yield (APY) earns more, as long as the savings rate holds for your term. This HYSA vs CD calculator compares a certificate of deposit (CD) with a high-yield savings account (HYSA) on the same deposit and term, then shows the savings rate that would tie them. The starting APYs are placeholders, so enter your deposit, your term in months and the rates on the CD and savings account you are weighing.\n\nTake a $25,000 deposit held for 12 months. The CD pays 4.25% APY and the HYSA pays 4.00% APY. The CD earns $1,062.50 and the HYSA earns $1,000.00, so the CD comes out $62.50 ahead if both rates hold.",
+    howItWorks:
+      "This calculator grows each deposit from its APY and compares the interest each account earns over your term. APY already includes compounding, so the deposit grows by (1 + APY) each year. The calculator applies that monthly as (1 + APY)^(1/12). On the example deposit, that math gives the CD $1,062.50 of interest against $1,000.00 for the HYSA, a $62.50 lead.\n\nA CD rate stays fixed for the term, but a HYSA rate can change at any time. The calculator takes an optional later HYSA APY and the month it starts. If the example HYSA drops to 3.50% APY after month 6, its interest falls to $937.42. The CD's lead grows to $125.08. To tie the CD, the HYSA would need about 4.50% APY for months 7 to 12.\n\nAn early-withdrawal penalty is a number of months of interest at the CD rate on the deposit. Each bank sets its own penalty, so copy the figure from the CD's terms. Break the example CD at month 6 with a 3-month interest penalty, and it is worth $25,525.72 before the penalty. The $260.59 penalty leaves $25,265.14 in cash. By month 6 the HYSA would hold $25,495.10 with no penalty, which is $229.96 more than the CD pays out.\n\nA CD fits money with a fixed date that you will not touch until it matures. For that case, see the [CD calculator](/cd-calculator/). The answer changes in two cases: the HYSA rate falls below the tie rate, which favors the CD, or you need the money before the CD matures, which can favor the HYSA.\n\nThe calculator leaves out taxes on interest, fees and any deposits after day one. If you will add money every month, use the [high-yield savings calculator](/investing/high-yield-savings-calculator/) instead. [Federal Deposit Insurance Corporation (FDIC)](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance) insurance covers deposits up to $250,000 per depositor, per insured bank, per ownership category, for both CDs and savings accounts at FDIC-insured banks. For the tradeoffs beyond the interest math, read the [HYSA vs CD comparison](/compare/hysa-vs-cd/).",
+    faqs: [
+      { question: "Is it better to put my money in a CD or a high-yield savings account?", answer: "The account with the higher APY earns more, as long as the HYSA rate holds and you keep the CD to maturity. On a $25,000 deposit for 12 months, the CD earns $62.50 more. That assumes a CD at 4.25% APY and a HYSA at 4.00% APY that both hold. If you may need the money before the term ends, the HYSA avoids an early-withdrawal penalty." },
+      { question: "How much will a $10,000 CD make in one year?", answer: "At 4.25% APY, a $10,000 CD makes $425 of interest. APY is one year's interest on the deposit, so that figure assumes you hold the CD for the full year. A different APY changes the result, so enter your CD's rate in the calculator above." },
+      { question: "How much will $10,000 make in a high-yield savings account?", answer: "At 4.00% APY, $10,000 in a high-yield savings account makes $400 of interest. That figure covers one year, because APY is one year's interest on the deposit. A HYSA rate can change at any time, so the result moves with the APY the bank pays." },
+      { question: "What happens if my HYSA rate drops?", answer: "The HYSA earns less, and a CD with a fixed rate pulls further ahead. In the example, a drop to 3.50% APY after month 6 cuts HYSA interest to $937.42. The CD then earns $125.08 more. The HYSA would need about 4.50% APY for months 7 to 12 to tie the CD." },
+      { question: "What does breaking a CD early cost?", answer: "Breaking a CD early costs the penalty in the CD's terms, counted as months of interest at the CD rate on the deposit. The example CD, broken at month 6 with a 3-month penalty, pays out $25,265.14. The penalty is $260.59, and the HYSA would hold $25,495.10 by then with no penalty. Each bank sets its own penalty, so copy it from your CD's terms into the calculator." },
+      { question: "Is it smart to put $100,000 in a CD?", answer: "It depends on whether the money can stay put for the full term. If you might need part of it before the CD matures, the early-withdrawal penalty can leave you with less than a HYSA would hold. FDIC insurance covers deposits up to $250,000 per depositor, per insured bank, per ownership category. Run the amount, term and both APYs through the calculator above to see which earns more." },
+      { question: "Are CDs and high-yield savings accounts FDIC insured?", answer: "Yes, when the bank is FDIC-insured. Federal Deposit Insurance Corporation (FDIC) insurance covers deposits up to $250,000 per depositor, per insured bank, per ownership category. Both CDs and savings accounts at FDIC-insured banks are covered, so the same limit applies to either account." },
+      { question: "Which is better for an emergency fund?", answer: "A high-yield savings account fits an emergency fund better, because you may need the money before a CD term ends. Size the fund first with the [emergency fund calculator](/emergency-fund-calculator/), then compare rates in our list of [best high-yield savings accounts](/roundup/best-high-yield-savings-accounts/)." },
+    ],
+    updated: "2026-10-14",
+    defaultPreset: {"deposit": 25000, "termMonths": 12, "hysaApyPct": 4, "cdApyPct": 4.25, "hysaLaterApyPct": 0, "changeAfterMonths": 6, "penaltyMonths": 3, "withdrawMonth": 0},
+  },
+  // Trump Account vs 529 calculator — tool-usage pass (2026-10-14). Prose generated via scripts/lib/content_gen.py
+  // (meta beside the draft in reports/mindmap-pass/2026-10-14-tool-usage/drafts/).
+  {
+    id: "trump-account-vs-529-calculator",
+    islandId: "trump-account-vs-529-calculator",
+    label: "Trump Account vs 529",
+    navOrder: 54,
+    metaTitle: "Trump Account vs 529 Calculator: Which Leaves More at 18",
+    metaDescription:
+      "Free Trump Account vs 529 calculator. Enter your child's age, yearly savings and tax rate to see which account leaves more after tax at 18.",
+    targetKeyword: "trump account vs 529 calculator",
+    h1: "Trump Account vs 529 Calculator",
+    introText:
+      "Yes, a child can have both a Trump Account and a 529. The account that should get this year's money depends on whether the money will pay for college. For college, the 529 usually leaves more because qualified education withdrawals are free of federal income tax, while the Trump Account taxes the seed and the growth. If the money is cashed out at 18 for something else, the Trump Account can leave more. Enter your child's age, yearly savings, expected return and tax rate in the Trump Account vs 529 calculator below to see which account leaves more for your family.\n\nTake a newborn who gets the $1,000 seed, with $2,400 a year going in at a 7% return. The money pays for college, and the tax rate on the withdrawal is 12%. The 529 reaches $86,144.21 at 18 and owes no tax. The Trump Account reaches $89,656.74, but $5,574.81 of tax leaves $84,081.94. The 529 comes out $2,062.27 ahead.",
+    howItWorks:
+      "The calculator puts the same yearly money into both accounts, spreads it evenly by month, and compounds it monthly at the same return until age 18. Trump Account family contributions are after-tax money, so they come out untaxed, while the seed and the growth are taxed at your withdrawal rate. A 529 spent on qualified education owes no federal income tax, so in the college example it leaves $86,144.21 against $84,081.94 for the Trump Account. The 10% additional tax on early Trump Account withdrawals does not apply here, because qualified higher-education costs are an exception.\n\nWhen the money is cashed out at 18 for something other than college, the Trump Account comes out ahead in the example. The difference comes from the $1,000 seed. Both accounts return family contributions untaxed and tax the growth at your rate plus a 10% additional tax. Only the Trump Account also holds the seed and the seed's growth. The Trump Account owes $5,574.81 of income tax plus $4,645.67 of additional tax. The 529 taxes its earnings at your rate plus a 10% additional tax on those earnings, which comes to $5,153.30 plus $4,294.42. That leaves $79,436.26 in the Trump Account and $76,696.48 in the 529, a gap of $2,739.78. Without the seed, and at $5,000 a year or less, both accounts leave the same amount for a non-college use.\n\nA Trump Account takes at most $5,000 a year from all private sources combined, and an employer may give up to $2,500 of that. A 529 has no federal yearly contribution limit, and the calculator shows a warning when your yearly amount goes above the Trump Account cap. At $6,000 a year from birth with the seed, the Trump Account is held to $5,000 and reaches $182,979.63. The 529 takes the full amount and reaches $215,360.51.\n\nThe $1,000 federal seed goes to U.S.-citizen children with a Social Security number. The child must be born between January 1, 2025 and December 31, 2028. Because a child can have both accounts, a family can open the Trump Account to collect the seed and still save for college in a 529. To project one account on its own, use the [Trump Account calculator](/trump-account/) or the [529 savings calculator](/529-savings-calculator/). If the money is for college only, the 529 savings calculator is the simpler one to use.\n\nThe return you enter is a placeholder for comparison and does not forecast markets. State tax breaks on 529 contributions and financial aid are left out. The calculator cashes both accounts out at 18, while a Trump Account can stay invested after 18 under traditional individual retirement account (IRA) rules. The result can flip on whether your child goes to college, the tax rate at withdrawal, and yearly savings above $5,000. For the full rules side by side, read the [Trump Account vs 529 comparison](/compare/trump-account-vs-529/).",
+    faqs: [
+      { question: "Can you have both a Trump Account and a 529 account?", answer: "Yes, a child can have both a Trump Account and a 529. A family can open the Trump Account to collect the $1,000 federal seed and still save for college in a 529. Run your numbers in the calculator above to see which account should get this year's money." },
+      { question: "Which leaves more for college, a Trump Account or a 529?", answer: "The 529 usually leaves more for college, because withdrawals spent on qualified education costs are free of federal income tax. The Trump Account taxes the seed and the growth at your rate. Take a newborn with $2,400 a year at 7% and a 12% tax rate. The 529 leaves $2,062.27 more after tax." },
+      { question: "When does a Trump Account come out ahead of a 529?", answer: "A Trump Account can come out ahead when the money is cashed out at 18 for something other than college. The $1,000 seed makes the difference, because both accounts return family contributions untaxed and tax the growth plus a 10% additional tax. In the newborn example at $2,400 a year, the Trump Account leaves $79,436.26 and the 529 leaves $76,696.48." },
+      { question: "How much is $100 a month in a 529 for 18 years?", answer: "Saving $100 a month in a 529 from birth reaches $43,072.10 at age 18. That figure assumes a 7% return, which is a placeholder for comparison. Enter your own amount and return in the [529 savings calculator](/529-savings-calculator/)." },
+      { question: "How are Trump Account withdrawals taxed?", answer: "Family contributions come out untaxed because they went in as after-tax money. The seed, employer money and growth are taxed as ordinary income when withdrawn. A 10% additional tax applies to withdrawals before age 59½ unless an exception applies, and qualified higher-education costs are an exception." },
+      { question: "What happens to 529 money that is not spent on school?", answer: "A non-qualified 529 withdrawal taxes the earnings as income plus a 10% additional tax on the earnings. In the newborn example cashed out at 18, the 529 owes $5,153.30 of tax plus $4,294.42 of additional tax. Pick the non-college option in the calculator above to see your own figure." },
+      { question: "Is there a limit on how much I can put in each account?", answer: "A Trump Account takes at most $5,000 a year from all private sources combined, and an employer may give up to $2,500 of that. A 529 has no federal yearly contribution limit. The calculator shows a warning when your yearly amount goes above the Trump Account cap." },
+      { question: "Who gets the $1,000 Trump Account seed?", answer: "The $1,000 federal seed goes to U.S.-citizen children who have a Social Security number. The child must be born between January 1, 2025 and December 31, 2028. For how the account works beyond the seed, read [what is a Trump Account](/guides/trump-accounts/)." },
+    ],
+    updated: "2026-10-14",
+    defaultPreset: {"childAge": 0, "yearlyContribution": 2400, "returnPct": 7, "seedEligible": true, "taxRatePct": 12, "forCollege": true},
+  },
+  // Mortgage Recast calculator — tool-usage pass (2026-10-14). Prose generated via scripts/lib/content_gen.py
+  // (meta beside the draft in reports/mindmap-pass/2026-10-14-tool-usage/drafts/).
+  {
+    id: "mortgage-recast-calculator",
+    islandId: "mortgage-recast-calculator",
+    label: "Mortgage Recast",
+    navOrder: 55,
+    metaTitle: "Mortgage Recast Calculator: New Payment & Interest Saved",
+    metaDescription:
+      "Mortgage recast calculator. Enter your balance, rate and lump sum to see the new payment, interest saved, and how a recast compares to prepaying.",
+    targetKeyword: "mortgage recast calculator",
+    h1: "Mortgage Recast Calculator",
+    introText:
+      "A recast lowers your monthly payment by spreading a smaller balance over the same months left at the same rate. Enter your current balance, interest rate, months left and lump sum in the mortgage recast calculator below, along with any recast fee your servicer charges. The calculator returns the new payment, the interest saved and the months a fee takes to earn back, and it also shows the same lump sum prepaid without a recast.\n\nFor example, take a $238,000 balance at 6.875% with 312 months left. The payment is $1,639.33 a month in principal and interest. A $30,000 recast cuts it to $1,432.69, which is $206.64 a month less.",
+    howItWorks:
+      "The mortgage recast calculator sets a payment with payment = balance × r ÷ (1 − (1 + r)^−n), where r is the annual rate divided by 12 and n is the months left. A recast reruns the formula on the lower balance with the same r and n. On the example loan, the new $208,000 balance gives a payment of $1,432.69, down from $1,639.33.\n\nEnter the recast fee your servicer charges, and the calculator shows how many months of the lower payment it takes to earn the fee back. On the example, a $250 fee is earned back in 2 months, and the recast still saves $34,221.26 in interest after the fee.\n\nPrepay $30,000 without a recast and keep paying $1,639.33, and the lower balance clears the example loan in 228 months. That is 84 months, or 7 years, sooner, with $109,002.12 saved in interest. The recast saves $34,471.26, so it gives up interest savings in exchange for a lower required payment.\n\nA recast fits a borrower who wants a lower required payment, for example after a home sale or a drop in income. If you want to shorten the loan, prepay without a recast and use the [mortgage payoff calculator](/mortgage/payoff-calculator/) to test monthly extra payments. To compare paying down the mortgage with investing the lump sum, read the [pay off mortgage early or invest](/guides/pay-off-mortgage-early-or-invest/) guide.\n\nThe calculator assumes a fixed-rate loan and shows principal and interest only, so taxes and insurance are not included. Your servicer sets the recast fee and the minimum lump sum. The servicer also decides whether a loan can be recast at all. Many servicers do not recast government-backed loans such as [Federal Housing Administration (FHA)](https://www.hud.gov/federal_housing_administration) and [U.S. Department of Veterans Affairs (VA)](https://www.va.gov/housing-assistance/home-loans/) loans, so if the servicer will not recast your loan, use the prepay results instead.",
+    faqs: [
+      { question: "How much will my payment drop if I recast my mortgage?", answer: "Your payment drops to whatever the formula gives on the lower balance, using the same rate and months left. Take a $238,000 balance at 6.875% with 312 months left. A $30,000 recast lowers the payment from $1,639.33 to $1,432.69. That is $206.64 a month less." },
+      { question: "What are the downsides of recasting a mortgage?", answer: "A recast saves less interest than prepaying the same lump sum without one. On the example loan, the recast saves $34,471.26, while prepaying saves $109,002.12. Your servicer may charge a recast fee, and it may not recast your loan at all." },
+      { question: "What are the benefits of recasting?", answer: "A recast lowers your required monthly payment and keeps the same rate and months left. On the example loan, a $30,000 lump sum lowers the payment by $206.64 a month. It also saves $34,471.26 in interest over the remaining 312 months." },
+      { question: "Is it better to recast or just pay extra principal?", answer: "Paying extra principal without a recast saves more interest, and a recast gives a lower required payment. With the same $30,000, prepaying ends the example loan 84 months sooner and saves $109,002.12. The recast saves $34,471.26 but cuts the payment by $206.64 a month. Pick the recast for the lower payment, and prepay to get the loan gone sooner." },
+      { question: "How long does it take to earn back a recast fee?", answer: "The calculator shows how many months of the lower payment it takes to cover the fee you enter. A $250 fee against a $206.64 monthly drop is earned back in 2 months. After that fee, the example recast still saves $34,221.26 in interest. A higher fee takes longer to earn back." },
+      { question: "Can every mortgage be recast?", answer: "No. Your servicer decides which loans can be recast, and it sets the fee and the minimum lump sum. Many servicers do not recast government-backed loans such as FHA and VA loans. If your servicer will not recast the loan, you can still put the lump sum toward principal, and the calculator's prepay result shows the interest that saves. The calculator also assumes a fixed-rate loan." },
+      { question: "Does recasting change my interest rate or loan term?", answer: "No. A recast keeps the same interest rate and the same months left, so only the balance and the payment change. On the example loan, the rate stays at 6.875% with 312 months left. The payment falls to $1,432.69 on the $208,000 balance." },
+      { question: "How do I cut years off my mortgage instead?", answer: "Prepay principal without a recast and keep making your current payment. Putting $30,000 toward the example loan and keeping the $1,639.33 payment ends it in 228 months. That is 7 years sooner. To test monthly extra payments, use the [mortgage payoff calculator](/mortgage/payoff-calculator/)." },
+    ],
+    updated: "2026-10-14",
+    defaultPreset: {"balance": 238000, "ratePct": 6.875, "monthsLeft": 312, "lumpSum": 30000, "fee": 250},
   },
 ];
 

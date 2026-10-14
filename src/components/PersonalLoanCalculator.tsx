@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { useDraft } from "./calc-ui";
 import { computePersonalLoan, type PersonalLoanInput } from "../lib/personal-loan";
 import { fmtUSD, fmtPct } from "../lib/format";
 
@@ -128,14 +129,17 @@ function MoneyInput({ value, onChange }: { value: number; onChange: (v: number) 
   );
 }
 function PctInput({ value, onChange }: { value: number; onChange: (v: number) => void }) {
+  // useDraft keeps a typed "6." while the reader enters "6.5" (re-rendering the parsed number dropped the point).
+  const d = useDraft(value, onChange);
   return (
     <div style={S.suffixWrap}>
       <input
         style={S.input}
         inputMode="decimal"
-        value={value === 0 ? "" : value}
+        value={d.text}
         placeholder="0"
-        onChange={(e) => onChange(Math.max(0, Number(e.target.value.replace(/[^0-9.]/g, ""))))}
+        onChange={(e) => d.onChange(e.target.value)}
+        onBlur={d.onBlur}
         aria-label="Percent"
       />
       <span style={S.suffix}>%</span>

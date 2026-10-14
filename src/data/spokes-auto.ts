@@ -215,6 +215,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
   {
     calculator: "auto-loan",
     slug: "amortization-schedule",
+    updated: "2026-10-14",
     title: "Auto Loan Amortization Calculator & Schedule",
     metaDescription:
       "Free auto loan amortization calculator — like an Excel schedule — showing a year-by-year breakdown of principal, interest, and balance for your loan.",
