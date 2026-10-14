@@ -1,0 +1,466 @@
+{
+ "_note": "The roundup comparison tables' vendor data (vendor lane). `domains` maps an editorial row's name (src/data/roundups*.ts comparisonTable.rows[].name, exact) to the company's domain: the row renders data-vendor-domain/-name (growth-sites-api reads them off the live page) and links the name to the company (nofollow). `added` = vendors the vendor-roundup routine appends under the editorial rows: {name, domain, url, values[]} with values in the page's comparisonTable.headers order. Written by scripts/placement/apply_vendor_rows.mjs; hand edits OK. Featured (paid) rows come from data/paid-placements.json.",
+ "pages": {
+  "dataannotation-alternatives": {
+   "domains": {
+    "Outlier": "outlier.ai",
+    "Mercor": "mercor.com",
+    "Alignerr": "alignerr.com",
+    "Mindrift": "mindrift.ai",
+    "Handshake AI": "joinhandshake.com",
+    "Prolific": "prolific.com"
+   },
+   "added": []
+  },
+  "best-ai-investing-apps": {
+   "domains": {
+    "Magnifi": "magnifi.com",
+    "Betterment": "betterment.com",
+    "Robinhood (Cortex)": "robinhood.com",
+    "Danelfin": "danelfin.com",
+    "Prospero.ai": "prospero.ai",
+    "Wealthfront": "wealthfront.com"
+   },
+   "added": []
+  },
+  "best-ai-trading-bots": {
+   "domains": {
+    "Trade Ideas": "trade-ideas.com",
+    "Robinhood Agentic Trading": "robinhood.com",
+    "Danelfin": "danelfin.com",
+    "Tickeron": "tickeron.com",
+    "Prospero.ai": "prospero.ai"
+   },
+   "added": []
+  },
+  "best-ai-stock-pickers": {
+   "domains": {
+    "Danelfin": "danelfin.com",
+    "Kavout": "kavout.com",
+    "Trade Ideas": "trade-ideas.com",
+    "Prospero.ai": "prospero.ai",
+    "Magnifi": "magnifi.com"
+   },
+   "added": []
+  },
+  "robinhood-agentic-trading-alternatives": {
+   "domains": {
+    "Trade Ideas": "trade-ideas.com",
+    "Tickeron": "tickeron.com",
+    "Magnifi": "magnifi.com",
+    "Danelfin": "danelfin.com",
+    "Robinhood Cortex": "robinhood.com"
+   },
+   "added": []
+  },
+  "best-mortgage-lenders": {
+   "domains": {
+    "Rocket Mortgage": "rocketmortgage.com",
+    "Better Mortgage": "better.com",
+    "Chase Mortgage": "chase.com",
+    "LoanDepot": "loandepot.com",
+    "Veterans United": "veteransunited.com",
+    "PNC Bank": "pnc.com",
+    "U.S. Bank": "usbank.com",
+    "Guild Mortgage": "guildmortgage.com"
+   },
+   "added": []
+  },
+  "best-ira-accounts": {
+   "domains": {
+    "Fidelity": "fidelity.com",
+    "Charles Schwab": "schwab.com",
+    "Vanguard": "vanguard.com",
+    "Betterment": "betterment.com",
+    "E*TRADE": "etrade.com",
+    "Wealthfront": "wealthfront.com",
+    "Merrill Edge": "merrilledge.com"
+   },
+   "added": []
+  },
+  "best-investment-apps-for-beginners": {
+   "domains": {
+    "Fidelity": "fidelity.com",
+    "Charles Schwab": "schwab.com",
+    "Robinhood": "robinhood.com",
+    "Betterment": "betterment.com",
+    "Acorns": "acorns.com",
+    "Public": "public.com",
+    "SoFi Invest": "sofi.com"
+   },
+   "added": []
+  },
+  "best-money-market-accounts": {
+   "domains": {
+    "UFB Direct": "ufbdirect.com",
+    "Sallie Mae": "salliemae.com",
+    "Discover": "discover.com",
+    "Ally Bank": "ally.com",
+    "CIT Platinum Savings": "cit.com",
+    "Vanguard VMFXX": "vanguard.com",
+    "TIAA Bank": "everbank.com"
+   },
+   "added": []
+  },
+  "best-budgeting-apps-for-couples": {
+   "domains": {
+    "YNAB": "ynab.com",
+    "Monarch Money": "monarch.com",
+    "Honeydue": "honeydue.com",
+    "Copilot": "copilot.money",
+    "Simplifi": "simplifimoney.com",
+    "EveryDollar": "everydollar.com",
+    "Goodbudget": "goodbudget.com"
+   },
+   "added": []
+  },
+  "best-401k-providers-for-small-business": {
+   "domains": {
+    "Guideline": "guideline.com",
+    "Human Interest": "humaninterest.com",
+    "ADP": "adp.com",
+    "Paychex": "paychex.com",
+    "Fidelity Solo 401(k)": "fidelity.com",
+    "Vanguard Solo 401(k)": "vanguard.com",
+    "ShareBuilder 401k": "sharebuilder401k.com"
+   },
+   "added": []
+  },
+  "best-net-worth-tracker": {
+   "domains": {
+    "Empower": "empower.com",
+    "Copilot": "copilot.money",
+    "YNAB": "ynab.com",
+    "Quicken Classic": "quicken.com",
+    "Boldin": "boldin.com",
+    "Tiller": "tiller.com",
+    "Credit Karma": "creditkarma.com"
+   },
+   "added": []
+  },
+  "best-tax-relief-companies": {
+   "domains": {
+    "Precision Tax Relief": "precisiontax.com",
+    "Community Tax": "communitytax.com",
+    "Larson Tax Relief": "larsontaxrelief.com",
+    "Fortress Tax Relief": "fortresstaxrelief.com",
+    "Anthem Tax Services": "anthemtaxservices.com",
+    "Optima Tax Relief": "optimataxrelief.com"
+   },
+   "added": []
+  },
+  "best-online-will-makers": {
+   "domains": {
+    "Trust & Will": "trustandwill.com",
+    "FreeWill": "freewill.com",
+    "LegalZoom": "legalzoom.com",
+    "Nolo WillMaker": "nolo.com",
+    "Mama Bear": "mamabearlegalforms.com",
+    "Rocket Lawyer": "rocketlawyer.com"
+   },
+   "added": []
+  },
+  "best-living-trust-services": {
+   "domains": {
+    "Trust & Will": "trustandwill.com",
+    "LegalZoom Living Trust": "legalzoom.com",
+    "Nolo WillMaker Plus": "nolo.com"
+   },
+   "added": []
+  },
+  "best-estate-planning-software": {
+   "domains": {
+    "Trust & Will": "trustandwill.com",
+    "LegalZoom": "legalzoom.com",
+    "Killswitch": "killswitch.rip",
+    "FreeWill": "freewill.com",
+    "Nolo WillMaker Plus": "nolo.com",
+    "Mama Bear": "mamabearlegalforms.com",
+    "Rocket Lawyer": "rocketlawyer.com"
+   },
+   "added": []
+  },
+  "best-budgeting-apps": {
+   "domains": {
+    "YNAB": "ynab.com",
+    "Monarch Money": "monarch.com",
+    "Rocket Money": "rocketmoney.com",
+    "PocketGuard": "pocketguard.com",
+    "Copilot": "copilot.money",
+    "EveryDollar": "everydollar.com",
+    "Goodbudget": "goodbudget.com"
+   },
+   "added": []
+  },
+  "best-brokers-for-treasury-bonds": {
+   "domains": {
+    "Fidelity": "fidelity.com",
+    "Charles Schwab": "schwab.com",
+    "Vanguard": "vanguard.com",
+    "Edward Jones": "edwardjones.com"
+   },
+   "added": []
+  },
+  "best-brokerage-accounts-for-interest-on-cash": {
+   "domains": {
+    "Fidelity": "fidelity.com",
+    "Vanguard": "vanguard.com",
+    "Robinhood": "robinhood.com",
+    "Webull": "webull.com",
+    "Public": "public.com",
+    "Moomoo": "moomoo.com",
+    "M1": "m1.com"
+   },
+   "added": []
+  },
+  "best-high-yield-savings-accounts": {
+   "domains": {
+    "Ally Bank": "ally.com",
+    "Marcus by Goldman Sachs": "marcus.com",
+    "SoFi": "sofi.com",
+    "Discover": "discover.com",
+    "American Express": "americanexpress.com",
+    "Capital One": "capitalone.com",
+    "Synchrony Bank": "synchrony.com",
+    "Wealthfront": "wealthfront.com",
+    "Navy Federal Credit Union": "navyfederal.org",
+    "PenFed Credit Union": "penfed.org"
+   },
+   "added": []
+  },
+  "best-robo-advisors": {
+   "domains": {
+    "Wealthfront": "wealthfront.com",
+    "Betterment": "betterment.com",
+    "Schwab Intelligent Portfolios": "schwab.com",
+    "Fidelity Go": "fidelity.com",
+    "Vanguard Digital Advisor": "vanguard.com",
+    "E*TRADE Core Portfolios": "etrade.com",
+    "Acorns": "acorns.com"
+   },
+   "added": []
+  },
+  "best-credit-cards-for-fair-credit": {
+   "domains": {
+    "Capital One Platinum": "capitalone.com",
+    "Discover it Secured": "discover.com",
+    "Petal 2": "petalcard.com",
+    "Capital One QuicksilverOne": "capitalone.com",
+    "Chime Card": "chime.com",
+    "OpenSky Secured Visa": "openskycc.com"
+   },
+   "added": []
+  },
+  "best-custodial-roth-ira-providers": {
+   "domains": {
+    "Fidelity": "fidelity.com",
+    "Charles Schwab": "schwab.com",
+    "Vanguard": "vanguard.com",
+    "E*TRADE": "etrade.com"
+   },
+   "added": []
+  },
+  "best-balance-transfer-credit-cards": {
+   "domains": {
+    "Citi Simplicity": "citi.com",
+    "Wells Fargo Reflect": "wellsfargo.com",
+    "Chase Slate Edge": "chase.com",
+    "Discover it Cash Back": "discover.com",
+    "BankAmericard": "bankofamerica.com",
+    "U.S. Bank Shield Visa": "usbank.com"
+   },
+   "added": []
+  },
+  "personal-loan-rates-by-lender": {
+   "domains": {
+    "Discover": "discover.com",
+    "SoFi": "sofi.com",
+    "Wells Fargo": "wellsfargo.com",
+    "PNC": "pnc.com",
+    "US Bank": "usbank.com",
+    "Navy Federal": "navyfederal.org",
+    "PenFed": "penfed.org"
+   },
+   "added": []
+  },
+  "best-student-loans-bad-credit": {
+   "domains": {
+    "Ascent Non-Cosigned Outcomes-Based Loan": "ascentfunding.com",
+    "Funding U": "funding-u.com",
+    "MPOWER Financing": "mpowerfinancing.com",
+    "Edly": "edly.co",
+    "Prodigy Finance": "prodigyfinance.com"
+   },
+   "added": []
+  },
+  "best-student-loan-refinance": {
+   "domains": {
+    "SoFi": "sofi.com",
+    "Earnest": "earnest.com",
+    "ELFI": "elfi.com",
+    "Splash Financial": "splashfinancial.com",
+    "College Ave": "collegeave.com",
+    "Laurel Road": "laurelroad.com",
+    "RISLA": "risla.com"
+   },
+   "added": []
+  },
+  "best-secured-credit-cards": {
+   "domains": {
+    "Capital One Platinum Secured": "capitalone.com",
+    "Discover it Secured": "discover.com",
+    "Citi Secured Mastercard": "citi.com",
+    "Self Visa": "self.inc",
+    "U.S. Bank Secured Visa": "usbank.com"
+   },
+   "added": []
+  },
+  "best-travel-credit-cards": {
+   "domains": {
+    "Chase Sapphire Preferred®": "chase.com",
+    "Chase Sapphire Reserve®": "chase.com",
+    "Capital One Venture Rewards": "capitalone.com",
+    "Capital One VentureOne": "capitalone.com",
+    "Bank of America Travel Rewards": "bankofamerica.com",
+    "Discover it Miles": "discover.com"
+   },
+   "added": []
+  },
+  "best-cash-back-credit-cards": {
+   "domains": {
+    "Citi Double Cash Card": "citi.com",
+    "Chase Freedom Unlimited": "chase.com",
+    "Wells Fargo Active Cash": "wellsfargo.com",
+    "Discover it Cash Back": "discover.com",
+    "Capital One SavorOne": "capitalone.com",
+    "Blue Cash Everyday": "americanexpress.com"
+   },
+   "added": []
+  },
+  "best-student-credit-cards": {
+   "domains": {
+    "Discover it® Student Cash Back": "discover.com",
+    "Capital One Savor Rewards for Students": "capitalone.com",
+    "Capital One Quicksilver Rewards for Students": "capitalone.com",
+    "Chase Freedom Rise℠": "chase.com",
+    "Bank of America® Travel Rewards for Students": "bankofamerica.com",
+    "Bank of America® Customized Cash Rewards for Students": "bankofamerica.com"
+   },
+   "added": []
+  },
+  "best-portfolio-backtesting-and-analysis-tools": {
+   "domains": {
+    "Portfolio Visualizer": "portfoliovisualizer.com",
+    "Portfolio Charts": "portfoliocharts.com",
+    "Fidelity Full View": "fidelity.com",
+    "Vanguard Portfolio Watch": "vanguard.com",
+    "Schwab Portfolio Checkup": "schwab.com",
+    "Questrade": "questrade.com"
+   },
+   "added": []
+  },
+  "best-merchant-cash-advance-companies": {
+   "domains": {
+    "Rapid Finance": "rapidfinance.com",
+    "Credibly": "credibly.com",
+    "Fora Financial": "forafinancial.com",
+    "National Funding": "nationalfunding.com",
+    "Expansion Capital Group": "ecg.com",
+    "OnDeck": "ondeck.com",
+    "Kabbage (Amex Business Blueprint)": "americanexpress.com",
+    "Kapitus": "kapitus.com",
+    "Kalamata Capital Group": "kalamatacapitalgroup.com",
+    "Headway Capital": "headwaycapital.com",
+    "Can Capital": "cancapital.com"
+   },
+   "added": []
+  },
+  "best-invoice-factoring-companies": {
+   "domains": {
+    "altLINE": "altline.sobanco.com",
+    "Riviera Finance": "rivierafinance.com",
+    "Scale Funding": "scalefunding.net",
+    "Triumph Business Capital": "triumph.io",
+    "Porter Capital": "portercap.com",
+    "RTS Financial": "rtsinc.com",
+    "eCapital": "ecapital.com"
+   },
+   "added": []
+  },
+  "business-line-of-credit-rates-by-lender": {
+   "domains": {
+    "Chase": "chase.com",
+    "Wells Fargo": "wellsfargo.com",
+    "Bank of America": "bankofamerica.com",
+    "PNC": "pnc.com",
+    "TD Bank": "td.com",
+    "RBC": "rbcroyalbank.com",
+    "Scotiabank": "scotiabank.com",
+    "CIBC": "cibc.com",
+    "Amex Business Blueprint": "americanexpress.com",
+    "Bluevine": "bluevine.com"
+   },
+   "added": []
+  },
+  "best-business-credit-cards": {
+   "domains": {
+    "Ink Business Unlimited": "chase.com",
+    "Amex Business Gold": "americanexpress.com",
+    "Capital One Spark Cash Plus": "capitalone.com",
+    "Capital One Spark Classic": "capitalone.com",
+    "Brex Card": "brex.com",
+    "BILL Divvy": "bill.com"
+   },
+   "added": []
+  },
+  "best-same-day-business-loans": {
+   "domains": {
+    "OnDeck": "ondeck.com",
+    "Credibly": "credibly.com",
+    "Fundbox": "fundbox.com",
+    "National Funding": "nationalfunding.com"
+   },
+   "added": []
+  },
+  "best-business-bank-accounts": {
+   "domains": {
+    "Bluevine Business Checking": "bluevine.com",
+    "Mercury": "mercury.com",
+    "NBKC Bank Business Checking": "nbkc.com",
+    "Axos Bank Basic Business Checking": "axosbank.com"
+   },
+   "added": []
+  },
+  "best-mileage-tracker-apps": {
+   "domains": {
+    "TripLog": "triplog.net",
+    "MileIQ": "mileiq.com",
+    "Everlance": "everlance.com",
+    "Hurdlr": "hurdlr.com",
+    "QuickBooks Solopreneur": "quickbooks.intuit.com",
+    "Stride": "stridehealth.com"
+   },
+   "added": []
+  },
+  "best-accounting-software-for-freelancers": {
+   "domains": {
+    "Wave": "waveapps.com",
+    "Zoho Invoice": "zoho.com",
+    "QuickBooks Solopreneur": "quickbooks.intuit.com",
+    "FreshBooks": "freshbooks.com",
+    "Bonsai": "hellobonsai.com"
+   },
+   "added": []
+  },
+  "best-invoicing-apps-for-freelancers": {
+   "domains": {
+    "Zoho Invoice": "zoho.com",
+    "Wave": "waveapps.com",
+    "FreshBooks": "freshbooks.com",
+    "Bonsai": "hellobonsai.com",
+    "QuickBooks Solopreneur": "quickbooks.intuit.com"
+   },
+   "added": []
+  }
+ }
+}

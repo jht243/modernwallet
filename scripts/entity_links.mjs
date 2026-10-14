@@ -120,13 +120,16 @@ function linkPage(html) {
   const optOut = [];
   const linked = new Set();
 
-  // A company already linked anywhere on the page (by href) is done.
-  for (const href of html.matchAll(/<a\b[^>]*href="(https?:\/\/[^"]+)"/gi)) {
+  // A company already linked anywhere on the page (by href) is done. ModernWallet only: the
+  // vendor rows of a roundup comparison table (<tr data-vendor-domain>) don't count, so their
+  // nofollow name links leave the prose first-mention links exactly as they were.
+  const scan = html.replace(/<tr\b[^>]*\sdata-vendor-domain="[^"]*"[^>]*>[\s\S]*?<\/tr>/gi, '');
+  for (const href of scan.matchAll(/<a\b[^>]*href="(https?:\/\/[^"]+)"/gi)) {
     try { linked.add(companyOf(href[1])); } catch { /* malformed URL */ }
   }
   // ...or by anchor text (links routed through a redirector).
   for (const [name, , company] of ENTITIES) {
-    if (new RegExp(`<a\\b[^>]*>[^<]*${namePat(name)}`).test(html)) linked.add(company);
+    if (new RegExp(`<a\\b[^>]*>[^<]*${namePat(name)}`).test(scan)) linked.add(company);
   }
 
   let changed = 0;

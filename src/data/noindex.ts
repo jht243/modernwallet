@@ -22,7 +22,7 @@ export const NOINDEX_PILLARS = new Set<string>([
 // and for every page outside these pillars. Accepts a pathname (leading slash optional).
 // Standalone pages that carry their own `noindex, follow` robots meta (e.g. the
 // "Advertise With Us" form) — kept out of the sitemap and the site-search index.
-export const NOINDEX_PAGES = new Set<string>(["sponsor"]);
+export const NOINDEX_PAGES = new Set<string>(["sponsor", "update-listing"]);
 
 export function isNoindexedPath(pathname: string): boolean {
   const segments = pathname.split("/").filter(Boolean);

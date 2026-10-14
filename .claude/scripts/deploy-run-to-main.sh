@@ -28,6 +28,10 @@
 # -----
 #   .claude/scripts/deploy-run-to-main.sh mark   # call ONCE at run start, before any commit
 #   .claude/scripts/deploy-run-to-main.sh push   # call at deploy time; lands this run's work
+#   .claude/scripts/deploy-run-to-main.sh land   # same as push, but ships this run's commits to a
+#                                                # claude/land/* branch and waits for the repo's
+#                                                # "Land routine branch" workflow (.github/workflows/land.yml)
+#                                                # to merge it into main (the publisher routines use this).
 #
 # GENERATED-FILE CONFLICTS
 #   A conflict confined to the files listed in .claude/scripts/deploy-regenerable.txt (e.g.
@@ -40,6 +44,8 @@
 #      ephemeral-branch fallback + manual-merge email. NEVER force-push main.
 #   4  .claude/scripts/deploy-precheck.sh rejected the merged tree -> nothing pushed; fix the
 #      reported file (or drop the bad row), commit, and run push again.
+#   5  (land only) the claude/land/* branch is pushed but the workflow has not merged it within
+#      LAND_DEADLINE seconds (default 600) -> check the repo's Actions tab; nothing is lost.
 #
 set -uo pipefail
 
@@ -49,6 +55,9 @@ key="$(printf '%s' "$branch" | tr '/ :' '___')"
 base_file="$(git rev-parse --git-dir)/run-base-${key}"
 
 cmd="${1:-}"
+# `land` is `push` with a different destination: a claude/land/* branch that GitHub merges.
+target="main"
+if [ "$cmd" = "land" ]; then cmd="push"; target="land"; fi
 
 # GENERATED FILES — rebuilt from other tracked files, never hand-edited. Every content
 # routine regenerates them, so two concurrent runs ALWAYS conflict on them even when
@@ -199,6 +208,29 @@ case "$cmd" in
         echo "[deploy] PRECHECK FAILED: this run's changes would break the build; NOT pushed (see errors above)." >&2
         exit 4
       fi
+      if [ "$target" = "land" ]; then
+        land_branch="claude/land/${key}-$(date +%s)"
+        if ! git push origin "HEAD:refs/heads/${land_branch}"; then
+          echo "[deploy] FAILED: could not push ${land_branch}." >&2
+          exit 3
+        fi
+        head_sha="$(git rev-parse HEAD)"
+        echo "[deploy] pushed $(git rev-parse --short "$head_sha") to ${land_branch}; waiting for the land workflow to merge it into main."
+        rm -f "$base_file"
+        land_deadline=$(( $(date +%s) + ${LAND_DEADLINE:-600} ))
+        while :; do
+          git fetch -q origin main 2>/dev/null || true
+          if git merge-base --is-ancestor "$head_sha" origin/main 2>/dev/null; then
+            echo "[deploy] landed: origin/main ($(git rev-parse --short origin/main)) now contains $(git rev-parse --short "$head_sha")."
+            exit 0
+          fi
+          if [ "$(date +%s)" -ge "$land_deadline" ]; then
+            echo "[deploy] NOT LANDED after ${LAND_DEADLINE:-600}s: ${land_branch} is on the remote but the land workflow has not merged it (see the repo's Actions tab). Nothing is lost." >&2
+            exit 5
+          fi
+          sleep 15
+        done
+      fi
       if git push origin HEAD:main; then
         echo "[deploy] pushed $(git rev-parse --short HEAD) to main (attempt ${attempt})."
         rm -f "$base_file"
@@ -275,7 +307,7 @@ case "$cmd" in
     ;;
 
   *)
-    echo "usage: deploy-run-to-main.sh {mark|push|verify URL[=needle]...}" >&2
+    echo "usage: deploy-run-to-main.sh {mark|push|land|verify URL[=needle]...}" >&2
     exit 2
     ;;
 esac

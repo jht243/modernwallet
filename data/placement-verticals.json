@@ -1,0 +1,499 @@
+{
+ "_note": "Vendor-roundup spine (ported from thehoaguide / layer3). Each vertical = the SERPs whose ranking vendors make up its roster (scripts/placement/serp_roster_discovery.py) + the live roundup they are listed on (/roundup/<roundupSlug>/). `roundupSlug` must be a live roundup in src/data/roundups*.ts, or null while the vertical accrues vendors (>= 4 qualified vendors -> the routine builds the page). `topic` finishes the outreach sentence 'We just included X in our guide to <topic>' and is rendered as data-vendor-topic on the page. `id` is stored on fleet_placement_prospects.vertical: never rename in place. Fund/ETF, account-type, single-issuer and calculator roundups are not vendor categories and have no vertical. expansionSeeds: seed phrases for Phase 1c category discovery (scripts/placement/category_candidates.py).",
+ "site": "themodernwallet.com",
+ "baseUrl": "https://www.themodernwallet.com",
+ "expansionSeeds": [
+  "best budgeting",
+  "best savings account",
+  "best credit card",
+  "best personal loan",
+  "best investing app",
+  "best small business",
+  "best app for freelancers",
+  "best tax software"
+ ],
+ "excluded": [
+  "Unlicensed lenders or debt-relief sellers operating illegally in the US (e.g. unregistered lenders, advance-fee loan scams). Everything legal stays in; facts go in the cells.",
+  "Personal finance publishers, comparison sites and affiliate blogs (they are the competition, not vendors)."
+ ],
+ "verticals": [
+  {
+   "id": "dataannotation-alternatives",
+   "label": "AI training work platforms",
+   "topic": "AI training work platforms",
+   "roundupSlug": "dataannotation-alternatives",
+   "keywords": [
+    "dataannotation alternatives",
+    "sites like dataannotation",
+    "ai training jobs",
+    "remote ai training work",
+    "outlier ai alternatives"
+   ]
+  },
+  {
+   "id": "ai-investing-apps",
+   "label": "AI investing apps",
+   "topic": "AI investing apps",
+   "roundupSlug": "best-ai-investing-apps",
+   "keywords": [
+    "best ai investing app",
+    "ai investing apps",
+    "ai investment app",
+    "ai portfolio app"
+   ]
+  },
+  {
+   "id": "ai-trading-bots",
+   "label": "AI trading bots",
+   "topic": "AI trading bots",
+   "roundupSlug": "best-ai-trading-bots",
+   "keywords": [
+    "best ai trading bot",
+    "ai trading bot",
+    "ai stock trading bot",
+    "automated trading software"
+   ]
+  },
+  {
+   "id": "ai-stock-pickers",
+   "label": "AI stock pickers",
+   "topic": "AI stock pickers",
+   "roundupSlug": "best-ai-stock-pickers",
+   "keywords": [
+    "best ai stock picker",
+    "ai stock picker",
+    "ai stock picking software",
+    "ai stock analysis tool"
+   ]
+  },
+  {
+   "id": "robinhood-agentic-trading-alternatives",
+   "label": "AI trading assistants",
+   "topic": "AI trading assistants",
+   "roundupSlug": "robinhood-agentic-trading-alternatives",
+   "keywords": [
+    "robinhood agentic trading alternatives",
+    "robinhood cortex alternatives",
+    "ai trading assistant"
+   ]
+  },
+  {
+   "id": "mortgage-lenders",
+   "label": "mortgage lenders",
+   "topic": "mortgage lenders",
+   "roundupSlug": "best-mortgage-lenders",
+   "keywords": [
+    "best mortgage lenders",
+    "best mortgage lender",
+    "online mortgage lenders",
+    "best mortgage companies"
+   ]
+  },
+  {
+   "id": "ira-accounts",
+   "label": "IRA providers",
+   "topic": "IRA accounts",
+   "roundupSlug": "best-ira-accounts",
+   "keywords": [
+    "best ira accounts",
+    "best roth ira accounts",
+    "best place to open a roth ira",
+    "best ira providers"
+   ]
+  },
+  {
+   "id": "investment-apps-for-beginners",
+   "label": "investment apps",
+   "topic": "investment apps for beginners",
+   "roundupSlug": "best-investment-apps-for-beginners",
+   "keywords": [
+    "best investment apps for beginners",
+    "best investing apps",
+    "best stock trading app for beginners",
+    "investing apps"
+   ]
+  },
+  {
+   "id": "money-market-accounts",
+   "label": "money market accounts",
+   "topic": "money market accounts",
+   "roundupSlug": "best-money-market-accounts",
+   "keywords": [
+    "best money market accounts",
+    "money market account rates",
+    "high yield money market account"
+   ]
+  },
+  {
+   "id": "budgeting-apps-for-couples",
+   "label": "budgeting apps for couples",
+   "topic": "budgeting apps for couples",
+   "roundupSlug": "best-budgeting-apps-for-couples",
+   "keywords": [
+    "best budgeting apps for couples",
+    "budget app for couples",
+    "shared budgeting app"
+   ]
+  },
+  {
+   "id": "401k-providers-for-small-business",
+   "label": "401(k) providers",
+   "topic": "401(k) providers for small business",
+   "roundupSlug": "best-401k-providers-for-small-business",
+   "keywords": [
+    "best 401k providers for small business",
+    "small business 401k providers",
+    "401k for small business",
+    "solo 401k providers"
+   ]
+  },
+  {
+   "id": "net-worth-tracker",
+   "label": "net worth trackers",
+   "topic": "net worth trackers",
+   "roundupSlug": "best-net-worth-tracker",
+   "keywords": [
+    "best net worth tracker",
+    "net worth tracker app",
+    "net worth app",
+    "personal finance dashboard"
+   ]
+  },
+  {
+   "id": "tax-relief-companies",
+   "label": "tax relief companies",
+   "topic": "tax relief companies",
+   "roundupSlug": "best-tax-relief-companies",
+   "keywords": [
+    "best tax relief companies",
+    "tax relief companies",
+    "irs tax relief services",
+    "tax resolution companies"
+   ]
+  },
+  {
+   "id": "online-will-makers",
+   "label": "online will makers",
+   "topic": "online will makers",
+   "roundupSlug": "best-online-will-makers",
+   "keywords": [
+    "best online will makers",
+    "online will",
+    "best online will maker",
+    "make a will online"
+   ]
+  },
+  {
+   "id": "living-trust-services",
+   "label": "living trust services",
+   "topic": "living trust services",
+   "roundupSlug": "best-living-trust-services",
+   "keywords": [
+    "best living trust services",
+    "online living trust",
+    "living trust online",
+    "revocable living trust online"
+   ]
+  },
+  {
+   "id": "estate-planning-software",
+   "label": "estate planning software",
+   "topic": "estate planning software",
+   "roundupSlug": "best-estate-planning-software",
+   "keywords": [
+    "best estate planning software",
+    "estate planning software",
+    "online estate planning",
+    "estate planning app"
+   ]
+  },
+  {
+   "id": "budgeting-apps",
+   "label": "budgeting apps",
+   "topic": "budgeting apps",
+   "roundupSlug": "best-budgeting-apps",
+   "keywords": [
+    "best budgeting apps",
+    "budgeting app",
+    "best budget app",
+    "ynab alternatives",
+    "mint alternatives"
+   ]
+  },
+  {
+   "id": "brokers-for-treasury-bonds",
+   "label": "brokers for Treasury bonds",
+   "topic": "brokers for Treasury bonds",
+   "roundupSlug": "best-brokers-for-treasury-bonds",
+   "keywords": [
+    "best brokers for treasury bonds",
+    "buy treasury bills online",
+    "best broker for t bills"
+   ]
+  },
+  {
+   "id": "brokerage-accounts-for-interest-on-cash",
+   "label": "brokerage accounts",
+   "topic": "brokerage accounts that pay interest on cash",
+   "roundupSlug": "best-brokerage-accounts-for-interest-on-cash",
+   "keywords": [
+    "best brokerage accounts for interest on cash",
+    "brokerage cash sweep rates",
+    "high interest brokerage account"
+   ]
+  },
+  {
+   "id": "high-yield-savings-accounts",
+   "label": "high-yield savings accounts",
+   "topic": "high-yield savings accounts",
+   "roundupSlug": "best-high-yield-savings-accounts",
+   "keywords": [
+    "best high yield savings accounts",
+    "high yield savings account",
+    "online savings account",
+    "best savings account rates"
+   ]
+  },
+  {
+   "id": "robo-advisors",
+   "label": "robo-advisors",
+   "topic": "robo-advisors",
+   "roundupSlug": "best-robo-advisors",
+   "keywords": [
+    "best robo advisors",
+    "robo advisor",
+    "best robo advisor",
+    "automated investing"
+   ]
+  },
+  {
+   "id": "credit-cards-for-fair-credit",
+   "label": "credit cards for fair credit",
+   "topic": "credit cards for fair credit",
+   "roundupSlug": "best-credit-cards-for-fair-credit",
+   "keywords": [
+    "best credit cards for fair credit",
+    "credit cards for fair credit",
+    "credit card for 600 credit score"
+   ]
+  },
+  {
+   "id": "custodial-roth-ira-providers",
+   "label": "custodial Roth IRA providers",
+   "topic": "custodial Roth IRA providers",
+   "roundupSlug": "best-custodial-roth-ira-providers",
+   "keywords": [
+    "best custodial roth ira",
+    "custodial roth ira",
+    "roth ira for kids"
+   ]
+  },
+  {
+   "id": "balance-transfer-credit-cards",
+   "label": "balance transfer credit cards",
+   "topic": "balance transfer credit cards",
+   "roundupSlug": "best-balance-transfer-credit-cards",
+   "keywords": [
+    "best balance transfer credit cards",
+    "balance transfer card",
+    "0 apr balance transfer"
+   ]
+  },
+  {
+   "id": "personal-loan-rates-by-lender",
+   "label": "personal loan lenders",
+   "topic": "personal loan lenders",
+   "roundupSlug": "personal-loan-rates-by-lender",
+   "keywords": [
+    "personal loan rates by lender",
+    "best personal loans",
+    "personal loan lenders",
+    "online personal loans"
+   ]
+  },
+  {
+   "id": "student-loans-bad-credit",
+   "label": "student loan lenders",
+   "topic": "student loans for bad credit",
+   "roundupSlug": "best-student-loans-bad-credit",
+   "keywords": [
+    "best student loans for bad credit",
+    "student loans without cosigner",
+    "private student loans bad credit"
+   ]
+  },
+  {
+   "id": "student-loan-refinance",
+   "label": "student loan refinance companies",
+   "topic": "student loan refinance companies",
+   "roundupSlug": "best-student-loan-refinance",
+   "keywords": [
+    "best student loan refinance companies",
+    "student loan refinance",
+    "refinance student loans"
+   ]
+  },
+  {
+   "id": "secured-credit-cards",
+   "label": "secured credit cards",
+   "topic": "secured credit cards",
+   "roundupSlug": "best-secured-credit-cards",
+   "keywords": [
+    "best secured credit cards",
+    "secured credit card",
+    "credit builder card"
+   ]
+  },
+  {
+   "id": "travel-credit-cards",
+   "label": "travel credit cards",
+   "topic": "travel credit cards",
+   "roundupSlug": "best-travel-credit-cards",
+   "keywords": [
+    "best travel credit cards",
+    "travel rewards credit card",
+    "best travel card"
+   ]
+  },
+  {
+   "id": "cash-back-credit-cards",
+   "label": "cash back credit cards",
+   "topic": "cash back credit cards",
+   "roundupSlug": "best-cash-back-credit-cards",
+   "keywords": [
+    "best cash back credit cards",
+    "cash back credit card",
+    "best cashback card"
+   ]
+  },
+  {
+   "id": "student-credit-cards",
+   "label": "student credit cards",
+   "topic": "student credit cards",
+   "roundupSlug": "best-student-credit-cards",
+   "keywords": [
+    "best student credit cards",
+    "student credit card",
+    "credit card for college students"
+   ]
+  },
+  {
+   "id": "portfolio-backtesting-and-analysis-tools",
+   "label": "portfolio analysis tools",
+   "topic": "portfolio backtesting and analysis tools",
+   "roundupSlug": "best-portfolio-backtesting-and-analysis-tools",
+   "keywords": [
+    "portfolio backtesting tool",
+    "portfolio analyzer",
+    "portfolio visualizer alternatives",
+    "investment portfolio tracker"
+   ]
+  },
+  {
+   "id": "merchant-cash-advance-companies",
+   "label": "merchant cash advance companies",
+   "topic": "merchant cash advance companies",
+   "roundupSlug": "best-merchant-cash-advance-companies",
+   "keywords": [
+    "best merchant cash advance companies",
+    "merchant cash advance",
+    "mca lenders"
+   ]
+  },
+  {
+   "id": "invoice-factoring-companies",
+   "label": "invoice factoring companies",
+   "topic": "invoice factoring companies",
+   "roundupSlug": "best-invoice-factoring-companies",
+   "keywords": [
+    "best invoice factoring companies",
+    "invoice factoring",
+    "factoring companies",
+    "freight factoring companies"
+   ]
+  },
+  {
+   "id": "business-line-of-credit-rates-by-lender",
+   "label": "business line of credit lenders",
+   "topic": "business lines of credit",
+   "roundupSlug": "business-line-of-credit-rates-by-lender",
+   "keywords": [
+    "business line of credit rates by lender",
+    "best business line of credit",
+    "business line of credit lenders"
+   ]
+  },
+  {
+   "id": "business-credit-cards",
+   "label": "business credit cards",
+   "topic": "business credit cards",
+   "roundupSlug": "best-business-credit-cards",
+   "keywords": [
+    "best business credit cards",
+    "business credit card",
+    "small business credit card",
+    "corporate card for startups"
+   ]
+  },
+  {
+   "id": "same-day-business-loans",
+   "label": "business lenders",
+   "topic": "same-day business loans",
+   "roundupSlug": "best-same-day-business-loans",
+   "keywords": [
+    "best same-day business loans",
+    "same day business loans",
+    "fast business loans",
+    "online business loans"
+   ]
+  },
+  {
+   "id": "business-bank-accounts",
+   "label": "business bank accounts",
+   "topic": "business bank accounts",
+   "roundupSlug": "best-business-bank-accounts",
+   "keywords": [
+    "best business bank accounts",
+    "business checking account",
+    "online business bank account",
+    "small business bank account"
+   ]
+  },
+  {
+   "id": "mileage-tracker-apps",
+   "label": "mileage tracker apps",
+   "topic": "mileage tracker apps",
+   "roundupSlug": "best-mileage-tracker-apps",
+   "keywords": [
+    "best mileage tracker app",
+    "mileage tracker app",
+    "mileage tracking app",
+    "mileage log app"
+   ]
+  },
+  {
+   "id": "accounting-software-for-freelancers",
+   "label": "accounting software for freelancers",
+   "topic": "accounting software for freelancers",
+   "roundupSlug": "best-accounting-software-for-freelancers",
+   "keywords": [
+    "accounting software for freelancers",
+    "freelancer accounting software",
+    "self employed accounting software",
+    "bookkeeping app for freelancers"
+   ]
+  },
+  {
+   "id": "invoicing-apps-for-freelancers",
+   "label": "invoicing apps for freelancers",
+   "topic": "invoicing apps for freelancers",
+   "roundupSlug": "best-invoicing-apps-for-freelancers",
+   "keywords": [
+    "best invoicing app for freelancers",
+    "invoicing software",
+    "invoice app",
+    "freelance invoice app"
+   ]
+  }
+ ]
+}

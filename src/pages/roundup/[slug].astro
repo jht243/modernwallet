@@ -10,6 +10,7 @@ import { COMPARISONS } from "../../data/comparisons";
 import LeadForm from "../../components/LeadForm.astro";
 import SponsorSlot from "../../components/SponsorSlot.astro";
 import { BUSINESS_ROUNDUP_SLUGS } from "../../data/business-financing";
+import { vendorRows, vendorTopic } from "../../lib/vendorTable";
 
 export function getStaticPaths() {
   return ROUNDUPS
@@ -22,6 +23,14 @@ export function getStaticPaths() {
 
 const { entry } = Astro.props;
 const canonicalUrl = new URL(`/roundup/${entry.slug}/`, Astro.site).toString();
+// Vendor lane: company rows (with data-vendor-* for outreach), Featured slot, added vendors.
+const isVendorPage = vendorTopic(entry.slug) !== null;
+const tableRows = isVendorPage
+  ? vendorRows(entry.slug, entry.comparisonTable.rows)
+  : entry.comparisonTable.rows.map((r) => ({
+      ...r, external: Boolean(r.href?.startsWith("http")), rel: "noopener", featured: false, domain: undefined,
+    }));
+const showFeaturedSlot = isVendorPage && !tableRows.some((r) => r.featured);
 
 const jsonLdBreadcrumb = {
   "@context": "https://schema.org",
@@ -122,7 +131,7 @@ const relatedEntries = entry.relatedComparisons
       </section>
     ))}
 
-    <section class="section table-section" aria-label="Side-by-side comparison">
+    <section class="section table-section" aria-label="Side-by-side comparison" data-vendor-topic={vendorTopic(entry.slug) ?? undefined}>
       <h2>Comparison: {entry.options.length} {entry.category} at a glance</h2>
       <div class="table-wrap">
         <table class="cmp-table">
@@ -133,17 +142,41 @@ const relatedEntries = entry.relatedComparisons
             </tr>
           </thead>
           <tbody>
-            {entry.comparisonTable.rows.map((row) => (
-              <tr>
-                <th scope="row">{row.href
-                  ? <a href={row.href} {...(row.href.startsWith("http") ? { target: "_blank", rel: "noopener" } : {})}>{row.name}</a>
-                  : row.name}</th>
+            {showFeaturedSlot && (
+              <tr class="is-featured is-placeholder">
+                <td colspan={entry.comparisonTable.headers.length + 1}>
+                  <div class="vt-promo">
+                    <span class="vt-promo-text"><span class="vt-tag">Featured</span>Your company here, pinned above every listing</span>
+                    <a class="vt-promo-cta" href={`/sponsor/?from=${encodeURIComponent(`/roundup/${entry.slug}/`)}`} rel="nofollow">Get featured →</a>
+                  </div>
+                </td>
+              </tr>
+            )}
+            {tableRows.map((row) => (
+              <tr
+                class={row.featured ? "is-featured" : undefined}
+                data-vendor-domain={isVendorPage && row.domain ? row.domain.toLowerCase() : undefined}
+                data-vendor-name={isVendorPage && row.domain ? row.name : undefined}
+              >
+                <th scope="row" {...(row.domain ? { "data-no-entity-link": "" } : {})}>
+                  {row.featured && <span class="vt-tag vt-badge">Featured</span>}
+                  {row.href
+                    ? <a href={row.href} {...(row.external ? { target: "_blank", rel: row.rel } : {})}>{row.name}</a>
+                    : row.name}
+                  {row.featured && row.href && <a class="vt-cta" href={row.href} target="_blank" rel={row.rel}>Visit site →</a>}
+                </th>
                 {row.values.map((v) => <td set:html={linkifyInline(v)} />)}
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+      {isVendorPage && (
+        <p class="vt-note">
+          Rates, fees and terms are as each company publishes them. Confirm current details before you apply.
+          Listed here? <a href={`/update-listing/?from=${encodeURIComponent(`/roundup/${entry.slug}/`)}`} rel="nofollow">Update your listing</a>.
+        </p>
+      )}
     </section>
 
     {/* Advertise With Us (under the ranked list + comparison table) */}
@@ -239,6 +272,21 @@ const relatedEntries = entry.relatedComparisons
     .cmp-table thead th:first-child { width: 22%; }
     .cmp-table tbody tr:nth-child(even) td, .cmp-table tbody tr:nth-child(even) th { background: #fafcfb; }
     .cmp-table th[scope="row"] { font-weight: 600; color: #333; }
+    /* Vendor lane: Featured row + empty Featured slot (same look and place as every fleet site). */
+    .cmp-table tr.is-featured th[scope="row"] { box-shadow: inset 4px 0 0 var(--primary); background: #fff; }
+    .vt-tag { margin-right: 0.6rem; color: var(--primary-dark); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+    .vt-badge { display: block; margin: 0 0 2px; }
+    .vt-cta { display: block; margin-top: 4px; font-size: 0.85rem; font-weight: 600; white-space: nowrap; }
+    .cmp-table tr.is-placeholder td { padding: 6px 9px; background: #fff; }
+    .vt-promo {
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px 14px;
+      padding: 8px 12px; border: 1px dashed #A9D6C8; border-radius: 8px;
+      position: sticky; left: 9px; max-width: calc(100vw - 64px);
+    }
+    .vt-promo-text { color: var(--muted); font-size: 0.9rem; }
+    .vt-promo-cta { font-size: 0.9rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
+    .vt-promo-cta:hover { text-decoration: underline; }
+    .vt-note { margin: 10px 0 0; color: var(--muted); font-size: 0.85rem; }
     /* Verdict */
     .verdict-box {
       background: linear-gradient(135deg, #f0f9f5 0%, #e6f4ef 100%);

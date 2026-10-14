@@ -1,0 +1,47 @@
+# Land routine branch — merges a routine's claude/land/* branch into main.
+#
+# Routines that use .claude/scripts/land-run.sh push their run's commits to a claude/land/* branch;
+# this workflow merges that branch into main, and the site deploys from main exactly as before.
+# land-run.sh rebases onto the latest main seconds earlier, so the merge is normally a fast-forward.
+# If main moved in between, a plain merge is tried; a real conflict leaves the branch in place and
+# opens a pull request so nothing is lost.
+name: Land routine branch
+on:
+  push:
+    branches: ['claude/land/**']
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: land-main
+  cancel-in-progress: false
+jobs:
+  land:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Merge into main
+        env:
+          BR: ${{ github.ref_name }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          git config user.name "routine-land"
+          git config user.email "routines@layer3labs.io"
+          git fetch origin "$BR"
+          if git merge --ff-only "origin/$BR"; then
+            echo "fast-forwarded main to $BR"
+          elif git merge --no-ff -m "Land $BR" "origin/$BR"; then
+            echo "merged $BR into main"
+          else
+            git merge --abort || true
+            echo "CONFLICT merging $BR into main; opening a pull request instead"
+            gh pr create --base main --head "$BR" --title "Land $BR (manual merge needed)" \
+              --body "A routine's commits could not be merged into main automatically (conflict). Resolve and merge." || true
+            exit 1
+          fi
+          git push origin HEAD:main
+          git push origin --delete "$BR" || true
