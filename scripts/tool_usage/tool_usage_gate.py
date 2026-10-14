@@ -353,7 +353,8 @@ def page_bundle(base, route):
     """Picks render after the visitor computes, so read the page AND its same-origin JS chunks."""
     html = fetch(base + route)
     parts = [html]
-    for src in re.findall(r'<script[^>]+src="([^"]+)"', html):
+    # <script src> plus Astro island chunks (component-url / renderer-url): client:only islands render the picks.
+    for src in re.findall(r'<script[^>]+src="([^"]+)"', html) + re.findall(r'(?:component|renderer)-url="([^"]+)"', html):
         if src.startswith("//") or (src.startswith("http") and not src.startswith(base)):
             continue
         parts.append(fetch(src if src.startswith("http") else base + "/" + src.lstrip("/")))
