@@ -1,0 +1,44 @@
+{
+ "dispositions": {
+  "https://www.bankrate.com/home-equity/what-to-do-if-denied-a-heloc": {
+   "disposition": "skipped-low-value",
+   "our_url": ""
+  },
+  "https://www.nerdwallet.com/student-loans/learn/consolidate-student-loans": {
+   "disposition": "skipped-low-value",
+   "our_url": ""
+  },
+  "https://www.nerdwallet.com/student-loans/learn/taxes-recent-grads": {
+   "disposition": "skipped-low-value",
+   "our_url": ""
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/questions-ask-financial-advisor": {
+   "disposition": "skipped-duplicate",
+   "our_url": "/guides/financial-advisor-worth-it/"
+  },
+  "https://www.nerdwallet.com/retirement/learn/retirement-age": {
+   "disposition": "skipped-low-value",
+   "our_url": ""
+  },
+  "https://www.nerdwallet.com/taxes/learn/self-employment-tax": {
+   "disposition": "skipped-duplicate",
+   "our_url": "/self-employment-tax/"
+  },
+  "https://www.nerdwallet.com/taxes/learn/fica-tax-withholding": {
+   "disposition": "skipped-duplicate",
+   "our_url": "/guides/"
+  },
+  "https://www.bankrate.com/mortgages/how-many-times-can-you-refinance": {
+   "disposition": "skipped-low-value",
+   "our_url": ""
+  },
+  "https://www.bankrate.com/banking/savings/chase-savings-rates": {
+   "disposition": "skipped-low-value",
+   "our_url": ""
+  },
+  "https://www.bankrate.com/loans/auto-loans/reviews": {
+   "disposition": "skipped-low-value",
+   "our_url": ""
+  }
+ }
+}
