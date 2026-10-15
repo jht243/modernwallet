@@ -1,0 +1,77 @@
+{
+  "status": "OK",
+  "site": "sc-domain:themodernwallet.com",
+  "base_url": "https://www.themodernwallet.com",
+  "generated_at": "2026-10-15T17:10:49.329819+00:00",
+  "mode": "FIX",
+  "mode_override": null,
+  "google_update_ongoing": [],
+  "windows": {
+    "w90": [
+      "2026-07-16",
+      "2026-10-13"
+    ],
+    "w28": [
+      "2026-09-16",
+      "2026-10-13"
+    ],
+    "age_window": [
+      "2026-06-16",
+      "2026-08-29"
+    ]
+  },
+  "google_updates": {
+    "ongoing": [],
+    "recent_60d": [
+      {
+        "name": "September 2026 spam update",
+        "begin": "2026-09-24",
+        "end": "2026-10-08"
+      },
+      {
+        "name": "August 2026 spam update",
+        "begin": "2026-08-18",
+        "end": "2026-08-21"
+      }
+    ]
+  },
+  "band_median_ctr": {
+    "(0, 5)": 0.0,
+    "(5, 10)": 0.0,
+    "(10, 15)": 0.0,
+    "(15, 20.5)": 0.0
+  },
+  "pages": [],
+  "skipped": [],
+  "backlog": [],
+  "demand": [],
+  "unstable": [],
+  "stats": {
+    "pages_90d": 290,
+    "below_impression_floor": 283,
+    "too_young": 0,
+    "nav_or_hub": 0,
+    "mostly_synthetic": 0,
+    "beyond_page_2": 7,
+    "ctr_ok": 0,
+    "cooldown": 0,
+    "recently_edited": 0,
+    "impression_floor": 150,
+    "candidates": 0,
+    "picked": 0,
+    "top_pages_facts_only": 0
+  },
+  "provenance": {
+    "sources": [
+      "searchconsole.googleapis.com",
+      "analyticsdata.googleapis.com",
+      "status.search.google.com"
+    ],
+    "gsc_property": "sc-domain:themodernwallet.com",
+    "ga4_property": "543459487",
+    "service_account": "indexing-api-bot@caracas-research.iam.gserviceaccount.com",
+    "gsc_data_state": "final",
+    "third_party_sources": [],
+    "sha256": "21dfb341804d3b104d6956ba94eac7f03f80fd2340993d238f45b3765e6d837c"
+  }
+}
