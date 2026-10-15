@@ -1721,7 +1721,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         question: "Is it worth using a mortgage broker instead of a direct lender?",
         answer:
-          "Mortgage brokers shop your application across multiple lenders simultaneously, which can surface better rates than any single lender offers directly — especially for borrowers with non-standard profiles (self-employed, high DTI, recent job change). Brokers earn a commission paid by the lender, so their service costs you nothing directly. The trade-off is that a broker's lender network is fixed — they may not have relationships with the specific bank or credit union offering the best deal in your local market. Both channels are worth exploring for large loans.",
+          "Mortgage brokers shop your application across multiple lenders simultaneously, which can surface better rates than any single lender offers directly — especially for borrowers with non-standard profiles (self-employed, high DTI, recent job change). Brokers earn a commission paid by the lender, so their service costs you nothing directly. The trade-off is that a broker's lender network is fixed — they may not have relationships with the specific bank or credit union offering the best deal in your local market. Both channels are worth exploring for large loans. Our [mortgage broker vs lender](/compare/mortgage-broker-vs-lender/) comparison covers how each is paid and what to ask.",
       },
       {
         question: "How long does it take to close a mortgage?",

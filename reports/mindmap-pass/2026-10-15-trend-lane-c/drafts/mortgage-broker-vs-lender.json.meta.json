@@ -1,0 +1,120 @@
+{
+ "slug": "mortgage-broker-vs-lender",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 2094,
+ "floor": 1500,
+ "input_tokens": 30130,
+ "output_tokens": 17809,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.4767,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "thin fact list: \u2248433 fact words for a 1500-word floor (ratio 0.29); expand it with sourced facts before any regeneration"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2094,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 433,
+   "floor": 1500,
+   "ratio": 0.29,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    4
+   ],
+   "applied": [
+    {
+     "id": "sections[0].content",
+     "quote": "Going straight to a lender usually means working with a mortgage loan officer, and loan officers often work for one specific lender.",
+     "replacement": "Mortgage loan officers often work for one specific lender.",
+     "type": "unsupported",
+     "why": "SOURCE never says going to a lender usually means a loan officer."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "A bank that makes mortgages with its own money is acting as a lender under the CFPB definition.",
+     "replacement": "A bank that makes direct loans is a financial institution acting as a lender under the CFPB definition.",
+     "type": "inference",
+     "why": "SOURCE says nothing about banks or lending their own money."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Some financial institutions operate as both lenders and brokers, so a firm's name does not tell you which role it plays in your loan.",
+     "replacement": "Some financial institutions operate as both lenders and brokers.",
+     "type": "inference",
+     "why": "SOURCE says nothing about firm names revealing roles."
+    },
+    {
+     "id": "faqItems[1].answer",
+     "quote": "The main tradeoff is the loan-specific fee or commission the broker earns, which you or the lender pays.",
+     "replacement": "One tradeoff is the loan-specific fee or commission the broker earns, which you or the lender pays.",
+     "type": "unsupported",
+     "why": "SOURCE does not rank the fee as the main disadvantage."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "A bank that makes direct loans is a financial institution acting as a lender under the CFPB definition.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE never mentions banks."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "That makes the mortgage broker vs bank question the same choice under a different name.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not equate banks with lenders."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "A loan officer at a direct lender can show you that lender's loans.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not say what loans a loan officer shows."
+    },
+    {
+     "id": "faqItems[2].answer",
+     "quote": "A loan officer at a bank or other direct lender often works for that one lender.",
+     "replacement": "Mortgage loan officers often work for one specific lender.",
+     "type": "unsupported",
+     "why": "SOURCE never mentions banks."
+    }
+   ],
+   "deleted_final": 4,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2176
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 187.1,
+ "response_id": "msg_011Cg3c2TH1ARcnj3zmfEoar",
+ "generated_at": "2026-10-15T07:13:29+0000"
+}

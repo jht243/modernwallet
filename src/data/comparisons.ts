@@ -30,6 +30,119 @@ export interface ComparisonEntry {
 }
 
 export const COMPARISONS: ComparisonEntry[] = [
+  // ── mindmap-pass 2026-10-15 (trend-lane-c, mortgage broker vs lender): mortgage-broker-vs-lender ──
+  {
+    "updated": "2026-10-15",
+    "slug": "mortgage-broker-vs-lender",
+    "title": "Mortgage Broker vs Lender: How Each Works and Gets Paid",
+    "metaDescription": "Mortgage broker vs lender compared: who makes the loan, how each gets paid, who pays the fee, and what to ask before you sign with either one.",
+    "targetKeyword": "mortgage broker vs lender",
+    "optionA": "Mortgage Broker",
+    "optionB": "Mortgage Lender",
+    "segment": "lending",
+    "h1": "Mortgage Broker vs Lender: Using a Broker or Going Straight to a Mortgage Lender",
+    "introText": "A mortgage lender makes your loan, and a mortgage broker helps you find one. The lender is the financial institution you repay, while the broker does not lend money and is paid a loan-specific fee for its services. At ModernWallet, we publish plain-language money guides and free calculators.\n\nNeither path is automatically better. Going straight to a lender gets you that one institution's offer, and hiring a broker gets you someone who typically works with multiple lenders. Whichever you pick, the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-mortgage-lender-and-a-mortgage-broker-en-130/) says to shop around for the best loan terms and the lowest interest rates and fees.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "What it is",
+          "a": "A person you use to find different lenders or mortgage loans",
+          "b": "A financial institution that makes direct loans"
+        },
+        {
+          "dimension": "Does it make the loan",
+          "a": "No. A broker does not lend money, so the loan comes from a lender",
+          "b": "Yes. You repay the lender based on the terms of your loan"
+        },
+        {
+          "dimension": "How many lenders it typically works with",
+          "a": "Typically works with multiple lenders. Which lenders varies by broker",
+          "b": "Its mortgage loan officers often work for that one specific lender"
+        },
+        {
+          "dimension": "How you pay",
+          "a": "A loan-specific fee or commission for the broker's services",
+          "b": "Loan repayment under the loan terms. The loan officer is usually paid a loan-specific fee or commission"
+        },
+        {
+          "dimension": "Who can pay it",
+          "a": "You or the lender pays the broker's fee or commission",
+          "b": "You or the lender pays the loan officer's fee or commission"
+        },
+        {
+          "dimension": "What to ask before you sign on",
+          "a": "The fee, who pays it, how the broker is paid, and which lenders the broker works with",
+          "b": "Whether a broker is involved, the loan officer's fee, and who pays it"
+        }
+      ]
+    },
+    "verdict": "Go straight to a mortgage lender if you want one institution's offer and plan to collect competing offers yourself. Expect to work with a loan officer who often works for that one lender. Use a mortgage broker if you want one person, who typically works with multiple lenders, to help you find different lenders or loans. You would accept a loan-specific fee, paid by you or by the lender. This framing does not serve a borrower who expects a broker, or a direct lender, to guarantee the lowest rate. The CFPB sources do not establish that either path prices lower, so that borrower should collect written offers from both before choosing. It also does not serve anyone who skips the fee question, and if a broker or lender will not put the fee and the payer in writing, keep shopping. Our read would change if the firm you are talking to acts as both lender and broker on your loan. Then the first thing to settle is whether a broker is involved and what fee that brings. It would also change if two written offers carry the same loan terms and only one includes a fee you pay yourself.",
+    "sections": [
+      {
+        "heading": "Who Makes the Loan and Who Finds It",
+        "content": "The difference between a mortgage broker and a lender is who supplies the money. The CFPB defines a lender as a financial institution that makes direct loans. When you take out a loan with a lender, you pay that lender back based on the terms of your loan.\n\nA broker does not lend money. You can use a broker to find different lenders or different mortgage loans, and brokers typically work with multiple lenders. When you work with a broker, you pay a loan-specific fee for the broker's services.\n\nThe loan always comes from a lender, even when a broker found it. Mortgage loan officers often work for one specific lender. Hiring a broker means one person can help you look across several lenders before you pick one."
+      },
+      {
+        "heading": "How Each One Gets Paid",
+        "content": "The person who helps you get a mortgage is usually paid a loan-specific fee or commission, and that money is paid by you or by the lender you use. That applies whether the person is a loan officer at a direct lender or a broker, according to the [CFPB's explanation of how loan officers and brokers get paid](https://www.consumerfinance.gov/ask-cfpb/how-does-a-mortgage-loan-officer-or-broker-get-paid-en-132/).\n\nLenders can pay loan officers and brokers a salary, a fixed amount per loan, a fixed percentage of the loan amount, or a combination of those. When the pay is set per loan, the lender can put a minimum or a maximum on it. The size of any fee or commission varies, so ask for the figure in writing.\n\nFederal law prohibits commissions from varying based on the terms of the mortgage. In plain terms, the person helping you cannot earn a bigger commission because your loan has different terms. \n\nWith a direct lender, you repay the loan under its terms, and the loan officer's fee or commission is paid by you or by the lender. With a broker, you still repay the lender under the loan terms, and the broker is paid a loan-specific fee by you or by the lender. "
+      },
+      {
+        "heading": "Mortgage Broker vs Loan Officer and Firms That Do Both",
+        "content": "Some financial institutions operate as both lenders and brokers. The CFPB's advice is to ask whether a broker is involved in your loan transaction. The answer tells you whether someone other than the lender is part of the deal and being paid a fee for it.\n\nLoan officers and brokers are different roles. The CFPB uses the term loan officer or broker for whoever works with you to get a mortgage. Mortgage loan officers often work for one specific lender, while mortgage brokers typically work with multiple lenders.\n\nA broker can help you compare loans across the lenders the broker works with, and which lenders those are varies by broker. Loan officers and brokers are both usually paid a loan-specific fee or commission, paid by you or by the lender.\n\nAsk any firm that might play both roles whether it will make this loan itself or another lender will. Ask whether a broker is involved in this transaction, and if so, what the fee is and who pays it. Is a broker involved in this transaction, and if so, what is the fee and who pays it?"
+      },
+      {
+        "heading": "Questions to Ask Either One Before You Apply",
+        "content": "Ask the same short set of questions whether you sit down with a broker or a lender. The CFPB says that before you work with a loan officer or broker, you should understand their fees and who pays them. For questions about the loan itself, use our guide to [questions to ask a mortgage lender](/guides/questions-to-ask-a-mortgage-lender/).\n\nOn pay, ask what the loan-specific fee or commission is and whether you or the lender pays it. Ask how the person is paid: a salary, a fixed amount per loan, a fixed percentage of the loan amount, or a combination. If the pay is set per loan, ask whether the lender sets a minimum or a maximum.\n\nA firm that operates as both a lender and a broker calls for one more question: is a broker involved in this loan transaction? Ask which institution will make the loan, too. From a broker, ask which lenders it works with, because that varies from one broker to the next.\n\nPrice questions apply to every offer you collect. Ask for the interest rate, the fees, and the loan terms in writing. The CFPB says to shop around for the best terms and the lowest rates and fees on either path. Written figures let you set a broker's options next to a direct lender's offer and compare them line by line."
+      },
+      {
+        "heading": "Matching the Choice to How You Want to Shop",
+        "content": "The mortgage broker vs direct lender choice comes down to how you want to gather offers. Going to a lender directly means a loan officer who often works for that one lender walks you through that lender's loans. Hiring a broker means one person who typically works with multiple lenders helps you find different lenders or loans.\n\nPick a direct lender if you want one institution's offer and are willing to collect other offers yourself. Pick a broker if you want help finding loans across several lenders and accept that the broker is paid a loan-specific fee, by you or by the lender. Before you request quotes on either path, decide which loan type you are asking about using our guide to [types of mortgage loans](/guides/types-of-mortgage-loans/).\n\nThe CFPB sources do not establish that brokers get lower rates than direct lenders, and they do not establish the reverse either. Rates and fees vary by borrower and by day. Treat any claim that one path is always cheaper as unproven until you hold written offers from both."
+      },
+      {
+        "heading": "Shopping Around on Either Path",
+        "content": "Using a broker does not replace shopping around. Whether you use a broker or a direct lender, the CFPB says to always shop around for the best loan terms and the lowest interest rates and fees. It also says you can shop around for a lender and a broker to find the best rate.\n\nThat means you can run both paths at once. Get an offer from at least one direct lender, ask a broker what it can find, and compare the rate, fees, and terms in writing. Ask each one the same fee question so your comparison covers who pays the person helping you as well as the loan price.\n\nFor direct lenders to request quotes from, start with our roundup of the [best mortgage lenders](/roundup/best-mortgage-lenders/). Write down each offer's rate, fees, and who pays the loan officer or broker, then use that sheet to make your mortgage broker vs lender decision."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is it better to go through a broker or a lender?",
+        "answer": "Neither is automatically better. A lender makes the loan, while a broker does not lend money and helps you find different lenders or loans for a loan-specific fee. Go to a lender if you want one institution's offer, or use a broker if you want someone who typically works with multiple lenders to gather several. Shop around either way."
+      },
+      {
+        "question": "What are the disadvantages of using a mortgage broker?",
+        "answer": "One tradeoff is the loan-specific fee or commission the broker earns, which you or the lender pays. A broker does not lend money, so the loan still comes from a lender, and which lenders a broker works with varies. The CFPB sources do not establish that brokers get lower rates, so compare a broker's options against a direct lender's written offer."
+      },
+      {
+        "question": "Why do people use mortgage brokers instead of banks?",
+        "answer": "A broker can help you find different lenders or mortgage loans, because brokers typically work with multiple lenders. Mortgage loan officers often work for one specific lender. The broker is paid a loan-specific fee or commission, by you or by the lender, so ask about the fee before you sign on."
+      },
+      {
+        "question": "Is a mortgage broker the same as a loan officer?",
+        "answer": "No. Both work with you to get a mortgage, but mortgage loan officers often work for one specific lender, while mortgage brokers typically work with multiple lenders. Lenders can pay either one a salary, a fixed amount per loan, a fixed percentage of the loan amount, or a combination."
+      },
+      {
+        "question": "Do I still need to shop around if I use a broker?",
+        "answer": "Yes. The CFPB says to shop around for the best loan terms and the lowest interest rates and fees, whether you use a broker or a direct lender. You can shop around for a broker and a lender at the same time. Get written offers from both and compare the rate, fees, terms, and who pays the person helping you."
+      }
+    ],
+    "sources": [
+      {
+        "label": "CFPB: What is the difference between a mortgage lender and a mortgage broker?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-mortgage-lender-and-a-mortgage-broker-en-130/"
+      },
+      {
+        "label": "CFPB: How does a mortgage loan officer or broker get paid?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/how-does-a-mortgage-loan-officer-or-broker-get-paid-en-132/"
+      }
+    ],
+    "relatedComparisons": [],
+    "calculatorLinks": [
+      {
+        "label": "Closing cost calculator",
+        "href": "/mortgage/closing-cost-calculator/"
+      }
+    ]
+  },
   // ── mindmap-pass 2026-10-14 (trend-lane-c, money market account vs fund): money-market-account-vs-money-market-fund ──
   {
     "updated": "2026-10-14",

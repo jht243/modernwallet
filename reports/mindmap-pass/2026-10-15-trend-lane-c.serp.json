@@ -1,0 +1,122 @@
+{
+ "rows": [
+  {
+   "keyword": "mortgage broker vs lender",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.consumerfinance.gov",
+    "www.chase.com",
+    "www.youtube.com",
+    "www.redfin.com",
+    "www.redtreemtg.com",
+    "www.bankrate.com",
+    "www.investopedia.com",
+    "onetrusthomeloans.com",
+    "firstcountybank.com",
+    "www.experian.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.consumerfinance.gov",
+    "www.reddit.com",
+    "www.chase.com",
+    "www.pnc.com",
+    "www.experian.com",
+    "www.bankrate.com",
+    "onetrusthomeloans.com",
+    "www.sofi.com",
+    "www.redfin.com",
+    "www.facebook.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Is it better to go through a broker or lender?",
+    "How much does a mortgage broker make on a $500,000 mortgage?",
+    "What are the disadvantages of using a mortgage broker?",
+    "Is a better mortgage a lender or a broker?",
+    "What not to tell a mortgage lender?",
+    "Why do people use mortgage brokers instead of banks?"
+   ],
+   "related_searches": [
+    "Mortgage broker vs lender reddit",
+    "Mortgage broker vs lender pros and cons",
+    "How mortgage brokers rip you off",
+    "Mortgage broker vs loan officer",
+    "Mortgage Broker salary",
+    "Mortgage broker vs loan officer salary",
+    "How to become a mortgage broker",
+    "Mortgage broker near me"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.consumerfinance.gov, www.chase.com, www.youtube.com, www.redfin.com",
+   "se_results_count": 127
+  },
+  {
+   "keyword": "are free online wills legal",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.freewill.com",
+    "www.redcross.org",
+    "www.cnbc.com",
+    "www.doyourownwill.com",
+    "www.ncoa.org",
+    "texaslegal.org",
+    "www.statefarm.com",
+    "michiganlegalhelp.org",
+    "www.youtube.com",
+    "www.reddit.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Are free online wills legitimate?",
+    "Can I make a legally binding will without a lawyer?",
+    "Do online wills stand up in court?",
+    "What's the cheapest way to make a legal will?",
+    "What should you not put in a will?",
+    "Who cannot be a beneficiary of a will?"
+   ],
+   "related_searches": [
+    "are free online wills legal near california",
+    "are free online wills legal near texas",
+    "Free Wills for seniors",
+    "Can I write my own will and have it notarized",
+    "AARP free will forms",
+    "Free online will and trust",
+    "Free Will Kit by mail",
+    "Free will template"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 130
+  }
+ ],
+ "cost": "DataForSEO: 2 calls, $0.00830 of $2.00 budget"
+}
