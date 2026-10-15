@@ -59,6 +59,7 @@ import InflationCalculator from "./InflationCalculator";
 import ExpenseRatioCalculator from "./ExpenseRatioCalculator";
 import DebtConsolidationCalculator from "./DebtConsolidationCalculator";
 import SocialSecurityBreakEvenCalculator from "./SocialSecurityBreakEvenCalculator";
+import SocialSecurityColaCalculator from "./SocialSecurityColaCalculator";
 import MileageReimbursementCalculator from "./MileageReimbursementCalculator";
 import PortfolioRebalancingCalculator from "./PortfolioRebalancingCalculator";
 import HurricaneDeductibleCalculator from "./HurricaneDeductibleCalculator";
@@ -144,6 +145,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   // (seed: Social Security retirement), employee mileage reimbursement (seed: IRS mileage 2026),
   // and buy/sell rebalancing trades (seed: 60/40 portfolio).
   "social-security-break-even-calculator": SocialSecurityBreakEvenCalculator,
+  // mindmap-pass (2026-10-14): 2027 Social Security COLA — benefit after the 3.6% raise, with SSA rounding.
+  "social-security-cola-calculator": SocialSecurityColaCalculator,
   "mileage-reimbursement-calculator": MileageReimbursementCalculator,
   "portfolio-rebalancing-calculator": PortfolioRebalancingCalculator,
   // x-trends pass (2026-10-12): Florida hurricane deductible in dollars, with the calendar-year carryover.

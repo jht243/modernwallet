@@ -1,0 +1,150 @@
+{
+ "slug": "2027-ssdi-cola",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1620,
+ "floor": 1200,
+ "input_tokens": 30132,
+ "output_tokens": 25875,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.638,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "emptied by the claim check (nothing in the fact list could carry it): ['How Much SSDI Goes Up in 2027', 'When the 2027 SSDI Payment Increase Arrives', 'SGA and Trial Work Month Limits for 2027', 'Medicare Part B and the 2027 Social Security Disability COLA', 'Taxes on SSDI Benefits and Work Earnings'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1620,
+  "numbers_not_in_facts": [
+   "0.8",
+   "107",
+   "12",
+   "120",
+   "1701.11",
+   "20412",
+   "35",
+   "53",
+   "60",
+   "708",
+   "80"
+  ],
+  "fact_budget": {
+   "fact_words": 779,
+   "floor": 1200,
+   "ratio": 0.65,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    8
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "SSA rounds the result down, and the dollar amount on your COLA notice is the final figure for your record.",
+     "replacement": "The dollar amount on your COLA notice is the exact figure for your record.",
+     "type": "unsupported",
+     "why": "Fact list never states SSA rounding; only that the notice gives exact amounts."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "The [Social Security COLA calculator](/social-security-cola-calculator/) runs the same 3.6% multiplication on any monthly benefit you enter.",
+     "replacement": "See the [Social Security COLA calculator](/social-security-cola-calculator/) to estimate your new benefit.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe how the calculator works."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "At ModernWallet, we publish a [Social Security retirement calculator](/retirement/social-security-retirement-calculator/) and a [Social Security break-even calculator](/social-security-break-even-calculator/) for readers comparing benefit amounts at different claiming ages.",
+     "replacement": "At ModernWallet, we publish a [Social Security retirement calculator](/retirement/social-security-retirement-calculator/) and a [Social Security break-even calculator](/social-security-break-even-calculator/).",
+     "type": "unsupported",
+     "why": "Site self-description does not state these calculators' purpose or use case."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Your exact January deposit date appears on your COLA notice.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE says the notice lists exact dates; 'January deposit date' is narrower."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "If a Medicare premium is deducted from your benefit, a higher premium takes part of the 3.6% raise.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE states no premium deduction mechanics."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "In that case, your deposit grows by less than the gross COLA.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE states no net-raise effect."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Once your 2027 premium appears, subtract any premium increase from your gross raise to get the net change.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE gives no net-change method."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "The disabled-worker average starts lower, so the same 3.6% produces a smaller dollar raise of $59.",
+     "replacement": "The disabled-worker average goes from $1,642 to $1,701, a raise of $59.",
+     "type": "inference",
+     "why": "Causal framing not in SOURCE; figures are supported."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "3. Any deductions, which set how much of the raise reaches your account.",
+     "replacement": "3. Any deductions.",
+     "type": "inference",
+     "why": "SOURCE only says the notice lists deductions."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "SSDI receives the same COLA as other Social Security benefits, and the percentage changes from year to year with the CPI-W.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE doesn't state annual COLA occurrence or yearly variation rule."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "It can, if a Medicare premium is deducted from your benefit, but the 2027 Part B premium has not been announced.",
+     "replacement": "The 2027 Part B premium has not been announced.",
+     "type": "inference",
+     "why": "SOURCE states no premium deduction effect on raise."
+    }
+   ],
+   "deleted_final": 8,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1745
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 268.6,
+ "response_id": "msg_011Cg3QnUxo5RDfHQvVmviYE",
+ "generated_at": "2026-10-14T23:47:21-0500"
+}

@@ -30,6 +30,398 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // -- mindmap-pass 2026-10-14 (2027 COLA): 2027-ssdi-cola --
+  {
+    "updated": "2026-10-14",
+    "slug": "2027-ssdi-cola",
+    "title": "Social Security COLA 2027 for Disability: SSDI Up 3.6%",
+    "metaDescription": "The Social Security COLA 2027 for disability is a 3.6% cost-of-living adjustment. The average disabled-worker check rises from $1,642 to $1,701 in January.",
+    "h1": "Social Security COLA 2027 for Disability: A 3.6% Cost-of-Living Adjustment",
+    "cardBlurb": "Social Security disability benefits rise 3.6% with the January payment, so the average disabled-worker check goes from $1,642 to $1,701.",
+    "introText": "Social Security disability benefits go up 3.6%, so the average disabled-worker check rises from $1,642 to $1,701 a month. The [Social Security Administration (SSA)](https://www.ssa.gov/news/en/press/releases/2026-10-14.html) announced the 2027 cost-of-living adjustment (COLA) on Wednesday, October 14, 2026.\n\nThe raise takes effect with the January 2027 payment for Social Security Disability Insurance (SSDI). The monthly work limits for 2027 also went up, with substantial work starting above $1,770 a month ($2,950 if blind).",
+    "sections": [
+      {
+        "heading": "How Much SSDI Goes Up in 2027",
+        "body": "SSDI benefits go up 3.6% in 2027, starting with the January payment. The [SSA fact sheet](https://www.ssa.gov/news/en/cola/factsheets/2027.html) estimates the average disabled-worker benefit at $1,642 a month before the COLA and $1,701 after it. That is a raise of $59 a month, or $708 over 12 payments.\n\nFor a disabled worker with a spouse and one or more children, the estimated family average rises from $2,970 to $3,077 a month. That family raise comes to $107 a month.\n\n| Beneficiary group | Before the 3.6% COLA | After the 3.6% COLA |\n|---|---|---|\n| All disabled workers | $1,642 | $1,701 |\n| Disabled worker, spouse and one or more children | $2,970 | $3,077 |\n\nTo estimate your own new benefit, multiply your current monthly SSDI amount by 1.036. The dollar amount on your COLA notice is the exact figure for your record.\n\nSee the [Social Security COLA calculator](/social-security-cola-calculator/) to estimate your new benefit. For the retirement side of the same raise, where the average retirement benefit goes up $75 a month, see the [2027 Social Security COLA guide](/guides/2027-social-security-cola/)."
+      },
+      {
+        "heading": "When the 2027 SSDI Payment Increase Arrives",
+        "body": "The 3.6% COLA first appears in the SSDI payment for January 2027. SSA says nearly 72 million Social Security beneficiaries see the higher amount beginning that month.\n\nIf you receive Supplemental Security Income (SSI) as well as SSDI, the SSI portion rises sooner, starting with the payment on December 31, 2026. About 7.3 million SSI recipients get that early increase. Some people receive both benefits, and SSA says the COLA applies to 76 million Americans in total.\n\nThe [2027 SSI increase](/guides/ssi-increase-2027/) guide covers the new SSI payment amounts in more detail.\n\nSSA mails COLA notices in December. If you have a personal [my Social Security](https://www.ssa.gov/myaccount/) account, you can read the notice online starting in late November, up to three weeks before the paper copy. Without an account, you need to create one and enroll in paperless notices by November 18 to see the notice online.\n\nAccount holders can also choose text or email alerts. The notice is a one-page summary that lists the exact dates and dollar amounts of your new benefit and any deductions."
+      },
+      {
+        "heading": "SGA and Trial Work Month Limits for 2027",
+        "body": "In 2027, monthly earnings above $1,770 count as substantial gainful activity (SGA) for SSDI recipients who are not blind. For blind recipients, the SGA line is $2,950 a month. SGA is the level of earnings SSA treats as substantial work.\n\nThe trial work period (TWP) uses a lower threshold. In 2027, any month with earnings above $1,270 is a trial work month, meaning a month that counts toward the trial work period.\n\n| Threshold | 2026 monthly limit | 2027 monthly limit |\n|---|---|---|\n| SGA, non-blind | $1,690 | $1,770 |\n| SGA, blind | $2,830 | $2,950 |\n| Trial work month | $1,210 | $1,270 |\n\nThe non-blind SGA limit rises by $80 a month, and the blind limit rises by $120. The trial work month threshold rises by $60.\n\nIf you work while receiving SSDI, compare your expected monthly earnings for 2027 against $1,770 for SGA and $1,270 for a trial work month. Use $2,950 in place of $1,770 if the blind limit applies to you."
+      },
+      {
+        "heading": "Medicare Part B and the 2027 Social Security Disability COLA",
+        "body": "The 2027 [Medicare](https://www.medicare.gov/) Part B premium has not been announced, so the net size of your SSDI raise is not final. Your COLA notice lists any deductions next to your new benefit amount.\n\nMedicare enrollees can see their 2027 premium amount in the my Social Security Message Center starting in late November. Information on other Medicare changes for 2027 will be posted at Medicare.gov.\n\nUntil the premium is published, treat $59 as the gross raise on the $1,642 average benefit."
+      },
+      {
+        "heading": "Taxes on SSDI Benefits and Work Earnings",
+        "body": "The 2027 SSA fact sheet lists payroll tax figures but no income tax rules for benefits. The [Is Social Security taxable](/guides/is-social-security-taxable/) guide explains how federal income tax applies to Social Security benefits.\n\nIf you work while on SSDI, the payroll tax rate on your earnings stays the same in 2027. The employee rate is 7.65%, and the self-employed rate is 15.30%. The 7.65% combines 6.2% for Social Security on earnings up to the taxable maximum with 1.45% for Medicare on all earnings.\n\nThe Social Security taxable maximum is $192,300 in 2027. It was $184,500 in 2026. Medicare tax has no earnings limit."
+      },
+      {
+        "heading": "How the 2027 Social Security Disability COLA Was Set",
+        "body": "The 2027 COLA is based on the increase in the Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W) from the third quarter of 2025 through the third quarter of 2026. By law, the COLA is tied to the CPI-W. SSDI recipients get the same 3.6% as other Social Security beneficiaries.\n\nAt 3.6%, this is the largest COLA since 2023, when the COLA was 8.7%. The COLA for 2026 was 2.8%. The 2027 figure is 0.8 percentage points above the 2026 figure.\n\nFor all retired workers, the estimated average goes from $2,095 to $2,170, a raise of $75. The disabled-worker average goes from $1,642 to $1,701, a raise of $59."
+      },
+      {
+        "heading": "What to Check on Your 2027 Social Security Disability COLA Notice",
+        "body": "Your COLA notice shows the exact new SSDI amount for your record, and it is available online in late November or by mail in December. Check these items when it arrives:\n\n1. The new monthly benefit. Compare it with your current amount times 1.036.\n2. The date of your first payment at the new amount.\n3. Any deductions.\n4. Your 2027 Medicare premium in the my Social Security Message Center, once it posts in late November.\n5. The separate SSI amount starting December 31, 2026, if you receive both benefits.\n\nIf the notice amount does not match your own estimate, look at the deductions line first, then compare the percentage with the official 3.6% on the [SSA COLA page](https://www.ssa.gov/cola/).\n\nSign in to [my Social Security](https://www.ssa.gov/myaccount/) in late November to read your notice and confirm your 2027 SSDI amount."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/social-security-cola-calculator/",
+        "label": "Social Security COLA calculator"
+      },
+      {
+        "href": "/retirement/social-security-retirement-calculator/",
+        "label": "Social Security retirement calculator"
+      },
+      {
+        "href": "/social-security-break-even-calculator/",
+        "label": "Social Security break-even calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much will my disability go up in 2027?",
+        "answer": "SSDI benefits go up 3.6% starting with the January 2027 payment. The average disabled-worker benefit rises from $1,642 to $1,701 a month, a $59 raise. To estimate your own amount, multiply your current benefit by 1.036, and use your COLA notice for the exact figure."
+      },
+      {
+        "question": "When will SSDI recipients get the 2027 COLA?",
+        "answer": "SSDI recipients get the 3.6% COLA starting with the January 2027 payment. If you also receive SSI, the SSI part rises with the payment on December 31, 2026. COLA notices appear in [my Social Security](https://www.ssa.gov/myaccount/) in late November and arrive by mail in December."
+      },
+      {
+        "question": "What is the SGA limit for 2027?",
+        "answer": "The 2027 SGA limit is $1,770 a month for SSDI recipients who are not blind. For blind recipients, it is $2,950 a month. The 2026 limits were $1,690 and $2,830."
+      },
+      {
+        "question": "What is a trial work month in 2027?",
+        "answer": "In 2027, a trial work month is any month with earnings above $1,270. That month counts toward the trial work period. The 2026 threshold was $1,210 a month."
+      },
+      {
+        "question": "Is the SSDI COLA the same as the retirement COLA?",
+        "answer": "Yes. SSDI recipients get the same 3.6% COLA for 2027 as other Social Security beneficiaries. The average disabled-worker benefit rises $59 a month, from $1,642 to $1,701. The average retirement benefit rises $75."
+      },
+      {
+        "question": "Will Medicare take part of my 2027 SSDI raise?",
+        "answer": "The 2027 Part B premium has not been announced, so the net size of your raise is not final. Your COLA notice lists any deductions next to your new benefit amount, and Medicare enrollees can see their 2027 premium in the my Social Security Message Center starting in late November."
+      }
+    ],
+    "sources": [
+      {
+        "label": "SSA: Social Security Announces 3.6 Percent Benefit Increase for 2027",
+        "url": "https://www.ssa.gov/news/en/press/releases/2026-10-14.html"
+      },
+      {
+        "label": "SSA: 2027 Cost-of-Living Adjustment (COLA) Fact Sheet",
+        "url": "https://www.ssa.gov/news/en/cola/factsheets/2027.html"
+      },
+      {
+        "label": "SSA: Cost-of-Living Adjustment (COLA) Information",
+        "url": "https://www.ssa.gov/cola/"
+      }
+    ]
+  },
+  // -- mindmap-pass 2026-10-14 (2027 COLA): ssi-increase-2027 --
+  {
+    "updated": "2026-10-14",
+    "slug": "ssi-increase-2027",
+    "title": "SSI Increase 2027 Sets the Federal Maximum at $1,029",
+    "metaDescription": "The SSI increase 2027 raises the Supplemental Security Income maximum to $1,029 a month. Couples get $1,544, starting December 31, 2026.",
+    "h1": "SSI Increase 2027 Brings the Federal Maximum to $1,029 a Month",
+    "cardBlurb": "The federal SSI maximum rises to $1,029 a month for one person and $1,544 for a couple, first paid December 31, 2026.",
+    "introText": "In 2027, the Supplemental Security Income (SSI) federal maximum is $1,029 a month for an individual and $1,544 for a couple. The first check at the new amounts is paid on December 31, 2026.\n\nThe [Social Security Administration (SSA)](https://www.ssa.gov/news/en/press/releases/2026-10-14.html) announced the 3.6 percent cost-of-living adjustment (COLA) behind this SSI increase on October 14, 2026. Your own check can be lower if you have countable income, or higher if your state adds a supplement.",
+    "sections": [
+      {
+        "heading": "2027 SSI Payment Amounts",
+        "body": "The federal SSI payment standard for 2027 is $1,029 a month for an individual and $1,544 a month for an eligible couple. The [SSA 2027 COLA fact sheet](https://www.ssa.gov/news/en/cola/factsheets/2027.html) lists those amounts, up from $994 and $1,491.\n\n| Recipient | 2026 monthly maximum | 2027 monthly maximum | Monthly change |\n|---|---|---|---|\n| Individual | $994 | $1,029 | +$35 |\n| Couple | $1,491 | $1,544 | +$53 |\n\nBoth increases follow the 3.6 percent COLA that SSA announced for 2027. For an individual, the federal maximum rises by $35 a month. Twelve payments at $1,029 add up to $12,348.\n\nFor a couple, the federal maximum rises by $53 a month. Twelve payments at $1,544 add up to $18,528. Over twelve payments, the yearly gain is $420 for an individual and $636 for a couple.\n\nThese figures are the federal maximums, before any state supplement and before any reduction for countable income. To run the same 3.6 percent raise on a Social Security benefit, use the [Social Security COLA calculator](/social-security-cola-calculator/)."
+      },
+      {
+        "heading": "When the First 2027 SSI Increase Is Paid",
+        "body": "The first SSI payment at the 2027 amounts is paid on December 31, 2026. SSA says increased payments to about 7.3 million people receiving SSI begin on that date.\n\nSocial Security benefits rise on a different schedule. Nearly 72 million Social Security beneficiaries see the 3.6 percent COLA beginning in January 2027. Some people receive both SSI and Social Security, and SSA says it will apply the COLA for 76 million Americans in all.\n\nLook for the higher amount in your SSI payment on December 31, 2026. Your COLA notice lists the exact date and dollar amount of your new benefit."
+      },
+      {
+        "heading": "Why Your SSI Check Can Differ from $1,029",
+        "body": "Your SSI check can differ from $1,029 because that figure is the federal maximum for an individual. These things affect the amount you actually receive:\n\n- **The federal payment standard.** It is $1,029 for an individual or $1,544 for a couple in 2027.\n- **Countable income.** Countable income can lower your payment below the federal maximum.\n- **A state supplement.** Some states add money on top of the federal payment, which can raise your total above $1,029.\n\nIf you get both Social Security and SSI, both payments change. The Social Security payment rises beginning in January 2027. The SSI payment rises with the December 31, 2026 payment.\n\nFor all disabled workers, SSA estimates the average monthly Social Security benefit at $1,642 before the COLA. After the COLA, the January 2027 estimate is $1,701. The [2027 SSDI COLA](/guides/2027-ssdi-cola/) guide covers disability benefits in more detail.\n\nYour one-page COLA notice shows the exact dates and dollar amounts of your new benefit and any deductions. Read it in [my Social Security](https://www.ssa.gov/myaccount/) starting in late November."
+      },
+      {
+        "heading": "How Countable Income Lowers a 2027 SSI Check",
+        "body": "An SSI check equals the federal payment standard minus the recipient's countable income, so the 2027 maximum of $1,029 drops by every dollar SSA counts. The [SSA 2027 COLA fact sheet](https://www.ssa.gov/news/en/cola/factsheets/2027.html) sets that standard, up from $994 in 2026. When countable income goes over the allowable limit, no SSI is paid.\n\nSSA's [SSI Income page](https://www.ssa.gov/ssi/text-income-ussi.htm) lays out two steps. First, subtract the income SSA does not count from total gross income, and what remains is countable income. Then subtract countable income from the federal benefit rate to get the monthly SSI federal benefit.\n\nEarned income covers wages and net earnings from self-employment. Unearned income includes Social Security benefits, pensions, unemployment benefits, interest, and cash from friends or relatives. SSA does not count SNAP (food stamps) or income tax refunds. Since September 30, 2024, the value of food no longer reduces an SSI payment.\n\nSSA's worked examples exclude the first $20 of income, so a $300 Social Security benefit counts as $280. For wages, SSA also drops the first $65 of earnings in a month and counts half of what is left. On $317 in wages, that leaves $232 after both exclusions, and half of it, $116, is countable.\n\n| Monthly income | Countable income | 2027 SSI check ($1,029 minus countable) |\n|---|---|---|\n| $300 Social Security benefit | $280 | $749 |\n| $317 in wages | $116 | $913 |\n\nSSA runs these same examples at the 2026 rate of $994, where they produce checks of $714 and $878. A federally administered state supplement, where a state has one, is added on top of the federal benefit, and the amount varies by state. To estimate a 2027 SSI check, add up your gross monthly income, subtract the exclusions above, and subtract what remains from $1,029."
+      },
+      {
+        "heading": "2027 SSI Resource Limits and Student Exclusion",
+        "body": "The SSI resource limits for 2027 are unchanged at $2,000 for an individual and $3,000 for a couple.\n\nIf you expect an inheritance, read the guide to [SSI and an inheritance](/guides/ssi-and-inheritance/) with the $2,000 and $3,000 limits in mind.\n\nThe SSI student exclusion does rise for 2027, with both a monthly limit and an annual limit.\n\n| SSI student exclusion | 2026 | 2027 |\n|---|---|---|\n| Monthly limit | $2,410 | $2,500 |\n| Annual limit | $9,730 | $10,080 |\n\nThe monthly limit goes up by $90. The annual limit goes up by $350."
+      },
+      {
+        "heading": "How the 3.6% COLA for 2027 Was Set",
+        "body": "The 3.6 percent COLA for 2027 is based on the increase in the Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W). The measurement runs from the third quarter of 2025 through the third quarter of 2026. The Social Security Act ties the COLA to the CPI-W.\n\n| COLA year | COLA |\n|---|---|\n| 2023 | 8.7% |\n| 2026 | 2.8% |\n| 2027 | 3.6% |\n\nThe 2027 COLA is the largest since 2023.\n\nThe same 3.6 percent applies to Social Security benefits. The [2027 Social Security COLA guide](/guides/2027-social-security-cola/) walks through the raise for retirement benefits."
+      },
+      {
+        "heading": "Other 2027 Figures in the SSA Fact Sheet",
+        "body": "The SSA 2027 fact sheet lists work and earnings figures alongside the SSI amounts.\n\n| Figure | 2026 | 2027 |\n|---|---|---|\n| Substantial Gainful Activity (SGA), non-blind | $1,690/mo | $1,770/mo |\n| SGA, blind | $2,830/mo | $2,950/mo |\n| Trial Work Period (TWP) month threshold | $1,210/mo | $1,270/mo |\n| Quarter of coverage (one work credit) | $1,890 | $1,970 |\n| Maximum taxable earnings | $184,500 | $192,300 |\n\nThe maximum Social Security benefit for a worker retiring at full retirement age rises from $4,152 to $4,188 a month. The tax rate stays at 7.65 percent for employees and 15.30 percent for the self-employed.\n\nIf you also expect Social Security retirement benefits, the [Social Security retirement calculator](/retirement/social-security-retirement-calculator/) estimates a monthly benefit."
+      },
+      {
+        "heading": "Your 2027 COLA Notice and How to Read It Online",
+        "body": "SSA's 2027 COLA notice is a simplified one-page letter with the exact dates and dollar amounts of your new benefit and any deductions. When and how you see it depends on whether you have a my Social Security account:\n\n- **With an account:** view the notice online starting in late November, up to three weeks earlier than the paper notice.\n- **Without an account:** create one and enroll in paperless notices by November 18 to see the notice online.\n- **Everyone else:** the notice arrives by mail in December.\n\nAccount holders can also choose text or email alerts. For Medicare enrollees, the 2027 premium amount appears in the my Social Security Message Center starting in late November.\n\nThe 2027 Medicare Part B premium has not been announced. Information about Medicare changes for 2027 will be posted at [Medicare.gov](https://www.medicare.gov/).\n\nThe official percentage and program figures are on the [SSA COLA page](https://www.ssa.gov/cola/). Before November 18, sign in or create an account at [my Social Security](https://www.ssa.gov/myaccount/) and turn on paperless notices so you can read your 2027 SSI amount in late November."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/social-security-cola-calculator/",
+        "label": "Social Security COLA calculator"
+      },
+      {
+        "href": "/retirement/social-security-retirement-calculator/",
+        "label": "Social Security retirement calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much will SSI checks be in 2027?",
+        "answer": "SSI checks in 2027 can be as high as $1,029 a month for an individual and $1,544 for a couple. Those federal maximums are up from $994 and $1,491 in 2026. Your check can be lower if you have countable income, or higher if your state adds a supplement."
+      },
+      {
+        "question": "When does the 2027 SSI increase start?",
+        "answer": "The 2027 SSI increase starts with the payment on December 31, 2026. SSA says increased payments to about 7.3 million SSI recipients begin on that date. Social Security benefits rise later, beginning in January 2027."
+      },
+      {
+        "question": "What is the SSI payment for a couple in 2027?",
+        "answer": "The federal SSI payment standard for an eligible couple is $1,544 a month in 2027. That is $53 more than the 2026 amount of $1,491. The resource limit for a couple is unchanged at $3,000."
+      },
+      {
+        "question": "Did the SSI resource limit change for 2027?",
+        "answer": "No, the SSI resource limits did not change for 2027. The limits are $2,000 for an individual and $3,000 for a couple. Those are the same amounts as in 2026."
+      },
+      {
+        "question": "Will I get a COLA if I get both SSI and Social Security?",
+        "answer": "Yes, both payments change. The SSI part rises with the payment on December 31, 2026, and the Social Security part rises with payments beginning in January 2027. Your COLA notice lists the exact dates and dollar amounts of your new benefit."
+      },
+      {
+        "question": "Why is my SSI check less than $1,029?",
+        "answer": "Your SSI check can be less than $1,029 because countable income lowers the payment below the federal maximum for an individual. Your one-page COLA notice in [my Social Security](https://www.ssa.gov/myaccount/) shows your exact amount and any deductions."
+      }
+    ],
+    "sources": [
+      {
+        "label": "SSA: Social Security Announces 3.6 Percent Benefit Increase for 2027",
+        "url": "https://www.ssa.gov/news/en/press/releases/2026-10-14.html"
+      },
+      {
+        "label": "SSA: 2027 Cost-of-Living Adjustment (COLA) Fact Sheet",
+        "url": "https://www.ssa.gov/news/en/cola/factsheets/2027.html"
+      },
+      {
+        "label": "SSA: SSI Income",
+        "url": "https://www.ssa.gov/ssi/text-income-ussi.htm"
+      }
+    ]
+  },
+  // -- mindmap-pass 2026-10-14 (2027 COLA): social-security-changes-2027 --
+  {
+    "updated": "2026-10-14",
+    "slug": "social-security-changes-2027",
+    "title": "Social Security Changes 2027 Listed Next to 2026 Figures",
+    "metaDescription": "Social Security changes 2027: a 3.6% COLA, a $192,300 wage base and a $25,560 earnings limit. See every 2026 vs 2027 figure in one table.",
+    "h1": "Social Security Changes for 2027 Beyond the 3.6% COLA",
+    "cardBlurb": "Beyond the 3.6% COLA, Social Security's taxable maximum rises to $192,300 and the top benefit at full retirement age rises to $4,188 a month.",
+    "introText": "Social Security changes for 2027 include a 3.6% cost-of-living adjustment (COLA) plus higher figures for the taxable maximum, the earnings test and the maximum benefit. The taxable maximum rises to $192,300, and the earnings-test limits rise to $25,560 and $67,920. One work credit takes $1,970 of earnings, and the maximum benefit at full retirement age (FRA) reaches $4,188 a month.\n\nThe non-blind Substantial Gainful Activity (SGA) amount rises to $1,770 a month, while the 7.65% employee payroll tax rate does not change. The [Social Security Administration (SSA)](https://www.ssa.gov/news/en/press/releases/2026-10-14.html) announced the new figures on Wednesday, October 14, 2026.",
+    "sections": [
+      {
+        "heading": "Every 2027 Social Security Change at a Glance",
+        "body": "Every dollar figure in the table below rises for 2027, including the Supplemental Security Income (SSI) payment standards, while both payroll tax rates stay the same.\n\nThe table compares each 2026 figure with its 2027 amount, taken from the SSA [fact sheet](https://www.ssa.gov/news/en/cola/factsheets/2027.html).\n\n| Item | 2026 | 2027 |\n|---|---|---|\n| Cost-of-living adjustment (COLA) | 2.8% | 3.6% |\n| Maximum taxable earnings | $184,500 | $192,300 |\n| Earnings for one work credit (quarter of coverage) | $1,890 | $1,970 |\n| Earnings test, under FRA (annual) | $24,480 | $25,560 |\n| Earnings test, year you reach FRA (annual) | $65,160 | $67,920 |\n| SGA, non-blind (monthly) | $1,690 | $1,770 |\n| SGA, blind (monthly) | $2,830 | $2,950 |\n| Trial work period month threshold (monthly) | $1,210 | $1,270 |\n| Maximum benefit at FRA (monthly) | $4,152 | $4,188 |\n| SSI federal payment, individual (monthly) | $994 | $1,029 |\n| SSI federal payment, couple (monthly) | $1,491 | $1,544 |\n| Payroll tax rate, employee | 7.65% | 7.65% |\n| Payroll tax rate, self-employed | 15.30% | 15.30% |\n\nSocial Security benefits rise with the January 2027 payment for nearly 72 million beneficiaries. About 7.3 million SSI recipients get the increase starting December 31, 2026. Some people receive both, and SSA says it will apply the COLA for 76 million Americans."
+      },
+      {
+        "heading": "Wage Base and Work Credits for People Who Work in 2027",
+        "body": "The Social Security wage base, also called the maximum taxable earnings, rises to $192,300 in 2027. It was $184,500 in 2026, so the cap goes up by $7,800. Employees pay 6.2% for Old-Age, Survivors, and Disability Insurance (OASDI), the Social Security part of payroll tax, on earnings up to that cap.\n\nAt the new cap, 6.2% of $192,300 comes to $11,922.60. Under the 2026 cap of $184,500, the same rate produced $11,439. A worker who earns at or above both caps pays $483.60 more in Social Security tax in 2027.\n\nIf your wages stay below $184,500, the higher cap does not change your Social Security tax. Wages between $184,500 and $192,300 become subject to the 6.2% tax.\n\nThe [Medicare](https://www.medicare.gov/) tax of 1.45% has no earnings limit, so it applies to all earnings. Together, 6.2% and 1.45% make up the 7.65% employee rate. Self-employed people pay 15.30%, the same rate as in 2026.\n\nEarned income above $200,000, or $250,000 for married couples filing jointly, pays an additional 0.9% Medicare tax. That 0.9% is not part of the 7.65% rate.\n\nOne work credit, which SSA calls a quarter of coverage, takes $1,970 of earnings in 2027. That is $80 more than the $1,890 required in 2026."
+      },
+      {
+        "heading": "2027 Earnings Test Limits for Claiming Before Full Retirement Age",
+        "body": "If you claim Social Security before full retirement age, the 2027 earnings test lets you earn $25,560 a year before SSA withholds any benefits. That limit works out to $2,130 a month. It rises from $24,480 in 2026, an increase of $1,080.\n\nAbove the limit, SSA withholds $1 in benefits for every $2 you earn.\n\nIn the year you reach full retirement age, a higher limit of $67,920 a year applies, or $5,660 a month. It was $65,160 in 2026, so this limit rises by $2,760. It counts only earnings from the months before you reach full retirement age.\n\nAbove that higher limit, SSA withholds $1 for every $3 you earn. Starting the month you reach full retirement age, the earnings test has no limit at all.\n\nIf you are weighing when to start benefits, compare claiming ages in the [Social Security break-even calculator](/social-security-break-even-calculator/). For which income counts toward these limits, read [does retirement income count as income for Social Security](/guides/does-retirement-income-count-as-income-for-social-security/). If you collect survivor benefits and work, read [survivor benefits and working](/guides/social-security-survivor-benefits-and-working/)."
+      },
+      {
+        "heading": "What the 2027 Social Security Changes Mean for Retirees",
+        "body": "Social Security retirement benefits rise 3.6% for 2027, an average increase of $75 a month, according to the [SSA press release](https://www.ssa.gov/news/en/press/releases/2026-10-14.html). The Social Security Act ties the COLA to the Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W). The 2027 COLA reflects the CPI-W increase from the third quarter of 2025 through the third quarter of 2026.\n\nAt 3.6%, this COLA is the largest since the 8.7% raise for 2023. The 2026 COLA was 2.8%. For more, see the SSA [COLA page](https://www.ssa.gov/cola/).\n\nSSA estimates these average monthly benefits payable in January 2027, before and after the COLA:\n\n| Beneficiary type | Before COLA | After 3.6% COLA | Change |\n|---|---|---|---|\n| All retired workers | $2,095 | $2,170 | +$75 |\n| Aged couple, both receiving benefits | $3,238 | $3,355 | +$117 |\n| Widowed mother and two children | $3,932 | $4,074 | +$142 |\n| Aged widow(er) alone | $1,936 | $2,005 | +$69 |\n\nThe maximum benefit for a worker retiring at full retirement age rises to $4,188 a month. It was $4,152 in 2026, a $36 increase. To estimate your own raise, multiply your current monthly benefit by 0.036, or enter it in the [Social Security COLA calculator](/social-security-cola-calculator/).\n\nIf you have a personal [my Social Security account](https://www.ssa.gov/myaccount/), you can view your COLA notice online starting in late November. Online notices arrive up to three weeks earlier than the paper notice. Account holders can also choose text or email alerts.\n\nIf you do not have an account, create one and enroll in paperless notices by November 18 to see the notice online. Everyone else gets the notice by mail in December. The one-page notice lists the exact dates and dollar amounts of your new benefit and any deductions.\n\nThe 2027 Medicare Part B premium has not been announced. Information about 2027 Medicare changes will be posted on [Medicare.gov](https://www.medicare.gov/). If you are enrolled in Medicare, your 2027 premium amount will appear in the my Social Security Message Center starting in late November.\n\nFor more on the raise itself, read the [2027 Social Security COLA guide](/guides/2027-social-security-cola/). For income tax on benefits, read [is Social Security taxable](/guides/is-social-security-taxable/). If you receive a federal civil service or military pension, see the [2027 COLA for federal and military retirees](/guides/2027-cola-federal-military-retirees/)."
+      },
+      {
+        "heading": "2027 Changes for Disability Benefits and SSI",
+        "body": "Social Security Disability Insurance (SSDI) benefits rise by the same 3.6% COLA starting with January 2027 payments. SSA estimates the average disabled worker's benefit at $1,642 before the COLA and $1,701 after it, a $59 increase. For a disabled worker with a spouse and one or more children, the estimate moves from $2,970 to $3,077.\n\nThe non-blind SGA amount rises from $1,690 to $1,770 a month. The blind SGA amount rises from $2,830 to $2,950 a month. The trial work period month threshold rises to $1,270 a month in 2027, up from $1,210 in 2026. The [2027 SSDI COLA](/guides/2027-ssdi-cola/) guide lists every disability figure.\n\nSSI payments rise starting December 31, 2026, for about 7.3 million recipients. The federal payment standard for an individual rises from $994 to $1,029 a month. For a couple, it rises from $1,491 to $1,544 a month.\n\nThe SSI student exclusion monthly limit rises from $2,410 to $2,500. The annual limit rises from $9,730 to $10,080. Read the [2027 SSI increase](/guides/ssi-increase-2027/) guide for the full SSI breakdown."
+      },
+      {
+        "heading": "Social Security Rules That Stay the Same in 2027",
+        "body": "Five Social Security rules carry over unchanged into 2027:\n\n- The employee rate stays at 7.65%, made up of 6.2% for Social Security and 1.45% for Medicare.\n- The self-employed rate stays at 15.30%.\n- The Medicare tax has no earnings limit.\n- The SSI resource limits stay at $2,000 for an individual and $3,000 for a couple.\n- The earnings test has no limit starting the month you reach full retirement age.\n\nTo put the 2027 Social Security changes into your own numbers, open your COLA notice in [my Social Security](https://www.ssa.gov/myaccount/) starting in late November and compare it with the SSA [fact sheet](https://www.ssa.gov/news/en/cola/factsheets/2027.html)."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/social-security-cola-calculator/",
+        "label": "Social Security COLA calculator"
+      },
+      {
+        "href": "/social-security-break-even-calculator/",
+        "label": "Social Security break-even calculator"
+      },
+      {
+        "href": "/retirement/social-security-retirement-calculator/",
+        "label": "Social Security retirement calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are the Social Security changes for 2027?",
+        "answer": "The Social Security changes for 2027 start with a 3.6% cost-of-living adjustment (COLA). The taxable maximum rises to $192,300, and the earnings-test limits rise to $25,560 and $67,920. One work credit takes $1,970 of earnings, and the maximum benefit at full retirement age reaches $4,188 a month. The 7.65% employee payroll tax rate does not change."
+      },
+      {
+        "question": "What is the Social Security wage base for 2027?",
+        "answer": "The Social Security wage base for 2027 is $192,300. It was $184,500 in 2026. Employees pay the 6.2% Social Security tax on earnings up to that amount, so the most an employee pays is $11,922.60. The 1.45% Medicare tax has no earnings limit."
+      },
+      {
+        "question": "What is the Social Security earnings limit for 2027?",
+        "answer": "The Social Security earnings limit for 2027 is $25,560 a year, or $2,130 a month, if you are under full retirement age. SSA withholds $1 in benefits for every $2 earned above it. In the year you reach full retirement age, the limit is $67,920, with $1 withheld for every $3 above it on earnings before that month. From the month you reach full retirement age, there is no limit."
+      },
+      {
+        "question": "What is the maximum Social Security benefit in 2027?",
+        "answer": "The maximum Social Security benefit for a worker retiring at full retirement age is $4,188 a month in 2027. That is up from $4,152 in 2026, an increase of $36. To see your own benefit amount, sign in to [my Social Security](https://www.ssa.gov/myaccount/)."
+      },
+      {
+        "question": "How much do you need to earn for a work credit in 2027?",
+        "answer": "You need $1,970 of earnings for one work credit in 2027. That is up from $1,890 in 2026. SSA calls this amount a quarter of coverage."
+      },
+      {
+        "question": "Is the Social Security tax rate changing in 2027?",
+        "answer": "No, the Social Security tax rate is not changing in 2027. Employees pay 7.65%, which is 6.2% for Social Security plus 1.45% for Medicare. Self-employed people pay 15.30%. The taxable maximum for the 6.2% portion rises to $192,300."
+      }
+    ],
+    "sources": [
+      {
+        "label": "SSA: Social Security Announces 3.6 Percent Benefit Increase for 2027",
+        "url": "https://www.ssa.gov/news/en/press/releases/2026-10-14.html"
+      },
+      {
+        "label": "SSA: 2027 Cost-of-Living Adjustment (COLA) Fact Sheet",
+        "url": "https://www.ssa.gov/news/en/cola/factsheets/2027.html"
+      }
+    ]
+  },
+  // -- mindmap-pass 2026-10-14 (2027 COLA): 2027-cola-federal-military-retirees --
+  {
+    "updated": "2026-10-14",
+    "slug": "2027-cola-federal-military-retirees",
+    "title": "FERS COLA 2027 Is 2.6% While CSRS and Military Get 3.6%",
+    "metaDescription": "FERS COLA 2027 (cost-of-living adjustment) is 2.6% for eligible annuitants. CSRS and military retired pay get 3.6%, and VA disability awaits Congress.",
+    "h1": "FERS COLA 2027 (Cost-of-Living Adjustment) for Federal and Military Retirees",
+    "cardBlurb": "The 2027 cost-of-living adjustment (COLA) is 2.6% for eligible FERS annuitants and 3.6% for CSRS and military retirees, while VA disability compensation waits on Congress.",
+    "introText": "The Federal Employees Retirement System (FERS) cost-of-living adjustment (COLA) for 2027 is 2.6%, while Civil Service Retirement System (CSRS) annuitants and military retirees get the full 3.6%. The 2.6% FERS increase reaches annuitants age 62 or older, plus disability retirees, special-provision retirees and survivor annuitants. The FERS annuity supplement gets no COLA.\n\nThe [Social Security Administration (SSA)](https://www.ssa.gov/news/en/press/releases/2026-10-14.html) announced the 3.6% Social Security COLA on October 14, 2026. [Department of Veterans Affairs (VA)](https://www.va.gov/disability/compensation-rates/veteran-rates/) disability compensation has no automatic COLA and rises only after [this year's Veterans' Compensation Cost-of-Living Adjustment Act](https://www.congress.gov/bill/119th-congress/senate-bill/4487) becomes law. That bill had not been signed as of October 14, 2026.",
+    "sections": [
+      {
+        "heading": "2027 COLA by Retirement System",
+        "body": "The 2027 COLA is 3.6% for Social Security, CSRS annuities and military retired pay. Eligible FERS annuities and Career Status Bonus (CSB) retired pay, often called REDUX, get 2.6%. VA disability compensation has no 2027 figure until the annual COLA act becomes law.\n\nThe Social Security figure tracks the Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W), according to the [SSA fact sheet](https://www.ssa.gov/news/en/cola/factsheets/2027.html). The 3.6% reflects the CPI-W increase from the third quarter of 2025 through the third quarter of 2026. [FEDweek](https://www.fedweek.com/fedweek/january-retirement-colas-set-3-6-percent-for-csrs-2-6-percent-for-fers/) and [Federal News Network](https://federalnewsnetwork.com/retirement/2026/10/2027-cola-is-3-6-for-many-retirees-but-some-feds-will-see-a-smaller-adjustment/) report 3.6% for CSRS annuitants and 2.6% for eligible FERS annuitants.\n\n| Payment | 2027 COLA | Who gets it / condition | Rule |\n|---|---|---|---|\n| Social Security | 3.6% | Social Security beneficiaries | Change in CPI-W, third quarter 2025 to third quarter 2026 |\n| CSRS annuity | 3.6% | All CSRS annuitants; first increase prorated at 1/12 per month payable | 5 U.S.C. 8340 |\n| FERS annuity | 2.6% | Age 62 or older, or retired on disability, under special provisions, or receiving a survivor annuity | 5 U.S.C. 8462: price change minus 1 point when above 3% |\n| FERS annuity supplement | No COLA | Not increased | Supplement excluded from the COLA |\n| Military retired pay | 3.6% | Military retirees outside CSB/REDUX | 10 U.S.C. 1401a |\n| Military retired pay, CSB/REDUX | 2.6% | First became members on or after August 1, 1986 and elected the Career Status Bonus | 10 U.S.C. 1401a: price change minus 1 point when above 1% |\n| VA disability compensation | Pending | Needs this year's COLA act; S. 4487 unsigned as of October 14, 2026 | Annual act of Congress |\n\nCSRS annuitants and military retirees outside the CSB/REDUX group get the 3.6% in full. FERS annuitants get 1 percentage point less, and only if they meet the age rule or an exemption. The [2027 Social Security COLA guide](/guides/2027-social-security-cola/) shows what the 3.6% adds to Social Security checks."
+      },
+      {
+        "heading": "Why the FERS COLA Is 2.6% in 2027",
+        "body": "FERS annuities rise 2.6% because [5 U.S.C. 8462](https://www.law.cornell.edu/uscode/text/5/8462) subtracts 1 percentage point from any price-index increase above 3%. The statute sets three tiers:\n\n- A change of 2% or less raises the annuity by the full change.\n- A change above 2% and up to 3% raises the annuity by 2%.\n- A change above 3% raises the annuity by the change minus 1 percentage point.\n\nThe 2027 change is 3.6%, which lands in the top tier. The top tier gives 3.6% minus 1 point, or 2.6%.\n\nThe same formula gives different results at other rates. At a 2.5% change, a FERS annuity would rise 2%, a gap of 0.5 point. At a 1.8% change, a FERS annuity would rise the full 1.8%.\n\nCSRS annuities under [5 U.S.C. 8340](https://www.law.cornell.edu/uscode/text/5/8340) carry no such subtraction, which is why CSRS retirees get the full 3.6%. The FERS annuity supplement gets no COLA at all, according to Federal News Network. Only the FERS annuity itself rises."
+      },
+      {
+        "heading": "The FERS Age-62 Rule and Its Exemptions",
+        "body": "A FERS annuitant who was under age 62 on December 1, 2026 does not get the 2027 COLA unless one of the exemptions in 5 U.S.C. 8462 applies. The statute exempts three groups from the age rule:\n\n- Annuitants who retired on disability\n- Special-provision retirees covered by the statute, such as law enforcement officers, firefighters and air traffic controllers\n- Survivor annuitants, who get the increase\n\nAn annuitant in any of those groups gets the 2.6% effective December 1, 2026. An annuitant outside those groups who was 62 or older on that date also gets the 2.6%.\n\nA regular FERS retiree who was 60 on December 1, 2026 gets no 2027 increase on the annuity. The age test applies on each December 1 effective date. The 60-year-old retiree's first FERS COLA comes on the first December 1 on which the retiree is 62 or older. Your own result depends on two facts: your age on December 1 and your retirement type."
+      },
+      {
+        "heading": "CSRS COLA and First-Year Proration",
+        "body": "CSRS annuitants get 3.6% for 2027 under 5 U.S.C. 8340, with a smaller first increase for recent retirees. The statute raises each CSRS annuity every December 1 by the percent change in the price index for the base quarter, which ends September 30. The change is rounded to the nearest one-tenth of a percent.\n\nA retiree's first increase is prorated at 1/12 of the percent for each month the annuity was payable before the increase. Proration stops at 12 months, so an annuity payable for a full 12 months gets the whole 3.6%. Only the first increase is prorated under the statute.\n\nTake an annuity first payable 6 months before December 1, 2026. The retiree's first increase is 6/12 of 3.6%, which equals 1.8%. An annuity payable for 3 months gets 3/12 of the increase, or 0.9%."
+      },
+      {
+        "heading": "Military Retirement COLA for 2027",
+        "body": "Military retired pay rises 3.6% for 2027, effective December 1, 2026, under [10 U.S.C. 1401a](https://www.law.cornell.edu/uscode/text/10/1401a). The statute ties the increase to the Consumer Price Index for the base quarter ending September 30, rounded to the nearest one-tenth of a percent. CSRS uses the same base quarter.\n\n[Military Times](https://www.militarytimes.com/pay-benefits/mil-money/2026/10/14/heres-the-2027-cost-of-living-increase-for-retirees-veterans/) gives the example of a military retiree receiving $2,500 in retired pay, who would see about $90 more per month. The math is $2,500 multiplied by 0.036, which equals $90.\n\nRetirees who first became members on or after August 1, 1986 and elected the Career Status Bonus, the REDUX group, get a smaller raise. Their COLA is the price-index percent minus 1 percentage point whenever that percent exceeds 1%. For CSB/REDUX retirees, 3.6% minus 1 point equals 2.6%.\n\nTo estimate retired pay under your own service record, use the [military retirement calculator](/retirement/military-retirement-calculator/). For the tax treatment of disability retired pay, read the guide on [whether military disability retirement pay is taxable](/guides/is-military-disability-retirement-pay-taxable/)."
+      },
+      {
+        "heading": "VA Disability Compensation and the Pending COLA Act",
+        "body": "VA disability compensation has no automatic COLA, so its 2027 increase depends on Congress passing the annual Veterans' Compensation Cost-of-Living Adjustment Act. The Senate version this year is S. 4487, introduced on May 11, 2026 and referred to a Senate committee. S. 4487 would raise three payments by the same percentage as the Social Security COLA:\n\n- VA disability compensation\n- Dependency and indemnity compensation (DIC)\n- The clothing allowance\n\nThe bill's increase would take effect December 1, 2026. With the Social Security COLA at 3.6%, enactment would mean a 3.6% increase for those payments. Military Times reports that veterans' benefit recipients are slated for the 3.6% COLA.\n\nAs of October 14, 2026, S. 4487 had not been signed into law. VA has published no 2027 rate table, so no 2027 dollar amounts for VA compensation are available. You can follow the bill's progress on its [Congress.gov page](https://www.congress.gov/bill/119th-congress/senate-bill/4487).\n\nIf you receive both retired pay and VA compensation, the [military retirement vs VA disability](/compare/military-retirement-vs-va-disability/) comparison covers how the two payments differ."
+      },
+      {
+        "heading": "When the 2027 Increase Shows Up",
+        "body": "Federal annuity COLAs take effect December 1, 2026 and appear in payments made in January 2027, according to FEDweek and Federal News Network. That timing applies to both the 3.6% CSRS increase and the 2.6% FERS increase.\n\nThe 3.6% military retired pay increase is effective December 1, 2026. VA compensation changes only after this year's COLA act becomes law. If S. 4487 is enacted as introduced, its effective date is December 1, 2026.\n\nThe [2027 Social Security changes](/guides/social-security-changes-2027/) guide covers the other 2027 Social Security updates."
+      },
+      {
+        "heading": "What to Check on Your Own Payment",
+        "body": "Your 2027 increase depends on your retirement system, your retirement type and, under FERS, your age on December 1, 2026. Work through these steps first:\n\n1. Match your payment to its row in the table above: Social Security, CSRS, FERS, military retired pay, CSB/REDUX or VA compensation.\n2. Under FERS, note whether you were 62 or older on December 1, 2026, or retired on disability or under special provisions.\n3. Under CSRS, if this is your first increase, count the months your annuity was payable before December 1, 2026. Multiply 3.6% by that count, then divide by 12.\n4. Multiply your current monthly payment by 0.036 for a 3.6% raise. Use 0.026 for a 2.6% raise.\n5. For Social Security, read your COLA notice or sign in to [my Social Security](https://www.ssa.gov/myaccount/).\n6. For VA compensation, wait until S. 4487 or this year's COLA act becomes law before counting on a new rate.\n\nOnce you have applied the FERS COLA for 2027 to your monthly annuity, enter the new amount in the [pension calculator](/retirement/pension-calculator/)."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/retirement/military-retirement-calculator/",
+        "label": "Military retirement calculator"
+      },
+      {
+        "href": "/retirement/pension-calculator/",
+        "label": "Pension calculator"
+      },
+      {
+        "href": "/social-security-cola-calculator/",
+        "label": "Social Security COLA calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the FERS COLA for 2027?",
+        "answer": "The FERS COLA for 2027 is 2.6%. The increase takes effect December 1, 2026 and shows up in payments made in January 2027. The 2.6% applies to FERS annuitants age 62 or older, disability retirees, special-provision retirees and survivor annuitants."
+      },
+      {
+        "question": "Why do FERS retirees get less COLA?",
+        "answer": "FERS retirees get less because 5 U.S.C. 8462 reduces any price-index increase above 3% by 1 percentage point. The 2027 change is 3.6%, so FERS annuities rise 2.6%. CSRS annuities have no such reduction and get the full 3.6%."
+      },
+      {
+        "question": "What is the CSRS COLA for 2027?",
+        "answer": "The CSRS COLA for 2027 is 3.6%, effective December 1, 2026. Retirees receiving their first increase get a prorated share: 1/12 of the percent for each month the annuity was payable, up to 12 months. An annuity payable for 6 months, for example, gets 1.8%."
+      },
+      {
+        "question": "What is the military retirement COLA for 2027?",
+        "answer": "Military retired pay rises 3.6% for 2027, effective December 1, 2026. Retirees who first became members on or after August 1, 1986 and elected the Career Status Bonus get 2.6%. Military Times gives the example of $2,500 in monthly retired pay rising by about $90."
+      },
+      {
+        "question": "What will the VA COLA be in 2027?",
+        "answer": "The 2027 VA COLA has not been set. Congress must pass this year's Veterans' Compensation Cost-of-Living Adjustment Act, and S. 4487 would match the Social Security COLA of 3.6%. As of October 14, 2026, the bill had not been signed, and VA has published no 2027 rate table."
+      },
+      {
+        "question": "Does the FERS supplement get a COLA?",
+        "answer": "No. The FERS annuity supplement does not receive a COLA, according to Federal News Network. Only the FERS annuity itself gets the 2.6% increase, subject to the age-62 rule and its exemptions."
+      }
+    ],
+    "sources": [
+      {
+        "label": "SSA: Social Security Announces 3.6 Percent Benefit Increase for 2027",
+        "url": "https://www.ssa.gov/news/en/press/releases/2026-10-14.html"
+      },
+      {
+        "label": "SSA: 2027 Cost-of-Living Adjustment (COLA) Fact Sheet",
+        "url": "https://www.ssa.gov/news/en/cola/factsheets/2027.html"
+      },
+      {
+        "label": "5 U.S.C. 8340: CSRS cost-of-living adjustment of annuities",
+        "url": "https://www.law.cornell.edu/uscode/text/5/8340"
+      },
+      {
+        "label": "5 U.S.C. 8462: FERS cost-of-living adjustments",
+        "url": "https://www.law.cornell.edu/uscode/text/5/8462"
+      },
+      {
+        "label": "10 U.S.C. 1401a: Military retired pay adjustments",
+        "url": "https://www.law.cornell.edu/uscode/text/10/1401a"
+      },
+      {
+        "label": "Congress.gov: S.4487, Veterans' Compensation Cost-of-Living Adjustment Act of 2026",
+        "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4487"
+      },
+      {
+        "label": "FEDweek: January retirement COLAs set, 3.6 percent for CSRS, 2.6 percent for FERS",
+        "url": "https://www.fedweek.com/fedweek/january-retirement-colas-set-3-6-percent-for-csrs-2-6-percent-for-fers/"
+      },
+      {
+        "label": "Military Times: The 2027 cost-of-living increase for retirees, veterans",
+        "url": "https://www.militarytimes.com/pay-benefits/mil-money/2026/10/14/heres-the-2027-cost-of-living-increase-for-retirees-veterans/"
+      }
+    ]
+  },
   // -- ga4-top-pages-pass 2026-10-14: medical-charity-moving-mileage-rates-2026 (adjacent spoke of /mileage-deduction/irs-mileage-rate-2026/) --
   {
     "updated": "2026-10-14",
@@ -164,10 +556,14 @@ export const GUIDES: Guide[] = [
       },
       {
         "heading": "What to Do Now That the 2027 Social Security COLA Is Announced",
-        "body": "Now that the official 2027 COLA of 3.6% is out, redo the math on your own check with the real percentage.\n\n1. Open the [SSA COLA page](https://www.ssa.gov/cola/) and confirm the official percentage.\n2. Multiply your current monthly benefit by that percentage to get your gross monthly raise.\n3. Subtract the Part B increase. Use the $6.60 Trustees projection until CMS sets the final 2027 premium.\n4. If your 2025 MAGI was above the 2026 IRMAA thresholds, a surcharge could raise your premium above the standard amount.\n5. Read our guide to [whether Social Security is taxable](/guides/is-social-security-taxable/) and our list of [states that tax Social Security](/guides/states-that-tax-social-security/) to see what share of the raise you keep after taxes.\n\nThe $65.40 example fits someone paying the standard Part B premium. If you are a new Medicare enrollee in 2027 or pay income-related amounts, the hold-harmless rule may not apply to you, so redo the subtraction with your own premium.\n\nIf you have not started benefits yet, compare claiming ages in the [Social Security break-even calculator](/social-security-break-even-calculator/)."
+        "body": "Now that the official 2027 COLA of 3.6% is out, redo the math on your own check with the real percentage.\n\n1. Open the [SSA COLA page](https://www.ssa.gov/cola/) and confirm the official percentage.\n2. Multiply your current monthly benefit by that percentage to get your gross monthly raise.\n3. Subtract the Part B increase. Use the $6.60 Trustees projection until CMS sets the final 2027 premium.\n4. If your 2025 MAGI was above the 2026 IRMAA thresholds, a surcharge could raise your premium above the standard amount.\n5. Read our guide to [whether Social Security is taxable](/guides/is-social-security-taxable/) and our list of [states that tax Social Security](/guides/states-that-tax-social-security/) to see what share of the raise you keep after taxes.\n\nThe $65.40 example fits someone paying the standard Part B premium. If you are a new Medicare enrollee in 2027 or pay income-related amounts, the hold-harmless rule may not apply to you, so redo the subtraction with your own premium.\n\nIf you have not started benefits yet, compare claiming ages in the [Social Security break-even calculator](/social-security-break-even-calculator/).\n\nTo see your own 2027 amount, enter your current benefit in the [Social Security COLA calculator](/social-security-cola-calculator/). For other groups, read [how much SSDI goes up in 2027](/guides/2027-ssdi-cola/), [the 2027 SSI payment amounts](/guides/ssi-increase-2027/), [what the 2027 COLA is for FERS, CSRS and military retirees](/guides/2027-cola-federal-military-retirees/), and [every other 2027 Social Security change](/guides/social-security-changes-2027/)."
       }
     ],
     "tools": [
+      {
+        "href": "/social-security-cola-calculator/",
+        "label": "Social Security COLA calculator"
+      },
       {
         "href": "/retirement/social-security-retirement-calculator/",
         "label": "Social Security retirement"
@@ -11902,6 +12298,7 @@ export const GUIDES: Guide[] = [
     ],
   },
   {
+    updated: "2026-10-14",
     slug: "ssi-and-inheritance",
     title: "Will an Inheritance Affect Your SSI Benefits in 2026?",
     metaDescription:
@@ -11912,7 +12309,7 @@ export const GUIDES: Guide[] = [
       "An inheritance can end your Supplemental Security Income if it's handled the wrong way. SSI is a needs-based program with strict limits on income and savings, so a sudden windfall can quickly push you over the line.\n\nThe good news is that you have real options. That's true whether you already receive SSI or expect to inherit money for a family member who does.\n\nThis guide explains how SSI treats an inheritance, what you must report, and when you must report it. It also covers the legal tools that can protect the money without costing you your monthly check.",
     sections: [
       { heading: "SSI vs. Social Security: Why the Difference Matters", body: "SSI is a needs-based benefit. It supports people who are 65 or older, blind, or disabled and have limited income and resources. Social Security retirement and disability (SSDI) are earned benefits tied to your work history instead. Only SSI has an income and resource test. An inheritance threatens SSI in a way it never threatens SSDI or retirement benefits.\n\nSSDI and Social Security retirement pay out based on what you paid into the system through payroll taxes. Social Security does not check your bank account or assets before sending that check. It pays out no matter how large your inheritance is. Medicare, the health coverage tied to SSDI, works the same way and never checks your assets.\n\nIf you receive both SSI and SSDI at the same time, only the SSI portion is at risk. Your SSDI payment stays the same regardless of what you inherit." },
-      { heading: "How SSI Counts an Inheritance", body: "SSI counts an inheritance as unearned income in the month you gain the legal right to use it. After that, it counts as a resource instead. This two-step rule catches many people off guard, because the same dollars get tested twice under two different rules.\n\nIn the month you receive it, the inheritance can reduce or zero out that month's SSI payment as income. Any amount left over on the first day of the following month counts toward your resource limit instead. Cash, stocks, real estate, and most other property all count the same way once you can access them.\n\nThe 2026 SSI resource limit is $2,000 for an individual and $3,000 for a couple. That cap has not changed since 1989. The maximum 2026 federal SSI payment is $994 a month for an individual and $1,491 for a couple. Most recipients start with very little room under that resource cap. Track your full [net worth](/net-worth/) before and after the inheritance arrives. This shows exactly how close you are to the limit." },
+      { heading: "How SSI Counts an Inheritance", body: "SSI counts an inheritance as unearned income in the month you gain the legal right to use it. After that, it counts as a resource instead. This two-step rule catches many people off guard, because the same dollars get tested twice under two different rules.\n\nIn the month you receive it, the inheritance can reduce or zero out that month's SSI payment as income. Any amount left over on the first day of the following month counts toward your resource limit instead. Cash, stocks, real estate, and most other property all count the same way once you can access them.\n\nThe 2026 SSI resource limit is $2,000 for an individual and $3,000 for a couple. That cap has not changed since 1989. The maximum 2026 federal SSI payment is $994 a month for an individual and $1,491 for a couple, rising to [$1,029 and $1,544 in 2027](/guides/ssi-increase-2027/). Most recipients start with very little room under that resource cap. Track your full [net worth](/net-worth/) before and after the inheritance arrives. This shows exactly how close you are to the limit." },
       { heading: "Reporting an Inheritance to Social Security", body: "You must report an inheritance to the Social Security Administration. Do this within 10 days after the end of the month you received it. This deadline applies whether you plan to keep the money, spend it, or give it away. You can report by phone, by mail, or at your local Social Security office.\n\nMissing the deadline carries a real cost. Social Security can cut your payment by $25 to $100 for each failure to report a change on time.\n\nReport the inheritance even if you expect to spend it before the resource limit ever applies. Social Security still needs the income reported for the month you received it, separate from any later resource question. Keep records such as the will, the estate closing statement, or a deposit slip showing the date and amount." },
       { heading: "How to Keep SSI After You Inherit Money", body: "You keep SSI after an inheritance by getting your countable resources back under the limit. Do this before the first day of the next month. That short window is the whole game, so plan before the money arrives whenever possible. Start planning as soon as you learn about the inheritance, since delays eat into your 10-day reporting window too.\n\nOne path is spending down on things SSI does not count. Examples include your home, one vehicle, medical or dental care, home repairs, and paying off debt. A second path is moving the money somewhere SSI excludes entirely. Options include a properly drafted trust or an ABLE account, opened before that month-end deadline.\n\nIf you also manage a family member's long-term care costs, Medicaid often follows the same monthly clock as SSI. The [Medicaid spend-down calculator](/elder-care/medicaid-spend-down-calculator/) can help you model how much to move, and by when." },
       { heading: "Special Needs Trusts vs. ABLE Accounts: The Real Tradeoff", body: "A special needs trust can shelter an unlimited amount, while an ABLE account only shields the first $100,000. That size gap is the single biggest factor in choosing between them.\n\nThe trust type matters too. A first-party (self-settled) special needs trust holds money that already legally belongs to you. It must repay Medicaid for its costs when you die. A third-party special needs trust holds money that never became yours, funded instead by a parent or other relative. It carries no Medicaid payback requirement.\n\nTiming decides which option you can still use. A qualified disclaimer can redirect an inheritance before you ever accept it. This sends the money straight into a third-party trust and skips the payback rule. Once the funds are already in your name, only two choices remain. Pick a first-party trust with payback, or an ABLE account. The ABLE account caps contributions at $20,000 a year and shields balances up to $100,000 for 2026. As a rule of thumb, pick the ABLE account for smaller inheritances spent on everyday disability costs. It is faster and cheaper to open. Reach for a trust when the inheritance is larger or still in probate. Also use a trust when it must cover costs an ABLE account cannot pay directly. The [special needs trust calculator](/elder-care/special-needs-trust-calculator/) can help you compare the true cost of each path." },
@@ -14527,6 +14924,7 @@ export const GUIDES: Guide[] = [
     ],
   },
   {
+    updated: "2026-10-14",
     slug: "social-security-survivor-benefits-and-working",
     title: "Social Security Survivor Benefits and the Earnings Limit",
     metaDescription:
@@ -14538,7 +14936,7 @@ export const GUIDES: Guide[] = [
     sections: [
       {
         heading: "The 2026 Earnings Limits",
-        body: "The SSA withholds $1 in benefits for every $2 you earn above $24,480 in 2026 if you'll be under your full retirement age for the entire year. In the calendar year you reach full retirement age, the SSA only counts earnings from January through the month before your birthday month, using a higher limit of $65,160 and withholding just $1 for every $3 over that amount. Once you reach full retirement age, the earnings test disappears entirely, and you keep every dollar you earn alongside your full survivor benefit.\n\nOnly wages and net self-employment income count toward these limits. Pensions, investment income, interest, and your survivor benefit itself are excluded, so a widow or widower living on savings and a pension alongside survivor benefits faces no reduction regardless of how large those other income sources are.",
+        body: "The SSA withholds $1 in benefits for every $2 you earn above $24,480 in 2026 if you'll be under your full retirement age for the entire year. In the calendar year you reach full retirement age, the SSA only counts earnings from January through the month before your birthday month, using a higher limit of $65,160 and withholding just $1 for every $3 over that amount. Once you reach full retirement age, the earnings test disappears entirely, and you keep every dollar you earn alongside your full survivor benefit. For 2027, the SSA raises the limits to $25,560 and $67,920, according to the [SSA 2027 COLA Fact Sheet](https://www.ssa.gov/news/en/cola/factsheets/2027.html).\n\nOnly wages and net self-employment income count toward these limits. Pensions, investment income, interest, and your survivor benefit itself are excluded, so a widow or widower living on savings and a pension alongside survivor benefits faces no reduction regardless of how large those other income sources are.",
       },
       {
         heading: "Survivor Benefits Have Their Own Full Retirement Age",
@@ -14567,7 +14965,7 @@ export const GUIDES: Guide[] = [
       { href: "/net-worth/", label: "Net worth calculator" },
     ],
     faqs: [
-      { question: "What is the Social Security earnings limit for survivor benefits in 2026?", answer: "It's $24,480 for the full year if you're under your full retirement age all year, with $1 withheld for every $2 earned above that. In the year you reach full retirement age, the limit rises to $65,160, counting only earnings before your birthday month, with $1 withheld per $3 over." },
+      { question: "What is the Social Security earnings limit for survivor benefits in 2026?", answer: "It's $24,480 for the full year if you're under your full retirement age all year, with $1 withheld for every $2 earned above that. In the year you reach full retirement age, the limit rises to $65,160, counting only earnings before your birthday month, with $1 withheld per $3 over. For 2027, the limits rise to $25,560 and $67,920." },
       { question: "Does my survivor benefit count as earnings for the earnings test?", answer: "No. The earnings test only counts wages and net self-employment income. Your Social Security survivor benefit, pension income, and investment income are excluded, so they never trigger a withholding under this rule." },
       { question: "Is the full retirement age the same for survivor and retirement benefits?", answer: "Not always. Survivor benefits run on their own full retirement age schedule, generally between 66 and 67 depending on birth year, which can differ from the full retirement age that applies to your own retirement benefit. Check the [SSA's own survivor full retirement age lookup](https://www.ssa.gov/survivor/full-retirement-age-survivor) for your exact number." },
       { question: "Do I get back the benefits withheld under the earnings test?", answer: "Yes, through a recalculation once you reach full retirement age, not as a refund check. The SSA raises your ongoing monthly benefit to credit the months it withheld, which increases your payment for the rest of your life." },
@@ -17807,7 +18205,7 @@ export const GUIDES: Guide[] = [
   },
   {
     "slug": "does-retirement-income-count-as-income-for-social-security",
-    "updated": "2026-09-23",
+    "updated": "2026-10-14",
     "title": "Does Retirement Income Count as Income for Social Security?",
     "metaDescription": "Does retirement income count as income for Social Security? Learn why 401(k) withdrawals and pensions don't trigger the earnings test, and how limits work.",
     "h1": "Does Retirement Income Count as Income for Social Security?",
@@ -17820,7 +18218,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "heading": "How the Social Security Earnings Test Works in 2026",
-        "body": "The Social Security earnings test applies only to beneficiaries who collect benefits before reaching [Full Retirement Age (FRA)](https://www.ssa.gov/benefits/retirement/planner/agereduction.html). For anyone born in 1960 or later, full retirement age is 67. If you claim benefits at age 62, 63, 64, 65, or 66 while continuing to work, your earned income faces statutory annual limits.\n\nAccording to the [SSA 2026 COLA Fact Sheet](https://www.ssa.gov/news/en/cola/factsheets/2026.html), two separate earnings limits govern beneficiaries in 2026. If you remain under full retirement age for the entire year, the annual earnings limit is $24,480. If your wages exceed that threshold, the SSA withholds $1 in benefits for every $2 you earn above $24,480.\n\nA different rule applies during the specific calendar year you reach full retirement age. In that year, the earnings limit jumps to $65,160, and the SSA withholds $1 for every $3 earned above the limit. Furthermore, the agency only counts the earnings you receive during the months before the exact month you reach full retirement age. Once you reach your full retirement age, the earnings test disappears entirely for every subsequent month, allowing you to earn unlimited wages without any withholding."
+        "body": "The Social Security earnings test applies only to beneficiaries who collect benefits before reaching [Full Retirement Age (FRA)](https://www.ssa.gov/benefits/retirement/planner/agereduction.html). For anyone born in 1960 or later, full retirement age is 67. If you claim benefits at age 62, 63, 64, 65, or 66 while continuing to work, your earned income faces statutory annual limits.\n\nAccording to the [SSA 2026 COLA Fact Sheet](https://www.ssa.gov/news/en/cola/factsheets/2026.html), two separate earnings limits govern beneficiaries in 2026. If you remain under full retirement age for the entire year, the annual earnings limit is $24,480. If your wages exceed that threshold, the SSA withholds $1 in benefits for every $2 you earn above $24,480.\n\nA different rule applies during the specific calendar year you reach full retirement age. In that year, the earnings limit jumps to $65,160, and the SSA withholds $1 for every $3 earned above the limit. Furthermore, the agency only counts the earnings you receive during the months before the exact month you reach full retirement age. Once you reach your full retirement age, the earnings test disappears entirely for every subsequent month, allowing you to earn unlimited wages without any withholding.\n\nFor 2027, SSA raises the two limits to $25,560 and $67,920, according to the [SSA 2027 COLA Fact Sheet](https://www.ssa.gov/news/en/cola/factsheets/2027.html)."
       },
       {
         "heading": "What Counts as Income Under the Earnings Test",
@@ -17868,7 +18266,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "question": "What is the Social Security earnings limit for 2026?",
-        "answer": "For 2026, the earnings limit is $24,480 for beneficiaries who will be under full retirement age for the entire year. The Social Security Administration withholds $1 of benefits for every $2 earned above that limit. For beneficiaries reaching full retirement age in 2026, the limit is $65,160 for earnings in the months before reaching full retirement age, with a reduction of $1 for every $3 earned above the limit."
+        "answer": "For 2026, the earnings limit is $24,480 for beneficiaries who will be under full retirement age for the entire year. The Social Security Administration withholds $1 of benefits for every $2 earned above that limit. For beneficiaries reaching full retirement age in 2026, the limit is $65,160 for earnings in the months before reaching full retirement age, with a reduction of $1 for every $3 earned above the limit. For 2027, the SSA raises those limits to $25,560 and $67,920."
       },
       {
         "question": "Does working after full retirement age reduce my Social Security benefit?",

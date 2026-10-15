@@ -517,7 +517,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
   },
 
   {
-    updated: "2026-10-10",
+    updated: "2026-10-14",
     calculator: "retirement",
     slug: "military-retirement-calculator",
     title: "Military Retirement Calculator: TSP + Pension",
@@ -535,7 +535,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
       "Forgetting the 20-year cliff on the legacy High-3 plan. Under legacy rules, separating before 20 years of service means zero pension — you lose the entire defined-benefit, no matter how many years you served. The BRS was designed specifically to fix this cliff for the modern force.",
       "Not capturing the full BRS TSP match. BRS provides automatic 1% TSP contribution from the government after 60 days, then a dollar-for-dollar match on the next 3% and 50 cents on the next 2% after three years — a total of up to 5% matching. Service members who do not opt in above the 1% auto-contribution leave free money behind.",
       "Using current base pay instead of High-3 average. The pension formula uses the average of your three highest consecutive annual base-pay years, not your final pay. Late promotions can shift this number meaningfully.",
-      "Ignoring COLA adjustments. Military pensions are adjusted annually for cost-of-living increases tied to the Consumer Price Index, per Department of Defense policy. This inflation protection is a significant advantage over many civilian pensions.",
+      "Ignoring COLA adjustments. Military pensions are adjusted annually for cost-of-living increases tied to the Consumer Price Index, per Department of Defense policy. This inflation protection is a significant advantage over many civilian pensions. For 2027, see [what the COLA is for military retirees](/guides/2027-cola-federal-military-retirees/).",
       "Overlooking the Survivor Benefit Plan (SBP). Without enrolling in SBP, your pension stops at death and your surviving spouse receives nothing. SBP covers up to 55% of your retirement pay at a premium, and the election window closes at retirement.",
     ],
     workedExample:
@@ -838,7 +838,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
     commonMistakes: [
       "Claiming at 62 without modeling the long-term cost. The 30% reduction at 62 versus FRA (67) is permanent. For someone who lives to 85, claiming at 62 versus 67 often means collecting $50,000 to $100,000 less in total lifetime benefits, depending on the benefit amount.",
       "Assuming Social Security will fully fund retirement. Social Security is designed to replace approximately 40% of pre-retirement income for average earners, according to SSA. It is a supplement to savings, not a substitute.",
-      "Forgetting the earnings test before FRA. If you claim Social Security before your FRA and keep working, SSA withholds $1 in benefits for every $2 you earn above $24,480 in 2026. In the year you reach FRA, SSA withholds $1 for every $3 above $65,160 ([SSA](https://www.ssa.gov/oact/cola/rtea.html)). Withheld amounts are eventually recredited after FRA, but the cash flow impact matters.",
+      "Forgetting the earnings test before FRA. If you claim Social Security before your FRA and keep working, SSA withholds $1 in benefits for every $2 you earn above $24,480 in 2026. In the year you reach FRA, SSA withholds $1 for every $3 above $65,160 ([SSA](https://www.ssa.gov/oact/cola/rtea.html)). For 2027, [SSA raises those limits](https://www.ssa.gov/news/en/cola/factsheets/2027.html) to $25,560 and $67,920. Withheld amounts are eventually recredited after FRA, but the cash flow impact matters.",
       "Not accounting for Social Security taxation. Up to 85% of Social Security benefits may be subject to federal income tax if your combined income (adjusted gross income + nontaxable interest + half of Social Security) exceeds $34,000 for singles or $44,000 for married couples filing jointly, per IRS rules.",
       "Overlooking the COLA guarantee. Social Security benefits are adjusted annually for inflation via Cost-of-Living Adjustments tied to the CPI-W. This built-in inflation protection is a significant advantage over fixed pension payments or fixed annuities, and it compounds in value over a long retirement.",
     ],

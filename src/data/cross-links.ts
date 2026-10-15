@@ -100,8 +100,17 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/cd-calculator/", label: "Model a CD's maturity value" },
     { href: "/budget/", label: "See where your spending goes" },
   ],
+  "social-security-cola-calculator": [
+    { href: "/guides/2027-social-security-cola/", label: "2027 Social Security COLA: the official 3.6% raise" },
+    { href: "/guides/social-security-changes-2027/", label: "Every 2027 Social Security change" },
+    { href: "/guides/2027-ssdi-cola/", label: "How much SSDI goes up in 2027" },
+    { href: "/guides/ssi-increase-2027/", label: "2027 SSI payment amounts" },
+    { href: "/social-security-break-even-calculator/", label: "When does waiting to claim Social Security pay off?" },
+  ],
   "social-security-break-even-calculator": [
     { href: "/guides/2027-social-security-cola/", label: "2027 Social Security COLA: the official 3.6% raise" },
+    { href: "/social-security-cola-calculator/", label: "What will your 2027 Social Security check be?" },
+    { href: "/guides/social-security-changes-2027/", label: "Every 2027 Social Security change" },
     { href: "/retirement/social-security-retirement-calculator/", label: "Add Social Security to your retirement income" },
     { href: "/guides/is-social-security-taxable/", label: "Is Social Security taxable?" },
     { href: "/retirement/", label: "Project retirement savings" },

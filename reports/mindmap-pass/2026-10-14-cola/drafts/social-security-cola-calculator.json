@@ -1,0 +1,41 @@
+{
+  "metaTitle": "Social Security COLA Calculator: Your 2027 Benefit at 3.6%",
+  "metaDescription": "Free Social Security COLA calculator. Enter your monthly benefit to see your 2027 amount after the 3.6% raise, plus a chart of common benefit amounts.",
+  "introText": "A Social Security cost-of-living adjustment (COLA) calculator finds your 2027 benefit by multiplying your current monthly benefit by 1.036 and rounding down to the dime. If a Medicare Part B premium comes out of your check, subtract it and round the payment down to the whole dollar. The [Social Security Administration (SSA)](https://www.ssa.gov/news/en/press/releases/2026-10-14.html) set the 2027 COLA at 3.6%. Enter your benefit in the Social Security COLA calculator below to see your own 2027 amount.\n\nFor example, take a $2,000 monthly benefit before any Medicare deduction. Multiplied by 1.036, it becomes $2,072.00 in 2027. That is $72.00 more a month and $864.00 more over 12 months. A $1,642 benefit, SSA's estimated average for all disabled workers before the raise, becomes $1,701.10. That is $59.10 more a month. A $2,095 benefit, the estimated average for retired workers, becomes $2,170.40, or $75.40 more each month.",
+  "howItWorks": "The calculator follows SSA's rounding rule in its [Program Operations Manual System (POMS), section RS 00601.020](https://secure.ssa.gov/poms.nsf/lnx/0300601020). Enter the benefit before any Medicare deduction, as shown on your 2026 COLA notice or in my Social Security. The calculator multiplies that amount by 1.036, which applies the 3.6% COLA for 2027. It then rounds the result down to the next lower dime, because SSA rounds any monthly benefit that is not a multiple of $0.10 that way. If you entered a Medicare Part B premium, the calculator subtracts it and rounds the payment down to the next lower whole dollar. On a $2,000 benefit, multiplying gives exactly $2,072.00, so no dime rounding is needed. The results show the 2027 benefit to the cent, the monthly increase and the increase over 12 months. For $2,000, those increases are $72.00 a month and $864.00 a year.\n\nBelow the calculator, the 2027 COLA increase chart lists common benefit amounts. The rows run from $500 to $4,000 in steps of $250. Each row shows the benefit now, the 2027 benefit and the monthly increase, all before any Medicare deduction. A $1,000 benefit becomes $1,036.00, a raise of $36.00 a month. A $3,000 benefit becomes $3,108.00, or $108.00 more each month. Every row rises by 3.6%, so the dollar increase grows as the benefit grows. If your benefit falls between two rows, type the exact amount into the calculator instead.\n\nSSA applies the COLA to your primary insurance amount (PIA), which is your benefit at full retirement age, and then recomputes your benefit from it. The calculator applies 3.6% straight to the amount you enter and skips that recomputation. If you claimed early or receive a family benefit, your actual 2027 amount can differ from this estimate by a few cents. Your COLA notice from SSA shows the exact figure, so go by the notice when the two disagree. Taxes are not modeled. Every amount the calculator shows is before tax.\n\nThe Medicare Part B field defaults to zero because the 2027 premium has not been announced. Enrollees see that premium in the my Social Security Message Center starting late November. Until then, you can enter a premium to see how the rounding works on your payment. For example, enter a $1,642 benefit and a $200 premium, which is only an illustrative amount. The calculator raises $1,642 to $1,701.10. Subtracting $200 leaves $1,501.10, which rounds down to a $1,501 payment. The results show that payment in whole dollars next to the Part B amount.\n\nSocial Security benefits rise starting with the January 2027 payment. Your COLA notice appears online in my Social Security starting late November and arrives by mail in December. The deadline to enroll in paperless delivery is November 18. The one-page notice lists the exact dates and dollar amounts of your new benefit and any deductions. If you get Supplemental Security Income (SSI), payments rise starting December 31, 2026, and the [SSI increase for 2027](/guides/ssi-increase-2027/) guide covers them. If you get Social Security Disability Insurance (SSDI), see the [2027 SSDI COLA](/guides/2027-ssdi-cola/) guide. For the announcement and SSA's average benefit estimates, read the [2027 Social Security COLA guide](/guides/2027-social-security-cola/).",
+  "faqs": [
+    {
+      "question": "How do I calculate my COLA increase for 2027?",
+      "answer": "Multiply your current monthly benefit by 1.036, then round down to the next lower dime. If a Medicare Part B premium is deducted, subtract it and round the payment down to the next lower whole dollar. A $2,000 benefit becomes $2,072.00, which is $72.00 more a month."
+    },
+    {
+      "question": "What is the COLA increase for 2027?",
+      "answer": "The cost-of-living adjustment (COLA) for 2027 is 3.6%. The Social Security Administration (SSA) announced it on October 14, 2026, in a [press release](https://www.ssa.gov/news/en/press/releases/2026-10-14.html). It is based on the increase in the Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W) from the third quarter of 2025 through the third quarter of 2026. The 2026 COLA was 2.8%."
+    },
+    {
+      "question": "How much will a $2,000 Social Security check be in 2027?",
+      "answer": "A $2,000 benefit becomes $2,072.00 a month in 2027, before any Medicare deduction. That is $72.00 more each month, or $864.00 more over 12 months. If Medicare Part B comes out of your check, subtract the 2027 premium once it is announced and round the payment down to the whole dollar."
+    },
+    {
+      "question": "When will I see the 2027 COLA in my check?",
+      "answer": "Social Security benefits rise starting with the January 2027 payment. Supplemental Security Income (SSI) payments rise starting December 31, 2026. Your COLA notice with the exact new amount appears in [my Social Security](https://www.ssa.gov/myaccount/) starting late November and arrives by mail in December. The deadline to enroll in paperless delivery is November 18."
+    },
+    {
+      "question": "Why is my COLA notice a few cents different from the calculator?",
+      "answer": "SSA applies the COLA to your primary insurance amount (PIA), your benefit at full retirement age, and recomputes your benefit from it. The calculator applies 3.6% directly to the amount you enter, so an early-claim or family benefit can come out a few cents different. SSA's [rounding rule](https://secure.ssa.gov/poms.nsf/lnx/0300601020) then rounds the benefit down to the dime. Your COLA notice shows the exact figure."
+    },
+    {
+      "question": "Does the calculator include the 2027 Medicare Part B premium?",
+      "answer": "No, because the 2027 Part B premium has not been announced. The field defaults to zero, and you can enter a premium to test your payment. Enrollees see the 2027 premium in the Message Center in [my Social Security](https://www.ssa.gov/myaccount/) starting late November. As an illustration, a $1,642 benefit with a $200 premium entered pays $1,501."
+    },
+    {
+      "question": "Does the COLA apply to SSI and disability benefits?",
+      "answer": "Yes. Supplemental Security Income (SSI) payments rise starting December 31, 2026, and disability benefits rise with the January 2027 payment. SSA estimates the average benefit for all disabled workers rises from $1,642 to $1,701. See the [2027 SSDI COLA guide](/guides/2027-ssdi-cola/) for Social Security Disability Insurance (SSDI) and the [SSI increase guide](/guides/ssi-increase-2027/) for SSI."
+    },
+    {
+      "question": "Is my COLA taxable?",
+      "answer": "This calculator does not model income taxes, so every amount it shows is before tax. The guide [is Social Security taxable](/guides/is-social-security-taxable/) covers when benefits are taxed."
+    }
+  ],
+  "slug": "social-security-cola-calculator"
+}

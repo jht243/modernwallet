@@ -1,0 +1,82 @@
+{
+ "slug": "social-security-changes-2027",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1931,
+ "floor": 1200,
+ "input_tokens": 30240,
+ "output_tokens": 22823,
+ "thinking_tokens": null,
+ "cached_tokens": 26331,
+ "est_cost_usd": 0.4774,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "emptied by the claim check (nothing in the fact list could carry it): ['Every 2027 Social Security Change at a Glance', 'Wage Base and Work Credits for People Who Work in 2027', '2027 Earnings Test Limits for Claiming Before Full Retirement Age', 'What the 2027 Social Security Changes Mean for Retirees', '2027 Changes for Disability Benefits and SSI'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1931,
+  "numbers_not_in_facts": [
+   "0.036",
+   "1080",
+   "11439",
+   "117",
+   "11922.6",
+   "142",
+   "2760",
+   "36",
+   "483.6",
+   "59",
+   "69",
+   "7800",
+   "80"
+  ],
+  "fact_budget": {
+   "fact_words": 788,
+   "floor": 1200,
+   "ratio": 0.66,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    0
+   ],
+   "applied": [
+    {
+     "id": "sections[3].body",
+     "quote": "The official percentage is posted on the SSA [COLA page](https://www.ssa.gov/cola/).",
+     "replacement": "For more, see the SSA [COLA page](https://www.ssa.gov/cola/).",
+     "type": "unsupported",
+     "why": "SOURCE does not say what the SSA COLA page posts"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1934
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 219.0,
+ "response_id": "msg_011Cg3R8vRHSTMhkt1XWkadH",
+ "generated_at": "2026-10-14T23:51:13-0500"
+}
