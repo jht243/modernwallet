@@ -1,0 +1,26 @@
+{
+ "slug": "best-student-credit-cards",
+ "rows": [],
+ "cut": [
+  {
+   "domain": "tuitionhero.org",
+   "why": "category 1 \u2014 comparison marketplace, states it is not a card issuer"
+  },
+  {
+   "domain": "comparecards.com",
+   "why": "category 1 \u2014 advertising-supported comparison/lead-gen site (LendingTree)"
+  },
+  {
+   "domain": "thinksaveretire.com",
+   "why": "category 1 \u2014 blog and review site"
+  },
+  {
+   "domain": "collegefinance.com",
+   "why": "category 1 \u2014 comparison and review site, no card of its own"
+  },
+  {
+   "domain": "urbanincome.com",
+   "why": "category 1 \u2014 affiliate blog, no card of its own"
+  }
+ ]
+}

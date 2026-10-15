@@ -1,0 +1,99 @@
+{
+ "slug": "best-online-will-makers",
+ "rows": [
+  {
+   "name": "WillMaker",
+   "domain": "willmaker.com",
+   "url": "https://willmaker.com",
+   "values": [
+    "$109 Starter (will, health care directive)",
+    "Not published",
+    "$149 Plus; $219 All Access",
+    "Plus and All Access; Starter has health care directive only",
+    "Not offered; not available in Louisiana"
+   ]
+  },
+  {
+   "name": "CompleteMyEstatePlan",
+   "domain": "completemyestateplan.com",
+   "url": "https://completemyestateplan.com",
+   "values": [
+    "$99",
+    "$149",
+    "$349 single / $449 couple",
+    "Yes",
+    "Not offered"
+   ]
+  },
+  {
+   "name": "Do Your Own Will Online",
+   "domain": "doyourownwill.com",
+   "url": "https://doyourownwill.com",
+   "values": [
+    "$0",
+    "Not published",
+    "N/A",
+    "No; living will and power of attorney are separate documents",
+    "Not offered"
+   ]
+  },
+  {
+   "name": "Neptune",
+   "domain": "meetneptune.com",
+   "url": "https://meetneptune.com",
+   "values": [
+    "Not published; pour-over will in $3,000 plan",
+    "Not published",
+    "$3,000 flat plan includes revocable living trust",
+    "Yes, in $3,000 flat plan",
+    "Independent attorneys; free initial consultation"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "ramseysolutions.com",
+   "why": "category 1 \u2014 publisher; refers to partner provider"
+  },
+  {
+   "domain": "ncoa.org",
+   "why": "category 1 \u2014 association/review page"
+  },
+  {
+   "domain": "jasonwoottenscholarship.com",
+   "why": "category 1 \u2014 review blog"
+  },
+  {
+   "domain": "jobs.geocon.bg",
+   "why": "category 1 \u2014 unrelated site hosting scraped review content"
+  },
+  {
+   "domain": "primetimenm.com",
+   "why": "category 1 \u2014 review blog"
+  },
+  {
+   "domain": "caring.com",
+   "why": "category 1 \u2014 directory/review site"
+  },
+  {
+   "domain": "bdjexpresslaw.com",
+   "why": "category 1 \u2014 review blog"
+  },
+  {
+   "domain": "ridleylawoffices.com",
+   "why": "category 4 \u2014 law firm blog post; no online will product"
+  },
+  {
+   "domain": "mallon-jurisprudence.com",
+   "why": "category 1 \u2014 review blog"
+  },
+  {
+   "domain": "en.paperblog.com",
+   "why": "category 1 \u2014 blog"
+  },
+  {
+   "domain": "en.megastelum.com",
+   "why": "category 1 \u2014 review blog"
+  }
+ ]
+}

@@ -36,7 +36,9 @@ for (const r of spec.rows) {
   if (!/^https?:\/\//.test(r.url)) throw new Error(`row ${r.name}: url must be absolute`);
   if (normalizeDomain(r.url) !== normalizeDomain(r.domain) && !normalizeDomain(r.url).endsWith("." + normalizeDomain(r.domain)))
     throw new Error(`row ${r.name}: url ${r.url} is not on ${r.domain}`);
-  if (!Array.isArray(r.values) || r.values.length !== headers.length)
+  // Some pages' first header duplicates the name column; their editorial rows carry headers-1 values.
+  const editorialWidth = entry.comparisonTable.rows?.[0]?.values?.length ?? headers.length;
+  if (!Array.isArray(r.values) || (r.values.length !== headers.length && r.values.length !== editorialWidth))
     throw new Error(`row ${r.name}: needs ${headers.length} values, one per header (${headers.join(" / ")})`);
   r.values.forEach((cell: string, i: number) => {
     if (!cell || typeof cell !== "string") throw new Error(`row ${r.name}: empty "${headers[i]}" — put the real figure or "Not published"`);

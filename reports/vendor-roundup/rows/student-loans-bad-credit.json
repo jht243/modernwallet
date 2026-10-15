@@ -1,0 +1,43 @@
+{
+ "slug": "best-student-loans-bad-credit",
+ "rows": [
+  {
+   "name": "Abe Student Loans",
+   "domain": "abestudentloans.com",
+   "url": "https://abestudentloans.com",
+   "values": [
+    "Undergrad, grad and professional students, including DACA and international with cosigner",
+    "Soft inquiry to estimate rates",
+    "Optional; release after 12 on-time payments",
+    "Undergrad fixed 2.08% to 16.58% APR as of Oct 2026",
+    "No application, origination or late fees; terms of 5 to 20 years"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "edvisors.com",
+   "why": "category 1 \u2014 comparison marketplace, states it is not a lender"
+  },
+  {
+   "domain": "rate.com",
+   "why": "category 4 \u2014 mortgage lender; student loan refinance fits a refinance category"
+  },
+  {
+   "domain": "liftcredit.com",
+   "why": "category 4 \u2014 personal installment loans, fits personal loans category"
+  },
+  {
+   "domain": "nationaldebtrelief.com",
+   "why": "category 4 \u2014 debt settlement, fits debt relief category"
+  },
+  {
+   "domain": "articles.outlier.org",
+   "why": "category 1 \u2014 education publisher blog, no student loan"
+  },
+  {
+   "domain": "firstcu.net",
+   "why": "category 1 \u2014 marketplace comparing 20+ lenders"
+  }
+ ]
+}

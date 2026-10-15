@@ -1,0 +1,75 @@
+{
+ "slug": "best-portfolio-backtesting-and-analysis-tools",
+ "rows": [
+  {
+   "name": "testfolio",
+   "domain": "testfol.io",
+   "url": "https://testfol.io",
+   "values": [
+    "Yes, ETF and asset allocation backtests",
+    "Not published",
+    "ETF backtests with rebalancing and cashflows"
+   ]
+  },
+  {
+   "name": "Awalyt",
+   "domain": "awalyt.com",
+   "url": "https://awalyt.com",
+   "values": [
+    "Yes, daily price data; sample covers 2012 to 2026",
+    "Yes; free plan, no card",
+    "Testing strategies and checking diversification before investing"
+   ]
+  },
+  {
+   "name": "PortfolioMetrics",
+   "domain": "portfoliometrics.net",
+   "url": "https://portfoliometrics.net",
+   "values": [
+    "Yes, up to 40 years of price history",
+    "Free sign-up offered; core features free",
+    "Backtesting, optimization and Monte Carlo with AI assistant"
+   ]
+  },
+  {
+   "name": "Diversiview",
+   "domain": "diversiview.online",
+   "url": "https://diversiview.online",
+   "values": [
+    "Yes, past three years per its description",
+    "Not published",
+    "Retail investors and professionals optimizing asset allocation"
+   ]
+  },
+  {
+   "name": "Guardfolio",
+   "domain": "guardfolio.ai",
+   "url": "https://guardfolio.ai",
+   "values": [
+    "Yes, 5-year backtest on Guardian Pro",
+    "Yes; sign-up to connect brokers",
+    "Tracking risk and ETF overlap across multiple accounts"
+   ]
+  },
+  {
+   "name": "Portfolio Performance",
+   "domain": "portfolio-performance.info",
+   "url": "https://portfolio-performance.info",
+   "values": [
+    "No, tracks actual performance and rebalancing",
+    "Not published",
+    "Consolidating performance across several accounts; open source desktop app"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "investglass.com",
+   "why": "category 3 \u2014 platform for banks and wealth managers, not personal finance"
+  },
+  {
+   "domain": "terminalvalue.io",
+   "why": "category 1 \u2014 directory of investing tools"
+  }
+ ]
+}

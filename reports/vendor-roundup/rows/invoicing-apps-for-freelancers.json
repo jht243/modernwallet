@@ -1,0 +1,110 @@
+{
+ "slug": "best-invoicing-apps-for-freelancers",
+ "rows": [
+  {
+   "name": "Billbooks",
+   "domain": "billbooks.com",
+   "url": "https://billbooks.com",
+   "values": [
+    "$7.95/month flat price; 30-day free trial",
+    "Yes, on every plan",
+    "Not published; connect own gateway such as Stripe or PayPal",
+    "Freelancers and small businesses sending invoices and quotes"
+   ]
+  },
+  {
+   "name": "InvoiceZap",
+   "domain": "invoicezap.app",
+   "url": "https://invoicezap.app",
+   "values": [
+    "Free to try; no monthly fees stated",
+    "Not published",
+    "Not published",
+    "Freelancers and trades invoicing from iPhone, iPad or Mac"
+   ]
+  },
+  {
+   "name": "Billdu",
+   "domain": "billdu.com",
+   "url": "https://billdu.com",
+   "values": [
+    "From $4.99/month; Standard $9.99; Premium $19.99; 7-day trial",
+    "Yes, for upcoming, due and late payments",
+    "Not published; Stripe and PayPal connect, their fees apply",
+    "Small businesses, trades and freelancers"
+   ]
+  },
+  {
+   "name": "InvoiceCue",
+   "domain": "invoicecue.com",
+   "url": "https://invoicecue.com",
+   "values": [
+    "Free to start; paid prices not published",
+    "Yes, automated payment reminders",
+    "Not published",
+    "Freelancers and contractors invoicing from a phone"
+   ]
+  },
+  {
+   "name": "Invoice Ninja",
+   "domain": "invoiceninja.com",
+   "url": "https://invoiceninja.com",
+   "values": [
+    "Free for 5 clients; Pro $14/month or $140/year",
+    "Pro and higher only",
+    "Not published; gateway fees apply (Stripe, PayPal, Square)",
+    "Freelancers wanting a free or open-source invoicing option"
+   ]
+  },
+  {
+   "name": "Bookipi",
+   "domain": "bookipi.com",
+   "url": "https://bookipi.com",
+   "values": [
+    "Free, 3 invoices/month; Starter $9.99/month; Professional $52/month",
+    "Yes, automatic overdue reminders on all plans",
+    "Not published on page; card fees listed by country",
+    "Freelancers and small businesses sending a few invoices monthly"
+   ]
+  },
+  {
+   "name": "Invoice2go",
+   "domain": "invoice.2go.com",
+   "url": "https://invoice.2go.com",
+   "values": [
+    "Not published",
+    "Yes, on all plans",
+    "Card 2.9% to 3.5% by plan; PayPal 2.9% + 30 cents",
+    "Small businesses and side hustlers"
+   ]
+  },
+  {
+   "name": "Invoisseur",
+   "domain": "invoisseur.com",
+   "url": "https://invoisseur.com",
+   "values": [
+    "Free; Pro $7.49/month",
+    "Not published",
+    "Not published; accepts major cards and PayPal",
+    "Freelancers starting out with simple invoices"
+   ]
+  },
+  {
+   "name": "Invoice Maker",
+   "domain": "invoicemaker.com",
+   "url": "https://invoicemaker.com",
+   "values": [
+    "Free app; paid plan prices not published",
+    "Not published",
+    "Not published",
+    "Freelancers and trades creating invoices from a phone"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "chatref.ai",
+   "why": "category 3 — AI customer support chatbot, not finance"
+  }
+ ]
+}

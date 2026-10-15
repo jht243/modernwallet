@@ -1,0 +1,55 @@
+{
+ "slug": "best-student-loan-refinance",
+ "rows": [
+  {
+   "name": "MEFA REFI",
+   "domain": "mefa.org",
+   "url": "https://mefa.org",
+   "values": [
+    "Refinancing existing education loans",
+    "3.95% APR starting rate, as of Oct 2026",
+    "Not published",
+    "Not published",
+    "Rate check without affecting credit score"
+   ]
+  },
+  {
+   "name": "KeyBank",
+   "domain": "key.com",
+   "url": "https://www.key.com/personal/student-loans/student-loan-refinancing.html",
+   "values": [
+    "Bank-backed refinance (formerly Laurel Road)",
+    "Not published",
+    "Not published",
+    "No origination fee or prepayment penalty",
+    "Rate check with no hard credit pull"
+   ]
+  },
+  {
+   "name": "LendKey",
+   "domain": "lendkey.com",
+   "url": "https://lendkey.com",
+   "values": [
+    "Matching with partner credit unions and banks",
+    "Not published",
+    "Not published",
+    "Not published",
+    "One application across partner lenders"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "studentloanprofessor.com",
+   "why": "category 1 — review site"
+  },
+  {
+   "domain": "cashflowcalendar.app",
+   "why": "category 1 — comparison guide"
+  },
+  {
+   "domain": "educationdata.org",
+   "why": "category 1 — publisher"
+  }
+ ]
+}

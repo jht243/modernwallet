@@ -1,0 +1,90 @@
+{
+ "slug": "best-mileage-tracker-apps",
+ "rows": [
+  {
+   "name": "MileageWise",
+   "domain": "mileagewise.com",
+   "url": "https://www.mileagewise.com",
+   "values": [
+    "Free trial; length not published",
+    "Not published",
+    "Yes",
+    "Google Maps Timeline import; rebuilds past mileage logs"
+   ]
+  },
+  {
+   "name": "Motus",
+   "domain": "motus.com",
+   "url": "https://www.motus.com",
+   "values": [
+    "Not published",
+    "Not published; quote via demo request",
+    "Yes",
+    "Driver reimbursement for company fleets and employees"
+   ]
+  },
+  {
+   "name": "Timeero",
+   "domain": "timeero.com",
+   "url": "https://timeero.com",
+   "values": [
+    "14-day trial, no card needed",
+    "$5-$12 per user per month by plan",
+    "GPS mileage in all plans; Segmented Tracking add-on from $5/user/month",
+    "Time tracking, scheduling, geofencing, payroll integrations"
+   ]
+  },
+  {
+   "name": "Cardata",
+   "domain": "cardata.co",
+   "url": "https://cardata.co",
+   "values": [
+    "Not published",
+    "Per-user yearly subscription; custom quote",
+    "Yes",
+    "Company driver reimbursement programs, insurance checks, driver payments"
+   ]
+  },
+  {
+   "name": "ExpenseTron",
+   "domain": "expensetron.com",
+   "url": "https://expensetron.com",
+   "values": [
+    "14-day trial, no card needed",
+    "Not published",
+    "Not published",
+    "Expense approvals and reimbursement inside Slack and Teams"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "mcdonaldjacobs.cpa",
+   "why": "category 4 — CPA firm, no mileage product; fits tax/accounting category"
+  },
+  {
+   "domain": "gitnux.org",
+   "why": "category 1 — market research/review site"
+  },
+  {
+   "domain": "upperinc.com",
+   "why": "category 4 — route planning/dispatch software, no mileage tracker"
+  },
+  {
+   "domain": "cocountant.com",
+   "why": "category 4 — bookkeeping service; fits bookkeeping/accounting category"
+  },
+  {
+   "domain": "rokform.com",
+   "why": "category 3 — phone case and mount maker, outside finance"
+  },
+  {
+   "domain": "intelligentliving.co",
+   "why": "category 1 — general publication"
+  },
+  {
+   "domain": "kduncan.com",
+   "why": "category 4 — CPA firm for government contractors, no mileage product"
+  }
+ ]
+}

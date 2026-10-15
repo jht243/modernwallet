@@ -1,0 +1,123 @@
+{
+ "slug": "best-net-worth-tracker",
+ "rows": [
+  {
+   "name": "Know Your Dosh",
+   "domain": "knowyourdosh.com",
+   "url": "https://knowyourdosh.com",
+   "values": [
+    "Free; paid \u00a34.99 to \u00a314.99/month per household",
+    "Tracks stocks, crypto, ISAs and investments; no analysis tools listed",
+    "Yes, properties and rental management",
+    "Not published",
+    "Households and families tracking shared wealth, multi-currency on Pro"
+   ]
+  },
+  {
+   "name": "Origin Financial",
+   "domain": "useorigin.com",
+   "url": "https://useorigin.com",
+   "values": [
+    "$99/year list price; $1 first-year offer shown",
+    "Portfolio and performance tracking in one view",
+    "Not published",
+    "Forecasting tool; no dedicated retirement planner listed",
+    "People wanting budgeting, investing and tracking in one app"
+   ]
+  },
+  {
+   "name": "Finman",
+   "domain": "finman.money",
+   "url": "https://finman.money",
+   "values": [
+    "Free; Pro $9.99/month; Family $19.99/month",
+    "Investment tracker for stocks, ETFs, crypto with live prices",
+    "Not published",
+    "Not published",
+    "Individuals and households wanting AI budgeting and tracking"
+   ]
+  },
+  {
+   "name": "Worthy",
+   "domain": "joinworthyapp.com",
+   "url": "https://joinworthyapp.com",
+   "values": [
+    "$16.99 one-time, no subscription",
+    "Stocks, crypto and metals update automatically; prices 15 minutes delayed",
+    "Yes, real estate and vehicles with loan paydown",
+    "FIRE projections, FI number, and retirement account types",
+    "Privacy-minded users who skip bank linking"
+   ]
+  },
+  {
+   "name": "Worthmap",
+   "domain": "worthmap.com",
+   "url": "https://worthmap.com",
+   "values": [
+    "Free plan in beta; paid plans not yet available",
+    "Tracks stocks, crypto, dividends; free investing calculators",
+    "Real estate can be added as an asset",
+    "No dedicated planner; FIRE and compound interest calculators",
+    "People with money in several currencies, such as expats"
+   ]
+  },
+  {
+   "name": "Hoxton Wealth",
+   "domain": "hoxtonwealth.com",
+   "url": "https://hoxtonwealth.com",
+   "values": [
+    "Not published",
+    "Market tracker and account connection in app",
+    "Not published",
+    "WealthFlow scenario modelling; advisers available",
+    "Clients of the firm's advisory service"
+   ]
+  },
+  {
+   "name": "Moneko",
+   "domain": "moneko.io",
+   "url": "https://moneko.io",
+   "values": [
+    "Free; Plus $79.99/year or $99.99 lifetime",
+    "Not published",
+    "Not published",
+    "Not published",
+    "Everyday spending logging, shared budgets and net worth view"
+   ]
+  },
+  {
+   "name": "Worth it",
+   "domain": "getworthit.com",
+   "url": "https://getworthit.com",
+   "values": [
+    "Free on iOS, Mac and Android",
+    "Manual entry of investment balances",
+    "Manual entry of real estate values",
+    "Not published",
+    "Monthly manual check-in without bank linking"
+   ]
+  },
+  {
+   "name": "Wealthfolio",
+   "domain": "wealthfolio.app",
+   "url": "https://wealthfolio.app",
+   "values": [
+    "Free open source; optional Connect subscription",
+    "Allocation, benchmark comparison, dividend tracking, rebalance plan",
+    "Not published",
+    "Retirement and FIRE planner with Monte Carlo simulation",
+    "Users wanting data kept on their own devices"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "robberger.com",
+   "why": "category 1 \u2014 blog and review site, no product of its own"
+  },
+  {
+   "domain": "notion.com",
+   "why": "category 3 \u2014 general workspace software; net worth items are user templates"
+  }
+ ]
+}

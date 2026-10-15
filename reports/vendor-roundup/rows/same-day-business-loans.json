@@ -1,0 +1,66 @@
+{
+ "slug": "best-same-day-business-loans",
+ "rows": [
+  {
+   "name": "Delta Capital Group",
+   "domain": "deltacapitalgroup.com",
+   "url": "https://deltacapitalgroup.com",
+   "values": [
+    "$5,000,000",
+    "Same day or within 24 hours of approval",
+    "500 personal score",
+    "Not published; short-term repaid within two years"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "crestmontcapital.com",
+   "why": "category 1 \u2014 broker/marketplace, funds through third-party lenders"
+  },
+  {
+   "domain": "quickloansdirect.com",
+   "why": "category 1 \u2014 broker/marketplace, funds through third-party lenders"
+  },
+  {
+   "domain": "businesscapital.com",
+   "why": "category 1 \u2014 broker/marketplace, funds through third-party lenders"
+  },
+  {
+   "domain": "advancepointcap.com",
+   "why": "category 1 \u2014 broker/marketplace, funds through third-party lenders"
+  },
+  {
+   "domain": "unitedcapitalsource.com",
+   "why": "category 1 \u2014 broker/marketplace, funds through third-party lenders"
+  },
+  {
+   "domain": "lendio.com",
+   "why": "category 1 \u2014 broker/marketplace, funds through third-party lenders"
+  },
+  {
+   "domain": "committedtocapital.com",
+   "why": "category 1 \u2014 broker/marketplace, funds through third-party lenders"
+  },
+  {
+   "domain": "samedaybusinessfunding.com",
+   "why": "category 1 \u2014 broker/marketplace, funds through third-party lenders"
+  },
+  {
+   "domain": "become.co",
+   "why": "category 1 \u2014 broker/marketplace, funds through third-party lenders"
+  },
+  {
+   "domain": "clarifycapital.com",
+   "why": "category 1 \u2014 broker/marketplace, funds through third-party lenders"
+  },
+  {
+   "domain": "avant.com",
+   "why": "category 4 \u2014 consumer personal loans; fits personal loans category"
+  },
+  {
+   "domain": "finli.com",
+   "why": "category 4 \u2014 invoicing/back-office software for banks; fits invoicing category"
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "slug": "best-ira-accounts",
+ "rows": [
+  {
+   "name": "Wells Fargo Advisors",
+   "domain": "wellsfargoadvisors.com",
+   "url": "https://www.wellsfargoadvisors.com",
+   "values": [
+    "Not published ($49.95 fee to close an IRA)",
+    "$500 for Intuitive Investor; WellsTrade not published",
+    "Intuitive Investor",
+    "0.35%/yr; 0.25% to 0.30% with linked checking",
+    "Clients choosing self-directed, advisor-led or automated IRAs"
+   ]
+  },
+  {
+   "name": "MissionSquare",
+   "domain": "missionsquare.com",
+   "url": "https://www.missionsquare.com",
+   "values": [
+    "Not published",
+    "No minimum for self-directed brokerage accounts",
+    "Managed account with an investment adviser",
+    "Not published",
+    "Anyone with earned income opening a traditional or Roth IRA"
+   ]
+  },
+  {
+   "name": "Regions Bank",
+   "domain": "regions.com",
+   "url": "https://www.regions.com",
+   "values": [
+    "Not published",
+    "$250 fixed-rate IRA; $50 money market IRA",
+    "InvestPath",
+    "Not published",
+    "Bank customers wanting CD, money market or managed IRAs"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "hicapitalize.com",
+   "why": "category 1 \u2014 publisher/review site, no product of its own"
+  },
+  {
+   "domain": "raisin.com",
+   "why": "category 4 \u2014 savings and CD marketplace; no IRA found, fits savings/CD category"
+  },
+  {
+   "domain": "lemon8-app.com",
+   "why": "category 1 \u2014 social content app, no IRA product"
+  },
+  {
+   "domain": "joingerald.com",
+   "why": "category 4 \u2014 cash advance/BNPL app, no IRA; fits cash-advance category"
+  },
+  {
+   "domain": "themilitarywallet.com",
+   "why": "category 1 \u2014 publisher/blog, no product of its own"
+  }
+ ]
+}
