@@ -2372,7 +2372,7 @@ export const CALCULATORS: CalculatorDef[] = [
     navOrder: 51,
     metaTitle: "Credit Card Interest Calculator: Monthly Interest Cost",
     metaDescription:
-      "Free credit card interest calculator. See the interest a billing cycle charges from your rate and average daily balance, and what a mid-cycle payment saves.",
+      "Free credit card interest calculator. See one billing cycle's interest from your APR and average daily balance, and what a mid-cycle payment saves you.",
     targetKeyword: "credit card interest calculator",
     h1: "Credit Card Interest Calculator",
     introText:
