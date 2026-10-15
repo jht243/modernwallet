@@ -269,3 +269,9 @@
 | /guides/best-investment-account-for-kids/ | 2026-10-12 | 5 | 0/0/0/0/0 | 0 |
 | /mileage-deduction/irs-mileage-rate-2026/ | 2026-10-14 | 60 | 1/0/1/0/0 | 0 |
 | /guides/is-social-security-taxable/ | 2026-10-14 | 54 | 0/0/0/0/0 | 0 |
+| /guides/inherited-ira-taxes-explained/ | 2026-10-15 | 31 | 0/0/1/0/0 | 0 |
+| /guides/trump-gold-coin/ | 2026-10-15 | 24 | 0/0/0/0/0 | 0 |
+| /guides/how-to-open-a-trump-account/ | 2026-10-15 | 19 | 0/0/0/0/0 | 0 |
+| /retirement/social-security-retirement-calculator/ | 2026-10-15 | 15 | 0/0/0/0/0 | 0 |
+| /retirement/ | 2026-10-15 | 12 | 0/0/0/0/0 | 0 |
+| /roundup/best-brokers-for-treasury-bonds/ | 2026-10-15 | 9 | 0/0/0/0/0 | 0 |

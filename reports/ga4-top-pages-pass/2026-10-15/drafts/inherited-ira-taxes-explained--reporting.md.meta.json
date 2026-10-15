@@ -1,0 +1,74 @@
+{
+ "slug": "inherited-ira-taxes-explained--reporting",
+ "schema": "none",
+ "kind": "section",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 300,
+ "floor": 0,
+ "input_tokens": 26777,
+ "output_tokens": 4809,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.2033,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 300,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L5",
+     "quote": "Three boxes on the 1099-R matter most:",
+     "replacement": "Check these boxes on the 1099-R:",
+     "type": "unsupported",
+     "why": "SOURCE names the boxes but does not rank them as mattering most."
+    },
+    {
+     "id": "L12",
+     "quote": "On a $20,000 withdrawal, 10% withholding covers $2,000 of a $4,400 tax and leaves $2,400 due at filing, so use Form W-4R to set a higher rate on a one-time withdrawal (regular installments over more than one year use Form W-4P instead).",
+     "replacement": "The 10% default would leave her short, so use Form W-4R to set a higher rate on a one-time withdrawal (regular installments over more than one year use Form W-4P instead).",
+     "type": "unsupported",
+     "why": "The $20,000 withdrawal amount and the derived figures are not in SOURCE."
+    },
+    {
+     "id": "L14",
+     "quote": "Before your first withdrawal, read our [what to do with an inheritance](/guides/what-to-do-with-an-inheritance/) guide to see where this account fits among your other inherited assets.",
+     "replacement": "Before your first withdrawal, read our [what to do with an inheritance](/guides/what-to-do-with-an-inheritance/) guide.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe what the linked guide covers."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 323
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 60.9,
+ "response_id": "msg_011Cg3nFDPcf613XnzDG3Q9d",
+ "generated_at": "2026-10-15T09:25:24+0000"
+}

@@ -1,0 +1,132 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-14",
+  "window_start": "2026-10-14",
+  "window_end": "2026-10-14",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 77,
+      "sessions": 77,
+      "active_users": 72,
+      "clicks": 77
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 65,
+      "sessions": 71,
+      "active_users": 63,
+      "clicks": 65
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 31,
+      "sessions": 36,
+      "active_users": 33,
+      "clicks": 31
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 24,
+      "sessions": 24,
+      "active_users": 24,
+      "clicks": 24
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 19,
+      "sessions": 22,
+      "active_users": 19,
+      "clicks": 19
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 16,
+      "sessions": 14,
+      "active_users": 14,
+      "clicks": 16
+    },
+    {
+      "page": "/retirement/social-security-retirement-calculator/",
+      "views": 15,
+      "sessions": 12,
+      "active_users": 12,
+      "clicks": 15
+    },
+    {
+      "page": "/retirement/",
+      "views": 12,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 12
+    },
+    {
+      "page": "/guides/senior-deduction-social-security/",
+      "views": 11,
+      "sessions": 9,
+      "active_users": 7,
+      "clicks": 11
+    },
+    {
+      "page": "/roundup/best-brokers-for-treasury-bonds/",
+      "views": 9,
+      "sessions": 9,
+      "active_users": 9,
+      "clicks": 9
+    }
+  ],
+  "top10_pages_total_views": 279,
+  "top10_pages_total_clicks": 279,
+  "channel_split": {
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 75,
+      "Unassigned": 9,
+      "AI Assistant": 1,
+      "Cross-network": 1
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 69,
+      "Unassigned": 9,
+      "Cross-network": 2
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 33,
+      "Unassigned": 3,
+      "AI Assistant": 1,
+      "Cross-network": 1,
+      "Direct": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 24,
+      "Unassigned": 3
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 22,
+      "Unassigned": 3
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 13,
+      "Unassigned": 6,
+      "Cross-network": 1
+    },
+    "/retirement/social-security-retirement-calculator/": {
+      "Organic Search": 10,
+      "Unassigned": 2,
+      "Cross-network": 1
+    },
+    "/guides/senior-deduction-social-security/": {
+      "Organic Search": 9,
+      "Unassigned": 1
+    },
+    "/roundup/best-brokers-for-treasury-bonds/": {
+      "Organic Search": 9
+    },
+    "/retirement/": {
+      "Organic Search": 2,
+      "Unassigned": 2,
+      "Direct": 1
+    }
+  }
+}

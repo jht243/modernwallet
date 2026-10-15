@@ -1,0 +1,14 @@
+## Form 1099-R Reporting and Federal Withholding on Inherited IRA Withdrawals
+
+The custodian reports each inherited traditional IRA withdrawal on Form 1099-R. Federal tax on a one-time (nonperiodic) withdrawal is generally withheld at 10% unless you set a different amount on Form W-4R. That 10% is only a prepayment, and your actual tax is set by your bracket when you file your return.
+
+Check these boxes on the 1099-R:
+
+- **Box 1 and box 2a:** the IRA distribution amounts. Compare the two numbers to confirm the custodian reported the right figures.
+- **Box 7:** a number or letter code for the type of distribution. Code 4 means death.
+
+If a box looks wrong, ask the custodian for a corrected form before you file. On Form 1040, the total IRA distribution goes on line 4a and the taxable part goes on line 4b.
+
+The 10% default can fall short because the withdrawal is ordinary income stacked on your other income and taxed at your own bracket. In the worked example above, the beneficiary is in the 22% bracket. The 10% default would leave her short, so use Form W-4R to set a higher rate on a one-time withdrawal (regular installments over more than one year use Form W-4P instead).
+
+If the estate paid federal estate tax, you may be able to deduct that tax on any part of a distribution that counts as income with respect to a decedent. You take the deduction for the tax year you report the income, and Publication 590-B refers you to IRS Publication 559 for how to claim it. This applies only when the estate owed federal estate tax. These are federal rules, and state income tax on withdrawals varies by state. Before your first withdrawal, read our [what to do with an inheritance](/guides/what-to-do-with-an-inheritance/) guide.
