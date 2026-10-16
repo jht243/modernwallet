@@ -275,3 +275,7 @@
 | /retirement/social-security-retirement-calculator/ | 2026-10-15 | 15 | 0/0/0/0/0 | 0 |
 | /retirement/ | 2026-10-15 | 12 | 0/0/0/0/0 | 0 |
 | /roundup/best-brokers-for-treasury-bonds/ | 2026-10-15 | 9 | 0/0/0/0/0 | 0 |
+| /social-security-cola-calculator/ | 2026-10-16 | 68 | 0/0/0/0/0 | 1 |
+| / | 2026-10-16 | 18 | 0/0/0/0/0 | 0 |
+| /guides/trump-account-worth-it/ | 2026-10-16 | 15 | 0/0/0/0/0 | 0 |
+| /guides/trump-account-rules/ | 2026-10-16 | 14 | 0/0/0/0/0 | 0 |
