@@ -1,0 +1,182 @@
+{
+ "slug": "401k-vs-529",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2309,
+ "floor": 1500,
+ "input_tokens": 22686,
+ "output_tokens": 4454,
+ "thinking_tokens": 2234,
+ "cached_tokens": 18744,
+ "est_cost_usd": 0.0294,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2309,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 1179,
+   "floor": 1500,
+   "ratio": 0.79,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    6,
+    11
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we review account structures to help families map their cash flow across competing long-term goals without triggering avoidable penalties.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not license this specific first-person review claim."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Under [IRS Topic 558](https://www.irs.gov/taxtopics/tc558), an early distribution triggers ordinary income tax on the taxable portion plus an additional 10% tax, unless you qualify for an explicit statutory exception.",
+     "replacement": "Under [IRS Topic 558](https://www.irs.gov/taxtopics/tc558), an early distribution triggers ordinary income tax on the taxable portion plus an additional 10% tax, unless an exception applies.",
+     "type": "contradicted",
+     "why": "SOURCE instructions forbid using the word statutory."
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "A student can bridge higher education funding gaps using federal financial aid, scholarships, institutional grants, and student loans.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE explicitly lists financial-aid treatment as unknown and not to be stated."
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "By contrast, no financial institution issues retirement loans to cover living expenses, medical treatment, or housing when personal wages end.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state rules or availability regarding retirement loans."
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "Underfunding a retirement account leaves an individual entirely dependent on Social Security or ongoing employment.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE explicitly lists Social Security as unknown and forbidden."
+    },
+    {
+     "id": "faqItems[3].answer",
+     "quote": "If the beneficiary does not attend college, you can use up to $20,000 annually for eligible kindergarten through grade 12 tuition, pay up to $10,000 toward qualified student loans, change the beneficiary to another family member, or execute a direct rollover of up to $35,000 into the beneficiary's Roth IRA if the account has been open for 15 years.",
+     "replacement": "If the beneficiary does not attend college, you can use up to $20,000 annually for eligible kindergarten through grade 12 tuition, pay up to $10,000 toward qualified student loans, or execute a direct rollover of up to $35,000 into the beneficiary's Roth IRA if the account has been open for 15 years.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention changing the beneficiary to another family member."
+    },
+    {
+     "id": "comparisonTable.rows[6].b",
+     "quote": "Limited to the amount needed for the beneficiary's qualified education expenses; specific account balance caps are set by each state program",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE forbids stating account balance caps; administrator sets contribution limit."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "By contrast, a 529 plan finances schooling for your children, grandchildren, or yourself without exposing investment growth to federal income taxes.",
+     "replacement": "By contrast, a 529 plan finances schooling for a designated beneficiary without exposing investment growth to federal income taxes.",
+     "type": "unsupported",
+     "why": "SOURCE specifies a designated beneficiary, not children, grandchildren, or yourself."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "A 529 qualified tuition program is established and maintained by a state, a state agency, or an eligible educational institution, as outlined on the [IRS 401(k) plans page](https://www.irs.gov/retirement-plans/401k-plans).",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE cites IRS Topic 313 for 529 plans, not the 401(k) page."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Because state deductions vary by location, check your specific state plan disclosure documents to verify local rules.",
+     "replacement": "State tax treatment varies by state.",
+     "type": "unlinked-directive",
+     "why": "Directs reader to outside plan documents without a markdown link in sentence."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Once you reach retirement age, a 401(k) imposes no spending restrictions whatsoever.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state a 401(k) imposes no spending restrictions."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "You can use retirement distributions for medical bills, housing, leisure, or family tuition assistance without tracking eligible educational line items.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not list medical bills, housing, leisure, or tuition uses."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Withdrawing money from either account for unauthorized purposes triggers taxes and potential administrative penalties.",
+     "replacement": "Withdrawing money from either account for unauthorized purposes triggers taxes.",
+     "type": "unsupported",
+     "why": "SOURCE does not state administrative penalties apply to unauthorized withdrawals."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "You cannot reassign your workplace retirement plan to a child, and you cannot roll 401(k) funds directly into a college savings plan.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state rules about reassigning a 401(k) to a child."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Each individual state program administrator establishes an aggregate account balance limit for its plans.",
+     "replacement": "Each program's administrator sets the plan's contribution limit.",
+     "type": "unsupported",
+     "why": "SOURCE forbids stating any aggregate balance cap; administrator sets contribution limit."
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "Many households establish baseline contributions to their workplace plan before directing secondary savings into an education program.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what households typically do or establish."
+    },
+    {
+     "id": "verdict",
+     "quote": "Our recommendation would change if you have an immediate educational tuition deadline arriving within three years, if your workplace retirement plan imposes unusually restrictive elective deferral caps below federal ceilings, or if your state program provides an exceptional local tax credit that offsets the loss of pretax retirement contributions.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state a three-year timeframe or state tax credit details."
+    }
+   ],
+   "deleted_final": 11,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2584
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 212.7,
+ "response_id": "as_RarbVJNS7jrEPz4WWiAw",
+ "generated_at": "2026-10-16T07:20:30+0000"
+}

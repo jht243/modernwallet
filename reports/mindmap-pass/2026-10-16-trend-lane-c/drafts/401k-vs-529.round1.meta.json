@@ -1,0 +1,240 @@
+{
+ "slug": "401k-vs-529",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1871,
+ "floor": 1500,
+ "input_tokens": 22047,
+ "output_tokens": 3942,
+ "thinking_tokens": 1005,
+ "cached_tokens": 18744,
+ "est_cost_usd": 0.0224,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1871,
+  "numbers_not_in_facts": [
+   "35750"
+  ],
+  "fact_budget": {
+   "fact_words": 992,
+   "floor": 1500,
+   "ratio": 0.66,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    10,
+    15
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we review saving decisions through the mechanics of cash flow, tax treatment, and account access rules.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support this specific first-person claim."
+    },
+    {
+     "id": "comparisonTable.rows[1].a",
+     "quote": "Offered by private employers, public employers, and tax-exempt organizations",
+     "replacement": "Offered by employers",
+     "type": "unsupported",
+     "why": "SOURCE does not state who offers a 401(k) specifically."
+    },
+    {
+     "id": "comparisonTable.rows[2].a",
+     "quote": "Pre-tax elective deferrals reduce current taxable income; designated Roth contributions do not",
+     "replacement": "Pre-tax elective deferrals reduce current taxable income",
+     "type": "unsupported",
+     "why": "SOURCE does not mention designated Roth contributions for a 401(k)."
+    },
+    {
+     "id": "comparisonTable.rows[3].a",
+     "quote": "Earnings grow tax-deferred until distribution, or tax-free in a designated Roth account",
+     "replacement": "Earnings grow tax-deferred until distribution",
+     "type": "unsupported",
+     "why": "SOURCE does not mention designated Roth accounts for a 401(k)."
+    },
+    {
+     "id": "comparisonTable.rows[4].a",
+     "quote": "Traditional distributions are taxable as ordinary income; qualified Roth distributions are tax-free",
+     "replacement": "Distributions are includible in gross income",
+     "type": "unsupported",
+     "why": "SOURCE does not mention Roth 401(k) distributions."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "A 529 plan, legally authorized under Section 529 of the Internal Revenue Code, helps families prepare for schooling costs.",
+     "replacement": "A 529 plan, legally a qualified tuition program, helps families prepare for schooling costs.",
+     "type": "unsupported",
+     "why": "SOURCE does not cite Section 529 of the Internal Revenue Code."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Any investments inside the 401(k) compound on a tax-deferred basis, meaning you pay no capital gains taxes or dividend taxes while the money remains in the plan.",
+     "replacement": "Any investments inside the 401(k) compound on a tax-deferred basis while the money remains in the plan.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention capital gains taxes or dividend taxes."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Because educational financial aid, loans, and scholarships exist for students while no loans exist for retirement, savers often prioritize retirement accounts before education accounts.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE forbids financial-aid treatment and does not mention student loan availability."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "A 529 plan functions best when targeted strictly toward upcoming educational expenses.",
+     "replacement": "A 529 plan is designed to be targeted strictly toward upcoming educational expenses.",
+     "type": "unsupported",
+     "why": "SOURCE does not use the evaluative degree word best."
+    },
+    {
+     "id": "faqItems[2].answer",
+     "quote": "Unlike an IRA, a 401(k) plan does not offer a statutory exception to the 10% additional tax for higher education expenses.",
+     "replacement": "A 401(k) plan does not offer a statutory exception to the 10% additional tax for higher education expenses.",
+     "type": "unsupported",
+     "why": "SOURCE does not state IRA exceptions for higher education expenses."
+    },
+    {
+     "id": "introText",
+     "quote": "Deciding whether to place your next dollar into a 401k or 529 depends on which milestone arrives first, how each account handles withdrawals, and the limits each program sets on annual contributions.",
+     "replacement": "Deciding whether to place your next dollar into a 401k or 529 depends on which milestone arrives first, how each account handles withdrawals, and the contribution limits that apply.",
+     "type": "unsupported",
+     "why": "SOURCE states 529 plans have no annual contribution cap, only overall program limits."
+    },
+    {
+     "id": "comparisonTable.rows[2].a",
+     "quote": "Pre-tax elective deferrals reduce current taxable income",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state federal tax treatment of 401(k) contributions."
+    },
+    {
+     "id": "comparisonTable.rows[3].a",
+     "quote": "Earnings grow tax-deferred until distribution",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state how earnings are taxed inside a 401(k)."
+    },
+    {
+     "id": "comparisonTable.rows[4].a",
+     "quote": "Distributions are includible in gross income",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state tax treatment on qualified retirement distributions from a 401(k)."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Traditional 401(k) contributions are made on a pre-tax basis through payroll deductions, lowering your federal adjusted gross income during the contribution year.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that 401(k) contributions are pre-tax or reduce adjusted gross income."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Any investments inside the 401(k) compound on a tax-deferred basis while the money remains in the plan.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that 401(k) investments compound tax-deferred."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "When you take distributions in retirement, the full amount withdrawn is included in your gross income and taxed at ordinary income tax rates.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state tax treatment of regular retirement distributions from a 401(k)."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Some states provide distinct state income tax deductions or credits for residents, but those policies vary by state and require reviewing your specific state plan documents.",
+     "replacement": "Some states offer a state tax benefit, but policies vary by state.",
+     "type": "unlinked-directive",
+     "why": "Directs reader to review outside documents without a link; SOURCE says state tax benefit."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Statutory exceptions to this 10% additional tax for employer plans include total and permanent disability, terminal illness, distributions paid to a beneficiary after death, a series of substantially equal periodic payments, and distributions taken after separating from service during or after the calendar year you reach age 55.",
+     "replacement": "Statutory exceptions to this 10% additional tax for employer plans include total and permanent disability, terminal illness, distributions paid to a beneficiary or estate after death, a series of substantially equal periodic payments over life expectancy, and distributions after separating from service at or after age 55.",
+     "type": "contradicted",
+     "why": "SOURCE states separating from service at or after age 55, not during the calendar year."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "The IRS adjusts retirement caps periodically, while states govern total balance limits for education programs.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE forbids stating any 529 aggregate balance cap or state limits."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "You must contact the specific program trustee or plan administrator to confirm its overall aggregate account balance limit.",
+     "replacement": "",
+     "type": "unlinked-directive",
+     "why": "Directs reader to outside administrator without a link and states aggregate balance cap."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Contributing to a 401(k) shields current income from federal taxation and gives money decades to compound tax-deferred.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that a 401(k) shields income or compounds tax-deferred."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "When comparing 529 vs maxing out 401k options, direct workplace retirement contributions also provide certainty through structured payroll deductions.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state workplace contributions provide certainty through structured payroll deductions."
+    },
+    {
+     "id": "verdict",
+     "quote": "Choose a 401(k) if you need to build tax-deferred assets for retirement, want to lower your current federal taxable income through elective deferrals, or need to take advantage of catch-up contributions up to $32,500 (or $35,750 for ages 60 to 63) in 2026.",
+     "replacement": "Choose a 401(k) if you are saving for your own retirement, want to make elective deferrals up to $24,500, or need to take advantage of catch-up contributions up to $32,500 (or $35,750 for ages 60 to 63) in 2026.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that 401(k) assets are tax-deferred or lower taxable income."
+    },
+    {
+     "id": "faqItems[0].answer",
+     "quote": "A 401(k) is designed for your retirement and offers pre-tax salary deferrals up to $24,500 in 2026, while a 529 plan is designed for education expenses and provides tax-free distributions strictly for qualified schooling costs.",
+     "replacement": "A 401(k) is designed for your retirement and offers employee elective deferrals up to $24,500 in 2026, while a 529 plan is designed for education expenses and provides tax-free distributions strictly for qualified schooling costs.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that 401(k) deferrals are pre-tax."
+    }
+   ],
+   "deleted_final": 15,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2119
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 282.7,
+ "response_id": "Is7RatKMDuy-39IPle7paQ",
+ "generated_at": "2026-10-16T07:16:11+0000"
+}

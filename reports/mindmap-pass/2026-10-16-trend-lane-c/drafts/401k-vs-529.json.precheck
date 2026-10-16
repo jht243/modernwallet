@@ -1,0 +1,106 @@
+{
+  "slug": "401k-vs-529",
+  "metaTitle": "401k vs 529: How to Choose in 2026",
+  "metaDescription": "401k vs 529 compared on 2026 contribution limits, tax treatment, early withdrawal penalties, and college savings rules so you can allocate every dollar.",
+  "h1": "401(k) vs 529 Plan: How to Direct Your Next Dollar",
+  "subtitle": "A direct comparison of contribution ceilings, tax treatment, withdrawal rules, and rollover restrictions between retirement and education accounts.",
+  "optionAName": "401(k)",
+  "optionBName": "529 Plan",
+  "introText": "A 401(k) and a 529 plan do different jobs: the 401(k) is for your own retirement and the 529 is for a student's education costs, so they are not interchangeable and money in one cannot simply be moved to the other. At ModernWallet, we review account structures to help families map their cash flow across competing long-term goals without triggering avoidable penalties. Which account gets your next dollar depends on which goal arrives first, how the tax treatment fits your household income, and what access you need before retirement age. Every dollar placed into a 529 plan must follow rules governing qualified educational expenses, while money in a workplace retirement plan remains bound by federal retirement distribution age thresholds.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Primary financial objective",
+        "a": "Funding personal income during retirement",
+        "b": "Paying qualified education expenses for a designated beneficiary"
+      },
+      {
+        "dimension": "Program administrator and oversight",
+        "a": "Private employers or public entities sponsoring individual workplace accounts under Internal Revenue Code rules",
+        "b": "State governments, state agencies, or higher education institutions; the Securities and Exchange Commission (SEC) does not regulate them"
+      },
+      {
+        "dimension": "Federal tax treatment of contributions",
+        "a": "Elective deferrals are excluded from gross income on Form W-2 box 1, though Social Security and Medicare taxes apply; designated Roth deferrals are made after tax",
+        "b": "Contributions are not deductible on your federal income tax return, though state tax treatment varies by state"
+      },
+      {
+        "dimension": "Tax treatment on account earnings",
+        "a": "Distributions, including accumulated earnings, are includible in taxable income at retirement, except for qualified distributions from designated Roth accounts",
+        "b": "Earnings accumulate tax free and are excluded from the beneficiary's taxable income when used for qualified education expenses"
+      },
+      {
+        "dimension": "Tax treatment on qualified distributions",
+        "a": "Traditional 401(k) withdrawals are taxed as ordinary income; qualified distributions from designated Roth accounts are tax free",
+        "b": "Distributions are completely tax free at the federal level when spent on qualified higher education or eligible elementary and secondary school expenses"
+      },
+      {
+        "dimension": "Non-qualified withdrawal consequences",
+        "a": "Distributions before age 59½ generally face income tax plus a 10% additional tax on the taxable portion, unless a specific exception applies",
+        "b": "A portion of the earnings is taxable as ordinary income on Form 1099-Q when the distribution exceeds qualified expenses"
+      },
+      {
+        "dimension": "2026 contribution limits",
+        "a": "Elective deferral limit is $24,500; catch-up is $8,000 for ages 50 and older, or $11,250 for ages 60 to 63, subject to individual plan caps",
+        "b": "Limited to the amount needed for the beneficiary's qualified education expenses; specific account balance caps are set by each state program"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What Each Account Is For",
+      "content": "A 401(k) plan provides an individual retirement savings vehicle linked to your employer, while a 529 plan serves as a qualified tuition program designed to fund education costs for a named beneficiary. Choosing between them requires understanding that the accounts address entirely different phases of life. The 401(k) builds personal capital intended to sustain your household once wage income ceases. By contrast, a 529 plan finances schooling for your children, grandchildren, or yourself without exposing investment growth to federal income taxes.\n\nEmployers set up workplace retirement plans under Internal Revenue Service (IRS) guidelines, allowing staff to direct portions of their wages into individual accounts. Some employers also contribute matching or profit-sharing funds directly to the worker's balance. To evaluate the distinctions between pretax and post-tax contributions inside workplace plans, review our analysis of [Roth 401(k) vs Traditional 401(k)](/compare/roth-401k-vs-traditional-401k/) before adjusting your payroll elections.\n\nA 529 qualified tuition program is established and maintained by a state, a state agency, or an eligible educational institution, as outlined on the [IRS 401(k) plans page](https://www.irs.gov/retirement-plans/401k-plans). Every state plus the District of Columbia sponsors at least one program option. While colleges can operate prepaid tuition arrangements, state agencies maintain education savings plans. The [Securities and Exchange Commission (SEC)](https://www.investor.gov/introduction-investing/investing-basics/glossary/529-plans) notes that it does not regulate or oversee 529 programs. These plans exist strictly to collect prepayments or accumulate savings toward eligible educational costs."
+    },
+    {
+      "heading": "Federal Tax Treatment on Contributions and Growth",
+      "content": "Federal tax rules treat incoming deposits and account earnings differently across both accounts. For a traditional 401(k), employee elective deferrals are excluded from gross taxable income in the contribution year, according to [IRS Topic 424](https://www.irs.gov/taxtopics/tc424). These deferrals bypass federal income tax withholding and do not appear as taxable wages in box 1 of Form W-2. They remain subject to Social Security and Medicare taxes. Designated Roth elective deferrals do not reduce current taxable wages. Distributions from a traditional 401(k), including all investment earnings, are includible in your taxable income at retirement. Qualified distributions from designated Roth balances come out tax free.\n\nContributions made to a 529 plan are never deductible on your federal income tax return, as explained in [IRS Topic 313](https://www.irs.gov/taxtopics/tc313). Certain states provide a state income tax deduction or credit for residents who contribute to their home state's plan. Because state deductions vary by location, check your specific state plan disclosure documents to verify local rules. Once inside the account, investment earnings accumulate tax free at the federal level.\n\nThe tax benefit of a 529 plan appears during the distribution phase rather than at the deposit stage. When you withdraw money to cover qualified education costs, the beneficiary does not include investment earnings in taxable income. This structure mirrors post-tax growth models found in other personal savings vehicles. To compare how non-retirement accounts operate alongside tuition plans, read our breakdown of a [529 vs Brokerage Account](/compare/529-vs-brokerage-account/) for long-term family investing."
+    },
+    {
+      "heading": "Qualified Expenses and Educational Spending Rules",
+      "content": "A 529 plan restricts tax-free distributions to qualified higher education expenses, whereas retirement plans permit penalty-free access for any spending category once you attain retirement age. Under federal rules, qualified higher education expenses include tuition, mandatory fees, books, supplies, and equipment required for attendance at an eligible college, university, or vocational school. The educational institution must be eligible to participate in federal student aid programs for the expenses to qualify.\n\nQualified uses also extend to elementary and secondary school expenses, but these distributions carry specific dollar limitations. For kindergarten through grade 12, a family can withdraw up to $20,000 per year in total from all 529 accounts held for the same beneficiary. This threshold increased from $10,000 before December 31, 2025. Qualifying kindergarten through grade 12 costs include tuition, curriculum materials, books, outside tutoring, academic testing fees, dual enrollment charges, and educational therapies for students with disabilities. For a detailed reference on eligible items, examine our guide to [529 Qualified Expenses](/guides/529-qualified-expenses/) before scheduling school withdrawals.\n\nFederal provisions also permit 529 distributions for registered apprenticeship programs, qualified postsecondary credentialing programs, and student loan repayments. A plan holder can withdraw up to a $10,000 lifetime limit per individual to pay principal or interest on qualified education loans for the beneficiary or the beneficiary's sibling. Once you reach retirement age, a 401(k) imposes no spending restrictions whatsoever. You can use retirement distributions for medical bills, housing, leisure, or family tuition assistance without tracking eligible educational line items."
+    },
+    {
+      "heading": "Consequences of Using Funds for the Wrong Purpose",
+      "content": "Withdrawing money from either account for unauthorized purposes triggers taxes and potential administrative penalties. For a 401(k), distributions taken before age 59½ are categorized as early distributions. Under [IRS Topic 558](https://www.irs.gov/taxtopics/tc558), an early distribution triggers ordinary income tax on the taxable portion plus an additional 10% tax, unless you qualify for an explicit statutory exception. Exceptions for qualified retirement plans include distributions following total and permanent disability, terminal illness, a series of substantially equal periodic payments based on life expectancy, payments to a beneficiary after the employee's death, and separations from service occurring at or after age 55.\n\nTaking money from a 529 plan for non-qualified expenses does not forfeit your original investment principal, but it does affect the earnings. Every 529 distribution is reported on IRS Form 1099-Q, which separates the withdrawal into non-taxable return of basis and investment earnings. If total distributions exceed the student's qualified higher education expenses for the calendar year, a proportional share of the earnings is includible in gross taxable income, and additional taxes may apply as detailed in [IRS Publication 970](https://www.irs.gov/publications/p970).\n\nSavers frequently ask whether they can transfer balances from one account structure directly to the other. Federal rules do not describe any mechanism to roll a 401(k) directly into a 529 plan. Moving money from a 401(k) to pay education costs requires taking a taxable distribution from the retirement plan, which exposes workers under age 59½ to income taxes and the 10% additional tax on taxable amounts. If you hold unspent tuition funds instead, evaluate your choices through our guide on [529 Leftover Money Options](/guides/529-leftover-money-options/) to avoid non-qualified distributions."
+    },
+    {
+      "heading": "Rollover Escape Valves and Account Flexibility",
+      "content": "Recent updates to federal tax rules establish an escape valve for families with unused 529 assets. For distributions completed after December 31, 2023, the designated beneficiary of a 529 plan may roll unused balances into their own Roth Individual Retirement Arrangement (IRA) without incurring federal income tax. This rollover must be executed as a direct trustee-to-trustee transfer between the institutions. The transfer remains subject to the annual Roth IRA contribution limit and carries an aggregate lifetime maximum of $35,000 per beneficiary.\n\nSeveral strict timing restrictions govern this rollover process. The 529 account must have been open for at least 15 continuous years before the transfer date. Furthermore, the rollover amount cannot include any contributions, or the earnings generated by those contributions, made within the five-year period ending on the distribution date. To see how post-tax education balances compare with personal retirement arrangements, check our evaluation of [529 vs Roth IRA](/compare/529-vs-roth-ira/) alongside our breakdown of [401(k) vs Roth IRA](/compare/401k-vs-roth-ira/).\n\nTraditional 401(k) plans offer no comparable flexibility for education funding. You cannot reassign your workplace retirement plan to a child, and you cannot roll 401(k) funds directly into a college savings plan. If you need to assess the speed of your tuition balance growth relative to your savings timeline, use our [529 Savings Calculator](/529-savings-calculator/) to project progress under your state plan's contribution limits."
+    },
+    {
+      "heading": "Annual Contribution Ceilings and Program Limitations",
+      "content": "The federal government and state plan trustees impose distinct caps on how much money you can deposit each year. For 2026, the elective deferral limit for employees participating in a 401(k), 403(b), governmental 457 plan, or the federal Thrift Savings Plan is $24,500, an increase from $23,500 in 2025. This threshold is documented in the [IRS 2026 retirement limits announcement](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500). Individual workplace plan terms can set lower deferral caps than the federal maximum. Read our complete guide to [401(k) Contribution Limits 2026](/guides/401k-contribution-limits-2026/) to track these adjustments across your benefits package.\n\nParticipants who are age 50 and older can take advantage of catch-up contributions if their workplace plan permits them. For 2026, the standard catch-up allowance for employees aged 50 and over is $8,000, bringing their total elective deferral capacity to $32,500. Workers aged 60, 61, 62, and 63 qualify for a higher catch-up limit of $11,250. An employee in that four-year age window can defer up to $24,500 plus $11,250, resulting in a maximum contribution of $35,750 for 2026, as noted on the [IRS 401(k) contribution limits page](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits).\n\nA 529 plan operates under entirely different contribution parameters. The Internal Revenue Code does not set a flat annual dollar ceiling for 529 deposits. Instead, contributions on behalf of a beneficiary cannot exceed the amount reasonably necessary to provide for that student's qualified education expenses. Each individual state program administrator establishes an aggregate account balance limit for its plans. Contributors face no income phaseouts or restrictions when opening or funding a 529 account, making it accessible regardless of adjusted gross income."
+    },
+    {
+      "heading": "Balancing Retirement Security Against College Funding Priorities",
+      "content": "Allocating capital between retirement security and educational savings involves evaluating the timeline of each expense and the consequences of underfunding. A student can bridge higher education funding gaps using federal financial aid, scholarships, institutional grants, and student loans. By contrast, no financial institution issues retirement loans to cover living expenses, medical treatment, or housing when personal wages end. Underfunding a retirement account leaves an individual entirely dependent on Social Security or ongoing employment.\n\nWorkplace 401(k) accounts provide immediate tax management through payroll deferrals and frequently offer employer matching contributions. Foregoing workplace retirement contributions to overfund a 529 plan forfeits both current-year federal taxable wage reductions and any employer-funded account additions. Many households establish baseline contributions to their workplace plan before directing secondary savings into an education program. To examine whether a dedicated college account suits your broader financial framework, consult our detailed analysis on [Is a 529 Plan Worth It?](/guides/is-a-529-plan-worth-it/) to weigh administrative constraints against potential tax savings."
+    }
+  ],
+  "verdict": "Prioritize your 401(k) if you have not secured your personal retirement timeline, if your employer provides matching contributions, or if you need to lower your current-year taxable wages on Form W-2. Direct your next dollar to a 529 plan if your retirement savings are on track, you have near-term college or eligible kindergarten through grade 12 tuition bills, and you want investment growth to compound tax free for a specific student. This recommendation does not fit savers who anticipate needing emergency liquidity or general capital for personal expenses before age 59½, because both accounts penalize non-qualifying distributions. Our recommendation would change if you have an immediate educational tuition deadline arriving within three years, if your workplace retirement plan imposes unusually restrictive elective deferral caps below federal ceilings, or if your state program provides an exceptional local tax credit that offsets the loss of pretax retirement contributions.",
+  "faqItems": [
+    {
+      "question": "Should I contribute to a 401(k) or a 529 plan?",
+      "answer": "Direct money to your 401(k) first if you need to build personal retirement security or capture an employer matching contribution. Fund a 529 plan once your retirement savings are on schedule and you want tax-free growth specifically earmarked for a student's qualified educational expenses."
+    },
+    {
+      "question": "Can I roll a 401(k) into a 529 plan?",
+      "answer": "No, federal tax rules describe no provision or transfer mechanism that allows you to roll a 401(k) directly into a 529 plan. Any distribution taken from a 401(k) to fund college savings is treated as an ordinary withdrawal, which triggers income tax and a 10% additional tax on early distributions before age 59½ unless an exception applies."
+    },
+    {
+      "question": "What happens if I take money out of a 401(k) to pay for college?",
+      "answer": "Taking a 401(k) distribution to pay for college before reaching age 59½ is treated as an early distribution. The taxable portion is included in your gross income and subject to a 10% additional tax unless you qualify for an IRS exception, such as separation from service at age 55 or older, total disability, or terminal illness."
+    },
+    {
+      "question": "What happens to a 529 if my child does not go to college?",
+      "answer": "If the beneficiary does not attend college, you can use up to $20,000 annually for eligible kindergarten through grade 12 tuition, pay up to $10,000 toward qualified student loans, change the beneficiary to another family member, or execute a direct rollover of up to $35,000 into the beneficiary's Roth IRA if the account has been open for 15 years."
+    },
+    {
+      "question": "Can a 529 plan be used for anything other than college?",
+      "answer": "Yes, a 529 plan can cover qualified elementary and secondary school tuition and materials up to $20,000 annually, expenses for registered apprenticeship programs, qualified postsecondary credentialing, and up to $10,000 in lifetime student loan repayments for the beneficiary or a sibling."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}

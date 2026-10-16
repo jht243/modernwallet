@@ -1,0 +1,125 @@
+{
+ "rows": [
+  {
+   "keyword": "401k vs 529",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.youtube.com",
+    "www.fidelity.com",
+    "401kspecialistmag.com",
+    "www.investopedia.com",
+    "www.reddit.com",
+    "content.schwab.com",
+    "www.experian.com",
+    "www.militarybenefit.org"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.experian.com",
+    "www.bogleheads.org",
+    "www.fidelity.com",
+    "401kspecialistmag.com",
+    "www.militarybenefit.org",
+    "www.schwabfamilylaw.com",
+    "forum.savingforcollege.com",
+    "www.youtube.com",
+    "content.schwab.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What does Dave Ramsey say about 529?",
+    "Why don't 97% of people use 529 college savings plans?",
+    "How much money should a 5 year old have in 529?",
+    "How much will $20,000 in 401k be worth in 20 years?",
+    "Can I retire at 62 with $500,000 in my 401k?",
+    "Is it realistic to have $100,000 in 401k at 33 years old?"
+   ],
+   "related_searches": [
+    "401k vs 529 reddit",
+    "401k vs 529 taxes",
+    "401k vs 529 fidelity",
+    "Roth IRA vs 529 Dave Ramsey",
+    "529 vs Roth IRA reddit",
+    "Custodial Roth IRA vs 529",
+    "Retirement vs 529",
+    "529 vs brokerage account for child"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; AI Overview present, cites www.youtube.com, www.fidelity.com, 401kspecialistmag.com, www.investopedia.com",
+   "se_results_count": 107
+  },
+  {
+   "keyword": "mortgage lender vs bank",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.bankrate.com",
+    "www.experian.com",
+    "www.academybank.com",
+    "www.imcu.com",
+    "www.consumerfinance.gov"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.bankrate.com",
+    "www.consumerfinance.gov",
+    "www.experian.com",
+    "summitlendingusa.com",
+    "www.lendingtree.com",
+    "blog.ffbml.com",
+    "www.imcu.com",
+    "www.chase.com",
+    "www.pnc.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What not to tell a mortgage lender?",
+    "What is the difference between a bank and a mortgage lender?",
+    "Is it better to go through a bank or a mortgage broker for a mortgage?",
+    "Is it better to use a local lender or bank?",
+    "Is it better to go with a mortgage lender or bank?",
+    "What not to say to a mortgage broker?"
+   ],
+   "related_searches": [
+    "Mortgage lender vs bank reddit",
+    "Mortgage lender vs bank vs broker",
+    "Mortgage lender vs bank pros and cons",
+    "Mortgage broker vs bank pros and cons",
+    "Mortgage lender vs credit union",
+    "What is a mortgage lender vs broker",
+    "How mortgage brokers rip you off",
+    "Mortgage lender near me",
+    "Mortgage broker vs loan officer"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com) incl. #1; AI Overview present, cites www.bankrate.com, www.experian.com, www.academybank.com, www.imcu.com",
+   "se_results_count": 144
+  }
+ ],
+ "cost": "DataForSEO: 2 calls, $0.00830 of $2.00 budget"
+}
