@@ -1,0 +1,3 @@
+No general federal law requires a private employer to pay the Internal Revenue Service (IRS) standard mileage rate to W-2 employees. Under the Fair Labor Standards Act (FLSA), required vehicle costs cannot push a worker's weekly pay below the federal minimum wage of $7.25 per hour. State rules can also require reimbursement. California Labor Code Section 2802, for example, requires employers to reimburse employees for necessary vehicle costs. These rules are covered under [state mileage reimbursement laws](/guides/state-mileage-reimbursement-law-california-texas-michigan/).
+
+Many employers adopt the IRS rate for convenience. You can calculate your expected payout with a [mileage reimbursement calculator](/mileage-reimbursement-calculator/).

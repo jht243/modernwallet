@@ -17,7 +17,7 @@ export const MILEAGE_SPOKES: SpokeEntry[] = [
   {
     calculator: "mileage-deduction",
     slug: "irs-mileage-rate-2026",
-    updated: "2026-10-14",
+    updated: "2026-10-16",
     title: "IRS Mileage Rate 2026: 72.5¢ and 76¢ Explained",
     metaDescription:
       "The 2026 IRS mileage rate is 72.5 cents through June 30 and 76 cents from July 1. See both rates, why they changed mid-year, and how to split your miles.",
@@ -63,6 +63,11 @@ export const MILEAGE_SPOKES: SpokeEntry[] = [
         question: "Can employees deduct mileage in 2026?",
         answer:
           "Generally no. Unreimbursed employee business expenses, including mileage, are not deductible for most employees under current law. The standard mileage rate matters mainly to self-employed filers reporting on Schedule C, and to employers reimbursing employees — a reimbursement at or below the standard rate under an accountable plan is generally not taxable to the employee.",
+      },
+      {
+        question: "Are employers required to pay the IRS standard mileage rate?",
+        answer:
+          "No general federal law requires a private employer to pay the Internal Revenue Service (IRS) standard mileage rate to W-2 employees. Under the Fair Labor Standards Act (FLSA), required vehicle costs cannot push a worker's weekly pay below the federal minimum wage of $7.25 per hour. State rules can also require reimbursement. California Labor Code Section 2802, for example, requires employers to reimburse employees for necessary vehicle costs. These rules are covered under [state mileage reimbursement laws](/guides/state-mileage-reimbursement-law-california-texas-michigan/).\n\nMany employers adopt the IRS rate for convenience. You can calculate your expected payout with a [mileage reimbursement calculator](/mileage-reimbursement-calculator/).",
       },
       {
         question: "Is my mileage reimbursement from my employer taxable?",
