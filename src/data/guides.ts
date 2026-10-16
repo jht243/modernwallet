@@ -30,6 +30,157 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── mindmap-pass 2026-10-16 (competitor-monitor): 401k-loan-rules ──
+  {
+    "updated": "2026-10-16",
+    "slug": "401k-loan-rules",
+    "title": "401(k) Loan Rules: Limits, Repayment Terms, and Default",
+    "metaDescription": "Learn 401(k) loan rules, borrowing limits up to $50,000, 5-year repayment terms, and tax consequences if a plan loan is treated as a distribution.",
+    "h1": "401(k) Loan Rules: Limits, Repayment Terms, and Tax Consequences",
+    "cardBlurb": "How a 401(k) loan works: the borrowing limit, the 5-year repayment rule, and what happens when a plan loan is not repaid.",
+    "introText": "A 401(k) loan allows you to borrow money from your own vested retirement balance if your employer's plan permits loans, up to the lesser of $50,000 (less any higher loan balance you carried in the past year) or the greater of $10,000 or half your vested balance.\n\nA loan from a qualified employer plan is treated as a distribution under [26 U.S.C. § 72(p)(1)(A)](https://www.law.cornell.edu/uscode/text/26/72) unless it stays within the amount limit, is repaid within 5 years (longer if it buys your main home), and is repaid in substantially level payments at least quarterly.\n\nTo see how a permanent withdrawal works, read [How to Withdraw From a 401(k)](/guides/how-to-withdraw-from-401k/) or try the [401(k) early withdrawal calculator](/401k-early-withdrawal-calculator/).",
+    "sections": [
+      {
+        "heading": "How a 401(k) Loan Works and How Much You Can Borrow",
+        "body": "Under [26 U.S.C. § 72(p)(2)(A)](https://www.law.cornell.edu/uscode/text/26/72), a new loan plus all your other outstanding loans from the plan must not exceed the lesser of two limits. The first limit is $50,000, reduced by the excess (if any) of your highest outstanding loan balance during the one-year period ending the day before the new loan is made over your outstanding balance on the day it is made. The second limit is the greater of one-half of your vested balance (your nonforfeitable accrued benefit under the plan) or $10,000.\n\nThese three illustrations of the formula assume no prior loans. They are examples, not advice.\n\n1. A participant with a $15,000 vested balance: one-half of the balance is $7,500. Because the formula uses the greater of one-half of the vested balance or $10,000, the second limit is $10,000. Comparing $10,000 to the $50,000 maximum, the lesser figure is $10,000. The borrowing cap is $10,000.\n\n2. A participant with a $60,000 vested balance: one-half of the vested balance is $30,000. That figure is greater than $10,000. Comparing $30,000 to the $50,000 ceiling, the lesser figure is $30,000. The borrowing cap is $30,000.\n\n3. A participant with a $200,000 vested balance: one-half of the vested balance is $100,000. That figure exceeds $10,000, but federal law caps the maximum borrowing amount at the lesser of that figure or $50,000. The borrowing cap is $50,000."
+      },
+      {
+        "heading": "Repayment Rules and the Principal Residence Exception",
+        "body": "Federal law requires a 401(k) loan to be repaid within 5 years under [26 U.S.C. § 72(p)(2)(B)(i)](https://www.law.cornell.edu/uscode/text/26/72). The terms of the loan agreement must require full repayment within that 5-year window from the date the loan is made. A loan term longer than 5 years fails the repayment rule unless the home purchase exception applies.\n\nThe 5-year limit does not apply to a loan used to acquire a dwelling unit that is to be used within a reasonable time as your principal residence ([26 U.S.C. § 72(p)(2)(B)(ii)](https://www.law.cornell.edu/uscode/text/26/72)). That is determined when the loan is made. The longer term for such a loan is set by your plan, so ask your plan administrator.\n\nIn addition to the term limit, [26 U.S.C. § 72(p)(2)(C)](https://www.law.cornell.edu/uscode/text/26/72) requires substantially level amortization of the loan over its entire term. Payments must be made not less frequently than quarterly."
+      },
+      {
+        "heading": "What Happens If a 401(k) Loan Is Not Repaid",
+        "body": "A plan loan is treated as having been received as a distribution under [26 U.S.C. § 72(p)(1)(A)](https://www.law.cornell.edu/uscode/text/26/72) if it does not meet the amount, 5-year term, and quarterly level-payment rules. A distribution can bring federal income tax.\n\nIn addition to regular income tax, an early distribution can trigger an extra tax penalty. According to [Internal Revenue Service (IRS) Topic 558](https://www.irs.gov/taxtopics/tc558), the law imposes a 10% additional tax on certain early distributions from retirement plans. Early distributions are generally distributions received before age 59½, though exceptions exist as detailed by the IRS. If a 401(k) loan balance is treated as a distribution to a borrower who has not reached age 59½, that borrower can face both income tax and the 10% additional tax on the unpaid amount.\n\nA separate rollover rule applies to a qualified plan loan offset amount. Under [26 U.S.C. § 402(c)(3)(A)](https://www.law.cornell.edu/uscode/text/26/402), the ordinary rollover window to deposit distributed funds into an eligible retirement plan or Individual Retirement Account (IRA) is 60 days after the distribution is received. However, for a qualified plan loan offset amount, [26 U.S.C. § 402(c)(3)(C)(i)](https://www.law.cornell.edu/uscode/text/26/402) provides an extended rollover deadline. You can complete a rollover of a qualified plan loan offset amount up to the due date, including tax extensions, for filing your federal income tax return for the tax year in which the amount is treated as distributed from the plan. Whether an offset qualifies requires specific analysis, so ask your plan administrator or a professional tax advisor about your situation."
+      },
+      {
+        "heading": "Plan-Specific Rules and Interest Deductibility Restrictions",
+        "body": "Federal statute authorizes employer plans to offer loans, but it does not require any plan to do so. Whether an employer retirement plan permits borrowing at all is decided entirely by the employer's plan document. If your plan does permit loans, the plan document also determines the application fees, ongoing administrative charges, the specific interest rate charged, the maximum number of loans you may have outstanding at one time, and the exact default procedures.\n\nInterest on a plan loan is not deductible in some cases, such as any period when you are a key employee or when the loan is secured by certain elective deferrals ([26 U.S.C. § 72(p)(3)(A)](https://www.law.cornell.edu/uscode/text/26/72)). Ask your plan administrator or a tax professional whether either applies to you."
+      },
+      {
+        "heading": "Comparing a 401(k) Loan to Alternative Financing Options",
+        "body": "For another way to borrow, see our comparison of a [401(k) Loan vs HELOC](/compare/401k-loan-vs-heloc/). To explore debt payoff strategies, see our guide on [How to Pay Off Debt](/guides/how-to-pay-off-debt/)."
+      },
+      {
+        "heading": "Next Steps for Requesting Your Plan Loan Documents",
+        "body": "Contact your employer's plan administrator to request a complete copy of the plan loan policy in writing. Review the document to confirm whether loans are permitted, the exact fees charged to originate and service the loan, the interest rate calculation method, and the plan's specific default timelines. Read your vested balance from your latest participant statement, then apply the lesser-of and greater-of formula from the first section."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/401k-early-withdrawal-calculator/",
+        "label": "401(k) early withdrawal calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much can I borrow from my 401(k)?",
+        "answer": "Under 26 U.S.C. § 72(p)(2)(A), your loan plus all other outstanding plan loans must not exceed the lesser of $50,000 (reduced by any excess of your highest loan balance in the past year over your balance on the day the loan is made) or the greater of $10,000 or half your vested balance. With no prior loans, a $15,000 vested balance gives a $10,000 cap, $60,000 gives $30,000, and $200,000 gives $50,000."
+      },
+      {
+        "question": "How long do I have to repay a 401(k) loan?",
+        "answer": "Under 26 U.S.C. § 72(p)(2)(B)(i), you must repay a 401(k) loan within 5 years from the date the loan is made. Repayment must occur through substantially level payments made at least quarterly over the term of the loan under 26 U.S.C. § 72(p)(2)(C). The 5-year limit does not apply when loan proceeds are used to acquire a dwelling unit that is to be used within a reasonable time as your principal residence."
+      },
+      {
+        "question": "Do I pay taxes on a 401(k) loan?",
+        "answer": "Under 26 U.S.C. § 72(p)(1)(A), a loan from a qualified plan is treated as a distribution unless it meets the amount limit, the 5-year term, and the level quarterly payment rules. A distribution can bring regular income tax. If you are under age 59½, it can also bring the 10% additional tax described in IRS Topic 558, though exceptions exist."
+      },
+      {
+        "question": "What happens to a 401(k) loan if I leave my job?",
+        "answer": "What happens when you leave depends on your plan's default rules, so ask your plan administrator. If an unpaid balance is treated as a distribution, the ordinary rollover window is 60 days after the distribution is received (26 U.S.C. § 402(c)(3)(A)). For a qualified plan loan offset amount, a rollover can be made up to the due date, including extensions, for filing the tax return for the year the amount is treated as distributed (26 U.S.C. § 402(c)(3)(C)(i)). Ask your plan administrator or a tax professional whether your offset qualifies."
+      },
+      {
+        "question": "Can I borrow from my 401(k) to buy a house?",
+        "answer": "Yes, if your employer plan allows it. Under 26 U.S.C. § 72(p)(2)(B)(ii), the 5-year repayment limit does not apply to a loan used to acquire a dwelling unit that is to be used within a reasonable time as your principal residence. The amount limit still applies, and repayment must still be made in substantially level payments at least quarterly."
+      }
+    ],
+    "sources": [
+      {
+        "label": "26 U.S.C. § 72, Cornell LII",
+        "url": "https://www.law.cornell.edu/uscode/text/26/72"
+      },
+      {
+        "label": "26 U.S.C. § 402, Cornell LII",
+        "url": "https://www.law.cornell.edu/uscode/text/26/402"
+      },
+      {
+        "label": "IRS Topic no. 558, Additional tax on early distributions from retirement plans other than IRAs",
+        "url": "https://www.irs.gov/taxtopics/tc558"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-10-16 (competitor-monitor): is-student-loan-forgiveness-taxable ──
+  {
+    "updated": "2026-10-16",
+    "slug": "is-student-loan-forgiveness-taxable",
+    "title": "Is Student Loan Forgiveness Taxable? 2026 Rules",
+    "metaDescription": "Is student loan forgiveness taxable? Find out which discharges trigger federal income tax, how Section 108 exclusions work, and when insolvency applies.",
+    "h1": "Is Student Loan Forgiveness Taxable? Federal Rules and Exclusions",
+    "cardBlurb": "Federal tax on student loan forgiveness depends on the type of discharge and the year it is canceled, including whether it falls in the temporary 2021 to 2025 exclusion window.",
+    "introText": "Student loan forgiveness is taxable unless a specific federal exclusion covers the discharge. Under federal law, debt canceled by a creditor generally counts as gross income in the tax year the cancellation takes place. A temporary federal exclusion covered certain student loan discharges after December 31, 2020, and before January 1, 2026.\n\nThe test is whether the discharge falls under the professions provision, death or total and permanent disability, or the pre-2026 window. Borrowers who want to compare timelines can read our guide to [the student loan standard repayment plan](/guides/student-loan-standard-repayment-plan/).",
+    "sections": [
+      {
+        "heading": "When Forgiven Student Loans Are Taxable",
+        "body": "Canceled student loan debt is taxable gross income unless an exclusion applies. Under [26 U.S.C. Section 61(a)(11)](https://www.law.cornell.edu/uscode/text/26/61), gross income includes income from the discharge of indebtedness. When a lender or program forgives an unpaid balance, that canceled obligation constitutes income for federal tax purposes.\n\nAccording to [IRS Topic 431](https://www.irs.gov/taxtopics/tc431), nonbusiness canceled debt must be reported on Form 1040 or Form 1040-SR with Schedule 1 for the year in which the cancellation occurs. Work through three questions in order. Was the discharge made under a loan provision for working in certain professions? Was it due to the student's death or total and permanent disability? Did it occur after December 31, 2020, and before January 1, 2026? If the answer to all three is no, the canceled debt is generally income in the year it is canceled unless another exclusion, such as insolvency, applies.\n\nFor borrowers reaching the end of an income-driven repayment timeline, the discharged amount is generally taxable if no exclusion applies. This potential tax liability is called the student loan tax bomb. Borrowers who want to pay down a balance before any discharge can read our guide on [how to pay off debt](/guides/how-to-pay-off-debt/)."
+      },
+      {
+        "heading": "Which Discharges Are Excluded from Federal Gross Income",
+        "body": "Federal law provides specific exclusions for student loan debt under [26 U.S.C. Section 108](https://www.law.cornell.edu/uscode/text/26/108). Under Section 108(f)(1), gross income does not include a student loan discharge made under a loan provision that forgives debt if the borrower worked for a certain period of time in certain professions for any of a broad class of employers. Check whether your program is one that qualifies under Section 108(f)(1), using your loan documents, your servicer, or the IRS.\n\nDischarges resulting from the death or total and permanent disability of the student are also excluded from federal income. Section 108(f)(5) excludes discharges after December 31, 2025, for federal student loans and private education loans due to death or total and permanent disability. To claim this exclusion on a federal tax return, the taxpayer must include their Social Security number on the return for that tax year.\n\nIRS Topic 431 lists certain student loan discharges after December 31, 2020, and before January 1, 2026, as excluded from gross income. For discharges after December 31, 2025, the exclusions in this section are Section 108(f)(1) for qualifying professions and Section 108(f)(5) for death or total and permanent disability. Insolvency and bankruptcy exclusions are covered below."
+      },
+      {
+        "heading": "Reporting Taxable Student Loan Debt",
+        "body": "When a student loan discharge is taxable, the creditor or loan servicer may issue Form 1099-C showing the amount and date of cancellation. According to IRS Topic 431, you must report the correct taxable amount on your federal return regardless of whether the figures on Form 1099-C are accurate. If the form shows an incorrect amount or date, contact the creditor directly to request a corrected document.\n\nTaxable discharge amounts are reported on Form 1040 or Form 1040-SR using Schedule 1. The canceled balance increases total gross income for the tax year of cancellation. Borrowers who want to restructure repayment before a balance reaches cancellation can compare options in [best student loan refinance companies](/roundup/best-student-loan-refinance/)."
+      },
+      {
+        "heading": "Reducing or Avoiding Tax Through the Insolvency Exclusion",
+        "body": "Borrowers facing a taxable cancellation can reduce or eliminate the tax liability if they qualify as insolvent at the time of discharge. Under 26 U.S.C. Section 108(a)(1)(B), canceled debt is excluded from gross income if the discharge occurs when the taxpayer is insolvent. Section 108(d)(3) defines insolvency as the excess of liabilities over the fair market value of assets.\n\nThe insolvency exclusion is limited under Section 108(a)(3) to the dollar amount by which the taxpayer is insolvent. If total liabilities exceed total assets, up to that excess amount of canceled debt can be excluded from income. Any discharged amount beyond that insolvency calculation remains taxable gross income.\n\nDebt canceled in a Title 11 bankruptcy case is also excluded from gross income under Section 108(a)(1)(A) and IRS Topic 431. Excluded amounts are reported on Form 982, Reduction of Tax Attributes Due to Discharge of Indebtedness, and generally require reducing tax attributes (IRS Topic 431)."
+      },
+      {
+        "heading": "State Tax Rules on Forgiven Student Debt",
+        "body": "State tax treatment of student loan forgiveness may differ from federal tax treatment. Check your state's rules."
+      },
+      {
+        "heading": "Planning Steps for Potential Student Loan Discharges",
+        "body": "Managing a student loan discharge requires tracking timelines, loan categories, and program criteria. Maintain copies of all promissory notes, loan agreements, and servicer communications regarding your repayment schedule. Verify whether your loan contains language tied to working in certain qualifying professions under Section 108(f)(1).\n\nIf a discharge may fall outside the temporary window and outside the professions and death or disability provisions, ask a tax professional or the IRS how it applies to you. Borrowers entering graduate study can read [how to pay for grad school](/guides/how-to-pay-for-grad-school/).\n\nIf your balance is canceled, check Form 1099-C for the cancellation date and amount, and contact the creditor if either is wrong. Next step: check whether your loan program qualifies under Section 108(f)(1), then confirm your situation with the IRS or your loan servicer."
+      }
+    ],
+    "tools": [],
+    "faqs": [
+      {
+        "question": "Do I pay federal tax on forgiven student loans?",
+        "answer": "It depends on the type of discharge and the date it occurs. Certain student loan discharges after December 31, 2020, and before January 1, 2026, were excluded from gross income under a temporary federal rule. Forgiveness that is not covered by that window, by the professions provision in Section 108(f)(1), or by death or total and permanent disability is generally included in income in the year it is canceled, unless another exclusion such as insolvency or bankruptcy applies."
+      },
+      {
+        "question": "Is forgiveness for working in certain professions taxable?",
+        "answer": "Forgiveness for working in certain professions may be covered by Section 108(f)(1), which excludes from gross income a student loan discharge made under a loan provision that forgives debt if the borrower worked for a certain period of time in certain professions for any of a broad class of employers. Check whether your program is one that qualifies, and confirm with the IRS or your loan servicer."
+      },
+      {
+        "question": "What is the student loan tax bomb?",
+        "answer": "The student loan tax bomb refers to the federal income tax owed when an unpaid student loan balance is canceled at the end of an income-driven repayment plan and is not covered by an exclusion. Because canceled debt is treated as gross income under Section 61(a)(11), the forgiven amount is added to the borrower's taxable income for that calendar year unless an exclusion applies."
+      },
+      {
+        "question": "Can I avoid tax on forgiven student loans if I am insolvent?",
+        "answer": "Yes, under 26 U.S.C. Section 108(a)(1)(B), canceled debt is excluded from gross income if the taxpayer is insolvent when the discharge occurs. The exclusion is limited to the amount by which liabilities exceed the fair market value of assets under Section 108(a)(3), and is reported on Form 982."
+      },
+      {
+        "question": "Will I get a Form 1099-C for forgiven student loans?",
+        "answer": "A creditor may issue Form 1099-C showing the canceled amount and date of discharge. IRS Topic 431 states that you must report the correct taxable amount on your return regardless of the form's accuracy, and you should contact the creditor if the form contains errors."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Topic no. 431, Canceled debt",
+        "url": "https://www.irs.gov/taxtopics/tc431"
+      },
+      {
+        "label": "26 U.S.C. § 108, Cornell LII",
+        "url": "https://www.law.cornell.edu/uscode/text/26/108"
+      },
+      {
+        "label": "26 U.S.C. § 61, Cornell LII",
+        "url": "https://www.law.cornell.edu/uscode/text/26/61"
+      }
+    ]
+  },
   // -- mindmap-pass 2026-10-14 (2027 COLA): 2027-ssdi-cola --
   {
     "updated": "2026-10-14",

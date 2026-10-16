@@ -1,0 +1,173 @@
+{
+ "slug": "401k-loan-rules",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1597,
+ "floor": 1200,
+ "input_tokens": 19837,
+ "output_tokens": 3368,
+ "thinking_tokens": 1636,
+ "cached_tokens": 17515,
+ "est_cost_usd": 0.0218,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['How a 401(k) Loan Works and How Much You Can Borrow', 'Repayment Rules and the Principal Residence Exception', 'What Happens If a 401(k) Loan Is Not Repaid', 'Plan-Specific Rules and Interest Deductibility Restrictions', 'Comparing a 401(k) Loan to Alternative Financing Options'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1597,
+  "numbers_not_in_facts": [
+   "12"
+  ],
+  "fact_budget": {
+   "fact_words": 674,
+   "floor": 1200,
+   "ratio": 0.56,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    7
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we review the federal statutory rules and retirement plan mechanics so you understand the legal limits before taking money out of your account.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not license this first-person claim."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "This means you cannot structure a 401(k) loan with interest-only periods, back-loaded principal reductions, or a balloon payment at maturity. ",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not mention interest-only periods, back-loaded reductions, or balloon payments."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Under [26 U.S.C. \u00a7 402(c)(3)(A)](https://www.law.cornell.edu/uscode/text/26/72), the ordinary rollover window to deposit distributed funds into an eligible retirement plan or Individual Retirement Account (IRA) is 60 days after the distribution is received.",
+     "replacement": "Under [26 U.S.C. \u00a7 402(c)(3)(A)](https://www.law.cornell.edu/uscode/text/26/402), the ordinary rollover window to deposit distributed funds into an eligible retirement plan or Individual Retirement Account (IRA) is 60 days after the distribution is received.",
+     "type": "contradicted",
+     "why": "Link target points to \u00a7 72 instead of \u00a7 402."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Interest paid on a 401(k) loan goes back into the participant's account along with principal repayments, but federal tax law restricts your ability to deduct that interest on your tax return.",
+     "replacement": "Federal tax law restricts your ability to deduct plan loan interest on your tax return.",
+     "type": "unsupported",
+     "why": "SOURCE does not state interest repayments return to the participant's account."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Borrowers who continue contributing to their retirement accounts while repaying a loan should also monitor their annual addition limits. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state annual addition limits or ongoing contribution rules."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "You can review current annual deferral thresholds in our guide to [401(k) Contribution Limits 2026](/guides/401k-contribution-limits-2026/) to verify how your regular payroll contributions interact with plan participation rules.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state annual deferral thresholds or payroll contribution rules."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "If you own residential real estate and want to examine an alternative revolving credit line, read our detailed comparison of a [401(k) Loan vs HELOC](/compare/401k-loan-vs-heloc/) to evaluate how secured home equity borrowing functions alongside retirement loans.",
+     "replacement": "For an alternative borrowing option, see our comparison of a [401(k) Loan vs HELOC](/compare/401k-loan-vs-heloc/).",
+     "type": "unsupported",
+     "why": "SOURCE forbids discussing HELOC details beyond linking to the comparison."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "If your goal in borrowing is restructuring existing high-interest balances, explore our guide on [How to Pay Off Debt](/guides/how-to-pay-off-debt/) to review structured debt reduction methods before committing retirement assets.",
+     "replacement": "To explore debt payoff strategies, see our guide on [How to Pay Off Debt](/guides/how-to-pay-off-debt/).",
+     "type": "unsupported",
+     "why": "SOURCE does not state borrowing purposes or debt restructuring methods."
+    },
+    {
+     "id": "cardBlurb",
+     "quote": "A 401(k) loan lets you borrow up to $50,000 or half your vested balance if your plan permits it, subject to strict federal repayment schedules and tax penalties upon default.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE specifies taxes can apply, not that tax penalties are certain upon default."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Each scheduled payment must include both principal and interest in substantially equal amounts throughout the schedule.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that payments must include both principal and interest equally."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Once an amount is treated as a distribution, it is subject to federal income tax in the year the default occurs.",
+     "replacement": "Once an amount is treated as a distribution, it can bring federal income tax.",
+     "type": "contradicted",
+     "why": "SOURCE requires stating that a distribution can bring income tax, not that it is certain."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Under [26 U.S.C. \u00a7 72(p)(3)(A)](https://www.law.cornell.edu/uscode/text/26/72), no tax deduction is allowed for interest paid on a plan loan during any period the borrower is a key employee.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE instructs to say only that interest deductibility is restricted in these cases."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "In addition, no deduction is allowed if the loan is secured by certain elective deferrals under the plan.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE instructs to say only that interest deductibility is restricted; give no further rule."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "That deemed distribution is subject to regular income tax and can also trigger a 10% additional tax under IRS Topic 558 if you are under age 59\u00bd.",
+     "replacement": "That distribution can bring regular income tax and can also trigger a 10% additional tax under IRS Topic 558 if you are under age 59\u00bd.",
+     "type": "contradicted",
+     "why": "SOURCE requires stating that a distribution can bring income tax, not that it is certain."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "If you leave your employer and your plan requires repayment, an unpaid loan balance may become a plan loan offset.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE forbids defining which offsets qualify; instruct reader to ask plan administrator or tax professional."
+    }
+   ],
+   "deleted_final": 7,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1860
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 226.8,
+ "response_id": "e5TSaqDZE73hytMPuZfo8Q4",
+ "generated_at": "2026-10-16T21:21:31+0000"
+}

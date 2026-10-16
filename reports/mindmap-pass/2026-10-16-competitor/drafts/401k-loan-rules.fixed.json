@@ -1,0 +1,57 @@
+{
+  "slug": "401k-loan-rules",
+  "metaTitle": "401(k) Loan Rules: Limits, Repayment Terms, and Default",
+  "metaDescription": "Learn 401(k) loan rules, borrowing limits up to $50,000, 5-year repayment terms, and tax consequences if a plan loan is treated as a distribution.",
+  "h1": "401(k) Loan Rules: Limits, Repayment Terms, and Tax Consequences",
+  "cardBlurb": "How a 401(k) loan works: the borrowing limit, the 5-year repayment rule, and what happens when a plan loan is not repaid.",
+  "introText": "A 401(k) loan allows you to borrow money from your own vested retirement balance if your employer's plan permits loans, up to the lesser of $50,000 (less any higher loan balance you carried in the past year) or the greater of $10,000 or half your vested balance.\n\nA loan from a qualified employer plan is treated as a distribution under [26 U.S.C. § 72(p)(1)(A)](https://www.law.cornell.edu/uscode/text/26/72) unless it stays within the amount limit, is repaid within 5 years (longer if it buys your main home), and is repaid in substantially level payments at least quarterly.\n\nTo see how a permanent withdrawal works, read [How to Withdraw From a 401(k)](/guides/how-to-withdraw-from-401k/) or try the [401(k) early withdrawal calculator](/401k-early-withdrawal-calculator/).",
+  "sections": [
+    {
+      "heading": "How a 401(k) Loan Works and How Much You Can Borrow",
+      "body": "Under [26 U.S.C. § 72(p)(2)(A)](https://www.law.cornell.edu/uscode/text/26/72), a new loan plus all your other outstanding loans from the plan must not exceed the lesser of two limits. The first limit is $50,000, reduced by the excess (if any) of your highest outstanding loan balance during the one-year period ending the day before the new loan is made over your outstanding balance on the day it is made. The second limit is the greater of one-half of your vested balance (your nonforfeitable accrued benefit under the plan) or $10,000.\n\nThese three illustrations of the formula assume no prior loans. They are examples, not advice.\n\n1. A participant with a $15,000 vested balance: one-half of the balance is $7,500. Because the formula uses the greater of one-half of the vested balance or $10,000, the second limit is $10,000. Comparing $10,000 to the $50,000 maximum, the lesser figure is $10,000. The borrowing cap is $10,000.\n\n2. A participant with a $60,000 vested balance: one-half of the vested balance is $30,000. That figure is greater than $10,000. Comparing $30,000 to the $50,000 ceiling, the lesser figure is $30,000. The borrowing cap is $30,000.\n\n3. A participant with a $200,000 vested balance: one-half of the vested balance is $100,000. That figure exceeds $10,000, but federal law caps the maximum borrowing amount at the lesser of that figure or $50,000. The borrowing cap is $50,000."
+    },
+    {
+      "heading": "Repayment Rules and the Principal Residence Exception",
+      "body": "Federal law requires a 401(k) loan to be repaid within 5 years under [26 U.S.C. § 72(p)(2)(B)(i)](https://www.law.cornell.edu/uscode/text/26/72). The terms of the loan agreement must require full repayment within that 5-year window from the date the loan is made. A loan term longer than 5 years fails the repayment rule unless the home purchase exception applies.\n\nThe 5-year limit does not apply to a loan used to acquire a dwelling unit that is to be used within a reasonable time as your principal residence ([26 U.S.C. § 72(p)(2)(B)(ii)](https://www.law.cornell.edu/uscode/text/26/72)). That is determined when the loan is made. The longer term for such a loan is set by your plan, so ask your plan administrator.\n\nIn addition to the term limit, [26 U.S.C. § 72(p)(2)(C)](https://www.law.cornell.edu/uscode/text/26/72) requires substantially level amortization of the loan over its entire term. Payments must be made not less frequently than quarterly."
+    },
+    {
+      "heading": "What Happens If a 401(k) Loan Is Not Repaid",
+      "body": "A plan loan is treated as having been received as a distribution under [26 U.S.C. § 72(p)(1)(A)](https://www.law.cornell.edu/uscode/text/26/72) if it does not meet the amount, 5-year term, and quarterly level-payment rules. A distribution can bring federal income tax.\n\nIn addition to regular income tax, an early distribution can trigger an extra tax penalty. According to [Internal Revenue Service (IRS) Topic 558](https://www.irs.gov/taxtopics/tc558), the law imposes a 10% additional tax on certain early distributions from retirement plans. Early distributions are generally distributions received before age 59½, though exceptions exist as detailed by the IRS. If a 401(k) loan balance is treated as a distribution to a borrower who has not reached age 59½, that borrower can face both income tax and the 10% additional tax on the unpaid amount.\n\nA separate rollover rule applies to a qualified plan loan offset amount. Under [26 U.S.C. § 402(c)(3)(A)](https://www.law.cornell.edu/uscode/text/26/402), the ordinary rollover window to deposit distributed funds into an eligible retirement plan or Individual Retirement Account (IRA) is 60 days after the distribution is received. However, for a qualified plan loan offset amount, [26 U.S.C. § 402(c)(3)(C)(i)](https://www.law.cornell.edu/uscode/text/26/402) provides an extended rollover deadline. You can complete a rollover of a qualified plan loan offset amount up to the due date, including tax extensions, for filing your federal income tax return for the tax year in which the amount is treated as distributed from the plan. Whether an offset qualifies requires specific analysis, so ask your plan administrator or a professional tax advisor about your situation."
+    },
+    {
+      "heading": "Plan-Specific Rules and Interest Deductibility Restrictions",
+      "body": "Federal statute authorizes employer plans to offer loans, but it does not require any plan to do so. Whether an employer retirement plan permits borrowing at all is decided entirely by the employer's plan document. If your plan does permit loans, the plan document also determines the application fees, ongoing administrative charges, the specific interest rate charged, the maximum number of loans you may have outstanding at one time, and the exact default procedures.\n\nInterest on a plan loan is not deductible in some cases, such as any period when you are a key employee or when the loan is secured by certain elective deferrals ([26 U.S.C. § 72(p)(3)(A)](https://www.law.cornell.edu/uscode/text/26/72)). Ask your plan administrator or a tax professional whether either applies to you."
+    },
+    {
+      "heading": "Comparing a 401(k) Loan to Alternative Financing Options",
+      "body": "For another way to borrow, see our comparison of a [401(k) Loan vs HELOC](/compare/401k-loan-vs-heloc/). To explore debt payoff strategies, see our guide on [How to Pay Off Debt](/guides/how-to-pay-off-debt/)."
+    },
+    {
+      "heading": "Next Steps for Requesting Your Plan Loan Documents",
+      "body": "Contact your employer's plan administrator to request a complete copy of the plan loan policy in writing. Review the document to confirm whether loans are permitted, the exact fees charged to originate and service the loan, the interest rate calculation method, and the plan's specific default timelines. Read your vested balance from your latest participant statement, then apply the lesser-of and greater-of formula from the first section."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How much can I borrow from my 401(k)?",
+      "answer": "Under 26 U.S.C. § 72(p)(2)(A), your loan plus all other outstanding plan loans must not exceed the lesser of $50,000 (reduced by any excess of your highest loan balance in the past year over your balance on the day the loan is made) or the greater of $10,000 or half your vested balance. With no prior loans, a $15,000 vested balance gives a $10,000 cap, $60,000 gives $30,000, and $200,000 gives $50,000."
+    },
+    {
+      "question": "How long do I have to repay a 401(k) loan?",
+      "answer": "Under 26 U.S.C. § 72(p)(2)(B)(i), you must repay a 401(k) loan within 5 years from the date the loan is made. Repayment must occur through substantially level payments made at least quarterly over the term of the loan under 26 U.S.C. § 72(p)(2)(C). The 5-year limit does not apply when loan proceeds are used to acquire a dwelling unit that is to be used within a reasonable time as your principal residence."
+    },
+    {
+      "question": "Do I pay taxes on a 401(k) loan?",
+      "answer": "Under 26 U.S.C. § 72(p)(1)(A), a loan from a qualified plan is treated as a distribution unless it meets the amount limit, the 5-year term, and the level quarterly payment rules. A distribution can bring regular income tax. If you are under age 59½, it can also bring the 10% additional tax described in IRS Topic 558, though exceptions exist."
+    },
+    {
+      "question": "What happens to a 401(k) loan if I leave my job?",
+      "answer": "What happens when you leave depends on your plan's default rules, so ask your plan administrator. If an unpaid balance is treated as a distribution, the ordinary rollover window is 60 days after the distribution is received (26 U.S.C. § 402(c)(3)(A)). For a qualified plan loan offset amount, a rollover can be made up to the due date, including extensions, for filing the tax return for the year the amount is treated as distributed (26 U.S.C. § 402(c)(3)(C)(i)). Ask your plan administrator or a tax professional whether your offset qualifies."
+    },
+    {
+      "question": "Can I borrow from my 401(k) to buy a house?",
+      "answer": "Yes, if your employer plan allows it. Under 26 U.S.C. § 72(p)(2)(B)(ii), the 5-year repayment limit does not apply to a loan used to acquire a dwelling unit that is to be used within a reasonable time as your principal residence. The amount limit still applies, and repayment must still be made in substantially level payments at least quarterly."
+    }
+  ],
+  "relatedLinks": []
+}
