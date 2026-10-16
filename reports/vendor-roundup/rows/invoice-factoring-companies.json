@@ -1,0 +1,155 @@
+{
+ "slug": "best-invoice-factoring-companies",
+ "rows": [
+  {
+   "name": "Fundthrough",
+   "domain": "fundthrough.com",
+   "url": "https://www.fundthrough.com",
+   "values": [
+    "Fundthrough",
+    "Invoice factoring for businesses billing large enterprise or government customers",
+    "Not published",
+    "Funds within a day after first funding",
+    "Tech platform; 100% of invoice advanced less one flat fee"
+   ]
+  },
+  {
+   "name": "STAR Funding",
+   "domain": "starfunding.com",
+   "url": "https://starfunding.com",
+   "values": [
+    "STAR Funding",
+    "Factoring, purchase order financing, inventory financing, letters of credit",
+    "Not published",
+    "Same-day approval; funding timeline not published",
+    "Factor with supplier credit facilities; fees not published"
+   ]
+  },
+  {
+   "name": "Quickpay Funding",
+   "domain": "quickpayfunding.com",
+   "url": "https://quickpayfunding.com",
+   "values": [
+    "Quickpay Funding",
+    "Trucking, produce, oil and gas, manufacturing, staffing",
+    "Not published",
+    "Same-day funding, including nights and weekends",
+    "No minimum volume or invoice size; fees not published"
+   ]
+  },
+  {
+   "name": "Orange Commercial Credit",
+   "domain": "occfactor.com",
+   "url": "https://www.occfactor.com",
+   "values": [
+    "Orange Commercial Credit",
+    "Trucking, staffing, manufacturing; 50+ industries served",
+    "Not published",
+    "Advance usually funds within 24 hours",
+    "Per-invoice sale; fee 1.25% to 5%; up to 98% advance"
+   ]
+  },
+  {
+   "name": "REV Capital",
+   "domain": "revinc.com",
+   "url": "https://revinc.com",
+   "values": [
+    "REV Capital",
+    "Staffing, trucking, manufacturing and other industries",
+    "Not published",
+    "Not published",
+    "Most of invoice paid upfront; fee not published"
+   ]
+  },
+  {
+   "name": "1st Commercial Credit",
+   "domain": "1stcommercialcredit.com",
+   "url": "https://1stcommercialcredit.com",
+   "values": [
+    "1st Commercial Credit",
+    "Receivables factoring across 10+ industries, plus ABL and PO financing",
+    "Non-recourse for trucking; other industries not published",
+    "Funds in 24 hours once approved; setup takes 3-5 business days",
+    "Purchase agreement, not a loan; rates 0.69% to 1.59%"
+   ]
+  },
+  {
+   "name": "Factor Finders",
+   "domain": "ezinvoicefactoring.com",
+   "url": "https://ezinvoicefactoring.com",
+   "values": [
+    "Factor Finders",
+    "Transportation, manufacturing, construction, oilfield, staffing",
+    "Not published",
+    "Application in as little as 24 hours; same-day advance",
+    "Choose invoices; no long-term commitment or minimum volume"
+   ]
+  },
+  {
+   "name": "Drip Capital",
+   "domain": "dripcapital.com",
+   "url": "https://www.dripcapital.com/en-us/",
+   "values": [
+    "Drip Capital",
+    "Receivables financing for manufacturers, wholesalers and distributors",
+    "Not published",
+    "Each invoice funded within 24 hours of credit approval",
+    "Facilities $50,000 to $3 million; fees not published"
+   ]
+  },
+  {
+   "name": "Meritus Capital",
+   "domain": "merituscapital.com",
+   "url": "https://merituscapital.com",
+   "values": [
+    "Meritus Capital",
+    "Staffing, manufacturing, transportation, B2B, startups",
+    "Not published",
+    "Funds by next day after invoice submission",
+    "Fee 1% to 3% of invoice; advances up to 95%"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "tipalti.com",
+   "why": "category 1 \u2014 educational article; Tipalti sells AP automation, not factoring"
+  },
+  {
+   "domain": "consumersadvocate.org",
+   "why": "category 1 \u2014 review/comparison site"
+  },
+  {
+   "domain": "invensis.net",
+   "why": "category 1 \u2014 listicle/blog"
+  },
+  {
+   "domain": "businessloans.com",
+   "why": "category 1 \u2014 marketplace/lead-gen"
+  },
+  {
+   "domain": "paylinedata.com",
+   "why": "category 1 \u2014 listicle/blog"
+  },
+  {
+   "domain": "advancery.io",
+   "why": "category 1 \u2014 listicle/blog"
+  },
+  {
+   "domain": "factoringdirectory.org",
+   "why": "category 1 \u2014 directory"
+  },
+  {
+   "domain": "redlinecapitalinc.com",
+   "why": "category 4 \u2014 fits business loans/lines of credit category; no factoring product"
+  },
+  {
+   "domain": "thrivekick.com",
+   "why": "category 1 \u2014 comparison/lead-gen site"
+  },
+  {
+   "domain": "businessloan101.com",
+   "why": "category 1 \u2014 review/listicle site"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "slug": "best-balance-transfer-credit-cards",
+ "rows": [
+  {
+   "name": "Wells Fargo Reflect Card",
+   "domain": "creditcards.wellsfargo.com",
+   "url": "https://creditcards.wellsfargo.com",
+   "values": [
+    "Wells Fargo Reflect Card",
+    "21 months on purchases and qualifying balance transfers",
+    "5% or $5 minimum, transfers within 120 days",
+    "$0",
+    "Not published",
+    "None",
+    "Long 0% intro window with no annual fee"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "renter.joinroost.com",
+   "why": "category 1 \u2014 Roost renter-tools company; this page is an ad-supported comparison blog, no balance transfer card of its own"
+  },
+  {
+   "domain": "comparisons.org",
+   "why": "category 1 \u2014 comparison/review site, no product of its own"
+  }
+ ]
+}

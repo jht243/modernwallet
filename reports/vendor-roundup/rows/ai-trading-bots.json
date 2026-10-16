@@ -1,0 +1,63 @@
+{
+ "slug": "best-ai-trading-bots",
+ "rows": [
+  {
+   "name": "Composer",
+   "domain": "composer.trade",
+   "url": "https://composer.trade",
+   "values": [
+    "No-code rules-based strategy automation, including IRAs",
+    "Starter $0; Advanced $10/mo; Pro $32/mo billed yearly",
+    "Automated execution through Composer brokerage (Alpaca, Apex clearing)",
+    "US equities and ETFs"
+   ]
+  },
+  {
+   "name": "AlgosOne",
+   "domain": "algosone.ai",
+   "url": "https://algosone.ai",
+   "values": [
+    "Hands-off automated trading across crypto, forex and stocks",
+    "Not published; 2-week free trial offered",
+    "Fully automated AI bot trading on user's behalf",
+    "Crypto, forex, stocks; US availability not stated"
+   ]
+  },
+  {
+   "name": "Coinrule",
+   "domain": "coinrule.com",
+   "url": "https://coinrule.com",
+   "values": [
+    "No-code rule bots across crypto exchanges and brokers",
+    "Free $0; Investor $29.99/mo; Trader $59.99/mo; Pro $449.99/mo",
+    "If-then rule automation via API-connected exchange or broker accounts",
+    "Crypto, stocks, ETFs; not offered in EU/EEA"
+   ]
+  },
+  {
+   "name": "TradingView",
+   "domain": "tradingview.com",
+   "url": "https://www.tradingview.com",
+   "values": [
+    "Chart-based traders using alerts and Pine Script strategies",
+    "Basic $0; Essential $12.95; Plus $29.95; Premium $59.95/mo billed annually",
+    "Alerts, webhooks, strategy backtesting; trades through selected brokers",
+    "Stocks, futures, forex, crypto charting"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "coinbureau.com",
+   "why": "category 1 \u2014 crypto media/review publisher"
+  },
+  {
+   "domain": "decrypt.co",
+   "why": "category 1 \u2014 news publisher"
+  },
+  {
+   "domain": "bigdatacentric.com",
+   "why": "category 3 \u2014 custom AI development agency, no trading bot product"
+  }
+ ]
+}

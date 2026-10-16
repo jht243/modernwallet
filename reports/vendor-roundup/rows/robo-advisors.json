@@ -1,39 +1,10 @@
 {
  "slug": "best-robo-advisors",
- "rows": [
-  {
-   "name": "Vanguard",
-   "domain": "investor.vanguard.com",
-   "url": "https://investor.vanguard.com",
-   "values": [
-    "Up to $20 per $10,000 yearly after first 90 days as of Oct 2026",
-    "$100",
-    "Not published",
-    "Not published",
-    "Not published"
-   ]
-  }
- ],
+ "rows": [],
  "cut": [
   {
-   "domain": "robo-advisorfinder.com",
-   "why": "category 1 \u2014 directory/list of robo-advisors, no product of its own"
-  },
-  {
-   "domain": "unbiased.com",
-   "why": "category 1 \u2014 ranking/review site, no product of its own"
-  },
-  {
-   "domain": "spero.financial",
-   "why": "category 4 \u2014 credit union (checking, loans, money market); fits money-market-accounts category, not robo-advisors"
-  },
-  {
-   "domain": "ishares.com",
-   "why": "category 4 \u2014 ETF issuer; offers recurring-investment info only, funds bought via brokerages, no managed robo service"
-  },
-  {
-   "domain": "gobankingrates.com",
-   "why": "category 1 \u2014 publisher/review site, no product of its own"
+   "domain": "guideflow.com",
+   "why": "category 3 \u2014 sells interactive demo software for sales teams, not finance"
   }
  ]
 }

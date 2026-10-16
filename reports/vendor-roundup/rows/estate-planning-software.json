@@ -1,0 +1,60 @@
+{
+ "slug": "best-estate-planning-software",
+ "rows": [
+  {
+   "name": "Vesperly",
+   "domain": "vesperly.com",
+   "url": "https://vesperly.com",
+   "values": [
+    "Vesperly digital account-access vault; Personal $149/yr, Family $349/yr",
+    "N/A; works alongside an existing will",
+    "N/A",
+    "N/A",
+    "Not published",
+    "Web app with encrypted vault; 14-day free trial"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "docupilot.com",
+   "why": "category 4 \u2014 document automation software; no estate planning product, fits business software"
+  },
+  {
+   "domain": "holistiplan.com",
+   "why": "category 3 \u2014 advisor/tax-pro software only; estate module 'coming soon'"
+  },
+  {
+   "domain": "beyondcounsel.io",
+   "why": "category 3 \u2014 software sold only to estate planning attorneys"
+  },
+  {
+   "domain": "leaplegalsoftware.com",
+   "why": "category 3 \u2014 law-firm practice management software"
+  },
+  {
+   "domain": "resources.evans-legal.com",
+   "why": "category 1 \u2014 legal blog/subscription resource site, no product of its own"
+  },
+  {
+   "domain": "interactivelegal.yourefolio.com",
+   "why": "category 3 \u2014 licensed professional software for practitioners, login page only; no consumer pricing"
+  },
+  {
+   "domain": "blog.encorestateplans.com",
+   "why": "category 3 \u2014 blog of software sold only to financial advisors"
+  },
+  {
+   "domain": "remembers.life",
+   "why": "category 3 \u2014 life-story/memorial platform, not finance"
+  },
+  {
+   "domain": "relaw.ai",
+   "why": "category 3 \u2014 practice software for law firms"
+  },
+  {
+   "domain": "michaeleweintraubscholarship.com",
+   "why": "category 1 \u2014 scholarship site publishing a listicle; no product, site unreadable"
+  }
+ ]
+}

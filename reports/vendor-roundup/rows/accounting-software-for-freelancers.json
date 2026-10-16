@@ -1,0 +1,111 @@
+{
+ "slug": "best-accounting-software-for-freelancers",
+ "rows": [
+  {
+   "name": "Tabby",
+   "domain": "usetabby.com",
+   "url": "https://usetabby.com",
+   "values": [
+    "Tabby",
+    "Free; paid from $30/mo",
+    "Not published (caps on expenses and bank connections)",
+    "Free: 5 invoices/month; paid: unlimited",
+    "Self-employed people wanting AI-assisted bookkeeping and quarterly tax estimates"
+   ]
+  },
+  {
+   "name": "Xero",
+   "domain": "xero.com",
+   "url": "https://www.xero.com/us/",
+   "values": [
+    "Xero",
+    "Early $27/mo regular price (intro discount first 3 months)",
+    "Not published",
+    "Early plan: 20 invoices; higher plans not stated",
+    "Self-employed people wanting full accounting software with bank feeds"
+   ]
+  },
+  {
+   "name": "Collective",
+   "domain": "collective.com",
+   "url": "https://collective.com",
+   "values": [
+    "Collective",
+    "Not published",
+    "Not published",
+    "Included invoicing product",
+    "Solo business owners wanting formation, accounting and tax support in one membership"
+   ]
+  },
+  {
+   "name": "RemoteBooksOnline",
+   "domain": "remotebooksonline.com",
+   "url": "https://remotebooksonline.com",
+   "values": [
+    "RemoteBooksOnline",
+    "From $150/mo, software subscription included",
+    "Not published",
+    "Not published",
+    "Owners who want a dedicated bookkeeper instead of doing the books themselves"
+   ]
+  },
+  {
+   "name": "Tailor Brands",
+   "domain": "tailorbrands.com",
+   "url": "https://www.tailorbrands.com",
+   "values": [
+    "Tailor Brands",
+    "Lite $0; Essential $199/yr, plus state fees",
+    "Not published",
+    "Sales and payments tool with invoices on all plans",
+    "New solo businesses bundling formation with bookkeeping and invoicing"
+   ]
+  },
+  {
+   "name": "Compass Finance",
+   "domain": "compassfinance.pro",
+   "url": "https://compassfinance.pro",
+   "values": [
+    "Compass Finance",
+    "$79/mo or $649/yr, 7-day free trial",
+    "Not published",
+    "Not published",
+    "Owners wanting a subscription bookkeeping service"
+   ]
+  },
+  {
+   "name": "Beam Financial Group",
+   "domain": "beamfinancialgroup.com",
+   "url": "https://beamfinancialgroup.com",
+   "values": [
+    "Beam Financial Group",
+    "Not published",
+    "Not published",
+    "Not published",
+    "Creatives and small owners wanting QuickBooks setup courses or consulting"
+   ]
+  },
+  {
+   "name": "Sphere",
+   "domain": "usesphereapps.com",
+   "url": "https://usesphereapps.com",
+   "values": [
+    "Sphere",
+    "Free; Basic $25/mo",
+    "Not published",
+    "Free: 5 invoices/month; Basic: unlimited, Stripe payments",
+    "Freelancers wanting invoicing with real-time profit and loss reports"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "startups.co.uk",
+   "why": "category 1 \u2014 review publisher, no product of its own"
+  },
+  {
+   "domain": "tech.co",
+   "why": "category 1 \u2014 review/news publisher, no product of its own"
+  }
+ ]
+}

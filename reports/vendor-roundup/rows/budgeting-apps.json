@@ -1,0 +1,64 @@
+{
+ "slug": "best-budgeting-apps",
+ "rows": [
+  {
+   "name": "Albert",
+   "domain": "albert.com",
+   "url": "https://albert.com",
+   "values": [
+    "$19.99 to $39.99/mo; 30-day trial",
+    "Not published",
+    "Custom budget; AI assistant builds one automatically",
+    "Budgeting alongside saving, investing, and ID protection"
+   ]
+  },
+  {
+   "name": "Bountisphere",
+   "domain": "bountisphere.com",
+   "url": "https://bountisphere.com",
+   "values": [
+    "$7/mo or $70/yr; 7-day free trial",
+    "Not stated; page describes nightly bank sync",
+    "Calendar forecast of income, bills, balances up to 24 months",
+    "Seeing upcoming bills and lowest balances ahead"
+   ]
+  },
+  {
+   "name": "FloosYo",
+   "domain": "floosyo.com",
+   "url": "https://floosyo.com",
+   "values": [
+    "$9.99/mo or $99.99/yr; 7-day free trial",
+    "No (bank linking optional)",
+    "Category spending envelopes",
+    "Tracking spending and subscriptions, with voice entry"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "greenefinneycauley.cpa",
+   "why": "category 1 \u2014 CPA firm blog post listing apps"
+  },
+  {
+   "domain": "yourmoneyline.com",
+   "why": "category 4 \u2014 employer-sold financial wellness program, not a consumer budgeting app"
+  },
+  {
+   "domain": "which.co.uk",
+   "why": "category 1 \u2014 comparison/review/publisher site with no product of its own"
+  },
+  {
+   "domain": "engadget.com",
+   "why": "category 1 \u2014 comparison/review/publisher site with no product of its own"
+  },
+  {
+   "domain": "abacuswealth.com",
+   "why": "category 1 \u2014 advisory firm blog post, no budgeting product"
+  },
+  {
+   "domain": "azcentralcu.org",
+   "why": "category 1 \u2014 credit union blog article, no budgeting app of its own"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "slug": "dataannotation-alternatives",
+ "rows": [
+  {
+   "name": "DataAnnotation",
+   "domain": "dataannotation.tech",
+   "url": "https://dataannotation.tech",
+   "values": [
+    "DataAnnotation",
+    "Data Annotation (legal entity not named)",
+    "Up to $40-$150+/hr by role; generalist up to $50/hr",
+    "PayPal",
+    "Starter Assessment; bachelor's or equivalent for general track"
+   ]
+  },
+  {
+   "name": "OpenTrain AI",
+   "domain": "opentrain.ai",
+   "url": "https://opentrain.ai",
+   "values": [
+    "OpenTrain AI",
+    "OpenTrain AI",
+    "Sample postings $25-$100/hr; 10% marketplace fee",
+    "Not published",
+    "Skills testing and AI interview; domain expertise per role"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "herohunt.ai",
+   "why": "category 1 \u2014 review/listicle page; HeroHunt sells recruiting software for employers"
+  },
+  {
+   "domain": "recruiterslineup.com",
+   "why": "category 1 \u2014 listicle on corporate AI training courses, no product"
+  },
+  {
+   "domain": "alignlist.com",
+   "why": "category 1 \u2014 job board/directory aggregating other companies' listings"
+  },
+  {
+   "domain": "expertwoka.com",
+   "why": "category 1 \u2014 review/listicle site"
+  },
+  {
+   "domain": "coursiv.io",
+   "why": "category 3 \u2014 sells learning app, not a paid AI-work platform"
+  },
+  {
+   "domain": "aigigjobs.com",
+   "why": "category 1 \u2014 review/comparison site and job aggregator"
+  },
+  {
+   "domain": "training.safetyculture.com",
+   "why": "category 3 \u2014 corporate training software listicle, not paid AI-work platform"
+  },
+  {
+   "domain": "aitraining.jobs",
+   "why": "category 1 \u2014 job board/rate-card aggregator listing other platforms' roles"
+  },
+  {
+   "domain": "secondtalent.com",
+   "why": "category 3 \u2014 staffing for employers; not a platform for individual AI-annotation work"
+  },
+  {
+   "domain": "lightly.ai",
+   "why": "category 3 \u2014 computer-vision data tooling for companies; no individual paid-work platform"
+  }
+ ]
+}

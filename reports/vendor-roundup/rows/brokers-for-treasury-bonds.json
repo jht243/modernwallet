@@ -1,0 +1,30 @@
+{
+ "slug": "best-brokers-for-treasury-bonds",
+ "rows": [
+  {
+   "name": "Interactive Brokers",
+   "domain": "interactivebrokers.com",
+   "url": "https://www.interactivebrokers.com/en/trading/products-bonds.php",
+   "values": [
+    "Traders buying Treasuries in the secondary market",
+    "Not offered; no access to Treasury auctions",
+    "Yes, sold in secondary market; 0.002% of face, $5 minimum",
+    "Not published",
+    "Not published"
+   ]
+  },
+  {
+   "name": "Charles Schwab International",
+   "domain": "international.schwab.com",
+   "url": "https://international.schwab.com",
+   "values": [
+    "Clients wanting Treasuries alongside other bonds",
+    "$0 commission online, $25 broker-assisted (US Schwab pricing)",
+    "Yes, secondary market sale; $0 online commission, markup possible",
+    "Not published",
+    "Not published"
+   ]
+  }
+ ],
+ "cut": []
+}

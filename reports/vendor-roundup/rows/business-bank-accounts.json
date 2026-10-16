@@ -1,0 +1,128 @@
+{
+ "slug": "best-business-bank-accounts",
+ "rows": [
+  {
+   "name": "Bank of America Business Advantage Fundamentals",
+   "domain": "business.bankofamerica.com",
+   "url": "https://business.bankofamerica.com",
+   "values": [
+    "Business Advantage Fundamentals",
+    "$16 after first 12 months; waivable",
+    "$5,000 average balance or $500 card spend waives fee",
+    "$30",
+    "Members FDIC (stated on site)",
+    "Not published"
+   ]
+  },
+  {
+   "name": "Prosperity Bank Small Business Checking",
+   "domain": "prosperitybankusa.com",
+   "url": "https://prosperitybankusa.com",
+   "values": [
+    "Small Business Checking",
+    "$10",
+    "$200 to open; $3,500 balance waives fee",
+    "Not published",
+    "FDIC-insured (stated on site)",
+    "Not published"
+   ]
+  },
+  {
+   "name": "BankUnited Primary Business Checking",
+   "domain": "bankunited.com",
+   "url": "https://www.bankunited.com",
+   "values": [
+    "Primary Business Checking",
+    "$12; waived with $1,500 average balance",
+    "$100 to open; $1,500 average waives fee",
+    "Not published",
+    "Not published",
+    "Not published"
+   ]
+  },
+  {
+   "name": "Wise Business",
+   "domain": "wise.com",
+   "url": "https://wise.com/us/business",
+   "values": [
+    "Wise Business",
+    "One-time $31 set-up fee; no monthly fee listed",
+    "Not published",
+    "Not published (receiving domestic wire $6.11)",
+    "Not an FDIC bank; pass-through up to $250,000 via program banks",
+    "Not published"
+   ]
+  },
+  {
+   "name": "Airwallex",
+   "domain": "airwallex.com",
+   "url": "https://www.airwallex.com/us",
+   "values": [
+    "Airwallex business account",
+    "$0",
+    "None",
+    "Not published",
+    "Not an FDIC bank; payment services via Evolve Bank & Trust, Member FDIC",
+    "Not published"
+   ]
+  },
+  {
+   "name": "Ascend Bank",
+   "domain": "ascend.bank",
+   "url": "https://ascend.bank",
+   "values": [
+    "Business Checking",
+    "$0 (no monthly service fee)",
+    "None",
+    "Not published",
+    "Member FDIC (stated on site)",
+    "Not published"
+   ]
+  },
+  {
+   "name": "Greater Alliance Federal Credit Union",
+   "domain": "greateralliance.org",
+   "url": "https://greateralliance.org",
+   "values": [
+    "Business Checking",
+    "No monthly maintenance charge",
+    "No minimum deposit requirement stated",
+    "Not published",
+    "N/A (credit union; NCUA coverage not detailed)",
+    "Not published"
+   ]
+  },
+  {
+   "name": "TowneBank",
+   "domain": "townebank.com",
+   "url": "https://www.townebank.com/business/business-checking/",
+   "values": [
+    "Value Classic business checking",
+    "$20 unless $3,000 daily balance kept",
+    "$100 to open; $3,000 daily balance waives fee",
+    "Not published",
+    "Not published",
+    "Not published"
+   ]
+  },
+  {
+   "name": "Square Checking",
+   "domain": "squareup.com",
+   "url": "https://squareup.com/us/en/banking/checking",
+   "values": [
+    "Square Checking",
+    "$0",
+    "None",
+    "Not published",
+    "Pass-through up to $250,000 via Sutton Bank, Member FDIC",
+    "Not published"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "businesscomparison.com",
+   "why": "category 1 \u2014 UK comparison/credit broker site, no accounts of its own"
+  }
+ ]
+}

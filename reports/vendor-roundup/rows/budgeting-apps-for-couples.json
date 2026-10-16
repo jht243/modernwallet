@@ -1,0 +1,99 @@
+{
+ "slug": "best-budgeting-apps-for-couples",
+ "rows": [
+  {
+   "name": "The Budgeting App",
+   "domain": "thebudgeting.app",
+   "url": "https://thebudgeting.app",
+   "values": [
+    "Free tier; paid Pro and Pro Sync prices not published",
+    "Not published",
+    "Pro Sync tier only (US, Canada, Australia)",
+    "Not stated",
+    "Simple weekly or monthly category budgets on one phone"
+   ]
+  },
+  {
+   "name": "Peggy",
+   "domain": "getpeggy.app",
+   "url": "https://getpeggy.app",
+   "values": [
+    "Free 7-day trial; price not published",
+    "Yes (shared wallets with roles)",
+    "No; manual, voice, receipt scan or CSV",
+    "Not stated",
+    "Partners who track shared expenses with category limits"
+   ]
+  },
+  {
+   "name": "Fintrack",
+   "domain": "fintrackai.app",
+   "url": "https://fintrackai.app",
+   "values": [
+    "Free, Plus and Pro tiers; prices not published",
+    "Yes (Plus shares with one member, Pro six)",
+    "No; manual entry and CSV import",
+    "Not stated",
+    "Couples who want AI help without linking a bank"
+   ]
+  },
+  {
+   "name": "Koru",
+   "domain": "koru-app.com",
+   "url": "https://koru-app.com",
+   "values": [
+    "Free download; Premium price not published",
+    "Yes (email invite, Owner/Admin/Member roles)",
+    "Not stated; manual entry shown",
+    "Not stated; allocates monthly total across categories",
+    "Couples who want a planned monthly budget"
+   ]
+  },
+  {
+   "name": "Halfway",
+   "domain": "meethalfway.app",
+   "url": "https://meethalfway.app",
+   "values": [
+    "Free; Premium $11.99/mo as of Oct 2026",
+    "Yes (separate logins; partner sees shared expenses only)",
+    "Premium only, via Plaid",
+    "Not stated",
+    "Couples with different incomes splitting bills proportionally"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "sdtplanning.com",
+   "why": "category 1 \u2014 publisher/review site, no product of its own (planning firm blog)"
+  },
+  {
+   "domain": "eringobler.com",
+   "why": "category 1 \u2014 publisher/review site, no product of its own (personal blog)"
+  },
+  {
+   "domain": "intuit.com",
+   "why": "category 4 \u2014 fits tax/credit categories; Intuit sells TurboTax, Credit Karma and QuickBooks, no budgeting app listed"
+  },
+  {
+   "domain": "thepennyhoarder.com",
+   "why": "category 1 \u2014 publisher/review site, no product of its own"
+  },
+  {
+   "domain": "bankofsunprairie.com",
+   "why": "category 4 \u2014 fits banks category; community bank article, not a budgeting app"
+  },
+  {
+   "domain": "echoinnovateit.com",
+   "why": "category 1 \u2014 publisher/review site, no product of its own (IT consulting blog)"
+  },
+  {
+   "domain": "paired.com",
+   "why": "category 3 \u2014 relationship app for couples, not a finance product"
+  },
+  {
+   "domain": "thecouplesummit.org",
+   "why": "category 1 \u2014 publisher/review site, no product of its own"
+  }
+ ]
+}

@@ -1,54 +1,10 @@
 {
  "slug": "best-money-market-accounts",
- "rows": [
+ "rows": [],
+ "cut": [
   {
-   "name": "Citizens",
-   "domain": "citizensbank.com",
-   "url": "https://www.citizensbank.com",
-   "values": [
-    "Not published",
-    "Not published",
-    "Not published",
-    "Not published",
-    "Not published"
-   ]
-  },
-  {
-   "name": "Bank Five Nine",
-   "domain": "bankfivenine.com",
-   "url": "https://bankfivenine.com",
-   "values": [
-    "First Rate 0.04%-0.30%; Relationship up to 3.00% intro, as of Oct 2026",
-    "Not published",
-    "$2,500 to open First Rate; $15,000 to open Relationship",
-    "Yes (Member FDIC)",
-    "Not published"
-   ]
-  },
-  {
-   "name": "Huntington",
-   "domain": "huntington.com",
-   "url": "https://www.huntington.com",
-   "values": [
-    "Not published",
-    "Not published",
-    "Not published",
-    "Not published",
-    "Not published"
-   ]
-  },
-  {
-   "name": "Institution for Savings",
-   "domain": "institutionforsavings.com",
-   "url": "https://institutionforsavings.com",
-   "values": [
-    "0.10%-3.25% by account tier, as of Oct 2026",
-    "$5 to $10 by account, waivable with balance",
-    "$1,000 to waive fee on Traditional",
-    "Yes",
-    "ATM/debit card"
-   ]
+   "domain": "financebuzz.com",
+   "why": "category 1 \u2014 publisher/review site, no product of its own"
   }
- ],
- "cut": []
+ ]
 }

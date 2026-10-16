@@ -1,0 +1,42 @@
+{
+ "slug": "best-custodial-roth-ira-providers",
+ "rows": [
+  {
+   "name": "T. Rowe Price",
+   "domain": "troweprice.com",
+   "url": "https://www.troweprice.com/personal-investing/accounts/retirement/ira/index.html",
+   "values": [
+    "T. Rowe Price",
+    "$1,000 to open; $100 to add",
+    "$20/yr below $10,000, waived with e-delivery",
+    "Not published"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "carry.com",
+   "why": "category 4 \u2014 fits IRA/solo 401(k) category; pricing page shows no custodial IRA"
+  },
+  {
+   "domain": "verdence.com",
+   "why": "category 4 \u2014 high-net-worth advisory firm, not a custodial IRA provider"
+  },
+  {
+   "domain": "iwillteachyoutoberich.com",
+   "why": "category 1 \u2014 comparison/review/publisher site with no product of its own"
+  },
+  {
+   "domain": "millennialmoney.com",
+   "why": "category 1 \u2014 comparison/review/publisher site with no product of its own"
+  },
+  {
+   "domain": "colewealth.com",
+   "why": "category 4 \u2014 registered investment adviser, not a custodian"
+  },
+  {
+   "domain": "rothwizards.com",
+   "why": "category 1 \u2014 comparison/review/publisher site with no product of its own"
+  }
+ ]
+}

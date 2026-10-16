@@ -1,83 +1,10 @@
 {
  "slug": "best-tax-relief-companies",
- "rows": [
-  {
-   "name": "Omni Tax Help",
-   "domain": "omnitaxhelp.com",
-   "url": "https://omnitaxhelp.com",
-   "values": [
-    "Not published",
-    "Tax analysts, attorneys and enrolled agents",
-    "Not published; free consultation offered",
-    "25+ years, per its site",
-    "Not published"
-   ]
-  },
-  {
-   "name": "Tax Experts of OC",
-   "domain": "taxexpertsofoc.com",
-   "url": "https://taxexpertsofoc.com",
-   "values": [
-    "Not published",
-    "CPA and enrolled agent",
-    "Not published; quoted after free consultation",
-    "Not published",
-    "Not published"
-   ]
-  },
-  {
-   "name": "Tax Response Center",
-   "domain": "taxresponsecenter.com",
-   "url": "https://taxresponsecenter.com",
-   "values": [
-    "Not published",
-    "Not published",
-    "Not published",
-    "Not published",
-    "Not published"
-   ]
-  },
-  {
-   "name": "Brightside Tax Relief",
-   "domain": "brightsidetaxrelief.com",
-   "url": "https://brightsidetaxrelief.com",
-   "values": [
-    "Not published",
-    "Licensed tax attorneys",
-    "Flat fee, amounts not published; free consultation",
-    "Not published",
-    "Not published"
-   ]
-  },
-  {
-   "name": "Tax Hardship Center",
-   "domain": "taxhardshipcenter.com",
-   "url": "https://taxhardshipcenter.com",
-   "values": [
-    "Not published",
-    "Enrolled agents, CPAs and attorneys",
-    "Not published; free consultation",
-    "Site states both 14+ and 20+ years",
-    "BBB Accredited, per its site"
-   ]
-  }
- ],
+ "rows": [],
  "cut": [
   {
-   "domain": "turnout.co",
-   "why": "category 3 — disability, VA and education advocacy, no tax relief"
-  },
-  {
-   "domain": "trustdale.com",
-   "why": "category 1 — directory of recommended companies"
-  },
-  {
-   "domain": "reviews.comparisons.org",
-   "why": "category 1 — comparison/review site"
-  },
-  {
-   "domain": "usatoday.com",
-   "why": "category 1 — publisher"
+   "domain": "taxfortress.com",
+   "why": "category 2 \u2014 unverifiable; site unreadable, titled as a how-to-choose guide, and search did not confirm a service of its own"
   }
  ]
 }

@@ -1,1556 +1,2455 @@
 {
- "_note": "The roundup comparison tables' vendor data (vendor lane). `domains` maps an editorial row's name (src/data/roundups*.ts comparisonTable.rows[].name, exact) to the company's domain: the row renders data-vendor-domain/-name (growth-sites-api reads them off the live page) and links the name to the company (nofollow). `added` = vendors the vendor-roundup routine appends under the editorial rows: {name, domain, url, values[]} with values in the page's comparisonTable.headers order. Written by scripts/placement/apply_vendor_rows.mjs; hand edits OK. Featured (paid) rows come from data/paid-placements.json.",
- "pages": {
-  "dataannotation-alternatives": {
-   "domains": {
-    "Outlier": "outlier.ai",
-    "Mercor": "mercor.com",
-    "Alignerr": "alignerr.com",
-    "Mindrift": "mindrift.ai",
-    "Handshake AI": "joinhandshake.com",
-    "Prolific": "prolific.com"
-   },
-   "added": []
-  },
-  "best-ai-investing-apps": {
-   "domains": {
-    "Magnifi": "magnifi.com",
-    "Betterment": "betterment.com",
-    "Robinhood (Cortex)": "robinhood.com",
-    "Danelfin": "danelfin.com",
-    "Prospero.ai": "prospero.ai",
-    "Wealthfront": "wealthfront.com"
-   },
-   "added": []
-  },
-  "best-ai-trading-bots": {
-   "domains": {
-    "Trade Ideas": "trade-ideas.com",
-    "Robinhood Agentic Trading": "robinhood.com",
-    "Danelfin": "danelfin.com",
-    "Tickeron": "tickeron.com",
-    "Prospero.ai": "prospero.ai"
-   },
-   "added": []
-  },
-  "best-ai-stock-pickers": {
-   "domains": {
-    "Danelfin": "danelfin.com",
-    "Kavout": "kavout.com",
-    "Trade Ideas": "trade-ideas.com",
-    "Prospero.ai": "prospero.ai",
-    "Magnifi": "magnifi.com"
-   },
-   "added": []
-  },
-  "robinhood-agentic-trading-alternatives": {
-   "domains": {
-    "Trade Ideas": "trade-ideas.com",
-    "Tickeron": "tickeron.com",
-    "Magnifi": "magnifi.com",
-    "Danelfin": "danelfin.com",
-    "Robinhood Cortex": "robinhood.com"
-   },
-   "added": [
-    {
-     "name": "ChartingLens",
-     "domain": "chartinglens.com",
-     "url": "https://chartinglens.com",
-     "values": [
-      "Traders wanting charts, screening and AI analysis in one platform",
-      "AI analyst gives chart verdicts and backtests plain-English strategies",
-      "Not published",
-      "Free; Premium $14.99/mo; Pro $29.99/mo"
-     ],
-     "added": "2026-10-15"
+  "_note": "The roundup comparison tables' vendor data (vendor lane). `domains` maps an editorial row's name (src/data/roundups*.ts comparisonTable.rows[].name, exact) to the company's domain: the row renders data-vendor-domain/-name (growth-sites-api reads them off the live page) and links the name to the company (nofollow). `added` = vendors the vendor-roundup routine appends under the editorial rows: {name, domain, url, values[]} with values in the page's comparisonTable.headers order. Written by scripts/placement/apply_vendor_rows.mjs; hand edits OK. Featured (paid) rows come from data/paid-placements.json.",
+  "pages": {
+    "dataannotation-alternatives": {
+      "domains": {
+        "Outlier": "outlier.ai",
+        "Mercor": "mercor.com",
+        "Alignerr": "alignerr.com",
+        "Mindrift": "mindrift.ai",
+        "Handshake AI": "joinhandshake.com",
+        "Prolific": "prolific.com"
+      },
+      "added": [
+        {
+          "name": "DataAnnotation",
+          "domain": "dataannotation.tech",
+          "url": "https://dataannotation.tech",
+          "values": [
+            "DataAnnotation",
+            "Data Annotation (legal entity not named)",
+            "Up to $40-$150+/hr by role; generalist up to $50/hr",
+            "PayPal",
+            "Starter Assessment; bachelor's or equivalent for general track"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "OpenTrain AI",
+          "domain": "opentrain.ai",
+          "url": "https://opentrain.ai",
+          "values": [
+            "OpenTrain AI",
+            "OpenTrain AI",
+            "Sample postings $25-$100/hr; 10% marketplace fee",
+            "Not published",
+            "Skills testing and AI interview; domain expertise per role"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
     },
-    {
-     "name": "Portfolio Lab",
-     "domain": "portfoliolab.ai",
-     "url": "https://portfoliolab.ai",
-     "values": [
-      "Investors running rules-based strategies in their own brokerage account",
-      "Rules-based strategies; Claude or ChatGPT can follow plans via Robinhood Agentic Trading",
-      "Direct connections: Schwab, E*Trade, Webull, Public, tastytrade, Moomoo",
-      "Free; Analyst $8/mo; Quant $24/mo"
-     ],
-     "added": "2026-10-15"
+    "best-ai-investing-apps": {
+      "domains": {
+        "Magnifi": "magnifi.com",
+        "Betterment": "betterment.com",
+        "Robinhood (Cortex)": "robinhood.com",
+        "Danelfin": "danelfin.com",
+        "Prospero.ai": "prospero.ai",
+        "Wealthfront": "wealthfront.com"
+      },
+      "added": [
+        {
+          "name": "Barebone AI",
+          "domain": "barebone.ai",
+          "url": "https://barebone.ai",
+          "values": [
+            "Retail investors wanting AI stock research and portfolio monitoring",
+            "Not published on homepage; paid Barebone Pro tier exists",
+            "Agentic AI routing queries across models and analysis algorithms",
+            "N/A (read-only brokerage link; no trading)"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "StockCar",
+          "domain": "stockcar.app",
+          "url": "https://stockcar.app",
+          "values": [
+            "Stock owners wanting spoken news briefings, including CarPlay",
+            "Free trial of 10 tracks; $2.99/mo Standard; $5.99/mo Pro",
+            "Generative AI audio episodes from news and prices",
+            "$0 (no account or brokerage link required)"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
     },
-    {
-     "name": "Easy AI Trader",
-     "domain": "easyaitrader.com",
-     "url": "https://easyaitrader.com",
-     "values": [
-      "Traders turning trading ideas into backtested strategies",
-      "Not published",
-      "Not published",
-      "Not published"
-     ],
-     "added": "2026-10-15"
+    "best-ai-trading-bots": {
+      "domains": {
+        "Trade Ideas": "trade-ideas.com",
+        "Robinhood Agentic Trading": "robinhood.com",
+        "Danelfin": "danelfin.com",
+        "Tickeron": "tickeron.com",
+        "Prospero.ai": "prospero.ai"
+      },
+      "added": [
+        {
+          "name": "Composer",
+          "domain": "composer.trade",
+          "url": "https://composer.trade",
+          "values": [
+            "No-code rules-based strategy automation, including IRAs",
+            "Starter $0; Advanced $10/mo; Pro $32/mo billed yearly",
+            "Automated execution through Composer brokerage (Alpaca, Apex clearing)",
+            "US equities and ETFs"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Coinrule",
+          "domain": "coinrule.com",
+          "url": "https://coinrule.com",
+          "values": [
+            "No-code rule bots across crypto exchanges and brokers",
+            "Free $0; Investor $29.99/mo; Trader $59.99/mo; Pro $449.99/mo",
+            "If-then rule automation via API-connected exchange or broker accounts",
+            "Crypto, stocks, ETFs; not offered in EU/EEA"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "TradingView",
+          "domain": "tradingview.com",
+          "url": "https://www.tradingview.com",
+          "values": [
+            "Chart-based traders using alerts and Pine Script strategies",
+            "Basic $0; Essential $12.95; Plus $29.95; Premium $59.95/mo billed annually",
+            "Alerts, webhooks, strategy backtesting; trades through selected brokers",
+            "Stocks, futures, forex, crypto charting"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
     },
-    {
-     "name": "StockHero",
-     "domain": "stockhero.ai",
-     "url": "https://stockhero.ai",
-     "values": [
-      "Traders wanting no-code automated bots for stocks",
-      "No-code bots with preset strategies, AI chatbot and backtesting",
-      "Bots place trades automatically via connected brokers, including Robinhood and Webull",
-      "Lite $49.99/mo; Premium $99.99/mo; Professional $159.99/mo"
-     ],
-     "added": "2026-10-15"
+    "best-ai-stock-pickers": {
+      "domains": {
+        "Danelfin": "danelfin.com",
+        "Kavout": "kavout.com",
+        "Trade Ideas": "trade-ideas.com",
+        "Prospero.ai": "prospero.ai",
+        "Magnifi": "magnifi.com"
+      },
+      "added": [
+        {
+          "name": "Screener",
+          "domain": "screener.in",
+          "url": "https://www.screener.in",
+          "values": [
+            "Investors researching Indian listed companies",
+            "Screener AI reads company filings and earnings calls",
+            "Yes (Hobby Investor, ₹0 per year)",
+            "₹4,999 per year (Active Investor)"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Pineify",
+          "domain": "pineify.app",
+          "url": "https://pineify.app",
+          "values": [
+            "Traders wanting daily scored stock ideas and options data",
+            "Daily 1-10 predictive scores, options Greeks",
+            "Not published",
+            "One-time $149 Advanced (AI Stock Picker included); promo price"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "AltIndex",
+          "domain": "altindex.com",
+          "url": "https://altindex.com",
+          "values": [
+            "Investors wanting alternative-data signals",
+            "Buy and sell signals from social, web traffic and job data",
+            "Free trial; limits not published",
+            "$29/mo Starter; $99/mo Pro"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
     },
-    {
-     "name": "Tradewink",
-     "domain": "tradewink.com",
-     "url": "https://tradewink.com",
-     "values": [
-      "Self-directed traders reviewing signal reasoning before acting",
-      "AI signals with entry, stop, target and written reasoning",
-      "Signals delivered to you; public users place trades at their own broker",
-      "Free; Starter $19/mo; Pro $79/mo; Elite $149/mo"
-     ],
-     "added": "2026-10-15"
+    "robinhood-agentic-trading-alternatives": {
+      "domains": {
+        "Trade Ideas": "trade-ideas.com",
+        "Tickeron": "tickeron.com",
+        "Magnifi": "magnifi.com",
+        "Danelfin": "danelfin.com",
+        "Robinhood Cortex": "robinhood.com"
+      },
+      "added": [
+        {
+          "name": "ChartingLens",
+          "domain": "chartinglens.com",
+          "url": "https://chartinglens.com",
+          "values": [
+            "Traders wanting charts, screening and AI analysis in one platform",
+            "AI analyst gives chart verdicts and backtests plain-English strategies",
+            "Not published",
+            "Free; Premium $14.99/mo; Pro $29.99/mo"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Portfolio Lab",
+          "domain": "portfoliolab.ai",
+          "url": "https://portfoliolab.ai",
+          "values": [
+            "Investors running rules-based strategies in their own brokerage account",
+            "Rules-based strategies; Claude or ChatGPT can follow plans via Robinhood Agentic Trading",
+            "Direct connections: Schwab, E*Trade, Webull, Public, tastytrade, Moomoo",
+            "Free; Analyst $8/mo; Quant $24/mo"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Easy AI Trader",
+          "domain": "easyaitrader.com",
+          "url": "https://easyaitrader.com",
+          "values": [
+            "Traders turning trading ideas into backtested strategies",
+            "Not published",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "StockHero",
+          "domain": "stockhero.ai",
+          "url": "https://stockhero.ai",
+          "values": [
+            "Traders wanting no-code automated bots for stocks",
+            "No-code bots with preset strategies, AI chatbot and backtesting",
+            "Bots place trades automatically via connected brokers, including Robinhood and Webull",
+            "Lite $49.99/mo; Premium $99.99/mo; Professional $159.99/mo"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Tradewink",
+          "domain": "tradewink.com",
+          "url": "https://tradewink.com",
+          "values": [
+            "Self-directed traders reviewing signal reasoning before acting",
+            "AI signals with entry, stop, target and written reasoning",
+            "Signals delivered to you; public users place trades at their own broker",
+            "Free; Starter $19/mo; Pro $79/mo; Elite $149/mo"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "TradeZella",
+          "domain": "tradezella.com",
+          "url": "https://tradezella.com",
+          "values": [
+            "Traders journaling and reviewing their own trades",
+            "Zella AI analyzes trade history; agents track habits and risk",
+            "N/A; journal syncs trades from brokers and prop firms",
+            "Essential $35/mo; Pro $59/mo; Ultra $99/mo"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "RockFlow",
+          "domain": "rockflow.ai",
+          "url": "https://rockflow.ai",
+          "values": [
+            "Beginners trading US and Hong Kong stocks and options",
+            "Bobby AI assistant; TradeGPT daily feed of trading opportunities",
+            "Auto Trade lets Bobby execute orders the user describes",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "TradeAlgo",
+          "domain": "tradealgo.com",
+          "url": "https://tradealgo.com",
+          "values": [
+            "Traders wanting AI-generated portfolios, options alerts and market briefings",
+            "AI-generated stock portfolios, options flow alerts and daily AI briefing",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "FN Capital",
+          "domain": "fncapital.io",
+          "url": "https://fncapital.io",
+          "values": [
+            "Investors wanting automated trading in their own brokerage account",
+            "FAST AI automated trading algorithm",
+            "Trades automatically through connected brokers; funds stay in investor's account",
+            "Not published; free trial and 100-day refund of initial plan fee"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
     },
-    {
-     "name": "TradeZella",
-     "domain": "tradezella.com",
-     "url": "https://tradezella.com",
-     "values": [
-      "Traders journaling and reviewing their own trades",
-      "Zella AI analyzes trade history; agents track habits and risk",
-      "N/A; journal syncs trades from brokers and prop firms",
-      "Essential $35/mo; Pro $59/mo; Ultra $99/mo"
-     ],
-     "added": "2026-10-15"
+    "best-mortgage-lenders": {
+      "domains": {
+        "Rocket Mortgage": "rocketmortgage.com",
+        "Better Mortgage": "better.com",
+        "Chase Mortgage": "chase.com",
+        "LoanDepot": "loandepot.com",
+        "Veterans United": "veteransunited.com",
+        "PNC Bank": "pnc.com",
+        "U.S. Bank": "usbank.com",
+        "Guild Mortgage": "guildmortgage.com"
+      },
+      "added": [
+        {
+          "name": "Loandrone",
+          "domain": "loandrone.com",
+          "url": "https://loandrone.com",
+          "values": [
+            "Purchase and refinance borrowers in 43 states",
+            "Yes, VA cash-out refinance up to 100% of value",
+            "Not published",
+            "Not published",
+            "Rate check with no credit pull"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "The Home Loan Expert",
+          "domain": "thehomeloanexpert.com",
+          "url": "https://thehomeloanexpert.com",
+          "values": [
+            "Purchase and refinance borrowers",
+            "Yes, has VA specialists",
+            "Not published",
+            "Not published",
+            "Closing in as little as 14 days"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
     },
-    {
-     "name": "RockFlow",
-     "domain": "rockflow.ai",
-     "url": "https://rockflow.ai",
-     "values": [
-      "Beginners trading US and Hong Kong stocks and options",
-      "Bobby AI assistant; TradeGPT daily feed of trading opportunities",
-      "Auto Trade lets Bobby execute orders the user describes",
-      "Not published"
-     ],
-     "added": "2026-10-15"
+    "best-ira-accounts": {
+      "domains": {
+        "Fidelity": "fidelity.com",
+        "Charles Schwab": "schwab.com",
+        "Vanguard": "vanguard.com",
+        "Betterment": "betterment.com",
+        "E*TRADE": "etrade.com",
+        "Wealthfront": "wealthfront.com",
+        "Merrill Edge": "merrilledge.com"
+      },
+      "added": [
+        {
+          "name": "Wells Fargo Advisors",
+          "domain": "wellsfargoadvisors.com",
+          "url": "https://www.wellsfargoadvisors.com",
+          "values": [
+            "Not published ($49.95 fee to close an IRA)",
+            "$500 for Intuitive Investor; WellsTrade not published",
+            "Intuitive Investor",
+            "0.35%/yr; 0.25% to 0.30% with linked checking",
+            "Clients choosing self-directed, advisor-led or automated IRAs"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "MissionSquare",
+          "domain": "missionsquare.com",
+          "url": "https://www.missionsquare.com",
+          "values": [
+            "Not published",
+            "No minimum for self-directed brokerage accounts",
+            "Managed account with an investment adviser",
+            "Not published",
+            "Anyone with earned income opening a traditional or Roth IRA"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Regions Bank",
+          "domain": "regions.com",
+          "url": "https://www.regions.com",
+          "values": [
+            "Not published",
+            "$250 fixed-rate IRA; $50 money market IRA",
+            "InvestPath",
+            "Not published",
+            "Bank customers wanting CD, money market or managed IRAs"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
     },
-    {
-     "name": "TradeAlgo",
-     "domain": "tradealgo.com",
-     "url": "https://tradealgo.com",
-     "values": [
-      "Traders wanting AI-generated portfolios, options alerts and market briefings",
-      "AI-generated stock portfolios, options flow alerts and daily AI briefing",
-      "Not published",
-      "Not published"
-     ],
-     "added": "2026-10-15"
+    "best-investment-apps-for-beginners": {
+      "domains": {
+        "Fidelity": "fidelity.com",
+        "Charles Schwab": "schwab.com",
+        "Robinhood": "robinhood.com",
+        "Betterment": "betterment.com",
+        "Acorns": "acorns.com",
+        "Public": "public.com",
+        "SoFi Invest": "sofi.com"
+      },
+      "added": [
+        {
+          "name": "Kraken",
+          "domain": "kraken.com",
+          "url": "https://www.kraken.com/stocks",
+          "values": [
+            "Not published",
+            "Not published",
+            "Not published",
+            "N/A",
+            "Commission-free trading of 11,000+ US stocks and ETFs alongside crypto"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
     },
-    {
-     "name": "FN Capital",
-     "domain": "fncapital.io",
-     "url": "https://fncapital.io",
-     "values": [
-      "Investors wanting automated trading in their own brokerage account",
-      "FAST AI automated trading algorithm",
-      "Trades automatically through connected brokers; funds stay in investor's account",
-      "Not published; free trial and 100-day refund of initial plan fee"
-     ],
-     "added": "2026-10-15"
+    "best-money-market-accounts": {
+      "domains": {
+        "UFB Direct": "ufbdirect.com",
+        "Sallie Mae": "salliemae.com",
+        "Discover": "discover.com",
+        "Ally Bank": "ally.com",
+        "CIT Platinum Savings": "cit.com",
+        "Vanguard VMFXX": "vanguard.com",
+        "TIAA Bank": "everbank.com"
+      },
+      "added": [
+        {
+          "name": "Citizens",
+          "domain": "citizensbank.com",
+          "url": "https://www.citizensbank.com",
+          "values": [
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Bank Five Nine",
+          "domain": "bankfivenine.com",
+          "url": "https://bankfivenine.com",
+          "values": [
+            "First Rate 0.04%-0.30%; Relationship up to 3.00% intro, as of Oct 2026",
+            "Not published",
+            "$2,500 to open First Rate; $15,000 to open Relationship",
+            "Yes (Member FDIC)",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Huntington",
+          "domain": "huntington.com",
+          "url": "https://www.huntington.com",
+          "values": [
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Institution for Savings",
+          "domain": "institutionforsavings.com",
+          "url": "https://institutionforsavings.com",
+          "values": [
+            "0.10%-3.25% by account tier, as of Oct 2026",
+            "$5 to $10 by account, waivable with balance",
+            "$1,000 to waive fee on Traditional",
+            "Yes",
+            "ATM/debit card"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
+    },
+    "best-budgeting-apps-for-couples": {
+      "domains": {
+        "YNAB": "ynab.com",
+        "Monarch Money": "monarch.com",
+        "Honeydue": "honeydue.com",
+        "Copilot": "copilot.money",
+        "Simplifi": "simplifimoney.com",
+        "EveryDollar": "everydollar.com",
+        "Goodbudget": "goodbudget.com"
+      },
+      "added": [
+        {
+          "name": "The Budgeting App",
+          "domain": "thebudgeting.app",
+          "url": "https://thebudgeting.app",
+          "values": [
+            "Free tier; paid Pro and Pro Sync prices not published",
+            "Not published",
+            "Pro Sync tier only (US, Canada, Australia)",
+            "Not stated",
+            "Simple weekly or monthly category budgets on one phone"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Peggy",
+          "domain": "getpeggy.app",
+          "url": "https://getpeggy.app",
+          "values": [
+            "Free 7-day trial; price not published",
+            "Yes (shared wallets with roles)",
+            "No; manual, voice, receipt scan or CSV",
+            "Not stated",
+            "Partners who track shared expenses with category limits"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Fintrack",
+          "domain": "fintrackai.app",
+          "url": "https://fintrackai.app",
+          "values": [
+            "Free, Plus and Pro tiers; prices not published",
+            "Yes (Plus shares with one member, Pro six)",
+            "No; manual entry and CSV import",
+            "Not stated",
+            "Couples who want AI help without linking a bank"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Koru",
+          "domain": "koru-app.com",
+          "url": "https://koru-app.com",
+          "values": [
+            "Free download; Premium price not published",
+            "Yes (email invite, Owner/Admin/Member roles)",
+            "Not stated; manual entry shown",
+            "Not stated; allocates monthly total across categories",
+            "Couples who want a planned monthly budget"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Halfway",
+          "domain": "meethalfway.app",
+          "url": "https://meethalfway.app",
+          "values": [
+            "Free; Premium $11.99/mo as of Oct 2026",
+            "Yes (separate logins; partner sees shared expenses only)",
+            "Premium only, via Plaid",
+            "Not stated",
+            "Couples with different incomes splitting bills proportionally"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "best-401k-providers-for-small-business": {
+      "domains": {
+        "Guideline": "guideline.com",
+        "Human Interest": "humaninterest.com",
+        "ADP": "adp.com",
+        "Paychex": "paychex.com",
+        "Fidelity Solo 401(k)": "fidelity.com",
+        "Vanguard Solo 401(k)": "vanguard.com",
+        "ShareBuilder 401k": "sharebuilder401k.com"
+      },
+      "added": [
+        {
+          "name": "OnPay",
+          "domain": "onpay.com",
+          "url": "https://onpay.com",
+          "values": [
+            "Small businesses already running OnPay payroll",
+            "Not published for 401(k); payroll starts at $49/mo",
+            "Not published for 401(k); payroll adds $6/worker/mo",
+            "Yes, 401(k) plans sync directly with OnPay payroll",
+            "Compliance testing help and a Safe Harbor option offered"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Ubiquity Retirement + Savings",
+          "domain": "myubiquity.com",
+          "url": "https://myubiquity.com",
+          "values": [
+            "Small businesses wanting flat-fee, full-service group or solo plans",
+            "$97/mo (Saver(k)) plus $495 one-time setup",
+            "$6/mo per eligible employee",
+            "Yes, connects to your payroll provider",
+            "Government reporting and compliance included; testing scope not stated"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Carbon Collective",
+          "domain": "carboncollective.co",
+          "url": "https://carboncollective.co",
+          "values": [
+            "Employers wanting a climate-focused 401(k) fund lineup",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Acts as 3(38) investment manager; testing details not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "ForUsAll",
+          "domain": "forusall.com",
+          "url": "https://forusall.com",
+          "values": [
+            "Startups and mid-sized companies wanting a full-service 401(k)",
+            "$120/mo, no setup fee",
+            "$6/mo per participant, plus 0.20%-0.40% advisory fee",
+            "200+ payroll providers; integration from $50/mo",
+            "Safe Harbor option gives automatic nondiscrimination test compliance"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Bank of America (Merrill)",
+          "domain": "business.bofa.com",
+          "url": "https://business.bofa.com/en-us/content/workplace-benefits.html",
+          "values": [
+            "Businesses wanting Merrill-run 401(k) and deferred compensation plans",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Fidelity Advantage 401(k)",
+          "domain": "fidelityworkplace.com",
+          "url": "https://fidelityworkplace.com",
+          "values": [
+            "Small businesses seeking an affordable 401(k) from Fidelity",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "SurePayroll",
+          "domain": "surepayroll.com",
+          "url": "https://surepayroll.com",
+          "values": [
+            "Small businesses already using SurePayroll payroll",
+            "401(k) fees not published",
+            "Not published",
+            "Offered alongside SurePayroll payroll",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Employee Fiduciary",
+          "domain": "employeefiduciary.com",
+          "url": "https://employeefiduciary.com",
+          "values": [
+            "Small businesses wanting Safe Harbor, traditional or solo 401(k)",
+            "$1,500/yr new plans, $500 setup; 0.08% custody fee",
+            "$30/yr per eligible employee beyond 30",
+            "QuickBooks, Paylocity, Paychex Flex, ADP Run and others",
+            "Safe Harbor avoids nondiscrimination testing; testing fees not stated"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "401GO",
+          "domain": "401go.com",
+          "url": "https://401go.com",
+          "values": [
+            "Small businesses; GO-Starter suits very small companies",
+            "GO-Plus $139/mo plus $500 setup; GO-Starter $25/mo",
+            "$2 to $7/mo per participant, plus 0.3% asset fee",
+            "200+ payroll integrations",
+            "Nondiscrimination testing and automated compliance listed; tier not stated"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Madison 401k Administration",
+          "domain": "madison401kadministration.com",
+          "url": "https://madison401kadministration.com",
+          "values": [
+            "Plan sponsors wanting outsourced 3(16) administration and 3(38) investment management",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Handles Form 5500, plan documents and government filings as 3(16) administrator"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "SP Consultants",
+          "domain": "spconsultants.com",
+          "url": "https://spconsultants.com",
+          "values": [
+            "Corporations with up to 100 employees (turn(K) plan)",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "best-net-worth-tracker": {
+      "domains": {
+        "Empower": "empower.com",
+        "Copilot": "copilot.money",
+        "YNAB": "ynab.com",
+        "Quicken Classic": "quicken.com",
+        "Boldin": "boldin.com",
+        "Tiller": "tiller.com",
+        "Credit Karma": "creditkarma.com"
+      },
+      "added": [
+        {
+          "name": "Know Your Dosh",
+          "domain": "knowyourdosh.com",
+          "url": "https://knowyourdosh.com",
+          "values": [
+            "Free; paid £4.99 to £14.99/month per household",
+            "Tracks stocks, crypto, ISAs and investments; no analysis tools listed",
+            "Yes, properties and rental management",
+            "Not published",
+            "Households and families tracking shared wealth, multi-currency on Pro"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Origin Financial",
+          "domain": "useorigin.com",
+          "url": "https://useorigin.com",
+          "values": [
+            "$99/year list price; $1 first-year offer shown",
+            "Portfolio and performance tracking in one view",
+            "Not published",
+            "Forecasting tool; no dedicated retirement planner listed",
+            "People wanting budgeting, investing and tracking in one app"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Finman",
+          "domain": "finman.money",
+          "url": "https://finman.money",
+          "values": [
+            "Free; Pro $9.99/month; Family $19.99/month",
+            "Investment tracker for stocks, ETFs, crypto with live prices",
+            "Not published",
+            "Not published",
+            "Individuals and households wanting AI budgeting and tracking"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Worthy",
+          "domain": "joinworthyapp.com",
+          "url": "https://joinworthyapp.com",
+          "values": [
+            "$16.99 one-time, no subscription",
+            "Stocks, crypto and metals update automatically; prices 15 minutes delayed",
+            "Yes, real estate and vehicles with loan paydown",
+            "FIRE projections, FI number, and retirement account types",
+            "Privacy-minded users who skip bank linking"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Worthmap",
+          "domain": "worthmap.com",
+          "url": "https://worthmap.com",
+          "values": [
+            "Free plan in beta; paid plans not yet available",
+            "Tracks stocks, crypto, dividends; free investing calculators",
+            "Real estate can be added as an asset",
+            "No dedicated planner; FIRE and compound interest calculators",
+            "People with money in several currencies, such as expats"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Hoxton Wealth",
+          "domain": "hoxtonwealth.com",
+          "url": "https://hoxtonwealth.com",
+          "values": [
+            "Not published",
+            "Market tracker and account connection in app",
+            "Not published",
+            "WealthFlow scenario modelling; advisers available",
+            "Clients of the firm's advisory service"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Moneko",
+          "domain": "moneko.io",
+          "url": "https://moneko.io",
+          "values": [
+            "Free; Plus $79.99/year or $99.99 lifetime",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Everyday spending logging, shared budgets and net worth view"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Worth it",
+          "domain": "getworthit.com",
+          "url": "https://getworthit.com",
+          "values": [
+            "Free on iOS, Mac and Android",
+            "Manual entry of investment balances",
+            "Manual entry of real estate values",
+            "Not published",
+            "Monthly manual check-in without bank linking"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Wealthfolio",
+          "domain": "wealthfolio.app",
+          "url": "https://wealthfolio.app",
+          "values": [
+            "Free open source; optional Connect subscription",
+            "Allocation, benchmark comparison, dividend tracking, rebalance plan",
+            "Not published",
+            "Retirement and FIRE planner with Monte Carlo simulation",
+            "Users wanting data kept on their own devices"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "CustomWorth",
+          "domain": "customworth.com",
+          "url": "https://customworth.com",
+          "values": [
+            "Free, no premium tiers",
+            "None; investments entered as manual balances",
+            "Limited; property added as a manual balance",
+            "None; no forecasting",
+            "People who want a simple balance-only tracker"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "best-tax-relief-companies": {
+      "domains": {
+        "Precision Tax Relief": "precisiontax.com",
+        "Community Tax": "communitytax.com",
+        "Larson Tax Relief": "larsontaxrelief.com",
+        "Fortress Tax Relief": "fortresstaxrelief.com",
+        "Anthem Tax Services": "anthemtaxservices.com",
+        "Optima Tax Relief": "optimataxrelief.com"
+      },
+      "added": [
+        {
+          "name": "Omni Tax Help",
+          "domain": "omnitaxhelp.com",
+          "url": "https://omnitaxhelp.com",
+          "values": [
+            "Not published",
+            "Tax analysts, attorneys and enrolled agents",
+            "Not published; free consultation offered",
+            "25+ years, per its site",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Tax Experts of OC",
+          "domain": "taxexpertsofoc.com",
+          "url": "https://taxexpertsofoc.com",
+          "values": [
+            "Not published",
+            "CPA and enrolled agent",
+            "Not published; quoted after free consultation",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Tax Response Center",
+          "domain": "taxresponsecenter.com",
+          "url": "https://taxresponsecenter.com",
+          "values": [
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Brightside Tax Relief",
+          "domain": "brightsidetaxrelief.com",
+          "url": "https://brightsidetaxrelief.com",
+          "values": [
+            "Not published",
+            "Licensed tax attorneys",
+            "Flat fee, amounts not published; free consultation",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Tax Hardship Center",
+          "domain": "taxhardshipcenter.com",
+          "url": "https://taxhardshipcenter.com",
+          "values": [
+            "Not published",
+            "Enrolled agents, CPAs and attorneys",
+            "Not published; free consultation",
+            "Site states both 14+ and 20+ years",
+            "BBB Accredited, per its site"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
+    },
+    "best-online-will-makers": {
+      "domains": {
+        "Trust & Will": "trustandwill.com",
+        "FreeWill": "freewill.com",
+        "LegalZoom": "legalzoom.com",
+        "Nolo WillMaker": "nolo.com",
+        "Mama Bear": "mamabearlegalforms.com",
+        "Rocket Lawyer": "rocketlawyer.com"
+      },
+      "added": [
+        {
+          "name": "WillMaker",
+          "domain": "willmaker.com",
+          "url": "https://willmaker.com",
+          "values": [
+            "$109 Starter (will, health care directive)",
+            "Not published",
+            "$149 Plus; $219 All Access",
+            "Plus and All Access; Starter has health care directive only",
+            "Not offered; not available in Louisiana"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "CompleteMyEstatePlan",
+          "domain": "completemyestateplan.com",
+          "url": "https://completemyestateplan.com",
+          "values": [
+            "$99",
+            "$149",
+            "$349 single / $449 couple",
+            "Yes",
+            "Not offered"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Do Your Own Will Online",
+          "domain": "doyourownwill.com",
+          "url": "https://doyourownwill.com",
+          "values": [
+            "$0",
+            "Not published",
+            "N/A",
+            "No; living will and power of attorney are separate documents",
+            "Not offered"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Neptune",
+          "domain": "meetneptune.com",
+          "url": "https://meetneptune.com",
+          "values": [
+            "Not published; pour-over will in $3,000 plan",
+            "Not published",
+            "$3,000 flat plan includes revocable living trust",
+            "Yes, in $3,000 flat plan",
+            "Independent attorneys; free initial consultation"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
+    },
+    "best-living-trust-services": {
+      "domains": {
+        "Trust & Will": "trustandwill.com",
+        "LegalZoom Living Trust": "legalzoom.com",
+        "Nolo WillMaker Plus": "nolo.com"
+      },
+      "added": [
+        {
+          "name": "Affordable Living Trusts",
+          "domain": "affordablelivingtrusts.com",
+          "url": "https://affordablelivingtrusts.com",
+          "values": [
+            "Starting at $499",
+            "Yes",
+            "Funding instructions and video guidance",
+            "Not published",
+            "Not stated"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "The Trust Pros",
+          "domain": "thetrustpros.com",
+          "url": "https://thetrustpros.com",
+          "values": [
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Attorney reviews all living trusts"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Blade Law Offices",
+          "domain": "bladeoffices.com",
+          "url": "https://bladeoffices.com",
+          "values": [
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not stated"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Salvo Law",
+          "domain": "salvolaw.com",
+          "url": "https://salvolaw.com",
+          "values": [
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Law firm; offers trust creation"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "McKenzie Legal",
+          "domain": "thomasmckenzielaw.com",
+          "url": "https://thomasmckenzielaw.com",
+          "values": [
+            "Not published",
+            "Not published",
+            "Title transfer to trust described; fee not published",
+            "Not published",
+            "Yes, each living trust drafted by the attorney"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Living Trust Attorneys",
+          "domain": "livingtrust-attorneys.com",
+          "url": "https://livingtrust-attorneys.com",
+          "values": [
+            "$575 single; $675 joint",
+            "Yes",
+            "Trust transfer deed and PCOR included",
+            "Yes, quote by phone",
+            "Yes, California attorney"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Thrift Legal",
+          "domain": "thriftlegal.com",
+          "url": "https://thriftlegal.com",
+          "values": [
+            "Not published; hourly, flat-fee or contingency billing",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not stated"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "For Living Trust",
+          "domain": "forlivingtrust.com",
+          "url": "https://forlivingtrust.com",
+          "values": [
+            "Not published",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Attorney-led firm; responsible attorney named"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Living Trust California",
+          "domain": "livingtrustcalifornia.com",
+          "url": "https://livingtrustcalifornia.com",
+          "values": [
+            "$400 single; $500 joint",
+            "Yes",
+            "Funding instructions; deed transfer $100 per property",
+            "Not published",
+            "Yes, attorney-reviewed; California residents only"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
+    },
+    "best-estate-planning-software": {
+      "domains": {
+        "Trust & Will": "trustandwill.com",
+        "LegalZoom": "legalzoom.com",
+        "Killswitch": "killswitch.rip",
+        "FreeWill": "freewill.com",
+        "Nolo WillMaker Plus": "nolo.com",
+        "Mama Bear": "mamabearlegalforms.com",
+        "Rocket Lawyer": "rocketlawyer.com"
+      },
+      "added": [
+        {
+          "name": "Vesperly",
+          "domain": "vesperly.com",
+          "url": "https://vesperly.com",
+          "values": [
+            "Vesperly digital account-access vault; Personal $149/yr, Family $349/yr",
+            "N/A; works alongside an existing will",
+            "N/A",
+            "N/A",
+            "Not published",
+            "Web app with encrypted vault; 14-day free trial"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "best-budgeting-apps": {
+      "domains": {
+        "YNAB": "ynab.com",
+        "Monarch Money": "monarch.com",
+        "Rocket Money": "rocketmoney.com",
+        "PocketGuard": "pocketguard.com",
+        "Copilot": "copilot.money",
+        "EveryDollar": "everydollar.com",
+        "Goodbudget": "goodbudget.com"
+      },
+      "added": [
+        {
+          "name": "Albert",
+          "domain": "albert.com",
+          "url": "https://albert.com",
+          "values": [
+            "$19.99 to $39.99/mo; 30-day trial",
+            "Not published",
+            "Custom budget; AI assistant builds one automatically",
+            "Budgeting alongside saving, investing, and ID protection"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Bountisphere",
+          "domain": "bountisphere.com",
+          "url": "https://bountisphere.com",
+          "values": [
+            "$7/mo or $70/yr; 7-day free trial",
+            "Not stated; page describes nightly bank sync",
+            "Calendar forecast of income, bills, balances up to 24 months",
+            "Seeing upcoming bills and lowest balances ahead"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "FloosYo",
+          "domain": "floosyo.com",
+          "url": "https://floosyo.com",
+          "values": [
+            "$9.99/mo or $99.99/yr; 7-day free trial",
+            "No (bank linking optional)",
+            "Category spending envelopes",
+            "Tracking spending and subscriptions, with voice entry"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "best-brokers-for-treasury-bonds": {
+      "domains": {
+        "Fidelity": "fidelity.com",
+        "Charles Schwab": "schwab.com",
+        "Vanguard": "vanguard.com",
+        "Edward Jones": "edwardjones.com"
+      },
+      "added": [
+        {
+          "name": "Interactive Brokers",
+          "domain": "interactivebrokers.com",
+          "url": "https://www.interactivebrokers.com/en/trading/products-bonds.php",
+          "values": [
+            "Traders buying Treasuries in the secondary market",
+            "Not offered; no access to Treasury auctions",
+            "Yes, sold in secondary market; 0.002% of face, $5 minimum",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "best-brokerage-accounts-for-interest-on-cash": {
+      "domains": {
+        "Fidelity": "fidelity.com",
+        "Vanguard": "vanguard.com",
+        "Robinhood": "robinhood.com",
+        "Webull": "webull.com",
+        "Public": "public.com",
+        "Moomoo": "moomoo.com",
+        "M1": "m1.com"
+      },
+      "added": [
+        {
+          "name": "E*TRADE from Morgan Stanley",
+          "domain": "us.etrade.com",
+          "url": "https://us.etrade.com",
+          "values": [
+            "Bank Deposit Program at program banks",
+            "FDIC via program banks; SIPC does not cover those deposits",
+            "Not published",
+            "Optional E*TRADE Bank savings account beside brokerage"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Morgan Stanley",
+          "domain": "morganstanley.com",
+          "url": "https://www.morganstanley.com/what-we-do/wealth-management/cash-management-solutions",
+          "values": [
+            "CashPlus brokerage account sweeping to program banks",
+            "FDIC up to $250,000 per bank on swept deposits",
+            "Monthly fee waived only with qualifying accounts or balances",
+            "Unlimited ATM fee rebates worldwide on CashPlus"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "best-high-yield-savings-accounts": {
+      "domains": {
+        "Ally Bank": "ally.com",
+        "Marcus by Goldman Sachs": "marcus.com",
+        "SoFi": "sofi.com",
+        "Discover": "discover.com",
+        "American Express": "americanexpress.com",
+        "Capital One": "capitalone.com",
+        "Synchrony Bank": "synchrony.com",
+        "Wealthfront": "wealthfront.com",
+        "Navy Federal Credit Union": "navyfederal.org",
+        "PenFed Credit Union": "penfed.org"
+      },
+      "added": [
+        {
+          "name": "HSBC",
+          "domain": "us.hsbc.com",
+          "url": "https://us.hsbc.com/savings/",
+          "values": [
+            "$1",
+            "Not published",
+            "None listed",
+            "Premier Relationship Savings; higher rate needs linked Premier checking, as of Oct 2026"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Popular Direct",
+          "domain": "populardirect.com",
+          "url": "https://www.populardirect.com/high-yield-savings",
+          "values": [
+            "$100 to open",
+            "Not published",
+            "None listed",
+            "3.90% APY as of Oct 5, 2026; FDIC insured"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "best-robo-advisors": {
+      "domains": {
+        "Wealthfront": "wealthfront.com",
+        "Betterment": "betterment.com",
+        "Schwab Intelligent Portfolios": "schwab.com",
+        "Fidelity Go": "fidelity.com",
+        "Vanguard Digital Advisor": "vanguard.com",
+        "E*TRADE Core Portfolios": "etrade.com",
+        "Acorns": "acorns.com"
+      },
+      "added": [
+        {
+          "name": "Vanguard",
+          "domain": "investor.vanguard.com",
+          "url": "https://investor.vanguard.com",
+          "values": [
+            "Up to $20 per $10,000 yearly after first 90 days as of Oct 2026",
+            "$100",
+            "Not published",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
+    },
+    "best-credit-cards-for-fair-credit": {
+      "domains": {
+        "Capital One Platinum": "capitalone.com",
+        "Discover it Secured": "discover.com",
+        "Petal 2": "petalcard.com",
+        "Capital One QuicksilverOne": "capitalone.com",
+        "Chime Card": "chime.com",
+        "OpenSky Secured Visa": "openskycc.com"
+      },
+      "added": []
+    },
+    "best-custodial-roth-ira-providers": {
+      "domains": {
+        "Fidelity": "fidelity.com",
+        "Charles Schwab": "schwab.com",
+        "Vanguard": "vanguard.com",
+        "E*TRADE": "etrade.com"
+      },
+      "added": []
+    },
+    "best-balance-transfer-credit-cards": {
+      "domains": {
+        "Citi Simplicity": "citi.com",
+        "Wells Fargo Reflect": "wellsfargo.com",
+        "Chase Slate Edge": "chase.com",
+        "Discover it Cash Back": "discover.com",
+        "BankAmericard": "bankofamerica.com",
+        "U.S. Bank Shield Visa": "usbank.com"
+      },
+      "added": [
+        {
+          "name": "Wells Fargo Reflect Card",
+          "domain": "creditcards.wellsfargo.com",
+          "url": "https://creditcards.wellsfargo.com",
+          "values": [
+            "Wells Fargo Reflect Card",
+            "21 months on purchases and qualifying balance transfers",
+            "Not published",
+            "$0",
+            "Not published",
+            "None",
+            "Long 0% intro window with no annual fee"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "personal-loan-rates-by-lender": {
+      "domains": {
+        "Discover": "discover.com",
+        "SoFi": "sofi.com",
+        "Wells Fargo": "wellsfargo.com",
+        "PNC": "pnc.com",
+        "US Bank": "usbank.com",
+        "Navy Federal": "navyfederal.org",
+        "PenFed": "penfed.org"
+      },
+      "added": [
+        {
+          "name": "OppLoans",
+          "domain": "opploans.com",
+          "url": "https://opploans.com",
+          "values": [
+            "Borrowers with bad or no credit",
+            "$500 to $5,000, varies by state",
+            "Maximum APR 195%; range by state not published",
+            "No origination or prepayment fee on installment loans; 10% fee on credit line draws",
+            "Same day if approved before noon CT"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
+    },
+    "best-student-loans-bad-credit": {
+      "domains": {
+        "Ascent Non-Cosigned Outcomes-Based Loan": "ascentfunding.com",
+        "Funding U": "funding-u.com",
+        "MPOWER Financing": "mpowerfinancing.com",
+        "Edly": "edly.co",
+        "Prodigy Finance": "prodigyfinance.com"
+      },
+      "added": [
+        {
+          "name": "Abe Student Loans",
+          "domain": "abestudentloans.com",
+          "url": "https://abestudentloans.com",
+          "values": [
+            "Undergrad, grad and professional students, including DACA and international with cosigner",
+            "Soft inquiry to estimate rates",
+            "Optional; release after 12 on-time payments",
+            "Undergrad fixed 2.08% to 16.58% APR as of Oct 2026",
+            "No application, origination or late fees; terms of 5 to 20 years"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
+    },
+    "best-student-loan-refinance": {
+      "domains": {
+        "SoFi": "sofi.com",
+        "Earnest": "earnest.com",
+        "ELFI": "elfi.com",
+        "Splash Financial": "splashfinancial.com",
+        "College Ave": "collegeave.com",
+        "Laurel Road": "laurelroad.com",
+        "RISLA": "risla.com"
+      },
+      "added": [
+        {
+          "name": "MEFA REFI",
+          "domain": "mefa.org",
+          "url": "https://mefa.org",
+          "values": [
+            "Refinancing existing education loans",
+            "3.95% APR starting rate, as of Oct 2026",
+            "Not published",
+            "Not published",
+            "Rate check without affecting credit score"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "KeyBank",
+          "domain": "key.com",
+          "url": "https://www.key.com/personal/student-loans/student-loan-refinancing.html",
+          "values": [
+            "Bank-backed refinance (formerly Laurel Road)",
+            "Not published",
+            "Not published",
+            "No origination fee or prepayment penalty",
+            "Rate check with no hard credit pull"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "LendKey",
+          "domain": "lendkey.com",
+          "url": "https://lendkey.com",
+          "values": [
+            "Matching with partner credit unions and banks",
+            "Not published",
+            "Not published",
+            "Not published",
+            "One application across partner lenders"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
+    },
+    "best-secured-credit-cards": {
+      "domains": {
+        "Capital One Platinum Secured": "capitalone.com",
+        "Discover it Secured": "discover.com",
+        "Citi Secured Mastercard": "citi.com",
+        "Self Visa": "self.inc",
+        "U.S. Bank Secured Visa": "usbank.com"
+      },
+      "added": [
+        {
+          "name": "Armed Forces Bank",
+          "domain": "afbank.com",
+          "url": "https://www.afbank.com",
+          "values": [
+            "$300 to $3,000",
+            "Yes",
+            "Not published",
+            "None",
+            "Not published (subject to credit approval)"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Market USA FCU",
+          "domain": "marketusafcu.com",
+          "url": "https://www.marketusafcu.com",
+          "values": [
+            "$200 to $5,000 line, secured by savings",
+            "Not published",
+            "Not published",
+            "None",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Truist",
+          "domain": "truist.com",
+          "url": "https://www.truist.com",
+          "values": [
+            "$400 minimum, up to approved credit limit",
+            "Yes",
+            "3% gas/EV, 2% groceries/utilities, 1% other",
+            "$0",
+            "Not published (credit report checked)"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
+    },
+    "best-travel-credit-cards": {
+      "domains": {
+        "Chase Sapphire Preferred®": "chase.com",
+        "Chase Sapphire Reserve®": "chase.com",
+        "Capital One Venture Rewards": "capitalone.com",
+        "Capital One VentureOne": "capitalone.com",
+        "Bank of America Travel Rewards": "bankofamerica.com",
+        "Discover it Miles": "discover.com"
+      },
+      "added": [
+        {
+          "name": "Chase",
+          "domain": "creditcards.chase.com",
+          "url": "https://creditcards.chase.com",
+          "values": [
+            "$0 to $795 by card",
+            "Sapphire Preferred 2x other travel, 5x Chase Travel; co-brand cards earn bonus per brand",
+            "Not published",
+            "Travelers choosing airline, hotel or Sapphire cards from one issuer"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
+    },
+    "best-cash-back-credit-cards": {
+      "domains": {
+        "Citi Double Cash Card": "citi.com",
+        "Chase Freedom Unlimited": "chase.com",
+        "Wells Fargo Active Cash": "wellsfargo.com",
+        "Discover it Cash Back": "discover.com",
+        "Capital One SavorOne": "capitalone.com",
+        "Blue Cash Everyday": "americanexpress.com"
+      },
+      "added": []
+    },
+    "best-student-credit-cards": {
+      "domains": {
+        "Discover it® Student Cash Back": "discover.com",
+        "Capital One Savor Rewards for Students": "capitalone.com",
+        "Capital One Quicksilver Rewards for Students": "capitalone.com",
+        "Chase Freedom Rise℠": "chase.com",
+        "Bank of America® Travel Rewards for Students": "bankofamerica.com",
+        "Bank of America® Customized Cash Rewards for Students": "bankofamerica.com"
+      },
+      "added": []
+    },
+    "best-portfolio-backtesting-and-analysis-tools": {
+      "domains": {
+        "Portfolio Visualizer": "portfoliovisualizer.com",
+        "Portfolio Charts": "portfoliocharts.com",
+        "Fidelity Full View": "fidelity.com",
+        "Vanguard Portfolio Watch": "vanguard.com",
+        "Schwab Portfolio Checkup": "schwab.com",
+        "Questrade": "questrade.com"
+      },
+      "added": [
+        {
+          "name": "testfolio",
+          "domain": "testfol.io",
+          "url": "https://testfol.io",
+          "values": [
+            "Yes, ETF and asset allocation backtests",
+            "Not published",
+            "ETF backtests with rebalancing and cashflows"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Awalyt",
+          "domain": "awalyt.com",
+          "url": "https://awalyt.com",
+          "values": [
+            "Yes, daily price data; sample covers 2012 to 2026",
+            "Yes; free plan, no card",
+            "Testing strategies and checking diversification before investing"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "PortfolioMetrics",
+          "domain": "portfoliometrics.net",
+          "url": "https://portfoliometrics.net",
+          "values": [
+            "Yes, up to 40 years of price history",
+            "Free sign-up offered; core features free",
+            "Backtesting, optimization and Monte Carlo with AI assistant"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Diversiview",
+          "domain": "diversiview.online",
+          "url": "https://diversiview.online",
+          "values": [
+            "Yes, past three years per its description",
+            "Not published",
+            "Retail investors and professionals optimizing asset allocation"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Guardfolio",
+          "domain": "guardfolio.ai",
+          "url": "https://guardfolio.ai",
+          "values": [
+            "Yes, 5-year backtest on Guardian Pro",
+            "Yes; sign-up to connect brokers",
+            "Tracking risk and ETF overlap across multiple accounts"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Portfolio Performance",
+          "domain": "portfolio-performance.info",
+          "url": "https://portfolio-performance.info",
+          "values": [
+            "No, tracks actual performance and rebalancing",
+            "Not published",
+            "Consolidating performance across several accounts; open source desktop app"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
+    },
+    "best-merchant-cash-advance-companies": {
+      "domains": {
+        "Rapid Finance": "rapidfinance.com",
+        "Credibly": "credibly.com",
+        "Fora Financial": "forafinancial.com",
+        "National Funding": "nationalfunding.com",
+        "Expansion Capital Group": "ecg.com",
+        "OnDeck": "ondeck.com",
+        "Kabbage (Amex Business Blueprint)": "americanexpress.com",
+        "Kapitus": "kapitus.com",
+        "Kalamata Capital Group": "kalamatacapitalgroup.com",
+        "Headway Capital": "headwaycapital.com",
+        "Can Capital": "cancapital.com"
+      },
+      "added": [
+        {
+          "name": "GoKapital",
+          "domain": "gokapital.com",
+          "url": "https://gokapital.com",
+          "values": [
+            "MCA, lines of credit, SBA, equipment loans",
+            "Working capital $20,000–$50,000,000",
+            "MCA funding in 24 hours or less",
+            "No minimum credit score stated; $30,000+/mo revenue"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Greenbox Capital",
+          "domain": "greenboxcapital.com",
+          "url": "https://www.greenboxcapital.com/",
+          "values": [
+            "MCA, factoring, line of credit, loans",
+            "$3,000–$500,000",
+            "As fast as 1 business day",
+            "500 FICO, 5 mo., $10k/mo"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Sunwise Capital",
+          "domain": "sunwisecapital.com",
+          "url": "https://sunwisecapital.com",
+          "values": [
+            "Unsecured loans, MCA, equipment financing",
+            "Unsecured $10,000–$2M",
+            "As fast as 4 hrs",
+            "500 FICO, 12 mo., $25k/mo"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Alternative Funding Group",
+          "domain": "altfunding.com",
+          "url": "https://altfunding.com",
+          "values": [
+            "Working capital, SBA, factoring, equipment",
+            "Not published",
+            "Same day if qualified",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "JSV Capital",
+          "domain": "jsvcapital.com",
+          "url": "https://jsvcapital.com",
+          "values": [
+            "MCA, loans, line of credit, equipment",
+            "$10,000–$1,000,000",
+            "As fast as 1 business day",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "MCA Advance",
+          "domain": "mcashadvance.com",
+          "url": "https://mcashadvance.com",
+          "values": [
+            "MCA, factor rates 1.1–1.5",
+            "$5,000–$900,000",
+            "1–3 days average",
+            "6 mo.; $7,500–$8,000/mo; 500–550 FICO"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "United Banc Card of TN",
+          "domain": "unitedbanccardoftn.com",
+          "url": "https://unitedbanccardoftn.com",
+          "values": [
+            "Card processing, POS, MCA",
+            "Not published",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Biz2Credit",
+          "domain": "biz2credit.com",
+          "url": "https://biz2credit.com",
+          "values": [
+            "Term loan, revenue-based financing, line of credit",
+            "$25K–$2M+",
+            "Decision as fast as 24 hrs",
+            "Term loan: 650 FICO, $100k revenue"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Merchant Fund Express",
+          "domain": "mfebusinessloans.com",
+          "url": "https://mfebusinessloans.com",
+          "values": [
+            "Working capital, line of credit, MCA refinance",
+            "$5,000–$5,000,000",
+            "Same-day decision, next-day funding",
+            "Not published"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Lightspeed Capital",
+          "domain": "lightspeedhq.com",
+          "url": "https://lightspeedhq.com/capital",
+          "values": [
+            "MCA, flat fee, 11% of daily card sales",
+            "Not published",
+            "As soon as 2 business days",
+            "Lightspeed Payments subscribers; no credit check"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
+    },
+    "best-invoice-factoring-companies": {
+      "domains": {
+        "altLINE": "altline.sobanco.com",
+        "Riviera Finance": "rivierafinance.com",
+        "Scale Funding": "scalefunding.net",
+        "Triumph Business Capital": "triumph.io",
+        "Porter Capital": "portercap.com",
+        "RTS Financial": "rtsinc.com",
+        "eCapital": "ecapital.com"
+      },
+      "added": [
+        {
+          "name": "Fundthrough",
+          "domain": "fundthrough.com",
+          "url": "https://www.fundthrough.com",
+          "values": [
+            "Fundthrough",
+            "Invoice factoring for businesses billing large enterprise or government customers",
+            "Not published",
+            "Funds within a day after first funding",
+            "Tech platform; 100% of invoice advanced less one flat fee"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "STAR Funding",
+          "domain": "starfunding.com",
+          "url": "https://starfunding.com",
+          "values": [
+            "STAR Funding",
+            "Factoring, purchase order financing, inventory financing, letters of credit",
+            "Not published",
+            "Same-day approval; funding timeline not published",
+            "Factor with supplier credit facilities; fees not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Quickpay Funding",
+          "domain": "quickpayfunding.com",
+          "url": "https://quickpayfunding.com",
+          "values": [
+            "Quickpay Funding",
+            "Trucking, produce, oil and gas, manufacturing, staffing",
+            "Not published",
+            "Same-day funding, including nights and weekends",
+            "No minimum volume or invoice size; fees not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Orange Commercial Credit",
+          "domain": "occfactor.com",
+          "url": "https://www.occfactor.com",
+          "values": [
+            "Orange Commercial Credit",
+            "Trucking, staffing, manufacturing; 50+ industries served",
+            "Not published",
+            "Advance usually funds within 24 hours",
+            "Per-invoice sale; fee 1.25% to 5%; up to 98% advance"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "REV Capital",
+          "domain": "revinc.com",
+          "url": "https://revinc.com",
+          "values": [
+            "REV Capital",
+            "Staffing, trucking, manufacturing and other industries",
+            "Not published",
+            "Not published",
+            "Most of invoice paid upfront; fee not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "1st Commercial Credit",
+          "domain": "1stcommercialcredit.com",
+          "url": "https://1stcommercialcredit.com",
+          "values": [
+            "1st Commercial Credit",
+            "Receivables factoring across 10+ industries, plus ABL and PO financing",
+            "Non-recourse for trucking; other industries not published",
+            "Funds in 24 hours once approved; setup takes 3-5 business days",
+            "Purchase agreement, not a loan; rates 0.69% to 1.59%"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Factor Finders",
+          "domain": "ezinvoicefactoring.com",
+          "url": "https://ezinvoicefactoring.com",
+          "values": [
+            "Factor Finders",
+            "Transportation, manufacturing, construction, oilfield, staffing",
+            "Not published",
+            "Application in as little as 24 hours; same-day advance",
+            "Choose invoices; no long-term commitment or minimum volume"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Drip Capital",
+          "domain": "dripcapital.com",
+          "url": "https://www.dripcapital.com/en-us/",
+          "values": [
+            "Drip Capital",
+            "Receivables financing for manufacturers, wholesalers and distributors",
+            "Not published",
+            "Each invoice funded within 24 hours of credit approval",
+            "Facilities $50,000 to $3 million; fees not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Meritus Capital",
+          "domain": "merituscapital.com",
+          "url": "https://merituscapital.com",
+          "values": [
+            "Meritus Capital",
+            "Staffing, manufacturing, transportation, B2B, startups",
+            "Not published",
+            "Funds by next day after invoice submission",
+            "Fee 1% to 3% of invoice; advances up to 95%"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "business-line-of-credit-rates-by-lender": {
+      "domains": {
+        "Chase": "chase.com",
+        "Wells Fargo": "wellsfargo.com",
+        "Bank of America": "bankofamerica.com",
+        "PNC": "pnc.com",
+        "TD Bank": "td.com",
+        "RBC": "rbcroyalbank.com",
+        "Scotiabank": "scotiabank.com",
+        "CIBC": "cibc.com",
+        "Amex Business Blueprint": "americanexpress.com",
+        "Bluevine": "bluevine.com"
+      },
+      "added": [
+        {
+          "name": "Backd",
+          "domain": "backd.com",
+          "url": "https://backd.com",
+          "values": [
+            "Backd",
+            "Revolving line, $50K to $1M",
+            "Not published",
+            "Not published",
+            "Businesses wanting a revolving line with a soft-pull application"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "best-business-credit-cards": {
+      "domains": {
+        "Ink Business Unlimited": "chase.com",
+        "Amex Business Gold": "americanexpress.com",
+        "Capital One Spark Cash Plus": "capitalone.com",
+        "Capital One Spark Classic": "capitalone.com",
+        "Brex Card": "brex.com",
+        "BILL Divvy": "bill.com"
+      },
+      "added": [
+        {
+          "name": "Rippling Corporate Card",
+          "domain": "rippling.com",
+          "url": "https://www.rippling.com/products/finance/corporate-cards",
+          "values": [
+            "Rippling Corporate Card",
+            "No (company states no personal guarantee)",
+            "Corporate charge card, balance paid in full",
+            "No",
+            "Startups wanting cash back tied to company spend management"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Rho Card",
+          "domain": "rho.co",
+          "url": "https://www.rho.co/product/corporate-cards",
+          "values": [
+            "Rho Card",
+            "No (company states approval uses business financials)",
+            "Corporate charge card, full balance paid each statement",
+            "No",
+            "US-incorporated businesses with an EIN; sole proprietors are not eligible"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "best-same-day-business-loans": {
+      "domains": {
+        "OnDeck": "ondeck.com",
+        "Credibly": "credibly.com",
+        "Fundbox": "fundbox.com",
+        "National Funding": "nationalfunding.com"
+      },
+      "added": [
+        {
+          "name": "Delta Capital Group",
+          "domain": "deltacapitalgroup.com",
+          "url": "https://deltacapitalgroup.com",
+          "values": [
+            "$5,000,000",
+            "Same day or within 24 hours of approval",
+            "500 personal score",
+            "Not published; short-term repaid within two years"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
+    },
+    "best-business-bank-accounts": {
+      "domains": {
+        "Bluevine Business Checking": "bluevine.com",
+        "Mercury": "mercury.com",
+        "NBKC Bank Business Checking": "nbkc.com",
+        "Axos Bank Basic Business Checking": "axosbank.com"
+      },
+      "added": [
+        {
+          "name": "Bank of America Business Advantage Fundamentals",
+          "domain": "business.bankofamerica.com",
+          "url": "https://business.bankofamerica.com",
+          "values": [
+            "Business Advantage Fundamentals",
+            "$16 after first 12 months; waivable",
+            "$5,000 average balance or $500 card spend waives fee",
+            "$30",
+            "Members FDIC (stated on site)",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Prosperity Bank Small Business Checking",
+          "domain": "prosperitybankusa.com",
+          "url": "https://prosperitybankusa.com",
+          "values": [
+            "Small Business Checking",
+            "$10",
+            "$200 to open; $3,500 balance waives fee",
+            "Not published",
+            "FDIC-insured (stated on site)",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "BankUnited Primary Business Checking",
+          "domain": "bankunited.com",
+          "url": "https://www.bankunited.com",
+          "values": [
+            "Primary Business Checking",
+            "$12; waived with $1,500 average balance",
+            "$100 to open; $1,500 average waives fee",
+            "Not published",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Wise Business",
+          "domain": "wise.com",
+          "url": "https://wise.com/us/business",
+          "values": [
+            "Wise Business",
+            "One-time $31 set-up fee; no monthly fee listed",
+            "Not published",
+            "Not published (receiving domestic wire $6.11)",
+            "Not an FDIC bank; pass-through up to $250,000 via program banks",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Airwallex",
+          "domain": "airwallex.com",
+          "url": "https://www.airwallex.com/us",
+          "values": [
+            "Airwallex business account",
+            "$0",
+            "None",
+            "Not published",
+            "Not an FDIC bank; payment services via Evolve Bank & Trust, Member FDIC",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Ascend Bank",
+          "domain": "ascend.bank",
+          "url": "https://ascend.bank",
+          "values": [
+            "Business Checking",
+            "$0 (no monthly service fee)",
+            "None",
+            "Not published",
+            "Member FDIC (stated on site)",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Greater Alliance Federal Credit Union",
+          "domain": "greateralliance.org",
+          "url": "https://greateralliance.org",
+          "values": [
+            "Business Checking",
+            "No monthly maintenance charge",
+            "No minimum deposit requirement stated",
+            "Not published",
+            "N/A (credit union; NCUA coverage not detailed)",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "TowneBank",
+          "domain": "townebank.com",
+          "url": "https://www.townebank.com/business/business-checking/",
+          "values": [
+            "Value Classic business checking",
+            "$20 unless $3,000 daily balance kept",
+            "$100 to open; $3,000 daily balance waives fee",
+            "Not published",
+            "Not published",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Square Checking",
+          "domain": "squareup.com",
+          "url": "https://squareup.com/us/en/banking/checking",
+          "values": [
+            "Square Checking",
+            "$0",
+            "None",
+            "Not published",
+            "Pass-through up to $250,000 via Sutton Bank, Member FDIC",
+            "Not published"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "best-mileage-tracker-apps": {
+      "domains": {
+        "TripLog": "triplog.net",
+        "MileIQ": "mileiq.com",
+        "Everlance": "everlance.com",
+        "Hurdlr": "hurdlr.com",
+        "QuickBooks Solopreneur": "quickbooks.intuit.com",
+        "Stride": "stridehealth.com"
+      },
+      "added": [
+        {
+          "name": "MileageWise",
+          "domain": "mileagewise.com",
+          "url": "https://www.mileagewise.com",
+          "values": [
+            "Free trial; length not published",
+            "Not published",
+            "Yes",
+            "Google Maps Timeline import; rebuilds past mileage logs"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Motus",
+          "domain": "motus.com",
+          "url": "https://www.motus.com",
+          "values": [
+            "Not published",
+            "Not published; quote via demo request",
+            "Yes",
+            "Driver reimbursement for company fleets and employees"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Timeero",
+          "domain": "timeero.com",
+          "url": "https://timeero.com",
+          "values": [
+            "14-day trial, no card needed",
+            "$5-$12 per user per month by plan",
+            "GPS mileage in all plans; Segmented Tracking add-on from $5/user/month",
+            "Time tracking, scheduling, geofencing, payroll integrations"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Cardata",
+          "domain": "cardata.co",
+          "url": "https://cardata.co",
+          "values": [
+            "Not published",
+            "Per-user yearly subscription; custom quote",
+            "Yes",
+            "Company driver reimbursement programs, insurance checks, driver payments"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "ExpenseTron",
+          "domain": "expensetron.com",
+          "url": "https://expensetron.com",
+          "values": [
+            "14-day trial, no card needed",
+            "Not published",
+            "Not published",
+            "Expense approvals and reimbursement inside Slack and Teams"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Milelify",
+          "domain": "milelify.com",
+          "url": "https://milelify.com",
+          "values": [
+            "Milelify",
+            "Free: up to 30 trips/month, GPS tracking",
+            "$69.99/yr or $6.99/mo",
+            "No, trips start and stop manually",
+            "Reimbursement calculator, PDF and CSV reports, web dashboard"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "best-accounting-software-for-freelancers": {
+      "domains": {
+        "Wave": "waveapps.com",
+        "Zoho Invoice": "zoho.com",
+        "QuickBooks Solopreneur": "quickbooks.intuit.com",
+        "FreshBooks": "freshbooks.com",
+        "Bonsai": "hellobonsai.com"
+      },
+      "added": [
+        {
+          "name": "Tabby",
+          "domain": "usetabby.com",
+          "url": "https://usetabby.com",
+          "values": [
+            "Tabby",
+            "Free; paid from $30/mo",
+            "Not published (caps on expenses and bank connections)",
+            "Free: 5 invoices/month; paid: unlimited",
+            "Self-employed people wanting AI-assisted bookkeeping and quarterly tax estimates"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Xero",
+          "domain": "xero.com",
+          "url": "https://www.xero.com/us/",
+          "values": [
+            "Xero",
+            "Early $27/mo regular price (intro discount first 3 months)",
+            "Not published",
+            "Early plan: 20 invoices; higher plans not stated",
+            "Self-employed people wanting full accounting software with bank feeds"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Collective",
+          "domain": "collective.com",
+          "url": "https://collective.com",
+          "values": [
+            "Collective",
+            "Not published",
+            "Not published",
+            "Included invoicing product",
+            "Solo business owners wanting formation, accounting and tax support in one membership"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "RemoteBooksOnline",
+          "domain": "remotebooksonline.com",
+          "url": "https://remotebooksonline.com",
+          "values": [
+            "RemoteBooksOnline",
+            "From $150/mo, software subscription included",
+            "Not published",
+            "Not published",
+            "Owners who want a dedicated bookkeeper instead of doing the books themselves"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Tailor Brands",
+          "domain": "tailorbrands.com",
+          "url": "https://www.tailorbrands.com",
+          "values": [
+            "Tailor Brands",
+            "Lite $0; Essential $199/yr, plus state fees",
+            "Not published",
+            "Sales and payments tool with invoices on all plans",
+            "New solo businesses bundling formation with bookkeeping and invoicing"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Compass Finance",
+          "domain": "compassfinance.pro",
+          "url": "https://compassfinance.pro",
+          "values": [
+            "Compass Finance",
+            "$79/mo or $649/yr, 7-day free trial",
+            "Not published",
+            "Not published",
+            "Owners wanting a subscription bookkeeping service"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Beam Financial Group",
+          "domain": "beamfinancialgroup.com",
+          "url": "https://beamfinancialgroup.com",
+          "values": [
+            "Beam Financial Group",
+            "Not published",
+            "Not published",
+            "Not published",
+            "Creatives and small owners wanting QuickBooks setup courses or consulting"
+          ],
+          "added": "2026-10-16"
+        },
+        {
+          "name": "Sphere",
+          "domain": "usesphereapps.com",
+          "url": "https://usesphereapps.com",
+          "values": [
+            "Sphere",
+            "Free; Basic $25/mo",
+            "Not published",
+            "Free: 5 invoices/month; Basic: unlimited, Stripe payments",
+            "Freelancers wanting invoicing with real-time profit and loss reports"
+          ],
+          "added": "2026-10-16"
+        }
+      ]
+    },
+    "best-invoicing-apps-for-freelancers": {
+      "domains": {
+        "Zoho Invoice": "zoho.com",
+        "Wave": "waveapps.com",
+        "FreshBooks": "freshbooks.com",
+        "Bonsai": "hellobonsai.com",
+        "QuickBooks Solopreneur": "quickbooks.intuit.com"
+      },
+      "added": [
+        {
+          "name": "Billbooks",
+          "domain": "billbooks.com",
+          "url": "https://billbooks.com",
+          "values": [
+            "$7.95/month flat price; 30-day free trial",
+            "Yes, on every plan",
+            "Not published; connect own gateway such as Stripe or PayPal",
+            "Freelancers and small businesses sending invoices and quotes"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "InvoiceZap",
+          "domain": "invoicezap.app",
+          "url": "https://invoicezap.app",
+          "values": [
+            "Free to try; no monthly fees stated",
+            "Not published",
+            "Not published",
+            "Freelancers and trades invoicing from iPhone, iPad or Mac"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Billdu",
+          "domain": "billdu.com",
+          "url": "https://billdu.com",
+          "values": [
+            "From $4.99/month; Standard $9.99; Premium $19.99; 7-day trial",
+            "Yes, for upcoming, due and late payments",
+            "Not published; Stripe and PayPal connect, their fees apply",
+            "Small businesses, trades and freelancers"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "InvoiceCue",
+          "domain": "invoicecue.com",
+          "url": "https://invoicecue.com",
+          "values": [
+            "Free to start; paid prices not published",
+            "Yes, automated payment reminders",
+            "Not published",
+            "Freelancers and contractors invoicing from a phone"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Invoice Ninja",
+          "domain": "invoiceninja.com",
+          "url": "https://invoiceninja.com",
+          "values": [
+            "Free for 5 clients; Pro $14/month or $140/year",
+            "Pro and higher only",
+            "Not published; gateway fees apply (Stripe, PayPal, Square)",
+            "Freelancers wanting a free or open-source invoicing option"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Bookipi",
+          "domain": "bookipi.com",
+          "url": "https://bookipi.com",
+          "values": [
+            "Free, 3 invoices/month; Starter $9.99/month; Professional $52/month",
+            "Yes, automatic overdue reminders on all plans",
+            "Not published on page; card fees listed by country",
+            "Freelancers and small businesses sending a few invoices monthly"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Invoice2go",
+          "domain": "invoice.2go.com",
+          "url": "https://invoice.2go.com",
+          "values": [
+            "Not published",
+            "Yes, on all plans",
+            "Card 2.9% to 3.5% by plan; PayPal 2.9% + 30 cents",
+            "Small businesses and side hustlers"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Invoisseur",
+          "domain": "invoisseur.com",
+          "url": "https://invoisseur.com",
+          "values": [
+            "Free; Pro $7.49/month",
+            "Not published",
+            "Not published; accepts major cards and PayPal",
+            "Freelancers starting out with simple invoices"
+          ],
+          "added": "2026-10-15"
+        },
+        {
+          "name": "Invoice Maker",
+          "domain": "invoicemaker.com",
+          "url": "https://invoicemaker.com",
+          "values": [
+            "Free app; paid plan prices not published",
+            "Not published",
+            "Not published",
+            "Freelancers and trades creating invoices from a phone"
+          ],
+          "added": "2026-10-15"
+        }
+      ]
     }
-   ]
-  },
-  "best-mortgage-lenders": {
-   "domains": {
-    "Rocket Mortgage": "rocketmortgage.com",
-    "Better Mortgage": "better.com",
-    "Chase Mortgage": "chase.com",
-    "LoanDepot": "loandepot.com",
-    "Veterans United": "veteransunited.com",
-    "PNC Bank": "pnc.com",
-    "U.S. Bank": "usbank.com",
-    "Guild Mortgage": "guildmortgage.com"
-   },
-   "added": [
-    {
-     "name": "Loandrone",
-     "domain": "loandrone.com",
-     "url": "https://loandrone.com",
-     "values": [
-      "Purchase and refinance borrowers in 43 states",
-      "Yes, VA cash-out refinance up to 100% of value",
-      "Not published",
-      "Not published",
-      "Rate check with no credit pull"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "The Home Loan Expert",
-     "domain": "thehomeloanexpert.com",
-     "url": "https://thehomeloanexpert.com",
-     "values": [
-      "Purchase and refinance borrowers",
-      "Yes, has VA specialists",
-      "Not published",
-      "Not published",
-      "Closing in as little as 14 days"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-ira-accounts": {
-   "domains": {
-    "Fidelity": "fidelity.com",
-    "Charles Schwab": "schwab.com",
-    "Vanguard": "vanguard.com",
-    "Betterment": "betterment.com",
-    "E*TRADE": "etrade.com",
-    "Wealthfront": "wealthfront.com",
-    "Merrill Edge": "merrilledge.com"
-   },
-   "added": [
-    {
-     "name": "Wells Fargo Advisors",
-     "domain": "wellsfargoadvisors.com",
-     "url": "https://www.wellsfargoadvisors.com",
-     "values": [
-      "Not published ($49.95 fee to close an IRA)",
-      "$500 for Intuitive Investor; WellsTrade not published",
-      "Intuitive Investor",
-      "0.35%/yr; 0.25% to 0.30% with linked checking",
-      "Clients choosing self-directed, advisor-led or automated IRAs"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "MissionSquare",
-     "domain": "missionsquare.com",
-     "url": "https://www.missionsquare.com",
-     "values": [
-      "Not published",
-      "No minimum for self-directed brokerage accounts",
-      "Managed account with an investment adviser",
-      "Not published",
-      "Anyone with earned income opening a traditional or Roth IRA"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Regions Bank",
-     "domain": "regions.com",
-     "url": "https://www.regions.com",
-     "values": [
-      "Not published",
-      "$250 fixed-rate IRA; $50 money market IRA",
-      "InvestPath",
-      "Not published",
-      "Bank customers wanting CD, money market or managed IRAs"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-investment-apps-for-beginners": {
-   "domains": {
-    "Fidelity": "fidelity.com",
-    "Charles Schwab": "schwab.com",
-    "Robinhood": "robinhood.com",
-    "Betterment": "betterment.com",
-    "Acorns": "acorns.com",
-    "Public": "public.com",
-    "SoFi Invest": "sofi.com"
-   },
-   "added": []
-  },
-  "best-money-market-accounts": {
-   "domains": {
-    "UFB Direct": "ufbdirect.com",
-    "Sallie Mae": "salliemae.com",
-    "Discover": "discover.com",
-    "Ally Bank": "ally.com",
-    "CIT Platinum Savings": "cit.com",
-    "Vanguard VMFXX": "vanguard.com",
-    "TIAA Bank": "everbank.com"
-   },
-   "added": [
-    {
-     "name": "Citizens",
-     "domain": "citizensbank.com",
-     "url": "https://www.citizensbank.com",
-     "values": [
-      "Not published",
-      "Not published",
-      "Not published",
-      "Not published",
-      "Not published"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Bank Five Nine",
-     "domain": "bankfivenine.com",
-     "url": "https://bankfivenine.com",
-     "values": [
-      "First Rate 0.04%-0.30%; Relationship up to 3.00% intro, as of Oct 2026",
-      "Not published",
-      "$2,500 to open First Rate; $15,000 to open Relationship",
-      "Yes (Member FDIC)",
-      "Not published"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Huntington",
-     "domain": "huntington.com",
-     "url": "https://www.huntington.com",
-     "values": [
-      "Not published",
-      "Not published",
-      "Not published",
-      "Not published",
-      "Not published"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Institution for Savings",
-     "domain": "institutionforsavings.com",
-     "url": "https://institutionforsavings.com",
-     "values": [
-      "0.10%-3.25% by account tier, as of Oct 2026",
-      "$5 to $10 by account, waivable with balance",
-      "$1,000 to waive fee on Traditional",
-      "Yes",
-      "ATM/debit card"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-budgeting-apps-for-couples": {
-   "domains": {
-    "YNAB": "ynab.com",
-    "Monarch Money": "monarch.com",
-    "Honeydue": "honeydue.com",
-    "Copilot": "copilot.money",
-    "Simplifi": "simplifimoney.com",
-    "EveryDollar": "everydollar.com",
-    "Goodbudget": "goodbudget.com"
-   },
-   "added": []
-  },
-  "best-401k-providers-for-small-business": {
-   "domains": {
-    "Guideline": "guideline.com",
-    "Human Interest": "humaninterest.com",
-    "ADP": "adp.com",
-    "Paychex": "paychex.com",
-    "Fidelity Solo 401(k)": "fidelity.com",
-    "Vanguard Solo 401(k)": "vanguard.com",
-    "ShareBuilder 401k": "sharebuilder401k.com"
-   },
-   "added": []
-  },
-  "best-net-worth-tracker": {
-   "domains": {
-    "Empower": "empower.com",
-    "Copilot": "copilot.money",
-    "YNAB": "ynab.com",
-    "Quicken Classic": "quicken.com",
-    "Boldin": "boldin.com",
-    "Tiller": "tiller.com",
-    "Credit Karma": "creditkarma.com"
-   },
-   "added": [
-    {
-     "name": "Know Your Dosh",
-     "domain": "knowyourdosh.com",
-     "url": "https://knowyourdosh.com",
-     "values": [
-      "Free; paid £4.99 to £14.99/month per household",
-      "Tracks stocks, crypto, ISAs and investments; no analysis tools listed",
-      "Yes, properties and rental management",
-      "Not published",
-      "Households and families tracking shared wealth, multi-currency on Pro"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Origin Financial",
-     "domain": "useorigin.com",
-     "url": "https://useorigin.com",
-     "values": [
-      "$99/year list price; $1 first-year offer shown",
-      "Portfolio and performance tracking in one view",
-      "Not published",
-      "Forecasting tool; no dedicated retirement planner listed",
-      "People wanting budgeting, investing and tracking in one app"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Finman",
-     "domain": "finman.money",
-     "url": "https://finman.money",
-     "values": [
-      "Free; Pro $9.99/month; Family $19.99/month",
-      "Investment tracker for stocks, ETFs, crypto with live prices",
-      "Not published",
-      "Not published",
-      "Individuals and households wanting AI budgeting and tracking"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Worthy",
-     "domain": "joinworthyapp.com",
-     "url": "https://joinworthyapp.com",
-     "values": [
-      "$16.99 one-time, no subscription",
-      "Stocks, crypto and metals update automatically; prices 15 minutes delayed",
-      "Yes, real estate and vehicles with loan paydown",
-      "FIRE projections, FI number, and retirement account types",
-      "Privacy-minded users who skip bank linking"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Worthmap",
-     "domain": "worthmap.com",
-     "url": "https://worthmap.com",
-     "values": [
-      "Free plan in beta; paid plans not yet available",
-      "Tracks stocks, crypto, dividends; free investing calculators",
-      "Real estate can be added as an asset",
-      "No dedicated planner; FIRE and compound interest calculators",
-      "People with money in several currencies, such as expats"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Hoxton Wealth",
-     "domain": "hoxtonwealth.com",
-     "url": "https://hoxtonwealth.com",
-     "values": [
-      "Not published",
-      "Market tracker and account connection in app",
-      "Not published",
-      "WealthFlow scenario modelling; advisers available",
-      "Clients of the firm's advisory service"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Moneko",
-     "domain": "moneko.io",
-     "url": "https://moneko.io",
-     "values": [
-      "Free; Plus $79.99/year or $99.99 lifetime",
-      "Not published",
-      "Not published",
-      "Not published",
-      "Everyday spending logging, shared budgets and net worth view"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Worth it",
-     "domain": "getworthit.com",
-     "url": "https://getworthit.com",
-     "values": [
-      "Free on iOS, Mac and Android",
-      "Manual entry of investment balances",
-      "Manual entry of real estate values",
-      "Not published",
-      "Monthly manual check-in without bank linking"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Wealthfolio",
-     "domain": "wealthfolio.app",
-     "url": "https://wealthfolio.app",
-     "values": [
-      "Free open source; optional Connect subscription",
-      "Allocation, benchmark comparison, dividend tracking, rebalance plan",
-      "Not published",
-      "Retirement and FIRE planner with Monte Carlo simulation",
-      "Users wanting data kept on their own devices"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-tax-relief-companies": {
-   "domains": {
-    "Precision Tax Relief": "precisiontax.com",
-    "Community Tax": "communitytax.com",
-    "Larson Tax Relief": "larsontaxrelief.com",
-    "Fortress Tax Relief": "fortresstaxrelief.com",
-    "Anthem Tax Services": "anthemtaxservices.com",
-    "Optima Tax Relief": "optimataxrelief.com"
-   },
-   "added": [
-    {
-     "name": "Omni Tax Help",
-     "domain": "omnitaxhelp.com",
-     "url": "https://omnitaxhelp.com",
-     "values": [
-      "Not published",
-      "Tax analysts, attorneys and enrolled agents",
-      "Not published; free consultation offered",
-      "25+ years, per its site",
-      "Not published"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Tax Experts of OC",
-     "domain": "taxexpertsofoc.com",
-     "url": "https://taxexpertsofoc.com",
-     "values": [
-      "Not published",
-      "CPA and enrolled agent",
-      "Not published; quoted after free consultation",
-      "Not published",
-      "Not published"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Tax Response Center",
-     "domain": "taxresponsecenter.com",
-     "url": "https://taxresponsecenter.com",
-     "values": [
-      "Not published",
-      "Not published",
-      "Not published",
-      "Not published",
-      "Not published"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Brightside Tax Relief",
-     "domain": "brightsidetaxrelief.com",
-     "url": "https://brightsidetaxrelief.com",
-     "values": [
-      "Not published",
-      "Licensed tax attorneys",
-      "Flat fee, amounts not published; free consultation",
-      "Not published",
-      "Not published"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Tax Hardship Center",
-     "domain": "taxhardshipcenter.com",
-     "url": "https://taxhardshipcenter.com",
-     "values": [
-      "Not published",
-      "Enrolled agents, CPAs and attorneys",
-      "Not published; free consultation",
-      "Site states both 14+ and 20+ years",
-      "BBB Accredited, per its site"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-online-will-makers": {
-   "domains": {
-    "Trust & Will": "trustandwill.com",
-    "FreeWill": "freewill.com",
-    "LegalZoom": "legalzoom.com",
-    "Nolo WillMaker": "nolo.com",
-    "Mama Bear": "mamabearlegalforms.com",
-    "Rocket Lawyer": "rocketlawyer.com"
-   },
-   "added": [
-    {
-     "name": "WillMaker",
-     "domain": "willmaker.com",
-     "url": "https://willmaker.com",
-     "values": [
-      "$109 Starter (will, health care directive)",
-      "Not published",
-      "$149 Plus; $219 All Access",
-      "Plus and All Access; Starter has health care directive only",
-      "Not offered; not available in Louisiana"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "CompleteMyEstatePlan",
-     "domain": "completemyestateplan.com",
-     "url": "https://completemyestateplan.com",
-     "values": [
-      "$99",
-      "$149",
-      "$349 single / $449 couple",
-      "Yes",
-      "Not offered"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Do Your Own Will Online",
-     "domain": "doyourownwill.com",
-     "url": "https://doyourownwill.com",
-     "values": [
-      "$0",
-      "Not published",
-      "N/A",
-      "No; living will and power of attorney are separate documents",
-      "Not offered"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Neptune",
-     "domain": "meetneptune.com",
-     "url": "https://meetneptune.com",
-     "values": [
-      "Not published; pour-over will in $3,000 plan",
-      "Not published",
-      "$3,000 flat plan includes revocable living trust",
-      "Yes, in $3,000 flat plan",
-      "Independent attorneys; free initial consultation"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-living-trust-services": {
-   "domains": {
-    "Trust & Will": "trustandwill.com",
-    "LegalZoom Living Trust": "legalzoom.com",
-    "Nolo WillMaker Plus": "nolo.com"
-   },
-   "added": [
-    {
-     "name": "Affordable Living Trusts",
-     "domain": "affordablelivingtrusts.com",
-     "url": "https://affordablelivingtrusts.com",
-     "values": [
-      "Starting at $499",
-      "Yes",
-      "Funding instructions and video guidance",
-      "Not published",
-      "Not stated"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "The Trust Pros",
-     "domain": "thetrustpros.com",
-     "url": "https://thetrustpros.com",
-     "values": [
-      "Not published",
-      "Not published",
-      "Not published",
-      "Not published",
-      "Attorney reviews all living trusts"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Blade Law Offices",
-     "domain": "bladeoffices.com",
-     "url": "https://bladeoffices.com",
-     "values": [
-      "Not published",
-      "Not published",
-      "Not published",
-      "Not published",
-      "Not stated"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Salvo Law",
-     "domain": "salvolaw.com",
-     "url": "https://salvolaw.com",
-     "values": [
-      "Not published",
-      "Not published",
-      "Not published",
-      "Not published",
-      "Law firm; offers trust creation"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "McKenzie Legal",
-     "domain": "thomasmckenzielaw.com",
-     "url": "https://thomasmckenzielaw.com",
-     "values": [
-      "Not published",
-      "Not published",
-      "Title transfer to trust described; fee not published",
-      "Not published",
-      "Yes, each living trust drafted by the attorney"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Living Trust Attorneys",
-     "domain": "livingtrust-attorneys.com",
-     "url": "https://livingtrust-attorneys.com",
-     "values": [
-      "$575 single; $675 joint",
-      "Yes",
-      "Trust transfer deed and PCOR included",
-      "Yes, quote by phone",
-      "Yes, California attorney"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Thrift Legal",
-     "domain": "thriftlegal.com",
-     "url": "https://thriftlegal.com",
-     "values": [
-      "Not published; hourly, flat-fee or contingency billing",
-      "Not published",
-      "Not published",
-      "Not published",
-      "Not stated"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "For Living Trust",
-     "domain": "forlivingtrust.com",
-     "url": "https://forlivingtrust.com",
-     "values": [
-      "Not published",
-      "Not published",
-      "Not published",
-      "Not published",
-      "Attorney-led firm; responsible attorney named"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Living Trust California",
-     "domain": "livingtrustcalifornia.com",
-     "url": "https://livingtrustcalifornia.com",
-     "values": [
-      "$400 single; $500 joint",
-      "Yes",
-      "Funding instructions; deed transfer $100 per property",
-      "Not published",
-      "Yes, attorney-reviewed; California residents only"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-estate-planning-software": {
-   "domains": {
-    "Trust & Will": "trustandwill.com",
-    "LegalZoom": "legalzoom.com",
-    "Killswitch": "killswitch.rip",
-    "FreeWill": "freewill.com",
-    "Nolo WillMaker Plus": "nolo.com",
-    "Mama Bear": "mamabearlegalforms.com",
-    "Rocket Lawyer": "rocketlawyer.com"
-   },
-   "added": []
-  },
-  "best-budgeting-apps": {
-   "domains": {
-    "YNAB": "ynab.com",
-    "Monarch Money": "monarch.com",
-    "Rocket Money": "rocketmoney.com",
-    "PocketGuard": "pocketguard.com",
-    "Copilot": "copilot.money",
-    "EveryDollar": "everydollar.com",
-    "Goodbudget": "goodbudget.com"
-   },
-   "added": []
-  },
-  "best-brokers-for-treasury-bonds": {
-   "domains": {
-    "Fidelity": "fidelity.com",
-    "Charles Schwab": "schwab.com",
-    "Vanguard": "vanguard.com",
-    "Edward Jones": "edwardjones.com"
-   },
-   "added": []
-  },
-  "best-brokerage-accounts-for-interest-on-cash": {
-   "domains": {
-    "Fidelity": "fidelity.com",
-    "Vanguard": "vanguard.com",
-    "Robinhood": "robinhood.com",
-    "Webull": "webull.com",
-    "Public": "public.com",
-    "Moomoo": "moomoo.com",
-    "M1": "m1.com"
-   },
-   "added": []
-  },
-  "best-high-yield-savings-accounts": {
-   "domains": {
-    "Ally Bank": "ally.com",
-    "Marcus by Goldman Sachs": "marcus.com",
-    "SoFi": "sofi.com",
-    "Discover": "discover.com",
-    "American Express": "americanexpress.com",
-    "Capital One": "capitalone.com",
-    "Synchrony Bank": "synchrony.com",
-    "Wealthfront": "wealthfront.com",
-    "Navy Federal Credit Union": "navyfederal.org",
-    "PenFed Credit Union": "penfed.org"
-   },
-   "added": []
-  },
-  "best-robo-advisors": {
-   "domains": {
-    "Wealthfront": "wealthfront.com",
-    "Betterment": "betterment.com",
-    "Schwab Intelligent Portfolios": "schwab.com",
-    "Fidelity Go": "fidelity.com",
-    "Vanguard Digital Advisor": "vanguard.com",
-    "E*TRADE Core Portfolios": "etrade.com",
-    "Acorns": "acorns.com"
-   },
-   "added": [
-    {
-     "name": "Vanguard",
-     "domain": "investor.vanguard.com",
-     "url": "https://investor.vanguard.com",
-     "values": [
-      "Up to $20 per $10,000 yearly after first 90 days as of Oct 2026",
-      "$100",
-      "Not published",
-      "Not published",
-      "Not published"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-credit-cards-for-fair-credit": {
-   "domains": {
-    "Capital One Platinum": "capitalone.com",
-    "Discover it Secured": "discover.com",
-    "Petal 2": "petalcard.com",
-    "Capital One QuicksilverOne": "capitalone.com",
-    "Chime Card": "chime.com",
-    "OpenSky Secured Visa": "openskycc.com"
-   },
-   "added": []
-  },
-  "best-custodial-roth-ira-providers": {
-   "domains": {
-    "Fidelity": "fidelity.com",
-    "Charles Schwab": "schwab.com",
-    "Vanguard": "vanguard.com",
-    "E*TRADE": "etrade.com"
-   },
-   "added": []
-  },
-  "best-balance-transfer-credit-cards": {
-   "domains": {
-    "Citi Simplicity": "citi.com",
-    "Wells Fargo Reflect": "wellsfargo.com",
-    "Chase Slate Edge": "chase.com",
-    "Discover it Cash Back": "discover.com",
-    "BankAmericard": "bankofamerica.com",
-    "U.S. Bank Shield Visa": "usbank.com"
-   },
-   "added": []
-  },
-  "personal-loan-rates-by-lender": {
-   "domains": {
-    "Discover": "discover.com",
-    "SoFi": "sofi.com",
-    "Wells Fargo": "wellsfargo.com",
-    "PNC": "pnc.com",
-    "US Bank": "usbank.com",
-    "Navy Federal": "navyfederal.org",
-    "PenFed": "penfed.org"
-   },
-   "added": [
-    {
-     "name": "OppLoans",
-     "domain": "opploans.com",
-     "url": "https://opploans.com",
-     "values": [
-      "Borrowers with bad or no credit",
-      "$500 to $5,000, varies by state",
-      "Maximum APR 195%; range by state not published",
-      "No origination or prepayment fee on installment loans; 10% fee on credit line draws",
-      "Same day if approved before noon CT"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-student-loans-bad-credit": {
-   "domains": {
-    "Ascent Non-Cosigned Outcomes-Based Loan": "ascentfunding.com",
-    "Funding U": "funding-u.com",
-    "MPOWER Financing": "mpowerfinancing.com",
-    "Edly": "edly.co",
-    "Prodigy Finance": "prodigyfinance.com"
-   },
-   "added": [
-    {
-     "name": "Abe Student Loans",
-     "domain": "abestudentloans.com",
-     "url": "https://abestudentloans.com",
-     "values": [
-      "Undergrad, grad and professional students, including DACA and international with cosigner",
-      "Soft inquiry to estimate rates",
-      "Optional; release after 12 on-time payments",
-      "Undergrad fixed 2.08% to 16.58% APR as of Oct 2026",
-      "No application, origination or late fees; terms of 5 to 20 years"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-student-loan-refinance": {
-   "domains": {
-    "SoFi": "sofi.com",
-    "Earnest": "earnest.com",
-    "ELFI": "elfi.com",
-    "Splash Financial": "splashfinancial.com",
-    "College Ave": "collegeave.com",
-    "Laurel Road": "laurelroad.com",
-    "RISLA": "risla.com"
-   },
-   "added": [
-    {
-     "name": "MEFA REFI",
-     "domain": "mefa.org",
-     "url": "https://mefa.org",
-     "values": [
-      "Refinancing existing education loans",
-      "3.95% APR starting rate, as of Oct 2026",
-      "Not published",
-      "Not published",
-      "Rate check without affecting credit score"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "KeyBank",
-     "domain": "key.com",
-     "url": "https://www.key.com/personal/student-loans/student-loan-refinancing.html",
-     "values": [
-      "Bank-backed refinance (formerly Laurel Road)",
-      "Not published",
-      "Not published",
-      "No origination fee or prepayment penalty",
-      "Rate check with no hard credit pull"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "LendKey",
-     "domain": "lendkey.com",
-     "url": "https://lendkey.com",
-     "values": [
-      "Matching with partner credit unions and banks",
-      "Not published",
-      "Not published",
-      "Not published",
-      "One application across partner lenders"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-secured-credit-cards": {
-   "domains": {
-    "Capital One Platinum Secured": "capitalone.com",
-    "Discover it Secured": "discover.com",
-    "Citi Secured Mastercard": "citi.com",
-    "Self Visa": "self.inc",
-    "U.S. Bank Secured Visa": "usbank.com"
-   },
-   "added": [
-    {
-     "name": "Armed Forces Bank",
-     "domain": "afbank.com",
-     "url": "https://www.afbank.com",
-     "values": [
-      "$300 to $3,000",
-      "Yes",
-      "Not published",
-      "None",
-      "Not published (subject to credit approval)"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Market USA FCU",
-     "domain": "marketusafcu.com",
-     "url": "https://www.marketusafcu.com",
-     "values": [
-      "$200 to $5,000 line, secured by savings",
-      "Not published",
-      "Not published",
-      "None",
-      "Not published"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Truist",
-     "domain": "truist.com",
-     "url": "https://www.truist.com",
-     "values": [
-      "$400 minimum, up to approved credit limit",
-      "Yes",
-      "3% gas/EV, 2% groceries/utilities, 1% other",
-      "$0",
-      "Not published (credit report checked)"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-travel-credit-cards": {
-   "domains": {
-    "Chase Sapphire Preferred®": "chase.com",
-    "Chase Sapphire Reserve®": "chase.com",
-    "Capital One Venture Rewards": "capitalone.com",
-    "Capital One VentureOne": "capitalone.com",
-    "Bank of America Travel Rewards": "bankofamerica.com",
-    "Discover it Miles": "discover.com"
-   },
-   "added": [
-    {
-     "name": "Chase",
-     "domain": "creditcards.chase.com",
-     "url": "https://creditcards.chase.com",
-     "values": [
-      "$0 to $795 by card",
-      "Sapphire Preferred 2x other travel, 5x Chase Travel; co-brand cards earn bonus per brand",
-      "Not published",
-      "Travelers choosing airline, hotel or Sapphire cards from one issuer"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-cash-back-credit-cards": {
-   "domains": {
-    "Citi Double Cash Card": "citi.com",
-    "Chase Freedom Unlimited": "chase.com",
-    "Wells Fargo Active Cash": "wellsfargo.com",
-    "Discover it Cash Back": "discover.com",
-    "Capital One SavorOne": "capitalone.com",
-    "Blue Cash Everyday": "americanexpress.com"
-   },
-   "added": []
-  },
-  "best-student-credit-cards": {
-   "domains": {
-    "Discover it® Student Cash Back": "discover.com",
-    "Capital One Savor Rewards for Students": "capitalone.com",
-    "Capital One Quicksilver Rewards for Students": "capitalone.com",
-    "Chase Freedom Rise℠": "chase.com",
-    "Bank of America® Travel Rewards for Students": "bankofamerica.com",
-    "Bank of America® Customized Cash Rewards for Students": "bankofamerica.com"
-   },
-   "added": []
-  },
-  "best-portfolio-backtesting-and-analysis-tools": {
-   "domains": {
-    "Portfolio Visualizer": "portfoliovisualizer.com",
-    "Portfolio Charts": "portfoliocharts.com",
-    "Fidelity Full View": "fidelity.com",
-    "Vanguard Portfolio Watch": "vanguard.com",
-    "Schwab Portfolio Checkup": "schwab.com",
-    "Questrade": "questrade.com"
-   },
-   "added": [
-    {
-     "name": "testfolio",
-     "domain": "testfol.io",
-     "url": "https://testfol.io",
-     "values": [
-      "Yes, ETF and asset allocation backtests",
-      "Not published",
-      "ETF backtests with rebalancing and cashflows"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Awalyt",
-     "domain": "awalyt.com",
-     "url": "https://awalyt.com",
-     "values": [
-      "Yes, daily price data; sample covers 2012 to 2026",
-      "Yes; free plan, no card",
-      "Testing strategies and checking diversification before investing"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "PortfolioMetrics",
-     "domain": "portfoliometrics.net",
-     "url": "https://portfoliometrics.net",
-     "values": [
-      "Yes, up to 40 years of price history",
-      "Free sign-up offered; core features free",
-      "Backtesting, optimization and Monte Carlo with AI assistant"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Diversiview",
-     "domain": "diversiview.online",
-     "url": "https://diversiview.online",
-     "values": [
-      "Yes, past three years per its description",
-      "Not published",
-      "Retail investors and professionals optimizing asset allocation"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Guardfolio",
-     "domain": "guardfolio.ai",
-     "url": "https://guardfolio.ai",
-     "values": [
-      "Yes, 5-year backtest on Guardian Pro",
-      "Yes; sign-up to connect brokers",
-      "Tracking risk and ETF overlap across multiple accounts"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Portfolio Performance",
-     "domain": "portfolio-performance.info",
-     "url": "https://portfolio-performance.info",
-     "values": [
-      "No, tracks actual performance and rebalancing",
-      "Not published",
-      "Consolidating performance across several accounts; open source desktop app"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-merchant-cash-advance-companies": {
-   "domains": {
-    "Rapid Finance": "rapidfinance.com",
-    "Credibly": "credibly.com",
-    "Fora Financial": "forafinancial.com",
-    "National Funding": "nationalfunding.com",
-    "Expansion Capital Group": "ecg.com",
-    "OnDeck": "ondeck.com",
-    "Kabbage (Amex Business Blueprint)": "americanexpress.com",
-    "Kapitus": "kapitus.com",
-    "Kalamata Capital Group": "kalamatacapitalgroup.com",
-    "Headway Capital": "headwaycapital.com",
-    "Can Capital": "cancapital.com"
-   },
-   "added": [
-    {
-     "name": "GoKapital",
-     "domain": "gokapital.com",
-     "url": "https://gokapital.com",
-     "values": [
-      "MCA, lines of credit, SBA, equipment loans",
-      "Working capital $20,000–$50,000,000",
-      "MCA funding in 24 hours or less",
-      "No minimum credit score stated; $30,000+/mo revenue"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Greenbox Capital",
-     "domain": "greenboxcapital.com",
-     "url": "https://www.greenboxcapital.com/",
-     "values": [
-      "MCA, factoring, line of credit, loans",
-      "$3,000–$500,000",
-      "As fast as 1 business day",
-      "500 FICO, 5 mo., $10k/mo"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Sunwise Capital",
-     "domain": "sunwisecapital.com",
-     "url": "https://sunwisecapital.com",
-     "values": [
-      "Unsecured loans, MCA, equipment financing",
-      "Unsecured $10,000–$2M",
-      "As fast as 4 hrs",
-      "500 FICO, 12 mo., $25k/mo"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Alternative Funding Group",
-     "domain": "altfunding.com",
-     "url": "https://altfunding.com",
-     "values": [
-      "Working capital, SBA, factoring, equipment",
-      "Not published",
-      "Same day if qualified",
-      "Not published"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "JSV Capital",
-     "domain": "jsvcapital.com",
-     "url": "https://jsvcapital.com",
-     "values": [
-      "MCA, loans, line of credit, equipment",
-      "$10,000–$1,000,000",
-      "As fast as 1 business day",
-      "Not published"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "MCA Advance",
-     "domain": "mcashadvance.com",
-     "url": "https://mcashadvance.com",
-     "values": [
-      "MCA, factor rates 1.1–1.5",
-      "$5,000–$900,000",
-      "1–3 days average",
-      "6 mo.; $7,500–$8,000/mo; 500–550 FICO"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "United Banc Card of TN",
-     "domain": "unitedbanccardoftn.com",
-     "url": "https://unitedbanccardoftn.com",
-     "values": [
-      "Card processing, POS, MCA",
-      "Not published",
-      "Not published",
-      "Not published"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Biz2Credit",
-     "domain": "biz2credit.com",
-     "url": "https://biz2credit.com",
-     "values": [
-      "Term loan, revenue-based financing, line of credit",
-      "$25K–$2M+",
-      "Decision as fast as 24 hrs",
-      "Term loan: 650 FICO, $100k revenue"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Merchant Fund Express",
-     "domain": "mfebusinessloans.com",
-     "url": "https://mfebusinessloans.com",
-     "values": [
-      "Working capital, line of credit, MCA refinance",
-      "$5,000–$5,000,000",
-      "Same-day decision, next-day funding",
-      "Not published"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Lightspeed Capital",
-     "domain": "lightspeedhq.com",
-     "url": "https://lightspeedhq.com/capital",
-     "values": [
-      "MCA, flat fee, 11% of daily card sales",
-      "Not published",
-      "As soon as 2 business days",
-      "Lightspeed Payments subscribers; no credit check"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-invoice-factoring-companies": {
-   "domains": {
-    "altLINE": "altline.sobanco.com",
-    "Riviera Finance": "rivierafinance.com",
-    "Scale Funding": "scalefunding.net",
-    "Triumph Business Capital": "triumph.io",
-    "Porter Capital": "portercap.com",
-    "RTS Financial": "rtsinc.com",
-    "eCapital": "ecapital.com"
-   },
-   "added": []
-  },
-  "business-line-of-credit-rates-by-lender": {
-   "domains": {
-    "Chase": "chase.com",
-    "Wells Fargo": "wellsfargo.com",
-    "Bank of America": "bankofamerica.com",
-    "PNC": "pnc.com",
-    "TD Bank": "td.com",
-    "RBC": "rbcroyalbank.com",
-    "Scotiabank": "scotiabank.com",
-    "CIBC": "cibc.com",
-    "Amex Business Blueprint": "americanexpress.com",
-    "Bluevine": "bluevine.com"
-   },
-   "added": []
-  },
-  "best-business-credit-cards": {
-   "domains": {
-    "Ink Business Unlimited": "chase.com",
-    "Amex Business Gold": "americanexpress.com",
-    "Capital One Spark Cash Plus": "capitalone.com",
-    "Capital One Spark Classic": "capitalone.com",
-    "Brex Card": "brex.com",
-    "BILL Divvy": "bill.com"
-   },
-   "added": []
-  },
-  "best-same-day-business-loans": {
-   "domains": {
-    "OnDeck": "ondeck.com",
-    "Credibly": "credibly.com",
-    "Fundbox": "fundbox.com",
-    "National Funding": "nationalfunding.com"
-   },
-   "added": [
-    {
-     "name": "Delta Capital Group",
-     "domain": "deltacapitalgroup.com",
-     "url": "https://deltacapitalgroup.com",
-     "values": [
-      "$5,000,000",
-      "Same day or within 24 hours of approval",
-      "500 personal score",
-      "Not published; short-term repaid within two years"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-business-bank-accounts": {
-   "domains": {
-    "Bluevine Business Checking": "bluevine.com",
-    "Mercury": "mercury.com",
-    "NBKC Bank Business Checking": "nbkc.com",
-    "Axos Bank Basic Business Checking": "axosbank.com"
-   },
-   "added": []
-  },
-  "best-mileage-tracker-apps": {
-   "domains": {
-    "TripLog": "triplog.net",
-    "MileIQ": "mileiq.com",
-    "Everlance": "everlance.com",
-    "Hurdlr": "hurdlr.com",
-    "QuickBooks Solopreneur": "quickbooks.intuit.com",
-    "Stride": "stridehealth.com"
-   },
-   "added": [
-    {
-     "name": "MileageWise",
-     "domain": "mileagewise.com",
-     "url": "https://www.mileagewise.com",
-     "values": [
-      "Free trial; length not published",
-      "Not published",
-      "Yes",
-      "Google Maps Timeline import; rebuilds past mileage logs"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Motus",
-     "domain": "motus.com",
-     "url": "https://www.motus.com",
-     "values": [
-      "Not published",
-      "Not published; quote via demo request",
-      "Yes",
-      "Driver reimbursement for company fleets and employees"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Timeero",
-     "domain": "timeero.com",
-     "url": "https://timeero.com",
-     "values": [
-      "14-day trial, no card needed",
-      "$5-$12 per user per month by plan",
-      "GPS mileage in all plans; Segmented Tracking add-on from $5/user/month",
-      "Time tracking, scheduling, geofencing, payroll integrations"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Cardata",
-     "domain": "cardata.co",
-     "url": "https://cardata.co",
-     "values": [
-      "Not published",
-      "Per-user yearly subscription; custom quote",
-      "Yes",
-      "Company driver reimbursement programs, insurance checks, driver payments"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "ExpenseTron",
-     "domain": "expensetron.com",
-     "url": "https://expensetron.com",
-     "values": [
-      "14-day trial, no card needed",
-      "Not published",
-      "Not published",
-      "Expense approvals and reimbursement inside Slack and Teams"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
-  },
-  "best-accounting-software-for-freelancers": {
-   "domains": {
-    "Wave": "waveapps.com",
-    "Zoho Invoice": "zoho.com",
-    "QuickBooks Solopreneur": "quickbooks.intuit.com",
-    "FreshBooks": "freshbooks.com",
-    "Bonsai": "hellobonsai.com"
-   },
-   "added": []
-  },
-  "best-invoicing-apps-for-freelancers": {
-   "domains": {
-    "Zoho Invoice": "zoho.com",
-    "Wave": "waveapps.com",
-    "FreshBooks": "freshbooks.com",
-    "Bonsai": "hellobonsai.com",
-    "QuickBooks Solopreneur": "quickbooks.intuit.com"
-   },
-   "added": [
-    {
-     "name": "Billbooks",
-     "domain": "billbooks.com",
-     "url": "https://billbooks.com",
-     "values": [
-      "$7.95/month flat price; 30-day free trial",
-      "Yes, on every plan",
-      "Not published; connect own gateway such as Stripe or PayPal",
-      "Freelancers and small businesses sending invoices and quotes"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "InvoiceZap",
-     "domain": "invoicezap.app",
-     "url": "https://invoicezap.app",
-     "values": [
-      "Free to try; no monthly fees stated",
-      "Not published",
-      "Not published",
-      "Freelancers and trades invoicing from iPhone, iPad or Mac"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Billdu",
-     "domain": "billdu.com",
-     "url": "https://billdu.com",
-     "values": [
-      "From $4.99/month; Standard $9.99; Premium $19.99; 7-day trial",
-      "Yes, for upcoming, due and late payments",
-      "Not published; Stripe and PayPal connect, their fees apply",
-      "Small businesses, trades and freelancers"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "InvoiceCue",
-     "domain": "invoicecue.com",
-     "url": "https://invoicecue.com",
-     "values": [
-      "Free to start; paid prices not published",
-      "Yes, automated payment reminders",
-      "Not published",
-      "Freelancers and contractors invoicing from a phone"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Invoice Ninja",
-     "domain": "invoiceninja.com",
-     "url": "https://invoiceninja.com",
-     "values": [
-      "Free for 5 clients; Pro $14/month or $140/year",
-      "Pro and higher only",
-      "Not published; gateway fees apply (Stripe, PayPal, Square)",
-      "Freelancers wanting a free or open-source invoicing option"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Bookipi",
-     "domain": "bookipi.com",
-     "url": "https://bookipi.com",
-     "values": [
-      "Free, 3 invoices/month; Starter $9.99/month; Professional $52/month",
-      "Yes, automatic overdue reminders on all plans",
-      "Not published on page; card fees listed by country",
-      "Freelancers and small businesses sending a few invoices monthly"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Invoice2go",
-     "domain": "invoice.2go.com",
-     "url": "https://invoice.2go.com",
-     "values": [
-      "Not published",
-      "Yes, on all plans",
-      "Card 2.9% to 3.5% by plan; PayPal 2.9% + 30 cents",
-      "Small businesses and side hustlers"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Invoisseur",
-     "domain": "invoisseur.com",
-     "url": "https://invoisseur.com",
-     "values": [
-      "Free; Pro $7.49/month",
-      "Not published",
-      "Not published; accepts major cards and PayPal",
-      "Freelancers starting out with simple invoices"
-     ],
-     "added": "2026-10-15"
-    },
-    {
-     "name": "Invoice Maker",
-     "domain": "invoicemaker.com",
-     "url": "https://invoicemaker.com",
-     "values": [
-      "Free app; paid plan prices not published",
-      "Not published",
-      "Not published",
-      "Freelancers and trades creating invoices from a phone"
-     ],
-     "added": "2026-10-15"
-    }
-   ]
   }
- }
 }

@@ -1,0 +1,44 @@
+{
+ "slug": "best-ai-stock-pickers",
+ "rows": [
+  {
+   "name": "Screener",
+   "domain": "screener.in",
+   "url": "https://www.screener.in",
+   "values": [
+    "Investors researching Indian listed companies",
+    "Screener AI reads company filings and earnings calls",
+    "Yes (Hobby Investor, \u20b90 per year)",
+    "\u20b94,999 per year (Active Investor)"
+   ]
+  },
+  {
+   "name": "Pineify",
+   "domain": "pineify.app",
+   "url": "https://pineify.app",
+   "values": [
+    "Traders wanting daily scored stock ideas and options data",
+    "Daily 1-10 predictive scores, options Greeks",
+    "Not published",
+    "One-time $149 Advanced (AI Stock Picker included); promo price"
+   ]
+  },
+  {
+   "name": "AltIndex",
+   "domain": "altindex.com",
+   "url": "https://altindex.com",
+   "values": [
+    "Investors wanting alternative-data signals",
+    "Buy and sell signals from social, web traffic and job data",
+    "Free trial; limits not published",
+    "$29/mo Starter; $99/mo Pro"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "stockanalysis.com",
+   "why": "category 4 \u2014 fits stock research/screener category; no AI picks published"
+  }
+ ]
+}
