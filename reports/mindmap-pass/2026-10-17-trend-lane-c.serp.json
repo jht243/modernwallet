@@ -1,0 +1,124 @@
+{
+ "rows": [
+  {
+   "keyword": "roth vs traditional 401k calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.citizensbank.com",
+    "myplan.johnhancock.com",
+    "www.aarp.org",
+    "www.planmember.com",
+    "www.umcu.org",
+    "www.nsbank.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.fidelity.com",
+    "www.nsbank.com",
+    "www.coastal24.com",
+    "www.nerdwallet.com",
+    "www.mylsb.com",
+    "www.planmember.com",
+    "www.corebridgefinancial.com",
+    "www.planmember.com",
+    "www.raymondjames.com",
+    "www.facebook.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Is it better to use a Roth or traditional 401(k)?",
+    "What happens to my IRA when I retire?",
+    "Can I convert my after-tax 401(k) to a Roth 401(k)?",
+    "Can I have both an IRA and a 401k?",
+    "How many Americans have $1,000,000 in their 401k?",
+    "Why does Dave Ramsey say to stop contributing to a 401k?"
+   ],
+   "related_searches": [
+    "Roth vs traditional 401k calculator fidelity",
+    "Roth vs traditional 401k calculator excel",
+    "Roth vs traditional 401k 100k salary",
+    "Roth IRA vs Roth 401k",
+    "401k vs Roth IRA comparison chart",
+    "401k vs Roth IRA vs brokerage",
+    "Roth vs traditional 401k contribution limits",
+    "Should I contribute to Roth 401k or traditional 401k"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.citizensbank.com, myplan.johnhancock.com, www.aarp.org, www.planmember.com",
+   "se_results_count": 127
+  },
+  {
+   "keyword": "best va home loan lenders",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.veteransunited.com",
+    "www.benefits.va.gov",
+    "www.navyfederal.org",
+    "www.cnbc.com",
+    "finance.yahoo.com",
+    "www.bankrate.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.penfed.org",
+    "www.arborhl.com",
+    "www.freedommortgage.com",
+    "crosscountrymortgage.com",
+    "homeplusmortgage.com",
+    "www.reddit.com",
+    "www.loandepot.com",
+    "www.nerdwallet.com",
+    "www.facebook.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Which lender offers the best VA loan rates?",
+    "Which is the best home loan provider?",
+    "How to get a 4% mortgage rate?",
+    "Is it difficult to get a VA home loan?",
+    "What disqualifies you from a VA home loan?",
+    "How much do I need to make to afford a $300,000 house with a VA loan?"
+   ],
+   "related_searches": [
+    "Best va home loan lenders reddit",
+    "Freedom Mortgage VA loan reviews",
+    "PenFed Mortgage rates VA",
+    "Best VA loan rates today",
+    "PenFed VA loan",
+    "Freedom mortgage VA loan reddit",
+    "USAA VA mortgage rates",
+    "PenFed Mortgage rates 30-year"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.youtube.com); AI Overview present, cites www.veteransunited.com, www.benefits.va.gov, www.navyfederal.org, www.cnbc.com",
+   "se_results_count": 105
+  }
+ ],
+ "cost": "DataForSEO: 2 calls, $0.00830 of $2.00 budget"
+}

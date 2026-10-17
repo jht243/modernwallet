@@ -122,6 +122,13 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/irs-mileage-rate-history/", label: "IRS mileage rate history" },
     { href: "/guides/state-mileage-reimbursement-law-california-texas-michigan/", label: "State mileage reimbursement laws" },
   ],
+  "roth-vs-traditional-401k-calculator": [
+    { href: "/retirement/", label: "Project your retirement savings" },
+    { href: "/retirement/401k-calculator/", label: "401(k) calculator with employer match" },
+    { href: "/compare/roth-401k-vs-traditional-401k/", label: "Roth 401(k) vs Traditional 401(k)" },
+    { href: "/guides/401k-contribution-limits-2026/", label: "2026 401(k) contribution limits" },
+    { href: "/investing/roth-ira-calculator/", label: "Roth IRA calculator" },
+  ],
   "annuity-calculator": [
     { href: "/compare/annuity-vs-cd/", label: "Annuity vs CD: which pays more?" },
     { href: "/compare/pension-vs-annuity/", label: "Pension vs annuity" },
@@ -206,6 +213,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
   ],
   "retirement": [
     { href: "/social-security-break-even-calculator/", label: "When does waiting to claim Social Security pay off?" },
+    { href: "/roth-vs-traditional-401k-calculator/", label: "Roth or Traditional 401(k)? Compare after tax" },
     { href: "/investing/", label: "Grow your investments" },
     { href: "/iul-calculator/", label: "Pitched an IUL? Run the numbers" },
     { href: "/net-worth/", label: "Track your net worth" },

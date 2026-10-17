@@ -1,0 +1,97 @@
+{
+ "slug": "roth-vs-traditional-401k-calculator",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1079,
+ "floor": 560,
+ "input_tokens": 19694,
+ "output_tokens": 2104,
+ "thinking_tokens": null,
+ "cached_tokens": 16859,
+ "est_cost_usd": 0.0113,
+ "guards": {
+  "repairs": [
+   "slug None -> 'roth-vs-traditional-401k-calculator'"
+  ],
+  "flags": [
+   "missing 'h1' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'sections' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1079,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 465,
+   "floor": 560,
+   "ratio": 0.83,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    1
+   ],
+   "applied": [
+    {
+     "id": "faqs[3].answer",
+     "quote": "Future tax laws, your overall retirement income, and your deduction amounts will all influence your bracket.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention future tax laws, retirement income, or deduction amounts influencing brackets."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "You must have held the account for at least 5 years since your first contribution.",
+     "replacement": "You must have held the account for at least 5 years.",
+     "type": "unsupported",
+     "why": "SOURCE states the account must be held at least 5 years, not since first contribution."
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "The money can stay invested and compound tax-free indefinitely.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that money can stay invested or compound indefinitely."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Traditional withdrawals face regular federal and state income taxes.",
+     "replacement": "Traditional pre-tax withdrawals are subject to federal and most state income tax.",
+     "type": "unsupported",
+     "why": "SOURCE states traditional pre-tax withdrawals are subject to federal and most state income tax."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1105
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 128.2,
+ "response_id": "IyDTapXhGr_bytMPkeXE-A4",
+ "generated_at": "2026-10-17T07:15:45+0000"
+}

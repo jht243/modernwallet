@@ -66,6 +66,7 @@ import HurricaneDeductibleCalculator from "./HurricaneDeductibleCalculator";
 import AnnuityCalculator from "./AnnuityCalculator";
 import CreditCardInterestCalculator from "./CreditCardInterestCalculator";
 import LoanPaymentCalculator from "./LoanPaymentCalculator";
+import RothVsTraditional401kCalculator from "./RothVsTraditional401kCalculator";
 import HysaVsCdCalculator from "./HysaVsCdCalculator";
 import TrumpVs529Calculator from "./TrumpVs529Calculator";
 import MortgageRecastCalculator from "./MortgageRecastCalculator";
@@ -155,6 +156,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "annuity-calculator": AnnuityCalculator,
   "credit-card-interest-calculator": CreditCardInterestCalculator,
   "loan-payment-calculator": LoanPaymentCalculator,
+  // Trend-pass (2026-10-17): Roth vs Traditional 401(k) after-tax balance at equal take-home cost.
+  "roth-vs-traditional-401k-calculator": RothVsTraditional401kCalculator,
   // tool-usage pass (2026-10-14): the next tool each persona reached for — HYSA vs CD (seed: HYSA calculator),
   // Trump Account vs 529 (seed: Trump Account), lump-sum recast (seed: mortgage payoff).
   "hysa-vs-cd-calculator": HysaVsCdCalculator,

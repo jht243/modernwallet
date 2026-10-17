@@ -4307,7 +4307,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     comparisonTable: {
       rows: [
         { dimension: "Contribution tax timing", a: "After-tax (no deduction now)", b: "Pre-tax (reduces taxable income now)" },
-        { dimension: "2024 contribution limit", a: "$23,000 ($30,500 if 50+)", b: "$23,000 ($30,500 if 50+)" },
+        { dimension: "2026 contribution limit", a: "$24,500 ($32,500 if 50+)", b: "$24,500 ($32,500 if 50+)" },
         { dimension: "Tax on retirement withdrawals", a: "Tax-free", b: "Taxed as ordinary income" },
         { dimension: "Employer match taxation", a: "Pre-tax by default; a plan may let you take vested match as Roth", b: "Pre-tax" },
         { dimension: "Required minimum distributions", a: "None during the owner's lifetime (beneficiaries still follow RMD rules)", b: "Yes, generally starting at age 73" },
@@ -4336,7 +4336,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "When to use both at the same time",
         content:
-          "If your plan allows split contributions, you can put some dollars in Traditional and some in Roth each year. In 2024, as long as the total doesn't exceed $23,000, you can split it any way you like.\n\nA practical approach: contribute enough Traditional 401(k) to stay in your current bracket's lower band, then put additional contributions in Roth. For example, if you're $5,000 below the top of the 22% bracket, put $5,000 Traditional (saving at 22%) and the rest Roth.\n\nUse the [retirement calculator](/retirement/) to model both approaches with your specific income and expected retirement spending.\n\nFor more detail, see [401k Calculator](/retirement/401k-calculator/).",
+          "If your plan allows split contributions, you can put some dollars in Traditional and some in Roth each year. In 2026, as long as the total doesn't exceed $24,500, you can split it any way you like.\n\nA practical approach: contribute enough Traditional 401(k) to stay in your current bracket's lower band, then put additional contributions in Roth. For example, if you're $5,000 below the top of the 22% bracket, put $5,000 Traditional (saving at 22%) and the rest Roth.\n\nUse the [retirement calculator](/retirement/) to model both approaches with your specific income and expected retirement spending, or test your own tax rates in the [Roth vs Traditional 401(k) calculator](/roth-vs-traditional-401k-calculator/).\n\nFor more detail, see [401k Calculator](/retirement/401k-calculator/).",
       },
     ],
     faqs: [
@@ -4348,7 +4348,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         question: "Can I have both a Roth and Traditional 401(k) in the same plan?",
         answer:
-          "Yes, if your employer's plan allows it. You can split your contributions between Roth and Traditional in any proportion, as long as the combined total doesn't exceed the annual limit ($23,000 in 2024). For more detail, see [401(k) Contribution Limits for 2026](/guides/401k-contribution-limits-2026/).",
+          "Yes, if your employer's plan allows it. You can split your contributions between Roth and Traditional in any proportion, as long as the combined total doesn't exceed the annual limit ($24,500 in 2026). For more detail, see [401(k) Contribution Limits for 2026](/guides/401k-contribution-limits-2026/).",
       },
       {
         question: "Do Roth 401(k) contributions reduce my taxable income?",
@@ -4358,7 +4358,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         question: "Is the Roth 401(k) better than a Roth IRA?",
         answer:
-          "The Roth 401(k) has no income limits and a much higher contribution limit ($23,000 vs $7,000 in 2024). The Roth IRA often has more investment options. Most people should use both: max the Roth IRA, then use the Roth 401(k) for additional savings.",
+          "The Roth 401(k) has no income limits and a much higher contribution limit ($24,500 vs $7,500 in 2026). The Roth IRA often has more investment options. Most people should use both: max the Roth IRA, then use the Roth 401(k) for additional savings.",
       },
       {
         question: "When can I withdraw Roth 401(k) money tax-free?",
