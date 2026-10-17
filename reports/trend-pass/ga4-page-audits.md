@@ -279,3 +279,5 @@
 | / | 2026-10-16 | 18 | 0/0/0/0/0 | 0 |
 | /guides/trump-account-worth-it/ | 2026-10-16 | 15 | 0/0/0/0/0 | 0 |
 | /guides/trump-account-rules/ | 2026-10-16 | 14 | 0/0/0/0/0 | 0 |
+| /guides/senior-deduction-social-security/ | 2026-10-17 | 6 | 0/0/0/0/0 | 0 |
+| /compare/utma-vs-ugma/ | 2026-10-17 | 5 | 0/0/0/0/0 | 0 |

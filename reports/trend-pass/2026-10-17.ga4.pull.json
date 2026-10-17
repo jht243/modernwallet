@@ -1,0 +1,119 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-16",
+  "window_start": "2026-10-16",
+  "window_end": "2026-10-16",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 51,
+      "sessions": 47,
+      "active_users": 45,
+      "clicks": 51
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 35,
+      "sessions": 38,
+      "active_users": 33,
+      "clicks": 35
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 31,
+      "sessions": 30,
+      "active_users": 27,
+      "clicks": 31
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 20,
+      "sessions": 17,
+      "active_users": 17,
+      "clicks": 20
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 17,
+      "sessions": 19,
+      "active_users": 17,
+      "clicks": 17
+    },
+    {
+      "page": "/guides/senior-deduction-social-security/",
+      "views": 6,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 6
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 6,
+      "sessions": 6,
+      "active_users": 5,
+      "clicks": 6
+    },
+    {
+      "page": "/compare/utma-vs-ugma/",
+      "views": 5,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 5
+    },
+    {
+      "page": "/guides/best-investment-account-for-kids/",
+      "views": 5,
+      "sessions": 5,
+      "active_users": 2,
+      "clicks": 5
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 5,
+      "sessions": 7,
+      "active_users": 6,
+      "clicks": 5
+    }
+  ],
+  "top10_pages_total_views": 181,
+  "top10_pages_total_clicks": 181,
+  "channel_split": {
+    "/social-security-cola-calculator/": {
+      "Organic Search": 46,
+      "Direct": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 37,
+      "Direct": 1
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 30
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 18,
+      "Direct": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 16,
+      "Organic Social": 1
+    },
+    "/guides/senior-deduction-social-security/": {
+      "Organic Search": 6
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 6
+    },
+    "/compare/utma-vs-ugma/": {
+      "Organic Search": 5
+    },
+    "/guides/best-investment-account-for-kids/": {
+      "Organic Search": 5
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 5,
+      "Direct": 2
+    }
+  }
+}
