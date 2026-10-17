@@ -1,18 +1,78 @@
 {
- "slug": "best-mileage-tracker-apps",
- "rows": [
-  {
-   "name": "Milelify",
-   "domain": "milelify.com",
-   "url": "https://milelify.com",
-   "values": [
-    "Milelify",
-    "Free: up to 30 trips/month, GPS tracking",
-    "$69.99/yr or $6.99/mo",
-    "No, trips start and stop manually",
-    "Reimbursement calculator, PDF and CSV reports, web dashboard"
-   ]
-  }
- ],
- "cut": []
+  "slug": "best-mileage-tracker-apps",
+  "rows": [
+    {
+      "name": "Mileage Ace",
+      "domain": "mileage-ace.com",
+      "url": "https://mileage-ace.com/",
+      "values": [
+        "None listed",
+        "Device $49.99 or $69.89, plus $0.56/day service",
+        "Yes, plug-in GPS device logs trips",
+        "Online trip reports; lifetime warranty; 30-day refund"
+      ]
+    },
+    {
+      "name": "SparkReceipt",
+      "domain": "sparkreceipt.com",
+      "url": "https://sparkreceipt.com/",
+      "values": [
+        "None; 7-day trial on paid plans",
+        "$5.75/mo Pro, $10.75/mo Elite, billed annually",
+        "GPS or manual logging; auto start/stop not stated",
+        "AI receipt scanning, bank matching, expense reports, QuickBooks and Xero"
+      ]
+    },
+    {
+      "name": "MileTrack",
+      "domain": "miletrack.app",
+      "url": "https://miletrack.app/",
+      "values": [
+        "Free to use currently; no account needed",
+        "No paid tier listed",
+        "Yes, detects driving and records trips",
+        "Business/commute/private sorting; PDF, CSV, XLSX export; iPhone only"
+      ]
+    },
+    {
+      "name": "Falcon Expenses",
+      "domain": "falconexpenses.com",
+      "url": "https://falconexpenses.com/",
+      "values": [
+        "Not published",
+        "Not published",
+        "Yes, background GPS plus odometer log",
+        "Receipt photos, hours logging, PDF and Excel reports"
+      ]
+    },
+    {
+      "name": "mBurse",
+      "domain": "mburse.com",
+      "url": "https://www.mburse.com/",
+      "values": [
+        "Not published",
+        "Not published; demo required",
+        "Yes, automatic trip capture in mLog",
+        "Approval dashboards, reporting, FAVR and car allowance programs"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "emburse.com",
+      "why": "category 4 \u2014 travel/expense software; no mileage product shown"
+    },
+    {
+      "domain": "connecteam.com",
+      "why": "category 4 \u2014 employee management app; no mileage product shown"
+    },
+    {
+      "domain": "jotform.com",
+      "why": "category 4 \u2014 form builder, no mileage tracker"
+    },
+    {
+      "domain": "certumsolutions.com",
+      "why": "category 4 \u2014 accounting/ERP consulting, no mileage product"
+    }
+  ]
 }

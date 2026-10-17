@@ -2,15 +2,75 @@
  "slug": "personal-loan-rates-by-lender",
  "rows": [
   {
-   "name": "OppLoans",
-   "domain": "opploans.com",
-   "url": "https://opploans.com",
+   "name": "California Bank & Trust",
+   "domain": "calbanktrust.com",
+   "url": "https://www.calbanktrust.com/",
    "values": [
-    "Borrowers with bad or no credit",
-    "$500 to $5,000, varies by state",
-    "Maximum APR 195%; range by state not published",
-    "No origination or prepayment fee on installment loans; 10% fee on credit line draws",
-    "Same day if approved before noon CT"
+    "Bank personal loan, line of credit, secured loan",
+    "Not published",
+    "Not published",
+    "Not published",
+    "Not published"
+   ]
+  },
+  {
+   "name": "OneMain Financial",
+   "domain": "onemainfinancial.com",
+   "url": "https://www.onemainfinancial.com/personal-loans",
+   "values": [
+    "Fixed-rate loans; secured options in some states",
+    "$1,500 to $30,000",
+    "11.99% to 35.99% APR as of Oct 2026",
+    "Origination fees apply; amount not stated",
+    "As soon as one hour by debit card"
+   ]
+  },
+  {
+   "name": "Mariner Finance",
+   "domain": "marinerfinance.com",
+   "url": "https://www.marinerfinance.com/",
+   "values": [
+    "Online and branch personal loans",
+    "$1,000 to $25,000",
+    "15.99% to 35.99% APR as of Oct 2026",
+    "Not published",
+    "Not published"
+   ]
+  },
+  {
+   "name": "Upstart",
+   "domain": "upstart.com",
+   "url": "https://www.upstart.com/personal-loans/",
+   "values": [
+    "Approval weighs income and employment, not only score",
+    "$1,000 to $75,000",
+    "6.3% to 35.99% APR as of Oct 2026",
+    "Origination fee may apply; example 8.15%",
+    "As fast as 24 hours after approval"
+   ]
+  },
+  {
+   "name": "Achieve",
+   "domain": "achieve.com",
+   "url": "https://www.achieve.com/personal-loans",
+   "values": [
+    "Debt consolidation; 560 minimum score listed",
+    "$5,000 to $50,000",
+    "6.25% to 35.99% APR as of Oct 2026",
+    "1.99% to 9.99% origination fee",
+    "1 to 3 days"
+   ]
+  },
+  {
+   "name": "Transcend Credit Union",
+   "domain": "transcendcu.com",
+   "url": "https://www.transcendcu.com/",
+   "values": [
+    "Louisville and Lexington, Kentucky area members",
+    "Not published",
+    "Not published",
+    "Not published",
+    "Not published"
    ]
   }
  ],

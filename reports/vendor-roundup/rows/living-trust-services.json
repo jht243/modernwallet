@@ -2,130 +2,82 @@
  "slug": "best-living-trust-services",
  "rows": [
   {
-   "name": "Affordable Living Trusts",
-   "domain": "affordablelivingtrusts.com",
-   "url": "https://affordablelivingtrusts.com",
+   "name": "Generation Living Trusts",
+   "domain": "generationlivingtrusts.com",
+   "url": "https://generationlivingtrusts.com/",
    "values": [
-    "Starting at $499",
-    "Yes",
-    "Funding instructions and video guidance",
     "Not published",
-    "Not stated"
+    "Yes, part of the Living Trust Portfolio",
+    "Yes, funding instructions and follow-up support",
+    "Not published",
+    "Not stated; says it is not a law firm, uses attorney network"
    ]
   },
   {
-   "name": "The Trust Pros",
-   "domain": "thetrustpros.com",
-   "url": "https://thetrustpros.com",
+   "name": "299Trust",
+   "domain": "299trust.com",
+   "url": "https://299trust.com/",
    "values": [
+    "$299 individual / $399 joint",
+    "Will included; pour-over not described",
     "Not published",
-    "Not published",
-    "Not published",
-    "Not published",
-    "Attorney reviews all living trusts"
+    "No, revocable trusts only",
+    "No, says it is not a law firm"
    ]
   },
   {
-   "name": "Blade Law Offices",
-   "domain": "bladeoffices.com",
-   "url": "https://bladeoffices.com",
+   "name": "Isha Singh Law",
+   "domain": "ishasinghlaw.com",
+   "url": "https://ishasinghlaw.com/",
    "values": [
+    "Not published; flat-fee pricing stated",
     "Not published",
     "Not published",
     "Not published",
-    "Not published",
-    "Not stated"
+    "Law firm with direct attorney access"
    ]
   },
   {
-   "name": "Salvo Law",
-   "domain": "salvolaw.com",
-   "url": "https://salvolaw.com",
+   "name": "Laguna Legal",
+   "domain": "lagunalegalhelp.com",
+   "url": "https://lagunalegalhelp.com/",
    "values": [
     "Not published",
     "Not published",
     "Not published",
     "Not published",
-    "Law firm; offers trust creation"
+    "No, staff are not attorneys; works with attorneys"
    ]
   },
   {
-   "name": "McKenzie Legal",
-   "domain": "thomasmckenzielaw.com",
-   "url": "https://thomasmckenzielaw.com",
+   "name": "Lawvex",
+   "domain": "lawvex.com",
+   "url": "https://lawvex.com/",
    "values": [
     "Not published",
     "Not published",
-    "Title transfer to trust described; fee not published",
     "Not published",
-    "Yes, each living trust drafted by the attorney"
+    "Not published",
+    "Law firm with dedicated estate planning attorneys"
    ]
   },
   {
-   "name": "Living Trust Attorneys",
-   "domain": "livingtrust-attorneys.com",
-   "url": "https://livingtrust-attorneys.com",
-   "values": [
-    "$575 single; $675 joint",
-    "Yes",
-    "Trust transfer deed and PCOR included",
-    "Yes, quote by phone",
-    "Yes, California attorney"
-   ]
-  },
-  {
-   "name": "Thrift Legal",
-   "domain": "thriftlegal.com",
-   "url": "https://thriftlegal.com",
-   "values": [
-    "Not published; hourly, flat-fee or contingency billing",
-    "Not published",
-    "Not published",
-    "Not published",
-    "Not stated"
-   ]
-  },
-  {
-   "name": "For Living Trust",
-   "domain": "forlivingtrust.com",
-   "url": "https://forlivingtrust.com",
+   "name": "Matlin Law Group",
+   "domain": "matlinlawgroup.com",
+   "url": "http://www.matlinlawgroup.com/",
    "values": [
     "Not published",
     "Not published",
     "Not published",
-    "Not published",
-    "Attorney-led firm; responsible attorney named"
-   ]
-  },
-  {
-   "name": "Living Trust California",
-   "domain": "livingtrustcalifornia.com",
-   "url": "https://livingtrustcalifornia.com",
-   "values": [
-    "$400 single; $500 joint",
-    "Yes",
-    "Funding instructions; deed transfer $100 per property",
-    "Not published",
-    "Yes, attorney-reviewed; California residents only"
+    "Not published; 'complex trust' mentioned",
+    "Law firm; attorney meetings, drafting not stated"
    ]
   }
  ],
  "cut": [
   {
-   "domain": "legalshield.com",
-   "why": "category 4 \u2014 prepaid legal subscription, no priced living trust product"
-  },
-  {
-   "domain": "themcgowangroup.com",
-   "why": "category 2 \u2014 unverifiable: homepage does not show a living trust service"
-  },
-  {
-   "domain": "vocal.media",
-   "why": "category 1 \u2014 publisher platform, no product of its own"
-  },
-  {
-   "domain": "familytreeestateplanningscholarship.com",
-   "why": "category 1 \u2014 review/comparison content site"
+   "domain": "metlife.com",
+   "why": "category 4 \u2014 sells employer legal plans, no living trust product shown"
   }
  ]
 }

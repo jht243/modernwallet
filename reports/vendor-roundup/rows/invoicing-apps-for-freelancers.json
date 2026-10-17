@@ -1,110 +1,28 @@
-{
- "slug": "best-invoicing-apps-for-freelancers",
- "rows": [
-  {
-   "name": "Billbooks",
-   "domain": "billbooks.com",
-   "url": "https://billbooks.com",
-   "values": [
-    "$7.95/month flat price; 30-day free trial",
-    "Yes, on every plan",
-    "Not published; connect own gateway such as Stripe or PayPal",
-    "Freelancers and small businesses sending invoices and quotes"
-   ]
-  },
-  {
-   "name": "InvoiceZap",
-   "domain": "invoicezap.app",
-   "url": "https://invoicezap.app",
-   "values": [
-    "Free to try; no monthly fees stated",
-    "Not published",
-    "Not published",
-    "Freelancers and trades invoicing from iPhone, iPad or Mac"
-   ]
-  },
-  {
-   "name": "Billdu",
-   "domain": "billdu.com",
-   "url": "https://billdu.com",
-   "values": [
-    "From $4.99/month; Standard $9.99; Premium $19.99; 7-day trial",
-    "Yes, for upcoming, due and late payments",
-    "Not published; Stripe and PayPal connect, their fees apply",
-    "Small businesses, trades and freelancers"
-   ]
-  },
-  {
-   "name": "InvoiceCue",
-   "domain": "invoicecue.com",
-   "url": "https://invoicecue.com",
-   "values": [
-    "Free to start; paid prices not published",
-    "Yes, automated payment reminders",
-    "Not published",
-    "Freelancers and contractors invoicing from a phone"
-   ]
-  },
-  {
-   "name": "Invoice Ninja",
-   "domain": "invoiceninja.com",
-   "url": "https://invoiceninja.com",
-   "values": [
-    "Free for 5 clients; Pro $14/month or $140/year",
-    "Pro and higher only",
-    "Not published; gateway fees apply (Stripe, PayPal, Square)",
-    "Freelancers wanting a free or open-source invoicing option"
-   ]
-  },
-  {
-   "name": "Bookipi",
-   "domain": "bookipi.com",
-   "url": "https://bookipi.com",
-   "values": [
-    "Free, 3 invoices/month; Starter $9.99/month; Professional $52/month",
-    "Yes, automatic overdue reminders on all plans",
-    "Not published on page; card fees listed by country",
-    "Freelancers and small businesses sending a few invoices monthly"
-   ]
-  },
-  {
-   "name": "Invoice2go",
-   "domain": "invoice.2go.com",
-   "url": "https://invoice.2go.com",
-   "values": [
-    "Not published",
-    "Yes, on all plans",
-    "Card 2.9% to 3.5% by plan; PayPal 2.9% + 30 cents",
-    "Small businesses and side hustlers"
-   ]
-  },
-  {
-   "name": "Invoisseur",
-   "domain": "invoisseur.com",
-   "url": "https://invoisseur.com",
-   "values": [
-    "Free; Pro $7.49/month",
-    "Not published",
-    "Not published; accepts major cards and PayPal",
-    "Freelancers starting out with simple invoices"
-   ]
-  },
-  {
-   "name": "Invoice Maker",
-   "domain": "invoicemaker.com",
-   "url": "https://invoicemaker.com",
-   "values": [
-    "Free app; paid plan prices not published",
-    "Not published",
-    "Not published",
-    "Freelancers and trades creating invoices from a phone"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "chatref.ai",
-   "why": "category 3 — AI customer support chatbot, not finance"
-  }
- ]
-}
+{"slug":"best-invoicing-apps-for-freelancers",
+"rows":[
+{"name":"Helcim","domain":"helcim.com","url":"https://www.helcim.com/","values":["No monthly or sign-up fees; pay per transaction","Not published","Interchange-plus pricing; rates on pricing page","Online invoicing alongside card and ACH processing"]},
+{"name":"Refrens","domain":"refrens.com","url":"https://www.refrens.com/","values":["Free plan up to 15 documents; paid plan prices not published","Not published","Small payment gateway fee on online payments; rate not published","Web-based invoicing and accounting for small businesses and consultants"]},
+{"name":"InvoiceTemple","domain":"invoicetemple.com","url":"https://invoicetemple.com/","values":["Free up to 5 invoices per month; unlimited plan price not published","Not published","Not published","Invoices and estimates app for small businesses and freelancers"]},
+{"name":"Ruul","domain":"ruul.io","url":"https://ruul.io/","values":["No setup cost, no monthly fees; transaction fees not published","Not published","Not published","Invoicing and payouts in 140 currencies for freelancers without a company"]},
+{"name":"InvoiceBloom","domain":"invoicebloom.io","url":"https://invoicebloom.io/","values":["Free plan with unlimited invoices","Payment tracking and reminders included","0.5% platform fee plus Stripe's processing fee","Free invoicing for freelancers, contractors and small businesses"]},
+{"name":"Stintly","domain":"stintly.app","url":"https://stintly.app/","values":["Free; Pro $12.99/month; Premium $19.99/month","AI reminder tone adjuster on Pro; auto-send not described","Not published","Offline invoices, expenses and time tracking for iPhone, iPad and Mac"]},
+{"name":"Autopilot","domain":"autopilotapp.io","url":"https://autopilotapp.io/","values":["$49/month Run plan includes invoicing; 2-week free trial","Automated job reminder texts on every plan","Not published","Scheduling and invoicing for home service businesses"]},
+{"name":"Akaunting","domain":"akaunting.com","url":"https://akaunting.com/","values":["Free open-source accounting software; plan details not published","Not published","Not published","Free invoicing and accounting for small businesses and freelancers"]},
+{"name":"Invoice Chaser","domain":"invoicechaser.app","url":"https://www.invoicechaser.app/","values":["Not published; Start for Free button","AI payment reminders that stop once paid","Not published","Automated chasing of unpaid invoices, connects to Xero"]},
+{"name":"Moon Invoice","domain":"mooninvoice.com","url":"https://mooninvoice.com/","values":["Plan prices not published; 7-day free trial","Automated payment reminders for late-paying clients","Not published; 20+ gateways including Stripe, PayPal, Square","Invoicing, estimates and expenses for freelancers and small businesses"]},
+{"name":"Billgami","domain":"billgami.com","url":"https://billgami.com/","values":["Free tier, monthly, annual and lifetime plans; prices not published","None; invoice status is set manually","None; does not process payments","Mobile invoices and estimates for solo contractors and freelancers"]},
+{"name":"Skydo","domain":"skydo.com","url":"https://skydo.com/","values":["$19 up to $2,000; $29 to $10,000; 0.3% above","Custom payment reminders","Not published","GST invoices and foreign payments for Indian exporters"]},
+{"name":"DepositFix","domain":"depositfix.com","url":"https://depositfix.com/","values":["Not published","Automated invoices, reminders and collections","Not published; surcharging and dual pricing offered","B2B invoicing and payments for service businesses and accountants"]},
+{"name":"QuoteAnvil","domain":"quoteanvil.com","url":"https://quoteanvil.com/","values":["$70/year Copper (1 user); up to $395/year","Not published","Bronze lists 3.0% payment processing; Copper none","Estimates and invoices for contractors and trades"]},
+{"name":"Cakedesk","domain":"cakedesk.app","url":"https://cakedesk.app/","values":["One-time EUR 69 with one year of updates","Not published","Not published","Offline desktop invoices and proposals for freelancers"]},
+{"name":"InstantInvoice","domain":"instantinvoice.io","url":"https://instantinvoice.io/","values":["Free tier; Pro $7/month","Automatic reminders before and after due dates","Not published; Stripe and PayPal payments","Invoice generator for freelancers, contractors and small businesses"]}
+],
+"cut":[
+{"domain":"arc.dev","why":"category 4 — remote hiring marketplace, no invoicing product"},
+{"domain":"blog.bloom.io","why":"category 1 — blog subdomain, no product of its own"},
+{"domain":"doubleyourfreelancing.com","why":"category 1 — courses and articles, no invoicing product"},
+{"domain":"joshrickert.com","why":"category 1 — personal site and blog"},
+{"domain":"webcatalog.io","why":"category 4 — desktop app wrapper, no invoicing product"},
+{"domain":"portant.co","why":"category 4 — HubSpot document automation for sales teams"},
+{"domain":"techjockey.com","why":"category 1 — software marketplace"}
+]}

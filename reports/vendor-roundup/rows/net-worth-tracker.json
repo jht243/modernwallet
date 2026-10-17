@@ -1,18 +1,23 @@
 {
- "slug": "best-net-worth-tracker",
- "rows": [
-  {
-   "name": "CustomWorth",
-   "domain": "customworth.com",
-   "url": "https://customworth.com",
-   "values": [
-    "Free, no premium tiers",
-    "None; investments entered as manual balances",
-    "Limited; property added as a manual balance",
-    "None; no forecasting",
-    "People who want a simple balance-only tracker"
-   ]
-  }
- ],
- "cut": []
+  "slug": "best-net-worth-tracker",
+  "rows": [
+    {
+      "name": "Sumyfi",
+      "domain": "sumyfi.com",
+      "url": "https://sumyfi.com/",
+      "values": [
+        "Free; Premium $7.99/mo or $79.99/yr",
+        "Balances only; no analysis described",
+        "Not published",
+        "Not published",
+        "People tracking balances, spending and goals in one place"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "finance-monthly.com",
+      "why": "category 1 \u2014 finance publication, no product of its own"
+    }
+  ]
 }

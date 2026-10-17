@@ -1,38 +1,14 @@
 {
  "slug": "best-travel-credit-cards",
- "rows": [
-  {
-   "name": "Chase",
-   "domain": "creditcards.chase.com",
-   "url": "https://creditcards.chase.com",
-   "values": [
-    "$0 to $795 by card",
-    "Sapphire Preferred 2x other travel, 5x Chase Travel; co-brand cards earn bonus per brand",
-    "Not published",
-    "Travelers choosing airline, hotel or Sapphire cards from one issuer"
-   ]
-  }
- ],
+ "rows": [],
  "cut": [
   {
-   "domain": "moneywithkatie.com",
-   "why": "category 1 — blog/publisher, no product of its own"
+   "domain": "fondtravels.com",
+   "why": "category 3 \u2014 travel agency, no credit card"
   },
   {
-   "domain": "10xtravel.com",
-   "why": "category 1 — review/affiliate content site"
-  },
-  {
-   "domain": "monefy.com",
-   "why": "category 1 — publisher; travel-card article, no card of its own"
-  },
-  {
-   "domain": "cardratings.com",
-   "why": "category 1 — card review/comparison site"
-  },
-  {
-   "domain": "theloverspassport.com",
-   "why": "category 1 — travel blog"
+   "domain": "fondtravels.com",
+   "why": "category 3 \u2014 travel agency, no card"
   }
  ]
 }

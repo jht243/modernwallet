@@ -3,8 +3,12 @@
  "rows": [],
  "cut": [
   {
-   "domain": "guideflow.com",
-   "why": "category 3 \u2014 sells interactive demo software for sales teams, not finance"
+   "domain": "blog.taxact.com",
+   "why": "category 1 \u2014 company blog, no robo-advisor product"
+  },
+  {
+   "domain": "walnutinvest.com",
+   "why": "category 4 \u2014 says it is not an investment adviser; trade-approval app"
   }
  ]
 }

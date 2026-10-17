@@ -1,79 +1,14 @@
 {
  "slug": "best-secured-credit-cards",
- "rows": [
-  {
-   "name": "Armed Forces Bank",
-   "domain": "afbank.com",
-   "url": "https://www.afbank.com",
-   "values": [
-    "$300 to $3,000",
-    "Yes",
-    "Not published",
-    "None",
-    "Not published (subject to credit approval)"
-   ]
-  },
-  {
-   "name": "Market USA FCU",
-   "domain": "marketusafcu.com",
-   "url": "https://www.marketusafcu.com",
-   "values": [
-    "$200 to $5,000 line, secured by savings",
-    "Not published",
-    "Not published",
-    "None",
-    "Not published"
-   ]
-  },
-  {
-   "name": "Truist",
-   "domain": "truist.com",
-   "url": "https://www.truist.com",
-   "values": [
-    "$400 minimum, up to approved credit limit",
-    "Yes",
-    "3% gas/EV, 2% groceries/utilities, 1% other",
-    "$0",
-    "Not published (credit report checked)"
-   ]
-  }
- ],
+ "rows": [],
  "cut": [
   {
-   "domain": "remitly.com",
-   "why": "category 4 — money transfer service, no card; fits remittance category"
+   "domain": "cheers.credit",
+   "why": "category 4 \u2014 credit-builder savings plan, not a secured card; new applications paused"
   },
   {
-   "domain": "mastercard.com",
-   "why": "category 1 — card network page, no card of its own"
-  },
-  {
-   "domain": "credit.com",
-   "why": "category 1 — comparison/lead-gen site"
-  },
-  {
-   "domain": "mybanktracker.com",
-   "why": "category 1 — comparison site"
-  },
-  {
-   "domain": "creditbuildercard.com",
-   "why": "category 1 — secured card marketplace"
-  },
-  {
-   "domain": "creditminds.com",
-   "why": "category 1 — review site"
-  },
-  {
-   "domain": "theinformr.com",
-   "why": "category 1 — comparison tool"
-  },
-  {
-   "domain": "visa.com",
-   "why": "category 1 — card network page, no card of its own"
-  },
-  {
-   "domain": "freefrombroke.com",
-   "why": "category 1 — blog"
+   "domain": "equifax.com",
+   "why": "category 4 \u2014 credit bureau and monitoring, no card issued"
   }
  ]
 }

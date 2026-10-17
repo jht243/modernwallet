@@ -1,10 +1,48 @@
 {
  "slug": "best-merchant-cash-advance-companies",
- "rows": [],
+ "rows": [
+  {
+   "name": "Stripe Capital",
+   "domain": "stripe.com",
+   "url": "https://stripe.com/capital",
+   "values": [
+    "Loans and merchant cash advances",
+    "Not published; examples $15,000 to $25,000",
+    "Typically next business day",
+    "Based on Stripe payment volume and history"
+   ]
+  },
+  {
+   "name": "Rainstar Capital Group",
+   "domain": "rainstarcapitalgroup.com",
+   "url": "https://rainstarcapitalgroup.com/",
+   "values": [
+    "MCA, credit lines, leasing, factoring via lender network",
+    "Not published",
+    "Not published",
+    "Not published"
+   ]
+  },
+  {
+   "name": "Credit Suite",
+   "domain": "creditsuite.com",
+   "url": "https://creditsuite.com/",
+   "values": [
+    "Funding-readiness service and lender matching",
+    "Not published",
+    "Not published",
+    "Must reach 'Funding Ready' status first"
+   ]
+  }
+ ],
  "cut": [
   {
-   "domain": "libertycapitalgroup.com",
-   "why": "category 1 \u2014 describes itself as matching applications across a lender network / working with a licensed broker; MCA terms not published (borderline)"
+   "domain": "businessdebtadjusters.com",
+   "why": "category 4 \u2014 MCA debt relief service, not funding"
+  },
+  {
+   "domain": "grantphillipslaw.com",
+   "why": "category 4 \u2014 MCA legal defense, not funding"
   }
  ]
 }

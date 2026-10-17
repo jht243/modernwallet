@@ -1,34 +1,44 @@
 {
   "site": "themodernwallet.com",
   "cut_as_other_category": {
-    "savings/cd": [
-      "raisin.com"
+    "payroll/small-business hr software": [
+      "joinhomebase.com"
     ],
-    "cash-advance": [
-      "joingerald.com"
+    "financial planning/advisor": [
+      "facet.com"
+    ],
+    "stock research/screener": [
+      "stockanalysis.com"
+    ],
+    "tax/credit categories": [
+      "intuit.com"
+    ],
+    "banks": [
+      "bankofsunprairie.com"
     ],
     "unlabelled": [
       "backrun.co",
-      "ishares.com",
-      "kduncan.com",
+      "carry.com",
+      "colewealth.com",
       "legalshield.com",
       "ment.tech",
       "phaedrasolutions.com",
       "pragmaticcoders.com",
       "ridleylawoffices.com",
-      "upperinc.com"
+      "verdence.com",
+      "yourmoneyline.com"
     ],
-    "business loans": [
-      "aofund.org"
+    "business insurance": [
+      "thehartford.com"
     ],
-    "tax/accounting": [
-      "mcdonaldjacobs.cpa"
+    "business software": [
+      "docupilot.com"
     ],
-    "bookkeeping/accounting": [
-      "cocountant.com"
+    "crypto exchange": [
+      "changeinvest.com"
     ],
-    "money-market-accounts": [
-      "spero.financial"
+    "business loans/lines of credit": [
+      "redlinecapitalinc.com"
     ],
     "personal loans": [
       "avant.com",
@@ -150,14 +160,14 @@
     },
     {
       "head": "payment for best buy credit card",
-      "volume": 403500,
+      "volume": 417000,
       "queries": [
         "payment for best buy credit card",
         "payment best buy credit card",
         "best buy credit card payment",
+        "best buy best buy credit card payment",
         "credit card best buy payment",
-        "credit card payment best buy",
-        "best buy best buy credit card payment"
+        "credit card payment best buy"
       ]
     },
     {
@@ -422,6 +432,20 @@
       ]
     },
     {
+      "head": "pay on best buy credit card",
+      "volume": 74000,
+      "queries": [
+        "pay on best buy credit card"
+      ]
+    },
+    {
+      "head": "best buy credit card pa",
+      "volume": 74000,
+      "queries": [
+        "best buy credit card pa"
+      ]
+    },
+    {
       "head": "best credit card starter",
       "volume": 72400,
       "queries": [
@@ -437,29 +461,6 @@
       "queries": [
         "citi credit card best buy",
         "citi best buy credit card"
-      ]
-    },
-    {
-      "head": "best small business banks",
-      "volume": 62400,
-      "queries": [
-        "best small business banks",
-        "best bank small business",
-        "best banks small business",
-        "small business best bank",
-        "best banks for small business",
-        "best business bank for small business",
-        "best small business bank",
-        "best business banks for small business",
-        "best bank for a small business",
-        "best bank for small business"
-      ]
-    },
-    {
-      "head": "pay on best buy credit card",
-      "volume": 60500,
-      "queries": [
-        "pay on best buy credit card"
       ]
     },
     {
@@ -491,13 +492,6 @@
       ]
     },
     {
-      "head": "best buy credit card pa",
-      "volume": 60500,
-      "queries": [
-        "best buy credit card pa"
-      ]
-    },
-    {
       "head": "credit card best rewards no annual fee",
       "volume": 60500,
       "queries": [
@@ -506,6 +500,22 @@
         "best rewards credit card no annual fee",
         "best credit card no annual fee rewards",
         "best reward credit card no annual fee"
+      ]
+    },
+    {
+      "head": "best small business banks",
+      "volume": 60000,
+      "queries": [
+        "best small business banks",
+        "best bank small business",
+        "small business best bank",
+        "best banks for small business",
+        "best small business bank",
+        "best business banks for small business",
+        "best bank for a small business",
+        "best banks small business",
+        "best bank for small business",
+        "best business bank for small business"
       ]
     },
     {

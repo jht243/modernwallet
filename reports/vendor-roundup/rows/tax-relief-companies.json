@@ -1,10 +1,42 @@
 {
- "slug": "best-tax-relief-companies",
- "rows": [],
- "cut": [
-  {
-   "domain": "taxfortress.com",
-   "why": "category 2 \u2014 unverifiable; site unreadable, titled as a how-to-choose guide, and search did not confirm a service of its own"
-  }
- ]
+  "slug": "best-tax-relief-companies",
+  "rows": [
+    {
+      "name": "Jackson Hewitt",
+      "domain": "jacksonhewitt.com",
+      "url": "https://www.jacksonhewitt.com/",
+      "values": [
+        "Not published",
+        "Not published",
+        "Free consultation; resolution fees not published",
+        "45 (company overall)",
+        "Most offices franchisee-owned; BBB and IRS e-file logos shown"
+      ]
+    },
+    {
+      "name": "Tax Relief Center",
+      "domain": "taxreliefcenter.org",
+      "url": "https://www.taxreliefcenter.org/",
+      "values": [
+        "Not published",
+        "Not published",
+        "Free case review; fees not published",
+        "Not published",
+        "No license numbers shown on site"
+      ]
+    },
+    {
+      "name": "Lexington Tax Group",
+      "domain": "lexingtontaxgroup.com",
+      "url": "https://lexingtontaxgroup.com/",
+      "values": [
+        "Not published",
+        "Tax attorneys, enrolled agents and CPAs",
+        "Free consultation; fees not published",
+        "Not published",
+        "BBB accredited, A rating per site"
+      ]
+    }
+  ],
+  "cut": []
 }

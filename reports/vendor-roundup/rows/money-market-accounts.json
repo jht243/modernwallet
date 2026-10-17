@@ -1,10 +1,27 @@
 {
- "slug": "best-money-market-accounts",
- "rows": [],
- "cut": [
-  {
-   "domain": "financebuzz.com",
-   "why": "category 1 \u2014 publisher/review site, no product of its own"
-  }
- ]
+  "slug": "best-money-market-accounts",
+  "rows": [
+    {
+      "name": "Academy Bank",
+      "domain": "academybank.com",
+      "url": "https://www.academybank.com/personal/save/premier-money-market",
+      "values": [
+        "0.60% to 2.20% tiered; 3.65% 6-month promo, as of Oct 2026",
+        "$10, waived with $1,000 minimum balance",
+        "$25 to open",
+        "Yes",
+        "ATM and in-branch withdrawals"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "us.smarthabesha.com",
+      "why": "category 1 \u2014 financial news/education site, no product of its own"
+    },
+    {
+      "domain": "moneyrates.com",
+      "why": "category 1 \u2014 rate comparison publisher"
+    }
+  ]
 }

@@ -1,10 +1,22 @@
 {
- "slug": "best-ira-accounts",
- "rows": [],
- "cut": [
-  {
-   "domain": "benefitslink.com",
-   "why": "category 1 \u2014 publisher/review site, no product of its own (employee-benefits information site)"
-  }
- ]
+  "slug": "best-ira-accounts",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "lowcountryledger.com",
+      "why": "category 1 \u2014 brokerage review site"
+    },
+    {
+      "domain": "topfundings.com",
+      "why": "category 1 \u2014 comparison/referral site"
+    },
+    {
+      "domain": "outandout.boardingarea.com",
+      "why": "category 1 \u2014 travel blog"
+    },
+    {
+      "domain": "foxbusiness.com",
+      "why": "category 1 \u2014 news publisher"
+    }
+  ]
 }

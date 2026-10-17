@@ -1,146 +1,33 @@
 {
- "slug": "robinhood-agentic-trading-alternatives",
- "rows": [
-  {
-   "name": "ChartingLens",
-   "domain": "chartinglens.com",
-   "url": "https://chartinglens.com",
-   "values": [
-    "Traders wanting charts, screening and AI analysis in one platform",
-    "AI analyst gives chart verdicts and backtests plain-English strategies",
-    "Not published",
-    "Free; Premium $14.99/mo; Pro $29.99/mo"
-   ]
-  },
-  {
-   "name": "Portfolio Lab",
-   "domain": "portfoliolab.ai",
-   "url": "https://portfoliolab.ai",
-   "values": [
-    "Investors running rules-based strategies in their own brokerage account",
-    "Rules-based strategies; Claude or ChatGPT can follow plans via Robinhood Agentic Trading",
-    "Direct connections: Schwab, E*Trade, Webull, Public, tastytrade, Moomoo",
-    "Free; Analyst $8/mo; Quant $24/mo"
-   ]
-  },
-  {
-   "name": "Easy AI Trader",
-   "domain": "easyaitrader.com",
-   "url": "https://easyaitrader.com",
-   "values": [
-    "Traders turning trading ideas into backtested strategies",
-    "Not published",
-    "Not published",
-    "Not published"
-   ]
-  },
-  {
-   "name": "StockHero",
-   "domain": "stockhero.ai",
-   "url": "https://stockhero.ai",
-   "values": [
-    "Traders wanting no-code automated bots for stocks",
-    "No-code bots with preset strategies, AI chatbot and backtesting",
-    "Bots place trades automatically via connected brokers, including Robinhood and Webull",
-    "Lite $49.99/mo; Premium $99.99/mo; Professional $159.99/mo"
-   ]
-  },
-  {
-   "name": "Tradewink",
-   "domain": "tradewink.com",
-   "url": "https://tradewink.com",
-   "values": [
-    "Self-directed traders reviewing signal reasoning before acting",
-    "AI signals with entry, stop, target and written reasoning",
-    "Signals delivered to you; public users place trades at their own broker",
-    "Free; Starter $19/mo; Pro $79/mo; Elite $149/mo"
-   ]
-  },
-  {
-   "name": "TradeZella",
-   "domain": "tradezella.com",
-   "url": "https://tradezella.com",
-   "values": [
-    "Traders journaling and reviewing their own trades",
-    "Zella AI analyzes trade history; agents track habits and risk",
-    "N/A; journal syncs trades from brokers and prop firms",
-    "Essential $35/mo; Pro $59/mo; Ultra $99/mo"
-   ]
-  },
-  {
-   "name": "RockFlow",
-   "domain": "rockflow.ai",
-   "url": "https://rockflow.ai",
-   "values": [
-    "Beginners trading US and Hong Kong stocks and options",
-    "Bobby AI assistant; TradeGPT daily feed of trading opportunities",
-    "Auto Trade lets Bobby execute orders the user describes",
-    "Not published"
-   ]
-  },
-  {
-   "name": "TradeAlgo",
-   "domain": "tradealgo.com",
-   "url": "https://tradealgo.com",
-   "values": [
-    "Traders wanting AI-generated portfolios, options alerts and market briefings",
-    "AI-generated stock portfolios, options flow alerts and daily AI briefing",
-    "Not published",
-    "Not published"
-   ]
-  },
-  {
-   "name": "FN Capital",
-   "domain": "fncapital.io",
-   "url": "https://fncapital.io",
-   "values": [
-    "Investors wanting automated trading in their own brokerage account",
-    "FAST AI automated trading algorithm",
-    "Trades automatically through connected brokers; funds stay in investor's account",
-    "Not published; free trial and 100-day refund of initial plan fee"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "unite.ai",
-   "why": "category 1 — publisher/review site"
-  },
-  {
-   "domain": "phaedrasolutions.com",
-   "why": "category 4 — software development agency, no consumer trading product"
-  },
-  {
-   "domain": "buystocks.ai",
-   "why": "category 1 — comparison/review site"
-  },
-  {
-   "domain": "pragmaticcoders.com",
-   "why": "category 4 — software development agency, builds trading software for clients"
-  },
-  {
-   "domain": "liquidityfinder.com",
-   "why": "category 1 — comparison/review site"
-  },
-  {
-   "domain": "mql5.com",
-   "why": "category 1 — marketplace of third-party MetaTrader tools"
-  },
-  {
-   "domain": "ment.tech",
-   "why": "category 4 — custom software agency, no product of its own"
-  },
-  {
-   "domain": "ventureradar.com",
-   "why": "category 1 — company directory"
-  },
-  {
-   "domain": "backrun.co",
-   "why": "category 4 — sells browser extensions, no trading product"
-  },
-  {
-   "domain": "stockio.ai",
-   "why": "category 2 — service discontinued"
-  }
- ]
+  "slug": "robinhood-agentic-trading-alternatives",
+  "rows": [
+    {
+      "name": "LuxAlgo",
+      "domain": "luxalgo.com",
+      "url": "https://www.luxalgo.com/",
+      "values": [
+        "Chart-based traders using indicators and backtesting",
+        "AI-assisted Quant coding agent and backtesting assistant",
+        "No trade execution; alerts and webhooks to brokers or bots",
+        "Free; paid $24.99 to $119.99/mo billed monthly"
+      ]
+    },
+    {
+      "name": "XBTFX",
+      "domain": "xbtfx.com",
+      "url": "https://xbtfx.com/",
+      "values": [
+        "CFD traders wanting API access or copy trading",
+        "MCP server links Claude, Cursor and Windsurf to accounts",
+        "Trading API (REST, WebSocket, FIX); PAMM, MAM and copy trading",
+        "Spreads and commissions; figures not published"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "pinggy.io",
+      "why": "category 3 \u2014 localhost tunneling developer tool, not finance"
+    }
+  ]
 }

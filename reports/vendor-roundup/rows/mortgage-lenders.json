@@ -1,47 +1,18 @@
 {
- "slug": "best-mortgage-lenders",
- "rows": [
-  {
-   "name": "Loandrone",
-   "domain": "loandrone.com",
-   "url": "https://loandrone.com",
-   "values": [
-    "Purchase and refinance borrowers in 43 states",
-    "Yes, VA cash-out refinance up to 100% of value",
-    "Not published",
-    "Not published",
-    "Rate check with no credit pull"
-   ]
-  },
-  {
-   "name": "The Home Loan Expert",
-   "domain": "thehomeloanexpert.com",
-   "url": "https://thehomeloanexpert.com",
-   "values": [
-    "Purchase and refinance borrowers",
-    "Yes, has VA specialists",
-    "Not published",
-    "Not published",
-    "Closing in as little as 14 days"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "lendedu.com",
-   "why": "category 1 — review/comparison site"
-  },
-  {
-   "domain": "themortgagereports.com",
-   "why": "category 1 — publisher"
-  },
-  {
-   "domain": "ownup.com",
-   "why": "category 1 — marketplace; states it is not a lender and arranges loans"
-  },
-  {
-   "domain": "revenuebase.ai",
-   "why": "category 1 — company data directory"
-  }
- ]
+  "slug": "best-mortgage-lenders",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "nchfa.com",
+      "why": "category 1 \u2014 state housing finance agency, government"
+    },
+    {
+      "domain": "scotsmanguide.com",
+      "why": "category 1 \u2014 trade publisher, no product of its own"
+    },
+    {
+      "domain": "mpamag.com",
+      "why": "category 1 \u2014 mortgage trade publication"
+    }
+  ]
 }

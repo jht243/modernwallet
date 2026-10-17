@@ -3,8 +3,12 @@
  "rows": [],
  "cut": [
   {
-   "domain": "joinjuno.com",
-   "why": "category 1 \u2014 group-negotiation marketplace matching members to partner lenders; does not state it lends itself (borderline)"
+   "domain": "westandmain.co",
+   "why": "category 3 \u2014 real estate brokerage, no student loan product"
+  },
+  {
+   "domain": "studentloanplanner.com",
+   "why": "category 4 \u2014 planning service and lender referrals, no refinance loan of its own"
   }
  ]
 }
