@@ -19,9 +19,10 @@ export default function RothVsTraditional401kCalculator({ initialData, heading, 
   const result = useMemo(() => computeRothVsTraditional401k(input), [input]);
   const set = (patch: Partial<RothVsTraditional401kInput>) => setInput((s) => ({ ...s, ...patch }));
 
-  const headline =
+  const valid = input.traditionalAnnual > 0 && input.years > 0 && input.returnPct >= 0;
+  const headline = !valid ? "Enter a deferral, a number of years, and a return of 0% or more" :
     result.winner === "roth" ? "Roth finishes ahead by" : result.winner === "traditional" ? "Traditional finishes ahead by" : "The two finish even";
-  const headlineValue = result.winner === "tie" ? fmtUSD(0, { cents: true }) : fmtUSD(Math.abs(result.rothAdvantage), { cents: true });
+  const headlineValue = !valid ? "" : result.winner === "tie" ? fmtUSD(0, { cents: true }) : fmtUSD(Math.abs(result.rothAdvantage), { cents: true });
 
   return (
     <div style={S.wrap}>

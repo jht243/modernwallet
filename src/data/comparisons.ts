@@ -4299,6 +4299,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     metaDescription:
       "Roth 401(k) vs Traditional 401(k): taxes, contribution limits, employer match, and which version saves more based on your tax rate.",
     targetKeyword: "roth 401k vs traditional 401k",
+    updated: "2026-10-17",
     optionA: "Roth 401(k)",
     optionB: "Traditional 401(k)",
     h1: "Roth 401(k) vs Traditional 401(k): Which Version Wins?",

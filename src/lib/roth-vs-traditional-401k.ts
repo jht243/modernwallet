@@ -54,8 +54,8 @@ function futureValue(monthly: number, annualPct: number, months: number): number
 
 export function computeRothVsTraditional401k(input: RothVsTraditional401kInput): RothVsTraditional401kResult {
   const { traditionalAnnual, currentRatePct, retirementRatePct, returnPct } = input;
-  const years = Math.round(input.years);
-  if (!(traditionalAnnual > 0) || !(years > 0) || returnPct < 0) return EMPTY;
+  const years = Math.min(Math.round(input.years), 100);
+  if (!(traditionalAnnual > 0) || traditionalAnnual > 1e9 || !(years > 0) || !(returnPct >= 0) || returnPct > 100) return EMPTY;
   const now = Math.min(Math.max(currentRatePct, 0), 99) / 100;
   const later = Math.min(Math.max(retirementRatePct, 0), 99) / 100;
   const months = years * 12;
@@ -64,6 +64,7 @@ export function computeRothVsTraditional401k(input: RothVsTraditional401kInput):
   const takeHomeCostAnnual = rothAnnual;
   const rothBalance = futureValue(rothAnnual / 12, returnPct, months);
   const traditionalBalancePreTax = futureValue(traditionalAnnual / 12, returnPct, months);
+  if (!Number.isFinite(rothBalance) || !Number.isFinite(traditionalBalancePreTax)) return EMPTY;
   const traditionalTaxAtWithdrawal = traditionalBalancePreTax * later;
   const traditionalBalanceAfterTax = traditionalBalancePreTax - traditionalTaxAtWithdrawal;
   const rothAdvantage = rothBalance - traditionalBalanceAfterTax;
