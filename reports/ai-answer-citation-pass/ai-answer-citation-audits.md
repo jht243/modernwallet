@@ -92,3 +92,28 @@
 | /compliance/colorado-antitrust-premerger-notification-update/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
 | /compliance/colorado-cottage-foods-act-expansion/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
 | /methodology/ | 2026-10-10 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| / | 2026-10-17 | best iul calculator free | ABSENT | no | insurancegeek.com/allstate.com/locallifeagents.com (+4 more) | none | n/a |
+| /guides/trump-account-worth-it/ | 2026-10-17 | are trump accounts for kids a scam | ABSENT | no | mapscu.com/irs.gov/murphy3.com | none | n/a |
+| /roundup/best-mortgage-lenders/ | 2026-10-17 | best company for mortgage loan | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /roundup/best-online-will-makers/ | 2026-10-17 | build a will online | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /compare/roth-401k-vs-traditional-401k/ | 2026-10-17 | 401k roth or traditional | ABSENT | no | fidelity.com/umcu.org/benefits.ml.com (+3 more) | none | n/a |
+| /compare/custodial-account-vs-savings-account/ | 2026-10-17 | custodial account vs savings account | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /guides/defensive-investment-strategy/ | 2026-10-17 | defensive equity | ABSENT | no | investopedia.com/morningstar.com/fidelity.com (+1 more) | none | n/a |
+| /guides/ | 2026-10-17 | wealthability cost | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /budget/ | 2026-10-17 | nerdwallet budget calculator | ABSENT | no | nerdwallet.com | none | n/a |
+| /roundup/best-living-trust-services/ | 2026-10-17 | cheap irrevocable trust | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /compare/llc-vs-c-corp/ | 2026-10-17 | c corp to run llc | ABSENT | no | guidantfinancial.com/reddit.com/youtube.com (+5 more) | none | n/a |
+| /compare/bilt-rewards-vs-chase-ultimate-rewards/ | 2026-10-17 | are bilt points worth more than chase ultimate rewards? | none (unread) | n/a | n/a | none | n/a |
+| /compare/529-vs-brokerage-account/ | 2026-10-17 | 529 brokerage account | ABSENT | no | savingforcollege.com/fidelity.com/schwab.com (+4 more) | none | n/a |
+| /about/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /investing/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /methodology/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /portfolio/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /merchant-cash-advance/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /calculators/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /probate/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /roundup/best-net-worth-tracker/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /business-line-of-credit/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /retirement/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /auto-loan/payoff-calculator/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /invoice-factoring/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
