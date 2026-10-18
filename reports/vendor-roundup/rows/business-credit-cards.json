@@ -2,38 +2,25 @@
  "slug": "best-business-credit-cards",
  "rows": [
   {
-   "name": "Rippling Corporate Card",
-   "domain": "rippling.com",
-   "url": "https://www.rippling.com/products/finance/corporate-cards",
+   "name": "Volopay",
+   "domain": "volopay.com",
+   "url": "https://volopay.com",
    "values": [
-    "Rippling Corporate Card",
-    "No (company states no personal guarantee)",
-    "Corporate charge card, balance paid in full",
-    "No",
-    "Startups wanting cash back tied to company spend management"
-   ]
-  },
-  {
-   "name": "Rho Card",
-   "domain": "rho.co",
-   "url": "https://www.rho.co/product/corporate-cards",
-   "values": [
-    "Rho Card",
-    "No (company states approval uses business financials)",
-    "Corporate charge card, full balance paid each statement",
-    "No",
-    "US-incorporated businesses with an EIN; sole proprietors are not eligible"
+    "Not published",
+    "Corporate cards (physical, virtual) with spend management",
+    "Not published; sales-quoted pricing",
+    "Startups to enterprises managing team spend"
    ]
   }
  ],
  "cut": [
   {
-   "domain": "thehartford.com",
-   "why": "category 4 \u2014 insurer, sells business insurance not credit cards; fits business insurance category"
+   "domain": "elanfinancialservices.com",
+   "why": "category 3 \u2014 B2B card-issuing service for banks and credit unions; no direct card to apply for"
   },
   {
-   "domain": "frequentmiler.com",
-   "why": "category 1 \u2014 affiliate-supported points and miles publisher, no product of its own"
+   "domain": "pointsnav.com",
+   "why": "category 1 \u2014 card ranking and comparison site, not an issuer"
   }
  ]
 }

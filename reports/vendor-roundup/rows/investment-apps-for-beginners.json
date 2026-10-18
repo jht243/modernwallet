@@ -1,43 +1,10 @@
 {
  "slug": "best-investment-apps-for-beginners",
- "rows": [
-  {
-   "name": "Kraken",
-   "domain": "kraken.com",
-   "url": "https://www.kraken.com/stocks",
-   "values": [
-    "Not published",
-    "Not published",
-    "Not published",
-    "N/A",
-    "Commission-free trading of 11,000+ US stocks and ETFs alongside crypto"
-   ]
-  }
- ],
+ "rows": [],
  "cut": [
   {
-   "domain": "moneyweek.com",
-   "why": "category 1 \u2014 publisher/review site, no product of its own"
-  },
-  {
-   "domain": "naga.com",
-   "why": "category 1 \u2014 site lists U.S. as restricted country; does not serve US residents"
-  },
-  {
-   "domain": "changeinvest.com",
-   "why": "category 4 \u2014 fits crypto exchange category; EU-based crypto and CFD platform, no US stock investing"
-  },
-  {
-   "domain": "theguardian.com",
-   "why": "category 1 \u2014 publisher/review site, no product of its own"
-  },
-  {
-   "domain": "wpsdlocal6.com",
-   "why": "category 1 \u2014 local news broadcaster, publisher"
-  },
-  {
-   "domain": "beginnerbull.com",
-   "why": "category 1 \u2014 publisher/review site, no product of its own"
+   "domain": "ditchnet.org",
+   "why": "category 1 \u2014 community forum, sells no product"
   }
  ]
 }

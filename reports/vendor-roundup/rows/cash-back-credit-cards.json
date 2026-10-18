@@ -1,18 +1,26 @@
 {
- "slug": "best-cash-back-credit-cards",
- "rows": [],
- "cut": [
-  {
-   "domain": "cnn.com",
-   "why": "category 1 \u2014 news publisher"
-  },
-  {
-   "domain": "wallethacks.com",
-   "why": "category 1 \u2014 credit card review/comparison site"
-  },
-  {
-   "domain": "community.clark.com",
-   "why": "category 1 \u2014 community forum thread, no product"
-  }
- ]
+  "slug": "best-cash-back-credit-cards",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "www-staging.comparecredit.com",
+      "why": "category 1 — advertising-supported comparison site, not an issuer"
+    },
+    {
+      "domain": "teacher981.tistory.com",
+      "why": "category 1 — personal blog"
+    },
+    {
+      "domain": "credello.com",
+      "why": "category 1 — card recommendation/comparison site, not an issuer"
+    },
+    {
+      "domain": "freeloan.org",
+      "why": "category 1 — content/lead-capture site with no named lender, licence or loan terms"
+    },
+    {
+      "domain": "goodfinancetips.com",
+      "why": "category 1 — personal finance blog"
+    }
+  ]
 }

@@ -1,28 +1,18 @@
-{"slug":"best-invoicing-apps-for-freelancers",
-"rows":[
-{"name":"Helcim","domain":"helcim.com","url":"https://www.helcim.com/","values":["No monthly or sign-up fees; pay per transaction","Not published","Interchange-plus pricing; rates on pricing page","Online invoicing alongside card and ACH processing"]},
-{"name":"Refrens","domain":"refrens.com","url":"https://www.refrens.com/","values":["Free plan up to 15 documents; paid plan prices not published","Not published","Small payment gateway fee on online payments; rate not published","Web-based invoicing and accounting for small businesses and consultants"]},
-{"name":"InvoiceTemple","domain":"invoicetemple.com","url":"https://invoicetemple.com/","values":["Free up to 5 invoices per month; unlimited plan price not published","Not published","Not published","Invoices and estimates app for small businesses and freelancers"]},
-{"name":"Ruul","domain":"ruul.io","url":"https://ruul.io/","values":["No setup cost, no monthly fees; transaction fees not published","Not published","Not published","Invoicing and payouts in 140 currencies for freelancers without a company"]},
-{"name":"InvoiceBloom","domain":"invoicebloom.io","url":"https://invoicebloom.io/","values":["Free plan with unlimited invoices","Payment tracking and reminders included","0.5% platform fee plus Stripe's processing fee","Free invoicing for freelancers, contractors and small businesses"]},
-{"name":"Stintly","domain":"stintly.app","url":"https://stintly.app/","values":["Free; Pro $12.99/month; Premium $19.99/month","AI reminder tone adjuster on Pro; auto-send not described","Not published","Offline invoices, expenses and time tracking for iPhone, iPad and Mac"]},
-{"name":"Autopilot","domain":"autopilotapp.io","url":"https://autopilotapp.io/","values":["$49/month Run plan includes invoicing; 2-week free trial","Automated job reminder texts on every plan","Not published","Scheduling and invoicing for home service businesses"]},
-{"name":"Akaunting","domain":"akaunting.com","url":"https://akaunting.com/","values":["Free open-source accounting software; plan details not published","Not published","Not published","Free invoicing and accounting for small businesses and freelancers"]},
-{"name":"Invoice Chaser","domain":"invoicechaser.app","url":"https://www.invoicechaser.app/","values":["Not published; Start for Free button","AI payment reminders that stop once paid","Not published","Automated chasing of unpaid invoices, connects to Xero"]},
-{"name":"Moon Invoice","domain":"mooninvoice.com","url":"https://mooninvoice.com/","values":["Plan prices not published; 7-day free trial","Automated payment reminders for late-paying clients","Not published; 20+ gateways including Stripe, PayPal, Square","Invoicing, estimates and expenses for freelancers and small businesses"]},
-{"name":"Billgami","domain":"billgami.com","url":"https://billgami.com/","values":["Free tier, monthly, annual and lifetime plans; prices not published","None; invoice status is set manually","None; does not process payments","Mobile invoices and estimates for solo contractors and freelancers"]},
-{"name":"Skydo","domain":"skydo.com","url":"https://skydo.com/","values":["$19 up to $2,000; $29 to $10,000; 0.3% above","Custom payment reminders","Not published","GST invoices and foreign payments for Indian exporters"]},
-{"name":"DepositFix","domain":"depositfix.com","url":"https://depositfix.com/","values":["Not published","Automated invoices, reminders and collections","Not published; surcharging and dual pricing offered","B2B invoicing and payments for service businesses and accountants"]},
-{"name":"QuoteAnvil","domain":"quoteanvil.com","url":"https://quoteanvil.com/","values":["$70/year Copper (1 user); up to $395/year","Not published","Bronze lists 3.0% payment processing; Copper none","Estimates and invoices for contractors and trades"]},
-{"name":"Cakedesk","domain":"cakedesk.app","url":"https://cakedesk.app/","values":["One-time EUR 69 with one year of updates","Not published","Not published","Offline desktop invoices and proposals for freelancers"]},
-{"name":"InstantInvoice","domain":"instantinvoice.io","url":"https://instantinvoice.io/","values":["Free tier; Pro $7/month","Automatic reminders before and after due dates","Not published; Stripe and PayPal payments","Invoice generator for freelancers, contractors and small businesses"]}
+{"slug":"best-invoicing-apps-for-freelancers","rows":[
+{"name":"Abillio","domain":"abill.io","url":"https://abill.io","values":["No monthly fee; 5% service fee per payout","Yes, late-payment reminders sent to clients","Client card payouts: 1 EUR (EU), 3 EUR (non-EU)","Freelancers invoicing without their own company; Latvia and Estonia tax handled"]},
+{"name":"Equisettle","domain":"equisettle.co.uk","url":"https://equisettle.co.uk","values":["From £79/month (Foundation); £169/month (Operations)","Yes, automatic reminders listed; timing not published","Not published","B2B finance teams chasing receivables alongside Xero, QuickBooks or Sage"]},
+{"name":"Invoicely","domain":"invoicely.com","url":"https://invoicely.com","values":["Free (5 invoices/month); paid from $9.99/month","Yes, automatic reminders on recurring invoices","Gateway-dependent; cards on paid plans via Stripe, Authorize.net, Mollie","Freelancers and small businesses starting with a free plan"]},
+{"name":"Conta","domain":"conta.com","url":"https://conta.com","values":["$9.99/month Standard, $14.99/month Premium (billed annually)","Yes, automated payment reminders on Standard","Not published","Freelancers and sole traders sending invoices by email or WhatsApp"]},
+{"name":"Trove","domain":"trove.works","url":"https://trove.works","values":["£50/month Essential; £135 Integrated; £285 Advanced","Yes, automated due-date chasing with replies you approve","Not published","Xero, QuickBooks or FreeAgent users who need overdue invoices chased"]},
+{"name":"Paymo","domain":"paymoapp.com","url":"https://paymoapp.com","values":["Free plan; paid from $5.9/month, 15-day trial","Not published","Not published; online payment providers supported","Freelancers and small teams combining time tracking with invoicing"]},
+{"name":"Zintego","domain":"zintego.com","url":"https://zintego.com","values":["$6.99/month Basic (3 invoices); $19.99/month unlimited","Not published","Not published","Freelancers and small businesses wanting invoice and estimate templates"]},
+{"name":"Chaser","domain":"chaserhq.com","url":"https://chaserhq.com","values":["£199/month Compact; £599 Core; £899 Complete","Yes, automated chasing by email, SMS and phone","Not published","Larger credit control teams chasing receivables, not solo freelancers"]},
+{"name":"BuildWell","domain":"buildwellapp.com","url":"https://buildwellapp.com","values":["$79.99/year or $7.99/week, 3-day trial","Not published","No BuildWell fee; Stripe 2.9% + 30¢ passes through","Contractors who want AI-drafted estimates and invoices"]},
+{"name":"Meinvoicer","domain":"meinvoicer.com","url":"https://meinvoicer.com","values":["Free, unlimited invoices","Not published","Not published","Freelancers needing a quick free invoice template and PDF download"]},
+{"name":"Instant PDF Invoice","domain":"instantpdfinvoice.com","url":"https://instantpdfinvoice.com","values":["Free to start, no sign-up; paid prices not published","Yes, reminders advertised; details not published","Not published; Stripe, PayPal or bank transfer accepted","Freelancers and contractors wanting simple PDF invoices"]}
 ],
 "cut":[
-{"domain":"arc.dev","why":"category 4 — remote hiring marketplace, no invoicing product"},
-{"domain":"blog.bloom.io","why":"category 1 — blog subdomain, no product of its own"},
-{"domain":"doubleyourfreelancing.com","why":"category 1 — courses and articles, no invoicing product"},
-{"domain":"joshrickert.com","why":"category 1 — personal site and blog"},
-{"domain":"webcatalog.io","why":"category 4 — desktop app wrapper, no invoicing product"},
-{"domain":"portant.co","why":"category 4 — HubSpot document automation for sales teams"},
-{"domain":"techjockey.com","why":"category 1 — software marketplace"}
+{"domain":"doranpay.com","why":"category 2 — unverifiable; homepage is script-rendered with no readable content and /pricing returns 404"},
+{"domain":"survaipro.com","why":"category 4 — AI site-survey proposals for service businesses, no invoicing; no fit in other finance categories"},
+{"domain":"designhill.com","why":"category 1 — creative design marketplace; free invoice generator is only a side tool"}
 ]}

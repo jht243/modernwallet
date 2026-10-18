@@ -1,10 +1,22 @@
 {
- "slug": "best-credit-cards-for-fair-credit",
- "rows": [],
- "cut": [
-  {
-   "domain": "bestonreviews.com",
-   "why": "category 1 \u2014 review/affiliate site, no cards issued"
-  }
- ]
+  "slug": "best-credit-cards-for-fair-credit",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "creditsoup.com",
+      "why": "category 1 — advertising-supported comparison marketplace, not an issuer"
+    },
+    {
+      "domain": "gauss.money",
+      "why": "category 4 — membership app with balance-transfer line and loans, no fair-credit card; fits personal loans category"
+    },
+    {
+      "domain": "creditsesame.com",
+      "why": "category 4 — credit monitoring and offers marketplace, no card of its own; fits credit monitoring category"
+    },
+    {
+      "domain": "financeglobe.com",
+      "why": "category 1 — card comparison and review site, not an issuer"
+    }
+  ]
 }

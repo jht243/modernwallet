@@ -72,6 +72,18 @@
       "$0 (no account or brokerage link required)"
      ],
      "added": "2026-10-16"
+    },
+    {
+     "name": "TruthSayer AI",
+     "domain": "truthsayer.com",
+     "url": "https://truthsayer.com",
+     "values": [
+      "Retail investors who want model-generated stock trade alerts",
+      "7-day free trial, then $10.99/mo or $71.88/yr",
+      "Rule-based quant models plus an AI chat explaining each signal",
+      "Not published; alerts only, no custody or trading"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -178,6 +190,18 @@
       "$29/mo Starter; $99/mo Pro"
      ],
      "added": "2026-10-16"
+    },
+    {
+     "name": "Hallucination Yield",
+     "domain": "hallucinationyield.com",
+     "url": "https://hallucinationyield.com",
+     "values": [
+      "Researchers following what AI models say about stocks",
+      "Aggregated AI-model consensus rankings and an AI stock screener",
+      "Yes, all current features free",
+      "Not published; Premium listed as coming soon"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -608,6 +632,19 @@
       "Canadian couples and families sharing budgets in real time"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "MoneyPatrol",
+     "domain": "moneypatrol.com",
+     "url": "https://moneypatrol.com",
+     "values": [
+      "Free tier; paid $29.99-$79.99/yr, 15-day trial",
+      "Yes, shared budgets, joint accounts and bills",
+      "Yes, 13,000+ institutions listed",
+      "Not published",
+      "Couples wanting shared budgets, bill tracking and net worth in one app"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -764,6 +801,32 @@
       "Not published"
      ],
      "added": "2026-10-16"
+    },
+    {
+     "name": "Icon Savings Plan",
+     "domain": "iconsavingsplan.com",
+     "url": "https://iconsavingsplan.com",
+     "values": [
+      "Employers wanting a portable, fully managed 401(k)-style plan",
+      "Flat monthly price by headcount; amount via quote",
+      "Not published; flat tiers by employee count",
+      "Works with 200+ payroll providers",
+      "Yes, no plan administration or federal filings for employer"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "My Solo 401k Financial",
+     "domain": "mysolo401k.net",
+     "url": "https://mysolo401k.net",
+     "values": [
+      "Owner-only businesses wanting a self-directed Solo 401k",
+      "Not published",
+      "N/A",
+      "Not published",
+      "Not published"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -1304,6 +1367,123 @@
       "Law firm; attorney meetings, drafting not stated"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Surprenant, Beneski & Nunes, P.C.",
+     "domain": "myfamilyestateplanning.com",
+     "url": "https://myfamilyestateplanning.com",
+     "values": [
+      "Not published",
+      "Not published",
+      "Not published",
+      "Yes: special needs and Medicaid trusts",
+      "Yes, law firm; MA offices"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "White and Bright, LLP",
+     "domain": "whiteandbright.com",
+     "url": "https://whiteandbright.com",
+     "values": [
+      "Not published; call 760-747-3200",
+      "Not published",
+      "Not published",
+      "Trusts and estates practice; details not published",
+      "Yes, law firm in Escondido, CA"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Ettinger Law Firm",
+     "domain": "trustlaw.com",
+     "url": "https://trustlaw.com",
+     "values": [
+      "Not published; fee proposal at free consultation",
+      "Not published",
+      "Not published",
+      "Special needs trusts and Medicaid asset protection",
+      "Yes, law firm with 12 New York offices"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Montgomery Law Firm, LLC",
+     "domain": "montgomeryestateplanning.com",
+     "url": "https://montgomeryestateplanning.com",
+     "values": [
+      "Not published; call (843) 815-8580",
+      "Not published",
+      "Not published",
+      "Irrevocable trust FAQ listed; fees not published",
+      "Yes, attorney-led firm in Bluffton, SC"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Robert K. Lee, Attorney",
+     "domain": "robertkleelaw.com",
+     "url": "https://robertkleelaw.com",
+     "values": [
+      "Flat fee; amount not published on homepage",
+      "Not published",
+      "Not published",
+      "Not published",
+      "Yes, California attorney licensed 36 years"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Best Coast Estate Law, P.C.",
+     "domain": "bestcoastestatelaw.com",
+     "url": "https://bestcoastestatelaw.com",
+     "values": [
+      "$3,500 individual / $5,000 couple",
+      "Will included in trust package",
+      "Deed and transfer document included",
+      "Not published",
+      "Yes, California law firm"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "ArchAngel Trust and Probate Services, APC",
+     "domain": "archangeltrust.com",
+     "url": "https://archangeltrust.com",
+     "values": [
+      "Not published; call (760) 946-2233",
+      "Offered; inclusion not stated",
+      "Deeds recorded, accounts retitled",
+      "Special needs trusts; irrevocable not stated",
+      "Yes, Attorney Victoria P. Martin"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Mint Law Group LLP",
+     "domain": "mintlawfirm.com",
+     "url": "https://mintlawfirm.com",
+     "values": [
+      "Not published; call 863-216-7886",
+      "Not published",
+      "Not published",
+      "Mentions complex tax-avoiding trusts; no detail",
+      "Yes, Lakeland, FL law firm"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Law Offices of Odelia Goldberg",
+     "domain": "ogoldberglaw.com",
+     "url": "https://ogoldberglaw.com",
+     "values": [
+      "Not published; call 954-832-0885",
+      "Not published",
+      "Not published",
+      "Not published",
+      "Yes, Florida attorney-reviewed; Fort Lauderdale"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -1331,6 +1511,45 @@
       "Web app with encrypted vault; 14-day free trial"
      ],
      "added": "2026-10-16"
+    },
+    {
+     "name": "MyCase",
+     "domain": "mycase.com",
+     "url": "https://www.mycase.com",
+     "values": [
+      "N/A; law-firm practice management software",
+      "N/A; documents auto-populated, no trust templates stated",
+      "N/A",
+      "N/A",
+      "Web and iOS app; $60-$150/user/month"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Lawyers With Purpose (STEPS)",
+     "domain": "lawyerswithpurpose.com",
+     "url": "https://lawyerswithpurpose.com",
+     "values": [
+      "Not published",
+      "STEPS trust and estate planning software for attorneys",
+      "Not published",
+      "Attorneys use it to draft; not consumer review",
+      "Not published; demo on request"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "RightCapital",
+     "domain": "rightcapital.com",
+     "url": "https://rightcapital.com",
+     "values": [
+      "N/A; planning software for advisors",
+      "N/A",
+      "N/A",
+      "N/A",
+      "Web; 14-day free trial, pricing not published"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -1392,6 +1611,30 @@
       "Privacy and low cost; works offline"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Envelope",
+     "domain": "envelopebudgeting.com",
+     "url": "https://envelopebudgeting.com",
+     "values": [
+      "$10/month or $40/yr; annual fee waived at $5,000 card spend",
+      "No (budget runs on its own checking account)",
+      "Envelope budgeting with virtual cards and sinking funds",
+      "Budgeters wanting budget, checking account and debit cards in one app"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Neto",
+     "domain": "netoapp.es",
+     "url": "https://netoapp.es",
+     "values": [
+      "Free; optional PRO from €49.99/yr (iPhone, Spain pricing)",
+      "No (manual entry, no bank connection)",
+      "Manual tracking with category budget limits and savings goals",
+      "People who track spending and net worth without linking banks"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -1415,6 +1658,19 @@
       "Not published"
      ],
      "added": "2026-10-16"
+    },
+    {
+     "name": "Charles Schwab",
+     "domain": "international.schwab.com",
+     "url": "https://international.schwab.com",
+     "values": [
+      "Investors wanting Treasuries in a full-service brokerage",
+      "$0 online; $25 charge if broker-assisted",
+      "Yes, secondary market, $0 online commission",
+      "Not published",
+      "Not published"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -1492,6 +1748,18 @@
       "3.90% APY as of Oct 5, 2026; FDIC insured"
      ],
      "added": "2026-10-16"
+    },
+    {
+     "name": "Upgrade",
+     "domain": "upgrade.com",
+     "url": "https://www.upgrade.com/premier-savings/",
+     "values": [
+      "$1,000 for the stated APY",
+      "None",
+      "None stated",
+      "Variable 3.30% APY as of Oct 2026; joint accounts; FDIC via partner banks"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -1682,6 +1950,19 @@
       "Not published"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "MoneyLion",
+     "domain": "moneylion.com",
+     "url": "https://www.moneylion.com/personal-loans/",
+     "values": [
+      "Comparing partner-lender offers; bad-credit applicants may see offers",
+      "$500 to $100,000, set by partner lenders",
+      "Not published",
+      "Not published; each lender sets origination and other fees",
+      "A few hours to a few days, depending on lender"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -1954,6 +2235,17 @@
       "Institutional investors, financial authors, professionals"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Ghostfolio",
+     "domain": "ghostfol.io",
+     "url": "https://ghostfol.io",
+     "values": [
+      "No backtester listed; tracks performance of assets you hold",
+      "Yes for cloud; self-hosting open source needs no account",
+      "Open-source net worth and portfolio tracking across platforms"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -2127,6 +2419,18 @@
       "Must reach 'Funding Ready' status first"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Efficient Capital Labs",
+     "domain": "ecaplabs.com",
+     "url": "https://ecaplabs.com",
+     "values": [
+      "Non-dilutive monthly-repay capital for SaaS/AI companies",
+      "Not published; over $5M by request",
+      "72 hrs claimed; FAQ says 3-5 business days",
+      "$500K ARR, 3+ months runway"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -2305,6 +2609,30 @@
       "Funding $10K to $10M per month; company handles collections"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Liquid Capital",
+     "domain": "liquidcapitalcorp.com",
+     "url": "https://liquidcapitalcorp.com",
+     "values": [
+      "General B2B factoring, asset-based lending, PO financing",
+      "Not published",
+      "As fast as one day",
+      "Invoice purchase, 80%+ advance, reserve on collection; up to $10M"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Transwest Capital",
+     "domain": "transwestcapital.com",
+     "url": "https://transwestcapital.com",
+     "values": [
+      "General B2B, freight and payroll funding",
+      "Not published",
+      "Same-day funding claimed",
+      "Invoice factoring plus AR financing and fuel card"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -2384,6 +2712,18 @@
       "US-incorporated businesses with an EIN; sole proprietors are not eligible"
      ],
      "added": "2026-10-16"
+    },
+    {
+     "name": "Volopay",
+     "domain": "volopay.com",
+     "url": "https://volopay.com",
+     "values": [
+      "Not published",
+      "Corporate cards (physical, virtual) with spend management",
+      "Not published; sales-quoted pricing",
+      "Startups to enterprises managing team spend"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -2578,6 +2918,32 @@
       "Not published"
      ],
      "added": "2026-10-16"
+    },
+    {
+     "name": "ConnectOne Bank",
+     "domain": "connectonebank.com",
+     "url": "https://connectonebank.com",
+     "values": [
+      "No monthly maintenance fee listed",
+      "None; $100 to open",
+      "Not published",
+      "FDIC-insured (Member FDIC)",
+      "No fees for cash processing/deposits"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Grasshopper Bank",
+     "domain": "grasshopper.bank",
+     "url": "https://grasshopper.bank",
+     "values": [
+      "$0 (Innovator Business Checking)",
+      "None; $100 to open",
+      "$5",
+      "Up to $250,000; more via ICS sweep",
+      "Select MoneyPass ATMs; no branches"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -2850,6 +3216,66 @@
       "Freelancers and small businesses"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Lettuce",
+     "domain": "lettuce.co",
+     "url": "https://lettuce.co",
+     "values": [
+      "$49/mo (Grow, LLC management)",
+      "Not published",
+      "Invoice management included",
+      "Solo owners wanting LLC/S Corp, tax and books handled"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Pilot",
+     "domain": "pilot.com",
+     "url": "https://pilot.com",
+     "values": [
+      "$99/mo (Essentials bookkeeping)",
+      "N/A",
+      "Not published",
+      "Startups and small businesses wanting done-for-you books"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Steph's Books",
+     "domain": "stephsbooks.com",
+     "url": "https://stephsbooks.com",
+     "values": [
+      "From $350/mo; quote-based",
+      "N/A",
+      "AR/AP service offered",
+      "Professional services firms with $1MM-$10MM revenue"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Cashflowy",
+     "domain": "cashflowy.ai",
+     "url": "https://cashflowy.ai",
+     "values": [
+      "$39/mo or $390/yr",
+      "Not published",
+      "Not published",
+      "US solo owners wanting bookkeeping and tax set-aside planning"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "ClaryBook",
+     "domain": "clarybook.com",
+     "url": "https://clarybook.com",
+     "values": [
+      "$15/mo Starter; 30-day free trial",
+      "Not published",
+      "PDF invoices, reminders, A/R aging",
+      "Freelancers and sole proprietors tracking deductions and quarterly taxes"
+     ],
+     "added": "2026-10-18"
     }
    ]
   },
@@ -3161,6 +3587,138 @@
       "Invoice generator for freelancers, contractors and small businesses"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Abillio",
+     "domain": "abill.io",
+     "url": "https://abill.io",
+     "values": [
+      "No monthly fee; 5% service fee per payout",
+      "Yes, late-payment reminders sent to clients",
+      "Client card payouts: 1 EUR (EU), 3 EUR (non-EU)",
+      "Freelancers invoicing without their own company; Latvia and Estonia tax handled"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Equisettle",
+     "domain": "equisettle.co.uk",
+     "url": "https://equisettle.co.uk",
+     "values": [
+      "From £79/month (Foundation); £169/month (Operations)",
+      "Yes, automatic reminders listed; timing not published",
+      "Not published",
+      "B2B finance teams chasing receivables alongside Xero, QuickBooks or Sage"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Invoicely",
+     "domain": "invoicely.com",
+     "url": "https://invoicely.com",
+     "values": [
+      "Free (5 invoices/month); paid from $9.99/month",
+      "Yes, automatic reminders on recurring invoices",
+      "Gateway-dependent; cards on paid plans via Stripe, Authorize.net, Mollie",
+      "Freelancers and small businesses starting with a free plan"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Conta",
+     "domain": "conta.com",
+     "url": "https://conta.com",
+     "values": [
+      "$9.99/month Standard, $14.99/month Premium (billed annually)",
+      "Yes, automated payment reminders on Standard",
+      "Not published",
+      "Freelancers and sole traders sending invoices by email or WhatsApp"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Trove",
+     "domain": "trove.works",
+     "url": "https://trove.works",
+     "values": [
+      "£50/month Essential; £135 Integrated; £285 Advanced",
+      "Yes, automated due-date chasing with replies you approve",
+      "Not published",
+      "Xero, QuickBooks or FreeAgent users who need overdue invoices chased"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Paymo",
+     "domain": "paymoapp.com",
+     "url": "https://paymoapp.com",
+     "values": [
+      "Free plan; paid from $5.9/month, 15-day trial",
+      "Not published",
+      "Not published; online payment providers supported",
+      "Freelancers and small teams combining time tracking with invoicing"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Zintego",
+     "domain": "zintego.com",
+     "url": "https://zintego.com",
+     "values": [
+      "$6.99/month Basic (3 invoices); $19.99/month unlimited",
+      "Not published",
+      "Not published",
+      "Freelancers and small businesses wanting invoice and estimate templates"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Chaser",
+     "domain": "chaserhq.com",
+     "url": "https://chaserhq.com",
+     "values": [
+      "£199/month Compact; £599 Core; £899 Complete",
+      "Yes, automated chasing by email, SMS and phone",
+      "Not published",
+      "Larger credit control teams chasing receivables, not solo freelancers"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "BuildWell",
+     "domain": "buildwellapp.com",
+     "url": "https://buildwellapp.com",
+     "values": [
+      "$79.99/year or $7.99/week, 3-day trial",
+      "Not published",
+      "No BuildWell fee; Stripe 2.9% + 30¢ passes through",
+      "Contractors who want AI-drafted estimates and invoices"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Meinvoicer",
+     "domain": "meinvoicer.com",
+     "url": "https://meinvoicer.com",
+     "values": [
+      "Free, unlimited invoices",
+      "Not published",
+      "Not published",
+      "Freelancers needing a quick free invoice template and PDF download"
+     ],
+     "added": "2026-10-18"
+    },
+    {
+     "name": "Instant PDF Invoice",
+     "domain": "instantpdfinvoice.com",
+     "url": "https://instantpdfinvoice.com",
+     "values": [
+      "Free to start, no sign-up; paid prices not published",
+      "Yes, reminders advertised; details not published",
+      "Not published; Stripe, PayPal or bank transfer accepted",
+      "Freelancers and contractors wanting simple PDF invoices"
+     ],
+     "added": "2026-10-18"
     }
    ]
   }

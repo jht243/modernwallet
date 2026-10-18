@@ -2,59 +2,54 @@
  "slug": "best-estate-planning-software",
  "rows": [
   {
-   "name": "Vesperly",
-   "domain": "vesperly.com",
-   "url": "https://vesperly.com",
+   "name": "MyCase",
+   "domain": "mycase.com",
+   "url": "https://www.mycase.com",
    "values": [
-    "Vesperly digital account-access vault; Personal $149/yr, Family $349/yr",
-    "N/A; works alongside an existing will",
+    "N/A; law-firm practice management software",
+    "N/A; documents auto-populated, no trust templates stated",
     "N/A",
     "N/A",
+    "Web and iOS app; $60-$150/user/month"
+   ]
+  },
+  {
+   "name": "Lawyers With Purpose (STEPS)",
+   "domain": "lawyerswithpurpose.com",
+   "url": "https://lawyerswithpurpose.com",
+   "values": [
     "Not published",
-    "Web app with encrypted vault; 14-day free trial"
+    "STEPS trust and estate planning software for attorneys",
+    "Not published",
+    "Attorneys use it to draft; not consumer review",
+    "Not published; demo on request"
+   ]
+  },
+  {
+   "name": "RightCapital",
+   "domain": "rightcapital.com",
+   "url": "https://rightcapital.com",
+   "values": [
+    "N/A; planning software for advisors",
+    "N/A",
+    "N/A",
+    "N/A",
+    "Web; 14-day free trial, pricing not published"
    ]
   }
  ],
  "cut": [
   {
-   "domain": "docupilot.com",
-   "why": "category 4 \u2014 document automation software; no estate planning product, fits business software"
+   "domain": "law.co",
+   "why": "category 4 \u2014 legal AI workspace for law firms, no estate planning product and no fit in a finance category"
   },
   {
-   "domain": "holistiplan.com",
-   "why": "category 3 \u2014 advisor/tax-pro software only; estate module 'coming soon'"
+   "domain": "giftplanning.aarp.org",
+   "why": "category 1 \u2014 AARP Foundation fundraising page and lead form, no product of its own"
   },
   {
-   "domain": "beyondcounsel.io",
-   "why": "category 3 \u2014 software sold only to estate planning attorneys"
-  },
-  {
-   "domain": "leaplegalsoftware.com",
-   "why": "category 3 \u2014 law-firm practice management software"
-  },
-  {
-   "domain": "resources.evans-legal.com",
-   "why": "category 1 \u2014 legal blog/subscription resource site, no product of its own"
-  },
-  {
-   "domain": "interactivelegal.yourefolio.com",
-   "why": "category 3 \u2014 licensed professional software for practitioners, login page only; no consumer pricing"
-  },
-  {
-   "domain": "blog.encorestateplans.com",
-   "why": "category 3 \u2014 blog of software sold only to financial advisors"
-  },
-  {
-   "domain": "remembers.life",
-   "why": "category 3 \u2014 life-story/memorial platform, not finance"
-  },
-  {
-   "domain": "relaw.ai",
-   "why": "category 3 \u2014 practice software for law firms"
-  },
-  {
-   "domain": "michaeleweintraubscholarship.com",
-   "why": "category 1 \u2014 scholarship site publishing a listicle; no product, site unreadable"
+   "domain": "slashdot.org",
+   "why": "category 1 \u2014 tech news and software review site, sells nothing"
   }
  ]
 }

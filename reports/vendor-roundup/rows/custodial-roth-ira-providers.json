@@ -1,42 +1,30 @@
 {
- "slug": "best-custodial-roth-ira-providers",
- "rows": [
-  {
-   "name": "T. Rowe Price",
-   "domain": "troweprice.com",
-   "url": "https://www.troweprice.com/personal-investing/accounts/retirement/ira/index.html",
-   "values": [
-    "T. Rowe Price",
-    "$1,000 to open; $100 to add",
-    "$20/yr below $10,000, waived with e-delivery",
-    "Not published"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "carry.com",
-   "why": "category 4 \u2014 fits IRA/solo 401(k) category; pricing page shows no custodial IRA"
-  },
-  {
-   "domain": "verdence.com",
-   "why": "category 4 \u2014 high-net-worth advisory firm, not a custodial IRA provider"
-  },
-  {
-   "domain": "iwillteachyoutoberich.com",
-   "why": "category 1 \u2014 comparison/review/publisher site with no product of its own"
-  },
-  {
-   "domain": "millennialmoney.com",
-   "why": "category 1 \u2014 comparison/review/publisher site with no product of its own"
-  },
-  {
-   "domain": "colewealth.com",
-   "why": "category 4 \u2014 registered investment adviser, not a custodian"
-  },
-  {
-   "domain": "rothwizards.com",
-   "why": "category 1 \u2014 comparison/review/publisher site with no product of its own"
-  }
- ]
+  "slug": "best-custodial-roth-ira-providers",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "admin316.com",
+      "why": "category 4 — employer retirement plan fiduciary/administration, no custodial Roth IRA; fits 401(k) providers for small business"
+    },
+    {
+      "domain": "wealthgenadvisor.com",
+      "why": "category 4 — fee-only financial planning firm, no custodial Roth IRA account offered on site; fits financial advisor category"
+    },
+    {
+      "domain": "kidvestors.co",
+      "why": "category 4 — kids financial education platform, no Roth IRA; fits financial education category"
+    },
+    {
+      "domain": "thefinancebuff.com",
+      "why": "category 1 — personal finance blog"
+    },
+    {
+      "domain": "knockedupmoney.com",
+      "why": "category 1 — personal finance blog"
+    },
+    {
+      "domain": "kerberrose.com",
+      "why": "category 4 — accounting and advisory firm, no custodial Roth IRA product published; fits financial advisor category"
+    }
+  ]
 }

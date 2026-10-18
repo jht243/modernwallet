@@ -1,28 +1,10 @@
 {
  "slug": "best-brokerage-accounts-for-interest-on-cash",
- "rows": [
+ "rows": [],
+ "cut": [
   {
-   "name": "E*TRADE from Morgan Stanley",
-   "domain": "us.etrade.com",
-   "url": "https://us.etrade.com",
-   "values": [
-    "Bank Deposit Program at program banks",
-    "FDIC via program banks; SIPC does not cover those deposits",
-    "Not published",
-    "Optional E*TRADE Bank savings account beside brokerage"
-   ]
-  },
-  {
-   "name": "Morgan Stanley",
-   "domain": "morganstanley.com",
-   "url": "https://www.morganstanley.com/what-we-do/wealth-management/cash-management-solutions",
-   "values": [
-    "CashPlus brokerage account sweeping to program banks",
-    "FDIC up to $250,000 per bank on swept deposits",
-    "Monthly fee waived only with qualifying accounts or balances",
-    "Unlimited ATM fee rebates worldwide on CashPlus"
-   ]
+   "domain": "brokerage-review.com",
+   "why": "category 1 \u2014 brokerage review/comparison site owned by ACM Media LLC, no product of its own"
   }
- ],
- "cut": []
+ ]
 }

@@ -1,5 +1,23 @@
 {
-  "slug": "best-brokers-for-treasury-bonds",
-  "rows": [],
-  "cut": []
+ "slug": "best-brokers-for-treasury-bonds",
+ "rows": [
+  {
+   "name": "Charles Schwab",
+   "domain": "international.schwab.com",
+   "url": "https://international.schwab.com",
+   "values": [
+    "Investors wanting Treasuries in a full-service brokerage",
+    "$0 online; $25 charge if broker-assisted",
+    "Yes, secondary market, $0 online commission",
+    "Not published",
+    "Not published"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "aarp.org",
+   "why": "category 1 \u2014 membership organization and publisher, sells no Treasuries"
+  }
+ ]
 }

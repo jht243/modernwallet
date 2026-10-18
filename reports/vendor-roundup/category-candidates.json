@@ -1,32 +1,27 @@
 {
   "site": "themodernwallet.com",
   "cut_as_other_category": {
-    "payroll/small-business hr software": [
-      "joinhomebase.com"
-    ],
-    "financial planning/advisor": [
-      "facet.com"
-    ],
-    "stock research/screener": [
-      "stockanalysis.com"
-    ],
-    "tax/credit categories": [
-      "intuit.com"
-    ],
-    "banks": [
-      "bankofsunprairie.com"
-    ],
     "unlabelled": [
-      "backrun.co",
+      "arc.dev",
+      "businessdebtadjusters.com",
       "carry.com",
+      "certumsolutions.com",
+      "cheers.credit",
       "colewealth.com",
-      "legalshield.com",
-      "ment.tech",
-      "phaedrasolutions.com",
-      "pragmaticcoders.com",
-      "ridleylawoffices.com",
+      "connecteam.com",
+      "emburse.com",
+      "equifax.com",
+      "gainaltitude.ai",
+      "grantphillipslaw.com",
+      "institutionhq.com",
+      "jotform.com",
+      "legendfusions.com",
+      "metlife.com",
+      "portant.co",
+      "studentloanplanner.com",
       "verdence.com",
-      "yourmoneyline.com"
+      "walnutinvest.com",
+      "webcatalog.io"
     ],
     "business insurance": [
       "thehartford.com"
@@ -36,25 +31,6 @@
     ],
     "crypto exchange": [
       "changeinvest.com"
-    ],
-    "business loans/lines of credit": [
-      "redlinecapitalinc.com"
-    ],
-    "personal loans": [
-      "avant.com",
-      "liftcredit.com"
-    ],
-    "invoicing": [
-      "finli.com"
-    ],
-    "remittance": [
-      "remitly.com"
-    ],
-    "refinance": [
-      "rate.com"
-    ],
-    "debt relief": [
-      "nationaldebtrelief.com"
     ]
   },
   "demand_candidates": [
@@ -235,21 +211,21 @@
       ]
     },
     {
+      "head": "pay best buy credit card",
+      "volume": 208500,
+      "queries": [
+        "pay best buy credit card",
+        "best buy pay credit card",
+        "pay for best buy credit card"
+      ]
+    },
+    {
       "head": "pay best buy credit card bill",
       "volume": 195000,
       "queries": [
         "pay best buy credit card bill",
         "best buy credit card bill pay",
         "best buy credit card pay bill"
-      ]
-    },
-    {
-      "head": "pay best buy credit card",
-      "volume": 195000,
-      "queries": [
-        "pay best buy credit card",
-        "pay for best buy credit card",
-        "best buy pay credit card"
       ]
     },
     {
@@ -504,17 +480,17 @@
     },
     {
       "head": "best small business banks",
-      "volume": 60000,
+      "volume": 57600,
       "queries": [
         "best small business banks",
-        "best bank small business",
         "small business best bank",
-        "best banks for small business",
         "best small business bank",
         "best business banks for small business",
         "best bank for a small business",
+        "best bank small business",
         "best banks small business",
         "best bank for small business",
+        "best banks for small business",
         "best business bank for small business"
       ]
     },
@@ -585,14 +561,14 @@
     },
     {
       "head": "small business banking best",
-      "volume": 39600,
+      "volume": 37200,
       "queries": [
         "small business banking best",
-        "best for small business banking",
         "best business banking small business",
-        "best banking for small business",
         "best business banking for small business",
-        "best small business banking"
+        "best small business banking",
+        "best for small business banking",
+        "best banking for small business"
       ]
     },
     {
@@ -643,5 +619,5 @@
       ]
     }
   ],
-  "cost": "DataForSEO: 8 calls, $0.34992 of $2.00 budget"
+  "cost": "DataForSEO: 8 calls, $0.34968 of $2.00 budget"
 }

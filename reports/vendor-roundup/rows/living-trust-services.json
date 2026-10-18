@@ -2,82 +2,122 @@
  "slug": "best-living-trust-services",
  "rows": [
   {
-   "name": "Generation Living Trusts",
-   "domain": "generationlivingtrusts.com",
-   "url": "https://generationlivingtrusts.com/",
+   "name": "Surprenant, Beneski & Nunes, P.C.",
+   "domain": "myfamilyestateplanning.com",
+   "url": "https://myfamilyestateplanning.com",
    "values": [
     "Not published",
-    "Yes, part of the Living Trust Portfolio",
-    "Yes, funding instructions and follow-up support",
     "Not published",
-    "Not stated; says it is not a law firm, uses attorney network"
+    "Not published",
+    "Yes: special needs and Medicaid trusts",
+    "Yes, law firm; MA offices"
    ]
   },
   {
-   "name": "299Trust",
-   "domain": "299trust.com",
-   "url": "https://299trust.com/",
+   "name": "White and Bright, LLP",
+   "domain": "whiteandbright.com",
+   "url": "https://whiteandbright.com",
    "values": [
-    "$299 individual / $399 joint",
-    "Will included; pour-over not described",
+    "Not published; call 760-747-3200",
     "Not published",
-    "No, revocable trusts only",
-    "No, says it is not a law firm"
+    "Not published",
+    "Trusts and estates practice; details not published",
+    "Yes, law firm in Escondido, CA"
    ]
   },
   {
-   "name": "Isha Singh Law",
-   "domain": "ishasinghlaw.com",
-   "url": "https://ishasinghlaw.com/",
+   "name": "Ettinger Law Firm",
+   "domain": "trustlaw.com",
+   "url": "https://trustlaw.com",
    "values": [
-    "Not published; flat-fee pricing stated",
+    "Not published; fee proposal at free consultation",
     "Not published",
     "Not published",
-    "Not published",
-    "Law firm with direct attorney access"
+    "Special needs trusts and Medicaid asset protection",
+    "Yes, law firm with 12 New York offices"
    ]
   },
   {
-   "name": "Laguna Legal",
-   "domain": "lagunalegalhelp.com",
-   "url": "https://lagunalegalhelp.com/",
+   "name": "Montgomery Law Firm, LLC",
+   "domain": "montgomeryestateplanning.com",
+   "url": "https://montgomeryestateplanning.com",
    "values": [
+    "Not published; call (843) 815-8580",
     "Not published",
     "Not published",
-    "Not published",
-    "Not published",
-    "No, staff are not attorneys; works with attorneys"
+    "Irrevocable trust FAQ listed; fees not published",
+    "Yes, attorney-led firm in Bluffton, SC"
    ]
   },
   {
-   "name": "Lawvex",
-   "domain": "lawvex.com",
-   "url": "https://lawvex.com/",
+   "name": "Robert K. Lee, Attorney",
+   "domain": "robertkleelaw.com",
+   "url": "https://robertkleelaw.com",
    "values": [
+    "Flat fee; amount not published on homepage",
     "Not published",
     "Not published",
     "Not published",
-    "Not published",
-    "Law firm with dedicated estate planning attorneys"
+    "Yes, California attorney licensed 36 years"
    ]
   },
   {
-   "name": "Matlin Law Group",
-   "domain": "matlinlawgroup.com",
-   "url": "http://www.matlinlawgroup.com/",
+   "name": "Best Coast Estate Law, P.C.",
+   "domain": "bestcoastestatelaw.com",
+   "url": "https://bestcoastestatelaw.com",
    "values": [
+    "$3,500 individual / $5,000 couple",
+    "Will included in trust package",
+    "Deed and transfer document included",
+    "Not published",
+    "Yes, California law firm"
+   ]
+  },
+  {
+   "name": "ArchAngel Trust and Probate Services, APC",
+   "domain": "archangeltrust.com",
+   "url": "https://archangeltrust.com",
+   "values": [
+    "Not published; call (760) 946-2233",
+    "Offered; inclusion not stated",
+    "Deeds recorded, accounts retitled",
+    "Special needs trusts; irrevocable not stated",
+    "Yes, Attorney Victoria P. Martin"
+   ]
+  },
+  {
+   "name": "Mint Law Group LLP",
+   "domain": "mintlawfirm.com",
+   "url": "https://mintlawfirm.com",
+   "values": [
+    "Not published; call 863-216-7886",
+    "Not published",
+    "Not published",
+    "Mentions complex tax-avoiding trusts; no detail",
+    "Yes, Lakeland, FL law firm"
+   ]
+  },
+  {
+   "name": "Law Offices of Odelia Goldberg",
+   "domain": "ogoldberglaw.com",
+   "url": "https://ogoldberglaw.com",
+   "values": [
+    "Not published; call 954-832-0885",
     "Not published",
     "Not published",
     "Not published",
-    "Not published; 'complex trust' mentioned",
-    "Law firm; attorney meetings, drafting not stated"
+    "Yes, Florida attorney-reviewed; Fort Lauderdale"
    ]
   }
  ],
  "cut": [
   {
-   "domain": "metlife.com",
-   "why": "category 4 \u2014 sells employer legal plans, no living trust product shown"
+   "domain": "actec.org",
+   "why": "category 1 \u2014 professional association and lawyer directory, no service of its own"
+  },
+  {
+   "domain": "jasonwootten.com",
+   "why": "category 2 \u2014 unverifiable: site returned no content and search found nothing; SERP title is a listicle"
   }
  ]
 }

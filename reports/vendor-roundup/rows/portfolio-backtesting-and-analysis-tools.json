@@ -2,34 +2,15 @@
  "slug": "best-portfolio-backtesting-and-analysis-tools",
  "rows": [
   {
-   "name": "ValueInvesting.io",
-   "domain": "valueinvesting.io",
-   "url": "https://valueinvesting.io/",
+   "name": "Ghostfolio",
+   "domain": "ghostfol.io",
+   "url": "https://ghostfol.io",
    "values": [
-    "Not published",
-    "Yes, free plan needs an account",
-    "Stock research; $0, $14.99 or $42.99 per month plans"
-   ]
-  },
-  {
-   "name": "BeatMarket",
-   "domain": "beatmarket.com",
-   "url": "https://www.beatmarket.com/",
-   "values": [
-    "Not published",
-    "Not published",
-    "Institutional investors, financial authors, professionals"
+    "No backtester listed; tracks performance of assets you hold",
+    "Yes for cloud; self-hosting open source needs no account",
+    "Open-source net worth and portfolio tracking across platforms"
    ]
   }
  ],
- "cut": [
-  {
-   "domain": "gainaltitude.ai",
-   "why": "category 4 \u2014 CRM software for financial advisors"
-  },
-  {
-   "domain": "dumblittleman.com",
-   "why": "category 1 \u2014 personal blog, no product"
-  }
- ]
+ "cut": []
 }

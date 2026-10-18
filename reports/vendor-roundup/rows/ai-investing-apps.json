@@ -2,32 +2,21 @@
  "slug": "best-ai-investing-apps",
  "rows": [
   {
-   "name": "Barebone AI",
-   "domain": "barebone.ai",
-   "url": "https://barebone.ai",
+   "name": "TruthSayer AI",
+   "domain": "truthsayer.com",
+   "url": "https://truthsayer.com",
    "values": [
-    "Retail investors wanting AI stock research and portfolio monitoring",
-    "Not published on homepage; paid Barebone Pro tier exists",
-    "Agentic AI routing queries across models and analysis algorithms",
-    "N/A (read-only brokerage link; no trading)"
-   ]
-  },
-  {
-   "name": "StockCar",
-   "domain": "stockcar.app",
-   "url": "https://stockcar.app",
-   "values": [
-    "Stock owners wanting spoken news briefings, including CarPlay",
-    "Free trial of 10 tracks; $2.99/mo Standard; $5.99/mo Pro",
-    "Generative AI audio episodes from news and prices",
-    "$0 (no account or brokerage link required)"
+    "Retail investors who want model-generated stock trade alerts",
+    "7-day free trial, then $10.99/mo or $71.88/yr",
+    "Rule-based quant models plus an AI chat explaining each signal",
+    "Not published; alerts only, no custody or trading"
    ]
   }
  ],
  "cut": [
   {
-   "domain": "theinvestorspodcast.com",
-   "why": "category 1 \u2014 podcast/publisher listicle, no product"
+   "domain": "ideausher.com",
+   "why": "category 3 \u2014 custom software development agency, sells no investing app"
   }
  ]
 }

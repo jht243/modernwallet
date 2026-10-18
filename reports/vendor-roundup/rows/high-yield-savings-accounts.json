@@ -2,27 +2,21 @@
  "slug": "best-high-yield-savings-accounts",
  "rows": [
   {
-   "name": "HSBC",
-   "domain": "us.hsbc.com",
-   "url": "https://us.hsbc.com/savings/",
+   "name": "Upgrade",
+   "domain": "upgrade.com",
+   "url": "https://www.upgrade.com/premier-savings/",
    "values": [
-    "$1",
-    "Not published",
-    "None listed",
-    "Premier Relationship Savings; higher rate needs linked Premier checking, as of Oct 2026"
-   ]
-  },
-  {
-   "name": "Popular Direct",
-   "domain": "populardirect.com",
-   "url": "https://www.populardirect.com/high-yield-savings",
-   "values": [
-    "$100 to open",
-    "Not published",
-    "None listed",
-    "3.90% APY as of Oct 5, 2026; FDIC insured"
+    "$1,000 for the stated APY",
+    "None",
+    "None stated",
+    "Variable 3.30% APY as of Oct 2026; joint accounts; FDIC via partner banks"
    ]
   }
  ],
- "cut": []
+ "cut": [
+  {
+   "domain": "northwesternmutual.com",
+   "why": "category 4 \u2014 no savings account on site; fits financial planning and life insurance categories"
+  }
+ ]
 }

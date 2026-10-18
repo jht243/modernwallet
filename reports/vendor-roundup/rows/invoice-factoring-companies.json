@@ -1,59 +1,52 @@
 {
-  "slug": "best-invoice-factoring-companies",
-  "rows": [
-    {
-      "name": "Eagle Business Credit",
-      "domain": "eaglebusinesscredit.com",
-      "url": "https://eaglebusinesscredit.com/",
-      "values": [
-        "Invoice, PO, export and freight bill factoring; staffing, transport, manufacturing",
-        "Not published",
-        "Funding in 24 hours; lines $1,000 to $5,000,000",
-        "Express from 1%, no term; Classic from 2%, 6 months; Premier custom"
-      ]
-    },
-    {
-      "name": "Capstone Corporate Funding",
-      "domain": "capstonetrade.com",
-      "url": "https://capstonetrade.com/",
-      "values": [
-        "Invoice factoring, PO and import financing; construction, staffing, oil and gas",
-        "Not published",
-        "Not published",
-        "Private finance company; funds some products itself, others via outside sources"
-      ]
-    },
-    {
-      "name": "Now",
-      "domain": "nowcorp.com",
-      "url": "https://nowcorp.com/",
-      "values": [
-        "B2B invoice-to-cash for agencies, consulting and professional services",
-        "Not described as recourse or non-recourse",
-        "Get paid in 24 hours",
-        "Flat fee 2.50% (15-day) to 7.50% (90-day); $250 activation fee"
-      ]
-    },
-    {
-      "name": "Factor Funding",
-      "domain": "factorfunding.com",
-      "url": "https://www.factorfunding.com/",
-      "values": [
-        "Receivables factoring, plus asset-based loans, PO and equipment financing",
-        "Not published",
-        "24-48 hours after approval",
-        "Funding $10K to $10M per month; company handles collections"
-      ]
-    }
-  ],
-  "cut": [
-    {
-      "domain": "factoringcompanies.com",
-      "why": "category 1 \u2014 lead-gen/referral site matching businesses to third-party factors"
-    },
-    {
-      "domain": "thebrokershopinc.com",
-      "why": "category 1 \u2014 funding broker/lead-gen, no product of its own"
-    }
-  ]
+ "slug": "best-invoice-factoring-companies",
+ "rows": [
+  {
+   "name": "Liquid Capital",
+   "domain": "liquidcapitalcorp.com",
+   "url": "https://liquidcapitalcorp.com",
+   "values": [
+    "General B2B factoring, asset-based lending, PO financing",
+    "Not published",
+    "As fast as one day",
+    "Invoice purchase, 80%+ advance, reserve on collection; up to $10M"
+   ]
+  },
+  {
+   "name": "Transwest Capital",
+   "domain": "transwestcapital.com",
+   "url": "https://transwestcapital.com",
+   "values": [
+    "General B2B, freight and payroll funding",
+    "Not published",
+    "Same-day funding claimed",
+    "Invoice factoring plus AR financing and fuel card"
+   ]
+  },
+  {
+   "name": "Factor Funding",
+   "domain": "factorfunding.com",
+   "url": "https://factorfunding.com",
+   "values": [
+    "AR factoring plus asset-based, PO and equipment finance",
+    "Not published",
+    "24-48 hours after approval",
+    "$10K to $10M per month; advance rate not published"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "atsinc.com",
+   "why": "category 3 \u2014 Anderson Trucking Service, a freight carrier with no factoring product"
+  },
+  {
+   "domain": "staging.dripcapital.com",
+   "why": "category 2 \u2014 staging mirror of dripcapital.com that loads only a title; unverifiable"
+  },
+  {
+   "domain": "factoringclub.com",
+   "why": "category 1 \u2014 referral/matchmaking directory, not a factor"
+  }
+ ]
 }

@@ -1,39 +1,14 @@
 {
-  "slug": "best-same-day-business-loans",
-  "rows": [
-    {
-      "name": "One Park Financial",
-      "domain": "oneparkfinancial.com",
-      "url": "https://oneparkfinancial.com/",
-      "values": [
-        "$1,500,000 (minimum $10,000)",
-        "Often within 24 hours",
-        "500 FICO",
-        "Not published"
-      ]
-    },
-    {
-      "name": "Shield Funding",
-      "domain": "shieldfunding.com",
-      "url": "https://shieldfunding.com/",
-      "values": [
-        "$1,000,000 (minimum $5,000)",
-        "As fast as same day",
-        "500+ FICO",
-        "Daily or weekly; terms 3 months to 3 years"
-      ]
-    },
-    {
-      "name": "AMP Advance",
-      "domain": "ampadvance.com",
-      "url": "https://ampadvance.com/",
-      "values": [
-        "Not published",
-        "Within 24 hours of choosing an offer; same day available",
-        "Not published",
-        "Not published"
-      ]
-    }
-  ],
-  "cut": []
+ "slug": "best-same-day-business-loans",
+ "rows": [],
+ "cut": [
+  {
+   "domain": "offthemrkt.com",
+   "why": "category 1 \u2014 New York real estate blog/publisher"
+  },
+  {
+   "domain": "franklinfinancingservices.com",
+   "why": "category 1 \u2014 broker routing to partner lenders via contact form; publishes no amounts, speed or terms"
+  }
+ ]
 }

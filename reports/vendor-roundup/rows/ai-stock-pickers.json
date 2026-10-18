@@ -1,10 +1,22 @@
 {
-  "slug": "best-ai-stock-pickers",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "monday.com",
-      "why": "category 3 \u2014 work management software, no investing product"
-    }
-  ]
+ "slug": "best-ai-stock-pickers",
+ "rows": [
+  {
+   "name": "Hallucination Yield",
+   "domain": "hallucinationyield.com",
+   "url": "https://hallucinationyield.com",
+   "values": [
+    "Researchers following what AI models say about stocks",
+    "Aggregated AI-model consensus rankings and an AI stock screener",
+    "Yes, all current features free",
+    "Not published; Premium listed as coming soon"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "f6s.com",
+   "why": "category 1 \u2014 startup/software directory, no product of its own"
+  }
+ ]
 }

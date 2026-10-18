@@ -1,17 +1,18 @@
 {
-  "slug": "best-ai-trading-bots",
-  "rows": [
-    {
-      "name": "AlgoSone",
-      "domain": "algosone.ai",
-      "url": "https://algosone.ai/",
-      "values": [
-        "Beginners wanting automated trading; site says no experience needed",
-        "Not published; 2-week free trial offered",
-        "Automated, with hedging, stops and limits",
-        "Crypto, stocks, commodities, forex"
-      ]
-    }
-  ],
-  "cut": []
+ "slug": "best-ai-trading-bots",
+ "rows": [],
+ "cut": [
+  {
+   "domain": "hyrotrader.com",
+   "why": "category 4 \u2014 crypto prop-firm trading challenges, not a bot"
+  },
+  {
+   "domain": "vtmarkets.com",
+   "why": "category 4 \u2014 CFD broker, fits brokers category; no bot product described"
+  },
+  {
+   "domain": "bookmap.com",
+   "why": "category 4 \u2014 order-flow visualization platform, no automated bot; fits trading platforms"
+  }
+ ]
 }

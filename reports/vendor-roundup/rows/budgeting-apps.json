@@ -2,16 +2,44 @@
   "slug": "best-budgeting-apps",
   "rows": [
     {
-      "name": "BudgetVault",
-      "domain": "budgetvault.app",
-      "url": "https://budgetvault.app/",
+      "name": "Envelope",
+      "domain": "envelopebudgeting.com",
+      "url": "https://envelopebudgeting.com",
       "values": [
-        "Free",
-        "No (manual entry only)",
-        "Category-based monthly limits",
-        "Privacy and low cost; works offline"
+        "$10/month or $40/yr; annual fee waived at $5,000 card spend",
+        "No (budget runs on its own checking account)",
+        "Envelope budgeting with virtual cards and sinking funds",
+        "Budgeters wanting budget, checking account and debit cards in one app"
+      ]
+    },
+    {
+      "name": "Neto",
+      "domain": "netoapp.es",
+      "url": "https://netoapp.es",
+      "values": [
+        "Free; optional PRO from €49.99/yr (iPhone, Spain pricing)",
+        "No (manual entry, no bank connection)",
+        "Manual tracking with category budget limits and savings goals",
+        "People who track spending and net worth without linking banks"
       ]
     }
   ],
-  "cut": []
+  "cut": [
+    {
+      "domain": "spiritfinancialcu.org",
+      "why": "category 4 — credit union, no budgeting app; fits banks/credit unions category"
+    },
+    {
+      "domain": "communityamerica.com",
+      "why": "category 4 — credit union, no budgeting app; fits banks/credit unions category"
+    },
+    {
+      "domain": "sheetgo.com",
+      "why": "category 3 — spreadsheet automation software for business workflows, not a personal budgeting app"
+    },
+    {
+      "domain": "comwave.net",
+      "why": "category 3 — Canadian internet/TV/phone provider, outside personal finance"
+    }
+  ]
 }

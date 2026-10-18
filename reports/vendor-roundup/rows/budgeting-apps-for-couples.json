@@ -1,18 +1,31 @@
 {
-  "slug": "best-budgeting-apps-for-couples",
-  "rows": [
-    {
-      "name": "EMOH Pay",
-      "domain": "emohpay.com",
-      "url": "https://emohpay.com/",
-      "values": [
-        "Free; Pro $4.99/month",
-        "Yes (free family account sharing)",
-        "Pro plan only (Canadian banks via Plaid)",
-        "Not published",
-        "Canadian couples and families sharing budgets in real time"
-      ]
-    }
-  ],
-  "cut": []
+ "slug": "best-budgeting-apps-for-couples",
+ "rows": [
+  {
+   "name": "MoneyPatrol",
+   "domain": "moneypatrol.com",
+   "url": "https://moneypatrol.com",
+   "values": [
+    "Free tier; paid $29.99-$79.99/yr, 15-day trial",
+    "Yes, shared budgets, joint accounts and bills",
+    "Yes, 13,000+ institutions listed",
+    "Not published",
+    "Couples wanting shared budgets, bill tracking and net worth in one app"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "incharge.org",
+   "why": "category 4 \u2014 nonprofit credit counseling and debt management plans; fits debt relief category"
+  },
+  {
+   "domain": "theknot.com",
+   "why": "category 4 \u2014 wedding planning marketplace with a wedding-only budget tool, no couples budgeting app"
+  },
+  {
+   "domain": "faithloveandmoney.com",
+   "why": "category 1 \u2014 lifestyle blog with affiliate reviews, no budgeting product"
+  }
+ ]
 }

@@ -1,30 +1,74 @@
 {
-  "slug": "best-accounting-software-for-freelancers",
-  "rows": [
-    {
-      "name": "SnapBooks",
-      "domain": "snapbooks.pro",
-      "url": "https://snapbooks.pro/",
-      "values": [
-        "$15/month after 7-day trial",
-        "Unlimited clients and invoices",
-        "Recurring, multi-currency, Stripe and ACH payments, reminders",
-        "Freelancers and small businesses"
-      ]
-    }
-  ],
-  "cut": [
-    {
-      "domain": "legendfusions.com",
-      "why": "category 4 \u2014 tax/accounting advisory firm, not software"
-    },
-    {
-      "domain": "makeuseof.com",
-      "why": "category 1 \u2014 tech publisher, no product of its own"
-    },
-    {
-      "domain": "institutionhq.com",
-      "why": "category 4 \u2014 outsourced finance service for businesses, not freelancer software"
-    }
-  ]
+ "slug": "best-accounting-software-for-freelancers",
+ "rows": [
+  {
+   "name": "Lettuce",
+   "domain": "lettuce.co",
+   "url": "https://lettuce.co",
+   "values": [
+    "$49/mo (Grow, LLC management)",
+    "Not published",
+    "Invoice management included",
+    "Solo owners wanting LLC/S Corp, tax and books handled"
+   ]
+  },
+  {
+   "name": "Pilot",
+   "domain": "pilot.com",
+   "url": "https://pilot.com",
+   "values": [
+    "$99/mo (Essentials bookkeeping)",
+    "N/A",
+    "Not published",
+    "Startups and small businesses wanting done-for-you books"
+   ]
+  },
+  {
+   "name": "Steph's Books",
+   "domain": "stephsbooks.com",
+   "url": "https://stephsbooks.com",
+   "values": [
+    "From $350/mo; quote-based",
+    "N/A",
+    "AR/AP service offered",
+    "Professional services firms with $1MM-$10MM revenue"
+   ]
+  },
+  {
+   "name": "Cashflowy",
+   "domain": "cashflowy.ai",
+   "url": "https://cashflowy.ai",
+   "values": [
+    "$39/mo or $390/yr",
+    "Not published",
+    "Not published",
+    "US solo owners wanting bookkeeping and tax set-aside planning"
+   ]
+  },
+  {
+   "name": "ClaryBook",
+   "domain": "clarybook.com",
+   "url": "https://clarybook.com",
+   "values": [
+    "$15/mo Starter; 30-day free trial",
+    "Not published",
+    "PDF invoices, reminders, A/R aging",
+    "Freelancers and sole proprietors tracking deductions and quarterly taxes"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "deel.com",
+   "why": "category 4 \u2014 global payroll/contractor-hiring platform; no bookkeeping or freelancer accounting product"
+  },
+  {
+   "domain": "makealivingwriting.com",
+   "why": "category 1 \u2014 freelance-writing blog/publisher"
+  },
+  {
+   "domain": "secureitworld.com",
+   "why": "category 1 \u2014 cybersecurity news publisher"
+  }
+ ]
 }

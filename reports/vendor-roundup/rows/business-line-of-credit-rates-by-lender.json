@@ -1,17 +1,10 @@
 {
-  "slug": "business-line-of-credit-rates-by-lender",
-  "rows": [
-    {
-      "name": "Elite Funding Partners",
-      "domain": "elitefundingpartnersllc.com",
-      "url": "https://elitefundingpartnersllc.com/",
-      "values": [
-        "Revolving line, from $25,000; draw as needed",
-        "Not published",
-        "Not published; site says no hidden fees",
-        "Small businesses; needs four months of bank statements"
-      ]
-    }
-  ],
-  "cut": []
+ "slug": "business-line-of-credit-rates-by-lender",
+ "rows": [],
+ "cut": [
+  {
+   "domain": "nationwide.com",
+   "why": "category 4 \u2014 insurance and surety only; no business line of credit on its business page"
+  }
+ ]
 }

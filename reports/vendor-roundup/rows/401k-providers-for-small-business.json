@@ -1,10 +1,35 @@
 {
-  "slug": "best-401k-providers-for-small-business",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "uschamber.com",
-      "why": "category 1 \u2014 business association, no 401(k) product"
-    }
-  ]
+ "slug": "best-401k-providers-for-small-business",
+ "rows": [
+  {
+   "name": "Icon Savings Plan",
+   "domain": "iconsavingsplan.com",
+   "url": "https://iconsavingsplan.com",
+   "values": [
+    "Employers wanting a portable, fully managed 401(k)-style plan",
+    "Flat monthly price by headcount; amount via quote",
+    "Not published; flat tiers by employee count",
+    "Works with 200+ payroll providers",
+    "Yes, no plan administration or federal filings for employer"
+   ]
+  },
+  {
+   "name": "My Solo 401k Financial",
+   "domain": "mysolo401k.net",
+   "url": "https://mysolo401k.net",
+   "values": [
+    "Owner-only businesses wanting a self-directed Solo 401k",
+    "Not published",
+    "N/A",
+    "Not published",
+    "Not published"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "blog.clover.com",
+   "why": "category 1 \u2014 payments company's blog, no 401(k) product"
+  }
+ ]
 }

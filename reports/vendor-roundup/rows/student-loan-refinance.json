@@ -1,14 +1,10 @@
 {
- "slug": "best-student-loan-refinance",
- "rows": [],
- "cut": [
-  {
-   "domain": "westandmain.co",
-   "why": "category 3 \u2014 real estate brokerage, no student loan product"
-  },
-  {
-   "domain": "studentloanplanner.com",
-   "why": "category 4 \u2014 planning service and lender referrals, no refinance loan of its own"
-  }
- ]
+  "slug": "best-student-loan-refinance",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "goodloan.ai",
+      "why": "category 4 — mortgage lender (OM Mortgage), no student loan refinance; fits mortgage lenders category"
+    }
+  ]
 }

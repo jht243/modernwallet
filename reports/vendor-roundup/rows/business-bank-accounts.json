@@ -1,10 +1,30 @@
 {
-  "slug": "best-business-bank-accounts",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "saferate.com",
-      "why": "category 1 \u2014 publisher ranking mortgage lenders from HMDA data, no bank product"
-    }
-  ]
+ "slug": "best-business-bank-accounts",
+ "rows": [
+  {
+   "name": "ConnectOne Bank",
+   "domain": "connectonebank.com",
+   "url": "https://connectonebank.com",
+   "values": [
+    "No monthly maintenance fee listed",
+    "None; $100 to open",
+    "Not published",
+    "FDIC-insured (Member FDIC)",
+    "No fees for cash processing/deposits"
+   ]
+  },
+  {
+   "name": "Grasshopper Bank",
+   "domain": "grasshopper.bank",
+   "url": "https://grasshopper.bank",
+   "values": [
+    "$0 (Innovator Business Checking)",
+    "None; $100 to open",
+    "$5",
+    "Up to $250,000; more via ICS sweep",
+    "Select MoneyPass ATMs; no branches"
+   ]
+  }
+ ],
+ "cut": []
 }
