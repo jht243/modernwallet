@@ -1,4 +1,47 @@
 {
   "_note": "Vendors who have PAID. Hand-edited (or by the publisher routine), one vendor per commit, ONLY after the payment is confirmed (Stripe). Each entry makes the vendor's row a Featured row, pinned to the top of the roundup's comparison table, with a 'Visit site' link; every link to the domain renders rel=\"sponsored nofollow\" (scripts/vendor_nofollow.mjs). pages: list of roundup slugs (Featured listing, $100 = one page) or \"all\" (every roundup the vendor is listed on). The vendor must already be a row on that page (data/roundup-vendors.json). Remove the entry when a monthly placement lapses.",
-  "placements": []
+  "placements": [
+    {
+      "domain": "danielsonservices.com",
+      "pages": [
+        "best-bookkeeping-services-for-small-businesses"
+      ]
+    },
+    {
+      "domain": "murphyaccounting.com",
+      "pages": []
+    },
+    {
+      "domain": "haiglercpagroup.com",
+      "pages": [
+        "how-to-choose-a-cpa-or-tax-adviser"
+      ]
+    },
+    {
+      "domain": "globalgatetaxrelief.com",
+      "pages": []
+    },
+    {
+      "domain": "heatherstaxserviceandmore.com",
+      "pages": []
+    },
+    {
+      "domain": "eliteprotaxgvl.com",
+      "pages": [
+        "best-tax-preparation-services-for-freelancers"
+      ]
+    },
+    {
+      "domain": "tsminsurance.com",
+      "pages": [
+        "best-independent-insurance-agencies-in-california"
+      ]
+    },
+    {
+      "domain": "backhousehr.com",
+      "pages": [
+        "best-restaurant-hr-support-services-in-massachusetts"
+      ]
+    }
+  ]
 }

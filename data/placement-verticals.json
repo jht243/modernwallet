@@ -494,6 +494,66 @@
     "invoice app",
     "freelance invoice app"
    ]
+  },
+  {
+   "id": "bookkeeping-services",
+   "label": "bookkeeping services for small businesses",
+   "topic": "bookkeeping services for small businesses",
+   "roundupSlug": "best-bookkeeping-services-for-small-businesses",
+   "keywords": [
+    "bookkeeping services for small business",
+    "best bookkeeping services",
+    "online bookkeeping service",
+    "small business bookkeeper"
+   ]
+  },
+  {
+   "id": "freelancer-tax-preparers",
+   "label": "tax preparation services for freelancers and gig workers",
+   "topic": "tax preparation services for freelancers and gig workers",
+   "roundupSlug": "best-tax-preparation-services-for-freelancers",
+   "keywords": [
+    "tax preparation for freelancers",
+    "self employed tax preparer",
+    "tax preparer for 1099 contractors",
+    "freelancer tax service"
+   ]
+  },
+  {
+   "id": "cpa-tax-advisers",
+   "label": "CPAs and tax advisers",
+   "topic": "CPAs and tax advisers",
+   "roundupSlug": "how-to-choose-a-cpa-or-tax-adviser",
+   "keywords": [
+    "how to choose a cpa",
+    "how to choose a tax advisor",
+    "cpa vs enrolled agent",
+    "find a tax professional"
+   ]
+  },
+  {
+   "id": "california-independent-insurance-agencies",
+   "label": "independent insurance agencies in California",
+   "topic": "independent insurance agencies in California",
+   "roundupSlug": "best-independent-insurance-agencies-in-california",
+   "keywords": [
+    "independent insurance agency california",
+    "best insurance agency california",
+    "california insurance broker",
+    "independent insurance agent near me california"
+   ]
+  },
+  {
+   "id": "massachusetts-restaurant-hr-services",
+   "label": "restaurant HR support services in Massachusetts",
+   "topic": "restaurant HR support services in Massachusetts",
+   "roundupSlug": "best-restaurant-hr-support-services-in-massachusetts",
+   "keywords": [
+    "restaurant hr services massachusetts",
+    "restaurant hr consultant",
+    "hr outsourcing for restaurants",
+    "restaurant payroll and hr services"
+   ]
   }
  ]
 }

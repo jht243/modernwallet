@@ -1,6 +1,7 @@
 import type { FAQ, Source } from "./types";
 import { BUSINESS_GUIDES } from "./guides-business";
 import { SELF_EMPLOYED_GUIDES } from "./guides-self-employed";
+import { CLIENT_REVIEW_GUIDES } from "./guides-client-reviews";
 
 // Long-form GUIDE pages — top-of-funnel "journey" content that threads multiple calculators
 // together for a persona (home buyer, car buyer, pre-retiree). CONTENT via the keyword-gap
@@ -18852,6 +18853,7 @@ export const GUIDES: Guide[] = [
 },
 
   ...SELF_EMPLOYED_GUIDES,
+  ...CLIENT_REVIEW_GUIDES,
   // ── mindmap-pass 2026-09-30-robinhood (WSJ: Robinhood AI agents) ──
   {
     "updated": "2026-09-30",
