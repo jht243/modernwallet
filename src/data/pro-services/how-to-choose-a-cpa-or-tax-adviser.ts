@@ -9,13 +9,13 @@ export const HOW_TO_CHOOSE_A_CPA: RoundupEntry = {
   noAds: true,
   title: "How to Choose a CPA or Tax Adviser: Criteria & Firms",
   metaDescription:
-    "How to choose a certified public accountant (CPA) or tax adviser: credentials, license checks, fees, IRS red flags, and seven real providers compared.",
+    "How to choose a certified public accountant (CPA) or tax adviser: credentials, license checks, fees, IRS red flags, and five real providers compared.",
   targetKeyword: "how to choose a cpa",
   category: "tax advisers",
   angle: "best",
   h1: "How to Choose a CPA or Tax Adviser: Criteria and Firms to Compare",
   introText:
-    "Match your tax problem to a credential, then look up the license yourself. A certified public accountant (CPA), an enrolled agent (EA), and a tax attorney can all represent you before the Internal Revenue Service (IRS) in audits, collections, and appeals. A preparer with only a Preparer Tax Identification Number (PTIN) can file your return. That preparer cannot represent you for any return filed after 2015.\n\nAt ModernWallet, we build the tax calculators and guides people use before they hire anyone. The mistake we see most often is picking on price before checking the credential. Our answer for how to choose a CPA is three checks: the right credential, a license that verifies, and a fee that has nothing to do with your refund.\n\nWe ranked seven real providers. Each one shows a different credential type in practice. Haigler CPA Group comes first for Charleston-area business owners and real estate investors.",
+    "Match your tax problem to a credential, then look up the license yourself. A certified public accountant (CPA), an enrolled agent (EA), and a tax attorney can all represent you before the Internal Revenue Service (IRS) in audits, collections, and appeals. A preparer with only a Preparer Tax Identification Number (PTIN) can file your return. That preparer cannot represent you for any return filed after 2015.\n\nAt ModernWallet, we build the tax calculators and guides people use before they hire anyone. The mistake we see most often is picking on price before checking the credential. Our answer for how to choose a CPA is three checks: the right credential, a license that verifies, and a fee that has nothing to do with your refund.\n\nWe ranked five real providers, from a local CPA firm to a free IRS volunteer program. Haigler CPA Group comes first for Charleston-area business owners and real estate investors.",
   rankingCriteria:
     "We ranked on five things, in this order:\n\n1. Credential and IRS representation rights. A CPA, EA, or attorney can stay with you if the IRS sends a notice. A PTIN-only preparer has to hand that work to someone else.\n2. A license you can verify. Providers that publish a license number or a named credentialed person ranked higher.\n3. Stated scope. A provider that says what it does not do (payroll, legal advice, Tax Court) saves you a wasted consultation.\n4. Fee transparency. Published starting prices beat quote-only pricing. A fee tied to your refund would rule a provider out.\n5. Year-round access. The IRS tells taxpayers to pick someone available after April. Notices often arrive months after filing.\n\nEvery provider fact comes from that provider's own website as of October 2026. We did not hire any of them. Prices change, so get the figure in writing before you sign.",
   options: [
@@ -38,24 +38,6 @@ export const HOW_TO_CHOOSE_A_CPA: RoundupEntry = {
         "No audited or reviewed financial statements, which some lenders require",
       ],
       pricing: "Not published. Free consultation, then a quote per engagement.",
-    },
-    {
-      name: "Heather's Tax Service & More",
-      bestFor: "Oregon and southwest Washington households, farms, and small businesses that want an EA with published prices",
-      description:
-        "Heather's Tax Service & More is an EA-led practice with offices in Clackamas and The Dalles, Oregon. Owner Heather Perkins lists her enrolled agent number on the site, and an EA holds unlimited practice rights before the IRS. She also lists an Oregon Licensed Tax Consultant (LTC) number, because Oregon licenses paid preparers through its own state board.\n\nPrices are published. Personal returns start at $285 for W-2 income only and $385 for anything more. Small business, rental, and farm returns start at $525, and entity returns start at $1,900. Bookkeeping runs from $85 an hour. Our [Heather's Tax Service review](/guides/heathers-tax-service-review/) has the full breakdown.",
-      strengths: [
-        "Published starting prices, so you can budget before the first meeting",
-        "EA with unlimited IRS representation rights, plus an Oregon license",
-        "Handles Oregon local taxes and Oregon-Washington cross-border returns",
-        "Offers payroll, which Haigler CPA Group does not",
-      ],
-      limitations: [
-        "An EA cannot issue reviewed or audited financial statements. A lender that asks for them needs a CPA firm.",
-        "Offices serve the Portland area and the Columbia River Gorge. Clients elsewhere work remotely.",
-        "Payroll, planning, and IRS representation fees are quoted case by case",
-      ],
-      pricing: "Personal returns from $285. Business, rental, and farm from $525. Entity returns from $1,900. Bookkeeping from $85/hour.",
     },
     {
       name: "Taxfyle",
@@ -91,24 +73,6 @@ export const HOW_TO_CHOOSE_A_CPA: RoundupEntry = {
         "No reviewed or audited financial statements",
       ],
       pricing: "From $99 plus $75 per state return. Extra forms add to the price.",
-    },
-    {
-      name: "Elite Pro-Tax",
-      bestFor: "Upstate South Carolina households and small businesses that want returns, bookkeeping, and payroll in one office",
-      description:
-        "Elite Pro-Tax & Financial Services is an independent tax and accounting office in Easley, South Carolina, founded by LaToya Clark-Thompson. Elite Pro-Tax's site says it is not represented as a CPA firm. The site shows a PTIN Registered badge and IRS authorized e-file provider status, and lists no CPA or EA credential.\n\nThat makes Elite Pro-Tax the example here of a PTIN preparer. Elite Pro-Tax can prepare and e-file your return. Elite Pro-Tax says matters that need professional representation may be referred to a licensed professional.\n\nThe service list is wide. Elite Pro-Tax lists returns, planning, bookkeeping and catch-up bookkeeping, payroll, S corporation setup, and sales and use tax. Work happens in the Easley office or virtually, and no prices are published. See our [Elite Pro-Tax review](/guides/elite-pro-tax-review/).",
-      strengths: [
-        "Returns, bookkeeping, payroll, and entity setup from one office",
-        "Catch-up bookkeeping for books that are months behind",
-        "Says up front that it is not a CPA firm, so you know what you are hiring",
-        "In-office in Easley or virtual",
-      ],
-      limitations: [
-        "No CPA or EA credential listed. Without one, a preparer cannot represent you in an IRS audit or collection case.",
-        "No published prices",
-        "IRS disputes may go to an outside professional, which means a second fee",
-      ],
-      pricing: "Not published. Free consultation first.",
     },
     {
       name: "TurboTax Expert Full Service",
@@ -150,16 +114,14 @@ export const HOW_TO_CHOOSE_A_CPA: RoundupEntry = {
     headers: ["Credential", "IRS representation", "Published price", "Best for"],
     rows: [
       { name: "Haigler CPA Group", values: ["CPA (SC)", "Unlimited, Tax Court via counsel", "Quote after free consult", "Charleston business, real estate"] },
-      { name: "Heather's Tax Service & More", values: ["EA + Oregon LTC", "Unlimited", "From $285", "Oregon/WA households, farms"] },
       { name: "Taxfyle", values: ["CPAs and EAs", "Not described", "Calls from $50/30 min", "Remote CPA or EA match"] },
       { name: "H&R Block", values: ["Varies by preparer", "Varies by preparer", "From $99 + $75/state", "Walk-in standard returns"] },
-      { name: "Elite Pro-Tax", values: ["PTIN registered", "Refers out", "Not published", "Prep, books, payroll in one office"] },
       { name: "TurboTax Expert Full Service", values: ["Not stated", "Guidance, paid add-on", "Estimate before work", "Hands-off online filing"] },
       { name: "IRS VITA and TCE", values: ["IRS-certified volunteers", "None", "Free", "Simple returns"] },
     ],
   },
   verdict:
-    "Hire a CPA when the return is tied to a decision: an entity choice, a property sale, a business purchase, or an IRS letter. For a business or rental owner around Charleston, Haigler CPA Group fits that job. It has a license you can verify, real estate and M&A work, and IRS representation. Get the quote in writing, and plan on a separate payroll provider if you have employees.\n\nAn EA holds the same IRS representation rights. Heather's Tax Service & More is the example here, with prices on its site. For a standard return, H&R Block's $99 base price or a free VITA site will do. Whoever you pick, run the license through a public lookup first.",
+    "Hire a CPA when the return is tied to a decision: an entity choice, a property sale, a business purchase, or an IRS letter. For a business or rental owner around Charleston, Haigler CPA Group fits that job. It has a license you can verify, real estate and M&A work, and IRS representation. Get the quote in writing, and plan on a separate payroll provider if you have employees.\n\nAn EA holds the same IRS representation rights for federal tax work, so an EA-led practice can prepare the return and answer the IRS letter. A PTIN-only preparer can file the return but has to hand any notice to someone else. For a standard return, H&R Block's $99 base price or a free VITA site will do. Whoever you pick, run the license through a public lookup first.",
   sections: [
     {
       heading: "CPA vs Enrolled Agent vs Tax Preparer vs Tax Attorney",
@@ -169,7 +131,7 @@ export const HOW_TO_CHOOSE_A_CPA: RoundupEntry = {
     {
       heading: "How to Verify a CPA or Tax Adviser's License",
       content:
-        "Every credential has a free public lookup, and checking takes a few minutes. Do it before you share a Social Security number.\n\n1. Any credentialed preparer: search the [IRS Directory of Federal Tax Return Preparers](https://irs.treasury.gov/rpo/rpo.jsf). It lists CPAs, EAs, attorneys, and AFSP participants who hold a PTIN.\n2. CPA: search [CPAverify](https://cpaverify.org/), run by the [National Association of State Boards of Accountancy](https://nasba.org/) (NASBA), or the state board's own lookup. For Haigler CPA Group, that is the [South Carolina Board of Accountancy](https://llr.sc.gov/acct/).\n3. Enrolled agent: send the IRS Office of Enrollment an [EA verification request](https://www.irs.gov/tax-professionals/verify-the-status-of-an-enrolled-agent). The office aims to reply within 72 hours.\n4. Oregon preparers: search the [Oregon Board of Tax Practitioners lookup](https://public.orlicensing.oregon.gov/OBTPPublic/LPRBrowser.aspx).\n5. Tax attorney: search your state bar's member directory.\n\nA lookup shows whether the license is active. The South Carolina board also posts its disciplinary orders, so you can see past board action against a CPA licensed there.",
+        "Every credential has a free public lookup, and checking takes a few minutes. Do it before you share a Social Security number.\n\n1. Any credentialed preparer: search the [IRS Directory of Federal Tax Return Preparers](https://irs.treasury.gov/rpo/rpo.jsf). It lists CPAs, EAs, attorneys, and AFSP participants who hold a PTIN.\n2. CPA: search [CPAverify](https://cpaverify.org/), run by the [National Association of State Boards of Accountancy](https://nasba.org/) (NASBA), or the state board's own lookup. For Haigler CPA Group, that is the [South Carolina Board of Accountancy](https://llr.sc.gov/acct/).\n3. Enrolled agent: send the IRS Office of Enrollment an [EA verification request](https://www.irs.gov/tax-professionals/verify-the-status-of-an-enrolled-agent). The office aims to reply within 72 hours.\n4. State-licensed preparers: Oregon licenses paid preparers through its own state board, so search the [Oregon Board of Tax Practitioners lookup](https://public.orlicensing.oregon.gov/OBTPPublic/LPRBrowser.aspx).\n5. Tax attorney: search your state bar's member directory.\n\nA lookup shows whether the license is active. The South Carolina board also posts its disciplinary orders, so you can see past board action against a CPA licensed there.",
     },
     {
       heading: "Questions to Ask Before You Hire a Tax Adviser",
@@ -179,7 +141,7 @@ export const HOW_TO_CHOOSE_A_CPA: RoundupEntry = {
     {
       heading: "How CPAs and Tax Advisers Charge",
       content:
-        "Tax advisers charge by the form, by the hour, or by a flat engagement fee. The published prices in this ranking show the spread. H&R Block starts at $99 plus $75 per state, while Heather's Tax Service & More starts at $285 for a W-2-only return and $1,900 for an entity return.\n\nCPA firms that do planning and IRS work often quote after a consultation, as Haigler CPA Group does. Ask what the quote includes. A second state or an extra schedule should not be a surprise on the invoice.\n\nCircular 230 limits contingent fees. [Section 10.27](https://www.law.cornell.edu/cfr/text/31/10.27) generally bars a fee based on a percentage of the refund on an original return. Narrow exceptions cover IRS examinations and some refund claims.\n\nMessy books raise every fee on this list. The adviser bills hours to sort transactions before the return can start. A bookkeeper usually costs less per hour, and our ranking of [bookkeeping services for small businesses](/roundup/best-bookkeeping-services-for-small-businesses/) compares them. Self-employed filers can also compare [tax preparation services for freelancers](/roundup/best-tax-preparation-services-for-freelancers/).",
+        "Tax advisers charge by the form, by the hour, or by a flat engagement fee. The published prices in this ranking show the spread. H&R Block starts at $99 plus $75 per state, Taxfyle's advisory calls start at $50 per 30 minutes, and VITA is free.\n\nCPA firms that do planning and IRS work often quote after a consultation, as Haigler CPA Group does. Ask what the quote includes. A second state or an extra schedule should not be a surprise on the invoice.\n\nCircular 230 limits contingent fees. [Section 10.27](https://www.law.cornell.edu/cfr/text/31/10.27) generally bars a fee based on a percentage of the refund on an original return. Narrow exceptions cover IRS examinations and some refund claims.\n\nMessy books raise every fee on this list. The adviser bills hours to sort transactions before the return can start. A bookkeeper usually costs less per hour, and our ranking of [bookkeeping services for small businesses](/roundup/best-bookkeeping-services-for-small-businesses/) compares them. Self-employed filers can also compare [tax preparation services for freelancers](/roundup/best-tax-preparation-services-for-freelancers/).",
     },
     {
       heading: "Red Flags When Choosing a Tax Preparer",
@@ -194,7 +156,7 @@ export const HOW_TO_CHOOSE_A_CPA: RoundupEntry = {
     {
       heading: "What Would Change Our Ranking",
       content:
-        "Three changes would reorder this list. Published starting prices would put Haigler CPA Group's fee transparency on par with Heather's Tax Service & More. If Taxfyle or TurboTax Expert Full Service named each professional's credential before you pay, either would move up. Any provider that started charging a fee tied to refund size would come off the list.\n\nYour location changes the ranking too. Outside South Carolina, Haigler CPA Group's Charleston office matters less, and a remote CPA or EA can serve you just as well. Before you book any consultation, search the person's name in the [IRS Directory of Federal Tax Return Preparers](https://irs.treasury.gov/rpo/rpo.jsf) and on [CPAverify](https://cpaverify.org/) or the state board lookup, then bring the eight hiring questions.",
+        "Three changes would reorder this list. Published starting prices would put Haigler CPA Group's fee transparency on par with H&R Block's. If Taxfyle or TurboTax Expert Full Service named each professional's credential before you pay, either would move up. Any provider that started charging a fee tied to refund size would come off the list.\n\nYour location changes the ranking too. Outside South Carolina, Haigler CPA Group's Charleston office matters less, and a remote CPA or EA can serve you just as well. Before you book any consultation, search the person's name in the [IRS Directory of Federal Tax Return Preparers](https://irs.treasury.gov/rpo/rpo.jsf) and on [CPAverify](https://cpaverify.org/) or the state board lookup, then bring the eight hiring questions.",
     },
   ],
   faqs: [
@@ -216,7 +178,7 @@ export const HOW_TO_CHOOSE_A_CPA: RoundupEntry = {
     {
       question: "How much does a CPA charge to do taxes?",
       answer:
-        "Many CPA firms quote per engagement after a consultation, so the price depends on your forms. For reference, H&R Block starts at $99 plus $75 per state. Heather's Tax Service & More starts at $285 for a W-2-only return and $1,900 for an entity return.",
+        "Many CPA firms quote per engagement after a consultation, so the price depends on your forms. For reference, H&R Block starts at $99 plus $75 per state, and Taxfyle's advisory calls start at $50 per 30 minutes.",
     },
     {
       question: "Can a tax preparer represent me in an IRS audit?",

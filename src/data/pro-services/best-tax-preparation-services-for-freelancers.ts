@@ -3,8 +3,7 @@ import type { RoundupEntry } from "../roundups";
 // Paid placement (eseospace order, 2026-10-18). #1 = Elite Pro-Tax & Financial Services (client order
 // changed by the client on 2026-10-18). Every firm fact below was checked on the firm's own site that
 // day: eliteprotaxgvl.com (/, /about-us/, /self-employed-tax-services/, /locations/, /tax-preparation/,
-// /irs-audit-defense/, /faq/), heatherstaxserviceandmore.com (/, /services/), murphyaccounting.com
-// (/, /about, /pricing, /how-it-works, /faq, /services/*). National prices were read on each provider's
+// /irs-audit-defense/, /faq/). National prices were read on each provider's
 // own pricing pages the same day (2025 returns filed in 2026). Tax figures: IRS pages in `sources`;
 // the $50,000 worked example is output of src/lib/self-employment-tax.ts (see the 1099 tax spoke).
 //
@@ -23,9 +22,9 @@ export const BEST_FREELANCER_TAX_PREP: RoundupEntry = {
   angle: "best",
   h1: "Best Tax-Preparation Services for Freelancers and Gig Workers",
   introText:
-    "Most freelancers and gig workers with one simple Schedule C can file it with software for under $200. Every self-employment guide we publish here starts from the same fact. Nothing is withheld from 1099 income, so you owe 15.3% self-employment tax on top of income tax, paid as you go.\n\nA paid preparer earns its fee in a few specific years. Those are your first year on 1099 income, a year with income in two or more states, and a year you weigh an S corporation election. Add any year a letter arrives from the [Internal Revenue Service (IRS)](https://www.irs.gov/). We ranked seven options across both paths. Three are small firms that work remotely, three are national tax products, and one is an app that pairs bookkeeping with a tax pro who signs the return.",
+    "Most freelancers and gig workers with one simple Schedule C can file it with software for under $200. Every self-employment guide we publish here starts from the same fact. Nothing is withheld from 1099 income, so you owe 15.3% self-employment tax on top of income tax, paid as you go.\n\nA paid preparer earns its fee in a few specific years. Those are your first year on 1099 income, a year with income in two or more states, and a year you weigh an S corporation election. Add any year a letter arrives from the [Internal Revenue Service (IRS)](https://www.irs.gov/). We ranked five options across both paths. One is a small firm that works remotely, three are national tax products, and one is an app that pairs bookkeeping with a tax pro who signs the return.",
   rankingCriteria:
-    "We weighted four things, most important first.\n\n- Depth of self-employed service: Schedule C and self-employment tax, a deduction review, quarterly estimates, and bookkeeping under one roof.\n- Reach: how many states each option can file in, and whether you can work with it fully online.\n- Price you can see: a published starting price, or at least a written quote before any work begins.\n- Who stands behind the return: a published credential such as enrolled agent (EA) or certified public accountant (CPA), and who answers an IRS audit or notice.\n\nThe preparer firms come first because a freelancer who searches for a service usually wants a person to own the return. If you only want software, FreeTaxUSA, TurboTax and H&R Block are ranked below. Prices are each provider's own published figures as of October 2026. Software prices are for 2025 returns filed in 2026.",
+    "We weighted four things, most important first.\n\n- Depth of self-employed service: Schedule C and self-employment tax, a deduction review, quarterly estimates, and bookkeeping under one roof.\n- Reach: how many states each option can file in, and whether you can work with it fully online.\n- Price you can see: a published starting price, or at least a written quote before any work begins.\n- Who stands behind the return: a published credential such as enrolled agent (EA) or certified public accountant (CPA), and who answers an IRS audit or notice.\n\nThe preparer firm comes first because a freelancer who searches for a service usually wants a person to own the return. If you only want software, FreeTaxUSA, TurboTax and H&R Block are ranked below. Prices are each provider's own published figures as of October 2026. Software prices are for 2025 returns filed in 2026.",
   options: [
     {
       name: "Elite Pro-Tax & Financial Services",
@@ -48,26 +47,6 @@ export const BEST_FREELANCER_TAX_PREP: RoundupEntry = {
       ],
       pricing:
         "Quote-based. Elite Pro-Tax's site cites profession-wide going rates of $500 to $1,500 or more for self-employed returns, but it publishes no fee of its own.",
-    },
-    {
-      name: "Heather's Tax Service & More",
-      bestFor: "Freelancers anywhere in the U.S. who want an enrolled agent and a published starting price",
-      description:
-        "[Heather's Tax Service & More](/guides/heathers-tax-service-review/) is an Oregon practice with offices in Clackamas and The Dalles. It serves clients across the U.S. through secure upload and phone or video appointments. Owner Heather Perkins is an enrolled agent and an Oregon Licensed Tax Consultant. An EA holds unlimited practice rights before the IRS, so the person who prepares your Schedule C can also answer an audit letter about it.\n\nHeather's Tax Service & More publishes starting prices, so you know the floor before you book. A Schedule C return falls in its small business, rental and farm band, which starts at $525. Tax planning covers entity choice, quarterly estimates and year-end moves, and it is quoted separately.",
-      strengths: [
-        "An enrolled agent prepares returns and holds unlimited representation rights before the IRS",
-        "Published starting prices: $525 for a Schedule C return and $385 for a personal return with more than W-2 income",
-        "Remote service nationwide, with two Oregon offices for in-person meetings",
-        "Prepares nonresident and part-year state returns, mostly for Oregon, Washington, California, Idaho and Arizona",
-        "Bookkeeping from $85 an hour, run by a bookkeeper with more than 25 years of experience. Payroll is quoted separately",
-      ],
-      limitations: [
-        "$525 is a floor. The final fee depends on the return and is quoted before work begins",
-        "Quarterly estimate planning is quoted on top of the return fee",
-        "Costs more than any software option here for a simple, single-state Schedule C",
-      ],
-      pricing:
-        "Personal return with more than W-2s from $385. Small business, rental and farm returns, including Schedule C, from $525. Bookkeeping $85/hour. Tax planning, payroll and IRS representation quoted.",
     },
     {
       name: "Keeper",
@@ -133,7 +112,7 @@ export const BEST_FREELANCER_TAX_PREP: RoundupEntry = {
         "$0 federal return, including self-employed returns",
         "$15.99 per state, the lowest state fee here",
         "Imports a prior-year return from TurboTax, H&R Block or other software",
-        "Pro Support at $64.99 buys a final review and phone advice for far less than the $525 Schedule C floor at Heather's Tax Service & More",
+        "Pro Support at $64.99 buys a final review and phone advice for less than H&R Block's $99 tax pro starting price before state fees",
       ],
       limitations: [
         "You enter and classify everything yourself, so a deduction you miss stays missed",
@@ -142,40 +121,19 @@ export const BEST_FREELANCER_TAX_PREP: RoundupEntry = {
       ],
       pricing: "Federal $0 (all situations, including self-employed). State $15.99. Deluxe Support $7.99. Pro Support $64.99. Audit Defense $19.99.",
     },
-    {
-      name: "Murphy Accounting",
-      bestFor: "Massachusetts sole proprietors who want monthly books and tax planning from one small office",
-      description:
-        "[Murphy Accounting](/guides/murphy-accounting-review/) is a small practice in North Easton, Massachusetts, that keeps books, prepares returns and plans taxes for sole proprietors, single-member LLCs and S corporation owners. Its working year runs on a monthly close, quarterly planning and estimated payment guidance, so the April number is known before April.\n\nMurphy Accounting gives a written scope and a specific price before any work starts, and it says the price does not change without a conversation first. Murphy Accounting says the work runs fine remotely, though Massachusetts is the only state its site names.",
-      strengths: [
-        "Bookkeeping, the business return and the personal return handled together",
-        "A specific written price before work starts, with no starting-at ranges",
-        "Estimated payment guidance and a planning conversation in the second half of the year",
-        "Takes over from a previous accountant using prior-year returns and access to the books",
-      ],
-      limitations: [
-        "No published prices. You get a quote after a first conversation",
-        "The site lists no CPA or EA credential for its preparers, so ask who would answer an IRS notice",
-        "Only federal and Massachusetts work is described, so ask before engaging from another state",
-        "More service than a gig worker with one 1099 and a mileage log needs",
-      ],
-      pricing: "Quote-based. A written scope and a specific price before work begins.",
-    },
   ],
   comparisonTable: {
     headers: ["Type", "Price for a Schedule C return", "States", "Best for"],
     rows: [
       { name: "Elite Pro-Tax & Financial Services", values: ["Local firm, fully virtual", "Quote", "44 (not CA, CT, MD, NV, NY, OR)", "Tax prep plus books and payroll"] },
-      { name: "Heather's Tax Service & More", values: ["Local firm, fully virtual", "From $525", "Remote nationwide", "An enrolled agent"] },
       { name: "Keeper", values: ["App plus tax pro", "$199/year", "Up to 2 on Standard", "Year-round deduction tracking"] },
       { name: "H&R Block", values: ["Software or tax pro", "$130 + $49/state online", "Nationwide", "Switching to a pro midway"] },
       { name: "TurboTax", values: ["Software", "$139 + state", "Nationwide", "Guided software with expert add-on"] },
       { name: "FreeTaxUSA", values: ["Software", "$0 + $15.99/state", "Nationwide", "Lowest cost"] },
-      { name: "Murphy Accounting", values: ["Local firm", "Quote", "Massachusetts named", "Monthly books and planning"] },
     ],
   },
   verdict:
-    "Pick Elite Pro-Tax & Financial Services if you want one office to prepare the return, set quarterly estimates and keep the books. It fits best in Upstate South Carolina, and it files in 44 states. It suits a gig worker who expects to grow into an LLC or S corporation. Skip it if you live in California, Connecticut, Maryland, Nevada, New York or Oregon, or if you want your own preparer to hold an EA or CPA credential.\n\nPick Heather's Tax Service & More if you want an enrolled agent who can represent you before the IRS and a published $525 starting price for a Schedule C. Pick FreeTaxUSA if your Schedule C is clean, you track expenses all year, and you want the lowest cost. Keeper fits a gig driver who wants expense tracking and a signed return for $199 a year. Murphy Accounting fits a Massachusetts owner who wants monthly books and planning.\n\nBefore you book anyone, run your income through our [quarterly estimated tax calculator](/self-employment-tax/quarterly-estimated-tax-calculator/) so you know the size of your next payment.",
+    "Pick Elite Pro-Tax & Financial Services if you want one office to prepare the return, set quarterly estimates and keep the books. It fits best in Upstate South Carolina, and it files in 44 states. It suits a gig worker who expects to grow into an LLC or S corporation. Skip it if you live in California, Connecticut, Maryland, Nevada, New York or Oregon, or if you want your own preparer to hold an EA or CPA credential.\n\nPick FreeTaxUSA if your Schedule C is clean, you track expenses all year, and you want the lowest cost. Keeper fits a gig driver who wants expense tracking and a signed return for $199 a year.\n\nBefore you book anyone, run your income through our [quarterly estimated tax calculator](/self-employment-tax/quarterly-estimated-tax-calculator/) so you know the size of your next payment.",
   sections: [
     {
       heading: "How Schedule C and Schedule SE Set a Freelancer's Tax Bill",
@@ -185,7 +143,7 @@ export const BEST_FREELANCER_TAX_PREP: RoundupEntry = {
     {
       heading: "Quarterly Estimated Payments Decide Whether You Owe a Penalty",
       content:
-        "The IRS expects tax to be paid as income is earned. A freelancer who expects to owe $1,000 or more generally makes four estimated payments a year with [Form 1040-ES](https://www.irs.gov/forms-pubs/about-form-1040-es). The payments fall in April, June and September, and in January of the following year. The second period covers only two months, which catches people who budget by calendar quarter.\n\nYou avoid the underpayment penalty by paying at least 90% of this year's tax or 100% of last year's, whichever is smaller. [IRS Publication 505](https://www.irs.gov/publications/p505) raises the prior-year figure to 110% if last year's AGI was over $150,000. The prior-year route is the easiest target to hit, because last year's number is already on your old return.\n\nPreparers handle estimates in different ways. Elite Pro-Tax sets estimates from projected income, Heather's Tax Service & More quotes planning separately, and Murphy Accounting builds estimated payment guidance into its year. Software leaves the math to you. Our [quarterly estimated tax calculator](/self-employment-tax/quarterly-estimated-tax-calculator/) splits the annual bill into payments. Our guide to [how much to set aside for taxes](/self-employment-tax/how-much-to-set-aside-for-taxes/) turns it into a share of each deposit.",
+        "The IRS expects tax to be paid as income is earned. A freelancer who expects to owe $1,000 or more generally makes four estimated payments a year with [Form 1040-ES](https://www.irs.gov/forms-pubs/about-form-1040-es). The payments fall in April, June and September, and in January of the following year. The second period covers only two months, which catches people who budget by calendar quarter.\n\nYou avoid the underpayment penalty by paying at least 90% of this year's tax or 100% of last year's, whichever is smaller. [IRS Publication 505](https://www.irs.gov/publications/p505) raises the prior-year figure to 110% if last year's AGI was over $150,000. The prior-year route is the easiest target to hit, because last year's number is already on your old return.\n\nPreparers handle estimates in different ways. Elite Pro-Tax sets estimates from projected income, and Keeper adds quarterly tax payments on its Premium plan. Do-it-yourself software leaves the math to you. Our [quarterly estimated tax calculator](/self-employment-tax/quarterly-estimated-tax-calculator/) splits the annual bill into payments. Our guide to [how much to set aside for taxes](/self-employment-tax/how-much-to-set-aside-for-taxes/) turns it into a share of each deposit.",
     },
     {
       heading: "Gig Workers Owe Tax with or without a 1099",
@@ -195,34 +153,34 @@ export const BEST_FREELANCER_TAX_PREP: RoundupEntry = {
     {
       heading: "The Break-Even Point for Hiring a Tax Preparer",
       content:
-        "A preparer pays for itself when the tax it saves you is larger than the extra fee. Each dollar of Schedule C deduction cuts both taxes. In the 12% bracket, it saves about 14 cents of self-employment tax. It also saves about 9 cents of income tax after the qualified business income (QBI) deduction, so roughly 23 cents in all.\n\nApply that to real prices. A Schedule C at Heather's Tax Service & More starts at $525, and FreeTaxUSA charges $15.99 for one state return. The $509 gap breaks even if the preparer finds about $2,200 of deductions you would have missed, or saves you a penalty and the hours of doing it yourself.\n\n| Path | Price for one Schedule C and one state | Missed deductions needed to break even |\n|---|---|---|\n| FreeTaxUSA | $15.99 | Baseline |\n| Keeper Standard | $199/year | About $800 |\n| Heather's Tax Service & More | From $525 | About $2,200 |\n\nMost freelancers cross that line in four situations.\n\n- Your first year on 1099 income, when estimates and deductions are new to you\n- A year you weigh an S corporation election, which brings payroll and a reasonable salary\n- Income earned in more than one state\n- Any IRS notice about a past return\n\nIf none of those apply, keep your books in a free or cheap tool from our [accounting software roundup](/roundup/best-accounting-software-for-freelancers/) and file the return yourself. Our list of [self-employed tax deductions](/guides/self-employed-tax-deductions/) covers what to track.",
+        "A preparer pays for itself when the tax it saves you is larger than the extra fee. Each dollar of Schedule C deduction cuts both taxes. In the 12% bracket, it saves about 14 cents of self-employment tax. It also saves about 9 cents of income tax after the qualified business income (QBI) deduction, so roughly 23 cents in all.\n\nApply that to real prices. Keeper Standard costs $199 a year with a tax pro signing the return, and FreeTaxUSA charges $15.99 for one state return. The $183 gap breaks even if the tax pro finds about $800 of deductions you would have missed, or saves you a penalty and the hours of doing it yourself.\n\n| Path | Price for one Schedule C and one state | Missed deductions needed to break even |\n|---|---|---|\n| FreeTaxUSA | $15.99 | Baseline |\n| Keeper Standard | $199/year | About $800 |\n\nMost freelancers cross that line in four situations.\n\n- Your first year on 1099 income, when estimates and deductions are new to you\n- A year you weigh an S corporation election, which brings payroll and a reasonable salary\n- Income earned in more than one state\n- Any IRS notice about a past return\n\nIf none of those apply, keep your books in a free or cheap tool from our [accounting software roundup](/roundup/best-accounting-software-for-freelancers/) and file the return yourself. Our list of [self-employed tax deductions](/guides/self-employed-tax-deductions/) covers what to track.",
     },
     {
       heading: "Credentials Decide Who Can Speak for You Before the IRS",
       content:
-        "Every paid preparer needs a preparer tax identification number (PTIN), but a PTIN alone carries no right to represent you before the IRS. Enrolled agents, CPAs and attorneys hold unlimited representation rights, according to the IRS [guide to preparer credentials](https://www.irs.gov/tax-professionals/understanding-tax-return-preparer-credentials-and-qualifications). Preparers who complete the IRS Annual Filing Season Program can represent you only on returns they prepared, and only before certain IRS staff.\n\nThat difference matters on the day a letter arrives. Heather Perkins of Heather's Tax Service & More is an EA, so she can represent you in an audit. Elite Pro-Tax brings in an independent licensed CPA for representation. Murphy Accounting's site lists no credential, so ask Murphy Accounting who would handle a notice before you sign.\n\nOur guide on [how to choose a CPA or tax adviser](/roundup/how-to-choose-a-cpa-or-tax-adviser/) lists the questions to ask. The [tax attorney vs CPA vs enrolled agent](/compare/tax-attorney-vs-cpa-vs-enrolled-agent/) comparison shows which credential fits a Schedule C.",
+        "Every paid preparer needs a preparer tax identification number (PTIN), but a PTIN alone carries no right to represent you before the IRS. Enrolled agents, CPAs and attorneys hold unlimited representation rights, according to the IRS [guide to preparer credentials](https://www.irs.gov/tax-professionals/understanding-tax-return-preparer-credentials-and-qualifications). Preparers who complete the IRS Annual Filing Season Program can represent you only on returns they prepared, and only before certain IRS staff.\n\nThat difference matters on the day a letter arrives. A preparer who is an EA or CPA can answer an audit letter about the return they prepared. Elite Pro-Tax brings in an independent licensed CPA for representation. Keeper shows a CPA and an EA among its tax pros, so ask which credential your reviewer holds before you sign.\n\nOur guide on [how to choose a CPA or tax adviser](/roundup/how-to-choose-a-cpa-or-tax-adviser/) lists the questions to ask. The [tax attorney vs CPA vs enrolled agent](/compare/tax-attorney-vs-cpa-vs-enrolled-agent/) comparison shows which credential fits a Schedule C.",
     },
     {
       heading: "Who Should Skip a Paid Tax Preparer",
       content:
-        "Skip a preparer if you have one Schedule C, no employees, income in one state, and a clean expense record. FreeTaxUSA files that return for a $15.99 state fee, and H&R Block or TurboTax software adds more guidance for $130 to $139 before state fees.\n\nSkip a local firm if its preparers cannot file in your state. Elite Pro-Tax cannot file in California, Connecticut, Maryland, Nevada, New York or Oregon. A freelancer in one of those six states should use a national option or a preparer licensed or registered in that state.\n\nSkip the monthly-bookkeeping firms if your business is one platform and a mileage log. Murphy Accounting and Elite Pro-Tax both sell year-round bookkeeping, and a solo driver with forty expenses a year can track them in a spreadsheet for free.",
+        "Skip a preparer if you have one Schedule C, no employees, income in one state, and a clean expense record. FreeTaxUSA files that return for a $15.99 state fee, and H&R Block or TurboTax software adds more guidance for $130 to $139 before state fees.\n\nSkip a local firm if its preparers cannot file in your state. Elite Pro-Tax cannot file in California, Connecticut, Maryland, Nevada, New York or Oregon. A freelancer in one of those six states should use a national option or a preparer licensed or registered in that state.\n\nSkip a monthly-bookkeeping firm if your business is one platform and a mileage log. Elite Pro-Tax sells year-round bookkeeping, and a solo driver with forty expenses a year can track them in a spreadsheet for free.",
     },
     {
       heading: "What Would Change Our Ranking",
       content:
-        "Our ranking would change if any of these happened.\n\n- Elite Pro-Tax adds an EA or CPA to its own staff, which would let one office handle a notice from start to finish.\n- Elite Pro-Tax publishes a Schedule C starting price, so you could compare it with Heather's $525 before booking.\n- Elite Pro-Tax's quotes for a typical Schedule C come in well above $525, which would move Heather's Tax Service & More to the top spot.\n- FreeTaxUSA starts charging for self-employed federal returns, or TurboTax adds a free Schedule C tier, which would change the low-cost pick.\n\nUntil then, compare at least two written quotes against FreeTaxUSA's $15.99 baseline and pick the option whose fee gap you can justify with the break-even math above.",
+        "Our ranking would change if any of these happened.\n\n- Elite Pro-Tax adds an EA or CPA to its own staff, which would let one office handle a notice from start to finish.\n- Elite Pro-Tax publishes a Schedule C starting price, so you could compare it with the software and app prices here before booking.\n- FreeTaxUSA starts charging for self-employed federal returns, or TurboTax adds a free Schedule C tier, which would change the low-cost pick.\n\nUntil then, compare at least two written quotes against FreeTaxUSA's $15.99 baseline and pick the option whose fee gap you can justify with the break-even math above.",
     },
   ],
   faqs: [
     {
       question: "What is the best tax preparation service for freelancers?",
       answer:
-        "Elite Pro-Tax & Financial Services ranks first here for a freelancer who wants one office to prepare the return, set quarterly estimates and keep the books. It works if you live outside the six states it cannot file in. Heather's Tax Service & More fits if you want an enrolled agent and a published $525 Schedule C starting price. FreeTaxUSA is the low-cost pick at $0 federal and $15.99 per state.",
+        "Elite Pro-Tax & Financial Services ranks first here for a freelancer who wants one office to prepare the return, set quarterly estimates and keep the books. It works if you live outside the six states it cannot file in. FreeTaxUSA is the low-cost pick at $0 federal and $15.99 per state.",
     },
     {
       question: "How much does it cost to have a freelancer's taxes done?",
       answer:
-        "Software costs from $15.99 for FreeTaxUSA's state fee to $139 plus state for TurboTax Premium. Preparers cost more. Heather's Tax Service & More starts at $525 for a Schedule C, and H&R Block tax pros start at $99 plus state. Elite Pro-Tax and Murphy Accounting quote each return. Elite Pro-Tax's site puts the profession-wide range for self-employed returns at $500 to $1,500 or more.",
+        "Software costs from $15.99 for FreeTaxUSA's state fee to $139 plus state for TurboTax Premium. Preparers cost more. H&R Block tax pros start at $99 plus state, and Elite Pro-Tax quotes each return. Elite Pro-Tax's site puts the profession-wide range for self-employed returns at $500 to $1,500 or more.",
     },
     {
       question: "Do gig workers need a tax preparer?",
@@ -237,7 +195,7 @@ export const BEST_FREELANCER_TAX_PREP: RoundupEntry = {
     {
       question: "Can my tax preparer represent me in an IRS audit?",
       answer:
-        "Only if the preparer is an enrolled agent, CPA or attorney, who hold unlimited representation rights. Preparers in the IRS Annual Filing Season Program have limited rights, and a preparer with only a PTIN has none. Heather Perkins of Heather's Tax Service & More is an EA, and Elite Pro-Tax refers representation to an independent licensed CPA.",
+        "Only if the preparer is an enrolled agent, CPA or attorney, who hold unlimited representation rights. Preparers in the IRS Annual Filing Season Program have limited rights, and a preparer with only a PTIN has none. Elite Pro-Tax refers representation to an independent licensed CPA.",
     },
     {
       question: "Is FreeTaxUSA or TurboTax better for self-employed filers?",
@@ -263,8 +221,6 @@ export const BEST_FREELANCER_TAX_PREP: RoundupEntry = {
       url: "https://www.irs.gov/tax-professionals/understanding-tax-return-preparer-credentials-and-qualifications",
     },
     { label: "Elite Pro-Tax & Financial Services: Locations and states served", url: "https://eliteprotaxgvl.com/locations/" },
-    { label: "Heather's Tax Service & More: Services and prices", url: "https://heatherstaxserviceandmore.com/services/" },
-    { label: "Murphy Accounting: How pricing works", url: "https://murphyaccounting.com/pricing" },
   ],
   relatedComparisons: [
     "tax-attorney-vs-cpa-vs-enrolled-agent",

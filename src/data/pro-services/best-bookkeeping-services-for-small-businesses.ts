@@ -10,14 +10,14 @@ export const BEST_BOOKKEEPING_SERVICES: RoundupEntry = {
   noAds: true,
   title: "Best Bookkeeping Services for Small Businesses (2026)",
   metaDescription:
-    "Six bookkeeping services for small businesses compared on monthly price, catch-up fees, and tax help, from a $250 flat fee to local firms that quote in writing.",
+    "Five bookkeeping services for small businesses compared on monthly price, catch-up fees, and tax help, from a $250 flat fee to a local firm that quotes in writing.",
   targetKeyword: "bookkeeping services for small businesses",
   category: "bookkeeping services",
   angle: "best",
   segment: "small business owners",
   h1: "Best Bookkeeping Services for Small Businesses",
   introText:
-    "Danielson Bookkeeping & Consulting is our top pick among bookkeeping services for small businesses and churches that want one named bookkeeper and a written quote. At ModernWallet, we publish free calculators and plain-language money guides for owners who need an accurate number before they sign anything.\n\nWe compared six services, from local firms in Idaho and Massachusetts to national online teams. Published prices start at a flat $250 a month. The two local firms quote after they review your books.",
+    "Danielson Bookkeeping & Consulting is our top pick among bookkeeping services for small businesses and churches that want one named bookkeeper and a written quote. At ModernWallet, we publish free calculators and plain-language money guides for owners who need an accurate number before they sign anything.\n\nWe compared five services, from a local firm in Idaho to national online teams. Published prices start at a flat $250 a month. Danielson, the one local firm, quotes after it reviews your books.",
   rankingCriteria:
     "We ranked each service on what it publishes about its own work. We did not hire any of them.\n\n- A named person on your books. You should know who reconciles your accounts and answers your questions.\n- Scope and price in writing before work starts. A written scope lists what is included and what is not, so the first invoice matches the quote.\n- Clear catch-up pricing. Many small businesses arrive months behind, so the backlog price matters.\n- A clean handoff at tax time. The books must support a return, whether the service files it or your certified public accountant (CPA) does.\n\nPrices below are the figures each service lists on its own pricing page.",
   options: [
@@ -41,25 +41,6 @@ export const BEST_BOOKKEEPING_SERVICES: RoundupEntry = {
       ],
       pricing:
         "Quote-based. Danielson sends a written scope and fee after a consultation and records review. Cost depends on transaction volume, number of accounts and funds, payroll, and how current the books are.",
-    },
-    {
-      name: "Murphy Accounting",
-      bestFor: "Owner-led businesses near Easton, Massachusetts that want bookkeeping and tax returns from one office",
-      description:
-        "Murphy Accounting is a local practice at 187 Washington Street in North Easton, Massachusetts, founded by Dan. Its monthly bookkeeping covers categorization, bank and card reconciliation, a month-end close, and a P&L and balance sheet. The same office prepares business and individual tax returns, so the books and the return come from one file.\n\nMurphy scopes and prices any backlog as a separate catch-up project before monthly work begins. Murphy Accounting says it fits sole proprietors, single-member limited liability companies (LLCs), and S corporation owners. Our [Murphy Accounting review](/guides/murphy-accounting-review/) covers the tax side of the practice.",
-      strengths: [
-        "Bookkeeping and tax preparation under one roof, so nobody has to match two firms' numbers at filing time",
-        "Catch-up work is quoted as its own project, so you see the backlog cost before agreeing to a monthly fee",
-        "A named contact for questions between monthly closes",
-      ],
-      limitations: [
-        "No published prices. Murphy Accounting gives a written figure only after reviewing your records",
-        "The website lists no professional credential such as CPA or enrolled agent, so ask about licensing before you hire Murphy Accounting for tax work",
-        "Meetings can be in person in North Easton, and the work also runs remotely. Owners outside the area should ask whether they fit",
-        "No audits or reviewed financial statements. If a lender asks for them, you need a CPA firm",
-      ],
-      pricing:
-        "Quote-based, in writing before work begins. Catch-up is priced separately.",
     },
     {
       name: "Merritt Bookkeeping",
@@ -140,10 +121,6 @@ export const BEST_BOOKKEEPING_SERVICES: RoundupEntry = {
         name: "Danielson Bookkeeping & Consulting",
         values: ["Written quote", "Quoted after file review", "No (works with your CPA)", "Churches, Treasure Valley businesses"],
       },
-      {
-        name: "Murphy Accounting",
-        values: ["Written quote", "Separate project quote", "Yes", "Books and taxes in one office"],
-      },
       { name: "Merritt Bookkeeping", values: ["$250/mo flat", "$200 per month behind", "No", "Flat monthly fee"] },
       { name: "Bookkeeper360", values: ["$400/mo", "From $1,000", "From $1,200/yr", "Books, payroll, and tax"] },
       { name: "Xendoo", values: ["$355/mo (annual)", "From $295/mo", "From $1,295/yr", "Weekly books in Xero"] },
@@ -151,49 +128,49 @@ export const BEST_BOOKKEEPING_SERVICES: RoundupEntry = {
     ],
   },
   verdict:
-    "Choose Danielson Bookkeeping & Consulting if you run a church or a small business in Idaho's Treasure Valley and want one bookkeeper who sets up QuickBooks around how you operate. Plan on a separate CPA, because Danielson does not file returns.\n\nIf a published price matters more than a local relationship, Merritt Bookkeeping's $250 flat fee is the lowest monthly figure on this list. Pick Murphy Accounting if you are near Easton, Massachusetts and want the same office to keep the books and file the return. Bookkeeper360 suits owners who want payroll and tax from the same provider.",
+    "Choose Danielson Bookkeeping & Consulting if you run a church or a small business in Idaho's Treasure Valley and want one bookkeeper who sets up QuickBooks around how you operate. Plan on a separate CPA, because Danielson does not file returns.\n\nIf a published price matters more than a local relationship, Merritt Bookkeeping's $250 flat fee is the lowest monthly figure on this list. Bookkeeper360 suits owners who want payroll and tax from the same provider.",
   sections: [
     {
       heading: "Bookkeeper vs Accountant vs CPA",
       content:
-        "A bookkeeper records and reconciles your transactions each month. An accountant uses those books to prepare tax returns and give tax advice, and only a licensed CPA firm can audit or review financial statements.\n\nBookkeepers do not need a CPA license. The [U.S. Bureau of Labor Statistics (BLS)](https://www.bls.gov/ooh/office-and-administrative-support/bookkeeping-accounting-and-auditing-clerks.htm) says certification is not usually required, and most bookkeepers learn on the job. A QuickBooks ProAdvisor certification shows a person passed Intuit's QuickBooks exam, and you can search certified ProAdvisors by ZIP code in [Intuit's ProAdvisor directory](https://quickbooks.intuit.com/find-an-accountant/).\n\nA CPA holds a state license, which you can confirm in the [CPAverify lookup](https://cpaverify.org/) run by the National Association of State Boards of Accountancy (NASBA). An enrolled agent (EA) is licensed by the [Internal Revenue Service (IRS)](https://www.irs.gov/tax-professionals/enrolled-agents) to represent taxpayers. Anyone paid to prepare federal returns must hold a [Preparer Tax Identification Number (PTIN)](https://www.irs.gov/tax-professionals/ptin-requirements-for-tax-return-preparers).\n\nMost small businesses need both roles. Danielson and Merritt stop at the books, while Murphy Accounting, Bookkeeper360, and Xendoo also prepare returns. Our guide on [how to choose a CPA or tax adviser](/roundup/how-to-choose-a-cpa-or-tax-adviser/) covers the tax side of that decision.",
+        "A bookkeeper records and reconciles your transactions each month. An accountant uses those books to prepare tax returns and give tax advice, and only a licensed CPA firm can audit or review financial statements.\n\nBookkeepers do not need a CPA license. The [U.S. Bureau of Labor Statistics (BLS)](https://www.bls.gov/ooh/office-and-administrative-support/bookkeeping-accounting-and-auditing-clerks.htm) says certification is not usually required, and most bookkeepers learn on the job. A QuickBooks ProAdvisor certification shows a person passed Intuit's QuickBooks exam, and you can search certified ProAdvisors by ZIP code in [Intuit's ProAdvisor directory](https://quickbooks.intuit.com/find-an-accountant/).\n\nA CPA holds a state license, which you can confirm in the [CPAverify lookup](https://cpaverify.org/) run by the National Association of State Boards of Accountancy (NASBA). An enrolled agent (EA) is licensed by the [Internal Revenue Service (IRS)](https://www.irs.gov/tax-professionals/enrolled-agents) to represent taxpayers. Anyone paid to prepare federal returns must hold a [Preparer Tax Identification Number (PTIN)](https://www.irs.gov/tax-professionals/ptin-requirements-for-tax-return-preparers).\n\nMost small businesses need both roles. Danielson and Merritt stop at the books, while Bookkeeper360 and Xendoo also prepare returns. Our guide on [how to choose a CPA or tax adviser](/roundup/how-to-choose-a-cpa-or-tax-adviser/) covers the tax side of that decision.",
     },
     {
       heading: "What Bookkeeping Services Cost for a Small Business",
       content:
-        "Monthly bookkeeping on this list starts at $250 to $400 a month, or $3,000 to $4,800 a year at the entry tier. The table converts each published entry price to a yearly cost.\n\n| Service | Entry monthly price | Yearly cost |\n|---|---|---|\n| Merritt Bookkeeping | $250 | $3,000 |\n| Xendoo Essential (annual billing) | $355 | $4,260 |\n| Bookkeeper.com Small Business | $399 | $4,788 |\n| Bookkeeper360 | From $400 | From $4,800 |\n| Danielson, Murphy Accounting | Quote | Quote |\n\nHiring in-house costs more. The BLS puts median pay for bookkeeping, accounting, and auditing clerks at $50,670 a year as of May 2025, before payroll taxes and benefits. That salary alone is nearly 17 times Merritt's $3,000 yearly fee.\n\nSoftware is a separate line. [QuickBooks Online list prices](https://quickbooks.intuit.com/pricing/) are $38 a month for Simple Start, $85 for Essentials, and $140 for Plus, before promotions. None of the six services says on its website that a QuickBooks subscription is included, so ask each service who pays for it.\n\nBefore you compare quotes, run last year's figures through our [operating cash flow calculator](/operating-cash-flow/) to see what a $300 monthly fee takes out of your cash.",
+        "Monthly bookkeeping on this list starts at $250 to $400 a month, or $3,000 to $4,800 a year at the entry tier. The table converts each published entry price to a yearly cost.\n\n| Service | Entry monthly price | Yearly cost |\n|---|---|---|\n| Merritt Bookkeeping | $250 | $3,000 |\n| Xendoo Essential (annual billing) | $355 | $4,260 |\n| Bookkeeper.com Small Business | $399 | $4,788 |\n| Bookkeeper360 | From $400 | From $4,800 |\n| Danielson | Quote | Quote |\n\nHiring in-house costs more. The BLS puts median pay for bookkeeping, accounting, and auditing clerks at $50,670 a year as of May 2025, before payroll taxes and benefits. That salary alone is nearly 17 times Merritt's $3,000 yearly fee.\n\nSoftware is a separate line. [QuickBooks Online list prices](https://quickbooks.intuit.com/pricing/) are $38 a month for Simple Start, $85 for Essentials, and $140 for Plus, before promotions. None of the five services says on its website that a QuickBooks subscription is included, so ask each service who pays for it.\n\nBefore you compare quotes, run last year's figures through our [operating cash flow calculator](/operating-cash-flow/) to see what a $300 monthly fee takes out of your cash.",
     },
     {
       heading: "Catch-Up vs Cleanup Bookkeeping",
       content:
-        "Catch-up bookkeeping records months where nothing was entered, and cleanup fixes records that exist but are wrong. Danielson defines cleanup as correcting duplicates, miscategorized transactions, and unreconciled accounts. Many files need both, so expect a records review before any quote.\n\nThe services price a backlog four ways:\n\n- Per month behind. Merritt charges $200 for each missing month, or $100 for a month with fewer than 20 transactions. A 12-month backlog with four light months costs 8 × $200 plus 4 × $100, which is $2,000.\n- Flat project minimum. Bookkeeper360 starts catch-up and prior-period cleanup at $1,000.\n- Monthly catch-up plan. Xendoo starts catch-up bookkeeping at $295 a month.\n- Scoped project. Danielson and Murphy Accounting review the file first and quote the backlog separately from monthly work.\n\nBring bank statements for every month in the gap, since Murphy Accounting lists them as the minimum record to start.\n\nA backlog that includes an unfiled tax year is a tax problem as well as a bookkeeping one. The [IRS record-keeping guidance](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records) says to keep records indefinitely for any year you did not file. Our [tax resolution calculator](/tax-resolution/) shows your IRS relief options if the catch-up work turns up a balance due.",
+        "Catch-up bookkeeping records months where nothing was entered, and cleanup fixes records that exist but are wrong. Danielson defines cleanup as correcting duplicates, miscategorized transactions, and unreconciled accounts. Many files need both, so expect a records review before any quote.\n\nThe services price a backlog four ways:\n\n- Per month behind. Merritt charges $200 for each missing month, or $100 for a month with fewer than 20 transactions. A 12-month backlog with four light months costs 8 × $200 plus 4 × $100, which is $2,000.\n- Flat project minimum. Bookkeeper360 starts catch-up and prior-period cleanup at $1,000.\n- Monthly catch-up plan. Xendoo starts catch-up bookkeeping at $295 a month.\n- Scoped project. Danielson reviews the file first and quotes the backlog separately from monthly work.\n\nBring bank statements for every month in the gap to that records review.\n\nA backlog that includes an unfiled tax year is a tax problem as well as a bookkeeping one. The [IRS record-keeping guidance](https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records) says to keep records indefinitely for any year you did not file. Our [tax resolution calculator](/tax-resolution/) shows your IRS relief options if the catch-up work turns up a balance due.",
     },
     {
       heading: "Questions to Ask a Bookkeeping Service Before You Sign",
       content:
-        "Ask every bookkeeping service the same eight questions, and get the answers in writing.\n\n- Who is my named bookkeeper, and who covers my books when that person is out?\n- How many accounts and transactions does the monthly fee include?\n- Will you keep my books on a cash or accrual basis?\n- On what day each month will I get my P&L and balance sheet?\n- Does the fee include the QuickBooks or Xero subscription?\n- Who owns the books file, and do I keep access if I leave?\n- How is catch-up work priced, and is it separate from the monthly fee?\n- Do you prepare tax returns, and if so, who holds the PTIN?\n\nMurphy Accounting states that clients keep access to their own books, which is the answer to look for.",
+        "Ask every bookkeeping service the same eight questions, and get the answers in writing.\n\n- Who is my named bookkeeper, and who covers my books when that person is out?\n- How many accounts and transactions does the monthly fee include?\n- Will you keep my books on a cash or accrual basis?\n- On what day each month will I get my P&L and balance sheet?\n- Does the fee include the QuickBooks or Xero subscription?\n- Who owns the books file, and do I keep access if I leave?\n- How is catch-up work priced, and is it separate from the monthly fee?\n- Do you prepare tax returns, and if so, who holds the PTIN?",
     },
     {
       heading: "Red Flags When Hiring a Bookkeeper",
       content:
-        "Walk away from a bookkeeper who shows any of these warning signs.\n\n- Asks for your bank password. A bookkeeper should get a named user account or read-only access.\n- Starts work without a written scope. Every service on this list puts the price in writing first, so ask for it before you send records.\n- Promises a lower tax bill. Tax savings come from a CPA or EA, so ask who on the team holds that license.\n- Prepares returns without a PTIN. The IRS requires one for anyone paid to prepare federal returns.\n- Keeps the books in a file you cannot open. Ask for your own login to the accounting software from day one.\n- Quotes a catch-up price without seeing your statements. Murphy Accounting says a fixed price cannot be set until the backlog is assessed. Ask what records any quote assumes before you accept it.",
+        "Walk away from a bookkeeper who shows any of these warning signs.\n\n- Asks for your bank password. A bookkeeper should get a named user account or read-only access.\n- Starts work without a written scope. Every service on this list puts the price in writing first, so ask for it before you send records.\n- Promises a lower tax bill. Tax savings come from a CPA or EA, so ask who on the team holds that license.\n- Prepares returns without a PTIN. The IRS requires one for anyone paid to prepare federal returns.\n- Keeps the books in a file you cannot open. Ask for your own login to the accounting software from day one.\n- Quotes a catch-up price without seeing your statements. Ask what records any quote assumes before you accept it.",
     },
     {
       heading: "Who Should Skip These Bookkeeping Services",
       content:
-        "A solo freelancer with a few dozen transactions a month can skip a paid bookkeeper. Free software plus a separate business bank account covers that volume, and our [best accounting software for freelancers](/roundup/best-accounting-software-for-freelancers/) roundup lists two free options.\n\nA business that needs audited or reviewed financial statements for a lender or investor should hire a CPA firm. Danielson and Murphy Accounting both exclude audit and review work. A business that already has clean books and only needs a tax return should compare a CPA, an EA, and a tax attorney in our [tax attorney vs CPA vs enrolled agent](/compare/tax-attorney-vs-cpa-vs-enrolled-agent/) comparison.",
+        "A solo freelancer with a few dozen transactions a month can skip a paid bookkeeper. Free software plus a separate business bank account covers that volume, and our [best accounting software for freelancers](/roundup/best-accounting-software-for-freelancers/) roundup lists two free options.\n\nA business that needs audited or reviewed financial statements for a lender or investor should hire a CPA firm. Danielson excludes audit and review work. A business that already has clean books and only needs a tax return should compare a CPA, an EA, and a tax attorney in our [tax attorney vs CPA vs enrolled agent](/compare/tax-attorney-vs-cpa-vs-enrolled-agent/) comparison.",
     },
     {
       heading: "What Would Change Our Ranking",
       content:
-        "Three changes would move the order of this list.\n\n- If Danielson's written quotes for a typical small business came in well above $400 a month, Bookkeeper360's published plan would offer more services for a business outside church work.\n- If Merritt Bookkeeping closed its roster to new clients, Xendoo would become our pick for a published price.\n- If Murphy Accounting listed a CPA or EA credential, it would move closer to the top for owners who want tax filing in the same office.\n\nPull your last three months of bank and card statements, count the transactions, and ask two of these bookkeeping services for a written quote on the same numbers.",
+        "Two changes would move the order of this list.\n\n- If Danielson's written quotes for a typical small business came in well above $400 a month, Bookkeeper360's published plan would offer more services for a business outside church work.\n- If Merritt Bookkeeping closed its roster to new clients, Xendoo would become our pick for a published price.\n\nPull your last three months of bank and card statements, count the transactions, and ask two of these bookkeeping services for a written quote on the same numbers.",
     },
   ],
   faqs: [
     {
       question: "How much does a bookkeeping service cost for a small business?",
       answer:
-        "The services on this list start at $250 to $400 a month, or $3,000 to $4,800 a year. Merritt Bookkeeping is the lowest at a flat $250. Danielson Bookkeeping & Consulting and Murphy Accounting quote after reviewing your records.",
+        "The services on this list start at $250 to $400 a month, or $3,000 to $4,800 a year. Merritt Bookkeeping is the lowest at a flat $250. Danielson Bookkeeping & Consulting quotes after reviewing your records.",
     },
     {
       question: "What is the difference between a bookkeeper and a CPA?",
@@ -208,7 +185,7 @@ export const BEST_BOOKKEEPING_SERVICES: RoundupEntry = {
     {
       question: "Can my bookkeeper do my taxes?",
       answer:
-        "Only if the bookkeeper also prepares returns and holds a PTIN, which the IRS requires of anyone paid to prepare federal returns. Danielson Bookkeeping & Consulting and Merritt Bookkeeping do not prepare taxes. Murphy Accounting, Bookkeeper360, and Xendoo do, and Bookkeeper.com lists tax returns as an add-on.",
+        "Only if the bookkeeper also prepares returns and holds a PTIN, which the IRS requires of anyone paid to prepare federal returns. Danielson Bookkeeping & Consulting and Merritt Bookkeeping do not prepare taxes. Bookkeeper360 and Xendoo do, and Bookkeeper.com lists tax returns as an add-on.",
     },
     {
       question: "Does a church need a bookkeeper if it already has a treasurer?",
@@ -223,7 +200,6 @@ export const BEST_BOOKKEEPING_SERVICES: RoundupEntry = {
   ],
   sources: [
     { label: "Danielson Bookkeeping & Consulting: How We Work", url: "https://danielsonservices.com/how-we-work/" },
-    { label: "Murphy Accounting: Catch-Up Bookkeeping & Cleanup", url: "https://murphyaccounting.com/services/catch-up-bookkeeping" },
     { label: "Merritt Bookkeeping: Pricing", url: "https://merrittbookkeeping.com/pricing/" },
     { label: "Bookkeeper360: Pricing", url: "https://www.bookkeeper360.com/pricing" },
     { label: "Xendoo: Pricing", url: "https://www.xendoo.com/pricing" },
