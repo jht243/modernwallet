@@ -1,0 +1,199 @@
+{
+ "slug": "pay-off-mortgage-vs-invest",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1966,
+ "floor": 1500,
+ "input_tokens": 20179,
+ "output_tokens": 3173,
+ "thinking_tokens": 343,
+ "cached_tokens": 18744,
+ "est_cost_usd": 0.0157,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "thin fact list: \u2248310 fact words for a 1500-word floor (ratio 0.21); expand it with sourced facts before any regeneration"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1966,
+  "numbers_not_in_facts": [
+   "1040"
+  ],
+  "fact_budget": {
+   "fact_words": 310,
+   "floor": 1500,
+   "ratio": 0.21,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    16
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we evaluate personal money decisions through the mechanics of cash flow, and choosing between these two paths comes down to comparing your specific loan rate against your tolerance for market risk.",
+     "replacement": "Choosing between these two paths comes down to comparing your specific loan rate against your tolerance for market risk.",
+     "type": "unsupported",
+     "why": "Site self-description does not support this first-person brand claim."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "If your mortgage carries an interest rate of six percent, each dollar of extra principal eliminates six cents of annual interest expense that would otherwise compound over the life of the debt.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE forbids stating mortgage rates and does not list six percent."
+    },
+    {
+     "id": "faqItems[3].answer",
+     "quote": "Some loan contracts include a prepayment penalty if you pay off principal ahead of schedule, though many modern consumer mortgages do not.",
+     "replacement": "Some loan contracts include a prepayment penalty if you pay off principal ahead of schedule.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that many modern consumer mortgages lack prepayment penalties."
+    },
+    {
+     "id": "comparisonTable.rows[3].b",
+     "quote": "May create capital gains, dividends, or interest income that generates annual tax reporting",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state investment tax rules, capital gains, or dividends."
+    },
+    {
+     "id": "comparisonTable.rows[5].a",
+     "quote": "Does not reduce your monthly payment obligation until the entire balance is retired completely",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state how extra principal affects mandatory monthly payment obligations."
+    },
+    {
+     "id": "comparisonTable.rows[5].b",
+     "quote": "Keeps your regular monthly mortgage payment identical while growing an independent asset base",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state regular monthly payment rules during investment."
+    },
+    {
+     "id": "comparisonTable.rows[6].a",
+     "quote": "Eliminates debt obligations entirely, delivering psychological relief from carrying a lien",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state debt payoff delivers psychological relief or mentions liens."
+    },
+    {
+     "id": "comparisonTable.rows[6].b",
+     "quote": "Requires managing market volatility and the emotional friction of portfolio drawdowns",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state emotional friction of portfolio drawdowns."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Each of those transactions takes time, requires lender approval, and incurs transaction fees.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state transaction fees or lender approval for accessing home equity."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Investments held in a standard taxable brokerage account provide far greater operational flexibility.",
+     "replacement": "Investments held in a standard taxable account can generally be sold.",
+     "type": "unsupported",
+     "why": "SOURCE does not state investments provide far greater operational flexibility."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "The proceeds settle in cash within standard clearing timelines, allowing you to transfer money back to your checking account quickly if circumstances change.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state clearing timelines or checking account transfers."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "An employer retirement plan match represents an immediate return that no mortgage prepayment can rival.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that an employer match cannot be rivaled."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Similarly, carrying balances on credit cards or personal loans that charge rates substantially higher than your mortgage makes prepaying home equity mathematically counterproductive.",
+     "replacement": "Similarly, carrying balances on higher-interest debt makes prepaying a mortgage counterproductive.",
+     "type": "unsupported",
+     "why": "SOURCE specifies higher-interest debt without naming credit cards or personal loans."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Always examine your closing documents to verify that your lender applies extra payments straight to principal without imposing early settlement charges.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state checking closing documents for applying payments straight to principal."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Making extra principal payments on a standard fixed-rate mortgage does not lower the mandatory monthly payment due next month.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state how extra principal affects mandatory monthly payments."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Your contractual payment stays identical every single billing cycle until the entire balance is retired years ahead of schedule.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state contractual billing cycle payment rules."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Your household expenses do not drop by a single dollar in the short term, even as you send thousands of dollars in accelerated payments to the bank.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state short-term household expense impacts."
+    },
+    {
+     "id": "verdict",
+     "quote": "A balanced split approach is also entirely reasonable: you can send a modest extra principal payment each month to chip away at your amortization schedule while directing the rest of your surplus cash into a diversified portfolio.",
+     "replacement": "A split approach is also entirely reasonable: you can send extra principal payments each month while directing surplus cash into investments.",
+     "type": "unsupported",
+     "why": "SOURCE permits a split approach but does not use evaluative word balanced."
+    },
+    {
+     "id": "faqItems[4].answer",
+     "quote": "You should also verify with your lender that your mortgage contract does not carry a prepayment penalty and that extra funds will be credited directly to principal.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state verifying that extra funds credit directly to principal."
+    }
+   ],
+   "deleted_final": 16,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2265
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 306.4,
+ "response_id": "tNHVao6mD46pytMPxK6okAs",
+ "generated_at": "2026-10-19T08:20:52+0000"
+}

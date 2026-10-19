@@ -1,0 +1,391 @@
+{
+ "slug": "pension-lump-sum-vs-annuity",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1904,
+ "floor": 1500,
+ "input_tokens": 20281,
+ "output_tokens": 3352,
+ "thinking_tokens": 1201,
+ "cached_tokens": 18744,
+ "est_cost_usd": 0.0196,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "thin fact list: \u2248365 fact words for a 1500-word floor (ratio 0.24); expand it with sourced facts before any regeneration",
+   "claim check: 22 claim(s) still unsupported after 3 pass(es) \u2014 auditor must cut or source: 'Every worker facing a pension buyout or retirement distribution must balance pre'; 'A single payout representing the present value of your accrued benefit, paid all'; 'You carry the risk of outliving your money if your withdrawals exceed portfolio '; 'Full access to allocate, withdraw, or preserve capital according to your persona'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1904,
+  "numbers_not_in_facts": [
+   "412",
+   "558"
+  ],
+  "fact_budget": {
+   "fact_words": 365,
+   "floor": 1500,
+   "ratio": 0.24,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    12,
+    15,
+    22
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we review retirement decisions through the lens of long-term cash flow, and choosing between these two payout structures determines who manages your market risk for the rest of your life.",
+     "replacement": "Choosing between these two payout structures determines who manages investment and longevity risk.",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support reviewing decisions through lens of long-term cash flow."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "However, if the plan administrator already withheld 20 percent, you must replace that withheld 20 percent using outside personal cash to roll over the full 100 percent of the original distribution.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state replacing withheld cash or 100 percent rollover requirement."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "If you fail to replace the withheld portion within 60 days, that withheld amount is treated as a taxable distribution and taxed as ordinary income.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state consequences of failing to replace withheld funds."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "The most effective way to prevent mandatory withholding is to request a direct rollover, sometimes called a trustee-to-trustee transfer.",
+     "replacement": "You can ask the payer to directly roll over the taxable portion into an IRA or eligible plan.",
+     "type": "unsupported",
+     "why": "SOURCE does not rank rollover methods or state the term trustee-to-trustee transfer."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "The reader should check the IRS early distributions page to confirm whether their separation date or circumstances meet these statutory definitions before taking cash directly.",
+     "replacement": "The reader should check [IRS Topic No. 558](https://www.irs.gov/taxtopics/tc558) to confirm whether their separation date or circumstances meet these statutory definitions before taking cash directly.",
+     "type": "unlinked-directive",
+     "why": "Sends reader to IRS page to check facts without markdown link in sentence."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Because tax status depends on whether your pension contributions were made with pre-tax or post-tax dollars, confirm your exact tax treatment with your plan administrator or a tax professional.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that tax status depends on pre-tax or post-tax contributions."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Most private-sector pension plans offer fixed monthly checks that never increase, meaning inflation will steadily erode your purchasing power over a twenty or thirty year retirement.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what most private-sector plans offer or mention retirement duration."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "A small number of plans, particularly in the public sector, provide annual inflation adjustments that help maintain your standard of living over time.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that public-sector plans provide annual inflation adjustments."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "A pension that includes an annual adjustment provides far greater lifetime value than a flat nominal payment.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not make degree comparisons about lifetime value of annual adjustments."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "If you are married, federal law typically requires your spouse to consent in writing if you choose a lump sum or a single-life annuity that waives survivor protections.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not name federal law or spousal consent requirements."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Review the written payout percentages for 50 percent, 75 percent, or 100 percent joint-and-survivor options.",
+     "replacement": "Review the plan's written survivor options, as these options vary by plan.",
+     "type": "contradicted",
+     "why": "SOURCE explicitly forbids stating any survivor-benefit percentage."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Missing the election window typically defaults your benefit to the plan's standard monthly annuity option.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what happens if the election deadline is missed."
+    },
+    {
+     "id": "introText",
+     "quote": "The two paths are mutually exclusive once your election window closes.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that options are mutually exclusive once an election window closes."
+    },
+    {
+     "id": "comparisonTable.rows[4].b",
+     "quote": "Fixed payment amounts with no option to accelerate payouts, borrow against them, or access principal",
+     "replacement": "Regular payments from the plan for as long as plan terms specify",
+     "type": "unsupported",
+     "why": "SOURCE does not state restrictions on borrowing against pensions or accelerating payouts."
+    },
+    {
+     "id": "comparisonTable.rows[6].b",
+     "quote": "Requires electing a survivor benefit option from your plan, which lowers your ongoing monthly payment",
+     "replacement": "Survivor options vary by plan; obtain the plan's written figures",
+     "type": "unsupported",
+     "why": "SOURCE states survivor options vary by plan; does not state it lowers monthly payments."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "That steady cash flow simplifies monthly household budgeting and shields you from panic during extended market downturns.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that annuities simplify budgeting or shield from panic."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "You gain the freedom to invest across broad market assets, alter your allocation over time, and tap larger sums for medical emergencies or capital expenses.",
+     "replacement": "You gain the freedom to invest and manage the funds yourself.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention medical emergencies or capital expenses."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Your personal health profile and family longevity also play a role in this risk calculation.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention personal health profiles or family longevity."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "If you have chronic medical conditions that may shorten your life expectancy, taking monthly payments might yield fewer total dollars than taking the lump sum upfront.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE forbids presupposing reader situation and does not mention medical conditions."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Conversely, individuals with family histories of exceptional longevity often gain more cumulative value from an annuity that pays every month until death.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state comparisons based on family longevity history."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Because lump sum calculations vary by plan, you should request the written actuarial assumptions from your plan administrator before committing.",
+     "replacement": "Because lump sum calculations vary by plan, you should request the written figures from your plan before committing.",
+     "type": "unsupported",
+     "why": "SOURCE states to get written figures, not actuarial assumptions."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Selecting a joint-and-survivor annuity provides continued monthly checks to your surviving spouse for their lifetime, but it permanently reduces the initial monthly amount you receive while both of you are alive.",
+     "replacement": "Survivor options vary by plan, and you should review your plan's written figures to see available continuing benefit terms.",
+     "type": "unsupported",
+     "why": "SOURCE states survivor options vary by plan and does not state benefit reductions."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Monthly payments provide zero liquidity; you cannot borrow against your pension, speed up payments to purchase a retirement home, or access principal for unexpected medical care.",
+     "replacement": "Monthly payments provide a regular income stream rather than immediate access to the full benefit value.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention borrowing against pensions, purchasing homes, or medical care."
+    },
+    {
+     "id": "verdict",
+     "quote": "Choose the pension annuity if you want guaranteed lifetime income, do not want to manage investments or monitor market downturns, have a family history of longevity, or need an established income floor to cover essential retirement living costs.",
+     "replacement": "Choose the pension annuity if you want guaranteed lifetime income without taking on investment or longevity risk, subject to your plan's ability to pay.",
+     "type": "unsupported",
+     "why": "SOURCE does not state family longevity history as a decision criterion."
+    },
+    {
+     "id": "verdict",
+     "quote": "Choose the pension lump sum if you want full control over your capital, wish to leave remaining assets to your children or heirs, have health conditions that may shorten your life expectancy, or plan to execute a direct rollover into an IRA to defer taxes and manage your own asset allocation.",
+     "replacement": "Choose the pension lump sum if you want control over your capital, are willing to take on investment and longevity risk, or plan to execute a direct rollover into an IRA to defer taxes.",
+     "type": "unsupported",
+     "why": "SOURCE does not state health conditions as a decision criterion."
+    },
+    {
+     "id": "verdict",
+     "quote": "This recommendation is not for individuals who lack the discipline to leave retirement assets invested or who might spend down a lump sum prematurely.",
+     "replacement": "This recommendation does not serve individuals whose priority is predictable regular income without managing investment risk.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe spending discipline or premature spend-down behavior."
+    },
+    {
+     "id": "faqItems[4].answer",
+     "quote": "If you elect a joint-and-survivor annuity option at retirement, reduced monthly payments will continue to your designated surviving beneficiary for the remainder of their lifetime.",
+     "replacement": "If your plan offers survivor options, payments may continue to a beneficiary according to terms that vary by plan.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that survivor options provide reduced payments; options vary by plan."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [
+    {
+     "id": "introText",
+     "quote": "Every worker facing a pension buyout or retirement distribution must balance predictable lifetime payments against control over invested assets.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "comparisonTable.rows[0].a",
+     "quote": "A single payout representing the present value of your accrued benefit, paid all at once",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "comparisonTable.rows[2].a",
+     "quote": "You carry the risk of outliving your money if your withdrawals exceed portfolio growth",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "comparisonTable.rows[4].a",
+     "quote": "Full access to allocate, withdraw, or preserve capital according to your personal financial needs",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "comparisonTable.rows[5].a",
+     "quote": "Any remaining balance in your personal account passes directly to your designated beneficiaries",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "comparisonTable.rows[5].b",
+     "quote": "Payments end at your death unless you selected a specific joint-and-survivor option at retirement",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "comparisonTable.rows[6].a",
+     "quote": "A surviving spouse inherits the remaining portfolio and manages subsequent withdrawals independently",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "If financial markets drop or portfolio returns lag, your regular monthly check remains unchanged.",
+     "type": "contradicted",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "You can contrast this structure with individual commercial products in our review of [Pension vs Annuity](/compare/pension-vs-annuity/) to understand how private contracts treat these same portfolio risks.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "The plan or payer absorbs the daily volatility of equities and fixed-income markets.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "That flexibility comes with the responsibility of discipline, because market declines early in retirement can permanently impair your principal.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "An annuity generally ceases payments upon your death unless you elect a joint-and-survivor option when you retire.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "If both you and your spouse pass away early in retirement, the remaining value of the pension benefit remains with the plan.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "A lump sum rollover allows you to name primary and contingent beneficiaries on your rollover account.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Any balance remaining in your account when you die passes directly to your designated heirs, providing wealth transfer flexibility that standard single-life annuities cannot match.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Your surviving spouse inherits the entire account balance and can manage subsequent withdrawals according to their personal living expenses.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "A lump sum rolled into an IRA gives you complete freedom to withdraw whatever dollar amounts your lifestyle requires, subject to normal tax rules.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "That liquidity requires budgeting discipline, because taking unscheduled distributions accelerates portfolio depletion.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Plans use specific interest rate assumptions and actuarial tables to convert monthly benefits into a single present-value sum, and these calculation methods vary from one plan to another.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Third, examine the survivor coverage percentages offered under the plan.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqItems[0].answer",
+     "quote": "Choose a lump sum if you want control over your investments, wish to leave remaining money to your heirs, or need liquidity for personal expenses.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqItems[4].answer",
+     "quote": "If you elect a single-life annuity, all payments end upon your death and no remaining value passes to heirs.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2304
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 489.3,
+ "response_id": "tNHVaretD8WKytMPu7-PmAs",
+ "generated_at": "2026-10-19T08:23:55+0000"
+}

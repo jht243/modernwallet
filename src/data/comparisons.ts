@@ -4451,7 +4451,9 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "Freddie Mac — Primary Mortgage Market Survey", url: "https://www.freddiemac.com/pmms" },
       { label: "CFPB — Understanding mortgage fees and rates", url: "https://www.consumerfinance.gov/owning-a-home/" },
     ],
-    relatedComparisons: ["15-year-vs-20-year-vs-30-year-mortgage", "fixed-vs-arm-mortgage", "renting-vs-buying"],
+    relatedComparisons: ["15-year-vs-20-year-vs-30-year-mortgage", "fixed-vs-arm-mortgage", "renting-vs-buying",
+      "pay-off-mortgage-vs-invest"
+    ],
     calculatorLinks: [
       { label: "Mortgage extra payment calculator", href: "/mortgage/extra-payment-calculator/" },
       { label: "Mortgage amortization schedule calculator", href: "/mortgage/amortization-schedule/" },
@@ -12561,7 +12563,9 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "PBGC — Maximum Monthly Guarantee Tables", url: "https://www.pbgc.gov/employers-practitioners/rates/maximum-guarantee" },
       { label: "FINRA — Fixed Annuities", url: "https://www.finra.org/investors/investing/investment-products/annuities/fixed-annuities" },
     ],
-    relatedComparisons: ["pension-vs-401k", "annuity-vs-cd", "military-retirement-vs-va-disability"],
+    relatedComparisons: ["pension-vs-401k", "annuity-vs-cd", "military-retirement-vs-va-disability",
+      "pension-lump-sum-vs-annuity"
+    ],
     calculatorLinks: [
       { label: "Pension calculator", href: "/retirement/pension-calculator/" },
       { label: "Social Security calculator", href: "/retirement/social-security-retirement-calculator/" },
@@ -19203,6 +19207,373 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         "label": "Roth IRA calculator",
         "href": "/investing/roth-ira-calculator/"
+      },
+      {
+        "label": "Investment growth calculator",
+        "href": "/investing/investment-growth-calculator/"
+      }
+    ]
+  },
+  {
+    "updated": "2026-10-19",
+    "slug": "social-security-at-62-vs-70",
+    "title": "Social Security at 62 vs 70: How Claiming Age Shapes Checks",
+    "metaDescription": "Comparing Social Security at 62 vs 70 shows how monthly checks, delayed retirement credits, and your lifespan determine the right claiming age.",
+    "targetKeyword": "social security at 62 vs 70",
+    "optionA": "Claiming at 62",
+    "optionB": "Claiming at 70",
+    "segment": "retirement",
+    "h1": "Social Security at 62 vs 70: When to Claim Your Benefit",
+    "introText": "Claiming Social Security at 62 gives you a permanently smaller monthly check, about 30 percent below the full-retirement-age amount for anyone born in 1960 or later, while waiting until 70 earns delayed retirement credits of 8 percent a year. The choice between social security at 62 vs 70 represents a direct trade between collecting more checks over a longer retirement or receiving larger checks for fewer years. Every eligible worker must weigh their current need for cash against the guaranteed growth that comes from waiting.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Earliest age you can start",
+          "a": "Age 62, the earliest age allowed by law for retirement benefits",
+          "b": "Age 70, the latest age to earn delayed retirement credits"
+        },
+        {
+          "dimension": "Change to the monthly amount",
+          "a": "Permanent reduction of 30 percent for workers born in 1960 or later",
+          "b": "Permanent increase of 24 percent above the full-retirement-age baseline for workers born in 1960 or later"
+        },
+        {
+          "dimension": "Number of checks you collect before age 70",
+          "a": "96 monthly payments collected between age 62 and age 70",
+          "b": "Zero monthly payments collected before age 70"
+        },
+        {
+          "dimension": "How long you need to live for the larger check to pay off",
+          "a": "Collects more total dollars if your lifespan is shorter",
+          "b": "Pays off later in retirement if you live long enough for the larger monthly check to exceed the cumulative total of early checks"
+        },
+        {
+          "dimension": "Need for other income while you wait",
+          "a": "Low need for outside assets because monthly benefits begin immediately",
+          "b": "High need for personal savings, investment withdrawals, or a pension to fund eight years of living expenses"
+        },
+        {
+          "dimension": "Permanence of the choice",
+          "a": "The 30 percent reduction applies permanently to all future monthly benefits",
+          "b": "The 24 percent credit increase applies permanently to all future monthly benefits"
+        },
+        {
+          "dimension": "Effect of going past age 70",
+          "a": "Not applicable, as benefits began eight years prior",
+          "b": "Credits stop accumulating at age 70, meaning there is zero financial advantage to delaying beyond this age"
+        }
+      ]
+    },
+    "verdict": "Choose claiming Social Security at 70 if you have sufficient personal savings or a pension to cover living expenses between age 62 and 70, enjoy good health with a family history of longevity, and want to maximize your guaranteed monthly income for late retirement. Choose claiming Social Security at 62 if you need immediate income to cover basic living expenses, lack outside savings or bridging assets, or have serious health conditions that reduce your expected lifespan. This recommendation to delay until 70 is not for individuals who would need to take on high-interest debt or exhaust emergency reserves simply to survive their sixties without a benefit check. Our verdict would change if a worker receives a sudden medical diagnosis altering their life expectancy, or if future federal legislation alters the statutory delayed retirement credit schedule or full retirement age requirements. To take the next concrete step, verify your personal projected benefit amounts at age 62, full retirement age, and age 70 by checking your projected benefit at 62, full retirement age and 70 in your SSA account, then run those figures through the [Social Security Retirement Calculator](/retirement/social-security-retirement-calculator/) before filing an application.",
+    "sections": [
+      {
+        "heading": "How The Monthly Check Changes By Claiming Age",
+        "content": "For workers born in 1960 or later, claiming at age 62 permanently cuts the monthly benefit to 70 percent of the full-retirement-age amount, whereas waiting until age 70 permanently raises it to 124 percent. For anyone born in 1960 or later, full retirement age is 67. If you decide to claim benefits early at age 62, the federal formula permanently reduces the check.\n\nAccording to the rules detailed on the [SSA age reduction page](https://www.ssa.gov/benefits/retirement/planner/agereduction.html), benefits are reduced by 30 percent for a person retiring at 62 whose full retirement age is 67. This reduction is permanent and remains attached to your monthly check for the rest of your life. The reduction is smaller for individuals with an earlier full retirement age. For instance, workers born between 1943 and 1954 have a full retirement age of 66, and their reduction at age 62 is 25 percent. Regardless of the birth cohort, starting at 62 locks in the minimum possible base payment.\n\nIn contrast, workers who choose to delay receiving benefits past their full retirement age earn delayed retirement credits. The SSA adds 8 percent to your benefit for each full year you delay receiving payments past full retirement age, up to age 70. For workers born after 1943, this credit accumulates at a rate of 2/3 of 1 percent for each individual month of delay, as outlined in the [SSA delayed retirement credit fact sheet](https://www.ssa.gov/pressoffice/DlyRetCrdtFactSheet.html).\n\nIf your full retirement age is 67, waiting until age 70 represents 36 months of delay. Those 36 months yield an extra 24 percent in delayed retirement credits, resulting in a monthly check equal to 124 percent of your full-retirement-age entitlement. Once you reach age 70, the monthly benefit stops increasing, as documented on the [SSA delayed retirement page](https://www.ssa.gov/benefits/retirement/planner/delayret.html). There is no incentive or financial benefit to waiting past age 70. You can test these exact percentages against your own earnings using our [Social Security Retirement Calculator](/retirement/social-security-retirement-calculator/) to see how monthly amounts adjust across each year."
+      },
+      {
+        "heading": "Why There Is No Single Break-Even Age",
+        "content": "A universal break-even age between claiming at 62 and waiting until 70 does not exist because the financial crossover depends entirely on individual longevity. The crossover age depends on how long you live, which nobody can know in advance.\n\nThe underlying arithmetic of the comparison is straightforward. An individual who starts at age 62 collects 96 monthly payments before someone who waits until age 70 receives a single check. That 62-year-old claimant establishes an eight-year head start in total dollars collected. When the delayed claimant reaches age 70, their monthly check is 124 percent of the baseline amount compared to the 70 percent received by the early claimant.\n\nIf you live a shorter life, starting at 62 produces higher total lifetime cash because you collect checks for years that the delayed claimant missed completely. If you live long enough, the 124 percent payment eventually overtakes the total lifetime sum of the smaller checks, generating more cumulative income over your life. If you want to evaluate how lifetime income timelines compare alongside traditional employer pensions, review our [Pension Calculator](/retirement/pension-calculator/)."
+      },
+      {
+        "heading": "How Bridging Income and Other Assets Fund Waiting",
+        "content": "Delaying Social Security to age 70 requires having alternative income or personal savings to pay living expenses between age 62 and age 70. The primary barrier to waiting until age 70 is cash flow. Choosing to delay means you must fund your household budget for up to eight years without receiving any federal retirement payments. Retirees who delay must bridge that eight-year window using taxable accounts, retirement plans, part-time earnings, or an employer pension.\n\nThis funding requirement means the cost of waiting is paid directly out of your other assets.\n\nTo examine how guaranteed monthly annuities interact with retirement capital, read our breakdown of [Pension vs Annuity](/compare/pension-vs-annuity/). If you are evaluating whether your current portfolio can support eight years of living costs before age 70, use our [Retirement Savings Calculator](/retirement/retirement-savings-calculator/) to project balances and withdrawal sustainability."
+      },
+      {
+        "heading": "Tax Considerations and Spousal Benefit Realities",
+        "content": "Part of your benefit may be taxable, depending on your other income. The amount you receive at 62 or at 70 is one input to that calculation.\n\nTo review how federal tax rules treat your benefits across different filing statuses, consult our guide on [Is Social Security Taxable](/guides/is-social-security-taxable/). The share of your benefit that is taxed depends on your whole tax return, so the guide below is the place to check it.\n\nSpousal and survivor benefits follow separate SSA rules that can change which claiming age fits a household. Ask the Social Security Administration about them before you file."
+      },
+      {
+        "heading": "Evaluating Social Security 62 vs 67 vs 70 Tradeoffs",
+        "content": "In the social security 62 vs 67 vs 70 comparison, the check is 70 percent of the full-retirement-age amount at 62, 100 percent at 67, and 124 percent at 70.\n\nStopping work and claiming benefits do not need to happen simultaneously. A person can step away from full-time employment at age 62, live off personal savings or a pension, and delay claiming Social Security until 67 or 70 to allow credits to accumulate. Conversely, an individual can continue working into their late sixties while choosing not to claim Social Security, avoiding early reduction rules entirely.\n\nBoth the reduction for claiming early and the credit for waiting are permanent adjustments. Once you make the decision, your monthly baseline is established."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Should I take Social Security at 62 or wait until 70?",
+        "answer": "You should take Social Security at 62 if you need immediate cash flow, have limited savings, or expect a shorter lifespan. You should wait until 70 if you have alternative income to fund your sixties, expect average or above-average longevity, and want the maximum permanent monthly payout of 124 percent of your full-retirement-age benefit."
+      },
+      {
+        "question": "How much more do I get by waiting until 70?",
+        "answer": "Waiting until age 70 increases your monthly check by 8 percent per year past your full retirement age. For someone born in 1960 or later with a full retirement age of 67, waiting until 70 yields 36 months of delayed retirement credits, resulting in a monthly benefit that is 124 percent of the full-retirement-age amount, compared to 70 percent if claimed at 62."
+      },
+      {
+        "question": "How much is Social Security reduced at 62?",
+        "answer": "Social Security benefits are reduced by 30 percent for anyone who claims at age 62 and has a full retirement age of 67, which applies to workers born in 1960 or later. For individuals born between 1943 and 1954 whose full retirement age is 66, the permanent reduction at age 62 is 25 percent."
+      },
+      {
+        "question": "Is it worth waiting until 70 to claim Social Security?",
+        "answer": "Waiting until 70 is worth it if you live long enough for the larger monthly checks to surpass the total dollar amount collected by an early claimant, and if you have the financial assets to fund your living expenses during your sixties without taking on debt."
+      },
+      {
+        "question": "Do benefits keep growing after 70?",
+        "answer": "No, benefits stop growing once you reach age 70. Delayed retirement credits cease accumulating at age 70, so there is zero financial benefit to delaying your application beyond that point."
+      }
+    ],
+    "sources": [
+      {
+        "label": "SSA, Delayed Retirement Credits",
+        "url": "https://www.ssa.gov/benefits/retirement/planner/delayret.html"
+      },
+      {
+        "label": "SSA, Reduction for Claiming Early",
+        "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html"
+      },
+      {
+        "label": "SSA, Delayed Retirement Credits Fact Sheet",
+        "url": "https://www.ssa.gov/pressoffice/DlyRetCrdtFactSheet.html"
+      }
+    ],
+    "relatedComparisons": [
+      "pension-vs-annuity"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "Social Security retirement calculator",
+        "href": "/retirement/social-security-retirement-calculator/"
+      },
+      {
+        "label": "Retirement savings calculator",
+        "href": "/retirement/retirement-savings-calculator/"
+      }
+    ]
+  },
+  {
+    "updated": "2026-10-19",
+    "slug": "pension-lump-sum-vs-annuity",
+    "title": "Pension Lump Sum vs Annuity: How to Choose in 2026",
+    "metaDescription": "Pension lump sum vs annuity compared on investment risk, longevity protection, tax withholding rules, and rollover mechanics to help you choose.",
+    "targetKeyword": "pension lump sum vs annuity",
+    "optionA": "Pension Lump Sum",
+    "optionB": "Pension Annuity (Monthly Payments)",
+    "segment": "retirement",
+    "h1": "Pension Lump Sum vs Annuity: How to Choose in 2026",
+    "introText": "A monthly pension annuity gives you an income stream the plan owes you, with the investment and longevity risk on the plan (subject to the plan's ability to pay), while a lump sum hands you the full value to roll over and invest yourself, which gives flexibility and the chance of higher or lower total wealth. Choosing between these two payout structures determines who manages investment and longevity risk. Every worker facing a pension buyout or retirement distribution must balance predictable lifetime payments against control over invested assets.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "What you receive",
+          "a": "A single payout representing the present value of your accrued benefit, paid all at once",
+          "b": "A series of regular payments, usually monthly, paid from the plan for as long as plan terms specify"
+        },
+        {
+          "dimension": "Who carries investment risk",
+          "a": "You carry all investment risk once you receive or roll over the funds into your own accounts",
+          "b": "The employer plan or annuity provider carries the investment risk, subject to plan ability to pay"
+        },
+        {
+          "dimension": "Who carries longevity risk",
+          "a": "You carry the risk of outliving your money if your withdrawals exceed portfolio growth",
+          "b": "The plan carries the risk that you live longer than expected, subject to plan ability to pay"
+        },
+        {
+          "dimension": "Tax treatment when paid",
+          "a": "Subject to mandatory 20 percent federal withholding if paid directly to you, unless moved by direct rollover",
+          "b": "Generally taxed as ordinary income in the year each monthly check is distributed"
+        },
+        {
+          "dimension": "Flexibility and access to the money",
+          "a": "Full access to allocate, withdraw, or preserve capital according to your personal financial needs",
+          "b": "Regular payments from the plan for as long as plan terms specify"
+        },
+        {
+          "dimension": "What is left for heirs",
+          "a": "Any remaining balance in your personal account passes directly to your designated beneficiaries",
+          "b": "Whether payments continue after your death depends on the option you pick and your plan's terms; get them in writing"
+        },
+        {
+          "dimension": "Survivor protection for a spouse",
+          "a": "A rollover account can name beneficiaries; a spouse's rights depend on the plan and account rules",
+          "b": "Survivor options vary by plan; obtain the plan's written figures"
+        }
+      ]
+    },
+    "verdict": "Choose the pension annuity if you want guaranteed lifetime income without taking on investment or longevity risk, subject to your plan's ability to pay. Choose the pension lump sum if you want control over your capital, are willing to take on investment and longevity risk, or plan to execute a direct rollover into an IRA to defer taxes. The lump sum does not serve anyone who would spend it instead of rolling it over: the payer withholds 20 percent, and a withdrawal before age 59½ can add the 10 percent early distribution tax. The annuity does not serve anyone whose plan may struggle to pay, because the payments depend on the plan's ability to pay. Our verdict would change if your employer offers a buyout based on unusually favorable plan terms, if your pension includes an automatic cost-of-living adjustment, or if your plan demonstrates signs of severe financial distress that could threaten future monthly payouts.",
+    "sections": [
+      {
+        "heading": "Who Carries the Risk in Each Choice",
+        "content": "When you select a monthly pension annuity, the plan sponsor or underlying insurance carrier is responsible for funding your payments for the period the plan's terms specify. If financial markets drop or portfolio returns lag, your monthly check does not depend on market returns. The plan also assumes longevity risk, meaning payments continue even if you live far past typical life expectancies. Your security rests on the financial health and ongoing ability of the plan to pay those defined obligations. To evaluate baseline monthly income targets against your broader portfolio, test your numbers in our [Pension Calculator](/retirement/pension-calculator/).\n\nElecting a pension lump sum shifts both investment risk and longevity risk entirely onto your shoulders. You receive a single distribution that you must manage, allocate, and withdraw from across retirement. If your investments lose money, or if you withdraw capital too rapidly, you face the genuine risk of running out of money. You can contrast this structure with individual commercial products in our review of [Pension vs Annuity](/compare/pension-vs-annuity/) to understand how private contracts treat these same portfolio risks."
+      },
+      {
+        "heading": "Evaluating Pension Lump Sum vs Annuity for Managing Retirement Risk",
+        "content": "The pension lump sum vs annuity decision fundamentally centers on whether you want an institution or your own household to bear market uncertainty. An annuity provides predictability by establishing a set income floor that arrives every month regardless of market returns, subject to the plan's ability to pay. The plan or payer absorbs the daily volatility of equities and fixed-income markets.\n\nTaking the lump sum removes institutional dependency and grants complete asset control. You gain the freedom to invest and manage the funds yourself. That flexibility comes with the responsibility of discipline, because market declines early in retirement can permanently impair your principal. You can model different growth projections and drawdowns using our [Retirement Savings Calculator](/retirement/retirement-savings-calculator/) to observe how portfolio longevity changes under various withdrawal timelines.\n\nBecause lump sum calculations vary by plan, you should request the written figures from your plan before committing."
+      },
+      {
+        "heading": "Taxes and Rollover Mechanics for a Pension Lump Sum",
+        "content": "Taking a lump sum distribution triggers specific tax rules established by the Internal Revenue Service (IRS). Under federal rules outlined in [IRS Topic No. 412](https://www.irs.gov/taxtopics/tc412), mandatory income tax withholding of 20 percent applies to most taxable distributions paid directly to you in a lump sum. This withholding applies even if you intend to deposit the funds into an Individual Retirement Account (IRA) within the allowable 60-day window. If you receive an eligible rollover distribution directly, the payer must withhold 20 percent for federal taxes upfront.\n\nYou can defer income tax by rolling over the taxable amount to an eligible retirement plan or an IRA within 60 days after you receive the distribution.\n\nYou can ask the payer to directly roll over the taxable portion into an IRA or eligible plan. Under this method, you instruct the payer to transfer the taxable portion directly into an IRA or another qualified employer retirement account. The funds never pass through your personal hands, no mandatory 20 percent withholding is deducted, and taxes remain deferred until you take withdrawals in future years. For an analysis of destination accounts for these transfers, read our guide on [Rollover IRA vs Traditional IRA](/compare/rollover-ira-vs-traditional-ira/)."
+      },
+      {
+        "heading": "Early Distribution Penalties and Annuity Taxation",
+        "content": "If you take a lump sum distribution before reaching age 59½, you may face additional tax penalties beyond ordinary income taxes. The Internal Revenue Service (IRS) describes a 10 percent additional tax on early distributions from qualified retirement plans under [IRS Topic No. 558](https://www.irs.gov/taxtopics/tc558). This penalty equals 10 percent of the taxable portion of your distribution. The rule applies unless you qualify for a statutory exception recognized by the IRS.\n\nSeveral specific exceptions exist that can waive the 10 percent early distribution tax. Common exceptions include distributions made after you separate from service with your employer during or after the calendar year in which you reach age 55, distributions resulting from total and permanent disability, and distributions paid to beneficiaries after your death. Check [IRS Topic No. 558](https://www.irs.gov/taxtopics/tc558) to confirm whether their separation date or circumstances meet these statutory definitions before taking cash directly.\n\nMonthly pension payments operate under a completely different tax framework. Monthly pension benefits are generally taxed as ordinary income in the year you receive them, as explained in [IRS Topic No. 410](https://www.irs.gov/taxtopics/tc410). Confirm how your payments are taxed with the plan administrator or a tax professional. Unlike a lump sum, which compresses your tax liability into a single calendar year if not rolled over, an annuity spreads your taxable income across all of your retirement years."
+      },
+      {
+        "heading": "Comparing Flexibility, Survivor Benefits, and Legacy Goals",
+        "content": "A pension lump sum or monthly payments election creates lasting consequences for your surviving spouse and heirs. Whether payments continue to a spouse or heir depends on the option you elect and your plan's terms. Survivor options vary by plan, and you should review your plan's written figures to see available continuing benefit terms.\n\nA lump sum rollover allows you to name primary and contingent beneficiaries on your rollover account. Any balance remaining in your account when you die passes directly to your designated heirs. To see how these distribution choices differ from defined-contribution accounts, examine our comparison of [Pension vs 401(k)](/compare/pension-vs-401k/).\n\nFlexibility during your lifetime also differs. Monthly payments provide a regular income stream rather than immediate access to the full benefit value. A lump sum rolled into an IRA gives you complete freedom to withdraw whatever dollar amounts your lifestyle requires, subject to normal tax rules. That liquidity requires budgeting discipline, because taking unscheduled distributions accelerates portfolio depletion."
+      },
+      {
+        "heading": "Questions to Ask Your Plan Before Deciding",
+        "content": "Deciding whether to take the pension lump sum or monthly payments requires evaluating four specific plan characteristics that vary widely between employers. First, request the plan's formal written statement showing the exact dollar amounts for both the lump sum buyout and every available monthly payment option. Plans use specific interest rate assumptions and actuarial tables to convert monthly benefits into a single present-value sum, and these calculation methods vary from one plan to another.\n\nSecond, check whether the monthly pension annuity includes a cost-of-living adjustment (COLA). A plan without one pays the same dollar amount every year while prices rise.\n\nThird, examine the survivor coverage percentages offered under the plan. Review the plan's written survivor options, as these options vary by plan. Finally, identify the firm deadline your employer establishes for making your pension buyout election."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Should I take the pension lump sum or monthly payments?",
+        "answer": "Choose monthly payments if you prioritize guaranteed income for life without investment or longevity risk, subject to your plan's ability to pay. Choose a lump sum if you want control over your investments, wish to leave remaining money to your heirs, or need liquidity for personal expenses."
+      },
+      {
+        "question": "Is a pension lump sum taxable?",
+        "answer": "Yes, a pension lump sum is generally taxable as ordinary income in the year it is distributed unless you roll it over into an eligible retirement plan or IRA within 60 days. If paid directly to you, the payer must withhold a mandatory 20 percent for federal income taxes."
+      },
+      {
+        "question": "Can I roll a pension lump sum into an IRA?",
+        "answer": "Yes, you can roll a pension lump sum into an IRA to defer income taxes. Requesting a direct trustee-to-trustee rollover avoids the mandatory 20 percent federal tax withholding and ensures the entire distribution transfers directly into your retirement account."
+      },
+      {
+        "question": "What is the 20% withholding on a pension lump sum?",
+        "answer": "Under IRS rules, mandatory income tax withholding of 20 percent applies to most taxable distributions paid directly to you in a lump sum. You can avoid this withholding entirely by instructing your plan administrator to execute a direct rollover into an IRA or eligible plan."
+      },
+      {
+        "question": "What happens to a pension annuity when I die?",
+        "answer": "Whether payments continue after your death depends on the payout option you choose and your plan's terms. Ask the plan for its survivor options in writing. If your plan offers survivor options, payments may continue to a beneficiary according to terms that vary by plan."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS, Topic 412: Lump-sum distributions",
+        "url": "https://www.irs.gov/taxtopics/tc412"
+      },
+      {
+        "label": "IRS, Topic 558: Additional tax on early distributions",
+        "url": "https://www.irs.gov/taxtopics/tc558"
+      },
+      {
+        "label": "IRS, Topic 410: Pensions and annuities",
+        "url": "https://www.irs.gov/taxtopics/tc410"
+      }
+    ],
+    "relatedComparisons": [
+      "pension-vs-annuity",
+      "pension-vs-401k",
+      "rollover-ira-vs-traditional-ira"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "Pension calculator",
+        "href": "/retirement/pension-calculator/"
+      },
+      {
+        "label": "Retirement savings calculator",
+        "href": "/retirement/retirement-savings-calculator/"
+      }
+    ]
+  },
+  {
+    "updated": "2026-10-19",
+    "slug": "pay-off-mortgage-vs-invest",
+    "title": "Pay Off Mortgage or Invest: How to Choose Your Path",
+    "metaDescription": "Deciding whether to pay off mortgage or invest? We compare guaranteed returns, tax rules under IRS Pub 936, liquidity, and what to fund first.",
+    "targetKeyword": "pay off mortgage or invest",
+    "optionA": "Pay Off the Mortgage Early",
+    "optionB": "Invest the Extra Money",
+    "segment": "mortgage",
+    "h1": "Pay Off Mortgage or Invest: How to Choose Where Your Cash Goes",
+    "introText": "Paying down a mortgage earns a guaranteed return equal to your loan's interest rate, while investing offers a return that is uncertain and can be higher or lower. Choosing between these two paths comes down to comparing your specific loan rate against your tolerance for market risk. Extra principal payments lock in a reduction in future interest costs, but that cash gets tied up directly in home equity. Investing keeps your money more liquid in a brokerage account, though asset prices fluctuate over time.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Return you earn",
+          "a": "Earns a return exactly equal to your mortgage note rate through eliminated interest charges",
+          "b": "Earns the return generated by your chosen investment portfolio, which has no fixed rate"
+        },
+        {
+          "dimension": "Certainty of that return",
+          "a": "Completely guaranteed and shielded from the fluctuations of financial markets",
+          "b": "Uncertain, with returns that can finish higher or lower than your mortgage interest rate"
+        },
+        {
+          "dimension": "Access to the money later",
+          "a": "Low liquidity, because money put into home equity cannot be drawn without refinancing or selling",
+          "b": "High liquidity, because securities in a standard taxable brokerage account can be sold as needed"
+        },
+        {
+          "dimension": "Tax angle",
+          "a": "Reduces total mortgage interest, which only matters on taxes if you itemize on Schedule A",
+          "b": "Depends on your own tax situation; this page states no rates"
+        },
+        {
+          "dimension": "What has to be true for it to win",
+          "a": "Your mortgage rate must beat the net after-tax return produced by your investment portfolio",
+          "b": "Your net investment portfolio return must finish higher than your mortgage interest rate"
+        },
+        {
+          "dimension": "Effect on monthly cash flow",
+          "a": "Extra payments reduce the cash you keep each month, and money sent in is hard to get back out",
+          "b": "Contributions also leave your monthly budget, but the money stays in an account that can generally be sold"
+        },
+        {
+          "dimension": "Emotional and risk factors",
+          "a": "No exposure to market swings; the return equals your mortgage rate",
+          "b": "Exposed to price swings; returns can finish below your mortgage rate"
+        }
+      ]
+    },
+    "verdict": "Choose to pay off the mortgage early if your mortgage rate is high, you value a completely guaranteed financial return, and you place personal value on eliminating debt obligations from your life. Choose to invest the extra money if your mortgage rate is low, you have a multi-year horizon that can ride through market volatility, and you want to maintain access to liquid capital in a taxable brokerage account. A split approach is also entirely reasonable: you can send extra principal payments each month while directing surplus cash into investments. This recommendation is not for individuals who lack a liquid emergency fund, have not claimed their full employer retirement match, or carry higher-rate debt elsewhere on their balance sheet. Our verdict would change if your mortgage contract contains an active prepayment penalty, or if your loan interest rate adjusts to a level where the guaranteed savings outpace your realistic portfolio hurdle rate. Run your own mortgage rate through the [Mortgage Extra Payment Calculator](/mortgage/extra-payment-calculator/) before deciding.",
+    "sections": [
+      {
+        "heading": "The Return You Earn Each Way",
+        "content": "The mathematical mechanism of early debt repayment is straightforward. Every extra dollar of principal you pay saves the interest that dollar would have accrued at your loan's rate for the rest of the loan term. Because this savings is baked into your promissory note, the return from extra payments equals your mortgage rate and is not subject to market swings.\n\nInvesting your spare cash operates on an entirely different mechanism. Investment returns are not guaranteed, and the net performance of a portfolio over your holding period can land lower than your mortgage rate. When you allocate extra cash to financial markets, you accept price fluctuations in exchange for the possibility of outpacing your borrowing cost. There is no contractual floor protecting your capital. If you want to estimate what varied compounding trajectories look like outside of debt reduction, test your monthly contributions with our [Investment Growth Calculator](/investing/investment-growth-calculator/) to inspect the mechanics of long-term asset accumulation.\n\nBecause the return on debt paydown is completely fixed while investment results vary, comparing the two paths requires identifying your hurdle rate. If your mortgage rate is high, matching or beating that rate through a portfolio requires taking on substantial volatility with zero guarantee of success. If your loan carries a lower rate, market investments have a lower performance hurdle to clear, yet the risk of principal loss remains real. You must decide whether you prefer a locked-in interest reduction or an open-ended investment outcome that carries downside risk."
+      },
+      {
+        "heading": "Liquidity Differences and Accessing Capital",
+        "content": "Money sent to your lender as extra principal is hard to get back out once the servicer processes the payment. A residential home is not a liquid asset, and equity trapped inside your property walls cannot be spent at a grocery store or used directly to settle unexpected bills. To convert that accumulated home equity back into spendable cash, you must either take out a home equity line, complete a cash-out refinance, or sell the property entirely. If your income drops or you face an unexpected job interruption, a lender may reject an application to borrow against the very equity you worked to build.\n\nInvestments held in a standard taxable account can generally be sold. Publicly traded securities can generally be sold on any regular business day during market hours. While selling assets during a market downturn can lock in portfolio losses, the capital remains accessible without asking permission from a mortgage underwriter.\n\nThis structural divide means that choosing whether to pay down mortgage or invest is also a decision about cash flexibility. Funneling every spare dollar into your loan reduces your total liabilities, but it leaves you asset-rich and cash-poor until the balance hits zero. Keeping money in liquid investments preserves your ability to handle large lifestyle emergencies or career changes without needing to liquidate real estate."
+      },
+      {
+        "heading": "The Tax Angle and Itemized Deductions",
+        "content": "The tax consequences of making extra mortgage payments depend entirely on whether you claim the standard deduction or itemize deductions on your federal return. Under the rules outlined in [IRS Publication 936](https://www.irs.gov/publications/p936), you can deduct home mortgage interest only if you itemize deductions on Schedule A of Form 1040. If you take the standard deduction, your mortgage interest provides zero federal tax benefit, meaning your effective borrowing cost is identical to the stated note rate on your monthly mortgage statement.\n\nFor taxpayers who do itemize deductions, federal law caps the amount of mortgage principal eligible for an interest deduction. For debt secured after December 15, 2017, the deduction limit applies to up to $750,000 of acquisition debt, or $375,000 if you are married filing separately. Mortgages originated on or before that date fall under a grandfathered limit covering up to $1 million of acquisition debt. If your loan balance exceeds these statutory caps, only the interest paid on the allowable portion of the debt qualifies for a deduction on Schedule A.\n\nWhen you prepay principal on a mortgage whose interest you actively deduct, your annual interest charges drop, which directly shrinks your itemized tax write-offs. This dynamic reduces the net after-tax savings of your prepayments compared to someone taking the standard deduction. If you want to see how loan terms, total interest costs, and amortization schedules shift under different structural setups, look through our analysis of a [15-Year vs 30-Year Mortgage](/compare/15-year-vs-30-year-mortgage/) to understand the baseline interest charges you are attempting to reduce."
+      },
+      {
+        "heading": "What to Fund Before Making Either Choice",
+        "content": "Directing discretionary cash toward early mortgage payments or brokerage accounts usually comes after you have a baseline financial buffer. A reasonable order to check first begins with assembling a fully funded emergency cash reserve, capturing any available employer retirement matching contributions, and paying down higher-interest debt obligations. Skipping these foundational steps to accelerate mortgage payments can leave your household exposed if a sudden financial shock occurs. For a structured look at tackling personal liabilities systematically, examine our framework on how to [Pay Off Debt or Invest](/guides/pay-off-debt-or-invest/) across multiple debt categories.\n\nIf your company provides a matching contribution on retirement accounts, every dollar you contribute up to that threshold yields an instant return before any investment growth occurs. Diverting money away from an employer match to prepay a mortgage means walking away from direct compensation. Higher-interest debt costs more than your mortgage, so people usually pay it first.\n\nBefore you remit extra money to your loan servicer, you must also check whether your specific loan agreement includes a prepayment penalty clause. A penalty for paying off your mortgage early can count as home mortgage interest according to IRS Publication 936, provided the penalty is not assessed for a specific administrative service. More practically, incurring a direct financial fee from your lender simply for paying off principal early immediately erodes the interest savings you are trying to capture."
+      },
+      {
+        "heading": "Cash Flow Realities and Structural Alternatives",
+        "content": "Extra payments and investing both reduce the cash you keep each month.\n\nInvesting the extra cash allows you to build an accessible pool of capital that can help cover monthly obligations during leaner periods. If you retain your standard loan amortization schedule and put surplus cash into an investment account, those funds remain available if your household experiences an income interruption. With extra mortgage payments, that liquidity is gone unless you borrow against the equity, refinance, or sell.\n\nIf your primary motivation is lowering interest costs or reducing your monthly obligation, refinancing to a new term or lower rate might offer an alternative mechanism to evaluate alongside extra payments. You can use our [Mortgage Refinance Calculator](/mortgage/refinance-calculator/) to review whether adjusting your baseline borrowing terms accomplishes your debt reduction goals without requiring you to manually accelerate monthly payments. Refinancing has its own closing costs, which this page does not quantify, so price them before comparing it with extra payments."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Should I pay off my mortgage early or invest?",
+        "answer": "Paying off your mortgage early earns a guaranteed return equal to your note rate, while investing offers a return that is not guaranteed and can finish higher or lower. Your decision rests on your loan's interest rate, your tolerance for market risk, and whether you prefer liquid assets in a brokerage account over equity locked inside your home."
+      },
+      {
+        "question": "Is it better to pay extra on a mortgage or invest in the stock market?",
+        "answer": "Neither path is universally better because each serves a different financial objective. Paying extra principal eliminates debt with zero risk of market loss, whereas investing exposes your cash to market downturns in pursuit of portfolio growth. If your mortgage rate is high, extra payments save that higher rate with no market risk, so an investment has more to beat."
+      },
+      {
+        "question": "Does paying off a mortgage early save taxes?",
+        "answer": "Paying off a mortgage early reduces your annual interest expense, which only alters your taxes if you itemize deductions on Schedule A. Under IRS Publication 936, taxpayers who take the standard deduction receive no tax deduction for mortgage interest anyway, meaning paying off the loan simply saves the stated interest rate without changing their tax bill."
+      },
+      {
+        "question": "Can I get a prepayment penalty for paying off my mortgage early?",
+        "answer": "Some loan contracts include a prepayment penalty if you pay off principal ahead of schedule. Under IRS Publication 936, a prepayment penalty can be deductible as home mortgage interest if it is not charged for a specific service, but you should always review your note terms before sending extra payments."
+      },
+      {
+        "question": "What should I do before making extra mortgage payments?",
+        "answer": "Before committing extra cash to your mortgage, confirm you have an adequate emergency fund, capture any available employer match in your retirement account, and pay off any higher-interest debt."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS, Publication 936: Home Mortgage Interest Deduction",
+        "url": "https://www.irs.gov/publications/p936"
+      }
+    ],
+    "relatedComparisons": [
+      "15-year-vs-30-year-mortgage"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "Mortgage extra payment calculator",
+        "href": "/mortgage/extra-payment-calculator/"
       },
       {
         "label": "Investment growth calculator",

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-10-12",
+ "lastRun": "2026-10-19",
  "dropped": [
   {
    "slug": "equipment-financing-vs-sba-loan",
@@ -619,6 +619,41 @@
    "optionB": "VUG",
    "reason": "1000/mo; next-run candidate (2026-10-12)",
    "score": 0
+  },
+  {
+   "slug": "qqq-vs-qqqm",
+   "reason": "volume 18100 but fund fee/structure facts contested across sources; no primary-source fact list this run, 2026-10-19",
+   "score": 0
+  },
+  {
+   "slug": "jepi-vs-jepq",
+   "reason": "volume 2900; no primary-source fact list this run, 2026-10-19",
+   "score": 0
+  },
+  {
+   "slug": "schd-vs-vig",
+   "reason": "volume 880; no primary-source fact list this run, 2026-10-19",
+   "score": 0
+  },
+  {
+   "slug": "ynab-vs-monarch",
+   "reason": "volume 1600; app pricing volatile, not sourced this run, 2026-10-19",
+   "score": 0
+  },
+  {
+   "slug": "credit-karma-vs-experian",
+   "reason": "volume 1000; brand facts not sourced this run, 2026-10-19",
+   "score": 0
+  },
+  {
+   "slug": "paying-off-debt-vs-investing",
+   "reason": "volume 480; overlaps /guides/pay-off-debt-or-invest/, 2026-10-19",
+   "score": 0
+  },
+  {
+   "slug": "balance-transfer-vs-personal-loan",
+   "reason": "volume 210; no sourced CFPB facts retrievable this run, 2026-10-19",
+   "score": 0
   }
  ],
  "published": [
@@ -1198,6 +1233,21 @@
    "slug": "vfiax-vs-voo",
    "format": "comparison",
    "date": "2026-10-12"
+  },
+  {
+   "slug": "social-security-at-62-vs-70",
+   "format": "comparison",
+   "date": "2026-10-19"
+  },
+  {
+   "slug": "pension-lump-sum-vs-annuity",
+   "format": "comparison",
+   "date": "2026-10-19"
+  },
+  {
+   "slug": "pay-off-mortgage-vs-invest",
+   "format": "comparison",
+   "date": "2026-10-19"
   }
  ]
 }

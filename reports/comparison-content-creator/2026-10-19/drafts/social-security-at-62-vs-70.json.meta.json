@@ -1,0 +1,215 @@
+{
+ "slug": "social-security-at-62-vs-70",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1879,
+ "floor": 1500,
+ "input_tokens": 20331,
+ "output_tokens": 3524,
+ "thinking_tokens": 5138,
+ "cached_tokens": 18744,
+ "est_cost_usd": 0.0351,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "thin fact list: \u2248307 fact words for a 1500-word floor (ratio 0.2); expand it with sourced facts before any regeneration"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1879,
+  "numbers_not_in_facts": [
+   "24",
+   "96"
+  ],
+  "fact_budget": {
+   "fact_words": 307,
+   "floor": 1500,
+   "ratio": 0.2,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    12,
+    9,
+    0
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we evaluate retirement choices through lifetime cash flow and balance-sheet durability, and claiming timing remains one of the few irreversible decisions in personal finance.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not support evaluating retirement choices through balance-sheet durability."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "The Social Security Administration (SSA) establishes your baseline benefit, known as the primary insurance amount, based on your lifetime earnings record evaluated at your full retirement age.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention primary insurance amount or lifetime earnings records."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "If you live into your eighties or nineties, the 124 percent payment eventually overtakes the total lifetime sum of the smaller checks, generating more cumulative income over your life.",
+     "replacement": "If you live long enough, the 124 percent payment eventually overtakes the total lifetime sum of the smaller checks, generating more cumulative income over your life.",
+     "type": "unsupported",
+     "why": "SOURCE forbids naming break-even ages and does not list eighties or nineties."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Conversely, spending down personal assets to secure a guaranteed 124 percent baseline payment at age 70 creates a larger, inflation-protected floor for late-life expenses.",
+     "replacement": "Conversely, spending down personal assets to secure a guaranteed 124 percent baseline payment at age 70 creates a larger floor for late-life expenses.",
+     "type": "unsupported",
+     "why": "SOURCE forbids cost-of-living adjustments and does not support inflation protection."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Benefits are evaluated for federal taxation based on your combined income, which incorporates your adjusted gross income, nontaxable interest, and half of your annual Social Security payments.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state combined income formula or rules for taxing benefits."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "A larger benefit claimed at age 70 can push a retiree over federal income thresholds, resulting in a higher portion of benefits being subject to income tax.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state federal income tax thresholds for Social Security benefits."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "A smaller benefit claimed at age 62 produces less total taxable income in any single year, though it provides less purchasing power.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state tax effects or purchasing power for claiming at 62."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "If you are married, your decision to claim at 62 or delay to 70 can affect the future survivor benefit available to your spouse.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE forbids stating spousal or survivor rules beyond stating they exist."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "A worker who delays to 70 locks in a higher baseline payment that can pass to a surviving spouse if the worker dies first.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE forbids stating spousal or survivor rules beyond stating they exist."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Early claiming locks in a permanently lower base, which similarly caps potential survivor benefits.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE forbids stating spousal or survivor rules beyond stating they exist."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Spousal rules involve distinct statutory formulas, and you should check your specific family eligibility directly with the Social Security Administration.",
+     "replacement": "You should check spousal and survivor rules directly with the [Social Security Administration](https://www.ssa.gov/benefits/retirement/planner/agereduction.html).",
+     "type": "unlinked-directive",
+     "why": "Directs reader to an outside source without a markdown link."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Once you make the decision and pass the initial application period, your monthly baseline is established.",
+     "replacement": "Once you make the decision, your monthly baseline is established.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention an initial application period."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "The reduction is slightly smaller for individuals with an earlier full retirement age.",
+     "replacement": "The reduction is smaller for individuals with an earlier full retirement age.",
+     "type": "unsupported",
+     "why": "SOURCE states smaller, not slightly smaller."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Many commentators cite a fixed crossover age to suggest when one strategy beats the other.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what commentators cite."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "When the delayed claimant reaches age 70, their monthly check is significantly larger: 124 percent of the baseline amount compared to the 70 percent received by the early claimant.",
+     "replacement": "When the delayed claimant reaches age 70, their monthly check is 124 percent of the baseline amount compared to the 70 percent received by the early claimant.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that the check is significantly larger."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Because each monthly check at age 70 is substantially higher, the delayed claimant begins closing that cumulative cash gap with every payment received.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state degree claims or closing cumulative cash gaps."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Drawing heavily from retirement portfolios between age 62 and 70 reduces the principal balance that would otherwise generate investment returns.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state portfolio principal balance impacts or investment returns."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "If an investor experiences negative market returns early in retirement, aggressive withdrawals to delay Social Security can place severe pressure on portfolio longevity.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state market returns or portfolio longevity effects."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Conversely, spending down personal assets to secure a guaranteed 124 percent baseline payment at age 70 creates a larger floor for late-life expenses.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state creating a larger floor for late-life expenses."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Workers holding traditional defined benefit plans often have an easier path to age 70 because the pension provides predictable monthly cash during their sixties.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what workers holding defined benefit plans experience."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Workers facing health challenges or immediate cash shortfalls often choose the immediate liquidity of age 62, while those with adequate bridging assets and good health frequently prioritize the 124 percent payout at age 70.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what workers typically choose or prioritize."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2252
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 360.9,
+ "response_id": "tNHVaoGkEdPr1sgP2cLFqAk",
+ "generated_at": "2026-10-19T08:21:47+0000"
+}

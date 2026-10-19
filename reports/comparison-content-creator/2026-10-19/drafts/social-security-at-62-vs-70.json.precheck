@@ -1,0 +1,98 @@
+{
+  "slug": "social-security-at-62-vs-70",
+  "metaTitle": "Social Security at 62 vs 70: How Claiming Age Shapes Checks",
+  "metaDescription": "Comparing Social Security at 62 vs 70 shows how monthly checks, delayed retirement credits, and your lifespan determine the right claiming age.",
+  "h1": "Social Security at 62 vs 70: When to Claim Your Benefit",
+  "subtitle": "A side-by-side comparison of early reduction penalties, delayed retirement credits, and lifetime income considerations between the earliest and latest claiming ages.",
+  "optionAName": "Claiming Social Security at 62",
+  "optionBName": "Claiming Social Security at 70",
+  "introText": "Claiming Social Security at 62 gives you a permanently smaller monthly check, about 30 percent below the full-retirement-age amount for anyone born in 1960 or later, while waiting until 70 earns delayed retirement credits of 8 percent a year. At ModernWallet, we evaluate retirement choices through lifetime cash flow and balance-sheet durability, and claiming timing remains one of the few irreversible decisions in personal finance. The choice between social security at 62 vs 70 represents a direct trade between collecting more checks over a longer retirement or receiving larger checks for fewer years. Every eligible worker must weigh their current need for cash against the guaranteed growth that comes from waiting.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Earliest age you can start",
+        "a": "Age 62, the earliest age allowed by law for retirement benefits",
+        "b": "Age 70, the latest age to earn delayed retirement credits"
+      },
+      {
+        "dimension": "Change to the monthly amount",
+        "a": "Permanent reduction of 30 percent for workers born in 1960 or later",
+        "b": "Permanent increase of 24 percent above the full-retirement-age baseline for workers born in 1960 or later"
+      },
+      {
+        "dimension": "Number of checks you collect before age 70",
+        "a": "96 monthly payments collected between age 62 and age 70",
+        "b": "Zero monthly payments collected before age 70"
+      },
+      {
+        "dimension": "How long you need to live for the larger check to pay off",
+        "a": "Pays off earlier in retirement if you experience a shorter lifespan",
+        "b": "Pays off later in retirement if you live long enough for the larger monthly check to exceed the cumulative total of early checks"
+      },
+      {
+        "dimension": "Need for other income while you wait",
+        "a": "Low need for outside assets because monthly benefits begin immediately",
+        "b": "High need for personal savings, investment withdrawals, or a pension to fund eight years of living expenses"
+      },
+      {
+        "dimension": "Permanence of the choice",
+        "a": "The 30 percent reduction applies permanently to all future monthly benefits",
+        "b": "The 24 percent credit increase applies permanently to all future monthly benefits"
+      },
+      {
+        "dimension": "Effect of going past age 70",
+        "a": "Not applicable, as benefits began eight years prior",
+        "b": "Credits stop accumulating at age 70, meaning there is zero financial advantage to delaying beyond this age"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "How The Monthly Check Changes By Claiming Age",
+      "content": "For workers born in 1960 or later, claiming at age 62 permanently cuts the monthly benefit to 70 percent of the full-retirement-age amount, whereas waiting until age 70 permanently raises it to 124 percent. The Social Security Administration (SSA) establishes your baseline benefit, known as the primary insurance amount, based on your lifetime earnings record evaluated at your full retirement age. For anyone born in 1960 or later, full retirement age is 67. If you decide to claim benefits early at age 62, the federal formula imposes a strict reduction penalty.\n\nAccording to the rules detailed on the [SSA age reduction page](https://www.ssa.gov/benefits/retirement/planner/agereduction.html), benefits are reduced by 30 percent for a person retiring at 62 whose full retirement age is 67. This reduction is permanent and remains attached to your monthly check for the rest of your life. The reduction is slightly smaller for individuals with an earlier full retirement age. For instance, workers born between 1943 and 1954 have a full retirement age of 66, and their reduction at age 62 is 25 percent. Regardless of the birth cohort, starting at 62 locks in the minimum possible base payment.\n\nIn contrast, workers who choose to delay receiving benefits past their full retirement age earn delayed retirement credits. The SSA adds 8 percent to your benefit for each full year you delay receiving payments past full retirement age, up to age 70. For workers born after 1943, this credit accumulates at a rate of 2/3 of 1 percent for each individual month of delay, as outlined in the [SSA delayed retirement credit fact sheet](https://www.ssa.gov/pressoffice/DlyRetCrdtFactSheet.html).\n\nIf your full retirement age is 67, waiting until age 70 represents 36 months of delay. Those 36 months yield an extra 24 percent in delayed retirement credits, resulting in a monthly check equal to 124 percent of your full-retirement-age entitlement. Once you reach age 70, the monthly benefit stops increasing, as documented on the [SSA delayed retirement page](https://www.ssa.gov/benefits/retirement/planner/delayret.html). There is no incentive or financial benefit to waiting past age 70. You can test these exact percentages against your own earnings using our [Social Security Retirement Calculator](/retirement/social-security-retirement-calculator/) to see how monthly amounts adjust across each year."
+    },
+    {
+      "heading": "Why There Is No Single Break-Even Age",
+      "content": "A universal break-even age between claiming at 62 and waiting until 70 does not exist because the financial crossover depends entirely on individual longevity. Many commentators cite a fixed crossover age to suggest when one strategy beats the other. We do not state a specific break-even age as a settled fact because the true crossover point requires knowing the exact date of your death in advance, which no financial model can predict.\n\nThe underlying arithmetic of the comparison is straightforward. An individual who starts at age 62 collects 96 monthly payments before someone who waits until age 70 receives a single check. That 62-year-old claimant establishes an eight-year head start in total dollars collected. When the delayed claimant reaches age 70, their monthly check is significantly larger: 124 percent of the baseline amount compared to the 70 percent received by the early claimant.\n\nBecause each monthly check at age 70 is substantially higher, the delayed claimant begins closing that cumulative cash gap with every payment received. If you live a shorter life, starting at 62 produces higher total lifetime cash because you collect checks for years that the delayed claimant missed completely. If you live into your eighties or nineties, the 124 percent payment eventually overtakes the total lifetime sum of the smaller checks, generating more cumulative income over your life. If you want to evaluate how lifetime income timelines compare alongside traditional employer pensions, review our [Pension Calculator](/retirement/pension-calculator/)."
+    },
+    {
+      "heading": "How Bridging Income and Other Assets Fund Waiting",
+      "content": "Delaying Social Security to age 70 requires having alternative income or personal savings to pay living expenses between age 62 and age 70. The primary barrier to waiting until age 70 is cash flow. Choosing to delay means you must fund your household budget for up to eight years without receiving any federal retirement payments. Retirees who delay must bridge that eight-year window using taxable accounts, retirement plans, part-time earnings, or an employer pension.\n\nThis funding requirement means the cost of waiting is paid directly out of your other assets. Drawing heavily from retirement portfolios between age 62 and 70 reduces the principal balance that would otherwise generate investment returns. If an investor experiences negative market returns early in retirement, aggressive withdrawals to delay Social Security can place severe pressure on portfolio longevity. Conversely, spending down personal assets to secure a guaranteed 124 percent baseline payment at age 70 creates a larger, inflation-protected floor for late-life expenses.\n\nWorkers holding traditional defined benefit plans often have an easier path to age 70 because the pension provides predictable monthly cash during their sixties. To examine how guaranteed monthly annuities interact with retirement capital, read our breakdown of [Pension vs Annuity](/compare/pension-vs-annuity/). If you are evaluating whether your current portfolio can support eight years of living costs before age 70, use our [Retirement Savings Calculator](/retirement/retirement-savings-calculator/) to project balances and withdrawal sustainability."
+    },
+    {
+      "heading": "Tax Considerations and Spousal Benefit Realities",
+      "content": "Social Security benefits can be subject to federal income taxes, and your claiming age directly affects the baseline amount evaluated for tax liability. Deciding between social security at 62 vs 70 changes not only your gross monthly income, but also how that income interacts with the federal tax code. Benefits are evaluated for federal taxation based on your combined income, which incorporates your adjusted gross income, nontaxable interest, and half of your annual Social Security payments.\n\nA larger benefit claimed at age 70 can push a retiree over federal income thresholds, resulting in a higher portion of benefits being subject to income tax. A smaller benefit claimed at age 62 produces less total taxable income in any single year, though it provides less purchasing power. To review how federal tax rules treat your benefits across different filing statuses, consult our guide on [Is Social Security Taxable](/guides/is-social-security-taxable/). We do not state specific tax rates or provisional income thresholds here, as they depend entirely on your overall tax return.\n\nSpousal and survivor rules also play an important role when deciding when to take Social Security. If you are married, your decision to claim at 62 or delay to 70 can affect the future survivor benefit available to your spouse. A worker who delays to 70 locks in a higher baseline payment that can pass to a surviving spouse if the worker dies first. Early claiming locks in a permanently lower base, which similarly caps potential survivor benefits. Spousal rules involve distinct statutory formulas, and you should check your specific family eligibility directly with the Social Security Administration."
+    },
+    {
+      "heading": "Evaluating Social Security 62 vs 67 vs 70 Tradeoffs",
+      "content": "Evaluating Social Security claiming options requires comparing the earliest claiming age of 62, the full retirement age of 67, and the maximum credit age of 70 against personal health and cash requirements. Examining social security 62 vs 67 vs 70 clarifies how each milestone changes your monthly payout. Full retirement age serves as the baseline benchmark of 100 percent. Claiming at 62 subjects your payment to a 30 percent reduction, leaving you with 70 percent. Claiming at 67 provides 100 percent of your earned benefit without reductions or credits. Delaying to 70 adds 24 percent in delayed credits, paying 124 percent.\n\nStopping work and claiming benefits do not need to happen simultaneously. A person can step away from full-time employment at age 62, live off personal savings or a pension, and delay claiming Social Security until 67 or 70 to allow credits to accumulate. Conversely, an individual can continue working into their late sixties while choosing not to claim Social Security, avoiding early reduction rules entirely.\n\nBoth the reduction for claiming early and the credit for waiting are permanent adjustments. Once you make the decision and pass the initial application period, your monthly baseline is established. The choice is a trade between immediate liquidity and lifetime income optimization. Workers facing health challenges or immediate cash shortfalls often choose the immediate liquidity of age 62, while those with adequate bridging assets and good health frequently prioritize the 124 percent payout at age 70."
+    }
+  ],
+  "verdict": "Choose claiming Social Security at 70 if you have sufficient personal savings or a pension to cover living expenses between age 62 and 70, enjoy good health with a family history of longevity, and want to maximize your guaranteed monthly income for late retirement. Choose claiming Social Security at 62 if you need immediate income to cover basic living expenses, lack outside savings or bridging assets, or have serious health conditions that reduce your expected lifespan. This recommendation to delay until 70 is not for individuals who would need to take on high-interest debt or exhaust emergency reserves simply to survive their sixties without a benefit check. Our verdict would change if a worker receives a sudden medical diagnosis altering their life expectancy, or if future federal legislation alters the statutory delayed retirement credit schedule or full retirement age requirements. To take the next concrete step, verify your personal projected benefit amounts at age 62, full retirement age, and age 70 by reviewing your official earnings record on [SSA.gov](https://www.ssa.gov/benefits/retirement/planner/delayret.html), and calculate your personal cash flow requirements before filing an application.",
+  "faqItems": [
+    {
+      "question": "Should I take Social Security at 62 or wait until 70?",
+      "answer": "You should take Social Security at 62 if you need immediate cash flow, have limited savings, or expect a shorter lifespan. You should wait until 70 if you have alternative income to fund your sixties, expect average or above-average longevity, and want the maximum permanent monthly payout of 124 percent of your full-retirement-age benefit."
+    },
+    {
+      "question": "How much more do I get by waiting until 70?",
+      "answer": "Waiting until age 70 increases your monthly check by 8 percent per year past your full retirement age. For someone born in 1960 or later with a full retirement age of 67, waiting until 70 yields 36 months of delayed retirement credits, resulting in a monthly benefit that is 124 percent of the full-retirement-age amount, compared to 70 percent if claimed at 62."
+    },
+    {
+      "question": "How much is Social Security reduced at 62?",
+      "answer": "Social Security benefits are reduced by 30 percent for anyone who claims at age 62 and has a full retirement age of 67, which applies to workers born in 1960 or later. For individuals born between 1943 and 1954 whose full retirement age is 66, the permanent reduction at age 62 is 25 percent."
+    },
+    {
+      "question": "Is it worth waiting until 70 to claim Social Security?",
+      "answer": "Waiting until 70 is worth it if you live long enough for the larger monthly checks to surpass the total dollar amount collected by an early claimant, and if you have the financial assets to fund your living expenses during your sixties without taking on debt."
+    },
+    {
+      "question": "Do benefits keep growing after 70?",
+      "answer": "No, benefits stop growing once you reach age 70. Delayed retirement credits cease accumulating at age 70, so there is zero financial benefit to delaying your application beyond that point."
+    }
+  ],
+  "relatedLinks": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": ""
+}
