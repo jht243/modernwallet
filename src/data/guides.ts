@@ -31,6 +31,258 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── mindmap-pass 2026-10-19 (competitor monitor): self-directed-ira ──
+  {
+    "updated": "2026-10-19",
+    "slug": "self-directed-ira",
+    "title": "Self-Directed IRA Guide to Custodians and Prohibited Deals",
+    "metaDescription": "A self-directed IRA follows normal IRA tax rules but can hold real estate or private stock. See custodian duties, prohibited transactions, and a checklist.",
+    "h1": "How a Self-Directed IRA Works",
+    "cardBlurb": "What a self-directed IRA can hold and the IRS prohibited-transaction rules that reach you and your family.",
+    "introText": "A self-directed individual retirement account (IRA) is a regular traditional or Roth IRA whose custodian allows a wider range of holdings, so you pick the assets and carry the risk if a deal breaks the rules. The tax treatment matches a regular IRA. What changes is the list of assets the custodian will hold and how much of the research falls on you.",
+    "sections": [
+      {
+        "heading": "What a Self-Directed IRA Is",
+        "body": "A self-directed IRA is a regular IRA held by a custodian that allows a wider range of holdings than a standard menu. The owner picks each asset and carries the due-diligence and prohibited-transaction risk that comes with it. The word self-directed describes the custodian's menu, and it does not create a separate kind of tax account.\n\nThe tax treatment follows the IRA type underneath. A self-directed traditional IRA uses traditional IRA tax rules, and a self-directed Roth IRA uses Roth rules. If you have not picked between those two yet, our [Roth IRA vs. traditional IRA comparison](/compare/roth-ira-vs-traditional-ira/) lays out the tradeoff.\n\nContribution limits change every year, so we keep the current figures in one place. Find them in our [IRA contribution limits guide](/guides/ira-contribution-limits-2026/). To project what steady contributions could grow to, use our [Roth IRA calculator](/investing/roth-ira-calculator/)."
+      },
+      {
+        "heading": "Non-Public Assets the Account Can Hold",
+        "body": "A self-directed IRA can hold assets that do not trade on a public exchange, such as real estate, stock in a private company, and notes. Each of those is a choice you make and research yourself, because the owner carries the due-diligence risk.\n\nThe primary source for what an IRA may hold is the IRS [retirement plan investments FAQs](https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs). Read those FAQs before you sign a purchase agreement.\n\nCollectibles generally are not permitted IRA investments, and the IRS lists limited exceptions on its [collectibles page](https://www.irs.gov/retirement-plans/investments-in-collectibles-in-individually-directed-qualified-plan-accounts).\n\nThe IRS says prohibited-transaction risk is higher when an IRA holds nonpublicly traded assets."
+      },
+      {
+        "heading": "Self-Directed IRA Custodian Duties",
+        "body": "A self-directed IRA custodian holds the account and allows a wider range of holdings. Self-directed describes that wider menu.\n\nBecause the owner carries the due-diligence and prohibited-transaction risk, treat the custodian's acceptance of an asset as permission to hold it and nothing more. Researching the asset, the price you pay, and who else is involved stays your job.\n\nAsk any custodian three things in writing before you open an account: which asset types it accepts, who values each asset, and what it charges per year in dollars. Ask each custodian for its fee schedule in dollars, and plan around those written amounts.\n\nIf you want professional help, read our guide on [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/)."
+      },
+      {
+        "heading": "Prohibited Transactions and Disqualified Persons",
+        "body": "A prohibited transaction is an improper use of an IRA by the owner, a beneficiary, or a disqualified person, according to the IRS. Disqualified persons include your fiduciary and members of your family: your spouse, your ancestors, your lineal descendants, and any spouse of a lineal descendant.\n\nIn everyday terms, the family list covers your spouse, your parents and grandparents, your children and grandchildren, and the spouses of your children and grandchildren. Any of them, along with you and your fiduciary, can be a party to a prohibited transaction.\n\nThe IRS gives four examples. Borrowing money from the IRA is one. Selling property to the IRA is another.\n\nUsing the IRA as security for a loan is also prohibited. So is buying property for personal use with IRA funds.\n\nA disqualified person who takes part in a prohibited transaction must pay a tax, according to the IRS. [IRS Publication 560](https://www.irs.gov/publications/p560) also says a prohibited transaction can cause the account to stop qualifying as an IRA. Publication 560 states that for simplified employee pension (SEP) IRAs, so confirm the consequence for your own account type in [IRS Publication 590-B](https://www.irs.gov/pub/irs-pdf/p590b.pdf).\n\nIf your self-directed account is a SEP IRA, our [SEP IRA vs. solo 401(k) comparison](/compare/sep-ira-vs-solo-401k/) explains how that account type works."
+      },
+      {
+        "heading": "The Collectibles Rule",
+        "body": "Collectibles generally are not permitted IRA investments, and the IRS generally treats buying one with IRA money as a distribution. The IRS page on [investments in collectibles in individually directed accounts](https://www.irs.gov/retirement-plans/investments-in-collectibles-in-individually-directed-qualified-plan-accounts) lists limited exceptions.\n\nRead them on that IRS page before you buy any item that could count as a collectible."
+      },
+      {
+        "heading": "Risk in Nonpublic and Directly Controlled Assets",
+        "body": "The IRS says the risk of a prohibited transaction is higher when an IRA holds nonpublicly traded assets or assets the owner directly controls.\n\nReal estate, private company stock, and notes are all nonpublic assets. An account built around them sits in the group the IRS flags as higher risk.\n\nDirect control is the second condition in that IRS statement. If you directly control an asset the IRA holds, the IRS says that also raises the risk.\n\nKeep a written record of every payment into and out of the account. For each one, ask whether you, your fiduciary, or a family member on the disqualified list gets a personal benefit. If the answer is yes, stop the payment before it goes through."
+      },
+      {
+        "heading": "A Due-Diligence Checklist Before You Open an Account",
+        "body": "Do five things before any money moves into a self-directed IRA:\n\n1. Get the custodian's legal name and the signed account agreement in writing.\n2. Ask for every fee as a dollar amount for one year, covering account fees and any charge per asset or per transaction.\n3. Get the full investment documents for each asset, such as the deed, the note, or the company's operating agreement, before you sign.\n4. Walk away from any offer that promises a guaranteed return.\n5. Read the IRS [retirement plan investments FAQs](https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs) before you commit.\n\nIf the money will come from an old workplace plan, read our [rollover IRA vs. traditional IRA comparison](/compare/rollover-ira-vs-traditional-ira/) before you move it."
+      },
+      {
+        "heading": "Who a Self-Directed IRA Fits",
+        "body": "A self-directed IRA fits you if you want to hold a specific non-public asset, such as a rental property or private company stock, and you accept the due-diligence and prohibited-transaction risk that comes with it. If you have no specific non-public asset in mind, stay with a standard IRA. The tax treatment is the same, and you skip the valuation and documentation work described above.\n\nSkip a self-directed IRA if you plan to use the asset yourself or do business with family through the account. Buying property for personal use with IRA funds and selling property to the IRA are both IRS examples of prohibited transactions. Your spouse, ancestors, and lineal descendants are all disqualified persons.\n\nOur answer moves from no to yes when two things are in place: a written plan that keeps you and every disqualified person away from personal use of the asset, and a custodian that answers the valuation and fee questions in writing.\n\nYour next step is to read the IRS [retirement plan investments FAQs](https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs) before you contact a self-directed IRA custodian."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/guides/ira-contribution-limits-2026/",
+        "label": "IRA contribution limits 2026"
+      },
+      {
+        "href": "/compare/roth-ira-vs-traditional-ira/",
+        "label": "Roth IRA vs. traditional IRA"
+      },
+      {
+        "href": "/compare/rollover-ira-vs-traditional-ira/",
+        "label": "Rollover IRA vs. traditional IRA"
+      },
+      {
+        "href": "/compare/sep-ira-vs-solo-401k/",
+        "label": "SEP IRA vs. solo 401(k)"
+      },
+      {
+        "href": "/retirement/ira-early-withdrawal-calculator/",
+        "label": "IRA early withdrawal calculator"
+      },
+      {
+        "href": "/investing/roth-ira-calculator/",
+        "label": "Roth IRA calculator"
+      },
+      {
+        "href": "/guides/how-to-choose-a-financial-advisor/",
+        "label": "How to choose a financial advisor"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What can a self directed IRA invest in?",
+        "answer": "A self-directed IRA can invest in assets that do not trade on a public exchange, such as real estate, private company stock, and notes, if the custodian accepts them. Collectibles generally are not permitted, and the IRS lists limited exceptions on its [collectibles page](https://www.irs.gov/retirement-plans/investments-in-collectibles-in-individually-directed-qualified-plan-accounts). For what an IRA may hold, read the IRS [retirement plan investments FAQs](https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs)."
+      },
+      {
+        "question": "How are self directed IRAs taxed?",
+        "answer": "A self-directed IRA is taxed like the IRA type underneath it. A self-directed traditional IRA follows traditional IRA rules, and a self-directed Roth IRA follows Roth rules. Two IRS rules add tax exposure: a disqualified person who takes part in a prohibited transaction must pay a tax, and buying a collectible with IRA money is generally treated as a distribution."
+      },
+      {
+        "question": "What is a self directed IRA custodian?",
+        "answer": "A self-directed IRA custodian holds the account and allows a wider range of holdings than a standard IRA menu. You still carry the due-diligence and prohibited-transaction risk for every asset it holds. Ask who values each asset and what the custodian charges in dollars per year before you open the account."
+      },
+      {
+        "question": "What companies offer self directed IRA?",
+        "answer": "Self-directed IRAs are offered by custodians whose menus include non-public assets, so verify any custodian yourself. Pick a custodian only after it answers, in writing, which asset types it accepts, who values each asset, and what every fee costs in dollars per year."
+      },
+      {
+        "question": "What does self directed IRA mean?",
+        "answer": "Self-directed means the custodian allows a wider range of holdings and you choose the assets yourself. The account is still a regular traditional or Roth IRA with the same tax treatment. The owner carries the due-diligence and prohibited-transaction risk."
+      },
+      {
+        "question": "Who counts as a disqualified person for a self-directed IRA?",
+        "answer": "Disqualified persons include your fiduciary and members of your family, according to the IRS. The family list covers your spouse, your ancestors, your lineal descendants, and any spouse of a lineal descendant. In everyday terms, that means your parents, grandparents, children, grandchildren, and the spouses of your children and grandchildren."
+      },
+      {
+        "question": "Can I live in a property my self-directed IRA owns?",
+        "answer": "No. Buying property for personal use with IRA funds is one of the IRS examples of a prohibited transaction. The IRS also says a prohibited transaction can cause an account to lose its IRA status, so confirm the consequence for your account type in [IRS Publication 590-B](https://www.irs.gov/pub/irs-pdf/p590b.pdf)."
+      },
+      {
+        "question": "Can my self-directed IRA lend me money?",
+        "answer": "No. Borrowing money from your IRA is an IRS example of a prohibited transaction, and so is using the IRA as security for a loan. A disqualified person who takes part in a prohibited transaction must pay a tax, according to the IRS."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS: Retirement Plan Investments FAQs",
+        "url": "https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs"
+      },
+      {
+        "label": "IRS: Investments in Collectibles in Individually Directed Qualified Plan Accounts",
+        "url": "https://www.irs.gov/retirement-plans/investments-in-collectibles-in-individually-directed-qualified-plan-accounts"
+      },
+      {
+        "label": "IRS: Publication 590-B",
+        "url": "https://www.irs.gov/pub/irs-pdf/p590b.pdf"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-10-19 (competitor monitor): buy-a-house-with-no-money-down ──
+  {
+    "updated": "2026-10-19",
+    "slug": "buy-a-house-with-no-money-down",
+    "title": "How to Buy a House with No Money Down Using Zero-Down Loans",
+    "metaDescription": "Buy a house with no money down through Veterans Affairs (VA) or Agriculture Department (USDA) loans, plus closing costs, credit, and 3% to 3.5% options.",
+    "h1": "How to Buy a House with No Money Down",
+    "cardBlurb": "Veterans Affairs and rural USDA loans allow zero down, and 3% to 3.5% programs are the next-lowest options if you don't qualify.",
+    "introText": "You can buy a house with no money down through a [Department of Veterans Affairs (VA)](https://www.va.gov/housing-assistance/home-loans/loan-types/purchase-loan/) loan or a [U.S. Department of Agriculture (USDA)](https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-direct-home-loans) loan. VA loans are for eligible veterans, service members, and survivors, and USDA loans are for eligible rural areas with income limits. Outside those two programs, plan to bring at least some cash, starting at 3% to 3.5% of the price. At The Modern Wallet, we build free calculators so you can see what a zero down payment does to your loan size and monthly payment before you call a lender. Closing costs are separate from the down payment on every no down payment mortgage, so budget for them even when the down payment is zero.",
+    "sections": [
+      {
+        "heading": "The Loans That Allow Zero Down",
+        "body": "Two loan programs let you buy a home with no down payment: VA purchase loans and USDA home loans. A [VA purchase loan](https://www.va.gov/housing-assistance/home-loans/loan-types/purchase-loan/) often requires no down payment as long as the sales price is not higher than the home's appraised value. A [USDA home loan](https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-direct-home-loans) typically requires no down payment for eligible rural and low-to-moderate-income borrowers.\n\nOutside those two programs, plan to bring at least some cash. The next-lowest options are 3% down on many conventional programs and 3.5% down on a Federal Housing Administration (FHA) loan, which needs a credit score of at least 580 under [Department of Housing and Urban Development (HUD)](https://www.hud.gov/topics/buying_a_home) rules. State and local housing agencies also run down payment assistance programs, each with its own eligibility rules.\n\nZero down covers the down payment and nothing more. Closing costs are separate from the down payment, so a VA or USDA buyer needs a plan to pay them too."
+      },
+      {
+        "heading": "VA Loans for Veterans, Service Members, and Survivors",
+        "body": "A VA loan starts with a Certificate of Eligibility (COE). Lenders can often get a COE in one day, so ask your lender to request it before you start making offers.\n\nThe zero down feature depends on the appraisal. VA purchase loans often require no down payment as long as the sales price is not higher than the home's appraised value. If a home's price comes in above its appraisal, that condition is not met, so ask your lender how much cash the gap would take before you sign a contract.\n\nVA loans carry a one-time [funding fee](https://www.va.gov/housing-assistance/home-loans/funding-fee-and-closing-costs/), figured as a percentage of the loan amount instead of the purchase price. The fee ranges from 0.5% to 3.3% depending on the loan type, the loan amount, the down payment, and whether you are a first-time user of the benefit. You can pay it at closing or finance it into the loan.\n\nOn a $300,000 loan, that range works out to $1,500 at 0.5% and $9,900 at 3.3%. A down payment of at least 5% can lower the fee. Veterans with a service-connected disability rating and certain surviving spouses are exempt from it entirely.\n\nVA loans carry no private mortgage insurance (PMI) or mortgage insurance premiums. Run your numbers in our [VA loan calculator](/mortgage/va-loan-calculator/) to see how financing the funding fee changes your payment. If you also qualify for other loans, our [VA loan vs. conventional loan comparison](/compare/va-loan-vs-conventional-loan/) and [FHA loan vs. VA loan breakdown](/compare/fha-loan-vs-va-loan/) set the options side by side."
+      },
+      {
+        "heading": "USDA Loans for Eligible Rural Areas",
+        "body": "A USDA loan is built for eligible rural and low-to-moderate-income borrowers, and it typically requires no down payment.\n\nThree tests apply to every USDA borrower:\n- Your income must be at or below the limit for the area.\n- The property must sit in an eligible area.\n- You must use the home as your primary residence.\n\nUSDA borrowers pay an upfront guarantee fee and ongoing mortgage insurance premiums to USDA. Current USDA guarantee fee and premium rates are not given on this page, so ask lenders or USDA for them before you compare a USDA quote with other loans. Program details are on the [USDA single family housing page](https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-direct-home-loans). If the address or your income misses one of the three tests, our [USDA loan vs. FHA loan comparison](/compare/usda-loan-vs-fha-loan/) sets the two options side by side."
+      },
+      {
+        "heading": "Cash Needed to Buy a House with No Money Down",
+        "body": "A no down payment mortgage removes the down payment and leaves every other cost in place. Closing costs are separate from the down payment.\n\nAsk each lender for an itemized list of closing costs and any reserve requirement in dollars, then add them up before you call a loan zero down.\n\nThe VA funding fee can be financed instead of paid in cash. Financing it lowers the cash you bring to closing, but it raises your loan amount and your payment. See our [first-time home buyer guide](/guides/first-time-home-buyer-guide/) for more."
+      },
+      {
+        "heading": "Low-Down Options Outside VA and USDA",
+        "body": "An FHA loan requires a minimum down payment of 3.5% with a credit score of at least 580, under a HUD rule. Lenders may set stricter requirements on top of that floor, so a 580 score does not guarantee approval at every lender.\n\nMany conventional programs allow as little as 3% down. On a $300,000 home, 3% is $9,000 and 3.5% is $10,500, a $1,500 difference in the cash you need up front.\n\nState and local housing agencies run down payment assistance programs with their own eligibility rules. Ask your state housing finance agency for its program list and the requirements for each one. Then plug the amount you would still owe into our [down payment calculator](/mortgage/down-payment-calculator/) to see your real starting cash."
+      },
+      {
+        "heading": "Fees and Mortgage Insurance Compared",
+        "body": "Each zero-down program charges you in its own way, so compare them in dollars. A VA loan has a one-time funding fee of 0.5% to 3.3% of the loan amount and no PMI or mortgage insurance premiums.\n\nA USDA loan has an upfront guarantee fee plus ongoing mortgage insurance premiums paid to USDA. Because those premiums continue after closing, ask the lender to show the USDA premium as a monthly dollar amount next to the principal and interest.\n\nFor FHA and conventional quotes, ask each lender to list any mortgage insurance as a monthly dollar figure and any upfront charge as a closing-day figure. Line up every quote by two numbers: cash due at closing and total monthly payment. If one quote has lower cash due but a higher monthly payment, decide which matters more to you."
+      },
+      {
+        "heading": "Bad Credit and a No Down Payment Mortgage",
+        "body": "There is no single universal minimum credit score for buying a house with no money down, because lenders set their own requirements.\n\nFHA's rule is a 580 credit score with 3.5% down, and lenders may set stricter overlays above it. VA and USDA lenders set their own minimums. That FHA rule still requires a down payment.\n\nIf your credit is weak, ask every VA or USDA lender you contact for its minimum score in writing. Get quotes from at least two lenders before you decide your score rules out a zero down loan."
+      },
+      {
+        "heading": "A Decision Rule by Situation",
+        "body": "Match your situation to one starting point:\n- If you are an eligible veteran, service member, or survivor, start with a VA loan and have your lender request your COE first.\n- If you are not VA-eligible, the home is in an eligible rural area, and your income is at or below the area limit, start with a USDA loan.\n- If neither fits, compare FHA at 3.5% down (with a 580 score or higher) against 3% conventional programs, and ask your state housing finance agency about assistance.\n\nZero down is a poor fit if your top goal is the lowest possible monthly payment. No down payment means a bigger loan and a larger payment, so in that case put down what you can and test the result in our [affordability calculator](/mortgage/affordability-calculator/).\n\nOur answer changes in two cases. If you can put 5% down on a VA loan, the lower funding fee may be worth the cash. If you are not VA-eligible and a home you like turns out to sit in a USDA eligible area, a USDA loan moves to the top of the list."
+      },
+      {
+        "heading": "Mistakes to Avoid When You Buy a House with No Money Down",
+        "body": "Avoid these mistakes:\n\n- Treating zero down as free. A zero down loan is a bigger loan, and a bigger loan means a larger monthly payment.\n\n- Financing every fee without doing the math. Financing a 3.3% VA funding fee on a $300,000 loan adds $9,900 to the balance, so you would owe $309,900 from day one.\n\n- Offering more than a home is likely to appraise for on a VA loan. VA zero down terms often hold only when the sales price is not higher than the appraised value.\n\n- Forgetting closing costs, which are separate from the down payment. Start with the [down payment calculator](/mortgage/down-payment-calculator/) to compare zero, 3%, and 3.5% down on the same home, then take those numbers to a lender when you are ready to buy a house with no money down."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/mortgage/down-payment-calculator/",
+        "label": "Down payment calculator"
+      },
+      {
+        "href": "/mortgage/affordability-calculator/",
+        "label": "Affordability calculator"
+      },
+      {
+        "href": "/mortgage/va-loan-calculator/",
+        "label": "VA loan calculator"
+      },
+      {
+        "href": "/compare/fha-loan-vs-va-loan/",
+        "label": "FHA loan vs VA loan"
+      },
+      {
+        "href": "/compare/usda-loan-vs-fha-loan/",
+        "label": "USDA loan vs FHA loan"
+      },
+      {
+        "href": "/compare/va-loan-vs-conventional-loan/",
+        "label": "VA loan vs conventional loan"
+      },
+      {
+        "href": "/guides/first-time-home-buyer-guide/",
+        "label": "First-time home buyer guide"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can you buy a house with no money down and bad credit?",
+        "answer": "Yes, if you qualify for a VA or USDA loan and meet that lender's credit requirement. There is no single universal minimum score, because each lender sets its own. Ask at least two lenders for their minimum score in writing before you rule zero down out."
+      },
+      {
+        "question": "What credit score is needed to buy a house with no money down?",
+        "answer": "No single score applies, because lenders set their own minimums for zero down VA and USDA loans. FHA's rule is a 580 credit score with 3.5% down. Lenders may also set stricter requirements above 580."
+      },
+      {
+        "question": "How to buy a house with no money down or closing cost?",
+        "answer": "Zero down programs remove only the down payment, and closing costs are separate. On a VA loan you can finance the funding fee, which lowers the cash you bring to closing but raises your loan amount. Ask your state housing finance agency whether its down payment assistance rules let you apply help toward other costs."
+      },
+      {
+        "question": "What's the best way to buy a house with no money down?",
+        "answer": "A VA loan is a zero down route if you are eligible, since it often requires no down payment and carries no PMI. If you are not VA-eligible, a USDA loan is the zero down option when the home is in an eligible rural area and your income is at or below the area limit."
+      },
+      {
+        "question": "Do VA loans have mortgage insurance?",
+        "answer": "No. VA loans carry no private mortgage insurance or mortgage insurance premiums. Instead, borrowers pay a one-time funding fee of 0.5% to 3.3% of the loan amount, and veterans with a service-connected disability rating and certain surviving spouses are exempt."
+      },
+      {
+        "question": "Can I use a USDA loan for a second home or rental?",
+        "answer": "No. A USDA loan requires the property to be your primary residence. The home must also sit in an eligible area, and your income must be at or below the limit for that area."
+      },
+      {
+        "question": "Is the VA funding fee based on the purchase price?",
+        "answer": "No. The VA funding fee is a percentage of the loan amount. On a $300,000 loan, the 0.5% to 3.3% range equals $1,500 to $9,900, and you can pay it at closing or finance it into the loan."
+      }
+    ],
+    "sources": [
+      {
+        "label": "VA, VA-Backed Purchase Loans",
+        "url": "https://www.va.gov/housing-assistance/home-loans/loan-types/purchase-loan/"
+      },
+      {
+        "label": "VA, Funding Fee and Closing Costs",
+        "url": "https://www.va.gov/housing-assistance/home-loans/funding-fee-and-closing-costs/"
+      },
+      {
+        "label": "USDA Rural Development, Single Family Housing Direct Home Loans",
+        "url": "https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-direct-home-loans"
+      },
+      {
+        "label": "HUD, Buying a Home",
+        "url": "https://www.hud.gov/topics/buying_a_home"
+      },
+      {
+        "label": "CFPB, Special Loan Programs",
+        "url": "https://www.consumerfinance.gov/owning-a-home/special-loan-programs/"
+      }
+    ]
+  },
   // ── mindmap-pass 2026-10-19 (Musk SpaceX share brief): elon-musk-spacex-share-for-kids ──
   {
     "updated": "2026-10-19",

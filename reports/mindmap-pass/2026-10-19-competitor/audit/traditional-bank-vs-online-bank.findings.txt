@@ -1,0 +1,7 @@
+1. DEFERRAL IN TABLE CELLS: rows "Branches and in-person service" (a and b "Not published") and "Account opening" (a "Not published"). Fill from the stated tendencies: traditional banks offer branches and in-person services; online banks have no or few branches. Drop the Account opening row if nothing in the fact list supports it.
+2. Missing "At The Modern Wallet, we" tee-up: add once in the intro.
+3. Aphoristic lines: "The condition is the word insured." and "The tradeoff is a second set of terms to compare." Rewrite plainly.
+4. "For the traditional bank vs online bank choice, that means counting your cash deposits..." keyword-stuffed; "Both of those are tendencies that vary by institution." backward pronoun. Rewrite.
+5. Filler: "The FDIC's phone line for deposit insurance questions is 1-877-ASK-FDIC. Use it if you have deposit insurance questions." and the number repeated 3 times; keep once. Remove restatement "In-person service also covers more than cash. If you want in-person service, traditional banks tend to offer it."
+6. Capital One FAQ: answer should say it varies by institution and to check the bank's own site, and BankFind to verify insurance. No unlinked brand claim.
+7. Verdict mentions "our Credit Union vs Bank guide" in plain text: link it as /compare/credit-union-vs-bank/.

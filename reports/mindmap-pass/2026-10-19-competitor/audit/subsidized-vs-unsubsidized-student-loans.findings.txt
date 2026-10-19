@@ -1,0 +1,8 @@
+1. FAFSA claims not in the fact list: table row "How you get them", section 3 ("Both loans start with the Free Application for Federal Student Aid (FAFSA)") and the FAFSA FAQ. Keep generic wording only: say how to apply is on StudentAid.gov; delete specific FAFSA mechanics.
+2. "Look up the current award-year rate on StudentAid.gov" links to the subsidized-vs-unsubsidized article which is not confirmed to carry rates: say rates are set each award year and to check StudentAid.gov generally, without implying that article lists them.
+3. Dead-end FAQ "What happens to subsidized vs unsubsidized student loans after graduation?": cover only grace period and deferment from the fact list and say to check StudentAid.gov for repayment terms.
+4. Table row "150% rule" column b "The 150% rule in the sources cited here is stated for subsidized loans": rewrite "Does not apply; the 150% rule limits subsidized loans only."
+5. AI tells: "Treating the unsubsidized loan as if it were on pause until graduation is the wrong move."; verdict "For them, the real decision is how much unsubsidized to borrow..."; reduce repeated interest facts across intro, sections, table and FAQ.
+6. Move "At The Modern Wallet, we" tee-up to right after the answer sentence.
+7. Remove leading spaces in "\n\n Our guide on whether to refinance student loans..." and "six years. \n\n".
+8. relatedComparisons includes "personal-loan-vs-auto-loan" (irrelevant): drop it; add /roundup/best-student-loans-bad-credit/ link in a section if natural.

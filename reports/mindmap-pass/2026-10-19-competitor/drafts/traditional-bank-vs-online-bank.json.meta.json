@@ -1,0 +1,328 @@
+{
+ "slug": "traditional-bank-vs-online-bank",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 2149,
+ "floor": 1500,
+ "input_tokens": 28748,
+ "output_tokens": 22978,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.5746,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2170,
+  "numbers_not_in_facts": [
+   "500000"
+  ],
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    12,
+    2,
+    6
+   ],
+   "applied": [
+    {
+     "id": "comparisonTable.rows[2].a",
+     "quote": "Tends to make cash deposits simpler through its branches",
+     "replacement": "Tends to make cash deposits simpler",
+     "type": "inference",
+     "why": "SOURCE does not say branches are how cash deposits are made simpler"
+    },
+    {
+     "id": "comparisonTable.rows[6].b",
+     "quote": "Support channels and app features vary by institution, and in-person help is limited by the lack of branches",
+     "replacement": "Support channels and app features vary by institution, and it has no branches or only a few",
+     "type": "inference",
+     "why": "SOURCE says no or few branches; it does not describe a limit on in-person help"
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "If you deposit paper bills or coins often, that difference outweighs most others.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE gives no ranking of cash handling against other factors"
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "Online banks often compete on higher savings yields and lower fees, and a higher yield adds more dollars as your balance grows.",
+     "replacement": "Online banks often compete on higher savings yields and lower fees.",
+     "type": "inference",
+     "why": "SOURCE does not state the balance-growth consequence"
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Use it if you hold a large balance and want a person to walk through your coverage.",
+     "replacement": "Use it if you have deposit insurance questions.",
+     "type": "unsupported",
+     "why": "SOURCE only says the line is for deposit insurance questions"
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "That is the strongest single reason to choose a traditional bank.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE gives no ranking of reasons"
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "A quick count settles most cases.",
+     "replacement": "Start with a quick count.",
+     "type": "unsupported",
+     "why": "SOURCE does not say a count settles most cases"
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "A monthly fee is a fixed cost, so add it to our [monthly budget calculator](/budget/monthly-budget-calculator/) next to your other bills before you decide.",
+     "replacement": "Add any monthly fee to our [monthly budget calculator](/budget/monthly-budget-calculator/) next to your other bills before you decide.",
+     "type": "unsupported",
+     "why": "SOURCE does not characterize fees as fixed costs"
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Branch access is the one structural difference between the two types.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not call branch access the only structural difference"
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "A traditional bank offers in-person services, so you can open an account or fix a problem at a desk.",
+     "replacement": "A traditional bank offers in-person services.",
+     "type": "inference",
+     "why": "SOURCE does not list which in-person services are offered"
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "With an online bank, the website may be your only point of contact, so the web address comparison carries more weight.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not weight checks differently for online banks"
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "The tradeoff is a second login and a second set of terms to compare.",
+     "replacement": "The tradeoff is a second set of terms to compare.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention logins"
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "If something on a bank site looks wrong, call the FDIC's deposit insurance line at 1-877-ASK-FDIC before you send money.",
+     "replacement": "For deposit insurance questions, the FDIC's phone line is 1-877-ASK-FDIC.",
+     "type": "unsupported",
+     "why": "SOURCE gives the line only for deposit insurance questions, not scam checks"
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "The answer for Capital One comes from Capital One's own website, because whether a bank runs branches, operates online, or does both varies by institution.",
+     "replacement": "Whether a bank runs branches, operates online, or does both varies by institution.",
+     "type": "unlinked-directive",
+     "why": "Sends reader to Capital One's site with no link; URL not in SOURCE"
+    },
+    {
+     "id": "introText",
+     "quote": "At The Modern Wallet, we start every banking comparison from two costs: what an account takes out of your balance and what it adds to your errands.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Specific editorial method not supported by self-description"
+    },
+    {
+     "id": "comparisonTable.rows[1].a",
+     "quote": "Offers branches and in-person services",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "Source frames this as a tendency varying by institution"
+    },
+    {
+     "id": "comparisonTable.rows[1].b",
+     "quote": "Has no branches or only a few",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "Source frames this as a tendency varying by institution"
+    },
+    {
+     "id": "comparisonTable.rows[5].a",
+     "quote": "Opening steps vary by institution, with in-person help available at a branch",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "In-person help for opening not stated"
+    },
+    {
+     "id": "verdict",
+     "quote": "An online-only setup is not for someone whose income arrives as paper cash; that person should open a primary account at a traditional bank.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Source gives a tendency, not a directive about primary accounts"
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "If you want to sit with a banker to open an account or sort out a problem, the in-person services at a traditional bank fit that preference.",
+     "replacement": "If you want in-person service, traditional banks tend to offer it.",
+     "type": "unsupported",
+     "why": "Specific services like opening or problem-solving not stated"
+    }
+   ],
+   "deleted_final": 6,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2381
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-19T21:54:58+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-19-competitor/audit/traditional-bank-vs-online-bank.findings.txt",
+    "applied": [
+     {
+      "id": "comparisonTable.rows[1].a",
+      "quote": "Not published",
+      "replacement": "Offers branches and in-person services",
+      "type": "1. Deferral in table cells",
+      "why": "The fact list states traditional banks offer branches and in-person services."
+     },
+     {
+      "id": "comparisonTable.rows[1].b",
+      "quote": "Not published",
+      "replacement": "Has no branches or only a few",
+      "type": "1. Deferral in table cells",
+      "why": "The fact list states online banks have no or few branches."
+     },
+     {
+      "id": "comparisonTable.rows[5].a",
+      "quote": "Not published",
+      "replacement": "Opening steps vary by institution, so compare them at each bank you are considering",
+      "type": "1. Deferral in table cells",
+      "why": "Nothing in the fact list covers opening steps; the cell is rewritten as a varies-by-institution prompt instead of dropping the row."
+     },
+     {
+      "id": "introText",
+      "quote": "For the traditional bank vs online bank choice, that means counting your cash deposits and comparing current terms at specific banks.",
+      "replacement": "At The Modern Wallet, we suggest counting your cash deposits and comparing current terms at specific banks.",
+      "type": "2. Missing tee-up; 4. Keyword-stuffed",
+      "why": "Adds the one required site tee-up and removes the stuffed keyword phrase."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "The condition is the word insured.",
+      "replacement": "That coverage depends on the bank being FDIC-insured.",
+      "type": "3. Aphoristic line",
+      "why": "Plain statement of the same condition."
+     },
+     {
+      "id": "sections[6].content",
+      "quote": "The tradeoff is a second set of terms to compare.",
+      "replacement": "Keeping two banks does mean comparing two sets of terms.",
+      "type": "3. Aphoristic line",
+      "why": "Plain wording, same meaning."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "Both of those are tendencies that vary by institution.",
+      "replacement": "These patterns are tendencies that vary by institution.",
+      "type": "4. Backward pronoun",
+      "why": "Names the referent directly."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "The FDIC's phone line for deposit insurance questions is 1-877-ASK-FDIC. Use it if you have deposit insurance questions.",
+      "replacement": "For deposit insurance questions, call the FDIC at 1-877-ASK-FDIC.",
+      "type": "5. Filler; phone number repeated",
+      "why": "Merges the restated sentence into one and keeps the number here only."
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "For deposit insurance questions, the FDIC's phone line is 1-877-ASK-FDIC.",
+      "replacement": "",
+      "type": "5. Phone number repeated",
+      "why": "The number is kept once, in section 1."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "Search the bank in [BankFind](https://banks.data.fdic.gov/bankfind-suite/bankfind) before you share personal information or send money, or call 1-877-ASK-FDIC with deposit insurance questions.",
+      "replacement": "Search the bank in [BankFind](https://banks.data.fdic.gov/bankfind-suite/bankfind) before you share personal information or send money.",
+      "type": "5. Phone number repeated",
+      "why": "Removes the third repetition of the number."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "In-person service also covers more than cash.",
+      "replacement": "",
+      "type": "5. Restatement filler",
+      "why": "Restates earlier content without adding information."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "If you want in-person service, traditional banks tend to offer it.",
+      "replacement": "",
+      "type": "5. Restatement filler",
+      "why": "Duplicates the section's opening sentence."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Whether a bank runs branches, operates online, or does both varies by institution.",
+      "replacement": "Whether a bank runs branches, operates online, or does both varies by institution, so check the bank's own site.",
+      "type": "6. Capital One FAQ",
+      "why": "The spec requires saying it varies and to check the bank's own site."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "To confirm Capital One's FDIC insurance status, search its name or web address in the FDIC's [BankFind tool](https://banks.data.fdic.gov/bankfind-suite/bankfind).",
+      "replacement": "To confirm any bank's FDIC insurance status, search its name or web address in the FDIC's [BankFind tool](https://banks.data.fdic.gov/bankfind-suite/bankfind).",
+      "type": "6. Unlinked brand claim",
+      "why": "Removes the brand-specific claim and keeps the BankFind verification step."
+     },
+     {
+      "id": "verdict",
+      "quote": "our Credit Union vs Bank guide handles that choice",
+      "replacement": "our [Credit Union vs Bank](/compare/credit-union-vs-bank/) guide handles that choice",
+      "type": "7. Unlinked guide mention",
+      "why": "Links the internal route from the allowed list."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "deleted_final": 0,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 2149,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 284.8,
+ "response_id": "msg_011CgCJxbgDfwpdnyD7uDoma",
+ "generated_at": "2026-10-19T21:36:39+0000"
+}

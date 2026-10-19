@@ -1,0 +1,21 @@
+# ROW: /guides/self-directed-ira
+route: /guides/self-directed-ira   slug: self-directed-ira   page type: explainer / spoke   depth floor: 1200 body words
+primary keyword: self directed ira   secondary: what is a self-directed ira; what can a self-directed ira invest in; self directed ira custodian; self-directed ira rules
+reader question: "What is a self-directed IRA and how does it work?" [ac 4/4 question-sweep; no PAA]
+answer: A self-directed IRA is a regular IRA whose custodian allows a wider range of holdings; the owner picks the assets and carries the due-diligence and prohibited-transaction risk (definition).
+answer placement: section 1 "What a Self-Directed IRA Is" (definition is the dominant pattern here, so a definitional opener is allowed)
+Autocomplete questions (FAQ spec, verbatim): what can self directed ira invest in; how are self directed iras taxed; what is a self directed ira custodian; what companies offer self directed ira; what does self directed ira mean
+Cover: what it is and is not (same tax treatment as a traditional or Roth IRA; "self-directed" describes the custodian's menu, not a different tax account); what people hold in them (real estate, private company stock, notes, precious metals as examples of non-public assets); custodian role; prohibited transactions and disqualified persons with plain examples; collectibles rule; risk of nonpublic and directly controlled assets; a due-diligence checklist (verify custodian, ask who values assets, fees in dollars, get investment documents, walk away from guaranteed returns); who it fits and who should stay with a plain IRA; link to contribution limits guide rather than stating limits.
+CLOSED FACT LIST:
+- IRS: a prohibited transaction is an improper use of an IRA by the IRA owner, a beneficiary, or a disqualified person.
+- IRS: disqualified persons include your fiduciary and members of your family (spouse, ancestor, lineal descendant, and any spouse of a lineal descendant).
+- IRS examples of prohibited transactions: borrowing money from the IRA, selling property to it, using it as security for a loan, buying property for personal use with IRA funds.
+- IRS: the risk of a prohibited transaction is higher when an IRA holds nonpublicly traded assets or assets the owner directly controls.
+- IRS: a disqualified person who takes part in a prohibited transaction must pay a tax; a prohibited transaction can cause an account to stop qualifying as an IRA (stated in IRS Publication 560 for SEP IRAs; present as: the IRS says the account can lose its IRA status, and the owner should confirm the consequence for their account type).
+- IRS publishes a page on investments in collectibles in individually directed accounts; collectibles generally are not permitted IRA investments and buying them is generally treated as a distribution (the IRS page lists limited exceptions, so tell the reader to read it).
+- A self-directed IRA is held by a custodian; the IRS retirement-plan-investments FAQ is the primary source for what an IRA may hold.
+- Contribution limits change yearly; the site has a guide for the current ones: /guides/ira-contribution-limits-2026/. State no limit numbers on this page.
+Anything not on this list, you do not know. Never invent a price, rate, limit, or URL; say it is unpublished and tell the reader to verify at the official page. Present no interest rate or fee percentage that is not listed here. First-person claims only as allowed by _experience.md; write "we" as "At The Modern Wallet, we" once.
+CLOSED URL LIST: https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs ; https://www.irs.gov/retirement-plans/investments-in-collectibles-in-individually-directed-qualified-plan-accounts ; https://www.irs.gov/publications/p560 ; https://www.irs.gov/pub/irs-pdf/p590b.pdf
+Internal routes allowed: /guides/ira-contribution-limits-2026/ ; /compare/roth-ira-vs-traditional-ira/ ; /compare/rollover-ira-vs-traditional-ira/ ; /guides/how-to-choose-a-financial-advisor/ ; /compare/sep-ira-vs-solo-401k/ ; /retirement/ira-early-withdrawal-calculator/ ; /investing/roth-ira-calculator/ (tools array too)
+Sources array: IRS retirement plan investments FAQs; IRS collectibles page; IRS Publication 590-B.

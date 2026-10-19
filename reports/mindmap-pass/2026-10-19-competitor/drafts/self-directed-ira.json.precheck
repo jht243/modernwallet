@@ -1,0 +1,126 @@
+{
+  "slug": "self-directed-ira",
+  "title": "Self-Directed IRA Guide to Custodians and Prohibited Deals",
+  "metaDescription": "A self-directed IRA follows normal IRA tax rules but can hold real estate or private stock. See custodian duties, prohibited transactions, and a checklist.",
+  "h1": "How a Self-Directed IRA Works",
+  "cardBlurb": "What a self-directed IRA can hold and the IRS prohibited-transaction rules that reach you and your family.",
+  "introText": "A self-directed individual retirement account (IRA) is a regular traditional or Roth IRA whose custodian allows a wider range of holdings, so you pick the assets and carry the risk if a deal breaks the rules. At The Modern Wallet, we see readers trip most often on the prohibited-transaction rules, because the Internal Revenue Service (IRS) applies them to your spouse, parents, children, and grandchildren as well as to you. The tax treatment matches a regular IRA. What changes is the list of assets the custodian will hold and how much of the research falls on you.",
+  "sections": [
+    {
+      "heading": "What a Self-Directed IRA Is",
+      "body": "A self-directed IRA is a regular IRA held by a custodian that allows a wider range of holdings than a standard menu. The owner picks each asset and carries the due-diligence and prohibited-transaction risk that comes with it. The word self-directed describes the custodian's menu, and it does not create a separate kind of tax account.\n\nThe tax treatment follows the IRA type underneath. A self-directed traditional IRA uses traditional IRA tax rules, and a self-directed Roth IRA uses Roth rules. If you have not picked between those two yet, our [Roth IRA vs. traditional IRA comparison](/compare/roth-ira-vs-traditional-ira/) lays out the tradeoff.\n\nContribution limits change every year, so we keep the current figures in one place. Find them in our [IRA contribution limits guide](/guides/ira-contribution-limits-2026/). To project what steady contributions could grow to, use our [Roth IRA calculator](/investing/roth-ira-calculator/)."
+    },
+    {
+      "heading": "Non-Public Assets the Account Can Hold",
+      "body": "A self-directed IRA can hold assets that do not trade on a public exchange, such as real estate, stock in a private company, notes, and precious metals. Each of those is a choice you make and research yourself, because the owner carries the due-diligence risk.\n\nThe primary source for what an IRA may hold is the IRS [retirement plan investments FAQs](https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs). Read the entry that matches your asset before you sign a purchase agreement.\n\nPrecious metals carry an extra rule. The IRS treats collectibles separately, with limited exceptions, so read the collectibles rule before you buy any metal.\n\nEvery example on that list is nonpublicly traded. The IRS says prohibited-transaction risk is higher when an IRA holds nonpublicly traded assets, so filling the account with them puts it in the higher-risk group."
+    },
+    {
+      "heading": "Self-Directed IRA Custodian Duties",
+      "body": "A self-directed IRA custodian holds the account and decides which asset types it will accept. That wider menu is what makes the account self-directed.\n\nBecause the owner carries the due-diligence and prohibited-transaction risk, treat the custodian's acceptance of an asset as permission to hold it and nothing more. Researching the asset, the price you pay, and who else is involved stays your job.\n\nAsk any custodian three things in writing before you open an account: which asset types it accepts, who values each asset, and what it charges per year in dollars. We have no published fee figure to give you, so plan around the custodian's written dollar amounts.\n\nIf you want professional help, our guide on [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/) covers fiduciary standards and how to look up an advisor's record. The IRS counts your fiduciary as a disqualified person, so that advisor falls under the same prohibited-transaction rules as your family."
+    },
+    {
+      "heading": "Prohibited Transactions and Disqualified Persons",
+      "body": "A prohibited transaction is an improper use of an IRA by the owner, a beneficiary, or a disqualified person, according to the IRS. Disqualified persons include your fiduciary and members of your family: your spouse, your ancestors, your lineal descendants, and any spouse of a lineal descendant.\n\nIn everyday terms, the family list covers your spouse, your parents and grandparents, your children and grandchildren, and the spouses of your children and grandchildren. Any of them, along with you and your fiduciary, can be a party to a prohibited transaction.\n\nThe IRS gives four examples. Borrowing money from the IRA is one, so you cannot take money out of the account as a loan for a down payment. Selling property to the IRA is another, which rules out selling a rental you already own to your own account.\n\nUsing the IRA as security for a loan is also prohibited, such as pledging the account to a bank as collateral. So is buying property for personal use with IRA funds, like a vacation condo that you or your family stays in.\n\nA disqualified person who takes part in a prohibited transaction must pay a tax, according to the IRS. [IRS Publication 560](https://www.irs.gov/publications/p560) also says a prohibited transaction can cause the account to stop qualifying as an IRA. Publication 560 states that for simplified employee pension (SEP) IRAs, so confirm the consequence for your own account type in [IRS Publication 590-B](https://www.irs.gov/pub/irs-pdf/p590b.pdf).\n\nIf your self-directed account is a SEP IRA, our [SEP IRA vs. solo 401(k) comparison](/compare/sep-ira-vs-solo-401k/) explains how that account type works."
+    },
+    {
+      "heading": "The Collectibles Rule",
+      "body": "Collectibles generally are not permitted IRA investments, and the IRS generally treats buying one with IRA money as a distribution. The IRS page on [investments in collectibles in individually directed accounts](https://www.irs.gov/retirement-plans/investments-in-collectibles-in-individually-directed-qualified-plan-accounts) lists limited exceptions.\n\nWe do not restate those exceptions. Read them on that IRS page before you buy any metal or other item that could count as a collectible.\n\nTo estimate what a distribution of that size could cost you, enter the purchase price in our [IRA early withdrawal calculator](/retirement/ira-early-withdrawal-calculator/)."
+    },
+    {
+      "heading": "Risk in Nonpublic and Directly Controlled Assets",
+      "body": "The IRS says the risk of a prohibited transaction is higher when an IRA holds nonpublicly traded assets or assets the owner directly controls. Both conditions are common in a self-directed IRA, because the assets it allows are the ones a standard menu leaves out.\n\nReal estate, private company stock, and notes are all nonpublic assets. An account built around them sits in the group the IRS flags as higher risk from the day you buy.\n\nDirect control is the second condition in that IRS statement. If you manage a property the IRA owns or run a company whose stock it holds, you directly control that asset, and the IRS says that also raises the risk.\n\nKeep a written record of every payment into and out of the account. For each one, ask whether you, your fiduciary, or a family member on the disqualified list gets a personal benefit. If the answer is yes, stop the payment before it goes through."
+    },
+    {
+      "heading": "A Due-Diligence Checklist Before You Open an Account",
+      "body": "Do five things before any money moves into a self-directed IRA. Get the custodian's legal name and the signed account agreement in writing. Ask who values each asset and how often, since a private company or a property has no exchange price to look up.\n\nAsk for every fee as a dollar amount for one year, covering account fees and any charge per asset or per transaction. Get the full investment documents for each asset, such as the deed, the note, or the company's operating agreement, before you sign.\n\nWalk away from any offer that promises a guaranteed return. Then read the entry for your asset type in the IRS [retirement plan investments FAQs](https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs) before you commit.\n\nIf the money will come from an old workplace plan, read our [rollover IRA vs. traditional IRA comparison](/compare/rollover-ira-vs-traditional-ira/) before you move it."
+    },
+    {
+      "heading": "Who a Self-Directed IRA Fits",
+      "body": "A self-directed IRA fits you if you want to hold a specific non-public asset, such as a rental property or private company stock, and you accept the due-diligence and prohibited-transaction risk that comes with it. If you have no specific non-public asset in mind, stay with a standard IRA. The tax treatment is the same, and you skip the valuation, documentation, and prohibited-transaction work described above.\n\nSkip a self-directed IRA if you plan to use the asset yourself or do business with family through the account. Buying property for personal use with IRA funds and selling property to the IRA are both IRS examples of prohibited transactions. Your spouse, ancestors, and lineal descendants are all disqualified persons.\n\nOur answer moves from no to yes when two things are in place: a written plan that keeps you and every disqualified person away from personal use of the asset, and a custodian that answers the valuation and fee questions in writing. Without both, the risk the IRS describes sits with you and no one else.\n\nYour next step is to read the entry for the asset you want in the IRS [retirement plan investments FAQs](https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs) before you contact a self-directed IRA custodian."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/guides/ira-contribution-limits-2026/",
+      "label": "IRA contribution limits 2026"
+    },
+    {
+      "href": "/compare/roth-ira-vs-traditional-ira/",
+      "label": "Roth IRA vs. traditional IRA"
+    },
+    {
+      "href": "/compare/rollover-ira-vs-traditional-ira/",
+      "label": "Rollover IRA vs. traditional IRA"
+    },
+    {
+      "href": "/compare/sep-ira-vs-solo-401k/",
+      "label": "SEP IRA vs. solo 401(k)"
+    },
+    {
+      "href": "/retirement/ira-early-withdrawal-calculator/",
+      "label": "IRA early withdrawal calculator"
+    },
+    {
+      "href": "/investing/roth-ira-calculator/",
+      "label": "Roth IRA calculator"
+    },
+    {
+      "href": "/guides/how-to-choose-a-financial-advisor/",
+      "label": "How to choose a financial advisor"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What can a self directed IRA invest in?",
+      "answer": "A self-directed IRA can invest in assets that do not trade on a public exchange, such as real estate, private company stock, notes, and precious metals, if the custodian accepts them. Collectibles generally are not permitted, and the IRS lists limited exceptions on its [collectibles page](https://www.irs.gov/retirement-plans/investments-in-collectibles-in-individually-directed-qualified-plan-accounts). For what an IRA may hold, read the IRS [retirement plan investments FAQs](https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs)."
+    },
+    {
+      "question": "How are self directed IRAs taxed?",
+      "answer": "A self-directed IRA is taxed like the IRA type underneath it. A self-directed traditional IRA follows traditional IRA rules, and a self-directed Roth IRA follows Roth rules. Two IRS rules add tax exposure: a disqualified person who takes part in a prohibited transaction must pay a tax, and buying a collectible with IRA money is generally treated as a distribution."
+    },
+    {
+      "question": "What is a self directed IRA custodian?",
+      "answer": "A self-directed IRA custodian is the firm that holds the account and allows a wider range of holdings than a standard IRA menu. You still carry the due-diligence and prohibited-transaction risk for every asset it holds. Ask who values each asset and what the custodian charges in dollars per year before you open the account."
+    },
+    {
+      "question": "What companies offer self directed IRA?",
+      "answer": "Self-directed IRAs are offered by custodians whose menus include non-public assets, and we do not rank or name specific companies. Pick a custodian only after it answers, in writing, which asset types it accepts, who values each asset, and what every fee costs in dollars per year."
+    },
+    {
+      "question": "What does self directed IRA mean?",
+      "answer": "Self-directed means the custodian allows a wider range of holdings and you choose the assets yourself. The account is still a regular traditional or Roth IRA with the same tax treatment. The owner carries the due-diligence and prohibited-transaction risk."
+    },
+    {
+      "question": "Who counts as a disqualified person for a self-directed IRA?",
+      "answer": "Disqualified persons include your fiduciary and members of your family, according to the IRS. The family list covers your spouse, your ancestors, your lineal descendants, and any spouse of a lineal descendant. In everyday terms, that means your parents, grandparents, children, grandchildren, and the spouses of your children and grandchildren."
+    },
+    {
+      "question": "Can I live in a property my self-directed IRA owns?",
+      "answer": "No. Buying property for personal use with IRA funds is one of the IRS examples of a prohibited transaction. The IRS also says a prohibited transaction can cause an account to lose its IRA status, so confirm the consequence for your account type in [IRS Publication 590-B](https://www.irs.gov/pub/irs-pdf/p590b.pdf)."
+    },
+    {
+      "question": "Can my self-directed IRA lend me money?",
+      "answer": "No. Borrowing money from your IRA is an IRS example of a prohibited transaction, and so is using the IRA as security for a loan. A disqualified person who takes part in a prohibited transaction must pay a tax, according to the IRS."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS: Retirement Plan Investments FAQs",
+      "url": "https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs"
+    },
+    {
+      "label": "IRS: Investments in Collectibles in Individually Directed Qualified Plan Accounts",
+      "url": "https://www.irs.gov/retirement-plans/investments-in-collectibles-in-individually-directed-qualified-plan-accounts"
+    },
+    {
+      "label": "IRS: Publication 590-B",
+      "url": "https://www.irs.gov/pub/irs-pdf/p590b.pdf"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

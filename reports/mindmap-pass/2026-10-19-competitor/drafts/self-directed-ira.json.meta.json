@@ -1,0 +1,347 @@
+{
+ "slug": "self-directed-ira",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 1701,
+ "floor": 1200,
+ "input_tokens": 27254,
+ "output_tokens": 21992,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.5489,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "emptied by the claim check (nothing in the fact list could carry it): ['What a Self-Directed IRA Is', 'Non-Public Assets the Account Can Hold', 'Self-Directed IRA Custodian Duties', 'Prohibited Transactions and Disqualified Persons', 'The Collectibles Rule'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1796,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    7,
+    9
+   ],
+   "applied": [
+    {
+     "id": "sections[1].body",
+     "quote": "Precious metals carry an extra rule.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not tie precious metals to the collectibles rule"
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The IRS treats collectibles separately, with limited exceptions, so read the collectibles rule before you buy any metal.",
+     "replacement": "Collectibles generally are not permitted IRA investments, and the IRS lists limited exceptions on its [collectibles page](https://www.irs.gov/retirement-plans/investments-in-collectibles-in-individually-directed-qualified-plan-accounts).",
+     "type": "unlinked-directive",
+     "why": "Sends reader to IRS rule without link; metal-as-collectible not in SOURCE"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "If you want professional help, our guide on [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/) covers fiduciary standards and how to look up an advisor's record.",
+     "replacement": "If you want professional help, read our guide on [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/).",
+     "type": "unsupported",
+     "why": "Contents of the advisor guide are not stated in SOURCE"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The IRS counts your fiduciary as a disqualified person, so that advisor falls under the same prohibited-transaction rules as your family.",
+     "replacement": "The IRS counts your fiduciary as a disqualified person.",
+     "type": "inference",
+     "why": "SOURCE does not say any advisor is your fiduciary"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Read them on that IRS page before you buy any metal or other item that could count as a collectible.",
+     "replacement": "Read them on that IRS page before you buy any item that could count as a collectible.",
+     "type": "inference",
+     "why": "SOURCE does not say metals may count as collectibles"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Both conditions are common in a self-directed IRA, because the assets it allows are the ones a standard menu leaves out.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE states no frequency or cause for these conditions"
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "The tax treatment is the same, and you skip the valuation, documentation, and prohibited-transaction work described above.",
+     "replacement": "The tax treatment is the same, and you skip the valuation and documentation work described above.",
+     "type": "inference",
+     "why": "Prohibited-transaction rules apply to all IRAs per SOURCE"
+    },
+    {
+     "id": "introText",
+     "quote": "At The Modern Wallet, we see readers trip most often on the prohibited-transaction rules, because the Internal Revenue Service (IRS) applies them to your spouse, parents, children, and grandchildren as well as to you.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "No source for readers' most common mistake; experience file licenses framing, not fabricated specific."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Every example on that list is nonpublicly traded.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not say which listed examples are nonpublicly traded."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The IRS says prohibited-transaction risk is higher when an IRA holds nonpublicly traded assets, so filling the account with them puts it in the higher-risk group.",
+     "replacement": "The IRS says prohibited-transaction risk is higher when an IRA holds nonpublicly traded assets.",
+     "type": "inference",
+     "why": "SOURCE states only the higher-risk fact; the consequence clause is added."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "A self-directed IRA custodian holds the account and decides which asset types it will accept.",
+     "replacement": "A self-directed IRA custodian holds the account and allows a wider range of holdings.",
+     "type": "unsupported",
+     "why": "SOURCE says the custodian holds the account and allows wider holdings."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Selling property to the IRA is another, which rules out selling a rental you already own to your own account.",
+     "replacement": "Selling property to the IRA is another.",
+     "type": "inference",
+     "why": "Plain-example applications are not in SOURCE; keep the IRS example."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "To estimate what a distribution of that size could cost you, enter the purchase price in our [IRA early withdrawal calculator](/retirement/ira-early-withdrawal-calculator/).",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not say the calculator estimates a collectible-distribution cost."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If you manage a property the IRA owns or run a company whose stock it holds, you directly control that asset, and the IRS says that also raises the risk.",
+     "replacement": "If you directly control an asset the IRA holds, the IRS says that also raises the risk.",
+     "type": "inference",
+     "why": "SOURCE does not define direct control with these examples."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Ask who values each asset and how often, since a private company or a property has no exchange price to look up.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Causal claim about exchange pricing not in SOURCE."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "A self-directed IRA custodian is the firm that holds the account and allows a wider range of holdings than a standard IRA menu.",
+     "replacement": "A self-directed IRA custodian holds the account and allows a wider range of holdings than a standard IRA menu.",
+     "type": "unsupported",
+     "why": "SOURCE does not call the custodian a firm."
+    }
+   ],
+   "deleted_final": 9,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1978
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-19T21:55:11+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-19-competitor/audit/self-directed-ira.findings.txt",
+    "applied": [
+     {
+      "id": "sections[1].body",
+      "quote": "Read the entry that matches your asset before you sign a purchase agreement.",
+      "replacement": "Read those FAQs before you sign a purchase agreement.",
+      "type": "1. Invented per-asset FAQ entries",
+      "why": "Source does not say the IRS FAQs have per-asset entries."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "Your next step is to read the entry for the asset you want in the IRS [retirement plan investments FAQs](https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs) before you contact a self-directed IRA custodian.",
+      "replacement": "Your next step is to read the IRS [retirement plan investments FAQs](https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs) before you contact a self-directed IRA custodian.",
+      "type": "1. Invented per-asset FAQ entries",
+      "why": "Source does not say the IRS FAQs have per-asset entries."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "such as real estate, stock in a private company, notes, and precious metals.",
+      "replacement": "such as real estate, stock in a private company, and notes.",
+      "type": "2. Precious metals listed as holdable",
+      "why": "Conflicts with the collectibles rule. Drop the example."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "such as real estate, private company stock, notes, and precious metals, if the custodian accepts them.",
+      "replacement": "such as real estate, private company stock, and notes, if the custodian accepts them.",
+      "type": "2. Precious metals listed as holdable",
+      "why": "Conflicts with the collectibles rule. Drop the example."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "The IRS counts your fiduciary as a disqualified person.",
+      "replacement": "",
+      "type": "3. Dead-end implied fact",
+      "why": "Unexplained fragment after the advisor link. Delete it."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "Self-directed IRAs are offered by custodians whose menus include non-public assets, and we do not rank or name specific companies.",
+      "replacement": "Self-directed IRAs are offered by custodians whose menus include non-public assets, so verify any custodian yourself.",
+      "type": "4. Unsupported site-policy claim",
+      "why": "No source supports a site policy on naming companies."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "We do not restate those exceptions.",
+      "replacement": "",
+      "type": "5. Meta-narration",
+      "why": "The next sentence already tells the reader to read the exceptions on the IRS page."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "We have no published fee figure to give you, so plan around the custodian's written dollar amounts.",
+      "replacement": "Ask each custodian for its fee schedule in dollars, and plan around those written amounts.",
+      "type": "5. Meta-narration",
+      "why": "Recast as a direct instruction."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "That wider menu is what makes the account self-directed.",
+      "replacement": "Self-directed describes that wider menu.",
+      "type": "6. Pseudo-cleft",
+      "why": "Rewrite plainly with the same meaning."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "Without both, the risk the IRS describes sits with you and no one else.",
+      "replacement": "",
+      "type": "7. Fake-profound kicker",
+      "why": "Rhetorical kicker that adds nothing. Delete it."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Do five things before any money moves into a self-directed IRA.",
+      "replacement": "Do five things before any money moves into a self-directed IRA:",
+      "type": "8. Checklist not a numbered list",
+      "why": "Turns the sentence into the lead-in for the list."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Get the custodian's legal name and the signed account agreement in writing.",
+      "replacement": "1. Get the custodian's legal name and the signed account agreement in writing.",
+      "type": "8. Checklist not a numbered list",
+      "why": "List item 1."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Walk away from any offer that promises a guaranteed return.",
+      "replacement": "4. Walk away from any offer that promises a guaranteed return.",
+      "type": "8. Checklist not a numbered list",
+      "why": "List item 4."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Borrowing money from the IRA is one, so you cannot take money out of the account as a loan for a down payment.",
+      "replacement": "Borrowing money from the IRA is one.",
+      "type": "9. Example not in fact list",
+      "why": "The down-payment example is not an IRS example. Keep only the IRS wording."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Using the IRA as security for a loan is also prohibited, such as pledging the account to a bank as collateral.",
+      "replacement": "Using the IRA as security for a loan is also prohibited.",
+      "type": "9. Example not in fact list",
+      "why": "The bank-collateral example is not an IRS example. Keep only the IRS wording."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "So is buying property for personal use with IRA funds, like a vacation condo that you or your family stays in.",
+      "replacement": "So is buying property for personal use with IRA funds.",
+      "type": "9. Example not in fact list",
+      "why": "The vacation-condo example is not an IRS example. Keep only the IRS wording."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[6].body",
+      "quote": "Then read the entry for your asset type in the IRS [retirement plan investments FAQs](https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs) before you commit.",
+      "finding": "1 and 8. Invented per-asset entries; checklist not a list",
+      "why": "Removes the implied per-asset entries and makes this item 5 of the list.",
+      "replacement": "\n5. Read the IRS [retirement plan investments FAQs](https://www.irs.gov/retirement-plans/retirement-plan-investments-faqs) before you commit.",
+      "reason": "replacement adds ['5'] not in SOURCE"
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Ask for every fee as a dollar amount for one year, covering account fees and any charge per asset or per transaction.",
+      "finding": "8. Checklist not a numbered list",
+      "why": "List item 2.",
+      "replacement": "\n2. Ask for every fee as a dollar amount for one year, covering account fees and any charge per asset or per transaction.",
+      "reason": "replacement adds ['2'] not in SOURCE"
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Get the full investment documents for each asset, such as the deed, the note, or the company's operating agreement, before you sign.",
+      "finding": "8. Checklist not a numbered list",
+      "why": "List item 3.",
+      "replacement": "\n3. Get the full investment documents for each asset, such as the deed, the note, or the company's operating agreement, before you sign.",
+      "reason": "replacement adds ['3'] not in SOURCE"
+     },
+     {
+      "id": "introText",
+      "quote": "The tax treatment matches a regular IRA.",
+      "finding": "10. Add the At The Modern Wallet tee-up",
+      "why": "Places the licensed editorial \"we\" once, right after the answer sentence.",
+      "replacement": "At The Modern Wallet, we start every guide like this one from the IRS's own pages, and the first point is that the tax treatment matches a regular IRA.",
+      "reason": "replacement adds [\"IRS's\"] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [
+      {
+       "id": "sections[5].body",
+       "quote": "An account built around them sits in the group the IRS flags as higher risk from the day you buy.",
+       "replacement": "An account built around them sits in the group the IRS flags as higher risk.",
+       "type": "inference",
+       "why": "SOURCE states the higher risk but gives no timing such as 'from the day you buy'."
+      }
+     ],
+     "deleted_final": 1,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1701,
+    "flags": [
+     "emptied by the claim check (nothing in the fact list could carry it): ['What a Self-Directed IRA Is', 'Non-Public Assets the Account Can Hold', 'Self-Directed IRA Custodian Duties', 'Prohibited Transactions and Disqualified Persons', 'The Collectibles Rule'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+    ]
+   }
+  ]
+ },
+ "seconds": 247.3,
+ "response_id": "msg_011CgCJBNwkMNAduAhh1mMZY",
+ "generated_at": "2026-10-19T21:25:49+0000"
+}

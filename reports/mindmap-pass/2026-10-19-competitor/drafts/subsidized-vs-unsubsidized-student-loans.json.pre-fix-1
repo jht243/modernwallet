@@ -1,0 +1,154 @@
+{
+  "slug": "subsidized-vs-unsubsidized-student-loans",
+  "title": "Subsidized vs Unsubsidized Student Loans Compared for 2026",
+  "metaDescription": "Subsidized vs unsubsidized student loans compared on who qualifies, who pays interest in school, annual and aggregate limits, and the 150% time rule.",
+  "targetKeyword": "subsidized vs unsubsidized student loans",
+  "optionA": "Direct Subsidized Loan",
+  "optionB": "Direct Unsubsidized Loan",
+  "segment": "student-loans",
+  "h1": "Subsidized vs Unsubsidized Student Loans Compared",
+  "introText": "A Direct Subsidized Loan is the better choice of the two whenever you qualify for one. The government does not charge interest on the subsidized loan while you are enrolled at least half-time, during your grace period, or during deferment. A Direct Unsubsidized Loan builds interest from the date of your first disbursement, and you owe all of it. Accept the subsidized amount first and borrow unsubsidized only to cover what is left. At The Modern Wallet, we compare subsidized vs unsubsidized student loans by tracking who pays the interest at each stage, then running the federal borrowing limits as plain arithmetic so you can see how much of each loan is available.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Who qualifies",
+        "a": "Undergraduate students only",
+        "b": "Undergraduate and graduate students"
+      },
+      {
+        "dimension": "Financial need",
+        "a": "Required; the loan is need-based",
+        "b": "Not required"
+      },
+      {
+        "dimension": "Who pays interest and when",
+        "a": "The government does not charge interest while you are enrolled at least half-time, during your grace period, and during deferment periods",
+        "b": "You are responsible for all interest during all periods, including school, grace, and deferment"
+      },
+      {
+        "dimension": "Interest accrual and capitalization",
+        "a": "No interest is charged during the periods listed above, so there is no in-school interest to capitalize",
+        "b": "Interest starts accumulating from the date of your first disbursement; you can pay it as it accrues or let it capitalize, which adds it to your principal"
+      },
+      {
+        "dimension": "Annual limits (dependent undergraduates)",
+        "a": "No more than $3,500 in year one, $4,500 in year two, and $5,500 in year three and beyond",
+        "b": "Combined Direct loan limit of $5,500, $6,500, and $7,500 for those years; any amount above the subsidized share is unsubsidized"
+      },
+      {
+        "dimension": "Aggregate limits",
+        "a": "Up to $23,000 of the dependent undergraduate cap may be subsidized",
+        "b": "Dependent undergraduate cap of $31,000 combined; independent undergraduate aggregate of $57,500"
+      },
+      {
+        "dimension": "150% rule",
+        "a": "First-time borrowers on or after July 1, 2013 generally cannot receive subsidized loans for more than 150% of program length, such as six years for a four-year bachelor's degree",
+        "b": "The 150% rule in the sources cited here is stated for subsidized loans"
+      },
+      {
+        "dimension": "Interest rates",
+        "a": "Set for each award year; the rate on a loan depends on when it was first disbursed",
+        "b": "Set for each award year; the rate on a loan depends on when it was first disbursed"
+      },
+      {
+        "dimension": "How you get them",
+        "a": "File the Free Application for Federal Student Aid (FAFSA) and show financial need",
+        "b": "File the FAFSA; no financial need required"
+      }
+    ]
+  },
+  "verdict": "Choose the Direct Subsidized Loan first if you are an undergraduate with financial need, because the government does not charge interest while you are enrolled at least half-time, during your grace period, or during deferment. Choose the Direct Unsubsidized Loan for any amount above your subsidized limit, or as your Direct loan if you are an undergraduate without financial need or a graduate student. This recommendation is not for graduate students, who cannot receive subsidized loans. For them, the real decision is how much unsubsidized to borrow and whether to pay its interest as it accrues instead of letting it capitalize. Our verdict would change if your financial need goes away, if you reach the subsidized annual or aggregate cap, or if you hit the 150% time limit as a first-time borrower on or after July 1, 2013.",
+  "sections": [
+    {
+      "heading": "The Order to Accept Subsidized and Unsubsidized Loans",
+      "content": "Accept a Direct Subsidized Loan before a Direct Unsubsidized Loan, because the subsidized loan carries no interest charge while you are enrolled at least half-time, during your grace period, and during deferment. The unsubsidized loan charges you for all interest in every period, starting from the date of your first loan disbursement. Every dollar you move from the unsubsidized column to the subsidized column is a dollar that stops building interest while you are in school.\n\nSubsidized borrowing has a ceiling, so a dependent undergraduate can end up with both loans. A dependent first-year student can borrow up to $5,500 in Direct loans, and no more than $3,500 of that can be subsidized. Take the full subsidized amount you qualify for, then borrow unsubsidized only for the part of your costs it does not cover.\n\nTwo groups skip the first step. Direct Subsidized Loans are limited to undergraduates with financial need, so graduate students and undergraduates without need can use the unsubsidized loan but not the subsidized one. For the other kinds of student debt, read our guide to [types of student loans](/guides/types-of-student-loans/)."
+    },
+    {
+      "heading": "Who Pays Interest on Subsidized vs Unsubsidized Student Loans",
+      "content": "On a Direct Subsidized Loan, the government does not charge interest while you are enrolled at least half-time, during your grace period, or during deferment periods. On a Direct Unsubsidized Loan, you are responsible for all interest during all periods, and it starts accumulating from the date of your first disbursement. That covers your years in school, your grace period, and any deferment.\n\nTake a dependent first-year student who borrows the full $5,500 and qualifies for the full $3,500 subsidized share. That leaves $2,000 as an unsubsidized loan. At any rate you choose, unsubsidized interest accrues on that $2,000 from first disbursement, while the $3,500 subsidized portion carries no interest charge as long as the student stays enrolled at least half-time.\n\nThe same split repeats every year at the dependent limits. Year two allows $6,500 with up to $4,500 subsidized, and year three and beyond allows $7,500 with up to $5,500 subsidized, so the unsubsidized remainder at the maximum is $2,000 each year. Over four full years that comes to $8,000 of unsubsidized principal ($2,000 × 4) building interest while you are still a student.\n\nThe [StudentAid.gov comparison of subsidized and unsubsidized loans](https://studentaid.gov/articles/subsidized-vs-unsubsidized-loans/) states these interest rules in the government's own words. The [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-a-subsidized-loan-en-573/) publishes an explainer on what a subsidized loan is."
+    },
+    {
+      "heading": "The Difference Between Subsidized and Unsubsidized Loans for Eligibility",
+      "content": "The difference between subsidized and unsubsidized loans starts with who can get them. Subsidized loans are need-based and limited to undergraduates. Unsubsidized loans are open to undergraduate and graduate students and do not require financial need.\n\nBoth loans start with the Free Application for Federal Student Aid (FAFSA). Financial need decides whether a subsidized loan is available to you at all. An unsubsidized loan does not depend on need, and it is open to graduate students.\n\nEnrollment level matters for the subsidy too. The no-interest treatment on a subsidized loan applies while you are enrolled at least half-time, plus the grace period and deferment periods, so read the rules on [StudentAid.gov](https://studentaid.gov/articles/subsidized-vs-unsubsidized-loans/) before you plan to drop below half-time. If some of your federal loans are Federal Family Education Loan (FFEL) loans, our guide to [FFEL loans](/guides/ffel-loans-explained/) covers them separately."
+    },
+    {
+      "heading": "Annual and Aggregate Limits for Subsidized vs Unsubsidized Student Loans",
+      "content": "Dependent undergraduates can borrow up to $5,500 in year one, $6,500 in year two, and $7,500 in year three and beyond. No more than $3,500, $4,500, and $5,500 of those amounts may be subsidized. Over a whole undergraduate career, the dependent cap is $31,000, and up to $23,000 of it may be subsidized.\n\nThe aggregate cap stops a fifth full year at the maximum. Four years at the maximum add up to $27,000 total ($5,500 + $6,500 + $7,500 + $7,500), with $19,000 subsidized ($3,500 + $4,500 + $5,500 + $5,500). That leaves $4,000 of the $31,000 cap and $4,000 of the $23,000 subsidized cap, so a fifth year can add at most $4,000, and all of it could be subsidized if you still have financial need.\n\nIndependent undergraduates have higher limits, with an aggregate of $57,500. For independent annual limits, the subsidized share for independent students, and graduate limits, read our guide to [student loan borrowing limits](/guides/student-loan-borrowing-limits/)."
+    },
+    {
+      "heading": "The 150% Time Limit on Subsidized Loans",
+      "content": "First-time borrowers on or after July 1, 2013 generally cannot receive Direct Subsidized Loans for more than 150% of their program length. For a four-year bachelor's degree, that is six years. \n\nThe time limit and the dollar caps are separate rules, and either one can end subsidized borrowing first. A dependent student who borrows the maximum each year stays well inside six years but uses $19,000 of the $23,000 subsidized cap in four years. A student who borrows less each year can run into the time limit before the dollar cap.\n\nRead the time-limit details on [StudentAid.gov](https://studentaid.gov/articles/subsidized-vs-unsubsidized-loans/) before you plan a fifth or sixth year of subsidized borrowing."
+    },
+    {
+      "heading": "Paying Unsubsidized Interest While in School",
+      "content": "Paying unsubsidized interest as it accrues keeps your principal at the amount you borrowed. If you leave it unpaid, it can capitalize, which means it is added to your principal. Every dollar that capitalizes becomes part of the balance you repay.\n\nTreating the unsubsidized loan as if it were on pause until graduation is the wrong move. Interest on that loan has been accumulating since first disbursement, through every semester. Paying the unsubsidized interest as it accrues means the balance you start repayment with matches what you borrowed.\n\nThe subsidized portion does not need this treatment while you are enrolled at least half-time. The government does not charge interest on it then, so there is no in-school interest to pay. Put any spare cash toward the unsubsidized loan's interest instead, then use our guide on [how to calculate your monthly student loan payment](/guides/how-to-calculate-your-monthly-student-loan-payment/) to see what a larger or smaller principal does to your bill."
+    },
+    {
+      "heading": "Interest Rates and the Award Year",
+      "content": "Federal student loan interest rates are set for each award year, and the rate on a loan depends on when it was first disbursed. The subsidy rule stays the same at any rate: the government does not charge interest on the subsidized loan during school at least half-time, grace, or deferment.\n\nA rate printed in an older document can mislead you. The [Federal Student Aid (FSA) loan programs PDF](https://studentaid.gov/sites/default/files/federal-loan-programs.pdf) lists a rate that applied only to loans first disbursed from July 2022 to July 2023, so it does not describe a new loan.\n\nLook up the current award-year rate on [StudentAid.gov](https://studentaid.gov/articles/subsidized-vs-unsubsidized-loans/) before you accept either loan. Then run that rate through your unsubsidized balance to see how much interest builds before repayment."
+    },
+    {
+      "heading": "Next Steps for Choosing Subsidized vs Unsubsidized Student Loans",
+      "content": "Your next step depends on whether you are an undergraduate with financial need. If you are, accept the full subsidized amount you are offered and borrow unsubsidized only for the remaining cost. If you are a graduate student or an undergraduate without need, decide how much unsubsidized to borrow and whether you can pay its interest as it accrues.\n\n Our guide on whether to [refinance student loans](/guides/should-you-refinance-student-loans/) is for later, once you are repaying.\n\nBefore you accept anything, add up the unsubsidized amount for every year you plan to borrow, because that total is the part of your balance that grows while you are in school."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Which is better, subsidized or unsubsidized?",
+      "answer": "A subsidized loan is better if you qualify, because the government does not charge interest while you are enrolled at least half-time, during your grace period, or during deferment. An unsubsidized loan builds interest from first disbursement in every period. Subsidized loans are limited to undergraduates with financial need, so if you need more than your subsidized limit, an unsubsidized loan can cover the rest up to the combined limit."
+    },
+    {
+      "question": "How do subsidized and unsubsidized student loans differ?",
+      "answer": "They differ in eligibility and in who pays the interest. Subsidized loans require financial need and are limited to undergraduates, and the government does not charge interest during school at least half-time, grace, or deferment. Unsubsidized loans are open to undergraduate and graduate students without a need test, and you owe all interest from your first disbursement onward."
+    },
+    {
+      "question": "What should I know about subsidized vs unsubsidized student loans interest rates?",
+      "answer": "Rates are set for each award year, and the rate on a loan depends on when it was first disbursed. A rate in an older Federal Student Aid document may apply only to loans first disbursed in a past year, such as July 2022 to July 2023. Look up the current rate on [StudentAid.gov](https://studentaid.gov/articles/subsidized-vs-unsubsidized-loans/) before you borrow."
+    },
+    {
+      "question": "What happens to subsidized vs unsubsidized student loans after graduation?",
+      "answer": "During your grace period, the government does not charge interest on a subsidized loan, while an unsubsidized loan keeps accruing interest as it has since first disbursement. Unpaid unsubsidized interest can capitalize, which adds it to your principal. During deferment, the same split applies: no interest is charged on the subsidized loan, and you owe all interest on the unsubsidized loan."
+    },
+    {
+      "question": "What is the role of the FAFSA in subsidized vs unsubsidized student loans?",
+      "answer": "You apply for both loans by filing the Free Application for Federal Student Aid (FAFSA). A subsidized loan requires financial need and is limited to undergraduates. An unsubsidized loan is open to undergraduate and graduate students and does not require financial need, so if you are offered both, accept the subsidized amount first."
+    }
+  ],
+  "sources": [
+    {
+      "label": "StudentAid.gov, Subsidized vs. Unsubsidized Loans",
+      "url": "https://studentaid.gov/articles/subsidized-vs-unsubsidized-loans/"
+    },
+    {
+      "label": "CFPB, What is a subsidized loan?",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-subsidized-loan-en-573/"
+    },
+    {
+      "label": "Federal Student Aid, Federal Loan Programs (PDF)",
+      "url": "https://studentaid.gov/sites/default/files/federal-loan-programs.pdf"
+    }
+  ],
+  "relatedComparisons": [
+    "personal-loan-vs-auto-loan",
+    "credit-union-vs-bank"
+  ],
+  "calculatorLinks": [
+    {
+      "label": "How to calculate your monthly student loan payment",
+      "href": "/guides/how-to-calculate-your-monthly-student-loan-payment/"
+    },
+    {
+      "label": "Monthly budget calculator",
+      "href": "/budget/monthly-budget-calculator/"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "optionAName": "",
+  "optionBName": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": [],
+  "relatedLinks": []
+}

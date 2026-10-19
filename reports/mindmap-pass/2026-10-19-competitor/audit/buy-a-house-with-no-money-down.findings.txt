@@ -1,0 +1,8 @@
+1. PROMPT LEAK: "The one federal floor on our list belongs to FHA: 3.5% down with a score of at least 580" and FAQ "The one federal floor on our list is FHA's 580 score". Rewrite: "FHA's rule is a 580 credit score with 3.5% down. VA and USDA lenders set their own minimums." Never say "our list".
+2. USDA link target: the direct-loans URL does not carry guarantee fee rates. Do not imply it lists them; say current USDA guarantee fee and premium rates are not given on this page and the reader should ask lenders/USDA.
+3. CONTRADICTION: "If a home you like turns out to sit in a USDA eligible area, a USDA loan moves to the top of the list." Remove or restrict to buyers not eligible for VA.
+4. UNSUPPORTED: "The loan with the lower total on both is the cheaper loan for you." Add the tradeoff (lower cash due vs lower monthly payment) or delete.
+5. "Mistakes to Avoid" first/second/third/fourth mistake paragraphs: convert to a list in the body string.
+6. Link first mention of Department of Veterans Affairs (https://www.va.gov/housing-assistance/home-loans/loan-types/purchase-loan/) and USDA (https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-direct-home-loans) in the intro; cite the CFPB source in the body or remove it from sources.
+7. Move "At The Modern Wallet, we" tee-up right after the answer sentence.
+8. Remove leading space in "\n\n Ask each lender for an itemized list...".

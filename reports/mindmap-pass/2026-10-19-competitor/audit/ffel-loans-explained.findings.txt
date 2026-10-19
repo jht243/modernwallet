@@ -1,0 +1,7 @@
+1. UNDER FLOOR (1184 of 1200 words). Add fact-list substance, no padding: in "Who Holds an FFEL Loan" state that a servicer name not starting with "ED" means a commercial holder; in the IDR deadline section say what the one-time IDR account adjustment was and that consolidating can no longer obtain it.
+2. STALE FUTURE TENSE: "new PSLF regulations take effect on July 1, 2026", "once the final PSLF regulations take effect on July 1, 2026", "they take effect July 1, 2026". Today is 2026-10-19; use past tense ("took effect July 1, 2026") and "check StudentAid.gov/publicservice for current requirements". Rename the awkward H2 "The Passed IDR Deadline and the 2026 PSLF Rules".
+3. UNSUPPORTED: "The holder does not change the PSLF answer." Remove.
+4. DEAD END: "The deadline to consolidate for the one-time income-driven repayment (IDR) account adjustment was June 30, 2024, and it has passed." Tell the reader the consequence: consolidating no longer gets that adjustment.
+5. FORMATTING artifacts: stray spaces/blank-line fragments around "earlier payments. ", "has passed. ", and section 3 is three fragments; clean them.
+6. Soften "At The Modern Wallet, we build every student loan guide around one decision." to a modest claim.
+7. Remove "FFELP is short for Federal Family Education Loan Program, the same program under its full name." expansion if unsupported.

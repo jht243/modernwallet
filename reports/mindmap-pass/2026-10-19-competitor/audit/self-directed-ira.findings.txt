@@ -1,0 +1,10 @@
+1. INVENTED SOURCE STRUCTURE: "read the entry that matches your asset" / "read the entry for your asset type in the IRS retirement plan investments FAQs" (appears several times). Change to "read the IRS retirement plan investments FAQs" with no per-asset entries implied.
+2. "precious metals" listed as holdable (intro/sections/FAQ) while collectibles are generally not permitted; drop "precious metals" from the examples or route the reader to the IRS collectibles page for metals and coins.
+3. DEAD END / implied fact: "If you want professional help, read our guide on how to choose a financial advisor. The IRS counts your fiduciary as a disqualified person." Delete the second sentence or resolve it.
+4. UNSUPPORTED site-policy claim: "we do not rank or name specific companies". Replace with a neutral sentence (verify the custodian yourself).
+5. META-NARRATION: "We do not restate those exceptions." / "We have no published fee figure to give you". Recast as direct instructions ("Read the exceptions on the IRS page"; "Ask each custodian for its fee schedule in dollars").
+6. Pseudo-cleft: "That wider menu is what makes the account self-directed." Rewrite plainly.
+7. Fake-profound kicker: "Without both, the risk the IRS describes sits with you and no one else." Delete or state concretely.
+8. "Do five things before any money moves..." written as paragraphs: format as a numbered list in the body string.
+9. Examples not in the fact list: "so you cannot take money out of the account as a loan for a down payment"; "such as pledging the account to a bank as collateral"; "like a vacation condo that you or your family stays in". Keep only forms matching the IRS examples (borrowing from the IRA, selling property to it, using it as security for a loan, buying property for personal use).
+10. Put "At The Modern Wallet, we" tee-up once in the intro right after the answer sentence.

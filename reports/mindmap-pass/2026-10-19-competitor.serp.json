@@ -1,0 +1,45 @@
+{
+ "rows": [
+  {
+   "keyword": "self directed ira",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "ffel loans",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "traditional bank vs online bank",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "subsidized vs unsubsidized student loans",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "buy a house with no money down",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  }
+ ],
+ "cost": "DataForSEO: 0 calls, $0.00000 of $2.00 budget"
+}

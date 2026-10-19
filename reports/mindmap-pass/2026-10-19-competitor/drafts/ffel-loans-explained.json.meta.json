@@ -1,0 +1,281 @@
+{
+ "slug": "ffel-loans-explained",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 1345,
+ "floor": 1200,
+ "input_tokens": 27180,
+ "output_tokens": 16702,
+ "thinking_tokens": null,
+ "cached_tokens": 25210,
+ "est_cost_usd": 0.347,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "emptied by the claim check (nothing in the fact list could carry it): ['How to Tell If You Have FFEL Loans', 'FFEL Loans and PSLF Eligibility', 'Who Holds an FFEL Loan', 'Three Costs of a Direct Consolidation Loan', 'A Decision Rule for Consolidating'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1394,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    8
+   ],
+   "applied": [
+    {
+     "id": "sections[1].body",
+     "quote": "Since only Direct Loans count toward PSLF, payments on the FFEL loan itself were never PSLF payments.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not say FFEL payments were never PSLF payments."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "If the servicer name does not start with \"ED,\" the loan is a commercially held FFEL loan.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Fact list only covers names starting with ED; commercial rule is a COVER instruction."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "An ED-held FFEL loan and a commercial FFEL loan are both outside the Direct Loan program, so neither counts toward PSLF until it is consolidated into a Direct Consolidation Loan.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not say ED-held FFEL loans are outside Direct Loan program."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "That way you can match every loan on your list to the company that services it.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Purpose not stated in SOURCE."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Consolidation can lengthen repayment, so you may pay over more years.",
+     "replacement": "Consolidation can lengthen repayment.",
+     "type": "inference",
+     "why": "SOURCE only says consolidation can lengthen repayment."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Keeping the loan as it is protects that reduction.",
+     "replacement": "Adding the loan to a Direct Consolidation Loan can cost you that reduction.",
+     "type": "inference",
+     "why": "SOURCE only says consolidating can cost the reduction."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Borrowers had to consolidate by that date to benefit from the adjustment, so consolidating today does not bring it back.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE states deadline passed, not consequence for consolidating today."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Any advice urging FFEL borrowers to consolidate fast for the IDR adjustment is out of date.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Claim about advice not in SOURCE."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "FFEL loans are not eligible because PSLF counts only Direct Loans, and FFEL loans come from a separate program that ended for new loans on July 1, 2010.",
+     "replacement": "FFEL loans are not eligible because PSLF counts only Direct Loans. The FFEL Program ended for new loans on July 1, 2010.",
+     "type": "inference",
+     "why": "Program ending is not stated as a cause of ineligibility."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "FFEL loans are federal student loans made under the Federal Family Education Loan (FFEL) Program, which stopped making new loans on July 1, 2010.",
+     "replacement": "FFEL loans are loans made under the Federal Family Education Loan (FFEL) Program, which stopped making new loans on July 1, 2010.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe FFEL loans as federal student loans."
+    }
+   ],
+   "deleted_final": 8,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1521
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-19T21:55:04+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-19-competitor/audit/ffel-loans-explained.findings.txt",
+    "applied": [
+     {
+      "id": "sections[2].body",
+      "quote": "The holder does not change the PSLF answer.",
+      "replacement": "If the name does not start with \"ED,\" the loan is commercially held.",
+      "type": "3 unsupported holder claim; 1 add commercial-holder fact",
+      "why": "Claim is unsupported. SOURCE says a servicer name not starting with ED means a commercial holder."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "The deadline to consolidate for the one-time income-driven repayment (IDR) account adjustment was June 30, 2024, and it has passed.",
+      "replacement": "The deadline to consolidate for the one-time income-driven repayment (IDR) account adjustment was June 30, 2024. That deadline has passed, so consolidating now will not get you that adjustment.",
+      "type": "4 dead end; 5 formatting",
+      "why": "State the consequence: consolidating now cannot get the adjustment."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "and new PSLF regulations take effect on July 1, 2026",
+      "replacement": "and new PSLF regulations took effect on July 1, 2026",
+      "type": "2 stale future tense",
+      "why": "The effective date has passed, so use past tense."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Our answer would change if the requirements look different once the final PSLF regulations take effect on July 1, 2026.",
+      "replacement": "Our answer would change if the requirements changed when the final PSLF regulations took effect on July 1, 2026.",
+      "type": "2 stale future tense",
+      "why": "The effective date has passed, so use past tense."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "The PSLF rules are changing too.",
+      "replacement": "The PSLF rules have changed too.",
+      "type": "2 stale future tense",
+      "why": "The rules have already changed."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "and they take effect July 1, 2026",
+      "replacement": "and they took effect July 1, 2026",
+      "type": "2 stale future tense",
+      "why": "The effective date has passed, so use past tense."
+     },
+     {
+      "id": "sections[5].heading",
+      "quote": "The Passed IDR Deadline and the 2026 PSLF Rules",
+      "replacement": "The IDR Adjustment Deadline and the 2026 PSLF Rules",
+      "type": "2 awkward H2",
+      "why": "Rename the heading plainly."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "- Payment credit. Consolidating generally means losing credit for earlier payments.\n- On-time rate reduction. Many FFEL borrowers get a reduced interest rate for paying on time, and adding an FFEL loan to a Direct Consolidation Loan can cost you that reduction.\n- Repayment length. Consolidation can lengthen repayment.",
+      "replacement": "First, consolidating generally means losing credit for earlier payments. Second, many FFEL borrowers get a reduced interest rate for paying on time, and adding an FFEL loan to a Direct Consolidation Loan can cost you that reduction. Third, consolidation can lengthen repayment.",
+      "type": "5 section 3 fragments",
+      "why": "Turn the fragmented inline list into clean sentences with the same facts."
+     },
+     {
+      "id": "introText",
+      "quote": "At The Modern Wallet, we build every student loan guide around one decision.",
+      "replacement": "At The Modern Wallet, every guide we write starts from the decision a reader faces.",
+      "type": "6 soften we-claim",
+      "why": "Use the modest editorial framing licensed by the experience file."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "FFELP is short for Federal Family Education Loan Program, the same program under its full name.",
+      "replacement": "",
+      "type": "7 unsupported expansion",
+      "why": "SOURCE never expands FFELP, so delete the sentence."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[5].body",
+      "quote": "The deadline to consolidate for the one-time income-driven repayment (IDR) account adjustment",
+      "finding": "1 explain what the IDR adjustment was",
+      "why": "needs new substance: SOURCE does not describe what the adjustment did.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      7
+     ],
+     "applied": [
+      {
+       "id": "sections[1].body",
+       "quote": "Forgiveness is not automatic after you consolidate.",
+       "replacement": "",
+       "type": "unsupported",
+       "why": "Closed fact list never states forgiveness is not automatic; only a COVER rule"
+      },
+      {
+       "id": "sections[2].body",
+       "quote": "If the name does not start with \"ED,\" the loan is commercially held.",
+       "replacement": "",
+       "type": "unsupported",
+       "why": "Fact list only covers names starting with ED; non-ED meaning is a COVER rule"
+      },
+      {
+       "id": "sections[5].body",
+       "quote": "Use it as a second government source alongside StudentAid.gov.",
+       "replacement": "Use it as a second source alongside StudentAid.gov.",
+       "type": "unsupported",
+       "why": "SOURCE does not describe CFPB as a government source"
+      },
+      {
+       "id": "faqs[2].answer",
+       "quote": "For PSLF, FFEL loans become eligible only after you consolidate them into a Direct Consolidation Loan, because only Direct Loans count.",
+       "replacement": "For PSLF, FFEL loans may become eligible only if you consolidate them into a Direct Consolidation Loan, because only Direct Loans count.",
+       "type": "contradicted",
+       "why": "SOURCE says FFEL loans may become eligible if consolidated"
+      },
+      {
+       "id": "faqs[2].answer",
+       "quote": "Forgiveness is not automatic even then, since you still have to meet the requirements at [StudentAid.gov/publicservice](https://studentaid.gov/publicservice).",
+       "replacement": "",
+       "type": "unsupported",
+       "why": "Fact list never states forgiveness is not automatic"
+      },
+      {
+       "id": "faqs[2].answer",
+       "quote": "The [CFPB's student loan forgiveness page](https://www.consumerfinance.gov/paying-for-college/student-loan-forgiveness/) is a second government source on forgiveness.",
+       "replacement": "The [CFPB's student loan forgiveness page](https://www.consumerfinance.gov/paying-for-college/student-loan-forgiveness/) is a second source on forgiveness.",
+       "type": "unsupported",
+       "why": "SOURCE does not describe CFPB as a government source"
+      },
+      {
+       "id": "faqs[5].answer",
+       "quote": "Forgiveness is not automatic.",
+       "replacement": "",
+       "type": "unsupported",
+       "why": "Fact list never states forgiveness is not automatic"
+      }
+     ],
+     "deleted_final": 7,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 1345,
+    "flags": [
+     "emptied by the claim check (nothing in the fact list could carry it): ['How to Tell If You Have FFEL Loans', 'FFEL Loans and PSLF Eligibility', 'Who Holds an FFEL Loan', 'Three Costs of a Direct Consolidation Loan', 'A Decision Rule for Consolidating'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+    ]
+   }
+  ]
+ },
+ "seconds": 175.6,
+ "response_id": "msg_011CgCJVd2b7qk2r43ByGgs3",
+ "generated_at": "2026-10-19T21:28:44+0000"
+}

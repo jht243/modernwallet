@@ -1,0 +1,321 @@
+{
+ "slug": "subsidized-vs-unsubsidized-student-loans",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 2061,
+ "floor": 1500,
+ "input_tokens": 28944,
+ "output_tokens": 21031,
+ "thinking_tokens": null,
+ "cached_tokens": 26949,
+ "est_cost_usd": 0.434,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2213,
+  "numbers_not_in_facts": [
+   "19000",
+   "2000",
+   "2026",
+   "27000",
+   "4000",
+   "8000"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    5
+   ],
+   "applied": [
+    {
+     "id": "sections[0].content",
+     "quote": "Subsidized borrowing has a ceiling, so many dependent undergraduates end up with both loans.",
+     "replacement": "Subsidized borrowing has a ceiling, so a dependent undergraduate can end up with both loans.",
+     "type": "unsupported",
+     "why": "SOURCE says nothing about what many borrowers typically do."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "The [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-a-subsidized-loan-en-573/) publishes a short explainer on what a subsidized loan is.",
+     "replacement": "The [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-a-subsidized-loan-en-573/) publishes an explainer on what a subsidized loan is.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the explainer's length."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "An unsubsidized loan does not depend on need, which is why it is the Direct loan graduate students use.",
+     "replacement": "An unsubsidized loan does not depend on need, and it is open to graduate students.",
+     "type": "inference",
+     "why": "Graduate access follows from subsidized being undergraduate-only, not from need."
+    },
+    {
+     "id": "verdict",
+     "quote": "Each of those ends subsidized borrowing for that year or for good, and the unsubsidized interest rules then decide your cost.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not state these consequences"
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "For a two-year program, the same math gives three years (2 \u00d7 1.5).",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE gives only the four-year example"
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "If you have cash during school from a job or savings, paying the unsubsidized interest as it accrues means the balance you start repayment with matches what you borrowed.",
+     "replacement": "Paying the unsubsidized interest as it accrues means the balance you start repayment with matches what you borrowed.",
+     "type": "unsupported",
+     "why": "Job/savings scenario not in SOURCE"
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "A loan from your first year and a loan from your third year can carry different rates.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE only says rate depends on first disbursement date"
+    },
+    {
+     "id": "sections[7].content",
+     "quote": "If you need more than the federal Direct limits allow, our roundup of [student loans for borrowers with bad credit](/roundup/best-student-loans-bad-credit/) covers other lenders.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Other lenders not in SOURCE"
+    }
+   ],
+   "deleted_final": 5,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2302
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-19T21:55:21+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-19-competitor/audit/subsidized-vs-unsubsidized-student-loans.findings.txt",
+    "applied": [
+     {
+      "id": "comparisonTable.rows[8].a",
+      "quote": "File the Free Application for Federal Student Aid (FAFSA) and show financial need",
+      "replacement": "See StudentAid.gov for how to apply; financial need required",
+      "type": "1: FAFSA claims not in fact list",
+      "why": "FAFSA mechanics unsupported; point to StudentAid.gov generically"
+     },
+     {
+      "id": "comparisonTable.rows[8].b",
+      "quote": "File the FAFSA; no financial need required",
+      "replacement": "See StudentAid.gov for how to apply; no financial need required",
+      "type": "1: FAFSA claims not in fact list",
+      "why": "FAFSA mechanics unsupported; point to StudentAid.gov generically"
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "Both loans start with the Free Application for Federal Student Aid (FAFSA).",
+      "replacement": "StudentAid.gov explains how to apply for both loans.",
+      "type": "1: FAFSA claims not in fact list",
+      "why": "FAFSA step not in fact list; keep generic application pointer"
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "You apply for both loans by filing the Free Application for Federal Student Aid (FAFSA).",
+      "replacement": "Check StudentAid.gov for how to apply for both loans.",
+      "type": "1: FAFSA FAQ",
+      "why": "FAFSA mechanics unsupported; refer to StudentAid.gov for applying"
+     },
+     {
+      "id": "sections[6].content",
+      "quote": "Look up the current award-year rate on [StudentAid.gov](https://studentaid.gov/articles/subsidized-vs-unsubsidized-loans/) before you accept either loan.",
+      "replacement": "Check StudentAid.gov for the current award-year rate before you accept either loan.",
+      "type": "2: rate link implies article lists rates",
+      "why": "Linked article not confirmed to carry rates; say check StudentAid.gov generally"
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Look up the current rate on [StudentAid.gov](https://studentaid.gov/articles/subsidized-vs-unsubsidized-loans/) before you borrow.",
+      "replacement": "Check StudentAid.gov for the current rate before you borrow.",
+      "type": "2: rate link implies article lists rates",
+      "why": "Same unconfirmed rate link; refer to StudentAid.gov generally"
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "During deferment, the same split applies: no interest is charged on the subsidized loan, and you owe all interest on the unsubsidized loan.",
+      "replacement": "During deferment, the same split applies: no interest is charged on the subsidized loan, and you owe all interest on the unsubsidized loan. Check StudentAid.gov for repayment terms after graduation.",
+      "type": "3: dead-end after-graduation FAQ",
+      "why": "Add pointer to StudentAid.gov for repayment terms"
+     },
+     {
+      "id": "comparisonTable.rows[6].b",
+      "quote": "The 150% rule in the sources cited here is stated for subsidized loans",
+      "replacement": "Does not apply; the 150% rule limits subsidized loans only",
+      "type": "4: 150% rule cell wording",
+      "why": "Reviewer-specified plainer wording"
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "Treating the unsubsidized loan as if it were on pause until graduation is the wrong move.",
+      "replacement": "",
+      "type": "5: AI tell",
+      "why": "Strawman framing; following sentence carries the point"
+     },
+     {
+      "id": "verdict",
+      "quote": "For them, the real decision is how much unsubsidized to borrow and whether to pay its interest as it accrues instead of letting it capitalize.",
+      "replacement": "Graduate students should decide how much unsubsidized to borrow and whether to pay its interest as it accrues instead of letting it capitalize.",
+      "type": "5: AI tell 'the real decision'",
+      "why": "Remove 'real decision' framing, keep meaning"
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "Paying the unsubsidized interest as it accrues means the balance you start repayment with matches what you borrowed.",
+      "replacement": "",
+      "type": "5: repeated interest facts",
+      "why": "Repeats the section's opening sentence"
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "That covers your years in school, your grace period, and any deferment.",
+      "replacement": "",
+      "type": "5: repeated interest facts",
+      "why": "Restates 'all periods' already said"
+     },
+     {
+      "id": "sections[6].content",
+      "quote": "The subsidy rule stays the same at any rate: the government does not charge interest on the subsidized loan during school at least half-time, grace, or deferment.",
+      "replacement": "The subsidy rule does not depend on the rate.",
+      "type": "5: repeated interest facts",
+      "why": "Subsidy periods already repeated elsewhere; shorten"
+     },
+     {
+      "id": "introText",
+      "quote": "A Direct Subsidized Loan is the better choice of the two whenever you qualify for one.",
+      "replacement": "A Direct Subsidized Loan is the better choice of the two whenever you qualify for one. At The Modern Wallet, we compare subsidized vs unsubsidized student loans by tracking who pays the interest at each stage, then running the federal borrowing limits as plain arithmetic so you can see how much of each loan is available.",
+      "type": "6: move tee-up after answer",
+      "why": "Place 'At The Modern Wallet, we' sentence right after the answer"
+     },
+     {
+      "id": "introText",
+      "quote": "At The Modern Wallet, we compare subsidized vs unsubsidized student loans by tracking who pays the interest at each stage, then running the federal borrowing limits as plain arithmetic so you can see how much of each loan is available.",
+      "replacement": "",
+      "type": "6: move tee-up after answer",
+      "why": "Removed from end; now follows the answer sentence"
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[7].content",
+      "quote": "Our guide on whether to [refinance student loans](/guides/should-you-refinance-student-loans/) is for later, once you are repaying.",
+      "finding": "7: leading spaces",
+      "why": "Whitespace not visible in flattened units; cannot quote exactly",
+      "replacement": null,
+      "reason": "not fixable in place"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      9
+     ],
+     "applied": [
+      {
+       "id": "comparisonTable.rows[6].b",
+       "quote": "Does not apply; the 150% rule limits subsidized loans only",
+       "replacement": "Not published",
+       "type": "inference",
+       "why": "SOURCE describes the 150% rule for subsidized loans only, says nothing about unsubsidized"
+      },
+      {
+       "id": "comparisonTable.rows[8].a",
+       "quote": "See StudentAid.gov for how to apply; financial need required",
+       "replacement": "Not published",
+       "type": "unlinked-directive",
+       "why": "Sends reader to StudentAid.gov without a link"
+      },
+      {
+       "id": "comparisonTable.rows[8].b",
+       "quote": "See StudentAid.gov for how to apply; no financial need required",
+       "replacement": "Not published",
+       "type": "unlinked-directive",
+       "why": "Sends reader to StudentAid.gov without a link"
+      },
+      {
+       "id": "sections[2].content",
+       "quote": "StudentAid.gov explains how to apply for both loans.",
+       "replacement": "",
+       "type": "unsupported",
+       "why": "SOURCE does not state what StudentAid.gov explains about applying; unlinked"
+      },
+      {
+       "id": "sections[6].content",
+       "quote": "The subsidy rule does not depend on the rate.",
+       "replacement": "",
+       "type": "inference",
+       "why": "SOURCE does not state this relationship"
+      },
+      {
+       "id": "sections[6].content",
+       "quote": "Check StudentAid.gov for the current award-year rate before you accept either loan.",
+       "replacement": "",
+       "type": "unlinked-directive",
+       "why": "Sends reader to StudentAid.gov without a link"
+      },
+      {
+       "id": "faqs[2].answer",
+       "quote": "Check StudentAid.gov for the current rate before you borrow.",
+       "replacement": "",
+       "type": "unlinked-directive",
+       "why": "Sends reader to StudentAid.gov without a link"
+      },
+      {
+       "id": "faqs[3].answer",
+       "quote": "Check StudentAid.gov for repayment terms after graduation.",
+       "replacement": "",
+       "type": "unlinked-directive",
+       "why": "Sends reader to StudentAid.gov without a link"
+      },
+      {
+       "id": "faqs[4].answer",
+       "quote": "Check StudentAid.gov for how to apply for both loans.",
+       "replacement": "",
+       "type": "unlinked-directive",
+       "why": "Sends reader to StudentAid.gov without a link"
+      }
+     ],
+     "deleted_final": 9,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 2061,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 234.9,
+ "response_id": "msg_011CgCKKbjndB5ZNWq7r6mMk",
+ "generated_at": "2026-10-19T21:40:34+0000"
+}

@@ -1,0 +1,255 @@
+{
+ "slug": "buy-a-house-with-no-money-down",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 2005,
+ "floor": 1200,
+ "input_tokens": 27177,
+ "output_tokens": 15433,
+ "thinking_tokens": null,
+ "cached_tokens": 25210,
+ "est_cost_usd": 0.3216,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1999,
+  "numbers_not_in_facts": [
+   "10500",
+   "1500",
+   "300000",
+   "309900",
+   "9000",
+   "9900"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    3
+   ],
+   "applied": [
+    {
+     "id": "sections[2].body",
+     "quote": "It is the zero down route for buyers who are not VA-eligible.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not limit USDA to non-VA buyers or frame it so."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "If the address or your income misses one of the three tests, our [USDA loan vs. FHA loan comparison](/compare/usda-loan-vs-fha-loan/) shows the closest low-down alternative.",
+     "replacement": "If the address or your income misses one of the three tests, our [USDA loan vs. FHA loan comparison](/compare/usda-loan-vs-fha-loan/) sets the two options side by side.",
+     "type": "inference",
+     "why": "SOURCE never ranks FHA as the closest alternative; conventional allows 3%."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Reserves (savings left in your account after closing) and lender fees also sit outside the down payment.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Fact list states only that closing costs are separate; no reserves definition."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Our [first-time home buyer guide](/guides/first-time-home-buyer-guide/) walks through the full set of costs from offer to closing.",
+     "replacement": "See our [first-time home buyer guide](/guides/first-time-home-buyer-guide/) for more.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the guide's contents."
+    },
+    {
+     "id": "sections[8].body",
+     "quote": "A zero down loan is a bigger loan, and a bigger loan means a larger monthly payment for the life of the mortgage.",
+     "replacement": "A zero down loan is a bigger loan, and a bigger loan means a larger monthly payment.",
+     "type": "unsupported",
+     "why": "\"For the life of the mortgage\" is not stated in SOURCE."
+    },
+    {
+     "id": "sections[8].body",
+     "quote": "VA zero down terms often hold only when the sales price is not higher than the appraised value, so a high offer can force you to find cash at the last minute.",
+     "replacement": "VA zero down terms often hold only when the sales price is not higher than the appraised value.",
+     "type": "inference",
+     "why": "SOURCE does not state that cash is needed at the last minute."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "A VA loan is the strongest route if you are eligible, since it often requires no down payment and carries no PMI.",
+     "replacement": "A VA loan is a zero down route if you are eligible, since it often requires no down payment and carries no PMI.",
+     "type": "unsupported",
+     "why": "SOURCE does not rank VA as the strongest route."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Instead, most borrowers pay a one-time funding fee of 0.5% to 3.3% of the loan amount, and veterans with a service-connected disability rating and certain surviving spouses are exempt.",
+     "replacement": "Instead, borrowers pay a one-time funding fee of 0.5% to 3.3% of the loan amount, and veterans with a service-connected disability rating and certain surviving spouses are exempt.",
+     "type": "unsupported",
+     "why": "SOURCE does not say \"most borrowers\" pay the fee."
+    },
+    {
+     "id": "introText",
+     "quote": "At The Modern Wallet, we build free mortgage calculators so you can see what a zero down payment does to your loan size and monthly payment before you call a lender.",
+     "replacement": "At The Modern Wallet, we build free calculators so you can see what a zero down payment does to your loan size and monthly payment before you call a lender.",
+     "type": "unsupported",
+     "why": "Self-description licenses free calculators, not this specific purpose claim beyond that; acceptable mostly"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Closing costs are separate from the down payment and are due when the loan closes.",
+     "replacement": "Closing costs are separate from the down payment.",
+     "type": "unsupported",
+     "why": "SOURCE only says closing costs are separate; timing not stated"
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "A score that one lender turns down can pass at another.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE doesn't state outcomes across lenders"
+    }
+   ],
+   "deleted_final": 3,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2073
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-19T21:55:07+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-19-competitor/audit/buy-a-house-with-no-money-down.findings.txt",
+    "applied": [
+     {
+      "id": "sections[6].body",
+      "quote": "The one federal floor on our list belongs to FHA: 3.5% down with a score of at least 580, and lenders may set stricter overlays above it.",
+      "replacement": "FHA's rule is a 580 credit score with 3.5% down, and lenders may set stricter overlays above it. VA and USDA lenders set their own minimums.",
+      "type": "1. Prompt leak 'our list'",
+      "why": "'Our list' exposes internal source wording; restate the FHA rule directly."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "The one federal floor on our list is FHA's 580 score, and that rule still requires 3.5% down.",
+      "replacement": "FHA's rule is a 580 credit score with 3.5% down.",
+      "type": "1. Prompt leak 'our list'",
+      "why": "'Our list' exposes internal source wording."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Check the current guarantee fee and premium rates on the [USDA single family housing page](https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-direct-home-loans) before you compare a USDA quote with other loans.",
+      "replacement": "Current USDA guarantee fee and premium rates are not given on this page, so ask lenders or USDA for them before you compare a USDA quote with other loans. Program details are on the [USDA single family housing page](https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-direct-home-loans).",
+      "type": "2. USDA link implies fee rates",
+      "why": "The linked direct-loans page does not list guarantee fee rates."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "If a home you like turns out to sit in a USDA eligible area, a USDA loan moves to the top of the list.",
+      "replacement": "If you are not VA-eligible and a home you like turns out to sit in a USDA eligible area, a USDA loan moves to the top of the list.",
+      "type": "3. Contradiction with decision rule",
+      "why": "Restrict to buyers not VA-eligible, matching the rule above."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "The loan with the lower total on both is the cheaper loan for you.",
+      "replacement": "If one quote has lower cash due but a higher monthly payment, decide which matters more to you.",
+      "type": "4. Unsupported cheaper-loan claim",
+      "why": "Replace with the cash-versus-monthly tradeoff instead of an unsupported verdict."
+     },
+     {
+      "id": "sections[8].body",
+      "quote": "The first mistake is treating zero down as free.",
+      "replacement": "Avoid these mistakes: - Treating zero down as free.",
+      "type": "5. Convert mistakes to list",
+      "why": "Turn mistake paragraphs into list items."
+     },
+     {
+      "id": "sections[8].body",
+      "quote": "The second mistake is financing every fee without doing the math.",
+      "replacement": "- Financing every fee without doing the math.",
+      "type": "5. Convert mistakes to list",
+      "why": "Turn mistake paragraphs into list items."
+     },
+     {
+      "id": "sections[8].body",
+      "quote": "The third mistake is offering more than a home is likely to appraise for on a VA loan.",
+      "replacement": "- Offering more than a home is likely to appraise for on a VA loan.",
+      "type": "5. Convert mistakes to list",
+      "why": "Turn mistake paragraphs into list items."
+     },
+     {
+      "id": "sections[8].body",
+      "quote": "The fourth mistake is forgetting closing costs, which are separate from the down payment.",
+      "replacement": "- Forgetting closing costs, which are separate from the down payment.",
+      "type": "5. Convert mistakes to list",
+      "why": "Turn mistake paragraphs into list items."
+     },
+     {
+      "id": "introText",
+      "quote": "You can buy a house with no money down through a Department of Veterans Affairs (VA) loan or a U.S. Department of Agriculture (USDA) loan.",
+      "replacement": "You can buy a house with no money down through a [Department of Veterans Affairs (VA)](https://www.va.gov/housing-assistance/home-loans/loan-types/purchase-loan/) loan or a [U.S. Department of Agriculture (USDA)](https://www.rd.usda.gov/programs-services/single-family-housing-programs/single-family-housing-direct-home-loans) loan. At The Modern Wallet, we build free calculators so you can see what a zero down payment does to your loan size and monthly payment before you call a lender.",
+      "type": "6/7. Link agencies in intro; move tee-up",
+      "why": "Add the required agency links and place the tee-up right after the answer sentence."
+     },
+     {
+      "id": "introText",
+      "quote": "At The Modern Wallet, we build free calculators so you can see what a zero down payment does to your loan size and monthly payment before you call a lender.",
+      "replacement": "",
+      "type": "7. Move tee-up",
+      "why": "The sentence was moved to follow the answer sentence; remove the duplicate here."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Ask each lender for an itemized list of closing costs and any reserve requirement in dollars, then add them up before you call a loan zero down.",
+      "replacement": "Ask each lender for an itemized list of closing costs and any reserve requirement in dollars, then add them up before you call a loan zero down.",
+      "type": "8. Leading space",
+      "why": "Remove the stray leading space before the sentence."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[0].body",
+      "quote": "Two loan programs let you buy a home with no down payment: VA purchase loans and USDA home loans.",
+      "finding": "6. Cite CFPB source in body",
+      "why": "Cite the CFPB source, which is on the closed URL list.",
+      "replacement": "Two loan programs let you buy a home with no down payment: VA purchase loans and USDA home loans (see the [CFPB overview of special loan programs](https://www.consumerfinance.gov/owning-a-home/special-loan-programs/)).",
+      "reason": "replacement adds ['CFPB'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "deleted_final": 0,
+     "unapplied": [],
+     "remaining": [],
+     "thinking": "medium",
+     "final_thinking": "low",
+     "extra_pass": false
+    },
+    "words": 2005,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 190.1,
+ "response_id": "msg_011CgCJiaBHma4AKbCUuqzV3",
+ "generated_at": "2026-10-19T21:31:55+0000"
+}
