@@ -31,6 +31,284 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── mindmap-pass 2026-10-19 (Musk SpaceX share brief): elon-musk-spacex-share-for-kids ──
+  {
+    "updated": "2026-10-19",
+    "slug": "elon-musk-spacex-share-for-kids",
+    "title": "Elon Musk's SpaceX Share for Kids Can't Be Claimed Yet",
+    "metaDescription": "Learn what Elon Musk said about giving a SpaceX share to every kid in America, how Trump Accounts work, what shares are worth, and how to avoid scams.",
+    "h1": "Elon Musk's SpaceX Share for Kids Can't Be Claimed Yet",
+    "cardBlurb": "Elon Musk posted plans to give a SpaceX share to every American child, but no claim form exists yet.",
+    "introText": "You cannot claim an Elon Musk [SpaceX](https://www.spacex.com/) share for your child yet because neither Musk nor SpaceX has opened a claim form, sign-up website, or distribution process. Every guide we write at The Modern Wallet starts from the published rules, and the only published rules here are [Treasury's](https://home.treasury.gov/news/press-releases/sb0642) Trump Account regulations. The announcement remains an informal social media statement without published legal terms, tax structures, or transfer guidelines.\n\nOn Monday, October 19, 2026, Musk announced on [X](https://x.com/elonmusk) that he plans to give one of his SpaceX shares to every child in America next year. Because roughly 72 million minor children live in the United States, transferring one share to each child would cost roughly $10.5 billion to $11 billion depending on the share price used.\n\nWhile you wait for official terms, the useful step today is to claim or open your child's Trump Account. Knowing the Trump Account rules also helps you spot fake claim offers.",
+    "sections": [
+      {
+        "heading": "Can You Claim Musk's SpaceX Share Yet?",
+        "body": "No parent or child can claim the promised SpaceX share today. Under the Trump Account rules published September 30, 2026 (T.D. 10056), a person can give stock to children only through a charity. The charity's gift is split across a whole group, and a donor cannot pick an individual child. Musk posted the statement on his personal social media account, but neither SpaceX nor any government agency has released an application form, registry, or enrollment portal.\n\nInstead of searching for claim forms that do not exist, parents should take three practical steps right now:\n\n1. Claim your child's Trump Account in the \"Trump Accounts: Official App\" or at [TrumpAccounts.gov](https://trumpaccounts.gov). Treasury completed automatic enrollment of eligible children under 18 with a valid Social Security number on October 1, 2026 ([SB-0642](https://home.treasury.gov/news/press-releases/sb0642)). Our guide on [how to claim a Trump Account](/guides/how-to-claim-a-trump-account/) walks through the claim.\n2. Keep your contact information current in the Trump Accounts: Official App.\n3. Disregard any message, email, or third-party website asking for payment or personal data to secure free SpaceX stock.\n\nOur advice would change if Musk, SpaceX, or Treasury publishes official terms or opens a sign-up. This wait-and-claim plan is not for you if you want your child to own SpaceX stock now; our guide on [how to buy SpaceX stock](/guides/how-to-buy-spacex-stock/) covers buying it in a custodial account."
+      },
+      {
+        "heading": "What Musk Said and What He Left Out",
+        "body": "Musk posted his pledge on [X](https://x.com/elonmusk) on Monday, October 19, 2026, writing: \"Next year, I will give one of my SpaceX shares to every kid in America.\" He added: \"This will be the first of many.\" [CNN](https://www.cnn.com/2026/10/19/business/elon-musk-children-spacex-shares-x-post-intl) and [Axios](https://www.axios.com/2026/10/19/elon-musk-spacex-shares-kids) reported the post. The day before, Musk wrote that he recommended giving shares directly to the public, and he framed the gift as a way to encourage young people's interest in space and investing ([IBTimes](https://www.ibtimes.co.uk/elon-musk-reportedly-plans-give-105-billion-spacex-shares-every-single-us-child-1826413)).\n\nThe pledge also followed an announcement on October 18 from artificial intelligence company Anthropic, which stated its intent to allocate 5 percent of its equity to a new Public Benefit Fund subject to stockholder approval. Per [IBTimes](https://www.ibtimes.co.uk/elon-musk-reportedly-plans-give-105-billion-spacex-shares-every-single-us-child-1826413), Census Bureau estimates as of July 1, 2025, indicate that approximately 72 million people under age 18 reside in the United States. One share per child works out to roughly $10.5 billion to $11 billion depending on the share price used.\n\n| Item Category | Confirmed Information | Unannounced Details |\n| --- | --- | --- |\n| Core Pledge | Musk posted on X that he will give one SpaceX share to every kid in America next year. | Delivery timing within next year has not been announced. |\n| Beneficiary Group | The statement specifies \"every kid in America.\" | No official age limit, birth-year range, or citizenship requirement was provided. |\n| Transfer Vehicle | Musk did not state which savings or brokerage structure he would use. | Musk did not say whether Trump Accounts or another vehicle would be used. |\n| Total Scale | Census data counts about 72 million minors, totaling roughly $10.5 billion to $11 billion. | The exact value depends on the share price used. |\n| Tax and Fees | No tax mechanics or filing requirements were specified in the post. | How the shares would be held or taxed has not been announced. |\n\nMusk did not answer subsequent media questions regarding eligibility thresholds, tax consequences, or operational logistics. Some headlines assumed the shares would go into Trump Accounts, but Musk's post does not mention them."
+      },
+      {
+        "heading": "How a SpaceX Share Could Reach a Trump Account",
+        "body": "If Musk routes the gift through Trump Accounts, it must follow T.D. 10056, the temporary regulations published in the [Federal Register](https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts) on September 30, 2026. Those rules set who can give stock to Trump Accounts and how.\n\nUnder T.D. 10056, general contributions can only originate from government entities or section 501(c)(3) charities, including donor-advised funds. An individual person or private corporation cannot transfer corporate stock directly into a child's account. To reach every child, Musk or SpaceX would first give the shares to an eligible charity. That charity would then make a general contribution split equally across a whole qualified class, such as all beneficiaries under 18. Private donors cannot pick individual recipients, and families cannot decline a general contribution.\n\nThe regulations also dictate how individual stock holdings operate inside these accounts. Donated stock must be issued by a domestic company, trade on a registered national exchange, and carry zero transfer restrictions. The trustee may hold donated shares for up to five years before selling them into the account's index fund. Parents cannot buy SPCX or any single stock inside a Trump Account, as explained in our guide on [what Trump Accounts are invested in](/guides/what-are-trump-accounts-invested-in/).\n\nBecause the trustee may sell donated shares into the index fund, your child may never hold SPCX in a Trump Account long term, even if a SpaceX share arrives there. If Musk gives the shares outside Trump Accounts, a child would usually hold them in a custodial (UTMA/UGMA) account opened by an adult. Our guide on [how to open a custodial brokerage account for kids](/guides/how-to-open-a-custodial-brokerage-account-for-kids/) covers the setup."
+      },
+      {
+        "heading": "What One SpaceX Share Is Worth",
+        "body": "SpaceX trades publicly on the Nasdaq stock exchange under the ticker symbol SPCX. SpaceX began trading on June 12, 2026, after its IPO priced 555,555,555 Class A shares at $135 each. Historical price figures and live market data can be reviewed on [Stock Analysis](https://stockanalysis.com/stocks/spcx/).\n\nOn Friday, October 16, 2026, the final trading day before Musk's social media post, SpaceX shares closed at $146.03 per share. Since its public listing, the equity has experienced a 52-week trading range between a low of $104.83 and a high of $225.64 per share. The price changes every trading day, so check a live quote on [Stock Analysis](https://stockanalysis.com/stocks/spcx/) for today's value.\n\nMultiplying the October 16 closing price of $146.03 by the Census estimate of 72 million children yields a total market value of about $10.5 billion. We do not predict future equity movements, and historical market ranges offer no guarantee of what SpaceX stock will be worth if shares are distributed next year."
+      },
+      {
+        "heading": "The Gwynne Shotwell Precedent",
+        "body": "Musk's post is not the first pledge of SpaceX stock to children's Trump Accounts. In July 2026, SpaceX President Gwynne Shotwell and her husband announced a pledge of one SpaceX share each to the accounts of approximately 2 million American children. At the time of that announcement, shares were valued around $162 each, putting the overall pledge value at more than $320 million, as detailed by [The Next Web](https://thenextweb.com/news/shotwell-spacex-stock-trump-accounts).\n\nNews coverage regarding the Shotwell initiative reported varying eligibility standards across different publications. [The Next Web](https://thenextweb.com/news/shotwell-spacex-stock-trump-accounts) reported extra emphasis on lower-income families near the couple's central Texas home, and some reports describe it as aimed at children ages 11 to 17 in lower-income areas.\n\nDelivery timing for the Shotwell shares was not stated."
+      },
+      {
+        "heading": "What You Get by Claiming Your Child's Trump Account",
+        "body": "Claiming your child's Trump Account matters even without a Musk claim process, because some money reaches only claimed accounts. Treasury press release [SB-0642](https://home.treasury.gov/news/press-releases/sb0642) says automatic enrollment of eligible children under 18 with a valid Social Security number was completed October 1, 2026. Unclaimed accounts currently sit in a Treasury master trust.\n\nUnclaimed accounts can receive broad general contributions, but family and employer contributions remain blocked until a parent or guardian claims the account. To learn which minors qualify for automatic enrollment, see our guide on [Trump Account eligibility](/guides/trump-account-eligibility/). U.S.-citizen children born January 1, 2025 through December 31, 2028 can get a one-time $1,000 federal seed, but only if the account is claimed.\n\nClaimed accounts also allow parents, relatives, and family friends to contribute up to $5,000 annually per child, with participating employers contributing up to $2,500 within that total limit. Money is locked until January 1 of the calendar year the child turns 18. You can model how regular deposits accumulate using our free [Trump Account calculator](/trump-account/).\n\nOther private gifts already go through Trump Accounts. Michael and Susan Dell pledged $6.25 billion for $250 deposits to 25 million children born 2016 through 2024 in ZIP codes with median family income about $118,000 or less. No application is needed. Our [Dell Trump Account $250](/guides/dell-trump-account-250/) guide explains who qualifies. For a broader look at how the entire system operates, read our guide with [Trump Accounts explained](/guides/trump-accounts/)."
+      },
+      {
+        "heading": "Watch for Free SpaceX Share Scams",
+        "body": "Because no official claim process exists, every message instructing you to claim a share right now is fraudulent.\n\nOfficial Trump Account email comes only from no-reply@TrumpAccounts.Treasury.gov. You should never pay an administrative processing fee, send cryptocurrency, or provide your child's Social Security number to an unverified third-party website.\n\nIf you have questions about the validity of a notice, you can call the official Treasury support line at 1-866-USA-4547 or access the official web portal at [TrumpAccounts.gov](https://trumpaccounts.gov). For additional methods to identify fraudulent portals and protect your family's records, review our detailed guide on [Trump Account scams](/guides/trump-account-scams/).\n\nThis guide is general information, not investment or tax advice."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/trump-account/",
+        "label": "Trump Account calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is Elon Musk really giving every kid a SpaceX share?",
+        "answer": "Elon Musk posted on X on October 19, 2026, stating that he plans to give one of his SpaceX shares to every child in America next year. However, this statement was an informal social media post. Neither Musk nor SpaceX has published any rules, claim form, or timing beyond the post."
+      },
+      {
+        "question": "Do I need to sign up to get the free SpaceX share?",
+        "answer": "No sign-up form, registration portal, or official application exists today. Anyone claiming to offer an early registration form or asking for a processing fee is running a scam. Until Musk or SpaceX publishes terms, treat any sign-up page as fake."
+      },
+      {
+        "question": "Will the SpaceX share go into my child's Trump Account?",
+        "answer": "Musk did not mention Trump Accounts in his post, so it is unconfirmed whether that system will be used. Under Treasury temporary regulations T.D. 10056, private individuals cannot donate stock directly into Trump Accounts. A donor must route equity through an eligible 501(c)(3) charity as a general contribution across an entire qualified group."
+      },
+      {
+        "question": "How much is one SpaceX share worth?",
+        "answer": "SpaceX trades on Nasdaq under the ticker SPCX and closed at $146.03 on October 16, 2026, the last trading day before Musk's post. The equity has traded between $104.83 and $225.64 over its 52-week range following its June 2026 initial public offering at $135. The price changes every trading day, so check a live quote on [Stock Analysis](https://stockanalysis.com/stocks/spcx/)."
+      },
+      {
+        "question": "Is the \"claim your free SpaceX share\" message I got a scam?",
+        "answer": "Yes, any communication directing you to claim a SpaceX share today is a scam. No distribution network, claim portal, or application exists. Official Trump Account email comes only from no-reply@TrumpAccounts.Treasury.gov. Never pay a fee, send cryptocurrency, or share your child's Social Security number to claim a SpaceX share."
+      }
+    ],
+    "sources": [
+      {
+        "label": "CNN, Elon Musk says he will give a SpaceX share to every kid in America (Oct 19, 2026)",
+        "url": "https://www.cnn.com/2026/10/19/business/elon-musk-children-spacex-shares-x-post-intl"
+      },
+      {
+        "label": "IBTimes, Musk plans to give SpaceX shares to every US child (Oct 19, 2026)",
+        "url": "https://www.ibtimes.co.uk/elon-musk-reportedly-plans-give-105-billion-spacex-shares-every-single-us-child-1826413"
+      },
+      {
+        "label": "Federal Register, Trump Accounts temporary regulations (T.D. 10056), Sept 30, 2026",
+        "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts"
+      },
+      {
+        "label": "U.S. Treasury, press release SB-0642",
+        "url": "https://home.treasury.gov/news/press-releases/sb0642"
+      },
+      {
+        "label": "The Next Web, Shotwell pledges SpaceX stock to Trump Accounts (July 6, 2026)",
+        "url": "https://thenextweb.com/news/shotwell-spacex-stock-trump-accounts"
+      },
+      {
+        "label": "Stock Analysis, SpaceX (SPCX) quote",
+        "url": "https://stockanalysis.com/stocks/spcx/"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-10-19 (Musk SpaceX share brief): how-to-buy-spacex-stock ──
+  {
+    "updated": "2026-10-19",
+    "slug": "how-to-buy-spacex-stock",
+    "title": "How to Buy SpaceX Stock (SPCX): 4-Step Guide",
+    "metaDescription": "Learn how to buy SpaceX stock on Nasdaq under ticker SPCX. Follow four steps to place whole or fractional share orders through a standard brokerage account.",
+    "h1": "How to Buy SpaceX Stock (SPCX)",
+    "cardBlurb": "SpaceX trades on Nasdaq under the ticker SPCX, and you can buy shares through any standard brokerage account.",
+    "introText": "You can buy [SpaceX](https://www.spacex.com/) stock through an ordinary U.S. brokerage account that offers [Nasdaq](https://www.nasdaq.com/)-listed stocks, because SpaceX trades publicly on Nasdaq under the ticker SPCX. Every guide we write at The Modern Wallet starts from primary definitions, so the order types below follow [Investor.gov's](https://www.investor.gov/introduction-investing/investing-basics/glossary/limit-order) glossary. Buying SpaceX no longer requires private-share or pre-IPO secondary-market routes. The shares have traded on a public exchange since June 12, 2026.\n\nTo understand the transition from a private company to a publicly traded corporation, read our guide on [what an IPO is](/guides/what-is-an-ipo/).",
+    "sections": [
+      {
+        "heading": "How to Buy SpaceX (SPCX) Stock in 4 Steps",
+        "body": "To buy SpaceX stock today, you follow the standard four-step process used for any publicly traded company on an American stock exchange.\n\n1. Open a brokerage account with a firm that offers trading in Nasdaq-listed securities.\n2. Fund your account.\n3. Search for SpaceX using its official ticker symbol, SPCX, inside the trading platform.\n4. Place a limit order, which buys only at your price or lower, for whole or fractional shares.\n\nWhen you place the trade, you must choose how your broker executes the order. According to the [Investor.gov market order definition](https://www.investor.gov/introduction-investing/investing-basics/glossary/market-order), a market order buys immediately at the best available current price, but it does not guarantee the exact execution price you receive.\n\nIn contrast, the [Investor.gov limit order definition](https://www.investor.gov/introduction-investing/investing-basics/glossary/limit-order) explains that a buy limit order executes only at your chosen limit price or lower. A limit order is not the right choice if filling the order today matters more than price, because a buy limit order may never execute. If your broker does not offer fractional shares, the minimum buy is one whole share, which closed at $146.03 on October 16, 2026.\n\n| Order Type | Execution Mechanism | Price Guarantee | Execution Guarantee |\n| --- | --- | --- | --- |\n| Market Order | Buys immediately at the best current available price | No guaranteed price | Placed to buy immediately |\n| Buy Limit Order | Buys only at your specified limit price or lower | Executes at limit price or lower | Not guaranteed to execute |\n\nIf you want to buy a portion of a single share rather than a full share, look into fractional share trading. As defined by the [Investor.gov fractional share guide](https://www.investor.gov/introduction-investing/investing-basics/glossary/fractional-share-investing), fractional share investing lets you buy a portion of a share. Not every brokerage firm offers fractional trading, and the specific terms differ by broker."
+      },
+      {
+        "heading": "How Much One SpaceX Share Costs",
+        "body": "SpaceX closed at $146.03 per share on Friday, October 16, 2026. SPCX began trading on June 12, 2026, after the IPO priced 555,555,555 Class A shares at $135 each. The stock has experienced wide price movement since its market debut, recording a 52-week trading range between $104.83 and $225.64.\n\nThe price changes every trading day, so check a live quote on [Stock Analysis for SPCX](https://stockanalysis.com/stocks/spcx/) before you order.\n\nInvestors who do not wish to spend the full price of a single share can use fractional shares where supported. You can model how regular dollar contributions grow over time using our [investment calculator](/investing/)."
+      },
+      {
+        "heading": "Why Pre-IPO Routes Are Over",
+        "body": "Private-market secondary platforms and pre-IPO routes are no longer required to buy SpaceX stock.\n\nOnce SpaceX listed its Class A shares on Nasdaq under the ticker SPCX, those secondary private routes ended for public buyers. Listed SPCX shares are bought through ordinary U.S. brokerage accounts that offer Nasdaq-listed stocks.\n\nIf you encounter websites or brokers claiming to sell private placement shares or pre-IPO allocations for SpaceX, treat those claims as outdated."
+      },
+      {
+        "heading": "Custodial Accounts and Rules for Minors",
+        "body": "A minor generally holds stock through a custodial (UTMA/UGMA) account opened by an adult, so that is how you buy SpaceX stock for a child. To review the paperwork and setup process, read our step-by-step walkthrough on [how to open a custodial brokerage account for kids](/guides/how-to-open-a-custodial-brokerage-account-for-kids/).\n\nUnder federal rules, families cannot buy individual stocks like SPCX inside a Trump Account. Families can invest a Trump Account only in one low-cost fund tracking the S&P 500 or a similar broad U.S. stock index. To learn more about how account assets are structured, read our guide on [what Trump Accounts are invested in](/guides/what-are-trump-accounts-invested-in/).\n\nIndividual stock can only enter a Trump Account through a general contribution made by a qualifying entity. Under [T.D. 10056](https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts), general contributions of stock must come from government entities or 501(c)(3) charities, including donor-advised funds. An individual donor cannot give stock directly to an individual child's Trump Account. Instead, the donor must route the gift through an eligible charity. The gift is then split equally across a whole qualified class, such as all beneficiaries under 18 or children in an area with at least 5,000 eligible kids. Families cannot select the stock or refuse the contribution, and the trustee may hold the donated shares for up to five years before liquidating them into the account's index fund.\n\nTwo pledges involve giving SpaceX shares to children. On October 19, 2026, Elon Musk posted on [X](https://x.com/elonmusk) that next year he will give one of his SpaceX shares to every kid in America, adding that it will be the first of many. Census Bureau estimates as of July 1, 2025, show roughly 72 million people under 18 in the United States. At SpaceX's October 16, 2026 closing price of $146.03, one share per child amounts to roughly $10.5 billion to $11 billion depending on the share price used. Musk did not publish an age cutoff, transfer mechanism, or tax structure, and no official application exists. Our guide on [Elon Musk's SpaceX share for kids](/guides/elon-musk-spacex-share-for-kids/) covers what is confirmed.\n\nIn July 2026, SpaceX President Gwynne Shotwell and her husband pledged one SpaceX share each to the Trump Accounts of about 2 million children. That was worth over $320 million at about $162 a share. Reports vary on the criteria. Some describe children ages 11 to 17 in lower-income areas, and delivery timing was not stated."
+      },
+      {
+        "heading": "Space ETFs with Indirect SpaceX Exposure",
+        "body": "Investors who prefer not to buy individual shares of SpaceX directly can consider diversified funds. Several exchange-traded funds focused on space exploration and aerospace technology hold shares of SPCX within their broader portfolios. [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1) explains how ETFs work.\n\nOur comparison of [space ETFs with SpaceX exposure](/guides/space-etfs-with-spacex-exposure/) shows which funds list SPCX and at what weight."
+      },
+      {
+        "heading": "Risk Factors and Concentration Tradeoffs",
+        "body": "A single stock concentrates your risk in one company.\n\nSPCX has a 52-week range of $104.83 to $225.64, against an IPO price of $135, and it closed at $146.03 on October 16, 2026. At that close, SPCX sat about 35% below its 52-week high and about 39% above its 52-week low, and the high was more than double the low. Holding a large portion of your savings in a single volatile asset increases your portfolio's downside exposure.\n\nTo evaluate the mathematical impact of single-stock exposure, explore our analysis of [concentrated stock position risk](/guides/concentrated-stock-position-risk/).\n\nNot every broker offers fractional shares, and terms differ ([Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/glossary/fractional-share-investing)), so ask yours before you set a dollar amount. A buy limit order then caps the price you pay.\n\nThis guide is general information, not investment advice, and it does not say whether to buy SPCX."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/investing/",
+        "label": "Investment calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "When can I buy SpaceX stock?",
+        "answer": "You can buy SpaceX stock now through a brokerage account that offers Nasdaq-listed stocks. SpaceX began trading publicly on Nasdaq on June 12, 2026, under the ticker symbol SPCX, so you can place an order through any brokerage account that offers Nasdaq-listed stocks."
+      },
+      {
+        "question": "How much is 1 share of SpaceX stock?",
+        "answer": "One share of SpaceX stock closed at $146.03 on Friday, October 16, 2026. The IPO priced at $135 a share, and trading began June 12, 2026. The 52-week range is $104.83 to $225.64, and the price changes every trading day, so check a live quote on [Stock Analysis](https://stockanalysis.com/stocks/spcx/)."
+      },
+      {
+        "question": "Can regular people buy SpaceX shares?",
+        "answer": "Yes, regular investors can buy SpaceX shares through an ordinary brokerage account. Because SpaceX trades publicly on Nasdaq as SPCX, individual buyers no longer need private-market accounts or pre-IPO secondary-market routes to purchase shares."
+      },
+      {
+        "question": "What is SpaceX's stock ticker?",
+        "answer": "SpaceX trades under the ticker symbol SPCX on the Nasdaq stock exchange. You can enter SPCX directly into your brokerage platform's trade search bar to view current price quotes and submit market or limit orders."
+      },
+      {
+        "question": "Can I buy SpaceX stock for my child?",
+        "answer": "You can buy SpaceX stock for a child by opening a custodial brokerage account under the Uniform Transfers to Minors Act (UTMA) or Uniform Gifts to Minors Act (UGMA). You cannot purchase individual SpaceX stock inside a Trump Account, because families can invest a Trump Account only in one low-cost fund tracking the S&P 500 or a similar broad U.S. index."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Stock Analysis, SpaceX (SPCX) quote",
+        "url": "https://stockanalysis.com/stocks/spcx/"
+      },
+      {
+        "label": "Investor.gov, Market order",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/market-order"
+      },
+      {
+        "label": "Investor.gov, Limit order",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/limit-order"
+      },
+      {
+        "label": "Investor.gov, Fractional share investing",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/fractional-share-investing"
+      },
+      {
+        "label": "Federal Register, Trump Accounts temporary regulations (T.D. 10056), Sept 30, 2026",
+        "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts"
+      },
+      {
+        "label": "CNN, Elon Musk says he will give a SpaceX share to every kid in America (Oct 19, 2026)",
+        "url": "https://www.cnn.com/2026/10/19/business/elon-musk-children-spacex-shares-x-post-intl"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-10-19 (Musk SpaceX share brief): space-etfs-with-spacex-exposure ──
+  {
+    "updated": "2026-10-19",
+    "slug": "space-etfs-with-spacex-exposure",
+    "title": "Which Space ETFs Hold SpaceX? UFO, ARKX, NASA, ROKT",
+    "metaDescription": "Compare space ETF options holding SpaceX stock (SPCX). See weights, fees, and holdings for UFO, ARKX, NASA, and ROKT side by side.",
+    "h1": "Space ETF Options with SpaceX Exposure",
+    "cardBlurb": "Compare which space ETFs hold SpaceX stock, review their portfolio weights, and calculate your effective dollar exposure.",
+    "introText": "UFO, ARKX, and NASA list [SpaceX](https://www.spacex.com/) (SPCX) among their largest holdings, while ROKT does not show it in its top 10. In the guides we publish at The Modern Wallet, we show the math, so this one turns each fund's SPCX weight into dollars per $1,000.\n\nSpaceX began trading on the [Nasdaq](https://www.nasdaq.com/) under the ticker SPCX on June 12, 2026. The initial public offering (IPO) priced 555,555,555 Class A shares at $135 per share. SPCX closed at $146.03 on October 16, 2026, and its 52-week range is $104.83 to $225.64. You can review current share pricing directly through [SPCX on Stock Analysis](https://stockanalysis.com/stocks/spcx/).\n\nIf you want to know how individual stock purchases differ, check our guide on [how to buy SpaceX stock](/guides/how-to-buy-spacex-stock/).",
+    "sections": [
+      {
+        "heading": "Which Space ETFs Hold SpaceX?",
+        "body": "The choice among space ETF options depends on whether you want high SpaceX concentration or broad aerospace exposure. As of mid-October 2026, per stockanalysis.com, SPCX is the largest holding in UFO (16.05%) and ARKX (11.16%), and NASA holds it at 9.06% plus a 17.94% SpaceX SPV line. SPDR S&P Kensho Final Frontiers ETF (ROKT) does not list SpaceX among its ten largest positions.\n\n| Ticker | Fund Name | Issuer | Expense Ratio | SPCX Weight | Largest Other Holdings | Fits If You Want |\n| --- | --- | --- | --- | --- | --- | --- |\n| UFO | Procure Space ETF | ProcureAM | 0.75% | 16.05% | Trimble, Garmin, EchoStar, Sirius XM, Rocket Lab | Largest listed SPCX allocation |\n| ARKX | ARK Space & Defense Innovation ETF | ARK Invest | 0.75% | 11.16% | L3Harris, Deere, Kratos, NVIDIA, Rocket Lab | Active management that also holds defense and technology companies |\n| NASA | Tema Space Innovators ETF | Tema ETFs | 0.75% | 9.06% direct (plus 17.94% SPV) | Rocket Lab, AST SpaceMobile, Viasat, Filtronic | The largest combined SpaceX weight here: 27.00% listed plus SPV |\n| ROKT | SPDR S&P Kensho Final Frontiers ETF | State Street | 0.45% | Not in top 10 | Forum Energy Technologies, Oceaneering, Ducommun, RTX | Lower-cost broader aerospace mix |\n\nProcure Space ETF, trading as [UFO on Stock Analysis](https://stockanalysis.com/etf/ufo/), maintains SPCX as its largest holding at 16.05%. Its other top positions include Trimble at 5.49%, Garmin at 5.37%, EchoStar at 4.84%, Sirius XM at 4.81%, and Rocket Lab at 4.57%. Together, its top ten holdings represent 55.82% of fund assets.\n\nARK Space & Defense Innovation ETF, tracked as [ARKX on Stock Analysis](https://stockanalysis.com/etf/arkx/), holds SPCX as its largest individual position at 11.16%. ARKX is actively managed and also holds defense and technology companies. Its portfolio includes L3Harris at 6.55%, Deere at 5.67%, Kratos at 5.48%, NVIDIA at 5.34%, Rocket Lab at 4.98%, and [Amazon](https://www.amazon.com/) at 4.79%, with the top ten accounting for 57.16% of total assets.\n\nTema Space Innovators ETF, found as [NASA on Stock Analysis](https://stockanalysis.com/etf/nasa/), splits its position into two lines. It holds listed SPCX stock at 9.06% and carries a separate position labeled SpaceX SPV Exposure (Common) at 17.94%. The SPV line is an indirect holding through a special-purpose vehicle. Other top positions include Rocket Lab at 9.46% and AST SpaceMobile at 5.92%, with its top ten assets reaching 67.45%.\n\nSPDR S&P Kensho Final Frontiers ETF, listed as [ROKT on Stock Analysis](https://stockanalysis.com/etf/rokt/), takes a different approach. Its top ten positions comprise 38.10% of the portfolio and do not include SPCX. Instead, its primary holdings include Forum Energy Technologies at 4.50%, Oceaneering at 4.04%, Ducommun at 4.02%, RTX at 3.96%, and Lockheed Martin at 3.82%.\n\nNone of these funds fits a Trump Account, and if you want only SpaceX, each one also puts most of every $1,000 into other companies. A new holdings file can change this table: mid-June 2026 coverage put UFO's SPCX weight near 6%, against 16.05% in mid-October."
+      },
+      {
+        "heading": "Dollar Exposure per Thousand Invested",
+        "body": "An ETF holds a basket of securities where buying one share gives you exposure to every holding in proportion to its published weight. [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1) explains how ETFs work.\n\nIf you invest $1,000 into Procure Space ETF (UFO) at its mid-October 2026 weight of 16.05%, you purchase approximately $160.50 of SpaceX exposure. The remaining $839.50 sits in UFO's other holdings, such as Trimble, Garmin, EchoStar, Sirius XM, and Rocket Lab.\n\nA $1,000 investment in ARK Space & Defense Innovation ETF (ARKX) at an 11.16% allocation gives you roughly $111.60 of SpaceX stock. The remaining $888.40 sits in ARKX's other holdings, such as L3Harris, Deere, Kratos, NVIDIA, and [Alphabet](https://abc.xyz/).\n\nA $1,000 allocation to Tema Space Innovators ETF (NASA) yields about $90.60 in listed SPCX shares based on its 9.06% listed position. When you factor in the 17.94% special-purpose vehicle position, the combined direct and indirect SpaceX allocation equals approximately $270.00. These dollar figures are an illustration at the stated mid-October weights, which move daily. You can test how regular contributions build over time by using our free [investment calculator](/investing/).\n\nFor ROKT, SPCX is not in the listed top 10, and stockanalysis.com does not show whether the fund holds any SPCX below that, so no SpaceX dollar figure can be given."
+      },
+      {
+        "heading": "Concentration vs Broad Aerospace Exposure",
+        "body": "The top-10 share shows how much of each $1,000 sits in just ten holdings: $674.50 in NASA, $571.60 in ARKX, $558.20 in UFO, and $381.00 in ROKT. Investors evaluating heavy individual weightings should review the risks explained in our guide to [concentrated stock position risk](/guides/concentrated-stock-position-risk/).\n\nTema Space Innovators ETF (NASA) carries the heaviest concentration among the group, with 67.45% of its portfolio in its top ten holdings. If you combine its listed SPCX stock and its SPV position, SpaceX represents 27.00% of the entire fund.\n\nUFO has 55.82% of assets in its top ten holdings, including Rocket Lab, Viasat, and Globalstar.\n\nIts top ten holdings, including AeroVironment, AMD, and Amazon, make up 57.16% of assets. ROKT offers the lowest top ten concentration at 38.10%, spreading assets across its broader aerospace mix.\n\nTo understand how exchange-traded baskets compare against traditional pooled products, read our breakdown of [ETF vs mutual fund](/compare/etf-vs-mutual-fund/) structures."
+      },
+      {
+        "heading": "Expense Ratios and Annual Holding Costs",
+        "body": "An expense ratio is a fund's annual fee, stated as a percentage of assets.\n\nUFO, ARKX, and NASA each charge 0.75% a year.\n\nOn a $1,000 balance, an expense ratio of 0.75% costs exactly $7.50 annually. On a $10,000 portfolio, this management fee equals $75.00 each year. If you hold $50,000 across these funds, you pay $375.00 annually in fund overhead.\n\nSPDR S&P Kensho Final Frontiers ETF (ROKT) carries a lower expense ratio of 0.45%. On a $1,000 balance, ROKT costs $4.50 per year. That represents an annual savings of $3.00 per $1,000 invested compared to UFO, ARKX, or NASA.\n\nLower fees do not automatically make ROKT the superior option if your goal is holding SpaceX. Because ROKT does not list SPCX in its top ten holdings, choosing it strictly for its 0.45% fee may not deliver the SpaceX exposure you are targeting. Our [index fund vs ETF](/compare/index-fund-vs-etf/) comparison explains how the two fund types differ."
+      },
+      {
+        "heading": "ETF Tradeoffs vs Direct SPCX Stock",
+        "body": "You can hold SpaceX directly as SPCX shares or through an ETF that also holds other companies.\n\nEvery dollar in SPCX shares is SpaceX exposure, and you pay no fund expense ratio. That money sits in one stock, which concentrates your risk; see [concentrated stock position risk](/guides/concentrated-stock-position-risk/).\n\nBuying a space ETF spreads your capital across a basket of securities in proportion to their weights. In exchange, you pay 0.45% to 0.75% a year, and only part of each $1,000 tracks SpaceX: $90.60 to $160.50 in listed SPCX for NASA, ARKX, and UFO at the stated weights, with no figure shown for ROKT. Our guide on [how to buy SpaceX stock](/guides/how-to-buy-spacex-stock/) covers the direct route.\n\nA buy limit order executes only at your limit price or lower ([Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/glossary/limit-order)), while a market order buys at the best available price with no price guarantee ([Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/glossary/market-order)). Fractional share investing lets you buy part of a share, but not every broker offers it and terms differ ([Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/glossary/fractional-share-investing))."
+      },
+      {
+        "heading": "Can You Hold Space ETFs in Trump Accounts?",
+        "body": "Families cannot invest a Trump Account in space ETFs or SPCX shares. A Trump Account holds only one low-cost fund tracking the S&P 500 or a similar broad U.S. stock index, apart from donated stock a trustee may hold for up to five years.\n\nOn Monday, October 19, 2026, Elon Musk posted on [X](https://x.com/elonmusk) that next year he will give one of his SpaceX shares to every kid in America, calling it the first of many. [CNN](https://www.cnn.com/2026/10/19/business/elon-musk-children-spacex-shares-x-post-intl) reported the post, and Musk framed the gift as a way to encourage interest in space and investing. [IBTimes](https://www.ibtimes.co.uk/elon-musk-reportedly-plans-give-105-billion-spacex-shares-every-single-us-child-1826413) cited a Census Bureau estimate of about 72 million people under 18 in the U.S. That puts the pledge at roughly $10.5 billion to $11 billion depending on the share price used ([Axios](https://www.axios.com/2026/10/19/elon-musk-spacex-shares-kids)).\n\nMusk did not establish a claim form, application website, or age cutoff, nor did he confirm whether Trump Accounts would serve as the distribution vehicle. Read our analysis of [Elon Musk's SpaceX share for kids](/guides/elon-musk-spacex-share-for-kids/) for complete background. In July 2026, SpaceX President Gwynne Shotwell and her husband pledged one SpaceX share each to the Trump Accounts of about 2 million children, as covered by [The Next Web](https://thenextweb.com/news/shotwell-spacex-stock-trump-accounts).\n\nFederal rules published in the [Federal Register on Trump Account regulations](https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts) under T.D. 10056 state that individuals cannot donate stock directly to a specific child's account. A person's or company's stock gift must route through an eligible 501(c)(3) charity and is split equally across a qualified class. The [Treasury press release SB-0642](https://home.treasury.gov/news/press-releases/sb0642) confirmed that automatic enrollment was completed October 1, 2026. Accounts are claimed in the \"Trump Accounts: Official App\" or at [TrumpAccounts.gov](https://trumpaccounts.gov).\n\nTo hold space ETFs or SPCX shares for a child, use a custodial account outside Trump Accounts. Our guide on [how to open a custodial brokerage account for kids](/guides/how-to-open-a-custodial-brokerage-account-for-kids/) covers the setup."
+      },
+      {
+        "heading": "How to Verify Fund Holdings Before Investing",
+        "body": "ETF weights change daily, and the weights other outlets report for these funds have differed by date and source. For instance, mid-June 2026 media reports listed UFO's SpaceX allocation near 6%, whereas mid-October 2026 data shows the position at 16.05%.\n\nBefore buying any of these funds, check the current holdings for [UFO](https://stockanalysis.com/etf/ufo/), [ARKX](https://stockanalysis.com/etf/arkx/), [NASA](https://stockanalysis.com/etf/nasa/), or [ROKT](https://stockanalysis.com/etf/rokt/) for the SPCX weight and whether it is listed stock or an SPV line.\n\nUsing a limit order ensures you never execute a trade at a price higher than your stated maximum.\n\nThis guide is general information, not investment advice."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/investing/",
+        "label": "Investment calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Which is the best space ETF?",
+        "answer": "No single fund is the best option for every investor because each portfolio targets a different strategy. Procure Space ETF (UFO) holds a 16.05% SpaceX weighting alongside holdings like Trimble and Garmin. ARK Space & Defense Innovation ETF (ARKX) fits those wanting active management across defense and tech. Tema Space Innovators ETF (NASA) offers the highest combined SpaceX exposure, while SPDR S&P Kensho Final Frontiers ETF (ROKT) delivers the lowest expense ratio at 0.45%."
+      },
+      {
+        "question": "Is SpaceX in the UFO ETF?",
+        "answer": "Yes, SpaceX (SPCX) is the largest holding in Procure Space ETF (UFO). As of mid-October 2026, it represents 16.05% of the fund's total assets, followed by Trimble (5.49%), Garmin (5.37%), EchoStar (4.84%), and Sirius XM (4.81%)."
+      },
+      {
+        "question": "Does NASA ETF have SpaceX?",
+        "answer": "Yes, Tema Space Innovators ETF (NASA) holds SpaceX in two separate positions. It holds listed SPCX common stock at a 9.06% weighting and holds a SpaceX SPV Exposure position at 17.94%, giving it a combined direct and indirect allocation of 27.00%."
+      },
+      {
+        "question": "What ETF will have SpaceX?",
+        "answer": "As of mid-October 2026, per stockanalysis.com, SPCX is held by Procure Space ETF (UFO), ARK Space & Defense Innovation ETF (ARKX), and Tema Space Innovators ETF (NASA). SPDR S&P Kensho Final Frontiers ETF (ROKT) does not list SPCX in its top ten holdings."
+      },
+      {
+        "question": "Can I put a space ETF in my child's Trump Account?",
+        "answer": "No, families cannot buy space ETFs or SPCX inside a Trump Account. Under federal program regulations, Trump Accounts can only be invested in one low-cost index fund tracking the S&P 500 or a similar broad U.S. stock index. To hold space ETFs for a minor, you must open a standard custodial brokerage account."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Stock Analysis, Procure Space ETF (UFO)",
+        "url": "https://stockanalysis.com/etf/ufo/"
+      },
+      {
+        "label": "Stock Analysis, ARK Space & Defense Innovation ETF (ARKX)",
+        "url": "https://stockanalysis.com/etf/arkx/"
+      },
+      {
+        "label": "Stock Analysis, Tema Space Innovators ETF (NASA)",
+        "url": "https://stockanalysis.com/etf/nasa/"
+      },
+      {
+        "label": "Stock Analysis, SPDR S&P Kensho Final Frontiers ETF (ROKT)",
+        "url": "https://stockanalysis.com/etf/rokt/"
+      },
+      {
+        "label": "Investor.gov, Mutual funds and ETFs",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1"
+      },
+      {
+        "label": "Federal Register, Trump Accounts temporary regulations (T.D. 10056), Sept 30, 2026",
+        "url": "https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts"
+      }
+    ]
+  },
   // ── mindmap-pass 2026-10-16 (competitor-monitor): 401k-loan-rules ──
   {
     "updated": "2026-10-16",
@@ -3283,7 +3561,7 @@ export const GUIDES: Guide[] = [
   // ── mindmap-pass 2026-10-08 ──
   {
     "slug": "how-to-claim-a-trump-account",
-    "updated": "2026-10-08",
+    "updated": "2026-10-19",
     "title": "How to Claim a Trump Account After Auto-Enrollment",
     "metaDescription": "Step-by-step instructions to claim your child's auto-enrolled Trump Account through the official app or website, unblock deposits, and verify the $1,000 seed.",
     "h1": "How to Claim a Trump Account After Auto-Enrollment",
@@ -3316,7 +3594,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "heading": "Private Donations and the Dell $250 Deposit",
-        "body": "Michael and Susan Dell pledged $6.25 billion to put $250 into the accounts of 25 million children born 2016 through 2024, in ZIP codes with a median family income of about $118,000 or less. The cutoff was $150,000 in the December 2025 announcement and fell because auto-enrollment added far more eligible children. There is no separate application; you can look up your ZIP's median family income in [Census Reporter table B19113](https://censusreporter.org/tables/B19113/), and our [Dell Trump Account $250](/guides/dell-trump-account-250/) guide covers the rest."
+        "body": "Michael and Susan Dell pledged $6.25 billion to put $250 into the accounts of 25 million children born 2016 through 2024, in ZIP codes with a median family income of about $118,000 or less. The cutoff was $150,000 in the December 2025 announcement and fell because auto-enrollment added far more eligible children. There is no separate application; you can look up your ZIP's median family income in [Census Reporter table B19113](https://censusreporter.org/tables/B19113/), and our [Dell Trump Account $250](/guides/dell-trump-account-250/) guide covers the rest. Elon Musk's October 19, 2026 pledge of one SpaceX share per child has no claim process yet; our guide on [whether you can claim Musk's SpaceX share for your kid](/guides/elon-musk-spacex-share-for-kids/) tracks what has been announced."
       },
       {
         "heading": "Account Structure After Claiming",
@@ -3477,7 +3755,7 @@ export const GUIDES: Guide[] = [
   },
   {
     "slug": "dell-trump-account-250",
-    "updated": "2026-10-08",
+    "updated": "2026-10-19",
     "title": "Dell Trump Account: Who Gets the $250 Deposit?",
     "metaDescription": "Check if your child qualifies for the $250 Dell Trump Account deposit: birth years 2016 to 2024, ZIP code median family income limits, and funding details.",
     "h1": "Dell Trump Account: Who Gets the $250 Deposit?",
@@ -3498,7 +3776,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "heading": "Do You Need to Apply or Claim the Deposit?",
-        "body": "Parents do not need to file a separate grant application to secure the $250 Dell deposit. If your child already had an account opened manually through [Form 4547](https://www.irs.gov/forms-pubs/about-form-4547) or automatically through federal records, the money transfers directly into that account.\n\nHowever, you must claim the child's auto-enrolled account to track the balance and invest future funds. Claiming requires downloading the official mobile app released on the [Apple App Store](https://apps.apple.com/us/app/trump-accounts/id6767364919) and Google Play, confirming your identity, and accepting account terms. To walk through the activation screens step-by-step, review our guide on [how to claim a Trump Account](/guides/how-to-claim-a-trump-account/).\n\nAccording to a tax-practitioner analysis of temporary Treasury regulations TD 10056, unclaimed accounts sit inside a Treasury master group trust. Family and employer deposits are blocked until a parent claims the account. The older manual route is covered in our [Form 4547 guide](/guides/form-4547/)."
+        "body": "Parents do not need to file a separate grant application to secure the $250 Dell deposit. If your child already had an account opened manually through [Form 4547](https://www.irs.gov/forms-pubs/about-form-4547) or automatically through federal records, the money transfers directly into that account.\n\nHowever, you must claim the child's auto-enrolled account to track the balance and invest future funds. Claiming requires downloading the official mobile app released on the [Apple App Store](https://apps.apple.com/us/app/trump-accounts/id6767364919) and Google Play, confirming your identity, and accepting account terms. To walk through the activation screens step-by-step, review our guide on [how to claim a Trump Account](/guides/how-to-claim-a-trump-account/).\n\nAccording to a tax-practitioner analysis of temporary Treasury regulations TD 10056, unclaimed accounts sit inside a Treasury master group trust. Family and employer deposits are blocked until a parent claims the account. The older manual route is covered in our [Form 4547 guide](/guides/form-4547/). Musk's October 19, 2026 SpaceX share pledge has no claim process either: [Musk's SpaceX share for kids can't be claimed yet](/guides/elon-musk-spacex-share-for-kids/), and no sign-up exists."
       },
       {
         "heading": "When the $250 Arrives and How to Track It",
@@ -7680,7 +7958,7 @@ export const GUIDES: Guide[] = [
   },
 
   {
-    updated: "2026-10-08",
+    updated: "2026-10-19",
     slug: "what-are-trump-accounts-invested-in",
     title: "What Are Trump Accounts Invested In?",
     metaDescription: "What are Trump Accounts invested in? One low-cost S&P 500 U.S. stock index fund only. See the rules, restrictions, and long-run growth context.",
@@ -7691,6 +7969,7 @@ export const GUIDES: Guide[] = [
       { heading: "What are Trump Accounts invested in?", body: "Every Trump Account is invested in one low-cost mutual fund or ETF that tracks the S&P 500 or a similar U.S.-equity index. That is the only investment the account can buy. There are no other investment choices to make.\n\nThe S&P 500 is a basket of about 500 large U.S. companies. Buying an index fund means you own a slice of all of them at once. Your balance rises and falls with the broad U.S. stock market.\n\nThis is a hands-off design. You do not build a portfolio or trade inside the account. One broad index fund does the work. Learn more about [what a Trump Account is](/guides/trump-accounts/) if you are new to the program." },
       { heading: "Trump account investment restrictions: what you cannot buy", body: "Trump account investment restrictions are strict: you can only hold one broad U.S. index fund. You cannot pick individual stocks like a single tech company. You cannot add bonds, international funds, or sector bets.\n\nThe account is not self-directed. That means no day trading, no crypto, and no custom mix. Your only real choice is which qualifying S&P 500-style fund the provider offers.\n\nThese limits are the same for every child. The law, IRC 530A, requires a low-cost fund tracking a U.S.-equity index. See [the rules](/guides/trump-account-rules/) for the full contribution and eligibility details." },
       { heading: "Can Donors Give Individual Stocks?", body: "Yes, in one narrow case: under temporary rules published September 30, 2026, governments and 501(c)(3) charities can donate shares of U.S.-listed companies to a whole group of children, and the trustee holds those shares for up to five years before selling them into the index fund. Family money still goes only into the index fund.\n\nUnder the [temporary regulations](https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts), eligible donors are strictly limited to the United States or the District of Columbia, state or local governments, Indian tribal governments, and 501(c)(3) charities, including through donor-advised funds. Individuals and companies cannot give stock directly. They can do so only by routing the gift through an eligible charity.\n\nThe shares never go to an individual child of the donor's choosing. Instead, donations flow through the [U.S. Department of the Treasury](https://home.treasury.gov/) as a general funding contribution split equally across an entire qualified class, such as all beneficiaries under 18, those born in specified years, or children in an area with at least 5,000 eligible kids. Families cannot select the stock, and they cannot refuse the gift. The stock itself must be issued by a domestic corporation, trade on a registered national exchange, and carry no pre-existing transfer restrictions.\n\nThe trustee must hold the donated shares until the earlier of five years after receipt or December 31 of the year the child turns 17. Early sales are barred; if shares are sold early, the trustee must repurchase the same stock as soon as practicable. Once the holding window ends, the trustee sells the shares within a reasonable time and reallocates the proceeds into an eligible broad-market index fund.\n\nTreasury says the statutory investment limits apply only to what an account buys, so they do not restrict what a donor contributes. The rule carries three risks for families: one company's shares are not diversified, the trustee cannot sell them to cut losses during the hold, and families have no way to decline the gift. Christine Benz of [Morningstar](https://www.morningstar.com/) called the setup unusual, while Michael Dell dismissed such criticism as nonsense. Public comments run through roughly November 30, 2026, so final rules could alter these terms." },
+      { heading: "Will SpaceX Shares Show Up in Trump Accounts?", body: "A Trump Account can hold [SpaceX](https://www.spacex.com/) stock only as a donated gift, because families can buy only the broad index fund with their own contributions. Under the donor rules above, private stock gifts go through an eligible charity, and the trustee sells them into the index fund within five years at most.\n\nIn July 2026, SpaceX President Gwynne Shotwell and her husband pledged one SpaceX share each, then worth about $162, to the Trump Accounts of roughly two million children. Reported eligibility criteria vary across news coverage. [The Next Web](https://thenextweb.com/news/shotwell-spacex-stock-trump-accounts) reported extra emphasis on lower-income families near the couple's central Texas home. Some reports describe it as aimed at children ages 11 to 17 in lower-income areas. Delivery timing was not stated.\n\nOn October 19, 2026, Elon Musk posted on [X](https://x.com/elonmusk) that he plans to give one of his SpaceX shares to every child in America next year. Musk named no distribution vehicle, did not mention Trump Accounts, and gave no age limit, as reported by [CNN](https://www.cnn.com/2026/10/19/business/elon-musk-children-spacex-shares-x-post-intl). That promise would cost roughly $10.5 billion to $11 billion depending on the share price used, across about 72 million children. We track the unconfirmed details in our guide to [Elon Musk's SpaceX share for kids](/guides/elon-musk-spacex-share-for-kids/).\n\nParents who want specific company shares can read our guide on [how to buy SpaceX stock](/guides/how-to-buy-spacex-stock/) in a custodial account and track live pricing on [Stock Analysis](https://stockanalysis.com/stocks/spcx/)." },
       { heading: "Why the trump account investment options are limited", body: "The trump account investment options are limited on purpose, to keep fees low and the strategy simple. Index funds charge tiny expense ratios. Low fees leave more money to grow over 18 years.\n\nSimplicity also protects families. There is no pressure to time the market or pick winners. Parents cannot make costly trading mistakes inside the account.\n\nBroad index investing is a widely respected approach. The SEC notes that index funds offer low costs and instant diversification. That fits an account meant to run untouched from birth until age 18." },
       { heading: "How does the trump investment account work?", body: "The trump investment account works by holding contributions in one U.S. stock index fund until the child turns 18. Money goes in after-tax, so contributions are not tax-deductible. Growth is tax-deferred while it sits in the account.\n\nContributions are capped at $5,000 per year combined. An employer can add up to $2,500 within that cap. A one-time $1,000 government seed for U.S.-citizen kids born 2025 through 2028 does not count against the cap.\n\nThe balance is locked until January 1 of the year the child turns 18. After that, it is taxed like a traditional IRA, at ordinary income rates on withdrawals. For a full breakdown, see [how it's taxed](/guides/trump-account-taxes/)." },
       { heading: "Trump account return on investment: what to expect", body: "Your trump account return on investment follows the U.S. stock market, so there is no guaranteed rate. Some years the fund rises. Other years it falls. Over long periods, U.S. stocks have historically averaged roughly 7% per year, but the past does not promise the future.\n\nWe use 7% only as an assumed illustration below, not a promise. Markets are volatile, and your real return could be higher or lower. Treat any single number as a rough estimate.\n\nHere is illustrative growth at an assumed 7% average return. A $1,000 seed left alone grows to about $3,513 by age 18. Add $200 a month and it reaches about $89,657. Contribute the full $5,000 a year from birth and it could reach about $182,980.\n\nRun your own numbers with the [Trump Account calculator](/trump-account/) or a general [investment calculator](/investing/) to test different amounts and returns." },
@@ -8116,7 +8395,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "how-to-open-a-custodial-brokerage-account-for-kids",
-    updated: "2026-09-22",
+    updated: "2026-10-19",
     title: "How to Open a Custodial Brokerage Account for Kids",
     metaDescription: "How to open a custodial brokerage account for kids: what a UTMA/UGMA is, what you need, choosing a broker, funding, and the kiddie tax explained.",
     h1: "How to Open a Custodial Brokerage Account for Kids",
@@ -8146,6 +8425,10 @@ export const GUIDES: Guide[] = [
       {
         heading: "What to invest in",
         body: "Because a custodial account is for a long time horizon, most families choose broad, low-cost investments. A total-market or S&P 500 index fund or ETF gives you wide diversification in a single holding.\n\nThe main tradeoff is taxes. Unlike a 529 or Roth IRA, gains here are taxable each year, so funds that spin off less taxable income (like broad index ETFs) are efficient choices.\n\nAvoid frequent trading and individual-stock bets with a child's money. A simple index fund held for a decade or more usually beats a complicated portfolio. Try our [investment calculator](/investing/) to see how monthly contributions could grow over time."
+      },
+      {
+        heading: "Buying a Single Stock Like SpaceX (SPCX) for Your Child",
+        body: "You can buy [SpaceX](https://www.spacex.com/) stock for your child as whole or fractional shares of SPCX inside a custodial brokerage account. You cannot buy it inside a Trump Account, because families may only invest in its index fund. A custodial brokerage account has no such limit. Our guide on [how to buy SpaceX stock](/guides/how-to-buy-spacex-stock/) walks through the purchase.\n\nLog in to the custodial account and search for the ticker SPCX, which trades on Nasdaq. SpaceX began trading on June 12, 2026, after its IPO priced 555,555,555 Class A shares at $135 each. It closed at $146.03 on October 16, 2026, within a 52-week range of $104.83 to $225.64. The price changes every trading day, so check a live quote on [Stock Analysis](https://stockanalysis.com/stocks/spcx/). A [limit order](https://www.investor.gov/introduction-investing/investing-basics/glossary/limit-order) sets your maximum price, though it is not guaranteed to execute. If your broker offers [fractional share investing](https://www.investor.gov/introduction-investing/investing-basics/glossary/fractional-share-investing), you can buy part of a share.\n\nOn October 19, 2026, Elon Musk posted on [X](https://x.com/elonmusk) that he plans to give one of his SpaceX shares to every kid in America next year, a pledge that would total roughly $10.5 billion to $11 billion depending on the share price used. Musk did not set up a claim website, application form, or delivery rules. Our guide to [Elon Musk's SpaceX share for kids](/guides/elon-musk-spacex-share-for-kids/) tracks what has and has not been announced.\n\nIf you want one SpaceX share as a keepsake or a lesson anyway, keep it a small slice next to a broad index fund. A large single-stock holding puts a child's savings at [concentrated stock position risk](/guides/concentrated-stock-position-risk/)."
       },
       {
         heading: "Taxes (kiddie tax) and the age-of-majority handover",
@@ -8603,6 +8886,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "what-is-an-ipo",
+    updated: "2026-10-19",
     title: "What Is an IPO? How Going Public Actually Works",
     metaDescription:
       "What is an IPO? Learn how a company goes public, why it isn't always a win, and the lockup, allocation, and hype risks retail IPO investors face.",
@@ -8615,7 +8899,7 @@ export const GUIDES: Guide[] = [
       { heading: "How a company goes public: the IPO process", body: "A company goes public by hiring investment banks, called underwriters, to manage the offering, then filing a detailed registration statement with the SEC — searchable on the SEC's [EDGAR system](https://www.sec.gov/edgar/search-and-access) — that discloses its financials, risks, and business model. The SEC reviews the filing and can require changes before the offering proceeds.\n\nOnce the filing clears review, the company and its underwriters go on a roadshow, pitching the stock to large institutional investors to gauge demand. That demand helps set the IPO price the night before trading begins. On the first trading day, the stock starts trading on the exchange, and its price can move sharply away from the IPO price within hours." },
       { heading: "The real benefits of going public", body: "Going public gives a company a large, one-time cash infusion it can use to pay down debt, fund growth, or acquire other companies. A public listing also creates a liquid stock that lets employees and early investors finally sell shares they've held for years, and it gives the company a public currency — its own stock — to use for future acquisitions.\n\nA public listing can also raise a company's profile with customers and partners, since a stock ticker carries a kind of credibility a private company doesn't have. For many founders and early employees, an IPO is the main way years of equity compensation finally turns into cash." },
       { heading: "Why an IPO can actually be a bad idea for the company", body: "Going public isn't automatically the right move, and plenty of successful companies choose to stay private for exactly that reason. The ongoing costs are real: compliance, quarterly reporting, investor relations staff, and far more exposure to shareholder lawsuits than a private company ever faces.\n\nPublic markets also pressure management toward short-term results, since missing a single quarterly earnings estimate can hit the stock hard, even when the long-term strategy is sound. A company that needs years to execute a plan may find that pressure genuinely destructive, which is why some late-stage private companies raise plenty of cash from private investors and delay going public for as long as they can." },
-      { heading: "How IPOs actually work for retail investors", body: "Retail investors — individuals buying through an ordinary brokerage account — almost never get shares at the IPO price on day one. The [SEC's investor bulletin on IPOs](https://www.sec.gov/files/ipo-investorbulletin.pdf) notes that underwriters distribute most IPO shares to their institutional and high-net-worth clients first, so most retail investors can only buy once the stock starts trading on the open market, often at a price already well above the IPO price.\n\nA second risk shows up months later: the lockup period. Company insiders and early investors typically sign a [lockup agreement](https://www.sec.gov/fast-answers/answerslockuphtm.html), most commonly 180 days, that bars them from selling shares right after the IPO. When that lockup expires, a wave of insider selling can hit the stock all at once — the expiration date is disclosed in the prospectus, so retail investors can see it coming and plan around it instead of being surprised.\n\nThe first-day 'pop' also isn't guaranteed to hold. A stock that jumps 40% on day one can just as easily give that gain back, or fall below its IPO price entirely, in the weeks and months that follow, once the initial demand from underpricing and hype fades." },
+      { heading: "How IPOs actually work for retail investors", body: "Retail investors — individuals buying through an ordinary brokerage account — almost never get shares at the IPO price on day one. The [SEC's investor bulletin on IPOs](https://www.sec.gov/files/ipo-investorbulletin.pdf) notes that underwriters distribute most IPO shares to their institutional and high-net-worth clients first, so most retail investors can only buy once the stock starts trading on the open market, often at a price already well above the IPO price.\n\nA second risk shows up months later: the lockup period. Company insiders and early investors typically sign a [lockup agreement](https://www.sec.gov/fast-answers/answerslockuphtm.html), most commonly 180 days, that bars them from selling shares right after the IPO. When that lockup expires, a wave of insider selling can hit the stock all at once — the expiration date is disclosed in the prospectus, so retail investors can see it coming and plan around it instead of being surprised.\n\nThe first-day 'pop' also isn't guaranteed to hold. A stock that jumps 40% on day one can just as easily give that gain back, or fall below its IPO price entirely, in the weeks and months that follow, once the initial demand from underpricing and hype fades. Once a company lists, you buy it like any other stock; SpaceX, which began trading on Nasdaq as SPCX on June 12, 2026, is a recent example, and our guide on [how to buy SpaceX stock now that it's public](/guides/how-to-buy-spacex-stock/) walks through the order." },
       { heading: "Tips for investing in IPOs without chasing the hype", body: "Read the prospectus before you buy, not the headlines about the deal. The SEC recommends studying the actual offering document, since it discloses the company's finances, risks, and how shares are being allocated, in far more detail than any news story will.\n\nWatch for recency and hype bias: a stock dominating your social feed the week of its IPO is exactly the stock priced for maximum optimism, which leaves the least room for good news to push it higher. Waiting for the lockup expiration to pass, and for a full quarter or two of public reporting, gives you real financial data to evaluate instead of a roadshow pitch.\n\nSize any single IPO position small relative to your overall portfolio. A single new stock, with no trading history and a wave of insider selling still ahead of it, carries far more risk than an established company — our [portfolio calculator](/portfolio/) can help you see how one volatile position affects your overall risk before you buy." },
     ],
     tools: [
@@ -8684,6 +8968,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "concentrated-stock-position-risk",
+    updated: "2026-10-19",
     title: "Concentrated Stock Position Risk: How Much Is Too Much?",
     metaDescription:
       "Concentrated stock position risk explained: the rule of thumb for how much is too much, the RSU/ESPP failure mode, and 5 ways to reduce your exposure.",
@@ -8695,7 +8980,7 @@ export const GUIDES: Guide[] = [
       { heading: "How much company stock counts as 'concentrated'?", body: "There's no single legal definition of a concentrated stock position, but many financial advisors flag anything above 10% to 15% of your net worth in a single stock as a level worth actively managing. Above that threshold, one company's bad quarter, lawsuit, or scandal can meaningfully dent your entire financial picture, not just one line on a statement.\n\nThe threshold should tighten, not loosen, if the stock is also your employer's, since your paycheck is already tied to that same company's fortunes. Check your own number first: add up every account that holds the stock — brokerage, 401(k), and any unvested awards — and divide by your total [net worth](/net-worth/) to see where you actually stand." },
       { heading: "The employee failure mode: RSUs, ESPP, and your 401(k) all in one stock", body: "The most common concentration trap isn't a deliberate bet, it's an accumulation nobody planned. An employee can end up holding company stock in four places at once: vesting restricted stock units (RSUs), an employee stock purchase plan (ESPP) bought at a discount, 401(k) contributions defaulted or directed into employer stock, and any stock options exercised and held rather than sold.\n\nEach piece feels small on its own, but added together they can quietly become 30%, 40%, or more of an employee's total net worth. The real danger is correlated risk: if the company has a bad year, you can lose your job and a large share of your savings at the same time, the exact opposite of what diversification is supposed to protect against." },
       { heading: "Look at your full financial picture, not just the stock", body: "Evaluating concentration risk means looking at your entire balance sheet, not the stock position in isolation. A $200,000 concentrated position is a very different risk for someone with $2 million in other diversified assets than for someone whose entire net worth is that $200,000.\n\nAlso weigh your time horizon and how easily you could replace the income tied to that job if the company struggles. Someone five years from retirement with most of their savings in employer stock carries meaningfully more risk than someone in their 20s with decades to recover from a downturn." },
-      { heading: "Strategy 1: Sell and diversify, with a tax-aware plan", body: "Selling shares and reinvesting the proceeds across a diversified portfolio is the most direct way to cut concentration risk. The tax-aware version spreads the sale across multiple years or tax brackets, and prioritizes selling shares you've held longest, since those typically qualify for lower long-term capital gains rates instead of short-term ordinary income rates.\n\nSelling shares gradually rather than all at once also reduces the chance you sell everything right before a rally, though the flip side is real too: holding too long while waiting for a 'better' price is exactly how concentrated positions get built in the first place." },
+      { heading: "Strategy 1: Sell and diversify, with a tax-aware plan", body: "Selling shares and reinvesting the proceeds across a diversified portfolio is the most direct way to cut concentration risk. The tax-aware version spreads the sale across multiple years or tax brackets, and prioritizes selling shares you've held longest, since those typically qualify for lower long-term capital gains rates instead of short-term ordinary income rates.\n\nSelling shares gradually rather than all at once also reduces the chance you sell everything right before a rally, though the flip side is real too: holding too long while waiting for a 'better' price is exactly how concentrated positions get built in the first place. If you want exposure to one company without a concentrated position, our comparison of [which space ETFs hold SpaceX](/guides/space-etfs-with-spacex-exposure/) shows how much of each $1,000 in a theme fund actually goes to SpaceX." },
       { heading: "Strategy 2: 10b5-1 plans, exchange funds, and direct indexing", body: "Company insiders — executives and board members with access to material nonpublic information — often use a [10b5-1 trading plan](https://www.sec.gov/newsroom/press-releases/2022-222) to schedule sales in advance, which lets them diversify on a set timeline without the appearance or risk of trading on inside information. If you're an insider or hold restricted shares, a 10b5-1 plan is usually the compliant way to start reducing a position, not an ad-hoc sale.\n\nTwo other tools address the tax side directly. An exchange fund lets you swap concentrated shares for a diversified basket alongside other investors with their own concentrated positions, deferring capital gains tax rather than triggering it, though these funds typically require a multi-year lockup and a high minimum investment. Direct indexing buys the individual stocks in an index directly, which lets you gradually sell off your concentrated position while using the resulting losses elsewhere in the portfolio to offset the gain, a form of tax-loss harvesting applied specifically to a concentration problem." },
       { heading: "How fast should you actually reduce a concentrated position?", body: "There's a real tension between the fastest way to cut risk and the most tax-efficient way to do it, and no formula resolves it for everyone. Selling all at once removes the risk immediately but can trigger the largest possible tax bill in a single year, potentially pushing you into a higher bracket.\n\nA phased plan — selling a fixed percentage or dollar amount each quarter or year — spreads the tax impact and gives you room to use tax-loss harvesting elsewhere to offset some of the gain. Whichever pace you choose, use our [portfolio risk calculator](/portfolio/portfolio-risk-calculator/) to see how each stage of the sale actually changes your overall risk, not just the size of the remaining position." },
       { heading: "Should you sell RSUs immediately when they vest?", body: "Selling RSUs immediately at vest is the default move most fee-only advisors recommend. Vesting itself creates the tax bill, not the sale. Your employer reports the vested value as ordinary income on your [Form W-2](https://www.irs.gov/forms-pubs/about-form-w-2) and withholds tax immediately.\n\nThat tax liability is fixed the moment shares vest. It doesn't change whether you sell the shares immediately or hold them for years. Selling right away simply locks in the number and converts the rest to cash.\n\nHolding the shares after vest is a new decision, not a continuation of one you already made. You're using after-tax money to buy more stock in a company that already pays your salary. Most people would never take a cash bonus and put all of it into one stock.\n\nHolding vested shares can still make sense in specific situations. Genuine conviction in the company beyond your paycheck is one reason. Wanting flexibility for tax-loss harvesting, or having a diversified [net worth](/net-worth/) where this position is small, are two others.\n\nSelling immediately does not avoid taxes, a common misunderstanding among employees. The ordinary income tax is fixed the moment shares vest, no matter what happens next. Any gain or loss after vest is a separate [capital gains](https://www.irs.gov/taxtopics/tc409) event, taxed at short- or long-term rates.\n\nHere's the math for an employee who vests $40,000 of RSUs in the 24% ordinary income bracket. That vesting event alone creates about $9,600 in ordinary income tax. This amount is owed whether the shares are sold immediately or held for years.\n\nSelling right away locks in that $9,600 tax bill and converts the rest to cash. Holding the same shares 13 months longer shifts any further gain into long-term territory. Long-term gains are taxed at a lower rate than short-term gains, but the $9,600 tax bill stays fixed regardless.\n\nIf the stock drops during those months, the $9,600 tax is still owed against a smaller position. Run both paths — sell-and-reinvest versus hold-and-hope — through our [investment calculator](/investing/) to see which grows your money faster." },
@@ -13619,7 +13904,7 @@ export const GUIDES: Guide[] = [
   // with no existing dedicated page. register: operator · medium: text → text ·
   // page type: explainer/spoke (1200-word floor). ────────────────────────────
   {
-    updated: "2026-10-08",
+    updated: "2026-10-19",
     slug: "trump-account-scams",
     title: "Is TrumpAccounts.gov Legit? Trump Account Scams to Know",
     metaDescription:
@@ -13636,6 +13921,10 @@ export const GUIDES: Guide[] = [
       {
         heading: "Common Trump Account Scam Tactics",
         body: "Scammers copy the excitement around a new federal benefit faster than most families expect. A copycat site with a URL just one letter off from TrumpAccounts.gov is the most common trick, built to collect the same Social Security number and birth date the real form asks for.\n\nA second tactic is the fake processing fee. A page or caller claims your child's $1,000 seed is ready but needs a card payment, a gift card code, or a wire transfer to release it. The federal government never charges a fee to deposit money it already owes a child, so a request for payment to receive the seed is always a scam.\n\nA third pattern piggybacks on the calculator tools people search for while researching the program, embedding a fake \"apply now\" button inside a site that has nothing to do with the Treasury. A fourth relies on caller ID spoofing: your phone shows a Washington, D.C. area code or a name like \"US Treasury,\" but the number is faked, and a real Treasury agency does not open a new benefit application over an inbound phone call.",
+      },
+      {
+        heading: "Fake \"Free SpaceX Share\" Claim Messages",
+        body: "Treat any message asking you to claim a free [SpaceX](https://www.spacex.com/) share as a scam. When Elon Musk posted his pledge on [X](https://x.com/elonmusk) on October 19, 2026, he published no claim form, application website, or official sign-up process. Any email or text asking you to pay processing fees, send cryptocurrency, or provide your child's Social Security number to reserve stock is a phishing attempt.\n\nIf a stock gift ever reaches Trump Accounts, it would arrive as a general contribution under federal donation rules. No sign-up form is involved. Under temporary Treasury regulations [T.D. 10056](https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts), a person's or company's stock gift must pass through an eligible 501(c)(3) charity as a general contribution divided equally across an entire qualified group. Families do not pay a fee or take any step to reserve shares. Unclaimed auto-enrolled accounts can still receive general contributions. Our guide to [Elon Musk's SpaceX share for kids](/guides/elon-musk-spacex-share-for-kids/) tracks what Musk has and has not said.\n\nOfficial Trump Account email comes only from no-reply@TrumpAccounts.Treasury.gov, per Treasury press release [SB-0642](https://home.treasury.gov/news/press-releases/sb0642). Accounts are claimed at [TrumpAccounts.gov](https://trumpaccounts.gov) or in the Trump Accounts: Official App. If an unsolicited message asks for your account password, demands payment, or directs you to an outside website, call the Treasury call center at 1-866-USA-4547 before you respond."
       },
       {
         heading: "Fake Trump Account Emails and Texts",

@@ -1,0 +1,366 @@
+{
+ "slug": "space-etfs-with-spacex-exposure",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2273,
+ "floor": 1500,
+ "input_tokens": 21758,
+ "output_tokens": 4540,
+ "thinking_tokens": 1566,
+ "cached_tokens": 18074,
+ "est_cost_usd": 0.027,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['Which Space ETFs Hold SpaceX?', 'Dollar Exposure per Thousand Invested', 'Concentration vs Broad Aerospace Exposure', 'Expense Ratios and Annual Holding Costs', 'ETF Tradeoffs vs Direct SPCX Stock'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
+   "claim check: 16 claim(s) still unsupported after 3 pass(es) \u2014 auditor must cut or source: 'As of mid-October 2026, per fund data reported by Stock Analysis, Procure Space '; 'Maximum exposure to SpaceX equity and private vehicles'; 'The remaining $839.50 is spread across satellite radio providers, navigation har'; 'The remaining $888.40 goes to defense equipment manufacturers like L3Harris and '"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2273,
+  "numbers_not_in_facts": [
+   "10000",
+   "111.6",
+   "160.5",
+   "27",
+   "270",
+   "375",
+   "50000",
+   "75",
+   "839.5",
+   "888.4",
+   "90.6"
+  ],
+  "fact_budget": {
+   "fact_words": 1215,
+   "floor": 1500,
+   "ratio": 0.81,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    12,
+    15,
+    16
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "A fourth popular fund, ROKT, does not list SpaceX in its top ten holdings.",
+     "replacement": "A fourth fund, ROKT, does not list SpaceX in its top ten holdings.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe ROKT as a popular fund."
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we track how thematic funds package individual equities so you can see your exact dollar exposure before you buy.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not state ModernWallet tracks thematic funds."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Lower-cost exposure to deep sea, defense, and space",
+     "replacement": "Lower-cost broader aerospace mix",
+     "type": "unsupported",
+     "why": "SOURCE does not state ROKT covers deep sea exposure."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "A special-purpose vehicle (SPV) represents private investment structures used prior to or alongside exchange listings.",
+     "replacement": "This represents an indirect holding through a special-purpose vehicle.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe or define SPV investment structures."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Instead, the bulk of your capital funds maritime exploration firms, traditional defense contractors, and specialized equipment suppliers.",
+     "replacement": "Instead, the bulk of your capital funds its broader holdings mix.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe ROKT holdings as maritime exploration firms."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "This gives investors the closest proxy to a dedicated SpaceX fund, but it also ties fund returns directly to SpaceX launch cadences and contract awards.",
+     "replacement": "This gives investors significant exposure to SpaceX equity and indirect SPV holdings.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention launch cadences or contract awards."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "UFO does not hold large diversified conglomerates like Amazon or Alphabet, making it a pure industry vehicle.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state UFO's holdings outside its top ten positions."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "ROKT offers the lowest top ten concentration at 38.10%, spreading risk across ocean exploration, subsea robotics, and legacy defense hardware.",
+     "replacement": "ROKT offers the lowest top ten concentration at 38.10%, spreading assets across its broader aerospace mix.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention ocean exploration or subsea robotics."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Over a ten-year holding period, fee differences compound significantly and drag down total performance.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE forbids performance figures and does not state ten-year compounding."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Buying SPCX stock directly delivers pure 100% exposure to SpaceX operations, Starlink revenues, and federal launch awards.",
+     "replacement": "Buying SPCX stock directly delivers pure 100% exposure to SpaceX operations.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention Starlink revenues or federal launch awards."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "ProcureAM, ARK Invest, Tema, and State Street update their full holding spreadsheets every morning before market open.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state issuers update spreadsheets every morning before market open."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Thematic funds that hold specialized satellite components can trade with wider spreads than broad index funds.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state thematic funds trade with wider bid-ask spreads."
+    },
+    {
+     "id": "introText",
+     "quote": "Investors who do not want to buy single shares often look to a space ETF to capture the industry.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what investors often look to or do."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Pure-play satellite and space industry focus",
+     "replacement": "Largest listed SPCX allocation",
+     "type": "unsupported",
+     "why": "SOURCE does not describe UFO as pure-play satellite and space industry."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Because it is an actively managed fund, ARKX balances space tech with defense contractors and semiconductor suppliers.",
+     "replacement": "Because it is an actively managed fund, ARKX also holds defense and technology companies.",
+     "type": "unsupported",
+     "why": "SOURCE does not state ARKX holds semiconductor suppliers or balances them."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "For ROKT, because SPCX is absent from the published top ten, a $1,000 buy provides negligible direct SpaceX exposure.",
+     "replacement": "For ROKT, because SPCX is absent from the published top ten, whether a $1,000 buy provides direct SpaceX exposure is not shown.",
+     "type": "contradicted",
+     "why": "SOURCE states whether ROKT holds any SPCX outside top 10 is not shown."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Procure Space ETF (UFO) focuses specifically on commercial space and satellite communications.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state UFO focuses on commercial space and satellite communications."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Its top ten holdings make up 55.82% of assets, featuring pure-play launch firms like Rocket Lab alongside satellite network operators like Viasat and Globalstar.",
+     "replacement": "Its top ten holdings make up 55.82% of assets, including Rocket Lab, Viasat, and Globalstar.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe holdings as pure-play launch firms or satellite network operators."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "ARK Space & Defense Innovation ETF (ARKX) adopts a broader view of aerospace by including companies that support aviation, logistics, and data infrastructure.",
+     "replacement": "ARK Space & Defense Innovation ETF (ARKX) is an actively managed fund that also holds defense and technology companies.",
+     "type": "unsupported",
+     "why": "SOURCE states ARKX is an actively managed fund holding defense and technology companies."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "With top ten concentration at 57.16%, ARKX holds suppliers like AeroVironment alongside chipmakers like AMD and enterprise cloud operators.",
+     "replacement": "Its top ten concentration stands at 57.16%, holding companies such as AeroVironment, AMD, and Amazon.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe holdings as suppliers, chipmakers, or enterprise cloud operators."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Because ROKT does not hold significant SPCX stock, choosing it strictly for its 0.45% fee fails to deliver the space exploration exposure you are targeting.",
+     "replacement": "Because ROKT does not list SPCX in its top ten holdings, choosing it strictly for its 0.45% fee may not deliver the SpaceX exposure you are targeting.",
+     "type": "unsupported",
+     "why": "SOURCE states whether ROKT holds any SPCX outside top 10 is not shown."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "However, owning single-company equity concentrates your entire capital balance into one corporate balance sheet, exposing you to launch failures, regulatory delays, or valuation compressions.",
+     "replacement": "However, owning single-company equity concentrates your entire capital balance into one stock.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention launch failures, regulatory delays, or valuation compressions."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Buying a space ETF spreads your capital across the industry, shielding your principal if a single rocket launch or defense program falters.",
+     "replacement": "Buying a space ETF spreads your capital across a basket of securities in proportion to their weights.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that ETFs shield principal from rocket launch or program failures."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Public interest in pairing SpaceX with child savings accounts increased following corporate announcements.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that public interest increased."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Before placing an order for any space ETF, look up the issuer's daily holdings file to verify its current portfolio allocations.",
+     "replacement": "Before placing an order for any space ETF, check current portfolio allocations.",
+     "type": "unlinked-directive",
+     "why": "Directs reader to an outside source without a markdown link."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Procure Space ETF (UFO) suits investors seeking pure-play satellite and space launch firms with a 16.05% SpaceX weighting.",
+     "replacement": "Procure Space ETF (UFO) holds a 16.05% SpaceX weighting alongside holdings like Trimble and Garmin.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe UFO as pure-play satellite and space launch firms."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Other aerospace funds may add SPCX during future portfolio rebalances, but SPDR S&P Kensho Final Frontiers ETF (ROKT) does not list SPCX in its top ten holdings.",
+     "replacement": "SPDR S&P Kensho Final Frontiers ETF (ROKT) does not list SPCX in its top ten holdings.",
+     "type": "unsupported",
+     "why": "SOURCE forbids predictions and mentioning funds not listed in SOURCE."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [
+    {
+     "id": "sections[0].body",
+     "quote": "As of mid-October 2026, per fund data reported by Stock Analysis, Procure Space ETF (UFO), ARK Space & Defense Innovation ETF (ARKX), and Tema Space Innovators ETF (NASA) allocate significant portfolio weights to SpaceX.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Maximum exposure to SpaceX equity and private vehicles",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The remaining $839.50 is spread across satellite radio providers, navigation hardware makers, and launch contractors such as Rocket Lab.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The remaining $888.40 goes to defense equipment manufacturers like L3Harris and Kratos, agriculture equipment makers like Deere, and enterprise tech firms like NVIDIA and Alphabet.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Portfolio concentration determines how closely your returns track a single business versus the broader aerospace economy.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "When an ETF concentrates more than half its assets in ten companies, poor performance from two or three holdings will drag down your entire position.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Tema Space Innovators ETF (NASA) carries the heaviest concentration among the group, with 67.45% of its portfolio in its top ten holdings.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "This gives investors significant exposure to SpaceX equity and indirect SPV holdings.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Its top ten holdings make up 55.82% of assets, including Rocket Lab, Viasat, and Globalstar.",
+     "type": "contradicted",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "ROKT offers the lowest top ten concentration at 38.10%, spreading assets across its broader aerospace mix.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "An expense ratio represents the annual fee an ETF issuer deducts from fund assets to cover management, operations, and administration.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "This fee is not billed directly to your brokerage balance; instead, it reduces the net asset value of the fund on an ongoing basis.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "You also gain automated rebalancing, as the fund issuer handles corporate actions and adjusts weights periodically.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "In exchange for this diversification, you pay an annual expense ratio of 0.45% to 0.75%, and your returns will be diluted by lagging holdings in the basket.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Portfolio weights inside exchange-traded funds fluctuate every business day based on market moves, inflows, and redemptions.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "The weights published across financial websites often differ depending on when each platform refreshes its portfolio data.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2499
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 474.2,
+ "response_id": "OjDWapjGG6DhytMPgMWXgQM",
+ "generated_at": "2026-10-19T10:06:59-0500"
+}

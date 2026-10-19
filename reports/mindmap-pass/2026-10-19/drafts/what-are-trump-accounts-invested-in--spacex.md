@@ -1,0 +1,9 @@
+## Will SpaceX Shares Show Up in Trump Accounts?
+
+A Trump Account can hold SpaceX stock only as a donated gift, because families can buy only the broad index fund with their own contributions. Private donors cannot give shares directly to specific children. Under temporary Treasury rules, stock gifts must route through an eligible charity, and the trustee can hold donated shares for up to five years before selling them into the index fund.
+
+In July 2026, SpaceX President Gwynne Shotwell and her husband pledged one SpaceX share each, then worth about $162, to the Trump Accounts of roughly two million children. Reported eligibility criteria vary across news coverage. Some reports describe the pledge as aimed at children ages 11 to 17 in lower-income areas near central Texas, while [The Next Web](https://thenextweb.com/news/shotwell-spacex-stock-trump-accounts) noted delivery timing was not stated.
+
+On October 19, 2026, Elon Musk posted on X that he plans to give one of his SpaceX shares to every child in America next year. Musk named no distribution vehicle, did not mention Trump Accounts, and gave no age limit, as reported by [CNN](https://www.cnn.com/2026/10/19/business/elon-musk-children-spacex-shares-x-post-intl). That promise would cost roughly $10.5 billion to $11 billion across 72 million children, and we track the unconfirmed details in our guide to [Elon Musk's SpaceX share for kids](/guides/elon-musk-spacex-share-for-kids/).
+
+Families cannot buy SPCX directly inside a Trump Account. Federal rules restrict family contributions exclusively to one low-cost index fund tracking broad U.S. equities. Parents who want specific company shares can read our guide on [how to buy SpaceX stock](/guides/how-to-buy-spacex-stock/) in a custodial account and track live pricing on [Stock Analysis](https://stockanalysis.com/stocks/spcx/).

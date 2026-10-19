@@ -1,0 +1,245 @@
+{
+ "slug": "how-to-buy-spacex-stock",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1531,
+ "floor": 1200,
+ "input_tokens": 21349,
+ "output_tokens": 3027,
+ "thinking_tokens": 602,
+ "cached_tokens": 18074,
+ "est_cost_usd": 0.0174,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['How to Buy SpaceX (SPCX) Stock in 4 Steps', 'Share Price and Valuation History for SPCX', 'Retirement of Private and Pre-IPO Routes', 'Custodial Accounts and Rules for Minors', 'Space ETFs with Indirect SpaceX Exposure'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
+   "claim check: 1 claim(s) still unsupported after 3 pass(es) \u2014 auditor must cut or source: 'No guaranteed execution if price never drops to limit'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1531,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 1030,
+   "floor": 1200,
+   "ratio": 0.86,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    16,
+    3,
+    5
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we track how retail investors navigate new stock listings, and buying SpaceX no longer requires private-market secondary platforms or accreditation paperwork.",
+     "replacement": "Buying SpaceX no longer requires private-share or pre-IPO secondary-market routes.",
+     "type": "unsupported",
+     "why": "Site self-description lacks tracking retail investors, and SOURCE lacks accreditation paperwork."
+    },
+    {
+     "id": "introText",
+     "quote": "You do not need specialized access or direct relationships with pre-IPO brokers to buy shares today.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention specialized access or direct relationships with pre-IPO brokers."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "If the share price changes rapidly while your order is transmitted, a market order fills at whatever price the market offers at that second.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention order transmission speeds or rapid market price shifts."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Executes immediately during market trading",
+     "replacement": "Not stated",
+     "type": "unsupported",
+     "why": "SOURCE does not state market order execution guarantees and forbids trading hours."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Reviewing current quotes prevents surprises caused by overnight swings or intraday market volatility.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention preventing surprises from overnight swings or intraday volatility."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "For example, if a single share trades near $146, fractional investing allows an investor to allocate $25 or $50 toward a partial share. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention $25 or $50 investment amounts."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Private-market secondary platforms and pre-IPO investment syndicates are no longer required to buy SpaceX stock.",
+     "replacement": "Private-market secondary platforms and pre-IPO routes are no longer required to buy SpaceX stock.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention pre-IPO investment syndicates."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Prior to June 12, 2026, retail investors faced steep barriers when seeking shares of SpaceX, often needing accredited investor status or access to specialized private marketplaces.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention steep barriers, accredited investor status, or specialized private marketplaces."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Those pre-IPO secondary routes carried significant restrictions, including transfer approvals, minimum transaction sizes, and private liquidity constraints. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention transfer approvals, minimum transaction sizes, or liquidity constraints."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "According to [Investor.gov mutual fund and ETF guidance](https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1), an ETF pools money from many investors to purchase a basket of stocks, which spreads risk across dozens of companies.",
+     "replacement": "You can review [Investor.gov mutual fund and ETF guidance](https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1) to learn more about how funds operate.",
+     "type": "unsupported",
+     "why": "SOURCE does not state ETF mechanics or that risk spreads across dozens of companies."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Rather than putting all your capital into a single equity ticker, an aerospace fund provides exposure to the entire commercial space sector alongside other satellite, defense, and manufacturing firms. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention satellite, defense, or manufacturing firms."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "When you buy shares in one company, your investment return depends entirely on that single business's operational execution, competitive environment, and market valuation.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention operational execution, competitive environment, or market valuation."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Financial planners frequently caution against over-allocating capital to single-company stocks. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention financial planners or what they caution."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Holding an outsized position in one equity exposes you to sector-specific downturns and regulatory shifts. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention sector-specific downturns or regulatory shifts."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "SpaceX began trading publicly on Nasdaq on June 12, 2026, under the ticker symbol SPCX, meaning any investor with an active brokerage account can submit an order during normal market hours.",
+     "replacement": "SpaceX began trading publicly on Nasdaq on June 12, 2026, under the ticker symbol SPCX, meaning any investor with an active brokerage account can submit an order.",
+     "type": "unsupported",
+     "why": "SOURCE explicitly forbids stating trading hours."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Because SpaceX trades publicly on Nasdaq as SPCX, individual buyers no longer need accredited investor status, private-market accounts, or secondary pre-IPO platforms to purchase shares.",
+     "replacement": "Because SpaceX trades publicly on Nasdaq as SPCX, individual buyers no longer need private-market accounts or pre-IPO secondary-market routes to purchase shares.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention accredited investor status."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "2. Fund your account by linking a bank account and transferring your intended investment capital.",
+     "replacement": "2. Fund your account.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention linking a bank account or transferring capital."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "A minor cannot open a standard brokerage account in their own name, so an adult must open a custodial account to buy SpaceX stock for a child.",
+     "replacement": "To buy SpaceX stock for a child, a minor generally holds stock through a custodial (UTMA/UGMA) account opened by an adult.",
+     "type": "unsupported",
+     "why": "SOURCE does not state minors cannot open accounts in their own name."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "A custodial account established under the Uniform Transfers to Minors Act (UTMA) or Uniform Gifts to Minors Act (UGMA) holds investments managed by an adult custodian until the child reaches legal adulthood.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state investments are managed until legal adulthood."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "A limit order gives you price control, but it does not guarantee that your order will execute at all if the stock stays above your ceiling.",
+     "replacement": "A buy limit order is not guaranteed to execute.",
+     "type": "unsupported",
+     "why": "SOURCE does not state limit orders give price control or condition execution on ceilings."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Guaranteed price ceiling",
+     "replacement": "Executes at limit price or lower",
+     "type": "unsupported",
+     "why": "SOURCE states limit order executes at limit price or lower, not guaranteed ceiling."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "As defined by the [Investor.gov fractional share guide](https://www.investor.gov/introduction-investing/investing-basics/glossary/fractional-share-investing), fractional share investing lets you buy a portion of a share based on the exact dollar amount you want to spend.",
+     "replacement": "As defined by the [Investor.gov fractional share guide](https://www.investor.gov/introduction-investing/investing-basics/glossary/fractional-share-investing), fractional share investing lets you buy a portion of a share.",
+     "type": "unsupported",
+     "why": "SOURCE does not state fractional share investing is based on exact dollar amounts."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Investors who do not wish to spend the full price of a single share can use dollar-based investing where supported.",
+     "replacement": "Investors who do not wish to spend the full price of a single share can use fractional shares where supported.",
+     "type": "unsupported",
+     "why": "SOURCE specifies fractional shares as an option, not dollar-based investing."
+    }
+   ],
+   "deleted_final": 4,
+   "unapplied": [
+    {
+     "quote": "No guaranteed execution if price never drops to limit",
+     "type": "unsupported",
+     "why": "SOURCE states order is not guaranteed to execute without specifying price drop conditions.",
+     "replacement": "Not guaranteed to execute",
+     "id": "sections[0].body",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "sections[0].body",
+     "quote": "No guaranteed execution if price never drops to limit",
+     "type": "unsupported",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 1836
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 339.8,
+ "response_id": "OjDWauyrGeasuMYP_6C2qQM",
+ "generated_at": "2026-10-19T10:04:44-0500"
+}

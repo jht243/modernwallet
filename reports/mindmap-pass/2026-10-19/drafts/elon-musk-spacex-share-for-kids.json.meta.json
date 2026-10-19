@@ -1,0 +1,207 @@
+{
+ "slug": "elon-musk-spacex-share-for-kids",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2195,
+ "floor": 1200,
+ "input_tokens": 21375,
+ "output_tokens": 3798,
+ "thinking_tokens": 1836,
+ "cached_tokens": 18074,
+ "est_cost_usd": 0.025,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): [\"Can You Claim Musk's SpaceX Share Yet?\", 'What Musk Actually Said and Did Not Say', 'How a SpaceX Share Could Reach a Trump Account', 'What One SpaceX Share Is Worth', 'The Gwynne Shotwell Precedent'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
+   "claim check: 1 claim(s) still unsupported after 3 pass(es) \u2014 auditor must cut or source: ' Scammers create realistic web portals, run sponsored social media advertisement'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2195,
+  "numbers_not_in_facts": [
+   "10.51"
+  ],
+  "fact_budget": {
+   "fact_words": 1011,
+   "floor": 1200,
+   "ratio": 0.84,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    12,
+    4,
+    2
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we track youth investment initiatives and federal account rules daily, and no mechanism exists today to collect this proposed gift.",
+     "replacement": "No mechanism exists today to collect this proposed gift.",
+     "type": "unsupported",
+     "why": "Site self-description does not support tracking youth initiatives or federal rules daily."
+    },
+    {
+     "id": "introText",
+     "quote": "Many parents saw the news and wondered if they needed to submit paperwork immediately.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what parents felt or wondered."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Official programs never charge processing fees to deliver designated contributions.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that official programs never charge processing fees."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "This guide is not for adult investors seeking individual equity allocations or day traders looking for market timing.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state who this guide is or is not for."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Total funding reserves and legal share release authorizations remain unconfirmed.",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state anything about funding reserves or share release authorizations."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Media valuations citing $11 billion rely on prices near $153 per share.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not list $153 per share or what media valuations rely on."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "That initiative demonstrated that converting large blocks of corporate stock into individual minor accounts requires extensive legal, tax, and administrative preparation.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what the Shotwell initiative demonstrated or required."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Pledges announced in headlines often take many months to navigate regulatory rules before any asset lands in a child's name.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state how long headline pledges take to navigate rules."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Unclaimed accounts currently sit in a central master trust managed by Robinhood Securities.",
+     "replacement": "Unclaimed accounts currently sit in a Treasury master trust.",
+     "type": "contradicted",
+     "why": "SOURCE states unclaimed accounts sit in a Treasury master trust."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Balances grow tax-deferred in a diversified index fund until January 1 of the calendar year the child turns 18.",
+     "replacement": "Money is locked until January 1 of the calendar year the child turns 18.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Trump Account balances grow tax-deferred."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Major celebrity announcements routinely trigger fraudulent campaigns designed to steal personal information and banking credentials.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what celebrity announcements routinely trigger."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Other outlets reported broader regional criteria without definitive boundary lines.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention other outlets reporting broader regional criteria without definitive boundary lines."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Unclaimed accounts can receive broad general contributions, but family deposits remain completely locked until an authorized parent or legal guardian completes identity verification.",
+     "replacement": "Unclaimed accounts can receive broad general contributions, but family and employer contributions remain blocked until a parent or guardian claims the account.",
+     "type": "unsupported",
+     "why": "SOURCE states family and employer contributions are blocked until claimed, not identity verification."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Officials will never contact you via private text message, WhatsApp, or social media direct message to transfer equity.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention text messages, WhatsApp, or social media direct messages."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "On October 1, 2026, the Treasury Department issued press release SB-0642 on [Treasury.gov](https://home.treasury.gov/news/press-releases/sb0642), confirming that the government completed automatic enrollment for tens of millions of eligible minors under age 18 who possess valid Social Security numbers.",
+     "replacement": "On October 1, 2026, the Treasury Department issued press release SB-0642 on [Treasury.gov](https://home.treasury.gov/news/press-releases/sb0642), confirming that the government completed automatic enrollment for eligible minors under age 18 who possess valid Social Security numbers.",
+     "type": "unsupported",
+     "why": "SOURCE does not state tens of millions were automatically enrolled."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [
+    {
+     "quote": "Scammers create realistic web portals, run sponsored social media advertisements, and send automated text messages urging parents to register for Musk's free SpaceX equity before a fictional deadline expires.",
+     "type": "unsupported",
+     "why": "SOURCE does not list specific scam formats like ads or text messages.",
+     "replacement": "",
+     "id": "sections[6].body",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    },
+    {
+     "quote": "Scammers create realistic web portals, run sponsored social media advertisements, and send automated text messages urging parents to register for Musk's free SpaceX equity before a fictional deadline expires.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention sponsored advertisements, automated text messages, or fictional deadlines.",
+     "replacement": "",
+     "id": "sections[6].body",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    },
+    {
+     "quote": " Scammers create realistic web portals, run sponsored social media advertisements, and send automated text messages urging parents to register for Musk's free SpaceX equity before a fictional deadline expires. ",
+     "type": "unsupported",
+     "why": "SOURCE does not state scammers create web portals, run ads, or send automated texts.",
+     "replacement": "",
+     "id": "sections[6].body",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "sections[6].body",
+     "quote": " Scammers create realistic web portals, run sponsored social media advertisements, and send automated text messages urging parents to register for Musk's free SpaceX equity before a fictional deadline expires. ",
+     "type": "unsupported",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2368
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 385.1,
+ "response_id": "QS7WarGCM4KsuMYPkKHp8QI",
+ "generated_at": "2026-10-19T09:57:04-0500"
+}
