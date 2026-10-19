@@ -1,0 +1,1 @@
+Nobody knows, because Elon Musk did not mention Trump Accounts in his post. If he did use them, the gift would have to go through a charity to a whole group of children under federal rules. An unclaimed account could still receive that transfer. For now, there is nothing to do in the Trump Accounts app for the SpaceX share.

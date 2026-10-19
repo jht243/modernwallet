@@ -1,0 +1,58 @@
+# SECTION — intro
+task: Rewrite the INTRO of the page "Elon Musk's SpaceX Share for Kids Can't Be Claimed Yet". OMIT the "## " heading; output only 3 short paragraphs (about 140 to 180 words total). Paragraph 1: sentence 1 is the answer, short: you cannot claim the share, because Musk has not said how, when, or through what account he will deliver it. Sentence 2 is the tee-up, use exactly: "Every guide we write at The Modern Wallet starts from what has actually been published, and here that is one post on X." Paragraph 2: what Musk posted on October 19, 2026 (quote it) and the rough scale (about 72 million children, roughly $10.5 billion to $11 billion depending on the share price used). Paragraph 3: say plainly that the post does not mention Trump Accounts, that this guide covers them only because they are one possible route whose rules are already public, and that claiming or opening a Trump Account is not a way to claim the share. Link [SpaceX](https://www.spacex.com/) on first mention and [X](https://x.com/elonmusk).
+
+## THE CLOSED FACT LIST
+### Shared facts (all three pages may use)
+- On Monday, October 19, 2026, Elon Musk posted on X: "Next year, I will give one of my SpaceX shares to every kid in America." He added: "This will be the first of many." (IBTimes, CNN, Axios, 2026-10-19)
+- The day before (October 18), Musk wrote that he recommended giving shares directly to the public; on October 19 he said that is what he will do. He framed it as a way to encourage young people's interest in space and investing. (IBTimes)
+- The post followed Anthropic's October 18 statement that it intends to commit 5% of its shares to a new Public Benefit Fund, subject to stockholder approval. (IBTimes)
+- About 72 million people in the U.S. are under 18 (Census estimate as of July 1, 2025, cited by IBTimes). At SpaceX's Friday, October 16, 2026 close of $146.03, one share per child works out to roughly $10.5 billion (IBTimes). Other outlets put it near $11 billion; say "roughly $10.5 billion to $11 billion depending on the share price used".
+- Musk did not define "kid", give an age cutoff, say whether non-citizens are included, say how shares would be transferred, held or taxed, or say whether a government savings vehicle such as Trump Accounts would be used. Musk did not answer those questions. (CNN, IBTimes). Some headlines assumed Trump Accounts; the post itself does not mention them.
+- As of October 19, 2026 there is no claim form, sign-up, website, or application from Musk or SpaceX. Nothing official has been published beyond the post.
+- SpaceX (Space Exploration Technologies Corp.) trades on Nasdaq under the ticker SPCX. It began trading June 12, 2026. The IPO priced 555,555,555 Class A shares at $135 per share. The 52-week range is $104.83 to $225.64, and the latest close was $146.03 on October 16, 2026 (stockanalysis.com). The price changes every trading day; tell the reader to check a live quote.
+- In July 2026, SpaceX President Gwynne Shotwell and her husband pledged one SpaceX share each to the Trump Accounts of about 2 million American children, worth over $320 million at about $162 a share at the time, with extra emphasis on lower-income families near their central Texas home (The Next Web, July 6, 2026). Reports differ on the exact age and income criteria; some describe it as aimed at children ages 11 to 17 in lower-income areas. Present the criteria as reported and varying, and say delivery timing was not stated.
+- Trump Account donor-stock rules (temporary regulations T.D. 10056, Federal Register, September 30, 2026): only the United States or D.C., state or local governments, Indian tribal governments, and 501(c)(3) charities (including through donor-advised funds) can make "general contributions". Individuals and companies can give stock only by routing it through an eligible charity. A general contribution is split equally across an entire qualified class (for example all beneficiaries under 18, those born in specified years, or children in an area with at least 5,000 eligible kids); a donor cannot pick an individual child, and families cannot choose the stock or refuse the gift. Donated stock must be issued by a domestic corporation, trade on a registered national exchange, and carry no transfer restrictions. The trustee may hold donated shares for up to five years before selling them into the account's index fund.
+- Families themselves can only invest a Trump Account in one low-cost fund tracking the S&P 500 or a similar broad U.S. stock index; a parent cannot buy SPCX or any single stock inside one.
+- Treasury press release SB-0642: automatic enrollment of eligible children under 18 with a valid Social Security number was completed October 1, 2026. Accounts are claimed in the "Trump Accounts: Official App" or at trumpaccount.com / TrumpAccounts.gov. Treasury call center: 1-866-USA-4547. Official email comes only from no-reply@TrumpAccounts.Treasury.gov.
+- Unclaimed auto-enrolled accounts sit in a Treasury master trust and can receive general contributions and the $1,000 pilot contribution; family and employer contributions are blocked until a parent or guardian claims the account (tax-practitioner analysis of T.D. 10056). U.S.-citizen children born January 1, 2025 through December 31, 2028 can get a one-time $1,000 federal seed; the account must be claimed to receive it.
+- Robinhood Securities is the Trump Account trustee. Family/friends can add up to $5,000 a year combined (employers up to $2,500 within it). Money is locked until January 1 of the year the child turns 18.
+- Michael and Susan Dell pledged $6.25 billion for $250 deposits to 25 million children born 2016 through 2024 in ZIP codes with median family income about $118,000 or less; no application.
+
+### Clarity facts for this revision (authoritative)
+- Musk's October 19, 2026 post does NOT mention Trump Accounts. Nothing published connects his pledge to Trump Accounts.
+- There is nothing a parent can do today to get or reserve the share: no form, no sign-up, no list, no app step, anywhere (not with Musk, SpaceX, Treasury, or in the Trump Accounts app). Opening or claiming a Trump Account does NOT reserve, claim, or qualify a child for Musk's share.
+- Why Trump Accounts come up anyway, three reasons: (1) they are the only existing system that already holds an account for nearly every U.S. child (auto-enrollment completed October 1, 2026, per SB-0642); (2) SpaceX President Gwynne Shotwell's July 2026 pledge of one SpaceX share each to about 2 million children went through Trump Accounts; (3) some headlines (e.g. Benzinga) assumed Musk would use them.
+- Possible route A, Trump Accounts (unconfirmed): under T.D. 10056 a person's stock gift would have to go through a 501(c)(3) charity as a general contribution split equally across a whole qualified class; the trustee may hold donated shares up to five years before selling them into the index fund, so a child might never keep the SpaceX share there. Unclaimed auto-enrolled accounts can receive general contributions (tax-practitioner analysis of T.D. 10056), so under the current rules a parent would not need to claim the account first for such a gift to land.
+- Possible route B, outside Trump Accounts (unconfirmed): a minor generally holds stock through a custodial (UTMA/UGMA) account opened by an adult. Musk has described no process for delivering shares this way, so whether parents would need to open one is unknown.
+- Reasons to claim a Trump Account that have nothing to do with SpaceX: the ,000 seed for U.S.-citizen children born 2025 through 2028 requires a claim; family and employer contributions are blocked until claimed.
+
+Anything not on this list, you do not know. Never imply Musk will use Trump Accounts, and never tell the reader that claiming or opening an account helps them get the SpaceX share.
+
+## THE CLOSED URL LIST
+- https://www.cnn.com/2026/10/19/business/elon-musk-children-spacex-shares-x-post-intl
+- https://www.axios.com/2026/10/19/elon-musk-spacex-shares-kids
+- https://www.ibtimes.co.uk/elon-musk-reportedly-plans-give-105-billion-spacex-shares-every-single-us-child-1826413
+- https://thenextweb.com/news/shotwell-spacex-stock-trump-accounts
+- https://www.federalregister.gov/documents/2026/09/30/2026-20026/trump-accounts
+- https://home.treasury.gov/news/press-releases/sb0642
+- https://www.irs.gov/trumpaccounts
+- https://trumpaccounts.gov
+- https://stockanalysis.com/stocks/spcx/
+- https://stockanalysis.com/etf/ufo/
+- https://stockanalysis.com/etf/arkx/
+- https://stockanalysis.com/etf/nasa/
+- https://stockanalysis.com/etf/rokt/
+- https://www.investor.gov/introduction-investing/investing-basics/glossary/limit-order
+- https://www.investor.gov/introduction-investing/investing-basics/glossary/market-order
+- https://www.investor.gov/introduction-investing/investing-basics/glossary/fractional-share-investing
+- https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1
+- https://x.com/elonmusk
+- https://abc.xyz/
+- https://www.amazon.com/
+- https://www.ark-invest.com/
+- https://temaetfs.com/
+- https://procureetfs.com/
+- https://www.ssga.com/
+- https://www.census.gov/
+- https://www.spacex.com/
+- https://www.nasdaq.com/

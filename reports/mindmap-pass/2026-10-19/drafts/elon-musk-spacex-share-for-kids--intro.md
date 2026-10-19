@@ -1,0 +1,5 @@
+You cannot claim the share, because Musk has not said how, when, or through what account he will deliver it. Every guide we write at The Modern Wallet starts from what has actually been published, and here that is one post on [X](https://x.com/elonmusk).
+
+On Monday, October 19, 2026, Musk posted: "Next year, I will give one of my [SpaceX](https://www.spacex.com/) shares to every kid in America." He added: "This will be the first of many." Census estimates count about 72 million children under 18 in the United States. That puts the total scale of the gift at roughly $10.5 billion to $11 billion depending on the share price used.
+
+Musk's post does not mention Trump Accounts at all. This guide covers them only because they are one possible route whose rules are already public. Claiming or opening a Trump Account is not a way to claim the share, and doing so does not reserve stock for your child.

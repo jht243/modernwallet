@@ -1,0 +1,51 @@
+{
+ "slug": "elon-musk-spacex-share-for-kids--intro",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 157,
+ "floor": 0,
+ "input_tokens": 20966,
+ "output_tokens": 224,
+ "thinking_tokens": 3460,
+ "cached_tokens": 18074,
+ "est_cost_usd": 0.0173,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 157,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 1,
+   "found": [
+    0
+   ],
+   "applied": [],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 157
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 70.4,
+ "response_id": "rzvWarqJEsaF1sgPqrLegAw",
+ "generated_at": "2026-10-19T10:48:49-0500"
+}
