@@ -1,0 +1,127 @@
+{
+ "slug": "best-healthcare-directive-services",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 2973,
+ "floor": 900,
+ "input_tokens": 33252,
+ "output_tokens": 21486,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.5627,
+ "guards": {
+  "repairs": [
+   "removed 4 off-list link(s), kept the text"
+  ],
+  "flags": [
+   "auditor: verify the sentences that cited ['https://www.fivewishes.org/', 'https://www.legalzoom.com/', 'https://www.rocketlawyer.com/'] are still supported"
+  ],
+  "disallowed_urls_removed": [
+   "https://www.fivewishes.org/",
+   "https://www.legalzoom.com/",
+   "https://www.rocketlawyer.com/",
+   "https://www.trustandwill.com/"
+  ],
+  "words": 2973,
+  "numbers_not_in_facts": [
+   "498",
+   "74"
+  ],
+  "fact_budget": {
+   "fact_words": 742,
+   "floor": 900,
+   "ratio": 0.82,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    0
+   ],
+   "applied": [
+    {
+     "id": "options[2].description",
+     "quote": "The Will Plan, starting at $199, includes a Health Insurance Portability and Accountability Act (HIPAA) Authorization, a Living Will and a Power of Attorney alongside a Last Will & Testament.",
+     "replacement": "The Will Plan, starting at $199, includes a HIPAA Authorization, a Living Will and a Power of Attorney alongside a Last Will & Testament.",
+     "type": "unsupported",
+     "why": "SOURCE gives only the acronym HIPAA, not its expansion."
+    },
+    {
+     "id": "options[3].bestFor",
+     "quote": "Parents bundling health care and finance powers of attorney with a will, or covering a college-age student",
+     "replacement": "People bundling health care and finance powers of attorney with a will, or parents covering a college-age student",
+     "type": "unsupported",
+     "why": "SOURCE names parents only for the College Power of Attorney, not the will package."
+    },
+    {
+     "id": "options[3].description",
+     "quote": "A separate $89 College Power of Attorney includes health and finance power of attorney documents, a HIPAA release and a Family Educational Rights and Privacy Act (FERPA) waiver, to help a college-age student in an emergency.",
+     "replacement": "A separate $89 College Power of Attorney includes health and finance power of attorney documents, a HIPAA release and a FERPA waiver, to help a college-age student in an emergency.",
+     "type": "unsupported",
+     "why": "SOURCE gives only the acronym FERPA, not its expansion."
+    },
+    {
+     "id": "options[5].bestFor",
+     "quote": "People who want a plain-language paper living will, or copies for several family members",
+     "replacement": "People who want a plain-language paper living will, or multiple copies at bulk prices",
+     "type": "unsupported",
+     "why": "SOURCE states no family-member use case, only bulk copy prices."
+    },
+    {
+     "id": "options[5].strengths[0]",
+     "quote": "$5.00 per copy, the lowest paid price on this list",
+     "replacement": "$5.00 per copy",
+     "type": "inference",
+     "why": "Rocket Lawyer membership price is unpublished; ranking can't be confirmed."
+    },
+    {
+     "id": "options[5].limitations[0]",
+     "quote": "Paper only, so you fill it out by hand",
+     "replacement": "A paper form you complete yourself",
+     "type": "inference",
+     "why": "SOURCE says paper form you complete yourself; not 'only' or 'by hand'."
+    },
+    {
+     "id": "comparisonTable.rows[3].values[3]",
+     "quote": "Parents bundling powers of attorney with a will",
+     "replacement": "People bundling powers of attorney with a will",
+     "type": "unsupported",
+     "why": "SOURCE does not say the will package is aimed at parents."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Three of these services sell attorney time alongside the documents, and each prices it differently.",
+     "replacement": "Three of these services offer attorney access alongside the documents.",
+     "type": "inference",
+     "why": "Rocket Lawyer's attorney pricing is unpublished; 'prices differently' unsupported."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2999
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 258.6,
+ "response_id": "msg_011CgCTmakQkE4834sLp22vJ",
+ "generated_at": "2026-10-19T23:31:45+0000"
+}

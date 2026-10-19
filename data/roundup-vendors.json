@@ -4255,6 +4255,17 @@
      "added": "2026-10-19"
     }
    ]
+  },
+  "best-healthcare-directive-services": {
+   "domains": {
+    "FreeWill": "freewill.com",
+    "LegalZoom": "legalzoom.com",
+    "Trust & Will": "trustandwill.com",
+    "Mama Bear Legal Forms": "mamabearlegalforms.com",
+    "Rocket Lawyer": "rocketlawyer.com",
+    "Five Wishes": "fivewishes.org"
+   },
+   "added": []
   }
  }
 }
