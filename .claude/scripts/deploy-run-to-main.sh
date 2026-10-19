@@ -47,6 +47,17 @@
 #   5  (land only) the claude/land/* branch is pushed but the workflow has not merged it within
 #      LAND_DEADLINE seconds (default 600) -> check the repo's Actions tab; nothing is lost.
 #
+# EXIT CODES (verify)
+#   0  every URL is live (200, needle present)
+#   1  deadline passed and the host's latest build is NOT failed (slow build / propagation)
+#   6  the host's latest build FAILED on a build gate or compile error. The gate's own output is
+#      printed (file, line, cell). Fix THAT in this run, commit, land, verify again. Needs
+#      RENDER_API_KEY and .claude/scripts/render-deploy-status.sh; without them verify can only
+#      see a 404 and falls back to exit 1 (2026-10-19: 6 failed builds in a row were reported
+#      as "host stalled" because nothing read the build log).
+#   7  the host's latest build failed on infrastructure (clone/auth/registry); verify already
+#      asked Render for a fresh build once and it failed again -> report it, nothing to fix in code.
+#
 set -uo pipefail
 
 branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo HEAD)"
@@ -266,11 +277,45 @@ case "$cmd" in
     nudge_at=$(( start + ${VERIFY_DEADLINE:-420} / 2 ))
     nudged=""
     pending=("$@")
+    # HOST CHECK — with RENDER_API_KEY, ask the host what it did with main every ~30s. A FAILED
+    # build ends the wait at once with its log (exit 6 gate / 7 infra after one retry) instead of
+    # polling a 404 for the whole deadline and then nudging a tree that cannot build.
+    HOSTCHK="$(dirname "$0")/render-deploy-status.sh"
+    host_last=0; host_retried=""; host_status=""; host_commit=""
+    host_check() {
+      [ -n "${RENDER_API_KEY:-}" ] && [ -x "$HOSTCHK" ] || return 0
+      [ $(( $(date +%s) - host_last )) -ge 30 ] || return 0
+      host_last=$(date +%s)
+      local out rc
+      out="$("$HOSTCHK" status 2>&1)"; rc=$?
+      host_status="$(printf '%s' "$out" | sed -n '1s/.*STATUS=\([^ ]*\).*/\1/p')"
+      host_commit="$(printf '%s' "$out" | sed -n '1s/.*COMMIT=\([^ ]*\).*/\1/p')"
+      case $rc in
+        6) echo "[verify] HOST BUILD FAILED on a build gate; the page cannot go live until it is fixed:" >&2
+           printf '%s\n' "$out" >&2
+           exit 6 ;;
+        7) if [ -z "$host_retried" ]; then
+             host_retried=1
+             echo "[verify] host build failed on infrastructure; asking for a fresh build." >&2
+             "$HOSTCHK" retry >&2 || true
+             deadline=$(( deadline + ${VERIFY_NUDGE_EXTRA:-300} ))
+           else
+             echo "[verify] host build failed on infrastructure twice:" >&2
+             printf '%s\n' "$out" >&2
+             exit 7
+           fi ;;
+      esac
+      return 0
+    }
     while [ ${#pending[@]} -gt 0 ]; do
+      host_check
       still=()
       for spec in "${pending[@]}"; do
         u="${spec%%=*}"; needle=""; [ "$spec" != "$u" ] && needle="${spec#*=}"
-        body="$(curl -sL --max-time 20 -w '\n%{http_code}' "$u" || echo 000)"
+        # Cache-bust: the CDN caches a 404 for minutes after the page goes live (s-maxage=300),
+        # so without a unique query the poll can keep seeing the stale miss past the deadline.
+        case "$u" in *\?*) bust="${u}&v=$(date +%s)" ;; *) bust="${u}?v=$(date +%s)" ;; esac
+        body="$(curl -sL --max-time 20 -w '\n%{http_code}' "$bust" || echo 000)"
         code="${body##*$'\n'}"
         if [ "$code" = "200" ] && { [ -z "$needle" ] || printf '%s' "$body" | grep -qF -- "$needle"; }; then
           echo "200 $u${needle:+ (contains: $needle)}"
@@ -290,7 +335,15 @@ case "$cmd" in
       # blip) and Render never retries it, so the change sits unpublished until some other
       # routine happens to push. The empty commit is built on origin/main's tree, so it never
       # touches the working tree or ships anything new. VERIFY_NUDGE=0 turns it off.
-      if [ -z "$nudged" ] && [ "${VERIFY_NUDGE:-1}" != "0" ] && [ "$(date +%s)" -ge "$nudge_at" ]; then
+      # With the host check available, nudge only when the host never saw the push (its latest
+      # deploy is live for an older commit); a build in progress just needs more time.
+      case "$host_status" in
+        build_in_progress|update_in_progress|pre_deploy_in_progress|created|queued) nudge_ok="" ;;
+        live) git fetch -q origin main 2>/dev/null || true
+              [ "$host_commit" != "$(git rev-parse --short=7 origin/main 2>/dev/null)" ] && nudge_ok=1 || nudge_ok="" ;;
+        *) nudge_ok=1 ;;
+      esac
+      if [ -z "$nudged" ] && [ -n "$nudge_ok" ] && [ "${VERIFY_NUDGE:-1}" != "0" ] && [ "$(date +%s)" -ge "$nudge_at" ]; then
         nudged=1
         for _ in 1 2 3; do
           git fetch -q origin main || continue
