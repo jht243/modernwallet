@@ -1,0 +1,200 @@
+[keyword_data] ahrefs unusable (no AHREFS_API_KEY)
+[keyword_data] volume: using dataforseo (quality order ahrefs > dataforseo > semrush)
+[keyword_data] dataforseo returned volume for 9/12 phrases
+[keyword_data] semrush unusable (no SEMRUSH_API_KEY)
+[keyword_data] kd: using dataforseo (quality order ahrefs > semrush > dataforseo)
+[keyword_data] No tool volume for 3 phrases — autocomplete band (source=estimate, NOT measured)
+[keyword_data] Autocomplete: 11/12 rows corroborated live
+{
+ "rows": [
+  {
+   "keyword": "legalzoom vs trust and will",
+   "volume": 90,
+   "volume_low": 90,
+   "volume_high": 90,
+   "kd": 5,
+   "cpc": 5.52,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "trust and will vs legalzoom",
+   "volume": 320,
+   "volume_low": 320,
+   "volume_high": 320,
+   "kd": 0,
+   "cpc": 5.01,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "roth vs traditional 401k high income",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": 31,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "nerdwallet calculator",
+   "volume": 2900,
+   "volume_low": 2900,
+   "volume_high": 2900,
+   "kd": 64,
+   "cpc": 7.97,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "medicare vs medicaid cost",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": 15,
+   "cpc": 4.73,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "does medicare or medicaid pay first",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": 36,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "nerdwallet capital gains calculator",
+   "volume": 5400,
+   "volume_low": 5400,
+   "volume_high": 5400,
+   "kd": 29,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "nerdwallet dti calculator",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": 44,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "nerdwallet cost of living calculator",
+   "volume": 14800,
+   "volume_low": 14800,
+   "volume_high": 14800,
+   "kd": 37,
+   "cpc": 7.81,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "roth or traditional 401k high earner",
+   "volume": 250,
+   "volume_low": 250,
+   "volume_high": 2500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 250-2500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "roth vs traditional 401k employer match",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 100,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 4 live autocomplete completions (est. 10-100/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "roth and traditional 401k combined limit",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 partial prefix match + broad completion set (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "ahrefs unusable (no AHREFS_API_KEY)",
+  "volume: using dataforseo (quality order ahrefs > dataforseo > semrush)",
+  "dataforseo returned volume for 9/12 phrases",
+  "semrush unusable (no SEMRUSH_API_KEY)",
+  "kd: using dataforseo (quality order ahrefs > semrush > dataforseo)",
+  "No tool volume for 3 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 11/12 rows corroborated live"
+ ]
+}

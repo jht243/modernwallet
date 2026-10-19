@@ -1,0 +1,157 @@
+{
+ "rows": [
+  {
+   "keyword": "trust and will vs legalzoom",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.linkedin.com",
+    "ailawyer.pro",
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.linkedin.com",
+    "ailawyer.pro",
+    "www.reddit.com",
+    "ridleylawoffices.com",
+    "www.legalzoom.com",
+    "markmlegal.com",
+    "www.ncoa.org",
+    "www.facebook.com",
+    "livingtrust-attorneys.com",
+    "www.freewill.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.linkedin.com",
+    "www.reddit.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "What does Dave Ramsey say about trusts and wills?",
+    "Why do people use a trust instead of a will?",
+    "Is LegalZoom legit for wills?",
+    "Do LegalZoom wills hold up in court?",
+    "What are the downsides of using LegalZoom?",
+    "What is the biggest mistake with wills?"
+   ],
+   "related_searches": [
+    "Trust and will vs legalzoom reviews",
+    "Trust and will vs legalzoom reddit",
+    "Trust and will vs legalzoom pros and cons",
+    "Trust and will vs legalzoom cost",
+    "Trust and will vs legalzoom florida",
+    "Trust and will vs legalzoom california",
+    "Trust and Will reviews",
+    "LegalZoom will and trust cost"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.linkedin.com, www.reddit.com, www.facebook.com) incl. #1; AI Overview present, cites www.linkedin.com, ailawyer.pro, www.reddit.com, www.youtube.com",
+   "se_results_count": 122
+  },
+  {
+   "keyword": "roth or traditional 401k high earner",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.whitecoatinvestor.com",
+    "www.kiplinger.com",
+    "www.irs.gov",
+    "www.fidelity.com",
+    "www.greenbushfinancial.com",
+    "www.hartfordfunds.com",
+    "www.youtube.com",
+    "www.schwab.com",
+    "www.hartfordfunds.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How many Americans have $1,000,000 in their 401k?",
+    "Does Dave Ramsey recommend Roth or traditional 401k?",
+    "Can high income earners contribute to a Roth 401(k)?",
+    "Do billionaires use Roth IRA?",
+    "What does Warren Buffett think about Roth IRA?",
+    "How many Americans have $500,000 in their 401k?"
+   ],
+   "related_searches": [
+    "Roth or traditional 401k high earner reddit",
+    "Roth or traditional 401k high earner fidelity",
+    "Roth or traditional 401k high earner taxes",
+    "Should I do Roth or traditional 401k calculator",
+    "Roth or traditional 401k high earner 2022",
+    "Roth or traditional 401k high earner 2021",
+    "Roth vs traditional 401k 150k salary",
+    "Is Roth or traditional 401k better for young person"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; AI Overview present",
+   "se_results_count": 107
+  },
+  {
+   "keyword": "cost of living calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "www.payscale.com",
+    "www.bankrate.com",
+    "livingwage.mit.edu",
+    "www.rentcafe.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "futuriti.org",
+    "www.rocketmortgage.com",
+    "www.payscale.com",
+    "2009-2017.state.gov",
+    "www.mymove.com",
+    "www.payscale.com",
+    "www.apartmentlist.com",
+    "www.calcxml.com",
+    "careercenter.bauer.uh.edu",
+    "careercenter.bauer.uh.edu"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19
+   },
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.nerdwallet.com, www.payscale.com, www.bankrate.com, livingwage.mit.edu",
+   "se_results_count": 122
+  }
+ ],
+ "cost": "DataForSEO: 3 calls, $0.01230 of $2.00 budget"
+}
