@@ -1,0 +1,1 @@
+INDEXNOW OK 200 via api.indexnow.org key=dc55… host=www.themodernwallet.com urls=3
