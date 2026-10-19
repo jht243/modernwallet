@@ -3,8 +3,12 @@
  "rows": [],
  "cut": [
   {
-   "domain": "ditchnet.org",
-   "why": "category 1 \u2014 community forum, sells no product"
+   "domain": "tradersdna.com",
+   "why": "category 1 \u2014 publisher of broker comparisons and articles, no product of its own"
+  },
+  {
+   "domain": "appstoretracker.com",
+   "why": "category 3 \u2014 app-store chart tracking tool, not personal or small-business finance"
   }
  ]
 }

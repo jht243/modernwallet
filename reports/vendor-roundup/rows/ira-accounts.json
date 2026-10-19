@@ -1,22 +1,35 @@
 {
-  "slug": "best-ira-accounts",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "lowcountryledger.com",
-      "why": "category 1 \u2014 brokerage review site"
-    },
-    {
-      "domain": "topfundings.com",
-      "why": "category 1 \u2014 comparison/referral site"
-    },
-    {
-      "domain": "outandout.boardingarea.com",
-      "why": "category 1 \u2014 travel blog"
-    },
-    {
-      "domain": "foxbusiness.com",
-      "why": "category 1 \u2014 news publisher"
-    }
-  ]
+ "slug": "best-ira-accounts",
+ "rows": [
+  {
+   "name": "Capital Group",
+   "domain": "capitalgroup.com",
+   "url": "https://www.capitalgroup.com/individual/what-we-offer/iras.html",
+   "values": [
+    "Not published",
+    "Not published",
+    "None (target date funds)",
+    "N/A",
+    "Traditional and Roth IRAs invested in American Funds mutual funds"
+   ]
+  },
+  {
+   "name": "IRA Financial Group",
+   "domain": "irafinancial.com",
+   "url": "https://irafinancial.com",
+   "values": [
+    "$495 flat (Self-Directed IRA)",
+    "Not published",
+    "None",
+    "N/A",
+    "Self-directed investors holding real estate, crypto or private assets"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "mezzi.com",
+   "why": "category 4 — AI wealth adviser, no IRA offered on site; fits robo-advisors category"
+  }
+ ]
 }

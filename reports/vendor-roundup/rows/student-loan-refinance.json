@@ -1,10 +1,22 @@
 {
-  "slug": "best-student-loan-refinance",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "goodloan.ai",
-      "why": "category 4 — mortgage lender (OM Mortgage), no student loan refinance; fits mortgage lenders category"
-    }
-  ]
+ "slug": "best-student-loan-refinance",
+ "rows": [],
+ "cut": [
+  {
+   "domain": "dollargeek.com",
+   "why": "category 1 \u2014 publisher, no loan product of its own"
+  },
+  {
+   "domain": "communitycollegereview.com",
+   "why": "category 1 \u2014 college directory/publisher"
+  },
+  {
+   "domain": "frontend-astro-dev.savingforcollege.com",
+   "why": "category 1 \u2014 publisher (dev copy of Saving For College), no loan product"
+  },
+  {
+   "domain": "debt.org",
+   "why": "category 1 \u2014 publisher/lead-gen referring to third-party lenders"
+  }
+ ]
 }

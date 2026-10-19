@@ -1,18 +1,23 @@
 {
-  "slug": "best-mortgage-lenders",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "nchfa.com",
-      "why": "category 1 \u2014 state housing finance agency, government"
-    },
-    {
-      "domain": "scotsmanguide.com",
-      "why": "category 1 \u2014 trade publisher, no product of its own"
-    },
-    {
-      "domain": "mpamag.com",
-      "why": "category 1 \u2014 mortgage trade publication"
-    }
-  ]
+ "slug": "best-mortgage-lenders",
+ "rows": [
+  {
+   "name": "McKinley Mortgage",
+   "domain": "bestlowrates.com",
+   "url": "https://bestlowrates.com",
+   "values": [
+    "Cincinnati-area borrowers wanting a local lender",
+    "Yes",
+    "Yes",
+    "Not published",
+    "Closing in your home, available seven days a week"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "thetruthaboutmortgage.com",
+   "why": "category 1 \u2014 mortgage education blog, no loan product of its own"
+  }
+ ]
 }

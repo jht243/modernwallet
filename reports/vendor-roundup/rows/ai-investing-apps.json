@@ -2,21 +2,16 @@
  "slug": "best-ai-investing-apps",
  "rows": [
   {
-   "name": "TruthSayer AI",
-   "domain": "truthsayer.com",
-   "url": "https://truthsayer.com",
+   "name": "WallStreetZen",
+   "domain": "wallstreetzen.com",
+   "url": "https://wallstreetzen.com",
    "values": [
-    "Retail investors who want model-generated stock trade alerts",
-    "7-day free trial, then $10.99/mo or $71.88/yr",
-    "Rule-based quant models plus an AI chat explaining each signal",
-    "Not published; alerts only, no custody or trading"
+    "Stock research using Zen Ratings quant scores",
+    "Premium $19.50/mo billed yearly; $1 14-day trial",
+    "Zen Ratings, a 115-factor model the site says uses AI",
+    "N/A"
    ]
   }
  ],
- "cut": [
-  {
-   "domain": "ideausher.com",
-   "why": "category 3 \u2014 custom software development agency, sells no investing app"
-  }
- ]
+ "cut": []
 }

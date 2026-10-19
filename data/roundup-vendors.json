@@ -84,6 +84,18 @@
       "Not published; alerts only, no custody or trading"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "WallStreetZen",
+     "domain": "wallstreetzen.com",
+     "url": "https://wallstreetzen.com",
+     "values": [
+      "Stock research using Zen Ratings quant scores",
+      "Premium $19.50/mo billed yearly; $1 14-day trial",
+      "Zen Ratings, a 115-factor model the site says uses AI",
+      "N/A"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -202,6 +214,18 @@
       "Not published; Premium listed as coming soon"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "Multibagg AI",
+     "domain": "multibagg.ai",
+     "url": "https://multibagg.ai",
+     "values": [
+      "Retail investors researching Indian stocks (NSE and BSE)",
+      "Ask Iris answers from company filings; AI-curated stock themes",
+      "Yes (Standard plan, 7-day paid trial)",
+      "₹7,199/year (Pro)"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -385,6 +409,19 @@
       "Closing in as little as 14 days"
      ],
      "added": "2026-10-15"
+    },
+    {
+     "name": "McKinley Mortgage",
+     "domain": "bestlowrates.com",
+     "url": "https://bestlowrates.com",
+     "values": [
+      "Cincinnati-area borrowers wanting a local lender",
+      "Yes",
+      "Yes",
+      "Not published",
+      "Closing in your home, available seven days a week"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -437,6 +474,32 @@
       "Bank customers wanting CD, money market or managed IRAs"
      ],
      "added": "2026-10-15"
+    },
+    {
+     "name": "Capital Group",
+     "domain": "capitalgroup.com",
+     "url": "https://www.capitalgroup.com/individual/what-we-offer/iras.html",
+     "values": [
+      "Not published",
+      "Not published",
+      "None (target date funds)",
+      "N/A",
+      "Traditional and Roth IRAs invested in American Funds mutual funds"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "IRA Financial Group",
+     "domain": "irafinancial.com",
+     "url": "https://irafinancial.com",
+     "values": [
+      "$495 flat (Self-Directed IRA)",
+      "Not published",
+      "None",
+      "N/A",
+      "Self-directed investors holding real estate, crypto or private assets"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -983,6 +1046,32 @@
       "People tracking balances, spending and goals in one place"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Richify",
+     "domain": "richify.ai",
+     "url": "https://richify.ai",
+     "values": [
+      "Free download, 7-day trial; paid price not published",
+      "Not published",
+      "Yes (property and mortgage tracking)",
+      "FIRE and 401(k) calculators",
+      "Homeowners and couples wanting AI-guided money help"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "WorthTracker",
+     "domain": "worthtracker.com",
+     "url": "https://worthtracker.com",
+     "values": [
+      "Not published",
+      "Basic (tracks stock portfolio value only)",
+      "Yes (manual entry as an asset)",
+      "Not published",
+      "People replacing spreadsheets, with no bank linking"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -1484,6 +1573,58 @@
       "Yes, Florida attorney-reviewed; Fort Lauderdale"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "LawDepot",
+     "domain": "lawdepot.com",
+     "url": "https://www.lawdepot.com",
+     "values": [
+      "Not published",
+      "Pour-over will offered; requires a living trust first",
+      "Not published",
+      "Not published",
+      "No"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "USAA",
+     "domain": "usaa.com",
+     "url": "https://www.usaa.com/inet/wc/wills-and-trusts",
+     "values": [
+      "Not published",
+      "Not published",
+      "Not published",
+      "Not published",
+      "Not published"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Estate Doc Prep",
+     "domain": "estatedocprep.com",
+     "url": "https://estatedocprep.com",
+     "values": [
+      "Not published",
+      "Not published",
+      "Not published",
+      "Not published",
+      "Yes, attorney-written trusts built from an online interview"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Thomas-Walters",
+     "domain": "thomas-walters.com",
+     "url": "https://thomas-walters.com",
+     "values": [
+      "$4,000 to $7,000 for trust-based plan",
+      "Not published",
+      "Not published",
+      "Not published",
+      "Yes, attorney-prepared, flat fee, free 15-minute call"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -1963,6 +2104,45 @@
       "A few hours to a few days, depending on lender"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "Truliant Federal Credit Union",
+     "domain": "truliantfcu.org",
+     "url": "https://www.truliantfcu.org/personal-loans",
+     "values": [
+      "Members wanting fixed payments, no origination fee",
+      "$1,000 to $50,000",
+      "From 7.49% APR as of Oct 2026",
+      "No origination fee, no prepayment penalty",
+      "Not published"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Credit Union of Texas",
+     "domain": "cutx.org",
+     "url": "https://www.cutx.org/personal-loans",
+     "values": [
+      "Members who can use savings-secured or unsecured loans",
+      "Not published",
+      "Example: 14.24% APR on $5,000 over 60 months, as of Oct 2026",
+      "$50 origination under $1,000; $100 at $1,000 or more",
+      "Often same day"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "SkyOne Federal Credit Union",
+     "domain": "skyone.org",
+     "url": "https://www.skyone.org/personal-loans",
+     "values": [
+      "Members wanting a loan or line of credit with autopay discounts",
+      "$500 to $50,000",
+      "From 13.99% APR as of Oct 2026",
+      "Not published",
+      "Not published"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -2246,6 +2426,17 @@
       "Open-source net worth and portfolio tracking across platforms"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "AllInvestView",
+     "domain": "allinvestview.com",
+     "url": "https://allinvestview.com",
+     "values": [
+      "Not published",
+      "Yes, free signup; live demo needs no account",
+      "Portfolio tracking with Monte Carlo and Efficient Frontier analysis"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -2431,6 +2622,54 @@
       "$500K ARR, 3+ months runway"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "Dealstruck",
+     "domain": "dealstruck.com",
+     "url": "https://dealstruck.com",
+     "values": [
+      "Term loan and A/R line of credit",
+      "Up to $500,000",
+      "Funding in as little as 3 days",
+      "Not published"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "ROK Financial",
+     "domain": "rok.biz",
+     "url": "https://rok.biz",
+     "values": [
+      "Term loans, lines of credit, SBA, equipment, A/R financing",
+      "$10,000 to $5 million",
+      "1-3 days (term loans)",
+      "6 months in business, $10K monthly sales, 500 credit score"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Universal Funding",
+     "domain": "universalfunding.com",
+     "url": "https://universalfunding.com",
+     "values": [
+      "Invoice factoring",
+      "$25,000 to $20 million in invoices",
+      "Funding within 24 hours of approval",
+      "B2B invoices; criteria not published"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Payro Finance",
+     "domain": "payrofinance.com",
+     "url": "https://payrofinance.com",
+     "values": [
+      "Short-term payroll loans",
+      "Up to $500,000",
+      "As fast as 48 hours",
+      "2+ years in business, 5+ employees, $25,000 monthly revenue"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -2633,6 +2872,54 @@
       "Invoice factoring plus AR financing and fuel card"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "Resolve",
+     "domain": "resolvepay.com",
+     "url": "https://resolvepay.com",
+     "values": [
+      "B2B net terms for sellers with invoice cash advance",
+      "Not published",
+      "Funding in 1-2 business days",
+      "Advance on invoice; example $10,800 on $12,000"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "American Receivable",
+     "domain": "americanreceivable.com",
+     "url": "https://americanreceivable.com",
+     "values": [
+      "B2B: staffing, oil and gas, manufacturing, IT",
+      "Recourse & non-recourse",
+      "Next-day funding after approval",
+      "Invoice sale, spot factoring, no long-term contracts"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Kickfurther",
+     "domain": "kickfurther.com",
+     "url": "https://kickfurther.com",
+     "values": [
+      "Inventory financing for CPG brands",
+      "Not recourse-based; consignment, not a loan",
+      "Approval about 72 hours",
+      "Marketplace where buyers fund inventory on consignment"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Business Factors & Finance",
+     "domain": "businessfactors.com",
+     "url": "https://businessfactors.com",
+     "values": [
+      "Freight, healthcare, staffing, government, oil and gas",
+      "Non-recourse offered",
+      "24 hours established; 24-72 hours new clients",
+      "Spot and contract factoring; advance up to 96%"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -2674,6 +2961,30 @@
       "Small businesses; needs four months of bank statements"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Relay",
+     "domain": "relayfi.com",
+     "url": "https://relayfi.com",
+     "values": [
+      "Business credit card and term loans; no line of credit listed",
+      "Not published",
+      "Checking plans $0, $30 or $120/mo; additional transaction fees apply",
+      "Small businesses wanting banking plus a credit card"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Novo",
+     "domain": "novo.co",
+     "url": "https://novo.co",
+     "values": [
+      "Term loan up to $50,000; no line of credit listed",
+      "APR set at offer; Not published",
+      "No application, origination or servicing fees; no prepayment penalty",
+      "Novo checking customers needing a small term loan"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -3089,6 +3400,18 @@
       "Approval dashboards, reporting, FAVR and car allowance programs"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Expensify",
+     "domain": "use.expensify.com",
+     "url": "https://use.expensify.com",
+     "values": [
+      "Free to start; limits not published",
+      "Not published",
+      "Yes, GPS",
+      "Expense reports, receipt capture, IRS-rate mileage"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -3276,6 +3599,30 @@
       "Freelancers and sole proprietors tracking deductions and quarterly taxes"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "Flowlu",
+     "domain": "flowlu.com",
+     "url": "https://flowlu.com",
+     "values": [
+      "Free; paid from $9/user/mo billed yearly",
+      "100 CRM contacts on free plan",
+      "Yes, invoices and estimates on free plan",
+      "Freelancers wanting CRM, projects and invoicing in one tool"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "HashMicro",
+     "domain": "hashmicro.com",
+     "url": "https://hashmicro.com",
+     "values": [
+      "Not published (quote-based)",
+      "Not published",
+      "Not published",
+      "Larger businesses wanting an ERP with an accounting module"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -3719,6 +4066,42 @@
       "Freelancers and contractors wanting simple PDF invoices"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "SwiftBill",
+     "domain": "getswiftbill.app",
+     "url": "https://getswiftbill.app",
+     "values": [
+      "Free tier of 5 invoices/month; paid price Not published",
+      "Not published",
+      "Not published",
+      "Freelancers wanting a simple mobile invoice generator"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Aspire",
+     "domain": "aspireapp.com",
+     "url": "https://aspireapp.com",
+     "values": [
+      "Not published",
+      "Not published",
+      "Not published",
+      "Businesses wanting multi-currency accounts with receivables tools"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Billing+",
+     "domain": "getbilling.co",
+     "url": "https://getbilling.co",
+     "values": [
+      "Free; Premium $10/month or $99/year",
+      "Yes, Premium plan",
+      "Not published; payment gateway fees apply",
+      "Freelancers and small merchants needing invoicing plus in-person sales"
+     ],
+     "added": "2026-10-19"
     }
    ]
   },
@@ -3750,7 +4133,128 @@
    "domains": {
     "Back of House Ops": "backhousehr.com"
    },
-   "added": []
+   "added": [
+    {
+     "name": "King & Bishop",
+     "domain": "kingbishop.com",
+     "url": "https://kingbishop.com",
+     "values": [
+      "Staffing firm with fractional HR (People Vantage HR) and payrolling",
+      "Not published",
+      "Separate payrolling service offered",
+      "Not stated"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Empowered Hospitality",
+     "domain": "empoweredhospitality.com",
+     "url": "https://empoweredhospitality.com",
+     "values": [
+      "Hospitality HR consulting, outsourced and interim HR",
+      "Not published; no long-term contracts",
+      "Offers payroll administration",
+      "Not stated"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "AIM HR Solutions",
+     "domain": "aimhrsolutions.com",
+     "url": "https://aimhrsolutions.com",
+     "values": [
+      "Fractional and on-demand HR, compliance audits, training",
+      "Not published",
+      "Not published",
+      "Not stated"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Catapult",
+     "domain": "letscatapult.org",
+     "url": "https://letscatapult.org",
+     "values": [
+      "Membership HR services; says it is not a PEO",
+      "$2,850 to $12,500/yr membership tiers",
+      "Payroll compliance support",
+      "You (no co-employment)"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "HR2Fit",
+     "domain": "hr2fit.com",
+     "url": "https://hr2fit.com",
+     "values": [
+      "Outsourced HR for small and mid-size businesses",
+      "Not published",
+      "Offers payroll administration",
+      "Not stated"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Flex HR",
+     "domain": "flexhr.com",
+     "url": "https://flexhr.com",
+     "values": [
+      "HR outsourcing and consulting (ASO, not PEO)",
+      "Not published; free quote",
+      "Flex HR runs payroll and payroll tax",
+      "You (no co-employment)"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "DineHR",
+     "domain": "dinehr.com",
+     "url": "https://dinehr.com",
+     "values": [
+      "Restaurant HR compliance support plans",
+      "From $795/mo",
+      "Not published",
+      "Not stated"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Restaurant HR Group",
+     "domain": "restauranthrgroup.com",
+     "url": "https://restauranthrgroup.com",
+     "values": [
+      "Full HR outsourcing for restaurants",
+      "Not published",
+      "Payroll processing included in outsourcing",
+      "Not stated"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Melody Beach Consulting Group",
+     "domain": "melodybeachconsulting.com",
+     "url": "https://melodybeachconsulting.com",
+     "values": [
+      "HR consulting, interim HR, outsourced or project-based",
+      "Not published",
+      "Not published",
+      "Not stated"
+     ],
+     "added": "2026-10-19"
+    },
+    {
+     "name": "Pappas & Pappas",
+     "domain": "pappas2.com",
+     "url": "https://pappas2.com",
+     "values": [
+      "HR staffing, executive search and Outstaffing recruiting outsourcing",
+      "Not published",
+      "Not published",
+      "Not stated"
+     ],
+     "added": "2026-10-19"
+    }
+   ]
   }
  }
 }

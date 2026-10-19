@@ -1,10 +1,37 @@
 {
  "slug": "business-line-of-credit-rates-by-lender",
- "rows": [],
+ "rows": [
+  {
+   "name": "Relay",
+   "domain": "relayfi.com",
+   "url": "https://relayfi.com",
+   "values": [
+    "Business credit card and term loans; no line of credit listed",
+    "Not published",
+    "Checking plans $0, $30 or $120/mo; additional transaction fees apply",
+    "Small businesses wanting banking plus a credit card"
+   ]
+  },
+  {
+   "name": "Novo",
+   "domain": "novo.co",
+   "url": "https://novo.co",
+   "values": [
+    "Term loan up to $50,000; no line of credit listed",
+    "APR set at offer; Not published",
+    "No application, origination or servicing fees; no prepayment penalty",
+    "Novo checking customers needing a small term loan"
+   ]
+  }
+ ],
  "cut": [
   {
-   "domain": "nationwide.com",
-   "why": "category 4 \u2014 insurance and surety only; no business line of credit on its business page"
+   "domain": "found.com",
+   "why": "category 4 \u2014 fits business banking category; states it is not a lender and has no credit product"
+  },
+  {
+   "domain": "funderintel.com",
+   "why": "category 1 \u2014 directory and matching platform for funders, not a lender"
   }
  ]
 }

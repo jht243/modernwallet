@@ -2,21 +2,16 @@
  "slug": "best-ai-stock-pickers",
  "rows": [
   {
-   "name": "Hallucination Yield",
-   "domain": "hallucinationyield.com",
-   "url": "https://hallucinationyield.com",
+   "name": "Multibagg AI",
+   "domain": "multibagg.ai",
+   "url": "https://multibagg.ai",
    "values": [
-    "Researchers following what AI models say about stocks",
-    "Aggregated AI-model consensus rankings and an AI stock screener",
-    "Yes, all current features free",
-    "Not published; Premium listed as coming soon"
+    "Retail investors researching Indian stocks (NSE and BSE)",
+    "Ask Iris answers from company filings; AI-curated stock themes",
+    "Yes (Standard plan, 7-day paid trial)",
+    "₹7,199/year (Pro)"
    ]
   }
  ],
- "cut": [
-  {
-   "domain": "f6s.com",
-   "why": "category 1 \u2014 startup/software directory, no product of its own"
-  }
- ]
+ "cut": []
 }

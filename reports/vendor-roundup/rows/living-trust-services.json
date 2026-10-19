@@ -2,122 +2,58 @@
  "slug": "best-living-trust-services",
  "rows": [
   {
-   "name": "Surprenant, Beneski & Nunes, P.C.",
-   "domain": "myfamilyestateplanning.com",
-   "url": "https://myfamilyestateplanning.com",
+   "name": "LawDepot",
+   "domain": "lawdepot.com",
+   "url": "https://www.lawdepot.com",
    "values": [
     "Not published",
+    "Pour-over will offered; requires a living trust first",
     "Not published",
     "Not published",
-    "Yes: special needs and Medicaid trusts",
-    "Yes, law firm; MA offices"
+    "No"
    ]
   },
   {
-   "name": "White and Bright, LLP",
-   "domain": "whiteandbright.com",
-   "url": "https://whiteandbright.com",
+   "name": "USAA",
+   "domain": "usaa.com",
+   "url": "https://www.usaa.com/inet/wc/wills-and-trusts",
    "values": [
-    "Not published; call 760-747-3200",
     "Not published",
     "Not published",
-    "Trusts and estates practice; details not published",
-    "Yes, law firm in Escondido, CA"
+    "Not published",
+    "Not published",
+    "Not published"
    ]
   },
   {
-   "name": "Ettinger Law Firm",
-   "domain": "trustlaw.com",
-   "url": "https://trustlaw.com",
+   "name": "Estate Doc Prep",
+   "domain": "estatedocprep.com",
+   "url": "https://estatedocprep.com",
    "values": [
-    "Not published; fee proposal at free consultation",
     "Not published",
     "Not published",
-    "Special needs trusts and Medicaid asset protection",
-    "Yes, law firm with 12 New York offices"
+    "Not published",
+    "Not published",
+    "Yes, attorney-written trusts built from an online interview"
    ]
   },
   {
-   "name": "Montgomery Law Firm, LLC",
-   "domain": "montgomeryestateplanning.com",
-   "url": "https://montgomeryestateplanning.com",
+   "name": "Thomas-Walters",
+   "domain": "thomas-walters.com",
+   "url": "https://thomas-walters.com",
    "values": [
-    "Not published; call (843) 815-8580",
-    "Not published",
-    "Not published",
-    "Irrevocable trust FAQ listed; fees not published",
-    "Yes, attorney-led firm in Bluffton, SC"
-   ]
-  },
-  {
-   "name": "Robert K. Lee, Attorney",
-   "domain": "robertkleelaw.com",
-   "url": "https://robertkleelaw.com",
-   "values": [
-    "Flat fee; amount not published on homepage",
+    "$4,000 to $7,000 for trust-based plan",
     "Not published",
     "Not published",
     "Not published",
-    "Yes, California attorney licensed 36 years"
-   ]
-  },
-  {
-   "name": "Best Coast Estate Law, P.C.",
-   "domain": "bestcoastestatelaw.com",
-   "url": "https://bestcoastestatelaw.com",
-   "values": [
-    "$3,500 individual / $5,000 couple",
-    "Will included in trust package",
-    "Deed and transfer document included",
-    "Not published",
-    "Yes, California law firm"
-   ]
-  },
-  {
-   "name": "ArchAngel Trust and Probate Services, APC",
-   "domain": "archangeltrust.com",
-   "url": "https://archangeltrust.com",
-   "values": [
-    "Not published; call (760) 946-2233",
-    "Offered; inclusion not stated",
-    "Deeds recorded, accounts retitled",
-    "Special needs trusts; irrevocable not stated",
-    "Yes, Attorney Victoria P. Martin"
-   ]
-  },
-  {
-   "name": "Mint Law Group LLP",
-   "domain": "mintlawfirm.com",
-   "url": "https://mintlawfirm.com",
-   "values": [
-    "Not published; call 863-216-7886",
-    "Not published",
-    "Not published",
-    "Mentions complex tax-avoiding trusts; no detail",
-    "Yes, Lakeland, FL law firm"
-   ]
-  },
-  {
-   "name": "Law Offices of Odelia Goldberg",
-   "domain": "ogoldberglaw.com",
-   "url": "https://ogoldberglaw.com",
-   "values": [
-    "Not published; call 954-832-0885",
-    "Not published",
-    "Not published",
-    "Not published",
-    "Yes, Florida attorney-reviewed; Fort Lauderdale"
+    "Yes, attorney-prepared, flat fee, free 15-minute call"
    ]
   }
  ],
  "cut": [
   {
-   "domain": "actec.org",
-   "why": "category 1 \u2014 professional association and lawyer directory, no service of its own"
-  },
-  {
-   "domain": "jasonwootten.com",
-   "why": "category 2 \u2014 unverifiable: site returned no content and search found nothing; SERP title is a listicle"
+   "domain": "topconsumerreviews.com",
+   "why": "category 1 \u2014 review site with no product of its own"
   }
  ]
 }

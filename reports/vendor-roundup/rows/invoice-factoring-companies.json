@@ -2,51 +2,49 @@
  "slug": "best-invoice-factoring-companies",
  "rows": [
   {
-   "name": "Liquid Capital",
-   "domain": "liquidcapitalcorp.com",
-   "url": "https://liquidcapitalcorp.com",
+   "name": "Resolve",
+   "domain": "resolvepay.com",
+   "url": "https://resolvepay.com",
    "values": [
-    "General B2B factoring, asset-based lending, PO financing",
+    "B2B net terms for sellers with invoice cash advance",
     "Not published",
-    "As fast as one day",
-    "Invoice purchase, 80%+ advance, reserve on collection; up to $10M"
+    "Funding in 1-2 business days",
+    "Advance on invoice; example $10,800 on $12,000"
    ]
   },
   {
-   "name": "Transwest Capital",
-   "domain": "transwestcapital.com",
-   "url": "https://transwestcapital.com",
+   "name": "American Receivable",
+   "domain": "americanreceivable.com",
+   "url": "https://americanreceivable.com",
    "values": [
-    "General B2B, freight and payroll funding",
-    "Not published",
-    "Same-day funding claimed",
-    "Invoice factoring plus AR financing and fuel card"
+    "B2B: staffing, oil and gas, manufacturing, IT",
+    "Recourse & non-recourse",
+    "Next-day funding after approval",
+    "Invoice sale, spot factoring, no long-term contracts"
    ]
   },
   {
-   "name": "Factor Funding",
-   "domain": "factorfunding.com",
-   "url": "https://factorfunding.com",
+   "name": "Kickfurther",
+   "domain": "kickfurther.com",
+   "url": "https://kickfurther.com",
    "values": [
-    "AR factoring plus asset-based, PO and equipment finance",
-    "Not published",
-    "24-48 hours after approval",
-    "$10K to $10M per month; advance rate not published"
+    "Inventory financing for CPG brands",
+    "Not recourse-based; consignment, not a loan",
+    "Approval about 72 hours",
+    "Marketplace where buyers fund inventory on consignment"
+   ]
+  },
+  {
+   "name": "Business Factors & Finance",
+   "domain": "businessfactors.com",
+   "url": "https://businessfactors.com",
+   "values": [
+    "Freight, healthcare, staffing, government, oil and gas",
+    "Non-recourse offered",
+    "24 hours established; 24-72 hours new clients",
+    "Spot and contract factoring; advance up to 96%"
    ]
   }
  ],
- "cut": [
-  {
-   "domain": "atsinc.com",
-   "why": "category 3 \u2014 Anderson Trucking Service, a freight carrier with no factoring product"
-  },
-  {
-   "domain": "staging.dripcapital.com",
-   "why": "category 2 \u2014 staging mirror of dripcapital.com that loads only a title; unverifiable"
-  },
-  {
-   "domain": "factoringclub.com",
-   "why": "category 1 \u2014 referral/matchmaking directory, not a factor"
-  }
- ]
+ "cut": []
 }

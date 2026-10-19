@@ -2,35 +2,52 @@
   "site": "themodernwallet.com",
   "cut_as_other_category": {
     "unlabelled": [
-      "arc.dev",
-      "businessdebtadjusters.com",
-      "carry.com",
+      "admin316.com",
       "certumsolutions.com",
       "cheers.credit",
-      "colewealth.com",
       "connecteam.com",
+      "deel.com",
       "emburse.com",
       "equifax.com",
-      "gainaltitude.ai",
-      "grantphillipslaw.com",
-      "institutionhq.com",
+      "hyrotrader.com",
       "jotform.com",
-      "legendfusions.com",
-      "metlife.com",
-      "portant.co",
-      "studentloanplanner.com",
-      "verdence.com",
-      "walnutinvest.com",
-      "webcatalog.io"
+      "law.co",
+      "nationwide.com",
+      "survaipro.com",
+      "theknot.com",
+      "walnutinvest.com"
     ],
-    "business insurance": [
-      "thehartford.com"
+    "brokers": [
+      "vtmarkets.com"
     ],
-    "business software": [
-      "docupilot.com"
+    "trading platforms": [
+      "bookmap.com"
     ],
-    "crypto exchange": [
-      "changeinvest.com"
+    "debt relief": [
+      "incharge.org"
+    ],
+    "banks/credit unions": [
+      "communityamerica.com",
+      "spiritfinancialcu.org"
+    ],
+    "personal loans": [
+      "gauss.money"
+    ],
+    "credit monitoring": [
+      "creditsesame.com"
+    ],
+    "financial advisor": [
+      "kerberrose.com",
+      "wealthgenadvisor.com"
+    ],
+    "financial education": [
+      "kidvestors.co"
+    ],
+    "financial planning and life insurance categories": [
+      "northwesternmutual.com"
+    ],
+    "mortgage lenders": [
+      "goodloan.ai"
     ]
   },
   "demand_candidates": [
@@ -91,7 +108,7 @@
     },
     {
       "head": "best buy credit card log in",
-      "volume": 769100,
+      "volume": 776500,
       "queries": [
         "best buy credit card log in",
         "best buy credit card: log in",
@@ -203,20 +220,20 @@
       ]
     },
     {
+      "head": "pay for best buy credit card",
+      "volume": 222000,
+      "queries": [
+        "pay for best buy credit card",
+        "pay best buy credit card",
+        "best buy pay credit card"
+      ]
+    },
+    {
       "head": "best credit card for traveling",
       "volume": 220000,
       "queries": [
         "best credit card for traveling",
         "best credit card traveling"
-      ]
-    },
-    {
-      "head": "pay best buy credit card",
-      "volume": 208500,
-      "queries": [
-        "pay best buy credit card",
-        "best buy pay credit card",
-        "pay for best buy credit card"
       ]
     },
     {
@@ -415,6 +432,13 @@
       ]
     },
     {
+      "head": "pay best buy credit card payment",
+      "volume": 74000,
+      "queries": [
+        "pay best buy credit card payment"
+      ]
+    },
+    {
       "head": "best buy credit card pa",
       "volume": 74000,
       "queries": [
@@ -447,13 +471,6 @@
       ]
     },
     {
-      "head": "pay best buy credit card payment",
-      "volume": 60500,
-      "queries": [
-        "pay best buy credit card payment"
-      ]
-    },
-    {
       "head": "pay your best buy credit card",
       "volume": 60500,
       "queries": [
@@ -479,19 +496,19 @@
       ]
     },
     {
-      "head": "best small business banks",
-      "volume": 57600,
+      "head": "small business best bank",
+      "volume": 55200,
       "queries": [
-        "best small business banks",
         "small business best bank",
-        "best small business bank",
+        "best small business banks",
         "best business banks for small business",
         "best bank for a small business",
         "best bank small business",
         "best banks small business",
         "best bank for small business",
         "best banks for small business",
-        "best business bank for small business"
+        "best business bank for small business",
+        "best small business bank"
       ]
     },
     {
@@ -560,18 +577,6 @@
       ]
     },
     {
-      "head": "small business banking best",
-      "volume": 37200,
-      "queries": [
-        "small business banking best",
-        "best business banking small business",
-        "best business banking for small business",
-        "best small business banking",
-        "best for small business banking",
-        "best banking for small business"
-      ]
-    },
-    {
       "head": "best mileage credit card",
       "volume": 36300,
       "queries": [
@@ -596,6 +601,18 @@
         "best credit card for airline mileage",
         "best airline mileage credit card",
         "best airlines mileage credit card"
+      ]
+    },
+    {
+      "head": "best business banking small business",
+      "volume": 34800,
+      "queries": [
+        "best business banking small business",
+        "best small business banking",
+        "small business banking best",
+        "best for small business banking",
+        "best banking for small business",
+        "best business banking for small business"
       ]
     },
     {

@@ -2,73 +2,40 @@
  "slug": "best-accounting-software-for-freelancers",
  "rows": [
   {
-   "name": "Lettuce",
-   "domain": "lettuce.co",
-   "url": "https://lettuce.co",
+   "name": "Flowlu",
+   "domain": "flowlu.com",
+   "url": "https://flowlu.com",
    "values": [
-    "$49/mo (Grow, LLC management)",
-    "Not published",
-    "Invoice management included",
-    "Solo owners wanting LLC/S Corp, tax and books handled"
+    "Free; paid from $9/user/mo billed yearly",
+    "100 CRM contacts on free plan",
+    "Yes, invoices and estimates on free plan",
+    "Freelancers wanting CRM, projects and invoicing in one tool"
    ]
   },
   {
-   "name": "Pilot",
-   "domain": "pilot.com",
-   "url": "https://pilot.com",
+   "name": "HashMicro",
+   "domain": "hashmicro.com",
+   "url": "https://hashmicro.com",
    "values": [
-    "$99/mo (Essentials bookkeeping)",
-    "N/A",
-    "Not published",
-    "Startups and small businesses wanting done-for-you books"
-   ]
-  },
-  {
-   "name": "Steph's Books",
-   "domain": "stephsbooks.com",
-   "url": "https://stephsbooks.com",
-   "values": [
-    "From $350/mo; quote-based",
-    "N/A",
-    "AR/AP service offered",
-    "Professional services firms with $1MM-$10MM revenue"
-   ]
-  },
-  {
-   "name": "Cashflowy",
-   "domain": "cashflowy.ai",
-   "url": "https://cashflowy.ai",
-   "values": [
-    "$39/mo or $390/yr",
+    "Not published (quote-based)",
     "Not published",
     "Not published",
-    "US solo owners wanting bookkeeping and tax set-aside planning"
-   ]
-  },
-  {
-   "name": "ClaryBook",
-   "domain": "clarybook.com",
-   "url": "https://clarybook.com",
-   "values": [
-    "$15/mo Starter; 30-day free trial",
-    "Not published",
-    "PDF invoices, reminders, A/R aging",
-    "Freelancers and sole proprietors tracking deductions and quarterly taxes"
+    "Larger businesses wanting an ERP with an accounting module"
    ]
   }
  ],
  "cut": [
   {
-   "domain": "deel.com",
-   "why": "category 4 \u2014 global payroll/contractor-hiring platform; no bookkeeping or freelancer accounting product"
+   "domain": "invoicera.com",
+   "why": "category 4 \u2014 fits invoicing apps category; billing software that is not a general ledger"
   },
   {
-   "domain": "makealivingwriting.com",
-   "why": "category 1 \u2014 freelance-writing blog/publisher"
+   "domain": "invoicito.com",
+   "why": "category 4 \u2014 fits invoicing apps category; invoicing only, no accounting"
   },
   {
-   "domain": "secureitworld.com",
-   "why": "category 1 \u2014 cybersecurity news publisher"
+   "domain": "waffleinvoice.com",
+   "why": "category 4 \u2014 fits invoicing apps category; invoicing only, no accounting"
   }
  ]
 }

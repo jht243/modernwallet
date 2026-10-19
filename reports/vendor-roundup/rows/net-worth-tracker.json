@@ -1,23 +1,39 @@
 {
-  "slug": "best-net-worth-tracker",
-  "rows": [
-    {
-      "name": "Sumyfi",
-      "domain": "sumyfi.com",
-      "url": "https://sumyfi.com/",
-      "values": [
-        "Free; Premium $7.99/mo or $79.99/yr",
-        "Balances only; no analysis described",
-        "Not published",
-        "Not published",
-        "People tracking balances, spending and goals in one place"
-      ]
-    }
-  ],
-  "cut": [
-    {
-      "domain": "finance-monthly.com",
-      "why": "category 1 \u2014 finance publication, no product of its own"
-    }
-  ]
+ "slug": "best-net-worth-tracker",
+ "rows": [
+  {
+   "name": "Richify",
+   "domain": "richify.ai",
+   "url": "https://richify.ai",
+   "values": [
+    "Free download, 7-day trial; paid price not published",
+    "Not published",
+    "Yes (property and mortgage tracking)",
+    "FIRE and 401(k) calculators",
+    "Homeowners and couples wanting AI-guided money help"
+   ]
+  },
+  {
+   "name": "WorthTracker",
+   "domain": "worthtracker.com",
+   "url": "https://worthtracker.com",
+   "values": [
+    "Not published",
+    "Basic (tracks stock portfolio value only)",
+    "Yes (manual entry as an asset)",
+    "Not published",
+    "People replacing spreadsheets, with no bank linking"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "biggerpockets.com",
+   "why": "category 1 — real estate publisher/community with no net worth tracker product"
+  },
+  {
+   "domain": "helmterminal.dev",
+   "why": "category 4 — stock thesis monitoring tool; fits portfolio-backtesting-and-analysis-tools category"
+  }
+ ]
 }

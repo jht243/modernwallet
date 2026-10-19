@@ -2,15 +2,20 @@
  "slug": "best-portfolio-backtesting-and-analysis-tools",
  "rows": [
   {
-   "name": "Ghostfolio",
-   "domain": "ghostfol.io",
-   "url": "https://ghostfol.io",
+   "name": "AllInvestView",
+   "domain": "allinvestview.com",
+   "url": "https://allinvestview.com",
    "values": [
-    "No backtester listed; tracks performance of assets you hold",
-    "Yes for cloud; self-hosting open source needs no account",
-    "Open-source net worth and portfolio tracking across platforms"
+    "Not published",
+    "Yes, free signup; live demo needs no account",
+    "Portfolio tracking with Monte Carlo and Efficient Frontier analysis"
    ]
   }
  ],
- "cut": []
+ "cut": [
+  {
+   "domain": "fe.training",
+   "why": "category 4 \u2014 finance training courses, no portfolio backtesting tool; no fit"
+  }
+ ]
 }

@@ -3,12 +3,8 @@
  "rows": [],
  "cut": [
   {
-   "domain": "offthemrkt.com",
-   "why": "category 1 \u2014 New York real estate blog/publisher"
-  },
-  {
-   "domain": "franklinfinancingservices.com",
-   "why": "category 1 \u2014 broker routing to partner lenders via contact form; publishes no amounts, speed or terms"
+   "domain": "baystreetlending.com",
+   "why": "category 1 \u2014 intermediary paid by its lending partners, not a direct lender; marketplace/lead-gen"
   }
  ]
 }

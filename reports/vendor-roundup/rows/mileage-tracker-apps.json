@@ -1,78 +1,26 @@
 {
-  "slug": "best-mileage-tracker-apps",
-  "rows": [
-    {
-      "name": "Mileage Ace",
-      "domain": "mileage-ace.com",
-      "url": "https://mileage-ace.com/",
-      "values": [
-        "None listed",
-        "Device $49.99 or $69.89, plus $0.56/day service",
-        "Yes, plug-in GPS device logs trips",
-        "Online trip reports; lifetime warranty; 30-day refund"
-      ]
-    },
-    {
-      "name": "SparkReceipt",
-      "domain": "sparkreceipt.com",
-      "url": "https://sparkreceipt.com/",
-      "values": [
-        "None; 7-day trial on paid plans",
-        "$5.75/mo Pro, $10.75/mo Elite, billed annually",
-        "GPS or manual logging; auto start/stop not stated",
-        "AI receipt scanning, bank matching, expense reports, QuickBooks and Xero"
-      ]
-    },
-    {
-      "name": "MileTrack",
-      "domain": "miletrack.app",
-      "url": "https://miletrack.app/",
-      "values": [
-        "Free to use currently; no account needed",
-        "No paid tier listed",
-        "Yes, detects driving and records trips",
-        "Business/commute/private sorting; PDF, CSV, XLSX export; iPhone only"
-      ]
-    },
-    {
-      "name": "Falcon Expenses",
-      "domain": "falconexpenses.com",
-      "url": "https://falconexpenses.com/",
-      "values": [
-        "Not published",
-        "Not published",
-        "Yes, background GPS plus odometer log",
-        "Receipt photos, hours logging, PDF and Excel reports"
-      ]
-    },
-    {
-      "name": "mBurse",
-      "domain": "mburse.com",
-      "url": "https://www.mburse.com/",
-      "values": [
-        "Not published",
-        "Not published; demo required",
-        "Yes, automatic trip capture in mLog",
-        "Approval dashboards, reporting, FAVR and car allowance programs"
-      ]
-    }
-  ],
-  "cut": [
-    {
-      "domain": "emburse.com",
-      "why": "category 4 \u2014 travel/expense software; no mileage product shown"
-    },
-    {
-      "domain": "connecteam.com",
-      "why": "category 4 \u2014 employee management app; no mileage product shown"
-    },
-    {
-      "domain": "jotform.com",
-      "why": "category 4 \u2014 form builder, no mileage tracker"
-    },
-    {
-      "domain": "certumsolutions.com",
-      "why": "category 4 \u2014 accounting/ERP consulting, no mileage product"
-    }
-  ]
+ "slug": "best-mileage-tracker-apps",
+ "rows": [
+  {
+   "name": "Expensify",
+   "domain": "use.expensify.com",
+   "url": "https://use.expensify.com",
+   "values": [
+    "Free to start; limits not published",
+    "Not published",
+    "Yes, GPS",
+    "Expense reports, receipt capture, IRS-rate mileage"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "theccbb.com",
+   "why": "category 4 \u2014 sells small-business courses and consulting, no mileage product"
+  },
+  {
+   "domain": "hellobooks.ai",
+   "why": "category 4 \u2014 AI bookkeeping software; mileage is in a separate product; fits bookkeeping/accounting software category"
+  }
+ ]
 }

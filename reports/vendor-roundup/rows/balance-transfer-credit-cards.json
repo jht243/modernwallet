@@ -3,8 +3,12 @@
  "rows": [],
  "cut": [
   {
-   "domain": "comparecredit.com",
-   "why": "category 1 \u2014 advertising-supported comparison service, no cards issued"
+   "domain": "kubera.com",
+   "why": "category 4 — net worth tracker, not a card; fits net-worth-tracker category"
+  },
+  {
+   "domain": "accountoffers.wellsfargo.com",
+   "why": "category 4 — savings account offers page with no card content; fits savings category"
   }
  ]
 }
