@@ -1,0 +1,99 @@
+{
+ "slug": "florida-amendment-3-calculator",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 841,
+ "floor": 900,
+ "input_tokens": 18947,
+ "output_tokens": 1745,
+ "thinking_tokens": null,
+ "cached_tokens": 16705,
+ "est_cost_usd": 0.0095,
+ "guards": {
+  "repairs": [
+   "slug None -> 'florida-amendment-3-calculator'"
+  ],
+  "flags": [
+   "missing 'h1' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'sections' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "841 words < depth floor 900",
+   "841 words < floor 900 after removing unsupported claims: the fact list is too thin for this page. Expand it with SOURCED facts, then regenerate (Rung 2). Never pad."
+  ],
+  "disallowed_urls_removed": [],
+  "words": 841,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 322,
+   "floor": 900,
+   "ratio": 0.36,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    0
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "Because school taxes remain in place, your total property tax bill will never drop to zero.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not state that total property tax bills never drop to zero."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Homes assessed below $250,000 reach maximum savings sooner. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that lower-valued homes reach maximum savings sooner."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "In areas with higher tax rates, dollar savings grow faster. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that dollar savings grow faster in higher-tax areas."
+    },
+    {
+     "id": "faqs[7].answer",
+     "quote": "You can find your non-school millage rate on your annual property tax bill or Truth in Millage notice.",
+     "replacement": "The statewide average non-school rate used in published examples is 10.5 mills.",
+     "type": "unlinked-directive",
+     "why": "Sends reader to outside documents without a markdown link, and TRIM is unlisted."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 881
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 164.8,
+ "response_id": "ukrWaqTUM5zgytMPoJ7wkQw",
+ "generated_at": "2026-10-19T16:54:53+0000"
+}

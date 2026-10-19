@@ -2610,6 +2610,38 @@ export const CALCULATORS: CalculatorDef[] = [
     updated: "2026-10-17",
     defaultPreset: {"traditionalAnnual": 10000, "currentRatePct": 22, "retirementRatePct": 22, "returnPct": 7, "years": 25},
   },
+  // Florida Amendment 3 calculator — X-trends pass (2026-10-19). Prose generated via scripts/lib/content_gen.py
+  // (meta beside the draft in reports/mindmap-pass/2026-10-19-xtrends/drafts/).
+  {
+    id: "florida-amendment-3-calculator",
+    islandId: "florida-amendment-3-calculator",
+    label: "Florida Amendment 3",
+    navOrder: 58,
+    metaTitle: "Florida Amendment 3 Property Tax Calculator",
+    metaDescription:
+      "Calculate your property tax savings under Florida Amendment 3. See estimated 2027 and 2028 homestead savings based on your home value and millage rate.",
+    targetKeyword: "florida amendment 3 property tax calculator",
+    h1: "Florida Amendment 3 Property Tax Calculator",
+    introText:
+      "Florida Amendment 3 property tax savings equal your extra exempt value multiplied by your non-school millage rate. At the 10.5-mill statewide average, savings are about $1,035 in 2027 and about $2,085 in 2028 for homes assessed above $250,000. Lower-valued homes save less because the exemption cannot exceed the assessed value of the property.\n\nTake a home with an assessed value of $400,000 taxed at 10.5 mills. The non-school property tax bill today is $3,660.18 under the current $51,411 exemption. In 2027, the bill drops to $2,625.00 for a savings of $1,035.18. In 2028, the bill falls to $1,575.00, saving you $2,085.18 each year.",
+    howItWorks:
+      "The calculator works out your non-school property tax bill with this formula: tax bill equals assessed value minus the homestead exemption, multiplied by mills divided by 1,000. One mill equals $1 of tax per $1,000 of taxable value. The baseline calculation uses the current non-school exemption figure of $51,411. If Amendment 3 passes on November 3, 2026, the exemption increases to $150,000 in 2027 and reaches $250,000 in 2028.\n\nOnly non-school levies change under this proposal. These non-school taxes fund county services, cities, and special districts. School property taxes make up about 40% of the average tax bill and stay completely unchanged. \n\nThe savings come directly from shielding more value from non-school taxes. In 2027, the $150,000 exemption frees an extra $98,589 from taxation compared to the current $51,411 baseline. In 2028, the $250,000 exemption protects an extra $198,589. At the 10.5-mill average rate, those extra exemptions produce your annual tax reductions.\n\nA home assessed at $100,000 pays a non-school bill of $510.18 today at 10.5 mills. That bill drops to $0.00 in 2027 and stays at $0.00 in 2028. Total savings are $510.18 both years, because the exemption cannot exceed the home's value. A $400,000 home taxed at 15 mills pays $5,228.84 today. That bill drops to $3,750.00 in 2027, saving $1,478.84. In 2028, the bill drops to $2,250.00, saving $2,978.84.\n\nState economists estimate a recurring local property tax revenue loss of nearly $12 billion. Local governments may adjust future millage rates in response, which would alter your final bill. The tool does not model annual inflation adjustments starting in 2029, the five-year phase-in for newcomers, or the Save Our Homes cap. This tool is not for renters or owners of vacation and rental homes, who receive no homestead exemption. To see how property taxes factor into your total monthly housing payment, use our [mortgage calculator](/mortgage/). You can also browse [all calculators](/calculators/) to model other household expenses.",
+    faqs: [
+      { question: "How much will Florida Amendment 3 save me on property taxes?", answer: "A home assessed above $250,000 saves about $1,035 in 2027 and about $2,085 in 2028 at the 10.5-mill statewide average. Higher millage rates yield larger dollar savings, while lower-valued homes save less because the exemption cannot exceed the property's assessed value. Enter your assessed value and local non-school millage in the calculator above to see your exact figures." },
+      { question: "What does Florida Amendment 3 change?", answer: "Amendment 3 raises the homestead exemption for non-school levies to $150,000 in 2027 and $250,000 in 2028. It also lowers the annual assessment growth cap on non-homestead property from 10% to 5%. Existing Save Our Homes rules and personal exemptions remain unchanged." },
+      { question: "Does Amendment 3 lower school property taxes?", answer: "No. The amendment does not apply to school property taxes. School taxes make up about 40% of the average tax bill and will stay unchanged if the measure passes." },
+      { question: "When would the bigger homestead exemption start?", answer: "The first expansion takes effect on January 1, 2027, raising the non-school exemption to $150,000. The full $250,000 exemption begins on January 1, 2028. Annual inflation adjustments using the Consumer Price Index begin on January 1, 2029." },
+      { question: "Why do I save less if my home is worth less than $250,000?", answer: "Your exemption cannot be larger than the assessed value of your home. A home assessed at $100,000 pays zero non-school taxes once the exemption reaches $100,000. Any exemption value beyond the home's total assessed value produces no additional savings." },
+      { question: "Who gets the full $250,000 exemption?", answer: "Permanent Florida residents as of December 31, 2026 receive the full expanded exemptions in 2027 and 2028. Newcomers start with a $50,000 exemption and ramp up to $250,000 after five years. Local governments can shorten that five-year waiting period after 2030." },
+      { question: "What happens to rental and vacation property under Amendment 3?", answer: "Non-homestead properties do not receive the larger homestead exemption. Instead, commercial, rental, and vacation properties see their annual assessment growth cap drop from 10% to 5%. That cap limits how quickly an assessed value can increase each year." },
+      { question: "Where do I find my millage rate?", answer: "The statewide average non-school rate used in published examples is 10.5 mills. Sum the rates for your county, municipality, and special districts while excluding school districts. For more on the amendment and local rates, see the [Florida TaxWatch property-tax resource center](https://floridataxwatch.org/research/florida-property-tax-resource-center/)." },
+    ],
+    sources: [
+      { label: "Florida TaxWatch: Florida property tax resource center", url: "https://floridataxwatch.org/research/florida-property-tax-resource-center/" },
+    ],
+    updated: "2026-10-19",
+    defaultPreset: {"mills": 10.5, "assessedValue": 400000},
+  },
 ];
 
 export const CALC_BY_ID: Record<string, CalculatorDef> = Object.fromEntries(

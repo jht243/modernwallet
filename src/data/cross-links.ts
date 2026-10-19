@@ -75,6 +75,11 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/pay-off-mortgage-early-or-invest/", label: "Pay off the mortgage or invest the lump sum?" },
     { href: "/mortgage/", label: "Mortgage payment calculator" },
   ],
+  // X-trends pass (2026-10-19).
+  "florida-amendment-3-calculator": [
+    { href: "/mortgage/", label: "Mortgage payment calculator" },
+    { href: "/calculators/", label: "All calculators" },
+  ],
   "cd-calculator": [
     { href: "/hysa-vs-cd-calculator/", label: "CD or high-yield savings? Compare both on your deposit" },
     { href: "/annuity-calculator/", label: "Compare with an annuity payout" },

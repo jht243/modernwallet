@@ -70,6 +70,7 @@ import RothVsTraditional401kCalculator from "./RothVsTraditional401kCalculator";
 import HysaVsCdCalculator from "./HysaVsCdCalculator";
 import TrumpVs529Calculator from "./TrumpVs529Calculator";
 import MortgageRecastCalculator from "./MortgageRecastCalculator";
+import FloridaAmendment3Calculator from "./FloridaAmendment3Calculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -163,6 +164,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "hysa-vs-cd-calculator": HysaVsCdCalculator,
   "trump-account-vs-529-calculator": TrumpVs529Calculator,
   "mortgage-recast-calculator": MortgageRecastCalculator,
+  // X-trends pass (2026-10-19): Florida Amendment 3 homestead savings (Nov 3, 2026 ballot).
+  "florida-amendment-3-calculator": FloridaAmendment3Calculator,
   // PTO / leave-days cash-out — competitor-monitor pass (2026-08-17): sell-back payout calculator
   // that also shows an estimated net-of-tax figure and the unpaid-time-off value for comparison.
   "pto-cashout": PtoCashoutCalculator,
