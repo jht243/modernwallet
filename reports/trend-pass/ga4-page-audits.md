@@ -281,3 +281,8 @@
 | /guides/trump-account-rules/ | 2026-10-16 | 14 | 0/0/0/0/0 | 0 |
 | /guides/senior-deduction-social-security/ | 2026-10-17 | 6 | 0/0/0/0/0 | 0 |
 | /compare/utma-vs-ugma/ | 2026-10-17 | 5 | 0/0/0/0/0 | 0 |
+| /sponsor/ | 2026-10-19 | 13 | 0/0/0/0/0 | 0 |
+| /roundup/best-index-funds/ | 2026-10-19 | 4 | 0/0/0/0/0 | 0 |
+| /roundup/best-money-market-accounts/ | 2026-10-19 | 4 | 0/0/0/0/0 | 0 |
+| /compare/custodial-roth-ira-vs-brokerage-account/ | 2026-10-19 | 2 | 0/0/0/0/0 | 0 |
+| /guides/ | 2026-10-19 | 2 | 0/0/0/0/0 | 0 |

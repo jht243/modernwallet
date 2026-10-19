@@ -1,0 +1,116 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-18",
+  "window_start": "2026-10-18",
+  "window_end": "2026-10-18",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/sponsor",
+      "views": 13,
+      "sessions": 13,
+      "active_users": 13,
+      "clicks": 13
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 12,
+      "sessions": 11,
+      "active_users": 10,
+      "clicks": 12
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 4,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 4
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 4,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 4
+    },
+    {
+      "page": "/roundup/best-index-funds/",
+      "views": 4,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 4
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 4,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 4
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 3,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 3
+    },
+    {
+      "page": "/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/compare/custodial-roth-ira-vs-brokerage-account",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    },
+    {
+      "page": "/guides/",
+      "views": 2,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 2
+    }
+  ],
+  "top10_pages_total_views": 50,
+  "top10_pages_total_clicks": 50,
+  "channel_split": {
+    "/sponsor": {
+      "Direct": 13
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 11
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 4
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 4
+    },
+    "/guides/": {
+      "Direct": 2
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 2
+    },
+    "/roundup/best-index-funds/": {
+      "Organic Search": 2
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Organic Search": 2
+    },
+    "/": {
+      "Organic Search": 1,
+      "Referral": 1
+    },
+    "/compare/custodial-roth-ira-vs-brokerage-account": {
+      "Direct": 1,
+      "Organic Search": 1
+    }
+  }
+}
