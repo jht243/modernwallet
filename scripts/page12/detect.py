@@ -46,7 +46,7 @@ ROOT = HERE.parents[1]
 sys.path.insert(0, str(ROOT / "scripts" / "rank_drop"))
 from detect import (GA4_API, GA4_SCOPE, GSC_SCOPE, SOURCES, HardFail, call,  # noqa: E402
                     check_ga4_access, check_gsc_access, ga4_organic_landing, google_updates,
-                    gsc_freshest_final_day, gsc_rows, is_synthetic, load_sa_info, session_for)
+                    gsc_freshest_final_day, gsc_rows, is_synthetic, merge_gsc_rows, load_sa_info, session_for)
 
 LEDGER = ROOT / "reports" / "page-1-2-no-clicks" / "ledger.jsonl"
 PICK = 8                  # pages fixed per daily run
@@ -133,16 +133,22 @@ def aio_cited_paths(host: str) -> set[str]:
     return out
 
 
+STRIKE_LEDGER = ROOT / "reports" / "striking-distance" / "ledger.jsonl"
+STRIKE_MEASURE_DAYS = 42   # striking-distance-pass is still measuring the page against its controls
+
+
 def in_cooldown() -> set[str]:
     cool = set()
-    if LEDGER.exists():
-        for line in LEDGER.read_text().splitlines():
+    for f, days in ((LEDGER, COOLDOWN_DAYS), (STRIKE_LEDGER, STRIKE_MEASURE_DAYS)):
+        if not f.exists():
+            continue
+        for line in f.read_text().splitlines():
             try:
                 r = json.loads(line)
             except json.JSONDecodeError:
                 continue
             if r.get("status") in ("published", "reverted") and \
-                    (date.today() - date.fromisoformat(r["treated"])).days < COOLDOWN_DAYS:
+                    (date.today() - date.fromisoformat(r["treated"])).days < days:
                 cool.add(path_of(r["page"]))
     return cool
 
@@ -209,8 +215,10 @@ def detect(gsc, site, ga4, prop, end: date, pick: int, B):
     P90 = {r["keys"][0]: r for r in gsc_rows(gsc, site, *w90, ["page"])}
     P28 = {r["keys"][0]: r for r in gsc_rows(gsc, site, *w28, ["page"])}
     OLD = {r["keys"][0] for r in gsc_rows(gsc, site, *wold, ["page"]) if r["impressions"] > 0}
-    PQ = gsc_rows(gsc, site, *w90, ["page", "query"])
-    PQ28 = {tuple(r["keys"]): r for r in gsc_rows(gsc, site, *w28, ["page", "query"])}
+    # 90d page×query = the 28d pull + the 62 days before it (one fewer big pull; layer3 > 500k rows)
+    pq28 = gsc_rows(gsc, site, *w28, ["page", "query"])
+    PQ = merge_gsc_rows(gsc_rows(gsc, site, w90[0], w28[0] - timedelta(days=1), ["page", "query"]), pq28)
+    PQ28 = {tuple(r["keys"]): r for r in pq28}
     if not P90 or not PQ:
         raise HardFail(14, f"GSC returned an empty page set (pages {len(P90)}, page×query {len(PQ)})")
     ga_90 = ga4_organic_landing(ga4, prop, *w90)

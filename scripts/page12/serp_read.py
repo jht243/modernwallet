@@ -78,7 +78,7 @@ def main(argv=None) -> int:
     for item in queue:
         d = P / item["slug"]
         pk = json.load(open(d / "packet.json"))
-        q = (pk.get("page12") or {}).get("main_query")
+        q = (pk.get("page12") or pk.get("strike") or {}).get("main_query")
         if not q:
             continue
         out = {"third_party": "dataforseo", "purpose": "serp_snippets_only", "query": q}

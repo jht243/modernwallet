@@ -7,8 +7,10 @@ its pre-fix `baseline`: 90-day impressions, clicks, CTR, main search + position)
 since the fix (skipping the first 3 days while Google re-crawls), plus the main search's position.
 
 Verdicts: WIN (CTR >= 1.5x baseline and clicks/day up) · PARTIAL (CTR up >= 1.15x) · NO_CHANGE ·
-WORSE (clicks/day < 0.7x baseline AND CTR < 0.8x baseline, with enough impressions to judge) →
-the routine reverts the page (revert_page.py). FINAL at >= 28 days. Rows treated while a Google
+LAGGING / WORSE (clicks/day < 0.7x AND CTR < 0.8x baseline, with enough impressions to judge, both
+measured AGAINST THE WHOLE SITE: the bars scale by the site's own after/before ratio over the same
+windows, so a site-wide Google demotion doesn't read as the fix failing). Under 28 days that is
+LAGGING (watch only); at >= 28 days (FINAL) it is WORSE → the routine reverts the page (revert_page.py). Rows treated while a Google
 ranking update was rolling out are marked `update_window` so a verdict is read with that in mind.
 
 Hard fails exactly like detect.py — no Google, no verdict.
@@ -32,6 +34,29 @@ from detect import (GSC_SCOPE, HardFail, check_gsc_access, gsc_freshest_final_da
 LEDGER = ROOT / "reports" / "page-1-2-no-clicks" / "ledger.jsonl"
 SETTLE_DAYS = 3
 MIN_IMPR_TO_JUDGE = 300
+FINAL_DAYS = 28
+
+
+def site_totals(gsc, url, start, end, cache):
+    """Whole-property clicks/day and CTR over [start, end] — the control for a page's before/after."""
+    from detect import call
+    k = (start.isoformat(), end.isoformat())
+    if k not in cache:
+        rows = call(gsc, "POST", url, {"startDate": k[0], "endDate": k[1], "dataState": "final",
+                                       "type": "web"}).get("rows", [])
+        c, i = (rows[0]["clicks"], rows[0]["impressions"]) if rows else (0, 0)
+        cache[k] = (c / ((end - start).days + 1), c / i if i else 0.0)
+    return cache[k]
+
+
+def baseline_window(r):
+    """The 90-day window the ledger baseline was pulled over (detect report), else treated-93..treated-4."""
+    try:
+        w = json.loads((ROOT / r["detect_report"]).read_text())["windows"]["w90"]
+        return date.fromisoformat(w[0]), date.fromisoformat(w[1])
+    except Exception:
+        t = date.fromisoformat(r["treated"])
+        return t - timedelta(days=93), t - timedelta(days=4)
 
 
 def main(argv=None) -> int:
@@ -51,6 +76,7 @@ def main(argv=None) -> int:
     try:
         gsc = session_for(load_sa_info(), GSC_SCOPE)
         results = []
+        site_cache = {}
         for s in sorted({r["gsc_property"] for r in due}):
             check_gsc_access(gsc, s)
             end = gsc_freshest_final_day(gsc, s)
@@ -75,22 +101,29 @@ def main(argv=None) -> int:
                 main = next((x for x in q_rows if x["keys"][0] == b.get("main_query")), None)
                 c_before, c_after = (b["clicks_90d"] or 0) / 90, clicks / days
                 ctr_before = b.get("ctr") or 0.0
+                age = (date.today() - date.fromisoformat(r["treated"])).days
+                sb_c, sb_ctr = site_totals(gsc, url, *baseline_window(r), site_cache)
+                sa_c, sa_ctr = site_totals(gsc, url, start, end, site_cache)
+                site_c_ratio = sa_c / sb_c if sb_c else 1.0
+                site_ctr_ratio = sa_ctr / sb_ctr if sb_ctr else 1.0
                 if impr < MIN_IMPR_TO_JUDGE:
                     verdict = "NO_DATA"
-                elif c_after < 0.7 * c_before and ctr < 0.8 * ctr_before:
-                    verdict = "WORSE"
+                elif (c_after < 0.7 * c_before * site_c_ratio
+                      and ctr < 0.8 * ctr_before * site_ctr_ratio):
+                    verdict = "WORSE" if age >= FINAL_DAYS else "LAGGING"
                 elif ctr >= 1.5 * max(ctr_before, 1e-6) and c_after > c_before:
                     verdict = "WIN"
                 elif ctr >= 1.15 * max(ctr_before, 1e-6):
                     verdict = "PARTIAL"
                 else:
                     verdict = "NO_CHANGE"
-                age = (date.today() - date.fromisoformat(r["treated"])).days
-                results.append({"page": r["page"], "treated": r["treated"], "age_days": age, "final": age >= 28,
+                results.append({"page": r["page"], "treated": r["treated"], "age_days": age,
+                                "final": age >= FINAL_DAYS,
                                 "verdict": verdict, "lane": r.get("lane"),
                                 "clicks_d": [round(c_before, 2), round(c_after, 2)],
                                 "ctr": [round(ctr_before, 5), round(ctr, 5)],
                                 "impressions_d": [round((b["impressions_90d"] or 0) / 90, 1), round(impr / days, 1)],
+                                "site_ratio": {"clicks_d": round(site_c_ratio, 3), "ctr": round(site_ctr_ratio, 3)},
                                 "main_query": b.get("main_query"),
                                 "main_pos": [b.get("main_pos"), round(main["position"], 1) if main else None],
                                 "update_window": bool(b.get("google_update_ongoing")),
@@ -100,11 +133,11 @@ def main(argv=None) -> int:
         print(f"HARD FAIL ({e.code}): {e}", file=sys.stderr)
         return e.code
     Path(str(out) + ".json").write_text(json.dumps({"status": "OK", "results": results}, indent=2))
-    L = ["| page | treated | age | lane | verdict | clicks/day before→after | CTR before→after | main search pos | final |",
-         "|---|---|---|---|---|---|---|---|---|"]
+    L = ["| page | treated | age | lane | verdict | clicks/day before→after | CTR before→after | site clicks/day | main search pos | final |",
+         "|---|---|---|---|---|---|---|---|---|---|"]
     L += [f"| `{x['page']}` | {x['treated']} | {x['age_days']}d | {x['lane']} | {x['verdict']}"
           f"{' (update window)' if x['update_window'] else ''} | {x['clicks_d'][0]}→{x['clicks_d'][1]} | "
-          f"{x['ctr'][0]:.2%}→{x['ctr'][1]:.2%} | {x['main_pos'][0]}→{x['main_pos'][1]} | {'yes' if x['final'] else 'no'} |"
+          f"{x['ctr'][0]:.2%}→{x['ctr'][1]:.2%} | {x['site_ratio']['clicks_d']:.2f}x | {x['main_pos'][0]}→{x['main_pos'][1]} | {'yes' if x['final'] else 'no'} |"
           for x in results]
     Path(str(out) + ".md").write_text("\n".join(L) + "\n")
     print(f"OK measured {len(results)}")

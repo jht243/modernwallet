@@ -140,7 +140,9 @@ Read `$OUT.md` and `$D.measure.md`. Use `$OUT` (not `$D`) for every detect-repor
 (titles, facts and an answer block don't chase moving rankings); detect.py records it and measure.py
 flags those windows.
 
-**Measurement follow-through (before any new fix):** for every `WORSE` row in `$D.measure.json`, run
+**Measurement follow-through (before any new fix):** for every `WORSE` row in `$D.measure.json` with
+`final: true` (measure.py only says WORSE at 28+ days, judged against the whole site's trend over the
+same windows; `LAGGING` = under 28 days, watch only — never revert it), run
 `RD_ENGINE=page-1-2-no-clicks-pass python3 scripts/rank_drop/revert_page.py --path <path> --sha <first_sha> --date $D`
 and mark that ledger row `status: reverted` (edit only that row's status field in
 `reports/page-1-2-no-clicks/ledger.jsonl`). Reverts deploy with the run.
