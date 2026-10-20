@@ -286,3 +286,6 @@
 | /roundup/best-money-market-accounts/ | 2026-10-19 | 4 | 0/0/0/0/0 | 0 |
 | /compare/custodial-roth-ira-vs-brokerage-account/ | 2026-10-19 | 2 | 0/0/0/0/0 | 0 |
 | /guides/ | 2026-10-19 | 2 | 0/0/0/0/0 | 0 |
+| /guides/how-to-claim-a-trump-account/ | 2026-10-20 | 4 | 0/0/0/0/0 | 0 |
+| /guides/trump-accounts/ | 2026-10-20 | 3 | 0/0/0/0/0 | 0 |
+| /roundup/best-retirement-calculators/ | 2026-10-20 | 4 | 0/0/1/0/0 | 0 |

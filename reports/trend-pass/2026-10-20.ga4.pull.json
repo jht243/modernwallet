@@ -1,0 +1,118 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-19",
+  "window_start": "2026-10-19",
+  "window_end": "2026-10-19",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 16,
+      "sessions": 16,
+      "active_users": 16,
+      "clicks": 16
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 12,
+      "sessions": 11,
+      "active_users": 11,
+      "clicks": 12
+    },
+    {
+      "page": "/",
+      "views": 8,
+      "sessions": 6,
+      "active_users": 5,
+      "clicks": 8
+    },
+    {
+      "page": "/sponsor",
+      "views": 8,
+      "sessions": 8,
+      "active_users": 8,
+      "clicks": 8
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 7,
+      "sessions": 8,
+      "active_users": 6,
+      "clicks": 7
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 6,
+      "sessions": 7,
+      "active_users": 6,
+      "clicks": 6
+    },
+    {
+      "page": "/guides/how-to-claim-a-trump-account/",
+      "views": 4,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 4
+    },
+    {
+      "page": "/guides/trump-account-rules/",
+      "views": 4,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 4
+    },
+    {
+      "page": "/roundup/best-retirement-calculators/",
+      "views": 4,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 4
+    },
+    {
+      "page": "/guides/trump-accounts/",
+      "views": 3,
+      "sessions": 2,
+      "active_users": 2,
+      "clicks": 3
+    }
+  ],
+  "top10_pages_total_views": 72,
+  "top10_pages_total_clicks": 72,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 10,
+      "Direct": 1
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Direct": 8,
+      "Organic Search": 8
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 8
+    },
+    "/sponsor": {
+      "Direct": 8
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 7
+    },
+    "/roundup/best-retirement-calculators/": {
+      "Direct": 4
+    },
+    "/": {
+      "Direct": 3,
+      "Organic Search": 3
+    },
+    "/guides/how-to-claim-a-trump-account/": {
+      "Organic Search": 3,
+      "Direct": 1
+    },
+    "/guides/trump-account-rules/": {
+      "Organic Search": 3
+    },
+    "/guides/trump-accounts/": {
+      "Organic Search": 2
+    }
+  }
+}

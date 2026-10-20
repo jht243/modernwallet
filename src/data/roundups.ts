@@ -5578,6 +5578,8 @@ export const ROUNDUPS: RoundupEntry[] = [
       { label: "Social Security Retirement Calculator", href: "/retirement/social-security-retirement-calculator/" },
       { label: "RMD Calculator", href: "/retirement/rmd-calculator/" },
       { label: "401(k) Calculator", href: "/retirement/401k-calculator/" },
+      { label: "Couples Retirement Calculator", href: "/retirement/couples-retirement-calculator/" },
+      { label: "Early Retirement Calculator", href: "/retirement/early-retirement-calculator/" },
     ],
   },
 
