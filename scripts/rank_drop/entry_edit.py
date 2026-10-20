@@ -90,7 +90,16 @@ def apply_fact_edits(entry: str, edits: list[dict]) -> tuple[str, list[str]]:
         old, new = e["old"], e["new"]
         for esc in escs:
             if entry.count(esc(old)) == 1:
-                entry = entry.replace(esc(old), esc(new))
+                n_txt = esc(new)
+                if esc is escs[0] and "'" in new and "'" not in old:
+                    # old carried no apostrophe, so the literal's quote style is unknown: read it from the
+                    # line holding the match, and escape new's apostrophes when that literal is single-quoted
+                    i = entry.index(old)
+                    ls = entry.rfind("\n", 0, i) + 1
+                    m = re.search(r"[\"'`]", entry[ls:i])
+                    if m and m.group(0) == "'":
+                        n_txt = new.replace("'", "\\'")
+                entry = entry.replace(esc(old), n_txt)
                 done.append(f'"{old[:80]}" -> "{new[:80]}"')
                 break
         else:

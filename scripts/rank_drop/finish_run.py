@@ -81,8 +81,8 @@ def main(argv=None) -> int:
             "detect_sha256": pk.get("detect_sha256"),
             "targets": [{"query": s["query"], "base_pos": s.get("base_pos"), "cur_pos": s.get("cur_pos")}
                         for s in pk.get("lost_searches", [])],
-            # page-1-2-no-clicks-pass: the pre-fix clicks/impressions/CTR its measure.py compares against
-            **({"baseline": pk["page12"]} if pk.get("page12") else {}),
+            # page-1-2-no-clicks-pass / striking-distance-pass: the pre-fix numbers their measure.py compares against
+            **({"baseline": pk.get("page12") or pk.get("strike")} if (pk.get("page12") or pk.get("strike")) else {}),
         })
         marker = section_heading_now(q, plan, d)   # the new heading as it reads NOW (audit fixes may retitle)
         checks[url] = marker

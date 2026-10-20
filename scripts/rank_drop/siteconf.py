@@ -35,13 +35,14 @@ def url(path: str) -> str:
 
 
 # ── engine — the same pipeline serves more than one routine ─────────────────
-# rank-drop-recovery (default) and page-1-2-no-clicks-pass share every script from the splice on
+# rank-drop-recovery (default), page-1-2-no-clicks-pass and striking-distance-pass share every script from the splice on
 # (apply_sections → lint → audit → apply_fixes → rework → finish_run → email). The engine decides the
 # commit-subject prefix runlog matches, the reports dir (ledger) and the task files. It is read from
 # RD_ENGINE, else inferred from a packets path on the command line, else rank-drop-recovery.
 ENGINES = {
     "rank-drop-recovery": {"reports": "reports/rank-drop", "tasks": "scripts/rank_drop"},
     "page-1-2-no-clicks-pass": {"reports": "reports/page-1-2-no-clicks", "tasks": "scripts/page12"},
+    "striking-distance-pass": {"reports": "reports/striking-distance", "tasks": "scripts/strike"},
 }
 
 
@@ -51,6 +52,8 @@ def engine() -> str:
         return e
     if any("page-1-2-no-clicks" in a for a in sys.argv[1:]):
         return "page-1-2-no-clicks-pass"
+    if any("striking-distance" in a for a in sys.argv[1:]):
+        return "striking-distance-pass"
     return "rank-drop-recovery"
 
 

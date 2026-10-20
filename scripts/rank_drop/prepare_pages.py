@@ -257,17 +257,24 @@ def build_rules(out: Path):
     (out / "auditor-rules.md").write_text("\n\n".join(a for a in auditor if a) + "\n")
 
 
+STRIKE_LEDGER = ROOT / "reports" / "striking-distance" / "ledger.jsonl"
+STRIKE_MEASURE_DAYS = 42
+
+
 def in_cooldown(ledger: Path) -> set[str]:
-    if not ledger.exists():
-        return set()
+    """This engine's own cooldown, plus every page striking-distance-pass is still measuring (42 days):
+    another routine changing it mid-window would spoil that measurement (and could undo its push)."""
     cool = set()
-    for line in ledger.read_text().splitlines():
-        if not line.strip():
+    for f, days in ((ledger, COOLDOWN_DAYS), (STRIKE_LEDGER, STRIKE_MEASURE_DAYS)):
+        if not f.exists() or (f == STRIKE_LEDGER and f.resolve() == ledger.resolve()):
             continue
-        r = json.loads(line)
-        if r.get("status") in ("published", "reverted") and \
-                (date.today() - date.fromisoformat(r["treated"])).days < COOLDOWN_DAYS:
-            cool.add(r["page"])
+        for line in f.read_text().splitlines():
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            if r.get("status") in ("published", "reverted") and \
+                    (date.today() - date.fromisoformat(r["treated"])).days < days:
+                cool.add(r["page"])
     return cool
 
 

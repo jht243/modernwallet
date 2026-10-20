@@ -136,24 +136,68 @@ def call(s, method: str, url: str, body: dict | None = None) -> dict:
 
 # ── Search Console ────────────────────────────────────────────────────────
 
+class _RowCapHit(Exception):
+    pass
+
+
 def gsc_rows(s, site: str, start: date, end: date, dims: list[str],
              country: str | None = None) -> list[dict]:
+    """Full pull. A window over the 500k-row cap is split in half by date and the halves
+    merged (sum clicks/impressions, impression-weighted position) — same as GSC's own math.
+    Only a single day still over the cap is a HARD FAIL (no partial pulls)."""
+    try:
+        return _gsc_rows_window(s, site, start, end, dims, country)
+    except _RowCapHit:
+        if start >= end or "date" in dims:
+            raise HardFail(15, f"GSC rows exceed 500k for {dims} {start}..{end} — refusing a partial pull")
+    mid = start + timedelta(days=(end - start).days // 2)
+    return merge_gsc_rows(gsc_rows(s, site, start, mid, dims, country),
+                          gsc_rows(s, site, mid + timedelta(days=1), end, dims, country))
+
+
+def merge_gsc_rows(*parts: list[dict]) -> list[dict]:
+    """Combine row sets from DISJOINT date windows: sum clicks/impressions, impression-weighted position."""
+    merged: dict[tuple, list] = {}
+    for part in parts:
+        for r in part:
+            imp = r.get("impressions", 0)
+            m = merged.setdefault(tuple(r["keys"]), [r["keys"], 0, 0, 0.0])
+            m[1] += r.get("clicks", 0)
+            m[2] += imp
+            m[3] += r.get("position", 0) * imp
+    return [{"keys": k, "clicks": c, "impressions": i, "ctr": (c / i) if i else 0.0,
+             "position": (p / i) if i else 0.0} for k, c, i, p in merged.values()]
+
+
+GSC_PARALLEL = 8          # Search Analytics pages fetched concurrently per wave
+
+
+def _gsc_rows_window(s, site: str, start: date, end: date, dims: list[str],
+                     country: str | None = None) -> list[dict]:
     url = f"{GSC_API}/sites/{urllib.parse.quote(site, safe='')}/searchAnalytics/query"
-    rows, start_row = [], 0
-    while True:
+    from concurrent.futures import ThreadPoolExecutor
+
+    def page(start_row: int) -> list[dict]:
         body = {"startDate": start.isoformat(), "endDate": end.isoformat(),
                 "dimensions": dims, "dataState": "final", "type": "web",
                 "rowLimit": GSC_PAGE, "startRow": start_row}
         if country:
             body["dimensionFilterGroups"] = [{"filters": [
                 {"dimension": "country", "operator": "equals", "expression": country}]}]
-        batch = call(s, "POST", url, body).get("rows", [])
-        rows.extend(batch)
-        if len(batch) < GSC_PAGE:
-            return rows
-        start_row += GSC_PAGE
-        if start_row >= 500000:
-            raise HardFail(15, f"GSC rows exceed 500k for {dims} {start}..{end} — refusing a partial pull")
+        return call(s, "POST", url, body).get("rows", [])
+
+    rows, start_row = [], 0
+    with ThreadPoolExecutor(GSC_PARALLEL) as ex:
+        while True:
+            offsets = [start_row + i * GSC_PAGE for i in range(GSC_PARALLEL)
+                       if start_row + i * GSC_PAGE < 500000]
+            if not offsets:
+                raise _RowCapHit()
+            for batch in ex.map(page, offsets):
+                rows.extend(batch)
+                if len(batch) < GSC_PAGE:
+                    return rows
+            start_row = offsets[-1] + GSC_PAGE
 
 
 def gsc_freshest_final_day(s, site: str) -> date:

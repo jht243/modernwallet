@@ -86,6 +86,27 @@ def p12_diag(dx: dict) -> str:
     return _cell("; ".join(out) or "snippet not winning the click")
 
 
+def strike_why(pk: dict) -> str:
+    n = pk.get("strike") or {}
+    return _cell(f"Main search “{n.get('main_query')}” steady at #{n.get('main_pos')} "
+                 f"(#{n.get('main_pos_prior')} the 28 days before), {_k(n.get('main_impressions_28d'))} impressions / 28d; "
+                 f"page {n.get('clicks_28d')} clicks / 28d")
+
+
+def strike_diag(dx: dict) -> str:
+    e = dx.get("evidence") or {}
+    out = []
+    if "internal_links_now" in e:
+        out.append(f"only {e['internal_links_now']} internal links point here")
+    if e.get("main_search_words_missing_from_title_description"):
+        out.append("title/description don't use the searcher's words")
+    if e.get("paa_not_answered"):
+        out.append(f"{len(e['paa_not_answered'])} 'People also ask' questions page 1 answers and we don't")
+    if e.get("opening_does_not_answer_main_search"):
+        out.append("opening doesn't answer the search")
+    return _cell("; ".join(out) or "nothing on-page to change")
+
+
 def short(t: str, n: int = 220) -> str:
     t = " ".join(str(t).split())
     return t if len(t) <= n else t[:n].rsplit(" ", 1)[0] + "\u2026"
@@ -138,7 +159,7 @@ def main(argv=None) -> int:
         else:
             if "REWRITE" in kinds:
                 what.append("Rewrote the page.")
-            elif any(k in kinds for k in ("RECOVER", "REFRESH", "DIFFERENTIATE", "SECTION", "REWORK", "SNIPPET", "RANK")) \
+            elif any(k in kinds for k in ("RECOVER", "REFRESH", "DIFFERENTIATE", "SECTION", "REWORK", "SNIPPET", "RANK", "STRIKE")) \
                     and act == "add_section":
                 h = section_heading_now(q, plan, d)
                 what.append(f"Added a section: “{h}”." if h else "Added a new section.")
@@ -162,7 +183,11 @@ def main(argv=None) -> int:
         lv = live.get(url)
         status = ("live" if lv == "ok" else f"not live yet ({lv})" if lv else "pending deploy") \
             if slug not in reverted else "reverted"
-        if pk.get("page12"):
+        if pk.get("strike"):
+            dx = jload(d / "diagnosis.json", {}) or {}
+            chart.append(f"| [{_cell(title)}]({url}) | {strike_why(pk)} | {strike_diag(dx)} | "
+                         f"{_cell(' '.join(what) or 'n/a')} | {status} |")
+        elif pk.get("page12"):
             dx = jload(d / "diagnosis.json", {}) or {}
             chart.append(f"| [{_cell(title)}]({url}) | {p12_why(pk)} | {p12_diag(dx)} | "
                          f"{_cell(' '.join(what) or 'n/a')} | {status} |")
@@ -189,11 +214,16 @@ def main(argv=None) -> int:
                                       "|---|---|---|---|---|"] + chart) if chart else (changed or ["None this run."])) + \
         ["", "## Flagged for you (nothing changed)", ""] + ([f"- {x}" for x in flagged] or ["None."]) + \
         ["", "## Run details", "",
-         f"- Pages checked: {len(queue)} " + ("near-miss pages picked" if engine() == "page-1-2-no-clicks-pass" else "dropped pages qualified")
+         f"- Pages checked: {len(queue)} " + ("near-miss pages picked" if engine() == "page-1-2-no-clicks-pass" else
+                                              "striking-distance pages picked (max 3 changes each)" if engine() == "striking-distance-pass"
+                                              else "dropped pages qualified")
          + (f"; {stats['pages_below_traffic_floor']} more were skipped for low traffic" if 'pages_below_traffic_floor' in stats else "") + ".",
          f"- IndexNow: {finish.get('indexnow', 'not sent')} for {finish.get('indexnow_urls', 0)} URLs.",
          (f"- Changed pages are left alone for 35 days; clicks and CTR are re-measured at 28 days and losers are reverted."
           if engine() == "page-1-2-no-clicks-pass" else
+          f"- Changed pages are left alone for 42 days; the main search's position is re-measured against "
+          f"{len(det.get('controls') or [])} untouched control pages at 14-28 days and losers are reverted."
+          if engine() == "striking-distance-pass" else
           f"- Changed pages are left alone for 28 days so Google can react; the next check of their results is at 14 days.")]
     out = Path(f"/tmp/{engine()}-{a.date}.md")
     out.write_text("\n".join(L) + "\n")
