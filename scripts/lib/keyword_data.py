@@ -494,6 +494,20 @@ FIELD_ORDER = {
 _FIELD_PROVIDER: dict[str, str | None] = {}
 
 
+def _order(field: str) -> tuple[str, ...]:
+    """FIELD_ORDER, unless KEYWORD_PROVIDERS pins one order for every field.
+
+    KEYWORD_PROVIDERS is a comma list (e.g. "dataforseo"). A provider left off
+    the list is never called. /mindmap-pass runs with KEYWORD_PROVIDERS=dataforseo
+    (USER RULE 2026-10-20: mindmap uses DataForSEO, never Ahrefs).
+    """
+    pinned = os.environ.get("KEYWORD_PROVIDERS", "").strip()
+    if not pinned:
+        return FIELD_ORDER[field]
+    names = [n.strip().lower() for n in pinned.split(",")]
+    return tuple(n for n in dict.fromkeys(names) if n in ("dataforseo", "semrush", "ahrefs"))
+
+
 def _provider_usable(name: str, database: str) -> bool:
     """Cheap probe. Never raises — an unusable provider is skipped, not fatal."""
     if name in _DEAD:
@@ -520,13 +534,14 @@ def field_provider(field: str, database: str = "us") -> str | None:
     cur = _FIELD_PROVIDER.get(field)
     if cur is not None and cur not in _DEAD:
         return cur
-    for name in FIELD_ORDER[field]:
+    order = _order(field)
+    for name in order:
         if _provider_usable(name, database):
             if cur and cur != name:
                 _note(f"{field}: {cur} died mid-run -> {name}")
             else:
                 _note(f"{field}: using {name} "
-                      f"(quality order {' > '.join(FIELD_ORDER[field])})")
+                      f"(quality order {' > '.join(order)})")
             _FIELD_PROVIDER[field] = name
             return name
     if cur is not None or field not in _FIELD_PROVIDER:
@@ -648,18 +663,24 @@ def provider_status(database: str = "us") -> dict:
             st["dataforseo"] = f"ok (balance ${acct.get('balance')})"
         except Exception as e:
             st["dataforseo"] = f"unavailable: {str(e)[:100]}"
-    try:
-        _semrush_csv({"type": "phrase_these", "database": database,
-                      "phrase": "seo", "export_columns": "Ph,Nq"})
-        st["semrush"] = "ok"
-    except RuntimeError as e:
-        st["semrush"] = f"unavailable: {e}"
-    try:
-        _ahrefs_get("overview", {"country": database, "keywords": "seo",
-                                 "select": "keyword,volume"})
-        st["ahrefs"] = "ok"
-    except RuntimeError as e:
-        st["ahrefs"] = f"unavailable: {e}"
+    if "semrush" not in _order("volume"):
+        st["semrush"] = "off: excluded by KEYWORD_PROVIDERS"
+    else:
+        try:
+            _semrush_csv({"type": "phrase_these", "database": database,
+                          "phrase": "seo", "export_columns": "Ph,Nq"})
+            st["semrush"] = "ok"
+        except RuntimeError as e:
+            st["semrush"] = f"unavailable: {e}"
+    if "ahrefs" not in _order("volume"):
+        st["ahrefs"] = "off: excluded by KEYWORD_PROVIDERS"
+    else:
+        try:
+            _ahrefs_get("overview", {"country": database, "keywords": "seo",
+                                     "select": "keyword,volume"})
+            st["ahrefs"] = "ok"
+        except RuntimeError as e:
+            st["ahrefs"] = f"unavailable: {e}"
     st["autocomplete"] = "ok" if _suggest("seo") else "unavailable: no response"
     st["selected"] = {f: field_provider(f, database) for f in FIELD_ORDER}
     return st

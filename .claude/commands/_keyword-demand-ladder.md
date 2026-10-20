@@ -65,6 +65,14 @@ needing a code change: `DFS_ENABLED=0` removes it from every field ladder, and
 `DFS_MAX_COST_USD` (default `$2.00`) caps per-process spend — on hitting the cap
 the field demotes to the next provider instead of spending on.
 
+### Pinned order — `KEYWORD_PROVIDERS`
+
+Set `KEYWORD_PROVIDERS` (comma list, e.g. `dataforseo`) to replace the per-field
+order above for every field; a provider left off the list is never called.
+**/mindmap-pass always runs with `KEYWORD_PROVIDERS=dataforseo`** (USER RULE
+2026-10-20: mindmap uses DataForSEO, never Ahrefs). If DataForSEO is down or
+capped, that run falls to the labelled autocomplete estimate, not to Ahrefs.
+
 ## How to call it — always through the shared helper
 
 `scripts/lib/keyword_data.py` implements the whole ladder (stdlib only, no pip).
