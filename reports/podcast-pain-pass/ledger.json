@@ -84,7 +84,13 @@
     "Buzzsprout-17737523",
     "Buzzsprout-17743110",
     "Buzzsprout-17737453",
-    "Buzzsprout-17661241"
+    "Buzzsprout-17661241",
+    "Buzzsprout-19973272",
+    "Buzzsprout-17693463",
+    "Buzzsprout-17661236",
+    "Buzzsprout-17583890",
+    "Buzzsprout-17601581",
+    "Buzzsprout-17583880"
    ]
   },
   "How to Money": {
@@ -170,7 +176,13 @@
     "7d9dedc3-c680-443f-9e8a-b4c5015be359",
     "c7dddbe8-7721-40bb-98b1-b428004b42e5",
     "40cb08a2-b77d-47b6-9111-b402015f3a90",
-    "d0dbdc96-9c23-4ed1-9496-b41001474aa1"
+    "d0dbdc96-9c23-4ed1-9496-b41001474aa1",
+    "a4a883a0-7c65-4b83-b9bb-b4e10145282e",
+    "c7a4d366-3778-4103-8007-b4e401503f63",
+    "aa3be047-8ee0-476f-8f46-b4da01542088",
+    "68e96e7f-3934-4498-999d-b420014338ce",
+    "81becdfd-129f-4758-aac3-b3fa016573a4",
+    "0f38f0d4-4e5b-4417-89a7-b40a014fe70b"
    ]
   },
   "Suze Orman's Women & Money": {
@@ -256,7 +268,13 @@
     "5faef771-7135-4329-9065-b3ce0172b426",
     "18be9665-3096-4d7c-bf8d-b3cc002d2cbc",
     "e2eefe65-052d-44af-8828-b3c800341a86",
-    "05ad4d4b-56c0-43d4-84e4-b3c4012cd634"
+    "05ad4d4b-56c0-43d4-84e4-b3c4012cd634",
+    "58611797-824e-4b79-9033-b4e300f1c3ea",
+    "f4abea56-b99f-4f6e-857e-b4e300eea25f",
+    "1b88e583-c968-40e9-b2ae-b3c10064134b",
+    "222aa126-d93f-47f4-9726-b3bd01613b9b",
+    "46d1fcf3-8179-4234-88c4-b3b9015f7ab7",
+    "b0f39413-aba1-49ba-82ad-b3b7002eb8d6"
    ]
   },
   "The Better Budgeting Podcast": {
@@ -342,7 +360,13 @@
     "Buzzsprout-13773181",
     "Buzzsprout-13655948",
     "Buzzsprout-13596933",
-    "Buzzsprout-13552927"
+    "Buzzsprout-13552927",
+    "Buzzsprout-13507069",
+    "Buzzsprout-13465370",
+    "Buzzsprout-13417890",
+    "Buzzsprout-13389553",
+    "Buzzsprout-13345454",
+    "Buzzsprout-13286809"
    ]
   },
   "Catching Up to FI": {
@@ -406,7 +430,13 @@
     "e807ef11-ce67-43bd-a86c-491214fbcab4",
     "ad1d4c2c-49c6-4d0a-97b2-003642fa2579",
     "a9ac5754-4417-4844-afbb-9ed13c7520aa",
-    "eceabc55-b782-4ee6-a962-afd39c6a389c"
+    "eceabc55-b782-4ee6-a962-afd39c6a389c",
+    "34e9784d-9aa6-4862-aadc-3b9fd7e973d7",
+    "2e14e17d-b87b-4a6d-b2fc-f2be0ebd7d16",
+    "de98ce95-45bb-4571-b495-cf4cf2e9d97d",
+    "2627ad63-8986-4aac-a7d7-3116fad6def4",
+    "c15c3e58-dabe-4071-90d6-eb6bbfd11210",
+    "be1d3505-ff77-49de-b051-1d5c879ab3b8"
    ]
   },
   "The Simply Investing Dividend Podcast": {
@@ -538,7 +568,13 @@
     "https://api.spreaker.com/episode/65582867",
     "https://api.spreaker.com/episode/64840361",
     "https://api.spreaker.com/episode/64900512",
-    "https://api.spreaker.com/episode/65490096"
+    "https://api.spreaker.com/episode/65490096",
+    "https://api.spreaker.com/episode/75001564",
+    "https://api.spreaker.com/episode/64883105",
+    "https://api.spreaker.com/episode/64843916",
+    "https://api.spreaker.com/episode/63640840",
+    "https://api.spreaker.com/episode/64816396",
+    "https://api.spreaker.com/episode/64211183"
    ]
   },
   "The Personal Finance Club Show": {
@@ -623,7 +659,8 @@
   "sinking-fund-vs-emergency-fund",
   "am-i-saving-too-much-for-retirement",
   "can-i-retire-on-rental-income",
-  "spousal-ira"
+  "spousal-ira",
+  "how-to-make-a-budget"
  ],
  "deferred_rows": [
   {

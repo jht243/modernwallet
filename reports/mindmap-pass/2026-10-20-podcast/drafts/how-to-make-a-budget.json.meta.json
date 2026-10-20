@@ -1,0 +1,211 @@
+{
+ "slug": "how-to-make-a-budget",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 2057,
+ "floor": 1200,
+ "input_tokens": 28682,
+ "output_tokens": 12756,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.3698,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['The Four Steps to Build a Budget from Scratch', 'Where the Numbers Come From When You Make a Budget', 'Choosing Between 50/30/20 and Zero-Based Budgets', 'Fixed Costs, Flexible Costs and Pay-Yourself-First Timing', 'A Bill Calendar for Tight Weeks'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2057,
+  "numbers_not_in_facts": [
+   "1100",
+   "3100",
+   "77.5"
+  ],
+  "fact_budget": {
+   "fact_words": 491,
+   "floor": 1200,
+   "ratio": 0.41,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    14,
+    4,
+    2
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "which offers a free tracker or worksheet for each one",
+     "replacement": "which offers a tool for each one",
+     "type": "unsupported",
+     "why": "SOURCE names CFPB tools but never says they are free"
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Steps 2 and 3 take the most time because they need a full month of records.",
+     "replacement": "Step 2 needs a full month of records.",
+     "type": "unsupported",
+     "why": "SOURCE ranks no step by time; only spending tracking uses a month"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "When that happens, the 30% wants share is money you do not have.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE only says needs share can become larger"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "If the result is above 50%, skip 50/30/20 and use a zero-based budget, since it starts from your real costs.",
+     "replacement": "If the result is above 50%, skip 50/30/20 and use a zero-based budget.",
+     "type": "unsupported",
+     "why": "SOURCE does not say zero-based starts from real costs"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "If that remainder looks too small, the [Household Budget Calculator](/budget/household-budget-calculator/) lays every category side by side so you can see which flexible line to trim.",
+     "replacement": "If that remainder looks too small, try the [Household Budget Calculator](/budget/household-budget-calculator/).",
+     "type": "unsupported",
+     "why": "SOURCE lists no calculator features"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "A calendar with every due date written down is the simplest guard against a payment you forgot.",
+     "replacement": "A calendar with every due date written down helps you track due dates.",
+     "type": "unsupported",
+     "why": "SOURCE gives no ranking; 'simplest' is unsupported"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Three problems show up most often in that stretch, and each one has a fix:",
+     "replacement": "Three problems can show up in that stretch, and each one has a fix:",
+     "type": "unsupported",
+     "why": "SOURCE gives no frequency of budget problems"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Bills that arrive once or twice a year break a budget built from a single month of statements.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this cause of budget failure"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "A budget written once and never opened drifts away from your real spending.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this consequence"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If every month ends with nothing left no matter how you adjust, the problem sits in the gap between income and fixed costs.",
+     "replacement": "If every month ends with nothing left no matter how you adjust, compare your income with your fixed costs.",
+     "type": "inference",
+     "why": "SOURCE states no such diagnosis"
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "If your needs take more than half, a zero-based budget fits better, since it starts from your real costs.",
+     "replacement": "If your needs take more than half, a zero-based budget fits better.",
+     "type": "unsupported",
+     "why": "SOURCE does not say zero-based starts from real costs"
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "The [50/30/20 Budget Calculator](/budget/50-30-20-budget-calculator/) shows which side of that line you fall on.",
+     "replacement": "Try the [50/30/20 Budget Calculator](/budget/50-30-20-budget-calculator/) with your own numbers.",
+     "type": "unsupported",
+     "why": "SOURCE lists no calculator features"
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Use the format you will open every week, because a budget you skip reviewing drifts away from your spending.",
+     "replacement": "Use the format you will open every week.",
+     "type": "inference",
+     "why": "SOURCE does not state this consequence"
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Writing by hand makes you copy each number yourself, while a spreadsheet adds the totals for you.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE states no trade-offs of hand versus spreadsheet budgeting"
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we publish free budget calculators, and each one gives a more useful answer once you enter these real numbers instead of guesses.",
+     "replacement": "At ModernWallet, we publish free budget calculators.",
+     "type": "unsupported",
+     "why": "Self-description supports free calculators, not claims about answer usefulness."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "The CFPB Spending Tracker gives you a form to fill in.",
+     "replacement": "The CFPB offers a Spending Tracker for this step.",
+     "type": "unsupported",
+     "why": "SOURCE only says the CFPB offers a Spending Tracker; no form detail."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "High housing costs, heavy debt or a small paycheck can push your needs past 50% the same way.",
+     "replacement": "High housing costs or heavy debt can push your needs past 50% the same way.",
+     "type": "unsupported",
+     "why": "SOURCE names high-cost areas and heavy debt only, not small paychecks."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "A category gets left out and some dollars sit unassigned",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE states no failure mode for zero-based budgets."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "The CFPB Bill Calendar shows the tight weeks before you reach them.",
+     "replacement": "The CFPB offers a Bill Calendar to track due dates and spot tight weeks.",
+     "type": "unsupported",
+     "why": "SOURCE says bill calendar helps spot tight weeks; 'before you reach them' adds claim"
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "The CFPB Budget Worksheet holds all three in one place.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE only says CFPB offers a Budget Worksheet"
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2219
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 187.3,
+ "response_id": "msg_011CgDZ8KZWxvyFnXvoHsGUY",
+ "generated_at": "2026-10-20T13:21:25+0000"
+}
