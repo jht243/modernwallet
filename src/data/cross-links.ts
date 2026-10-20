@@ -80,6 +80,11 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/mortgage/", label: "Mortgage payment calculator" },
     { href: "/calculators/", label: "All calculators" },
   ],
+  // X-trends pass (2026-10-20).
+  "student-loan-wage-garnishment-calculator": [
+    { href: "/guides/what-happens-if-you-dont-pay-your-student-loans/", label: "What happens if you don't pay your student loans" },
+    { href: "/calculators/", label: "All calculators" },
+  ],
   "cd-calculator": [
     { href: "/hysa-vs-cd-calculator/", label: "CD or high-yield savings? Compare both on your deposit" },
     { href: "/annuity-calculator/", label: "Compare with an annuity payout" },

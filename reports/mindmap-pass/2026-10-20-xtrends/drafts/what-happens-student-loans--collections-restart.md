@@ -1,0 +1,9 @@
+## What the Reported Collections Restart Could Mean
+
+Wage garnishment on a defaulted federal student loan can take up to 15% of your disposable pay, or $300 from $2,000 of disposable pay. Disposable pay is the pay left after legally required withholdings, and the cap holds unless you agree in writing to more ([20 U.S.C. 1095a](https://www.law.cornell.edu/uscode/text/20/1095a)). If that paycheck arrives every two weeks, the garnishment comes to about $650 a month and $7,800 a year.
+
+Tax refunds and Social Security benefits are also at risk. The Treasury can apply part or all of a federal tax refund to certain unpaid debts and sends the rest to the filer ([IRS](https://www.irs.gov/newsroom/tax-refunds-may-be-applied-to-offset-certain-debts)). A Social Security offset takes the lesser of 15% of the monthly benefit or the amount above $750 ([31 CFR 285.4](https://www.law.cornell.edu/cfr/text/31/285.4)), so an $850 benefit has a $100 cap.
+
+The Washington Sun and Forbes reported on October 19, 2026, that the administration is preparing to use garnishment and offsets of tax refunds and Social Security against roughly 10 million borrowers in default. According to that reporting, collections would likely start next year, and Treasury may hire private debt collectors as soon as November. Some officials want garnishment to begin for the 2027 tax year, but the reports say an announcement is unlikely before the midterm elections, the start could be delayed again, and the Education Department has not confirmed the plans.
+
+Contact your loan servicer first to learn whether your loans are in default. Then run your own paycheck through the [student loan wage garnishment calculator](/student-loan-wage-garnishment-calculator/) to see what the 15% cap would take. If your loans are already in default, see the "Two ways out of federal default" section.

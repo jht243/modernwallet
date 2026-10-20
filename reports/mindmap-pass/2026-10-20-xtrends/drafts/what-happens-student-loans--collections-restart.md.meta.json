@@ -1,0 +1,67 @@
+{
+ "slug": "what-happens-student-loans--collections-restart",
+ "schema": "none",
+ "kind": "section",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 279,
+ "floor": 0,
+ "input_tokens": 25134,
+ "output_tokens": 5277,
+ "thinking_tokens": null,
+ "cached_tokens": 23551,
+ "est_cost_usd": 0.1166,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 279,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    1
+   ],
+   "applied": [
+    {
+     "id": "L3",
+     "quote": "Wage garnishment on a defaulted federal student loan can take up to 15% of your disposable pay, or $300 from a $2,000 paycheck.",
+     "replacement": "Wage garnishment on a defaulted federal student loan can take up to 15% of your disposable pay, or $300 from $2,000 of disposable pay.",
+     "type": "inference",
+     "why": "SOURCE example is $2,000 of disposable pay, not a $2,000 paycheck"
+    },
+    {
+     "id": "L9",
+     "quote": "If your loans are already in default, the \"Two ways out of federal default\" section above covers the two paths back to good standing.",
+     "replacement": "If your loans are already in default, see the \"Two ways out of federal default\" section.",
+     "type": "unsupported",
+     "why": "SOURCE never says the section lies above or calls them paths to good standing"
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 286
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 61.8,
+ "response_id": "msg_011CgDqbAbNvM8gS6brdtSs4",
+ "generated_at": "2026-10-20T16:55:13+0000"
+}

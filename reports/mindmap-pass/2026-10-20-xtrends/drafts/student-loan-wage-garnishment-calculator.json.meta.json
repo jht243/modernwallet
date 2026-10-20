@@ -1,0 +1,76 @@
+{
+ "slug": "student-loan-wage-garnishment-calculator",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 1167,
+ "floor": 900,
+ "input_tokens": 26746,
+ "output_tokens": 10104,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.3091,
+ "guards": {
+  "repairs": [
+   "slug None -> 'student-loan-wage-garnishment-calculator'"
+  ],
+  "flags": [
+   "missing 'h1' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'sections' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1167,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 478,
+   "floor": 900,
+   "ratio": 0.53,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    0
+   ],
+   "applied": [
+    {
+     "id": "faqs[7].answer",
+     "quote": "You can avoid a refund offset with a repayment agreement, and you can leave default through rehabilitation or Direct Consolidation.",
+     "replacement": "You can avoid a refund offset with a repayment agreement if the first payment is made within 65 days of the notice, and you can leave default through rehabilitation or Direct Consolidation.",
+     "type": "inference",
+     "why": "SOURCE requires first payment within 65 days of the notice to avoid offset"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1155
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 109.7,
+ "response_id": "msg_011CgDqQBxSCyKS2rXmurnNt",
+ "generated_at": "2026-10-20T16:53:32+0000"
+}
