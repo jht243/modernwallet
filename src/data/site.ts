@@ -1,3 +1,4 @@
+import type { Reviewer } from "./types";
 // Single source of truth for brand + domain.
 // Brand displayed on-site is "ModernWallet"; the live domain is www.TheModernWallet.com.
 // (Goal: acquire the exact-match ModernWallet.com later — when that happens, just change SITE.url
@@ -32,15 +33,11 @@ export const AUTHOR = {
 } as const;
 
 // Attorney reviewer for legal/tax pages (Estate Planning, Probate, Elder Care, Tax Resolution).
-// PLACEHOLDER — backfill `name` (and optionally `url`) once a real reviewer is confirmed. Rendered
-// as a second byline line on legal pages and mirrored into the Article `reviewedBy` JSON-LD field.
-// Legal pillars pass this to <Byline reviewer={REVIEWER} />; existing personal-finance pillars pass
-// nothing and render unchanged.
-export const REVIEWER = {
-  name: "[Attorney Name]",
-  credentials: "Esq.",
-  url: "",
-} as const;
+// None confirmed, so legal pages show only the site author's byline and emit no reviewer Person.
+// When a real attorney reviewer is confirmed, set this to { name, credentials: "Esq.", url }:
+// it renders as a second byline line and a reviewer Person node on legal pages.
+// Never ship a placeholder name here.
+export const REVIEWER: Reviewer | undefined = undefined;
 
 // Sitewide "last updated" stamp. Bump when content is materially revised.
 export const LAST_UPDATED = "2026-06-25";
