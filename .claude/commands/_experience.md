@@ -23,3 +23,10 @@ These license a real editorial observation about work on this site. They never l
 _(No named-client claims. This is a content property; the editorial "we" above is the voice.)_
 
 ---
+
+### G — Products and models we test (added 2026-10-20)
+
+The site owner tests every product, app, software tool and AI model this site writes about. On roundup, review and comparison pages this licenses first-person testing claims about those items: "we tested", "in our testing", "we picked it because". It does not license invented specifics: no measurements, scores, benchmark figures, durations, test dates, prices paid, or test setups unless they appear in the row's fact list.
+
+It never covers medical treatments, clinics, drugs, the health effects of supplements, or legal, financial or professional services. Never claim to have tested those. See `_content-standard.md` ## TESTED for the required page format.
+
