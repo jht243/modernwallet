@@ -151,7 +151,7 @@ export function buildTestedTitle(title: string, year: number = new Date().getFul
     .replace(new RegExp(`\\s+for\\s+${Y}\\b`, 'gi'), '')
     .replace(new RegExp(`\\s*\\(\\s*${Y}\\s*\\)`, 'g'), '')
     .replace(new RegExp(`\\s*\\[\\s*${Y}\\s*\\]`, 'g'), '')
-    .replace(new RegExp(`:\\s*${Y}\\b`, 'g'), '')
+    .replace(new RegExp(`:\\s*${Y}(?:\\s+\\S+){0,2}\\s*$`), '')  // ': 2026 Guide' tail → dropped whole; longer tails keep the original title
     .replace(new RegExp(`\\s+${Y}\\s*$`), '')
     .replace(/^The\s+/, '')
     .replace(/\s{2,}/g, ' ')
