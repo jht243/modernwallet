@@ -12,17 +12,18 @@ import type { Reviewer } from "../data/types";
 // `updated` is the page's OWN last-updated date (ISO yyyy-mm-dd). Pages that have never been
 // revised since launch omit it and fall back to the site-wide LAST_UPDATED. A routine that edits a
 // page sets the field on that page's record, so a content pass no longer restamps the whole site.
-interface Props { reviewer?: Reviewer; updated?: string; }
-const { reviewer, updated: updatedProp } = Astro.props as Props;
+// `tested`: qualifying product page (src/lib/testedPage.ts) → "Tested and reviewed by <Name> · Updated <date>".
+interface Props { reviewer?: Reviewer; updated?: string; tested?: boolean; }
+const { reviewer, updated: updatedProp, tested } = Astro.props as Props;
 
 const updated = new Date((updatedProp ?? LAST_UPDATED) + "T00:00:00Z").toLocaleDateString("en-US", {
   year: "numeric", month: "long", day: "numeric", timeZone: "UTC",
 });
 ---
 <div class="byline">
-  <span class="by">By <a href="/about/">{AUTHOR.name}</a>, {AUTHOR.role}</span>
+  <span class="by">{tested ? "Tested and reviewed by" : "By"} <a href="/about/">{AUTHOR.name}</a>{!tested && `, ${AUTHOR.role}`}</span>
   <span class="sep" aria-hidden="true">·</span>
-  <span class="rev">Reviewed against primary sources · Updated {updated}</span>
+  <span class="rev">{!tested && "Reviewed against primary sources · "}Updated {updated}</span>
 </div>
 {reviewer && (
   <div class="byline reviewer">

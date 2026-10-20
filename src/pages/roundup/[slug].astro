@@ -2,7 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Byline from "../../components/Byline.astro";
 import Sources from "../../components/Sources.astro";
-import { SITE, LAST_UPDATED } from "../../data/site";
+import { SITE, LAST_UPDATED, AUTHOR } from "../../data/site";
 import { ROUNDUPS } from "../../data/roundups";
 import { linkify, linkifyInline, plain, paragraphs, richBody } from "../../lib/richtext";
 import { personSchema, articleSchema } from "../../lib/jsonld";
@@ -11,6 +11,7 @@ import LeadForm from "../../components/LeadForm.astro";
 import SponsorSlot from "../../components/SponsorSlot.astro";
 import { BUSINESS_ROUNDUP_SLUGS } from "../../data/business-financing";
 import { vendorRows, vendorTopic } from "../../lib/vendorTable";
+import { buildProsConsReview, testedInfo } from "../../lib/testedPage";
 
 export function getStaticPaths() {
   return ROUNDUPS
@@ -22,6 +23,12 @@ export function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
+// "Tested" templates (src/lib/testedPage.ts): undefined on every non-qualifying
+// roundup, which then renders exactly as before.
+const tested = testedInfo(
+  { slug: entry.slug, text: [entry.title, entry.h1, entry.category], context: [entry.metaDescription] },
+  entry.title,
+);
 const canonicalUrl = new URL(`/roundup/${entry.slug}/`, Astro.site).toString();
 // Vendor lane: company rows (with data-vendor-* for outreach), Featured slot, added vendors.
 const isVendorPage = vendorTopic(entry.slug) !== null;
@@ -49,12 +56,19 @@ const jsonLdItemList = {
   description: entry.metaDescription,
   url: canonicalUrl,
   numberOfItems: entry.options.length,
-  itemListElement: entry.options.map((opt, i) => ({
-    "@type": "ListItem",
-    position: i + 1,
-    name: opt.name,
-    description: opt.bestFor,
-  })),
+  itemListElement: entry.options.map((opt, i) => {
+    // Tested pages: the option's visible Strengths/Limitations, as plain text, as the review.
+    const review = tested
+      ? buildProsConsReview(AUTHOR, opt.strengths.map((s) => plain(s)), opt.limitations.map((l) => plain(l)))
+      : undefined;
+    return {
+      "@type": "ListItem",
+      position: i + 1,
+      name: opt.name,
+      description: opt.bestFor,
+      ...(review ? { item: { "@type": "Product", name: opt.name, review } } : {}),
+    };
+  }),
 };
 
 const jsonLdFaq = entry.faqs.length
@@ -85,7 +99,7 @@ const relatedEntries = entry.relatedComparisons
       .filter((c): c is NonNullable<typeof c> => c !== undefined)
   : [];
 ---
-<BaseLayout title={entry.title} description={entry.metaDescription} noAds={entry.noAds}>
+<BaseLayout title={tested?.title ?? entry.title} description={entry.metaDescription} noAds={entry.noAds}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdItemList)} />
   {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
@@ -101,7 +115,7 @@ const relatedEntries = entry.relatedComparisons
 
     <header class="hero">
       <h1>{entry.h1}</h1>
-      <Byline updated={entry.updated} />
+      <Byline updated={entry.updated} tested={Boolean(tested)} />
       {paragraphs(entry.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
     </header>
 
