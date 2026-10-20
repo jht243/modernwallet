@@ -1,23 +1,27 @@
 {
- "slug": "best-brokers-for-treasury-bonds",
- "rows": [
-  {
-   "name": "Charles Schwab",
-   "domain": "international.schwab.com",
-   "url": "https://international.schwab.com",
-   "values": [
-    "Investors wanting Treasuries in a full-service brokerage",
-    "$0 online; $25 charge if broker-assisted",
-    "Yes, secondary market, $0 online commission",
-    "Not published",
-    "Not published"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "aarp.org",
-   "why": "category 1 \u2014 membership organization and publisher, sells no Treasuries"
-  }
- ]
+  "slug": "best-brokers-for-treasury-bonds",
+  "rows": [
+    {
+      "name": "Treasure",
+      "domain": "treasurefi.com",
+      "url": "https://treasurefi.com/",
+      "values": [
+        "Companies holding idle cash reserves",
+        "Not published",
+        "Funds accessible within 0-5 business days",
+        "Not published",
+        "Not published"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "activtrades.com",
+      "why": "category 4 — CFD broker, site does not offer Treasury bond purchase"
+    },
+    {
+      "domain": "slash.com",
+      "why": "category 4 — business banking and cards; Treasury is a money market advisory account, fits business banking"
+    }
+  ]
 }

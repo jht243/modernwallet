@@ -2,40 +2,25 @@
  "slug": "best-accounting-software-for-freelancers",
  "rows": [
   {
-   "name": "Flowlu",
-   "domain": "flowlu.com",
-   "url": "https://flowlu.com",
+   "name": "FreeAgent",
+   "domain": "freeagent.com",
+   "url": "https://www.freeagent.com/us/",
    "values": [
-    "Free; paid from $9/user/mo billed yearly",
-    "100 CRM contacts on free plan",
-    "Yes, invoices and estimates on free plan",
-    "Freelancers wanting CRM, projects and invoicing in one tool"
-   ]
-  },
-  {
-   "name": "HashMicro",
-   "domain": "hashmicro.com",
-   "url": "https://hashmicro.com",
-   "values": [
-    "Not published (quote-based)",
+    "$27/mo; $13.50/mo for the first six months",
     "Not published",
-    "Not published",
-    "Larger businesses wanting an ERP with an accounting module"
+    "Yes, multi-currency invoicing",
+    "Sole proprietors and small businesses wanting accounting software"
    ]
   }
  ],
  "cut": [
   {
-   "domain": "invoicera.com",
-   "why": "category 4 \u2014 fits invoicing apps category; billing software that is not a general ledger"
+   "domain": "ashleyrcummings.com",
+   "why": "category 1 \u2014 blog/review list of accounting software, no product of its own"
   },
   {
-   "domain": "invoicito.com",
-   "why": "category 4 \u2014 fits invoicing apps category; invoicing only, no accounting"
-  },
-  {
-   "domain": "waffleinvoice.com",
-   "why": "category 4 \u2014 fits invoicing apps category; invoicing only, no accounting"
+   "domain": "supermonitoring.com",
+   "why": "category 1 \u2014 blog/review list of accounting apps; sells website monitoring, off-scope"
   }
  ]
 }

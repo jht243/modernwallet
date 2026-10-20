@@ -2,41 +2,22 @@
  "slug": "personal-loan-rates-by-lender",
  "rows": [
   {
-   "name": "Truliant Federal Credit Union",
-   "domain": "truliantfcu.org",
-   "url": "https://www.truliantfcu.org/personal-loans",
+   "name": "Wescom Credit Union",
+   "domain": "wescom.org",
+   "url": "https://www.wescom.org/loans/personal-loans",
    "values": [
-    "Members wanting fixed payments, no origination fee",
-    "$1,000 to $50,000",
-    "From 7.49% APR as of Oct 2026",
+    "Members wanting fixed payments and no origination fee",
+    "Up to $100,000, terms up to 72 months",
+    "Fixed from 8.99% APR as of Oct 2026",
     "No origination fee, no prepayment penalty",
-    "Not published"
-   ]
-  },
-  {
-   "name": "Credit Union of Texas",
-   "domain": "cutx.org",
-   "url": "https://www.cutx.org/personal-loans",
-   "values": [
-    "Members who can use savings-secured or unsecured loans",
-    "Not published",
-    "Example: 14.24% APR on $5,000 over 60 months, as of Oct 2026",
-    "$50 origination under $1,000; $100 at $1,000 or more",
-    "Often same day"
-   ]
-  },
-  {
-   "name": "SkyOne Federal Credit Union",
-   "domain": "skyone.org",
-   "url": "https://www.skyone.org/personal-loans",
-   "values": [
-    "Members wanting a loan or line of credit with autopay discounts",
-    "$500 to $50,000",
-    "From 13.99% APR as of Oct 2026",
-    "Not published",
     "Not published"
    ]
   }
  ],
- "cut": []
+ "cut": [
+  {
+   "domain": "maxcash.com",
+   "why": "category 1 — lead-gen site; says it does not offer or provide loans"
+  }
+ ]
 }

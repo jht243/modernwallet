@@ -1,10 +1,18 @@
 {
  "slug": "best-secured-credit-cards",
- "rows": [],
- "cut": [
+ "rows": [
   {
-   "domain": "elitepersonalfinance.com",
-   "why": "category 1 \u2014 lead-gen marketplace/comparison site with no card of its own"
+   "name": "USALLIANCE Visa Secured Credit Card",
+   "domain": "usalliance.org",
+   "url": "https://www.usalliance.org/banking-products/secured-card",
+   "values": [
+    "$250 minimum, held in a savings account; maximum not published",
+    "Not published",
+    "None listed",
+    "$0 annual fee, no penalty APR",
+    "Not published"
+   ]
   }
- ]
+ ],
+ "cut": []
 }

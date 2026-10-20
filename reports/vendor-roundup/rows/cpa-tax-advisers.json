@@ -1,0 +1,63 @@
+{
+ "slug": "how-to-choose-a-cpa-or-tax-adviser",
+ "rows": [
+  {
+   "name": "SDO CPA",
+   "domain": "sdocpa.com",
+   "url": "https://sdocpa.com/",
+   "values": [
+    "Texas-licensed CPA firm",
+    "Not stated",
+    "Not published (upfront estimate before work starts)",
+    "S-Corp, partnership and Schedule C owners with $150K to $5M revenue"
+   ]
+  },
+  {
+   "name": "Jain Consulting",
+   "domain": "vinicpa.com",
+   "url": "https://vinicpa.com/",
+   "values": [
+    "CPA and IRS Enrolled Agent",
+    "Yes, Enrolled Agent represents clients before IRS and states",
+    "Individual returns generally $400 to $2,000",
+    "Small business owners and individuals in the Raleigh and Cary area"
+   ]
+  },
+  {
+   "name": "Shruti CPA",
+   "domain": "shruticpa.com",
+   "url": "https://shruticpa.com/",
+   "values": [
+    "Licensed CPA",
+    "Not stated",
+    "Not published",
+    "Tech professionals, business owners and expats in the Bay Area"
+   ]
+  },
+  {
+   "name": "Apex CPAs & Consultants",
+   "domain": "apexcpas.com",
+   "url": "https://apexcpas.com/",
+   "values": [
+    "CPA, CVA and CGMA credentials listed",
+    "Not stated",
+    "Not published",
+    "Closely held, growth-minded business owners in Illinois and Arizona"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "righttaxadvisor.com",
+   "why": "category 2 \u2014 parked placeholder page, domain may be for sale"
+  },
+  {
+   "domain": "theabundantaccountant.com",
+   "why": "category 1 \u2014 pricing-advice content for accountants, no tax or CPA service to consumers; page unreadable"
+  },
+  {
+   "domain": "thumbtack.com",
+   "why": "category 1 \u2014 marketplace/lead-gen, no product of its own"
+  }
+ ]
+}

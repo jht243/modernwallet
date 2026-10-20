@@ -1,17 +1,22 @@
 {
- "slug": "best-ai-investing-apps",
- "rows": [
-  {
-   "name": "WallStreetZen",
-   "domain": "wallstreetzen.com",
-   "url": "https://wallstreetzen.com",
-   "values": [
-    "Stock research using Zen Ratings quant scores",
-    "Premium $19.50/mo billed yearly; $1 14-day trial",
-    "Zen Ratings, a 115-factor model the site says uses AI",
-    "N/A"
-   ]
-  }
- ],
- "cut": []
+  "slug": "best-ai-investing-apps",
+  "rows": [
+    {
+      "name": "Questflow",
+      "domain": "docs.questflow.ai",
+      "url": "https://docs.questflow.ai/",
+      "values": [
+        "Investing alongside top investors through an AI finance agent",
+        "Not published",
+        "Agent combining GPT, Claude, Gemini models with Investor Skills",
+        "Not published"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "visualping.io",
+      "why": "category 3 — website change-monitoring tool, no investing product"
+    }
+  ]
 }

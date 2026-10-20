@@ -1,55 +1,39 @@
 {
- "slug": "best-estate-planning-software",
- "rows": [
-  {
-   "name": "MyCase",
-   "domain": "mycase.com",
-   "url": "https://www.mycase.com",
-   "values": [
-    "N/A; law-firm practice management software",
-    "N/A; documents auto-populated, no trust templates stated",
-    "N/A",
-    "N/A",
-    "Web and iOS app; $60-$150/user/month"
-   ]
-  },
-  {
-   "name": "Lawyers With Purpose (STEPS)",
-   "domain": "lawyerswithpurpose.com",
-   "url": "https://lawyerswithpurpose.com",
-   "values": [
-    "Not published",
-    "STEPS trust and estate planning software for attorneys",
-    "Not published",
-    "Attorneys use it to draft; not consumer review",
-    "Not published; demo on request"
-   ]
-  },
-  {
-   "name": "RightCapital",
-   "domain": "rightcapital.com",
-   "url": "https://rightcapital.com",
-   "values": [
-    "N/A; planning software for advisors",
-    "N/A",
-    "N/A",
-    "N/A",
-    "Web; 14-day free trial, pricing not published"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "law.co",
-   "why": "category 4 \u2014 legal AI workspace for law firms, no estate planning product and no fit in a finance category"
-  },
-  {
-   "domain": "giftplanning.aarp.org",
-   "why": "category 1 \u2014 AARP Foundation fundraising page and lead form, no product of its own"
-  },
-  {
-   "domain": "slashdot.org",
-   "why": "category 1 \u2014 tech news and software review site, sells nothing"
-  }
- ]
+  "slug": "best-estate-planning-software",
+  "rows": [
+    {
+      "name": "EncorEstate Plans",
+      "domain": "encorestateplans.com",
+      "url": "https://encorestateplans.com/",
+      "values": [
+        "Will-Based Plan $400",
+        "Trust-Based Plan $650",
+        "Included in each plan; $125 powers-only plan",
+        "Planner and paralegal review; attorney review on request",
+        "Web platform for financial advisors"
+      ]
+    },
+    {
+      "name": "AAEPA CounselPro",
+      "domain": "aaepa.com",
+      "url": "https://www.aaepa.com/estate-planning-software/",
+      "values": [
+        "Not published",
+        "Revocable, special needs and other trust templates",
+        "Not published",
+        "Templates vetted by attorneys",
+        "Cloud-based; sold to estate planning attorneys"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "mymoneymyfreedom.co",
+      "why": "category 1 — blog, ranked list article"
+    },
+    {
+      "domain": "deelo.ai",
+      "why": "category 4 — general business apps suite, no estate planning product on site"
+    }
+  ]
 }

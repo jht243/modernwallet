@@ -1,0 +1,22 @@
+{
+ "slug": "best-healthcare-directive-services",
+ "rows": [],
+ "cut": [
+  {
+   "domain": "caringinfo.org",
+   "why": "category 1 \u2014 nonprofit information site, no product sold"
+  },
+  {
+   "domain": "aafp.org",
+   "why": "category 1 \u2014 professional association page, sample form only"
+  },
+  {
+   "domain": "scripps.org",
+   "why": "category 1 \u2014 medical provider information page, no directive product"
+  },
+  {
+   "domain": "azhdr.org",
+   "why": "category 1 \u2014 state registry/government information site, no product"
+  }
+ ]
+}

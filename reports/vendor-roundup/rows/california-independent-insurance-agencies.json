@@ -1,0 +1,86 @@
+{
+  "slug": "best-independent-insurance-agencies-in-california",
+  "rows": [
+    {
+      "name": "California Home Insurance Agency",
+      "domain": "californiahomeinsuranceagency.com",
+      "url": "https://californiahomeinsuranceagency.com/",
+      "values": [
+        "Los Angeles",
+        "0B75129",
+        "Homeowners, wildfire options and FAIR Plan",
+        "California homeowners shopping several carriers"
+      ]
+    },
+    {
+      "name": "Blake Insurance Group",
+      "domain": "blakeinsurancegroup.com",
+      "url": "https://blakeinsurancegroup.com/",
+      "values": [
+        "Tucson, AZ; lists 24 licensed states",
+        "Not published (lists a national producer number)",
+        "Auto, home, health, life, business",
+        "Individuals and small businesses wanting an independent agency"
+      ]
+    },
+    {
+      "name": "Independent Group Agency",
+      "domain": "igainsurance.com",
+      "url": "https://igainsurance.com/",
+      "values": [
+        "Woodland Hills",
+        "Not published",
+        "Auto, home, earthquake, business and commercial",
+        "Los Angeles area individuals and businesses"
+      ]
+    },
+    {
+      "name": "Allen Thomas Group",
+      "domain": "allenthomasgroup.com",
+      "url": "https://allenthomasgroup.com/",
+      "values": [
+        "Akron, OH; licensed in California",
+        "Not published (lists a national producer number)",
+        "Personal and commercial, 15+ carriers",
+        "Individuals and businesses wanting several carriers compared"
+      ]
+    },
+    {
+      "name": "Insurance Incorporated",
+      "domain": "insuranceinc.com",
+      "url": "https://insuranceinc.com/",
+      "values": [
+        "Offices in Camarillo, Palm Desert, Temecula and others",
+        "0235301",
+        "Personal, business, benefits and bonds",
+        "Individuals, families and businesses in the Western US"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "smartchoiceagents.com",
+      "why": "category 3 \u2014 agent network selling carrier access to agents, North Carolina based, not a California agency"
+    },
+    {
+      "domain": "iiabcal.org",
+      "why": "category 1 \u2014 trade association, no insurance product of its own"
+    },
+    {
+      "domain": "agency.nationwide.com",
+      "why": "category 1 \u2014 directory of Nationwide agents, no agency of its own"
+    },
+    {
+      "domain": "m.yelp.ca",
+      "why": "category 1 \u2014 marketplace/review directory"
+    },
+    {
+      "domain": "cainsurance.net",
+      "why": "category 2 \u2014 site blocked fetching; no product facts verifiable this run"
+    },
+    {
+      "domain": "comparioninsurance.com",
+      "why": "category 2 \u2014 site blocked fetching; no product facts verifiable this run"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+ "slug": "best-bookkeeping-services-for-small-businesses",
+ "rows": [
+  {
+   "name": "AccountingDepartment.com",
+   "domain": "accountingdepartment.com",
+   "url": "https://www.accountingdepartment.com/",
+   "values": [
+    "Not published (four flat monthly tiers, quote-based)",
+    "Not published",
+    "No, states it does not provide tax services",
+    "Businesses from under $1M to $100M+ revenue wanting an outsourced accounting department"
+   ]
+  },
+  {
+   "name": "1-800Accountant",
+   "domain": "1800accountant.com",
+   "url": "https://www.1800accountant.com/",
+   "values": [
+    "Business Complete $469/mo billed annually (full-service bookkeeping)",
+    "Catch-up bookkeeping offered as add-on, price not published",
+    "Included in Starter and Business Complete plans",
+    "Small business owners wanting bookkeeping and tax filing together"
+   ]
+  },
+  {
+   "name": "BooksTime",
+   "domain": "bookstime.com",
+   "url": "https://www.bookstime.com/",
+   "values": [
+    "Not published",
+    "Not published",
+    "Not stated; says it is not a CPA firm",
+    "Small businesses, nonprofits, real estate and construction firms wanting outsourced bookkeeping"
+   ]
+  },
+  {
+   "name": "Otterz",
+   "domain": "otterz.co",
+   "url": "https://otterz.co/",
+   "values": [
+    "Not published (says transparent monthly pricing)",
+    "Not published",
+    "Yes, tax and compliance service for businesses",
+    "Startups and small businesses wanting bookkeeping plus controller or CFO help"
+   ]
+  },
+  {
+   "name": "Mindspace Outsourcing",
+   "domain": "mindspaceoutsourcing.com",
+   "url": "https://mindspaceoutsourcing.com/",
+   "values": [
+    "Not published",
+    "Not published",
+    "Yes, tax return preparation and submission",
+    "CPA firms and small to large businesses outsourcing bookkeeping and payroll"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "universalaccountingschool.com",
+   "why": "category 3 \u2014 sells accounting training and certification, not bookkeeping services"
+  }
+ ]
+}

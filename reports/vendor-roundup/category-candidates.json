@@ -1,21 +1,19 @@
 {
   "site": "themodernwallet.com",
   "cut_as_other_category": {
+    "invoicing apps": [
+      "invoicera.com",
+      "invoicito.com",
+      "waffleinvoice.com"
+    ],
     "unlabelled": [
       "admin316.com",
-      "certumsolutions.com",
-      "cheers.credit",
-      "connecteam.com",
-      "deel.com",
-      "emburse.com",
-      "equifax.com",
+      "fe.training",
       "hyrotrader.com",
-      "jotform.com",
+      "lanelaw.com",
       "law.co",
-      "nationwide.com",
-      "survaipro.com",
-      "theknot.com",
-      "walnutinvest.com"
+      "mccmlaw.com",
+      "theccbb.com"
     ],
     "brokers": [
       "vtmarkets.com"
@@ -23,12 +21,18 @@
     "trading platforms": [
       "bookmap.com"
     ],
-    "debt relief": [
-      "incharge.org"
+    "net-worth-tracker": [
+      "kubera.com"
+    ],
+    "savings": [
+      "accountoffers.wellsfargo.com"
     ],
     "banks/credit unions": [
       "communityamerica.com",
       "spiritfinancialcu.org"
+    ],
+    "business banking": [
+      "found.com"
     ],
     "personal loans": [
       "gauss.money"
@@ -46,8 +50,20 @@
     "financial planning and life insurance categories": [
       "northwesternmutual.com"
     ],
-    "mortgage lenders": [
-      "goodloan.ai"
+    "robo-advisors": [
+      "mezzi.com"
+    ],
+    "bookkeeping": [
+      "prepshift.co"
+    ],
+    "bookkeeping/accounting software": [
+      "hellobooks.ai"
+    ],
+    "portfolio-backtesting-and-analysis-tools": [
+      "helmterminal.dev"
+    ],
+    "budgeting and money apps": [
+      "getwealthi.ai"
     ]
   },
   "demand_candidates": [
@@ -237,11 +253,11 @@
       ]
     },
     {
-      "head": "pay best buy credit card bill",
-      "volume": 195000,
+      "head": "best buy credit card bill pay",
+      "volume": 208500,
       "queries": [
-        "pay best buy credit card bill",
         "best buy credit card bill pay",
+        "pay best buy credit card bill",
         "best buy credit card pay bill"
       ]
     },

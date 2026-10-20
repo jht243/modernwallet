@@ -36,6 +36,30 @@
       "Skills testing and AI interview; domain expertise per role"
      ],
      "added": "2026-10-16"
+    },
+    {
+     "name": "Braintrust AI Training",
+     "domain": "usebraintrust.com",
+     "url": "https://usebraintrust.com/ai-training",
+     "values": [
+      "Braintrust",
+      "$20-$200/hr depending on task type",
+      "Payments processed weekly",
+      "Braintrust profile, then an AI skills interview"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Claru",
+     "domain": "claru.ai",
+     "url": "https://claru.ai/",
+     "values": [
+      "Claru",
+      "Flat geo-tiered USD pay; $15/hr US, $10/hr Canada",
+      "Not published",
+      "Not published"
+     ],
+     "added": "2026-10-20"
     }
    ]
   },
@@ -96,6 +120,18 @@
       "N/A"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "Questflow",
+     "domain": "docs.questflow.ai",
+     "url": "https://docs.questflow.ai/",
+     "values": [
+      "Investing alongside top investors through an AI finance agent",
+      "Not published",
+      "Agent combining GPT, Claude, Gemini models with Investor Skills",
+      "Not published"
+     ],
+     "added": "2026-10-20"
     }
    ]
   },
@@ -155,6 +191,42 @@
       "Crypto, stocks, commodities, forex"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Altrady",
+     "domain": "altrady.com",
+     "url": "https://www.altrady.com/",
+     "values": [
+      "Active crypto traders using several exchanges",
+      "EUR 28-90/month billed monthly; 5-day free trial (as of Oct 2026)",
+      "Grid, DCA, HODL, TradingView, Signal and Webhook bots via exchange API",
+      "Crypto, 19+ exchanges"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "AlgoBuilder",
+     "domain": "algobuilder.com",
+     "url": "https://algobuilder.com/",
+     "values": [
+      "Building and backtesting strategies from plain-language ideas",
+      "Free; Core $20, Pro $100, Quant $200 per month",
+      "AI writes Python; live orders run on your PC via MetaTrader 5",
+      "MetaTrader 5 brokers: forex, shares, metals, crypto"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Automated Trading",
+     "domain": "automatedtrading.io",
+     "url": "https://automatedtrading.io/",
+     "values": [
+      "Subscribers wanting rules-based crypto bots",
+      "Bots from $89/month list; signals $29/month; 14-day free trial",
+      "Fully automated spot and futures bots; manual signals option",
+      "Crypto: Coinbase, Binance, Kraken"
+     ],
+     "added": "2026-10-20"
     }
    ]
   },
@@ -1691,6 +1763,32 @@
       "Web; 14-day free trial, pricing not published"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "EncorEstate Plans",
+     "domain": "encorestateplans.com",
+     "url": "https://encorestateplans.com/",
+     "values": [
+      "Will-Based Plan $400",
+      "Trust-Based Plan $650",
+      "Included in each plan; $125 powers-only plan",
+      "Planner and paralegal review; attorney review on request",
+      "Web platform for financial advisors"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "AAEPA CounselPro",
+     "domain": "aaepa.com",
+     "url": "https://www.aaepa.com/estate-planning-software/",
+     "values": [
+      "Not published",
+      "Revocable, special needs and other trust templates",
+      "Not published",
+      "Templates vetted by attorneys",
+      "Cloud-based; sold to estate planning attorneys"
+     ],
+     "added": "2026-10-20"
     }
    ]
   },
@@ -1812,6 +1910,19 @@
       "Not published"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "Treasure",
+     "domain": "treasurefi.com",
+     "url": "https://treasurefi.com/",
+     "values": [
+      "Companies holding idle cash reserves",
+      "Not published",
+      "Funds accessible within 0-5 business days",
+      "Not published",
+      "Not published"
+     ],
+     "added": "2026-10-20"
     }
    ]
   },
@@ -1849,6 +1960,18 @@
       "Unlimited ATM fee rebates worldwide on CashPlus"
      ],
      "added": "2026-10-16"
+    },
+    {
+     "name": "Raymond James",
+     "domain": "raymondjames.com",
+     "url": "https://www.raymondjames.com/",
+     "values": [
+      "Cash deposited at up to 12 banks",
+      "Not published",
+      "Not published",
+      "Pays interest on cash awaiting investment"
+     ],
+     "added": "2026-10-20"
     }
    ]
   },
@@ -1960,6 +2083,17 @@
       "Not published"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Halfmore",
+     "domain": "halfmore.co",
+     "url": "https://halfmore.co/",
+     "values": [
+      "Not published",
+      "$9.99/month covers up to 5 children; 14-day free trial",
+      "N/A - invests at the brokerage you choose"
+     ],
+     "added": "2026-10-20"
     }
    ]
   },
@@ -2143,6 +2277,19 @@
       "Not published"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "Wescom Credit Union",
+     "domain": "wescom.org",
+     "url": "https://www.wescom.org/loans/personal-loans",
+     "values": [
+      "Members wanting fixed payments and no origination fee",
+      "Up to $100,000, terms up to 72 months",
+      "Fixed from 8.99% APR as of Oct 2026",
+      "No origination fee, no prepayment penalty",
+      "Not published"
+     ],
+     "added": "2026-10-20"
     }
    ]
   },
@@ -2269,6 +2416,19 @@
       "Not published (credit report checked)"
      ],
      "added": "2026-10-15"
+    },
+    {
+     "name": "USALLIANCE Visa Secured Credit Card",
+     "domain": "usalliance.org",
+     "url": "https://www.usalliance.org/banking-products/secured-card",
+     "values": [
+      "$250 minimum, held in a savings account; maximum not published",
+      "Not published",
+      "None listed",
+      "$0 annual fee, no penalty APR",
+      "Not published"
+     ],
+     "added": "2026-10-20"
     }
    ]
   },
@@ -3035,6 +3195,18 @@
       "Startups to enterprises managing team spend"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "Capital on Tap",
+     "domain": "capitalontap.com",
+     "url": "https://www.capitalontap.com/us",
+     "values": [
+      "Not published",
+      "Business credit card issued by WebBank",
+      "$0, no FX fees",
+      "Small businesses wanting 1.5% cash back and employee cards"
+     ],
+     "added": "2026-10-20"
     }
    ]
   },
@@ -3255,6 +3427,58 @@
       "Select MoneyPass ATMs; no branches"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "Every",
+     "domain": "every.io",
+     "url": "https://every.io/",
+     "values": [
+      "$0, no standard account fees",
+      "None",
+      "Free domestic ACH, wire and check payments via a connected bank",
+      "Up to $3M via Thread Bank sweep program, conditions apply",
+      "Not published"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Capital One Small Business Checking",
+     "domain": "businessapply.capitalone.com",
+     "url": "https://businessapply.capitalone.com/",
+     "values": [
+      "Basic $15, Enhanced $35",
+      "$2,000 balance waives the Basic fee",
+      "Not published",
+      "Not published",
+      "Not published"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "TAB Bank",
+     "domain": "tabbank.com",
+     "url": "https://www.tabbank.com/business-checking",
+     "values": [
+      "Minimal monthly charge; amount in fee schedule",
+      "Not published",
+      "Not published",
+      "Member FDIC",
+      "100 free transactions monthly; cash deposit fee not published"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Live Oak Bank",
+     "domain": "liveoak.bank",
+     "url": "https://www.liveoak.bank/business-checking/",
+     "values": [
+      "$10 Essential, $25 Plus, $100 Plus Analysis",
+      "$100 to open; $1,000 balance waives $10 fee",
+      "Plus tier offers online wires; fee not published",
+      "Member FDIC; extended coverage through IntraFi at no cost",
+      "Not published"
+     ],
+     "added": "2026-10-20"
     }
    ]
   },
@@ -3623,6 +3847,18 @@
       "Larger businesses wanting an ERP with an accounting module"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "FreeAgent",
+     "domain": "freeagent.com",
+     "url": "https://www.freeagent.com/us/",
+     "values": [
+      "$27/mo; $13.50/mo for the first six months",
+      "Not published",
+      "Yes, multi-currency invoicing",
+      "Sole proprietors and small businesses wanting accounting software"
+     ],
+     "added": "2026-10-20"
     }
    ]
   },
@@ -4102,6 +4338,18 @@
       "Freelancers and small merchants needing invoicing plus in-person sales"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "Nickel",
+     "domain": "nickel.com",
+     "url": "https://nickel.com",
+     "values": [
+      "Core $0/mo; Plus $35/mo; Pro $300/mo",
+      "AI assistant follows up on unpaid invoices",
+      "Not published",
+      "Construction, logistics and other B2B firms collecting invoice payments"
+     ],
+     "added": "2026-10-20"
     }
    ]
   },
@@ -4109,25 +4357,281 @@
    "domains": {
     "Danielson Bookkeeping & Consulting": "danielsonservices.com"
    },
-   "added": []
+   "added": [
+    {
+     "name": "AccountingDepartment.com",
+     "domain": "accountingdepartment.com",
+     "url": "https://www.accountingdepartment.com/",
+     "values": [
+      "Not published (four flat monthly tiers, quote-based)",
+      "Not published",
+      "No, states it does not provide tax services",
+      "Businesses from under $1M to $100M+ revenue wanting an outsourced accounting department"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "1-800Accountant",
+     "domain": "1800accountant.com",
+     "url": "https://www.1800accountant.com/",
+     "values": [
+      "Business Complete $469/mo billed annually (full-service bookkeeping)",
+      "Catch-up bookkeeping offered as add-on, price not published",
+      "Included in Starter and Business Complete plans",
+      "Small business owners wanting bookkeeping and tax filing together"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "BooksTime",
+     "domain": "bookstime.com",
+     "url": "https://www.bookstime.com/",
+     "values": [
+      "Not published",
+      "Not published",
+      "Not stated; says it is not a CPA firm",
+      "Small businesses, nonprofits, real estate and construction firms wanting outsourced bookkeeping"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Otterz",
+     "domain": "otterz.co",
+     "url": "https://otterz.co/",
+     "values": [
+      "Not published (says transparent monthly pricing)",
+      "Not published",
+      "Yes, tax and compliance service for businesses",
+      "Startups and small businesses wanting bookkeeping plus controller or CFO help"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Mindspace Outsourcing",
+     "domain": "mindspaceoutsourcing.com",
+     "url": "https://mindspaceoutsourcing.com/",
+     "values": [
+      "Not published",
+      "Not published",
+      "Yes, tax return preparation and submission",
+      "CPA firms and small to large businesses outsourcing bookkeeping and payroll"
+     ],
+     "added": "2026-10-20"
+    }
+   ]
   },
   "best-tax-preparation-services-for-freelancers": {
    "domains": {
     "Elite Pro-Tax & Financial Services": "eliteprotaxgvl.com"
    },
-   "added": []
+   "added": [
+    {
+     "name": "H&H Accounting Services",
+     "domain": "hhcpaservices.com",
+     "url": "https://hhcpaservices.com/",
+     "values": [
+      "Accounting firm, Scottsdale AZ",
+      "Not published",
+      "Arizona-based; says it helps clients nationwide",
+      "Phoenix-area individuals and business owners wanting personal service"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "The Fino Partners",
+     "domain": "thefinopartners.com",
+     "url": "https://thefinopartners.com/",
+     "values": [
+      "Outsourced accounting and tax preparation firm",
+      "Not published",
+      "Not published",
+      "CPA firms and small businesses outsourcing tax preparation"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "H&R Block",
+     "domain": "hrblock.com",
+     "url": "https://www.hrblock.com/",
+     "values": [
+      "Online tax filing and tax preparers",
+      "Not published",
+      "Not published",
+      "Self-employed filers wanting a national tax preparation brand"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Zenith Financial Advisors",
+     "domain": "zenithfinancialadvisors.com",
+     "url": "https://zenithfinancialadvisors.com/",
+     "values": [
+      "Tax preparation and accounting firm",
+      "Simple US returns from $499; Schedule C not listed",
+      "Not published",
+      "US expats and cross-border filers"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "DeWitt Giger, LLP",
+     "domain": "dewittgiger.cpa",
+     "url": "https://dewittgiger.cpa/",
+     "values": [
+      "CPA firm, Monroe, Louisiana",
+      "Not published",
+      "Not published",
+      "Service businesses, professionals, restaurants and individuals"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "TurboTax",
+     "domain": "turbotax.intuit.com",
+     "url": "https://turbotax.intuit.com/",
+     "values": [
+      "Tax software with Expert Assist and Expert Full Service",
+      "Self-Employed tiers listed without dollar figures",
+      "Not published",
+      "Self-employed filers wanting software or expert help"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Deduction",
+     "domain": "deduction.com",
+     "url": "https://deduction.com/",
+     "values": [
+      "AI tax assistant with CPA-reviewed filing",
+      "$499 for new clients: CPA-reviewed advice plus annual filing",
+      "Not published",
+      "Self-employed people wanting year-round tax guidance"
+     ],
+     "added": "2026-10-20"
+    }
+   ]
   },
   "how-to-choose-a-cpa-or-tax-adviser": {
    "domains": {
     "Haigler CPA Group": "haiglercpagroup.com"
    },
-   "added": []
+   "added": [
+    {
+     "name": "SDO CPA",
+     "domain": "sdocpa.com",
+     "url": "https://sdocpa.com/",
+     "values": [
+      "Texas-licensed CPA firm",
+      "Not stated",
+      "Not published (upfront estimate before work starts)",
+      "S-Corp, partnership and Schedule C owners with $150K to $5M revenue"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Jain Consulting",
+     "domain": "vinicpa.com",
+     "url": "https://vinicpa.com/",
+     "values": [
+      "CPA and IRS Enrolled Agent",
+      "Yes, Enrolled Agent represents clients before IRS and states",
+      "Individual returns generally $400 to $2,000",
+      "Small business owners and individuals in the Raleigh and Cary area"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Shruti CPA",
+     "domain": "shruticpa.com",
+     "url": "https://shruticpa.com/",
+     "values": [
+      "Licensed CPA",
+      "Not stated",
+      "Not published",
+      "Tech professionals, business owners and expats in the Bay Area"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Apex CPAs & Consultants",
+     "domain": "apexcpas.com",
+     "url": "https://apexcpas.com/",
+     "values": [
+      "CPA, CVA and CGMA credentials listed",
+      "Not stated",
+      "Not published",
+      "Closely held, growth-minded business owners in Illinois and Arizona"
+     ],
+     "added": "2026-10-20"
+    }
+   ]
   },
   "best-independent-insurance-agencies-in-california": {
    "domains": {
     "TSM Insurance": "tsminsurance.com"
    },
-   "added": []
+   "added": [
+    {
+     "name": "California Home Insurance Agency",
+     "domain": "californiahomeinsuranceagency.com",
+     "url": "https://californiahomeinsuranceagency.com/",
+     "values": [
+      "Los Angeles",
+      "0B75129",
+      "Homeowners, wildfire options and FAIR Plan",
+      "California homeowners shopping several carriers"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Blake Insurance Group",
+     "domain": "blakeinsurancegroup.com",
+     "url": "https://blakeinsurancegroup.com/",
+     "values": [
+      "Tucson, AZ; lists 24 licensed states",
+      "Not published (lists a national producer number)",
+      "Auto, home, health, life, business",
+      "Individuals and small businesses wanting an independent agency"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Independent Group Agency",
+     "domain": "igainsurance.com",
+     "url": "https://igainsurance.com/",
+     "values": [
+      "Woodland Hills",
+      "Not published",
+      "Auto, home, earthquake, business and commercial",
+      "Los Angeles area individuals and businesses"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Allen Thomas Group",
+     "domain": "allenthomasgroup.com",
+     "url": "https://allenthomasgroup.com/",
+     "values": [
+      "Akron, OH; licensed in California",
+      "Not published (lists a national producer number)",
+      "Personal and commercial, 15+ carriers",
+      "Individuals and businesses wanting several carriers compared"
+     ],
+     "added": "2026-10-20"
+    },
+    {
+     "name": "Insurance Incorporated",
+     "domain": "insuranceinc.com",
+     "url": "https://insuranceinc.com/",
+     "values": [
+      "Offices in Camarillo, Palm Desert, Temecula and others",
+      "0235301",
+      "Personal, business, benefits and bonds",
+      "Individuals, families and businesses in the Western US"
+     ],
+     "added": "2026-10-20"
+    }
+   ]
   },
   "best-restaurant-hr-support-services-in-massachusetts": {
    "domains": {

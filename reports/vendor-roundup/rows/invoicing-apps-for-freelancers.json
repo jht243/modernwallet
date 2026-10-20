@@ -2,55 +2,16 @@
  "slug": "best-invoicing-apps-for-freelancers",
  "rows": [
   {
-   "name": "SwiftBill",
-   "domain": "getswiftbill.app",
-   "url": "https://getswiftbill.app",
+   "name": "Nickel",
+   "domain": "nickel.com",
+   "url": "https://nickel.com",
    "values": [
-    "Free tier of 5 invoices/month; paid price Not published",
+    "Core $0/mo; Plus $35/mo; Pro $300/mo",
+    "AI assistant follows up on unpaid invoices",
     "Not published",
-    "Not published",
-    "Freelancers wanting a simple mobile invoice generator"
-   ]
-  },
-  {
-   "name": "Aspire",
-   "domain": "aspireapp.com",
-   "url": "https://aspireapp.com",
-   "values": [
-    "Not published",
-    "Not published",
-    "Not published",
-    "Businesses wanting multi-currency accounts with receivables tools"
-   ]
-  },
-  {
-   "name": "Billing+",
-   "domain": "getbilling.co",
-   "url": "https://getbilling.co",
-   "values": [
-    "Free; Premium $10/month or $99/year",
-    "Yes, Premium plan",
-    "Not published; payment gateway fees apply",
-    "Freelancers and small merchants needing invoicing plus in-person sales"
+    "Construction, logistics and other B2B firms collecting invoice payments"
    ]
   }
  ],
- "cut": [
-  {
-   "domain": "zinnhub.com",
-   "why": "category 1 \u2014 freelance marketplace, not an invoicing product"
-  },
-  {
-   "domain": "stackysuite.com",
-   "why": "category 1 \u2014 ratings and comparison site, no product of its own"
-  },
-  {
-   "domain": "freelancerbridge.com",
-   "why": "category 1 \u2014 freelance marketplace, not an invoicing product"
-  },
-  {
-   "domain": "make.com",
-   "why": "category 3 \u2014 workflow automation platform, not finance"
-  }
- ]
+ "cut": []
 }

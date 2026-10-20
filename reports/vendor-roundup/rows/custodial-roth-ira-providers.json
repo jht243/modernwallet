@@ -1,30 +1,16 @@
 {
   "slug": "best-custodial-roth-ira-providers",
-  "rows": [],
-  "cut": [
+  "rows": [
     {
-      "domain": "admin316.com",
-      "why": "category 4 — employer retirement plan fiduciary/administration, no custodial Roth IRA; fits 401(k) providers for small business"
-    },
-    {
-      "domain": "wealthgenadvisor.com",
-      "why": "category 4 — fee-only financial planning firm, no custodial Roth IRA account offered on site; fits financial advisor category"
-    },
-    {
-      "domain": "kidvestors.co",
-      "why": "category 4 — kids financial education platform, no Roth IRA; fits financial education category"
-    },
-    {
-      "domain": "thefinancebuff.com",
-      "why": "category 1 — personal finance blog"
-    },
-    {
-      "domain": "knockedupmoney.com",
-      "why": "category 1 — personal finance blog"
-    },
-    {
-      "domain": "kerberrose.com",
-      "why": "category 4 — accounting and advisory firm, no custodial Roth IRA product published; fits financial advisor category"
+      "name": "Halfmore",
+      "domain": "halfmore.co",
+      "url": "https://halfmore.co/",
+      "values": [
+        "Not published",
+        "$9.99/month covers up to 5 children; 14-day free trial",
+        "N/A - invests at the brokerage you choose"
+      ]
     }
-  ]
+  ],
+  "cut": []
 }

@@ -2,25 +2,21 @@
  "slug": "best-business-credit-cards",
  "rows": [
   {
-   "name": "Volopay",
-   "domain": "volopay.com",
-   "url": "https://volopay.com",
+   "name": "Capital on Tap",
+   "domain": "capitalontap.com",
+   "url": "https://www.capitalontap.com/us",
    "values": [
     "Not published",
-    "Corporate cards (physical, virtual) with spend management",
-    "Not published; sales-quoted pricing",
-    "Startups to enterprises managing team spend"
+    "Business credit card issued by WebBank",
+    "$0, no FX fees",
+    "Small businesses wanting 1.5% cash back and employee cards"
    ]
   }
  ],
  "cut": [
   {
-   "domain": "elanfinancialservices.com",
-   "why": "category 3 \u2014 B2B card-issuing service for banks and credit unions; no direct card to apply for"
-  },
-  {
-   "domain": "pointsnav.com",
-   "why": "category 1 \u2014 card ranking and comparison site, not an issuer"
+   "domain": "servistree.com",
+   "why": "category 4 — payment processing and insurance reseller in South Florida, no business credit card; no matching category"
   }
  ]
 }

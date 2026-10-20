@@ -1,10 +1,17 @@
 {
- "slug": "best-brokerage-accounts-for-interest-on-cash",
- "rows": [],
- "cut": [
-  {
-   "domain": "brokerage-review.com",
-   "why": "category 1 \u2014 brokerage review/comparison site owned by ACM Media LLC, no product of its own"
-  }
- ]
+  "slug": "best-brokerage-accounts-for-interest-on-cash",
+  "rows": [
+    {
+      "name": "Raymond James",
+      "domain": "raymondjames.com",
+      "url": "https://www.raymondjames.com/",
+      "values": [
+        "Cash deposited at up to 12 banks",
+        "Not published",
+        "Not published",
+        "Pays interest on cash awaiting investment"
+      ]
+    }
+  ],
+  "cut": []
 }
