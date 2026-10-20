@@ -1,0 +1,11 @@
+CLOSED FACT LIST (Anything not on this list, you do not know. Never invent a price, limit, fee or URL; say it is unpublished and tell the reader to verify.):
+- Every Trump Account is held at Robinhood Securities, LLC, the initial trustee chosen by the U.S. Treasury; as of October 2026 no other firm can hold one (this site's trustees comparison; Treasury press release https://home.treasury.gov/news/press-releases/sb0642).
+- Robinhood's Trump Account customer agreement dated September 30, 2026 says Robinhood does not charge other account fees to maintain the balance and charges no fee to transfer out (https://cdn.robinhood.com/assets/robinhood/legal/trump_account_customer_agreement.pdf).
+- Reported fund menu expense ratios run about 0.02% to 0.03% a year, under the 0.10% legal cap; the reported default fund is SPYM (InvestmentNews, July 1, 2026).
+- Fidelity announced on June 23, 2026 that it plans to support Trump Account rollovers once Treasury publishes formal operating guidance. As of October 8, 2026 no such guidance had been published and Fidelity does not accept a Trump Account rollover yet. Fidelity has not published fees for Trump Accounts.
+- Vanguard, Schwab and J.P. Morgan Chase are in the same position: none accepts a rollover yet.
+- Online lists naming Fidelity or Schwab as places to open a child's Trump Account are incorrect.
+- A child may hold only one funded Trump Account at a time, and a rollover must be a direct trustee-to-trustee transfer.
+- Internal links allowed: /compare/trump-account-trustees/, /guides/what-are-trump-accounts-invested-in/, /guides/trump-account-rules/
+CLOSED URL LIST: https://home.treasury.gov/news/press-releases/sb0642 ; https://cdn.robinhood.com/assets/robinhood/legal/trump_account_customer_agreement.pdf ; https://www.irs.gov/trumpaccounts
+TASK: Write ONE FAQ answer (no heading, 2 to 3 sentences) for the question "Does Fidelity charge fees on a Trump Account?" to add to the trustees comparison page. First sentence is the direct answer.

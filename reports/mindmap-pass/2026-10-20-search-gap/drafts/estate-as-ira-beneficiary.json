@@ -1,0 +1,130 @@
+{
+ "slug": "estate-as-ira-beneficiary",
+ "title": "Estate as IRA Beneficiary Payout and Tax Rules (2026)",
+ "metaDescription": "With the estate as IRA beneficiary, the account follows the 5-year or life-expectancy rule, and 2026 estate income tax brackets reach 37% above $16,000.",
+ "h1": "Payout Deadlines and Income Tax With the Estate as IRA Beneficiary",
+ "cardBlurb": "How an IRA left to an estate is paid out under the 5-year or life-expectancy rule, and how the estate's 2026 income tax brackets apply.",
+ "introText": "When an estate inherits an individual retirement account (IRA), the account has to be emptied on a fixed federal schedule, and traditional IRA withdrawals count as taxable income. The deadline is five years if the owner died before the required beginning date, or the owner's remaining life expectancy if death came on or after that date. With the estate as IRA beneficiary, the estate cannot use the 10-year rule that individual heirs get, and its 2026 income tax brackets reach 37% once taxable income passes $16,000.",
+ "sections": [
+  {
+   "heading": "How an IRA Is Paid Out and Taxed When the Estate Is the Beneficiary",
+   "body": "An IRA left to an estate must be emptied on one of two federal clocks, and the owner's date of death picks the clock. [Internal Revenue Service (IRS) Publication 590-B](https://www.irs.gov/publications/p590b) draws the line at the required beginning date, which is April 1 of the year after the owner reaches age 73. An owner who turned 73 in 2025, for example, had a required beginning date of April 1, 2026.\n\nIf the owner died before the required beginning date, the 5-year rule applies to a beneficiary that is not an individual, such as an estate or trust. The estate must withdraw the entire balance by December 31 of the year containing the fifth anniversary of the owner's death. For a death in 2026, that deadline is December 31, 2031.\n\nThe 5-year rule sets no required withdrawals in years one through four, and no life expectancy table is used. The estate can withdraw on any schedule, including one lump sum, as long as the account is empty by the deadline. Any amount left in the account after that date is subject to the excise tax for insufficient distributions.\n\nIf the owner died on or after the required beginning date, the estate uses the owner's life expectancy for the owner's age in the year of death. That figure is reduced by one for each later year. For the yearly withdrawal math, start with our [required minimum distribution (RMD) calculator](/retirement/rmd-calculator/).\n\nUnder either clock, money paid out of a traditional IRA is taxable income. The estate receiving it does not make it tax-free. A Roth IRA left to an estate follows the same two payout clocks, but qualified Roth distributions are not taxed."
+  },
+  {
+   "heading": "Why an Estate as IRA Beneficiary Gets No 10-Year Rule",
+   "body": "An estate gets no 10-year rule because that rule belongs to designated beneficiaries, and an estate cannot be one. IRS Publication 590-B says an estate is not an individual, so it cannot be a designated beneficiary. The publication's own example of a beneficiary that is not an individual is \"the owner's estate.\"\n\n[Vanguard's guide to RMD rules for inherited IRAs](https://investor.vanguard.com/investor-resources-education/retirement/rmd-rules-for-inherited-iras) states the same limit: the 10-year rule applies to designated beneficiaries, who are individuals. Publication 590-B adds that designated beneficiaries are generally identified as of September 30 of the calendar year after the owner's death.\n\nThat leaves an estate with two options. If the owner died before the required beginning date, the estate gets five years where a named individual would have had the 10-year rule. If the owner died on or after that date, the estate gets the owner's remaining life expectancy."
+  },
+  {
+   "heading": "Form 1041 and the 2026 Estate Income Tax Brackets",
+   "body": "An estate reports its income on [Form 1041, U.S. Income Tax Return for Estates and Trusts](https://www.irs.gov/forms-pubs/about-form-1041). The 2026 brackets for estates and trusts come from Table 5 of [Revenue Procedure 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf), and the top 37% rate starts above $16,000 of taxable income.\n\n| 2026 estate taxable income | Tax owed |\n|---|---|\n| $0 to $3,300 | 10% |\n| Over $3,300 to $11,700 | $330 plus 24% of the amount over $3,300 |\n| Over $11,700 to $16,000 | $2,346 plus 35% of the amount over $11,700 |\n| Over $16,000 | $3,851 plus 37% of the amount over $16,000 |\n\nTake $100,000 of IRA income taxed to the estate in a single year. The tax is $3,851 plus 37% of $84,000, which comes to $34,931.\n\nNow spread the same $100,000 as five withdrawals of $20,000 under the 5-year rule. Each year's tax is $3,851 plus 37% of $4,000, or $5,331, for $26,655 over five years. That is $8,276 less, assuming the 2026 brackets held each year and the estate had no other taxable income.\n\nWhether the IRA income is taxed to the estate or passed out to the heirs depends on the facts of the estate, and so does state tax treatment. A certified public accountant (CPA) or estate attorney with the estate's numbers is the person to ask before choosing a withdrawal schedule."
+  },
+  {
+   "heading": "The Estate Tax Deduction for Income in Respect of a Decedent",
+   "body": "The beneficiary who receives an IRA distribution can deduct the federal estate tax paid on the part of that distribution that is income in respect of a decedent. Publication 590-B says the deduction is taken for the tax year the income is reported. For amounts that are not that kind of income, there is no deduction."
+  },
+  {
+   "heading": "Whether the IRA Counts Toward the Federal Estate Tax",
+   "body": "A traditional IRA can count toward the federal estate tax. Publication 590-B says the value of payments receivable by a beneficiary of a decedent's traditional IRA may be included in the decedent's gross estate. The Schedule I instructions for Form 706 cover the details.\n\nFor 2026, the federal estate tax exemption is $15,000,000 per individual under Public Law 119-21. The federal rate on the amount above the exemption is a flat 40%. An estate worth $16,000,000 with no deductions would owe 40% of $1,000,000, or $400,000.\n\nTo run your own figures, use our [estate tax calculator](/estate-planning/estate-tax-calculator/)."
+  },
+  {
+   "heading": "Naming a Person Instead of the Estate",
+   "body": "Naming an individual on the beneficiary form creates a designated beneficiary, and designated beneficiaries can use the 10-year rule that an estate cannot. A beneficiary designation on an IRA also overrides the will. \n\nOur [first-time estate planning guide](/guides/first-time-estate-planning/) places beneficiary forms inside a full plan. Our [probate vs. trust comparison](/compare/probate-vs-trust/) covers the larger choice of how assets pass."
+  },
+  {
+   "heading": "Naming the Estate as IRA Beneficiary by Accident or on Purpose",
+   "body": "The estate can end up as IRA beneficiary by accident in two situations: no beneficiary form is on file, or the named beneficiary died before the owner. An owner can also name the estate on purpose by writing it on the form.\n\nThe payout and tax rules are the same whichever way the estate got there. The estate gets no 10-year rule, it runs on the 5-year or life-expectancy clock, and its 2026 income tax brackets reach 37% above $16,000.\n\nAn estate attorney should weigh the payout deadlines and estate tax brackets before a form names the estate on purpose."
+  },
+  {
+   "heading": "A Beneficiary Form Checklist for Every IRA",
+   "body": "If you own an IRA, run these checks on every account, and repeat them after a death, birth, marriage, or divorce in the family.\n\n- Confirm a beneficiary form is on file for each account.\n- Confirm each named beneficiary is still living.\n- Name a backup beneficiary for the case where a primary beneficiary dies first.\n- Compare each form with your will, since the form overrides the will.\n- Note which accounts are traditional and which are Roth, since qualified Roth distributions are not taxed.\n- Keep a copy of each form, or the account provider's confirmation, with your estate papers.\n\nIf you are still building the rest of your plan, our [estate planning hub](/estate-planning/) collects the related calculators and guides in one place."
+  },
+  {
+   "heading": "When to Bring In an Estate Attorney or CPA",
+   "body": "Bring one in for any of these situations.\n\n- The estate is already the beneficiary of an IRA and a withdrawal schedule has to be chosen.\n- You need to know whether IRA income is taxed to the estate or passed out to the heirs.\n- You need to know how your state taxes the distributions.\n- The estate may be worth more than the $15,000,000 federal exemption.\n- You want to name the estate or a trust as beneficiary on purpose.\n\nIf none of those apply, pull each IRA beneficiary form this week and confirm a living person is named, so the estate as IRA beneficiary only happens by choice."
+  }
+ ],
+ "tools": [
+  {
+   "href": "/retirement/rmd-calculator/",
+   "label": "RMD calculator"
+  },
+  {
+   "href": "/estate-planning/estate-tax-calculator/",
+   "label": "Estate tax calculator"
+  },
+  {
+   "href": "/probate/",
+   "label": "Probate"
+  },
+  {
+   "href": "/guides/first-time-estate-planning/",
+   "label": "First-time estate planning"
+  },
+  {
+   "href": "/compare/probate-vs-trust/",
+   "label": "Probate vs. trust"
+  },
+  {
+   "href": "/estate-planning/",
+   "label": "Estate planning"
+  }
+ ],
+ "faqs": [
+  {
+   "question": "How is an estate taxed when the beneficiary of an IRA is the estate?",
+   "answer": "Traditional IRA withdrawals are taxable income reported through the estate on Form 1041, and the 2026 estate brackets reach 37% above $16,000 of taxable income. Whether the tax stays with the estate or passes out to the heirs depends on the facts, so ask a CPA or estate attorney with the estate's numbers."
+  },
+  {
+   "question": "Can an estate be the beneficiary of an IRA?",
+   "answer": "Yes. An owner can name the estate on the form, and the estate can also end up as beneficiary when no form is on file or the named beneficiary died first. Because an estate is not an individual, it cannot be a designated beneficiary under [IRS Publication 590-B](https://www.irs.gov/publications/p590b)."
+  },
+  {
+   "question": "What is the 5-year rule for an estate-owned inherited IRA?",
+   "answer": "If the owner died before the required beginning date, the estate must empty the IRA by December 31 of the year containing the fifth anniversary of the death. No withdrawals are required in years one through four. Any balance left after the deadline is subject to the excise tax for insufficient distributions."
+  },
+  {
+   "question": "Does the 10-year rule apply to an estate?",
+   "answer": "No. The 10-year rule applies to designated beneficiaries, who are individuals, and an estate is not one. An estate uses the 5-year rule if the owner died before the required beginning date, or the owner's remaining life expectancy if death came on or after it."
+  },
+  {
+   "question": "Is an IRA subject to probate?",
+   "answer": "An IRA with a named beneficiary passes under the beneficiary form, which overrides the will. When the estate is the beneficiary, the account is paid to the estate. Our [probate guide](/probate/) explains the process, and an estate attorney can tell you how your state treats the account."
+  },
+  {
+   "question": "Can the estate take the IRA as a lump sum?",
+   "answer": "Yes, under the 5-year rule, because withdrawals can follow any schedule as long as the account is empty by the deadline. One $100,000 withdrawal taxed to the estate in 2026 would owe $34,931, while five $20,000 withdrawals would owe $26,655 in total if 2026 rates held. For the life-expectancy method, [Publication 590-B](https://www.irs.gov/publications/p590b) sets the payout period."
+  },
+  {
+   "question": "Does a Roth IRA left to an estate follow the same rules?",
+   "answer": "Yes, for timing. A Roth IRA inherited by an estate follows the same 5-year and life-expectancy payout clocks as a traditional IRA, but qualified Roth distributions are not taxed."
+  }
+ ],
+ "sources": [
+  {
+   "label": "IRS Publication 590-B, Distributions from Individual Retirement Arrangements",
+   "url": "https://www.irs.gov/publications/p590b"
+  },
+  {
+   "label": "IRS Publication 559, Survivors, Executors, and Administrators",
+   "url": "https://www.irs.gov/publications/p559"
+  },
+  {
+   "label": "IRS Revenue Procedure 2025-32 (2026 inflation adjustments)",
+   "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+  },
+  {
+   "label": "IRS About Form 1041, U.S. Income Tax Return for Estates and Trusts",
+   "url": "https://www.irs.gov/forms-pubs/about-form-1041"
+  },
+  {
+   "label": "Vanguard RMD rules for inherited IRAs",
+   "url": "https://investor.vanguard.com/investor-resources-education/retirement/rmd-rules-for-inherited-iras"
+  }
+ ],
+ "metaTitle": "",
+ "subtitle": "",
+ "ctaTitle": "",
+ "ctaText": "",
+ "ctaButton": "",
+ "faqItems": []
+}

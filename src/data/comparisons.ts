@@ -1682,7 +1682,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ── end dataannotation-vs-outlier ──
   // ── mindmap-pass 2026-10-08 ──
   {
-    "updated": "2026-10-08",
+    "updated": "2026-10-20",
     "slug": "trump-account-trustees",
     "title": "Trump Account Trustees: Robinhood vs Fidelity, Vanguard",
     "metaDescription": "Compare Trump Account trustees: Robinhood holds initial accounts, while Fidelity, Vanguard, and Schwab await Treasury rules. Check current rollover status.",
@@ -1795,6 +1795,10 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         "question": "Is my child's Trump Account safe at Robinhood?",
         "answer": "The account is held by Robinhood Securities, LLC, which is a regulated financial broker operating as the official initial trustee under Treasury appointment. To protect yourself from phishing attempts and fraudulent registration websites, read our guide on [Trump Account scams](/guides/trump-account-scams/)."
+      },
+      {
+        "question": "Does Fidelity charge fees on a Trump Account?",
+        "answer": "Fidelity has not published any fees for Trump Accounts, and as of October 2026 only Robinhood Securities, LLC, the trustee chosen by the [U.S. Treasury](https://home.treasury.gov/news/press-releases/sb0642), can hold one. Fidelity plans to accept Trump Account rollovers once Treasury publishes formal operating guidance, and that guidance was still unpublished on October 8, 2026. For now, Robinhood's [Trump Account customer agreement](https://cdn.robinhood.com/assets/robinhood/legal/trump_account_customer_agreement.pdf) dated September 30, 2026 says Robinhood charges no other account fees to maintain the balance and no fee to transfer out."
       }
     ],
     "sources": [

@@ -1,0 +1,69 @@
+{
+ "slug": "trump-account-alternatives--fidelity-fees",
+ "schema": "none",
+ "kind": "section",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 328,
+ "floor": 0,
+ "input_tokens": 26594,
+ "output_tokens": 3269,
+ "thinking_tokens": null,
+ "cached_tokens": 25210,
+ "est_cost_usd": 0.076,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 328,
+  "numbers_not_in_facts": [
+   "10000"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L1",
+     "quote": "Fidelity charges no Trump Account fees today because it cannot hold a Trump Account yet and has published no Trump Account fees.",
+     "replacement": "Fidelity cannot hold a Trump Account yet and has published no Trump Account fees.",
+     "type": "inference",
+     "why": "SOURCE says only that Fidelity cannot accept one and published no fees"
+    },
+    {
+     "id": "L1",
+     "quote": "A child may hold only one funded Trump Account at a time, so any move must be a direct trustee-to-trustee transfer.",
+     "replacement": "A child may hold only one funded Trump Account at a time, and any move must be a direct trustee-to-trustee transfer.",
+     "type": "inference",
+     "why": "SOURCE states both rules separately, not that one causes the other"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 336
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 44.3,
+ "response_id": "msg_011CgDio6ZoZdNTHu717LnJo",
+ "generated_at": "2026-10-20T15:25:49+0000"
+}

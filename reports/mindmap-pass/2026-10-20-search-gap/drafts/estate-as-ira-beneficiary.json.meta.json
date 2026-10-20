@@ -1,0 +1,151 @@
+{
+ "slug": "estate-as-ira-beneficiary",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 1898,
+ "floor": 1200,
+ "input_tokens": 27929,
+ "output_tokens": 23517,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.5821,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['How an IRA Is Paid Out and Taxed When the Estate Is the Beneficiary', 'Why an Estate as IRA Beneficiary Gets No 10-Year Rule', 'Form 1041 and the 2026 Estate Income Tax Brackets', 'The Estate Tax Deduction for Income in Respect of a Decedent', 'Whether the IRA Counts Toward the Federal Estate Tax'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1898,
+  "numbers_not_in_facts": [
+   "100000",
+   "1000000",
+   "16000000",
+   "20000",
+   "2031",
+   "26655",
+   "34931",
+   "4000",
+   "400000",
+   "5331",
+   "8276",
+   "84000"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    9
+   ],
+   "applied": [
+    {
+     "id": "sections[4].body",
+     "quote": "An estate below $15,000,000 owes no federal estate tax, so the income in respect of a decedent deduction never comes into play.",
+     "replacement": "An estate below $15,000,000 owes no federal estate tax.",
+     "type": "inference",
+     "why": "SOURCE says the deduction is for estate tax paid, not only federal."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If you want heirs to get the longest payout window the rules allow, name individuals on the form.",
+     "replacement": "If you want heirs to be able to use the 10-year rule, name individuals on the form.",
+     "type": "unsupported",
+     "why": "SOURCE never says the 10-year rule is the longest window allowed."
+    },
+    {
+     "id": "introText",
+     "quote": "At The Modern Wallet, we publish free calculators for required withdrawals and estate tax, and both apply when an estate inherits an IRA.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Self-description licenses free calculators generally, not these specific ones applying."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "That figure is reduced by one for each later year, so the payout period gets shorter every year.",
+     "replacement": "That figure is reduced by one for each later year.",
+     "type": "inference",
+     "why": "Restates the SOURCE rule with an added consequence; acceptable but trimmed."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "[IRS Publication 559](https://www.irs.gov/publications/p559) explains how to claim it under the heading \"Estate Tax Deduction.\" The deduction applies only when federal estate tax was actually paid, so an estate that owed none has nothing to deduct.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE only says deduct estate tax paid; this conclusion is not stated."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "An estate below $15,000,000 owes no federal estate tax.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE gives exemption only; ignores prior gifts and other factors."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If you want heirs to be able to use the 10-year rule, name individuals on the form.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Advice beyond SOURCE; eligibility of individuals for 10-year rule depends on facts."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Our read is that an accidental estate beneficiary should be fixed while the owner is alive, by filing or updating the beneficiary form.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Advice not supported by SOURCE facts."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "That read changes if the owner wants the IRA to pass under the terms of the will.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Depends on removed advice; not in SOURCE."
+    },
+    {
+     "id": "sections[8].body",
+     "quote": "An estate attorney or CPA should handle any IRA question that turns on facts the federal rules leave open.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE only says to ask about taxation location and state tax."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "What is settled is that a beneficiary designation on an IRA overrides the will, and when the estate is the beneficiary, the account is paid to the estate.",
+     "replacement": "What is settled is that a beneficiary designation on an IRA overrides the will.",
+     "type": "unsupported",
+     "why": "SOURCE states override of will only; payment-to-estate claim not stated."
+    }
+   ],
+   "deleted_final": 9,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2077
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 240.3,
+ "response_id": "msg_011CgDiQSjcpnGjGq7FGrT2h",
+ "generated_at": "2026-10-20T15:23:58+0000"
+}
