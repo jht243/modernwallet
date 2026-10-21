@@ -1,0 +1,127 @@
+{
+ "slug": "will-social-security-run-out",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 1736,
+ "floor": 1200,
+ "input_tokens": 29509,
+ "output_tokens": 12778,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.3736,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['When the Social Security Trust Funds Run Short', \"Why the Retirement Fund's Date Moved Up From 2033 to 2032\", 'How Large the Social Security Shortfall Is', 'What a 22% Cut Would Mean for Benefits', 'What It Would Take to Close the Gap'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1736,
+  "numbers_not_in_facts": [
+   "0.72",
+   "0.78",
+   "72",
+   "83"
+  ],
+  "fact_budget": {
+   "fact_words": 848,
+   "floor": 1200,
+   "ratio": 0.71,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    7
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we build Social Security calculators, and the mistake we see readers make most often is reading \"run out\" as \"stop paying.\"",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description licenses no specific reader-mistake observation; this one is invented."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Those assumption changes add to a cost gap that has been growing for years.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE doesn't frame changes as adding to a years-long growing gap."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The trust fund reserves cover these yearly gaps until they are exhausted. After the reserves are gone, the gap shows up as smaller checks.",
+     "replacement": "After the reserves are exhausted, benefits would be paid from incoming revenue at the reduced percentage.",
+     "type": "inference",
+     "why": "SOURCE doesn't state reserves cover yearly gaps; only reduced benefits after insolvency."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Smaller reforms now close only part of the gap.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE doesn't call these reforms 'smaller'."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "- The [Social Security break-even calculator](/social-security-break-even-calculator/) compares total benefits collected under different claiming ages.",
+     "replacement": "- [Social Security break-even calculator](/social-security-break-even-calculator/)",
+     "type": "unsupported",
+     "why": "SOURCE doesn't describe what the calculator does."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "- [Social Security at 62 vs 70](/compare/social-security-at-62-vs-70/) lays out the early and late claiming tradeoff side by side.",
+     "replacement": "- [Social Security at 62 vs 70](/compare/social-security-at-62-vs-70/)",
+     "type": "unsupported",
+     "why": "SOURCE doesn't describe the page's content."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "- The [Social Security COLA calculator](/social-security-cola-calculator/) shows how cost-of-living adjustments (COLAs), including the 3.6% COLA for 2027, change a monthly check.",
+     "replacement": "- [Social Security COLA calculator](/social-security-cola-calculator/) (the 2027 COLA is 3.6%)",
+     "type": "unsupported",
+     "why": "SOURCE doesn't describe the calculator's function."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "- [Is Social Security taxable](/guides/is-social-security-taxable/) explains the income tax on benefits, the same revenue stream that OBBBA reduced.",
+     "replacement": "- [Is Social Security taxable](/guides/is-social-security-taxable/) (OBBBA reduced revenue from the income taxation of benefits)",
+     "type": "unsupported",
+     "why": "SOURCE doesn't describe the linked guide's content."
+    }
+   ],
+   "deleted_final": 7,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1825
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 141.8,
+ "response_id": "msg_011CgF95tVnzjihNvo41poP6",
+ "generated_at": "2026-10-21T09:26:34+0000"
+}

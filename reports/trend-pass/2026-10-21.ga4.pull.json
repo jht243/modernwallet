@@ -1,0 +1,130 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-20",
+  "window_start": "2026-10-20",
+  "window_end": "2026-10-20",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 94,
+      "sessions": 80,
+      "active_users": 75,
+      "clicks": 94
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 52,
+      "sessions": 49,
+      "active_users": 42,
+      "clicks": 52
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 50,
+      "sessions": 47,
+      "active_users": 44,
+      "clicks": 50
+    },
+    {
+      "page": "/sponsor",
+      "views": 38,
+      "sessions": 38,
+      "active_users": 38,
+      "clicks": 38
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 36,
+      "sessions": 37,
+      "active_users": 33,
+      "clicks": 36
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 26,
+      "sessions": 28,
+      "active_users": 22,
+      "clicks": 26
+    },
+    {
+      "page": "/guides/social-security-changes-2027/",
+      "views": 22,
+      "sessions": 21,
+      "active_users": 18,
+      "clicks": 22
+    },
+    {
+      "page": "/guides/how-to-claim-a-trump-account/",
+      "views": 21,
+      "sessions": 20,
+      "active_users": 18,
+      "clicks": 21
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 20,
+      "sessions": 18,
+      "active_users": 18,
+      "clicks": 20
+    },
+    {
+      "page": "/guides/trump-account-rules/",
+      "views": 15,
+      "sessions": 15,
+      "active_users": 15,
+      "clicks": 15
+    }
+  ],
+  "top10_pages_total_views": 374,
+  "top10_pages_total_clicks": 374,
+  "channel_split": {
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 58,
+      "Direct": 18,
+      "Unassigned": 4,
+      "Referral": 3
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 47,
+      "Unassigned": 3
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 44,
+      "Direct": 3,
+      "Unassigned": 3,
+      "Referral": 2
+    },
+    "/sponsor": {
+      "Direct": 38
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 35,
+      "Unassigned": 4,
+      "Direct": 2
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 27,
+      "Unassigned": 3,
+      "Direct": 1
+    },
+    "/guides/social-security-changes-2027/": {
+      "Organic Search": 21,
+      "Unassigned": 1
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 17,
+      "Direct": 1
+    },
+    "/guides/how-to-claim-a-trump-account/": {
+      "Organic Search": 16,
+      "Direct": 3,
+      "Unassigned": 1
+    },
+    "/guides/trump-account-rules/": {
+      "Organic Search": 14,
+      "Direct": 1
+    }
+  }
+}

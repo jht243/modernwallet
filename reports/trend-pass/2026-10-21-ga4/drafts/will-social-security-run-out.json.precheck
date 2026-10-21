@@ -1,0 +1,62 @@
+{
+  "slug": "will-social-security-run-out",
+  "metaTitle": "Will Social Security Run Out? 2032 Date and 22% Cut",
+  "metaDescription": "Will Social Security run out? The 2026 Trustees Report projects the retirement fund runs short in 2032, then pays about 78% of benefits unless Congress acts.",
+  "h1": "Will Social Security Run Out?",
+  "cardBlurb": "Social Security does not stop paying, but the 2026 Trustees Report projects a 22% benefit cut when the retirement trust fund runs short in 2032.",
+  "introText": "No, Social Security does not stop paying: the retirement trust fund is projected to run short in 2032, and after that only incoming payroll taxes would be left to pay benefits. The 2026 Trustees Report, as analysed by the [Committee for a Responsible Federal Budget (CRFB)](https://www.crfb.org/papers/analysis-2026-social-security-trustees-report), puts the automatic cut at that point at 22% unless Congress acts. At ModernWallet, we build Social Security calculators, and the mistake we see readers make most often is reading \"run out\" as \"stop paying.\"\n\nThe question of whether Social Security will run out has two parts. The reserves held in the trust fund are projected to be exhausted, which is what \"insolvent\" means in these reports. The monthly checks would keep coming, paid from incoming revenue, at about 78 cents for every scheduled dollar.\n\nThe Social Security and Medicare Trustees released their annual reports on June 9, 2026. The dates and cut sizes below come from that report and from the Congressional Budget Office (CBO). Every one of them is a projection.",
+  "sections": [
+    {
+      "heading": "When the Social Security Trust Funds Run Short",
+      "body": "The 2026 Trustees Report projects that the Old-Age and Survivors Insurance (OASI) trust fund, which pays retirement and survivor benefits, will be depleted in 2032, with a 22% benefit cut after that. The table puts that date beside the combined-fund view and the CBO estimate published earlier in 2026.\n\n| Measure | Depletion year | Benefit cut after |\n| --- | --- | --- |\n| OASI retirement fund (2026 Trustees) | 2032 | 22%, growing to 38% by 2100 |\n| OASI and DI combined (2026 Trustees) | 2034 | 17%, growing to 35% by 2100 |\n| OASI retirement fund (CBO, 2026) | Fiscal year 2032 | 28% average in the years after |\n| OASI and DI combined (CBO, 2026) | 2033 | Not stated in CRFB's summary |\n\nThe combined rows treat the OASI fund and the Disability Insurance (DI) fund as one pool. That merger is theoretical, so 2032 and 22% are the Trustees' figures for retirement benefits. CBO projects a deeper cut than the Trustees, a 28% average, and an earlier combined date of 2033.\n\nThe cut would be automatic because Social Security cannot legally spend more than its revenues and assets. Once the reserves are gone, the program pays what incoming revenue covers, which works out to about 78% of scheduled retirement benefits in 2032. CRFB describes 2032 as the year today's youngest retirees turn 68.\n\nThe 2025 report projected 2033 for the OASI fund, so this year's report moved the date one year earlier. The combined date of 2034 did not change from last year's report."
+    },
+    {
+      "heading": "Why the Retirement Fund's Date Moved Up From 2033 to 2032",
+      "body": "The OASI depletion date moved up a year because the Trustees lowered their assumptions for births and immigration, and because the One Big Beautiful Bill Act (OBBBA) reduced one of the program's revenue sources. CRFB measures each driver by how much it worsened the 75-year balance, as a share of taxable payroll:\n\n- **Lower fertility:** the Trustees cut the assumed long-run fertility rate from 1.9 to 1.75 children per woman, a 0.35% of payroll hit.\n- **Lower immigration:** the assumed long-run level of temporary or unlawfully present immigrants fell from 1.35 million to 1.2 million a year, a 0.21% of payroll hit.\n- **OBBBA:** the law reduced revenue from the income taxation of Social Security benefits, a 0.16% of payroll hit.\n\nCRFB's breakdown assigns over half of the deterioration to lower fertility, a third to lower immigration and a quarter to OBBBA. All of the damage landed on the retirement fund. The DI fund's actuarial balance improved slightly, from 0.12% to 0.13% of payroll.\n\nThose assumption changes add to a cost gap that has been growing for years. Program costs rose from 10.4% of taxable payroll in 2000 to 13.5% in 2010, the year deficits first reappeared, and reached 15.2% in 2025. Revenue was about 13.1% of payroll in 2025 and is projected to reach only 13.5% by 2100.\n\nCosts are projected to keep climbing, to 16.9% of payroll in 2050 and 20.0% in 2100. CRFB attributes the rising costs to the aging of the population and growing benefit generosity."
+    },
+    {
+      "heading": "How Large the Social Security Shortfall Is",
+      "body": "Social Security's 75-year actuarial deficit is 4.42% of taxable payroll in the 2026 report, equal to 1.5% of gross domestic product (GDP) and about $31 trillion in present value. That is the largest shortfall since 1977. It grew 16%, or 0.60 percentage points, from 3.82% of payroll in the 2025 report, and it is 2.3 times the shortfall projected in 2010.\n\nThe yearly cash gap is already open. The Trustees estimate a combined cash deficit of $270 billion in 2026. Over the next decade, Social Security will spend $3.8 trillion more than it collects, equal to 2.7% of taxable payroll or 0.9% of GDP.\n\nThe annual cash deficits are projected to grow on this path:\n\n- 2.7% of payroll (1.0% of GDP) by 2036\n- 3.7% of payroll (1.3% of GDP) in 2050\n- 6.6% of payroll (2.2% of GDP) by 2100\n\nThe trust fund reserves cover these yearly gaps until they are exhausted. After the reserves are gone, the gap shows up as smaller checks."
+    },
+    {
+      "heading": "What a 22% Cut Would Mean for Benefits",
+      "body": "A 22% cut means a retiree's check would pay about 78% of the scheduled amount starting in 2032, if lawmakers do not change the law first. The cut is a projection of what current rules produce. The Trustees recommend that lawmakers address the shortfall in a timely way so any changes can be phased in gradually.\n\nPer $100 of scheduled benefit, the projections work out like this:\n\n- **OASI fund, 2026 Trustees, 2032:** $78 paid ($100 minus the 22% cut)\n- **OASI fund, 2026 Trustees, 2100:** $62 paid ($100 minus the 38% cut)\n- **Combined funds, 2026 Trustees, 2034:** $83 paid ($100 minus the 17% cut)\n- **OASI fund, CBO average after 2032:** $72 paid ($100 minus the 28% cut)\n\nFor a dollar figure, CRFB estimated that a typical couple retiring in 2033 would face an $18,400 annual reduction under a similar cut. That number is CRFB's own earlier estimate, separate from the Trustees' projections. Your own figure depends on your scheduled benefit.\n\nTo see your version, run your earnings history through the [Social Security retirement calculator](/retirement/social-security-retirement-calculator/), then multiply the monthly result by 0.78. Multiply by 0.72 as well if you want to see CBO's deeper average cut."
+    },
+    {
+      "heading": "What It Would Take to Close the Gap",
+      "body": "Restoring long-term solvency for the combined funds today would take the equivalent of a 34% payroll tax increase or a 25% cut to all benefits, according to the 2026 Trustees Report as analysed by CRFB. Each of these options alone would close the gap if lawmakers acted now:\n\n- A 34% payroll tax increase, equal to 4.25 percentage points\n- A 25% reduction in total benefits\n- A 30% reduction in benefits for new beneficiaries only\n\nWaiting makes every option bigger. By 2034, the adjustments would be about 15% larger: a 40% (4.9 point) tax increase or a 29% cut for all beneficiaries. Cutting only new beneficiaries' benefits would not be enough at that point, even if their benefits were eliminated entirely.\n\nSmaller reforms now close only part of the gap. Eliminating the payroll tax cap, which is $184,500 in 2026, would close around half of it, and so would re-indexing benefits with progressive price indexing. The cap rises to $192,300 in 2027, as covered in our guide to [2027 Social Security changes](/guides/social-security-changes-2027/).\n\nThis page makes no prediction about which option, if any, Congress will choose. Two things would change the dates and cuts above: a change in law, or a new Trustees Report that moves the projection, as the 2026 report moved the OASI date from 2033 to 2032."
+    },
+    {
+      "heading": "What This Means for Claiming Decisions",
+      "body": "The trust fund projections tell you when an automatic cut could start and how deep it would be. When to claim is a separate decision, and each tradeoff has its own tool on this site.\n\nUse these pages to put numbers on that decision:\n\n- The [Social Security break-even calculator](/social-security-break-even-calculator/) compares total benefits collected under different claiming ages.\n- [Social Security at 62 vs 70](/compare/social-security-at-62-vs-70/) lays out the early and late claiming tradeoff side by side.\n- The [Social Security COLA calculator](/social-security-cola-calculator/) shows how cost-of-living adjustments (COLAs), including the 3.6% COLA for 2027, change a monthly check.\n- [Is Social Security taxable](/guides/is-social-security-taxable/) explains the income tax on benefits, the same revenue stream that OBBBA reduced.\n\nWe give no advice here on claiming early or late. For the latest projections, read [CRFB's analysis of the 2026 Trustees Report](https://www.crfb.org/papers/analysis-2026-social-security-trustees-report). Then run your benefit through the [Social Security retirement calculator](/retirement/social-security-retirement-calculator/) at 100% and at 78% to see what the 2032 projection would mean for your income."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Will Social Security run out of money?",
+      "answer": "No, Social Security would not run out of money entirely, because incoming payroll taxes keep paying benefits. The 2026 Trustees Report projects that the retirement trust fund's reserves will be exhausted in 2032. After that, incoming revenue would cover about 78% of scheduled benefits, a 22% cut, unless Congress acts."
+    },
+    {
+      "question": "When will Social Security run out?",
+      "answer": "The retirement (OASI) trust fund is projected to be depleted in 2032, one year earlier than the 2025 report projected. If the retirement and disability funds were combined, the date would be 2034. CBO projects fiscal year 2032 for the retirement fund and 2033 for the combined funds."
+    },
+    {
+      "question": "What happens to Social Security in 2034?",
+      "answer": "2034 is the year the combined retirement and disability trust funds would run out, if the two were treated as one. At that point benefits would be cut 17%, growing to 35% by 2100. The retirement fund on its own is projected to run short earlier, in 2032, and the cost of a fix would be about 15% larger by 2034."
+    },
+    {
+      "question": "Is Social Security going away in 2027?",
+      "answer": "No, nothing in the 2026 Trustees Report projections has benefits stopping in 2027. Benefits get a 3.6% COLA in 2027, as covered in our guide to [2027 Social Security changes](/guides/social-security-changes-2027/). The retirement fund's projected depletion date is 2032."
+    },
+    {
+      "question": "Will there be Social Security in 2035?",
+      "answer": "Yes, the projections show benefits continuing in 2035, paid from incoming revenue at a reduced percentage. Under the 2026 Trustees Report, retirement benefits would be cut 22% from 2032, or 17% under the combined-fund view from 2034. These are projections, and a change in law would change them."
+    }
+  ],
+  "relatedLinks": [],
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

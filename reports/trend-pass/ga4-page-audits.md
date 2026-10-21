@@ -289,3 +289,6 @@
 | /guides/how-to-claim-a-trump-account/ | 2026-10-20 | 4 | 0/0/0/0/0 | 0 |
 | /guides/trump-accounts/ | 2026-10-20 | 3 | 0/0/0/0/0 | 0 |
 | /roundup/best-retirement-calculators/ | 2026-10-20 | 4 | 0/0/1/0/0 | 0 |
+| /guides/social-security-changes-2027/ | 2026-10-21 | 22 | 1/0/0/0/0 | 0 |
+| /guides/is-social-security-taxable/ | 2026-10-21 | 52 | 0/0/0/0/0 | 1 |
+| /mileage-deduction/irs-mileage-rate-2026/ | 2026-10-21 | 50 | 0/0/0/0/0 | 0 |
