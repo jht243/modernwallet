@@ -1,0 +1,44 @@
+{
+ "dispositions": {
+  "https://www.bankrate.com/mortgages/analysis/mortgage-rates-october-21-2026": {
+   "disposition": "skipped-low-value",
+   "our_url": ""
+  },
+  "https://www.bankrate.com/banking/savings/chase-savings-rates": {
+   "disposition": "skipped-low-value",
+   "our_url": ""
+  },
+  "https://www.bankrate.com/banking/reviews/pnc-bank": {
+   "disposition": "skipped-low-value",
+   "our_url": ""
+  },
+  "https://www.bankrate.com/banking/savings/bank-of-america-savings-rates": {
+   "disposition": "skipped-low-value",
+   "our_url": ""
+  },
+  "https://www.bankrate.com/banking/reviews/pentagon-federal-credit-union": {
+   "disposition": "skipped-low-value",
+   "our_url": ""
+  },
+  "https://www.bankrate.com/banking/checking/chase-new-account-promotion-savings-checking-bonus": {
+   "disposition": "published",
+   "our_url": "/guides/bank-account-bonus-taxes/"
+  },
+  "https://www.bankrate.com/inline-interstitial-page-in-context": {
+   "disposition": "published",
+   "our_url": "/guides/how-to-build-a-cd-ladder/"
+  },
+  "https://www.bankrate.com/banking/savings/ally-savings-rates": {
+   "disposition": "skipped-low-value",
+   "our_url": ""
+  },
+  "https://www.bankrate.com/banking": {
+   "disposition": "skipped-duplicate",
+   "our_url": "/bank/savings-accounts/"
+  },
+  "https://www.bankrate.com/credit-cards/advice/current-interest-rates": {
+   "disposition": "skipped-duplicate",
+   "our_url": "/guides/good-apr-for-credit-card/"
+  }
+ }
+}

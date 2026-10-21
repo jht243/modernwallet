@@ -1,0 +1,145 @@
+{
+ "slug": "bank-account-bonus-taxes",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 1733,
+ "floor": 1200,
+ "input_tokens": 27232,
+ "output_tokens": 14133,
+ "thinking_tokens": null,
+ "cached_tokens": 25210,
+ "est_cost_usd": 0.2958,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['Whether Bank Account Bonuses Are Taxable', 'The IRS Gift Thresholds in Three Hypothetical Cases', 'How Bank Account Bonus Taxes Show Up on Form 1099-INT', 'The Tax on a Hypothetical $300 Cash Bonus', 'Conditions Attached to a Bank Bonus Offer'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1733,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    9
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At The Modern Wallet, we run every bonus through the same math before opening an account: the bonus, minus tax, minus fees, minus the interest the parked money could have earned elsewhere.",
+     "replacement": "At The Modern Wallet, we suggest running every bonus through the same math before opening an account: the bonus, minus tax, minus fees, minus the interest the parked money could have earned elsewhere.",
+     "type": "unsupported",
+     "why": "Self-description does not support claims that the site opens accounts or runs bonuses."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "You can compare competing accounts in our [best high-yield savings accounts roundup](/roundup/best-high-yield-savings-accounts/), or look at a [certificate of deposit](https://www.consumerfinance.gov/ask-cfpb/what-is-a-certificate-of-deposit-cd-en-917/) for money you can lock away.",
+     "replacement": "You can compare competing accounts in our [best high-yield savings accounts roundup](/roundup/best-high-yield-savings-accounts/), or look at a [certificate of deposit](https://www.consumerfinance.gov/ask-cfpb/what-is-a-certificate-of-deposit-cd-en-917/).",
+     "type": "unsupported",
+     "why": "SOURCE does not describe CDs as locking money away."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "The Publication 550 gift thresholds are written around the size of the deposit, and the deposit size works the same way at a credit union account.",
+     "replacement": "The Publication 550 gift thresholds are written around the size of the deposit.",
+     "type": "unsupported",
+     "why": "SOURCE says nothing about credit unions or how thresholds apply there."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "The Form 1099-INT instructions tell financial institutions to include amounts of $10 or more paid or credited, \"whether or not designated as interest.\"\n\nThat wording means an offer page calling the money a bonus does not change the reporting rule.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE gives only the instruction wording, not this conclusion about offer pages."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Keep the offer terms and the statement that shows the bonus credit, so you have the amount and the date when you file.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE says nothing about keeping offer terms or statements."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Taxable interest may require estimated tax payments, so add any bonus to the interest total you use when you plan withholding or estimated payments.",
+     "replacement": "Taxable interest may require estimated tax payments.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention withholding planning."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "If the account charges a monthly fee during the holding period, subtract every month of that fee from the after-tax bonus.",
+     "replacement": "Subtract any fees the account charges from the after-tax bonus.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention monthly fees."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "A fee that runs for the whole holding period can cancel the gain.",
+     "replacement": "Fees can cancel the gain.",
+     "type": "unsupported",
+     "why": "SOURCE says fees can cancel the gain, not fees running for the period."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "Skip it too if a monthly fee during the holding period would take most of the after-tax amount.",
+     "replacement": "Skip it too if fees would take most of the after-tax amount.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention monthly fees."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "In either case, leave the money in the account where it earns interest now.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE gives no such advice about the reader's existing account."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "If you are choosing where to open the account, our [credit union vs bank comparison](/compare/credit-union-vs-bank/) and [traditional bank vs online bank comparison](/compare/traditional-bank-vs-online-bank/) cover the account types.",
+     "replacement": "If you are choosing where to open the account, see our [credit union vs bank comparison](/compare/credit-union-vs-bank/) and [traditional bank vs online bank comparison](/compare/traditional-bank-vs-online-bank/).",
+     "type": "unsupported",
+     "why": "SOURCE does not describe what those pages cover."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Treat a credit union bonus as taxable interest.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE never mentions credit unions."
+    }
+   ],
+   "deleted_final": 9,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1881
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 159.1,
+ "response_id": "msg_011CgG68C6RUvqEVbHLFv2i8",
+ "generated_at": "2026-10-21T21:28:38+0000"
+}

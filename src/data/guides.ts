@@ -31,6 +31,233 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── competitor-monitor 2026-10-21: how-to-build-a-cd-ladder, bank-account-bonus-taxes ──
+  {
+    "updated": "2026-10-21",
+    "slug": "how-to-build-a-cd-ladder",
+    "title": "How to Build a CD Ladder With a Worked $10,000 Example",
+    "metaDescription": "Build a certificate of deposit (CD) ladder in five steps: split your money, stagger the terms, and roll each maturing rung. Includes a $10,000 example.",
+    "h1": "How to Build a CD Ladder Step by Step",
+    "cardBlurb": "Five steps to build a CD ladder, a worked $10,000 example, and what penalties, deposit insurance and taxes mean for each rung.",
+    "introText": "To build a certificate of deposit (CD) ladder, split your money into equal parts and open CDs with staggered terms, such as 1, 2, 3, 4 and 5 years. Each time the shortest CD matures, reinvest it in a new 5-year CD. That way, one rung comes due every year. At The Modern Wallet, we start every savings guide with the arithmetic, so our worked example uses $10,000 split into five $2,000 rungs.",
+    "sections": [
+      {
+        "heading": "How to Build a CD Ladder Step by Step",
+        "body": "Building a CD ladder takes five steps, and the last step repeats every year for as long as you keep the ladder.\n\n1. Decide the total. Use only money you can leave untouched until each CD ends, because the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-a-certificate-of-deposit-cd-en-917/) says taking money out of a CD early means paying a penalty to the bank.\n2. Pick the number of rungs. Five rungs with terms of 1 to 5 years put one CD on a maturity date every year.\n3. Split the total equally. A $10,000 total across five rungs is $2,000 per CD.\n4. Open one CD for each term: 1 year, 2 years, 3 years, 4 years and 5 years. Compare every offer on the term, the interest rate and the early-withdrawal penalty, the three points the CFPB tells savers to weigh.\n5. Roll each maturing CD into a new longest-term CD. When the 1-year CD comes due, move its money into a new 5-year CD, then do the same with the 2-year CD a year later.\n\nOnce every original rung has rolled over, each CD in the ladder is a 5-year CD, and one of them matures every year. That schedule gives you access to one slice of the money each year while the rest sits in longer terms.\n\nA CD is a savings product from a bank or credit union, and you agree to leave the money in for a set term. The ladder applies that agreement five times with five different end dates, so no single date controls all of your money."
+      },
+      {
+        "heading": "Worked CD Ladder Example Using $10,000",
+        "body": "A $10,000 CD ladder split into five $2,000 rungs earns $420 in its first year at hypothetical rates of 4.00% to 4.40%. That works out to a blended 4.20% on the full $10,000.\n\nThese rates are examples and are not current offers from any bank. Each bank sets its own rates, and those rates change.\n\n- 1-year CD at 4.00%: $80 of first-year interest\n- 2-year CD at 4.10%: $82\n- 3-year CD at 4.20%: $84\n- 4-year CD at 4.30%: $86\n- 5-year CD at 4.40%: $88\n\nEach figure is the rate times $2,000, as simple interest that ignores compounding. The five rungs add up to $420, which is a blended 4.20% on $10,000. To see how compounding changes one rung over its full term, enter its rate and term in the [compound interest calculator](/investing/compound-interest-calculator/).\n\nAfter year one, the 1-year rung matures and returns its $2,000 plus $80 of interest. The example reinvests that money in a new 5-year CD at whatever 5-year rate is on offer at that point. A year later the original 2-year rung matures and gets the same treatment, so one rung keeps coming due every year.\n\nThe blended 4.20% sits below the 4.40% example rate on the 5-year CD. You give up that gap in exchange for $2,000 coming due every year."
+      },
+      {
+        "heading": "What Happens When a Rung Matures",
+        "body": "When a rung matures, its term has ended, so you can move the money without the penalty that applies to early withdrawals. In a ladder, that money and its interest go into a new CD at your longest term, which is 5 years in the example. Put each maturity date in your calendar so you pick the next CD before the date arrives.\n\nYou can also take a maturing rung as cash if you need it that year. The ladder then runs with one fewer rung, and you can add the slot back later by opening a new longest-term CD.\n\nA callable CD can be ended by the bank before maturity, according to the CFPB, so a callable rung may not last its full term. If that happens, the rung comes back to you off schedule and you have to reinvest it sooner than planned. If you want every rung to last its whole term, open CDs that are not callable."
+      },
+      {
+        "heading": "What a CD Ladder Trades Off",
+        "body": "A CD ladder trades the option of locking the whole total into one long-term CD for access to part of your money every year. In the hypothetical example, the ladder's blended first-year rate is 4.20%, while the 5-year rung alone pays 4.40%. One 5-year CD would lock all $10,000 until the end of year five, and the ladder frees $2,000 every year instead.\n\nRates are set by each bank and change, and a ladder reinvests only the rung that matures each year. If 5-year offers rise, the ladder reaches them one $2,000 rung at a time. If 5-year offers fall, only that year's $2,000 rung is reinvested at the lower offer.\n\nA single 5-year CD takes the 5-year rate offered on the day you open it, for the whole total. A ladder spreads the same $10,000 across five reinvestment dates."
+      },
+      {
+        "heading": "Early-Withdrawal Penalties and How to Compare Offers",
+        "body": "Early-withdrawal penalties on CDs have no standard amount, because penalties vary by bank and by term. Federal rules require the bank to disclose whether a penalty applies, how it is calculated and when it is assessed. Examples of penalty forms include a flat amount or a set number of days' interest.\n\nUse that disclosure to compare offers before you open any rung. The CFPB tells savers to compare CD offers on three things: the term, the interest rate and the early-withdrawal penalty. A higher rate paired with a larger penalty can be the wrong pick for a rung you might need to break.\n\nBecause penalties can differ by term, the 5-year CD at one bank may carry a different penalty from the 1-year CD at that same bank. Compare the penalty on every term in your ladder."
+      },
+      {
+        "heading": "Deposit Insurance When Rungs Sit at Several Banks",
+        "body": "CDs at a bank insured by the [Federal Deposit Insurance Corporation (FDIC)](https://www.fdic.gov/deposit-insurance) are covered up to $250,000 per depositor, per insured bank, for each account ownership category. Credit union CDs are insured by the National Credit Union Administration (NCUA).\n\nDeposits in the same ownership category at one bank are added together. All five rungs at one bank, plus any savings you hold there in the same category, count toward a single $250,000 limit. Deposits at different FDIC-insured banks are insured separately, so a large ladder can place rungs at different banks to keep each bank's total under the limit.\n\nThe $10,000 example sits well below $250,000 at one bank. The FDIC's [explanation of ownership categories and coverage](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance) shows how each category is counted."
+      },
+      {
+        "heading": "Taxes on CD Interest",
+        "body": "Interest on CDs is taxable interest, and the [Internal Revenue Service (IRS)](https://www.irs.gov/taxtopics/tc403) treats interest generally as ordinary income. Payers send Form 1099-INT when they pay you $10 or more of interest. You report all of your interest even if no form arrives.\n\nIn a ladder, every rung produces interest you report, including rungs at banks that send you no form. If you hold rungs at several banks, each bank is a separate payer.\n\nIf you break a rung early, [IRS Publication 550](https://www.irs.gov/publications/p550) says you report the total interest paid or credited without subtracting the penalty. The penalty is handled separately on the return, and Publication 550 sets out how. For how savings and CD interest shows up at tax time, see our guide on [whether savings and CD interest is taxable](/guides/is-savings-and-cd-interest-taxable/)."
+      },
+      {
+        "heading": "When a Ladder Is the Wrong Tool",
+        "body": "A CD ladder is the wrong tool for money you need on a known date and for an emergency fund. A ladder releases only one rung per year, so it does not line up with a single payment date. For a known date, pick one CD whose term ends by that date, or keep the money in savings.\n\nAn emergency fund fits a savings account better, because taking money out of a CD early means paying a penalty and an emergency does not wait for a maturity date. Our [high-yield savings vs CD comparison](/compare/hysa-vs-cd/) lays out that choice, and the [best high-yield savings accounts roundup](/roundup/best-high-yield-savings-accounts/) lists accounts to compare. To set a target for the fund, use the [savings goal calculator](/investing/savings-goal-calculator/).\n\nIf you are weighing other places for money you can set aside, compare the ladder with the options in [CD vs money market](/compare/cd-vs-money-market/) and [CD vs Treasury bill](/compare/cd-vs-treasury-bill/). To project a savings balance alongside the ladder, run the numbers in the [high-yield savings calculator](/investing/high-yield-savings-calculator/)."
+      },
+      {
+        "heading": "A Decision Rule for Whether a Ladder Is Worth It",
+        "body": "Build a CD ladder if you can leave the whole total alone until the 5-year rung ends and you want part of it back each year. If either condition fails, a savings account or a single CD fits better.\n\nA ladder does not serve anyone who would need more than one rung's worth of money in a single year, since every extra dollar comes from breaking a rung early and paying a penalty. That saver should keep the near-term money in a savings account and ladder only the rest.\n\nOur answer would change in two cases. If the money has a fixed due date, a ladder is not the right tool. If the longer terms at your bank pay no more than the 1-year CD, the ladder locks money longer for no added rate, and savings or repeated 1-year CDs fit better.\n\nStart by writing down your total, dividing it by five, and comparing the 1-year through 5-year CDs at your bank on term, rate and penalty before you open the first rung of your CD ladder."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/investing/compound-interest-calculator/",
+        "label": "Compound interest calculator"
+      },
+      {
+        "href": "/investing/high-yield-savings-calculator/",
+        "label": "High-yield savings calculator"
+      },
+      {
+        "href": "/investing/savings-goal-calculator/",
+        "label": "Savings goal calculator"
+      },
+      {
+        "href": "/compare/hysa-vs-cd/",
+        "label": "High-yield savings vs CD"
+      },
+      {
+        "href": "/compare/cd-vs-money-market/",
+        "label": "CD vs money market"
+      },
+      {
+        "href": "/compare/cd-vs-treasury-bill/",
+        "label": "CD vs Treasury bill"
+      },
+      {
+        "href": "/guides/is-savings-and-cd-interest-taxable/",
+        "label": "Is savings and CD interest taxable"
+      },
+      {
+        "href": "/roundup/best-high-yield-savings-accounts/",
+        "label": "Best high-yield savings accounts"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is a CD ladder?",
+        "answer": "A CD ladder is a set of CDs with staggered terms, such as 1, 2, 3, 4 and 5 years, each holding an equal part of your money. When the shortest CD matures, you reinvest it in a new longest-term CD, so one rung comes due every year. Each CD is a savings product from a bank or credit union that you agree to leave in place for a set term."
+      },
+      {
+        "question": "Is a CD ladder worth it?",
+        "answer": "A CD ladder is worth it if you can leave the total alone for the longest term you pick and want part of the money back each year. In the hypothetical $10,000 example, the ladder earns a blended 4.20% in its first year against 4.40% on the 5-year rung, and you accept that gap for $2,000 coming due each year. For an emergency fund or money needed on a set date, a savings account fits better, as our [high-yield savings vs CD comparison](/compare/hysa-vs-cd/) explains."
+      },
+      {
+        "question": "What happens when a CD in a ladder matures?",
+        "answer": "When a CD in a ladder matures, its term has ended and you decide what to do with the money and its interest. To keep the ladder going, reinvest it in a new CD at your longest term, which is 5 years in the example. If you need the cash that year, take it out and run the ladder with one fewer rung."
+      },
+      {
+        "question": "Can I lose money in a CD ladder?",
+        "answer": "Yes, if you break a rung early: taking money out of a CD before it matures means paying a penalty to the bank. Penalties vary by bank and term, and federal rules require the bank to disclose how the penalty is calculated and when it is assessed. FDIC insurance covers CDs up to $250,000 per depositor, per insured bank, for each ownership category, and credit union CDs are insured by the NCUA."
+      },
+      {
+        "question": "How many rungs should a CD ladder have?",
+        "answer": "A CD ladder should have one rung for each year of the longest term you are willing to lock, so a 5-year top rung means five rungs. That spacing puts one CD on a maturity date every year. Fewer rungs with a shorter top term also give one maturity a year, with less of the money in longer terms."
+      }
+    ],
+    "sources": [
+      {
+        "label": "CFPB, What is a certificate of deposit (CD)?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-certificate-of-deposit-cd-en-917/"
+      },
+      {
+        "label": "FDIC, Deposit Insurance",
+        "url": "https://www.fdic.gov/deposit-insurance"
+      },
+      {
+        "label": "IRS, Topic No. 403, Interest Received",
+        "url": "https://www.irs.gov/taxtopics/tc403"
+      }
+    ]
+  },
+  {
+    "updated": "2026-10-21",
+    "slug": "bank-account-bonus-taxes",
+    "title": "Bank Account Bonus Taxes and IRS Reporting Rules",
+    "metaDescription": "Bank account bonus taxes explained: the $10 and $20 gift thresholds, Form 1099-INT reporting, a $300 bonus example, and a worth-it test.",
+    "h1": "Bank Account Bonus Taxes and the IRS Reporting Thresholds",
+    "cardBlurb": "How bank bonuses are taxed as interest, when a gift crosses the federal reporting threshold, and how to test whether an offer pays.",
+    "introText": "Bank account sign-up bonuses are taxable because the Internal Revenue Service (IRS) treats a cash bonus as interest income. Gifts or services for opening an account also count as interest once their value exceeds $10 on deposits under $5,000, or $20 on deposits of $5,000 or more.\n\nAt The Modern Wallet, we suggest doing the same math for every bonus before opening an account: subtract taxes, fees, and the interest the parked money could have earned elsewhere from the bonus. Bank account bonus taxes follow your own federal bracket, which you can find in our [2026 tax bracket guide](/guides/2026-tax-brackets/).",
+    "sections": [
+      {
+        "heading": "Whether Bank Account Bonuses Are Taxable",
+        "body": "Bank account bonuses are taxable as interest income in the year the money is available to you. [IRS Publication 550](https://www.irs.gov/publications/p550) sets two thresholds for gifts or services given for opening an account. For deposits of less than $5,000, gifts or services valued at more than $10 must be reported as interest.\n\nFor deposits of $5,000 or more, the line moves to gifts or services valued at more than $20. A cash bonus is treated as interest income. [IRS Topic 403](https://www.irs.gov/taxtopics/tc403) lists interest on bank accounts, money market accounts, and certificates of deposit (CDs) as taxable interest. It also says interest is generally taxable as ordinary income, so a bonus is taxed at the rate for your bracket."
+      },
+      {
+        "heading": "The IRS Gift Thresholds in Three Hypothetical Cases",
+        "body": "The gift thresholds depend on two numbers: the size of your deposit and the value of the gift. These three hypothetical cases use the exact Publication 550 wording.\n\n- A $4,000 deposit with a gift worth $10: the rule covers gifts worth more than $10, so a gift worth exactly $10 is not over the line and is not reported as interest.\n- A $4,000 deposit with a gift worth $12: the gift is above $10, so it is reported as interest.\n- A $5,000 deposit: the threshold rises to $20, so a gift has to be worth more than $20 before it is reported as interest.\n\nThe first case turns on the word \"more\" in Publication 550. A gift that sits exactly at $10 on a deposit under $5,000 stays under the rule. Before you decide which side of the line a gift falls on, find the deposit amount and the stated gift value in the offer terms."
+      },
+      {
+        "heading": "How Bank Account Bonus Taxes Show Up on Form 1099-INT",
+        "body": "A bonus of $10 or more should arrive on a Form 1099-INT, because Topic 403 says payers should send that form for interest of $10 or more. The [Form 1099-INT instructions](https://www.irs.gov/instructions/i1099int) add that financial institutions include amounts of $10 or more paid or credited, whether or not designated as interest.\n\nA missing form does not remove the tax. Topic 403 says you must report all taxable and tax-exempt interest on your federal return, even if you never receive a Form 1099-INT. \n\nTiming follows the money. Topic 403 says interest is generally taxable in the year it is available, so a bonus credited in one year belongs on that year's return. Taxable interest may require estimated tax payments.\n\nThe same rules apply to ordinary account interest. Our guide to [whether savings and CD interest is taxable](/guides/is-savings-and-cd-interest-taxable/) walks through those accounts."
+      },
+      {
+        "heading": "The Tax on a Hypothetical $300 Cash Bonus",
+        "body": "A $300 cash bonus taxed at a 22% federal rate costs $66 in federal tax and leaves $234. The 22% rate is a hypothetical example. Your own rate depends on your bracket.\n\nThe math is the bonus times your rate: $300 × 22% = $66, and $300 − $66 = $234. Swap in your own rate from the [2026 tax bracket guide](/guides/2026-tax-brackets/) to get your figure.\n\nCarry the after-tax number into the worth-it test below. In this example that number is $234, because $66 of the $300 goes to federal tax."
+      },
+      {
+        "heading": "Conditions Attached to a Bank Bonus Offer",
+        "body": "A bank account bonus works as a payment for opening an account and meeting the conditions in the offer terms. Those terms can include a minimum balance, a direct deposit requirement, and a time you must hold the funds in the account. Each offer sets its own terms, and the terms change, so we list no offer here as current.\n\nRead the fee schedule next to the bonus terms. Subtract any fees the account charges from the after-tax bonus. Fees can cancel the gain.\n\nWrite down the start and end dates of the holding period. Those dates set how many months your money sits in this account, and those months are the input for the lost-interest line of the test."
+      },
+      {
+        "heading": "A Worth-It Test for Bank Account Bonus Taxes and Fees",
+        "body": "A bank bonus is worth taking when the bonus minus tax, minus fees, minus lost interest on the parked money comes out above zero. Written as a formula: net gain = bonus − federal tax − fees − lost interest.\n\nStart with the after-tax amount. In the hypothetical case, a $300 bonus at 22% leaves $234. From that $234, subtract any fees the account charges during the holding period, then subtract the interest the deposit would have earned in another account over the same months.\n\nTo estimate lost interest, enter the deposit and the holding period into our [high-yield savings calculator](/investing/high-yield-savings-calculator/) at the rate a competing account pays. You can compare competing accounts in our [best high-yield savings accounts roundup](/roundup/best-high-yield-savings-accounts/), or look at a [certificate of deposit](https://www.consumerfinance.gov/ask-cfpb/what-is-a-certificate-of-deposit-cd-en-917/).\n\nKeep both sides on the same tax basis. Under Topic 403, the bonus and the interest you give up are both taxable interest. Compare them either before tax or after tax, never one of each."
+      },
+      {
+        "heading": "A Checklist Before Opening a Bonus Account",
+        "body": "Answer six questions before you apply for any bonus.\n\n1. What minimum deposit or balance do the offer terms require, and can you leave it in the account for the full holding period?\n2. Is there a direct deposit requirement, and can your paycheck or another deposit meet it?\n3. How long must you hold the funds, and what is the end date?\n4. Which fees can the account charge during that period?\n5. What is the federal tax on the bonus at your own bracket?\n6. How much interest would the same money earn elsewhere over the same months?\n\nIf the answer to the first or second question is no, skip the offer. For the rest, plug your answers into the worth-it formula above."
+      },
+      {
+        "heading": "Who Should Skip a Bank Account Bonus",
+        "body": "Skip a bonus if you cannot meet its minimum balance, direct deposit, or holding terms, because those terms are the conditions for getting paid. Skip it too if fees would take most of the after-tax amount. \n\nA bonus also loses when the parked money would earn more interest elsewhere over the holding period than the bonus leaves after tax and fees. Our answer flips toward taking the offer when the numbers move the other way. A lower bracket, no fees, or a short holding period each shrink the subtractions and can push the net gain above zero.\n\nIf you are choosing where to open the account, see our [credit union vs bank comparison](/compare/credit-union-vs-bank/) and [traditional bank vs online bank comparison](/compare/traditional-bank-vs-online-bank/). Before you apply, write down the bonus, your bracket, the fees, and the holding period, then run the bank account bonus taxes and lost interest through the worth-it formula."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/guides/is-savings-and-cd-interest-taxable/",
+        "label": "Is savings and CD interest taxable"
+      },
+      {
+        "href": "/guides/2026-tax-brackets/",
+        "label": "2026 tax brackets"
+      },
+      {
+        "href": "/investing/high-yield-savings-calculator/",
+        "label": "High-yield savings calculator"
+      },
+      {
+        "href": "/roundup/best-high-yield-savings-accounts/",
+        "label": "Best high-yield savings accounts"
+      },
+      {
+        "href": "/compare/credit-union-vs-bank/",
+        "label": "Credit union vs bank"
+      },
+      {
+        "href": "/compare/traditional-bank-vs-online-bank/",
+        "label": "Traditional bank vs online bank"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Will I get a 1099-INT for a bank bonus?",
+        "answer": "You should get one if the bonus is $10 or more. IRS Topic 403 says payers should send Form 1099-INT for interest of $10 or more, and the Form 1099-INT instructions tell financial institutions to include amounts of $10 or more paid or credited, whether or not designated as interest. If no form arrives, you must report the interest on your federal return anyway."
+      },
+      {
+        "question": "Are bank bonuses worth it?",
+        "answer": "A bank bonus is worth it when the bonus minus federal tax, fees, and lost interest on the parked money leaves a number above zero. In a hypothetical case, a $300 bonus at a 22% federal rate leaves $234 after $66 of tax. Any account fees and the interest the money could have earned elsewhere come out of that $234."
+      },
+      {
+        "question": "Do I owe tax on a bonus under $10?",
+        "answer": "For a cash bonus, yes. Topic 403 requires you to report all taxable interest on your federal return even when no Form 1099-INT arrives, and payers are only told to send the form for $10 or more. For a gift or service, Publication 550 requires reporting it as interest once it is worth more than $10 on deposits under $5,000, or more than $20 on deposits of $5,000 or more."
+      },
+      {
+        "question": "What is the catch with bank account bonuses?",
+        "answer": "The catch sits in the offer terms and the math. Terms can require a minimum balance, direct deposit, and a set time holding the funds, and each offer sets its own. On top of that, the bonus is taxable interest, account fees reduce it, and the money parked to earn it could have earned interest elsewhere."
+      },
+      {
+        "question": "Are credit union bonuses taxable?",
+        "answer": "The Form 1099-INT instructions apply to financial institutions and cover amounts of $10 or more paid or credited, whether or not designated as interest. The Publication 550 gift thresholds are written around the size of the deposit."
+      },
+      {
+        "question": "How do bank account bonuses work?",
+        "answer": "A bank pays a cash bonus, or gives a gift or service, when you open an account and meet the offer terms, such as a minimum balance, direct deposit, or a holding period. The cash bonus then counts as interest income for tax purposes. A gift counts as interest once it passes the Publication 550 threshold for your deposit size."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Publication 550, Investment Income and Expenses",
+        "url": "https://www.irs.gov/publications/p550"
+      },
+      {
+        "label": "IRS Topic 403, Interest Received",
+        "url": "https://www.irs.gov/taxtopics/tc403"
+      },
+      {
+        "label": "IRS Instructions for Forms 1099-INT and 1099-OID",
+        "url": "https://www.irs.gov/instructions/i1099int"
+      }
+    ]
+  },
   // ── mindmap-pass 2026-10-21 (autocomplete pass): 2026-tax-brackets, student-loan-forgiveness-programs, how-is-savings-account-interest-calculated ──
   {
     "updated": "2026-10-21",

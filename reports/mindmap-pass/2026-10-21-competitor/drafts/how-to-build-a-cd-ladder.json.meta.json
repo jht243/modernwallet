@@ -1,0 +1,82 @@
+{
+ "slug": "how-to-build-a-cd-ladder",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 2162,
+ "floor": 1200,
+ "input_tokens": 27514,
+ "output_tokens": 22882,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.5677,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['How to Build a CD Ladder Step by Step', 'Worked CD Ladder Example Using $10,000', 'What Happens When a Rung Matures', 'What a CD Ladder Trades Off', 'Early-Withdrawal Penalties and How to Compare Offers'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2162,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    1
+   ],
+   "applied": [
+    {
+     "id": "sections[4].body",
+     "quote": "Common forms include a flat amount or a set number of days' interest.",
+     "replacement": "Examples of penalty forms include a flat amount or a set number of days' interest.",
+     "type": "unsupported",
+     "why": "SOURCE gives these as examples, not as common forms"
+    },
+    {
+     "id": "sections[8].body",
+     "quote": "If the money has a fixed due date, a single CD that ends by that date beats a ladder.",
+     "replacement": "If the money has a fixed due date, a ladder is not the right tool.",
+     "type": "unsupported",
+     "why": "SOURCE says only that a ladder is not the right tool"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "In a ladder, a penalty only applies when you need more money in a year than the rung maturing that year provides.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE says early withdrawal means a penalty; no 'only' condition stated"
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2186
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 240.2,
+ "response_id": "msg_011CgG5pUcrA8S4QdTPAacLE",
+ "generated_at": "2026-10-21T21:25:59+0000"
+}
