@@ -1,125 +1,181 @@
 {
- "slug": "best-restaurant-hr-support-services-in-massachusetts",
- "rows": [
-  {
-   "name": "King & Bishop",
-   "domain": "kingbishop.com",
-   "url": "https://kingbishop.com",
-   "values": [
-    "Staffing firm with fractional HR (People Vantage HR) and payrolling",
-    "Not published",
-    "Separate payrolling service offered",
-    "Not stated"
-   ]
-  },
-  {
-   "name": "Empowered Hospitality",
-   "domain": "empoweredhospitality.com",
-   "url": "https://empoweredhospitality.com",
-   "values": [
-    "Hospitality HR consulting, outsourced and interim HR",
-    "Not published; no long-term contracts",
-    "Offers payroll administration",
-    "Not stated"
-   ]
-  },
-  {
-   "name": "AIM HR Solutions",
-   "domain": "aimhrsolutions.com",
-   "url": "https://aimhrsolutions.com",
-   "values": [
-    "Fractional and on-demand HR, compliance audits, training",
-    "Not published",
-    "Not published",
-    "Not stated"
-   ]
-  },
-  {
-   "name": "Catapult",
-   "domain": "letscatapult.org",
-   "url": "https://letscatapult.org",
-   "values": [
-    "Membership HR services; says it is not a PEO",
-    "$2,850 to $12,500/yr membership tiers",
-    "Payroll compliance support",
-    "You (no co-employment)"
-   ]
-  },
-  {
-   "name": "HR2Fit",
-   "domain": "hr2fit.com",
-   "url": "https://hr2fit.com",
-   "values": [
-    "Outsourced HR for small and mid-size businesses",
-    "Not published",
-    "Offers payroll administration",
-    "Not stated"
-   ]
-  },
-  {
-   "name": "Flex HR",
-   "domain": "flexhr.com",
-   "url": "https://flexhr.com",
-   "values": [
-    "HR outsourcing and consulting (ASO, not PEO)",
-    "Not published; free quote",
-    "Flex HR runs payroll and payroll tax",
-    "You (no co-employment)"
-   ]
-  },
-  {
-   "name": "DineHR",
-   "domain": "dinehr.com",
-   "url": "https://dinehr.com",
-   "values": [
-    "Restaurant HR compliance support plans",
-    "From $795/mo",
-    "Not published",
-    "Not stated"
-   ]
-  },
-  {
-   "name": "Restaurant HR Group",
-   "domain": "restauranthrgroup.com",
-   "url": "https://restauranthrgroup.com",
-   "values": [
-    "Full HR outsourcing for restaurants",
-    "Not published",
-    "Payroll processing included in outsourcing",
-    "Not stated"
-   ]
-  },
-  {
-   "name": "Melody Beach Consulting Group",
-   "domain": "melodybeachconsulting.com",
-   "url": "https://melodybeachconsulting.com",
-   "values": [
-    "HR consulting, interim HR, outsourced or project-based",
-    "Not published",
-    "Not published",
-    "Not stated"
-   ]
-  },
-  {
-   "name": "Pappas & Pappas",
-   "domain": "pappas2.com",
-   "url": "https://pappas2.com",
-   "values": [
-    "HR staffing, executive search and Outstaffing recruiting outsourcing",
-    "Not published",
-    "Not published",
-    "Not stated"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "clearlyrated.com",
-   "why": "category 1 \u2014 review/rating platform, redirects to clearlyrated.ai; no HR service"
-  },
-  {
-   "domain": "prepshift.co",
-   "why": "category 4 \u2014 restaurant bookkeeping/consulting, no HR service; fits bookkeeping category"
-  }
- ]
+  "slug": "best-restaurant-hr-support-services-in-massachusetts",
+  "rows": [
+    {
+      "name": "King & Bishop",
+      "domain": "kingbishop.com",
+      "url": "https://kingbishop.com",
+      "values": [
+        "Staffing firm with fractional HR (People Vantage HR) and payrolling",
+        "Not published",
+        "Separate payrolling service offered",
+        "Not stated"
+      ]
+    },
+    {
+      "name": "Empowered Hospitality",
+      "domain": "empoweredhospitality.com",
+      "url": "https://empoweredhospitality.com",
+      "values": [
+        "Hospitality HR consulting, outsourced and interim HR",
+        "Not published; no long-term contracts",
+        "Offers payroll administration",
+        "Not stated"
+      ]
+    },
+    {
+      "name": "AIM HR Solutions",
+      "domain": "aimhrsolutions.com",
+      "url": "https://aimhrsolutions.com",
+      "values": [
+        "Fractional and on-demand HR, compliance audits, training",
+        "Not published",
+        "Not published",
+        "Not stated"
+      ]
+    },
+    {
+      "name": "Catapult",
+      "domain": "letscatapult.org",
+      "url": "https://letscatapult.org",
+      "values": [
+        "Membership HR services; says it is not a PEO",
+        "$2,850 to $12,500/yr membership tiers",
+        "Payroll compliance support",
+        "You (no co-employment)"
+      ]
+    },
+    {
+      "name": "HR2Fit",
+      "domain": "hr2fit.com",
+      "url": "https://hr2fit.com",
+      "values": [
+        "Outsourced HR for small and mid-size businesses",
+        "Not published",
+        "Offers payroll administration",
+        "Not stated"
+      ]
+    },
+    {
+      "name": "Flex HR",
+      "domain": "flexhr.com",
+      "url": "https://flexhr.com",
+      "values": [
+        "HR outsourcing and consulting (ASO, not PEO)",
+        "Not published; free quote",
+        "Flex HR runs payroll and payroll tax",
+        "You (no co-employment)"
+      ]
+    },
+    {
+      "name": "DineHR",
+      "domain": "dinehr.com",
+      "url": "https://dinehr.com",
+      "values": [
+        "Restaurant HR compliance support plans",
+        "From $795/mo",
+        "Not published",
+        "Not stated"
+      ]
+    },
+    {
+      "name": "Restaurant HR Group",
+      "domain": "restauranthrgroup.com",
+      "url": "https://restauranthrgroup.com",
+      "values": [
+        "Full HR outsourcing for restaurants",
+        "Not published",
+        "Payroll processing included in outsourcing",
+        "Not stated"
+      ]
+    },
+    {
+      "name": "Melody Beach Consulting Group",
+      "domain": "melodybeachconsulting.com",
+      "url": "https://melodybeachconsulting.com",
+      "values": [
+        "HR consulting, interim HR, outsourced or project-based",
+        "Not published",
+        "Not published",
+        "Not stated"
+      ]
+    },
+    {
+      "name": "Pappas & Pappas",
+      "domain": "pappas2.com",
+      "url": "https://pappas2.com",
+      "values": [
+        "HR staffing, executive search and Outstaffing recruiting outsourcing",
+        "Not published",
+        "Not published",
+        "Not stated"
+      ]
+    },
+    {
+      "name": "Restaurant365",
+      "domain": "restaurant365.com",
+      "url": "https://restaurant365.com/",
+      "values": [
+        "Restaurant accounting, payroll, scheduling and HR software",
+        "Not published",
+        "Not stated",
+        "Not stated"
+      ]
+    },
+    {
+      "name": "AlignHR",
+      "domain": "alignhr.com",
+      "url": "https://alignhr.com/",
+      "values": [
+        "Retainer and fractional HR, a la carte services, payroll via Gusto or Execupay",
+        "Not published",
+        "Payroll solutions listed; operator not stated",
+        "Not stated; lists Massachusetts among states served"
+      ]
+    },
+    {
+      "name": "Paylocity",
+      "domain": "paylocity.com",
+      "url": "https://www.paylocity.com/",
+      "values": [
+        "Payroll and HR software with restaurant offering",
+        "Not published",
+        "Not published",
+        "Not stated"
+      ]
+    },
+    {
+      "name": "Altametrics",
+      "domain": "altametrics.com",
+      "url": "https://altametrics.com/",
+      "values": [
+        "Restaurant management software with scheduling, timekeeping and payroll",
+        "Not published",
+        "Not stated",
+        "Not stated"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "clearlyrated.com",
+      "why": "category 1 \u2014 review/rating platform, redirects to clearlyrated.ai; no HR service"
+    },
+    {
+      "domain": "prepshift.co",
+      "why": "category 4 \u2014 restaurant bookkeeping/consulting, no HR service; fits bookkeeping category"
+    },
+    {
+      "domain": "backofhouse.io",
+      "why": "category 1 \u2014 restaurant-tech consultancy and vendor marketplace; no HR or payroll service of its own on the page"
+    },
+    {
+      "domain": "employers.hosco.com",
+      "why": "category 4 \u2014 hospitality recruiting platform, not HR administration"
+    },
+    {
+      "domain": "crrc.charlesriverchamber.com",
+      "why": "category 1 \u2014 chamber of commerce directory, no HR product"
+    }
+  ]
 }

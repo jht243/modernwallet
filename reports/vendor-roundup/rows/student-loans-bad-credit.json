@@ -1,10 +1,18 @@
 {
  "slug": "best-student-loans-bad-credit",
- "rows": [],
- "cut": [
+ "rows": [
   {
-   "domain": "sparrowfi.com",
-   "why": "category 1 — private student loan comparison platform, no loan product of its own"
+   "name": "Edly",
+   "domain": "edly.com",
+   "url": "https://edly.com/",
+   "values": [
+    "Income-based payments, with a no-cosigner option",
+    "Soft inquiry to check rate; hard inquiry when selecting a loan",
+    "Not required (No Cosigner FIT Loan)",
+    "Fixed from 9.9% cosigned, 11.9% no cosigner, as of Oct 2026",
+    "Post-school payments are a percentage of income, up to 180 months"
+   ]
   }
- ]
+ ],
+ "cut": []
 }

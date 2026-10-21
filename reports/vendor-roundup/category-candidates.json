@@ -1,51 +1,30 @@
 {
   "site": "themodernwallet.com",
   "cut_as_other_category": {
-    "invoicing apps": [
-      "invoicera.com",
-      "invoicito.com",
-      "waffleinvoice.com"
-    ],
-    "unlabelled": [
-      "admin316.com",
-      "fe.training",
-      "hyrotrader.com",
-      "lanelaw.com",
-      "law.co",
-      "mccmlaw.com",
-      "theccbb.com"
-    ],
-    "brokers": [
-      "vtmarkets.com"
-    ],
-    "trading platforms": [
-      "bookmap.com"
-    ],
     "net-worth-tracker": [
       "kubera.com"
     ],
     "savings": [
       "accountoffers.wellsfargo.com"
     ],
-    "banks/credit unions": [
-      "communityamerica.com",
-      "spiritfinancialcu.org"
+    "unlabelled": [
+      "activtrades.com",
+      "annotation.academy",
+      "deelo.ai",
+      "fe.training",
+      "lanelaw.com",
+      "mccmlaw.com",
+      "servistree.com",
+      "theccbb.com"
     ],
     "business banking": [
-      "found.com"
+      "slash.com"
     ],
     "personal loans": [
       "gauss.money"
     ],
     "credit monitoring": [
       "creditsesame.com"
-    ],
-    "financial advisor": [
-      "kerberrose.com",
-      "wealthgenadvisor.com"
-    ],
-    "financial education": [
-      "kidvestors.co"
     ],
     "financial planning and life insurance categories": [
       "northwesternmutual.com"

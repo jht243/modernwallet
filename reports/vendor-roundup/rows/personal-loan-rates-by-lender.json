@@ -1,23 +1,14 @@
 {
  "slug": "personal-loan-rates-by-lender",
- "rows": [
-  {
-   "name": "Wescom Credit Union",
-   "domain": "wescom.org",
-   "url": "https://www.wescom.org/loans/personal-loans",
-   "values": [
-    "Members wanting fixed payments and no origination fee",
-    "Up to $100,000, terms up to 72 months",
-    "Fixed from 8.99% APR as of Oct 2026",
-    "No origination fee, no prepayment penalty",
-    "Not published"
-   ]
-  }
- ],
+ "rows": [],
  "cut": [
   {
-   "domain": "maxcash.com",
-   "why": "category 1 — lead-gen site; says it does not offer or provide loans"
+   "domain": "acornfinance.com",
+   "why": "category 1 — lead-gen marketplace; site states it is not a lender and makes no loans"
+  },
+  {
+   "domain": "progressive.com",
+   "why": "category 1 — insurer; its personal loan page only refers to Best Egg and says Progressive does not lend or arrange the loans"
   }
  ]
 }

@@ -1,92 +1,96 @@
 {
- "slug": "best-tax-preparation-services-for-freelancers",
- "rows": [
-  {
-   "name": "H&H Accounting Services",
-   "domain": "hhcpaservices.com",
-   "url": "https://hhcpaservices.com/",
-   "values": [
-    "Accounting firm, Scottsdale AZ",
-    "Not published",
-    "Arizona-based; says it helps clients nationwide",
-    "Phoenix-area individuals and business owners wanting personal service"
-   ]
-  },
-  {
-   "name": "The Fino Partners",
-   "domain": "thefinopartners.com",
-   "url": "https://thefinopartners.com/",
-   "values": [
-    "Outsourced accounting and tax preparation firm",
-    "Not published",
-    "Not published",
-    "CPA firms and small businesses outsourcing tax preparation"
-   ]
-  },
-  {
-   "name": "H&R Block",
-   "domain": "hrblock.com",
-   "url": "https://www.hrblock.com/",
-   "values": [
-    "Online tax filing and tax preparers",
-    "Not published",
-    "Not published",
-    "Self-employed filers wanting a national tax preparation brand"
-   ]
-  },
-  {
-   "name": "Zenith Financial Advisors",
-   "domain": "zenithfinancialadvisors.com",
-   "url": "https://zenithfinancialadvisors.com/",
-   "values": [
-    "Tax preparation and accounting firm",
-    "Simple US returns from $499; Schedule C not listed",
-    "Not published",
-    "US expats and cross-border filers"
-   ]
-  },
-  {
-   "name": "DeWitt Giger, LLP",
-   "domain": "dewittgiger.cpa",
-   "url": "https://dewittgiger.cpa/",
-   "values": [
-    "CPA firm, Monroe, Louisiana",
-    "Not published",
-    "Not published",
-    "Service businesses, professionals, restaurants and individuals"
-   ]
-  },
-  {
-   "name": "TurboTax",
-   "domain": "turbotax.intuit.com",
-   "url": "https://turbotax.intuit.com/",
-   "values": [
-    "Tax software with Expert Assist and Expert Full Service",
-    "Self-Employed tiers listed without dollar figures",
-    "Not published",
-    "Self-employed filers wanting software or expert help"
-   ]
-  },
-  {
-   "name": "Deduction",
-   "domain": "deduction.com",
-   "url": "https://deduction.com/",
-   "values": [
-    "AI tax assistant with CPA-reviewed filing",
-    "$499 for new clients: CPA-reviewed advice plus annual filing",
-    "Not published",
-    "Self-employed people wanting year-round tax guidance"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "viasocket.com",
-   "why": "category 3 \u2014 sells app-integration software, not tax preparation"
-  },
-  {
-   "domain": "mashable.com",
-   "why": "category 1 \u2014 publisher, review article with no product of its own"
-  }
- ]
+  "slug": "best-tax-preparation-services-for-freelancers",
+  "rows": [
+    {
+      "name": "H&H Accounting Services",
+      "domain": "hhcpaservices.com",
+      "url": "https://hhcpaservices.com/",
+      "values": [
+        "Accounting firm, Scottsdale AZ",
+        "Not published",
+        "Arizona-based; says it helps clients nationwide",
+        "Phoenix-area individuals and business owners wanting personal service"
+      ]
+    },
+    {
+      "name": "The Fino Partners",
+      "domain": "thefinopartners.com",
+      "url": "https://thefinopartners.com/",
+      "values": [
+        "Outsourced accounting and tax preparation firm",
+        "Not published",
+        "Not published",
+        "CPA firms and small businesses outsourcing tax preparation"
+      ]
+    },
+    {
+      "name": "H&R Block",
+      "domain": "hrblock.com",
+      "url": "https://www.hrblock.com/",
+      "values": [
+        "Online tax filing and tax preparers",
+        "Not published",
+        "Not published",
+        "Self-employed filers wanting a national tax preparation brand"
+      ]
+    },
+    {
+      "name": "Zenith Financial Advisors",
+      "domain": "zenithfinancialadvisors.com",
+      "url": "https://zenithfinancialadvisors.com/",
+      "values": [
+        "Tax preparation and accounting firm",
+        "Simple US returns from $499; Schedule C not listed",
+        "Not published",
+        "US expats and cross-border filers"
+      ]
+    },
+    {
+      "name": "DeWitt Giger, LLP",
+      "domain": "dewittgiger.cpa",
+      "url": "https://dewittgiger.cpa/",
+      "values": [
+        "CPA firm, Monroe, Louisiana",
+        "Not published",
+        "Not published",
+        "Service businesses, professionals, restaurants and individuals"
+      ]
+    },
+    {
+      "name": "TurboTax",
+      "domain": "turbotax.intuit.com",
+      "url": "https://turbotax.intuit.com/",
+      "values": [
+        "Tax software with Expert Assist and Expert Full Service",
+        "Self-Employed tiers listed without dollar figures",
+        "Not published",
+        "Self-employed filers wanting software or expert help"
+      ]
+    },
+    {
+      "name": "Deduction",
+      "domain": "deduction.com",
+      "url": "https://deduction.com/",
+      "values": [
+        "AI tax assistant with CPA-reviewed filing",
+        "$499 for new clients: CPA-reviewed advice plus annual filing",
+        "Not published",
+        "Self-employed people wanting year-round tax guidance"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "viasocket.com",
+      "why": "category 3 \u2014 sells app-integration software, not tax preparation"
+    },
+    {
+      "domain": "mashable.com",
+      "why": "category 1 \u2014 publisher, review article with no product of its own"
+    },
+    {
+      "domain": "pearltalent.com",
+      "why": "category 4 \u2014 remote staffing agency, not a tax preparer"
+    }
+  ]
 }

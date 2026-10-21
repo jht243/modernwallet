@@ -1,17 +1,37 @@
 {
- "slug": "best-invoicing-apps-for-freelancers",
- "rows": [
-  {
-   "name": "Nickel",
-   "domain": "nickel.com",
-   "url": "https://nickel.com",
-   "values": [
-    "Core $0/mo; Plus $35/mo; Pro $300/mo",
-    "AI assistant follows up on unpaid invoices",
-    "Not published",
-    "Construction, logistics and other B2B firms collecting invoice payments"
-   ]
-  }
- ],
- "cut": []
+  "slug": "best-invoicing-apps-for-freelancers",
+  "rows": [
+    {
+      "name": "Nickel",
+      "domain": "nickel.com",
+      "url": "https://nickel.com",
+      "values": [
+        "Core $0/mo; Plus $35/mo; Pro $300/mo",
+        "AI assistant follows up on unpaid invoices",
+        "Not published",
+        "Construction, logistics and other B2B firms collecting invoice payments"
+      ]
+    },
+    {
+      "name": "ChargeCrafter",
+      "domain": "chargecrafter.com",
+      "url": "https://chargecrafter.com/",
+      "values": [
+        "Free start available; plan prices not published",
+        "Not published",
+        "Not published",
+        "Businesses wanting invoicing with web and iOS/Android apps"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "blog.freelancersunion.org",
+      "why": "category 1 — Freelancers Union blog, no invoicing product"
+    },
+    {
+      "domain": "senditfax.com",
+      "why": "category 3 — online fax service, not invoicing"
+    }
+  ]
 }

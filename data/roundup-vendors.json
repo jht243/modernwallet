@@ -676,6 +676,32 @@
       "ATM and in-branch withdrawals"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Merchants Bank",
+     "domain": "bankmerchants.com",
+     "url": "https://www.bankmerchants.com/money-market/",
+     "values": [
+      "3.75% APY, single rate, as of Oct 2026",
+      "Not published",
+      "$50 to open; no balance needed to earn APY",
+      "Not published",
+      "Not published"
+     ],
+     "added": "2026-10-21"
+    },
+    {
+     "name": "Bank Midwest",
+     "domain": "bankmidwest.com",
+     "url": "https://www.bankmidwest.com/personal/banking/",
+     "values": [
+      "1.00% to 3.20% tiered APY, as of Oct 2026",
+      "$10 if balance falls below $10,000",
+      "$50 to open; $10,000 avoids fee",
+      "Member FDIC; coverage for this account not stated",
+      "Checks and debit; up to 6 withdrawals per month"
+     ],
+     "added": "2026-10-21"
     }
    ]
   },
@@ -1144,6 +1170,32 @@
       "People replacing spreadsheets, with no bank linking"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "foluno",
+     "domain": "foluno.com",
+     "url": "https://foluno.com",
+     "values": [
+      "Free plan; Premium €599 one-time",
+      "Allocation by asset class, country, sector; cash-flow analysis",
+      "Yes",
+      "Not published",
+      "Private tracking of assets and liabilities in one dashboard"
+     ],
+     "added": "2026-10-21"
+    },
+    {
+     "name": "Monavio",
+     "domain": "monavio.app",
+     "url": "https://monavio.app",
+     "values": [
+      "$3 to $7 per month; 14-day free trial",
+      "Portfolio chart, allocation, holdings gain/loss",
+      "Yes (property as account type)",
+      "Financial independence planner with Monte Carlo bands",
+      "Tracking banks and brokerages without sharing logins"
+     ],
+     "added": "2026-10-21"
     }
    ]
   },
@@ -1260,6 +1312,71 @@
       "BBB accredited, A rating per site"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Innovative Tax Relief",
+     "domain": "innovativetaxreliefllc.com",
+     "url": "https://innovativetaxreliefllc.com/",
+     "values": [
+      "Not published",
+      "Enrolled Agents, CPAs and tax attorneys",
+      "Most cases $2,000 to $7,500 total, billed in phases",
+      "10 (founded 2016)",
+      "BBB Accredited, A+ per site; no license numbers listed"
+     ],
+     "added": "2026-10-21"
+    },
+    {
+     "name": "TaxAudit",
+     "domain": "taxaudit.com",
+     "url": "https://taxaudit.com/",
+     "values": [
+      "Not published",
+      "Not published",
+      "Free consultation; assessment fees start at $400 (payroll tax debt)",
+      "30+ (TaxResources, Inc., since 1998)",
+      "BBB-A badge shown; no license numbers listed"
+     ],
+     "added": "2026-10-21"
+    },
+    {
+     "name": "Tax Relief Helpers",
+     "domain": "taxreliefhelpers.com",
+     "url": "https://taxreliefhelpers.com/",
+     "values": [
+      "Not published",
+      "Tax attorney and enrolled agent on team",
+      "Free consultation; no upfront fees; amounts not published",
+      "Not published",
+      "BBB profile linked; no license numbers listed"
+     ],
+     "added": "2026-10-21"
+    },
+    {
+     "name": "Tax Relief Advocates",
+     "domain": "tra.com",
+     "url": "https://tra.com/",
+     "values": [
+      "Not published",
+      "Licensed tax resolution professionals and attorneys; no credentials listed",
+      "Free consultation; fees not published",
+      "Not published",
+      "BBB profile linked; no license numbers listed"
+     ],
+     "added": "2026-10-21"
+    },
+    {
+     "name": "Washington Tax Services",
+     "domain": "watax.com",
+     "url": "https://watax.com/",
+     "values": [
+      "Not published",
+      "Enrolled Agents and tax resolution experts",
+      "Flat fee; amount not published",
+      "37 (since 1989)",
+      "A+ BBB rating per site"
+     ],
+     "added": "2026-10-21"
     }
    ]
   },
@@ -1697,6 +1814,19 @@
       "Yes, attorney-prepared, flat fee, free 15-minute call"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "Affordable Living Trusts",
+     "domain": "affordablelivingtrusts.net",
+     "url": "https://affordablelivingtrusts.net/",
+     "values": [
+      "$500 single, $750 two-person (fee schedule Apr 2024)",
+      "Yes, included",
+      "Explains funding; CA deed transfer $200 per parcel",
+      "No (basic living trusts only)",
+      "Not published; Southern California service area"
+     ],
+     "added": "2026-10-21"
     }
    ]
   },
@@ -2314,6 +2444,19 @@
       "No application, origination or late fees; terms of 5 to 20 years"
      ],
      "added": "2026-10-15"
+    },
+    {
+     "name": "Edly",
+     "domain": "edly.com",
+     "url": "https://edly.com/",
+     "values": [
+      "Income-based payments, with a no-cosigner option",
+      "Soft inquiry to check rate; hard inquiry when selecting a loan",
+      "Not required (No Cosigner FIT Loan)",
+      "Fixed from 9.9% cosigned, 11.9% no cosigner, as of Oct 2026",
+      "Post-school payments are a percentage of income, up to 180 months"
+     ],
+     "added": "2026-10-21"
     }
    ]
   },
@@ -2597,6 +2740,17 @@
       "Portfolio tracking with Monte Carlo and Efficient Frontier analysis"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "Portfolio ThinkTank",
+     "domain": "portfoliothinktank.com",
+     "url": "https://portfoliothinktank.com/",
+     "values": [
+      "Historical simulations; data period not published",
+      "Not published",
+      "Backtesting and optimizing a portfolio strategy; free backtest offered"
+     ],
+     "added": "2026-10-21"
     }
    ]
   },
@@ -3080,6 +3234,18 @@
       "Spot and contract factoring; advance up to 96%"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "Trifecta Business Group",
+     "domain": "trifectabusinessgroup.com",
+     "url": "https://trifectabusinessgroup.com/",
+     "values": [
+      "Unpaid B2B invoices from commercial or government customers; freight and staffing pages",
+      "Not published",
+      "3 to 7 days; varies by file and lender",
+      "Commercial loan broker placing files with partner lenders; advances up to 90%"
+     ],
+     "added": "2026-10-21"
     }
    ]
   },
@@ -4350,6 +4516,18 @@
       "Construction, logistics and other B2B firms collecting invoice payments"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "ChargeCrafter",
+     "domain": "chargecrafter.com",
+     "url": "https://chargecrafter.com/",
+     "values": [
+      "Free start available; plan prices not published",
+      "Not published",
+      "Not published",
+      "Businesses wanting invoicing with web and iOS/Android apps"
+     ],
+     "added": "2026-10-21"
     }
    ]
   },
@@ -4417,6 +4595,42 @@
       "CPA firms and small to large businesses outsourcing bookkeeping and payroll"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "Maxim Liberty",
+     "domain": "bookkeeping-services.com",
+     "url": "https://bookkeeping-services.com/",
+     "values": [
+      "From $75/month for 5 hours, no setup fees or lock-in",
+      "Catch-up and cleanup offered; price not published",
+      "Year-end returns offered; says bookkeepers are not CPAs",
+      "Small businesses and CPA firms wanting remote bookkeeping in U.S. and Canada"
+     ],
+     "added": "2026-10-21"
+    },
+    {
+     "name": "Numetix",
+     "domain": "numetix.ai",
+     "url": "https://numetix.ai/",
+     "values": [
+      "Essentials $499/mo, Growth $999/mo, Enterprise $2,499/mo",
+      "Not published",
+      "Lists Tax & Compliance; return preparation not stated",
+      "Healthcare, legal, nonprofit, property and professional services firms"
+     ],
+     "added": "2026-10-21"
+    },
+    {
+     "name": "Infinity Globus",
+     "domain": "infinity-globus.com",
+     "url": "https://infinity-globus.com/",
+     "values": [
+      "Not published",
+      "Not published",
+      "Yes, tax preparation offered",
+      "Accounting firms outsourcing bookkeeping and tax work"
+     ],
+     "added": "2026-10-21"
     }
    ]
   },
@@ -4757,6 +4971,54 @@
       "Not stated"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "Restaurant365",
+     "domain": "restaurant365.com",
+     "url": "https://restaurant365.com/",
+     "values": [
+      "Restaurant accounting, payroll, scheduling and HR software",
+      "Not published",
+      "Not stated",
+      "Not stated"
+     ],
+     "added": "2026-10-21"
+    },
+    {
+     "name": "AlignHR",
+     "domain": "alignhr.com",
+     "url": "https://alignhr.com/",
+     "values": [
+      "Retainer and fractional HR, a la carte services, payroll via Gusto or Execupay",
+      "Not published",
+      "Payroll solutions listed; operator not stated",
+      "Not stated; lists Massachusetts among states served"
+     ],
+     "added": "2026-10-21"
+    },
+    {
+     "name": "Paylocity",
+     "domain": "paylocity.com",
+     "url": "https://www.paylocity.com/",
+     "values": [
+      "Payroll and HR software with restaurant offering",
+      "Not published",
+      "Not published",
+      "Not stated"
+     ],
+     "added": "2026-10-21"
+    },
+    {
+     "name": "Altametrics",
+     "domain": "altametrics.com",
+     "url": "https://altametrics.com/",
+     "values": [
+      "Restaurant management software with scheduling, timekeeping and payroll",
+      "Not published",
+      "Not stated",
+      "Not stated"
+     ],
+     "added": "2026-10-21"
     }
    ]
   },

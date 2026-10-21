@@ -1,10 +1,26 @@
 {
- "slug": "best-invoice-factoring-companies",
- "rows": [],
- "cut": [
-  {
-   "domain": "blog.factorfunding.com",
-   "why": "category 1 — blog subdomain of Factor Funding, which is already listed as factorfunding.com"
-  }
- ]
+  "slug": "best-invoice-factoring-companies",
+  "rows": [
+    {
+      "name": "Trifecta Business Group",
+      "domain": "trifectabusinessgroup.com",
+      "url": "https://trifectabusinessgroup.com/",
+      "values": [
+        "Unpaid B2B invoices from commercial or government customers; freight and staffing pages",
+        "Not published",
+        "3 to 7 days; varies by file and lender",
+        "Commercial loan broker placing files with partner lenders; advances up to 90%"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "blog.factorfunding.com",
+      "why": "category 1 — blog subdomain of Factor Funding, which is already listed as factorfunding.com"
+    },
+    {
+      "domain": "bondstreet.com",
+      "why": "category 4 — small business term lender; no factoring product on its pages (invoice factoring page is an explainer)"
+    }
+  ]
 }

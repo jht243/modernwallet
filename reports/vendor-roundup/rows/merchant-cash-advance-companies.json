@@ -1,75 +1,10 @@
 {
- "slug": "best-merchant-cash-advance-companies",
- "rows": [
-  {
-   "name": "Dealstruck",
-   "domain": "dealstruck.com",
-   "url": "https://dealstruck.com",
-   "values": [
-    "Term loan and A/R line of credit",
-    "Up to $500,000",
-    "Funding in as little as 3 days",
-    "Not published"
-   ]
-  },
-  {
-   "name": "ROK Financial",
-   "domain": "rok.biz",
-   "url": "https://rok.biz",
-   "values": [
-    "Term loans, lines of credit, SBA, equipment, A/R financing",
-    "$10,000 to $5 million",
-    "1-3 days (term loans)",
-    "6 months in business, $10K monthly sales, 500 credit score"
-   ]
-  },
-  {
-   "name": "Universal Funding",
-   "domain": "universalfunding.com",
-   "url": "https://universalfunding.com",
-   "values": [
-    "Invoice factoring",
-    "$25,000 to $20 million in invoices",
-    "Funding within 24 hours of approval",
-    "B2B invoices; criteria not published"
-   ]
-  },
-  {
-   "name": "Payro Finance",
-   "domain": "payrofinance.com",
-   "url": "https://payrofinance.com",
-   "values": [
-    "Short-term payroll loans",
-    "Up to $500,000",
-    "As fast as 48 hours",
-    "2+ years in business, 5+ employees, $25,000 monthly revenue"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "mccmlaw.com",
-   "why": "category 4 — law firm, no MCA product"
-  },
-  {
-   "domain": "debanked.com",
-   "why": "category 1 — industry news publisher and funder directory"
-  },
-  {
-   "domain": "lanelaw.com",
-   "why": "category 4 — law firm that fights MCA lenders, no funding product"
-  },
-  {
-   "domain": "toryburchfoundation.org",
-   "why": "category 1 — nonprofit foundation, not a lender with a public product"
-  },
-  {
-   "domain": "1west.com",
-   "why": "category 1 — marketplace connecting applicants to 50+ third-party lenders"
-  },
-  {
-   "domain": "pplocal.com",
-   "why": "category 2 — unverifiable, site returned no content and no confirming sources"
-  }
- ]
+  "slug": "best-merchant-cash-advance-companies",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "business.org",
+      "why": "category 1 \u2014 publisher/review site with affiliate links, no product of its own"
+    }
+  ]
 }

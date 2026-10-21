@@ -1,39 +1,30 @@
 {
- "slug": "best-net-worth-tracker",
- "rows": [
-  {
-   "name": "Richify",
-   "domain": "richify.ai",
-   "url": "https://richify.ai",
-   "values": [
-    "Free download, 7-day trial; paid price not published",
-    "Not published",
-    "Yes (property and mortgage tracking)",
-    "FIRE and 401(k) calculators",
-    "Homeowners and couples wanting AI-guided money help"
-   ]
-  },
-  {
-   "name": "WorthTracker",
-   "domain": "worthtracker.com",
-   "url": "https://worthtracker.com",
-   "values": [
-    "Not published",
-    "Basic (tracks stock portfolio value only)",
-    "Yes (manual entry as an asset)",
-    "Not published",
-    "People replacing spreadsheets, with no bank linking"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "biggerpockets.com",
-   "why": "category 1 — real estate publisher/community with no net worth tracker product"
-  },
-  {
-   "domain": "helmterminal.dev",
-   "why": "category 4 — stock thesis monitoring tool; fits portfolio-backtesting-and-analysis-tools category"
-  }
- ]
+  "slug": "best-net-worth-tracker",
+  "rows": [
+    {
+      "name": "foluno",
+      "domain": "foluno.com",
+      "url": "https://foluno.com",
+      "values": [
+        "Free plan; Premium €599 one-time",
+        "Allocation by asset class, country, sector; cash-flow analysis",
+        "Yes",
+        "Not published",
+        "Private tracking of assets and liabilities in one dashboard"
+      ]
+    },
+    {
+      "name": "Monavio",
+      "domain": "monavio.app",
+      "url": "https://monavio.app",
+      "values": [
+        "$3 to $7 per month; 14-day free trial",
+        "Portfolio chart, allocation, holdings gain/loss",
+        "Yes (property as account type)",
+        "Financial independence planner with Monte Carlo bands",
+        "Tracking banks and brokerages without sharing logins"
+      ]
+    }
+  ],
+  "cut": []
 }

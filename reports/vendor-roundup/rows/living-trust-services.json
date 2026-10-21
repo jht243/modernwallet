@@ -1,59 +1,18 @@
 {
- "slug": "best-living-trust-services",
- "rows": [
-  {
-   "name": "LawDepot",
-   "domain": "lawdepot.com",
-   "url": "https://www.lawdepot.com",
-   "values": [
-    "Not published",
-    "Pour-over will offered; requires a living trust first",
-    "Not published",
-    "Not published",
-    "No"
-   ]
-  },
-  {
-   "name": "USAA",
-   "domain": "usaa.com",
-   "url": "https://www.usaa.com/inet/wc/wills-and-trusts",
-   "values": [
-    "Not published",
-    "Not published",
-    "Not published",
-    "Not published",
-    "Not published"
-   ]
-  },
-  {
-   "name": "Estate Doc Prep",
-   "domain": "estatedocprep.com",
-   "url": "https://estatedocprep.com",
-   "values": [
-    "Not published",
-    "Not published",
-    "Not published",
-    "Not published",
-    "Yes, attorney-written trusts built from an online interview"
-   ]
-  },
-  {
-   "name": "Thomas-Walters",
-   "domain": "thomas-walters.com",
-   "url": "https://thomas-walters.com",
-   "values": [
-    "$4,000 to $7,000 for trust-based plan",
-    "Not published",
-    "Not published",
-    "Not published",
-    "Yes, attorney-prepared, flat fee, free 15-minute call"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "topconsumerreviews.com",
-   "why": "category 1 \u2014 review site with no product of its own"
-  }
- ]
+  "slug": "best-living-trust-services",
+  "rows": [
+    {
+      "name": "Affordable Living Trusts",
+      "domain": "affordablelivingtrusts.net",
+      "url": "https://affordablelivingtrusts.net/",
+      "values": [
+        "$500 single, $750 two-person (fee schedule Apr 2024)",
+        "Yes, included",
+        "Explains funding; CA deed transfer $200 per parcel",
+        "No (basic living trusts only)",
+        "Not published; Southern California service area"
+      ]
+    }
+  ],
+  "cut": []
 }

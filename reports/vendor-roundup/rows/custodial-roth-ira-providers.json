@@ -1,16 +1,14 @@
 {
   "slug": "best-custodial-roth-ira-providers",
-  "rows": [
+  "rows": [],
+  "cut": [
     {
-      "name": "Halfmore",
-      "domain": "halfmore.co",
-      "url": "https://halfmore.co/",
-      "values": [
-        "Not published",
-        "$9.99/month covers up to 5 children; 14-day free trial",
-        "N/A - invests at the brokerage you choose"
-      ]
+      "domain": "allworthfinancial.com",
+      "why": "category 4 — fee-based advisory firm (RIA); no custodial Roth IRA product found; fits an advisor category"
+    },
+    {
+      "domain": "tradingsim.com",
+      "why": "category 3 — trading simulator for practice, no retirement accounts, outside this category"
     }
-  ],
-  "cut": []
+  ]
 }

@@ -1,14 +1,14 @@
 {
- "slug": "best-investment-apps-for-beginners",
- "rows": [],
- "cut": [
-  {
-   "domain": "tradersdna.com",
-   "why": "category 1 \u2014 publisher of broker comparisons and articles, no product of its own"
-  },
-  {
-   "domain": "appstoretracker.com",
-   "why": "category 3 \u2014 app-store chart tracking tool, not personal or small-business finance"
-  }
- ]
+  "slug": "best-investment-apps-for-beginners",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "investors.com",
+      "why": "category 1 — Investor's Business Daily financial news publisher (site blocked fetch; classified from SERP result)"
+    },
+    {
+      "domain": "channelhike.com",
+      "why": "category 3 — sells YouTube channels and AdSense accounts, outside personal or small-business finance"
+    }
+  ]
 }

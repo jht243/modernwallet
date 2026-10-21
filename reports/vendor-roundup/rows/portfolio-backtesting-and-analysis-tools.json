@@ -2,20 +2,24 @@
  "slug": "best-portfolio-backtesting-and-analysis-tools",
  "rows": [
   {
-   "name": "AllInvestView",
-   "domain": "allinvestview.com",
-   "url": "https://allinvestview.com",
+   "name": "Portfolio ThinkTank",
+   "domain": "portfoliothinktank.com",
+   "url": "https://portfoliothinktank.com/",
    "values": [
+    "Historical simulations; data period not published",
     "Not published",
-    "Yes, free signup; live demo needs no account",
-    "Portfolio tracking with Monte Carlo and Efficient Frontier analysis"
+    "Backtesting and optimizing a portfolio strategy; free backtest offered"
    ]
   }
  ],
  "cut": [
   {
-   "domain": "fe.training",
-   "why": "category 4 \u2014 finance training courses, no portfolio backtesting tool; no fit"
+   "domain": "rankite.com",
+   "why": "category 3 — SEO agency, not portfolio software"
+  },
+  {
+   "domain": "tradingfxvps.com",
+   "why": "category 3 — forex VPS hosting, not portfolio backtesting"
   }
  ]
 }
