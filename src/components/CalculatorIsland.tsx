@@ -72,6 +72,7 @@ import TrumpVs529Calculator from "./TrumpVs529Calculator";
 import MortgageRecastCalculator from "./MortgageRecastCalculator";
 import FloridaAmendment3Calculator from "./FloridaAmendment3Calculator";
 import StudentLoanGarnishmentCalculator from "./StudentLoanGarnishmentCalculator";
+import TaxBracketCalculator from "./TaxBracketCalculator";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -169,6 +170,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "florida-amendment-3-calculator": FloridaAmendment3Calculator,
   // X-trends pass (2026-10-20): defaulted student loan collection exposure (wage garnishment, refund and Social Security offsets).
   "student-loan-wage-garnishment-calculator": StudentLoanGarnishmentCalculator,
+  // Mindmap Autocomplete pass (2026-10-21): 2026 federal tax bracket, marginal and effective rate.
+  "tax-bracket-calculator": TaxBracketCalculator,
   // PTO / leave-days cash-out — competitor-monitor pass (2026-08-17): sell-back payout calculator
   // that also shows an estimated net-of-tax figure and the unpaid-time-off value for comparison.
   "pto-cashout": PtoCashoutCalculator,

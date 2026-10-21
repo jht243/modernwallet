@@ -31,6 +31,254 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── mindmap-pass 2026-10-21 (autocomplete pass): 2026-tax-brackets, student-loan-forgiveness-programs, how-is-savings-account-interest-calculated ──
+  {
+    "updated": "2026-10-21",
+    "slug": "2026-tax-brackets",
+    "title": "2026 Tax Brackets by Filing Status and Standard Deduction",
+    "metaDescription": "The 2026 tax brackets run from 10% to 37%. See thresholds for all four filing statuses, the 2026 standard deduction, and a worked $85,000 example.",
+    "h1": "2026 Tax Brackets and Standard Deduction",
+    "cardBlurb": "The 2026 federal tax brackets run from 10% to 37%, with thresholds and a standard deduction that change by filing status.",
+    "introText": "The 2026 tax brackets are seven federal income tax rates: 10%, 12%, 22%, 24%, 32%, 35% and 37%. Every threshold on this page comes from Internal Revenue Service (IRS) [Revenue Procedure 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf). For a single filer, the 10% rate covers the first $12,400 of taxable income and the 37% rate starts above $640,600.\n\nThese brackets set the tax for the 2026 tax year, which you report on the return filed in 2027. Brackets for the year after are on our [projected 2027 tax brackets](/guides/2027-tax-brackets-projected/) page.",
+    "sections": [
+      {
+        "heading": "2026 Federal Tax Brackets by Filing Status",
+        "body": "The 2026 federal tax brackets use the same seven rates for every filing status. The income where each rate starts depends on your status, and every figure below is taxable income, meaning income after deductions. The IRS announced these thresholds in its [release on the tax year 2026 inflation adjustments](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill).\n\nSingle\n\n| Rate | Taxable income |\n| --- | --- |\n| 10% | Up to $12,400 |\n| 12% | Over $12,400 to $50,400 |\n| 22% | Over $50,400 to $105,700 |\n| 24% | Over $105,700 to $201,775 |\n| 32% | Over $201,775 to $256,225 |\n| 35% | Over $256,225 to $640,600 |\n| 37% | Over $640,600 |\n\nMarried filing jointly\n\n| Rate | Taxable income |\n| --- | --- |\n| 10% | Up to $24,800 |\n| 12% | Over $24,800 to $100,800 |\n| 22% | Over $100,800 to $211,400 |\n| 24% | Over $211,400 to $403,550 |\n| 32% | Over $403,550 to $512,450 |\n| 35% | Over $512,450 to $768,700 |\n| 37% | Over $768,700 |\n\nHead of household\n\n| Rate | Taxable income |\n| --- | --- |\n| 10% | Up to $17,700 |\n| 12% | Over $17,700 to $67,450 |\n| 22% | Over $67,450 to $105,700 |\n| 24% | Over $105,700 to $201,750 |\n| 32% | Over $201,750 to $256,200 |\n| 35% | Over $256,200 to $640,600 |\n| 37% | Over $640,600 |\n\nMarried filing separately\n\n| Rate | Taxable income |\n| --- | --- |\n| 10% | Up to $12,400 |\n| 12% | Over $12,400 to $50,400 |\n| 22% | Over $50,400 to $105,700 |\n| 24% | Over $105,700 to $201,775 |\n| 32% | Over $201,775 to $256,225 |\n| 35% | Over $256,225 to $384,350 |\n| 37% | Over $384,350 |\n\nIn the new tax brackets for 2026, every joint threshold up to the start of the 35% band is exactly double the single figure. For example, $12,400 × 2 = $24,800 and $256,225 × 2 = $512,450.\n\nThe 37% threshold, and the end of the 35% band, break that doubling. Twice the single threshold would be $1,281,200, but the joint 37% rate starts at $768,700, which is $512,500 lower. Married filing separately follows the single table until the 35% band, which stops at $384,350, exactly half of the $768,700 joint threshold.\n\nHead of household filers get a wider 10% band than single filers: $17,700 versus $12,400. The two tables meet at $105,700 for the 22% band and at $640,600 for the 37% rate. In the middle, the head of household 24% band ends at $201,750, which is $25 below the single figure of $201,775, and the 32% band ends at $256,200, $25 below the single figure of $256,225."
+      },
+      {
+        "heading": "2026 Standard Deduction by Filing Status",
+        "body": "The 2026 standard deduction is $16,100 for single filers, $32,200 for married couples filing jointly, $24,150 for heads of household, and $16,100 for married couples filing separately.\n\n| Filing status | 2026 standard deduction |\n| --- | --- |\n| Single | $16,100 |\n| Married filing jointly | $32,200 |\n| Head of household | $24,150 |\n| Married filing separately | $16,100 |\n\nSubtract the deduction from your income to get taxable income, which is the number the bracket tables use. The joint deduction is double the single amount: $16,100 × 2 = $32,200.\n\nAdding the deduction to the 10% band shows how much income is either untaxed or taxed at 10%. For a single filer, that is $16,100 + $12,400 = $28,500. For a joint return, it is $32,200 + $24,800 = $57,000, and for a head of household it is $24,150 + $17,700 = $41,850.\n\nA single filer with $16,100 of income or less has taxable income of zero after the standard deduction."
+      },
+      {
+        "heading": "How the 2026 Tax Brackets Are Applied",
+        "body": "Each 2026 rate applies only to the dollars inside its band, so a single filer with $85,000 of income owes $9,870 in federal income tax from the brackets. Start with the $85,000 and subtract the $16,100 standard deduction. That leaves $68,900 of taxable income.\n\nNext, split the $68,900 across the single filer bands:\n\n| Band | Dollars in band | Rate | Tax |\n| --- | --- | --- | --- |\n| Up to $12,400 | $12,400 | 10% | $1,240 |\n| Over $12,400 to $50,400 | $38,000 | 12% | $4,560 |\n| Over $50,400 to $68,900 | $18,500 | 22% | $4,070 |\n| Total | $68,900 | | $9,870 |\n\nThe IRS tables reach the same answer with a shortcut. For a single filer with taxable income over $50,400 and up to $105,700, tax is $5,800 plus 22% of the amount over $50,400.\n\nHere that is $5,800 + 22% × ($68,900 − $50,400) = $5,800 + $4,070 = $9,870. The $5,800 is the tax on the first $50,400, already added up for you: $1,240 + $4,560 = $5,800.\n\nFor more, read our guide on [how much tax you will pay](/guides/how-much-tax-will-i-pay/)."
+      },
+      {
+        "heading": "Marginal Rate Versus Effective Rate",
+        "body": "Your marginal rate is the rate on your last dollar of taxable income, and your effective rate is your total tax divided by your income. In the $85,000 example, the marginal rate is 22% because the last $18,500 falls in the 22% band.\n\nThe effective rate is far lower. Dividing $9,870 by $85,000 of income gives 11.6%, and dividing $9,870 by $68,900 of taxable income gives 14.3%.\n\nThe gap comes from how the dollars are spread across the 2026 marginal tax rates:\n\n- $16,100 is covered by the standard deduction.\n- $12,400 is taxed at 10%.\n- $38,000 is taxed at 12%.\n- $18,500 is taxed at 22%.\n\nThose four amounts add up to the full $85,000. Only about a fifth of this filer's income ($18,500 of $85,000) is taxed at the 22% rate.\n\nA raise never lowers what you keep after federal income tax, because a higher rate applies only to the dollars above its threshold. If this filer's taxable income climbed past $105,700, only the dollars over $105,700 would be taxed at 24%. Each extra $100 in that band would add $24 of tax and leave $76, and the first $105,700 would be taxed exactly as before."
+      },
+      {
+        "heading": "Which 2026 Tax Bracket You Are In",
+        "body": "Your 2026 tax bracket is the band that holds your last dollar of taxable income. Three steps find it:\n\n1. Pick the table for your filing status.\n2. Subtract your deduction from your income. The standard deduction amounts are in the table above.\n3. Find the band your taxable income falls in. That band's rate is your marginal rate.\n\nTake a head of household with $70,000 of income. Subtracting the $24,150 standard deduction leaves $45,850 of taxable income, which falls in the 12% band (over $17,700 to $67,450).\n\nThe same $70,000 for a single filer works out differently. Subtracting $16,100 leaves $53,900, which is over $50,400 and lands in the 22% band. Filing status alone moves this income from one bracket to the next.\n\nTo skip the arithmetic, enter your income and filing status in our [tax bracket calculator](/tax-bracket-calculator/)."
+      },
+      {
+        "heading": "What the 2026 Tax Brackets Leave Out",
+        "body": "The bracket tables on this page do not cover capital gains rates, tax credits, payroll tax or state income tax. The $9,870 in the worked example is federal income tax from the brackets alone, before any of those items.\n\nIf part of your income comes from selling investments, read our comparison of [ordinary income vs capital gains tax rates](/compare/ordinary-income-vs-capital-gains-tax/). If you are working out tax for a trust, see our guide to [trust tax rates](/guides/trust-tax-rates-explained/).\n\nTo place your own income in the 2026 tax brackets, enter your filing status and income in our [tax bracket calculator](/tax-bracket-calculator/)."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/tax-bracket-calculator/",
+        "label": "Tax Bracket Calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are the 2026 federal tax brackets?",
+        "answer": "The 2026 federal tax brackets are 10%, 12%, 22%, 24%, 32%, 35% and 37%. For a single filer, 10% applies up to $12,400 of taxable income and 37% applies above $640,600. Married couples filing jointly reach the 37% rate above $768,700."
+      },
+      {
+        "question": "What is the standard deduction for 2026?",
+        "answer": "The 2026 standard deduction is $16,100 for single filers and married couples filing separately, $32,200 for married couples filing jointly, and $24,150 for heads of household. Subtract it from your income to get the taxable income the brackets use."
+      },
+      {
+        "question": "Do the 2026 brackets apply to the return I file in 2026?",
+        "answer": "No. The 2026 brackets apply to the 2026 tax year, which you report on the return filed in 2027. The return filed in 2026 covers tax year 2025."
+      },
+      {
+        "question": "If I move into a higher bracket, is all my income taxed at that rate?",
+        "answer": "No. Each rate applies only to the dollars inside its band. A single filer with $68,900 of taxable income pays 22% only on the $18,500 above $50,400, and the rest is taxed at 10% and 12%."
+      },
+      {
+        "question": "How do I find my tax bracket?",
+        "answer": "Subtract your deduction from your income, then find the band your taxable income falls in on the table for your filing status. Our [tax bracket calculator](/tax-bracket-calculator/) runs the same steps for your own numbers."
+      },
+      {
+        "question": "Where can I check the official numbers?",
+        "answer": "The IRS publishes the 2026 thresholds and standard deduction in tables 1 to 4 of [Revenue Procedure 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf). The same figures appear in the IRS [newsroom release on the tax year 2026 inflation adjustments](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Revenue Procedure 2025-32 (2026 inflation adjustments)",
+        "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+      },
+      {
+        "label": "IRS: Tax inflation adjustments for tax year 2026",
+        "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+      }
+    ]
+  },
+  {
+    "updated": "2026-10-21",
+    "slug": "student-loan-forgiveness-programs",
+    "title": "Student Loan Forgiveness Programs and Who Qualifies",
+    "metaDescription": "See which student loan forgiveness programs exist, the test for each one, and why private loans and the Tiered Standard plan offer no forgiveness.",
+    "h1": "Student Loan Forgiveness Programs by Qualifying Test",
+    "cardBlurb": "Five federal programs can forgive or discharge student loans, and each one has its own test for who qualifies.",
+    "introText": "Student loan forgiveness programs come in five federal routes, and each has its own test: Public Service Loan Forgiveness (PSLF), Teacher Loan Forgiveness, income-driven plan forgiveness, total and permanent disability discharge, and borrower defense for school misconduct. \n\nEach test looks at something different. PSLF counts 120 payments made while you work in public service, and Teacher Loan Forgiveness needs five straight school years at a low-income school. Income-driven forgiveness comes after a long repayment period, and a disability discharge depends on medical or benefits paperwork.\n\nEvery program here covers federal loans only. If you hold private student loans, none of these programs applies to them, and [types of student loans](/guides/types-of-student-loans/) shows how to tell which kind you have.",
+    "sections": [
+      {
+        "heading": "Federal Student Loan Forgiveness Programs and Who Qualifies",
+        "body": "Five federal programs can forgive or discharge a student loan, and each has its own qualifying test.\n\n- Public Service Loan Forgiveness: you make 120 monthly payments, after October 1, 2007, on an eligible Direct Loan, under a qualifying repayment plan, while you work in a public service job for each of those payments.\n- Teacher Loan Forgiveness: you teach full time for five consecutive complete school years at a school that meets the low-income criteria, and your loan is not in default. The cap is $5,000, or $17,500 for qualifying secondary school math or science teachers and qualifying special education teachers.\n- Income-driven plan forgiveness: you repay on an income-driven plan for an extended period. Federal law caps Income-Contingent Repayment (ICR) at 25 years, and other plans set their own periods.\n- Total and permanent disability discharge: your Direct Loan is discharged if you become totally and permanently disabled, backed by a medical certification, Social Security disability benefits records, or a Department of Veterans Affairs unemployability finding.\n- Borrower defense: if your school misled or defrauded you, you can apply for relief through [studentaid.gov](https://studentaid.gov/).\n\nNo blanket program sits on this list. If you work full time in government or emergency management, start with PSLF, and add Teacher Loan Forgiveness to your check if you teach at a low-income school.\n\n [The student loan Standard Repayment Plan changes](/guides/student-loan-standard-repayment-plan/) explains the plans that replaced the old menu."
+      },
+      {
+        "heading": "Public Service Loan Forgiveness",
+        "body": "Public Service Loan Forgiveness requires 120 monthly payments, made while you work in public service, on an eligible Direct Loan. The rules sit in [20 U.S.C. 1087e(m)](https://www.law.cornell.edu/uscode/text/20/1087e), part of the United States Code (U.S.C.), and they set three conditions.\n\n- You make 120 monthly payments on an eligible Federal Direct Loan after October 1, 2007.\n- Each payment runs under a qualifying repayment plan.\n- You hold a public service job during the period you make each of those 120 payments.\n\nThe statute defines a public service job to include a full-time job in emergency management or government, excluding time as a member of Congress, plus other fields it lists. The statute text does not name individual employers, so confirm yours on [studentaid.gov](https://studentaid.gov/) before you count on PSLF. The statute text also does not say the 120 payments must be consecutive.\n\nOnly four loan types qualify: Federal Direct Stafford, Direct PLUS, Direct Unsubsidized Stafford, and Direct Consolidation loans. Only Direct Loans qualify for PSLF; see [should you refinance student loans](/guides/should-you-refinance-student-loans/).\n\nThe answer changes for a government worker in three cases: your job falls outside the statute's public service definition, your payments ran under a plan that does not qualify, or your loans are not Direct Loans. In any of those cases, look next at income-driven forgiveness."
+      },
+      {
+        "heading": "Income-Driven Plan Forgiveness and the 2026 Plan Changes",
+        "body": "Income-driven plan forgiveness cancels the balance left after an extended repayment period, and the length of that period depends on the plan and the borrower. For Income-Contingent Repayment, [20 U.S.C. 1087e(d)(1)(D)](https://www.law.cornell.edu/uscode/text/20/1087e) says repayment is \"paid over an extended period of time prescribed by the Secretary, not to exceed 25 years.\"\n\nThe same statute makes ICR available \"before June 30, 2028.\" ICR is not available for Direct PLUS loans made on behalf of a dependent student, so a parent who borrowed that way cannot use ICR for that loan. Pay As You Earn (PAYE) and the other income-driven plans each set their own forgiveness period, which you can confirm for your loans on [studentaid.gov](https://studentaid.gov/).\n\nThe plan menu changed on July 1, 2026. The One Big Beautiful Bill Act began replacing the old repayment plans with two options:\n\n- A Tiered Standard plan, which offers no forgiveness at the end of its term.\n- An income-driven Repayment Assistance Plan (RAP).\n\nBorrowers on ICR or PAYE face a full sunset date of July 1, 2028 under the law. We do not have a confirmed RAP forgiveness period, so look up RAP's current terms on [studentaid.gov](https://studentaid.gov/) before you move to it.\n\nIf income-driven forgiveness is your goal, the Tiered Standard plan cannot get you there. [The student loan Standard Repayment Plan changes](/guides/student-loan-standard-repayment-plan/) covers how the new plans work."
+      },
+      {
+        "heading": "Teacher Loan Forgiveness",
+        "body": "Teacher Loan Forgiveness repays up to $5,000 for a full-time teacher who finishes five consecutive complete school years at a low-income school. The limit rises to $17,500 for qualifying secondary school math or science teachers and qualifying special education teachers.\n\n[20 U.S.C. 1078-10](https://www.law.cornell.edu/uscode/text/20/1078-10) sets three tests:\n\n- Full-time employment as a teacher for 5 consecutive complete school years.\n- A school that meets the low-income criteria.\n- A loan that is not in default.\n\nThe $5,000 figure is an aggregate cap, so it is the most the Secretary of Education may repay in total under the standard limit. A teacher who qualifies for the higher limit can get up to $12,500 more ($17,500 minus $5,000).\n\nA loan in default does not qualify. If you have fallen behind, [what happens if you don't pay your student loans](/guides/what-happens-if-you-dont-pay-your-student-loans/) covers what default leads to, and you can run your paycheck numbers in the [student loan wage garnishment calculator](/student-loan-wage-garnishment-calculator/)."
+      },
+      {
+        "heading": "Disability Discharge and Borrower Defense",
+        "body": "A Direct Loan is discharged when the borrower becomes totally and permanently disabled, under [34 CFR 685.213](https://www.law.cornell.edu/cfr/text/34/685.213) in the Code of Federal Regulations (CFR). The regulation accepts three kinds of proof:\n\n- A certification from a physician (a doctor of medicine or osteopathy legally authorized to practice in a state), a nurse practitioner, a physician assistant, or a certified psychologist.\n- Social Security Administration documentation showing you receive Social Security Disability Insurance (SSDI) or Supplemental Security Income (SSI) disability benefits.\n- For veterans, a Department of Veterans Affairs determination that you are unemployable due to a service-connected disability.\n\nThe discharge can be reversed. Your loan can be reinstated if, within 3 years after the discharge, you receive a new TEACH Grant (Teacher Education Assistance for College and Higher Education Grant) or a new Direct Loan, with exceptions for certain consolidation loans.\n\nThe regulation sets no ongoing monitoring period after discharge. \n\nBorrower defense is for borrowers whose school misled or defrauded them. You apply on [studentaid.gov](https://studentaid.gov/), which is also where to check how claims are currently being decided, since we could not confirm that ourselves."
+      },
+      {
+        "heading": "Taxes on Forgiven Student Loans",
+        "body": "Federal income tax on forgiven student debt depends on the kind of discharge and the year it happens. Three rules apply, based on [26 U.S.C. 108](https://www.law.cornell.edu/uscode/text/26/108):\n\n- Discharges for death or total and permanent disability after December 31, 2025 are excluded from federal gross income under section 108(f)(5).\n- A temporary exclusion covered certain student loan discharges after December 31, 2020 and before January 1, 2026.\n- Forgiveness not covered by an exclusion is generally income in the year it is canceled.\n\nIf your forgiveness falls under that third rule, plan for it to count as income in the year of cancellation. [Is student loan forgiveness taxable](/guides/is-student-loan-forgiveness-taxable/) walks through each exclusion in more detail."
+      },
+      {
+        "heading": "How to Check Which Student Loan Forgiveness Programs Fit You",
+        "body": "You can match your loans to a program in four steps, starting with your loan type on studentaid.gov.\n\n1. Confirm your loan type. Log in at [studentaid.gov](https://studentaid.gov/) and list each loan. PSLF counts only Direct Loans, and [types of student loans](/guides/types-of-student-loans/) explains how the categories differ.\n2. Confirm your job. PSLF needs a public service job for every counted payment. Teacher Loan Forgiveness needs five consecutive complete school years of full-time teaching at a low-income school.\n3. Confirm your repayment plan. PSLF payments must run under a qualifying plan. ICR and PAYE face a July 1, 2028 sunset, and the Tiered Standard plan ends with no forgiveness.\n4. Keep records. Save every payment record and proof of employment for each period, because PSLF ties each of the 120 payments to the job you held when you made it.\n\nPrivate student loans are not covered by any of these federal programs. If all of your debt is private, none of these routes applies to it.\n\nLog in to [studentaid.gov](https://studentaid.gov/) today, pull your loan list, and match each loan against the student loan forgiveness programs above."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/student-loan-wage-garnishment-calculator/",
+        "label": "Student Loan Garnishment Calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Who qualifies for student loan forgiveness now?",
+        "answer": "You qualify if you meet the test for one specific federal program. That means 120 qualifying payments in public service for Public Service Loan Forgiveness, five consecutive complete school years at a low-income school for Teacher Loan Forgiveness, a long income-driven repayment period, total and permanent disability, or school misconduct for borrower defense. There is no blanket program, and private loans are excluded."
+      },
+      {
+        "question": "Is student loan forgiveness still available?",
+        "answer": "Yes, through specific federal programs, but there is no blanket program. Federal statute and regulation text sets out the terms for Public Service Loan Forgiveness, Teacher Loan Forgiveness, Income-Contingent Repayment, and total and permanent disability discharge. ICR and PAYE face a sunset on July 1, 2028, and you can check borrower defense status on [studentaid.gov](https://studentaid.gov/)."
+      },
+      {
+        "question": "Can private student loans be forgiven?",
+        "answer": "No federal program covers them. Private student loans are outside Public Service Loan Forgiveness, Teacher Loan Forgiveness, income-driven forgiveness, disability discharge, and borrower defense. Only Direct Loans qualify for Public Service Loan Forgiveness."
+      },
+      {
+        "question": "How many payments does Public Service Loan Forgiveness require?",
+        "answer": "Public Service Loan Forgiveness requires 120 monthly payments, made after October 1, 2007, on an eligible Direct Loan, under a qualifying repayment plan, while you work in a public service job. The statute text does not state that the payments must be consecutive."
+      },
+      {
+        "question": "How much can teachers get forgiven?",
+        "answer": "Teachers can get up to $5,000 in total after five consecutive complete school years of full-time teaching at a low-income school. The limit is up to $17,500 for qualifying secondary school math or science teachers and qualifying special education teachers, and the loan cannot be in default."
+      },
+      {
+        "question": "Is forgiven student loan debt taxable?",
+        "answer": "It depends on the discharge and the year. Death and total and permanent disability discharges after December 31, 2025 are excluded from federal gross income, and a temporary exclusion covered certain discharges after December 31, 2020 and before January 1, 2026. Other forgiveness is generally income in the year it is canceled; see [is student loan forgiveness taxable](/guides/is-student-loan-forgiveness-taxable/)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "20 U.S.C. 1087e: Terms of loans (PSLF and income-contingent repayment)",
+        "url": "https://www.law.cornell.edu/uscode/text/20/1087e"
+      },
+      {
+        "label": "20 U.S.C. 1078-10: Teacher Loan Forgiveness",
+        "url": "https://www.law.cornell.edu/uscode/text/20/1078-10"
+      },
+      {
+        "label": "34 CFR 685.213: Total and permanent disability discharge",
+        "url": "https://www.law.cornell.edu/cfr/text/34/685.213"
+      },
+      {
+        "label": "26 U.S.C. 108: Income from discharge of indebtedness",
+        "url": "https://www.law.cornell.edu/uscode/text/26/108"
+      }
+    ]
+  },
+  {
+    "updated": "2026-10-21",
+    "slug": "how-is-savings-account-interest-calculated",
+    "title": "How Is Savings Account Interest Calculated? Worked Math",
+    "metaDescription": "How is savings account interest calculated? Balance x rate / 365 each day, usually paid monthly. See the math for $10,000 at 4.00% by month and by year.",
+    "h1": "How Is Savings Account Interest Calculated?",
+    "cardBlurb": "Banks multiply your balance by the annual rate divided by 365 each day, so $10,000 at 4.00% earns about $33.97 in a 31-day month and $408.08 in a year.",
+    "introText": "Banks calculate savings interest one day at a time: balance times the annual rate divided by 365, so $10,000 at 4.00% earns about $1.10 a day and $33.97 in a 31-day month. Knowing how savings account interest is calculated lets you rebuild a month's interest from three numbers: balance, rate and days.\n\nThe daily amounts are usually added up and paid into the account once a month. With daily compounding, each day's interest joins the balance. The same $10,000 then earns $408.08 over a year, which is a 4.08% annual percentage yield (APY).",
+    "sections": [
+      {
+        "heading": "How Banks Calculate Savings Interest",
+        "body": "Savings interest is calculated with a daily formula: daily interest = balance x annual rate / 365. For $10,000 at 4.00%, that is $10,000 x 0.04 / 365 = $1.0959, or about $1.10 for one day.\n\nThe bank repeats that calculation for every day in the period and adds the results. Over a 31-day month with no compounding inside the month, the total is $33.97. That sum is usually paid into the account once a month.\n\nCompounding sets the balance the next day's math starts from. With daily compounding, each day's interest is added to the balance, so day two earns interest on $10,001.0959 instead of $10,000. Over a full year that adds up to $408.08, compared with $400.00 if interest never compounded.\n\nTwo inputs vary by bank. One is the day-count basis, which can be 365 or 360, and the other is whether interest compounds daily or monthly.\n\nThe account disclosure states which method that account uses. Every example on this page uses a 365-day basis, a $10,000 balance, a 4.00% annual rate, and no deposits or withdrawals."
+      },
+      {
+        "heading": "Daily, Monthly and Yearly Compounding Compared",
+        "body": "Daily compounding pays the most of the three methods, but on $10,000 at 4.00% the gap over simple interest is $8.08 a year. Here are the one-year totals side by side.\n\n| Method | Interest After One Year | APY |\n| --- | --- | --- |\n| Compounded daily | $408.08 | 4.08% |\n| Compounded monthly | $407.42 | 4.07% |\n| Simple interest (no compounding) | $400.00 | 4.00% |\n\nDaily beats monthly by $0.66 a year ($408.08 - $407.42). Simple interest pays 4.00% of the original $10,000 and nothing on interest already earned. \n\nThe gap grows with time. Compounded daily for five years, $10,000 at 4.00% earns $2,213.89 of interest. Simple interest over the same five years would be $2,000.00 (5 x $400.00), so compounding adds $213.89.\n\nTo try other rates and time spans, use the [compound interest calculator](/investing/compound-interest-calculator/)."
+      },
+      {
+        "heading": "APR Versus APY",
+        "body": "The annual percentage rate (APR) is the stated yearly rate, and the APY is what the money earns in a year after compounding. APY is higher than APR whenever interest compounds more than once a year.\n\nThe federal APY formula sits in [Appendix A of Regulation DD](https://www.law.cornell.edu/cfr/text/12/appendix-A_to_part_1030), the Truth in Savings rule at 12 CFR (Code of Federal Regulations) Part 1030. In plain text it reads:\n\nAPY = 100 x [(1 + Interest / Principal)^(365 / Days in term) - 1]\n\nThe three inputs mean the following:\n\n- Principal: the money assumed to be deposited at the start of the account.\n- Interest: the total dollar amount of interest earned on that principal over the term.\n- Days in term: the actual number of days in the term.\n\nFor one 365-day year compounded daily, Interest / Principal = $408.08 / $10,000 = 0.040808. The exponent is 365 / 365 = 1, so APY = 100 x 0.040808 = 4.08%.\n\nRun it backward and an account quoting a 4.00% APY with daily compounding has an APR of about 3.92%. At a 4.00% rate, daily compounding gives a 4.08% APY and monthly compounding gives 4.07%."
+      },
+      {
+        "heading": "Why Interest Differs in 28, 30 and 31-Day Months",
+        "body": "Monthly interest changes because the daily formula multiplies by the number of days in the month. At $10,000 and 4.00%, with no compounding inside the month:\n\n- 28-day month: $30.68\n- 30-day month: $32.88\n- 31-day month: $33.97\n\nThe 31-day month pays $3.29 more than the 28-day month on the same balance and rate.\n\nThe day-count basis moves the number too. On a 360-day basis the daily rate is 0.04 / 360 instead of 0.04 / 365, so a 31-day month pays $34.44 instead of $33.97. That is a $0.47 difference for the same month.\n\nDeposits and withdrawals change the balance the daily formula uses, so they change the month's total. With daily compounding, each month also starts from a balance that includes earlier interest. If a month's interest looks wrong, divide it by the days in the period and compare the result to balance x rate / 365."
+      },
+      {
+        "heading": "Estimating Your Own Interest",
+        "body": "You can estimate savings interest by hand with a balance, a rate and a day count. Follow four steps:\n\n1. Convert the annual rate to a decimal: 4.00% becomes 0.04.\n2. Find one day's interest with balance x rate / 365: $10,000 x 0.04 / 365 = $1.0959.\n3. Multiply by the days in the period: $1.0959 x 31 = $33.97.\n4. For a full year, multiply the balance by the APY: $10,000 x 0.0408 = about $408, close to the exact $408.08.\n\nIf the account disclosure lists a 360-day basis, put 360 in place of 365 in step 2.\n\nHand math gets slow once you want several years or different balances. Enter your numbers in the [high-yield savings calculator](/investing/high-yield-savings-calculator/) for longer periods, or use the [CD calculator](/cd-calculator/) for a certificate of deposit (CD). If you are weighing a high-yield savings account (HYSA) against a CD, our [HYSA vs CD](/compare/hysa-vs-cd/) comparison sets the two side by side."
+      },
+      {
+        "heading": "What Interest Calculations Leave Out",
+        "body": "The interest formula produces a pre-tax figure at one fixed rate, and four things sit outside it.\n\n- Taxes: interest on savings is taxable, so the $408.08 is a before-tax number. See our guide on whether [savings and CD interest is taxable](/guides/is-savings-and-cd-interest-taxable/).\n- Rate changes: every example here holds 4.00% for the whole year. If the rate changes, run the daily formula at each rate for the days it applied and add the pieces.\n- Fees: the formula has no fee term. This page does not cover any account's fees, so subtract any charge separately from the interest total.\n- Deposit insurance: [FDIC insurance](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance) from the Federal Deposit Insurance Corporation covers deposits up to $250,000 per depositor, per insured bank, per ownership category. A balance above $250,000 in one ownership category at one bank is above that limit.\n\nTo compare rates across accounts, see our list of the [best high-yield savings accounts](/roundup/best-high-yield-savings-accounts/). Then enter your balance and rate in the high-yield savings calculator to see how savings account interest is calculated on your own numbers."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/investing/high-yield-savings-calculator/",
+        "label": "High-Yield Savings Calculator"
+      },
+      {
+        "href": "/cd-calculator/",
+        "label": "CD Calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How is savings account interest calculated?",
+        "answer": "Savings interest is calculated daily as balance x annual rate / 365, then the daily amounts are added up and usually paid once a month. For $10,000 at 4.00%, one day earns about $1.10 and a 31-day month earns about $33.97."
+      },
+      {
+        "question": "Is savings interest calculated daily or monthly?",
+        "answer": "Interest is usually calculated daily and paid monthly, but compounding can be daily or monthly depending on the account. On $10,000 at 4.00% for a year, daily compounding earns $408.08 and monthly compounding earns $407.42. The account disclosure states which method applies."
+      },
+      {
+        "question": "What is the difference between APR and APY?",
+        "answer": "APR is the stated annual rate, and APY is the yearly yield after compounding. APY is higher whenever interest compounds more than once a year. A 4.00% APY with daily compounding works out to an APR of about 3.92%."
+      },
+      {
+        "question": "How much interest does $10,000 earn in a savings account?",
+        "answer": "At a 4.00% rate compounded daily, $10,000 earns $408.08 in one year and $2,213.89 over five years, with no deposits or withdrawals. Simple interest at the same rate would pay $400.00 a year. Run other rates in the [high-yield savings calculator](/investing/high-yield-savings-calculator/)."
+      },
+      {
+        "question": "Why is my interest different every month?",
+        "answer": "Monthly interest differs because the daily formula multiplies by the number of days in the month. At $10,000 and 4.00%, a 28-day month pays $30.68, a 30-day month pays $32.88 and a 31-day month pays $33.97. Balance changes and a 360-day basis also move the figure."
+      },
+      {
+        "question": "Is savings account interest taxable?",
+        "answer": "Yes, interest on savings is taxable. See our guide on whether [savings and CD interest is taxable](/guides/is-savings-and-cd-interest-taxable/)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "12 CFR Part 1030, Appendix A: Annual percentage yield calculation",
+        "url": "https://www.law.cornell.edu/cfr/text/12/appendix-A_to_part_1030"
+      },
+      {
+        "label": "FDIC: Understanding deposit insurance",
+        "url": "https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance"
+      }
+    ]
+  },
   // ── mindmap-pass 2026-10-20 (search gap): estate-as-ira-beneficiary ──
   {
     "updated": "2026-10-20",

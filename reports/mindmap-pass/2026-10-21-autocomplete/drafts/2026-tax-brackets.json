@@ -1,0 +1,66 @@
+{
+  "slug": "2026-tax-brackets",
+  "metaTitle": "2026 Tax Brackets by Filing Status and Standard Deduction",
+  "metaDescription": "The 2026 tax brackets run from 10% to 37%. See thresholds for all four filing statuses, the 2026 standard deduction, and a worked $85,000 example.",
+  "h1": "2026 Tax Brackets and Standard Deduction",
+  "cardBlurb": "The 2026 federal tax brackets run from 10% to 37%, with thresholds and a standard deduction that change by filing status.",
+  "introText": "The 2026 tax brackets are seven federal income tax rates: 10%, 12%, 22%, 24%, 32%, 35% and 37%. Every threshold on this page comes from Internal Revenue Service (IRS) [Revenue Procedure 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf). For a single filer, the 10% rate covers the first $12,400 of taxable income and the 37% rate starts above $640,600.\n\nThese brackets set the tax for the 2026 tax year, which you report on the return filed in 2027. Brackets for the year after are on our [projected 2027 tax brackets](/guides/2027-tax-brackets-projected/) page.",
+  "sections": [
+    {
+      "heading": "2026 Federal Tax Brackets by Filing Status",
+      "body": "The 2026 federal tax brackets use the same seven rates for every filing status. The income where each rate starts depends on your status, and every figure below is taxable income, meaning income after deductions. The IRS announced these thresholds in its [release on the tax year 2026 inflation adjustments](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill).\n\n**Single**\n\n| Rate | Taxable income |\n| --- | --- |\n| 10% | Up to $12,400 |\n| 12% | Over $12,400 to $50,400 |\n| 22% | Over $50,400 to $105,700 |\n| 24% | Over $105,700 to $201,775 |\n| 32% | Over $201,775 to $256,225 |\n| 35% | Over $256,225 to $640,600 |\n| 37% | Over $640,600 |\n\n**Married filing jointly**\n\n| Rate | Taxable income |\n| --- | --- |\n| 10% | Up to $24,800 |\n| 12% | Over $24,800 to $100,800 |\n| 22% | Over $100,800 to $211,400 |\n| 24% | Over $211,400 to $403,550 |\n| 32% | Over $403,550 to $512,450 |\n| 35% | Over $512,450 to $768,700 |\n| 37% | Over $768,700 |\n\n**Head of household**\n\n| Rate | Taxable income |\n| --- | --- |\n| 10% | Up to $17,700 |\n| 12% | Over $17,700 to $67,450 |\n| 22% | Over $67,450 to $105,700 |\n| 24% | Over $105,700 to $201,750 |\n| 32% | Over $201,750 to $256,200 |\n| 35% | Over $256,200 to $640,600 |\n| 37% | Over $640,600 |\n\n**Married filing separately**\n\n| Rate | Taxable income |\n| --- | --- |\n| 10% | Up to $12,400 |\n| 12% | Over $12,400 to $50,400 |\n| 22% | Over $50,400 to $105,700 |\n| 24% | Over $105,700 to $201,775 |\n| 32% | Over $201,775 to $256,225 |\n| 35% | Over $256,225 to $384,350 |\n| 37% | Over $384,350 |\n\nIn the new tax brackets for 2026, every joint threshold through the 35% band is exactly double the single figure. For example, $12,400 × 2 = $24,800 and $256,225 × 2 = $512,450.\n\nThe 37% threshold breaks that doubling. Twice the single threshold would be $1,281,200, but the joint 37% rate starts at $768,700, which is $512,500 lower. Married filing separately follows the single table until the 35% band, which stops at $384,350, exactly half of the $768,700 joint threshold.\n\nHead of household filers get a wider 10% band than single filers: $17,700 versus $12,400. The two tables meet at $105,700 for the 22% band and at $640,600 for the 37% rate. In the middle, the head of household 24% band ends at $201,750, which is $25 below the single figure of $201,775, and the 32% band ends at $256,200, $25 below the single figure of $256,225."
+    },
+    {
+      "heading": "2026 Standard Deduction by Filing Status",
+      "body": "The 2026 standard deduction is $16,100 for single filers, $32,200 for married couples filing jointly, $24,150 for heads of household, and $16,100 for married couples filing separately.\n\n| Filing status | 2026 standard deduction |\n| --- | --- |\n| Single | $16,100 |\n| Married filing jointly | $32,200 |\n| Head of household | $24,150 |\n| Married filing separately | $16,100 |\n\nSubtract the deduction from your income to get taxable income, which is the number the bracket tables use. The joint deduction is double the single amount: $16,100 × 2 = $32,200.\n\nAdding the deduction to the 10% band shows how much income is either untaxed or taxed at 10%. For a single filer, that is $16,100 + $12,400 = $28,500. For a joint return, it is $32,200 + $24,800 = $57,000, and for a head of household it is $24,150 + $17,700 = $41,850.\n\nA single filer with $16,100 of income or less has taxable income of zero after the standard deduction."
+    },
+    {
+      "heading": "How the 2026 Tax Brackets Are Applied",
+      "body": "Each 2026 rate applies only to the dollars inside its band, so a single filer with $85,000 of income owes $9,870 in federal income tax from the brackets. Start with the $85,000 and subtract the $16,100 standard deduction. That leaves $68,900 of taxable income.\n\nNext, split the $68,900 across the single filer bands:\n\n| Band | Dollars in band | Rate | Tax |\n| --- | --- | --- | --- |\n| Up to $12,400 | $12,400 | 10% | $1,240 |\n| Over $12,400 to $50,400 | $38,000 | 12% | $4,560 |\n| Over $50,400 to $68,900 | $18,500 | 22% | $4,070 |\n| Total | $68,900 | | $9,870 |\n\nThe IRS tables reach the same answer with a shortcut. For a single filer with taxable income over $50,400 and up to $105,700, tax is $5,800 plus 22% of the amount over $50,400.\n\nHere that is $5,800 + 22% × ($68,900 − $50,400) = $5,800 + $4,070 = $9,870. The $5,800 is the tax on the first $50,400, already added up for you: $1,240 + $4,560 = $5,800.\n\nFor more, read our guide on [how much tax you will pay](/guides/how-much-tax-will-i-pay/)."
+    },
+    {
+      "heading": "Marginal Rate Versus Effective Rate",
+      "body": "Your marginal rate is the rate on your last dollar of taxable income, and your effective rate is your total tax divided by your income. In the $85,000 example, the marginal rate is 22% because the last $18,500 falls in the 22% band.\n\nThe effective rate is far lower. Dividing $9,870 by $85,000 of income gives 11.6%, and dividing $9,870 by $68,900 of taxable income gives 14.3%.\n\nThe gap comes from how the dollars are spread across the 2026 marginal tax rates:\n\n- $16,100 is covered by the standard deduction.\n- $12,400 is taxed at 10%.\n- $38,000 is taxed at 12%.\n- $18,500 is taxed at 22%.\n\nThose four amounts add up to the full $85,000. Only about a fifth of this filer's income ($18,500 of $85,000) is taxed at the 22% rate.\n\nA raise never lowers what you keep after federal income tax, because a higher rate applies only to the dollars above its threshold. If this filer's taxable income climbed past $105,700, only the dollars over $105,700 would be taxed at 24%. Each extra $100 in that band would add $24 of tax and leave $76, and the first $105,700 would be taxed exactly as before."
+    },
+    {
+      "heading": "Which 2026 Tax Bracket You Are In",
+      "body": "Your 2026 tax bracket is the band that holds your last dollar of taxable income. Three steps find it:\n\n1. Pick the table for your filing status.\n2. Subtract your deduction from your income. The standard deduction amounts are in the table above.\n3. Find the band your taxable income falls in. That band's rate is your marginal rate.\n\nTake a head of household with $70,000 of income. Subtracting the $24,150 standard deduction leaves $45,850 of taxable income, which falls in the 12% band (over $17,700 to $67,450).\n\nThe same $70,000 for a single filer works out differently. Subtracting $16,100 leaves $53,900, which is over $50,400 and lands in the 22% band. Filing status alone moves this income from one bracket to the next.\n\nTo skip the arithmetic, enter your income and filing status in our [tax bracket calculator](/tax-bracket-calculator/)."
+    },
+    {
+      "heading": "What the 2026 Tax Brackets Leave Out",
+      "body": "The bracket tables on this page do not cover capital gains rates, tax credits, payroll tax or state income tax. The $9,870 in the worked example is federal income tax from the brackets alone, before any of those items.\n\nIf part of your income comes from selling investments, read our comparison of [ordinary income vs capital gains tax rates](/compare/ordinary-income-vs-capital-gains-tax/). If you are working out tax for a trust, see our guide to [trust tax rates](/guides/trust-tax-rates-explained/).\n\nTo place your own income in the 2026 tax brackets, enter your filing status and income in our [tax bracket calculator](/tax-bracket-calculator/)."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What are the 2026 federal tax brackets?",
+      "answer": "The 2026 federal tax brackets are 10%, 12%, 22%, 24%, 32%, 35% and 37%. For a single filer, 10% applies up to $12,400 of taxable income and 37% applies above $640,600. Married couples filing jointly reach the 37% rate above $768,700."
+    },
+    {
+      "question": "What is the standard deduction for 2026?",
+      "answer": "The 2026 standard deduction is $16,100 for single filers and married couples filing separately, $32,200 for married couples filing jointly, and $24,150 for heads of household. Subtract it from your income to get the taxable income the brackets use."
+    },
+    {
+      "question": "Do the 2026 brackets apply to the return I file in 2026?",
+      "answer": "No. The 2026 brackets apply to the 2026 tax year, which you report on the return filed in 2027. The return filed in 2026 covers tax year 2025."
+    },
+    {
+      "question": "If I move into a higher bracket, is all my income taxed at that rate?",
+      "answer": "No. Each rate applies only to the dollars inside its band. A single filer with $68,900 of taxable income pays 22% only on the $18,500 above $50,400, and the rest is taxed at 10% and 12%."
+    },
+    {
+      "question": "How do I find my tax bracket?",
+      "answer": "Subtract your deduction from your income, then find the band your taxable income falls in on the table for your filing status. Our [tax bracket calculator](/tax-bracket-calculator/) runs the same steps for your own numbers."
+    },
+    {
+      "question": "Where can I check the official numbers?",
+      "answer": "The IRS publishes the 2026 thresholds and standard deduction in tables 1 to 4 of [Revenue Procedure 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf). The same figures appear in the IRS [newsroom release on the tax year 2026 inflation adjustments](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill)."
+    }
+  ],
+  "relatedLinks": [],
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

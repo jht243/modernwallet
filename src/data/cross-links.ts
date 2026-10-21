@@ -85,6 +85,12 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/what-happens-if-you-dont-pay-your-student-loans/", label: "What happens if you don't pay your student loans" },
     { href: "/calculators/", label: "All calculators" },
   ],
+  // Autocomplete pass (2026-10-21).
+  "tax-bracket-calculator": [
+    { href: "/guides/2026-tax-brackets/", label: "2026 federal tax brackets by filing status" },
+    { href: "/guides/how-much-tax-will-i-pay/", label: "How much tax will I pay" },
+    { href: "/calculators/", label: "All calculators" },
+  ],
   "cd-calculator": [
     { href: "/hysa-vs-cd-calculator/", label: "CD or high-yield savings? Compare both on your deposit" },
     { href: "/annuity-calculator/", label: "Compare with an annuity payout" },

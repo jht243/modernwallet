@@ -1,0 +1,236 @@
+{
+ "rows": [
+  {
+   "keyword": "tax bracket calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "unclekam.com",
+    "www.kiplinger.com",
+    "nexgentaxes.com",
+    "www.moneyflock.com",
+    "usfinancecalculators.com",
+    "taxpayers.net",
+    "easytaxcalc.com",
+    "fltaxexperts.com",
+    "simptax.io",
+    "usfinancecalculators.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "people_also_search": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How do they calculate your tax bracket?",
+    "What is the formula to calculate income tax?",
+    "What are the new tax brackets for 2026?",
+    "How much tax will I pay on a salary?",
+    "How do I calculate my income tax?",
+    "What percent of taxes do I pay on my paycheck?"
+   ],
+   "related_searches": [
+    "Tax bracket calculator 2022",
+    "NYS 2026 tax brackets",
+    "Kiplinger 2026 tax brackets",
+    "Tax brackets for 2026",
+    "IRS 2026 tax brackets",
+    "Long-term capital gains tax brackets",
+    "Best tax deductions 2024",
+    "Best tax credits 2024"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 91
+  },
+  {
+   "keyword": "2026 tax brackets",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "taxfoundation.org",
+    "www.irs.gov",
+    "www.fidelity.com",
+    "www.ameriprise.com",
+    "bipartisanpolicy.org"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.cnbc.com",
+    "www.investopedia.com",
+    "www.ameripriseadvisors.com",
+    "www.youtube.com",
+    "greenbergtaxlaw.com",
+    "www.moneychimp.com",
+    "www.unbiased.com",
+    "www.ameripriseadvisors.com",
+    "www.youtube.com",
+    "www.nerdwallet.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What states let you keep all of your social security and 401k?",
+    "How much tax do you pay on $100,000 in the USA?",
+    "What is the new $6000 tax break for seniors?",
+    "What are the current US federal income tax brackets?",
+    "What are the new tax brackets for 2026?",
+    "How do you avoid the 22% tax bracket?"
+   ],
+   "related_searches": [
+    "2025 2026 tax brackets",
+    "IRS 2026 tax brackets compared to 2025",
+    "January 1 2026 tax brackets",
+    "2026 tax brackets single",
+    "2026 tax brackets married jointly",
+    "Investopedia 2026 tax brackets",
+    "The irs announced the 2026 tax brackets for the coming year",
+    "2026 tax brackets and standard deductions have been adjusted for inflation"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites taxfoundation.org, www.irs.gov, www.fidelity.com, www.ameriprise.com",
+   "se_results_count": 113
+  },
+  {
+   "keyword": "student loan forgiveness programs",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "studentaid.gov",
+    "studentloanborrowerassistance.org",
+    "www.sofi.com",
+    "educationdata.org",
+    "finaid.org",
+    "www.collegesoflaw.edu",
+    "www.instagram.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "studentaid.gov",
+    "studentloanborrowerassistance.org",
+    "educationdata.org",
+    "www.ed.gov",
+    "students-residents.aamc.org",
+    "finaid.org",
+    "www.councilofnonprofits.org",
+    "www.ncsl.org",
+    "www.sofi.com",
+    "studentaid.gov"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Who qualifies for student loan forgiveness now?",
+    "How to get 100% student loan forgiveness?",
+    "Is it too late to apply for student loan forgiveness?",
+    "Did Trump forgive student loan debt?",
+    "Do unpaid student loans go away after 7 years?",
+    "Do student loans get wiped after 25 years?"
+   ],
+   "related_searches": [
+    "Student loan forgiveness update",
+    "Student loan forgiveness application",
+    "Biden student loan forgiveness application",
+    "Government student loan Forgiveness",
+    "FAFSA student loan forgiveness",
+    "Department of Education student loan forgiveness",
+    "Do I qualify for student loan forgiveness",
+    "When will student loan forgiveness be applied"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites studentaid.gov, studentloanborrowerassistance.org, www.sofi.com, educationdata.org",
+   "se_results_count": 124
+  },
+  {
+   "keyword": "how is savings account interest calculated",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.bankrate.com",
+    "www.investor.gov",
+    "www.chase.com",
+    "www.seacoastbank.com",
+    "www.bankwith1st.com",
+    "www.woccu.org",
+    "www.afbank.com",
+    "www.youtube.com",
+    "www.ally.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.woccu.org",
+    "www.reddit.com",
+    "www.citizensbank.com",
+    "www.usnews.com",
+    "www.rbcroyalbank.com",
+    "www.salliemae.com",
+    "www.youtube.com",
+    "finred.usalearning.gov",
+    "www.coastline.com.au",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Can you explain the formula for compound interest and provide an example?",
+    "How do bank savings account interest rates work?",
+    "What is a high-yield savings account and what are its advantages?",
+    "How to calculate interest rate per month?",
+    "How do I calculate interest on a savings account?",
+    "What is 6% interest compounded monthly?"
+   ],
+   "related_searches": [
+    "How is savings account interest calculated reddit",
+    "How is savings account interest calculated fidelity",
+    "Saving account interest calculator monthly",
+    "When does interest get paid on savings account",
+    "High interest saving account calculator",
+    "Daily balance method interest calculator",
+    "Monthly savings calculator",
+    "How to calculate compound interest"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com); AI Overview present, cites www.bankrate.com, www.investor.gov, www.chase.com, www.seacoastbank.com",
+   "se_results_count": 166
+  }
+ ],
+ "cost": "DataForSEO: 4 calls, $0.01660 of $2.00 budget"
+}

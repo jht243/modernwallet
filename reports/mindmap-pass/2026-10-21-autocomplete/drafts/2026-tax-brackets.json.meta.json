@@ -1,0 +1,97 @@
+{
+ "slug": "2026-tax-brackets",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 1714,
+ "floor": 1000,
+ "input_tokens": 29512,
+ "output_tokens": 12997,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.378,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['2026 Federal Tax Brackets by Filing Status', '2026 Standard Deduction by Filing Status', 'How the 2026 Tax Brackets Are Applied', 'Marginal Rate Versus Effective Rate', 'Which 2026 Tax Bracket You Are In'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1714,
+  "numbers_not_in_facts": [
+   "1281200",
+   "28500",
+   "41850",
+   "45850",
+   "512500",
+   "53900",
+   "57000",
+   "70000",
+   "76"
+  ],
+  "fact_budget": {
+   "fact_words": 348,
+   "floor": 1000,
+   "ratio": 0.35,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    2
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "One small gap sits in the middle, where the head of household 24% band ends at $201,750, which is $25 below the single figure of $201,775.",
+     "replacement": "In the middle, the head of household 24% band ends at $201,750, which is $25 below the single figure of $201,775, and the 32% band ends at $256,200, $25 below the single figure of $256,225.",
+     "type": "contradicted",
+     "why": "Two gaps exist: the 32% band also ends $25 lower ($256,200 vs $256,225)."
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we build the calculators readers use to estimate a tax bill, and every threshold on this page comes from Internal Revenue Service (IRS) [Revenue Procedure 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf).",
+     "replacement": "Every threshold on this page comes from Internal Revenue Service (IRS) [Revenue Procedure 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf).",
+     "type": "unsupported",
+     "why": "Self-description doesn't state calculators estimate tax bills; brand claim unsupported."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "For more examples at other incomes, read our guide on [how much tax you will pay](/guides/how-much-tax-will-i-pay/).",
+     "replacement": "For more, read our guide on [how much tax you will pay](/guides/how-much-tax-will-i-pay/).",
+     "type": "unsupported",
+     "why": "SOURCE doesn't say linked guide contains examples at other incomes."
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1723
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 133.9,
+ "response_id": "msg_011CgF45dngn8ZwgvKNRjWWr",
+ "generated_at": "2026-10-21T08:20:49+0000"
+}

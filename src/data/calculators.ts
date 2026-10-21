@@ -2677,6 +2677,70 @@ export const CALCULATORS: CalculatorDef[] = [
     updated: "2026-10-20",
     defaultPreset: {"disposablePay": 2000, "frequency": "biweekly", "taxRefund": 3000, "ssBenefit": 0, "balance": 30000},
   },
+  // Tax bracket calculator, Autocomplete pass (2026-10-21). Prose generated via scripts/lib/content_gen.py (meta beside the draft in reports/mindmap-pass/2026-10-21-autocomplete/drafts/).
+  {
+    "id": "tax-bracket-calculator",
+    "islandId": "tax-bracket-calculator",
+    "label": "Tax Bracket",
+    "navOrder": 60,
+    "metaTitle": "Tax Bracket Calculator 2026: Find Your Bracket & Rate",
+    "metaDescription": "Tax bracket calculator for 2026. Enter income and filing status to see your federal bracket, estimated tax, effective rate and room left in your bracket.",
+    "targetKeyword": "tax bracket calculator",
+    "h1": "Tax Bracket Calculator",
+    "introText": "Your tax bracket is the rate on your last dollar of taxable income. The tax bracket calculator above finds your taxable income by subtracting a deduction from your income before deductions. It uses the standard deduction unless you enter your own total. Add your filing status to see your 2026 federal bracket, estimated tax and effective rate, plus the room left before the next bracket starts.\n\nFor example, take a single filer with $85,000 of income and the $16,100 standard deduction. Taxable income is $68,900, so the top dollars land in the 22% bracket and the tax comes to $9,870. That is an effective rate of 11.6%, with $36,800 of room before the 24% bracket starts.",
+    "howItWorks": "The calculator subtracts the standard deduction, or a custom itemized total you enter, from your income before deductions to get taxable income, which never goes below zero. The 2026 standard deduction is $16,100 for a single filer and for married filing separately. It is $32,200 for married filing jointly and $24,150 for head of household, and your filing status also sets where each bracket starts.\n\nTax is figured band by band, so only the dollars inside each band are taxed at that band's rate. For the single filer in the example above, the first $12,400 of taxable income is taxed at 10%, which is $1,240. The next $38,000 is taxed at 12%, which adds $4,560.\n\nThe last $18,500 is taxed at 22% for $4,070, and that top band sets the marginal rate, which is the rate of the highest band holding any taxable dollar. The effective rate divides total tax by income before deductions, so $9,870 on $85,000 comes to 11.6%. Room left is the taxable income you can add before the next bracket starts, which is $36,800 here because the 24% band begins at $105,700.\n\nA married couple filing jointly with $150,000 of income lands in the 22% bracket at an effective rate of 10.2%. A head of household with $60,000 of income owes $3,948 and sits in the 12% bracket. A single filer with $250,000 of income reaches the 32% bracket, but the effective rate is 20.5%.\n\nThe calculator applies ordinary-income brackets only, so it leaves out credits, capital gains rates, the qualified business income deduction, payroll tax and state tax. It is the wrong tool if you need a full return, owe self-employment tax or have capital gains, and [ordinary income vs capital gains tax](/compare/ordinary-income-vs-capital-gains-tax/) covers capital gains rates. A bigger deduction or a different filing status changes the result, so rerun the calculator with those inputs, then read the guide on [how much tax you will owe](/guides/how-much-tax-will-i-pay/).",
+    "faqs": [
+      {
+        "question": "What tax bracket am I in?",
+        "answer": "Your bracket is the rate on your last dollar of taxable income, which is your income after the deduction. A single filer with $85,000 of income has $68,900 of taxable income and lands in the 22% bracket. Enter your own income and filing status in the calculator above to see yours."
+      },
+      {
+        "question": "How do you calculate your tax bracket?",
+        "answer": "Subtract your deduction from your income, then find the band that holds your last taxable dollar. For a single filer, the 22% band covers taxable income over $50,400 up to $105,700. The calculator above does both steps and names the bracket for you."
+      },
+      {
+        "question": "What is the difference between a marginal and an effective tax rate?",
+        "answer": "The marginal rate is the rate on your last taxable dollar, and the effective rate is your total tax divided by income before deductions. A single filer with $85,000 of income has a 22% marginal rate. The same filer's effective rate is 11.6%, because $9,870 of tax is spread across all $85,000."
+      },
+      {
+        "question": "Does moving into a higher bracket mean all my income is taxed more?",
+        "answer": "No. Only the dollars inside the higher band are taxed at the higher rate. A single filer whose taxable income rises past $105,700 pays 24% on the dollars above that line. The tax on every dollar below $105,700 stays the same."
+      },
+      {
+        "question": "What are the 2026 federal tax brackets?",
+        "answer": "The 2026 federal rates run from 10% to 37% across seven brackets. For a single filer, the top 37% rate starts above $640,600 of taxable income. The [2026 tax brackets guide](/guides/2026-tax-brackets/) lists every threshold for each filing status, and the [projected 2027 brackets](/guides/2027-tax-brackets-projected/) cover the following year. The figures come from the Internal Revenue Service (IRS) [Revenue Procedure for the 2026 tax year](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf)."
+      },
+      {
+        "question": "What is the standard deduction for 2026?",
+        "answer": "The 2026 standard deduction is $16,100 for a single filer. It is also $16,100 for married filing separately, $32,200 for married filing jointly and $24,150 for head of household. The calculator uses it by default unless you enter a custom deduction. The amounts appear in the [IRS release on the 2026 adjustments](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill)."
+      },
+      {
+        "question": "How do I lower my taxable income to drop a bracket?",
+        "answer": "In this calculator, a deduction larger than the standard deduction is what lowers taxable income. A single filer with $68,900 of taxable income must get it to $50,400 or less to reach the 12% bracket. That takes $18,500 more in deductions, so enter a custom total above to test it. This page does not give personal tax advice."
+      },
+      {
+        "question": "Does this calculator include state tax?",
+        "answer": "No. The calculator covers federal ordinary-income brackets only, with no state tax. It also leaves out payroll tax, credits, capital gains rates and the qualified business income deduction. Add your state tax separately, and browse [all calculators](/calculators/) for other money tools."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Revenue Procedure 2025-32 (2026 inflation adjustments)",
+        "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+      },
+      {
+        "label": "IRS: Tax inflation adjustments for tax year 2026",
+        "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+      }
+    ],
+    "updated": "2026-10-21",
+    "defaultPreset": {
+      "income": 85000,
+      "status": "single",
+      "useStandard": true,
+      "itemized": 0
+    }
+  },
 ];
 
 export const CALC_BY_ID: Record<string, CalculatorDef> = Object.fromEntries(

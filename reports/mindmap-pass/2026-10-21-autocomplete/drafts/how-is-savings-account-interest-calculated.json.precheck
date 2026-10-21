@@ -1,0 +1,66 @@
+{
+  "slug": "how-is-savings-account-interest-calculated",
+  "metaTitle": "How Is Savings Account Interest Calculated? Worked Math",
+  "metaDescription": "How is savings account interest calculated? Balance x rate / 365 each day, usually paid monthly. See the math for $10,000 at 4.00% by month and by year.",
+  "h1": "How Is Savings Account Interest Calculated?",
+  "cardBlurb": "Banks multiply your balance by the annual rate divided by 365 each day, so $10,000 at 4.00% earns about $33.97 in a 31-day month and $408.08 in a year.",
+  "introText": "Banks calculate savings interest one day at a time: balance times the annual rate divided by 365, so $10,000 at 4.00% earns about $1.10 a day and $33.97 in a 31-day month. At ModernWallet, we write money guides with the math shown, so every figure on this page comes with its inputs. Knowing how savings account interest is calculated lets you rebuild a month's interest from three numbers: balance, rate and days.\n\nThe daily amounts are usually added up and paid into the account once a month. With daily compounding, each day's interest joins the balance. The same $10,000 then earns $408.08 over a year, which is a 4.08% annual percentage yield (APY).",
+  "sections": [
+    {
+      "heading": "How Banks Calculate Savings Interest",
+      "body": "Savings interest is calculated with a daily formula: daily interest = balance x annual rate / 365. For $10,000 at 4.00%, that is $10,000 x 0.04 / 365 = $1.0959, or about $1.10 for one day.\n\nThe bank repeats that calculation for every day in the period and adds the results. Over a 31-day month with no compounding inside the month, the total is $33.97. That sum is usually paid into the account once a month.\n\nCompounding sets the balance the next day's math starts from. With daily compounding, each day's interest is added to the balance, so day two earns interest on $10,001.0959 instead of $10,000. Over a full year that adds up to $408.08, compared with $400.00 if interest never compounded.\n\nTwo inputs vary by bank. One is the day-count basis, which can be 365 or 360, and the other is whether interest compounds daily or monthly.\n\nThe account disclosure states which method that account uses. Every example on this page uses a 365-day basis, a $10,000 balance, a 4.00% annual rate, and no deposits or withdrawals."
+    },
+    {
+      "heading": "Daily, Monthly and Yearly Compounding Compared",
+      "body": "Daily compounding pays the most of the three methods, but on $10,000 at 4.00% the gap over simple interest is $8.08 a year. Here are the one-year totals side by side.\n\n| Method | Interest After One Year | APY |\n| --- | --- | --- |\n| Compounded daily | $408.08 | 4.08% |\n| Compounded monthly | $407.42 | 4.07% |\n| Simple interest (no compounding) | $400.00 | 4.00% |\n\nDaily beats monthly by $0.66 a year ($408.08 - $407.42). Simple interest pays 4.00% of the original $10,000 and nothing on interest already earned. For a single year, once-a-year compounding pays the same $400.00, because interest added at year end has no time left to earn more.\n\nThe gap grows with time. Compounded daily for five years, $10,000 at 4.00% earns $2,213.89 of interest. Simple interest over the same five years would be $2,000.00 (5 x $400.00), so compounding adds $213.89.\n\nTo try other rates and time spans, use the [compound interest calculator](/investing/compound-interest-calculator/)."
+    },
+    {
+      "heading": "APR Versus APY",
+      "body": "The annual percentage rate (APR) is the stated yearly rate, and the APY is what the money earns in a year after compounding. APY is higher than APR whenever interest compounds more than once a year.\n\nThe federal APY formula sits in [Appendix A of Regulation DD](https://www.law.cornell.edu/cfr/text/12/appendix-A_to_part_1030), the Truth in Savings rule at 12 CFR (Code of Federal Regulations) Part 1030. In plain text it reads:\n\nAPY = 100 x [(1 + Interest / Principal)^(365 / Days in term) - 1]\n\nThe three inputs mean the following:\n\n- Principal: the money assumed to be deposited at the start of the account.\n- Interest: the total dollar amount of interest earned on that principal over the term.\n- Days in term: the actual number of days in the term.\n\nFor one 365-day year compounded daily, Interest / Principal = $408.08 / $10,000 = 0.040808. The exponent is 365 / 365 = 1, so APY = 100 x 0.040808 = 4.08%.\n\nRun it backward and an account quoting a 4.00% APY with daily compounding has an APR of about 3.92%. When two accounts quote the same APR, the one that compounds more often has the higher APY. Compare accounts on APY, because it folds the compounding schedule into one number."
+    },
+    {
+      "heading": "Why Interest Differs in 28, 30 and 31-Day Months",
+      "body": "Monthly interest changes because the daily formula multiplies by the number of days in the month. At $10,000 and 4.00%, with no compounding inside the month:\n\n- 28-day month: $30.68\n- 30-day month: $32.88\n- 31-day month: $33.97\n\nThe 31-day month pays $3.29 more than the 28-day month on the same balance and rate.\n\nThe day-count basis moves the number too. On a 360-day basis the daily rate is 0.04 / 360 instead of 0.04 / 365, so a 31-day month pays $34.44 instead of $33.97. That is a $0.47 difference for the same month.\n\nDeposits and withdrawals change the balance the daily formula uses, so they change the month's total. With daily compounding, each month also starts from a balance that includes earlier interest. If a month's interest looks wrong, divide it by the days in the period and compare the result to balance x rate / 365."
+    },
+    {
+      "heading": "Estimating Your Own Interest",
+      "body": "You can estimate savings interest by hand with a balance, a rate and a day count. Follow four steps:\n\n1. Convert the annual rate to a decimal: 4.00% becomes 0.04.\n2. Find one day's interest with balance x rate / 365: $10,000 x 0.04 / 365 = $1.0959.\n3. Multiply by the days in the period: $1.0959 x 31 = $33.97.\n4. For a full year, multiply the balance by the APY: $10,000 x 0.0408 = about $408, close to the exact $408.08.\n\nIf the account disclosure lists a 360-day basis, put 360 in place of 365 in step 2.\n\nHand math gets slow once you want several years or different balances. Enter your numbers in the [high-yield savings calculator](/investing/high-yield-savings-calculator/) for longer periods, or use the [CD calculator](/cd-calculator/) for a certificate of deposit (CD). If you are weighing a high-yield savings account (HYSA) against a CD, our [HYSA vs CD](/compare/hysa-vs-cd/) comparison sets the two side by side."
+    },
+    {
+      "heading": "What Interest Calculations Leave Out",
+      "body": "The interest formula produces a pre-tax figure at one fixed rate, and four things sit outside it.\n\n- Taxes: interest on savings is taxable, so the $408.08 is a before-tax number. Our guide on whether [savings and CD interest is taxable](/guides/is-savings-and-cd-interest-taxable/) covers the reporting.\n- Rate changes: every example here holds 4.00% for the whole year. If the rate changes, run the daily formula at each rate for the days it applied and add the pieces.\n- Fees: the formula has no fee term. This page does not cover any account's fees, so subtract any charge separately from the interest total.\n- Deposit insurance: [FDIC insurance](https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance) from the Federal Deposit Insurance Corporation covers deposits up to $250,000 per depositor, per insured bank, per ownership category. A balance above $250,000 in one ownership category at one bank is above that limit.\n\nTo compare rates across accounts, see our list of the [best high-yield savings accounts](/roundup/best-high-yield-savings-accounts/). Then enter your balance and rate in the high-yield savings calculator to see how savings account interest is calculated on your own numbers."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How is savings account interest calculated?",
+      "answer": "Savings interest is calculated daily as balance x annual rate / 365, then the daily amounts are added up and usually paid once a month. For $10,000 at 4.00%, one day earns about $1.10 and a 31-day month earns about $33.97."
+    },
+    {
+      "question": "Is savings interest calculated daily or monthly?",
+      "answer": "Interest is usually calculated daily and paid monthly, but compounding can be daily or monthly depending on the account. On $10,000 at 4.00% for a year, daily compounding earns $408.08 and monthly compounding earns $407.42. The account disclosure states which method applies."
+    },
+    {
+      "question": "What is the difference between APR and APY?",
+      "answer": "APR is the stated annual rate, and APY is the yearly yield after compounding. APY is higher whenever interest compounds more than once a year. A 4.00% APY with daily compounding works out to an APR of about 3.92%."
+    },
+    {
+      "question": "How much interest does $10,000 earn in a savings account?",
+      "answer": "At a 4.00% rate compounded daily, $10,000 earns $408.08 in one year and $2,213.89 over five years, with no deposits or withdrawals. Simple interest at the same rate would pay $400.00 a year. Run other rates in the [high-yield savings calculator](/investing/high-yield-savings-calculator/)."
+    },
+    {
+      "question": "Why is my interest different every month?",
+      "answer": "Monthly interest differs because the daily formula multiplies by the number of days in the month. At $10,000 and 4.00%, a 28-day month pays $30.68, a 30-day month pays $32.88 and a 31-day month pays $33.97. Balance changes and a 360-day basis also move the figure."
+    },
+    {
+      "question": "Is savings account interest taxable?",
+      "answer": "Yes, interest on savings is taxable. See our guide on whether [savings and CD interest is taxable](/guides/is-savings-and-cd-interest-taxable/) for how it is reported."
+    }
+  ],
+  "relatedLinks": [],
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}
