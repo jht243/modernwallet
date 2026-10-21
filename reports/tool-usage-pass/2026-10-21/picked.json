@@ -1,0 +1,52 @@
+[
+ {
+  "tool": "social-security-cola-calculator",
+  "path": "/social-security-cola-calculator/",
+  "people": 165,
+  "uses": 172,
+  "views": 307,
+  "use_rate": 0.56,
+  "people_7d": 165,
+  "lane": "persona"
+ },
+ {
+  "tool": "interest-per-day",
+  "path": "/interest-per-day/",
+  "people": 23,
+  "uses": 23,
+  "views": 40,
+  "use_rate": 0.575,
+  "people_7d": 17,
+  "lane": "persona"
+ },
+ {
+  "tool": "net-worth",
+  "path": "/net-worth/liquid-net-worth-calculator/",
+  "people": 19,
+  "uses": 21,
+  "views": 58,
+  "use_rate": 0.362,
+  "people_7d": 13,
+  "lane": "persona"
+ },
+ {
+  "tool": "real-estate",
+  "path": "/real-estate/capital-gains-calculator/",
+  "people": 15,
+  "uses": 15,
+  "views": 51,
+  "use_rate": 0.294,
+  "people_7d": 11,
+  "lane": "persona"
+ },
+ {
+  "tool": "auto-loan",
+  "path": "/auto-loan/amortization-schedule/",
+  "people": 12,
+  "uses": 12,
+  "views": 34,
+  "use_rate": 0.353,
+  "people_7d": 8,
+  "lane": "persona"
+ }
+]

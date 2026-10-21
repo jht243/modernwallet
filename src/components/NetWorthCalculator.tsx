@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { computeNetWorth, type NetWorthInput } from "../lib/net-worth";
 import { useDraft } from "./calc-ui";
 import { fmtUSD, fmtPct } from "../lib/format";
+import ToolPicks, { book } from "./ToolPicks";
 
 // WealthCheck island: a balance sheet that adds up assets and subtracts liabilities, with an
 // optional age benchmark from the Federal Reserve SCF (median by age).
@@ -88,6 +89,13 @@ export default function NetWorthCalculator({ initialData, heading, subheading }:
                   Cash + taxable investments ({fmtUSD(r.liquidAssets)}) minus all debts ({fmtUSD(r.totalLiabilities)}). Retirement accounts, real estate, vehicles and other assets are not counted.
                 </span>
               </div>
+              {(v.mortgage ?? 0) > 0 && r.liquidAssets != null && r.totalLiabilities != null && (
+                <div style={S.exMortgage}>
+                  <span style={S.statLabel}>Excluding the mortgage (secured by your home, which isn't counted here)</span>
+                  <span style={S.statValue}>{fmtUSD(r.liquidAssets - (r.totalLiabilities - (v.mortgage ?? 0)))}</span>
+                  <span style={S.exNote}>The headline subtracts the {fmtUSD(v.mortgage)} mortgage but leaves out the home it's borrowed against, which is why a homeowner's liquid net worth is often negative.</span>
+                </div>
+              )}
               <div style={S.statRow}>
                 <Stat label="Net worth (everything)" value={fmtUSD(r.netWorth)} />
                 <Stat label="Debt-to-asset" value={fmtPct(r.debtToAssetPct, 1)} />
@@ -136,6 +144,23 @@ export default function NetWorthCalculator({ initialData, heading, subheading }:
                 </div>
               ))}
             </div>
+          )}
+          {r.totalAssets != null && r.totalAssets > 0 && (
+            <ToolPicks
+              tool="net-worth"
+              heading="Further reading on building your net worth"
+              picks={(liquidFocus ? (r.liquidNetWorth ?? 0) < 0 : (r.netWorth ?? 0) < 0) || (r.medianNetWorthForAge != null && !r.aboveMedian)
+                ? [
+                    book("totalMoneyMakeover", "A plan for clearing the debts that pull the number down."),
+                    book("millionaireNextDoor", "Research on the habits of households that build net worth."),
+                    book("ymoyl", "How spending choices turn into the savings that grow it."),
+                  ]
+                : [
+                    book("millionaireNextDoor", "Research on households like yours and how they kept building."),
+                    book("bogleheads", "Putting the liquid money to work for the long term."),
+                    book("littleBook", "The low-cost index approach in one short read."),
+                  ]}
+            />
           )}
         </div>
       </div>
@@ -190,6 +215,8 @@ const S: Record<string, React.CSSProperties> = {
   statValue: { fontSize: "1.12rem", fontWeight: 700, fontVariantNumeric: "tabular-nums" },
   goodNote: { fontSize: "0.88rem", color: "#1f5d3f", background: "#E8F6EF", border: "1px solid #C5E6D6", borderRadius: 8, padding: "10px 12px", lineHeight: 1.5 },
   warnNote: { fontSize: "0.88rem", color: "#7a5b1e", background: "#FBF4E4", border: "1px solid #F0DEB4", borderRadius: 8, padding: "10px 12px", lineHeight: 1.5 },
+  exMortgage: { display: "flex", flexDirection: "column", gap: 2, padding: "8px 10px", background: "#F1F8F5", border: "1px solid #DCECE6", borderRadius: 8 },
+  exNote: { fontSize: "0.76rem", color: "#666", marginTop: 2 },
   benchSrc: { fontSize: "0.74rem", color: "#888", marginTop: 6 },
   bdTitle: { fontSize: "0.78rem", fontWeight: 700, color: "#2A6A58", textTransform: "uppercase", letterSpacing: "0.04em", marginBottom: 6 },
   bdRow: { display: "flex", justifyContent: "space-between", fontSize: "0.88rem", padding: "4px 0", borderBottom: "1px dashed #EAEFED" },

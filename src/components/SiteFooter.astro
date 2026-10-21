@@ -136,6 +136,11 @@ const year = 2026;
     display: grid; grid-auto-flow: column; grid-template-rows: repeat(10, auto);
     gap: 8px 48px;
   }
+  /* The calculator list (the base class alone) outgrew ten rows, so column flow added a fourth column and
+     pushed the footer 18px past a 1366px window. Three fixed columns with row flow grow downward instead. */
+  @media (min-width: 1101px) {
+    .links-grid:not(.links-grid--cmp) { grid-auto-flow: row; grid-template-rows: none; grid-template-columns: repeat(3, max-content); }
+  }
   .links-grid--cmp { grid-template-rows: repeat(5, auto); gap: 8px 36px; }
   /* A column whose link count grows must not widen the footer row: `grid-auto-flow: column`
      with a fixed row count adds columns without bound. These two groups are the ones that

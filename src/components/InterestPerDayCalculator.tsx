@@ -2,6 +2,11 @@ import { useMemo, useState } from "react";
 import { useDraft } from "./calc-ui";
 import { computeInterestPerDay, type InterestPerDayInput } from "../lib/interest-per-day";
 import { fmtUSD, fmtPct } from "../lib/format";
+import { computePerDiem, daysBetween, DAY_BASES, type DayBasis } from "../lib/per-diem-interest";
+import ToolPicks, { book } from "./ToolPicks";
+
+/** APR at or above this reads as a card or loan balance, below it as savings (book picks only). */
+const DEBT_APR_PCT = 10;
 
 // Interest-per-day island. Beyond the basic "principal x rate / 365" most day-rate tools stop at,
 // this one also surfaces the effective annual yield (APY) once that daily rate compounds daily —
@@ -25,6 +30,16 @@ export default function InterestPerDayCalculator({ initialData, heading, subhead
   const set = (patch: Partial<InterestPerDayInput>) => setInput((s) => ({ ...s, ...patch }));
 
   const hasCompoundingGain = (result.compoundingGain ?? 0) >= 0.5;
+
+  // Payoff on a date: days of unpaid interest typed directly, or counted from two dates.
+  const [payoff, setPayoff] = useState({ days: 0, from: "", to: "", basis: 365 as DayBasis });
+  const datedDays = daysBetween(payoff.from, payoff.to);
+  const days = datedDays ?? payoff.days;
+  const pd = useMemo(
+    () => computePerDiem({ principal: input.principal, annualRatePct: input.annualRatePct, dayBasis: payoff.basis, days }),
+    [input.principal, input.annualRatePct, payoff.basis, days],
+  );
+  const isDebt = input.annualRatePct >= DEBT_APR_PCT;
 
   return (
     <div style={S.wrap}>
@@ -74,9 +89,65 @@ export default function InterestPerDayCalculator({ initialData, heading, subhead
             </span>
           </div>
 
+          <div style={S.payoffBox}>
+            <span style={S.aprLabel}>Paying it off on a date?</span>
+            <div style={S.statRow}>
+              <Field label="Days of unpaid interest">
+                <input style={S.input} inputMode="numeric" value={datedDays ?? (payoff.days || "")} placeholder="0" disabled={datedDays != null}
+                  aria-label="Days of unpaid interest"
+                  onChange={(e) => setPayoff((s) => ({ ...s, days: Math.min(3660, Math.max(0, Math.round(Number(e.target.value.replace(/[^0-9]/g, "")) || 0))) }))} />
+              </Field>
+              <Field label="Day count">
+                <select style={S.input} value={payoff.basis} aria-label="Days in the interest year"
+                  onChange={(e) => setPayoff((s) => ({ ...s, basis: Number(e.target.value) as DayBasis }))}>
+                  {DAY_BASES.map((b) => <option key={b} value={b}>{b}-day year</option>)}
+                </select>
+              </Field>
+            </div>
+            <div style={S.statRow}>
+              <Field label="Or: interest paid through">
+                <input style={S.input} type="date" value={payoff.from} onChange={(e) => setPayoff((s) => ({ ...s, from: e.target.value }))} />
+              </Field>
+              <Field label="Payoff date">
+                <input style={S.input} type="date" value={payoff.to} onChange={(e) => setPayoff((s) => ({ ...s, to: e.target.value }))} />
+              </Field>
+            </div>
+            {days > 0 && input.principal > 0 ? (
+              <>
+                <div style={S.statRow}>
+                  <Stat label={`Per diem (${payoff.basis}-day year)`} value={fmtUSD(pd.perDiem, { cents: true })} />
+                  <Stat label={`Interest for ${days} day${days === 1 ? "" : "s"}`} value={fmtUSD(pd.accrued, { cents: true })} />
+                </div>
+                <div style={S.stat}>
+                  <span style={S.statLabel}>Estimated payoff amount</span>
+                  <span style={S.payoffValue}>{fmtUSD(pd.payoff, { cents: true })}</span>
+                </div>
+              </>
+            ) : (
+              <span style={S.aprNote}>Enter the days since interest was last paid (or both dates) to see the payoff amount.</span>
+            )}
+            <span style={S.aprNote}>Balance + daily interest for each unpaid day. Your lender's written payoff statement can add fees and is the figure to pay.</span>
+          </div>
+
           <div style={S.disclaimer}>
             Estimate only. Assumes a 365-day year and that interest accrues on the full balance every day (the common method for savings accounts and revolving credit). Some accounts use a 360-day count or compound monthly instead of daily — check your account's disclosure for its exact method.
           </div>
+
+          {input.principal > 0 && input.annualRatePct > 0 && (
+            <ToolPicks
+              tool="interest-per-day"
+              heading={isDebt ? "Further reading on paying down high-interest debt" : "Further reading on growing your savings"}
+              picks={isDebt
+                ? [
+                    book("totalMoneyMakeover", "A step-by-step plan to clear the balance that's costing you every day."),
+                    book("iwtytbr", "The automatic system that keeps the balance from coming back."),
+                  ]
+                : [
+                    book("iwtytbr", "Where to keep a savings balance and how to automate adding to it."),
+                    book("littleBook", "The next step once the money has outgrown a savings account."),
+                  ]}
+            />
+          )}
         </div>
       </div>
     </div>
@@ -92,15 +163,18 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
   );
 }
 function MoneyInput({ value, onChange }: { value: number; onChange: (v: number) => void }) {
+  // useDraft keeps a typed "6430." while the reader enters "6430.55" (re-rendering the parsed number dropped the point).
+  const d = useDraft(value, onChange, (v) => v.toLocaleString("en-US"));
   return (
     <div style={S.suffixWrap}>
       <span style={S.prefix}>$</span>
       <input
         style={{ ...S.input, paddingLeft: 22 }}
-        inputMode="numeric"
-        value={value === 0 ? "" : value.toLocaleString("en-US")}
+        inputMode="decimal"
+        value={d.text}
         placeholder="0"
-        onChange={(e) => onChange(e.target.value === "" ? 0 : Math.max(0, Number(e.target.value.replace(/[^0-9.]/g, ""))))}
+        onChange={(e) => d.onChange(e.target.value)}
+        onBlur={d.onBlur}
       />
     </div>
   );
@@ -163,4 +237,6 @@ const S: Record<string, React.CSSProperties> = {
   aprValue: { fontSize: "1.6rem", fontWeight: 800, letterSpacing: "-0.02em", fontVariantNumeric: "tabular-nums" },
   aprNote: { fontSize: "0.8rem", color: "#777" },
   disclaimer: { fontSize: "0.76rem", color: "#7a8783", lineHeight: 1.5, marginTop: 2 },
+  payoffBox: { borderRadius: 10, padding: "12px 14px", display: "flex", flexDirection: "column", gap: 8, border: "1px solid #E0EBE7", background: "#fff" },
+  payoffValue: { fontSize: "1.4rem", fontWeight: 800, color: PRIMARY, fontVariantNumeric: "tabular-nums" },
 };

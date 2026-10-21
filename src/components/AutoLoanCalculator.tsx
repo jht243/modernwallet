@@ -54,6 +54,10 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
   const rateDraft = useDraft(input.interestRatePct, (v) => set({ interestRatePct: v }));
 
   const set = (patch: Partial<AutoLoanInput>) => setInput((s) => ({ ...s, ...patch }));
+  // The first tax or fee entered turns "roll into the loan" on (most buyers finance them); after that the
+  // checkbox is the reader's.
+  const setTaxFees = (patch: Partial<AutoLoanInput>) =>
+    setInput((s) => ({ ...s, ...patch, includeTaxesFees: !(s.salesTaxPct || s.titleFees) ? true : s.includeTaxesFees }));
   const num = (v: string) => (v === "" ? 0 : Math.max(0, Number(v.replace(/[^0-9.]/g, ""))));
 
   const downloadScheduleCSV = () => {
@@ -175,6 +179,26 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
             )}
           </div>
 
+          {!mortgageMode && (
+            <>
+              <div style={S.row2}>
+                <Field label="Sales tax %">
+                  <PctField value={input.salesTaxPct ?? 0} onChange={(v) => setTaxFees({ salesTaxPct: v })} />
+                </Field>
+                <Field label="Title, registration & dealer fees">
+                  <MoneyInput value={input.titleFees ?? 0} onChange={(v) => setTaxFees({ titleFees: v })} />
+                </Field>
+              </div>
+              {((input.salesTaxPct ?? 0) > 0 || (input.titleFees ?? 0) > 0) && (
+                <label style={S.check}>
+                  <input type="checkbox" style={S.checkBox} checked={Boolean(input.includeTaxesFees)} onChange={(e) => set({ includeTaxesFees: e.target.checked })} />
+                  <span>Roll tax and fees into the loan (uncheck if you're paying them up front)</span>
+                </label>
+              )}
+              <p style={S.hint}>Tax is figured on the price after your trade-in, the way most states do it. Some states tax the full price — check your state's rule.</p>
+            </>
+          )}
+
           <Field label="Extra payment per month (optional)">
             <MoneyInput value={input.extraMonthlyPayment ?? 0} onChange={(v) => set({ extraMonthlyPayment: v })} />
           </Field>
@@ -214,6 +238,12 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
             </div>
           )}
 
+          {!mortgageMode && (result.taxes ?? 0) > 0 && (
+            <div style={S.statRow}>
+              <Stat label="Sales tax" value={fmtUSD(result.taxes, { cents: true })} />
+              <Stat label={input.includeTaxesFees ? "Tax + fees in the loan" : "Tax + fees paid up front"} value={fmtUSD((result.taxes ?? 0) + (input.titleFees ?? 0), { cents: true })} />
+            </div>
+          )}
           <div style={S.statRow}>
             <Stat label="Loan amount" value={fmtUSD(result.loanAmount)} />
             <Stat label="Total interest" value={fmtUSD(result.lifetimeInterest)} />
@@ -256,6 +286,22 @@ export default function AutoLoanCalculator({ initialData, heading, subheading, m
                 Download full schedule (CSV)
               </button>
             </div>
+          )}
+
+          {!mortgageMode && result.monthlyPaymentPI != null && (
+            <ToolPicks
+              tool="auto-loan"
+              heading="Further reading on paying for a car"
+              picks={hasExtra
+                ? [
+                    book("totalMoneyMakeover", "A plan for putting the extra payment toward the loan until it's gone."),
+                    book("iwtytbr", "The system around it: automatic savings so the next car is bought with less debt."),
+                  ]
+                : [
+                    book("iwtytbr", "Has a chapter on buying a car: negotiating and deciding how much car to buy."),
+                    book("ymoyl", "Weighs a payment against the hours of work it costs."),
+                  ]}
+            />
           )}
 
           {existingLoanOption && result.monthlyPaymentPI != null && (
@@ -336,6 +382,17 @@ function MoneyInput({ value, onChange }: { value: number; onChange: (v: number) 
   );
 }
 
+function PctField({ value, onChange }: { value: number; onChange: (v: number) => void }) {
+  // Shared draft helper keeps a typed "7." while the reader enters "7.25".
+  const d = useDraft(value, onChange);
+  return (
+    <div style={S.suffixWrap}>
+      <input style={S.input} inputMode="decimal" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} aria-label="Sales tax percent" />
+      <span style={S.suffix}>%</span>
+    </div>
+  );
+}
+
 function Stat({ label, value }: { label: string; value: string }) {
   return (
     <div style={S.stat}>
@@ -380,6 +437,7 @@ const S: Record<string, React.CSSProperties> = {
   statLabel: { fontSize: "0.78rem", color: "#666" },
   statValue: { fontSize: "1.15rem", fontWeight: 700, fontVariantNumeric: "tabular-nums" },
   barWrap: { marginTop: 4 },
+  hint: { fontSize: "0.8rem", color: "#666", lineHeight: 1.5, margin: 0 },
   check: { display: "flex", alignItems: "center", gap: 10, fontSize: "0.88rem", color: "#333", cursor: "pointer", minHeight: 32 },
   checkBox: { width: 20, height: 20, margin: 0, flexShrink: 0 },
   barTrack: { display: "flex", height: 10, borderRadius: 6, overflow: "hidden", background: "#EEF4F2" },

@@ -70,6 +70,8 @@ import RothVsTraditional401kCalculator from "./RothVsTraditional401kCalculator";
 import HysaVsCdCalculator from "./HysaVsCdCalculator";
 import TrumpVs529Calculator from "./TrumpVs529Calculator";
 import MortgageRecastCalculator from "./MortgageRecastCalculator";
+import DebtToIncomeCalculator from "./DebtToIncomeCalculator";
+import SocialSecurityTaxableCalculator from "./SocialSecurityTaxableCalculator";
 import FloridaAmendment3Calculator from "./FloridaAmendment3Calculator";
 import StudentLoanGarnishmentCalculator from "./StudentLoanGarnishmentCalculator";
 import TaxBracketCalculator from "./TaxBracketCalculator";
@@ -166,6 +168,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "hysa-vs-cd-calculator": HysaVsCdCalculator,
   "trump-account-vs-529-calculator": TrumpVs529Calculator,
   "mortgage-recast-calculator": MortgageRecastCalculator,
+  "debt-to-income-ratio-calculator": DebtToIncomeCalculator,
+  "social-security-taxable-benefits-calculator": SocialSecurityTaxableCalculator,
   // X-trends pass (2026-10-19): Florida Amendment 3 homestead savings (Nov 3, 2026 ballot).
   "florida-amendment-3-calculator": FloridaAmendment3Calculator,
   // X-trends pass (2026-10-20): defaulted student loan collection exposure (wage garnishment, refund and Social Security offsets).

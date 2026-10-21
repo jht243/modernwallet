@@ -1,0 +1,118 @@
+coverage_lookup: 5 candidate(s) vs 769 repo pages / 772 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 812 past-chart lines
+
+### /debt-to-income-ratio-calculator  — row 14 · create new content
+keyword: debt to income ratio calculator; what is debt to income ratio calculator; what is a good debt to income ratio calculator
+reader question (new page intent): "How to calculate debt-to-income ratio?" [PAA 5/6 how-to/what-is-good "How to calculate debt-to-income ratio?", "What is a good debt-to-income ratio?", "Is 37% a good debt-to-income ratio?"; ac 10/10]
+lookup terms: debt income ratio good   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/what-is-a-good-expense-ratio  [in sitemap · src/data/guides.ts · topic match 0.5 on ratio good]
+    title: What Is a Good Expense Ratio? Benchmarks by Fund Type
+    desc:  What is a good expense ratio? See competitive ranges by fund type, from index funds to money market funds, plus the costs the ratio leaves out.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-09-cybercab.md [table] | Vehicle as an income asset | turo passive income (70/kd0); car sharing passive income (est. 150); passive income cars (est. 50); rent out your tesla (10); PAA "Is Turo a good side hustle?", "How much money can you real
+- 2026-09-24.md [table] | 1 | **Search-gap brief, Lens 1 — literal query + demand-ladder expansion.** Zero-result nav search "is my annuity taxable" (30/mo, autocomplete-corroborated) from a visitor on `/guides/is-social-security-taxable/`. Bro
+- 2026-10-10.md [table] | Lens 2 (adjacent — post-discharge recovery). `how to rebuild credit after bankruptcy` (480, KD 18), `rebuild credit after bankruptcy` (320, KD 24), `how to rebuild credit after chapter 7` (210, KD 25), `how long does i
+- 2026-10-13-trend-lane-c.md [table] | Lens 2 (adjacent to top-10 query "custodial account vs savings account", 4 impr). Cluster: `custodial account vs trust` 110/mo KD 3 (DataForSEO measured, Autocomplete corroborated 7 completions); `custodial account or 
+- 2026-10-21-tool-usage.md [table] | 14 | Lens 2 (next tool after net-worth and auto-loan — the homeowner tallying debts and the car buyer whose lender checks the ratio). `debt to income ratio calculator` **22,200/mo KD 57** (dataforseo; Autocomplete ques
+- 2026-10-21-tool-usage.md [table] | Debt-to-income ratio | debt to income ratio calculator (22,200); what is debt to income ratio calculator (ac, saved CSV); What is a good debt-to-income ratio? (PAA); Is 37% a good debt-to-income ratio? (PAA) | coverage
+Commits naming the topic: none
+Same run overlap: none
+
+### /social-security-taxable-benefits-calculator  — row 15 · create new content
+keyword: Is my COLA taxable?; social security taxable benefits calculator; how much of my social security is taxable calculator
+reader question (new page intent): "How do I figure the taxable amount of Social Security benefits?" [PAA 3/6 how-to "How do I figure the taxable amount of Social Security benefits?", "How do I calculate my taxable Social Security benefits for 2026?"; ac 10/10]
+lookup terms: social security taxable benefit cola   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /social-security-cola-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.6 on social security cola · same format: calculator]
+    title: Social Security COLA Calculator: Your 2027 Benefit at 3.6%
+    desc:  Free Social Security COLA calculator. Enter your monthly benefit to see your 2027 amount after the 3.6% raise, plus a chart of common benefit amounts.
+- /guides/is-social-security-taxable  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.6 on social security taxable]
+    title: Is Social Security Taxable? 2026 Thresholds Explained
+    desc:  Social Security becomes taxable once combined income tops $25,000 (single) or $32,000 (married). See the IRS formula, thresholds, and how to lower it.
+- /retirement/social-security-retirement-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.6 on social security benefit · same format: calculator]
+    title: Social Security Retirement Calculator
+    desc:  Our Social Security retirement calculator shows how claiming age affects your benefit and how to add SSA income to your total retirement projection.
+- /guides/2027-social-security-cola  [in sitemap · src/data/guides.ts · topic match 0.6 on social security cola]
+    title: 2027 Social Security COLA (Cost-of-Living Adjustment) Guide
+    desc:  The 2027 Social Security COLA (cost-of-living adjustment) is 3.6%, announced October 14, 2026. See what it adds to your check and how Part B affects it.
+- /guides/2027-ssdi-cola  [in sitemap · src/data/guides.ts · topic match 0.6 on social security cola]
+    title: Social Security COLA 2027 for Disability: SSDI Up 3.6%
+    desc:  The Social Security COLA 2027 for disability is a 3.6% cost-of-living adjustment. The average disabled-worker check rises from $1,642 to $1,701 in January.
+- /guides/social-security-changes-2027  [in sitemap · src/data/guides.ts · topic match 0.6 on social security cola]
+    title: Social Security Changes 2027 Listed Next to 2026 Figures
+    desc:  Social Security changes 2027: a 3.6% COLA, a $192,300 wage base and a $25,560 earnings limit. See every 2026 vs 2027 figure in one table.
+- /guides/senior-deduction-social-security  [in sitemap · src/data/guides.ts · topic match 0.6 on social security benefit]
+    title: Social Security Tax Deduction for Seniors (2026)
+    desc:  Learn how the new Social Security tax deduction for seniors works, who qualifies for up to $6,000, and how benefits are taxed in 2026.
+- /guides/states-that-tax-social-security  [in sitemap · src/data/guides.ts · topic match 0.6 on social security benefit]
+    title: States That Tax Social Security Benefits in 2026
+    desc:  Eight states tax some Social Security in 2026. See exemptions, income thresholds, and rules for Colorado, Connecticut, Minnesota, Montana, and others.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-21-tool-usage.md [table] | 6 | Lens 1 (tool usage, social-security-cola-calculator — 165 people, top tool this week). Persona: 71-year-old retiree on a phone who knows only the $1,644 bank deposit. Walkthrough: the hint asks for "the benefit amo
+- 2026-10-21-tool-usage.md [table] | 7 | Lens 1 (tool usage, social-security-cola-calculator — same persona). The Part B field says the 2027 premium "has not been announced" and leaves the persona nothing to type. Quote: "What's my 2027 premium? It says i
+- 2026-10-21-tool-usage.md [table] | 9 | Lens C (monetize, social-security-cola-calculator). Persona has a 2027 benefit/deposit figure; next job = understand the benefit and the Medicare deduction. Verdict fit — YMYL → books. Pick types: Medicare guide, S
+- 2026-10-21-tool-usage.md [table] | 15 | Lens 2 (next tool after the COLA calculator — the same retiree asks if the raise is taxed; the COLA page's own FAQ "Is my COLA taxable?" defers to a guide). `social security taxable benefits calculator` **1,900/mo
+- 2026-10-21-tool-usage.md [table] | Taxable Social Security benefits | social security taxable benefits calculator (1,900); how much of my social security is taxable calculator (110); How do I calculate my taxable Social Security benefits for 2026? (PAA)
+- 2026-10-21-tool-usage.md [exclusions] - **Lens 3 (comparison / alternatives / pricing):** the brief's entities are calculators for federal programs and personal balance-sheet math (Social Security, Medicare, IRS rules, auto loans in general) — no vendor, pla
+Commits naming the topic: none
+Same run overlap: none
+
+### /irmaa-calculator  — row 17 · create new content
+keyword: irmaa calculator
+reader question (new page intent): "How much is my IRMAA?" [PAA 2/6 how-much "How much is my irmaa?", "What are the 2026 Irmaa brackets?"; ac 10/10]
+lookup terms: irmaa   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-21-tool-usage.md [table] | 17 | Lens 2 (next tool after the COLA calculator — the retiree whose Part B is deducted asks about the income surcharge). `irmaa calculator` 390/mo KD 6 (dataforseo). lookup: no match. Over the 3-new-tools cap (demand 
+- 2026-10-21-tool-usage.md [table] | IRMAA | irmaa calculator (390); What are the 2026 Irmaa brackets? (PAA); How to figure out magi for irmaa? (PAA) | coverage gap at theme level | none | create new content | /irmaa-calculator/ | calculator | interactive
+Commits naming the topic: none
+Same run overlap: none
+
+### /real-estate/depreciation-recapture-calculator  — row 18 · create new content
+keyword: depreciation recapture calculator; how much recapture tax will I owe?
+reader question (new page intent): "How much recapture tax will I owe?" [PAA 3/6 how-much/how-to "How do I calculate depreciation recapture?", "Is depreciation recapture always 25%?"; ac 10/10]
+lookup terms: depreciation recapture tax will owe   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-21-tool-usage.md [table] | 3 | Lens 1 (tool usage, real-estate — same persona, reading the body). The page's howItWorks states "For 2024, long-term CG rates are 0% (taxable income under ~$47,025 single / ~$94,050 married) … 20% (income above ~$5
+- 2026-10-21-tool-usage.md [table] | 12 | Lens C (monetize, real-estate). Result = an estimated federal tax on the sale incl. recapture. Verdict fit — YMYL → books. Pick types: RE-investor tax strategy, advanced RE tax planning, annual income-tax guide. |
+- 2026-10-21-tool-usage.md [table] | 18 | Lens 2 (next tool after the rental capital-gains fix — the landlord asks about recapture alone). `depreciation recapture calculator` 480/mo KD 0 (dataforseo). lookup: /real-estate/depreciation-calculator — differe
+- 2026-10-21-tool-usage.md [table] | Rental sale tax (capital gains + recapture) | capital gains tax on rental property (880); rental property capital gains calculator (110); How much capital gains will I pay on a rental property? (PAA) | intent mismatch 
+- 2026-10-21-tool-usage.md [table] | Depreciation recapture | depreciation recapture calculator (480); Is depreciation recapture always 25%? (PAA) | coverage gap — deduction calculator only | partial | create new content | /real-estate/depreciation-recapt
+- 2026-10-21-tool-usage.md [exclusions] - **Duplicate-suppression gate, attempt 1:** FAIL — row 16 (/per-diem-interest-calculator/) duplicated the reader goal of /interest-per-day/ → RECLASSIFIED to `update existing body text` on InterestPerDayCalculator.tsx (
+Commits naming the topic: none
+Same run overlap: none
+
+### /real-estate/1031-exchange-calculator  — row 19 · create new content
+keyword: 1031 exchange calculator
+reader question (new page intent): "How do you calculate gain on a 1031 exchange?" [PAA 2/6 how/is-it-better "How do you calculate gain on a 1031 exchange?", "Is it better to pay capital gains or do a 1031 exchange?"; ac 10/10]
+lookup terms: v1031 exchange   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/1031-exchange-vs-opportunity-zone  [in sitemap · src/data/comparisons.ts · topic match 1.0 on v1031 exchange]
+    title: 1031 Exchange vs Opportunity Zone: Which Cuts Your Tax?
+    desc:  1031 exchange vs opportunity zone: compare deadlines, hold periods, and which capital gains qualify to pick the right tax deferral strategy.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-30-robinhood.links-exemption.md [table] | New York Stock Exchange (NYSE) | /guides/pattern-day-trader-rule | Historical mention only (the 2001 rule origin). No NYSE URL is on the allowed list; the history is covered by the linked Investor.gov glossary and FINR
+- 2026-10-21-tool-usage.md [table] | 2 | Lens 1 (tool usage, real-estate — 15 people on /real-estate/capital-gains-calculator/). Persona: married landlord selling an 11-year rental (bought $185,000 + $4,000 closing, $15,000 roof, $310,000 offer). Walkthro
+- 2026-10-21-tool-usage.md [table] | 12 | Lens C (monetize, real-estate). Result = an estimated federal tax on the sale incl. recapture. Verdict fit — YMYL → books. Pick types: RE-investor tax strategy, advanced RE tax planning, annual income-tax guide. |
+- 2026-10-21-tool-usage.md [table] | 19 | Lens 2 (next tool after the rental capital-gains fix — the landlord weighing deferral). `1031 exchange calculator` 480/mo KD 0 (dataforseo). lookup: /compare/1031-exchange-vs-opportunity-zone — different goal (whi
+- 2026-10-21-tool-usage.md [table] | Rental sale tax (capital gains + recapture) | capital gains tax on rental property (880); rental property capital gains calculator (110); How much capital gains will I pay on a rental property? (PAA) | intent mismatch 
+- 2026-10-21-tool-usage.md [table] | 1031 exchange math | 1031 exchange calculator (480); How do you calculate gain on a 1031 exchange? (PAA) | coverage gap — comparison page only | partial | create new content | /real-estate/1031-exchange-calculator/ | c
+Commits naming the topic: none
+Same run overlap: none
+

@@ -37,6 +37,11 @@ export const BOOKS = {
   noloFirstHome: { asin: "1413332420", title: "Nolo's Essential Guide to Buying Your First Home" },
   kidMoneyGenius: { asin: "1476766819", title: "Make Your Kid a Money Genius (Even If You're Not) by Beth Kobliner" },
   moneyForCouples: { asin: "1523523689", title: "Money for Couples by Ramit Sethi" },
+  // Tool-usage pass 2026-10-21.
+  millionaireNextDoor: { asin: "1589795474", title: "The Millionaire Next Door by Thomas J. Stanley and William D. Danko" },
+  medicareGetWhatsYours: { asin: "1668031914", title: "Get What's Yours for Medicare (revised and updated) by Philip Moeller" },
+  hanTaxStrategies: { asin: "0990711765", title: "The Book on Tax Strategies for the Savvy Real Estate Investor by Amanda Han and Matthew MacFarland" },
+  hanAdvancedTax: { asin: "1947200224", title: "The Book on Advanced Tax Strategies by Amanda Han and Matthew MacFarland" },
 } as const;
 
 export function book(key: keyof typeof BOOKS, why: string): Pick {

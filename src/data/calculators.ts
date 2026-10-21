@@ -13,6 +13,7 @@ import { SELF_EMPLOYMENT_TAX_HUB, MILEAGE_DEDUCTION_HUB, FREELANCE_RATE_HUB, S_C
 export const CALCULATORS: CalculatorDef[] = [
   {
     id: "auto-loan",
+    updated: "2026-10-21",
     islandId: "auto-loan",
     label: "Auto Loan",
     navOrder: 1,
@@ -350,6 +351,7 @@ export const CALCULATORS: CalculatorDef[] = [
 
   {
     id: "net-worth",
+    updated: "2026-10-21",
     islandId: "net-worth",
     label: "Net Worth",
     navOrder: 7,
@@ -995,6 +997,7 @@ export const CALCULATORS: CalculatorDef[] = [
   {
     id: "interest-per-day",
     islandId: "interest-per-day",
+    updated: "2026-10-21",
     label: "Interest Per Day",
     navOrder: 18,
     metaTitle: "Interest Per Day Calculator: Daily Interest + APY",
@@ -1721,7 +1724,7 @@ export const CALCULATORS: CalculatorDef[] = [
       {
         question: "Is Social Security taxable?",
         answer:
-          "This calculator does not model income taxes, so every total it shows is before tax. The guide [is Social Security taxable](/guides/is-social-security-taxable/) covers when benefits are taxed.",
+          "This calculator does not model income taxes, so every total it shows is before tax. The guide [is Social Security taxable](/guides/is-social-security-taxable/) covers when benefits are taxed, and the [Social Security taxable benefits calculator](/social-security-taxable-benefits-calculator/) works out how much of yours is taxable.",
       },
     ],
     sources: [
@@ -2569,7 +2572,7 @@ export const CALCULATORS: CalculatorDef[] = [
         "url": "https://secure.ssa.gov/poms.nsf/lnx/0300601020"
       }
     ],
-    "updated": "2026-10-14",
+    "updated": "2026-10-21",
     "defaultPreset": {
       "currentBenefit": 2000,
       "partBPremium": 0
@@ -2740,6 +2743,71 @@ export const CALCULATORS: CalculatorDef[] = [
       "useStandard": true,
       "itemized": 0
     }
+  },
+  // Debt-to-Income Ratio calculator — tool-usage pass (2026-10-21). Prose generated via scripts/lib/content_gen.py
+  // (meta beside the draft in reports/mindmap-pass/2026-10-21-tool-usage/drafts/).
+  {
+    id: "debt-to-income-ratio-calculator",
+    islandId: "debt-to-income-ratio-calculator",
+    label: "Debt-to-Income Ratio",
+    navOrder: 61,
+    metaTitle: "Debt to Income Ratio Calculator: DTI vs Lender Limits",
+    metaDescription:
+      "Debt to income ratio calculator. Enter income and monthly debt payments to see your DTI, housing ratio and room before Fannie Mae's 36%, 45% and 50% limits.",
+    targetKeyword: "debt to income ratio calculator",
+    h1: "Debt-to-Income Ratio Calculator",
+    introText:
+      "Divide your monthly debt payments by your gross monthly income, then multiply by 100. The result is your debt-to-income (DTI) ratio, which the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/) defines as all your monthly debt payments divided by your gross monthly income. Enter your income and each payment in the debt to income ratio calculator below to see your DTI, your housing-only ratio and your total monthly debt payments. It also shows how much more you could pay each month before reaching the 36%, 45% and 50% limits in the [Fannie Mae Selling Guide](https://selling-guide.fanniemae.com/sel/b3-6-02/debt-income-ratios).\n\nFor example, take $6,500 of gross monthly income. Housing costs $1,650 and the auto loan costs $450. Student loans add $250 and card minimums add $120, for $2,470 a month. That is a 38.0% DTI, which is $130 over Fannie Mae's 36% limit on a manually underwritten mortgage. You still have $455 of room before the 45% line.",
+    howItWorks:
+      "The debt to income ratio calculator uses DTI = total monthly debt payments ÷ gross monthly income × 100. Your housing payment counts with taxes, insurance and homeowners association (HOA) dues included. Auto loans, student loans, credit card minimums, personal loans, child support and alimony count too. Enter the monthly minimum payment for each debt, because the balance does not go in the formula. Utilities, phone, groceries and insurance you pay on your own stay out of the total. The CFPB example adds a $1,500 mortgage, a $100 auto loan and $400 of other debts. That is $2,000 a month on $6,000 of income, which the calculator shows as 33.3%.\n\nEnter gross monthly income, which is your pay before taxes. If you want to know whether a payment fits the take-home pay that reaches your bank account, DTI will not tell you, because it uses income before taxes. Use the [budget calculator](/budget/) for that question. The calculator also returns a housing-only ratio, called the front-end ratio, which divides only the rent or mortgage payment by gross monthly income. On the example, housing alone is 25.4% while the total ratio is 38.0%.\n\nFannie Mae Selling Guide B3-6-02 caps total DTI at 36% of stable monthly income for a manually underwritten loan. That maximum can be exceeded up to 45% if you meet Fannie Mae's credit score and reserve requirements. Loans run through Desktop Underwriter (DU), Fannie Mae's automated underwriting system, can go up to 50%. The room figures use gross monthly income × the line − total monthly debt payments, and they show $0 when you are already over. On the example, room before 45% is $455. Room before 50% is $780.\n\nThese lines are Fannie Mae's limits for mortgages it buys. Meeting one does not mean a lender approves you, since every lender also weighs credit and savings. Federal Housing Administration (FHA), U.S. Department of Veterans Affairs (VA), auto and personal lenders set their own limits. A lender that counts income or debts differently, or a loan program with its own limit, would change where your number lands.\n\nPaying off a whole loan removes its full payment from the total. Clear the $450 auto loan in the example and payments fall to $2,020. DTI drops to 31.1%, with $320 of room before 36%. Raising your gross income also lowers the ratio, and avoiding new debt before you apply keeps payments from climbing. To compare rolling balances into one loan, use the [debt consolidation calculator](/debt-consolidation-calculator/), and to plan card payoff, use the [credit card payoff calculator](/credit-card-payoff/). Then test a price with the [home affordability calculator](/mortgage/home-affordability-calculator/) or the [car affordability calculator](/auto-loan/car-affordability-calculator/), and rerun the debt to income ratio calculator with the new payment.",
+    faqs: [
+      { question: "How to calculate debt-to-income ratio?", answer: "Add up your monthly debt payments, divide by your gross monthly income and multiply by 100. On $6,500 of gross income, $2,470 of payments gives a 38.0% DTI. The CFPB example of $2,000 a month on $6,000 of income comes out to 33.3%." },
+      { question: "What is a good debt-to-income ratio?", answer: "Fannie Mae sets 36% as the maximum total DTI on a manually underwritten mortgage. That can rise to 45% if you meet its credit score and reserve requirements, and to 50% through Desktop Underwriter. FHA, VA, auto and personal lenders set their own limits. A lower ratio leaves more monthly room under each line." },
+      { question: "Is 37% a good debt-to-income ratio?", answer: "A 37% DTI is over Fannie Mae's 36% limit for a manually underwritten mortgage. It is under the 45% line, which applies if you meet the credit score and reserve requirements. It is also under the 50% line for Desktop Underwriter loans. The calculator's room figures show how far you are from each line." },
+      { question: "Is 35 DTI too high?", answer: "A 35% DTI is under all three Fannie Mae lines. It sits just below the 36% maximum for a manually underwritten loan, so a small new payment could push it over. It is further under the 45% and 50% lines." },
+      { question: "What debts count in a debt-to-income ratio?", answer: "Your rent or mortgage payment counts, with taxes, insurance and HOA dues included. Auto loans, student loans, credit card minimums, personal loans, child support and alimony count too. Utilities, phone, groceries and insurance you pay on your own do not count. Enter monthly minimum payments, since balances do not go in the formula." },
+      { question: "Do lenders use gross or net income for DTI?", answer: "DTI uses gross income, your pay before taxes. Fannie Mae measures it against stable monthly income. To see whether a payment fits your take-home pay, use the [budget calculator](/budget/) instead." },
+      { question: "What is the difference between front-end and back-end DTI?", answer: "Front-end DTI counts only your housing payment. Back-end DTI, the total ratio, counts every monthly debt payment. On the example, the front-end ratio is 25.4% and the total is 38.0%. Fannie Mae's 36%, 45% and 50% lines apply to the total ratio." },
+      { question: "How can I lower my debt-to-income ratio quickly?", answer: "Pay off a whole loan to remove its payment from the total. In the example, clearing the $450 auto loan drops DTI from 38.0% to 31.1%. That leaves $320 of room before 36%. Avoid taking on new debt before you apply." },
+    ],
+    sources: [
+      { label: "CFPB: What is a debt-to-income ratio?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/" },
+      { label: "Fannie Mae Selling Guide B3-6-02: Debt-to-Income Ratios", url: "https://selling-guide.fanniemae.com/sel/b3-6-02/debt-income-ratios" },
+    ],
+    updated: "2026-10-21",
+    defaultPreset: {"grossMonthlyIncome": 6500, "housing": 1650, "auto": 450, "studentLoans": 250, "creditCards": 120, "otherDebts": 0},
+  },
+  // Taxable Social Security calculator — tool-usage pass (2026-10-21). Prose generated via scripts/lib/content_gen.py
+  // (meta beside the draft in reports/mindmap-pass/2026-10-21-tool-usage/drafts/).
+  {
+    id: "social-security-taxable-benefits-calculator",
+    islandId: "social-security-taxable-benefits-calculator",
+    label: "Taxable Social Security",
+    navOrder: 62,
+    metaTitle: "Social Security Taxable Benefits Calculator 2026",
+    metaDescription:
+      "Social Security taxable benefits calculator. Enter your benefits and other income to see provisional income, the taxable part and the 50% or 85% tier.",
+    targetKeyword: "social security taxable benefits calculator",
+    h1: "Social Security Taxable Benefits Calculator",
+    introText:
+      "You figure the taxable amount from your provisional income. Provisional income is half your Social Security benefits plus all your other income and any tax-exempt interest. Above $25,000 (single) or $32,000 (married filing jointly), up to 50% of benefits is taxable. Above $34,000 or $44,000, up to 85% is taxable. The Social Security taxable benefits calculator below returns the taxable part, your provisional income, the share of benefits taxed and which tier applies.\n\nFor example, take a married couple filing jointly with $42,000 of benefits and $30,000 of other income. Their provisional income is $51,000, and $11,950 of their benefits is taxable. That is 28.5% of the benefits.",
+    howItWorks:
+      "The calculator follows Worksheet 1 of Internal Revenue Service (IRS) Publication 915 and starts with provisional income. Provisional income is all your other income plus tax-exempt interest plus half your benefits. Other income covers pensions, individual retirement account (IRA) withdrawals, wages, interest and dividends. For benefits, enter box 5 of your Social Security Administration (SSA) statement, Form SSA-1099, with both spouses' benefits on a joint return, or 12 times your monthly benefit before Medicare. Tax-exempt interest from municipal bonds counts too. Adding $5,000 of it to the joint example below raises provisional income to $56,000. Taxable benefits then go from $11,950 to $16,200, or 38.6% of the benefits.\n\nThe calculator compares provisional income with a base amount and an upper amount for your filing status. The base amount is $25,000 if you are single, head of household, a qualifying surviving spouse, or married filing separately and lived apart all year. It is $32,000 for married filing jointly and $0 for married filing separately if you lived with your spouse at any time in the year. At or below the base amount, none of your benefits is taxable. Between the base amount and $34,000 ($44,000 joint), the taxable part is the smaller of half the benefits or half the income above the base. Above $34,000 ($44,000 joint), the taxable part is the smaller of 85% of the benefits or a second figure. That second figure is 85% of the income above the upper amount, plus the smaller of half the benefits or $4,500 ($6,000 joint).\n\nTake the joint couple with $42,000 of benefits and $30,000 of other income. Half the benefits is $21,000, so provisional income is $51,000. That is above the $44,000 joint upper amount, so the 85% tier applies. The income above $44,000 is $7,000. Taking 85% of that gives $5,950. The smaller of half the benefits or $6,000 is $6,000, and adding it brings the total to $11,950. That total is under the cap of 85% of benefits, or $35,700, so $11,950 is taxable.\n\nThe base and upper amounts are written into Title 26 of the United States Code, section 86, and are not indexed to inflation. Benefits rise with each cost-of-living adjustment (COLA) while those thresholds stay fixed, so a raise can push provisional income over a threshold and make more of your benefits taxable. Run your new benefit through the [2027 COLA calculator](/social-security-cola-calculator/), then enter the yearly amount here. This calculator covers federal tax only, and the [states that tax Social Security](/guides/states-that-tax-social-security/) guide covers state rules. The deduction for people 65 and older is also separate. It is worth up to $6,000 per person for tax years 2025 through 2028. It lowers taxable income but does not change how much of your benefits counts as taxable, as the [senior deduction guide](/guides/senior-deduction-social-security/) explains.\n\nThe calculator stops at the taxable amount and does not compute the tax you owe on it. If you want your total federal tax bill, this result is only the first step. The taxable part is added to your other income and taxed at your normal rates, and the [tax bracket calculator](/tax-bracket-calculator/) shows the rate on that amount. Married filing separately while living with your spouse has a $0 base amount, so benefits are taxable from the first dollar of provisional income. The calculator leaves out worksheet adjustments such as student loan interest, the foreign earned income exclusion and lump-sum back payments for earlier years. For returns with those items, the IRS worksheet in tax software gives the exact figure. For the full background, read [is Social Security taxable](/guides/is-social-security-taxable/), then enter your own figures in the Social Security taxable benefits calculator above.",
+    faqs: [
+      { question: "How do I figure the taxable amount of Social Security benefits?", answer: "Add half your benefits to all your other income and any tax-exempt interest to get provisional income. Above $25,000 single or $32,000 joint, up to 50% of benefits is taxable. Above $34,000 or $44,000, up to 85% is taxable. A joint couple with $42,000 of benefits and $30,000 of other income has $11,950 taxable." },
+      { question: "How do I calculate my taxable Social Security benefits for 2026?", answer: "The calculator uses the method in the 2025 edition of IRS Publication 915. Its dollar thresholds come from the tax code and are not indexed to inflation. Enter your benefits from box 5 of Form SSA-1099, or 12 times your monthly benefit before Medicare, along with your other income and tax-exempt interest. The calculator returns the taxable part and the share of benefits taxed." },
+      { question: "What is the formula for calculating the Social Security tax deduction?", answer: "The formula on this page finds the taxable part of your benefits, and it is separate from any deduction. Provisional income equals other income plus tax-exempt interest plus half your benefits. The tier rules then turn provisional income into a taxable amount. For the deduction for people 65 and older, read the [senior deduction guide](/guides/senior-deduction-social-security/)." },
+      { question: "Where can I find the worksheet for calculating taxable Social Security benefits?", answer: "The worksheet is Worksheet 1 in [IRS Publication 915](https://www.irs.gov/publications/p915). Tax software runs the same worksheet and gives the exact figure. This calculator follows Worksheet 1 but leaves out adjustments such as student loan interest and lump-sum back payments." },
+      { question: "What is the new $6000 tax break for seniors?", answer: "It is a separate deduction for people 65 and older. It is worth up to $6,000 per person for tax years 2025 through 2028. It lowers taxable income but does not change how much of your benefits counts as taxable. The [senior deduction guide](/guides/senior-deduction-social-security/) covers it in full." },
+      { question: "Does tax-exempt interest count toward provisional income?", answer: "Yes. Tax-exempt interest, such as municipal bond interest, is added into provisional income. Adding $5,000 of it to the joint example raises provisional income from $51,000 to $56,000. Taxable benefits rise from $11,950 to $16,200." },
+      { question: "Can more than 85% of my Social Security be taxed?", answer: "No. The most that can be taxable is 85% of your benefits. A single filer with $30,000 of benefits and $60,000 of other income has provisional income of $75,000. The calculator shows $25,500 taxable, which is the 85% maximum." },
+      { question: "Will my 2027 COLA make more of my benefits taxable?", answer: "It can. The thresholds are set by law and do not rise with cost-of-living adjustments (COLAs), so a raise lifts half your benefits while the thresholds stay fixed. That can push provisional income over a threshold and make more of your benefits taxable. Run the new benefit through the [COLA calculator](/social-security-cola-calculator/), then enter it here." },
+    ],
+    sources: [
+      { label: "IRS Publication 915: Social Security and Equivalent Railroad Retirement Benefits", url: "https://www.irs.gov/publications/p915" },
+    ],
+    updated: "2026-10-21",
+    defaultPreset: {"status": "mfj", "benefits": 42000, "otherIncome": 30000, "taxExemptInterest": 0},
   },
 ];
 

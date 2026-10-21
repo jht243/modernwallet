@@ -1,0 +1,674 @@
+{
+ "rows": [
+  {
+   "keyword": "social security cola calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.ssa.gov",
+    "colacalculator.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.democratandchronicle.com",
+    "www.ccu.org",
+    "www.raymondjames.com",
+    "www.statesman.com",
+    "www.ssa.gov",
+    "advisors.vanguard.com",
+    "m.economictimes.com",
+    "www.kiplinger.com",
+    "www.raymondjames.com",
+    "www.cbtn.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1
+   },
+   "paa": [
+    "How does Social Security calculate COLA?",
+    "Is it ever a good idea to take Social Security at 62?",
+    "How do I calculate how much Social Security tax I will pay?",
+    "Have there been any changes to the SSI payment date?",
+    "Are seniors going to get an extra $200 a month?",
+    "Will people who get Social Security get a stimulus check?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.ssa.gov, colacalculator.com",
+   "se_results_count": 99
+  },
+  {
+   "keyword": "interest per day calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.omnicalculator.com",
+    "www.thecalculatorsite.com",
+    "www.powerofinterest.com",
+    "www.youtube.com",
+    "www.nerdwallet.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "fiscal.treasury.gov",
+    "www.thecalculatorsite.com",
+    "www.omnicalculator.com",
+    "www.powerofinterest.com",
+    "www.calculator.net",
+    "www.seacoastbank.com",
+    "www.investor.gov",
+    "www.tateesq.com",
+    "www.lakecitybank.com",
+    "www.bankrate.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How do you calculate interest per day?",
+    "How do I calculate interest for one day?",
+    "How much is 5% interest on $10,000?",
+    "How to calculate a daily rate of interest?",
+    "How do I convert APR to daily interest?",
+    "What time is daily interest calculated?"
+   ],
+   "related_searches": [
+    "Monthly interest per day calculator",
+    "Savings interest per day calculator",
+    "Mortgage interest per day calculator",
+    "How to calculate interest rate per day",
+    "Loan interest per day calculator",
+    "Simple daily interest calculator",
+    "How to calculate interest rate per month",
+    "Interest rate calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.omnicalculator.com, www.thecalculatorsite.com, www.powerofinterest.com, www.youtube.com",
+   "se_results_count": 116
+  },
+  {
+   "keyword": "liquid net worth calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.americanexpress.com",
+    "www.nerdwallet.com",
+    "www.omnicalculator.com",
+    "www.youtube.com",
+    "www.bonsave.app",
+    "www.sofi.com",
+    "www.wsj.com",
+    "smartasset.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.goamplify.com",
+    "www.embarque.io",
+    "www.goodfinancialcents.com",
+    "wallethacks.com",
+    "www.omnicalculator.com",
+    "play.google.com",
+    "www.aol.com",
+    "www.linkedin.com",
+    "coincodex.com",
+    "www.shashatools.com"
+   ],
+   "major_domains": [
+    "play.google.com"
+   ],
+   "forum_domains": [
+    "www.linkedin.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What should my liquid net worth be?",
+    "How many retirees have a net worth of $1,000,000?",
+    "How to calculate net worth calculator?",
+    "Is $500,000 a good net worth?",
+    "What net worth is considered upper class at retirement?",
+    "What is the average 401k balance for a 65 year old?"
+   ],
+   "related_searches": [
+    "Net worth formula",
+    "Total asset calculator",
+    "What is a good net worth",
+    "Compound interest calculator",
+    "Identify the total value of your household assets I-485",
+    "Total assets formula",
+    "Tota net worth"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (play.google.com); AI Overview present, cites www.americanexpress.com, www.nerdwallet.com, www.omnicalculator.com, www.youtube.com",
+   "se_results_count": 64
+  },
+  {
+   "keyword": "rental property capital gains calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "apiexchange.com",
+    "www.1031.us",
+    "www.jrw.com",
+    "usecache.com",
+    "www.accruit.com",
+    "www.nar.realtor",
+    "www.turbotenant.com",
+    "www.rocketmortgage.com",
+    "taxstra.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How much capital gains will I pay on a rental property?",
+    "How much capital gains do I pay on $300,000?",
+    "How to avoid capital gains tax on rental property sale?",
+    "How much capital gains do I pay on $100,000?",
+    "How much capital gains would I pay on $300,000?",
+    "How much capital gains tax will I pay on $200,000?"
+   ],
+   "related_searches": [
+    "Capital gains tax calculator on sale of property",
+    "Rental property capital gains calculator california",
+    "TurboTax capital gains calculator",
+    "Property capital gains calculator 2026",
+    "Capital gains tax calculator on sale of inherited property",
+    "Federal capital gains tax calculator",
+    "Capital gains tax calculator on sale of stock",
+    "Capital gains tax calculator on sale of land"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 114
+  },
+  {
+   "keyword": "auto loan calculator with tax",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.calculator.net",
+    "www.edmunds.com",
+    "www.calbanktrust.com",
+    "cars.usnews.com",
+    "www.dinkytown.net",
+    "www.youtube.com",
+    "www.tidemarkfcu.org"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.dupaco.com",
+    "www.myfico.com",
+    "www.navyfederal.org",
+    "www.penfed.org",
+    "www.calculatorsoup.com",
+    "www.carmax.com",
+    "www.ally.com",
+    "magazine.northeast.aaa.com",
+    "www.cargurus.com",
+    "www.onlineloancalculator.org"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "Free auto loan calculator with tax",
+    "Dupaco auto loan calculator",
+    "CarMax calculator with taxes",
+    "CarMax car payment calculator",
+    "Simple car loan calculator",
+    "PenFed car loan application",
+    "My CarMax payment online",
+    "Cargurus financing calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.calculator.net, www.edmunds.com, www.calbanktrust.com, cars.usnews.com",
+   "se_results_count": 98
+  },
+  {
+   "keyword": "debt to income ratio calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.wellsfargo.com",
+    "www.bankrate.com",
+    "www.calculator.net",
+    "www.zillow.com",
+    "files.consumerfinance.gov",
+    "www.umcu.org",
+    "crosscountrymortgage.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.wellsfargo.com",
+    "www.bankrate.com",
+    "www.calculator.net",
+    "www.zillow.com",
+    "files.consumerfinance.gov",
+    "www.umcu.org",
+    "www.wellsfargo.com",
+    "www.purduefed.com",
+    "www.navyfederal.org",
+    "www.capitalres.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is a good debt-to-income ratio?",
+    "How to calculate debt-to-income ratio?",
+    "Is 37% a good debt-to-income ratio?",
+    "Is 12% a good debt-to-income ratio?",
+    "Is 35 DTI too high?",
+    "How many Americans are 100% debt free?"
+   ],
+   "related_searches": [
+    "Free debt to income ratio calculator",
+    "Debt-to-income ratio to buy a house calculator",
+    "What is a good debt-to-income ratio",
+    "Debt to income ratio calculator monthly",
+    "Debt-to-income ratio for mortgage",
+    "FHA debt-to-income ratio",
+    "How to calculate debt ratio",
+    "How to get DTI"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.wellsfargo.com, www.bankrate.com, www.calculator.net, www.zillow.com",
+   "se_results_count": 94
+  },
+  {
+   "keyword": "social security taxable benefits calculator",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.irs.gov",
+    "www.covisum.com",
+    "www.annuityadvantage.com",
+    "www.dinkytown.net",
+    "www.ssa.gov"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.thrivent.com",
+    "www.youtube.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How do I figure the taxable amount of Social Security benefits?",
+    "Will Social Security checks come early this month?",
+    "What is the new $6000 tax break for seniors?",
+    "Where can I find the worksheet for calculating taxable Social Security benefits?",
+    "How do I calculate my taxable Social Security benefits for 2026?",
+    "What is the formula for calculating the Social Security tax deduction?"
+   ],
+   "related_searches": [
+    "Social security taxable benefits calculator 2023",
+    "Calculate taxable Social Security 2025",
+    "Social Security tax calculator Excel",
+    "Federal income tax on Social Security benefits 2025",
+    "Social security benefits state tax variations",
+    "How to calculate tax withholding on Social Security benefits",
+    "Taxable Social Security benefits calculator for 2025 Excel",
+    "Social security taxed by state",
+    "How is Social Security taxed example"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "8/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.irs.gov, www.covisum.com, www.annuityadvantage.com, www.dinkytown.net",
+   "se_results_count": 163
+  },
+  {
+   "keyword": "savings rate calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.calculator.net",
+    "choosefi.com",
+    "www.bankrate.com",
+    "www.firstcitycu.org",
+    "www.nerdwallet.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.friendbank.net",
+    "www.bankofamerica.com",
+    "bell.bank",
+    "www.cnbankpa.com",
+    "www.carterbank.com",
+    "savingscalculator.nga.finra.org",
+    "www.huntington.com",
+    "landmarkcu.com",
+    "www.finder.com",
+    "i-bankonline.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How do I calculate savings?",
+    "How to save money on credit karma?",
+    "What is the rate of interest calculator?",
+    "What's the current interest rate for savings?",
+    "Is a savings account better than a CD?",
+    "Which bank gives 7% interest on savings accounts?"
+   ],
+   "related_searches": [
+    "Monthly savings rate calculator",
+    "Saving account interest calculator monthly",
+    "Savings goal calculator no interest",
+    "High-yield savings account monthly calculator",
+    "Money saving calculator weekly",
+    "Savings goal calculator bi weekly",
+    "Saving calculator compound interest",
+    "Savings calculator simple",
+    "Monthly savings interest calculator",
+    "High-yield savings account monthly interest calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.calculator.net, choosefi.com, www.bankrate.com, www.firstcitycu.org",
+   "se_results_count": 151
+  },
+  {
+   "keyword": "irmaa calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "boomerbenefits.com",
+    "unitedmedicareadvisors.com",
+    "bradandmike.com",
+    "www.healthexps.com",
+    "bufferinsurance.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "seinsurance.com",
+    "www.financewonk.com",
+    "quantcalc.app",
+    "app.onpointeriskanalyzer.com",
+    "www.healthplanconnect.org",
+    "irmaacalc.com",
+    "taxpayers.net",
+    "www.medicareinteractive.org",
+    "jonperkinsmedicare.com",
+    "secure.ssa.gov"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How much is my irmaa?",
+    "What is the Medicare Part B premium in 2026?",
+    "What are the Medicare income limits for 2027?",
+    "How to figure out magi for irmaa?",
+    "What are the 2026 Irmaa brackets?",
+    "Is Social Security included in Magi for Irmaa?"
+   ],
+   "related_searches": [
+    "Medicare irmaa calculator",
+    "Irmaa calculator 2021",
+    "IRMAA calculator 2027",
+    "IRMAA calculator 2026",
+    "IRMAA calculator 2028",
+    "Irmaa calculator california",
+    "AARP IRMAA Calculator",
+    "Irmaa calculator 2020",
+    "How to calculate MAGI for IRMAA"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites boomerbenefits.com, unitedmedicareadvisors.com, bradandmike.com, www.healthexps.com",
+   "se_results_count": 110
+  },
+  {
+   "keyword": "per diem interest calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "anytimeestimate.com",
+    "www.powerofinterest.com",
+    "www.bankrate.com",
+    "www.investopedia.com",
+    "www.rocketmortgage.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.bankrate.com",
+    "www.salliemae.com",
+    "www.bankrate.com",
+    "finred.usalearning.gov",
+    "www.aarp.org",
+    "www.guildmortgage.com",
+    "www.bankrate.com",
+    "fiscal.treasury.gov",
+    "www.usbank.com",
+    "www.transunion.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How is per diem interest calculated on a mortgage?",
+    "How much interest do I owe calculator?",
+    "Can per diem income be used for a mortgage?",
+    "What is the current free amortization schedule for a loan?",
+    "How to calculate interest for amortization schedule?",
+    "What happens if I pay an extra $200 a month on my 30 year mortgage?"
+   ],
+   "related_searches": [
+    "Per diem interest calculator mortgage",
+    "Interest only loan calculator",
+    "Monthly to weekly payment calculator",
+    "Monthly interest-only payment calculator",
+    "Accrued interest calculator",
+    "Interest only loan Calculator Excel",
+    "Interest only loan calculator with extra payments",
+    "Interest only mortgage rates"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites anytimeestimate.com, www.powerofinterest.com, www.bankrate.com, www.investopedia.com",
+   "se_results_count": 142
+  },
+  {
+   "keyword": "depreciation recapture calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "turbotax.intuit.com",
+    "www.mydepreciation.org",
+    "www.oldrepublicexchange.com",
+    "www.btcpa.net",
+    "www.mvocostseg.com",
+    "www.firstexchange.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "1031ex.com",
+    "mydepreciation.org",
+    "turbotax.intuit.com",
+    "www.oldrepublicexchange.com",
+    "www.btcpa.net",
+    "www.mvocostseg.com",
+    "grace-cap.com",
+    "cocountant.com",
+    "www.accruit.com",
+    "www.universalpacific1031.com"
+   ],
+   "major_domains": [
+    "turbotax.intuit.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How do I calculate depreciation recapture?",
+    "Is depreciation recapture always 25%?",
+    "How much recapture tax will I owe?",
+    "What are the rules for depreciation recapture in the IRS?",
+    "How do I avoid paying depreciation recapture?",
+    "What is the formula for recapture?"
+   ],
+   "related_searches": [
+    "Depreciation recapture rental property calculator",
+    "Car depreciation recapture calculator",
+    "Depreciation recapture example",
+    "Capital gains and depreciation recapture calculator",
+    "Depreciation recapture tax rate",
+    "Recapture tax calculator",
+    "How to avoid depreciation recapture",
+    "Depreciation recapture IRS"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (turbotax.intuit.com); AI Overview present, cites turbotax.intuit.com, www.mydepreciation.org, www.oldrepublicexchange.com, www.btcpa.net",
+   "se_results_count": 104
+  },
+  {
+   "keyword": "1031 exchange calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.ipx1031.com",
+    "origininvestments.com",
+    "www.deferred.com",
+    "inland-investments.com",
+    "www.1031x.com",
+    "www.1031.us",
+    "www.dinkytown.net"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "investfourmore.com",
+    "www.1031crowdfunding.com",
+    "www.cpec1031.com",
+    "realvals.com",
+    "www.exchangeright.com",
+    "exchange-x.com",
+    "www.youtube.com",
+    "moodyexchange.com",
+    "www.facebook.com",
+    "moodyexchange.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How much time do you have to make a 1031 exchange?",
+    "How do I calculate my capital gains tax?",
+    "How much capital gains tax do I pay on $500,000?",
+    "How do you calculate gain on a 1031 exchange?",
+    "Is it better to pay capital gains or do a 1031 exchange?",
+    "How much capital gains do I pay on $300,000?"
+   ],
+   "related_searches": [
+    "1031 exchange calculator real estate",
+    "1031 capital gains calculator",
+    "1031 exchange investment opportunities",
+    "1031 exchange investments",
+    "1031 exchange DST",
+    "1031 Exchange Properties For Sale",
+    "1031 exchange Specialist near me",
+    "1031 deals"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.ipx1031.com, origininvestments.com, www.deferred.com, inland-investments.com",
+   "se_results_count": 103
+  }
+ ],
+ "cost": "DataForSEO: 12 calls, $0.04965 of $2.00 budget"
+}

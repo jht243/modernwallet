@@ -2,12 +2,14 @@ import { useMemo, useState } from "react";
 import { useDraft } from "./calc-ui";
 import { computeRental, type RentalInput } from "../lib/rental";
 import { fmtUSD, fmtPct, fmtNum } from "../lib/format";
+import RentalSaleTaxPanel from "./RentalSaleTaxPanel";
 
 // RealEstateIQ island. Reads initial inputs from the `initialData` prop (the page preset).
 // Fully standalone — no external host coupling.
 
 interface Props {
-  initialData?: Partial<RentalInput>;
+  // saleTax (capital-gains page preset): adds the "Selling? Estimate the federal tax on the sale" panel.
+  initialData?: Partial<RentalInput> & { saleTax?: boolean };
   heading?: string;
   subheading?: string;
 }
@@ -36,7 +38,8 @@ const DEFAULTS: RentalInput = {
 };
 
 export default function RentalCalculator({ initialData, heading, subheading }: Props) {
-  const [input, setInput] = useState<RentalInput>({ ...DEFAULTS, ...initialData });
+  const { saleTax, ...preset } = initialData ?? {};
+  const [input, setInput] = useState<RentalInput>({ ...DEFAULTS, ...preset });
   const [showProjection, setShowProjection] = useState(false);
   const r = useMemo(() => computeRental(input), [input]);
 
@@ -120,6 +123,8 @@ export default function RentalCalculator({ initialData, heading, subheading }: P
           )}
         </div>
       </div>
+
+      {saleTax && <RentalSaleTaxPanel purchasePrice={input.purchasePrice} closingCostsPct={input.closingCostsPct ?? 0} />}
 
       {showProjection && r.projection.length > 0 && (
         <div style={S.proj}>

@@ -1,0 +1,80 @@
+{
+ "slug": "social-security-taxable-benefits-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 1216,
+ "floor": 600,
+ "input_tokens": 28307,
+ "output_tokens": 13549,
+ "thinking_tokens": null,
+ "cached_tokens": 25026,
+ "est_cost_usd": 0.2891,
+ "guards": {
+  "repairs": [
+   "slug None -> 'social-security-taxable-benefits-calculator'"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1216,
+  "numbers_not_in_facts": [
+   "21000",
+   "35700",
+   "5950",
+   "7000"
+  ],
+  "fact_budget": {
+   "fact_words": 233,
+   "floor": 600,
+   "ratio": 0.39,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    1
+   ],
+   "applied": [
+    {
+     "id": "faqs[1].answer",
+     "quote": "For 2026, the calculator uses the method in the 2025 edition of IRS Publication 915.",
+     "replacement": "The calculator uses the method in the 2025 edition of IRS Publication 915.",
+     "type": "inference",
+     "why": "SOURCE says the 2025 edition is for 2025 returns, not 2026."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "It is a separate deduction for people 65 and older.",
+     "replacement": "It is a separate deduction for people 65 and older.",
+     "type": "inference",
+     "why": "SOURCE never calls it new or a tax break; fine as separate deduction"
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1218
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 130.6,
+ "response_id": "msg_011CgFxVVfktAJScthMqkgcx",
+ "generated_at": "2026-10-21T19:48:04+0000"
+}

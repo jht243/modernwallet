@@ -10,7 +10,7 @@ import type { SpokeEntry } from "./types";
 
 export const AUTO_SPOKES: SpokeEntry[] = [
   {
-    updated: "2026-10-10",
+    updated: "2026-10-21",
     calculator: "auto-loan",
     slug: "payoff-calculator",
     title: "Auto Loan Payoff Calculator: See Your Payoff Date Fast",
@@ -91,6 +91,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
   },
 
   {
+    updated: "2026-10-21",
     calculator: "auto-loan",
     slug: "extra-payment-calculator",
     title: "Auto Loan Extra Payment Calculator: Biweekly vs Extra",
@@ -152,6 +153,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
   },
 
   {
+    updated: "2026-10-21",
     calculator: "auto-loan",
     slug: "early-payoff-calculator",
     title: "Pay Off Car Loan Early Calculator: Interest & Time Saved",
@@ -215,7 +217,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
   {
     calculator: "auto-loan",
     slug: "amortization-schedule",
-    updated: "2026-10-14",
+    updated: "2026-10-21",
     title: "Auto Loan Amortization Calculator & Schedule",
     metaDescription:
       "Free auto loan amortization calculator — like an Excel schedule — showing a year-by-year breakdown of principal, interest, and balance for your loan.",
@@ -279,6 +281,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
   },
 
   {
+    updated: "2026-10-21",
     calculator: "auto-loan",
     slug: "interest-calculator",
     title: "Auto Loan Interest Calculator: Total Interest in 2026",

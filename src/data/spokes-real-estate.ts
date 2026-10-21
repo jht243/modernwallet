@@ -467,6 +467,7 @@ export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
   {
     calculator: "real-estate",
     slug: "capital-gains-calculator",
+    updated: "2026-10-21",
     title: "Rental Property Capital Gains Calculator: Net Proceeds",
     metaDescription:
       "See exactly what you'll net after selling a rental property — capital gains tax plus the 25% depreciation recapture the IRS always collects.",
@@ -477,7 +478,7 @@ export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
     introText:
       "Selling a rental property triggers capital gains tax on the profit, along with depreciation recapture tax on every dollar of depreciation you claimed while you owned it. It's essential to understand the full tax cost before selling, in some cases, a 1031 exchange or installment sale can change the math dramatically. This page breaks down how each component is calculated, using the property in the calculator above as a worked example.",
     howItWorks:
-      "The taxable gain on a rental property sale is calculated in two layers, each taxed at a different rate.\n\nLayer 1 — Depreciation recapture: All accumulated depreciation deductions taken during ownership are recaptured and taxed at a flat 25% federal rate under IRS Section 1250 (Unrecaptured Section 1250 Gain). This applies regardless of how long you held the property.\n\nLayer 2 — Long-term capital gain: The remaining profit above the adjusted basis (after removing recaptured depreciation) is taxed at the long-term capital gains rate if you held the property for more than one year. For 2024, long-term CG rates are 0% (taxable income under ~$47,025 single / ~$94,050 married), 15% (most filers), or 20% (income above ~$518,900 single / ~$583,750 married), per IRS Publication 544.\n\nFormula: Adjusted basis = Original purchase price + capital improvements − accumulated depreciation. Gain = Sale price − selling costs − adjusted basis. Depreciation recapture = accumulated depreciation × 25%. Remaining long-term gain = (gain − accumulated depreciation) × long-term CG rate.\n\nThe non-obvious fact that catches investors off guard: depreciation recapture is unavoidable even if you never claimed the depreciation deduction. The IRS taxes depreciation that was 'allowed or allowable.' If you failed to claim it during ownership, you paid more tax than necessary each year and will still owe recapture at sale. A 1031 exchange defers all of this — both the capital gain and the depreciation recapture — into the replacement property. Selling in California? Our guide to [capital gains tax on real estate in California](/guides/capital-gains-tax-on-real-estate-california/) covers the state-level rules and withholding at closing.",
+      "The taxable gain on a rental property sale is calculated in two layers, each taxed at a different rate.\n\nLayer 1 — Depreciation recapture: All accumulated depreciation deductions taken during ownership are recaptured and taxed at a maximum 25% federal rate under IRS Section 1250 (Unrecaptured Section 1250 Gain). This applies regardless of how long you held the property.\n\nLayer 2 — Long-term capital gain: The remaining profit above the adjusted basis (after removing recaptured depreciation) is taxed at the long-term capital gains rate if you held the property for more than one year. For 2026, long-term CG rates are 0% (taxable income up to $49,450 single / $98,900 married filing jointly), 15% (most filers), or 20% (taxable income above $545,500 single / $613,700 married filing jointly), per [IRS Topic 409](https://www.irs.gov/taxtopics/tc409).\n\nFormula: Adjusted basis = Original purchase price + capital improvements − accumulated depreciation. Gain = Sale price − selling costs − adjusted basis. Depreciation recapture = accumulated depreciation × 25%. Remaining long-term gain = (gain − accumulated depreciation) × long-term CG rate.\n\nThe non-obvious fact that catches investors off guard: depreciation recapture is unavoidable even if you never claimed the depreciation deduction. The IRS taxes depreciation that was 'allowed or allowable.' If you failed to claim it during ownership, you paid more tax than necessary each year and will still owe recapture at sale. A 1031 exchange defers all of this — both the capital gain and the depreciation recapture — into the replacement property. Selling in California? Our guide to [capital gains tax on real estate in California](/guides/capital-gains-tax-on-real-estate-california/) covers the state-level rules and withholding at closing.",
     commonMistakes: [
       "Forgetting that depreciation recapture is taxed at 25%, not at the long-term capital gains rate. Many investors plan for 15% on all of their gain and are surprised by the higher rate on the recaptured amount.",
       "Assuming you can avoid depreciation recapture by not claiming depreciation. The IRS taxes recapture on amounts 'allowed or allowable,' so even if you skipped the deduction during ownership, you owe the 25% recapture tax at sale.",
@@ -491,12 +492,12 @@ export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
       {
         question: "What is the capital gains tax on a rental property sale?",
         answer:
-          "Selling a rental property triggers two types of federal tax. First, accumulated depreciation is recaptured at a flat 25% rate (IRS Unrecaptured Section 1250 Gain). Second, the remaining profit is taxed at the long-term capital gains rate — 0%, 15%, or 20% depending on your income. Most sellers pay 15% on the non-recapture portion, for a blended effective rate around 18–22%.",
+          "Selling a rental property triggers two types of federal tax. First, accumulated depreciation is recaptured at a maximum 25% rate (IRS Unrecaptured Section 1250 Gain). Second, the remaining profit is taxed at the long-term capital gains rate — 0%, 15%, or 20% depending on your income. Most sellers pay 15% on the non-recapture portion, for a blended effective rate around 18–22%.",
       },
       {
         question: "What is depreciation recapture and how is it taxed?",
         answer:
-          "Depreciation recapture is the IRS mechanism for recovering the tax benefit of depreciation deductions when you sell the property. All accumulated depreciation is taxed at a flat 25% federal rate under Section 1250 — higher than the standard 15% long-term capital gains rate most sellers pay on the remaining gain.",
+          "Depreciation recapture is the IRS mechanism for recovering the tax benefit of depreciation deductions when you sell the property. All accumulated depreciation is taxed at a maximum 25% federal rate under Section 1250 — higher than the standard 15% long-term capital gains rate most sellers pay on the remaining gain.",
       },
       {
         question: "Can I avoid depreciation recapture tax?",
@@ -530,8 +531,9 @@ export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
       },
     ],
     toolHeading: "Model your rental property's financials",
-    toolSubheading: "Enter your property details above — then use the gain formula below to estimate sale taxes.",
+    toolSubheading: "Enter your property details above — then estimate the federal tax on a sale in the panel below.",
     preset: {
+      saleTax: true,
       purchasePrice: 250000,
       downPaymentPct: 25,
       closingCostsPct: 3,

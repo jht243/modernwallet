@@ -5,6 +5,21 @@
 export interface CrossLink { href: string; label: string; }
 
 export const CROSS_LINKS: Record<string, CrossLink[]> = {
+  // Tool-usage pass (2026-10-21).
+  "debt-to-income-ratio-calculator": [
+    { href: "/mortgage/home-affordability-calculator/", label: "How much house can you afford?" },
+    { href: "/auto-loan/car-affordability-calculator/", label: "How much car can you afford?" },
+    { href: "/debt-consolidation-calculator/", label: "Would consolidating lower your payments?" },
+    { href: "/credit-card-payoff/", label: "Plan your credit card payoff" },
+    { href: "/net-worth/liquid-net-worth-calculator/", label: "What's your liquid net worth?" },
+  ],
+  "social-security-taxable-benefits-calculator": [
+    { href: "/guides/is-social-security-taxable/", label: "Is Social Security taxable? The rules explained" },
+    { href: "/social-security-cola-calculator/", label: "What will your 2027 Social Security check be?" },
+    { href: "/guides/senior-deduction-social-security/", label: "The $6,000 senior deduction" },
+    { href: "/guides/states-that-tax-social-security/", label: "States that tax Social Security" },
+    { href: "/tax-bracket-calculator/", label: "Find your 2026 tax bracket" },
+  ],
   // Self-employed / 1099 silo (2026-09-05). The three tools are a loop: what you owe, the deduction
   // that changes what you owe, and the rate that has to cover both.
   "self-employment-tax": [
@@ -117,6 +132,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/budget/", label: "See where your spending goes" },
   ],
   "social-security-cola-calculator": [
+    { href: "/social-security-taxable-benefits-calculator/", label: "How much of your Social Security is taxable?" },
     { href: "/guides/2027-social-security-cola/", label: "2027 Social Security COLA: the official 3.6% raise" },
     { href: "/guides/social-security-changes-2027/", label: "Every 2027 Social Security change" },
     { href: "/guides/2027-ssdi-cola/", label: "How much SSDI goes up in 2027" },
@@ -202,6 +218,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/business-loan-payoff/", label: "Paying down a business loan early?" },
   ],
   "auto-loan": [
+    { href: "/debt-to-income-ratio-calculator/", label: "Check your debt-to-income ratio before you apply" },
     { href: "/auto-loan/car-affordability-calculator/", label: "How much car can I afford?" },
     { href: "/budget/", label: "Does this fit your budget?" },
     { href: "/net-worth/", label: "See your full net worth" },
@@ -211,6 +228,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/should-you-get-the-discount-tire-credit-card/", label: "Financing new tires? Read this first" },
   ],
   "mortgage": [
+    { href: "/debt-to-income-ratio-calculator/", label: "How to calculate your debt-to-income ratio" },
     { href: "/commercial-mortgage-calculator/", label: "Buying commercial property? Model the balloon and DSCR" },
     { href: "/heloc-calculator/", label: "Borrowing against your equity? Model a HELOC" },
     { href: "/mortgage/home-affordability-calculator/", label: "How much house can I afford?" },
@@ -261,6 +279,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/net-worth/", label: "Track your net worth" },
   ],
   "net-worth": [
+    { href: "/debt-to-income-ratio-calculator/", label: "How to calculate your debt-to-income ratio" },
     { href: "/budget/", label: "Build a monthly budget" },
     { href: "/retirement/", label: "Are you on track to retire?" },
     { href: "/investing/", label: "Grow your money" },

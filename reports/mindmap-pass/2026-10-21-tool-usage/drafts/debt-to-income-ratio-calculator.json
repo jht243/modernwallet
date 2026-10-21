@@ -1,0 +1,41 @@
+{
+  "metaTitle": "Debt to Income Ratio Calculator: DTI vs Lender Limits",
+  "metaDescription": "Debt to income ratio calculator. Enter income and monthly debt payments to see your DTI, housing ratio and room before Fannie Mae's 36%, 45% and 50% limits.",
+  "introText": "Divide your monthly debt payments by your gross monthly income, then multiply by 100. The result is your debt-to-income (DTI) ratio, which the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/) defines as all your monthly debt payments divided by your gross monthly income. Enter your income and each payment in the debt to income ratio calculator below to see your DTI, your housing-only ratio and your total monthly debt payments. It also shows how much more you could pay each month before reaching the 36%, 45% and 50% limits in the [Fannie Mae Selling Guide](https://selling-guide.fanniemae.com/sel/b3-6-02/debt-income-ratios).\n\nFor example, take $6,500 of gross monthly income. Housing costs $1,650 and the auto loan costs $450. Student loans add $250 and card minimums add $120, for $2,470 a month. That is a 38.0% DTI, which is $130 over Fannie Mae's 36% limit on a manually underwritten mortgage. You still have $455 of room before the 45% line.",
+  "howItWorks": "The debt to income ratio calculator uses DTI = total monthly debt payments ÷ gross monthly income × 100. Your housing payment counts with taxes, insurance and homeowners association (HOA) dues included. Auto loans, student loans, credit card minimums, personal loans, child support and alimony count too. Enter the monthly minimum payment for each debt, because the balance does not go in the formula. Utilities, phone, groceries and insurance you pay on your own stay out of the total. The CFPB example adds a $1,500 mortgage, a $100 auto loan and $400 of other debts. That is $2,000 a month on $6,000 of income, which the calculator shows as 33.3%.\n\nEnter gross monthly income, which is your pay before taxes. If you want to know whether a payment fits the take-home pay that reaches your bank account, DTI will not tell you, because it uses income before taxes. Use the [budget calculator](/budget/) for that question. The calculator also returns a housing-only ratio, called the front-end ratio, which divides only the rent or mortgage payment by gross monthly income. On the example, housing alone is 25.4% while the total ratio is 38.0%.\n\nFannie Mae Selling Guide B3-6-02 caps total DTI at 36% of stable monthly income for a manually underwritten loan. That maximum can be exceeded up to 45% if you meet Fannie Mae's credit score and reserve requirements. Loans run through Desktop Underwriter (DU), Fannie Mae's automated underwriting system, can go up to 50%. The room figures use gross monthly income × the line − total monthly debt payments, and they show $0 when you are already over. On the example, room before 45% is $455. Room before 50% is $780.\n\nThese lines are Fannie Mae's limits for mortgages it buys. Meeting one does not mean a lender approves you, since every lender also weighs credit and savings. Federal Housing Administration (FHA), U.S. Department of Veterans Affairs (VA), auto and personal lenders set their own limits. A lender that counts income or debts differently, or a loan program with its own limit, would change where your number lands.\n\nPaying off a whole loan removes its full payment from the total. Clear the $450 auto loan in the example and payments fall to $2,020. DTI drops to 31.1%, with $320 of room before 36%. Raising your gross income also lowers the ratio, and avoiding new debt before you apply keeps payments from climbing. To compare rolling balances into one loan, use the [debt consolidation calculator](/debt-consolidation-calculator/), and to plan card payoff, use the [credit card payoff calculator](/credit-card-payoff/). Then test a price with the [home affordability calculator](/mortgage/home-affordability-calculator/) or the [car affordability calculator](/auto-loan/car-affordability-calculator/), and rerun the debt to income ratio calculator with the new payment.",
+  "faqs": [
+    {
+      "question": "How to calculate debt-to-income ratio?",
+      "answer": "Add up your monthly debt payments, divide by your gross monthly income and multiply by 100. On $6,500 of gross income, $2,470 of payments gives a 38.0% DTI. The CFPB example of $2,000 a month on $6,000 of income comes out to 33.3%."
+    },
+    {
+      "question": "What is a good debt-to-income ratio?",
+      "answer": "Fannie Mae sets 36% as the maximum total DTI on a manually underwritten mortgage. That can rise to 45% if you meet its credit score and reserve requirements, and to 50% through Desktop Underwriter. FHA, VA, auto and personal lenders set their own limits. A lower ratio leaves more monthly room under each line."
+    },
+    {
+      "question": "Is 37% a good debt-to-income ratio?",
+      "answer": "A 37% DTI is over Fannie Mae's 36% limit for a manually underwritten mortgage. It is under the 45% line, which applies if you meet the credit score and reserve requirements. It is also under the 50% line for Desktop Underwriter loans. The calculator's room figures show how far you are from each line."
+    },
+    {
+      "question": "Is 35 DTI too high?",
+      "answer": "A 35% DTI is under all three Fannie Mae lines. It sits just below the 36% maximum for a manually underwritten loan, so a small new payment could push it over. It is further under the 45% and 50% lines."
+    },
+    {
+      "question": "What debts count in a debt-to-income ratio?",
+      "answer": "Your rent or mortgage payment counts, with taxes, insurance and HOA dues included. Auto loans, student loans, credit card minimums, personal loans, child support and alimony count too. Utilities, phone, groceries and insurance you pay on your own do not count. Enter monthly minimum payments, since balances do not go in the formula."
+    },
+    {
+      "question": "Do lenders use gross or net income for DTI?",
+      "answer": "DTI uses gross income, your pay before taxes. Fannie Mae measures it against stable monthly income. To see whether a payment fits your take-home pay, use the [budget calculator](/budget/) instead."
+    },
+    {
+      "question": "What is the difference between front-end and back-end DTI?",
+      "answer": "Front-end DTI counts only your housing payment. Back-end DTI, the total ratio, counts every monthly debt payment. On the example, the front-end ratio is 25.4% and the total is 38.0%. Fannie Mae's 36%, 45% and 50% lines apply to the total ratio."
+    },
+    {
+      "question": "How can I lower my debt-to-income ratio quickly?",
+      "answer": "Pay off a whole loan to remove its payment from the total. In the example, clearing the $450 auto loan drops DTI from 38.0% to 31.1%. That leaves $320 of room before 36%. Avoid taking on new debt before you apply."
+    }
+  ],
+  "slug": "debt-to-income-ratio-calculator"
+}

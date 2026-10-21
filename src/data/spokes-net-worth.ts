@@ -7,6 +7,7 @@ import type { SpokeEntry } from "./types";
 
 export const NET_WORTH_SPOKES: SpokeEntry[] = [
   {
+    updated: "2026-10-21",
     calculator: "net-worth",
     slug: "how-to-calculate-net-worth",
     title: "How to Calculate Net Worth for a Person (Step-by-Step)",
@@ -50,6 +51,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
   },
 
   {
+    updated: "2026-10-21",
     calculator: "net-worth",
     slug: "net-worth-by-age-calculator",
     title: "Net Worth by Age Calculator: Compare to U.S. Median",
@@ -97,7 +99,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
   },
 
   {
-    updated: "2026-10-11",
+    updated: "2026-10-21",
     calculator: "net-worth",
     slug: "liquid-net-worth-calculator",
     title: "Free Liquid Net Worth Calculator: What Can You Spend?",
@@ -147,6 +149,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
   },
 
   {
+    updated: "2026-10-21",
     calculator: "net-worth",
     slug: "net-worth-percentile-calculator",
     title: "Net Worth Percentile Calculator — Rank vs $192K Median",
@@ -235,6 +238,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
   },
 
   {
+    updated: "2026-10-21",
     calculator: "net-worth",
     slug: "couples-net-worth-calculator",
     title: "Couples Net Worth Calculator: Track Together",
@@ -319,7 +323,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
 
   {
     calculator: "net-worth",
-    updated: "2026-09-09",
+    updated: "2026-10-21",
     slug: "net-worth-projection-calculator",
     title: "Net Worth Projection Calculator: Future Net Worth Predictor",
     metaDescription:
@@ -409,6 +413,7 @@ export const NET_WORTH_SPOKES: SpokeEntry[] = [
   // -- keyword-pass 2026-08-26: net-worth-calculator-international -- register: operator · medium: text → text ·
   // page type: explainer/spoke (1200-word floor); teeup-exempt (opening sentence is already a direct-answer claim).
   {
+    updated: "2026-10-21",
     calculator: "net-worth",
     slug: "net-worth-calculator-international",
     title: "International Net Worth Calculator: Canada, UK, Australia",

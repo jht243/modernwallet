@@ -1,0 +1,41 @@
+{
+  "metaTitle": "Social Security Taxable Benefits Calculator 2026",
+  "metaDescription": "Social Security taxable benefits calculator. Enter your benefits and other income to see provisional income, the taxable part and the 50% or 85% tier.",
+  "introText": "You figure the taxable amount from your provisional income. Provisional income is half your Social Security benefits plus all your other income and any tax-exempt interest. Above $25,000 (single) or $32,000 (married filing jointly), up to 50% of benefits is taxable. Above $34,000 or $44,000, up to 85% is taxable. The Social Security taxable benefits calculator below returns the taxable part, your provisional income, the share of benefits taxed and which tier applies.\n\nFor example, take a married couple filing jointly with $42,000 of benefits and $30,000 of other income. Their provisional income is $51,000, and $11,950 of their benefits is taxable. That is 28.5% of the benefits.",
+  "howItWorks": "The calculator follows Worksheet 1 of Internal Revenue Service (IRS) Publication 915 and starts with provisional income. Provisional income is all your other income plus tax-exempt interest plus half your benefits. Other income covers pensions, individual retirement account (IRA) withdrawals, wages, interest and dividends. For benefits, enter box 5 of your Social Security Administration (SSA) statement, Form SSA-1099, with both spouses' benefits on a joint return, or 12 times your monthly benefit before Medicare. Tax-exempt interest from municipal bonds counts too. Adding $5,000 of it to the joint example below raises provisional income to $56,000. Taxable benefits then go from $11,950 to $16,200, or 38.6% of the benefits.\n\nThe calculator compares provisional income with a base amount and an upper amount for your filing status. The base amount is $25,000 if you are single, head of household, a qualifying surviving spouse, or married filing separately and lived apart all year. It is $32,000 for married filing jointly and $0 for married filing separately if you lived with your spouse at any time in the year. At or below the base amount, none of your benefits is taxable. Between the base amount and $34,000 ($44,000 joint), the taxable part is the smaller of half the benefits or half the income above the base. Above $34,000 ($44,000 joint), the taxable part is the smaller of 85% of the benefits or a second figure. That second figure is 85% of the income above the upper amount, plus the smaller of half the benefits or $4,500 ($6,000 joint).\n\nTake the joint couple with $42,000 of benefits and $30,000 of other income. Half the benefits is $21,000, so provisional income is $51,000. That is above the $44,000 joint upper amount, so the 85% tier applies. The income above $44,000 is $7,000. Taking 85% of that gives $5,950. The smaller of half the benefits or $6,000 is $6,000, and adding it brings the total to $11,950. That total is under the cap of 85% of benefits, or $35,700, so $11,950 is taxable.\n\nThe base and upper amounts are written into Title 26 of the United States Code, section 86, and are not indexed to inflation. Benefits rise with each cost-of-living adjustment (COLA) while those thresholds stay fixed, so a raise can push provisional income over a threshold and make more of your benefits taxable. Run your new benefit through the [2027 COLA calculator](/social-security-cola-calculator/), then enter the yearly amount here. This calculator covers federal tax only, and the [states that tax Social Security](/guides/states-that-tax-social-security/) guide covers state rules. The deduction for people 65 and older is also separate. It is worth up to $6,000 per person for tax years 2025 through 2028. It lowers taxable income but does not change how much of your benefits counts as taxable, as the [senior deduction guide](/guides/senior-deduction-social-security/) explains.\n\nThe calculator stops at the taxable amount and does not compute the tax you owe on it. If you want your total federal tax bill, this result is only the first step. The taxable part is added to your other income and taxed at your normal rates, and the [tax bracket calculator](/tax-bracket-calculator/) shows the rate on that amount. Married filing separately while living with your spouse has a $0 base amount, so benefits are taxable from the first dollar of provisional income. The calculator leaves out worksheet adjustments such as student loan interest, the foreign earned income exclusion and lump-sum back payments for earlier years. For returns with those items, the IRS worksheet in tax software gives the exact figure. For the full background, read [is Social Security taxable](/guides/is-social-security-taxable/), then enter your own figures in the Social Security taxable benefits calculator above.",
+  "faqs": [
+    {
+      "question": "How do I figure the taxable amount of Social Security benefits?",
+      "answer": "Add half your benefits to all your other income and any tax-exempt interest to get provisional income. Above $25,000 single or $32,000 joint, up to 50% of benefits is taxable. Above $34,000 or $44,000, up to 85% is taxable. A joint couple with $42,000 of benefits and $30,000 of other income has $11,950 taxable."
+    },
+    {
+      "question": "How do I calculate my taxable Social Security benefits for 2026?",
+      "answer": "For 2026, the calculator uses the method in the 2025 edition of IRS Publication 915. Its dollar thresholds come from the tax code and are not indexed to inflation. Enter your benefits from box 5 of Form SSA-1099, or 12 times your monthly benefit before Medicare, along with your other income and tax-exempt interest. The calculator returns the taxable part and the share of benefits taxed."
+    },
+    {
+      "question": "What is the formula for calculating the Social Security tax deduction?",
+      "answer": "The formula on this page finds the taxable part of your benefits, and it is separate from any deduction. Provisional income equals other income plus tax-exempt interest plus half your benefits. The tier rules then turn provisional income into a taxable amount. For the deduction for people 65 and older, read the [senior deduction guide](/guides/senior-deduction-social-security/)."
+    },
+    {
+      "question": "Where can I find the worksheet for calculating taxable Social Security benefits?",
+      "answer": "The worksheet is Worksheet 1 in [IRS Publication 915](https://www.irs.gov/publications/p915). Tax software runs the same worksheet and gives the exact figure. This calculator follows Worksheet 1 but leaves out adjustments such as student loan interest and lump-sum back payments."
+    },
+    {
+      "question": "What is the new $6000 tax break for seniors?",
+      "answer": "It is a separate deduction for people 65 and older. It is worth up to $6,000 per person for tax years 2025 through 2028. It lowers taxable income but does not change how much of your benefits counts as taxable. The [senior deduction guide](/guides/senior-deduction-social-security/) covers it in full."
+    },
+    {
+      "question": "Does tax-exempt interest count toward provisional income?",
+      "answer": "Yes. Tax-exempt interest, such as municipal bond interest, is added into provisional income. Adding $5,000 of it to the joint example raises provisional income from $51,000 to $56,000. Taxable benefits rise from $11,950 to $16,200."
+    },
+    {
+      "question": "Can more than 85% of my Social Security be taxed?",
+      "answer": "No. The most that can be taxable is 85% of your benefits. A single filer with $30,000 of benefits and $60,000 of other income has provisional income of $75,000. The calculator shows $25,500 taxable, which is the 85% maximum."
+    },
+    {
+      "question": "Will my 2027 COLA make more of my benefits taxable?",
+      "answer": "It can. The thresholds are set by law and do not rise with cost-of-living adjustments (COLAs), so a raise lifts half your benefits while the thresholds stay fixed. That can push provisional income over a threshold and make more of your benefits taxable. Run the new benefit through the [COLA calculator](/social-security-cola-calculator/), then enter it here."
+    }
+  ],
+  "slug": "social-security-taxable-benefits-calculator"
+}
