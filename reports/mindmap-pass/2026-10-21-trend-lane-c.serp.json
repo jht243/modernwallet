@@ -1,0 +1,224 @@
+{
+ "rows": [
+  {
+   "keyword": "online living will",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.businessinsider.com",
+    "www.legalzoom.com",
+    "www.riluslaw.com",
+    "www.facebook.com",
+    "www.financestrategists.com",
+    "www.rocketlawyer.com",
+    "www.illinoislegalaid.org",
+    "smartasset.com",
+    "debruinlawfirm.com",
+    "www.pdfrun.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Is it a good idea to make a will online?",
+    "What is the biggest mistake with wills?",
+    "How much does it cost to get a living will?",
+    "How to draft a will?",
+    "What should you not put in a will?",
+    "Can I just write a will on a piece of paper?"
+   ],
+   "related_searches": [
+    "Online living will template",
+    "Online living will free",
+    "Best online living will",
+    "Best online will maker Consumer Reports",
+    "Wirecutter best online will",
+    "Best online will maker reddit",
+    "Living will without an attorney",
+    "Best free online will maker"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 118
+  },
+  {
+   "keyword": "best jumbo mortgage lenders",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "khowardmortgageteam.com",
+    "www.wellsfargo.com",
+    "www.cohenfinancialgroup.com",
+    "homelendingadvisor.chase.com",
+    "money.usnews.com",
+    "championsmortgageteam.com",
+    "www.biglawinvestor.com",
+    "www.forbes.com",
+    "www.forbes.com",
+    "www.biglawinvestor.com"
+   ],
+   "major_domains": [
+    "www.forbes.com",
+    "www.forbes.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Who are the top 10 mortgage lenders in the US?",
+    "Does jumbo loans have PMI?",
+    "What are the current home loan interest rates?",
+    "Which bank is the best for mortgages?",
+    "Who is the most reputable mortgage lender?",
+    "What is a red flag in a mortgage?"
+   ],
+   "related_searches": [
+    "Best jumbo mortgage lenders in california",
+    "Best jumbo loan rates",
+    "U.S. Bank jumbo mortgage rates",
+    "Wells Fargo jumbo loan rates",
+    "What is a jumbo loan",
+    "Jumbo loan vs conventional",
+    "Super jumbo loan",
+    "Jumbo loan limit 2026",
+    "Best mortgage lenders for first-time buyers",
+    "Rocket Mortgage",
+    "Top online mortgage lenders",
+    "Best online mortgage lenders for refinancing"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "2/10 major platforms (www.forbes.com, www.forbes.com); AI Overview present",
+   "se_results_count": 123
+  },
+  {
+   "keyword": "custodial account vs roth ira for kids",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "meetfabric.com",
+    "www.fidelity.com",
+    "www.nerdwallet.com",
+    "lifescapes.wellsfargoadvisors.com",
+    "www.kidvestors.co"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.experian.com",
+    "wiserinvestor.com",
+    "carry.com",
+    "www.perstirling.com",
+    "kahnlitwin.com",
+    "www.youtube.com",
+    "wiserinvestor.com",
+    "finance.yahoo.com",
+    "halfmore.co"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "people_also_search": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What's the best way to invest $10,000 for a child?",
+    "Is it better to have an IRA or a brokerage account?",
+    "Should I open a Roth IRA for my child?",
+    "Do my kids have to pay taxes on my Roth IRA?",
+    "How do I prove my child's earned income for Roth IRA?",
+    "How much will $10,000 make in a Roth IRA?"
+   ],
+   "related_searches": [
+    "Custodial account vs roth ira for kids reddit",
+    "Custodial account vs roth ira for kids taxes",
+    "Custodial account vs roth ira for kids fidelity",
+    "Roth IRA for child with no income",
+    "Custodial Roth IRA",
+    "Can you open an IRA for a child with no income",
+    "Custodial Roth IRA for child",
+    "Custodial IRA for child"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; AI Overview present, cites meetfabric.com, www.fidelity.com, www.nerdwallet.com, lifescapes.wellsfargoadvisors.com",
+   "se_results_count": 114
+  },
+  {
+   "keyword": "do online wills hold up in court",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "preserveyourestate.net",
+    "nysba.org",
+    "www.herzoglaw.com",
+    "gpschoemakers.com",
+    "joselorenzolaw.com",
+    "www.avvo.com",
+    "www.harmony-law.com",
+    "www.policygenius.com",
+    "safewill.com",
+    "woodsandbates.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "Is it better to do a will online or with a lawyer?",
+    "Can you trust online wills?",
+    "What to never put in your will?",
+    "How long after death can a will be enforced?",
+    "Does every beneficiary get a copy of the will?",
+    "What is the 40 day rule after someone dies?"
+   ],
+   "related_searches": [
+    "Do online wills hold up in court reddit",
+    "How long do online wills hold up in court",
+    "Do online wills hold up in court in texas",
+    "Trust and will",
+    "Is trust and will legit",
+    "Best online will maker",
+    "Trust and Will reviews",
+    "Legal Zoom"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "AI Overview present",
+   "se_results_count": 111
+  }
+ ],
+ "cost": "DataForSEO: 4 calls, $0.01660 of $2.00 budget"
+}
