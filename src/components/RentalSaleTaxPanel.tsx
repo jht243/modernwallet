@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { Field, MoneyInput, PctInput, NumInput, Stat, S as UI } from "./calc-ui";
-import { computeSaleTax, estimateDepreciation, LTCG_TOPS_2026, type SaleFilingStatus } from "../lib/rental-sale-tax";
+import { computeSaleTax, estimateDepreciation, LTCG_TOPS_2026, NIIT_THRESHOLD, type SaleFilingStatus } from "../lib/rental-sale-tax";
 import { fmtUSD } from "../lib/format";
 import ToolPicks, { book } from "./ToolPicks";
 
@@ -16,7 +16,7 @@ interface Props {
 export default function RentalSaleTaxPanel({ purchasePrice, closingCostsPct }: Props) {
   const [v, setV] = useState({
     salePrice: 0,
-    sellingCostsPct: 6,
+    sellingCostsPct: 6, // editable starting value, not a standard commission
     improvements: 0,
     depreciation: 0,
     status: "mfj" as SaleFilingStatus,
@@ -25,7 +25,7 @@ export default function RentalSaleTaxPanel({ purchasePrice, closingCostsPct }: P
     price: null as number | null,
     closing: null as number | null,
   });
-  const [est, setEst] = useState({ landPct: 20, years: 0 });
+  const [est, setEst] = useState({ landPct: 20, years: 0 }); // land % is an editable starting value; use your county assessment
   const set = (p: Partial<typeof v>) => setV((s) => ({ ...s, ...p }));
 
   const price = v.price ?? purchasePrice;
@@ -116,7 +116,7 @@ export default function RentalSaleTaxPanel({ purchasePrice, closingCostsPct }: P
               </div>
               {r.niitMayApply && (
                 <div style={{ ...UI.aprBox, ...UI.aprWarn }}>
-                  <span style={UI.aprNote}>Your income plus the gain is above {v.status === "mfj" ? "$250,000" : "$200,000"}, so the 3.8% net investment income tax may also apply (IRS Topic 559). It is not included above.</span>
+                  <span style={UI.aprNote}>Your income plus the gain is above {fmtUSD(NIIT_THRESHOLD[v.status])}, so the 3.8% net investment income tax may also apply (IRS Topic 559). It is not included above.</span>
                 </div>
               )}
             </>
@@ -124,20 +124,22 @@ export default function RentalSaleTaxPanel({ purchasePrice, closingCostsPct }: P
           <div style={UI.disclaimer}>
             Estimate only. The depreciation part is shown at its 25% maximum rate; it is taxed lower if your ordinary bracket is under 25%. Not included: state tax, the 3.8% NIIT, a 1031 exchange or installment sale. Have a tax professional confirm the numbers before you sign.
           </div>
-          <ToolPicks
-            tool="real-estate"
-            heading="Further reading on taxes when you sell a rental"
-            picks={hasSale && r.recaptureGain > 0
-              ? [
-                  book("hanTaxStrategies", "How depreciation recapture and 1031 deferral work, from two real-estate CPAs."),
-                  book("hanAdvancedTax", "Planning moves for a large gain: exchanges, cost segregation, timing."),
-                  book("lasser2027", "How the sale is reported on Form 4797 and Schedule D."),
-                ]
-              : [
-                  book("hanTaxStrategies", "The deductions and depreciation that shape the tax when you sell."),
-                  book("lasser2027", "How a rental sale is reported on your return."),
-                ]}
-          />
+          {hasSale && r.gain > 0 && (
+            <ToolPicks
+              tool="real-estate"
+              heading="Further reading on taxes when you sell a rental"
+              picks={r.recaptureGain > 0
+                ? [
+                    book("hanTaxStrategies", "How depreciation recapture and 1031 deferral work, from two real-estate CPAs."),
+                    book("hanAdvancedTax", "Planning moves for a large gain: exchanges, cost segregation, timing."),
+                    book("lasser2027", "How the sale is reported on Form 4797 and Schedule D."),
+                  ]
+                : [
+                    book("hanTaxStrategies", "The deductions and depreciation that shape the tax when you sell."),
+                    book("lasser2027", "How a rental sale is reported on your return."),
+                  ]}
+            />
+          )}
         </div>
       </div>
     </div>

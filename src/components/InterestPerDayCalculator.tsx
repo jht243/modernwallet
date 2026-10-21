@@ -130,7 +130,7 @@ export default function InterestPerDayCalculator({ initialData, heading, subhead
           </div>
 
           <div style={S.disclaimer}>
-            Estimate only. Assumes a 365-day year and that interest accrues on the full balance every day (the common method for savings accounts and revolving credit). Some accounts use a 360-day count or compound monthly instead of daily — check your account's disclosure for its exact method.
+            Estimate only. Assumes a 365-day year (the payoff box above lets you pick 360) and that interest accrues on the full balance every day (the common method for savings accounts and revolving credit). Some accounts use a 360-day count or compound monthly instead of daily — check your account's disclosure for its exact method.
           </div>
 
           {input.principal > 0 && input.annualRatePct > 0 && (
