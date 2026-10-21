@@ -1,0 +1,13 @@
+## Live verification
+- https://www.themodernwallet.com/auto-loan/amortization-schedule/ — 200
+- https://www.themodernwallet.com/debt-to-income-ratio-calculator/ — 200
+- https://www.themodernwallet.com/interest-per-day/ — 200
+- https://www.themodernwallet.com/net-worth/liquid-net-worth-calculator/ — 200
+- https://www.themodernwallet.com/real-estate/capital-gains-calculator/ — 200
+- https://www.themodernwallet.com/social-security-cola-calculator/ — 200
+- https://www.themodernwallet.com/social-security-taxable-benefits-calculator/ — 200
+- https://www.themodernwallet.com/social-security-cola-calculator/ — affiliate picks: OK (data-tool-picks="social-security-cola-calculator", tag soulcircle01-20, 4 pinned ASINs)
+- https://www.themodernwallet.com/interest-per-day/ — affiliate picks: OK (data-tool-picks="interest-per-day", tag soulcircle01-20, 3 pinned ASINs)
+- https://www.themodernwallet.com/net-worth/liquid-net-worth-calculator/ — affiliate picks: OK (data-tool-picks="liquid-net-worth-calculator", tag soulcircle01-20, 5 pinned ASINs)
+- https://www.themodernwallet.com/real-estate/capital-gains-calculator/ — affiliate picks: OK (data-tool-picks="capital-gains-calculator", tag soulcircle01-20, 3 pinned ASINs)
+- https://www.themodernwallet.com/auto-loan/amortization-schedule/ — affiliate picks: OK (data-tool-picks="amortization-schedule", tag soulcircle01-20, 3 pinned ASINs)
