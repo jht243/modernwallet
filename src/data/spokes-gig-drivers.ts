@@ -30,7 +30,7 @@ export const GIG_DRIVER_SPOKES: SpokeEntry[] = [
     updated: "2026-09-05",
     title: "DoorDash Taxes: What Dashers Owe in 2026",
     metaDescription:
-      "How DoorDash taxes work in 2026: the 1099-NEC threshold rose to $2,000, mileage is your biggest deduction, and most part-time Dashers owe self-employment tax only.",
+      "DoorDash taxes in 2026: the 1099-NEC threshold rose to $2,000, mileage is your biggest deduction, and most part-time Dashers owe SE tax only.",
     targetKeyword: "DoorDash taxes",
     estimatedVolume: 2400,
     estimatedKD: 37,

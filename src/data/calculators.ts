@@ -976,7 +976,7 @@ export const CALCULATORS: CalculatorDef[] = [
       {
         question: "Does this calculator work outside the United States?",
         answer:
-          "The calculator itself is set up in U.S. dollars, but the amortization math behind it works the same in any currency. It spreads a loan amount over a term at a fixed rate to solve for a level payment. Enter your own loan amount, rate, and term in your local currency and the same formula still applies. The rate itself gets quoted differently by country, though, and that difference matters more than the math does. Many countries outside the U.S. quote personal loan rates as a flat or reducing-balance rate instead of an APR, which changes what the quoted number actually means. See our [flat vs. reducing rate calculator](/personal-loan/flat-vs-reducing-rate-calculator/) to convert between the two and see the true cost either way.",
+          "The calculator itself is set up in U.S. dollars, but the amortization math behind it works the same in any currency. It spreads a loan amount over a term at a fixed rate to solve for a level payment. Enter your own loan amount, rate, and term in your local currency and the same formula still applies. The rate itself gets quoted differently by country, though, and that difference matters more than the math does. Many countries outside the U.S. quote personal loan rates as a flat or reducing-balance rate instead of an APR, which changes what the quoted number actually means. Check which convention your lender uses before comparing offers, because a flat rate understates the true cost against an APR.",
       },
     ],
     sources: [

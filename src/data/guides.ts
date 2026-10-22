@@ -1256,7 +1256,7 @@ export const GUIDES: Guide[] = [
     "metaDescription": "Learn 401(k) loan rules, borrowing limits up to $50,000, 5-year repayment terms, and tax consequences if a plan loan is treated as a distribution.",
     "h1": "401(k) Loan Rules: Limits, Repayment Terms, and Tax Consequences",
     "cardBlurb": "How a 401(k) loan works: the borrowing limit, the 5-year repayment rule, and what happens when a plan loan is not repaid.",
-    "introText": "A 401(k) loan allows you to borrow money from your own vested retirement balance if your employer's plan permits loans, up to the lesser of $50,000 (less any higher loan balance you carried in the past year) or the greater of $10,000 or half your vested balance.\n\nA loan from a qualified employer plan is treated as a distribution under [26 U.S.C. § 72(p)(1)(A)](https://www.law.cornell.edu/uscode/text/26/72) unless it stays within the amount limit, is repaid within 5 years (longer if it buys your main home), and is repaid in substantially level payments at least quarterly.\n\nTo see how a permanent withdrawal works, read [How to Withdraw From a 401(k)](/guides/how-to-withdraw-from-401k/) or try the [401(k) early withdrawal calculator](/401k-early-withdrawal-calculator/).",
+    "introText": "A 401(k) loan allows you to borrow money from your own vested retirement balance if your employer's plan permits loans, up to the lesser of $50,000 (less any higher loan balance you carried in the past year) or the greater of $10,000 or half your vested balance.\n\nA loan from a qualified employer plan is treated as a distribution under [26 U.S.C. § 72(p)(1)(A)](https://www.law.cornell.edu/uscode/text/26/72) unless it stays within the amount limit, is repaid within 5 years (longer if it buys your main home), and is repaid in substantially level payments at least quarterly.\n\nTo see how a permanent withdrawal works, read [How to Withdraw From a 401(k)](/guides/how-to-withdraw-from-401k/) or try the [401(k) early withdrawal calculator](/retirement/401k-early-withdrawal-calculator/).",
     "sections": [
       {
         "heading": "How a 401(k) Loan Works and How Much You Can Borrow",
@@ -1285,7 +1285,7 @@ export const GUIDES: Guide[] = [
     ],
     "tools": [
       {
-        "href": "/401k-early-withdrawal-calculator/",
+        "href": "/retirement/401k-early-withdrawal-calculator/",
         "label": "401(k) early withdrawal calculator"
       }
     ],
@@ -6179,7 +6179,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "heading": "Social Security Timing and the Bridge Years",
-        "body": "Social Security retirement benefits cannot start at 60. The earliest claiming age is 62, so a plan to stop working at 60 needs another source of income for at least the first two years. The [Social Security Administration's early-claiming rules](https://www.ssa.gov/benefits/retirement/planner/agereduction.html) also show that claiming before full retirement age permanently reduces the monthly benefit. Do not use a later-age benefit estimate to fill a budget gap that begins at 62.\n\nYou can also plan to claim after full retirement age. The Social Security Administration explains that [delaying benefits up to age 70](https://www.ssa.gov/benefits/retirement/planner/delayret.html) increases the monthly amount. A later claim means drawing on savings or earning income for longer, so compare the higher benefit with the extra bridge years it requires.\n\nBuild one annual income line for each year from 60 through your intended claiming age. Enter zero for Social Security before that age. Then enter the benefit estimate for the age you chose, rather than applying one amount across the whole plan. Try an earlier and a later claim using a [Social Security retirement calculator](/calculators/social-security-retirement-calculator/). The question is whether you can fund the waiting years without leaving too little invested for the years that follow."
+        "body": "Social Security retirement benefits cannot start at 60. The earliest claiming age is 62, so a plan to stop working at 60 needs another source of income for at least the first two years. The [Social Security Administration's early-claiming rules](https://www.ssa.gov/benefits/retirement/planner/agereduction.html) also show that claiming before full retirement age permanently reduces the monthly benefit. Do not use a later-age benefit estimate to fill a budget gap that begins at 62.\n\nYou can also plan to claim after full retirement age. The Social Security Administration explains that [delaying benefits up to age 70](https://www.ssa.gov/benefits/retirement/planner/delayret.html) increases the monthly amount. A later claim means drawing on savings or earning income for longer, so compare the higher benefit with the extra bridge years it requires.\n\nBuild one annual income line for each year from 60 through your intended claiming age. Enter zero for Social Security before that age. Then enter the benefit estimate for the age you chose, rather than applying one amount across the whole plan. Try an earlier and a later claim using a [Social Security retirement calculator](/retirement/social-security-retirement-calculator/). The question is whether you can fund the waiting years without leaving too little invested for the years that follow."
       },
       {
         "heading": "Withdrawal Order and Taxes",
@@ -6200,7 +6200,7 @@ export const GUIDES: Guide[] = [
     ],
     "tools": [
       {
-        "href": "/calculators/social-security-retirement-calculator/",
+        "href": "/retirement/social-security-retirement-calculator/",
         "label": "Social Security retirement calculator"
       }
     ],
@@ -8750,7 +8750,7 @@ export const GUIDES: Guide[] = [
   {
     slug: "how-to-open-a-trump-account",
     title: "How to Open a Trump Account: Step-by-Step Guide",
-    metaDescription: "Learn how to open a Trump Account in minutes at TrumpAccounts.gov. Step-by-step: gather documents, claim or open the account, and fund your child's account safely.",
+    metaDescription: "How to open a Trump Account at TrumpAccounts.gov: gather documents, claim or open the account, and fund your child's account safely.",
     h1: "How to Open a Trump Account: A Step-by-Step Guide",
     cardBlurb: "The step-by-step path to opening your child's Trump Account — the official site, documents, trustees, and funding.",
     introText: "Learning how to open a Trump Account takes just a few minutes online. You can open one at TrumpAccounts.gov or through the official Trump Accounts app using your child's basic details. This guide walks you through every step, from gathering documents and choosing a trustee to funding the account.\n\nBefore you begin, it helps to understand [what a Trump Account is](/guides/trump-accounts/): a tax-deferred savings account for kids created by the 2025 One Big Beautiful Bill. If you want to model growth first, try our [Trump Account calculator](/trump-account/).",
@@ -18129,7 +18129,7 @@ export const GUIDES: Guide[] = [
     updated: "2026-09-18",
     title: "Is Danelfin Worth It? Pricing, AI Score, and Verdict",
     metaDescription:
-      "Danelfin is worth it for swing traders who want explainable stock scores, but not for day traders or index investors. See pricing, backtest data, and the verdict.",
+      "Danelfin suits swing traders who want explainable stock scores, not day traders or index investors. See pricing, backtest data, and the verdict.",
     h1: "Is Danelfin Worth It for Your Stock Research?",
     cardBlurb: "A practical breakdown of Danelfin AI Score mechanics, published backtests, subscription costs, and ideal trading styles.",
     introText:
