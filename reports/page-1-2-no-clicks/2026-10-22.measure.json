@@ -1,0 +1,36 @@
+{
+  "status": "OK",
+  "results": [
+    {
+      "page": "https://www.themodernwallet.com/guides/trump-account-alternatives",
+      "treated": "2026-10-08",
+      "age_days": 14,
+      "final": false,
+      "verdict": "NO_DATA",
+      "lane": "RANK",
+      "clicks_d": [
+        0.0,
+        0.0
+      ],
+      "ctr": [
+        0.0,
+        0.0
+      ],
+      "impressions_d": [
+        2.5,
+        0.0
+      ],
+      "site_ratio": {
+        "clicks_d": 0.205,
+        "ctr": 2.929
+      },
+      "main_query": "alternatives to trump accounts",
+      "main_pos": [
+        10.9,
+        null
+      ],
+      "update_window": true,
+      "first_sha": "ad9eb5e"
+    }
+  ]
+}
