@@ -2,34 +2,22 @@
  "slug": "best-401k-providers-for-small-business",
  "rows": [
   {
-   "name": "Icon Savings Plan",
-   "domain": "iconsavingsplan.com",
-   "url": "https://iconsavingsplan.com",
+   "name": "Equity Trust",
+   "domain": "trustetc.com",
+   "url": "https://www.trustetc.com/solo-401k/",
    "values": [
-    "Employers wanting a portable, fully managed 401(k)-style plan",
-    "Flat monthly price by headcount; amount via quote",
-    "Not published; flat tiers by employee count",
-    "Works with 200+ payroll providers",
-    "Yes, no plan administration or federal filings for employer"
-   ]
-  },
-  {
-   "name": "My Solo 401k Financial",
-   "domain": "mysolo401k.net",
-   "url": "https://mysolo401k.net",
-   "values": [
-    "Owner-only businesses wanting a self-directed Solo 401k",
-    "Not published",
+    "Self-employed people with no full-time employees besides a spouse (solo plan)",
+    "$1,295 one-time setup; $695 per year",
     "N/A",
     "Not published",
-    "Not published"
+    "Recordkeeping system, plan documents, automatic 5500-EZ and 1099-R forms"
    ]
   }
  ],
  "cut": [
   {
-   "domain": "blog.clover.com",
-   "why": "category 1 \u2014 payments company's blog, no 401(k) product"
+   "domain": "chamberofcommerce.org",
+   "why": "category 1 — publisher of business guides and reviews with referral links; sells no 401(k)"
   }
  ]
 }

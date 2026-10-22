@@ -1,27 +1,14 @@
 {
-  "slug": "best-brokers-for-treasury-bonds",
-  "rows": [
-    {
-      "name": "Treasure",
-      "domain": "treasurefi.com",
-      "url": "https://treasurefi.com/",
-      "values": [
-        "Companies holding idle cash reserves",
-        "Not published",
-        "Funds accessible within 0-5 business days",
-        "Not published",
-        "Not published"
-      ]
-    }
-  ],
-  "cut": [
-    {
-      "domain": "activtrades.com",
-      "why": "category 4 — CFD broker, site does not offer Treasury bond purchase"
-    },
-    {
-      "domain": "slash.com",
-      "why": "category 4 — business banking and cards; Treasury is a money market advisory account, fits business banking"
-    }
-  ]
+ "slug": "best-brokers-for-treasury-bonds",
+ "rows": [],
+ "cut": [
+  {
+   "domain": "etoro.com",
+   "why": "category 4 — US page lists stocks, ETFs, crypto and options, no Treasuries; fits stock or crypto brokers"
+  },
+  {
+   "domain": "soliswealth.com",
+   "why": "category 4 — wealth advisory firm (LPL) with $1,000,000 household minimum, not a Treasury broker; fits financial advisors"
+  }
+ ]
 }

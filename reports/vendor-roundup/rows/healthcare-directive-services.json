@@ -1,22 +1,93 @@
 {
  "slug": "best-healthcare-directive-services",
- "rows": [],
+ "rows": [
+  {
+   "name": "MyDirectives",
+   "domain": "mydirectives.com",
+   "url": "https://www.mydirectives.com/",
+   "values": [
+    "Free account for individuals",
+    "Create or upload advance care planning documents; secure cloud storage and sharing",
+    "Not published",
+    "People wanting a free place to store and share care documents"
+   ]
+  },
+  {
+   "name": "Legal Templates",
+   "domain": "legaltemplates.net",
+   "url": "https://legaltemplates.net/",
+   "values": [
+    "Not published; free trial offered",
+    "Advance Directive form, Word or PDF, unlimited revisions and copies",
+    "Forms written by attorneys; site says it gives no legal advice",
+    "People comfortable filling in a form themselves"
+   ]
+  },
+  {
+   "name": "AWS Law Firm",
+   "domain": "awslaw.org",
+   "url": "https://awslaw.org/",
+   "values": [
+    "Not published; free initial consultation",
+    "Wills, trusts and health care directives drafted for clients",
+    "Attorney-prepared; offices in Tampa and St. Petersburg",
+    "Florida residents wanting a lawyer to draft their documents"
+   ]
+  },
+  {
+   "name": "ELG Estate Planning (Elder Law Group PLLC)",
+   "domain": "elderlawgroupwa.com",
+   "url": "https://elderlawgroupwa.com/",
+   "values": [
+    "Not published",
+    "Health care directives (living wills) and durable powers of attorney",
+    "Attorney-prepared; offices in Spokane, Tri-Cities and Seattle",
+    "Washington residents wanting estate and elder law help"
+   ]
+  },
+  {
+   "name": "Gravis Law",
+   "domain": "gravislaw.com",
+   "url": "https://gravislaw.com/",
+   "values": [
+    "Not published",
+    "Living wills and health care directives under estate planning",
+    "Attorney-prepared; remote or phone consultations offered",
+    "Clients in its nine states wanting a lawyer for a directive"
+   ]
+  },
+  {
+   "name": "Davidson Estate Law",
+   "domain": "davidsonestatelaw.com",
+   "url": "https://davidsonestatelaw.com/",
+   "values": [
+    "Not published",
+    "Advance health directives, wills, living trusts and powers of attorney",
+    "Attorney-drafted; offices in Oakland and Larkspur, CA",
+    "California residents wanting a lawyer-drafted advance directive"
+   ]
+  }
+ ],
  "cut": [
   {
-   "domain": "caringinfo.org",
-   "why": "category 1 \u2014 nonprofit information site, no product sold"
+   "domain": "illinoislegalaid.org",
+   "why": "category 1 \u2014 nonprofit legal information, not a seller"
   },
   {
-   "domain": "aafp.org",
-   "why": "category 1 \u2014 professional association page, sample form only"
+   "domain": "mayoclinic.org",
+   "why": "category 1 \u2014 health-system information pages, not a seller of directive services"
   },
   {
-   "domain": "scripps.org",
-   "why": "category 1 \u2014 medical provider information page, no directive product"
+   "domain": "washingtonlawhelp.org",
+   "why": "category 1 \u2014 nonprofit legal information, not a seller"
   },
   {
-   "domain": "azhdr.org",
-   "why": "category 1 \u2014 state registry/government information site, no product"
+   "domain": "sutterhealth.org",
+   "why": "category 1 \u2014 health-system page, not a seller of directive services"
+  },
+  {
+   "domain": "plannedwithpurposellc.com",
+   "why": "category 4 \u2014 sells end-of-life planning binders and forms; no health care directive product, not a law firm"
   }
  ]
 }

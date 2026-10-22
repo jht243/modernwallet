@@ -1,22 +1,18 @@
 {
-  "slug": "best-credit-cards-for-fair-credit",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "creditsoup.com",
-      "why": "category 1 — advertising-supported comparison marketplace, not an issuer"
-    },
-    {
-      "domain": "gauss.money",
-      "why": "category 4 — membership app with balance-transfer line and loans, no fair-credit card; fits personal loans category"
-    },
-    {
-      "domain": "creditsesame.com",
-      "why": "category 4 — credit monitoring and offers marketplace, no card of its own; fits credit monitoring category"
-    },
-    {
-      "domain": "financeglobe.com",
-      "why": "category 1 — card comparison and review site, not an issuer"
-    }
-  ]
+ "slug": "best-credit-cards-for-fair-credit",
+ "rows": [
+  {
+   "name": "Prosper Card",
+   "domain": "prosper.com",
+   "url": "https://www.prosper.com/credit-card",
+   "values": [
+    "None; unsecured card",
+    "Not published",
+    "Cash back from retailers",
+    "$59, waived first year with AutoPay",
+    "Eligibility check does not affect score; hard pull not stated"
+   ]
+  }
+ ],
+ "cut": []
 }

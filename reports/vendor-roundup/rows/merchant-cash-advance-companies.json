@@ -1,10 +1,14 @@
 {
-  "slug": "best-merchant-cash-advance-companies",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "business.org",
-      "why": "category 1 \u2014 publisher/review site with affiliate links, no product of its own"
-    }
-  ]
+ "slug": "best-merchant-cash-advance-companies",
+ "rows": [],
+ "cut": [
+  {
+   "domain": "cloudsquare.io",
+   "why": "category 4 \u2014 lending-business software on Salesforce, no funding; fits business software, not MCA providers"
+  },
+  {
+   "domain": "nationalcreditpartners.com",
+   "why": "category 4 \u2014 business debt modification service, not an advance provider; fits business debt relief"
+  }
+ ]
 }

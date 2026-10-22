@@ -1,48 +1,22 @@
 {
-  "slug": "best-ai-trading-bots",
-  "rows": [
-    {
-      "name": "Altrady",
-      "domain": "altrady.com",
-      "url": "https://www.altrady.com/",
-      "values": [
-        "Active crypto traders using several exchanges",
-        "EUR 28-90/month billed monthly; 5-day free trial (as of Oct 2026)",
-        "Grid, DCA, HODL, TradingView, Signal and Webhook bots via exchange API",
-        "Crypto, 19+ exchanges"
-      ]
-    },
-    {
-      "name": "AlgoBuilder",
-      "domain": "algobuilder.com",
-      "url": "https://algobuilder.com/",
-      "values": [
-        "Building and backtesting strategies from plain-language ideas",
-        "Free; Core $20, Pro $100, Quant $200 per month",
-        "AI writes Python; live orders run on your PC via MetaTrader 5",
-        "MetaTrader 5 brokers: forex, shares, metals, crypto"
-      ]
-    },
-    {
-      "name": "Automated Trading",
-      "domain": "automatedtrading.io",
-      "url": "https://automatedtrading.io/",
-      "values": [
-        "Subscribers wanting rules-based crypto bots",
-        "Bots from $89/month list; signals $29/month; 14-day free trial",
-        "Fully automated spot and futures bots; manual signals option",
-        "Crypto: Coinbase, Binance, Kraken"
-      ]
-    }
-  ],
-  "cut": [
-    {
-      "domain": "coredevsltd.com",
-      "why": "category 1 — custom software agency, no packaged trading bot"
-    },
-    {
-      "domain": "hackernoon.com",
-      "why": "category 1 — publisher, ranked list article"
-    }
-  ]
+ "slug": "best-ai-trading-bots",
+ "rows": [
+  {
+   "name": "Cryptohopper",
+   "domain": "cryptohopper.com",
+   "url": "https://www.cryptohopper.com/pricing",
+   "values": [
+    "Crypto traders wanting automated bots, from beginner to advanced",
+    "$29, $69 or $129/month; 3-day Explorer trial; AI strategies only on Hero",
+    "Automated trading on connected exchanges; copy, market-making and arbitrage bots",
+    "Traders of all levels; 16+ exchanges supported"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "goodcrypto.app",
+   "why": "category 2 — homepage states goodcryptoX has closed"
+  }
+ ]
 }

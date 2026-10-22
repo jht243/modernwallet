@@ -1,39 +1,32 @@
 {
-  "slug": "best-estate-planning-software",
-  "rows": [
-    {
-      "name": "EncorEstate Plans",
-      "domain": "encorestateplans.com",
-      "url": "https://encorestateplans.com/",
-      "values": [
-        "Will-Based Plan $400",
-        "Trust-Based Plan $650",
-        "Included in each plan; $125 powers-only plan",
-        "Planner and paralegal review; attorney review on request",
-        "Web platform for financial advisors"
-      ]
-    },
-    {
-      "name": "AAEPA CounselPro",
-      "domain": "aaepa.com",
-      "url": "https://www.aaepa.com/estate-planning-software/",
-      "values": [
-        "Not published",
-        "Revocable, special needs and other trust templates",
-        "Not published",
-        "Templates vetted by attorneys",
-        "Cloud-based; sold to estate planning attorneys"
-      ]
-    }
-  ],
-  "cut": [
-    {
-      "domain": "mymoneymyfreedom.co",
-      "why": "category 1 — blog, ranked list article"
-    },
-    {
-      "domain": "deelo.ai",
-      "why": "category 4 — general business apps suite, no estate planning product on site"
-    }
-  ]
+ "slug": "best-estate-planning-software",
+ "rows": [
+  {
+   "name": "Vanilla",
+   "domain": "justvanilla.com",
+   "url": "https://www.justvanilla.com",
+   "values": [
+    "Vanilla (advisor, RIA and wealth firm platform)",
+    "Wills covered; individual/couple pricing not published",
+    "Trusts covered via guided questionnaires",
+    "Not published",
+    "Abstraction Services team of former attorneys; Vanilla Attorney Network",
+    "Web-based platform sold per user to advisors and firms"
+   ]
+  },
+  {
+   "name": "Wealth.com",
+   "domain": "wealth.com",
+   "url": "https://wealth.com",
+   "values": [
+    "Wealth.com (advisor and RIA platform)",
+    "Last Will & Testament and pourover will; pricing not published",
+    "Revocable trust",
+    "Yes: Financial POA and Advance Health Care Directive",
+    "Not published; site says it is not a law firm",
+    "Web-based; clients access it only through a financial advisor"
+   ]
+  }
+ ],
+ "cut": []
 }

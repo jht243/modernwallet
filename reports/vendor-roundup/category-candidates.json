@@ -10,10 +10,12 @@
     "unlabelled": [
       "activtrades.com",
       "annotation.academy",
+      "bondstreet.com",
       "deelo.ai",
-      "fe.training",
-      "lanelaw.com",
-      "mccmlaw.com",
+      "employers.hosco.com",
+      "hireinsouth.com",
+      "info.cccu.com",
+      "pearltalent.com",
       "servistree.com",
       "theccbb.com"
     ],
@@ -26,11 +28,11 @@
     "credit monitoring": [
       "creditsesame.com"
     ],
+    "advisor": [
+      "allworthfinancial.com"
+    ],
     "financial planning and life insurance categories": [
       "northwesternmutual.com"
-    ],
-    "robo-advisors": [
-      "mezzi.com"
     ],
     "bookkeeping": [
       "prepshift.co"
@@ -38,11 +40,8 @@
     "bookkeeping/accounting software": [
       "hellobooks.ai"
     ],
-    "portfolio-backtesting-and-analysis-tools": [
-      "helmterminal.dev"
-    ],
-    "budgeting and money apps": [
-      "getwealthi.ai"
+    "tax preparer": [
+      "empoweredfinancesllc.com"
     ]
   },
   "demand_candidates": [

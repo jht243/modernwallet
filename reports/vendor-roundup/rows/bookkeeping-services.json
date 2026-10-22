@@ -1,107 +1,85 @@
 {
-  "slug": "best-bookkeeping-services-for-small-businesses",
-  "rows": [
-    {
-      "name": "AccountingDepartment.com",
-      "domain": "accountingdepartment.com",
-      "url": "https://www.accountingdepartment.com/",
-      "values": [
-        "Not published (four flat monthly tiers, quote-based)",
-        "Not published",
-        "No, states it does not provide tax services",
-        "Businesses from under $1M to $100M+ revenue wanting an outsourced accounting department"
-      ]
-    },
-    {
-      "name": "1-800Accountant",
-      "domain": "1800accountant.com",
-      "url": "https://www.1800accountant.com/",
-      "values": [
-        "Business Complete $469/mo billed annually (full-service bookkeeping)",
-        "Catch-up bookkeeping offered as add-on, price not published",
-        "Included in Starter and Business Complete plans",
-        "Small business owners wanting bookkeeping and tax filing together"
-      ]
-    },
-    {
-      "name": "BooksTime",
-      "domain": "bookstime.com",
-      "url": "https://www.bookstime.com/",
-      "values": [
-        "Not published",
-        "Not published",
-        "Not stated; says it is not a CPA firm",
-        "Small businesses, nonprofits, real estate and construction firms wanting outsourced bookkeeping"
-      ]
-    },
-    {
-      "name": "Otterz",
-      "domain": "otterz.co",
-      "url": "https://otterz.co/",
-      "values": [
-        "Not published (says transparent monthly pricing)",
-        "Not published",
-        "Yes, tax and compliance service for businesses",
-        "Startups and small businesses wanting bookkeeping plus controller or CFO help"
-      ]
-    },
-    {
-      "name": "Mindspace Outsourcing",
-      "domain": "mindspaceoutsourcing.com",
-      "url": "https://mindspaceoutsourcing.com/",
-      "values": [
-        "Not published",
-        "Not published",
-        "Yes, tax return preparation and submission",
-        "CPA firms and small to large businesses outsourcing bookkeeping and payroll"
-      ]
-    },
-    {
-      "name": "Maxim Liberty",
-      "domain": "bookkeeping-services.com",
-      "url": "https://bookkeeping-services.com/",
-      "values": [
-        "From $75/month for 5 hours, no setup fees or lock-in",
-        "Catch-up and cleanup offered; price not published",
-        "Year-end returns offered; says bookkeepers are not CPAs",
-        "Small businesses and CPA firms wanting remote bookkeeping in U.S. and Canada"
-      ]
-    },
-    {
-      "name": "Numetix",
-      "domain": "numetix.ai",
-      "url": "https://numetix.ai/",
-      "values": [
-        "Essentials $499/mo, Growth $999/mo, Enterprise $2,499/mo",
-        "Not published",
-        "Lists Tax & Compliance; return preparation not stated",
-        "Healthcare, legal, nonprofit, property and professional services firms"
-      ]
-    },
-    {
-      "name": "Infinity Globus",
-      "domain": "infinity-globus.com",
-      "url": "https://infinity-globus.com/",
-      "values": [
-        "Not published",
-        "Not published",
-        "Yes, tax preparation offered",
-        "Accounting firms outsourcing bookkeeping and tax work"
-      ]
-    }
-  ],
-  "cut": [
-    {
-      "domain": "universalaccountingschool.com",
-      "why": "category 3 — sells accounting training and certification, not bookkeeping services"
-    },
-    {
-      "domain": "hireinsouth.com",
-      "why": "category 4 — Latin American staffing agency, not a bookkeeping service"
-    },
-    {
-      "domain": "ccmonet.ai",
-      "why": "category 3 — Singapore-based bookkeeping, pricing in SGD, serves Singapore businesses; out of scope for this US page"
-    }
-  ]
+ "slug": "best-bookkeeping-services-for-small-businesses",
+ "rows": [
+  {
+   "name": "Milestone",
+   "domain": "milestone.inc",
+   "url": "https://milestone.inc/bookkeeping-services-for-small-business",
+   "values": [
+    "Not published",
+    "Not published",
+    "Tax preparation offered as an optional service; fees not published",
+    "Startups and small businesses, including SaaS, agencies and professional services"
+   ]
+  },
+  {
+   "name": "Bookkeeping and Accounting of Florida Inc.",
+   "domain": "bookkeepingandaccountinginc.com",
+   "url": "https://bookkeepingandaccountinginc.com",
+   "values": [
+    "Not published",
+    "Not published",
+    "Tax preparation offered; fees not published",
+    "Jacksonville-area businesses wanting bookkeeping, payroll and fractional CFO help"
+   ]
+  },
+  {
+   "name": "Haven",
+   "domain": "usehaven.com",
+   "url": "https://www.usehaven.com",
+   "values": [
+    "$450 per month at $20,000 monthly spending; rises with complexity",
+    "Not published",
+    "Business tax service offered; price not published",
+    "Startups and small businesses with growing finances"
+   ]
+  },
+  {
+   "name": "Less Accounting",
+   "domain": "lessaccounting.com",
+   "url": "https://www.lessaccounting.com/pricing/",
+   "values": [
+    "$299 per month (Simple, under $300K revenue)",
+    "Cleanup quote on request; price not published",
+    "Tax support and CPA-ready books; return pricing not published",
+    "Freelancers, agencies, startups and nonprofits wanting monthly bookkeeping"
+   ]
+  },
+  {
+   "name": "Pinnacle Taxx Solutions",
+   "domain": "ptsdelray.com",
+   "url": "https://ptsdelray.com",
+   "values": [
+    "$350 to $750 per month (Basic plan, custom quote)",
+    "Book cleanup offered; price not published",
+    "Year-end taxes included in the Basic plan",
+    "Small businesses, mainly in Florida, such as contractors and real estate agents"
+   ]
+  },
+  {
+   "name": "Slaton Financial Services",
+   "domain": "slatonfs.com",
+   "url": "https://slatonfs.com/services/bookkeeping/",
+   "values": [
+    "Not published; quote by phone",
+    "Not published",
+    "Tax filing and quarterly tax reports handled; fees not published",
+    "Dallas-Fort Worth businesses, nonprofits and associations wanting outsourced bookkeeping"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "accountingwebsites.org",
+   "why": "category 1 — directory, no bookkeeping product of its own"
+  },
+  {
+   "domain": "ueni.com",
+   "why": "category 4 — sells done-for-you websites, not bookkeeping; fits a small-business website category"
+  },
+  {
+   "domain": "beancount.io",
+   "why": "category 4 — plain-text accounting software, not a bookkeeping service; fits accounting software"
+  }
+ ]
 }

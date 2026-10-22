@@ -1,22 +1,28 @@
 {
-  "slug": "best-ai-investing-apps",
-  "rows": [
-    {
-      "name": "Questflow",
-      "domain": "docs.questflow.ai",
-      "url": "https://docs.questflow.ai/",
-      "values": [
-        "Investing alongside top investors through an AI finance agent",
-        "Not published",
-        "Agent combining GPT, Claude, Gemini models with Investor Skills",
-        "Not published"
-      ]
-    }
-  ],
-  "cut": [
-    {
-      "domain": "visualping.io",
-      "why": "category 3 — website change-monitoring tool, no investing product"
-    }
-  ]
+ "slug": "best-ai-investing-apps",
+ "rows": [
+  {
+   "name": "PortfolioGPT",
+   "domain": "portfoliogpt.xyz",
+   "url": "https://portfoliogpt.xyz",
+   "values": [
+    "Investors wanting a generated stock portfolio from their goals and risk tolerance",
+    "Free plan; $3/month or $27/year; $50/year bundle for 2+ users",
+    "OpenAI model (GPT 4.1-mini listed on paid plans)",
+    "Not published"
+   ]
+  },
+  {
+   "name": "TruthSayer AI",
+   "domain": "truthsayer.com",
+   "url": "https://truthsayer.com",
+   "values": [
+    "Retail traders wanting stock alerts for long and short trades",
+    "$5.99/month billed annually or $10.99/month; 7-day free trial",
+    "Proprietary valuation, dark-pool and earnings models; AI chat explains signals",
+    "Not published"
+   ]
+  }
+ ],
+ "cut": []
 }

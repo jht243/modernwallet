@@ -132,6 +132,18 @@
       "Not published"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "PortfolioGPT",
+     "domain": "portfoliogpt.xyz",
+     "url": "https://portfoliogpt.xyz",
+     "values": [
+      "Investors wanting a generated stock portfolio from their goals and risk tolerance",
+      "Free plan; $3/month or $27/year; $50/year bundle for 2+ users",
+      "OpenAI model (GPT 4.1-mini listed on paid plans)",
+      "Not published"
+     ],
+     "added": "2026-10-22"
     }
    ]
   },
@@ -227,6 +239,18 @@
       "Crypto: Coinbase, Binance, Kraken"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "Cryptohopper",
+     "domain": "cryptohopper.com",
+     "url": "https://www.cryptohopper.com/pricing",
+     "values": [
+      "Crypto traders wanting automated bots, from beginner to advanced",
+      "$29, $69 or $129/month; 3-day Explorer trial; AI strategies only on Hero",
+      "Automated trading on connected exchanges; copy, market-making and arbitrage bots",
+      "Traders of all levels; 16+ exchanges supported"
+     ],
+     "added": "2026-10-22"
     }
    ]
   },
@@ -988,6 +1012,19 @@
       "Not published"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "Equity Trust",
+     "domain": "trustetc.com",
+     "url": "https://www.trustetc.com/solo-401k/",
+     "values": [
+      "Self-employed people with no full-time employees besides a spouse (solo plan)",
+      "$1,295 one-time setup; $695 per year",
+      "N/A",
+      "Not published",
+      "Recordkeeping system, plan documents, automatic 5500-EZ and 1099-R forms"
+     ],
+     "added": "2026-10-22"
     }
    ]
   },
@@ -1919,6 +1956,34 @@
       "Cloud-based; sold to estate planning attorneys"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "Vanilla",
+     "domain": "justvanilla.com",
+     "url": "https://www.justvanilla.com",
+     "values": [
+      "Vanilla (advisor, RIA and wealth firm platform)",
+      "Wills covered; individual/couple pricing not published",
+      "Trusts covered via guided questionnaires",
+      "Not published",
+      "Abstraction Services team of former attorneys; Vanilla Attorney Network",
+      "Web-based platform sold per user to advisors and firms"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "Wealth.com",
+     "domain": "wealth.com",
+     "url": "https://wealth.com",
+     "values": [
+      "Wealth.com (advisor and RIA platform)",
+      "Last Will & Testament and pourover will; pricing not published",
+      "Revocable trust",
+      "Yes: Financial POA and Advance Health Care Directive",
+      "Not published; site says it is not a law firm",
+      "Web-based; clients access it only through a financial advisor"
+     ],
+     "added": "2026-10-22"
     }
    ]
   },
@@ -2154,6 +2219,18 @@
       "Variable 3.30% APY as of Oct 2026; joint accounts; FDIC via partner banks"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "FNBO",
+     "domain": "fnbo.com",
+     "url": "https://www.fnbo.com/personal-banking/savings",
+     "values": [
+      "No minimum deposit or balance",
+      "None",
+      "Not published",
+      "APY not listed on page; rates vary by county of residence"
+     ],
+     "added": "2026-10-22"
     }
    ]
   },
@@ -2192,7 +2269,21 @@
     "Chime Card": "chime.com",
     "OpenSky Secured Visa": "openskycc.com"
    },
-   "added": []
+   "added": [
+    {
+     "name": "Prosper Card",
+     "domain": "prosper.com",
+     "url": "https://www.prosper.com/credit-card",
+     "values": [
+      "None; unsecured card",
+      "Not published",
+      "Cash back from retailers",
+      "$59, waived first year with AutoPay",
+      "Eligibility check does not affect score; hard pull not stated"
+     ],
+     "added": "2026-10-22"
+    }
+   ]
   },
   "best-custodial-roth-ira-providers": {
    "domains": {
@@ -4631,6 +4722,78 @@
       "Accounting firms outsourcing bookkeeping and tax work"
      ],
      "added": "2026-10-21"
+    },
+    {
+     "name": "Milestone",
+     "domain": "milestone.inc",
+     "url": "https://milestone.inc/bookkeeping-services-for-small-business",
+     "values": [
+      "Not published",
+      "Not published",
+      "Tax preparation offered as an optional service; fees not published",
+      "Startups and small businesses, including SaaS, agencies and professional services"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "Bookkeeping and Accounting of Florida Inc.",
+     "domain": "bookkeepingandaccountinginc.com",
+     "url": "https://bookkeepingandaccountinginc.com",
+     "values": [
+      "Not published",
+      "Not published",
+      "Tax preparation offered; fees not published",
+      "Jacksonville-area businesses wanting bookkeeping, payroll and fractional CFO help"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "Haven",
+     "domain": "usehaven.com",
+     "url": "https://www.usehaven.com",
+     "values": [
+      "$450 per month at $20,000 monthly spending; rises with complexity",
+      "Not published",
+      "Business tax service offered; price not published",
+      "Startups and small businesses with growing finances"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "Less Accounting",
+     "domain": "lessaccounting.com",
+     "url": "https://www.lessaccounting.com/pricing/",
+     "values": [
+      "$299 per month (Simple, under $300K revenue)",
+      "Cleanup quote on request; price not published",
+      "Tax support and CPA-ready books; return pricing not published",
+      "Freelancers, agencies, startups and nonprofits wanting monthly bookkeeping"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "Pinnacle Taxx Solutions",
+     "domain": "ptsdelray.com",
+     "url": "https://ptsdelray.com",
+     "values": [
+      "$350 to $750 per month (Basic plan, custom quote)",
+      "Book cleanup offered; price not published",
+      "Year-end taxes included in the Basic plan",
+      "Small businesses, mainly in Florida, such as contractors and real estate agents"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "Slaton Financial Services",
+     "domain": "slatonfs.com",
+     "url": "https://slatonfs.com/services/bookkeeping/",
+     "values": [
+      "Not published; quote by phone",
+      "Not published",
+      "Tax filing and quarterly tax reports handled; fees not published",
+      "Dallas-Fort Worth businesses, nonprofits and associations wanting outsourced bookkeeping"
+     ],
+     "added": "2026-10-22"
     }
    ]
   },
@@ -4722,6 +4885,30 @@
       "Self-employed people wanting year-round tax guidance"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "Reed Corp",
+     "domain": "reedcorp.tax",
+     "url": "https://reedcorp.tax",
+     "values": [
+      "CPA firm in New York City",
+      "Not published; online fee estimator",
+      "Multi-state filing offered; states not listed",
+      "Creative freelancers and multi-source income earners"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "Polaris Tax & Accounting",
+     "domain": "polaristaxandaccounting.com",
+     "url": "https://polaristaxandaccounting.com/resources/pricing/",
+     "values": [
+      "Accounting and tax firm, Charlotte NC",
+      "Not published for Schedule C; individual returns from $350",
+      "Not stated",
+      "Individuals and business owners wanting tax prep and bookkeeping"
+     ],
+     "added": "2026-10-22"
     }
    ]
   },
@@ -4844,6 +5031,42 @@
       "Individuals, families and businesses in the Western US"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "Charles Katz Insurance",
+     "domain": "katzinsured.com",
+     "url": "https://www.katzinsured.com/",
+     "values": [
+      "Pleasanton",
+      "Not published",
+      "Auto, home, life and commercial; 50+ carriers",
+      "East Bay families and businesses wanting several carriers"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "Quality Insurance Services",
+     "domain": "qualityins.com",
+     "url": "https://www.qualityins.com/",
+     "values": [
+      "Monterey Park",
+      "Not published",
+      "Auto, home, flood, earthquake, umbrella, business and workers' comp",
+      "California individuals and businesses comparing several carriers"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "Allco Insurance",
+     "domain": "allcoinsurance.com",
+     "url": "https://www.allcoinsurance.com/",
+     "values": [
+      "Fullerton and Irvine; also licensed in AZ, IL, NV, NJ",
+      "Not published",
+      "Auto, home, renters, earthquake, business, life and health",
+      "Orange County individuals and businesses wanting an independent agency"
+     ],
+     "added": "2026-10-22"
     }
    ]
   },
@@ -5019,6 +5242,18 @@
       "Not stated"
      ],
      "added": "2026-10-21"
+    },
+    {
+     "name": "Gallagher Small Business",
+     "domain": "gallaghersmallbusiness.com",
+     "url": "https://www.gallaghersmallbusiness.com/employee-benefits-and-hr/",
+     "values": [
+      "Fractional HR, outsourced payroll and PEO listed",
+      "Not published",
+      "Outsourced payroll offered; process not described",
+      "Not published"
+     ],
+     "added": "2026-10-22"
     }
    ]
   },
@@ -5031,7 +5266,80 @@
     "Rocket Lawyer": "rocketlawyer.com",
     "Five Wishes": "fivewishes.org"
    },
-   "added": []
+   "added": [
+    {
+     "name": "MyDirectives",
+     "domain": "mydirectives.com",
+     "url": "https://www.mydirectives.com/",
+     "values": [
+      "Free account for individuals",
+      "Create or upload advance care planning documents; secure cloud storage and sharing",
+      "Not published",
+      "People wanting a free place to store and share care documents"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "Legal Templates",
+     "domain": "legaltemplates.net",
+     "url": "https://legaltemplates.net/",
+     "values": [
+      "Not published; free trial offered",
+      "Advance Directive form, Word or PDF, unlimited revisions and copies",
+      "Forms written by attorneys; site says it gives no legal advice",
+      "People comfortable filling in a form themselves"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "AWS Law Firm",
+     "domain": "awslaw.org",
+     "url": "https://awslaw.org/",
+     "values": [
+      "Not published; free initial consultation",
+      "Wills, trusts and health care directives drafted for clients",
+      "Attorney-prepared; offices in Tampa and St. Petersburg",
+      "Florida residents wanting a lawyer to draft their documents"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "ELG Estate Planning (Elder Law Group PLLC)",
+     "domain": "elderlawgroupwa.com",
+     "url": "https://elderlawgroupwa.com/",
+     "values": [
+      "Not published",
+      "Health care directives (living wills) and durable powers of attorney",
+      "Attorney-prepared; offices in Spokane, Tri-Cities and Seattle",
+      "Washington residents wanting estate and elder law help"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "Gravis Law",
+     "domain": "gravislaw.com",
+     "url": "https://gravislaw.com/",
+     "values": [
+      "Not published",
+      "Living wills and health care directives under estate planning",
+      "Attorney-prepared; remote or phone consultations offered",
+      "Clients in its nine states wanting a lawyer for a directive"
+     ],
+     "added": "2026-10-22"
+    },
+    {
+     "name": "Davidson Estate Law",
+     "domain": "davidsonestatelaw.com",
+     "url": "https://davidsonestatelaw.com/",
+     "values": [
+      "Not published",
+      "Advance health directives, wills, living trusts and powers of attorney",
+      "Attorney-drafted; offices in Oakland and Larkspur, CA",
+      "California residents wanting a lawyer-drafted advance directive"
+     ],
+     "added": "2026-10-22"
+    }
+   ]
   }
  }
 }

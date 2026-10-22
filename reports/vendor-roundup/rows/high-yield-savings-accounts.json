@@ -2,21 +2,16 @@
  "slug": "best-high-yield-savings-accounts",
  "rows": [
   {
-   "name": "Upgrade",
-   "domain": "upgrade.com",
-   "url": "https://www.upgrade.com/premier-savings/",
+   "name": "FNBO",
+   "domain": "fnbo.com",
+   "url": "https://www.fnbo.com/personal-banking/savings",
    "values": [
-    "$1,000 for the stated APY",
+    "No minimum deposit or balance",
     "None",
-    "None stated",
-    "Variable 3.30% APY as of Oct 2026; joint accounts; FDIC via partner banks"
+    "Not published",
+    "APY not listed on page; rates vary by county of residence"
    ]
   }
  ],
- "cut": [
-  {
-   "domain": "northwesternmutual.com",
-   "why": "category 4 \u2014 no savings account on site; fits financial planning and life insurance categories"
-  }
- ]
+ "cut": []
 }
