@@ -292,3 +292,7 @@
 | /guides/social-security-changes-2027/ | 2026-10-21 | 22 | 1/0/0/0/0 | 0 |
 | /guides/is-social-security-taxable/ | 2026-10-21 | 52 | 0/0/0/0/0 | 1 |
 | /mileage-deduction/irs-mileage-rate-2026/ | 2026-10-21 | 50 | 0/0/0/0/0 | 0 |
+| /guides/how-to-open-a-trump-account/ | 2026-10-22 | 81 | 0/0/0/0/0 | 0 |
+| /guides/inherited-ira-taxes-explained/ | 2026-10-22 | 48 | 0/0/0/0/0 | 0 |
+| /guides/trump-account-scams/ | 2026-10-22 | 26 | 0/0/0/0/0 | 0 |
+| /guides/trump-gold-coin/ | 2026-10-22 | 23 | 0/0/0/0/0 | 0 |

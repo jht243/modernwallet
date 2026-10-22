@@ -1,0 +1,132 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-21",
+  "window_start": "2026-10-21",
+  "window_end": "2026-10-21",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 81,
+      "sessions": 73,
+      "active_users": 63,
+      "clicks": 81
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 54,
+      "sessions": 52,
+      "active_users": 51,
+      "clicks": 54
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 50,
+      "sessions": 50,
+      "active_users": 47,
+      "clicks": 50
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 49,
+      "sessions": 46,
+      "active_users": 42,
+      "clicks": 49
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 48,
+      "sessions": 50,
+      "active_users": 43,
+      "clicks": 48
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 28,
+      "sessions": 27,
+      "active_users": 24,
+      "clicks": 28
+    },
+    {
+      "page": "/guides/trump-account-scams/",
+      "views": 26,
+      "sessions": 22,
+      "active_users": 21,
+      "clicks": 26
+    },
+    {
+      "page": "/guides/social-security-changes-2027/",
+      "views": 25,
+      "sessions": 23,
+      "active_users": 23,
+      "clicks": 25
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 23,
+      "sessions": 22,
+      "active_users": 20,
+      "clicks": 23
+    },
+    {
+      "page": "/",
+      "views": 21,
+      "sessions": 18,
+      "active_users": 18,
+      "clicks": 21
+    }
+  ],
+  "top10_pages_total_views": 405,
+  "top10_pages_total_clicks": 405,
+  "channel_split": {
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 58,
+      "Direct": 15,
+      "Unassigned": 4
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 51,
+      "Unassigned": 2,
+      "Referral": 1
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 48,
+      "Unassigned": 9,
+      "Direct": 2
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 47,
+      "Unassigned": 3,
+      "Direct": 2,
+      "Referral": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 44,
+      "Unassigned": 3,
+      "Direct": 2
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 27,
+      "Unassigned": 1
+    },
+    "/guides/social-security-changes-2027/": {
+      "Organic Search": 23,
+      "Unassigned": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 22,
+      "Unassigned": 2
+    },
+    "/guides/trump-account-scams/": {
+      "Organic Search": 20,
+      "Direct": 2,
+      "Unassigned": 1
+    },
+    "/": {
+      "Direct": 11,
+      "Referral": 4,
+      "Organic Search": 3
+    }
+  }
+}
