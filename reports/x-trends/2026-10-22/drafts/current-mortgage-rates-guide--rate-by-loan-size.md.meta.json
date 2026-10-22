@@ -1,0 +1,81 @@
+{
+ "slug": "current-mortgage-rates-guide--rate-by-loan-size",
+ "schema": "none",
+ "kind": "section",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 420,
+ "floor": 0,
+ "input_tokens": 29513,
+ "output_tokens": 3763,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.1933,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 420,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    1
+   ],
+   "applied": [
+    {
+     "id": "L20",
+     "quote": "Rates moved against buyers over the same stretch.",
+     "replacement": "Rates moved against buyers.",
+     "type": "inference",
+     "why": "SOURCE does not tie the rate rise's timing to the Market Clock quarter."
+    },
+    {
+     "id": "L26",
+     "quote": "An adjustable-rate loan starts lower but resets.",
+     "replacement": "If you are considering an adjustable-rate loan, read the details first.",
+     "type": "unsupported",
+     "why": "No ARM pricing or reset behavior appears in the fact list."
+    },
+    {
+     "id": "L26",
+     "quote": "Discount points have their own break-even math in the points and rate locks section below.",
+     "replacement": "Discount points are covered in the points section below.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention break-even math or a rate locks section."
+    },
+    {
+     "id": "L26",
+     "quote": "Discount points are covered in the points section below.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Page's points section location (below) not stated in SOURCE."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 435
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 50.0,
+ "response_id": "msg_011CgHdEit8EHGSuwk7TYdbA",
+ "generated_at": "2026-10-22T16:55:24+0000"
+}
