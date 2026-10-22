@@ -32,11 +32,11 @@ import re
 import sys
 import urllib.request
 
-SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://jqoerawizjoqldkhdshj.supabase.co").rstrip("/")
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://kqsepnhrhiwqsiazcozg.supabase.co").rstrip("/")
 PUBLISHABLE_KEY = (
     os.environ.get("SUPABASE_COMPLIANCE_KEY")
     or os.environ.get("SUPABASE_PUBLISHABLE_KEY")
-    or "sb_publishable_hiXi99G_2pPpu5-h9EtXew_egXNVDLK"  # weaponization-fund publishable (public)
+    or "sb_publishable_el677UQpZ8i_dqx1iSGQeA_EuGrl8nI"  # Layer3Labs hub publishable (public); table moved from weaponization-fund 2026-10-21
 )
 SIMILARITY_THRESHOLD = 0.45  # trigram similarity at/above this (same jurisdiction) = near-duplicate
 
