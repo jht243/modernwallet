@@ -16,6 +16,19 @@ Use only the data sources Phase 0 found connected. For each `NEW` candidate's `p
 
 Batch calls sensibly; cap total candidates scored to a reasonable ceiling (e.g. 30) — rank by a cheap heuristic first and only pull live data for the most promising, to bound API spend further.
 
+## Name-mixup check (MANDATORY, added 2026-10-21)
+
+Some product names are also common words or other brands (Make vs Makefile, Granola the AI note-taker vs granola the food, Mercury 2 the model vs Mercury the bank, Llama the model vs Ollama/llama.cpp). A page on a phrase whose Google top 10 means something else cannot win (measured on layer3 2026-10-21: /comparisons/make-alternatives got 0 impressions for "make alternatives" in 90 days; /comparisons/mercury-2-alternatives ranked #2 for "mercury alternatives" with 0 clicks).
+
+For every NEW candidate that survives to scoring, run on its `primaryKeyword`:
+```
+python3 scripts/intent_check.py "<primaryKeyword>" --terms "<terms that identify OUR entity: its domain, product-category words>"
+```
+- `on_intent` (6+ of the top 10 match) → keep the phrase.
+- `mixed` or `off_intent` → try the clearer phrasings in order: the brand domain (`make.com alternatives`), `<name> ai alternatives`, `<name> app alternatives`. Adopt the first that comes back `on_intent` as the `primaryKeyword`, and use it in the slug, title and H1 (e.g. `make-com-alternatives`, "Make.com Alternatives"). Re-pull its volume.
+- None comes back `on_intent` → drop the candidate and cache it with reason `name mixup: <verdicts>`.
+Judge on Google's top 10 only. Do not use People-also-ask or autocomplete for this call; on 2026-10-20 they suggested "bolt alternatives" was about bolts and ride-hailing while the top 10 was 8 of 9 bolt.new.
+
 ## Composite score
 Score each candidate (normalize each factor 0–1):
 

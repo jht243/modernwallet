@@ -1,0 +1,4 @@
+{
+  "_about": "How We Tested bullet sets by category (content standard ## TESTED, item 3). Pages in the same category reuse the SAME three bullets verbatim. A routine picks the category whose 'covers' matches the page; a new category may be added only when none fits, and its bullets must hold for every item on the page. Starts empty; the first routine run on a category writes its set.",
+  "categories": []
+}

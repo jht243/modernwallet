@@ -58,6 +58,13 @@ For each work-item, add a **focused head-to-head treatment** of the pair to the 
 - Optionally **1–2 FAQ entries** if the page already has an FAQ block — append to it, don't restructure it.
 - If the page is keyword-targeted, work the pair's `primaryKeyword` in naturally; no stuffing.
 
+## TESTED format on enriched pages (added 2026-10-22, ported from layer3)
+
+Before editing a PARTIAL page, run `scripts/tested/check.mts` on its CURRENT fields (`section` = `compare` or `roundup` by route, `slug`, `title`, `h1`, `category`, `metaDescription`; see phase 3, `## TESTED format`). Only `/roundup/` pages can come back `tested: true` (on 2026-10-22: `best-budgeting-apps`, `best-budgeting-apps-for-couples`, `best-mileage-tracker-apps`).
+- **`tested: true` and the page lacks the format** → add it as part of this enrichment: `metaDescription` rewritten to open `We tested N …` (one sentence, in-context, <=160 chars), the tee-up as sentence 2 of `introText` (one sentence, in-context; fix any pronoun in sentence 3 that it leaves dangling), the `howWeTested` field with the 3 bullets copied from `data/tested-methods.json`, and `whyPicked` / `whoFor` / `downside` on each option via `content_gen.py section` (prose longer than one sentence is never hand-written). Keep every existing paragraph. Bump `updated`.
+- **`tested: true` and the page already has it** → keep it; new options get the three pick fields too.
+- **`tested: false`** → never add any part of the format; if the page carries any (old "We tested" description, labels, pick fields), remove it.
+
 ## Discipline / guardrails (check before handing to Phase 4)
 - **Targeted `Edit` only.** Insert the new sub-section/table into the existing object/MDX in place. Never overwrite the file wholesale and never invoke a generator/script that rebuilds the page.
 - **Re-check coverage LIVE first.** The page may have been improved since Phase 1b ran. Re-open the file; if it now already covers the pair adequately (real table + verdict), **skip** that work-item and record "already covered — skipped." Don't double-enrich a section a prior run already added.

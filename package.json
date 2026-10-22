@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "prebuild": "cp data/placement-verticals.json public/placement-verticals.json && node scripts/build_search_index.mjs",
-    "build": "astro build && node scripts/entity_links.mjs dist && node scripts/unlink_pitched.mjs dist && node scripts/unlink_pitched.mjs dist --check && node scripts/vendor_nofollow.mjs dist && node scripts/vendor_nofollow.mjs dist --check && node scripts/check-bundle-size.mjs",
+    "build": "astro build && node scripts/entity_links.mjs dist && node scripts/unlink_pitched.mjs dist && node scripts/unlink_pitched.mjs dist --check && node scripts/vendor_nofollow.mjs dist && node scripts/vendor_nofollow.mjs dist --check && node scripts/sponsorship_line.mjs dist && node scripts/check-bundle-size.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

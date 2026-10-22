@@ -10,6 +10,11 @@ export interface RoundupOption {
   strengths: string[];
   limitations: string[];
   pricing: string;
+  /** TESTED pages only (src/lib/testedPage.ts): the three pick labels, rendered bold under
+   *  "Best for". One or two first-person sentences / one sentence / one sentence. */
+  whyPicked?: string;
+  whoFor?: string;
+  downside?: string;
 }
 
 export interface RoundupEntry {
@@ -28,6 +33,9 @@ export interface RoundupEntry {
   h1: string;
   introText: string;
   rankingCriteria: string;
+  /** TESTED pages only: exactly 3 "How We Tested" bullets (data/tested-methods.json), rendered
+   *  as a "How We Tested" H2 between the intro and the picks. */
+  howWeTested?: string[];
   options: RoundupOption[];
   comparisonTable: {
     headers: string[];

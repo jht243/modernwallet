@@ -1031,6 +1031,56 @@ def verify(text: str, a) -> tuple[dict, dict]:
         page["relatedLinks"] = []
         report["repairs"].append("relatedLinks was not a list -> []")
 
+    # TESTED format (content standard ## TESTED): the page either qualifies or it does not,
+    # decided BEFORE writing by scripts/tested/check.mts. --tested yes: the tested fields must
+    # be present (flags if not). --tested no: they must be absent (stripped, Rung 0).
+    tested_mode = getattr(a, "tested", "") or ""
+    if tested_mode and isinstance(page, dict) and a.format == "json":
+        PICK_KEYS = ("whyPicked", "whoFor", "downside")
+        secs = page.get("sections") if isinstance(page.get("sections"), list) else []
+        meta = str(page.get("metaDescription", ""))
+        if tested_mode == "yes":
+            hw = page.get("howWeTested")
+            if not (isinstance(hw, list) and len(hw) == 3 and all(isinstance(x, str) and x.strip() for x in hw)):
+                report["flags"].append("tested: howWeTested must be exactly 3 bullets (use the category set in data/tested-methods.json)")
+            title = str(page.get("metaTitle", ""))
+            if re.search(r"\b(19|20)\d{2}\b", title):
+                report["flags"].append("tested: metaTitle must not contain a year (the template appends '(Tested YYYY)')")
+            if not 36 <= len(title) <= 46:
+                report["flags"].append(f"tested: metaTitle is {len(title)} chars; keep 36-46 so '<title> (Tested YYYY)' is 50-60")
+            if not re.match(r"We tested \d+ ", meta):
+                report["flags"].append("tested: metaDescription must open 'We tested N ' (N = items the page ranks or compares)")
+            intro = page.get("introText") if isinstance(page.get("introText"), list) else []
+            if not (intro and "We tested" in str(intro[0])):
+                report["flags"].append("tested: tee-up 'We tested every …' missing from introText[0] (sentence 2)")
+            picks = [s for s in secs if isinstance(s, dict) and s.get("whyPicked")]
+            for s in picks:
+                miss = [k for k in PICK_KEYS if not str(s.get(k, "")).strip()]
+                if miss:
+                    report["flags"].append(f"tested: section {s.get('id')!r} has whyPicked but is missing {miss}")
+            labelled = [s.get("id") for s in secs if isinstance(s, dict)
+                        and any(re.search(r"\*\*(Why we picked it|Who it's for|The downside):", str(c), re.I)
+                                for c in (s.get("content") or []))]
+            if labelled:
+                report["flags"].append(f"tested: pick labels written as prose in {labelled}; move them to whyPicked/whoFor/downside fields")
+            report["tested"] = {"mode": "yes", "picks": len(picks)}
+        else:
+            stripped = []
+            if "howWeTested" in page:
+                page.pop("howWeTested"); stripped.append("howWeTested")
+            for s in secs:
+                if isinstance(s, dict):
+                    for k in PICK_KEYS:
+                        if k in s:
+                            s.pop(k); stripped.append(f"{s.get('id')}.{k}")
+            if stripped:
+                report["repairs"].append(f"tested=no page: removed tested fields {stripped}")
+            if re.match(r"\s*We tested\b", meta):
+                report["flags"].append("tested=no page: metaDescription claims 'We tested'; rewrite it")
+            if re.search(r"\bWe tested\b", json.dumps(page.get("introText", ""))):
+                report["flags"].append("tested=no page: introText claims 'We tested'; remove the tee-up")
+            report["tested"] = {"mode": "no"}
+
     # disallowed external links: strip the link, keep the sentence, flag the claim (Rung 0 + flag)
     if a.allowed_urls:
         allowed = [u.strip() for u in pathlib.Path(a.allowed_urls).read_text().splitlines() if u.strip()]
@@ -1143,6 +1193,10 @@ _SKIP_KEYS = {"slug", "href", "buttonHref", "category", "publishedDate", "update
               "lastUpdated", "updated", "published"}
 
 _SKIP_ROOTS = {"ctaTitle", "ctaText", "ctaButton", "inlineCta", "cta", "relatedLinks", "schema", "sources"}
+# fix mode only: the auditor's findings may target CTA copy and related-link descriptions too
+# (2026-10-21 pilot: those findings could not be applied and had to be hand-edited).
+_UNITS_ALL = False
+_FIX_ALSO_EDITABLE = {"ctaTitle", "ctaText", "inlineCta", "cta", "relatedLinks"}
 
 CLAIMCHECK_SYSTEM = """You are the fact checker for a web page draft, working BEFORE the human-grade audit. The audit fails any page that states something its closed fact list does not support. Your job is to find every such statement and supply the in-place fix, so the page reaches the audit clean.
 
@@ -1183,6 +1237,7 @@ For EVERY audit finding that points at text on the page, return the unit id, the
 - a fact finding (unsupported / invented / contradicted / inference): replace with the closest statement SOURCE supports that keeps the sentence's job, or "" to delete it;
 - a wording finding (an AI tell, a banned word, a heading or title rule, a length limit, a directive with no link): rewrite only the quoted text so the defect is gone and the same supported meaning remains.
 Never add a fact, number, name or link that is not in SOURCE. Keep table pipes intact and never empty a table cell (write "Not published"). If a finding can only be fixed by adding a NEW fact, a new section or restructuring the page, return it with "replacement": null and why "needs new substance" — it is not fixable in place.
+If a finding asks for something to be ADDED that does not exist yet (a new FAQ entry, a new section, a new table row), return it with id "NEW", quote "", and replacement null, so it is reported as not fixable in place. Never drop a finding silently.
 
 `quote` must be copied character for character from that unit. If one finding covers several sentences, return one entry per sentence.
 
@@ -1219,7 +1274,7 @@ def fact_budget(a) -> dict | None:
                 up = line.upper()
                 if "FACT" in up:
                     in_f = found = True
-                elif in_f and re.search(r"URL|LINK|COVER|CORRECTION|FAQ|NOTE|ROUTE|ROW DATA|STANDING|SECTION|CONTRACT|OUTPUT", up):
+                elif in_f and re.search(r"\b(URLS?|LINKS?|COVER|CORRECTIONS?|FAQS?|NOTES?|ROUTES?|ROW DATA|STANDING|SECTIONS?|CONTRACT|OUTPUT)\b", up):
                     in_f = False
                 continue
             if in_f and line.strip():
@@ -1250,7 +1305,8 @@ def _units(page, fmt: str):
         if isinstance(o, str):
             leaf = path.rsplit(".", 1)[-1].split("[", 1)[0]
             # short strings still count when they can carry a claim: a number, or a table cell
-            if path.split(".", 1)[0].split("[", 1)[0] in _SKIP_ROOTS:
+            root = path.split(".", 1)[0].split("[", 1)[0]
+            if root in _SKIP_ROOTS and not (_UNITS_ALL and root in _FIX_ALSO_EDITABLE):
                 return
             if leaf not in _SKIP_KEYS and (len(o.split()) >= 3 or re.search(r"\d", o)
                                            or "table" in path.lower()):
@@ -1724,6 +1780,40 @@ def verify_markdown(text: str, a) -> tuple[str, dict]:
         found = {norm(n) for n in _NUM.findall(text)}
         report["numbers_not_in_facts"] = sorted(n for n in found - allowed_nums
                                                 if len(n.rstrip("%").replace(".", "")) >= 2 and n not in {"10", "20", "50", "100"})
+    # TESTED format on a markdown page (content standard ## TESTED; markdown stores have no
+    # dedicated fields, so the parts live in frontmatter + body). --tested yes: required;
+    # --tested no: forbidden (flagged, never silently rewritten).
+    tested_mode = getattr(a, "tested", "") or ""
+    if tested_mode:
+        fm_m = re.match(r"^---\n(.*?)\n---\n?(.*)$", text, re.S)
+        fm, body = (fm_m.group(1), fm_m.group(2)) if fm_m else ("", text)
+        dm = re.search(r'^(?:description|metaDescription):\s*["\']?(.*?)["\']?\s*$', fm, re.M)
+        desc = dm.group(1) if dm else ""
+        tm = re.search(r'^(?:title|metaTitle):\s*["\']?(.*?)["\']?\s*$', fm, re.M)
+        title = tm.group(1) if tm else ""
+        hwt = re.search(r"^#{2,3}\s+How We Tested\s*$\n+((?:\s*[-*]\s+.+\n?)+)", body, re.M)
+        labels = len(re.findall(r"\*\*Why we picked it:\*\*", body))
+        if tested_mode == "yes":
+            if not re.match(r"We tested \d+ ", desc):
+                report["flags"].append("tested: description must open 'We tested N ' (N = items the page ranks or compares)")
+            if re.search(r"\b(19|20)\d{2}\b", title):
+                report["flags"].append("tested: title must not contain a year (the template appends '(Tested YYYY)')")
+            if not hwt or len(re.findall(r"^\s*[-*]\s+", hwt.group(1), re.M)) != 3:
+                report["flags"].append("tested: body needs a '## How We Tested' section with exactly 3 bullets, before the first pick")
+            if "We tested every" not in text:
+                report["flags"].append("tested: tee-up 'We tested every …' missing (intro sentence 2)")
+            for lab in ("Who it's for:", "The downside:"):
+                if labels and text.count(f"**{lab}**") != labels:
+                    report["flags"].append(f"tested: {labels} 'Why we picked it' labels but {text.count(f'**{lab}**')} '{lab}' labels")
+            report["tested"] = {"mode": "yes", "picks": labels}
+        else:
+            bad = []
+            if re.search(r"\bWe tested\b", text): bad.append("'We tested' (meta, intro or body)")
+            if hwt or re.search(r"^#{2,3}\s+How We Tested", body, re.M): bad.append("How We Tested section")
+            if labels: bad.append("pick labels")
+            if bad:
+                report["flags"].append(f"tested=no page carries tested parts: {bad}; remove them")
+            report["tested"] = {"mode": "no"}
     return text, report
 
 
@@ -1882,8 +1972,9 @@ def cmd_write(a) -> int:
 
 def cmd_fix(a) -> int:
     """FIX-IN-PLACE for Phase 4 findings: model-written replacements, exact-string splices, re-checked."""
-    global CMD, CALLER
+    global CMD, CALLER, _UNITS_ALL
     CMD = "fix"
+    _UNITS_ALL = True  # the fixer sees and may edit CTA / related-link copy too
     draft = pathlib.Path(a.draft)
     fmt = a.format or ("json" if draft.suffix == ".json" else "markdown")
     if not CALLER:
@@ -1906,11 +1997,30 @@ def cmd_fix(a) -> int:
         die(3, "fix: the model call failed — nothing was changed")
     n = len(list(draft.parent.glob(draft.name + ".pre-fix-*"))) + 1
     draft.with_name(f"{draft.name}.pre-fix-{n}").write_text(raw)
+    before = {uid: txt for uid, txt, _ in _units(page, fmt)}
     page, ok, bad = apply_findings(page, fmt, found, src=_source_text(a), on_new="skip")
     cc = {"passes": 0, "found": [], "applied": [], "unapplied": [], "remaining": []}
     if a.facts and CLAIMCHECK_ON:
-        # a replacement must not smuggle in a new claim: one pass, and what it finds is deleted
-        page, cc = claim_check(page, fmt, a, passes=1, delete_from=0)
+        # A replacement must not smuggle in a new claim, so the re-check reads ONLY the units
+        # this round changed. Text the auditor already passed is never re-judged or deleted
+        # (2026-10-21 pilot: a whole-page re-check emptied an FAQ answer, cut approved links
+        # and deleted lines the audit had passed). A unit the re-check would empty keeps the
+        # fixed text and is flagged for the auditor instead.
+        changed = [(uid, txt, setter) for uid, txt, setter in _units(page, fmt) if before.get(uid) != txt]
+        # REPORT-ONLY (pilot 2, 2026-10-21): when the re-check was allowed to edit, it cut the
+        # auditor's own consequence clauses, deleted whole replacement sentences and introduced
+        # new defects. The Phase 4 re-audit is the gate, so the re-check now only lists what it
+        # doubts for that auditor and never changes the page.
+        if changed:
+            mini = "\n".join(f"{uid} ::: {txt}" for uid, txt, _ in changed)
+            prompt_cc = f"SOURCE\n======\n{_source_text(a)}\n\nUNITS\n=====\n{mini}\n"
+            doubts = _checker_call(CLAIMCHECK_SYSTEM, prompt_cc, CLAIMCHECK_THINKING) or []
+            cc["passes"] = 1
+            cc["found"] = [len(doubts)]
+            cc["remaining"] = [{"id": f.get("id"), "quote": f.get("quote"), "type": f.get("type"),
+                                "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"}
+                               for f in doubts]
+    _UNITS_ALL = False
     report = {"repairs": [], "flags": []}
     page, report = _finish_guards(page, fmt, a, report, cc)
     draft.write_text(page if fmt == "markdown" else json.dumps(page, ensure_ascii=False, indent=2))
@@ -1997,6 +2107,8 @@ def main(argv=None) -> int:
                    help="json = a page object (TS/JSON stores); markdown = a whole page file (Astro/markdown/MDX stores)")
     w.add_argument("--allowed-urls", dest="allowed_urls", default="")
     w.add_argument("--facts", default="")
+    w.add_argument("--tested", default="", choices=["", "yes", "no"],
+                   help="TESTED format: yes = page qualifies (scripts/tested/check.mts), fields required; no = fields forbidden")
     # section: an ENRICHMENT of an existing page (FAQ answer, new section, body paragraphs, an
     # answer block, a rewritten section). Same models, same ladder, same meta.json; output is
     # always markdown prose the agent splices in (for TS/JSON stores it maps paragraphs to the
@@ -2025,6 +2137,7 @@ def main(argv=None) -> int:
     fx.add_argument("--floor", type=int, default=0)
     fx.add_argument("--schema", default="none", choices=sorted(SCHEMAS))
     fx.add_argument("--format", default="", choices=["", "json", "markdown"])
+    fx.add_argument("--tested", default="", choices=["", "yes", "no"])
     a = ap.parse_args(argv)
     if a.cmd == "section":
         a.format, a.schema = "markdown", "none"

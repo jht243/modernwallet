@@ -30,6 +30,10 @@ const tested = testedInfo(
   entry.title,
 );
 const canonicalUrl = new URL(`/roundup/${entry.slug}/`, Astro.site).toString();
+// TESTED format fields (optional; src/data/roundups.ts): howWeTested renders a "How We Tested"
+// H2 before the picks, and each option's whyPicked/whoFor/downside render as bold labels under
+// "Best for". Both blocks sit on the same line as their neighbours in the markup below so that
+// pages without the fields render byte-identical to before.
 // Vendor lane: company rows (with data-vendor-* for outreach), Featured slot, added vendors.
 const isVendorPage = vendorTopic(entry.slug) !== null;
 const tableRows = isVendorPage
@@ -119,7 +123,12 @@ const relatedEntries = entry.relatedComparisons
       {paragraphs(entry.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
     </header>
 
-    {entry.rankingCriteria && (
+    {entry.howWeTested?.length ? (
+      <section class="section criteria-section">
+        <h2>How We Tested</h2>
+        <ul>{entry.howWeTested.map((b) => <li set:html={linkifyInline(b)} />)}</ul>
+      </section>
+    ) : null}{entry.rankingCriteria && (
       <section class="section criteria-section" aria-label="How we ranked">
         <h2>How we ranked these {entry.category}</h2>
         <Fragment set:html={richBody(entry.rankingCriteria)} />
@@ -129,7 +138,7 @@ const relatedEntries = entry.relatedComparisons
     {entry.options.map((opt, i) => (
       <section class="section option-section" id={opt.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}>
         <h2><span class="opt-rank">#{i + 1}</span> {opt.name}</h2>
-        <p class="opt-bestfor"><strong>Best for:</strong> {opt.bestFor}</p>
+        <p class="opt-bestfor"><strong>Best for:</strong> {opt.bestFor}</p>{opt.whyPicked && <p class="opt-pick"><strong>Why we picked it:</strong> <Fragment set:html={linkifyInline(opt.whyPicked)} /></p>}{opt.whoFor && <p class="opt-pick"><strong>Who it's for:</strong> <Fragment set:html={linkifyInline(opt.whoFor)} /></p>}{opt.downside && <p class="opt-pick"><strong>The downside:</strong> <Fragment set:html={linkifyInline(opt.downside)} /></p>}
         {paragraphs(opt.description).map((para) => <p set:html={linkify(para)} />)}
         <div class="pros-cons">
           <div class="pros">

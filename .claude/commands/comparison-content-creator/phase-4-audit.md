@@ -16,7 +16,7 @@ Make sure all new content meets metadata length requirements (title/description)
 
 ## Comparison-specific checks (add to the verbatim audit above)
 Also confirm, for each new page:
-- **Both entities named in the metaTitle**, and the metaTitle is 50–60 chars.
+- **Both entities named in the metaTitle**, and the metaTitle is 50–60 chars. On a TESTED page (a `/roundup/` entry) the rule applies to the title Google shows: `metaTitle` (the entry's `title`) has no year and is 36–46 chars, because the template appends ` (Tested 2026)`.
 - **Comparison table has ≥5 rows**, each a real buyer dimension with a value for both sides (no empty/placeholder cells).
 - **Every section uses the project's real content-array key** (e.g. `content:`), NOT an invented one like `body:` — a wrong key renders the section empty and `tsc` will not catch it in a loosely-typed store.
 - **A verdict/recommendation** block is present and concrete.
@@ -35,6 +35,17 @@ Enriched pages are existing routes that got spot-edits, NOT new pages — judge 
 - **No new route, no sitemap addition** for an enriched page (Phase 5 only bumps its `lastmod`).
 
 > **On reviewer false-positives:** before reworking a page on a reviewer's say-so, spot-check the specific claim (re-grep the flagged link across all content files; re-confirm a "cannibalization" pair really shares the *same* primary keyword, not just a naming pattern). Fix only genuine defects; record dismissed false-flags in the Phase 6 summary so the decision is auditable.
+
+## TESTED format — both directions (added 2026-10-22, ported from layer3)
+
+For every new or enriched page, re-run `scripts/tested/check.mts` on the final entry fields and audit the side it lands on:
+- **TESTED page (`/roundup/` only):** FAIL unless the content standard's `GATE — Tested format` passes: `metaDescription` opens `We tested N` with N = the items the page ranks or compares; tee-up is sentence 2 of `introText` and reads cleanly into sentence 3; `howWeTested` has exactly 3 bullets matching the category set in `data/tested-methods.json` (or a new category appended there) and each bullet is true for EVERY item on the page; every option has all three pick fields (`whyPicked`, `whoFor`, `downside`); no `whyPicked` repeats its option's description; no invented specifics; no first-person use of an unshipped or discontinued feature. Pick labels written as prose inside `description` instead of fields → FAIL `tested-pick-label`.
+- **NOT-TESTED page (every `/compare/` page, and roundups the switch rejects):** FAIL if ANY part of the format appears — "We tested" in the description, intro or body, a `howWeTested` field, pick fields or labels — note `tested-on-excluded-page`. Also FAIL if a roundup ranks accounts/cards/loans/services/concepts, the switch still says `tested: true`, and its slug is not in `EXCLUDED_SLUGS` (`src/lib/testedPage.ts`), note `tested-switch-missing` (the template would show a tested byline).
+- **After the Phase 5 build**, run `python3 scripts/tested/consistency.py <every new and enriched route>`; any non-zero exit blocks the publish until fixed.
+
+## Fix-step hand-off (added 2026-10-22, ported from layer3)
+- `content_gen.py fix` applies the auditor's findings and never re-edits on its own. Its meta lists `claim_check.remaining` = sentences it doubts in the units it just changed. Hand that list to the next audit round as extra findings to check; it is not a verdict.
+- Findings the fixer returns as not fixable in place with id `NEW` ask for something that does not exist yet (a missing FAQ entry, a section, a table row). Generate each with `content_gen.py section` (enrichment, same fact list), splice it in, and re-audit. Never drop one silently, and never hand-write it.
 
 ## Advisory notes (record, do NOT block publication)
 
