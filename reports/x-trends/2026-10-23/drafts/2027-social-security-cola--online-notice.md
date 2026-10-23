@@ -1,0 +1,13 @@
+## The 2027 Social Security COLA Notice in Your Online Account
+
+To read your 2027 COLA notice online, sign in to your my Social Security account, or create one, and enroll in paperless notices by November 18, 2026. The notice then appears in the account's Message Center in late November, up to three weeks before a paper letter would arrive, according to the [Social Security Administration (SSA) press release of October 14](https://www.ssa.gov/news/en/press/releases/2026-10-14.html). If you are not enrolled in paperless notices by November 18, the SSA mails your notice in December.
+
+1. Create or sign in to your account at the [my Social Security page](https://www.ssa.gov/myaccount/).
+2. Open the Message Center.
+3. Choose Preferences and switch your notices to online, or paperless.
+4. Turn on text or email alerts if you want a message when a new notice, including the COLA notice, is posted.
+5. Open the Message Center in late November to read your notice.
+
+The online route changes only when you can read the notice. The 3.6% raise and the January 2027 payment timing are the same whether your letter arrives online or by mail. You can change your notice preference at any time from the Preferences link in the Message Center.
+
+If you are enrolled in Medicare, your 2027 premium amount also appears in the Message Center from late November. To estimate your new benefit before the notice arrives, enter your current amount in the [Social Security COLA calculator](/social-security-cola-calculator/).

@@ -1,0 +1,1 @@
+Output contract (section enrichment): return markdown only. Exactly one `## ` heading (a noun phrase) followed by body prose in short paragraphs, and at most one markdown table if the prompt asks for one. No H1, no code fences, no preamble. Use the "we" voice only as the site's experience file allows. Match the imitate-this page's register.

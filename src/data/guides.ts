@@ -1997,7 +1997,7 @@ export const GUIDES: Guide[] = [
   },
   // -- x-trends-mindmap-auto 2026-10-12: 2027-social-security-cola --
   {
-    "updated": "2026-10-14",
+    "updated": "2026-10-23",
     "slug": "2027-social-security-cola",
     "title": "2027 Social Security COLA (Cost-of-Living Adjustment) Guide",
     "metaDescription": "The 2027 Social Security COLA (cost-of-living adjustment) is 3.6%, announced October 14, 2026. See what it adds to your check and how Part B affects it.",
@@ -2028,6 +2028,10 @@ export const GUIDES: Guide[] = [
       {
         "heading": "Past Social Security COLAs Compared with the 2027 COLA",
         "body": "The official 2027 COLA of 3.6% sits above each of the three prior COLAs.\n\n- 2024: 3.2%\n- 2025: 2.5%\n- 2026: 2.8%\n- 2027: 3.6% (official)\n\nThe 2026 COLA of 2.8% took effect in January 2026. It raised the average monthly retired-worker benefit by about $56, from $2,015 to $2,071.\n\nPart B rose $17.90 that same year, from $185.00 to $202.90. For someone with the average benefit paying the standard premium, that left a net gain of about $38.10 a month before other deductions. For 2027, the projected Part B increase is $6.60, which takes a smaller share of a larger raise."
+      },
+      {
+        "heading": "The 2027 Social Security COLA Notice in Your Online Account",
+        "body": "To read your 2027 COLA notice online, sign in to your my Social Security account, or create one, and enroll in paperless notices by November 18, 2026. The notice then appears in the account's Message Center in late November, up to three weeks before a paper letter would arrive, according to the [Social Security Administration (SSA) press release of October 14](https://www.ssa.gov/news/en/press/releases/2026-10-14.html). If you are not enrolled in paperless notices by November 18, the SSA mails your notice in December.\n\n1. Create or sign in to your account at the [my Social Security page](https://www.ssa.gov/myaccount/).\n2. Open the Message Center.\n3. Choose Preferences and switch your notices to online, or paperless.\n4. Turn on text or email alerts if you want a message when a new notice, including the COLA notice, is posted.\n5. Open the Message Center in late November to read your notice.\n\nThe online route changes only when you can read the notice. The 3.6% raise and the January 2027 payment timing are the same whether your letter arrives online or by mail. You can change your notice preference at any time from the Preferences link in the Message Center.\n\nIf you are enrolled in Medicare, your 2027 premium amount also appears in the Message Center from late November. To estimate your new benefit before the notice arrives, enter your current amount in the [Social Security COLA calculator](/social-security-cola-calculator/)."
       },
       {
         "heading": "What to Do Now That the 2027 Social Security COLA Is Announced",
