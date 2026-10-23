@@ -296,3 +296,6 @@
 | /guides/inherited-ira-taxes-explained/ | 2026-10-22 | 48 | 0/0/0/0/0 | 0 |
 | /guides/trump-account-scams/ | 2026-10-22 | 26 | 0/0/0/0/0 | 0 |
 | /guides/trump-gold-coin/ | 2026-10-22 | 23 | 0/0/0/0/0 | 0 |
+| /guides/trump-account-worth-it/ | 2026-10-23 | 48 | 0/0/1/0/0 | 0 |
+| /guides/trump-account-rules/ | 2026-10-23 | 22 | 0/0/0/0/0 | 0 |
+| /social-security-cola-calculator/ | 2026-10-23 | 22 | 0/0/0/0/0 | 1 |
