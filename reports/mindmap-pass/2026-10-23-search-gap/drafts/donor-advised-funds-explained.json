@@ -1,0 +1,96 @@
+{
+  "slug": "donor-advised-funds-explained",
+  "title": "How a Donor-Advised Fund Works for Gifts of Cash and Stock",
+  "metaDescription": "A donor-advised fund lets you give cash or stock, deduct it now, and grant to charities later. See the 60% and 30% deduction limits, sponsor fees and trade-offs.",
+  "h1": "Donor-Advised Funds Explained",
+  "cardBlurb": "How a donor-advised fund works, what you can contribute, the 60% and 30% deduction limits, what three sponsors charge, and the trade-offs.",
+  "introText": "A donor-advised fund (DAF) is a charitable account you open at a public-charity sponsor. You make an irrevocable gift, take the deduction that year, and recommend grants to charities later. At ModernWallet, we treat it as a decision with two dates: the tax year you deduct and the years the grants go out.\n\nCash is generally deductible up to 60% of your adjusted gross income (AGI), and long-term appreciated stock up to 30%. A DAF lowers your tax only if you itemize, so it does little for someone who takes the standard deduction every year.",
+  "sections": [
+    {
+      "heading": "How a Donor-Advised Fund Works",
+      "body": "A donor-advised fund works in five steps, and the tax deduction comes at step three, before any charity receives money.\n\n1. **Open an account with a sponsor.** The sponsor is a public charity that holds the fund, and some sponsors let you open an account the same day.\n2. **Contribute cash or other assets.** The gift is irrevocable, so you cannot take it back once it is in the account.\n3. **Take the deduction for that tax year.** This works only if you itemize, and you need a written acknowledgment from the sponsor.\n4. **Invest the balance.** At [Fidelity Charitable](https://www.fidelitycharitable.org/giving-account.html), investment fees depend on how the money is invested.\n5. **Recommend grants to charities.** You suggest the charity and the amount, and the sponsor's board approves each grant.\n\nThe Internal Revenue Service (IRS) defines a donor-advised fund in [Publication 526](https://www.irs.gov/publications/p526) as a fund or account in which a donor can, because of being a donor, advise the fund how to distribute or invest the money. Some people write \"donor-assisted fund,\" which is a common misspelling. The IRS term is donor-advised fund, and there is no separate donor-assisted product.\n\nSteps three and five can sit years apart. You take the deduction in one tax year, and the grants to charities can follow in later years."
+    },
+    {
+      "heading": "What You Can Contribute and How Much You Can Deduct",
+      "body": "Fidelity Charitable accepts cash, stocks, bonds, and non-publicly traded assets such as private business interests in its donor-advised fund, the Giving Account. The IRS then caps how much of the gift you can deduct each year, based on your AGI and the type of asset.\n\n- **Cash given to a public charity:** generally deductible up to 60% of AGI.\n- **Capital gain property, such as long-term appreciated stock:** deductible up to 30% of AGI when you deduct the full fair market value without reducing it for the appreciation.\n- **Gifts above the limit:** the excess carries over to later years. Publication 526 walks through an example that carries $1,000 into the next year.\n\nThe limits cap the deduction in a given year. They do not cap the gift, since anything over the limit carries forward. Fidelity Charitable has no minimum initial contribution and no minimum balance, and none of the IRS figures above set a maximum account size.\n\nTwo IRS conditions can cancel the deduction entirely. You cannot deduct a DAF gift if the sponsor is a war veterans' organization, a fraternal society, or a nonprofit cemetery company. You also need a contemporaneous written acknowledgment from the sponsor stating that it has exclusive legal control over the assets you gave, so ask for that letter when you make the gift and keep it with your tax records."
+    },
+    {
+      "heading": "Sponsor Minimums and Fees",
+      "body": "Sponsor minimums range from nothing at Fidelity Charitable and [DAFgiving360](https://www.dafgiving360.org/features/fees-and-minimums) to $25,000 at [Vanguard Charitable](https://www.vanguardcharitable.org/start-giving/open-an-account). These figures come from each sponsor's own pages at the time of writing, and sponsors can change them.\n\n- **Fidelity Charitable:** no minimum initial contribution and no minimum balance. The administrative fee is the greater of $100 or 0.6% of the balance, and the percentage drops as the balance grows. Investment fees run from 0.015% to 0.93%, depending on how the money is invested.\n- **Vanguard Charitable:** a $25,000 minimum initial contribution and $5,000 for each additional gift.\n- **DAFgiving360, formerly Schwab Charitable:** no minimum for its core account.\n\nThe $100 floor at Fidelity Charitable weighs most on small accounts. $100 divided by 0.6% is about $16,667, so any balance below that pays more than 0.6%. On a $5,000 balance, the $100 fee equals 2% of the account.\n\nVanguard Charitable's administrative fees are not among the figures we pulled for this page, so ask for its fee schedule on its [account-opening page](https://www.vanguardcharitable.org/start-giving/open-an-account) before you commit $25,000. Compare DAFgiving360's charges on its [fees and minimums page](https://www.dafgiving360.org/features/fees-and-minimums)."
+    },
+    {
+      "heading": "Who Controls the Money in a DAF",
+      "body": "The sponsor holds exclusive legal control of every dollar in a DAF, and you keep advisory privileges. The sponsor's board has final say over each grant you recommend.\n\nIn practice, you pick the charity and the amount, then the sponsor approves and sends the grant. You can request anonymity on each grant. Sponsors also set rules on how often the account must give:\n\n- Fidelity Charitable requires each grant to be at least $50.\n- Fidelity Charitable expects at least one grant recommendation every two years. If none comes, Fidelity Charitable makes a grant from the account itself.\n- Most sponsors will grant out an account that sits inactive for a few years.\n- Fidelity Charitable lets you name a successor to carry on giving from the account.\n\nNo federal payout requirement applies to a DAF. The 5% minimum distribution rule covers [private foundations](https://www.irs.gov/charities-non-profits/private-foundations) only, so money can stay in a DAF with no required yearly grant. The sponsor's own inactivity rules set the practical limit on how long it can sit."
+    },
+    {
+      "heading": "Using a Donor-Advised Fund with an Inheritance or Appreciated Stock",
+      "body": "Donating appreciated stock straight to a DAF avoids capital gains tax on the gain and still earns a charitable deduction. Selling the shares first and donating the cash gives up that tax saving.\n\nInherited property follows a different rule. Under [IRS Publication 551](https://www.irs.gov/publications/p551), most inherited stocks, real estate and other property get a step-up in basis to fair market value on the date of death. If you sell soon after inheriting, you may owe little or no capital gains tax, because little gain has built up.\n\nPut together, those two rules split stock gifts into two cases:\n\n- **Stock you bought years ago with a large gain:** giving the shares directly avoids tax on that gain, with the deduction capped at 30% of AGI.\n- **Recently inherited stock with a stepped-up basis:** there is little gain to avoid, and cash qualifies for the higher 60% of AGI limit.\n\nFor the rest of a windfall, see our guide on [what to do with an inheritance](/guides/what-to-do-with-an-inheritance/)."
+    },
+    {
+      "heading": "Bunching Gifts to Clear the Standard Deduction",
+      "body": "Bunching means combining several years of planned giving into one tax year, so your itemized deductions clear the standard deduction in that year. For 2026, the standard deduction for married couples filing jointly is $32,200.\n\nMost filers take the standard deduction. A charitable gift only lowers your tax if your total itemized deductions exceed that figure. Spreading the same giving across several years can leave every year under $32,200, so none of those gifts lower your tax.\n\nA DAF makes bunching workable. You contribute several years of giving in one year and take the full deduction then. The grants to your charities still go out over the following years on your schedule.\n\nIf your itemized deductions already top $32,200 every year, each gift counts in the year you make it, and you do not need bunching to get the deduction. For how gifts to a congregation are treated, see our guide on [whether church donations are tax deductible](/guides/are-church-donations-tax-deductible/)."
+    },
+    {
+      "heading": "Donor-Advised Fund Downsides and Trade-Offs",
+      "body": "A donor-advised fund gives you an up-front deduction in exchange for giving up the money for good. Weigh these costs before you contribute:\n\n- **The gift is irrevocable.** Money in the account cannot come back to you.\n- **Fees reduce the balance.** At Fidelity Charitable, the administrative fee is at least $100, plus investment fees.\n- **The account must keep giving.** Fidelity Charitable requires $50 minimum grants and a grant every two years, and most sponsors grant out inactive accounts.\n- **No personal benefit.** The money can only go to charity.\n- **The deduction needs itemizing.** If you take the standard deduction, the contribution does not lower your tax.\n- **The sponsor decides.** Your grant recommendations are advice, and the board has final say.\n\nA DAF does not fit someone who may need the money back, or someone whose deductions will never exceed the standard deduction. Our answer changes if you would itemize in the gift year anyway. In that case the bunching benefit falls away, and the remaining reasons to use a DAF are avoiding tax on a stock gain and spreading grants over time.\n\nA private foundation is a different structure. It is subject to the 5% minimum distribution rule and pays a 1.39% excise tax on net investment income, and our [donor-advised fund vs private foundation comparison](/compare/donor-advised-fund-vs-private-foundation/) lays out the rest.\n\nHow the 60% and 30% limits apply to your return depends on your AGI and the assets you give, so run the numbers with a certified public accountant (CPA) or financial advisor before you contribute. Then compare minimums and fees across Fidelity Charitable, Vanguard Charitable and DAFgiving360, and open the donor-advised fund that fits the size of your gift."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/estate-planning/",
+      "label": "Estate planning"
+    },
+    {
+      "href": "/net-worth/",
+      "label": "Net worth"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How much money can you put in a donor-advised fund?",
+      "answer": "You can contribute more than you can deduct in one year. Cash is generally deductible up to 60% of AGI and long-term appreciated stock up to 30%, and IRS Publication 526 lets the excess carry over to later years. Sponsor minimums differ: Fidelity Charitable and DAFgiving360 have no minimum for their core accounts, while Vanguard Charitable requires $25,000 to open."
+    },
+    {
+      "question": "Can I donate appreciated stock to a donor-advised fund?",
+      "answer": "Yes. Giving appreciated shares directly to a DAF avoids capital gains tax on the gain and still earns a charitable deduction, up to 30% of AGI when you deduct the full fair market value. Fidelity Charitable accepts stocks, bonds and non-publicly traded assets such as private business interests."
+    },
+    {
+      "question": "What is the downside to a donor-advised fund?",
+      "answer": "One downside is that the gift is irrevocable, so the money cannot come back to you. Fees also apply (Fidelity Charitable charges the greater of $100 or 0.6% of the balance), sponsors require grant activity, and the deduction only lowers your tax if you itemize. The sponsor's board has final say over every grant."
+    },
+    {
+      "question": "Do I have to prove to the IRS how much I donated to charity?",
+      "answer": "For a donor-advised fund gift, yes. You need a contemporaneous written acknowledgment from the sponsor stating that it has exclusive legal control over the assets you contributed. Without that acknowledgment, IRS Publication 526 says you cannot deduct the contribution."
+    },
+    {
+      "question": "What is the difference between a donor-advised fund and a donor-assisted fund?",
+      "answer": "There is no difference. \"Donor-assisted fund\" is a common misspelling of donor-advised fund, which is the term the IRS uses. There is no separate donor-assisted product."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS Publication 526, Charitable Contributions",
+      "url": "https://www.irs.gov/publications/p526"
+    },
+    {
+      "label": "IRS Publication 551, Basis of Assets",
+      "url": "https://www.irs.gov/publications/p551"
+    },
+    {
+      "label": "IRS, Private Foundations",
+      "url": "https://www.irs.gov/charities-non-profits/private-foundations"
+    },
+    {
+      "label": "Fidelity Charitable, Giving Account",
+      "url": "https://www.fidelitycharitable.org/giving-account.html"
+    },
+    {
+      "label": "Vanguard Charitable, Open an Account",
+      "url": "https://www.vanguardcharitable.org/start-giving/open-an-account"
+    },
+    {
+      "label": "DAFgiving360, Fees and Minimums",
+      "url": "https://www.dafgiving360.org/features/fees-and-minimums"
+    }
+  ]
+}
