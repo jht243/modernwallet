@@ -13901,9 +13901,8 @@ export const GUIDES: Guide[] = [
     ],
   },
   {
-    updated: "2026-10-23",
     slug: "are-church-donations-tax-deductible",
-    updated: "2026-09-30",
+    updated: "2026-10-23",
     title: "Are Church Donations Tax Deductible? 2026 IRS Rules",
     metaDescription:
       "Are church donations tax deductible in 2026? Learn the AGI limits, new 0.5% floor, $250 receipt rule, and how bunching can beat the standard deduction.",
@@ -14672,9 +14671,8 @@ export const GUIDES: Guide[] = [
 
   // -- competitor-monitor 2026-08-21: advanced-estate-planning-strategies --
   {
-    updated: "2026-10-23",
     slug: "advanced-estate-planning-strategies",
-    updated: "2026-09-22",
+    updated: "2026-10-23",
     title: "Advanced Estate Planning Strategies for Real Estate",
     metaDescription:
       "Advanced estate planning strategies for real estate and investments: QPRTs, FLPs, GRATs, IDGTs, ILITs, the step-up in basis, and the 2026 exemption.",
