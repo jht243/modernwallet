@@ -9,7 +9,7 @@ import ToolPicks, { book } from "./ToolPicks";
 // interest. Fully standalone — no external host coupling.
 
 interface Props {
-  initialData?: Record<string, unknown> & { goalMode?: boolean; showFrequency?: boolean; savingsMode?: boolean };
+  initialData?: Record<string, unknown> & { goalMode?: boolean; showFrequency?: boolean; savingsMode?: boolean; stepUpMode?: boolean };
   heading?: string;
   subheading?: string;
 }
@@ -29,6 +29,8 @@ export default function InvestmentCalculator({ initialData, heading, subheading 
   const showFrequency = Boolean(initialData?.showFrequency);
   // savingsMode (HYSA page): savings wording (APY, interest earned) and an optional second APY to compare against.
   const savingsMode = Boolean(initialData?.savingsMode);
+  // stepUpMode (increasing-contributions page): adds a yearly % raise on the monthly contribution.
+  const stepUpMode = Boolean(initialData?.stepUpMode);
   const [compareApy, setCompareApy] = useState(0);
   // Optional federal bracket (HYSA page): shows what is left of the interest after federal income tax.
   const [taxBracket, setTaxBracket] = useState(0);
@@ -39,11 +41,14 @@ export default function InvestmentCalculator({ initialData, heading, subheading 
     years: n(initialData?.years, goalMode ? 30 : 20),
     compoundsPerYear: n(initialData?.compoundsPerYear, 12),
     targetAmount: n(initialData?.targetAmount, goalMode ? 1000000 : 0),
+    annualContributionIncreasePct: n(initialData?.annualContributionIncreasePct, 0),
   });
   const [showSchedule, setShowSchedule] = useState(false);
   const r = useMemo(() => computeInvestment(v), [v]);
   // Same deposits and compounding at the reader's current account APY; the gap is the extra interest the new rate earns.
   const cmp = useMemo(() => (savingsMode && compareApy > 0 ? computeInvestment({ ...v, annualReturnPct: compareApy }) : null), [savingsMode, compareApy, v]);
+  // Same inputs with flat contributions; the gap is what the yearly raise adds.
+  const flat = useMemo(() => (stepUpMode && (v.annualContributionIncreasePct ?? 0) > 0 ? computeInvestment({ ...v, annualContributionIncreasePct: 0 }) : null), [stepUpMode, v]);
   const set = (p: Partial<InvestmentInput>) => setV((s) => ({ ...s, ...p }));
 
   return (
@@ -70,6 +75,9 @@ export default function InvestmentCalculator({ initialData, heading, subheading 
             <Field label={savingsMode ? "APY %" : "Annual return %"}><Pct v={v.annualReturnPct} on={(x) => set({ annualReturnPct: x })} /></Field>
             <Field label="Years"><Plain v={v.years} on={(x) => set({ years: x })} /></Field>
           </div>
+          {stepUpMode && (
+            <Field label="Yearly increase in contribution %"><Pct v={v.annualContributionIncreasePct ?? 0} on={(x) => set({ annualContributionIncreasePct: x })} /></Field>
+          )}
           {savingsMode && (
             <Field label="Compare: your current account's APY (optional)"><Pct v={compareApy} on={setCompareApy} /></Field>
           )}
@@ -118,6 +126,14 @@ export default function InvestmentCalculator({ initialData, heading, subheading 
                 <span><span style={{ ...S.dot, background: PRIMARY }} /> Contributions</span>
                 <span><span style={{ ...S.dot, background: ACCENT }} /> Growth</span>
               </div>
+            </div>
+          )}
+          {stepUpMode && r.finalYearMonthlyContribution != null && (
+            <div style={S.note}>
+              Your monthly deposit rises from {fmtUSD(v.monthlyContribution)} in year 1 to <strong>{fmtUSD(r.finalYearMonthlyContribution)}</strong> in year {v.years}.
+              {flat && flat.futureValue != null && r.futureValue != null && (
+                <> Compared with keeping {fmtUSD(v.monthlyContribution)} flat, the yearly increase adds <strong>{fmtUSD(r.futureValue - flat.futureValue)}</strong> to the ending balance.</>
+              )}
             </div>
           )}
           {savingsMode && taxBracket > 0 && r.totalGrowth != null && (

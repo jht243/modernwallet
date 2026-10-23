@@ -1,0 +1,55 @@
+{
+ "slug": "investment-growth-calculator",
+ "title": "Investment Growth Calculator: Project Returns",
+ "metaDescription": "Use this free investment growth calculator to project how regular contributions and compounding can grow your portfolio over time.",
+ "targetKeyword": "investment growth calculator",
+ "h1": "Investment Growth Calculator",
+ "introText": "This investment growth calculator shows how your portfolio could grow when you invest a lump sum and make regular contributions. In the calculator above, enter your starting balance, monthly deposit, expected return, and time frame. You'll see your future balance, including how much comes from compounding growth and how much comes from the money you put in. These projections assume one fixed return, but real markets rise and fall each year. Considering a newly public company for that contribution? Read [what is an IPO](/guides/what-is-an-ipo/) before you buy on day one.",
+ "howItWorks": "The investment growth calculator above multiplies three forces: your starting balance, your ongoing contributions, and compound growth. Compounding means you earn returns on your past returns, not just your original money. Each month, your balance grows, and that larger balance earns the next round of returns.\n\nYour result depends heavily on the return you assume. Historically, a broad U.S. stock portfolio has returned just over 10% per year before inflation, according to FINRA. After inflation, that long-run figure is closer to 7% in real, spending-power terms. Pick a rate that matches your mix of stocks, bonds, and cash, then treat the output as an estimate, not a promise.",
+ "commonMistakes": [
+  "Assuming a high return like 10% for a portfolio that holds bonds or cash, which historically return far less.",
+  "Confusing nominal and real returns. A 10% nominal return is closer to 7% after inflation erodes your buying power.",
+  "Treating the projection as guaranteed. Real markets swing up and down, so no single year matches the fixed rate.",
+  "Skipping regular contributions. Steady monthly deposits often drive more of your final balance than the starting amount.",
+  "Stopping contributions early. Cutting deposits short removes the years when compounding has the most money to work on."
+ ],
+ "workedExample": "Say you start with $25,000 and add $1,000 every month for 25 years, assuming an 8% annual return compounded monthly. The calculator above projects a future balance of $1,134,531. Over those 25 years you contribute $325,000 of your own money: the $25,000 start plus $1,000 across 300 months. The remaining $809,531 is pure growth. Put another way, your $325,000 in contributions turns into roughly 2.5 times that amount, and most of your ending balance is money the market earned for you.",
+ "faqs": [
+  {
+   "question": "What is an investment growth calculator?",
+   "answer": "An investment growth calculator projects how a portfolio could grow over time from a starting balance, regular contributions, and an assumed annual return. It separates the money you put in from the growth compounding adds. Use it to set targets and compare different savings rates."
+  },
+  {
+   "question": "What return rate should I use?",
+   "answer": "Match the rate to your investment mix. A broad U.S. stock portfolio has historically returned just over 10% per year before inflation, per FINRA, while bonds and cash return far less. A conservative or blended portfolio may justify a lower assumption like 6% to 8%. Some well-known personal-finance figures assume a flat 12% — see our breakdown of [Dave Ramsey's 12% return rule](/guides/dave-ramsey-12-percent-investment-return-explained/) for how that figure compares to the historical nominal and inflation-adjusted averages."
+  },
+  {
+   "question": "What is the difference between nominal and real returns?",
+   "answer": "Nominal return is the raw percentage your money grows. Real return subtracts inflation to show your actual gain in buying power. A long-run stock return near 10% nominal is closer to 7% real, so the calculator's dollar figures buy less in the future than today."
+  },
+  {
+   "question": "Do my contributions or my starting amount matter more?",
+   "answer": "For most long-term investors, steady contributions matter more. In the example above, $300,000 in monthly deposits dwarfs the $25,000 starting balance. Consistent investing over many years usually beats trying to time the market or relying on one upfront sum."
+  },
+  {
+   "question": "Is the projected balance guaranteed?",
+   "answer": "No. The projection assumes one fixed return every year, but real markets gain and lose value unpredictably. Treat the result as a planning estimate, not a promise. To compare a safe-cash option, see the [high yield savings calculator](/investing/high-yield-savings-calculator/)."
+  },
+  {
+   "question": "Does this investment calculator account for inflation?",
+   "answer": "Not automatically — you control that by which return rate you enter. Enter a nominal rate (around 10% for a broad U.S. stock portfolio, per FINRA) to see your projected dollar balance, or enter a real, inflation-adjusted rate (closer to 7%) to see what that balance is worth in today's purchasing power. The math is identical either way; only the rate you choose changes what the output represents."
+  }
+ ],
+ "sources": [
+  {
+   "label": "FINRA — Risk (historical asset-class returns and inflation)",
+   "url": "https://www.finra.org/investors/investing/investing-basics/risk"
+  },
+  {
+   "label": "SEC Investor.gov — Compound Interest",
+   "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/compound-interest"
+  }
+ ],
+ "toolHeading": "Project your portfolio's growth",
+ "toolSubheading": "See how a lump sum plus monthly contributions compound over the years."
+}

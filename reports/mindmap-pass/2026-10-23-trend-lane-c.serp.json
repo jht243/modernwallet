@@ -1,0 +1,94 @@
+{
+ "rows": [
+  {
+   "keyword": "investment calculator with increasing contributions",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "investor.sebi.gov.in",
+    "myplan.johnhancock.com",
+    "www.financialmentor.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.myfsbonline.com",
+    "markets.ft.com",
+    "www.edwardjones.com",
+    "www.raymondjames.com",
+    "compoundinterestcalc.runasp.net",
+    "www.parkstatebank.com",
+    "www.stockspot.com.au",
+    "www.aarp.org",
+    "www.bankrate.com",
+    "workriteergo.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "Mutual fund investment calculator with increasing contributions",
+    "Compound interest investment calculator with increasing contributions",
+    "Best investment calculator with increasing contributions",
+    "Monthly investment calculator with increasing contributions",
+    "Monthly compound interest calculator",
+    "Compounding calculator with yearly contributions",
+    "Investment growth calculator",
+    "Dave Ramsey compound interest calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites investor.sebi.gov.in, myplan.johnhancock.com, www.financialmentor.com",
+   "se_results_count": 97
+  },
+  {
+   "keyword": "compound interest calculator with increasing contributions",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.financialmentor.com",
+    "myplan.johnhancock.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.stash.com",
+    "www.bnc.bank",
+    "www.kotaklife.com",
+    "www.richify.ai",
+    "www.moneyhub.co.nz",
+    "finred.usalearning.gov",
+    "monevator.com",
+    "www.mortgagecalculator.org",
+    "www.structx.com",
+    "www.stockspot.com.au"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "Free compound interest calculator with increasing contributions",
+    "Compound interest calculator with increasing contributions fidelity",
+    "Best compound interest calculator with increasing contributions",
+    "Monthly compound interest calculator",
+    "Yearly compound interest calculator",
+    "Compound interest calculator with weekly contributions",
+    "Compounding interest formula",
+    "Compound interest calculator with regular deposits"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.financialmentor.com, myplan.johnhancock.com",
+   "se_results_count": 95
+  }
+ ],
+ "cost": "DataForSEO: 2 calls, $0.00800 of $2.00 budget"
+}

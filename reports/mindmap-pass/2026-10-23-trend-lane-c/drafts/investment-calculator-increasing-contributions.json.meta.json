@@ -1,0 +1,460 @@
+{
+ "slug": "investment-calculator-increasing-contributions",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 1845,
+ "floor": 1200,
+ "input_tokens": 28376,
+ "output_tokens": 21370,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.5409,
+ "guards": {
+  "repairs": [
+   "slug None -> 'investment-calculator-increasing-contributions'"
+  ],
+  "flags": [
+   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A contributions-versus-growth bar follows, and the \"Show year-by-year growth\" bu'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2013,
+  "numbers_not_in_facts": [
+   "0.583",
+   "105452.49",
+   "11001.76",
+   "117128.07",
+   "118142",
+   "134156.69",
+   "190000",
+   "2056.86",
+   "223594.49",
+   "223650",
+   "25436.38",
+   "30671.61",
+   "360",
+   "41222.25",
+   "70000",
+   "77383.4",
+   "8783.28"
+  ],
+  "fact_budget": {
+   "fact_words": 488,
+   "floor": 1200,
+   "ratio": 0.41,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    0
+   ],
+   "applied": [
+    {
+     "id": "faqs[7].answer",
+     "quote": "If your deposit will stay the same every year, the investment growth calculator is the simpler choice, and for compounding math without a yearly raise, use the [compound interest calculator](/investing/compound-interest-calculator/).",
+     "replacement": "If your deposit will stay the same every year, the investment growth calculator fits that case, and for compounding math, see the [compound interest calculator](/investing/compound-interest-calculator/).",
+     "type": "unsupported",
+     "why": "SOURCE never describes the compound interest calculator's features or lack of a raise."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2018
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-23T07:26:48+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-23-trend-lane-c/audit/investment-calculator-increasing-contributions.findings.txt",
+    "applied": [
+     {
+      "id": "howItWorks",
+      "quote": "That is an $11,001.76 difference at 10 years and a $223,594.49 difference at 30 years.",
+      "replacement": "That is an $11,001.76 difference at 10 years and $223,594.49 at 30.",
+      "type": "1 sentence rhythm",
+      "why": "Shortens a sentence to break the run of long sentences."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Enter the full number of years you plan to invest, because cutting the timeline short removes the years where the gap grows fastest.",
+      "replacement": "Enter the full number of years you plan to invest. Cutting the timeline short removes the years where the gap grows fastest.",
+      "type": "1 sentence rhythm",
+      "why": "Splits a long sentence to vary the rhythm."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Choose a raise percent you can fund every year, because the calculator applies it from year 2 through the last year without a break.",
+      "replacement": "Choose a raise percent you can fund every year. The calculator applies it from year 2 through the last year without a break.",
+      "type": "1 sentence rhythm",
+      "why": "Splits a long sentence to vary the rhythm."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "A raise you plan to make, such as sending part of each expected pay raise to your account, gives a more usable projection than a percent you hope to reach someday.",
+      "replacement": "Pick a raise you will actually make. Sending part of each expected pay raise to your account is one way. That gives a more usable projection than a percent you hope to reach someday.",
+      "type": "1 rhythm / 2 overloaded sentence",
+      "why": "Splits a chained sentence and adds the short sentence the audit suggested."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Read the final-year deposit in the note: at a 10% raise, the base case deposit climbs from $500 to $3,057.95 a month by year 20, so lower the percent if that amount is out of reach.",
+      "replacement": "Read the final-year deposit in the note. At a 10% raise the deposit reaches $3,057.95 a month by year 20. Lower the percent if you cannot fund that.",
+      "type": "2 overloaded sentence",
+      "why": "Removes the colon and splits the chained clauses."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "If a cap applies, lower the raise percent until the final-year monthly deposit in the note, times 12, stays at or below that cap, since the final year holds the largest deposit.",
+      "replacement": "If a cap applies, lower the raise percent. Stop when the final-year monthly deposit in the note, times 12, stays at or below that cap. The final year holds the largest deposit.",
+      "type": "2 overloaded sentence",
+      "why": "Splits the chained clauses into shorter sentences."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "At a 3% yearly raise from $500, the deposit is $500.00 a month in year 1, $515.00 in year 2 ($500 x 1.03), and $530.45 in year 3 ($500 x 1.03 squared).",
+      "replacement": "At a 3% yearly raise from $500, the deposit is $500.00 a month in year 1. It is $515.00 in year 2 ($500 x 1.03). Year 3 brings $530.45 ($500 x 1.03 squared).",
+      "type": "2 overloaded sentence",
+      "why": "Splits the list sentence into shorter sentences."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Enter your own starting balance and year 1 deposit in the investment calculator with increasing contributions above, then read the note to see how much your planned yearly raise adds over a flat deposit.",
+      "replacement": "Enter your own starting balance and year 1 deposit in the investment calculator with increasing contributions above. Then read the note to see how much your planned yearly raise adds over a flat deposit.",
+      "type": "2 overloaded sentence (closing)",
+      "why": "Splits a 30-plus-word chained sentence."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Run it a second time at a lower return to see how much of that gain depends on the rate you assumed.",
+      "replacement": "Run it a second time at a lower return. That shows how much of the gain depends on the rate you assumed.",
+      "type": "2 overloaded last sentence of howItWorks",
+      "why": "Splits the final sentence into two shorter ones."
+     },
+     {
+      "id": "introText",
+      "quote": "In the calculator above, enter your starting balance, your monthly contribution for year 1, your annual return, the number of years, and the yearly increase in contribution as a percent.",
+      "replacement": "",
+      "type": "2 overloaded / 4 restates toolSubheading",
+      "why": "The input list repeats toolSubheading, so the sentence is deleted."
+     },
+     {
+      "id": "workedExample",
+      "quote": "In all three raise cases, more of the gain comes from extra deposits than from extra growth: at 10%, $223,650.00 of the $340,778.07 gain is your own money and $117,128.07 is growth.",
+      "replacement": "In all three raise cases, more of the gain comes from extra deposits than from extra growth. At 10%, $223,650.00 of the $340,778.07 gain is your own money. The other $117,128.07 is growth.",
+      "type": "2 overloaded sentence",
+      "why": "Removes the colon and splits the sentence."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "This page does not publish current limits for any account type.",
+      "replacement": "This page does not publish current limits, so confirm yours with your account provider.",
+      "type": "3 limits pointer",
+      "why": "Uses the audit's wording, which points readers to their provider."
+     },
+     {
+      "id": "commonMistakes[2]",
+      "quote": "The calculator does not check limits, so lower the raise percent until 12 times the final-year deposit fits under the cap.",
+      "replacement": "The calculator does not check limits. Confirm yours with your account provider, then lower the raise percent until 12 times the final-year deposit fits under the cap.",
+      "type": "3 add pointer to commonMistakes",
+      "why": "Adds the same provider pointer to this entry."
+     },
+     {
+      "id": "introText",
+      "quote": "You'll see your future value, the total you put in (starting balance included), and the investment growth earned on top.",
+      "replacement": "Results show your future value, total put in, and growth.",
+      "type": "4 re-lists outputs",
+      "why": "Shortens the output list."
+     },
+     {
+      "id": "introText",
+      "quote": "Below that, a bar splits your contributions from your growth, and a table lists the balance year by year.",
+      "replacement": "A bar and a year-by-year table follow.",
+      "type": "4 re-lists outputs",
+      "why": "Shortens the output list."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "The Financial Industry Regulatory Authority (FINRA) covers historical asset-class returns and inflation on its [risk page](https://www.finra.org/investors/investing/investing-basics/risk).",
+      "replacement": "The [Financial Industry Regulatory Authority (FINRA)](https://www.finra.org/investors/investing/investing-basics/risk) covers historical asset-class returns and inflation.",
+      "type": "5 FINRA link on org name",
+      "why": "Moves the link onto the organization name, as the audit requires."
+     },
+     {
+      "id": "commonMistakes[0]",
+      "quote": "Year 1 deposits match a flat plan, so both base-case balances read $16,919.19 after year 1, and the difference builds from year 2 onward.",
+      "replacement": "Year 1 deposits match a flat plan, so the difference only builds from year 2 onward.",
+      "type": "6 redundancy",
+      "why": "States only the rule, because howItWorks already gives the figure."
+     },
+     {
+      "id": "commonMistakes[1]",
+      "quote": "The calculator applies it every year, and a 10% raise turns $500 a month into $3,057.95 a month by year 20, so read the final-year deposit in the note and lower the percent if it is out of reach.",
+      "replacement": "The calculator applies it every year. Check the final-year deposit in the note and lower the percent if it is out of reach.",
+      "type": "6 redundancy ($3,057.95 repeated)",
+      "why": "Drops the repeated figure and keeps only the rule."
+     },
+     {
+      "id": "commonMistakes[4]",
+      "quote": "At 5% instead of 7%, the base case with a 3% raise reaches $290,125.95, below the $300,850.72 a flat plan reaches at 7%, so run a lower rate as well.",
+      "replacement": "A lower return can erase the gain from a raise, so run a lower rate as well.",
+      "type": "6 redundancy ($290,125.95 repeated)",
+      "why": "Drops the repeated figures and keeps only the rule."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      2
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "howItWorks",
+       "quote": "This page does not publish current limits, so confirm yours with your account provider.",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "commonMistakes[2]",
+       "quote": "Confirm yours with your account provider, then lower the raise percent until 12 times the final-year deposit fits under the cap.",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1921,
+    "flags": [
+     "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'This page does not publish current limits, so confirm yours with your account pr'; 'Confirm yours with your account provider, then lower the raise percent until 12 '"
+    ]
+   },
+   {
+    "round": 2,
+    "at": "2026-10-23T07:30:54+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-23-trend-lane-c/audit/investment-calculator-increasing-contributions.findings.txt",
+    "applied": [
+     {
+      "id": "faqs[1].answer",
+      "quote": "The deposit in year n is the year 1 amount x (1 + raise)^(n - 1), so a $500 deposit with a 3% raise is $515.00 in year 2 and $530.45 in year 3.",
+      "replacement": "The deposit in year n is the year 1 amount x (1 + raise)^(n - 1). For example, $500 with a 3% raise is $515.00 in year 2 and $530.45 in year 3.",
+      "type": "1 overloaded 34-word sentence",
+      "why": "Split into a formula sentence and a separate example sentence."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Repeat the monthly step for every month of the timeline to get the future value.",
+      "replacement": "Repeat that step for every month. The final balance is the future value.",
+      "type": "2 rhythm, long-sentence run",
+      "why": "Adds short sentences to break the run of long ones."
+     },
+     {
+      "id": "workedExample",
+      "quote": "Pick the raise whose final-year deposit you can afford, since you must deposit that amount every month of the last year.",
+      "replacement": "Pick a raise you can afford. Check its final-year deposit first. You pay that amount every month of the last year.",
+      "type": "2 rhythm, long-sentence run",
+      "why": "Short sentences break the long run; the blank line starts a new paragraph."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "It raises the deposit by that percent at the start of each year, compounds returns monthly at the annual return divided by 12, and adds each month's deposit.",
+      "replacement": "It raises the deposit by that percent at the start of each year. Returns compound monthly at the annual return divided by 12. Each month's deposit is then added.",
+      "type": "2 rhythm, long-sentence run",
+      "why": "Splits one long sentence into medium and short ones."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "The results show your future value, the total you put in, and the investment growth.",
+      "replacement": "Results show future value, total put in, and growth.",
+      "type": "2 rhythm, long-sentence run",
+      "why": "Shortens the sentence below 15 words."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "On the base case of $10,000, $500 a month, 7%, and 20 years, a 3% yearly increase adds $66,658.63, raising the balance from $300,850.72 to $367,509.35.",
+      "replacement": "On the base case of $10,000, $500 a month, 7%, and 20 years, a 3% yearly increase adds $66,658.63. The balance rises from $300,850.72 to $367,509.35.",
+      "type": "2 rhythm, long-sentence run",
+      "why": "Splits the long sentence and adds a medium one."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Starting from $0 with $300 a month for 30 years at 7%, it adds $134,156.69, raising the balance from $365,991.30 to $500,147.99.",
+      "replacement": "Starting from $0 with $300 a month for 30 years at 7%, it adds $134,156.69. The balance rises from $365,991.30 to $500,147.99.",
+      "type": "2 rhythm, long-sentence run",
+      "why": "Splits the long sentence into two medium sentences."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "In that second case you put in $171,271.50 instead of $108,000.00, and the deposit reaches $706.97 a month by year 30.",
+      "replacement": "You put in $171,271.50 instead of $108,000.00. The deposit reaches $706.97 a month by year 30.",
+      "type": "2 rhythm, long-sentence run",
+      "why": "Splits the long sentence into two medium sentences."
+     },
+     {
+      "id": "workedExample",
+      "quote": "A 3% yearly increase lifts the deposit to $876.75 a month by year 20 and projects $367,509.35 ($171,222.25 put in, $196,287.10 growth), which is $66,658.63 more than flat.",
+      "replacement": "A 3% yearly increase lifts the deposit to $876.75 a month by year 20. It projects $367,509.35, which is $66,658.63 more than flat. You put in $171,222.25, and growth is $196,287.10.",
+      "type": "4 stacked numbers; 3 paragraph length",
+      "why": "Limits each sentence to one or two figures and puts the 3% case in its own paragraph."
+     },
+     {
+      "id": "workedExample",
+      "quote": "In all three raise cases, more of the gain comes from extra deposits than from extra growth.",
+      "replacement": "In all three raise cases, more of the gain comes from extra deposits than from extra growth.",
+      "type": "3 paragraph over 3 sentences",
+      "why": "Splits the 9-sentence paragraph at this point, as the audit asked."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "The gap between the two plans grows each period, from $2,056.86 at year 5 to $11,001.76 at year 10, $30,671.61 at year 15, and $66,658.63 at year 20.",
+      "replacement": "The gap between the two plans grows each period. It is $2,056.86 at year 5 and $11,001.76 at year 10. It reaches $30,671.61 at year 15 and $66,658.63 at year 20.",
+      "type": "4 stacked numbers; 3 paragraph length",
+      "why": "Limits each sentence to two figures and starts a new paragraph."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Most of the 20-year gap is your own extra money.",
+      "replacement": "Most of the 20-year gap is your own extra money.",
+      "type": "3 paragraph over 3 sentences",
+      "why": "Starts a new paragraph to keep paragraphs at 3 sentences or fewer."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Over 10 years, the 3% plan puts in $78,783.28 against $70,000.00 flat ($10,000 plus $500 for 120 months), so $8,783.28 of the $11,001.76 gap is your own deposits.",
+      "replacement": "Over 10 years, the 3% plan puts in $78,783.28 against $70,000.00 flat. That makes $8,783.28 of the $11,001.76 gap your own deposits.",
+      "type": "4 stacked numbers; 3 paragraph length",
+      "why": "Splits the stacked figures into two sentences and starts a new paragraph."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "That leaves $118,142.00 of the $223,594.49 gap as extra growth, more than the $105,452.49 of extra deposits.",
+      "replacement": "That leaves $118,142.00 of the $223,594.49 gap as extra growth, more than the $105,452.49 of extra deposits.",
+      "type": "3 paragraph over 3 sentences",
+      "why": "Starts a new paragraph so the 10-year and 30-year paragraph stays at 3 sentences."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Pick a raise you will actually make.",
+      "replacement": "Pick a raise you will make.",
+      "type": "6 emphasis word 'actually'; 3 paragraph split",
+      "why": "Cuts the emphasis word and starts a new paragraph within the 8-sentence block."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Read the final-year deposit in the note.",
+      "replacement": "Read the final-year deposit in the note.",
+      "type": "3 paragraph over 3 sentences",
+      "why": "Completes the split of the raise-choice paragraph."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "If a cap applies, lower the raise percent.",
+      "replacement": "If a cap applies, lower the raise percent.",
+      "type": "3 paragraph over 3 sentences",
+      "why": "Keeps the contribution-cap paragraphs at 3 sentences or fewer."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "For retirement account projections, this site also has",
+      "replacement": "For retirement account projections, this site also has",
+      "type": "3 paragraph over 3 sentences",
+      "why": "Starts a new paragraph so the contribution-cap paragraph stays at 3 sentences."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "The return you enter can move the result by more than the raise does.",
+      "replacement": "The return you enter can move the result by more than the raise does.",
+      "type": "3 paragraph over 3 sentences",
+      "why": "Splits the inflation paragraph from the return-sensitivity sentences."
+     },
+     {
+      "id": "introText",
+      "quote": "A bar and a year-by-year table follow.",
+      "replacement": "A contributions-versus-growth bar follows, and the \"Show year-by-year growth\" button opens a year-by-year table.",
+      "type": "5 table shown on button",
+      "why": "The table opens through a button and is not always shown."
+     },
+     {
+      "id": "commonMistakes[0]",
+      "quote": "Year 1 deposits match a flat plan, so the difference only builds from year 2 onward.",
+      "replacement": "The difference builds from year 2 onward.",
+      "type": "7 restates howItWorks",
+      "why": "Shortens the entry to two short sentences."
+     },
+     {
+      "id": "commonMistakes[1]",
+      "quote": "The calculator applies it every year. Check the final-year deposit in the note and lower the percent if it is out of reach.",
+      "replacement": "Check the final-year deposit in the note first.",
+      "type": "7 restates howItWorks",
+      "why": "Cuts the entry to two short sentences."
+     },
+     {
+      "id": "commonMistakes[2]",
+      "quote": "The calculator does not check limits. Confirm yours with your account provider, then lower the raise percent until 12 times the final-year deposit fits under the cap.",
+      "replacement": "Confirm yours with your account provider.",
+      "type": "7 restates howItWorks",
+      "why": "Cuts the entry to two short sentences."
+     },
+     {
+      "id": "commonMistakes[3]",
+      "quote": "The calculator does not adjust for inflation, so enter a return after inflation if you want the result in today's buying power.",
+      "replacement": "Enter a return after inflation for today's buying power.",
+      "type": "7 restates howItWorks",
+      "why": "Shortens the second sentence."
+     },
+     {
+      "id": "commonMistakes[4]",
+      "quote": "A lower return can erase the gain from a raise, so run a lower rate as well.",
+      "replacement": "Run a lower rate as well.",
+      "type": "7 restates howItWorks",
+      "why": "Shortens the second sentence."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "introText",
+       "quote": "A contributions-versus-growth bar follows, and the \"Show year-by-year growth\" button opens a year-by-year table.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1845,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A contributions-versus-growth bar follows, and the \"Show year-by-year growth\" bu'"
+    ]
+   }
+  ]
+ },
+ "seconds": 217.4,
+ "response_id": "msg_011CgJm2b8duW5fLr9124dxP",
+ "generated_at": "2026-10-23T07:20:57+0000"
+}

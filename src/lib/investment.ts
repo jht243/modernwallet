@@ -14,6 +14,12 @@ export interface InvestmentInput {
   compoundsPerYear?: number;
   /** Optional savings goal — enables progress + "monthly needed" output. */
   targetAmount?: number;
+  /**
+   * Optional yearly step-up of the monthly contribution, in percent. The contribution is flat within a
+   * year and rises by this percent at the start of each following year (year 1 = `monthlyContribution`).
+   * Default 0 = flat contributions, identical to the original model.
+   */
+  annualContributionIncreasePct?: number;
 }
 
 export interface InvestmentYear {
@@ -33,11 +39,14 @@ export interface InvestmentResult {
   targetAmount: number | null;
   progressPct: number | null; // futureValue / target
   monthlyNeededForTarget: number | null; // contribution to exactly hit the target
+  /** Monthly contribution in the last year (equals the input when there is no step-up). */
+  finalYearMonthlyContribution: number | null;
 }
 
 const EMPTY: InvestmentResult = {
   futureValue: null, totalContributions: null, totalGrowth: null, effectiveMonthlyRatePct: null,
   schedule: [], targetAmount: null, progressPct: null, monthlyNeededForTarget: null,
+  finalYearMonthlyContribution: null,
 };
 
 /** Effective monthly rate given an annual rate compounded `compoundsPerYear` times. */
@@ -57,15 +66,20 @@ export function computeInvestment(input: InvestmentInput): InvestmentResult {
   const cpy = input.compoundsPerYear && input.compoundsPerYear > 0 ? input.compoundsPerYear : 12;
   const i = effectiveMonthlyRate(input.annualReturnPct ?? 0, cpy);
   const months = years * 12;
+  const stepUp = Math.max(0, input.annualContributionIncreasePct ?? 0) / 100;
 
   // Month-by-month simulation (handles any compounding frequency + monthly contributions).
   let balance = pv;
+  let contributed = pv;
   const schedule: InvestmentYear[] = [];
   for (let m = 1; m <= months; m++) {
-    balance = balance * (1 + i) + pmt;
+    // Contribution is flat within a year and steps up at the start of each later year.
+    const deposit = stepUp > 0 ? pmt * Math.pow(1 + stepUp, Math.floor((m - 1) / 12)) : pmt;
+    balance = balance * (1 + i) + deposit;
+    contributed += deposit;
     if (m % 12 === 0) {
       const year = m / 12;
-      const contributions = pv + pmt * m;
+      const contributions = contributed;
       schedule.push({
         year,
         balance: round2(balance),
@@ -76,7 +90,7 @@ export function computeInvestment(input: InvestmentInput): InvestmentResult {
   }
 
   const futureValue = balance;
-  const totalContributions = pv + pmt * months;
+  const totalContributions = contributed;
   const totalGrowth = futureValue - totalContributions;
 
   let progressPct: number | null = null;
@@ -96,6 +110,7 @@ export function computeInvestment(input: InvestmentInput): InvestmentResult {
     targetAmount: target > 0 ? target : null,
     progressPct,
     monthlyNeededForTarget,
+    finalYearMonthlyContribution: round2(stepUp > 0 ? pmt * Math.pow(1 + stepUp, years - 1) : pmt),
   };
 }
 
