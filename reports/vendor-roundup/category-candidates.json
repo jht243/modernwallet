@@ -1,47 +1,50 @@
 {
   "site": "themodernwallet.com",
   "cut_as_other_category": {
-    "net-worth-tracker": [
-      "kubera.com"
+    "small-business website": [
+      "ueni.com"
     ],
-    "savings": [
-      "accountoffers.wellsfargo.com"
+    "accounting software": [
+      "beancount.io"
+    ],
+    "stock or crypto brokers": [
+      "etoro.com"
+    ],
+    "financial advisors": [
+      "soliswealth.com",
+      "zenithim.com"
+    ],
+    "expense-tracking apps": [
+      "getfinny.app"
     ],
     "unlabelled": [
-      "activtrades.com",
       "annotation.academy",
       "bondstreet.com",
-      "deelo.ai",
-      "employers.hosco.com",
-      "hireinsouth.com",
       "info.cccu.com",
-      "pearltalent.com",
-      "servistree.com",
+      "plannedwithpurposellc.com",
+      "swbc.com",
       "theccbb.com"
-    ],
-    "business banking": [
-      "slash.com"
-    ],
-    "personal loans": [
-      "gauss.money"
-    ],
-    "credit monitoring": [
-      "creditsesame.com"
     ],
     "advisor": [
       "allworthfinancial.com"
     ],
-    "financial planning and life insurance categories": [
-      "northwesternmutual.com"
+    "business software": [
+      "cloudsquare.io"
     ],
-    "bookkeeping": [
-      "prepshift.co"
+    "business debt relief": [
+      "nationalcreditpartners.com"
     ],
     "bookkeeping/accounting software": [
       "hellobooks.ai"
     ],
+    "budgeting and money apps": [
+      "maxint.com"
+    ],
     "tax preparer": [
       "empoweredfinancesllc.com"
+    ],
+    "business credit cards": [
+      "engine.com"
     ]
   },
   "demand_candidates": [

@@ -12,12 +12,24 @@
     "Not published",
     "Closing in your home, available seven days a week"
    ]
+  },
+  {
+   "name": "Moreira Team",
+   "domain": "moreirateam.com",
+   "url": "https://moreirateam.com/",
+   "values": [
+    "Georgia and metro Atlanta buyers and refinancers",
+    "Yes",
+    "Yes",
+    "Not published",
+    "Shops over 28 lenders; says closing in as little as 17 days"
+   ]
   }
  ],
  "cut": [
   {
    "domain": "thetruthaboutmortgage.com",
-   "why": "category 1 \u2014 mortgage education blog, no loan product of its own"
+   "why": "category 1 — mortgage education blog, no loan product of its own"
   }
  ]
 }

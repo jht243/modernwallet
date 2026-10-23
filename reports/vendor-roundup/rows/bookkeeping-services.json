@@ -1,85 +1,17 @@
 {
- "slug": "best-bookkeeping-services-for-small-businesses",
- "rows": [
-  {
-   "name": "Milestone",
-   "domain": "milestone.inc",
-   "url": "https://milestone.inc/bookkeeping-services-for-small-business",
-   "values": [
-    "Not published",
-    "Not published",
-    "Tax preparation offered as an optional service; fees not published",
-    "Startups and small businesses, including SaaS, agencies and professional services"
-   ]
-  },
-  {
-   "name": "Bookkeeping and Accounting of Florida Inc.",
-   "domain": "bookkeepingandaccountinginc.com",
-   "url": "https://bookkeepingandaccountinginc.com",
-   "values": [
-    "Not published",
-    "Not published",
-    "Tax preparation offered; fees not published",
-    "Jacksonville-area businesses wanting bookkeeping, payroll and fractional CFO help"
-   ]
-  },
-  {
-   "name": "Haven",
-   "domain": "usehaven.com",
-   "url": "https://www.usehaven.com",
-   "values": [
-    "$450 per month at $20,000 monthly spending; rises with complexity",
-    "Not published",
-    "Business tax service offered; price not published",
-    "Startups and small businesses with growing finances"
-   ]
-  },
-  {
-   "name": "Less Accounting",
-   "domain": "lessaccounting.com",
-   "url": "https://www.lessaccounting.com/pricing/",
-   "values": [
-    "$299 per month (Simple, under $300K revenue)",
-    "Cleanup quote on request; price not published",
-    "Tax support and CPA-ready books; return pricing not published",
-    "Freelancers, agencies, startups and nonprofits wanting monthly bookkeeping"
-   ]
-  },
-  {
-   "name": "Pinnacle Taxx Solutions",
-   "domain": "ptsdelray.com",
-   "url": "https://ptsdelray.com",
-   "values": [
-    "$350 to $750 per month (Basic plan, custom quote)",
-    "Book cleanup offered; price not published",
-    "Year-end taxes included in the Basic plan",
-    "Small businesses, mainly in Florida, such as contractors and real estate agents"
-   ]
-  },
-  {
-   "name": "Slaton Financial Services",
-   "domain": "slatonfs.com",
-   "url": "https://slatonfs.com/services/bookkeeping/",
-   "values": [
-    "Not published; quote by phone",
-    "Not published",
-    "Tax filing and quarterly tax reports handled; fees not published",
-    "Dallas-Fort Worth businesses, nonprofits and associations wanting outsourced bookkeeping"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "accountingwebsites.org",
-   "why": "category 1 — directory, no bookkeeping product of its own"
-  },
-  {
-   "domain": "ueni.com",
-   "why": "category 4 — sells done-for-you websites, not bookkeeping; fits a small-business website category"
-  },
-  {
-   "domain": "beancount.io",
-   "why": "category 4 — plain-text accounting software, not a bookkeeping service; fits accounting software"
-  }
- ]
+  "slug": "best-bookkeeping-services-for-small-businesses",
+  "rows": [
+    {
+      "name": "SLC Bookkeeping",
+      "domain": "slcbookkeeping.com",
+      "url": "https://slcbookkeeping.com",
+      "values": [
+        "Not published",
+        "Not published",
+        "Yes, business and personal returns",
+        "Restaurants, studios, contractors, hospitality, law firms"
+      ]
+    }
+  ],
+  "cut": []
 }

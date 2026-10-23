@@ -1,33 +1,5 @@
 {
   "slug": "robinhood-agentic-trading-alternatives",
-  "rows": [
-    {
-      "name": "LuxAlgo",
-      "domain": "luxalgo.com",
-      "url": "https://www.luxalgo.com/",
-      "values": [
-        "Chart-based traders using indicators and backtesting",
-        "AI-assisted Quant coding agent and backtesting assistant",
-        "No trade execution; alerts and webhooks to brokers or bots",
-        "Free; paid $24.99 to $119.99/mo billed monthly"
-      ]
-    },
-    {
-      "name": "XBTFX",
-      "domain": "xbtfx.com",
-      "url": "https://xbtfx.com/",
-      "values": [
-        "CFD traders wanting API access or copy trading",
-        "MCP server links Claude, Cursor and Windsurf to accounts",
-        "Trading API (REST, WebSocket, FIX); PAMM, MAM and copy trading",
-        "Spreads and commissions; figures not published"
-      ]
-    }
-  ],
-  "cut": [
-    {
-      "domain": "pinggy.io",
-      "why": "category 3 \u2014 localhost tunneling developer tool, not finance"
-    }
-  ]
+  "rows": [],
+  "cut": []
 }

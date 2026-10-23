@@ -1,49 +1,10 @@
 {
   "slug": "dataannotation-alternatives",
-  "rows": [
-    {
-      "name": "Braintrust AI Training",
-      "domain": "usebraintrust.com",
-      "url": "https://usebraintrust.com/ai-training",
-      "values": [
-        "Braintrust",
-        "$20-$200/hr depending on task type",
-        "Payments processed weekly",
-        "Braintrust profile, then an AI skills interview"
-      ]
-    },
-    {
-      "name": "Claru",
-      "domain": "claru.ai",
-      "url": "https://claru.ai/",
-      "values": [
-        "Claru",
-        "Flat geo-tiered USD pay; $15/hr US, $10/hr Canada",
-        "Not published",
-        "Not published"
-      ]
-    }
-  ],
+  "rows": [],
   "cut": [
     {
-      "domain": "mitti.com",
-      "why": "category 1 — corporate-training platform roundup page, no AI training work"
-    },
-    {
-      "domain": "annotation.academy",
-      "why": "category 4 — sells an evaluator certification and lists third-party jobs, no work of its own"
-    },
-    {
-      "domain": "360learning.com",
-      "why": "category 3 — employee learning software, off-scope"
-    },
-    {
-      "domain": "usefini.com",
-      "why": "category 3 — customer-support AI software, off-scope"
-    },
-    {
-      "domain": "startaijobs.com",
-      "why": "category 1 — job board and guides, lists other employers"
+      "domain": "ficstar.com",
+      "why": "category 4 \u2014 managed web-scraping and data-extraction service, no AI annotation work for contributors"
     }
   ]
 }

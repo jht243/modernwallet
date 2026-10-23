@@ -1,26 +1,17 @@
 {
- "slug": "best-mileage-tracker-apps",
- "rows": [
-  {
-   "name": "Expensify",
-   "domain": "use.expensify.com",
-   "url": "https://use.expensify.com",
-   "values": [
-    "Free to start; limits not published",
-    "Not published",
-    "Yes, GPS",
-    "Expense reports, receipt capture, IRS-rate mileage"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "theccbb.com",
-   "why": "category 4 \u2014 sells small-business courses and consulting, no mileage product"
-  },
-  {
-   "domain": "hellobooks.ai",
-   "why": "category 4 \u2014 AI bookkeeping software; mileage is in a separate product; fits bookkeeping/accounting software category"
-  }
- ]
+  "slug": "best-mileage-tracker-apps",
+  "rows": [
+    {
+      "name": "Driversnote",
+      "domain": "driversnote.com",
+      "url": "https://driversnote.com",
+      "values": [
+        "Up to 15 trips per month",
+        "Pro $11/mo; Teams $11 per license/mo",
+        "Yes",
+        "Trip categories, reports, public API, team tools"
+      ]
+    }
+  ],
+  "cut": []
 }

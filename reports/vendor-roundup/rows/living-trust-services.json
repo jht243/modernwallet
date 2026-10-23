@@ -1,18 +1,30 @@
 {
-  "slug": "best-living-trust-services",
-  "rows": [
-    {
-      "name": "Affordable Living Trusts",
-      "domain": "affordablelivingtrusts.net",
-      "url": "https://affordablelivingtrusts.net/",
-      "values": [
-        "$500 single, $750 two-person (fee schedule Apr 2024)",
-        "Yes, included",
-        "Explains funding; CA deed transfer $200 per parcel",
-        "No (basic living trusts only)",
-        "Not published; Southern California service area"
-      ]
-    }
-  ],
-  "cut": []
+ "slug": "best-living-trust-services",
+ "rows": [
+  {
+   "name": "Affordable Living Trusts",
+   "domain": "affordablelivingtrusts.net",
+   "url": "https://affordablelivingtrusts.net/",
+   "values": [
+    "$500 single, $750 two-person (fee schedule Apr 2024)",
+    "Yes, included",
+    "Explains funding; CA deed transfer $200 per parcel",
+    "No (basic living trusts only)",
+    "Not published; Southern California service area"
+   ]
+  },
+  {
+   "name": "NAFS Benefits",
+   "domain": "nafsbenefits.com",
+   "url": "https://nafsbenefits.com/",
+   "values": [
+    "$1,599 for single or married applicants",
+    "Not published",
+    "One free deed transfer included",
+    "Not published",
+    "Plan developed with an attorney; attorney costs included"
+   ]
+  }
+ ],
+ "cut": []
 }

@@ -1,25 +1,51 @@
 {
- "slug": "best-portfolio-backtesting-and-analysis-tools",
- "rows": [
-  {
-   "name": "Portfolio ThinkTank",
-   "domain": "portfoliothinktank.com",
-   "url": "https://portfoliothinktank.com/",
-   "values": [
-    "Historical simulations; data period not published",
-    "Not published",
-    "Backtesting and optimizing a portfolio strategy; free backtest offered"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "rankite.com",
-   "why": "category 3 — SEO agency, not portfolio software"
-  },
-  {
-   "domain": "tradingfxvps.com",
-   "why": "category 3 — forex VPS hosting, not portfolio backtesting"
-  }
- ]
+  "slug": "best-portfolio-backtesting-and-analysis-tools",
+  "rows": [
+    {
+      "name": "Simply Wall St",
+      "domain": "simplywall.st",
+      "url": "https://simplywall.st/",
+      "values": [
+        "Not published",
+        "Yes, free account; 1 portfolio of up to 10 holdings",
+        "Tracking portfolio returns, dividends and valuation across global stocks"
+      ]
+    },
+    {
+      "name": "MEDGE Capital",
+      "domain": "medgecapital.com",
+      "url": "https://medgecapital.com/",
+      "values": [
+        "Yes, backtesting lab with rebalancing and costs, included in free plan",
+        "Yes, free plan available; paid plans EUR 14.99 to 159 per month",
+        "Backtesting, stress tests and what-if analysis on portfolios"
+      ]
+    },
+    {
+      "name": "Quantpedia",
+      "domain": "quantpedia.com",
+      "url": "https://quantpedia.com/",
+      "values": [
+        "Not published",
+        "Free sign-up gives about 70 strategies; full access is paid",
+        "Researching trading strategies with risk and return statistics"
+      ]
+    },
+    {
+      "name": "Capitally",
+      "domain": "mycapitally.com",
+      "url": "https://mycapitally.com/",
+      "values": [
+        "Not published; offers what-if projects tested against your history",
+        "Yes; 14-day free trial, no permanent free tier",
+        "Private portfolio tracking for DIY investors, with no broker linking"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "pearllemoninvest.com",
+      "why": "category 4 \u2014 redirects to Pearl Lemon Capital, a UK commercial finance broker; no portfolio tool"
+    }
+  ]
 }

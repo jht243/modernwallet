@@ -1,14 +1,28 @@
 {
- "slug": "best-merchant-cash-advance-companies",
- "rows": [],
- "cut": [
-  {
-   "domain": "cloudsquare.io",
-   "why": "category 4 \u2014 lending-business software on Salesforce, no funding; fits business software, not MCA providers"
-  },
-  {
-   "domain": "nationalcreditpartners.com",
-   "why": "category 4 \u2014 business debt modification service, not an advance provider; fits business debt relief"
-  }
- ]
+  "slug": "best-merchant-cash-advance-companies",
+  "rows": [
+    {
+      "name": "Advantage MCA",
+      "domain": "advantagemca.com",
+      "url": "https://advantagemca.com",
+      "values": [
+        "Merchant cash advance, micro business advance, split funding",
+        "Not published",
+        "Funding in as little as 24 hours, per site",
+        "$4,000 to $5,000 monthly revenue; 3 months of bank statements"
+      ]
+    },
+    {
+      "name": "Byzfunder",
+      "domain": "byzfunder.com",
+      "url": "https://byzfunder.com",
+      "values": [
+        "Merchant cash advance, term loan, ByzFlex",
+        "Up to $500K",
+        "Approval in minutes, funding in hours, per site",
+        "1+ year in business, $20,000+ monthly revenue, US-based"
+      ]
+    }
+  ],
+  "cut": []
 }

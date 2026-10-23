@@ -1,28 +1,17 @@
 {
- "slug": "best-ai-investing-apps",
- "rows": [
-  {
-   "name": "PortfolioGPT",
-   "domain": "portfoliogpt.xyz",
-   "url": "https://portfoliogpt.xyz",
-   "values": [
-    "Investors wanting a generated stock portfolio from their goals and risk tolerance",
-    "Free plan; $3/month or $27/year; $50/year bundle for 2+ users",
-    "OpenAI model (GPT 4.1-mini listed on paid plans)",
-    "Not published"
-   ]
-  },
-  {
-   "name": "TruthSayer AI",
-   "domain": "truthsayer.com",
-   "url": "https://truthsayer.com",
-   "values": [
-    "Retail traders wanting stock alerts for long and short trades",
-    "$5.99/month billed annually or $10.99/month; 7-day free trial",
-    "Proprietary valuation, dark-pool and earnings models; AI chat explains signals",
-    "Not published"
-   ]
-  }
- ],
- "cut": []
+  "slug": "best-ai-investing-apps",
+  "rows": [
+    {
+      "name": "TruthSayer AI",
+      "domain": "blog.truthsayer.com",
+      "url": "https://blog.truthsayer.com/",
+      "values": [
+        "Investors wanting AI entry and exit alerts to copy themselves",
+        "$10.99/month or $71.88/year; 7-day free trial",
+        "Signal alerts from valuations, dark pools and earnings strategies",
+        "None; does not take custody or trade in your account"
+      ]
+    }
+  ],
+  "cut": []
 }

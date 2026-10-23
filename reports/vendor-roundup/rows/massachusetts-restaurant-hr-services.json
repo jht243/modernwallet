@@ -1,17 +1,14 @@
 {
- "slug": "best-restaurant-hr-support-services-in-massachusetts",
- "rows": [
-  {
-   "name": "Gallagher Small Business",
-   "domain": "gallaghersmallbusiness.com",
-   "url": "https://www.gallaghersmallbusiness.com/employee-benefits-and-hr/",
-   "values": [
-    "Fractional HR, outsourced payroll and PEO listed",
-    "Not published",
-    "Outsourced payroll offered; process not described",
-    "Not published"
-   ]
-  }
- ],
- "cut": []
+  "slug": "best-restaurant-hr-support-services-in-massachusetts",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "blog.navigatepeo.com",
+      "why": "category 1 \u2014 company blog subdomain, not a product page"
+    },
+    {
+      "domain": "inertiaresourcesinc.com",
+      "why": "category 4 \u2014 commercial energy broker, offers no HR or payroll service"
+    }
+  ]
 }

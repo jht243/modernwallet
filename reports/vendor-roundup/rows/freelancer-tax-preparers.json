@@ -1,37 +1,5 @@
 {
- "slug": "best-tax-preparation-services-for-freelancers",
- "rows": [
-  {
-   "name": "Reed Corp",
-   "domain": "reedcorp.tax",
-   "url": "https://reedcorp.tax",
-   "values": [
-    "CPA firm in New York City",
-    "Not published; online fee estimator",
-    "Multi-state filing offered; states not listed",
-    "Creative freelancers and multi-source income earners"
-   ]
-  },
-  {
-   "name": "Polaris Tax & Accounting",
-   "domain": "polaristaxandaccounting.com",
-   "url": "https://polaristaxandaccounting.com/resources/pricing/",
-   "values": [
-    "Accounting and tax firm, Charlotte NC",
-    "Not published for Schedule C; individual returns from $350",
-    "Not stated",
-    "Individuals and business owners wanting tax prep and bookkeeping"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "zenithim.com",
-   "why": "category 4 — registered investment advisor offering tax planning, not return preparation; fits financial advisors"
-  },
-  {
-   "domain": "accounting.com",
-   "why": "category 1 — publisher, no tax preparation product of its own"
-  }
- ]
+  "slug": "best-tax-preparation-services-for-freelancers",
+  "rows": [],
+  "cut": []
 }

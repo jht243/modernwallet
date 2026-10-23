@@ -1,6 +1,19 @@
 {
  "slug": "personal-loan-rates-by-lender",
- "rows": [],
+ "rows": [
+  {
+   "name": "OnPoint Community Credit Union",
+   "domain": "onpointcu.com",
+   "url": "https://www.onpointcu.com/",
+   "values": [
+    "Credit union members wanting small or mid-size loans",
+    "$100 to $25,000 (personal loan)",
+    "11.00% to 16.00% fixed APR as of Oct 2026",
+    "None on loan; $24 annual fee on line of credit",
+    "Not published"
+   ]
+  }
+ ],
  "cut": [
   {
    "domain": "acornfinance.com",
@@ -9,6 +22,10 @@
   {
    "domain": "progressive.com",
    "why": "category 1 — insurer; its personal loan page only refers to Best Egg and says Progressive does not lend or arrange the loans"
+  },
+  {
+   "domain": "quickenloans.com",
+   "why": "category 1 — lender-matching service; site states it is not acting as a lender or broker"
   }
  ]
 }

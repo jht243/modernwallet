@@ -144,6 +144,18 @@
       "Not published"
      ],
      "added": "2026-10-22"
+    },
+    {
+     "name": "TruthSayer AI",
+     "domain": "blog.truthsayer.com",
+     "url": "https://blog.truthsayer.com/",
+     "values": [
+      "Investors wanting AI entry and exit alerts to copy themselves",
+      "$10.99/month or $71.88/year; 7-day free trial",
+      "Signal alerts from valuations, dark pools and earnings strategies",
+      "None; does not take custody or trade in your account"
+     ],
+     "added": "2026-10-23"
     }
    ]
   },
@@ -518,6 +530,19 @@
       "Closing in your home, available seven days a week"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "Moreira Team",
+     "domain": "moreirateam.com",
+     "url": "https://moreirateam.com/",
+     "values": [
+      "Georgia and metro Atlanta buyers and refinancers",
+      "Yes",
+      "Yes",
+      "Not published",
+      "Shops over 28 lenders; says closing in as little as 17 days"
+     ],
+     "added": "2026-10-23"
     }
    ]
   },
@@ -596,6 +621,19 @@
       "Self-directed investors holding real estate, crypto or private assets"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "Principal",
+     "domain": "principal.com",
+     "url": "https://www.principal.com/",
+     "values": [
+      "Not published",
+      "Not published",
+      "Principal SimpleInvest managed portfolios",
+      "Not published",
+      "IRA from a retirement-plan provider"
+     ],
+     "added": "2026-10-23"
     }
    ]
   },
@@ -1414,6 +1452,19 @@
       "A+ BBB rating per site"
      ],
      "added": "2026-10-21"
+    },
+    {
+     "name": "Advance Tax Relief",
+     "domain": "advancetaxreliefexperts.com",
+     "url": "https://advancetaxreliefexperts.com",
+     "values": [
+      "$20,000 and up",
+      "Tax attorneys, CPAs and enrolled agents, per site",
+      "Not published; free consultation offered",
+      "13+ years",
+      "BBB A+ rating stated on site"
+     ],
+     "added": "2026-10-23"
     }
    ]
   },
@@ -1864,6 +1915,19 @@
       "Not published; Southern California service area"
      ],
      "added": "2026-10-21"
+    },
+    {
+     "name": "NAFS Benefits",
+     "domain": "nafsbenefits.com",
+     "url": "https://nafsbenefits.com/",
+     "values": [
+      "$1,599 for single or married applicants",
+      "Not published",
+      "One free deed transfer included",
+      "Not published",
+      "Plan developed with an attorney; attorney costs included"
+     ],
+     "added": "2026-10-23"
     }
    ]
   },
@@ -2511,6 +2575,19 @@
       "Not published"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "OnPoint Community Credit Union",
+     "domain": "onpointcu.com",
+     "url": "https://www.onpointcu.com/",
+     "values": [
+      "Credit union members wanting small or mid-size loans",
+      "$100 to $25,000 (personal loan)",
+      "11.00% to 16.00% fixed APR as of Oct 2026",
+      "None on loan; $24 annual fee on line of credit",
+      "Not published"
+     ],
+     "added": "2026-10-23"
     }
    ]
   },
@@ -2842,6 +2919,50 @@
       "Backtesting and optimizing a portfolio strategy; free backtest offered"
      ],
      "added": "2026-10-21"
+    },
+    {
+     "name": "Simply Wall St",
+     "domain": "simplywall.st",
+     "url": "https://simplywall.st/",
+     "values": [
+      "Not published",
+      "Yes, free account; 1 portfolio of up to 10 holdings",
+      "Tracking portfolio returns, dividends and valuation across global stocks"
+     ],
+     "added": "2026-10-23"
+    },
+    {
+     "name": "MEDGE Capital",
+     "domain": "medgecapital.com",
+     "url": "https://medgecapital.com/",
+     "values": [
+      "Yes, backtesting lab with rebalancing and costs, included in free plan",
+      "Yes, free plan available; paid plans EUR 14.99 to 159 per month",
+      "Backtesting, stress tests and what-if analysis on portfolios"
+     ],
+     "added": "2026-10-23"
+    },
+    {
+     "name": "Quantpedia",
+     "domain": "quantpedia.com",
+     "url": "https://quantpedia.com/",
+     "values": [
+      "Not published",
+      "Free sign-up gives about 70 strategies; full access is paid",
+      "Researching trading strategies with risk and return statistics"
+     ],
+     "added": "2026-10-23"
+    },
+    {
+     "name": "Capitally",
+     "domain": "mycapitally.com",
+     "url": "https://mycapitally.com/",
+     "values": [
+      "Not published; offers what-if projects tested against your history",
+      "Yes; 14-day free trial, no permanent free tier",
+      "Private portfolio tracking for DIY investors, with no broker linking"
+     ],
+     "added": "2026-10-23"
     }
    ]
   },
@@ -3075,6 +3196,30 @@
       "2+ years in business, 5+ employees, $25,000 monthly revenue"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "Advantage MCA",
+     "domain": "advantagemca.com",
+     "url": "https://advantagemca.com",
+     "values": [
+      "Merchant cash advance, micro business advance, split funding",
+      "Not published",
+      "Funding in as little as 24 hours, per site",
+      "$4,000 to $5,000 monthly revenue; 3 months of bank statements"
+     ],
+     "added": "2026-10-23"
+    },
+    {
+     "name": "Byzfunder",
+     "domain": "byzfunder.com",
+     "url": "https://byzfunder.com",
+     "values": [
+      "Merchant cash advance, term loan, ByzFlex",
+      "Up to $500K",
+      "Approval in minutes, funding in hours, per site",
+      "1+ year in business, $20,000+ monthly revenue, US-based"
+     ],
+     "added": "2026-10-23"
     }
    ]
   },
@@ -3337,6 +3482,30 @@
       "Commercial loan broker placing files with partner lenders; advances up to 90%"
      ],
      "added": "2026-10-21"
+    },
+    {
+     "name": "Bigthink Capital",
+     "domain": "bigthinkcapital.com",
+     "url": "https://bigthinkcapital.com",
+     "values": [
+      "Invoice factoring alongside SBA, term and credit-line products",
+      "Not published",
+      "Decisions within 24 hours; funding in as little as 3 business days",
+      "Not published; site states no upfront fees"
+     ],
+     "added": "2026-10-23"
+    },
+    {
+     "name": "Viva Capital Funding",
+     "domain": "vivacf.net",
+     "url": "https://vivacf.net",
+     "values": [
+      "Industry factoring: transportation, healthcare, staffing, construction",
+      "Not published",
+      "Approvals in as little as 8 hours; same-day funding available",
+      "Advances up to 100% less fee; rates from 0.25%"
+     ],
+     "added": "2026-10-23"
     }
    ]
   },
@@ -3893,6 +4062,18 @@
       "Expense reports, receipt capture, IRS-rate mileage"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "Driversnote",
+     "domain": "driversnote.com",
+     "url": "https://driversnote.com",
+     "values": [
+      "Up to 15 trips per month",
+      "Pro $11/mo; Teams $11 per license/mo",
+      "Yes",
+      "Trip categories, reports, public API, team tools"
+     ],
+     "added": "2026-10-23"
     }
    ]
   },
@@ -4794,6 +4975,18 @@
       "Dallas-Fort Worth businesses, nonprofits and associations wanting outsourced bookkeeping"
      ],
      "added": "2026-10-22"
+    },
+    {
+     "name": "SLC Bookkeeping",
+     "domain": "slcbookkeeping.com",
+     "url": "https://slcbookkeeping.com",
+     "values": [
+      "Not published",
+      "Not published",
+      "Yes, business and personal returns",
+      "Restaurants, studios, contractors, hospitality, law firms"
+     ],
+     "added": "2026-10-23"
     }
    ]
   },

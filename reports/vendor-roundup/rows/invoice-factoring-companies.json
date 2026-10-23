@@ -2,25 +2,44 @@
   "slug": "best-invoice-factoring-companies",
   "rows": [
     {
-      "name": "Trifecta Business Group",
-      "domain": "trifectabusinessgroup.com",
-      "url": "https://trifectabusinessgroup.com/",
+      "name": "Bigthink Capital",
+      "domain": "bigthinkcapital.com",
+      "url": "https://bigthinkcapital.com",
       "values": [
-        "Unpaid B2B invoices from commercial or government customers; freight and staffing pages",
+        "Invoice factoring alongside SBA, term and credit-line products",
         "Not published",
-        "3 to 7 days; varies by file and lender",
-        "Commercial loan broker placing files with partner lenders; advances up to 90%"
+        "Decisions within 24 hours; funding in as little as 3 business days",
+        "Not published; site states no upfront fees"
+      ]
+    },
+    {
+      "name": "Viva Capital Funding",
+      "domain": "vivacf.net",
+      "url": "https://vivacf.net",
+      "values": [
+        "Industry factoring: transportation, healthcare, staffing, construction",
+        "Not published",
+        "Approvals in as little as 8 hours; same-day funding available",
+        "Advances up to 100% less fee; rates from 0.25%"
       ]
     }
   ],
   "cut": [
     {
-      "domain": "blog.factorfunding.com",
-      "why": "category 1 — blog subdomain of Factor Funding, which is already listed as factorfunding.com"
+      "domain": "coyotewealth.com",
+      "why": "category 1 \u2014 directory and referral platform for accountants and advisors, no factoring product"
     },
     {
-      "domain": "bondstreet.com",
-      "why": "category 4 — small business term lender; no factoring product on its pages (invoice factoring page is an explainer)"
+      "domain": "loanwise.ai",
+      "why": "category 1 \u2014 loan comparison tools and lender rankings, no product of its own"
+    },
+    {
+      "domain": "b2breviews.com",
+      "why": "category 1 \u2014 review and comparison site, no product of its own"
+    },
+    {
+      "domain": "levelset.com",
+      "why": "category 4 \u2014 construction lien and payment-notice software, no factoring product; fits no factoring row"
     }
   ]
 }

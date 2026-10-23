@@ -2,74 +2,17 @@
   "slug": "best-tax-relief-companies",
   "rows": [
     {
-      "name": "Innovative Tax Relief",
-      "domain": "innovativetaxreliefllc.com",
-      "url": "https://innovativetaxreliefllc.com/",
+      "name": "Advance Tax Relief",
+      "domain": "advancetaxreliefexperts.com",
+      "url": "https://advancetaxreliefexperts.com",
       "values": [
-        "Not published",
-        "Enrolled Agents, CPAs and tax attorneys",
-        "Most cases $2,000 to $7,500 total, billed in phases",
-        "10 (founded 2016)",
-        "BBB Accredited, A+ per site; no license numbers listed"
-      ]
-    },
-    {
-      "name": "TaxAudit",
-      "domain": "taxaudit.com",
-      "url": "https://taxaudit.com/",
-      "values": [
-        "Not published",
-        "Not published",
-        "Free consultation; assessment fees start at $400 (payroll tax debt)",
-        "30+ (TaxResources, Inc., since 1998)",
-        "BBB-A badge shown; no license numbers listed"
-      ]
-    },
-    {
-      "name": "Tax Relief Helpers",
-      "domain": "taxreliefhelpers.com",
-      "url": "https://taxreliefhelpers.com/",
-      "values": [
-        "Not published",
-        "Tax attorney and enrolled agent on team",
-        "Free consultation; no upfront fees; amounts not published",
-        "Not published",
-        "BBB profile linked; no license numbers listed"
-      ]
-    },
-    {
-      "name": "Tax Relief Advocates",
-      "domain": "tra.com",
-      "url": "https://tra.com/",
-      "values": [
-        "Not published",
-        "Licensed tax resolution professionals and attorneys; no credentials listed",
-        "Free consultation; fees not published",
-        "Not published",
-        "BBB profile linked; no license numbers listed"
-      ]
-    },
-    {
-      "name": "Washington Tax Services",
-      "domain": "watax.com",
-      "url": "https://watax.com/",
-      "values": [
-        "Not published",
-        "Enrolled Agents and tax resolution experts",
-        "Flat fee; amount not published",
-        "37 (since 1989)",
-        "A+ BBB rating per site"
+        "$20,000 and up",
+        "Tax attorneys, CPAs and enrolled agents, per site",
+        "Not published; free consultation offered",
+        "13+ years",
+        "BBB A+ rating stated on site"
       ]
     }
   ],
-  "cut": [
-    {
-      "domain": "empoweredfinancesllc.com",
-      "why": "category 4 — Dallas tax prep and planning firm, not a tax relief provider; fits tax preparer pages"
-    },
-    {
-      "domain": "taxreliefreport.org",
-      "why": "category 1 — review and comparison site per its own listing; homepage returned empty on fetch"
-    }
-  ]
+  "cut": []
 }

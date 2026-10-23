@@ -1,17 +1,5 @@
 {
  "slug": "best-ai-stock-pickers",
- "rows": [
-  {
-   "name": "Multibagg AI",
-   "domain": "multibagg.ai",
-   "url": "https://multibagg.ai",
-   "values": [
-    "Retail investors researching Indian stocks (NSE and BSE)",
-    "Ask Iris answers from company filings; AI-curated stock themes",
-    "Yes (Standard plan, 7-day paid trial)",
-    "₹7,199/year (Pro)"
-   ]
-  }
- ],
+ "rows": [],
  "cut": []
 }
