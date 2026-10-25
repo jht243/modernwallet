@@ -2,14 +2,25 @@
   "slug": "best-bookkeeping-services-for-small-businesses",
   "rows": [
     {
-      "name": "SLC Bookkeeping",
-      "domain": "slcbookkeeping.com",
-      "url": "https://slcbookkeeping.com",
+      "name": "Best Pro Books & Tax",
+      "domain": "bestprobooksntax.com",
+      "url": "https://bestprobooksntax.com",
+      "values": [
+        "Not published; fixed price agreed upfront per client",
+        "Books Clean-up service for multi-year backlogs; price Not published",
+        "Annual business and personal returns, quarterly estimates, sales tax and 1099 filings",
+        "Start-ups and small to medium businesses, served remotely across the U.S."
+      ]
+    },
+    {
+      "name": "Two Roads",
+      "domain": "tworoadsco.com",
+      "url": "https://tworoadsco.com",
       "values": [
         "Not published",
         "Not published",
-        "Yes, business and personal returns",
-        "Restaurants, studios, contractors, hospitality, law firms"
+        "Separate monthly tax subscription with a dedicated tax professional; returns in bookkeeping Not published",
+        "Restaurants, medical practices, retail, IT, creative, professional and home services, non-profits"
       ]
     }
   ],

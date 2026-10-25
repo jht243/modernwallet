@@ -1,14 +1,33 @@
 {
   "slug": "best-invoicing-apps-for-freelancers",
-  "rows": [],
-  "cut": [
+  "rows": [
     {
-      "domain": "auritrack.com",
-      "why": "category 4 \u2014 expense tracker and budgeting app with no invoicing feature"
+      "name": "Assembly",
+      "domain": "assembly.com",
+      "url": "https://assembly.com/",
+      "values": [
+        "Free; Starter $49/mo, or $29/mo billed annually",
+        "Not published",
+        "Fees apply on payments; rates not published",
+        "Client portal and CRM for firms that bill clients"
+      ]
     },
     {
-      "domain": "blog.reinvoice.co",
-      "why": "category 1 \u2014 company blog subdomain, not a product page"
+      "name": "SchedulingKit",
+      "domain": "schedulingkit.com",
+      "url": "https://schedulingkit.com/",
+      "values": [
+        "Free; Standard $12/mo, Pro $20/mo per seat",
+        "SMS reminders from the Standard plan",
+        "Not published",
+        "Service businesses billing at booking via Stripe or PayPal"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "ventora.cc",
+      "why": "category 3 \u2014 AI startup/app builder, not an invoicing or personal or small-business finance product"
     }
   ]
 }

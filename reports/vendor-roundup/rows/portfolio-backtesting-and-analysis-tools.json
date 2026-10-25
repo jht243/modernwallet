@@ -2,50 +2,20 @@
   "slug": "best-portfolio-backtesting-and-analysis-tools",
   "rows": [
     {
-      "name": "Simply Wall St",
-      "domain": "simplywall.st",
-      "url": "https://simplywall.st/",
+      "name": "Curvo",
+      "domain": "curvo.eu",
+      "url": "https://curvo.eu/backtest",
       "values": [
         "Not published",
-        "Yes, free account; 1 portfolio of up to 10 holdings",
-        "Tracking portfolio returns, dividends and valuation across global stocks"
-      ]
-    },
-    {
-      "name": "MEDGE Capital",
-      "domain": "medgecapital.com",
-      "url": "https://medgecapital.com/",
-      "values": [
-        "Yes, backtesting lab with rebalancing and costs, included in free plan",
-        "Yes, free plan available; paid plans EUR 14.99 to 159 per month",
-        "Backtesting, stress tests and what-if analysis on portfolios"
-      ]
-    },
-    {
-      "name": "Quantpedia",
-      "domain": "quantpedia.com",
-      "url": "https://quantpedia.com/",
-      "values": [
         "Not published",
-        "Free sign-up gives about 70 strategies; full access is paid",
-        "Researching trading strategies with risk and return statistics"
-      ]
-    },
-    {
-      "name": "Capitally",
-      "domain": "mycapitally.com",
-      "url": "https://mycapitally.com/",
-      "values": [
-        "Not published; offers what-if projects tested against your history",
-        "Yes; 14-day free trial, no permanent free tier",
-        "Private portfolio tracking for DIY investors, with no broker linking"
+        "European index investors; managed portfolios carry a 1% to 0.60% annual fee by asset tier"
       ]
     }
   ],
   "cut": [
     {
-      "domain": "pearllemoninvest.com",
-      "why": "category 4 \u2014 redirects to Pearl Lemon Capital, a UK commercial finance broker; no portfolio tool"
+      "domain": "goatfundedtrader.com",
+      "why": "category 4 \u2014 prop trading evaluation program with simulated capital, no backtesting; fits a prop firm page"
     }
   ]
 }

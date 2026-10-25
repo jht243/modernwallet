@@ -2,14 +2,14 @@
   "slug": "best-mileage-tracker-apps",
   "rows": [
     {
-      "name": "Driversnote",
-      "domain": "driversnote.com",
-      "url": "https://driversnote.com",
+      "name": "DayHatch (formerly TripTally)",
+      "domain": "mytriptally.com",
+      "url": "https://mytriptally.com/",
       "values": [
-        "Up to 15 trips per month",
-        "Pro $11/mo; Teams $11 per license/mo",
-        "Yes",
-        "Trip categories, reports, public API, team tools"
+        "Unlimited GPS trips",
+        "Pro $4.99/mo or $29.99/yr",
+        "Pro only (auto-start)",
+        "Earnings, tax estimates, receipt photos"
       ]
     }
   ],

@@ -1,18 +1,14 @@
 {
   "slug": "best-tax-relief-companies",
-  "rows": [
+  "rows": [],
+  "cut": [
     {
-      "name": "Advance Tax Relief",
-      "domain": "advancetaxreliefexperts.com",
-      "url": "https://advancetaxreliefexperts.com",
-      "values": [
-        "$20,000 and up",
-        "Tax attorneys, CPAs and enrolled agents, per site",
-        "Not published; free consultation offered",
-        "13+ years",
-        "BBB A+ rating stated on site"
-      ]
+      "domain": "freshstarttaxrelief.com",
+      "why": "category 2 \u2014 301 redirects to mmtaxrelief.com, a different brand"
+    },
+    {
+      "domain": "curadebt.com",
+      "why": "category 1 \u2014 refers inquiries to independent providers, no service of its own"
     }
-  ],
-  "cut": []
+  ]
 }

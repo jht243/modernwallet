@@ -2,27 +2,29 @@
   "slug": "best-merchant-cash-advance-companies",
   "rows": [
     {
-      "name": "Advantage MCA",
-      "domain": "advantagemca.com",
-      "url": "https://advantagemca.com",
+      "name": "Elite Funders",
+      "domain": "elitefunders.com",
+      "url": "https://elitefunders.com/",
       "values": [
-        "Merchant cash advance, micro business advance, split funding",
-        "Not published",
-        "Funding in as little as 24 hours, per site",
-        "$4,000 to $5,000 monthly revenue; 3 months of bank statements"
-      ]
-    },
-    {
-      "name": "Byzfunder",
-      "domain": "byzfunder.com",
-      "url": "https://byzfunder.com",
-      "values": [
-        "Merchant cash advance, term loan, ByzFlex",
-        "Up to $500K",
-        "Approval in minutes, funding in hours, per site",
-        "1+ year in business, $20,000+ monthly revenue, US-based"
+        "MCA, revenue-based, term, SBA, line of credit (broker, 70+ lenders)",
+        "MCA up to $2M; programs $10K to $5M",
+        "MCA same day; most funding 24-72 hours",
+        "Basic info, 3 months bank statements; 500+ credit score listed"
       ]
     }
   ],
-  "cut": []
+  "cut": [
+    {
+      "domain": "lendfoundry.com",
+      "why": "category 3 \u2014 loan-origination software sold to lenders, no financing product for businesses; fits no finance category on this site"
+    },
+    {
+      "domain": "singerlawgroup.com",
+      "why": "category 4 \u2014 law firm offering MCA defense and bankruptcy, not an MCA provider; better category is business debt relief or legal services"
+    },
+    {
+      "domain": "convergehub.com",
+      "why": "category 4 \u2014 CRM software for small businesses, no funding product; better category is small-business software"
+    }
+  ]
 }

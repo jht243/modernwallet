@@ -1,32 +1,14 @@
 {
- "slug": "best-estate-planning-software",
- "rows": [
-  {
-   "name": "Vanilla",
-   "domain": "justvanilla.com",
-   "url": "https://www.justvanilla.com",
-   "values": [
-    "Vanilla (advisor, RIA and wealth firm platform)",
-    "Wills covered; individual/couple pricing not published",
-    "Trusts covered via guided questionnaires",
-    "Not published",
-    "Abstraction Services team of former attorneys; Vanilla Attorney Network",
-    "Web-based platform sold per user to advisors and firms"
-   ]
-  },
-  {
-   "name": "Wealth.com",
-   "domain": "wealth.com",
-   "url": "https://wealth.com",
-   "values": [
-    "Wealth.com (advisor and RIA platform)",
-    "Last Will & Testament and pourover will; pricing not published",
-    "Revocable trust",
-    "Yes: Financial POA and Advance Health Care Directive",
-    "Not published; site says it is not a law firm",
-    "Web-based; clients access it only through a financial advisor"
-   ]
-  }
- ],
- "cut": []
+  "slug": "best-estate-planning-software",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "sheetstaxes.com",
+      "why": "category 4 \u2014 accounting and tax firm with no estate planning documents; better: tax preparation or bookkeeping services"
+    },
+    {
+      "domain": "milemarker.co",
+      "why": "category 3 \u2014 data infrastructure for wealth management firms, not a personal or small-business finance product"
+    }
+  ]
 }

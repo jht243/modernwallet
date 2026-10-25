@@ -3,12 +3,12 @@
   "rows": [],
   "cut": [
     {
-      "domain": "allworthfinancial.com",
-      "why": "category 4 — fee-based advisory firm (RIA); no custodial Roth IRA product found; fits an advisor category"
+      "domain": "lifescapes.wellsfargoadvisors.com",
+      "why": "category 1 \u2014 educational content site from Wells Fargo Advisors, no account product; brokerage lives at wellsfargoadvisors.com"
     },
     {
-      "domain": "tradingsim.com",
-      "why": "category 3 — trading simulator for practice, no retirement accounts, outside this category"
+      "domain": "wealthenhancement.com",
+      "why": "category 4 \u2014 wealth-management advisory firm, no custodial Roth IRA found; fits a financial advisor category"
     }
   ]
 }

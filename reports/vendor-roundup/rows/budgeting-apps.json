@@ -1,22 +1,28 @@
 {
   "slug": "best-budgeting-apps",
-  "rows": [],
-  "cut": [
+  "rows": [
     {
-      "domain": "projectm-mindmoney.com",
-      "why": "category 1 — blog, ranked list article"
+      "name": "Lucky Friday",
+      "domain": "luckyfriday.app",
+      "url": "https://luckyfriday.app/",
+      "values": [
+        "Free; paid $12.99/mo per user",
+        "No; Free plan has no account linking",
+        "Flexible category budgets",
+        "Custom categories and biweekly or irregular income"
+      ]
     },
     {
-      "domain": "ptmoney.com",
-      "why": "category 1 — review site, no product of its own"
-    },
-    {
-      "domain": "infinitepig.com",
-      "why": "category 2 — homepage renders only a Spanish 'Roman Economics' web app title, no readable pricing or product facts to verify"
-    },
-    {
-      "domain": "tekrevol.com",
-      "why": "category 1 — software agency blog, alternatives list"
+      "name": "Hearth",
+      "domain": "hearthbudget.com",
+      "url": "https://hearthbudget.com/",
+      "values": [
+        "Free; Premium $4.99/mo or $34.99/yr",
+        "No; manual entry, bank sync is Premium",
+        "Envelope",
+        "Couples sharing one budget"
+      ]
     }
-  ]
+  ],
+  "cut": []
 }

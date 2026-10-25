@@ -1,14 +1,22 @@
 {
   "slug": "best-restaurant-hr-support-services-in-massachusetts",
-  "rows": [],
+  "rows": [
+    {
+      "name": "Thrive HRO",
+      "domain": "thrivehro.com",
+      "url": "https://thrivehro.com/",
+      "values": [
+        "HR outsourcing with PEO-style support",
+        "Not published",
+        "Not published",
+        "Not published"
+      ]
+    }
+  ],
   "cut": [
     {
-      "domain": "blog.navigatepeo.com",
-      "why": "category 1 \u2014 company blog subdomain, not a product page"
-    },
-    {
-      "domain": "inertiaresourcesinc.com",
-      "why": "category 4 \u2014 commercial energy broker, offers no HR or payroll service"
+      "domain": "bhsg.com",
+      "why": "category 4 \u2014 Beacon Hill Staffing Group is a nationwide staffing firm with no restaurant HR support service; better fit: staffing agencies"
     }
   ]
 }

@@ -1,18 +1,22 @@
 {
- "slug": "best-student-loans-bad-credit",
- "rows": [
-  {
-   "name": "Edly",
-   "domain": "edly.com",
-   "url": "https://edly.com/",
-   "values": [
-    "Income-based payments, with a no-cosigner option",
-    "Soft inquiry to check rate; hard inquiry when selecting a loan",
-    "Not required (No Cosigner FIT Loan)",
-    "Fixed from 9.9% cosigned, 11.9% no cosigner, as of Oct 2026",
-    "Post-school payments are a percentage of income, up to 180 months"
-   ]
-  }
- ],
- "cut": []
+  "slug": "best-student-loans-bad-credit",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "scholaroo.nationaltoday.com",
+      "why": "category 1 \u2014 redirects to scholaroo.com, a scholarship and loan comparison site with no own lending product"
+    },
+    {
+      "domain": "elmselect.com",
+      "why": "category 1 \u2014 self-described private student loan comparison tool, not a lender"
+    },
+    {
+      "domain": "asapcreditrepairusa.com",
+      "why": "category 4 \u2014 credit repair service, no student loans; fits a credit repair page"
+    },
+    {
+      "domain": "matinmehrabi.com",
+      "why": "category 3 \u2014 personal portfolio of a CG and motion design artist, no financial product"
+    }
+  ]
 }

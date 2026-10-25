@@ -1,10 +1,23 @@
 {
- "slug": "best-robo-advisors",
- "rows": [],
- "cut": [
-  {
-   "domain": "budgetsmart.io",
-   "why": "category 4 \u2014 BudgetSmart AI is a budgeting app, not an investment advisor; fits a budgeting vertical"
-  }
- ]
+  "slug": "best-robo-advisors",
+  "rows": [
+    {
+      "name": "Brookwood Investment Group",
+      "domain": "retirewithbrookwood.com",
+      "url": "https://www.retirewithbrookwood.com/",
+      "values": [
+        "Not published",
+        "Not published",
+        "Not published",
+        "Not published",
+        "Virtual-first advisory firm; retirement, investment management and Roth conversion planning"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "daytradereview.com",
+      "why": "category 1 \u2014 review and comparison site, no product of its own"
+    }
+  ]
 }

@@ -1,5 +1,22 @@
 {
   "slug": "best-tax-preparation-services-for-freelancers",
-  "rows": [],
-  "cut": []
+  "rows": [
+    {
+      "name": "Alto CPA Group",
+      "domain": "altocpagroup.com",
+      "url": "https://altocpagroup.com/",
+      "values": [
+        "CPA firm, remote; bookkeeping and tax",
+        "Return price not published; bookkeeping starts at $205/month",
+        "All 50 states, remote; NJ-licensed CPA",
+        "Freelancers and gig workers needing books, estimates and Schedule C"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "getapril.com",
+      "why": "category 4 \u2014 tax-filing infrastructure sold to banks and platforms, no direct freelancer product; fits tax software"
+    }
+  ]
 }

@@ -2,58 +2,26 @@
   "slug": "best-business-bank-accounts",
   "rows": [
     {
-      "name": "Every",
-      "domain": "every.io",
-      "url": "https://every.io/",
+      "name": "Popular Bank",
+      "domain": "popularbank.com",
+      "url": "https://www.popularbank.com/",
       "values": [
-        "$0, no standard account fees",
-        "None",
-        "Free domestic ACH, wire and check payments via a connected bank",
-        "Up to $3M via Thread Bank sweep program, conditions apply",
-        "Not published"
-      ]
-    },
-    {
-      "name": "Capital One Small Business Checking",
-      "domain": "businessapply.capitalone.com",
-      "url": "https://businessapply.capitalone.com/",
-      "values": [
-        "Basic $15, Enhanced $35",
-        "$2,000 balance waives the Basic fee",
-        "Not published",
-        "Not published",
-        "Not published"
-      ]
-    },
-    {
-      "name": "TAB Bank",
-      "domain": "tabbank.com",
-      "url": "https://www.tabbank.com/business-checking",
-      "values": [
-        "Minimal monthly charge; amount in fee schedule",
-        "Not published",
+        "Not published; site says fees may apply",
+        "No minimum deposit to open; ongoing minimum not published",
         "Not published",
         "Member FDIC",
-        "100 free transactions monthly; cash deposit fee not published"
-      ]
-    },
-    {
-      "name": "Live Oak Bank",
-      "domain": "liveoak.bank",
-      "url": "https://www.liveoak.bank/business-checking/",
-      "values": [
-        "$10 Essential, $25 Plus, $100 Plus Analysis",
-        "$100 to open; $1,000 balance waives $10 fee",
-        "Plus tier offers online wires; fee not published",
-        "Member FDIC; extended coverage through IntraFi at no cost",
         "Not published"
       ]
     }
   ],
   "cut": [
     {
-      "domain": "joinkudos.com",
-      "why": "category 1 — Kudos is a card-rewards app with no business bank account; the ranking page is a Live Oak Bank review (Live Oak already listed as liveoak.bank)"
+      "domain": "growegy.com",
+      "why": "category 4 \u2014 small business platform with Net30 vendor account, no bank account; better: business credit builders"
+    },
+    {
+      "domain": "eposnow.com",
+      "why": "category 4 \u2014 POS hardware and software, no bank account; better: POS or merchant services"
     }
   ]
 }

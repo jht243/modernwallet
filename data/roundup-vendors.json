@@ -263,6 +263,18 @@
       "Traders of all levels; 16+ exchanges supported"
      ],
      "added": "2026-10-22"
+    },
+    {
+     "name": "AI Trading Bot",
+     "domain": "autotraderbot.ai",
+     "url": "https://autotraderbot.ai",
+     "values": [
+      "Forex traders using MetaTrader 5 who want automated trading",
+      "Plans: Free Demo, Starter, Professional, Professional Plus, Professional Max; prices Not published",
+      "Windows desktop client linked to a MetaTrader 5 account; OANDA accounts run in the cloud",
+      "Forex and CFD trading carries significant risk of loss; 30-day free demo, no credit card"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -477,6 +489,18 @@
       "Spreads and commissions; figures not published"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "Farao",
+     "domain": "getfarao.com",
+     "url": "https://getfarao.com/",
+     "values": [
+      "Self-custodial trading of stocks, crypto and pre-IPO names with up to 50x leverage",
+      "Not published; Orus links accounts to chat and AI agents",
+      "Positions settle on Hyperliquid L1; self-custody wallet",
+      "Not published"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -543,6 +567,45 @@
       "Shops over 28 lenders; says closing in as little as 17 days"
      ],
      "added": "2026-10-23"
+    },
+    {
+     "name": "Change Home Mortgage",
+     "domain": "changemtg.com",
+     "url": "https://www.changemtg.com/",
+     "values": [
+      "Self-employed, gig and investor borrowers",
+      "Not published",
+      "Not published",
+      "Not published",
+      "Treasury-certified CDFI; NMLS #1839; licensed in nine listed states"
+     ],
+     "added": "2026-10-25"
+    },
+    {
+     "name": "Champions Mortgage",
+     "domain": "championsmortgageteam.com",
+     "url": "https://www.championsmortgageteam.com/",
+     "values": [
+      "Buyers in TX, FL, GA and NC",
+      "Offered; 0% down, no PMI",
+      "Not published",
+      "Not published",
+      "Also lists Halal financing, DSCR and bank statement loans"
+     ],
+     "added": "2026-10-25"
+    },
+    {
+     "name": "AmeriSave",
+     "domain": "amerisave.com",
+     "url": "https://www.amerisave.com/",
+     "values": [
+      "Purchase, refinance and home equity borrowers",
+      "Offered; 0% down for eligible borrowers",
+      "Offered; 0% down for eligible borrowers",
+      "620+ conventional; 580+ FHA",
+      "Online quote and preapproval; states served not published"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -660,6 +723,19 @@
       "Commission-free trading of 11,000+ US stocks and ETFs alongside crypto"
      ],
      "added": "2026-10-16"
+    },
+    {
+     "name": "PinkLion",
+     "domain": "pinklion.xyz",
+     "url": "https://pinklion.xyz/",
+     "values": [
+      "Free to start; paid plan pricing not published",
+      "N/A",
+      "N/A",
+      "N/A",
+      "Portfolio tracker with broker sync, dividend tracking and stress tests; does not hold assets"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -868,6 +944,19 @@
       "Couples wanting shared budgets, bill tracking and net worth in one app"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "Vento",
+     "domain": "vento.money",
+     "url": "https://www.vento.money/",
+     "values": [
+      "Free core; Premium $3.99/month or $29.99/year; $79.99 lifetime",
+      "Not published",
+      "No bank linking required",
+      "Envelope budgeting; zero-based not mentioned",
+      "Couples who want offline, local-first budgeting without linked accounts"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -1271,6 +1360,71 @@
       "Tracking banks and brokerages without sharing logins"
      ],
      "added": "2026-10-21"
+    },
+    {
+     "name": "Nethaven",
+     "domain": "nethaven.app",
+     "url": "https://nethaven.app/",
+     "values": [
+      "Pro from $6.67/mo on yearly plan",
+      "Portfolio view of stocks, ETFs and crypto wallets",
+      "Not published",
+      "FIRE and Coast FIRE calculators",
+      "Budgeting and net worth on one dashboard"
+     ],
+     "added": "2026-10-25"
+    },
+    {
+     "name": "FiWorth",
+     "domain": "onemdapp.com",
+     "url": "https://onemdapp.com/",
+     "values": [
+      "Free for now; paid plans planned, prices not published",
+      "Investments entered manually as an asset type",
+      "Property entered manually as an asset",
+      "N/A",
+      "Manual net worth tracking without linking banks"
+     ],
+     "added": "2026-10-25"
+    },
+    {
+     "name": "Tablewealth",
+     "domain": "tablewealth.com",
+     "url": "https://tablewealth.com/",
+     "values": [
+      "14-day free trial; Sync $12/mo or $99/yr",
+      "Dashboards for allocation, holdings, cash, fees, exposure",
+      "Real estate tracked as a private asset, manual records",
+      "Retirement calculators and simulators on Sync plan and up",
+      "Synced spreadsheets and API access for accounts"
+     ],
+     "added": "2026-10-25"
+    },
+    {
+     "name": "Beacon",
+     "domain": "findyourbeacon.app",
+     "url": "https://findyourbeacon.app/",
+     "values": [
+      "Not published",
+      "Projects investable assets to an FI target; returns adjustable",
+      "Not tracked; investable assets only",
+      "Withdrawal runway and retire-by planning tools",
+      "Manual FI date projection with no bank links"
+     ],
+     "added": "2026-10-25"
+    },
+    {
+     "name": "Wealth Potion",
+     "domain": "wealthpotion.com",
+     "url": "https://wealthpotion.com/",
+     "values": [
+      "Net worth tracker free with signup",
+      "Not published",
+      "Not published",
+      "Financial Freedom Calculator estimates an FI date",
+      "People using a free tracker alongside its finance course"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -1928,6 +2082,45 @@
       "Plan developed with an attorney; attorney costs included"
      ],
      "added": "2026-10-23"
+    },
+    {
+     "name": "Ford + Bergner LLP",
+     "domain": "fordbergner.com",
+     "url": "https://fordbergner.com/",
+     "values": [
+      "Not published",
+      "Not published",
+      "Not published",
+      "Not published",
+      "Yes; board certified in estate planning (Texas)"
+     ],
+     "added": "2026-10-25"
+    },
+    {
+     "name": "Gomez Law, APC",
+     "domain": "gomezlawla.com",
+     "url": "https://gomezlawla.com/",
+     "values": [
+      "Not published; free consultation offered",
+      "Not published",
+      "Not published",
+      "Not published",
+      "Law firm in Los Angeles; lists living trust alternatives"
+     ],
+     "added": "2026-10-25"
+    },
+    {
+     "name": "Peck Ritchey, LLC",
+     "domain": "peckritchey.com",
+     "url": "https://peckritchey.com/",
+     "values": [
+      "Not published; free initial consultation",
+      "Not published",
+      "Not published",
+      "Not published",
+      "Law firm with offices in the Chicago area"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -2133,6 +2326,30 @@
       "People who track spending and net worth without linking banks"
      ],
      "added": "2026-10-18"
+    },
+    {
+     "name": "Lucky Friday",
+     "domain": "luckyfriday.app",
+     "url": "https://luckyfriday.app/",
+     "values": [
+      "Free; paid $12.99/mo per user",
+      "No; Free plan has no account linking",
+      "Flexible category budgets",
+      "Custom categories and biweekly or irregular income"
+     ],
+     "added": "2026-10-25"
+    },
+    {
+     "name": "Hearth",
+     "domain": "hearthbudget.com",
+     "url": "https://hearthbudget.com/",
+     "values": [
+      "Free; Premium $4.99/mo or $34.99/yr",
+      "No; manual entry, bank sync is Premium",
+      "Envelope",
+      "Couples sharing one budget"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -2321,6 +2538,19 @@
       "Not published"
      ],
      "added": "2026-10-15"
+    },
+    {
+     "name": "Brookwood Investment Group",
+     "domain": "retirewithbrookwood.com",
+     "url": "https://www.retirewithbrookwood.com/",
+     "values": [
+      "Not published",
+      "Not published",
+      "Not published",
+      "Not published",
+      "Virtual-first advisory firm; retirement, investment management and Roth conversion planning"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -2588,6 +2818,32 @@
       "Not published"
      ],
      "added": "2026-10-23"
+    },
+    {
+     "name": "Rocket Loans",
+     "domain": "rocketloans.com",
+     "url": "https://www.rocketloans.com/",
+     "values": [
+      "Debt consolidation, home improvement, medical bills; FICO 640+ recommended",
+      "$2,000 to $75,000",
+      "7.99% to 29.99% APR; low end needs autopay",
+      "Origination fee up to 9.99%",
+      "Often same day if finalized by 4 p.m. ET"
+     ],
+     "added": "2026-10-25"
+    },
+    {
+     "name": "Georgia United Credit Union",
+     "domain": "gucu.org",
+     "url": "https://www.gucu.org/",
+     "values": [
+      "Members of this Georgia credit union; eligibility applies",
+      "$500 to $100,000",
+      "As low as 10.50% APR, subject to credit approval",
+      "Not published",
+      "Not published"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -2963,6 +3219,17 @@
       "Private portfolio tracking for DIY investors, with no broker linking"
      ],
      "added": "2026-10-23"
+    },
+    {
+     "name": "Curvo",
+     "domain": "curvo.eu",
+     "url": "https://curvo.eu/backtest",
+     "values": [
+      "Not published",
+      "Not published",
+      "European index investors; managed portfolios carry a 1% to 0.60% annual fee by asset tier"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -3220,6 +3487,18 @@
       "1+ year in business, $20,000+ monthly revenue, US-based"
      ],
      "added": "2026-10-23"
+    },
+    {
+     "name": "Elite Funders",
+     "domain": "elitefunders.com",
+     "url": "https://elitefunders.com/",
+     "values": [
+      "MCA, revenue-based, term, SBA, line of credit (broker, 70+ lenders)",
+      "MCA up to $2M; programs $10K to $5M",
+      "MCA same day; most funding 24-72 hours",
+      "Basic info, 3 months bank statements; 500+ credit score listed"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -3506,6 +3785,18 @@
       "Advances up to 100% less fee; rates from 0.25%"
      ],
      "added": "2026-10-23"
+    },
+    {
+     "name": "Harper Partners",
+     "domain": "joinharper.com",
+     "url": "https://www.joinharper.com/",
+     "values": [
+      "Media, advertising, hardware, B2B software, wholesale, staffing, transportation",
+      "Not published",
+      "Approval within 48 hours; funding $25K to $5M",
+      "Accounts receivable factoring; rates start at 1.0%, no board seats or covenants"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -3905,6 +4196,19 @@
       "Not published"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "Popular Bank",
+     "domain": "popularbank.com",
+     "url": "https://www.popularbank.com/",
+     "values": [
+      "Not published; site says fees may apply",
+      "No minimum deposit to open; ongoing minimum not published",
+      "Not published",
+      "Member FDIC",
+      "Not published"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -4074,6 +4378,18 @@
       "Trip categories, reports, public API, team tools"
      ],
      "added": "2026-10-23"
+    },
+    {
+     "name": "DayHatch (formerly TripTally)",
+     "domain": "mytriptally.com",
+     "url": "https://mytriptally.com/",
+     "values": [
+      "Unlimited GPS trips",
+      "Pro $4.99/mo or $29.99/yr",
+      "Pro only (auto-start)",
+      "Earnings, tax estimates, receipt photos"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -4297,6 +4613,18 @@
       "Sole proprietors and small businesses wanting accounting software"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "Aviy",
+     "domain": "aviy.ai",
+     "url": "https://aviy.ai/",
+     "values": [
+      "Free to start, no credit card; paid plan pricing not published",
+      "Unlimited clients listed under account features",
+      "Invoices, estimates, quotes, credit notes and receipts as PDFs",
+      "Freelancers who want to make invoices by typing a description"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -4800,6 +5128,30 @@
       "Businesses wanting invoicing with web and iOS/Android apps"
      ],
      "added": "2026-10-21"
+    },
+    {
+     "name": "Assembly",
+     "domain": "assembly.com",
+     "url": "https://assembly.com/",
+     "values": [
+      "Free; Starter $49/mo, or $29/mo billed annually",
+      "Not published",
+      "Fees apply on payments; rates not published",
+      "Client portal and CRM for firms that bill clients"
+     ],
+     "added": "2026-10-25"
+    },
+    {
+     "name": "SchedulingKit",
+     "domain": "schedulingkit.com",
+     "url": "https://schedulingkit.com/",
+     "values": [
+      "Free; Standard $12/mo, Pro $20/mo per seat",
+      "SMS reminders from the Standard plan",
+      "Not published",
+      "Service businesses billing at booking via Stripe or PayPal"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -4987,6 +5339,30 @@
       "Restaurants, studios, contractors, hospitality, law firms"
      ],
      "added": "2026-10-23"
+    },
+    {
+     "name": "Best Pro Books & Tax",
+     "domain": "bestprobooksntax.com",
+     "url": "https://bestprobooksntax.com",
+     "values": [
+      "Not published; fixed price agreed upfront per client",
+      "Books Clean-up service for multi-year backlogs; price Not published",
+      "Annual business and personal returns, quarterly estimates, sales tax and 1099 filings",
+      "Start-ups and small to medium businesses, served remotely across the U.S."
+     ],
+     "added": "2026-10-25"
+    },
+    {
+     "name": "Two Roads",
+     "domain": "tworoadsco.com",
+     "url": "https://tworoadsco.com",
+     "values": [
+      "Not published",
+      "Not published",
+      "Separate monthly tax subscription with a dedicated tax professional; returns in bookkeeping Not published",
+      "Restaurants, medical practices, retail, IT, creative, professional and home services, non-profits"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -5102,6 +5478,18 @@
       "Individuals and business owners wanting tax prep and bookkeeping"
      ],
      "added": "2026-10-22"
+    },
+    {
+     "name": "Alto CPA Group",
+     "domain": "altocpagroup.com",
+     "url": "https://altocpagroup.com/",
+     "values": [
+      "CPA firm, remote; bookkeeping and tax",
+      "Return price not published; bookkeeping starts at $205/month",
+      "All 50 states, remote; NJ-licensed CPA",
+      "Freelancers and gig workers needing books, estimates and Schedule C"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -5260,6 +5648,18 @@
       "Orange County individuals and businesses wanting an independent agency"
      ],
      "added": "2026-10-22"
+    },
+    {
+     "name": "Southern California Auto Insurance",
+     "domain": "southerncaliforniaautoinsurance.com",
+     "url": "https://southerncaliforniaautoinsurance.com/",
+     "values": [
+      "San Diego",
+      "0B86513",
+      "Auto, home, business and life",
+      "Independent agency serving San Diego drivers and homeowners"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -5447,6 +5847,18 @@
       "Not published"
      ],
      "added": "2026-10-22"
+    },
+    {
+     "name": "Thrive HRO",
+     "domain": "thrivehro.com",
+     "url": "https://thrivehro.com/",
+     "values": [
+      "HR outsourcing with PEO-style support",
+      "Not published",
+      "Not published",
+      "Not published"
+     ],
+     "added": "2026-10-25"
     }
    ]
   },
@@ -5531,6 +5943,30 @@
       "California residents wanting a lawyer-drafted advance directive"
      ],
      "added": "2026-10-22"
+    },
+    {
+     "name": "PowerOfAttorney.com",
+     "domain": "powerofattorney.com",
+     "url": "https://www.powerofattorney.com/",
+     "values": [
+      "Free",
+      "Free printable Medical POA (advance directive) forms and state signing rules",
+      "Not published",
+      "People wanting free state-specific forms to print"
+     ],
+     "added": "2026-10-25"
+    },
+    {
+     "name": "Trustworthy",
+     "domain": "trustworthy.com",
+     "url": "https://trustworthy.com/",
+     "values": [
+      "Free plan; paid from $10/month billed annually",
+      "Stores healthcare directives, powers of attorney and living wills; no drafting listed",
+      "Expert pages linked; terms not published",
+      "People wanting one place to store family documents"
+     ],
+     "added": "2026-10-25"
     }
    ]
   }

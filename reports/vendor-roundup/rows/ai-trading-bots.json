@@ -1,22 +1,26 @@
 {
- "slug": "best-ai-trading-bots",
- "rows": [
-  {
-   "name": "Cryptohopper",
-   "domain": "cryptohopper.com",
-   "url": "https://www.cryptohopper.com/pricing",
-   "values": [
-    "Crypto traders wanting automated bots, from beginner to advanced",
-    "$29, $69 or $129/month; 3-day Explorer trial; AI strategies only on Hero",
-    "Automated trading on connected exchanges; copy, market-making and arbitrage bots",
-    "Traders of all levels; 16+ exchanges supported"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "goodcrypto.app",
-   "why": "category 2 — homepage states goodcryptoX has closed"
-  }
- ]
+  "slug": "best-ai-trading-bots",
+  "rows": [
+    {
+      "name": "AI Trading Bot",
+      "domain": "autotraderbot.ai",
+      "url": "https://autotraderbot.ai",
+      "values": [
+        "Forex traders using MetaTrader 5 who want automated trading",
+        "Plans: Free Demo, Starter, Professional, Professional Plus, Professional Max; prices Not published",
+        "Windows desktop client linked to a MetaTrader 5 account; OANDA accounts run in the cloud",
+        "Forex and CFD trading carries significant risk of loss; 30-day free demo, no credit card"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "flowhunt.io",
+      "why": "category 3 \u2014 no-code AI agent and chatbot builder for marketing and support, not finance"
+    },
+    {
+      "domain": "spark.money",
+      "why": "category 4 \u2014 Bitcoin Layer 2 payments SDK, not a trading bot; fits a crypto wallets page"
+    }
+  ]
 }

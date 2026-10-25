@@ -1,10 +1,35 @@
 {
   "slug": "best-investment-apps-for-beginners",
-  "rows": [],
+  "rows": [
+    {
+      "name": "PinkLion",
+      "domain": "pinklion.xyz",
+      "url": "https://pinklion.xyz/",
+      "values": [
+        "Free to start; paid plan pricing not published",
+        "N/A",
+        "N/A",
+        "N/A",
+        "Portfolio tracker with broker sync, dividend tracking and stress tests; does not hold assets"
+      ]
+    }
+  ],
   "cut": [
     {
-      "domain": "financiallygenius.com",
-      "why": "category 1 \u2014 personal finance blog/review site, no product of its own"
+      "domain": "learn.backpack.exchange",
+      "why": "category 1 \u2014 educational blog hub for Backpack Exchange; the product lives on its main domain"
+    },
+    {
+      "domain": "fireinstitute.com",
+      "why": "category 1 \u2014 FIRE education site with free guides and calculators, no investing product"
+    },
+    {
+      "domain": "vinnyhale.com",
+      "why": "category 1 \u2014 personal blog"
+    },
+    {
+      "domain": "smartinvestortoolbox.com",
+      "why": "category 4 \u2014 stock research reports and blog, not an investing app; better fit: stock research tools"
     }
   ]
 }

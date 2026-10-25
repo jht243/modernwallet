@@ -1,14 +1,10 @@
 {
- "slug": "best-brokers-for-treasury-bonds",
- "rows": [],
- "cut": [
-  {
-   "domain": "etoro.com",
-   "why": "category 4 — US page lists stocks, ETFs, crypto and options, no Treasuries; fits stock or crypto brokers"
-  },
-  {
-   "domain": "soliswealth.com",
-   "why": "category 4 — wealth advisory firm (LPL) with $1,000,000 household minimum, not a Treasury broker; fits financial advisors"
-  }
- ]
+  "slug": "best-brokers-for-treasury-bonds",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "helloskip.com",
+      "why": "category 4 \u2014 AI tools for starting and funding a business (grants, SBA 7(a) loan), no Treasury products; fits a small-business funding page"
+    }
+  ]
 }

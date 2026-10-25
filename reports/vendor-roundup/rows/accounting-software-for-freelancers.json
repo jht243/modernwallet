@@ -1,26 +1,22 @@
 {
- "slug": "best-accounting-software-for-freelancers",
- "rows": [
-  {
-   "name": "FreeAgent",
-   "domain": "freeagent.com",
-   "url": "https://www.freeagent.com/us/",
-   "values": [
-    "$27/mo; $13.50/mo for the first six months",
-    "Not published",
-    "Yes, multi-currency invoicing",
-    "Sole proprietors and small businesses wanting accounting software"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "ashleyrcummings.com",
-   "why": "category 1 \u2014 blog/review list of accounting software, no product of its own"
-  },
-  {
-   "domain": "supermonitoring.com",
-   "why": "category 1 \u2014 blog/review list of accounting apps; sells website monitoring, off-scope"
-  }
- ]
+  "slug": "best-accounting-software-for-freelancers",
+  "rows": [
+    {
+      "name": "Aviy",
+      "domain": "aviy.ai",
+      "url": "https://aviy.ai/",
+      "values": [
+        "Free to start, no credit card; paid plan pricing not published",
+        "Unlimited clients listed under account features",
+        "Invoices, estimates, quotes, credit notes and receipts as PDFs",
+        "Freelancers who want to make invoices by typing a description"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "ecombalance.com",
+      "why": "category 4 \u2014 fits bookkeeping services category"
+    }
+  ]
 }

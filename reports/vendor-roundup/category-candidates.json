@@ -1,47 +1,35 @@
 {
   "site": "themodernwallet.com",
   "cut_as_other_category": {
-    "small-business website": [
-      "ueni.com"
-    ],
-    "accounting software": [
-      "beancount.io"
-    ],
     "stock or crypto brokers": [
       "etoro.com"
     ],
     "financial advisors": [
-      "soliswealth.com",
-      "zenithim.com"
+      "soliswealth.com"
     ],
     "expense-tracking apps": [
       "getfinny.app"
     ],
     "unlabelled": [
-      "annotation.academy",
-      "bondstreet.com",
+      "auritrack.com",
+      "ficstar.com",
+      "inertiaresourcesinc.com",
       "info.cccu.com",
+      "pearllemoninvest.com",
       "plannedwithpurposellc.com",
-      "swbc.com",
-      "theccbb.com"
+      "swbc.com"
     ],
     "advisor": [
       "allworthfinancial.com"
     ],
-    "business software": [
-      "cloudsquare.io"
+    "no factoring row": [
+      "levelset.com"
     ],
-    "business debt relief": [
-      "nationalcreditpartners.com"
-    ],
-    "bookkeeping/accounting software": [
-      "hellobooks.ai"
+    "budgeting": [
+      "budgetsmart.io"
     ],
     "budgeting and money apps": [
       "maxint.com"
-    ],
-    "tax preparer": [
-      "empoweredfinancesllc.com"
     ],
     "business credit cards": [
       "engine.com"

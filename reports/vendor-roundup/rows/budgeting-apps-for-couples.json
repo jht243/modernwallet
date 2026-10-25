@@ -1,10 +1,18 @@
 {
- "slug": "best-budgeting-apps-for-couples",
- "rows": [],
- "cut": [
-  {
-   "domain": "getfinny.app",
-   "why": "category 4 — iPhone expense tracker with no joint or shared access; fits expense-tracking apps"
-  }
- ]
+  "slug": "best-budgeting-apps-for-couples",
+  "rows": [
+    {
+      "name": "Vento",
+      "domain": "vento.money",
+      "url": "https://www.vento.money/",
+      "values": [
+        "Free core; Premium $3.99/month or $29.99/year; $79.99 lifetime",
+        "Not published",
+        "No bank linking required",
+        "Envelope budgeting; zero-based not mentioned",
+        "Couples who want offline, local-first budgeting without linked accounts"
+      ]
+    }
+  ],
+  "cut": []
 }
