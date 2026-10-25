@@ -127,7 +127,7 @@ Send exactly as the sibling passes do (`.claude/scripts/send-routine-email.py`),
 - **Never** commit secrets or `.env` files.
 
 ## Reference
-GA4 engagement pull: `scripts/trend_pass/ga4_pull_24h.py --with-engagement --days 28 --top 25` · Per-page GSC evidence: `.claude/tools/gsc-search-analytics/gsc_search_analytics.py` · Slug inventory: `scripts/trend_pass/slug_inventory.py` · Autocomplete miner: `scripts/trend_pass/mine_trend_autocomplete.py` · Write standard: `.claude/commands/seo-gsc-pass/phase-3-new-content.md` · Adversarial audit: `.claude/commands/seo-gsc-pass/phase-4-audit.md` · Tool builds: `.claude/commands/downloadable-asset-pass/phase-3c-tool-build.md` · FAQ-gap method: `.claude/commands/question-gap-pass/phase-2-questions.md` + `phase-3-coverage.md` · Email: `.claude/scripts/send-routine-email.py`
+GA4 engagement pull: `scripts/trend_pass/ga4_pull_24h.py --with-engagement --days 28 --top 25` · Per-page GSC evidence: `.claude/tools/gsc-search-analytics/gsc_search_analytics.py` · Slug inventory: `scripts/trend_pass/slug_inventory.py` · Autocomplete miner: `scripts/trend_pass/mine_trend_autocomplete.py` · Write standard: `.claude/commands/seo-gsc-pass/phase-3-new-content.md` · Adversarial audit: `.claude/commands/seo-gsc-pass/phase-4-audit.md` · FAQ-gap method: `.claude/commands/question-gap-pass/phase-2-questions.md` + `phase-3-coverage.md` · Email: `.claude/scripts/send-routine-email.py`
 
 ## IndexNow Fallback Key (workflow-wide)
 

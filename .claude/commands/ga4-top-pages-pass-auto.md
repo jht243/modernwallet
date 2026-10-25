@@ -119,7 +119,7 @@ Send exactly as the trend pass does (`.claude/scripts/send-routine-email.py`), `
 - **Never** commit secrets or `.env` files.
 
 ## Reference
-GA4 pull: `scripts/trend_pass/ga4_pull_24h.py` · Per-page GSC evidence: `.claude/tools/gsc-search-analytics/gsc_search_analytics.py` · Slug inventory: `scripts/trend_pass/slug_inventory.py` · Autocomplete miner: `scripts/trend_pass/mine_trend_autocomplete.py` · Comparison conventions: `.claude/commands/comparison-content-creator/phase-1b-coverage-check.md` + `phase-3-generate.md` · Worth-it archetypes: `docs/pricing-engine.md` · FAQ-gap method: `.claude/commands/question-gap-pass/phase-2-questions.md` + `phase-3-coverage.md` · Tool builds: `.claude/commands/downloadable-asset-pass/phase-3c-tool-build.md` · Content standard: `.claude/commands/seo-gsc-pass/phase-3-new-content.md` + `phase-4-audit.md` · Email: `.claude/scripts/send-routine-email.py`
+GA4 pull: `scripts/trend_pass/ga4_pull_24h.py` · Per-page GSC evidence: `.claude/tools/gsc-search-analytics/gsc_search_analytics.py` · Slug inventory: `scripts/trend_pass/slug_inventory.py` · Autocomplete miner: `scripts/trend_pass/mine_trend_autocomplete.py` · Comparison conventions: `.claude/commands/comparison-content-creator/phase-1b-coverage-check.md` + `phase-3-generate.md` · Worth-it archetypes: `docs/pricing-engine.md` · FAQ-gap method: `.claude/commands/question-gap-pass/phase-2-questions.md` + `phase-3-coverage.md` · Content standard: `.claude/commands/seo-gsc-pass/phase-3-new-content.md` + `phase-4-audit.md` · Email: `.claude/scripts/send-routine-email.py`
 
 ## IndexNow Fallback Key (workflow-wide)
 
