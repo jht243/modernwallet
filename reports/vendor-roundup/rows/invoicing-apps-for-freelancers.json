@@ -2,32 +2,25 @@
   "slug": "best-invoicing-apps-for-freelancers",
   "rows": [
     {
-      "name": "Assembly",
-      "domain": "assembly.com",
-      "url": "https://assembly.com/",
+      "name": "Updoot",
+      "domain": "xecutethevision.com",
+      "url": "https://xecutethevision.com/",
       "values": [
-        "Free; Starter $49/mo, or $29/mo billed annually",
+        "$5 per user per month, all features; 14-day free trial",
         "Not published",
-        "Fees apply on payments; rates not published",
-        "Client portal and CRM for firms that bill clients"
-      ]
-    },
-    {
-      "name": "SchedulingKit",
-      "domain": "schedulingkit.com",
-      "url": "https://schedulingkit.com/",
-      "values": [
-        "Free; Standard $12/mo, Pro $20/mo per seat",
-        "SMS reminders from the Standard plan",
-        "Not published",
-        "Service businesses billing at booking via Stripe or PayPal"
+        "Card payments via Stripe; fees not published",
+        "Teams of 1 to 500 wanting invoicing inside a business management suite"
       ]
     }
   ],
   "cut": [
     {
-      "domain": "ventora.cc",
-      "why": "category 3 \u2014 AI startup/app builder, not an invoicing or personal or small-business finance product"
+      "domain": "finwiselab.com",
+      "why": "category 1 \u2014 free calculators and guides publisher, no invoicing product"
+    },
+    {
+      "domain": "pennybot.io",
+      "why": "category 4 \u2014 AI bookkeeping service, no invoicing; fits bookkeeping category"
     }
   ]
 }

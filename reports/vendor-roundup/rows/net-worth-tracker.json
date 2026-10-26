@@ -2,70 +2,17 @@
   "slug": "best-net-worth-tracker",
   "rows": [
     {
-      "name": "Nethaven",
-      "domain": "nethaven.app",
-      "url": "https://nethaven.app/",
+      "name": "Finance Scoops",
+      "domain": "financescoops.com",
+      "url": "https://financescoops.com/products/investment-networth-calculator-tracker",
       "values": [
-        "Pro from $6.67/mo on yearly plan",
-        "Portfolio view of stocks, ETFs and crypto wallets",
-        "Not published",
-        "FIRE and Coast FIRE calculators",
-        "Budgeting and net worth on one dashboard"
-      ]
-    },
-    {
-      "name": "FiWorth",
-      "domain": "onemdapp.com",
-      "url": "https://onemdapp.com/",
-      "values": [
-        "Free for now; paid plans planned, prices not published",
-        "Investments entered manually as an asset type",
-        "Property entered manually as an asset",
-        "N/A",
-        "Manual net worth tracking without linking banks"
-      ]
-    },
-    {
-      "name": "Tablewealth",
-      "domain": "tablewealth.com",
-      "url": "https://tablewealth.com/",
-      "values": [
-        "14-day free trial; Sync $12/mo or $99/yr",
-        "Dashboards for allocation, holdings, cash, fees, exposure",
-        "Real estate tracked as a private asset, manual records",
-        "Retirement calculators and simulators on Sync plan and up",
-        "Synced spreadsheets and API access for accounts"
-      ]
-    },
-    {
-      "name": "Beacon",
-      "domain": "findyourbeacon.app",
-      "url": "https://findyourbeacon.app/",
-      "values": [
-        "Not published",
-        "Projects investable assets to an FI target; returns adjustable",
-        "Not tracked; investable assets only",
-        "Withdrawal runway and retire-by planning tools",
-        "Manual FI date projection with no bank links"
-      ]
-    },
-    {
-      "name": "Wealth Potion",
-      "domain": "wealthpotion.com",
-      "url": "https://wealthpotion.com/",
-      "values": [
-        "Net worth tracker free with signup",
+        "$9.99 (listed down from $19.99)",
+        "Tracks stocks, bonds, ETFs, crypto with performance and allocation charts",
         "Not published",
         "Not published",
-        "Financial Freedom Calculator estimates an FI date",
-        "People using a free tracker alongside its finance course"
+        "Investors wanting a paid investment net worth tracker template"
       ]
     }
   ],
-  "cut": [
-    {
-      "domain": "aimoneyvault.app",
-      "why": "category 4 \u2014 Money Vault is an iOS expense tracker with no net worth feature; fits budgeting-apps"
-    }
-  ]
+  "cut": []
 }

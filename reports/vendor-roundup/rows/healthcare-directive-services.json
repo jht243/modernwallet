@@ -2,36 +2,21 @@
   "slug": "best-healthcare-directive-services",
   "rows": [
     {
-      "name": "PowerOfAttorney.com",
-      "domain": "powerofattorney.com",
-      "url": "https://www.powerofattorney.com/",
+      "name": "FormsPal",
+      "domain": "formspal.com",
+      "url": "https://formspal.com/living-will/",
       "values": [
-        "Free",
-        "Free printable Medical POA (advance directive) forms and state signing rules",
-        "Not published",
-        "People wanting free state-specific forms to print"
-      ]
-    },
-    {
-      "name": "Trustworthy",
-      "domain": "trustworthy.com",
-      "url": "https://trustworthy.com/",
-      "values": [
-        "Free plan; paid from $10/month billed annually",
-        "Stores healthcare directives, powers of attorney and living wills; no drafting listed",
-        "Expert pages linked; terms not published",
-        "People wanting one place to store family documents"
+        "Free templates; form builder price Not published",
+        "Living will and medical power of attorney sections, witness and notary pages",
+        "None; states it is not a law firm",
+        "Filling in a living will yourself with state signing guidance"
       ]
     }
   ],
   "cut": [
     {
-      "domain": "melonelawpc.com",
-      "why": "category 4 \u2014 estate planning firm; fits living trust category"
-    },
-    {
-      "domain": "johnsonturner.com",
-      "why": "category 4 \u2014 estate planning firm; fits living trust category"
+      "domain": "uclahealth.org",
+      "why": "category 3 \u2014 health system; no directive product found on its site"
     }
   ]
 }

@@ -156,6 +156,30 @@
       "None; does not take custody or trade in your account"
      ],
      "added": "2026-10-23"
+    },
+    {
+     "name": "PortfolioPilot",
+     "domain": "portfoliopilot.com",
+     "url": "https://portfoliopilot.com/",
+     "values": [
+      "Self-directed investors wanting AI portfolio assessment and fee analysis",
+      "Free; Gold $20/mo, Platinum $49/mo (billed annually); Pro from $99/mo",
+      "Hybrid-AI: recommendation engine plus LLM assistant; no trade execution",
+      "Not published"
+     ],
+     "added": "2026-10-26"
+    },
+    {
+     "name": "Astor",
+     "domain": "astor.app",
+     "url": "https://astor.app/",
+     "values": [
+      "Investors wanting texted alerts and research on their holdings",
+      "Free; Pro $120/yr, Max $228/yr (billed yearly)",
+      "AI agent for alerts, research and chat; Text to Trade on Max",
+      "Not published"
+     ],
+     "added": "2026-10-26"
     }
    ]
   },
@@ -346,6 +370,30 @@
       "₹7,199/year (Pro)"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "AlphaSense",
+     "domain": "alpha-sense.com",
+     "url": "https://www.alpha-sense.com/",
+     "values": [
+      "Institutional research teams needing cited market intelligence",
+      "AI search and cited summaries from filings, transcripts and broker research",
+      "Free start offered; terms not published",
+      "Not published"
+     ],
+     "added": "2026-10-26"
+    },
+    {
+     "name": "Analytical Platform",
+     "domain": "analyticalplatform.com",
+     "url": "https://analyticalplatform.com/",
+     "values": [
+      "Investors building factor-based portfolios from stock indicators",
+      "Ranked stock indicators and Modern Portfolio Theory optimizer output",
+      "One-month free trial for registered users",
+      "Not published"
+     ],
+     "added": "2026-10-26"
     }
    ]
   },
@@ -957,6 +1005,19 @@
       "Couples who want offline, local-first budgeting without linked accounts"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "KOHO",
+     "domain": "koho.ca",
+     "url": "https://www.koho.ca/",
+     "values": [
+      "Core $0/mo; Extra $12/mo; Everything $14.75/mo",
+      "Yes; joint account with two cards on one balance",
+      "Not published",
+      "Not published",
+      "Canadian couples wanting a joint account with shared goals (18+, Canada)"
+     ],
+     "added": "2026-10-26"
     }
    ]
   },
@@ -1425,6 +1486,19 @@
       "People using a free tracker alongside its finance course"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "Finance Scoops",
+     "domain": "financescoops.com",
+     "url": "https://financescoops.com/products/investment-networth-calculator-tracker",
+     "values": [
+      "$9.99 (listed down from $19.99)",
+      "Tracks stocks, bonds, ETFs, crypto with performance and allocation charts",
+      "Not published",
+      "Not published",
+      "Investors wanting a paid investment net worth tracker template"
+     ],
+     "added": "2026-10-26"
     }
    ]
   },
@@ -2241,6 +2315,19 @@
       "Web-based; clients access it only through a financial advisor"
      ],
      "added": "2026-10-22"
+    },
+    {
+     "name": "WealthCounsel",
+     "domain": "wealthcounsel.com",
+     "url": "https://www.wealthcounsel.com/",
+     "values": [
+      "Not published",
+      "Not published",
+      "Not published",
+      "N/A; software is for attorneys",
+      "Cloud-based; Mac and PC"
+     ],
+     "added": "2026-10-26"
     }
    ]
   },
@@ -3982,6 +4069,30 @@
       "Not published"
      ],
      "added": "2026-10-17"
+    },
+    {
+     "name": "QuickBridge",
+     "domain": "quickbridge.com",
+     "url": "https://quickbridge.com/",
+     "values": [
+      "Up to $500,000",
+      "As little as 24 hours after approval",
+      "Not published; personal credit is one factor",
+      "ACH withdrawals Monday to Friday; schedule Not published"
+     ],
+     "added": "2026-10-26"
+    },
+    {
+     "name": "Sandora Capital",
+     "domain": "sandoracapital.com",
+     "url": "https://sandoracapital.com/",
+     "values": [
+      "Not published",
+      "Same day after approval, which the site says takes within 2 hours",
+      "500+ FICO listed; minimums vary by program",
+      "Not published"
+     ],
+     "added": "2026-10-26"
     }
    ]
   },
@@ -5152,6 +5263,18 @@
       "Service businesses billing at booking via Stripe or PayPal"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "Updoot",
+     "domain": "xecutethevision.com",
+     "url": "https://xecutethevision.com/",
+     "values": [
+      "$5 per user per month, all features; 14-day free trial",
+      "Not published",
+      "Card payments via Stripe; fees not published",
+      "Teams of 1 to 500 wanting invoicing inside a business management suite"
+     ],
+     "added": "2026-10-26"
     }
    ]
   },
@@ -5363,6 +5486,78 @@
       "Restaurants, medical practices, retail, IT, creative, professional and home services, non-profits"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "Xendoo",
+     "domain": "xendoo.com",
+     "url": "https://xendoo.com/",
+     "values": [
+      "Essential $395/mo, or $355/mo billed annually",
+      "Catch-Up Bookkeeping from $295/mo",
+      "Business returns from $1,295/yr; personal returns from $625/yr",
+      "Small businesses in any industry, plans tiered by monthly expenses"
+     ],
+     "added": "2026-10-26"
+    },
+    {
+     "name": "Acuity",
+     "domain": "acuity.co",
+     "url": "https://acuity.co/",
+     "values": [
+      "Not published; example client plans from about $599/mo",
+      "Cleanup My Books service; custom quote",
+      "Tax preparation and filing offered; custom quote",
+      "Entrepreneurs, including ecommerce, SaaS and agency businesses"
+     ],
+     "added": "2026-10-26"
+    },
+    {
+     "name": "BookWerks",
+     "domain": "bookwerks.io",
+     "url": "https://bookwerks.io/",
+     "values": [
+      "Flat monthly fee by business size; amount Not published",
+      "Not published",
+      "Not published",
+      "Small businesses using Xero or QuickBooks, such as dental, retail, restaurants"
+     ],
+     "added": "2026-10-26"
+    },
+    {
+     "name": "Two Hills CPAs",
+     "domain": "twohillscpas.com",
+     "url": "https://twohillscpas.com/",
+     "values": [
+      "Not published",
+      "Not published",
+      "Business and individual tax return preparation offered; price Not published",
+      "Businesses, nonprofits and individuals; Denver, Colorado CPA firm"
+     ],
+     "added": "2026-10-26"
+    },
+    {
+     "name": "Yield Bookkeeping Services",
+     "domain": "yieldbookkeeping.com",
+     "url": "https://yieldbookkeeping.com/",
+     "values": [
+      "Not published; custom quote after free consultation",
+      "Bookkeeping cleanup offered; price Not published",
+      "Not published",
+      "Start-ups, small to mid-sized businesses and nonprofits"
+     ],
+     "added": "2026-10-26"
+    },
+    {
+     "name": "Dialed In Bookkeeping",
+     "domain": "dialedinbookkeeping.com",
+     "url": "https://dialedinbookkeeping.com/",
+     "values": [
+      "Light $300/mo, Core $500/mo, T&M $1,000/mo; $500 onboarding",
+      "Catch-Up & Cleanup service; price Not published",
+      "Tax filing $1,000 to $2,000 per year",
+      "Home service businesses such as painting, landscaping and cleaning"
+     ],
+     "added": "2026-10-26"
     }
    ]
   },
@@ -5490,6 +5685,30 @@
       "Freelancers and gig workers needing books, estimates and Schedule C"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "Grow Brooklyn",
+     "domain": "growbrooklyn.org",
+     "url": "https://growbrooklyn.org/",
+     "values": [
+      "Nonprofit; free VITA and self-employed tax prep",
+      "Free",
+      "Brooklyn, NY",
+      "Brooklyn self-employed filers; also offers legal help and coaching"
+     ],
+     "added": "2026-10-26"
+    },
+    {
+     "name": "Liberty Tax",
+     "domain": "libertytax.com",
+     "url": "https://www.libertytax.com/",
+     "values": [
+      "In-office or online tax preparation; IRS Authorized badge",
+      "Not published",
+      "Not published",
+      "In-person or online prep, plus ITIN and tax debt help"
+     ],
+     "added": "2026-10-26"
     }
    ]
   },
@@ -5545,6 +5764,18 @@
       "Closely held, growth-minded business owners in Illinois and Arizona"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "SK Financial CPA",
+     "domain": "skfinancial.com",
+     "url": "https://skfinancial.com/",
+     "values": [
+      "Every return reviewed by a CPA; credentials not itemized",
+      "IRS notice assistance listed; representation not stated",
+      "Individual returns from $295",
+      "Wesley Chapel, FL; Tampa Bay self-employed and small businesses"
+     ],
+     "added": "2026-10-26"
     }
    ]
   },
@@ -5660,6 +5891,54 @@
       "Independent agency serving San Diego drivers and homeowners"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "State Farm",
+     "domain": "statefarm.com",
+     "url": "https://www.statefarm.com/",
+     "values": [
+      "Not published",
+      "Not published",
+      "Auto, home, life, umbrella, small business, workers' comp, bonds",
+      "Customers wanting a dedicated agent; lines vary by state"
+     ],
+     "added": "2026-10-26"
+    },
+    {
+     "name": "Mercury Insurance",
+     "domain": "mercuryinsurance.com",
+     "url": "https://www.mercuryinsurance.com/",
+     "values": [
+      "California-focused; headquarters not stated on homepage",
+      "Not published",
+      "Auto, home, condo, renters, landlord, umbrella, business owners",
+      "California drivers and homeowners wanting bundled home and auto"
+     ],
+     "added": "2026-10-26"
+    },
+    {
+     "name": "Independent Executive Insurance Brokers",
+     "domain": "ieibrokers.com",
+     "url": "https://www.ieibrokers.com/",
+     "values": [
+      "Moorpark, CA",
+      "0G05776",
+      "Business, workers' comp, bonds, auto, home, life, group benefits",
+      "Businesses of all sizes, individuals and families"
+     ],
+     "added": "2026-10-26"
+    },
+    {
+     "name": "Broadway Insurance Services",
+     "domain": "broadwayinsurance.agency",
+     "url": "https://broadwayinsurance.agency/",
+     "values": [
+      "Los Angeles, CA",
+      "0J21932",
+      "Auto, home, earthquake, umbrella, commercial, landlord coverage",
+      "Individuals, businesses and California landlords or real estate investors"
+     ],
+     "added": "2026-10-26"
     }
    ]
   },
@@ -5967,6 +6246,18 @@
       "People wanting one place to store family documents"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "FormsPal",
+     "domain": "formspal.com",
+     "url": "https://formspal.com/living-will/",
+     "values": [
+      "Free templates; form builder price Not published",
+      "Living will and medical power of attorney sections, witness and notary pages",
+      "None; states it is not a law firm",
+      "Filling in a living will yourself with state signing guidance"
+     ],
+     "added": "2026-10-26"
     }
    ]
   }

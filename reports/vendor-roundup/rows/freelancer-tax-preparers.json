@@ -2,21 +2,32 @@
   "slug": "best-tax-preparation-services-for-freelancers",
   "rows": [
     {
-      "name": "Alto CPA Group",
-      "domain": "altocpagroup.com",
-      "url": "https://altocpagroup.com/",
+      "name": "Grow Brooklyn",
+      "domain": "growbrooklyn.org",
+      "url": "https://growbrooklyn.org/",
       "values": [
-        "CPA firm, remote; bookkeeping and tax",
-        "Return price not published; bookkeeping starts at $205/month",
-        "All 50 states, remote; NJ-licensed CPA",
-        "Freelancers and gig workers needing books, estimates and Schedule C"
+        "Nonprofit; free VITA and self-employed tax prep",
+        "Free",
+        "Brooklyn, NY",
+        "Brooklyn self-employed filers; also offers legal help and coaching"
+      ]
+    },
+    {
+      "name": "Liberty Tax",
+      "domain": "libertytax.com",
+      "url": "https://www.libertytax.com/",
+      "values": [
+        "In-office or online tax preparation; IRS Authorized badge",
+        "Not published",
+        "Not published",
+        "In-person or online prep, plus ITIN and tax debt help"
       ]
     }
   ],
   "cut": [
     {
-      "domain": "getapril.com",
-      "why": "category 4 \u2014 tax-filing infrastructure sold to banks and platforms, no direct freelancer product; fits tax software"
+      "domain": "moneydigest.com",
+      "why": "category 1 \u2014 personal finance publisher, no product of its own"
     }
   ]
 }

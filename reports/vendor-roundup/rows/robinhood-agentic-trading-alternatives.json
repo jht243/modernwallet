@@ -1,17 +1,5 @@
 {
   "slug": "robinhood-agentic-trading-alternatives",
-  "rows": [
-    {
-      "name": "Farao",
-      "domain": "getfarao.com",
-      "url": "https://getfarao.com/",
-      "values": [
-        "Self-custodial trading of stocks, crypto and pre-IPO names with up to 50x leverage",
-        "Not published; Orus links accounts to chat and AI agents",
-        "Positions settle on Hyperliquid L1; self-custody wallet",
-        "Not published"
-      ]
-    }
-  ],
+  "rows": [],
   "cut": []
 }

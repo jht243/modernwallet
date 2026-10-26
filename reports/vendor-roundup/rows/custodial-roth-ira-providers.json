@@ -3,12 +3,16 @@
   "rows": [],
   "cut": [
     {
-      "domain": "lifescapes.wellsfargoadvisors.com",
-      "why": "category 1 \u2014 educational content site from Wells Fargo Advisors, no account product; brokerage lives at wellsfargoadvisors.com"
+      "domain": "noblegold.investingandretirement.com",
+      "why": "category 1 \u2014 review site, sponsors pay for placement, no product"
     },
     {
-      "domain": "wealthenhancement.com",
-      "why": "category 4 \u2014 wealth-management advisory firm, no custodial Roth IRA found; fits a financial advisor category"
+      "domain": "meetfabric.com",
+      "why": "category 4 \u2014 life insurance and UGMA kids investing; no custodial Roth IRA shown"
+    },
+    {
+      "domain": "howeandrusling.com",
+      "why": "category 4 \u2014 wealth management firm; no custodial Roth IRA product shown"
     }
   ]
 }

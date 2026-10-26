@@ -1,47 +1,10 @@
 {
   "slug": "best-living-trust-services",
-  "rows": [
-    {
-      "name": "Ford + Bergner LLP",
-      "domain": "fordbergner.com",
-      "url": "https://fordbergner.com/",
-      "values": [
-        "Not published",
-        "Not published",
-        "Not published",
-        "Not published",
-        "Yes; board certified in estate planning (Texas)"
-      ]
-    },
-    {
-      "name": "Gomez Law, APC",
-      "domain": "gomezlawla.com",
-      "url": "https://gomezlawla.com/",
-      "values": [
-        "Not published; free consultation offered",
-        "Not published",
-        "Not published",
-        "Not published",
-        "Law firm in Los Angeles; lists living trust alternatives"
-      ]
-    },
-    {
-      "name": "Peck Ritchey, LLC",
-      "domain": "peckritchey.com",
-      "url": "https://peckritchey.com/",
-      "values": [
-        "Not published; free initial consultation",
-        "Not published",
-        "Not published",
-        "Not published",
-        "Law firm with offices in the Chicago area"
-      ]
-    }
-  ],
+  "rows": [],
   "cut": [
     {
-      "domain": "ml.com",
-      "why": "category 4 \u2014 wealth manager and brokerage with no living trust product shown on its site; fits a brokerage page better"
+      "domain": "hklaw.com",
+      "why": "category 4 \u2014 large law firm; homepage lists no living trust product or consumer pricing"
     }
   ]
 }

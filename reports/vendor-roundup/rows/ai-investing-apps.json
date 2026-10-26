@@ -2,14 +2,25 @@
   "slug": "best-ai-investing-apps",
   "rows": [
     {
-      "name": "TruthSayer AI",
-      "domain": "blog.truthsayer.com",
-      "url": "https://blog.truthsayer.com/",
+      "name": "PortfolioPilot",
+      "domain": "portfoliopilot.com",
+      "url": "https://portfoliopilot.com/",
       "values": [
-        "Investors wanting AI entry and exit alerts to copy themselves",
-        "$10.99/month or $71.88/year; 7-day free trial",
-        "Signal alerts from valuations, dark pools and earnings strategies",
-        "None; does not take custody or trade in your account"
+        "Self-directed investors wanting AI portfolio assessment and fee analysis",
+        "Free; Gold $20/mo, Platinum $49/mo (billed annually); Pro from $99/mo",
+        "Hybrid-AI: recommendation engine plus LLM assistant; no trade execution",
+        "Not published"
+      ]
+    },
+    {
+      "name": "Astor",
+      "domain": "astor.app",
+      "url": "https://astor.app/",
+      "values": [
+        "Investors wanting texted alerts and research on their holdings",
+        "Free; Pro $120/yr, Max $228/yr (billed yearly)",
+        "AI agent for alerts, research and chat; Text to Trade on Max",
+        "Not published"
       ]
     }
   ],

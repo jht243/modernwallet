@@ -1,10 +1,28 @@
 {
- "slug": "best-same-day-business-loans",
- "rows": [],
- "cut": [
-  {
-   "domain": "baystreetlending.com",
-   "why": "category 1 \u2014 intermediary paid by its lending partners, not a direct lender; marketplace/lead-gen"
-  }
- ]
+  "slug": "best-same-day-business-loans",
+  "rows": [
+    {
+      "name": "QuickBridge",
+      "domain": "quickbridge.com",
+      "url": "https://quickbridge.com/",
+      "values": [
+        "Up to $500,000",
+        "As little as 24 hours after approval",
+        "Not published; personal credit is one factor",
+        "ACH withdrawals Monday to Friday; schedule Not published"
+      ]
+    },
+    {
+      "name": "Sandora Capital",
+      "domain": "sandoracapital.com",
+      "url": "https://sandoracapital.com/",
+      "values": [
+        "Not published",
+        "Same day after approval, which the site says takes within 2 hours",
+        "500+ FICO listed; minimums vary by program",
+        "Not published"
+      ]
+    }
+  ],
+  "cut": []
 }

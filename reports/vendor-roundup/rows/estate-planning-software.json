@@ -1,14 +1,23 @@
 {
   "slug": "best-estate-planning-software",
-  "rows": [],
+  "rows": [
+    {
+      "name": "WealthCounsel",
+      "domain": "wealthcounsel.com",
+      "url": "https://www.wealthcounsel.com/",
+      "values": [
+        "Not published",
+        "Not published",
+        "Not published",
+        "N/A; software is for attorneys",
+        "Cloud-based; Mac and PC"
+      ]
+    }
+  ],
   "cut": [
     {
-      "domain": "sheetstaxes.com",
-      "why": "category 4 \u2014 accounting and tax firm with no estate planning documents; better: tax preparation or bookkeeping services"
-    },
-    {
-      "domain": "milemarker.co",
-      "why": "category 3 \u2014 data infrastructure for wealth management firms, not a personal or small-business finance product"
+      "domain": "truereview.co",
+      "why": "category 4 \u2014 business review-management software, not estate planning"
     }
   ]
 }

@@ -1,30 +1,5 @@
 {
   "slug": "personal-loan-rates-by-lender",
-  "rows": [
-    {
-      "name": "Rocket Loans",
-      "domain": "rocketloans.com",
-      "url": "https://www.rocketloans.com/",
-      "values": [
-        "Debt consolidation, home improvement, medical bills; FICO 640+ recommended",
-        "$2,000 to $75,000",
-        "7.99% to 29.99% APR; low end needs autopay",
-        "Origination fee up to 9.99%",
-        "Often same day if finalized by 4 p.m. ET"
-      ]
-    },
-    {
-      "name": "Georgia United Credit Union",
-      "domain": "gucu.org",
-      "url": "https://www.gucu.org/",
-      "values": [
-        "Members of this Georgia credit union; eligibility applies",
-        "$500 to $100,000",
-        "As low as 10.50% APR, subject to credit approval",
-        "Not published",
-        "Not published"
-      ]
-    }
-  ],
+  "rows": [],
   "cut": []
 }

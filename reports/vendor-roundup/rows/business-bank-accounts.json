@@ -1,27 +1,10 @@
 {
   "slug": "best-business-bank-accounts",
-  "rows": [
-    {
-      "name": "Popular Bank",
-      "domain": "popularbank.com",
-      "url": "https://www.popularbank.com/",
-      "values": [
-        "Not published; site says fees may apply",
-        "No minimum deposit to open; ongoing minimum not published",
-        "Not published",
-        "Member FDIC",
-        "Not published"
-      ]
-    }
-  ],
+  "rows": [],
   "cut": [
     {
-      "domain": "growegy.com",
-      "why": "category 4 \u2014 small business platform with Net30 vendor account, no bank account; better: business credit builders"
-    },
-    {
-      "domain": "eposnow.com",
-      "why": "category 4 \u2014 POS hardware and software, no bank account; better: POS or merchant services"
+      "domain": "reilcap.com",
+      "why": "category 4 \u2014 small business lender (SBA, line of credit, revenue-based), no bank account; fits business loan categories"
     }
   ]
 }

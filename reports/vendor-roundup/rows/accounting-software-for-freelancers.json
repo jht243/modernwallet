@@ -1,22 +1,10 @@
 {
   "slug": "best-accounting-software-for-freelancers",
-  "rows": [
-    {
-      "name": "Aviy",
-      "domain": "aviy.ai",
-      "url": "https://aviy.ai/",
-      "values": [
-        "Free to start, no credit card; paid plan pricing not published",
-        "Unlimited clients listed under account features",
-        "Invoices, estimates, quotes, credit notes and receipts as PDFs",
-        "Freelancers who want to make invoices by typing a description"
-      ]
-    }
-  ],
+  "rows": [],
   "cut": [
     {
-      "domain": "ecombalance.com",
-      "why": "category 4 \u2014 fits bookkeeping services category"
+      "domain": "topadvisor.com",
+      "why": "category 1 \u2014 software review and comparison site, no accounting product of its own"
     }
   ]
 }

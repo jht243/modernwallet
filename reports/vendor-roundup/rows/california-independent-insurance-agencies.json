@@ -2,16 +2,54 @@
   "slug": "best-independent-insurance-agencies-in-california",
   "rows": [
     {
-      "name": "Southern California Auto Insurance",
-      "domain": "southerncaliforniaautoinsurance.com",
-      "url": "https://southerncaliforniaautoinsurance.com/",
+      "name": "State Farm",
+      "domain": "statefarm.com",
+      "url": "https://www.statefarm.com/",
       "values": [
-        "San Diego",
-        "0B86513",
-        "Auto, home, business and life",
-        "Independent agency serving San Diego drivers and homeowners"
+        "Not published",
+        "Not published",
+        "Auto, home, life, umbrella, small business, workers' comp, bonds",
+        "Customers wanting a dedicated agent; lines vary by state"
+      ]
+    },
+    {
+      "name": "Mercury Insurance",
+      "domain": "mercuryinsurance.com",
+      "url": "https://www.mercuryinsurance.com/",
+      "values": [
+        "California-focused; headquarters not stated on homepage",
+        "Not published",
+        "Auto, home, condo, renters, landlord, umbrella, business owners",
+        "California drivers and homeowners wanting bundled home and auto"
+      ]
+    },
+    {
+      "name": "Independent Executive Insurance Brokers",
+      "domain": "ieibrokers.com",
+      "url": "https://www.ieibrokers.com/",
+      "values": [
+        "Moorpark, CA",
+        "0G05776",
+        "Business, workers' comp, bonds, auto, home, life, group benefits",
+        "Businesses of all sizes, individuals and families"
+      ]
+    },
+    {
+      "name": "Broadway Insurance Services",
+      "domain": "broadwayinsurance.agency",
+      "url": "https://broadwayinsurance.agency/",
+      "values": [
+        "Los Angeles, CA",
+        "0J21932",
+        "Auto, home, earthquake, umbrella, commercial, landlord coverage",
+        "Individuals, businesses and California landlords or real estate investors"
       ]
     }
   ],
-  "cut": []
+  "cut": [
+    {
+      "domain": "quote.com",
+      "why": "category 1 \u2014 comparison and lead-generation marketplace, states it does not sell insurance"
+    }
+  ]
 }

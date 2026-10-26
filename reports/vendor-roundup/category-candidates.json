@@ -1,38 +1,56 @@
 {
   "site": "themodernwallet.com",
   "cut_as_other_category": {
-    "stock or crypto brokers": [
-      "etoro.com"
+    "bookkeeping services": [
+      "ecombalance.com"
     ],
-    "financial advisors": [
-      "soliswealth.com"
+    "crypto wallets": [
+      "spark.money"
     ],
-    "expense-tracking apps": [
-      "getfinny.app"
+    "small-business funding": [
+      "helloskip.com"
     ],
     "unlabelled": [
-      "auritrack.com",
+      "bhsg.com",
+      "convergehub.com",
+      "eposnow.com",
       "ficstar.com",
-      "inertiaresourcesinc.com",
+      "growegy.com",
       "info.cccu.com",
-      "pearllemoninvest.com",
-      "plannedwithpurposellc.com",
-      "swbc.com"
+      "sheetstaxes.com",
+      "singerlawgroup.com",
+      "smartinvestortoolbox.com"
     ],
-    "advisor": [
-      "allworthfinancial.com"
+    "financial advisor": [
+      "wealthenhancement.com"
     ],
-    "no factoring row": [
-      "levelset.com"
+    "tax software": [
+      "getapril.com"
     ],
-    "budgeting": [
-      "budgetsmart.io"
+    "living trust": [
+      "johnsonturner.com",
+      "melonelawpc.com"
+    ],
+    "business loans or line of credit": [
+      "clearlyacquired.com"
+    ],
+    "brokerage": [
+      "ml.com"
+    ],
+    "no finance": [
+      "lendfoundry.com"
+    ],
+    "budgeting-apps": [
+      "aimoneyvault.app"
+    ],
+    "prop firm": [
+      "goatfundedtrader.com"
     ],
     "budgeting and money apps": [
       "maxint.com"
     ],
-    "business credit cards": [
-      "engine.com"
+    "credit repair": [
+      "asapcreditrepairusa.com"
     ]
   },
   "demand_candidates": [

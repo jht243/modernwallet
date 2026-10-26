@@ -1,30 +1,10 @@
 {
   "slug": "best-merchant-cash-advance-companies",
-  "rows": [
-    {
-      "name": "Elite Funders",
-      "domain": "elitefunders.com",
-      "url": "https://elitefunders.com/",
-      "values": [
-        "MCA, revenue-based, term, SBA, line of credit (broker, 70+ lenders)",
-        "MCA up to $2M; programs $10K to $5M",
-        "MCA same day; most funding 24-72 hours",
-        "Basic info, 3 months bank statements; 500+ credit score listed"
-      ]
-    }
-  ],
+  "rows": [],
   "cut": [
     {
-      "domain": "lendfoundry.com",
-      "why": "category 3 \u2014 loan-origination software sold to lenders, no financing product for businesses; fits no finance category on this site"
-    },
-    {
-      "domain": "singerlawgroup.com",
-      "why": "category 4 \u2014 law firm offering MCA defense and bankruptcy, not an MCA provider; better category is business debt relief or legal services"
-    },
-    {
-      "domain": "convergehub.com",
-      "why": "category 4 \u2014 CRM software for small businesses, no funding product; better category is small-business software"
+      "domain": "mcadirectory.io",
+      "why": "category 1 \u2014 directory and lead-gen for MCA brokers and funders, no funding product of its own"
     }
   ]
 }
