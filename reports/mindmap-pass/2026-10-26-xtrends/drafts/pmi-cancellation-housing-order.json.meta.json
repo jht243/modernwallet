@@ -1,0 +1,99 @@
+{
+ "slug": "pmi-cancellation-housing-order",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1669,
+ "floor": 1100,
+ "input_tokens": 23106,
+ "output_tokens": 3158,
+ "thinking_tokens": 1240,
+ "cached_tokens": 19478,
+ "est_cost_usd": 0.0207,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['What the Order Changes and What It Does Not', 'How PMI Ends Today Under Existing Rules', 'Timeline Projections for Existing Mortgages', 'Potential Impact of a Current-Value Standard', 'Refinance Title Insurance Pilot Expansion'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1669,
+  "numbers_not_in_facts": [
+   "12000",
+   "20000",
+   "40000",
+   "60000"
+  ],
+  "fact_budget": {
+   "fact_words": 539,
+   "floor": 1100,
+   "ratio": 0.49,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    2
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we model mortgage timelines and track federal lending policies to help homeowners calculate exact payoff dates.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not support tracking federal lending policies to calculate exact payoff dates."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Title insurance premiums represent an upfront expense during loan restructuring.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state title insurance premiums are upfront expenses during loan restructuring."
+    },
+    {
+     "id": "introText",
+     "quote": "The presidential action directs the Federal Housing Finance Agency (FHFA) to consider a pilot program that would apply only to mortgages made after that pilot is established.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "Order says FHFA Director may direct Fannie and Freddie, not that it directs FHFA."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Section 4(b)(i) directs the agency to consider extending this waiver to refinances with loan-to-value ratios exceeding 80 percent when title risks remain minimal.",
+     "replacement": "Under Section 4(b)(i), the Director should consider extending eligibility to refinances with loan-to-value ratios exceeding 80 percent when title risks remain minimal.",
+     "type": "contradicted",
+     "why": "SOURCE states Section 4(b)(i) provides the Director should consider extending eligibility, not directs."
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1725
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 215.8,
+ "response_id": "XYXfaty6GcTIiLMPgZqMgA0",
+ "generated_at": "2026-10-26T16:56:18+0000"
+}

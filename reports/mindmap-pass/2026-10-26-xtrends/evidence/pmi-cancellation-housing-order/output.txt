@@ -1,0 +1,27 @@
+Case grid: price $400,000, 30-year fixed, scheduled payments only, original value = price
+down%  rate   loan     m_to_80%  yrs   m_to_78%  yrs   midpoint=180
+   3   5.5    388000    121   10.1    131   10.9
+   3   6.5    388000    133   11.1    144   12.0
+   3   7.5    388000    146   12.2    157   13.1
+   5   5.5    380000    111    9.2    123   10.2
+   5   6.5    380000    124   10.3    135   11.2
+   5   7.5    380000    136   11.3    148   12.3
+  10   5.5    360000     84    7.0     98    8.2
+  10   6.5    360000     95    7.9    109    9.1
+  10   7.5    360000    107    8.9    121   10.1
+  15   5.5    340000     49    4.1     65    5.4
+  15   6.5    340000     56    4.7     75    6.2
+  15   7.5    340000     65    5.4     85    7.1
+
+Current-value test (the order's pilot says current market value; threshold used here: 80% LTV, ILLUSTRATIVE)
+Home bought $400,000 with 5% down at 6.5%, 30-year. Value needed for balance = 80% of CURRENT value:
+year 2: balance $371,221; value needed for 80% LTV $464,026 (+16.0% vs price)
+year 3: balance $366,386; value needed for 80% LTV $457,982 (+14.5% vs price)
+year 5: balance $355,722; value needed for 80% LTV $444,652 (+11.2% vs price)
+year 7: balance $343,582; value needed for 80% LTV $429,477 (+7.4% vs price)
+
+Arithmetic, no assumed rate: monthly PMI per 0.1 percentage point of annual premium rate
+loan $300,000: each 0.1 pt of annual rate = $25.00/mo
+loan $380,000: each 0.1 pt of annual rate = $31.67/mo
+
+Counterexample: 20% down loan, price $400,000, loan $320,000: LTV is 80% on day one -> m=0 (no PMI case)

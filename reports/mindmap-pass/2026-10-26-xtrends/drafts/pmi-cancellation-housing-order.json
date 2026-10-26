@@ -1,0 +1,62 @@
+{
+  "slug": "pmi-cancellation-housing-order",
+  "metaTitle": "Automatic PMI Cancellation: What the Executive Order Means",
+  "metaDescription": "Learn whether automatic PMI cancellation applies to your loan under the 2026 housing executive order, how current rules work, and what may change.",
+  "h1": "Automatic PMI Cancellation and the 2026 Housing Order",
+  "cardBlurb": "The October 2026 housing executive order does not cancel PMI on existing mortgages, but it authorizes a future pilot program for new loans.",
+  "introText": "The October 22, 2026 executive order does not provide automatic private mortgage insurance (PMI) cancellation for existing mortgages today. Homeowners with existing loans remain subject to current federal rules, which allow cancellation requests at an 80 percent loan balance or automatic termination at 78 percent.",
+  "sections": [
+    {
+      "heading": "What the Order Changes and What It Does Not",
+      "body": "The White House issued an executive order titled [Decreasing Housing Costs for the American People](https://www.whitehouse.gov/presidential-actions/2026/10/decreasing-housing-costs-for-the-american-people/) on October 22, 2026. Section 2(a) provides that the FHFA Director may direct Fannie Mae and Freddie Mac to establish a pilot program for single-family mortgages they own, guarantee, or securitize. This pilot applies solely to mortgages made after the establishment of the pilot program, provided the Director finds it serves the public interest and Enterprise soundness. The text does not modify any mortgage contract currently in repayment.\n\nSection 2(b) outlines three conditions for cancellation under this future pilot. First, the borrower must satisfy applicable equity requirements based on the current market value of the property, which servicers may evaluate through an automated valuation model or other approved methods. Second, the cancellation must align with financial safety, soundness, and contractual obligations. Third, the borrower must satisfy all other applicable statutory, contractual, regulatory, and Enterprise requirements.\n\nThe order omits several operational specifics. It does not publish an exact equity percentage, a distinct payment-history test, or a launch date. Furthermore, Section 4(a) states the FHFA Director may direct the Enterprises to expand an existing title acceptance pilot into an ongoing nationwide program for eligible refinance transactions. Under Section 4(b)(i), the Director should consider extending eligibility to refinances with loan-to-value (LTV) ratios above 80 percent where title risk remains low, while Section 4(c) mandates that lenders pass these savings through to borrowers."
+    },
+    {
+      "heading": "How PMI Ends Today Under Existing Rules",
+      "body": "Until the FHFA establishes a new framework, conventional loan servicers follow standard federal guidelines. According to the [CFPB guidance on removing private mortgage insurance](https://www.consumerfinance.gov/ask-cfpb/when-can-i-remove-private-mortgage-insurance-pmi-from-my-loan-en-202/), borrowers have two primary benchmarks for cancellation based on original value. Original value represents the contract sales price or the appraised value at purchase, whichever is lower, or the appraised value at the time of a refinance.\n\nBorrowers can request cancellation in writing on the date the principal balance is scheduled to reach 80 percent of original value. You can submit this request early if you make extra principal payments to reach that 80 percent mark. To approve the request, the servicer requires a clean payment history, proof that payments are current, certification that no junior liens exist, and evidence showing the home value has not dropped below original value.\n\nAutomatic termination operates on a different timetable. Servicers must cancel PMI automatically once your principal balance is scheduled to reach 78 percent of original value, assuming your payments are current. In addition, the servicer must terminate PMI the month following the midpoint of your total amortization schedule, which equals 15 years on a 30-year loan, even if the balance has not reached 78 percent. As noted by the [CFPB explanation of mortgage insurance](https://www.consumerfinance.gov/ask-cfpb/what-is-private-mortgage-insurance-en-122/), PMI is required on conventional loans with down payments below 20 percent to protect the lender rather than the borrower."
+    },
+    {
+      "heading": "Timeline Projections for Existing Mortgages",
+      "body": "To show how long borrowers must wait under current original-value rules, we modeled standard amortization schedules for a $400,000 purchase price across various down payments and interest rates. The scope assumes a 30-year fixed-rate mortgage with scheduled payments only, zero extra payments, and original value matching the purchase price. Rates of 5.5 percent, 6.5 percent, and 7.5 percent serve as scenario inputs rather than current rate quotes.\n\n| Down Payment | Interest Rate | Loan Amount | Months to 80% (Years) | Months to 78% (Years) |\n| --- | --- | --- | --- | --- |\n| 3% ($12,000) | 5.5% | $388,000 | 121 (10.1) | 131 (10.9) |\n| 3% ($12,000) | 6.5% | $388,000 | 133 (11.1) | 144 (12.0) |\n| 3% ($12,000) | 7.5% | $388,000 | 146 (12.2) | 157 (13.1) |\n| 5% ($20,000) | 5.5% | $380,000 | 111 (9.2) | 123 (10.2) |\n| 5% ($20,000) | 6.5% | $380,000 | 124 (10.3) | 135 (11.2) |\n| 5% ($20,000) | 7.5% | $380,000 | 136 (11.3) | 148 (12.3) |\n| 10% ($40,000) | 5.5% | $360,000 | 84 (7.0) | 98 (8.2) |\n| 10% ($40,000) | 6.5% | $360,000 | 95 (7.9) | 109 (9.1) |\n| 10% ($40,000) | 7.5% | $360,000 | 107 (8.9) | 121 (10.1) |\n| 15% ($60,000) | 5.5% | $340,000 | 49 (4.1) | 65 (5.4) |\n| 15% ($60,000) | 6.5% | $340,000 | 56 (4.7) | 75 (6.2) |\n| 15% ($60,000) | 7.5% | $340,000 | 65 (5.4) | 85 (7.1) |\n\nIn every scenario modeled, the 78 percent scheduled date arrives before the 180-month loan midpoint. Consequently, automatic termination on standard 30-year loans is driven by the 78 percent balance threshold rather than the midpoint rule. You can evaluate your own schedule by viewing our [mortgage amortization schedule](/mortgage/amortization-schedule/)."
+    },
+    {
+      "heading": "Potential Impact of a Current-Value Standard",
+      "body": "The executive order outlines a pilot evaluated on current market value rather than original purchase price. While the order names no equity percentage, our internal calculation illustrates how an 80 percent current-value threshold would operate. For a $400,000 home with a 5 percent down payment ($380,000 loan) at a 6.5 percent interest rate, scheduled payments reduce the balance over time while market appreciation adds equity.\n\nUnder this illustration, reaching an 80 percent ratio against current market value requires specific property appreciation milestones:\n\n- After 2 years: loan balance is $371,221, requiring a market value of $464,026 (16.0 percent appreciation over purchase price).\n- After 3 years: loan balance is $366,386, requiring a market value of $457,982 (14.5 percent appreciation over purchase price).\n- After 5 years: loan balance is $355,722, requiring a market value of $444,652 (11.2 percent appreciation over purchase price).\n- After 7 years: loan balance is $343,582, requiring a market value of $429,477 (7.4 percent appreciation over purchase price).\n\nUnder current rules based on original value, this identical borrower must wait 124 months (10.3 years) for the 80 percent cancellation date and 135 months (11.2 years) for automatic 78 percent termination. A current-value standard would allow earlier termination if home values climb, but the FHFA has not established terms. Borrowers who made a 20 percent down payment already began at an 80 percent ratio and have no PMI fees."
+    },
+    {
+      "heading": "Refinance Title Insurance Pilot Expansion",
+      "body": "Section 4 of the executive order addresses closing expenses by permitting an expansion of the title acceptance pilot. If the FHFA Director finds it serves the public interest and financial soundness, the Enterprises may accept an automated title review or approved title-risk assessment in place of traditional lender title insurance. This change targets eligible refinance transactions nationwide.\n\nUnder Section 4(b)(i), the Director should consider extending eligibility to refinances with loan-to-value ratios exceeding 80 percent when title risks remain minimal. Section 4(c) explicitly requires lenders to pass these cost reductions directly to borrowers. The executive order does not state the exact dollar savings or publish which specific loans qualify.\n\n You can explore typical settlement expenses in our guide to [mortgage refinance closing costs](/guides/mortgage-refinance-closing-costs/). To analyze whether restructuring your current loan balance makes financial sense, use our [mortgage refinance calculator](/mortgage/refinance-calculator/)."
+    },
+    {
+      "heading": "Practical Steps for Current Mortgage Borrowers",
+      "body": "The 2026 executive order offers no immediate financial relief to existing mortgage holders. Borrowers who put 20 percent down have no mortgage insurance premiums to remove. Meanwhile, borrowers who take out new loans after the FHFA completes its pilot setup may gain access to current-market valuation rules in future years.\n\nIf you currently carry PMI on a conventional mortgage, your monthly cost depends on your loan size and insurance rate. Each 0.1 percentage point of annual PMI rate adds $25.00 monthly to a $300,000 loan balance and $31.67 monthly to a $380,000 loan balance. Review your monthly mortgage statement to confirm your current premium charge and scheduled 80 percent balance date.\n\nBorrowers seeking to remove PMI ahead of schedule can accelerate their equity growth by paying down principal. You can test how additional monthly payments pull forward your cancellation date using our [mortgage extra payment calculator](/mortgage/extra-payment-calculator/). Once your loan reaches 80 percent of original value, submit a formal written cancellation request directly to your loan servicer."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does the housing executive order cancel my PMI automatically?",
+      "answer": "No. The order does not cancel PMI on any existing mortgage. It authorizes the FHFA Director to direct Fannie Mae and Freddie Mac to create a pilot program that will apply only to new mortgages originated after the pilot is established."
+    },
+    {
+      "question": "How do I get PMI removed on my mortgage today?",
+      "answer": "You can send a written cancellation request to your mortgage servicer when your scheduled or actual principal balance reaches 80 percent of the original value. You must have a clean payment record, be current on payments, and show the home value has not decreased."
+    },
+    {
+      "question": "At what loan-to-value does PMI automatically end?",
+      "answer": "Under federal law, servicers must automatically terminate PMI when your principal balance is scheduled to reach 78 percent of the home's original value, provided your mortgage payments are fully current."
+    },
+    {
+      "question": "Does the title insurance waiver apply to my refinance?",
+      "answer": "The executive order allows the FHFA Director to expand an automated title review pilot for eligible refinances nationwide, but program eligibility guidelines and start dates have not been finalized."
+    },
+    {
+      "question": "Will the new PMI pilot apply to loans I already have?",
+      "answer": "No. Section 2(a) of the executive order explicitly restricts any resulting pilot program to mortgages made after the establishment of the pilot program."
+    }
+  ],
+  "relatedLinks": [],
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}
