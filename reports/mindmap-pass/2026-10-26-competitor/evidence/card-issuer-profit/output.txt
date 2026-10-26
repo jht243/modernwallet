@@ -1,0 +1,8 @@
+Balance 5300 @22.15%: month1 interest 97.83, month1 min payment 150.83
+Min-only payoff: 190 months (15.8 yrs), total interest 8070.23, total paid 13370.23
+Year-1 interest if balance held flat: 1173.95
+Interchange on 5300 of purchases at 1.8%: 95.40
+Ratio flat-year interest / interchange: 12.3x
+APR 22.15%: 190 months, interest 8070.23
+APR 25.20%: 196 months, interest 9307.50
+Fixed $265/mo: 26 months, interest 1375.54

@@ -31,6 +31,186 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── mindmap-pass 2026-10-26 (competitor): build-wealth-during-high-inflation ──
+  {
+    "updated": "2026-10-26",
+    "slug": "build-wealth-during-high-inflation",
+    "title": "Build Wealth During High Inflation: Protect Cash",
+    "metaDescription": "Learn how to build wealth during high inflation. Compare I bonds, TIPS, savings rates, and tax-advantaged accounts to protect your purchasing power.",
+    "h1": "How to Build Wealth During High Inflation",
+    "cardBlurb": "Protect your purchasing power by matching cash to near-term needs, inflation-linked Treasuries to intermediate reserves, and tax-advantaged accounts to long horizons.",
+    "introText": "To protect your savings and build wealth during high inflation, it helps to separate your money by time horizon rather than leaving idle balances in a standard account. A regular account paying the national average of 0.38 percent loses purchasing power when inflation runs at 3.7 percent.\n\nKeeping your dollars productive requires matching each portion of your money to a specific timeline. Cash belongs in liquid accounts for immediate needs, while funds you can leave untouched for 12 months or longer can fit in government-backed securities designed around inflation adjustments.\n\nFor a broader comparison of saving vehicles, see our analysis of [HYSA vs CD](/compare/hysa-vs-cd/).",
+    "sections": [
+      {
+        "heading": "How to Match Each Dollar to Its Time Horizon",
+        "body": "Protect your savings by sorting every dollar into near-term, intermediate, or long-term buckets based on when you will spend it. Cash needed for emergencies and daily expenses must stay fully liquid. Although the [Federal Deposit Insurance Corporation](https://www.fdic.gov/national-rates-and-rate-caps) reports a national average savings rate of 0.38 percent, that figure is only an average. Rates at online banks vary, so check current offers to see if your cash can earn more. You can compare your current earnings against higher rates using our [high-yield savings calculator](/investing/high-yield-savings-calculator/).\n\nMoney you can set aside for at least 12 months can fit in inflation-indexed government debt (I bonds: up to $10,000 a year, locked for 12 months) like Series I savings bonds or Treasury Inflation-Protected Securities. Both options adjust your return or your principal as inflation changes. Because I bonds cannot be redeemed for 12 months and TIPS run for 5, 10 or 30 years, money you may need soon does not fit in them.\n\nDollars with long horizons fit into tax-advantaged accounts. For 2026, the [Internal Revenue Service](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) sets the employee deferral limit for a 401(k) at $24,500 and the standard individual retirement arrangement limit at $7,500. These tax-advantaged accounts carry no inflation guarantee. To explore how retirement accounts compare to liquid deposits, review our guide on [HYSA vs Roth IRA vs brokerage account](/guides/hysa-vs-roth-ira-vs-brokerage-account/)."
+      },
+      {
+        "heading": "What the Inflation Numbers Look Like Now",
+        "body": "Official government releases outline the pressure that consumer prices place on ordinary cash balances. The [Bureau of Labor Statistics](https://www.bls.gov/news.release/cpi.nr0.htm) announced on October 14, 2026, that the all items index increased 3.7 percent over the prior 12 months before seasonal adjustment for the September 2026 reference month. The October CPI release was not yet published when we recorded these benchmarks.\n\nThe [Federal Reserve](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm) decided at its September 16, 2026 meeting to raise the target range for the federal funds rate to 3-3/4 to 4 percent. Even after that increase, the 0.38 percent average sits well below the 3.7 percent CPI.\n\nWhen a bank pays the national average rate of 0.38 percent while consumer prices rise at 3.7 percent, a savings account loses purchasing power. You can measure the real impact of these price increases on specific dollar amounts using our [inflation calculator](/inflation-calculator/)."
+      },
+      {
+        "heading": "Our Internal Modeling of $10,000 for One Year",
+        "body": "To show how different cash allocations perform over 12 months, we modeled a $10,000 balance across three common settings assuming inflation stays at 3.7 percent for the year. In our calculation, we applied annual compounding and assumed the initial composite rate on an I bond remained steady across the holding period. This scenario shows the baseline gap between options rather than predicting future price shifts. Enter your own rates in our [inflation calculator](/inflation-calculator/).\n\n| Allocation Setting | Nominal Balance After 12 Months | Real Value in Today's Dollars | Purchasing Power Change |\n| --- | --- | --- | --- |\n| Cash with Zero Interest | $10,000.00 | $9,643.20 | -$356.80 |\n| FDIC Average Savings (0.38%) | $10,038.00 | $9,679.85 | -$320.15 |\n| Treasury I Bond (4.26%) | $10,426.00 | $10,054.00 | +$54.00 |\n\nOur modeling shows that holding uninvested cash for a year results in a purchasing power loss of $356.80 in current purchasing terms. A standard account earning the 0.38 percent average produces $38 in interest, but leaves the depositor with an effective loss of $320.15. To break even and maintain purchasing power against a 3.7 percent inflation rate, a deposit needs an interest rate of exactly 3.70 percent.\n\nAn I bond earning the 4.26 percent composite rate delivers $10,426 in nominal cash, leaving the holder with an effective purchasing power gain of $54.00. The 0.90 percent fixed rate portion is worth about $90 a year on $10,000 above the bond's own inflation component; against the 3.7 percent CPI assumed here, the net modeled gain is $54.00 because the composite rate is 4.26 percent. If inflation dropped to 2.0 percent, an account paying 0.38 percent would still lose about 1.6 percent of its purchasing power annually, while the I bond would continue to credit its 0.90 percent fixed rate above the revised inflation component."
+      },
+      {
+        "heading": "I Bonds and TIPS Rules That Change the Answer",
+        "body": "Federal inflation-indexed securities carry operational limitations that dictate how you can use them. According to [TreasuryDirect](https://www.treasurydirect.gov/savings-bonds/i-bonds/i-bonds-interest-rates/), Series I bonds issued from May 1, 2026 to October 31, 2026 carry a composite rate of 4.26 percent. That yield combines a 0.90 percent fixed rate with a 1.67 percent semiannual inflation component. A new rate is due November 1, 2026, and it was not published when we checked.\n\nTreasuryDirect limits electronic I bond purchases to $10,000 per person per calendar year. Furthermore, the [TreasuryDirect program rules](https://www.treasurydirect.gov/savings-bonds/i-bonds/) state that you cannot redeem an I bond until you have held it for 12 months. If you redeem an I bond before completing five years of ownership, you forfeit the prior three months of interest. For example, if you cash out a $10,000 bond at month 13 at a 4.26 percent accrual, you accumulate roughly $461.50 in total interest, but the three-month penalty subtracts about $106.50, netting you around $355.00 (a simple monthly-accrual approximation, not a Treasury calculation).\n\nTreasury Inflation-Protected Securities function differently. As [TreasuryDirect explains for TIPS](https://www.treasurydirect.gov/marketable-securities/tips/), the principal value adjusts upward with inflation and downward with deflation. TIPS are issued in maturities of 5, 10, or 30 years and pay interest every six months at a fixed auction rate that never drops below 0.125 percent. At maturity, the federal government guarantees that you never receive less than the original principal amount. For an in-depth breakdown of these two assets, read our side-by-side analysis of [I bonds vs TIPS](/compare/i-bonds-vs-tips/)."
+      },
+      {
+        "heading": "What This Guide Does Not Cover",
+        "body": "Our modeling covers only a savings account at the FDIC average, cash at 0 percent, and an I bond. We do not model historical returns or inflation-hedging claims for equities, gold, real estate, or physical commodities. \n\nWe also do not project future rate decisions from the Federal Reserve or anticipate the November 1, 2026 I bond interest rate update. Deposit rates at online banks vary, and savers should check current offers. \n\nAdditionally, this guide does not cover the tax treatment of I bond or TIPS interest; check TreasuryDirect and the IRS."
+      },
+      {
+        "heading": "Our Takeaway for Protecting Cash",
+        "body": "Savers who can leave reserves untouched for at least 12 months have the clearest case for inflation-linked Treasuries; savers who need the money sooner have a stronger case for keeping cash liquid and shopping rates. Our conclusion rests on our internal modeling of official figures from the Bureau of Labor Statistics, the Federal Reserve, the FDIC and TreasuryDirect, not on a test of any product. In that model, $10,000 at the 0.38 percent average loses about $320 of purchasing power over a year of 3.7 percent inflation, while an I bond held at 4.26 percent gains about $54.\n\nThis changes if you need the money inside 12 months, because I bonds are locked for that period. It also changes if you have already used the $10,000 annual electronic I bond limit, or if inflation falls and the I bond's composite rate resets lower. Tax-advantaged accounts such as a 401(k) or IRA have no inflation guarantee, and we did not model stocks, gold or real estate.\n\nThe next step is to split your savings by when you will spend it, check current savings rates, and read [I bonds vs TIPS](/compare/i-bonds-vs-tips/) before choosing between the two Treasury options."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/inflation-calculator/",
+        "label": "Inflation calculator"
+      },
+      {
+        "href": "/investing/high-yield-savings-calculator/",
+        "label": "High-yield savings calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How can I protect my savings from inflation?",
+        "answer": "You can protect your savings by keeping only immediate expenses in liquid cash and allocating money you will not need for 12 months into inflation-indexed Treasury securities like I bonds or TIPS. Long-term funds can go into tax-advantaged accounts like a 401(k) or IRA."
+      },
+      {
+        "question": "Are I bonds worth it when inflation is high?",
+        "answer": "I bonds can keep pace with inflation because their composite rate resets every six months; the rate for bonds issued May 1 to October 31, 2026 is 4.26 percent, including a 0.90 percent fixed rate. In our modeling, $10,000 at that rate gains about $54 of purchasing power over a year at 3.7 percent inflation. They are not worth it for money you need within 12 months, or once you have used the $10,000 annual limit."
+      },
+      {
+        "question": "Do TIPS protect against inflation?",
+        "answer": "Yes, TIPS protect against inflation because the principal value rises with inflation and falls with deflation. They pay a fixed interest rate every six months, and the government guarantees you will never receive less than your original principal at maturity."
+      },
+      {
+        "question": "Is a savings account losing money to inflation?",
+        "answer": "Yes, a savings account earning the 0.38 percent national average loses purchasing power when inflation runs higher, such as the 3.7 percent 12-month CPI rate recorded in September 2026. In our model, on a $10,000 deposit over one year at 3.7 percent inflation, that spread is a real purchasing power loss of $320.15."
+      },
+      {
+        "question": "What are the 2026 401(k) and IRA contribution limits?",
+        "answer": "For 2026, the IRS employee deferral limit for a 401(k) is $24,500, with an additional $8,000 catch-up contribution for savers aged 50 and older. The 2026 IRA contribution limit is $7,500, with a $1,100 IRA catch-up contribution."
+      }
+    ],
+    "sources": [
+      {
+        "label": "BLS: Consumer Price Index news release",
+        "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+      },
+      {
+        "label": "TreasuryDirect: I bond interest rates",
+        "url": "https://www.treasurydirect.gov/savings-bonds/i-bonds/i-bonds-interest-rates/"
+      },
+      {
+        "label": "TreasuryDirect: I bonds",
+        "url": "https://www.treasurydirect.gov/savings-bonds/i-bonds/"
+      },
+      {
+        "label": "TreasuryDirect: TIPS",
+        "url": "https://www.treasurydirect.gov/marketable-securities/tips/"
+      },
+      {
+        "label": "FDIC: National rates and rate caps",
+        "url": "https://www.fdic.gov/national-rates-and-rate-caps"
+      },
+      {
+        "label": "Federal Reserve: FOMC statement, September 16, 2026",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+      },
+      {
+        "label": "IRS: 2026 401(k) and IRA limits",
+        "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-10-26 (competitor): how-credit-card-companies-make-money ──
+  {
+    "updated": "2026-10-26",
+    "slug": "how-credit-card-companies-make-money",
+    "title": "How Credit Card Companies Make Money",
+    "metaDescription": "How credit card companies make money: mostly interest from people who carry a balance, plus merchant-paid interchange on every purchase and fees.",
+    "h1": "How Credit Card Companies Make Money",
+    "cardBlurb": "Credit card issuers earn revenue primarily through interest on carried balances, merchant interchange fees on purchases, and consumer account fees.",
+    "introText": "Credit card companies make most of their card money from interest paid by cardholders who carry a balance, and they also collect interchange from merchants on every purchase, which is the only revenue a cardholder who pays in full generates. When cardholders carry a balance from month to month, issuers earn interest revenue.\n\nThe business model relies on three main revenue sources: interest charges, merchant transaction fees, and consumer fees. While people who pay their statements in full pay no interest, issuers still collect revenue every time a card swipes at a cash register.",
+    "sections": [
+      {
+        "heading": "Who Pays the Card Issuer and How",
+        "body": "Card issuers collect revenue from two distinct groups: the merchants who accept card payments and the cardholders who use the accounts. According to the 2023 Consumer Credit Card Market Report published by the [Consumer Financial Protection Bureau (CFPB)](https://files.consumerfinance.gov/f/documents/cfpb_consumer-credit-card-market-report_2023.pdf), interest income is the primary revenue source for the card portfolios of major banks. For general purpose card issuers in 2022, interest income represented 12.3 percent of receivables, while interchange income represented 7.9 percent, and fee income represented 1.5 percent.\n\nInterchange consists of fees received by the card issuer from card associations, which form part of the broader merchant discount rate. Payment networks set interchange schedules that vary by transaction category, merchant size, and card tier, with issuing banks receiving the majority of this interchange revenue. For general purpose card issuers in 2022, interchange averaged about 1.8 percent of purchase volume. In contrast, private label store cards generated nearly zero interchange income.\n\nA cardholder who pays their statement balance in full every billing cycle generates zero interest revenue for the issuer. That cardholder still generates interchange revenue paid by merchants on every transaction. Cardholders who carry balances pay both interest and potential account fees, creating multiple revenue streams for the bank. You can see how carrying a balance changes your own financing costs by trying different payment amounts in our [credit card interest calculator](/credit-card-interest-calculator/)."
+      },
+      {
+        "heading": "The Share of Cardholders Carrying a Balance",
+        "body": "Roughly half of all credit card accounts carry a balance from month to month. In its December 2025 report covering data through 2024, the [CFPB](https://files.consumerfinance.gov/f/documents/cfpb_consumer-credit-card-market-report_2025.pdf) found that the share of accounts revolving credit card balances returned to pre-pandemic levels of around 50 percent, up from 45 percent in late 2021. The average balance per cardholder was about $5,300 in 2024.\n\nTotal interest paid by cardholders exceeded $160 billion in 2024, rising from $105 billion in 2022. This figure represents the total cost to cardholders rather than net bank revenue. In addition, credit card fees totaled $31.3 billion in 2024, accounting for 16 percent of consumer card costs. Late fees formed the largest single fee category at $17 billion. Deep subprime consumers held approximately 14 percent of card accounts but generated 40 percent of all late fees.\n\nAbout 15 percent of general purpose cardholders made only the minimum required payment in 2024, an increase from 13 percent in prior tracking. For cardholders seeking to benchmark their borrowing rate against national averages, our guide explains [what counts as a good credit card APR](/guides/good-apr-for-credit-card/)."
+      },
+      {
+        "heading": "The Minimum Payment Formula",
+        "body": "As the CFPB noted in its market analysis, most minimum payment calculations stipulate that consumers will pay the highest of a few options, such as a numerical dollar floor, or a percentage of the cycle-ending balance plus interest and fees. Most credit card issuers set the baseline balance percentage at 1 percent, adding monthly interest, fees, and past-due amounts to that base figure.\n\nDollar floors in 2025 cardholder agreements ranged from $15 to $50, with $40 serving as the most common floor. Because the formula adds only 1 percent of principal to the month's accrued interest, the required payment drops as the balance slowly declines. This sliding scale extends the repayment timeline over many years.\n\nIn our model below, paying only the minimum on a $5,300 balance takes 15.8 years. To see the calendar impact of paying baseline amounts on your current statements, review our analysis on [how long to pay off a credit card](/guides/how-long-to-pay-off-credit-card/)."
+      },
+      {
+        "heading": "Internal Modeling of a Typical Card Balance",
+        "body": "Our internal scenario modeling demonstrates how much more revenue a revolving balance produces compared to an account paid in full. According to the [Federal Reserve G.19 statistical release](https://www.federalreserve.gov/releases/g19/current/) of October 7, 2026, the average annual percentage rate (APR) across credit card plans assessed interest stood at 22.15 percent in the second quarter of 2026. By comparison, the CFPB reported an average APR of 25.2 percent for general purpose cards and 31.3 percent for private label cards in 2024, with newly opened general purpose cards averaging 27.5 percent.\n\nWe modeled a single $5,300 balance, matching the CFPB average balance per cardholder, at 22.15 percent APR with no new purchases or late fees. Under a standard minimum payment schedule requiring the higher of $40 or 1 percent of principal plus interest, month 1 requires $97.83 in interest and a total payment of $150.83. Paying only the minimum requires 190 months (15.8 years) to clear the debt and generates $8,070.23 in total interest.\n\n| Payment Strategy | Monthly Payment | Payoff Time | Total Interest Paid | Total Amount Paid |\n| --- | --- | --- | --- | --- |\n| Minimum Payment (22.15% APR) | Starts at $150.83 (declines) | 190 months | $8,070.23 | $13,370.23 |\n| Minimum Payment (25.20% APR) | Starts at $164.30 (declines) | 196 months | $9,307.50 | $14,607.50 |\n| Fixed 5% of Balance ($265/mo) | $265.00 | 26 months | $1,375.54 | $6,675.54 |\n| Paid in Full (same $5,300 spent over a year) | Full statement each month | No balance carried | $0.00 in interest ($95.40 merchant-paid interchange for the year) | $5,300.00 spent |\n\nHolding a $5,300 balance flat for one full year at 22.15 percent APR generates $1,173.95 in cardholder interest. Spending $5,300 across a year and paying it off in full generates approximately $95.40 in merchant-paid interchange for the issuer at a 1.8 percent rate. Under these scenario inputs, the revolving balance produces roughly 12.3 times more top-line revenue for the issuer than the paid-in-full account over that year. You can calculate your own customized payoff figures using our [credit card payoff calculator](/credit-card-payoff/)."
+      },
+      {
+        "heading": "Gaps in the Published Issuer Data",
+        "body": "These revenue figures do not reflect a card issuer's final net profit margin. An issuer's actual profit depends on credit losses, rewards and funding costs, none of which our model includes. The CFPB figures above are percentages of receivables, not a split of total revenue, so we do not turn them into one.\n\nIf you want to cut the interest piece, a lower rate is one route; our guide on [how to choose a balance transfer credit card](/guides/how-to-choose-a-balance-transfer-credit-card/) covers it."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "Interest on carried balances is the main way card issuers earn from cardholders, and merchants add interchange on every purchase. Our internal modeling of one $5,300 balance, built on CFPB and Federal Reserve figures, shows a revolving balance worth about 12.3 times the interchange from the same amount spent and paid off in full. That is a scenario calculation, not a measured profit figure.\n\nThis applies most to anyone who revolves a balance at a standard rate of roughly 22.15 percent to 25.2 percent. If you pay in full every month, you pay the issuer no interest. A zero-percent promotional rate or a much lower APR shrinks the interest piece, and your own card's terms decide the real numbers.\n\nThe next step is to pay more than the minimum. In our model, a fixed $265 a month clears the same balance in 26 months and avoids $6,694.69 of the interest the minimum-only schedule produces. Check your own APR against the averages above and run your numbers in the [credit card payoff calculator](/credit-card-payoff/)."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/credit-card-payoff/",
+        "label": "Credit card payoff"
+      },
+      {
+        "href": "/credit-card-interest-calculator/",
+        "label": "Credit card interest"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do credit card companies make money if you pay in full?",
+        "answer": "Credit card companies collect interchange fees paid by merchants on every transaction. For general purpose card issuers, interchange averaged about 1.8 percent of purchase volume in 2022, allowing issuers to earn revenue even when cardholders pay zero interest."
+      },
+      {
+        "question": "How do credit card companies make money on 0% interest offers?",
+        "answer": "Card issuers continue collecting merchant interchange fees on every purchase made with the card during a promotional period. Promotional terms vary and are not covered in published data, so cardholders should review their specific offer."
+      },
+      {
+        "question": "What is interchange and who pays it?",
+        "answer": "Interchange consists of fees received by the card issuer from card payment networks as part of the merchant discount rate. Merchants pay these processing fees when accepting credit cards, and card-issuing banks receive the majority of this revenue."
+      },
+      {
+        "question": "Why is the minimum payment so low?",
+        "answer": "Most issuers calculate minimum payments by taking 1 percent of the principal balance and adding that month's accrued interest and fees, subject to a dollar floor like $40. This formula covers current finance charges while reducing the underlying debt very slowly."
+      },
+      {
+        "question": "How can I stop paying interest to my card issuer?",
+        "answer": "Paying your statement balance in full each billing cycle generally means you pay no interest on purchases under the terms of your card agreement, so check yours. Paying more than the required minimum payment also accelerates principal reduction and lowers total interest paid over time."
+      }
+    ],
+    "sources": [
+      {
+        "label": "CFPB: The Consumer Credit Card Market (2025 report)",
+        "url": "https://files.consumerfinance.gov/f/documents/cfpb_consumer-credit-card-market-report_2025.pdf"
+      },
+      {
+        "label": "CFPB: The Consumer Credit Card Market (2023 report)",
+        "url": "https://files.consumerfinance.gov/f/documents/cfpb_consumer-credit-card-market-report_2023.pdf"
+      },
+      {
+        "label": "Federal Reserve: G.19 Consumer Credit",
+        "url": "https://www.federalreserve.gov/releases/g19/current/"
+      }
+    ]
+  },
   // ── mindmap-pass 2026-10-26 (x-trends): pmi-cancellation-housing-order ──
   {
     "updated": "2026-10-26",
@@ -17008,7 +17188,7 @@ export const GUIDES: Guide[] = [
       },
       {
         heading: "The September 2026 Rate Increase in Practice",
-        body: "On September 16, 2026, the Federal Open Market Committee (FOMC) raised the target range for the federal funds rate by 25 basis points to 3-3/4 to 4 percent. The unanimous 12-0 vote marked the central bank's first rate increase since 2023. The Federal Reserve's [official policy statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm) stated the decision supports a return to its 2 percent inflation target, while [updated projections](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl.htm) signaled another potential rate hike in 2026.\n\nA 25-basis-point hike lifts cash returns modestly. For example, an illustrative $10,000 deposit receiving the full 0.25 percentage point rise in annual percentage yield (APY) generates an additional $25 in interest over one year. Because retail institutions rarely pass through the complete hike, calculate realistic returns on your balance with our [high-yield savings calculator](/investing/high-yield-savings-calculator/).\n\nBorrowing costs react much faster when benchmark rates climb. For example, an illustrative $20,000 variable home equity line of credit (HELOC) balance incurs $50 in extra annual interest after a full 25-basis-point adjustment. Existing fixed loans remain insulated from these rate moves, as detailed in our [mortgage rates guide](/guides/current-mortgage-rates-guide/).",
+        body: "On September 16, 2026, the Federal Open Market Committee (FOMC) raised the target range for the federal funds rate by 25 basis points to 3-3/4 to 4 percent. Even after that increase, the 0.38 percent average sits well below the 3.7 percent CPI.The unanimous 12-0 vote marked the central bank's first rate increase since 2023. The Federal Reserve's [official policy statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm) stated the decision supports a return to its 2 percent inflation target, while [updated projections](https://www.federalreserve.gov/monetarypolicy/fomcprojtabl.htm) signaled another potential rate hike in 2026.\n\nA 25-basis-point hike lifts cash returns modestly. For example, an illustrative $10,000 deposit receiving the full 0.25 percentage point rise in annual percentage yield (APY) generates an additional $25 in interest over one year. Because retail institutions rarely pass through the complete hike, calculate realistic returns on your balance with our [high-yield savings calculator](/investing/high-yield-savings-calculator/).\n\nBorrowing costs react much faster when benchmark rates climb. For example, an illustrative $20,000 variable home equity line of credit (HELOC) balance incurs $50 in extra annual interest after a full 25-basis-point adjustment. Existing fixed loans remain insulated from these rate moves, as detailed in our [mortgage rates guide](/guides/current-mortgage-rates-guide/).",
       },
       {
         heading: "Existing Bond Prices and the Maturity Distinction",

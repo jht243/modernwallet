@@ -1,0 +1,62 @@
+{
+  "slug": "build-wealth-during-high-inflation",
+  "metaTitle": "Build Wealth During High Inflation: Protect Cash",
+  "metaDescription": "Learn how to build wealth during high inflation. Compare I bonds, TIPS, savings rates, and tax-advantaged accounts to protect your purchasing power.",
+  "h1": "How to Build Wealth During High Inflation",
+  "cardBlurb": "Protect your purchasing power by matching cash to near-term needs, inflation-linked Treasuries to intermediate reserves, and tax-advantaged accounts to long horizons.",
+  "introText": "To protect your savings and build wealth during high inflation, you must separate your money by time horizon rather than leaving idle balances in a standard account. At ModernWallet, we track deposit yields and government inflation figures so savers can see where purchasing power erodes. A regular account paying the national average of 0.38 percent loses purchasing power rapidly when inflation runs at 3.7 percent.\n\nKeeping your dollars productive requires matching each portion of your money to a specific timeline. Cash belongs in liquid accounts for immediate needs, while funds you can leave untouched for 12 months or longer belong in government-backed securities designed around inflation adjustments.\n\nFor a broader comparison of saving vehicles, see our analysis of [HYSA vs CD](/compare/hysa-vs-cd/).",
+  "sections": [
+    {
+      "heading": "How to Match Each Dollar to Its Time Horizon",
+      "body": "Protect your savings by sorting every dollar into near-term, intermediate, or long-term buckets based on when you will spend it. Cash needed for emergencies and daily expenses must stay fully liquid. Although the [Federal Deposit Insurance Corporation](https://www.fdic.gov/national-rates-and-rate-caps) reports a national average savings rate of 0.38 percent, that figure is only an average across branch banks. Online banking institutions often offer higher yields, so you should compare open deposit tiers to see if your cash can earn more. You can test your current earnings against higher rates using our [high-yield savings calculator](/investing/high-yield-savings-calculator/).\n\nMoney you can set aside for at least 12 months belongs in inflation-indexed government debt like Series I savings bonds or Treasury Inflation-Protected Securities. Both options adjust your return or your principal as the consumer price index changes. Because these securities carry strict withdrawal constraints, you should never place daily living expenses into them.\n\nDollars with a retirement horizon of a decade or more fit into tax-advantaged accounts. For 2026, the [Internal Revenue Service](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) sets the employee deferral limit for a 401(k) at $24,500 and the standard individual retirement arrangement limit at $7,500. Tax shelters allow contributions to compound without immediate tax friction, though these accounts carry no statutory inflation guarantee. To explore how retirement accounts compare to liquid deposits, review our guide on [HYSA vs Roth IRA vs brokerage account](/guides/hysa-vs-roth-ira-vs-brokerage-account/)."
+    },
+    {
+      "heading": "What the Inflation Numbers Look Like Now",
+      "body": "Official government releases outline the pressure that consumer prices place on ordinary cash balances. The [Bureau of Labor Statistics](https://www.bls.gov/news.release/cpi.nr0.htm) announced on October 14, 2026, that the all items index increased 3.7 percent over the prior 12 months before seasonal adjustment for the September 2026 reference month. The October CPI release was not yet published when we recorded these benchmarks.\n\nIn response to price pressures, the [Federal Reserve](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm) decided at its September 16, 2026 meeting to lift the target range for the federal funds rate to 3-3/4 to 4 percent. Even with benchmark policy rates near 4 percent, retail deposit rates across traditional banks continue to lag inflation measures by a wide margin.\n\nWhen a bank pays the national average rate of 0.38 percent while consumer prices rise at 3.7 percent, a depositor experiences a negative real yield of over 3.3 percent. You can measure the real impact of these price increases on specific dollar amounts using our [inflation calculator](/inflation-calculator/)."
+    },
+    {
+      "heading": "Our Internal Modeling of $10,000 for One Year",
+      "body": "To show how different cash allocations perform over 12 months, we modeled a $10,000 balance across three common settings assuming the consumer price index stays flat at 3.7 percent. In our calculation, we applied annual compounding and assumed the initial composite rate on an I bond remained steady across the holding period. This scenario shows the baseline gap between options rather than predicting future price shifts.\n\n| Allocation Setting | Nominal Balance After 12 Months | Real Value in Today's Dollars | Purchasing Power Change |\n| --- | --- | --- | --- |\n| Cash with Zero Interest | $10,000.00 | $9,643.20 | -$356.80 |\n| FDIC Average Savings (0.38%) | $10,038.00 | $9,679.85 | -$320.15 |\n| Treasury I Bond (4.26%) | $10,426.00 | $10,054.00 | +$54.00 |\n\nOur modeling shows that holding uninvested cash for a year results in a purchasing power loss of $356.80 in current purchasing terms. A standard account earning the 0.38 percent average produces $38 in interest, but leaves the depositor with an effective loss of $320.15. To break even and maintain purchasing power against a 3.7 percent inflation rate, a deposit needs an interest rate of exactly 3.70 percent.\n\nAn I bond earning the 4.26 percent composite rate delivers $10,426 in nominal cash, leaving the holder with an effective purchasing power gain of $54.00. The 0.90 percent fixed rate portion provides $90 a year on a $10,000 balance above the inflation rate. If inflation dropped to 2.0 percent, an account paying 0.38 percent would still lose about 1.6 percent of its purchasing power annually, while the I bond would continue to credit its 0.90 percent fixed rate above the revised inflation component."
+    },
+    {
+      "heading": "I Bonds and TIPS Rules That Change the Answer",
+      "body": "Federal inflation-indexed securities carry operational limitations that dictate how you can use them. According to [TreasuryDirect](https://www.treasurydirect.gov/savings-bonds/i-bonds/i-bonds-interest-rates/), Series I bonds issued from May 1, 2026 to October 31, 2026 carry a composite rate of 4.26 percent. That yield combines a 0.90 percent permanent fixed rate with a 1.67 percent semiannual inflation component. The Treasury issues a new rate on November 1, 2026, which was not published at the time of our review.\n\nFederal regulations limit electronic I bond purchases to $10,000 per person per calendar year. Furthermore, the [TreasuryDirect program rules](https://www.treasurydirect.gov/savings-bonds/i-bonds/) state that you cannot redeem an I bond under any circumstances until you have held it for 12 full months. If you redeem an I bond before completing five years of ownership, you forfeit the prior three months of interest. For example, if you cash out a $10,000 bond at month 13 at a 4.26 percent accrual, you accumulate roughly $461.50 in total interest, but the three-month penalty subtracts about $106.50, netting you around $355.00.\n\nTreasury Inflation-Protected Securities function differently. As [TreasuryDirect explains for TIPS](https://www.treasurydirect.gov/marketable-securities/tips/), the principal value adjusts upward with inflation and downward with deflation based on the consumer price index. TIPS are issued in maturities of 5, 10, or 30 years and pay interest every six months at a fixed auction rate that never drops below 0.125 percent. At maturity, the federal government guarantees that you never receive less than the original principal amount. For an in-depth breakdown of these two assets, read our side-by-side analysis of [I bonds vs TIPS](/compare/i-bonds-vs-tips/)."
+    },
+    {
+      "heading": "What This Guide Does Not Cover",
+      "body": "Our analysis focuses exclusively on verified cash accounts and government debt backed by the United States Treasury. We do not model historical returns or inflation-hedging claims for equities, gold, real estate, or physical commodities. Those assets carry distinct market risks, liquidity constraints, and pricing dynamics that fall outside our reproducible deposit model.\n\nWe also do not project future rate decisions from the Federal Reserve or anticipate the November 1, 2026 I bond interest rate update. Retail annual percentage yields vary widely among individual online banks and credit unions, meaning many institutions pay significantly higher rates than the 0.38 percent national average. You must check active deposit agreements directly to confirm current rates.\n\nAdditionally, this guide does not assess state or federal tax treatments for I bonds, TIPS, or corporate securities beyond official IRS and TreasuryDirect documentation. For personalized tax guidance or individual investment allocations, speak with a licensed tax advisor or certified financial planner."
+    },
+    {
+      "heading": "Our Takeaway for Protecting Cash",
+      "body": "This strategy serves savers who have accumulated reserves they can leave untouched for at least 12 months. Our conclusions rest on our internal modeling of official data published by the Bureau of Labor Statistics, the Federal Reserve, the FDIC, and the Internal Revenue Service. We did not run physical product tests on these assets.\n\nThis allocation approach changes if you require access to your money inside of 12 months. If you need liquidity before a year has passed, I bonds are not suitable because redemptions are legally prohibited during the first year. The strategy also shifts if you have already hit the $10,000 annual electronic purchase ceiling for I bonds, or if inflation falls to lower targets where liquid accounts narrow the gap.\n\nIf you want to build wealth during high inflation, check your emergency reserve balances today, confirm your bank's current yield, and verify your open purchase limits on TreasuryDirect."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How can I protect my savings from inflation?",
+      "answer": "You can protect your savings by keeping only immediate expenses in liquid cash and allocating money you will not need for 12 months into inflation-indexed Treasury securities like I bonds or TIPS. Long-term funds can go into tax-advantaged accounts like a 401(k) or IRA."
+    },
+    {
+      "question": "Are I bonds worth it when inflation is high?",
+      "answer": "I bonds provide purchasing power protection because their composite interest rate adjusts for inflation every six months. The rate for bonds issued between May 1, 2026 and October 31, 2026 is 4.26 percent, which includes a 0.90 percent fixed rate that remains active for the 30-year life of the bond."
+    },
+    {
+      "question": "Do TIPS protect against inflation?",
+      "answer": "Yes, TIPS protect against inflation because the principal value rises with inflation and falls with deflation as measured by the consumer price index. They pay a fixed interest rate every six months, and the government guarantees you will never receive less than your original principal at maturity."
+    },
+    {
+      "question": "Is a savings account losing money to inflation?",
+      "answer": "Yes, a savings account earning the 0.38 percent national average loses purchasing power when inflation runs higher, such as the 3.7 percent 12-month CPI rate recorded in September 2026. On a $10,000 deposit over one year, that spread creates a real purchasing power loss of $320.15."
+    },
+    {
+      "question": "What are the 2026 401(k) and IRA contribution limits?",
+      "answer": "For 2026, the IRS employee deferral limit for a 401(k) is $24,500, with an additional $8,000 catch-up contribution for individuals aged 50 and older. The 2026 IRA contribution limit is $7,500, with a $1,100 catch-up contribution for savers aged 50 and over."
+    }
+  ],
+  "relatedLinks": [],
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

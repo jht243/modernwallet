@@ -1,0 +1,189 @@
+{
+ "slug": "build-wealth-during-high-inflation",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1548,
+ "floor": 1100,
+ "input_tokens": 22101,
+ "output_tokens": 2989,
+ "thinking_tokens": 1403,
+ "cached_tokens": 19478,
+ "est_cost_usd": 0.0199,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "thin fact list: \u2248260 fact words for a 1100-word floor (ratio 0.24); expand it with sourced facts before any regeneration",
+   "emptied by the claim check (nothing in the fact list could carry it): ['How to Match Each Dollar to Its Time Horizon', 'What the Inflation Numbers Look Like Now', 'Our Internal Modeling of $10,000 for One Year', 'I Bonds and TIPS Rules That Change the Answer', 'What This Guide Does Not Cover'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1548,
+  "numbers_not_in_facts": [
+   "38"
+  ],
+  "fact_budget": {
+   "fact_words": 260,
+   "floor": 1100,
+   "ratio": 0.24,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    12,
+    4,
+    1
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we track deposit yields and government inflation figures so savers can see where purchasing power erodes.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support tracking deposit yields and government inflation figures."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Although the [Federal Deposit Insurance Corporation](https://www.fdic.gov/national-rates-and-rate-caps) reports a national average savings rate of 0.38 percent, that figure is only an average across branch banks.",
+     "replacement": "Although the [Federal Deposit Insurance Corporation](https://www.fdic.gov/national-rates-and-rate-caps) reports a national average savings rate of 0.38 percent, that figure is only an average.",
+     "type": "unsupported",
+     "why": "SOURCE does not state the FDIC average is measured across branch banks."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Online banking institutions often offer higher yields, so you should compare open deposit tiers to see if your cash can earn more.",
+     "replacement": "Rates at online banks vary, so check current offers to see if your cash can earn more.",
+     "type": "unsupported",
+     "why": "SOURCE forbids claiming rates above FDIC average; state only that rates vary."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "In response to price pressures, the [Federal Reserve](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm) decided at its September 16, 2026 meeting to lift the target range for the federal funds rate to 3-3/4 to 4 percent.",
+     "replacement": "The [Federal Reserve](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm) decided at its September 16, 2026 meeting to raise the target range for the federal funds rate to 3-3/4 to 4 percent.",
+     "type": "inference",
+     "why": "SOURCE does not state the Fed acted in response to price pressures."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Even with benchmark policy rates near 4 percent, retail deposit rates across traditional banks continue to lag inflation measures by a wide margin.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state retail deposit rates across traditional banks lag inflation widely."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Those assets carry distinct market risks, liquidity constraints, and pricing dynamics that fall outside our reproducible deposit model.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state market risks, liquidity constraints, or pricing dynamics for these assets."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Retail annual percentage yields vary widely among individual online banks and credit unions, meaning many institutions pay significantly higher rates than the 0.38 percent national average.",
+     "replacement": "Deposit rates at online banks vary, and savers should check current offers.",
+     "type": "unsupported",
+     "why": "SOURCE forbids stating rates above FDIC average; state only that rates at online banks vary."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "You must check active deposit agreements directly to confirm current rates.",
+     "replacement": "",
+     "type": "unlinked-directive",
+     "why": "Directs reader to an outside source to confirm rates without a markdown link."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Additionally, this guide does not assess state or federal tax treatments for I bonds, TIPS, or corporate securities beyond official IRS and TreasuryDirect documentation.",
+     "replacement": "Additionally, this guide does not assess state or federal tax treatments for I bonds or TIPS beyond official IRS and TreasuryDirect documentation.",
+     "type": "unsupported",
+     "why": "SOURCE does not list or mention corporate securities."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "For personalized tax guidance or individual investment allocations, speak with a licensed tax advisor or certified financial planner.",
+     "replacement": "",
+     "type": "unlinked-directive",
+     "why": "Directs reader to outside professionals without a markdown link."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If you want to build wealth during high inflation, check your emergency reserve balances today, confirm your bank's current yield, and verify your open purchase limits on TreasuryDirect.",
+     "replacement": "If you want to build wealth during high inflation, review your emergency reserve balances today.",
+     "type": "unlinked-directive",
+     "why": "Directs reader to outside sources to confirm rates and limits without a markdown link."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "The rate for bonds issued between May 1, 2026 and October 31, 2026 is 4.26 percent, which includes a 0.90 percent fixed rate that remains active for the 30-year life of the bond.",
+     "replacement": "The rate for bonds issued between May 1, 2026 and October 31, 2026 is 4.26 percent, which includes a 0.90 percent fixed rate.",
+     "type": "unsupported",
+     "why": "SOURCE does not state a 30-year life for Series I bonds."
+    },
+    {
+     "id": "introText",
+     "quote": "A regular account paying the national average of 0.38 percent loses purchasing power rapidly when inflation runs at 3.7 percent.",
+     "replacement": "A regular account paying the national average of 0.38 percent loses purchasing power when inflation runs at 3.7 percent.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that purchasing power is lost rapidly."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Dollars with a retirement horizon of a decade or more fit into tax-advantaged accounts.",
+     "replacement": "Dollars with long horizons fit into tax-advantaged accounts.",
+     "type": "unsupported",
+     "why": "SOURCE states long horizons, not a specific horizon of a decade or more."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Tax shelters allow contributions to compound without immediate tax friction, though these accounts carry no statutory inflation guarantee.",
+     "replacement": "These tax-advantaged accounts carry no statutory inflation guarantee.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that contributions compound without immediate tax friction."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "That yield combines a 0.90 percent permanent fixed rate with a 1.67 percent semiannual inflation component.",
+     "replacement": "That yield combines a 0.90 percent fixed rate with a 1.67 percent semiannual inflation component.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the fixed rate as permanent."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "When a bank pays the national average rate of 0.38 percent while consumer prices rise at 3.7 percent, a depositor experiences a negative real yield of over 3.3 percent.",
+     "replacement": "When a bank pays the national average rate of 0.38 percent while consumer prices rise at 3.7 percent, a savings account loses purchasing power.",
+     "type": "unsupported",
+     "why": "SOURCE does not state a negative real yield of over 3.3 percent."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 1711
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 275.8,
+ "response_id": "KsbfasbHN8Go5NoP98_k6QM",
+ "generated_at": "2026-10-26T21:33:50+0000"
+}

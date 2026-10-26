@@ -1,0 +1,8 @@
+FDIC avg savings 0.38%: nominal end 10038.00; end value in today's dollars 9679.85; real change -320.15
+I bond composite 4.26% (held): nominal end 10426.00; end value in today's dollars 10054.00; real change +54.00
+Cash under mattress 0%: end value in today's dollars 9643.20; real change -356.80
+Break-even nominal rate to hold purchasing power: 3.70%
+I bond fixed rate alone 0.90% vs 0%: extra over inflation each year ~ 90.00 on 10000
+Redeem at month 13 (approx simple accrual): accrued 461.50, 3-month penalty 106.50, net 355.00
+Counterexample: if CPI fell to 2.0%, a savings account at 0.38% still loses ~1.6% real; the I bond adds ~0.9% fixed above inflation.
+IRS 2026 limits: 401(k) 24,500; IRA 7,500; sum for one worker with both = 32000

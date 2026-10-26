@@ -139,6 +139,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/compare/sinking-fund-vs-emergency-fund/", label: "Sinking fund vs emergency fund" },
   ],
   "inflation-calculator": [
+    { href: "/guides/build-wealth-during-high-inflation/", label: "How to protect savings when inflation is high" },
     { href: "/annuity-calculator/", label: "Value a fixed payment stream or lump sum payout" },
     { href: "/investing/compound-interest-calculator/", label: "Grow money against inflation: compound interest" },
     { href: "/retirement/", label: "Project retirement savings" },
@@ -184,6 +185,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/cd-calculator/", label: "Model a CD's maturity value" },
   ],
   "credit-card-interest-calculator": [
+    { href: "/guides/how-credit-card-companies-make-money/", label: "How card issuers make money from your balance" },
     { href: "/credit-card-payoff/", label: "How long will it take to pay the balance off?" },
     { href: "/guides/good-apr-for-credit-card/", label: "What counts as a good credit card APR" },
     { href: "/guides/how-to-choose-a-balance-transfer-credit-card/", label: "Consider a 0% balance transfer card" },
@@ -324,6 +326,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/is-possible-finance-a-good-personal-loan-option/", label: "Considering Possible Finance? Check the real APR" },
   ],
   "credit-card-payoff": [
+    { href: "/guides/how-credit-card-companies-make-money/", label: "How card issuers make money from your balance" },
     { href: "/credit-card-interest-calculator/", label: "See one billing cycle's interest charge" },
     { href: "/debt-consolidation-calculator/", label: "Several balances? Compare one consolidation loan" },
     { href: "/personal-loan/", label: "Compare a fixed-rate personal loan instead" },

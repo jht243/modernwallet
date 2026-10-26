@@ -1,0 +1,62 @@
+{
+  "slug": "how-credit-card-companies-make-money",
+  "metaTitle": "How Credit Card Companies Make Money",
+  "metaDescription": "How credit card companies make money: mostly interest from people who carry a balance, plus merchant-paid interchange on every purchase and fees.",
+  "h1": "How Credit Card Companies Make Money",
+  "cardBlurb": "Credit card issuers earn revenue primarily through interest on carried balances, merchant interchange fees on purchases, and consumer account fees.",
+  "introText": "Credit card companies make money from cardholders who pay in full through merchant-paid interchange fees on every transaction rather than interest charges. When cardholders carry a balance from month to month, issuers earn substantial additional revenue through interest payments.\n\nThe business model relies on three main funding streams: interest charges, merchant transaction fees, and consumer fees. While people who clear their statements avoid interest entirely, issuers still collect revenue every time a card swipes at a cash register.",
+  "sections": [
+    {
+      "heading": "Who Pays the Card Issuer and How",
+      "body": "Card issuers collect revenue from two distinct groups: the merchants who accept card payments and the cardholders who use the accounts. According to the 2023 Consumer Credit Card Market Report published by the [Consumer Financial Protection Bureau (CFPB)](https://files.consumerfinance.gov/f/documents/cfpb_consumer-credit-card-market-report_2023.pdf), interest income is the primary revenue source for the card portfolios of major banks. For general purpose card issuers in 2022, interest income represented 12.3 percent of receivables, while interchange income represented 7.9 percent, and fee income represented 1.5 percent.\n\nInterchange consists of fees received by the card issuer from card associations, which form part of the broader merchant discount rate. Payment networks set interchange schedules that vary by transaction category, merchant size, and card tier, with issuing banks receiving the majority of this interchange revenue. For general purpose card issuers in 2022, interchange averaged about 1.8 percent of purchase volume. In contrast, private label store cards generated nearly zero interchange income.\n\nA cardholder who pays their statement balance in full every billing cycle generates zero interest revenue for the issuer. That cardholder still generates interchange revenue paid by merchants on every transaction. Cardholders who carry balances pay both interest and potential account fees, creating multiple revenue streams for the bank. You can see how carrying a balance changes your own financing costs by testing different payment amounts in our [credit card interest calculator](/credit-card-interest-calculator/)."
+    },
+    {
+      "heading": "The Share of Cardholders Carrying a Balance",
+      "body": "Roughly half of all credit card accounts carry a balance from month to month. In its December 2025 report covering data through 2024, the [CFPB](https://files.consumerfinance.gov/f/documents/cfpb_consumer-credit-card-market-report_2025.pdf) found that the share of accounts revolving credit card balances returned to pre-pandemic levels of around 50 percent, up from 45 percent in late 2021. The average balance per cardholder reached about $5,300 in 2024.\n\nTotal interest paid by cardholders exceeded $160 billion in 2024, rising from $105 billion in 2022. This figure represents the total cost to cardholders rather than net bank revenue. In addition, credit card fees totaled $31.3 billion in 2024, accounting for 16 percent of consumer card costs. Late fees formed the largest single fee category at $17 billion. Deep subprime consumers held approximately 14 percent of card accounts but generated 40 percent of all late fees.\n\nAbout 15 percent of general purpose cardholders made only the minimum required payment in 2024, an increase from 13 percent in prior tracking. For cardholders seeking to benchmark their borrowing rate against national averages, our guide explains [what counts as a good credit card APR](/guides/good-apr-for-credit-card/)."
+    },
+    {
+      "heading": "The Minimum Payment Formula",
+      "body": "As the CFPB noted in its market analysis, most minimum payment calculations stipulate that consumers will pay the highest of a few options, such as a numerical dollar floor, or a percentage of the cycle-ending balance plus interest and fees. Most credit card issuers set the baseline balance percentage at 1 percent, adding monthly interest, fees, and past-due amounts to that base figure.\n\nDollar floors in 2025 cardholder agreements ranged from $15 to $50, with $40 serving as the most common floor. Because the formula adds only 1 percent of principal to the month's accrued interest, the required payment drops as the balance slowly declines. This sliding scale extends the repayment timeline over many years.\n\nWhen a borrower pays only the minimum amount each billing cycle, the debt remains active for an extended period. To see the calendar impact of paying baseline amounts on your current statements, review our analysis on [how long to pay off a credit card](/guides/how-long-to-pay-off-credit-card/)."
+    },
+    {
+      "heading": "Internal Modeling of a Typical Card Balance",
+      "body": "Our internal scenario modeling demonstrates how much more revenue a revolving balance produces compared to an account paid in full. According to the [Federal Reserve G.19 statistical release](https://www.federalreserve.gov/releases/g19/current/) of October 7, 2026, the average annual percentage rate (APR) across credit card plans assessed interest stood at 22.15 percent in the second quarter of 2026. By comparison, the CFPB reported an average APR of 25.2 percent for general purpose cards and 31.3 percent for private label cards in 2024, with newly opened general purpose cards averaging 27.5 percent.\n\nWe modeled a single $5,300 balance, matching the CFPB average balance per cardholder, at 22.15 percent APR with no new purchases or late fees. Under a standard minimum payment schedule requiring the higher of $40 or 1 percent of principal plus interest, month 1 requires $97.83 in interest and a total payment of $150.83. Paying only the minimum requires 190 months (15.8 years) to clear the debt and generates $8,070.23 in total interest.\n\n| Payment Strategy | Monthly Payment | Payoff Time | Total Interest Paid | Total Amount Paid |\n| --- | --- | --- | --- | --- |\n| Minimum Payment (22.15% APR) | Starts at $150.83 (declines) | 190 months | $8,070.23 | $13,370.23 |\n| Minimum Payment (25.20% APR) | Starts at $164.30 (declines) | 196 months | $9,307.50 | $14,607.50 |\n| Fixed 5% of Balance ($265/mo) | $265.00 | 26 months | $1,375.54 | $6,675.54 |\n| Paid in Full Every Month | $5,300 full statement | 1 month | $0.00 in interest ($95.40 merchant interchange) | $5,300.00 |\n\nHolding a $5,300 balance flat for one full year at 22.15 percent APR generates $1,173.95 in cardholder interest. Spending $5,300 across a year and paying it off in full generates approximately $95.40 in merchant-paid interchange for the issuer at a 1.8 percent rate. Under these scenario inputs, the revolving balance produces roughly 12.3 times more top-line revenue for the issuer than the paid-in-full account over that year. You can calculate your own customized payoff figures using our [credit card payoff calculator](/credit-card-payoff/)."
+    },
+    {
+      "heading": "Gaps in the Published Issuer Data",
+      "body": "These revenue figures do not reflect a card issuer's final net profit margin. An issuer's actual profit depends on credit losses, rewards and funding costs, none of which our model includes. The CFPB figures above are percentages of receivables, not a split of total revenue, so we do not turn them into one.\n\nIf you want to cut the interest piece, a lower rate is one route; our guide on [how to choose a balance transfer credit card](/guides/how-to-choose-a-balance-transfer-credit-card/) covers it."
+    },
+    {
+      "heading": "Our Takeaway",
+      "body": "Interest on carried balances is the main way card issuers earn from cardholders, and merchants add interchange on every purchase. Our internal modeling of one $5,300 balance, built on CFPB and Federal Reserve figures, shows a revolving balance worth about 12.3 times the interchange from the same amount spent and paid off in full. That is a scenario calculation, not a measured profit figure.\n\nThis applies most to anyone who revolves a balance at a standard rate of roughly 22.15 percent to 25.2 percent. If you pay in full every month, you pay the issuer no interest. A zero-percent promotional rate or a much lower APR shrinks the interest piece, and your own card's terms decide the real numbers.\n\nThe next step is to pay more than the minimum. In our model, a fixed $265 a month clears the same balance in 26 months and avoids $6,694.69 of the interest the minimum-only schedule produces. Check your own APR against the averages above and run your numbers in the [credit card payoff calculator](/credit-card-payoff/)."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do credit card companies make money if you pay in full?",
+      "answer": "Credit card companies collect interchange fees paid by merchants on every transaction. For general purpose card issuers, interchange averaged about 1.8 percent of purchase volume in 2022, allowing issuers to earn revenue even when cardholders pay zero interest."
+    },
+    {
+      "question": "How do credit card companies make money on 0% interest offers?",
+      "answer": "Card issuers continue collecting merchant interchange fees on every purchase made with the card during a promotional period. Promotional terms vary and are not covered in published data, so cardholders should review their specific offer."
+    },
+    {
+      "question": "What is interchange and who pays it?",
+      "answer": "Interchange consists of fees received by the card issuer from card payment networks as part of the merchant discount rate. Merchants pay these processing fees when accepting credit cards, and card-issuing banks receive the majority of this revenue."
+    },
+    {
+      "question": "Why is the minimum payment so low?",
+      "answer": "Most issuers calculate minimum payments by taking 1 percent of the principal balance and adding that month's accrued interest and fees, subject to a dollar floor like $40. This formula covers current finance charges while reducing the underlying debt very slowly."
+    },
+    {
+      "question": "How can I stop paying interest to my card issuer?",
+      "answer": "You can avoid interest charges completely by paying your statement balance in full each billing cycle. Paying more than the required minimum payment also accelerates principal reduction and lowers total interest paid over time."
+    }
+  ],
+  "relatedLinks": [],
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}
