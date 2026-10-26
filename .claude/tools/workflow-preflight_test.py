@@ -64,6 +64,33 @@ class PreflightTests(unittest.TestCase):
     def test_cannot_overwrite_existing_run(self):
         self.prepare()
         with self.assertRaises(FileExistsError): self.prepare()
+    def test_same_actor_reuses_unchanged_rules_but_reads_new_phase(self):
+        self.prepare(); self.deliver()
+        next_file = self.root / '.claude/commands/next.md'; next_file.write_text('next phase rules')
+        target = self.root / 'next'
+        with patch.object(m.subprocess, 'run'):
+            bundle = m.prepare(self.root, 'write', ['.claude/commands/next.md'], target, reuse=self.run)
+        self.assertEqual(len(bundle['parts']), 1)
+        self.assertIn('.claude/commands/_testing-labels.md', bundle['reused'])
+        with self.assertRaisesRegex(ValueError, 'Incomplete'): m.validate(self.root, target)
+        with contextlib.redirect_stdout(io.StringIO()): m.emit(self.root, target)
+        m.validate(self.root, target)
+    def test_independent_reviewer_cannot_reuse_writer_bundle(self):
+        self.prepare(); self.deliver()
+        with patch.object(m.subprocess, 'run'):
+            with self.assertRaisesRegex(ValueError, 'another actor'):
+                m.prepare(self.root, 'audit', self.instruction, self.root / 'review', reuse=self.run, actor='reviewer')
+    def test_cannot_reuse_partial_delivery(self):
+        self.prepare()
+        with patch.object(m.subprocess, 'run'):
+            with self.assertRaisesRegex(ValueError, 'Incomplete'):
+                m.prepare(self.root, 'write', self.instruction, self.root / 'next', reuse=self.run)
+    def test_changed_rules_cannot_reuse_old_receipt(self):
+        self.prepare(); self.deliver()
+        (self.root / '.claude/commands/_testing-labels.md').write_text('new exclusions')
+        with patch.object(m.subprocess, 'run'):
+            with self.assertRaisesRegex(ValueError, 'Instructions changed'):
+                m.prepare(self.root, 'write', self.instruction, self.root / 'next', reuse=self.run)
     def test_broken_output_does_not_mark_delivery(self):
         self.prepare()
         with patch('builtins.print', side_effect=BrokenPipeError):

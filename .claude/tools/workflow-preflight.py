@@ -49,22 +49,32 @@ def sources(root, phase, instructions):
     return list(dict.fromkeys(rels))
 
 
-def prepare(root, phase, instructions, directory, cloud=False):
+def prepare(root, phase, instructions, directory, cloud=False, reuse=None, actor="worker"):
     # Capture/check the exit code directly: no shell pipeline can turn failure into success.
     command = ['bash', str(root / '.claude/tools/workflow-start.sh')]
     if cloud:
         command.append('--cloud')
     subprocess.run(command, cwd=str(root), check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    files, parts = {}, []
+    previous = None
+    if reuse is not None:
+        previous = validate(root, reuse)
+        if previous.get('actor') != actor:
+            raise ValueError('Cannot reuse another actor’s instruction delivery')
+    files, parts, reused = {}, [], []
     for rel in sources(root, phase, instructions):
         raw = inside(root, rel).read_bytes()
         files[rel] = digest(raw)
+        if previous is not None and previous['files'].get(rel) == files[rel]:
+            reused.append(rel)
+            continue
         content = raw.decode('utf-8')
         for offset in range(0, len(content), CHUNK):
             parts.append({'source': rel, 'offset': offset, 'text': content[offset:offset + CHUNK]})
     directory.mkdir(parents=True, exist_ok=False)
     manifest = {'version': 1, 'root': str(root.resolve()), 'phase': phase,
-                'instructions': instructions, 'files': files, 'parts': [], 'delivered': []}
+                'instructions': instructions, 'files': files, 'parts': [], 'delivered': [],
+                'actor': actor, 'reused': reused,
+                'reuse': {'directory': str(reuse.relative_to(root)), 'sha256': digest((reuse / 'manifest.json').read_bytes())} if reuse is not None else None}
     for index, part in enumerate(parts, 1):
         text = '{} — characters {} onward\n\n{}'.format(part['source'], part['offset'], part['text'])
         name = 'part-{:03d}.txt'.format(index)
@@ -78,10 +88,26 @@ def load(directory):
     return json.loads((directory / 'manifest.json').read_text())
 
 
-def validate(root, directory, require_delivery=True):
+def validate(root, directory, require_delivery=True, visited=None):
+    visited = set() if visited is None else set(visited)
+    key = str(directory.resolve())
+    if key in visited:
+        raise ValueError('Circular instruction receipt reuse')
+    visited.add(key)
     m = load(directory)
     if m['root'] != str(root.resolve()):
         raise ValueError('Receipt belongs to another repository')
+    if m.get('reuse'):
+        previous_dir = inside(root, m['reuse']['directory'])
+        if digest((previous_dir / 'manifest.json').read_bytes()) != m['reuse']['sha256']:
+            raise ValueError('Reused instruction receipt changed')
+        previous = validate(root, previous_dir, visited=visited)
+        if previous.get('actor') != m.get('actor'):
+            raise ValueError('Cannot reuse another actor’s instruction delivery')
+        if any(previous['files'].get(rel) != m['files'].get(rel) for rel in m.get('reused', [])):
+            raise ValueError('Reused source hashes do not match')
+    elif m.get('reused'):
+        raise ValueError('Missing original receipt for reused files')
     expected = sources(root, m['phase'], m['instructions'])
     if set(expected) != set(m['files']):
         raise ValueError('Required file set changed; prepare a fresh bundle')
@@ -121,6 +147,8 @@ def main():
     a.add_argument('--instruction', action='append', required=True, help='Current repository-relative phase instructions; repeat for callers')
     a.add_argument('--run-dir', required=True, help='New unique project-relative directory for this actor and phase')
     a.add_argument('--cloud', action='store_true')
+    a.add_argument('--actor', required=True, help='Current agent identity; independent reviewers use their own identity')
+    a.add_argument('--reuse', help='Completed bundle from this same actor/run; re-read only new instructions')
     for name in ['next', 'check']:
         b = sub.add_parser(name); b.add_argument('--run-dir', required=True)
         if name == 'next':
@@ -129,8 +157,9 @@ def main():
     directory = inside(ROOT, args.run_dir)
     try:
         if args.command == 'prepare':
-            m = prepare(ROOT, args.phase, args.instruction, directory, args.cloud)
-            print(json.dumps({'status': 'prepared-not-read', 'runDir': args.run_dir, 'parts': len(m['parts']),
+            m = prepare(ROOT, args.phase, args.instruction, directory, args.cloud,
+                        inside(ROOT, args.reuse) if args.reuse else None, args.actor)
+            print(json.dumps({'status': 'prepared-not-read', 'runDir': args.run_dir, 'parts': len(m['parts']), 'reusedFiles': len(m['reused']),
                               'next': 'Run next once per tool call until every part is read, then run check.'}))
         elif args.command == 'next':
             emit(ROOT, directory, args.part)
