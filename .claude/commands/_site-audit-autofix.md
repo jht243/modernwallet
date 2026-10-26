@@ -27,6 +27,13 @@ about canonicals, redirects, robots.txt and body content, to the extent below.
 
 ## Content-quality rows (AI Discoverability lane)
 
+**Mandatory in this run.** A content-quality row (similar AI content, high AI
+content level) is done in the same run that pulled it — "needs fact-locking /
+an audit" is the procedure below, not a reason to defer. The only allowed
+outcomes per page are: rewritten + audited + live, or reverted because its audit
+FAILED (name the failing check). Deferring without running the audit is a run
+defect. Do the rewrites BEFORE the commit so they ship with the schema fixes.
+
 Rewrites must not drift facts (see the 2026-09 humanize claim-drift incident):
 
 1. **Fact-lock first.** Before editing, list every number, price, date, name,
@@ -44,6 +51,9 @@ Rewrites must not drift facts (see the 2026-09 humanize claim-drift incident):
 
 ## Email
 
+- **Send the email LAST** — after the push, the deploy check, the live 200
+  check and the IndexNow submission have all finished, so every line in it is
+  already true. Never send it and then keep working.
 - Rename the heading `## Flagged for human (not auto-fixed)` to
   `## Not fixed this run (auto-retried next run)`. Each line: issue, URL, the
   gate that failed or why no repo-side fix exists. Write it as a status line,

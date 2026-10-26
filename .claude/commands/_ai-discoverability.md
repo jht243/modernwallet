@@ -50,7 +50,7 @@ were collection pages that already carried `ItemList`. So for every URL:
 | Category page missing ItemList schema | YES | `ItemList` of the links the page actually lists (`position`, `url`, `name`), wrapped in `CollectionPage`. Generate from the same data the page renders, never a hand list. |
 | FAQ page missing FAQPage schema | YES | `FAQPage` built from the Q&A pairs visibly on the page (same data source as the rendered FAQ). Never add questions that are not on the page. |
 | Product page missing Product schema | YES | `Product` from the visible name, description and image; add `Offer` only when the repo holds a real price + availability. No `aggregateRating` / `review` unless real reviews are on the page. |
-| Changed pages not submitted to IndexNow | YES | Write the page-explorer URLs that return `http_code` 200 to `reports/site-audit/<TODAY>.indexnow.txt` (one per line, canonical host) and run `python3 .claude/scripts/indexnow-submit.py --urls-file reports/site-audit/<TODAY>.indexnow.txt`. Put the `INDEXNOW` summary line in the email. If the count is large (>50), also note in the email which routine publishes without pinging IndexNow, if you can tell from git log — that is the root cause. |
+| Changed pages not submitted to IndexNow | YES | Write the page-explorer URLs that return `http_code` 200 (plus every URL this run changed) to `reports/site-audit/<TODAY>.indexnow.txt` (one per line, canonical host) and run `python3 .claude/scripts/indexnow-submit.py --urls-file reports/site-audit/<TODAY>.indexnow.txt`. Check the file is non-empty first (`wc -l`); a `INDEXNOW SKIP no URLs` line means the URL list is wrong — rebuild it, never report it as submitted. Put the `INDEXNOW` summary line in the email. If the count is large (>50), also note in the email which routine publishes without pinging IndexNow, if you can tell from git log — that is the root cause. |
 | Indexable page blocked from some AI search bots / Indexable page blocked from all AI search bots | YES — robots.txt only, AI **search** bots only | Find the rule that blocks them (robots.txt file or the generator that writes it). Make sure these user-agents are allowed on indexable pages: `OAI-SearchBot`, `ChatGPT-User`, `PerplexityBot`, `Perplexity-User`, `Claude-SearchBot`, `Claude-User`, `Googlebot`, `Bingbot`. Change nothing about training bots (`GPTBot`, `ClaudeBot`, `Google-Extended`, `CCBot` …) and keep every existing `Disallow` for private paths. If the block is not in robots.txt (WAF / Cloudflare bot rules / host firewall) there is no repo fix → "Not fixable in code" with the evidence. |
 | Inconsistent AI training bot policy | YES | Make the training-bot rules consistent **in the direction the site already mostly takes**: count allowed vs blocked among `GPTBot`, `ClaudeBot`, `Google-Extended`, `CCBot`, `Applebot-Extended`, `meta-externalagent`, `Bytespider`, `Amazonbot`; align the minority to the majority (tie → allow, since the fleet lives on AI visibility). Also align robots.txt with any `<meta name="robots">` / `X-Robots-Tag` AI directives so they say the same thing. Keep every private-path `Disallow`. |
 | Main content requires JavaScript rendering | YES when the framework can prerender it | Make the main content (H1, intro, body, tables, FAQ) render on the server/at build: Astro `client:only` → render the component statically and hydrate with `client:load`/`client:visible`; Next `useEffect` data fetch → load the same data at build (`getStaticProps` / server component); SPA route → add it to the prerender list. Interactive widgets may stay client-side; the text may not. Verify: the built HTML (or `curl` with JS off) contains the H1 and the first paragraph. Can't prerender without changing the framework → "Not fixed this run" with the component name. |
@@ -66,9 +66,15 @@ were collection pages that already carried `ItemList`. So for every URL:
   `<script type="application/ld+json">` from each changed page's built HTML
   (or the live page after deploy) and `json.loads` it. Any failure → revert that
   change and retry next run.
-- **No duplicate types.** A page must not end up with two `Organization` or two
-  `Article` blocks — if the layout already emits one, complete it instead of
-  adding a second.
+- **No duplicate types.** A page must not end up with two `Organization`, two
+  `Article` or two `ItemList` blocks — if the layout already emits one, complete
+  it instead of adding a second. When wrapping a hub in `CollectionPage`, give
+  the existing `ItemList` an `@id` (`<page URL>#itemlist`) and set
+  `mainEntity: { "@id": "<page URL>#itemlist" }`, or move the list inside
+  `mainEntity` and drop the standalone block — never emit the list twice.
+  Gate: count `@type` values across every JSON-LD block on each changed built
+  page (nested ones included); any type that should be unique appearing twice → fix
+  before commit.
 - **robots.txt diff check.** If you touched robots.txt, the diff may only touch
   `User-agent` groups for the AI search / training bots named above. A changed
   line for any other agent or any private-path `Disallow` → revert.
@@ -76,6 +82,8 @@ were collection pages that already carried `ItemList`. So for every URL:
   script (the schema fixes count as changed pages).
 
 ## 5. Email
+
+Send it LAST (see `_site-audit-autofix.md` → Email): only after IndexNow returned OK.
 
 Add one section to the run's details file:
 
