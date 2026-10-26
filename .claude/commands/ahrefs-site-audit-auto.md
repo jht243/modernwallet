@@ -90,16 +90,22 @@ Call `mcp__*__site-audit-issues` with the project ID. Read the docs first via th
 Group every returned issue by **kind** (the Ahrefs issue slug, e.g. `meta_desc_too_long`, `broken_internal_link`, `img_missing_alt`).
 
 <!-- ai-discoverability-v1 -->
-## STEP 3b — AI Discoverability lane (REQUIRED, every run)
+## STEP 3b — AI Discoverability lane + auto-fix policy (REQUIRED, every run)
 
-Read `.claude/commands/_ai-discoverability.md` and run it. It pulls the Ahrefs
-**AI Discoverability** issues (Article / Organization / ItemList / FAQPage /
-Product schema, IndexNow, AI-bot blocking …) plus their URLs via
-`site-audit-page-explorer`, verifies each page's true type, and fixes them at the
-template layer. Its fixes join STEP 5 (no cap), its flags join "Flagged for
-human", and its `## AI Discoverability (Ahrefs)` section goes in the email. It is
-the ONE exception to "never change robots.txt" below: it may add `Allow` lines for
-AI **search** bots only, exactly as that file specifies.
+**Nothing is flagged for the owner (USER RULE 2026-10-26).** Read and follow both:
+
+1. `.claude/commands/_ai-discoverability.md` — pulls the Ahrefs **AI
+   Discoverability** issues (schema, IndexNow, AI-bot access, JS rendering, page
+   size, speed, AI-content) plus their URLs via `site-audit-page-explorer`,
+   verifies each page's true type, and fixes them.
+2. `.claude/commands/_site-audit-autofix.md` — the fixes and verify gates for
+   every row STEP 4 below marks "flag for human" / "NO".
+
+Both files **override** STEP 4's flag rows, the "Flagged for human" email
+headings and the canonical / redirect / robots.txt / body-content lines in
+"What this skill MUST NOT do", to the extent they specify. A fix that fails its
+gate is reverted and retried next run — reported as a status line, never as a
+request to the owner.
 <!-- /ai-discoverability-v1 -->
 
 ## STEP 4 — Decide what's fixable in-code
