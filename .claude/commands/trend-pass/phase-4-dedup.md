@@ -1,3 +1,8 @@
+
+<!-- workflow-source-freshness-v1 -->
+**WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+<!-- /workflow-source-freshness-v1 -->
+
 # Phase 4 — Local pre-filter + research pack
 
 Lanes A and B are research only (2026-10-06 port of the layer3 2026-10-05 redesign). This phase does NOT decide what gets built. It removes findings that obviously already exist, so mindmap doesn't waste work on them, and packages everything for the builder, mindmap (Phase 4c). **Local checks only — no external API, no keyword data, no SERP reads.** Winner protection, near-duplicate judgment, demand validation and the cap all belong to mindmap.

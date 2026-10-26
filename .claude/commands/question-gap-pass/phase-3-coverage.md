@@ -1,3 +1,8 @@
+
+<!-- workflow-source-freshness-v1 -->
+**WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+<!-- /workflow-source-freshness-v1 -->
+
 # Phase 3 — Coverage scoring + cross-page dedup → Gap Chart → ‼️ THE ONE HUMAN GATE
 
 This is the core. For every follow-up question from Phase 2, decide whether the page answers it, whether another page already answers it, and how valuable it is — then assemble the **Gap Chart** and STOP for human approval. FREE, local only (re-reading site content, zero external calls).

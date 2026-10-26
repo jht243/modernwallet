@@ -3,6 +3,11 @@ description: AUTONOMOUS Ahrefs Site Audit fixer. Pulls site-audit issues via the
 argument-hint: "[optional Ahrefs site-audit project ID — auto-discovers by BASE_URL match if omitted]"
 ---
 
+<!-- workflow-source-freshness-v1 -->
+**WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+<!-- /workflow-source-freshness-v1 -->
+
+
 # /ahrefs-site-audit-auto — Ahrefs Site Audit issues → auto-fix → push (cron-safe)
 
 > **‼️ RUN-WIDE RULE — READ FIRST.** This skill runs autonomously. There is **NO** human checkpoint. The user has explicitly opted into auto-fixing ALL findable issues without gating. You **MUST NOT** print "Should I fix X?" or any question at any boundary. If a hard blocker fires, you **still finish** by sending an email report and exiting 0.

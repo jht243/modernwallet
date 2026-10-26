@@ -7,6 +7,8 @@ set -u
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/usr/local/bin:$PATH"
 ROUTINE="${1:-unknown}"; PHASE="${2:-unknown}"
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+cd "$ROOT"
+bash "$ROOT/.claude/tools/workflow-start.sh" || exit $?
 C="$ROOT/.claude/commands"
 for f in _content-standard.md _anti-ai-language.md _experience.md; do
   [ -f "$C/$f" ] || { echo "FATAL: canonical file missing: $C/$f — STOP, do not proceed from memory." >&2; exit 1; }

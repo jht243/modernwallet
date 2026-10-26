@@ -3,6 +3,11 @@ description: AUTONOMOUS comparison candidate miner. Mines the site's own entitie
 argument-hint: "[optional N = max candidates to send this run; default = all NEW + PARTIAL]"
 ---
 
+<!-- workflow-source-freshness-v1 -->
+**WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+<!-- /workflow-source-freshness-v1 -->
+
+
 # /comparison-content-auto — comparison candidates → /mindmap-pass
 
 **Topic-selection priority:** Relevant organic-click growth is the default; do not infer a lead-generation goal from services, commercial intent, CPC, or audience segments. Commercial value only breaks close ties unless the user explicitly requests lead generation. Carry this priority into the mindmap brief when this routine delegates selection; do not add a separate scoring or filtering step to a candidate-only miner. This applies to scheduled runs as well as manual runs.

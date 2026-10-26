@@ -3,6 +3,11 @@ description: For the top GSC-traffic pages, generate the real follow-up question
 argument-hint: "[optional N = how many top pages to analyze this run; default 20]"
 ---
 
+<!-- workflow-source-freshness-v1 -->
+**WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+<!-- /workflow-source-freshness-v1 -->
+
+
 # /question-gap-pass — follow-up-question coverage gaps → score → dedup → enrich top pages in place
 
 > **‼️ RUN-WIDE RULE — READ FIRST.** You trigger this manually. It runs autonomously through page selection, question generation, coverage scoring, and the Gap Chart — auto-continuing at every phase boundary without asking — but there is **EXACTLY ONE human gate: the Phase 3 Gap Chart**. Phase 3 prints the Gap Chart and **STOPS for your explicit approval of which sections to add**. Only after you approve does it enrich the pages, audit, stage, push, and ping IndexNow. The reviewer gate (Phase 5) is an automatic adversarial subagent, not a human checkpoint. Never print "Want me to proceed?" at any boundary **except** the Phase 3 gate. Also stop early on a **hard blocker** (no content system found, no GSC data source, or git not clean enough to stage safely — see below).

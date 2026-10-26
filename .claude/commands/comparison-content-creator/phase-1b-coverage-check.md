@@ -1,3 +1,8 @@
+
+<!-- workflow-source-freshness-v1 -->
+**WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+<!-- /workflow-source-freshness-v1 -->
+
 # Phase 1b — Coverage check (anti-duplication) — FREE, local only
 
 **This is the API-cost gate.** No keyword API call has happened yet, and none may happen until a candidate clears this phase. Check every candidate from Phase 1 against **ALL existing content** discovered in Phase 0 — not just comparison slugs — so the workflow never reproduces or cannibalizes content the site already has. This is pure local work (file/string/semantic comparison); zero external calls.

@@ -2,6 +2,11 @@
 description: AUTONOMOUS daily vendor-roundup driver for ModernWallet / themodernwallet.com (port of the themetabolicjournal / thehoaguide / layer3labs /vertical-roundup-auto lane). Discovers the companies that rank for each personal- and small-business-finance buying category (banks, brokers, robo-advisors, lenders, card issuers, budgeting and money apps, estate-planning services, tax relief, business finance, freelancer tools), lists every qualified one as a row in that category's ONE comparison table, builds a new roundup once a category has 4+ verified vendors, then flags each listed vendor for the correction-note outreach sent by growth-sites-api. NO human gates. Emails a digest via Resend. Designed for scheduled cloud runs.
 ---
 
+<!-- workflow-source-freshness-v1 -->
+**WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+<!-- /workflow-source-freshness-v1 -->
+
+
 # /vendor-roundup-auto — discovered companies → living ModernWallet roundups → correction outreach
 
 **‼️ UNBREAKABLE INVARIANT — writer output is never final without its audit.** Nothing this run
