@@ -5,6 +5,14 @@
 export interface CrossLink { href: string; label: string; }
 
 export const CROSS_LINKS: Record<string, CrossLink[]> = {
+  // GA4 top-pages pass (2026-10-26).
+  "charitable-donation-tax-deduction-calculator": [
+    { href: "/guides/are-church-donations-tax-deductible/", label: "Are church donations tax deductible? The 2026 rules" },
+    { href: "/guides/donor-advised-funds-explained/", label: "Donor-advised funds explained" },
+    { href: "/compare/standard-vs-itemized-deduction/", label: "Standard vs itemized deduction" },
+    { href: "/tax-bracket-calculator/", label: "Find your 2026 tax bracket" },
+    { href: "/guides/senior-deduction-social-security/", label: "The $6,000 senior deduction" },
+  ],
   // Tool-usage pass (2026-10-21).
   "debt-to-income-ratio-calculator": [
     { href: "/mortgage/home-affordability-calculator/", label: "How much house can you afford?" },

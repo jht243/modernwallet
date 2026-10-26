@@ -1,0 +1,202 @@
+{
+  "guide_example_mfj_150k_12k": {
+    "input": {
+      "status": "mfj",
+      "agi": 150000,
+      "cashGifts": 12000,
+      "otherItemized": 20000,
+      "marginalRatePct": 22
+    },
+    "result": {
+      "charityIfItemizing": 11250,
+      "itemizedTotal": 31250,
+      "standardTotal": 34200,
+      "nonItemizerDeduction": 2000,
+      "itemizes": false,
+      "bestTotal": 34200,
+      "addedByGiving": 2000,
+      "taxSaved": 440,
+      "floorAmount": 750,
+      "capAmount": 90000,
+      "evenTwoYear": 68400,
+      "bunchedTwoYear": 75450,
+      "bunchingGain": 7050,
+      "bunchingTaxGain": 1551
+    }
+  },
+  "small_giver_nonitemizer_mfj": {
+    "input": {
+      "status": "mfj",
+      "agi": 150000,
+      "cashGifts": 1500,
+      "otherItemized": 0,
+      "marginalRatePct": 22
+    },
+    "result": {
+      "charityIfItemizing": 750,
+      "itemizedTotal": 750,
+      "standardTotal": 33700,
+      "nonItemizerDeduction": 1500,
+      "itemizes": false,
+      "bestTotal": 33700,
+      "addedByGiving": 1500,
+      "taxSaved": 330,
+      "floorAmount": 750,
+      "capAmount": 90000,
+      "evenTwoYear": 67400,
+      "bunchedTwoYear": 66400,
+      "bunchingGain": -1000,
+      "bunchingTaxGain": -220
+    }
+  },
+  "single_itemizer_big_mortgage": {
+    "input": {
+      "status": "single",
+      "agi": 90000,
+      "cashGifts": 6000,
+      "otherItemized": 18000,
+      "marginalRatePct": 24
+    },
+    "result": {
+      "charityIfItemizing": 5550,
+      "itemizedTotal": 23550,
+      "standardTotal": 17100,
+      "nonItemizerDeduction": 1000,
+      "itemizes": true,
+      "bestTotal": 23550,
+      "addedByGiving": 5550,
+      "taxSaved": 1332,
+      "floorAmount": 450,
+      "capAmount": 54000,
+      "evenTwoYear": 47100,
+      "bunchedTwoYear": 47550,
+      "bunchingGain": 450,
+      "bunchingTaxGain": 108
+    }
+  },
+  "below_floor_gift": {
+    "input": {
+      "status": "mfj",
+      "agi": 150000,
+      "cashGifts": 500,
+      "otherItemized": 0,
+      "marginalRatePct": 22
+    },
+    "result": {
+      "charityIfItemizing": 0,
+      "itemizedTotal": 0,
+      "standardTotal": 32700,
+      "nonItemizerDeduction": 500,
+      "itemizes": false,
+      "bestTotal": 32700,
+      "addedByGiving": 500,
+      "taxSaved": 110,
+      "floorAmount": 750,
+      "capAmount": 90000,
+      "evenTwoYear": 65400,
+      "bunchedTwoYear": 65400,
+      "bunchingGain": 0,
+      "bunchingTaxGain": 0
+    }
+  },
+  "at_60pct_cap": {
+    "input": {
+      "status": "single",
+      "agi": 20000,
+      "cashGifts": 15000,
+      "otherItemized": 20000,
+      "marginalRatePct": 12
+    },
+    "result": {
+      "charityIfItemizing": 11900,
+      "itemizedTotal": 31900,
+      "standardTotal": 17100,
+      "nonItemizerDeduction": 1000,
+      "itemizes": true,
+      "bestTotal": 31900,
+      "addedByGiving": 11900,
+      "taxSaved": 1428,
+      "floorAmount": 100,
+      "capAmount": 12000,
+      "evenTwoYear": 63800,
+      "bunchedTwoYear": 51900,
+      "bunchingGain": -11900,
+      "bunchingTaxGain": -1428
+    }
+  },
+  "zero_gifts": {
+    "input": {
+      "status": "mfj",
+      "agi": 150000,
+      "cashGifts": 0,
+      "otherItemized": 20000,
+      "marginalRatePct": 22
+    },
+    "result": {
+      "charityIfItemizing": 0,
+      "itemizedTotal": 20000,
+      "standardTotal": 32200,
+      "nonItemizerDeduction": 0,
+      "itemizes": false,
+      "bestTotal": 32200,
+      "addedByGiving": 0,
+      "taxSaved": 0,
+      "floorAmount": 750,
+      "capAmount": 90000,
+      "evenTwoYear": 64400,
+      "bunchedTwoYear": 64400,
+      "bunchingGain": 0,
+      "bunchingTaxGain": 0
+    }
+  },
+  "zero_agi": {
+    "input": {
+      "status": "mfj",
+      "agi": 0,
+      "cashGifts": 12000,
+      "otherItemized": 20000,
+      "marginalRatePct": 22
+    },
+    "result": {
+      "charityIfItemizing": 0,
+      "itemizedTotal": 20000,
+      "standardTotal": 34200,
+      "nonItemizerDeduction": 2000,
+      "itemizes": false,
+      "bestTotal": 34200,
+      "addedByGiving": 2000,
+      "taxSaved": 440,
+      "floorAmount": 0,
+      "capAmount": 0,
+      "evenTwoYear": 68400,
+      "bunchedTwoYear": 66400,
+      "bunchingGain": -2000,
+      "bunchingTaxGain": -440
+    }
+  },
+  "mfs_small": {
+    "input": {
+      "status": "mfs",
+      "agi": 60000,
+      "cashGifts": 2000,
+      "otherItemized": 0,
+      "marginalRatePct": 22
+    },
+    "result": {
+      "charityIfItemizing": 1700,
+      "itemizedTotal": 1700,
+      "standardTotal": 17100,
+      "nonItemizerDeduction": 1000,
+      "itemizes": false,
+      "bestTotal": 17100,
+      "addedByGiving": 1000,
+      "taxSaved": 220,
+      "floorAmount": 300,
+      "capAmount": 36000,
+      "evenTwoYear": 34200,
+      "bunchedTwoYear": 33200,
+      "bunchingGain": -1000,
+      "bunchingTaxGain": -220
+    }
+  }
+}

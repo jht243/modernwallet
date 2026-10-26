@@ -1,0 +1,48 @@
+{
+  "metaTitle": "Charitable Donation Tax Deduction Calculator 2026",
+  "metaDescription": "Charitable donation tax deduction calculator for 2026. See if your gifts beat the standard deduction, model bunching, and find your federal tax savings.",
+  "introText": "Charitable donations lower your 2026 taxes only if your itemized deductions exceed the standard deduction, or through the non-itemizer cash allowance. Most households take the standard deduction, which is $16,100 for single filers and $32,200 for married couples filing jointly under [IRS 2026 inflation adjustments](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill). Non-itemizers can deduct cash gifts up to $1,000, or $2,000 on a joint return. Itemizers face a floor of 0.5% of adjusted gross income (AGI). The charitable donation tax deduction calculator below compares both routes, shows what your giving adds, and tests two-year bunching.\n\nFor example, take a married couple filing jointly with $150,000 AGI who give $12,000 in cash and have $20,000 of other itemized deductions. Their deductible giving after the $750 floor is $11,250, bringing their itemized total to $31,250. The standard deduction plus the $2,000 cash allowance gives them $34,200, so the standard route wins. Giving adds $2,000 of deductions, which saves $440 at a 22% marginal tax rate.",
+  "howItWorks": "The calculator compares two paths to see which yields larger deductions: itemizing on Schedule A or claiming the standard deduction. Under Public Law 119-21, itemizers can deduct cash gifts only above a floor of 0.5% of AGI. For a household with $150,000 of AGI, that floor is $750. A $500 gift falls below that threshold, so itemizing deducts nothing from it. If you do not itemize, the law provides a cash deduction of up to $1,000 for single filers or $2,000 for married couples filing jointly. The tool takes the larger of the two overall deduction totals and subtracts what you would receive without giving. You can review the general trade-offs in our [standard vs itemized deduction guide](/compare/standard-vs-itemized-deduction/).\n\nCash gifts to churches and other public charities are generally capped at 60% of AGI under [IRS Publication 526](https://www.irs.gov/publications/p526). For an income of $150,000, that annual ceiling is $90,000. In our internal modeling, we ran the calculator's own formula on several scenarios to see when donations change the tax bill. For a married couple with $150,000 AGI and no other deductions, giving $1,500 in cash adds $1,500 through the non-itemizer allowance, saving $330 at a 22% rate. When the same couple gives $500, the cash allowance deducts the full $500, which saves $110 at that 22% rate. For a single filer with $20,000 AGI, $20,000 of other deductions, and a $15,000 cash gift, the 60% limit caps deductible giving at $12,000. Subtracting the $100 floor leaves $11,900 deductible.\n\nThe tool also runs a two-year bunching test to compare steady giving against concentrating two years of gifts into one tax year. In our internal modeling, the married couple giving $12,000 each year receives $68,400 in total deductions over two years. If they instead bunch $24,000 into year one and give nothing in year two, they itemize $43,250 in year one and claim the $32,200 standard deduction in year two. That creates $75,450 in total deductions, adding $7,050 in deductions and saving about $1,551 at a 22% rate. For a single filer with $90,000 AGI, $18,000 of other deductions, and a $6,000 gift, bunching adds $450 in deductions, saving about $108 at a 24% rate. However, bunching fails if the concentrated gift exceeds the 60% limit. For the single filer with $20,000 AGI, bunching $30,000 into one year is capped at $12,000, leaving them with $51,900 in total deductions compared to $63,800 when giving evenly.\n\nThis tool models cash gifts to a church or public charity and covers federal income tax only. It leaves out non-cash property, appreciated stock, carryovers, the extra standard deduction for age 65 or older, and the [senior deduction](/guides/senior-deduction-social-security/). Gifts to donor-advised funds do not qualify for the non-itemizer cash allowance, as detailed in our [donor-advised funds explainer](/guides/donor-advised-funds-explained/). The calculator applies the 60% cap before subtracting the 0.5% floor, though the IRS has not published a final worksheet confirming that ordering for 2026. If you need to check your marginal bracket, use our [tax bracket calculator](/tax-bracket-calculator/).\n\nFor most households under the 2026 standard deductions, giving adds only the $1,000 or $2,000 cash allowance unless your other deductions already approach the standard threshold. Giving evenly remains the safe baseline, while bunching helps when two years of gifts lift your itemized deductions above the standard deduction without exceeding 60% of your AGI. A bunched gift that exceeds 60% of AGI loses its deduction on the excess amount, and households far below the standard deduction gain nothing from the strategy. If you give cash to a qualified congregation, our guide on [church donation deductions](/guides/are-church-donations-tax-deductible/) outlines the rules before you enter your figures above.",
+  "faqs": [
+    {
+      "question": "Will my charitable donations lower my taxes in 2026?",
+      "answer": "Donations lower your tax bill if you itemize or claim the non-itemizer cash allowance. Non-itemizers can deduct cash gifts up to $1,000, or $2,000 for married couples filing jointly. Itemizers deduct gifts exceeding 0.5% of AGI if their total itemized deductions surpass the standard deduction."
+    },
+    {
+      "question": "How much of my church donations can I deduct?",
+      "answer": "Churches are qualified public charities under federal tax rules. If you itemize, you can deduct cash gifts up to 60% of your AGI, minus the 0.5% floor. If you take the standard deduction, your cash deduction is capped at $1,000, or $2,000 on a joint return."
+    },
+    {
+      "question": "Can I deduct donations if I take the standard deduction?",
+      "answer": "Yes, under Public Law 119-21. Non-itemizers can claim an above-the-line deduction for cash gifts up to $1,000 for single filers or $2,000 for married couples filing jointly. This deduction is claimed in addition to your standard deduction amount."
+    },
+    {
+      "question": "What is the 0.5% of AGI floor on charitable deductions?",
+      "answer": "Starting in 2026, itemizers can deduct only the portion of charitable giving that exceeds 0.5% of their AGI. For an AGI of $150,000, the floor is $750. Donations up to that $750 threshold provide no itemized deduction."
+    },
+    {
+      "question": "What is the 60% of AGI limit on cash gifts?",
+      "answer": "IRS Publication 526 limits deductions for cash gifts to public charities to 60% of your AGI. For someone earning $150,000, deductible cash giving cannot exceed $90,000 in that tax year. Any contributions beyond that ceiling are not deductible in that year."
+    },
+    {
+      "question": "Does bunching donations save tax?",
+      "answer": "Bunching combines two years of giving into one calendar year to exceed the standard deduction. A couple giving $24,000 in one year instead of $12,000 across two years adds $7,050 in deductions in our modeled scenario. That saves about $1,551 at a 22% rate."
+    },
+    {
+      "question": "Do donor-advised fund gifts count for the non-itemizer deduction?",
+      "answer": "Gifts to donor-advised funds do not qualify for the non-itemizer cash deduction. To deduct contributions made to a donor-advised fund, you must itemize your deductions on Schedule A. For more details, read our [donor-advised funds explainer](/guides/donor-advised-funds-explained/)."
+    },
+    {
+      "question": "What proof do I need for a donation of $250 or more?",
+      "answer": "Under [IRS Publication 1771](https://www.irs.gov/pub/irs-pdf/p1771.pdf), you must obtain a written acknowledgment from the charity for any contribution of $250 or more. The document must state the amount given and whether you received any goods or services in return. A bank record alone does not satisfy this requirement."
+    }
+  ],
+  "slug": "charitable-donation-tax-deduction-calculator",
+  "h1": "",
+  "subtitle": "",
+  "sections": [],
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

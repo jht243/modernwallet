@@ -299,3 +299,7 @@
 | /guides/trump-account-worth-it/ | 2026-10-23 | 48 | 0/0/1/0/0 | 0 |
 | /guides/trump-account-rules/ | 2026-10-23 | 22 | 0/0/0/0/0 | 0 |
 | /social-security-cola-calculator/ | 2026-10-23 | 22 | 0/0/0/0/0 | 1 |
+| /investing/high-yield-savings-calculator/ | 2026-10-26 | 14 | 0/0/0/0/0 | 0 |
+| / | 2026-10-26 | 9 | 0/0/0/0/0 | 0 |
+| /retirement/couples-retirement-calculator/ | 2026-10-26 | 7 | 0/0/0/0/0 | 0 |
+| /guides/are-church-donations-tax-deductible/ | 2026-10-26 | 6 | 0/0/0/0/1 | 0 |

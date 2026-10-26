@@ -1,0 +1,21 @@
+{
+  "route": "/charitable-donation-tax-deduction-calculator/",
+  "readerQuestion": "Will my charitable donations lower my taxes in 2026, and by how much?",
+  "demandSource": "DataForSEO measured 590/mo KD 16 for 'charitable donation tax deduction calculator' and 'charitable contribution deduction calculator'; autocomplete 'church donation tax deduction calculator' (estimate 75/mo, not measured)",
+  "decisionGap": "Existing church guide explains rules and one bunching example in prose; reader cannot enter own AGI/gifts to see whether giving changes their bill. No calculator existed (reviewer-verified).",
+  "method": "calculated",
+  "engine": "src/lib/charitable-deduction.ts",
+  "calculation": "reports/mindmap-pass/2026-10-26-ga4/evidence/run-calc-test.mts (node --experimental-strip-types); raw output calc-output.json",
+  "inputsSourced": {"standardDeduction2026": "IRS 2026 inflation adjustments / Rev. Proc. 2025-32 ($16,100 / $24,150 / $32,200)", "nonItemizerCap": "Public Law 119-21: $1,000 / $2,000 MFJ, cash only (per IRS search result, final Pub 526 2026 not retrieved)", "floor": "0.5% of AGI for itemizers from 2026", "cashLimit": "Pub 526 (2025 ed.): 60% of AGI"},
+  "findings": [
+    {"label": "calculated", "text": "MFJ $150k AGI, $12k cash gifts, $20k other itemized: standard route wins; giving adds $2,000 of deductions; $440 saved at 22%"},
+    {"label": "calculated", "text": "Bunching $24k into year one adds $7,050 of two-year deductions (about $1,551 at 22%); reproduces the church guide's published example"}
+  ],
+  "counterexample": "Single, AGI $20k, $15k gifts, $20k other itemized: bunching $30k is capped by the 60% limit and loses $11,900 of deductions versus giving evenly",
+  "exclusions": ["non-cash gifts", "appreciated securities", "carryovers", "age 65+ extra standard deduction", "senior deduction", "donor-advised fund gifts", "state tax"],
+  "unknowns": ["IRS has not published a 2026 worksheet for the order of the 60% limit and 0.5% floor; tool applies 60% first, page says so", "final 2026 Pub 526 text not read (fetched 2025 edition only)"],
+  "wouldChangeRecommendation": "A different ordering of limit vs floor in final IRS guidance; a bunched gift over 60% of AGI; other itemized deductions far below the standard deduction",
+  "medium": "interactive calculator with on-page worked scenarios; key answer readable without interaction (intro worked example + howItWorks scenarios)",
+  "provenance": {"basis": "calculated", "supportingRecordIds": ["calc-output.json#guide_example_mfj_150k_12k", "calc-output.json#at_60pct_cap"], "scopeAndLimits": "internal modeling of the tool's own formula on stated scenarios; not a product test; no client records", "publicMethod": "on-page howItWorks states formulas, scenarios and assumptions; the calculator above lets readers re-run them", "placement": "howItWorks paragraphs 2-3 ('In our internal modeling, we ran...')"},
+  "testingLabels": "none requested: no tested title/byline/schema; modeling does not enable them (_testing-labels.md)"
+}

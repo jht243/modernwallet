@@ -1,0 +1,125 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-25",
+  "window_start": "2026-10-25",
+  "window_end": "2026-10-25",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 21,
+      "sessions": 20,
+      "active_users": 18,
+      "clicks": 21
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 19,
+      "sessions": 17,
+      "active_users": 15,
+      "clicks": 19
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 16,
+      "sessions": 16,
+      "active_users": 16,
+      "clicks": 16
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 15,
+      "sessions": 16,
+      "active_users": 14,
+      "clicks": 15
+    },
+    {
+      "page": "/guides/social-security-changes-2027/",
+      "views": 15,
+      "sessions": 15,
+      "active_users": 9,
+      "clicks": 15
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 14,
+      "sessions": 13,
+      "active_users": 9,
+      "clicks": 14
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 12,
+      "sessions": 12,
+      "active_users": 12,
+      "clicks": 12
+    },
+    {
+      "page": "/",
+      "views": 9,
+      "sessions": 9,
+      "active_users": 9,
+      "clicks": 9
+    },
+    {
+      "page": "/retirement/couples-retirement-calculator/",
+      "views": 7,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 7
+    },
+    {
+      "page": "/guides/are-church-donations-tax-deductible/",
+      "views": 6,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 6
+    }
+  ],
+  "top10_pages_total_views": 134,
+  "top10_pages_total_clicks": 134,
+  "channel_split": {
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 20
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 16
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 15,
+      "Unassigned": 3,
+      "Direct": 1
+    },
+    "/guides/social-security-changes-2027/": {
+      "Organic Search": 15,
+      "Unassigned": 2
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 13,
+      "Unassigned": 2
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 12,
+      "Direct": 4,
+      "Unassigned": 1
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 11,
+      "Direct": 1
+    },
+    "/": {
+      "Direct": 6,
+      "Referral": 2,
+      "Organic Search": 1,
+      "Unassigned": 1
+    },
+    "/guides/are-church-donations-tax-deductible/": {
+      "Organic Search": 6,
+      "Unassigned": 2
+    },
+    "/retirement/couples-retirement-calculator/": {
+      "Organic Search": 5
+    }
+  }
+}

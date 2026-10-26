@@ -1,0 +1,102 @@
+{
+ "slug": "charitable-donation-tax-deduction-calculator",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1147,
+ "floor": 700,
+ "input_tokens": 21550,
+ "output_tokens": 2319,
+ "thinking_tokens": null,
+ "cached_tokens": 18445,
+ "est_cost_usd": 0.0124,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'h1' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'sections' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1147,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 435,
+   "floor": 700,
+   "ratio": 0.62,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    5,
+    0
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "The calculator compares two paths to see which yields larger deductions: itemizing on Schedule A or claiming the standard deduction.",
+     "replacement": "The calculator compares two paths to see which yields larger deductions: itemizing or claiming the standard deduction.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention Schedule A."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Non-itemizers can claim an above-the-line deduction for cash gifts up to $1,000 for single filers or $2,000 for married couples filing jointly.",
+     "replacement": "Non-itemizers can claim a cash deduction of up to $1,000 for single filers or $2,000 for married couples filing jointly.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the non-itemizer deduction as above-the-line."
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "To deduct contributions made to a donor-advised fund, you must itemize your deductions on Schedule A.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that donor-advised fund gifts are deductible if itemizing."
+    },
+    {
+     "id": "faqs[7].answer",
+     "quote": "The document must state the amount given and whether you received any goods or services in return.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state the required contents of the written acknowledgment."
+    },
+    {
+     "id": "faqs[7].answer",
+     "quote": "A bank record alone does not satisfy this requirement.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention bank records."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1194
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 139.4,
+ "response_id": "2R3fav7IJ-bExdIPi8LVoQ8",
+ "generated_at": "2026-10-26T09:33:22+0000"
+}
