@@ -16,6 +16,8 @@
 > "generate it through the section command"; the prose rules below are the writer's system
 > prompt, not a licence to write the prose yourself.
 
+**Where the row carries `reader_question` / `answer` / `answer_placement` (cols 10–12), the added section IS that answer and goes in the named slot** — section 1 or 2, ahead of the page's existing scope/definition material, exactly as a new page would. Copy all three into the `section` command's row prompt. An enrichment that appends the answer to the bottom of a page whose opener still answers the wrong question has not done the job. Where the row has no question (a pure gap-fill), place the section where it reads best, as before.
+
 Act on every **body** row in the chart. Do NOT touch titles, meta descriptions, or H1s (that was Phase 2). Internal linking is handled separately in Phase 6 — do not add links here beyond what a body section naturally contains. `git add` your work but do NOT commit.
 
 

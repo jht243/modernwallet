@@ -13,11 +13,13 @@ This file is only the orchestrator: it owns **ordering, gates, and rules**. The 
 
 ## ► STEP 1 (ALWAYS FIRST): Build the chart from the user's input brief
 
-**The very first thing you do is build the chart.** Follow `.claude/commands/mindmap-pass/phase-build-brief.md` verbatim — it contains the full interpret-brief → SEMRUSH-validate → chart-generation prompt. Chart-building analyzes the brief through **three mandatory lenses**: **Lens 1 — direct intent** shapes what the user *explicitly* asked to add into validated rows (each SEMRUSH-checked for real volume/difficulty/competition); **Lens 2 — adjacent-demand discovery is a core tenet** that expands around the brief's seeds with SEMRUSH (`phrase_related` / `phrase_fullsearch` / `phrase_questions`) + the Autocomplete miner to surface real demand *clusters the user didn't name but that belong with their idea*, deciding per cluster whether each warrants new content, an enriched existing page, or a metadata update; and **Lens 3 — comparison / alternatives / pricing is a core tenet** that, for every primary entity the brief names or implies, systematically mines and SEMRUSH-validates `{entity} vs {rival}`, `{entity} alternatives`, and `{entity} pricing` bottom-funnel demand. All three lenses check git history, produce rows in the table, and the chart is SAVED to `reports/mindmap-pass/<TODAY>.md` (with a dedicated emerging-clusters block).
+**The very first thing you do is build the chart.** Follow `.claude/commands/mindmap-pass/phase-build-brief.md` verbatim — it contains the full interpret-brief → SEMRUSH-validate → chart-generation prompt. Chart-building analyzes the brief through **three mandatory lenses**: **Lens 1 — direct intent** shapes what the user *explicitly* asked to add into validated rows (each SEMRUSH-checked for real volume/difficulty/competition); **Lens 2 — adjacent-demand discovery is a core tenet** that expands around the brief's seeds with SEMRUSH (`phrase_related` / `phrase_fullsearch` / `phrase_questions`) + the Autocomplete miner to surface real demand *clusters the user didn't name but that belong with their idea*, deciding per cluster whether each warrants new content, an enriched existing page, or a metadata update; and **Lens 3 — comparison / alternatives / pricing is a core tenet** that, for every primary entity the brief names or implies, systematically mines and SEMRUSH-validates `{entity} vs {rival}`, `{entity} alternatives`, and `{entity} pricing` bottom-funnel demand. All three lenses check git history and produce rows in the table. **Then, before the lever or the format is chosen, Step 4.6 decides for every content row (1) the reader's question in their own words, (2) the working answer and its shape, and (3) which of the first two sections delivers it** — recorded as chart cols 10–12, shown per row in the Phase 0 manifest, copied into every Phase 3 row prompt, and audited by Phase 4's `GATE — Reader question`. A page that is on-topic but opens with scope, definition or taxonomy instead of the answer fails that gate. The chart is SAVED to `reports/mindmap-pass/<TODAY>.md` (with a dedicated emerging-clusters block).
+
+**Chart path (`<CHART>`).** A caller that runs alongside other routines (e.g. `/youtube-video-pass`) names a **run-scoped output path** — `--chart-out reports/mindmap-pass/<TODAY>-<tag>.md`. When one is given, `<CHART>` is that path for the whole run: Step 1 writes there, every intermediate file uses its stem (`<CHART-stem>.serp.json`, `.heads.txt`, `.autocomplete.*.csv`), and Phase 0 loads exactly it — never `<TODAY>.md`, never "newest by date". Without one, `<CHART>` = `reports/mindmap-pass/<TODAY>.md`. (Same-day cloud routines write their own charts; a bare `<TODAY>.md` lookup silently loads theirs.)
 
 Run Step 1 UNLESS one of these is true:
-- The user passed a chart path as an argument → skip building, use that chart.
-- A chart for today already exists at `reports/mindmap-pass/<TODAY>.md` → skip building, use it (do not overwrite).
+- The user passed an existing chart path as an argument (not `--chart-out`) → skip building, use that chart.
+- `<CHART>` already exists → skip building, use it (do not overwrite).
 - No input brief was provided AND no chart exists → STOP and ask the user to paste the text / attach the image / drop the news article or link describing what they want added (do not invent a brief).
 
 Once the chart file exists, continue to Phase 0, which loads it, discovers project facts, and presents the manifest gate. **Do not skip ahead to any edit phase until the chart is built/loaded and the manifest is approved.**
@@ -28,7 +30,7 @@ The user does NOT inspect output. Every worker phase is gated by an **adversaria
 Phases run by **dependency**, not a single straight line. Independent work runs in parallel; dependent work waits.
 
 ```
-STEP 1 — BUILD CHART from the input brief (interpret → SEMRUSH-validate → cluster)  →  saves reports/mindmap-pass/<TODAY>.md
+STEP 1 — BUILD CHART from the input brief (interpret → SEMRUSH-validate → cluster)  →  saves <CHART> (run-scoped --chart-out, else reports/mindmap-pass/<TODAY>.md)
         │   (skip only if a chart path arg was passed, or today's chart already exists)
         ▼
 Phase 0 — load that chart, discover project facts, MANIFEST GATE (user approves)
@@ -43,6 +45,7 @@ Phase 0 — load that chart, discover project facts, MANIFEST GATE (user approve
             Phase 6 — internal linking      (waits for BOTH tracks)
                      ▼
             Phase 7 — sitemap + IndexNow PREP (waits for 1,2,3,5,6; prepares URL list, does NOT submit)
+
                      ▼
             Phase 8 — SUMMARY  (informational; auto-continues to Phase 9)
                      ▼
