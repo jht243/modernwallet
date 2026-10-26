@@ -31,6 +31,96 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── trend-pass-auto 2026-10-26 (top-10 query "index investment funds"): what-is-an-index-fund ──
+  {
+    "updated": "2026-10-26",
+    "slug": "what-is-an-index-fund",
+    "title": "What Is an Index Fund and How Does It Work?",
+    "metaDescription": "What is an index fund? Learn how index funds work, what they cost, how they differ from ETFs and mutual funds, and how to start investing.",
+    "h1": "What Is an Index Fund and How Does It Work?",
+    "cardBlurb": "Learn what an index fund is, how passive tracking works, what fees take over decades, and how to pick one for your portfolio.",
+    "introText": "An index fund is a pooled investment fund, either a mutual fund or an exchange-traded fund (ETF), that holds the securities in a market index in the same proportions as the index. It replicates the benchmark instead of paying a manager to pick stocks or bonds, so operating costs and trading stay low.",
+    "sections": [
+        {
+            "heading": "How an Index Fund Works",
+            "body": "An index fund works by buying and holding the underlying assets of a specific financial market benchmark. A stock index fund is a passively managed fund that seeks to replicate the performance of a designated stock index by purchasing the shares that index includes.\n\nConsider an index fund tracking the Standard & Poor's 500 Index (S&P 500). The manager of that fund buys a portfolio that includes all the stocks in the S&P 500 in the exact proportions they represent in the index. Because the fund matches the benchmark composition, the manager does not pick individual investments. Many large-cap stock funds use the S&P 500 as their benchmark, while funds tracking the broader market might follow the Dow Jones Wilshire 5000 Total Stock Market Index, which measures more than 5,000 small, mid, and large companies. Bond index funds measure their performance against broad bond indexes tracking the yields of many fixed-income securities.\n\n[FINRA](https://www.finra.org/investors/investing/investment-products/mutual-funds) notes that because index funds do not retain active managers and trade their holdings less often, they normally have lower operating costs than actively managed funds. Some funds, known as enhanced index funds, take a hybrid approach where managers pick and choose within the index to try to outperform it. Those enhanced funds often carry higher expenses and can trail the overall index."
+        },
+        {
+            "heading": "Index Fund vs ETF vs Mutual Fund",
+            "body": "The term index fund refers to the underlying investment strategy, while exchange-traded fund and mutual fund describe the legal wrapper and trading structure. A single investment can be an index fund and simultaneously be an ETF or a mutual fund.\n\nAn ETF trades on an exchange during the day. A mutual fund prices its shares once a day after markets close. You can compare these structures across our guides on [index funds vs ETFs](/compare/index-fund-vs-etf/), [index funds vs mutual funds](/compare/index-fund-vs-mutual-fund/), and [ETFs vs mutual funds](/compare/etf-vs-mutual-fund/).\n\nFor example, the Vanguard S&P 500 ETF (VOO) and the Fidelity 500 Index Fund (FXAIX) both track the exact same 500 large U.S. companies in the S&P 500. VOO is structured as an ETF that trades during market hours, whereas FXAIX is a traditional mutual fund priced once daily. Both funds follow an index tracking strategy, showing that wrapper type does not change the core indexing method."
+        },
+        {
+            "heading": "What Index Funds Cost",
+            "body": "Index fund expenses are expressed as an annual expense ratio, which represents the percentage of fund assets deducted every year to pay for management and operations. You can review standard fee ranges in our guide on [what makes a good expense ratio](/guides/what-is-a-good-expense-ratio/). Even small differences in an expense ratio compound into large dollar amounts over decades.\n\nWe ran one fixed scenario through our internal investment engine, the same one behind our [investment growth calculator](/investing/investment-growth-calculator/) and [S&P 500 calculator](/investing/sp500-calculator/). The scenario assumes an initial balance of $10,000, monthly contributions of $500, an annual return of 7% before fees compounded monthly, one fixed return every year, and no taxes. Total principal deposited equals $70,000 after 10 years, $130,000 after 20 years, and $190,000 after 30 years.\n\n- **10-year horizon:** A 0.03% expense ratio yields a portfolio balance of $106,436.44. A 0.50% fee yields $103,323.41. A 1.00% fee yields $100,133.64.\n- **20-year horizon:** A 0.03% expense ratio produces $299,663.83. A 0.50% fee produces $281,774.93. A 1.00% fee produces $264,122.49.\n- **30-year horizon:** A 0.03% expense ratio results in $686,828.96. A 0.50% fee results in $623,007.02. A 1.00% fee results in $562,483.27.\n\nOver 30 years, paying an expense ratio of 1.00% instead of 0.03% reduces the ending balance by $124,345.69, while paying 0.50% leaves a gap of $63,821.94. With every other input held equal, the only change between rows is the fee. It does not reflect a guaranteed 7% market return, nor does it incorporate taxes.\n\nProviders list these expense ratios at the time of writing. VOO carries an expense ratio of 0.03%, while FXAIX lists an expense ratio of 0.015%. The Vanguard Total Stock Market ETF (VTI), which holds thousands of U.S. stocks across all market capitalizations, charges 0.03%. The Fidelity ZERO Total Market Index Fund (FZROX) charges 0.00% and is available through Fidelity. Fund minimums and current expense ratios vary by provider."
+        },
+        {
+            "heading": "The Downsides of Index Funds",
+            "body": "Index funds do not offer downside market protection, which means their share price drops whenever the underlying index falls. According to [FINRA guidance on investment risk](https://www.finra.org/investors/investing/investing-basics/risk), all investments carry risk, markets fluctuate, and historical performance provides no guarantee of future returns.\n\nBecause an index fund tracks a target market mechanically, it owns every company in that index. You cannot remove weak companies or declining sectors from a broad fund.\n\nFees and tracking scopes also vary between funds. S&P 500 index funds limit exposure to 500 large domestic companies, leaving out mid-cap and small-cap firms that total market indexes include."
+        },
+        {
+            "heading": "How to Invest in an Index Fund",
+            "body": "Investing in an index fund involves choosing an account structure, selecting an index, and funding your position on a regular schedule. You can see how index funds fit into retirement accounts in our comparison of [a Roth IRA vs an index fund](/compare/roth-ira-vs-index-fund/).\n\n1. **Select an account type.** Determine whether you want a standard taxable brokerage account or a tax-advantaged account like an Individual Retirement Account (IRA) or 401(k). Taxable accounts may incur tax liabilities on dividends and capital gains in the year they are distributed. Tax-advantaged accounts defer taxes or allow qualified tax-free withdrawals, though rules vary and require review with a Certified Public Accountant (CPA).\n2. **Choose the underlying index.** Decide what asset class you want to own. An S&P 500 fund targets large-cap domestic corporations, while a total stock market fund targets thousands of companies across every size category.\n3. **Compare fund expense ratios.** Examine the published expense ratios across competing fund families. Our review of the [best index funds](/roundup/best-index-funds/) highlights options with low overhead costs.\n4. **Pick your fund wrapper.** Choose between an exchange-traded fund and a traditional mutual fund based on whether you prefer intraday share trading or end-of-day order execution.\n5. **Establish automated contributions.** Set up an automated recurring deposit to build your balance steadily over time."
+        },
+        {
+            "heading": "Our Takeaway on Portfolio Fit",
+            "body": "An index fund fits investors seeking low-cost, broad diversification for money they will not need for several years. In our internal fee modeling above ($10,000 start, $500 a month, 7% before fees, no taxes), the same deposits left $63,821.94 more after 30 years at a 0.03% expense ratio than at 0.50%, and $124,345.69 more than at 1.00%. That is a modeled gap with every other input held equal, not a forecast of what any fund will return.\n\nThis approach is not suitable if you need your money within a short time horizon, because market declines can decrease your capital without warning. It also does not fit investors who want to select individual stocks. The decision to invest in an index fund also shifts if you select an enhanced index fund with high management fees, because the higher fee cuts into the cost savings shown in the table above.\n\nYour timeline and account type (taxable account, IRA or 401(k)) change the answer, so a licensed financial advisor or CPA can check the fit for you."
+        }
+    ],
+    "tools": [
+        {
+            "href": "/investing/sp500-calculator/",
+            "label": "S&P 500 calculator"
+        },
+        {
+            "href": "/investing/investment-growth-calculator/",
+            "label": "Investment growth calculator"
+        },
+        {
+            "href": "/investing/compound-interest-calculator/",
+            "label": "Compound interest calculator"
+        }
+    ],
+    "faqs": [
+        {
+            "question": "What is an index fund in simple terms?",
+            "answer": "An index fund is an investment fund that holds the same stocks or bonds as a specific market benchmark, like the S&P 500, in the exact same proportions. Instead of paying an active manager to pick investments, the fund tracks the index passively to keep operating costs low."
+        },
+        {
+            "question": "How does an index fund work?",
+            "answer": "An index fund pools money from investors and buys the securities in a market index, such as the S&P 500, in the same proportions as the index. Because the fund follows the index instead of picking investments, it trades less and normally costs less than an actively managed fund."
+        },
+        {
+            "question": "Are index funds a good investment?",
+            "answer": "Index funds hold a whole index, so they spread money across many companies, and they normally cost less to run than actively managed funds. They fit money you will not need for several years. However, they carry market risk, do not protect against market drops, and aim to match the index rather than beat it."
+        },
+        {
+            "question": "What are the downsides of index funds?",
+            "answer": "Index funds fall whenever their underlying index drops, offering no buffer against market declines. You cannot exclude underperforming companies within the index, the fund aims to match the index rather than beat it, and some specialized or enhanced index funds charge higher fees."
+        },
+        {
+            "question": "Is an index fund the same as an ETF?",
+            "answer": "No, an index fund refers to the passive tracking strategy, while an ETF is an exchange-traded vehicle that trades on an exchange throughout the day. An index fund can be structured either as an ETF or as a mutual fund priced once daily."
+        },
+        {
+            "question": "How do I invest in an index fund?",
+            "answer": "To invest in an index fund, open a taxable brokerage or tax-advantaged retirement account, choose a target index, compare expense ratios, choose between an ETF or a mutual fund structure, and set up your initial purchase or recurring contribution."
+        },
+        {
+            "question": "Do index funds have fees?",
+            "answer": "Yes, index funds charge an annual fee called an expense ratio, deducted directly from fund assets. While among the funds named above, providers list expense ratios from 0.00% (FZROX) to 0.03% (VOO and VTI) at time of writing, and fees vary from fund to fund, and higher fees reduce your total investment growth over time."
+        }
+    ],
+    "sources": [
+        {
+            "label": "FINRA Mutual Funds",
+            "url": "https://www.finra.org/investors/investing/investment-products/mutual-funds"
+        },
+        {
+            "label": "FINRA Risk",
+            "url": "https://www.finra.org/investors/investing/investing-basics/risk"
+        }
+    ]
+  },
   // ── search-gap 2026-10-23: donor-advised-funds-explained ──
   {
     "slug": "donor-advised-funds-explained",

@@ -1,0 +1,181 @@
+{
+ "rows": [
+  {
+   "keyword": "coast fire amount",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "walletburst.com",
+    "pages.m1.com",
+    "choosefi.com",
+    "projectionlab.com",
+    "www.richify.ai",
+    "www.get.pelcro.com",
+    "8figures.com",
+    "www.financialaha.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "walletburst.com",
+    "www.nerdwallet.com",
+    "choosefi.com",
+    "www.reddit.com",
+    "pages.m1.com",
+    "coastfirecalc.com",
+    "projectionlab.com",
+    "www.get.pelcro.com",
+    "www.financialaha.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How do I calculate my coast FIRE amount?",
+    "What's a good coastfire number?",
+    "Is $1,000,000 enough to retire at 65?",
+    "What is the $240,000 rule?",
+    "What percentage of Americans retire with $1,000,000?",
+    "Is it better to have your house paid off when you retire?"
+   ],
+   "related_searches": [
+    "Coast FIRE calculator",
+    "Best Coast FIRE calculator",
+    "Coast FIRE number by age",
+    "Barista FIRE calculator",
+    "Fidelity Coast FIRE calculator",
+    "Coast FIRE chart",
+    "What does Coast FIRE number mean",
+    "Coast FIRE age calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.reddit.com, walletburst.com, pages.m1.com, choosefi.com",
+   "se_results_count": 104
+  },
+  {
+   "keyword": "trump account vs brokerage account for kids",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.monotelo.com",
+    "www.acorns.com",
+    "crr.bc.edu",
+    "www.wealthenhancement.com",
+    "www.youtube.com",
+    "www.usbank.com",
+    "www.pbs.org"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.monotelo.com",
+    "www.fidelity.com",
+    "stewardshipinv.com",
+    "www.whitecoatinvestor.com",
+    "crr.bc.edu",
+    "www.wealthenhancement.com",
+    "www.youtube.com",
+    "www.acorns.com",
+    "trumpaccounts.gov"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1
+   },
+   "paa": [
+    "Is a Trump account better than a custodial brokerage account?",
+    "Is it smart to open a brokerage account for your child?",
+    "What are the disadvantages of an UTMA account?",
+    "What is the best type of investment account to open for a child?",
+    "At what age should you have $100,000 saved?",
+    "Can I open a Roth IRA for my 5 year old child?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; AI Overview present, cites www.monotelo.com, www.acorns.com, crr.bc.edu, www.wealthenhancement.com",
+   "se_results_count": 1320000
+  },
+  {
+   "keyword": "index investment funds",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "investor.vanguard.com",
+    "www.investor.gov",
+    "www.fidelity.com",
+    "www.nerdwallet.com",
+    "www.investopedia.com",
+    "en.wikipedia.org",
+    "www.stonex.com",
+    "www.schwab.com",
+    "www.morningstar.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "sffirecu.org",
+    "www.reddit.com",
+    "www.forbes.com",
+    "smartasset.com",
+    "www.morningstar.com",
+    "www.sofi.com",
+    "public.com",
+    "www.bogleheads.org",
+    "www.sofi.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [
+    "www.forbes.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are the downsides of investing in index funds?",
+    "What is the 7% rule in investing?",
+    "Where can I put $10,000 to make the most money?",
+    "What are the most lucrative index funds?",
+    "What is Warren Buffett's favorite index fund?",
+    "Is a $300,000 investment better in Vanguard or in Fidelity?"
+   ],
+   "related_searches": [
+    "Top index investment funds",
+    "Best index investment funds",
+    "Index investment funds for roth ira",
+    "Index funds vs mutual funds",
+    "How to invest in index funds for beginners",
+    "How to invest in index funds without a broker",
+    "Best performing index funds last 10 years",
+    "Best index funds to invest in for beginners"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (www.forbes.com); AI Overview present, cites investor.vanguard.com, www.investor.gov, www.fidelity.com, www.nerdwallet.com",
+   "se_results_count": 117
+  }
+ ],
+ "cost": "DataForSEO: 3 calls, $0.01245 of $2.00 budget"
+}
