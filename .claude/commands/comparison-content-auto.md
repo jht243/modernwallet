@@ -5,6 +5,9 @@ argument-hint: "[optional N = max candidates to send this run; default = all NEW
 
 # /comparison-content-auto — comparison candidates → /mindmap-pass
 
+**Topic-selection priority:** Relevant organic-click growth is the default; do not infer a lead-generation goal from services, commercial intent, CPC, or audience segments. Commercial value only breaks close ties unless the user explicitly requests lead generation. Carry this priority into the mindmap brief when this routine delegates selection; do not add a separate scoring or filtering step to a candidate-only miner. This applies to scheduled runs as well as manual runs.
+
+
 > **‼️ AUTONOMOUS.** No human checkpoint. Never print "Approve?". Nothing new → email a Success Without Changes report, exit 0.
 > Run `.claude/scripts/deploy-run-to-main.sh mark` FIRST, before any commit.
 

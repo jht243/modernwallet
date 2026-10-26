@@ -11,7 +11,7 @@ This file is only the orchestrator: it owns **ordering, gates, and rules**. The 
 
 ## What this command does
 
-SEO comparison ("X vs Y") content is a top driver of Google traffic AND LLM/answer-engine citations: it's commercial-intent, entity-dense, and easy to extract. This command mines the project's own entity universe, decides which head-to-heads will actually drive traffic/leads, and produces them — without ever duplicating content the site already has.
+SEO comparison ("X vs Y") content is a top driver of Google traffic AND LLM/answer-engine citations: it's commercial-intent, entity-dense, and easy to extract. This command mines the project's own entity universe, decides which head-to-heads offer realistic relevant organic-click growth, and produces them — without ever duplicating content the site already has.
 
 `$ARGUMENTS` (optional): an integer = how many comparison pages to publish this run. Default **5**. (e.g. `/comparison-content-creator 3`.)
 
@@ -50,7 +50,7 @@ Phase 6 — Summary + Candidate Chart → ‼️ HARD HUMAN GATE → on approval
 2b. **PARTIAL means ENRICH, and enrichment actually runs.** A PARTIAL is not a to-do for later — Phase 3b executes it the same run. It adds the missing head-to-head treatment (sub-section + comparison table + verdict, optional FAQ) to the existing page via **targeted `Edit` operations only**, reusing the keyword-gap-pass body-enrichment discipline verbatim: *keep the same page, update it where needed, never recreate the page via script.* Everything not called out stays byte-for-byte unchanged.
 3. **NET-NEW vs ENRICH are separate lanes.** Phase 3 creates brand-new routes — it must NEVER overwrite, regenerate, or replace an existing page. Editing existing pages is **Phase 3b's** job and is done only as in-place spot-edits (never a regeneration/script rebuild). If a pair selected as NEW turns out to map to an existing route, STOP that one in Phase 3 and route it to Phase 3b as an enrichment item instead.
 3a. **Verbatim prompts — Phase 3 + Phase 4.** The generation instruction (Phase 3) and the audit instruction (Phase 4) MUST be passed to any worker/subagent as the **exact, full text** from `.claude/commands/seo-gsc-pass/phase-3-new-content.md` and `phase-4-audit.md` — copied character-for-character, never paraphrased, summarized, or "captured in substance." The only permitted change is swapping the literal "{BUSINESS_NAME}" token for the discovered business name. Per-pair facts, link targets, and output-schema instructions are appended around the verbatim block, not spliced into it.
-4. **Data decides.** A pair ships only if connected SEO data (or, with `--heuristic`, internal signals) says it will draw traffic/leads. No invented volumes, KD, positions, or stats.
+4. **Data decides.** A pair ships only if connected SEO data (or, with `--heuristic`, internal signals) supports additional relevant organic clicks (or leads when the user explicitly requests lead generation). No invented volumes, KD, positions, or stats.
 5. **Reviewer authority + remediation ladder.** Phase 4 is an adversarial Explore subagent that did NOT write the pages. On rejection, fix at the cheapest rung that can fix it — see `.claude/commands/_remediation-ladder.md`, which is mandatory and governs every gate in this workflow: mechanical lint → reviewer-supplied FIX-IN-PLACE applied without a writer round-trip → REWORK by the writer for that page only. Only a REWORK counts as an attempt. **Max 2 rework attempts per PAGE**; a page that fails its 2nd rework is dropped from the run and reported under "Ambiguous / skipped", and the run continues with the pages that passed. Pages that already passed are never re-audited because a sibling was fixed. STOP the whole command only when every page is dropped, or a rung cannot run at all.
 6. **Reuse when present, generic when not.** If Phase 0 finds project generator/audit/publish scripts (e.g. `scripts/model_radar/` helpers: `existing_slugs`, `insert_comparisons`, `add_inbound_link`, `add_sitemap`, `tsc_check`, `git_commit_push`, `indexnow`), reuse them. Otherwise operate directly on the project's content files in the discovered format.
 7. **Match the discovered format exactly.** Emit pages in the project's own comparison shape (data-object array, MDX, CMS) with the same JsonLd/SEO scaffolding as existing pages. Hardcode nothing about any specific project.
@@ -78,11 +78,11 @@ Every run MUST produce this single chart covering **ALL candidates** from Phase 
 ```
 | # | Comparison | Vol | KD | CPC | Coverage | Verdict |
 ```
-- **#** — rank by Verdict tier then Vol (highest first).
+- **#** — rank by Verdict tier then Phase 2 composite score (highest first), reflecting realistic additional organic-click opportunity rather than raw volume alone.
 - **Comparison** — "X vs Y" (+ " for [segment]" if long-tail).
 - **Vol / KD / CPC** — live SEMrush (or Ahrefs/GSC) numbers; `no data` if the source returned none; `—` if not queried because it was blocked pre-scoring.
 - **Coverage** — `🟢 new` · `🟡 partial (existing-slug)` · `🔴 duplicate (existing-slug)`. Always name the conflicting slug for partial/duplicate.
-- **Verdict** — one of: `Build — Tier 1` (high lead value) · `Build — Tier 2` (traffic/LLM) · `Tier 3` (easy/low) · `Enrich — partial` (spot-edited in Phase 3b this run) · `Drop — duplicate` · `Validate (Ahrefs/GSC)` for no-data long-tails.
+- **Verdict** — one of: `Build — Tier 1` (strongest realistic organic-click opportunity) · `Build — Tier 2` (next-best supported traffic opportunity) · `Tier 3` (lower-priority opportunity) · `Enrich — partial` (spot-edited in Phase 3b this run) · `Drop — duplicate` · `Validate (Ahrefs/GSC)` for no-data long-tails.
 - Footer legend line: `🟢 new (build) · 🟡 partial (enrich in-place, Phase 3b) · 🔴 duplicate (dropped) · default run builds Tier 1–2 and enriches every partial.`
 - Keep it terse — a chart, not prose. Do not pad with paragraphs.
 

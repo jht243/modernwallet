@@ -34,17 +34,19 @@ Score each candidate (normalize each factor 0–1):
 
 ```
 score = volume_factor           # log-scaled search volume
-      × intent_factor           # "vs"/comparison = high commercial intent; "for [segment]" = higher
+      × intent_factor           # matches the actual query intent and site audience; no automatic commercial/segment bonus
       × winnability_factor       # inverse of KD + weak-SERP bonus; penalize entrenched incumbents
-      × lead_value_factor        # maps to a service/segment the business actually sells (user priority: LEADS)
+      × click_opportunity_factor # realistic organic click opportunity given the SERP layout; not all searches become clicks
+      × answer_value_factor      # ability to provide a better, evidence-backed answer than existing results
       × portfolio_fit_factor     # fills a genuine gap; strengthens an existing hub/cluster
-      × ai_citation_factor       # (if Brand Radar present) likelihood of LLM citation
 ```
 
-**Lead value is up-weighted** — the user's priority is leads, not raw traffic. A medium-volume "X vs Y for [high-value vertical]" that maps to a paid service should outrank a high-volume but purely informational model-vs-model pair.
+**Traffic growth is the default.** Prioritize relevant topics with the greatest realistic opportunity to earn additional organic clicks. Consider search demand, ranking difficulty, gaps in existing coverage, and our ability to provide a better answer. Commercial value may break a close tie, but should not override substantially greater traffic potential unless the user explicitly requests lead generation. Record any explicit lead-generation objective and its scoring adjustment for that run; never assume it from the site's services or audience.
+
+Treat this score as a prioritization aid, not a predicted click count. Explain the evidence behind each factor; do not invent CTR or traffic estimates. AI-citation potential is an optional tie-breaker, not a multiplier that suppresses organic opportunities when citation data is absent.
 
 ## Heuristic fallback (`--heuristic`, or no data source for a given candidate)
-Score from internal signals only, zero external calls: entity prominence in existing content, segment→service mapping, coverage-gap size, and internal-link authority of related hubs. Clearly label these scores as `heuristic` in the output so the user knows they're not demand-validated.
+Score from internal signals only, zero external calls: entity prominence in existing content, audience relevance, coverage-gap size, our ability to provide a better answer, and internal-link authority of related hubs. Do not infer demand from commercial value or award an automatic service/segment bonus. Clearly label these scores as `heuristic` in the output so the user knows they're not demand-validated.
 
 ## Select + record
 - **Emit the mandatory Candidate Chart now** (exact columns/format defined in the launcher: `# | Comparison | Vol | KD | CPC | Coverage | Verdict`). It MUST include **every** candidate from Phase 1 — NEW (scored), PARTIAL and DUPLICATE (carried from 1b with their conflicting slug), and low/no-data rows. Dropped and low-ranked rows are never hidden. This chart is the headline deliverable of the run.

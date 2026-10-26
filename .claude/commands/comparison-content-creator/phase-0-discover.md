@@ -18,7 +18,7 @@ Auto-discover every project fact by inspecting the repo. **Hardcode nothing**; p
   - **Audience segments / verticals** (e.g. legal, accounting, medical) — used for `X vs Y for [segment]` long-tail
   Print the grouped entity list. This is the raw material for Phase 1.
 - **Existing comparisons (dedup set)** — the slugs + the entity pairs already covered head-to-head. Also note the FULL set of content URLs/H1s/target keywords (guides, verticals, landing pages) — Phase 1b needs all of it, not just comparison slugs.
-- **Service / lead mapping** — what does this business actually sell, and to whom? (services pages, CTAs, verticals.) Phase 2 up-weights pairs that map to a real service/segment because the user's priority is leads, not just traffic.
+- **Audience / business relevance** — who does this site serve, what topics does it cover, and what does the business sell? (existing content, services pages, CTAs, verticals.) Use this to keep candidates relevant. Phase 2 defaults to realistic organic-click growth; a service/segment match does not automatically increase priority. Record a lead-generation objective only if the user explicitly requests it.
 - **Business / brand name** — the site's own brand name (from the `<title>` branding suffix, logo alt text, footer, `package.json`, schema.org `Organization`/`publisher`, or the About page). This is the `{BUSINESS_NAME}` value Phase 3 substitutes into the verbatim content-writing prompt wherever `{BUSINESS_NAME}` appears (see rule 3a in the launcher). If genuinely undiscoverable, fall back to the bare domain. Record it in `discovery.md`.
 - **Publish conventions** —
   - Sitemap file(s): list `public/sitemap*.xml`; infer route→file routing + the `<url><loc>…</loc><lastmod>…</lastmod></url>` format.
