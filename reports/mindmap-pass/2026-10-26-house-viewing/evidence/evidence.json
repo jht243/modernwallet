@@ -1,0 +1,29 @@
+{
+ "route": "/checklists/house-viewing-checklist/",
+ "reader_question": "What should I ask and check when I first view a house?",
+ "demand_source": "ahrefs via keyword_data.py; DataForSEO SERP reads 2026-10-26-house-viewing.serp.json",
+ "decision_gap": "Page one is reddit threads, local agents and generic lists; none lets a buyer mark several houses on the same short list and compare them (10-result sample per head, not a claim about every site).",
+ "method": "calculated + reported: one rule per item in src/lib/checklists.ts (house-viewing); counts from compute.mjs",
+ "findings": [
+  {
+   "label": "calculated",
+   "text": "scenario counts in counts.json"
+  },
+  {
+   "label": "reported",
+   "text": "federal lead disclosure (EPA), FEMA flood map, polybutylene/lead-solder eras"
+  }
+ ],
+ "ordering": "editorial judgment of cost-to-miss, stated as such on the page",
+ "unknowns": "which items readers mark most; ranking effect",
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "counts.json",
+   "src/lib/checklists.ts"
+  ],
+  "scopeAndLimits": "Counts are rule outputs for example homes; ordering is editorial; no product test",
+  "publicMethod": "workedExample + How the Checklist Is Built + full list with Only-if tags",
+  "placement": "workedExample, howItWorks"
+ }
+}

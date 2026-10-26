@@ -77,6 +77,7 @@ import FloridaAmendment3Calculator from "./FloridaAmendment3Calculator";
 import StudentLoanGarnishmentCalculator from "./StudentLoanGarnishmentCalculator";
 import TaxBracketCalculator from "./TaxBracketCalculator";
 import ChecklistBuilder from "./ChecklistBuilder";
+import ViewingChecklist from "./ViewingChecklist";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
@@ -182,6 +183,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   // Mindmap pass (2026-10-25): /checklists/ — one rule-driven checklist island for buying, selling,
   // renting, landlord, inspection, final walkthrough, move-in/out and first-apartment pages (preset.checklist).
   "checklists": ChecklistBuilder,
+  // Mindmap pass (2026-10-26): first-visit house viewing checklist with a side-by-side comparison of up to 3 houses.
+  "house-viewing": ViewingChecklist,
   // PTO / leave-days cash-out — competitor-monitor pass (2026-08-17): sell-back payout calculator
   // that also shows an estimated net-of-tax figure and the unpaid-time-off value for comparison.
   "pto-cashout": PtoCashoutCalculator,

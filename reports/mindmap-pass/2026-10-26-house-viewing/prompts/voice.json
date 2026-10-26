@@ -1,0 +1,39 @@
+{
+ "title": "Closing Cost Calculator: Estimate Your Total",
+ "metaDescription": "Use this closing cost calculator to estimate what you'll pay at closing. See typical 2-5% costs, what's included, and how to compare lender quotes.",
+ "h1": "Closing Cost Calculator",
+ "introText": "This closing cost calculator gives you a rough idea of what you'll pay at the closing table to complete your home purchase. Enter your home price above for an instant estimate.\n\nClosing costs typically range from about 2% to 5% of the home's price. For a $400,000 home, that works out to roughly $8,000 to $20,000, with a typical bill near $12,000, or about 3%. These fees cover the loan, title work, taxes, and prepaid items.\n\nOne key point many buyers miss: closing costs are separate from (and added on top of) your down payment. This calculator provides a planning estimate; the real numbers will appear on your official Loan Estimate from a lender.",
+ "toolHeading": "Estimate your closing costs",
+ "toolSubheading": "Enter the home price for a typical estimate and a fee-by-fee breakdown.",
+ "howItWorks": "The closing cost calculator above multiplies your home price by a typical percentage to estimate your total. It then splits that total into the main fee categories so you can see where the money goes. On a $400,000 home with a typical 3% estimate, that is about $12,000. The rough breakdown is loan origination near $2,400, appraisal and inspection near $800, title insurance and search near $2,000, recording and transfer taxes near $2,000, prepaid taxes and insurance near $2,000, and other lender and third-party fees near $2,800.\n\nUse the result as a budgeting guide, not a final bill. After you apply, the lender must give you a Loan Estimate within three business days. That form lists your real closing costs and your estimated cash to close. You can request Loan Estimates from several lenders and compare them side by side. You can also shop separately for some services, like title work, to save money. Plan the rest of your upfront cash with the [down payment calculator](/mortgage/down-payment-calculator/) and the [home affordability calculator](/mortgage/home-affordability-calculator/).",
+ "workedExample": "Maya is buying a $400,000 home. The calculator above uses a typical 3% rate and estimates about $12,000 in closing costs. The breakdown shows loan origination near $2,400, appraisal and inspection near $800, title insurance and search near $2,000, recording and transfer taxes near $2,000, prepaid taxes and insurance near $2,000, and other fees near $2,800. Maya now knows this $12,000 is separate from her down payment. She also sees the range runs from $8,000 at 2% to $20,000 at 5%, so she requests Loan Estimates from three lenders to compare and shops for title services.",
+ "commonMistakes": [
+  "Treating closing costs as part of the down payment. They are extra money you bring on top of it.",
+  "Budgeting only for the loan fees. Title insurance, transfer taxes, and prepaid escrow items add up fast.",
+  "Skipping the lender comparison. Requesting Loan Estimates from several lenders can lower your total.",
+  "Assuming every fee is fixed. You can shop for some services, and sellers may cover part of the costs.",
+  "Treating this estimate as the final number. Your Loan Estimate has the accurate figures, not a calculator."
+ ],
+ "faqs": [
+  {
+   "question": "How much are closing costs on a house?",
+   "answer": "Closing costs typically run about 2% to 5% of the home price. On a $400,000 home, that is roughly $8,000 to $20,000, with a typical bill near $12,000. The closing cost calculator above estimates your total based on your price."
+  },
+  {
+   "question": "What is included in closing costs?",
+   "answer": "Closing costs include loan origination fees, appraisal and inspection, title insurance and search, recording and transfer taxes, and prepaid taxes and insurance for your escrow account. On a typical $400,000 purchase, these categories together total about $12,000. Transfer tax specifically varies a lot by state; see our [real estate transfer tax guide](/guides/real-estate-transfer-tax-explained/) for worked New Jersey and New York examples."
+  },
+  {
+   "question": "Are closing costs separate from the down payment?",
+   "answer": "Yes. Closing costs are separate from and paid on top of your down payment. The down payment goes toward the home price, while closing costs cover the loan, title, taxes, and prepaid items. Budget for both. You can plan your down payment with the [down payment calculator](/mortgage/down-payment-calculator/)."
+  },
+  {
+   "question": "Can I lower my closing costs?",
+   "answer": "Yes, you have options. You can shop separately for some services, like title work, to save money. You can also compare Loan Estimates from several lenders, and sellers may agree to pay part of the costs."
+  },
+  {
+   "question": "When do I get the real closing cost numbers?",
+   "answer": "Your lender must give you a Loan Estimate within three business days of your application. This form lists your actual closing costs and your estimated cash to close. The calculator above gives a planning estimate, but the Loan Estimate has the real figures."
+  }
+ ]
+}

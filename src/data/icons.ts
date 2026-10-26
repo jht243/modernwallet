@@ -60,6 +60,7 @@ const CATEGORY_SHAPE: Record<string, string> = {
 
 // Per-spoke concept shape so cards within a category still look different.
 const SPOKE_SHAPE: Record<string, string> = {
+  "checklists/house-viewing-checklist": "list",
   "checklists/home-buying-checklist": "house", "checklists/home-selling-checklist": "flag", "checklists/renting-checklist": "building",
   "checklists/landlord-checklist": "coins", "checklists/home-inspection-checklist": "shield", "checklists/final-walkthrough-checklist": "target",
   "checklists/move-in-move-out-checklist": "calendar", "checklists/first-apartment-checklist": "wallet",

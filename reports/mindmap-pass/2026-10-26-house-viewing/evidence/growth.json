@@ -1,0 +1,15 @@
+{
+ "origin_routine": "mindmap-pass",
+ "query_family": "questions to ask when viewing a house",
+ "hypothesis": "A short, comparable first-visit checklist earns clicks on a low-KD, forum-heavy SERP.",
+ "primary_metric": "incremental Google clicks (GSC)",
+ "baseline": "not-yet-published",
+ "canonical_url": "https://www.themodernwallet.com/checklists/house-viewing-checklist/",
+ "comparator_plan": "age-matched 2026-10 checklist pages",
+ "windows": {
+  "day28": "first 28 complete live days after verified deploy",
+  "day56": "second 28 complete live days"
+ },
+ "outcome_status": "not-yet-published",
+ "deployed": null
+}

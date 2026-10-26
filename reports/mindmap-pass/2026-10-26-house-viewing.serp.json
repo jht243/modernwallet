@@ -1,0 +1,364 @@
+{
+ "rows": [
+  {
+   "keyword": "questions to ask when buying a house",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.zillow.com",
+    "www.redfin.com",
+    "www.thepreferredrealty.com",
+    "www.ramseysolutions.com",
+    "www.youtube.com",
+    "www.ally.com",
+    "www.fbfs.com",
+    "www.atlasvanlines.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.treadstonemortgage.com",
+    "www.yourvermonthomesearch.com",
+    "www.youtube.com",
+    "budgetsaresexy.com",
+    "www.buildidaho.com",
+    "raleighrealty.com",
+    "c21bolterealestate.com",
+    "www.youtube.com",
+    "www.retrofoamofmichigan.com",
+    "www.ownup.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1
+   },
+   "paa": [
+    "What salary do you need for a $400,000 house?",
+    "What are the biggest red flags to avoid when buying a house?",
+    "What is the 3-3-3 rule in real estate?",
+    "Can I afford a $300 k house on a $70 k salary?",
+    "Can I afford a $400 k house on a $100 k salary?",
+    "How much would I need for a 20% down payment on a $300,000 house?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.reddit.com, www.zillow.com, www.redfin.com, www.thepreferredrealty.com",
+   "se_results_count": 110
+  },
+  {
+   "keyword": "open house checklist",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.housingwire.com",
+    "www.realtor.com",
+    "www.ojaivalleyestates.com",
+    "www.redfin.com",
+    "lisanederlander.com",
+    "www.facebook.com",
+    "www.youtube.com",
+    "www.hondros.com",
+    "www.uprinting.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.realtor.com",
+    "www.housingwire.com",
+    "www.reddit.com",
+    "www.nysar.com",
+    "www.manifest.ly",
+    "www.facebook.com",
+    "lisanederlander.com",
+    "www.chase.com",
+    "www.redfin.com",
+    "marketdwellings.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 2,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are the must-haves for an open house?",
+    "What is the 3-3-3 rule in real estate?",
+    "Is selling your home to Opendoor worth it?",
+    "What are 10 things every new homeowner should know?",
+    "What devalues a house the most?",
+    "What are the first things to buy for a new house?"
+   ],
+   "related_searches": [
+    "Open house checklist template",
+    "Open house checklist pdf",
+    "Open house checklist for agents",
+    "Open house checklist for buyers",
+    "Open house checklist for Realtors",
+    "Open house checklist for sellers",
+    "Free open house checklist",
+    "Open house checklist for realtors PDF"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.reddit.com, www.housingwire.com, www.realtor.com, www.ojaivalleyestates.com",
+   "se_results_count": 130
+  },
+  {
+   "keyword": "questions to ask when viewing a house",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.chase.com",
+    "realestate.usnews.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.hippo.com",
+    "www.edenconveyancing.com",
+    "www.reddit.com",
+    "www.luxhomesgroup.co.uk",
+    "nested.com",
+    "thinkplutus.com",
+    "www.amerisave.com",
+    "www.riverrealty.com",
+    "www.youtube.com",
+    "mccannteam.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What salary do you need for a $400,000 house?",
+    "What is the 3-3-3 rule in real estate?",
+    "What decreases property value the most?",
+    "What are the biggest red flags to avoid when buying a house?",
+    "Is 2026 a bad time to buy a house?",
+    "What shouldn't you do before buying a house?"
+   ],
+   "related_searches": [
+    "Questions to ask when touring a house for rent",
+    "Questions to ask when touring a house to buy",
+    "Questions to ask when buying a house checklist",
+    "What to look for when viewing a house checklist",
+    "What to look for when touring a house for rent",
+    "Questions to ask when buying a house for the first-time",
+    "Home Tour Checklist PDF",
+    "Home tour checklist for buyers"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.reddit.com, www.chase.com, realestate.usnews.com",
+   "se_results_count": 118
+  },
+  {
+   "keyword": "what to look for when touring a house",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.redfin.com",
+    "www.zillow.com",
+    "www.youtube.com",
+    "www.homes.com",
+    "diciccosells.com",
+    "soldwithsinclair.com",
+    "www.veteransunited.com",
+    "www.opendoor.com",
+    "www.fastexpert.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.zillow.com",
+    "www.redfin.com",
+    "www.opendoor.com",
+    "www.veteransunited.com",
+    "soldwithsinclair.com",
+    "diciccosells.com",
+    "www.fastexpert.com",
+    "www.hippo.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "images": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What not to do when touring a house?",
+    "What is the 3-3-3 rule in real estate?",
+    "What are the biggest red flags to avoid when buying a house?",
+    "What devalues a house the most?",
+    "What is the hardest month to sell a home?",
+    "What adds the biggest value to a house?"
+   ],
+   "related_searches": [
+    "What to look for when touring a house for the first",
+    "What to look for when touring a house reddit",
+    "What to look for when touring a house for rent",
+    "What to look for when viewing a house checklist",
+    "Home Tour Checklist PDF",
+    "Questions to ask when touring a house",
+    "Home tour checklist for buyers",
+    "What to look for when touring a condo"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; AI Overview present, cites www.reddit.com, www.redfin.com, www.zillow.com, www.youtube.com",
+   "se_results_count": 121
+  },
+  {
+   "keyword": "questions to ask at an open house",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "homebuyer.com",
+    "blog.allentate.com",
+    "www.trulia.com",
+    "www.youtube.com",
+    "www.finallyhome.org",
+    "www.pacaso.com",
+    "joshflagg.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "homebuyer.com",
+    "blog.allentate.com",
+    "joshflagg.com",
+    "www.finallyhome.org",
+    "www.benjamestaylor.com",
+    "www.youtube.com",
+    "www.trulia.com",
+    "www.zillow.com",
+    "www.facebook.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the 3-3-3 rule in real estate?",
+    "Does Opendoor give lowball offers?",
+    "What to know before going to an open house?",
+    "What to give out at an open house?",
+    "What are some good questions to ask at an open house?",
+    "What is the best food to serve at an open house?"
+   ],
+   "related_searches": [
+    "Questions to ask at open house for school",
+    "Questions to ask during Open House sorority",
+    "Questions to ask when touring a house for rent",
+    "Questions to ask at open house university",
+    "What to do at an open house as a buyer",
+    "What to do at an open house as an agent",
+    "What do you do at an open house for school",
+    "Questions to ask at house showing",
+    "Questions to ask when touring a house to buy",
+    "Open House feedback form PDF free",
+    "Open house questionnaire pdf",
+    "Questions to ask when buying a house checklist"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com, www.facebook.com) incl. #1; AI Overview present, cites homebuyer.com, blog.allentate.com, www.trulia.com, www.youtube.com",
+   "se_results_count": 147
+  },
+  {
+   "keyword": "what to look for when viewing a house",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "urbanacres.com",
+    "www.realtor.com",
+    "www.opendoor.com",
+    "www.chase.com",
+    "www.youtube.com",
+    "www.allcottassociates.co.uk",
+    "hoa.org.uk",
+    "www.zillow.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.youtube.com",
+    "remax-realtyprofessionals.com",
+    "www.ramseysolutions.com",
+    "www.reddit.com",
+    "www.allcottassociates.co.uk",
+    "gfwar.org",
+    "www.mcgeescott.com",
+    "www.youtube.com",
+    "bluefieldgroup.com",
+    "www.sableinternational.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "images": 1,
+    "organic": 17,
+    "people_also_ask": 1
+   },
+   "paa": [
+    "What devalues a house the most?",
+    "What are the top 5 things to consider when buying a house?",
+    "What is the 3-3-3 rule for buying a house?",
+    "What salary do you need for a $400,000 house?",
+    "Can I afford a 300k house on a $70K salary?",
+    "Can I afford a 500K house on a 200k salary?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.youtube.com, www.reddit.com) incl. #1; AI Overview present, cites www.reddit.com, urbanacres.com, www.realtor.com, www.opendoor.com",
+   "se_results_count": 114
+  }
+ ],
+ "cost": "DataForSEO: 6 calls, $0.02490 of $2.00 budget"
+}

@@ -1,0 +1,347 @@
+{
+ "slug": "house-viewing-checklist",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1666,
+ "floor": 900,
+ "input_tokens": 21231,
+ "output_tokens": 2292,
+ "thinking_tokens": 697,
+ "cached_tokens": 17831,
+ "est_cost_usd": 0.0151,
+ "guards": {
+  "repairs": [
+   "slug None -> 'house-viewing-checklist'"
+  ],
+  "flags": [
+   "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Each house gets a summary card that counts your Good, Unsure and Problem marks, '; \"Each house's summary card counts your Good, Unsure and Problem marks, shows how \""
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1604,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 1053,
+   "floor": 900,
+   "ratio": 1.17,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    9,
+    4
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "Our house viewing checklist puts direct questions for the agent or seller first because verbal inquiries reveal history that cosmetic staging hides.",
+     "replacement": "Our house viewing checklist puts direct questions for the agent or seller first, ordered by our editorial judgment of how costly each is to miss.",
+     "type": "unsupported",
+     "why": "SOURCE states list ordering reflects editorial judgment of costs, not staging hiding history."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Inquiring about previous offers, recent price cuts, or deals that fell apart helps uncover hidden structural or appraisal issues that scared off past buyers.",
+     "replacement": "Inquiring about previous offers, recent price cuts, or deals that fell apart helps uncover inspection problems that broke previous deals.",
+     "type": "unsupported",
+     "why": "SOURCE attributes fallen deals to inspection problems, not structural or appraisal issues."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Musty, damp, or pet odors often signal mold or trapped moisture that sellers attempted to mask.",
+     "replacement": "Musty, damp, smoke, or pet smells point to moisture, mold, or odors that are hard to remove.",
+     "type": "unsupported",
+     "why": "SOURCE states smells indicate moisture, mold, or hard-to-remove odors, not seller masking."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Outside and on the main level, watch for wide, stair-step, or horizontal cracks in the foundation, noticeable floor slopes, and sticking doors that point to settling problems.",
+     "replacement": "Outside and on the main level, watch for wide, stair-step, or horizontal cracks in the foundation, noticeable floor slopes, and sticking doors that are worth an inspector's opinion.",
+     "type": "unsupported",
+     "why": "SOURCE states wide cracks warrant an inspector's opinion, not settling problems."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Homes from that era may also have old wiring, chipping paint, or lead solder, while homes built from 1978 to 1995 often used gray polybutylene plastic supply pipes that risk failure.",
+     "replacement": "Homes from that era may also have old wiring, chipping paint, or lead solder, while homes built from 1978 to 1995 often used gray polybutylene plastic supply pipes.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that polybutylene pipes risk failure."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Use the checklist to mark each item as Good, Unsure, or Problem, and write the agent's exact responses in the notes boxes.",
+     "replacement": "Use the checklist to mark each item as Good, Unsure, or Problem, and write the agent's exact responses in the \"Their answer\" boxes.",
+     "type": "unsupported",
+     "why": "The UI box for agent answers is labeled \"Their answer\", not notes boxes."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "A licensed home inspector tests mechanical systems, enters crawlspaces, and climbs onto roofs once an offer is accepted.",
+     "replacement": "A licensed home inspector checks the systems in detail once an offer is accepted.",
+     "type": "unsupported",
+     "why": "SOURCE does not state inspectors enter crawlspaces or climb onto roofs."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Discovering unpermitted renovation work or an inability to obtain affordable hazard insurance also signals serious trouble.",
+     "replacement": "Discovering unpermitted renovation work or an inability to obtain homeowners insurance also signals serious trouble.",
+     "type": "unsupported",
+     "why": "SOURCE forbids \"affordable\" and does not use \"hazard insurance\"; specifies homeowners insurance."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Comparing physical defects and verified monthly costs side by side helps you determine which property represents the safest purchase before making an offer.",
+     "replacement": "Comparing physical defects and verified monthly costs side by side helps you decide which house is worth an offer and an inspection.",
+     "type": "unsupported",
+     "why": "SOURCE states Problem items help decide which house is worth an offer and inspection."
+    },
+    {
+     "id": "introText",
+     "quote": "The tool above lets you create",
+     "replacement": "The tool on this page lets you create",
+     "type": "contradicted",
+     "why": "SOURCE specifies the tool runs on this page below the intro text."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Do not let attractive staging furniture and pleasant scents distract you from inspecting structural components and mechanical systems.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state pleasant scents distract buyers."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Comparing physical defects and verified monthly costs side by side helps you decide which house is worth an offer and an inspection.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE states utility, tax, and insurance costs per year, not monthly."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Yes, taking a printed copy or opening the checklist on your mobile device ensures you do not forget critical questions while talking with the agent.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE specifies printing or saving as PDF, not a mobile device feature."
+    }
+   ],
+   "deleted_final": 4,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1674
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-26T12:23:58-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-26-house-viewing/audit/house-viewing-checklist.findings.txt",
+    "applied": [
+     {
+      "id": "metaDescription",
+      "quote": "Use this customized, printable house viewing checklist to generate questions to ask when viewing a house, track red flags, and compare properties.",
+      "replacement": "A printable house viewing checklist with the questions to ask the agent and the things to check in person, plus marks to compare up to three houses.",
+      "type": "metaDescription tricolon and wrong verb",
+      "why": "Eliminates tricolon and corrects list generation claim."
+     },
+     {
+      "id": "introText",
+      "quote": "When you first view a house, ask the agent why the owners are selling, how long it has been listed, whether offers fell through, the age of major systems, past water or insurance claims, and real annual utility, tax, and HOA costs. At the same time, check with your own eyes for ceiling water stains, damp smells, wall or foundation cracks, sloping floors, sticking doors, low water pressure, electrical panel scorch marks, and exterior drainage away from the foundation. Evaluating every property against the exact same points gives you a reliable way to compare homes before you make an offer.",
+      "replacement": "Ask the agent why the owners are selling and how long the house has been listed. Then ask whether any offers fell through and how old the roof and big systems are. Ask about past water leaks and insurance claims, and what utilities, taxes and any HOA dues cost per year. Check for yourself too: ceiling water stains, damp smells, cracks in walls or the foundation, sloping floors and sticking doors. Run the taps, look at the electrical panel for scorch marks, and see whether the ground outside slopes away from the house. Mark every house on the same list so you can compare them before you make an offer.",
+      "type": "introText paragraph 1 long sentences and nominalization",
+      "why": "Breaks up long sentences and removes nominalizations."
+     },
+     {
+      "id": "introText",
+      "quote": "The tool on this page lets you create a custom house viewing checklist tailored to the property you plan to tour. Select the home type, the build era, the state, and any local climate risks like freezing winters, hurricane coasts, or wildfire areas. The tool automatically removes irrelevant checks, such as dropping exterior roof checks for condos or lead paint warnings for newer builds, and lets you log answers and issues for up to three houses. When you are ready to attend a showing or open house, tap the Print or save as PDF button to take your customized sheet with you.",
+      "replacement": "The house viewing checklist on this page changes with the property you plan to tour. Pick the home type, the build year and the state, then turn local conditions such as freezing winters, a hurricane coast or a wildfire area on or off. Items that do not apply drop out: a condo loses the roof and basement checks, and a house built in 1978 or later loses the lead-paint items. You can mark answers and problems for up to three houses, then tap Print or save as PDF to take the sheet with you.",
+      "type": "introText paragraph 2 coy phrasing and length",
+      "why": "Removes coy tool reference and shortens sentences."
+     },
+     {
+      "id": "toolSubheading",
+      "quote": "Select the home type, build year, and local climate conditions to build your custom walkthrough sheet.",
+      "replacement": "Mark each item Good, Unsure or Problem for up to three houses.",
+      "type": "toolSubheading instructions",
+      "why": "Clarifies user action per audit instructions."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Asking why the owners are selling and how long the property has sat on the market reveals whether you have negotiation leverage. Inquiring about previous offers, recent price cuts, or deals that fell apart helps uncover inspection problems that broke previous deals. Knowing the exact age of the roof, heating system, air conditioning unit, and water heater tells you which big replacements you might face first. Inquiries about past basement leaks, burst pipes, and insurance claims are vital, as unaddressed water damage remains one of the most expensive surprises after a purchase.",
+      "replacement": "Ask why the owners are selling and how long the house has been on the market. A long listing or a rushed sale changes how much room you have to negotiate. Ask about offers, price cuts and any sale that fell through, and why, because a deal often falls apart over an inspection problem. The ages of the roof, heating, air conditioning and water heater tell you which big replacement you would pay for first. Ask about water in the basement, roof leaks, burst pipes and insurance claims too. Water damage is one of the costliest problems to find after you buy.",
+      "type": "howItWorks paragraph 1 nominalizations and banned word",
+      "why": "Removes nominalizations, banned word vital, and overstatements."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Checking the physical structure yourself verifies whether the real-world condition matches the seller's claims. When you walk through each room, look closely for water stains on ceilings, around window frames, and under sinks, paying extra attention if someone painted over a single ceiling patch to conceal an active leak. Musty, damp, smoke, or pet smells point to moisture, mold, or odors that are hard to remove. Outside and on the main level, watch for wide, stair-step, or horizontal cracks in the foundation, noticeable floor slopes, and sticking doors that are worth an inspector's opinion. You should also test the shower and sink taps for water pressure, inspect the electrical panel for burn marks or older two-prong outlets, and confirm that gutters and soil slope water away from the building.",
+      "replacement": "Then check the house yourself to see whether its condition matches what the agent told you. Look for water stains on ceilings, around windows and under sinks. Fresh paint on just one patch of ceiling can be covering a leak. Musty, damp, smoke or pet smells point to moisture, mold or odors that are hard to remove. Watch for sloping floors, doors that stick, and cracks in walls or the foundation. Wide, stair-step or horizontal cracks are worth an inspector's opinion. Run the shower and kitchen tap to check water pressure. Look at the electrical panel and outlets for scorch marks and two-prong outlets, and make sure the ground outside slopes away from the house.",
+      "type": "howItWorks paragraph 2 asserted intent and long sentences",
+      "why": "Removes intent speculation, shortens sentences, and fixes modifier placement."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Property type, build year, and regional weather conditions change what you need to inspect. Condominiums do not require individual roof, basement, or private yard drainage checks, but they demand questions about homeowners association dues, reserve funds, planned special assessments, and hallway upkeep. Older properties require specific environmental questions. If a home was built before 1978, sellers must provide the federal disclosure on lead hazards per the [EPA real estate disclosure rule](https://www.epa.gov/lead/real-estate-disclosure). Homes from that era may also have old wiring, chipping paint, or lead solder, while homes built from 1978 to 1995 often used gray polybutylene plastic supply pipes. In our internal comparison, we saw these rules change the lists completely between a 1965 house in Denver and a modern Miami condo.",
+      "replacement": "The home type, build year and local conditions change both lists. A condo drops the roof, basement, foundation and drainage checks, and adds the HOA dues question and a check of the hallways and common areas. A house built before 1978, or of unknown age, adds lead items, because sellers of those homes must disclose known lead-based paint under the [EPA real estate disclosure rule](https://www.epa.gov/lead/real-estate-disclosure). Older homes can also have old wiring and lead pipes or solder, and homes built from about 1978 to 1995 often have gray polybutylene supply pipes. In our internal comparison, the same rules gave a 1965 Denver house 12 questions and 14 checks, and a Miami condo built after 2000 11 questions and 7 checks.",
+      "type": "howItWorks paragraph 3 mismatched condo claims",
+      "why": "Aligns condo items with tool rules and softens overstated claim."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Comparing multiple properties works best when you record observations on the identical list during your visits. Use the checklist to mark each item as Good, Unsure, or Problem, and write the agent's exact responses in the \"Their answer\" boxes. After touring several properties, look at the summary cards to see how many unresolved questions and problems each house accumulated. The tool tallies your marks without assigning arbitrary scores, allowing you to review the specific flaws of each property side by side. Before touring, you can also check your overall budget with the [home affordability calculator](/mortgage/home-affordability-calculator/).",
+      "replacement": "Mark every house on the same list as you walk through it. Tap Good, Unsure or Problem for each item, and write what the agent says in the \"Their answer\" boxes under each question. Each house gets a summary card that counts your Good, Unsure and Problem marks, shows how many items you have not marked yet, and lists the first three Problem items. The checklist adds up your own marks and gives no score, so you compare the houses on the Problem items themselves. Before touring, you can check your price range with the [home affordability calculator](/mortgage/home-affordability-calculator/).",
+      "type": "howItWorks paragraph 4 summary card inaccuracy and wording",
+      "why": "Corrects card contents and avoids coy phrasing and nominalizations."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "A viewing gives you an essential initial impression, but it never substitutes for a professional inspection. A licensed home inspector checks the systems in detail once an offer is accepted. You can follow that detailed stage with our [home inspection checklist](/checklists/home-inspection-checklist/) and coordinate the broader purchase steps using the [home buying checklist](/checklists/home-buying-checklist/). What a seller is legally obligated to tell you is determined by state disclosure laws, and flood exposure should always be verified on the [FEMA flood map service center](https://msc.fema.gov/portal/home).",
+      "replacement": "A viewing is your first look at a house and does not replace a professional inspection. A licensed home inspector checks the systems in detail, usually after your offer is accepted. Our [home inspection checklist](/checklists/home-inspection-checklist/) covers that stage, and the [home buying checklist](/checklists/home-buying-checklist/) covers the rest of the purchase. State law sets what a seller must disclose about the home's condition, so ask for the disclosure form before you make an offer. To see the address's flood zone, look it up on the [FEMA Flood Map Service Center](https://msc.fema.gov/portal/home).",
+      "type": "howItWorks paragraph 5 banned word and timing qualification",
+      "why": "Removes banned word essential, qualifies timing with usually, fixes casing."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Before you head to an open house or scheduled walkthrough, print your customized checklist so you have a physical sheet in hand. Ask the agent the tough questions while you are standing together in the home, write down their explanations, and systematically inspect the plumbing, electrical fixtures, and structure yourself. Using the recorded problems across each property helps you decide which house deserves a formal offer and an inspection contingent contract.",
+      "replacement": "Print the sheet before you go to an open house or showing. Ask the agent your questions while you are both in the house, and write down the answers. Mark each house the same way as you walk through it. Then compare the Problem items on each summary card to decide which house is worth an offer that is contingent on an inspection.",
+      "type": "howItWorks paragraph 6 inspect yourself contradiction",
+      "why": "Avoids contradiction with not-an-inspection and cleans up terminology."
+     },
+     {
+      "id": "workedExample",
+      "quote": "In our internal comparison, we ran the checklist's rules for different property profiles across our 33 item library to test how the questions and physical checks adjust. A buyer who tours a standard single-family house with the build year set to Not sure and freezing winters enabled receives 11 questions to ask the agent and 12 physical checks to perform.\n\nWhen we ran the rules for a home built in 1965 in Denver, Colorado, the checklist expanded to 12 questions and 14 physical checks. It added questions about obtaining homeowners insurance in wildfire areas and checks for pre-1978 wiring, peeling paint, exposed pipes in exterior walls, and combustible brush near siding. Conversely, running the rules for a condo built after 2000 in Miami, Florida reduced the checklist to 11 questions and 7 checks. It removed basement, roof, foundation, and lead paint checks, while adding HOA assessment questions and hallway maintenance reviews.",
+      "replacement": "In our internal comparison, we ran the checklist's rules on three example homes from our 33-item library and counted the items each one keeps. With the default answers (a house, build year Not sure, freezing winters on), the checklist shows 11 questions to ask and 12 things to check.\n\nFor a house built in 1965 in Denver, Colorado, the state preset turns on freezing winters and wildfire area. The list grows to 12 questions and 14 checks. It adds the question about getting homeowners insurance, a check for old wiring or pipes, and a check for dry brush or wood piles against the house.\n\nA condo built after 2000 in Miami, Florida keeps 11 questions but only 7 checks. It swaps in the condo versions of the systems and leak questions. It adds the HOA dues question, the homeowners insurance question for the hurricane coast, and a check of hallways and common areas. It drops the basement, foundation, roof, drainage, frozen-pipe and peeling-paint checks, along with the city water or septic question and the lead-paint question. The complete list under the checklist shows the rule behind every item.",
+      "type": "workedExample counts and testing language",
+      "why": "Corrects Denver additions, removes testing phrasing, and aligns details."
+     },
+     {
+      "id": "commonMistakes[0]",
+      "quote": "Focusing on decorative staging and paint colors instead of examining the age of heating systems, roof shingles, and the main electrical panel.",
+      "replacement": "Judging the house by its staging. The furniture leaves with the seller, but the roof, furnace and electrical panel stay.",
+      "type": "commonMistakes monotone gerund rhythm",
+      "why": "Varies sentence structure per reviewer instructions."
+     },
+     {
+      "id": "commonMistakes[1]",
+      "quote": "Failing to ask why the owners are moving or ignoring past transactions that fell apart during the inspection phase.",
+      "replacement": "Not asking why the owners are selling, or why an earlier sale fell through.",
+      "type": "commonMistakes monotone gerund rhythm",
+      "why": "Varies sentence structure per reviewer instructions."
+     },
+     {
+      "id": "commonMistakes[2]",
+      "quote": "Relying on memory after touring three or four properties in one afternoon instead of writing down notes and marks on the spot.",
+      "replacement": "Trusting your memory after three or four houses in one afternoon. Mark each house before you leave it.",
+      "type": "commonMistakes monotone gerund rhythm",
+      "why": "Varies sentence structure per reviewer instructions."
+     },
+     {
+      "id": "commonMistakes[3]",
+      "quote": "Skipping basic physical checks like running water taps, testing window latches, and smelling for dampness in basements or crawlspaces.",
+      "replacement": "Skipping the hands-on checks: run the taps, open a few windows, and smell the basement or crawlspace.",
+      "type": "commonMistakes monotone gerund rhythm",
+      "why": "Varies sentence structure per reviewer instructions."
+     },
+     {
+      "id": "commonMistakes[4]",
+      "quote": "Treating a casual open house viewing as a replacement for a formal inspection conducted by a licensed home inspector.",
+      "replacement": "Treating the viewing as the inspection. A licensed inspector checks the systems in detail, usually after your offer is accepted.",
+      "type": "commonMistakes monotone gerund rhythm",
+      "why": "Varies sentence structure per reviewer instructions."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Significant red flags include",
+      "replacement": "Red flags include",
+      "type": "faqs[1].answer banned word",
+      "why": "Removes banned word Significant."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "Compare properties by evaluating them against the same standardized checklist during your tours. Review the total number of flagged problem items and unanswered agent questions on each property summary card.",
+      "replacement": "Mark every house on the same list during your tours. Each house's summary card counts your Good, Unsure and Problem marks, shows how many items you have not marked, and lists the first three Problem items. The checklist gives no score, so compare the houses on those Problem items.",
+      "type": "faqs[4].answer summary card contents",
+      "why": "Corrects summary card description to match tool functionality."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "You can write down the agent's exact explanations and record physical problems immediately as you walk from room to room. Having a dedicated column for each house makes direct comparisons clear once you return home.",
+      "replacement": "Yes. Print it before you go and write the agent's answers in the \"Their answer\" boxes as you walk through. Mark problems room by room so you are not relying on memory. The printed sheet has a column for each of three houses, so you can compare them side by side at home.",
+      "type": "faqs[5].answer missing direct answer",
+      "why": "Starts with direct answer and matches sheet details."
+     },
+     {
+      "id": "faqs[6].answer",
+      "quote": "A professional inspection is performed by a licensed home inspector after your purchase offer is accepted under an inspection contingency. You can review the inspector's detailed testing process on our [home inspection checklist](/checklists/home-inspection-checklist/).",
+      "replacement": "A licensed home inspector checks the systems in detail, usually after your offer is accepted, and you can make the offer contingent on that inspection. See what an inspector checks on our [home inspection checklist](/checklists/home-inspection-checklist/).",
+      "type": "faqs[6].answer contingency overstatement and testing term",
+      "why": "Qualifies acceptance timing and removes testing language."
+     },
+     {
+      "id": "faqs[7].answer",
+      "quote": "item checkboxes",
+      "replacement": "a mark for every item",
+      "type": "faqs[7].answer terminology mismatch",
+      "why": "Reflects actual marks instead of checkboxes."
+     },
+     {
+      "id": "faqs[7].answer",
+      "quote": "You can reset the fields at any time by selecting the Clear button.",
+      "replacement": "The Clear button erases every house's marks, answers and notes.",
+      "type": "faqs[7].answer clear button action",
+      "why": "Matches exact tool behavior for Clear."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      2
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "howItWorks",
+       "quote": "Each house gets a summary card that counts your Good, Unsure and Problem marks, shows how many items you have not marked yet, and lists the first three Problem items.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[4].answer",
+       "quote": "Each house's summary card counts your Good, Unsure and Problem marks, shows how many items you have not marked, and lists the first three Problem items.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1666,
+    "flags": [
+     "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Each house gets a summary card that counts your Good, Unsure and Problem marks, '; \"Each house's summary card counts your Good, Unsure and Problem marks, shows how \""
+    ]
+   }
+  ]
+ },
+ "seconds": 191.3,
+ "response_id": "zYjfasu_JM2qytMP9tTs-AY",
+ "generated_at": "2026-10-26T12:10:33-0500"
+}

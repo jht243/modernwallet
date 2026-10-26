@@ -1,0 +1,115 @@
+{
+ "library": 33,
+ "denver-1965-house": {
+  "profile": {
+   "state": "CO",
+   "type": "single-family",
+   "era": "1950-1977",
+   "freeze": true,
+   "hurricane": false,
+   "wildfire": true,
+   "earthquake": false
+  },
+  "ask": [
+   "v-why",
+   "v-offers",
+   "v-ages",
+   "v-water",
+   "v-work",
+   "v-costs",
+   "v-disclosure",
+   "v-lead",
+   "v-utilities",
+   "v-included",
+   "v-area",
+   "v-insure"
+  ],
+  "look": [
+   "v-stains",
+   "v-smell",
+   "v-basement",
+   "v-cracks",
+   "v-roof",
+   "v-taps",
+   "v-panel",
+   "v-hvac",
+   "v-windows",
+   "v-grading",
+   "v-oldwiring",
+   "v-paint",
+   "v-freeze",
+   "v-wildfire"
+  ]
+ },
+ "miami-2005-condo": {
+  "profile": {
+   "state": "FL",
+   "type": "condo",
+   "era": "2000+",
+   "freeze": false,
+   "hurricane": true,
+   "wildfire": false,
+   "earthquake": false
+  },
+  "ask": [
+   "v-why",
+   "v-offers",
+   "v-ages-condo",
+   "v-water-condo",
+   "v-work",
+   "v-costs",
+   "v-hoa",
+   "v-disclosure",
+   "v-included",
+   "v-area",
+   "v-insure"
+  ],
+  "look": [
+   "v-stains",
+   "v-smell",
+   "v-common",
+   "v-taps",
+   "v-panel",
+   "v-hvac",
+   "v-windows"
+  ]
+ },
+ "default-house": {
+  "profile": {
+   "state": "",
+   "type": "single-family",
+   "era": "unknown",
+   "freeze": true,
+   "hurricane": false,
+   "wildfire": false,
+   "earthquake": false
+  },
+  "ask": [
+   "v-why",
+   "v-offers",
+   "v-ages",
+   "v-water",
+   "v-work",
+   "v-costs",
+   "v-disclosure",
+   "v-lead",
+   "v-utilities",
+   "v-included",
+   "v-area"
+  ],
+  "look": [
+   "v-stains",
+   "v-smell",
+   "v-basement",
+   "v-cracks",
+   "v-roof",
+   "v-taps",
+   "v-panel",
+   "v-hvac",
+   "v-windows",
+   "v-grading",
+   "v-paint",
+   "v-freeze"
+  ]
+ }
+}

@@ -23,7 +23,8 @@ export type ChecklistId =
   | "final-walkthrough"
   | "move-in-move-out"
   | "first-apartment"
-  | "moving";
+  | "moving"
+  | "house-viewing";
 
 export interface Profile {
   state: string; // USPS code, "" = not chosen
@@ -188,6 +189,8 @@ export interface Item {
   /** Applies only when this returns true. Omit = always applies. */
   when?: (p: Profile) => boolean;
   src?: keyof typeof SOURCES;
+  /** Short label where the full text is too long (house viewing summary cards). */
+  short?: string;
   /** Link text when the source page is where the reader does the task (e.g. file the form there). */
   cta?: string;
   /** Internal page with more on this step. */
@@ -258,6 +261,19 @@ const Q_HOME_TYPE: Question = {
 };
 
 export const QUESTIONS: Record<ChecklistId, Question[]> = {
+  "house-viewing": [
+    {
+      key: "propertyType",
+      label: "Type of home",
+      type: "select",
+      options: [
+        { value: "single-family", label: "House" },
+        { value: "townhouse", label: "Townhouse (with HOA)" },
+        { value: "condo", label: "Condo (with HOA)" },
+      ],
+    },
+    Q_ERA,
+  ],
   "home-buying": [
     Q_HOME_TYPE,
     Q_ERA,
@@ -426,6 +442,7 @@ export const USES_LOCATION: Record<ChecklistId, boolean> = {
   "move-in-move-out": true,
   "first-apartment": false,
   moving: true,
+  "house-viewing": true,
 };
 
 /** Label for the State dropdown where "State" alone is ambiguous. */
@@ -450,6 +467,7 @@ export const PRESETS: Record<ChecklistId, Partial<Profile>> = {
   "move-in-move-out": { propertyType: "apartment", bedrooms: 1, bathrooms: 1 },
   "first-apartment": {},
   moving: { moveFrom: "rent", moveTo: "rent", distance: "local", method: "movers", season: "summer", car: true },
+  "house-viewing": { propertyType: "single-family" },
 };
 
 export const TITLES: Record<ChecklistId, string> = {
@@ -462,6 +480,7 @@ export const TITLES: Record<ChecklistId, string> = {
   "move-in-move-out": "Move-In / Move-Out Condition Checklist",
   "first-apartment": "First Apartment Checklist",
   moving: "Moving Checklist",
+  "house-viewing": "House Viewing Checklist",
 };
 
 export const ROUTES: Record<ChecklistId, string> = {
@@ -474,6 +493,7 @@ export const ROUTES: Record<ChecklistId, string> = {
   "move-in-move-out": "/checklists/move-in-move-out-checklist/",
   "first-apartment": "/checklists/first-apartment-checklist/",
   moving: "/checklists/moving-checklist/",
+  "house-viewing": "/checklists/house-viewing-checklist/",
 };
 
 // ---- Shared climate items (used by several checklists with different wording) -----------------------
@@ -531,7 +551,7 @@ const HOME_BUYING: Section[] = [
       { id: "b-visit", text: "Visit the neighborhood on a weekday evening and a weekend, and drive your commute at rush hour" },
       { id: "b-flood", text: "Look up the address on the FEMA flood map", note: "A high-risk flood zone means required flood insurance on most mortgages.", src: "flood" },
       { id: "b-taxes", text: "Check the property tax bill and whether a reassessment after sale will raise it" },
-      { id: "b-water", text: "On each tour, look for water stains, musty smells, soft floors and fresh paint on one patch of ceiling" },
+      { id: "b-water", text: "On each tour, look for water stains, musty smells, soft floors and fresh paint on one patch of ceiling", link: { href: "/checklists/house-viewing-checklist/", label: "House viewing checklist" } },
       { id: "b-systems", text: "Ask the age of the roof, furnace, AC and water heater" },
       { id: "b-hoa", text: "Ask the HOA dues, what they cover, recent special assessments and the rental and pet rules", when: hasHoa },
       { id: "b-mh", text: "Check the HUD certification label and data plate, and whether the land is owned or leased", when: (p) => p.propertyType === "manufactured" },
@@ -1375,6 +1395,61 @@ const MOVING: Section[] = [
   },
 ];
 
+
+// ---- House viewing (mindmap-pass 2026-10-26) -------------------------------------------------------
+// The short list for the first time a buyer walks through a house: what to ask the agent or seller and
+// what to check with your own eyes, in order of how costly each is to miss. Kept to about ten each; the
+// house type, build era and climate swap a few items in rather than growing the list. The island
+// (ViewingChecklist.tsx) lets the reader mark each item per house and compare up to three houses.
+const notCondo = (p: Profile) => p.propertyType !== "condo";
+const HOUSE_VIEWING: Section[] = [
+  {
+    id: "ask",
+    title: "Ask the Agent or Seller",
+    items: [
+      { id: "v-why", text: "Why are the owners selling, and how long has it been on the market?", note: "A long listing or a rushed sale changes how much room you have to negotiate." },
+      { id: "v-offers", text: "Have there been offers, price cuts, or a sale that fell through?", note: "Ask why a deal fell apart; it is often an inspection problem." },
+      { id: "v-ages", text: "How old are the roof, heating, air conditioning and water heater?", note: "These are the big replacements you would pay for soonest.", when: notCondo },
+      { id: "v-ages-condo", text: "How old are the unit's heating, air conditioning and water heater, and when was the building's roof replaced?", when: (p) => p.propertyType === "condo" },
+      { id: "v-water", text: "Has there ever been water in the basement, a roof leak or a burst pipe, and any insurance claims?", note: "Water damage is one of the costliest problems to find after you buy.", when: notCondo },
+      { id: "v-water-condo", text: "Have there been leaks from neighboring units or the roof, and any insurance claims?", when: (p) => p.propertyType === "condo" },
+      { id: "v-work", text: "What repairs or renovations were done, by whom, and were they permitted?" },
+      { id: "v-costs", text: "What do utilities, property taxes and insurance cost per year?", link: { href: "/mortgage/home-affordability-calculator/", label: "Home affordability calculator" } },
+      { id: "v-hoa", text: "What are the HOA dues, what do they cover, and are any special assessments planned?", note: "Also ask about rules on rentals and pets.", when: hasHoa },
+      { id: "v-disclosure", text: "Can I see the seller's disclosure form before I make an offer?", note: "What a seller must disclose is set by state law." },
+      { id: "v-lead", text: "Built before 1978: is there any known lead-based paint?", short: "Known lead-based paint", note: "Sellers of pre-1978 homes must give buyers the federal lead disclosure.", when: pre1978OrUnsure, src: "lead" },
+      { id: "v-utilities", text: "Is it on city water and sewer, or a well and septic system?", when: (p) => p.propertyType === "single-family" },
+      { id: "v-included", text: "Which appliances, fixtures and window coverings are included in the sale?" },
+      { id: "v-area", text: "Any flooding, noise or planned construction nearby?", note: "Look up the address on the FEMA flood map too.", src: "flood" },
+      { id: "v-storm", text: "Has the house had storm damage, and does it have shutters or impact windows?", when: (p) => p.hurricane && notCondo(p), src: "hurricane" },
+      { id: "v-insure", text: "Can a new owner get homeowners insurance here, and at what cost?", when: (p) => p.wildfire || p.hurricane },
+    ],
+  },
+  {
+    id: "look",
+    title: "Check With Your Own Eyes",
+    items: [
+      { id: "v-stains", text: "Water stains on ceilings and walls, around windows and under sinks", note: "A fresh coat of paint on just one patch of ceiling can be covering a leak." },
+      { id: "v-smell", text: "Musty, damp, smoke or pet smells", note: "Smells point to moisture, mold or odors that are hard to remove." },
+      { id: "v-basement", text: "Basement or crawlspace: damp walls, water lines, white residue, a sump pump", when: notCondo },
+      { id: "v-cracks", text: "Cracks in walls or the foundation, sloping floors, doors that stick", note: "Wide, stair-step or horizontal cracks are worth an inspector's opinion.", when: notCondo },
+      { id: "v-roof", text: "Roof from the street: missing or curling shingles, sagging, overflowing gutters", when: notCondo },
+      { id: "v-common", text: "Hallways, stairs and other common areas: signs of upkeep or neglect", note: "Neglected common areas can mean low HOA reserves.", when: (p) => p.propertyType === "condo" },
+      { id: "v-taps", text: "Run the shower and kitchen tap: water pressure, how long hot water takes, leaks below" },
+      { id: "v-panel", text: "Electrical panel and outlets: scorch marks, two-prong outlets, flickering lights" },
+      { id: "v-hvac", text: "Turn on the heat and the air conditioning; look for the manufacture date on the unit's label" },
+      { id: "v-windows", text: "Open a few windows and doors: do they move, latch and seal, with no fogged glass?" },
+      { id: "v-grading", text: "Outside: ground sloping away from the house, drainage, trees over the roof", short: "Ground slope and drainage outside", when: notCondo },
+      { id: "v-oldwiring", text: "Old wiring or pipes: two-prong outlets, knob-and-tube, galvanized or lead pipes", when: oldHome, src: "leadWater" },
+      { id: "v-paint", text: "Peeling or chipping paint (built before 1978, it may contain lead)", when: pre1978OrUnsure, src: "lead" },
+      { id: "v-pb", text: "Gray plastic supply pipes under sinks (polybutylene, common from about 1978 to 1995)", when: (p) => p.era === "1978-1999" },
+      { id: "v-freeze", text: "Pipes in exterior walls, the garage or crawlspace, and how they are insulated", when: (p) => p.freeze && notCondo(p), src: "winter" },
+      { id: "v-wildfire", text: "Dry brush or wood piles against the house; vents and roofing that resist embers", when: (p) => p.wildfire && notCondo(p), src: "wildfire" },
+      { id: "v-quake", text: "Water heater strapped to the wall", when: (p) => p.earthquake, src: "earthquake" },
+    ],
+  },
+];
+
 // ---- Readable conditions (for the server-rendered full list on each page) ------------------------
 // Mirrors each `when` rule above in words. Keep in step when a rule changes.
 export const ONLY: Record<string, string> = {
@@ -1560,8 +1635,28 @@ export const ONLY: Record<string, string> = {
   "mv-state-tax": "To another state",
   "mv-doctors": "Long-distance",
   "mv-vet": "Moving with a pet, long-distance",
-  "mv-deposit": "Renting now"
-  };
+  "mv-deposit": "Renting now",
+  "v-ages": "House or townhouse",
+  "v-ages-condo": "Condo",
+  "v-water": "House or townhouse",
+  "v-water-condo": "Condo",
+  "v-hoa": "Condo or townhouse",
+  "v-lead": "Built before 1978 (or not sure)",
+  "v-utilities": "House",
+  "v-storm": "Hurricane-prone coast, not a condo",
+  "v-insure": "Hurricane-prone coast or wildfire area",
+  "v-basement": "House or townhouse",
+  "v-cracks": "House or townhouse",
+  "v-roof": "House or townhouse",
+  "v-common": "Condo",
+  "v-grading": "House or townhouse",
+  "v-oldwiring": "Built before 1978",
+  "v-paint": "Built before 1978 (or not sure)",
+  "v-pb": "Built 1978 to 1999",
+  "v-freeze": "Freezing winters, not a condo",
+  "v-wildfire": "Wildfire area, not a condo",
+  "v-quake": "Earthquake area",
+};
 export const SECTION_ONLY: Record<string, string> = {"loan": "Buying with a mortgage", "structure": "Not a condo", "exterior": "Not a condo", "attic": "Not a condo", "condo": "Condo", "repairs": "Seller agreed to repairs", "new": "New Construction", "bedroom": "Unfurnished", "living": "Unfurnished", "pet": "Bringing a pet"};
 
 // ---- Registry --------------------------------------------------------------------------------------
@@ -1573,6 +1668,7 @@ export const SECTIONS: Partial<Record<ChecklistId, Section[]>> = {
   "home-inspection": HOME_INSPECTION,
   "final-walkthrough": FINAL_WALKTHROUGH,
   moving: MOVING,
+  "house-viewing": HOUSE_VIEWING,
 };
 
 /** Apply the rules: returns only sections/items whose conditions match. */
