@@ -31,6 +31,13 @@ For estimates, disclose the basis and plausible range; test sensitivity. If the 
 
 **Presentation follows the finding.** Preserve useful calculator ideas: choose an interactive tool when reader-adjustable inputs change the answer, a table for finite cases, and prose for a simple finding. Reuse existing tools/components where they fit. Keep the key answer, examples and limitations readable on the page without requiring interaction. A calculator is optional; a useful answer is not.
 
+**Choose useful visual evidence inside Phase 3, after the analysis and before writing.** Select the smallest useful format from:
+- **SVG chart:** a scalable comparison of calculated/measured values, thresholds or scenarios, generated from the same inputs and outputs as the finding.
+- **Actual screenshot:** a genuine capture of a product task, tool output or result we executed or observed. Use it when seeing the result helps verify or understand the finding.
+- **Interactive animation:** a visual that changes as readers adjust inputs or step through a scenario. Use it when changing an assumption explains the result; integrate into an existing calculator where appropriate.
+
+Choose more than one only when each adds something distinct; skip visuals that add no value. Place each beside the finding it supports and label modeled results as modeling and observed product results as testing. Do not publish redundant calculator screenshots by default. No videos in this workflow. Phase 4 checks the visual against its source data, evidence wording, accessibility and mobile readability; existing testing/medical exclusions remain in force.
+
 ## 3. Save a small evidence packet and hand it to the writer
 
 Use the calling routine's existing run directory: `evidence/<slug>/`. Save:
