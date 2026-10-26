@@ -1,0 +1,53 @@
+{
+  "title": "Landlord Checklist: What to Do Before Renting",
+  "metaDescription": "Build a customized, printable landlord checklist for your rental property. Filter by property type, build era, and state rules to prepare for your new tenant.",
+  "h1": "Landlord Checklist",
+  "introText": "Before your first tenant moves in, you need to insure and register the property, make it safe and legally rentable, price the home, screen applicants under fair housing rules, collect a security deposit that meets state limits, and document the home's condition. The tool above adds the exact items your property type, build era, and state require.\n\nTo use this landlord checklist, pick your property type, construction era, rental format, and management style above. Selecting your state pre-sets local climate conditions like freezing winters or coastal wind, which you can adjust for your town. The tool immediately drops tasks that do not apply to your rental and updates your item counter. Click Print or save as PDF to create a clean physical worksheet with space for your name, date, and property address.",
+  "toolHeading": "Your Landlord Checklist",
+  "toolSubheading": "Answer a few questions to build a printable rental property checklist for your home.",
+  "howItWorks": "Setting up your rental property correctly protects your investment before you create a listing. A standard homeowners policy may not cover a home leased to tenants, so you need to contact your insurer about specialized landlord insurance. If you have an active mortgage, review your loan documents to confirm the property satisfies your lender's occupancy terms. Condominium and townhouse owners must review home owners association (HOA) bylaws for rental caps and tenant registration rules, while many municipalities require a local rental license or safety registration. You will also want a dedicated record-keeping system for income, operating expenses, and asset cost basis to prepare for filing under [IRS Publication 527](https://www.irs.gov/publications/p527) and modeling your tax basis with our [depreciation calculator](/real-estate/depreciation-calculator/) and [rental property tax deductions guide](/guides/rental-property-tax-deductions/).\n\nSafety rules establish the baseline conditions every rental property must satisfy before occupancy. Follow National Fire Protection Association guidance by installing smoke alarms inside every bedroom, outside each separate sleeping area, and on every habitable level of the building. You must test these alarms monthly and replace every smoke alarm unit every 10 years. Under Consumer Product Safety Commission guidelines, install carbon monoxide alarms on each level of the home and outside sleeping quarters. Federal law sets specific duties for older buildings. If your residential building dates from before 1978, the [EPA real estate disclosure rule](https://www.epa.gov/lead/real-estate-disclosure) requires you to disclose known lead-based paint hazards, supply records, hand tenants the official EPA lead pamphlet, and grant buyers a 10-day testing window unless waived.\n\nPricing your rental property demands an objective look at local market figures and your ongoing holding costs. Estimate your expected cash flow, operating outlays, and net yield by running your numbers through our [rental income calculator](/real-estate/rental-income-calculator/). \n\nTenant screening must follow objective, uniform standards to comply with federal consumer reporting and civil rights legislation. The [Fair Housing Act overview from HUD](https://www.hud.gov/program_offices/fair_housing_equal_opp/fair_housing_act_overview) prohibits housing discrimination based on race, color, national origin, religion, sex, familial status, or disability. Under these civil rights rules, assistance animals are a disability accommodation rather than regular pets, so standard pet prohibitions or surcharges cannot apply to them. When evaluating tenant-screening reports, landlords must comply with the Fair Credit Reporting Act enforced by the Federal Trade Commission. The [FTC guidance for landlords](https://www.ftc.gov/business-guidance/resources/using-consumer-reports-what-landlords-need-know) states that if a screening report causes you to deny an applicant, demand a co-signer, or raise the rent or deposit, you must send a written adverse action notice naming the consumer reporting agency. The notice lets the applicant claim a free copy of the file and dispute errors, and you must securely dispose of all screening reports when finished.\n\nYour lease agreement and deposit handling must mirror state and municipal statutory standards. Deposit caps, permitted deductions, holding account criteria, and tenant return deadlines are set by state law and differ across jurisdictions. Check the [HUD tenant rights and state laws directory](https://www.hud.gov/topics/rental_assistance/tenantrights) to identify your local statutory limits. Complete a physical walk-through on move-in day to record existing conditions, test fixtures, and document cosmetic flaws alongside your renter using our [move-in move-out checklist](/checklists/move-in-move-out-checklist/). Some state statutes require landlords to give renters a written condition checklist before accepting a deposit.\n\nTake the time to answer the tool's questions, print your customized worksheet, and finish the initial setup and safety tasks before you publish your listing. Make sure you confirm your jurisdiction's deposit limits and entry notice rules through the [HUD tenant rights directory](https://www.hud.gov/topics/rental_assistance/tenantrights) or your state agency, and consult a qualified attorney for legal entity planning and customized lease agreements.",
+  "workedExample": "In our internal comparison, we ran the checklist's rules for two example homes to evaluate how property characteristics change the workload. Scenario A evaluated a condominium built after 2000 in Austin, Texas, managed directly by the owner on a long-term lease. The Texas presets activated freezing winter and hurricane coast conditions. The tool retained 34 of the 45 library items for this property, including HOA rental rules and storm planning, and no gutter-cleaning item.\n\nScenario B evaluated a single-family home built in 1960 in Buffalo, New York, self-managed and rented as a furnished rental. The New York preset enabled freezing winter conditions. The tool retained 37 of the 45 library items. It added local rules and taxes for short stays, an inventory of furnishings, the lead-paint disclosure, gutter maintenance, the utilities and maintenance split, and pre-freeze winterizing.",
+  "commonMistakes": [
+    "Relying on an existing homeowners insurance policy instead of obtaining dedicated landlord insurance for a leased property.",
+    "Failing to hand tenants the EPA lead-hazard pamphlet and disclosure forms for residential housing built before 1978.",
+    "Treating an assistance animal as an ordinary household pet or charging a tenant pet fees for a disability accommodation.",
+    "Rejecting a tenant application based on a background check without providing the required FTC adverse action notice.",
+    "Assuming security deposit caps and return deadlines are standard everywhere rather than verifying your specific state limits.",
+    "Skipping the initial move-in condition walk-through that documents preexisting wear before handing over property keys."
+  ],
+  "faqs": [
+    {
+      "question": "Is there a checklist for landlords?",
+      "answer": "Yes. This interactive landlord checklist customizes 45 potential tasks based on your building type, build year, rental term, and local weather risks. You can complete items on screen or print a worksheet for your property."
+    },
+    {
+      "question": "How do I become a landlord for the first time?",
+      "answer": "Start by confirming your mortgage terms and converting your insurance to a landlord policy. Inspect safety alarms, satisfy federal lead disclosures for pre-1978 homes, and establish written screening criteria before marketing your rental."
+    },
+    {
+      "question": "What background check do landlords use?",
+      "answer": "Landlords evaluate applicants using tenant-screening reports. These reports are consumer reports under the Fair Credit Reporting Act. If you reject an applicant or alter lease terms because of a report, federal law requires you to supply an adverse action notice naming the screening agency."
+    },
+    {
+      "question": "What does a landlord have to disclose?",
+      "answer": "Federal law requires landlords renting residential property built before 1978 to disclose known lead-based paint hazards and provide the official EPA pamphlet. Other disclosures depend on state and city rules."
+    },
+    {
+      "question": "How much security deposit can a landlord charge?",
+      "answer": "Security deposit limits are established by individual state and municipal laws rather than a federal standard. You must check your state rules via the [HUD tenant rights directory](https://www.hud.gov/topics/rental_assistance/tenantrights) to confirm your limit."
+    },
+    {
+      "question": "Do I need landlord insurance?",
+      "answer": "Yes. A standard homeowners policy generally excludes coverage for properties leased out to paying tenants. Ask your insurer about landlord insurance, and require tenants to carry renters insurance."
+    },
+    {
+      "question": "What changes for a furnished or short-term rental?",
+      "answer": "Furnished and short-term rentals require keeping a complete inventory of furniture and household goods provided to guests. You must also account for local rules and taxes for short stays, and lease terms governing the utilities and maintenance split."
+    },
+    {
+      "question": "Can I print this landlord checklist?",
+      "answer": "Yes. Click the Print or save as PDF button above the checklist to generate a clean worksheet containing your filtered tasks. The printed sheet includes Name, Date, and Property address lines, and saves locally without requiring an account."
+    }
+  ],
+  "slug": "landlord-checklist"
+}

@@ -1,0 +1,431 @@
+{
+ "slug": "renting-checklist",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1346,
+ "floor": 900,
+ "input_tokens": 20599,
+ "output_tokens": 2115,
+ "thinking_tokens": 971,
+ "cached_tokens": 17831,
+ "est_cost_usd": 0.015,
+ "guards": {
+  "repairs": [
+   "slug None -> 'renting-checklist'"
+  ],
+  "flags": [
+   "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Section one covers steps before you apply: setting your rent limit, confirming t'; 'Section six handles move-in day, linking directly to our [move-in condition chec'; 'On a hurricane-prone coast, the list adds asking who puts up storm shutters and,'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1306,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 620,
+   "floor": 900,
+   "ratio": 0.69,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    24,
+    10,
+    0
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "Inspecting these four areas early keeps unexpected bills and repair arguments from disrupting your tenancy.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state unexpected bills or repair arguments."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Section three lists questions to ask the landlord about utilities and renewal policies.",
+     "replacement": "Section three lists questions to ask the landlord about utilities and maintenance responsibilities.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention renewal policies."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Run faucets to check water flow, flip light switches, and open kitchen cabinets to look for rodent or insect droppings.",
+     "replacement": "Check the unit itself for overall condition, pests, water, noise, and safety.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention light switches or opening kitchen cabinets."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Examine windows for drafts and test deadbolts on all entry doors. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention drafts or deadbolts."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Ask who responds to emergency repairs on weekends, how packages are delivered, and where guest parking sits.",
+     "replacement": "Ask questions about repair responsibilities, package handling, and parking.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention weekend emergency repairs or guest parking."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Review the written agreement for late fees, subletting rules, and early termination penalties.",
+     "replacement": "Review the written agreement for fees, repair obligations, and break-lease terms.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention late fees or subletting rules."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "A house inspection checklist demands attention to yard care, gutter cleaning, trash can placement, and lawn watering duties.",
+     "replacement": "A house inspection checklist demands attention to yard, utility, and maintenance duties.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention gutter cleaning, trash can placement, or lawn watering."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "You must identify who pays for seasonal pest control, tree trimming, and furnace filter replacements.",
+     "replacement": "You must identify who pays for lawn care, snow, pests, and filters.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention tree trimming."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "An apartment focuses on shared laundry access, building quiet hours, elevator fees, and management responsiveness.",
+     "replacement": "An apartment focuses on management-company reviews, building noise, trash, and package handling.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention shared laundry access, quiet hours, or elevator fees."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Renting a single room adds kitchen sharing rules, shared utility splits, and bathroom guest schedules. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not list rules or schedules for renting a room."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Landlords may promise new carpet or free parking during a walk-through, but only signed lease clauses hold legal weight.",
+     "replacement": "Get every promise in writing, as verbal promises made during a walk-through are not binding.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention promising new carpet or free parking."
+    },
+    {
+     "id": "workedExample",
+     "quote": "The tool kept 37 of the 53 items, focusing on management reviews, building security, trash disposal, package rooms, and local storm evacuation zones while removing frozen-pipe tasks.",
+     "replacement": "The tool kept 37 of the 53 items, including management-company reviews, building noise, trash and package handling, and knowing your evacuation zone, and no frozen-pipe question.",
+     "type": "unsupported",
+     "why": "SOURCE states building noise, not building security."
+    },
+    {
+     "id": "workedExample",
+     "quote": "It added lawn care duties, snow removal rules, gutter clearing, water shutoff identification, pet deposits, wildfire escape paths, and the federal lead-paint disclosure form required for pre-1978 residential buildings.",
+     "replacement": "It added yard, garage and maintenance duties, who pays for lawn care, snow, pests and filters, the winter heat setting and who pays if a pipe freezes, pet deposit and pet addendum terms, the lead-paint disclosure, putting utilities in your name, finding the water shutoff, and learning two ways out of the neighborhood.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention gutter clearing."
+    },
+    {
+     "id": "commonMistakes[2]",
+     "quote": "Failing to ask who pays for water, sewer, trash, lawn mowing, and snow clearing at a detached rental house.",
+     "replacement": "Failing to ask who pays for utilities, lawn care, snow removal, and pests at a rental house.",
+     "type": "unsupported",
+     "why": "SOURCE does not list sewer."
+    },
+    {
+     "id": "commonMistakes[3]",
+     "quote": "Skipping a physical test of plumbing fixtures, electrical outlets, window locks, and heating systems during the visit.",
+     "replacement": "Skipping a physical inspection of plumbing, heating, and unit safety during the visit.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention testing electrical outlets."
+    },
+    {
+     "id": "commonMistakes[5]",
+     "quote": "Neglecting to document pre-existing wall dents, floor scratches, or broken fixtures on move-in day with dated photos.",
+     "replacement": "Neglecting to document baseline property damage on a move-in condition checklist.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention wall dents, floor scratches, or dated photos."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Clarify who handles lawn care, gutter cleaning, snow removal, and seasonal pest control before applying.",
+     "replacement": "Clarify who handles lawn care, snow removal, and seasonal pest control before applying.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention gutter cleaning."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Bring a written checklist, a phone camera to record existing wear, and a measuring tape for doorways.",
+     "replacement": "Bring a printed checklist to use as a worksheet on the tour.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention a phone camera or measuring tape."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Test water pressure, light switches, deadbolts, and cellphone reception inside every room.",
+     "replacement": "Check the unit itself for overall condition, pests, water, noise, and safety.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention testing light switches, deadbolts, or cellphone reception."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Ask which utilities are included in the base rent and how maintenance requests are handled after business hours.",
+     "replacement": "Ask which utilities are included in the rent and who handles maintenance duties.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention maintenance handling after business hours."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Inquire about parking rules, guest policies, pet fees, and typical lease renewal terms.",
+     "replacement": "Inquire about parking, pet deposit and addendum terms, fees, and break-lease terms.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention guest policies or lease renewal terms."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "For a house, ask specifically who pays for lawn watering, tree trimming, and furnace filter replacements.",
+     "replacement": "For a house, ask specifically who pays for lawn care, snow removal, pests, and filters.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention lawn watering or tree trimming."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Research the property address online to verify that duplicate listings do not exist with different contact names.",
+     "replacement": "Search the address online for duplicate listings and confirm the listing on the company's own site.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention verifying different contact names."
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "A house also requires paying individual bills for water, sewer, and trash that multi-family buildings often bundle.",
+     "replacement": "A house also adds utility duties and putting utilities in your name.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention sewer or utility bundling by multi-family buildings."
+    },
+    {
+     "id": "introText",
+     "quote": "A whole house adds yard upkeep, utility setup, and exterior care that an apartment building handles through management.",
+     "replacement": "A whole house adds yard, utility, and maintenance duties an apartment usually does not.",
+     "type": "unsupported",
+     "why": "SOURCE does not state exterior care or that apartment buildings handle it through management."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Section two provides an apartment tour checklist to inspect physical conditions like water pressure, window locks, and active signs of pests.",
+     "replacement": "Section two provides an apartment tour checklist to inspect physical conditions like water, active signs of pests, noise, and safety.",
+     "type": "unsupported",
+     "why": "SOURCE does not list water pressure or window locks for the tour."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "If this is your first time setting up a lease, review our [first apartment checklist](/checklists/first-apartment-checklist/) to plan essential furniture and household supplies.",
+     "replacement": "If this is your first time setting up a lease, review our [first apartment checklist](/checklists/first-apartment-checklist/).",
+     "type": "unsupported",
+     "why": "SOURCE does not state the checklist plans furniture or household supplies."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Get every promise in writing, as verbal promises made during a walk-through are not binding.",
+     "replacement": "Get every promise in writing.",
+     "type": "inference",
+     "why": "SOURCE does not state that verbal promises are legally non-binding."
+    },
+    {
+     "id": "workedExample",
+     "quote": "Scenario A evaluated a modern apartment in a large complex built after 2000 in Miami, Florida, with the hurricane coast switch active.",
+     "replacement": "Scenario A evaluated an apartment in a large complex built after 2000 in Miami, Florida, with the hurricane coast switch active.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the apartment as modern."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Inspect the structural condition, plumbing fixtures, roof, window locks, and heating equipment across the property.",
+     "replacement": "Inspect the unit itself for overall condition, pests, water, noise, and safety.",
+     "type": "unsupported",
+     "why": "SOURCE does not list structural condition, plumbing fixtures, or window locks."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Prepare your proof of income, government identification, and personal references for the leasing office.",
+     "replacement": "Prepare your photo ID, recent pay stubs or offer letter, and landlord references.",
+     "type": "unsupported",
+     "why": "SOURCE specifies landlord references, not personal references or a leasing office."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Landlords typically require government-issued photo identification, recent pay stubs or an employment offer letter, and previous landlord contact references.",
+     "replacement": "You need photo ID, recent pay stubs or an offer letter, and landlord references.",
+     "type": "unsupported",
+     "why": "SOURCE does not state what landlords typically require."
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "A house places exterior upkeep, yard maintenance, and outdoor utility management directly onto the tenant.",
+     "replacement": "A house adds yard, utility, and maintenance duties an apartment usually does not.",
+     "type": "unsupported",
+     "why": "SOURCE says a house adds yard, utility, and maintenance duties."
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "Apartments usually include exterior landscaping, trash pickup, and building maintenance within common management duties.",
+     "replacement": "An apartment focuses on building noise, trash, and package handling.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention exterior landscaping or building maintenance duties."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 1428
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-26T00:52:10-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-25/audit/renting-checklist.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "The rental checklist above adapts",
+      "replacement": "The rental checklist below adapts",
+      "type": "introText is above the tool",
+      "why": "Intro is above tool"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Section one covers steps to take before you apply, including checking your credit and confirming local market rents.",
+      "replacement": "Section one covers steps before you apply: setting your rent limit, confirming the listing is real, checking the landlord or management company, and the flood map.",
+      "type": "section 1 has neither item",
+      "why": "Unsupported topics in section 1"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Section four outlines key lease clauses to review",
+      "replacement": "Section four lists the lease clauses to read",
+      "type": "filler",
+      "why": "Wordy filler phrasing"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Freezing winter climates require checking insulation on exposed pipes in unheated spaces and locating the main water shutoff valve.",
+      "replacement": "With Winters reach freezing on, a house or small-landlord rental adds a question about the required winter heat setting and who pays if a pipe freezes, and move-in adds finding the water shutoff.",
+      "type": "tool adds heat setting and shutoff, not insulation",
+      "why": "Insulation not in tool"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Coastal regions require checking storm shutter hardware, roof condition, and evacuation zones.",
+      "replacement": "On a hurricane-prone coast, the list adds asking who puts up storm shutters and, at move-in, knowing your evacuation zone.",
+      "type": "no roof item; shutters are a question",
+      "why": "Roof item unsupported; shutters question"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "since standard renters insurance policies exclude flood damage.",
+      "replacement": "since standard renters policies generally do not cover flood damage.",
+      "type": "fact list says generally do not cover",
+      "why": "Fact list nuance mismatch"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Take this checklist on every tour, print a fresh copy for each property, and demand every verbal agreement in written lease text. Get every promise in writing. Remember that state and municipal statutes dictate security-deposit limits and entry notices, so check your state rules before submitting payment.",
+      "replacement": "Take a fresh printed copy on every tour and get every verbal promise written into the lease. State and city law sets deposit limits and entry notice, so check your state on the [HUD tenant rights page](https://www.hud.gov/topics/rental_assistance/tenantrights) before you pay anything.",
+      "type": "repetition; unlinked directive",
+      "why": "Repetitive phrasing and unlinked directive"
+     },
+     {
+      "id": "workedExample",
+      "quote": "It added yard, garage and maintenance duties, who pays for lawn care, snow, pests and filters, the winter heat setting and who pays if a pipe freezes, pet deposit and pet addendum terms, the lead-paint disclosure, putting utilities in your name, finding the water shutoff, and learning two ways out of the neighborhood.",
+      "replacement": "It added yard, garage and maintenance duties, plus who pays for lawn care, snow, pests and filters. It also added the winter heat-setting question, pet deposit and addendum terms, and the lead-paint disclosure. Move-in gained putting utilities in your name, finding the water shutoff and learning two ways out of the neighborhood.",
+      "type": "one 53-word sentence",
+      "why": "Sentence length exceeds readability guidelines"
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Pressure to pay upfront funds before inspecting the unit in person indicates an active rental scam.",
+      "replacement": "The FTC lists pressure to pay before you see the unit as a warning sign of a rental scam.",
+      "type": "overstated",
+      "why": "Overstates scam indicator"
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "Federal rules also require landlords to provide a lead-based paint disclosure pamphlet for homes built before 1978.",
+      "replacement": "For homes built before 1978, federal rules require the landlord to disclose known lead-based paint and give you the EPA pamphlet.",
+      "type": "merges disclosure and pamphlet",
+      "why": "Distorts disclosure vs pamphlet requirement"
+     },
+     {
+      "id": "faqs[6].answer",
+      "quote": "A house also adds utility duties and putting utilities in your name.",
+      "replacement": "A house also adds putting the utilities in your name and finding the water shutoff.",
+      "type": "repeats",
+      "why": "Repeats utility duties"
+     },
+     {
+      "id": "faqs[7].answer",
+      "quote": "The system formats a clean paper checklist",
+      "replacement": "The Print or save as PDF button formats a clean paper checklist",
+      "type": "vague subject",
+      "why": "Vague system subject"
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      3
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "howItWorks",
+       "quote": "Section one covers steps before you apply: setting your rent limit, confirming the listing is real, checking the landlord or management company, and the flood map.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Section six handles move-in day, linking directly to our [move-in condition checklist](/checklists/move-in-move-out-checklist/) so you can document baseline damage.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "On a hurricane-prone coast, the list adds asking who puts up storm shutters and, at move-in, knowing your evacuation zone.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1346,
+    "flags": [
+     "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Section one covers steps before you apply: setting your rent limit, confirming t'; 'Section six handles move-in day, linking directly to our [move-in condition chec'; 'On a hurricane-prone coast, the list adds asking who puts up storm shutters and,'"
+    ]
+   }
+  ]
+ },
+ "seconds": 385.8,
+ "response_id": "GN_eaqviIfq-xdIPrrfIWQ",
+ "generated_at": "2026-10-26T00:09:44-0500"
+}

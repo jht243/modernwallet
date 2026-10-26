@@ -1,0 +1,52 @@
+{
+  "title": "Home Inspection Checklist: What Inspectors Look For",
+  "metaDescription": "Create a customized, printable home inspection checklist based on your home's age, foundation, and climate. Track red flags and prepare for negotiations.",
+  "h1": "Home Inspection Checklist",
+  "introText": "A home inspector examines a property system by system across the roof, structure, foundation, drainage, electrical work, plumbing, heating and cooling, attic, and interior spaces. Which items carry the most weight depends on the age of the structure, the foundation type, and local weather patterns. Our tool builds a customized list for your property and highlights specific red flag conditions to help you make sense of the findings.\n\nTo use the tool above, select your property type, construction era, foundation setup, and utilities such as private wells or septic tanks. The tool drops checks that do not apply to your home and adds targeted verifications for your regional climate risks. You can check off items as you walk the property and use the Print or save as PDF button to generate a clean paper worksheet.",
+  "toolHeading": "Build your home inspection checklist",
+  "toolSubheading": "Select your property details to generate a customized inspection list.",
+  "howItWorks": "A visual examination covers each primary system of the house from the ground up. The inspector evaluates the roof, structure, foundation, water and drainage, electrical systems, plumbing, heating and cooling, attic, insulation, interior, exterior, and grading. During this review, certain conditions serve as immediate warning signs. Horizontal or wide foundation cracks serve as red flag conditions. Active roof leaks are another major red flag. Soil sloping toward the house is also flagged as a warning condition.\n\nStandard inspections follow defined professional guidelines, such as the [ASHI standards of practice](https://www.homeinspector.org/standards-of-practice), which intentionally exclude specialized items. The [EPA radon guidance](https://www.epa.gov/radon) recommends testing all homes below the third floor for radon. Buyers must arrange separate add-on inspections for radon, mold, wood-destroying insects, and swimming pools. Sewer-line camera inspections, septic tank evaluations, and well water testing also require independent specialists. You can track these extra evaluations alongside your broader purchase timeline using our [home buying checklist](/checklists/home-buying-checklist/).\n\nThe construction date of a home introduces distinct hazards that call for era-specific checks. For houses built before 1978, sellers must comply with the [EPA real estate disclosure rules](https://www.epa.gov/lead/real-estate-disclosure) by disclosing known lead-based paint, providing an informational pamphlet, and granting a 10-day window to test. Polybutylene water supply pipes were common in homes built from about 1978 to 1995. CPSC guidance notes aluminum branch wiring was used in some homes built from the mid-1960s to the mid-1970s. Homes built before 1950 frequently contain knob-and-tube electrical wiring. Plumbing installed before 1986 may include lead pipes or lead solder, while older insulation, flooring tiles, and duct wrap may harbor asbestos fibers that should remain undisturbed.\n\nFoundation design and property ownership structure shift the focus of the walk-through. For condominiums, the checklist hides the roof, exterior, structure, foundation, attic, and insulation sections while adding condo-specific checks.\n\nRegional climate switches adapt the checklist to local environmental stresses. In cold climates where winters reach freezing, inspectors check pipe insulation in unheated spaces, verify the main water shutoff valve, and test the heating system. Coastal properties in hurricane zones require checks on roof decking attachments, impact-rated shutters or windows, and review of separate windstorm deductibles. Wildfire zones call for defensible space clearing around the perimeter, ember-resistant attic vents, and fire-resistant roofing materials. Earthquake zones require water heater strapping and foundation anchor bolting on older framing. Homeowners can prepare these items before listing a property by reviewing our [home selling checklist](/checklists/home-selling-checklist/).\n\nPlan to attend the inspection in person and bring your printed checklist to record notes as the inspector works. When the written report arrives, sort the defects into three distinct groups: immediate safety hazards, failing major mechanical systems, and cosmetic flaws. Gather repair estimates from licensed trade contractors for the serious structural and mechanical defects. Use those concrete contractor quotes to negotiate repair credits or price adjustments before your contractual inspection contingency expires. After agreements are settled, verify that every negotiated repair was completed properly by following our [final walkthrough checklist](/checklists/final-walkthrough-checklist/).",
+  "workedExample": "In our internal comparison, we ran the checklist's rules for two example homes to evaluate how the list adapts across property types and eras. The complete library contains 62 total inspection items across all structural, mechanical, environmental, and climate categories.\n\nScenario A evaluated a slab-foundation single-family house built after 2000 in Phoenix, Arizona, with the regional presets for freezing winters and wildfire exposure active. The rules kept 43 of the 62 items. Scenario B evaluated a home built before 1950 with a full basement in Boston, Massachusetts, with freezing winter conditions active. The rules kept 48 of the 62 items. This scenario added checks for knob-and-tube wiring, galvanized supply lines, lead solder, suspect asbestos insulation, peeling lead-era paint, and a sewer-line camera scope.",
+  "commonMistakes": [
+    "Assuming a standard home inspection covers radon, sewer pipes, or pest damage without scheduling specialized add-on services.",
+    "Skipping the in-person inspection walk-through instead of walking the property directly with the inspector to ask questions.",
+    "Treating minor cosmetic wear, such as scuffed baseboards or chipped trim paint, as leverage for major contractual price negotiations.",
+    "Failing to get written repair estimates from licensed contractors before the contractual contingency deadline expires.",
+    "Neglecting to confirm that all agreed repairs were completed satisfactorily before signing closing documents."
+  ],
+  "faqs": [
+    {
+      "question": "What things do they look for in a home inspection?",
+      "answer": "An inspector examines the primary structural components and operating systems throughout the property. This review includes the roof covering, foundation walls, surface drainage, electrical panels, plumbing fixtures, heating units, cooling equipment, attic insulation, and interior living areas. The tool lists these items for your home and flags findings that are red flags."
+    },
+    {
+      "question": "What's the worst thing a home inspector can find?",
+      "answer": "The most serious defects involve structural instability, active water intrusion, and severe safety hazards. Major problems include horizontal or wide foundation cracks, active roof leaks, water intrusion, and unsafe wiring such as knob-and-tube or aluminum branch wiring."
+    },
+    {
+      "question": "What is not included in a standard home inspection?",
+      "answer": "Standard home inspection standards of practice exclude many specialized items. Routine contracts do not include radon testing, sewer line camera scopes, mold air sampling, wood-destroying insect evaluations, swimming pool equipment checks, private wells, or septic tanks. You must contract separate specialist evaluations for these components."
+    },
+    {
+      "question": "Should I go to the home inspection?",
+      "answer": "Yes, you should attend the inspection in person and bring your printed checklist. Bring the printed list to record notes as the inspector works. After the report arrives, sort findings into safety, major systems, and cosmetic defects before negotiating."
+    },
+    {
+      "question": "Do I need a radon test?",
+      "answer": "The EPA recommends radon testing for all residential homes located below the third floor. Because standard inspections do not evaluate radon concentrations, you must request a specialized radon test."
+    },
+    {
+      "question": "What extra checks does an older house need?",
+      "answer": "Older properties require targeted evaluations for obsolete materials and past construction practices. Homes built before 1978 require lead-based paint disclosures, while properties built before 1950 frequently feature knob-and-tube wiring. Inspectors also check for pre-1986 lead solder or pipes, mid-century aluminum wiring, suspect asbestos insulation, and aging sewer lines that require camera inspection."
+    },
+    {
+      "question": "How do I use the inspection report to negotiate?",
+      "answer": "Review the final written report and separate urgent safety issues and major mechanical failures from routine cosmetic flaws. Contact licensed tradespeople to obtain formal written repair estimates for the significant defects. Submit these documented repair costs to the seller to request price reductions or closing credits before your contingency deadline lapses."
+    },
+    {
+      "question": "Can I print this home inspection checklist?",
+      "answer": "Yes, the tool includes a dedicated print feature. Click the Print or save as PDF button to produce a clean paper worksheet complete with property address, name, and date fields. You can take the printed sheet to your walk-through or save the customized file directly to your device as a PDF."
+    }
+  ],
+  "slug": "home-inspection-checklist"
+}

@@ -1,0 +1,148 @@
+{
+ "slug": "final-walkthrough-checklist",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1437,
+ "floor": 900,
+ "input_tokens": 19979,
+ "output_tokens": 2094,
+ "thinking_tokens": 2957,
+ "cached_tokens": 17831,
+ "est_cost_usd": 0.0219,
+ "guards": {
+  "repairs": [
+   "slug None -> 'final-walkthrough-checklist'"
+  ],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1460,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 256,
+   "floor": 900,
+   "ratio": 0.28,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    1
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "You should bring copies of all signed repair amendments, paid contractor invoices, formal receipts, and any necessary municipal building permits.",
+     "replacement": "You should bring copies of all signed repair amendments, paid contractor invoices, and formal receipts.",
+     "type": "unsupported",
+     "why": "SOURCE does not list municipal building permits."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Confirm that the local municipality has issued an official certificate of occupancy, which legally certifies that the home complies with building codes and is safe to inhabit.",
+     "replacement": "Confirm that the local municipality has issued an official certificate of occupancy.",
+     "type": "unsupported",
+     "why": "SOURCE does not state building code compliance or legal certification to inhabit."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Collect copies of all builder warranties covering materials, structural elements, and workmanship.",
+     "replacement": "Collect copies of all builder warranties.",
+     "type": "unsupported",
+     "why": "SOURCE does not list coverage for materials, structural elements, or workmanship."
+    },
+    {
+     "id": "workedExample",
+     "quote": "The tool dropped the previous seller cleanout checks and repair invoices, replacing them with specific new-construction requirements such as the builder punch list, municipal certificate of occupancy, structural warranty documentation, final foundation grading, and utility meter verifications.",
+     "replacement": "The tool dropped the previous seller cleanout checks and repair invoices, replacing them with specific new-construction requirements such as the builder punch list, municipal certificate of occupancy, builder warranty, final foundation grading, and utility meter verifications.",
+     "type": "unsupported",
+     "why": "SOURCE lists builder warranty, not structural warranty documentation."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "During the initial home inspection, a licensed professional evaluated the structural and mechanical condition of the property. You can review our [home inspection checklist](/checklists/home-inspection-checklist/) to see how those earlier technical evaluations work.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state a licensed professional evaluated structural and mechanical condition."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1519
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-26T00:53:58-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-25/audit/final-walkthrough-checklist.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "You verify that all agreed repairs are complete with proper receipts, all fixtures and personal property included in the purchase agreement remain in place, no new structural or cosmetic damage has occurred, and every major mechanical system and home appliance operates as expected.",
+      "replacement": "You check that agreed repairs are done with receipts and that included fixtures are still there. You also check for new damage and test every major system and appliance.",
+      "type": "43-word run-on",
+      "why": "Shortens run-on sentence for readability while preserving meaning supported by source."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Verify that the contractor specified in your contract performed the work and that all agreed scopes of work match the written invoices.",
+      "replacement": "Collect the receipts, permits and any transferable warranties for the repair work.",
+      "type": "not in tool or fact list",
+      "why": "Removes contractor check claim not present in closed fact list."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "The final walkthrough typically takes place shortly before your formal closing.",
+      "replacement": "Your purchase agreement sets the timing, and the agents schedule the visit.",
+      "type": "row forbids stating timing",
+      "why": "Removes timing statement prohibited by row prompt rules."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "If you skip this inspection and sign closing papers, you absorb financial responsibility for any unaddressed damage, missing property, or non-functioning equipment.",
+      "replacement": "If you skip it, you sign closing papers without checking that repairs were finished, included items stayed, and nothing new was damaged.",
+      "type": "legal conclusion not on fact list",
+      "why": "Removes unauthorized legal conclusion about financial responsibility."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 1437,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 217.7,
+ "response_id": "duHeat2pCMmF1sgP5PPcqQQ",
+ "generated_at": "2026-10-26T00:17:02-0500"
+}

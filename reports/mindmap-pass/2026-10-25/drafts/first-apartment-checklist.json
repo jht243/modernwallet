@@ -1,0 +1,52 @@
+{
+ "title": "First Apartment Checklist and Move-In Budget",
+ "metaDescription": "Build a customized first apartment checklist based on furnishing, laundry, pets and roommates. Enter your own prices and print a free planning worksheet.",
+ "h1": "First Apartment Checklist and Move-In Budget",
+ "introText": "To settle into your first apartment, you need upfront move-in money for lease obligations and essential household items for basic living on day one. You can defer non-essential purchases until later, and our tool customizes your gear list to your living arrangement while calculating running totals from your own estimated prices.\n\nTo tailor your checklist, specify whether your place comes furnished, includes in-unit laundry, involves roommates, or houses a pet. The tool automatically removes items that do not apply to your living space, tags immediate necessities, and calculates your totals as you type in local prices. When you are ready to shop or tour units, select the Print or save as PDF button to produce a clean paper worksheet.",
+ "toolHeading": "First Apartment Checklist and Budget",
+ "toolSubheading": "Answer four quick questions about your apartment to generate your customized move-in worksheet.",
+ "howItWorks": "Setting up a home involves two distinct financial obligations: upfront cash for the lease contract and spending on physical household goods. Upfront move-in money covers mandatory commitments such as your security deposit, first month of rent, administrative application fees, utility hookup charges, and renters insurance. Physical goods include your bed, cookware, lighting, and bathroom supplies. Separating lease fees from physical merchandise prevents you from spending your rent reserve on furniture before your move-in date.\n\nEvery physical item on our checklist falls into an immediate day-one essential or a flexible secondary purchase. Day-one items represent the baseline tools you need to sleep, eat, wash, and secure the home during your first night. Can-wait items such as a dresser, a floor lamp, a TV, small appliances and a toolkit can wait until you see the space. By tagging immediate requirements, the checklist helps you avoid overspending on decorative pieces before you confirm that your basic living needs are met.\n\nYour living arrangement shapes which supplies you need to buy. In our internal comparison, we ran the checklist rules across different housing situations. Furnished rentals remove the need to buy bed frames, mattresses, dining tables, and sofas. With roommates, the list adds a step to agree on who brings which kitchen items. Having an in-unit washer and dryer adjusts laundry items, while bringing a pet adds the pet category to your list.\n\nPrices for household goods vary across retail stores, thrift outlets, and geographic regions. Because store prices and personal standards differ, the checklist provides blank cost fields instead of pre-filled estimates. You enter what you plan to spend for each line item based on your local shops and personal savings. The tool calculates your total expected spending, the total for day-one necessities, and the cost of items still left to buy. You can align these running totals with your overall spending limits using our [budget calculator](/budget/).\n\nSigning a lease and inspecting your rental unit require proper paperwork before you unpack your belongings. Before moving boxes inside, document existing wall marks, appliance conditions, and floor scratches using our [move-in move-out checklist](/checklists/move-in-move-out-checklist/) to protect your security deposit. You can also evaluate lease clauses, parking policies, and landlord responsibilities with our comprehensive [renting checklist](/checklists/renting-checklist/). If your building sits near coastal waters or rivers, check flood zones through the [Federal Emergency Management Agency (FEMA) Flood Map Service Center](https://msc.fema.gov/portal/home), because standard renters insurance policies generally exclude flood damage.\n\nA practical strategy for your first move is to price and purchase your day-one essentials first, reserve adequate funds for your landlord deposits, and acquire remaining furnishings gradually. Rushing to buy every accessory at once strains your cash reserves and leads to clutter. Keep secondary purchases on your printed worksheet and buy them room by room as your monthly paycheck allows.",
+ "workedExample": "In our internal comparison, we ran the checklist rules for two example homes to measure how housing features alter purchasing needs. The complete catalog contains 42 total items across all categories. When configured for an unfurnished one-bedroom apartment with no pets, the tool displays 38 items, identifying 26 of them as day-one necessities for sleeping, eating, and hygiene.\n\nWhen we adjusted the scenario to a furnished studio shared with roommates and equipped with in-unit laundry, the list shrank to 27 total items, with 21 marked for day one. This setup eliminated bedroom furniture, living room seating, and plates and utensils, while inserting a reminder to divide shared kitchen supplies among roommates.",
+ "commonMistakes": [
+  "Purchasing full living room furniture sets before securing day-one essentials and move-in money.",
+  "Spending move-in cash on decorative furnishings before paying required utility connection charges and rental deposits.",
+  "Assuming standard renters insurance covers rising water, when standard policies generally exclude flood damage.",
+  "Failing to agree with roommates on who brings which kitchen items.",
+  "Buying non-essential cookware and specialty cleaning gadgets before securing basic day-one bedding and bathroom supplies."
+ ],
+ "faqs": [
+  {
+   "question": "What do I need for my first apartment?",
+   "answer": "You need upfront move-in cash for your deposit, rent, and utility connections, alongside day-one physical necessities. Basic goods include bedding, toilet paper, towels, basic cookware, a shower curtain, cleaning soap, and trash bins. You can defer decorative purchases and extra furniture until after you settle in."
+  },
+  {
+   "question": "Is $5000 enough to furnish an apartment?",
+   "answer": "We publish no set furnishing cost figure because total spending depends on what you already own, whether you choose new or secondhand items, and local retail pricing. Enter your own estimated costs into the tool above to see your exact total. That calculation shows whether a specific budget limit covers your chosen list."
+  },
+  {
+   "question": "What furniture should I buy for my first apartment?",
+   "answer": "Start with a mattress and bed frame for your bedroom. Add a small dining table or desk alongside basic seating once your sleeping arrangements are secure. You can postpone entertainment consoles, coffee tables, and secondary dressers until your baseline budget stabilizes."
+  },
+  {
+   "question": "What should I buy first for a new apartment?",
+   "answer": "Focus first on the items required for your first night in the unit. That includes bed sheets, a pillow, a shower curtain, hand soap, towels, and basic cleaning wipes. A flashlight, a plunger and a first-aid kit are also on the day-one list."
+  },
+  {
+   "question": "What move-in costs should I budget for besides furniture?",
+   "answer": "Budget for your refundable security deposit, first month of rent, application fees, utility setup deposits, moving truck expenses, and renters insurance. Keep in mind that standard renters policies generally exclude flood damage. Exact deposit rules and payment schedules are governed by state law and your specific lease terms."
+  },
+  {
+   "question": "What changes if the apartment comes furnished?",
+   "answer": "A furnished rental removes the expense of purchasing beds, dressers, couches, and dining sets. Our checklist hides the bedroom and living-area sections, including sheets and curtains, and the plates and utensils, while keeping cookware, towels, cleaning items and bathroom supplies on your worksheet. This reduces your upfront preparation work."
+  },
+  {
+   "question": "How do roommates change the list?",
+   "answer": "Sharing an apartment lets you split communal items like frying pans, microwave ovens, kitchen trash cans, and vacuum cleaners. The checklist adds a planning step to coordinate who brings each shared household item. This coordination prevents roommates from buying duplicate appliances."
+  },
+  {
+   "question": "Can I print this first apartment checklist?",
+   "answer": "Yes, select the Print or save as PDF button above the checklist to generate a clean, printer-friendly worksheet. The print version includes lines for your name, date, and property address. It leaves out website buttons and navigation bars so you can carry a physical copy."
+  }
+ ],
+ "slug": "first-apartment-checklist"
+}

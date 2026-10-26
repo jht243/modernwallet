@@ -1,0 +1,34 @@
+{
+  "metaTitle": "House Checklist Library: Free Interactive Checklists",
+  "metaDescription": "Pick a customized house checklist for buying, selling, or renting. Filter by property hazards and print your worksheet as a Portable Document Format (PDF) file.",
+  "h1": "House Checklist Library for Buyers, Sellers, and Renters",
+  "introText": "To get the checklist you need, pick the move you are making from buying, selling, renting, renting out, inspection, final walkthrough, move-in condition reporting, or moving into a first apartment. You can answer a few quick questions to customize the tasks, then print or save the list as a Portable Document Format (PDF) worksheet. At The Modern Wallet, we built this house checklist library with no signup required.\n\nChoose one of the eight options from the checklist dropdown menu above to load your questions. Select your home type, construction era, payment method, state, and local hazard conditions like freezing winters or coastal storms. Click the Print or save as PDF button to create your clean printable worksheet, while your checkmarks and notes stay stored in your browser.",
+  "howItWorks": "Buyers navigate three distinct stages from initial planning to closing day. Start with the [Home Buying Checklist](/checklists/home-buying-checklist/) to manage 59 financing and purchase tasks, or evaluate loan limits with our [home affordability calculator](/mortgage/home-affordability-calculator/). During your inspection window, use the 62 checks on the [Home Inspection Checklist](/checklists/home-inspection-checklist/) to examine physical systems, then complete the 30 verification steps on the [Final Walkthrough Checklist](/checklists/final-walkthrough-checklist/) before signing closing papers.\n\nSellers follow an organized process to prepare a residence, market the listing, and coordinate required transfer documents. The [Home Selling Checklist](/checklists/home-selling-checklist/) draws from a 44-item library to help schedule pre-listing maintenance, staging requirements, and closing disclosures. Preparing these records early helps prevent closing delays during contract negotiations.\n\nTenants and property owners use dedicated tools tailored to leasing decisions and daily management. The [Rental Checklist for Renters](/checklists/renting-checklist/) contains 53 items for lease reviews, while first-time renters can use the 42 items on the [First Apartment Checklist](/checklists/first-apartment-checklist/) alongside our [renting vs buying comparison](/compare/renting-vs-buying/). Document property turnover room by room with the [Move-In / Move-Out Condition Checklist](/checklists/move-in-move-out-checklist/), which creates 36 items for a studio or 89 items for a three-bedroom house, and apply the 45-item [Landlord Checklist](/checklists/landlord-checklist/) for lease compliance.\n\nYour property details and regional hazard conditions directly determine which checklist items appear. For a buyer in Miami, Florida, the state preset deactivates freezing winter settings to remove frozen-pipe checks, while activating coastal hazard toggles for roof and wind-deductible tasks. Deposit limits, disclosure forms, and notice deadlines display a check your state label rather than fixed legal numbers, so pick your situation above to produce your customized house checklist.",
+  "faqs": [
+    {
+      "question": "Which checklist should I use?",
+      "answer": "Select the checklist that matches your immediate real estate transaction or leasing transition. Buyers can start with the home buying or inspection lists, sellers can pick the selling guide, and tenants can choose between rental, first apartment, or condition reports. Property owners managing tenants can select the dedicated landlord checklist to oversee leasing and maintenance."
+    },
+    {
+      "question": "Can I print these checklists or save them as a PDF?",
+      "answer": "Yes, every checklist includes a dedicated print button that formats your custom list as a clean worksheet. You can print physical copies or use your browser settings to save a Portable Document Format (PDF) file. The printed version displays your customized tasks without showing website navigation menus."
+    },
+    {
+      "question": "Why does the checklist ask for my state?",
+      "answer": "Your state selection adjusts environmental hazard toggles such as freezing winters or coastal wind zones to keep tasks relevant. State statutes also govern security deposit limits, return deadlines, disclosure forms, and notice rules. The tool displays a check your state label on these topics rather than stating fixed statutory numbers."
+    },
+    {
+      "question": "Do the checklists save my progress?",
+      "answer": "Yes, your checkmarks and notes save automatically in your web browser. No account creation or email signup is required to preserve your progress. If you clear your browser data or switch to another device, your previous checkmarks will reset."
+    },
+    {
+      "question": "Is there a checklist for landlords?",
+      "answer": "Yes, the landlord checklist provides 45 operational tasks designed specifically for property owners and managers. It covers tenant screening, lease agreements, habitability standards, and property turnover procedures. Select Landlord Checklist from the dropdown menu above to customize your worksheet."
+    },
+    {
+      "question": "Are these checklists legal advice?",
+      "answer": "No, these checklists serve as an educational planning aid and do not constitute legal advice. The items draw from published federal guidance by the Environmental Protection Agency (EPA), Consumer Financial Protection Bureau (CFPB), Federal Emergency Management Agency (FEMA), and American Society of Home Inspectors (ASHI). State laws and municipal housing codes vary by location, so formal legal determinations require a licensed attorney in your jurisdiction."
+    }
+  ],
+  "slug": "checklists-hub"
+}

@@ -1,0 +1,261 @@
+{
+ "slug": "checklists-hub",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 704,
+ "floor": 450,
+ "input_tokens": 18937,
+ "output_tokens": 1209,
+ "thinking_tokens": 13447,
+ "cached_tokens": 17718,
+ "est_cost_usd": 0.0572,
+ "guards": {
+  "repairs": [
+   "slug None -> 'checklists-hub'"
+  ],
+  "flags": [
+   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Document property turnover room by room with the [Move-In / Move-Out Condition C'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 696,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 143,
+   "floor": 450,
+   "ratio": 0.32,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    6,
+    11
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At The Modern Wallet, we built this house checklist library with no signup required.",
+     "replacement": "This house checklist library requires no signup.",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support this first-person claim"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Preparing these records early helps prevent closing delays during contract negotiations.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that preparing records prevents closing delays"
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "The printed version displays your customized tasks without showing website navigation menus.",
+     "replacement": "The printed version prints only the checklist as a worksheet.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention website navigation menus"
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "If you clear your browser data or switch to another device, your previous checkmarks will reset.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that clearing browser data or switching devices resets checkmarks"
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "It covers tenant screening, lease agreements, habitability standards, and property turnover procedures.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what specific topics the landlord checklist covers"
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "State laws and municipal housing codes vary by location, so formal legal determinations require a licensed attorney in your jurisdiction.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention municipal codes or consulting an attorney"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [
+    {
+     "id": "howItWorks",
+     "quote": "Buyers navigate three distinct stages from initial planning to closing day. ",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Start with the [Home Buying Checklist](/checklists/home-buying-checklist/) to manage 59 financing and purchase tasks, or evaluate loan limits with our [home affordability calculator](/mortgage/home-affordability-calculator/).",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "During your inspection window, use the 62 checks on the [Home Inspection Checklist](/checklists/home-inspection-checklist/) to examine physical systems, then complete the 30 verification steps on the [Final Walkthrough Checklist](/checklists/final-walkthrough-checklist/) before signing closing papers.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Sellers follow an organized process to prepare a residence, market the listing, and coordinate required transfer documents. ",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "The [Home Selling Checklist](/checklists/home-selling-checklist/) draws from a 44-item library to help schedule pre-listing maintenance, staging requirements, and closing disclosures.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Tenants and property owners use dedicated tools tailored to leasing decisions and daily management. ",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "The [Rental Checklist for Renters](/checklists/renting-checklist/) contains 53 items for lease reviews, while first-time renters can use the 42 items on the [First Apartment Checklist](/checklists/first-apartment-checklist/) alongside our [renting vs buying comparison](/compare/renting-vs-buying/).",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Document property turnover room by room with the [Move-In / Move-Out Condition Checklist](/checklists/move-in-move-out-checklist/), which creates 36 items for a studio or 89 items for a three-bedroom house, and apply the 45-item [Landlord Checklist](/checklists/landlord-checklist/) for lease compliance.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Property owners managing tenants can select the dedicated landlord checklist to oversee leasing and maintenance.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Yes, the landlord checklist provides 45 operational tasks designed specifically for property owners and managers.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "The items draw from published federal guidance by the Environmental Protection Agency (EPA), Consumer Financial Protection Bureau (CFPB), Federal Emergency Management Agency (FEMA), and American Society of Home Inspectors (ASHI).",
+     "type": "contradicted",
+     "reason": "final pass over-flagged; not applied"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 764
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-26T00:49:11-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-25/audit/checklists-hub.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "Choose one of the eight options from the checklist dropdown menu above",
+      "replacement": "Choose one of the eight options from the Checklist dropdown below",
+      "type": "introText is above the tool",
+      "why": "The tool is located below the intro text"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Buyers navigate three distinct stages from initial planning to closing day.",
+      "replacement": "Buyers use three checklists, in this order.",
+      "type": "filler",
+      "why": "Replaced filler with direct checklist sequence statement"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "or evaluate loan limits with our [home affordability calculator]",
+      "replacement": "or estimate your price range with our [home affordability calculator]",
+      "type": "the calculator doesn't evaluate loan limits",
+      "why": "Calculator estimates price range rather than loan limits"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "to help schedule pre-listing maintenance, staging requirements, and closing disclosures.",
+      "replacement": "to plan pre-listing repairs, staging and your seller disclosures.",
+      "type": "wrong term",
+      "why": "Uses correct terminology for repairs and disclosures"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "which creates 36 items for a studio or 89 items for a three-bedroom house",
+      "replacement": "which creates 36 items for a studio or 89 for a 3-bedroom, 2-bathroom house with laundry, a dishwasher, a garage and a yard",
+      "type": "omits the conditions behind 89",
+      "why": "Specifies the exact property features that yield 89 items"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Deposit limits, disclosure forms, and notice deadlines display a check your state label rather than fixed legal numbers",
+      "replacement": "Items on deposit limits, disclosure forms and notice deadlines tell you to check your state's rule instead of stating a number",
+      "type": "no such label exists",
+      "why": "Items instruct users to check state rules rather than showing a label"
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "The tool displays a check your state label on these topics rather than stating fixed statutory numbers.",
+      "replacement": "Items on these topics tell you to check your state's rule instead of stating a number.",
+      "type": "no such label exists",
+      "why": "Removes incorrect reference to a state label"
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "The items draw from published federal guidance by the Environmental Protection Agency (EPA), Consumer Financial Protection Bureau (CFPB), Federal Emergency Management Agency (FEMA), and American Society of Home Inspectors (ASHI).",
+      "replacement": "The items draw from guidance published by the [Environmental Protection Agency (EPA)](https://www.epa.gov/lead/real-estate-disclosure), the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-a-closing-disclosure-en-1983/), the [Federal Emergency Management Agency (FEMA)](https://msc.fema.gov/portal/home) and the [American Society of Home Inspectors (ASHI)](https://www.homeinspector.org/standards-of-practice).",
+      "type": "ASHI is not federal; first mentions unlinked",
+      "why": "ASHI is non-governmental and all sources require permitted markdown links"
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "howItWorks",
+       "quote": "Document property turnover room by room with the [Move-In / Move-Out Condition Checklist](/checklists/move-in-move-out-checklist/), which creates 36 items for a studio or 89 for a 3-bedroom, 2-bathroom house with laundry, a dishwasher, a garage and a yard, and apply the 45-item [Landlord Checklist](/checklists/landlord-checklist/) for lease compliance.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 704,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Document property turnover room by room with the [Move-In / Move-Out Condition C'"
+    ]
+   }
+  ]
+ },
+ "seconds": 236.1,
+ "response_id": "jePeaoDNBrixxdIPvdyMUA",
+ "generated_at": "2026-10-26T00:26:13-0500"
+}

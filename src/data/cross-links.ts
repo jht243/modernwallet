@@ -100,6 +100,13 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/what-happens-if-you-dont-pay-your-student-loans/", label: "What happens if you don't pay your student loans" },
     { href: "/calculators/", label: "All calculators" },
   ],
+  // Mindmap pass (2026-10-25).
+  "checklists": [
+    { href: "/mortgage/home-affordability-calculator/", label: "How much house can I afford?" },
+    { href: "/compare/renting-vs-buying/", label: "Renting vs buying: which is better for you?" },
+    { href: "/real-estate/rental-income-calculator/", label: "Rental income calculator for landlords" },
+    { href: "/calculators/", label: "All calculators" },
+  ],
   // Autocomplete pass (2026-10-21).
   "tax-bracket-calculator": [
     { href: "/guides/2026-tax-brackets/", label: "2026 federal tax brackets by filing status" },

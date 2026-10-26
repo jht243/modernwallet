@@ -52,6 +52,7 @@ export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
   {
     calculator: "real-estate",
     slug: "rental-income-calculator",
+    updated: "2026-10-26",
     title: "Rental Income Calculator: Gross Rent to Net Income",
     metaDescription:
       "Use this rental income calculator to find gross rent, effective income after vacancy, and what's left after expenses on any rental property.",
@@ -62,7 +63,7 @@ export const REAL_ESTATE_SPOKES: SpokeEntry[] = [
     introText:
       "This rental income calculator shows how much income a rental property actually brings in. Enter your rent, vacancy rate, and expenses above. The calculator adjusts gross rent for vacancy to show effective income, then subtracts costs to calculate net operating income. Gross rent is just the starting point, not your spendable or taxable income.",
     howItWorks:
-      "The rental income calculator works in three steps. First, it finds gross annual rent by multiplying monthly rent by 12. Next, it subtracts a vacancy allowance to get effective gross income, the real top line. Finally, it subtracts operating expenses like taxes, insurance, maintenance, and management to reach net operating income (NOI).\n\nHere is the key insight. Gross rent is not what you keep or what you owe tax on. The IRS taxes rental income but lets you deduct expenses and depreciation. So your taxable income is usually far lower than the rent you collect.",
+      "The rental income calculator works in three steps. First, it finds gross annual rent by multiplying monthly rent by 12. Next, it subtracts a vacancy allowance to get effective gross income, the real top line. Finally, it subtracts operating expenses like taxes, insurance, maintenance, and management to reach net operating income (NOI).\n\nHere is the key insight. Gross rent is not what you keep or what you owe tax on. The IRS taxes rental income but lets you deduct expenses and depreciation. So your taxable income is usually far lower than the rent you collect. Before your first tenant moves in, the [landlord checklist](/checklists/landlord-checklist/) covers insurance, safety, screening and the lease, and the [move-in condition checklist](/checklists/move-in-move-out-checklist/) documents the unit for the deposit.",
     commonMistakes: [
       "Treating gross rent as profit. Effective gross income after vacancy, then NOI after expenses, is what matters.",
       "Ignoring vacancy. Even a 6% vacancy rate cuts a $32,400 gross rent down to $30,456 in effective income.",

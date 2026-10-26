@@ -2809,6 +2809,70 @@ export const CALCULATORS: CalculatorDef[] = [
     updated: "2026-10-21",
     defaultPreset: {"status": "mfj", "benefits": 42000, "otherIncome": 30000, "taxExemptInterest": 0},
   },
+  // Checklists hub — mindmap-pass (2026-10-25). Prose generated via scripts/lib/content_gen.py
+  // (reports/mindmap-pass/2026-10-25/drafts/checklists-hub.json). Spokes live in spokes-checklists.ts.
+  {
+    "id": "checklists",
+    "islandId": "checklists",
+    "label": "Checklists",
+    "navOrder": 63,
+    "metaTitle": "House Checklist Library: Free Interactive Checklists",
+    "metaDescription": "Pick a customized house checklist for buying, selling, or renting. Filter by property hazards and print your worksheet as a Portable Document Format (PDF) file.",
+    "targetKeyword": "house checklist",
+    "h1": "House Checklist Library for Buyers, Sellers, and Renters",
+    "introText": "To get the checklist you need, pick the move you are making from buying, selling, renting, renting out, inspection, final walkthrough, move-in condition reporting, or moving into a first apartment. You can answer a few quick questions to customize the tasks, then print or save the list as a Portable Document Format (PDF) worksheet. This house checklist library requires no signup.\n\nChoose one of the eight options from the Checklist dropdown below to load your questions. Select your home type, construction era, payment method, state, and local hazard conditions like freezing winters or coastal storms. Click the Print or save as PDF button to create your clean printable worksheet, while your checkmarks and notes stay stored in your browser.",
+    "howItWorks": "Buyers use three checklists, in this order. Start with the [Home Buying Checklist](/checklists/home-buying-checklist/) to manage 59 financing and purchase tasks, or estimate your price range with our [home affordability calculator](/mortgage/home-affordability-calculator/). During your inspection window, use the 62 checks on the [Home Inspection Checklist](/checklists/home-inspection-checklist/) to examine physical systems, then complete the 30 verification steps on the [Final Walkthrough Checklist](/checklists/final-walkthrough-checklist/) before signing closing papers.\n\nSellers follow an organized process to prepare a residence, market the listing, and coordinate required transfer documents. The [Home Selling Checklist](/checklists/home-selling-checklist/) draws from a 44-item library to plan pre-listing repairs, staging and your seller disclosures. \n\nTenants and property owners use dedicated tools tailored to leasing decisions and daily management. The [Rental Checklist for Renters](/checklists/renting-checklist/) contains 53 items for lease reviews, while first-time renters can use the 42 items on the [First Apartment Checklist](/checklists/first-apartment-checklist/) alongside our [renting vs buying comparison](/compare/renting-vs-buying/). Document property turnover room by room with the [Move-In / Move-Out Condition Checklist](/checklists/move-in-move-out-checklist/), which creates 36 items for a studio or 89 for a 3-bedroom, 2-bathroom house with laundry, a dishwasher, a garage and a yard, and apply the 45-item [Landlord Checklist](/checklists/landlord-checklist/) for lease compliance.\n\nYour property details and regional hazard conditions directly determine which checklist items appear. For a buyer in Miami, Florida, the state preset deactivates freezing winter settings to remove frozen-pipe checks, while activating coastal hazard toggles for roof and wind-deductible tasks. Items on deposit limits, disclosure forms and notice deadlines tell you to check your state's rule instead of stating a number, so pick your situation above to produce your customized house checklist.",
+    "faqs": [
+      {
+        "question": "Which checklist should I use?",
+        "answer": "Select the checklist that matches your immediate real estate transaction or leasing transition. Buyers can start with the home buying or inspection lists, sellers can pick the selling guide, and tenants can choose between rental, first apartment, or condition reports. Property owners managing tenants can select the dedicated landlord checklist to oversee leasing and maintenance."
+      },
+      {
+        "question": "Can I print these checklists or save them as a PDF?",
+        "answer": "Yes, every checklist includes a dedicated print button that formats your custom list as a clean worksheet. You can print physical copies or use your browser settings to save a Portable Document Format (PDF) file. The printed version prints only the checklist as a worksheet."
+      },
+      {
+        "question": "Why does the checklist ask for my state?",
+        "answer": "Your state selection adjusts environmental hazard toggles such as freezing winters or coastal wind zones to keep tasks relevant. State statutes also govern security deposit limits, return deadlines, disclosure forms, and notice rules. Items on these topics tell you to check your state's rule instead of stating a number."
+      },
+      {
+        "question": "Do the checklists save my progress?",
+        "answer": "Yes, your checkmarks and notes save automatically in your web browser. No account creation or email signup is required to preserve your progress."
+      },
+      {
+        "question": "Is there a checklist for landlords?",
+        "answer": "Yes, the landlord checklist provides 45 operational tasks designed specifically for property owners and managers. Select Landlord Checklist from the dropdown menu above to customize your worksheet."
+      },
+      {
+        "question": "Are these checklists legal advice?",
+        "answer": "No, these checklists serve as an educational planning aid and do not constitute legal advice. The items draw from guidance published by the [Environmental Protection Agency (EPA)](https://www.epa.gov/lead/real-estate-disclosure), the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-a-closing-disclosure-en-1983/), the [Federal Emergency Management Agency (FEMA)](https://msc.fema.gov/portal/home) and the [American Society of Home Inspectors (ASHI)](https://www.homeinspector.org/standards-of-practice)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "EPA: Real estate disclosures about lead-based paint",
+        "url": "https://www.epa.gov/lead/real-estate-disclosure"
+      },
+      {
+        "label": "CFPB: What is a Closing Disclosure?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-closing-disclosure-en-1983/"
+      },
+      {
+        "label": "FEMA Flood Map Service Center",
+        "url": "https://msc.fema.gov/portal/home"
+      },
+      {
+        "label": "ASHI: Standard of Practice for home inspections",
+        "url": "https://www.homeinspector.org/standards-of-practice"
+      }
+    ],
+    "updated": "2026-10-26",
+    "defaultPreset": {
+      "checklist": "home-buying",
+      "picker": true
+    }
+  },
+  // /Checklists hub
 ];
 
 export const CALC_BY_ID: Record<string, CalculatorDef> = Object.fromEntries(

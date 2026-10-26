@@ -1,0 +1,684 @@
+{
+ "rows": [
+  {
+   "keyword": "home buying checklist",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.rocketmortgage.com",
+    "www.navyfederal.org",
+    "www.marylandhomeownership.com",
+    "www.olesouth.com",
+    "www.fkc.bank",
+    "www.youtube.com",
+    "www.parealtors.org",
+    "www.matinrealestate.com",
+    "www.hud.gov"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.msgcu.org",
+    "www.contourmortgage.com",
+    "www.zillow.com",
+    "estateplansplus.com",
+    "www.har.com",
+    "irp.cdn-website.com",
+    "www.pinterest.com",
+    "www.penfed.org",
+    "listwithclever.com",
+    "www.thezebra.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are things first time home buyers should know?",
+    "What salary do you need for a $400,000 house?",
+    "What things are big red flags in a home inspection?",
+    "Can I afford a $300K house on a $50K salary?",
+    "Can I afford a $400 k house on a $100 k salary?",
+    "Can I afford a $200,000 house on a $50,000 salary?"
+   ],
+   "related_searches": [
+    "Printable home buying checklist",
+    "Home buying checklist Template",
+    "Free home buying checklist",
+    "Home buying checklist PDF",
+    "Small things you need for a new house checklist",
+    "First time homebuyer checklist pdf",
+    "New home checklist by room",
+    "Furnishing a new home checklist"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.reddit.com, www.rocketmortgage.com, www.navyfederal.org, www.marylandhomeownership.com",
+   "se_results_count": 121
+  },
+  {
+   "keyword": "home selling checklist",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.zillow.com",
+    "www.realtor.com",
+    "greatcoloradohomes.com",
+    "www.allied.com",
+    "everydoorrealestate.com",
+    "www.marylandhomeownership.com",
+    "www.youtube.com",
+    "www.tiktok.com",
+    "fanniehillman.com",
+    "www.nar.realtor"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.yuma.ctic.com",
+    "www.sarasotarealestatesold.com",
+    "www.prevu.com",
+    "www.pinterest.com",
+    "www.unitedcountryok.com",
+    "www.amerispec.com",
+    "www.hayden-homes.com",
+    "www.ruhlhomes.com",
+    "hoosier-realtors.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the most common reason a property fails to sell?",
+    "What is the 3-3-3 rule for buying a house?",
+    "What decreases property value the most?",
+    "What are 10 things to avoid when selling your house?",
+    "What not to fix before selling your home?",
+    "What is the hardest month to sell a home?"
+   ],
+   "related_searches": [
+    "Printable home selling checklist",
+    "Home selling checklist pdf"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.zillow.com, www.realtor.com, greatcoloradohomes.com, www.allied.com",
+   "se_results_count": 124
+  },
+  {
+   "keyword": "apartment checklist",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.youtube.com",
+    "www.extraspace.com",
+    "wilderlosangeles.com",
+    "b3h2.scene7.com",
+    "www.movinghelp.com",
+    "annasaxton.com",
+    "www.amica.com",
+    "www.reddit.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "labarberamovers.com",
+    "updater.com",
+    "www.lemonade.com",
+    "junehomes.com",
+    "colonialvanlines.com",
+    "www.liveatknightsbridge.com",
+    "www.upack.com",
+    "andersoncommunities.com",
+    "www.ironridgeapartments.com",
+    "www.pinterest.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 2,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What do I need when looking at an apartment?",
+    "What is the 30% rule for apartments?",
+    "Is $5000 enough to furnish an apartment?",
+    "What will disqualify you from an apartment?",
+    "What salary do you need to afford $1200 rent?",
+    "Can I rent an apartment with a 300 credit score?"
+   ],
+   "related_searches": [
+    "Apartment checklist pdf",
+    "Apartment checklist template",
+    "Apartment checklist Pdf free download",
+    "First apartment checklist PDF",
+    "Apartment checklist template Excel",
+    "Minimalist apartment checklist pdf",
+    "First apartment checklist on a budget",
+    "Apartment checklist inspection"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.youtube.com, www.extraspace.com, wilderlosangeles.com, b3h2.scene7.com",
+   "se_results_count": 114
+  },
+  {
+   "keyword": "rental checklist",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "studentlegal.uiowa.edu",
+    "www2.minneapolismn.gov",
+    "caanet.org",
+    "eoss.asu.edu",
+    "www.myhousingsearch.com",
+    "www.housing.af.mil",
+    "happy.co",
+    "www.avail.com",
+    "www.obieinsurance.com",
+    "www.pinterest.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 2,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the 2% rule for rentals?",
+    "Is there a checklist for landlords?",
+    "What is the 7% rule for rental property?",
+    "What to look for when renting an apartment checklist?",
+    "What will disqualify you from renting an apartment?",
+    "What is the 50/30/20 rule for rent?"
+   ],
+   "related_searches": [
+    "Rental checklist template",
+    "Printable rental checklist",
+    "Rental checklist pdf",
+    "Rental walkthrough Checklist PDF",
+    "Free rental checklist",
+    "Rental walkthrough checklist PDF free download",
+    "Move-in rental checklist",
+    "Rental inspection checklist PDF"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 136
+  },
+  {
+   "keyword": "landlord checklist",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.housing.af.mil",
+    "wp-tid.zillowstatic.com",
+    "www.managementpros.com",
+    "www.baymgmtgroup.com",
+    "www.baselane.com",
+    "realwisepm.com",
+    "eoss.asu.edu",
+    "www.lasvegas-propertymanagement.com",
+    "www.pinterest.com",
+    "www.redfin.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 2,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What will disqualify you from an apartment?",
+    "Is there a checklist for landlords?",
+    "What is the 80/20 rule for rental property?",
+    "What not to say to your landlord?",
+    "What do landlords fear the most?",
+    "Do landlords have to provide a vacuum cleaner?"
+   ],
+   "related_searches": [
+    "Landlord checklist template",
+    "Landlord checklist pdf",
+    "Free printable landlord checklist",
+    "Printable landlord checklist",
+    "Free landlord checklist",
+    "Landlord checklist california",
+    "Rental walkthrough checklist PDF free download",
+    "Move-out checklist for landlords pdf"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 121
+  },
+  {
+   "keyword": "home inspection checklist",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.totalhomeinspection.com",
+    "www.nachi.org",
+    "www.zillow.com",
+    "www.rocketmortgage.com",
+    "www.redfin.com",
+    "planninganddevelopment.columbiasc.gov",
+    "icaschool.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "icaschool.com",
+    "www.reddit.com",
+    "hometeam.com",
+    "www.guardianangelinspections.com",
+    "dreamhomeinspection.org",
+    "wini.com",
+    "superinspectionpros.com",
+    "www.homie.com",
+    "www.youtube.com",
+    "ttbservices.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 2,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What things do they look for in a home inspection?",
+    "Can I do my own annual inspection?",
+    "What is a 7 point inspection?",
+    "What will fail an apartment inspection?",
+    "What's the worst thing a home inspector can find?",
+    "How clean does my apartment need to be for an inspection?"
+   ],
+   "related_searches": [
+    "Printable home inspection checklist",
+    "Home inspection checklist pdf",
+    "Home inspection checklist template",
+    "Do it yourself home inspection checklist",
+    "Free home inspection checklist",
+    "Home inspection checklist for buyers PDF",
+    "Home inspection checklist for sellers",
+    "Home inspection checklist Excel"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.totalhomeinspection.com, www.nachi.org, www.zillow.com, www.rocketmortgage.com",
+   "se_results_count": 115
+  },
+  {
+   "keyword": "final walkthrough checklist",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.redfin.com",
+    "www.zillow.com",
+    "mhschaefer.com",
+    "www.matinrealestate.com",
+    "www.totalmortgage.com",
+    "www.rocketmortgage.com",
+    "www.tiktok.com",
+    "www.youtube.com",
+    "boutiquehomeplans.com",
+    "www.homegauge.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.redfin.com",
+    "mhschaefer.com",
+    "www.reddit.com",
+    "www.zillow.com",
+    "www.totalmortgage.com",
+    "www.militarybyowner.com",
+    "www.matinrealestate.com",
+    "ubfklaw.com",
+    "boutiquehomeplans.com",
+    "www.homegauge.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 2,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What do you check during a final walk through?",
+    "What is the 3-3-3 rule in real estate?",
+    "Can a buyer walk away at final walkthrough?",
+    "What does a closing checklist look like?",
+    "What not to do during the closing process?",
+    "What is an example of a checklist?"
+   ],
+   "related_searches": [
+    "Final walkthrough checklist template",
+    "Final walkthrough checklist pdf",
+    "Printable final walk Through Checklist",
+    "Final walkthrough checklist real estate",
+    "What can buyers demand at final walk-through",
+    "Final walk through checklist new construction",
+    "Final walkthrough checklist reddit",
+    "House walkthrough Checklist PDF"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.redfin.com, www.zillow.com, mhschaefer.com, www.matinrealestate.com",
+   "se_results_count": 128
+  },
+  {
+   "keyword": "rental inspection checklist",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "cityofmidlandmi.gov",
+    "mitti.com",
+    "www.salisbury.edu",
+    "www.safetymint.com",
+    "www.manifest.ly",
+    "flowdit.com",
+    "insideandoutpropertyinspectors.com",
+    "www.pinterest.com",
+    "elsie.org",
+    "www.crmproperties.net"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What should be included in the inspection checklist?",
+    "Is there a checklist for landlords?",
+    "What does a 100% apartment inspection consist of?",
+    "What are the four types of inspections?",
+    "What are 5 very important things that are inspected in a home inspection?",
+    "What is a 7 point inspection?"
+   ],
+   "related_searches": [
+    "Rental inspection checklist template",
+    "Rental inspection checklist pdf",
+    "Free rental inspection checklist",
+    "Tenant move-in checklist pdf",
+    "Rental walkthrough checklist PDF free download",
+    "Rental Inspection Checklist Word doc",
+    "Rental inspection checklist for property managers",
+    "Tenant move-in checklist Template"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 113
+  },
+  {
+   "keyword": "first apartment checklist",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "annasaxton.com",
+    "www.reddit.com",
+    "www.moving.com",
+    "www.extraspace.com",
+    "www.apartmentlist.com",
+    "www.youtube.com",
+    "www.amica.com",
+    "www.realsimple.com",
+    "www.movinghelp.com",
+    "www.irvinecompanyapartments.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "updater.com",
+    "www.stackmoves.com",
+    "www.lemonade.com",
+    "www.pinterest.com",
+    "www.upack.com",
+    "www.camdenliving.com",
+    "www.hercampus.com",
+    "bysophialee.com",
+    "www.consumeraffairs.com",
+    "www.facebook.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is needed to get your first apartment?",
+    "Can I afford an apartment making $1000 a month?",
+    "How early should you start packing to move apartment?",
+    "Is $5000 enough to furnish an apartment?",
+    "Is $10,000 enough to furnish a 2 bedroom apartment?",
+    "What furniture should I buy for my first apartment?"
+   ],
+   "related_searches": [
+    "First apartment checklist pdf",
+    "First apartment checklist template",
+    "First apartment checklist PDF free download",
+    "First apartment checklist Excel",
+    "First apartment checklist on a budget",
+    "Printable first apartment checklist",
+    "First apartment checklist spreadsheet",
+    "First apartment checklist for couples"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites annasaxton.com, www.reddit.com, www.moving.com, www.extraspace.com",
+   "se_results_count": 112
+  },
+  {
+   "keyword": "first time home buyer checklist",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.hud.gov",
+    "townemortgage.us",
+    "www.pinterest.com",
+    "www.utahmortgageloan.com",
+    "www.har.com",
+    "www.realtor.com",
+    "www.theownlife.com",
+    "www.pinterest.com",
+    "www.penfed.org",
+    "www.rateleaf.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are things first time home buyers should know?",
+    "What salary do you need for a $400,000 house?",
+    "What are the biggest red flags in a home inspection?",
+    "What are the 4 C's when buying a home?",
+    "How much of a down payment do I need for a $400,000 house first time buyer?",
+    "What is the 3-3-3 rule for buying a house?"
+   ],
+   "related_searches": [
+    "Printable first time home buyer checklist",
+    "First time homebuyer checklist pdf",
+    "First-time home Buyer checklist after closing",
+    "Home buyer checklist PDF",
+    "Home buying Checklist after accepted offer",
+    "Home buying checklist Template",
+    "Free printable house viewing checklist pdf",
+    "House hunting checklist"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 121
+  },
+  {
+   "keyword": "renting a house checklist",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "hcpf.colorado.gov",
+    "www.housing.af.mil",
+    "www.rentler.com",
+    "housing4hoosiers.org",
+    "www.youtube.com",
+    "www.myhousingsearch.com",
+    "www.obieinsurance.com",
+    "wp-tid.zillowstatic.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "innago.com",
+    "studentlegal.uiowa.edu",
+    "www.housing.af.mil",
+    "hcpf.colorado.gov",
+    "www.lawdepot.com",
+    "housing4hoosiers.org",
+    "www.myhousingsearch.com",
+    "www.gnprealty.com",
+    "www.zillow.com",
+    "www.alanboswell.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are the key things to check before renting a house?",
+    "What is the 7% rule for rental property?",
+    "What will disqualify you from renting a house?",
+    "What is the 50/30/20 rule for rent?",
+    "What is the 2% rule for rentals?",
+    "What salary do you need to afford $1200 rent?"
+   ],
+   "related_searches": [
+    "Renting a house checklist template",
+    "Renting a house checklist pdf",
+    "Free renting a house checklist",
+    "Renting a house checklist california",
+    "Rental walkthrough Checklist PDF",
+    "Rental walkthrough checklist PDF free download",
+    "Questions to ask a landlord before renting a house",
+    "Rental property checklist for tenants"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites hcpf.colorado.gov, www.housing.af.mil, www.rentler.com, housing4hoosiers.org",
+   "se_results_count": 136
+  },
+  {
+   "keyword": "first time landlord checklist",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.mysmartmove.com",
+    "www.alanboswell.com",
+    "www.housing.af.mil",
+    "www.mhnproperties.com",
+    "www.baselane.com",
+    "www.youtube.com",
+    "cgpm.co.nz",
+    "propertyninja.app",
+    "www.powellpropertymgt.com",
+    "www.quora.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.quora.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How do I become a landlord for the first time?",
+    "Is there a checklist for landlords?",
+    "What is the 7% rule for rental property?",
+    "What will disqualify you from renting a house?",
+    "What background check do most landlords use?",
+    "How much do you need to make to afford $1300 rent?"
+   ],
+   "related_searches": [
+    "First time landlord checklist template",
+    "Landlord checklist template",
+    "First time landlord guide",
+    "Questions to ask when renting a house checklist",
+    "Questions to ask a landlord before renting a house",
+    "Questions to ask when renting an apartment checklist",
+    "Landlord checklist for inspection",
+    "Questions to ask a landlord before renting an apartment",
+    "First time landlord checklist pdf",
+    "First time landlord checklist california"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 113
+  }
+ ],
+ "cost": "DataForSEO: 12 calls, $0.04980 of $2.00 budget"
+}

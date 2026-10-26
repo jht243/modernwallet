@@ -1,0 +1,463 @@
+{
+ "slug": "home-buying-checklist",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1263,
+ "floor": 900,
+ "input_tokens": 20684,
+ "output_tokens": 2239,
+ "thinking_tokens": null,
+ "cached_tokens": 17831,
+ "est_cost_usd": 0.0119,
+ "guards": {
+  "repairs": [
+   "slug None -> 'home-buying-checklist'"
+  ],
+  "flags": [
+   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'The seventh stage covers your first week in the house: new locks, alarm tests, u'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1279,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 531,
+   "floor": 900,
+   "ratio": 0.59,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    22,
+    5,
+    6
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "The sixth stage wraps up homeowners insurance, title reviews, and the final walkthrough before closing.",
+     "replacement": "The sixth stage wraps up homeowners insurance and the final walkthrough before closing.",
+     "type": "unsupported",
+     "why": "SOURCE does not include title reviews in stage six."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "When you buy with cash, the entire mortgage pre-approval section hides, and lender-mandated escrow steps drop off.",
+     "replacement": "When you buy with cash, the entire mortgage pre-approval section hides.",
+     "type": "unsupported",
+     "why": "SOURCE only states mortgage pre-approval is hidden when paying cash."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "For a United States Department of Agriculture (USDA) loan, the address must sit in an eligible rural or suburban zone, which you can verify directly on the official [USDA eligibility map](https://eligibility.sc.egov.usda.gov/eligibility/welcomeAction.do).",
+     "replacement": "For a United States Department of Agriculture (USDA) loan, the address must sit in an eligible area, which you can verify directly on the official [USDA eligibility map](https://eligibility.sc.egov.usda.gov/eligibility/welcomeAction.do).",
+     "type": "unsupported",
+     "why": "SOURCE states eligible area, not rural or suburban zone."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Buying a condo or townhouse adds homeowner association review tasks, including examining HOA dues, financial reserves, and association bylaws.",
+     "replacement": "Buying a condo or townhouse adds homeowner association review tasks, including examining HOA dues and documents.",
+     "type": "unsupported",
+     "why": "SOURCE states HOA dues and documents, not financial reserves or bylaws."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Setting the switches for freezing winter regions adds checks for pipes running through unheated crawlspaces, insulation around plumbing, and locating the main water shutoff valve.",
+     "replacement": "Setting the switches for freezing winter regions adds checks for pipes running through unheated spaces, heating service, and locating the main water shutoff valve.",
+     "type": "unsupported",
+     "why": "SOURCE lists pipes in unheated spaces, main water shutoff, and heating service."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "This gives you time to compare final loan terms against your initial estimate.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this purpose or consequence."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "State laws govern mandatory seller disclosure forms, return deadlines, and regional closing customs.",
+     "replacement": "State laws govern seller disclosure forms and regional closing customs.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention return deadlines."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Review your local purchase agreement with your real estate agent, mortgage lender, or real estate attorney before waiving contingencies.",
+     "replacement": "Check state-specific rules with your real estate agent, mortgage lender, or real estate attorney.",
+     "type": "unsupported",
+     "why": "SOURCE specifies checking state-specific rules with an agent, lender, or attorney."
+    },
+    {
+     "id": "commonMistakes[0]",
+     "quote": "Relying on a standard homeowners insurance policy to cover flood damage, even though standard policies exclude rising water.",
+     "replacement": "Relying on a standard homeowners insurance policy to cover flood damage, even though standard policies generally do not cover flood damage.",
+     "type": "unsupported",
+     "why": "SOURCE states standard policies generally do not cover flood damage."
+    },
+    {
+     "id": "commonMistakes[2]",
+     "quote": "Assuming an appraisal report replaces an independent home inspection, which evaluates structural condition rather than market value.",
+     "replacement": "Assuming an appraisal report replaces an independent home inspection.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe evaluations of structural condition versus market value."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "First-time buyers should establish a firm budget and build emergency savings before shopping.",
+     "replacement": "First-time buyers should establish a budget and review their credit before shopping.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention emergency savings."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Securing a mortgage pre-approval confirms your borrowing limits before making an offer.",
+     "replacement": "Securing a mortgage pre-approval comes before making an offer.",
+     "type": "unsupported",
+     "why": "SOURCE does not state pre-approval confirms borrowing limits."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Include financing, appraisal, and inspection contingencies in your purchase agreement to protect your earnest money.",
+     "replacement": "Include financing, appraisal, and inspection contingencies in your purchase offer.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention earnest money."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Look for visible water stains, aging roof coverings, and outdated electrical panels during initial property showings.",
+     "replacement": "Look for visible water stains and aging roof coverings during initial property showings.",
+     "type": "unsupported",
+     "why": "SOURCE does not list electrical panels."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "For managed communities, examine association rules and monthly assessment fees.",
+     "replacement": "For managed communities, examine association rules and HOA dues.",
+     "type": "unsupported",
+     "why": "SOURCE lists HOA rules and dues, not monthly assessment fees."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "This federal requirement gives you adequate time to compare final loan charges against your original Loan Estimate.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this purpose or mention loan charges."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Review every fee, interest rate, and required cash-to-close figure during this three-day period.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE forbids stating unlisted fees, rates, or figures."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Selecting a condo adds tasks for reviewing condominium association financial reserves, monthly HOA dues, and common element rules.",
+     "replacement": "Selecting a condo adds tasks for reviewing HOA dues and association documents.",
+     "type": "unsupported",
+     "why": "SOURCE specifies HOA dues and documents, not financial reserves or common element rules."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "It also removes external maintenance items that the master association handles, such as private septic tanks or standalone roof framing.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state condos remove septic tanks or standalone roof framing."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Standard homeowners policies generally exclude damage caused by external flooding and rising surface water.",
+     "replacement": "Standard homeowners policies generally do not cover flood damage.",
+     "type": "unsupported",
+     "why": "SOURCE states standard policies generally do not cover flood damage."
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "It also drops lender-required items like Loan Estimates, lender appraisal mandates, escrow reserves, and mandatory mortgage insurance.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE only states paying cash hides mortgage pre-approval."
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "Property inspections, title searches, municipal transfer documents, and final walkthrough checks remain on your list.",
+     "replacement": "Property inspections and final walkthrough checks remain on your list.",
+     "type": "unsupported",
+     "why": "SOURCE does not list title searches or municipal transfer documents."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Federal Housing Administration (FHA) loans add mortgage insurance items and strict property criteria.",
+     "replacement": "Federal Housing Administration (FHA) loans add mortgage insurance items and minimum property requirements.",
+     "type": "unsupported",
+     "why": "SOURCE specifies minimum property requirements, not strict property criteria."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Check state-specific rules with your real estate agent, mortgage lender, or real estate attorney.",
+     "replacement": "",
+     "type": "unlinked-directive",
+     "why": "Directs reader to consult outside professionals without a markdown link."
+    },
+    {
+     "id": "commonMistakes[2]",
+     "quote": "Assuming an appraisal report replaces an independent home inspection.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that buyers assume appraisals replace home inspections."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Include financing, appraisal, and inspection contingencies in your purchase offer.",
+     "replacement": "Include contract contingencies in your purchase offer.",
+     "type": "unsupported",
+     "why": "SOURCE does not name financing or appraisal contingencies."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "A seventh follow-up phase covers safety tasks during your first week in the house.",
+     "replacement": "A seventh phase covers your first week in the house.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that the first week phase covers safety tasks."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "For newly built homes, the checklist adds builder warranty reviews.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE CLOSED FACT LIST does not contain builder warranty reviews; COVER cannot support claims."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Before transferring closing funds, call your escrow or title company using an independently verified phone number to confirm wiring instructions and prevent wire fraud.",
+     "replacement": "Before transferring closing funds, call your escrow or title company at a number you already know to confirm wiring instructions and prevent wire fraud.",
+     "type": "unsupported",
+     "why": "SOURCE states to call at a number you already know, not an independently verified number."
+    },
+    {
+     "id": "workedExample",
+     "quote": "That run activated FHA mortgage insurance, FHA condo project approval, FHA minimum property requirement repairs, HOA document reviews, hurricane shutter checks, and windstorm deductibles, while removing frozen-pipe checks.",
+     "replacement": "That run activated FHA mortgage insurance, FHA condo project approval, FHA minimum property requirement repairs, HOA dues and documents, the roof/wind-resistance check, and the hurricane deductible check, while removing frozen-pipe checks.",
+     "type": "unsupported",
+     "why": "SOURCE specifies roof/wind-resistance check, not hurricane shutter checks, for Scenario A."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Look for visible water stains and aging roof coverings during initial property showings.",
+     "replacement": "Look for visible water stains and check the flood map during initial property showings.",
+     "type": "unsupported",
+     "why": "SOURCE does not list roof coverings among house-hunting checks."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Check the age and condition of heating and cooling equipment as well as property tax histories.",
+     "replacement": "Check system ages as well as property tax histories.",
+     "type": "unsupported",
+     "why": "SOURCE states system ages, not heating and cooling equipment condition."
+    }
+   ],
+   "deleted_final": 5,
+   "unapplied": [
+    {
+     "quote": "Under the [EPA real estate disclosure](https://www.epa.gov/lead/real-estate-disclosure) regulations, buyers receive a 10-day window to test for lead hazards unless mutually waived in writing.",
+     "type": "unsupported",
+     "why": "SOURCE states buyers can waive the opportunity, not that it must be in writing.",
+     "replacement": "Under the [EPA real estate disclosure](https://www.epa.gov/lead/real-estate-disclosure) regulations, buyers receive a 10-day opportunity to test for lead hazards (they can waive it).",
+     "id": "howItWorks",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "howItWorks",
+     "quote": "Under the [EPA real estate disclosure](https://www.epa.gov/lead/real-estate-disclosure) regulations, buyers receive a 10-day window to test for lead hazards unless mutually waived in writing.",
+     "type": "unsupported",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 1459
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-26T00:50:46-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-25/audit/home-buying-checklist.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "Buying a house involves six stages: budget and credit, mortgage pre-approval, house hunting, offer and contract contingencies, inspection and appraisal, and insurance and closing.",
+      "replacement": "Buying a house runs in seven stages: budget and credit, mortgage pre-approval, house hunting, offer and contract, inspection and appraisal, insurance and closing, and your first week in the house.",
+      "type": "Incorrect stage count",
+      "why": "The tool contains seven stages."
+     },
+     {
+      "id": "introText",
+      "quote": "and the tool above creates that personalized list for you.",
+      "replacement": "and the checklist builder below creates that list for you.",
+      "type": "Positional mismatch",
+      "why": "The introText appears above the tool."
+     },
+     {
+      "id": "introText",
+      "quote": "The tool drops items that do not apply to your situation, updates your item count in your browser, and lets you print the customized worksheet using the Print or save as PDF button.",
+      "replacement": "The tool drops items that do not apply and updates your item count. Print the finished worksheet with the Print or save as PDF button.",
+      "type": "Run-on sentence",
+      "why": "Split run-on sentence for conciseness."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "The home buying process moves across six core stages.",
+      "replacement": "The home buying checklist has seven stages.",
+      "type": "Incorrect stage count",
+      "why": "The tool includes seven distinct stages."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "The sixth stage wraps up homeowners insurance and the final walkthrough before closing.",
+      "replacement": "The sixth stage wraps up homeowners insurance and the final walkthrough before closing. The seventh stage covers your first week in the house: new locks, alarm tests, utilities and filing your closing documents.",
+      "type": "Missing seventh stage description",
+      "why": "Stage 7 must be covered."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Setting the switches for freezing winter regions adds checks for pipes running through unheated spaces, heating service, and locating the main water shutoff valve.",
+      "replacement": "Turning on Winters reach freezing adds a check for pipes in unheated spaces and, in the first week, finding the main water shutoff.",
+      "type": "Unsupported check item",
+      "why": "Checklist lacks a heating-service item."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "while reminding buyers that standard policies exclude earthquake damage.",
+      "replacement": "and a reminder that standard homeowners policies generally exclude earthquake damage.",
+      "type": "Inaccurate qualifier omitted",
+      "why": "Source specifies policies generally exclude coverage."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "provide the Environmental Protection Agency pamphlet titled Protect Your Family From Lead in Your Home. Under the [EPA real estate disclosure](https://www.epa.gov/lead/real-estate-disclosure) regulations, buyers receive a 10-day window to test for lead hazards unless mutually waived in writing.",
+      "replacement": "provide the [Environmental Protection Agency (EPA)](https://www.epa.gov/lead/real-estate-disclosure) pamphlet Protect Your Family From Lead in Your Home. Buyers get a 10-day opportunity to test for lead, which they can waive.",
+      "type": "Unlinked first mention and ungrounded phrase",
+      "why": "Define/link EPA; remove ungrounded waiver phrase."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "adds homeowner association review tasks, including examining HOA dues and documents.",
+      "replacement": "adds homeowners association (HOA) tasks, including HOA dues and documents.",
+      "type": "Undefined acronym",
+      "why": "Define HOA on first mention."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Under Consumer Financial Protection Bureau regulations, your lender must deliver an official [Loan Estimate](https://www.consumerfinance.gov/ask-cfpb/what-is-a-loan-estimate-en-1995/)",
+      "replacement": "Under [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-a-loan-estimate-en-1995/) rules, your lender must deliver a Loan Estimate",
+      "type": "Unlinked CFPB first mention",
+      "why": "Link CFPB on first mention."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "For a United States Department of Agriculture (USDA) loan, the address must sit in an eligible area, which you can verify directly on the official [USDA eligibility map](https://eligibility.sc.egov.usda.gov/eligibility/welcomeAction.do).",
+      "replacement": "For a [United States Department of Agriculture (USDA)](https://eligibility.sc.egov.usda.gov/eligibility/welcomeAction.do) loan, the address must sit in an eligible area on the USDA eligibility map.",
+      "type": "Unlinked USDA first mention",
+      "why": "Link USDA on first mention."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Federal Housing Administration (FHA)",
+      "replacement": "[Federal Housing Administration (FHA)](https://www.hud.gov/helping-americans/loans)",
+      "type": "Unlinked FHA first mention",
+      "why": "Add official HUD link to first mention."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Department of Veterans Affairs (VA)",
+      "replacement": "[Department of Veterans Affairs (VA)](https://www.va.gov/housing-assistance/home-loans/how-to-request-coe/)",
+      "type": "Unlinked VA first mention",
+      "why": "Add official VA link to first mention."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "While this checklist organizes your milestones, remember it serves as a planning aid rather than legal or financial advice. State laws govern seller disclosure forms and regional closing customs.",
+      "replacement": "This checklist is a planning aid, not legal or financial advice. Confirm your state's seller disclosure form and local closing customs with your agent, lender or a real estate attorney.",
+      "type": "Patronizing wording and missing next action",
+      "why": "Avoid patronizing tone and state action clearly."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "The process moves across six distinct milestones starting with budgeting and mortgage pre-approval. You then tour houses, submit an offer with protective contingencies, and complete professional property inspections. The final stretch involves securing homeowners insurance, completing an appraisal, and finalizing loan documents before closing. A seventh phase covers your first week in the house.",
+      "replacement": "The process runs in seven stages. You set a budget and get pre-approved, tour houses, make an offer with contingencies, then complete the inspection and appraisal. Next you buy homeowners insurance and close, and the seventh stage covers your first week in the house.",
+      "type": "Contradictory stage count and misplaced appraisal",
+      "why": "Align stage count and milestone order."
+     },
+     {
+      "id": "faqs[7].answer",
+      "quote": "Click the Print or save as PDF button located near the bottom of the tool.",
+      "replacement": "Click the Print or save as PDF button at the top of the checklist, next to Clear.",
+      "type": "Incorrect button placement",
+      "why": "Button is at top next to Clear."
+     },
+     {
+      "id": "commonMistakes[4]",
+      "quote": "Forgetting to verify USDA property eligibility on the official agency map before submitting a loan application.",
+      "replacement": "Forgetting to check the address on the USDA eligibility map before making an offer.",
+      "type": "Incorrect timing rule",
+      "why": "Check address before making an offer."
+     },
+     {
+      "id": "commonMistakes[0]",
+      "quote": "Relying on a standard homeowners insurance policy to cover flood damage, even though standard policies generally do not cover flood damage.",
+      "replacement": "Assuming a standard homeowners policy covers flood damage. Standard policies generally do not.",
+      "type": "Redundant phrasing",
+      "why": "Remove repetitive text."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "howItWorks",
+       "quote": "The seventh stage covers your first week in the house: new locks, alarm tests, utilities and filing your closing documents.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1263,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'The seventh stage covers your first week in the house: new locks, alarm tests, u'"
+    ]
+   }
+  ]
+ },
+ "seconds": 353.4,
+ "response_id": "p93eapHdKuWA1sgPmczm0Ac",
+ "generated_at": "2026-10-26T00:03:01-0500"
+}

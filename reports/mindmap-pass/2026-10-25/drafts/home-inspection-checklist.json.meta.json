@@ -1,0 +1,430 @@
+{
+ "slug": "home-inspection-checklist",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1357,
+ "floor": 900,
+ "input_tokens": 20491,
+ "output_tokens": 2198,
+ "thinking_tokens": 1136,
+ "cached_tokens": 17831,
+ "est_cost_usd": 0.0158,
+ "guards": {
+  "repairs": [
+   "slug None -> 'home-inspection-checklist'"
+  ],
+  "flags": [
+   "claim check: 9 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A visual examination covers each primary system of the house from the ground up.'; 'Plumbing installed before 1986 may include lead pipes or lead solder, while olde'; 'In cold climates where winters reach freezing, inspectors check pipe insulation '; 'Wildfire zones call for defensible space clearing around the perimeter, ember-re'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1296,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 530,
+   "floor": 900,
+   "ratio": 0.59,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    21,
+    0
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "The inspector evaluates the roof coverings, flashings, gutters, exterior wall cladding, foundation walls, grading, electrical panels, plumbing fixtures, heating equipment, air conditioning units, attic insulation, and interior rooms.",
+     "replacement": "The inspector evaluates the roof, structure, foundation, water and drainage, electrical systems, plumbing, heating and cooling, attic, insulation, interior, exterior, and grading.",
+     "type": "unsupported",
+     "why": "SOURCE does not list flashings, gutters, or wall cladding."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Horizontal or wide foundation cracks indicate structural pressure or movement.",
+     "replacement": "Horizontal or wide foundation cracks serve as red flag conditions.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that cracks indicate structural pressure or movement."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Active water stains on ceilings point to current roof or plumbing leaks.",
+     "replacement": "Active roof leaks are another major red flag.",
+     "type": "unsupported",
+     "why": "SOURCE specifies active roof leaks, not ceiling stains or plumbing leaks."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Soil sloping toward the foundation directs rainwater against basement or crawlspace walls instead of carrying it away.",
+     "replacement": "Soil sloping toward the house is also flagged as a warning condition.",
+     "type": "unsupported",
+     "why": "SOURCE does not state consequences of sloping soil on basement walls."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Inspectors do not perform environmental sampling or examine hidden underground lines.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state environmental sampling or hidden underground line exclusions."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "The [EPA radon guidance](https://www.epa.gov/radon) recommends testing all homes below the third floor for radon gas, but that test requires dedicated monitors.",
+     "replacement": "The [EPA radon guidance](https://www.epa.gov/radon) recommends testing all homes below the third floor for radon.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that radon testing requires dedicated monitors."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Polybutylene water supply pipes appeared frequently from about 1978 to 1995 and carry a high failure rate.",
+     "replacement": "Polybutylene water supply pipes were common in homes built from about 1978 to 1995.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that polybutylene pipes carry high failure rates."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "The [CPSC carbon monoxide and wiring advisories](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center) highlight aluminum branch wiring used in some properties from the mid-1960s to the mid-1970s.",
+     "replacement": "CPSC guidance notes aluminum branch wiring was used in some homes built from the mid-1960s to the mid-1970s.",
+     "type": "unsupported",
+     "why": "The linked CPSC URL is for carbon monoxide, not wiring advisories."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "A concrete slab requires careful monitoring of exterior grade height and plumbing buried beneath the floor.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state specific inspection checks for concrete slabs."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "A crawlspace demands checks for soil moisture barriers, foundation vents, framing rot, and subfloor insulation.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state specific inspection checks for crawlspaces."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "A full basement requires scrutiny for wall bowing, floor cracks, sump pump operation, and water intrusion along the cove joint.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state specific inspection checks for basements."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Condominiums shift exterior maintenance and roof upkeep to the homeowner association, so the checklist hides exterior and structural envelopes while focusing on interior finishes, branch plumbing, heating equipment, and individual electrical panels.",
+     "replacement": "For condominiums, the checklist hides the roof, exterior, structure, foundation, attic, and insulation sections while adding condo-specific checks.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention homeowner associations or specific interior focus areas."
+    },
+    {
+     "id": "workedExample",
+     "quote": "The rules kept 43 of the 62 items, dropping obsolete build-era electrical checks, basement water management checks, and private utility reviews.",
+     "replacement": "The rules kept 43 of the 62 items.",
+     "type": "unsupported",
+     "why": "SOURCE does not state which checks were dropped in Scenario A."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "The walk-through identifies physical damage, safety hazards, and components reaching the end of their operational lifespan.",
+     "replacement": "The tool lists these items for your home and flags findings that are red flags.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that inspections identify components reaching end of lifespan."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Major problems include horizontal foundation cracks, failing roof structures with active interior leaks, chronic drainage issues directing water into the home, and hazardous electrical systems such as knob-and-tube or ungrounded aluminum branch wiring.",
+     "replacement": "Major problems include horizontal or wide foundation cracks, active roof leaks, water intrusion, and unsafe wiring such as knob-and-tube or aluminum branch wiring.",
+     "type": "unsupported",
+     "why": "SOURCE does not state ungrounded wiring, failing roof structures, or chronic drainage."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "These defects threaten occupant safety and require extensive structural remediation.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that defects require extensive structural remediation."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Standard inspections exclude hidden lines, internal wall cavities, and specialized environmental testing.",
+     "replacement": "Standard home inspection standards of practice exclude many specialized items.",
+     "type": "unsupported",
+     "why": "SOURCE does not state hidden lines or internal cavities are excluded."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Yes, you should attend the final portion of the inspection walk-through.",
+     "replacement": "Yes, you should attend the inspection in person and bring your printed checklist.",
+     "type": "unsupported",
+     "why": "SOURCE states to attend, not attend the final portion."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Walking the property with the inspector allows you to observe major issues firsthand and ask clarifying questions about necessary maintenance.",
+     "replacement": "Bring the printed list to record notes as the inspector works.",
+     "type": "unsupported",
+     "why": "SOURCE does not state what walking the property allows you to observe."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "You will also learn the locations of critical utility shutoffs, including the main water valve and the main electrical breaker.",
+     "replacement": "After the report arrives, sort findings into safety, major systems, and cosmetic defects before negotiating.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that attending teaches utility shutoff locations."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Radon is an invisible, odorless radioactive gas that enters buildings through foundation cracks and soil contact.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not define radon or how it enters buildings."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 1464
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-26T00:57:43-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-25/audit/home-inspection-checklist.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "To use the tool above,",
+      "replacement": "To use the checklist builder below,",
+      "type": "introText is above the tool",
+      "why": "the tool appears below the introductory text"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Homes built before 1950 frequently contain knob-and-tube electrical wiring.",
+      "replacement": "Knob-and-tube wiring turns up in older homes, mostly those built before 1950.",
+      "type": "reverses the fact",
+      "why": "mostly before 1950 qualifies knob-and-tube wiring"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Coastal properties in hurricane zones require checks on roof decking attachments, impact-rated shutters or windows, and review of separate windstorm deductibles.",
+      "replacement": "On a hurricane-prone coast, the list adds the roof's age and how it is attached, and whether windows are impact-rated or have shutters.",
+      "type": "no deductible item; decking wrong",
+      "why": "align with source roof and window items"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Homeowners can prepare these items before listing a property by reviewing our [home selling checklist](/checklists/home-selling-checklist/).",
+      "replacement": "If you are selling, the [home selling checklist](/checklists/home-selling-checklist/) covers the repairs to make before you list.",
+      "type": "selling list doesn't carry these items",
+      "why": "accurate description of selling checklist scope"
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "The most serious defects involve structural instability, active water intrusion, and severe safety hazards. Major problems include horizontal or wide foundation cracks, active roof leaks, water intrusion, and unsafe wiring such as knob-and-tube or aluminum branch wiring.",
+      "replacement": "The most serious findings are structural problems, active water intrusion and safety hazards. The tool's red flags are horizontal or wide foundation cracks, active roof leaks and soil sloping toward the house. Old knob-and-tube wiring and aluminum branch wiring also matter.",
+      "type": "repetition; unsafe unsupported",
+      "why": "removes water intrusion repetition and unsupported claims"
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "Yes, you should attend the inspection in person and bring your printed checklist. Bring the printed list to record notes as the inspector works.",
+      "replacement": "Yes. Attend in person and bring the printed checklist to record notes as the inspector works.",
+      "type": "repeats",
+      "why": "removes redundant printed checklist sentence"
+     },
+     {
+      "id": "faqs[6].answer",
+      "quote": "for the significant defects",
+      "replacement": "for the major defects",
+      "type": "banned word",
+      "why": "replaces banned word significant with major"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "The [EPA radon guidance](https://www.epa.gov/radon) recommends testing all homes below the third floor for radon.",
+      "replacement": "The [EPA radon guidance](https://www.epa.gov/radon) recommends testing all homes below the third floor, so add a radon test.",
+      "type": "rhythm, five equal sentences",
+      "why": "varies sentence length and flow"
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "howItWorks",
+      "quote": "CPSC guidance notes aluminum branch wiring was used",
+      "finding": "first mention unlinked and undefined",
+      "why": "needs new substance",
+      "replacement": null,
+      "reason": "not fixable in place"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Foundation design and property ownership structure shift the focus of the walk-through.",
+      "finding": "promises coverage that never comes",
+      "why": "needs new substance",
+      "replacement": null,
+      "reason": "not fixable in place"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Earthquake zones require water heater strapping and foundation anchor bolting on older framing.",
+      "finding": "no strapping item here; bolting only pre-1978",
+      "why": "needs new substance",
+      "replacement": null,
+      "reason": "not fixable in place"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "howItWorks",
+       "quote": "Sewer-line camera inspections, septic tank evaluations, and well water testing also require independent specialists.",
+       "type": "contradicted",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1302,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Sewer-line camera inspections, septic tank evaluations, and well water testing a'"
+    ]
+   },
+   {
+    "round": 2,
+    "at": "2026-10-26T01:02:44-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-25/audit/home-inspection-checklist.findings2.txt",
+    "applied": [
+     {
+      "id": "howItWorks",
+      "quote": "Foundation design and property ownership structure shift the focus of the walk-through.",
+      "replacement": "Foundation type and condo ownership both change the list. Basement adds water lines, efflorescence and the sump pump. Crawlspace adds standing water, the vapor barrier and wood rot, and Slab adds floor cracks and under-slab leaks. Not sure shows both the basement and crawlspace checks.",
+      "type": "promises coverage that never comes",
+      "why": "Detail foundation type checks from fact list"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Earthquake zones require water heater strapping and foundation anchor bolting on older framing.",
+      "replacement": "In an earthquake area, a house built before 1978 adds a check that the frame is bolted to the foundation.",
+      "type": "no strapping item here; bolting only pre-1978",
+      "why": "Match fact list earthquake criteria"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Sewer-line camera inspections, septic tank evaluations, and well water testing also require independent specialists.",
+      "replacement": "The checklist adds a sewer-line camera scope for older homes on city sewer, a septic inspection for a septic system, and a well water test for a private well.",
+      "type": "require independent specialists is not on fact list",
+      "why": "Replace unsupported requirement claim with fact list items"
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "howItWorks",
+      "quote": "CPSC guidance notes aluminum branch wiring was used",
+      "finding": "first mention unlinked and undefined",
+      "why": "Define and link CPSC",
+      "replacement": "[Consumer Product Safety Commission (CPSC)](https://www.cpsc.gov/s3fs-public/516.pdf) guidance notes aluminum branch wiring was used",
+      "reason": "replacement adds ['Commission'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      9
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "howItWorks",
+       "quote": "A visual examination covers each primary system of the house from the ground up.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Plumbing installed before 1986 may include lead pipes or lead solder, while older insulation, flooring tiles, and duct wrap may harbor asbestos fibers that should remain undisturbed.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "In cold climates where winters reach freezing, inspectors check pipe insulation in unheated spaces, verify the main water shutoff valve, and test the heating system.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Wildfire zones call for defensible space clearing around the perimeter, ember-resistant attic vents, and fire-resistant roofing materials.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "If you are selling, the [home selling checklist](/checklists/home-selling-checklist/) covers the repairs to make before you list.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "When the written report arrives, sort the defects into three distinct groups: immediate safety hazards, failing major mechanical systems, and cosmetic flaws.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Gather repair estimates from licensed trade contractors for the serious structural and mechanical defects.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Use those concrete contractor quotes to negotiate repair credits or price adjustments before your contractual inspection contingency expires.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "After agreements are settled, verify that every negotiated repair was completed properly by following our [final walkthrough checklist](/checklists/final-walkthrough-checklist/).",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1357,
+    "flags": [
+     "claim check: 9 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A visual examination covers each primary system of the house from the ground up.'; 'Plumbing installed before 1986 may include lead pipes or lead solder, while olde'; 'In cold climates where winters reach freezing, inspectors check pipe insulation '; 'Wildfire zones call for defensible space clearing around the perimeter, ember-re'"
+    ]
+   }
+  ]
+ },
+ "seconds": 205.9,
+ "response_id": "muDeaufVGve_ytMP-9W18QY",
+ "generated_at": "2026-10-26T00:13:10-0500"
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Rental Checklist: What to Check Before Renting",
+  "metaDescription": "Customize and print your rental checklist. Filter tasks for a house, apartment, or room, check local climate conditions, and save a PDF worksheet.",
+  "h1": "Rental Checklist",
+  "introText": "Before you sign any lease, check four core areas: the physical unit, the lease terms, the full move-in cost, and who handles ongoing maintenance tasks. A whole house adds yard, utility, and maintenance duties an apartment usually does not. You can balance these ongoing home payments against your monthly income using our [budget tools](/budget/). \n\nThe rental checklist above adapts to your property type, home age, and regional climate risks. Choose your home type, pet plans, and parking needs to remove tasks that do not apply to your situation. Selecting your state sets four climate switches for freezing winters, wildfire hazards, hurricane coasts, and earthquake zones. Once you adjust the switches for your local town, select Print or save as PDF to create a clean paper worksheet for your property visits.",
+  "toolHeading": "Build your custom rental checklist",
+  "toolSubheading": "Select your property type, pet status, and location to generate a targeted inspection worksheet.",
+  "howItWorks": "Our rental checklist organizes preparation into six distinct chronological sections. Section one covers steps to take before you apply, including checking your credit and confirming local market rents. Section two provides an apartment tour checklist to inspect physical conditions like water, active signs of pests, noise, and safety. Section three lists questions to ask the landlord about utilities and maintenance responsibilities. Section four outlines key lease clauses to review, while section five guides you through the application and tenant-screening disclosures. Section six handles move-in day, linking directly to our [move-in condition checklist](/checklists/move-in-move-out-checklist/) so you can document baseline damage.\n\nOn the physical tour, test the home from the inside out to confirm everything works. Check the unit itself for overall condition, pests, water, noise, and safety. The [National Fire Protection Association](https://www.nfpa.org/education-and-research/home-fire-safety/smoke-alarms) advises smoke alarms inside every bedroom, outside each sleeping area, and on every level of the home. These alarms require monthly testing and total replacement every 10 years.\n\nBefore you pay an application fee, ask direct questions about routine maintenance and study the proposed lease contract. Ask questions about repair responsibilities, package handling, and parking. Review the written agreement for fees, repair obligations, and break-lease terms. State laws govern security-deposit caps, return deadlines, and landlord entry-notice requirements rather than a single federal standard. You can verify your specific local protections on the [HUD tenant rights portal](https://www.hud.gov/topics/rental_assistance/tenantrights). If you are weighing whether leasing fits your finances long-term, compare ownership costs with our [renting vs buying guide](/compare/renting-vs-buying/).\n\nWhat you check changes based on whether you rent an apartment, a whole house, or a single room. A house inspection checklist demands attention to yard, utility, and maintenance duties. You must identify who pays for lawn care, snow, pests, and filters. An apartment focuses on management-company reviews, building noise, trash, and package handling. If this is your first time setting up a lease, review our [first apartment checklist](/checklists/first-apartment-checklist/).\n\nYour geographic location also shifts what matters on a property walkthrough. Freezing winter climates require checking insulation on exposed pipes in unheated spaces and locating the main water shutoff valve. Coastal regions require checking storm shutter hardware, roof condition, and evacuation zones. Check the [FEMA Flood Map Service Center](https://msc.fema.gov/portal/home) to see if the property sits in a high-risk flood area, since standard renters insurance policies exclude flood damage. At the same time, watch for deceptive listings across all regions. The [FTC rental scam guide](https://consumer.ftc.gov/articles/rental-listing-scams) warns renters to walk away if an advertiser pressures you to pay before visiting, demands wire transfers or cryptocurrency, or offers rent far below local rates.\n\nTake this checklist on every tour, print a fresh copy for each property, and demand every verbal agreement in written lease text. Get every promise in writing. Remember that state and municipal statutes dictate security-deposit limits and entry notices, so check your state rules before submitting payment.",
+  "workedExample": "In our internal comparison, we ran the checklist rules for two example homes to evaluate how the list adapts to different properties. The full master library contains 53 potential inspection tasks across the six leasing stages.\n\nScenario A evaluated an apartment in a large complex built after 2000 in Miami, Florida, with the hurricane coast switch active. The tool kept 37 of the 53 items, including management-company reviews, building noise, trash and package handling, and knowing your evacuation zone, and no frozen-pipe question. Scenario B evaluated a single-family house built in 1970 in Denver, Colorado, for a tenant with a pet, turning on both freezing winters and wildfire conditions. That search kept 44 of the 53 items. It added yard, garage and maintenance duties, who pays for lawn care, snow, pests and filters, the winter heat setting and who pays if a pipe freezes, pet deposit and pet addendum terms, the lead-paint disclosure, putting utilities in your name, finding the water shutoff, and learning two ways out of the neighborhood.",
+  "commonMistakes": [
+    "Relying on verbal agreements made during a walkthrough instead of requiring those terms inside the signed lease.",
+    "Sending an application fee or deposit by wire transfer, gift card, or cryptocurrency before viewing the interior.",
+    "Failing to ask who pays for utilities, lawn care, snow removal, and pests at a rental house.",
+    "Skipping a physical inspection of plumbing, heating, and unit safety during the visit.",
+    "Assuming a standard renters insurance policy automatically covers damage from rising surface floodwaters.",
+    "Neglecting to document baseline property damage on a move-in condition checklist."
+  ],
+  "faqs": [
+    {
+      "question": "What are the key things to check before renting a house?",
+      "answer": "Inspect the unit itself for overall condition, pests, water, noise, and safety. Clarify who handles lawn care, snow removal, and seasonal pest control before applying. Verify utility arrangements and find the location of the main water shutoff valve."
+    },
+    {
+      "question": "What do I need when looking at an apartment?",
+      "answer": "Bring a printed checklist to use as a worksheet on the tour. Prepare your photo ID, recent pay stubs or offer letter, and landlord references. Check the unit itself for overall condition, pests, water, noise, and safety."
+    },
+    {
+      "question": "What are red flags in a lease?",
+      "answer": "Unexplained fees, vague repair responsibilities, and missing security-deposit refund terms signal serious trouble. Never sign an agreement if the manager refuses to put verbal promises into writing. Pressure to pay upfront funds before inspecting the unit in person indicates an active rental scam."
+    },
+    {
+      "question": "What questions should I ask when renting?",
+      "answer": "Ask which utilities are included in the rent and who handles maintenance duties. Inquire about parking, pet deposit and addendum terms, fees, and break-lease terms. For a house, ask specifically who pays for lawn care, snow removal, pests, and filters."
+    },
+    {
+      "question": "What documents do you need to rent a house?",
+      "answer": "You need photo ID, recent pay stubs or an offer letter, and landlord references. Review your own credit report before applying to correct potential errors early. Federal rules also require landlords to provide a lead-based paint disclosure pamphlet for homes built before 1978."
+    },
+    {
+      "question": "How do I avoid a rental scam?",
+      "answer": "Always inspect the interior of the rental unit in person before sending any money. Avoid listings that demand wire transfers, gift cards, or cryptocurrency payments, or that advertise rent far below local market averages. Search the address online for duplicate listings and confirm the listing on the company's own site."
+    },
+    {
+      "question": "How is renting a house different from renting an apartment?",
+      "answer": "A house adds yard, utility, and maintenance duties an apartment usually does not. An apartment focuses on building noise, trash, and package handling. A house also adds utility duties and putting utilities in your name."
+    },
+    {
+      "question": "Can I print this rental checklist?",
+      "answer": "Yes. Choose your home type, pet preferences, and state climate settings in the tool above, then select the Print or save as PDF button. The system formats a clean paper checklist with designated blank lines for your name, inspection date, and rental address."
+    }
+  ],
+  "slug": "renting-checklist"
+}

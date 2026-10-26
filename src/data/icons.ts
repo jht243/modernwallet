@@ -55,10 +55,14 @@ const CATEGORY_SHAPE: Record<string, string> = {
   "auto-loan": "car", "mortgage": "house", "retirement": "sun", "investing": "trending",
   "portfolio": "pie", "real-estate": "building", "net-worth": "scale", "budget": "wallet",
   "merchant-cash-advance": "fast", "invoice-factoring": "coins", "business-line-of-credit": "building",
+  "checklists": "list",
 };
 
 // Per-spoke concept shape so cards within a category still look different.
 const SPOKE_SHAPE: Record<string, string> = {
+  "checklists/home-buying-checklist": "house", "checklists/home-selling-checklist": "flag", "checklists/renting-checklist": "building",
+  "checklists/landlord-checklist": "coins", "checklists/home-inspection-checklist": "shield", "checklists/final-walkthrough-checklist": "target",
+  "checklists/move-in-move-out-checklist": "calendar", "checklists/first-apartment-checklist": "wallet",
   "auto-loan/payoff-calculator": "flag",
   "auto-loan/extra-payment-calculator": "plus",
   "auto-loan/early-payoff-calculator": "fast",

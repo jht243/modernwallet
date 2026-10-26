@@ -1,0 +1,52 @@
+{
+ "title": "Home Buying Checklist: Printable Step-by-Step Guide",
+ "metaDescription": "Build a customized, printable home buying checklist matched to your loan, property type, and local hazards. Track every step from pre-approval to closing.",
+ "h1": "Home Buying Checklist",
+ "introText": "Buying a house runs in seven stages: budget and credit, mortgage pre-approval, house hunting, offer and contract, inspection and appraisal, insurance and closing, and your first week in the house. Which tasks apply to your purchase depends on your financing, property type, and property location, and the checklist builder below creates that list for you.\n\nTo build your home buying checklist, select your home type, build year, and payment method in the tool. Turn on the local environmental conditions that match your town, or pick your state to apply initial presets. The tool drops items that do not apply and updates your item count. Print the finished worksheet with the Print or save as PDF button.",
+ "toolHeading": "Build your home buying checklist",
+ "toolSubheading": "Answer a few questions about the property, your financing, and local climate risks to generate your tailored worksheet.",
+ "howItWorks": "The home buying checklist has seven stages. First, you review your budget, credit profile, and savings for upfront expenses. You can project your numbers with the [home affordability calculator](/mortgage/home-affordability-calculator/), the [down payment calculator](/mortgage/down-payment-calculator/), and the [closing cost calculator](/mortgage/closing-cost-calculator/). The second stage covers mortgage pre-approval, followed by the third stage of house hunting. The fourth stage involves structuring your purchase offer and selecting contract contingencies. The fifth stage handles physical evaluations, linking directly to our [home inspection checklist](/checklists/home-inspection-checklist/) and lender appraisals. The sixth stage wraps up homeowners insurance and the final walkthrough before closing. The seventh stage covers your first week in the house: new locks, alarm tests, utilities and filing your closing documents.\n\nYour financing choice immediately reshapes your required tasks. When you buy with cash, the entire mortgage pre-approval section hides. If you choose a government-backed loan, specific federal rules apply. [Federal Housing Administration (FHA)](https://www.hud.gov/helping-americans/loans) loans add mortgage insurance items and minimum property requirements. [Department of Veterans Affairs (VA)](https://www.va.gov/housing-assistance/home-loans/how-to-request-coe/) loans require obtaining a Certificate of Eligibility. Both FHA and VA appraisals verify minimum property requirements, meaning any flagged repairs must be completed before closing. For a [United States Department of Agriculture (USDA)](https://eligibility.sc.egov.usda.gov/eligibility/welcomeAction.do) loan, the address must sit in an eligible area on the USDA eligibility map.\n\nThe property type and year of construction determine another set of checks. Buying a condo or townhouse adds homeowners association (HOA) tasks, including HOA dues and documents. Condo purchases using FHA or VA financing also add a condo project approval verification. For homes built before 1978, federal law requires sellers to disclose known lead-based paint and provide the [Environmental Protection Agency (EPA)](https://www.epa.gov/lead/real-estate-disclosure) pamphlet Protect Your Family From Lead in Your Home. Buyers get a 10-day opportunity to test for lead, which they can waive. \n\nLocal environmental hazards introduce location-specific inspections. Turning on Winters reach freezing adds a check for pipes in unheated spaces and, in the first week, finding the main water shutoff. In coastal hurricane areas, the checklist adds wind mitigation checks, such as roof-to-wall attachments, storm shutters, and verifying separate wind or hurricane deductibles on your insurance quote. Selecting a wildfire zone prompts tasks for defensible space clearance, ember-resistant vents, and insurer availability. For earthquake-prone regions, the list adds water heater strapping and frame-to-foundation bolting on older houses, plus a reminder that standard homeowners policies generally exclude earthquake damage.\n\nLoan timing rules protect your financing schedule. Under [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-a-loan-estimate-en-1995/) rules, your lender must deliver a Loan Estimate within three business days of receiving your completed application. Later in the purchase, your lender must provide the [Closing Disclosure](https://www.consumerfinance.gov/ask-cfpb/what-is-a-closing-disclosure-en-1983/) at least three business days before you sign final closing documents. Before transferring closing funds, call your escrow or title company at a number you already know to confirm wiring instructions and prevent wire fraud.\n\nYour immediate next step is to answer the questions in the tool above, click Print or save as PDF, and follow the generated tasks stage by stage. This checklist is a planning aid, not legal or financial advice. Confirm your state's seller disclosure form and local closing customs with your agent, lender or a real estate attorney.",
+ "workedExample": "In our internal comparison, we ran the checklist's rules for two example homes to evaluate how the list adapts to property and loan profiles. Across the full 59-item library, each scenario kept only the tasks relevant to its specific constraints.\n\nIn Scenario A, an FHA buyer purchasing a condo built after 2000 in Miami, Florida kept 41 of 59 items. That run activated FHA mortgage insurance, FHA condo project approval, FHA minimum property requirement repairs, HOA dues and documents, the roof/wind-resistance check, and the hurricane deductible check, while removing frozen-pipe checks. In Scenario B, a repeat buyer using a conventional mortgage on a 1962 single-family home in Minneapolis kept 37 of 59 items. That run added lead-based paint disclosures, the 10-day lead test period, sewer camera scoping, and freezing-winter plumbing checks, while dropping the condo and hurricane tasks.",
+ "commonMistakes": [
+  "Assuming a standard homeowners policy covers flood damage. Standard policies generally do not.",
+  "Wiring closing funds before calling the escrow officer at a known phone number to verify wire instructions.",
+  "Overlooking the three-business-day review window after receiving the Closing Disclosure before signing final paperwork.",
+  "Skipping the 10-day lead-based paint risk evaluation window when purchasing a residential property built before 1978.",
+  "Forgetting to check the address on the USDA eligibility map before making an offer."
+ ],
+ "faqs": [
+  {
+   "question": "What are things first time home buyers should know?",
+   "answer": "First-time buyers should establish a budget and review their credit before shopping. Securing a mortgage pre-approval comes before making an offer. Include contract contingencies in your purchase offer. Read our complete [first-time home buyer guide](/guides/first-time-home-buyer-guide/) for detailed step-by-step guidance."
+  },
+  {
+   "question": "What should I look for when buying a house?",
+   "answer": "Look for visible water stains and check the flood map during initial property showings. Check system ages as well as property tax histories. For managed communities, examine association rules and HOA dues. Use our detailed [home inspection checklist](/checklists/home-inspection-checklist/) to guide your physical review."
+  },
+  {
+   "question": "What are the steps in the home buying process?",
+   "answer": "The process runs in seven stages. You set a budget and get pre-approved, tour houses, make an offer with contingencies, then complete the inspection and appraisal. Next you buy homeowners insurance and close, and the seventh stage covers your first week in the house."
+  },
+  {
+   "question": "When do I get the Closing Disclosure?",
+   "answer": "Your mortgage lender must provide the Closing Disclosure at least three business days before your scheduled closing date."
+  },
+  {
+   "question": "How does the checklist change for a condo?",
+   "answer": "Selecting a condo adds tasks for reviewing HOA dues and association documents. If you use FHA or VA financing, the checklist adds a step to confirm project-level approval for the development."
+  },
+  {
+   "question": "Do I need flood insurance?",
+   "answer": "Flood insurance is required by lenders on most mortgages when the home sits in a high-risk flood hazard area. Standard homeowners policies generally do not cover flood damage. You can look up any property address on the official [FEMA Flood Map Service Center](https://msc.fema.gov/portal/home) to identify its flood zone."
+  },
+  {
+   "question": "What changes on the checklist if I pay cash?",
+   "answer": "Paying cash removes the mortgage pre-approval milestone from your task list entirely. Property inspections and final walkthrough checks remain on your list."
+  },
+  {
+   "question": "Can I save this checklist as a PDF?",
+   "answer": "Yes, you can generate a clean PDF directly from this page without signing up. Click the Print or save as PDF button at the top of the checklist, next to Clear. When your browser print dialog opens, set the printer destination to Save as PDF and save the worksheet to your device."
+  }
+ ],
+ "slug": "home-buying-checklist"
+}

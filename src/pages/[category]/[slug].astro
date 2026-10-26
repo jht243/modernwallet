@@ -15,6 +15,7 @@ import { titleCase } from "../../lib/format";
 import { personSchema, articleSchema, reviewerPersonSchema } from "../../lib/jsonld";
 import { iconForSpoke } from "../../data/icons";
 import CrossLinks from "../../components/CrossLinks.astro";
+import ChecklistFullList from "../../components/ChecklistFullList.astro";
 import LeadForm from "../../components/LeadForm.astro";
 import { BUSINESS_CALC_IDS } from "../../data/business-financing";
 import { NOINDEX_PILLARS } from "../../data/noindex";
@@ -49,6 +50,8 @@ const isLegal = LEGAL_PILLARS.has(calc.id);
 const shouldNoindex = NOINDEX_PILLARS.has(calc.id);
 const reviewer = isLegal ? (entry.reviewer ?? REVIEWER) : undefined;
 const disclaimerScope = calc.id === TAX_PILLAR ? "tax" : "legal";
+// Checklist pages (mindmap-pass 2026-10-25) reuse this template; only the calculator-specific labels change.
+const isChecklist = calc.id === "checklists";
 
 // Build-time computation — inject real numbers into static HTML before JS hydrates.
 const stats = spokeStats(entry);
@@ -130,8 +133,8 @@ const jsonLdApp = {
       )}
     </header>
 
-    <section class="tool-section" aria-label="Interactive calculator" data-tool={calc.id}>
-      <div class="tool-badge"><span class="dot"></span> Interactive — edit any field</div>
+    <section class="tool-section" aria-label={isChecklist ? "Interactive checklist" : "Interactive calculator"} data-tool={isChecklist ? entry.slug : calc.id}>
+      <div class="tool-badge"><span class="dot"></span> {isChecklist ? "Interactive — answer a few questions" : "Interactive — edit any field"}</div>
       <CalculatorIsland
         client:only="react"
         calculatorId={entry.islandId ?? calc.islandId}
@@ -142,8 +145,10 @@ const jsonLdApp = {
       />
     </section>
 
+    {isChecklist && <ChecklistFullList id={(entry.preset as { checklist: any }).checklist} />}
+
     <section class="section">
-      <h2>How it's calculated</h2>
+      <h2>{isChecklist ? "How the Checklist Is Built" : "How it's calculated"}</h2>
       {entry.howItWorks.split("\n\n").map((para) => <p set:html={linkify(para)} />)}
     </section>
 
@@ -189,14 +194,14 @@ const jsonLdApp = {
 
     {related.length > 0 && (
       <section class="section">
-        <h2>Related {calc.label.toLowerCase()} calculators</h2>
+        <h2>{isChecklist ? "Related Checklists" : `Related ${calc.label.toLowerCase()} calculators`}</h2>
         <div class="related-grid">
           {related.map((r) => (
             <LinkCard href={`/${r.calculator}/${r.slug}/`} title={r.targetKeyword} meta="Free · instant" icon={iconForSpoke(r.calculator, r.slug)} />
           ))}
         </div>
         <p class="related-all">
-          See all <a href={`/${calc.id}/`}>{calc.label.toLowerCase()} calculators</a>, or browse
+          See all <a href={`/${calc.id}/`}>{isChecklist ? "checklists" : `${calc.label.toLowerCase()} calculators`}</a>, or browse
           <a href="/calculators/"> every {SITE.name} calculator</a>.
         </p>
       </section>

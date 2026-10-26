@@ -1,0 +1,78 @@
+---
+// Server-rendered copy of a checklist's full item library (mindmap-pass 2026-10-25). The interactive
+// island is client-only, so this is what search engines and no-JS readers see: every item, with the
+// condition that switches it on, generated from the same rules file the tool runs on.
+import {
+  SECTIONS, FIRST_APARTMENT, MOVE_IN_TIPS, ONLY, SECTION_ONLY, SOURCES, TITLES, DEFAULT_PROFILE, roomsFor,
+  type ChecklistId,
+} from "../lib/checklists";
+
+interface Props { id: ChecklistId }
+const { id } = Astro.props;
+
+const listSections = SECTIONS[id] ?? [];
+const rooms =
+  id === "move-in-move-out"
+    ? roomsFor({ ...DEFAULT_PROFILE, propertyType: "single-family", bedrooms: 1, bathrooms: 1, laundry: true, dishwasher: true, balcony: true, garage: true, yard: true, furnished: true })
+    : [];
+---
+<section class="section cl-full" id="full-checklist">
+  <h2>The Complete {TITLES[id]}</h2>
+  {id === "move-in-move-out" ? (
+    <>
+      <p>Every room the form can include, with the items to record in each. The tool above adds rooms to match your bedrooms, bathrooms and features.</p>
+      <ul class="cl-tips">{MOVE_IN_TIPS.map((t) => <li>{t.text}{ONLY[t.id] && <span class="cl-only"> Only if: {ONLY[t.id]}</span>}</li>)}</ul>
+      {rooms.map((r) => (
+        <div class="cl-group">
+          <h3>{r.title}</h3>
+          <ul>{r.items.map((it) => <li>{it}</li>)}</ul>
+        </div>
+      ))}
+    </>
+  ) : id === "first-apartment" ? (
+    <>
+      <p>Every item the list can include. Items marked day one are the ones most people need the night they move in.</p>
+      {FIRST_APARTMENT.map((s) => (
+        <div class="cl-group">
+          <h3>{s.title}{SECTION_ONLY[s.id] && <span class="cl-only"> Only if: {SECTION_ONLY[s.id]}</span>}</h3>
+          <ul>
+            {s.items.map((it) => (
+              <li>{it.text}{it.dayOne && <span class="cl-day"> Day one</span>}{ONLY[it.id] && <span class="cl-only"> Only if: {ONLY[it.id]}</span>}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </>
+  ) : (
+    <>
+      <p>Every item the tool can include. Items marked "only if" appear in the tool when your answers match.</p>
+      {listSections.map((s) => (
+        <div class="cl-group">
+          <h3>{s.title}{SECTION_ONLY[s.id] && <span class="cl-only"> Only if: {SECTION_ONLY[s.id]}</span>}</h3>
+          <ul>
+            {s.items.map((it) => (
+              <li>
+                {it.text}
+                {it.note && <span class="cl-note"> {it.note}</span>}
+                {ONLY[it.id] && <span class="cl-only"> Only if: {ONLY[it.id]}</span>}
+                {it.link && <> <a href={it.link.href}>{it.link.label}</a></>}
+                {it.src && <> <a class="cl-src" href={SOURCES[it.src].url} rel="noopener noreferrer" target="_blank">({SOURCES[it.src].label.split(": ")[0]})</a></>}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </>
+  )}
+</section>
+
+<style>
+  .cl-full ul { margin: 0 0 6px; padding-left: 20px; }
+  .cl-full li { font-size: 0.98rem; line-height: 1.6; margin: 0 0 6px; color: #2c2c2c; }
+  .cl-group h3 { font-size: 1.08rem; margin: 18px 0 8px; }
+  .cl-note { color: #555; }
+  .cl-only, .cl-day { display: inline-block; font-size: 0.74rem; font-weight: 600; color: #0B5E4E; background: #E4F4EF; border-radius: 999px; padding: 1px 8px; margin-left: 4px; }
+  .cl-day { background: #FBF4E4; color: #7A5A12; }
+  .cl-src { font-size: 0.82rem; color: #0B5E4E; }
+  .cl-tips { background: #F4FAF8; border-radius: 10px; padding: 10px 12px 10px 30px; }
+</style>

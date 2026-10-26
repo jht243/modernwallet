@@ -1,0 +1,53 @@
+{
+ "title": "Move-In Checklist: Printable Condition Form",
+ "metaDescription": "Create a customized, printable move-in checklist for your rental. Walk each room, track fixture conditions, and compare side by side at move-out.",
+ "h1": "Move-In Checklist for Renters and Landlords",
+ "introText": "On a move-in checklist, you should write down the baseline condition of every wall, floor, window, fixture, and appliance in each room on the day you get the keys. Walking each room on move-in day to record existing marks, cracks, or operational issues with dated photographs provides a clear record for both tenant and landlord. That shared document serves as the reference point at move-out, because comparing those notes against current conditions determines any security deposit deductions.\n\nOur interactive tool lets you assemble a custom inspection sheet for your specific rental layout. You select your role as tenant or landlord, pick your property type, and enter your exact counts for bedrooms and bathrooms. Rooms such as a garage, yard or balcony appear only when you switch them on, so you only inspect spaces your rental actually has. When you finish customizing the sheet, click the Print or save as PDF button to produce a clean paper worksheet complete with property address lines and signature blocks.",
+ "toolHeading": "Build your move-in checklist",
+ "toolSubheading": "Select your property details to generate a room-by-room condition worksheet.",
+ "howItWorks": "A move-in condition form establishes a shared factual baseline before anyone unpacks furniture. Both tenant and landlord benefit from using the exact same document, because neither party has to rely on unwritten memory months or years later. The completed form gives everyone a neutral record of how the home looked the moment possession changed hands.\n\nFilling out the inspection form works best when you record specific, plain descriptions rather than broad terms. Take clear, dated photographs of any noted damage, and back those photos up alongside your written notes. Check every fixture and test appliances during your walk. Test the safety alarms too. The [National Fire Protection Association](https://www.nfpa.org/education-and-research/home-fire-safety/smoke-alarms) advises smoke alarms inside every bedroom, outside each sleeping area and on every level, tested monthly and replaced every 10 years. For carbon monoxide alarms, the [Consumer Product Safety Commission](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center) advises installing alarms on each level of the home and outside sleeping areas.\n\nThe tool above tailors the checklist layout to the rooms and amenities you choose. In our internal comparison, we ran the rules through the tool for two typical rental homes to evaluate the resulting worksheets. A compact studio apartment produces 5 rooms and 36 items to inspect, covering the entry, main room, kitchen, bathroom, and utility systems. A 3-bedroom, 2-bathroom house with an in-unit washer and dryer, dishwasher, garage, and yard produces 13 rooms and 89 items. \n\nWhen lease termination arrives, you pull out this identical form to complete the move-out inspection column. Comparing the move-in notes directly against the move-out column shows whether marks reflect pre-existing flaws or fresh tenant damage. Rules governing security deposit deductions, allowed repair charges, and deposit return deadlines are determined by state and local laws. Some state statutes require landlords to provide a written move-in condition checklist. You can look up your state regulations through the [Department of Housing and Urban Development (HUD)](https://www.hud.gov/topics/rental_assistance/tenantrights) tenant rights directory.\n\nTenants and landlords each have specific priorities to remember during the walkthrough. If you are a renter preparing for lease signing, our [renting checklist](/checklists/renting-checklist/) and [first apartment checklist](/checklists/first-apartment-checklist/) outline your broader planning steps. Tenants should focus on logging every small surface blemish before moving heavy furniture inside. Landlords should ensure all fixtures function properly and confirm that safety alarms pass standard operational tests.\n\nComplete the walkthrough on day one, sign the form together, and each keep a copy. Store the signed form and photo files until the lease ends. When moving day arrives at the end of tenancy, walk the rental again with this same move in checklist to confirm final property conditions together.",
+ "workedExample": "In our internal comparison, we ran the checklist's rules for two example homes to count the active fields generated for each property layout. \n\nOur rules produced 5 rooms and 36 items to record for the studio apartment, keeping the inspection focused on core living areas. The 3-bedroom, 2-bathroom house with laundry, dishwasher, garage, and yard produced 13 rooms and 89 items to record.",
+ "commonMistakes": [
+  "Relying on vague words like fair or normal instead of describing exact marks, chipped paint, or cracked tiles.",
+  "Skipping dated photographs of pre-existing flaws that support your written condition notes.",
+  "Failing to test basic operational elements such as appliances and safety alarms.",
+  "Leaving the form unsigned by either tenant or landlord at the end of the walkthrough.",
+  "Losing the move-in document before the lease ends, leaving you without evidence during the move-out inspection.",
+  "Assuming state deposit return rules match neighboring areas instead of checking state law."
+ ],
+ "faqs": [
+  {
+   "question": "What to write on a move-in checklist?",
+   "answer": "Write specific descriptions for every surface, appliance, and fixture across each room. Record items that operate smoothly as good or working properly."
+  },
+  {
+   "question": "Is a move-in checklist required?",
+   "answer": "Some states require landlords to give tenants a written move-in condition checklist. Security deposit limits and inspection requirements differ by state law. You can check local statutes on the [HUD tenant rights page](https://www.hud.gov/topics/rental_assistance/tenantrights)."
+  },
+  {
+   "question": "What should I check in an apartment before moving in?",
+   "answer": "Check walls, floors, ceilings, doors, and windows in every room for physical damage. Test fixtures, appliances, and systems. Confirm that smoke alarms and carbon monoxide alarms are present and functioning."
+  },
+  {
+   "question": "Should I take photos at move-in?",
+   "answer": "Yes, you should take clear, dated photos of every existing defect on move-in day. Photos provide objective visual proof that pairs directly with your written checklist. Store backups of the image files alongside your signed form."
+  },
+  {
+   "question": "How does the move-out checklist affect my deposit?",
+   "answer": "Landlords compare move-out conditions directly against the initial move-in record to identify new damage. Any legitimate repair deductions rely on showing that the flaw did not exist when you moved in. Statutory deposit return deadlines and deduction rules are governed by state law."
+  },
+  {
+   "question": "What if I find damage after I move in?",
+   "answer": "Report newly discovered damage to your landlord in writing as soon as you find it. Include clear, dated photographs of the problem and describe its location specifically. Keep a dated copy of your written notice and any responses."
+  },
+  {
+   "question": "Can the landlord and tenant use the same form?",
+   "answer": "Yes, both parties should use and sign the exact same form. Walking the property together and signing one master document creates a single agreed baseline. Both tenant and landlord should keep a signed copy for their records."
+  },
+  {
+   "question": "Can I print or save this as a PDF?",
+   "answer": "Yes, the tool includes a dedicated Print or save as PDF button. Clicking the button formats your customized room list onto a printable sheet with signature and address lines. You can print physical paper copies or save the output as a digital PDF file."
+  }
+ ],
+ "slug": "move-in-move-out-checklist"
+}

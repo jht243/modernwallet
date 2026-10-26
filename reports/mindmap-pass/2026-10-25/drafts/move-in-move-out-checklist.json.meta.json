@@ -1,0 +1,260 @@
+{
+ "slug": "move-in-move-out-checklist",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1144,
+ "floor": 900,
+ "input_tokens": 20101,
+ "output_tokens": 2020,
+ "thinking_tokens": 742,
+ "cached_tokens": 17831,
+ "est_cost_usd": 0.0134,
+ "guards": {
+  "repairs": [
+   "slug None -> 'move-in-move-out-checklist'"
+  ],
+  "flags": [
+   "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A move-in condition form establishes a shared factual baseline before anyone unp'; 'Both tenant and landlord benefit from using the exact same document, because nei'; 'In our internal comparison, we ran the rules through the tool for two typical re'; 'A compact studio apartment produces 5 rooms and 36 items to inspect, covering th'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1175,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 245,
+   "floor": 900,
+   "ratio": 0.27,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    5,
+    10
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "When both sides inspect the rental together and sign off on the same sheet, disagreements over pre-existing scuffs or damaged blinds drop significantly.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that disagreements drop significantly."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Some state statutes require landlords to provide a written move-in condition checklist to hold any deposit funds.",
+     "replacement": "Some state statutes require landlords to provide a written move-in condition checklist.",
+     "type": "unsupported",
+     "why": "SOURCE does not state checklists are required to hold deposit funds."
+    },
+    {
+     "id": "workedExample",
+     "quote": "The first scenario represented a single tenant leasing an urban studio apartment without exterior amenities.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state a single tenant, urban setting, or lack of amenities."
+    },
+    {
+     "id": "workedExample",
+     "quote": "The second scenario modeled a family renting a suburban single-family house with multiple bedrooms, laundry machines, and outdoor grounds.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state a family or suburban house."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Some states require landlords to give tenants a written move-in condition checklist to claim deposit deductions later.",
+     "replacement": "Some states require landlords to give tenants a written move-in condition checklist.",
+     "type": "unsupported",
+     "why": "SOURCE does not state checklists are required to claim deposit deductions later."
+    },
+    {
+     "id": "introText",
+     "quote": "Our interactive tool lets you assemble a custom inspection sheet for your specific rental layout in seconds.",
+     "replacement": "Our interactive tool lets you assemble a custom inspection sheet for your specific rental layout.",
+     "type": "unsupported",
+     "why": "SOURCE does not state the tool generates the sheet in seconds."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Write detailed notes like small scratch near front lock, hairline crack in window pane, or clean condition across all surfaces.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE specifies plain descriptions with examples like good or scuff by door."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Check every fixture during your walk, including turning on faucets to observe drainage and running stove burners.",
+     "replacement": "Check every fixture and test appliances during your walk.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention turning on faucets for drainage or running stove burners."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "If you are a renter preparing for lease signing, our [renting checklist](/checklists/renting-checklist/) and [first apartment checklist](/checklists/first-apartment-checklist/) outline your broader planning steps, including utility setups.",
+     "replacement": "If you are a renter preparing for lease signing, our [renting checklist](/checklists/renting-checklist/) and [first apartment checklist](/checklists/first-apartment-checklist/) outline your broader planning steps.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that the checklists include utility setups."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "For property owners and managers, our [landlord checklist](/checklists/landlord-checklist/) highlights documentation duties and maintenance routines.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what the landlord checklist highlights."
+    },
+    {
+     "id": "workedExample",
+     "quote": "At The Modern Wallet, we evaluated how property specifications alter inspection workloads by testing our checklist logic on two distinct rental profiles.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION and SOURCE do not support testing or evaluating inspection workloads."
+    },
+    {
+     "id": "workedExample",
+     "quote": "This comparison verified that dynamic checklists remove dozens of irrelevant items for smaller apartments while keeping necessary outdoor, garage, and multi-bedroom checks in place for larger properties.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state the comparison verified checklist logic or removed items."
+    },
+    {
+     "id": "commonMistakes[2]",
+     "quote": "Failing to test basic operational elements such as window latches, water pressure, stove burners, and safety alarms.",
+     "replacement": "Failing to test basic operational elements such as appliances and safety alarms.",
+     "type": "unsupported",
+     "why": "SOURCE does not list window latches, water pressure, or stove burners."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Note exact flaws like scuffed baseboards, scratched flooring, or sticking cabinet doors.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not list baseboards, flooring, or cabinet doors."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Test plumbing fixtures, kitchen appliances, electrical outlets, and heating or cooling systems.",
+     "replacement": "Test fixtures, appliances, and systems.",
+     "type": "unsupported",
+     "why": "SOURCE does not list electrical outlets or heating and cooling systems."
+    }
+   ],
+   "deleted_final": 10,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1362
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-26T01:00:27-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-25/audit/move-in-move-out-checklist.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "The tool instantly drops rooms and features that do not apply, such as a garage or yard",
+      "replacement": "Rooms such as a garage, yard or balcony appear only when you switch them on",
+      "type": "those rooms are off until switched on",
+      "why": "Rooms are toggled on rather than dropped by default."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Test safety hardware during the walkthrough as well; the [National Fire Protection Association](https://www.nfpa.org/education-and-research/home-fire-safety/smoke-alarms) advises having smoke alarms inside every bedroom, outside each sleeping area, and on every level, testing them monthly, and replacing them every 10 years.",
+      "replacement": "Test the safety alarms too. The [National Fire Protection Association](https://www.nfpa.org/education-and-research/home-fire-safety/smoke-alarms) advises smoke alarms inside every bedroom, outside each sleeping area and on every level, tested monthly and replaced every 10 years.",
+      "type": "semicolon splice, 37 words",
+      "why": "Split semicolon splice into two shorter sentences."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Selecting the right options eliminates clutter so you never waste time scanning checklist rows for features your home lacks.",
+      "replacement": "",
+      "type": "filler",
+      "why": "Remove filler sentence."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "the [Department of Housing and Urban Development](https://www.hud.gov/topics/rental_assistance/tenantrights) tenant rights directory",
+      "replacement": "the [Department of Housing and Urban Development (HUD)](https://www.hud.gov/topics/rental_assistance/tenantrights) tenant rights directory",
+      "type": "HUD acronym used later but never defined",
+      "why": "Define HUD acronym on first reference."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Your practical takeaway is simple: complete the full walkthrough on day one, sign the document together, and retain separate copies.",
+      "replacement": "Complete the walkthrough on day one, sign the form together, and each keep a copy.",
+      "type": "narrates the writing; colon drama",
+      "why": "Remove meta-narrative phrasing and colon."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      5
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "howItWorks",
+       "quote": "A move-in condition form establishes a shared factual baseline before anyone unpacks furniture.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Both tenant and landlord benefit from using the exact same document, because neither party has to rely on unwritten memory months or years later.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "In our internal comparison, we ran the rules through the tool for two typical rental homes to evaluate the resulting worksheets.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "A compact studio apartment produces 5 rooms and 36 items to inspect, covering the entry, main room, kitchen, bathroom, and utility systems.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Rules governing security deposit deductions, allowed repair charges, and deposit return deadlines are determined by state and local laws.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1144,
+    "flags": [
+     "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A move-in condition form establishes a shared factual baseline before anyone unp'; 'Both tenant and landlord benefit from using the exact same document, because nei'; 'In our internal comparison, we ran the rules through the tool for two typical re'; 'A compact studio apartment produces 5 rooms and 36 items to inspect, covering th'"
+    ]
+   }
+  ]
+ },
+ "seconds": 238.1,
+ "response_id": "duHeapOHBue7xdIP-5epcA",
+ "generated_at": "2026-10-26T00:17:22-0500"
+}

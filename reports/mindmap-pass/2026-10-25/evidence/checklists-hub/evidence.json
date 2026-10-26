@@ -1,0 +1,34 @@
+{
+ "route": "/checklists/",
+ "reader_question": "Which checklist do I need, and can I print it?",
+ "demand_source": "ahrefs volume/KD via scripts/lib/keyword_data.py; DataForSEO SERP reads reports/mindmap-pass/2026-10-25.serp*.json",
+ "decision_gap": "Page one for the head term is static PDFs, local-agent posts and agency pages; none filters items by the reader's property type, era, loan/rental type or location, and few print a clean worksheet (SERP sample of 10 results, not a claim about every competitor).",
+ "sampled_alternatives": "top10_domains in reports/mindmap-pass/2026-10-25.serp.json / serp2.json",
+ "method": "calculated + reported: one rule per item in src/lib/checklists.ts drawn from cited agency guidance; scenario counts produced by running those rules",
+ "calculation": "node reports/mindmap-pass/2026-10-25/evidence/compute.mjs -> evidence/counts.json",
+ "findings": [
+  {
+   "label": "calculated",
+   "text": "scenario item counts per counts.json"
+  },
+  {
+   "label": "reported",
+   "text": "federal rules and agency recommendations listed in the row prompt's CLOSED FACT LIST"
+  }
+ ],
+ "counterexample": "A reader whose town differs from the state preset (e.g. a mountain town in a no-freeze-preset state) gets the wrong climate items until they flip the switch; the UI says presets are a starting point.",
+ "exclusions": "No state-specific legal numbers (deposit caps, deadlines, disclosure forms); no prices.",
+ "unknowns": "Which items readers actually use; whether customization changes rankings.",
+ "would_change": "Evidence that a state rule the page flags is federally uniform, or a reader-reported missing item.",
+ "selected_medium": "interactive tool + server-rendered full list (tool is client-only)",
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "counts.json",
+   "src/lib/checklists.ts"
+  ],
+  "scopeAndLimits": "Counts are rule outputs for example profiles, not user data or product tests.",
+  "publicMethod": "workedExample section + 'How the checklist is built' + the full list with Only-if tags",
+  "placement": "workedExample, howItWorks"
+ }
+}

@@ -4962,6 +4962,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── 9. Renting vs Buying ─────────────────────────────────────────────────
   {
     slug: "renting-vs-buying",
+    updated: "2026-10-26",
     title: "Renting vs Buying a Home: Which Is Better for You?",
     metaDescription:
       "Renting vs buying a home compared: true costs, equity, flexibility, and which choice wins at different life stages and markets.",
@@ -5003,7 +5004,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "When renting is the smarter financial move",
         content:
-          "Renting is financially rational in several scenarios that many buyers overlook. When your job is unstable or you might relocate, selling a home within 2–3 years rarely recovers the 6–10% transaction costs (agent commissions, closing costs, repairs). You're often financially better renting and keeping capital flexible.\n\nRenting also makes sense during periods of elevated home prices and rates, when the monthly cost to own far exceeds rent. In many coastal markets in 2023–2024, buying required a 25–35% premium over renting comparable space — a drag that takes many years to overcome through appreciation.\n\nRenting in a high-rent area while house-hacking (buying a multi-unit property elsewhere and renting out units) is an increasingly popular strategy for building wealth without tying yourself to an expensive market. The [rental property calculator](/real-estate/) can help evaluate investment property returns.",
+          "Renting is financially rational in several scenarios that many buyers overlook. When your job is unstable or you might relocate, selling a home within 2–3 years rarely recovers the 6–10% transaction costs (agent commissions, closing costs, repairs). You're often financially better renting and keeping capital flexible.\n\nRenting also makes sense during periods of elevated home prices and rates, when the monthly cost to own far exceeds rent. In many coastal markets in 2023–2024, buying required a 25–35% premium over renting comparable space — a drag that takes many years to overcome through appreciation.\n\nRenting in a high-rent area while house-hacking (buying a multi-unit property elsewhere and renting out units) is an increasingly popular strategy for building wealth without tying yourself to an expensive market. The [rental property calculator](/real-estate/) can help evaluate investment property returns. If you rent, use the [rental checklist of what to check before you sign](/checklists/renting-checklist/) and, for a first place, the [first apartment checklist](/checklists/first-apartment-checklist/); if you buy, start with the [home buying checklist](/checklists/home-buying-checklist/).",
       },
     ],
     faqs: [

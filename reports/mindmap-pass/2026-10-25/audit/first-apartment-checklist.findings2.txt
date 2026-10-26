@@ -1,0 +1,1 @@
+4. QUOTE: "Secondary items like decorative floor rugs, guest seating, full dinnerware sets, and extra storage bins can wait until you assess the space." DEFECT: none of these are tool items. REPLACE: "Can-wait items such as a dresser, a floor lamp, a TV, small appliances and a toolkit can wait until you see the space."

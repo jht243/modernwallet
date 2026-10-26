@@ -1,0 +1,53 @@
+{
+  "title": "Home Selling Checklist: Step-by-Step Prep",
+  "metaDescription": "Build a customized, printable home selling checklist. Tailor steps for agents or FSBO, vacant or tenant homes, and save or print your worksheet as a PDF.",
+  "h1": "Home Selling Checklist",
+  "introText": "Getting a house ready to sell runs in seven clear stages: calculating your net proceeds, fixing what buyers and home inspectors will flag, completing state disclosures, staging the property, and managing showings, offers, and closing. This interactive tool adds the steps for your sale type, whether you hire an agent or sell on your own.\n\nUse the tool above to generate your customized checklist. Select your home type, year built, selling method, occupancy status, and property features like pools or septic systems. The tool drops items that do not apply to your home and keeps the tasks you need. Click the \"Print or save as PDF\" button to print a clean worksheet or save it to your computer.",
+  "toolHeading": "Build Your Home Selling Checklist",
+  "toolSubheading": "Answer a few questions about your property to create your custom preparation checklist.",
+  "howItWorks": "The home selling checklist groups your sale into seven distinct stages. Stage one starts with planning the sale. Stage two focuses on repairs and physical preparation to address safety concerns before buyers tour. Stage three covers disclosures and legal documentation required by your state. Stage four covers listing and showings. Stage five handles offers and contract negotiation. Stage six covers being under contract, and stage seven manages closing and move-out.\n\nBefore spending money on preparation, calculate your estimated proceeds and evaluate potential tax obligations. Closing expenses reduce your cash from the sale, so calculate your net figures using the [closing cost calculator](/mortgage/closing-cost-calculator/). Under [IRS Publication 523](https://www.irs.gov/publications/p523), single sellers can exclude up to $250,000 of gain on a primary residence. Married couples filing jointly can exclude up to $500,000 of gain. To qualify for this exclusion, you must have owned and occupied the house as your primary home for two of the five years preceding the sale. If the home was used as an investment property, review [IRS Publication 527](https://www.irs.gov/publications/p527) and calculate taxes using the [capital gains calculator](/real-estate/capital-gains-calculator/).\n\nFor repairs and preparation, focus your budget on functional defects and safety issues that an inspector will note. Get quotes before starting any large cosmetic remodel. Buyers often price condition into their purchase offers. You can also consider a pre-listing inspection. If your home uses private waste treatment, the [EPA septic guidance](https://www.epa.gov/septic) notes that septic tanks should be inspected regularly by a professional and pumped as needed.\n\nDisclosures form the legal foundation of your transaction. State law sets required property disclosure forms, which vary by state. If the house was built before 1978, federal law requires sellers to disclose known lead-based paint and provide the official pamphlet per the [EPA real estate disclosure rules](https://www.epa.gov/lead/real-estate-disclosure). Buyers also receive a 10-day window to conduct an independent lead inspection unless they waive it. If the property belongs to a homeowners association, request resale documents early because they take time.\n\nYour selling path shapes the rest of your preparation. Selling by owner adds planning, showing-safety, and contract-review steps. For rental sales, [HUD tenant rights resources](https://www.hud.gov/topics/rental_assistance/tenantrights) link to state laws that govern required entry notices and security deposit return rules. Climate hazards also dictate prep: freezing climates address pipes in unheated spaces and heating, coastal homes check roof attachment and shutters, wildfire regions address defensible space, and earthquake zones require water heater strapping.\n\nStart your sale preparation by calculating net proceeds and completing safety repairs, then assemble disclosures before marketing the home. If you are coordinating a purchase alongside your sale, follow our [guide to buying and selling a house at the same time](/guides/how-to-buy-and-sell-a-house-at-the-same-time/). Once an offer is accepted, monitor closing tasks and review the buyer inspection items before they complete the [final walkthrough checklist](/checklists/final-walkthrough-checklist/). Complete the questionnaire above, click the \"Print or save as PDF\" button, and begin working through your customized tasks.",
+  "workedExample": "In our internal comparison, we ran the checklist's rules for two example homes to see how property traits change the required work. Scenario A evaluated an owner-occupied single-family house built after 2000 in Columbus, Ohio, listed with a real estate agent. The tool kept 30 of the 44 total library items.\n\nScenario B evaluated a vacant house built in 1965 in Chicago, Illinois, sold by owner with freezing winter conditions active. That scenario kept 33 of 44 library items. The tool drops the agent interviews, decluttering, and securing valuables, and adds for-sale-by-owner planning, showing-safety and contract-review steps, the vacant-home insurance check, keeping the heat on or winterizing while empty, and the pre-1978 lead disclosure.",
+  "commonMistakes": [
+    "Spending money on extensive cosmetic remodels without pricing repairs that an inspector will flag.",
+    "Failing to gather homeowners association resale documents early.",
+    "Setting an asking price from neighboring list prices rather than closed comparable sales.",
+    "Leaving valuables visible during open houses and scheduled showings.",
+    "Wiring closing funds without calling the title company at a known telephone number to confirm wire instructions.",
+    "Comparing buyer purchase offers solely on price."
+  ],
+  "faqs": [
+    {
+      "question": "What not to fix before selling your home?",
+      "answer": "Avoid spending money on major decorative remodels before getting written quotes, since buyers often price existing condition into their offers. Focus your funds on safety and function items that an inspector will flag."
+    },
+    {
+      "question": "What are things to avoid when selling your house?",
+      "answer": "Avoid setting your listing price based on neighboring asking prices instead of completed sales. Never hide known defects on state disclosure paperwork or leave valuables exposed during buyer tours. Do not evaluate purchase offers purely on price alone."
+    },
+    {
+      "question": "What documents do I need to sell my house?",
+      "answer": "You need state property disclosure forms and any documents required for your specific property type. If your home was constructed before 1978, federal lead paint disclosures are mandatory. Homes governed by a homeowners association also require HOA resale documents."
+    },
+    {
+      "question": "Do I have to pay tax when I sell my house?",
+      "answer": "Under IRS Publication 523, single filers can exclude up to $250,000 of gain on a primary residence. Married couples filing jointly can exclude up to $500,000. You must have owned and lived in the house for two of the five years preceding the sale date."
+    },
+    {
+      "question": "What disclosures does a seller have to make?",
+      "answer": "State law governs required seller disclosure statements, which vary by state. Federal law requires sellers of homes built before 1978 to disclose known lead paint hazards. Sellers must also provide the federal lead hazard educational pamphlet to prospective purchasers."
+    },
+    {
+      "question": "What changes if I sell without an agent?",
+      "answer": "Selling without an agent adds for-sale-by-owner planning, showing-safety, and contract-review steps to your checklist."
+    },
+    {
+      "question": "What if the house is vacant or rented out?",
+      "answer": "A vacant home requires checking vacant-home insurance and keeping the heat on or winterizing while empty. If the property houses tenants, state laws referenced on HUD tenant rights pages govern landlord entry-notice rules. Landlords must also observe statutory rules for security deposit returns."
+    },
+    {
+      "question": "Can I print this home selling checklist?",
+      "answer": "Yes. Select your property features in the tool above to generate your customized list. Then click the \"Print or save as PDF\" button to print a worksheet with address lines or save a digital PDF copy to your device."
+    }
+  ],
+  "slug": "home-selling-checklist"
+}

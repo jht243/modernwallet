@@ -1,0 +1,17 @@
+{
+ "origin_routine": "mindmap-pass",
+ "query_family": "house checklist",
+ "hypothesis": "A customizable, printable checklist page with the full item list in HTML earns clicks on a low-KD SERP held by PDFs and local posts.",
+ "primary_metric": "incremental Google clicks (GSC)",
+ "baseline": "not-yet-published",
+ "canonical_url": "https://www.themodernwallet.com/checklists/",
+ "comparator_plan": "age-matched cohort of other 2026-10 new tool pages",
+ "change_scope": "new route",
+ "source_refresh_trigger": "change to any cited federal rule or agency guidance",
+ "windows": {
+  "day28": "first 28 complete live days after verified deploy",
+  "day56": "second 28 complete live days"
+ },
+ "outcome_status": "not-yet-published",
+ "deployed": null
+}

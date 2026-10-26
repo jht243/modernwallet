@@ -1,0 +1,431 @@
+{
+ "slug": "first-apartment-checklist",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1233,
+ "floor": 900,
+ "input_tokens": 20012,
+ "output_tokens": 1814,
+ "thinking_tokens": 1136,
+ "cached_tokens": 17831,
+ "est_cost_usd": 0.014,
+ "guards": {
+  "repairs": [
+   "slug None -> 'first-apartment-checklist'"
+  ],
+  "flags": [
+   "claim check: 7 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Separating lease fees from physical merchandise prevents you from spending your '; 'Day-one items represent the baseline tools you need to sleep, eat, wash, and sec'; 'Can-wait items such as a dresser, a floor lamp, a TV, small appliances and a too'; 'By tagging immediate requirements, the checklist helps you avoid overspending on'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1235,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 221,
+   "floor": 900,
+   "ratio": 0.25,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    16
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "Having an in-unit washer and dryer eliminates the need for laundromat hampers and coin supplies, while bringing a pet adds feeding dishes, stain cleaners, and animal safety supplies.",
+     "replacement": "Having an in-unit washer and dryer adjusts laundry items, while bringing a pet adds the pet category to your list.",
+     "type": "unsupported",
+     "why": "SOURCE does not list laundromat hampers, coin supplies, or pet feeding dishes."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "The most practical strategy for your first move is to price and purchase your day-one essentials first, reserve adequate funds for your landlord deposits, and acquire remaining furnishings gradually.",
+     "replacement": "A practical strategy for your first move is to price and purchase your day-one essentials first, reserve adequate funds for your landlord deposits, and acquire remaining furnishings gradually.",
+     "type": "unsupported",
+     "why": "SOURCE does not use the degree word most to rank moving strategies."
+    },
+    {
+     "id": "commonMistakes[0]",
+     "quote": "Purchasing full living room furniture sets before measuring room dimensions and doorway clearances.",
+     "replacement": "Purchasing full living room furniture sets before securing day-one essentials and move-in money.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention measuring room dimensions or doorway clearances."
+    },
+    {
+     "id": "commonMistakes[3]",
+     "quote": "Failing to agree with roommates on shared kitchen gear, leading to duplicate toaster ovens and missing pots.",
+     "replacement": "Failing to agree with roommates on who brings which kitchen items.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that failing to agree leads to duplicate toaster ovens."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Start with a supportive mattress, bed frame, and functional lighting for your bedroom.",
+     "replacement": "Start with a mattress and bed frame for your bedroom.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the mattress as supportive or list bedroom lighting."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "That includes bed sheets, a pillow, a shower curtain, hand soap, towels, prescription medicines, and basic cleaning wipes.",
+     "replacement": "That includes bed sheets, a pillow, a shower curtain, hand soap, towels, and basic cleaning wipes.",
+     "type": "unsupported",
+     "why": "SOURCE does not list prescription medicines among day-one essentials."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Having a functioning phone charger and a simple toolkit also makes move-in day smoother.",
+     "replacement": "Having a simple toolkit also makes move-in day smoother.",
+     "type": "unsupported",
+     "why": "SOURCE does not list a phone charger."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "This significantly reduces your upfront preparation work.",
+     "replacement": "This reduces your upfront preparation work.",
+     "type": "unsupported",
+     "why": "SOURCE does not use the degree word significantly for preparation work."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [
+    {
+     "id": "howItWorks",
+     "quote": "Physical goods include your bed, cookware, lighting, and bathroom supplies.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Secondary items like decorative floor rugs, guest seating, full dinnerware sets, and extra storage bins can wait until you assess the space.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Furnished rentals remove the need to buy bed frames, mattresses, dining tables, and sofas.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Bringing roommates allows you to split shared kitchen gear and living room seating, provided you coordinate who brings what item.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Basic goods include bedding, toilet paper, towels, basic cookware, a shower curtain, cleaning soap, and trash bins.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Start with a mattress and bed frame for your bedroom.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Add a small dining table or desk alongside basic seating once your sleeping arrangements are secure.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "You can postpone entertainment consoles, coffee tables, and secondary dressers until your baseline budget stabilizes.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "That includes bed sheets, a pillow, a shower curtain, hand soap, towels, and basic cleaning wipes.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Having a simple toolkit also makes move-in day smoother.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Budget for your refundable security deposit, first month of rent, application fees, utility setup deposits, moving truck expenses, and renters insurance.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "A furnished rental removes the expense of purchasing beds, dressers, couches, and dining sets.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Our checklist removes those large furniture lines while keeping linens, cookware, cleaning items, and bathroom supplies on your worksheet.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "This reduces your upfront preparation work.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "Sharing an apartment lets you split communal items like frying pans, microwave ovens, kitchen trash cans, and vacuum cleaners.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "This coordination prevents roommates from buying duplicate appliances.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1261
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-26T01:00:13-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-25/audit/first-apartment-checklist.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "select your bedroom count and specify whether your place comes furnished",
+      "replacement": "specify whether your place comes furnished",
+      "type": "tool no longer asks for bedrooms",
+      "why": "tool has no bedroom input"
+     },
+     {
+      "id": "toolSubheading",
+      "quote": "five quick questions",
+      "replacement": "four quick questions",
+      "type": "tool asks four questions",
+      "why": "tool asks four questions"
+     },
+     {
+      "id": "metaDescription",
+      "quote": "based on your layout and roommates",
+      "replacement": "based on furnishing, laundry, pets and roommates",
+      "type": "no layout input",
+      "why": "tool has no layout input"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Bringing roommates allows you to split shared kitchen gear and living room seating, provided you coordinate who brings what item.",
+      "replacement": "With roommates, the list adds a step to agree on who brings which kitchen items.",
+      "type": "tool only adds the kitchen step",
+      "why": "tool only adds kitchen agreement step"
+     },
+     {
+      "id": "workedExample",
+      "quote": "and duplicated dishes",
+      "replacement": "and plates and utensils",
+      "type": "dishes drop because the unit is furnished",
+      "why": "dishes drop for furnished units"
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "Having a simple toolkit also makes move-in day smoother.",
+      "replacement": "A flashlight, a plunger and a first-aid kit are also on the day-one list.",
+      "type": "tools are can-wait in the tool",
+      "why": "toolkit is can-wait"
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "howItWorks",
+      "quote": "Secondary items like decorative floor rugs, guest seating, full dinnerware sets, and extra storage bins can wait until you assess the space.",
+      "finding": "none of these are tool items",
+      "why": "items not in tool list",
+      "replacement": "Can-wait items such as a dresser, a floor lamp, a TV, small appliances and a toolkit can wait until you see the space.",
+      "reason": "replacement adds ['TV'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      11
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "howItWorks",
+       "quote": "Upfront move-in money covers mandatory commitments such as your security deposit, first month of rent, administrative application fees, utility hookup charges, and renters insurance.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Physical goods include your bed, cookware, lighting, and bathroom supplies.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Secondary items like decorative floor rugs, guest seating, full dinnerware sets, and extra storage bins can wait until you assess the space.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "By tagging immediate requirements, the checklist helps you avoid overspending on decorative pieces before you confirm that your basic living needs are met.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Furnished rentals remove the need to buy bed frames, mattresses, dining tables, and sofas.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Prices for household goods vary across retail stores, thrift outlets, and geographic regions.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "workedExample",
+       "quote": "When configured for an unfurnished one-bedroom apartment with no pets, the tool displays 38 items, identifying 26 of them as day-one necessities for sleeping, eating, and hygiene.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "workedExample",
+       "quote": "When we adjusted the scenario to a furnished studio shared with roommates and equipped with in-unit laundry, the list shrank to 27 total items, with 21 marked for day one.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "workedExample",
+       "quote": "This setup eliminated bedroom furniture, living room seating, and plates and utensils, while inserting a reminder to divide shared kitchen supplies among roommates.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[3].answer",
+       "quote": "That includes bed sheets, a pillow, a shower curtain, hand soap, towels, and basic cleaning wipes.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[3].answer",
+       "quote": "A flashlight, a plunger and a first-aid kit are also on the day-one list.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1232,
+    "flags": [
+     "claim check: 11 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Upfront move-in money covers mandatory commitments such as your security deposit'; 'Physical goods include your bed, cookware, lighting, and bathroom supplies.'; 'Secondary items like decorative floor rugs, guest seating, full dinnerware sets,'; 'By tagging immediate requirements, the checklist helps you avoid overspending on'"
+    ]
+   },
+   {
+    "round": 2,
+    "at": "2026-10-26T01:02:47-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-25/audit/first-apartment-checklist.findings2.txt",
+    "applied": [
+     {
+      "id": "howItWorks",
+      "quote": "Secondary items like decorative floor rugs, guest seating, full dinnerware sets, and extra storage bins can wait until you assess the space.",
+      "replacement": "Can-wait items such as a dresser, a floor lamp, a TV, small appliances and a toolkit can wait until you see the space.",
+      "type": "Items mentioned are not tool items",
+      "why": "Replaced with supported can-wait items from the tool list per finding instructions."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      7
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "howItWorks",
+       "quote": "Separating lease fees from physical merchandise prevents you from spending your rent reserve on furniture before your move-in date.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Day-one items represent the baseline tools you need to sleep, eat, wash, and secure the home during your first night.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Can-wait items such as a dresser, a floor lamp, a TV, small appliances and a toolkit can wait until you see the space.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "By tagging immediate requirements, the checklist helps you avoid overspending on decorative pieces before you confirm that your basic living needs are met.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Furnished rentals remove the need to buy bed frames, mattresses, dining tables, and sofas.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Rushing to buy every accessory at once strains your cash reserves and leads to clutter.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Keep secondary purchases on your printed worksheet and buy them room by room as your monthly paycheck allows.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1233,
+    "flags": [
+     "claim check: 7 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Separating lease fees from physical merchandise prevents you from spending your '; 'Day-one items represent the baseline tools you need to sleep, eat, wash, and sec'; 'Can-wait items such as a dresser, a floor lamp, a TV, small appliances and a too'; 'By tagging immediate requirements, the checklist helps you avoid overspending on'"
+    ]
+   }
+  ]
+ },
+ "seconds": 264.9,
+ "response_id": "ZOLeat6cLJapxdIPk5HK2Qo",
+ "generated_at": "2026-10-26T00:21:47-0500"
+}

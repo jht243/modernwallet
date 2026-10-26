@@ -1,0 +1,383 @@
+{
+ "slug": "home-selling-checklist",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1215,
+ "floor": 900,
+ "input_tokens": 20498,
+ "output_tokens": 2032,
+ "thinking_tokens": 1918,
+ "cached_tokens": 17831,
+ "est_cost_usd": 0.0182,
+ "guards": {
+  "repairs": [
+   "slug None -> 'home-selling-checklist'"
+  ],
+  "flags": [
+   "claim check: 4 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'The climate switches add three prep items.'; 'A vacant house in a freezing climate gets a keep-the-heat-on or winterize step, '; 'Once an offer is accepted, the buyer will run their own [final walkthrough check'; 'Accepting payout wiring instructions by email without confirming them by phone w'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1188,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 475,
+   "floor": 900,
+   "ratio": 0.53,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    23,
+    1,
+    7
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At The Modern Wallet, we designed this interactive tool to add the exact steps for your sale type, whether you hire an agent or sell on your own.",
+     "replacement": "This interactive tool adds the steps for your sale type, whether you hire an agent or sell on your own.",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not license 'At The Modern Wallet, we designed' claims."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Stage one starts with planning the sale, where you establish your timeline and set your budget.",
+     "replacement": "Stage one starts with planning the sale.",
+     "type": "unsupported",
+     "why": "SOURCE lists section 1 as 'Plan the sale' without mentioning timelines or budgets."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Stage six navigates the escrow period after signing, and stage seven manages the final walk-through and closing.",
+     "replacement": "Stage six covers being under contract, and stage seven manages closing and move-out.",
+     "type": "unsupported",
+     "why": "SOURCE names stage 6 'Under contract' and stage 7 'Closing and move-out'."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "You can also hire a licensed inspector for a pre-listing inspection to catch hidden structural or mechanical issues early.",
+     "replacement": "You can also consider a pre-listing inspection.",
+     "type": "unsupported",
+     "why": "SOURCE only says 'consider a pre-listing inspection', not catching structural or mechanical issues."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "State law sets required property disclosure forms, which outline known defects with the roof, plumbing, foundation, and systems.",
+     "replacement": "State law sets required property disclosure forms, which vary by state.",
+     "type": "unsupported",
+     "why": "SOURCE states disclosure forms vary by state without specifying roofs, plumbing, or foundations."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "If the property belongs to a homeowners association, request resale packages and governing documents early because association management companies often take time to process records.",
+     "replacement": "If the property belongs to a homeowners association, request resale documents early because they take time.",
+     "type": "unsupported",
+     "why": "SOURCE only states 'HOA resale documents take time'."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Selling by owner requires writing listing descriptions, vetting buyer financing, and handling contract forms directly.",
+     "replacement": "Selling by owner adds planning, showing-safety, and contract-review steps.",
+     "type": "unsupported",
+     "why": "SOURCE specifies planning, showing safety, and contract review, not vetting buyer financing."
+    },
+    {
+     "id": "workedExample",
+     "quote": "The tool kept 30 of the 44 total library items, removing older-home lead disclosures and for-sale-by-owner administrative tasks.",
+     "replacement": "The tool kept 30 of the 44 total library items.",
+     "type": "unsupported",
+     "why": "SOURCE does not state which specific items Scenario A removes."
+    },
+    {
+     "id": "workedExample",
+     "quote": "The tool removed agent interview steps and occupied-home staging tasks, but added for-sale-by-owner contract management, vacant property security, freezing pipe protection, and federal lead paint disclosures.",
+     "replacement": "The tool drops the agent interviews, decluttering, and securing valuables, and adds for-sale-by-owner planning, showing-safety and contract-review steps, the vacant-home insurance check, keeping the heat on or winterizing while empty, and the pre-1978 lead disclosure.",
+     "type": "unsupported",
+     "why": "SOURCE lists decluttering, securing valuables, FSBO planning, and vacant-home insurance."
+    },
+    {
+     "id": "commonMistakes[1]",
+     "quote": "Failing to gather homeowners association governing documents, bylaws, and financial statements before accepting an offer.",
+     "replacement": "Failing to gather homeowners association resale documents early.",
+     "type": "unsupported",
+     "why": "SOURCE mentions HOA resale documents without specifying bylaws or financial statements."
+    },
+    {
+     "id": "commonMistakes[3]",
+     "quote": "Leaving prescription medications, personal financial paperwork, and jewelry visible during open houses and scheduled showings.",
+     "replacement": "Leaving valuables visible during open houses and scheduled showings.",
+     "type": "unsupported",
+     "why": "SOURCE says leaving valuables out at showings without naming medications or financial paperwork."
+    },
+    {
+     "id": "commonMistakes[5]",
+     "quote": "Comparing buyer purchase offers solely on top-line price while overlooking financing terms and inspection contingencies.",
+     "replacement": "Comparing buyer purchase offers solely on price.",
+     "type": "unsupported",
+     "why": "SOURCE states comparing offers on price alone without mentioning financing or contingencies."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Focus your funds on functional failures, water leaks, and safety hazards that a licensed home inspector will flag.",
+     "replacement": "Focus your funds on safety and function items that an inspector will flag.",
+     "type": "unsupported",
+     "why": "SOURCE specifies safety and function items without mentioning water leaks."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Minor cosmetic imperfections rarely prevent a transaction from closing.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state whether cosmetic imperfections prevent transactions from closing."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Do not evaluate purchase offers purely on price without reviewing financing terms and closing contingency timelines.",
+     "replacement": "Do not evaluate purchase offers purely on price alone.",
+     "type": "unsupported",
+     "why": "SOURCE says only 'comparing offers on price alone', without financing terms or contingency timelines."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "You need your mortgage payoff statement, property tax records, title ownership documents, and state property disclosure forms.",
+     "replacement": "You need state property disclosure forms and any documents required for your specific property type.",
+     "type": "unsupported",
+     "why": "SOURCE does not list mortgage payoff statements, tax records, or title ownership documents."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Homes governed by an association also require covenants, bylaws, and financial reserve packages.",
+     "replacement": "Homes governed by a homeowners association also require HOA resale documents.",
+     "type": "unsupported",
+     "why": "SOURCE refers only to HOA resale documents, not covenants, bylaws, or reserve packages."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "State law governs required seller disclosure statements, which list known defects regarding plumbing, foundations, roofs, and mechanical equipment.",
+     "replacement": "State law governs required seller disclosure statements, which vary by state.",
+     "type": "unsupported",
+     "why": "SOURCE states disclosure forms vary by state without specifying plumbing, roofs, or foundations."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Selling without an agent adds listing creation, showing security, and contract negotiation to your checklist.",
+     "replacement": "Selling without an agent adds for-sale-by-owner planning, showing-safety, and contract-review steps to your checklist.",
+     "type": "unsupported",
+     "why": "SOURCE specifies for-sale-by-owner planning, showing safety, and contract review steps."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "You must draft purchase agreements, schedule private buyer tours, and manage escrow deadlines directly.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE specifies for-sale-by-owner planning, showing safety, and contract review, not drafting agreements."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "You also handle closing coordination with the title company without representation.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that FSBO sellers coordinate closing without representation."
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "A vacant home requires regular property visits, utility maintenance, and specialized vacant-property insurance coverage.",
+     "replacement": "A vacant home requires checking vacant-home insurance and keeping the heat on or winterizing while empty.",
+     "type": "unsupported",
+     "why": "SOURCE specifies a vacant-home insurance check and keeping heat on or winterizing."
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "If the property houses tenants, state laws referenced on HUD tenant rights pages govern written notice periods for showings.",
+     "replacement": "If the property houses tenants, state laws referenced on HUD tenant rights pages govern landlord entry-notice rules.",
+     "type": "unsupported",
+     "why": "SOURCE states state laws govern landlord entry-notice rules, not specifically written notice periods."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Buyers also receive a 10-day window to conduct an independent lead inspection unless they waive it in writing.",
+     "replacement": "Buyers also receive a 10-day window to conduct an independent lead inspection unless they waive it.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that the lead test waiver must be in writing."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Stage four organizes listing media and showing schedules.",
+     "replacement": "Stage four covers listing and showings.",
+     "type": "unsupported",
+     "why": "SOURCE names section Listing and showings without mentioning media or showing schedules."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Major cosmetic upgrades can exceed your budget, so obtain written contractor quotes before starting any large project.",
+     "replacement": "Get quotes before starting any large cosmetic remodel.",
+     "type": "unsupported",
+     "why": "SOURCE does not state remodels exceed budgets; advises getting quotes before remodels."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Buyers often price visible wear into their purchase offers.",
+     "replacement": "Buyers often price condition into their purchase offers.",
+     "type": "unsupported",
+     "why": "SOURCE states buyers price in condition, not visible wear."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "If the house sits empty, empty-home insurance endorsements and winter heating precautions help protect the property.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE specifies a vacant-home insurance check and winterizing or heating while empty."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Climate hazards also dictate prep: freezing climates require pipe protection, coastal homes need windstorm shutter checks, wildfire regions require brush clearance, and earthquake zones require water heater bracing.",
+     "replacement": "Climate hazards also dictate prep: freezing climates address pipes in unheated spaces and heating, coastal homes check roof attachment and shutters, wildfire regions address defensible space, and earthquake zones require water heater strapping.",
+     "type": "unsupported",
+     "why": "SOURCE specifies defensible space and water heater strapping, not brush clearance or bracing."
+    },
+    {
+     "id": "commonMistakes[0]",
+     "quote": "Spending money on extensive cosmetic remodels without pricing repairs that a licensed home inspector will flag.",
+     "replacement": "Spending money on extensive cosmetic remodels without pricing repairs that an inspector will flag.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe home inspectors as licensed."
+    }
+   ],
+   "deleted_final": 6,
+   "unapplied": [
+    {
+     "quote": "Never hide known defects on state disclosure paperwork or leave valuables exposed during buyer tours.",
+     "type": "unsupported",
+     "why": "SOURCE specifies skipping disclosures rather than hiding known defects on paperwork.",
+     "replacement": "Never skip disclosures or leave valuables exposed during buyer tours.",
+     "id": "faqs[1].answer",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "faqs[1].answer",
+     "quote": "Never hide known defects on state disclosure paperwork or leave valuables exposed during buyer tours.",
+     "type": "unsupported",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 1348
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-26T00:50:44-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-25/audit/home-selling-checklist.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "Getting a house ready to sell runs in seven clear stages: calculating your net proceeds, fixing what buyers and home inspectors will flag, completing state disclosures, staging the property, and managing showings, offers, and closing.",
+      "replacement": "Selling a house runs in seven stages. Plan the sale and your net proceeds, fix what inspectors will flag, and complete your disclosures. Then list and show the house, compare offers, manage the contract period, and close.",
+      "type": "stages do not match tool's seven sections; wordy",
+      "why": "Aligns with the tool's seven section names and keeps sentences concise."
+     },
+     {
+      "id": "introText",
+      "quote": "Use the tool above to generate your customized checklist.",
+      "replacement": "Use the checklist builder below to generate your customized checklist.",
+      "type": "tool is below intro text",
+      "why": "Fixes spatial reference since the tool follows introText."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Climate hazards also dictate prep: freezing climates address pipes in unheated spaces and heating, coastal homes check roof attachment and shutters, wildfire regions address defensible space, and earthquake zones require water heater strapping.",
+      "replacement": "The climate switches add three prep items. A vacant house in a freezing climate gets a keep-the-heat-on or winterize step, a wildfire area adds clearing dead vegetation near the house, and a hurricane coast adds a plan for securing the house during hurricane season.",
+      "type": "climate items do not match tool logic; colon drama",
+      "why": "States only the specific prep items added by climate switches."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Once an offer is accepted, monitor closing tasks and review the buyer inspection items before they complete the [final walkthrough checklist](/checklists/final-walkthrough-checklist/).",
+      "replacement": "Once an offer is accepted, the buyer will run their own [final walkthrough checklist](/checklists/final-walkthrough-checklist/), so leave every included item in place and finish agreed repairs before that visit.",
+      "type": "unclear pronoun reference",
+      "why": "Clarifies that the buyer performs the walkthrough while keeping the link."
+     },
+     {
+      "id": "commonMistakes[4]",
+      "quote": "Wiring closing funds without calling the title company at a known telephone number to confirm wire instructions.",
+      "replacement": "Accepting payout wiring instructions by email without confirming them by phone with the closing agent.",
+      "type": "seller receives payout rather than wiring funds",
+      "why": "Applies wire fraud precaution to seller payout instructions."
+     },
+     {
+      "id": "faqs[6].answer",
+      "quote": "A vacant home requires checking vacant-home insurance and keeping the heat on or winterizing while empty.",
+      "replacement": "A vacant home adds the vacant-home insurance check, and in a freezing climate a step to keep the heat on or winterize the plumbing.",
+      "type": "heating step conditional on freezing climate",
+      "why": "Clarifies that heating/winterizing applies specifically in freezing climates."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      4
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "howItWorks",
+       "quote": "The climate switches add three prep items.",
+       "type": "contradicted",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "A vacant house in a freezing climate gets a keep-the-heat-on or winterize step, a wildfire area adds clearing dead vegetation near the house, and a hurricane coast adds a plan for securing the house during hurricane season.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Once an offer is accepted, the buyer will run their own [final walkthrough checklist](/checklists/final-walkthrough-checklist/), so leave every included item in place and finish agreed repairs before that visit.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "commonMistakes[4]",
+       "quote": "Accepting payout wiring instructions by email without confirming them by phone with the closing agent.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1215,
+    "flags": [
+     "claim check: 4 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'The climate switches add three prep items.'; 'A vacant house in a freezing climate gets a keep-the-heat-on or winterize step, '; 'Once an offer is accepted, the buyer will run their own [final walkthrough check'; 'Accepting payout wiring instructions by email without confirming them by phone w'"
+    ]
+   }
+  ]
+ },
+ "seconds": 301.2,
+ "response_id": "GN_eaoKlJ-bExdIP1rmP8Ag",
+ "generated_at": "2026-10-26T00:08:19-0500"
+}

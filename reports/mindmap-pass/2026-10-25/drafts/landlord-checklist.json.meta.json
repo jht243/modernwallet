@@ -1,0 +1,418 @@
+{
+ "slug": "landlord-checklist",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1315,
+ "floor": 900,
+ "input_tokens": 20633,
+ "output_tokens": 2141,
+ "thinking_tokens": null,
+ "cached_tokens": 17831,
+ "est_cost_usd": 0.0115,
+ "guards": {
+  "repairs": [
+   "slug None -> 'landlord-checklist'"
+  ],
+  "flags": [
+   "claim check: 10 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Selecting your state pre-sets local climate conditions like freezing winters or '; 'Setting up your rental property correctly protects your investment before you cr'; 'If you own a condo or townhouse, read the homeowners association (HOA) rules on '; 'Your city or county may also require a rental license, registration or inspectio'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1336,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 544,
+   "floor": 900,
+   "ratio": 0.6,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    11,
+    13
+   ],
+   "applied": [
+    {
+     "id": "toolSubheading",
+     "quote": "Answer five quick questions to build a printable rental property checklist for your home.",
+     "replacement": "Answer a few questions to build a printable rental property checklist for your home.",
+     "type": "unsupported",
+     "why": "SOURCE states a few questions and lists six questions plus location, not five."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Setting an accurate market rent keeps vacancy periods short while producing adequate funds to cover maintenance reserves, insurance premiums, and mortgage obligations.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state vacancy periods, maintenance reserves, or mortgage obligations."
+    },
+    {
+     "id": "workedExample",
+     "quote": "The tool retained 34 of the 45 library items for this property, adding HOA leasing rules and coastal storm preparations while removing roof inspection and exterior gutter maintenance.",
+     "replacement": "The tool retained 34 of the 45 library items for this property, including HOA rental rules and storm planning, and no gutter-cleaning item.",
+     "type": "unsupported",
+     "why": "SOURCE states no gutter-cleaning item, not removing roof inspection."
+    },
+    {
+     "id": "workedExample",
+     "quote": "It added local rules and lodging taxes for short stays, a detailed inventory of furnishings, a pre-1978 lead disclosure, gutter maintenance, an explicit utility split, and pipe insulation to prevent winter freezing.",
+     "replacement": "It added local rules and taxes for short stays, an inventory of furnishings, the lead-paint disclosure, gutter maintenance, the utilities and maintenance split, and pre-freeze winterizing.",
+     "type": "unsupported",
+     "why": "SOURCE specifies pre-freeze winterizing rather than pipe insulation."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Landlords use tenant-screening reports that review credit history, rental records, and background data.",
+     "replacement": "Landlords evaluate applicants using tenant-screening reports.",
+     "type": "unsupported",
+     "why": "SOURCE does not specify what tenant-screening reports review."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Additional mandatory disclosures regarding property condition, owner contact details, or local hazards depend on state and municipal statutes.",
+     "replacement": "Other disclosures depend on state and city rules.",
+     "type": "unsupported",
+     "why": "SOURCE does not list disclosures for property condition, owner details, or hazards."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Some states limit deposits to one or two months of rent, while others set no cap.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE explicitly forbids deposit numbers and amounts."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "You must check your state rules via the HUD tenant rights directory to confirm your limit.",
+     "replacement": "You must check your state rules via the [HUD tenant rights directory](https://www.hud.gov/topics/rental_assistance/tenantrights) to confirm your limit.",
+     "type": "unlinked-directive",
+     "why": "Directs reader to outside source without a markdown link."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Contact your insurance agent to obtain a landlord policy covering the structure and liability, and consider requiring tenants to purchase renters insurance.",
+     "replacement": "Ask your insurer about landlord insurance, and require tenants to carry renters insurance.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that landlord insurance covers structure and liability."
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "You must also account for municipal short-term lodging regulations, local hospitality taxes, and clear lease terms governing utility bills and turnover cleaning.",
+     "replacement": "You must also account for local rules and taxes for short stays, and lease terms governing the utilities and maintenance split.",
+     "type": "unsupported",
+     "why": "SOURCE does not state turnover cleaning or hospitality taxes."
+    },
+    {
+     "id": "faqs[7].answer",
+     "quote": "The printed sheet includes signature, property address, and date lines for your records, and saves locally without requiring an account.",
+     "replacement": "The printed sheet includes Name, Date, and Property address lines, and saves locally without requiring an account.",
+     "type": "unsupported",
+     "why": "SOURCE specifies Name, Date, and Property address lines, not signature."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [
+    {
+     "id": "howItWorks",
+     "quote": "Setting up your rental property correctly protects your investment before you create a listing.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Condominium and townhouse owners must review home owners association (HOA) bylaws for rental caps and tenant registration rules, while many municipalities require a local rental license or safety registration.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Pricing your rental property demands an objective look at local market figures and your ongoing holding costs.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Estimate your expected cash flow, operating outlays, and net yield by running your numbers through our [rental income calculator](/real-estate/rental-income-calculator/).",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Under these civil rights rules, assistance animals are a disability accommodation rather than regular pets, so standard pet prohibitions or surcharges cannot apply to them.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Deposit caps, permitted deductions, holding account criteria, and tenant return deadlines are set by state law and differ across jurisdictions.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Complete a physical walk-through on move-in day to record existing conditions, test fixtures, and document cosmetic flaws alongside your renter using our [move-in move-out checklist](/checklists/move-in-move-out-checklist/).",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Some state statutes require landlords to give renters a written condition checklist before accepting a deposit.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Make sure you confirm your jurisdiction's deposit limits and entry notice rules through the [HUD tenant rights directory](https://www.hud.gov/topics/rental_assistance/tenantrights) or your state agency, and consult a qualified attorney for legal entity planning and customized lease agreements.",
+     "type": "unlinked-directive",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "commonMistakes[2]",
+     "quote": "Treating an assistance animal as an ordinary household pet or charging a tenant pet fees for a disability accommodation.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "commonMistakes[5]",
+     "quote": "Skipping the initial move-in condition walk-through that documents preexisting wear before handing over property keys.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Yes. A standard homeowners policy generally excludes coverage for properties leased out to paying tenants.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "Furnished and short-term rentals require keeping a complete inventory of furniture and household goods provided to guests.",
+     "type": "unsupported",
+     "reason": "final pass over-flagged; not applied"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1415
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-26T00:52:42-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-25/audit/landlord-checklist.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "The tool above adds the exact items your property type, build era, and state require.",
+      "replacement": "The checklist builder below adds the items that match your property type, build era, rental type and local conditions, and it flags state rules for you to check.",
+      "type": "wrong position; overclaims state-law items",
+      "why": "Tool is below and state rules vary; replace with accurate builder description."
+     },
+     {
+      "id": "introText",
+      "quote": "management style above",
+      "replacement": "management style below",
+      "type": "tool is below",
+      "why": "Tool appears below this text."
+     },
+     {
+      "id": "introText",
+      "quote": "Before your first tenant moves in, you need to insure and register the property, make it safe and legally rentable, price the home, screen applicants under fair housing rules, collect a security deposit that meets state limits, and document the home's condition.",
+      "replacement": "Before your first tenant moves in, insure and register the property and make it safe and legal to rent. Then price it, screen applicants under fair housing rules, collect a deposit within your state's limit, and document the home's condition.",
+      "type": "42-word run-on",
+      "why": "Split run-on sentence for conciseness and clarity."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Condominium and townhouse owners must review home owners association (HOA) bylaws for rental caps and tenant registration rules, while many municipalities require a local rental license or safety registration.",
+      "replacement": "If you own a condo or townhouse, read the homeowners association (HOA) rules on rentals, including minimum lease length, caps and registration. Your city or county may also require a rental license, registration or inspection.",
+      "type": "'many municipalities' unsupported; run-on",
+      "why": "Remove unsupported municipal claim and split sentence."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Follow National Fire Protection Association guidance by installing",
+      "replacement": "Follow [National Fire Protection Association (NFPA)](https://www.nfpa.org/education-and-research/home-fire-safety/smoke-alarms) guidance by installing",
+      "type": "first mention unlinked",
+      "why": "Add required external link on first mention."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "You must test these alarms monthly and replace every smoke alarm unit every 10 years.",
+      "replacement": "NFPA advises testing them monthly and replacing each alarm every 10 years.",
+      "type": "guidance stated as legal duty",
+      "why": "NFPA guidance is advisory, not a statutory mandate."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Under Consumer Product Safety Commission guidelines, install carbon monoxide alarms on each level of the home and outside sleeping quarters.",
+      "replacement": "[Consumer Product Safety Commission (CPSC)](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center) guidance calls for carbon monoxide alarms on each level of the home and outside sleeping areas.",
+      "type": "first mention unlinked",
+      "why": "Add required external link on first mention."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "requires you to disclose known lead-based paint hazards, supply records, hand tenants the official EPA lead pamphlet, and grant buyers a 10-day testing window unless waived.",
+      "replacement": "requires you to disclose known lead-based paint and give tenants the EPA pamphlet Protect Your Family From Lead in Your Home.",
+      "type": "'supply records' unsupported; 10-day window is for sales",
+      "why": "Align duties with rental requirements in source."
+     },
+     {
+      "id": "howItWorks",
+      "quote": ", so standard pet prohibitions or surcharges cannot apply to them",
+      "replacement": "",
+      "type": "not on fact list",
+      "why": "Unsupported pet fee policy details."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "landlords must comply with the Fair Credit Reporting Act enforced by the Federal Trade Commission. The [FTC guidance for landlords](https://www.ftc.gov/business-guidance/resources/using-consumer-reports-what-landlords-need-know) states",
+      "replacement": "landlords must comply with the Fair Credit Reporting Act, enforced by the [Federal Trade Commission (FTC)](https://www.ftc.gov/business-guidance/resources/using-consumer-reports-what-landlords-need-know). FTC guidance states",
+      "type": "FTC first mention unlinked",
+      "why": "Move link to first mention of agency name."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "you must send a written adverse action notice",
+      "replacement": "you must give an adverse action notice",
+      "type": "'written' unsupported",
+      "why": "Source specifies giving an adverse action notice without specifying written."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Some state statutes require landlords to give renters a written condition checklist before accepting a deposit.",
+      "replacement": "Some states require landlords to give tenants a written move-in condition checklist.",
+      "type": "'before accepting a deposit' unsupported",
+      "why": "Source states some states require move-in checklists without deposit timing rule."
+     },
+     {
+      "id": "workedExample",
+      "quote": "gutter maintenance, the utilities and maintenance split, and pre-freeze winterizing.",
+      "replacement": "gutter maintenance, and the utilities and maintenance split.",
+      "type": "winterizing is in both scenarios",
+      "why": "Winterizing is triggered in both scenarios, not unique to scenario B."
+     },
+     {
+      "id": "commonMistakes[2]",
+      "quote": "Treating an assistance animal as an ordinary household pet or charging a tenant pet fees for a disability accommodation.",
+      "replacement": "Treating an assistance animal as an ordinary household pet instead of a disability accommodation.",
+      "type": "pet fees unsupported",
+      "why": "Source mentions assistance animal accommodation, not pet fees."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "A standard homeowners policy generally excludes coverage for properties leased out to paying tenants.",
+      "replacement": "A standard homeowners policy may not cover a home you rent out.",
+      "type": "fact list says may not cover",
+      "why": "Source states standard homeowners insurance may not cover rentals."
+     },
+     {
+      "id": "faqs[6].answer",
+      "quote": "You must also account for local rules and taxes for short stays, and lease terms governing the utilities and maintenance split.",
+      "replacement": "The checklist also adds a step to check local rules and taxes for short stays.",
+      "type": "utilities split triggered by single-family, not furnished",
+      "why": "Remove utilities split from short-term rental description."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      10
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "introText",
+       "quote": "Selecting your state pre-sets local climate conditions like freezing winters or coastal wind, which you can adjust for your town.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Setting up your rental property correctly protects your investment before you create a listing.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "If you own a condo or townhouse, read the homeowners association (HOA) rules on rentals, including minimum lease length, caps and registration.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Your city or county may also require a rental license, registration or inspection.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Follow [National Fire Protection Association (NFPA)](https://www.nfpa.org/education-and-research/home-fire-safety/smoke-alarms) guidance by installing smoke alarms inside every bedroom, outside each separate sleeping area, and on every habitable level of the building.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Pricing your rental property demands an objective look at local market figures and your ongoing holding costs.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Estimate your expected cash flow, operating outlays, and net yield by running your numbers through our [rental income calculator](/real-estate/rental-income-calculator/).",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Deposit caps, permitted deductions, holding account criteria, and tenant return deadlines are set by state law and differ across jurisdictions.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "howItWorks",
+       "quote": "Complete a physical walk-through on move-in day to record existing conditions, test fixtures, and document cosmetic flaws alongside your renter using our [move-in move-out checklist](/checklists/move-in-move-out-checklist/).",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[6].answer",
+       "quote": "Furnished and short-term rentals require keeping a complete inventory of furniture and household goods provided to guests.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1315,
+    "flags": [
+     "claim check: 10 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Selecting your state pre-sets local climate conditions like freezing winters or '; 'Setting up your rental property correctly protects your investment before you cr'; 'If you own a condo or townhouse, read the homeowners association (HOA) rules on '; 'Your city or county may also require a rental license, registration or inspectio'"
+    ]
+   }
+  ]
+ },
+ "seconds": 220.1,
+ "response_id": "muDeauycCvOyytMPovjrkQ4",
+ "generated_at": "2026-10-26T00:13:24-0500"
+}

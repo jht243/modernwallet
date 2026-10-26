@@ -1,0 +1,647 @@
+{
+ "new construction checklist": {
+  "keyword": "new construction checklist",
+  "volume": 100,
+  "volume_low": 100,
+  "volume_high": 100,
+  "kd": 1,
+  "cpc": 1.0,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "rental inspection checklist": {
+  "keyword": "rental inspection checklist",
+  "volume": 800,
+  "volume_low": 800,
+  "volume_high": 800,
+  "kd": 2,
+  "cpc": 0.6,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "landlord move in checklist": {
+  "keyword": "landlord move in checklist",
+  "volume": 100,
+  "volume_low": 100,
+  "volume_high": 100,
+  "kd": 0,
+  "cpc": 0.9,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "first time home buyer checklist": {
+  "keyword": "first time home buyer checklist",
+  "volume": 900,
+  "volume_low": 900,
+  "volume_high": 900,
+  "kd": 3,
+  "cpc": 0.7,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "for sale by owner checklist": {
+  "keyword": "for sale by owner checklist",
+  "volume": 20,
+  "volume_low": 20,
+  "volume_high": 20,
+  "kd": 6,
+  "cpc": 0.15,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "condo buying checklist": {
+  "keyword": "condo buying checklist",
+  "volume": 80,
+  "volume_low": 80,
+  "volume_high": 80,
+  "kd": 0,
+  "cpc": 0.1,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 0,
+   "corroborates": false
+  }
+ },
+ "move out checklist": {
+  "keyword": "move out checklist",
+  "volume": 900,
+  "volume_low": 900,
+  "volume_high": 900,
+  "kd": 7,
+  "cpc": 0.3,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "questions to ask when renting an apartment": {
+  "keyword": "questions to ask when renting an apartment",
+  "volume": 700,
+  "volume_low": 700,
+  "volume_high": 700,
+  "kd": 0,
+  "cpc": 0.03,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "rental checklist": {
+  "keyword": "rental checklist",
+  "volume": 200,
+  "volume_low": 200,
+  "volume_high": 200,
+  "kd": 5,
+  "cpc": 0.8,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "rental property inspection checklist": {
+  "keyword": "rental property inspection checklist",
+  "volume": 300,
+  "volume_low": 300,
+  "volume_high": 300,
+  "kd": 0,
+  "cpc": 0.7,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "selling a house checklist": {
+  "keyword": "selling a house checklist",
+  "volume": 90,
+  "volume_low": 90,
+  "volume_high": 90,
+  "kd": 4,
+  "cpc": 1.2,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "apartment viewing checklist": {
+  "keyword": "apartment viewing checklist",
+  "volume": 80,
+  "volume_low": 80,
+  "volume_high": 80,
+  "kd": 2,
+  "cpc": 0.3,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "apartment checklist": {
+  "keyword": "apartment checklist",
+  "volume": 2600,
+  "volume_low": 2600,
+  "volume_high": 2600,
+  "kd": 2,
+  "cpc": 0.2,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "rental property checklist": {
+  "keyword": "rental property checklist",
+  "volume": 150,
+  "volume_low": 150,
+  "volume_high": 150,
+  "kd": 4,
+  "cpc": 0.45,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "tenant screening checklist": {
+  "keyword": "tenant screening checklist",
+  "volume": 250,
+  "volume_low": 250,
+  "volume_high": 250,
+  "kd": 5,
+  "cpc": 2.0,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "things to check when renting a house": {
+  "keyword": "things to check when renting a house",
+  "volume": 10,
+  "volume_low": 10,
+  "volume_high": 10,
+  "kd": "",
+  "cpc": 0.5,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "move in inspection checklist": {
+  "keyword": "move in inspection checklist",
+  "volume": 350,
+  "volume_low": 350,
+  "volume_high": 350,
+  "kd": 0,
+  "cpc": 0.6,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "new tenant checklist for landlords": {
+  "keyword": "new tenant checklist for landlords",
+  "volume": 150,
+  "volume_low": 150,
+  "volume_high": 150,
+  "kd": 1,
+  "cpc": 1.2,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 7,
+   "corroborates": true
+  }
+ },
+ "home selling checklist": {
+  "keyword": "home selling checklist",
+  "volume": 400,
+  "volume_low": 400,
+  "volume_high": 400,
+  "kd": 8,
+  "cpc": 0.9,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "seller checklist": {
+  "keyword": "seller checklist",
+  "volume": 40,
+  "volume_low": 40,
+  "volume_high": 40,
+  "kd": 3,
+  "cpc": 1.3,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "home buying checklist": {
+  "keyword": "home buying checklist",
+  "volume": 1600,
+  "volume_low": 1600,
+  "volume_high": 1600,
+  "kd": 5,
+  "cpc": 0.3,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "house buying checklist": {
+  "keyword": "house buying checklist",
+  "volume": 150,
+  "volume_low": 150,
+  "volume_high": 150,
+  "kd": 0,
+  "cpc": 0.6,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "winterizing a house checklist": {
+  "keyword": "winterizing a house checklist",
+  "volume": 90,
+  "volume_low": 90,
+  "volume_high": 90,
+  "kd": 3,
+  "cpc": 0.06,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 5,
+   "corroborates": true
+  }
+ },
+ "move in checklist": {
+  "keyword": "move in checklist",
+  "volume": 1100,
+  "volume_low": 1100,
+  "volume_high": 1100,
+  "kd": 12,
+  "cpc": 0.45,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "closing checklist for buyers": {
+  "keyword": "closing checklist for buyers",
+  "volume": 20,
+  "volume_low": 20,
+  "volume_high": 20,
+  "kd": 8,
+  "cpc": 0.5,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 9,
+   "corroborates": true
+  }
+ },
+ "landlord checklist": {
+  "keyword": "landlord checklist",
+  "volume": 150,
+  "volume_low": 150,
+  "volume_high": 150,
+  "kd": 0,
+  "cpc": 0.9,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "what to look for when renting an apartment": {
+  "keyword": "what to look for when renting an apartment",
+  "volume": 500,
+  "volume_low": 500,
+  "volume_high": 500,
+  "kd": 7,
+  "cpc": 0.2,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "what to look for when buying a house": {
+  "keyword": "what to look for when buying a house",
+  "volume": 1700,
+  "volume_low": 1700,
+  "volume_high": 1700,
+  "kd": 0,
+  "cpc": 0.05,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "house hunting checklist": {
+  "keyword": "house hunting checklist",
+  "volume": 300,
+  "volume_low": 300,
+  "volume_high": 300,
+  "kd": 3,
+  "cpc": 0.2,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "questions to ask when renting a house": {
+  "keyword": "questions to ask when renting a house",
+  "volume": 300,
+  "volume_low": 300,
+  "volume_high": 300,
+  "kd": 6,
+  "cpc": 0.03,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "apartment hunting checklist": {
+  "keyword": "apartment hunting checklist",
+  "volume": 150,
+  "volume_low": 150,
+  "volume_high": 150,
+  "kd": 0,
+  "cpc": 0.45,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "buying a condo checklist": {
+  "keyword": "buying a condo checklist",
+  "volume": 10,
+  "volume_low": 10,
+  "volume_high": 10,
+  "kd": "",
+  "cpc": 0.08,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "landlord inspection checklist": {
+  "keyword": "landlord inspection checklist",
+  "volume": 300,
+  "volume_low": 300,
+  "volume_high": 300,
+  "kd": 4,
+  "cpc": 0.6,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "checklist for selling a house": {
+  "keyword": "checklist for selling a house",
+  "volume": 250,
+  "volume_low": 250,
+  "volume_high": 250,
+  "kd": 6,
+  "cpc": 0.2,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "moving out of house checklist": {
+  "keyword": "moving out of house checklist",
+  "volume": 30,
+  "volume_low": 30,
+  "volume_high": 30,
+  "kd": 32,
+  "cpc": 1.3,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "first apartment checklist": {
+  "keyword": "first apartment checklist",
+  "volume": 4500,
+  "volume_low": 4500,
+  "volume_high": 4500,
+  "kd": 2,
+  "cpc": 0.2,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "printable home buying checklist": {
+  "keyword": "printable home buying checklist",
+  "volume": 150,
+  "volume_low": 150,
+  "volume_high": 150,
+  "kd": 7,
+  "cpc": 0.04,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "home buyer checklist": {
+  "keyword": "home buyer checklist",
+  "volume": 200,
+  "volume_low": 200,
+  "volume_high": 200,
+  "kd": 4,
+  "cpc": 0.25,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "home staging checklist": {
+  "keyword": "home staging checklist",
+  "volume": 150,
+  "volume_low": 150,
+  "volume_high": 150,
+  "kd": 1,
+  "cpc": 0.3,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 6,
+   "corroborates": true
+  }
+ },
+ "final walkthrough checklist": {
+  "keyword": "final walkthrough checklist",
+  "volume": 1000,
+  "volume_low": 1000,
+  "volume_high": 1000,
+  "kd": 1,
+  "cpc": 0.15,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "renting a house checklist": {
+  "keyword": "renting a house checklist",
+  "volume": 60,
+  "volume_low": 60,
+  "volume_high": 60,
+  "kd": 5,
+  "cpc": 0.6,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "home inspection checklist": {
+  "keyword": "home inspection checklist",
+  "volume": 8800,
+  "volume_low": 8800,
+  "volume_high": 8800,
+  "kd": 15,
+  "cpc": 0.1,
+  "source": "ahrefs",
+  "confidence": "high",
+  "kd_source": "ahrefs",
+  "autocomplete": {
+   "completions": 10,
+   "corroborates": true
+  }
+ },
+ "make ready checklist rental": {
+  "keyword": "make ready checklist rental",
+  "volume": 20,
+  "volume_low": 20,
+  "volume_high": 200,
+  "kd": "",
+  "cpc": "",
+  "source": "estimate",
+  "confidence": "low",
+  "evidence": "Google Autocomplete \u2014 5 live autocomplete completions (est. 20-200/mo, NOT measured)",
+  "autocomplete": {
+   "completions": 5,
+   "corroborates": false
+  }
+ }
+}

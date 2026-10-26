@@ -1,0 +1,50 @@
+[
+ {
+  "slug": "home-buying-checklist",
+  "cid": "home-buying",
+  "kw": "home buying checklist",
+  "rq": "What do I need to do and check before buying a house?"
+ },
+ {
+  "slug": "home-selling-checklist",
+  "cid": "home-selling",
+  "kw": "home selling checklist",
+  "rq": "What do I need to do to get my house ready to sell?"
+ },
+ {
+  "slug": "renting-checklist",
+  "cid": "renting",
+  "kw": "rental checklist",
+  "rq": "What should I check before renting a house or apartment?"
+ },
+ {
+  "slug": "landlord-checklist",
+  "cid": "landlord",
+  "kw": "landlord checklist",
+  "rq": "What do I need to do before renting out my property?"
+ },
+ {
+  "slug": "home-inspection-checklist",
+  "cid": "home-inspection",
+  "kw": "home inspection checklist",
+  "rq": "What do they look for in a home inspection?"
+ },
+ {
+  "slug": "final-walkthrough-checklist",
+  "cid": "final-walkthrough",
+  "kw": "final walkthrough checklist",
+  "rq": "What do you check during a final walkthrough?"
+ },
+ {
+  "slug": "move-in-move-out-checklist",
+  "cid": "move-in-move-out",
+  "kw": "move in checklist",
+  "rq": "What should I write down on a move-in checklist?"
+ },
+ {
+  "slug": "first-apartment-checklist",
+  "cid": "first-apartment",
+  "kw": "first apartment checklist",
+  "rq": "What do I need to buy for my first apartment, and what will it cost?"
+ }
+]
