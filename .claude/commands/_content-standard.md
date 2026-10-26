@@ -599,6 +599,6 @@ The helper sends the intro alone to GPT-6.1 Sol, returns the same number of para
 
 Applies to reader-facing **prose** — new pages, body-text updates, enrichments, and tool copy. Exempt: spec-only rows, pure technical/indexability fixes, and non-prose asset specs.
 
-Body edits are explicitly in scope. The audit phase re-reviews only net-new pages and does **not** re-scan body edits, so anything introduced during a body edit ships unaudited unless the writer catches it. A body edit inherits the page's existing `register` — never switch a page's voice mid-life.
+Body edits are explicitly in scope. Substantive body enrichments must pass the independent Phase 4 audit of the exact changed content and its evidence before publication, including testing attribution and the intent-based takeaway. Metadata/link-only edits retain their existing scope. A body edit inherits the page's existing `register` — never switch a page's voice mid-life.
 
 ---
