@@ -40,8 +40,8 @@ export default function EstatePlanningHubCalculator({ initialData, heading, subh
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="State">
             <select style={S.input} value={v.state} onChange={(e) => set({ state: e.target.value })}>
               {STATES.map((s) => <option key={s.slug} value={s.slug}>{s.name}</option>)}
@@ -70,7 +70,7 @@ export default function EstatePlanningHubCalculator({ initialData, heading, subh
           </label>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Recommended plan</span>
             <span style={S.bigValueSmall}>{r.name}</span>

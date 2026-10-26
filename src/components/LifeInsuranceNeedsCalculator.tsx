@@ -39,8 +39,8 @@ export default function LifeInsuranceNeedsCalculator({ initialData, heading, sub
         </div>
       )}
 
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="Annual income to replace">
             <MoneyInput value={input.annualIncome} onChange={(v) => set({ annualIncome: v })} />
           </Field>
@@ -70,7 +70,7 @@ export default function LifeInsuranceNeedsCalculator({ initialData, heading, sub
           </p>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Recommended coverage</span>
             <span style={S.bigValue}>{fmtUSD(result.recommendedCoverage)}</span>

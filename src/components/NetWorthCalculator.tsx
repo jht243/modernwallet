@@ -56,8 +56,8 @@ export default function NetWorthCalculator({ initialData, heading, subheading }:
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <div style={S.groupTitle}>Assets (what you own)</div>
           <div style={S.gridFields}>
             {ASSETS.map((f) => (
@@ -79,7 +79,7 @@ export default function NetWorthCalculator({ initialData, heading, subheading }:
           </Field>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           {liquidFocus ? (
             <>
               <div style={S.bigStat}>

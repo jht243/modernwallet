@@ -42,8 +42,8 @@ export default function TaxResolutionHubCalculator({ initialData, heading, subhe
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="Total tax debt (tax + penalties + interest)">
             <Money v={v.totalDebt} on={(x) => set({ totalDebt: x })} />
           </Field>
@@ -87,7 +87,7 @@ export default function TaxResolutionHubCalculator({ initialData, heading, subhe
           </label>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>{r.headline.label}</span>
             <span style={S.bigValue}>{r.headline.value}</span>

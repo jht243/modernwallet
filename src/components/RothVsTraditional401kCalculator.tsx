@@ -33,7 +33,7 @@ export default function RothVsTraditional401kCalculator({ initialData, heading, 
         </div>
       )}
       <div style={S.grid}>
-        <div style={S.inputs}>
+        <div style={S.inputs} className="mw-pin">
           <Field label="Traditional (pre-tax) 401(k) deferral per year">
             <MoneyInput value={input.traditionalAnnual} onChange={(v) => set({ traditionalAnnual: v })} />
           </Field>

@@ -42,7 +42,7 @@ export default function PersonalLoanCalculator({ initialData, heading, subheadin
       )}
 
       <div style={S.grid}>
-        <div style={S.inputs}>
+        <div style={S.inputs} className="mw-pin">
           <Field label="Loan amount">
             <MoneyInput value={input.loanAmount} onChange={(v) => set({ loanAmount: v })} />
           </Field>

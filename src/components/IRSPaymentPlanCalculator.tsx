@@ -38,8 +38,8 @@ export default function IRSPaymentPlanCalculator({ initialData, heading, subhead
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="Balance owed (tax + penalties + interest)">
             <Money v={v.balance} on={(x) => set({ balance: x })} />
           </Field>
@@ -70,7 +70,7 @@ export default function IRSPaymentPlanCalculator({ initialData, heading, subhead
           )}
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           {r.plans.map((p) => (
             <div key={p.tier} style={p.tier === r.recommendedTier ? { ...S.planCard, ...S.planCardRecommended } : S.planCard}>
               <div style={S.planHeader}>

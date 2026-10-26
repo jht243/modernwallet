@@ -28,7 +28,7 @@ export default function FloridaAmendment3Calculator({ initialData, heading, subh
         </div>
       )}
       <div style={S.grid}>
-        <div style={S.inputs}>
+        <div style={S.inputs} className="mw-pin">
           <Field label="Assessed value of your homestead"><MoneyInput value={v.assessedValue} onChange={(x) => set({ assessedValue: x })} /></Field>
           <Field label="Your non-school millage (mills, from your TRIM notice)"><NumInput value={v.mills} onChange={(x) => set({ mills: x })} /></Field>
           <p style={S.hint}>

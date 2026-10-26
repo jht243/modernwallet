@@ -30,7 +30,7 @@ function Down({ data }: { data?: Record<string, unknown> }) {
   const r = useMemo(() => downPaymentBreakdown(price, pct), [price, pct]);
   return (
     <div style={S.grid}>
-      <div style={S.inputs}>
+      <div style={S.inputs} className="mw-pin">
         <Field label="Home price"><Money v={price} on={setPrice} /></Field>
         <Field label="Down payment %"><Pct v={pct} on={setPct} /></Field>
         <div style={S.chips}>
@@ -64,7 +64,7 @@ function Closing({ data }: { data?: Record<string, unknown> }) {
   const r = useMemo(() => closingCostEstimate(price), [price]);
   return (
     <div style={S.grid}>
-      <div style={S.inputs}>
+      <div style={S.inputs} className="mw-pin">
         <Field label="Home price"><Money v={price} on={setPrice} /></Field>
         <div style={S.note}>Closing costs typically run 2–5% of the price. This estimates the midpoint (~3%) and a rough breakdown — actual costs vary by state and lender.</div>
       </div>

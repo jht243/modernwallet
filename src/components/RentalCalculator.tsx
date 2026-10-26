@@ -91,7 +91,7 @@ export default function RentalCalculator({ initialData, heading, subheading }: P
         </div>
 
         {/* Results */}
-        <div style={S.results}>
+        <div style={S.results} className="mw-pin">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Monthly cash flow</span>
             <span style={{ ...S.bigValue, color: cfPositive ? PRIMARY : NEGATIVE }}>{fmtUSD(r.monthlyCashFlow)}</span>

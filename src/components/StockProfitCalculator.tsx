@@ -36,7 +36,7 @@ export default function StockProfitCalculator({ initialData, heading, subheading
       )}
 
       <div style={S.grid}>
-        <div style={S.inputs}>
+        <div style={S.inputs} className="mw-pin">
           <Field label="Shares">
             <PlainInput value={input.shares} onChange={(v) => set({ shares: v })} />
           </Field>

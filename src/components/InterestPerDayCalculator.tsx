@@ -50,8 +50,8 @@ export default function InterestPerDayCalculator({ initialData, heading, subhead
         </div>
       )}
 
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="Balance or loan amount">
             <MoneyInput value={input.principal} onChange={(v) => set({ principal: v })} />
           </Field>
@@ -63,7 +63,7 @@ export default function InterestPerDayCalculator({ initialData, heading, subhead
           </p>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Interest per day</span>
             <span style={S.bigValue}>{fmtUSD(result.perDay, { cents: true })}</span>
@@ -226,7 +226,7 @@ const S: Record<string, React.CSSProperties> = {
   bigLabel: { fontSize: "0.8rem", fontWeight: 600, color: "#2A6A58", textTransform: "uppercase", letterSpacing: "0.04em" },
   bigValue: { fontSize: "2rem", fontWeight: 800, color: PRIMARY, letterSpacing: "-0.02em" },
   bigSub: { fontSize: "0.8rem", color: "#777", marginTop: 2 },
-  statRow: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 },
+  statRow: { display: "grid", gridTemplateColumns: "minmax(0, 1fr) minmax(0, 1fr)", gap: 12 },
   stat: { display: "flex", flexDirection: "column", gap: 1 },
   statLabel: { fontSize: "0.78rem", color: "#666" },
   statValue: { fontSize: "1.15rem", fontWeight: 700, fontVariantNumeric: "tabular-nums" },

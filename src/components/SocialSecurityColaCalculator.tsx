@@ -36,8 +36,8 @@ export default function SocialSecurityColaCalculator({ initialData, heading, sub
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <label style={C.check}>
             <input type="checkbox" style={C.checkBox} checked={depositMode} onChange={(e) => setDepositMode(e.target.checked)} />
             <span>I only know my monthly deposit</span>
@@ -60,7 +60,7 @@ export default function SocialSecurityColaCalculator({ initialData, heading, sub
           <p style={S.hint}>2026 Medicare Trustees Report projection. CMS sets the final 2027 premium in the fall.</p>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Estimated 2027 monthly benefit</span>
             <span style={S.bigValue}>{fmtUSD(r.newBenefit, { cents: true })}</span>

@@ -46,8 +46,8 @@ export default function TrumpAccountCalculator({ initialData, heading, subheadin
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <div style={S.row2}>
             <Field label="Child's age now"><Plain v={v.childCurrentAge} max={17} on={(x) => set({ childCurrentAge: x })} /></Field>
             <Field label="Federal seed"><Money v={v.seedDeposit} on={(x) => set({ seedDeposit: x })} /></Field>
@@ -67,7 +67,7 @@ export default function TrumpAccountCalculator({ initialData, heading, subheadin
           {r.capWarning && <div style={S.warn}>⚠️ {r.capWarning}</div>}
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           {matured ? (
             <div style={S.bigStat}>
               <span style={S.bigLabel}>Already 18</span>

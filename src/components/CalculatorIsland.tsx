@@ -237,5 +237,25 @@ export default function CalculatorIsland({ calculatorId, ...rest }: Props) {
       </div>
     );
   }
-  return <Cmp {...rest} />;
+  return (
+    <>
+      <style>{STACK_CSS}</style>
+      <Cmp {...rest} />
+    </>
+  );
 }
+
+// Uneven-column layouts (2026-10-26) for tools whose input column and result column differ a lot in
+// height. Large gaps: the component adds className="mw-stack" to its two-column grid, "mw-in" to the
+// inputs and "mw-out" to the results; inputs flow into balanced columns across the full width with
+// results full width underneath. Moderate gaps, where stacking would make the tool taller: the shorter
+// column gets "mw-pin" and stays in view (desktop only) while the reader scrolls the longer one.
+const STACK_CSS = `
+.mw-stack{grid-template-columns:minmax(0,1fr)!important}
+.mw-stack>*{min-width:0}
+.mw-stack>.mw-in{display:block!important;column-width:250px;column-gap:24px}
+.mw-stack>.mw-in>*{break-inside:avoid;margin:0 0 12px}
+.mw-stack>.mw-in>*:last-child{margin-bottom:0}
+.mw-stack>.mw-in>div:not(:has(input,select,textarea,button)){break-after:avoid}
+@media (min-width:760px){.mw-pin{position:sticky;top:76px;align-self:start}}
+`;

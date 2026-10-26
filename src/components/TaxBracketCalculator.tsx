@@ -28,7 +28,7 @@ export default function TaxBracketCalculator({ initialData, heading, subheading 
         </div>
       )}
       <div style={S.grid}>
-        <div style={S.inputs}>
+        <div style={S.inputs} className="mw-pin">
           <Field label="Income before deductions (wages, interest, other taxable income)"><MoneyInput value={v.income} onChange={(x) => set({ income: x })} /></Field>
           <Field label="Filing status">
             <select

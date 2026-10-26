@@ -39,8 +39,8 @@ export default function OperatingCashFlowCalculator({ initialData, heading, subh
         </div>
       )}
 
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="Net income">
             <MoneyInput value={input.netIncome} onChange={(v) => set({ netIncome: v })} allowNegative />
           </Field>
@@ -67,7 +67,7 @@ export default function OperatingCashFlowCalculator({ initialData, heading, subh
           </p>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Operating cash flow</span>
             <span style={S.bigValue}>{fmtUSD(result.operatingCashFlow)}</span>

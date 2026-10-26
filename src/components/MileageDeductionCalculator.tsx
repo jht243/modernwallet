@@ -58,8 +58,8 @@ export default function MileageDeductionCalculator({ initialData, heading, subhe
         </div>
       )}
 
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label={`Business miles, Jan 1 – Jun 30 (${(BUSINESS_RATE_2026_H1 * 100).toFixed(1)}¢/mi)`}>
             <PlainInput value={input.milesFirstHalf} onChange={(v) => set({ milesFirstHalf: v })} suffix="mi" />
           </Field>
@@ -120,7 +120,7 @@ export default function MileageDeductionCalculator({ initialData, heading, subhe
           </label>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Tax this deduction saves you</span>
             <span style={S.bigValue}>{fmtUSD(result.totalTaxSaved)}</span>

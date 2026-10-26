@@ -49,8 +49,8 @@ export default function ZakatCalculator({ initialData, heading, subheading }: Pr
         </div>
       )}
 
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="Cash and bank balances">
             <MoneyInput value={input.cashAndBank} onChange={(v) => set({ cashAndBank: v })} />
           </Field>
@@ -98,7 +98,7 @@ export default function ZakatCalculator({ initialData, heading, subheading }: Pr
           </p>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Zakat due</span>
             <span style={S.bigValue}>{fmtUSD(result.zakatDue, { cents: true })}</span>

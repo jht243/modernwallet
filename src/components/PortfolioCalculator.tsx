@@ -38,8 +38,8 @@ export default function PortfolioCalculator({ initialData, heading, subheading }
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <div style={S.groupTitle}>Your holdings</div>
           <div style={S.row2}>
             <Field label="Stocks"><Money v={v.stocks} on={(x) => set({ stocks: x })} /></Field>
@@ -55,7 +55,7 @@ export default function PortfolioCalculator({ initialData, heading, subheading }
           </div>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigRow}>
             <div style={S.bigStat}>
               <span style={S.bigLabel}>Expected return</span>

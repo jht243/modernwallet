@@ -32,8 +32,8 @@ export default function PrenupCostCalculator({ initialData, heading, subheading 
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="State">
             <select style={S.input} value={v.state} onChange={(e) => set({ state: e.target.value })}>
               {STATES.map((s) => <option key={s.slug} value={s.slug}>{s.name}</option>)}
@@ -52,7 +52,7 @@ export default function PrenupCostCalculator({ initialData, heading, subheading 
           </label>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Estimated total cost</span>
             <span style={S.bigValue}>{fmtUSD(r.costLow)}–{fmtUSD(r.costHigh)}</span>

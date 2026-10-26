@@ -39,8 +39,8 @@ export default function ElderCareHubCalculator({ initialData, heading, subheadin
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="Age">
             <input style={S.input} type="number" min={40} max={100} value={v.age} onChange={(e) => set({ age: Number(e.target.value) })} />
           </Field>
@@ -70,7 +70,7 @@ export default function ElderCareHubCalculator({ initialData, heading, subheadin
           </label>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Recommendation</span>
             <span style={S.bigValueSmall}>{r.headline}</span>

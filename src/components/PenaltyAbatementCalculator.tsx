@@ -40,8 +40,8 @@ export default function PenaltyAbatementCalculator({ initialData, heading, subhe
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="Penalty type">
             <select style={S.input} value={v.penaltyType} onChange={(e) => set({ penaltyType: e.target.value as PenaltyType })}>
               <option value="failure-to-file">Failure to File — §6651(a)(1)</option>
@@ -76,7 +76,7 @@ export default function PenaltyAbatementCalculator({ initialData, heading, subhe
           </label>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Estimated abatement</span>
             <span style={S.bigValue}>{fmtUSD(r.estimatedAbatement)}</span>

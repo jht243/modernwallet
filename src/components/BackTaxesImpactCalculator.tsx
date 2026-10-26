@@ -38,8 +38,8 @@ export default function BackTaxesImpactCalculator({ initialData, heading, subhea
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="Balance owed to the IRS">
             <Money v={v.balance} on={(x) => set({ balance: x })} />
           </Field>
@@ -63,7 +63,7 @@ export default function BackTaxesImpactCalculator({ initialData, heading, subhea
           </label>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Estimated CSED remaining</span>
             <span style={S.bigValue}>{r.csedYearsRemaining} years</span>

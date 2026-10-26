@@ -42,7 +42,7 @@ export default function PersonalLoanPayoffCalculator({ initialData, heading, sub
         <button type="button" style={{ ...S.goalBtn, ...(goal === "target-date" ? S.goalBtnActive : {}) }} onClick={() => setGoal("target-date")}>I want a payoff date</button>
       </div>
       <div style={S.grid}>
-        <div style={S.inputs}>
+        <div style={S.inputs} className="mw-pin">
           <Field label="Remaining loan balance"><Money v={v.loanBalance} on={(x) => set({ loanBalance: x })} /></Field>
           <div style={S.row2}>
             <Field label="Interest rate (APR)"><Pct v={v.interestRatePct} on={(x) => set({ interestRatePct: x })} /></Field>

@@ -34,8 +34,8 @@ export default function EstateTaxCalculator({ initialData, heading, subheading }
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="Net worth (gross estate)">
             <Money v={v.netWorth} on={(x) => set({ netWorth: x })} />
           </Field>
@@ -52,7 +52,7 @@ export default function EstateTaxCalculator({ initialData, heading, subheading }
           </Field>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Total estate tax owed</span>
             <span style={S.bigValue}>{fmtUSD(r.totalTax)}</span>

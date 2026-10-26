@@ -37,8 +37,8 @@ export default function SpecialNeedsTrustCalculator({ initialData, heading, subh
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="Beneficiary's current age">
             <input style={S.input} type="number" min={0} max={120} value={v.beneficiaryAge} onChange={(e) => set({ beneficiaryAge: Math.max(0, Math.min(120, parseInt(e.target.value) || 0)) })} />
           </Field>
@@ -69,7 +69,7 @@ export default function SpecialNeedsTrustCalculator({ initialData, heading, subh
           </Field>
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Recommended trust type</span>
             <span style={S.bigValue}>{typeLabel}</span>

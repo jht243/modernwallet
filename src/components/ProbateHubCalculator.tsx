@@ -40,7 +40,7 @@ export default function ProbateHubCalculator({ initialData, heading, subheading 
         </div>
       )}
       <div style={S.grid}>
-        <div style={S.inputs}>
+        <div style={S.inputs} className="mw-pin">
           <Field label="State">
             <select style={S.input} value={v.state} onChange={(e) => set({ state: e.target.value })}>
               {STATES.map((s) => <option key={s.slug} value={s.slug}>{s.name}</option>)}

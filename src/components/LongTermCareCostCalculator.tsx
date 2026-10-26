@@ -49,8 +49,8 @@ export default function LongTermCareCostCalculator({ initialData, heading, subhe
           {subheading && <div style={S.subheading}>{subheading}</div>}
         </div>
       )}
-      <div style={S.grid}>
-        <div style={S.inputs}>
+      <div style={S.grid} className="mw-stack">
+        <div style={S.inputs} className="mw-in">
           <Field label="Type of care">
             <select style={S.input} value={v.careType} onChange={(e) => set({ careType: e.target.value as CareType })}>
               <option value="nursing-private">Nursing home — private room</option>
@@ -88,7 +88,7 @@ export default function LongTermCareCostCalculator({ initialData, heading, subhe
           )}
         </div>
 
-        <div style={S.results}>
+        <div style={S.results} className="mw-out">
           <div style={S.bigStat}>
             <span style={S.bigLabel}>Projected total cost of care</span>
             <span style={S.bigValue}>{fmtUSD(r.totalLifetimeCost)}</span>
