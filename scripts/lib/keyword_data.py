@@ -746,11 +746,14 @@ def volumes(phrases, database: str = "us", allow_estimate: bool = True) -> dict[
 
 
 def expand(seed: str, limit: int = 20, database: str = "us") -> list[dict]:
-    """Keyword ideas for one seed: best provider PLUS live autocomplete, always.
+    """Return up to limit provider ideas PLUS limit live autocomplete ideas.
 
-    Autocomplete is additive here, not a fallback — its suggestions are merged
-    into the provider's ideas so real live long-tail is never missed.
+    The two bounded discovery pools are additive (at most 2 * limit rows),
+    not a final chart quota. Preserve provider metrics on overlapping phrases.
+    This uses the same requests as before; only the lossy final slice is gone.
     """
+    if limit < 1:
+        raise ValueError("expand limit must be positive")
     rows: list[dict] = []
     ep = field_provider("expand", database)
     if ep:
@@ -760,16 +763,26 @@ def expand(seed: str, limit: int = 20, database: str = "us") -> list[dict]:
         except Exception as e:
             _died(ep, e)
 
-    if not _enrich_on():
-        return rows[:limit]
+    def unique(items, seen):
+        kept = []
+        for row in items:
+            key = " ".join(row["keyword"].casefold().split())
+            if key and key not in seen:
+                seen.add(key)
+                kept.append(row)
+        return kept
 
-    have = {r["keyword"].lower() for r in rows}
-    extra = [s for s in _estimate_expand(seed, limit, database)
-             if s["keyword"].lower() not in have]
-    if extra:
-        _note(f"Autocomplete added {len(extra)} live ideas '{seed}' "
-              f"({'no provider' if not ep else ep + ' missed them'})")
-    return (rows + extra)[:limit] if rows else extra[:limit]
+    have = set()
+    provider_rows = unique(rows, have)[:limit]
+    # Only returned provider rows own duplicate precedence.
+    have = {" ".join(r["keyword"].casefold().split()) for r in provider_rows}
+    extra = []
+    if _enrich_on():
+        extra = unique(_estimate_expand(seed, limit, database), have)[:limit]
+    _note(f"Expansion returned {len(provider_rows)} provider + {len(extra)} "
+          f"unique autocomplete ideas for '{seed}' (limit={limit} per source; "
+          "autocomplete metrics remain estimates)")
+    return provider_rows + extra
 
 
 def score_volume(row: dict) -> int:
@@ -800,7 +813,8 @@ def main(argv=None) -> int:
     v.add_argument("--database", default=os.environ.get("SEMRUSH_DATABASE", "us"))
     e = sub.add_parser("expand")
     e.add_argument("--seed", action="append", required=True)
-    e.add_argument("--limit", type=int, default=20)
+    e.add_argument("--limit", type=int, default=20,
+                   help="Per-source idea limit: provider + autocomplete, at most 2x rows (default 20)")
     e.add_argument("--database", default=os.environ.get("SEMRUSH_DATABASE", "us"))
     s = sub.add_parser("status")
     s.add_argument("--database", default=os.environ.get("SEMRUSH_DATABASE", "us"))

@@ -1,9 +1,15 @@
 
 <!-- workflow-source-freshness-v1 -->
 **WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
 <!-- /workflow-source-freshness-v1 -->
 
 # Phase 5 — Stage (local only — NO push, NO IndexNow)
+
+<!-- workflow-checkpoints-v1 -->
+**Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
+<!-- /workflow-checkpoints-v1 -->
+
 
 **Testing publication check:** Apply `_testing-labels.md` to every affected route. Verify its exact-content evidence decision and built title, metadata, byline, methods and schema with the active site's adapter. If a shared rendering change affects other routes, include them in validation. Missing/stale approval, mismatched labels or unsupported leftover testing claims block publication of the affected content. Missing adapters must be wired and verified before tested labels can be enabled; do not create permission or fabricate records. Preserve local medical/psychedelic and other exclusions. This is a publication condition, not permission to rewrite unrelated historical pages.
 

@@ -1,3 +1,8 @@
+
+
+<!-- workflow-checkpoints-v1 -->
+**Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
+<!-- /workflow-checkpoints-v1 -->
 ---
 description: AUTONOMOUS weekly rank-drop recovery. Finds pages that LOST Google rankings (not pages whose searches dried up) using ONLY Google's own data — Search Console + GA4 + the Google Search Status Dashboard — and HARD FAILS if that data can't be read. Sorts each drop (ranking loss / cannibalized / obsolete / demand / unstable), studies what now outranks the page, and fixes the page with ORIGINAL work (never copied text). Holds all edits while a Google ranking update is rolling out. Measures every fix at 14 and 28 days and reverts losers. NO human gates. Site-generic: every site value comes from scripts/rank_drop/site.json.
 argument-hint: "(no arguments — fully autonomous)"
@@ -10,6 +15,7 @@ argument-hint: "(no arguments — fully autonomous)"
 
 <!-- workflow-source-freshness-v1 -->
 **WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
 <!-- /workflow-source-freshness-v1 -->
 
 

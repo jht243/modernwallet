@@ -10,10 +10,16 @@ argument-hint: "[optional N = how many pages to publish this run; default 5]"
 
 <!-- workflow-source-freshness-v1 -->
 **WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
 <!-- /workflow-source-freshness-v1 -->
 
 
 # /comparison-content-creator — comparison-article ideation → dedup → live-data scoring → write → audit → publish
+
+<!-- workflow-checkpoints-v1 -->
+**Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
+<!-- /workflow-checkpoints-v1 -->
+
 
 > **‼️ RUN-WIDE RULE — READ FIRST.** You trigger this manually. It runs autonomously through ideation, scoring, generation of new pages, **in-place enrichment of partially-covered pages**, audit, and **local staging** — auto-continuing at every phase boundary without asking — but there is **EXACTLY ONE human gate: the Phase 6 summary**. Phase 5 stages everything locally (commit to a working branch, NO push, NO IndexNow). Phase 6 prints the summary + the Candidate Chart and **STOPS for your explicit approval**; only after you approve does it push to main and ping IndexNow. The reviewer gate (Phase 4) is an automatic adversarial subagent, not a human checkpoint. Never print "Want me to proceed?" at any boundary **except** the Phase 6 gate. Also stop early on a **hard blocker** (no content system found, git not clean enough to stage safely, or zero connected SEO data sources — see below).
 

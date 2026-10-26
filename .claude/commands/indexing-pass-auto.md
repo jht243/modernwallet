@@ -10,6 +10,7 @@ argument-hint: "[optional path to an existing report .md — skips the inspectio
 
 <!-- workflow-source-freshness-v1 -->
 **WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
 <!-- /workflow-source-freshness-v1 -->
 
 
@@ -24,6 +25,11 @@ argument-hint: "[optional path to an existing report .md — skips the inspectio
 > link sentences, corrections) are the only in-context text.
 
 # /indexing-pass-auto — fully autonomous GSC indexing pass (cron-safe)
+
+<!-- workflow-checkpoints-v1 -->
+**Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
+<!-- /workflow-checkpoints-v1 -->
+
 
 > **‼️ RUN-WIDE RULE — READ FIRST.** This is the cloud-cron variant of `/indexing-issues-gsc-pass`. It is **identical** to that skill except for **two** behavioral changes: the Phase 0 manifest gate and the Phase 8 push gate are replaced with deterministic auto-decision logic. There is **NO** human checkpoint anywhere. You **MUST NOT** print "Approve manifest?", "Should I push?", or any other question at any phase boundary. If a hard blocker fires, you **still finish** by sending an email report and exiting 0.
 
