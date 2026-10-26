@@ -40,20 +40,36 @@ date, source and legal statement stays byte-identical, and the rewrite only
 changes the wording around them. A repo's YMYL / editorial hard rule is a reason
 to fact-lock strictly, never a reason to skip.
 
-Rewrites must not drift facts (see the 2026-09 humanize claim-drift incident):
+Rewrites must not drift facts (see the 2026-09 humanize claim-drift incident).
+Every step below is REQUIRED and leaves a receipt that is committed with the run:
 
-1. **Fact-lock first.** Before editing, list every number, price, date, name,
-   quote and claim in the section. The rewrite must keep every item unchanged
-   and add none.
-2. Rewrite per `.claude/commands/_content-standard.md` and
-   `.claude/commands/_anti-ai-language.md` (where the repo has them). Only
-   content-archetype pages (guides, comparisons, explainers, roundups) get body
-   rewrites. Hubs, home, service, booking and legal pages keep their body copy,
-   and so does any page a repo's CLAUDE.md protects.
-3. Run the adversarial audit `.claude/commands/seo-gsc-pass/phase-4-audit.md`
-   (or the repo's equivalent phase-4-audit) on every rewritten section, then diff
-   the fact list. Audit FAIL or any fact changed → revert that section and retry
-   next run.
+1. **Load the standard:** `bash .claude/tools/load-standards.sh ahrefs-site-audit-auto rewrite`
+   (prints `_content-standard.md`, `_anti-ai-language.md`, `_experience.md` and appends
+   the receipt to `reports/standards-ledger.jsonl`). Rewrite only after it prints
+   `standard-loaded`. Repo has no `load-standards.sh` → Read those three files in
+   full and append `{"routine":"ahrefs-site-audit-auto","phase":"rewrite","via":"read"}`
+   to `reports/standards-ledger.jsonl` yourself.
+2. **Rewrite** the generic sections per those files. Only content-archetype pages
+   (guides, comparisons, explainers, roundups) get body rewrites. Hubs, home,
+   service, booking and legal pages keep their body copy, and so does any page a
+   repo's CLAUDE.md protects. Keep every number, rate, date, source, name and
+   legal statement byte-identical.
+3. **Fact-lock gate (script, not judgment):**
+   `python3 .claude/scripts/rewrite-gate.py <each rewritten file>` — compares against
+   HEAD and FAILS if any number, currency amount or URL was added, dropped or
+   changed (`updated:` dates ignored). It appends to
+   `reports/site-audit/<date>.rewrite-gate.jsonl`. FAIL → fix the wording to put the
+   facts back and re-run until PASS; still FAIL after 2 tries → revert that file.
+4. **Adversarial audit:** run `.claude/commands/seo-gsc-pass/phase-4-audit.md` (or the
+   repo's equivalent phase-4-audit) on each rewritten page as a separate,
+   INLINE + BLOCKING reviewer pass. Write the verdict to
+   `reports/site-audit/<date>.rewrite-audit.md`: per page `PASS` or `FAIL`, with each
+   gate checked and its result. FAIL → apply the reviewer's exact fixes (remediation
+   ladder), re-run steps 3–4; still FAIL after 2 tries → revert that file.
+5. **Before the commit**, all of these must exist and agree: the standards-ledger
+   line, a `PASS` line in the rewrite-gate JSONL and a `PASS` verdict in
+   rewrite-audit.md for every rewritten file. A rewritten file without all three
+   is reverted, never shipped. `git add` the receipts with the content.
 
 ## Email
 
