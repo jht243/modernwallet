@@ -65,11 +65,27 @@ Every step below is REQUIRED and leaves a receipt that is committed with the run
    INLINE + BLOCKING reviewer pass. Write the verdict to
    `reports/site-audit/<date>.rewrite-audit.md`: per page `PASS` or `FAIL`, with each
    gate checked and its result. FAIL → apply the reviewer's exact fixes (remediation
-   ladder), re-run steps 3–4; still FAIL after 2 tries → revert that file.
+   ladder), then re-run step 3 AND a fresh reviewer pass on the new diff (step 4
+   again — the fact gate alone never clears a reviewer FAIL). Record every round
+   (`round 1: FAIL …`, `round 2: PASS …`). Still FAIL after 2 rounds → revert that file.
+   The final line for each file must be a reviewer PASS that ran AFTER its last edit.
 5. **Before the commit**, all of these must exist and agree: the standards-ledger
    line, a `PASS` line in the rewrite-gate JSONL and a `PASS` verdict in
    rewrite-audit.md for every rewritten file. A rewritten file without all three
    is reverted, never shipped. `git add` the receipts with the content.
+
+## Required repo checks
+
+Every check the routine's prompt or the repo's CLAUDE.md says MUST pass (e.g.
+`npm run check-headings`, `check-depth`, typecheck, the build) must pass on the
+commit this run pushes — including failures that existed before the run. A
+failing required check is this run's to fix when the fix is mechanical and
+fact-safe (shorten an over-length deck/H1/title to the limit keeping its meaning
+and keyword; fix a type error). Run `rewrite-gate.py` on every content file you
+touch this way. Never push past a failing required check and never call its
+items "backlog". If an item truly cannot be fixed safely, revert only this run's
+changes that depend on it and report the exact check output under
+`## Not fixed this run`.
 
 ## Email
 

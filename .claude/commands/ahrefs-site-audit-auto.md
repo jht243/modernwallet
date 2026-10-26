@@ -114,7 +114,9 @@ Group every returned issue by **kind** (the Ahrefs issue slug, e.g. `meta_desc_t
    rewrite, `rewrite-gate.py` PASS, phase-4-audit PASS, receipts. MANDATORY this
    run; the email's "Issues fixed" line for each rewrite quotes its
    `REWRITE-GATE PASS` line and the audit verdict.
-4. Build + every gate (typecheck, site checks, JSON-LD, fact diff, audit).
+4. Build + every gate (typecheck, site checks, JSON-LD, fact diff, audit). Every
+   required repo check must PASS — fix pre-existing failures too
+   (`_site-audit-autofix.md` → Required repo checks).
 5. ONE commit with all of it, push, deploy check, live 200 check.
 6. IndexNow (all changed URLs + Ahrefs' list), must print `INDEXNOW OK`.
 7. Email — LAST.
