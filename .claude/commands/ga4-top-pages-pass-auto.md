@@ -58,7 +58,7 @@ This skill is repo-agnostic. The **routine message supplies this site's GA4 prop
 | 1 | `ga4-top-pages-pass/phase-1-page-audit.md` | Per-page: classify → cooldown filter → per-page GSC evidence |
 | 2 | `ga4-top-pages-pass/phase-2-opportunity-mine.md` | Per audited page: the 5 lanes → unified candidate list |
 | 3 | `ga4-top-pages-pass/phase-3-dedup.md` | 4-layer dedup (incl. comparison-engine history) + route-based winner protection |
-| 4 | `ga4-top-pages-pass/phase-4-execute-publish.md` | Write pages + enrichments + metadata + tools → audit → ledgers → push → 200s → IndexNow |
+| 4 | `ga4-top-pages-pass/phase-4-execute-publish.md` | Enrichments + metadata → audit → ledgers → push → 200s → IndexNow; then §8 hands every new-page/tool candidate to `/mindmap-pass` (it builds, audits and publishes them) |
 
 **Early exits (SUCCESS, not failure):**
 - All 10 pages on cooldown and no deferred drain available → digest "All top-10 pages on cooldown; nothing to do", `--status no-changes`, exit 0. Expected often — sticky sites surface the same winners nightly; the cooldown ledger is what keeps this pass cheap.

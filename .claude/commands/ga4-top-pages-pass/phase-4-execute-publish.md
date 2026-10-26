@@ -16,27 +16,25 @@
 > "generate it through the section command"; the prose rules below are the writer's system
 > prompt, not a licence to write the prose yourself.
 
-Four action types ship from this phase: **new pages** (lanes A/B), **body/FAQ enrichments** (lane C), **metadata rewrites** (lane D), **on-page tools** (lane E). No trend ledger exists in this pass — the two ledgers are the shared candidate ledger and this pass's page-audit ledger.
+**New pages (lanes A/B) and on-page tools (lane E) are built by `/mindmap-pass`, not here** — section 8 hands every surviving A/B/E candidate to it as one brief (MINDMAP HAND-OFF, 2026-10-25). This phase writes and ships the edits to existing pages itself: **body/FAQ enrichments** (lane C) and **metadata rewrites** (lane D). No trend ledger exists in this pass — the two ledgers are the shared candidate ledger and this pass's page-audit ledger.
 
 ## 1. Apply the cap (the only one — per source page)
 - **≤10 new pieces of content per audited page** (new pages + tools spawned from that page's audit, combined): take that page's top 10 such survivors by evidence rank; anything beyond 10 for that page → append to `reports/trend-pass/ledger.md` as **DEFERRED** (tagged `source: ga4-top-pages`, with the source page's route), drained via Phase 1's deferred-drain path, still re-passing Phase 3 first.
 - **No other cap.** Enrichments and metadata rewrites are edits to existing pages (not "new pieces of content"), so they are not bounded by the per-page 10 and have no run-wide ceiling — every enrichment/metadata/tool candidate that cleared Phase 3 ships. A metadata rewrite still requires that page's GSC `underperforming` + `rewrite_recommended` verdict (Lane D's trigger, quoted in the digest) — that is a correctness condition, not a numeric cap.
 
 ## 2. Write the content — EVERY action passes BOTH Stage 3 and Stage 4 (no exceptions)
-Every action type below — **new pages, enrichment sections, metadata rewrites, AND tools/quizzes** — must go through both stages before it can reach the commit:
+Every action type below — **enrichment sections and metadata rewrites** — must go through both stages before it can reach the commit (new pages and tools go to mindmap in section 8, which runs its own generate + audit):
 - **Stage 3 (write):** author it per the verbatim content-generation prompt guide in `.claude/commands/seo-gsc-pass/phase-3-new-content.md` **if that skill is present in this repo**; otherwise apply the equivalent standard inline — research-first, E-E-A-T, real answers, correct internal linking, the site's voice.
 - **Stage 4 (audit):** it must then clear the adversarial audit in `.claude/commands/seo-gsc-pass/phase-4-audit.md` **if present**; otherwise run an equivalent adversarial review inline (a reviewer that did not write it tries to find thin/wrong/duplicate content and rejects on any hit).
 
-Anything that fails Stage 4 after 2 retries is reverted + logged **DROPPED** ("failed audit"); a partial batch still ships. Nothing — not even a single metadata title or a tool — ships without passing both stages.
+Anything that fails Stage 4 after 2 retries is reverted + logged **DROPPED** ("failed audit"); a partial batch still ships. Nothing — not even a single metadata title — ships without passing both stages.
 
 Per action type (how the two stages apply):
-- **New pages** — Stage 3 writes the page: follow existing sibling structure exactly; include the site's standard inline CTA below the first body section if it has one; wire the page into the site's hub/sibling link structure the way its existing siblings do (e.g. a model-hub resolver like `src/utils/modelHub.ts` on sites that track models — hub-side links added additively); comparison/worth-it pages follow the site's comparison format. Stage 4 audits it.
 - **Enrichments** — Stage 3 writes each new section (APPEND only — new FAQ entries / new H2 blocks; never rewrite, reorder, or delete existing copy; each section must actually ANSWER its sub-intent; add an internal link to any related dedicated page). Stage 4 audits every new section.
 - **Metadata** — Stage 3 drafts the title/meta-description per the standard's metadata guidance, grounded in the page's real GSC `top_queries`. Stage 4 audits it — the new title must match the page's actual intent AND the `underperforming` evidence, or it's DROPPED. ‼️ `canonicalOverride` must NEVER be set to `undefined` anywhere (breaks the entire static export — every page 404s; tsc cannot catch it).
-- **Tools / quizzes** — Stage 3 writes all on-page copy (intro, instructions, result text) per the content standard; the interactive logic follows `downloadable-asset-pass/phase-3c-tool-build.md` if present, else a clean client-side build (real working logic, no fake outputs; no new deps, no secrets; embedded on the winning page or its own route with a prominent link from the winner). Stage 4 = the adversarial copy audit PLUS a logic check (`downloadable-asset-pass/phase-4-audit.md` if present, else verify correct outputs on sample inputs + no console errors); failing EITHER → revert + DROPPED.
 
 ## 3. Sitemap + build check
-Update the sitemap for new routes (follow the repo's generation — don't hand-edit if build-generated). Run typecheck AND `next build` (Node 20) — the undefined-serialization hazard makes tsc alone insufficient. Mechanical fixes only; otherwise revert the offending change (digest: "build revert").
+Run typecheck AND `next build` (Node 20) — the undefined-serialization hazard makes tsc alone insufficient. Mechanical fixes only; otherwise revert the offending change (digest: "build revert").
 
 ## 4. Ledger writes (before the commit, so they ship in it)
 - `reports/trend-pass/ledger.md`: one row per candidate touched — **KEPT** / **DROPPED** (+reason) / **DEFERRED** (over-cap only), all tagged `source: ga4-top-pages`.
@@ -50,12 +48,23 @@ git fetch origin && git status
 git diff --cached HEAD --numstat   # NO deletions you didn't make
 ```
 Remote moved → rebase/re-stage so the commit contains ONLY this run's changes. Any staged deletion of an untouched file = stale base — fix first. Single commit:
-`ga4-top-pages-pass <date>: N new pages, M enrichments, K metadata, T tools across P audited winners`, then deploy to the authorized branch: `git fetch origin main && git rebase origin/main && git push origin HEAD:main` (see the launcher's Git model — `main` is this repo's authorized nightly deploy path). This runs only after the Phase 4 audit passed.
+`ga4-top-pages-pass <date>: M enrichments, K metadata across P audited winners; N new-page/tool rows sent to mindmap`, then deploy to the authorized branch: `git fetch origin main && git rebase origin/main && git push origin HEAD:main` (see the launcher's Git model — `main` is this repo's authorized nightly deploy path). This runs only after the Phase 4 audit passed.
 
 ## 6. Verify 200s + IndexNow
 After the deploy settles, `curl -s -o /dev/null -w "%{http_code}"` every new AND every edited URL — all must be 200 before IndexNow (an enrichment that 404s its page is a rollback, not a skip: revert that page's change, re-push). Submit new + changed URLs to IndexNow (fallback key block in the orchestrator). Other non-200s: digest + skip from IndexNow, do NOT roll back the whole run.
 
 ## 7. Digest
-Assemble the details file and send per the orchestrator's Email section.
+Assemble the details file and send per the orchestrator's Email section, after section 8 — its "Pages shipped" and "Tools built" sections come from the mindmap chart.
+
+## 8. Hand new pages + tools to /mindmap-pass
+Every lane A, B and E candidate that survived Phase 3 and the per-page cap goes into ONE brief, as returned: the winning page it came from (route, views, channel split), lane, proposed slug and format (`article` / `comparison table/database` / `interactive tool` / `calculator` / `quiz/assessment`), and the evidence (autocomplete query, GSC query). No filtering, no judging. Start the brief with these lines, verbatim, then the candidates:
+
+> Source: GA4 top-pages audit for <BASE_URL>. Each item is a page or tool that one of our 10 most-visited pages (last 24h, all channels) is missing — a spoke/sibling, a comparison/alternatives/worth-it page, or an on-page tool — already checked against the site's pages and the shared candidate ledger. Roundups are objective and the business is never a ranked option (`.claude/commands/_roundup-blend.md` §3).
+> Unattended run: save the chart to `reports/mindmap-pass/<YYYY-MM-DD>-ga4.md` (this exact name, so it never collides with another mindmap run today), treat the Phase 0 manifest as approved, and continue to Phase 9 without stopping.
+
+```
+/mindmap-pass <the brief>
+```
+Then, from the finished chart, append one `reports/trend-pass/ledger.md` row per sent candidate — **KEPT** (mindmap built it) or **DROPPED** (+ mindmap's reason), tagged `source: ga4-top-pages` — commit, and deploy with `git fetch origin main && git rebase origin/main && git push origin HEAD:main`. No sent candidates → skip this section.
 
 
