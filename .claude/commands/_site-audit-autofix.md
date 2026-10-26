@@ -34,6 +34,12 @@ outcomes per page are: rewritten + audited + live, or reverted because its audit
 FAILED (name the failing check). Deferring without running the audit is a run
 defect. Do the rewrites BEFORE the commit so they ship with the schema fixes.
 
+**YMYL pages are included** (money, property, health, legal, immigration). The
+fact-lock below is what makes a YMYL rewrite safe: every figure, rate, threshold,
+date, source and legal statement stays byte-identical, and the rewrite only
+changes the wording around them. A repo's YMYL / editorial hard rule is a reason
+to fact-lock strictly, never a reason to skip.
+
 Rewrites must not drift facts (see the 2026-09 humanize claim-drift incident):
 
 1. **Fact-lock first.** Before editing, list every number, price, date, name,

@@ -101,6 +101,22 @@ Group every returned issue by **kind** (the Ahrefs issue slug, e.g. `meta_desc_t
 2. `.claude/commands/_site-audit-autofix.md` — the fixes and verify gates for
    every row STEP 4 below marks "flag for human" / "NO".
 
+**Fixed order of work (do not reorder, do not split commits):**
+1. Pull issues + URLs (STEP 3 + lane §1).
+2. Template / schema / robots / link fixes.
+3. **Content rewrites for every content-quality URL** (high AI content,
+   similar AI content) per `_site-audit-autofix.md`. MANDATORY this run.
+4. Build + every gate (typecheck, site checks, JSON-LD, fact diff, audit).
+5. ONE commit with all of it, push, deploy check, live 200 check.
+6. IndexNow (all changed URLs + Ahrefs' list), must print `INDEXNOW OK`.
+7. Email — LAST.
+
+A content-quality URL may only end the run as **rewritten + live** or
+**reverted: <named audit check that FAILED>**. "Deferred", "left for next run",
+"needs care" or "YMYL page" without a failed check is a run defect: go back to
+step 3. YMYL is not an exception — the fact-lock keeps every number, rate, date
+and claim byte-identical, which is exactly what the site's YMYL rules require.
+
 Both files **override** STEP 4's flag rows, the "Flagged for human" email
 headings and the canonical / redirect / robots.txt / body-content lines in
 "What this skill MUST NOT do", to the extent they specify. A fix that fails its
