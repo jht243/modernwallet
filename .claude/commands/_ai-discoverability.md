@@ -63,6 +63,12 @@ Treat each non-empty result as an issue row and fix it with the named fix row
 | Sitemaps | Noindex URL in sitemap | `{"and":[{"field":"is_in_sitemap","is":["eq",true]},{"field":"page_is_noindex","is":["eq",true]}]}` | `url,http_code,found_in_sitemaps` | noindex_in_sitemap |
 | Sitemaps | Non-canonical URL in sitemap | `{"and":[{"field":"is_in_sitemap","is":["eq",true]},{"field":"self_canonical","is":["eq",false]}]}` | `url,http_code,canonical` | drop from sitemap (generator filter) |
 
+**Sweep receipt (required).** Write `reports/site-audit/<date>.sweep.json` with one
+entry per row of the table above — `{"check": "<Check>", "rows": <count>}` — all
+21 of them, including the zeros, and commit it with the run. A sweep with any
+check missing from the receipt is incomplete: run the missing checks before the
+commit.
+
 **Reconcile before the email.** `site-audit-projects` gives `urls_with_errors`
 and `urls_with_warnings`. The email's `## Ahrefs issue counts` section must show
 which issue rows + sweep checks account for them. If errors/warnings are still
