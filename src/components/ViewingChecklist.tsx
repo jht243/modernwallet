@@ -154,7 +154,6 @@ export default function ViewingChecklist({ heading, subheading }: Props) {
                 </button>
               ))}
             </div>
-            <p className="mwvc-hint">Your state sets the local conditions as a starting point; tap to change them for the town.</p>
           </>
         )}
       </section>
@@ -165,15 +164,14 @@ export default function ViewingChecklist({ heading, subheading }: Props) {
             {data.houses.map((h, i) => (
               <div key={i} className={`mwvc-house${active === i ? " mwvc-houseon" : ""}`}>
                 <button type="button" role="tab" aria-selected={active === i} className="mwvc-housetab" onClick={() => setActive(i)}>{i + 1}</button>
-                <input aria-label={`Name for house ${i + 1}`} value={h.name} onChange={(e) => setHouse(i, { name: e.target.value })} onFocus={() => setActive(i)} />
+                <input aria-label={`Name for house ${i + 1}`} placeholder="Name or address" value={h.name} onChange={(e) => setHouse(i, { name: e.target.value })} onFocus={() => setActive(i)} />
                 {data.houses.length > 1 && <button type="button" className="mwvc-x" aria-label={`Remove ${h.name || `House ${i + 1}`}`} onClick={() => removeHouse(i)}>×</button>}
               </div>
             ))}
-            {data.houses.length < MAX_HOUSES && <button type="button" className="mwvc-add" onClick={addHouse}>+ Add a house<span className="mwvc-addlong"> to compare</span></button>}
+            {data.houses.length < MAX_HOUSES && <button type="button" className="mwvc-add" onClick={addHouse} aria-label="Add a house to compare"><span className="mwvc-long">+ Add a house to compare</span><span className="mwvc-short">+ House</span></button>}
           </div>
           <div className="mwvc-actions">
-            <button type="button" className="mwvc-btn" onClick={() => window.print()}>Print or save as PDF</button>
-            <button type="button" className="mwvc-btn mwvc-ghost" onClick={reset}>Clear</button>
+            <button type="button" className="mwvc-btn" onClick={() => window.print()} aria-label="Print or save as PDF"><span className="mwvc-long">Print or save as PDF</span><span className="mwvc-short">Print</span></button>
           </div>
         </div>
 
@@ -190,20 +188,35 @@ export default function ViewingChecklist({ heading, subheading }: Props) {
                   <span className="mwvc-bad">✗ {t.bad} problem{t.bad === 1 ? "" : "s"}</span>
                 </div>
                 <div className="mwvc-tsub">{t.open ? `${t.open} of ${items.length} not marked yet` : "Every item marked"}</div>
-                {pr.length > 0 && (
-                  <div className="mwvc-tprob">Problems: {pr.slice(0, 3).map((it) => it.short ?? it.text.split(/[:?]/)[0]).join("; ")}{pr.length > 3 ? `; +${pr.length - 3} more` : ""}</div>
-                )}
+                <div className="mwvc-tprob">
+                  {pr.length > 0
+                    ? <>Problems: {pr.slice(0, 3).map((it) => it.short ?? it.text.split(/[:?]/)[0]).join("; ")}{pr.length > 3 ? `; +${pr.length - 3} more` : ""}</>
+                    : <span className="mwvc-tnone">No problems marked</span>}
+                </div>
               </div>
             );
           })}
         </div>
 
+        <p className="mwvc-legend">
+          For each house, mark how the answer or check looks: <span className="mwvc-lg mwvc-lgood">✓ Good</span> <span className="mwvc-lg mwvc-lunsure">? Unsure</span> <span className="mwvc-lg mwvc-lbad">✗ Problem</span>. Tap a mark again to clear it.
+        </p>
+
+        <div className={`mwvc-list mwvc-n${data.houses.length}`}>
         {sections.map((s) => (
           <div key={s.id} className="mwvc-sec">
             <h3>{s.title}</h3>
+            {(
+              <div className="mwvc-colhead" aria-hidden="true">
+                <span />
+                <div className="mwvc-cells">
+                  {data.houses.map((h, i) => <span key={i} className={`mwvc-colname${active === i ? " mwvc-colon" : ""}`}>{h.name || `House ${i + 1}`}</span>)}
+                </div>
+              </div>
+            )}
             <ol className="mwvc-items">
               {s.items.map((it) => (
-                <li key={it.id} className={`mwvc-item mwvc-n${data.houses.length}`}>
+                <li key={it.id} className="mwvc-item">
                   <div className="mwvc-text">
                     <span>{it.text}</span>
                     {it.note && <span className="mwvc-note">{it.note}</span>}
@@ -217,7 +230,6 @@ export default function ViewingChecklist({ heading, subheading }: Props) {
                   <div className="mwvc-cells">
                     {data.houses.map((h, i) => (
                       <div key={i} className={`mwvc-cell${active === i ? " mwvc-cellon" : ""}`}>
-                        {data.houses.length > 1 && <span className="mwvc-cellname">{h.name || `House ${i + 1}`}</span>}
                         <div className="mwvc-marks" role="group" aria-label={`${h.name || `House ${i + 1}`}: ${it.text}`}>
                           {MARKS.map((m) => (
                             <button key={m.v} type="button" aria-pressed={h.marks[it.id] === m.v} title={m.label}
@@ -237,6 +249,7 @@ export default function ViewingChecklist({ heading, subheading }: Props) {
             </ol>
           </div>
         ))}
+        </div>
 
         <div className="mwvc-notes">
           {data.houses.map((h, i) => (
@@ -245,6 +258,10 @@ export default function ViewingChecklist({ heading, subheading }: Props) {
               <textarea rows={3} value={h.notes} onFocus={() => setActive(i)} onChange={(e) => setHouse(i, { notes: e.target.value })} placeholder="Price, layout, what you liked, what to ask next" />
             </label>
           ))}
+        </div>
+
+        <div className="mwvc-footrow">
+          <button type="button" className="mwvc-btn mwvc-ghost" onClick={reset}>Clear</button>
         </div>
 
         <div style={S.disclaimer}>
@@ -308,52 +325,70 @@ const CSS = `
 .mwvc-chip span{font-weight:700;color:#8aa39b}
 .mwvc-chipon{background:#E4F4EF;border-color:${PRIMARY};color:#0B5E4E;font-weight:600}
 .mwvc-chipon span{color:${PRIMARY}}
-.mwvc-hint{font-size:.82rem;color:#666;margin:6px 0 0}
 .mwvc-out{padding-top:0}
-.mwvc-bar{position:sticky;top:60px;z-index:5;background:#fff;margin:0 -16px;padding:12px 16px 10px;border-bottom:1px solid #E6F0EC;border-radius:14px 14px 0 0;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
-.mwvc-houses{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.mwvc-bar{position:sticky;top:60px;z-index:5;background:#fff;margin:0 -16px;padding:12px 16px 10px;border-bottom:1px solid #E6F0EC;border-radius:14px 14px 0 0;display:flex;flex-wrap:nowrap;gap:10px;justify-content:space-between;align-items:center}
+.mwvc-footrow{display:flex;justify-content:flex-end;margin:4px 0 10px}
+.mwvc-short{display:none}
+.mwvc-houses{display:flex;flex-wrap:nowrap;gap:8px;align-items:center;min-width:0}
 .mwvc-house{display:flex;align-items:center;gap:4px;border:1px solid #D8E6E1;border-radius:10px;padding:3px 6px 3px 3px;background:#F7FBF9}
 .mwvc-houseon{border-color:${PRIMARY};background:#E9F6F1}
 .mwvc-housetab{width:24px;height:24px;border-radius:7px;border:0;background:${PRIMARY};color:#fff;font-weight:700;font-size:.8rem;cursor:pointer}
-.mwvc-house input{border:0;background:transparent;font-size:.9rem;font-weight:600;width:110px;padding:4px 2px;color:#1A1A1A}
+.mwvc-house input{border:0;border-bottom:1px dashed #9FBFB4;background:transparent;font-size:.9rem;font-weight:600;width:112px;padding:3px 2px;color:#1A1A1A;border-radius:0}
+.mwvc-house input:focus{outline:none;border-bottom:2px solid ${PRIMARY}}
 .mwvc-x{border:0;background:none;color:#8a9a95;font-size:1.1rem;cursor:pointer;line-height:1;padding:0 2px}
-.mwvc-add{border:1px dashed #BFE6D7;background:#fff;color:${PRIMARY};border-radius:10px;padding:7px 12px;font-weight:600;font-size:.88rem;cursor:pointer}
+.mwvc-add{border:1px dashed #BFE6D7;background:#fff;color:${PRIMARY};border-radius:10px;padding:7px 12px;font-weight:600;font-size:.88rem;cursor:pointer;white-space:nowrap}
 .mwvc-actions{display:flex;gap:8px}
-.mwvc-btn{background:${PRIMARY};color:#fff;border:0;border-radius:8px;padding:9px 14px;font-weight:600;font-size:.92rem;cursor:pointer}
+.mwvc-btn{background:${PRIMARY};color:#fff;border:0;border-radius:8px;padding:9px 14px;font-weight:600;font-size:.92rem;cursor:pointer;white-space:nowrap}
 .mwvc-ghost{background:#fff;color:${PRIMARY};border:1px solid #BFE6D7}
 .mwvc-tally{display:grid;gap:10px;margin:14px 0 4px}
 .mwvc-tally.mwvc-n2{grid-template-columns:1fr 1fr}.mwvc-tally.mwvc-n3{grid-template-columns:1fr 1fr 1fr}
-.mwvc-tcard{border:1px solid #E0EBE7;border-radius:12px;padding:10px 12px;background:#FBFDFC}
+.mwvc-tcard{border:1px solid #E0EBE7;border-radius:12px;padding:10px 12px;background:#FBFDFC;box-sizing:border-box}
+@media (min-width:641px){.mwvc-tcard{min-height:142px}}
 .mwvc-tcardon{border-color:#9FD4C2}
 .mwvc-tname{font-weight:700;font-size:.95rem;margin-bottom:4px}
 .mwvc-tcounts{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:.88rem;font-weight:600}
 .mwvc-good{color:#0B7A55}.mwvc-unsure{color:#8A6A10}.mwvc-bad{color:#B3261E}
 .mwvc-tsub{font-size:.78rem;color:#666;margin-top:2px}
-.mwvc-tprob{font-size:.8rem;color:#7A2A24;margin-top:6px;line-height:1.4}
+.mwvc-tprob{font-size:.8rem;color:#7A2A24;margin-top:6px;line-height:1.4;min-height:2.8em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.mwvc-tnone{color:#8a9a95}
+.mwvc-legend{font-size:.86rem;color:#4a5753;margin:14px 0 0;line-height:1.7}
+.mwvc-lg{display:inline-block;font-weight:700;border-radius:6px;padding:0 7px;color:#fff;font-size:.8rem;margin:0 2px}
+.mwvc-lgood{background:#1F8A5B}.mwvc-lunsure{background:#E0A526;color:#2b2000}.mwvc-lbad{background:#C8382D}
 .mwvc-sec h3{font-size:1.05rem;margin:18px 0 6px}
 .mwvc-items{list-style:none;margin:0;padding:0;counter-reset:vi}
-.mwvc-item{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:10px 18px;align-items:start;padding:10px 0;border-bottom:1px solid #F1F4F3;counter-increment:vi}
-.mwvc-item.mwvc-n2,.mwvc-item.mwvc-n3{grid-template-columns:minmax(0,1fr)}
+.mwvc-list{--cw:450px;--n:1}
+.mwvc-list.mwvc-n2{--n:2}.mwvc-list.mwvc-n3{--n:3}
+.mwvc-item,.mwvc-colhead{display:grid;grid-template-columns:minmax(0,1fr) var(--cw);gap:8px 20px;align-items:start}
+.mwvc-item{padding:10px 0;border-bottom:1px solid #F1F4F3;counter-increment:vi}
+.mwvc-colhead{padding:0 0 4px;border-bottom:1px solid #E6F0EC}
+.mwvc-colname{font-size:.75rem;font-weight:700;color:#5b6e68;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;padding:2px 4px;border-radius:6px}
+.mwvc-colon{background:#E9F6F1;color:#0B5E4E}
 .mwvc-text{display:flex;flex-direction:column;gap:2px;font-size:.95rem;line-height:1.45}
 .mwvc-text>span:first-child::before{content:counter(vi) ". ";font-weight:700;color:#2A6A58}
 .mwvc-note{font-size:.82rem;color:#666}
 .mwvc-links{display:flex;flex-wrap:wrap;gap:10px;font-size:.78rem}
 .mwvc-links a{color:#0B5E4E}
-.mwvc-cells{display:grid;gap:8px}
-.mwvc-n2 .mwvc-cells{grid-template-columns:1fr 1fr}.mwvc-n3 .mwvc-cells{grid-template-columns:1fr 1fr 1fr}
-.mwvc-cell{display:flex;flex-direction:column;gap:5px;min-width:0}
-.mwvc-cellname{font-size:.72rem;font-weight:700;color:#5b6e68;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mwvc-cells{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:8px}
+.mwvc-cell{display:flex;flex-direction:column;gap:6px;min-width:0}
 .mwvc-marks{display:flex;gap:4px}
-.mwvc-mark{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:4px;border:1px solid #D6E2DE;background:#fff;border-radius:8px;padding:6px 4px;font-size:.82rem;cursor:pointer;color:#444;min-width:0}
+.mwvc-mark{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:5px;height:38px;border:1px solid #D3DFDB;background:#fff;border-radius:8px;padding:0 4px;font-size:.88rem;cursor:pointer;color:#3a3a3a;min-width:0;transition:background .12s,border-color .12s}
 .mwvc-mark span:first-child{font-weight:800}
-.mwvc-n3 .mwvc-marklabel{display:none}
-.mwvc-good.mwvc-markon{background:#E3F5EC;border-color:#5DBB8F;color:#0B6B49}
-.mwvc-unsure.mwvc-markon{background:#FBF2DC;border-color:#E2C06A;color:#7A5A12}
-.mwvc-bad.mwvc-markon{background:#FBE7E5;border-color:#E39A93;color:#9E2A21}
+.mwvc-good span:first-child{color:#1F8A5B}.mwvc-unsure span:first-child{color:#B07F12}.mwvc-bad span:first-child{color:#C8382D}
+.mwvc-mark:hover{border-color:#9FBFB4}
+.mwvc-n2 .mwvc-marklabel,.mwvc-n3 .mwvc-marklabel{display:none}
+.mwvc-n2 .mwvc-mark span:first-child,.mwvc-n3 .mwvc-mark span:first-child{font-size:1rem}
+.mwvc-good.mwvc-markon{background:#1F8A5B;border-color:#1F8A5B;color:#fff}
+.mwvc-unsure.mwvc-markon{background:#E0A526;border-color:#E0A526;color:#2b2000}
+.mwvc-bad.mwvc-markon{background:#C8382D;border-color:#C8382D;color:#fff}
+.mwvc-markon span:first-child{color:inherit}
 .mwvc-answer{width:100%;box-sizing:border-box;padding:6px 8px;border:1px solid #D0DAD6;border-radius:6px;font-size:.86rem}
 .mwvc-notes{display:grid;gap:10px;margin:16px 0 10px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .mwvc-notecell{display:flex;flex-direction:column;gap:5px}
 .mwvc-notecell textarea{width:100%;box-sizing:border-box;border:1px solid #D0DAD6;border-radius:8px;padding:8px;font:inherit;font-size:.9rem;resize:vertical}
+@media (max-width:860px){
+  .mwvc-item,.mwvc-colhead{grid-template-columns:minmax(0,1fr)}
+  .mwvc-colhead>span:first-child{display:none}
+}
 @media (max-width:640px){
   .mwvc-bar{top:56px;padding:8px 16px}
   .mwvc-house:not(.mwvc-houseon) input,.mwvc-house:not(.mwvc-houseon) .mwvc-x{display:none}
@@ -363,13 +398,18 @@ const CSS = `
   .mwvc-actions .mwvc-btn{padding:7px 10px;font-size:.84rem}
   .mwvc-tally.mwvc-n2,.mwvc-tally.mwvc-n3{grid-template-columns:1fr}
   .mwvc-tcard:not(.mwvc-tcardon){display:none}
-  .mwvc-n2 .mwvc-cells,.mwvc-n3 .mwvc-cells{grid-template-columns:1fr}
+  .mwvc-item{grid-template-columns:minmax(0,1fr)}
+  .mwvc-colhead{display:none}
+  .mwvc-cells{grid-template-columns:1fr!important}
   .mwvc-cell:not(.mwvc-cellon){display:none}
-  .mwvc-n3 .mwvc-marklabel{display:inline}
-  .mwvc-cellname{display:none}
+  .mwvc-n2 .mwvc-marklabel,.mwvc-n3 .mwvc-marklabel{display:inline}
   .mwvc-notecell:not(.mwvc-cellon){display:none}
-  .mwvc-house input{width:96px}
-  .mwvc-addlong{display:none}
+  .mwvc-house input{width:72px}
+  .mwvc-long{display:none}
+  .mwvc-short{display:inline}
+  .mwvc-bar{gap:6px}
+  .mwvc-houses{overflow-x:auto;scrollbar-width:none}
+  .mwvc-house input{width:72px}
 }
 #mwvc-print-root{display:none}
 @media print{

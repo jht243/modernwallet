@@ -4,7 +4,7 @@ import { STATES } from "../data/states";
 import { fmtUSD } from "../lib/format";
 import {
   DEFAULT_PROFILE, PRESETS, QUESTIONS, ROUTES, SECTIONS, SOURCES, TITLES, USES_LOCATION, FIRST_APARTMENT, MOVE_IN_TIPS,
-  STATE_LABEL, CLIMATE_HINT, CLIMATE_HINT_DEFAULT,
+  STATE_LABEL,
   addedBy, buildChecklist, buildShopping, climateDefaults, roomsFor, stageDates, stageLate,
   type ChecklistId, type Profile, type Question,
 } from "../lib/checklists";
@@ -273,7 +273,6 @@ export default function ChecklistBuilder({ initialData, heading, subheading }: P
                   <Chip label="Wildfire area" on={p.wildfire} adds={addedBy(id, p, "wildfire")} set={(v) => setProfile({ wildfire: v })} />
                   <Chip label="Earthquake area" on={p.earthquake} adds={addedBy(id, p, "earthquake")} set={(v) => setProfile({ earthquake: v })} />
                 </div>
-                <p className="mwcl-hint">{CLIMATE_HINT[id] ?? CLIMATE_HINT_DEFAULT}</p>
               </div>
             )}
           </>
