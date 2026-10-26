@@ -12,6 +12,8 @@ import os
 from pathlib import Path
 import subprocess
 import sys
+import urllib.parse
+import urllib.request
 
 
 def git(root, *args):
@@ -44,6 +46,21 @@ def cloud_check(root):
     Cloud cannot observe unpublished files on someone's laptop. Its authority
     is the fetched default branch, never an old cached origin/main reference.
     """
+    # Render runtime images need not retain .git. Its immutable build revision
+    # still lets us verify that the deployed inputs are the published inputs.
+    if os.environ.get('RENDER_GIT_COMMIT') and os.environ.get('RENDER_GIT_REPO_SLUG'):
+        slug = os.environ['RENDER_GIT_REPO_SLUG']
+        headers = {'Accept': 'application/vnd.github+json', 'User-Agent': 'workflow-freshness'}
+        token = os.environ.get('GIT_PUSH_TOKEN') or os.environ.get('GITHUB_TOKEN')
+        if token:
+            headers['Authorization'] = 'Bearer ' + token
+        base_url = 'https://api.github.com/repos/' + urllib.parse.quote(slug, safe='/')
+        with urllib.request.urlopen(urllib.request.Request(base_url, headers=headers), timeout=45) as response:
+            default_branch = json.load(response)['default_branch']
+        with urllib.request.urlopen(urllib.request.Request(base_url + '/commits/' + urllib.parse.quote(default_branch, safe=''), headers=headers), timeout=45) as response:
+            revision = json.load(response)['sha']
+        current = os.environ['RENDER_GIT_COMMIT'] == revision
+        return {'status': 'current' if current else 'stale', 'source': slug + '/' + default_branch, 'revision': revision, 'missing': [] if current else ['deployed-build-revision']}
     root = Path(os.fsdecode(git(root, 'rev-parse', '--show-toplevel')).strip()).resolve()
     listing = git(root, 'ls-remote', '--symref', 'origin', 'HEAD').decode()
     ref = next((line.split()[1] for line in listing.splitlines() if line.startswith('ref: refs/heads/')), None)

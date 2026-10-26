@@ -1,10 +1,13 @@
 """Exercise actual Git worktrees, including uncommitted runtime dependencies."""
 import importlib.util
+import io
+import os
 from pathlib import Path
 import shutil
 import subprocess
 import tempfile
 import unittest
+from unittest.mock import patch
 
 spec = importlib.util.spec_from_file_location('freshness', Path(__file__).with_name('worktree-freshness.py'))
 freshness = importlib.util.module_from_spec(spec)
@@ -139,6 +142,16 @@ class FreshnessTests(unittest.TestCase):
     def test_cloud_missing_remote_cannot_pass(self):
         with self.assertRaises(subprocess.CalledProcessError):
             freshness.cloud_check(self.target)
+
+    def test_render_runtime_without_git_verifies_published_build(self):
+        env = {'RENDER_GIT_REPO_SLUG': 'fixture/site', 'RENDER_GIT_COMMIT': 'abc'}
+        with patch.dict(os.environ, env, clear=True), patch.object(freshness.urllib.request, 'urlopen', side_effect=[io.StringIO('{"default_branch":"main"}'), io.StringIO('{"sha":"abc"}')]), patch.object(freshness, 'git', side_effect=AssertionError('Runtime has no git')):
+            self.assertEqual(freshness.cloud_check('/no-git')['status'], 'current')
+
+    def test_render_old_build_cannot_pass(self):
+        env = {'RENDER_GIT_REPO_SLUG': 'fixture/site', 'RENDER_GIT_COMMIT': 'old'}
+        with patch.dict(os.environ, env, clear=True), patch.object(freshness.urllib.request, 'urlopen', side_effect=[io.StringIO('{"default_branch":"main"}'), io.StringIO('{"sha":"new"}')]):
+            self.assertEqual(freshness.cloud_check('/no-git')['missing'], ['deployed-build-revision'])
 
 
 if __name__ == '__main__':
