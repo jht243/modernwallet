@@ -73,6 +73,7 @@ export interface Profile {
   method: "movers" | "truck" | "container";
   season: "winter" | "spring-fall" | "summer";
   kids: boolean;
+  moveDate: string; // YYYY-MM-DD, "" = not set; dates each stage of the moving countdown
 }
 
 export const DEFAULT_PROFILE: Profile = {
@@ -115,6 +116,7 @@ export const DEFAULT_PROFILE: Profile = {
   method: "movers",
   season: "summer",
   kids: false,
+  moveDate: "",
 };
 
 // ---- Climate defaults by state -------------------------------------------------------------------
@@ -186,6 +188,8 @@ export interface Item {
   /** Applies only when this returns true. Omit = always applies. */
   when?: (p: Profile) => boolean;
   src?: keyof typeof SOURCES;
+  /** Link text when the source page is where the reader does the task (e.g. file the form there). */
+  cta?: string;
   /** Internal page with more on this step. */
   link?: { href: string; label: string };
 }
@@ -194,6 +198,8 @@ export interface Section {
   id: string;
   title: string;
   when?: (p: Profile) => boolean;
+  /** Days relative to the moving date this stage covers, [start, end] (moving checklist only). */
+  window?: [number, number];
   items: Item[];
 }
 
@@ -211,7 +217,8 @@ const financed = (p: Profile) => p.loan !== "cash";
 export type Question =
   | { key: keyof Profile; label: string; type: "select"; options: { value: string; label: string }[] }
   | { key: keyof Profile; label: string; type: "toggle" }
-  | { key: keyof Profile; label: string; type: "number"; min: number; max: number };
+  | { key: keyof Profile; label: string; type: "number"; min: number; max: number }
+  | { key: keyof Profile; label: string; type: "date" };
 
 const Q_ERA: Question = {
   key: "era",
@@ -350,6 +357,7 @@ export const QUESTIONS: Record<ChecklistId, Question[]> = {
     { key: "pets", label: "Bringing a pet", type: "toggle" },
   ],
   moving: [
+    { key: "moveDate", label: "Moving date (optional)", type: "date" },
     {
       key: "moveFrom",
       label: "Where you live now",
@@ -419,6 +427,17 @@ export const USES_LOCATION: Record<ChecklistId, boolean> = {
   "first-apartment": false,
   moving: true,
 };
+
+/** Label for the State dropdown where "State" alone is ambiguous. */
+export const STATE_LABEL: Partial<Record<ChecklistId, string>> = {
+  moving: "State you're moving to",
+};
+
+/** One line under the Local conditions options. */
+export const CLIMATE_HINT: Partial<Record<ChecklistId, string>> = {
+  moving: "Turn on anything that applies at either home, such as freezing winters where you're leaving. The number shows how many tasks each one adds.",
+};
+export const CLIMATE_HINT_DEFAULT = "Your state sets these as a starting point; tap to change them for your town. The number shows how many items each one adds.";
 
 /** Per-checklist starting answers (merged over DEFAULT_PROFILE). */
 export const PRESETS: Record<ChecklistId, Partial<Profile>> = {
@@ -1219,12 +1238,13 @@ const ownHome = (p: Profile) => p.moveTo !== "family";
 const MOVING: Section[] = [
   {
     id: "plan",
+    window: [-56, -43],
     title: "1. Eight Weeks Out: Plan and Book",
     items: [
       { id: "mv-budget", text: "Set a moving budget: movers or truck, packing supplies, travel, and any overlap in rent or mortgage between the two homes", link: { href: "/budget/", label: "Budget calculator" } },
       { id: "mv-date", text: "Pick the moving date and check it against your lease end or closing date" },
       { id: "mv-quotes", text: "Get written estimates from at least three movers, each based on seeing your belongings in person or on video", note: "FMCSA lists a sight-unseen estimate given by phone or online as a red flag.", when: movers, src: "fmcsaFlags" },
-      { id: "mv-register", text: "Look up each interstate mover by its USDOT or MC number in FMCSA's search tool to check its registration and complaint history", note: "Ask whether the company is the mover or a broker. A broker books your move with another company.", when: (p) => movers(p) && interstate(p), src: "fmcsaFaq" },
+      { id: "mv-register", text: "Look up each interstate mover by its USDOT or MC number in FMCSA's search tool to check its registration and complaint history", note: "Ask whether the company is the mover or a broker. A broker books your move with another company.", when: (p) => movers(p) && interstate(p), src: "fmcsaFaq", cta: "How to look a mover up (FMCSA)" },
       { id: "mv-state-mover", text: "Check how your state licenses in-state movers and look the company up", note: "Moves inside one state follow that state's rules, not FMCSA's.", when: (p) => movers(p) && !interstate(p), src: "fmcsaLiability" },
       { id: "mv-truck", text: "Reserve the rental truck plus a dolly, furniture pads and straps", when: (p) => p.method === "truck" },
       { id: "mv-truck-ins", text: "Ask your auto insurer and card issuer whether they cover a rental truck, then decide on the rental company's damage coverage", when: (p) => p.method === "truck" },
@@ -1240,6 +1260,7 @@ const MOVING: Section[] = [
   },
   {
     id: "sort",
+    window: [-42, -15],
     title: "2. Six to Four Weeks Out: Sort and Gather Records",
     items: [
       { id: "mv-declutter", text: "Go room by room and sort everything into keep, sell, donate and toss before you pack" },
@@ -1259,12 +1280,13 @@ const MOVING: Section[] = [
   },
   {
     id: "address",
+    window: [-14, -8],
     title: "3. Two Weeks Out: Address, Utilities and Insurance",
     items: [
-      { id: "mv-usps", text: "File your change of address with USPS on its official site", note: "USA.gov warns that look-alike sites charge far more than the official service.", src: "mail" },
-      { id: "mv-irs", text: "Update your address with the IRS (Form 8822)", src: "irs8822" },
+      { id: "mv-usps", text: "File your change of address with USPS on its official site", note: "USA.gov warns that look-alike sites charge far more than the official service.", src: "mail", cta: "Change your address at USPS.com" },
+      { id: "mv-irs", text: "Update your address with the IRS (Form 8822)", src: "irs8822", cta: "Get Form 8822 from the IRS" },
       { id: "mv-accounts", text: "Update your address with your bank, credit cards, employer payroll, insurers and subscriptions" },
-      { id: "mv-benefits", text: "If you receive Social Security or VA benefits, update your address with that agency", src: "addressChange" },
+      { id: "mv-benefits", text: "If you receive Social Security or VA benefits, update your address with that agency", src: "addressChange", cta: "Agency list at USA.gov" },
       { id: "mv-utils-off", text: "Schedule electricity, gas, water and trash to stop at the old address after moving day", when: leavingHome },
       { id: "mv-utils-on", text: "Schedule utilities to start at the new address by move-in day", when: ownHome },
       { id: "mv-internet", text: "Book internet installation at the new address", when: ownHome },
@@ -1279,6 +1301,7 @@ const MOVING: Section[] = [
   },
   {
     id: "pack",
+    window: [-7, -1],
     title: "4. Last Week: Pack and Confirm",
     items: [
       { id: "mv-confirm", text: "Confirm the date, arrival window and both addresses with your mover, truck rental or container company" },
@@ -1298,6 +1321,7 @@ const MOVING: Section[] = [
   },
   {
     id: "day",
+    window: [0, 0],
     title: "5. Moving Day",
     items: [
       { id: "mv-meters", text: "Photograph the utility meter readings at both homes" },
@@ -1314,6 +1338,7 @@ const MOVING: Section[] = [
   },
   {
     id: "week",
+    window: [1, 7],
     title: "6. First Week in the New Home",
     items: [
       { id: "mv-alarms", text: "Test the smoke and carbon monoxide alarms", src: "smoke" },
@@ -1333,12 +1358,13 @@ const MOVING: Section[] = [
   },
   {
     id: "month",
+    window: [8, 30],
     title: "7. First Month: Licenses, Voting and Taxes",
     items: [
       { id: "mv-license", text: "Get a driver's license in your new state", note: "Each state sets its own deadline; check the state's motor vehicle agency.", when: interstate, src: "addressChange" },
       { id: "mv-registration", text: "Register and insure your car in the new state", note: "The new state sets the deadline.", when: (p) => interstate(p) && p.car },
       { id: "mv-dmv-address", text: "Update the address on your driver's license and vehicle registration under your state's rules", when: (p) => !interstate(p), src: "addressChange" },
-      { id: "mv-vote", text: "Update your voter registration", src: "vote" },
+      { id: "mv-vote", text: "Update your voter registration", src: "vote", cta: "Update your registration at Vote.gov" },
       { id: "mv-state-tax", text: "Ask a tax preparer whether you'll file part-year returns in both states", when: interstate },
       { id: "mv-deduct", text: "Keep your moving receipts; a federal deduction for moving expenses is limited to active-duty military moving under orders (and, from 2026, certain intelligence community employees)", src: "irsMoving" },
       { id: "mv-doctors", text: "Find a new doctor, dentist and pharmacy", when: longMove },
@@ -1569,4 +1595,26 @@ export function countItems(id: ChecklistId, p: Profile): number {
   if (id === "move-in-move-out") return roomsFor(p).reduce((n, r) => n + r.items.length, 0);
   if (id === "first-apartment") return buildShopping(p).reduce((n, s) => n + s.items.length, 0);
   return buildChecklist(id, p).reduce((n, s) => n + s.items.length, 0);
+}
+
+/** How many items switching a yes/no answer on adds to this checklist for this reader (shown on the option). */
+export function addedBy(id: ChecklistId, p: Profile, key: keyof Profile): number {
+  return countItems(id, { ...p, [key]: true } as Profile) - countItems(id, { ...p, [key]: false } as Profile);
+}
+
+/** "Sep 1 – Sep 14" for a stage window around the moving date; "" when no date is set. */
+export function stageDates(window: [number, number] | undefined, moveDate: string): string {
+  if (!window || !/^\d{4}-\d{2}-\d{2}$/.test(moveDate)) return "";
+  const base = new Date(moveDate + "T12:00:00");
+  if (Number.isNaN(base.getTime())) return "";
+  const at = (d: number) => new Date(base.getTime() + d * 86_400_000);
+  const fmt = (d: Date) => d.toLocaleDateString("en-US", { weekday: window[0] === window[1] ? "short" : undefined, month: "short", day: "numeric" });
+  return window[0] === window[1] ? fmt(at(window[0])) : `${fmt(at(window[0]))} – ${fmt(at(window[1]))}`;
+}
+
+/** True when a stage's whole window is already in the past (the reader is catching up). */
+export function stageLate(window: [number, number] | undefined, moveDate: string, today = new Date()): boolean {
+  if (!window || !/^\d{4}-\d{2}-\d{2}$/.test(moveDate)) return false;
+  const end = new Date(moveDate + "T23:59:59").getTime() + window[1] * 86_400_000;
+  return window[1] < 0 && end < today.getTime();
 }

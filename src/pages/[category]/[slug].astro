@@ -123,6 +123,7 @@ const jsonLdApp = {
     <header class="hero">
       <h1>{entry.h1}</h1>
       <Byline reviewer={reviewer} updated={entry.updated} />
+      {isChecklist && <a class="skip-tool" href="#checklist-tool">Skip to the checklist</a>}
       {paragraphs(entry.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
       {stats.length > 0 && (
         <div class="proof">
@@ -133,7 +134,7 @@ const jsonLdApp = {
       )}
     </header>
 
-    <section class="tool-section" aria-label={isChecklist ? "Interactive checklist" : "Interactive calculator"} data-tool={isChecklist ? entry.slug : calc.id}>
+    <section class="tool-section" id={isChecklist ? "checklist-tool" : undefined} aria-label={isChecklist ? "Interactive checklist" : "Interactive calculator"} data-tool={isChecklist ? entry.slug : calc.id}>
       <div class="tool-badge"><span class="dot"></span> {isChecklist ? "Interactive — answer a few questions" : "Interactive — edit any field"}</div>
       <CalculatorIsland
         client:only="react"
@@ -250,6 +251,9 @@ const jsonLdApp = {
     .faq[open] summary h3 { color: var(--primary-dark); }
     .faq p { margin: 12px 0 0; color: #2c2c2c; font-size: 1.02rem; line-height: 1.75; }
     .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 12px; }
+    .skip-tool { display: inline-block; margin: 2px 0 14px; padding: 8px 14px; border-radius: 999px; background: #E4F4EF; color: #0B5E4E; font-weight: 600; font-size: 0.92rem; text-decoration: none; }
+    .skip-tool::after { content: " \2193"; }
+    #checklist-tool { scroll-margin-top: 72px; }
     .related-all { margin-top: 16px; font-size: 0.95rem; color: #555; }
     .sister-states { display: flex; flex-wrap: wrap; gap: 10px; }
     .pill {
