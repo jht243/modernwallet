@@ -1,5 +1,19 @@
 # Phase 4 — Confirm new + enriched content (dedicated adversarial review)
 
+<!-- intent-takeaway-v1 -->
+**Intent-based takeaway audit:** Read `_decision-evidence.md` in the active project's `.claude/commands/`, including its takeaway requirements and section 4. Verify the conclusion answers the approved question, matches actual evidence and retains important conditions; compare the opening answer, tables, calculator and FAQs. An existing sufficient verdict or a supported inconclusive answer can pass. Never require a canned heading or unsupported testing language. For global commands, resolve/install the sibling shared contract in the active project while preserving local rules.
+<!-- /intent-takeaway-v1 -->
+
+<!-- decision-evidence-v1 -->
+## Decision-evidence gate
+
+Read `.claude/commands/_decision-evidence.md`, section 4, and independently audit its evidence packet against the exact rendered contribution. This includes new substantive content/tools embedded in an existing page. Verify visible attribution states what we did, what we found and how readers can check it; naming published inputs alone is insufficient. Match explicit “internal testing,” “internal modeling” or “internal analysis” wording to the saved evidence, without requiring an exact phrase: calculations, hypothetical models, actual tests and documented client observations must remain distinct. Require reproducible findings, important conditions and a counterexample; reject fabricated testing and unsupported benefit assumptions. Audit an optional calculator as a planning aid when that is all it establishes. Verify the growth record exists, but never treat its hypothesis as proven uplift. After two failed rework attempts, stop this workflow and escalate; do not continue to commit, push or publish.
+<!-- /decision-evidence-v1 -->
+
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
 This phase IS the gate for Phase 3 **and** Phase 3b. It checks the net-new comparison pages created in Phase 3 **and the in-place enrichment edits made in Phase 3b**. Run as an **Agent tool, `subagent_type: Explore`, read-only** reviewer that did NOT write or edit those pages.
 
 ---
@@ -36,12 +50,17 @@ Enriched pages are existing routes that got spot-edits, NOT new pages — judge 
 
 > **On reviewer false-positives:** before reworking a page on a reviewer's say-so, spot-check the specific claim (re-grep the flagged link across all content files; re-confirm a "cannibalization" pair really shares the *same* primary keyword, not just a naming pattern). Fix only genuine defects; record dismissed false-flags in the Phase 6 summary so the decision is auditable.
 
-## TESTED format — both directions (added 2026-10-22, ported from layer3)
+## TESTED format — draft review, then registered output
 
-For every new or enriched page, re-run `scripts/tested/check.mts` on the final entry fields and audit the side it lands on:
-- **TESTED page (`/roundup/` only):** FAIL unless the content standard's `GATE — Tested format` passes: `metaDescription` opens `We tested N` with N = the items the page ranks or compares; tee-up is sentence 2 of `introText` and reads cleanly into sentence 3; `howWeTested` has exactly 3 bullets matching the category set in `data/tested-methods.json` (or a new category appended there) and each bullet is true for EVERY item on the page; every option has all three pick fields (`whyPicked`, `whoFor`, `downside`); no `whyPicked` repeats its option's description; no invented specifics; no first-person use of an unshipped or discontinued feature. Pick labels written as prose inside `description` instead of fields → FAIL `tested-pick-label`.
-- **NOT-TESTED page (every `/compare/` page, and roundups the switch rejects):** FAIL if ANY part of the format appears — "We tested" in the description, intro or body, a `howWeTested` field, pick fields or labels — note `tested-on-excluded-page`. Also FAIL if a roundup ranks accounts/cards/loans/services/concepts, the switch still says `tested: true`, and its slug is not in `EXCLUDED_SLUGS` (`src/lib/testedPage.ts`), note `tested-switch-missing` (the template would show a tested byline).
-- **After the Phase 5 build**, run `python3 scripts/tested/consistency.py <every new and enriched route>`; any non-zero exit blocks the publish until fixed.
+The reviewer first checks local eligibility and the draft's raw executed runs, independently of the final template flag. A first-time or changed draft has no current approval yet, so `tested: false` from the render checker alone MUST NOT force a legitimate tested draft into the ordinary branch.
+
+- **Eligible draft with complete relevant executed tests:** audit its existing tested format, item count, three methods, all pick fields and every first-person claim against the actual runs. Category wording is acceptable only when true for every item. Reject invented specifics, unsupported features and partial coverage. No content or record is approved just because the writer passed `--tested yes`.
+- **Excluded or unsubstantiated draft:** use ordinary presentation; reject a tested title, testing byline/schema, `howWeTested`, testing pick fields or unsupported testing claims. Permit accurate calculated/modeled/reported attribution where useful and locally allowed.
+- **After the exact draft passes all gates:** write the independent approval and register the exact normalized page and artifacts under `_testing-labels.md`. Re-run the live adapter/checker, build, and check rendered consistency. Only now must `tested` match the approved format. If registration or rendering fails, fix and revalidate; any prose change requires another independent content audit. A record never overrides local exclusions.
+
+**Existing local exclusion checks (preserved):**
+- Also FAIL if a roundup ranks accounts/cards/loans/services/concepts, the switch still says `tested: true`, and its slug is not in `EXCLUDED_SLUGS` (`src/lib/testedPage.ts`), note `tested-switch-missing` (the template would show a tested byline).
+
 
 ## Fix-step hand-off (added 2026-10-22, ported from layer3)
 - `content_gen.py fix` applies the auditor's findings and never re-edits on its own. Its meta lists `claim_check.remaining` = sentences it doubts in the units it just changed. Hand that list to the next audit round as extra findings to check; it is not a verdict.
@@ -72,7 +91,7 @@ A page with any/all of these notes and no hard-fail issues still passes audit.
 
 ---
 
-On any failure, hand specific notes back to the writer logic and re-run — **Phase-3 logic for a net-new page, Phase-3b logic for an enrichment edit.** **Max 2 rework attempts**, then STOP and escalate. In this autonomous workflow, "escalate" means: for a **net-new page**, mark it `draft: true` (noindex, excluded from sitemap + IndexNow), record the reason, and continue; for an **enrichment edit** that can't pass, **revert that page's edit** (`git checkout -- <file>` so the original stays intact), record the reason, and continue. One failing item never blocks the others. Auto-continue to Phase 5.
+On any failure, apply specific notes through Phase 3 (new page) or Phase 3b (enrichment) and re-audit. After the second failed rework, STOP this workflow and escalate with unresolved findings; do not continue to commit, push or publish. Higher-priority user/project gate rules override older drop-and-continue instructions. Preserve unrelated changes; never use a whole-file checkout to revert one page in a shared data file.
 
 
 ## Successor vs predecessor coverage + accuracy (MANDATORY, added 2026-07-28)
@@ -102,4 +121,4 @@ If any of those files is missing, FAIL the run and report it — never substitut
 
 **Load `.claude/commands/_remediation-ladder.md` and apply it IN FULL.** It is the single source of truth for what happens AFTER a gate fails: Rung 0 mechanical lint (never a rework attempt), Rung 1 FIX-IN-PLACE with the reviewer supplying the exact replacement text, Rung 2 REWORK by the writer for that page only — max 2 attempts **per page**, then drop that page and continue the run. It also defines per-page pass state: a page that passed is never re-audited because a sibling was fixed. It changes only the COST of fixing a finding, never the bar for passing one — every gate above applies exactly as written. If the file is missing, FAIL the run and report it; never improvise a remediation policy.
 
-**This section supersedes any other retry, rework, or escalation wording in this file.** Where this file already reverts or drops a single page rather than stopping the run, that behaviour is correct and the ladder keeps it; what the ladder adds is the two cheaper rungs BEFORE a rework — the mechanical lint, and the reviewer-supplied fix applied without a writer round-trip.
+**This section supersedes any other retry, rework, or escalation wording in this file.** Higher-priority user/project rules require stopping and escalating after two failed rework attempts. The ladder supplies cheaper repair methods; it cannot override that stop condition.

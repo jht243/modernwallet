@@ -1,5 +1,9 @@
 # Content generation — the canonical Phase 3 contract (API-generated prose)
 
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
 **Status:** MANDATORY for every routine that creates NEW pages, once that routine has been
 migrated (see the rollout table at the bottom). Manual global routines and cloud routines
 follow the same contract. This file is the single source of truth; a routine's Phase 3 file
@@ -37,6 +41,16 @@ python3 scripts/lib/content_gen.py preflight
 ```
 Verifies every model in the chain has a key and answers. A failing preflight STOPS the phase.
 
+## Testing-format decision
+
+Read `_testing-labels.md` before selecting `--tested yes/no`. Local exclusions always win. A qualifying draft with relevant executed runs may request the tested layout, but only independent Phase 4 approval of the exact final content enables the template labels. The writer flag never certifies evidence.
+
+## Decision-evidence hand-off
+
+For mindmap-pass and comparison-content-creator, including their enrichment paths, apply `_decision-evidence.md` before prompt assembly. Keep calculated findings, assumptions, reported facts and unknowns distinct in the CLOSED FACT LIST. The generator writes from that packet; it must not invent experiment results. Other callers may adopt this protocol without changing their scope or authorization.
+
+When original analysis/testing is supplied, include its approved provenance in the CLOSED FACT LIST and request one natural, specific attribution beside the first finding: what we did → what we found → how readers can check it. Prefer “In our internal analysis/modeling/testing, we [specific action]…” according to the evidence; naming published inputs alone is insufficient. Follow `_decision-evidence.md` section 3. Never let the writer invent product trials, client conversations, quotes or outcomes to satisfy a voice/experience template. Existing clear attribution needs no repeated cue.
+
 ## Step 1 — assemble the prompts
 
 **`system.md` — once per run.** Order is load-bearing (each rule fixed an observed failure):
@@ -48,7 +62,7 @@ Verifies every model in the chain has a key and answers. A failing preflight STO
    shape (`guide` / `comparison`), noun-phrase headings, at most one heading opening with the
    keyword, CTA button text, the brand first-"we" rule ("At {BUSINESS_NAME}, we…").
 3. `.claude/commands/_anti-ai-language.md` WRITER section — state that it wins on conflict.
-4. `.claude/commands/_experience.md` in full — the only source a first-person claim may draw on.
+4. `.claude/commands/_experience.md` in full — the source for established company experience; new run-specific analysis/tests and client observations additionally require verified records under `_decision-evidence.md`, never invented experience.
 5. Any `_content-standard.local.md`.
 6. `.claude/commands/_content-standard.md` **LAST**, under a heading that scopes it:
    *"governs STRUCTURE, SEO, depth, sourcing, linking. Follow its rules. Do not copy its tone."*
@@ -134,7 +148,7 @@ The draft is a draft, not a page. Before templating:
 - **Topic residue**: grep for sibling topics that could have leaked from the voice sample or
   other rows (a predecessor's price presented as the new model's, a disclaimer from another page).
 - **Read it.** Reject on: a claim not traceable to the fact list; violated row constraints;
-  first-person claims outside `_experience.md`; anti-AI WRITER tells; device misplacement.
+  first-person claims unsupported by `_experience.md` or the verified run-specific evidence permitted by `_decision-evidence.md`; anti-AI WRITER tells; device misplacement.
 - Then run the **Phase 4 adversarial audit exactly as for hand-written content.** No reduced
   standard. Hand the auditor the closed fact list and the allowed URL list so it can tell a
   real fact from an invented one — an auditor working from a trimmed list will flag true
@@ -160,7 +174,7 @@ PHASE 4 AUDIT` block appended to the row prompt (defect → the exact offending 
 replacing rule) is only for what `fix` lists as NOT FIXABLE IN PLACE or a page now under its
 floor — and for that, expand the fact list with sourced facts first. Never hand-write generated
 prose; it defeats the routine and falsifies the provenance record. Two failed regenerations
-on the same defect → drop the page and report.
+on the same defect → stop the workflow and escalate with the unresolved findings. Do not continue to commit, push or publish. Higher-priority user/project gate rules override older drop-and-continue instructions.
 
 ## Step 4 — template + provenance
 

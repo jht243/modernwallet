@@ -1,5 +1,15 @@
 # Phase 8 — Summary (auto-continues to Phase 9 push)
 
+<!-- decision-evidence-v1 -->
+## Evidence and growth hand-off
+
+Follow `_decision-evidence.md`, section 5. For each substantive contribution, report the decision improved, evidence type, packet path, hypothesis and outcome status. Register its `growth.json` in `reports/content-evidence.jsonl` with a stable run/route id, route, origin routine, packet path, growth path and status. Update the same id on deployment/outcome review; do not duplicate it. Local-only work has no deployed date or traffic uplift. Publication permissions and this phase's existing gates are unchanged.
+<!-- /decision-evidence-v1 -->
+
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
 > **Report question coverage.** For every page created or enriched this run, print one line:
 > `<route> — asked "<reader_question>" <evidence tag> → answered in <answer_placement>`. Then the
 > run-wide counts: how many rows were PAA/completion-backed versus `verb-only`, and any row flagged

@@ -1,5 +1,11 @@
 # Phase 9 — Commit + deliver
 
+**Testing publication check:** Apply `_testing-labels.md` to every affected route. Verify its exact-content evidence decision and built title, metadata, byline, methods and schema with the active site's adapter. If a shared rendering change affects other routes, include them in validation. Missing/stale approval, mismatched labels or unsupported leftover testing claims block publication of the affected content. Missing adapters must be wired and verified before tested labels can be enabled; do not create permission or fabricate records. Preserve local medical/psychedelic and other exclusions. This is a publication condition, not permission to rewrite unrelated historical pages.
+
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
 ## Worker
 After Phase 8 (Summary) is APPROVED by the user:
 1. `git status` — confirm only intended SEO changes are staged. If anything unexpected, STOP and report.

@@ -1,5 +1,19 @@
 # Phase 3 — Generate the selected comparison pages
 
+<!-- intent-takeaway-v1 -->
+**Intent-based takeaway:** Read `_decision-evidence.md` in the active project's `.claude/commands/`, especially “Close with a takeaway that answers the page's intent.” Pass the planned conclusion, applicable reader/task, actual evidence basis and decision-changing condition into the existing writer brief. Reuse a sufficient verdict; preserve the no-addition branch and local exclusions. For global commands, resolve/install the sibling shared contract in the active project while preserving local rules.
+<!-- /intent-takeaway-v1 -->
+
+<!-- decision-evidence-v1 -->
+## Decision evidence before drafting
+
+Read and apply `.claude/commands/_decision-evidence.md` inside this phase, before assembling the writer prompt. Reuse the approved reader question, produce the strongest feasible evidence and counterexample, then select the presentation. Calculators remain an option, not a quota. Give the writer the evidence packet, including the supported provenance and its visible placement, with its closed facts; ask for explicit, natural phrasing at the relevant finding: “In our internal analysis/modeling/testing, we [specific action]…” matched to the evidence, followed by what we found and how readers can check the method or inputs. Merely naming the source of inputs is insufficient; preserve the existing API-writing, review and permission rules. Evidence labels take precedence over automatic TESTED-format eligibility: simulated/calculated data never licenses a firsthand-testing claim.
+<!-- /decision-evidence-v1 -->
+
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
 Create a brand-new comparison page for **each selected pair** from Phase 2, in the project's discovered content format. `git add` your work but do NOT commit — Phase 5 publishes. Phase 4 is the gate for this phase.
 
 > **NET-NEW ONLY.** This phase creates brand-new routes. It must NEVER overwrite, regenerate, or replace an existing page, and never run a generator that rebuilds existing content. If a selected pair actually points at a route that already exists (Phase 1b should have caught it), do not recreate it — STOP and flag it as an "enrich existing page" item for Phase 6.

@@ -1,5 +1,11 @@
 # Phase 0 — Discover project facts + load chart
 
+Before presenting the manifest, read available `reports/content-evidence.jsonl` outcomes under `_decision-evidence.md`, even when reusing an existing chart. Use them to explain proposed priorities within the requested scope; do not silently expand or replace an approved chart.
+
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
 Auto-discover every project fact by inspecting the repo. Hardcode nothing; print what you find.
 
 - **BASE_URL** — from sitemap `<loc>`, the canonical logic, or JsonLd builders.
@@ -49,7 +55,7 @@ The manifest mirrors the format of the Phase 8 end-of-run summary so the user se
 | 6 — Internal linking   | {N} + inbound | Per-row plan: "Add inbound to {target 1}, {target 2}; reinforce {N} Phase-3 pages with ≥3 inbound each" |
 | 7 — Sitemap + IndexNow | —    | "Add {N} routes; refresh lastmod on {N}; remove {N} consolidation losers; submit to IndexNow" |
 | 8 — Summary            | —    | "Print run summary, then auto-continue to Phase 9 (no approval stop)" |
-| 9 — Commit + deliver   | —    | "Single commit; push to {branch}; report SHA" |
+| 9 — Commit + deliver   | —    | "Single commit; push to {branch}; verify every affected live route and canonical; report failures; submit only verified live URLs to IndexNow after deployment; report SHA. Local-only scope excludes these publication actions and leaves deployment fields empty" |
 
 ### Emerging search patterns detected this run (print directly above the phase table)
 

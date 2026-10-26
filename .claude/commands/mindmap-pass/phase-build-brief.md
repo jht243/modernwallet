@@ -1,5 +1,13 @@
 # Phase BUILD-BRIEF — Generate the chart from a free-form input brief (SEMRUSH-validated)
 
+<!-- decision-evidence-v1 -->
+Before selecting expansion work, read available outcomes in `reports/content-evidence.jsonl` and the linked growth records. Reuse the existing reader-question/demand checks; do not add another intent quota. Prefer demonstrated useful approaches where the evidence transfers, retain inconclusive labels, and avoid duplicating existing tools or topics. Phase 3 confirms the evidence and presentation before writing; a tool idea alone is not a growth case.
+<!-- /decision-evidence-v1 -->
+
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
 This is Step 1 of `/mindmap-pass`. It replaces seo-gsc-pass's "build chart from 5 GSC screenshots" step. Instead of reading GSC keyword screenshots, it reads **whatever the user handed you** — free text, an image, a chart/screenshot of data, a pasted news article, a URL, or a half-formed "here's a thought" — interprets it into concrete topics the user wants on the site, **validates and expands that intent through the keyword demand ladder (best available provider PER FIELD, plus Google Autocomplete on top of every call)**, reads the LIVE SERP for the surviving cluster heads, clusters the demand, and produces the **same machine-readable chart** the rest of the phases (0–9) consume unchanged.
 
 Run this phase **only when** Phase 0 cannot find a chart at `reports/mindmap-pass/<TODAY>.md`. If today's chart already exists, or the user passed a chart path argument, skip this phase and let Phase 0 load it.

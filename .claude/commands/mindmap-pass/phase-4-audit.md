@@ -1,6 +1,24 @@
 # Phase 4 — Confirm new content (dedicated adversarial review)
 
-This phase IS the gate for Phase 3. It checks **only the net-new pages created in Phase 3** — not metadata changes, not body-text updates. Run as an Explore subagent that did NOT write those pages.
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
+<!-- intent-takeaway-v1 -->
+**Intent-based takeaway audit:** Read `_decision-evidence.md` in the active project's `.claude/commands/`, including its takeaway requirements and section 4. Verify the conclusion answers the approved question, matches actual evidence and retains important conditions; compare the opening answer, tables, calculator and FAQs. An existing sufficient verdict or a supported inconclusive answer can pass. Never require a canned heading or unsupported testing language. For global commands, resolve/install the sibling shared contract in the active project while preserving local rules.
+<!-- /intent-takeaway-v1 -->
+
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+
+<!-- decision-evidence-v1 -->
+## Decision-evidence gate
+
+Read `.claude/commands/_decision-evidence.md`, section 4, and independently audit its evidence packet against the exact rendered contribution. This includes new substantive content/tools embedded in an existing page. Verify visible attribution states what we did, what we found and how readers can check it; naming published inputs alone is insufficient. Match explicit “internal testing,” “internal modeling” or “internal analysis” wording to the saved evidence, without requiring an exact phrase: calculations, hypothetical models, actual tests and documented client observations must remain distinct. Require reproducible findings, important conditions and a counterexample; reject fabricated testing and unsupported benefit assumptions. Audit an optional calculator as a planning aid when that is all it establishes. Verify the growth record exists, but never treat its hypothesis as proven uplift. After two failed rework attempts, stop this workflow and escalate; do not continue to commit, push or publish.
+<!-- /decision-evidence-v1 -->
+
+This phase IS the gate for Phase 3. It checks net-new pages and substantive new content/tools embedded in existing pages. Pure metadata/link corrections retain their existing reviewer gates. Run as an Explore subagent that did NOT write those pages.
 
 **Check the `format` column of each Phase 3 row before applying the checklist.** Article rows and non-article rows have different review criteria:
 
@@ -14,7 +32,7 @@ This phase IS the gate for Phase 3. It checks **only the net-new pages created i
 - Works at 390px and desktop width, labelled controls, no console errors; the site build passes and the route rendered ✓/✗
 - Print-to-PDF (if the tool prints): only the output, white page, title + Name/Date + directions, not bunched at the top ✓/✗
 - The page prose describes the tool that was built (labels, steps, defaults, worked example match the code) ✓/✗
-Fix in place per the remediation ladder; a tool that still fails after 2 reworks is reverted (route, registry entry, component) and its row is dropped with the reason.
+Fix in place per the remediation ladder; after two failed rework attempts, stop the workflow and escalate with unresolved findings. Preserve unrelated work and do not commit, push or publish.
 
 **For other non-article format rows (`template`, `comparison table/database`, `glossary/reference`, `data report`):** Phase 3 produced a spec file, not prose. Audit the spec — not the placeholder route — against this checklist:
 - Spec file exists at `reports/mindmap-pass/specs/<slug>-spec.md` ✓/✗
