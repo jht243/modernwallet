@@ -107,7 +107,9 @@ Group every returned issue by **kind** (the Ahrefs issue slug, e.g. `meta_desc_t
    every row STEP 4 below marks "flag for human" / "NO".
 
 **Fixed order of work (do not reorder, do not split commits):**
-1. Pull issues + URLs (STEP 3 + lane §1).
+1. Pull issues + URLs (STEP 3 + lane §1) AND run the lane §1b sweep — the issues
+   endpoint stops at 100 rows, so the sweep is the only way to see Links,
+   Redirects, Social, Localization, Performance and Sitemaps issues.
 2. Template / schema / robots / link fixes.
 3. **Content rewrites for every content-quality URL** (high AI content,
    similar AI content) per `_site-audit-autofix.md` steps 1–5 — load-standards,

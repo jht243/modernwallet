@@ -20,7 +20,7 @@ about canonicals, redirects, robots.txt and body content, to the extent below.
 | `redirect_chain` | Rewrite every internal `href`, sitemap entry and canonical that points at a hop to the **final** URL. If the chain lives in a repo redirect file (`_redirects`, `next.config.*`, `vercel.json`, `render.yaml`, `astro.config.*`, Flask routes), point the first hop straight at the final URL. Rules that live only in a hosting dashboard: the internal-link rewrite still ships. | `curl -sIL` on each changed source: one hop to a 200. |
 | `redirect_loop` | Find the rules forming the loop in the repo's redirect config. If one URL in the loop is a real page in the build, delete the rule that redirects **away** from it. | The URL returns 200; build output still contains the page. |
 | `lang_missing` | Add `lang` to `<html>` in the root layout, using the site's content language (config / content locale; `en` for English-only sites). | Every built page has `<html lang=…>`. |
-| `hreflang_*` | Remove hreflang entries that point at non-200 or non-canonical URLs; add the missing return link when both pages exist; make `x-default` point at a 200 page. | Every hreflang target returns 200 and links back. |
+| `hreflang_*` | Invalid codes → fix them at the locale config (ISO 639-1 language, optional ISO 3166-1 region, e.g. `es-419` is valid, `es-la` is not). Missing `x-default` → add one pointing at the default-language page. Remove hreflang entries that point at non-200 or non-canonical URLs; add the missing return link when both pages exist; make `x-default` point at a 200 page. | Every hreflang target returns 200 and links back. |
 | `broken_external_link` | 1) Old URL redirects → use the final 200 URL. 2) Same page moved on the same domain (find it via that domain's sitemap or site search) → new URL. 3) Else remove the `<a>` and keep the anchor text. Never change the sentence. | New href returns 200, or no link remains. |
 | `low_word_count` / `low_text_html_ratio` | Already auto-fixed by `/indexing-pass-auto` (thin-content phase). Note "handled by indexing-pass" in the report; do not edit here. | — |
 | Anything else | Fix it if the fix is mechanical and you can verify it (fetch, parse or build proves it). | Same proof, after deploy. |
@@ -76,6 +76,8 @@ Every step below is REQUIRED and leaves a receipt that is committed with the run
 
 ## Required repo checks
 
+**Run them every run, even when this run changed nothing else** — a run with
+only receipts to commit still runs the build and every required check first.
 Every check the routine's prompt or the repo's CLAUDE.md says MUST pass (e.g.
 `npm run check-headings`, `check-depth`, typecheck, the build) must pass on the
 commit this run pushes — including failures that existed before the run. A

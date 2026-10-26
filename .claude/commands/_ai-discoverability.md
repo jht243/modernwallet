@@ -26,6 +26,49 @@ clean.** Exception — two are cheap to check yourself, so do it: fetch
 `<BASE_URL>/robots.txt` and test the AI search bots in §3 row "blocked from …
 AI search bots"; and grep the homepage's JSON-LD for a complete `Organization`.
 
+## 1b. Sweep past row 100 (REQUIRED, every Ahrefs run)
+
+`site-audit-issues` returns **at most 100 rows** — a hard Ahrefs cap (no limit /
+offset / filter parameter lifts it, verified 2026-10-26). Everything after the
+JavaScript category (Links, Redirects, Social tags, Localization, Usability and
+performance, Sitemaps) is silently missing. On 2026-10-26 that hid all 24
+PartyGameKit errors (invalid hreflang codes on 24 locale pages).
+
+So run EVERY query below with `site-audit-page-explorer` (`project_id`,
+`where=<the JSON exactly as written>`, `select=<the select column>`, `limit=1000`).
+Treat each non-empty result as an issue row and fix it with the named fix row
+(STEP 4 table, `_site-audit-autofix.md`, or §3 here). ~50 units per query.
+
+| Category | Check | `where` | `select` | Fix row |
+|---|---|---|---|---|
+| Links | Broken internal links (4xx) | `{"field":"links_count_internal4xx","is":["gt",0]}` | `url,http_code,links_internal4xx` | broken_internal_link |
+| Links | Internal links to 5xx | `{"field":"links_count_internal5xx","is":["gt",0]}` | `url,http_code,links_internal5xx` | broken_internal_link |
+| Links | Internal links to redirects (3xx) | `{"field":"links_count_internal3xx","is":["gt",0]}` | `url,http_code,links_internal3xx` | redirect_chain (rewrite href to final URL) |
+| Links | Broken external links (4xx) | `{"field":"links_count_external4xx","is":["gt",0]}` | `url,http_code,links_external4xx` | broken_external_link |
+| Links | External links to 5xx | `{"field":"links_count_external5xx","is":["gt",0]}` | `url,http_code,links_external5xx` | broken_external_link |
+| Links | Orphan pages in sitemap | `{"and":[{"field":"http_code","is":["eq",200]},{"field":"incoming_links","is":["eq",0]},{"field":"is_in_sitemap","is":["eq",true]}]}` | `url,http_code,url` | add internal links from the hub/related pages |
+| Redirects | Redirect chains | `{"field":"nr_redirect_chain_urls","is":["gt",1]}` | `url,http_code,redirect_chain_urls` | redirect_chain |
+| Redirects | Redirect loops | `{"field":"is_redirect_loop","is":["eq",true]}` | `url,http_code,redirect` | redirect_loop |
+| Redirects | Linked 3xx pages | `{"and":[{"field":"http_code","is":["gte",300]},{"field":"http_code","is":["lt",400]},{"field":"incoming_links","is":["gt",0]}]}` | `url,http_code,redirect` | redirect_chain (rewrite links to final URL) |
+| Social tags | Open Graph incomplete | `{"and":[{"field":"http_code","is":["eq",200]},{"field":"og_tags_valid","is":["eq",false]}]}` | `url,http_code,og_tags_attributes` | add og:title/type/image/url in the layout |
+| Social tags | X/Twitter card incomplete | `{"and":[{"field":"http_code","is":["eq",200]},{"field":"meta_twitter_tags_valid","is":["eq",false]}]}` | `url,http_code,meta_twitter_tags_attributes` | add twitter:card/title/description/image in the layout |
+| Social tags | og:url differs from canonical | `{"field":"og_tags_inconsistent_canonical","is":["eq",true]}` | `url,http_code,og_tags_url` | set og:url = canonical in the layout |
+| Localization | Invalid hreflang code | `{"field":"hreflang_code_is_valid","list_is":{"any":["eq",false]}}` | `url,http_code,hreflang_issues` | hreflang_* (use valid ISO 639-1 [+ ISO 3166-1] codes from the locale config) |
+| Localization | Any hreflang issue (incl. missing x-default, no return link) | `{"field":"hreflang_issues","list_is":{"any":["neq",""]}}` | `url,http_code,hreflang_issues` | hreflang_* |
+| Localization | Invalid HTML lang | `{"and":[{"field":"http_code","is":["eq",200]},{"field":"html_lang_code_is_valid","is":["eq",false]}]}` | `url,http_code,html_lang` | lang_missing |
+| Usability and performance | Poor LCP (field data) | `{"field":"psi_crux_lcp_category","is":["eq","Poor"]}` | `url,http_code,psi_crux_lcp_percentile` | image size / preload / defer non-critical JS |
+| Usability and performance | Slow TTFB (>1.5 s) | `{"and":[{"field":"http_code","is":["eq",200]},{"field":"time_to_first_byte","is":["gt",1500]}]}` | `url,http_code,time_to_first_byte` | Slow server response row |
+| Usability and performance | HTML over 2 MB | `{"field":"size_uncompressed","is":["gt",2000000]}` | `url,http_code,size_uncompressed` | Page size row |
+| Sitemaps | Non-200 URL in sitemap | `{"and":[{"field":"is_in_sitemap","is":["eq",true]},{"field":"http_code","is":["neq",200]}]}` | `url,http_code,found_in_sitemaps` | sitemap_url_4xx |
+| Sitemaps | Noindex URL in sitemap | `{"and":[{"field":"is_in_sitemap","is":["eq",true]},{"field":"page_is_noindex","is":["eq",true]}]}` | `url,http_code,found_in_sitemaps` | noindex_in_sitemap |
+| Sitemaps | Non-canonical URL in sitemap | `{"and":[{"field":"is_in_sitemap","is":["eq",true]},{"field":"self_canonical","is":["eq",false]}]}` | `url,http_code,canonical` | drop from sitemap (generator filter) |
+
+**Reconcile before the email.** `site-audit-projects` gives `urls_with_errors`
+and `urls_with_warnings`. The email's `## Ahrefs issue counts` section must show
+which issue rows + sweep checks account for them. If errors/warnings are still
+unexplained, run more page-explorer queries (any field in its `where` docs) until
+they are — never report a health-score count you cannot explain.
+
 ## 2. Verify before you fix — Ahrefs misclassifies page types
 
 Ahrefs guesses page type. On 2026-10-26 it flagged five Colombia Desk **hub**
