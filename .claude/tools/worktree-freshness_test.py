@@ -97,7 +97,7 @@ class FreshnessTests(unittest.TestCase):
 
     def test_loader_stops_before_standard_receipt_on_stale_runtime(self):
         tools = Path(__file__).parent
-        for rel in ['worktree-freshness.py', 'load-standards.sh']:
+        for rel in ['worktree-freshness.py', 'load-standards.sh', 'workflow-start.sh']:
             for root in [self.source, self.target]:
                 dest = root / '.claude/tools' / rel
                 dest.parent.mkdir(parents=True, exist_ok=True)
@@ -106,13 +106,13 @@ class FreshnessTests(unittest.TestCase):
             self.write('.claude/commands/' + name, '## DOMAIN\nFixture\n')
             self.write('.claude/commands/' + name, '## DOMAIN\nFixture\n', target=True)
         self.write('src/runtime.py', 'new')
-        result = subprocess.run(['bash', str(self.target / '.claude/tools/load-standards.sh'), 'fixture', 'phase-3'], capture_output=True, text=True)
+        result = subprocess.run(['bash', str(self.target / '.claude/tools/load-standards.sh'), 'fixture', 'phase-3'], cwd=self.target, capture_output=True, text=True)
         self.assertEqual(result.returncode, 1)
         self.assertIn('src/runtime.py', result.stdout)
         self.assertNotIn('standard-loaded:', result.stdout)
         self.assertFalse((self.target / 'reports/standards-ledger.jsonl').exists())
         self.write('src/runtime.py', 'new', target=True)
-        result = subprocess.run(['bash', str(self.target / '.claude/tools/load-standards.sh'), 'fixture', 'phase-3'], capture_output=True, text=True)
+        result = subprocess.run(['bash', str(self.target / '.claude/tools/load-standards.sh'), 'fixture', 'phase-3'], cwd=self.target, capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn('standard-loaded:', result.stdout)
         self.assertTrue((self.target / 'reports/standards-ledger.jsonl').exists())
