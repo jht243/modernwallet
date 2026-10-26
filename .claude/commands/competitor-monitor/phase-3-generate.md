@@ -53,7 +53,11 @@ Anything inline below this block is superseded by the canonical files above.
 
 ## Route each candidate to the reused generator
 
-- **`page` (NEW)** → write a new **guide** using the VERBATIM content-generation prompt in `.claude/commands/keyword-gap-pass/phase-3-new-content.md` (the `<!-- CRON_PROMPT_START -->…<!-- CRON_PROMPT_END -->` block). Substitute `{BUSINESS_NAME}` with the business name discovered in Phase 0. Add the new page to the project's content store in its exact discovered format/schema.
+- **`page` (NEW)** → write a new **guide** using the VERBATIM content-generation prompt in `.claude/commands/keyword-gap-pass/phase-3-new-content.md` (the `<!-- CRON_PROMPT_START -->
+<!-- workflow-checkpoint-cron-v1 -->
+**Required before executing this content phase:** Follow `.claude/commands/_workflow-checkpoints.md` in the active repository. Complete the phase-specific `workflow-preflight.py` chunk delivery and freshness check. Existing independent chart/Phase 4 audits must record rule-by-rule artifact evidence for local exclusions, provenance, visible attribution, intent takeaways, testing labels and applicable growth/visual checks. A loader receipt or worker assertion is not a review PASS. Preserve the sole Phase 0 human gate.
+<!-- /workflow-checkpoint-cron-v1 -->
+…<!-- CRON_PROMPT_END -->` block). Substitute `{BUSINESS_NAME}` with the business name discovered in Phase 0. Add the new page to the project's content store in its exact discovered format/schema.
 - **`comparison` (NEW)** → write a new comparison/alternatives page using `.claude/commands/comparison-content-creator/phase-3-generate.md` (same verbatim prompt + the comparison-table/verdict/FAQ requirements). Add it to the project's comparison content store in its discovered format.
 - **`PARTIAL` (either kind)** → do NOT create a new route. Enrich the existing page for this project in place using `.claude/commands/comparison-content-creator/phase-3b-enrich.md` → `.claude/commands/keyword-gap-pass/phase-5-body.md`, adding only what the competitor's `outline` covers that we're missing.
 

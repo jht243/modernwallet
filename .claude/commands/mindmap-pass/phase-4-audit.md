@@ -62,6 +62,10 @@ A spec that passes all seven points is a **PASS** — the human builds the asset
 ---
 
 <!-- CRON_PROMPT_START -->
+<!-- workflow-checkpoint-cron-v1 -->
+**Required before executing this content phase:** Follow `.claude/commands/_workflow-checkpoints.md` in the active repository. Complete the phase-specific `workflow-preflight.py` chunk delivery and freshness check. Existing independent chart/Phase 4 audits must record rule-by-rule artifact evidence for local exclusions, provenance, visible attribution, intent takeaways, testing labels and applicable growth/visual checks. A loader receipt or worker assertion is not a review PASS. Preserve the sole Phase 0 human gate.
+<!-- /workflow-checkpoint-cron-v1 -->
+
 Make sure all article pages meet metadata length requirements (title/description), follow FAQ JSON, schema.org, and have good internal linking.
 
 **FAIL — heading not in Title Case.** Every H1 and section heading (H2/H3) must use Title Case: the first letter of each major word is capitalized. If any heading has a major word starting lowercase — e.g. `"Who Spark fits, and who should look elsewhere"`, `"Spark pros and cons"` — set fail with note `heading-case: [the heading]`. The fix is a one-field capitalization (capitalize the major words; keep minor words a/an/the/and/or/nor/but/for/to/of/in/on/at/by/with/from/vs/via/per lowercase unless first or last; preserve acronyms and brand casing like AI, API, SEO, GPT-5, iOS exactly — never lowercase them). FAQ `question` fields are exempt (they are questions, keep sentence casing).

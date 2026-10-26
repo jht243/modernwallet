@@ -773,15 +773,20 @@ def expand(seed: str, limit: int = 20, database: str = "us") -> list[dict]:
         return kept
 
     have = set()
-    provider_rows = unique(rows, have)[:limit]
+    provider_pool = unique(rows, have)
+    known = {" ".join(r["keyword"].casefold().split()): r for r in provider_pool}
+    provider_rows = provider_pool[:limit]
     # Only returned provider rows own duplicate precedence.
     have = {" ".join(r["keyword"].casefold().split()) for r in provider_rows}
     extra = []
     if _enrich_on():
         extra = unique(_estimate_expand(seed, limit, database), have)[:limit]
+        # A measured idea beyond the provider slice can re-enter through live
+        # autocomplete; keep its actual metrics rather than replacing them.
+        extra = [known.get(" ".join(r["keyword"].casefold().split()), r) for r in extra]
     _note(f"Expansion returned {len(provider_rows)} provider + {len(extra)} "
           f"unique autocomplete ideas for '{seed}' (limit={limit} per source; "
-          "autocomplete metrics remain estimates)")
+          "unmeasured autocomplete metrics remain estimates)")
     return provider_rows + extra
 
 

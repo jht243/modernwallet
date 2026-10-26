@@ -24,6 +24,10 @@ class ExpansionTests(unittest.TestCase):
     def test_duplicates_preserve_provider_metrics(self):
         r = self.expand([row('Same phrase'), row('SAME  phrase')], [row(' same phrase ', 'estimate'), row('other', 'estimate'), row('OTHER', 'estimate')])
         self.assertEqual(len(r), 2); self.assertEqual(r[0]['volume'], 10)
+    def test_autocomplete_overlap_beyond_provider_slice_keeps_metrics(self):
+        r = self.expand([row('first'), row('overlap')], [row('overlap', 'estimate')], limit=1)
+        self.assertEqual(len(r), 2); self.assertEqual(r[-1]['source'], 'dataforseo')
+        self.assertEqual(r[-1]['volume'], 10)
     def test_fallback_keeps_estimate_provenance(self):
         r = self.expand([], [row('live suggestion', 'estimate')], error=RuntimeError('offline'))
         self.assertEqual(r[0]['source'], 'estimate')
