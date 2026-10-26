@@ -89,6 +89,19 @@ Call `mcp__*__site-audit-issues` with the project ID. Read the docs first via th
 
 Group every returned issue by **kind** (the Ahrefs issue slug, e.g. `meta_desc_too_long`, `broken_internal_link`, `img_missing_alt`).
 
+<!-- ai-discoverability-v1 -->
+## STEP 3b — AI Discoverability lane (REQUIRED, every run)
+
+Read `.claude/commands/_ai-discoverability.md` and run it. It pulls the Ahrefs
+**AI Discoverability** issues (Article / Organization / ItemList / FAQPage /
+Product schema, IndexNow, AI-bot blocking …) plus their URLs via
+`site-audit-page-explorer`, verifies each page's true type, and fixes them at the
+template layer. Its fixes join STEP 5 (no cap), its flags join "Flagged for
+human", and its `## AI Discoverability (Ahrefs)` section goes in the email. It is
+the ONE exception to "never change robots.txt" below: it may add `Allow` lines for
+AI **search** bots only, exactly as that file specifies.
+<!-- /ai-discoverability-v1 -->
+
 ## STEP 4 — Decide what's fixable in-code
 
 | Issue kind | Fixable? | How (high level) |
