@@ -51,7 +51,8 @@ def cloud_check(root):
     if os.environ.get('RENDER_GIT_COMMIT') and os.environ.get('RENDER_GIT_REPO_SLUG'):
         slug = os.environ['RENDER_GIT_REPO_SLUG']
         headers = {'Accept': 'application/vnd.github+json', 'User-Agent': 'workflow-freshness'}
-        token = os.environ.get('GIT_PUSH_TOKEN') or os.environ.get('GITHUB_TOKEN')
+        token = (os.environ.get('WORKFLOW_GITHUB_TOKEN') or
+                 os.environ.get('GIT_PUSH_TOKEN') or os.environ.get('GITHUB_TOKEN'))
         if token:
             headers['Authorization'] = 'Bearer ' + token
         base_url = 'https://api.github.com/repos/' + urllib.parse.quote(slug, safe='/')

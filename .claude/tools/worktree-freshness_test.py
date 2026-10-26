@@ -153,6 +153,20 @@ class FreshnessTests(unittest.TestCase):
         with patch.dict(os.environ, env, clear=True), patch.object(freshness.urllib.request, 'urlopen', side_effect=[io.StringIO('{"default_branch":"main"}'), io.StringIO('{"sha":"new"}')]):
             self.assertEqual(freshness.cloud_check('/no-git')['missing'], ['deployed-build-revision'])
 
+    def test_render_uses_dedicated_reader_without_changing_publishing_credentials(self):
+        env = {'RENDER_GIT_REPO_SLUG': 'fixture/site', 'RENDER_GIT_COMMIT': 'abc',
+               'WORKFLOW_GITHUB_TOKEN': 'fixture-reader', 'GIT_PUSH_TOKEN': 'fixture-publisher',
+               'GITHUB_TOKEN': 'fixture-legacy'}
+
+        def request_response(request, **kwargs):
+            self.assertEqual(request.get_header('Authorization'), 'Bearer fixture-reader')
+            return io.StringIO('{"sha":"abc"}' if '/commits/' in request.full_url else '{"default_branch":"main"}')
+
+        with patch.dict(os.environ, env, clear=True), patch.object(freshness.urllib.request, 'urlopen', side_effect=request_response):
+            self.assertEqual(freshness.cloud_check('/no-git')['status'], 'current')
+            for name, value in env.items():
+                self.assertEqual(os.environ[name], value)
+
 
 if __name__ == '__main__':
     unittest.main()
