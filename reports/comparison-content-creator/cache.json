@@ -1,6 +1,6 @@
 {
  "version": 1,
- "lastRun": "2026-10-19",
+ "lastRun": "2026-10-26",
  "dropped": [
   {
    "slug": "equipment-financing-vs-sba-loan",
@@ -1248,6 +1248,11 @@
    "slug": "pay-off-mortgage-vs-invest",
    "format": "comparison",
    "date": "2026-10-19"
+  },
+  {
+   "slug": "hsa-vs-hra",
+   "format": "comparison",
+   "date": "2026-10-26"
   }
  ]
 }

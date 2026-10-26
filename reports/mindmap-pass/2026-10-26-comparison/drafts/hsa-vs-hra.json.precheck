@@ -1,0 +1,134 @@
+{
+  "updated": "2026-10-26",
+  "slug": "hsa-vs-hra",
+  "title": "HSA vs HRA: Ownership, Rules, and Key Differences",
+  "metaDescription": "HSA vs HRA compared on ownership, contribution limits, and taxes so you know how each health benefit works under IRS rules.",
+  "targetKeyword": "hsa vs hra",
+  "optionA": "Health Savings Account (HSA)",
+  "optionB": "Health Reimbursement Arrangement (HRA)",
+  "h1": "HSA vs HRA: Ownership, Rules, and Key Differences",
+  "introText": "An HSA is an account you own and fund, while an HRA is an employer-funded reimbursement arrangement you cannot fund yourself. At The Modern Wallet, we evaluate healthcare accounts through direct tax guidelines and practical financial planning. Deciding how to handle an HSA vs HRA comes down to who controls the balance and which health insurance policy covers you. An HSA requires enrollment in a qualifying high deductible health plan, allows personal contributions, and stays with you when you leave your job. An HRA is established entirely by an employer, relies solely on company money, and may end when your employment terminates. Because an HSA belongs to you, it provides long-term portability that an employer arrangement cannot offer.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Who owns it",
+        "a": "You own the account individually.",
+        "b": "Your employer owns and maintains the arrangement."
+      },
+      {
+        "dimension": "Who can fund it",
+        "a": "You, your employer, or any other person can contribute.",
+        "b": "Only your employer can contribute; employee contributions are not allowed."
+      },
+      {
+        "dimension": "Eligibility",
+        "a": "Must have qualifying HDHP coverage, no disqualifying coverage, no Medicare, and cannot be a dependent.",
+        "b": "Determined by your employer; self-employed individuals are not eligible."
+      },
+      {
+        "dimension": "2026 limits",
+        "a": "$4,400 for self-only coverage; $8,750 for family coverage; $1,000 additional catch-up if age 55 or older.",
+        "b": "No statutory cap listed in IRS rules; limits are set by employer plan documents."
+      },
+      {
+        "dimension": "Tax treatment",
+        "a": "Deductible contributions, tax-free earnings growth, and tax-free withdrawals for qualified medical expenses.",
+        "b": "Employer contributions are tax-free, and reimbursements for qualified medical expenses are tax-free."
+      },
+      {
+        "dimension": "Portability when you leave a job",
+        "a": "Completely portable; the account stays with you when you change employers or leave the workforce.",
+        "b": "Generally stays with the employer; reimbursements to former employees depend on employer plan documents."
+      },
+      {
+        "dimension": "Unused money at year end",
+        "a": "Rolls over automatically every year and remains in your account indefinitely.",
+        "b": "Rolls over only if the specific employer plan permits it."
+      },
+      {
+        "dimension": "Can you hold both",
+        "a": "Only alongside specific arrangements like a limited-purpose, suspended, post-deductible, or retiree-only HRA.",
+        "b": "A general HRA that pays medical expenses before your HDHP deductible blocks HSA contributions."
+      },
+      {
+        "dimension": "Self-employed access",
+        "a": "Eligible if covered under a qualifying HDHP and meeting all other requirements.",
+        "b": "Not eligible under IRS guidelines."
+      }
+    ]
+  },
+  "verdict": "Prefer the Health Savings Account (HSA) when you have qualifying High Deductible Health Plan (HDHP) coverage and want a portable, personally owned account that you can fund yourself. A Health Reimbursement Arrangement (HRA) is not a standalone choice you make on your own, because it is an employer-funded benefit that your company chooses to provide or omit. This verdict is based on reported guidance in [IRS Publication 969](https://www.irs.gov/publications/p969). Our conclusion would change if you lose HDHP eligibility, enroll in Medicare, or enter an employer arrangement where an active general HRA blocks your HSA contributions.",
+  "sections": [
+    {
+      "heading": "Who Owns and Funds Each Account",
+      "content": "An HSA is a personal asset owned by the individual, whereas an HRA is an employer-owned benefit program. Under the guidelines in [IRS Publication 969](https://www.irs.gov/publications/p969), an individual owns their Health Savings Account (HSA) completely from the moment the account is opened. You control where the account lives, how the cash is stored, and when to pay for qualified healthcare bills. Because you own the account, anyone can put money into it on your behalf. You can make personal deposits, your employer can make direct deposits, and family members can contribute for you.\n\nA Health Reimbursement Arrangement (HRA) works under entirely different structural rules. An HRA is established, owned, and maintained solely by an employer. The employer decides whether to set up the arrangement, how much reimbursement credit to offer each year, and which qualified medical expenses to approve. Employees cannot deposit money into an HRA under any circumstances. Salary reduction agreements and personal payroll deductions are not permitted for HRA funding. If an employer decides to end the arrangement, the employees have no personal ownership claim to the remaining balance.\n\nFunding rules also dictate how you coordinate benefits between an HSA vs HRA during annual enrollment. If your workplace provides an HRA, you do not open a personal account with a financial custodian. Your employer simply tracks approved claims and reimburses you up to the annual limit established in the employer plan documents. With an HSA, you open a separate financial account, receive a dedicated debit card or checkbook, and make independent funding decisions throughout the entire tax year. You can read our comparison of [HSA vs FSA](/compare/hsa-vs-fsa/) to see how personal accounts differ from standard workplace spending plans."
+    },
+    {
+      "heading": "How the Tax Treatment Differs",
+      "content": "HSA contributions provide individual tax deductions, while HRA benefits provide tax-free employer reimbursements. With an HSA, contributions made by you or anyone other than your employer are deductible on your federal income tax return. You claim this deduction on the first page of your return, meaning you receive the tax deduction even if you do not itemize deductions. Employer contributions to your HSA are excluded from your gross income, keeping that money free from federal income taxes. Inside the account, any interest or investment earnings grow tax free. Distributions you take to pay for qualified medical expenses are never taxed.\n\nHRA tax benefits operate entirely on the employer side of the ledger. Employer contributions to an HRA are excluded from employee gross income and are free from federal income tax and employment tax. When you submit a claim for an approved expense, the reimbursement you receive is tax free. Unlike an HSA, there are no individual tax deductions for you to claim, because you never put your own dollars into the arrangement. An HRA also does not generate interest or investment returns for your personal benefit. If your employer permits unused HRA credits to pay out as cash upon leaving the job, the IRS treats those cash payouts as taxable income.\n\nPenalties for non-qualified withdrawals represent another major tax distinction between an HSA vs HRA. If you take money out of an HSA for non-qualified expenses, that distribution is included in your taxable income and generally faces an additional 20% tax penalty. The additional 20% tax does not apply if the distribution is taken after you become disabled, reach age 65, or die. With an HRA, non-qualified distributions simply do not occur because the employer will reject any reimbursement claim that fails to meet plan rules. For insights on using health balances alongside retirement assets, review our guide on [HSA vs Roth IRA](/compare/hsa-vs-roth-ira/)."
+    },
+    {
+      "heading": "Can You Have an HSA and an HRA at the Same Time",
+      "content": "You cannot contribute to an HSA if you are covered by a general-purpose HRA that reimburses standard medical expenses before you reach your deductible. The IRS enforces strict coverage rules to maintain HSA eligibility. To contribute to an HSA, you must be covered under a qualifying High Deductible Health Plan (HDHP) on the first day of the month. You cannot have any disqualifying health coverage, cannot be enrolled in Medicare, and cannot be claimed as a dependent on someone else's tax return. Because a standard HRA reimburses first-dollar healthcare costs, the IRS considers a general HRA to be disqualifying non-HDHP coverage.\n\nFour specific types of HRAs are permitted to operate alongside an active HSA under IRS rules:\n\n* A limited-purpose HRA that pays or reimburses only dental, vision, or preventive care expenses.\n* A suspended HRA where you formally elect to pause reimbursements before the coverage period begins.\n* A post-deductible HRA that pays or reimburses qualified expenses only after you satisfy the minimum annual HDHP deductible.\n* A retiree-only HRA that provides reimbursements exclusively after you retire from the employer.\n\nIf your employer offers a retiree-only HRA, you must watch the transition rules carefully when planning future retirement finances. Under IRS rules, after you retire and begin receiving benefits from a retiree-only HRA, you are no longer eligible to contribute to an HSA. Before retirement occurs, however, a retiree-only arrangement does not block active HSA contributions while you are still working under a qualifying HDHP. If you are tracking savings benchmarks across different life stages, see our review of the [average HSA balance by age](/guides/average-hsa-balance-by-age/)."
+    },
+    {
+      "heading": "What Happens When You Change Jobs",
+      "content": "An HSA remains entirely your property when you change jobs, while an HRA is tied directly to your employer. IRS Publication 969 explicitly states that an HSA stays with you if you change employers or leave the workforce. You do not lose your money, you do not need permission to keep the account open, and you do not surrender any accumulated balance. You can leave the funds with your existing custodian, transfer the balance to a new HSA provider, or spend the remaining cash on qualified medical expenses at any point in the future.\n\nAn HRA does not offer automatic portability when you leave a company. Because the arrangement belongs to the employer, leaving your job usually means forfeiting any remaining reimbursement allowance. IRS rules state that some employers permit former employees, their surviving spouses, and dependents to continue receiving reimbursements for qualified expenses. Whether your specific employer allows former workers to submit claims depends strictly on the written terms of your employer plan documents.\n\nYear-end balances also follow different carryover mechanics across an HSA vs HRA. With an HSA, all unspent money rolls over automatically into the following calendar year. You never face a use-it-or-lose-it deadline, and your funds can compound over decades. With an HRA, IRS rules note that some, but not all, HRAs permit remaining year-end amounts to carry over to the next year. Your employer decides whether unspent reimbursement credits expire on December 31, carry forward in full, or carry forward up to a specific dollar ceiling. If you are switching careers, review your employer plan documents before your final day to confirm whether unspent HRA credits expire immediately."
+    },
+    {
+      "heading": "Who Each Account Fits",
+      "content": "An HSA fits workers enrolled in a qualifying HDHP who want personal ownership, while an HRA fits employees whose companies fund healthcare expenses directly. For 2026, an individual must be enrolled in an HDHP with an annual deductible of at least $1,700 for self-only coverage or $3,400 for family coverage to qualify for an HSA. The annual deductible and other out-of-pocket expenses under the plan cannot exceed $8,500 for self-only coverage or $17,000 for family coverage. For 2026, the statutory HSA contribution limits are $4,400 for self-only coverage and $8,750 for family coverage. Individuals age 55 or older can make an additional $1,000 catch-up contribution.\n\nAn HRA fits individuals whose employers offer reimbursement credits as part of their workplace compensation package. Because an HRA requires no personal cash outlay from the worker, it provides immediate financial support for qualified medical bills, health insurance premiums, and long-term care coverage premiums when permitted by the employer plan documents. An HRA is also valuable for employees who cannot open an HSA because their health insurance policy carries a deductible below the federal HDHP minimums.\n\nCertain boundary conditions eliminate your ability to use one or both of these arrangements:\n\n* Enrolling in Medicare blocks your ability to contribute new funds to an HSA, though you can still spend existing HSA balances tax free.\n* Self-employed individuals cannot participate in an HRA under IRS rules, but self-employed individuals can open and fund an HSA if they carry qualifying HDHP coverage.\n* Employees covered under an active, general-purpose HRA cannot make HSA contributions because the arrangement pays medical expenses before the HDHP deductible is met.\n\nChoosing how to navigate an HSA vs HRA starts by checking your health insurance policy type. If you have an HDHP and want complete control over portable savings, prioritize maximizing your HSA contributions. If your company provides an HRA, read your employer plan documents to identify which medical expenses qualify for reimbursement and confirm whether remaining year-end credits roll over."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I contribute to an HRA myself?",
+      "answer": "No, you cannot contribute to an HRA yourself. Under IRS Publication 969, an HRA must receive contributions from the employer only, and employee contributions through salary reductions or personal deposits are not permitted."
+    },
+    {
+      "question": "Can I have an HSA and an HRA at the same time?",
+      "answer": "You can have both only if the HRA is specifically structured as a limited-purpose, suspended, post-deductible, or retiree-only arrangement. A general-purpose HRA that reimburses medical expenses before your HDHP deductible blocks you from contributing to an HSA."
+    },
+    {
+      "question": "Which is better, an HSA or an HRA?",
+      "answer": "An HSA is generally better for workers seeking portable ownership and personal tax deductions under a qualifying HDHP. An HRA is an employer-funded benefit that requires no personal cash, making it valuable when offered, but you cannot set one up independently."
+    },
+    {
+      "question": "Does an HRA roll over?",
+      "answer": "An HRA rolls over only if your employer's plan allows it. Under IRS rules, some HRAs permit unused year-end amounts to carry forward to the next year, while other plans forfeit unspent credits at the end of the year."
+    },
+    {
+      "question": "Can a self-employed person get an HRA?",
+      "answer": "No, a self-employed person cannot get an HRA. IRS guidelines state that self-employed persons are not eligible to participate in an HRA, although self-employed individuals can fund an HSA if they hold qualifying HDHP coverage."
+    },
+    {
+      "question": "What is the 2026 HSA limit?",
+      "answer": "For 2026, the HSA contribution limit is $4,400 for self-only coverage and $8,750 for family coverage. Individuals age 55 or older can contribute an additional $1,000 catch-up amount."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS, Publication 969 (Health Savings Accounts and Other Tax-Favored Health Plans)",
+      "url": "https://www.irs.gov/publications/p969"
+    }
+  ],
+  "relatedComparisons": [
+    "hsa-vs-fsa",
+    "hsa-vs-roth-ira"
+  ],
+  "calculatorLinks": [
+    {
+      "label": "Average HSA balance by age",
+      "href": "/guides/average-hsa-balance-by-age/"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "optionAName": "",
+  "optionBName": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": [],
+  "relatedLinks": []
+}

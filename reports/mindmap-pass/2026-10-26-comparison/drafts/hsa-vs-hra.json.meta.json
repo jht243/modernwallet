@@ -1,0 +1,527 @@
+{
+ "slug": "hsa-vs-hra",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1591,
+ "floor": 1300,
+ "input_tokens": 20787,
+ "output_tokens": 3667,
+ "thinking_tokens": 480,
+ "cached_tokens": 18944,
+ "est_cost_usd": 0.0184,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)"
+  ],
+  "flags": [
+   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'With an HSA, you open a separate financial account. '"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2030,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 478,
+   "floor": 1300,
+   "ratio": 0.37,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    3
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At The Modern Wallet, we evaluate healthcare accounts through direct tax guidelines and practical financial planning.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not license this first-person evaluation claim."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "With an HSA, you open a separate financial account, receive a dedicated debit card or checkbook, and make independent funding decisions throughout the entire tax year.",
+     "replacement": "With an HSA, you open a separate financial account and make independent funding decisions throughout the entire tax year.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention receiving a dedicated debit card or checkbook."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "You claim this deduction on the first page of your return, meaning you receive the tax deduction even if you do not itemize deductions.",
+     "replacement": "You receive the tax deduction even if you do not itemize deductions.",
+     "type": "unsupported",
+     "why": "SOURCE does not state where on the tax return this deduction is claimed."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "With an HRA, non-qualified distributions simply do not occur because the employer will reject any reimbursement claim that fails to meet plan rules.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state employer rejection rules or that non-qualified distributions cannot occur."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Because a standard HRA reimburses first-dollar healthcare costs, the IRS considers a general HRA to be disqualifying non-HDHP coverage.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that HRAs reimburse first-dollar healthcare costs."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Four specific types of HRAs are permitted to operate alongside an active HSA under IRS rules:\n\n* A limited-purpose HRA that pays or reimburses only dental, vision, or preventive care expenses.\n* A suspended HRA where you formally elect to pause reimbursements before the coverage period begins.\n* A post-deductible HRA that pays or reimburses qualified expenses only after you satisfy the minimum annual HDHP deductible.\n* A retiree-only HRA that provides reimbursements exclusively after you retire from the employer.",
+     "replacement": "Four specific types of HRAs are permitted to operate alongside an active HSA under IRS rules: limited-purpose, suspended, post-deductible, and retiree-only HRAs.",
+     "type": "unsupported",
+     "why": "SOURCE does not define features of limited-purpose, suspended, or post-deductible HRAs."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Your employer decides whether unspent reimbursement credits expire on December 31, carry forward in full, or carry forward up to a specific dollar ceiling.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention December 31 expiration, full carry forward, or dollar ceilings."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "An HRA is also valuable for employees who cannot open an HSA because their health insurance policy carries a deductible below the federal HDHP minimums.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this use case or evaluative fit for low deductibles."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "You control where the account lives, how the cash is stored, and when to pay for qualified healthcare bills.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state where the account lives or how cash is stored."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "An HRA also does not generate interest or investment returns for your personal benefit.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state whether an HRA generates interest or investment returns."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Because the arrangement belongs to the employer, leaving your job usually means forfeiting any remaining reimbursement allowance.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE states whether an HRA reimburses after leaving is not established in Pub 969."
+    }
+   ],
+   "deleted_final": 3,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2264
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-26T08:16:01+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-26-comparison/audit/hsa-vs-hra.findings.txt",
+    "applied": [
+     {
+      "id": "title",
+      "quote": "HSA vs HRA: Ownership, Rules, and Key Differences",
+      "replacement": "HSA vs HRA: Who Owns It and Who Can Fund It",
+      "type": "Title rule",
+      "why": "Audit requested specific title change."
+     },
+     {
+      "id": "h1",
+      "quote": "HSA vs HRA: Ownership, Rules, and Key Differences",
+      "replacement": "HSA vs HRA: Who Owns It and Who Can Fund It",
+      "type": "H1 rule",
+      "why": "Audit requested specific h1 change."
+     },
+     {
+      "id": "introText",
+      "quote": "Deciding how to handle an HSA vs HRA comes down to who controls the balance and which health insurance policy covers you.",
+      "replacement": "Your plan type decides it: an HSA needs a qualifying HDHP.",
+      "type": "Body noun-phrase and intro phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "introText",
+      "quote": "is established entirely by an employer",
+      "replacement": "is funded by an employer only",
+      "type": "Fact phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "introText",
+      "quote": "may end when your employment terminates",
+      "replacement": "whether it pays you after you leave depends on your employer's plan documents",
+      "type": "Portability claim",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "introText",
+      "quote": "Because an HSA belongs to you, it provides long-term portability that an employer arrangement cannot offer.",
+      "replacement": "",
+      "type": "Contradicted statement",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "comparisonTable.rows[0].b",
+      "quote": "Your employer owns and maintains the arrangement.",
+      "replacement": "Funded only by your employer.",
+      "type": "Table fact finding",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "comparisonTable.rows[2].b",
+      "quote": "Determined by your employer; ",
+      "replacement": "Not published",
+      "type": "Table fact finding",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "comparisonTable.rows[3].b",
+      "quote": "No statutory cap listed in IRS rules; limits are set by employer plan documents.",
+      "replacement": "Not established in the IRS figures used here; check your employer's plan documents.",
+      "type": "Table fact finding",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "comparisonTable.rows[5].a",
+      "quote": "Completely portable; the account stays with you when you change employers or leave the workforce.",
+      "replacement": "Stays with you if you change employers or leave the work force.",
+      "type": "Table fact finding",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "comparisonTable.rows[5].b",
+      "quote": "Generally stays with the employer; reimbursements to former employees depend on employer plan documents.",
+      "replacement": "Reimbursements can go to former employees; whether yours does depends on plan documents.",
+      "type": "Table fact finding",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "comparisonTable.rows[6].a",
+      "quote": "Rolls over automatically every year and remains in your account indefinitely.",
+      "replacement": "Not covered in the Pub 969 facts used for this page.",
+      "type": "Table fact finding",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "comparisonTable.rows[7].a",
+      "quote": "Only alongside specific arrangements like a limited-purpose, suspended, post-deductible, or retiree-only HRA.",
+      "replacement": "Exceptions include limited-purpose, suspended, post-deductible and retiree-only HRAs.",
+      "type": "Table fact finding",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "comparisonTable.rows[7].b",
+      "quote": "A general HRA that pays medical expenses before your HDHP deductible blocks HSA contributions.",
+      "replacement": "An HRA that pays qualified medical expenses generally blocks HSA contributions.",
+      "type": "Table fact finding",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "comparisonTable.rows[8].a",
+      "quote": "Eligible if covered under a qualifying HDHP and meeting all other requirements.",
+      "replacement": "Self-employment is not listed as a disqualifier in the eligibility facts.",
+      "type": "Table fact finding",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "verdict",
+      "quote": "Our conclusion would change if you lose HDHP eligibility, enroll in Medicare, or enter an employer arrangement where an active general HRA blocks your HSA contributions.",
+      "replacement": "Our conclusion would change if you are not HDHP-eligible (such as being enrolled in Medicare), your HRA type blocks HSA contributions, or your employer's plan documents say otherwise.",
+      "type": "Missing condition",
+      "why": "Audit requires condition about plan documents."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "Under the guidelines in [IRS Publication 969](https://www.irs.gov/publications/p969), an individual owns their Health Savings Account (HSA) completely from the moment the account is opened.",
+      "replacement": "",
+      "type": "Unsupported phrasing",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "Because you own the account, anyone can put money into it on your behalf. You can make personal deposits, your employer can make direct deposits, and family members can contribute for you.",
+      "replacement": "You, your employer, or someone else can contribute.",
+      "type": "Unsupported phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "works under entirely different structural rules. ",
+      "replacement": "",
+      "type": "Filler/unsupported",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "is established, owned, and maintained solely by an employer.",
+      "replacement": "is funded only by the employer.",
+      "type": "Fact phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "The employer decides whether to set up the arrangement, how much reimbursement credit to offer each year, and which qualified medical expenses to approve. ",
+      "replacement": "",
+      "type": "Unsupported specifics",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "Salary reduction agreements and personal payroll deductions are not permitted for HRA funding. ",
+      "replacement": "",
+      "type": "Unsupported specifics",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "If an employer decides to end the arrangement, the employees have no personal ownership claim to the remaining balance.",
+      "replacement": "",
+      "type": "Unsupported specifics",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "Funding rules also dictate how you coordinate benefits between an HSA vs HRA during annual enrollment. ",
+      "replacement": "",
+      "type": "Unsupported / noun-phrase",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "If your workplace provides an HRA, you do not open a personal account with a financial custodian. Your employer simply tracks approved claims and reimburses you up to the annual limit established in the employer plan documents. ",
+      "replacement": "",
+      "type": "Unsupported passage",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": " and make independent funding decisions throughout the entire tax year",
+      "replacement": "",
+      "type": "Unsupported phrasing",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "You can read our comparison of [HSA vs FSA](/compare/hsa-vs-fsa/) to see how personal accounts differ from standard workplace spending plans.",
+      "replacement": "Compare the HSA with an FSA at [HSA vs FSA](/compare/hsa-vs-fsa/).",
+      "type": "FSA sentence phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": ", keeping that money free from federal income taxes",
+      "replacement": "",
+      "type": "Redundant/unsupported claim",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "never taxed",
+      "replacement": "not taxed",
+      "type": "Absolute phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "HRA tax benefits operate entirely on the employer side of the ledger.",
+      "replacement": "Only your employer contributes to an HRA.",
+      "type": "Unsupported phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "major ",
+      "replacement": "",
+      "type": "Banned/filler modifier",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "additional 20% tax penalty",
+      "replacement": "additional 20% tax",
+      "type": "Fact phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "general-purpose HRA that reimburses standard medical expenses before you reach your deductible",
+      "replacement": "an HRA that pays qualified medical expenses",
+      "type": "Fact phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "The IRS enforces strict coverage rules to maintain HSA eligibility. ",
+      "replacement": "",
+      "type": "Filler/unsupported",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "Four specific types of HRAs are permitted to operate alongside an active HSA under IRS rules: limited-purpose, suspended, post-deductible, and retiree-only HRAs.",
+      "replacement": "Exceptions include limited-purpose, suspended, post-deductible and retiree-only HRAs.",
+      "type": "Fact phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "If your employer offers a retiree-only HRA, you must watch the transition rules carefully when planning future retirement finances. ",
+      "replacement": "",
+      "type": "Filler",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "after you retire and begin receiving benefits from a retiree-only HRA",
+      "replacement": "after retirement with a retiree-only HRA",
+      "type": "Fact phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "You do not lose your money, you do not need permission to keep the account open, and you do not surrender any accumulated balance. You can leave the funds with your existing custodian, transfer the balance to a new HSA provider, or spend the remaining cash on qualified medical expenses at any point in the future.",
+      "replacement": "",
+      "type": "Unsupported specifics",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "An HRA does not offer automatic portability when you leave a company.",
+      "replacement": "Pub 969 says reimbursements can go to former employees. Whether yours does depends on your employer's plan documents.",
+      "type": "Fact phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "With an HSA, all unspent money rolls over automatically into the following calendar year. You never face a use-it-or-lose-it deadline, and your funds can compound over decades. ",
+      "replacement": "",
+      "type": "Unsupported HSA claims",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "expire immediately",
+      "replacement": "carry over",
+      "type": "Unsupported term",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "statutory ",
+      "replacement": "",
+      "type": "Unsupported term",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "Because an HRA requires no personal cash outlay from the worker, it provides immediate financial support for qualified medical bills, health insurance premiums, and long-term care coverage premiums when permitted by the employer plan documents.",
+      "replacement": "Qualified expenses for an HRA can include health insurance premiums and long-term care coverage premiums.",
+      "type": "Unsupported claims",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": ", though you can still spend existing HSA balances tax free",
+      "replacement": "",
+      "type": "Unsupported claim",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "* Employees covered under an active, general-purpose HRA cannot make HSA contributions because the arrangement pays medical expenses before the HDHP deductible is met.",
+      "replacement": "* Generally you cannot contribute to an HSA while covered by an HDHP and also by an HRA that pays qualified medical expenses. * With a retiree-only HRA, after retirement you are no longer eligible to contribute to an HSA.",
+      "type": "List wording finding",
+      "why": "Audit requested list wording."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "Choosing how to navigate an HSA vs HRA starts by checking your health insurance policy type. If you have an HDHP and want complete control over portable savings, prioritize maximizing your HSA contributions. If your company provides an HRA, read your employer plan documents to identify which medical expenses qualify for reimbursement and confirm whether remaining year-end credits roll over.",
+      "replacement": "Check your plan type first. With an HDHP, you can fund an HSA. If your company provides an HRA, read your employer plan documents to verify what it reimburses.",
+      "type": "Fact & noun-phrase",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "Under IRS Publication 969, an HRA must receive contributions from the employer only, and employee contributions through salary reductions or personal deposits are not permitted.",
+      "replacement": "An HRA must receive contributions from the employer only; employees may not contribute.",
+      "type": "Fact phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "You can have both only if the HRA is specifically structured as a limited-purpose, suspended, post-deductible, or retiree-only arrangement. A general-purpose HRA that reimburses medical expenses before your HDHP deductible blocks you from contributing to an HSA.",
+      "replacement": "Generally you cannot contribute to an HSA while covered by an HDHP and also by an HRA that pays qualified medical expenses. Exceptions include limited-purpose, suspended, post-deductible and retiree-only HRAs.",
+      "type": "Fact phrasing",
+      "why": "Audit requested replacement."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "making it valuable when offered, ",
+      "replacement": "",
+      "type": "Value judgment",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "generally ",
+      "replacement": "",
+      "type": "Filler modifier",
+      "why": "Audit requested deletion."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "other plans forfeit unspent credits at the end of the year",
+      "replacement": "others do not",
+      "type": "Fact phrasing",
+      "why": "Audit requested replacement."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[0].content",
+       "quote": "With an HSA, you open a separate financial account. ",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1591,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'With an HSA, you open a separate financial account. '"
+    ]
+   }
+  ]
+ },
+ "seconds": 271.5,
+ "response_id": "YArfasuOG--GytMPvPeQgQc",
+ "generated_at": "2026-10-26T08:12:30+0000"
+}
