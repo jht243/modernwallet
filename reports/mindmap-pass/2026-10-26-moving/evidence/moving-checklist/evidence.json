@@ -1,0 +1,34 @@
+{
+ "route": "/checklists/moving-checklist/",
+ "reader_question": "What do I need to do before moving, and when?",
+ "demand_source": "dataforseo volume/KD via scripts/lib/keyword_data.py (KEYWORD_PROVIDERS=dataforseo); DataForSEO SERP reads reports/mindmap-pass/2026-10-26-moving/serp.json",
+ "decision_gap": "Page one for 'moving checklist' is mover-company blogs, realtor posts, consumeraffairs and hgtv with static lists or PDFs; none filters tasks by rent/own at each end, distance, mover type, season or location (SERP sample of 10 results, not a claim about every competitor). 'Moving to another state checklist' is owned by Reddit threads.",
+ "sampled_alternatives": "top10_domains in reports/mindmap-pass/2026-10-26-moving/serp.json",
+ "method": "calculated + reported: one rule per item in src/lib/checklists.ts (MOVING) drawn from cited federal guidance (USPS, USA.gov, IRS, FMCSA, Vote.gov, NFPA, ready.gov, HUD); scenario counts produced by running those rules",
+ "calculation": "node reports/mindmap-pass/2026-10-26-moving/evidence/compute.mjs -> evidence/counts.json",
+ "findings": [
+  {
+   "label": "calculated",
+   "text": "scenario item counts per counts.json (library 88; A 46, B 63, C 49)"
+  },
+  {
+   "label": "reported",
+   "text": "federal rules listed in the row prompt's CLOSED FACT LIST; FMCSA pages read 2026-10-26"
+  }
+ ],
+ "counterexample": "A reader moving between two states whose climates differ gets climate items for the state they choose only; the switches are a starting point and they can turn on conditions for either home.",
+ "exclusions": "No state-specific deadlines (license, registration, deposit return, notice periods), no mover or truck prices, no cost estimates.",
+ "unknowns": "Which items readers use; whether customization changes rankings.",
+ "would_change": "A change to FMCSA's released-value or claim-filing rules, the IRS moving-expense rule, or a reader-reported missing task.",
+ "selected_medium": "interactive tool + server-rendered full list (tool is client-only)",
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "counts.json",
+   "src/lib/checklists.ts"
+  ],
+  "scopeAndLimits": "Counts are rule outputs for example moves, not user data or product tests.",
+  "publicMethod": "workedExample section + 'How the checklist is built' + the full list with Only-if tags",
+  "placement": "workedExample, howItWorks"
+ }
+}

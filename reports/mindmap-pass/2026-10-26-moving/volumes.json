@@ -1,0 +1,221 @@
+{
+ "rows": [
+  {
+   "keyword": "moving checklist printable",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": 6,
+   "cpc": 0.85,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "moving checklist pdf",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": 5,
+   "cpc": 0.88,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "moving to another state checklist",
+   "volume": 390,
+   "volume_low": 390,
+   "volume_high": 390,
+   "kd": 0,
+   "cpc": 5.02,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "moving out of state checklist",
+   "volume": 1000,
+   "volume_low": 1000,
+   "volume_high": 1000,
+   "kd": 1,
+   "cpc": 4.37,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "long distance moving checklist",
+   "volume": 90,
+   "volume_low": 90,
+   "volume_high": 90,
+   "kd": 1,
+   "cpc": 6.78,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "moving day checklist",
+   "volume": 320,
+   "volume_low": 320,
+   "volume_high": 320,
+   "kd": 20,
+   "cpc": 1.07,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "moving timeline checklist",
+   "volume": 480,
+   "volume_low": 480,
+   "volume_high": 480,
+   "kd": 33,
+   "cpc": 2.52,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "what to do when moving",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": 25,
+   "cpc": 2.12,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "who to notify when moving",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": 0,
+   "cpc": 1.78,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "utilities to set up when moving",
+   "volume": 30,
+   "volume_low": 30,
+   "volume_high": 30,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "moving with pets checklist",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "8 week moving checklist",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "moving checklist for renters",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 2,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "moving with kids checklist",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using dataforseo (quality order dataforseo)",
+  "dataforseo returned volume for 13/14 phrases",
+  "kd: using dataforseo (quality order dataforseo)",
+  "No tool volume for 1 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 13/14 rows corroborated live"
+ ]
+}

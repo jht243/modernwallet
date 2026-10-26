@@ -1,5 +1,6 @@
-// Checklist engine (mindmap-pass 2026-10-25). Eight checklists — buying, selling, renting (tenant),
-// landlord, home inspection, final walkthrough, move-in/move-out condition report, first apartment —
+// Checklist engine (mindmap-pass 2026-10-25). Nine checklists — buying, selling, renting (tenant),
+// landlord, home inspection, final walkthrough, move-in/move-out condition report, first apartment,
+// and moving (added 2026-10-26) —
 // share one profile shape and one rule format: every item lists the conditions under which it applies,
 // and the island shows only the items whose conditions match the reader's answers.
 //
@@ -21,7 +22,8 @@ export type ChecklistId =
   | "home-inspection"
   | "final-walkthrough"
   | "move-in-move-out"
-  | "first-apartment";
+  | "first-apartment"
+  | "moving";
 
 export interface Profile {
   state: string; // USPS code, "" = not chosen
@@ -64,6 +66,13 @@ export interface Profile {
   dishwasher: boolean;
   furnished: boolean;
   roommates: boolean;
+  // moving
+  moveFrom: "rent" | "own-sell" | "own-keep" | "family";
+  moveTo: "rent" | "buy" | "family";
+  distance: "local" | "in-state" | "interstate";
+  method: "movers" | "truck" | "container";
+  season: "winter" | "spring-fall" | "summer";
+  kids: boolean;
 }
 
 export const DEFAULT_PROFILE: Profile = {
@@ -100,6 +109,12 @@ export const DEFAULT_PROFILE: Profile = {
   dishwasher: false,
   furnished: false,
   roommates: false,
+  moveFrom: "rent",
+  moveTo: "rent",
+  distance: "local",
+  method: "movers",
+  season: "summer",
+  kids: false,
 };
 
 // ---- Climate defaults by state -------------------------------------------------------------------
@@ -152,6 +167,14 @@ export const SOURCES: Record<string, { label: string; url: string }> = {
   earthquake: { label: "Ready.gov: Earthquakes", url: "https://www.ready.gov/earthquakes" },
   winter: { label: "American Red Cross: Winter storm safety", url: "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/winter-storm.html" },
   mail: { label: "USPS: Change of address", url: "https://www.usps.com/manage/forward.htm" },
+  addressChange: { label: "USA.gov: How to change your address", url: "https://www.usa.gov/change-address" },
+  irs8822: { label: "IRS: About Form 8822, Change of Address", url: "https://www.irs.gov/forms-pubs/about-form-8822" },
+  irsMoving: { label: "IRS: Topic 455, Moving expenses for members of the Armed Forces", url: "https://www.irs.gov/taxtopics/tc455" },
+  vote: { label: "Vote.gov: Register to vote or update your registration", url: "https://vote.gov/" },
+  fmcsa: { label: "FMCSA: Protect Your Move", url: "https://www.fmcsa.dot.gov/protect-your-move" },
+  fmcsaFaq: { label: "FMCSA: Moving FAQs (movers vs. brokers, checking registration)", url: "https://www.fmcsa.dot.gov/protect-your-move/faq" },
+  fmcsaFlags: { label: "FMCSA: Spot the red flags", url: "https://www.fmcsa.dot.gov/protect-your-move/red-flags" },
+  fmcsaLiability: { label: "FMCSA: Liability and protection", url: "https://www.fmcsa.dot.gov/consumer-protection/protect-your-move/are-you-moving/liability-protection" },
 };
 
 // ---- Item format ---------------------------------------------------------------------------------
@@ -326,6 +349,62 @@ export const QUESTIONS: Record<ChecklistId, Question[]> = {
     { key: "laundry", label: "Washer / dryer in unit", type: "toggle" },
     { key: "pets", label: "Bringing a pet", type: "toggle" },
   ],
+  moving: [
+    {
+      key: "moveFrom",
+      label: "Where you live now",
+      type: "select",
+      options: [
+        { value: "rent", label: "Renting" },
+        { value: "own-sell", label: "I own it and I'm selling" },
+        { value: "own-keep", label: "I own it and I'm keeping it" },
+        { value: "family", label: "With family or friends (not on a lease)" },
+      ],
+    },
+    {
+      key: "moveTo",
+      label: "Where you're going",
+      type: "select",
+      options: [
+        { value: "rent", label: "A rental" },
+        { value: "buy", label: "A home I'm buying" },
+        { value: "family", label: "Moving in with family or friends" },
+      ],
+    },
+    {
+      key: "distance",
+      label: "How far",
+      type: "select",
+      options: [
+        { value: "local", label: "Same city or area" },
+        { value: "in-state", label: "Long-distance, same state" },
+        { value: "interstate", label: "To another state" },
+      ],
+    },
+    {
+      key: "method",
+      label: "How you're moving",
+      type: "select",
+      options: [
+        { value: "movers", label: "Hiring movers" },
+        { value: "truck", label: "Rental truck (doing it myself)" },
+        { value: "container", label: "Portable storage container" },
+      ],
+    },
+    {
+      key: "season",
+      label: "Moving in",
+      type: "select",
+      options: [
+        { value: "spring-fall", label: "Spring or fall" },
+        { value: "summer", label: "Summer" },
+        { value: "winter", label: "Winter" },
+      ],
+    },
+    { key: "kids", label: "Moving with kids", type: "toggle" },
+    { key: "pets", label: "Moving with a pet", type: "toggle" },
+    { key: "car", label: "Bringing a car", type: "toggle" },
+  ],
 };
 
 /** Which checklists show the state + climate block. */
@@ -338,6 +417,7 @@ export const USES_LOCATION: Record<ChecklistId, boolean> = {
   "final-walkthrough": false,
   "move-in-move-out": true,
   "first-apartment": false,
+  moving: true,
 };
 
 /** Per-checklist starting answers (merged over DEFAULT_PROFILE). */
@@ -350,6 +430,7 @@ export const PRESETS: Record<ChecklistId, Partial<Profile>> = {
   "final-walkthrough": { propertyType: "single-family" },
   "move-in-move-out": { propertyType: "apartment", bedrooms: 1, bathrooms: 1 },
   "first-apartment": {},
+  moving: { moveFrom: "rent", moveTo: "rent", distance: "local", method: "movers", season: "summer", car: true },
 };
 
 export const TITLES: Record<ChecklistId, string> = {
@@ -361,6 +442,7 @@ export const TITLES: Record<ChecklistId, string> = {
   "final-walkthrough": "Final Walkthrough Checklist",
   "move-in-move-out": "Move-In / Move-Out Condition Checklist",
   "first-apartment": "First Apartment Checklist",
+  moving: "Moving Checklist",
 };
 
 export const ROUTES: Record<ChecklistId, string> = {
@@ -372,6 +454,7 @@ export const ROUTES: Record<ChecklistId, string> = {
   "final-walkthrough": "/checklists/final-walkthrough-checklist/",
   "move-in-move-out": "/checklists/move-in-move-out-checklist/",
   "first-apartment": "/checklists/first-apartment-checklist/",
+  moving: "/checklists/moving-checklist/",
 };
 
 // ---- Shared climate items (used by several checklists with different wording) -----------------------
@@ -491,7 +574,7 @@ const HOME_BUYING: Section[] = [
     items: [
       { id: "b-locks", text: "Change or rekey the locks and reset garage and alarm codes" },
       { id: "b-alarms", text: "Test smoke and carbon monoxide alarms, and add them where they are missing", src: "smoke" },
-      { id: "b-utilities", text: "Put utilities in your name and forward your mail", src: "mail" },
+      { id: "b-utilities", text: "Put utilities in your name and forward your mail", src: "mail", link: { href: "/checklists/moving-checklist/", label: "Moving checklist" } },
       ...freezeHouse.slice(1, 2),
       { id: "b-records", text: "File your closing documents; you will need them for taxes and when you sell" },
     ],
@@ -571,7 +654,7 @@ const HOME_SELLING: Section[] = [
       { id: "s-repairs", text: "Respond to the buyer's repair requests in writing, with receipts for completed work" },
       { id: "s-appraisal", text: "Give the appraiser access and a list of upgrades with dates" },
       { id: "s-maintain", text: "Keep the house in the same condition through closing" },
-      { id: "s-utilities", text: "Schedule utility shutoff or transfer for closing day and forward your mail", src: "mail" },
+      { id: "s-utilities", text: "Schedule utility shutoff or transfer for closing day and forward your mail", src: "mail", link: { href: "/checklists/moving-checklist/", label: "Moving checklist" } },
       { id: "s-insure", text: "Keep homeowners insurance in force until the sale closes" },
     ],
   },
@@ -675,8 +758,8 @@ const RENTING: Section[] = [
     items: [
       { id: "r-m-report", text: "Fill out a room-by-room move-in condition report with photos and have the landlord sign it", link: { href: "/checklists/move-in-move-out-checklist/", label: "Move-in / move-out checklist" } },
       { id: "r-m-insurance", text: "Buy renters insurance", note: "Renters policies generally don't cover flood; that's a separate policy.", },
-      { id: "r-m-utils", text: "Set up the utilities in your name and forward your mail", src: "mail", when: (p) => !isComplex(p) },
-      { id: "r-m-mail", text: "Forward your mail", src: "mail", when: isComplex },
+      { id: "r-m-utils", text: "Set up the utilities in your name and forward your mail", src: "mail", when: (p) => !isComplex(p), link: { href: "/checklists/moving-checklist/", label: "Moving checklist" } },
+      { id: "r-m-mail", text: "Forward your mail", src: "mail", when: isComplex, link: { href: "/checklists/moving-checklist/", label: "Moving checklist" } },
       { id: "r-m-shutoff", text: "Find the water shutoff and breaker panel", when: (p) => !isComplex(p) || p.freeze },
       { id: "r-m-wildfire", text: "Learn two ways out of the neighborhood and sign up for local emergency alerts", when: (p) => p.wildfire, src: "wildfire" },
       { id: "r-m-quake", text: "Secure tall furniture to the wall and ask whether the landlord allows it", when: (p) => p.earthquake, src: "earthquake" },
@@ -1124,6 +1207,148 @@ export const FIRST_APARTMENT: BuySection[] = [
   },
 ];
 
+// ---- 9. Moving (mindmap-pass 2026-10-26) ------------------------------------------------------------
+// A countdown from eight weeks out to the first month. Interstate-mover items follow FMCSA's federal
+// rules; moves inside one state follow state rules, so those items tell the reader to check them.
+const movers = (p: Profile) => p.method === "movers";
+const interstate = (p: Profile) => p.distance === "interstate";
+const longMove = (p: Profile) => p.distance !== "local";
+const leavingHome = (p: Profile) => p.moveFrom !== "family";
+const ownHome = (p: Profile) => p.moveTo !== "family";
+
+const MOVING: Section[] = [
+  {
+    id: "plan",
+    title: "1. Eight Weeks Out: Plan and Book",
+    items: [
+      { id: "mv-budget", text: "Set a moving budget: movers or truck, packing supplies, travel, and any overlap in rent or mortgage between the two homes", link: { href: "/budget/", label: "Budget calculator" } },
+      { id: "mv-date", text: "Pick the moving date and check it against your lease end or closing date" },
+      { id: "mv-quotes", text: "Get written estimates from at least three movers, each based on seeing your belongings in person or on video", note: "FMCSA lists a sight-unseen estimate given by phone or online as a red flag.", when: movers, src: "fmcsaFlags" },
+      { id: "mv-register", text: "Look up each interstate mover by its USDOT or MC number in FMCSA's search tool to check its registration and complaint history", note: "Ask whether the company is the mover or a broker. A broker books your move with another company.", when: (p) => movers(p) && interstate(p), src: "fmcsaFaq" },
+      { id: "mv-state-mover", text: "Check how your state licenses in-state movers and look the company up", note: "Moves inside one state follow that state's rules, not FMCSA's.", when: (p) => movers(p) && !interstate(p), src: "fmcsaLiability" },
+      { id: "mv-truck", text: "Reserve the rental truck plus a dolly, furniture pads and straps", when: (p) => p.method === "truck" },
+      { id: "mv-truck-ins", text: "Ask your auto insurer and card issuer whether they cover a rental truck, then decide on the rental company's damage coverage", when: (p) => p.method === "truck" },
+      { id: "mv-container", text: "Reserve the portable container and decide where it will sit at each home", note: "A container parked on the street may need a city permit.", when: (p) => p.method === "container" },
+      { id: "mv-summer", text: "Moving in summer: book movers or the truck as soon as your date is set", when: (p) => p.season === "summer" },
+      { id: "mv-notice", text: "Give your landlord written notice by the date your lease requires", note: "Notice periods come from your lease and state law.", when: (p) => p.moveFrom === "rent", src: "tenantRights" },
+      { id: "mv-sell", text: "Line up the sale of your home with the moving date", when: (p) => p.moveFrom === "own-sell", link: { href: "/checklists/home-selling-checklist/", label: "Home selling checklist" } },
+      { id: "mv-keep", text: "Decide whether the home you're leaving will be rented out or sit empty, and tell your insurer", when: (p) => p.moveFrom === "own-keep", link: { href: "/checklists/landlord-checklist/", label: "Landlord checklist" } },
+      { id: "mv-buy", text: "Line up your closing date with your move-out date, and plan where your belongings go if the dates don't match", when: (p) => p.moveTo === "buy", link: { href: "/checklists/home-buying-checklist/", label: "Home buying checklist" } },
+      { id: "mv-lease", text: "Sign the new lease and confirm the move-in date, key pickup and total due at move-in", when: (p) => p.moveTo === "rent", link: { href: "/checklists/renting-checklist/", label: "Rental checklist" } },
+      { id: "mv-school", text: "Ask the new school district how to enroll and what proof of address and records it needs", when: (p) => p.kids },
+    ],
+  },
+  {
+    id: "sort",
+    title: "2. Six to Four Weeks Out: Sort and Gather Records",
+    items: [
+      { id: "mv-declutter", text: "Go room by room and sort everything into keep, sell, donate and toss before you pack" },
+      { id: "mv-inventory", text: "Make a home inventory with photos of furniture, electronics and valuables" },
+      { id: "mv-supplies", text: "Collect boxes, tape, markers and padding" },
+      { id: "mv-docs", text: "Pull together the documents you'll carry yourself: IDs, passports, birth certificates, tax returns, and lease or closing papers" },
+      { id: "mv-medical", text: "Get copies of medical and dental records and arrange prescription refills or transfers" },
+      { id: "mv-school-records", text: "Request your children's school records", when: (p) => p.kids },
+      { id: "mv-vet-records", text: "Get your pet's vet records and refill any medications", when: (p) => p.pets },
+      { id: "mv-pet-state", text: "Ask your vet what the new state requires for your pet, such as a health certificate or rabies record", when: (p) => p.pets && interstate(p) },
+      { id: "mv-hazmat", text: "Use up or safely dispose of paint, propane, cleaning chemicals and other hazardous items", note: "If you hire movers, packing hazardous items without telling them can limit the mover's liability.", src: "fmcsaLiability" },
+      { id: "mv-booklet", text: "Get the \"Your Rights and Responsibilities When You Move\" booklet and the \"Ready to Move\" brochure from your mover", note: "Federal rules require interstate movers to give you both.", when: (p) => movers(p) && interstate(p), src: "fmcsa" },
+      { id: "mv-valuation", text: "Choose your mover's liability option in writing: Full Value Protection, or Released Value (no more than 60 cents per pound per article)", note: "Full Value Protection applies unless you sign for Released Value, which costs nothing extra but pays little.", when: (p) => movers(p) && interstate(p), src: "fmcsaLiability" },
+      { id: "mv-coverage", text: "Ask how the mover covers loss or damage, and get the answer in writing", when: (p) => movers(p) && !interstate(p) },
+      { id: "mv-car-plan", text: "Decide whether you'll drive your car to the new home or ship it", when: (p) => p.car && longMove(p) },
+    ],
+  },
+  {
+    id: "address",
+    title: "3. Two Weeks Out: Address, Utilities and Insurance",
+    items: [
+      { id: "mv-usps", text: "File your change of address with USPS on its official site", note: "USA.gov warns that look-alike sites charge far more than the official service.", src: "mail" },
+      { id: "mv-irs", text: "Update your address with the IRS (Form 8822)", src: "irs8822" },
+      { id: "mv-accounts", text: "Update your address with your bank, credit cards, employer payroll, insurers and subscriptions" },
+      { id: "mv-benefits", text: "If you receive Social Security or VA benefits, update your address with that agency", src: "addressChange" },
+      { id: "mv-utils-off", text: "Schedule electricity, gas, water and trash to stop at the old address after moving day", when: leavingHome },
+      { id: "mv-utils-on", text: "Schedule utilities to start at the new address by move-in day", when: ownHome },
+      { id: "mv-internet", text: "Book internet installation at the new address", when: ownHome },
+      { id: "mv-renters-ins", text: "Start renters insurance on your move-in date", note: "Renters policies generally don't cover flood; that's a separate policy.", when: (p) => p.moveTo === "rent" },
+      { id: "mv-home-ins", text: "Confirm homeowners insurance on the new home starts by closing", when: (p) => p.moveTo === "buy" },
+      { id: "mv-old-ins", text: "Keep homeowners insurance on the old home until the sale closes", when: (p) => p.moveFrom === "own-sell" },
+      { id: "mv-elevator", text: "If either building has an elevator, a loading dock or set moving hours, reserve your time slot" },
+      { id: "mv-permit", text: "Check whether the truck or container needs a parking permit on your street", when: (p) => p.method !== "movers" },
+      { id: "mv-kid-care", text: "Arrange childcare for moving day", when: (p) => p.kids },
+      { id: "mv-pet-care", text: "Arrange a sitter or a closed-off quiet room for your pet on moving day", when: (p) => p.pets },
+    ],
+  },
+  {
+    id: "pack",
+    title: "4. Last Week: Pack and Confirm",
+    items: [
+      { id: "mv-confirm", text: "Confirm the date, arrival window and both addresses with your mover, truck rental or container company" },
+      { id: "mv-label", text: "Label every box with its room and contents" },
+      { id: "mv-essentials", text: "Pack an essentials box: medications, documents, chargers, toiletries, a change of clothes, bedding and basic tools" },
+      { id: "mv-valuables", text: "Keep jewelry, cash, documents and medications with you, not on the truck" },
+      { id: "mv-fridge", text: "Empty, defrost and clean the refrigerator and freezer" },
+      { id: "mv-pay", text: "Confirm how and when you'll pay the mover", note: "FMCSA lists a demand for cash or a large deposit before the move as a red flag.", when: movers, src: "fmcsaFlags" },
+      { id: "mv-clean", text: "Clean the rental and fix the small damage you're responsible for before the move-out inspection", when: (p) => p.moveFrom === "rent", link: { href: "/checklists/move-in-move-out-checklist/", label: "Move-in / move-out checklist" } },
+      { id: "mv-kid-bag", text: "Pack a bag for each child with favorite things that rides with them", when: (p) => p.kids },
+      { id: "mv-pet-bag", text: "Pack your pet's food, bowls, leash or litter, and medication to travel with you", when: (p) => p.pets },
+      { id: "mv-heat", text: "Plan to carry heat-sensitive items such as medications and electronics in your car", when: (p) => p.season === "summer" },
+      { id: "mv-freeze", text: "Keep liquids, paint and houseplants that could freeze out of an unheated truck or container", when: (p) => p.season === "winter" && p.freeze },
+      { id: "mv-hurricane", text: "Moving in hurricane season: pick a backup date and learn the evacuation routes near both homes", when: (p) => p.hurricane && p.season !== "winter", src: "hurricane" },
+      { id: "mv-wildfire", text: "Watch fire and smoke conditions near both homes in the days before the move", when: (p) => p.wildfire && p.season !== "winter", src: "wildfire" },
+    ],
+  },
+  {
+    id: "day",
+    title: "5. Moving Day",
+    items: [
+      { id: "mv-meters", text: "Photograph the utility meter readings at both homes" },
+      { id: "mv-sweep", text: "Walk through every room, closet and cabinet before you leave" },
+      { id: "mv-paperwork", text: "Read the mover's inventory and bill of lading before you sign, and never sign blank documents", src: "fmcsaFlags", when: movers },
+      { id: "mv-driver", text: "Get the driver's phone number and the delivery window, and plan to be at the new home when the shipment arrives", when: (p) => movers(p) && longMove(p) },
+      { id: "mv-load", text: "Load heavy items first against the front wall of the truck and strap each layer", when: (p) => p.method !== "movers" },
+      { id: "mv-snow", text: "Clear snow and ice from walkways and steps at both homes", when: (p) => p.season === "winter" && p.freeze },
+      { id: "mv-moveout", text: "Do the move-out walkthrough with your landlord and give your forwarding address in writing", note: "Your state sets the deadline for returning the deposit.", when: (p) => p.moveFrom === "rent", src: "tenantRights", link: { href: "/checklists/move-in-move-out-checklist/", label: "Move-in / move-out checklist" } },
+      { id: "mv-final-walk", text: "Do the final walkthrough before closing", when: (p) => p.moveTo === "buy", link: { href: "/checklists/final-walkthrough-checklist/", label: "Final walkthrough checklist" } },
+      { id: "mv-movein", text: "Record the new rental's condition with photos before you unpack", when: (p) => p.moveTo === "rent", link: { href: "/checklists/move-in-move-out-checklist/", label: "Move-in / move-out checklist" } },
+      { id: "mv-keys", text: "Lock up and hand over keys, garage remotes and fobs for the home you're leaving", when: leavingHome },
+    ],
+  },
+  {
+    id: "week",
+    title: "6. First Week in the New Home",
+    items: [
+      { id: "mv-alarms", text: "Test the smoke and carbon monoxide alarms", src: "smoke" },
+      { id: "mv-shutoff", text: "Find the main water shutoff and the breaker panel" },
+      { id: "mv-locks", text: "Change or rekey the locks", when: (p) => p.moveTo === "buy" },
+      { id: "mv-claim-interstate", text: "Unpack and check for damage, then file any claim with the mover in writing", note: "On an interstate move you have nine months from delivery to file a written claim.", when: (p) => movers(p) && interstate(p), src: "fmcsaLiability" },
+      { id: "mv-claim", text: "Unpack and check for damage, and report any to the mover in writing right away", when: (p) => movers(p) && !interstate(p) },
+      { id: "mv-truck-return", text: "Return the truck on time with the fuel level the contract requires", when: (p) => p.method === "truck" },
+      { id: "mv-container-pickup", text: "Schedule the container pickup once it's empty", when: (p) => p.method === "container" },
+      { id: "mv-mail", text: "Check that forwarded mail is arriving at the new address", src: "mail" },
+      { id: "mv-enroll", text: "Finish school enrollment", when: (p) => p.kids },
+      { id: "mv-chip", text: "Update your pet's microchip record and tag with the new address", when: (p) => p.pets },
+      { id: "mv-quake", text: "Strap tall furniture and the water heater to the wall", when: (p) => p.earthquake, src: "earthquake" },
+      { id: "mv-evac", text: "Learn your evacuation zone at the new address", when: (p) => p.hurricane, src: "hurricane" },
+      { id: "mv-alerts", text: "Sign up for local emergency alerts and learn two ways out of the neighborhood", when: (p) => p.wildfire, src: "wildfire" },
+    ],
+  },
+  {
+    id: "month",
+    title: "7. First Month: Licenses, Voting and Taxes",
+    items: [
+      { id: "mv-license", text: "Get a driver's license in your new state", note: "Each state sets its own deadline; check the state's motor vehicle agency.", when: interstate, src: "addressChange" },
+      { id: "mv-registration", text: "Register and insure your car in the new state", note: "The new state sets the deadline.", when: (p) => interstate(p) && p.car },
+      { id: "mv-dmv-address", text: "Update the address on your driver's license and vehicle registration under your state's rules", when: (p) => !interstate(p), src: "addressChange" },
+      { id: "mv-vote", text: "Update your voter registration", src: "vote" },
+      { id: "mv-state-tax", text: "Ask a tax preparer whether you'll file part-year returns in both states", when: interstate },
+      { id: "mv-deduct", text: "Keep your moving receipts; a federal deduction for moving expenses is limited to active-duty military moving under orders (and, from 2026, certain intelligence community employees)", src: "irsMoving" },
+      { id: "mv-doctors", text: "Find a new doctor, dentist and pharmacy", when: longMove },
+      { id: "mv-vet", text: "Find a new vet and check the local pet license rules", when: (p) => p.pets && longMove(p) },
+      { id: "mv-deposit", text: "Follow up if your deposit or an itemized list of deductions hasn't arrived by your state's deadline", when: (p) => p.moveFrom === "rent", src: "tenantRights" },
+      { id: "mv-file", text: "File the moving receipts, your lease or closing papers and the mover's paperwork together" },
+    ],
+  },
+];
+
 // ---- Readable conditions (for the server-rendered full list on each page) ------------------------
 // Mirrors each `when` rule above in words. Keep in step when a rule changes.
 export const ONLY: Record<string, string> = {
@@ -1247,7 +1472,69 @@ export const ONLY: Record<string, string> = {
   "a-pet": "Bringing a pet",
   "a-dishes": "Unfurnished",
   "a-shared-kitchen": "Roommates",
-  "a-quarters": "No in-unit laundry"
+  "a-quarters": "No in-unit laundry",
+  "mv-quotes": "Hiring movers",
+  "mv-register": "Movers, to another state",
+  "mv-state-mover": "Movers, same state",
+  "mv-truck": "Rental truck",
+  "mv-truck-ins": "Rental truck",
+  "mv-container": "Portable container",
+  "mv-summer": "Summer move",
+  "mv-notice": "Renting now",
+  "mv-sell": "Selling the home you're leaving",
+  "mv-keep": "Keeping the home you're leaving",
+  "mv-buy": "Buying the new home",
+  "mv-lease": "Renting the new home",
+  "mv-school": "Moving with kids",
+  "mv-school-records": "Moving with kids",
+  "mv-vet-records": "Moving with a pet",
+  "mv-pet-state": "Moving with a pet, to another state",
+  "mv-booklet": "Movers, to another state",
+  "mv-valuation": "Movers, to another state",
+  "mv-coverage": "Movers, same state",
+  "mv-car-plan": "Bringing a car, long-distance",
+  "mv-utils-off": "Leaving your own home or rental",
+  "mv-utils-on": "Moving into your own home or rental",
+  "mv-internet": "Moving into your own home or rental",
+  "mv-renters-ins": "Renting the new home",
+  "mv-home-ins": "Buying the new home",
+  "mv-old-ins": "Selling the home you're leaving",
+  "mv-permit": "Rental truck or container",
+  "mv-kid-care": "Moving with kids",
+  "mv-pet-care": "Moving with a pet",
+  "mv-pay": "Hiring movers",
+  "mv-clean": "Renting now",
+  "mv-kid-bag": "Moving with kids",
+  "mv-pet-bag": "Moving with a pet",
+  "mv-heat": "Summer move",
+  "mv-freeze": "Winter move, freezing winters",
+  "mv-hurricane": "Hurricane-prone coast, spring to fall move",
+  "mv-wildfire": "Wildfire area, spring to fall move",
+  "mv-paperwork": "Hiring movers",
+  "mv-driver": "Movers, long-distance",
+  "mv-load": "Rental truck or container",
+  "mv-snow": "Winter move, freezing winters",
+  "mv-moveout": "Renting now",
+  "mv-final-walk": "Buying the new home",
+  "mv-movein": "Renting the new home",
+  "mv-keys": "Leaving your own home or rental",
+  "mv-locks": "Buying the new home",
+  "mv-claim-interstate": "Movers, to another state",
+  "mv-claim": "Movers, same state",
+  "mv-truck-return": "Rental truck",
+  "mv-container-pickup": "Portable container",
+  "mv-enroll": "Moving with kids",
+  "mv-chip": "Moving with a pet",
+  "mv-quake": "Earthquake area",
+  "mv-evac": "Hurricane-prone coast",
+  "mv-alerts": "Wildfire area",
+  "mv-license": "To another state",
+  "mv-registration": "To another state, bringing a car",
+  "mv-dmv-address": "Same state",
+  "mv-state-tax": "To another state",
+  "mv-doctors": "Long-distance",
+  "mv-vet": "Moving with a pet, long-distance",
+  "mv-deposit": "Renting now"
   };
 export const SECTION_ONLY: Record<string, string> = {"loan": "Buying with a mortgage", "structure": "Not a condo", "exterior": "Not a condo", "attic": "Not a condo", "condo": "Condo", "repairs": "Seller agreed to repairs", "new": "New Construction", "bedroom": "Unfurnished", "living": "Unfurnished", "pet": "Bringing a pet"};
 
@@ -1259,6 +1546,7 @@ export const SECTIONS: Partial<Record<ChecklistId, Section[]>> = {
   landlord: LANDLORD,
   "home-inspection": HOME_INSPECTION,
   "final-walkthrough": FINAL_WALKTHROUGH,
+  moving: MOVING,
 };
 
 /** Apply the rules: returns only sections/items whose conditions match. */

@@ -1,0 +1,17 @@
+{
+ "origin_routine": "mindmap-pass",
+ "query_family": "moving checklist",
+ "hypothesis": "A customizable, printable moving checklist with the full item list in HTML earns clicks on a SERP held by mover blogs and static PDFs.",
+ "primary_metric": "incremental Google clicks (GSC)",
+ "baseline": "not-yet-published",
+ "canonical_url": "https://www.themodernwallet.com/checklists/moving-checklist/",
+ "comparator_plan": "age-matched cohort of the 2026-10 checklist tool pages",
+ "change_scope": "new route",
+ "source_refresh_trigger": "change to any cited federal rule or agency guidance",
+ "windows": {
+  "day28": "first 28 complete live days after verified deploy",
+  "day56": "second 28 complete live days"
+ },
+ "outcome_status": "not-yet-published",
+ "deployed": null
+}

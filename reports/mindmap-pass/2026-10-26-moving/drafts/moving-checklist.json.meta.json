@@ -1,0 +1,535 @@
+{
+ "slug": "moving-checklist",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2118,
+ "floor": 900,
+ "input_tokens": 24672,
+ "output_tokens": 2674,
+ "thinking_tokens": 319,
+ "cached_tokens": 18499,
+ "est_cost_usd": 0.0172,
+ "guards": {
+  "repairs": [
+   "slug None -> 'moving-checklist'"
+  ],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1769,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 2630,
+   "floor": 900,
+   "ratio": 2.92,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    2
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "Eight weeks out, you set a comprehensive budget covering transport, packing supplies, travel, and any overlapping housing costs, while securing your moving date.",
+     "replacement": "Eight weeks out, you set a moving budget covering transport, packing supplies, travel, and any overlapping housing costs, while securing your moving date.",
+     "type": "unsupported",
+     "why": "SOURCE states moving budget, not comprehensive budget."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "You must also select a liability coverage option in writing on the bill of lading: Full Value Protection places responsibility for replacement value on the carrier, whereas Released Value costs nothing extra but caps recovery at no more than 60 cents per pound per article.",
+     "replacement": "You must also choose your mover's liability option in writing: Full Value Protection places responsibility for replacement value on the carrier, whereas Released Value costs nothing extra but caps recovery at no more than 60 cents per pound per article (requiring a signed statement on the bill of lading).",
+     "type": "contradicted",
+     "why": "Full Value Protection applies automatically; signing the bill of lading is only for Released Value."
+    },
+    {
+     "id": "workedExample",
+     "quote": "and dual-state tax requirements.",
+     "replacement": "and part-year tax questions.",
+     "type": "unsupported",
+     "why": "SOURCE states part-year tax question, not dual-state tax requirements."
+    },
+    {
+     "id": "commonMistakes[2]",
+     "quote": "Failing to select Full Value Protection or Released Value liability coverage in writing on the bill of lading before transport.",
+     "replacement": "Failing to choose your mover's liability option in writing before transport.",
+     "type": "contradicted",
+     "why": "Full Value Protection applies unless Released Value is signed on the bill of lading."
+    },
+    {
+     "id": "commonMistakes[3]",
+     "quote": "Packing flammable, corrosive, or hazardous materials inside moving boxes, which can void carrier liability.",
+     "replacement": "Packing hazardous materials without telling the mover, which can limit the mover's liability.",
+     "type": "contradicted",
+     "why": "SOURCE states packing hazardous materials without telling the mover can limit liability, not void."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Starting your preparations earlier can provide greater flexibility when selecting moving dates and securing reputable movers.",
+     "replacement": "Starting your preparations earlier can provide greater flexibility when selecting moving dates and movers.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe movers as reputable; evaluative word not in SOURCE."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Spreading administrative paperwork, sorting, and packing across two months prevents missed deadlines.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that spreading tasks across two months prevents missed deadlines."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Selecting Released Value requires signing an explicit waiver on the bill of lading.",
+     "replacement": "Selecting Released Value requires signing a statement on the bill of lading to choose it.",
+     "type": "unsupported",
+     "why": "SOURCE specifies signing a statement on the bill of lading, not an explicit waiver."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Planning a relocation works best when you divide tasks into seven distinct stages across eight weeks.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that planning works best this way."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "If you are coordinating an interstate relocation with professional movers, verify the mover's FMCSA registration history and confirm your liability coverage selection in writing before signing contracts or paying funds.",
+     "replacement": "If you are coordinating an interstate relocation with professional movers, verify the mover's FMCSA registration history and confirm your liability coverage selection in writing before anything else.",
+     "type": "unsupported",
+     "why": "SOURCE specifies doing this before anything else, not before signing contracts or paying funds."
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1806
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 2,
+    "at": "2026-10-26T09:56:59-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-26-moving/audit/moving-checklist.findings.txt",
+    "applied": [
+     {
+      "id": "title",
+      "quote": "Moving Checklist: Printable Timeline and Planner",
+      "replacement": "Moving Checklist: Printable Timeline Built Around Your Move",
+      "type": "H1 title under 50 characters",
+      "why": "Title is under 50 characters; expand to meet title guidance"
+     },
+     {
+      "id": "h1",
+      "quote": "Moving Checklist: Your Timeline from Planning to Moving Day",
+      "replacement": "Moving Checklist: Your Timeline from Eight Weeks Out to the First Month",
+      "type": "H2 h1 understates timeline",
+      "why": "Timeline extends into the first month after moving"
+     },
+     {
+      "id": "metaDescription",
+      "quote": "Create a customized, printable moving checklist with our interactive tool. Plan your timeline, track utility changes, and print or save as a PDF.",
+      "replacement": "Build a printable moving checklist matched to your move, from eight weeks out to your first month, then print it or save it as a Portable Document Format (PDF) file.",
+      "type": "H3 metaDescription tracks utilities / PDF unexpanded",
+      "why": "Tool does not track; expand PDF acronym"
+     },
+     {
+      "id": "introText",
+      "quote": "A move runs on a structured countdown: about eight weeks out you set the budget and book movers or a truck, four to six weeks out you sort belongings and gather records, two weeks out you change your address and schedule utilities, the last week you pack and confirm, then tackle moving day, a first week of setup, and a first month of licenses, voter registration, and tax paperwork.",
+      "replacement": "A move runs on a seven-stage countdown that starts about eight weeks out. Eight weeks out you set the budget and book movers or a truck. Four to six weeks out you sort belongings and gather records. Two weeks out you change your address and schedule utilities. The last week you pack and confirm, then come moving day, a first week of setup and a first month of license, voter and tax paperwork.",
+      "type": "A1 introText 69-word overloaded opener",
+      "why": "Split overloaded sentence and remove filler word structured"
+     },
+     {
+      "id": "introText",
+      "quote": "Our interactive tool lets you generate a customized timeline for your specific transition.",
+      "replacement": "The tool on this page builds that list from your answers.",
+      "type": "A2 introText vague phrasing",
+      "why": "Replace vague phrasing with concrete explanation of tool inputs"
+     },
+     {
+      "id": "introText",
+      "quote": "Selecting your destination state and local hazards like freezing winters, hurricanes, wildfires, or earthquakes tailors environmental safety tasks to your exact route.",
+      "replacement": "Pick the state you're moving to, and the four Local conditions options (Winters reach freezing, Hurricane-prone coast, Wildfire area, Earthquake area) are pre-set for that state. The presets are a starting point, not a statement about every town, so turn on any condition that applies at either home.",
+      "type": "A3 introText preset caveat missing",
+      "why": "Clarify that state presets are starting points for both homes"
+     },
+     {
+      "id": "introText",
+      "quote": "to create a clean, formatted paper planner complete with name, date, and property address lines.",
+      "replacement": "to print only the checklist, with Name, Date and Property address lines.",
+      "type": "A4 introText print button description",
+      "why": "Align print button description with source specifications"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Two weeks out, you notify key agencies, transfer utility services, and line up insurance policies.",
+      "replacement": "Two weeks out, you change your address with USPS and the IRS, schedule utilities to stop and start, and line up insurance.",
+      "type": "A5 howItWorks p1 address and utility details",
+      "why": "Specify USPS, IRS, and utility shutoff/start tasks"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Moving day focuses on safety walkthroughs and meter readings.",
+      "replacement": "On moving day you photograph the meter readings and walk through every room before you leave.",
+      "type": "A6 howItWorks p1 moving day tasks inferred",
+      "why": "Specify photographing meter readings and walking through rooms"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Your first week covers alarm testing and basic home setup, while your first month handles state registrations, voting records, and tax filings.",
+      "replacement": "In the first week you test the smoke and carbon monoxide alarms and find the water shutoff and breaker panel. The first month covers your driver's license, voter registration and moving-expense tax questions.",
+      "type": "A6 howItWorks p1 first week and month tasks inferred",
+      "why": "Detail alarm testing, shutoff finding, driver's license, voting, and taxes"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Renters leaving a property must give formal written notice under their lease terms, conduct a walkthrough, provide a forwarding address, and track statutory deposit return deadlines using resources like the [Department of Housing and Urban Development (HUD)](https://www.hud.gov/topics/rental_assistance/tenantrights) tenant rights directory.",
+      "replacement": "If you rent now, the checklist adds written notice by the date your lease requires, a move-out walkthrough with your landlord and your forwarding address in writing. Your state (and sometimes your city) sets the deadline for returning the deposit; the [Department of Housing and Urban Development (HUD)](https://www.hud.gov/topics/rental_assistance/tenantrights) keeps a page of tenant rights by state.",
+      "type": "A7 howItWorks p2 tenant notice and deposit return",
+      "why": "Align lease notice and deposit return rules with source facts"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Those leaving or acquiring rentals can reference our [move-in / move-out checklist](/checklists/move-in-move-out-checklist/) and [renting checklist](/checklists/renting-checklist/), while first-time renters can review our [first apartment checklist](/checklists/first-apartment-checklist/).",
+      "replacement": "If you're leaving a rental or moving into one, the checklist links to our [move-in / move-out checklist](/checklists/move-in-move-out-checklist/) for the condition record and our [renting checklist](/checklists/renting-checklist/) for the new lease; first-time renters can also use the [first apartment checklist](/checklists/first-apartment-checklist/).",
+      "type": "A8 howItWorks p2 rental internal links",
+      "why": "Clarify condition record and lease links per source checklist logic"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Sellers and buyers must coordinate transaction closings, vacant home insurance rules, and final property checks through our [home buying checklist](/checklists/home-buying-checklist/) and related guides.",
+      "replacement": "If you're selling, the checklist lines up the sale with your moving date, keeps homeowners insurance on the old home until the sale closes and links to the [home selling checklist](/checklists/home-selling-checklist/). If you're buying, it lines up your closing with your move-out date and links to the [home buying checklist](/checklists/home-buying-checklist/) and the [final walkthrough checklist](/checklists/final-walkthrough-checklist/). If you own the home you're leaving and are keeping it, it asks whether the home will be rented out or sit empty, tells you to inform your insurer, and links to the [landlord checklist](/checklists/landlord-checklist/).",
+      "type": "A9 howItWorks p2 missing buying/selling/landlord handoffs",
+      "why": "Add explicit handoffs to selling, buying, and landlord checklists"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Your moving method introduces distinct requirements: hiring professional movers demands written estimates and credential checks, driving a rental truck requires checking insurance policies and reserving equipment, and using portable containers requires verifying street parking permits.",
+      "replacement": "Hiring movers adds written estimates from at least three movers and a check of each company's license or registration. A rental truck adds reserving the truck, a dolly, pads and straps, and asking your auto insurer and card issuer whether they cover it. A portable container adds deciding where it sits at each home, and a truck or container may need a street parking permit.",
+      "type": "A10 howItWorks p2 moving methods distinct requirements",
+      "why": "Detail estimates count, pads/straps, insurance coverage checks, and container permits"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "When your belongings cross a state line, federal rules enforced by the Federal Motor Carrier Safety Administration (FMCSA) take effect.",
+      "replacement": "When your belongings cross a state line, federal rules from the [Federal Motor Carrier Safety Administration (FMCSA)](https://www.fmcsa.dot.gov/protect-your-move) apply.",
+      "type": "A11 howItWorks p3 FMCSA rule source link",
+      "why": "Link FMCSA protect-your-move page directly"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Before hiring an interstate mover, verify their registration and complaint record on the [FMCSA search tool](https://www.fmcsa.dot.gov/protect-your-move), and confirm whether the business is an actual carrier or a broker that books jobs with third parties.",
+      "replacement": "Before you hire an interstate mover, look the company up by name, USDOT number or MC number to see its registration and complaint history, and ask whether it is the mover or a broker; [FMCSA's moving FAQ](https://www.fmcsa.dot.gov/protect-your-move/faq) explains that a broker books your move with a moving company and has no trucks.",
+      "type": "A11 howItWorks p3 FMCSA registration check and broker distinction",
+      "why": "Detail USDOT/MC search and broker distinction via FMCSA FAQ link"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "You must also choose your mover's liability option in writing:",
+      "replacement": "Choose your mover's [liability option](https://www.fmcsa.dot.gov/consumer-protection/protect-your-move/are-you-moving/liability-protection) in writing:",
+      "type": "A12 howItWorks p3 liability option link",
+      "why": "Add link to FMCSA liability protection page"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Moves staying within a single state follow state regulatory agencies instead.",
+      "replacement": "Moves inside one state follow that state's rules instead.",
+      "type": "A13 howItWorks p3 in-state move rules",
+      "why": "Align phrasing with source text"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Moving to another state also requires getting a new driver's license and vehicle registration within statutory deadlines set by the destination state, alongside resolving part-year state income tax filing requirements.",
+      "replacement": "A move to another state also adds a new driver's license and car registration, by deadlines the new state sets, and a question for a tax preparer about whether you'll file part-year returns in both states.",
+      "type": "A14 howItWorks p3 interstate deadlines and tax questions",
+      "why": "State that new state sets deadlines and specify tax preparer question"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Updating your address and securing essential records requires direct contact with official institutions. ",
+      "replacement": "",
+      "type": "A15 howItWorks p4 introductory filler sentence",
+      "why": "Delete unsupported introductory sentence"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "The [USA.gov change of address directory](https://www.usa.gov/change-address) warns that third-party look-alike sites charge high fees for services that federal agencies provide directly.",
+      "replacement": "[USA.gov's change-of-address page](https://www.usa.gov/change-address) warns that look-alike sites charge far more than the official USPS service.",
+      "type": "A16 howItWorks p4 USA.gov look-alike site warning",
+      "why": "Specify that look-alike sites charge far more than official USPS service"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "File an address change with the Internal Revenue Service (IRS) using [IRS Form 8822](https://www.irs.gov/forms-pubs/about-form-8822), and notify Social Security, Veterans Affairs (VA), financial institutions, and employer payroll departments.",
+      "replacement": "File an address change with the Internal Revenue Service (IRS) using [IRS Form 8822](https://www.irs.gov/forms-pubs/about-form-8822). If you receive Social Security or VA benefits, update your address with that agency too, along with your bank, credit cards, employer payroll and insurers.",
+      "type": "A17 howItWorks p4 address notification conditions",
+      "why": "Add condition for receiving benefits and list insurers"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Household members and environmental conditions introduce critical specialized tasks to your schedule.",
+      "replacement": "Kids, pets, the season and your local conditions each add their own items.",
+      "type": "A18 howItWorks p5 specialized tasks intro",
+      "why": "Replace vague intro with kids, pets, season, and local conditions"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Relocating with children requires requesting school transcripts early and arranging childcare on moving day.",
+      "replacement": "With kids, the checklist adds asking the new school district how to enroll, requesting school records, arranging childcare for moving day and finishing enrollment in the first week.",
+      "type": "A19 howItWorks p5 moving with kids details",
+      "why": "Add enrollment inquiries, school records, moving-day childcare, and week-one enrollment"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Moving with pets requires obtaining veterinary health certificates, refilling medications, updating microchip databases, and keeping travel supplies accessible.",
+      "replacement": "With a pet, it adds vet records and refills, a travel bag with food and medication and a microchip update; on a move to another state, it adds asking your vet what the new state requires, such as a health certificate or rabies record.",
+      "type": "A20 howItWorks p5 pet travel requirements contradicted",
+      "why": "Health certificates only apply on moves to another state"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Seasonal weather demands operational adjustments: summer moves require early equipment reservations and vehicle transport for heat-sensitive electronics and medications, while freezing winter moves require clearing icy pathways and protecting freeze-prone liquids from unheated cargo holds.",
+      "replacement": "A summer move adds booking movers or the truck as soon as your date is set and carrying heat-sensitive items such as medications and electronics in your car. A winter move with Winters reach freezing turned on adds clearing snow and ice at both homes and keeping liquids, paint and houseplants out of an unheated truck or container.",
+      "type": "A21 howItWorks p5 seasonal weather tasks",
+      "why": "Align seasonal adjustments and freezing winter option with source"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "When moving through hazard-prone regions, consult federal safety resources: prepare hurricane evacuation routes using [Ready.gov hurricanes](https://www.ready.gov/hurricanes), follow smoke advisories through [Ready.gov wildfires](https://www.ready.gov/wildfires), and secure heavy furniture or water heaters to wall studs per [Ready.gov earthquakes](https://www.ready.gov/earthquakes).",
+      "replacement": "Hurricane-prone coast adds a backup date and evacuation routes for a spring-to-fall move and your evacuation zone at the new address ([Ready.gov: Hurricanes](https://www.ready.gov/hurricanes)). Wildfire area adds watching fire and smoke conditions before the move and signing up for local emergency alerts ([Ready.gov: Wildfires](https://www.ready.gov/wildfires)). Earthquake area adds strapping tall furniture and the water heater to the wall ([Ready.gov: Earthquakes](https://www.ready.gov/earthquakes)).",
+      "type": "A22 howItWorks p5 hazard conditions unsupported claims",
+      "why": "Remove unsupported wall studs claim and detail hazard checklist items"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "When you arrive at your new residence, test life safety systems immediately; the [National Fire Protection Association (NFPA)](https://www.nfpa.org/education-and-research/home-fire-safety/smoke-alarms) advises installing smoke alarms inside every bedroom, outside each sleeping area, and on every level of the home, testing them monthly.",
+      "replacement": "In the first week, test the smoke and carbon monoxide alarms. The [National Fire Protection Association (NFPA)](https://www.nfpa.org/education-and-research/home-fire-safety/smoke-alarms) recommends smoke alarms inside every bedroom, outside each sleeping area and on every level, tested monthly.",
+      "type": "A23 howItWorks p5 smoke alarm recommendations",
+      "why": "Specify first week alarm testing and NFPA placement recommendations"
+     },
+     {
+      "id": "howItWorks",
+      "quote": "If you are coordinating an interstate relocation with professional movers, verify the mover's FMCSA registration history and confirm your liability coverage selection in writing before anything else.",
+      "replacement": "If you're hiring movers for a move to another state, check the company's [FMCSA registration](https://www.fmcsa.dot.gov/protect-your-move/faq) and choose your liability option in writing before anything else.",
+      "type": "A24 howItWorks takeaway interstate mover check",
+      "why": "Link FMCSA registration FAQ and align wording with source"
+     },
+     {
+      "id": "workedExample",
+      "quote": "to evaluate how the question logic customizes the active worksheet",
+      "replacement": "to count how many items each one keeps",
+      "type": "W1 workedExample question logic rationale",
+      "why": "State that comparison counted how many items each move keeps"
+     },
+     {
+      "id": "workedExample",
+      "quote": "62 conditional items activate only when specific circumstances warrant them",
+      "replacement": "62 appear only when one of your answers switches them on",
+      "type": "W1 workedExample conditional items phrasing",
+      "why": "State that 62 appear when answers switch them on"
+     },
+     {
+      "id": "workedExample",
+      "quote": "Our rules produced 46 active items for Scenario A, which modeled a tenant moving between rental apartments across town in Chicago, Illinois during the summer without children or pets.",
+      "replacement": "Scenario A is a renter moving across town in Chicago, Illinois to another rental, hiring movers, in summer, with no kids or pets: 46 of 88 items.",
+      "type": "W2 workedExample Scenario A profile",
+      "why": "State profile with hiring movers and 46 of 88 items"
+     },
+     {
+      "id": "workedExample",
+      "quote": "That scenario added lease termination notices, property walkthrough notes, forwarding address documentation, security deposit tracking, renters insurance setup, and summer heat precautions, while omitting all interstate mover verifications, vehicle re-registration tasks, rental truck driving steps, and school or pet records.",
+      "replacement": "It adds the lease notice, the move-out walkthrough and forwarding address, the deposit follow-up, renters insurance, recording the new rental's condition and checking the state's rules for in-state movers. It also adds the summer items and drops every interstate-mover, license-transfer, truck, kids and pet item.",
+      "type": "W2 workedExample Scenario A items",
+      "why": "Align added and dropped items with source"
+     },
+     {
+      "id": "workedExample",
+      "quote": "Scenario B modeled a homeowner selling a house in Ohio and purchasing a property in Arizona during winter, hiring interstate movers, and traveling with children and a dog.",
+      "replacement": "Scenario B is a homeowner selling in Ohio and buying in Arizona, hiring interstate movers, in winter, with kids and a dog: 63 of 88 items.",
+      "type": "W2 workedExample Scenario B profile",
+      "why": "State profile with 63 of 88 items"
+     },
+     {
+      "id": "workedExample",
+      "quote": "That profile activated 63 items, including FMCSA registration lookups, federal disclosure booklets, mover liability elections, the nine-month formal claim window, transaction closing coordination, winter freeze precautions, school transfers, pet veterinary documentation, new-state driver licensing, and part-year tax questions.",
+      "replacement": "It adds the FMCSA registration lookup, the federal booklet, the liability choice, the nine-month claim window, the home sale and purchase hand-offs, the new-state driver's license, car registration and part-year tax question, school and pet items, and the winter freezing items. It drops the rental items and the summer items.",
+      "type": "W2 workedExample Scenario B items",
+      "why": "Detail added items and state dropped items per source"
+     },
+     {
+      "id": "commonMistakes[1]",
+      "quote": "Using commercial look-alike websites that charge high fees for simple USPS address forwarding updates.",
+      "replacement": "Filing your change of address on a look-alike site, which USA.gov warns charges far more than the official USPS service.",
+      "type": "M1 commonMistakes[1] look-alike sites",
+      "why": "Incorporate USA.gov warning about look-alike sites"
+     },
+     {
+      "id": "commonMistakes[4]",
+      "quote": "Assuming federal moving expense deductions apply broadly, when IRS Topic 455 limits them primarily to active-duty military orders.",
+      "replacement": "Assuming moving expenses are deductible, when IRS Topic 455 limits the federal deduction to active-duty military moving under orders and, from 2026, certain intelligence community employees.",
+      "type": "M2 commonMistakes[4] tax deduction contradiction",
+      "why": "Include military orders and 2026 intelligence community exception per IRS Topic 455"
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "Search the company by name, USDOT number, or MC number using the online FMCSA database to verify registration and complaint histories.",
+      "replacement": "Look the company up by name, USDOT number or MC number on [FMCSA's Protect Your Move site](https://www.fmcsa.dot.gov/protect-your-move/faq) to see its registration and complaint history.",
+      "type": "F2 FAQ 4 FMCSA lookup link",
+      "why": "Link FMCSA Protect Your Move site"
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "Watch for red flags like phone-only estimates, cash-only demands, blank forms, or missing physical addresses.",
+      "replacement": "[FMCSA's red flags](https://www.fmcsa.dot.gov/protect-your-move/red-flags) include an estimate given by phone or online without seeing your belongings, a demand for cash or a large deposit before the move, a request to sign blank documents, and a website with no local address or registration information.",
+      "type": "F2 FAQ 4 FMCSA red flags",
+      "why": "Link FMCSA red flags page and detail red flag descriptions"
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "Full Value Protection holds the mover liable for the replacement value of lost or damaged goods and applies automatically unless you decline it in writing.",
+      "replacement": "Full Value Protection makes the mover responsible for the replacement value of lost or damaged goods, and it applies unless you sign a statement on the bill of lading choosing Released Value.",
+      "type": "F3 FAQ 5 Full Value Protection explanation",
+      "why": "State that Full Value Protection applies unless signing for Released Value"
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": " Selecting Released Value requires signing a statement on the bill of lading to choose it.",
+      "replacement": "",
+      "type": "F3 FAQ 5 restatement",
+      "why": "Delete redundant final sentence already integrated into first sentence"
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "Obtain a driver's license and register your vehicle within the statutory deadlines established by your new home state.",
+      "replacement": "Get a driver's license and register your car in the new state by the deadlines that state sets; its motor vehicle agency publishes them.",
+      "type": "F4 FAQ 6 interstate deadlines",
+      "why": "State deadlines are set and published by the state motor vehicle agency"
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "commonMistakes[0]",
+      "quote": "Hiring an interstate mover without verifying their USDOT or MC registration number on the official FMCSA database.",
+      "finding": "M3 commonMistakes[0] unexpanded acronyms",
+      "why": "Expand USDOT and MC acronyms",
+      "replacement": "Hiring an interstate mover without looking up its U.S. Department of Transportation (USDOT) or Motor Carrier (MC) number with FMCSA.",
+      "reason": "replacement adds ['U.S', 'Transportation', 'Carrier'] not in SOURCE"
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "If applicable, inform the Social Security Administration, Veterans Affairs, and USCIS.",
+      "finding": "F1 FAQ 3 government notification links",
+      "why": "Spell out USCIS and cite USA.gov change-of-address page",
+      "replacement": "If you receive benefits or have an immigration case, also update the Social Security Administration, Veterans Affairs or U.S. Citizenship and Immigration Services (USCIS), all listed on [USA.gov's change-of-address page](https://www.usa.gov/change-address).",
+      "reason": "replacement adds ['U.S'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      2
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "faqs[3].answer",
+       "quote": "Ask whether the business operates as an actual carrier with its own fleet or acts as a broker arranging service.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[5].answer",
+       "quote": "Update your voter registration through your local election office or Vote.gov.",
+       "type": "contradicted",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2102,
+    "flags": [
+     "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Ask whether the business operates as an actual carrier with its own fleet or act'; 'Update your voter registration through your local election office or Vote.gov.'"
+    ]
+   },
+   {
+    "round": 4,
+    "at": "2026-10-26T09:59:06-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-26-moving/audit/moving-checklist.findings2.txt",
+    "applied": [
+     {
+      "id": "commonMistakes[0]",
+      "quote": "Hiring an interstate mover without verifying their USDOT or MC registration number on the official FMCSA database.",
+      "replacement": "Hiring an interstate mover without looking up its U.S. Department of Transportation (USDOT) or Motor Carrier (MC) number with FMCSA.",
+      "type": "M3 acronyms unexpanded",
+      "why": "Expand USDOT and MC acronyms per fact list guidance."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "If applicable, inform the Social Security Administration, Veterans Affairs, and USCIS.",
+      "replacement": "If you receive benefits or have an immigration case, also update the Social Security Administration, Veterans Affairs or U.S. Citizenship and Immigration Services (USCIS), all listed on [USA.gov's change-of-address page](https://www.usa.gov/change-address).",
+      "type": "F1 expand USCIS and link USA.gov",
+      "why": "Expand USCIS, add benefits/immigration context, and link to USA.gov source."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "Ask whether the business operates as an actual carrier with its own fleet or acts as a broker arranging service.",
+      "replacement": "Ask whether the company is the mover or a broker; a broker books your move with a moving company and has no trucks.",
+      "type": "C1 unsupported fleet claim",
+      "why": "Replace unsupported fleet phrasing with exact source wording on movers and brokers."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "Update your voter registration through your local election office or Vote.gov.",
+      "replacement": "Update your voter registration with your state election office through [Vote.gov](https://vote.gov/).",
+      "type": "C2 state election office inaccuracy",
+      "why": "Source specifies updating voter registration with the state election office through Vote.gov."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "You should also consult a qualified tax professional to determine whether you must file part-year state tax returns in both jurisdictions.",
+      "replacement": "Ask a tax preparer whether you'll file part-year returns in both states.",
+      "type": "C3 inflated wording",
+      "why": "Simplify phrasing to match supported fact list wording."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 2118,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 199.1,
+ "response_id": "CmDfaqLTJrKtytMPgdHkyAc",
+ "generated_at": "2026-10-26T09:16:46-0500"
+}
