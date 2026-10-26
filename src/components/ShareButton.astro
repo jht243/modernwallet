@@ -1,0 +1,72 @@
+---
+// Share button for tool pages (2026-10-26). Sits in the tool card's top-right corner but outside the
+// [data-tool] root, so a share click is not counted as a tool use by the fleet usage tracker.
+// Phones and most browsers open the native share sheet (navigator.share); elsewhere it copies the link.
+interface Props { title: string }
+const { title } = Astro.props;
+---
+<button type="button" class="share-btn" data-share-title={title} aria-label="Share this tool">
+  <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M5 12v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+  <span class="share-label">Share</span>
+</button>
+<span class="share-status" role="status" aria-live="polite"></span>
+
+<script is:inline>
+  (function () {
+    if (window.__mwShareInit) return;
+    window.__mwShareInit = true;
+    function flash(btn, text) {
+      var label = btn.querySelector(".share-label");
+      if (!label) return;
+      var old = label.getAttribute("data-default") || label.textContent;
+      label.setAttribute("data-default", old);
+      label.textContent = text;
+      var status = btn.nextElementSibling && btn.nextElementSibling.classList.contains("share-status") ? btn.nextElementSibling : null;
+      if (status) status.textContent = text;
+      btn.classList.add("share-done");
+      clearTimeout(btn.__t);
+      btn.__t = setTimeout(function () { label.textContent = old; btn.classList.remove("share-done"); if (status) status.textContent = ""; }, 2000);
+    }
+    function copy(url, btn) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () { flash(btn, "Link copied"); }, function () { window.prompt("Copy this link:", url); });
+      } else {
+        window.prompt("Copy this link:", url);
+      }
+    }
+    document.addEventListener("click", function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest(".share-btn") : null;
+      if (!btn) return;
+      var canonical = document.querySelector('link[rel="canonical"]');
+      var url = (canonical && canonical.href) || location.origin + location.pathname;
+      var title = btn.getAttribute("data-share-title") || document.title;
+      if (navigator.share) {
+        navigator.share({ title: title, text: title, url: url }).catch(function (err) {
+          if (err && err.name !== "AbortError") copy(url, btn);
+        });
+      } else {
+        copy(url, btn);
+      }
+    });
+  })();
+</script>
+
+<style>
+  .share-btn {
+    position: absolute; top: 18px; right: 18px; z-index: 2;
+    display: inline-flex; align-items: center; gap: 6px;
+    height: 32px; padding: 0 12px; border-radius: 999px;
+    border: 1px solid #BFE6D7; background: #fff; color: var(--primary-dark, #0B5E4E);
+    font: inherit; font-size: 0.85rem; font-weight: 600; cursor: pointer;
+  }
+  .share-btn:hover { background: #F2FAF7; border-color: var(--primary, #0E7C66); }
+  .share-btn:focus-visible { outline: 2px solid var(--primary, #0E7C66); outline-offset: 2px; }
+  .share-btn.share-done { background: #E4F4EF; }
+  .share-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  /* Phones: the "Interactive" badge fills the card's top row, so the button sits just above the card. */
+  @media (max-width: 640px) {
+    :global(.tool-wrap) { display: flex; flex-direction: column; }
+    .share-btn { position: static; align-self: flex-end; margin: 0 0 2px; }
+  }
+  @media print { .share-btn { display: none; } }
+</style>

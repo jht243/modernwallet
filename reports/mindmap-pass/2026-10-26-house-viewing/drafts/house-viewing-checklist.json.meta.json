@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 1666,
+ "words": 1742,
  "floor": 900,
  "input_tokens": 21231,
  "output_tokens": 2292,
@@ -23,7 +23,7 @@
    "slug None -> 'house-viewing-checklist'"
   ],
   "flags": [
-   "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Each house gets a summary card that counts your Good, Unsure and Problem marks, '; \"Each house's summary card counts your Good, Unsure and Problem marks, shows how \""
+   "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Then check the house yourself to see whether its condition matches what the agen'; 'The printed layout includes columns for three homes, complete with address lines'"
   ],
   "tested": {
    "mode": "no"
@@ -337,6 +337,103 @@
     "words": 1666,
     "flags": [
      "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Each house gets a summary card that counts your Good, Unsure and Problem marks, '; \"Each house's summary card counts your Good, Unsure and Problem marks, shows how \""
+    ]
+   },
+   {
+    "round": 2,
+    "at": "2026-10-26T12:58:08-0500",
+    "findings_file": "reports/mindmap-pass/2026-10-26-house-viewing/audit/single-house.findings.txt",
+    "applied": [
+     {
+      "id": "metaDescription",
+      "quote": "A printable house viewing checklist with the questions to ask the agent and the things to check in person, plus marks to compare up to three houses.",
+      "replacement": "A printable house viewing checklist with the questions to ask the agent and the things to check in person, plus a one-page sheet to compare showings.",
+      "type": "Tool holds one house on screen",
+      "why": "The screen holds one house at a time, not up to three."
+     },
+     {
+      "id": "introText",
+      "quote": "You can mark answers and problems for up to three houses, then tap Print or save as PDF to take the sheet with you.",
+      "replacement": "Mark answers and problems as you walk through, then tap Print or save as PDF; the printed sheet has three house columns for the next showings.",
+      "type": "Tool holds one house on screen",
+      "why": "The screen only holds one house; the printed sheet provides the three columns."
+     },
+     {
+      "id": "toolSubheading",
+      "quote": "Mark each item Good, Unsure or Problem for up to three houses.",
+      "replacement": "Mark each item Good, Unsure or Problem as you walk through the house.",
+      "type": "Tool holds one house on screen",
+      "why": "The on-screen tool only marks one house at a time."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Each house gets a summary card that counts your Good, Unsure and Problem marks, shows how many items you have not marked yet, and lists the first three Problem items.",
+      "replacement": "A summary card counts your Good, Unsure and Problem marks, shows how many items you have not marked yet, and lists the first three Problem items.",
+      "type": "Tool holds one house on screen",
+      "why": "There is only one summary card for the single house on screen."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "The checklist adds up your own marks and gives no score, so you compare the houses on the Problem items themselves.",
+      "replacement": "The checklist adds up your own marks and gives no score. To compare houses, use the printed sheet's three columns or print a sheet for each house, and compare the Problem items.",
+      "type": "Tool holds one house on screen",
+      "why": "Comparing houses is done via the printed sheet or multiple sheets."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "Then compare the Problem items on each summary card to decide which house is worth an offer that is contingent on an inspection.",
+      "replacement": "Then compare the Problem items on each house's sheet to decide which house is worth an offer that is contingent on an inspection.",
+      "type": "Tool holds one house on screen",
+      "why": "Comparison across houses uses the printed sheets, not multiple on-screen cards."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "Mark every house on the same list during your tours. Each house's summary card counts your Good, Unsure and Problem marks, shows how many items you have not marked, and lists the first three Problem items. The checklist gives no score, so compare the houses on those Problem items.",
+      "replacement": "Mark every house on the same list. The printed sheet has three house columns, so you can fill in the next showings by hand, or print a sheet for each house you mark on screen. The summary card counts your Good, Unsure and Problem marks and lists the first three Problem items. The checklist gives no score, so compare the houses on those Problem items.",
+      "type": "Tool holds one house on screen",
+      "why": "The screen does not show multiple summary cards across houses."
+     },
+     {
+      "id": "faqs[8].answer",
+      "quote": "The printed layout includes columns for up to three separate homes",
+      "replacement": "The printed layout includes columns for three homes",
+      "type": "Printed sheet layout wording",
+      "why": "The printed layout contains fixed columns for three homes."
+     },
+     {
+      "id": "faqs[8].answer",
+      "quote": "The Clear button erases every house's marks, answers and notes.",
+      "replacement": "The Clear button erases your marks, answers and notes.",
+      "type": "Tool holds one house on screen",
+      "why": "The Clear button erases the active house's marks, answers, and notes."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      2
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "howItWorks",
+       "quote": "Then check the house yourself to see whether its condition matches what the agent told you.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[8].answer",
+       "quote": "The printed layout includes columns for three homes, complete with address lines, a mark for every item, and dedicated note sections.",
+       "type": "contradicted",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1742,
+    "flags": [
+     "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Then check the house yourself to see whether its condition matches what the agen'; 'The printed layout includes columns for three homes, complete with address lines'"
     ]
    }
   ]

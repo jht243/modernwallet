@@ -18,7 +18,10 @@ interface House { name: string; marks: Record<string, Mark>; answers: Record<str
 interface Saved { profile: Profile; houses: House[] }
 
 const STORE = "mw-viewing-v1";
-const MAX_HOUSES = 3;
+// One house on screen; the printed sheet keeps three house columns so it can be filled in by hand
+// across a weekend of showings.
+const SCREEN_HOUSES = 1;
+const PRINT_COLS = 3;
 const newHouse = (n: number): House => ({ name: `House ${n}`, marks: {}, answers: {}, notes: "" });
 const fresh = (): Saved => ({ profile: { ...DEFAULT_PROFILE, ...PRESETS["house-viewing"] }, houses: [newHouse(1)] });
 
@@ -56,7 +59,7 @@ export default function ViewingChecklist({ heading, subheading }: Props) {
   useEffect(() => {
     const s = load();
     if (s) {
-      setData({ profile: { ...fresh().profile, ...s.profile }, houses: s.houses?.length ? s.houses.slice(0, MAX_HOUSES).map((h, i) => ({ ...newHouse(i + 1), ...h, marks: h.marks ?? {}, answers: h.answers ?? {} })) : [newHouse(1)] });
+      setData({ profile: { ...fresh().profile, ...s.profile }, houses: s.houses?.length ? s.houses.slice(0, SCREEN_HOUSES).map((h, i) => ({ ...newHouse(i + 1), ...h, marks: h.marks ?? {}, answers: h.answers ?? {} })) : [newHouse(1)] });
       if (s.houses?.some((h) => Object.keys(h.marks ?? {}).length)) setAnswersOpen(false);
     }
     setLoaded(true);
@@ -81,14 +84,8 @@ export default function ViewingChecklist({ heading, subheading }: Props) {
       return { ...h, marks };
     }) }));
   const setAnswer = (i: number, id: string, v: string) => setData((d) => ({ ...d, houses: d.houses.map((h, k) => (k === i ? { ...h, answers: { ...h.answers, [id]: v } } : h)) }));
-  const addHouse = () => setData((d) => (d.houses.length >= MAX_HOUSES ? d : { ...d, houses: [...d.houses, newHouse(d.houses.length + 1)] }));
-  const removeHouse = (i: number) => {
-    if (!window.confirm(`Remove ${data.houses[i].name || `House ${i + 1}`} and its marks?`)) return;
-    setData((d) => ({ ...d, houses: d.houses.filter((_, k) => k !== i) }));
-    setActive(0);
-  };
   const reset = () => {
-    if (!window.confirm("Clear every house's marks, answers and notes?")) return;
+    if (!window.confirm("Clear this house's marks, answers and notes?")) return;
     setData((d) => ({ ...d, houses: [newHouse(1)] }));
     setActive(0);
   };
@@ -160,16 +157,10 @@ export default function ViewingChecklist({ heading, subheading }: Props) {
 
       <section className="mwvc-card mwvc-out" aria-label="Viewing checklist">
         <div className="mwvc-bar">
-          <div className="mwvc-houses" role="tablist" aria-label="Houses">
-            {data.houses.map((h, i) => (
-              <div key={i} className={`mwvc-house${active === i ? " mwvc-houseon" : ""}`}>
-                <button type="button" role="tab" aria-selected={active === i} className="mwvc-housetab" onClick={() => setActive(i)}>{i + 1}</button>
-                <input aria-label={`Name for house ${i + 1}`} placeholder="Name or address" value={h.name} onChange={(e) => setHouse(i, { name: e.target.value })} onFocus={() => setActive(i)} />
-                {data.houses.length > 1 && <button type="button" className="mwvc-x" aria-label={`Remove ${h.name || `House ${i + 1}`}`} onClick={() => removeHouse(i)}>×</button>}
-              </div>
-            ))}
-            {data.houses.length < MAX_HOUSES && <button type="button" className="mwvc-add" onClick={addHouse} aria-label="Add a house to compare"><span className="mwvc-long">+ Add a house to compare</span><span className="mwvc-short">+ House</span></button>}
-          </div>
+          <label className="mwvc-house mwvc-houseon">
+            <span className="mwvc-namelabel">House</span>
+            <input aria-label="House name or address" placeholder="Name or address" value={data.houses[0].name} onChange={(e) => setHouse(0, { name: e.target.value })} />
+          </label>
           <div className="mwvc-actions">
             <button type="button" className="mwvc-btn" onClick={() => window.print()} aria-label="Print or save as PDF"><span className="mwvc-long">Print or save as PDF</span><span className="mwvc-short">Print</span></button>
           </div>
@@ -199,21 +190,13 @@ export default function ViewingChecklist({ heading, subheading }: Props) {
         </div>
 
         <p className="mwvc-legend">
-          For each house, mark how the answer or check looks: <span className="mwvc-lg mwvc-lgood">✓ Good</span> <span className="mwvc-lg mwvc-lunsure">? Unsure</span> <span className="mwvc-lg mwvc-lbad">✗ Problem</span>. Tap a mark again to clear it.
+          Mark how each answer or check looks: <span className="mwvc-lg mwvc-lgood">✓ Good</span> <span className="mwvc-lg mwvc-lunsure">? Unsure</span> <span className="mwvc-lg mwvc-lbad">✗ Problem</span>. Tap a mark again to clear it.
         </p>
 
         <div className={`mwvc-list mwvc-n${data.houses.length}`}>
         {sections.map((s) => (
           <div key={s.id} className="mwvc-sec">
             <h3>{s.title}</h3>
-            {(
-              <div className="mwvc-colhead" aria-hidden="true">
-                <span />
-                <div className="mwvc-cells">
-                  {data.houses.map((h, i) => <span key={i} className={`mwvc-colname${active === i ? " mwvc-colon" : ""}`}>{h.name || `House ${i + 1}`}</span>)}
-                </div>
-              </div>
-            )}
             <ol className="mwvc-items">
               {s.items.map((it) => (
                 <li key={it.id} className="mwvc-item">
@@ -276,7 +259,7 @@ export default function ViewingChecklist({ heading, subheading }: Props) {
 
 function PrintSheet({ houses, sections, summary }: { houses: House[]; sections: ReturnType<typeof buildChecklist>; summary: string }) {
   // Always three house columns on paper, so a blank sheet works for a weekend of open houses.
-  const cols = Array.from({ length: MAX_HOUSES }, (_, i) => houses[i]);
+  const cols = Array.from({ length: PRINT_COLS }, (_, i) => houses[i]);
   const sym = (m?: Mark) => (m === "good" ? "✓" : m === "unsure" ? "?" : m === "bad" ? "✗" : "");
   return (
     <div className="mwvc-sheet">
@@ -293,7 +276,7 @@ function PrintSheet({ houses, sections, summary }: { houses: House[]; sections: 
         </thead>
         <tbody>
           {sections.map((s) => [
-            <tr key={s.id} className="mwvc-psec"><td colSpan={MAX_HOUSES + 1}>{s.title}</td></tr>,
+            <tr key={s.id} className="mwvc-psec"><td colSpan={PRINT_COLS + 1}>{s.title}</td></tr>,
             ...s.items.map((it) => (
               <tr key={it.id}>
                 <td>{it.text}</td>
@@ -329,21 +312,16 @@ const CSS = `
 .mwvc-bar{position:sticky;top:60px;z-index:5;background:#fff;margin:0 -16px;padding:12px 16px 10px;border-bottom:1px solid #E6F0EC;border-radius:14px 14px 0 0;display:flex;flex-wrap:nowrap;gap:10px;justify-content:space-between;align-items:center}
 .mwvc-footrow{display:flex;justify-content:flex-end;margin:4px 0 10px}
 .mwvc-short{display:none}
-.mwvc-houses{display:flex;flex-wrap:nowrap;gap:8px;align-items:center;min-width:0}
-.mwvc-house{display:flex;align-items:center;gap:4px;border:1px solid #D8E6E1;border-radius:10px;padding:3px 6px 3px 3px;background:#F7FBF9}
+.mwvc-namelabel{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#2A6A58;padding:0 4px 0 6px}
+.mwvc-house{display:flex;align-items:center;gap:4px;min-width:0;flex:0 1 auto;border:1px solid #D8E6E1;border-radius:10px;padding:3px 6px 3px 3px;background:#F7FBF9}
 .mwvc-houseon{border-color:${PRIMARY};background:#E9F6F1}
-.mwvc-housetab{width:24px;height:24px;border-radius:7px;border:0;background:${PRIMARY};color:#fff;font-weight:700;font-size:.8rem;cursor:pointer}
-.mwvc-house input{border:0;border-bottom:1px dashed #9FBFB4;background:transparent;font-size:.9rem;font-weight:600;width:112px;padding:3px 2px;color:#1A1A1A;border-radius:0}
+.mwvc-house input{border:0;border-bottom:1px dashed #9FBFB4;background:transparent;font-size:.9rem;font-weight:600;width:220px;max-width:100%;padding:3px 2px;color:#1A1A1A;border-radius:0}
 .mwvc-house input:focus{outline:none;border-bottom:2px solid ${PRIMARY}}
-.mwvc-x{border:0;background:none;color:#8a9a95;font-size:1.1rem;cursor:pointer;line-height:1;padding:0 2px}
-.mwvc-add{border:1px dashed #BFE6D7;background:#fff;color:${PRIMARY};border-radius:10px;padding:7px 12px;font-weight:600;font-size:.88rem;cursor:pointer;white-space:nowrap}
 .mwvc-actions{display:flex;gap:8px}
 .mwvc-btn{background:${PRIMARY};color:#fff;border:0;border-radius:8px;padding:9px 14px;font-weight:600;font-size:.92rem;cursor:pointer;white-space:nowrap}
 .mwvc-ghost{background:#fff;color:${PRIMARY};border:1px solid #BFE6D7}
 .mwvc-tally{display:grid;gap:10px;margin:14px 0 4px}
-.mwvc-tally.mwvc-n2{grid-template-columns:1fr 1fr}.mwvc-tally.mwvc-n3{grid-template-columns:1fr 1fr 1fr}
 .mwvc-tcard{border:1px solid #E0EBE7;border-radius:12px;padding:10px 12px;background:#FBFDFC;box-sizing:border-box}
-@media (min-width:641px){.mwvc-tcard{min-height:142px}}
 .mwvc-tcardon{border-color:#9FD4C2}
 .mwvc-tname{font-weight:700;font-size:.95rem;margin-bottom:4px}
 .mwvc-tcounts{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:.88rem;font-weight:600}
@@ -357,7 +335,6 @@ const CSS = `
 .mwvc-sec h3{font-size:1.05rem;margin:18px 0 6px}
 .mwvc-items{list-style:none;margin:0;padding:0;counter-reset:vi}
 .mwvc-list{--cw:450px;--n:1}
-.mwvc-list.mwvc-n2{--n:2}.mwvc-list.mwvc-n3{--n:3}
 .mwvc-item,.mwvc-colhead{display:grid;grid-template-columns:minmax(0,1fr) var(--cw);gap:8px 20px;align-items:start}
 .mwvc-item{padding:10px 0;border-bottom:1px solid #F1F4F3;counter-increment:vi}
 .mwvc-colhead{padding:0 0 4px;border-bottom:1px solid #E6F0EC}
@@ -375,8 +352,6 @@ const CSS = `
 .mwvc-mark span:first-child{font-weight:800}
 .mwvc-good span:first-child{color:#1F8A5B}.mwvc-unsure span:first-child{color:#B07F12}.mwvc-bad span:first-child{color:#C8382D}
 .mwvc-mark:hover{border-color:#9FBFB4}
-.mwvc-n2 .mwvc-marklabel,.mwvc-n3 .mwvc-marklabel{display:none}
-.mwvc-n2 .mwvc-mark span:first-child,.mwvc-n3 .mwvc-mark span:first-child{font-size:1rem}
 .mwvc-good.mwvc-markon{background:#1F8A5B;border-color:#1F8A5B;color:#fff}
 .mwvc-unsure.mwvc-markon{background:#E0A526;border-color:#E0A526;color:#2b2000}
 .mwvc-bad.mwvc-markon{background:#C8382D;border-color:#C8382D;color:#fff}
@@ -391,25 +366,13 @@ const CSS = `
 }
 @media (max-width:640px){
   .mwvc-bar{top:56px;padding:8px 16px}
-  .mwvc-house:not(.mwvc-houseon) input,.mwvc-house:not(.mwvc-houseon) .mwvc-x{display:none}
-  .mwvc-house:not(.mwvc-houseon){padding:3px}
-  .mwvc-houses{flex-wrap:nowrap;gap:6px}
-  .mwvc-add{padding:5px 9px;font-size:.8rem;white-space:nowrap}
   .mwvc-actions .mwvc-btn{padding:7px 10px;font-size:.84rem}
-  .mwvc-tally.mwvc-n2,.mwvc-tally.mwvc-n3{grid-template-columns:1fr}
-  .mwvc-tcard:not(.mwvc-tcardon){display:none}
   .mwvc-item{grid-template-columns:minmax(0,1fr)}
   .mwvc-colhead{display:none}
   .mwvc-cells{grid-template-columns:1fr!important}
-  .mwvc-cell:not(.mwvc-cellon){display:none}
-  .mwvc-n2 .mwvc-marklabel,.mwvc-n3 .mwvc-marklabel{display:inline}
-  .mwvc-notecell:not(.mwvc-cellon){display:none}
-  .mwvc-house input{width:72px}
   .mwvc-long{display:none}
   .mwvc-short{display:inline}
   .mwvc-bar{gap:6px}
-  .mwvc-houses{overflow-x:auto;scrollbar-width:none}
-  .mwvc-house input{width:72px}
 }
 #mwvc-print-root{display:none}
 @media print{

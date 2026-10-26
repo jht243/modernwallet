@@ -13,10 +13,11 @@ answer placement: introText paragraph one gives the answer; the tool (section 1,
 - Runs in the browser on this page; no signup; marks and notes are saved only in the reader's browser.
 - "About the house" panel: Type of home (House, Townhouse (with HOA), Condo (with HOA)); When was it built? (Not sure, Before 1950, 1950 to 1977, 1978 to 1999, 2000 or later, Brand-new / under construction); State; four Local conditions buttons: "Winters reach freezing", "Hurricane-prone coast", "Wildfire area", "Earthquake area". Choosing a state pre-sets the four as a starting point; the reader can change them for the town.
 - Two numbered lists, in order of how costly each is to miss: "Ask the Agent or Seller" and "Check With Your Own Eyes". Some items have a one-line note, a source link, or a link to a calculator.
-- For each item the reader taps Good (✓), Unsure (?) or Problem (✗). Questions also have a "Their answer" box to write down what the agent said.
-- "+ Add a house to compare": up to 3 houses, each with an editable name. Each house gets a summary card: how many items are Good, Unsure and Problem, how many are not marked yet, and the first few Problem items. The tool adds up the reader's own marks; it does not compute a score or rating.
-- A notes box for each house.
-- "Print or save as PDF" prints a one-page sheet with a column for each of 3 houses (blank columns if fewer were added), an address line per house, the reader's marks and answers, and notes lines. "Clear" resets the houses.
+- For each item the reader taps Good (✓), Unsure (?) or Problem (✗); tapping a mark again clears it. Questions also have a "Their answer" box to write down what the agent said. A legend above the lists explains the three marks.
+- The screen holds ONE house at a time, with a "House" name field ("Name or address") at the top. A summary card counts the reader's Good, Unsure and Problem marks, shows how many items are not marked yet, and lists the first three Problem items by short label. The tool adds up the reader's own marks; it does not compute a score or rating.
+- A notes box for the house.
+- "Print or save as PDF" prints a one-page sheet with three house columns: the first carries this house's name, marks and answers, and the other two are blank so the reader can fill them in by hand for the next showings; it has Name and Date lines, an address line per column, and notes lines. To compare houses, readers use the printed sheet's columns or print one sheet per house. "Clear" (below the notes) erases the marks, answers and notes.
+- Every tool page also has a "Share" button that opens the phone's share sheet or copies the page link.
 - Disclaimer on the tool: a viewing checklist, not a home inspection; a licensed inspector checks the systems in detail after an offer.
 - Under the tool, the page lists the complete item library with "Only if" tags.
 

@@ -9,6 +9,7 @@ import { SPOKES } from "../../data/spokes";
 import { CALC_BY_ID, isLive, relatedSpokes } from "../../data/calculators";
 import { STATE_BY_SLUG } from "../../data/states";
 import CalculatorIsland from "../../components/CalculatorIsland";
+import ShareButton from "../../components/ShareButton.astro";
 import { spokeStats } from "../../lib/stats";
 import { linkify, plain, paragraphs } from "../../lib/richtext";
 import { titleCase } from "../../lib/format";
@@ -134,6 +135,8 @@ const jsonLdApp = {
       )}
     </header>
 
+    <div class="tool-wrap">
+      <ShareButton title={entry.h1} />
     <section class="tool-section" id={isChecklist ? "checklist-tool" : undefined} aria-label={isChecklist ? "Interactive checklist" : "Interactive calculator"} data-tool={isChecklist ? entry.slug : calc.id}>
       <div class="tool-badge"><span class="dot"></span> {isChecklist ? "Interactive — answer a few questions" : "Interactive — edit any field"}</div>
       <CalculatorIsland
@@ -145,6 +148,7 @@ const jsonLdApp = {
         mortgageMode={calc.id === "mortgage"}
       />
     </section>
+    </div>
 
     {isChecklist && <ChecklistFullList id={(entry.preset as { checklist: any }).checklist} />}
 
@@ -224,6 +228,7 @@ const jsonLdApp = {
     .lede:last-of-type { margin-bottom: 0; }
     .proof { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-top: 18px; font-size: 0.95rem; color: #555; }
     .proof-stat strong { color: var(--primary-dark); font-weight: 700; }
+    .tool-wrap { position: relative; }
     .tool-section {
       position: relative; margin: 8px 0 18px; padding: 22px;
       background: linear-gradient(180deg, #F4FAF8 0%, #FFFFFF 100%);
