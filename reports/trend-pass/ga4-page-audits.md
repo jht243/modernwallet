@@ -303,3 +303,4 @@
 | / | 2026-10-26 | 9 | 0/0/0/0/0 | 0 |
 | /retirement/couples-retirement-calculator/ | 2026-10-26 | 7 | 0/0/0/0/0 | 0 |
 | /guides/are-church-donations-tax-deductible/ | 2026-10-26 | 6 | 0/0/0/0/1 | 0 |
+| /checklists/house-viewing-checklist/ | 2026-10-27 | 27 | 0/0/0/0/0 | 0 |

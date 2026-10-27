@@ -1,0 +1,133 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-26",
+  "window_start": "2026-10-26",
+  "window_end": "2026-10-26",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 92,
+      "sessions": 93,
+      "active_users": 82,
+      "clicks": 92
+    },
+    {
+      "page": "/guides/trump-account-scams/",
+      "views": 81,
+      "sessions": 80,
+      "active_users": 73,
+      "clicks": 81
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 51,
+      "sessions": 52,
+      "active_users": 47,
+      "clicks": 51
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 36,
+      "sessions": 33,
+      "active_users": 33,
+      "clicks": 36
+    },
+    {
+      "page": "/",
+      "views": 30,
+      "sessions": 30,
+      "active_users": 29,
+      "clicks": 30
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 28,
+      "sessions": 29,
+      "active_users": 26,
+      "clicks": 28
+    },
+    {
+      "page": "/checklists/house-viewing-checklist/",
+      "views": 27,
+      "sessions": 5,
+      "active_users": 2,
+      "clicks": 27
+    },
+    {
+      "page": "/guides/trump-account-rules/",
+      "views": 24,
+      "sessions": 20,
+      "active_users": 18,
+      "clicks": 24
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 19,
+      "sessions": 20,
+      "active_users": 18,
+      "clicks": 19
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 16,
+      "sessions": 19,
+      "active_users": 16,
+      "clicks": 16
+    }
+  ],
+  "top10_pages_total_views": 404,
+  "top10_pages_total_clicks": 404,
+  "channel_split": {
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 76,
+      "Organic Social": 9,
+      "Direct": 8,
+      "Unassigned": 5
+    },
+    "/guides/trump-account-scams/": {
+      "Organic Search": 74,
+      "Direct": 6,
+      "Unassigned": 2
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 51,
+      "Direct": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 32,
+      "Unassigned": 2,
+      "Direct": 1
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 28,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/": {
+      "Direct": 24,
+      "Organic Search": 3,
+      "Referral": 3,
+      "Unassigned": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 19,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/guides/trump-account-rules/": {
+      "Organic Search": 18,
+      "Direct": 2,
+      "Unassigned": 1
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 17,
+      "Direct": 2
+    },
+    "/checklists/house-viewing-checklist/": {
+      "Direct": 5,
+      "Unassigned": 1
+    }
+  }
+}
