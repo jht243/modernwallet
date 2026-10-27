@@ -1,0 +1,10 @@
+1. Opener is 50 words. Replace with: "You have four choices for your 401(k) when you retire. You can leave it in your former employer's plan, make a direct rollover to an individual retirement account (IRA) or another employer plan, take it as cash, or convert it to a Roth IRA."
+2. Garbled keyword stuffing: delete "Selecting where do you put your 401k when you retire shapes your lifetime distribution flexibility." Replace "This statutory distinction dictates what to do with 401k when you retire early." with "That difference matters if you retire before 59½."
+3. First "IRS" ("The IRS recognizes four specific paths") unlinked and unexpanded: write "Internal Revenue Service (IRS)" linked to https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions
+4. Wrong rule: "directly from your current employer's 401(k)" -> "from the 401(k) of the employer you just left".
+5. "If you separate from your employer at age 56" untraceable age -> "after the year you turn 55".
+6. Overstated: "prevents taxes" in the intro and "You avoid taxes by requesting a direct rollover" in the FAQ -> "avoids the 20% withholding and keeps the money tax-deferred". cardBlurb "IRS-approved" -> "IRS-recognized".
+7. The First/Second/Third/Fourth paragraph repeats the table below it: delete it and keep one sentence pointing to the table.
+8. Heading "Required Withdrawals and What Leaving It in the Plan Does" -> "Required Minimum Distributions".
+9. "This analysis does not fit an individual" is page self-reference -> "This choice does not fit".
+10. monotone-rhythm: sentences 1-10, 12-21 and 69-78 each in one long band; only 5 of 88 sentences short. Vary real sentences (split long clear ones, never pad).

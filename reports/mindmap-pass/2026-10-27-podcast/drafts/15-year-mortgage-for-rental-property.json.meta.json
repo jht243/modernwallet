@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 2235,
+ "words": 2278,
  "floor": 1200,
  "input_tokens": 24742,
  "output_tokens": 4886,
@@ -21,14 +21,7 @@
  "guards": {
   "repairs": [],
   "flags": [
-   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "emptied by the claim check (nothing in the fact list could carry it): ['What a 15-Year Loan Does to Rental Cash Flow', 'The Alternative: A 30-Year Loan Paid Like a 15-Year Loan', 'How Much Rent You Need for a 15-Year Investment Property', 'Where the Rate Numbers Come From and What They Leave Out', 'Qualifying for a Shorter Term on an Investment Purchase'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
-   "claim check: 1 claim(s) still unsupported after 2 pass(es) \u2014 auditor must cut or source: 'A borrower who easily qualifies under a $2,060.79 monthly commitment may fail un'"
+   "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Locking into a higher mandatory payment restricts the liquidity needed to addres'; 'Similarly, buyers focused primarily on building immediate monthly cash flow for '; 'With stable personal income and substantial cash reserves, a 15-year mortgage al'"
   ],
   "disallowed_urls_removed": [],
   "words": 2235,
@@ -204,7 +197,297 @@
    "html_comments_dropped": 0,
    "tokens_dropped_est": 0,
    "tokens_sent_est": 1169
-  }
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-27T14:25:51+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-27-podcast/audit/15-year-mortgage-for-rental-property.findings.txt",
+    "applied": [
+     {
+      "id": "sections[4].body",
+      "quote": "When considering debt limits across your real estate holdings, evaluate your debt ratios with our [home affordability calculator](/mortgage/home-affordability-calculator/) to see how increased monthly commitments affect borrowing power.",
+      "replacement": "The 15-year payment is higher ($2,643.10 against $2,060.79 on the modeled $300,000 loan), which raises the monthly obligation a lender weighs against income. Ask a licensed mortgage professional how a lender counts rent and your debts. Evaluate your borrowing power with our [home affordability calculator](/mortgage/home-affordability-calculator/).",
+      "type": "Qualifying for a Shorter Term",
+      "why": "Expand section 5 with qualifying obligations and retain affordability link"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": " without penalty or lender approval",
+      "replacement": "",
+      "type": "Contradiction on prepayment penalty",
+      "why": "Prepayment penalty status is unknown per source"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Whether a loan has a prepayment penalty is unknown to this page.",
+      "replacement": "Ask your lender whether the loan has a prepayment penalty.",
+      "type": "Prepayment penalty instruction",
+      "why": "Direct reader to ask lender directly"
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "legal option",
+      "replacement": "option",
+      "type": "Fix legal option",
+      "why": "Prepayment terms are unknown to page"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Now observe ",
+      "replacement": "",
+      "type": "Delete Now observe",
+      "why": "Remove hype editorial opener"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "an actual market rent of $3,300 per month",
+      "replacement": "a hypothetical rent of $3,300",
+      "type": "Hypothetical rent label",
+      "why": "Rent is a hypothetical modeled assumption"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "critical ",
+      "replacement": "",
+      "type": "Hype word",
+      "why": "Remove hype adjective"
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Crucially, ",
+      "replacement": "",
+      "type": "Hype word",
+      "why": "Remove hype transition adverb"
+     },
+     {
+      "id": "sections[3].body",
+      "quote": " and 20% loans (the survey's wording)",
+      "replacement": "",
+      "type": "Unparseable wording",
+      "why": "Delete unparseable fragment per audit"
+     },
+     {
+      "id": "introText",
+      "quote": "That interest reduction comes with a immediate operational trade-off for any real estate investor.",
+      "replacement": "The shorter term carries an immediate cost in monthly cash flow.",
+      "type": "Intro trade-off sentence",
+      "why": "Clarify immediate monthly cash flow cost"
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Selecting a 15-year loan forces you to absorb a monthly payment increase of $582.31 on a $300,000 balance.",
+      "replacement": "On a modeled $300,000 loan, selecting a 15-year term forces you to absorb a monthly payment increase of $582.31.",
+      "type": "Paragraph 2 opening",
+      "why": "Open paragraph 2 with modeled loan label"
+     },
+     {
+      "id": "title",
+      "quote": "Rates and Math",
+      "replacement": "Cash Flow and Break-Even Rent",
+      "type": "Title rule",
+      "why": "Update title per audit instructions"
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "30-Year Loan (7.32%)",
+      "replacement": "30-Year Loan (7.32%, Freddie Mac owner-occupied average)",
+      "type": "Rate label header",
+      "why": "Add Freddie Mac owner-occupied label"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Base Loan (6.68%)",
+      "replacement": "Base Loan (6.68%, Freddie Mac owner-occupied average)",
+      "type": "Base loan rate label",
+      "why": "Add Freddie Mac owner-occupied label"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "the lower interest rate that lenders award to true 15-year commitments",
+      "replacement": "the lower interest rate (Freddie Mac owner-occupied average) that lenders award to true 15-year commitments",
+      "type": "Rate label in body",
+      "why": "Add Freddie Mac owner-occupied label"
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Lenders price investment properties differently",
+      "replacement": "Lenders may price investment properties differently",
+      "type": "Rate pricing wording",
+      "why": "Qualify lender pricing variation with may"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "commercial lender",
+      "replacement": "lender",
+      "type": "Lender phrasing",
+      "why": "Simplify commercial lender to lender"
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "commercial lenders",
+      "replacement": "lenders",
+      "type": "Lender phrasing in takeaway",
+      "why": "Simplify commercial lenders to lenders"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "every thirty days",
+      "replacement": "every month",
+      "type": "Periodicity phrasing",
+      "why": "Standardize thirty days to month"
+     },
+     {
+      "id": "sections[3].heading",
+      "quote": "Where the Rate Numbers Come From and What They Leave Out",
+      "replacement": "Rate Inputs and Model Limits",
+      "type": "Section heading update",
+      "why": "Update heading to Rate Inputs and Model Limits"
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "rental property ROI calculator",
+      "replacement": "rental property return on investment (ROI) calculator",
+      "type": "Expand ROI acronym",
+      "why": "Spell out ROI in anchor text"
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "REIT vs rental property comparison",
+      "replacement": "real estate investment trust (REIT) vs rental property comparison",
+      "type": "Expand REIT acronym",
+      "why": "Spell out REIT in anchor text"
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "To evaluate the debt terms for your next purchase, ",
+      "replacement": "To evaluate debt terms for your situation, consult a licensed mortgage professional,",
+      "type": "Takeaway mortgage professional pointer",
+      "why": "Add pointer to licensed professional"
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "Empty FAQ answer",
+      "why": "needs new substance",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "monotone-rhythm",
+      "why": "needs new substance",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[4].body",
+       "quote": "Ask a licensed mortgage professional how a lender counts rent and your debts. ",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2245,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Ask a licensed mortgage professional how a lender counts rent and your debts. '"
+    ]
+   },
+   {
+    "round": 2,
+    "at": "2026-10-27T14:29:24+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-27-podcast/audit/15-year-mortgage-for-rental-property.round2.findings.txt",
+    "applied": [
+     {
+      "id": "sections[5].body",
+      "quote": "As demonstrated in our $3,300 rent scenario, the 30-year note leaves positive cash flow, whereas the 15-year note demands monthly out-of-pocket contributions.",
+      "replacement": "In our $3,300 rent scenario, the 30-year note leaves positive cash flow. The 15-year note demands monthly out-of-pocket contributions.",
+      "type": "monotone-rhythm",
+      "why": "Splits long compound sentence into two shorter natural sentences without changing meaning."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "If you possess stable personal income and substantial cash reserves, using a 15-year mortgage allows your tenant to pay off your asset in half the time while saving $266,127 in financing costs.",
+      "replacement": "With stable personal income and substantial cash reserves, a 15-year mortgage allows your tenant to pay off your asset in half the time. It also saves $266,127 in financing costs.",
+      "type": "monotone-rhythm",
+      "why": "Splits long conditional sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "However, achieving those savings requires managing a mandatory monthly payment that is $582 higher, which pushes the break-even gross rent up by roughly $613 per month.",
+      "replacement": "However, achieving those savings requires managing a mandatory monthly payment that is $582 higher. That pushes the break-even gross rent up by roughly $613 per month.",
+      "type": "monotone-rhythm",
+      "why": "Splits into two shorter sentences to improve rhythm and readability."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Additionally, paying the 15-year payment amount on a flexible 30-year mortgage pays the balance off in roughly 16.2 years with $36,590 in additional interest, while preserving the option to remit the lower payment during tenant turnover.",
+      "replacement": "Additionally, paying the 15-year payment amount on a flexible 30-year mortgage pays the balance off in roughly 16.2 years with $36,590 in additional interest. It also preserves the option to remit the lower payment during tenant turnover.",
+      "type": "monotone-rhythm",
+      "why": "Splits the long sentence into two balanced, shorter sentences."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "To evaluate debt terms for your situation, consult a licensed mortgage professional,request formal loan estimates from multiple lenders and model your property numbers through our [rental cash flow calculator](/real-estate/cash-flow-calculator/) before committing to a 15-year mortgage for rental property financing.",
+      "replacement": "To evaluate debt terms for your situation, consult a licensed mortgage professional and request formal loan estimates from multiple lenders. Model your property numbers through our [rental cash flow calculator](/real-estate/cash-flow-calculator/) before committing to a 15-year mortgage for rental property financing.",
+      "type": "monotone-rhythm",
+      "why": "Splits long closing directive into two concise sentences and preserves the link."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "The 15-year payment is higher ($2,643.10 against $2,060.79 on the modeled $300,000 loan), which raises the monthly obligation a lender weighs against income.",
+      "replacement": "The 15-year payment is higher ($2,643.10 against $2,060.79 on the modeled $300,000 loan). This raises the monthly obligation a lender weighs against income.",
+      "type": "monotone-rhythm",
+      "why": "Splits sentence into two crisp statements."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      3
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[5].body",
+       "quote": "Locking into a higher mandatory payment restricts the liquidity needed to address emergency building repairs.",
+       "type": "inference",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[5].body",
+       "quote": "Similarly, buyers focused primarily on building immediate monthly cash flow for living expenses should pass on 15-year financing.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[5].body",
+       "quote": "With stable personal income and substantial cash reserves, a 15-year mortgage allows your tenant to pay off your asset in half the time.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2278,
+    "flags": [
+     "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Locking into a higher mandatory payment restricts the liquidity needed to addres'; 'Similarly, buyers focused primarily on building immediate monthly cash flow for '; 'With stable personal income and substantial cash reserves, a 15-year mortgage al'"
+    ]
+   }
+  ]
  },
  "seconds": 447.1,
  "response_id": "kK3gauviJby7xdIP4uil-AQ",

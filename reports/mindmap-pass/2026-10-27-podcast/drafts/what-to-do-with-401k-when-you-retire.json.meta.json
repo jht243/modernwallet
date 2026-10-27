@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 2428,
+ "words": 2313,
  "floor": 1200,
  "input_tokens": 25654,
  "output_tokens": 4328,
@@ -21,18 +21,11 @@
  "guards": {
   "repairs": [],
   "flags": [
-   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "emptied by the claim check (nothing in the fact list could carry it): ['Your Four Options for a 401(k) at Retirement', 'Why a Check Made Out to You Costs More', 'When the Rule of 55 Changes the Answer', 'Required Withdrawals and What Leaving It in the Plan Does', 'Small Balances and the Default Rules'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+   "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'The costliest mistake is requesting a distribution check made out to your own na'; 'It does not fit an early retiree between ages 55 and 59\u00bd who separated from serv'; 'Your ideal move changes based on your age and whether you require immediate inco'; \"Your account balance must also exceed the plan's mandatory cash-out threshold. \""
   ],
   "disallowed_urls_removed": [],
   "words": 2428,
   "numbers_not_in_facts": [
-   "56",
    "80"
   ],
   "fact_budget": {
@@ -118,7 +111,285 @@
    "html_comments_dropped": 0,
    "tokens_dropped_est": 0,
    "tokens_sent_est": 1169
-  }
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-27T14:20:20+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-27-podcast/audit/what-to-do-with-401k-when-you-retire.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "You have four choices for what to do with your 401(k) when you retire: leave the balance in your former employer's plan, execute a direct rollover to an individual retirement account (IRA) or another qualified retirement plan, withdraw the funds as cash, or convert the balance into a Roth IRA.",
+      "replacement": "You have four choices for your 401(k) when you retire. You can leave it in your former employer's plan, make a direct rollover to an individual retirement account (IRA) or another employer plan, take it as cash, or convert it to a Roth IRA.",
+      "type": "Opener is 50 words",
+      "why": "Replace long opener with concise direct answer per audit instructions."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Selecting where do you put your 401k when you retire shapes your lifetime distribution flexibility.",
+      "replacement": "",
+      "type": "Garbled keyword stuffing",
+      "why": "Delete awkward keyword stuffing sentence."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "This statutory distinction dictates what to do with 401k when you retire early.",
+      "replacement": "That difference matters if you retire before 59\u00bd.",
+      "type": "Garbled keyword stuffing",
+      "why": "Replace keyword-stuffed sentence with clean phrasing."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "directly from your current employer's 401(k)",
+      "replacement": "from the 401(k) of the employer you just left",
+      "type": "Wrong rule on employer 401k",
+      "why": "Clarify that the Rule of 55 applies to the employer just left."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "If you separate from your employer at age 56",
+      "replacement": "If you separate from your employer after the year you turn 55",
+      "type": "Untraceable age 56",
+      "why": "Replace specific untraceable age with statutory Rule of 55 timing."
+     },
+     {
+      "id": "cardBlurb",
+      "quote": "IRS-approved",
+      "replacement": "IRS-recognized",
+      "type": "Overstated IRS-approved",
+      "why": "IRS recognizes choices rather than approving specific decisions."
+     },
+     {
+      "id": "introText",
+      "quote": "prevents taxes and keeps the money tax-deferred",
+      "replacement": "avoids the 20% withholding and keeps the money tax-deferred",
+      "type": "Overstated prevents taxes",
+      "why": "Direct rollover avoids withholding and preserves deferral rather than eliminating taxes."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "You avoid taxes by requesting a direct rollover",
+      "replacement": "A direct rollover avoids the 20% withholding and keeps the money tax-deferred",
+      "type": "Overstated avoid taxes in FAQ",
+      "why": "Clarify that direct rollover avoids withholding and preserves deferral."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "First, you can leave your money in your former employer's qualified plan if the plan rules allow it and your balance meets the minimum threshold.",
+      "replacement": "The table below outlines how each choice affects taxes and what to watch.",
+      "type": "Paragraph repeats table below",
+      "why": "Replace duplicate paragraph with a single pointer sentence to the table."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Second, you can complete a direct rollover of the funds to a traditional IRA or to a new employer plan without triggering any tax withholding.",
+      "replacement": "",
+      "type": "Paragraph repeats table below",
+      "why": "Delete redundant sentence already presented in the table."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Third, you can withdraw the balance as a lump-sum cash distribution, though the payout counts as taxable income and plan administrators must withhold 20% upfront.",
+      "replacement": "",
+      "type": "Paragraph repeats table below",
+      "why": "Delete redundant sentence already presented in the table."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Fourth, you can roll or convert the funds into a Roth IRA, which counts as a taxable conversion in the year of the transfer because you move pre-tax dollars into an after-tax account.",
+      "replacement": "",
+      "type": "Paragraph repeats table below",
+      "why": "Delete redundant sentence already presented in the table."
+     },
+     {
+      "id": "sections[3].heading",
+      "quote": "Required Withdrawals and What Leaving It in the Plan Does",
+      "replacement": "Required Minimum Distributions",
+      "type": "Heading wording",
+      "why": "Use standard concise heading per audit instruction."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "This analysis does not fit an individual",
+      "replacement": "This choice does not fit an individual",
+      "type": "Page self-reference",
+      "why": "Remove editorial self-reference to the page analysis."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[0].body",
+      "quote": "The IRS recognizes four specific paths",
+      "finding": "First IRS unlinked and unexpanded",
+      "why": "Expand acronym on first mention and link to IRS rollover guidance.",
+      "replacement": "The [Internal Revenue Service (IRS)](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions) recognizes four specific paths",
+      "reason": "replacement adds ['Revenue'] not in SOURCE"
+     },
+     {
+      "id": "introText",
+      "quote": "",
+      "finding": "monotone-rhythm",
+      "why": "needs new substance",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      4
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "introText",
+       "quote": "The choice that catches retirees off guard is taking a check made out to yourself, because federal rules force the plan administrator to withhold 20% for taxes immediately.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "introText",
+       "quote": "For most workers who retire at or after age 59\u00bd, transferring retirement funds through a direct trustee-to-trustee transfer avoids the 20% withholding and keeps the money tax-deferred.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[0].body",
+       "quote": "Taxes must be paid on pre-tax amounts; qualified withdrawals are tax-free later",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[2].body",
+       "quote": "A retiree in this age bracket can keep the balance in the former employer's plan or execute a partial rollover, leaving sufficient funds in the 401(k) to cover living expenses until age 59\u00bd.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2312,
+    "flags": [
+     "claim check: 4 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'The choice that catches retirees off guard is taking a check made out to yoursel'; 'For most workers who retire at or after age 59\u00bd, transferring retirement funds t'; 'Taxes must be paid on pre-tax amounts; qualified withdrawals are tax-free later'; \"A retiree in this age bracket can keep the balance in the former employer's plan\""
+    ]
+   },
+   {
+    "round": 2,
+    "at": "2026-10-27T14:29:49+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-27-podcast/audit/what-to-do-with-401k-when-you-retire.round2.findings.txt",
+    "applied": [
+     {
+      "id": "sections[0].body",
+      "quote": "To learn the mechanics of scheduling withdrawals from an employer account, see our guide on [how to withdraw from a 401(k)](/guides/how-to-withdraw-from-401k/).",
+      "replacement": "You can learn the mechanics of scheduling withdrawals from an employer account. See our guide on [how to withdraw from a 401(k)](/guides/how-to-withdraw-from-401k/).",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "In our internal analysis, we worked through the IRS withholding and rollover rules for three distribution sizes to see how much of your own money a check made out to you puts at risk.",
+      "replacement": "In our internal analysis, we worked through the IRS withholding and rollover rules for three distribution sizes. We evaluated how much of your own money a check made out to you puts at risk.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "To roll over the full balance and keep the transfer entirely tax-free, you must locate alternative funds equal to that withheld 20% and deposit the complete 100% amount into an IRA or new retirement plan within 60 days of receipt.",
+      "replacement": "To roll over the full balance and keep the transfer entirely tax-free, you must locate alternative funds equal to that withheld 20%. You must deposit the complete 100% amount into an IRA or new retirement plan within 60 days of receipt.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "For individuals under age 59\u00bd who lack an exception, that unreplaced 20% also triggers a 10% additional early distribution tax.",
+      "replacement": "That unreplaced 20% also triggers a 10% additional early distribution tax. This applies to individuals under age 59\u00bd who lack an exception.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Based on our internal analysis of IRS rollover guidelines and mandatory tax withholding arithmetic, for most retirees the real choice is between maintaining their existing 401(k) and executing a direct trustee-to-trustee transfer to an IRA or a new employer plan.",
+      "replacement": "We based our view on internal analysis of IRS rollover guidelines and mandatory tax withholding arithmetic. For most retirees, the real choice is between maintaining their existing 401(k) and executing a direct trustee-to-trustee transfer to an IRA or a new employer plan.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "A direct rollover fits a reader who wants to keep the money tax-deferred and does not need to access retirement money before age 59\u00bd.",
+      "replacement": "A direct rollover fits a reader who wants to keep the money tax-deferred. It suits someone who does not need to access retirement money before age 59\u00bd.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Your ideal move changes based on your age, whether you require immediate income, your plan's specific fee schedule, and whether your plan allows partial post-retirement withdrawals.",
+      "replacement": "Your ideal move changes based on your age and whether you require immediate income. It also depends on your plan's specific fee schedule and whether it allows partial post-retirement withdrawals.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "When you retire, your 401(k) remains in your employer's plan until you choose to leave it there, transfer it via direct rollover to an IRA or new employer plan, withdraw the balance as cash, or convert it to a Roth IRA.",
+      "replacement": "When you retire, your 401(k) remains in your employer's plan until you choose a path. You can leave it there, transfer it via direct rollover to an IRA or new employer plan, withdraw the balance as cash, or convert it to a Roth IRA.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "You can leave your 401(k) with your former employer if the plan allows former employees to stay and your account balance exceeds the plan's mandatory cash-out threshold.",
+      "replacement": "You can leave your 401(k) with your former employer if the plan allows former employees to stay. Your account balance must also exceed the plan's mandatory cash-out threshold.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      5
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[6].body",
+       "quote": "The costliest mistake is requesting a distribution check made out to your own name, because mandatory 20% tax withholding creates an unnecessary cash shortfall and subjects unreplaced funds to income taxes and potential penalties.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[6].body",
+       "quote": "It does not fit an early retiree between ages 55 and 59\u00bd who separated from service and needs penalty-free income directly from that employer account.",
+       "type": "contradicted",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[6].body",
+       "quote": "Your ideal move changes based on your age and whether you require immediate income.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[1].answer",
+       "quote": "Your account balance must also exceed the plan's mandatory cash-out threshold. ",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[1].answer",
+       "quote": "If your vested balance is between $1,000 and $5,000, the plan can roll it into a default IRA without your consent, and balances of $1,000 or less can be paid directly to you in cash.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2313,
+    "flags": [
+     "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'The costliest mistake is requesting a distribution check made out to your own na'; 'It does not fit an early retiree between ages 55 and 59\u00bd who separated from serv'; 'Your ideal move changes based on your age and whether you require immediate inco'; \"Your account balance must also exceed the plan's mandatory cash-out threshold. \""
+    ]
+   }
+  ]
  },
  "seconds": 270.9,
  "response_id": "gazgaoT8CvvT0_gPjYv3aA",

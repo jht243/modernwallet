@@ -1,0 +1,26 @@
+Quote: "To learn the mechanics of scheduling withdrawals from an employer account, see our guide on [how to withdraw from a 401(k)](/guides/how-to-withdraw-from-401k/)."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "In our internal analysis, we worked through the IRS withholding and rollover rules for three distribution sizes to see how much of your own money a check made out to you puts at risk."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "To roll over the full balance and keep the transfer entirely tax-free, you must locate alternative funds equal to that withheld 20% and deposit the complete 100% amount into an IRA or new retirement plan within 60 days of receipt."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "For individuals under age 59½ who lack an exception, that unreplaced 20% also triggers a 10% additional early distribution tax."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "Based on our internal analysis of IRS rollover guidelines and mandatory tax withholding arithmetic, for most retirees the real choice is between maintaining their existing 401(k) and executing a direct trustee-to-trustee transfer to an IRA or a new employer plan."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "A direct rollover fits a reader who wants to keep the money tax-deferred and does not need to access retirement money before age 59½."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "Your ideal move changes based on your age, whether you require immediate income, your plan's specific fee schedule, and whether your plan allows partial post-retirement withdrawals."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "When you retire, your 401(k) remains in your employer's plan until you choose to leave it there, transfer it via direct rollover to an IRA or new employer plan, withdraw the balance as cash, or convert it to a Roth IRA."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "You can leave your 401(k) with your former employer if the plan allows former employees to stay and your account balance exceeds the plan's mandatory cash-out threshold."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.

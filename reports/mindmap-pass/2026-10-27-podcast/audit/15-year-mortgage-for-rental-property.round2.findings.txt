@@ -1,0 +1,17 @@
+Quote: "As demonstrated in our $3,300 rent scenario, the 30-year note leaves positive cash flow, whereas the 15-year note demands monthly out-of-pocket contributions."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "If you possess stable personal income and substantial cash reserves, using a 15-year mortgage allows your tenant to pay off your asset in half the time while saving $266,127 in financing costs."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "However, achieving those savings requires managing a mandatory monthly payment that is $582 higher, which pushes the break-even gross rent up by roughly $613 per month."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "Additionally, paying the 15-year payment amount on a flexible 30-year mortgage pays the balance off in roughly 16.2 years with $36,590 in additional interest, while preserving the option to remit the lower payment during tenant turnover."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "To evaluate debt terms for your situation, consult a licensed mortgage professional,request formal loan estimates from multiple lenders and model your property numbers through our [rental cash flow calculator](/real-estate/cash-flow-calculator/) before committing to a 15-year mortgage for rental property financing."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "The 15-year payment is higher ($2,643.10 against $2,060.79 on the modeled $300,000 loan), which raises the monthly obligation a lender weighs against income."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.

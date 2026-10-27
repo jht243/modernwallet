@@ -1,0 +1,10 @@
+1. The attribution cue ("In our internal modeling") appears 5 times: delete from the intro, section 3 and the FAQ; keep once beside the table and once in the Takeaway.
+2. Heading "When Closing a Card Is Still the Right Call" -> "When Closing a Card Is the Right Call". The three reasons written as First/Second/Third paragraphs -> a 3-item bullet list.
+3. Delete "Once that account closes, you no longer possess an active credit utilization ratio" and "The single-card scenario cannot be evaluated" (unsupported, dead end). Delete "eliminating the utilization penalty". Replace the dangling "The CFPB confirms that closing an existing card could decrease your credit score." with "The CFPB lists not planning to apply for credit soon as a reason to close; a loan application is the opposite."
+4. "the bureau identifies / the bureau does not specify" -> "the CFPB" (synonym cycling; "bureau" reads as credit bureau).
+5. Dead-end FAQ "The CFPB publication does not outline specific reporting timelines": append "Ask the card issuer how the closed account will be reported."
+6. Delete the sentence "our credit card issuer goodwill call guide outlines communication steps for addressing billing concerns" (force-fit link; that guide is about other things). "you must watch your monthly statements" -> "should watch your statements". Cut "which this page cannot see".
+7. Metadata: title is 61 chars and "CFPB Rules" misleads: use "Does Closing a Credit Card Hurt Your Credit Score?". Meta description is 161 chars (limit 160): shorten. Expand "APR" in link text.
+8. Intro second sentence is 38 words and the next 39: split them.
+9. monotone-rhythm: sentences 12-38 (27 long in a row) and 58-70: vary real sentences, never pad. Re-measure the floor after cuts (1,200).
+10. Untraceable example figures flagged by the generator (12500, 2.9, 32, 7500): delete any sentence using them.

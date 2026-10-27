@@ -1,0 +1,10 @@
+1. FAQ "Is it harder to qualify for a 15-year mortgage?" has an EMPTY answer and section 5 "Qualifying for a Shorter Term" is one sentence. Fill both with: "The 15-year payment is higher ($2,643.10 against $2,060.79 on the modeled $300,000 loan), which raises the monthly obligation a lender weighs against income. Ask a licensed mortgage professional how a lender counts rent and your debts."
+2. Contradiction: "you can immediately drop your remittance back to the mandatory $2,060.79 floor without penalty or lender approval" then "Whether a loan has a prepayment penalty is unknown to this page." Delete "without penalty or lender approval". Replace the second sentence with "Ask your lender whether the loan has a prepayment penalty." Fix "legal option" in the Takeaway.
+3. "an actual market rent of $3,300 per month" -> "a hypothetical rent of $3,300". Delete "Now observe".
+4. Hype: delete "critical" in "critical payment flexibility" and delete "Crucially,".
+5. Unparseable: "good or excellent credit and 20% loans (the survey's wording)" -> delete "and 20% loans (the survey's wording)".
+6. Intro: "That interest reduction comes with a immediate operational trade-off" -> "The shorter term carries an immediate cost in monthly cash flow." Paragraph 2 should open "On a modeled $300,000 loan,".
+7. Rate labelling: section 1 table headers "30-Year Loan (7.32%)", the "Base Loan (6.68%)" row and "the lower interest rate that lenders award to true 15-year commitments" drop the Freddie Mac owner-occupied label: add "(Freddie Mac owner-occupied average)" at each. "Lenders price investment properties differently" -> "may price ... differently". "commercial lender" -> "lender" (two places). Title "Rates and Math" -> "Cash Flow and Break-Even Rent". "every thirty days" -> "every month".
+8. Heading "Where the Rate Numbers Come From and What They Leave Out" -> "Rate Inputs and Model Limits". Expand "ROI" and "REIT" in link text.
+9. Takeaway lacks a pointer to a licensed mortgage professional: add one.
+10. monotone-rhythm: sentences 69-86 are 18 long sentences in a row; only 1 of 97 short. Vary real sentences.

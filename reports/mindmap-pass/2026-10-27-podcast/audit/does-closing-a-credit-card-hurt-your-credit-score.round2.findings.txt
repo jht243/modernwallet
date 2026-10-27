@@ -1,0 +1,38 @@
+Quote: "A cardholder can check their own numbers by dividing their total balances across all cards by their total remaining credit limits after a planned closure."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "Closing an unused card with a $10,000 credit limit cuts total available borrowing capacity in half, pushing the credit utilization ratio to 40.0%."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "If your remaining credit limits are low relative to your debts, the jump in your utilization ratio can be substantial."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "The CFPB advises that you should not assume closing an account will improve your credit score, but the CFPB identifies three scenarios where canceling an account can be a sound financial decision."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "It helps you avoid accumulating debt you cannot pay off. The CFPB also lists avoiding debt you cannot pay off as a reason to close a card."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "Conversely, the CFPB explains that some people keep a card account open, especially an old account with a positive payment history, because doing so may help maintain a higher credit score."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "If you hold multiple cards you no longer need, closing the card with the lowest credit limit or the highest recurring annual fee minimizes the reduction in your total credit lines."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "The CFPB lists not planning to apply for credit soon as a reason to close; a loan application is the opposite."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "Closing a credit card can lower your credit score through higher utilization, and the larger the credit limit you remove relative to your outstanding balances, the greater the resulting jump in your ratio."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "Closing an account fits a cardholder facing an expensive annual fee or poor account terms that outweigh card perks, as well as someone who wants to eliminate the temptation of accumulating debt they cannot afford to repay."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "If you want to close an unneeded credit card, calculate your combined balances and your remaining total credit limits to see how your utilization ratio will adjust."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "Keeping an unused card open, especially an old card with a positive payment history, can help maintain a higher credit score by preserving your total available credit limit and keeping your utilization ratio lower."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.
+
+Quote: "If you choose to keep an account open with a zero balance, the CFPB advises monitoring monthly statements to protect against identity theft and catch unexpected fees."
+Defect: monotone-rhythm (a run of long sentences). Fix: split this sentence into two shorter natural sentences, one of them short if natural, with no change to facts, numbers, links or meaning, and no added words of substance.

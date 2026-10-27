@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 2094,
+ "words": 1849,
  "floor": 1200,
  "input_tokens": 24014,
  "output_tokens": 3380,
@@ -20,23 +20,10 @@
  "est_cost_usd": 0.0184,
  "guards": {
   "repairs": [],
-  "flags": [
-   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "emptied by the claim check (nothing in the fact list could carry it): ['What Closing a Card Does to Your Credit Utilization', 'When Closing a Card Is Still the Right Call', 'Steps to Reduce Score Impact When Closing an Account', 'Situations Where the Standard Rules Differ', 'Our Takeaway'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
-  ],
+  "flags": [],
   "disallowed_urls_removed": [],
   "words": 2094,
-  "numbers_not_in_facts": [
-   "12500",
-   "2.9",
-   "32",
-   "7500"
-  ],
+  "numbers_not_in_facts": [],
   "fact_budget": {
    "fact_words": 390,
    "floor": 1200,
@@ -148,7 +135,336 @@
    "html_comments_dropped": 0,
    "tokens_dropped_est": 0,
    "tokens_sent_est": 1169
-  }
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-27T14:24:24+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-27-podcast/audit/does-closing-a-credit-card-hurt-your-credit-score.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "In our internal modeling of credit limits and revolving balances, closing",
+      "replacement": "Closing",
+      "type": "attribution cue in intro",
+      "why": "attribution cue allowed only beside table and takeaway"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "In our modeling, if an individual",
+      "replacement": "If an individual",
+      "type": "attribution cue in section 3",
+      "why": "attribution cue allowed only beside table and takeaway"
+     },
+     {
+      "id": "sections[1].heading",
+      "quote": "When Closing a Card Is Still the Right Call",
+      "replacement": "When Closing a Card Is the Right Call",
+      "type": "heading wording",
+      "why": "simplifies heading per audit finding"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "First, closing an account might be a good decision if the card charges annual fees or poor terms that outweigh the benefits you receive.",
+      "replacement": "- The card charges annual fees or poor terms that outweigh the benefits.",
+      "type": "three reasons list format",
+      "why": "replaces First narrative with bullet item"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Second, canceling an account can be appropriate if having the card available makes it harder to avoid accumulating debt you cannot pay off.",
+      "replacement": "- It helps you avoid accumulating debt you cannot pay off.",
+      "type": "three reasons list format",
+      "why": "replaces Second narrative with bullet item"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Third, closing a card makes practical sense when you are not planning to apply for credit in the near future.",
+      "replacement": "- You are not planning to apply for credit in the near future.",
+      "type": "three reasons list format",
+      "why": "replaces Third narrative with bullet item"
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Once that account closes, you no longer possess an active credit utilization ratio on revolving credit accounts. ",
+      "replacement": "",
+      "type": "unsupported single-card claim",
+      "why": "unsupported claim not in source"
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "The single-card scenario cannot be evaluated using multi-card ratios, and closing that sole line leaves you without revolving access.",
+      "replacement": "",
+      "type": "unsupported single-card dead end",
+      "why": "unsupported claim not in source"
+     },
+     {
+      "id": "sections[3].body",
+      "quote": ", eliminating the utilization penalty",
+      "replacement": "",
+      "type": "unsupported phrase",
+      "why": "unsupported phrasing not in source"
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "The CFPB confirms that closing an existing card could decrease your credit score.",
+      "replacement": "The CFPB lists not planning to apply for credit soon as a reason to close; a loan application is the opposite.",
+      "type": "dangling CFPB sentence",
+      "why": "replaces dangling statement with accurate source contrast"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "the bureau identifies",
+      "replacement": "the CFPB identifies",
+      "type": "synonym cycling bureau",
+      "why": "synonym cycling; bureau reads as credit bureau"
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "the bureau does not specify",
+      "replacement": "the CFPB does not specify",
+      "type": "synonym cycling bureau",
+      "why": "synonym cycling; bureau reads as credit bureau"
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "The CFPB publication does not outline specific reporting timelines or point changes for closed cards carrying balances.",
+      "replacement": "The CFPB publication does not outline specific reporting timelines or point changes for closed cards carrying balances. Ask the card issuer how the closed account will be reported.",
+      "type": "dead-end FAQ",
+      "why": "points reader to issuer per audit directive"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "If you discover an improper charge on an older account, our [credit card issuer goodwill call guide](/guides/credit-card-issuer-goodwill-call-guide/) outlines communication steps for addressing billing concerns with customer support representatives. ",
+      "replacement": "",
+      "type": "force-fit internal link",
+      "why": "link target covers unrelated goodwill requests"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "you must watch your monthly statements",
+      "replacement": "you should watch your statements",
+      "type": "mandatory phrasing tone",
+      "why": "aligns statement with source recommendation"
+     },
+     {
+      "id": "sections[4].body",
+      "quote": ", which this page cannot see",
+      "replacement": "",
+      "type": "unnecessary editorial commentary",
+      "why": "removes meta-commentary per audit"
+     },
+     {
+      "id": "title",
+      "quote": "Does Closing a Credit Card Hurt Your Credit Score? CFPB Rules",
+      "replacement": "Does Closing a Credit Card Hurt Your Credit Score?",
+      "type": "title length and misleading phrasing",
+      "why": "shortens title and removes misleading phrase"
+     },
+     {
+      "id": "metaDescription",
+      "quote": "Does closing a credit card hurt your credit score? See CFPB guidance, how credit utilization changes with card size, when to cancel, and steps to protect scores.",
+      "replacement": "Does closing a credit card hurt your credit score? See CFPB guidance, how credit utilization changes with card size, when to cancel, and how to protect scores.",
+      "type": "meta description length",
+      "why": "shortens description under 160 characters"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "[good APR for credit card]",
+      "replacement": "[good annual percentage rate (APR) for credit card]",
+      "type": "expand APR in anchor text",
+      "why": "spells out acronym in anchor text"
+     },
+     {
+      "id": "introText",
+      "quote": ", though the change may be temporary or minor, and the full impact varies based on other factors about your credit profile.",
+      "replacement": ". The change may be temporary or minor, and the full impact varies based on other factors about your credit profile.",
+      "type": "long sentence split",
+      "why": "splits 38-word sentence for readability"
+     },
+     {
+      "id": "introText",
+      "quote": ", whereas closing a card with a small credit line produces a much smaller change.",
+      "replacement": ". Closing a card with a small credit line produces a much smaller change.",
+      "type": "long sentence split",
+      "why": "splits sentence to improve pacing"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "In the modeled scenario, closing the $2,500 card altered utilization by only 2.9 percentage points, while closing the $10,000 card doubled utilization from 20.0% to 40.0%. ",
+      "replacement": "",
+      "type": "untraceable figure 2.9",
+      "why": "removes unlisted figure not in source"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Closing two cards back to back, such as the $2,500 card and the $5,000 card in our example, removes $7,500 of available borrowing power in one step. ",
+      "replacement": "",
+      "type": "untraceable figure 7500",
+      "why": "removes unlisted figure not in source"
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": " In our modeling, closing an unused $2,500 card from a $20,000 total limit with $4,000 owed raises utilization from 20.0% to 22.9%, while closing both a $2,500 card and a $5,000 card reduces total limits to $12,500 and pushes utilization to 32.0%.",
+      "replacement": "",
+      "type": "untraceable figures 12500 and 32 / attribution cue",
+      "why": "removes unlisted calculation figures and attribution cue"
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "monotone-rhythm across sentences 12-38 and 58-70",
+      "why": "needs new substance",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      3
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[1].body",
+       "quote": "A card that carries a high interest rate or costly penalty fees can also pose poor terms.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[1].body",
+       "quote": "For cardholders struggling with overspending, removing the temptation of open credit lines can protect everyday household cash flow.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[2].body",
+       "quote": "Recurring subscription charges, annual membership costs, or fraudulent transactions can go unnoticed on an unmonitored account.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1899,
+    "flags": [
+     "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A card that carries a high interest rate or costly penalty fees can also pose po'; 'For cardholders struggling with overspending, removing the temptation of open cr'; 'Recurring subscription charges, annual membership costs, or fraudulent transacti'"
+    ]
+   },
+   {
+    "round": 2,
+    "at": "2026-10-27T14:29:31+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-27-podcast/audit/does-closing-a-credit-card-hurt-your-credit-score.round2.findings.txt",
+    "applied": [
+     {
+      "id": "sections[0].body",
+      "quote": "A cardholder can check their own numbers by dividing their total balances across all cards by their total remaining credit limits after a planned closure.",
+      "replacement": "A cardholder can check their own numbers easily. Divide total balances across all cards by total remaining credit limits after a planned closure.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Closing an unused card with a $10,000 credit limit cuts total available borrowing capacity in half, pushing the credit utilization ratio to 40.0%.",
+      "replacement": "Closing an unused card with a $10,000 credit limit cuts total available borrowing capacity in half. That pushes the credit utilization ratio to 40.0%.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "If your remaining credit limits are low relative to your debts, the jump in your utilization ratio can be substantial.",
+      "replacement": "Your remaining credit limits may be low relative to your debts. In that case, the jump in your utilization ratio can be substantial.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "The CFPB advises that you should not assume closing an account will improve your credit score, but the CFPB identifies three scenarios where canceling an account can be a sound financial decision.",
+      "replacement": "The CFPB advises that you should not assume closing an account will improve your credit score. Still, the CFPB identifies three scenarios where canceling an account can be a sound financial decision.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "It helps you avoid accumulating debt you cannot pay off. The CFPB also lists avoiding debt you cannot pay off as a reason to close a card.",
+      "replacement": "It helps you avoid accumulating debt you cannot pay off. The CFPB lists this as a reason to close.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Conversely, the CFPB explains that some people keep a card account open, especially an old account with a positive payment history, because doing so may help maintain a higher credit score.",
+      "replacement": "Conversely, the CFPB explains that some people keep a card account open, especially an old account with a positive payment history. Doing so may help maintain a higher credit score.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "If you hold multiple cards you no longer need, closing the card with the lowest credit limit or the highest recurring annual fee minimizes the reduction in your total credit lines.",
+      "replacement": "You might hold multiple cards you no longer need. Closing the card with the lowest credit limit or highest recurring annual fee minimizes the reduction in your total credit lines.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "The CFPB lists not planning to apply for credit soon as a reason to close; a loan application is the opposite.",
+      "replacement": "The CFPB lists not planning to apply for credit soon as a reason to close. A loan application is the opposite.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Closing a credit card can lower your credit score through higher utilization, and the larger the credit limit you remove relative to your outstanding balances, the greater the resulting jump in your ratio.",
+      "replacement": "Closing a credit card can lower your credit score through higher utilization. The larger the credit limit you remove relative to your outstanding balances, the greater the resulting jump in your ratio.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Closing an account fits a cardholder facing an expensive annual fee or poor account terms that outweigh card perks, as well as someone who wants to eliminate the temptation of accumulating debt they cannot afford to repay.",
+      "replacement": "Closing an account fits a cardholder facing an annual fee or poor account terms that outweigh card perks. It also fits someone who wants to avoid accumulating debt they cannot pay off.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "If you want to close an unneeded credit card, calculate your combined balances and your remaining total credit limits to see how your utilization ratio will adjust.",
+      "replacement": "You may want to close an unneeded credit card. Calculate your combined balances and your remaining total credit limits to see how your utilization ratio will adjust.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "Keeping an unused card open, especially an old card with a positive payment history, can help maintain a higher credit score by preserving your total available credit limit and keeping your utilization ratio lower.",
+      "replacement": "Keeping an unused card open can help maintain a higher credit score, especially an old card with a positive payment history. This preserves your total available credit limit and keeps your utilization ratio lower.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "If you choose to keep an account open with a zero balance, the CFPB advises monitoring monthly statements to protect against identity theft and catch unexpected fees.",
+      "replacement": "Suppose you keep an account open with a zero balance. The CFPB advises monitoring monthly statements to protect against identity theft and catch unexpected fees.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 1849,
+    "flags": []
+   }
+  ]
  },
  "seconds": 309.1,
  "response_id": "T6_gavGxH6ynxdIPzK_b-QM",
