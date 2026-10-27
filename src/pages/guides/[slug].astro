@@ -73,7 +73,7 @@ const jsonLdArticle = articleSchema({
     <header class="hero">
       <h1>{guide.h1}</h1>
       <Byline updated={guide.updated} />
-      {paragraphs(guide.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
+      {paragraphs(guide.introText).map((para) => <p class="lede" {...(guide.slug === "how-to-buy-anthropic-stock" ? { "data-no-entity-link": "" } : {})} set:html={linkify(para)} />)}
     </header>
 
     <section class="tools" aria-label="Tools for this journey">
@@ -87,7 +87,7 @@ const jsonLdArticle = articleSchema({
 
     {renderedSections.map((s, i) => (
       <>
-        <section class="section">
+        <section class="section" {...(guide.slug === "how-to-buy-anthropic-stock" ? { "data-no-entity-link": "" } : {})}>
           <h2>{s.heading}</h2>
           <Fragment set:html={s.html} />
         </section>
@@ -95,7 +95,7 @@ const jsonLdArticle = articleSchema({
       </>
     ))}
 
-    <section class="section">
+    <section class="section" {...(guide.slug === "how-to-buy-anthropic-stock" ? { "data-no-entity-link": "" } : {})}>
       <h2>Frequently asked questions</h2>
       <div class="faqs">
         {guide.faqs.map((f) => (

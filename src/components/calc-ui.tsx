@@ -46,11 +46,11 @@ export function NumInput({ value, onChange }: { value: number; onChange: (v: num
   const d = useDraft(value, onChange);
   return <input style={S.input} inputMode="decimal" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} />;
 }
-export function PctInput({ value, onChange }: { value: number; onChange: (v: number) => void }) {
+export function PctInput({ value, onChange, label }: { value: number; onChange: (v: number) => void; label?: string }) {
   const d = useDraft(value, onChange);
   return (
     <div style={S.suffixWrap}>
-      <input style={S.input} inputMode="decimal" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} aria-label="Percent" />
+      <input style={S.input} inputMode="decimal" value={d.text} placeholder="0" onChange={(e) => d.onChange(e.target.value)} onBlur={d.onBlur} aria-label={label ?? "Percent"} />
       <span style={S.suffix}>%</span>
     </div>
   );

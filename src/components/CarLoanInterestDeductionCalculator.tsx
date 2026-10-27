@@ -61,13 +61,13 @@ export default function CarLoanInterestDeductionCalculator({ initialData, headin
           ) : (
             <>
               <Field label="Loan balance at the start of the year (or the amount borrowed)"><MoneyInput value={v.loanAmount} onChange={(x) => set({ loanAmount: x })} /></Field>
-              <Field label="Annual percentage rate (APR)"><PctInput value={v.aprPct} onChange={(x) => set({ aprPct: x })} /></Field>
+              <Field label="Annual percentage rate (APR)"><PctInput value={v.aprPct} onChange={(x) => set({ aprPct: x })} label="Annual percentage rate (APR)" /></Field>
               <Field label="Months left on the loan at that point"><NumInput value={v.termMonths} onChange={(x) => set({ termMonths: x })} /></Field>
               <Field label="Payments made during the tax year"><NumInput value={v.monthsInYear} onChange={(x) => set({ monthsInYear: x })} /></Field>
               <p style={S.hint}>Estimated interest for those payments: {fmtUSD(estimated)}. Your lender's year-end statement has the exact figure.</p>
             </>
           )}
-          <Field label="Your federal marginal tax rate"><PctInput value={v.marginalRatePct} onChange={(x) => set({ marginalRatePct: x })} /></Field>
+          <Field label="Your federal marginal tax rate"><PctInput value={v.marginalRatePct} onChange={(x) => set({ marginalRatePct: x })} label="Your federal marginal tax rate" /></Field>
           <p style={S.hint}>The figures above are placeholders. The phase-out starts at {fmtUSD(PHASE_OUT_START[v.status])} of MAGI for this filing status.</p>
         </div>
 
@@ -86,7 +86,7 @@ export default function CarLoanInterestDeductionCalculator({ initialData, headin
             <Stat label="Interest that earns no deduction" value={fmtUSD(r.lost)} />
           </div>
           <p style={S.hint}>
-            Phase-out steps: {r.steps} (each $1,000 of MAGI over {fmtUSD(r.start)}, or part of $1,000, removes $200). The deduction reaches $0 at {fmtUSD(r.zeroAtMagi)} of MAGI for this interest amount.
+            Phase-out steps: {r.steps} (each $1,000 of MAGI over {fmtUSD(r.start)}, or part of $1,000, removes $200).{r.capped > 0 ? ` The deduction reaches $0 at ${fmtUSD(r.zeroAtMagi)} of MAGI for this interest amount.` : ""}
           </p>
           <div style={S.disclaimer}>
             Estimate only, for tax years 2025 through 2028. It follows Schedule 1-A (Form 1040), Part IV, lines 24 to 30, and assumes your vehicle and loan qualify (new, personal use, final assembly in the United States, bought after 2024). It does not check that, and it leaves out state tax and any interest you already deducted on Schedule C, E or F. MAGI is defined in the Schedule 1-A instructions; confirm it with your tax software or a preparer.
