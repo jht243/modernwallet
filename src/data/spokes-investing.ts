@@ -497,6 +497,7 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
   {
     calculator: "investing",
     slug: "withdrawal-calculator",
+    updated: "2026-10-27",
     title: "Withdrawal Calculator: How Long Will Your Money Last?",
     metaDescription:
       "See how long your withdrawals last (also called a drawdown calculator) based on your balance, withdrawal amount, and expected return. Includes the 4% rule.",
@@ -526,7 +527,7 @@ export const INVESTING_SPOKES: SpokeEntry[] = [
       {
         question: "How long will $1 million last in retirement?",
         answer:
-          "It depends on your withdrawal rate and portfolio return. At a 4% withdrawal rate ($40,000 per year, or about $3,333 per month) with a 6% average return, a $1 million portfolio can last 30+ years. At a 6% withdrawal rate ($60,000 per year), the same portfolio may deplete in roughly 24 years. Use the calculator above to model your specific numbers. For what counts as enough to retire on in the first place, see our [am I ready to retire](/guides/am-i-ready-to-retire/) guide.",
+          "It depends on your withdrawal rate and portfolio return. At a 4% withdrawal rate ($40,000 per year, or about $3,333 per month) with a 6% average return, a $1 million portfolio can last 30+ years. At a 6% withdrawal rate ($60,000 per year), the same portfolio may deplete in roughly 24 years. Use the calculator above to model your specific numbers, or see the year-by-year scenarios in our [how long $1 million lasts in retirement](/guides/how-long-will-1-million-last-in-retirement/) guide. For what counts as enough to retire on in the first place, see our [am I ready to retire](/guides/am-i-ready-to-retire/) guide.",
       },
       {
         question: "How long will $3 million last in retirement?",
