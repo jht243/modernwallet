@@ -34,6 +34,13 @@ class ChartParserTests(unittest.TestCase):
     def test_following_cluster_table_is_not_an_action(self):
         _,rows=gate.chart_rows(ACTION+'\n## Emerging clusters\n\n| Cluster | Lever | Target |\n|---|---|---|\n| example | create new content | /example |\n')
         self.assertEqual(len(rows),1)
+    def test_final_gate_accepts_verified_manifest_and_preserves_legacy_pass(self):
+        import ast, re
+        tree=ast.parse(Path(gate.__file__).read_text())
+        pattern=next(n.value for n in ast.walk(tree) if isinstance(n,ast.Constant) and isinstance(n.value,str) and n.value.startswith('duplicate check['))
+        self.assertIsNotNone(re.search(pattern,'| Duplicate check | 2 | ✅ Verified |',re.I))
+        self.assertIsNotNone(re.search(pattern,'| Duplicate check | 2 | **passed** |',re.I))
+        self.assertIsNone(re.search(pattern,'| Duplicate check | 2 | ◻ Pending |\nBuild passed',re.I))
     def test_numbered_existing_action_schema_still_parses(self):
         chart=ACTION.replace('| problem','| # | problem').replace('|---|','|---|---|',1).replace('| lookup:','| 1 | lookup:')
         _,rows=gate.chart_rows(chart+'\n'+CHECKS)

@@ -243,8 +243,8 @@ def cmd_final(a):
     cp = chart_path(m)
     _, rows = chart_rows(cp.read_text())
     man = run / "phase0-manifest.md"
-    if not man.exists() or not re.search(r"duplicate check.*passed", man.read_text(), re.I | re.S):
-        probs.append(f"{man} missing or its Duplicate check row is not 'passed' (print Phase 0's manifest table there)")
+    if not man.exists() or not re.search(r"duplicate check[^\n]*(?:passed|✅\s*Verified)", man.read_text(), re.I):
+        probs.append(f"{man} missing or its Duplicate check row is not verified/passed (print Phase 0's manifest table there)")
     audit = run / "audit.md"
     if not audit.exists():
         probs.append(f"{audit} missing — paste the independent Phase 4 auditor's report there")
