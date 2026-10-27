@@ -73,6 +73,7 @@ import MortgageRecastCalculator from "./MortgageRecastCalculator";
 import DebtToIncomeCalculator from "./DebtToIncomeCalculator";
 import SocialSecurityTaxableCalculator from "./SocialSecurityTaxableCalculator";
 import CharitableDeductionCalculator from "./CharitableDeductionCalculator";
+import CarLoanInterestDeductionCalculator from "./CarLoanInterestDeductionCalculator";
 import FloridaAmendment3Calculator from "./FloridaAmendment3Calculator";
 import StudentLoanGarnishmentCalculator from "./StudentLoanGarnishmentCalculator";
 import TaxBracketCalculator from "./TaxBracketCalculator";
@@ -174,6 +175,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "debt-to-income-ratio-calculator": DebtToIncomeCalculator,
   "social-security-taxable-benefits-calculator": SocialSecurityTaxableCalculator,
   "charitable-donation-tax-deduction-calculator": CharitableDeductionCalculator,
+  // X-trends pass (2026-10-27): car loan interest deduction (Schedule 1-A Part IV), tax years 2025 to 2028.
+  "car-loan-interest-deduction-calculator": CarLoanInterestDeductionCalculator,
   // X-trends pass (2026-10-19): Florida Amendment 3 homestead savings (Nov 3, 2026 ballot).
   "florida-amendment-3-calculator": FloridaAmendment3Calculator,
   // X-trends pass (2026-10-20): defaulted student loan collection exposure (wage garnishment, refund and Social Security offsets).

@@ -1,0 +1,16 @@
+{
+ "originRoutine": "x-trends-mindmap-auto",
+ "route": "/car-loan-interest-deduction-calculator/",
+ "queryFamily": "car loan interest deduction",
+ "hypothesis": "A dedicated calculator answers the deduction query family better than the loan-interest calculator.",
+ "primaryMetric": "Google clicks (GSC)",
+ "baseline": "not-yet-published; age-matched comparator pages",
+ "evidenceBasis": "calculated (internal modeling) + reported IRS rules",
+ "deployed": "pending verification",
+ "outcomeStatus": "not-yet-published",
+ "reviewWindows": {
+  "day28": "first 28 complete live days",
+  "day56": "second 28 complete live days"
+ },
+ "sourceRefreshTrigger": "IRS form/instruction update or tax-year rollover"
+}

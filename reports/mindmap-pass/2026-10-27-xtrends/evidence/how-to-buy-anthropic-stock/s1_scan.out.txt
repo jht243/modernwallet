@@ -1,0 +1,25 @@
+symbol ANT: 4
+   > rket for our Class A common stock. It is currently estimated that the initial public offering price per share will be between $ and $ . We have applied to list our Class A common stock on the Nasdaq Global Select Market under the symbol “ANT.” We have a novel capital and corporate governance structure. We are incorporated as a public benefit corporation under Delaware law, a structure consistent with our commitment to artificial intelligence (“AI”) saf
+price per share placeholder '$ and $': 1
+terms with zero hits (directed share, reserved share, friends and family, retail investors, individual investors, online brokerage, directed share program):
+   directed share 0
+   reserved share 0
+   friends and family 0
+   retail investor 0
+   individual investor 0
+   online brokerage 2
+   retail allocation 0
+lock-up mentions: 184 | '180-day lock-up': 12 | '365-day': 22
+revenue row:
+   > 2025 2026 Revenue $ 41 $ 386 $ 4
+Loss from operations 0
+Operating loss 20
+   > 2 Bartz settlement — — 1,500 — — Sales, marketing, and partnerships 2 43 568 120 3,168 Other operating and administrative 62 347 1,412 306 1,714 Total operating expenses 592 3,366 12,645 3,298 16,979 Operating loss (551) (2,980) (8,060) (2,135) (693) Interest income 69 106 431 115 1,111 Change in fair value of convertible notes, derivative liabilities, and SAFEs (1,045) (5,434) (34,308) (10,942) (72,388) Other 
+Net loss 54
+   > 57) Total other income (expense), net (978) (5,328) (33,885) (10,827) (80,034) Loss before provision for income taxes (1,529) (8,308) (41,945) (12,962) (80,727) Provision for income taxes 2 1 20 7 21 Net loss (2) $ (1,531) $ (8,309) $ (41,965) $ (12,969) $ (80,748) Net loss per share attributable to common stockholders, basic and diluted $ (1.42) $ (5.43) $ (23.04) $ (7.25) $ (39.88) Weighted-average numb
+Income \(loss\) from operations 0
+Total operating expenses 9
+   > 2 7,326 2,334 8,945 Personnel (1) 95 454 1,839 538 3,152 Bartz settlement — — 1,500 — — Sales, marketing, and partnerships 2 43 568 120 3,168 Other operating and administrative 62 347 1,412 306 1,714 Total operating expenses 592 3,366 12,645 3,298 16,979 Operating loss (551) (2,980) (8,060) (2,135) (693) Interest income 69 106 431 115 1,111 Change in fair value of convertible notes, derivative liabilities, and SAFEs (1,0
+Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC are the representatives: 1
+public benefit corporation: 13
+selling stockholders offered: 1
