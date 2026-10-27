@@ -1,0 +1,212 @@
+{
+ "slug": "15-year-mortgage-for-rental-property",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2235,
+ "floor": 1200,
+ "input_tokens": 24742,
+ "output_tokens": 4886,
+ "thinking_tokens": 453,
+ "cached_tokens": 21047,
+ "est_cost_usd": 0.0244,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['What a 15-Year Loan Does to Rental Cash Flow', 'The Alternative: A 30-Year Loan Paid Like a 15-Year Loan', 'How Much Rent You Need for a 15-Year Investment Property', 'Where the Rate Numbers Come From and What They Leave Out', 'Qualifying for a Shorter Term on an Investment Purchase'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
+   "claim check: 1 claim(s) still unsupported after 2 pass(es) \u2014 auditor must cut or source: 'A borrower who easily qualifies under a $2,060.79 monthly commitment may fail un'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2235,
+  "numbers_not_in_facts": [
+   "124837.2",
+   "165",
+   "2135",
+   "229537.11",
+   "3135",
+   "52432.36",
+   "64",
+   "95"
+  ],
+  "fact_budget": {
+   "fact_words": 504,
+   "floor": 1200,
+   "ratio": 0.42,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    10,
+    8
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "A 15-year mortgage for rental property purchases increases your mandatory monthly debt payment while drastically accelerating equity accumulation.",
+     "replacement": "A 15-year mortgage for rental property purchases increases your mandatory monthly debt payment while accelerating equity accumulation.",
+     "type": "unsupported",
+     "why": "SOURCE does not use 'drastically'; it states faster equity."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "In exchange for managing that higher baseline obligation, you build equity far more rapidly.",
+     "replacement": "In exchange for managing that higher baseline obligation, you build equity faster.",
+     "type": "unsupported",
+     "why": "SOURCE does not support 'far more'; it states faster equity."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Before applying extra cash toward debt reduction, verify whether your mortgage contract carries a prepayment penalty clause by reviewing terms with your loan officer.",
+     "replacement": "Whether a loan has a prepayment penalty is unknown to this page.",
+     "type": "unlinked-directive",
+     "why": "Sends reader to an unlinked outside source to verify contract terms."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Actual property tax assessments, property insurance premiums, repair bills, and property management fees vary significantly by market.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that these expenses vary significantly by market."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Lenders assess whether your verifiable income and approved rental proceeds comfortably cover all existing personal liabilities alongside the new housing payment.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe verifiable income, approved proceeds, or existing liabilities."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Underwriters also review rental income projections with specific coverage haircuts rather than simply crediting the gross lease amount.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state rules for counting rental income or coverage haircuts."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Investors facing deferred capital expenditures, roof replacements, or heating updates should also avoid the shorter term.",
+     "replacement": "Investors facing big near-term repairs should also avoid the shorter term.",
+     "type": "unsupported",
+     "why": "SOURCE specifies big near-term repairs, not roof replacements or heating updates."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Investors pursuing early financial independence through immediate portfolio income often find that lower contractual payments provide essential protection against market downturns.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state preferences around financial independence or market downturns."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "It also suits high-earning professionals who prioritize rapid equity accumulation and total interest reduction over monthly distributions.",
+     "replacement": "It also suits landlords who prioritize faster equity accumulation and total interest reduction over monthly cash flow.",
+     "type": "unsupported",
+     "why": "SOURCE states landlords who value faster equity, not high-earning professionals."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "A 15-year loan builds equity significantly faster than a 30-year loan.",
+     "replacement": "A 15-year loan builds equity faster than a 30-year loan.",
+     "type": "unsupported",
+     "why": "SOURCE does not use 'significantly'; it states faster equity."
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we evaluated the arithmetic of loan terms on investment purchases through our cash-flow modeling. On a $300,000 loan balance, choosing a 15-year term cuts lifetime interest by about $266,127 compared to a 30-year term.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not support this first-person evaluation claim."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Crucially, the survey measures purchase loans for owner-occupied, single-family primary residences for borrowers with good or excellent credit and 20% down payments.",
+     "replacement": "Crucially, the survey measures purchase loans for owner-occupied, single-family primary residences for borrowers with good or excellent credit and 20% loans (the survey's wording).",
+     "type": "unsupported",
+     "why": "SOURCE specifies 20% loans (the survey's wording), not 20% down payments."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Qualifying for a 15-year mortgage on an investment property presents a more demanding underwriting hurdle than qualifying for a standard 30-year loan. When an underwriter evaluates your file, the higher monthly debt payment directly increases the monthly obligation measured against your personal income.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Coverage instruction requires saying only that higher payment raises obligation; no underwriting hurdle stated."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Even though the loan balance of $300,000 remains identical, the monthly principal and interest increases from $2,060.79 to $2,643.10.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Coverage rule forbids numbers and extra claims in this section."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "This $582.31 difference raises the total debt payments evaluated in your debt-to-income profile. A borrower who easily qualifies under a $2,060.79 monthly commitment may fail underwriting calculations when the mandatory debt payment jumps to $2,643.10.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Coverage rule forbids numbers and extra claims; SOURCE lacks debt-to-income profile."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Yes, qualifying for a 15-year mortgage is generally more difficult because the higher monthly payment increases your debt-to-income ratio.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state qualifying is more difficult or mention debt-to-income ratio."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "On a $300,000 balance, the monthly obligation rises from $2,060.79 to $2,643.10. An underwriter evaluates whether your qualifying income covers this larger mandatory payment alongside your other debt obligations.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this underwriter evaluation rule."
+    }
+   ],
+   "deleted_final": 7,
+   "unapplied": [
+    {
+     "quote": "A borrower who easily qualifies under a $2,060.79 monthly commitment may fail underwriting calculations when the mandatory debt payment jumps to $2,643.10. ",
+     "type": "unsupported",
+     "why": "SOURCE does not state borrowers qualify or fail underwriting under these payment amounts.",
+     "replacement": "",
+     "id": "sections[4].body",
+     "reason": "quote not found on the page"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "sections[4].body",
+     "quote": "A borrower who easily qualifies under a $2,060.79 monthly commitment may fail underwriting calculations when the mandatory debt payment jumps to $2,643.10. ",
+     "type": "unsupported",
+     "reason": "quote not found on the page"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2512
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 447.1,
+ "response_id": "kK3gauviJby7xdIP4uil-AQ",
+ "generated_at": "2026-10-27T14:03:58+0000"
+}

@@ -1,0 +1,156 @@
+{
+ "slug": "does-closing-a-credit-card-hurt-your-credit-score",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2094,
+ "floor": 1200,
+ "input_tokens": 24014,
+ "output_tokens": 3380,
+ "thinking_tokens": 514,
+ "cached_tokens": 21047,
+ "est_cost_usd": 0.0184,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['What Closing a Card Does to Your Credit Utilization', 'When Closing a Card Is Still the Right Call', 'Steps to Reduce Score Impact When Closing an Account', 'Situations Where the Standard Rules Differ', 'Our Takeaway'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2094,
+  "numbers_not_in_facts": [
+   "12500",
+   "2.9",
+   "32",
+   "7500"
+  ],
+  "fact_budget": {
+   "fact_words": 390,
+   "floor": 1200,
+   "ratio": 0.33,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    6,
+    6
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we examine the mechanics of credit decisions so you can weigh the financial tradeoffs before contacting your card issuer.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support this first-person brand claim."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "If you have several other open accounts, low balances, and a strong history, the score movement may be minor.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that these specific factors make score changes minor."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Keeping that older line active preserves your available credit capacity and maintains that established history on your profile.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE forbids claiming how account age or history is maintained on a profile."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Staggering account changes over time allows your profile to absorb each shift rather than experiencing a sudden drop in total limits.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that staggering account closures allows a credit profile to absorb shifts."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "The full impact varies based on other factors across your credit profile, including your remaining credit limits and your payment track record.",
+     "replacement": "The full impact varies based on other factors across your credit profile.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that other factors include remaining limits or payment record."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Check the CFPB guidance page directly for updates on credit reporting rules.",
+     "replacement": "Check the [CFPB guidance page](https://www.consumerfinance.gov/ask-cfpb/does-it-hurt-my-credit-to-close-a-credit-card-en-1231/) directly for updates on credit reporting rules.",
+     "type": "unlinked-directive",
+     "why": "Sends reader to an outside page without a markdown link in the sentence."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Avoiding revolving interest charges and learning [how long to pay off credit card](/guides/how-long-to-pay-off-credit-card/) balances can provide greater long-term financial relief than preserving a higher credit score.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not compare financial relief to preserving a credit score."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "The balance remains owed to the issuer, and you must continue making monthly payments until the full balance is resolved.",
+     "replacement": "The balance remains owed to the issuer.",
+     "type": "unsupported",
+     "why": "SOURCE does not state ongoing monthly payment rules or issuer repayment terms."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "The CFPB does not publish specific reporting timelines or point calculations for closed cards with remaining balances, so cardholders must consult their card agreement to confirm ongoing terms and repayment requirements.",
+     "replacement": "The CFPB does not publish specific reporting timelines or point calculations for closed cards with remaining balances.",
+     "type": "unlinked-directive",
+     "why": "Sends reader to card agreement to confirm terms without a markdown link."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Because the CFPB confirms that closing a card can cause a decrease in your credit score, initiating a closure shortly before a lender pulls your credit report exposes you to unnecessary scoring volatility.",
+     "replacement": "The CFPB confirms that closing an existing card could decrease your credit score.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention credit report pulls or scoring volatility."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "In that situation, keeping the account open until after loan underwriting is completed avoids unpredictable score changes.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state loan underwriting procedures or score timing."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "The CFPB publication does not outline specific reporting timelines or point changes for closed cards carrying balances, so you should contact your card issuer directly to confirm repayment schedules and applicable interest charges.",
+     "replacement": "The CFPB publication does not outline specific reporting timelines or point changes for closed cards carrying balances.",
+     "type": "unlinked-directive",
+     "why": "Sends reader to card issuer to confirm terms without a markdown link."
+    }
+   ],
+   "deleted_final": 6,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2289
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 309.1,
+ "response_id": "T6_gavGxH6ynxdIPzK_b-QM",
+ "generated_at": "2026-10-27T14:09:07+0000"
+}

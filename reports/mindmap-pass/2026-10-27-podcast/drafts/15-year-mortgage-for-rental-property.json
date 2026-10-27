@@ -1,0 +1,90 @@
+{
+  "slug": "15-year-mortgage-for-rental-property",
+  "title": "15-Year Mortgage for Rental Property: Rates and Math",
+  "metaDescription": "Is a 15-year mortgage for a rental property worth the higher payment? Compare cash flow, interest savings, equity pacing, and break-even rent.",
+  "h1": "15-Year Mortgage for Rental Property: Cash Flow and Math",
+  "cardBlurb": "Modeled rental cash flow, interest savings, and break-even rent comparing a 15-year mortgage to a 30-year loan on an investment purchase.",
+  "introText": "A 15-year mortgage for a rental property makes financial sense only when monthly rent clears the higher loan payment with enough room for operating expenses. That interest reduction comes with a immediate operational trade-off for any real estate investor.\n\nThe shorter loan term raises the monthly principal and interest payment by $582.31, which lifts your break-even rental income from $3,221.89 to $3,834.84 every month. If your tenant pays $3,300 each month, a 30-year loan generates positive net cash flow of $74.21, whereas the 15-year loan creates a monthly deficit of $508.10. Landlords must evaluate whether accelerated principal paydown balances out thinner monthly margins on rental property investments.",
+  "sections": [
+    {
+      "heading": "What a 15-Year Loan Does to Rental Cash Flow",
+      "body": "A 15-year mortgage for rental property purchases increases your mandatory monthly debt payment while accelerating equity accumulation. In our internal modeling, we compared a 15-year and a 30-year loan on the same $300,000 rental purchase loan to see how much rent each needs. Using the [Freddie Mac](https://www.freddiemac.com/pmms) averages for the week of October 22, 2026 and our assumed $1,000 a month in other costs and 5% vacancy, we mapped payment schedules, interest totals, and equity thresholds. You can test your own figures in our [rental cash flow calculator](/real-estate/cash-flow-calculator/) using the standard fixed-rate amortization formula.\n\n| Measure | 30-Year Loan (7.32%) | 15-Year Loan (6.68%) | Difference |\n| :--- | :--- | :--- | :--- |\n| Monthly Payment (Principal and Interest) | $2,060.79 | $2,643.10 | +$582.31 |\n| Total Interest Over Full Term | $441,885.07 | $175,757.86 | -$266,127.21 |\n| Remaining Balance After 5 Years | $283,339.36 | $230,907.00 | -$52,432.36 |\n| Remaining Balance After 10 Years | $259,342.16 | $134,504.96 | -$124,837.20 |\n| Break-Even Monthly Rent (5% Vacancy + $1,000 Costs) | $3,221.89 | $3,834.84 | +$612.95 |\n\nSelecting a 15-year loan forces you to absorb a monthly payment increase of $582.31 on a $300,000 balance. That cash requirement pushes the monthly rent needed to break even up by $612.95 once vacancy loss is included. In exchange for managing that higher baseline obligation, you build equity faster. After 10 years of payments, the 15-year loan balance drops to $134,504.96, while the 30-year loan balance remains elevated at $259,342.16. Lifetime interest drops from $441,885.07 down to $175,757.86, saving $266,127.21 over the life of the debt.\n\nTo see how this affects your complete investment performance over time, review your expected overall yield with our [rental property ROI calculator](/real-estate/roi-calculator/). The fundamental trade-off is clear: you forfeit current monthly spendable income to capture faster equity growth and save more than a quarter-million dollars in interest."
+    },
+    {
+      "heading": "The Alternative: A 30-Year Loan Paid Like a 15-Year Loan",
+      "body": "You can replicate much of the interest savings of a 15-year term by sending extra principal payments on a conventional 30-year note. If you borrow $300,000 at a 30-year rate of 7.32% and voluntarily remit the 15-year payment amount of $2,643.10 each month, the loan amortizes in about 193.8 months, or roughly 16.15 years. You retire the debt nearly on the 15-year schedule while preserving critical payment flexibility. You can review the exact payoff timeline by running your numbers through our [mortgage payoff calculator](/mortgage/payoff-calculator/).\n\nTotal interest paid using this prepay strategy reaches $212,347.96. That total is $36,590.10 higher than the $175,757.86 interest on the actual 15-year note, but it cuts $229,537.11 off the standard 30-year interest cost of $441,885.07. That $36,590.10 difference represents the financial value of the lower interest rate that lenders award to true 15-year commitments. In our baseline scenario, the 15-year rate is 6.68%, which sits 64 basis points below the 30-year rate of 7.32%.\n\nThe structural benefit of the 30-year structure is that extra principal payments remain voluntary. Your contractual obligation stays locked at $2,060.79 a month. If a tenant moves out or costly maintenance arises, you can immediately drop your remittance back to the mandatory $2,060.79 floor without penalty or lender approval. A true 15-year mortgage legally obligates you to pay $2,643.10 every thirty days regardless of property occupancy.\n\nOur perspective on this choice would change if investment property rate quotes eliminate the interest rate spread between the two terms. If a commercial lender quotes the exact same interest rate on both terms, taking the 15-year loan forfeits payment flexibility without securing any rate discount. You can compare loan mechanisms in detail in our [15-year vs 30-year mortgage comparison](/compare/15-year-vs-30-year-mortgage/). Whether a loan has a prepayment penalty is unknown to this page."
+    },
+    {
+      "heading": "How Much Rent You Need for a 15-Year Investment Property",
+      "body": "Calculating your required rent begins with the break-even formula where net rent covers both debt service and operating costs. In our core model, we assume $1,000 in monthly expenses covering maintenance, management, insurance, and taxes, along with an ongoing 5% vacancy allowance. Because 5% of gross rent is lost to vacancy, the remaining 95% of gross rent must equal your monthly loan payment plus $1,000 of fixed costs. You can calculate your net rental figures directly with our [rental income calculator](/real-estate/rental-income-calculator/).\n\nTo see how rate variations influence required leasing rates, consider these hypothetical rate scenarios for a 15-year mortgage for rental property purchases on a $300,000 balance. The rate premiums shown below are hypothetical examples designed to show math sensitivity, not lender quotes:\n\n| 15-Year Loan Scenario | Monthly Payment | Break-Even Rent (5% Vacancy + $1,000 Costs) |\n| :--- | :--- | :--- |\n| Base Loan (6.68%) | $2,643.10 | $3,834.84 |\n| Hypothetical +0.50% Premium (7.18%) | $2,726.76 | $3,922.91 |\n| Hypothetical +1.00% Premium (7.68%) | $2,811.81 | $4,012.43 |\n\nAt the base 6.68% rate, you need gross rent of $3,834.84 to break even. A hypothetical 0.50 percentage point rate increase to 7.18% lifts the debt payment to $2,726.76, pushing break-even rent to $3,922.91. A full 1.00 percentage point increase to 7.68% raises the loan obligation to $2,811.81 and requires $4,012.43 in monthly rent just to cover basic costs.\n\nNow observe a worked cash-flow example with an actual market rent of $3,300 per month. After accounting for the 5% vacancy deduction ($165.00), you collect $3,135.00 in effective monthly income. Subtracting $1,000 in operational costs leaves $2,135.00 in net operating income before debt payments.\n\nOn the 30-year loan at $2,060.79 per month, your net cash flow equals +$74.21 each month ($2,135.00 minus $2,060.79). On the 15-year loan at $2,643.10 per month, your net cash flow drops to -$508.10 each month ($2,135.00 minus $2,643.10). An investor on the 15-year schedule must contribute $508.10 out of pocket each month to keep the property running. You must determine if your cash reserves can absorb a regular monthly deficit in exchange for rapid equity build."
+    },
+    {
+      "heading": "Where the Rate Numbers Come From and What They Leave Out",
+      "body": "The interest rates used in these models derive from the weekly averages published by [Freddie Mac](https://www.freddiemac.com/pmms) in its Primary Mortgage Market Survey as of October 22, 2026. In that release, the national average for a 30-year fixed-rate mortgage was 7.32%, while the 15-year fixed-rate mortgage averaged 6.68%. For historical context, one week earlier the 30-year averaged 7.40% and the 15-year was 6.71%. One year prior, the 30-year averaged 6.19% and the 15-year stood at 5.44%.\n\nThe Freddie Mac survey gathers rate information from lenders submitting conforming loan applications across the country. Crucially, the survey measures purchase loans for owner-occupied, single-family primary residences for borrowers with good or excellent credit and 20% loans (the survey's wording). Because the survey reflects owner-occupied primary residences, it does not describe investment-property financing. Lenders price investment properties differently, meaning your actual rate quote will vary. Lenders also do not report points and origination fees inside the survey results. You should contact lenders directly to obtain actual 15 year investment property mortgage rates for your specific transaction.\n\nReaders must also recognize what our mathematical model leaves out. The calculations incorporate author assumptions of $1,000 a month in combined non-mortgage operating costs and a 5% vacancy rate. These expense levels are illustrative baseline assumptions rather than market data. \n\nFurthermore, this model excludes income taxes, federal depreciation deductions, closing costs, required liquid reserves, future rental rate increases, loan points, and private mortgage insurance. It also omits the detailed qualification guidelines that lenders apply to investment borrowers. For deeper context on operational tax write-offs, consult our guide on [rental property tax deductions](/guides/rental-property-tax-deductions/)."
+    },
+    {
+      "heading": "Qualifying for a Shorter Term on an Investment Purchase",
+      "body": "When considering debt limits across your real estate holdings, evaluate your debt ratios with our [home affordability calculator](/mortgage/home-affordability-calculator/) to see how increased monthly commitments affect borrowing power."
+    },
+    {
+      "heading": "Who This Loan Fits and Who Should Avoid It",
+      "body": "A 15-year mortgage for rental property investments is not suitable for an investor operating with narrow profit margins. If a rental unit commands market rent close to the $3,222 baseline needed for a 30-year loan, taking a 15-year term forces a monthly operational deficit. Investors facing big near-term repairs should also avoid the shorter term. Locking into a higher mandatory payment restricts the liquidity needed to address emergency building repairs.\n\nSimilarly, buyers focused primarily on building immediate monthly cash flow for living expenses should pass on 15-year financing. As demonstrated in our $3,300 rent scenario, the 30-year note leaves positive cash flow, whereas the 15-year note demands monthly out-of-pocket contributions. You can explore how distributions align with long-term goals in our analysis of whether you [can retire on rental income](/guides/can-i-retire-on-rental-income/), or compare direct property ownership with indirect trusts in our [REIT vs rental property comparison](/compare/reit-vs-rental-property/).\n\nConversely, a 15-year loan fits a landlord whose property commands gross rent well above the $3,835 break-even threshold. It also suits landlords who prioritize faster equity accumulation and total interest reduction over monthly cash flow. If you possess stable personal income and substantial cash reserves, using a 15-year mortgage allows your tenant to pay off your asset in half the time while saving $266,127 in financing costs."
+    },
+    {
+      "heading": "Our Takeaway",
+      "body": "Based on our internal modeling, a 15-year term on a $300,000 loan saves approximately $266,127 in lifetime interest and reduces the principal balance to $134,505 after 10 years, compared to $259,342 on a 30-year loan. However, achieving those savings requires managing a mandatory monthly payment that is $582 higher, which pushes the break-even gross rent up by roughly $613 per month.\n\nThis structure fits an investor with strong rental margins and healthy reserves who targets rapid debt elimination. It does not fit an investor who needs monthly cash flow or who operates in a market where prevailing rents cannot absorb the higher debt service. Additionally, paying the 15-year payment amount on a flexible 30-year mortgage pays the balance off in roughly 16.2 years with $36,590 in additional interest, while preserving the legal option to remit the lower payment during tenant turnover.\n\nYour actual outcome will vary based on the specific investment property mortgage rates you are quoted, local operating expenses, and sustained occupancy. To evaluate the debt terms for your next purchase, request formal loan estimates from multiple commercial lenders and model your property numbers through our [rental cash flow calculator](/real-estate/cash-flow-calculator/) before committing to a 15-year mortgage for rental property financing."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/real-estate/cash-flow-calculator/",
+      "label": "Rental cash flow"
+    },
+    {
+      "href": "/real-estate/rental-income-calculator/",
+      "label": "Rental income"
+    },
+    {
+      "href": "/mortgage/payoff-calculator/",
+      "label": "Mortgage payoff"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the monthly payment on a $100,000 15-year loan?",
+      "answer": "At a 6.68% interest rate, the monthly principal and interest payment on a $100,000 15-year loan is approximately $881.03. By comparison, a 30-year loan on $100,000 at a 7.32% interest rate requires about $686.93 per month. These figures reflect the Freddie Mac survey averages published on October 22, 2026 for owner-occupied purchases, meaning actual investment property quotes will vary."
+    },
+    {
+      "question": "Is it harder to qualify for a 15-year mortgage?",
+      "answer": ""
+    },
+    {
+      "question": "Is a 15-year mortgage good for an investment property?",
+      "answer": "A 15-year mortgage works well if your gross rent comfortably exceeds the higher break-even threshold and you prioritize debt elimination over current cash flow. In our model, it saves $266,127 in interest. If your rental margins are thin or you experience tenant turnover, the higher monthly obligation can create cash flow strain."
+    },
+    {
+      "question": "How fast does a 15-year loan build equity compared with a 30-year?",
+      "answer": "A 15-year loan builds equity faster than a 30-year loan. On a $300,000 loan, the remaining balance after 5 years is $230,907.00 for the 15-year term versus $283,339.36 for the 30-year term. After 10 years, the 15-year balance falls to $134,504.96, while the 30-year balance sits at $259,342.16."
+    },
+    {
+      "question": "Can I pay a 30-year mortgage off in 15 years?",
+      "answer": "Yes, you can pay off a 30-year loan early by making higher monthly payments. Paying the 15-year payment of $2,643.10 on a 30-year loan at 7.32% pays off the debt in about 193.8 months, or roughly 16.15 years. You pay about $36,590.10 more in total interest than a true 15-year loan, but you retain the option to pay the lower $2,060.79 minimum payment if needed."
+    },
+    {
+      "question": "What are rates for investment-property loans?",
+      "answer": "Specific investment-property rates are not published in the Freddie Mac survey, which only tracks owner-occupied single-family residential purchases. Lenders typically price investment loans with different rates and fees. You should contact lenders directly to receive quotes for investment-property financing."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Freddie Mac Primary Mortgage Market Survey",
+      "url": "https://www.freddiemac.com/pmms"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}
