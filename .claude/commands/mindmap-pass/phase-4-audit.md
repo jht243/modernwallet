@@ -7,7 +7,7 @@ Run startup as a standalone command and inspect its actual exit code; never pipe
 # Phase 4 — Confirm new content (dedicated adversarial review)
 
 <!-- mindmap-visible-checks-v1 -->
-**Show instruction checks in the chart:** Follow `_workflow-checkpoints.md`, “Visible instruction checklist in the output chart.” Include separate **Read** and **Followed** statuses with linked evidence, plus per-page duplicate, testing-eligibility, testing-evidence/label and Phase 4 checks. Use `✅ Read` / `✅ Verified` only for completed, evidenced work; otherwise show `◻ Pending`, `❌ Failed`, or justified `— N/A`. Reading is not application, testing eligibility is not a product test, and a `lookup:` marker is not an independent duplicate-review pass. Keep the existing action-table schema and add the checklist under its own heading. Refresh it at chart presentation, Phase 0, each relevant completed gate and final handoff; later gates remain pending until performed. No additional human gate.
+**Approval chart: completed preparation only.** Follow `_workflow-checkpoints.md`, “Approval chart — completed preparation only.” Finish all applicable instruction reading, research, duplicate review, testing eligibility/evidence decisions, supported takeaway/attribution briefs and internal-link/technical/publication planning BEFORE showing the chart. Show only evidenced `✅ Read` / `✅ Verified` preparation or explained N/A; unfinished preparation blocks the approval chart. Keep the full action table and Phases 1–9 as the future execution plan, including writing, independent content audit, internal-link edits, sitemap and publication. Do not show pending cells or claim those execution steps already happened. Approval remains the sole existing human gate.
 <!-- /mindmap-visible-checks-v1 -->
 
 
@@ -68,7 +68,7 @@ A spec that passes all seven points is a **PASS** — the human builds the asset
 
 <!-- CRON_PROMPT_START -->
 <!-- mindmap-visible-checks-cron-v1 -->
-Update the chart’s Instruction checks and Per-page checks under `_workflow-checkpoints.md`; every green check needs current artifact evidence, and later gates remain pending.
+Show the approval chart only after all applicable preparation passes independent chart review under `_workflow-checkpoints.md`. No incomplete status cells. Writing, content audit, internal-link changes and publication stay in the future execution plan until approved; never pre-certify their results.
 <!-- /mindmap-visible-checks-cron-v1 -->
 
 <!-- workflow-checkpoint-cron-v1 -->

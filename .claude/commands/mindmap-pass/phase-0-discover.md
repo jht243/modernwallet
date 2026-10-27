@@ -7,7 +7,7 @@ Run startup as a standalone command and inspect its actual exit code; never pipe
 # Phase 0 — Discover project facts + load chart
 
 <!-- mindmap-visible-checks-v1 -->
-**Show instruction checks in the chart:** Follow `_workflow-checkpoints.md`, “Visible instruction checklist in the output chart.” Include separate **Read** and **Followed** statuses with linked evidence, plus per-page duplicate, testing-eligibility, testing-evidence/label and Phase 4 checks. Use `✅ Read` / `✅ Verified` only for completed, evidenced work; otherwise show `◻ Pending`, `❌ Failed`, or justified `— N/A`. Reading is not application, testing eligibility is not a product test, and a `lookup:` marker is not an independent duplicate-review pass. Keep the existing action-table schema and add the checklist under its own heading. Refresh it at chart presentation, Phase 0, each relevant completed gate and final handoff; later gates remain pending until performed. No additional human gate.
+**Approval chart: completed preparation only.** Follow `_workflow-checkpoints.md`, “Approval chart — completed preparation only.” Finish all applicable instruction reading, research, duplicate review, testing eligibility/evidence decisions, supported takeaway/attribution briefs and internal-link/technical/publication planning BEFORE showing the chart. Show only evidenced `✅ Read` / `✅ Verified` preparation or explained N/A; unfinished preparation blocks the approval chart. Keep the full action table and Phases 1–9 as the future execution plan, including writing, independent content audit, internal-link edits, sitemap and publication. Do not show pending cells or claim those execution steps already happened. Approval remains the sole existing human gate.
 <!-- /mindmap-visible-checks-v1 -->
 
 
@@ -54,7 +54,7 @@ After selecting:
 
 ## Pre-execution manifest gate (HARD HUMAN GATE)
 
-After parsing the chart, verify coverage results and the independent duplicate-review report for every applicable content target, including the recorded existing-page intent decision and checked commits. A `lookup:` entry alone never passes the Duplicate check. Show verified/pending/failed counts and link the evidence in the Instruction checks section. Then **STOP and print the manifest table, then wait for the user's explicit approval before starting Phase 1.** Never auto-proceed past this gate.
+After parsing the chart, verify coverage results and the independent duplicate-review report for every applicable content target, including the recorded existing-page intent decision and checked commits. A `lookup:` entry alone never passes the Duplicate check. Complete every applicable preparation check and link its independent review evidence before presenting the approval chart. Then **STOP and print the manifest table, then wait for the user's explicit approval before starting Phase 1.** Never auto-proceed past this gate.
 
 The manifest mirrors the format of the Phase 8 end-of-run summary so the user sees the same shape going in and coming out. One table, three columns: **Phase / Rows / Plan**. No redundant bucket column — each phase maps to exactly one bucket.
 
@@ -62,7 +62,7 @@ The manifest mirrors the format of the Phase 8 end-of-run summary so the user se
 
 | Phase                  | Rows | Plan |
 |------------------------|------|------|
-| Duplicate check | {N} applicable targets | `✅ Verified` only when coverage and independent duplicate-review evidence pass for every target; otherwise show `◻ Pending` or `❌ Failed`, affected targets and the evidence link. A `lookup:` entry alone is insufficient. |
+| Duplicate check | {N} applicable targets | `✅ Verified` only when coverage and independent duplicate-review evidence pass for every target; otherwise finish the review before presenting the approval chart, or report the blocker without a ready chart. A `lookup:` entry alone is insufficient. |
 | 1 — Cannibalization detection (advisory) | {N}  | Per-row plan: "FLAG /page-a vs /page-b (same cluster) — recommend manual-consolidate / differentiate; **no edits, detection only**" |
 | 2 — Metadata           | {N}  | Per-row plan: "Rewrite metaTitle+desc on: {target 1}, {target 2}, ..." (or "skipped — no rows") |
 | 3 — New content        | {N}  | Per-row plan: "Create /route-a [article, page type + its depth floor — e.g. `comparison, ≥1,500 words`] — **answers "{reader_question}" in {answer_placement}**; create /route-b [calculator — user inputs X → outputs Y, BUILT in Phase 3c] — answers "{reader_question}"; ..." — name format for each row, the floor from the `phase-3-new-content.md` table, AND the chart's `reader_question` + `answer_placement` (cols 10–12) so the user approves the *question each page answers*, not just its topic |
