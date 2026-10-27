@@ -1,0 +1,52 @@
+.claude/commands/mindmap-pass/phase-build-brief.md — characters 36000 onward
+
+as seo-gsc-pass)
+
+**Evidence first — run the coverage lookup before you judge any rung.** The ladder below asks whether an existing page is a "reasonable home" or "already covers it". Do not answer that from memory: run
+
+```bash
+python3 scripts/mindmap/coverage_lookup.py --site-url <BASE_URL> --candidate "<proposed route>|<keyword phrase(s)>|<reader question>"   # repeat --candidate per row; or --chart <draft chart> once the table exists
+```
+
+For every candidate it lists the existing pages that may already serve the same reader — from `data/*.ts` (live **and** not-yet-deployed), the sitemaps / `search-index.json`, the redirects (a topic deliberately merged elsewhere), past mindmap charts (what earlier runs shipped or dropped, and why), commit messages, and the other rows of this run — each with its title + description. It is evidence only; it never decides. `<BASE_URL>` is the site origin from Phase 0; the tool reads the live sitemap when the repo has no local one (database-backed and build-time-sitemap sites) and fetches titles for pages it only knows from the sitemap.
+
+For each listed page, write one line on **what its reader is trying to do** (from its title + description — nothing more is read) and compare that with the row's reader question (col 10). Same reader goal → the ladder's "already covers it" / "right topical home" rungs apply, exactly as before; a different goal on the same topic → say so and continue down the ladder. The row's col 1 `problem` text must name the strongest lookup match (`lookup: /route — <its reader intent>`) or `lookup: no match`. A page the lookup flags as **NOT IN SITEMAP** counts as existing (another routine built it, or it is live and the sitemap misses it). A **PARENT PAGE** is the broader page the candidate sits under (e.g. `/guides/claude-dashboards` for `claude-dashboards-vs-power-bi`): say whether its reader goal is the same or narrower. "Same run overlap" means two rows of this chart would compete — merge or drop one.
+- **No existing page is a reasonable home for this intent →** `create new content` (a new page/hub for the topic). This is the primary engine for net-new pages — exactly what the user is asking for when they say "things I want added."
+- **An existing page is the right topical home but doesn't address this angle/subtopic →** `update existing body text` (add a section/FAQ — additive only, never a rewrite).
+- **An existing page already covers it in the body AND ranks, but the title/meta/snippet doesn't reflect the framing →** `update existing metadata`.
+- **Two existing pages each partly serve the intent →** do NOT pick an edit lever; flag it as `consolidate / canonicalize` for Phase 1 (advisory only — the workflow never executes a 301/canonical).
+
+Name the exact target (file/route) for the chosen lever. For `create new content`, the target is the proposed new route.
+
+### For every `create new content` row — recommend the BEST FORMAT, not just an article
+
+**Start from the answer SHAPE decided in Step 4.6 (col 11), not from the keywords.** The shape is
+what the reader needs to receive, so it constrains the format before any query signal is read:
+
+| Answer shape (col 11) | Formats it permits |
+|---|---|
+| **mechanism** (how) | `article` with a numbered build sequence, `template`, or `interactive tool` — never a bare explainer |
+| **list** (what should be on/included) | `template` / downloadable checklist, or `article` built as the list |
+| **pick** (which / best) | `comparison table/database`, or `quiz/assessment` when the pick depends on the reader's situation |
+| **figure** (how much / cost) | `calculator` when inputs change the number, else `comparison table/database` or `article` |
+| **verdict** (is it worth it) | `article` carrying the break-even, or `calculator` for the break-even itself |
+| **definition** (what is) | `article` / `glossary/reference` |
+
+Then use the query signals to choose WITHIN that row, and to break ties: (same list as seo-gsc-pass): **interactive tool / calculator** (calculator/estimate/cost/ROI/score signals), **quiz / assessment** (which/what-type/best-for-me signals), **template / downloadable** (template/example/checklist/worksheet signals), **comparison table / database** (vs/alternatives/list-of signals), **glossary / reference** (definitional lookups), **data-driven report / study** (benchmark/stat topics), or **article / guide** (the default only when nothing above fits). Add the `format` field with a one-line rationale grounded in the phrases; for tool/quiz/template rows, note in the solution column what the interactive element would DO.
+
+## ORDER OF OPERATIONS — VALIDATE & CLASSIFY FIRST, THEN DEDUP AGAINST COMMITS
+Generate and validate your candidate rows from the brief + SEMRUSH FIRST; do not let commit history bias what you look at. Only once you have a concrete candidate (keyword + action + target file/route) do you check whether it already shipped. Mechanics:
+1. Draft + SEMRUSH-validate + classify each candidate (Lenses 1, 2 & 3 above).
+2. Run `git log -20 --stat` **once** for topic context (recent new pages/routes + `reports/mindmap-pass/*.md`), then a **targeted `git log -p -- <target>`** only on the file/route each candidate touches.
+3. A candidate is a **duplicate** if those commits already show: a page/route created on that topic (`create new content`), a substantive body section already added for that keyword/cluster (`update existing body text`), or that page's title/meta/H1 already rewritten for that term (`update existing metadata`).
+4. **Any candidate that duplicates shipped work is DROPPED** — record it in the exclusions paragraph as "already shipped in `<SHA>`," never as a table row. Every surviving row cites the specific SHA(s) checked (or "no prior commits touch this file/route").
+
+## Output format (IDENTICAL to the seo-gsc-pass engine so Phases 0–9 parse it unchanged)
+
+Main action table columns — **col 1: `problem`** (which lens surfaced it — direct-intent vs adjacent-discovery — the cluster/theme + 2–4 member phrases from SEMRUSH/Autocomplete as evidence, the SEMRUSH volume/KD/competition read, and the diagnosis of why the site doesn't own it yet; for inference-based/news rows say so and cite the signal), **col 2: `solution`** (the specific lever in one clause — "Create /route targeting 'X' under the {hub} hub [format]", "Add a section on X to {page}", "Work 'X' into the title + meta of {page}"; for non-article `create new content` rows describe what the format would DO), **col 3: `bucket`** (must map cleanly to exactly one canonical bucket: `update existing metadata`, `create new content`, `update existing body text`, `add internal links`, `consolidate / canonicalize`), **col 4: `target`** (exact file path or route), **col 5: `format`** (for `create new content`: one of `article`, `interactive tool`, `calculator`, `quiz/assessment`, `template`, `comparison table/database`, `glossary/reference`, `data report` + one-line rationale; else `n/a`), **col 6: `best_medium`** (ONLY for `create new content`: one of `text`, `image`, `video`, `chart`, `downloadable data`, `interactive tool`; else `n/a`), **col 7: `resolved_deliverable`** (`best_medium` mapped through our production-capability rules — **WE CANNOT GENERATE IMAGE OR VIDEO ASSETS**: `text`→text, `image`→text, `video`→text, `chart`→chart, `downloadable data`→`downloadable data + on-page text`, `interactive tool`→interactive tool; `n/a` for non-create rows — this is what Phase 3 actually ships and Phase 4 audits), **col 8: `serp_verdict`** (from Step 4.5 — `winnable` / `contested` / `locked` / `unread`, plus any flags in parentheses, e.g. `winnable (forum-owned, AI Overview)`; `unread` for rows whose head was not read), **col 9: `serp_evidence`** (one clause of the actual SERP read — who owns page one, whether an AI Overview is present and who it cites — or the reason the SERP was unread).
+
+**col 10: `reader_question`** (the question in the reader's words PLUS the evidence tag in brackets — `[PAA n/m <pattern>; ac n/m]`, `[verb-only — no PAA, no completions]`, or `[PAA n/m on-topic; n/m off-topic: <what>]`), **col 11: `answer`** (one sentence + its shape: mechanism / pick / figure / verdict / list), **col 12: `answer_placement`** (`section 1` or `section 2`, with the section's working heading) — from Step 4.6. Required on every `create new content` and `update existing body text` row; `n/a` on metadata, link and advisory rows.
+
+Cols 8–9 are appended AFTER the existing columns so Phases 0–9 parse cols 1–7 exactly as before; they are advisory context for the manifest gate and no phase executes off them. **Cols 10–12 are NOT advisory**: Phase 0 prints them per row in the manifest, Phase 3 copies them into each row prompt, and Phase 4 fails a page whose first two sections do not deliver col 11.
+
+The table contains **only actionable rows.** No "no action / already addressed / leave alone" rows — note those in a brief exclusions paragraph below the table instead. If after filte

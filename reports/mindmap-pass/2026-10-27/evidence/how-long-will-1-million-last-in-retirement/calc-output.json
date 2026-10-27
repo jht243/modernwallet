@@ -1,0 +1,682 @@
+{
+ "generated": "2026-10-27",
+ "convention": "flat monthly withdrawal in today's dollars; return is REAL annual return, compounded monthly (annual/12), withdrawal at end of each month",
+ "scenarios": [
+  {
+   "balance": 1000000,
+   "monthly": 3000,
+   "annualRealPct": 0,
+   "months": 334,
+   "years": 27.8,
+   "closedFormMonths": 333.3,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 3000,
+   "annualRealPct": 2,
+   "months": 487,
+   "years": 40.6,
+   "closedFormMonths": 487,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 3000,
+   "annualRealPct": 4,
+   "months": null,
+   "years": null,
+   "closedFormMonths": null,
+   "perpetual": true
+  },
+  {
+   "balance": 1000000,
+   "monthly": 3000,
+   "annualRealPct": 5,
+   "months": null,
+   "years": null,
+   "closedFormMonths": null,
+   "perpetual": true
+  },
+  {
+   "balance": 1000000,
+   "monthly": 3333.33,
+   "annualRealPct": 0,
+   "months": 301,
+   "years": 25.1,
+   "closedFormMonths": 300,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 3333.33,
+   "annualRealPct": 2,
+   "months": 417,
+   "years": 34.8,
+   "closedFormMonths": 416.2,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 3333.33,
+   "annualRealPct": 4,
+   "months": null,
+   "years": null,
+   "closedFormMonths": null,
+   "perpetual": true
+  },
+  {
+   "balance": 1000000,
+   "monthly": 3333.33,
+   "annualRealPct": 5,
+   "months": null,
+   "years": null,
+   "closedFormMonths": null,
+   "perpetual": true
+  },
+  {
+   "balance": 1000000,
+   "monthly": 4000,
+   "annualRealPct": 0,
+   "months": 250,
+   "years": 20.8,
+   "closedFormMonths": 250,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 4000,
+   "annualRealPct": 2,
+   "months": 324,
+   "years": 27,
+   "closedFormMonths": 323.7,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 4000,
+   "annualRealPct": 4,
+   "months": 539,
+   "years": 44.9,
+   "closedFormMonths": 538.4,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 4000,
+   "annualRealPct": 5,
+   "months": null,
+   "years": null,
+   "closedFormMonths": null,
+   "perpetual": true
+  },
+  {
+   "balance": 1000000,
+   "monthly": 5000,
+   "annualRealPct": 0,
+   "months": 200,
+   "years": 16.7,
+   "closedFormMonths": 200,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 5000,
+   "annualRealPct": 2,
+   "months": 244,
+   "years": 20.3,
+   "closedFormMonths": 243.5,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 5000,
+   "annualRealPct": 4,
+   "months": 331,
+   "years": 27.6,
+   "closedFormMonths": 330.1,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 5000,
+   "annualRealPct": 5,
+   "months": 431,
+   "years": 35.9,
+   "closedFormMonths": 430.9,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 6000,
+   "annualRealPct": 0,
+   "months": 167,
+   "years": 13.9,
+   "closedFormMonths": 166.7,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 6000,
+   "annualRealPct": 2,
+   "months": 196,
+   "years": 16.3,
+   "closedFormMonths": 195.4,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 6000,
+   "annualRealPct": 4,
+   "months": 244,
+   "years": 20.3,
+   "closedFormMonths": 243.7,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 6000,
+   "annualRealPct": 5,
+   "months": 286,
+   "years": 23.8,
+   "closedFormMonths": 285.1,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 8000,
+   "annualRealPct": 0,
+   "months": 125,
+   "years": 10.4,
+   "closedFormMonths": 125,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 8000,
+   "annualRealPct": 2,
+   "months": 141,
+   "years": 11.8,
+   "closedFormMonths": 140.3,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 8000,
+   "annualRealPct": 4,
+   "months": 162,
+   "years": 13.5,
+   "closedFormMonths": 162,
+   "perpetual": false
+  },
+  {
+   "balance": 1000000,
+   "monthly": 8000,
+   "annualRealPct": 5,
+   "months": 177,
+   "years": 14.8,
+   "closedFormMonths": 176.9,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 6000,
+   "annualRealPct": 0,
+   "months": 334,
+   "years": 27.8,
+   "closedFormMonths": 333.3,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 6000,
+   "annualRealPct": 2,
+   "months": 487,
+   "years": 40.6,
+   "closedFormMonths": 487,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 6000,
+   "annualRealPct": 4,
+   "months": null,
+   "years": null,
+   "closedFormMonths": null,
+   "perpetual": true
+  },
+  {
+   "balance": 2000000,
+   "monthly": 6000,
+   "annualRealPct": 5,
+   "months": null,
+   "years": null,
+   "closedFormMonths": null,
+   "perpetual": true
+  },
+  {
+   "balance": 2000000,
+   "monthly": 6666.67,
+   "annualRealPct": 0,
+   "months": 300,
+   "years": 25,
+   "closedFormMonths": 300,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 6666.67,
+   "annualRealPct": 2,
+   "months": 417,
+   "years": 34.8,
+   "closedFormMonths": 416.2,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 6666.67,
+   "annualRealPct": 4,
+   "months": null,
+   "years": null,
+   "closedFormMonths": 4359.8,
+   "perpetual": true
+  },
+  {
+   "balance": 2000000,
+   "monthly": 6666.67,
+   "annualRealPct": 5,
+   "months": null,
+   "years": null,
+   "closedFormMonths": null,
+   "perpetual": true
+  },
+  {
+   "balance": 2000000,
+   "monthly": 8000,
+   "annualRealPct": 0,
+   "months": 250,
+   "years": 20.8,
+   "closedFormMonths": 250,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 8000,
+   "annualRealPct": 2,
+   "months": 324,
+   "years": 27,
+   "closedFormMonths": 323.7,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 8000,
+   "annualRealPct": 4,
+   "months": 539,
+   "years": 44.9,
+   "closedFormMonths": 538.4,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 8000,
+   "annualRealPct": 5,
+   "months": null,
+   "years": null,
+   "closedFormMonths": null,
+   "perpetual": true
+  },
+  {
+   "balance": 2000000,
+   "monthly": 10000,
+   "annualRealPct": 0,
+   "months": 200,
+   "years": 16.7,
+   "closedFormMonths": 200,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 10000,
+   "annualRealPct": 2,
+   "months": 244,
+   "years": 20.3,
+   "closedFormMonths": 243.5,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 10000,
+   "annualRealPct": 4,
+   "months": 331,
+   "years": 27.6,
+   "closedFormMonths": 330.1,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 10000,
+   "annualRealPct": 5,
+   "months": 431,
+   "years": 35.9,
+   "closedFormMonths": 430.9,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 12000,
+   "annualRealPct": 0,
+   "months": 167,
+   "years": 13.9,
+   "closedFormMonths": 166.7,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 12000,
+   "annualRealPct": 2,
+   "months": 196,
+   "years": 16.3,
+   "closedFormMonths": 195.4,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 12000,
+   "annualRealPct": 4,
+   "months": 244,
+   "years": 20.3,
+   "closedFormMonths": 243.7,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 12000,
+   "annualRealPct": 5,
+   "months": 286,
+   "years": 23.8,
+   "closedFormMonths": 285.1,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 16000,
+   "annualRealPct": 0,
+   "months": 125,
+   "years": 10.4,
+   "closedFormMonths": 125,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 16000,
+   "annualRealPct": 2,
+   "months": 141,
+   "years": 11.8,
+   "closedFormMonths": 140.3,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 16000,
+   "annualRealPct": 4,
+   "months": 162,
+   "years": 13.5,
+   "closedFormMonths": 162,
+   "perpetual": false
+  },
+  {
+   "balance": 2000000,
+   "monthly": 16000,
+   "annualRealPct": 5,
+   "months": 177,
+   "years": 14.8,
+   "closedFormMonths": 176.9,
+   "perpetual": false
+  }
+ ],
+ "exhaustAt": [
+  {
+   "balance": 1000000,
+   "annualRealPct": 0,
+   "years": 20,
+   "monthly": 4166.67
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 0,
+   "years": 25,
+   "monthly": 3333.33
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 0,
+   "years": 30,
+   "monthly": 2777.78
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 0,
+   "years": 35,
+   "monthly": 2380.95
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 2,
+   "years": 20,
+   "monthly": 5058.83
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 2,
+   "years": 25,
+   "monthly": 4238.54
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 2,
+   "years": 30,
+   "monthly": 3696.19
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 2,
+   "years": 35,
+   "monthly": 3312.63
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 4,
+   "years": 20,
+   "monthly": 6059.8
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 4,
+   "years": 25,
+   "monthly": 5278.37
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 4,
+   "years": 30,
+   "monthly": 4774.15
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 4,
+   "years": 35,
+   "monthly": 4427.75
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 5,
+   "years": 20,
+   "monthly": 6599.56
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 5,
+   "years": 25,
+   "monthly": 5845.9
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 5,
+   "years": 30,
+   "monthly": 5368.22
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 5,
+   "years": 35,
+   "monthly": 5046.88
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 0,
+   "years": 20,
+   "monthly": 8333.33
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 0,
+   "years": 25,
+   "monthly": 6666.67
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 0,
+   "years": 30,
+   "monthly": 5555.56
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 0,
+   "years": 35,
+   "monthly": 4761.9
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 2,
+   "years": 20,
+   "monthly": 10117.67
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 2,
+   "years": 25,
+   "monthly": 8477.09
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 2,
+   "years": 30,
+   "monthly": 7392.39
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 2,
+   "years": 35,
+   "monthly": 6625.26
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 4,
+   "years": 20,
+   "monthly": 12119.61
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 4,
+   "years": 25,
+   "monthly": 10556.74
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 4,
+   "years": 30,
+   "monthly": 9548.31
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 4,
+   "years": 35,
+   "monthly": 8855.49
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 5,
+   "years": 20,
+   "monthly": 13199.11
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 5,
+   "years": 25,
+   "monthly": 11691.8
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 5,
+   "years": 30,
+   "monthly": 10736.43
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 5,
+   "years": 35,
+   "monthly": 10093.75
+  }
+ ],
+ "interestOnly": [
+  {
+   "balance": 1000000,
+   "annualRealPct": 2,
+   "annual": 20000,
+   "monthly": 1666.67
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 3,
+   "annual": 30000,
+   "monthly": 2500
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 4,
+   "annual": 40000,
+   "monthly": 3333.33
+  },
+  {
+   "balance": 1000000,
+   "annualRealPct": 5,
+   "annual": 50000,
+   "monthly": 4166.67
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 2,
+   "annual": 40000,
+   "monthly": 3333.33
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 3,
+   "annual": 60000,
+   "monthly": 5000
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 4,
+   "annual": 80000,
+   "monthly": 6666.67
+  },
+  {
+   "balance": 2000000,
+   "annualRealPct": 5,
+   "annual": 100000,
+   "monthly": 8333.33
+  }
+ ]
+}

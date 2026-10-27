@@ -1,0 +1,19 @@
+.claude/commands/_workflow-checkpoints.md — characters 18000 onward
+
+and review | This site's permission/exclusion decision, actual available test-record references or ordinary/excluded presentation decision, truthful attribution wording and required professional-review obligations |
+| Planned takeaway | The researched conclusion/answer, whom it applies to, material conditions/exceptions, and what would change it; preserve sufficient existing verdicts/no-addition decisions |
+| Inbound internal links | Exact inspected source URLs and relevant source sections, proposed anchors, destination and the required inbound coverage |
+| Outbound internal links | Exact relevant existing destination URLs, planned placement/anchor and reader purpose |
+| Technical and measurement scope | Applicable canonical/schema/sitemap wiring, existing components/registries to reuse, measurement hypothesis and baseline/data availability; no claims of proven uplift |
+
+Write concrete, page-specific decisions. A repeated generic template, placeholder headings, “research later”, omitted data provenance or links that have not been inspected do not satisfy preparation. Missing paid metrics may use the already authorized, clearly labeled fallback or honest unavailability; do not fabricate data to make a brief look complete. Missing support for a central claim requires narrowing/excluding the proposal rather than presenting an unfinished brief.
+
+The independent chart reviewer must reconcile the action table and briefs one-to-one: every new-page action has a complete brief; every brief has a matching action; targets, keyword evidence, reader question, outline, testing decision, link placements and execution scope agree. Missing or mismatched briefs BLOCK the approval chart. Phase 0 repeats this check when loading an existing/imported chart and renders the full actual briefs before asking for approval. If output length requires multiple messages, show all completed sections before the single approval question; never substitute a shortened example or ask approval on a partial presentation.
+
+After approval, Phase 3 consumes those exact approved briefs. Phase 4 verifies the generated content against them, and the existing later gates verify internal-link/technical/publication execution. Material changes to the proposed scope follow existing approval rules. Brief preparation is not a claim that the page has already been written, professionally reviewed, product-tested or published.
+
+## Compact preparation display takes precedence
+
+The single-row preparation summary supersedes older instructions to display Read/Followed columns or all preparation checks in the approval output. Detailed checking is still mandatory; only its presentation is condensed. Keep every actual new-page brief inline and complete, plus the original action chart, internal-link plan and full execution plan. A successful summary must link the detailed current evidence, never substitute a bare unsupported “passed”.
+
+Fold legacy standalone duplicate-check pass rows into this one preparation summary. Keep the full independent duplicate-review result in the linked readiness evidence and the required existing-page rationale in each page brief. Do not print the aggregate row twice (once in the phase table and again in a separate checklist). Existing final gates accept the preparation-summary pass backed by the detailed duplicate-review evidence.

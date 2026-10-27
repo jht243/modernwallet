@@ -1,0 +1,175 @@
+{
+ "slug": "how-long-will-1-million-last-in-retirement",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2150,
+ "floor": 1200,
+ "input_tokens": 23099,
+ "output_tokens": 4302,
+ "thinking_tokens": 733,
+ "cached_tokens": 19236,
+ "est_cost_usd": 0.0232,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['How Long $1,000,000 Lasts at Different Monthly Spending Levels', 'What the Real Return Assumption Means', 'How Much You Can Spend for 20, 25, 30, and 35 Years', 'Living on the Return Alone', 'What Pushes the Number Up or Down'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2150,
+  "numbers_not_in_facts": [
+   "0.0388",
+   "40"
+  ],
+  "fact_budget": {
+   "fact_words": 907,
+   "floor": 1200,
+   "ratio": 0.76,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    7
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we built our projections using the same engine as our [withdrawal calculator](/investing/withdrawal-calculator/) to show the exact years a portfolio survives under constant purchasing power.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "Attribution cue repeated outside permitted sections (first table and Our Takeaway only)."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "That same $3,000 monthly spend extends to 40.6 years at a modest 2% real return.",
+     "replacement": "That same $3,000 monthly spend extends to 40.6 years at a 2% real return.",
+     "type": "unsupported",
+     "why": "SOURCE does not characterize a 2% real return as modest."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Our calculations do not forecast future asset returns or economic inflation rates; they test fixed real return benchmarks.",
+     "replacement": "Our calculations do not forecast future asset returns or economic inflation rates; they model fixed real return benchmarks.",
+     "type": "contradicted",
+     "why": "SOURCE explicitly forbids describing modeled figures as tested or testing."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Earning a 2% real return boosts that safe monthly draw to $4,238.54.",
+     "replacement": "Earning a 2% real return boosts that monthly draw to $4,238.54.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe a 25-year depleting withdrawal as safe."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "If your living budget requires $4,500 a month and you receive $2,000 from Social Security, your portfolio only needs to supply $2,500 a month.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE explicitly forbids stating any Social Security benefit amount."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "A retiree needing $4,000 in net cash each month may need to withdraw $4,800 or more from a pre-tax account to settle state and federal tax liabilities.",
+     "replacement": "Taxes increase the gross distribution needed for everyday spending.",
+     "type": "unsupported",
+     "why": "SOURCE does not state a $4,800 withdrawal or specific tax calculation."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Based on our internal modeling, $1,000,000 provides reliable financial support when withdrawals align with real market returns and time horizons.",
+     "replacement": "Based on our internal modeling, portfolio longevity depends on monthly withdrawals, real returns, and time horizons.",
+     "type": "unsupported",
+     "why": "SOURCE does not claim $1,000,000 provides reliable financial support."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "If you need $5,000 a month to live and Social Security provides $2,000, your portfolio only needs to provide $3,000.",
+     "replacement": "For example, if outside income reduces your monthly portfolio draw from $5,000 to $3,000, your savings last significantly longer.",
+     "type": "contradicted",
+     "why": "SOURCE explicitly forbids stating any Social Security benefit amount."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Evaluating retirement spending in nominal dollars can give a false sense of security because inflation quietly erodes purchasing power over time.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state nominal calculations give a false sense of security."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "A single percentage point of real return causes massive shifts over multi-decade retirements.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not use unstated degree words like massive shifts."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Experiencing steep market losses during the first few years of retirement forces you to sell assets at depressed valuations to meet monthly expenses.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention selling assets at depressed valuations."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Many retirees spend more in early retirement on travel and hobbies, spend less in mid-retirement, and encounter higher medical costs in later years.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state spending patterns on travel, hobbies, or mid-retirement."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Those situations require either reduced monthly spending, working longer, or securing supplemental income streams.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state working longer or securing supplemental income streams."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Yes, because investments that produce positive real returns offset the erosive effects of inflation and replenish withdrawn principal.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE shows positive real returns do not replenish principal at $4,000 monthly spending."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "For example, spending $4,000 a month from $1,000,000 with a 0% real return (cash keeping pace with inflation) lasts 20.8 years, whereas achieving a 2% real return extends that lifespan to 27.0 years, and a 4% real return extends it to 44.9 years.",
+     "replacement": "For example, spending $4,000 a month from $1,000,000 with a 0% real return lasts 20.8 years, whereas achieving a 2% real return extends that lifespan to 27.0 years, and a 4% real return extends it to 44.9 years.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that cash keeps pace with inflation."
+    }
+   ],
+   "deleted_final": 7,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2342
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 253.7,
+ "response_id": "5lDgasPbE76do_UP6p--IQ",
+ "generated_at": "2026-10-27T07:25:21+0000"
+}

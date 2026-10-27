@@ -1,0 +1,200 @@
+{
+ "rows": [
+  {
+   "keyword": "how long will my money last",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.fidelitybank.com",
+    "www.bankrate.com",
+    "www.umcu.org",
+    "www.nationallife.com",
+    "www.townebank.com",
+    "www.nerdwallet.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.johnsonfinancialgroup.com",
+    "www.schwab.com",
+    "ffcalcs.com",
+    "partner.getcarefull.com",
+    "www.bakergroup.org",
+    "redriver.equitableadvisors.com",
+    "www.winchestersavings.com",
+    "smartasset.com",
+    "www.planwithcis.com",
+    "www.fidelitybank.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How many years should retirement money last?",
+    "Where can I find a superannuation calculator?",
+    "Can a financial advisor help with retirement?",
+    "How do I calculate my retirement amount?",
+    "How much Social Security will I get if I make $40,000 a year?",
+    "What is a good monthly retirement income?"
+   ],
+   "related_searches": [
+    "How long will my money last calculator",
+    "Retirement calculator how long will my money last",
+    "Dollar times how long will my money last",
+    "How long will my savings last calculator with inflation",
+    "How long will my money last calculator Fidelity retirement",
+    "How long will my money last with systematic withdrawals",
+    "NerdWallet how long Will my money last",
+    "How long will money last using 4% rule"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.fidelitybank.com, www.bankrate.com, www.umcu.org, www.nationallife.com",
+   "se_results_count": 113
+  },
+  {
+   "keyword": "how long will my savings last",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.bankrate.com",
+    "www.calcxml.com",
+    "www.umcu.org",
+    "www.nerdwallet.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "unitedfcu.com",
+    "landmarkcu.com",
+    "www.schwab.com",
+    "www.winchestersavings.com",
+    "www.seniorliving.org",
+    "www.bayfed.com",
+    "www.cnbankpa.com",
+    "www.apsitaxes.com",
+    "www.timevaluecalculators.com",
+    "www.merrilledge.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How much savings should you have in a year?",
+    "How many years for savings to double?",
+    "How long will $750,000 last in retirement at 62?",
+    "At what age is $2 million enough to retire?",
+    "What is the average 401k balance for a 65 year old?",
+    "Which 4 are the biggest retirement regrets?"
+   ],
+   "related_searches": [
+    "How long will my savings last calculator",
+    "Compound interest calculator",
+    "Retirement calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.bankrate.com, www.calcxml.com, www.umcu.org, www.nerdwallet.com",
+   "se_results_count": 156
+  },
+  {
+   "keyword": "how long will my retirement savings last",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "investor.vanguard.com",
+    "www.umcu.org",
+    "www.townebank.com",
+    "creativeplanning.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.merrilledge.com",
+    "www.mutualofomaha.com",
+    "www.townebank.com",
+    "thewisergroup.com",
+    "www.commonwealthsl.com",
+    "foxcu.org",
+    "www.winchestersavings.com",
+    "unitedfcu.com",
+    "www.timevaluecalculators.com",
+    "www.timevaluecalculators.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "How many years should retirement money last?",
+    "What are common retirement expenses?",
+    "Is $2 million enough for a single person to retire?",
+    "How much savings do I need at 50?",
+    "Is $1,000,000 enough to retire at 50?",
+    "Should I pay off my mortgage before I retire?"
+   ],
+   "related_searches": [
+    "How long will my retirement savings last calculator",
+    "How long will my retirement savings last if i",
+    "How long will my retirement savings last with taxes",
+    "How long will my money last with Social Security and retirement",
+    "How much money do you need to retire with $100,000 a year income",
+    "How long will my money last calculator Mutual of Omaha",
+    "How much money do you need to retire at age 65",
+    "How much money do you need to retire with $50,000 a year income",
+    "How long will my savings last calculator with inflation",
+    "Best Monte Carlo retirement calculator",
+    "Best Mutual of Omaha Retirement calculator",
+    "Mutual of Omaha retirement calculator with taxes"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.nerdwallet.com, investor.vanguard.com, www.umcu.org, www.townebank.com",
+   "se_results_count": 170
+  },
+  {
+   "keyword": "financial online calculators",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.dollarscout.net",
+    "totalfinancetools.com",
+    "www.fintoolbase.com",
+    "apps.visionvix.com",
+    "afincalc.com",
+    "www.omnicalculator.com",
+    "getfincalcs.com",
+    "yourcalcfinance.netlify.app",
+    "fincalculators.org",
+    "finmetrictools.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19
+   },
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 40
+  }
+ ],
+ "cost": "DataForSEO: 4 calls, $0.01645 of $2.00 budget"
+}

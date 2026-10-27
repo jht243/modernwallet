@@ -1,0 +1,166 @@
+{
+ "slug": "how-long-will-2-million-last-in-retirement",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2)'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1853,
+ "floor": 1200,
+ "input_tokens": 22960,
+ "output_tokens": 3733,
+ "thinking_tokens": 580,
+ "cached_tokens": 19236,
+ "est_cost_usd": 0.0204,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['How Long $2,000,000 Lasts at Different Monthly Spending Levels', 'Can You Live on the Interest Alone', 'How Much You Can Spend for 20, 25, 30 and 35 Years', 'What Changes the Years', 'Our Takeaway'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1853,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 907,
+   "floor": 1200,
+   "ratio": 0.76,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    12,
+    1,
+    1
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we evaluate retirement runway using constant purchasing power so that price changes do not distort your timeline.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not license this first-person claim."
+    },
+    {
+     "id": "introText",
+     "quote": "A dollar withdrawal that stays level on paper buys less food and housing over time, which gives a false sense of security.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Source does not mention food, housing, or a false sense of security."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Your monthly spending level determines whether a $2,000,000 portfolio lasts one decade or multiple generations.",
+     "replacement": "Your monthly spending level determines whether a $2,000,000 portfolio lasts about 10 years or more than 45 years.",
+     "type": "unsupported",
+     "why": "Source states the portfolio lasts about 10 years to more than 45 years."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "This interest-only strategy is not for households needing more than $6,666.67 a month who also hold conservative portfolios yielding 2% or 3% in real terms.",
+     "replacement": "This interest-only strategy is not for households needing more than $6,666.67 a month or whose portfolios yield 2% or 3% in real terms.",
+     "type": "unsupported",
+     "why": "Source does not describe portfolios as conservative."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "If your monthly cash requirements sit at $10,000, relying exclusively on yields would require a sustained real return of 6%, which exceeds standard historical expectations.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Source does not list a 6% return rate or historical return expectations."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "For a standard 30-year horizon, your safe monthly budget spans from $5,555.56 with zero real growth to $9,548.31 at a 4% real return.",
+     "replacement": "For a standard 30-year horizon, the highest flat monthly withdrawal spans from $5,555.56 with zero real growth to $9,548.31 at a 4% real return.",
+     "type": "unsupported",
+     "why": "Source calls this the highest flat monthly withdrawal, not a safe monthly budget."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Roth distributions and taxable brokerage accounts face different rules.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Source does not mention Roth distributions or taxable brokerage accounts."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "If financial markets drop significantly during the first three to five years of your retirement, selling assets to fund monthly withdrawals locks in those capital losses.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Source does not state a three to five year window or locking in capital losses."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Outside pensions, annuities, and Social Security payments absorb baseline overhead.",
+     "replacement": "Outside Social Security and other income payments absorb baseline overhead.",
+     "type": "unsupported",
+     "why": "Source does not list pensions or annuities, only other income."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Based on our internal modeling, a $2,000,000 retirement portfolio provides dependable financial independence across typical life spans when spending stays aligned with real market growth.",
+     "replacement": "Based on our internal modeling, a $2,000,000 balance lasts across typical retirement horizons when spending stays aligned with real growth.",
+     "type": "unsupported",
+     "why": "Source does not claim the portfolio provides dependable financial independence."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "At a 2% real return, that safe interest-only income drops to $3,333.33 a month.",
+     "replacement": "At a 2% real return, that interest-only income drops to $3,333.33 a month.",
+     "type": "unsupported",
+     "why": "Source does not call this income safe."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "A $1,000,000 portfolio lasts half as long as $2,000,000 only if you spend the exact same dollar amount, so see our guide on [how long 1 million will last in retirement](/guides/how-long-will-1-million-last-in-retirement/) to evaluate individual spending schedules.",
+     "replacement": "The results for $2,000,000 are not simply double the years of $1,000,000, the same years need double the spending, so see our guide on [how long 1 million will last in retirement](/guides/how-long-will-1-million-last-in-retirement/) for exact schedules.",
+     "type": "contradicted",
+     "why": "Source notes $2,000,000 results are not simply double the years."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "If you receive monthly Social Security, your required portfolio draw drops, extending a 20-year portfolio into a 35-year portfolio.",
+     "replacement": "If you receive monthly Social Security, your required portfolio draw drops, extending how long your portfolio lasts.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Social Security extends a 20-year portfolio into a 35-year portfolio."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The historical origin of setting spending to portfolio yields connects directly to research published by Cooley, Hubbard, and Walz in the [AAII Journal Trinity Study](https://www.aaii.com/journal/article/retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable).",
+     "replacement": "The historical origin of the 4% rule connects directly to research published by Cooley, Hubbard, and Walz in the [AAII Journal Trinity Study](https://www.aaii.com/journal/article/retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable).",
+     "type": "unsupported",
+     "why": "SOURCE states the Trinity Study is the origin of the 4% rule, not yields."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 1963
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 335.3,
+ "response_id": "61HgaqGLKqaAytMP2YnnmAc",
+ "generated_at": "2026-10-27T07:31:06+0000"
+}

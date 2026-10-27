@@ -1,0 +1,76 @@
+{
+  "slug": "how-long-will-1-million-last-in-retirement",
+  "title": "How Long Will $1 Million Last in Retirement? Exact Years",
+  "metaDescription": "How long will $1 million last in retirement? See exact years by monthly spending and real return, the 30-year spending ceiling and when it never runs out.",
+  "h1": "How Long Will $1 Million Last in Retirement?",
+  "cardBlurb": "Modeled years a $1,000,000 balance lasts at six monthly spending levels and four real returns, plus the spending ceiling for 20 to 35 years.",
+  "introText": "A $1,000,000 balance lasts anywhere from about 10 years to more than 45 years depending on monthly spending and the real rate of return. At a flat withdrawal of $4,000 a month, $1,000,000 lasts about 20.8 years at a 0% real return, 27 years at a 2% real return, and 44.9 years at a 4% real return. At $3,333.33 a month or less with a 4% real return, the principal never reaches zero in the mathematical model.\n\nThe total duration comes down to your monthly draw, your net return after inflation, and whether you have supplemental income from pensions or Social Security.",
+  "sections": [
+    {
+      "heading": "How Long $1,000,000 Lasts at Different Monthly Spending Levels",
+      "body": "Your monthly withdrawal rate determines whether $1,000,000 provides decades of security or runs dry in a single decade. In our internal modeling, we ran $1,000,000 through the same engine as our withdrawal calculator at four real returns and six monthly spending levels to see how many years each lasts. Using flat withdrawals in today's dollars, we mapped scenarios from zero growth up to a 5% real annual return.\n\n| Monthly Spending | 0% Real Return | 2% Real Return | 4% Real Return | 5% Real Return |\n| :--- | :--- | :--- | :--- | :--- |\n| $3,000 | 27.8 years | 40.6 years | Does not run out | Does not run out |\n| $3,333.33 | 25.1 years | 34.8 years | Does not run out | Does not run out |\n| $4,000 | 20.8 years | 27.0 years | 44.9 years | Does not run out |\n| $5,000 | 16.7 years | 20.3 years | 27.6 years | 35.9 years |\n| $6,000 | 13.9 years | 16.3 years | 20.3 years | 23.8 years |\n| $8,000 | 10.4 years | 11.8 years | 13.5 years | 14.8 years |\n\nAll inputs are listed so a reader can reproduce each row in our linked calculators. In these modeled results, \"does not run out\" means the monthly withdrawal is equal to or less than the monthly investment return, so the portfolio principal never depletes.\n\nA retiree spending $3,000 a month with no investment growth will deplete the balance in 27.8 years. That same $3,000 monthly spend extends to 40.6 years at a 2% real return. Once the real return reaches 4%, a $3,000 monthly draw requires less than the annual portfolio gain, leaving the starting $1,000,000 intact over any retirement horizon.\n\nMoving your draw to $5,000 a month changes the math quickly. At 0% real return, the money lasts 16.7 years. At a 2% real return, it lasts 20.3 years. It reaches 27.6 years at 4% and 35.9 years at 5%. When spending reaches $8,000 per month, even a 5% real return keeps the portfolio alive for only 14.8 years. If you are comparing portfolio milestones, our guide on [how long will 2 million last in retirement](/guides/how-long-will-2-million-last-in-retirement/) shows the duration numbers for double this starting balance."
+    },
+    {
+      "heading": "What the Real Return Assumption Means",
+      "body": "A real return is the portfolio return that remains after accounting for inflation.\n\nAs an example of the arithmetic, consider a 7% nominal portfolio return alongside 3% inflation. The real return is not simply 4%. The exact calculation divides the nominal factor by the inflation factor (1.07 / 1.03 - 1 = 0.0388), resulting in an actual real return of about 3.9%. Our calculations do not forecast future asset returns or economic inflation rates; they model fixed real return benchmarks.\n\nHolding monthly withdrawals flat in today's dollars means the dollar amount pulled from accounts must increase each year to match the rising cost of goods. By using real returns, the model reflects a retiree maintaining the exact same purchasing power over 20, 30, or 40 years. A calculator that holds nominal dollar withdrawals flat without inflation adjustments, such as standard nominal models, will show different survival timelines for identical dollar figures.\n\nFor instance, withdrawing $4,000 a month with a 0% real return leaves you with 20.8 years of income. Increasing that net real yield to 2% adds more than six full years of income, bringing portfolio longevity to 27 years. Increasing it to 4% yields 44.9 years of support. That four-point difference in real return more than doubles the lifespan of your savings."
+    },
+    {
+      "heading": "How Much You Can Spend for 20, 25, 30, and 35 Years",
+      "body": "Retirement planning often begins with a target time horizon based on life expectancy. Standard age arithmetic shows that planning to age 90 requires 35 years of withdrawals for someone retiring at age 55, 30 years from age 60, and 25 years from age 65.\n\nTo find the maximum monthly spending $1,000,000 supports across fixed retirement horizons, our investment engine calculated the highest flat monthly draw in today's dollars that empties the balance to zero at the end of each period.\n\n| Horizon | 0% Real Return | 2% Real Return | 4% Real Return | 5% Real Return |\n| :--- | :--- | :--- | :--- | :--- |\n| 20 Years | $4,166.67 / mo | $5,058.83 / mo | $6,059.80 / mo | $6,599.56 / mo |\n| 25 Years (Retire at 65 to 90) | $3,333.33 / mo | $4,238.54 / mo | $5,278.37 / mo | $5,845.90 / mo |\n| 30 Years (Retire at 60 to 90) | $2,777.78 / mo | $3,696.19 / mo | $4,774.15 / mo | $5,368.22 / mo |\n| 35 Years (Retire at 55 to 90) | $2,380.95 / mo | $3,312.63 / mo | $4,427.75 / mo | $5,046.88 / mo |\n\nFor a retiree stepping away at age 65 who wants funds to last until age 90 (25 years), zero real growth permits spending $3,333.33 a month. Earning a 2% real return boosts that monthly draw to $4,238.54. A 4% real return pushes the sustainable monthly spending to $5,278.37.\n\nFor an earlier retiree at age 60 planning for 30 years, zero investment growth allows a monthly draw of $2,777.78. A 2% real return provides $3,696.19 per month, while a 4% real return delivers $4,774.15. If planning begins at age 55 across a 35-year window, the monthly allowance ranges from $2,380.95 at 0% real return up to $4,427.75 at 4% real return. To see how these spending caps compare with smaller balances, see our breakdown on [how long will 150k last in retirement](/guides/how-long-will-150k-last-in-retirement/)."
+    },
+    {
+      "heading": "Living on the Return Alone",
+      "body": "Retirees who want to preserve their initial $1,000,000 nest egg can choose to live strictly on the portfolio's real yield. By withdrawing an amount equal to the monthly real return, the underlying balance remains at $1,000,000 in constant purchasing power indefinitely.\n\nInterest-only income on $1,000,000 produces predictable monthly amounts across real return baselines:\n\n- 2% real return: $20,000 a year, equal to $1,666.67 a month.\n- 3% real return: $30,000 a year, equal to $2,500.00 a month.\n- 4% real return: $40,000 a year, equal to $3,333.33 a month.\n- 5% real return: $50,000 a year, equal to $4,166.67 a month.\n\nThe benchmark 4% withdrawal rate traces back to the research published by Cooley, Hubbard and Walz in the AAII Journal, widely known as the [Trinity Study](https://www.aaii.com/journal/article/retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable). The authors analyzed historical market cycles and reported that withdrawing 4% of a portfolio's initial balance in year one, followed by annual inflation adjustments, lasted 30 years in most historical periods for portfolios weighted toward equities.\n\nOn a $1,000,000 balance, the 4% rule generates an initial annual income of $40,000, or $3,333.33 a month. The Trinity Study findings represent a historical result, not an absolute guarantee. You can read more about broad portfolio structures in our guide on [retirement withdrawal strategies](/guides/retirement-withdrawal-strategies/) and our review of [how to retire with 1 million](/guides/how-to-retire-with-1-million/)."
+    },
+    {
+      "heading": "What Pushes the Number Up or Down",
+      "body": "The mathematical models above isolate investment returns and flat monthly spending, but actual retirement outcomes depend on several financial variables.\n\nGuaranteed external income significantly extends how long your savings last. Every dollar received from Social Security or a traditional pension reduces the amount you must pull from your investment portfolio. Use our [Social Security retirement calculator](/retirement/social-security-retirement-calculator/) to project your benefit and evaluate your net portfolio draw.\n\nTaxes and portfolio account types also alter the lifespan of your funds. Withdrawals from pre-tax accounts, such as traditional 401(k) and IRA plans, are subject to ordinary income taxes. Taxes increase the gross distribution needed for everyday spending. That higher gross draw speeds up portfolio depletion.\n\nSequence-of-returns risk represents another critical factor that fixed-rate models do not capture. In the real world, market returns do not arrive in identical annual increments. This early damage can empty a portfolio much faster than a static average return projection suggests. You can map out your total household cash flow across different asset types with our [retirement income calculator](/retirement/retirement-income-calculator/).\n\nFinally, healthcare costs, long-term care needs, and shifting spending patterns will move the timeline.\n\nThis analysis is not designed for individuals who must extract $5,000 or more each month exclusively from a $1,000,000 balance over a 30-year span, nor does it fit someone whose asset allocation delivers returns that fail to keep pace with inflation. The projected longevity figures will change whenever actual returns drop, tax rates shift, or expenses grow faster than inflation."
+    },
+    {
+      "heading": "Our Takeaway",
+      "body": "Based on our internal modeling, portfolio longevity depends on monthly withdrawals, real returns, and time horizons. For a 30-year retirement spanning age 60 to age 90, $1,000,000 supports a flat monthly draw of about $2,780 with no growth, about $3,700 at a 2% real return, and about $4,770 at a 4% real return. Withdrawing more than those amounts will cause the portfolio balance to deplete before reaching year 30.\n\nThis nest egg works well for a retiree whose other guaranteed income sources, including Social Security and pensions, cover remaining household overhead. It does not fit a reader who needs $5,000 or more a month from the portfolio alone over three decades, or who expects portfolio returns to fall below inflation rates.\n\nOur modeling assumes constant withdrawals in today's dollars, but your actual outcome will shift based on external income, early sequence-of-returns losses, taxes owed on retirement account withdrawals, and lifestyle costs that outpace inflation. To verify how long your portfolio will last under your own numbers, run your planned spending through our [withdrawal calculator](/investing/withdrawal-calculator/) and review your baseline with a certified financial planner or CPA."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/investing/withdrawal-calculator/",
+      "label": "Withdrawal calculator"
+    },
+    {
+      "href": "/retirement/retirement-income-calculator/",
+      "label": "Retirement income"
+    },
+    {
+      "href": "/retirement/social-security-retirement-calculator/",
+      "label": "Social Security"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is a safe withdrawal rate in retirement?",
+      "answer": "A widely recognized baseline is 4% of your initial portfolio value in year one, adjusted upward for inflation in subsequent years. Originating from the Trinity Study by Cooley, Hubbard, and Walz, this rule demonstrated that a 4% initial withdrawal rate sustained portfolios with substantial equity holdings across most historical 30-year periods. On a $1,000,000 portfolio, 4% equates to $40,000 in year one, or $3,333.33 per month."
+    },
+    {
+      "question": "How does inflation affect retirement savings?",
+      "answer": "Inflation decreases the purchasing power of your money over time, requiring you to withdraw larger dollar amounts each year to buy the same volume of goods and services. Our model accounts for this by calculating durations using real returns, which measure investment growth after subtracting inflation. A portfolio earning 7% nominal returns alongside 3% inflation delivers an effective real return of roughly 3.9%."
+    },
+    {
+      "question": "How long does $1 million last after 60?",
+      "answer": "Retiring at age 60 and planning to age 90 requires funding a 30-year horizon. Under our modeling, $1,000,000 can sustain monthly withdrawals of $2,777.78 at a 0% real return, $3,696.19 at a 2% real return, and $4,774.15 at a 4% real return over 30 years. Spending more than those amounts will cause the balance to run out before age 90 unless supplemented by other income."
+    },
+    {
+      "question": "Does $1 million last longer invested than in cash?",
+      "answer": "For example, spending $4,000 a month from $1,000,000 with a 0% real return lasts 20.8 years, whereas achieving a 2% real return extends that lifespan to 27.0 years, and a 4% real return extends it to 44.9 years."
+    },
+    {
+      "question": "How long will $1 million last with Social Security?",
+      "answer": "Our baseline model assumes zero outside income, but every dollar received from Social Security directly lowers the monthly withdrawal required from your investments. For example, if outside income reduces your monthly portfolio draw from $5,000 to $3,000, your savings last significantly longer. At a 2% real return, pulling $3,000 a month from $1,000,000 lasts 40.6 years instead of the 20.3 years it would last if pulling the full $5,000."
+    }
+  ],
+  "sources": [
+    {
+      "label": "AAII Journal: Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable",
+      "url": "https://www.aaii.com/journal/article/retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+[keyword_data] volume: using dataforseo (quality order dataforseo)
+[keyword_data] dataforseo returned volume for 6/8 phrases
+[keyword_data] kd: using dataforseo (quality order dataforseo)
+[keyword_data] No tool volume for 2 phrases — autocomplete band (source=estimate, NOT measured)
+[keyword_data] Autocomplete: 7/8 rows corroborated live
+{
+ "rows": [
+  {
+   "keyword": "how long will my money last",
+   "volume": 14800,
+   "volume_low": 14800,
+   "volume_high": 14800,
+   "kd": 0,
+   "cpc": 3.21,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how long will my money last calculator",
+   "volume": 14800,
+   "volume_low": 14800,
+   "volume_high": 14800,
+   "kd": 3,
+   "cpc": 3.21,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how long will my savings last",
+   "volume": 14800,
+   "volume_low": 14800,
+   "volume_high": 14800,
+   "kd": 0,
+   "cpc": 3.21,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how long will my retirement savings last",
+   "volume": 6600,
+   "volume_low": 6600,
+   "volume_high": 6600,
+   "kd": 5,
+   "cpc": 3.47,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "financial online calculators",
+   "volume": 6600,
+   "volume_low": 6600,
+   "volume_high": 6600,
+   "kd": "",
+   "cpc": 4.86,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "regular vs roth 401k",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": 4,
+   "cpc": 2.15,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "retirement money last calculator",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 7 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "trump account vs brokerage account",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 partial prefix match + broad completion set (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using dataforseo (quality order dataforseo)",
+  "dataforseo returned volume for 6/8 phrases",
+  "kd: using dataforseo (quality order dataforseo)",
+  "No tool volume for 2 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 7/8 rows corroborated live"
+ ]
+}

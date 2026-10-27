@@ -1,0 +1,89 @@
+.claude/commands/mindmap-pass/phase-3-new-content.md — characters 0 onward
+
+
+<!-- workflow-source-freshness-v1 -->
+**WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
+<!-- /workflow-source-freshness-v1 -->
+
+# Phase 3 — New content creation (API-generated — see `_content-generation.md`)
+
+<!-- workflow-checkpoints-v1 -->
+**Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
+<!-- /workflow-checkpoints-v1 -->
+
+
+<!-- intent-takeaway-v1 -->
+**Intent-based takeaway:** Read `_decision-evidence.md` in the active project's `.claude/commands/`, especially “Close with a takeaway that answers the page's intent.” Pass the planned conclusion, applicable reader/task, actual evidence basis and decision-changing condition into the existing writer brief. Reuse a sufficient verdict; preserve the no-addition branch and local exclusions. For global commands, resolve/install the sibling shared contract in the active project while preserving local rules.
+<!-- /intent-takeaway-v1 -->
+
+<!-- decision-evidence-v1 -->
+## Decision evidence before drafting
+
+Read and apply `.claude/commands/_decision-evidence.md` inside this phase, before assembling the writer prompt. Reuse the approved reader question, produce the strongest feasible evidence and counterexample, then select the presentation. Calculators remain an option, not a quota. Give the writer the evidence packet, including the supported provenance and its visible placement, with its closed facts; ask for explicit, natural phrasing at the relevant finding: “In our internal analysis/modeling/testing, we [specific action]…” matched to the evidence, followed by what we found and how readers can check the method or inputs. Merely naming the source of inputs is insufficient; preserve the existing API-writing, review and permission rules. Evidence labels take precedence over automatic TESTED-format eligibility: simulated/calculated data never licenses a firsthand-testing claim.
+<!-- /decision-evidence-v1 -->
+
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
+> **‼️ THE RUNNING AGENT DOES NOT WRITE THE ARTICLE.** Page prose is generated by the
+> configured model through `scripts/lib/content_gen.py` per
+> `.claude/commands/_content-generation.md` (the canonical contract — read it in full before
+> this phase). You assemble the prompts, run the generator, verify the draft mechanically, and
+> hand it to the Phase 4 audit. Writing a page yourself, or substituting a model silently, is a
+> hard failure of this phase. If the generator cannot run, STOP and report.
+
+Act on every **new-content** row in the chart. The row's `format` column routes it:
+
+- **`article` / no format** → generate the page.
+- **`comparison table/database` whose target is a real comparison page type in THIS repo** →
+  generate it as a real page (JSON stores: `--schema comparison`). Otherwise it is a spec.
+- **`interactive tool`, `calculator`, `quiz/assessment`** → BUILT in this run, for real: follow
+  `.claude/commands/mindmap-pass/phase-3c-tool-build.md` (mirror this repo's existing tool wiring,
+  defensible logic, `data-tool` root, page prose from the API writer). A working tool on a live
+  route — never a spec, never a stub. (MINDMAP-BUILDS-TOOLS)
+- **`template`, `glossary/reference`, `data report` (as an interactive asset)** → this phase does
+  NOT build the asset and does NOT call the generator. Write a one-page asset spec at
+  `reports/mindmap-pass/specs/<slug>-spec.md` (route, format + rationale, what it does — column
+  schema / data sources — keywords, scope, dependencies). `git add` it; Phase 4 reviews the spec.
+  Never write stub page content for these.
+
+> **NET-NEW ONLY.** This phase creates brand-new routes. Never overwrite, regenerate, or
+> replace an existing page. A "new-content" row pointing at a route that already exists → STOP
+> and flag it.
+
+## Step 0 — load the standards (sanctioned loader) and preflight the generator
+
+```bash
+bash .claude/tools/load-standards.sh "mindmap-pass" "phase-3"     # if the loader exists; else read the three standards in full
+python3 scripts/lib/content_gen.py preflight                       # at least one model in the chain must answer
+```
+`git add reports/standards-ledger.jsonl` when the loader wrote it. A failing preflight STOPS
+the phase — do not write the pages by hand instead. If the run must use the fallback model
+(the preflight says so), every page's meta will say `fallback_used` — report that in the summary.
+
+## Step 1 — assemble the prompts (order per `_content-generation.md`)
+
+Write everything under `reports/mindmap-pass/<TODAY>/prompts/`. **Use the page shape Phase 0
+discovered for THIS repo:**
+
+- **JSON/TS data stores** (pages are objects in a data file): the voice sample is a real page
+  object from that store; the output contract lists its exact keys; generate with
+  `--format json --schema guide|comparison|none`.
+- **Markdown / MDX / Astro-content stores** (pages are files with frontmatter): the voice sample
+  is a real page FILE (frontmatter + body) from the content directory; the output contract is
+  "return the complete page file — the same frontmatter fields, then the body"; generate with
+  `--format markdown` (no `--schema`).
+
+- **`system.md`, once per run (one per page type if the run has several)** — (1) the real
+  published page/file of the SAME type, labelled *imitate this* (for a launch family, a sibling
+  is ideal; never the page being written); (2) the output contract for that shape (noun-phrase
+  headings, ≤1 heading opening with the keyword, the CTA button text this repo uses, the brand
+  first-"we" rule "At {BUSINESS_NAME}, we…" using the name Phase 0 discovered);
+  (2a) when writing `metaTitle`, `h1`, `subtitle` and `metaDescription`, take the row's
+  `reader question` into account — these are what the person who typed that question sees in
+  the results and on arrival, so their wording is a useful guide to what will read as the
+  answer. Lean toward the words that person would use over the words the vendor uses for
+  itself; a term the product coined for itself usually lands better in the body, where you
+  define
