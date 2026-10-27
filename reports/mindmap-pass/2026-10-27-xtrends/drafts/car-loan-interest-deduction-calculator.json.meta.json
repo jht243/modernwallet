@@ -1,0 +1,89 @@
+{
+ "slug": "car-loan-interest-deduction-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1231,
+ "floor": 700,
+ "input_tokens": 21605,
+ "output_tokens": 2222,
+ "thinking_tokens": 8306,
+ "cached_tokens": 18445,
+ "est_cost_usd": 0.0432,
+ "guards": {
+  "repairs": [
+   "slug None -> 'car-loan-interest-deduction-calculator'"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1231,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 514,
+   "floor": 700,
+   "ratio": 0.73,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    1
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "This calculator provides educational estimates rather than formal tax advice, and a certified tax preparer can confirm your final return.",
+     "replacement": "This calculator provides educational estimates rather than formal tax advice, and a preparer settles the individual case.",
+     "type": "unsupported",
+     "why": "SOURCE says a preparer settles the individual case and does not mention certified."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "No, you do not need to itemize deductions on Schedule A.",
+     "replacement": "No, you do not need to itemize deductions.",
+     "type": "unsupported",
+     "why": "SOURCE does not list Schedule A."
+    },
+    {
+     "id": "faqs[7].answer",
+     "quote": "The refinanced vehicle must continue to meet all original personal-use and purchase requirements.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state ongoing personal-use or purchase requirements for refinanced loans."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "You can check U.S. assembly by inspecting the dealer label, checking the VIN, or using the National Highway Traffic Safety Administration (NHTSA) VIN decoder.",
+     "replacement": "You can check U.S. assembly by inspecting the dealer label or checking the VIN.",
+     "type": "unlinked-directive",
+     "why": "Directs reader to an outside regulator to check facts without a markdown link."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1260
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 274.9,
+ "response_id": "qNjgauj7L7at5NoPhoedyQg",
+ "generated_at": "2026-10-27T17:04:57+0000"
+}

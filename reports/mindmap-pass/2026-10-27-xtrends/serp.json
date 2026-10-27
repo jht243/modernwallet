@@ -1,0 +1,112 @@
+{
+ "rows": [
+  {
+   "keyword": "car loan interest deduction calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.worldhyundaimatteson.com",
+    "apps.irs.gov",
+    "autoloandeductiblecalculator.com",
+    "www.hrblock.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.foxrothschild.com",
+    "www.spiritbank.com",
+    "blog.taxact.com",
+    "nationaltaxtools.com",
+    "www.firstunitedbank.com",
+    "www.amortization-calc.com",
+    "keitercpa.com",
+    "calk-usa.com",
+    "www.txdpscu.org",
+    "www.bkforest.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "Car loan interest deduction phase out",
+    "Car loan interest deduction calculator texas",
+    "Car loan interest deduction married filing separately",
+    "Car loan interest deduction income limit",
+    "New car loan interest deduction who qualifies",
+    "Car loan interest deduction rules",
+    "Car loan interest deduction 2025 phase out",
+    "Car loan tax deduction 2026",
+    "Does my car qualify for the car loan interest deduction",
+    "List of cars that qualify for interest deduction"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.worldhyundaimatteson.com, apps.irs.gov, autoloandeductiblecalculator.com, www.hrblock.com",
+   "se_results_count": 114
+  },
+  {
+   "keyword": "how to buy anthropic stock",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "www.reddit.com",
+    "www.home.saxo",
+    "anthropic-stock.com",
+    "www.forbes.com",
+    "money.com",
+    "finance.yahoo.com",
+    "www.kiplinger.com",
+    "forgeglobal.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "finance.yahoo.com",
+    "finance.yahoo.com",
+    "forgeglobal.com",
+    "www.reddit.com",
+    "augment.market",
+    "money.com",
+    "www.ig.com",
+    "www.ig.com",
+    "finance.yahoo.com",
+    "www.bybit.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 17,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "How to buy anthropic stock reddit",
+    "What will Anthropic stock price be",
+    "How to buy Anthropic IPO",
+    "How to buy Anthropic stock pre IPO",
+    "When can I buy Anthropic stock",
+    "Anthropic IPO share price",
+    "Should I buy Anthropic IPO",
+    "Anthropic IPO share price prediction",
+    "How can i buy Anthropic IPO",
+    "Anthropic stock name",
+    "Anthropic pre IPO price",
+    "Anthropic pre IPO shares"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "AI Overview present, cites www.nerdwallet.com, www.reddit.com, www.home.saxo, anthropic-stock.com",
+   "se_results_count": 186
+  }
+ ],
+ "cost": "DataForSEO: 2 calls, $0.00800 of $2.00 budget"
+}

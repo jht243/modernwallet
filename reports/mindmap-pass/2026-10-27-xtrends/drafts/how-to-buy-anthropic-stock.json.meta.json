@@ -1,0 +1,137 @@
+{
+ "slug": "how-to-buy-anthropic-stock",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1882,
+ "floor": 1000,
+ "input_tokens": 24236,
+ "output_tokens": 3574,
+ "thinking_tokens": 1512,
+ "cached_tokens": 21047,
+ "est_cost_usd": 0.023,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['Can You Buy Anthropic Stock Today?', 'What the S-1 Says', 'How Retail Investors Get IPO Shares', 'Pre-IPO Offers and Scams', 'Lock-Up and What Happens After Listing'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1882,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 531,
+   "floor": 1000,
+   "ratio": 0.53,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    9,
+    1
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "Underwriters will then conduct an investor roadshow to determine final pricing.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention an investor roadshow or how final pricing is determined."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "These unregistered deals carry steep risks, high costs, and potential fraud.",
+     "replacement": "These unregistered deals carry significant risk, including losing the entire investment.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that pre-IPO offerings carry high costs."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Net loss widened to $80,748 million for the six months ended June 30, 2026, driven by a non-cash charge of $72,388 million from the change in fair value of convertible notes, derivative liabilities, and simple agreements for future equity (SAFEs).",
+     "replacement": "Net loss widened to $80,748 million for the six months ended June 30, 2026, driven by a $72,388 million change in fair value of convertible notes, derivative liabilities, and simple agreements for future equity (SAFEs).",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the fair value adjustment as a non-cash charge."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Underwriting distributions are regulated under [FINRA Rule 5131](https://www.finra.org/rules-guidance/rulebooks/finra-rules/5131), which establishes guidelines for new issue allocations and prohibits abusive allocation practices.",
+     "replacement": "Underwriting distributions are regulated under [FINRA Rule 5131](https://www.finra.org/rules-guidance/rulebooks/finra-rules/5131), which governs new issue allocations and distributions.",
+     "type": "unsupported",
+     "why": "SOURCE states FINRA Rule 5131 governs allocations and distributions, not abusive practices."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Brokerages frequently establish balance thresholds, account minimums, or trading history requirements before permitting clients to request initial public offering allocations. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that brokerages establish balance thresholds, minimums, or history requirements."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "- Complete capital loss: The issuer may fail, rendering unregistered private contracts worthless.",
+     "replacement": "- Complete capital loss: Pre-IPO investing involves significant risk, including losing the entire investment.",
+     "type": "unsupported",
+     "why": "SOURCE does not state the issuer may fail or render contracts worthless."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Existing shareholders, founders, and employees cannot immediately dump all of their stock on the first day of trading. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention founders or dumping stock on listing day."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "These contracts prevent an immediate flood of insider-owned shares into the market while the stock establishes initial trading patterns. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE forbids claiming price effects and does not mention trading patterns."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Preparing your brokerage account and understanding filing data ensures you make grounded choices rather than chasing volatile trading swings.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this or mention chasing volatile trading swings."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "At ModernWallet, in our review of the filed [Form S-1](https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm), we searched the full text for a directed share program, a reserved-share program, and any retail allocation, and found none; the filing does say that the representatives may agree to allocate a number of shares of Class A common stock to underwriters for sale to their online brokerage account holders.",
+     "replacement": "In our review of the filed [Form S-1](https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm), we searched the full text for a directed share program, a reserved-share program, and any retail allocation, and found none; the filing does say that the representatives may agree to allocate a number of shares of Class A common stock to underwriters for sale to their online brokerage account holders.",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support \"At <Brand>, we\" first-person phrasing."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1980
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 244.1,
+ "response_id": "_tngarGLOeKXiLMP-K3O0QQ",
+ "generated_at": "2026-10-27T17:10:08+0000"
+}

@@ -1,0 +1,16 @@
+{
+ "originRoutine": "x-trends-mindmap-auto",
+ "route": "/guides/how-to-buy-anthropic-stock/",
+ "queryFamily": "anthropic stock / anthropic ipo",
+ "hypothesis": "A filing-grounded explainer earns clicks for the how-to-buy query family during the roadshow.",
+ "primaryMetric": "Google clicks (GSC)",
+ "baseline": "not-yet-published; age-matched comparator pages",
+ "evidenceBasis": "reported (SEC S-1, SEC and Investor.gov guidance) + our text search of the filing",
+ "deployed": "pending verification",
+ "outcomeStatus": "not-yet-published",
+ "reviewWindows": {
+  "day28": "first 28 complete live days",
+  "day56": "second 28 complete live days"
+ },
+ "sourceRefreshTrigger": "S-1/A with price range"
+}

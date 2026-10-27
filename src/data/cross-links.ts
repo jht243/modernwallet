@@ -5,6 +5,14 @@
 export interface CrossLink { href: string; label: string; }
 
 export const CROSS_LINKS: Record<string, CrossLink[]> = {
+  // X-trends pass (2026-10-27).
+  "car-loan-interest-deduction-calculator": [
+    { href: "/auto-loan/interest-calculator/", label: "How much interest will your car loan cost?" },
+    { href: "/auto-loan/car-affordability-calculator/", label: "How much car can you afford?" },
+    { href: "/tax-bracket-calculator/", label: "Find your 2026 tax bracket" },
+    { href: "/compare/standard-vs-itemized-deduction/", label: "Standard vs itemized deduction" },
+    { href: "/guides/car-loan-mistakes/", label: "10 costly car loan mistakes" },
+  ],
   // GA4 top-pages pass (2026-10-26).
   "charitable-donation-tax-deduction-calculator": [
     { href: "/guides/are-church-donations-tax-deductible/", label: "Are church donations tax deductible? The 2026 rules" },
