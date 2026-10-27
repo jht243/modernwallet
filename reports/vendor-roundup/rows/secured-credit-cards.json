@@ -1,5 +1,23 @@
 {
   "slug": "best-secured-credit-cards",
-  "rows": [],
-  "cut": []
+  "rows": [
+    {
+      "name": "Bright Money",
+      "domain": "brightmoney.co",
+      "url": "https://www.brightmoney.co/",
+      "values": [
+        "Starting at $50 (Bright Builder secured line of credit)",
+        "Yes, all three bureaus",
+        "Not published",
+        "No card fee listed; optional Premium Membership $97/yr",
+        "No minimum score needed; pull type Not published"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "clearvaluecards.com",
+      "why": "category 1 \u2014 independent publisher that compares cards, does not issue them"
+    }
+  ]
 }

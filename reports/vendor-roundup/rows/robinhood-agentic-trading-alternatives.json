@@ -1,5 +1,37 @@
 {
   "slug": "robinhood-agentic-trading-alternatives",
-  "rows": [],
-  "cut": []
+  "rows": [
+    {
+      "name": "TradersPost",
+      "domain": "traderspost.io",
+      "url": "https://traderspost.io/",
+      "values": [
+        "Traders routing TradingView, webhook or AI-generated signals to their own brokerage accounts",
+        "Webhook API accepts signals from any AI or LLM output; no model built in",
+        "Signals routed to 17+ connected brokers; pause and review trades before sending",
+        "Not published on homepage; 7-day free trial, no credit card"
+      ]
+    },
+    {
+      "name": "XeanVI",
+      "domain": "xeanvi.com",
+      "url": "https://xeanvi.com/",
+      "values": [
+        "Rule-based traders wanting position sizing, daily loss lockout and an AI trade explainer",
+        "Rule-based workflow plus Xean, a built-in AI analyst powered by Claude",
+        "Orders routed through Alpaca; live trading currently off, automated trades are paper only",
+        "$19.99/mo or $199.99/yr; 7-day PRO trial, no card"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "gianmariapalombo.com",
+      "why": "category 2 \u2014 filmmaker portfolio site carrying unrelated casino spam content, no trading product"
+    },
+    {
+      "domain": "pixelbrainy.com",
+      "why": "category 1 \u2014 custom software and design agency with no trading product of its own"
+    }
+  ]
 }

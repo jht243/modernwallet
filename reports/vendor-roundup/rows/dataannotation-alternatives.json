@@ -3,24 +3,8 @@
   "rows": [],
   "cut": [
     {
-      "domain": "ayadata.ai",
-      "why": "category 4 \u2014 enterprise annotation service company; no contributor work platform"
-    },
-    {
-      "domain": "nodes.inc",
-      "why": "category 4 \u2014 enterprise AI decision software, no annotation work for contributors"
-    },
-    {
-      "domain": "lindy.ai",
-      "why": "category 4 \u2014 AI employee software for teams, no contributor annotation work"
-    },
-    {
-      "domain": "parailabs.com",
-      "why": "category 1 \u2014 job aggregator that links out to partner platforms"
-    },
-    {
-      "domain": "voxel51.com",
-      "why": "category 4 \u2014 computer-vision data tooling for teams, no paid contributor work"
+      "domain": "confirm.com",
+      "why": "category 3 — HR learning-management and employee-performance software for employers, not finance or AI-training work"
     }
   ]
 }

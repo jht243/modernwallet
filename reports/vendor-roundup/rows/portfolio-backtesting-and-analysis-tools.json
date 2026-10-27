@@ -1,21 +1,10 @@
 {
   "slug": "best-portfolio-backtesting-and-analysis-tools",
-  "rows": [
-    {
-      "name": "Curvo",
-      "domain": "curvo.eu",
-      "url": "https://curvo.eu/backtest",
-      "values": [
-        "Not published",
-        "Not published",
-        "European index investors; managed portfolios carry a 1% to 0.60% annual fee by asset tier"
-      ]
-    }
-  ],
+  "rows": [],
   "cut": [
     {
-      "domain": "goatfundedtrader.com",
-      "why": "category 4 \u2014 prop trading evaluation program with simulated capital, no backtesting; fits a prop firm page"
+      "domain": "femaleinvest.com",
+      "why": "category 4 \u2014 investing education app with a virtual-money simulator; no backtesting or portfolio analysis tool, no fit in another category"
     }
   ]
 }

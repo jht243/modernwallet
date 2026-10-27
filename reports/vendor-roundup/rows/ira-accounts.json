@@ -1,31 +1,10 @@
 {
- "slug": "best-ira-accounts",
- "rows": [
-  {
-   "name": "Principal",
-   "domain": "principal.com",
-   "url": "https://www.principal.com/",
-   "values": [
-    "Not published",
-    "Not published",
-    "Principal SimpleInvest managed portfolios",
-    "Not published",
-    "IRA from a retirement-plan provider"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "info.cccu.com",
-   "why": "category 4 — City & County Credit Union blog subdomain; no IRA product, fee or minimum found on its pages"
-  },
-  {
-   "domain": "moneymash.com",
-   "why": "category 1 — advertiser-supported publisher of best-of lists, no product of its own"
-  },
-  {
-   "domain": "learn.savzor.com",
-   "why": "category 1 — education site (Learning Center, glossary); no IRA product of its own"
-  }
- ]
+  "slug": "best-ira-accounts",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "money.stackexchange.com",
+      "why": "category 1 — Q&A forum with no product of its own"
+    }
+  ]
 }

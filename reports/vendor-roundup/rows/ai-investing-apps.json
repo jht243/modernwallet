@@ -1,28 +1,5 @@
 {
   "slug": "best-ai-investing-apps",
-  "rows": [
-    {
-      "name": "PortfolioPilot",
-      "domain": "portfoliopilot.com",
-      "url": "https://portfoliopilot.com/",
-      "values": [
-        "Self-directed investors wanting AI portfolio assessment and fee analysis",
-        "Free; Gold $20/mo, Platinum $49/mo (billed annually); Pro from $99/mo",
-        "Hybrid-AI: recommendation engine plus LLM assistant; no trade execution",
-        "Not published"
-      ]
-    },
-    {
-      "name": "Astor",
-      "domain": "astor.app",
-      "url": "https://astor.app/",
-      "values": [
-        "Investors wanting texted alerts and research on their holdings",
-        "Free; Pro $120/yr, Max $228/yr (billed yearly)",
-        "AI agent for alerts, research and chat; Text to Trade on Max",
-        "Not published"
-      ]
-    }
-  ],
+  "rows": [],
   "cut": []
 }

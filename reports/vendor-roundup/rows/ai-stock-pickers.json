@@ -1,37 +1,5 @@
 {
   "slug": "best-ai-stock-pickers",
-  "rows": [
-    {
-      "name": "AlphaSense",
-      "domain": "alpha-sense.com",
-      "url": "https://www.alpha-sense.com/",
-      "values": [
-        "Institutional research teams needing cited market intelligence",
-        "AI search and cited summaries from filings, transcripts and broker research",
-        "Free start offered; terms not published",
-        "Not published"
-      ]
-    },
-    {
-      "name": "Analytical Platform",
-      "domain": "analyticalplatform.com",
-      "url": "https://analyticalplatform.com/",
-      "values": [
-        "Investors building factor-based portfolios from stock indicators",
-        "Ranked stock indicators and Modern Portfolio Theory optimizer output",
-        "One-month free trial for registered users",
-        "Not published"
-      ]
-    }
-  ],
-  "cut": [
-    {
-      "domain": "aimultiple.com",
-      "why": "category 1 \u2014 research and review publisher, no consumer product"
-    },
-    {
-      "domain": "assistents.ai",
-      "why": "category 4 \u2014 enterprise operations AI agents, not stock picking"
-    }
-  ]
+  "rows": [],
+  "cut": []
 }

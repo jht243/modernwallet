@@ -1,47 +1,30 @@
 {
   "site": "themodernwallet.com",
   "cut_as_other_category": {
-    "bookkeeping services": [
-      "ecombalance.com"
+    "unlabelled": [
+      "assistents.ai",
+      "ayadata.ai",
+      "bhsg.com",
+      "hklaw.com",
+      "howeandrusling.com",
+      "info.cccu.com",
+      "lindy.ai",
+      "meetfabric.com",
+      "nodes.inc",
+      "truereview.co",
+      "voxel51.com"
     ],
     "crypto wallets": [
       "spark.money"
     ],
-    "small-business funding": [
-      "helloskip.com"
-    ],
-    "unlabelled": [
-      "bhsg.com",
-      "convergehub.com",
-      "eposnow.com",
-      "ficstar.com",
-      "growegy.com",
-      "info.cccu.com",
-      "sheetstaxes.com",
-      "singerlawgroup.com",
-      "smartinvestortoolbox.com"
-    ],
-    "financial advisor": [
-      "wealthenhancement.com"
-    ],
-    "tax software": [
-      "getapril.com"
-    ],
-    "living trust": [
-      "johnsonturner.com",
-      "melonelawpc.com"
+    "business loan categories": [
+      "reilcap.com"
     ],
     "business loans or line of credit": [
       "clearlyacquired.com"
     ],
-    "brokerage": [
-      "ml.com"
-    ],
-    "no finance": [
-      "lendfoundry.com"
-    ],
-    "budgeting-apps": [
-      "aimoneyvault.app"
+    "bookkeeping": [
+      "pennybot.io"
     ],
     "prop firm": [
       "goatfundedtrader.com"

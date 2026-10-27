@@ -2,46 +2,17 @@
   "slug": "best-mortgage-lenders",
   "rows": [
     {
-      "name": "Change Home Mortgage",
-      "domain": "changemtg.com",
-      "url": "https://www.changemtg.com/",
+      "name": "Embrace Home Loans",
+      "domain": "embracehomeloans.com",
+      "url": "https://www.embracehomeloans.com/",
       "values": [
-        "Self-employed, gig and investor borrowers",
-        "Not published",
-        "Not published",
-        "Not published",
-        "Treasury-certified CDFI; NMLS #1839; licensed in nine listed states"
-      ]
-    },
-    {
-      "name": "Champions Mortgage",
-      "domain": "championsmortgageteam.com",
-      "url": "https://www.championsmortgageteam.com/",
-      "values": [
-        "Buyers in TX, FL, GA and NC",
-        "Offered; 0% down, no PMI",
-        "Not published",
-        "Not published",
-        "Also lists Halal financing, DSCR and bank statement loans"
-      ]
-    },
-    {
-      "name": "AmeriSave",
-      "domain": "amerisave.com",
-      "url": "https://www.amerisave.com/",
-      "values": [
-        "Purchase, refinance and home equity borrowers",
-        "Offered; 0% down for eligible borrowers",
-        "Offered; 0% down for eligible borrowers",
-        "620+ conventional; 580+ FHA",
-        "Online quote and preapproval; states served not published"
+        "Buyers wanting a fully underwritten approval before house hunting; veterans and rural buyers",
+        "Yes; little or no down payment for veterans, plus VA refinancing",
+        "Yes; zero down in USDA-designated rural areas",
+        "Not published; affordable housing programs accept scores as low as 620",
+        "Approved to Move underwriting, Guaranteed On-Time Closing; NMLS #2184; serving customers since 1983"
       ]
     }
   ],
-  "cut": [
-    {
-      "domain": "insidemortgagefinance.com",
-      "why": "category 1 \u2014 industry news and data publisher, no loan product"
-    }
-  ]
+  "cut": []
 }

@@ -1,10 +1,28 @@
 {
   "slug": "best-merchant-cash-advance-companies",
-  "rows": [],
-  "cut": [
+  "rows": [
     {
-      "domain": "mcadirectory.io",
-      "why": "category 1 \u2014 directory and lead-gen for MCA brokers and funders, no funding product of its own"
+      "name": "MerchantCashAdvance.co",
+      "domain": "merchantcashadvance.co",
+      "url": "https://merchantcashadvance.co/",
+      "values": [
+        "Merchant cash advance, small business loans, line of credit, SBA loans",
+        "Up to $500,000",
+        "Decision within 48 hours; funding usually under 7 days",
+        "Not published"
+      ]
+    },
+    {
+      "name": "Swish Funding",
+      "domain": "swishfunding.com",
+      "url": "https://swishfunding.com/",
+      "values": [
+        "Revenue-based financing, term loans, merchant cash advances, lines of credit",
+        "$10,000 to $5,000,000",
+        "As little as 24 hours; typically 24 to 48 hours",
+        "3+ months in business; $10,000+ monthly revenue"
+      ]
     }
-  ]
+  ],
+  "cut": []
 }

@@ -549,6 +549,30 @@
       "Not published"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "TradersPost",
+     "domain": "traderspost.io",
+     "url": "https://traderspost.io/",
+     "values": [
+      "Traders routing TradingView, webhook or AI-generated signals to their own brokerage accounts",
+      "Webhook API accepts signals from any AI or LLM output; no model built in",
+      "Signals routed to 17+ connected brokers; pause and review trades before sending",
+      "Not published on homepage; 7-day free trial, no credit card"
+     ],
+     "added": "2026-10-27"
+    },
+    {
+     "name": "XeanVI",
+     "domain": "xeanvi.com",
+     "url": "https://xeanvi.com/",
+     "values": [
+      "Rule-based traders wanting position sizing, daily loss lockout and an AI trade explainer",
+      "Rule-based workflow plus Xean, a built-in AI analyst powered by Claude",
+      "Orders routed through Alpaca; live trading currently off, automated trades are paper only",
+      "$19.99/mo or $199.99/yr; 7-day PRO trial, no card"
+     ],
+     "added": "2026-10-27"
     }
    ]
   },
@@ -654,6 +678,19 @@
       "Online quote and preapproval; states served not published"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "Embrace Home Loans",
+     "domain": "embracehomeloans.com",
+     "url": "https://www.embracehomeloans.com/",
+     "values": [
+      "Buyers wanting a fully underwritten approval before house hunting; veterans and rural buyers",
+      "Yes; little or no down payment for veterans, plus VA refinancing",
+      "Yes; zero down in USDA-designated rural areas",
+      "Not published; affordable housing programs accept scores as low as 620",
+      "Offers Approved to Move pre-underwriting; NMLS #2184; serving customers since 1983"
+     ],
+     "added": "2026-10-27"
     }
    ]
   },
@@ -1499,6 +1536,32 @@
       "Investors wanting a paid investment net worth tracker template"
      ],
      "added": "2026-10-26"
+    },
+    {
+     "name": "FinancialAha",
+     "domain": "financialaha.com",
+     "url": "https://www.financialaha.com/",
+     "values": [
+      "Net Worth Tracker $29 one-time; planning bundle $139",
+      "Financial Planning template ($29) tracks stocks, crypto and retirement accounts",
+      "Real estate templates $29 to $59, including mortgage analysis and rental analysis",
+      "Retirement Planning template $39; two simple retirement calculators free",
+      "Spreadsheet users wanting Google Sheets or Excel templates with no bank connection"
+     ],
+     "added": "2026-10-27"
+    },
+    {
+     "name": "WorthTracker",
+     "domain": "worthtracker.net",
+     "url": "https://www.worthtracker.net/",
+     "values": [
+      "Free $0; Pro $9/mo; Family $19/mo (list prices as of Oct 2026)",
+      "Allocation breakdown across real estate, investments, cash and other; no detailed analysis listed",
+      "Property tracked as a manually entered asset; no dedicated real estate features",
+      "FIRE projections on Pro; free FIRE and Coast FIRE calculators",
+      "Manual-entry users wanting monthly net worth snapshots without bank logins"
+     ],
+     "added": "2026-10-27"
     }
    ]
   },
@@ -3083,6 +3146,19 @@
       "Not published"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "Bright Money",
+     "domain": "brightmoney.co",
+     "url": "https://www.brightmoney.co/",
+     "values": [
+      "Starting at $50 (Bright Builder secured line of credit)",
+      "Yes, all three bureaus",
+      "Not published",
+      "No card fee listed; optional Premium Membership $97/yr",
+      "No minimum score needed; pull type Not published"
+     ],
+     "added": "2026-10-27"
     }
    ]
   },
@@ -3586,6 +3662,30 @@
       "Basic info, 3 months bank statements; 500+ credit score listed"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "MerchantCashAdvance.co",
+     "domain": "merchantcashadvance.co",
+     "url": "https://merchantcashadvance.co/",
+     "values": [
+      "Merchant cash advance, small business loans, line of credit, SBA loans",
+      "Up to $500,000",
+      "Decision within 48 hours; funding usually under 7 days",
+      "Not published"
+     ],
+     "added": "2026-10-27"
+    },
+    {
+     "name": "Swish Funding",
+     "domain": "swishfunding.com",
+     "url": "https://swishfunding.com/",
+     "values": [
+      "Revenue-based financing, term loans, merchant cash advances, lines of credit",
+      "$10,000 to $5,000,000",
+      "As little as 24 hours; typically 24 to 48 hours",
+      "3+ months in business; $10,000+ monthly revenue"
+     ],
+     "added": "2026-10-27"
     }
    ]
   },
@@ -3884,6 +3984,18 @@
       "Accounts receivable factoring; rates start at 1.0%, no board seats or covenants"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "Central Bank (Advantage Business Capital)",
+     "domain": "cbhou.com",
+     "url": "https://www.cbhou.com/business/factoring",
+     "values": [
+      "Not published",
+      "Not published; no long-term contract, you choose which invoices",
+      "Funds typically available within 24 hours of request",
+      "Advances up to 90% of invoices; fixed or floating discount fee"
+     ],
+     "added": "2026-10-27"
     }
    ]
   },
@@ -4093,6 +4205,18 @@
       "Not published"
      ],
      "added": "2026-10-26"
+    },
+    {
+     "name": "Idea Financial",
+     "domain": "ideafinancial.com",
+     "url": "https://www.ideafinancial.com/",
+     "values": [
+      "Up to $1MM on homepage; term-loan FAQ says up to $25,000",
+      "Less than 1 day, per site FAQ",
+      "650 personal credit score",
+      "Not published"
+     ],
+     "added": "2026-10-27"
     }
    ]
   },
@@ -4501,6 +4625,18 @@
       "Earnings, tax estimates, receipt photos"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "Easy Expense",
+     "domain": "easy-expense.com",
+     "url": "https://www.easy-expense.com/",
+     "values": [
+      "Not published",
+      "Not published",
+      "Yes, automatic GPS drive tracking",
+      "Receipt scanning, deduction finder, PDF and Excel reports"
+     ],
+     "added": "2026-10-27"
     }
    ]
   },
@@ -5275,6 +5411,18 @@
       "Teams of 1 to 500 wanting invoicing inside a business management suite"
      ],
      "added": "2026-10-26"
+    },
+    {
+     "name": "Waco3",
+     "domain": "waco3.io",
+     "url": "https://waco3.io/",
+     "values": [
+      "Free; Pro $30/mo or $288/yr; Studio $60/mo",
+      "Not published; AI drafts follow-ups for your approval",
+      "N/A; no payment processing",
+      "Freelancers and small studios sending proposals, quotes and invoices"
+     ],
+     "added": "2026-10-27"
     }
    ]
   },
@@ -5709,6 +5857,30 @@
       "In-person or online prep, plus ITIN and tax debt help"
      ],
      "added": "2026-10-26"
+    },
+    {
+     "name": "TaxesToday",
+     "domain": "taxestoday.net",
+     "url": "https://www.taxestoday.net/",
+     "values": [
+      "Local firm, virtual and in-person; IRS and CTEC registered",
+      "Tax preparation starting at $99",
+      "California",
+      "Freelancers, gig workers and 1099 contractors in Orange County, CA"
+     ],
+     "added": "2026-10-27"
+    },
+    {
+     "name": "myGREEN",
+     "domain": "mygreenonline.com",
+     "url": "https://mygreenonline.com/",
+     "values": [
+      "Local accounting and tax firm in Redmond, WA",
+      "Not published",
+      "Not published",
+      "Eastside Seattle-area filers wanting tax prep with bookkeeping and payroll"
+     ],
+     "added": "2026-10-27"
     }
    ]
   },
@@ -6138,6 +6310,18 @@
       "Not published"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "Patriot Software",
+     "domain": "patriotsoftware.com",
+     "url": "https://www.patriotsoftware.com/",
+     "values": [
+      "Payroll software with optional HR software add-on",
+      "Payroll starts at $17/mo + $4 per worker paid",
+      "You",
+      "You"
+     ],
+     "added": "2026-10-27"
     }
    ]
   },

@@ -2,25 +2,25 @@
   "slug": "best-invoicing-apps-for-freelancers",
   "rows": [
     {
-      "name": "Updoot",
-      "domain": "xecutethevision.com",
-      "url": "https://xecutethevision.com/",
+      "name": "Waco3",
+      "domain": "waco3.io",
+      "url": "https://waco3.io/",
       "values": [
-        "$5 per user per month, all features; 14-day free trial",
-        "Not published",
-        "Card payments via Stripe; fees not published",
-        "Teams of 1 to 500 wanting invoicing inside a business management suite"
+        "Free; Pro $30/mo or $288/yr; Studio $60/mo",
+        "Not published; AI drafts follow-ups for your approval",
+        "N/A; no payment processing",
+        "Freelancers and small studios sending proposals, quotes and invoices"
       ]
     }
   ],
   "cut": [
     {
-      "domain": "finwiselab.com",
-      "why": "category 1 \u2014 free calculators and guides publisher, no invoicing product"
+      "domain": "yaycommerce.com",
+      "why": "category 4 \u2014 WooCommerce plugin maker with no invoicing product; no fit in another category"
     },
     {
-      "domain": "pennybot.io",
-      "why": "category 4 \u2014 AI bookkeeping service, no invoicing; fits bookkeeping category"
+      "domain": "smartbizmetrics.com",
+      "why": "category 1 \u2014 software review blog and publisher, no invoicing product of its own"
     }
   ]
 }

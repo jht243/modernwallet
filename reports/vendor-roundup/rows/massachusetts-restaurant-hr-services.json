@@ -2,21 +2,16 @@
   "slug": "best-restaurant-hr-support-services-in-massachusetts",
   "rows": [
     {
-      "name": "Thrive HRO",
-      "domain": "thrivehro.com",
-      "url": "https://thrivehro.com/",
+      "name": "Patriot Software",
+      "domain": "patriotsoftware.com",
+      "url": "https://www.patriotsoftware.com/",
       "values": [
-        "HR outsourcing with PEO-style support",
-        "Not published",
-        "Not published",
-        "Not published"
+        "Payroll software with optional HR software add-on",
+        "Payroll starts at $17/mo + $4 per worker paid",
+        "You",
+        "You"
       ]
     }
   ],
-  "cut": [
-    {
-      "domain": "bhsg.com",
-      "why": "category 4 \u2014 Beacon Hill Staffing Group is a nationwide staffing firm with no restaurant HR support service; better fit: staffing agencies"
-    }
-  ]
+  "cut": []
 }

@@ -1,23 +1,10 @@
 {
   "slug": "best-robo-advisors",
-  "rows": [
-    {
-      "name": "Brookwood Investment Group",
-      "domain": "retirewithbrookwood.com",
-      "url": "https://www.retirewithbrookwood.com/",
-      "values": [
-        "Not published",
-        "Not published",
-        "Not published",
-        "Not published",
-        "Virtual-first advisory firm; retirement, investment management and Roth conversion planning"
-      ]
-    }
-  ],
+  "rows": [],
   "cut": [
     {
-      "domain": "daytradereview.com",
-      "why": "category 1 \u2014 review and comparison site, no product of its own"
+      "domain": "usetweed.com",
+      "why": "category 1 \u2014 publisher of calculators and guides, earns referral income, no investment product"
     }
   ]
 }

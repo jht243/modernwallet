@@ -1,14 +1,5 @@
 {
   "slug": "best-online-will-makers",
   "rows": [],
-  "cut": [
-    {
-      "domain": "redcross.org",
-      "why": "category 1 — nonprofit; will page is a FreeWill partner referral, no will product of its own"
-    },
-    {
-      "domain": "michiganlegalhelp.org",
-      "why": "category 1 — legal-aid information site (Michigan State Bar Foundation), free state statutory will form, not a vendor"
-    }
-  ]
+  "cut": []
 }

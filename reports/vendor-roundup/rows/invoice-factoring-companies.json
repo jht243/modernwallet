@@ -2,21 +2,16 @@
   "slug": "best-invoice-factoring-companies",
   "rows": [
     {
-      "name": "Harper Partners",
-      "domain": "joinharper.com",
-      "url": "https://www.joinharper.com/",
+      "name": "Central Bank (Advantage Business Capital)",
+      "domain": "cbhou.com",
+      "url": "https://www.cbhou.com/business/factoring",
       "values": [
-        "Media, advertising, hardware, B2B software, wholesale, staffing, transportation",
         "Not published",
-        "Approval within 48 hours; funding $25K to $5M",
-        "Accounts receivable factoring; rates start at 1.0%, no board seats or covenants"
+        "Not published; no long-term contract, you choose which invoices",
+        "Funds typically available within 24 hours of request",
+        "Advances up to 90% of invoices; fixed or floating discount fee"
       ]
     }
   ],
-  "cut": [
-    {
-      "domain": "clearlyacquired.com",
-      "why": "category 4 \u2014 debt broker offering lines of credit and working capital loans, no invoice factoring; fits business loans or line of credit"
-    }
-  ]
+  "cut": []
 }

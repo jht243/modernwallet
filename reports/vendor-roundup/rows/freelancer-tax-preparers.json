@@ -2,32 +2,27 @@
   "slug": "best-tax-preparation-services-for-freelancers",
   "rows": [
     {
-      "name": "Grow Brooklyn",
-      "domain": "growbrooklyn.org",
-      "url": "https://growbrooklyn.org/",
+      "name": "TaxesToday",
+      "domain": "taxestoday.net",
+      "url": "https://www.taxestoday.net/",
       "values": [
-        "Nonprofit; free VITA and self-employed tax prep",
-        "Free",
-        "Brooklyn, NY",
-        "Brooklyn self-employed filers; also offers legal help and coaching"
+        "Local firm, virtual and in-person; IRS and CTEC registered",
+        "Tax preparation starting at $99",
+        "California",
+        "Freelancers, gig workers and 1099 contractors in Orange County, CA"
       ]
     },
     {
-      "name": "Liberty Tax",
-      "domain": "libertytax.com",
-      "url": "https://www.libertytax.com/",
+      "name": "myGREEN",
+      "domain": "mygreenonline.com",
+      "url": "https://mygreenonline.com/",
       "values": [
-        "In-office or online tax preparation; IRS Authorized badge",
+        "Local accounting and tax firm in Redmond, WA",
         "Not published",
         "Not published",
-        "In-person or online prep, plus ITIN and tax debt help"
+        "Eastside Seattle-area filers wanting tax prep with bookkeeping and payroll"
       ]
     }
   ],
-  "cut": [
-    {
-      "domain": "moneydigest.com",
-      "why": "category 1 \u2014 personal finance publisher, no product of its own"
-    }
-  ]
+  "cut": []
 }
