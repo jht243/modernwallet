@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 2278,
+ "words": 2221,
  "floor": 1200,
  "input_tokens": 24742,
  "output_tokens": 4886,
@@ -20,9 +20,7 @@
  "est_cost_usd": 0.0244,
  "guards": {
   "repairs": [],
-  "flags": [
-   "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Locking into a higher mandatory payment restricts the liquidity needed to addres'; 'Similarly, buyers focused primarily on building immediate monthly cash flow for '; 'With stable personal income and substantial cash reserves, a 15-year mortgage al'"
-  ],
+  "flags": [],
   "disallowed_urls_removed": [],
   "words": 2235,
   "numbers_not_in_facts": [
@@ -486,6 +484,198 @@
     "flags": [
      "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Locking into a higher mandatory payment restricts the liquidity needed to addres'; 'Similarly, buyers focused primarily on building immediate monthly cash flow for '; 'With stable personal income and substantial cash reserves, a 15-year mortgage al'"
     ]
+   },
+   {
+    "round": 3,
+    "at": "2026-10-27T14:34:53+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-27-podcast/audit/15-year-mortgage-for-rental-property.round3.findings.txt",
+    "applied": [
+     {
+      "id": "title",
+      "quote": "15-Year Mortgage for Rental Property: Cash Flow and Break-Even Rent",
+      "replacement": "15-Year Mortgage for Rental Property: Cash Flow Math",
+      "type": "Title length exceeds limit",
+      "why": "Meets character length limit per audit instruction."
+     },
+     {
+      "id": "introText",
+      "quote": "The shorter term carries an immediate cost in monthly cash flow.",
+      "replacement": "",
+      "type": "Delete sentence per audit",
+      "why": "Removes redundant commentary per audit instruction."
+     },
+     {
+      "id": "introText",
+      "quote": "The shorter loan term",
+      "replacement": "On a modeled $300,000 loan, the shorter loan term",
+      "type": "Anchor opening with modeled loan amount",
+      "why": "Specifies the modeled scenario loan amount."
+     },
+     {
+      "id": "introText",
+      "quote": "If your tenant pays $3,300",
+      "replacement": "At a hypothetical rent of $3,300",
+      "type": "Label hypothetical rent",
+      "why": "Clarifies rent figure is a hypothetical model input."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "That $36,590.10 difference represents the financial value of the lower interest rate (Freddie Mac owner-occupied average) that lenders award to true 15-year commitments.",
+      "replacement": "That $36,590.10 reflects the model's lower 15-year rate (6.68% against 7.32%, both Freddie Mac owner-occupied averages).",
+      "type": "Unsupported claim about lender pricing value",
+      "why": "Aligns wording with model rates and survey source."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "A worked cash-flow example with a hypothetical rent of $3,300.",
+      "replacement": "Take a hypothetical rent of $3,300 a month.",
+      "type": "Sentence fragment",
+      "why": "Repairs sentence fragment into complete sentence."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Readers must also recognize what our mathematical model leaves out. ",
+      "replacement": "",
+      "type": "Delete sentence per audit",
+      "why": "Removes editorial filler sentence."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Lenders also do not report points and origination fees inside the survey results.",
+      "replacement": "Fees and points are not published in the survey.",
+      "type": "Align with source wording on fees and points",
+      "why": "Matches Freddie Mac survey fact list statement."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "your actual rate quote will vary",
+      "replacement": "your actual quote may differ",
+      "type": "Align with source fact list wording",
+      "why": "Matches source wording that quotes may differ."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "obtain actual 15 year investment property mortgage rates",
+      "replacement": "get investment-property quotes",
+      "type": "Wording revision per audit",
+      "why": "Uses concise operator phrasing per audit."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "private mortgage insurance",
+      "replacement": "mortgage insurance",
+      "type": "Drop unsupported word private",
+      "why": "Source lists mortgage insurance, not private mortgage insurance."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "Lenders typically price",
+      "replacement": "Lenders may price",
+      "type": "Hedge unsupported claim",
+      "why": "Softens assertion to match source limitations."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "7.32%",
+      "replacement": "7.32% (Freddie Mac owner-occupied average)",
+      "type": "Add survey average attribution",
+      "why": "Attributes survey rate to Freddie Mac owner-occupied average."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "With stable personal income and substantial cash reserves, a 15-year mortgage allows your tenant to pay off your asset in half the time. ",
+      "replacement": "",
+      "type": "Unsupported advice claim",
+      "why": "Deletes ungrounded assertion per audit."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "It also saves",
+      "replacement": "In the model it saves",
+      "type": "Clarify modeled savings attribution",
+      "why": "Attributes interest savings specifically to the model."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Locking into a higher mandatory payment restricts the liquidity needed to address emergency building repairs.",
+      "replacement": "Repairs come out of the same cash the higher payment uses.",
+      "type": "Wording revision per audit",
+      "why": "Simplifies repair cost tradeoff phrasing."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "buyers focused primarily on building immediate monthly cash flow for living expenses",
+      "replacement": "buyers who want maximum monthly cash flow",
+      "type": "Wording revision per audit",
+      "why": "Aligns with target persona phrasing from source."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Based on our internal modeling,",
+      "replacement": "Based on our internal modeling using Freddie Mac owner-occupied averages,",
+      "type": "Add survey attribution to takeaway",
+      "why": "Identifies source rates used in modeling."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "we mapped payment schedules, interest totals, and equity thresholds",
+      "replacement": "we mapped payment schedules and interest totals",
+      "type": "Drop equity thresholds per audit",
+      "why": "Reflects modeled metrics without unlisted threshold claims."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 2218,
+    "flags": []
+   },
+   {
+    "round": 4,
+    "at": "2026-10-27T14:37:40+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-27-podcast/audit/15-year-mortgage-for-rental-property.round4.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "A 15-year mortgage for a rental property makes financial sense only when monthly rent clears the higher loan payment with enough room for operating expenses.",
+      "replacement": "A 15-year mortgage for a rental property makes financial sense only when monthly rent clears the higher loan payment. It must leave enough room for operating expenses.",
+      "type": "monotone-rhythm",
+      "why": "Split long sentence into two shorter natural sentences without changing facts or meaning."
+     },
+     {
+      "id": "introText",
+      "quote": "At a hypothetical rent of $3,300 each month, a 30-year loan generates positive net cash flow of $74.21, whereas the 15-year loan creates a monthly deficit of $508.10.",
+      "replacement": "At a hypothetical rent of $3,300 each month, a 30-year loan generates positive net cash flow of $74.21. The 15-year loan creates a monthly deficit of $508.10.",
+      "type": "monotone-rhythm",
+      "why": "Split compound sentence into two concise natural sentences without altering facts."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Using the [Freddie Mac](https://www.freddiemac.com/pmms) averages for the week of October 22, 2026 and our assumed $1,000 a month in other costs and 5% vacancy, we mapped payment schedules and interest totals.",
+      "replacement": "We used the [Freddie Mac](https://www.freddiemac.com/pmms) averages for the week of October 22, 2026. Combined with our assumed $1,000 a month in other costs and 5% vacancy, we mapped payment schedules and interest totals.",
+      "type": "monotone-rhythm",
+      "why": "Split long introductory clause sentence into two shorter natural sentences, preserving the link."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 2221,
+    "flags": []
    }
   ]
  },

@@ -1,0 +1,102 @@
+{
+  "slug": "what-to-do-with-401k-when-you-retire",
+  "title": "What to Do With Your 401(k) When You Retire: 4 Choices",
+  "metaDescription": "Deciding what to do with your 401k when you retire? Compare direct rollovers, keeping plan assets, cash payouts, the 20% withholding trap, and Rule of 55.",
+  "h1": "What to Do With Your 401(k) When You Retire",
+  "cardBlurb": "Four IRS-recognized choices for an employer plan balance at retirement, the 20% withholding rule, and when the Rule of 55 changes your move.",
+  "introText": "You have four choices for your 401(k) when you retire. You can leave it in your former employer's plan, make a direct rollover to an individual retirement account (IRA) or another employer plan, take it as cash, or convert it to a Roth IRA. If you take a check made out to yourself, federal rules require the plan administrator to withhold 20% for taxes right away.\n\n For most workers who retire at or after age 59½, transferring retirement funds through a direct trustee-to-trustee transfer avoids the 20% withholding and keeps the money tax-deferred.",
+  "sections": [
+    {
+      "heading": "Your Four Options for a 401(k) at Retirement",
+      "body": "These are the main paths for your retirement plan balance once you separate from your employer, based on the rules of the [Internal Revenue Service (IRS)](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions).\n\nThe table below outlines how each choice affects taxes and what to watch. For the tax rules on a Roth conversion, see our guide to [Roth conversion rules](/guides/roth-conversion-rules/).\n\n| Option | What Happens to Taxes | What to Watch |\n| :--- | :--- | :--- |\n| Leave money in plan | Investment earnings remain tax-deferred until withdrawal | Plan fees, investment choices, and plan distribution rules |\n| Direct rollover to traditional IRA or new plan | No tax withheld, balance remains tax-deferred | Trustee must receive payment directly to avoid withholding |\n| Cash distribution paid to you | Subject to mandatory 20% withholding, balance is fully taxable | You must replace the withheld 20% from other cash within 60 days to complete an indirect rollover |\n| Rollover or conversion to Roth IRA | Pre-tax balance is treated as taxable income in the year converted | Taxable conversion |\n\n Staying in the former employer's plan keeps the Rule of 55 available (see below). For how withdrawals work, see our guide on [how to withdraw from a 401(k)](/guides/how-to-withdraw-from-401k/)."
+    },
+    {
+      "heading": "Why a Check Made Out to You Costs More",
+      "body": "A distribution check written in your own name triggers mandatory 20% federal tax withholding under IRS rules, even if you plan to deposit the full amount into a new IRA within 60 days.\n\nIn our internal analysis, we worked through the IRS withholding and rollover rules for three distribution sizes. We evaluated how much of your own money a check made out to you puts at risk. When an employer pays an eligible rollover distribution directly to an employee, the plan administrator must remit 20% to the government. To roll over the full balance and keep the transfer entirely tax-free, you must locate alternative funds equal to that withheld 20%. You must deposit the complete 100% amount into an IRA or new retirement plan within 60 days of receipt. If you deposit only the 80% net check you received, the IRS treats the missing 20% as a taxable cash distribution. For someone under age 59½ with no exception, that unreplaced 20% can also trigger a 10% additional tax.\n\n| Gross Distribution | 20% Mandatory Withholding | Net Check Received | Other Cash Needed to Complete Full 60-Day Rollover | Potential 10% Additional Tax on Unreplaced Sum |\n| :--- | :--- | :--- | :--- | :--- |\n| $50,000 | $10,000 | $40,000 | $10,000 | $1,000 |\n| $100,000 | $20,000 | $80,000 | $20,000 | $2,000 |\n| $250,000 | $50,000 | $200,000 | $50,000 | $5,000 |\n\nFor example, on a $100,000 account balance, the plan pays you $80,000 and sends $20,000 to the IRS. If you do not have $20,000 in outside cash to make up the difference within 60 days, you can deposit only the $80,000. In contrast, an authorized direct rollover incurs $0 in withholding, keeping the full $100,000 balance working in your account. You can verify these regulations on the official [IRS rollover rules page](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions). You can also evaluate the differences between individual retirement accounts in our review of [Rollover IRA vs Traditional IRA](/compare/rollover-ira-vs-traditional-ira/)."
+    },
+    {
+      "heading": "When the Rule of 55 Changes the Answer",
+      "body": "Retiring in the calendar year you turn 55 or older allows you to take penalty-free distributions from the 401(k) of the employer you just left, but does not carry over if you transfer the funds to an IRA.\n\nUnder the IRS early distribution rules, any money withdrawn from a qualified retirement plan or IRA before age 59½ is subject to a 10% additional tax on the portion included in gross income, unless an exception applies. According to the [IRS early distributions exceptions table](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions), qualified plans offer an exception for employees who separate from service during or after the calendar year they reach age 55 (or age 50 for qualified public safety employees in governmental plans). This provision is known as the Rule of 55. The IRS exceptions table explicitly marks this separation-from-service exemption as applicable to qualified employer plans, but lists it as unavailable for IRAs, SEP IRAs, and SIMPLE IRAs.\n\nThat difference matters if you retire before 59½. If you separate from your employer after the year you turn 55 and anticipate needing income before turning 59½, rolling your entire 401(k) balance into an IRA closes your access to the Rule of 55. Any subsequent distribution from that new IRA before age 59½ triggers the 10% additional tax unless you satisfy a separate IRA exception. If the plan allows it, you can keep the balance in the former employer's plan and take only what you need before age 59½. You can calculate potential penalties with our [401(k) early withdrawal calculator](/retirement/401k-early-withdrawal-calculator/) and review alternative early access strategies in our analysis of [Rule of 55 vs 72(t)](/compare/rule-of-55-vs-72t/)."
+    },
+    {
+      "heading": "Required Minimum Distributions",
+      "body": "Retirement account owners must eventually withdraw minimum annual amounts from tax-deferred balances once they hit federal age thresholds.\n\nThe IRS establishes that workers cannot retain tax-deferred balances indefinitely. As outlined in the [IRS required minimum distributions guide](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds), required minimum distributions (RMDs) generally mandate annual withdrawals. In our published resource on [how to withdraw from a 401(k)](/guides/how-to-withdraw-from-401k/), we explain that federal legislation sets the RMD start age at 73 for account holders born between 1951 and 1959, and raises the threshold to 75 for individuals born in 1960 or later. Account holders can verify their precise distribution schedules using the [IRS RMD FAQs](https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs).\n\nIf your employer plan document permits it, an employee who continues working past their statutory RMD start age can postpone required distributions from that specific employer plan until the year they actually retire. However, this postponement rule does not apply to employees who own 5% or more of the business sponsoring the plan. Traditional IRAs offer no equivalent delay. IRA owners must begin RMDs by their required start age whether actively working or fully retired.\n\nA retiree can delay their very first RMD until April 1 of the calendar year following the year they reach the qualifying age. Choosing this deferral requires you to take two separate RMDs in that second year. Designated Roth accounts inside a 401(k) and standalone Roth IRAs do not require any lifetime distributions while the original owner remains alive. If an account holder fails to withdraw their complete RMD by the legal deadline, the IRS imposes an excise tax of 25% on the shortfall, which drops to 10% if corrected within two years. You can project your statutory distribution amounts with our [RMD calculator](/retirement/rmd-calculator/)."
+    },
+    {
+      "heading": "Small Balances and the Default Rules",
+      "body": "Plan administrators may force distributions or transfer balances out of company plans if your vested total falls under statutory thresholds.\n\nFederal regulations allow plan administrators to establish automatic cash-out rules for departed workers. When you separate from service with a vested plan account balance between $1,000 and $5,000, the plan administrator can automatically transfer your funds into a default IRA opened in your name if you fail to submit distribution instructions. This rollover protects the funds from immediate taxation.\n\nFor vested balances of $1,000 or less, plan administrators can issue a full cash payout directly to you without your consent. In most instances, this mandatory cash distribution is subject to automatic 20% federal tax withholding. Even when forced into an involuntary cash payout, you retain the legal right to execute an indirect rollover by depositing the gross distribution amount into a new IRA within 60 days. To do this, you must supply the 20% withheld from other cash sources. Plan administrators must deliver a written explanation detailing your rollover rights, direct transfer options."
+    },
+    {
+      "heading": "Questions to Ask the Plan Before Deciding",
+      "body": "Before moving or liquidating funds, ask your former employer's benefits administrator specific questions about how the plan operates:\n\n1. What investment options does the plan offer, and what are the specific underlying fund fees and administrative expenses?\n2. Does the plan permit retired participants to take partial or periodic withdrawals, or does it mandate full lump-sum distributions?\n3. What is the plan's minimum balance requirement for terminated employees who want to maintain an account?\n4. Can the plan execute an electronic direct rollover to an external IRA custodian, or does it issue a paper check made payable to the new trustee?\n\nThis choice does not fit an individual who has separated from service during or after the year turning 55 and requires immediate portfolio income prior to age 59½. Rolling funds to an IRA in that situation forfeits the Rule of 55 exemption and exposes distributions to a 10% penalty. Our guidance would change if your former employer enforces high plan administrative fees, eliminates partial distribution options, or mandates complete balance liquidations upon retirement. To build a coordinated distribution schedule, consult our guide on [retirement withdrawal strategies](/guides/retirement-withdrawal-strategies/)."
+    },
+    {
+      "heading": "Our Takeaway",
+      "body": "We based our view on internal analysis of IRS rollover guidelines and mandatory tax withholding arithmetic. For most retirees, the real choice is between maintaining their existing 401(k) and executing a direct trustee-to-trustee transfer to an IRA or a new employer plan. The costliest mistake is requesting a distribution check made out to your own name, because mandatory 20% tax withholding creates an unnecessary cash shortfall and subjects unreplaced funds to income taxes and potential penalties.\n\nA direct rollover fits a reader who wants to keep the money tax-deferred. It suits someone who does not need to access retirement money before age 59½. It does not fit an early retiree between ages 55 and 59½ who separated from service and needs penalty-free income directly from that employer account. Your ideal move changes based on your age and whether you require immediate income. It also depends on your plan's specific fee schedule and whether it allows partial post-retirement withdrawals. Evaluate your personal income timeline with our [retirement income calculator](/retirement/retirement-income-calculator/) and discuss your distribution plan with a licensed certified public accountant (CPA) or financial advisor."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/retirement/401k-early-withdrawal-calculator/",
+      "label": "401(k) early withdrawal"
+    },
+    {
+      "href": "/retirement/rmd-calculator/",
+      "label": "RMD"
+    },
+    {
+      "href": "/retirement/retirement-income-calculator/",
+      "label": "Retirement income"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What happens to my 401(k) when I retire?",
+      "answer": "When you retire, your 401(k) remains in your employer's plan until you choose a path. You can leave it there, transfer it via direct rollover to an IRA or new employer plan, withdraw the balance as cash, or convert it to a Roth IRA. the plan may move a $1,000 to $5,000 balance into an IRA, or pay out $1,000 or less depending on plan rules."
+    },
+    {
+      "question": "Can I leave my 401(k) with my former employer?",
+      "answer": "You can leave your 401(k) with your former employer if the plan allows former employees to stay. If your vested balance is between $1,000 and $5,000, the plan can roll it into a default IRA without your consent, and balances of $1,000 or less can be paid directly to you in cash. Contact your plan administrator to review your plan's specific rules."
+    },
+    {
+      "question": "Do I have to withdraw my 401(k) when I retire?",
+      "answer": "You do not have to withdraw your 401(k) immediately upon retirement unless your balance falls below the plan's small-balance threshold. However, federal rules require you to begin required minimum distributions once you reach age 73 (or 75 depending on your birth year), unless you are still working for that employer and own less than 5% of the company."
+    },
+    {
+      "question": "How do I avoid the 20% withholding when moving my 401(k)?",
+      "answer": "A direct rollover, also called a trustee-to-trustee transfer, sends the money from your 401(k) straight to an IRA or new plan, so no 20% is withheld."
+    },
+    {
+      "question": "Can I roll a 401(k) into a Roth IRA?",
+      "answer": "You can roll a traditional 401(k) into a Roth IRA, but the transaction is treated as a taxable conversion under IRS rules. You must report any pre-tax contributions and earnings as taxable income in the year the rollover occurs. Review the details in our guide to [Roth conversion rules](/guides/roth-conversion-rules/)."
+    },
+    {
+      "question": "What is the 20% withholding on a 401(k) distribution?",
+      "answer": "Federal law requires plan administrators to withhold 20% for income taxes on any eligible rollover distribution paid directly to an employee. To complete an indirect rollover and avoid taxes on the full balance, you must replace that withheld 20% with outside cash and deposit the full 100% distribution into an IRA or retirement plan within 60 days."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS: Rollovers of Retirement Plan and IRA Distributions",
+      "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions"
+    },
+    {
+      "label": "IRS: Exceptions to Tax on Early Distributions",
+      "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions"
+    },
+    {
+      "label": "IRS: Required Minimum Distributions (RMDs)",
+      "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds"
+    },
+    {
+      "label": "IRS: Retirement Plan and IRA Required Minimum Distributions FAQs",
+      "url": "https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

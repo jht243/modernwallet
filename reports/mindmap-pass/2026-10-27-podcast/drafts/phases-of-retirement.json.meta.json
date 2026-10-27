@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 2348,
+ "words": 2265,
  "floor": 1200,
  "input_tokens": 24653,
  "output_tokens": 4340,
@@ -23,7 +23,7 @@
    "removed 1 off-list link(s), kept the text"
   ],
   "flags": [
-   "claim check: 17 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Active travel, personal projects, more discretionary spending, transition away f'; 'Travel moderates, home-centered routines increase, daily pace stabilizes'; 'Activity slows further, home support or medical needs become central'; 'Healthcare funding, simplified account administration, account delegations, bene'"
+   "claim check: 13 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Its rules set hard guardrails on taxes and penalties, while health, family circu'; 'Phase boundaries depend on your health, energy, and personal plans. They do not '; 'Required minimum distributions (RMDs), taxable income management, portfolio risk'; 'Who can act on your accounts, beneficiary reviews, how care would be paid for'"
   ],
   "disallowed_urls_removed": [
    "https://www.ssa.gov"
@@ -450,6 +450,183 @@
     "words": 2348,
     "flags": [
      "claim check: 17 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Active travel, personal projects, more discretionary spending, transition away f'; 'Travel moderates, home-centered routines increase, daily pace stabilizes'; 'Activity slows further, home support or medical needs become central'; 'Healthcare funding, simplified account administration, account delegations, bene'"
+    ]
+   },
+   {
+    "round": 2,
+    "at": "2026-10-27T14:34:49+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-27-podcast/audit/phases-of-retirement.round3.findings.txt",
+    "applied": [
+     {
+      "id": "sections[1].body",
+      "quote": "Missing these calendar milestones can trigger steep tax penalties.",
+      "replacement": "Missing these calendar milestones can trigger tax penalties.",
+      "type": "Delete 'steep' (hype word)",
+      "why": "Removes the banned hype word 'steep'."
+     },
+     {
+      "id": "introText",
+      "quote": "Late retirement deals with legacy plans, managing accounts, and the compounding effect of inflation on fixed living expenses.",
+      "replacement": "Late retirement deals with managing accounts, and the compounding effect of inflation on fixed living expenses.",
+      "type": "Intro unsupported: delete 'legacy plans,'",
+      "why": "Unsupported by fact list."
+     },
+     {
+      "id": "introText",
+      "quote": "Instead, calendar rules set hard guardrails on taxes and penalties, while health, family circumstances, and personal spending dictate when you move from an active lifestyle to a quieter one.",
+      "replacement": "Its rules set hard guardrails on taxes and penalties, while health, family circumstances, and personal spending dictate when you move from an active lifestyle to a quieter one.",
+      "type": "Restates sentence before it; use 'Its rules set hard guardrails'",
+      "why": "Fixes restatement per finding 7."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "This active period requires establishing a sustainable draw rate and deciding which accounts to tap first.",
+      "replacement": "You must decide which accounts to tap first.",
+      "type": "Delete 'This active period requires establishing a sustainable draw rate and'",
+      "why": "Unsupported per finding 5."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "federal statutory changes under the SECURE 2.0 Act set the RMD age",
+      "replacement": "federal statutory changes under the [SECURE 2.0 Act](https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs) set the RMD age",
+      "type": "'under the SECURE 2.0 Act' is unlinked: link it",
+      "why": "Links SECURE 2.0 per finding 8."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Appointing trusted powers of attorney and updating primary and contingent account beneficiaries make day-to-day oversight manageable for you and your family.",
+      "replacement": "",
+      "type": "Delete sentence about appointing trusted powers of attorney",
+      "why": "Unsupported per finding 5."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Earning income well past normal retirement ages reduces the need to draw down investment portfolios, postpones account depletion, and changes the tax math on withdrawals.",
+      "replacement": "",
+      "type": "Delete sentence (unsupported)",
+      "why": "Unsupported per finding 4."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "The early phase focuses on establishing initial income, the middle phase introduces required minimum distributions, and the late phase prioritizes ongoing care.",
+      "replacement": "Planners use these labels for a more active early period, a slower middle and a least-active late period. The IRS does not use them.",
+      "type": "FAQ goes beyond fact list",
+      "why": "Replaces unsupported text per finding 3."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "The go-go period represents an active initial phase. The slow-go period marks a time when routines become more home-centered and daily activity moderates. The no-go phase describes later years when physical limitations slow down daily movement and healthcare needs take precedence.",
+      "replacement": "Planners use these labels for a more active early period, a slower middle and a least-active late period. The IRS does not use them.",
+      "type": "FAQ goes beyond fact list",
+      "why": "Replaces unsupported text per finding 3."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Government agencies and tax authorities do not recognize formal phase counts or assign age limits to them.",
+      "replacement": "The IRS does not recognize formal phase counts or assign age limits to them.",
+      "type": "Replace 'Government agencies and tax authorities do not recognize'",
+      "why": "Complies with finding 6."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "Spending patterns vary significantly by individual household, and economic arithmetic shows that inflation increases the dollar cost of maintaining the same lifestyle over time.",
+      "replacement": "Spending patterns vary by household, and economic arithmetic shows that inflation increases the dollar cost of maintaining the same lifestyle over time.",
+      "type": "Replace 'Spending patterns vary significantly by individual household'",
+      "why": "Complies with finding 6."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      13
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "introText",
+       "quote": "Its rules set hard guardrails on taxes and penalties, while health, family circumstances, and personal spending dictate when you move from an active lifestyle to a quieter one.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[0].body",
+       "quote": "Phase boundaries depend on your health, energy, and personal plans. They do not depend on a birthday.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[0].body",
+       "quote": "Required minimum distributions (RMDs), taxable income management, portfolio risk adjustments",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[0].body",
+       "quote": "Who can act on your accounts, beneficiary reviews, how care would be paid for",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "Because care costs can be unpredictable, your late-stage plan should address who will manage your accounts if you experience health challenges.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "Securing dependable income that does not depend on active portfolio management helps anchor late-stage budgets.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "When reviewing guaranteed cash flow, evaluate the core differences between a pension and an annuity in our analysis of a [pension vs annuity](/compare/pension-vs-annuity/).",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[5].body",
+       "quote": "The standard three-phase model assumes a gradual, voluntary transition from an active career into full leisure.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[5].body",
+       "quote": "If chronic illness or acute disability forces an unplanned early departure from the workforce, active travel plans may vanish entirely.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[5].body",
+       "quote": "Similarly, couples where spouses have significant age differences or divergent career timelines will find that one partner enters a slower phase while the other remains active in the workforce.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[5].body",
+       "quote": "Retirees who continue working part-time, consult, or operate small businesses also break the traditional mold.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[0].answer",
+       "quote": "In financial planning discussions, they are frequently called the go-go, slow-go, and no-go years to reflect shifts in physical energy and activity.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[1].answer",
+       "quote": "Go-go, slow-go, and no-go are informal labels used by retirement planners to describe changes in lifestyle activity.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2265,
+    "flags": [
+     "claim check: 13 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Its rules set hard guardrails on taxes and penalties, while health, family circu'; 'Phase boundaries depend on your health, energy, and personal plans. They do not '; 'Required minimum distributions (RMDs), taxable income management, portfolio risk'; 'Who can act on your accounts, beneficiary reviews, how care would be paid for'"
     ]
    }
   ]

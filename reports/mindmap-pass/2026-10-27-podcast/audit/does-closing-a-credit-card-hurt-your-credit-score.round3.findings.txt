@@ -1,0 +1,7 @@
+1. "even if it causes a temporary dip in your score" overstates the CFPB ("may be temporary or minor"): use "even if it lowers your score".
+2. "Paying down balances ahead of time prevents the closure from driving your overall utilization higher." is false (10.0% after closing vs 5.0% before with the same $1,000 owed): use "Paying down balances ahead of time keeps the post-closure ratio lower."
+3. FAQ 3 "can have a larger negative effect on your credit score" unsupported: use "Each closure removes that card's limit from your total, so utilization rises with each one. Divide your total balances by the limits that remain after each planned closure."
+4. Section 4: "A consumer who owns only one credit card faces an entirely different financial equation. If you close your sole credit card, you eliminate 100% of your revolving credit limit." is a dead end: add "The table above does not apply to you. Ask the card issuer or a nonprofit credit counselor how closing it would affect you." Replace "also encounters unique constraints" with "still owes it".
+5. FAQ 2: "for updates on credit reporting rules" misdescribes the CFPB page: use "for the full explanation". FAQ 1: "can help maintain" -> "may help maintain"; "monthly statements" -> "statements".
+6. Delete the sentence "the CFPB emphasizes the importance of ongoing account monitoring" (restates the next).
+7. Takeaway: "You may want to close an unneeded credit card." -> "If you are considering closing a card,". Link text "good annual percentage rate (APR) for credit card" -> "good APR for credit cards".

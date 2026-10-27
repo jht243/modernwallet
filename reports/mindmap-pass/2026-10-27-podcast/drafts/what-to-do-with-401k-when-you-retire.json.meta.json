@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 2313,
+ "words": 2256,
  "floor": 1200,
  "input_tokens": 25654,
  "output_tokens": 4328,
@@ -21,7 +21,7 @@
  "guards": {
   "repairs": [],
   "flags": [
-   "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'The costliest mistake is requesting a distribution check made out to your own na'; 'It does not fit an early retiree between ages 55 and 59\u00bd who separated from serv'; 'Your ideal move changes based on your age and whether you require immediate inco'; \"Your account balance must also exceed the plan's mandatory cash-out threshold. \""
+   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'In contrast, an authorized direct rollover incurs $0 in withholding, keeping the'"
   ],
   "disallowed_urls_removed": [],
   "words": 2428,
@@ -387,6 +387,186 @@
     "words": 2313,
     "flags": [
      "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'The costliest mistake is requesting a distribution check made out to your own na'; 'It does not fit an early retiree between ages 55 and 59\u00bd who separated from serv'; 'Your ideal move changes based on your age and whether you require immediate inco'; \"Your account balance must also exceed the plan's mandatory cash-out threshold. \""
+    ]
+   },
+   {
+    "round": 3,
+    "at": "2026-10-27T14:36:12+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-27-podcast/audit/what-to-do-with-401k-when-you-retire.round3.findings.txt",
+    "applied": [
+     {
+      "id": "sections[0].body",
+      "quote": "You can examine tax rules for that transfer in our guide to [Roth conversion rules](/guides/roth-conversion-rules/).",
+      "replacement": "For the tax rules on a Roth conversion, see our guide to [Roth conversion rules](/guides/roth-conversion-rules/).",
+      "type": "Audit finding 1",
+      "why": "Update link sentence phrasing per audit report."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Remaining inside an employer plan preserves specific statutory exceptions such as earlier penalty-free distributions. You can learn the mechanics of scheduling withdrawals from an employer account. See our guide on",
+      "replacement": "Staying in the former employer's plan keeps the Rule of 55 available (see below). For how withdrawals work, see our guide on",
+      "type": "Audit finding 2",
+      "why": "Fix broken sentence phrasing and reference Rule of 55."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "That unreplaced 20% also triggers a 10% additional early distribution tax. This applies to individuals under age 59\u00bd who lack an exception.",
+      "replacement": "For someone under age 59\u00bd with no exception, that unreplaced 20% can also trigger a 10% additional tax.",
+      "type": "Audit finding 3",
+      "why": "Clarify that 10% additional tax applies under 59\u00bd without exception."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "that exception evaporates",
+      "replacement": "does not carry over",
+      "type": "Audit finding 4 (part 2)",
+      "why": "Replace dramatic metaphor with supported wording."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Traditional IRAs offer no equivalent delay; IRA owners must",
+      "replacement": "Traditional IRAs offer no equivalent delay. IRA owners must",
+      "type": "Audit finding 4 (part 1)",
+      "why": "Replace semicolon with period per audit finding."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Former employers possess the legal authority to force",
+      "replacement": "Plan administrators may force",
+      "type": "Audit finding 5 (part 2)",
+      "why": "Use plan administrators may force per source rules."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": ", and tax consequences before initiating any distribution",
+      "replacement": "",
+      "type": "Audit finding 5 (part 1)",
+      "why": "Delete unsupported phrasing per audit finding."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "ordinary income",
+      "replacement": "income",
+      "type": "Audit finding 5 (part 3)",
+      "why": "Change ordinary income to income per source."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "If your balance is $5,000 or less, your employer may automatically roll it into an IRA or cash it out",
+      "replacement": "the plan may move a $1,000 to $5,000 balance into an IRA, or pay out $1,000 or less",
+      "type": "Audit finding 6",
+      "why": "Correct small balance cash-out thresholds per source."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Your account balance must also exceed the plan's mandatory cash-out threshold. ",
+      "replacement": "",
+      "type": "Audit finding 7",
+      "why": "Delete unsupported mandatory cash-out threshold statement."
+     },
+     {
+      "id": "faqs[3].question",
+      "quote": "How do I avoid taxes when moving my 401(k)?",
+      "replacement": "How do I avoid the 20% withholding when moving my 401(k)?",
+      "type": "Audit finding 8 (part 1)",
+      "why": "Retitle question to match 20% withholding focus."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "A direct rollover avoids the 20% withholding and keeps the money tax-deferred, also called a trustee-to-trustee transfer, where the funds are transferred directly from your 401(k) to an IRA or new retirement plan.",
+      "replacement": "A direct rollover, also called a trustee-to-trustee transfer, sends the money from your 401(k) straight to an IRA or new plan, so no 20% is withheld.",
+      "type": "Audit finding 8 (part 2)",
+      "why": "Replace garbled rollover explanation."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": " Direct transfers avoid the mandatory 20% federal tax withholding that applies when a distribution check is made payable directly to you.",
+      "replacement": "",
+      "type": "Audit finding 8 (part 3)",
+      "why": "Delete redundant following sentence per audit."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      3
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[0].body",
+       "quote": "Trustee must receive payment directly to avoid withholding",
+       "type": "contradicted",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "This rollover protects the funds from immediate taxation.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[3].answer",
+       "quote": "A direct rollover, also called a trustee-to-trustee transfer, sends the money from your 401(k) straight to an IRA or new plan, so no 20% is withheld.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2251,
+    "flags": [
+     "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Trustee must receive payment directly to avoid withholding'; 'This rollover protects the funds from immediate taxation.'; 'A direct rollover, also called a trustee-to-trustee transfer, sends the money fr'"
+    ]
+   },
+   {
+    "round": 4,
+    "at": "2026-10-27T14:37:29+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-27-podcast/audit/what-to-do-with-401k-when-you-retire.round4.findings.txt",
+    "applied": [
+     {
+      "id": "sections[1].body",
+      "quote": "A distribution check written in your own name triggers mandatory 20% federal tax withholding under IRS rules, even if you plan to deposit the full amount into a new IRA within 60 days.",
+      "replacement": "A distribution check written in your own name triggers mandatory 20% federal tax withholding under IRS rules. This applies even if you plan to deposit the full amount into a new IRA within 60 days.",
+      "type": "monotone-rhythm",
+      "why": "Split into two natural sentences to vary sentence length without changing meaning."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "To roll over the full balance and keep the transfer entirely tax-free, you must locate alternative funds equal to that withheld 20%.",
+      "replacement": "To roll over the full balance, you must locate alternative funds equal to that withheld 20%. This step keeps the transfer entirely tax-free.",
+      "type": "monotone-rhythm",
+      "why": "Split into two shorter sentences to break rhythm without altering facts."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "If you deposit only the 80% net check you received, the IRS treats the missing 20% as a taxable cash distribution.",
+      "replacement": "You might deposit only the 80% net check you received. If so, the IRS treats the missing 20% as a taxable cash distribution.",
+      "type": "monotone-rhythm",
+      "why": "Split into two shorter natural sentences while preserving exact meaning."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[1].body",
+       "quote": "In contrast, an authorized direct rollover incurs $0 in withholding, keeping the full $100,000 balance working in your account.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2256,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'In contrast, an authorized direct rollover incurs $0 in withholding, keeping the'"
     ]
    }
   ]

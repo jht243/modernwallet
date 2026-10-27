@@ -1,0 +1,8 @@
+Quote: "A distribution check written in your own name triggers mandatory 20% federal tax withholding under IRS rules, even if you plan to deposit the full amount into a new IRA within 60 days."
+Defect: monotone-rhythm. Fix: split into two shorter natural sentences, no change to facts, numbers, links or meaning.
+
+Quote: "To roll over the full balance and keep the transfer entirely tax-free, you must locate alternative funds equal to that withheld 20%."
+Defect: monotone-rhythm. Fix: split into two shorter natural sentences, no change to facts, numbers, links or meaning.
+
+Quote: "If you deposit only the 80% net check you received, the IRS treats the missing 20% as a taxable cash distribution."
+Defect: monotone-rhythm. Fix: split into two shorter natural sentences, no change to facts, numbers, links or meaning.

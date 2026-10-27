@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "GEMINI_API_KEY",
  "finish_reason": "STOP",
- "words": 1849,
+ "words": 1835,
  "floor": 1200,
  "input_tokens": 24014,
  "output_tokens": 3380,
@@ -20,7 +20,9 @@
  "est_cost_usd": 0.0184,
  "guards": {
   "repairs": [],
-  "flags": [],
+  "flags": [
+   "claim check: 8 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'If an unused card charges an annual maintenance fee, keeping it open costs money'; 'If you do not anticipate applying for a mortgage, an auto loan, or another credi'; 'When you have no immediate borrowing needs, eliminating an unnecessary account o'; 'Closing the card with the lowest credit limit or highest recurring annual fee mi'"
+  ],
   "disallowed_urls_removed": [],
   "words": 2094,
   "numbers_not_in_facts": [],
@@ -463,6 +465,153 @@
     },
     "words": 1849,
     "flags": []
+   },
+   {
+    "round": 3,
+    "at": "2026-10-27T14:36:35+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-27-podcast/audit/does-closing-a-credit-card-hurt-your-credit-score.round3.findings.txt",
+    "applied": [
+     {
+      "id": "sections[1].body",
+      "quote": "even if it causes a temporary dip in your score",
+      "replacement": "even if it lowers your score",
+      "type": "Overstates CFPB guidance",
+      "why": "CFPB says change may be temporary or minor, not definite dip."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Paying down balances ahead of time prevents the closure from driving your overall utilization higher.",
+      "replacement": "Paying down balances ahead of time keeps the post-closure ratio lower.",
+      "type": "False claim about utilization ratio",
+      "why": "Utilization after closure is 10% vs 5% before."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Closing multiple cards can have a larger negative effect on your credit score because each closure removes an additional credit limit from your total available credit.",
+      "replacement": "Each closure removes that card's limit from your total, so utilization rises with each one. Divide your total balances by the limits that remain after each planned closure.",
+      "type": "Larger negative effect is unsupported",
+      "why": "Source supports utilization math rather than claiming larger negative effect."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "A consumer who owns only one credit card faces an entirely different financial equation. If you close your sole credit card, you eliminate 100% of your revolving credit limit.",
+      "replacement": "A consumer who owns only one credit card faces an entirely different financial equation. If you close your sole credit card, you eliminate 100% of your revolving credit limit. The table above does not apply to you. Ask the card issuer or a nonprofit credit counselor how closing it would affect you.",
+      "type": "Single-card section is a dead end",
+      "why": "Provides actionable guidance directing single-card holders to counselor or issuer."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "also encounters unique constraints",
+      "replacement": "still owes it",
+      "type": "Vague wording for carrying balance",
+      "why": "Cardholder still owes the balance after closing."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "for updates on credit reporting rules",
+      "replacement": "for the full explanation",
+      "type": "Misdescribes CFPB page",
+      "why": "CFPB page provides general explanation rather than reporting rules."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "can help maintain",
+      "replacement": "may help maintain",
+      "type": "Overstates certainty of score maintenance",
+      "why": "CFPB states keeping open may help maintain score."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "monthly statements",
+      "replacement": "statements",
+      "type": "Inaccurate statement frequency",
+      "why": "CFPB tip refers to statements without monthly frequency."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "If you decide to keep an unused card open rather than canceling it, the CFPB emphasizes the importance of ongoing account monitoring. ",
+      "replacement": "",
+      "type": "Redundant sentence restates the next",
+      "why": "Sentence restates the following CFPB tip on monitoring statements."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "You may want to close an unneeded credit card.",
+      "replacement": "If you are considering closing a card,",
+      "type": "Takeaway phrasing",
+      "why": "Reframes sentence as conditional opening."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "good annual percentage rate (APR) for credit card",
+      "replacement": "good APR for credit cards",
+      "type": "Awkward link anchor text",
+      "why": "Aligns anchor phrasing with standard guide link text."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      8
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[1].body",
+       "quote": "If an unused card charges an annual maintenance fee, keeping it open costs money year after year.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[1].body",
+       "quote": "If you do not anticipate applying for a mortgage, an auto loan, or another credit line in the coming months, a temporary or minor decline in your credit score poses fewer immediate consequences.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[1].body",
+       "quote": "When you have no immediate borrowing needs, eliminating an unnecessary account or shedding an annual fee carries minimal practical downside.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[2].body",
+       "quote": "Closing the card with the lowest credit limit or highest recurring annual fee minimizes the reduction in your total credit lines.",
+       "type": "contradicted",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[3].body",
+       "quote": "Our analysis also does not fit someone preparing to apply for a major loan, such as a home mortgage or vehicle financing, in the near future.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[3].body",
+       "quote": "Our core verdict would change if you currently pay expensive annual fees on an unused card while holding zero balances across all other accounts.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "It does not fit an individual who plans to apply for new financing in the near future, or someone who holds large balances across their remaining accounts.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "If the closure causes your utilization to spike, consider paying down existing card balances first, or contact an accredited nonprofit credit counselor to review your full debt management strategy.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1835,
+    "flags": [
+     "claim check: 8 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'If an unused card charges an annual maintenance fee, keeping it open costs money'; 'If you do not anticipate applying for a mortgage, an auto loan, or another credi'; 'When you have no immediate borrowing needs, eliminating an unnecessary account o'; 'Closing the card with the lowest credit limit or highest recurring annual fee mi'"
+    ]
    }
   ]
  },

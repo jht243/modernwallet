@@ -1,0 +1,8 @@
+1. "Missing these calendar milestones can trigger steep tax penalties." Delete "steep" (hype word).
+2. Intro "Late retirement deals with legacy plans, managing accounts" unsupported: delete "legacy plans,".
+3. FAQ: "The go-go period represents an active initial phase. The slow-go period marks a time when routines become more home-centered and daily activity moderates. The no-go phase describes later years when physical limitations slow down daily movement and healthcare needs take precedence." and "the late phase prioritizes ongoing care" go beyond the fact list. Replace with "Planners use these labels for a more active early period, a slower middle and a least-active late period. The IRS does not use them."
+4. Delete the sentence "Earning income well past normal retirement ages reduces the need to draw down investment portfolios, postpones account depletion, and changes the tax math on withdrawals." (unsupported).
+5. Delete the sentence "Appointing trusted powers of attorney and updating primary and contingent account beneficiaries make day-to-day oversight manageable for you and your family." Also delete "This active period requires establishing a sustainable draw rate and".
+6. "Spending patterns vary significantly by individual household" -> "Spending patterns vary by household". "Government agencies and tax authorities do not recognize" -> "The IRS does not recognize".
+7. "Instead, calendar rules set hard guardrails" restates the sentence before it: use "Its rules set hard guardrails".
+8. "under the SECURE 2.0 Act" in section 2 is unlinked: link it to https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs

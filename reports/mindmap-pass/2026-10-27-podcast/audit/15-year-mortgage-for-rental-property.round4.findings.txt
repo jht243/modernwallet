@@ -1,0 +1,8 @@
+Quote: "A 15-year mortgage for a rental property makes financial sense only when monthly rent clears the higher loan payment with enough room for operating expenses."
+Defect: monotone-rhythm. Fix: split into two shorter natural sentences, no change to facts, numbers, links or meaning.
+
+Quote: "At a hypothetical rent of $3,300 each month, a 30-year loan generates positive net cash flow of $74.21, whereas the 15-year loan creates a monthly deficit of $508.10."
+Defect: monotone-rhythm. Fix: split into two shorter natural sentences, no change to facts, numbers, links or meaning.
+
+Quote: "Using the [Freddie Mac](https://www.freddiemac.com/pmms) averages for the week of October 22, 2026 and our assumed $1,000 a month in other costs and 5% vacancy, we mapped payment schedules and interest totals."
+Defect: monotone-rhythm. Fix: split into two shorter natural sentences, no change to facts, numbers, links or meaning.
