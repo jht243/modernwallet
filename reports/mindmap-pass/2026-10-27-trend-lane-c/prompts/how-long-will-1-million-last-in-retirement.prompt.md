@@ -38,7 +38,6 @@ For a 30-year retirement (age 60 to 90), $1,000,000 supports a flat monthly draw
 - /guides/retirement-withdrawal-strategies/
 - /guides/how-long-will-150k-last-in-retirement/
 - /guides/how-to-retire-with-1-million/ (link once, for 'is $1 million enough and what it pays')
-- /guides/how-long-will-2-million-last-in-retirement/
 
 ## `tools` FIELD
 Pick 2-3 from: /investing/withdrawal-calculator/ (label "Withdrawal calculator"), /retirement/retirement-income-calculator/ (label "Retirement income"), /retirement/social-security-retirement-calculator/ (label "Social Security").
@@ -74,6 +73,11 @@ Modeled results for a starting balance of $1,000,000 (years until the balance re
 - Highest flat monthly withdrawal that uses $1,000,000 up in exactly 30 years: 0% real: $2,777.78 a month; 2% real: $3,696.19 a month; 4% real: $4,774.15 a month; 5% real: $5,368.22 a month.
 - Highest flat monthly withdrawal that uses $1,000,000 up in exactly 35 years: 0% real: $2,380.95 a month; 2% real: $3,312.63 a month; 4% real: $4,427.75 a month; 5% real: $5,046.88 a month.
 - Interest-only income (monthly withdrawal equal to the monthly real return, balance stays at the starting amount): 2% real: $20,000 a year, $1,666.67 a month; 3% real: $30,000 a year, $2,500 a month; 4% real: $40,000 a year, $3,333.33 a month; 5% real: $50,000 a year, $4,166.67 a month.
+
+Source: same modeling (scale fact, derived from the saved $2,000,000 and $1,000,000 runs).
+- The years depend only on the ratio of monthly spending to the starting balance, not on the balance itself. $2,000,000 with $8,000 a month lasts the same 20.8 years (0% real), 27 years (2% real) and 44.9 years (4% real) as $1,000,000 with $4,000 a month. So a reader with a different balance can scale: divide their balance by $1,000,000 and divide their monthly spending by the same factor to find the row. For example, $2,000,000 at $10,000 a month matches the $5,000 row: 16.7, 20.3, 27.6 and 35.9 years at 0, 2, 4 and 5% real.
+- Method detail: withdrawals are taken at the end of each month and the annual real return is divided by 12 for each month.
+- The site's withdrawal calculator (/investing/withdrawal-calculator/) takes a return and a flat withdrawal; entering the real return as the return reproduces these rows when the withdrawal is held flat. Whether it adjusts withdrawals for inflation depends on its inputs, so a reader should check the inputs shown on that page.
 
 Source: Cooley, Hubbard and Walz, Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable, AAII Journal (the "Trinity Study") (https://www.aaii.com/journal/article/retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable). REPORTED, not our test.
 - The study tested historical periods and reported that withdrawing about 4% of the starting balance in the first year, then raising that dollar amount with inflation, lasted 30 years in most of the historical periods tested for portfolios with a large share in stocks. This is the origin of the "4% rule". It is a historical result, not a guarantee, and it covers a 30-year horizon.

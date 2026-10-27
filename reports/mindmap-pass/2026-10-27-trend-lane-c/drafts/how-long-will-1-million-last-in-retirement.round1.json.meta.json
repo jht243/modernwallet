@@ -1,0 +1,255 @@
+{
+ "slug": "how-long-will-1-million-last-in-retirement",
+ "guards": {
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-27T07:46:23+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-27-trend-lane-c/audit/how-long-will-1-million-last-in-retirement.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "The total duration comes down to your monthly draw, your net return after inflation, and whether you have supplemental income from pensions or Social Security.",
+      "replacement": "",
+      "type": "17. Filler",
+      "why": "Delete sentence that restates intro sentence 1."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Your monthly withdrawal rate determines whether $1,000,000 provides decades of security or runs dry in a single decade.",
+      "replacement": "Your monthly withdrawal rate determines how many years your savings last.",
+      "type": "17. Filler",
+      "why": "Remove dramatic filler phrase."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "In our internal modeling, we ran $1,000,000 through the same engine as our withdrawal calculator at four real returns and six monthly spending levels to see how many years each lasts.",
+      "replacement": "At ModernWallet, we ran the numbers through the same investment engine as our [withdrawal calculator](/investing/withdrawal-calculator/) at four real returns and six monthly spending levels to see how many years each lasts.",
+      "type": "1. Tee-up missing",
+      "why": "Add required company tee-up and ModernWallet brand name."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Using flat withdrawals in today's dollars, we mapped scenarios from zero growth up to a 5% real annual return.",
+      "replacement": "Using flat withdrawals in today's dollars, we mapped scenarios from zero growth up to a 5% real annual return. Withdrawals are taken at the end of each month, and the annual real return is divided by 12.",
+      "type": "3. How-to-check method sentence",
+      "why": "Add method sentence describing timing and compounding convention."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "All inputs are listed so a reader can reproduce each row in our linked calculators.",
+      "replacement": "Inputs and conventions are stated here; entering the real return as the return in the withdrawal calculator with a flat withdrawal gives the same rows, though the reader should check the inputs shown on that calculator.",
+      "type": "3. How-to-check reproduction instructions",
+      "why": "State supported reproduction instructions and verify calculator inputs."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Moving your draw to $5,000 a month changes the math quickly.",
+      "replacement": "Moving your draw to $5,000 a month shortens the timeline.",
+      "type": "17. Filler",
+      "why": "Remove filler phrase."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": " If you are comparing portfolio milestones, our guide on [how long will 2 million last in retirement](/guides/how-long-will-2-million-last-in-retirement/) shows the duration numbers for double this starting balance.",
+      "replacement": "",
+      "type": "Remove dropped $2M guide link",
+      "why": "Remove dropped guide link."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "A calculator that holds nominal dollar withdrawals flat without inflation adjustments, such as standard nominal models, will show different survival timelines for identical dollar figures.",
+      "replacement": "This table holds withdrawals flat in today's dollars so payouts adjust for inflation, whereas a calculator that holds nominal withdrawals flat will show different timelines.",
+      "type": "3. State convention plainly",
+      "why": "State plainly which convention the table uses versus nominal calculators."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "That four-point difference in real return more than doubles the lifespan of your savings.",
+      "replacement": "That four-point difference in real return more than doubles the lifespan of your savings. Longevity depends only on the ratio of monthly spending to the starting balance: $2,000,000 at $8,000 a month lasts the same 20.8, 27, and 44.9 years as $1,000,000 at $4,000, and $2,000,000 at $10,000 matches the $5,000 row.",
+      "type": "NEW scale insight",
+      "why": "Add scale insight explaining spending-to-balance ratio."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Retirement planning often begins with a target time horizon based on life expectancy. Standard age arithmetic shows that planning to age 90 requires 35 years of withdrawals for someone retiring at age 55, 30 years from age 60, and 25 years from age 65.",
+      "replacement": "Living to 90 means 35 years of withdrawals from age 55, 30 years from age 60, and 25 years from age 65.",
+      "type": "17. Filler",
+      "why": "Delete filler and use age arithmetic directly."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "boosts",
+      "replacement": "increases",
+      "type": "12. Remove hype words",
+      "why": "Replace hype word with neutral verb."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "sustainable monthly spending",
+      "replacement": "the highest flat monthly withdrawal that uses the balance up in 25 years",
+      "type": "11. Replace sustainable monthly spending",
+      "why": "Use exact supported description of the spending figure."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "The authors analyzed historical market cycles and reported that withdrawing 4% of a portfolio's initial balance in year one, followed by annual inflation adjustments, lasted 30 years in most historical periods for portfolios weighted toward equities.",
+      "replacement": "The authors analyzed historical market cycles. They reported that withdrawing 4% of a portfolio's initial balance in year one, followed by annual inflation adjustments, lasted 30 years in most historical periods for portfolios weighted toward equities.",
+      "type": "14. Monotone rhythm",
+      "why": "Break up long 36-word sentence."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "The Trinity Study findings represent a historical result, not an absolute guarantee.",
+      "replacement": "The Trinity Study reported a historical result. It is not a guarantee.",
+      "type": "4. Antithesis",
+      "why": "Use direct supported phrasing without rhetorical antithesis."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "significantly extends",
+      "replacement": "extends",
+      "type": "12. Remove hype words",
+      "why": "Remove hype word significantly."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "traditional 401(k) and IRA plans",
+      "replacement": "traditional 401(k) (a workplace retirement plan) and individual retirement account (IRA) plans",
+      "type": "13. Define acronyms at first use",
+      "why": "Define 401(k) and IRA at first use."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "critical factor",
+      "replacement": "factor",
+      "type": "12. Remove hype words",
+      "why": "Remove hype word critical."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "This early damage can empty a portfolio much faster than a static average return projection suggests.",
+      "replacement": "A run of poor returns early in retirement can empty a balance sooner than a fixed average return shows (sequence-of-returns risk).",
+      "type": "15. Sequence risk antecedent",
+      "why": "Provide antecedent explaining sequence risk."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "You can map out your total household cash flow across different asset types with our [retirement income calculator](/retirement/retirement-income-calculator/).\n\nFinally, healthcare costs, long-term care needs, and shifting spending patterns will move the timeline.",
+      "replacement": "Finally, healthcare costs, long-term care needs, and shifting spending patterns are not in the model. You can map out your total household cash flow across different asset types with our [retirement income calculator](/retirement/retirement-income-calculator/).",
+      "type": "15. Healthcare costs must resolve",
+      "why": "State these are not in model and route to calculator."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "This analysis is not designed for individuals who must extract $5,000 or more each month exclusively from a $1,000,000 balance over a 30-year span, nor does it fit someone whose asset allocation delivers returns that fail to keep pace with inflation.",
+      "replacement": "This analysis does not fit someone who needs $5,000 or more a month from the portfolio alone over 30 years at a 4% real return or lower. At $5,000 a month, $1,000,000 lasts 16.7 to 35.9 years depending on the real return (0%, 2%, 4%, or 5%), so check that row in the table. Other income lowers the draw, which you can check with our [Social Security retirement calculator](/retirement/social-security-retirement-calculator/). Readers expecting returns below inflation should read the 0% column.",
+      "type": "6. 'Who this is not for' dead end",
+      "why": "Split 41-word sentence and route reader with supported facts."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Based on our internal modeling, portfolio longevity depends on monthly withdrawals, real returns, and time horizons.",
+      "replacement": "Based on our internal modeling, $1,000,000 lasts about 10 to more than 45 years depending on monthly spending and the real return.",
+      "type": "17. Takeaway lead",
+      "why": "Lead with the answer figures."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "needs $5,000 or more a month from the portfolio alone over three decades",
+      "replacement": "needs $5,000 or more a month from the portfolio alone over three decades at a 4% real return or lower",
+      "type": "7. Thresholds contradict the 5% column",
+      "why": "Qualify threshold with real return condition."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "CPA",
+      "replacement": "certified public accountant (CPA)",
+      "type": "13. Define acronyms at first use",
+      "why": "Define CPA at first use."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Our model accounts for this by calculating durations using real returns, which measure investment growth after subtracting inflation.",
+      "replacement": "Durations are calculated using real returns, which measure investment growth after subtracting inflation.",
+      "type": "5. FAQ fixes",
+      "why": "Remove our model cue from FAQ."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Retiring at age 60 and planning to age 90 requires funding a 30-year horizon. Under our modeling, $1,000,000 can sustain monthly withdrawals of $2,777.78 at a 0% real return, $3,696.19 at a 2% real return, and $4,774.15 at a 4% real return over 30 years.",
+      "replacement": "At a 4% real return, $1,000,000 supports up to $4,774.15 a month for 30 years (age 60 to 90); at 2% real $3,696.19 and at 0% $2,777.78.",
+      "type": "5. FAQ fixes",
+      "why": "Lead with the answer and remove internal modeling cue."
+     },
+     {
+      "id": "faqs[3].question",
+      "quote": "Does $1 million last longer invested than in cash?",
+      "replacement": "How much does the real return change how long $1 million lasts?",
+      "type": "5. FAQ fixes",
+      "why": "Update question to match prompt."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "For example, spending $4,000 a month from $1,000,000 with a 0% real return lasts 20.8 years, whereas achieving a 2% real return extends that lifespan to 27.0 years, and a 4% real return extends it to 44.9 years.",
+      "replacement": "At a flat spending rate of $4,000 a month, $1,000,000 lasts 20.8 years at a 0% real return, 27.0 years at a 2% real return, and 44.9 years at a 4% real return.",
+      "type": "5. FAQ fixes",
+      "why": "Lead with the direct answer figures."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "Our baseline model assumes zero outside income, but every dollar received from Social Security directly lowers the monthly withdrawal required from your investments.",
+      "replacement": "Calculations count no other income, but every dollar received from Social Security lowers the monthly withdrawal required from investments.",
+      "type": "5. FAQ fixes",
+      "why": "Remove model cue from FAQ."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "significantly longer",
+      "replacement": "longer",
+      "type": "12. Remove hype words",
+      "why": "Remove hype word significantly."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[3].body",
+      "quote": "in the AAII Journal, widely known as the [Trinity Study](https://www.aaii.com/journal/article/retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable).",
+      "finding": "10. Link AAII Journal and define AAII",
+      "why": "Define AAII at first use and link AAII Journal to allowed URL.",
+      "replacement": "in the American Association of Individual Investors ([AAII Journal](https://www.aaii.com/journal/article/retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable)), widely known as the Trinity Study.",
+      "reason": "replacement adds ['Association', 'Investors'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[4].body",
+       "quote": "Withdrawals from pre-tax accounts, such as traditional 401(k) (a workplace retirement plan) and individual retirement account (IRA) plans, are subject to ordinary income taxes.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2197,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Withdrawals from pre-tax accounts, such as traditional 401(k) (a workplace retir'"
+    ]
+   }
+  ],
+  "flags": [
+   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Withdrawals from pre-tax accounts, such as traditional 401(k) (a workplace retir'"
+  ],
+  "numbers_not_in_facts": [
+   "0.0388",
+   "40"
+  ]
+ },
+ "words": 2197
+}
