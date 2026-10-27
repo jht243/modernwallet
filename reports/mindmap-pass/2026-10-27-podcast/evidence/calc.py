@@ -77,3 +77,14 @@ out_a = {"basis": "arithmetic only: $60,000 of spending in today's dollars at ag
 for slug, o in (("15-year-mortgage-for-rental-property", out_c), ("what-to-do-with-401k-when-you-retire", out_b), ("phases-of-retirement", out_a)):
     json.dump(o, open(os.path.join(HERE, slug, "calc-output.json"), "w"), indent=2)
 print(json.dumps({"c": out_c, "b": out_b, "a": out_a}, indent=1))
+
+# ---------- credit utilization when closing a card ----------
+TOTAL_LIMIT, BAL = 20_000, 4_000
+util = {"before": round(BAL / TOTAL_LIMIT * 100, 1)}
+for lim in (2_500, 5_000, 10_000):
+    util[f"close_{lim}_limit_card_with_zero_balance"] = round(BAL / (TOTAL_LIMIT - lim) * 100, 1)
+out_u = {"basis": "arithmetic only: utilization = total balances / total credit limits; no scoring model is applied; CFPB gives no score thresholds",
+         "total_limit_before": TOTAL_LIMIT, "total_balance": BAL, "utilization_pct": util,
+         "paydown_then_close": {"balance_after_paydown": 1_000, "close_10000_card_util_pct": round(1_000 / (TOTAL_LIMIT - 10_000) * 100, 1)}}
+json.dump(out_u, open(os.path.join(HERE, "does-closing-a-credit-card-hurt-your-credit-score", "calc-output.json"), "w"), indent=2)
+print(json.dumps(out_u, indent=1))

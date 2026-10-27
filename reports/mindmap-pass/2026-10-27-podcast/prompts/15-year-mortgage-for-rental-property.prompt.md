@@ -9,7 +9,7 @@
 - updated date: 2026-10-27
 
 ## KEYWORDS + INTENT
-- primary keyword: 15 year mortgage for rental property (1,900/mo, KD 21, DataForSEO measured, US, 2026-10-27)
+- primary keyword: 15 year mortgage for rental property (about 250/mo, DataForSEO ESTIMATE band 250 to 2,500, NOT measured; autocomplete corroborates; also the topic of a recent Rental Income Podcast episode; do not quote a volume on the page)
 - secondary keywords (Google Autocomplete completions observed 2026-10-27, no tool volume): 15 year mortgage for investment property; 15 year investment property mortgage rates
 - intent: A small landlord or first-time rental buyer choosing a loan term wants to know whether the 15-year term makes sense on a rental, and what it does to cash flow.
 - SERP: winnable but forum-dominated (Reddit is result #1, plus YouTube), AI Overview present; page one also has Bankrate, Forbes and lender blogs.
@@ -61,7 +61,7 @@ Populate `sources` ONLY from the closed URL list (Freddie Mac PMMS page).
 
 Source: Freddie Mac, Primary Mortgage Market Survey (PMMS) (https://www.freddiemac.com/pmms), read 2026-10-27. REPORTED.
 - U.S. weekly averages as of October 22, 2026: 30-year fixed-rate mortgage 7.32%; 15-year fixed-rate mortgage 6.68%. A week earlier the 30-year averaged 7.40% and the 15-year 6.71%. A year earlier the 30-year averaged 6.19% and the 15-year 5.44%.
-- The PMMS is based on rates from loan applications that lenders submit to Freddie Mac for weekly conventional, single-family originations with conforming loan limits; its borrower profile is good or excellent credit, 20% down, home purchase loans on owner-occupied one-unit single-family properties. It therefore does not describe investment-property loans, and a landlord's quote may differ. Fees and points are not published in the survey.
+- The PMMS is based on rates from loan applications that lenders submit to Freddie Mac for weekly conventional, single-family originations with conforming loan limits; its borrower profile is good or excellent credit, 20% loans (the survey's wording), home purchase loans on owner-occupied one-unit single-family properties. It therefore does not describe investment-property loans, and a landlord's quote may differ. Fees and points are not published in the survey.
 
 Source: our own modeling (reproduce with reports/mindmap-pass/2026-10-27-podcast/evidence/calc.py; output in evidence/15-year-mortgage-for-rental-property/calc-output.json; the standard fixed-rate amortization payment formula, checked against a month-by-month schedule). CALCULATED / MODELED, not a lender quote and not a forecast.
 - Scenario inputs: purchase price $400,000; 25% down; loan $300,000. The 30-year uses 7.32% and the 15-year uses 6.68% (the Freddie Mac averages above, used as an illustration only). ASSUMPTIONS made by the author, not data: $1,000 a month for property tax, insurance, repairs and management combined; 5% of rent lost to vacancy and non-payment.

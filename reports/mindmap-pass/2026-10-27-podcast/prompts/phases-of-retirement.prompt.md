@@ -10,7 +10,7 @@
 
 ## KEYWORDS + INTENT
 - primary keyword: phases of retirement (480/mo, KD 9, DataForSEO measured, US, 2026-10-27)
-- secondary keywords: go-go slow-go no-go retirement (110/mo, KD 15, DataForSEO measured); stages of retirement and "what are the three phases of retirement" (Google Autocomplete completions observed 2026-10-27, no tool volume)
+- secondary keywords: go-go slow-go no-go retirement (about 20/mo, DataForSEO estimate band, NOT measured; do not quote a volume on the page); stages of retirement and "what are the three phases of retirement" (Google Autocomplete completions observed 2026-10-27, no tool volume)
 - intent: A person approaching or in retirement wants to know what the phases of retirement are and what money decisions belong to each, so they can plan the order of decisions.
 - SERP: winnable (no forum domination; page one is mostly financial-advisor firm blogs, a bank and a university page), AI Overview present (cites a retirement blog, YouTube, Boston College's retirement research center, Investopedia, a plan administrator and two public pension funds).
 - reader question: "What are the phases of retirement?" [PAA 0/6 direct (the six PAA questions are about adjusting to retirement: start saving, adjust to reduced income, post-retirement fatigue, start a new life, happiest age to retire, what retirees do all day); ac 6/6 definitional ("what are the phases of retirement", "what are the three phases", "what are the 4 phases", "what are the six phases", "what are the stages of retirement", "how many stages of retirement are there"). Dominant pattern: definition + list, so a definitional opener is licensed.]
@@ -42,6 +42,7 @@ Treat the phases as a way to order your decisions, not as a schedule: settle inc
 - /compare/pension-vs-annuity/
 - /guides/qlac-qualified-longevity-annuity-contract/
 - /guides/ideal-retirement-age-for-your-health/
+- /guides/how-to-withdraw-from-401k/ (for RMD ages by birth year)
 - /guides/financial-advisor-worth-it/
 - /retirement/retirement-income-calculator/
 - /investing/withdrawal-calculator/
@@ -55,21 +56,21 @@ Populate `sources` ONLY from the closed URL list (IRS RMD topic page, IRS early-
 ## Hard prohibitions
 - No fabricated statistics, rates, dates, limits or thresholds. Only figures on the closed fact list. Do NOT state any Social Security claiming age, benefit amount, Medicare age or premium, any spending-by-age statistic, any life expectancy, any care cost, any tax bracket or any market return.
 - No individualized investment, tax or retirement advice; point to a licensed financial advisor or CPA. Disclaimer text, if any, only as the last element.
-- Never link the page to itself. Do not name any brokerage or fund company. Do not attribute the phase labels to a named author or study.
+- Never link the page to itself. Do not name any brokerage or fund company. Do not attribute the phase labels to a named author, podcast or study.
 - Do not call anything "tested" or "testing".
 - Do not claim neutrality, independence or lack of a financial interest.
 
 # CLOSED FACT LIST
 **Anything not on this list, you do not know. Never invent a price, limit, benchmark, or URL; say it is unpublished and tell the reader to verify at the source.**
 
-Source: our own observation of Google Autocomplete on 2026-10-27 (REPORTED observation, not a study). Autocomplete suggestions for "phases of retirement" include: what are the phases of retirement; what are the three phases of retirement; what are the 4 phases of retirement; what are the six phases of retirement; what are the stages of retirement; how many stages of retirement are there. People therefore search for three, four and six phases and for "stages". There is no single official count. The labels go-go, slow-go and no-go are planner shorthand for early, middle and late retirement and are not defined by the IRS or any regulator.
+Source: our own observation of Google Autocomplete on 2026-10-27 (REPORTED observation, not a study). Autocomplete suggestions for "phases of retirement" include: what are the phases of retirement; what are the three phases of retirement; what are the 4 phases of retirement; what are the six phases of retirement; what are the stages of retirement; how many stages of retirement are there. People therefore search for three, four and six phases and for "stages". There is no single official count. The labels go-go, slow-go and no-go are commonly used to describe early, middle and late retirement. Write it as "commonly described as", with no claim about who coined them, and note that the IRS and Social Security rules do not use them.
 
 Source: IRS, Retirement topics: Exceptions to tax on early distributions (https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions), read 2026-10-27. REPORTED.
 - Amounts withdrawn from an IRA or retirement plan before age 59½ are "early" distributions, and you must pay an additional 10% tax unless an exception applies. The exceptions include distributions after you reach age 59½.
 - For qualified plans such as a 401(k), but not for IRAs, SEPs, SIMPLE IRAs or SARSEPs, one exception is a separation from service during or after the year the employee reaches age 55 (age 50 for public safety employees of a state or political subdivision in a governmental plan). This is commonly called the rule of 55.
 
 Source: IRS, Retirement topics: Required minimum distributions (https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds), and the IRS RMD FAQs (https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs), read 2026-10-27. REPORTED.
-- You generally have to start taking withdrawals from a traditional IRA, SIMPLE IRA, SEP IRA or retirement plan account when you reach age 73, as these IRS pages state it. A reader should confirm their own start age on the IRS pages for their birth year.
+- You generally have to start taking withdrawals from a traditional IRA, SIMPLE IRA, SEP IRA or retirement plan account when you reach age 73, as the saved IRS pages state it. The site's own guide /guides/how-to-withdraw-from-401k/ states, citing SECURE 2.0, that the age is 73 for people born 1951 to 1959 and rises to 75 for anyone born in 1960 or later. The page must say the start age depends on birth year, give both ages with that attribution, and link that guide. A reader should confirm their own start age on the IRS pages for their birth year.
 - You can delay the first required minimum distribution until April 1 of the following year, but then you take two in that year. Retirement plan account owners can delay required distributions from the plan they still work for until the year they retire, unless they own 5% or more of the sponsoring business; IRA owners cannot.
 - Roth IRAs and designated Roth accounts in a 401(k) or 403(b) have no required distributions while the owner is alive.
 - A missed required distribution may be subject to a 25% excise tax on the amount not withdrawn, or 10% if corrected within two years.

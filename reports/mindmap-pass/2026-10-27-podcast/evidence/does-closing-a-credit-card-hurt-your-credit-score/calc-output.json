@@ -1,0 +1,15 @@
+{
+  "basis": "arithmetic only: utilization = total balances / total credit limits; no scoring model is applied; CFPB gives no score thresholds",
+  "total_limit_before": 20000,
+  "total_balance": 4000,
+  "utilization_pct": {
+    "before": 20.0,
+    "close_2500_limit_card_with_zero_balance": 22.9,
+    "close_5000_limit_card_with_zero_balance": 26.7,
+    "close_10000_limit_card_with_zero_balance": 40.0
+  },
+  "paydown_then_close": {
+    "balance_after_paydown": 1000,
+    "close_10000_card_util_pct": 10.0
+  }
+}

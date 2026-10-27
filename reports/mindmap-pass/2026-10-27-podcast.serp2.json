@@ -1,0 +1,70 @@
+{
+ "rows": [
+  {
+   "keyword": "does closing a credit card hurt your credit score",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.consumerfinance.gov",
+    "www.usbank.com",
+    "www.earnest.com",
+    "www.citi.com",
+    "www.facebook.com",
+    "www.youtube.com",
+    "www.investopedia.com",
+    "www.nerdwallet.com",
+    "www.chase.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.scotiabank.com",
+    "www.usfcu.com",
+    "www.chase.com",
+    "www.onepay.com",
+    "www.cccsofiowa.org",
+    "www.transunion.com",
+    "www.chase.com",
+    "www.bogleheads.org",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the 2/3/4 rule for credit cards?",
+    "How long does it take to build a credit score from 500 to 700?",
+    "What is the biggest killer of credit scores?",
+    "How can I cancel my Chase credit card?",
+    "Is it better to cancel a credit card or keep it?",
+    "Do I have to call Chase to cancel my card?"
+   ],
+   "related_searches": [
+    "Does closing a credit card hurt your credit score reddit",
+    "How long does closing a credit card hurt your credit score",
+    "Is it better to close a credit card or leave it open with a zero balance",
+    "Does closing a credit card hurt your credit score if you",
+    "What happens when you close a credit card with zero balance",
+    "What happens if I close a credit card with a positive balance",
+    "What happens if I close a credit card and open a new one",
+    "Does closing multiple credit cards hurt your score",
+    "What happens if you close a credit card with zero balance"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; AI Overview present, cites www.reddit.com, www.consumerfinance.gov, www.usbank.com, www.earnest.com",
+   "se_results_count": 184
+  }
+ ],
+ "cost": "DataForSEO: 1 calls, $0.00415 of $2.00 budget"
+}
