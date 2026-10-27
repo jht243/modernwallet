@@ -1,0 +1,48 @@
+{
+ "retirement": {
+  "count": 20,
+  "examples": [
+   "What you want retirement to look like should directly impact how much you need to be able to support an income to support that lifestyle.",
+   "If I were to ask you, how much do you want to make sure you can spend in retirement, does a number come to mind?",
+   "From there, you're saying how much of that cost will be funded by things like Social Security, pension, or non-portfolio income sources."
+  ]
+ },
+ "budget": {
+  "count": 23,
+  "examples": [
+   "If I were to ask you, how much do you want to make sure you can spend in retirement, does a number come to mind?",
+   "I have no idea how much he has saved.",
+   "He thought about how do I build, how do I grow, how do I save, how do I optimize?"
+  ]
+ },
+ "real-estate": {
+  "count": 4,
+  "examples": [
+   "But I do think a lot of home sellers are a little unrealistic about how much their home might be fetching on the rental market right now, or even just on the housing mark."
+  ]
+ },
+ "investing": {
+  "count": 11,
+  "examples": [
+   "From there, you're saying how much of that cost will be funded by things like Social Security, pension, or non-portfolio income sources.",
+   "I know I'm getting crushed in taxes because I don't know how to manage my portfolio, my tax strategy, correctly to.",
+   "00:07:01 Suze: How much do you have in an investment account?"
+  ]
+ },
+ "tax-estate": {
+  "count": 14,
+  "examples": [
+   "From there, you're saying how much of that cost will be funded by things like Social Security, pension, or non-portfolio income sources.",
+   "If that happens, will all these other areas of your life suffer?",
+   "You have to determine how much of that conversion is taxable."
+  ]
+ },
+ "net-worth": {
+  "count": 9,
+  "examples": [
+   "So how much are we willing to trade off in terms of more financial wealth in exchange for missing out on that time wealth?",
+   "Physical wealth Doesn't matter how much money you have.",
+   "It helps you keep on track and it tells you how much you are spending at a time, and I love that feature."
+  ]
+ }
+}

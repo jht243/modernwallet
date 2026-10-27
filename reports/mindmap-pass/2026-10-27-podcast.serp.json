@@ -1,0 +1,278 @@
+{
+ "rows": [
+  {
+   "keyword": "phases of retirement",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "nextchapter.machlis.com",
+    "www.youtube.com",
+    "crr.bc.edu",
+    "www.investopedia.com",
+    "www.edelmanfinancialengines.com",
+    "www.facebook.com",
+    "www.tcdrs.org",
+    "news.calpers.ca.gov"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "nesbittburns.bmo.com",
+    "www.websterbank.com",
+    "www.facebook.com",
+    "www.famcorporation.com",
+    "milestonefinancialplanning.com",
+    "www.umassmed.edu",
+    "enrichretirement.com",
+    "www.fergusonfinancialplanning.com",
+    "www.weingartenassociates.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.facebook.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 18,
+    "people_also_ask": 1
+   },
+   "paa": [
+    "How to start saving for retirement?",
+    "How can I adjust to retirement and reduced income?",
+    "What are the common symptoms of post-retirement fatigue?",
+    "How to start a new life after retirement?",
+    "What is the happiest age to retire?",
+    "What does the average retiree do all day?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites nextchapter.machlis.com, www.youtube.com, crr.bc.edu, www.investopedia.com",
+   "se_results_count": 125
+  },
+  {
+   "keyword": "what to do with your 401k when you retire",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.blackrock.com",
+    "www.fidelity.com",
+    "www.northwesternmutual.com",
+    "oakroadwealth.com",
+    "www.visionretirement.com",
+    "parknationalbank.com",
+    "www.youtube.com",
+    "investor.vanguard.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.visionretirement.com",
+    "www.reddit.com",
+    "www.principal.com",
+    "www.irs.gov",
+    "www.compassfinancialgrp.com",
+    "www.blackrock.com",
+    "www.youtube.com",
+    "www.facebook.com",
+    "www.lacapitaladvisors.com",
+    "alliedwealth.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2,
+    "video": 1
+   },
+   "paa": [
+    "What to do with a 401k after leaving a job?",
+    "What is the $1000 a month rule for retirees?",
+    "Where to put retirement money after retirement?",
+    "How much money do I need in my 401k to retire comfortably?",
+    "What is a good 401k balance at age 65?",
+    "What percentage of people have $1,000,000 in their 401k?"
+   ],
+   "related_searches": [
+    "What to do with your 401k when you retire after",
+    "Do you have to withdraw your 401k when you retire",
+    "I am 62 what should I do with my 401k",
+    "What happens to my 401k when I retire",
+    "Can you contribute to a 401k after retirement",
+    "What your 401k can and can t do for your retirement income",
+    "What to do with your money when you retire",
+    "What to do with 401k now"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com, www.facebook.com); AI Overview present, cites www.reddit.com, www.blackrock.com, www.fidelity.com, www.northwesternmutual.com",
+   "se_results_count": 144
+  },
+  {
+   "keyword": "15 year mortgage for rental property",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.bankrate.com",
+    "www.starone.org",
+    "www.kiavi.com",
+    "pprcapitalmgmt.com",
+    "www.baselane.com",
+    "www.forbes.com",
+    "www.durangohomesforsale.com",
+    "www.pennymac.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [
+    "www.forbes.com"
+   ],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 18,
+    "people_also_ask": 1,
+    "people_also_search": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is the monthly payment for a 15-year loan on $100,000?",
+    "What is the 7% rule for rental property?",
+    "Is it hard to qualify for a 15-year mortgage?",
+    "What does Dave Ramsey say about a 15-year mortgage?",
+    "What is Dave Ramsey's 25% mortgage rule?",
+    "What percent of people do a 15-year mortgage?"
+   ],
+   "related_searches": [
+    "15 year mortgage for rental property reddit",
+    "15 year mortgage for rental property calculator",
+    "30-year interest rates for investment property",
+    "15-year interest rates for investment property",
+    "30-year interest rates for investment property calculator",
+    "Investment property mortgage calculator",
+    "Wells Fargo investment property mortgage rates",
+    "Investment property loan requirements",
+    "15-year mortgage rates",
+    "15-year mortgage calculator",
+    "15 year mortgage reddit",
+    "How to qualify for 15-year mortgage"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; 1/10 major platforms (www.forbes.com); AI Overview present",
+   "se_results_count": 136
+  },
+  {
+   "keyword": "renting by the room",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.zillow.com",
+    "www.spareroom.com",
+    "www.facebook.com",
+    "www.zillow.com",
+    "www.zillow.com",
+    "www.spareroom.com",
+    "www.apartmentlist.com",
+    "rentprep.com",
+    "www.spareroom.com",
+    "www.zillow.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Can I rent out a room in my house?",
+    "How much should I spend on rent?",
+    "What's the best place to look for rooms for rent?",
+    "Where can I live for $500 a month in the USA?",
+    "Where is the cheapest but nicest place to live in the US?",
+    "Where can I live for $800 a month in the USA?"
+   ],
+   "related_searches": [
+    "Rooms for rent for $300 a month",
+    "Rooms for rent $300 a month Houston, TX",
+    "Rooms for rent Austin area $500",
+    "Craigslist Rooms for rent Austin",
+    "Renting by the room california",
+    "Rooms for rent Houston under $500",
+    "Room for rent Houston",
+    "Rooms for rent near me"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present",
+   "se_results_count": 127
+  },
+  {
+   "keyword": "rent by the bedroom",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.zillow.com",
+    "www.spareroom.com",
+    "www.zillow.com",
+    "www.zillow.com",
+    "www.spareroom.com",
+    "www.apartments.com",
+    "hotpads.com",
+    "www.spareroom.com",
+    "www.facebook.com",
+    "www.zillow.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "local_pack": 3,
+    "organic": 20,
+    "people_also_search": 1,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "Rent by the bedroom near me",
+    "Craigslist rooms for rent Mesa, AZ",
+    "Craigslist rooms for rent Portland",
+    "Rooms for rent Mesa, AZ under $500",
+    "Rooms for rent $100 a week in Charlotte, NC",
+    "Rooms for rent OKC under $500",
+    "Rooms for rent near me",
+    "Rooms for rent in Mesa",
+    "Craigslist rooms for rent OKC"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "no entrenched incumbents or SERP features detected",
+   "se_results_count": 145
+  }
+ ],
+ "cost": "DataForSEO: 5 calls, $0.02060 of $2.00 budget"
+}

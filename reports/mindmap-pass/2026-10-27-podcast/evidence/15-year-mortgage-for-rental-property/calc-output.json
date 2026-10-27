@@ -1,0 +1,49 @@
+{
+  "inputs": {
+    "price": 400000,
+    "down_payment_pct": 0.25,
+    "loan": 300000.0,
+    "rate_30": 0.0732,
+    "rate_15": 0.0668,
+    "other_monthly_costs_assumption": 1000,
+    "vacancy_assumption": 0.05,
+    "rate_source": "Freddie Mac PMMS 2026-10-22: 30-yr 7.32%, 15-yr 6.68% (primary-residence, conforming, good credit, 20% down; NOT investment-property quotes)"
+  },
+  "payment_30yr": 2060.79,
+  "payment_15yr": 2643.1,
+  "payment_difference": 582.31,
+  "total_interest_30yr": 441885.07,
+  "total_interest_15yr": 175757.86,
+  "interest_saved_by_15yr": 266127.21,
+  "balance_after_5yr_30": 283339.36,
+  "balance_after_5yr_15": 230907.0,
+  "balance_after_10yr_30": 259342.16,
+  "balance_after_10yr_15": 134504.96,
+  "breakeven_rent_30yr": 3221.89,
+  "breakeven_rent_15yr": 3834.84,
+  "rent_example": 3300,
+  "cashflow_at_rent_3300_30yr": 74.21,
+  "cashflow_at_rent_3300_15yr": -508.1,
+  "30yr_loan_paying_15yr_payment": {
+    "months_to_payoff": 193.8,
+    "years": 16.15,
+    "total_interest": 212347.96,
+    "interest_vs_15yr_loan": 36590.1
+  },
+  "sensitivity_15yr_rate_premium_HYPOTHETICAL": {
+    "15yr_rate_6.68": {
+      "payment": 2643.1,
+      "breakeven_rent": 3834.84
+    },
+    "15yr_rate_7.18": {
+      "payment": 2726.76,
+      "breakeven_rent": 3922.91
+    },
+    "15yr_rate_7.68": {
+      "payment": 2811.81,
+      "breakeven_rent": 4012.43
+    }
+  },
+  "per_100k_15yr_payment": 881.03,
+  "per_100k_30yr_payment": 686.93
+}

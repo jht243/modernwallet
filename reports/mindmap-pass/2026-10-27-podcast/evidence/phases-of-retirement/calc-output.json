@@ -1,0 +1,18 @@
+{
+  "basis": "arithmetic only: $60,000 of spending in today's dollars at age 65, grown at a constant inflation rate; not a forecast",
+  "base": 60000,
+  "by_inflation": {
+    "2pct": {
+      "age_75": 73140,
+      "age_85": 89157
+    },
+    "3pct": {
+      "age_75": 80635,
+      "age_85": 108367
+    },
+    "4pct": {
+      "age_75": 88815,
+      "age_85": 131467
+    }
+  }
+}

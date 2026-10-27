@@ -1,0 +1,72 @@
+.claude/commands/_content-standard.md — characters 18000 onward
+
+AME} hub, spoke, cluster, and blog pages.
+- Make sure all new pages are properly linked within the correct hub/spoke structure.
+- Don't dismiss a keyword just because tools show zero monthly searches — real demand often appears in GSC impressions weeks before search-volume tools register it. When a question-format zero-volume variant is genuinely the best fit for a heading or FAQ — i.e. no stronger, more-relevant keyword belongs in that slot — use it as the H2/H3 or FAQ question to capture long-tail demand. Sources: Google Autocomplete, People Also Ask, and the natural language customers use (e.g. "Can [tool] handle HIPAA compliance for small clinics?"). This is an OPTION to widen long-tail coverage, NOT a quota: never force a zero-volume keyword into a slot a better-targeted keyword belongs in. The 2–3 primary-keyword heading slots above remain non-negotiable.
+
+### Required page elements
+
+Every page carries these. They apply in **both** registers (see VOICE) unless noted.
+
+- **Lead with the direct answer.** The first body sentence answers the page's question outright, short and easy, before any elaboration. Operator: if there is a tee-up, it is the next sentence, not this one (VOICE). Reporter: this sentence is the news; there is no tee-up. Section openers are a different slot (AEO in QUALITY).
+- **Who this is not for.** Name at least one audience segment, use case, or budget the recommendation does NOT serve, and say plainly what they should do instead. Applies to any page that recommends, ranks, or picks a winner; skip on pages with no recommendation.
+- **What would change our answer.** State the condition under which the verdict would flip — a price move, a missing feature shipping, a compliance requirement, a scale threshold. Same applicability as above. This is how objectivity gets **shown**, which NEUTRALITY requires instead of claimed.
+- **Close on the concrete next action.** The last body sentence is a next step the reader can take. That sentence may carry the primary keyword. No summary recap, and no Conclusion or Summary heading (`_anti-ai-language.md` bans both).
+- **Disclaimers render at the BOTTOM, never the top.** Any legal, medical, financial, or "not advice" disclaimer this site requires is the LAST element on the rendered page, after the body and FAQ. Never in the title, subtitle, intro, or first section. A reader came for the answer; the disclaimer is a footer, not a greeting. If `_experience.md` marks this site YMYL with a required disclaimer, emit it once, at the end, in the template's disclaimer slot (or the final body element if there is no slot) — and never as the opening line.
+- **An `inlineCta`** where the project's page record supports one — the subtle, category-specific consultation nudge that renders below the first body section, distinct from the bottom CTA block. Shape: `inlineCta: { text, buttonLabel, buttonHref }`. `text` is at most two sentences and MUST name this page's actual subject (a generic line that would fit any page is a spec violation). `buttonLabel` is 2–4 words, default `"Book a Consultation"`. `buttonHref` is the project's consultation route — the routine's own phase file names it; never invent one. A record without a non-empty `inlineCta.text` is a spec violation.
+
+---
+
+## INTENT — answer the reason the reader is on the page, near the top (added 2026-09-22)
+
+Every page is opened by a person with ONE question, and it is usually a *doing* question, not a
+*defining* one. Someone who searches "law firm client onboarding automation" wants to know **how
+to build it** — what connects to what, what fires first, what to wire up before anything else.
+A page that opens by defining onboarding, drawing its boundaries, and classifying its stages has
+answered a question nobody asked, however well it did it.
+
+**The rule:**
+
+1. **Name the reader's question on the row**, as `reader question: "<the question, in the
+   reader's words>"`. It is DECIDED at chart-build time (mindmap-pass build-brief Step 4.6 —
+   question, then answer + shape, then placement — recorded as chart cols 10–12 and approved by
+   the user in the Phase 0 manifest); the writer and auditor consume it. Derive it from the
+   query's verb and the live PAA, not from the topic noun:
+   "how do I…", "which should I…", "is X worth…", "what does X cost". If the row cannot state it
+   in one sentence, the page has no reason to exist yet.
+2. **Answer that question in the first or second section**, before any scope, boundary,
+   background, taxonomy, or "what is X" material. Sentence 1 of the body is still the direct
+   answer (GATE Tee-up); this rule governs the *first sections*, which must deliver the working
+   answer — the mechanism, the recommendation, the number, the verdict — not set up for it.
+3. **A "how" question gets a "how" answer**: the trigger, the sequence of hops, the parts to
+   assemble, and the one thing to build first. Naming the categories of work without showing
+   how to do it does not satisfy a "how" question.
+4. Definitions, scope, and history may follow the answer, or sit at the end, or be cut. They
+   never lead.
+
+**Why this exists:** on 2026-09-22 five per-vertical `…-automation` guides shipped that each
+opened with a "Scope and Boundaries" section and walked the stages by automation bucket, and not
+one of them said what to connect to what, or named an automation layer. Every gate passed,
+because every gate checked the *quality* of the answer and none checked that it answered the
+reader's question. This section is that check, and the AUDITOR gate below enforces it.
+
+---
+
+## TESTED — first-hand format for roundups, reviews and comparisons (added 2026-10-20)
+
+**Applies to** operator-register pages whose `page type:` is a roundup ("best X", "X alternatives", any ranked list), a product or model review, or an "X vs Y" comparison. **Skip** pricing, how-to, explainer, definition, tool and news (reporter-register) pages. **Also skip** any page whose ranked or compared items fall outside what this site's `_experience.md` section G licenses as tested (for example medical treatments, clinics, drugs, legal or financial services). If the site's `_experience.md` has no section G, skip TESTED entirely.
+
+**Why.** Google's review guidance asks for evidence of first-hand experience and lists that stand on their own. On 2026-09-05 our "best X" and comparison pages lost rankings while pricing and how-to pages held. Qualifying pages with reviewed test evidence say what was tested and what the work showed.
+
+**What testing licenses.** Only relevant executed runs, independently reviewed against the exact page, license first-person testing claims. The local `_experience.md` sets the permitted scope; it does not replace page-specific records. Calculations, modeling, client observations and external research use their own accurate labels. Never invent measurements, scores, durations, dates or setups. Supported qualitative and quantitative findings must trace to the packet.
+
+Four required elements on every applicable page:
+
+1. **Meta description opens with "We tested N [items]".** N is the count of products or models the page ranks or compares; [items] is the plain plural the reader would use ("mini PCs", "AI video generators", "AI models"). The rest of the description carries the page's value as before. The existing length limit still applies.
+2. **The tested sentence is the tee-up.** Sentence 2 of the first body paragraph, right after the direct answer, says what we tested and for which job: "We tested every [item] on this list as [the job the reader buys it for]." One sentence. It replaces the generic tee-up on these pages. It is never sentence 1, because GATE Tee-up still requires the direct answer first.
+3. **A "How We Tested" section.** An H2 placed after the intro and before the picks or comparison. Exactly three bullets describing the method for the page's CATEGORY: the jobs each item was used for, what we checked, and what we judged. Pages in the same category may reuse wording only when it accurately describes the recorded work for every item; otherwise adapt the three bullets to the actual method. No numbers, durations or named test tools unless they are in the fact list.
+4. **Every pick carries three labeled parts, replacing the vendor-style blurb:**
+   - **Why We Picked It** — one or two first-person sentences from testing, tied to a documented pro.
+   - **Who It's For** — one sentence naming the buyer.
+   - **The Downside** — one sentence drawn from the documented cons.
+   On a comparison page, each side gets the three parts. If the page record has dedicated fields for these, fill them; otherwise write them as three labeled lines in the item's description field (`**Why we picked it:** …`). The three labels ("Why we picked it:", "Who it's for:", "The downside:") always show as bold on the live page: use the template's bold label style, or `**label:**` markdown on sites where it renders in a visibly bold face. No spec dumps and

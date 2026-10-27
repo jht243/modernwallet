@@ -1,0 +1,51 @@
+.claude/commands/mindmap-pass/phase-build-brief.md — characters 0 onward
+
+
+<!-- workflow-source-freshness-v1 -->
+**WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
+<!-- /workflow-source-freshness-v1 -->
+
+# Phase BUILD-BRIEF — Generate the chart from a free-form input brief (SEMRUSH-validated)
+
+<!-- mindmap-visible-checks-v1 -->
+**Approval chart: completed preparation only.** Follow `_workflow-checkpoints.md`, “Approval chart — completed preparation only.” Finish all applicable instruction reading, research, duplicate review, testing eligibility/evidence decisions, supported takeaway/attribution briefs and internal-link/technical/publication planning BEFORE showing the chart. Show exactly one **Preparation check** row: `✅ Passed` with a link to the complete readiness evidence. Keep the full read/application and per-page checklist in that linked report. On `❌ Failed`, show only the specific failures and fixes and block approval; do not expand passed items. Unfinished preparation blocks the ready approval chart. Keep the full action table and Phases 1–9 as the future execution plan, including writing, independent content audit, internal-link edits, sitemap and publication. Do not show pending cells or claim those execution steps already happened. Every new-page action must also have a complete, page-specific **New-page brief** shown inline in the saved chart AND on-screen approval output: identity, validated keyword/SERP evidence, existing-page/duplicate rationale, reader question and answer placement, concrete outline, inspected sources and contribution, testing/review decision, takeaway, inbound/outbound link placements, and technical/measurement scope. A title/URL row or link to a separate file is insufficient. Missing/mismatched briefs block the chart; never shorten them out. Approval remains the sole existing human gate.
+<!-- /mindmap-visible-checks-v1 -->
+
+
+<!-- keyword-discovery-bounds-v1 -->
+**Discovery limits:** `expand --limit N` returns up to N provider ideas PLUS N unique autocomplete ideas (at most 2N, default N=20). This is a per-source batch bound, not a chart/page quota or coverage guarantee. Keep existing provider pins and spending caps. Save raw outputs; filter off-topic matches before ranking, validate exact shortlisted phrases, and record counts by source, rejected topics and the stop/widen reason. If relevant families remain unexplored, prefer free question-prefix mining or narrower seeds before raising the limit. The existing chart reviewer checks these artifacts under `_workflow-checkpoints.md`. Never terminate other runs with a broad process-name kill; use this run's task ID/PID.
+<!-- /keyword-discovery-bounds-v1 -->
+
+
+<!-- workflow-checkpoints-v1 -->
+**Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
+<!-- /workflow-checkpoints-v1 -->
+
+
+<!-- decision-evidence-v1 -->
+Before selecting expansion work, read available outcomes in `reports/content-evidence.jsonl` and the linked growth records. Reuse the existing reader-question/demand checks; do not add another intent quota. Prefer demonstrated useful approaches where the evidence transfers, retain inconclusive labels, and avoid duplicating existing tools or topics. Phase 3 confirms the evidence and presentation before writing; a tool idea alone is not a growth case.
+<!-- /decision-evidence-v1 -->
+
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
+This is Step 1 of `/mindmap-pass`. It replaces seo-gsc-pass's "build chart from 5 GSC screenshots" step. Instead of reading GSC keyword screenshots, it reads **whatever the user handed you** — free text, an image, a chart/screenshot of data, a pasted news article, a URL, or a half-formed "here's a thought" — interprets it into concrete topics the user wants on the site, **validates and expands that intent through the keyword demand ladder (best available provider PER FIELD, plus Google Autocomplete on top of every call)**, reads the LIVE SERP for the surviving cluster heads, clusters the demand, and produces the **same machine-readable chart** the rest of the phases (0–9) consume unchanged.
+
+Run this phase **only when** Phase 0 cannot find a chart at `reports/mindmap-pass/<TODAY>.md`. If today's chart already exists, or the user passed a chart path argument, skip this phase and let Phase 0 load it.
+
+This phase produces the file Phase 0 then loads. Once it is saved, control returns to Phase 0 for selection, staleness check, parsing, and the manifest gate.
+
+## The input can be ANYTHING — capture it first, do not ask for GSC data
+Unlike `/seo-gsc-pass`, this workflow does **not** want GSC screenshots. Its input is the user's own brief about what they want added to the site. Accept and handle every input modality present in the current conversation:
+
+- **Free text / a "random thought"** — e.g. "I think we should own the 'AI receptionist for dental offices' angle." Treat the text as the statement of intent; extract the topics, entities, audiences, and angles inside it.
+- **An image** — read it. A **photo/screenshot of a whiteboard, slide, or notes** → OCR/transcribe the concepts. A **chart or data screenshot** (e.g. a trend graph, a competitor's traffic table, a keyword list) → read the axes/labels/rows and pull out the themes and any entities named. A **product/marketing screenshot** → identify what product or topic it depicts.
+- **A pasted news article or URL** — extract the story's entities, claims, and the emerging theme; treat "what would a searcher look up after reading this?" as the seed set. If it's a bare URL and fetching is available, fetch it; otherwise work from the text the user pasted.
+- **A collection / cluster the user typed** — e.g. a list of topics or keywords. Treat each as a seed.
+- **A mix** — e.g. an image plus a sentence of context. Merge them into one intent.
+
+**If NO input is present** (no text beyond the bare command, no image, no article) AND no chart exists → **STOP** and ask the user to paste the text / attach the image / drop the article or link describing what they want added. Do NOT invent a brief.
+
+Write a short **Interpreted brie

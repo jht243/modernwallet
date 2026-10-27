@@ -1,0 +1,29 @@
+{
+  "source": "IRS Rollovers of retirement plan and IRA distributions (mandatory 20% withholding; 60 days); IRS early distributions (10% additional tax)",
+  "scenarios": [
+    {
+      "distribution": 50000,
+      "withheld_20pct": 10000.0,
+      "received": 40000.0,
+      "other_funds_needed_to_roll_over_all": 10000.0,
+      "taxable_if_withheld_amount_not_replaced": 10000.0,
+      "extra_10pct_on_that_amount_if_under_59_5_no_exception": 1000.0
+    },
+    {
+      "distribution": 100000,
+      "withheld_20pct": 20000.0,
+      "received": 80000.0,
+      "other_funds_needed_to_roll_over_all": 20000.0,
+      "taxable_if_withheld_amount_not_replaced": 20000.0,
+      "extra_10pct_on_that_amount_if_under_59_5_no_exception": 2000.0
+    },
+    {
+      "distribution": 250000,
+      "withheld_20pct": 50000.0,
+      "received": 200000.0,
+      "other_funds_needed_to_roll_over_all": 50000.0,
+      "taxable_if_withheld_amount_not_replaced": 50000.0,
+      "extra_10pct_on_that_amount_if_under_59_5_no_exception": 5000.0
+    }
+  ]
+}
