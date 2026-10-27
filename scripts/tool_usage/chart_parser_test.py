@@ -37,8 +37,10 @@ class ChartParserTests(unittest.TestCase):
     def test_final_gate_accepts_verified_manifest_and_preserves_legacy_pass(self):
         import ast, re
         tree=ast.parse(Path(gate.__file__).read_text())
-        pattern=next(n.value for n in ast.walk(tree) if isinstance(n,ast.Constant) and isinstance(n.value,str) and n.value.startswith('duplicate check['))
+        pattern=next(n.value for n in ast.walk(tree) if isinstance(n,ast.Constant) and isinstance(n.value,str) and 'duplicate check' in n.value and '(?:passed|' in n.value)
         self.assertIsNotNone(re.search(pattern,'| Duplicate check | 2 | ✅ Verified |',re.I))
+        self.assertIsNotNone(re.search(pattern,'| Preparation check | ✅ Passed | readiness.md |',re.I))
+        self.assertIsNone(re.search(pattern,'| Preparation check | ❌ Failed | readiness.md |',re.I))
         self.assertIsNotNone(re.search(pattern,'| Duplicate check | 2 | **passed** |',re.I))
         self.assertIsNone(re.search(pattern,'| Duplicate check | 2 | ◻ Pending |\nBuild passed',re.I))
     def test_numbered_existing_action_schema_still_parses(self):
