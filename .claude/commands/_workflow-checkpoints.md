@@ -44,3 +44,39 @@ Keep the existing independent reviewer and two-rework limit. For each affected r
 8. Growth record and baseline/comparator status where the contribution requires them; unknown/unavailable is not zero and publishing is not proven uplift. Respect the terminal no-addition exemption.
 
 Missing evidence for an applicable check is FAIL, not N/A. Recheck any changed reviewed artifact before publishing. At the existing publication gate, verify the audit's exact content/artifact hashes, current rules and required deployed source files; check built output, then verify live URLs after deployment. Never replace independent judgment with hashes or a fabricated PASS. Existing unchanged pages outside this run remain out of scope.
+
+## Visible instruction checklist in the output chart
+
+The saved mindmap chart, on-screen chart, Phase 0 manifest and final handoff must show an **Instruction checks** section. Keep the existing action-table columns, emerging-cluster block and exclusions intact. Append this section after them in the saved chart, under its own `## Instruction checks` heading; it is not another action table. In the Phase 0 presentation, show it before the existing approval question. At Phase 8, deployment remains pending until Phase 9 verifies it. Preserve the same checklist and update it as each existing gate completes; do not add a phase or approval gate.
+
+Use four columns: **Instruction / Read / Followed / Evidence or next step**. Use `✅` only for verified completion, `◻ Pending` for work not yet performed or not evidenced, `❌ Failed` for a failed check, and `— N/A` with a concrete reason for an inapplicable requirement. The word accompanies every symbol for accessibility. No preset green checks: calculate every status from this run's artifacts. Identify the run, current stage, as-of time and responsible actor; distinguish worker and reviewer reading when both are required.
+
+- **Read: ✅ Read** means the named actor's complete, current instruction bundle has passed its delivery/freshness check, or its valid same-actor reuse chain includes the applicable rule. Cite the bundle and source file. Reading the rule does not mark Followed complete.
+- **Followed: ✅ Verified** means the actual requirement has been completed for all applicable targets and its evidence is linked. An independent gate requires that reviewer's report and identity; a worker assertion, `lookup:` string, a template flag or reading receipt is insufficient. If any target is pending/failed, the aggregate cannot be green; show the counts.
+- **Testing checks are not claims of product testing.** Separate local eligibility/exclusions from the review of actual evidence and rendered labels. A source-only or excluded page can correctly pass the rules with tested labels disabled; describe that result explicitly. Never turn an eligibility check, model, calculation or migration snapshot into a claim that a test happened.
+- Missing proof stays pending (or failed when the applicable gate is due), never checked. Use N/A only with a supported reason; it is not a green pass or a way to hide missing evidence. Do not block Phase 0 because later writing/audit/deployment checks are legitimately pending. Existing prerequisite failures still block their dependent work.
+- Changed chart targets, content, evidence or rules invalidate the corresponding checks. Reset them to pending and recheck; a new reading hash does not preserve an old application/audit pass automatically. Reused/imported charts start with unverified checks unless their exact current artifacts are independently revalidated.
+
+Include at least these checks; add any applicable site-specific requirement:
+
+| Instruction | Read | Followed | Evidence or next step |
+|---|---|---|---|
+| Current workflow and complete instructions | ◻ Pending | ◻ Pending | Startup result and current instruction bundle |
+| Keyword sources, relevance and discovery coverage | ◻ Pending | ◻ Pending | Saved sources/counts, exact-phrase checks and stop/widen rationale |
+| Duplicate and existing-page intent check | ◻ Pending | ◻ Pending | Coverage results, checked commits and independent duplicate-review report |
+| Approved scope and publication permissions | ◻ Pending | ◻ Pending | Actual Phase 0 approval and its disclosed actions; pending before approval |
+| Content standard, voice and required page elements | ◻ Pending | ◻ Pending | Reviewed depth, sourcing, required sections and local style rules |
+| Local testing eligibility and exclusions | ◻ Pending | ◻ Pending | Per-route decision under this site's rules; eligibility is not testing |
+| Evidence basis and reproducible findings | ◻ Pending | ◻ Pending | Relevant packet or supported terminal no-addition decision |
+| Visible attribution and intent-based takeaway | ◻ Pending | ◻ Pending | Reviewed page sections and supporting records |
+| Testing evidence, dates and rendered labels | ◻ Pending | ◻ Pending | Actual runs/approval where applicable, or verified ordinary/excluded presentation |
+| Required professional or specialist review | ◻ Pending | ◻ Pending | Local requirement and eligible review, or justified N/A |
+| Tool/visual accuracy, accessibility and mobile use | ◻ Pending | ◻ Pending | Applicable checks and artifacts, or justified N/A |
+| Independent Phase 4 audit | ◻ Pending | ◻ Pending | Distinct reviewer, exact reviewed version and verdict |
+| Evidence/growth record | ◻ Pending | ◻ Pending | Applicable baseline/comparator/status record; not a claim of uplift |
+| Technical SEO, internal links and sitemap | ◻ Pending | ◻ Pending | Applicable metadata/schema/canonical/link/sitemap checks and their gate results |
+| Build, deployment and live verification | ◻ Pending | ◻ Pending | Build result, deployed commit and actual URL checks; pending until performed |
+
+Also include a compact **Per-page checks** table for content creation/enrichment targets: **Page / Duplicate check / Testing eligibility / Testing evidence and labels / Phase 4 / Evidence**. Link the relevant row/report for each target. Example eligible wording is `✅ Verified — excluded explainer`; it does not mean `product tested`. Keep later-stage cells pending during chart planning. For a zero-content run, explicitly state that no page-level content checks apply and why, rather than inventing pages or reviews.
+
+The chart reviewer verifies pre-execution check marks against raw coverage/instruction artifacts. Phase 4 verifies content-stage check marks against the exact reviewed result, and Phase 9 verifies publication marks. Any unsupported green check is a chart defect: correct it before presenting the chart or declaring the applicable gate passed. The user-facing chart and saved chart must agree; do not hide failures in a separate report while showing an all-green summary.

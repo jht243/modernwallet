@@ -6,6 +6,11 @@ Run startup as a standalone command and inspect its actual exit code; never pipe
 
 # Phase 8 — Summary (auto-continues to Phase 9 push)
 
+<!-- mindmap-visible-checks-v1 -->
+**Show instruction checks in the chart:** Follow `_workflow-checkpoints.md`, “Visible instruction checklist in the output chart.” Include separate **Read** and **Followed** statuses with linked evidence, plus per-page duplicate, testing-eligibility, testing-evidence/label and Phase 4 checks. Use `✅ Read` / `✅ Verified` only for completed, evidenced work; otherwise show `◻ Pending`, `❌ Failed`, or justified `— N/A`. Reading is not application, testing eligibility is not a product test, and a `lookup:` marker is not an independent duplicate-review pass. Keep the existing action-table schema and add the checklist under its own heading. Refresh it at chart presentation, Phase 0, each relevant completed gate and final handoff; later gates remain pending until performed. No additional human gate.
+<!-- /mindmap-visible-checks-v1 -->
+
+
 <!-- workflow-checkpoints-v1 -->
 **Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
 <!-- /workflow-checkpoints-v1 -->

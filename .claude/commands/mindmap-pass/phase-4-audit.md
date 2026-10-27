@@ -6,6 +6,11 @@ Run startup as a standalone command and inspect its actual exit code; never pipe
 
 # Phase 4 — Confirm new content (dedicated adversarial review)
 
+<!-- mindmap-visible-checks-v1 -->
+**Show instruction checks in the chart:** Follow `_workflow-checkpoints.md`, “Visible instruction checklist in the output chart.” Include separate **Read** and **Followed** statuses with linked evidence, plus per-page duplicate, testing-eligibility, testing-evidence/label and Phase 4 checks. Use `✅ Read` / `✅ Verified` only for completed, evidenced work; otherwise show `◻ Pending`, `❌ Failed`, or justified `— N/A`. Reading is not application, testing eligibility is not a product test, and a `lookup:` marker is not an independent duplicate-review pass. Keep the existing action-table schema and add the checklist under its own heading. Refresh it at chart presentation, Phase 0, each relevant completed gate and final handoff; later gates remain pending until performed. No additional human gate.
+<!-- /mindmap-visible-checks-v1 -->
+
+
 <!-- workflow-checkpoints-v1 -->
 **Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
 <!-- /workflow-checkpoints-v1 -->
@@ -62,6 +67,10 @@ A spec that passes all seven points is a **PASS** — the human builds the asset
 ---
 
 <!-- CRON_PROMPT_START -->
+<!-- mindmap-visible-checks-cron-v1 -->
+Update the chart’s Instruction checks and Per-page checks under `_workflow-checkpoints.md`; every green check needs current artifact evidence, and later gates remain pending.
+<!-- /mindmap-visible-checks-cron-v1 -->
+
 <!-- workflow-checkpoint-cron-v1 -->
 **Required before executing this content phase:** Follow `.claude/commands/_workflow-checkpoints.md` in the active repository. Complete the phase-specific `workflow-preflight.py` chunk delivery and freshness check. Existing independent chart/Phase 4 audits must record rule-by-rule artifact evidence for local exclusions, provenance, visible attribution, intent takeaways, testing labels and applicable growth/visual checks. A loader receipt or worker assertion is not a review PASS. Preserve the sole Phase 0 human gate.
 <!-- /workflow-checkpoint-cron-v1 -->

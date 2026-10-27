@@ -6,6 +6,11 @@ Run startup as a standalone command and inspect its actual exit code; never pipe
 
 # Phase BUILD-BRIEF — Generate the chart from a free-form input brief (SEMRUSH-validated)
 
+<!-- mindmap-visible-checks-v1 -->
+**Show instruction checks in the chart:** Follow `_workflow-checkpoints.md`, “Visible instruction checklist in the output chart.” Include separate **Read** and **Followed** statuses with linked evidence, plus per-page duplicate, testing-eligibility, testing-evidence/label and Phase 4 checks. Use `✅ Read` / `✅ Verified` only for completed, evidenced work; otherwise show `◻ Pending`, `❌ Failed`, or justified `— N/A`. Reading is not application, testing eligibility is not a product test, and a `lookup:` marker is not an independent duplicate-review pass. Keep the existing action-table schema and add the checklist under its own heading. Refresh it at chart presentation, Phase 0, each relevant completed gate and final handoff; later gates remain pending until performed. No additional human gate.
+<!-- /mindmap-visible-checks-v1 -->
+
+
 <!-- keyword-discovery-bounds-v1 -->
 **Discovery limits:** `expand --limit N` returns up to N provider ideas PLUS N unique autocomplete ideas (at most 2N, default N=20). This is a per-source batch bound, not a chart/page quota or coverage guarantee. Keep existing provider pins and spending caps. Save raw outputs; filter off-topic matches before ranking, validate exact shortlisted phrases, and record counts by source, rejected topics and the stop/widen reason. If relevant families remain unexplored, prefer free question-prefix mining or narrower seeds before raising the limit. The existing chart reviewer checks these artifacts under `_workflow-checkpoints.md`. Never terminate other runs with a broad process-name kill; use this run's task ID/PID.
 <!-- /keyword-discovery-bounds-v1 -->

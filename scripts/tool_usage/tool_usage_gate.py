@@ -59,12 +59,14 @@ def chart_path(m):
 
 def chart_rows(text):
     """Return (header_cells, rows) of the first markdown table whose header has 'bucket'."""
-    lines = [l for l in text.splitlines() if l.strip().startswith("|")]
+    lines = text.splitlines()
     for i, l in enumerate(lines):
         cells = [c.strip().lower() for c in l.strip().strip("|").split("|")]
         if "bucket" in cells and i + 1 < len(lines) and set(lines[i + 1].replace("|", "").strip()) <= set("-: "):
             rows = []
             for r in lines[i + 2:]:
+                if not r.strip().startswith("|"):
+                    break  # A later checklist/cluster table is not an action row.
                 rc = [c.strip() for c in r.strip().strip("|").split("|")]
                 if len(rc) < 3:
                     break
