@@ -117,3 +117,7 @@ After approval, Phase 3 consumes those exact approved briefs. Phase 4 verifies t
 The single-row preparation summary supersedes older instructions to display Read/Followed columns or all preparation checks in the approval output. Detailed checking is still mandatory; only its presentation is condensed. Keep every actual new-page brief inline and complete, plus the original action chart, internal-link plan and full execution plan. A successful summary must link the detailed current evidence, never substitute a bare unsupported “passed”.
 
 Fold legacy standalone duplicate-check pass rows into this one preparation summary. Keep the full independent duplicate-review result in the linked readiness evidence and the required existing-page rationale in each page brief. Do not print the aggregate row twice (once in the phase table and again in a separate checklist). Existing final gates accept the preparation-summary pass backed by the detailed duplicate-review evidence.
+
+## Final rendered output and deployment closure
+
+Read and apply `_rendered-page-audit.md` in full. Central answer/setup/availability research must be complete before preparation Passed. Audit complete rendered pages including inherited decision sections, injected copy, dates, schema and links after all planned transformations. Use the shared rendered capture/review/freshness/live comparison commands; changed output invalidates affected approval. Close verified deployment and measurement records. These are enforceable substeps of the existing gates, with no added phase or human approval.

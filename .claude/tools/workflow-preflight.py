@@ -15,7 +15,7 @@ import uuid
 
 ROOT = Path(__file__).resolve().parents[2]
 BASE = ['_decision-evidence.md', '_testing-labels.md', '_content-standard.md',
-        '_anti-ai-language.md', '_experience.md', '_workflow-checkpoints.md']
+        '_anti-ai-language.md', '_experience.md', '_workflow-checkpoints.md', '_rendered-page-audit.md']
 OPTIONAL = ['_testing-labels.local.md', '_content-standard.local.md']
 CHUNK = 9000  # characters, deliberately below ordinary tool-output truncation
 
