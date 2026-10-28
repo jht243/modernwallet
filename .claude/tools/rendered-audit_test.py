@@ -57,6 +57,11 @@ class Tests(unittest.TestCase):
  def test_date_and_source_cannot_be_na(self):
   s=self.snapshot(); review=self.review(s); review['routes'][0]['checks']['datesAndSchema']['status']='NA'
   with self.assertRaises(ValueError): a.review_check(s,review)
+ def test_paid_link_relationship_changes_invalidate_review(self):
+  s=self.snapshot(HTML.replace('href="https://example.com/other"','href="https://example.com/other" rel="sponsored nofollow" target="_blank"'))
+  for change in ['rel="follow" target="_blank"','rel="sponsored nofollow" target="_self"']:
+   live=self.snapshot(HTML.replace('href="https://example.com/other"','href="https://example.com/other" '+change))
+   with self.assertRaisesRegex(ValueError,'Rendered content differs'): a.compare(s,live,self.review(s))
  def test_commit_evidence(self):
   s=self.snapshot()
   with self.assertRaises(ValueError): a.record(s,s,self.review(s),'a'*40,{'commit':'b'*40,'status':'live'},'/tmp/should-not-write-render-audit.jsonl')

@@ -33,7 +33,7 @@ class Page(HTMLParser):
         a=dict(attrs)
         if tag in {'div','p','header','footer','article','main','section','li','aside','br','h1','h2','h3'}: self.date_text.append('\n')
         if tag not in {'script','style','noscript','meta','link','head','title'} and not any(t in self.stack for t in ['head','script','style','noscript']):
-            keep = {k:v for k,v in a.items() if k in {'class','hidden','min','max','step','placeholder','for','pattern','required','multiple','src','srcset','alt','type','value','checked','selected','disabled','aria-label','aria-hidden','role','colspan','rowspan','style','action','method','href','d','viewbox','points','cx','cy','r','x','y','width','height','fill','stroke','transform'}}
+            keep = {k:v for k,v in a.items() if k in {'rel','target','class','hidden','min','max','step','placeholder','for','pattern','required','multiple','src','srcset','alt','type','value','checked','selected','disabled','aria-label','aria-hidden','role','colspan','rowspan','style','action','method','href','d','viewbox','points','cx','cy','r','x','y','width','height','fill','stroke','transform'}}
             self.structure.append([tag,keep])
         if tag not in {'meta','link','img','input','br','hr','source','wbr','area','base','embed','param','track','col'}: self.stack.append(tag)
         if tag in {'article','main'}: self.article+=1
