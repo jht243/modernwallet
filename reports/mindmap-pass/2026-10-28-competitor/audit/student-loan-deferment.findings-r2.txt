@@ -1,0 +1,55 @@
+PHASE 4 RE-AUDIT (r2) - /guides/student-loan-deferment/
+Reviewer: phase4-reviewer. Startup exit 0; bundle check ok. Full gate re-run against /tmp/ecfr204.txt and /tmp/f205.txt again.
+Audited bytes: dist html sha == snapshot == served; drafts/student-loan-deferment.json == guides.ts entry (byte-equal).
+VERDICT: FAIL (3 small MUST-FIX, mechanical). Round-1 findings S1 to S9 are resolved.
+
+ROUND-1 STATUS
+ S1 "owe no principal": FIXED ("you do not have to pay principal or interest installments during deferment").
+ S2 four routes: FIXED (heading "in any of these ways", FFEL or Perkins bullet, table cell) but see R2-1 (bullet merged inline).
+ S3 unemployment length: FIXED (table cell and "Each approval stops at six months after the date you give your evidence or certification" matches (f)(4)).
+ S4 dead-end: FIXED. Step 5 now: "Keep making scheduled payments if you can... If you cannot pay while your request is processed, ask your servicer whether it will grant up to 60 days of forbearance to process your paperwork. Interest that accrues during that period is not capitalized." Matches 685.205(b)(9) (administrative forbearance, "up to 60 days necessary for the Secretary to collect and process documentation ... Interest that accrues during this period is not capitalized"). FAQ 1 carries it.
+ S5 links: FIXED ("U.S. Department of Education" -> https://www.ed.gov/, "Peace Corps" -> https://www.peacecorps.gov/, both on allowed-urls.txt). I could not verify they resolve: curl from this sandbox returns HTTP 403 for both (proxy or bot block). They are the agencies' canonical home pages.
+ S6 subsidized wording: FIXED consistently ("you do not pay interest on a subsidized loan"; table "Subsidized: you do not pay interest").
+ S7 self-reference: FIXED. S9 counterexample: FIXED in evidence.json. A3 rounding: FIXED ($1,199; calc.py header "rounded half up"; output.txt regenerated; re-run identical). A4 "gathers": FIXED ("accrues"). A5 "(otherwise)": added. A6 "that time": fixed.
+ S8 overloaded: PARTLY (one remains, R2-3).
+
+=============== MUST-FIX (remaining) ===============
+
+R2-1 [templating artifact, renders as run-on bullet] Economic hardship list.
+ Quote: "- You serve as a Peace Corps volunteer. - You already received an economic hardship deferment on a Federal Family Education Loan (FFEL) Program or Federal Perkins Loan for the same period."
+ Defect: the new bullet was spliced into the previous line; dist shows both in one list item with a literal " - ".
+ FIX -> two separate bullets:
+ "- You serve as a Peace Corps volunteer.\n- You already received an economic hardship deferment on a Federal Family Education Loan (FFEL) Program or Federal Perkins Loan for the same period."
+
+R2-2 [GATE Tee-up position] Intro paragraph 1.
+ Quote: S1 "To get a student loan deferment, ask your loan servicer for the specific deferment you qualify for and send the documents it asks for." S2 "Keep making scheduled payments if you can until it confirms approval." S3 "At ModernWallet, we write plain-language money guides from the federal deferment regulation and our own interest calculation."
+ Defect: the tee-up is sentence 3. The gate wants it as the sentence right after the answer. S2 is part of the answer, so either merge it into S1 or move the tee-up.
+ FIX -> "To get a student loan deferment, ask your loan servicer for the specific deferment you qualify for and send the documents it asks for. At ModernWallet, we write plain-language money guides from the federal deferment regulation and our own interest calculation. Keep making scheduled payments if you can until it confirms approval. On a subsidized loan, you do not have to pay principal or interest installments during deferment, while on an unsubsidized loan the interest keeps accruing."
+
+R2-3 [GATE Overloaded sentence, 32 words]
+ Quote: "Deferment and forbearance both pause or shrink federal loan payments, but in forbearance any interest that is forborne is capitalized, while in deferment you do not pay interest on a subsidized loan."
+ FIX -> "Deferment and forbearance both pause or shrink federal loan payments. In forbearance any interest that is forborne is capitalized, while in deferment you do not pay interest on a subsidized loan."
+ (Other 30-word sentences, "The rules below come from..." and "Loans disbursed before July 1, 2027 keep the older limits...", are single-idea and borderline: advisory.)
+
+=============== ADVISORY ===============
+A1 Takeaway first paragraph addresses a reader who "cannot make payments right now" and says "Keep making scheduled payments if you can"; the 60-day forbearance route is in step 5 and FAQ 1 but not in the takeaway. Consider one clause: "or ask about the 60-day processing forbearance in step 5".
+A2 "Unemployment and economic hardship deferments each stop at three years in total." (takeaway) omits "for loans disbursed before July 1, 2027"; the sentence before it covers the cutoff.
+A3 Supplemental Security Income and Food Stamps (now SNAP) are program names, unlinked; acceptable.
+A4 Table "Maximum length" for in-school "As long as you carry that workload" is accurate to (b)(1); PLUS in-school extras in (c) are not described (not claimed).
+A5 FFEL and Perkins holders are told nothing in step 1 beyond "federal Direct Loan"; (a)(5) mentions them. Optional one-sentence note.
+A6 Tools panel on the page lists only the Student Loan Wage Garnishment Calculator (default-stage tool); tangential for a deferment seeker. Optional.
+A7 Dated method sentence "as read on October 28, 2026" is allowed source attribution.
+A8 Inherited footer (em-dash disclaimer, "never affects our rankings") as on every page.
+
+=============== GATE TABLE (r2) ===============
+Mechanical: title 52, description 156 PASS; headings Title Case PASS; dashes 0; markdown links only.
+Depth 2,146 words vs 1,200 PASS. Sentence rhythm: no 10-run single band, no 5 consecutive within 3 words (S/M/L 12/28/60) PASS.
+Regulatory accuracy re-check against eCFR text: July 1, 2027 for (f)(1)(ii) and (g)(1)(ii); 685.205(c)(1)(ii) nine months in 24 for (a)(1); three-year collective limits; one-year-at-a-time economic hardship; 30 hours / three months; 50 miles; six diligent attempts beyond the initial request; look-back and six-month forward limits; four economic hardship routes; default rule (a)(3); request requirement (a)(4); in-school automatic processing; (a)(2) capitalization info; 20 percent-of-income forbearance ground (a)(6); (b)(9) 60-day processing forbearance: ALL correct PASS.
+Interest model: calc.py re-run identical to output.txt; hand check $30,000 x 7.99% x 6/12 = 1,198.50 -> $1,199 half up; 36-month and capitalized balances correct PASS.
+Reader question answered in intro and section 1 PASS. Register/page type/medium PASS. Experience truth PASS.
+TESTED/testing PASS: none claimed; "internal calculation" with formula and worked example beside the table; "no measured results behind it"; "We did not test any servicer's process or survey borrowers".
+Takeaway, top answer, tables and FAQs agree PASS. Who this is not for (private, default) and what would change (regulation text or the July 1, 2027 date) PASS.
+Links: Department of Education, Peace Corps, eCFR sections linked; internal 5 guides plus calculator resolve; all external hrefs on allowed list PASS.
+Anti-AI/meaning bar: remaining defects only R2-2 (position) and R2-3 (length); dead-end resolved; no coy abstraction ("the regulation", "the Secretary" are specific).
+Schema/dates: Article datePublished = dateModified = 2026-10-28; visible Updated October 28, 2026; FAQPage 5 Qs; no noindex PASS.
+Layout: 3 tables in div.table-wrap (overflow-x:auto); structural check only, no device screenshot.

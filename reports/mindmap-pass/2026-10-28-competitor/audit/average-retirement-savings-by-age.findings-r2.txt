@@ -1,0 +1,59 @@
+PHASE 4 RE-AUDIT (r2) - /guides/average-retirement-savings-by-age/
+Reviewer: phase4-reviewer. Startup freshness exit 0 (7617515); bundle check delivery-complete-sources-current (re-run). Full gate re-run, not only prior findings.
+Audited bytes: dist html sha == snapshot htmlSha256 == served on 127.0.0.1:4331; drafts/average-retirement-savings-by-age.json == guides.ts entry (intro + all sections byte-equal). Snapshot canonical digest 38514a2223746bb4aecd8755597d021b56e50e197547326b89bc677c757f5f6e (file sha256 85e0fbd6...).
+VERDICT: FAIL (3 small MUST-FIX, all mechanical Rung 1). Every round-1 substance finding (M1 to M10) is resolved or acceptable, see table.
+
+ROUND-1 FINDINGS STATUS
+ M1 inflation: FIXED. Page now says "The report states those means in 2025 dollars, so the changes are inflation-adjusted", "After adjusting for inflation, the Federal Reserve reports the median rose 11 percent", Inflation bullet and "up 11 percent after inflation". Source: scf26.pdf p.2 note 4 and Appendix A (all dollar amounts restated to 2025 dollars unless noted; Table 3 headed "Thousands of 2025 dollars"). See advisory A1 on wording.
+ M2 date: FIXED ("published them in October 2026").
+ M3 by-age inference: FIXED in all four places ("Across all ages, a family sitting right at the $451,100 average holds more than the typical saver. This release does not show whether the same holds within each age group."; FAQ 3 "so across all ages a family near the average holds more than the typical saver").
+ M4 calculator claim: FIXED ("then set the projected result against the averages above and your own target").
+ M5 orphan pair: FIXED ("Among under-35 families that hold an IRA or DC plan, the average was $48,400 in 2025, down from $53,800 in 2022.").
+ M6 opening/tee-up: FIXED. S1 is 27 words, S2 is the ModernWallet tee-up ("we calculated the percent changes by age from the Federal Reserve's own table").
+ M7 self-reference: FIXED ("in the table", "These combined figures are the closest match...", "If you are comparing your balance to peers, the Needs limit applies most").
+ M8 overloaded: PARTLY (two remain, R2-3 below).
+ M9 65+ alternative: FIXED (link to /retirement/retirement-income-calculator/, resolves).
+ M10 counterexample: FIXED in evidence.json.
+
+=============== MUST-FIX (remaining) ===============
+
+R2-1 [claim-checker/templating artifact, renders as run-on paragraph] Broken list in "How the Average Retirement Savings by Age Changed from 2022 to 2025".
+ Quote (draft and rendered): "We also divided each group's 2025 mean by the next-younger group's mean. - 35 to 44 versus under 35: 3.77 times. - 45 to 54 versus 35 to 44: 2.28 times. - 55 to 64 versus 45 to 54: 1.61 times. The largest multiple between neighboring groups sits between the under-35 and 35 to 44 groups."
+ Defect: the list markers were spliced inline, so the built HTML shows literal " - " inside one paragraph (verified in dist).
+ FIX -> body text with real line breaks:
+ "We also divided each group's 2025 mean by the next-younger group's mean:\n\n- 35 to 44 versus under 35: 3.77 times.\n- 45 to 54 versus 35 to 44: 2.28 times.\n- 55 to 64 versus 45 to 54: 1.61 times.\n\nThe largest multiple between neighboring groups sits between the under-35 and 35 to 44 groups."
+
+R2-2 [GATE Sentence rhythm: monotone-rhythm, measured] Sentences 66-75 of the body are all in the long band (15+ words): lengths [17, 25, 18, 16, 18, 17, 22, 16, 21, 32] ("Table A stops at 64, and this release gives no by-age figure..." through "A balance below the average for your age group may still be..."). The "What the Numbers Leave Out" bullets are all 16-25 words. 103 sentences total, S/M/L = 12/25/66.
+ FIX (varies real sentences, no stubs):
+ - "- **Account holders only:** families without an IRA or DC plan do not appear in the averages." -> "- **Account holders only:** families without an IRA or DC plan do not appear." (13 words)
+ - "- **Needs:** the figures show what families hold and say nothing about what balance anyone needs to retire." -> "- **Needs:** the figures say nothing about what balance you need." (11 words)
+ - and the next-paragraph sentence (R2-3) below.
+
+R2-3 [GATE Overloaded sentence, over 30 words] Two remain.
+ (a) "A balance below the average for your age group may still be near or above what a typical saver of that age holds, because this release does not show the by-age medians." (32) -> "A balance below the average for your age group may still match what a typical saver of that age holds. This release does not show the by-age medians."
+ (b) Takeaway S1 "The average balance is $48,400 under 35, $182,400 at 35 to 44, $415,800 at 45 to 54 and $670,200 at 55 to 64, among families aged 64 or younger with an IRA or DC plan." (35, a four-item number series plus scope clause) -> "Among families aged 64 or younger with an IRA or DC plan, the average balance rises from $48,400 under 35 to $670,200 at 55 to 64." (the intermediate values stay in the table and FAQ 1)
+ FAQ 1 first sentence is 30 words and is a four-item series: advisory.
+
+=============== ADVISORY ===============
+A1 s1 says "The report states those means in 2025 dollars". Table A's own caption reads "Thousands of dollars, except where noted" (no "2025"); the support is the report-wide statement (p.2 note 4, Appendix A) that every dollar amount is restated to 2025 dollars unless noted, and Table 3 of the same release is explicitly in 2025 dollars. Suggest "The report states that it restates dollar amounts in 2025 dollars unless noted, so these means are in 2025 dollars and the changes are inflation-adjusted." Same for the Inflation bullet.
+A2 evidence/average-retirement-savings-by-age/calc.py header line 1 still reads "published 2026-10-09"; the source says October 2026. Packet only.
+A3 The "youngest group moving both ways" paragraph still omits that the 35 to 44 mean also fell from $167,500 (2019) to $154,800 (2022).
+A4 Meta description "All-ages median: $106,000." is a fragment; acceptable (137 chars).
+A5 Table repeated in bullets, takeaway and FAQ 1 (info gain lives in the participation caveat and the all-ages ratio). Body 1,902 words, 1,200 floor.
+A6 Social Security first mention unlinked (program; no allowed URL).
+A7 Template footer (inherited, every page): "For educational purposes — not financial advice." and "This never affects our rankings or editorial coverage." Record for the human.
+
+=============== GATE TABLE (r2) ===============
+Mechanical: title 54, description 137 chars PASS; Title Case headings PASS; dashes in draft 0; exclamation 0; no raw HTML.
+Depth 1,902 words vs 1,200 PASS.
+Load receipt: ledger line 2026-10-28 mindmap-pass phase-3 with cs=0e00ec2e aa=ed445917 exp=1969dcd5 matches disk PASS.
+Register/page type/medium PASS. Reader question answered in intro S1 and section 1 PASS.
+Tee-up (S2) and opening sentence (S1) PASS. Experience truth PASS ("we publish free retirement calculators" licensed by DOMAIN).
+TESTED/testing: PASS. No "we tested", no How We Tested, no testing schema; "we did not survey or test anyone"; attribution "In our internal calculation" at first finding with Table A pointer and formula sentence.
+Decision-evidence section 4: provenance basis calculated; calc.py re-run identical to output.txt; counterexample present; growth.json present (local-only, gsc unavailable, not-yet-published) PASS.
+Source verification: all Table A cells, 54.9/54.3, 65.1/64.4, 70/66/50/42/65, 95.2->106.0 (11), 365.7->451.1 (23), 4.26, 3.84, 3.77/2.28/1.61, dollar changes match scf26.pdf/calc PASS.
+Takeaway agrees with top answer, table, FAQs; conditions (not for 65+, savings target; change if by-age medians published) PASS.
+Who this is not for / what would change PASS. Closing sentence is a next action with the keyword PASS.
+Neutrality, byline-in-body, disclaimer placement PASS (footer last). Links: Federal Reserve + SCF linked first mention; internal links resolve; external hrefs on allowed list PASS.
+Anti-AI: no remaining single-instance ban other than R2-2/R2-3; no "honest", no inflated words, no coy abstractions.
+Schema/dates: Article datePublished = dateModified = 2026-10-28, visible Updated October 28, 2026, FAQPage 5 Qs, Person, citation PASS.

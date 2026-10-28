@@ -1,0 +1,30 @@
+PHASE 4 RE-AUDIT (r3) - /guides/student-loan-deferment/
+Reviewer: phase4-reviewer. Startup exit 0; bundle check ok. Full gate re-run on the edited text.
+Audited bytes: dist html sha == snapshot == served; draft == guides.ts entry. Snapshot canonical digest 27e2b4f963b178548ddad2ff4a93a9ac5219fa1231ded36ae2f91e56189fcaaa.
+VERDICT: FAIL on ONE backward pronoun that the round-2 reorder created (one-word Rung 1 fix). Everything else PASS.
+
+ROUND-2 STATUS: R2-1 bullets FIXED (four separate li). R2-2 tee-up FIXED (sentence 2, ModernWallet named). R2-3 long sentence FIXED (split at "but"). Rhythm: 102 sentences S/M/L 13/29/60, no 10-run single band, no 5 within 3 words PASS.
+
+=============== MUST-FIX ===============
+R3-1 [GATE first-read / backward pronoun] Intro paragraph 1.
+ Quote: S1 "To get a student loan deferment, ask your loan servicer for the specific deferment you qualify for and send the documents it asks for." S2 "At ModernWallet, we write plain-language money guides from the federal deferment regulation and our own interest calculation." S3 "Keep making scheduled payments if you can until it confirms approval."
+ Defect: with the tee-up between them, "it" in S3 has no adjacent antecedent (reads as the deferment, the regulation or ModernWallet). This is the ordering I prescribed in r2, so the fix is the noun.
+ FIX S3 -> "Keep making scheduled payments if you can until your servicer confirms approval."
+ (Takeaway and the closing sentence keep "it": the antecedent "your servicer" is in the same or previous sentence, PASS.)
+
+=============== ADVISORY ===============
+A1 Takeaway para 1 could add "or ask about the 60-day processing forbearance in step 5".
+A2 Takeaway "Unemployment and economic hardship deferments each stop at three years in total." omits "for loans disbursed before July 1, 2027"; the paragraph above states the cutoff.
+A3 Supplemental Security Income and Food Stamps (now SNAP): unlinked program names.
+A4 FFEL and Perkins holders get no routing in step 1.
+A5 Tools panel shows only the garnishment calculator (default-stage tool); tangential.
+A6 ed.gov and peacecorps.gov return 403 to this sandbox; canonical homepages, unverified here.
+A7 Inherited footer as on every page.
+
+=============== GATE TABLE (r3) ===============
+Mechanical: title 52, description 156 PASS; Title Case PASS; dashes 0; markdown only.
+Depth 2,145 words vs 1,200 PASS. Register/page type/medium PASS. Reader question answered in intro and section 1 PASS. Tee-up S2 PASS. Experience truth PASS. Testing PASS (none claimed; calculation attributed with formula and worked example; "no measured results behind it").
+Regulatory accuracy PASS: re-checked all statements vs eCFR 685.204 and 685.205 text, including four economic hardship routes, (f)(3)(iv) and (f)(4), (a)(1) installments wording, (b)(9) 60-day processing forbearance, (c)(1)(ii) nine months in 24, July 1, 2027 cutoffs.
+Interest table: recomputed half-up, calc.py rerun identical PASS.
+Takeaway/top answer/tables/FAQs agree PASS; Who not for (private, default) and what would change PASS; closing next action with keyword PASS.
+Links PASS (ed.gov, peacecorps.gov, eCFR, 5 internal guides + garnishment calculator, all allowed). Neutrality/byline/disclaimer PASS. Anti-AI: only R3-1. Schema/dates PASS. Layout structural PASS.

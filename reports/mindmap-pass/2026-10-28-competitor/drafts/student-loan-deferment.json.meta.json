@@ -1,0 +1,400 @@
+{
+ "slug": "student-loan-deferment",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 2295,
+ "floor": 1200,
+ "input_tokens": 31942,
+ "output_tokens": 18011,
+ "thinking_tokens": null,
+ "cached_tokens": 28005,
+ "est_cost_usd": 0.3816,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Capitalized interest is added to your principal, so the balance you repay after '; 'You do not pay interest on a subsidized loan during deferment, and an unsubsidiz'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2159,
+  "numbers_not_in_facts": [
+   "0.065",
+   "11950"
+  ],
+  "fact_budget": {
+   "fact_words": 597,
+   "floor": 1200,
+   "ratio": 0.5,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    4
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "They do not cover private loans, because private lenders set their own terms.",
+     "replacement": "They do not cover private loans; private lenders set their own terms.",
+     "type": "inference",
+     "why": "SOURCE gives no causal link between regulation scope and lender terms"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Forbearance fits when you cannot meet a deferment test but still cannot make your payments.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE states no such use case for forbearance"
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Interest accrues on unsubsidized and PLUS loans but not on subsidized loans.",
+     "replacement": "Interest accrues on unsubsidized and PLUS loans, while on subsidized loans you do not pay it during deferment.",
+     "type": "inference",
+     "why": "SOURCE says subsidized interest need not be paid by borrower, not that none accrues"
+    },
+    {
+     "id": "introText",
+     "quote": "The rules below come from [title 34, section 685.204 of the Code of Federal Regulations (CFR)](https://www.ecfr.gov/current/title-34/part-685/section-685.204), which governs deferment on federal Direct Loans run by the [U.S. Department of Education](https://studentaid.gov/).",
+     "replacement": "The rules below come from the U.S. Department of Education regulation [title 34, section 685.204 of the Code of Federal Regulations (CFR)](https://www.ecfr.gov/current/title-34/part-685/section-685.204), which covers deferment in the Direct Loan Program.",
+     "type": "unsupported",
+     "why": "Linking studentaid.gov implies a claim from it; SOURCE says it could not be read."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Their rules sit in [section 685.204](https://www.ecfr.gov/current/title-34/part-685/section-685.204), so read the paragraph for your situation before you call your servicer.",
+     "replacement": "Their rules sit in [section 685.204](https://www.ecfr.gov/current/title-34/part-685/section-685.204).",
+     "type": "inference",
+     "why": "SOURCE gives no advice to read paragraphs before calling."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "If your budget allows, pay the interest each month during an unsubsidized deferment so it is never added to the principal.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Advice not in SOURCE; capitalization exceptions and timing not stated."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Choose deferment first if you have a subsidized loan and meet a deferment test, because its interest is not charged to you.",
+     "replacement": "On a subsidized loan, interest is not charged to you during a deferment.",
+     "type": "inference",
+     "why": "Personalized recommendation; SOURCE only states the interest rule."
+    }
+   ],
+   "deleted_final": 4,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2211
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-28T21:54:20+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-28-competitor/audit/student-loan-deferment.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "On a subsidized loan, you owe no principal or interest during deferment, while on an unsubsidized loan the interest keeps accruing.",
+      "replacement": "On a subsidized loan, you do not have to pay principal or interest installments during deferment, while on an unsubsidized loan the interest keeps accruing.",
+      "type": "S1 inaccurate regulatory statement",
+      "why": "Regulation says installments need not be paid; principal is still owed."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "The economic hardship deferment has three routes to eligibility:",
+      "replacement": "You can qualify for the economic hardship deferment in any of these ways:",
+      "type": "S2 inaccurate count",
+      "why": "685.204(g)(2) gives four ways to qualify, not three."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "- You serve as a Peace Corps volunteer.",
+      "replacement": "- You serve as a Peace Corps volunteer. - You already received an economic hardship deferment on a Federal Family Education Loan (FFEL) Program or Federal Perkins Loan for the same period.",
+      "type": "S2 missing FFEL/Perkins route",
+      "why": "Adds the fourth route, (g)(2)(i), which is on the fact list."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Receiving public assistance, working full-time on a low income, or serving in the Peace Corps",
+      "replacement": "Receiving public assistance, working full-time on a low income, serving in the Peace Corps, or already having an FFEL or Perkins economic hardship deferment for the same period",
+      "type": "S2 table cell omits route",
+      "why": "The table cell must list all four qualifying routes."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Three years in total; the first period runs up to six months after your request",
+      "replacement": "Three years in total across requests; each request can cover up to six months after you apply, and the first can also reach back six months",
+      "type": "S3 unemployment length cell",
+      "why": "The cell drops the look-back and implies one request covers three years."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "The first period may begin up to six months before your servicer receives the request, and it can be granted for up to six months after that date.",
+      "replacement": "The first period may begin up to six months before your servicer receives the request, and it can be granted for up to six months after that date. Each approval stops at six months after the date you give your evidence or certification, so you ask again for each further period, up to the three-year total.",
+      "type": "S3 missing (f)(4) repeat-request rule",
+      "why": "Readers must know each approval caps at six months and needs repeating."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "If you hold federal Direct Loans and cannot make payments right now, ask your servicer for the deferment whose test you meet, send the documents, and keep paying until it confirms approval.",
+      "replacement": "If you hold federal Direct Loans and cannot make payments right now, ask your servicer for the deferment whose test you meet and send the documents. Keep making scheduled payments if you can until it confirms approval.",
+      "type": "S4 keep-paying dead-end; S8 overloaded",
+      "why": "Contradicts 'cannot pay'. Should be a safe default. Also over 30 words."
+     },
+     {
+      "id": "introText",
+      "quote": "To get a student loan deferment, ask your loan servicer for the specific deferment you qualify for, send the documents it asks for, and keep paying until it confirms approval.",
+      "replacement": "To get a student loan deferment, ask your loan servicer for the specific deferment you qualify for and send the documents it asks for. Keep making scheduled payments if you can until it confirms approval.",
+      "type": "S4 keep-paying softening",
+      "why": "Presents keep paying as a safe default, not a rule."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "5. Keep making scheduled payments until the servicer confirms the deferment is approved.",
+      "replacement": "5. Keep making scheduled payments if you can until the servicer confirms the deferment is approved. If you cannot pay while your request is processed, ask your servicer whether it will grant up to 60 days of forbearance to process your paperwork. Interest that accrues during that period is not capitalized.",
+      "type": "S4 keep-paying softening plus 60-day forbearance",
+      "why": "Softens the rule and points borrowers who cannot pay to the 685.205(b)(9) processing forbearance."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "Keep paying until the servicer confirms approval, and note that a loan in default is not eligible until you make payment arrangements satisfactory to the Secretary of Education.",
+      "replacement": "Keep making scheduled payments if you can until the servicer confirms approval, or ask whether up to 60 days of processing forbearance applies. A loan in default is not eligible until you make payment arrangements satisfactory to the Secretary of Education.",
+      "type": "S4 keep-paying softening",
+      "why": "Safe-default framing, with the 60-day processing forbearance for borrowers who cannot pay."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Call your servicer today, name the student loan deferment you qualify for, and keep paying until it confirms approval.",
+      "replacement": "Call your servicer today, name the student loan deferment you qualify for, and keep making scheduled payments if you can until it confirms approval.",
+      "type": "S4 keep-paying softening (closing)",
+      "why": "Same safe-default framing in the closing sentence."
+     },
+     {
+      "id": "cardBlurb",
+      "quote": "and keep paying until it confirms approval.",
+      "replacement": "and keep making scheduled payments if you can until it confirms approval.",
+      "type": "S4 keep-paying softening (consistency)",
+      "why": "Same unsoftened rule, so it matches the corrected intro."
+     },
+     {
+      "id": "introText",
+      "quote": "The rules below come from the U.S. Department of Education regulation",
+      "replacement": "The rules below come from the [U.S. Department of Education](https://www.ed.gov/) regulation",
+      "type": "S5(a) unlinked agency first mention",
+      "why": "Link the first mention of the Department with an allowed URL."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "or Peace Corps service",
+      "replacement": "or [Peace Corps](https://www.peacecorps.gov/) service",
+      "type": "S5(b) unlinked Peace Corps first mention",
+      "why": "Link the first mention of the Peace Corps with an allowed URL."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "A subsidized loan charges you no interest during a deferment",
+      "replacement": "You do not pay interest on a subsidized loan during a deferment",
+      "type": "S6 unsupported 'charges no interest'",
+      "why": "The source supports only 'you do not pay interest'."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "while in deferment a subsidized loan owes no interest",
+      "replacement": "while in deferment you do not pay interest on a subsidized loan",
+      "type": "S6 unsupported 'owes no interest'",
+      "why": "The source supports only 'you do not pay interest'."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Subsidized: none owed.",
+      "replacement": "Subsidized: you do not pay interest.",
+      "type": "S6 table 'none owed'",
+      "why": "The wording rule bans 'none owed'."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "On a subsidized loan, interest is not charged to you during a deferment.",
+      "replacement": "On a subsidized loan, you do not pay interest during a deferment.",
+      "type": "S6 inconsistent wording",
+      "why": "'Not charged' overstates the source. Use the supported wording."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "A subsidized loan costs you no interest during deferment",
+      "replacement": "You do not pay interest on a subsidized loan during deferment",
+      "type": "S6 'costs no interest'",
+      "why": "The source supports only 'you do not pay interest'."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "Deferment pauses payments and charges no interest on subsidized loans",
+      "replacement": "Deferment pauses payments, and you do not pay interest on subsidized loans during it",
+      "type": "S6 'charges no interest'",
+      "why": "The source supports only 'you do not pay interest'."
+     },
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we write plain-language money guides, and this one is built from the federal deferment regulation and our own interest calculation.",
+      "replacement": "At ModernWallet, we write plain-language money guides from the federal deferment regulation and our own interest calculation.",
+      "type": "S7 page self-reference",
+      "why": "'This one' refers to the page itself."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "A borrower in default cannot get a deferment until they make payment arrangements satisfactory to the Secretary of Education, and our guide on [what happens if you don't pay your student loans](/guides/what-happens-if-you-dont-pay-your-student-loans/) explains default.",
+      "replacement": "A borrower in default cannot get a deferment until they make payment arrangements satisfactory to the Secretary of Education. Our guide on [what happens if you don't pay your student loans](/guides/what-happens-if-you-dont-pay-your-student-loans/) explains default.",
+      "type": "S8.1 overloaded sentence",
+      "why": "34 words. Split into two sentences."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "You qualify by showing you are eligible for unemployment benefits, or by giving a written certification that you registered with a public or private employment agency, if one is available within 50 miles.",
+      "replacement": "You qualify in one of two ways. Show you are eligible for unemployment benefits, or give a written certification that you registered with a public or private employment agency, if one is available within 50 miles.",
+      "type": "S8.2 overloaded sentence",
+      "why": "33 words. Split into two sentences."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "In our internal calculation, we modeled simple interest on four hypothetical unsubsidized balances over 6, 12 and 36 months, with no payments and all accrued interest added to the principal at the end.",
+      "replacement": "In our internal calculation, we modeled simple interest on four hypothetical unsubsidized balances over 6, 12 and 36 months. The model assumes no payments and adds all accrued interest to the principal at the end.",
+      "type": "S8.3 overloaded sentence",
+      "why": "33 words. Split into two sentences."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "For those same loans, forbearance granted for poor health or other acceptable reasons, under paragraph (a)(1) of the [forbearance rule in section 685.205](https://www.ecfr.gov/current/title-34/part-685/section-685.205), is capped at nine months within a 24-month period.",
+      "replacement": "For those same loans, the [forbearance rule in section 685.205](https://www.ecfr.gov/current/title-34/part-685/section-685.205) caps forbearance for poor health or other acceptable reasons (paragraph (a)(1)) at nine months within a 24-month period.",
+      "type": "S8.4 overloaded sentence",
+      "why": "32 words. Restructure as the audit suggests."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "For loans disbursed before July 1, 2027, unemployment and economic hardship deferments each cap at three years in total, and economic hardship is granted up to one year at a time.",
+      "replacement": "For loans disbursed before July 1, 2027, unemployment and economic hardship deferments each cap at three years in total. Economic hardship is granted up to one year at a time.",
+      "type": "S8.6 overloaded sentence",
+      "why": "31 words. Split at 'and'."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Before you use that time, compare the [student loan standard repayment plan](/guides/student-loan-standard-repayment-plan/) and our list of [student loan forgiveness programs](/guides/student-loan-forgiveness-programs/), and read our guide on [whether to refinance student loans](/guides/should-you-refinance-student-loans/).",
+      "replacement": "Before you use up that three-year total, compare the [student loan standard repayment plan](/guides/student-loan-standard-repayment-plan/) and our list of [student loan forgiveness programs](/guides/student-loan-forgiveness-programs/). Also read our guide on [whether to refinance student loans](/guides/should-you-refinance-student-loans/).",
+      "type": "S8 borderline 30 words; A6 backward pronoun",
+      "why": "Fixes the vague 'that time' and splits the long sentence."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "6. Read the capitalization notice.",
+      "replacement": "6. Read the capitalization information the Secretary provides.",
+      "type": "A1 'notice' is writer's word",
+      "why": "The regulation says the Secretary provides information."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "gathers $1,950 of interest",
+      "replacement": "accrues $1,950 of interest",
+      "type": "A4 wrong collocation",
+      "why": "Use 'accrues' to match the regulation's term."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Up to one year at a time for economic hardship | Up to one year |",
+      "replacement": "Up to one year at a time for economic hardship | Up to one year (otherwise) |",
+      "type": "A5 apparent conflict with nine-month cap",
+      "why": "Marks the one-year grant as the general case."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "S9 evidence.json counterexample placeholder",
+      "why": "Packet-only edit, not page text. Needs new substance outside these units.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "A2 tools widget shows garnishment calculator",
+      "why": "The tool block is not in these units. Needs new substance or a template change.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "| $30,000 at 7.99% | $1,198 |",
+      "finding": "A3 calc rounding off by $1",
+      "why": "Fixing it needs a rounding method or a figure not in SOURCE. Needs new substance.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "A8 FFEL/Perkins holders not routed",
+      "why": "Needs a new sentence of guidance for those loans. Needs new substance.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "A9 inherited site footer",
+      "why": "The footer is not in these units. It is a site-wide human decision.",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      2
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[2].body",
+       "quote": "Capitalized interest is added to your principal, so the balance you repay after the deferment is larger than the balance you paused.",
+       "type": "inference",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[5].body",
+       "quote": "You do not pay interest on a subsidized loan during deferment, and an unsubsidized loan grows by the simple interest shown in our table.",
+       "type": "inference",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2295,
+    "flags": [
+     "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Capitalized interest is added to your principal, so the balance you repay after '; 'You do not pay interest on a subsidized loan during deferment, and an unsubsidiz'"
+    ]
+   }
+  ]
+ },
+ "seconds": 187.6,
+ "response_id": "msg_011CgVMQqjM6Xffc78GWQRmy",
+ "generated_at": "2026-10-28T21:37:18+0000"
+}

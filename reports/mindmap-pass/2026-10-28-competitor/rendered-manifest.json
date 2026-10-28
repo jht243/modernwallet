@@ -1,0 +1,39 @@
+{
+  "author": "main-agent",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/guides/average-retirement-savings-by-age/",
+      "requiredText": [
+        "$670,200",
+        "$106,000",
+        "Our Takeaway",
+        "2025 dollars"
+      ],
+      "forbiddenText": [
+        "ModernWallet we tested"
+      ],
+      "growthFile": "reports/mindmap-pass/2026-10-28-competitor/evidence/average-retirement-savings-by-age/growth.json",
+      "evidenceFile": "reports/mindmap-pass/2026-10-28-competitor/evidence/average-retirement-savings-by-age/evidence.json"
+    },
+    {
+      "path": "/guides/student-loan-deferment/",
+      "requiredText": [
+        "July 1, 2027",
+        "Our Takeaway"
+      ],
+      "forbiddenText": [
+        "we tested"
+      ],
+      "growthFile": "reports/mindmap-pass/2026-10-28-competitor/evidence/student-loan-deferment/growth.json",
+      "evidenceFile": "reports/mindmap-pass/2026-10-28-competitor/evidence/student-loan-deferment/evidence.json"
+    },
+    {
+      "path": "/student-loan-wage-garnishment-calculator/",
+      "requiredText": [
+        "Not in default yet? How to defer your student loans"
+      ],
+      "expectedUpdatedDate": "2026-10-28"
+    }
+  ]
+}

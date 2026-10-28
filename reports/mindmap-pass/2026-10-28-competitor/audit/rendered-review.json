@@ -1,0 +1,78 @@
+{
+  "reviewer": "phase4-reviewer",
+  "snapshotSha256": "c4cf8d6c505faff50ae86525745f7982e4ffe75f35d56474d7791434c1e04983",
+  "snapshotFileSha256": "0c94099a353b5bce52d5da525b309529e9453a2e30de491c14a40a9c555e7726",
+  "note": "snapshotSha256 is the canonical digest stored inside rendered-snapshot.json (the value rendered-audit.py check compares). snapshotFileSha256 is the raw sha256 of the file bytes. Both routes FAIL; this review is intentionally not valid for publication.",
+  "routes": [
+    {
+      "path": "/guides/average-retirement-savings-by-age/",
+      "fingerprint": "a4a2627e97dddd427576ba8e7d8083aeae3552a25b3817cec75837f2d90d9a78",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "FAIL",
+          "evidence": "Closing next action says the retirement savings calculator will show 'how your plan compares with average retirement savings by age'; the calculator page (dist/retirement/retirement-savings-calculator/) only projects savings and a 4% income and has no age-average comparison. Claim-checker leftover: 'Opening an account puts you in the group the table measures. The $48,400 average for that group fell from $53,800' (ambiguous 'that group'). Takeaway/FAQ/s2/s6 assert by-age averages exceed the typical saver while s2 says by-age medians are not published. Tee-up is sentence 3 and S1 is 33 words. See findings M3-M9."
+        },
+        "sourceSupport": {
+          "status": "FAIL",
+          "evidence": "scf26.pdf p.2 note 4 and Appendix A: all SCF dollar amounts are restated to 2025 dollars; page says 'with no adjustment for inflation' (3 places). Report is dated October 2026; 'released on October 9, 2026' is the date of companion FEDS Notes. By-age mean>median asserted without by-age medians. All 16 Table A cells, 54.9/54.3, 65.1/64.4, 95.2->106.0, 365.7->451.1, 4.26x, 3.84x, 3.77/2.28/1.61 and percent changes verified correct. See M1-M3."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No 'we tested', no How We Tested, no testing schema or byline; financial services excluded from TESTED by _experience.md section G. Visible attribution 'In our internal calculation, the mean is 4.26 times the median ($451,100 divided by $106,000)' and 'we compared each group's 2022 and 2025 means ... divided the change by the 2022 figure' with Table A pointer; Takeaway says 'we did not survey or test anyone'. calc.py rerun matches output.txt. Packet counterexample placeholder logged as M10 (packet-only)."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Article JSON-LD datePublished=dateModified=2026-10-28; visible 'Updated October 28, 2026'; FAQPage 5 questions match visible FAQ; BreadcrumbList, Person author, citation to the two Fed URLs; title 54 chars, description 146 chars; canonical https://www.themodernwallet.com/guides/average-retirement-savings-by-age/. Body date claim 'October 9, 2026' is a sourceSupport defect (M2), not a schema defect."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "No noindex or robots meta; self canonical. Federal Reserve and Survey of Consumer Finances linked at first mention; both external hrefs on allowed-urls.txt. All 6 in-body internal hrefs resolve to dist routes (retirement savings calculator, 401k calculator, how-much-do-i-need-to-retire-by-age, average-hsa-balance-by-age, 401k and IRA limits 2026 guides). Social Security unlinked program name logged advisory A5."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Structural check only (no device screenshot): viewport meta present; the single table is wrapped in div.table-wrap with overflow-x:auto (guides/[slug].astro line 147); bullets and numbered list render as ul/ol; no raw HTML leak in captured text. Footer disclaimer is the last element, not at top."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Financial-services exclusion from TESTED honored (ordinary presentation); no medical or psychedelic content; register operator; no neutrality or payment-placement claims in body (grep empty). Open item for coordinator: the working tree also changes src/data/cross-links.ts (inbound link) and src/data/calculators.ts (net-worth updated bumped to 2026-10-28 with no visible diff); those routes are not in the rendered manifest and need capture plus a date-churn check before closure."
+        }
+      }
+    },
+    {
+      "path": "/guides/student-loan-deferment/",
+      "fingerprint": "fd524ebdbd77c996a5c4978b8eeba17b819038f549579dbc1fed8b55823c5563",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "FAIL",
+          "evidence": "Takeaway tells the reader who 'cannot make payments right now' to 'keep paying until it confirms approval' with no resolution (dead-end), although 34 CFR 685.205(b)(9) supplies up to 60 days of processing forbearance. Intro says 'you owe no principal or interest' while FAQ says 'you do not pay principal or interest'. Tee-up says 'this one is built from'. See S1, S4, S6, S7."
+        },
+        "sourceSupport": {
+          "status": "FAIL",
+          "evidence": "Checked against /tmp/ecfr204.txt and /tmp/f205.txt: July 1, 2027 cutoffs, 3-year collective limits, 1-year-at-a-time, 9-in-24 forbearance, 30 hours/3 months, 50 miles, six diligent attempts, default rule all correct. Defects: 'owe no principal' (a)(1) only waives installments; 'three routes' for economic hardship but (g)(2) lists four ((i) FFEL/Perkins deferment omitted); unemployment row omits look-back and the six-months-per-request limit of (f)(4); 'charges no interest' on subsidized loans is not in the cited text (claim-checker itself rejected it in one place). See S1-S3, S6."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing claim, no TESTED markup. 'In our internal calculation, we modeled simple interest on four hypothetical unsubsidized balances' with formula balance x rate x months / 12 and worked example, 'The balances and rates are examples we picked', 'a model with no measured results behind it'; Takeaway 'We did not test any servicer's process or survey borrowers'. calc.py rerun identical; one cell rounds $1,198.50 half-to-even (advisory A3). Packet counterexample placeholder logged S9."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Article datePublished=dateModified=2026-10-28; visible 'Updated October 28, 2026'; FAQPage 5 Qs match; citation to the two eCFR URLs; title 52 chars, description 156 chars; self canonical; no noindex. Body sentence 'regulation text as read on October 28, 2026' is dated method attribution, allowed."
+        },
+        "linksAndIndexability": {
+          "status": "FAIL",
+          "evidence": "First mentions of 'U.S. Department of Education' (intro p2) and 'Peace Corps' (step 4) are unlinked organizations (GATE Links hard fail); the claim-checker deleted the studentaid.gov link rather than keeping a name link. Internal hrefs (5 guides plus the garnishment calculator) all resolve; eCFR hrefs on allowed list. See S5."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Structural check only (no device screenshot): viewport meta; 3 tables each in div.table-wrap with overflow-x:auto; numbered list and bullets render; no raw HTML in captured text; footer disclaimer last."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Financial-services exclusion from TESTED honored; no medical content; operator register; neutrality grep empty. Open item: inbound-link routes (student-loan-wage-garnishment-calculator cross-link edit and date bump) are not in the rendered manifest."
+        }
+      }
+    }
+  ]
+}

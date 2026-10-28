@@ -1,0 +1,30 @@
+PHASE 4 RE-AUDIT (r3) - /guides/average-retirement-savings-by-age/
+Reviewer: phase4-reviewer. Startup exit 0 (7617515); bundle check ok. Full gate re-run on the edited text.
+Audited bytes: dist html sha == snapshot htmlSha256 == served on 127.0.0.1:4331; draft == guides.ts entry. Snapshot canonical digest 27e2b4f963b178548ddad2ff4a93a9ac5219fa1231ded36ae2f91e56189fcaaa.
+VERDICT: FAIL on ONE restatement (one-sentence Rung 1 delete). Everything else PASS.
+
+ROUND-2 STATUS: R2-1 list line breaks FIXED (real ul/li in dist, no literal " - "). R2-2 rhythm FIXED (no 10-run single band; no 5 consecutive within 3 words; 107 sentences S/M/L 14/29/64). R2-3 overlong sentences FIXED (split; takeaway opener now 27 words). A1 wording FIXED ("The report states that it restates dollar amounts in 2025 dollars unless noted, so these means are in 2025 dollars and the changes are inflation-adjusted"). calc.py header now "dated October 2026".
+
+=============== MUST-FIX ===============
+R3-1 [GATE meaning bar: restatement] "What the Numbers Leave Out".
+ Quotes: last bullet "- **Needs:** the figures say nothing about what balance you need." then the next paragraph "If you are comparing your balance to peers, the Needs limit applies most: the table says nothing about what balance you need."
+ Defect: the paragraph sentence repeats the bullet word for word after my round-2 shortening of the bullet.
+ FIX -> delete that sentence so the paragraph starts: "For age-based savings targets, see our guide on [how much you need to retire by age](/guides/how-much-do-i-need-to-retire-by-age/). If you also track a health savings account (HSA), our guide to the [average HSA balance by age](/guides/average-hsa-balance-by-age/) covers those balances."
+
+=============== ADVISORY ===============
+A1 The 2025-dollar statement now appears three times (table note, change-section closing sentence, Inflation bullet). Fine for accuracy; could cut the change-section copy.
+A2 The 35 to 44 mean also fell 2019 to 2022 ($167,500 to $154,800); the "youngest group moving both ways" paragraph still implies only under-35 did.
+A3 FAQ 1 first sentence is 30 words (a four-item number series): borderline.
+A4 Social Security first mention unlinked (program; no allowed URL).
+A5 Inbound links: only the /guides/ index card; the shared retirement pill was removed by the coordinator. Not an orphan; Phase 6 coverage note belongs in the run summary.
+A6 Inherited footer: "For educational purposes — not financial advice." (em-dash) and "This never affects our rankings or editorial coverage." on every page.
+
+=============== GATE TABLE (r3) ===============
+Mechanical: title 54, description 137 PASS; Title Case PASS; dashes 0 in draft; no raw HTML.
+Depth 1,891 words vs floor 1,200 PASS. Load receipt PASS (ledger mindmap-pass phase-3 2026-10-28, cs=0e00ec2e aa=ed445917 exp=1969dcd5 match disk).
+Register/page type/medium PASS. Reader question answered in intro S1 and section 1 PASS. Tee-up S2, opening S1 (27 words) PASS. Experience truth PASS.
+Testing/TESTED PASS (none claimed; calculation attributed with method; "we did not survey or test anyone").
+Decision-evidence s.4 PASS (calc.py rerun identical; counterexample; growth.json local-only/not-yet-published).
+Source accuracy PASS (all numbers re-verified against scf26.pdf and recomputed).
+Takeaway vs opening answer vs table vs FAQ PASS. Who not for (65+ with calculator link, savings target) and what would change (by-age medians published) PASS. Closing next action PASS.
+Links PASS. Neutrality/byline/disclaimer placement PASS. Anti-AI: only R3-1. Schema/dates PASS. Layout structural PASS.

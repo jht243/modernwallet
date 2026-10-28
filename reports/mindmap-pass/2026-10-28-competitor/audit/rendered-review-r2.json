@@ -1,0 +1,148 @@
+{
+  "reviewer": "phase4-reviewer",
+  "snapshotSha256": "38514a2223746bb4aecd8755597d021b56e50e197547326b89bc677c757f5f6e",
+  "snapshotFileSha256": "85e0fbd69e5f5fb25900a9957c34ca3586da59c409fad5cd1f04d820ddb0fbbf",
+  "note": "r2. snapshotSha256 = canonical digest stored in rendered-snapshot.json (what rendered-audit.py check compares); snapshotFileSha256 = raw file sha256. All four routes FAIL, so this review must not be used to publish.",
+  "routes": [
+    {
+      "path": "/guides/average-retirement-savings-by-age/",
+      "fingerprint": "f23941296700f866fbf77b8892d5ce89061fd1056f78da0d2613358f218059a8",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "FAIL",
+          "evidence": "Round-1 substance defects fixed (2025-dollars, October 2026, by-age inference, calculator claim, orphan pair, tee-up now sentence 2, 65+ alternative). Remaining: monotone-rhythm run in sentences 66-75 (lengths 17,25,18,16,18,17,22,16,21,32) and two sentences over 30 words (32 and 35). See findings-r2 R2-2, R2-3."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Re-verified against /tmp/scf26.txt: all 16 Table A cells; 54.9/54.3; 65.1/64.4; 70/66/50/42/65; median 95.2->106.0 (11) and mean 365.7->451.1 (23) in Table 3 (Thousands of 2025 dollars); report dated October 2026; Appendix A states dollar amounts restated to 2025 dollars so 'inflation-adjusted' changes are supported. calc.py rerun identical to output.txt; ratios 3.77/2.28/1.61/4.26/3.84 and percent changes recomputed. Advisory A1: Table A caption itself lacks '2025'."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No 'we tested', How We Tested, testing schema or byline; financial services excluded by _experience.md section G. Visible attribution 'we calculated the percent changes by age from the Federal Reserve's own table', 'In our internal calculation, the mean is 4.26 times the median ($451,100 divided by $106,000)', and the subtract-then-divide check sentence with Table A link; Takeaway 'we did not survey or test anyone'. evidence.json counterexample and provenance present."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Article datePublished=dateModified=2026-10-28 and visible 'Updated October 28, 2026'; FAQPage 5 Qs match visible FAQ; Person author, citation to the two Federal Reserve URLs; title 54 chars, description 137 chars; self canonical; no noindex."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Federal Reserve and Survey of Consumer Finances linked on first mention; external hrefs only the two allowed Federal Reserve URLs; internal hrefs (retirement savings calculator, 401k calculator, retirement income calculator, how-much-do-i-need-to-retire-by-age, average-hsa-balance-by-age, 401k and IRA limits 2026) all resolve in dist. Inbound pill present on /retirement/ and 11 sibling retirement routes and a card on /guides/."
+        },
+        "renderedLayout": {
+          "status": "FAIL",
+          "evidence": "Built HTML shows a broken list: 'We also divided each group's 2025 mean by the next-younger group's mean. - 35 to 44 versus under 35: 3.77 times. - 45 to 54 ...' renders as one run-on paragraph with literal ' - ' (verified in dist and the snapshot text). Table is in div.table-wrap overflow-x:auto. Structural check only; no device screenshot. See R2-1."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Financial-services exclusion from TESTED honored (ordinary presentation); no medical content; operator register; neutrality grep empty; PAA unavailable recorded as autocomplete-only."
+        }
+      }
+    },
+    {
+      "path": "/guides/student-loan-deferment/",
+      "fingerprint": "36becfd7d933a415137a6660c162507f9b742f906c51c9b8b36b58d2769f9dde",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "FAIL",
+          "evidence": "Round-1 defects fixed (no 'owe no principal', four hardship routes, six-month limits, 60-day processing forbearance resolves the 'cannot pay' dead end, consistent subsidized wording). Remaining: tee-up is sentence 3 (S2 'Keep making scheduled payments...' sits between answer and tee-up) and one 32-word sentence. See R2-2, R2-3."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Re-checked against /tmp/ecfr204.txt and /tmp/f205.txt: 685.204(a)(1)-(5), (b), (f)(1)-(4), (g)(1)-(2) four routes, 685.205(a)(1), (a)(6), (b)(9) 60-day processing forbearance not capitalized, (c)(1)(i)-(ii) nine months in 24 for loans disbursed on or after July 1, 2027. Interest table recomputed half-up ($1,199 for $30,000 at 7.99% over 6 months); calc.py rerun identical to output.txt."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing claim or markup. 'In our internal calculation, we modeled simple interest on four hypothetical unsubsidized balances over 6, 12 and 36 months' with formula, worked example, 'examples we picked', 'no measured results behind it'; Takeaway 'We did not test any servicer's process or survey borrowers'."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Article datePublished=dateModified=2026-10-28 and visible Updated October 28, 2026; FAQPage 5 Qs match; citations to the two eCFR URLs; title 52, description 156 chars; self canonical; no noindex."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "U.S. Department of Education linked to https://www.ed.gov/ and Peace Corps to https://www.peacecorps.gov/ at first mention, both on allowed-urls.txt (could not fetch them from this sandbox: 403). eCFR 685.204 and 685.205 linked; 5 internal guides plus the garnishment calculator resolve."
+        },
+        "renderedLayout": {
+          "status": "FAIL",
+          "evidence": "Built HTML shows a merged bullet: 'You serve as a Peace Corps volunteer. - You already received an economic hardship deferment on a Federal Family Education Loan (FFEL) Program or Federal Perkins Loan...' as one list item with literal ' - '. 3 tables are in div.table-wrap overflow-x:auto. Structural check only. See R2-1."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Financial-services exclusion from TESTED honored; no medical content; operator register; neutrality grep empty; private-loan and default exclusions stated on the page."
+        }
+      }
+    },
+    {
+      "path": "/retirement/",
+      "fingerprint": "d8449ffa9932fdb4b883681d18746bcadc84f8685a80631a2b75c09517bdae4d",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Retirement hub gained one pill 'Average retirement savings by age' in 'Plan the bigger picture' (dist /retirement/index.html). Label matches the target H1; inherited calculator, 4% rule, estate and long-term-care text does not contradict the new page and is unchanged."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "No new factual claim on the route; the pill is a link label only. Inherited figures (example $1,097,072, 4% rule) unchanged and not relied on by the new link."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing, review or attribution claims added; none inherited that touch the added link."
+        },
+        "datesAndSchema": {
+          "status": "FAIL",
+          "evidence": "Rendered content changed (new link) but visible 'Updated June 25, 2026' and JSON-LD datePublished=dateModified=2026-06-25 are unchanged, while the garnishment route's link-only change was bumped to 2026-10-28. phase-4-audit.md date-bump rule lists internal-link edits and calls a stale date on an updated page a hard fail; _rendered-page-audit.md allows documented link-only differences. Decide and record: bump `updated` to 2026-10-28 (consistent with the garnishment calculator) or record a link-only exception for the whole shared-template group. The same unchanged-date state applies to the 11 sibling routes below."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New href /guides/average-retirement-savings-by-age/ resolves (200 in dist); no noindex; self canonical unchanged."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Pill uses the existing class='pill' markup with arrow, identical to neighbouring pills; structural check only."
+        },
+        "scopeAndExclusions": {
+          "status": "FAIL",
+          "evidence": "The CROSS_LINKS 'retirement' entry renders on 12 routes, not only /retirement/. I mechanically verified in dist that each carries the identical pill and unchanged dates: /retirement/401k-calculator/, /401k-early-withdrawal-calculator/, /couples-retirement-calculator/, /early-retirement-calculator/, /fire-calculator/, /ira-early-withdrawal-calculator/, /military-retirement-calculator/, /pension-calculator/, /retirement-income-calculator/, /retirement-savings-calculator/, /rmd-calculator/, /social-security-retirement-calculator/, plus the /guides/ index cards for both new guides. _rendered-page-audit.md requires the complete route inventory in the manifest or a recorded mechanical inspection; manifest lists only /retirement/."
+        }
+      }
+    },
+    {
+      "path": "/student-loan-wage-garnishment-calculator/",
+      "fingerprint": "4899e886ce6f7a7d58a870e715c091768a9963849e415d409a894bf92a0fd79a",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "FAIL",
+          "evidence": "Added pill label 'Can't pay? How to defer your student loans' sits on a page whose audience is borrowers in default ('The government can take up to 15%... for a defaulted federal student loan'; 'Skip this tool if ... borrowers who are current'). The target guide states a borrower in default is not eligible for deferment until payment arrangements are made, so the label promises something the reader may not get. Relabel (see verdict r2)."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Added link carries no new claim; inherited 15%, 20 U.S.C. 1095a, 31 CFR 285.4 and 65-day statements unchanged and not relied on by the link. Inherited news claim (Washington Sun, Oct 19, 2026) pre-existing, advisory."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing or attribution claim added."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Visible 'Updated October 28, 2026' and JSON-LD datePublished=dateModified=2026-10-28 agree with expectedUpdatedDate in the manifest; site template derives datePublished from `updated` (src/lib/jsonld.ts), so datePublished moved from 2026-10-20: template convention, advisory."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New href /guides/student-loan-deferment/ resolves; existing links unchanged; no noindex."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Pill uses existing markup beside 'What happens if you don't pay your student loans' and 'All calculators'; structural check only."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "No exclusions touched; calculators.ts diff is exactly this route's `updated` bump, cross-links.ts adds one entry for this route."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "average-retirement-savings-by-age",
+  "metaTitle": "Average Retirement Savings by Age for Families in 2025",
+  "metaDescription": "Average retirement savings by age runs from $48,400 under 35 to $670,200 at 55 to 64, per the Federal Reserve. Compare your balance to the median.",
+  "h1": "What Is the Average Retirement Savings by Age?",
+  "cardBlurb": "Families with an individual retirement account or workplace plan average $48,400 under age 35 and $670,200 at ages 55 to 64, while the all-ages median is $106,000.",
+  "introText": "Among families with an individual retirement account (IRA) or workplace plan, the average balance runs from $48,400 for those under 35 to $670,200 for those 55 to 64, according to the [Federal Reserve](https://www.federalreserve.gov/publications/files/scf26.pdf). Across all ages, the median family with a retirement account holds $106,000, far below the all-ages average of $451,100. At ModernWallet, we publish free retirement calculators, and we compare balances using the Federal Reserve's own figures with the division shown.\n\nThe numbers come from the 2025 [Survey of Consumer Finances](https://www.federalreserve.gov/econres/scfindex.htm) (SCF), in a report titled \"Changes in U.S. Family Finances from 2022 to 2025\" that the Federal Reserve released on October 9, 2026. The by-age averages cover families whose reference person is aged 64 or younger and who hold an IRA or a defined contribution (DC) plan, such as a 401(k).",
+  "sections": [
+    {
+      "heading": "Average Retirement Savings by Age in 2025",
+      "body": "The average retirement savings by age in 2025 ranges from $48,400 for families under 35 to $670,200 for families aged 55 to 64. These are mean balances from Table A of the Federal Reserve's 2025 report. They count only families with an IRA or a DC plan whose reference person is 64 or younger, an age limit the Federal Reserve uses to capture families who generally have not retired.\n\n| Age group | 2016 | 2019 | 2022 | 2025 | Change, 2022 to 2025 |\n| --- | --- | --- | --- | --- | --- |\n| Under 35 | $43,800 | $38,300 | $53,800 | $48,400 | Down 10.0% |\n| 35 to 44 | $135,200 | $167,500 | $154,800 | $182,400 | Up 17.8% |\n| 45 to 54 | $291,300 | $323,100 | $342,700 | $415,800 | Up 21.3% |\n| 55 to 64 | $504,800 | $518,200 | $588,500 | $670,200 | Up 13.9% |\n\nThe change column is our calculation from the Federal Reserve's published means, with no adjustment for inflation. Every figure in the table is a mean, so a few very large balances pull each one upward.\n\nThe survey counts IRAs and certain employer-sponsored accounts, such as 401(k), 403(b) and thrift savings accounts, as retirement accounts. Table A reports one combined balance per family across those accounts. If you searched for average 401(k) savings by age, these combined figures are the closest match this release gives.\n\nThe Federal Reserve does not publish median balances by age in this release. It reports that median values rose for every age group between 2022 and 2025, then marks the by-age medians as \"not shown.\" For any single age group, the table tells you the average and nothing about the middle family."
+    },
+    {
+      "heading": "Median Retirement Savings vs. the Average",
+      "body": "The median retirement savings for all ages is $106,000 among families that hold a retirement account, while the mean is $451,100. In our internal calculation, the mean is 4.26 times the median ($451,100 divided by $106,000). The average describes a family far better off than the middle family.\n\nThe median is the middle balance: half of families with an account hold more, and half hold less. The mean adds up every balance and divides by the number of families, so a few very large balances lift it. A family sitting right at the average for its age group is above the typical saver of that age.\n\nThe 4.26 ratio applies to all ages together. The Federal Reserve does not publish by-age medians in this release, so the same ratio cannot be worked out for your age group. Treat the all-ages gap as a warning that averages are pulled up by a few very large balances.\n\nBoth figures grew from 2022 to 2025. The Federal Reserve reports the median rose 11 percent, from $95,200 to $106,000, while the mean rose 23 percent, from $365,700 to $451,100. In 2022 the mean was 3.84 times the median ($365,700 divided by $95,200), so the gap between average and typical widened over those three years."
+    },
+    {
+      "heading": "Share of Families with a Retirement Account",
+      "body": "About 55 percent of U.S. families held a retirement account in 2025, with the Federal Reserve putting the share at 54.9 percent, up from 54.3 percent in 2022. The balances on this page describe only those families. Families with no account are left out of both the averages and the $106,000 median.\n\nAmong families aged 64 or younger, 65.1 percent took part in some retirement plan in 2025, counting IRAs, DC plans and defined benefit pensions. That is up from 64.4 percent in 2022.\n\nThe Federal Reserve breaks participation down further for families aged 64 or younger:\n\n- About 70 percent of families aged 45 to 64 participated in a retirement plan.\n- About 66 percent of families aged 35 to 44 participated.\n- Around 50 percent of the youngest families had a DC plan or IRA, up from 42 percent in 2016.\n- Around 65 percent of the oldest families in that range had a DC plan or IRA.\n\nThese shares change how you read the table. The $48,400 under-35 average describes roughly half of young families, the half that holds an account."
+    },
+    {
+      "heading": "How the Average Retirement Savings by Age Changed from 2022 to 2025",
+      "body": "Average balances rose for every age group from 2022 to 2025 except the youngest, whose average fell 10.0 percent. In our internal calculation, we compared each group's 2022 and 2025 means from Table A and divided the change by the 2022 figure. The Federal Reserve itself reports that average combined balances increased for all age groups except the youngest.\n\n- Under 35: $53,800 to $48,400, a drop of $5,400, or 10.0 percent.\n- 35 to 44: $154,800 to $182,400, a gain of $27,600, or 17.8 percent.\n- 45 to 54: $342,700 to $415,800, a gain of $73,100, or 21.3 percent.\n- 55 to 64: $588,500 to $670,200, a gain of $81,700, or 13.9 percent.\n\nYou can check any line with Table A in the [Federal Reserve report](https://www.federalreserve.gov/publications/files/scf26.pdf). Subtract the 2022 mean from the 2025 mean, then divide by the 2022 mean. None of these changes is adjusted for inflation.\n\nWe also divided each group's 2025 mean by the next-younger group's mean. The 35 to 44 average is 3.77 times the under-35 average, the 45 to 54 average is 2.28 times the 35 to 44 average, and the 55 to 64 average is 1.61 times the 45 to 54 average. The largest multiple between neighboring groups sits between the under-35 and 35 to 44 groups.\n\nThe longer record shows the youngest group moving both ways. Its average was $43,800 in 2016, $38,300 in 2019, $53,800 in 2022 and $48,400 in 2025. The 45 to 54 and 55 to 64 averages rose in every survey shown."
+    },
+    {
+      "heading": "What the Numbers Leave Out",
+      "body": "The Federal Reserve averages describe IRA and DC plan balances for families aged 64 or younger, and several parts of a retirement picture fall outside them. Read the table with these limits in mind:\n\n- **Ages 65 and older:** Table A stops at 64, and this release gives no by-age figure for families 65 and older.\n- **Social Security and pensions:** the balances cover IRAs and DC plans only, so Social Security and defined benefit pension values are not part of them.\n- **Families instead of individuals:** the survey measures families, so each figure is a combined balance for the family.\n- **Account holders only:** families without an IRA or DC plan do not appear in the averages.\n- **Inflation:** the dollar figures and our percent changes are as reported, with no inflation adjustment.\n- **Needs:** the figures show what families hold and say nothing about what balance anyone needs to retire.\n\nThe last limit matters most for a reader comparing a balance to peers. For age-based savings targets, see our guide on [how much you need to retire by age](/guides/how-much-do-i-need-to-retire-by-age/). If you also track a health savings account (HSA), our guide to the [average HSA balance by age](/guides/average-hsa-balance-by-age/) covers those balances."
+    },
+    {
+      "heading": "What to Do If You Are Below Average",
+      "body": "A balance below the average for your age group does not by itself put you below the typical saver of that age, because each average is pulled up by a few very large accounts. The better test is your balance against a target built from your own numbers. These steps get you there:\n\n1. Enter your current balance, age and monthly savings into our [retirement savings calculator](/retirement/retirement-savings-calculator/) to see where your current pace leads.\n2. If you have a 401(k), try higher contribution rates in our [401(k) calculator](/retirement/401k-calculator/) and compare the projected balances.\n3. Look up how much more you can add this year in the [2026 401(k) contribution limits](/guides/401k-contribution-limits-2026/) and [2026 IRA contribution limits](/guides/ira-contribution-limits-2026/) guides.\n4. Set the calculator result against the age-based targets in our retirement-needs guide linked above.\n\nIf you are under 35, keep in mind that around half of families your age had a DC plan or IRA at all. Opening an account puts you in the group the table measures. The $48,400 average for that group fell from $53,800 in 2022."
+    },
+    {
+      "heading": "Our Takeaway",
+      "body": "Among families aged 64 or younger with an IRA or DC plan, the average balance is $48,400 under 35, $182,400 at 35 to 44, $415,800 at 45 to 54 and $670,200 at 55 to 64. Those averages sit above the typical saver: across all ages, the mean of $451,100 is 4.26 times the $106,000 median. Our basis is the Federal Reserve's reported figures plus our own division, and we did not survey or test anyone.\n\nThe comparison fits an adult aged 64 or younger who holds an IRA, 401(k) or similar plan and wants a peer benchmark. It does not fit anyone 65 or older, because this release has no figure for that age, or anyone setting a savings target, who should start from the retirement-needs guide instead. If the Federal Reserve publishes median balances by age, the median for your age group would replace the average as the better peer comparison.\n\nNext, enter your own balance in our [retirement savings calculator](/retirement/retirement-savings-calculator/) to see how your plan compares with average retirement savings by age and with your own target."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the average retirement savings by age?",
+      "answer": "Among families with an IRA or DC plan, the 2025 average is $48,400 under 35, $182,400 at 35 to 44, $415,800 at 45 to 54 and $670,200 at 55 to 64. These Federal Reserve figures cover families whose reference person is 64 or younger."
+    },
+    {
+      "question": "What is the median retirement savings for all ages?",
+      "answer": "The median retirement savings for all ages is $106,000 among families that hold a retirement account, up 11 percent from $95,200 in 2022. The Federal Reserve does not publish median balances by age group in this release."
+    },
+    {
+      "question": "Why is the average so much higher than the median?",
+      "answer": "The average is higher because a few very large balances pull it up, while the median is the middle balance. Across all ages, the $451,100 mean is 4.26 times the $106,000 median, so a family near the average holds more than the typical saver."
+    },
+    {
+      "question": "How many families have a retirement account?",
+      "answer": "About 55 percent of families held a retirement account in 2025, at 54.9 percent, up from 54.3 percent in 2022. Among families aged 64 or younger, 65.1 percent took part in some retirement plan when defined benefit pensions are counted."
+    },
+    {
+      "question": "Does this include Social Security?",
+      "answer": "No. The Federal Reserve averages count IRA and DC plan balances only, so Social Security and defined benefit pension values are not included. For a target that reflects your full retirement picture, see our guide on [how much you need to retire by age](/guides/how-much-do-i-need-to-retire-by-age/)."
+    }
+  ],
+  "relatedLinks": [],
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

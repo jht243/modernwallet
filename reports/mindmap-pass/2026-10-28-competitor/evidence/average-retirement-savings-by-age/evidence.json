@@ -1,0 +1,40 @@
+{
+  "route": "/guides/average-retirement-savings-by-age/",
+  "readerQuestion": "What is the average retirement savings by age?",
+  "demandSource": "Autocomplete sweep (estimate, not measured)",
+  "decisionGap": "no existing page answers this reader question",
+  "method": "reported regulation/data + reproducible calculation",
+  "sources": [
+    {
+      "url": "https://www.federalreserve.gov/publications/files/scf26.pdf",
+      "checked": "2026-10-28"
+    }
+  ],
+  "calculation": {
+    "script": "reports/mindmap-pass/2026-10-28-competitor/evidence/average-retirement-savings-by-age/calc.py",
+    "output": "reports/mindmap-pass/2026-10-28-competitor/evidence/average-retirement-savings-by-age/output.txt"
+  },
+  "findings": [
+    {
+      "text": "Fed 2025 means by age (reported) and our percent-change/ratio calculation; all-ages mean is 4.26x median.",
+      "label": "calculated"
+    }
+  ],
+  "counterexample": "Reader aged 65 or older, or anyone setting a savings target: Table A does not apply (no figure for 65+, no needs estimate). The all-ages mean is 4.26 times the median, so the mean is not the typical balance; by-age medians are unpublished.",
+  "exclusions": "financial services: no TESTED format (_experience.md section G)",
+  "unknowns": "Averages cover families aged <=64 with an IRA/DC plan; medians by age not published; would change if Fed publishes by-age medians.",
+  "medium": "article with table, no new tool",
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "reports/mindmap-pass/2026-10-28-competitor/evidence/average-retirement-savings-by-age/calc.py"
+    ],
+    "scopeAndLimits": "Averages cover families aged <=64 with an IRA/DC plan; medians by age not published; would change if Fed publishes by-age medians.",
+    "publicMethod": "on-page method sentence and tables",
+    "placement": "first finding section and Our Takeaway"
+  },
+  "sampledAlternatives": [
+    "NerdWallet pages on the same topic (topic evidence only, not copied)",
+    "existing site pages: /guides/how-much-do-i-need-to-retire-by-age/, /retirement/retirement-savings-calculator/"
+  ]
+}

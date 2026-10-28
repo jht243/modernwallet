@@ -2677,7 +2677,7 @@ export const CALCULATORS: CalculatorDef[] = [
       { label: "IRS: Tax refunds may be applied to offset certain debts", url: "https://www.irs.gov/newsroom/tax-refunds-may-be-applied-to-offset-certain-debts" },
       { label: "Federal Student Aid: Student loan default and collections FAQs", url: "https://studentaid.gov/articles/default/" },
     ],
-    updated: "2026-10-20",
+    updated: "2026-10-28",
     defaultPreset: {"disposablePay": 2000, "frequency": "biweekly", "taxRefund": 3000, "ssBenefit": 0, "balance": 30000},
   },
   // Tax bracket calculator, Autocomplete pass (2026-10-21). Prose generated via scripts/lib/content_gen.py (meta beside the draft in reports/mindmap-pass/2026-10-21-autocomplete/drafts/).

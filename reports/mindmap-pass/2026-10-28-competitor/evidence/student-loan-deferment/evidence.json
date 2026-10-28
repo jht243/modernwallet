@@ -1,0 +1,44 @@
+{
+  "route": "/guides/student-loan-deferment/",
+  "readerQuestion": "How do I defer my student loans?",
+  "demandSource": "Autocomplete sweep (estimate, not measured)",
+  "decisionGap": "no existing page answers this reader question",
+  "method": "reported regulation/data + reproducible calculation",
+  "sources": [
+    {
+      "url": "https://www.ecfr.gov/current/title-34/part-685/section-685.204",
+      "checked": "2026-10-28"
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-34/part-685/section-685.205",
+      "checked": "2026-10-28"
+    }
+  ],
+  "calculation": {
+    "script": "reports/mindmap-pass/2026-10-28-competitor/evidence/student-loan-deferment/calc.py",
+    "output": "reports/mindmap-pass/2026-10-28-competitor/evidence/student-loan-deferment/output.txt"
+  },
+  "findings": [
+    {
+      "text": "Regulation text (reported) plus simple-interest accrual scenarios on hypothetical balances (calculated).",
+      "label": "calculated"
+    }
+  ],
+  "counterexample": "Deferment is not the answer when: the loan is in default; the loan is private; the loan was disbursed on or after 2027-07-01 (no unemployment or economic hardship deferment); or the balance is unsubsidized, where $30,000 at 7.99 percent grows to $37,191 in 36 months if the interest is added to principal.",
+  "exclusions": "financial services: no TESTED format (_experience.md section G)",
+  "unknowns": "Rules apply to Direct Loans; loans disbursed on/after 2027-07-01 lose unemployment/economic hardship deferment; private loans differ.",
+  "medium": "article with table, no new tool",
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "reports/mindmap-pass/2026-10-28-competitor/evidence/student-loan-deferment/calc.py"
+    ],
+    "scopeAndLimits": "Rules apply to Direct Loans; loans disbursed on/after 2027-07-01 lose unemployment/economic hardship deferment; private loans differ.",
+    "publicMethod": "on-page method sentence and tables",
+    "placement": "first finding section and Our Takeaway"
+  },
+  "sampledAlternatives": [
+    "NerdWallet pages on the same topic (topic evidence only, not copied)",
+    "existing site pages: /guides/what-happens-if-you-dont-pay-your-student-loans/, /guides/student-loan-standard-repayment-plan/"
+  ]
+}

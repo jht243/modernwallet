@@ -1,0 +1,85 @@
+PHASE 4 INDEPENDENT AUDIT - /guides/student-loan-deferment/
+Reviewer: phase4-reviewer (did not write the page). Audited: exact built HTML (dist sha256 69c10615... == snapshot htmlSha256 == served on 127.0.0.1:4331); draft JSON == src/data/guides.ts entry (byte-equal intro + sections).
+Bundle: reports/mindmap-pass/2026-10-28-competitor-run/preflight-audit-reviewer (28/28, check ok). Startup freshness exit 0 at 7617515.
+VERDICT: FAIL (Rung 1 fix-in-place; S4 needs one added sourced fact; S5 needs two added URLs on the allowed list).
+
+Primary-source checks: /tmp/ecfr204.txt (34 CFR 685.204) and /tmp/f205.txt (34 CFR 685.205), read in full. calc.py re-run: output identical to output.txt; hand check $30,000 x 0.065 x 12/12 = 1,950; $30,000 x 0.0799 x 0.5 = 1,198.5 (page rounds to $1,198; the script uses round-half-even, 1198.5 -> 1198; advisory A3); $60,000 x 0.0799 x 3 = 14,382; $10,000 x 0.065 x 3 = 1,950.
+Verified correct against the regulation: July 1, 2027 cutoffs (f)(1)(ii), (g)(1)(ii); 685.205(c)(1)(ii) nine months in 24 for (a)(1) forbearance; three years collective for (f) and (g); up to one year at a time for (g)(1)(iii); 30 hours a week / three months; 50-mile agency; six diligent attempts for requests beyond the initial; overqualified exclusion; default (a)(3); request-required (a)(4); in-school automatic processing; capitalization information (a)(2); forbearance up to one year (c)(1)(i); 20 percent of gross income ground (a)(6); "if payments of interest are forborne, they are capitalized".
+
+=============== MUST-FIX ===============
+
+S1 [sourceSupport, inaccurate regulatory statement] Intro S3.
+ Quote: "On a subsidized loan, you owe no principal or interest during deferment, while on an unsubsidized loan the interest keeps accruing."
+ Defect: 685.204(a)(1) says periodic installments of principal and interest "need not be paid". The principal is still owed; only payments are paused. "owe no principal" is wrong, and the sentence contradicts the FAQ ("you do not pay principal or interest") and the table.
+ FIX -> "On a subsidized loan, you do not have to pay principal or interest installments during deferment, while on an unsubsidized loan the interest keeps accruing."
+
+S2 [sourceSupport, inaccurate count] Economic hardship routes.
+ Quote: "The economic hardship deferment has three routes to eligibility:" and table cell "Receiving public assistance, working full-time on a low income, or serving in the Peace Corps".
+ Defect: 685.204(g)(2) lists FOUR ways to qualify: (i) already granted an economic hardship deferment under FFEL or Perkins for the period requested, (ii) public assistance, (iii) full-time income test, (iv) Peace Corps. The closed fact list omitted (i) and the page turned the omission into a count.
+ FIX heading sentence -> "You can qualify for the economic hardship deferment in any of these ways:" and add a bullet "- You already received an economic hardship deferment on a Federal Family Education Loan (FFEL) Program or Federal Perkins Loan for the same period." (add fact to closed list: 685.204(g)(2)(i)). Table cell -> "Receiving public assistance, working full-time on a low income, serving in the Peace Corps, or already having an FFEL or Perkins economic hardship deferment for the same period".
+
+S3 [sourceSupport + ambiguity flagged by caller] Unemployment length cell.
+ Quote: table "Three years in total; the first period runs up to six months after your request" and prose "The first period may begin up to six months before your servicer receives the request, and it can be granted for up to six months after that date."
+ Defect: "Three years in total" is correct (collective periods). "the first period runs up to six months after your request" reads as if the first period is capped at six months and drops the six-month look-back; and 685.204(f)(4) says no unemployment deferment runs beyond six months after the date you give your evidence or certification, i.e. each request covers at most six months forward, so reaching the three-year total takes repeated requests (which is why "for all requests beyond the initial request" needs the six diligent attempts). The page never says that, so a reader may think one request buys three years.
+ FIX cell -> "Three years in total across requests; each request can cover up to six months after you apply, and the first can also reach back six months". Add one sentence after the prose paragraph: "Each approval stops at six months after the date you give your evidence or certification, so you ask again for each further period, up to the three-year total." (fact (f)(4); add to the closed list.)
+
+S4 [dead-end + internal contradiction, GATE meaning bar] "keep paying" advice.
+ Quotes: Takeaway S1 "If you hold federal Direct Loans and cannot make payments right now, ask your servicer for the deferment whose test you meet, send the documents, and keep paying until it confirms approval." Also intro S1, step 5, FAQ 1, closing sentence.
+ Defect: the reader the page addresses cannot pay, and is told to keep paying with no resolution (dead-end; "right now" + "keep paying" contradict). The regulation the page cites resolves it: 685.205(b)(9) lists "a period of up to 60 days necessary for the Secretary to collect and process documentation supporting the borrower's request for a deferment, forbearance ... Interest that accrues during this period is not capitalized" as an administrative forbearance granted without borrower documentation. "Keep paying until approved" itself is not in the closed fact list (it comes from the approved brief's answer line), so it should be framed as the safe default, not a rule.
+ FIX Takeaway S1 -> "If you hold federal Direct Loans and cannot make payments right now, ask your servicer for the deferment whose test you meet and send the documents. Keep making scheduled payments if you can until it confirms approval." and add (Types or Forbearance section) "If you cannot pay while your request is processed, the forbearance rule lets the Secretary grant up to 60 days of forbearance for processing deferment paperwork, and interest that accrues in that period is not capitalized, but 685.205(b) says this is a circumstance the Secretary may grant, so ask your servicer whether it applies." Apply the same "if you can" softening to intro S1, step 5, FAQ 1 and the last sentence. (New fact: 685.205(b)(9); verified in /tmp/f205.txt.) Needs fact-list addition before regeneration/fix.
+
+S5 [GATE Links, hard fail] Unlinked first mentions of agencies.
+ Quotes: (a) intro p2 "the U.S. Department of Education regulation title 34 ..." (the claim-checker removed the studentaid.gov link as an implied claim, leaving the agency unlinked). (b) step 4 "or Peace Corps service" (first mention; also repeated in the table and bullets).
+ Defect: both are organizations named in prose with no link on first occurrence. Linking a name does not carry a claim, so the checker's deletion was over-broad.
+ FIX (a) -> "the [U.S. Department of Education](https://www.ed.gov/) regulation" (add https://www.ed.gov/ to allowed-urls.txt; https://studentaid.gov/ is already allowed and is the Department's Federal Student Aid office if the editor prefers it). FIX (b) -> "[Peace Corps](https://www.peacecorps.gov/) service" (add to allowed-urls.txt). I could not fetch either site from this sandbox; confirm the URLs resolve before adding.
+ Programs, advisory not block: "Supplemental Security Income" (https://www.ssa.gov/ssi/) and "Food Stamps" (now SNAP; the regulation still uses the old name, consider "Food Stamps (now the Supplemental Nutrition Assistance Program)").
+
+S6 [sourceSupport, inconsistent treatment of the same claim] "subsidized loan charges no interest".
+ Quotes: "A subsidized loan charges you no interest during a deferment" (interest section); "in deferment a subsidized loan owes no interest" (forbearance section); table "Subsidized: none owed"; Takeaway "A subsidized loan costs you no interest during deferment"; FAQ 5 "charges no interest on subsidized loans".
+ Defect: the cited regulation says only that installments of principal and interest "need not be paid". The claim-checker already ruled in this run (faqs[2]) that "SOURCE says subsidized interest need not be paid by borrower, not that none accrues", and kept "you do not pay it". The other five places still use the stronger wording the closed fact list does not carry. It is true in practice (the statute has the government pay it) but not supported by the listed sources.
+ FIX use the one supported wording everywhere: "you do not pay interest on a subsidized loan during deferment" / table "Subsidized: you do not pay interest" / "A subsidized loan does not add interest to what you pay during deferment".
+
+S7 [page self-reference] Tee-up.
+ Quote: "At ModernWallet, we write plain-language money guides, and this one is built from the federal deferment regulation and our own interest calculation."
+ Defect: "this one" mentions the page itself. Also "The rules below come from..." in the next paragraph is acceptable.
+ FIX -> "At ModernWallet, we write plain-language money guides from the federal deferment regulation and our own interest calculation."
+
+S8 [GATE Overloaded sentence, >30 words] (89 sentences, S/M/L = 12/23/54; no 10-run single band, no 5-consecutive-within-3: those two tests PASS)
+ 1. "A borrower in default cannot get a deferment until they make payment arrangements satisfactory to the Secretary of Education, and our guide on what happens if you don't pay your student loans explains default." (34) -> "A borrower in default cannot get a deferment until they make payment arrangements satisfactory to the Secretary of Education. Our guide on [what happens if you don't pay your student loans](...) explains default."
+ 2. "You qualify by showing you are eligible for unemployment benefits, or by giving a written certification that you registered with a public or private employment agency, if one is available within 50 miles." (33) -> "You qualify in one of two ways. Show you are eligible for unemployment benefits, or give a written certification that you registered with a public or private employment agency, if one is available within 50 miles." (use a 2-item list)
+ 3. "In our internal calculation, we modeled simple interest on four hypothetical unsubsidized balances over 6, 12 and 36 months, with no payments and all accrued interest added to the principal at the end." (33) -> "In our internal calculation, we modeled simple interest on four hypothetical unsubsidized balances over 6, 12 and 36 months. The model assumes no payments and adds all accrued interest to the principal at the end."
+ 4. "For those same loans, forbearance granted for poor health or other acceptable reasons, under paragraph (a)(1) of the forbearance rule in section 685.205, is capped at nine months within a 24-month period." (32) -> "For those same loans, the forbearance rule in section 685.205 caps forbearance for poor health or other acceptable reasons (paragraph (a)(1)) at nine months within a 24-month period."
+ 5. Takeaway S1 (32) - rewritten in S4.
+ 6. "For loans disbursed before July 1, 2027, unemployment and economic hardship deferments each cap at three years in total, and economic hardship is granted up to one year at a time." (31, FAQ 2) -> split at "and".
+ Also 30-word borderlines: intro S1 (30, three imperatives; acceptable as one idea), "Before you use that time, compare ... and read our guide on ..." (30).
+
+S9 [Decision-evidence section 4, packet] evidence.json counterexample is a placeholder.
+ Quote: evidence/student-loan-deferment/evidence.json "counterexample": "see page tables". Fix: state the case where deferment is not the answer or the benefit disappears (unsubsidized balance capitalizes: $30,000 at 7.99 percent grows to $37,191 in 36 months; loans disbursed on or after July 1, 2027 have no unemployment or economic hardship deferment; defaulted loans ineligible). Packet-only edit.
+
+=============== ADVISORY (record, do not block) ===============
+A1 "Read the capitalization notice." The regulation says the Secretary "provides information, including an example" at or before the grant; "notice" is the writer's word. Suggest "Read the capitalization information the Secretary provides."
+A2 "Tools for this journey" shows only the Student Loan Wage Garnishment Calculator. It is a default-stage tool and tangential to a deferment request (a borrower seeking deferment is not yet garnished). Consider the /student-loan-... repayment calculators instead if one exists.
+A3 Calc rounding: $30,000 x 7.99% x 6/12 = $1,198.50 exactly. calc.py's f"{i:,.0f}" rounds half to even and prints $1,198; a reader using ordinary rounding gets $1,199. The page's "reproduce any row" promise is off by $1 in that one cell (also its 6-month sum with the 12-month $2,397). Round half up, or show cents, or note "rounded to the nearest dollar".
+A4 FAQ 3 "gathers $1,950 of interest" - wrong collocation, use "accrues".
+A5 Table "Length of each grant: Up to one year" for forbearance does not say it applies to loans disbursed before July 1, 2027 or to non-(a)(1) grounds, while the next row gives the nine-month cap. Add "(otherwise)" to avoid an apparent conflict.
+A6 Takeaway "Before you use that time, compare the student loan standard repayment plan ..." - "that time" refers back two sentences (backward pronoun). Replace with "Before you use up that three-year total,".
+A7 "Our answer rests on the regulation text as read on October 28, 2026." A dated method sentence in body prose; allowed as accurate source attribution, not a byline. Keep.
+A8 Step 1 only routes Direct Loans; FFEL and Perkins loan holders (the regulation's (a)(5) and (g)(2)(i) mention them) are not told what to do. Add one sentence or link types-of-student-loans.
+A9 Same inherited footer as the retirement page (em-dash disclaimer; "never affects our rankings" neutrality sentence). Site-wide; record for the human.
+A10 Internal links: all 5 in-body routes resolve (types-of-student-loans, what-happens-if-you-dont-pay-your-student-loans, student-loan-standard-repayment-plan, student-loan-forgiveness-programs, should-you-refinance-student-loans) plus /student-loan-wage-garnishment-calculator/. The brief's /budget/ link is unused; acceptable (at least 3 used).
+A11 Generator flag "emptied by the claim check [5 sections]" is stale: all 5 sections are populated in the final draft. Verified.
+
+=============== GATE TABLE ===============
+Mechanical: title 52 chars PASS, description 156 chars PASS, headings Title Case PASS, dashes in draft 0 PASS, markdown links only, no raw HTML PASS.
+Depth: 1,983 words vs floor 1,200 PASS.
+Register operator; page type explainer/guide how-to recorded PASS.
+Reader question "How do I defer my student loans?": answered in intro S1 and section 1 steps PASS (mechanism: servicer, documents, wait for approval). Section 1 also names default and private-loan exclusions.
+Tee-up: sentence 2, names ModernWallet PASS (wording S7). Opening sentence 30 words, one coherent instruction: PASS (advisory).
+Experience truth: PASS. TESTED/testing: PASS - none claimed; "We did not test any servicer's process or survey borrowers" is a negative disclosure; model labelled "no measured results behind it"; "internal calculation" with the formula and an example computation beside the table (inspectable).
+Takeaway vs opening answer vs tables vs FAQ: agree on action and conditions, except S4 (keep paying vs cannot pay) and S6.
+Who this is not for: private loans, defaulted loans PASS. What would change our answer: regulation text or July 1, 2027 date change PASS.
+Byline in body: PASS. Neutrality (grep list): PASS. Disclaimer: footer at bottom PASS.
+Links: FAIL (S5).
+Anti-AI: single-instance bans FAIL only on S7 (self-reference) and S8 (overloaded). No honest/inflated/coy-abstraction/antithesis found.
+Schema/dates: Article datePublished = dateModified = 2026-10-28; visible Updated October 28, 2026; FAQPage 5 Qs match; no noindex PASS.
+Layout: 3 tables inside div.table-wrap (overflow-x:auto per guides/[slug].astro) PASS (structural check only; no device screenshot).

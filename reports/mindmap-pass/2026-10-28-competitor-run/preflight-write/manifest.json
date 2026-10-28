@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "root": "/home/user/modernwallet",
+  "phase": "write",
+  "instructions": [
+    ".claude/commands/mindmap-pass/phase-3-new-content.md"
+  ],
+  "files": {
+    ".claude/commands/_decision-evidence.md": "68f548505eb463f3a7a8bbef0733fddf96d98d75cf075a9deb648a907e709123",
+    ".claude/commands/_testing-labels.md": "8a9dc3c646a583d7afe80339efb880be431a9f528e491ef0ea156bee4db053d9",
+    ".claude/commands/_content-standard.md": "0e00ec2e288910d6291f8f243eccc769f598cb031d965aa99a9205be6aeb1be7",
+    ".claude/commands/_anti-ai-language.md": "ed445917525883e8693405dc363833e4aa3c4ff8b23875f23bdee31aaf6292dd",
+    ".claude/commands/_experience.md": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+    ".claude/commands/_workflow-checkpoints.md": "24f187f4a168ecfd32759a2fc7a1929f93f6bb125d1b8cb41dc5b2b5531bfb8d",
+    ".claude/commands/_rendered-page-audit.md": "388cd4ebdfde5d3a8a7736bf720349a6d833f587da969808796b57fe0b140d95",
+    ".claude/commands/mindmap-pass/phase-3-new-content.md": "2156dcd3e89b07c24ea175a4f06b4dde3c7a5960dc9fdb89b7556bedd739694c"
+  },
+  "parts": [
+    {
+      "path": "part-001.txt",
+      "sha256": "7d5206f98a78e20b2e32df9ec4b3ea707249d5de16b7771500dc6869bc4144ca"
+    },
+    {
+      "path": "part-002.txt",
+      "sha256": "a75cfaa782a40d84762e73206d1b261f7296b881ca3f1bb8d1485314f6f15038"
+    }
+  ],
+  "delivered": [
+    1,
+    2
+  ],
+  "actor": "main-agent",
+  "reused": [
+    ".claude/commands/_decision-evidence.md",
+    ".claude/commands/_testing-labels.md",
+    ".claude/commands/_content-standard.md",
+    ".claude/commands/_anti-ai-language.md",
+    ".claude/commands/_experience.md",
+    ".claude/commands/_workflow-checkpoints.md",
+    ".claude/commands/_rendered-page-audit.md"
+  ],
+  "reuse": {
+    "directory": "reports/mindmap-pass/2026-10-28-competitor-run/preflight-build",
+    "sha256": "323fadcd141871201dc87cdb8587fcf40fa7345d89092c73bafd239e0ed02956"
+  }
+}

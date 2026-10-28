@@ -1,0 +1,12 @@
+balance $10,000 rate 6.50% months 6: accrued interest $325; balance if all capitalized $10,325
+balance $10,000 rate 6.50% months 12: accrued interest $650; balance if all capitalized $10,650
+balance $10,000 rate 6.50% months 36: accrued interest $1,950; balance if all capitalized $11,950
+balance $30,000 rate 6.50% months 6: accrued interest $975; balance if all capitalized $30,975
+balance $30,000 rate 6.50% months 12: accrued interest $1,950; balance if all capitalized $31,950
+balance $30,000 rate 6.50% months 36: accrued interest $5,850; balance if all capitalized $35,850
+balance $30,000 rate 7.99% months 6: accrued interest $1,199; balance if all capitalized $31,199
+balance $30,000 rate 7.99% months 12: accrued interest $2,397; balance if all capitalized $32,397
+balance $30,000 rate 7.99% months 36: accrued interest $7,191; balance if all capitalized $37,191
+balance $60,000 rate 7.99% months 6: accrued interest $2,397; balance if all capitalized $62,397
+balance $60,000 rate 7.99% months 12: accrued interest $4,794; balance if all capitalized $64,794
+balance $60,000 rate 7.99% months 36: accrued interest $14,382; balance if all capitalized $74,382

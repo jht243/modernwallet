@@ -31,6 +31,162 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── mindmap-pass 2026-10-28 (competitor): student-loan-deferment ──
+  {
+    "updated": "2026-10-28",
+    "slug": "student-loan-deferment",
+    "title": "How to Get a Student Loan Deferment on Federal Loans",
+    "metaDescription": "Student loan deferment pauses federal Direct Loan payments. See how to request it, who qualifies, how interest grows, and the rule for loans from July 2027.",
+    "h1": "How to Get a Student Loan Deferment",
+    "cardBlurb": "To defer federal student loans, ask your servicer for the deferment you qualify for, send the documents it requests, and keep making scheduled payments if you can until it confirms approval.",
+    "introText": "To get a student loan deferment, ask your loan servicer for the specific deferment you qualify for and send the documents it asks for. At ModernWallet, we write plain-language money guides from the federal deferment regulation and our own interest calculation. Keep making scheduled payments if you can until your servicer confirms approval. On a subsidized loan, you do not have to pay principal or interest installments during deferment, while on an unsubsidized loan the interest keeps accruing.\n\nThe rules below come from the [U.S. Department of Education](https://www.ed.gov/) regulation [title 34, section 685.204 of the Code of Federal Regulations (CFR)](https://www.ecfr.gov/current/title-34/part-685/section-685.204), which covers deferment in the Direct Loan Program. They do not cover private loans; private lenders set their own terms. If you have a private loan, ask that lender what pause it offers.\n\nDeferment options also depend on when each loan was disbursed. Loans disbursed on or after July 1, 2027 cannot get an unemployment or economic hardship deferment, so the date on each loan decides which options you have. If you are unsure which kind of loan you hold, start with our guide to [types of student loans](/guides/types-of-student-loans/).",
+    "sections": [
+      {
+        "heading": "How to Request a Student Loan Deferment",
+        "body": "You request a federal student loan deferment from your loan servicer, and every type except an automatic in-school deferment requires you to ask for it and send proof. Follow these steps in order:\n\n1. Make sure each loan is a federal Direct Loan, using our guide to [types of student loans](/guides/types-of-student-loans/). The deferment regulation covers Direct Subsidized, Direct Unsubsidized and PLUS loans, plus the consolidation loans built from them.\n2. Make sure no loan is in default. A borrower in default cannot get a deferment until they make payment arrangements satisfactory to the Secretary of Education. Our guide on [what happens if you don't pay your student loans](/guides/what-happens-if-you-dont-pay-your-student-loans/) explains default.\n3. Pick the deferment that fits your situation: in-school, unemployment, economic hardship, or one of the other types the regulation names.\n4. Ask your servicer for that deferment and send the documents it requests. For unemployment, that means evidence you qualify for unemployment benefits or a written certification about your job search. For economic hardship, that means proof of public assistance, your full-time income, or [Peace Corps](https://www.peacecorps.gov/) service.\n5. Keep making scheduled payments if you can until the servicer confirms the deferment is approved. If you cannot pay while your request is processed, ask your servicer whether it will grant up to 60 days of forbearance to process your paperwork. Interest that accrues during that period is not capitalized.\n6. Read the capitalization information the Secretary provides. The Secretary must explain how capitalization affects your loan at or before the time the deferment is granted.\n\nAn unemployment deferment can reach back in time. The first period may begin up to six months before your servicer receives the request, and it can be granted for up to six months after that date. Each approval stops at six months after the date you give your evidence or certification, so you ask again for each further period, up to the three-year total.\n\nIn-school deferment is the one type the regulation allows to be processed automatically. If yours does not start on its own while you are enrolled at least half time, ask your servicer for it like any other type."
+      },
+      {
+        "heading": "Types of Federal Deferment",
+        "body": "The federal regulation gives each deferment its own eligibility test and time limit. The three in the table below cover borrowers who are in school, out of work, or earning very little.\n\n| Deferment | Who qualifies | Maximum length |\n| --- | --- | --- |\n| In-school | Enrolled for at least half the normal full-time workload for your course of study (most medical internships and residencies do not count) | As long as you carry that workload |\n| Unemployment (loans disbursed before July 1, 2027) | Seeking full-time work and unable to find it | Three years in total across requests; each request can cover up to six months after you apply, and the first can also reach back six months |\n| Economic hardship (loans disbursed before July 1, 2027) | Receiving public assistance, working full-time on a low income, serving in the Peace Corps, or already having an FFEL or Perkins economic hardship deferment for the same period | Three years in total, granted up to one year at a time |\n\nFor the unemployment deferment, full-time employment means at least 30 hours a week in a job expected to last at least three months. You qualify in one of two ways. Show you are eligible for unemployment benefits, or give a written certification that you registered with a public or private employment agency, if one is available within 50 miles. For every request after the first, the certification must also show at least six diligent attempts to find full-time work during the previous six months.\n\nYou can qualify for unemployment deferment whether or not you held a job before. The regulation does not allow the deferment if you refuse to seek or accept work because you feel overqualified for it.\n\nYou can qualify for the economic hardship deferment in any of these ways:\n\n- You receive a federal or state public assistance payment, such as Supplemental Security Income, Food Stamps or state general public assistance.\n- You work full-time and your monthly income does not exceed the greater of the federal minimum wage rate or 150 percent of the poverty guideline for your family size.\n- You serve as a Peace Corps volunteer.\n- You already received an economic hardship deferment on a Federal Family Education Loan (FFEL) Program or Federal Perkins Loan for the same period.\n\nThe regulation also names graduate fellowship, rehabilitation training, military service and post-active duty student deferments. Their rules sit in [section 685.204](https://www.ecfr.gov/current/title-34/part-685/section-685.204)."
+      },
+      {
+        "heading": "What Happens to Interest During a Student Loan Deferment",
+        "body": "You do not pay interest on a subsidized loan during a deferment, while an unsubsidized or PLUS loan keeps accruing interest that is either capitalized or paid by you. Capitalized interest is added to your principal, so the balance you repay after the deferment is larger than the balance you paused.\n\nIn our internal calculation, we modeled simple interest on four hypothetical unsubsidized balances over 6, 12 and 36 months. The model assumes no payments and adds all accrued interest to the principal at the end. The balances and rates are examples we picked. They do not describe any real borrower's loan.\n\n| Hypothetical balance and rate | 6 months | 12 months | 36 months | Balance after 36 months |\n| --- | --- | --- | --- | --- |\n| $10,000 at 6.50% | $325 | $650 | $1,950 | $11,950 |\n| $30,000 at 6.50% | $975 | $1,950 | $5,850 | $35,850 |\n| $30,000 at 7.99% | $1,199 | $2,397 | $7,191 | $37,191 |\n| $60,000 at 7.99% | $2,397 | $4,794 | $14,382 | $74,382 |\n\nYou can reproduce any row with the simple-interest formula: balance × annual rate × months ÷ 12. For $30,000 at 6.50 percent over 12 months, that is $30,000 × 0.065 × 12 ÷ 12 = $1,950.\n\nThe table shows how much an unsubsidized balance grows during a pause. It is a model with no measured results behind it, and your servicer applies your loan's actual rate and capitalization rules."
+      },
+      {
+        "heading": "Rules for Loans Disbursed from July 1, 2027",
+        "body": "Federal loans disbursed on or after July 1, 2027 cannot receive an unemployment deferment or an economic hardship deferment under the current regulation. For those same loans, the [forbearance rule in section 685.205](https://www.ecfr.gov/current/title-34/part-685/section-685.205) caps forbearance for poor health or other acceptable reasons (paragraph (a)(1)) at nine months within a 24-month period.\n\nLoans disbursed before July 1, 2027 keep the older limits in the same regulation: up to three years of unemployment deferment and up to three years of economic hardship deferment. The cutoff follows the disbursement date of each loan. If you borrowed across several years, ask your servicer for the disbursement date of every loan before you pick a pause.\n\nOur answer rests on the regulation text as read on October 28, 2026. If the Department of Education changes that text or moves the July 1, 2027 cutoff, the deferment options on your loans change too."
+      },
+      {
+        "heading": "Student Loan Deferment Versus Forbearance",
+        "body": "Deferment and forbearance both pause or shrink federal loan payments. In forbearance any interest that is forborne is capitalized, while in deferment you do not pay interest on a subsidized loan. The table compares the two under the federal regulations.\n\n| Feature | Deferment | Forbearance |\n| --- | --- | --- |\n| What changes | Principal payments pause on all covered loans; interest payments also pause on subsidized loans | Payments stop, the time to pay is extended, or smaller payments are accepted |\n| Interest | Subsidized: you do not pay interest. Unsubsidized and PLUS: accrues and is capitalized or paid by you | Forborne interest is capitalized |\n| Length of each grant | Up to one year at a time for economic hardship | Up to one year (otherwise) |\n| Total limit | Three years each for unemployment and economic hardship (loans disbursed before July 1, 2027) | Nine months in 24 for (a)(1) forbearance on loans disbursed from July 1, 2027 |\n| How to get it | Request plus documents; in-school can be automatic | Request with sufficient documentation and an intent to repay |\n\nThe regulation lists poor health or other acceptable reasons as one ground. A separate ground covers up to three years when your monthly loan payments equal 20 percent or more of your total monthly gross income.\n\nOn a subsidized loan, you do not pay interest during a deferment. On an unsubsidized loan, interest grows during either pause, so use the interest table above to size the cost before you choose."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "If you hold federal Direct Loans and cannot make payments right now, ask your servicer for the deferment whose test you meet and send the documents. Keep making scheduled payments if you can until it confirms approval. This recommendation rests on the regulation text plus our own interest calculation. We did not test any servicer's process or survey borrowers.\n\nThe cost depends on the loan type. You do not pay interest on a subsidized loan during deferment, and an unsubsidized loan grows by the simple interest shown in our table. Loans disbursed from July 1, 2027 lose the unemployment and economic hardship options entirely.\n\nThis advice does not fit two groups. If your loans are private, the lender sets its own terms, so ask that lender what pause it offers. If a federal loan is in default, you need payment arrangements satisfactory to the Secretary before any deferment is possible.\n\nUnemployment and economic hardship deferments each stop at three years in total. Before you use up that three-year total, compare the [student loan standard repayment plan](/guides/student-loan-standard-repayment-plan/) and our list of [student loan forgiveness programs](/guides/student-loan-forgiveness-programs/). Also read our guide on [whether to refinance student loans](/guides/should-you-refinance-student-loans/).\n\nCall your servicer today, name the student loan deferment you qualify for, and keep making scheduled payments if you can until it confirms approval."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/student-loan-wage-garnishment-calculator/",
+        "label": "Student loan wage garnishment calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I get a student loan deferment?",
+        "answer": "Ask your federal loan servicer for the specific deferment you qualify for and send the documents it requests. Only in-school deferments can be processed automatically. Keep making scheduled payments if you can until the servicer confirms approval, or ask whether up to 60 days of processing forbearance applies. A loan in default is not eligible until you make payment arrangements satisfactory to the Secretary of Education."
+      },
+      {
+        "question": "How long does a student loan deferment last?",
+        "answer": "The length depends on the type. For loans disbursed before July 1, 2027, unemployment and economic hardship deferments each cap at three years in total. Economic hardship is granted up to one year at a time. In-school deferment lasts while you carry at least half the normal full-time workload."
+      },
+      {
+        "question": "Does interest accrue during deferment?",
+        "answer": "Interest accrues on unsubsidized and PLUS loans, while on subsidized loans you do not pay it during deferment. On Direct Subsidized loans, you do not pay principal or interest during deferment. On Direct Unsubsidized and PLUS loans, interest accrues and is capitalized or paid by you. In our hypothetical example, $30,000 at 6.50 percent accrues $1,950 of interest in 12 months."
+      },
+      {
+        "question": "Can I defer my student loans because I am unemployed?",
+        "answer": "Yes, if your federal loan was disbursed before July 1, 2027 and you are seeking but unable to find full-time work of at least 30 hours a week. You need evidence of eligibility for unemployment benefits or a written certification that you registered with an employment agency, and the total limit is three years. Loans disbursed on or after July 1, 2027 cannot get this deferment."
+      },
+      {
+        "question": "What is the difference between deferment and forbearance?",
+        "answer": "Deferment pauses payments, and you do not pay interest on subsidized loans during it, while forbearance stops, extends or reduces payments and capitalizes any forborne interest. Forbearance is granted up to one year at a time. For loans disbursed from July 1, 2027, forbearance for poor health or similar reasons is capped at nine months within a 24-month period."
+      }
+    ],
+    "sources": [
+      {
+        "label": "eCFR: 34 CFR 685.204, Deferment",
+        "url": "https://www.ecfr.gov/current/title-34/part-685/section-685.204"
+      },
+      {
+        "label": "eCFR: 34 CFR 685.205, Forbearance",
+        "url": "https://www.ecfr.gov/current/title-34/part-685/section-685.205"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-10-28 (competitor): average-retirement-savings-by-age ──
+  {
+    "updated": "2026-10-28",
+    "slug": "average-retirement-savings-by-age",
+    "title": "Average Retirement Savings by Age for Families in 2025",
+    "metaDescription": "Average retirement savings by age runs from $48,400 under 35 to $670,200 at 55 to 64, per the Federal Reserve. All-ages median: $106,000.",
+    "h1": "What Is the Average Retirement Savings by Age?",
+    "cardBlurb": "Families with an individual retirement account or workplace plan average $48,400 under age 35 and $670,200 at ages 55 to 64, while the all-ages median is $106,000.",
+    "introText": "The average retirement savings by age runs from $48,400 for families under 35 to $670,200 for families aged 55 to 64, according to the [Federal Reserve](https://www.federalreserve.gov/publications/files/scf26.pdf). At ModernWallet, we publish free retirement calculators, and we calculated the percent changes by age from the Federal Reserve's own table. These figures cover families with an individual retirement account (IRA) or workplace plan. Across all ages, the median family with a retirement account holds $106,000, far below the all-ages average of $451,100. \n\nThe numbers come from the 2025 [Survey of Consumer Finances](https://www.federalreserve.gov/econres/scfindex.htm) (SCF). The Federal Reserve published them in October 2026 in a report titled \"Changes in U.S. Family Finances from 2022 to 2025.\" The by-age averages cover families whose reference person is aged 64 or younger and who hold an IRA or a defined contribution (DC) plan, such as a 401(k).",
+    "sections": [
+      {
+        "heading": "Average Retirement Savings by Age in 2025",
+        "body": "The average retirement savings by age in 2025 ranges from $48,400 for families under 35 to $670,200 for families aged 55 to 64. These are mean balances, in 2025 dollars, from Table A of the Federal Reserve's 2025 report. They count only families with an IRA or a DC plan whose reference person is 64 or younger. The Federal Reserve uses that age limit to capture families who generally have not retired.\n\n| Age group | 2016 | 2019 | 2022 | 2025 | Change, 2022 to 2025 |\n| --- | --- | --- | --- | --- | --- |\n| Under 35 | $43,800 | $38,300 | $53,800 | $48,400 | Down 10.0% |\n| 35 to 44 | $135,200 | $167,500 | $154,800 | $182,400 | Up 17.8% |\n| 45 to 54 | $291,300 | $323,100 | $342,700 | $415,800 | Up 21.3% |\n| 55 to 64 | $504,800 | $518,200 | $588,500 | $670,200 | Up 13.9% |\n\nThe change column is our calculation from the Federal Reserve's published means. The report states that it restates dollar amounts in 2025 dollars unless noted, so these means are in 2025 dollars and the changes are inflation-adjusted. Every figure in the table is a mean, so a few very large balances pull each one upward.\n\nThe survey counts IRAs and certain employer-sponsored accounts, such as 401(k), 403(b) and thrift savings accounts, as retirement accounts. Table A reports one combined balance per family across those accounts. These combined figures are the closest match this release gives for average 401(k) savings by age.\n\nThe Federal Reserve does not publish median balances by age in this release. It reports that median values rose for every age group between 2022 and 2025, then marks the by-age medians as \"not shown.\" For any single age group, the table tells you the average and nothing about the middle family."
+      },
+      {
+        "heading": "Median Retirement Savings vs. the Average",
+        "body": "The median retirement savings for all ages is $106,000 among families that hold a retirement account, while the mean is $451,100. In our internal calculation, the mean is 4.26 times the median ($451,100 divided by $106,000). The average describes a family far better off than the middle family.\n\nThe median is the middle balance: half of families with an account hold more, and half hold less. The mean adds up every balance and divides by the number of families, so a few very large balances lift it. Across all ages, a family sitting right at the $451,100 average holds more than the typical saver. This release does not show whether the same holds within each age group.\n\nThe 4.26 ratio applies to all ages together. The Federal Reserve does not publish by-age medians in this release, so the same ratio cannot be worked out for your age group. The all-ages gap shows that a few very large balances pull the average above the median.\n\nBoth figures grew from 2022 to 2025. After adjusting for inflation, the Federal Reserve reports the median rose 11 percent, from $95,200 to $106,000, while the mean rose 23 percent, from $365,700 to $451,100. In 2022 the mean was 3.84 times the median ($365,700 divided by $95,200), so the gap between average and typical widened over those three years."
+      },
+      {
+        "heading": "Share of Families with a Retirement Account",
+        "body": "About 55 percent of U.S. families held a retirement account in 2025, with the Federal Reserve putting the share at 54.9 percent, up from 54.3 percent in 2022. The balances in the table describe only those families. Families with no account are left out of both the averages and the $106,000 median.\n\nAmong families aged 64 or younger, 65.1 percent took part in some retirement plan in 2025, counting IRAs, DC plans and defined benefit pensions. That is up from 64.4 percent in 2022.\n\nThe Federal Reserve breaks participation down further for families aged 64 or younger:\n\n- About 70 percent of families aged 45 to 64 participated in a retirement plan.\n- About 66 percent of families aged 35 to 44 participated.\n- Around 50 percent of the youngest families had a DC plan or IRA, up from 42 percent in 2016.\n- Around 65 percent of the oldest families in that range had a DC plan or IRA.\n\nThese shares change how you read the table. The $48,400 under-35 average describes roughly half of young families, the half that holds an account."
+      },
+      {
+        "heading": "How the Average Retirement Savings by Age Changed from 2022 to 2025",
+        "body": "Average balances rose for every age group from 2022 to 2025 except the youngest, whose average fell 10.0 percent. In our internal calculation, we compared each group's 2022 and 2025 means from Table A and divided the change by the 2022 figure. The Federal Reserve itself reports that average combined balances increased for all age groups except the youngest.\n\n- Under 35: $53,800 to $48,400, a drop of $5,400, or 10.0 percent.\n- 35 to 44: $154,800 to $182,400, a gain of $27,600, or 17.8 percent.\n- 45 to 54: $342,700 to $415,800, a gain of $73,100, or 21.3 percent.\n- 55 to 64: $588,500 to $670,200, a gain of $81,700, or 13.9 percent.\n\nYou can check any line with Table A in the [Federal Reserve report](https://www.federalreserve.gov/publications/files/scf26.pdf). Subtract the 2022 mean from the 2025 mean, then divide by the 2022 mean. The Federal Reserve reports dollar amounts in 2025 dollars, so these changes already account for inflation.\n\nWe also divided each group's 2025 mean by the next-younger group's mean:\n\n- 35 to 44 versus under 35: 3.77 times.\n- 45 to 54 versus 35 to 44: 2.28 times.\n- 55 to 64 versus 45 to 54: 1.61 times.\n\nThe largest multiple between neighboring groups sits between the under-35 and 35 to 44 groups.\n\nThe longer record shows the youngest group moving both ways. Its average was $43,800 in 2016, $38,300 in 2019, $53,800 in 2022 and $48,400 in 2025. The 45 to 54 and 55 to 64 averages rose in every survey shown."
+      },
+      {
+        "heading": "What the Numbers Leave Out",
+        "body": "The Federal Reserve averages describe IRA and DC plan balances for families aged 64 or younger, and several parts of a retirement picture fall outside them. Read the table with these limits in mind:\n\n- Ages 65 and older: Table A stops at 64, and this release gives no by-age figure for families 65 and older.\n- Social Security and pensions: the balances cover IRAs and DC plans only, so Social Security and defined benefit pension values are not part of them.\n- Families instead of individuals: the survey measures families, so each figure is a combined balance for the family.\n- Account holders only: families without an IRA or DC plan do not appear.\n- Inflation: the Federal Reserve restates all dollar amounts in 2025 dollars, so earlier survey years are already adjusted.\n- Needs: the figures say nothing about what balance you need.\n\nFor age-based savings targets, see our guide on [how much you need to retire by age](/guides/how-much-do-i-need-to-retire-by-age/). If you also track a health savings account (HSA), our guide to the [average HSA balance by age](/guides/average-hsa-balance-by-age/) covers those balances."
+      },
+      {
+        "heading": "What to Do If You Are Below Average",
+        "body": "A balance below the average for your age group may still match what a typical saver of that age holds. This release does not show the by-age medians. The better test is your balance against a target built from your own numbers. These steps get you there:\n\n1. Enter your current balance, age and monthly savings into our [retirement savings calculator](/retirement/retirement-savings-calculator/) to see where your current pace leads.\n2. If you have a 401(k), try higher contribution rates in our [401(k) calculator](/retirement/401k-calculator/) and compare the projected balances.\n3. Look up how much more you can add this year in the [2026 401(k) contribution limits](/guides/401k-contribution-limits-2026/) and [2026 IRA contribution limits](/guides/ira-contribution-limits-2026/) guides.\n4. Set the calculator result against the age-based targets in our retirement-needs guide linked above.\n\nIf you are under 35, keep in mind that around half of families your age had a DC plan or IRA at all. Among under-35 families that hold an IRA or DC plan, the average was $48,400 in 2025, down from $53,800 in 2022."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "Among families aged 64 or younger with an IRA or DC plan, the average balance rises from $48,400 under 35 to $670,200 at 55 to 64. Across all ages, the mean of $451,100 is 4.26 times the $106,000 median, so the average describes a better-off family than the typical saver. Our basis is the Federal Reserve's reported figures plus our own division, and we did not survey or test anyone.\n\nThe comparison fits an adult aged 64 or younger who holds an IRA, 401(k) or similar plan and wants a peer benchmark. It does not fit anyone aged 65 or older, because this release has no figure for that age. If that is you, start with our [retirement income calculator](/retirement/retirement-income-calculator/). It also does not fit anyone setting a savings target, who should start from the [retirement-needs guide](/guides/how-much-do-i-need-to-retire-by-age/). If the Federal Reserve publishes median balances by age, the median for your age group would replace the average as the better peer comparison.\n\nNext, enter your own balance, age and monthly savings in our [retirement savings calculator](/retirement/retirement-savings-calculator/), then set the projected result against the averages above and your own target."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/retirement/retirement-savings-calculator/",
+        "label": "Retirement savings calculator"
+      },
+      {
+        "href": "/retirement/401k-calculator/",
+        "label": "401(k) calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the average retirement savings by age?",
+        "answer": "Among families with an IRA or DC plan, 2025 averages are $48,400 under 35, $182,400 at 35 to 44, $415,800 at 45 to 54 and $670,200 at 55 to 64. These Federal Reserve figures cover families whose reference person is 64 or younger."
+      },
+      {
+        "question": "What is the median retirement savings for all ages?",
+        "answer": "The median retirement savings for all ages is $106,000 among families that hold a retirement account, up 11 percent after inflation from $95,200 in 2022. The Federal Reserve does not publish median balances by age group in this release."
+      },
+      {
+        "question": "Why is the average so much higher than the median?",
+        "answer": "The average is higher because a few very large balances pull it up, while the median is the middle balance. Across all ages, the $451,100 mean is 4.26 times the $106,000 median, so across all ages a family near the average holds more than the typical saver."
+      },
+      {
+        "question": "How many families have a retirement account?",
+        "answer": "About 55 percent of families held a retirement account in 2025, at 54.9 percent, up from 54.3 percent in 2022. Among families aged 64 or younger, 65.1 percent took part in some retirement plan when defined benefit pensions are counted."
+      },
+      {
+        "question": "Does this include Social Security?",
+        "answer": "No. The Federal Reserve averages count IRA and DC plan balances only, so Social Security and defined benefit pension values are not included. For a target that reflects your full retirement picture, see our guide on [how much you need to retire by age](/guides/how-much-do-i-need-to-retire-by-age/)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Federal Reserve: Changes in U.S. Family Finances from 2022 to 2025 (SCF)",
+        "url": "https://www.federalreserve.gov/publications/files/scf26.pdf"
+      },
+      {
+        "label": "Federal Reserve: Survey of Consumer Finances",
+        "url": "https://www.federalreserve.gov/econres/scfindex.htm"
+      }
+    ]
+  },
   // ── x-trends-mindmap-auto 2026-10-28: adoption-credit-carryforward-refund ──
   {
     "updated": "2026-10-28",

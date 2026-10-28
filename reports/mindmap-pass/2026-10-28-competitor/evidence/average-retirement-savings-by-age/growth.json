@@ -1,0 +1,9 @@
+{
+  "originRoutine": "competitor-monitor-auto",
+  "queryFamily": "average retirement savings by age",
+  "hypothesis": "dedicated page earns clicks for the query family",
+  "primaryMetric": "Google clicks",
+  "baseline": "not-yet-published; age-matched comparator pages",
+  "status": "local-only",
+  "gsc": "unavailable"
+}

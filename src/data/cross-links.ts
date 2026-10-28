@@ -129,6 +129,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
   // X-trends pass (2026-10-20).
   "student-loan-wage-garnishment-calculator": [
     { href: "/guides/what-happens-if-you-dont-pay-your-student-loans/", label: "What happens if you don't pay your student loans" },
+    { href: "/guides/student-loan-deferment/", label: "Not in default yet? How to defer your student loans" },
     { href: "/calculators/", label: "All calculators" },
   ],
   // Mindmap pass (2026-10-25).

@@ -1,0 +1,12 @@
+group,2022,2025,change_pct,ratio_to_prev_group_2025
+Under 35,53.8,48.4,-10.0,-
+35-44,154.8,182.4,17.8,3.77
+45-54,342.7,415.8,21.3,2.28
+55-64,588.5,670.2,13.9,1.61
+all conditional median change % 11.3 mean change % 23.4
+mean/median gap 2025: 4.26 x
+2022 mean/median ratio: 3.84
+Under 35 dollar change 2022->2025 (thousands): -5.4
+35-44 dollar change 2022->2025 (thousands): 27.6
+45-54 dollar change 2022->2025 (thousands): 73.1
+55-64 dollar change 2022->2025 (thousands): 81.7

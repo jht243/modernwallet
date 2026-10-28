@@ -1,0 +1,113 @@
+{
+  "reviewer": "phase4-reviewer",
+  "snapshotSha256": "5d51c201e864d43598dc8060729154e6af36d92ad704b386e622fc466396a099",
+  "snapshotFileSha256": "7f7c007e0852deee62274f184be063f4b18ff3afd9f59e50e9b1acbc8eedd746",
+  "note": "r4. snapshotSha256 = canonical digest inside rendered-snapshot.json; snapshotFileSha256 = raw file sha256. Student loan guide and garnishment calculator PASS; retirement guide FAILS renderedLayout on literal ** in six bullets.",
+  "routes": [
+    {
+      "path": "/guides/average-retirement-savings-by-age/",
+      "fingerprint": "3924c06c277d4ad02b0a3d9bc3fbb25e566daa043f65e9ffe7618a1c0cb14194",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Full rendered text re-read (1,869 body words). Needs paragraph repeat removed (paragraph now starts 'For age-based savings targets, see our guide...'); tee-up is sentence 2; answer, table, takeaway, FAQs agree; 65+ and savings-target readers get next steps; closing sentence is the calculator next action. Rhythm: 106 sentences S/M/L 14/29/63, no 10-run single band, no 5 within 3 words."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "All 16 Table A cells, 54.9/54.3, 65.1/64.4, 70/66/50/42/65, median 95.2->106.0 and mean 365.7->451.1 (Table 3, 2025 dollars), report dated October 2026, report-wide 2025-dollar restatement (p.2 note 4, Appendix A) re-verified against /tmp/scf26.txt; calc.py rerun identical to output.txt; ratios and percent changes recomputed."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing claim or markup; financial services excluded by _experience.md section G; attribution is calculation, with formula and check steps beside the first finding. Quotes: 'we calculated the percent changes by age from the Federal Reserve's own table', 'In our internal calculation, the mean is 4.26 times the median ($451,100 divided by $106,000)', 'we did not survey or test anyone'."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Article datePublished=dateModified=2026-10-28, visible 'Updated October 28, 2026'; FAQPage 5 Qs match visible FAQ; Person author; citations to both Federal Reserve URLs; title 54 and description 137 chars; self canonical; no noindex."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Federal Reserve and Survey of Consumer Finances linked at first mention; only the two allowed external hrefs; internal hrefs resolve (retirement savings calculator, 401k calculator, retirement income calculator, retirement-needs guide, HSA guide, 401k and IRA limits 2026). Inbound from /guides/ index card."
+        },
+        "renderedLayout": {
+          "status": "FAIL",
+          "evidence": "In 'What the Numbers Leave Out' the six bullet labels render as literal asterisks: dist HTML has <li>**Ages 65 and older:** Table A stops at 64...</li> (12 literal '**' on the page, 0 <strong>). src/lib/richtext.ts renders only links, lists and tables, not bold, so the reader sees '**Ages 65 and older:**'. Student loan page has 0. Table is in div.table-wrap overflow-x:auto; list/bullet markup otherwise correct. Structural check only; no device screenshot."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Financial-services exclusion from TESTED honored; no medical content; operator register; neutrality grep empty; autocomplete-only demand recorded."
+        }
+      }
+    },
+    {
+      "path": "/guides/student-loan-deferment/",
+      "fingerprint": "ab0dfd3a515d5b6e69fa8cc8cba92c5d894be276ee190472f16e21672bbe974c",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Full rendered text re-read (2,146 body words). Intro: S1 answer, S2 tee-up, S3 'Keep making scheduled payments if you can until your servicer confirms approval.' (antecedent fixed). 60-day processing forbearance resolves the cannot-pay case; takeaway, tables, FAQs agree; private-loan and default exclusions with next steps; closing next action. Rhythm: 102 sentences S/M/L 13/29/60, no monotone run."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Checked against /tmp/ecfr204.txt and /tmp/f205.txt: 685.204(a)(1)-(5), (b), (f)(1)-(4), (g)(1)-(2) four routes, 685.205(a)(1), (a)(6), (b)(9), (c)(1)(i)-(ii); July 1, 2027 cutoffs; three-year collective limits; nine months in 24; 30 hours/three months; 50 miles; six attempts; default rule. Interest table recomputed half-up ($1,199 for $30,000 at 7.99% over 6 months); calc.py rerun identical."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing claim or markup; financial services excluded by _experience.md section G; attribution is calculation, with formula and check steps beside the first finding. Quotes: 'In our internal calculation, we modeled simple interest on four hypothetical unsubsidized balances', 'examples we picked', 'a model with no measured results behind it', 'We did not test any servicer's process or survey borrowers'."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Article datePublished=dateModified=2026-10-28, visible 'Updated October 28, 2026'; FAQPage 5 Qs match; citations to both eCFR URLs; title 52 and description 156 chars; self canonical; no noindex."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "U.S. Department of Education -> https://www.ed.gov/, Peace Corps -> https://www.peacecorps.gov/ at first mention (both on allowed-urls.txt; 403 from this sandbox, unverified); eCFR 685.204 and 685.205 linked; internal guides and the garnishment calculator resolve. Inbound from /guides/ card and the garnishment pill."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "No literal '**' or ' - ' artifacts in dist; economic hardship list is four <li>; 3 tables in div.table-wrap overflow-x:auto. Structural check only; no device screenshot."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Financial-services exclusion from TESTED honored; no medical content; private and default exclusions stated; neutrality grep empty."
+        }
+      }
+    },
+    {
+      "path": "/student-loan-wage-garnishment-calculator/",
+      "fingerprint": "fb4e22caca77380a2f5137c816b0615a7d9fa3422a1b428b30c196c4c0a677a0",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "One pill added: 'Not in default yet? How to defer your student loans' -> /guides/student-loan-deferment/; label matches the guide (default borrowers ineligible until arrangements) and the page's audience; inherited default-stage text does not contradict."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "No new factual claim; inherited 15%, 20 U.S.C. 1095a, 31 CFR 285.4 and 65-day statements unchanged and not relied on by the link."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing or attribution claim added or touched."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Visible 'Updated October 28, 2026' and JSON-LD dateModified 2026-10-28 match manifest expectedUpdatedDate; link edit and date bump ship together (calculators.ts diff is only this entry). Template derives datePublished from `updated` (advisory)."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New href /guides/student-loan-deferment/ resolves; existing links unchanged; no noindex."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Pill uses existing class='pill' markup; structural check only."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "cross-links.ts adds one entry for this route only; calculators.ts changes only this route's `updated`; no other route changes."
+        }
+      }
+    }
+  ]
+}
