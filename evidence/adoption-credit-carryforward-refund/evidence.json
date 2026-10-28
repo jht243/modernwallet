@@ -7,26 +7,78 @@
   "method": "No test or model. Basis is reported IRS guidance read in full on 2026-10-28, plus synthesis into a who-must-act decision path.",
   "provenance": {
     "basis": "reported",
-    "supportingRecordIds": ["IRS-IR-2026-123", "IRS-QA-carryforward", "IRS-adoption-credit-page"],
+    "supportingRecordIds": [
+      "IRS-IR-2026-123",
+      "IRS-QA-carryforward",
+      "IRS-adoption-credit-page"
+    ],
     "scopeAndLimits": "Page restates and organizes IRS statements. No refund amounts are computed because the IRS publishes no formula for how much of a carryforward becomes refundable.",
     "publicMethod": "Sources linked in-line and in the Sources list.",
     "placement": "Third-person attribution to the IRS beside each finding; Takeaway section names the IRS announcement and questions and answers as the basis."
   },
   "sources": [
-    {"id":"IRS-IR-2026-123","url":"https://www.irs.gov/newsroom/irs-has-begun-issuing-automatic-refunds-to-individuals-who-claimed-adoption-tax-credit-carryforward-from-prior-years","checked":"2026-10-28"},
-    {"id":"IRS-QA-carryforward","url":"https://www.irs.gov/faqs/questions-and-answers-about-adoption-tax-credit-carryforward","checked":"2026-10-28"},
-    {"id":"IRS-adoption-credit-page","url":"https://www.irs.gov/credits-deductions/individuals/adoption-credit","checked":"2026-10-28"}
+    {
+      "id": "IRS-IR-2026-123",
+      "url": "https://www.irs.gov/newsroom/irs-has-begun-issuing-automatic-refunds-to-individuals-who-claimed-adoption-tax-credit-carryforward-from-prior-years",
+      "checked": "2026-10-28"
+    },
+    {
+      "id": "IRS-QA-carryforward",
+      "url": "https://www.irs.gov/faqs/questions-and-answers-about-adoption-tax-credit-carryforward",
+      "checked": "2026-10-28"
+    },
+    {
+      "id": "IRS-adoption-credit-page",
+      "url": "https://www.irs.gov/credits-deductions/individuals/adoption-credit",
+      "checked": "2026-10-28"
+    },
+    {
+      "id": "IRS-form-8839",
+      "url": "https://www.irs.gov/forms-pubs/about-form-8839",
+      "checked": "2026-10-28"
+    },
+    {
+      "id": "IRS-online-account",
+      "url": "https://www.irs.gov/individuals/online-account",
+      "checked": "2026-10-28"
+    }
   ],
   "findings": [
-    {"claim":"2020-2024 carryforwards can raise the 2025 refundable amount, up to $5,000 per eligible child","label":"reported","source":"IRS-QA-carryforward"},
-    {"claim":"No amended return is needed; filers who filed before 2026-04-15 generally get it automatically","label":"reported","source":"IRS-IR-2026-123"},
-    {"claim":"Where's My Refund will not show the adjustment","label":"reported","source":"IRS-QA-carryforward"},
-    {"claim":"2026 refundable cap is $5,120 per child; the 2025 treatment does not carry into 2026","label":"reported","source":"IRS-adoption-credit-page, IRS-QA-carryforward"},
-    {"claim":"Refund amount for any given family","label":"unknown","source":"IRS publishes no formula"}
+    {
+      "claim": "2020-2024 carryforwards can raise the 2025 refundable amount, up to $5,000 per eligible child",
+      "label": "reported",
+      "source": "IRS-QA-carryforward"
+    },
+    {
+      "claim": "No amended return is needed; filers who filed before 2026-04-15 generally get it automatically",
+      "label": "reported",
+      "source": "IRS-IR-2026-123"
+    },
+    {
+      "claim": "Where's My Refund will not show the adjustment",
+      "label": "reported",
+      "source": "IRS-QA-carryforward"
+    },
+    {
+      "claim": "2026 refundable cap is $5,120 per child; the 2025 treatment does not carry into 2026",
+      "label": "reported",
+      "source": "IRS-adoption-credit-page, IRS-QA-carryforward"
+    },
+    {
+      "claim": "Refund amount for any given family",
+      "label": "unknown",
+      "source": "IRS publishes no formula"
+    }
   ],
   "counterexample": "Extension filers, accounts with identity theft indicators/freezes/dependency conflicts, filers who never claimed the credit, and filers whose refund is offset against other debts do not simply receive $5,000 per child automatically.",
-  "exclusions": ["No TESTED format: tax guidance is a financial/professional-service topic outside _experience.md section G; no executed tests exist.", "No client-conversation claims."],
-  "unknowns": ["Per-family refund amount", "2025 maximum credit and phaseout (not on the pages read)"],
+  "exclusions": [
+    "No TESTED format: tax guidance is a financial/professional-service topic outside _experience.md section G; no executed tests exist.",
+    "No client-conversation claims."
+  ],
+  "unknowns": [
+    "Per-family refund amount",
+    "2025 maximum credit and phaseout (not on the pages read)"
+  ],
   "whatWouldChangeTheRecommendation": "A revised IRS announcement, a change to the $5,000 cap, or an IRS statement that extension filers must act.",
   "selectedMedium": "text with one small comparison table (2025 adjustment vs 2026 rule); no calculator because no published formula supports one",
   "testingLabel": "ordinary presentation (TESTED excluded; reason above)",

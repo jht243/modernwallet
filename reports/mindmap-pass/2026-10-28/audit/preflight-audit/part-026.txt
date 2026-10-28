@@ -1,0 +1,72 @@
+.claude/commands/mindmap-pass/phase-4-audit.md — characters 9000 onward
+
+sole errors; the site build passes and the route rendered ✓/✗
+- Print-to-PDF (if the tool prints): only the output, white page, title + Name/Date + directions, not bunched at the top ✓/✗
+- The page prose describes the tool that was built (labels, steps, defaults, worked example match the code) ✓/✗
+Fix in place per the remediation ladder; after two failed rework attempts, stop the workflow and escalate with unresolved findings. Preserve unrelated work and do not commit, push or publish.
+
+**For other non-article format rows (`template`, `comparison table/database`, `glossary/reference`, `data report`):** Phase 3 produced a spec file, not prose. Audit the spec — not the placeholder route — against this checklist:
+- Spec file exists at `reports/mindmap-pass/specs/<slug>-spec.md` ✓/✗
+- Target route is named ✓/✗
+- Format is named with a rationale tied to the cluster's query signals ✓/✗
+- What the asset does is described in enough detail to build it (column schema for tables; data sources for reports; sections for templates) ✓/✗
+- Primary and secondary keywords are listed ✓/✗
+- Technical dependencies are noted (components needed, data required, etc.) ✓/✗
+- A placeholder exists at the target route (if the framework expects a route file) ✓/✗
+A spec that passes all seven points is a **PASS** — the human builds the asset in a follow-up; that is by design. Missing items are hard-fail rework.
+
+**For `article` format rows — and for `comparison table/database` rows that Phase 3 generated as REAL pages (a `<slug>.meta.json` exists):** apply the standard checklist below. A generated comparison is a page, not a spec: audit its comparison table, its verdict, and its objectivity (the business is never the auto-winner).
+
+**API-generated pages (the normal case — see `_content-generation.md`):** hand the auditor the run's **closed fact list(s)** (`reports/mindmap-pass/<TODAY>/prompts/<slug>.prompt.md`) and **`allowed-urls.txt`** alongside the drafts, plus each draft's `meta.guards`. An auditor working from a trimmed fact set will flag TRUE sourced facts as fabrication. Before acting on any "unsupported claim" finding, verify it against the source; keep confirmed facts, cut only what no source supports. Findings are actionable only with the exact quoted text; fixes follow the remediation ladder (mechanical in place first).
+
+---
+
+<!-- CRON_PROMPT_START -->
+<!-- mindmap-visible-checks-cron-v1 -->
+Show the approval chart only after all applicable preparation passes independent chart review under `_workflow-checkpoints.md`. Show one aggregate Preparation check row: Passed with linked evidence, or Failed with only the specific failures and approval blocked; keep the full checklist in the linked report. No incomplete status cells. Every new-page action requires its complete, matching actual per-page brief inline in BOTH saved and displayed approval charts under `_workflow-checkpoints.md`; missing briefs block presentation. Writing, content audit, internal-link changes and publication stay in the future execution plan until approved; never pre-certify their results.
+<!-- /mindmap-visible-checks-cron-v1 -->
+
+<!-- workflow-checkpoint-cron-v1 -->
+**Required before executing this content phase:** Follow `.claude/commands/_workflow-checkpoints.md` in the active repository. Complete the phase-specific `workflow-preflight.py` chunk delivery and freshness check. Existing independent chart/Phase 4 audits must record rule-by-rule artifact evidence for local exclusions, provenance, visible attribution, intent takeaways, testing labels and applicable growth/visual checks. Follow `_rendered-page-audit.md`: finish central research before preparation Passed; independently audit the complete rendered decision path after template/affiliate/link changes; verify the exact reviewed render live using `rendered-audit.py` and close deployment/measurement records. A read-only reviewer may write internal receipts. A loader receipt or worker assertion is not a review PASS. Preserve the sole Phase 0 human gate.
+<!-- /workflow-checkpoint-cron-v1 -->
+
+Make sure all article pages meet metadata length requirements (title/description), follow FAQ JSON, schema.org, and have good internal linking.
+
+**FAIL — heading not in Title Case.** Every H1 and section heading (H2/H3) must use Title Case: the first letter of each major word is capitalized. If any heading has a major word starting lowercase — e.g. `"Who Spark fits, and who should look elsewhere"`, `"Spark pros and cons"` — set fail with note `heading-case: [the heading]`. The fix is a one-field capitalization (capitalize the major words; keep minor words a/an/the/and/or/nor/but/for/to/of/in/on/at/by/with/from/vs/via/per lowercase unless first or last; preserve acronyms and brand casing like AI, API, SEO, GPT-5, iOS exactly — never lowercase them). FAQ `question` fields are exempt (they are questions, keep sentence casing).
+
+**FAIL — byline/date in body prose.** Reviewer byline + review date belong in the header/byline area + JSON-LD schema, never in body content. If any prose field (intro, sections, verdict, callouts, FAQ answers) contains a reviewer/author attribution or review-date sentence — e.g. "Reviewed by …", "Last updated …", "on [date]", "We research using …", "[Name], Founder of …" — set fail with note "byline-in-body: [field/heading]". Fix: delete it from prose and rely on the record's date fields + the template/schema byline.
+
+---
+
+## Advisory notes (record, do NOT block publication)
+
+These are NON-BLOCKING observations the reviewer records for the run summary. Do NOT set fail for any of them. The reviewer continues to auto-continue exactly as today.
+
+- **Low Information Gain** — if a section reads like conventional wisdom with no original example, case-specific insight, or non-obvious implication, note: "low information gain: [section heading]".
+- **AEO gap** — if a major section's opening sentence is a rhetorical question or transition phrase ("In this section…") rather than a self-contained declarative claim, note: "AEO: [section heading] does not open with a direct claim".
+- **Missed long-tail opportunity** (NOT a quota) — only if the page targeted broad head terms while ignoring a clearly relevant question-format query that had no stronger alternative and would have fit naturally, note: "missed long-tail: [topic]". Do NOT note this merely because a page lacks question-format headings/FAQs — a page already well-targeted to stronger keywords is correct as-is.
+- **Authorship missing** — if a YMYL page (compliance, finance, medical, legal) has Organization-only author, no Person JSON-LD, or no `reviewer`/`lastReviewed` in schema, note: "authorship: [missing element]". (The visible byline belongs in the header + schema — do NOT expect or reward a "reviewed by" line in body prose; that is a FAIL, see above.)
+- **Missing external link** — if the page names a clickable external entity that this project does NOT auto-link (a niche/newer tool, a specific company, a named law/standard, a cited study/dataset, or the source behind a statistic) without a link to its official primary source on first mention, note: "external link: [entity/source]". Do NOT flag entities the project auto-links at render time (common models/IDEs/AI-labs/benchmarks) — those stay plain text in the source.
+- **Not task-complete** — if the page redirects out (or thin-wraps an external link) without first answering the reader's intent on-page, or cites an aggregator instead of the first-party source, note: "task-complete: [issue]".
+
+A page with any/all of these notes and no hard-fail issues still passes audit.
+
+---
+
+---
+
+## ‼️ SELF-SERVING DISCLAIMER GATE — blocks the phase (MANDATORY — added 2026-08-21)
+
+**Never write a sentence asserting our own neutrality, independence, or lack of a financial interest.** This is a hard fail, not a style note. Strip every instance before the page ships.
+
+Banned constructions (non-exhaustive — judge by intent, not exact wording):
+- "Layer3 Labs does not resell / resells none of / does not refer / does not partner with…"
+- "We take no referral fee / no commission / no kickback from…"
+- "This ranking is independent." / "A note on objectivity:" / "Layer3 Labs is vendor-neutral."
+- "No paid placement" / "No sponsored placement" / "We don't take payment to be listed" / "Our rankings are editorial, not paid" — the site sells paid placements, so any claim it doesn't is false.
+- "We run our own repositories on this stack, so this is written from the position of someone who has to live with the choice."
+- Any variant that asks the reader to trust our motives rather than showing our reasoning.
+
+**Why this is a hard fail, on two independent grounds:**
+
+1. **It is frequently FALSE.** This repo auto-inserts `rel="sponsored"` affiliate links via the `ENTITY_LINKS` registry in `src/utils/sectionContent.tsx`. Any entity there with `sponsored: true` (Cursor, ElevenLabs, Murf, Apollo.io, Instantly.ai, Dext, Nutshell, Pinecone, Netlify, RunPod, Ca

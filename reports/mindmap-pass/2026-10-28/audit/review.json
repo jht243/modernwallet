@@ -1,0 +1,76 @@
+{
+  "reviewer": "phase4-reviewer",
+  "snapshotSha256": "e1b9c347d47421ba88b963ecbca47455c3e6dbfcc89bf34e4697821de75aee31",
+  "routes": [
+    {
+      "path": "/guides/adoption-credit-carryforward-refund/",
+      "fingerprint": "c5658dd1f9ca818da8d83a900cea26961cf987f81e1034a79c140ec9b4e6c4d0",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Re-read fresh build. All 7 fixes verified in built text: intro sentence 2 split (\"adjust your account itself. Any adoption tax credit refund comes without an amended return.\"); Treasury linked; H2 \"Will the IRS Refund an Unused Adoption Credit Carryforward?\"; cleft split; restatement removed; Takeaway S1 split. Opening, section 1, table, FAQs and Takeaway still agree with conditions kept. Rhythm re-measured: 115 sentences S15/M36/L64, no 10-run, no 5-within-3; only 30-word item is a list bullet (Form 5695/3800), advisory."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Edited text restates only F1-F17: line 8 of the worksheet (F12), \"points to three groups\" is framed as a reading, Treasury fact F3, no new numbers. Prose words 1,820 vs 1,200 floor (explainer). Treasury link is org homepage (HTTP 200)."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "Reporter register, 0 we/our/us in entry prose; basis reported; TESTED off, no testing text or schema in built HTML; forbiddenText absent."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Built HTML: visible Updated October 28, 2026; Article datePublished 2026-10-28, dateModified 2026-10-28; FAQPage unchanged; canonical correct; disclaimer only in footer. Em-dashes appear only in global footer chrome, none in entry."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Built anchor <a href=\"https://home.treasury.gov/\">U.S. Department of the Treasury</a> on first mention; IRS, IR-2026-123, Q&A, Form 8839, Online Account linked at first mention; no raw HTML; no noindex. Forms/tools unlinked remain advisory."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Table still real <table> in overflow-x .table-wrap; lists render as ul/ol; heading order intact; Title Case verified on new H2."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "git diff of src/data/guides.ts contains only the 7 approved edits plus 2 advisory edits in this entry and the tax-brackets sentence; TESTED excluded (outside section G)."
+        }
+      }
+    },
+    {
+      "path": "/guides/2026-tax-brackets/",
+      "fingerprint": "06692ba896f2070f103b12912e6acdf6df0595fd397cce1458ac9d790f9324c0",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Built paragraph reads \"Credits sit outside the brackets. The adoption credit, for example, has a 2025 refund adjustment, covered in our guide to the adoption tax credit refund for unused carryforwards.\" Natural, accurate, no contradiction with the section. Advisory: the paragraph now has 4 sentences (STYLE max 3); an optional paragraph break before \"Credits sit outside the brackets.\" fixes it, but STYLE paragraph length is not a listed hard-fail gate."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Claim matches F1/F4 and the destination guide; no new numbers."
+        },
+        "testingAndAttribution": {
+          "status": "NA",
+          "evidence": "Sentence adds no testing, modeling or analysis claim; no testing text in render."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Visible Updated October 28, 2026; Article dateModified 2026-10-28 >= datePublished 2026-10-28; canonical correct; date bump ships with the sentence."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Anchor href /guides/adoption-credit-carryforward-refund/ present in built HTML, route exists and is in sitemap; no noindex."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Single paragraph text change; no layout or structure change."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "git diff for this entry: only the sentence split and updated 2026-10-21 -> 2026-10-28."
+        }
+      }
+    }
+  ]
+}
