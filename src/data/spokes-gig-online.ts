@@ -28,7 +28,7 @@ export const GIG_ONLINE_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "rover-taxes",
-    updated: "2026-09-05",
+    updated: "2026-10-28",
     title: "Rover Taxes: Pet Sitter and Dog Walker Guide",
     metaDescription:
       "Rover taxes in 2026. Deduct Rover's service fee, supplies, mileage, and the space you board in — then see the self-employment tax you actually owe.",
@@ -92,7 +92,7 @@ export const GIG_ONLINE_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "twitch-taxes",
-    updated: "2026-10-09",
+    updated: "2026-10-28",
     title: "Twitch Taxes for Streamers (2026 Guide)",
     metaDescription:
       "Twitch taxes in 2026: royalties versus service income, the hobby-loss trap, and which streaming equipment you can deduct. See what you owe.",
@@ -156,7 +156,7 @@ export const GIG_ONLINE_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "upwork-taxes",
-    updated: "2026-10-09",
+    updated: "2026-10-28",
     title: "Upwork Taxes: What Freelancers Owe in 2026",
     metaDescription:
       "Upwork taxes for 2026. Your 1099-K reports gross contract value before Upwork's fee — deduct it, and see the self-employment tax on what is left.",
@@ -220,7 +220,7 @@ export const GIG_ONLINE_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "fiverr-taxes",
-    updated: "2026-09-05",
+    updated: "2026-10-28",
     title: "Fiverr Taxes: A Seller's Guide for 2026",
     metaDescription:
       "Fiverr taxes in 2026. Fiverr's 20% commission is deductible, the 1099-K threshold is $20,000 and 200 transactions, and tax starts at $400 of profit.",
@@ -284,7 +284,7 @@ export const GIG_ONLINE_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "etsy-taxes",
-    updated: "2026-09-05",
+    updated: "2026-10-28",
     title: "Etsy Taxes for Sellers: 1099-K and Deductions",
     metaDescription:
       "Etsy seller taxes in 2026. Deduct cost of goods, fees, and shipping; understand the $20,000 1099-K threshold and the hobby rule that can disallow losses.",

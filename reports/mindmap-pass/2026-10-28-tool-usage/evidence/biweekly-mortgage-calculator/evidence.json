@@ -1,0 +1,71 @@
+{
+ "route": "/biweekly-mortgage-calculator/",
+ "reader_question": "Is a biweekly mortgage payment worth it?",
+ "demand_source": "dataforseo biweekly mortgage calculator 1,900/mo KD 0",
+ "decision_gap": "Bank calculators show the saving but rarely the fee drag or the free 1/12-extra alternative.",
+ "sampled_alternatives": [
+  "bankrate.com",
+  "mortgagecalculator.org",
+  "keen.bank",
+  "provident.bank",
+  "rocketmortgage.com"
+ ],
+ "method": "calculated: amortize monthly (r/12), biweekly half-payments (r/26, 26 a year), monthly + 1/12 extra; fees = setup + per-payment \u00d7 biweekly payments",
+ "sources": [
+  {
+   "id": "amortization",
+   "text": "standard fixed-rate payment formula P = B\u00b7r/(1\u2212(1+r)^\u2212n), shown on page"
+  },
+  {
+   "id": "cfpb-prepay",
+   "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-prepayment-penalty-en-1957/",
+   "read": "2026-10-28"
+  }
+ ],
+ "assumptions": [
+  "servicer credits each half-payment when received",
+  "interest at APR \u00f7 26 per two-week period",
+  "principal and interest only"
+ ],
+ "commands": [
+  "python3 check.py > check.out.json",
+  "npx tsx ../xcheck.ts"
+ ],
+ "outputs": [
+  "check.out.json",
+  "../xcheck.out.txt"
+ ],
+ "findings": [
+  {
+   "label": "calculated",
+   "text": "$300,000 at 6.5% over 30 years: monthly $1,896.20, $382,633 interest; biweekly pays off in about 24.2 years with $294,512 interest, saving $88,122; adding $158 (1/12) a month saves $87,256 and pays off in 290 months."
+  },
+  {
+   "label": "calculated",
+   "text": "A $395 setup fee plus $2.50 per payment costs $1,965 over 628 payments; $9.95 per payment costs $6,249."
+  },
+  {
+   "label": "calculated",
+   "text": "Shorter loans save less: $150,000 at 6% with 10 years left saves $5,717 and finishes 1 year sooner."
+  }
+ ],
+ "counterexample": "At a 0% rate biweekly payments save no interest (they only finish sooner); a servicer that holds half-payments until a full payment builds up saves less than shown.",
+ "exclusions": [
+  "taxes, insurance, PMI",
+  "adjustable rates"
+ ],
+ "unknowns": [
+  "each servicer's crediting practice and fees"
+ ],
+ "would_change": "A prepayment penalty, plan fees near the interest saved, a short remaining term, or higher-rate debt elsewhere.",
+ "medium": "interactive tool \u2014 balance, rate and fees change the verdict",
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "check.out.json"
+  ],
+  "scopeAndLimits": "fixed-rate loans; servicer timing assumed",
+  "publicMethod": "howItWorks formula + example table",
+  "placement": "introText paragraph 1 and section 'How the Biweekly Mortgage Calculator Works'"
+ }
+}

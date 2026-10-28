@@ -1,0 +1,228 @@
+{
+ "scenarios": [
+  {
+   "balance": 300000,
+   "rate": 6.5,
+   "years_left": 30,
+   "setup_fee": 0,
+   "per_payment_fee": 0,
+   "payment": 1896.2,
+   "monthly": {
+    "payments": 360,
+    "years": 30.0,
+    "interest": 382633.47
+   },
+   "biweekly": {
+    "payments": 628,
+    "years": 24.154,
+    "interest": 294511.68
+   },
+   "extra_twelfth": {
+    "payments": 290,
+    "years": 24.167,
+    "interest": 295377.18
+   },
+   "biweekly_saved": 88121.79,
+   "extra_twelfth_saved": 87256.29,
+   "years_sooner": 5.846,
+   "fees": 0,
+   "net": 88121.79
+  },
+  {
+   "balance": 300000,
+   "rate": 6.5,
+   "years_left": 30,
+   "setup_fee": 395,
+   "per_payment_fee": 2.5,
+   "payment": 1896.2,
+   "monthly": {
+    "payments": 360,
+    "years": 30.0,
+    "interest": 382633.47
+   },
+   "biweekly": {
+    "payments": 628,
+    "years": 24.154,
+    "interest": 294511.68
+   },
+   "extra_twelfth": {
+    "payments": 290,
+    "years": 24.167,
+    "interest": 295377.18
+   },
+   "biweekly_saved": 88121.79,
+   "extra_twelfth_saved": 87256.29,
+   "years_sooner": 5.846,
+   "fees": 1965.0,
+   "net": 86156.79
+  },
+  {
+   "balance": 200000,
+   "rate": 4.0,
+   "years_left": 30,
+   "setup_fee": 0,
+   "per_payment_fee": 0,
+   "payment": 954.83,
+   "monthly": {
+    "payments": 360,
+    "years": 30.0,
+    "interest": 143739.01
+   },
+   "biweekly": {
+    "payments": 673,
+    "years": 25.885,
+    "interest": 121185.7
+   },
+   "extra_twelfth": {
+    "payments": 311,
+    "years": 25.917,
+    "interest": 121473.71
+   },
+   "biweekly_saved": 22553.31,
+   "extra_twelfth_saved": 22265.3,
+   "years_sooner": 4.115,
+   "fees": 0,
+   "net": 22553.31
+  },
+  {
+   "balance": 400000,
+   "rate": 7.0,
+   "years_left": 30,
+   "setup_fee": 0,
+   "per_payment_fee": 0,
+   "payment": 2661.21,
+   "monthly": {
+    "payments": 360,
+    "years": 30.0,
+    "interest": 558035.59
+   },
+   "biweekly": {
+    "payments": 617,
+    "years": 23.731,
+    "interest": 420185.03
+   },
+   "extra_twelfth": {
+    "payments": 285,
+    "years": 23.75,
+    "interest": 421469.64
+   },
+   "biweekly_saved": 137850.56,
+   "extra_twelfth_saved": 136565.95,
+   "years_sooner": 6.269,
+   "fees": 0,
+   "net": 137850.56
+  },
+  {
+   "balance": 250000,
+   "rate": 6.5,
+   "years_left": 15,
+   "setup_fee": 0,
+   "per_payment_fee": 0,
+   "payment": 2177.77,
+   "monthly": {
+    "payments": 180,
+    "years": 15.0,
+    "interest": 141998.31
+   },
+   "biweekly": {
+    "payments": 342,
+    "years": 13.154,
+    "interest": 122111.18
+   },
+   "extra_twelfth": {
+    "payments": 158,
+    "years": 13.167,
+    "interest": 122652.47
+   },
+   "biweekly_saved": 19887.13,
+   "extra_twelfth_saved": 19345.84,
+   "years_sooner": 1.846,
+   "fees": 0,
+   "net": 19887.13
+  },
+  {
+   "balance": 150000,
+   "rate": 6.0,
+   "years_left": 10,
+   "setup_fee": 0,
+   "per_payment_fee": 0,
+   "payment": 1665.31,
+   "monthly": {
+    "payments": 120,
+    "years": 10.0,
+    "interest": 49836.9
+   },
+   "biweekly": {
+    "payments": 234,
+    "years": 9.0,
+    "interest": 44119.82
+   },
+   "extra_twelfth": {
+    "payments": 108,
+    "years": 9.0,
+    "interest": 44381.26
+   },
+   "biweekly_saved": 5717.08,
+   "extra_twelfth_saved": 5455.64,
+   "years_sooner": 1.0,
+   "fees": 0,
+   "net": 5717.08
+  },
+  {
+   "balance": 300000,
+   "rate": 0.0,
+   "years_left": 30,
+   "setup_fee": 0,
+   "per_payment_fee": 0,
+   "payment": 833.33,
+   "monthly": {
+    "payments": 360,
+    "years": 30.0,
+    "interest": 0.0
+   },
+   "biweekly": {
+    "payments": 720,
+    "years": 27.692,
+    "interest": 0.0
+   },
+   "extra_twelfth": {
+    "payments": 333,
+    "years": 27.75,
+    "interest": 0.0
+   },
+   "biweekly_saved": 0.0,
+   "extra_twelfth_saved": 0.0,
+   "years_sooner": 2.308,
+   "fees": 0,
+   "net": 0.0
+  },
+  {
+   "balance": 300000,
+   "rate": 6.5,
+   "years_left": 30,
+   "setup_fee": 0,
+   "per_payment_fee": 9.95,
+   "payment": 1896.2,
+   "monthly": {
+    "payments": 360,
+    "years": 30.0,
+    "interest": 382633.47
+   },
+   "biweekly": {
+    "payments": 628,
+    "years": 24.154,
+    "interest": 294511.68
+   },
+   "extra_twelfth": {
+    "payments": 290,
+    "years": 24.167,
+    "interest": 295377.18
+   },
+   "biweekly_saved": 88121.79,
+   "extra_twelfth_saved": 87256.29,
+   "years_sooner": 5.846,
+   "fees": 6248.6,
+   "net": 81873.19
+  }
+ ]
+}

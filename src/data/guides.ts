@@ -16007,6 +16007,7 @@ export const GUIDES: Guide[] = [
   // register: operator · medium: text → text · page type: explainer/spoke (1200-word floor); teeup-exempt (opening sentence is already a direct-answer claim).
   {
     slug: "mortgage-amortization-schedule-excel-template",
+    updated: "2026-10-28",
     title: "Mortgage Amortization Schedule: Build It in Excel",
     metaDescription:
       "Build your own mortgage amortization schedule in Excel or Google Sheets. Learn the payment formula and the interest and principal split, step by step.",
@@ -16053,7 +16054,7 @@ export const GUIDES: Guide[] = [
       { question: "Can I model extra principal payments in this spreadsheet?", answer: "Yes, by adding an Extra Payment column and subtracting it from the Ending Balance formula each month, though the schedule then runs fewer than 360 rows and needs a formula that stops once the balance hits zero. Our [mortgage payoff calculator](/mortgage/payoff-calculator/) models extra payments without any spreadsheet work." },
       { question: "Is there a downloadable amortization schedule file I can just open?", answer: "No. This guide teaches the formulas so you can build a schedule for your own exact loan amount, rate, and term, since a generic downloadable file would not match your numbers. Prefer not to build one? The free [mortgage amortization schedule](/mortgage/amortization-schedule/) calculator generates your full schedule instantly online." },
       { question: "Does this formula work for an adjustable-rate mortgage?", answer: "Only between rate changes. An adjustable-rate mortgage (ARM) uses this exact formula for each fixed-rate period, but once the rate resets, you have to recalculate the payment using the loan's remaining balance, the new rate, and the remaining term as new inputs. A fixed-rate loan never needs that recalculation, which is one reason the formula is easiest to learn on a fixed-rate example first." },
-      { question: "Does a biweekly payment schedule use the same formula?", answer: "Not directly. Paying half your monthly payment every two weeks results in 26 half-payments a year, the equivalent of 13 full monthly payments instead of 12, which this formula does not account for on its own. Our [mortgage payoff calculator](/mortgage/payoff-calculator/) models a biweekly schedule and the extra payment it effectively adds each year." },
+      { question: "Does a biweekly payment schedule use the same formula?", answer: "Not directly. Paying half your monthly payment every two weeks results in 26 half-payments a year, the equivalent of 13 full monthly payments instead of 12, which this formula does not account for on its own. Our [biweekly mortgage calculator](/biweekly-mortgage-calculator/) models a biweekly schedule and the extra payment it effectively adds each year." },
     ],
     sources: [
       { label: "CFPB — How does paying down a mortgage work?", url: "https://www.consumerfinance.gov/ask-cfpb/how-does-paying-down-a-mortgage-work-en-1943/" },

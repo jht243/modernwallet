@@ -1,7 +1,8 @@
 import { useMemo, useState } from "react";
 import { computeSsTaxable, BASE_AMOUNT, ADJUSTED_BASE, type SsTaxableInput, type SsStatus } from "../lib/social-security-taxable";
 import { fmtUSD, fmtPct } from "../lib/format";
-import { Field, MoneyInput, Stat, S } from "./calc-ui";
+import { Field, MoneyInput, Stat, S, PRIMARY } from "./calc-ui";
+import ToolPicks, { book } from "./ToolPicks";
 
 // Taxable Social Security benefits island (tool-usage pass 2026-10-21). Filing status, the year's benefits,
 // other income and tax-exempt interest → provisional income and the taxable part of the benefits (IRS Pub 915
@@ -68,9 +69,31 @@ export default function SocialSecurityTaxableCalculator({ initialData, heading, 
             <Stat label="Benefits not taxed" value={fmtUSD(Math.max(0, v.benefits - r.taxable))} />
             <Stat label="Half of your benefits" value={fmtUSD(v.benefits / 2)} />
           </div>
+          <p style={S.hint}>
+            To estimate the tax, add this taxable amount to your other taxable income in the{" "}
+            <a href="/tax-bracket-calculator/" style={{ color: PRIMARY }}>tax bracket calculator</a>. If you are 65 or older, the{" "}
+            <a href="/guides/senior-deduction-social-security/" style={{ color: PRIMARY }}>$6,000 senior deduction</a> can lower that income.
+          </p>
           <div style={S.disclaimer}>
             Estimate only, following IRS Publication 915, Worksheet 1. The taxable part is added to your other income and taxed at your normal rates; this tool does not compute that tax. Leaves out adjustments such as student loan interest, the foreign earned income exclusion and lump-sum back payments for earlier years. The IRS worksheet in your tax software is the exact figure.
           </div>
+          <ToolPicks
+            tool="social-security-taxable-benefits-calculator"
+            heading="Further reading on how Social Security is taxed"
+            picks={
+              r.taxable > 0
+                ? [
+                    book("ssMadeSimple", "How benefits are taxed, plus the claiming choices that change it."),
+                    book("taxesMadeSimple", "How the taxable part of your benefits meets the tax brackets."),
+                    book("lasser2027", "A full guide for filing this year's return."),
+                    book("pfauGuidebook", "Planning withdrawals so less of your benefit is taxed."),
+                  ]
+                : [
+                    book("pfauGuidebook", "Keeping withdrawals below the threshold as your income changes."),
+                    book("ssMadeSimple", "How benefits and their taxation work."),
+                  ]
+            }
+          />
         </div>
       </div>
     </div>

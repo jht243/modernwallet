@@ -1,0 +1,169 @@
+{
+ "latest_month": [
+  2026,
+  9
+ ],
+ "cpi_latest": 336.94,
+ "cpi_sep_2025": 324.8,
+ "twelve_month_change_pct": 3.7377,
+ "scenarios": [
+  {
+   "salary": 52000,
+   "year": 2010,
+   "cpi_year": 218.056,
+   "adjusted": 80350.37,
+   "cumulative_pct": 54.52,
+   "years": 16.208,
+   "current": 78000,
+   "gap": -2350.37,
+   "gap_pct": -2.93,
+   "real_per_year_pct": -0.183,
+   "nominal_per_year_pct": 2.533,
+   "keep_pace_raise": 2915.39
+  },
+  {
+   "salary": 100000,
+   "year": 2000,
+   "cpi_year": 172.2,
+   "adjusted": 195667.83,
+   "cumulative_pct": 95.67,
+   "years": 26.208
+  },
+  {
+   "salary": 50000,
+   "year": 1996,
+   "cpi_year": 156.9,
+   "adjusted": 107374.12,
+   "cumulative_pct": 114.75,
+   "years": 30.208
+  },
+  {
+   "salary": 80000,
+   "year": 1990,
+   "cpi_year": 130.7,
+   "adjusted": 206237.18,
+   "cumulative_pct": 157.8,
+   "years": 36.208
+  },
+  {
+   "salary": 50000,
+   "year": 1990,
+   "cpi_year": 130.7,
+   "adjusted": 128898.24,
+   "cumulative_pct": 157.8,
+   "years": 36.208
+  },
+  {
+   "salary": 50000,
+   "year": 2000,
+   "cpi_year": 172.2,
+   "adjusted": 97833.91,
+   "cumulative_pct": 95.67,
+   "years": 26.208
+  },
+  {
+   "salary": 50000,
+   "year": 2010,
+   "cpi_year": 218.056,
+   "adjusted": 77259.97,
+   "cumulative_pct": 54.52,
+   "years": 16.208
+  },
+  {
+   "salary": 50000,
+   "year": 2020,
+   "cpi_year": 258.811,
+   "adjusted": 65093.83,
+   "cumulative_pct": 30.19,
+   "years": 6.208
+  },
+  {
+   "salary": 60000,
+   "year": 2020,
+   "cpi_year": 258.811,
+   "adjusted": 78112.6,
+   "cumulative_pct": 30.19,
+   "years": 6.208,
+   "current": 64000,
+   "gap": -14112.6,
+   "gap_pct": -18.07,
+   "real_per_year_pct": -3.159,
+   "nominal_per_year_pct": 1.045,
+   "keep_pace_raise": 2392.12
+  },
+  {
+   "salary": 40000,
+   "year": 2025,
+   "cpi_year": 321.943,
+   "adjusted": 41863.31,
+   "cumulative_pct": 4.66,
+   "years": 1.208,
+   "current": 41000,
+   "gap": -863.31,
+   "gap_pct": -2.06,
+   "real_per_year_pct": -1.71,
+   "nominal_per_year_pct": 2.065,
+   "keep_pace_raise": 1532.45
+  },
+  {
+   "salary": 1,
+   "year": 1913,
+   "cpi_year": 9.9,
+   "adjusted": 34.03,
+   "cumulative_pct": 3303.43,
+   "years": 113.208
+  }
+ ],
+ "counterexample": {
+  "salary": 60000,
+  "year": 2020,
+  "cpi_year": 258.811,
+  "adjusted": 78112.6,
+  "cumulative_pct": 30.19,
+  "years": 6.208,
+  "current": 64000,
+  "gap": -14112.6,
+  "gap_pct": -18.07,
+  "real_per_year_pct": -3.159,
+  "nominal_per_year_pct": 1.045,
+  "keep_pace_raise": 2392.12
+ },
+ "fifty_k_by_year": {
+  "1970": 434201,
+  "1980": 204454,
+  "1985": 156571,
+  "1995": 110545,
+  "2005": 86262,
+  "2015": 71079,
+  "2019": 65897,
+  "2022": 57566,
+  "2024": 53706
+ },
+ "year_over_year_pct": {
+  "1979": 11.3,
+  "1980": 13.5,
+  "1981": 10.3,
+  "2009": -0.4,
+  "2019": 1.8,
+  "2020": 1.2,
+  "2021": 4.7,
+  "2022": 8.0,
+  "2023": 4.1,
+  "2024": 2.9,
+  "2025": 2.6
+ },
+ "annual_cpi": {
+  "1970": 38.8,
+  "1980": 82.4,
+  "1985": 107.6,
+  "1995": 152.4,
+  "2005": 195.3,
+  "2008": 215.303,
+  "2009": 214.537,
+  "2015": 237.017,
+  "2019": 255.657,
+  "2021": 270.97,
+  "2022": 292.655,
+  "2024": 313.689
+ }
+}

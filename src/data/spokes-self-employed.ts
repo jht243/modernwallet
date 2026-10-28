@@ -57,7 +57,7 @@ export const SELF_EMPLOYED_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "1099-tax-calculator",
-    updated: "2026-09-05",
+    updated: "2026-10-28",
     title: "1099 Tax Calculator: What You'll Owe in 2026",
     metaDescription:
       "Free 1099 tax calculator using 2026 IRS rates. Enter your contractor income and expenses to see your self-employment tax, income tax, and quarterly payment.",
@@ -128,7 +128,7 @@ export const SELF_EMPLOYED_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "how-much-to-set-aside-for-taxes",
-    updated: "2026-09-05",
+    updated: "2026-10-28",
     title: "How Much to Set Aside for Taxes (1099, 2026)",
     metaDescription:
       "How much should you set aside for taxes on 1099 income? See the real percentage for your income — it is not 30% — with 2026 IRS self-employment tax rates.",

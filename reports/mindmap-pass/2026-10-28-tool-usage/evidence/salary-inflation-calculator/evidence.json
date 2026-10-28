@@ -1,0 +1,73 @@
+{
+ "route": "/salary-inflation-calculator/",
+ "reader_question": "How much should my salary go up with inflation?",
+ "demand_source": "dataforseo salary inflation calculator 3,600/mo KD 43 (research/volumes.json, 2026-10-28)",
+ "decision_gap": "Competing calculators return one adjusted amount; the reader also needs the comparison with today's pay and the raise that matches the latest price change.",
+ "sampled_alternatives": [
+  "bls.gov CPI calculator",
+  "calculatorsoup.com",
+  "calculator.net",
+  "usafacts.org",
+  "smartasset.com",
+  "in2013dollars.com"
+ ],
+ "method": "calculated: adjusted = salary \u00d7 CPI-U(Sep 2026) \u00f7 CPI-U(annual average of the year); gap and per-year real change; keep-pace raise = current \u00d7 12-month CPI-U change",
+ "sources": [
+  {
+   "id": "bls-cpiu",
+   "url": "https://data.bls.gov/timeseries/CUUR0000SA0",
+   "pulled": "2026-10-28",
+   "via": "BLS Public Data API v2",
+   "raw": "../inflation-calculator/cpi_*.json"
+  }
+ ],
+ "assumptions": [
+  "national CPI-U all items, not seasonally adjusted",
+  "annual average sits at mid-year",
+  "latest month September 2026 = 336.94",
+  "12-month change Sep 2025 324.8 \u2192 Sep 2026 336.94 = 3.74%"
+ ],
+ "commands": [
+  "python3 check.py > check.out.json",
+  "npx tsx ../xcheck.ts"
+ ],
+ "outputs": [
+  "check.out.json",
+  "../xcheck.out.txt"
+ ],
+ "findings": [
+  {
+   "label": "calculated",
+   "text": "$52,000 in 2010 = $80,350 in September 2026 dollars; a $78,000 salary is $2,350 (2.9%) behind, a real change of about -0.18% a year although pay rose about 2.5% a year."
+  },
+  {
+   "label": "calculated",
+   "text": "Matching the last 12 months of prices takes a raise of about 3.7% ($2,915 on $78,000)."
+  },
+  {
+   "label": "calculated",
+   "text": "$100,000 in 2000 = $195,668; $50,000 in 1996 = $107,374; $80,000 in 1990 = $206,237 (September 2026 dollars)."
+  }
+ ],
+ "counterexample": "$60,000 in 2020 \u2192 $64,000 now: a 6.7% nominal raise is 18.1% behind prices (adjusted $78,113).",
+ "exclusions": [
+  "taxes, benefits and bracket creep",
+  "local cost of living",
+  "CPI-W or chained CPI"
+ ],
+ "unknowns": [
+  "the reader's own price basket"
+ ],
+ "would_change": "A different index (CPI-W, chained CPI, regional CPI) or a newer CPI month changes the figures slightly.",
+ "medium": "interactive tool \u2014 the reader's two salaries and year change the answer",
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "bls-cpiu",
+   "check.out.json"
+  ],
+  "scopeAndLimits": "national CPI-U; Oct 2025 not published by BLS",
+  "publicMethod": "howItWorks section + tool footnote name the BLS series and formula",
+  "placement": "introText paragraph 1 and section 'How the Salary Inflation Calculator Works'"
+ }
+}

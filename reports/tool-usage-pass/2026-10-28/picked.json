@@ -1,0 +1,52 @@
+[
+ {
+  "tool": "trump-account",
+  "path": "/trump-account/",
+  "people": 95,
+  "uses": 99,
+  "views": 228,
+  "use_rate": 0.434,
+  "people_7d": 44,
+  "lane": "persona"
+ },
+ {
+  "tool": "social-security-taxable-benefits-calculator",
+  "path": "/social-security-taxable-benefits-calculator/",
+  "people": 30,
+  "uses": 32,
+  "views": 59,
+  "use_rate": 0.542,
+  "people_7d": 30,
+  "lane": "persona"
+ },
+ {
+  "tool": "self-employment-tax",
+  "path": "/self-employment-tax/how-much-to-set-aside-for-taxes/",
+  "people": 24,
+  "uses": 26,
+  "views": 84,
+  "use_rate": 0.31,
+  "people_7d": 14,
+  "lane": "persona"
+ },
+ {
+  "tool": "inflation-calculator",
+  "path": "/inflation-calculator/",
+  "people": 20,
+  "uses": 22,
+  "views": 45,
+  "use_rate": 0.489,
+  "people_7d": 11,
+  "lane": "persona"
+ },
+ {
+  "tool": "florida-amendment-3-calculator",
+  "path": "/florida-amendment-3-calculator/",
+  "people": 16,
+  "uses": 18,
+  "views": 46,
+  "use_rate": 0.391,
+  "people_7d": 12,
+  "lane": "persona"
+ }
+]

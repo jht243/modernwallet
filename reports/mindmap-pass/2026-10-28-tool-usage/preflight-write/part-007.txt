@@ -1,0 +1,65 @@
+.claude/commands/mindmap-pass/phase-5-body.md — characters 0 onward
+
+
+<!-- workflow-source-freshness-v1 -->
+**WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
+<!-- /workflow-source-freshness-v1 -->
+
+# Phase 5 — Body text updates
+
+<!-- workflow-checkpoints-v1 -->
+**Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
+<!-- /workflow-checkpoints-v1 -->
+
+
+<!-- intent-takeaway-v1 -->
+**Intent-based takeaway:** Read `_decision-evidence.md` in the active project's `.claude/commands/`, especially “Close with a takeaway that answers the page's intent.” Pass the planned conclusion, applicable reader/task, actual evidence basis and decision-changing condition into the existing writer brief. Reuse a sufficient verdict; preserve the no-addition branch and local exclusions. For global commands, resolve/install the sibling shared contract in the active project while preserving local rules.
+<!-- /intent-takeaway-v1 -->
+
+<!-- decision-evidence-v1 -->
+## Decision evidence before drafting
+
+Read and apply `.claude/commands/_decision-evidence.md` inside this phase, before assembling the writer prompt. Reuse the approved reader question, produce the strongest feasible evidence and counterexample, then select the presentation. Calculators remain an option, not a quota. Give the writer the evidence packet, including the supported provenance and its visible placement, with its closed facts; ask for explicit, natural phrasing at the relevant finding: “In our internal analysis/modeling/testing, we [specific action]…” matched to the evidence, followed by what we found and how readers can check the method or inputs. Merely naming the source of inputs is insufficient; preserve the existing API-writing, review and permission rules. Evidence labels take precedence over automatic TESTED-format eligibility: simulated/calculated data never licenses a firsthand-testing claim.
+<!-- /decision-evidence-v1 -->
+
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
+> **‼️ GOVERNING RULE — ENRICHMENT PROSE IS GENERATED BY THE API WRITER (2026-09-06).** This phase
+> adds to or rewrites parts of EXISTING pages. **Any reader-facing addition longer than ONE
+> sentence — an FAQ answer, a new section, body paragraphs, an answer block, an expansion, a
+> rewritten section or intro — is generated with `scripts/lib/content_gen.py section` per the
+> "Enrichment" chapter of `.claude/commands/_content-generation.md`, never written in-context.**
+> You still choose WHAT to add and WHERE, assemble the closed fact list + closed URL list, hand
+> the writer the page's CURRENT text, run the generator, then splice the verified draft in with a
+> targeted `Edit` (TS/JSON stores: one paragraph → one `content[]` string / the FAQ `answer`
+> field, no re-wording). Commit the `<slug>--<section-id>.md.meta.json` beside the draft. The
+> reviewer gate below audits the addition with the fact list beside it, exactly as before.
+> **Exempt (write in-context, `_anti-ai-language.md` still applies):** titles, descriptions, a
+> single clarifying sentence, an internal-link sentence, a number/date correction, alt text,
+> schema fields. Every instruction below that says "write", "draft", "add a section/answer" means
+> "generate it through the section command"; the prose rules below are the writer's system
+> prompt, not a licence to write the prose yourself.
+
+**Where the row carries `reader_question` / `answer` / `answer_placement` (cols 10–12), the added section IS that answer and goes in the named slot** — section 1 or 2, ahead of the page's existing scope/definition material, exactly as a new page would. Copy all three into the `section` command's row prompt. An enrichment that appends the answer to the bottom of a page whose opener still answers the wrong question has not done the job. Where the row has no question (a pure gap-fill), place the section where it reads best, as before.
+
+Act on every **body** row in the chart. Do NOT touch titles, meta descriptions, or H1s (that was Phase 2). Internal linking is handled separately in Phase 6 — do not add links here beyond what a body section naturally contains. `git add` your work but do NOT commit.
+
+
+## Content standard
+
+> **HOW TO LOAD (MANDATORY — this is the only sanctioned way).** Run:
+> `bash .claude/tools/load-standards.sh "<routine-name>" "<this-phase>"`
+> and treat its ENTIRE output as the standard. The script prints `_content-standard.md`, `_anti-ai-language.md`, and `_experience.md` in full and appends the load receipt to `reports/standards-ledger.jsonl` in the same action — reading and proving-you-read are one step, so never open the files another way. `git add reports/standards-ledger.jsonl` with the run. If the script or any file is missing, STOP and report it.
+
+**Load `.claude/commands/_content-standard.md` and apply it IN FULL.** It is the single source of truth for the medium gate, SEO and required page elements, depth floors, quality and sourcing, readability, voice and register, comparison, linking, the proprietary anchor, and neutrality. Start with its `## PREFLIGHT` section. There is no cherry-picking and no substituting your own standard.
+
+**Also load `.claude/commands/_experience.md`** — it defines who "we" are on this site and is the ONLY source a first-person experience claim may draw on. If it is missing or its `## DOMAIN` is empty, STOP.
+
+**Also load `.claude/commands/_anti-ai-language.md`** and apply its WRITER section; it outranks the content standard on any conflict.
+
+Anything inline below this block is superseded by the canonical files above.
+
+**Where the row carries `reader_questi

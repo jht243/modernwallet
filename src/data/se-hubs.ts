@@ -40,7 +40,7 @@ export const SELF_EMPLOYMENT_TAX_HUB: CalculatorDef = {
   islandId: "self-employment-tax",
   label: "Self-Employment Tax",
   navOrder: 35,
-  updated: "2026-09-05",
+  updated: "2026-10-28",
 
   metaTitle: "Self-Employment Tax Calculator (2026)",
   metaDescription:

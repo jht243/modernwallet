@@ -93,6 +93,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
   {
     calculator: "mortgage",
     slug: "extra-payment-calculator",
+    updated: "2026-10-28",
     title: "Mortgage Extra Payment Calculator: See Your Savings",
     metaDescription:
       "Use this mortgage extra payment calculator to see how extra monthly payments cut years off your loan and save thousands in interest. Free 2026 tool.",
@@ -137,7 +138,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
       {
         question: "Is a biweekly plan better than just paying extra?",
         answer:
-          "Both reach the same goal, but doing it yourself is free. Third-party biweekly plans can charge setup or service fees. You can match the result by adding one extra payment a year on your own, or using the calculator above to set a monthly extra amount.",
+          "Both reach the same goal, but doing it yourself is free. Third-party biweekly plans can charge setup or service fees. You can match the result by adding one extra payment a year on your own, or using the calculator above to set a monthly extra amount. To see what a biweekly schedule and its fees do to your loan, use the [biweekly mortgage calculator](/biweekly-mortgage-calculator/).",
       },
       {
         question: "Should I pay extra on my mortgage or invest the money instead?",

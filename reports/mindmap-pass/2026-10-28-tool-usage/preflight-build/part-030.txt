@@ -1,0 +1,55 @@
+.claude/commands/mindmap-pass.md — characters 9000 onward
+
+etition); **Lens 2 — adjacent-demand discovery is a core tenet** that expands around the brief's seeds with SEMRUSH (`phrase_related` / `phrase_fullsearch` / `phrase_questions`) + the Autocomplete miner to surface real demand *clusters the user didn't name but that belong with their idea*, deciding per cluster whether each warrants new content, an enriched existing page, or a metadata update; and **Lens 3 — comparison / alternatives / pricing is a core tenet** that, for every primary entity the brief names or implies, systematically mines and SEMRUSH-validates `{entity} vs {rival}`, `{entity} alternatives`, and `{entity} pricing` bottom-funnel demand. All three lenses check git history and produce rows in the table. **Then, before the lever or the format is chosen, Step 4.6 decides for every content row (1) the reader's question in their own words, (2) the working answer and its shape, and (3) which of the first two sections delivers it** — recorded as chart cols 10–12, shown per row in the Phase 0 manifest, copied into every Phase 3 row prompt, and audited by Phase 4's `GATE — Reader question`. A page that is on-topic but opens with scope, definition or taxonomy instead of the answer fails that gate. The chart is SAVED to `reports/mindmap-pass/<TODAY>.md` (with a dedicated emerging-clusters block).
+
+**Chart path (`<CHART>`).** A caller that runs alongside other routines (e.g. `/youtube-video-pass`) names a **run-scoped output path** — `--chart-out reports/mindmap-pass/<TODAY>-<tag>.md`. When one is given, `<CHART>` is that path for the whole run: Step 1 writes there, every intermediate file uses its stem (`<CHART-stem>.serp.json`, `.heads.txt`, `.autocomplete.*.csv`), and Phase 0 loads exactly it — never `<TODAY>.md`, never "newest by date". Without one, `<CHART>` = `reports/mindmap-pass/<TODAY>.md`. (Same-day cloud routines write their own charts; a bare `<TODAY>.md` lookup silently loads theirs.)
+
+Run Step 1 UNLESS one of these is true:
+- The user passed an existing chart path as an argument (not `--chart-out`) → skip building, use that chart.
+- `<CHART>` already exists → skip building, use it (do not overwrite).
+- No input brief was provided AND no chart exists → STOP and ask the user to paste the text / attach the image / drop the news article or link describing what they want added (do not invent a brief).
+
+Once the chart file exists, continue to Phase 0, which loads it, discovers project facts, and presents the manifest gate. **Do not skip ahead to any edit phase until the chart is built/loaded and the manifest is approved.**
+
+The user does NOT inspect output. Every worker phase is gated by an **adversarial reviewer subagent** (Agent tool, `subagent_type: Explore`, read-only) that did NOT do the work and must pass the phase's checklist before the next phase begins.
+
+## Execution graph (ordering)
+Phases run by **dependency**, not a single straight line. Independent work runs in parallel; dependent work waits.
+
+```
+STEP 1 — BUILD CHART from the input brief (interpret → SEMRUSH-validate → cluster)  →  saves <CHART> (run-scoped --chart-out, else reports/mindmap-pass/<TODAY>.md)
+        │   (skip only if a chart path arg was passed, or today's chart already exists)
+        ▼
+Phase 0 — load that chart, discover project facts, MANIFEST GATE (user approves)
+        │  (blocks everything until chart loaded AND user approves the manifest)
+        ├────────────────────────────┬───────────────────────────────
+        ▼                            ▼
+  TRACK A — new content        TRACK B — existing-page edits
+  Phase 3  →  Phase 4          Phase 1 (advisory) → Phase 2 → Phase 5
+  (4 gates 3)                  (5 incorporates Phase 3 preparation + Phase 4 for new additions)
+        └────────────┬───────────────┘
+                     ▼
+            Phase 6 — internal linking      (waits for BOTH tracks)
+                     ▼
+            Phase 7 — sitemap + IndexNow PREP (waits for 1,2,3,5,6; prepares URL list, does NOT submit)
+
+                     ▼
+            Phase 8 — SUMMARY  (informational; auto-continues to Phase 9)
+                     ▼
+            Phase 9 — commit + deliver + 200-verify + IndexNow submit (last; runs automatically; pushes, verifies each URL is live (HTTP 200), then pings IndexNow with live URLs only)
+```
+
+- **Track A and Track B run in parallel.** Track A only creates new files; Track B only edits existing files — disjoint file sets, so they cannot collide.
+- **Track B order** (1 → 2 → 5). Phase 1 is **advisory-only** (detects/flags cannibalization, edits nothing). Phases 2 and 5 both edit existing pages and may touch the same file, so never run those two at once — that would cause lost edits.
+- **Phase 6 waits for both tracks**: it links *to* the new pages (needs Track A done) and it edits existing pages (must not collide with Track B).
+- **Phase 7 waits for everything before it** (needs every final URL + lastmod). It only *prepares* the IndexNow URL list — the actual IndexNow POST is deferred to Phase 9, after push + deploy + 200-verify, so search engines are only pinged with URLs that are already live (never not-yet-deployed 404s).
+- **Phase 8 is informational.** Print the summary table, then auto-continue to Phase 9 in the same turn — no approval, no stop.
+- **Phase 9 is always last** and runs automatically after Phase 8. It pushes, then **fetches every created/changed URL and confirms HTTP 200** before submitting only the live URLs to IndexNow.
+- A phase may start only once **every phase it depends on has PASSED its gate.** Within a track, that's the previous phase; for Phase 6/7/8/9, that's all upstream phases shown above.
+
+## Non-negotiable global rules
+1. **Dependency ordering (above).** Never start a phase until every phase it depends on has PASSED its gate. Never run two existing-page-editing phases (2, 5, 6) at the same time. (Phase 1 is advisory-only — it edits nothing — so it carries no collision risk.)
+2. **Classify by intent, not literal string.** Map each chart row to one bucket: consolidation (now **advisory/flag-only** — Phase 1 never executes it) / metadata / new-content / body / internal-links. Ambiguous rows → "Ambiguous / skipped"; never guess or silently drop.
+2a. **Adjacent-demand discovery is a CORE TENET — never skip it.** Chart-building must run ALL THREE lenses (see Step 1): direct-intent shaping of what the user asked for AND SEMRUSH-driven discovery of the demand clusters *around* the brief. Lens 2 reads the demand space around the user's seeds, clusters it by theme/intent/modifier, finds clusters pulling real SEMRUSH/Autocomplete/news demand that no page is the dedicated answer for, and decides the right lever PER CLUSTER — `create new content` (no good home), `update existing body text` (right page, missing the angle), or `update existing metadata` (covered + ranking, wrong framing); two pages competing for one cluster is flagged to Phase 1. These cluster-driven rows are first-class chart rows and the primary engine for net-new content. A run that produced only the literal terms the user typed, with no SEMRUSH-driven adjacent clusters, has failed this rule. The detected clusters are surfaced in the Phase 0 manifest so the user sees the discovered demand every run.
+2b. **Comparison / Alternatives / Pricing coverage is a CORE TENET — never skip it (Lens 3).** For every primary entity the brief names or implies (product, tool, vendor, model, platform, service), chart-building must systematically mine and SEMRUSH-validate the three bottom-funnel, high-commercial-intent formats: **`{entity} vs {rival}` comparisons**, **`{entity} alternatives`**, and **`{entity} pricing / cost / worth-it`** — surfacing only real, demand-backed rivals/phrases (never invented matchups or fabricated prices), deduped against shipped work like any other row. vs/alternatives rows use `format: comparison table/database`; pricing rows use `comparison table/database` (multi-plan/vendor) or `article`. Each must appear in BOTH the main table and the emerging-clusters block, and must stay objective (the business is never the auto-winner) while honoring the repo's affiliate/referral wiring. A pass that ships topical/how-to rows but no vs/alternatives/pricing coverage for the brief's comparable entities has failed this rule. (Genuinely no comparable entity in the brief → note it under exclusions; do not force empty rows.)
+2c. **New AI model launch → the Tier 0 Launch Core is MANDATORY (CORE TENET, conditional).** This rule applies **only when BOTH** are true: (i) this repo publishes AI-model / AI-tool content, and (ii) the brief is — or the lenses surfaced — a **new model release** the site has no page family for. For every other repo on this fleet and every non-launch brief, skip this rule outright; it costs nothing. When it does apply, chart-building must emit a `create new content` row for each **missing** member of the Tier 0 Launch Core, slugged from the model name (`Claude Opus 5` → `claude-opus-5`): `{model}-ex

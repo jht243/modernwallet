@@ -1,0 +1,39 @@
+.claude/commands/tool-usage-mindmap-auto.md — characters 27000 onward
+
+}` line per new-tool row.
+
+## STEP 8 — Email the owner — EVERY run (USER RULE 2026-10-11)
+Every run sends exactly one email through `.claude/scripts/send-routine-email.py`, the same script and layout as the other routines. Pick the status:
+- `--status success` — something shipped. The hook blocks this until `tool_usage_gate.py live` has passed; use its `live.md` as the `## Live verification` section.
+- `--status no-op` — the run worked but nothing changed (no tool crossed the bar, or every row was dropped). Still list the data and why nothing shipped.
+- `--status failure` — a step or gate failed and could not be fixed. Name the step, the error, and what is left on the `claude/*` branch.
+
+Write `/tmp/tool-usage-<YYYY-MM-DD>.md` first and pass it with `--details-file`. Written for a person reading their inbox. Sections, in order (skip a section only when it is empty, and say so in `## What changed`):
+
+0. **`## Duplicate check`** — the Phase 0 manifest row (or "no new-page rows").
+1. **`## What changed`** — 2–4 plain sentences: how many tools fixed, how many new tools, anything notable (a site-wide bug, a corrected figure). On a no-op/failure run, say why.
+2. **`## Data`** — `<TOOL_SITE>, <data_days> days tracked. Worked: <tool> (<people> people), …`; note when `data_days` < 30 that the numbers are early.
+3. **`## Fixes shipped`** — per tool: the persona in one line, then each fix as `- [<tool name>](<live url>) — <what changed> (why: "<persona quote>")`.
+4. **`## New tools`** — `- [<name>](<live url>) — <what it does>. Next step after [<seed tool>](<url>).`
+5. **`## Monetization`** — per tool: verdict + one line. Shipped → `- [<tool>](<live url>) — <tier → product, …>`. Blocked → what it needs (e.g. "create an Amazon tracking ID for <site>, add the site to the Associates account, set `amazon_tag` in `.claude/tool-usage.site.json`") + the picks that would ship. No-fit → why.
+6. **`## Next in line`** — tool rows specced, not built this week.
+7. **`## Dropped`** — every row mindmap or the auditor dropped, with the one-line reason.
+8. **`## Live verification`** — the gate's `live.md` (HTTP status + tracking for every new and changed URL).
+
+```bash
+REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
+.claude/scripts/send-routine-email.py --status <success|no-op|failure> --skill tool-usage-mindmap-auto \
+  --site "$TOOL_SITE" --repo "$REPO" --branch main --commit-sha "$(git rev-parse HEAD)" \
+  --summary "<N> tool fixes, <M> new tools, <K> tools monetized from real tool usage." \
+  --details-file /tmp/tool-usage-<YYYY-MM-DD>.md
+```
+A run that ends without sending this email is a failed run.
+
+## Rolling this routine out to another fleet site (no shortcuts there either)
+Copy ALL of these into the target repo, then pilot one run before scheduling more:
+1. `.claude/commands/tool-usage-mindmap-auto.md`, `scripts/tool_usage/{site_tool_usage.py,tool_usage_gate.py,verify_beacons.cjs,amazon_pick.py}`, `.claude/tools/tool-usage-gates.sh` (chmod +x), and `.claude/tool-usage.site.json` = `{"site": "<tracked domain>", "base_url": "https://…", "build_cmd": "<the site's real build>", "amazon_tag": "<this site's tracking ID, or omit>", "affiliate_placement": "in-tool"}` (the `build` gate runs `build_cmd`; no `amazon_tag` → monetization runs as `blocked` and the email says what to set up).
+   Real ASINs need `AMZ_CLIENT_ID` / `AMZ_CLIENT_SECRET` (layer3labs' Creators API client) exported in the routine prompt; without them `amazon_pick.py` falls back to tagged search links.
+2. In `.claude/settings.json`: add `$CLAUDE_PROJECT_DIR/.claude/tools/tool-usage-gates.sh` as a PreToolUse hook with matcher `Edit|Write|MultiEdit|NotebookEdit|Bash`, and `"modelSettings": {"claude-opus-5-5": {"effortLevel": "medium"}}`.
+3. The repo's mindmap-pass must have Phase 3c (MINDMAP-BUILDS-TOOLS). `scripts/mindmap/coverage_lookup.py` must exist.
+4. Routine: `model: claude-opus-5-5` on the trigger (RemoteTrigger update `{"model": "claude-opus-5-5"}`), branch `claude/tool-usage-<site>` (the hook keys on the `claude/tool-usage` prefix), prompt cloned from Chalkbox's (`trig_01VG4Bqr2GvqHCiihMCwLCq6`) with that site's keys.
+5. After the first run: `get_run_log` → confirm `init: model=claude-opus-5-5` and that all six gates passed in order.

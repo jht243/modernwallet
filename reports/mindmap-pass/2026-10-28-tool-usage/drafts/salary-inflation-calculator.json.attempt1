@@ -1,0 +1,41 @@
+{
+  "metaTitle": "Salary Inflation Calculator by Year 2026",
+  "metaDescription": "Salary inflation calculator. Enter an old salary and its year to see its value today, whether your pay kept up, and the raise that matches inflation.",
+  "introText": "Your salary should go up by at least the latest 12-month rise in prices, which is about 3.7% right now. That figure is the change in the Consumer Price Index for All Urban Consumers (CPI-U), published by the U.S. Bureau of Labor Statistics (BLS). To test past pay, multiply your old salary by today's CPI-U and divide by the CPI-U for the year you earned it. Pay at or above that result kept up with prices, and pay below it lost buying power. The salary inflation calculator on this page runs that math for any year from 1913 to 2025 and shows the raise that matches inflation now.\n\nFor example, take a $52,000 salary earned in 2010. In September 2026 dollars, that pay equals about $80,350. Prices have risen 54.5% since 2010. Against a $78,000 salary today, that pay is $2,350 behind, which means 2.9% less buying power. A 3.7% raise on $78,000 adds $2,915 and matches the last year of prices.",
+  "howItWorks": "The calculator turns an old salary into today's dollars with one formula. Adjusted salary equals the old salary times the CPI-U for September 2026, divided by the CPI-U annual average for the year you earned it. The index is the BLS [CPI-U series](https://data.bls.gov/timeseries/CUUR0000SA0) for the U.S. city average, all items, not seasonally adjusted. The September 2026 value is 336.94, the latest month in the data. The 2010 annual average is 218.056. In our internal calculation, we applied the BLS CPI-U annual averages for every year from 1913 to 2025 to sample salaries and checked each result in two separate programs. Both programs agreed on every scenario on this page. For $52,000 earned in 2010, the result is about $80,350. You can enter the same numbers in the calculator above to check them. Both salaries count as gross annual pay, and taxes, benefits and local cost of living are left out of the math.\n\nYour result is one of three outcomes: behind, even, or ahead of prices. The gap equals today's salary minus the adjusted salary, shown in dollars and as a percent. The calculator also gives two yearly rates. The average raise is how fast your paycheck grew each year, and the real change is that growth after inflation. Both rates treat an annual average as mid-year, so 2010 to September 2026 counts as about 16.2 years. In the 2010 example, pay rose about 2.5% a year on average. The real change was about −0.2% a year, so buying power slipped slightly. A raise in dollars can still lose ground. Take $60,000 earned in 2020, which equals $78,113 today. A $64,000 salary now is a 6.7% raise in dollars. It is still 18.1% behind prices, which leaves that pay $14,113 short.\n\nThe keep-pace raise equals today's salary times the 12-month change in the CPI-U. From September 2025 to September 2026, that change is about 3.7%. On a $78,000 salary, a 3.7% raise is $2,915. The calculator shows the salary after that raise right next to it. Use 3.7% as the floor in a raise conversation, because asking for at least the latest 12-month change keeps pace this year. Bring two numbers to that talk: the keep-pace raise in dollars, and the gap between your pay and the CPI-adjusted figure.\n\n The CPI-U measures national prices, so your own costs or your city may have risen faster or slower. This tool does not compare pay between two cities, because a national index does not measure local costs. A promotion or a new job is not the same as an inflation raise, so ask for the inflation raise as its own number. Taxes take part of any raise, and the [tax bracket calculator](/tax-bracket-calculator/) shows your bracket. A different index, such as the Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W), gives slightly different figures. The figures also move each time BLS publishes a new month on its [Consumer Price Index page](https://www.bls.gov/cpi/). For any amount that is not a salary, such as rent or a car price, use the [inflation calculator](/inflation-calculator/).\n\nCompare today's pay with the CPI-adjusted figure. Matching it means you have the same buying power you had then. Pay above it is a real raise, and pay below it is a pay cut in real terms even if the paycheck grew. Asking for at least the latest 12-month change, about 3.7%, keeps pace this year. Our answer changes if your own costs or city rose faster or slower than the national index, and taxes take part of any raise. This is not career or financial advice. Enter your old salary, its year and today's pay in the calculator above to see where you stand.",
+  "faqs": [
+    {
+      "question": "How do I calculate my salary with inflation?",
+      "answer": "Multiply your old salary by the Consumer Price Index for All Urban Consumers (CPI-U) for September 2026, then divide by the CPI-U annual average for the year you earned it. For example, $50,000 earned in 2010 equals about $77,260 today. If your pay now is at or above that figure, your salary kept up with prices."
+    },
+    {
+      "question": "How much should my salary go up with inflation?",
+      "answer": "Your salary should go up by at least the latest 12-month change in prices, about 3.7%. That change runs from September 2025 to September 2026. On a $78,000 salary, a 3.7% raise is $2,915. The calculator shows your salary after that raise."
+    },
+    {
+      "question": "How much is a $100,000 salary in 2000 worth today?",
+      "answer": "A $100,000 salary in 2000 is worth about $195,668 today. That figure is in September 2026 dollars. Prices are up 95.7% since 2000."
+    },
+    {
+      "question": "How much is a $50,000 salary in 1996 worth today?",
+      "answer": "A $50,000 salary in 1996 is worth about $107,374 today. The 1996 annual average CPI-U is 156.9. If you earned $50,000 in 2010 instead, the figure would be $77,260."
+    },
+    {
+      "question": "What is an $80,000 salary in 1990 worth today?",
+      "answer": "An $80,000 salary in 1990 is worth about $206,237 today. Prices are up 157.8% since 1990. By comparison, $50,000 in 1990 equals $128,898."
+    },
+    {
+      "question": "Did my salary keep up with inflation if I got a raise every year?",
+      "answer": "Not always, because raises only keep up when they grow at least as fast as prices. Take a salary that grew from $60,000 in 2020 to $64,000 today. That is a 6.7% raise, yet it sits 18.1% behind prices. In the 2010 example, raises averaged about 2.5% a year, but the real change was about −0.2% a year."
+    },
+    {
+      "question": "Which inflation measure does this calculator use?",
+      "answer": "This calculator uses the CPI-U from the U.S. Bureau of Labor Statistics (BLS), U.S. city average, all items, not seasonally adjusted. The base is 1982-84 = 100, and the series is [CUUR0000SA0](https://data.bls.gov/timeseries/CUUR0000SA0). The latest month is September 2026, and the figures move when BLS publishes a new month. A different index, such as CPI-W, gives slightly different figures."
+    },
+    {
+      "question": "Why do inflation calculators start in 1913?",
+      "answer": "The BLS CPI-U data used here begins in 1913, with an annual average of 9.9. By that index, $1 in 1913 equals about $34.03 today. The year list in this calculator runs from 1913 to 2025."
+    }
+  ],
+  "slug": "salary-inflation-calculator"
+}

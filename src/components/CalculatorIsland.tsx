@@ -72,6 +72,8 @@ import RothVsTraditional401kCalculator from "./RothVsTraditional401kCalculator";
 import HysaVsCdCalculator from "./HysaVsCdCalculator";
 import TrumpVs529Calculator from "./TrumpVs529Calculator";
 import MortgageRecastCalculator from "./MortgageRecastCalculator";
+import SalaryInflationCalculator from "./SalaryInflationCalculator";
+import BiweeklyMortgageCalculator from "./BiweeklyMortgageCalculator";
 import DebtToIncomeCalculator from "./DebtToIncomeCalculator";
 import SocialSecurityTaxableCalculator from "./SocialSecurityTaxableCalculator";
 import CharitableDeductionCalculator from "./CharitableDeductionCalculator";
@@ -174,6 +176,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "hysa-vs-cd-calculator": HysaVsCdCalculator,
   "trump-account-vs-529-calculator": TrumpVs529Calculator,
   "mortgage-recast-calculator": MortgageRecastCalculator,
+  "salary-inflation-calculator": SalaryInflationCalculator,
+  "biweekly-mortgage-calculator": BiweeklyMortgageCalculator,
   "debt-to-income-ratio-calculator": DebtToIncomeCalculator,
   "social-security-taxable-benefits-calculator": SocialSecurityTaxableCalculator,
   "charitable-donation-tax-deduction-calculator": CharitableDeductionCalculator,

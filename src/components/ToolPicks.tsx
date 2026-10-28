@@ -42,6 +42,9 @@ export const BOOKS = {
   medicareGetWhatsYours: { asin: "1668031914", title: "Get What's Yours for Medicare (revised and updated) by Philip Moeller" },
   hanTaxStrategies: { asin: "0990711765", title: "The Book on Tax Strategies for the Savvy Real Estate Investor by Amanda Han and Matthew MacFarland" },
   hanAdvancedTax: { asin: "1947200224", title: "The Book on Advanced Tax Strategies by Amanda Han and Matthew MacFarland" },
+  // Tool-usage pass 2026-10-28.
+  piperContractorTaxes: { asin: "1950967174", title: "Independent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper" },
+  taxesMadeSimple: { asin: "1950967204", title: "Taxes Made Simple: Income Taxes Explained in 100 Pages or Less by Mike Piper" },
 } as const;
 
 export function book(key: keyof typeof BOOKS, why: string): Pick {

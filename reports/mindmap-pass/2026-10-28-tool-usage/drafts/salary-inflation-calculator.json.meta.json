@@ -1,0 +1,85 @@
+{
+ "slug": "salary-inflation-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1416,
+ "floor": 1200,
+ "input_tokens": 30860,
+ "output_tokens": 16244,
+ "thinking_tokens": null,
+ "cached_tokens": 26867,
+ "est_cost_usd": 0.3462,
+ "guards": {
+  "repairs": [
+   "slug None -> 'salary-inflation-calculator'"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1416,
+  "numbers_not_in_facts": [
+   "80915",
+   "8331"
+  ],
+  "fact_budget": {
+   "fact_words": 373,
+   "floor": 1200,
+   "ratio": 0.31,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    0
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "At ModernWallet, in our internal calculation, we applied the BLS CPI-U annual averages for every year from 1913 to 2025 to sample salaries and checked each result in two separate programs.",
+     "replacement": "In our internal calculation, we applied the BLS CPI-U annual averages for every year from 1913 to 2025 to sample salaries and checked each result in two separate programs.",
+     "type": "unsupported",
+     "why": "Site self-description names The Modern Wallet, not ModernWallet."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "This calculator gives educational estimates and is not career or financial advice.",
+     "replacement": "This calculator is not career or financial advice.",
+     "type": "unsupported",
+     "why": "SOURCE never calls the figures educational estimates."
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "The 12-month change runs from September to September, so that missing month does not affect it.",
+     "replacement": "The 12-month change runs from September 2025 to September 2026.",
+     "type": "inference",
+     "why": "SOURCE does not say the missing October index leaves the change unaffected."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1428
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 161.9,
+ "response_id": "msg_011CgVDLYuWU5iyQKcx1jtp1",
+ "generated_at": "2026-10-28T19:50:59+0000"
+}

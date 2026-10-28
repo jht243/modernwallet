@@ -154,7 +154,7 @@ export const QUARTERLY_SPOKE: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "quarterly-estimated-tax-calculator",
-    updated: "2026-09-05",
+    updated: "2026-10-28",
     title: "Quarterly Estimated Tax Calculator (1040-ES)",
     metaDescription:
       "Work out your quarterly estimated tax payments for 2026, plus the safe-harbor rule that switches off the underpayment penalty even if you owe more.",

@@ -1,0 +1,61 @@
+.claude/commands/tool-usage-mindmap-auto.md — characters 9000 onward
+
+ol and its numbers ("nothing crossed the bar this week"), then exit 0.
+
+Otherwise open the run now: `python3 scripts/tool_usage/tool_usage_gate.py start --site "$TOOL_SITE" --base-url "$BASE_URL"`.
+
+**Young-data rule.** `data_days` is how long this site has been tracked. Under ~30 days the numbers only decide WHICH tools to look at, never how big a change to make. Don't read meaning into rank order between tools 3 people apart.
+
+## STEP 2 — Pick this week's tools
+Ledger = `reports/tool-usage-pass/ledger.jsonl` (one JSON object per line, this repo). Skip any tool with a `worked` line in the last 28 days — UNLESS its `people_7d` is now at least double what the ledger recorded (it took off; look again).
+
+Work up to **5 `persona` tools** (most people first) and **2 `low-use` tools** (most views first). The rest wait for next week.
+
+**Monetization catch-up (lane `monetize`).** Tools skipped above for a recent `worked` line still get a monetization look if they have **3+ people** and no `monetize` verdict in the ledger in the last 28 days — or whose last shipped picks cover fewer than 3 product types (`pick_types` missing or < 3: re-do it with the variety rule below) — add up to **3** of them (most people first) with `"lane": "monetize"`. They get the full STEP 3 walk (you can't pick products for a result you haven't seen) but no new friction work: their `## Friction` says `Monetization catch-up — friction worked <date>, not re-worked`. Skip STEP 4 for them.
+
+Write them to `reports/tool-usage-pass/<DATE>/picked.json` — a list of the STEP 1 objects (`tool`, `path`, `people`, `lane`…).
+
+## STEP 3 — Become the person using each tool (Lane A: fix what's in their way)
+For each picked tool, in order:
+
+1. **Evidence.** Collect, don't guess:
+   - The page's top Google queries, last 28 days: `python3 .claude/tools/gsc-search-analytics/gsc_search_analytics.py --base-url "$BASE_URL" --page "$BASE_URL<path>"` (no GSC access → note it, use the page's H1/title/keyword instead). Queries are the closest thing we have to "what they came to do".
+   - The tool's numbers from STEP 1 (people, uses, views, use_rate).
+   - The tool's source (find the component that renders inside the `[data-tool="<tool>"]` root) and the live page.
+2. **Persona card** (3 lines, grounded in the evidence): who they are + where they are (role, setting, device — e.g. "4th-grade teacher, laptop on a projector, class in the room"), the job they came to do (from the queries), and what "done" looks like for them (printed sheet, projected screen, a number to act on, a file).
+3. **Do the job as them, on the live page.** Open `$BASE_URL<path>` in a headless browser at desktop (1366px) and phone (390px) widths and complete the job end to end with realistic inputs that persona would type. Browser setup in the cloud: `npm i --no-save --prefix /tmp/pw playwright-core playwright && npx --prefix /tmp/pw playwright install chromium` then drive it with a short script (`require('/tmp/pw/node_modules/playwright')`). The cloud image ships Chromium at `/opt/pw-browsers/chromium-*/chrome-linux/chrome` (pass it as `executablePath`). Save a full-page screenshot per width to `reports/tool-usage-pass/<DATE>/screenshots/<tool>-desktop.png` and `<tool>-mobile.png`. **Walk BEFORE you read or change the tool's code** — the walk is the evidence; the code is only for diagnosing what the walk found. No browser at all → stop the run and send a `--status failure` email saying so; never walk it "on paper".
+   Record every point of friction, in the persona's voice:
+   - a step that blocked or confused them; a label or output they wouldn't understand
+   - an input they'd need that isn't there (their grade level, units, a second option…)
+   - math/logic that is wrong, unexplained, or gives an answer they can't act on
+   - no way to keep what they made (print, copy, download, fullscreen/project, share link) when their "done" needs one
+   - phone layout breaks, controls too small, console errors, slow or broken load
+   - `low-use` tools: what on the page, before the tool, would make them leave without trying it (tool below the fold, unclear first step, intimidating form)
+4. **Write the persona file** `reports/tool-usage-pass/<DATE>/personas/<tool>.md` with exactly these sections: `## Evidence` (queries or "no GSC access", the STEP 1 numbers), `## Persona` (the card), `## Walkthrough` (what they did and saw at desktop 1366px AND phone 390px, step by step), `## Friction` (each item, or "none"), `## Monetization` (STEP 3b — write it before running the gate).
+   After the last tool: `python3 scripts/tool_usage/tool_usage_gate.py persona`. Until it passes you cannot edit code.
+5. **Turn each friction into a chart row** for the brief:
+   - Tool behaviour/code → bucket `update existing body text`, **format `tool fix`**, target = the component file + route, solution = the exact change, problem = the persona quote + evidence.
+   - Missing explanation/FAQ/how-to on the page → a normal `update existing body text` row (mindmap writes it via the API writer).
+   - Nothing worth fixing → say so in the ledger and add the line `Walked, no friction: <tool>` under the chart table; that is a valid result (the `chart` gate checks every picked tool appears in the chart).
+
+**Tool-fix guardrails** (the auditor fails any row that breaks one):
+- Additive and bounded: never remove an existing input, output, mode, setting or feature; never change the URL, title, meta description or H1.
+- The `data-tool="<slug>"` root stays exactly as it is (our usage tracking hangs off it).
+- No new per-use paid API calls, no new runtime dependency over ~30 KB gz (the bundle gate will fail the build anyway).
+- Math changes need a stated reason + a worked example in the row; if the right formula isn't certain, the fix is an explanation on the page, not new math.
+
+## STEP 3b — What would they buy for this result? (Lane C: monetization)
+Same person, same walkthrough, one more question: **now that they have their answer, what do they buy to act on it?** The hardware calculator is the model case — the visitor learns they need 24 GB of VRAM; the next thing they do is shop for a 24 GB card or a Mac with enough unified memory. Putting the right product, for THEIR number, under the answer is a service, not an ad.
+
+**Site config first** — `.claude/tool-usage.site.json`:
+- `amazon_tag` — this site's own Amazon tracking ID. Missing → every fitting tool is `Verdict: blocked` (no row, no code). Use only the tag the owner set there — it may be shared across fleet sites (owner rule 2026-10-12: untagged sites share `soulcircle01-20`, and the owner lists each site on the Associates account); never pick or copy a tag yourself.
+- `affiliate_placement` — `in-tool` (default), `footer-only` or `off`. Anything but `in-tool` → `Verdict: no-fit (site rule: <value>)`.
+- The site's existing monetization wins where it fits better: its own product/store (rank 1 on the monetization ladder) or an existing affiliate engine/helper (layer3: `src/utils/affiliate.ts` `amazonProductLink()` + referral constants, `data/affiliate/catalog.ts`). Reuse the site's helper; hand-write a URL only when the site has none.
+
+**The fit test** (natural fit is the gate — a forced pick is as bad as a missed one):
+- `fit` — the purchase follows directly from the visitor's RESULT, and someone with that result would plausibly buy it to finish the job. Hardware calculator → GPU/workstation for the computed VRAM tier. Shaving cost calculator → the razor/blades the math favoured. Classroom noise meter → a printed voice-level chart or a classroom timer. Trip packing tool → the gear on their list.
+- **Legal, medical, tax and money tools (YMYL) → books (owner rule 2026-10-12).** Their visitor's next step is understanding their situation, so the picks are books on THEIR result's topic: a TSP withdrawal result → a federal-retirement planning book; a VA claim estimate → a VA-claims guide; a psychedelic-law lookup → a book on that law or the research behind it; a metabolic tool → a book by a physician or researcher on that marker. Book rules: current edition (or the standard text), a credentialed author or established publisher (Nolo, academic/medical presses, recognised practitioners), mainstream and evidence-based — no fringe, miracle-cure or get-rich titles. Heading = "Further reading on <their topic>"; one line on what the book helps them do. Never present a book as a substitute for a lawyer, doctor or adviser, and never place it inside a diagnosis, dosage, legal-outcome or buy/sell answer — under the result, after any "talk to a professional" line the tool already shows. No physical products, supplements, devices or treatments on these tools.
+- `no-fit` — the honest answer is "nothing", or a product or book would read as bolted on. Say why in one line.
+- `blocked` — it fits but the site has no `amazon_tag` (or the user must decide something). List the picks you would ship so the owner can unblock it.
+
+**Pick the products (f

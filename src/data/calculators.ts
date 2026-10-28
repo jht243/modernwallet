@@ -735,7 +735,7 @@ export const CALCULATORS: CalculatorDef[] = [
 
   {
     id: "trump-account",
-    updated: "2026-10-14",
+    updated: "2026-10-28",
     islandId: "trump-account",
     label: "Trump Account",
     navOrder: 13,
@@ -1552,9 +1552,9 @@ export const CALCULATORS: CalculatorDef[] = [
     targetKeyword: "inflation calculator",
     h1: "Inflation Calculator",
     introText:
-      "An inflation calculator shows what an amount of money will cost or buy in the future at an average annual inflation rate you choose. Enter an amount in today's dollars, a number of years, and an inflation rate in the calculator above. You can also add an optional annual return if the money is invested. The tool has no historical price data built in. For measured price changes, use the [Consumer Price Index (CPI) data from the Bureau of Labor Statistics (BLS)](https://www.bls.gov/cpi/).\n\nFor example, enter $10,000, a 3% inflation rate, and 10 years. The same purchases then cost $13,439. Held unchanged, the $10,000 buys only what $7,441 buys today. That is a 25.6% loss of buying power. Kept as cash, the money has a real return of -2.91% a year. Add a 5% annual return and the real return after inflation becomes 1.94% a year. The balance grows to $16,289, which is worth $12,121 in today's dollars.",
+      "An inflation calculator shows what an amount of money will cost or buy in the future at an average annual inflation rate you choose. Enter an amount in today's dollars, a number of years, and an inflation rate in the calculator above. You can also add an optional annual return if the money is invested. To see what an amount from any year since 1913 is worth today, switch to \"From a past year\", which uses [Consumer Price Index (CPI) data from the Bureau of Labor Statistics (BLS)](https://www.bls.gov/cpi/).\n\nFor example, enter $10,000, a 3% inflation rate, and 10 years. The same purchases then cost $13,439. Held unchanged, the $10,000 buys only what $7,441 buys today. That is a 25.6% loss of buying power. Kept as cash, the money has a real return of -2.91% a year. Add a 5% annual return and the real return after inflation becomes 1.94% a year. The balance grows to $16,289, which is worth $12,121 in today's dollars.",
     howItWorks:
-      "The calculator takes an amount in today's dollars and raises the price of what it buys by your inflation rate, compounded once a year for the number of years you enter. The formula is future cost = amount x (1 + inflation)^years. Enter $10,000, a 3% rate, and 10 years. The same purchases then cost $13,439 at the end of the period.\n\nBuying power uses the same math in reverse. The calculator divides your amount by (1 + inflation)^years to show what it will buy later, measured in today's dollars. With the same inputs, $10,000 held unchanged buys what $7,441 buys today, a 25.6% loss of buying power. The calculator also reports how long buying power takes to halve, using ln 2 / ln(1 + inflation), which comes to about 23.4 years at 3%.\n\nReal return is what money earns each year after inflation is taken out, and the calculator computes it as (1 + nominal return) / (1 + inflation) - 1. Held as cash at 0%, the money has a real return of -2.91% a year against 3% inflation. At a 5% annual return, the real return rises to 1.94% a year. The $10,000 then grows to $16,289 in future dollars, which is worth $12,121 in today's dollars. Compare that $12,121 with the $7,441 the same money buys after sitting as cash.\n\nThe inflation rate is an input because one rate cannot describe every year or every budget. Real inflation changes from year to year, and the prices of different things rise at different speeds. The 3% in the tool is a placeholder for you to replace, so run several rates and watch how far the future cost and real return move. Measured price changes come from the CPI program the BLS publishes, and this calculator does not include that data.\n\nThe calculator assumes one steady inflation rate in every year of the period. It does not model taxes or fees on the return, so the ending balance and the real return are both shown before those costs. To work out a return figure first, use the [compound interest calculator](/investing/compound-interest-calculator/), the [high-yield savings calculator](/investing/high-yield-savings-calculator/), or the [CD calculator](/cd-calculator/), then enter that rate here to see what it earns after inflation.",
+      "The calculator takes an amount in today's dollars and raises the price of what it buys by your inflation rate, compounded once a year for the number of years you enter. The formula is future cost = amount x (1 + inflation)^years. Enter $10,000, a 3% rate, and 10 years. The same purchases then cost $13,439 at the end of the period.\n\nThe \"From a past year\" mode uses the U.S. Bureau of Labor Statistics (BLS) [Consumer Price Index for All Urban Consumers (CPI-U), series CUUR0000SA0](https://data.bls.gov/timeseries/CUUR0000SA0), which covers all items for the U.S. city average and is not seasonally adjusted. To find today's value, the calculator multiplies your amount by the CPI-U for September 2026, the latest month in the data (336.94), and divides by the CPI-U annual average for the year you choose. For $10,000 in 2010, it divides by that year's annual average of 218.056. The result is $15,452 in September 2026 dollars, with prices up 54.5%. The calculator treats an annual average as mid-year, so that gap spans about 16.2 years and works out to about 2.7% a year on average. In our internal calculation, we checked this example in two separate programs, and you can enter $10,000 and 2010 above to see the same numbers.\n\nBuying power uses the same math in reverse. The calculator divides your amount by (1 + inflation)^years to show what it will buy later, measured in today's dollars. With the same inputs, $10,000 held unchanged buys what $7,441 buys today, a 25.6% loss of buying power. The calculator also reports how long buying power takes to halve, using ln 2 / ln(1 + inflation), which comes to about 23.4 years at 3%.\n\nReal return is what money earns each year after inflation is taken out, and the calculator computes it as (1 + nominal return) / (1 + inflation) - 1. Held as cash at 0%, the money has a real return of -2.91% a year against 3% inflation. At a 5% annual return, the real return rises to 1.94% a year. The $10,000 then grows to $16,289 in future dollars, which is worth $12,121 in today's dollars. Compare that $12,121 with the $7,441 the same money buys after sitting as cash.\n\nThe inflation rate is an input because one rate cannot describe every year or every budget. Real inflation changes from year to year, and the prices of different things rise at different speeds. The 3% in the tool is a placeholder for you to replace, so run several rates and watch how far the future cost and real return move. Measured price changes come from the CPI program the BLS publishes, and the past-year mode uses that data.\n\nThe calculator assumes one steady inflation rate in every year of the period. It does not model taxes or fees on the return, so the ending balance and the real return are both shown before those costs. To work out a return figure first, use the [compound interest calculator](/investing/compound-interest-calculator/), the [high-yield savings calculator](/investing/high-yield-savings-calculator/), or the [CD calculator](/cd-calculator/), then enter that rate here to see what it earns after inflation.",
     faqs: [
       {
         question: "How do I calculate the effect of inflation on money?",
@@ -1589,7 +1589,7 @@ export const CALCULATORS: CalculatorDef[] = [
       {
         question: "Does this calculator use historical CPI data?",
         answer:
-          "No. The calculator has no historical CPI data built in, so you supply the inflation rate yourself. Measured price changes are published by the [Bureau of Labor Statistics CPI program](https://www.bls.gov/cpi/).",
+          "Yes, the \"From a past year\" mode uses historical Consumer Price Index (CPI) data. It pulls from the [U.S. Bureau of Labor Statistics (BLS) Consumer Price Index for All Urban Consumers (CPI-U)](https://data.bls.gov/timeseries/CUUR0000SA0), U.S. city average, all items, series CUUR0000SA0. You can pick any year from 1913 to 2025, and the latest month in the data is September 2026. The default future-cost mode still uses the rate you enter and has no forecast built in.",
       },
       {
         question: "Can I use this for retirement planning?",
@@ -1601,7 +1601,7 @@ export const CALCULATORS: CalculatorDef[] = [
       { label: "Bureau of Labor Statistics: Consumer Price Index", url: "https://www.bls.gov/cpi/" },
       { label: "Investor.gov (SEC): Inflation", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/inflation" },
     ],
-    updated: "2026-10-11",
+    updated: "2026-10-28",
     defaultPreset: {"amount": 10000, "years": 10, "inflationPct": 3, "nominalReturnPct": 0},
   },
   // Expense Ratio calculator — keyword-gap-pass (2026-10-11). Prose generated via scripts/lib/content_gen.py (meta beside the draft in
@@ -2508,7 +2508,7 @@ export const CALCULATORS: CalculatorDef[] = [
       { question: "Does recasting change my interest rate or loan term?", answer: "No. A recast keeps the same interest rate and the same months left, so only the balance and the payment change. On the example loan, the rate stays at 6.875% with 312 months left. The payment falls to $1,432.69 on the $208,000 balance." },
       { question: "How do I cut years off my mortgage instead?", answer: "Prepay principal without a recast and keep making your current payment. Putting $30,000 toward the example loan and keeping the $1,639.33 payment ends it in 228 months. That is 7 years sooner. To test monthly extra payments, use the [mortgage payoff calculator](/mortgage/payoff-calculator/)." },
     ],
-    updated: "2026-10-14",
+    updated: "2026-10-28",
     defaultPreset: {"balance": 238000, "ratePct": 6.875, "monthsLeft": 312, "lumpSum": 30000, "fee": 250},
   },
   // Social Security COLA calculator — mindmap-pass 2026-10-14 (2027 COLA brief). Prose generated via scripts/lib/content_gen.py
@@ -2806,7 +2806,7 @@ export const CALCULATORS: CalculatorDef[] = [
     sources: [
       { label: "IRS Publication 915: Social Security and Equivalent Railroad Retirement Benefits", url: "https://www.irs.gov/publications/p915" },
     ],
-    updated: "2026-10-21",
+    updated: "2026-10-28",
     defaultPreset: {"status": "mfj", "benefits": 42000, "otherIncome": 30000, "taxExemptInterest": 0},
   },
   // Charitable donation tax deduction calculator — GA4 top-pages pass (2026-10-26). Prose generated via
@@ -3119,6 +3119,131 @@ export const CALCULATORS: CalculatorDef[] = [
     }
   },
   // /Checklists hub
+  // Salary inflation calculator, tool-usage pass 2026-10-28. Prose from the API writer
+  // (meta beside the draft in reports/mindmap-pass/2026-10-28-tool-usage/drafts/).
+  {
+    "id": "salary-inflation-calculator",
+    "islandId": "salary-inflation-calculator",
+    "label": "Salary Inflation",
+    "navOrder": 70,
+    "metaTitle": "Salary Inflation Calculator by Year, 1913 to 2025",
+    "metaDescription": "Salary inflation calculator. Enter an old salary and its year to see today's value, whether your pay kept up, and the raise that matches inflation.",
+    "targetKeyword": "salary inflation calculator",
+    "h1": "Salary Inflation Calculator",
+    "introText": "A raise of about 3.7% keeps your salary even with this year's prices. That figure is the price change over the last 12 months. To see whether earlier raises kept up, multiply your old salary by the consumer price index for September 2026 and divide by the index for the year you earned it. Pay at or above that result kept up with prices. Pay below it lost buying power, even if the paycheck grew. The salary inflation calculator below runs that math with [Bureau of Labor Statistics (BLS)](https://www.bls.gov/cpi/) data back to 1913.\n\nFor example, take a salary of $52,000 earned in 2010. In September 2026 dollars, that pay equals about $80,350. Prices are up 54.5% since 2010. Against a $78,000 salary today, the worker is $2,350 behind, which is 2.9% less buying power. A 3.7% raise on that $78,000 adds $2,915 and keeps pay even with the last year of prices.",
+    "howItWorks": "The calculator turns an old salary into September 2026 dollars with one price index from the BLS. It uses the [Consumer Price Index for All Urban Consumers (CPI-U)](https://data.bls.gov/timeseries/CUUR0000SA0), U.S. city average, all items, not seasonally adjusted, series CUUR0000SA0. The adjusted salary equals the old salary times the CPI-U for September 2026, divided by the CPI-U annual average for the year you earned it. The September 2026 index is 336.94, the latest month in the data. The 2010 annual average is 218.056. In our internal calculation, we applied the BLS CPI-U annual averages for every year from 1913 to 2025 to sample salaries and checked each result in two separate programs. Run through that formula, a $52,000 salary from 2010 becomes $80,350. Both programs agreed on that result and on every other scenario on this page. These scenarios are calculations. They are not survey data or client cases, and you can enter the same numbers in the calculator above to check them.\n\nThe result shows whether today's pay is behind, even with, or ahead of prices. The gap equals today's salary minus the adjusted salary. In the default case, $78,000 minus $80,350 leaves a $2,350 shortfall. That is 2.9% less buying power than the 2010 salary had. The calculator also shows two yearly rates. The average raise is the yearly growth in dollar pay, about 2.5% in this case. The real change takes inflation out, and here it is a loss of about 0.2% a year. Both rates treat an annual average as mid-year, so 2010 to September 2026 counts as about 16.2 years. A raise in dollars can still be a pay cut in buying power. Take $60,000 earned in 2020, which equals $78,113 today. A $64,000 salary now is a 6.7% raise in dollars. Measured against prices, the same $64,000 is 18.1% behind, or $14,113 short. The start year matters because prices rose at very different speeds. From 1979 to 1981, the CPI-U annual average rose more than 10% every year. The peak was 13.5% in 1980. In 2009 the average fell 0.4%, so pay held flat that year did not lose buying power. The CPI-U average rose 4.7% in 2021. The next year it rose 8.0%. In 2023 it rose another 4.1%. Those jumps show up in the salary figures: a $50,000 salary from 2019 equals $65,897 today. The same $50,000 from 2022 equals $57,566. Those start years sit three years apart, yet the adjusted figures differ by $8,331. Go back to 1980 and $50,000 equals $204,454.\n\nThe keep-pace raise equals today's salary times the 12-month CPI-U change. From September 2025 to September 2026, the CPI-U rose about 3.7%. On a $78,000 salary, that raise is $2,915. The new salary would be $80,915. Use 3.7% as the minimum to ask for in a raise conversation. A smaller raise leaves your new pay buying less than your current pay bought a year earlier. Bring the CPI-adjusted figure too, so you can show how far your pay sits behind or ahead of the old salary in today's dollars.\n\nThe CPI-U is a national average for all items, so it can miss changes in your own costs. If your rent or city costs rose faster than the national index, the raise you need is larger than the calculator shows. If they rose slower, it is smaller. For the same reason, this calculator is the wrong tool for comparing pay across two cities, because a national index does not measure local costs. Count a promotion or a new job separately from an inflation raise, since pay for a bigger role is a different gain from pay that keeps up with prices. Both salaries are gross annual pay, and taxes, benefits and local cost of living are left out. Taxes take part of any raise, so look up your rate with the [tax bracket calculator](/tax-bracket-calculator/). A different index, such as the Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W), gives slightly different figures. The figures also move each time BLS publishes a new month, and September 2026 is the latest month used here. For an amount that is not a salary, such as savings or a past price, use the [inflation calculator](/inflation-calculator/).\n\nCompare today's pay with the CPI-adjusted figure the calculator shows. Matching it means the same buying power as the old salary. Pay above it is a real raise. Pay below it is a pay cut in real terms, even if the paycheck grew. Asking for at least the latest 12-month change, about 3.7%, keeps pace with prices this year. To see where a raise would go each month, plan it with the [household budget calculator](/budget/household-budget-calculator/). This calculator is not career or financial advice. Enter your own old salary and start year in the salary inflation calculator above, then take the keep-pace figure into a pay review.",
+    "faqs": [
+      {
+        "question": "How do I calculate my salary with inflation?",
+        "answer": "Multiply your old salary by the CPI-U for September 2026, then divide by the CPI-U annual average for the year you earned it. For a 2010 salary, that means multiplying by 336.94 and dividing by 218.056. On $52,000, the result is about $80,350 in today's dollars. Compare that figure with what you earn now."
+      },
+      {
+        "question": "How much should my salary go up with inflation?",
+        "answer": "To keep pace with the last 12 months of prices, your salary should rise about 3.7%. That is the CPI-U change from September 2025 to September 2026. On a $78,000 salary, the raise is $2,915. To cover earlier years, compare today's pay with the CPI-adjusted figure for the year you earned the old salary."
+      },
+      {
+        "question": "How much is a $100,000 salary in 2000 worth today?",
+        "answer": "A $100,000 salary from 2000 equals about $195,668 today. Prices are up 95.7% since 2000. Today here means September 2026, the latest month in the BLS data. Half that salary, $50,000 from 2000, equals $97,834."
+      },
+      {
+        "question": "How much is a $50,000 salary in 1996 worth today?",
+        "answer": "A $50,000 salary from 1996 equals about $107,374 today. That is more than double the original pay. The 1996 CPI-U annual average used for this result is 156.9. For a later reference point, $50,000 from 2005 equals $86,262."
+      },
+      {
+        "question": "What is an $80,000 salary in 1990 worth today?",
+        "answer": "An $80,000 salary from 1990 equals about $206,237 today. Prices are up 157.8% since 1990. The 1990 CPI-U annual average is 130.7. A $50,000 salary from that year equals $128,898."
+      },
+      {
+        "question": "Did my salary keep up with inflation if I got a raise every year?",
+        "answer": "Not always, because yearly raises only kept up if they added up to at least the price rise since your start year. Take pay of $60,000 in 2020. At $64,000 today, that pay is up 6.7% in dollars but 18.1% behind prices. It would need to reach $78,113 to match the 2020 salary's buying power."
+      },
+      {
+        "question": "Which inflation measure does this calculator use?",
+        "answer": "The calculator uses the CPI-U, U.S. city average, all items, not seasonally adjusted, published by BLS as series [CUUR0000SA0](https://data.bls.gov/timeseries/CUUR0000SA0). A different index, such as the CPI-W, gives slightly different figures. BLS did not publish an October 2025 index. The 12-month change runs from September 2025 to September 2026."
+      },
+      {
+        "question": "Why do inflation calculators start in 1913?",
+        "answer": "The BLS CPI-U data used here begins in 1913, so that is the earliest year in the calculator. The 1913 annual average is 9.9. By that index, $1 in 1913 equals about $34.03 today."
+      }
+    ],
+    "sources": [
+      {
+        "label": "BLS: CPI-U, U.S. city average, all items (series CUUR0000SA0)",
+        "url": "https://data.bls.gov/timeseries/CUUR0000SA0"
+      },
+      {
+        "label": "BLS: Consumer Price Index",
+        "url": "https://www.bls.gov/cpi/"
+      }
+    ],
+    "updated": "2026-10-28",
+    "defaultPreset": {
+      "pastSalary": 52000,
+      "pastYear": 2010,
+      "currentSalary": 78000
+    }
+  },
+  // Biweekly mortgage calculator, tool-usage pass 2026-10-28 (carried spec from 2026-10-14). Prose from the API writer.
+  {
+    "id": "biweekly-mortgage-calculator",
+    "islandId": "biweekly-mortgage-calculator",
+    "label": "Biweekly Mortgage",
+    "navOrder": 71,
+    "metaTitle": "Biweekly Mortgage Calculator With Fee Break-Even",
+    "metaDescription": "Biweekly mortgage calculator. See the interest you save paying every two weeks, how much sooner your loan ends, and whether a plan's fees are worth it.",
+    "targetKeyword": "biweekly mortgage calculator",
+    "h1": "Biweekly Mortgage Calculator",
+    "introText": "A biweekly mortgage payment is worth it when it costs you little or nothing. Paying half your payment every two weeks adds up to 26 half-payments a year, which equals 13 full payments instead of 12. That one extra payment a year cuts years off the loan and lowers the interest you pay. You can get almost the same saving by adding 1/12 of your payment each month yourself, with no plan and no fee. The biweekly mortgage calculator below shows your interest saved, how much sooner the loan ends, and your net saving after any plan fees.\n\nFor example, take a $300,000 loan at 6.5% with 30 years left. The monthly payment is $1,896.20, so the biweekly payment is $948.10 every two weeks. Paid biweekly, the loan ends in about 24 years and 2 months. Total interest drops from $382,633 to $294,512, a saving of $88,122. Adding $158 to each monthly payment saves $87,256, only $866 less, with no fee. On this loan, any plan fee above $866 leaves you with less than the free 1/12 approach.",
+    "howItWorks": "Biweekly payments save money because they add one extra monthly payment each year. A year has 52 weeks, so paying every two weeks makes 26 half-payments. Those 26 half-payments equal 13 full monthly payments instead of 12. In our internal calculation, we ran a range of balances, rates and terms through three payment schedules: monthly, biweekly, and monthly plus 1/12. We ran each schedule in two separate programs and compared the interest each one pays. Both programs agreed on every scenario on this page, and you can enter the same numbers in the calculator above to get the same results. These are calculated scenarios. They do not test any lender's plan and do not come from client cases. The default case is a $300,000 loan at 6.5% over 30 years. Paid biweekly, it takes 628 half-payments and saves $88,122 of interest.\n\nThe calculator runs three schedules on your loan and shows the payoff time and total interest for each one. The monthly payment uses this formula: balance × r ÷ (1 − (1 + r)^−n). In that formula, r is the annual rate ÷ 12 and n is the number of months left. The biweekly schedule pays half that amount every two weeks, 26 times a year, and charges interest at the annual rate ÷ 26 for each two-week period. The third schedule pays the monthly payment plus one twelfth of it each month. On the default loan, the monthly schedule makes 360 payments and pays $382,633 of interest. The 1/12 schedule adds $158 a month. It ends in 290 months and saves $87,256. The model assumes a fixed-rate loan and counts principal and interest only, leaving out taxes, insurance and private mortgage insurance (PMI). Because it assumes a fixed rate, its results do not fit an adjustable-rate loan. To see your monthly payment, use the [mortgage payment calculator](/mortgage/).\n\nPlan fees can wipe out the gap between a paid biweekly plan and the free 1/12 approach. The calculator does not know any lender's fees, so enter the setup fee and per-payment fee from your plan's terms. It adds the setup fee to the per-payment fee times the number of biweekly payments. With a $395 setup fee and $2.50 per payment, the default loan pays $1,965 in fees. The net saving falls to $86,157, which is $1,099 less than adding 1/12 yourself. With $9.95 per payment and no setup fee, fees total $6,249. The net saving drops to $81,873. That is $5,383 less than the $87,256 you save with the free 1/12 approach. Some mortgages also charge a fee for paying off all or part of the loan early, so read the [Consumer Financial Protection Bureau (CFPB) explainer on prepayment penalties](https://www.consumerfinance.gov/ask-cfpb/what-is-a-prepayment-penalty-en-1957/) and your loan documents before you pay extra.\n\nBiweekly payments save less when fewer years are left on the loan. Take a $250,000 loan at 6.5% with 15 years left. Paid biweekly, it saves $19,887 and ends about 1 year and 10 months sooner. A $150,000 loan at 6% with 10 years left gains even less. It saves $5,717 and ends 1 year sooner. The calculator also assumes the servicer applies each half-payment when it arrives. A servicer that holds half-payments until a full payment builds up saves you less than the calculator shows. At a 0% rate, biweekly payments save no interest at all. On a $300,000 balance, they only shorten the loan. It ends in about 27 years and 8 months instead of 30. If you carry credit-card or other higher-rate debt, paying that first usually saves more than prepaying the mortgage. For a flat extra amount each month, use the [mortgage extra payment calculator](/mortgage/extra-payment-calculator/). For a lump sum that lowers your payment, use the [mortgage recast calculator](/mortgage-recast-calculator/), and to model other payoff plans, use the [mortgage payoff calculator](/mortgage/payoff-calculator/).\n\nThe extra 13th payment each year produces the saving, and the biweekly schedule is one way to make it. You get nearly the same saving by adding 1/12 of your payment each month yourself, for free. Pay for a biweekly plan only if its fees are small next to the interest saved and the servicer credits half-payments when they arrive. Three conditions change that answer: a prepayment penalty on the loan, a short time left on the loan, or higher-rate debt the same money could pay off first. This calculator gives educational estimates and is not financial advice. Before you sign up for a plan, enter its setup fee and per-payment fee above and compare the net saving with the monthly plus 1/12 result.",
+    "faqs": [
+      {
+        "question": "Is a biweekly mortgage payment worth it?",
+        "answer": "It is worth it when the plan is free or its fees are small. Take a $300,000 loan at 6.5% over 30 years. Biweekly payments save $88,122 of interest, and adding 1/12 a month saves $87,256 with no fee. On that loan, a plan fee above $866 leaves you worse off than the free approach."
+      },
+      {
+        "question": "Do biweekly mortgage payments really work?",
+        "answer": "Yes, as long as the servicer applies each half-payment when it arrives. Paying every two weeks makes 26 half-payments a year, which equals 13 full payments instead of 12. A servicer that holds half-payments until a full payment builds up saves you less than the calculator shows."
+      },
+      {
+        "question": "Are biweekly mortgage payments better than one extra payment a year?",
+        "answer": "Biweekly payments add one extra monthly payment over a year. The calculator does not model a single lump payment once a year, so it compares biweekly with adding 1/12 of the payment each month. On the default loan, biweekly saves $88,122 and the 1/12 approach saves $87,256. You can make extra payments yourself without a paid plan, as long as your loan has no prepayment penalty."
+      },
+      {
+        "question": "How many years do biweekly payments take off a 30-year mortgage?",
+        "answer": "It depends on your rate and loan. Take the default loan at 6.5%. Paid biweekly, it ends after about 24 years and 2 months. In our $200,000 at 4% scenario, the loan ends about 4 years and 1 month sooner, and in our $400,000 at 7% scenario it ends about 6 years and 3 months sooner."
+      },
+      {
+        "question": "Does paying biweekly lower my monthly payment?",
+        "answer": "No, each biweekly payment is half your monthly payment, and you make more payments over a year. On the default loan, $948.10 every two weeks replaces $1,896.20 a month. To lower the payment itself with a lump sum, use the [mortgage recast calculator](/mortgage-recast-calculator/)."
+      },
+      {
+        "question": "What is the difference between biweekly and bi-monthly payments?",
+        "answer": "Biweekly means every two weeks, which makes 26 half-payments a year. Bi-monthly means twice a month, which makes 24 half-payments a year. Those 24 half-payments equal 12 full payments, so a bi-monthly schedule adds no extra payment. Only the biweekly schedule makes the 13th payment."
+      },
+      {
+        "question": "Should I pay a fee for a biweekly payment plan?",
+        "answer": "Only if the fee is small next to the interest saved. On the default loan, a $395 setup fee plus $2.50 per payment costs $1,965. A $9.95 fee per payment costs $6,249 and leaves less saving than adding 1/12 yourself for free."
+      },
+      {
+        "question": "What should I check before switching to biweekly payments?",
+        "answer": "Look at your loan documents for a prepayment penalty, a fee some mortgages charge for paying off all or part of the loan early ([CFPB: What is a prepayment penalty?](https://www.consumerfinance.gov/ask-cfpb/what-is-a-prepayment-penalty-en-1957/)). Ask your servicer whether it applies each half-payment when it arrives or holds it until a full payment builds up. Then enter any plan fees in the calculator above and compare the net saving with the free 1/12 approach."
+      }
+    ],
+    "sources": [
+      {
+        "label": "CFPB: What is a prepayment penalty?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-prepayment-penalty-en-1957/"
+      }
+    ],
+    "updated": "2026-10-28",
+    "defaultPreset": {
+      "balance": 300000,
+      "ratePct": 6.5,
+      "yearsLeft": 30,
+      "setupFee": 0,
+      "perPaymentFee": 0
+    }
+  },
 ];
 
 export const CALC_BY_ID: Record<string, CalculatorDef> = Object.fromEntries(

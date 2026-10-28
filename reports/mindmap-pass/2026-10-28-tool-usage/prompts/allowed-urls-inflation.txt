@@ -1,0 +1,2 @@
+https://data.bls.gov/timeseries/CUUR0000SA0
+https://www.bls.gov/cpi/

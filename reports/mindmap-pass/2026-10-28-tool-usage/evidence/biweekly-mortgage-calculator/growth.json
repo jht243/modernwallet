@@ -1,0 +1,20 @@
+{
+ "origin_routine": "tool-usage-mindmap-auto",
+ "route": "/biweekly-mortgage-calculator/",
+ "canonical": "https://www.themodernwallet.com/biweekly-mortgage-calculator/",
+ "query_family": "biweekly mortgage calculator; is a biweekly mortgage payment worth it",
+ "hypothesis": "A biweekly calculator with fee drag and the free alternative earns clicks on the biweekly family (1,900/mo)",
+ "primary_metric": "incremental Google clicks (GSC)",
+ "baseline": "not-yet-published",
+ "comparator": "age-matched new calculator routes from 2026-10-28 (rent-vs-buy, stock capital gains)",
+ "windows": {
+  "day28": "first 28 complete live days",
+  "day56": "second 28 complete live days"
+ },
+ "change_scope": "new route",
+ "source_refresh_trigger": "none (arithmetic)",
+ "deployment": {
+  "status": "not-deployed"
+ },
+ "outcome": "pending"
+}

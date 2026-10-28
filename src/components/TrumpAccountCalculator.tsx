@@ -57,12 +57,15 @@ export default function TrumpAccountCalculator({ initialData, heading, subheadin
               The {fmtUSD(SEED_AMOUNT)} federal seed goes only to children born 2025 through 2028. If your child was born before 2025, set the federal seed to $0.
             </div>
           )}
-          <Field label={`Yearly family contribution (family + employer max $${FAMILY_AGGREGATE_CAP.toLocaleString()})`}>
+          <Field label="Yearly family contribution (parents, relatives, friends)">
             <Money v={v.annualFamilyContribution} on={(x) => set({ annualFamilyContribution: x })} />
           </Field>
           <Field label={`Yearly employer contribution (max $${EMPLOYER_SUBCAP.toLocaleString()}, counts toward the $${FAMILY_AGGREGATE_CAP.toLocaleString()})`}>
             <Money v={v.annualEmployerContribution} on={(x) => set({ annualEmployerContribution: x })} />
           </Field>
+          <div style={S.hint}>
+            Enter family and employer money once each. Together they are capped at ${FAMILY_AGGREGATE_CAP.toLocaleString()} a year, and the employer part at ${EMPLOYER_SUBCAP.toLocaleString()}.
+          </div>
           <Field label="Expected annual return %"><Pct v={v.annualReturnPct} on={(x) => set({ annualReturnPct: x })} /></Field>
           {r.capWarning && <div style={S.warn}>⚠️ {r.capWarning}</div>}
         </div>

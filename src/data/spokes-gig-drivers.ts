@@ -27,7 +27,7 @@ export const GIG_DRIVER_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "doordash-taxes",
-    updated: "2026-09-05",
+    updated: "2026-10-28",
     title: "DoorDash Taxes: What Dashers Owe in 2026",
     metaDescription:
       "DoorDash taxes in 2026: the 1099-NEC threshold rose to $2,000, mileage is your biggest deduction, and most part-time Dashers owe SE tax only.",
@@ -96,7 +96,7 @@ export const GIG_DRIVER_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "uber-driver-taxes",
-    updated: "2026-09-09",
+    updated: "2026-10-28",
     title: "Uber Driver Taxes: 1099-K, Fees, and Mileage",
     metaDescription:
       "Uber driver taxes in 2026: your 1099-K shows gross fares before Uber's fees, so deduct them. See what you owe after mileage at the 2026 IRS rates.",
@@ -168,7 +168,7 @@ export const GIG_DRIVER_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "uber-eats-taxes",
-    updated: "2026-09-05",
+    updated: "2026-10-28",
     title: "Uber Eats Taxes: What Couriers Owe in 2026",
     metaDescription:
       "Uber Eats taxes for couriers in 2026. Deduct Uber's fees and your mileage at the new split IRS rates, then see the self-employment tax you actually owe.",
@@ -232,7 +232,7 @@ export const GIG_DRIVER_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "lyft-driver-taxes",
-    updated: "2026-09-05",
+    updated: "2026-10-28",
     title: "Lyft Driver Taxes: Fees, Mileage, and 1099s",
     metaDescription:
       "Lyft driver taxes for 2026. Your 1099-K reports gross fares before Lyft's commission — deduct it, deduct your mileage, and see what you really owe.",
@@ -296,7 +296,7 @@ export const GIG_DRIVER_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "instacart-taxes",
-    updated: "2026-09-05",
+    updated: "2026-10-28",
     title: "Instacart Taxes for Shoppers (2026 Guide)",
     metaDescription:
       "Instacart taxes in 2026: full-service shoppers are self-employed, mileage is the biggest deduction, and the 1099-NEC threshold rose to $2,000.",
@@ -360,7 +360,7 @@ export const GIG_DRIVER_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "amazon-flex-taxes",
-    updated: "2026-09-05",
+    updated: "2026-10-28",
     title: "Amazon Flex Taxes: A Driver's Guide (2026)",
     metaDescription:
       "Amazon Flex taxes in 2026. Block pay is gross with nothing withheld — deduct mileage at the new split IRS rates and see the self-employment tax you owe.",
@@ -424,7 +424,7 @@ export const GIG_DRIVER_SPOKES: SpokeEntry[] = [
   {
     calculator: "self-employment-tax",
     slug: "shipt-taxes",
-    updated: "2026-09-05",
+    updated: "2026-10-28",
     title: "Shipt Taxes for Shoppers (2026)",
     metaDescription:
       "Shipt shopper taxes in 2026. No withholding, a $2,000 1099-NEC threshold, and mileage as your largest deduction — see what you actually owe.",

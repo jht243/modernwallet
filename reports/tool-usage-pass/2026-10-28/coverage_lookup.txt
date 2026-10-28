@@ -1,0 +1,62 @@
+coverage_lookup: 2 candidate(s) vs 795 repo pages / 805 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 996 past-chart lines
+
+### /salary-inflation-calculator  — row 10 · create new content
+keyword: did my pay keep up?; salary inflation calculator; How to calculate inflation rate for salary?
+reader question (new page intent): "How much should my salary go up with inflation?" [PAA 2/6 method/raise, 3/6 past-salary-worth-today, 1/6 off-topic ("Was $20 a lot in 1976?"); ac 12/16 on salary/raise calculators]
+lookup terms: salary inflation did pay keep up calculate rate   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-27-trend-lane-c.md [table] | 1 | source: coverage (Lens 2, adjacent to top-20 query "how long will my money last calculator nerdwallet"). Cluster: how long will my money last 14,800/mo KD 0 (head, owned by /investing/withdrawal-calculator and /ret
+- 2026-10-27-xtrends.md [table] | 1 | Lens 1 (direct intent, scout bullet "Car loan interest deduction calculator"). `car loan interest deduction` 12,100/mo, KD 6, CPC $0.03 (DataForSEO measured, US, 2026-10-27); `auto loan interest deduction` 4,400/mo
+- 2026-10-28-tool-usage.md [table] | 4 | Lens 1 (tool usage, inflation-calculator — 20 people). Persona: 41-year-old who earned $52,000 in 2010, now $78,000. Walkthrough: every field projects forward from today; with a guessed 2.6% rate the tool answers 2
+- 2026-10-28-tool-usage.md [table] | 10 | Lens 2 (next tool after inflation-calculator — the same persona's real job: "did my pay keep up?"). `salary inflation calculator` **3,600/mo KD 43** (dataforseo); PAA: "How to calculate inflation rate for salary?"
+- 2026-10-28-tool-usage.md [table] | 11 | Lens 2 (carried spec from 2026-10-14 and 2026-10-21; seed mortgage — the homeowner weighing a servicer's biweekly offer). `biweekly mortgage calculator` **1,900/mo KD 0** (dataforseo); ac: "is a biweekly mortgage 
+- 2026-10-28-tool-usage.md [table] | Salary vs inflation | salary inflation calculator (3,600); annual salary inflation calculator (ac); salary inflation calculator by year (ac); how much should my salary go up with inflation (PAA) | coverage gap at theme
+Commits naming the topic: none
+Same run overlap: none
+
+### /biweekly-mortgage-calculator  — row 11 · create new content
+keyword: biweekly mortgage calculator; is a biweekly mortgage payment worth it; are biweekly mortgage payments better
+reader question (new page intent): "Is a biweekly mortgage payment worth it?" [PAA 0/0 returned; ac 4/51 verdict ("worth it", "better", "work"), 47/51 definitional or lender-search]
+lookup terms: biweekly mortgage payment better   format cues: calculator review
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/commercial-mortgage-calculator-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage payment · same format: calculator]
+    title: Commercial Mortgage Calculator: Payment & Balloon
+    desc:  Estimate a commercial mortgage payment, the DSCR lenders require, and the balloon balance due at the end of a typical 10-year loan term.
+- /auto-loan/extra-payment-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on biweekly payment · same format: calculator]
+    title: Auto Loan Extra Payment Calculator: Biweekly vs Extra
+    desc:  Use this auto loan extra payment calculator to compare biweekly vs. extra monthly payments and see how much interest and time you save on your car loan.
+- /mortgage/piti-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on mortgage payment · same format: calculator]
+    title: PITI Mortgage Calculator: All-In Monthly Payment
+    desc:  Calculate your full PITI mortgage payment — principal, interest, property taxes, homeowner's insurance, and PMI — to see what you truly owe each month.
+- /compare/fixed-vs-arm-mortgage  [in sitemap · src/data/comparisons.ts · topic match 0.5 on mortgage better]
+    title: Fixed vs ARM Mortgage: Which Rate Will Save You More?
+    desc:  Fixed vs ARM mortgage compared: rate stability, initial rates, long-term cost, and which loan type saves more for your situation.
+- /guides/40-year-mortgage-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage payment]
+    title: 40-Year Mortgage Explained: Payment, Cost, and Who Qualifies
+    desc:  A 40-year mortgage lowers your payment but adds over $200,000 in interest on a typical loan. See the real numbers and who actually qualifies.
+- /compare/15-year-vs-30-year-mortgage  [in sitemap · src/data/comparisons.ts · topic match 0.5 on mortgage payment]
+    title: 15-Year vs 30-Year Mortgage: Which Loan Saves More?
+    desc:  15-year vs 30-year mortgage compared: monthly payments, total interest, rates, and which loan saves you more money over time.
+- /compare/va-loan-vs-conventional-loan  [in sitemap · src/data/comparisons.ts · topic match 0.5 on mortgage better]
+    title: VA Loan vs Conventional Loan: Which Saves More?
+    desc:  VA loan vs conventional loan compared: down payment, funding fee vs PMI, interest rates, eligibility, and which mortgage saves veterans the most money.
+- /compare/fha-vs-conventional-loan  [in sitemap · src/data/comparisons.ts · topic match 0.5 on mortgage better]
+    title: FHA vs Conventional Loan: 2025 Key Differences
+    desc:  FHA vs conventional loan compared for 2025: down payment, credit score, mortgage insurance, and loan limits. See which mortgage fits your budget.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-25.md [table] | 2 | **Lens 1 (direct intent — brief item 1, house buying).** `home buying checklist` **1,600/KD 5** (primary), `home buying process checklist` 1,000/KD 7, `what to look for when buying a house` 1,700/KD 0 (secondary on
+- 2026-10-27-podcast.md [table] | 3 | Direct intent (podcast: Rental Income Podcast Ep 510 "Does It Make Sense To Buy Rentals With 15 Year Mortgages?"). Cluster: 15 year mortgage for rental property ~250/mo (DataForSEO ESTIMATE band 250-2,500, NOT meas
+- 2026-10-28-autocomplete.md [table] | 1 | Lens 1 (seed "rent vs buy calculator", 158 completions). `rent vs buy calculator` 14,800/mo KD 49 CPC $1.06 and `rent or buy calculator` 14,800/mo KD 49 (DataForSEO measured, US, 2026-10-28); `rent vs buy calculato
+- 2026-10-28-autocomplete.md [exclusions] - `mortgage payment calculator with pmi` (2,400, KD 66), down payment and home affordability variants (`home affordability calculator by income` est.; `how much is 10 percent down payment` 10): DROP, /mortgage/ calculato
+- 2026-10-28-tool-usage.md [table] | 11 | Lens 2 (carried spec from 2026-10-14 and 2026-10-21; seed mortgage — the homeowner weighing a servicer's biweekly offer). `biweekly mortgage calculator` **1,900/mo KD 0** (dataforseo); ac: "is a biweekly mortgage 
+- 2026-10-28-tool-usage.md [table] | Biweekly mortgage payments | biweekly mortgage calculator (1,900); is a biweekly mortgage payment worth it (ac); are biweekly mortgage payments better (ac); do biweekly mortgage payments work (ac) | coverage gap at the
+Commits naming the topic: none
+Same run overlap: none
+

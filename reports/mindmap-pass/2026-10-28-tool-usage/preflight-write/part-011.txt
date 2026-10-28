@@ -1,0 +1,21 @@
+.claude/commands/_content-generation.md — characters 18000 onward
+
+*. The whole page
+is already written in voice by the writer model, and a second re-voice call only adds cost and
+fact-drift risk. The two things that step protected — the number/link fact guard and house-style
+normalisation — now run inside the generator. Sections generated through `section` are exempt
+the same way; a page that only had a one-sentence edit is untouched by this rule.
+
+## Rollout (edit as routines migrate)
+
+| Routine | Status |
+|---|---|
+| `mindmap-pass` | migrated (pilot shipped a live page 2026-09-06) |
+| `keyword-gap-pass`, `seo-gsc-pass` (+ `autocomplete-pass`, `amazon-gear-radar`, `ahrefs_winner_loser_pass`, `-rank-tracker` by inheritance) | migrated — Phase 3 regenerated from the mindmap version |
+| `podcast-pain-pass`, `seminar-pass` (writer-standard) | migrated |
+| `content-request-fulfillment-auto`, `search-gap-content-auto`, `youtube-video-pass` | migrated by delegation to mindmap-pass Phase 3 |
+| `comparison-content-creator` (+ `roundup-pass`, `vertical-roundup-auto`, `comparison-content-auto`), `trend-pass`, `ga4-top-pages-pass`, `competitor-monitor`, `downloadable-asset-pass`, `amazon-gear-radar`, `indexing-issues-gsc-pass` (Mode B), `pdf-for-sale` (product page) | migrated — governing block at the top of each writer phase; new-page lanes only |
+| **Enrichment** — `question-gap-pass`, `page-quality-pass`, `ai-answer-citation-pass`, `*/phase-3b-enrich.md`, `*/phase-5-body.md`, indexing Mode A | migrating 2026-09-06 via the `section` command (see "Enrichment" above); >1 sentence = API, ≤1 sentence = in-context |
+| `new-ai-model-pass` | stays on its own `model_radar` pipeline for now (radar track) |
+| fleet repos | generator + contract + mindmap Phase 3 synced 2026-09-06; the other routine phases sync in the next fleet pass |
+| client routines (getopt, harmonica) | NOT yet — hold |

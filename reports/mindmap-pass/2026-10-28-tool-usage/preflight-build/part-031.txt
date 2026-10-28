@@ -1,0 +1,50 @@
+.claude/commands/mindmap-pass.md — characters 18000 onward
+
+plained`, `{model}-pricing`, `{model}-limits`, `{model}-review`, `{model}-benchmarks`, `how-to-use-{model}`, `{model}-alternatives`, and `is-{model}-worth-it` (flagship releases only) — plus **three DISTINCT comparison kinds**, which generic Lens-3 `{entity} vs {rival}` mining does NOT cover on its own: **(1) same-line predecessor** `{model}-vs-{prev}` — the prior generation of the SAME product line, the "is the upgrade worth it" query, never a sibling and never a rival; **(2) cross-vendor flagship** `{model}-vs-{rival}` — another vendor's current flagship; **(3) same-vendor different-line sibling** `{model}-vs-{sibling}` (e.g. Claude Opus 5 vs Claude Mythos 5) — a *routing* question ("which of theirs do I use"), not an upgrade question. Then access rows (`{model}-api-pricing` where the vendor ships an API, `is-{model}-free` where a free/trial tier exists) and the launch verticals (`{model}-for-coding`, `-for-writing`, `-for-education`, `-for-research`, `-for-data-analysis`). **These rows are exempt from the thin-volume filter.** A model released this week has no SEMRUSH history, so missing volume is *expected* and is NEVER grounds to drop a Tier 0 row — label it `demand inferred — launch, no tool volume yet`, cite the launch as the signal, and sort it above every other row in the chart. Only genuine dedup (that exact page already shipped) removes one; record those under exclusions. **Never fabricate a price, rate limit, context window, or benchmark score** — copy the vendor's published page or omit the number and tell the reader to verify, because these change without notice. If `docs/model-launch-page-family.md` exists in this repo, follow it as the source of truth (it supersedes this list); otherwise apply the list above verbatim.
+3. **Stage, don't commit, until Phase 9.** Each phase `git add`s its work; only Phase 9 commits/pushes. The pass stays atomic until the end.
+4. **Reviewer authority + remediation ladder.** On rejection, fix at the cheapest rung that can fix it — see `.claude/commands/_remediation-ladder.md`, which is mandatory and governs every gate in this workflow: mechanical lint → reviewer-supplied FIX-IN-PLACE applied without a writer round-trip → REWORK by the writer for that page only. Only a REWORK counts as an attempt. **Max 2 rework attempts per PAGE**; after the second failed rework, STOP this workflow and escalate with the unresolved findings. Do not continue to commit, push or publish. Higher-priority user/project gate rules override older drop-and-continue instructions. Pages that already passed need no repeat audit unless their content changes.
+5. **Verify targets exist** before acting; otherwise flag under "Ambiguous / skipped."
+6. **No invented data** — no fabricated volumes, positions, difficulty, backlinks, or stats. SEMRUSH figures are real or the row is labeled `no tool volume` / `demand inferred — no tool volume yet` with its signal cited.
+6a. **Update & add — NEVER regenerate or delete. This is a hard rule and a quality safeguard.** Existing pages are improved by **targeted, in-place edits** (precise `Edit` operations) that add or change only what a chart row calls for. **Never** rewrite, overwrite, or "rebuild" a whole existing page, and **never** run a script/generator that regenerates page content wholesale. Preserve all existing body copy, sections, schema, and internal links not named by the chart. Consolidation is **not executed** by this workflow — Phase 1 only *detects and flags* cannibalization for a human; it writes no canonical, 301, or page edit. New content (Phase 3) only creates **net-new** routes — it never touches or replaces an existing page. If acting on a row would require regenerating or deleting a page, STOP and flag it instead.
+7. **Report after every phase, then AUTO-CONTINUE. Do not ask the user for permission to proceed.** There is EXACTLY ONE human stop in the entire run — nowhere else:
+   - **Stop 1 — end of Phase 0:** print the chart manifest, wait for approval before starting Phase 1.
+   At every other phase boundary (1→2, 2→5, 3→4, 4→6, 5→6, 6→7, 7→8, **and 8→9 push**), immediately begin the next phase. The reviewer gates between phases are AUTOMATIC adversarial subagents, not human gates — passing one means proceed on your own. **Never** print "Want me to proceed?", "Should I continue?", or any equivalent at a non-stop boundary. The only time you wait for the human is Stop 1.
+
+## Phase map — every phase is its own file; READ that file when you reach the phase
+Each phase's full instructions + reviewer checklist live in its own file. When you reach a phase, **read that file and follow it exactly.** No phase instructions are inline in this orchestrator — this table is the only index.
+
+| Phase | Instruction file (read this when you reach the phase) | Gate |
+|---|---|---|
+| STEP 1 — Build chart from the input brief | `.claude/commands/mindmap-pass/phase-build-brief.md` | **Duplicate-suppression gate** (adversarial reviewer drops already-shipped rows) — fed by `scripts/mindmap/coverage_lookup.py` (existing pages that may serve the same reader, with title + description; evidence only) + Phase 0 manifest gate |
+| 0 — Load chart + discover + manifest | `.claude/commands/mindmap-pass/phase-0-discover.md` | **HARD HUMAN GATE** — manifest approval |
+| 1 — Cannibalization detection (**advisory only**, no edits) | `.claude/commands/mindmap-pass/phase-1-consolidation.md` | reviewer checklist in file |
+| 2 — Metadata fixes | `.claude/commands/mindmap-pass/phase-2-metadata.md` | reviewer checklist in file |
+| 3 — New content | `.claude/commands/mindmap-pass/phase-3-new-content.md` | gated by Phase 4 |
+| 3c — Build tool rows | `.claude/commands/mindmap-pass/phase-3c-tool-build.md` | called from Phase 3; gated by Phase 4 |
+| 4 — New-content audit | `.claude/commands/mindmap-pass/phase-4-audit.md` | this IS the gate for Phase 3 |
+| 5 — Body text | `.claude/commands/mindmap-pass/phase-5-body.md` | reviewer checklist in file |
+| 6 — Internal linking | `.claude/commands/mindmap-pass/phase-6-internal-linking.md` | reviewer checklist in file |
+| 7 — Sitemap + IndexNow **prep** (no submit) | `.claude/commands/mindmap-pass/phase-7-sitemap-indexnow.md` | reviewer checklist in file |
+| 8 — Summary (informational) | `.claude/commands/mindmap-pass/phase-8-summary.md` | none — auto-continues to Phase 9 |
+| 9 — Commit + deliver + 200-verify + IndexNow submit (live URLs) | `.claude/commands/mindmap-pass/phase-9-commit-deliver.md` | reviewer checklist in file |
+
+## Phase Summary template (print after every phase, then immediately continue)
+```
+### Phase <n> — <name> — <PASS | FAIL | ESCALATED>
+- Rows actioned: <n>   Files touched: <list>
+- Reviewer verdict: <pass / rejected-then-fixed / hard-fail>
+- Ambiguous / skipped: <rows + why, or "none">
+- Continuing to Phase <n+1>...   ← then DO it; do not stop or ask
+```
+The "Continuing to Phase <n+1>" line is a statement of fact, NOT a question. After printing it, start the next phase in the same turn. The only exception is Stop 1 (Phase 0 manifest), where the line instead reads "Waiting for your approval before starting Phase 1." Phase 8 → Phase 9 is NOT an exception — print the summary and continue straight to the push.
+
+## Final report (after Phase 9)
+Totals by bucket, files created/modified, **the interpreted brief + the adjacent-demand clusters SEMRUSH surfaced and how each was actioned (new content / enriched page / metadata / flagged)**, consolidation losers, **Live verification (each created/changed URL → 200 OK or FAILED)**, IndexNow status, commit SHA / PR URL, and every "Ambiguous / skipped" row for the user to resolve manually.
+
+**The report MUST open with a `## Duplicate check` section** — one line copied from the Phase 0 manifest's Duplicate check row (`passed — N new-page rows checked, M matched an existing page`, or `FAILED — <rows>`). Any routine that wraps /mindmap-pass (X trends, search gap, chat requests, trend pass, hype radar, inbox, YouTube) puts this same section first in the email it sends.
+
+**The report MUST end with a `🔗 New pages` section**: a clickable markdown link (page title as text, full absolute `https://` URL as target) for EVERY newly created page that verified 200, so the user can open each page directly from the chat. Enriched existing pages get a separate `Updated pages` link list; failed/reverted pages a separate `⚠️ Not live` list. Nothing comes after this section. (Details in `phase-9-commit-deliver.md` step 8.)
+
+## IndexNow Fallback Key (workflow-wide)
+
+**Submit with the fleet helper first:** `python3 .claude/scripts/indexnow-submit.py --urls-file <list>` (or pass the URLs as arguments). It uses the key Bing accepts for this host (a few hosts are pinned to an older key, so the fleet key returns 403 there), tries api.indexnow.org, then www.bing.com, then yandex.com, and relays through layer3labs-web `/api/indexnow-relay` when the sandbox blocks those hosts. Exit 0 means accepted. Use the manual steps below only if

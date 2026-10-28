@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   calculateSelfEmploymentTax,
   type SelfEmploymentTaxInput,
@@ -6,6 +6,18 @@ import {
   SS_WAGE_BASE_2026,
 } from "../lib/self-employment-tax";
 import { fmtUSD, fmtPct } from "../lib/format";
+import ToolPicks, { book } from "./ToolPicks";
+
+// Form 1040-ES (2026) payment due dates, from the IRS form's "Payment Due Dates" section
+// (https://www.irs.gov/pub/irs-pdf/f1040es.pdf, read 2026-10-28). The 4th payment can be skipped if the 2026
+// return is filed by February 1, 2027 with the full balance paid. Tool-usage pass 2026-10-28.
+const ES_DUE_DATES: { label: string; iso: string }[] = [
+  { label: "April 15, 2026", iso: "2026-04-15" },
+  { label: "June 15, 2026", iso: "2026-06-15" },
+  { label: "Sept. 15, 2026", iso: "2026-09-15" },
+  { label: "Jan. 15, 2027", iso: "2027-01-15" },
+];
+const QUARTERLY_ROUTE = "/self-employment-tax/quarterly-estimated-tax-calculator/";
 
 // Self-employment / 1099 tax island. The headline answer is deliberately the SET-ASIDE SHARE, not
 // a total tax bill: the question people actually arrive with is "how much of this invoice isn't
@@ -69,6 +81,25 @@ export default function SelfEmploymentTaxCalculator({
   const [input, setInput] = useState<SelfEmploymentTaxInput>({ ...DEFAULTS, ...presetNumbers });
   const result = useMemo(() => calculateSelfEmploymentTax(input), [input]);
   const set = (patch: Partial<SelfEmploymentTaxInput>) => setInput((s) => ({ ...s, ...patch }));
+  // Today's date and route are read after hydration so the static HTML stays the same for every visitor.
+  const [today, setToday] = useState<string | null>(null);
+  const [onQuarterlyPage, setOnQuarterlyPage] = useState(false);
+  useEffect(() => {
+    setToday(new Date().toISOString().slice(0, 10));
+    setOnQuarterlyPage(window.location.pathname.replace(/\/?$/, "/") === QUARTERLY_ROUTE);
+  }, []);
+  const nextDue = today ? ES_DUE_DATES.find((d) => d.iso >= today) ?? null : null;
+
+  // Further reading (YMYL tax → books). No self-employment tax under $400 of net earnings, so no picks there.
+  const picks =
+    input.netProfit >= 400
+      ? [
+          book("piperContractorTaxes", "Self-employment tax, quarterly payments and deductions in one short read."),
+          book("workingForYourself", "The law and tax rules that come with working for yourself."),
+          book("deductIt", "Deductions that lower the profit this percentage applies to."),
+          book("lasser2027", "A full guide for filing this year's return."),
+        ]
+      : [];
 
   return (
     <div style={S.wrap}>
@@ -149,6 +180,26 @@ export default function SelfEmploymentTaxCalculator({
               value={fmtPct(result.effectiveSeRateOnProfit * 100, 2)}
             />
           </div>
+          <div style={S.dueBox}>
+            <span style={S.dueLabel}>2026 estimated tax due dates (Form 1040-ES)</span>
+            <ul style={S.dueList}>
+              {ES_DUE_DATES.map((d) => (
+                <li key={d.iso} style={nextDue?.iso === d.iso ? S.dueNext : undefined}>
+                  {d.label}
+                  {nextDue?.iso === d.iso ? " (next)" : ""}
+                </li>
+              ))}
+            </ul>
+            <span style={S.dueNote}>
+              A date on a weekend or holiday moves to the next business day. You can skip the January payment if you file by February 1, 2027 and pay the full balance.
+              {!onQuarterlyPage && (
+                <>
+                  {" "}For the safe-harbor amount that avoids the underpayment penalty, use the{" "}
+                  <a href={QUARTERLY_ROUTE} style={{ color: PRIMARY }}>quarterly estimated tax calculator</a>.
+                </>
+              )}
+            </span>
+          </div>
 
           <div style={S.breakdown}>
             <Row
@@ -208,6 +259,7 @@ export default function SelfEmploymentTaxCalculator({
             include state or local income tax, a self-employed health insurance or retirement
             deduction, or tax credits.
           </div>
+          <ToolPicks tool="self-employment-tax" heading="Further reading on taxes when you work for yourself" picks={picks} />
         </div>
       </div>
     </div>
@@ -284,6 +336,11 @@ const S: Record<string, React.CSSProperties> = {
   stat: { display: "flex", flexDirection: "column", gap: 1 },
   statLabel: { fontSize: "0.78rem", color: "#666" },
   statValue: { fontSize: "1.15rem", fontWeight: 700, fontVariantNumeric: "tabular-nums" },
+  dueBox: { display: "flex", flexDirection: "column", gap: 4, border: "1px solid #E0EBE7", borderRadius: 10, padding: "10px 12px", background: "#fff" },
+  dueLabel: { fontSize: "0.78rem", fontWeight: 600, color: "#2A6A58" },
+  dueList: { margin: 0, paddingLeft: 18, fontSize: "0.85rem", lineHeight: 1.6, color: "#333" },
+  dueNext: { fontWeight: 700, color: PRIMARY },
+  dueNote: { fontSize: "0.76rem", color: "#666", lineHeight: 1.5 },
   breakdown: { display: "flex", flexDirection: "column", gap: 6, borderTop: "1px solid #E6F0EC", paddingTop: 10 },
   row: { display: "flex", justifyContent: "space-between", gap: 12, fontSize: "0.83rem" },
   rowLabel: { color: "#666" },

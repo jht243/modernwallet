@@ -1,0 +1,60 @@
+.claude/commands/tool-usage-mindmap-auto.md — characters 18000 onward
+
+it only):**
+1. **Variety, ranked (owner rule 2026-10-13).** List EVERY kind of item this person could buy to act on the result — not one product type. Hardware calculator example: complete computers (Mac Studio / Mac mini with enough unified memory, prebuilt AI workstations, mini PCs), the GPU itself, then what the build also needs (RAM, power supply, NVMe drive), then books/courses on running local models. Rank the list by priority: (1) how directly it completes the visitor's job for THIS result, (2) how likely this persona buys it (a dev lead buys a whole machine before parts), (3) order value. Aim for **3+ product types** in the ranked list for every `fit` tool.
+   Then map the tool's OUTPUT tiers to the ranked list (e.g. ≤16 GB → Mac mini 24–32 GB, 16 GB card, 32 GB RAM kit · ≤24 GB → Mac Studio 64 GB, RTX 4090 prebuilt, 24 GB card · ≤48 GB → Mac Studio 128 GB, 48 GB workstation card · above → "rent, don't buy"). Every tier gets its picks **in priority order, highest first**, or an explicit "nothing to buy here" (rent / use what you own). Books work on any tool where a book genuinely helps more than a product (search with `--index Books`). Include the honest non-purchase option when one exists (cloud GPU, a free alternative) — via the site's referral constant if it has one.
+2. Find real listings: `python3 scripts/tool_usage/amazon_pick.py "<exact product phrase>" ["<phrase 2>" …] --index Electronics` (`--index Books` for books — search by exact title + author) (Creators API; returns real ASINs + titles with the site's tag). Pin the ASIN whose title names the exact brand + model you mean — no resellers, renewed units, clones or bundles. Nothing confident → keep the search link it returns. **Never type an ASIN the script didn't return.**
+3. Write `## Monetization` in the persona file: `Verdict: fit|no-fit|blocked`, then the reasoning in the persona's terms, then (fit/blocked) the **ranked product-type list** (numbered, highest priority first) and the tier → pick table with ASINs and the one-line "why this, for this result".
+
+**Each `fit` becomes one chart row:** bucket `update existing body text`, **format `tool monetize`**, target = the component file + route, problem = the persona + the result that triggers the purchase, solution = the tier → product table with ASINs, the link helper, and where it renders. The `chart` gate fails if a `fit` tool has no `tool monetize` row.
+
+**How picks appear in the tool** (the auditor fails a row that breaks one; the Tool-fix guardrails below apply too):
+- Inside the result panel, BELOW the answer, only after the visitor computes; picks change when the result changes. Never above the answer, never a popup, never delaying or hiding the result.
+- Wrapped in `<div data-tool-picks="<tool slug>">` (the `live` gate looks for it). Heading in plain words tied to the result ("Hardware that fits 24 GB"). Up to 5 picks per tier, shown in priority order (highest first), mixing product types where they fit (a complete computer, the part, the accessory); each = product name + one line on why it fits THIS number + a "Check price on Amazon" button.
+- No price, rating, stars, stock or "deal" claims stored in code (Amazon's 24-hour rule) — the button sends them to the live price.
+- Links: the site's helper with its tag, `target="_blank"`, `rel="sponsored nofollow noopener noreferrer"`. One disclosure line directly under the picks: "As an Amazon Associate we earn from qualifying purchases."
+- Monetization stays in the tool: no affiliate links added to the page's prose in this run (that is /monetization-pass's job).
+
+
+For each `persona` tool only: list the 2–3 jobs this same person does right before or right after this one (noise meter → a voice-level chart to print, a "quiet work" timer that ties to the meter; TSP withdrawal calculator → TSP vs IRA rollover comparison). Each becomes a `create new content` row, format `interactive tool` / `calculator` / `quiz/assessment`, with the seed tool + persona card as the `problem` evidence and what the tool DOES (inputs → outputs) in `solution`.
+
+Client-side, deterministic tools only (no tool that costs us an API call per use). Do not dedup or validate here — mindmap's coverage lookup and demand ladder do that.
+
+## STEP 5 — Run /mindmap-pass in full, unattended
+Write the STEP 3 + STEP 4 rows, the persona cards and the usage numbers into one brief and run **`/mindmap-pass` in full** — every phase, in order, the same way the X-trends routine does. **Read each phase file; do not paraphrase.**
+
+> Unattended run: save the chart to `reports/mindmap-pass/<YYYY-MM-DD>-tool-usage.md` (this exact name, so it never collides with another mindmap run today), treat the Phase 0 manifest as approved, and continue to Phase 9 without stopping.
+
+**Every phase, in order, each phase file read before you act on it** — build-brief, 0, 1, 2, 3 (+3c), 4, 5, 6, 7, 7b, 8, 9. A phase with nothing to do still runs and says "nothing to do" in the Phase 8 summary. Files the gates check:
+- after build-brief + Phase 0: save Phase 0's manifest table to `reports/tool-usage-pass/<DATE>/phase0-manifest.md`, then `tool_usage_gate.py chart`
+- Phase 4: paste the independent auditor's full report to `reports/tool-usage-pass/<DATE>/audit.md`, ending with a line `VERDICT: PASS` (or `VERDICT: FAIL` — then fix and re-audit; the gate refuses a FAIL)
+- Phase 8: save the summary to `reports/tool-usage-pass/<DATE>/phase8-summary.md`
+- before Phase 9's deploy: `tool_usage_gate.py build`, then `tool_usage_gate.py final` (STEP 7's ledger lines must already be written)
+- after Phase 9's deploy: `tool_usage_gate.py live`
+
+Demand rule: a `tool fix` row is backed by real usage — volume never vetoes it. A new-tool row needs mindmap's normal demand read, but "a real user of the seed tool needs this next" is a valid signal when keyword tools return nothing; label it so.
+
+### Tool rows: mindmap builds them (Phase 3c), this routine caps them at 3
+mindmap's Phase 3 builds `interactive tool` / `calculator` / `quiz/assessment` rows for real via `phase-3c-tool-build.md`, and Phase 4 audits them with its tool checklist. **This routine's only addition: build at most 3 new tools per run** (by demand, then by seed-tool people). Give any extra tool rows a spec (`reports/mindmap-pass/specs/<slug>-spec.md`) and list them under "Next in line"; next week's run builds those first (the ledger's `spec` lines, STEP 2).
+
+### `tool fix` rows — Phase 5 applies them, Phase 4's tool checklist audits them
+Phase 5 routes `format: tool fix` rows to a code change in the named component (not the prose writer), then bumps the page's "last updated" date in the same change, per the Phase 4 editor rule. The same independent auditor checks every tool-fix diff against Phase 4's tool checklist plus: the diff only touches what the row says, and every STEP 3 guardrail holds. Fail → fix in place (2 tries), then drop that row.
+
+### `tool monetize` rows — same path as `tool fix`
+Phase 5 applies them as code in the named component; the Phase 4 auditor additionally checks: the picks follow from each result tier (not generic), every ASIN re-resolves to the named product (`amazon_pick.py` on the same phrase), the tag is this site's `amazon_tag`, rel + disclosure + `data-tool-picks` present, no stored price/rating, the result itself is unchanged. Fail → fix in place (2 tries), then drop the row and log it under Dropped.
+
+Phases 6 (internal linking — every new tool gets a link FROM its seed tool's page, "next step" style, plus its hub), 7 (sitemap + IndexNow), 7b, 8 and 9 (commit → deploy → 200-verify → IndexNow) run unchanged.
+
+## STEP 6 — Verify before you trust it
+- The site's full build passes (Node 20).
+- Every new and changed tool URL answers 200 live.
+- Tracking still works on every new and changed tool: `PW_CORE=/tmp/pw/node_modules/playwright-core node scripts/tool_usage/verify_beacons.cjs "$BASE_URL" <path> [...]` → PASS (1 view + 1 use). No browser → `curl -s` the live page and confirm `data-tool="<slug>"` is in the HTML.
+- Re-do the persona's job once on each fixed tool: the friction you fixed is gone.
+- Monetized tools: compute at least two different result tiers in the browser — the picks change with the result, each link opens `amazon.com` with this site's tag, the disclosure shows, and the phone layout holds.
+- Any page that can't reach 200 after 2 fixes → revert it; never leave a 404 live.
+
+## STEP 7 — Ledger
+Append one line per tool to `reports/tool-usage-pass/ledger.jsonl` and commit it with the run:
+`{"date","tool","lane","people","people_7d","views","use_rate","persona","findings":[...],"shipped":[...],"monetize":"shipped"|"no-fit"|"blocked"|"dropped","picks":["<ASIN or search phrase>",...],"pick_types":["computer","gpu","ram",...],"status":"worked"}`
+(`monetize` lane tools: same line with `"status":"monetized"`.) STEP 2's catch-up reads the `monetize` field.
+and one `{"date","tool":"<new slug>","seed":"<tool>","status":"built"|"spec"|"dropped","reason"

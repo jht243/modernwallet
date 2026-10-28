@@ -5,6 +5,19 @@
 export interface CrossLink { href: string; label: string; }
 
 export const CROSS_LINKS: Record<string, CrossLink[]> = {
+  // Tool-usage pass (2026-10-28).
+  "salary-inflation-calculator": [
+    { href: "/inflation-calculator/", label: "What is any amount from a past year worth today?" },
+    { href: "/tax-bracket-calculator/", label: "Find your 2026 tax bracket" },
+    { href: "/budget/household-budget-calculator/", label: "Build a household budget on today's pay" },
+    { href: "/investing/compound-interest-calculator/", label: "Grow savings faster than inflation" },
+  ],
+  "biweekly-mortgage-calculator": [
+    { href: "/mortgage/extra-payment-calculator/", label: "Paying a flat extra amount instead? Extra payment calculator" },
+    { href: "/mortgage/payoff-calculator/", label: "See your mortgage payoff date" },
+    { href: "/mortgage-recast-calculator/", label: "Have a lump sum? Compare a recast" },
+    { href: "/mortgage/", label: "Mortgage payment calculator" },
+  ],
   // Autocomplete pass (2026-10-28).
   "rent-vs-buy-calculator": [
     { href: "/compare/renting-vs-buying/", label: "Renting vs buying: the tradeoffs explained" },
@@ -116,6 +129,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/compare/trump-account-vs-529/", label: "Trump Account vs 529: the rules" },
   ],
   "mortgage-recast-calculator": [
+    { href: "/biweekly-mortgage-calculator/", label: "Weighing biweekly payments? See what they save" },
     { href: "/mortgage/payoff-calculator/", label: "Paying extra each month instead? See the payoff date" },
     { href: "/mortgage/early-payoff-calculator/", label: "Early payoff calculator" },
     { href: "/guides/pay-off-mortgage-early-or-invest/", label: "Pay off the mortgage or invest the lump sum?" },
@@ -163,6 +177,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/compare/sinking-fund-vs-emergency-fund/", label: "Sinking fund vs emergency fund" },
   ],
   "inflation-calculator": [
+    { href: "/salary-inflation-calculator/", label: "Did your salary keep up with inflation?" },
     { href: "/guides/build-wealth-during-high-inflation/", label: "How to protect savings when inflation is high" },
     { href: "/annuity-calculator/", label: "Value a fixed payment stream or lump sum payout" },
     { href: "/investing/compound-interest-calculator/", label: "Grow money against inflation: compound interest" },

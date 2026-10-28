@@ -1,0 +1,28 @@
+{
+ "route": "/inflation-calculator/",
+ "reader_question": "What is money from a past year worth today?",
+ "method": "calculated: amount \u00d7 CPI-U(Sep 2026) \u00f7 CPI-U(year average)",
+ "sources": [
+  {
+   "id": "bls-cpiu",
+   "url": "https://data.bls.gov/timeseries/CUUR0000SA0",
+   "pulled": "2026-10-28",
+   "raw": "cpi_*.json"
+  }
+ ],
+ "findings": [
+  {
+   "label": "calculated",
+   "text": "$10,000 in 2010 = $15,452 in September 2026 dollars (+54.5%)."
+  },
+  {
+   "label": "calculated",
+   "text": "$52,000 in 2010 = $80,350."
+  }
+ ],
+ "provenance": {
+  "basis": "calculated",
+  "publicMethod": "tool footnote + howItWorks paragraph",
+  "placement": "tool past-year mode; introText; FAQ"
+ }
+}

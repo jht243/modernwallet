@@ -1,0 +1,149 @@
+coverage_lookup: 5 candidate(s) vs 795 repo pages / 805 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 975 past-chart lines
+
+### /salary-inflation-calculator/  — row - · create new content
+keyword: salary inflation calculator; did my salary keep up with inflation
+reader question (new page intent): What is my old salary worth today after inflation?
+lookup terms: salary inflation did keep up   format cues: calculator review
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-30-robinhood.md [table] | 1 | **Lens 1 (direct intent, the article's headline product) — Robinhood Agents.** "robinhood agents" 590/kd44, "robinhood agent" 590/kd47, "robinhood ai agent" 320/kd0 ($13.45 CPC); autocomplete: *robinhood agent acco
+- 2026-09-30-robinhood.md [table] | 6 | **Lens 2 (trust question the article raises: "if a trade goes wrong, users bear the risk") — Is Robinhood safe.** "is robinhood safe" 6,600/kd53 ($22.31 CPC); PAA: *Is it safe to have all my money in Robinhood?*, *
+- 2026-10-10.cannibalization.md [table] | /guides/how-long-does-bankruptcy-stay-on-credit-report/ (new) vs /compare/chapter-7-vs-chapter-13-bankruptcy/ (section "How Each Chapter Shows Up on Your Credit Report") | "how long does bankruptcy stay on credit repor
+- 2026-10-23-trend-lane-c.md [table] | 1 | source: coverage + top-10 (Lens 2 adjacent to the top-20 query "investment calculator with increasing contributions", pos 17, 1 impr). Cluster: investment calculator with increasing contributions 320/mo KD 21 (meas
+- 2026-10-26-house-viewing.md [table] | 1 | **Lens 1 (direct intent — the user's first-visit checklist).** `questions to ask when buying a house` **1,200/KD 2** (broad; viewing questions are its on-page core), `open house checklist` 450/KD 2, `questions to a
+- 2026-10-27-podcast.md [table] | 1 | Direct intent (podcast: Ready For Retirement, Catching Up to FI "4 Phases of Retirement"). Cluster: phases of retirement 480/mo KD 9 (DataForSEO measured); go-go slow-go no-go retirement ~20/mo (estimate band, NOT 
+Commits naming the topic: none
+Same run overlap: none
+
+### /florida-property-tax-calculator/  — row - · create new content
+keyword: florida property tax calculator
+reader question (new page intent): How much property tax will I pay on a Florida home?
+lookup terms: florida property tax   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/rental-property-tax-deductions  [in sitemap · src/data/guides.ts · topic match 0.67 on property tax]
+    title: Rental Property Tax Deductions Landlords Can Claim
+    desc:  Discover the top rental property tax deductions for landlords, including mortgage interest, depreciation, repairs, insurance, and mileage rules.
+- /guides/capital-gains-tax-on-inherited-property  [in sitemap · src/data/guides.ts · topic match 0.67 on property tax]
+    title: Capital Gains Tax on Inherited Property: The Stepped-Up Basis
+    desc:  Inheriting a house doesn't create an automatic tax bill. Learn how the stepped-up basis resets your cost basis at death, with a real-number example.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-25.md [table] | 5 | **Lens 1 (direct intent — brief item 4, renting out as owner/landlord).** `tenant screening checklist` 250/KD 5 ($2.00 CPC), `first time landlord checklist` 200/KD 1, `landlord checklist` 150/KD 0, `rental property
+- 2026-10-25.md [table] | 9 | **Internal-link wiring for the new /checklists/ cluster.** Existing pages whose readers are mid-decision and need the matching checklist: /guides/first-time-home-buyer-guide (parent of row 2), /compare/renting-vs-b
+- 2026-10-27-podcast.md [table] | 3 | Direct intent (podcast: Rental Income Podcast Ep 510 "Does It Make Sense To Buy Rentals With 15 Year Mortgages?"). Cluster: 15 year mortgage for rental property ~250/mo (DataForSEO ESTIMATE band 250-2,500, NOT meas
+- 2026-10-27-podcast.md [exclusions] - rental property tax deductions (1,900/mo, KD 29): DROPPED (exists). /guides/rental-property-tax-deductions.
+- 2026-10-28-autocomplete.md [table] | 2 | Lens 1 (seed "capital gains tax calculator", 281 completions). `capital gains tax calculator stocks` 480/mo KD 18 CPC $7.02 and `stock capital gains tax calculator` 480/mo KD 18 (DataForSEO measured); completions "
+- 2026-10-28-autocomplete.md [table] | Stock capital gains tax calculator | capital gains tax calculator stocks; stock capital gains tax calculator; capital gains tax calculator for stock sale; on sale of stock | coverage gap at theme level (rental-property
+Commits naming the topic: none
+Same run overlap: none
+
+### /self-employment-tax/quarterly-estimated-tax-calculator/  — row - · create new content
+keyword: quarterly estimated tax calculator
+reader question (new page intent): How much should I pay in quarterly estimated taxes?
+lookup terms: quarterly estimated tax   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /self-employment-tax/quarterly-estimated-tax-calculator  [EXACT SLUG · in sitemap · src/data/spokes-s-corp.ts · topic match 1.0 on quarterly estimated tax · same format: calculator]
+    title: Quarterly Estimated Tax Calculator (1040-ES)
+    desc:  Work out your quarterly estimated tax payments for 2026, plus the safe-harbor rule that switches off the underpayment penalty even if you owe more.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-05.md [table] | **Lens 2 — the highest-CPC how-to in the cluster and nothing on site addresses it.** "how to pay yourself llc" 3,600/mo KD 16 CPC $31.52 — low difficulty, very high commercial value. PAA: "How do you legally pay yourse
+- 2026-09-05.md [table] | Self-employment tax tooling | self employment tax calculator (9,900); 1099 tax calculator (12,100); quarterly estimated tax calculator (2,400); how much should i set aside for taxes self employed (110); why do gig work
+- 2026-10-08-ai-money.md [table] | Lens 2 — **YouTube earnings calculator**: `youtube money calculator` (9,900, KD 48), `how much does youtube pay` (5,400, KD 63), `youtube rpm` (1,000, KD 36), `youtube shorts rpm` (170). Faceless-channel videos all pro
+- 2026-10-08-ai-money.md [table] | Lens 2 (tax gap — zero YouTube coverage) — **YouTube taxes**: `youtube taxes` (210, KD 26), `how much do youtubers pay in taxes` (20); PAA "Do you pay taxes on income from YouTube?", "Do I have to file taxes if I only 
+- 2026-10-08-ai-money.md [table] | Lens 2 (tax gap) — **AI-training gig taxes**: `dataannotation taxes` (70, KD 21), `outlier ai taxes` (20); PAA (13 questions) "Do I have to pay taxes on dataannotation?", "Do you get a 1099 from data annotation?". Fits
+- 2026-10-21-tool-usage.md [table] | 12 | Lens C (monetize, real-estate). Result = an estimated federal tax on the sale incl. recapture. Verdict fit — YMYL → books. Pick types: RE-investor tax strategy, advanced RE tax planning, annual income-tax guide. |
+Commits naming the topic: none
+Same run overlap: none
+
+### /social-security-withholding-calculator/  — row - · create new content
+keyword: social security withholding calculator; tax on social security calculator
+reader question (new page intent): How much federal tax should I have withheld from Social Security?
+lookup terms: social security withholding tax   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/states-that-tax-social-security  [in sitemap · src/data/guides.ts · topic match 0.75 on social security tax]
+    title: States That Tax Social Security Benefits in 2026
+    desc:  Eight states tax some Social Security in 2026. See exemptions, income thresholds, and rules for Colorado, Connecticut, Minnesota, Montana, and others.
+- /guides/senior-deduction-social-security  [in sitemap · src/data/guides.ts · topic match 0.75 on social security tax]
+    title: Social Security Tax Deduction for Seniors (2026)
+    desc:  Learn how the new Social Security tax deduction for seniors works, who qualifies for up to $6,000, and how benefits are taxed in 2026.
+- /retirement/social-security-retirement-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.5 on social security · same format: calculator]
+    title: Social Security Retirement Calculator
+    desc:  Our Social Security retirement calculator shows how claiming age affects your benefit and how to add SSA income to your total retirement projection.
+- /social-security-cola-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on social security · same format: calculator]
+    title: Social Security COLA Calculator: Your 2027 Benefit at 3.6%
+    desc:  Free Social Security COLA calculator. Enter your monthly benefit to see your 2027 amount after the 3.6% raise, plus a chart of common benefit amounts.
+- /compare/social-security-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on social security]
+    title: Social Security vs 401(k): Planning Retirement Income
+    desc:  Social Security vs 401(k) compared: how each is funded, when income starts, how taxes work, and how to use both in a retirement plan.
+- /guides/is-social-security-taxable  [in sitemap · src/data/guides.ts · topic match 0.5 on social security]
+    title: Is Social Security Taxable? 2026 Thresholds Explained
+    desc:  Social Security becomes taxable once combined income tops $25,000 (single) or $32,000 (married). See the IRS formula, thresholds, and how to lower it.
+- /social-security-break-even-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on social security · same format: calculator]
+    title: Social Security Break Even Calculator: 62 vs 67 vs 70
+    desc:  Free Social Security break even calculator. Enter your full retirement age benefit and see the age when claiming later pays more in total.
+- /social-security-taxable-benefits-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on social security · same format: calculator]
+    title: Social Security Taxable Benefits Calculator 2026
+    desc:  Social Security taxable benefits calculator. Enter your benefits and other income to see provisional income, the taxable part and the 50% or 85% tier.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-23-xtrends.md [table] | Lens 1. lookup: /guides/2027-social-security-cola/ covers the raise and Part B but not how to get the notice online by Nov 18 | Add one section with the step-by-step (Message Center > Preferences) | update existing bod
+- 2026-10-25.md [table] | 5 | **Lens 1 (direct intent — brief item 4, renting out as owner/landlord).** `tenant screening checklist` 250/KD 5 ($2.00 CPC), `first time landlord checklist` 200/KD 1, `landlord checklist` 150/KD 0, `rental property
+- 2026-10-27-podcast.md [table] | 2 | Direct intent (podcast: Ready For Retirement "What Should You Do With Your 401k When You Retire?"). Cluster: what to do with your 401k when you retire 260/mo KD 7 (DataForSEO measured); ac: what can you do with you
+- 2026-10-27-podcast.md [exclusions] - Deferred-row topics already in the ledger (Social Security timing, Medicare, house hacking): not re-attempted; ssa.gov still returns 403 to this routine.
+- 2026-10-27-trend-lane-c.md [table] | 1 | source: coverage (Lens 2, adjacent to top-20 query "how long will my money last calculator nerdwallet"). Cluster: how long will my money last 14,800/mo KD 0 (head, owned by /investing/withdrawal-calculator and /ret
+- 2026-10-28-autocomplete.md [exclusions] - FIRE variants (`fire calculator with social security` 50, `fire calculator monte carlo` 50, `can i fire calculator` est.): DROP, /retirement/fire-calculator/ exists, volume is negligible. Completions about fire hoses, 
+Commits naming the topic: none
+Same run overlap: none
+
+### /biweekly-mortgage-calculator/  — row - · create new content
+keyword: biweekly mortgage calculator
+reader question (new page intent): How much do biweekly mortgage payments save?
+lookup terms: biweekly mortgage   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /mortgage  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on mortgage]
+    title: Free Mortgage Calculator: Instant Home Loan Estimate
+    desc:  Use our free, simple mortgage calculator to instantly estimate your monthly principal and interest, see full amortization, and learn how a home loan works.
+- /guides/commercial-mortgage-calculator-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage · same format: calculator]
+    title: Commercial Mortgage Calculator: Payment & Balloon
+    desc:  Estimate a commercial mortgage payment, the DSCR lenders require, and the balloon balance due at the end of a typical 10-year loan term.
+- /mortgage/piti-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on mortgage · same format: calculator]
+    title: PITI Mortgage Calculator: All-In Monthly Payment
+    desc:  Calculate your full PITI mortgage payment — principal, interest, property taxes, homeowner's insurance, and PMI — to see what you truly owe each month.
+- /mortgage/affordability-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on mortgage · same format: calculator]
+    title: Mortgage Affordability Calculator: How Much House?
+    desc:  Find out how much house you can afford based on your income, debts, and down payment. Uses the 28/36 DTI rules lenders actually apply.
+- /commercial-mortgage-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on mortgage · same format: calculator]
+    title: Commercial Mortgage Calculator: Payment & Balloon
+    desc:  Commercial mortgage calculator. Estimate your monthly debt service, balloon payment, debt service coverage ratio (DSCR), and debt yield.
+- /mortgage-recast-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on mortgage · same format: calculator]
+    title: Mortgage Recast Calculator: New Payment & Interest Saved
+    desc:  Mortgage recast calculator. Enter your balance, rate and lump sum to see the new payment, interest saved, and how a recast compares to prepaying.
+- /guides/who-overpays-on-mortgages  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage]
+    title: Who Overpays on Mortgages and What It Costs Over Time
+    desc:  Learn who overpays on mortgages, what a quarter-point difference costs on a 30-year loan, and how to compare official Loan Estimates before signing.
+- /roundup/best-mortgage-lenders  [in sitemap · src/data/roundups.ts · topic match 0.5 on mortgage]
+    title: Best Mortgage Lenders of 2026: Top Picks for Buyers
+    desc:  Compare the best mortgage lenders of 2026 by rates, fees, and loan types. Expert picks for first-time buyers, VA borrowers, and refinancers.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-26-house-viewing.md [exclusions] - Lens 2 adjacent: `questions to ask when buying a house` is folded into this row (its page-one results are viewing/agent question lists). Affordability PAA (salary for a $400k house) is served by /mortgage/home-affordab
+- 2026-10-27-podcast.md [table] | 3 | Direct intent (podcast: Rental Income Podcast Ep 510 "Does It Make Sense To Buy Rentals With 15 Year Mortgages?"). Cluster: 15 year mortgage for rental property ~250/mo (DataForSEO ESTIMATE band 250-2,500, NOT meas
+- 2026-10-27-podcast.md [table] | 15-year mortgage on a rental | 15 year mortgage for rental property (~250, estimate, NOT measured); 15 year mortgage for investment property (ac) | coverage gap: term comparison pages are owner-occupied | partial (/com
+- 2026-10-27-trend-lane-c.md [exclusions] - best lenders for home loans / most trusted living trust company for real estate owners / coast fire amount / index investment funds: /roundup/best-mortgage-lenders, /roundup/best-living-trust-services, /guides/coast-fi
+- 2026-10-28-autocomplete.md [table] | 1 | Lens 1 (seed "rent vs buy calculator", 158 completions). `rent vs buy calculator` 14,800/mo KD 49 CPC $1.06 and `rent or buy calculator` 14,800/mo KD 49 (DataForSEO measured, US, 2026-10-28); `rent vs buy calculato
+- 2026-10-28-autocomplete.md [exclusions] - `mortgage payment calculator with pmi` (2,400, KD 66), down payment and home affordability variants (`home affordability calculator by income` est.; `how much is 10 percent down payment` 10): DROP, /mortgage/ calculato
+Commits naming the topic: none
+Same run overlap: none
+

@@ -1,0 +1,20 @@
+{
+ "origin_routine": "tool-usage-mindmap-auto",
+ "route": "/inflation-calculator/",
+ "canonical": "https://www.themodernwallet.com/inflation-calculator/",
+ "query_family": "inflation calculator by year; cpi inflation calculator",
+ "hypothesis": "A past-year CPI mode lets the existing page answer the larger by-year family (8,100 + 27,100/mo)",
+ "primary_metric": "incremental Google clicks (GSC)",
+ "baseline": "unavailable (no GSC credentials on the cloud runner; retry next eligible run)",
+ "comparator": "age-matched new calculator routes from 2026-10-28 (rent-vs-buy, stock capital gains)",
+ "windows": {
+  "day28": "first 28 complete live days",
+  "day56": "second 28 complete live days"
+ },
+ "change_scope": "tool mode + 3 prose edits",
+ "source_refresh_trigger": "new BLS CPI-U month",
+ "deployment": {
+  "status": "not-deployed"
+ },
+ "outcome": "pending"
+}

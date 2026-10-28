@@ -1,0 +1,20 @@
+{
+ "origin_routine": "tool-usage-mindmap-auto",
+ "route": "/salary-inflation-calculator/",
+ "canonical": "https://www.themodernwallet.com/salary-inflation-calculator/",
+ "query_family": "salary inflation calculator; salary inflation calculator by year; how much should my salary go up with inflation",
+ "hypothesis": "A calculator that answers 'did my pay keep up' earns clicks on the salary-inflation family (3,600/mo)",
+ "primary_metric": "incremental Google clicks (GSC)",
+ "baseline": "not-yet-published",
+ "comparator": "age-matched new calculator routes from 2026-10-28 (rent-vs-buy, stock capital gains)",
+ "windows": {
+  "day28": "first 28 complete live days",
+  "day56": "second 28 complete live days"
+ },
+ "change_scope": "new route",
+ "source_refresh_trigger": "new BLS CPI-U month",
+ "deployment": {
+  "status": "not-deployed"
+ },
+ "outcome": "pending"
+}

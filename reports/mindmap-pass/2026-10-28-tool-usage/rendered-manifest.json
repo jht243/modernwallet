@@ -1,0 +1,226 @@
+{
+ "author": "orchestrator-2026-10-28-tool-usage",
+ "canonicalBase": "https://www.themodernwallet.com",
+ "routes": [
+  {
+   "path": "/salary-inflation-calculator/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Salary Inflation Calculator",
+    "In our internal calculation",
+    "336.94"
+   ],
+   "forbiddenText": [
+    "we tested",
+    "In our testing"
+   ],
+   "growthFile": "reports/mindmap-pass/2026-10-28-tool-usage/evidence/salary-inflation-calculator/growth.json",
+   "evidenceFile": "reports/mindmap-pass/2026-10-28-tool-usage/evidence/salary-inflation-calculator/evidence.json"
+  },
+  {
+   "path": "/biweekly-mortgage-calculator/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Biweekly Mortgage Calculator",
+    "In our internal calculation",
+    "$88,122"
+   ],
+   "forbiddenText": [
+    "we tested",
+    "In our testing"
+   ],
+   "growthFile": "reports/mindmap-pass/2026-10-28-tool-usage/evidence/biweekly-mortgage-calculator/growth.json",
+   "evidenceFile": "reports/mindmap-pass/2026-10-28-tool-usage/evidence/biweekly-mortgage-calculator/evidence.json"
+  },
+  {
+   "path": "/inflation-calculator/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "From a past year",
+    "CUUR0000SA0"
+   ],
+   "forbiddenText": [
+    "has no historical CPI data",
+    "The tool has no historical price data",
+    "this calculator does not include that data"
+   ],
+   "growthFile": "reports/mindmap-pass/2026-10-28-tool-usage/evidence/inflation-calculator/growth.json",
+   "evidenceFile": "reports/mindmap-pass/2026-10-28-tool-usage/evidence/inflation-calculator/evidence.json"
+  },
+  {
+   "path": "/trump-account/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "parents, relatives, friends",
+    "Enter family and employer money once each"
+   ],
+   "forbiddenText": [
+    "family + employer max"
+   ]
+  },
+  {
+   "path": "/social-security-taxable-benefits-calculator/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "tax bracket calculator",
+    "senior deduction"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/how-much-to-set-aside-for-taxes/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027",
+    "quarterly estimated tax calculator"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/quarterly-estimated-tax-calculator/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/mortgage/extra-payment-calculator/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "biweekly mortgage calculator"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/mortgage-recast-calculator/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Weighing biweekly payments? See what they save"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/guides/mortgage-amortization-schedule-excel-template/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "biweekly mortgage calculator"
+   ],
+   "forbiddenText": [
+    "mortgage payoff calculator](/mortgage/payoff-calculator/) models a biweekly"
+   ]
+  },
+  {
+   "path": "/self-employment-tax/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/1099-tax-calculator/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/doordash-taxes/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/uber-driver-taxes/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/uber-eats-taxes/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/lyft-driver-taxes/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/instacart-taxes/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/amazon-flex-taxes/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/shipt-taxes/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/rover-taxes/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/twitch-taxes/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/upwork-taxes/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/fiverr-taxes/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  },
+  {
+   "path": "/self-employment-tax/etsy-taxes/",
+   "expectedUpdatedDate": "2026-10-28",
+   "requiredText": [
+    "Jan. 15, 2027"
+   ],
+   "forbiddenText": []
+  }
+ ]
+}
