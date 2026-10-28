@@ -1,28 +1,33 @@
 {
-  "slug": "best-budgeting-apps",
-  "rows": [
-    {
-      "name": "Lucky Friday",
-      "domain": "luckyfriday.app",
-      "url": "https://luckyfriday.app/",
-      "values": [
-        "Free; paid $12.99/mo per user",
-        "No; Free plan has no account linking",
-        "Flexible category budgets",
-        "Custom categories and biweekly or irregular income"
-      ]
-    },
-    {
-      "name": "Hearth",
-      "domain": "hearthbudget.com",
-      "url": "https://hearthbudget.com/",
-      "values": [
-        "Free; Premium $4.99/mo or $34.99/yr",
-        "No; manual entry, bank sync is Premium",
-        "Envelope",
-        "Couples sharing one budget"
-      ]
-    }
-  ],
-  "cut": []
+ "slug": "best-budgeting-apps",
+ "rows": [
+  {
+   "name": "SmartWalt",
+   "domain": "smartwalt.com",
+   "url": "https://smartwalt.com",
+   "values": [
+    "Free; Pro $4.99/mo or $49/yr",
+    "No (no bank login; manual, voice or receipt scan)",
+    "Category budgets and safe-to-spend; no named method",
+    "People who want to skip bank links and log spending themselves"
+   ]
+  },
+  {
+   "name": "Middle Class Finance",
+   "domain": "middleclassfinance.app",
+   "url": "https://middleclassfinance.app",
+   "values": [
+    "Free web app ($0/month)",
+    "No (manual entry or CSV/OFX/QFX/QBO import)",
+    "Zero-based, 50/30/20, envelope or simple",
+    "Paycheck households that prefer not to link a bank"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "fccu.org",
+   "why": "category 4 \u2014 credit union with no budgeting app on its site; fits a banking category"
+  }
+ ]
 }

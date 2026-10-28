@@ -2,22 +2,26 @@
  "slug": "best-401k-providers-for-small-business",
  "rows": [
   {
-   "name": "Equity Trust",
-   "domain": "trustetc.com",
-   "url": "https://www.trustetc.com/solo-401k/",
+   "name": "Maxus Plan Solutions",
+   "domain": "maxusplans.com",
+   "url": "https://maxusplans.com",
    "values": [
-    "Self-employed people with no full-time employees besides a spouse (solo plan)",
-    "$1,295 one-time setup; $695 per year",
-    "N/A",
+    "Employers under 100 employees (SIMPLE 401(k))",
     "Not published",
-    "Recordkeeping system, plan documents, automatic 5500-EZ and 1099-R forms"
+    "Not published",
+    "Not published",
+    "Compliance testing handled; Safe Harbor plans skip nondiscrimination testing"
    ]
   }
  ],
  "cut": [
   {
-   "domain": "chamberofcommerce.org",
-   "why": "category 1 — publisher of business guides and reviews with referral links; sells no 401(k)"
+   "domain": "myshortlister.com",
+   "why": "category 1 \u2014 vendor directory and RFP platform, no product of its own"
+  },
+  {
+   "domain": "trinet.com",
+   "why": "category 4 \u2014 PEO/HR/payroll provider; no 401(k) product shown on its site"
   }
  ]
 }

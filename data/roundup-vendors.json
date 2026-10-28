@@ -180,6 +180,18 @@
       "Not published"
      ],
      "added": "2026-10-26"
+    },
+    {
+     "name": "AI Investing",
+     "domain": "ainvesting.app",
+     "url": "https://ainvesting.app",
+     "values": [
+      "AI market analysis for stocks, ETFs and crypto; does not execute trades",
+      "Free; Pro $9.99/mo or $69.99/yr, 7-day trial",
+      "Not published (AI-powered analysis grounded in live market data)",
+      "N/A (analysis app, no brokerage account)"
+     ],
+     "added": "2026-10-28"
     }
    ]
   },
@@ -318,8 +330,8 @@
      "values": [
       "Investors researching Indian listed companies",
       "Screener AI reads company filings and earnings calls",
-      "Yes (Hobby Investor, ₹0 per year)",
-      "₹4,999 per year (Active Investor)"
+      "Yes (Hobby Investor, \u20b90 per year)",
+      "\u20b94,999 per year (Active Investor)"
      ],
      "added": "2026-10-16"
     },
@@ -367,7 +379,7 @@
       "Retail investors researching Indian stocks (NSE and BSE)",
       "Ask Iris answers from company filings; AI-curated stock themes",
       "Yes (Standard plan, 7-day paid trial)",
-      "₹7,199/year (Pro)"
+      "\u20b97,199/year (Pro)"
      ],
      "added": "2026-10-19"
     },
@@ -1250,6 +1262,19 @@
       "Recordkeeping system, plan documents, automatic 5500-EZ and 1099-R forms"
      ],
      "added": "2026-10-22"
+    },
+    {
+     "name": "Maxus Plan Solutions",
+     "domain": "maxusplans.com",
+     "url": "https://maxusplans.com",
+     "values": [
+      "Employers under 100 employees (SIMPLE 401(k))",
+      "Not published",
+      "Not published",
+      "Not published",
+      "Compliance testing handled; Safe Harbor plans skip nondiscrimination testing"
+     ],
+     "added": "2026-10-28"
     }
    ]
   },
@@ -1269,7 +1294,7 @@
      "domain": "knowyourdosh.com",
      "url": "https://knowyourdosh.com",
      "values": [
-      "Free; paid £4.99 to £14.99/month per household",
+      "Free; paid \u00a34.99 to \u00a314.99/month per household",
       "Tracks stocks, crypto, ISAs and investments; no analysis tools listed",
       "Yes, properties and rental management",
       "Not published",
@@ -1438,7 +1463,7 @@
      "domain": "foluno.com",
      "url": "https://foluno.com",
      "values": [
-      "Free plan; Premium €599 one-time",
+      "Free plan; Premium \u20ac599 one-time",
       "Allocation by asset class, country, sector; cash-flow analysis",
       "Yes",
       "Not published",
@@ -1820,6 +1845,19 @@
       "Independent attorneys; free initial consultation"
      ],
      "added": "2026-10-15"
+    },
+    {
+     "name": "Mantle",
+     "domain": "getmantle.ai",
+     "url": "https://getmantle.ai",
+     "values": [
+      "Not published (pour-over will free with trust)",
+      "Not published",
+      "Documents free to draft; optional Mantle Complete $499",
+      "Yes",
+      "Not included"
+     ],
+     "added": "2026-10-28"
     }
    ]
   },
@@ -2470,7 +2508,7 @@
      "domain": "netoapp.es",
      "url": "https://netoapp.es",
      "values": [
-      "Free; optional PRO from €49.99/yr (iPhone, Spain pricing)",
+      "Free; optional PRO from \u20ac49.99/yr (iPhone, Spain pricing)",
       "No (manual entry, no bank connection)",
       "Manual tracking with category budget limits and savings goals",
       "People who track spending and net worth without linking banks"
@@ -2500,6 +2538,30 @@
       "Couples sharing one budget"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "SmartWalt",
+     "domain": "smartwalt.com",
+     "url": "https://smartwalt.com",
+     "values": [
+      "Free; Pro $4.99/mo or $49/yr",
+      "No (no bank login; manual, voice or receipt scan)",
+      "Category budgets and safe-to-spend; no named method",
+      "People who want to skip bank links and log spending themselves"
+     ],
+     "added": "2026-10-28"
+    },
+    {
+     "name": "Middle Class Finance",
+     "domain": "middleclassfinance.app",
+     "url": "https://middleclassfinance.app",
+     "values": [
+      "Free web app ($0/month)",
+      "No (manual entry or CSV/OFX/QFX/QBO import)",
+      "Zero-based, 50/30/20, envelope or simple",
+      "Paycheck households that prefer not to link a bank"
+     ],
+     "added": "2026-10-28"
     }
    ]
   },
@@ -2759,6 +2821,17 @@
       "N/A - invests at the brokerage you choose"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "Dodge & Cox",
+     "domain": "dodgeandcox.com",
+     "url": "https://www.dodgeandcox.com/individual-investor/us/en/resources/custodial-iras.html",
+     "values": [
+      "$1,000 per fund per account",
+      "No account maintenance fees when investing directly",
+      "Not published"
+     ],
+     "added": "2026-10-28"
     }
    ]
   },
@@ -2994,6 +3067,19 @@
       "Not published"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "Credit Union of Georgia",
+     "domain": "cuofga.org",
+     "url": "https://cuofga.org/loans/personal/",
+     "values": [
+      "Members wanting a simple unsecured loan or high-interest debt payoff",
+      "Not published",
+      "As low as 9.99% APR, by term, as of Oct 2026",
+      "No fee amounts listed; $10 minimum share account required",
+      "Funds released immediately once approved"
+     ],
+     "added": "2026-10-28"
     }
    ]
   },
@@ -3164,8 +3250,8 @@
   },
   "best-travel-credit-cards": {
    "domains": {
-    "Chase Sapphire Preferred®": "chase.com",
-    "Chase Sapphire Reserve®": "chase.com",
+    "Chase Sapphire Preferred\u00ae": "chase.com",
+    "Chase Sapphire Reserve\u00ae": "chase.com",
     "Capital One Venture Rewards": "capitalone.com",
     "Capital One VentureOne": "capitalone.com",
     "Bank of America Travel Rewards": "bankofamerica.com",
@@ -3199,12 +3285,12 @@
   },
   "best-student-credit-cards": {
    "domains": {
-    "Discover it® Student Cash Back": "discover.com",
+    "Discover it\u00ae Student Cash Back": "discover.com",
     "Capital One Savor Rewards for Students": "capitalone.com",
     "Capital One Quicksilver Rewards for Students": "capitalone.com",
-    "Chase Freedom Rise℠": "chase.com",
-    "Bank of America® Travel Rewards for Students": "bankofamerica.com",
-    "Bank of America® Customized Cash Rewards for Students": "bankofamerica.com"
+    "Chase Freedom Rise\u2120": "chase.com",
+    "Bank of America\u00ae Travel Rewards for Students": "bankofamerica.com",
+    "Bank of America\u00ae Customized Cash Rewards for Students": "bankofamerica.com"
    },
    "added": []
   },
@@ -3417,7 +3503,7 @@
      "url": "https://gokapital.com",
      "values": [
       "MCA, lines of credit, SBA, equipment loans",
-      "Working capital $20,000–$50,000,000",
+      "Working capital $20,000\u2013$50,000,000",
       "MCA funding in 24 hours or less",
       "No minimum credit score stated; $30,000+/mo revenue"
      ],
@@ -3429,7 +3515,7 @@
      "url": "https://www.greenboxcapital.com/",
      "values": [
       "MCA, factoring, line of credit, loans",
-      "$3,000–$500,000",
+      "$3,000\u2013$500,000",
       "As fast as 1 business day",
       "500 FICO, 5 mo., $10k/mo"
      ],
@@ -3441,7 +3527,7 @@
      "url": "https://sunwisecapital.com",
      "values": [
       "Unsecured loans, MCA, equipment financing",
-      "Unsecured $10,000–$2M",
+      "Unsecured $10,000\u2013$2M",
       "As fast as 4 hrs",
       "500 FICO, 12 mo., $25k/mo"
      ],
@@ -3465,7 +3551,7 @@
      "url": "https://jsvcapital.com",
      "values": [
       "MCA, loans, line of credit, equipment",
-      "$10,000–$1,000,000",
+      "$10,000\u2013$1,000,000",
       "As fast as 1 business day",
       "Not published"
      ],
@@ -3476,10 +3562,10 @@
      "domain": "mcashadvance.com",
      "url": "https://mcashadvance.com",
      "values": [
-      "MCA, factor rates 1.1–1.5",
-      "$5,000–$900,000",
-      "1–3 days average",
-      "6 mo.; $7,500–$8,000/mo; 500–550 FICO"
+      "MCA, factor rates 1.1\u20131.5",
+      "$5,000\u2013$900,000",
+      "1\u20133 days average",
+      "6 mo.; $7,500\u2013$8,000/mo; 500\u2013550 FICO"
      ],
      "added": "2026-10-15"
     },
@@ -3501,7 +3587,7 @@
      "url": "https://biz2credit.com",
      "values": [
       "Term loan, revenue-based financing, line of credit",
-      "$25K–$2M+",
+      "$25K\u2013$2M+",
       "Decision as fast as 24 hrs",
       "Term loan: 650 FICO, $100k revenue"
      ],
@@ -3513,7 +3599,7 @@
      "url": "https://mfebusinessloans.com",
      "values": [
       "Working capital, line of credit, MCA refinance",
-      "$5,000–$5,000,000",
+      "$5,000\u2013$5,000,000",
       "Same-day decision, next-day funding",
       "Not published"
      ],
@@ -4061,6 +4147,18 @@
       "Novo checking customers needing a small term loan"
      ],
      "added": "2026-10-19"
+    },
+    {
+     "name": "WesBanco",
+     "domain": "wesbanco.com",
+     "url": "https://www.wesbanco.com/business/business-loans-and-credit-cards/business-line-of-credit/",
+     "values": [
+      "Revolving; FlexLine $10K to $50K, commercial lines from $10K",
+      "Variable, indexed to prime rate; margin not published",
+      "Not published",
+      "Businesses with a WesBanco checking account and 1+ year operating"
+     ],
+     "added": "2026-10-28"
     }
    ]
   },
@@ -4123,6 +4221,18 @@
       "Small businesses wanting 1.5% cash back and employee cards"
      ],
      "added": "2026-10-20"
+    },
+    {
+     "name": "Keep",
+     "domain": "trykeep.com",
+     "url": "https://www.trykeep.com/pricing",
+     "values": [
+      "No",
+      "Pay-in-full card with fee-free days; secured option offered",
+      "No annual fee; $79 to $199 monthly plans",
+      "Small teams to larger businesses; not available in Quebec"
+     ],
+     "added": "2026-10-28"
     }
    ]
   },
@@ -4872,6 +4982,18 @@
       "Freelancers who want to make invoices by typing a description"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "Plutio",
+     "domain": "plutio.com",
+     "url": "https://plutio.com/pricing",
+     "values": [
+      "$19/month (Core plan)",
+      "9 active clients on Core; unlimited on Pro",
+      "Unlimited invoices on every plan; no Plutio transaction fees",
+      "Solo freelancers who want invoicing and projects, not full bookkeeping"
+     ],
+     "added": "2026-10-28"
     }
    ]
   },
@@ -5201,7 +5323,7 @@
      "domain": "equisettle.co.uk",
      "url": "https://equisettle.co.uk",
      "values": [
-      "From £79/month (Foundation); £169/month (Operations)",
+      "From \u00a379/month (Foundation); \u00a3169/month (Operations)",
       "Yes, automatic reminders listed; timing not published",
       "Not published",
       "B2B finance teams chasing receivables alongside Xero, QuickBooks or Sage"
@@ -5237,7 +5359,7 @@
      "domain": "trove.works",
      "url": "https://trove.works",
      "values": [
-      "£50/month Essential; £135 Integrated; £285 Advanced",
+      "\u00a350/month Essential; \u00a3135 Integrated; \u00a3285 Advanced",
       "Yes, automated due-date chasing with replies you approve",
       "Not published",
       "Xero, QuickBooks or FreeAgent users who need overdue invoices chased"
@@ -5273,7 +5395,7 @@
      "domain": "chaserhq.com",
      "url": "https://chaserhq.com",
      "values": [
-      "£199/month Compact; £599 Core; £899 Complete",
+      "\u00a3199/month Compact; \u00a3599 Core; \u00a3899 Complete",
       "Yes, automated chasing by email, SMS and phone",
       "Not published",
       "Larger credit control teams chasing receivables, not solo freelancers"
@@ -5287,7 +5409,7 @@
      "values": [
       "$79.99/year or $7.99/week, 3-day trial",
       "Not published",
-      "No BuildWell fee; Stripe 2.9% + 30¢ passes through",
+      "No BuildWell fee; Stripe 2.9% + 30\u00a2 passes through",
       "Contractors who want AI-drafted estimates and invoices"
      ],
      "added": "2026-10-18"
@@ -5706,6 +5828,42 @@
       "Home service businesses such as painting, landscaping and cleaning"
      ],
      "added": "2026-10-26"
+    },
+    {
+     "name": "Molen & Associates",
+     "domain": "molentax.com",
+     "url": "https://molentax.com",
+     "values": [
+      "Not published; per project or monthly subscription",
+      "Cleanup work offered; price not published",
+      "Yes (individual, small business, S-corp, C-corp)",
+      "Houston-area small businesses needing bookkeeping plus tax prep"
+     ],
+     "added": "2026-10-28"
+    },
+    {
+     "name": "North Carolina Bookkeeping",
+     "domain": "northcarolinabookkeeping.com",
+     "url": "https://northcarolinabookkeeping.com",
+     "values": [
+      "Not published; call for a quote",
+      "Accounting cleanups offered; price not published",
+      "Not published",
+      "Charlotte small businesses and individuals, in person or remote"
+     ],
+     "added": "2026-10-28"
+    },
+    {
+     "name": "Rigits",
+     "domain": "rigits.com",
+     "url": "https://rigits.com",
+     "values": [
+      "From $895/month, three tiers",
+      "Books cleaned up after signing; separate price not published",
+      "Not published",
+      "Growing businesses wanting bookkeeping, payroll and fractional CFO support"
+     ],
+     "added": "2026-10-28"
     }
    ]
   },
@@ -5881,6 +6039,18 @@
       "Eastside Seattle-area filers wanting tax prep with bookkeeping and payroll"
      ],
      "added": "2026-10-27"
+    },
+    {
+     "name": "Miller & Company",
+     "domain": "cpafirmnyc.com",
+     "url": "https://cpafirmnyc.com",
+     "values": [
+      "CPA firm with in-person offices",
+      "Quote on request; not published",
+      "Offices in New York, Florida and Washington DC",
+      "Self-employed professionals and business owners in the New York area"
+     ],
+     "added": "2026-10-28"
     }
    ]
   },
@@ -5948,6 +6118,30 @@
       "Wesley Chapel, FL; Tampa Bay self-employed and small businesses"
      ],
      "added": "2026-10-26"
+    },
+    {
+     "name": "San Diego Tax Professionals",
+     "domain": "sandiegotaxprofessionals.com",
+     "url": "https://sandiegotaxprofessionals.com",
+     "values": [
+      "CPA and Enrolled Agent services; staff credentials not listed",
+      "Not published",
+      "Not published; contact for an estimate",
+      "Rental owners, small business owners and multiple-income households in San Diego County"
+     ],
+     "added": "2026-10-28"
+    },
+    {
+     "name": "Elder Hanson",
+     "domain": "elderhanson.com",
+     "url": "https://elderhanson.com",
+     "values": [
+      "CPA firm (listed partners are CPAs)",
+      "Not published",
+      "Not published; intake form first",
+      "Owner-run professional service firms around Naperville, Illinois"
+     ],
+     "added": "2026-10-28"
     }
    ]
   },
@@ -6111,6 +6305,30 @@
       "Individuals, businesses and California landlords or real estate investors"
      ],
      "added": "2026-10-26"
+    },
+    {
+     "name": "WHINS Insurance Agency",
+     "domain": "whins.com",
+     "url": "https://whins.com",
+     "values": [
+      "Westlake Village, San Diego, Palo Alto, Fresno",
+      "Not published",
+      "Personal, business, specialty",
+      "Californians wanting a local team and multiple carrier quotes"
+     ],
+     "added": "2026-10-28"
+    },
+    {
+     "name": "Insure Wise Insurance Brokers",
+     "domain": "insurewiseins.com",
+     "url": "https://insurewiseins.com",
+     "values": [
+      "Thousand Oaks",
+      "0H55875",
+      "Personal, commercial, specialty",
+      "Local California individuals and businesses wanting an independent agent"
+     ],
+     "added": "2026-10-28"
     }
    ]
   },

@@ -1,5 +1,25 @@
 {
-  "slug": "best-custodial-roth-ira-providers",
-  "rows": [],
-  "cut": []
+ "slug": "best-custodial-roth-ira-providers",
+ "rows": [
+  {
+   "name": "Dodge & Cox",
+   "domain": "dodgeandcox.com",
+   "url": "https://www.dodgeandcox.com/individual-investor/us/en/resources/custodial-iras.html",
+   "values": [
+    "$1,000 per fund per account",
+    "No account maintenance fees when investing directly",
+    "Not published"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "wiserinvestor.com",
+   "why": "category 4 \u2014 fee-only advisory firm, no custodial Roth IRA product of its own"
+  },
+  {
+   "domain": "kahnlitwin.com",
+   "why": "category 4 \u2014 CPA firm (accounting/tax services), no custodial Roth IRA product"
+  }
+ ]
 }

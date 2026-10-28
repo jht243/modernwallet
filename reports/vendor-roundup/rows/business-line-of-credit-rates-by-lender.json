@@ -1,10 +1,22 @@
 {
  "slug": "business-line-of-credit-rates-by-lender",
- "rows": [],
+ "rows": [
+  {
+   "name": "WesBanco",
+   "domain": "wesbanco.com",
+   "url": "https://www.wesbanco.com/business/business-loans-and-credit-cards/business-line-of-credit/",
+   "values": [
+    "Revolving; FlexLine $10K to $50K, commercial lines from $10K",
+    "Variable, indexed to prime rate; margin not published",
+    "Not published",
+    "Businesses with a WesBanco checking account and 1+ year operating"
+   ]
+  }
+ ],
  "cut": [
   {
-   "domain": "loanry.com",
-   "why": "category 1 — loan marketplace and lead generator, states it is not a lender"
+   "domain": "fseb2b.com",
+   "why": "category 1 \u2014 loan broker that matches applicants to third-party lenders, no loans of its own"
   }
  ]
 }

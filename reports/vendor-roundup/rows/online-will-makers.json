@@ -1,5 +1,18 @@
 {
-  "slug": "best-online-will-makers",
-  "rows": [],
-  "cut": []
+ "slug": "best-online-will-makers",
+ "rows": [
+  {
+   "name": "Mantle",
+   "domain": "getmantle.ai",
+   "url": "https://getmantle.ai",
+   "values": [
+    "Not published (pour-over will free with trust)",
+    "Not published",
+    "Documents free to draft; optional Mantle Complete $499",
+    "Yes",
+    "Not included"
+   ]
+  }
+ ],
+ "cut": []
 }

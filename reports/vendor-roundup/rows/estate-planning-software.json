@@ -1,23 +1,5 @@
 {
-  "slug": "best-estate-planning-software",
-  "rows": [
-    {
-      "name": "WealthCounsel",
-      "domain": "wealthcounsel.com",
-      "url": "https://www.wealthcounsel.com/",
-      "values": [
-        "Not published",
-        "Not published",
-        "Not published",
-        "N/A; software is for attorneys",
-        "Cloud-based; Mac and PC"
-      ]
-    }
-  ],
-  "cut": [
-    {
-      "domain": "truereview.co",
-      "why": "category 4 \u2014 business review-management software, not estate planning"
-    }
-  ]
+ "slug": "best-estate-planning-software",
+ "rows": [],
+ "cut": []
 }

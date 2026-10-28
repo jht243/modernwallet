@@ -1,10 +1,10 @@
 {
-  "slug": "dataannotation-alternatives",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "confirm.com",
-      "why": "category 3 — HR learning-management and employee-performance software for employers, not finance or AI-training work"
-    }
-  ]
+ "slug": "dataannotation-alternatives",
+ "rows": [],
+ "cut": [
+  {
+   "domain": "basic.ai",
+   "why": "category 4 \u2014 B2B annotation vendor selling to AI companies, no worker sign-up or pay; no fit in any category"
+  }
+ ]
 }

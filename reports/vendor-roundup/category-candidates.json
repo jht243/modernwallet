@@ -1,36 +1,14 @@
 {
   "site": "themodernwallet.com",
   "cut_as_other_category": {
-    "unlabelled": [
-      "assistents.ai",
-      "ayadata.ai",
-      "bhsg.com",
-      "hklaw.com",
-      "howeandrusling.com",
-      "info.cccu.com",
-      "lindy.ai",
-      "meetfabric.com",
-      "nodes.inc",
-      "truereview.co",
-      "voxel51.com"
-    ],
-    "crypto wallets": [
-      "spark.money"
-    ],
     "business loan categories": [
       "reilcap.com"
     ],
-    "business loans or line of credit": [
-      "clearlyacquired.com"
-    ],
-    "bookkeeping": [
-      "pennybot.io"
-    ],
-    "prop firm": [
-      "goatfundedtrader.com"
-    ],
-    "budgeting and money apps": [
-      "maxint.com"
+    "unlabelled": [
+      "femaleinvest.com",
+      "glideapps.com",
+      "truereview.co",
+      "yaycommerce.com"
     ],
     "credit repair": [
       "asapcreditrepairusa.com"

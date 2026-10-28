@@ -1,5 +1,18 @@
 {
-  "slug": "personal-loan-rates-by-lender",
-  "rows": [],
-  "cut": []
+ "slug": "personal-loan-rates-by-lender",
+ "rows": [
+  {
+   "name": "Credit Union of Georgia",
+   "domain": "cuofga.org",
+   "url": "https://cuofga.org/loans/personal/",
+   "values": [
+    "Members wanting a simple unsecured loan or high-interest debt payoff",
+    "Not published",
+    "As low as 9.99% APR, by term, as of Oct 2026",
+    "No fee amounts listed; $10 minimum share account required",
+    "Funds released immediately once approved"
+   ]
+  }
+ ],
+ "cut": []
 }

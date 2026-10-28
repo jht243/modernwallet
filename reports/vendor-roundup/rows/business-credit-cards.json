@@ -1,14 +1,22 @@
 {
  "slug": "best-business-credit-cards",
- "rows": [],
+ "rows": [
+  {
+   "name": "Keep",
+   "domain": "trykeep.com",
+   "url": "https://www.trykeep.com/pricing",
+   "values": [
+    "No",
+    "Pay-in-full card with fee-free days; secured option offered",
+    "No annual fee; $79 to $199 monthly plans",
+    "Small teams to larger businesses; not available in Quebec"
+   ]
+  }
+ ],
  "cut": [
   {
-   "domain": "uswitch.com",
-   "why": "category 1 \u2014 UK credit broker and comparison site, not a card issuer"
-  },
-  {
-   "domain": "franchisegenesis.com",
-   "why": "category 3 \u2014 franchise consultancy, no card or financing product"
+   "domain": "zenbusiness.com",
+   "why": "category 4 — business formation and compliance service, no business credit card of its own"
   }
  ]
 }
