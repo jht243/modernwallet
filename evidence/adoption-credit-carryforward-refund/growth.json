@@ -1,0 +1,11 @@
+{
+  "originRoutine": "x-trends-mindmap-auto",
+  "queryFamily": "adoption tax credit refund / adoption credit carryforward / is the adoption credit refundable",
+  "hypothesis": "A dedicated, IRS-sourced answer page earns clicks for a newly spiking query family where no site page exists and Google's top results are generic.",
+  "primaryMetric": "Google Search Console clicks for the canonical URL",
+  "baseline": "not-yet-published; age-matched comparator to be chosen by the growth review",
+  "changeScope": "new route",
+  "sourceRefreshTrigger": "IRS revises IR-2026-123 or the carryforward Q&A, or the Dec 31, 2026 completion target passes",
+  "outcomeStatus": "not-yet-published",
+  "productionCost": "unknown; see .meta.json for generator usage"
+}

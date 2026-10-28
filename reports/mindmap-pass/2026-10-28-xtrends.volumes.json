@@ -1,0 +1,106 @@
+[keyword_data] volume: using dataforseo (quality order dataforseo)
+[keyword_data] dataforseo returned volume for 3/6 phrases
+[keyword_data] kd: using dataforseo (quality order dataforseo)
+[keyword_data] No tool volume for 3 phrases — autocomplete band (source=estimate, NOT measured)
+[keyword_data] Autocomplete: 4/6 rows corroborated live
+{
+ "rows": [
+  {
+   "keyword": "adoption tax credit refund",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "adoption tax credit carryforward",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": 19,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "form 8839",
+   "volume": 880,
+   "volume_low": 880,
+   "volume_high": 880,
+   "kd": 18,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "adoption credit carryforward refund",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "adoption credit automatic refund irs",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "adoption tax credit 2025",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using dataforseo (quality order dataforseo)",
+  "dataforseo returned volume for 3/6 phrases",
+  "kd: using dataforseo (quality order dataforseo)",
+  "No tool volume for 3 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 4/6 rows corroborated live"
+ ]
+}

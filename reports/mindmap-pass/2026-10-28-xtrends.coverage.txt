@@ -1,0 +1,20 @@
+coverage_lookup: 1 candidate(s) vs 794 repo pages / 804 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 970 past-chart lines
+
+### /guides/adoption-credit-carryforward-refund  — row - · create new content
+keyword: adoption tax credit refund; adoption credit carryforward refund
+reader question (new page intent): Do I get an automatic IRS refund from my unused adoption credit carryforward?
+lookup terms: adoption credit carryforward refund tax   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-05.md [table] | **Lens 1 (direct intent) — the brief's actual news has no home.** "qbi deduction" 8,100/mo KD 48; "section 199a deduction" 390/mo KD 44; "qbi deduction 2026" 210/mo KD 24. Autocomplete confirms the news framing is live
+- 2026-10-10.md [table] | Lens 3 (alternatives). `bankruptcy alternatives` (720, KD 36, CPC $34.95), `debt management plan vs bankruptcy` (50, KD 0), `alternatives to bankruptcy` / `how to get out of debt without bankruptcy` / `how to get out o
+- 2026-10-10.md [table] | Lens 3 (versus). `debt settlement vs bankruptcy` (480, KD 5, CPC $23.14); 5 live Autocomplete completions on the head (question-mode sweep 0); PAA adjacent "What's the difference between debt consolidation and debt set
+- 2026-10-14-tool-usage.md [table] | 16 | Lens 1 (tool usage — found walking the mortgage persona, row 1, then confirmed by a browser sweep of every live calculator on the local build): typing "6.5" into a rate/percent field shows 65 on 15 more calculator
+- 2026-10-14.md [table] | Lens 2, cluster "2027 Social Security changes (beyond the COLA)". Phrases: `social security changes 2027` 3,600/mo; `social security changes for 2027` 210; `social security earnings limit 2027` 210 KD 28; `social secur
+- 2026-10-21-tool-usage.md [table] | 4 | Lens 1 (tool usage, auto-loan — 12 people). Persona: buyer with a buyer's order: $38,995, $4,000 down, $9,500 trade-in owing $6,200, 6.79% / 72 mo, 7% sales tax, $850 fees. Walkthrough: tool says $537/mo; the deale
+Commits naming the topic: none
+Same run overlap: none
+

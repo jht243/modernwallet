@@ -1,0 +1,70 @@
+.claude/commands/_content-standard.md — characters 36000 onward
+
+te rules:
+- Any run of 10 consecutive sentences uses at least **two** bands. It does **not** have to include a 1-to-8 word sentence.
+- Never write **5 consecutive sentences** whose lengths sit within 3 words of each other.
+Short sentences carry emphasis. Spend them on the actual point, when you have one. Do not invent a short sentence to hit the mix. Do not split a natural sentence into a stub and a follow-up. A page of clear 12-to-24 word sentences a person would say is better than a page of 5-word stubs manufactured for the count.
+
+**The opening sentence earns the second one.** The first sentence of the page exists to get the next one read. Keep it short and easy: no multisyllabic throat-clearing, no clause stack. Sugarman's slippery-slide test applies down the whole page. Each sentence should make stopping feel like an interruption.
+
+**Page opener vs section opener.** These are different slots. The **page's** first body sentence is the answer to the page (VOICE). **Section** openers must be self-contained declarative answers, because extractors quote them (AEO in QUALITY). The tee-up is never the page's first sentence. If it belongs, it is the next sentence, operator only.
+
+Worked passages that show this rhythm are in EXAMPLES.
+
+---
+
+## VOICE
+
+Google's February 2026 core update rewards pages a human evidently decided the shape of, and demotes detached, sourceless prose that could have come from anywhere. A page earns trust by showing who is talking and why they would know. This section governs that. `_anti-ai-language.md` outranks it: sounding human never licenses a tell.
+
+### Step 1 — pick the register, before drafting
+
+Not every page should say "we". Choose one and **record it on the row** as `register: operator` or `register: reporter`, the same way MEDIUM records its decision. The audit phase checks the record.
+
+| Register | Use when the page's job is… | Sounds like |
+|---|---|---|
+| **operator** | helping the reader decide, where our having done this before is the reason to trust the answer — guides, how-to, listicles, roundups, comparisons, reviews, worth-it, audience/vertical pages, anything that recommends or ranks | "we", "our", "what we've seen"; sentence 1 is the answer; a one-sentence tee-up may follow; commits to a recommendation |
+| **reporter** | conveying what happened or what a thing is — news and announcement briefs, release notes, model and regulation launches, pricing changes, data and reference tables, glossary and definitional entries, policy summaries | third person, sourced, straight facts; **no "we", no first-person experience claims, no tee-up** |
+
+Wrapping a news item in "in our years of experience" is worse than plain reporting. When genuinely torn, ask what the reader came for: a decision (operator) or a fact (reporter).
+
+**The register is a lens, not a lighter standard.** Everything else in this file applies identically to both — SEO and its required page elements, the DEPTH floors, QUALITY, STYLE, LINKS, COMPARISON, NEUTRALITY, and `_anti-ai-language.md`. A reporter page is held to the same word-count floor, the same sourcing bar, and the same AEO openers as a guide.
+
+Exactly two things differ:
+1. **The tee-up** — operator only. If it is used, it is the sentence after the answer, never sentence 1. Reporter pages open on the news itself.
+2. **How ANCHOR is attributed** — operator states the page's original insight as first-hand experience; reporter states the same substance as sourced analysis, without claiming we did it. The requirement is identical; only the attribution changes.
+
+**Mixed pages.** A reporter brief may carry ONE clearly-scoped analysis section at the end ("what this changes for teams running X") in operator register, where we genuinely have something to say. The reporting body stays reporter throughout. Never blend the two inside a paragraph.
+
+### Step 2 — the tee-up (operator register only)
+
+Sentence 1 of the first body paragraph is the answer. If a tee-up belongs on this page, it is the next sentence, one sentence: what our relationship to the subject is and why we are the ones telling you. Draw it from ANCHOR / `_experience.md`. Concrete beats grand: name the domain, the work, or the volume, not an adjective.
+
+Do not reverse them. A tee-up that comes first delays the answer. A tee-up that tries to also be the answer becomes a clause stack. Do not pad a second sentence just to have a tee-up.
+
+**Where it goes: the sentence after the answer, in the FIRST BODY PARAGRAPH. Never the header, title, subtitle, hero, or any deck/standfirst slot, and never sentence 1.** Those header slots are metadata the template renders above the article, and a voice line placed there reads as a tagline rather than a person talking. Concretely, in a record with a `subtitle` (or `deck`, `standfirst`, `excerpt`, `summary`) field plus a body array, the first body element's first sentence is the answer, a tee-up (if used) is its second sentence, and the subtitle keeps doing its own job of describing the page.
+
+**Never duplicate it.** Do not repeat the tee-up, verbatim or near-verbatim, in the subtitle or any other header field. Do not restate the subtitle in the intro. A reader who sees the same finding twice in a row, once as a deck and once in the body, is looking at a copy-paste error, not a voice. The intro adds a fact the subtitle did not already say.
+
+**Fit gate.** The tee-up is the default within operator register, not a quota. If it would read as bolted-on for this particular page, skip it, keep the operator voice in the prose, and leave a one-line note `teeup-exempt: [why]`. Sentence 1 is still the answer. A forced tee-up fails the audit exactly like a missing one — the same rule as forced client mentions in ANCHOR and forced tables in COMPARISON.
+
+### Step 3 — operator-register rules
+
+- **Name the business at the FIRST "we" on the page: "At {BUSINESS_NAME}, we…".** The first time a page speaks as the business, the reader must be told who is speaking. A bare "We build and run AI systems inside other people's businesses" dropped into an intro has no antecedent — the reader does not know who "we" is, and an extractor quoting that sentence attributes it to nobody. Applies to the first first-person **company claim** (what the business does, builds, runs, helps with, audits, charges for, or refuses to do). **Once per page only** — every later "we" stays bare, because repeating the brand reads as an ad. Skip it when the brand already appears earlier on the page or lands in the same breath just after. Does **not** apply to the authorial "we" ("we cover", "we compared", "we ranked these on") — there "we" is the guide's authors, not the company. Never in `metaTitle` / `metaDescription`, where the title suffix already carries the brand and the prefix burns characters against the 160-char cap.
+  - ✗ "Portable Computer has no price of its own. We build and run AI systems inside other people's businesses…"
+  - ✓ "Portable Computer has no price of its own. At {BUSINESS_NAME}, we build and run AI systems inside other people's businesses…"
+- First person plural throughout: "we", "our", "we've seen". Never "I" — no page has a named human speaking it. Never a fabricated persona.
+- Second person for the reader ("you"), singular, present tense. "You" is the person reading. It is not a claim that they already own, use, or have decided to leave the subject. For ownership, write "if you already use this product…" "Your current system" and "leaving" the product as if they already use it fail `_anti-ai-language.md`.
+- Do not default to "a firm that…" or "firms that…". That is encyclopedia voice. Keep "firm" when you name a type of shop.
+- Never the detached encyclopedia register. The page is us talking to one reader about a decision they are making.
+- Experience claims come from `_experience.md` only. Its required section always licenses general framing for this site's domain; its optional section, where present, licenses concrete named claims. Never invent a number, duration, headcount, client name, or test result that neither section supplies.
+- Commit to a recommendation, and say who should not take it. Hedged non-conclusions already fail `_anti-ai-language.md`; here they are also a voice defect.
+- Every judgment states its basis: what we ran, what we saw, or what the named source publishes.
+
+### Step 4 — read it back before hand-off
+
+Not a rewrite pass. A voice instruction buried in a long prompt loses to word counts and keyword slots, so before handing the draft to the audit phase, re-read it once for voice alone and answer:
+
+1. Does the row carry all three records: `medium:`, `register:`, and `page type:`? Is the register right for what this page actually does?
+1b. Operator — is sentence 1 the answer, is any tee-up the next sentence of the FIRST BODY PARAGRAPH (or `teeup-exempt:`), and does no header field repeat the tee-up?
+2. Operator — if there is a tee-up, does it sound like us, or did it get skipped with no exe

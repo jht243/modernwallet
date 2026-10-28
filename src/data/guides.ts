@@ -31,6 +31,110 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── x-trends-mindmap-auto 2026-10-28: adoption-credit-carryforward-refund ──
+  {
+    "updated": "2026-10-28",
+    "slug": "adoption-credit-carryforward-refund",
+    "title": "Adoption Tax Credit Refund for 2020 to 2024 Carryforwards",
+    "metaDescription": "The Internal Revenue Service is refunding unused 2020 to 2024 adoption credit carryforwards, up to $5,000 per child, with no amended return needed.",
+    "h1": "Automatic Adoption Tax Credit Refund for Unused Carryforwards",
+    "cardBlurb": "The Internal Revenue Service is adjusting 2025 returns so unused 2020 to 2024 adoption credit carryforwards can be refunded, up to $5,000 per eligible child, without an amended return.",
+    "introText": "Generally yes. If you had a 2020 to 2024 adoption credit carryforward and filed a 2025 return, the [Internal Revenue Service (IRS)](https://www.irs.gov/credits-deductions/individuals/adoption-credit) says it will adjust your account and issue any adoption tax credit refund without an amended return. The refund is capped at $5,000 per eligible child for 2025, and it can be lower. The IRS generally sends a notice within 30 days of the adjustment.\n\nThe IRS announced the automatic refunds on October 16, 2026, in news release [IR-2026-123](https://www.irs.gov/newsroom/irs-has-begun-issuing-automatic-refunds-to-individuals-who-claimed-adoption-tax-credit-carryforward-from-prior-years). The announcement followed a clarification from the U.S. Department of the Treasury on how the Working Families Tax Cuts, the 2025 tax law, applies to the adoption credit. Under that interpretation, unused carryforwards from 2020 to 2024 can raise the refundable part of the credit for tax year 2025 only.",
+    "sections": [
+      {
+        "heading": "Will the IRS Refund Your Adoption Credit Carryforward?",
+        "body": "Yes, in most cases. The IRS says taxpayers who filed a 2025 return before April 15, 2026, with an unused 2020 to 2024 adoption credit carryforward generally receive the adjustment automatically. No amended return is needed, and the IRS asks taxpayers not to file one just to request this adjustment.\n\nAccording to the [IRS questions and answers](https://www.irs.gov/faqs/questions-and-answers-about-adoption-tax-credit-carryforward), generally no action is required. The IRS began issuing these refunds and account adjustments in late September 2026. More than 50,000 taxpayers had received refunds by the time of the October 16 announcement.\n\nThe adjustment covers tax year 2025 only. Carryforwards can raise the refundable part of the 2025 credit up to $5,000 per eligible child, and the 2025 treatment does not carry into 2026. Some accounts get a later review, and some people may need to file Form 1040-X with [Form 8839](https://www.irs.gov/forms-pubs/about-form-8839), as the sections below explain."
+      },
+      {
+        "heading": "Who Qualifies for the Adoption Tax Credit Refund",
+        "body": "The IRS questions and answers list three conditions for the automatic adjustment. A taxpayer qualifies when all of these apply:\n\n- You filed a 2025 Form 1040, Form 1040-SR or Form 1040-NR.\n- You claimed, or were eligible to claim, the adoption credit on Form 8839.\n- You had prior-year carryforwards available for 2025, and your return and account information show the refundable credit should increase.\n\nOnly carryforwards from 2020 to 2024 count toward the 2025 adjustment. The IRS says carryforwards expire after five years and the oldest is used first, and carryforwards from before 2020 have expired. The non-refundable portion of the credit can be carried forward up to five years, and anything left after that is forfeited.\n\nA separate path covers people who did not claim the credit on their 2025 return. If you filed Form 8839 for any year from 2020 to 2024 and it showed a carryforward, the IRS says you may still qualify. If the IRS lacks enough information to make the adjustment, you may need to file Form 1040-X with Form 8839."
+      },
+      {
+        "heading": "How Much the Adoption Tax Credit Refund Can Be",
+        "body": "The 2025 refund ceiling is $5,000 per eligible child, according to the IRS. The amount a household receives can fall below that ceiling. The IRS says the result depends on the allowable credit, income limitations, payments and offsets.\n\nThe IRS pages on this adjustment do not publish the 2025 maximum credit per child or the 2025 income phaseout amounts. They also give no formula for how much of a given carryforward becomes refundable. Without those figures, no general refund amount can be calculated from the published guidance, and the IRS notice is the document that shows the amount for a specific account.\n\nThe adjustment does not change adjusted gross income (AGI), taxable income or qualified adoption expenses on the 2025 return. It corrects the refundable portion of the credit. The 2026 rules work differently, and the IRS adoption credit page lists them separately.\n\n| Item | 2025 adjustment | 2026 rule |\n| --- | --- | --- |\n| Tax year | 2025 | 2026 |\n| Refundable cap per child | $5,000 | Up to $5,120 |\n| Carryforwards count toward refundable part | Yes, 2020 to 2024 carryforwards | No, the 2025 treatment does not carry into 2026 |\n| How to claim | The IRS adjusts the account | Schedule 3-A with Form 1040, plus Form 8839 |\n\nFor 2026, the IRS caps qualified adoption expenses at $17,670 per child, and the employer-provided benefit exclusion limit is also $17,670. The full 2026 credit applies at modified adjusted gross income (MAGI) of $265,080 or less. It is reduced across a $40,000 band ($305,080 minus $265,080) and is unavailable at MAGI of $305,080 or more. The [2026 tax brackets](/guides/2026-tax-brackets/) guide covers the separate income tax rates for that year."
+      },
+      {
+        "heading": "Refund Timing and the IRS Notice",
+        "body": "Refund timing depends on when the 2025 return was filed and on the condition of the account. The IRS says taxpayers who filed before April 15, 2026, generally receive any adjustment automatically. Returns filed under an extension are reviewed later in 2026, after processing.\n\nAccounts with identity theft indicators, freezes, dependency conflicts or other issues are also reviewed later in 2026, once the issue is resolved. The IRS expects most eligible refunds to be complete by the end of 2026. Its adoption credit page says most of these refunds will be issued automatically by December 31, 2026.\n\nThe IRS generally sends a notice within 30 days of the adjustment. The notice states the amount and says whether it produced a refund or was applied to another tax or non-tax debt. An offset for another debt can absorb part or all of the money.\n\nThe IRS notes that its news items may not be updated after release. Readers can verify the dates and details in the [IRS news release](https://www.irs.gov/newsroom/irs-has-begun-issuing-automatic-refunds-to-individuals-who-claimed-adoption-tax-credit-carryforward-from-prior-years) and on the [IRS adoption credit page](https://www.irs.gov/credits-deductions/individuals/adoption-credit) before relying on them."
+      },
+      {
+        "heading": "How to Check Your IRS Account",
+        "body": "Where's My Refund? will not show this adjustment, according to the IRS. The IRS points taxpayers to three other places instead:\n\n- The notice the IRS mails after the adjustment.\n- The [IRS Individual Online Account](https://www.irs.gov/individuals/online-account), which shows records, refund status and notices, and lets you make payments.\n- A tax account transcript or a record of account transcript.\n\nIf the original notice is lost, the IRS may not be able to reissue it. A copy is available through the Online Account. The IRS asks taxpayers not to call unless a notice or letter tells them to.\n\nWhen the notice arrives, compare it with the 2025 return and keep it with your tax records. The refundable increase it shows is the figure needed later to recompute the 2026 carryforward."
+      },
+      {
+        "heading": "When to File Form 1040-X",
+        "body": "Form 1040-X is not needed to request the adoption credit adjustment, and the IRS asks taxpayers not to file one for that purpose alone. According to the IRS questions and answers, an amended return applies in these cases:\n\n- Correcting other items on the 2025 return, such as filing status, income, dependents, qualified adoption expenses, employer adoption benefits, carryforward amounts or another credit.\n- Fixing a return where a carryforward was used as a nonrefundable credit when another listed credit, such as one on Form 5695 or Form 3800, could have been claimed instead.\n- Disputing the adjustment, which may require Form 1040-X with Form 8839.\n- Supplying information when the credit was not claimed in 2025 and the IRS cannot make the adjustment from 2020 to 2024 Form 8839 filings.\n\nThe IRS will not automatically remove an estimated tax penalty as part of this adjustment. To request abatement, follow your penalty notice or file Form 843."
+      },
+      {
+        "heading": "Effect on the 2026 Carryforward",
+        "body": "The adjustment corrects the refundable portion of the 2025 credit, so future carryforwards may decrease. The IRS says to recalculate the 2026 carryforward in three steps:\n\n1. Open the Nonrefundable Adoption Credit Carryforward Worksheet (line 18) in the 2025 Form 8839 instructions.\n2. On worksheet line 8, enter your 2025 Form 8839 line 18 amount plus the refundable increase from the adjustment.\n3. Take the refundable increase from the IRS notice or your transcript.\n\nDo not enter the notice's total refund or balance due as the refundable increase. The IRS says to use the refundable increase shown on the notice or transcript for line 8. Complete the 2025 Form 8839 as issued and do not alter the form.\n\nFor 2026 returns, follow the 2026 instructions, because the 2025 carryforward treatment does not carry into 2026. The 2026 refundable portion, up to $5,120 per child, is claimed on Schedule 3-A (Form 1040), with Form 8839 attached to the return. On Form 8839, Part III covers the employer-benefit exclusion and is completed before Part II, which computes the credit."
+      },
+      {
+        "heading": "Takeaway",
+        "body": "According to IR-2026-123 (October 16, 2026) and the IRS questions and answers, a 2025 filer who claimed or was eligible for the adoption credit and had a 2020 to 2024 carryforward will have the account adjusted without an amended return. Any refund is capped at $5,000 per eligible child. Read together, the IRS guidance sorts filers into three groups:\n\n- No action: the return was filed before April 15, 2026, the credit was claimed on Form 8839, and nothing else on the return needs correcting. Wait for the notice and keep it.\n- Later review: the return was filed under an extension, or the account has an identity theft indicator, freeze or dependency conflict. The IRS reviews these accounts later in 2026.\n- Form 1040-X: the credit was never claimed and the IRS lacks enough information, other items on the return need correcting, or the filer disputes the adjustment.\n\nOffsets for other tax or non-tax debts can absorb part or all of a refund in any of these groups, and the notice says when that happened. This reading changes only if the IRS revises its questions and answers or issues new guidance.\n\nOnce the notice arrives, use the refundable increase it shows on the line 18 worksheet in the 2025 [Form 8839](https://www.irs.gov/forms-pubs/about-form-8839) instructions to recompute the 2026 carryforward. Start by opening the [IRS Individual Online Account](https://www.irs.gov/individuals/online-account) and checking the notices and transcript for an adoption tax credit refund."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/tax-bracket-calculator/",
+        "label": "Tax Bracket Calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is the adoption credit refundable?",
+        "answer": "Partly. For tax year 2025, the refundable portion is limited to $5,000 per eligible child, and unused 2020 to 2024 carryforwards can increase it for 2025 only. For 2026, the IRS says up to $5,120 per child is refundable and is claimed on Schedule 3-A (Form 1040). The non-refundable portion can be carried forward up to five years."
+      },
+      {
+        "question": "Do I need to file an amended return to get the adoption credit refund?",
+        "answer": "No. The IRS says taxpayers do not need to file an amended return to get the 2025 adjustment and should not file one just to request it. Form 1040-X is for correcting other items, disputing the adjustment, or supplying information when the credit was not claimed in 2025 and the IRS lacks enough detail."
+      },
+      {
+        "question": "How much is the adoption credit refund per child?",
+        "answer": "Up to $5,000 per eligible child for 2025. The IRS says the actual amount can be lower depending on the allowable credit, income limitations, payments and offsets. The IRS has not published a formula for how much of a given carryforward becomes refundable, so the IRS notice shows the amount for each account."
+      },
+      {
+        "question": "Why did I get an IRS notice about my adoption credit?",
+        "answer": "The IRS sends a notice, generally within 30 days, after it adjusts a 2025 account to apply 2020 to 2024 carryforwards to the refundable credit. The notice states the amount and whether it became a refund or was applied to another tax or non-tax debt. The IRS suggests comparing it with the 2025 return and keeping it with tax records."
+      },
+      {
+        "question": "Will Where's My Refund show the adoption credit adjustment?",
+        "answer": "No. The IRS says Where's My Refund? will not show this adjustment. The IRS points taxpayers to the IRS Individual Online Account and to a tax account transcript or record of account transcript instead."
+      },
+      {
+        "question": "Does this apply to my 2026 return?",
+        "answer": "No. The IRS says the 2025 carryforward treatment does not carry into 2026. For 2026, up to $5,120 per child is refundable and is claimed on Schedule 3-A (Form 1040) with Form 8839. The full 2026 credit applies at modified adjusted gross income (MAGI) of $265,080 or less."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS: IRS has begun issuing automatic refunds to individuals who claimed adoption tax credit carryforward from prior years (IR-2026-123)",
+        "url": "https://www.irs.gov/newsroom/irs-has-begun-issuing-automatic-refunds-to-individuals-who-claimed-adoption-tax-credit-carryforward-from-prior-years"
+      },
+      {
+        "label": "IRS: Questions and answers about adoption tax credit carryforward",
+        "url": "https://www.irs.gov/faqs/questions-and-answers-about-adoption-tax-credit-carryforward"
+      },
+      {
+        "label": "IRS: Adoption credit",
+        "url": "https://www.irs.gov/credits-deductions/individuals/adoption-credit"
+      },
+      {
+        "label": "IRS: About Form 8839, Qualified Adoption Expenses",
+        "url": "https://www.irs.gov/forms-pubs/about-form-8839"
+      },
+      {
+        "label": "IRS: Individual Online Account",
+        "url": "https://www.irs.gov/individuals/online-account"
+      }
+    ],
+    "metaTitle": "",
+    "subtitle": "",
+    "ctaTitle": "",
+    "ctaText": "",
+    "ctaButton": "",
+    "faqItems": []
+  },
   // ── x-trends-mindmap-auto 2026-10-27: how-to-buy-anthropic-stock ──
   {
       "updated": "2026-10-27",
@@ -1233,7 +1337,7 @@ export const GUIDES: Guide[] = [
   },
   // ── mindmap-pass 2026-10-21 (autocomplete pass): 2026-tax-brackets, student-loan-forgiveness-programs, how-is-savings-account-interest-calculated ──
   {
-    "updated": "2026-10-21",
+    "updated": "2026-10-28",
     "slug": "2026-tax-brackets",
     "title": "2026 Tax Brackets by Filing Status and Standard Deduction",
     "metaDescription": "The 2026 tax brackets run from 10% to 37%. See thresholds for all four filing statuses, the 2026 standard deduction, and a worked $85,000 example.",
@@ -1263,7 +1367,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "heading": "What the 2026 Tax Brackets Leave Out",
-        "body": "The bracket tables on this page do not cover capital gains rates, tax credits, payroll tax or state income tax. The $9,870 in the worked example is federal income tax from the brackets alone, before any of those items.\n\nIf part of your income comes from selling investments, read our comparison of [ordinary income vs capital gains tax rates](/compare/ordinary-income-vs-capital-gains-tax/). If you are working out tax for a trust, see our guide to [trust tax rates](/guides/trust-tax-rates-explained/).\n\nTo place your own income in the 2026 tax brackets, enter your filing status and income in our [tax bracket calculator](/tax-bracket-calculator/)."
+        "body": "The bracket tables on this page do not cover capital gains rates, tax credits, payroll tax or state income tax. The $9,870 in the worked example is federal income tax from the brackets alone, before any of those items.\n\nIf part of your income comes from selling investments, read our comparison of [ordinary income vs capital gains tax rates](/compare/ordinary-income-vs-capital-gains-tax/). If you are working out tax for a trust, see our guide to [trust tax rates](/guides/trust-tax-rates-explained/). Credits sit outside the brackets, and one of them, the adoption credit, now has a 2025 refund adjustment, covered in our guide to the [adoption tax credit refund for unused carryforwards](/guides/adoption-credit-carryforward-refund/).\n\nTo place your own income in the 2026 tax brackets, enter your filing status and income in our [tax bracket calculator](/tax-bracket-calculator/)."
       }
     ],
     "tools": [

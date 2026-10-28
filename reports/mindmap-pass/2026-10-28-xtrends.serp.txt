@@ -1,0 +1,57 @@
+{
+ "keyword": "adoption tax credit refund",
+ "verdict": "winnable",
+ "forum_dominated": false,
+ "ai_overview_present": true,
+ "ai_overview_cited_domains": [
+  "www.irs.gov",
+  "www.natptax.com",
+  "turbotax.intuit.com",
+  "finance.yahoo.com"
+ ],
+ "featured_snippet": null,
+ "top10_domains": [
+  "www.irs.gov",
+  "www.nolo.com",
+  "www.theaccountant-online.com",
+  "nightlight.org",
+  "www.facebook.com",
+  "yourcoloradoaccountant.com",
+  "community.freetaxusa.com",
+  "news.bloombergtax.com",
+  "www.adoptinter.org",
+  "www.libertytax.com"
+ ],
+ "major_domains": [],
+ "forum_domains": [
+  "www.facebook.com"
+ ],
+ "serp_feature_mix": {
+  "ai_overview": 1,
+  "discussions_and_forums": 1,
+  "organic": 18,
+  "people_also_ask": 1,
+  "related_searches": 2
+ },
+ "paa": [
+  "What is the adoption tax credit?",
+  "How do people get $10,000 tax refunds?",
+  "What disqualifies you for adoption?",
+  "How much of the child tax credit do you actually get?",
+  "Who gets the new $6000 tax break?",
+  "Does everyone get a $3,000 tax refund?"
+ ],
+ "related_searches": [
+  "Adoption tax credit refund eligibility",
+  "How does the adoption tax credit work",
+  "Does adoption tax credit delay refund",
+  "Adoption tax credit 2025 payment schedule",
+  "IRS adoption credit 2025",
+  "How to maximize adoption tax credit",
+  "Adoption credit obbb",
+  "Embryo adoption tax credit"
+ ],
+ "recommended_shape": "standard article/guide is viable",
+ "evidence": "AI Overview present, cites www.irs.gov, www.natptax.com, turbotax.intuit.com, finance.yahoo.com",
+ "se_results_count": 124
+}

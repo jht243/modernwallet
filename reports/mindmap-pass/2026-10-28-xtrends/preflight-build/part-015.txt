@@ -1,0 +1,54 @@
+.claude/commands/_anti-ai-language.md — characters 9000 onward
+
+itional, or a phrase reads two ways — it fails, even if every word is defensible. Two specific traps: (1) **garden-path / phrasal-verb collisions** — "a switch off the old plan" reads first as *power off*; "turn down the offer", "make out the invoice", "run over the contract" all mislead for a beat. Reword so the first reading is the right one ("moving off the old plan"). (2) **stacked abstractions** — "whether a switch off the old plan pays off" chains three light words (switch/off/pays-off) with no concrete noun; name the thing ("whether moving off the old plan is worth the cost"). When a sentence makes a reader ask "what does this even mean?", the answer is never a smarter reader — it is a rewrite.
+- **Folksy locative metaphor standing in for a fact.** "…is where the hours go", "that's where the money lives", "this is where deals die", "where the real work happens", "where the magic is", "that's where it falls apart". A vague place-metaphor pretending to be an insight, when the sentence should state the actual quantity, cause, or mechanism. "Setup is where the hours go" → "Setup takes the most hours" or, better, the real number. Cut the metaphor and state the fact.
+- **Aphoristic fragment as a verdict.** "Both cannot be current." "Neither is the point." "That is the trade." A short declarative doing the work of an argument. State the mechanism instead.
+- **Superficial `-ing` analysis clauses** that pretend to explain meaning: a trailing "highlighting…", "underscoring…", "reflecting…", "showcasing…". Replace with the concrete consequence ("…so users can find old drafts without leaving the editor").
+- **Synonym cycling** — rotating "agent / assistant / tool / platform" for the same thing to avoid repetition. Repeat the one clear word instead.
+- **Dramatic fragmentation** — "That's it. That's the whole thing.", "X. And Y. And Z." Use complete sentences.
+- **Rhetorical setups** — "What if I told you…", "Think about it:", "Plot twist:", and self-answered "Question? Answer." pairs. Drop them and state the point.
+- **Fake-profound kicker** — a final "deep" line that turns the point into a metaphor, aphorism, or mic-drop. Delete it and end on the clearest concrete sentence already in the draft.
+- **Summary-recap ending** — "In conclusion", "Ultimately", "Overall", or a closing paragraph that restates the piece. End on the last concrete point, takeaway, or next action.
+
+### Headline tells (any one occurrence is a failure — applies to H1, SEO title, subtitle/deck, and section headings)
+
+- **Presupposed change.** "still", "no longer", "now", "these days", "has become", "in the age of" used to imply the reader knows some earlier state. The reader arrived cold and has no before-picture. "What the Vendor Still Publishes" tells a first-time visitor that something changed and leaves them guessing what. Name the current state flatly instead.
+- **The coy abstraction where a name belongs.** "the vendor", "this platform", "one major provider", "a leading tool" in a headline whose subject you already named. If the H1 names the subject, the next clause uses that name, not "the Vendor".
+- **The two-clause headline formula.** "X, and What You Have to Ask For" / "X, and Why It Matters" / "X: What It Is and How to Choose". A comma or colon splicing a topic to a second promise is the default LLM headline shape. Write one clause that says the thing.
+- **Headline tricolon.** A subtitle or deck built as three parallel items ("the one figure X lists, why Y disagree, and the line items that move your bill"). Two items, or one specific claim, reads as written by a person.
+- **"actually" / "really" / "truly" as the insight.** "what actually drives your bill", "what it really costs". The word is doing the work a fact should do. Cut it, or replace the headline with the fact itself.
+- **Question headlines the page then answers.** "Is X Worth It?" as an H1 is acceptable when it matches a real query. "But What About Y?" as a section heading is not.
+- **Colon-drama in a heading.** "The Catch:", "The Result:", "The Real Story:".
+- **Curiosity-gap headlines** that withhold the answer to force a click: "What Nobody Tells You About X", "The One Thing X Won't Say". State the finding in the heading.
+
+### The meaning bar — POSITIVE tests every sentence must pass
+
+Everything else in this file is a ban. Bans alone produce empty prose, because a writer dodging them drifts toward abstraction: the safest sentence to write is one that says nothing. These tests are the other half. A page can carry zero banned phrases and still fail here, and that failure is worse, because it wastes the reader's time while looking compliant.
+
+- **Never raise a problem you do not resolve.** If you name a problem, objection, risk, limitation, or complaint, the same passage must give the reader somewhere to go: the answer, the workaround, the tradeoff to accept, or a link to the page that handles it. A problem raised and abandoned is worse than silence, because you have told the reader they have a fire and then walked out. "There is a fifth complaint, that reminders are manual and orders go cold, and no dashboard fixes it" leaves the reader holding it. Either resolve it, route it, or cut the sentence. This applies to caveats and limitations too: "X is supported but not automated" must be followed by what to do about it.
+- **The say-it-out-loud test.** Would you say this sentence, in these words, to a smart colleague across a table? If it would sound stilted spoken aloud, it is stilted written down. "Naming the problem first separates a good switch from an expensive lateral move" is not something a person says. "Work out what you actually need before you compare the options" is.
+- **Concrete nouns, not placeholders.** Every sentence needs at least one noun the reader can picture. `problem`, `platform`, `solution`, `option`, `approach`, `thing`, `piece`, `area`, `aspect`, `move`, `one` are placeholders. A wait time, a refill pack, a duplicate row, $49 a month: those are things. A sentence built only from placeholders means nothing however grammatical it is.
+- **Each sentence adds a new fact.** If a sentence restates its predecessor in different words, delete it. The predecessor can be the previous body sentence or the subtitle/deck. "Each constraint points at a different option. Overnight, ground, and pickup each fit a different one." is one idea written twice. A subtitle that states the finding, then an intro sentence that restates it, is the same fail.
+- **No pronoun that sends the reader backwards.** "a different one", "if it cannot be stated", "that matters when". A pronoun whose antecedent sits in a previous sentence forces a re-read. Repeat the noun.
+- **Verbs do the work; do not nominalize.** "Naming the problem first separates…" hides an instruction inside a noun. Write the instruction: "Name the problem first." Watch for `-ing` and `-tion` subjects.
+- **Right collocations.** Use the words that actually go together. Products do not "answer" problems; they fit a need, solve a problem, or handle a job. A wrong pairing is the clearest signal that a machine assembled the sentence.
+- **No abstract metaphor where a plain verb exists.** "separates a good switch from an expensive lateral move", "drives the real cost", "points at". Say what happens.
+
+**If a reader could ask "what does this actually mean?" about a sentence, it fails, no matter how many bans it clears.**
+
+### Overloaded sentences (any one is a failure)
+
+- One idea per sentence. A sentence fails if it packs three or more ideas, chains clauses with commas / "and" / "from X to Y to Z", runs past ~30 words, or needs a second read. Split a stack. Do not split a clear spoken sentence just to get under 20 words.
+
+### Inflated adjectives & hype verbs (cut the word, state the fact)
+
+- Banned as filler: crucial, vital, essential, pivotal, paramount, powerful, profound, remarkable, notable, significant, key, game-changer, cutting-edge, revolutionary, breakthrough, robust, holistic, "wealth of", myriad, plethora, delve, realm, landscape, testament, "plays a key/vital/pivotal role", "cannot be overstated", unlock, harness, supercharge, boost, foster, utilize, facilitate, empower, streamline, tapestry, beacon, multifaceted, meticulous, intricate, embark, elevate, transformative. Name the actual feature and what it does instead.
+
+### Punctuation tells (any one is a failure)
+
+- Rhetorical-question section openers, colon-drama ("The result:", "The catch:"), exclamation points, scare-quote overuse, semicolon-stacked sentences.
+
+### Formatting slop (any one is a failure)
+
+- Emoji in headings, bold sprinkled mid-sentence for emphasis, bullet lists where two sentences of prose read better, and a header over a two-sentence section. Format follows the content; it does not decorate it.
+- Three or more parallel steps, checks, or tests announced as a set, then written as paragraphs that open First / Second / Third (or 1. / 2. / 3. in body copy). Those belong in a

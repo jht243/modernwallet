@@ -1,0 +1,13 @@
+{
+  "author": "claude-main",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {"path": "/guides/adoption-credit-carryforward-refund/", "expectedUpdatedDate": "2026-10-28",
+     "requiredText": ["Adoption Tax Credit Refund", "IR-2026-123", "$5,000 per eligible child", "Takeaway"],
+     "forbiddenText": ["we tested", "We tested", "our testing"],
+     "growthFile": "evidence/adoption-credit-carryforward-refund/growth.json",
+     "evidenceFile": "evidence/adoption-credit-carryforward-refund/evidence.json"},
+    {"path": "/guides/2026-tax-brackets/", "expectedUpdatedDate": "2026-10-28",
+     "requiredText": ["adoption tax credit refund for unused carryforwards"]}
+  ]
+}

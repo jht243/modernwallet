@@ -1,0 +1,52 @@
+.claude/commands/mindmap-pass/phase-build-brief.md — characters 18000 onward
+
+, but say so — never invent a number).
+3. **Decide the home + lever** for each validated intent using the ladder in "Decide the lever" below. Name the exact target file/route.
+4. A brief item the site **already answers well** with a dedicated, intent-matched page is **not** a new row — record it under exclusions ("already covered by `<route>`"), don't pad the table. "Already answers well" is judged from the **coverage lookup** (see "Decide the lever"), not from memory.
+
+## LENS 2 — Adjacent-demand discovery (CORE TENET — run on every pass)
+
+Lens 1 stays inside what the user typed. Lens 2 reads the **demand space around it** and finds the themes worth owning that the user didn't name. Do all four steps; use only real SEMRUSH/Autocomplete/web data — never invent queries, volume, or movement.
+
+1. **Expand the seeds.** For each Lens-1 seed, pull `phrase_related` + `phrase_fullsearch` + `phrase_questions` from SEMRUSH and run the Autocomplete miner. Merge the results into one candidate pool.
+2. **Cluster the pool.** Group candidates into semantic clusters by shared intent, entity, or modifier — a recurring product/model/vendor name, a compliance framework, an audience/use-case modifier ("for dentists", "for startups", "for enterprise"), a format signal ("vs", "alternative", "pricing", "template", "checklist", "calculator", "example"), or a question shape ("can X do Y", "is X compliant", "how to X"). A **cluster** is ≥2 related phrases sharing a theme, OR a single phrase carrying a distinct modifier/entity the site has no dedicated answer for.
+3. **Identify EMERGING / under-served clusters.** A cluster is emerging/under-served when SEMRUSH/Autocomplete show real demand (volume, question frequency, or a live news signal) but the site has no page that is the clear, dedicated, intent-matched answer for it. Evidence must be real:
+   - The cluster's phrases carry SEMRUSH volume (or repeated Autocomplete completions) but no existing page squarely targets the theme — a coverage gap at the *theme* level.
+   - An existing page surfaces for the cluster but is an intent/format mismatch (a pillar that structurally can't satisfy a "vs"/pricing/calculator query).
+   - **News-driven demand** the brief pointed at (if the input was an article): translate the breaking theme into the phrases searchers will reach for; validate plausibility with SEMRUSH volume where it exists, or label it `demand inferred from live news/Autocomplete — no tool volume yet` and cite the signal. First-mover clusters often have no competitor footprint — that's the upside, not a reason to drop.
+   - A cluster the site ALREADY answers well with a dedicated page is **not** emerging — drop it (note under exclusions if noteworthy). Judge "already answers well" from the coverage lookup (see "Decide the lever"), not from memory.
+4. **Decide the lever per cluster** (ladder below) and emit each actionable cluster as a real row **and** as a row in the required `## Emerging search patterns (clusters)` block.
+
+## LENS 3 — Comparison / Alternatives / Pricing (CORE TENET — run on every pass)
+
+Lenses 1 & 2 find topical and adjacent demand. Lens 3 guarantees the **bottom-funnel, high-commercial-intent** formats are covered for the brief's entities — the pages that capture buyers already in evaluation. Run all steps with real SEMRUSH/Autocomplete data only; never invent rivals, volume, or prices.
+
+1. **Enumerate the primary entities.** From the interpreted brief (Lens 1) and the strongest adjacent clusters (Lens 2), list the concrete named entities a searcher would compare or price — products, tools, vendors, platforms, models, services. (Pure topic/how-to briefs with no comparable entity: attempt to identify the category leaders a searcher in that space would weigh; if genuinely none exist, say so under exclusions — do not force empty rows.)
+2. **Generate the three format families per entity** and validate each phrase on SEMRUSH (`phrase_these` + `phrase_kdi`; `phrase_organic` on the strongest to read who owns the SERP). Use the free Autocomplete miner on `{entity} vs`, `{entity} alternatives`, and `{entity} pricing` to surface the exact real completions (which rivals people actually compare, real "alternative" phrasings, real pricing questions) before spending SEMRUSH credits:
+   - **Comparison (versus):** `{entity} vs {rival}` for the rivals SEMRUSH/Autocomplete/SERP actually surface (not invented matchups). Prefer the head-to-heads with real volume; one page per contested pairing.
+   - **Alternatives:** `{entity} alternatives`, `best {entity} alternatives`, `{entity} alternatives for {audience}`, `free {entity} alternatives` — an objective, comparison-table listicle of competing options.
+   - **Pricing:** `{entity} pricing`, `{entity} cost`, `how much is {entity}`, `{entity} pricing plans`, `is {entity} worth it` — a pricing/plan-breakdown page (plan tiers, what each costs, who each fits, value verdict).
+3. **Decide the lever per candidate** with the ladder below. Most vs/alternatives/pricing candidates are `create new content`; if a dedicated, intent-matched page already ranks for the exact pairing/term, it's an enrich or a drop (dedup step handles it), not a new row.
+4. **Emit each surviving candidate as a main-table row** with the correct `format`:
+   - `{entity} vs {rival}` and `{entity} alternatives` → `format: comparison table/database`, `resolved_deliverable: comparison table/database`.
+   - Pricing → `format: comparison table/database` if it's a multi-plan/multi-vendor breakdown, else `article`; if the query signals a personalized estimate ("cost calculator", "ROI"), consider `format: calculator` / `interactive tool`.
+   - **Every vs/alternatives/pricing row also appears in the `## Emerging search patterns (clusters)` block** (theme = e.g. "`{entity}` comparison", "`{entity}` alternatives", "`{entity}` pricing") so the manifest surfaces the bottom-funnel coverage each run — same table+block agreement rule as Lens 2.
+5. **Objectivity + affiliate rules.** Comparison/alternatives/pricing pages must be genuinely objective (the business is never the auto-winner); honor the repo's affiliate/referral wiring (first-mention company links, sponsored-referral registry) exactly as the content templates already do. Never fabricate prices — cite the vendor's public pricing or label it `pricing not public / verify on vendor site`.
+
+Lens 3 reuses the same dedup, SEMRUSH-validation, and adversarial duplicate-suppression gate as Lenses 1 & 2 — an entity the site already covers with a real, ranking vs/alternatives/pricing page is dropped as already-shipped, not re-created.
+
+## LENS 3b — Model-launch overlay: the Tier 0 Launch Core (CONDITIONAL — skip unless BOTH conditions hold)
+
+**Condition 1: this repo publishes AI-model / AI-tool content. Condition 2: the brief is (or Lenses 1–3 surfaced) a NEW model release this site has no page family for.** If either is false — and on most repos in this fleet Condition 1 is always false — skip this lens entirely and move to the ladder below. A model launch is not one page, it is a page FAMILY, and launch-day queries have no keyword-tool history yet, so these rows are chosen by contract, not by volume.
+
+1. **Slug the model** (`Claude Opus 5` → `claude-opus-5`), then grep the project's content store for each Tier 0 slug (in a Next/TS repo: `data/guides-new.ts`, `data/guides.ts`, `data/comparisons-new.ts`, `data/comparisons.ts`; elsewhere, whatever store Phase 0 discovered):
+   ```bash
+   M=<slugged-model>
+   for s in explained pricing limits review benchmarks alternatives; do
+     grep -qrE "[\"']slug[\"']: [\"']$M-$s[\"']" <content store> || echo "MISSING: $M-$s"
+   done
+   ```
+2. **Emit a `create new content` row for every missing member:** `{model}-explained`, `{model}-pricing`, `{model}-limits`, `{model}-review`, `{model}-benchmarks`, `how-to-use-{model}`, `{model}-alternatives`, `is-{model}-worth-it` (flagship releases only) — `format: article` except `-alternatives` (`comparison table/database`).
+3. **Three DISTINCT comparison rows** (`format: comparison table/database`) — Lens 3's generic `{entity} vs {rival}` covers only the second: **(1)** `{model}-vs-{prev}` — the prior generation of the SAME product line ("is the upgrade worth it"); **(2)** `{model}-vs-{rival}` — another vendor's current flagship; **(3)** `{model}-vs-{sibling}` — same vendor, DIFFERENT line (e.g. Claude Opus 5 vs Claude Mythos 5), a *routing* question, not an upgrade question. `{prev}` must resolve to a model that already has a page here — never invent a lineage.
+4. **Then access + verticals:** `{model}-api-pricing` (vendor ships an API), `is-{model}-free` (free/trial tier exists), and `{model}-for-{vertical}` for `coding`, `writing`, `education`, `research`, `data-analysis`.
+5. **Volume rules are suspended for these rows.** SEMRUSH will return nothing for a week-old model; that is expected. Label each `demand inferred — launch, no tool volume yet` with the launch cited as the signal, 

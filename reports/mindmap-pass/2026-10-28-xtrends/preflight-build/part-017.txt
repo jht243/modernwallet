@@ -1,0 +1,42 @@
+.claude/commands/_anti-ai-language.md — characters 27000 onward
+
+lready names the subject; the two-clause "X, and Why/What/How Y" formula spliced by a comma or colon; a three-item headline tricolon; "actually"/"really"/"truly" standing in for a fact; colon-drama ("The Catch:", "The Result:"); or a curiosity-gap headline that withholds the finding. Any one occurrence FAILS. Report as `headline-tell: [field] "[text]"`. The fix rewrites that field only.
+- **Formatting slop** — emoji in a heading, mid-sentence bold for emphasis, a bullet list where prose reads better, three or more parallel steps/checks written as First/Second/Third paragraphs, or a header over a two-sentence section.
+- **Inflated word from the extended list** — foster, utilize, facilitate, empower, streamline, tapestry, beacon, multifaceted, meticulous, intricate, embark, elevate, transformative (as filler).
+
+### The meaning bar (POSITIVE tests — check these BEFORE the ban list)
+
+Run this pass first, and read the page as a reader rather than a compliance checker. A page that clears every ban can still fail here. Score each hit as a hard fail.
+
+- **Dead-end problem** — a problem, objection, risk, limitation, or complaint that the passage names without giving the reader a resolution, a workaround, a tradeoff to accept, or a link to where it is handled. Any one occurrence FAILS. Report `dead-end: "[text]"` and state what the reader is left holding. The fix resolves it, routes it to a page that does, or deletes the sentence.
+- **Say-it-out-loud** — read each sentence aloud. Any sentence a person would not speak to a colleague FAILS. Report `unsayable: "[text]"`.
+- **Placeholder nouns** — a sentence whose nouns are all abstractions (`problem`, `platform`, `solution`, `option`, `approach`, `thing`, `piece`, `area`, `aspect`, `move`, `one`) with nothing concrete a reader can picture FAILS. Report `no-concrete-noun: "[text]"`.
+- **Restatement** — a sentence that repeats its predecessor's idea in different words FAILS. The predecessor can be the previous body sentence or the subtitle/deck. Report `restatement: "[both sentences]"`. The fix deletes the repeat (the intro sentence, not the subtitle).
+- **Backward pronoun** — a pronoun or "one"/"it"/"that" whose antecedent is in a previous sentence, forcing a re-read, FAILS. Report `backward-pronoun: "[text]"`.
+- **Nominalized instruction** — an `-ing` or `-tion` subject hiding an action ("Naming the problem first separates…") FAILS. Report `nominalization: "[text]"`.
+- **Wrong collocation** — words that do not naturally go together ("platforms answer problems") FAIL. Report `collocation: "[text]"`.
+- **Abstract metaphor for a plain verb** — "separates X from Y", "points at", "drives the cost" where a concrete verb exists. FAILS. Report `abstract-verb: "[text]"`.
+
+For each, quote the sentence and give the plain-English rewrite. If you cannot write a plain rewrite because you cannot tell what the sentence means, say so; that is the strongest possible fail.
+
+### Phrasing tells (two or more = FAIL)
+
+- Throat-clearing section openers: "When it comes to…", "In today's fast-paced world…", "In the ever-evolving landscape of…", "In an age where…".
+- Empty tricolons that add no information ("efficient, effective, and scalable", "powerful, flexible, and easy to use").
+- Hedged non-conclusions that refuse to commit ("ultimately, the right choice depends on your specific needs and goals", "there's no one-size-fits-all answer").
+- LLM-signature filler: "delve into", "leverage" (as a verb), "navigate the complexities of", "unlock the power of", "in the realm of", "a testament to", "it's worth noting that", "that being said".
+- Symmetrical listicle padding where every bullet is the same length and shape with no concrete specifics.
+
+A page can carry one isolated phrasing tell and still pass; two or more is the fail line. Any single-instance ban above fails on its own.
+
+---
+
+## SCOPE
+
+Applies to all reader-facing **text** — new pages, body-text updates, enrichments, and tool copy. Exempt: spec-only rows, pure technical/indexability fixes, and non-prose asset specs.
+
+**HEADLINES ARE IN SCOPE. This is the most commonly missed part of this file.** Every tell below applies to the H1, the SEO title, the meta description, the subtitle/deck/standfirst, every section heading, every FAQ question, and CTA copy — exactly as it applies to body paragraphs. These are the most-read text on the page and the text an AI extractor quotes first.
+
+Do not confuse two different exclusions. Headings and metadata are excluded from **body word counts** so they cannot pad a depth floor. They are NOT excluded from **this scan**. An audit that extracts body prose for word-counting and then scans only that extract has left every headline unchecked, which is how a tell reaches the top of a live page. Scan the headline fields separately and explicitly.
+
+Body edits are explicitly in scope. The audit phase re-reviews only net-new pages and does **not** re-scan body edits, so a tell introduced during a body edit ships unaudited unless the writer catches it here.
