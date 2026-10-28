@@ -5,6 +5,21 @@
 export interface CrossLink { href: string; label: string; }
 
 export const CROSS_LINKS: Record<string, CrossLink[]> = {
+  // Autocomplete pass (2026-10-28).
+  "rent-vs-buy-calculator": [
+    { href: "/compare/renting-vs-buying/", label: "Renting vs buying: the tradeoffs explained" },
+    { href: "/mortgage/affordability-calculator/", label: "How much house can you afford?" },
+    { href: "/mortgage/down-payment-calculator/", label: "How much should you put down?" },
+    { href: "/investing/compound-interest-calculator/", label: "See what invested cash grows to" },
+    { href: "/guides/how-much-should-i-spend-on-rent/", label: "How much of your income should go to rent?" },
+  ],
+  "stock-capital-gains-tax-calculator": [
+    { href: "/tax-bracket-calculator/", label: "Find your 2026 tax bracket" },
+    { href: "/compare/ordinary-income-vs-capital-gains-tax/", label: "Ordinary income vs capital gains tax" },
+    { href: "/real-estate/capital-gains-calculator/", label: "Selling a rental property? Add depreciation recapture" },
+    { href: "/investing/stock-profit-calculator/", label: "Check your profit before tax" },
+    { href: "/compare/realized-vs-unrealized-gains/", label: "Realized vs unrealized gains" },
+  ],
   // X-trends pass (2026-10-27).
   "car-loan-interest-deduction-calculator": [
     { href: "/auto-loan/interest-calculator/", label: "How much interest will your car loan cost?" },
@@ -125,6 +140,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
   ],
   // Autocomplete pass (2026-10-21).
   "tax-bracket-calculator": [
+    { href: "/stock-capital-gains-tax-calculator/", label: "Selling stock? Estimate the capital gains tax" },
     { href: "/guides/2026-tax-brackets/", label: "2026 federal tax brackets by filing status" },
     { href: "/guides/how-much-tax-will-i-pay/", label: "How much tax will I pay" },
     { href: "/calculators/", label: "All calculators" },
@@ -253,6 +269,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/should-you-get-the-discount-tire-credit-card/", label: "Financing new tires? Read this first" },
   ],
   "mortgage": [
+    { href: "/rent-vs-buy-calculator/", label: "Should you rent or buy? Find the break-even year" },
     { href: "/debt-to-income-ratio-calculator/", label: "How to calculate your debt-to-income ratio" },
     { href: "/commercial-mortgage-calculator/", label: "Buying commercial property? Model the balloon and DSCR" },
     { href: "/heloc-calculator/", label: "Borrowing against your equity? Model a HELOC" },
@@ -288,6 +305,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/net-worth/", label: "Track your net worth" },
   ],
   "investing": [
+    { href: "/stock-capital-gains-tax-calculator/", label: "Selling stock? Estimate the tax on the gain" },
     { href: "/cd-calculator/", label: "Compare to a CD: model the maturity value" },
     { href: "/iul-calculator/", label: "Pitched an IUL? Run the numbers" },
     { href: "/retirement/", label: "Plan your retirement" },

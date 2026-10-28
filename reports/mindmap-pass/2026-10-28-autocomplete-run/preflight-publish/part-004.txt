@@ -1,0 +1,11 @@
+.claude/commands/mindmap-pass/phase-8-summary.md — characters 9000 onward
+
+the user knows what to build next. If zero clusters were detected this run, state that explicitly so the user knows Lens 2 ran and found nothing actionable (not that it was skipped).
+
+After the table, list briefly:
+- **Files changed** (high-level count: N modified + N new + N sitemaps)
+- **Diff size** (insertions / deletions)
+- **Anything noteworthy** the user should know (judgment calls made, reviewer false positives, anything skipped, etc.)
+- **Branch state** (which branch the work is staged on)
+
+Then print a one-line continuation notice — `All work is staged on branch {branch}. Continuing to Phase 9 (commit + push)...` — and **immediately proceed to Phase 9 in the same turn**. Do not ask for approval; the push is automatic.

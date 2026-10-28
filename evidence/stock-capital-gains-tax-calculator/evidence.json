@@ -1,0 +1,55 @@
+{
+ "route": "/stock-capital-gains-tax-calculator/",
+ "readerQuestion": "How much tax will I owe when I sell stock?",
+ "demandSource": "DataForSEO US 2026-10-28: capital gains tax calculator stocks 480/mo KD 18, CPC $7.02",
+ "decisionGap": "Site has a rental-property capital gains calculator and an explainer, but nothing that computes the tax on a stock sale from the reader's income.",
+ "sampledAlternatives": "SERP 2026-10-28: broker pages, 1031 firms, app listings; AI Overview cites NerdWallet, SmartAsset. Small sample.",
+ "method": "Stacking rule implemented independently in Python (IRS base-plus-rate tables) and TypeScript (bracket tops); 13 boundary scenarios agree (ts_check.out.txt).",
+ "sources": [
+  {
+   "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+   "checked": "2026-10-28",
+   "use": "2026 capital gains thresholds (3.03), standard deduction and ordinary brackets (3)"
+  },
+  {
+   "url": "https://www.irs.gov/taxtopics/tc409",
+   "checked": "2026-10-28",
+   "use": "holding period, short-term as ordinary, loss limit"
+  },
+  {
+   "url": "https://www.irs.gov/taxtopics/tc559",
+   "checked": "2026-10-28",
+   "use": "NIIT 3.8% and MAGI thresholds"
+  },
+  {
+   "url": "https://www.irs.gov/taxtopics/tc703",
+   "checked": "2026-10-28",
+   "use": "basis of purchased stock"
+  }
+ ],
+ "assumptions": "NIIT MAGI approximated as taxable income + 2026 standard deduction + gain; gain is the only investment income.",
+ "findings": [
+  {
+   "label": "calculated",
+   "text": "$85,000 other income, $20,000 gain: $3,000 long-term vs $4,400 short-term."
+  },
+  {
+   "label": "calculated",
+   "text": "Straddle and NIIT scenarios in check.out.json."
+  }
+ ],
+ "counterexample": "State tax, other investment income, wash sales or loss carryovers change the result; under the 0% limit the tax is $0.",
+ "unknowns": "State tax; reader's actual basis and MAGI.",
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "evidence/stock-capital-gains-tax-calculator/check.out.json",
+   "evidence/stock-capital-gains-tax-calculator/ts_check.out.txt"
+  ],
+  "scopeAndLimits": "Federal, tax year 2026, single sale; calculated from IRS rules, no product tested.",
+  "publicMethod": "howItWorks explains the stacking rule and scenarios; the calculator reproduces them.",
+  "placement": "howItWorks paragraph 1 (first finding) and takeaway paragraph"
+ },
+ "selectedMedium": "interactive tool",
+ "testingDecision": "TESTED format off: calculation page; tax topic excluded by _experience.md section G; ordinary format."
+}

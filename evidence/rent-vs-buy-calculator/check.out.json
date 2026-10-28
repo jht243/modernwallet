@@ -1,0 +1,418 @@
+{
+ "default": {
+  "payment": 2198.18,
+  "rows": [
+   {
+    "year": 1,
+    "buy": 70335.29,
+    "rent": 107584.75,
+    "diff": -37249.46
+   },
+   {
+    "year": 2,
+    "buy": 85240.29,
+    "rent": 123599.2,
+    "diff": -38358.91
+   },
+   {
+    "year": 3,
+    "buy": 100742.65,
+    "rent": 140053.96,
+    "diff": -39311.31
+   },
+   {
+    "year": 4,
+    "buy": 116871.68,
+    "rent": 156959.85,
+    "diff": -40088.17
+   },
+   {
+    "year": 5,
+    "buy": 133658.4,
+    "rent": 174327.83,
+    "diff": -40669.44
+   },
+   {
+    "year": 6,
+    "buy": 151135.71,
+    "rent": 192169.08,
+    "diff": -41033.38
+   },
+   {
+    "year": 7,
+    "buy": 169338.47,
+    "rent": 210494.92,
+    "diff": -41156.45
+   },
+   {
+    "year": 8,
+    "buy": 188303.69,
+    "rent": 229316.85,
+    "diff": -41013.16
+   },
+   {
+    "year": 9,
+    "buy": 208070.62,
+    "rent": 248646.54,
+    "diff": -40575.92
+   },
+   {
+    "year": 10,
+    "buy": 228680.92,
+    "rent": 268495.79,
+    "diff": -39814.88
+   },
+   {
+    "year": 11,
+    "buy": 250178.85,
+    "rent": 288876.59,
+    "diff": -38697.74
+   },
+   {
+    "year": 12,
+    "buy": 272611.43,
+    "rent": 309801.03,
+    "diff": -37189.6
+   },
+   {
+    "year": 13,
+    "buy": 296028.64,
+    "rent": 331281.37,
+    "diff": -35252.72
+   },
+   {
+    "year": 14,
+    "buy": 320483.61,
+    "rent": 353329.96,
+    "diff": -32846.35
+   },
+   {
+    "year": 15,
+    "buy": 346032.84,
+    "rent": 375959.29,
+    "diff": -29926.45
+   },
+   {
+    "year": 16,
+    "buy": 372736.47,
+    "rent": 399181.94,
+    "diff": -26445.46
+   },
+   {
+    "year": 17,
+    "buy": 400780.79,
+    "rent": 423132.85,
+    "diff": -22352.06
+   },
+   {
+    "year": 18,
+    "buy": 430929.99,
+    "rent": 448520.82,
+    "diff": -17590.84
+   },
+   {
+    "year": 19,
+    "buy": 463330.07,
+    "rent": 475432.07,
+    "diff": -12102.0
+   },
+   {
+    "year": 20,
+    "buy": 498136.94,
+    "rent": 503958.0,
+    "diff": -5821.06
+   },
+   {
+    "year": 21,
+    "buy": 535517.03,
+    "rent": 534195.48,
+    "diff": 1321.56
+   },
+   {
+    "year": 22,
+    "buy": 575648.08,
+    "rent": 566247.2,
+    "diff": 9400.87
+   },
+   {
+    "year": 23,
+    "buy": 618719.81,
+    "rent": 600222.04,
+    "diff": 18497.77
+   },
+   {
+    "year": 24,
+    "buy": 664934.81,
+    "rent": 636235.36,
+    "diff": 28699.45
+   },
+   {
+    "year": 25,
+    "buy": 714509.36,
+    "rent": 674409.48,
+    "diff": 40099.88
+   },
+   {
+    "year": 26,
+    "buy": 767674.39,
+    "rent": 714874.05,
+    "diff": 52800.34
+   },
+   {
+    "year": 27,
+    "buy": 824676.46,
+    "rent": 757766.49,
+    "diff": 66909.97
+   },
+   {
+    "year": 28,
+    "buy": 885778.79,
+    "rent": 803232.48,
+    "diff": 82546.3
+   },
+   {
+    "year": 29,
+    "buy": 951262.42,
+    "rent": 851426.43,
+    "diff": 99835.99
+   },
+   {
+    "year": 30,
+    "buy": 1021427.44,
+    "rent": 902512.02,
+    "diff": 118915.42
+   }
+  ],
+  "break_even": 21,
+  "at_horizon": {
+   "year": 7,
+   "buy": 169338.47,
+   "rent": 210494.92,
+   "diff": -41156.45
+  }
+ },
+ "scenarios": {
+  "rate_5": {
+   "inputs": {
+    "rate_pct": 5.0
+   },
+   "break_even": 5,
+   "payment": 1717.83,
+   "at_horizon": {
+    "year": 7,
+    "buy": 181008.52,
+    "rent": 160794.73,
+    "diff": 20213.79
+   }
+  },
+  "rate_3": {
+   "inputs": {
+    "rate_pct": 3.0
+   },
+   "break_even": 3,
+   "payment": 1349.13,
+   "at_horizon": {
+    "year": 7,
+    "buy": 209376.8,
+    "rent": 138333.98,
+    "diff": 71042.81
+   }
+  },
+  "rate_9": {
+   "inputs": {
+    "rate_pct": 9.0
+   },
+   "break_even": null,
+   "payment": 2574.79,
+   "at_horizon": {
+    "year": 7,
+    "buy": 162783.11,
+    "rent": 249462.04,
+    "diff": -86678.92
+   }
+  },
+  "rent_2800": {
+   "inputs": {
+    "rent": 2800
+   },
+   "break_even": 5,
+   "payment": 2198.18,
+   "at_horizon": {
+    "year": 7,
+    "buy": 173057.72,
+    "rent": 146724.85,
+    "diff": 26332.87
+   }
+  },
+  "rent_1600": {
+   "inputs": {
+    "rent": 1600
+   },
+   "break_even": null,
+   "payment": 2198.18,
+   "at_horizon": {
+    "year": 7,
+    "buy": 169338.47,
+    "rent": 277984.24,
+    "diff": -108645.77
+   }
+  },
+  "appr_0": {
+   "inputs": {
+    "appr_pct": 0.0
+   },
+   "break_even": null,
+   "payment": 2198.18,
+   "at_horizon": {
+    "year": 7,
+    "buy": 82905.9,
+    "rent": 202982.16,
+    "diff": -120076.25
+   }
+  },
+  "appr_1": {
+   "inputs": {
+    "appr_pct": 1.0
+   },
+   "break_even": null,
+   "payment": 2198.18,
+   "at_horizon": {
+    "year": 7,
+    "buy": 110028.79,
+    "rent": 205406.99,
+    "diff": -95378.2
+   }
+  },
+  "rate_6": {
+   "inputs": {
+    "rate_pct": 6.0
+   },
+   "break_even": 8,
+   "payment": 1918.56,
+   "at_horizon": {
+    "year": 7,
+    "buy": 175586.54,
+    "rent": 181563.9,
+    "diff": -5977.36
+   }
+  },
+  "rate_4": {
+   "inputs": {
+    "rate_pct": 4.0
+   },
+   "break_even": 4,
+   "payment": 1527.73,
+   "at_horizon": {
+    "year": 7,
+    "buy": 189799.29,
+    "rent": 143882.67,
+    "diff": 45916.61
+   }
+  },
+  "rent_2600": {
+   "inputs": {
+    "rent": 2600
+   },
+   "break_even": 7,
+   "payment": 2198.18,
+   "at_horizon": {
+    "year": 7,
+    "buy": 169338.47,
+    "rent": 165502.04,
+    "diff": 3836.43
+   }
+  },
+  "appr_5": {
+   "inputs": {
+    "appr_pct": 5.0
+   },
+   "break_even": 5,
+   "payment": 2198.18,
+   "at_horizon": {
+    "year": 7,
+    "buy": 235975.66,
+    "rent": 215916.24,
+    "diff": 20059.42
+   }
+  },
+  "return_3": {
+   "inputs": {
+    "return_pct": 3.0
+   },
+   "break_even": 9,
+   "payment": 2198.18,
+   "at_horizon": {
+    "year": 7,
+    "buy": 169338.47,
+    "rent": 177684.14,
+    "diff": -8345.66
+   }
+  },
+  "return_9": {
+   "inputs": {
+    "return_pct": 9.0
+   },
+   "break_even": null,
+   "payment": 2198.18,
+   "at_horizon": {
+    "year": 7,
+    "buy": 169338.47,
+    "rent": 248863.92,
+    "diff": -79525.45
+   }
+  },
+  "down_10": {
+   "inputs": {
+    "down_pct": 10
+   },
+   "break_even": 30,
+   "payment": 2472.95,
+   "at_horizon": {
+    "year": 7,
+    "buy": 132701.71,
+    "rent": 194299.57,
+    "diff": -61597.86
+   }
+  },
+  "down_3": {
+   "inputs": {
+    "down_pct": 3.5
+   },
+   "break_even": null,
+   "payment": 2651.55,
+   "at_horizon": {
+    "year": 7,
+    "buy": 108887.82,
+    "rent": 174805.46,
+    "diff": -65917.65
+   }
+  },
+  "price_600": {
+   "inputs": {
+    "price": 600000,
+    "rent": 2800
+   },
+   "break_even": null,
+   "payment": 3297.27,
+   "at_horizon": {
+    "year": 7,
+    "buy": 254007.71,
+    "rent": 372759.48,
+    "diff": -118751.77
+   }
+  },
+  "zero_rate": {
+   "inputs": {
+    "rate_pct": 0.0
+   },
+   "break_even": 2,
+   "payment": 888.89,
+   "at_horizon": {
+    "year": 7,
+    "buy": 280406.36,
+    "rent": 138333.98,
+    "diff": 142072.37
+   }
+  }
+ }
+}

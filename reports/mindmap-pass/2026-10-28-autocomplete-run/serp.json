@@ -1,0 +1,211 @@
+{
+ "rows": [
+  {
+   "keyword": "rent vs buy calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "www.calculator.net",
+    "www.zillow.com",
+    "www.nytimes.com",
+    "www.bankofadvance.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.fidelitybank.com",
+    "www.westerracu.com",
+    "flcu.org",
+    "www.regions.com",
+    "www.calvet.ca.gov",
+    "www.msgcu.org",
+    "www.nytimes.com",
+    "www.53.com",
+    "www.bmo.com",
+    "www.rocketmortgage.com"
+   ],
+   "major_domains": [
+    "www.nytimes.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "Rent vs buy calculator with investment",
+    "Rent vs buy calculator Ontario",
+    "Rent vs buy calculator Canada",
+    "Rent vs buy calculator with opportunity cost",
+    "PWL Rent vs Buy calculator",
+    "Rbc rent vs buy calculator",
+    "Mortgage calculator",
+    "Investment calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (www.nytimes.com); AI Overview present, cites www.nerdwallet.com, www.calculator.net, www.zillow.com, www.nytimes.com",
+   "se_results_count": 127
+  },
+  {
+   "keyword": "capital gains tax calculator stocks",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "smartasset.com",
+    "usecache.com",
+    "jupid.com",
+    "finance.yahoo.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.eatonvance.com",
+    "www.personalinvesting.jpmorgan.com",
+    "www.ipx1031.com",
+    "apps.apple.com",
+    "www.nar.realtor",
+    "fincent.com",
+    "amsflow.com",
+    "www.oldrepublicexchange.com",
+    "thecollegeinvestor.com",
+    "play.google.com"
+   ],
+   "major_domains": [
+    "apps.apple.com",
+    "play.google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "Real estate capital gains tax calculator stocks",
+    "Capital gains tax calculator stocks california",
+    "Capital gains tax on property calculator",
+    "Capital gains tax calculator on sale of rental property",
+    "How to calculate capital gains tax on shares bought at different times",
+    "Capital gains tax on shares held for 10 years",
+    "Capital gains tax calculator on sale of primary residence",
+    "Capital gains tax calculator on sale of inherited property"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "2/10 major platforms (apps.apple.com, play.google.com); AI Overview present, cites www.nerdwallet.com, smartasset.com, usecache.com, jupid.com",
+   "se_results_count": 154
+  },
+  {
+   "keyword": "schd dividend calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.dripcalc.com",
+    "snowball-analytics.com",
+    "www.snarayan.com.np",
+    "www.wisesheets.io",
+    "www.reddit.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "calcrio.com",
+    "marketchameleon.com",
+    "www.bobiboapp.com",
+    "schdcalculator.org",
+    "career.abuissa.com",
+    "karis.id",
+    "schdtools.com",
+    "schdcalculator.com",
+    "xtrainkom.com",
+    "pineify.app"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "Schd dividend calculator s&p 500",
+    "Schd march dividend 2025",
+    "Schwab dividend schedule 2026",
+    "Schg next dividend date 2025",
+    "Voo dividend estimate",
+    "VTI dividends 2025",
+    "Vym dividend date 2025",
+    "Voo dividend market chameleon"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.dripcalc.com, snowball-analytics.com, www.snarayan.com.np, www.wisesheets.io",
+   "se_results_count": 36
+  },
+  {
+   "keyword": "capital gains tax rate 2026",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "taxfoundation.org",
+    "www.fidelity.com",
+    "bipartisanpolicy.org",
+    "bradfordtaxinstitute.com",
+    "www.cfp.net",
+    "turbotax.intuit.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.cnbc.com",
+    "www.youtube.com",
+    "www.nerdwallet.com",
+    "www.kiplinger.com",
+    "www.realized1031.com",
+    "taxatlas.io",
+    "www.investopedia.com",
+    "www.kiplinger.com",
+    "smartasset.com",
+    "bradfordtaxinstitute.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What are the tax rates for capital gains in the United States?",
+    "What are the different income tax slabs in India?",
+    "How to avoid the 22% tax bracket?",
+    "How to avoid paying federal capital gains tax?",
+    "What is the loophole for capital gains tax?",
+    "What is the 6 year rule for capital gains tax?"
+   ],
+   "related_searches": [
+    "Long term capital gains tax rate 2026",
+    "Property capital gains tax rate 2026",
+    "Capital gains tax calculator on sale of property",
+    "Capital gains tax rate 2026 calculator",
+    "Short-term capital gains tax rate 2026",
+    "Capital gains tax rate 2026 california",
+    "Capital gains tax calculator on sale of rental property",
+    "Federal capital gains tax calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites taxfoundation.org, www.fidelity.com, bipartisanpolicy.org, bradfordtaxinstitute.com",
+   "se_results_count": 123
+  }
+ ],
+ "cost": "DataForSEO: 4 calls, $0.01615 of $2.00 budget"
+}

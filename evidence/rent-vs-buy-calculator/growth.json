@@ -1,0 +1,16 @@
+{
+ "originRoutine": "autocomplete-pass-auto",
+ "route": "/rent-vs-buy-calculator/",
+ "queryFamily": "rent vs buy calculator",
+ "hypothesis": "A dedicated break-even calculator answers the query better than the qualitative comparison page.",
+ "primaryMetric": "Google clicks (GSC)",
+ "baseline": "not-yet-published; age-matched comparator pages",
+ "evidenceBasis": "modeled (internal modeling) + reported Freddie Mac rate",
+ "deployed": "pending verification",
+ "outcomeStatus": "not-yet-published",
+ "reviewWindows": {
+  "day28": "first 28 complete live days",
+  "day56": "second 28 complete live days"
+ },
+ "sourceRefreshTrigger": "Freddie Mac rate change of 0.5 point or more, or a model change"
+}

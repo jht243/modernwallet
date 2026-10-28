@@ -1,0 +1,52 @@
+.claude/commands/mindmap-pass/phase-build-brief.md — characters 45000 onward
+
+ases 0–9 parse cols 1–7 exactly as before; they are advisory context for the manifest gate and no phase executes off them. **Cols 10–12 are NOT advisory**: Phase 0 prints them per row in the manifest, Phase 3 copies them into each row prompt, and Phase 4 fails a page whose first two sections do not deliver col 11.
+
+The table contains **only actionable rows.** No "no action / already addressed / leave alone" rows — note those in a brief exclusions paragraph below the table instead. If after filtering there are no actionable rows, say so plainly (Phase 0 will report an empty pass) and still write the file.
+
+**Save the result to a file.** After the on-screen table, write the full chart to `reports/mindmap-pass/<YYYY-MM-DD>.md` (today's date). It MUST begin with this header block, then the table, the emerging-clusters block, and the exclusions paragraph:
+
+```
+---
+mindmap_pass_date: <YYYY-MM-DD>
+source: free-form input brief ({modality: text | image | chart | news article | thought}), SEMRUSH-validated
+interpreted_brief: <2–4 sentence restatement of what the user wants added>
+generated_by: mindmap-pass build phase — brief interpretation + keyword demand ladder (rung that answered: <dataforseo|estimate>) + Autocomplete miner + live SERP reality check (<N> heads read, <unread reason if any>)
+demand_source: <rung that answered>  # dataforseo = measured Google Ads volume + Labs KD
+serp_reads: <N heads read; cost from keyword_data.notes()/serp.py>
+status: ready-for-execution
+---
+```
+
+In the saved file, col 3 uses the **exact canonical bucket wording** (the machine-readable handoff to Phases 0–9). Cols 4–7 (`target`, `format`, `best_medium`, `resolved_deliverable`) carry the same meanings as above.
+
+**Emerging-clusters block (REQUIRED — the Lens 2 record).** After the main table and before the exclusions paragraph:
+
+```
+## Emerging search patterns (clusters)
+| Cluster (theme) | Member queries (from demand ladder / Autocomplete / SERP PAA) | Why emerging / under-served | Current coverage | Lever | Target | Format | Best medium | Resolved deliverable | SERP verdict | SERP evidence |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ... | q1; q2; q3 | coverage gap at theme level / intent mismatch / news-driven | none / partial / snippet-mismatch / cannibalized | create new content | /proposed-route | calculator — searchers want a personalized estimate | interactive tool | interactive tool | winnable (AI Overview) | 1/10 major platforms; AI Overview cites x.com, y.com |
+```
+- `Lever` uses exact canonical bucket wording (or `consolidate / canonicalize` flag for cannibalized clusters).
+- `Format` / `Best medium` / `Resolved deliverable` are populated ONLY for `create new content` clusters (`n/a` otherwise), with the same capability-mapping rule (image/video best-medium falls back to text).
+- **Every actionable cluster row here must ALSO appear as a row in the main action table** (same bucket + target) — the main table is the parseable handoff; this block is the human/manifest-facing view. The two must agree.
+- If no emerging clusters were found, write exactly: `No emerging clusters detected this run.` Do not invent clusters to fill the block.
+
+---
+
+## Duplicate-suppression gate (adversarial reviewer — runs after the table is built, BEFORE the chart is saved)
+
+The author of the chart does not clear its own duplicates. After the table is produced but before saving, spawn a read-only adversarial reviewer (Agent tool, `subagent_type: Explore`) that did NOT build the chart. Hand it the proposed rows + the repo, and have it independently:
+1. Check the commits (`git log -20 --stat` for topic context + `git log -p -- <target>` per row, and `reports/mindmap-pass/*.md`), without trusting the author's dedup. Also run `python3 scripts/mindmap/coverage_lookup.py --site-url <BASE_URL> --chart <draft chart>` yourself and check every row's `lookup:` claim against the tool's output — a row that names no match while the tool lists a page with the same reader intent, or that omits a `lookup:` entry, fails the gate. The tool runs the same everywhere (cloud included), so when no reviewer subagent can be spawned the orchestrator runs it inline and records that it did.
+2. For each row, decide whether the work is **already shipped** per the three-bucket duplicate definitions (page created / body section added / metadata rewritten for that term).
+3. Return `KEEP` or `DROP — already shipped in <SHA>`, SHA cited.
+4. **Cluster rows get TWO extra checks (Lens 2 integrity):**
+   - **Real evidence:** the cluster's member phrases must actually come from SEMRUSH/Autocomplete/the brief — not invented. A cluster built on unsupported phrases → `DROP — unsupported`.
+   - **Right lever:** verify no existing page is already the dedicated, intent-matched answer. If one is, `create new content` is wrong → `RECLASSIFY — <correct bucket>` (or `DROP` if fully served). Conversely, if a row enriches a page that isn't a reasonable home, `RECLASSIFY — create new content`.
+   - Every cluster row in the main table must have a matching row in the `## Emerging search patterns (clusters)` block (same bucket + target). A mismatch fails the gate.
+
+**Gate rule:** if the reviewer flags ANY row as already-shipped or unsupported, remove it from the table (and clusters block) and record it under exclusions. Apply any `RECLASSIFY` in BOTH the table and the block. Re-run the reviewer on the revised chart. **Max 2 rework attempts.** The chart saves only once the reviewer confirms **zero** surviving rows duplicate shipped work, every cluster row is evidence-supported and correctly leveled, and table + block agree. A row without a cited SHA (or "no prior commits touch this file/route") is unverified and fails the gate. If issues remain after 2 attempts, STOP and report rather than saving a known-bad chart.
+
+## After saving
+Print: `Chart saved to reports/mindmap-pass/<TODAY>.md ({N} proposed rows, {C} emerging clusters). Interpreted brief: <one line>.` Control returns to Phase 0, which loads this file, runs the staleness check (passes — brand new), and presents the manifest gate.

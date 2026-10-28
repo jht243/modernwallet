@@ -1,0 +1,10 @@
+{
+  "author": "main",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {"path": "/rent-vs-buy-calculator/", "expectedUpdatedDate": "2026-10-28", "requiredText": ["Rent vs Buy Calculator", "In our internal modeling", "break-even"], "forbiddenText": ["we tested", "In our testing"], "growthFile": "evidence/rent-vs-buy-calculator/growth.json", "evidenceFile": "evidence/rent-vs-buy-calculator/evidence.json"},
+    {"path": "/stock-capital-gains-tax-calculator/", "expectedUpdatedDate": "2026-10-28", "requiredText": ["Stock Capital Gains Tax Calculator", "In our internal calculation", "Net Investment Income Tax"], "forbiddenText": ["we tested", "In our testing"], "growthFile": "evidence/stock-capital-gains-tax-calculator/growth.json", "evidenceFile": "evidence/stock-capital-gains-tax-calculator/evidence.json"},
+    {"path": "/compare/renting-vs-buying/", "expectedUpdatedDate": "2026-10-28", "requiredText": ["rent vs buy calculator"], "forbiddenText": []},
+    {"path": "/compare/ordinary-income-vs-capital-gains-tax/", "expectedUpdatedDate": "2026-10-28", "requiredText": ["stock capital gains tax calculator"], "forbiddenText": []}
+  ]
+}

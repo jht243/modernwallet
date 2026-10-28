@@ -2908,6 +2908,153 @@ export const CALCULATORS: CalculatorDef[] = [
           "marginalRatePct": 22
       }
   },
+  // Rent vs buy calculator - Autocomplete pass (2026-10-28). Prose generated via scripts/lib/content_gen.py (meta beside the draft in
+  // reports/mindmap-pass/2026-10-28-autocomplete/drafts/); engine in src/lib/rent-vs-buy.ts; evidence in evidence/rent-vs-buy-calculator/.
+  {
+    "id": "rent-vs-buy-calculator",
+    "islandId": "rent-vs-buy-calculator",
+    "label": "Rent vs Buy",
+    "navOrder": 66,
+    "metaTitle": "Rent vs Buy Calculator with Break-Even Year and Net Worth",
+    "metaDescription": "Rent vs buy calculator. Compare buying a home with renting and investing the same cash to see your net worth, break-even year, and monthly costs.",
+    "targetKeyword": "rent vs buy calculator",
+    "h1": "Rent vs Buy Calculator",
+    "introText": "Buy only if you will stay in the home past the break-even year. That year depends on your mortgage rate, your rent, how fast the home gains value and what your invested cash earns. The defaults are a $400,000 home, $2,200 monthly rent and a 7.32% mortgage rate. With those inputs, the modeled break-even is year 21, and a 5% rate moves it to year 5. The rent vs buy calculator below compares your net worth if you buy with your net worth if you rent and invest the same cash. It also shows the year buying pulls ahead.\n\nIn our internal modeling, we took a buyer who puts 20% down on the default $400,000 home and pays 3% in closing costs. That is $92,000 of cash on day one and a $320,000 loan. At 7.32% over 30 years, the principal and interest payment is $2,198.18 a month. Adding property tax, insurance and maintenance brings the first-month cost of owning to $3,032. A similar rental costs $2,215 a month with renter's insurance. The renter invests the $92,000 and the $817 monthly difference at a 6% return. Seven years in, buying leaves $169,338 and renting and investing leaves $210,495, so renting leads by $41,156.",
+    "howItWorks": "The calculator tracks two paths, buying and renting, month by month. Buying costs the down payment and closing costs on day one. Each month after that, the buyer pays the mortgage payment plus property tax, insurance and maintenance, each figured as a percent of the home's current value. HOA dues are added, and so is mortgage insurance at 0.5% of the original loan a year. Mortgage insurance applies only while the down payment is under 20% and the loan is above 80% of the price. Renting costs the rent, which grows each year, plus renter's insurance. The renter keeps the down payment and closing costs and invests them on day one. Each month, whichever path costs less invests the difference. At every year-end, buying net worth is the home value after selling costs, minus the loan balance, plus the buyer's own investments. Renting net worth is the renter's investments. The break-even year is the first year-end at which buying net worth is at least renting net worth. In our internal modeling, we compared buying with renting and investing the same cash over 1 to 30 years. We then changed one assumption at a time to see which ones move the break-even year. We wrote the model twice, once in Python and once in the calculator's TypeScript code, and the two versions agreed on every scenario below. You can enter the same numbers in the calculator above to check them.\n\nAt the defaults, owning costs more than renting in the first month. The price-to-rent ratio, which is the price divided by 12 months of rent, is 15.2. Buying trails renting by $39,311 after 3 years. After 5 years, the gap is $40,669. After 7 years, it reaches $41,156. The gap then starts to close and is $39,815 after 10 years. After 15 years, buying is worth $346,033 and renting is worth $375,959. Renting is still ahead by $29,926 at that point. Buying first catches up in year 21, which is the break-even year at the defaults.\n\nChanging one input at a time shows which assumptions move the break-even year. At a 6% rate, the payment falls to $1,918.56 and the break-even comes in year 8. Renting is still ahead by $5,977 after 7 years. At 5%, the payment is $1,717.83 and the break-even is year 5. Buying is then ahead by $20,214 after 7 years. At 4%, the payment is $1,527.73 and the break-even is year 4. Buying leads by $45,917 after 7 years. Higher rent also helps buying. At $2,600 rent, a price-to-rent ratio of 12.8, the break-even is year 7. At $2,800 rent, a ratio of 11.9, it is year 5. Home price growth of 5% a year moves the break-even to year 5. At 1% growth, buying never catches up within 30 years. The investment return works in the other direction, because the renter invests the $817 monthly difference. At a 3% return, the break-even is year 9. At 9%, buying never catches up within 30 years. A smaller down payment pushes the break-even out. With 10% down, or $40,000, the cash to buy drops to $52,000. The principal and interest payment is $2,472.95, mortgage insurance is added on top, and the break-even moves to year 30. You can size your own down payment with our [down payment calculator](/mortgage/down-payment-calculator/), and see how a monthly investment grows with our [compound interest calculator](/investing/compound-interest-calculator/).\n\nThese results come from a model. They are not measurements, and they are not a forecast of home prices, rents or returns. The default mortgage rate comes from the [Freddie Mac Primary Mortgage Market Survey](https://www.freddiemac.com/pmms). It is the 30-year fixed-rate average for the week of October 22, 2026. That average was 7.32%, down from 7.40% the week before. The other defaults are planning assumptions, and you should replace them with local figures. Property tax is set at 1.0%, insurance at 0.5% and maintenance at 1.0% of the home's value a year. Closing costs are 3%, selling costs are 6%, and home prices and rent each grow 3% a year. The investment return is 6%, and renter's insurance is $15 a month. Property tax and insurance vary a lot by state, so enter your own tax rate and insurance quote. For rent, use what a similar home rents for near you, and our guide on [how much to spend on rent](/guides/how-much-should-i-spend-on-rent/) can help you set that budget. The model leaves out the income-tax effects of owning. Mortgage interest and property tax deductions help only filers who itemize, so find your bracket with our [tax bracket calculator](/tax-bracket-calculator/) before you count on them. Moving costs and special assessments are not modeled either. To set a home price you can carry, run our [mortgage affordability calculator](/mortgage/affordability-calculator/) first.\n\nBased on our internal modeling, buy only if you expect to stay past the break-even year. At the defaults, the break-even is year 21, so a seven-year stay favors renting and investing the difference. A lower mortgage rate, higher rent or faster home price growth moves the break-even earlier. The result swings back toward renting if home prices stall or your invested cash earns more than assumed. If you expect to move within a few years, the defaults favor renting for any stay shorter than the break-even year, so keep renting and invest the cash. If you want to buy for space, stability or control of the property, the model does not price those reasons. This calculator is informational and is not financial advice. Enter your own price, rent and local tax rate in the rent vs buy calculator above, then read our [renting vs buying guide](/compare/renting-vs-buying/) for more on the decision.",
+    "faqs": [
+      {
+        "question": "Is it better to rent or buy a house?",
+        "answer": "It is better to buy only if you stay past the break-even year. At this calculator's defaults, that is year 21. For a 7-year stay, renting and investing comes out ahead by $41,156. Enter your own numbers above to find your break-even year."
+      },
+      {
+        "question": "How long do you have to stay in a home for buying to beat renting?",
+        "answer": "You need to stay past the break-even year, which this calculator finds for your inputs. At the defaults, it is year 21. A 5% mortgage rate or $2,800 rent moves it to year 5. At 1% home price growth, buying never catches up within 30 years."
+      },
+      {
+        "question": "How does opportunity cost change the rent vs buy decision?",
+        "answer": "Opportunity cost is the return your down payment and extra monthly costs would earn if you invested them instead. For the renter, the calculator invests the $92,000 of day-one cash and the $817 monthly difference at a 6% return. At a 3% return, the break-even moves to year 9. At 9%, buying never catches up within 30 years."
+      },
+      {
+        "question": "What costs does a rent vs buy calculator include?",
+        "answer": "This one counts the down payment and closing costs on day one, then the mortgage payment, property tax, insurance, maintenance, HOA dues and mortgage insurance. On the renting side, it counts rent, which grows each year, plus renter's insurance. It subtracts selling costs from the home's value when it figures buying net worth. It does not include moving costs, special assessments or income-tax effects."
+      },
+      {
+        "question": "How much does the mortgage rate change the break-even year?",
+        "answer": "At the default 7.32% rate, the break-even is year 21. At 6%, it moves to year 8. At 5%, it is year 5. At 4%, it is year 4."
+      },
+      {
+        "question": "Does a bigger down payment make buying better?",
+        "answer": "At the 7.32% default rate, which is above the 6% investment return, a bigger down payment helps buying. With 10% down, or $40,000, the cash to buy is $52,000. The principal and interest payment is $2,472.95, and mortgage insurance is added on top of that. The break-even moves to year 30, compared with year 21 at 20% down."
+      },
+      {
+        "question": "What is a price-to-rent ratio?",
+        "answer": "A price-to-rent ratio is the home price divided by 12 months of rent. At the defaults, it is 15.2. This calculator does not use a ratio cutoff to pick a winner. It runs the full model of costs, home equity and invested cash instead."
+      },
+      {
+        "question": "Does this calculator include the mortgage interest tax deduction?",
+        "answer": "No, the mortgage interest tax deduction is not modeled. That deduction, like the property tax deduction, helps only filers who itemize. You can find your bracket with our [tax bracket calculator](/tax-bracket-calculator/)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Freddie Mac: Primary Mortgage Market Survey",
+        "url": "https://www.freddiemac.com/pmms"
+      }
+    ],
+    "updated": "2026-10-28",
+    "defaultPreset": {
+      "price": 400000,
+      "downPct": 20,
+      "ratePct": 7.32,
+      "termYears": 30,
+      "propTaxPct": 1.0,
+      "insurancePct": 0.5,
+      "maintPct": 1.0,
+      "hoaMonth": 0,
+      "closingPct": 3.0,
+      "sellPct": 6.0,
+      "apprPct": 3.0,
+      "rent": 2200,
+      "rentGrowthPct": 3.0,
+      "renterInsMonth": 15,
+      "returnPct": 6.0,
+      "years": 7
+    }
+  },
+  // Stock capital gains tax calculator - Autocomplete pass (2026-10-28). Prose generated via scripts/lib/content_gen.py (meta beside the draft in
+  // reports/mindmap-pass/2026-10-28-autocomplete/drafts/); engine in src/lib/stock-capital-gains.ts; evidence in evidence/stock-capital-gains-tax-calculator/.
+  {
+    "id": "stock-capital-gains-tax-calculator",
+    "islandId": "stock-capital-gains-tax-calculator",
+    "label": "Stock Capital Gains Tax",
+    "navOrder": 67,
+    "metaTitle": "Stock Capital Gains Tax Calculator for 2026 Stock Sales",
+    "metaDescription": "Stock capital gains tax calculator for 2026. Enter income, cost basis and sale price to see federal tax on a long-term or short-term stock sale.",
+    "targetKeyword": "stock capital gains tax calculator",
+    "h1": "Stock Capital Gains Tax Calculator",
+    "introText": "Your tax depends on how long you held the stock and how much other income you have. Stock held more than one year gets the long-term rates. Those rates are 0%, 15% or 20%, depending on where the gain lands on top of your other taxable income. A gain on stock held one year or less is taxed as ordinary income. High earners also add the 3.8% Net Investment Income Tax. The stock capital gains tax calculator below shows your gain, federal tax, surtax and proceeds after tax for 2026.\n\nIn our internal calculation, we took a single filer with $85,000 of other taxable income. They sell stock bought for $30,000 for $50,000, which is a $20,000 gain. If they held it more than one year, the gain is taxed at 15%, so the tax is $3,000. If they held it one year or less, the same gain is taxed at 22% as ordinary income. That tax is $4,400. Holding past one year saves $1,400.",
+    "howItWorks": "The calculator starts with your gain, which is sale proceeds minus cost basis. Under [IRS Topic 703](https://www.irs.gov/taxtopics/tc703), your basis for stock is the purchase price plus commissions and recording or transfer fees. The calculator does not check basis. You also enter your filing status, your taxable income before this sale (after deductions) and your holding period. [IRS Topic 409](https://www.irs.gov/taxtopics/tc409) treats stock held more than one year as long-term. In our internal calculation, we re-implemented the 2026 stacking rule in two separate programs. We ran the scenarios below through both to see how income and holding period change the tax. The two programs agreed on every scenario, and you can enter the same numbers in the calculator above to check them. Take a single filer with $20,000 of other taxable income and a $5,000 long-term gain. The whole gain sits inside the 0% bracket, so the tax is $0. To see the profit on a position before tax, use our [stock profit calculator](/investing/stock-profit-calculator/), and our guide to [realized vs unrealized gains](/compare/realized-vs-unrealized-gains/) explains when a gain counts as realized.\n\nLong-term gains are stacked on top of your other taxable income. The part of the gain at or below the 0% limit is taxed at 0%. The part between the 0% limit and the 15% limit is taxed at 15%. Anything above the 15% limit is taxed at 20%. The limits come from [Revenue Procedure 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf). For single filers, the 0% bracket runs to $49,450 of taxable income. The 15% bracket runs to $545,500. Married couples filing jointly get limits of $98,900 and $613,700. Heads of household get $66,200 and $579,600. Married filing separately shares the $49,450 zero-rate limit but tops out at $306,850 for the 15% rate. At $85,000 of other taxable income, a single filer is already past the 0% limit. Every dollar of a $20,000 long-term gain then lands at 15%. A single filer with $40,000 of other taxable income and a $20,000 long-term gain lands in two brackets. The first $9,450 fills the rest of the 0% bracket. The other $10,550 is taxed at 15%, for a tax of $1,582.50. At $540,000 of other taxable income, a single filer's $30,000 gain crosses the top threshold. Of that gain, $5,500 is taxed at 15%. The remaining $24,500 is taxed at 20%, which brings the income tax to $5,725. The Net Investment Income Tax adds $1,140, for a total of $6,865.\n\nShort-term gains are taxed as ordinary income at graduated rates. The calculator figures the ordinary-income tax on your other taxable income plus the gain, then subtracts the tax on your other taxable income alone. For single filers in 2026, the 22% bracket ends at $105,700. The 24% bracket ends at $201,775. In the $85,000 case, income plus gain comes to $105,000. That total sits under $105,700, so the whole $20,000 is taxed at 22% for a tax of $4,400. A single filer with $100,000 of other taxable income and a $10,000 short-term gain crosses a bracket line. The first $5,700 of the gain is taxed at 22%. The other $4,300 is taxed at 24%, for a tax of $2,286. You can [find your tax bracket](/tax-bracket-calculator/) or read how [ordinary income vs capital gains tax](/compare/ordinary-income-vs-capital-gains-tax/) differ. The Net Investment Income Tax is 3.8%, per [IRS Topic 559](https://www.irs.gov/taxtopics/tc559). It applies to the smaller of the gain or the amount by which modified adjusted gross income (MAGI) is over a threshold. The threshold is $200,000 for single and head of household filers. It is $250,000 for married filing jointly and $125,000 for married filing separately. The calculator estimates MAGI as your taxable income plus the 2026 standard deduction plus the gain. That deduction is $16,100 for single filers and $32,200 for joint filers. If you itemize, the estimate understates your MAGI. A single filer with $190,000 of other taxable income sells for a $40,000 long-term gain. Income tax on the gain is $6,000 at 15%. The surtax adds $1,520, for a total of $7,520. A married couple filing jointly with $650,000 of other taxable income and a $200,000 long-term gain pays 20% on all of it. That is $40,000 of income tax plus $7,600 of surtax, for a total of $47,600.\n\nThe calculator covers federal tax for 2026 only. It leaves out state income tax, other investment income, qualified dividends, loss carryovers and wash sales, and it assumes the gain is your only investment income. If you live in a state with its own income tax, add the state figure on your own, because the calculator does not estimate it. The calculator is built for stock, exchange-traded fund (ETF) and fund shares in a taxable account. Sales inside a retirement account such as an individual retirement account (IRA) or 401(k) are not taxed this way. If you are selling real estate, use the [rental property capital gains calculator](/real-estate/capital-gains-calculator/). A loss owes no capital gains tax. A single filer who paid $30,000 and sells for $20,000 has a $10,000 loss. Topic 409 limits the net capital loss deduction to $3,000 a year, or $1,500 if married filing separately. Any excess carries forward. You report each sale on Form 8949 and summarize it on Schedule D (Form 1040).\n\nHold a winning position for more than a year when you can. At $85,000 of other taxable income, a $20,000 gain costs $3,000 held long-term. Sold within a year, the same gain costs $4,400, a $1,400 difference in our internal calculation. A price drop larger than that $1,400 would cost more than the tax you save by waiting. If your other taxable income is under the 0% limit, long-term gains up to the room left in that bracket are tax-free. The calculator shows how much room you have. The 3.8% surtax adds to the bill only for high earners. State income tax, wash-sale or loss-carryover rules, or other investment income you did not enter can change this result. This calculator gives informational estimates rather than tax advice, and a preparer settles the individual case. Before you sell, enter your numbers in the stock capital gains tax calculator above and compare both holding periods.",
+    "faqs": [
+      {
+        "question": "How is capital gains tax on stock calculated?",
+        "answer": "Subtract your cost basis from the sale proceeds to get the gain. A long-term gain is stacked on top of your other taxable income and taxed at 0%, 15% or 20% by where it lands. A short-term gain is taxed as ordinary income at graduated rates. High earners may also owe the 3.8% Net Investment Income Tax."
+      },
+      {
+        "question": "What are the long-term capital gains tax rates for 2026?",
+        "answer": "The long-term rates are 0%, 15% and 20%. For single filers, the 0% rate covers taxable income up to $49,450. The 15% rate runs to $545,500, and 20% applies above that. Married couples filing jointly get limits of $98,900 and $613,700."
+      },
+      {
+        "question": "How long do I have to hold a stock to get the long-term rate?",
+        "answer": "Hold the stock more than one year, per IRS Topic 409, and the gain is long-term. Stock held one year or less produces a short-term gain, which is taxed as ordinary income at graduated rates."
+      },
+      {
+        "question": "Are short-term stock gains taxed at a higher rate?",
+        "answer": "They can be, because short-term gains are taxed as ordinary income at graduated rates. A single filer with $85,000 of other taxable income pays $4,400 on a $20,000 short-term gain. Held more than one year, the same gain costs $3,000."
+      },
+      {
+        "question": "What is the Net Investment Income Tax on a stock sale?",
+        "answer": "The Net Investment Income Tax is a 3.8% surtax described in IRS Topic 559. It applies to the smaller of your net investment income or your modified adjusted gross income (MAGI) above a threshold. The threshold is $200,000 for single or head of household filers and $250,000 for joint filers. It is $125,000 if married filing separately."
+      },
+      {
+        "question": "Can I owe no tax when I sell stock?",
+        "answer": "Yes, if your long-term gain fits inside the 0% bracket. A single filer with $20,000 of other taxable income owes $0 on a $5,000 long-term gain. A sale at a loss also owes no capital gains tax."
+      },
+      {
+        "question": "What happens if I sell stock at a loss?",
+        "answer": "A loss owes no capital gains tax. Under IRS Topic 409, you can deduct up to $3,000 of net capital loss a year, or $1,500 if married filing separately. Any excess carries forward."
+      },
+      {
+        "question": "How do I find my cost basis?",
+        "answer": "Your cost basis is usually the purchase price plus commissions and recording or transfer fees, per IRS Topic 703. Check your brokerage records for the price you paid and the fees charged. The calculator does not check basis, so the result depends on the figure you enter."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Revenue Procedure 2025-32 (2026 inflation adjustments)",
+        "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+      },
+      {
+        "label": "IRS Topic 409: Capital gains and losses",
+        "url": "https://www.irs.gov/taxtopics/tc409"
+      },
+      {
+        "label": "IRS Topic 559: Net Investment Income Tax",
+        "url": "https://www.irs.gov/taxtopics/tc559"
+      },
+      {
+        "label": "IRS Topic 703: Basis of assets",
+        "url": "https://www.irs.gov/taxtopics/tc703"
+      }
+    ],
+    "updated": "2026-10-28",
+    "defaultPreset": {
+      "status": "single",
+      "taxableIncome": 85000,
+      "basis": 30000,
+      "proceeds": 50000,
+      "longTerm": true
+    }
+  },
   // Checklists hub — mindmap-pass (2026-10-25). Prose generated via scripts/lib/content_gen.py
   // (reports/mindmap-pass/2026-10-25/drafts/checklists-hub.json). Spokes live in spokes-checklists.ts.
   {

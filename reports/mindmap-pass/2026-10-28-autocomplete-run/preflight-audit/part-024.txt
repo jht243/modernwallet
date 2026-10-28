@@ -1,0 +1,33 @@
+.claude/commands/_remediation-ladder.md — characters 9000 onward
+
+rience claim `_experience.md` does not license
+- the wrong register for what the page does
+- depth under the floor for its page type
+- a missing required page element (direct answer up top, who-this-is-not-for, what-would-change-our-answer, the proprietary anchor)
+- a dead-end problem the page raises and never resolves
+- a section that has to be rewritten rather than repaired
+
+Hand the reviewer's notes for **that page only** to the writer phase and re-run it for that page. A regenerated API page gets the claim check again automatically; anything the audit still finds goes back through Rung 1 `fix`, not straight to another rework. The reworked page then gets a full audit again, from Rung 0.
+
+**Max 2 rework attempts per PAGE.** A page that still fails after its second rework is **dropped from the run**: unstage its entry, remove it from the sitemap and the IndexNow URL list, and record it under "Ambiguous / skipped" with its outstanding notes. The run continues with the pages that passed. Never stop a whole run over one page.
+
+---
+
+## PER-PAGE PASS STATE
+
+A page that PASSED stays passed. Fixing or reworking one page does not re-open the audit on its siblings, and the rework counter is **per page**, never per phase. This is what stops one bad page from consuming both attempts on behalf of a batch that was otherwise fine.
+
+This does not weaken the re-audit invariant: a page whose own text changed is always re-checked on that exact text (Rung 1 re-reads the edited fields in context; Rung 2 re-audits the page in full). What is forbidden is re-auditing a page whose bytes did not change.
+
+The reviewer report ends with one line per page:
+
+```
+<page>: PASS | FIX-IN-PLACE (n) | REWORK (attempt k/2) | DROPPED — <reason>
+```
+
+## ESCALATE ONLY WHEN
+
+- every page in the run has been DROPPED, or
+- a rung cannot be executed at all (the lint script is broken, a canonical standard file is missing, the reviewer subagent cannot run).
+
+Then STOP and report the outstanding notes. A run that shipped some pages and dropped others is a **successful run with exclusions**, not a failure — report it that way.

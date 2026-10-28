@@ -1,0 +1,44 @@
+{
+ "route": "/rent-vs-buy-calculator/",
+ "readerQuestion": "Should I rent or buy?",
+ "demandSource": "DataForSEO US 2026-10-28: rent vs buy calculator 14,800/mo KD 49 (reports/mindmap-pass/2026-10-28-autocomplete-run/volumes.json)",
+ "decisionGap": "Site has a qualitative renting-vs-buying explainer but no way to compute a personal break-even.",
+ "sampledAlternatives": "SERP 2026-10-28 (serp.json): bank and credit-union calculators, NYT; AI Overview cites NerdWallet, calculator.net, Zillow, NYT. Small sample, no uniqueness claim.",
+ "method": "Month-by-month simulation of buying vs renting and investing the same cash; one-assumption-at-a-time scenarios. Python reference (check.py -> check.out.json) and TypeScript engine (src/lib/rent-vs-buy.ts) agree on all 18 scenarios (ts_check.out.txt).",
+ "sources": [
+  {
+   "url": "https://www.freddiemac.com/pmms",
+   "checked": "2026-10-28",
+   "use": "default 30-year mortgage rate 7.32%, week of 2026-10-22"
+  }
+ ],
+ "assumptions": "Planning assumptions (not sourced facts): property tax 1.0%, insurance 0.5%, maintenance 1.0%, closing 3%, selling 6%, home growth 3%, rent growth 3%, investment return 6%, renter insurance $15, PMI 0.5% while LTV above 80% with under 20% down.",
+ "findings": [
+  {
+   "label": "modeled",
+   "text": "Default case: break-even year 21; renting and investing ahead by $41,156 after 7 years."
+  },
+  {
+   "label": "modeled",
+   "text": "Rate 5% -> break-even year 5; rate 6% -> year 8; rate 4% -> year 4."
+  },
+  {
+   "label": "modeled",
+   "text": "Never within 30 years at 1% home growth or 9% investment return."
+  }
+ ],
+ "counterexample": "Lower rate, higher rent, or faster home growth flips the default verdict (scenarios in check.out.json).",
+ "unknowns": "Future home prices, rents, returns and local costs; income-tax effects of owning are not modeled.",
+ "provenance": {
+  "basis": "modeled",
+  "supportingRecordIds": [
+   "evidence/rent-vs-buy-calculator/check.out.json",
+   "evidence/rent-vs-buy-calculator/ts_check.out.txt"
+  ],
+  "scopeAndLimits": "Modeled scenarios, not measured, not a forecast; no product tested, no client record.",
+  "publicMethod": "howItWorks section of the page explains the method, defaults and scenarios; the calculator reproduces them.",
+  "placement": "howItWorks paragraph 1 (first finding) and takeaway paragraph"
+ },
+ "selectedMedium": "interactive tool (reader inputs change the answer) with the key result readable in the intro and table",
+ "testingDecision": "TESTED format off: modeling page, financial topic excluded by _experience.md section G; ordinary format."
+}

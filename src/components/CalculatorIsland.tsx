@@ -1,4 +1,6 @@
 import AutoLoanCalculator from "./AutoLoanCalculator";
+import RentVsBuyCalculator from "./RentVsBuyCalculator";
+import StockCapitalGainsCalculator from "./StockCapitalGainsCalculator";
 import AutoRefinanceCalculator from "./AutoRefinanceCalculator";
 import RentalCalculator from "./RentalCalculator";
 import RetirementCalculator from "./RetirementCalculator";
@@ -177,6 +179,9 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "charitable-donation-tax-deduction-calculator": CharitableDeductionCalculator,
   // X-trends pass (2026-10-27): car loan interest deduction (Schedule 1-A Part IV), tax years 2025 to 2028.
   "car-loan-interest-deduction-calculator": CarLoanInterestDeductionCalculator,
+  // Autocomplete pass (2026-10-28): rent vs buy break-even; stock sale capital gains tax (federal, 2026).
+  "rent-vs-buy-calculator": RentVsBuyCalculator,
+  "stock-capital-gains-tax-calculator": StockCapitalGainsCalculator,
   // X-trends pass (2026-10-19): Florida Amendment 3 homestead savings (Nov 3, 2026 ballot).
   "florida-amendment-3-calculator": FloridaAmendment3Calculator,
   // X-trends pass (2026-10-20): defaulted student loan collection exposure (wage garnishment, refund and Social Security offsets).

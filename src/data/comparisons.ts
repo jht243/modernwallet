@@ -5088,7 +5088,7 @@ export const COMPARISONS: ComparisonEntry[] = [
   // ─── 9. Renting vs Buying ─────────────────────────────────────────────────
   {
     slug: "renting-vs-buying",
-    updated: "2026-10-26",
+    updated: "2026-10-28",
     title: "Renting vs Buying a Home: Which Is Better for You?",
     metaDescription:
       "Renting vs buying a home compared: true costs, equity, flexibility, and which choice wins at different life stages and markets.",
@@ -5106,7 +5106,7 @@ export const COMPARISONS: ComparisonEntry[] = [
         { dimension: "Flexibility to move", a: "High — relocate when lease ends", b: "Low — selling takes months + costs 6–10%" },
         { dimension: "Maintenance responsibility", a: "Landlord's (mostly)", b: "Owner's — budget 1% of home value/year" },
         { dimension: "Tax benefits", a: "None", b: "Mortgage interest + property tax deductions" },
-        { dimension: "Break-even timeline", a: "N/A", b: "Typically 5–7 years in most U.S. markets" },
+        { dimension: "Break-even timeline", a: "N/A", b: "Depends on the mortgage rate and the price-to-rent ratio" },
       ],
     },
     verdict:
@@ -5125,7 +5125,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "The price-to-rent ratio: your key metric",
         content:
-          "The price-to-rent ratio is the clearest tool for the rent-vs-buy decision. Calculate it by dividing the home purchase price by the annual rent of a comparable property. A ratio below 15 strongly favors buying. A ratio of 15–20 is roughly neutral. Above 20, renting becomes increasingly competitive; above 25, renting usually wins financially.\n\nIn 2024, San Francisco's price-to-rent ratio exceeds 40x — meaning a $1.5 million home rents for less than $40,000/year. Chicago and Cleveland run near 12–14x, clearly favoring buyers. Most U.S. metros fall between 15–25x.\n\nA practical non-obvious insight: the price-to-rent ratio also predicts your break-even point. At a 15x ratio, you typically break even buying vs renting in about 4 years. At a 25x ratio, break-even extends to 10+ years — during which time you might move, the market might shift, or rates might change.",
+          "The price-to-rent ratio is the clearest tool for the rent-vs-buy decision. Calculate it by dividing the home purchase price by the annual rent of a comparable property. A ratio below 15 favors buying when mortgage rates are low. A ratio of 15–20 is roughly neutral. Above 20, renting becomes increasingly competitive; above 25, renting usually wins financially.\n\nIn 2024, San Francisco's price-to-rent ratio exceeds 40x — meaning a $1.5 million home rents for less than $40,000/year. Chicago and Cleveland run near 12–14x, clearly favoring buyers. Most U.S. metros fall between 15–25x.\n\nA practical non-obvious insight: the price-to-rent ratio also predicts your break-even point. A higher ratio pushes the break-even later, and a lower mortgage rate pulls it earlier. Rates move these numbers a lot: in our internal modeling, a $400,000 home renting for $2,200 (a ratio of 15.2) breaks even in year 5 at a 5% mortgage rate but in year 21 at 7.32%, which you can test in our [rent vs buy calculator](/rent-vs-buy-calculator/).",
       },
       {
         heading: "When renting is the smarter financial move",
@@ -5137,7 +5137,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         question: "Is renting or buying cheaper in 2024?",
         answer:
-          "In most U.S. markets in 2024, renting is cheaper on a monthly basis due to elevated home prices and 7%+ mortgage rates. However, buying builds equity while renting does not. The breakeven point — when buying becomes the better financial deal — is typically 5–7 years in most markets.",
+          "In most U.S. markets in 2024, renting is cheaper on a monthly basis due to elevated home prices and 7%+ mortgage rates. However, buying builds equity while renting does not. The break-even point, when buying becomes the better financial deal, depends mainly on the mortgage rate and the price-to-rent ratio, and our [rent vs buy calculator](/rent-vs-buy-calculator/) finds it for your numbers.",
       },
       {
         question: "How long should you own a home before selling?",
@@ -14340,6 +14340,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionA: "Ordinary Income",
     optionB: "Capital Gains Tax",
     h1: "Ordinary Income vs Capital Gains Tax",
+    updated: "2026-10-28",
     introText:
       "Ordinary income is taxed at your regular federal rate, up to 37% in 2026. A long-term capital gain on that same money is taxed separately at 0%, 15%, or 20%.\n\nThat's the distinction our calculators walk readers through when they're deciding when to sell an investment or how to take a bonus. The bucket a dollar falls into can matter more than how much of it you earn.",
     comparisonTable: {
@@ -14369,7 +14370,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Short-Term vs Long-Term Capital Gains",
         content:
-          "Hold an asset for one year or less before selling, and the profit counts as a short-term capital gain, taxed at the same rate as your wages. Hold it for more than one year, and the profit becomes a long-term capital gain, taxed at the separate 0%, 15%, or 20% rate instead.\n\nThe clock starts the day after you buy the asset and ends the day you sell it. If you bought on March 1, you have to wait until March 2 of the following year to sell and still qualify for the long-term rate. Selling on March 1 itself is one day too early.\n\nThat single extra day carries real money. A single filer in the 32% bracket sells a stock position with a $15,000 gain one day short of the one-year mark. The IRS taxes that gain as ordinary income, for a $4,800 federal bill.\n\nWait until day 366, and the same $15,000 gain drops into the 15% long-term rate for a $2,250 bill. That's a savings of $2,550 for changing nothing but the sale date.",
+          "Hold an asset for one year or less before selling, and the profit counts as a short-term capital gain, taxed at the same rate as your wages. Hold it for more than one year, and the profit becomes a long-term capital gain, taxed at the separate 0%, 15%, or 20% rate instead.\n\nThe clock starts the day after you buy the asset and ends the day you sell it. If you bought on March 1, you have to wait until March 2 of the following year to sell and still qualify for the long-term rate. Selling on March 1 itself is one day too early.\n\nThat single extra day carries real money. A single filer in the 32% bracket sells a stock position with a $15,000 gain one day short of the one-year mark. The IRS taxes that gain as ordinary income, for a $4,800 federal bill.\n\nWait until day 366, and the same $15,000 gain drops into the 15% long-term rate for a $2,250 bill. That's a savings of $2,550 for changing nothing but the sale date. To see the tax on your own sale, enter your income, basis and holding period in our [stock capital gains tax calculator](/stock-capital-gains-tax-calculator/).",
       },
       {
         heading: "Ordinary Income vs Capital Gains Tax Rates for 2026",

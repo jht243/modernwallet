@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "root": "/home/user/modernwallet",
+  "phase": "publish",
+  "instructions": [
+    ".claude/commands/mindmap-pass/phase-6-internal-linking.md",
+    ".claude/commands/mindmap-pass/phase-7-sitemap-indexnow.md",
+    ".claude/commands/mindmap-pass/phase-8-summary.md",
+    ".claude/commands/mindmap-pass/phase-9-commit-deliver.md"
+  ],
+  "files": {
+    ".claude/commands/_decision-evidence.md": "68f548505eb463f3a7a8bbef0733fddf96d98d75cf075a9deb648a907e709123",
+    ".claude/commands/_testing-labels.md": "8a9dc3c646a583d7afe80339efb880be431a9f528e491ef0ea156bee4db053d9",
+    ".claude/commands/_content-standard.md": "0e00ec2e288910d6291f8f243eccc769f598cb031d965aa99a9205be6aeb1be7",
+    ".claude/commands/_anti-ai-language.md": "ed445917525883e8693405dc363833e4aa3c4ff8b23875f23bdee31aaf6292dd",
+    ".claude/commands/_experience.md": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+    ".claude/commands/_workflow-checkpoints.md": "24f187f4a168ecfd32759a2fc7a1929f93f6bb125d1b8cb41dc5b2b5531bfb8d",
+    ".claude/commands/_rendered-page-audit.md": "388cd4ebdfde5d3a8a7736bf720349a6d833f587da969808796b57fe0b140d95",
+    ".claude/commands/mindmap-pass/phase-6-internal-linking.md": "712582416cf88b68ff1afc1192c46718b230100225816aa2d255ca0901f4e7f6",
+    ".claude/commands/mindmap-pass/phase-7-sitemap-indexnow.md": "44ea10b35efccf02f56e97921ea6b0dd4c872545d0dc5b2ab4fa1b8a6e999b8e",
+    ".claude/commands/mindmap-pass/phase-8-summary.md": "b807740c732a860bb48ddfe5b33e31f5095c7fba44e497e1acdedb615aae366b",
+    ".claude/commands/mindmap-pass/phase-9-commit-deliver.md": "0b33632cc60318ba803068c1bf39e8130b431fb52adbf0919467779217e9005d"
+  },
+  "parts": [
+    {
+      "path": "part-001.txt",
+      "sha256": "9b5a064393a297ed08f964b7a4275410dc9e791a499080b8b89a188d8fef84ac"
+    },
+    {
+      "path": "part-002.txt",
+      "sha256": "eac538b565f2b284bf39de2fd87663d38703f4a9634d1ba9a6561c9d0a977b57"
+    },
+    {
+      "path": "part-003.txt",
+      "sha256": "d13a930d00c9ff72ad7fa0b75e865ad08582039c11341703984d1295e49c5bbe"
+    },
+    {
+      "path": "part-004.txt",
+      "sha256": "4a2c230bc20a39f8e12ff100d2d39c94ab5f64d10e840fa7d6b29bf83534fdf7"
+    },
+    {
+      "path": "part-005.txt",
+      "sha256": "c7305a36403fda41988db0da5cb846b948c012aab4def838de81612c1e06bea2"
+    },
+    {
+      "path": "part-006.txt",
+      "sha256": "144e3152bb0040cb05589d953a5ea8b6a2bc35dc3607925ba62a49171c1816ab"
+    }
+  ],
+  "delivered": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "actor": "main",
+  "reused": [
+    ".claude/commands/_decision-evidence.md",
+    ".claude/commands/_testing-labels.md",
+    ".claude/commands/_content-standard.md",
+    ".claude/commands/_anti-ai-language.md",
+    ".claude/commands/_experience.md",
+    ".claude/commands/_workflow-checkpoints.md",
+    ".claude/commands/_rendered-page-audit.md"
+  ],
+  "reuse": {
+    "directory": "reports/mindmap-pass/2026-10-28-autocomplete-run/preflight-write",
+    "sha256": "85cb2855cf23ffae89d8b1cb7392f8e7dcabb9588b77bb9d422594c8befedb10"
+  }
+}

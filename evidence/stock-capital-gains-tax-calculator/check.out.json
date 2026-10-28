@@ -1,0 +1,171 @@
+{
+ "default_lt_single_85k_gain20k": {
+  "inputs": {
+   "status": "single",
+   "taxableIncome": 85000,
+   "basis": 30000,
+   "proceeds": 50000,
+   "longTerm": true
+  },
+  "gain": 20000,
+  "tax": 3000.0,
+  "niit": 0.0,
+  "total": 3000.0
+ },
+ "zero_bracket_inside": {
+  "inputs": {
+   "status": "single",
+   "taxableIncome": 20000,
+   "basis": 10000,
+   "proceeds": 15000,
+   "longTerm": true
+  },
+  "gain": 5000,
+  "tax": 0.0,
+  "niit": 0.0,
+  "total": 0.0
+ },
+ "straddle_0_15": {
+  "inputs": {
+   "status": "single",
+   "taxableIncome": 40000,
+   "basis": 10000,
+   "proceeds": 30000,
+   "longTerm": true
+  },
+  "gain": 20000,
+  "tax": 1582.5,
+  "niit": 0.0,
+  "total": 1582.5
+ },
+ "straddle_15_20": {
+  "inputs": {
+   "status": "single",
+   "taxableIncome": 540000,
+   "basis": 10000,
+   "proceeds": 40000,
+   "longTerm": true
+  },
+  "gain": 30000,
+  "tax": 5725.0,
+  "niit": 1140.0,
+  "total": 6865.0
+ },
+ "exactly_at_zero_top": {
+  "inputs": {
+   "status": "single",
+   "taxableIncome": 49450,
+   "basis": 0,
+   "proceeds": 10000,
+   "longTerm": true
+  },
+  "gain": 10000,
+  "tax": 1500.0,
+  "niit": 0.0,
+  "total": 1500.0
+ },
+ "short_term_single": {
+  "inputs": {
+   "status": "single",
+   "taxableIncome": 85000,
+   "basis": 30000,
+   "proceeds": 50000,
+   "longTerm": false
+  },
+  "gain": 20000,
+  "tax": 4400.0,
+  "niit": 0.0,
+  "total": 4400.0
+ },
+ "short_term_straddle_bracket": {
+  "inputs": {
+   "status": "single",
+   "taxableIncome": 100000,
+   "basis": 10000,
+   "proceeds": 20000,
+   "longTerm": false
+  },
+  "gain": 10000,
+  "tax": 2286.0,
+  "niit": 0.0,
+  "total": 2286.0
+ },
+ "mfj_lt_high": {
+  "inputs": {
+   "status": "mfj",
+   "taxableIncome": 650000,
+   "basis": 100000,
+   "proceeds": 300000,
+   "longTerm": true
+  },
+  "gain": 200000,
+  "tax": 40000.0,
+  "niit": 7600.0,
+  "total": 47600.0
+ },
+ "niit_single_lt": {
+  "inputs": {
+   "status": "single",
+   "taxableIncome": 190000,
+   "basis": 20000,
+   "proceeds": 60000,
+   "longTerm": true
+  },
+  "gain": 40000,
+  "tax": 6000.0,
+  "niit": 1520.0,
+  "total": 7520.0
+ },
+ "niit_mfj_short": {
+  "inputs": {
+   "status": "mfj",
+   "taxableIncome": 240000,
+   "basis": 20000,
+   "proceeds": 60000,
+   "longTerm": false
+  },
+  "gain": 40000,
+  "tax": 9600.0,
+  "niit": 1520.0,
+  "total": 11120.0
+ },
+ "loss": {
+  "inputs": {
+   "status": "single",
+   "taxableIncome": 85000,
+   "basis": 30000,
+   "proceeds": 20000,
+   "longTerm": true
+  },
+  "gain": -10000,
+  "tax": 0.0,
+  "niit": 0.0,
+  "total": 0.0
+ },
+ "hoh_lt": {
+  "inputs": {
+   "status": "hoh",
+   "taxableIncome": 60000,
+   "basis": 10000,
+   "proceeds": 40000,
+   "longTerm": true
+  },
+  "gain": 30000,
+  "tax": 3570.0,
+  "niit": 0.0,
+  "total": 3570.0
+ },
+ "mfs_lt_top": {
+  "inputs": {
+   "status": "mfs",
+   "taxableIncome": 300000,
+   "basis": 10000,
+   "proceeds": 50000,
+   "longTerm": true
+  },
+  "gain": 40000,
+  "tax": 7657.5,
+  "niit": 1520.0,
+  "total": 9177.5
+ }
+}

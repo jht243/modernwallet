@@ -1,0 +1,146 @@
+{
+  "reviewer": "phase4-reviewer",
+  "snapshotSha256": "245e2ae731f2b5c9bc64a1adaa95684465a7737373ca93cff1823b9b5114367d",
+  "routes": [
+    {
+      "path": "/rent-vs-buy-calculator/",
+      "fingerprint": "705d54f614e0fe87dd1aa87f2d3c08b8d49e61157ff15f8ffa7927575e22ef38",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Intro, tool, howItWorks, takeaway and FAQs agree: break-even year 21 at defaults, 5% rate year 5, buy only if staying past break-even; payment label P&I matches the 10%-down FAQ fix."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "check.py output identical to check.out.json, ts_check 18 ok; all page figures recomputed; Freddie Mac 7.32% (Oct 22, 2026) fetched and matches."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "\"In our internal modeling, we took...\" and howItWorks attribution match modeled basis with Python/TS cross-check and calculator to verify; no testing claim."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Article datePublished=dateModified=2026-10-28, visible Updated October 28, 2026; WebApplication, FAQPage (8 Q), BreadcrumbList present; canonical and title match; no testing schema."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Internal routes exist in dist/sitemap; external links only the allowed list; first mentions linked including tool copy; canonical self; indexable."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Playwright on :4399 at 390 and 1280: no horizontal scroll, 0 console errors, defaults show a result, edits update, boundary states (rent 0, gain 0, loss) show sensible messages."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Finance YMYL, TESTED format off, no section G claim; no neutrality claim; disclaimer in template footer."
+        }
+      }
+    },
+    {
+      "path": "/stock-capital-gains-tax-calculator/",
+      "fingerprint": "3c14242e43fb5d9f28c77b876899a6d4701a877759cbbb0f49660d9cd248c08a",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Intro, tool, howItWorks, takeaway (with price-drop reverser) and FAQs agree: $3,000 long-term vs $4,400 short-term at $85,000; thresholds consistent."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "check.py identical to check.out.json, ts_check 13 ok; thresholds/standard deductions/brackets checked against Rev. Proc. 2025-32 text, Topics 409 and 559 fetched."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "\"In our internal calculation, we took/re-implemented...\" matches calculated basis; no testing claim."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Article datePublished=dateModified=2026-10-28, visible Updated October 28, 2026; WebApplication, FAQPage (8 Q), BreadcrumbList present; canonical and title match; no testing schema."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Internal routes exist in dist/sitemap; external links only the allowed list; first mentions linked including tool copy; canonical self; indexable."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Playwright on :4399 at 390 and 1280: no horizontal scroll, 0 console errors, defaults show a result, edits update, boundary states (rent 0, gain 0, loss) show sensible messages."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Finance YMYL, TESTED format off, no section G claim; no neutrality claim; disclaimer in template footer."
+        }
+      }
+    },
+    {
+      "path": "/compare/ordinary-income-vs-capital-gains-tax/",
+      "fingerprint": "4fd325a7fa08d159fac7e5bc09381666b6207924defcc5289cc50c57c6216bd1",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Added sentence sends readers to the calculator and is accurate. Inherited 32%-bracket example ($4,800 vs $2,250, saving $2,550) omits the 3.8% NIIT that applies at that income, so the calculator would show larger totals; the saving is unchanged. Advisory only."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Added sentence adds no figures. Inherited $2,200/$1,500/$700 example checked: $90,000+$10,000 stays below $105,700; 0% room $49,450 correct."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No original-work claim added; plain link sentence."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Article datePublished=dateModified=2026-10-28, visible Updated October 28, 2026; WebApplication, FAQPage (8 Q), BreadcrumbList present; canonical and title match; no testing schema."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Internal routes exist in dist/sitemap; external links only the allowed list; first mentions linked including tool copy; canonical self; indexable."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Playwright on :4399 at 390 and 1280: no horizontal scroll, 0 console errors, defaults show a result, edits update, boundary states (rent 0, gain 0, loss) show sensible messages."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Finance YMYL, TESTED format off, no section G claim; no neutrality claim; disclaimer in template footer."
+        }
+      }
+    },
+    {
+      "path": "/compare/renting-vs-buying/",
+      "fingerprint": "57b27d279a8d323ae3b18bb87d7699395a6602840135a60a6466805260677843",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Read whole rendered text. Conflicting inherited break-even claims (\"about 4 years at 15x\", table \"5-7 years\", FAQ \"typically 5-7 years\") are gone; table row, price-to-rent paragraph, FAQ and new sentence (ratio 15.2: year 5 at 5%, year 21 at 7.32%) now agree that break-even depends on rate and ratio. \"Below 15 favors buying when mortgage rates are low\" matches the model. Residual advisory: FAQ \"A ratio below 15 favors buying; above 20 favors renting\" and \"Buy when... below 20x\" are unqualified by rate, and \"15-20 roughly neutral\" is looser than year 21 at 7.32%; they are heuristics that do not contradict the stated answer."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "New sentence reproduced from check.out.json (rate_5 year 5, default year 21, 400000/(2200*12)=15.2); FAQ link target exists."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "\"In our internal modeling\" accurate for modeled basis; links to calculator; no testing claim."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Visible Updated October 28, 2026; Article dateModified 2026-10-28; FAQPage 4 Q matches rendered FAQ text."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Two links to /rent-vs-buy-calculator/ (exists, in sitemap); canonical self; no new external links."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Text-only edits to existing template; no layout change; same template as before."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Finance YMYL, TESTED format off, no section G claim; no neutrality claim; disclaimer in template footer."
+        }
+      }
+    }
+  ]
+}

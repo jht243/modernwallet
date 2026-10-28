@@ -1,0 +1,16 @@
+{
+ "originRoutine": "autocomplete-pass-auto",
+ "route": "/stock-capital-gains-tax-calculator/",
+ "queryFamily": "capital gains tax calculator stocks",
+ "hypothesis": "A stock-specific calculator answers the query better than the rental-property calculator and the explainer.",
+ "primaryMetric": "Google clicks (GSC)",
+ "baseline": "not-yet-published; age-matched comparator pages",
+ "evidenceBasis": "calculated (internal calculation) + reported IRS rules",
+ "deployed": "pending verification",
+ "outcomeStatus": "not-yet-published",
+ "reviewWindows": {
+  "day28": "first 28 complete live days",
+  "day56": "second 28 complete live days"
+ },
+ "sourceRefreshTrigger": "IRS inflation-adjustment release for tax year 2027"
+}
