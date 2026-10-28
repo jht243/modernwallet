@@ -28,9 +28,10 @@ def clean(text): return re.sub(r'\s+', ' ', text).strip()
 class Page(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
-        self.stack=[]; self.text=[]; self.headings=[]; self.links=[]; self.meta={}; self.schemas=[]; self.json=[]; self.is_json=False; self.title=[]; self.canonical=''; self.article=0; self.article_text=[]; self.structure=[]
+        self.stack=[]; self.text=[]; self.date_text=[]; self.headings=[]; self.links=[]; self.meta={}; self.schemas=[]; self.json=[]; self.is_json=False; self.title=[]; self.canonical=''; self.article=0; self.article_text=[]; self.structure=[]
     def handle_starttag(self, tag, attrs):
         a=dict(attrs)
+        if tag in {'div','p','header','footer','article','main','section','li','aside','br','h1','h2','h3'}: self.date_text.append('\n')
         if tag not in {'script','style','noscript','meta','link','head','title'} and not any(t in self.stack for t in ['head','script','style','noscript']):
             keep = {k:v for k,v in a.items() if k in {'class','hidden','min','max','step','placeholder','for','pattern','required','multiple','src','srcset','alt','type','value','checked','selected','disabled','aria-label','aria-hidden','role','colspan','rowspan','style','action','method','href','d','viewbox','points','cx','cy','r','x','y','width','height','fill','stroke','transform'}}
             self.structure.append([tag,keep])
@@ -52,6 +53,7 @@ class Page(HTMLParser):
         if 'title' in self.stack: self.title.append(data)
         if not any(t in self.stack for t in ['head','script','style','noscript']):
             self.text.append(data)
+            self.date_text.append(data)
             if any(t in self.stack for t in ['main','article']): self.article_text.append(data)
             if 'h1' in self.stack: self.headings.append(data)
 
@@ -76,7 +78,8 @@ def parse(html, route, base, canonical, status=200):
         if not ok: failures.append(reason)
     test(status==200, f'HTTP {status}')
     test(p.article>0 and len(clean(' '.join(p.article_text)))>200 and bool(semantic['h1']), 'Missing complete article/main content or H1; app shells cannot pass')
-    test(semantic['canonical'].rstrip('/') == (canonical.rstrip('/')+route['path']).rstrip('/'), 'Canonical mismatch')
+    canonical_path = route.get('canonicalPath', route['path'])
+    test(semantic['canonical'].rstrip('/') == (canonical.rstrip('/')+canonical_path).rstrip('/'), 'Canonical mismatch')
     for name in ['robots','googlebot','bingbot']:
         directives=re.split(r'[,\s]+',p.meta.get(name,'').lower())
         test(not {'noindex','none'} & set(directives), 'Page blocks indexing: '+name)
@@ -91,7 +94,7 @@ def parse(html, route, base, canonical, status=200):
                 except ValueError: test(False,'Invalid '+label)
         types=obj.get('@type',[]); types=[types] if isinstance(types,str) else types
         identity=normalize(obj.get('url') or obj.get('@id') or '',base,canonical).split('#')[0]
-        primary=bool(set(types)&{'Article','TechArticle','BlogPosting','NewsArticle','WebPage','FAQPage'}) and (not identity or identity.rstrip('/')==(canonical.rstrip('/')+route['path']).rstrip('/'))
+        primary=bool(set(types)&{'Article','TechArticle','BlogPosting','NewsArticle','WebPage','FAQPage'}) and (not identity or identity.rstrip('/') in {(canonical.rstrip('/')+route['path']).rstrip('/'),(canonical.rstrip('/')+canonical_path).rstrip('/')})
         if modified and primary: dates.append(str(modified)[:10])
         if published and modified: test(str(modified)[:10]>=str(published)[:10], 'dateModified precedes datePublished')
     expected=route.get('expectedUpdatedDate')
@@ -99,7 +102,10 @@ def parse(html, route, base, canonical, status=200):
         test(bool(dates) and all(d==expected for d in dates),'Structured-data updated date mismatch')
         date=dt.date.fromisoformat(expected)
         variants=[expected,date.strftime('%b %-d, %Y'),date.strftime('%B %-d, %Y')]
-        labels=re.findall(r'(?:last\s+updated|updated)\s*(?:on\s+)?[:·-]?\s*(\d{4}-\d{2}-\d{2}|[A-Za-z]+\s+\d{1,2},?\s+\d{4})',semantic['text'],re.I)
+        # Labels begin a visible text block or follow a byline separator. A
+        # historical sentence such as 'the model was updated on August 13'
+        # is not the article's update date.
+        labels=re.findall(r'(?:^|[\n·|]|\blast\s+)\s*updated\s*(?:on\s+)?[:·-]?\s*(\d{4}-\d{2}-\d{2}|[A-Za-z]+\s+\d{1,2},?\s+\d{4})',''.join(p.date_text),re.I)
         parsed=[]
         for value in labels:
             for fmt in ['%Y-%m-%d','%b %d %Y','%B %d %Y']:
@@ -117,6 +123,12 @@ def validate_manifest(manifest):
     paths=[r['path'] for r in routes]
     require(len(paths)==len(set(paths)), 'Duplicate route')
     require(all(p.startswith('/') and '..' not in p and '?' not in p and '#' not in p for p in paths),'Unsafe route path')
+    for r in routes:
+        if 'canonicalPath' in r:
+            p=r['canonicalPath']
+            require(p in paths and p.startswith('/') and not p.startswith('//') and '..' not in p and '?' not in p and '#' not in p,'Canonical target must be an audited same-site route')
+            target=next(t for t in routes if t['path']==p)
+            require(target.get('canonicalPath',p)==p,'Canonical target must be self-canonical; chains and cycles are invalid')
 
 def capture(manifest, base, out, dom_dir=None):
     validate_manifest(manifest)

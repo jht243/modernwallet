@@ -60,4 +60,15 @@ class Tests(unittest.TestCase):
  def test_commit_evidence(self):
   s=self.snapshot()
   with self.assertRaises(ValueError): a.record(s,s,self.review(s),'a'*40,{'commit':'b'*40,'status':'live'},'/tmp/should-not-write-render-audit.jsonl')
+ def test_historical_inline_date_is_not_article_date(self):
+  s=self.snapshot(HTML.replace('</main>','<p>The model was <strong>updated on August 13, 2026</strong>.</p></main>')); a.valid_snapshot(s)
+ def test_split_updated_label_keeps_date(self):
+  s=self.snapshot(HTML.replace('Updated Oct 27, 2026','<span>Updated </span><time>Oct 27, 2026</time>')); a.valid_snapshot(s)
+ def test_alias_requires_audited_self_canonical_target(self):
+  m={'author':'writer','canonicalBase':'https://example.com','routes':[{'path':'/old','canonicalPath':'/guide'},{'path':'/guide'}]}; a.validate_manifest(m)
+  r=a.parse(HTML,{'path':'/old','canonicalPath':'/guide','expectedUpdatedDate':'2026-10-27'},'https://example.com','https://example.com');self.assertEqual(r['failures'],[])
+  m['routes'][1]['canonicalPath']='/old'
+  with self.assertRaisesRegex(ValueError,'cycles'):a.validate_manifest(m)
+  m['routes']=m['routes'][:1]
+  with self.assertRaisesRegex(ValueError,'audited'):a.validate_manifest(m)
 if __name__=='__main__': unittest.main()
