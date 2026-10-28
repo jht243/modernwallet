@@ -1,0 +1,58 @@
+.claude/commands/_decision-evidence.md — characters 0 onward
+
+# Decision evidence inside content creation
+
+Applies to mindmap-pass and comparison-content-creator, including substantive existing-page enrichments. This is a substep inside Phase 3, before prompt assembly, not another production system or human gate. Existing intent, deduplication, protections, generator, audit and publication rules remain in force. Pure link/metadata corrections do not need a new experiment.
+
+## Purpose and limits
+
+Improve the reader's answer with defensible analysis, then learn whether that change earns incremental search traffic. Google recommends original, useful analysis, transparent sourcing and evidence for review claims. These are editorial directions, not a published scoring formula or a promise of rankings. Calculators, length, simulated personas and an originality label do not earn a ranking bonus by themselves.
+
+Primary guidance, checked 2026-10-25:
+- https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+- https://developers.google.com/search/docs/specialty/ecommerce/write-high-quality-reviews
+- https://developers.google.com/search/docs/appearance/ranking-systems-guide
+
+## 1. Select the decision, using the existing brief
+
+Reuse the approved reader question and its demand evidence; do not invent another intent prompt or a new keyword quota. Inspect the existing page, relevant primary sources and the brief's sampled search results. Record what the reader still cannot decide and what the current alternatives already answer. Never claim competitor-wide uniqueness from a small sample.
+
+Select a finding that could change a real choice: total cost, a capability boundary, a supported workflow, a compatibility constraint, a failure case or a tradeoff. State the expected acquisition mechanism: better coverage/ranking for an existing query family, a clearer search-result promise, or a reference-worthy asset. A model with arbitrary inputs that merely restates its assumptions is a sensitivity tool, not the main evidence advantage.
+
+If the page already answers the decision or no defensible additional analysis fits, record a short no-addition rationale and preserve the useful page. This is a terminal branch: skip the writer, tool building, numerical packet, counterexample and growth registration unless another real experiment already needs them. Do not force a calculator, manufacture a benchmark, pad the article or create another URL for the same intent. Missing evidence for a central recommendation means narrow/defer that recommendation, not invent support.
+
+## 2. Produce evidence before choosing its presentation
+
+Use the strongest feasible method for the decision:
+- **Measured:** execute an accessible product/API/browser test with a defined task and success criterion. Save raw inputs/outputs, environment/version/date, repetitions and scoring. Respect access, privacy and cost authorization; lack of access is not permission to simulate a successful test.
+- **Calculated:** execute a reproducible calculation from cited facts and explicit scenario inputs. Save the formula/code, units, exclusions and outputs. Exercise boundaries and a counterexample where the recommendation changes or the benefit disappears.
+- **Reported:** attribute a vendor or third-party observation to its actual source; retain differences between test conditions. Do not turn unmatched reported benchmarks into our own head-to-head result.
+- **Unknown:** state what available evidence cannot establish. Model-generated student personas are hypotheses, not observed users. Never infer actual time savings, reliability, output quality or performance from price, specifications or usage multipliers.
+
+For estimates, disclose the basis and plausible range; test sensitivity. If the result depends entirely on an unsupported assumption, present it as an optional planning aid and find a stronger primary contribution. Do not invent confidence intervals or a composite score. Reuse evidence across related pages only where task, date and conditions match; regenerate when source inputs change.
+
+**Presentation follows the finding.** Preserve useful calculator ideas: choose an interactive tool when reader-adjustable inputs change the answer, a table for finite cases, and prose for a simple finding. Reuse existing tools/components where they fit. Keep the key answer, examples and limitations readable on the page without requiring interaction. A calculator is optional; a useful answer is not.
+
+**Choose useful visual evidence inside Phase 3, after the analysis and before writing.** Select the smallest useful format from:
+- **SVG chart:** a scalable comparison of calculated/measured values, thresholds or scenarios, generated from the same inputs and outputs as the finding.
+- **Actual screenshot:** a genuine capture of a product task, tool output or result we executed or observed. Use it when seeing the result helps verify or understand the finding.
+- **Interactive animation:** a visual that changes as readers adjust inputs or step through a scenario. Use it when changing an assumption explains the result; integrate into an existing calculator where appropriate.
+
+Choose more than one only when each adds something distinct; skip visuals that add no value. Place each beside the finding it supports and label modeled results as modeling and observed product results as testing. Do not publish redundant calculator screenshots by default. No videos in this workflow. Phase 4 checks the visual against its source data, evidence wording, accessibility and mobile readability; existing testing/medical exclusions remain in force.
+
+## 3. Save a small evidence packet and hand it to the writer
+
+Use the calling routine's existing run directory: `evidence/<slug>/`. Save:
+- `evidence.json`: route; reader question and demand source; decision gap; sampled alternatives; method; source URLs/check dates and sourced inputs; scenario assumptions; calculation/test command and output paths; findings with `measured|calculated|reported|unknown` labels; counterexample; exclusions; unknowns; what would change the recommendation; selected medium and reason.
+- The executable calculation/test and raw outputs needed to reproduce numerical claims. Use an existing helper where possible. For non-numerical analysis, retain the source-to-conclusion reasoning instead of a fake numeric test.
+- `growth.json`: origin routine, query family, hypothesis, primary metric, baseline reference and exact window/property/canonical URL, comparator plan, change scope, source refresh trigger and outcome status. Link existing generator-usage/effort records for production cost; use unknown rather than guessing. Missing GSC data is `unavailable` or `evidence-conflict`, never an invented zero. New routes use `not-yet-published` and an age-matched comparator, not a fabricated before-period.
+
+Copy the approved findings, conditions and source IDs into the writer's CLOSED FACT LIST alongside the published facts. Give the writer the current page for enrichments. The answering section stays in the brief's approved slot. Ask for the implication, the worked case, the exception and the next action; never ask it to improvise testing data. Substantive prose still uses `content_gen.py`.
+
+### Make our contribution visible to the reader
+
+When this run produces original analysis or actual testing, the writer must make its origin understandable beside the first material finding. Normally one short, natural sentence or two connected sentences is enough. Use explicit ownership and an action: **what we did → what we found → how readers can check it**. Prefer “In our internal cost analysis, we modeled…” or “In our internal modeling, we compared…” over a bare “Our cost model uses published prices.” Naming the inputs alone does not explain our work. State the actual task, the relevant scope or assumptions, and the result; lead with the reader's answer, not a generic authority claim. Respect the chosen operator/reporter register. Use normal visible page text, with a nearby table, method note or anchor explaining the calculation/test where useful; do not hide the only explanation in metadata, an unrelated FAQ or a private report path.
+
+Match the cue to the evidence:
+- **Actual product test:** prefer “In our internal testing, we [performed the specific task under stated conditions] and found [supported result].” “We tested…” is also suitable. Use these only when this run or a reusable verified run actually exercised the relevant product/task. Identify the task and meaningful conditions; retain version/date, sample/repetitions, outputs and scoring in the packet. Testing our calculator's code is not testing Claude's performance. Automated API/browser tests count when they genuinely execute the claimed task; human modeling does not.
+- **Calculated analysis:** prefer “In our internal cost analysis, we modeled [the relevant options/scenarios] to see [the reader’s decision]. Using [sourced inputs], we found [supported result and conditions]

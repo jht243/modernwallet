@@ -1,0 +1,61 @@
+.claude/commands/trend-pass/phase-4c-mindmap.md — characters 0 onward
+
+
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
+
+<!-- workflow-source-freshness-v1 -->
+**WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
+<!-- /workflow-source-freshness-v1 -->
+
+# Phase 4c — Mindmap lane (Lane C — the ONLY builder, EVERY run)
+
+<!-- workflow-checkpoints-v1 -->
+**Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
+<!-- /workflow-checkpoints-v1 -->
+
+
+> **‼️ LANE C IS THE PASS — NEVER SKIP OR SHORTEN IT (owner rule 2026-10-07).** Lanes A and B only
+> feed Lane C; without Lane C this routine does nothing. Phase 4c runs on EVERY run, in full:
+> mindmap's complete `phase-build-brief.md` (all lenses, keyword demand ladder, Autocomplete, SERP
+> reads, adversarial duplicate-suppression reviewer) on the top-10 queries plus the research pack.
+> An empty research pack, an already-caught trend, "all top-20 queries covered", or low clicks are
+> NEVER reasons to skip Phase 4c, run a "reduced" BUILD-BRIEF, or replace it with your own
+> classification of the queries. A run that does not save a full BUILD-BRIEF chart at
+> `reports/mindmap-pass/<date>-trend-lane-c.md` is a FAILED run (`--status failure`), even if it
+> builds nothing.
+
+
+**Owner design (layer3 2026-10-05, ported here 2026-10-06):** Lanes A and B research; mindmap builds. Every run, mindmap gets the top-10 queries (7-day window) plus the research pack from Phase 4 as its brief, and decides what ships. It runs even when the research pack is empty.
+
+## Owner decisions — do not relitigate
+- **Inline, same run.** No separate routine, no handoff file beyond the research pack.
+- **Mindmap decides scope.** It may drop or reshape any Lane A/B finding (it usually won't). This pass adds no winner-protection filter of its own — mindmap's process handles it.
+- **Cap: 25 new pages per run TOTAL** (one shared budget across all lanes).
+
+## Still binding (run-wide guardrails)
+- **No metadata rows** — drop any `update existing metadata` row from the chart; never run mindmap phase-2.
+- **No consolidation/redirects** — mindmap phase-1 runs in its ADVISORY form only (writes no edits); drop any row that would 301/canonicalize.
+- **Additive only** — `update existing body text` rows ADD a section via `content_gen.py section`; never rewrite existing copy. `add internal links` rows are allowed.
+- **Format guard** — `article` / `comparison table/database` rows AND tool rows (`interactive tool` / `calculator` / `quiz/assessment`) are auto-built — tool rows by mindmap Phase 3c (`.claude/commands/mindmap-pass/phase-3c-tool-build.md`: mirror this repo's existing tool wiring, client-side logic, `data-tool` root) and audited by Phase 4's tool checklist; only `template` / `glossary/reference` / `data report` rows go to the digest as flagged specs (`reports/mindmap-pass/specs/<slug>-spec.md`). (MINDMAP-BUILDS-TOOLS) **On this calculator site:** a new spoke page in a `src/data/spokes-*.ts` registry that reuses an EXISTING `src/lib/*` engine unmodified (the 2026-07-13 `retirement/ira-early-withdrawal-calculator` precedent) counts as an `article` row; a row that needs new or changed calculator code in `src/lib/*` / `src/components/*` is a TOOL row, built via Phase 3c.
+- **Prose rule + audit invariant** — API writer only (`scripts/lib/content_gen.py`); every output audited before it ships.
+
+## Finance / YMYL guardrails (BINDING — this is a personal-finance site)
+These come from `CONTENT.md` and `_content-standard.md` and override any mindmap default that conflicts:
+- **Numbers come from the engine, never the writer.** Every payment, interest, balance, rate-of-return or tax figure on a page MUST be computed ahead of time with the site's real `src/lib/*` calculator engine (Node runs the `.ts` directly) and handed to the writer in the closed fact list. The writer never invents or recomputes a figure; the audit checks every figure against that ground truth exactly.
+- **Primary sources only** for rates, limits, statutes and rules — CFPB, Federal Reserve / FRED, IRS, FTC, SEC, BLS, Experian, or the regulator/vendor's own page — current-year, URL verified to load. Never an aggregator or SEO blog.
+- **Never invent** a figure, rate, contribution limit, tax bracket, statute, fee, lender term or piece of advice. A fact that can't be grounded drops the row (ledger DROPPED, "non-groundable YMYL fact") — a relevant omission beats a guessed number.
+- **No personalized advice.** Pages explain the math and the tradeoff; they don't tell a reader what to buy, sell or borrow.
+- **Authorship + disclaimer:** byline and Person JSON-LD are template-rendered (`Byline.astro`, `src/lib/jsonld.ts`) from the record's date fields — never a "reviewed by" line in body prose. Any "not financial advice" disclaimer sits at the bottom of the page, never the top (`_content-standard.md`).
+- **Comparisons and roundups stay objective** — no option is the automatic winner; affiliate/partner wiring (`src/data/partners.ts`) is handled by the templates, never by body prose.
+
+## 1. Build the brief
+Two parts, in this order:
+
+1. **Top-10 queries** — `top_queries[10]` from the Phase 0 pull JSON (7-day window), verbatim, in click order, each with clicks/impressions/position and the `top_pages[10]` page it lands on (if known).
+2. **Research from Lanes A/B** — paste the research pack (`reports/trend-pass/<YYYY-MM-DD>.research.md`) in full: the trend verdict, trend gap findings, and uncovered top-20 queries with their suggested angles.
+
+Interpreted-brief line: *"Our 10 top-clicking Google queries for the 7 days ending <data_date>,
