@@ -177,19 +177,18 @@ def includes_published(base, local, published):
     """Would integrating the published change leave local bytes/mode unchanged?"""
     if local == published or base == published:
         return True
-    if base is None and local is not None and published is not None:
-        if local[0] != published[0] or local[0] not in ['100644','100755']:
-            return False
+    if local is not None and published is not None and local[0] == published[0] and local[0] in ['100644','100755']:
+        # Git can conflict on adjacent insertions even when local retains every
+        # complete published line. Exact, ordered line preservation proves that
+        # no published byte-line was removed or replaced. Do not normalize text.
         try:
-            ours, theirs = local[1].decode('utf-8'), published[1].decode('utf-8')
+            ours_text, published_text = local[1].decode('utf-8'), published[1].decode('utf-8')
         except UnicodeDecodeError:
-            return False
-        if '\0' in ours or '\0' in theirs:
-            return False
-        # New upstream file: retain every complete published line, permitting
-        # local rules to add lines without dropping/replacing published input.
-        import difflib
-        return all(tag in ['equal','insert'] for tag,*_ in difflib.SequenceMatcher(None, theirs.splitlines(keepends=True), ours.splitlines(keepends=True), autojunk=False).get_opcodes())
+            ours_text = published_text = None
+        if ours_text is not None and '\0' not in ours_text and '\0' not in published_text:
+            remaining = iter(ours_text.splitlines(keepends=True))
+            if all(any(line == current for current in remaining) for line in published_text.splitlines(keepends=True)):
+                return True
     if base is None or local is None or published is None:
         return False
     old_mode, old = base; local_mode, ours = local; remote_mode, theirs = published

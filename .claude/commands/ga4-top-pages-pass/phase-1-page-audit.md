@@ -17,7 +17,13 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 <!-- /workflow-checkpoints-v1 -->
 
 
-No trend detection. Each of the 10 pages is judged **on its own**. This phase decides WHICH pages get audited tonight and gathers the per-page evidence the lanes in Phase 2 need.
+<!-- decision-evidence-v1 -->
+## Evidence-cohort measurement and reporting
+
+When `reports/content-evidence.jsonl` exists, inspect linked growth records due for their 28/56-day review, using `_decision-evidence.md` section 5. Use this routine's existing Google-data helpers and record exact windows/property/URL. Local-only records are not due. Measure only; this does not expand edit eligibility, top-page caps, cooldowns or protected-winner permissions. Update outcomes in the linked record (or `inconclusive` with a reason), not a second scheduler. Missing/conflicting data is not zero. Report deferred due reviews if the run's existing budget is exhausted.
+<!-- /decision-evidence-v1 -->
+
+The cohort follow-up above may read unchanged comparators outside the top 10 within the existing budget; it permits no page edits. Defer reviews blocked by cooldowns, locks or missing data, preserving them for a later eligible run. For the page-edit roster below, no trend detection. Each of the 10 pages is judged **on its own**. This phase decides WHICH pages get audited tonight and gathers the per-page evidence the lanes in Phase 2 need.
 
 ## 1. Classify each page
 For each of the 10 pages: **entity/topic** (what the page is about — cross-reference any release-recency data the repo tracks, e.g. `data/model-origins.ts` on sites that track model releases; newer entities are higher-signal), **archetype** (discovered from the site's own page shapes — comparison / alternatives / explainer / vertical spoke / roundup / service / tool / any site-specific family), **vertical** (may be none), and **non-Organic %** from `channel_split` (Direct + Referral + Unassigned share of sessions). Majority-non-Organic pages are **GSC-invisible winners** — the highest-priority audits, because no GSC-driven pass will ever work on them.

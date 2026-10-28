@@ -207,6 +207,23 @@ class PrimaryTests(unittest.TestCase):
   for local in [b'a\n',b'a\nchanged\n',b'b\na\n',b'a\nb',b'a\nb\n\0']:
    self.assertFalse(f.includes_published(None,entry(local),entry(b'a\nb\n')))
   self.assertFalse(f.includes_published(None,('100755',b'a\nb\nextra\n'),entry(b'a\nb\n')))
+ def test_existing_file_adjacent_insertions_preserve_published_input(self):
+  entry=lambda x:('100644',x)
+  for local in [b'a\nlocal\nremote\nz\n', b'a\nremote\nlocal\nz\n']:
+   self.assertTrue(f.includes_published(entry(b'a\nz\n'),entry(local),entry(b'a\nremote\nz\n')))
+ def test_existing_file_line_preservation_rejects_loss_and_reordering(self):
+  entry=lambda x:('100644',x)
+  for local in [b'a\nlocal\nz\n',b'a\nchanged\nz\n',b'remote\na\nz\n',b'a\nremote\nz',b'a\nremote\n\0z\n']:
+   self.assertFalse(f.includes_published(entry(b'a\nz\n'),entry(local),entry(b'a\nremote\nz\n')))
+ def test_existing_file_line_preservation_rejects_mode_and_symlink_changes(self):
+  self.assertFalse(f.includes_published(('100644',b'a\nz\n'),('100644',b'a\nremote\nlocal\nz\n'),('100755',b'a\nremote\nz\n')))
+  self.assertFalse(f.includes_published(('120000',b'a'),('120000',b'a\nremote\nlocal\nz\n'),('120000',b'a\nremote\nz\n')))
+ def test_primary_adjacent_insertions_are_current_without_mutation(self):
+  self.publish(text='one\nremote\ntwo\nthree\nfour\nfive\n')
+  self.write('a.txt','one\nlocal\nremote\ntwo\nthree\nfour\nfive\n')
+  before=self.g('status','--porcelain')
+  self.assertEqual(f.primary_check(self.root)['status'],'current')
+  self.assertEqual(self.g('status','--porcelain'),before)
  def test_cloud_receipt_handles_next_publication(self):
   self.assertEqual(f.cloud_check(self.root)['status'],'current');self.write('own.py','owned');self.publish();self.assertEqual(f.cloud_check(self.root)['missing'],['a.txt']);self.write('a.txt','published\ntwo\nthree\nfour\nfive\n');self.assertEqual(f.cloud_check(self.root)['status'],'current')
  def test_clean_behind_blocks(self):self.publish();self.assertEqual(f.primary_check(self.root)['missing'],['a.txt'])

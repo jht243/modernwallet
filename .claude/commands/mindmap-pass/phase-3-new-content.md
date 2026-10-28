@@ -165,3 +165,5 @@ The moment this phase's reviewer gate PASSES, immediately begin the next phase i
 turn. Do NOT stop or print any question that waits for a human. The `/mindmap-pass` run has
 EXACTLY ONE human stop (the Phase 0 manifest approval); this phase is not it. Phase 8 is an
 informational summary that auto-continues to the Phase 9 push.
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
