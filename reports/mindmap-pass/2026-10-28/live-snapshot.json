@@ -1,0 +1,6127 @@
+{
+  "capturedAt": "2026-10-28T17:23:08.460024+00:00",
+  "baseUrl": "https://www.themodernwallet.com",
+  "domDir": null,
+  "manifest": {
+    "author": "claude-main",
+    "canonicalBase": "https://www.themodernwallet.com",
+    "routes": [
+      {
+        "path": "/guides/adoption-credit-carryforward-refund/",
+        "expectedUpdatedDate": "2026-10-28",
+        "requiredText": [
+          "Adoption Tax Credit Refund",
+          "IR-2026-123",
+          "$5,000 per eligible child",
+          "Takeaway"
+        ],
+        "forbiddenText": [
+          "we tested",
+          "We tested",
+          "our testing"
+        ],
+        "growthFile": "evidence/adoption-credit-carryforward-refund/growth.json",
+        "evidenceFile": "evidence/adoption-credit-carryforward-refund/evidence.json"
+      },
+      {
+        "path": "/guides/2026-tax-brackets/",
+        "expectedUpdatedDate": "2026-10-28",
+        "requiredText": [
+          "adoption tax credit refund for unused carryforwards"
+        ]
+      }
+    ]
+  },
+  "routes": [
+    {
+      "path": "/guides/adoption-credit-carryforward-refund/",
+      "status": 200,
+      "fingerprint": "c5658dd1f9ca818da8d83a900cea26961cf987f81e1034a79c140ec9b4e6c4d0",
+      "semantic": {
+        "text": "ModernWallet Free Financial Calculators Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Roth vs Traditional 401(k) Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax × ModernWallet / Guides / Automatic Adoption Tax Credit Refund for Unused Carryforwards Automatic Adoption Tax Credit Refund for Unused Carryforwards By Jonathan Velez , Personal Finance Writer & Editor · Reviewed against primary sources · Updated October 28, 2026 Generally yes. If you had a 2020 to 2024 adoption credit carryforward and filed a 2025 return, the Internal Revenue Service (IRS) says it will adjust your account itself. Any adoption tax credit refund comes without an amended return. The refund is capped at $5,000 per eligible child for 2025, and it can be lower. The IRS generally sends a notice within 30 days of the adjustment. The IRS announced the automatic refunds on October 16, 2026, in news release IR-2026-123 . The announcement followed a clarification from the U.S. Department of the Treasury on how the Working Families Tax Cuts, the 2025 tax law, applies to the adoption credit. Under that interpretation, unused carryforwards from 2020 to 2024 can raise the refundable part of the credit for tax year 2025 only. Tools for this journey Tax Bracket Calculator → Will the IRS Refund an Unused Adoption Credit Carryforward? Yes, in most cases. The IRS says taxpayers who filed a 2025 return before April 15, 2026, with an unused 2020 to 2024 adoption credit carryforward generally receive the adjustment automatically. No amended return is needed, and the IRS asks taxpayers not to file one just to request this adjustment. According to the IRS questions and answers , generally no action is required. The IRS began issuing these refunds and account adjustments in late September 2026. More than 50,000 taxpayers had received refunds by the time of the October 16 announcement. The adjustment covers tax year 2025 only. Carryforwards can raise the refundable part of the 2025 credit up to $5,000 per eligible child, and the 2025 treatment does not carry into 2026. Some accounts get a later review, and some people may need to file Form 1040-X with Form 8839 , as the sections below explain. Who Qualifies for the Adoption Tax Credit Refund The IRS questions and answers list three conditions for the automatic adjustment. A taxpayer qualifies when all of these apply: You filed a 2025 Form 1040, Form 1040-SR or Form 1040-NR. You claimed, or were eligible to claim, the adoption credit on Form 8839. You had prior-year carryforwards available for 2025, and your return and account information show the refundable credit should increase. Only carryforwards from 2020 to 2024 count toward the 2025 adjustment. The IRS says carryforwards expire after five years and the oldest is used first, and carryforwards from before 2020 have expired. The non-refundable portion of the credit can be carried forward up to five years, and anything left after that is forfeited. A separate path covers people who did not claim the credit on their 2025 return. If you filed Form 8839 for any year from 2020 to 2024 and it showed a carryforward, the IRS says you may still qualify. If the IRS lacks enough information to make the adjustment, you may need to file Form 1040-X with Form 8839. How Much the Adoption Tax Credit Refund Can Be The 2025 refund ceiling is $5,000 per eligible child, according to the IRS. The amount a household receives can fall below that ceiling. The IRS says the result depends on the allowable credit, income limitations, payments and offsets. The IRS pages on this adjustment do not publish the 2025 maximum credit per child or the 2025 income phaseout amounts. They also give no formula for how much of a given carryforward becomes refundable. Without those figures, no general refund amount can be calculated from the published guidance. The IRS notice shows the amount for a specific account. The adjustment does not change adjusted gross income (AGI), taxable income or qualified adoption expenses on the 2025 return. It corrects the refundable portion of the credit. The 2026 rules work differently, and the IRS adoption credit page lists them separately. Item 2025 adjustment 2026 rule Tax year 2025 2026 Refundable cap per child $5,000 Up to $5,120 Carryforwards count toward refundable part Yes, 2020 to 2024 carryforwards No, the 2025 treatment does not carry into 2026 How to claim The IRS adjusts the account Schedule 3-A with Form 1040, plus Form 8839 For 2026, the IRS caps qualified adoption expenses at $17,670 per child, and the employer-provided benefit exclusion limit is also $17,670. The full 2026 credit applies at modified adjusted gross income (MAGI) of $265,080 or less. It is reduced across a $40,000 band ($305,080 minus $265,080) and is unavailable at MAGI of $305,080 or more. The 2026 tax brackets guide covers the separate income tax rates for that year. Refund Timing and the IRS Notice Refund timing depends on when the 2025 return was filed and on the condition of the account. The IRS says taxpayers who filed before April 15, 2026, generally receive any adjustment automatically. Returns filed under an extension are reviewed later in 2026, after processing. Accounts with identity theft indicators, freezes, dependency conflicts or other issues are also reviewed later in 2026, once the issue is resolved. The IRS expects most eligible refunds to be complete by the end of 2026. Its adoption credit page says most of these refunds will be issued automatically by December 31, 2026. The IRS generally sends a notice within 30 days of the adjustment. The notice states the amount and says whether it produced a refund or was applied to another tax or non-tax debt. An offset for another debt can absorb part or all of the money. The IRS notes that its news items may not be updated after release. Readers can verify the dates and details in the IRS news release and on the IRS adoption credit page before relying on them. How to Check Your IRS Account Where's My Refund? will not show this adjustment, according to the IRS. The IRS points taxpayers to three other places instead: The notice the IRS mails after the adjustment. The IRS Individual Online Account , which shows records, refund status and notices, and lets you make payments. A tax account transcript or a record of account transcript. If the original notice is lost, the IRS may not be able to reissue it. A copy is available through the Online Account. The IRS asks taxpayers not to call unless a notice or letter tells them to. When the notice arrives, compare it with the 2025 return and keep it with your tax records. The refundable increase it shows is the figure needed later to recompute the 2026 carryforward. When to File Form 1040-X Form 1040-X is not needed to request the adoption credit adjustment, and the IRS asks taxpayers not to file one for that purpose alone. According to the IRS questions and answers, an amended return applies in these cases: Correcting other items on the 2025 return, such as filing status, income, dependents, qualified adoption expenses, employer adoption benefits, carryforward amounts or another credit. Fixing a return where a carryforward was used as a nonrefundable credit when another listed credit, such as one on Form 5695 or Form 3800, could have been claimed instead. Disputing the adjustment, which may require Form 1040-X with Form 8839. Supplying information when the credit was not claimed in 2025 and the IRS cannot make the adjustment from 2020 to 2024 Form 8839 filings. The IRS will not automatically remove an estimated tax penalty as part of this adjustment. To request abatement, follow your penalty notice or file Form 843. Effect on the 2026 Carryforward The adjustment corrects the refundable portion of the 2025 credit, so future carryforwards may decrease. The IRS says to recalculate the 2026 carryforward in three steps: Open the Nonrefundable Adoption Credit Carryforward Worksheet (line 18) in the 2025 Form 8839 instructions. On worksheet line 8, enter your 2025 Form 8839 line 18 amount plus the refundable increase from the adjustment. Take the refundable increase from the IRS notice or your transcript. Do not enter the notice's total refund or balance due as the refundable increase. Complete the 2025 Form 8839 as issued and do not alter the form. For 2026 returns, follow the 2026 instructions, because the 2025 carryforward treatment does not carry into 2026. The 2026 refundable portion, up to $5,120 per child, is claimed on Schedule 3-A (Form 1040), with Form 8839 attached to the return. On Form 8839, Part III covers the employer-benefit exclusion and is completed before Part II, which computes the credit. Takeaway According to IR-2026-123 (October 16, 2026) and the IRS questions and answers, the IRS adjusts the account of a 2025 filer with a 2020 to 2024 carryforward. That filer claimed or was eligible for the adoption credit and needs no amended return. Any refund is capped at $5,000 per eligible child. Read together, the IRS guidance points to three groups of filers: No action: the return was filed before April 15, 2026, the credit was claimed on Form 8839, and nothing else on the return needs correcting. Wait for the notice and keep it. Later review: the return was filed under an extension, or the account has an identity theft indicator, freeze or dependency conflict. The IRS reviews these accounts later in 2026. Form 1040-X: the credit was never claimed and the IRS lacks enough information, other items on the return need correcting, or the filer disputes the adjustment. Offsets for other tax or non-tax debts can absorb part or all of a refund in any of these groups, and the notice says when that happened. This reading changes only if the IRS revises its questions and answers or issues new guidance. Once the notice arrives, use the refundable increase it shows on line 8 of the carryforward worksheet in the 2025 Form 8839 instructions to recompute the 2026 carryforward. Start by opening the IRS Individual Online Account and checking the notices and transcript for an adoption tax credit refund. Frequently asked questions Is the adoption credit refundable? Partly. For tax year 2025, the refundable portion is limited to $5,000 per eligible child, and unused 2020 to 2024 carryforwards can increase it for 2025 only. For 2026, the IRS says up to $5,120 per child is refundable and is claimed on Schedule 3-A (Form 1040). The non-refundable portion can be carried forward up to five years. Do I need to file an amended return to get the adoption credit refund? No. The IRS says taxpayers do not need to file an amended return to get the 2025 adjustment and should not file one just to request it. Form 1040-X is for correcting other items, disputing the adjustment, or supplying information when the credit was not claimed in 2025 and the IRS lacks enough detail. How much is the adoption credit refund per child? Up to $5,000 per eligible child for 2025. The IRS says the actual amount can be lower depending on the allowable credit, income limitations, payments and offsets. The IRS has not published a formula for how much of a given carryforward becomes refundable, so the IRS notice shows the amount for each account. Why did I get an IRS notice about my adoption credit? The IRS sends a notice, generally within 30 days, after it adjusts a 2025 account to apply 2020 to 2024 carryforwards to the refundable credit. The notice states the amount and whether it became a refund or was applied to another tax or non-tax debt. The IRS suggests comparing it with the 2025 return and keeping it with tax records. Will Where's My Refund show the adoption credit adjustment? No. The IRS says Where's My Refund? will not show this adjustment. The IRS points taxpayers to the IRS Individual Online Account and to a tax account transcript or record of account transcript instead. Does this apply to my 2026 return? No. The IRS says the 2025 carryforward treatment does not carry into 2026. For 2026, up to $5,120 per child is refundable and is claimed on Schedule 3-A (Form 1040) with Form 8839. The full 2026 credit applies at modified adjusted gross income (MAGI) of $265,080 or less. Sources We prioritize primary sources for rules, formulas, rates, limits, and definitions. See our calculator methodology and editorial policy . IRS: IRS has begun issuing automatic refunds to individuals who claimed adoption tax credit carryforward from prior years (IR-2026-123) IRS: Questions and answers about adoption tax credit carryforward IRS: Adoption credit IRS: About Form 8839, Qualified Adoption Expenses IRS: Individual Online Account ModernWallet Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results. 📣 Advertise With Us Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Roth vs Traditional 401(k) Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax Comparisons All comparisons 401(k) vs Roth IRA Roth vs Traditional 401(k) 529 vs Roth IRA ETF vs Mutual Fund HSA vs FSA VA Loan vs Conventional 15 vs 30-Year Mortgage Fixed vs ARM Mortgage HYSA vs Money Market Stocks vs Bonds Free Templates All templates Freelance Invoice Freelance Contract Statement of Work Retainer Agreement Mileage Log Expense Report S-Corp Tax Calculator QBI Deduction Explained LLC vs S Corp Guides & Best-of All best-of roundups First-Time Home Buyer How to Buy a Car Best 401(k) Providers Best Budgeting Apps Best Money Market Accounts Best Net Worth Trackers Best Retirement Accounts Best Mileage Tracker Apps Best Freelance Accounting Software Best Invoicing Apps © 2026 ModernWallet · For educational purposes — not financial advice. Guides · About · Contact · Editorial Policy · Methodology · Privacy Policy · Powered by Layer3Labs Some links on this site are referral or affiliate links, including our Robinhood referral link — we may earn a reward or commission at no cost to you. This never affects our rankings or editorial coverage.",
+        "h1": "Automatic Adoption Tax Credit Refund for Unused Carryforwards",
+        "title": "Adoption Tax Credit Refund for 2020 to 2024 Carryforwards",
+        "canonical": "https://www.themodernwallet.com/guides/adoption-credit-carryforward-refund/",
+        "meta": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "generator": "Astro v4.16.19",
+          "description": "The Internal Revenue Service is refunding unused 2020 to 2024 adoption credit carryforwards, up to $5,000 per child, with no amended return needed.",
+          "og:type": "website",
+          "og:site_name": "ModernWallet",
+          "og:title": "Adoption Tax Credit Refund for 2020 to 2024 Carryforwards",
+          "og:description": "The Internal Revenue Service is refunding unused 2020 to 2024 adoption credit carryforwards, up to $5,000 per child, with no amended return needed.",
+          "og:url": "https://www.themodernwallet.com/guides/adoption-credit-carryforward-refund/",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "Adoption Tax Credit Refund for 2020 to 2024 Carryforwards",
+          "twitter:description": "The Internal Revenue Service is refunding unused 2020 to 2024 adoption credit carryforwards, up to $5,000 per child, with no amended return needed."
+        },
+        "links": [
+          "/",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/",
+          "/guides/",
+          "/about/",
+          "https://www.irs.gov/credits-deductions/individuals/adoption-credit",
+          "https://www.irs.gov/newsroom/irs-has-begun-issuing-automatic-refunds-to-individuals-who-claimed-adoption-tax-credit-carryforward-from-prior-years",
+          "https://home.treasury.gov/",
+          "/tax-bracket-calculator/",
+          "https://www.irs.gov/faqs/questions-and-answers-about-adoption-tax-credit-carryforward",
+          "https://www.irs.gov/forms-pubs/about-form-8839",
+          "/guides/2026-tax-brackets/",
+          "https://www.irs.gov/newsroom/irs-has-begun-issuing-automatic-refunds-to-individuals-who-claimed-adoption-tax-credit-carryforward-from-prior-years",
+          "https://www.irs.gov/credits-deductions/individuals/adoption-credit",
+          "https://www.irs.gov/individuals/online-account",
+          "https://www.irs.gov/forms-pubs/about-form-8839",
+          "https://www.irs.gov/individuals/online-account",
+          "/methodology/",
+          "/editorial-policy/",
+          "https://www.irs.gov/newsroom/irs-has-begun-issuing-automatic-refunds-to-individuals-who-claimed-adoption-tax-credit-carryforward-from-prior-years",
+          "https://www.irs.gov/faqs/questions-and-answers-about-adoption-tax-credit-carryforward",
+          "https://www.irs.gov/credits-deductions/individuals/adoption-credit",
+          "https://www.irs.gov/forms-pubs/about-form-8839",
+          "https://www.irs.gov/individuals/online-account",
+          "/",
+          "/sponsor",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/compare/",
+          "/compare/401k-vs-roth-ira/",
+          "/compare/roth-401k-vs-traditional-401k/",
+          "/compare/529-vs-roth-ira/",
+          "/compare/etf-vs-mutual-fund/",
+          "/compare/hsa-vs-fsa/",
+          "/compare/va-loan-vs-conventional-loan/",
+          "/compare/15-year-vs-30-year-mortgage/",
+          "/compare/fixed-vs-arm-mortgage/",
+          "/compare/hysa-vs-money-market/",
+          "/compare/stocks-vs-bonds/",
+          "/templates/",
+          "/templates/freelance-invoice-template/",
+          "/templates/freelance-contract-template/",
+          "/templates/statement-of-work-template/",
+          "/templates/retainer-agreement-template/",
+          "/templates/mileage-log-template/",
+          "/templates/expense-report-template/",
+          "/s-corp-tax/",
+          "/guides/qbi-deduction-explained/",
+          "/compare/llc-vs-s-corp/",
+          "/roundup/",
+          "/guides/first-time-home-buyer-guide/",
+          "/guides/how-to-buy-a-car/",
+          "/roundup/best-401k-providers-for-small-business/",
+          "/roundup/best-budgeting-apps-for-couples/",
+          "/roundup/best-money-market-accounts/",
+          "/roundup/best-net-worth-tracker/",
+          "/roundup/best-retirement-accounts-for-self-employed/",
+          "/roundup/best-mileage-tracker-apps/",
+          "/roundup/best-accounting-software-for-freelancers/",
+          "/roundup/best-invoicing-apps-for-freelancers/",
+          "/guides/",
+          "/about/",
+          "/contact/",
+          "/editorial-policy/",
+          "/methodology/",
+          "/privacy-policy/",
+          "https://www.layer3labs.io"
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "ModernWallet",
+            "url": "https://www.themodernwallet.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results.",
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "Layer3Labs",
+              "url": "https://www.layer3labs.io"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.themodernwallet.com/#website",
+            "url": "https://www.themodernwallet.com/",
+            "name": "ModernWallet",
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results."
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ModernWallet",
+                "item": "https://www.themodernwallet.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Guides",
+                "item": "https://www.themodernwallet.com/guides/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Automatic Adoption Tax Credit Refund for Unused Carryforwards",
+                "item": "https://www.themodernwallet.com/guides/adoption-credit-carryforward-refund/"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is the adoption credit refundable?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Partly. For tax year 2025, the refundable portion is limited to $5,000 per eligible child, and unused 2020 to 2024 carryforwards can increase it for 2025 only. For 2026, the IRS says up to $5,120 per child is refundable and is claimed on Schedule 3-A (Form 1040). The non-refundable portion can be carried forward up to five years."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need to file an amended return to get the adoption credit refund?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. The IRS says taxpayers do not need to file an amended return to get the 2025 adjustment and should not file one just to request it. Form 1040-X is for correcting other items, disputing the adjustment, or supplying information when the credit was not claimed in 2025 and the IRS lacks enough detail."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much is the adoption credit refund per child?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Up to $5,000 per eligible child for 2025. The IRS says the actual amount can be lower depending on the allowable credit, income limitations, payments and offsets. The IRS has not published a formula for how much of a given carryforward becomes refundable, so the IRS notice shows the amount for each account."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why did I get an IRS notice about my adoption credit?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The IRS sends a notice, generally within 30 days, after it adjusts a 2025 account to apply 2020 to 2024 carryforwards to the refundable credit. The notice states the amount and whether it became a refund or was applied to another tax or non-tax debt. The IRS suggests comparing it with the 2025 return and keeping it with tax records."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will Where's My Refund show the adoption credit adjustment?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. The IRS says Where's My Refund? will not show this adjustment. The IRS points taxpayers to the IRS Individual Online Account and to a tax account transcript or record of account transcript instead."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does this apply to my 2026 return?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. The IRS says the 2025 carryforward treatment does not carry into 2026. For 2026, up to $5,120 per child is refundable and is claimed on Schedule 3-A (Form 1040) with Form 8839. The full 2026 credit applies at modified adjusted gross income (MAGI) of $265,080 or less."
+                }
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jonathan Velez",
+            "url": "https://www.themodernwallet.com/about/",
+            "jobTitle": "Personal Finance Writer & Editor",
+            "description": "Jonathan Velez writes and edits ModernWallet's personal-finance content, focused on loans, interest, and debt payoff. Every calculator page is reviewed against primary sources like the CFPB and Federal Reserve.",
+            "knowsAbout": [
+              "Auto loans",
+              "Loan amortization",
+              "Interest and APR",
+              "Debt payoff strategies",
+              "Personal finance"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Automatic Adoption Tax Credit Refund for Unused Carryforwards",
+            "description": "The Internal Revenue Service is refunding unused 2020 to 2024 adoption credit carryforwards, up to $5,000 per child, with no amended return needed.",
+            "url": "https://www.themodernwallet.com/guides/adoption-credit-carryforward-refund/",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "datePublished": "2026-10-28",
+            "dateModified": "2026-10-28",
+            "author": {
+              "@type": "Person",
+              "name": "Jonathan Velez",
+              "url": "https://www.themodernwallet.com/about/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.themodernwallet.com/favicon.svg"
+              }
+            },
+            "citation": [
+              {
+                "@type": "CreativeWork",
+                "name": "IRS: IRS has begun issuing automatic refunds to individuals who claimed adoption tax credit carryforward from prior years (IR-2026-123)",
+                "url": "https://www.irs.gov/newsroom/irs-has-begun-issuing-automatic-refunds-to-individuals-who-claimed-adoption-tax-credit-carryforward-from-prior-years"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS: Questions and answers about adoption tax credit carryforward",
+                "url": "https://www.irs.gov/faqs/questions-and-answers-about-adoption-tax-credit-carryforward"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS: Adoption credit",
+                "url": "https://www.irs.gov/credits-deductions/individuals/adoption-credit"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS: About Form 8839, Qualified Adoption Expenses",
+                "url": "https://www.irs.gov/forms-pubs/about-form-8839"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS: Individual Online Account",
+                "url": "https://www.irs.gov/individuals/online-account"
+              }
+            ]
+          }
+        ],
+        "structure": [
+          [
+            "html",
+            {}
+          ],
+          [
+            "body",
+            {}
+          ],
+          [
+            "header",
+            {
+              "class": "site-header"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "hdr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "brand-group"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "26",
+              "height": "26",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "19.8",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "22",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-name"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-divider",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-tagline"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "primary-nav",
+              "aria-label": "Primary"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-dd"
+            }
+          ],
+          [
+            "button",
+            {
+              "type": "button",
+              "class": "nav-trigger"
+            }
+          ],
+          [
+            "svg",
+            {
+              "class": "chev",
+              "viewbox": "0 0 24 24",
+              "width": "16",
+              "height": "16",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "polyline",
+            {
+              "points": "6 9 12 15 18 9"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-menu",
+              "role": "menu"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "menu-all",
+              "href": "/calculators/",
+              "role": "menuitem"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "menu-cols"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__toggle",
+              "type": "button",
+              "aria-label": "Search"
+            }
+          ],
+          [
+            "svg",
+            {
+              "width": "18",
+              "height": "18",
+              "viewbox": "0 0 24 24",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "11",
+              "cy": "11",
+              "r": "7"
+            }
+          ],
+          [
+            "path",
+            {
+              "d": "m20 20-3.5-3.5"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__panel",
+              "hidden": null
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__box"
+            }
+          ],
+          [
+            "input",
+            {
+              "class": "ns__input",
+              "type": "search",
+              "placeholder": "Search calculators, guides…",
+              "aria-label": "Search the site",
+              "role": "combobox"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__close",
+              "type": "button",
+              "aria-label": "Close search"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__results",
+              "role": "listbox"
+            }
+          ],
+          [
+            "main",
+            {
+              "class": "page"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "crumb",
+              "aria-label": "Breadcrumb"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "crumb-current"
+            }
+          ],
+          [
+            "header",
+            {
+              "class": "hero"
+            }
+          ],
+          [
+            "h1",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "byline"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "by"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "sep",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "rev"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/credits-deductions/individuals/adoption-credit"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/newsroom/irs-has-begun-issuing-automatic-refunds-to-individuals-who-claimed-adoption-tax-credit-carryforward-from-prior-years"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://home.treasury.gov/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "tools",
+              "aria-label": "Tools for this journey"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "tools-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "tool-pills"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "tool-pill",
+              "href": "/tax-bracket-calculator/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "arrow",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/faqs/questions-and-answers-about-adoption-tax-credit-carryforward"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/forms-pubs/about-form-8839"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ul",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "table-wrap"
+            }
+          ],
+          [
+            "table",
+            {
+              "class": "prose-table"
+            }
+          ],
+          [
+            "thead",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "tbody",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/2026-tax-brackets/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/newsroom/irs-has-begun-issuing-automatic-refunds-to-individuals-who-claimed-adoption-tax-credit-carryforward-from-prior-years"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/credits-deductions/individuals/adoption-credit"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ul",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/individuals/online-account"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ul",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ol",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ul",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/forms-pubs/about-form-8839"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/individuals/online-account"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "faqs"
+            }
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section sources"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "source-note"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/newsroom/irs-has-begun-issuing-automatic-refunds-to-individuals-who-claimed-adoption-tax-credit-carryforward-from-prior-years"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/faqs/questions-and-answers-about-adoption-tax-credit-carryforward"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/credits-deductions/individuals/adoption-credit"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/forms-pubs/about-form-8839"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/individuals/online-account"
+            }
+          ],
+          [
+            "footer",
+            {
+              "class": "site-footer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-left"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "22",
+              "height": "22",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "tagline"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "sponsor-pill",
+              "href": "/sponsor"
+            }
+          ],
+          [
+            "span",
+            {
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-navs"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer calculators"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/calculators/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer comparisons"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/401k-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/roth-401k-vs-traditional-401k/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/529-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/etf-vs-mutual-fund/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hsa-vs-fsa/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/va-loan-vs-conventional-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/15-year-vs-30-year-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/fixed-vs-arm-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hysa-vs-money-market/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/stocks-vs-bonds/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer templates"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-invoice-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-contract-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/statement-of-work-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/retainer-agreement-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/mileage-log-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/expense-report-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/qbi-deduction-explained/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/llc-vs-s-corp/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer guides"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/first-time-home-buyer-guide/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/how-to-buy-a-car/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-401k-providers-for-small-business/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-budgeting-apps-for-couples/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-money-market-accounts/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-net-worth-tracker/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-retirement-accounts-for-self-employed/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-mileage-tracker-apps/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-accounting-software-for-freelancers/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-invoicing-apps-for-freelancers/"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-legal"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "legal-left"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "legal-right"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/contact/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/privacy-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.layer3labs.io"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-disclosure"
+            }
+          ],
+          [
+            "p",
+            {}
+          ]
+        ]
+      },
+      "failures": [],
+      "htmlSha256": "1dc2689c8957f572bfcc78403b0f3b186baa275a3c74f04516cd1ca77cdde3c2",
+      "htmlFile": "reports/mindmap-pass/2026-10-28/live-snapshot/f6bb306a5d50552e6dfb.html",
+      "textFile": "reports/mindmap-pass/2026-10-28/live-snapshot/f6bb306a5d50552e6dfb.txt",
+      "textSha256": "d0f7e4b830ca1eb1bd2e44983a5154eade05e8ef4e61c2213045fe8e26d4ba12"
+    },
+    {
+      "path": "/guides/2026-tax-brackets/",
+      "status": 200,
+      "fingerprint": "06692ba896f2070f103b12912e6acdf6df0595fd397cce1458ac9d790f9324c0",
+      "semantic": {
+        "text": "ModernWallet Free Financial Calculators Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Roth vs Traditional 401(k) Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax × ModernWallet / Guides / 2026 Tax Brackets and Standard Deduction 2026 Tax Brackets and Standard Deduction By Jonathan Velez , Personal Finance Writer & Editor · Reviewed against primary sources · Updated October 28, 2026 The 2026 tax brackets are seven federal income tax rates: 10%, 12%, 22%, 24%, 32%, 35% and 37%. Every threshold on this page comes from Internal Revenue Service (IRS) Revenue Procedure 2025-32 . For a single filer, the 10% rate covers the first $12,400 of taxable income and the 37% rate starts above $640,600. These brackets set the tax for the 2026 tax year, which you report on the return filed in 2027. Brackets for the year after are on our projected 2027 tax brackets page. Tools for this journey Tax Bracket Calculator → 2026 Federal Tax Brackets by Filing Status The 2026 federal tax brackets use the same seven rates for every filing status. The income where each rate starts depends on your status, and every figure below is taxable income, meaning income after deductions. The IRS announced these thresholds in its release on the tax year 2026 inflation adjustments . Single Rate Taxable income 10% Up to $12,400 12% Over $12,400 to $50,400 22% Over $50,400 to $105,700 24% Over $105,700 to $201,775 32% Over $201,775 to $256,225 35% Over $256,225 to $640,600 37% Over $640,600 Married filing jointly Rate Taxable income 10% Up to $24,800 12% Over $24,800 to $100,800 22% Over $100,800 to $211,400 24% Over $211,400 to $403,550 32% Over $403,550 to $512,450 35% Over $512,450 to $768,700 37% Over $768,700 Head of household Rate Taxable income 10% Up to $17,700 12% Over $17,700 to $67,450 22% Over $67,450 to $105,700 24% Over $105,700 to $201,750 32% Over $201,750 to $256,200 35% Over $256,200 to $640,600 37% Over $640,600 Married filing separately Rate Taxable income 10% Up to $12,400 12% Over $12,400 to $50,400 22% Over $50,400 to $105,700 24% Over $105,700 to $201,775 32% Over $201,775 to $256,225 35% Over $256,225 to $384,350 37% Over $384,350 In the new tax brackets for 2026, every joint threshold up to the start of the 35% band is exactly double the single figure. For example, $12,400 × 2 = $24,800 and $256,225 × 2 = $512,450. The 37% threshold, and the end of the 35% band, break that doubling. Twice the single threshold would be $1,281,200, but the joint 37% rate starts at $768,700, which is $512,500 lower. Married filing separately follows the single table until the 35% band, which stops at $384,350, exactly half of the $768,700 joint threshold. Head of household filers get a wider 10% band than single filers: $17,700 versus $12,400. The two tables meet at $105,700 for the 22% band and at $640,600 for the 37% rate. In the middle, the head of household 24% band ends at $201,750, which is $25 below the single figure of $201,775, and the 32% band ends at $256,200, $25 below the single figure of $256,225. 2026 Standard Deduction by Filing Status The 2026 standard deduction is $16,100 for single filers, $32,200 for married couples filing jointly, $24,150 for heads of household, and $16,100 for married couples filing separately. Filing status 2026 standard deduction Single $16,100 Married filing jointly $32,200 Head of household $24,150 Married filing separately $16,100 Subtract the deduction from your income to get taxable income, which is the number the bracket tables use. The joint deduction is double the single amount: $16,100 × 2 = $32,200. Adding the deduction to the 10% band shows how much income is either untaxed or taxed at 10%. For a single filer, that is $16,100 + $12,400 = $28,500. For a joint return, it is $32,200 + $24,800 = $57,000, and for a head of household it is $24,150 + $17,700 = $41,850. A single filer with $16,100 of income or less has taxable income of zero after the standard deduction. How the 2026 Tax Brackets Are Applied Each 2026 rate applies only to the dollars inside its band, so a single filer with $85,000 of income owes $9,870 in federal income tax from the brackets. Start with the $85,000 and subtract the $16,100 standard deduction. That leaves $68,900 of taxable income. Next, split the $68,900 across the single filer bands: Band Dollars in band Rate Tax Up to $12,400 $12,400 10% $1,240 Over $12,400 to $50,400 $38,000 12% $4,560 Over $50,400 to $68,900 $18,500 22% $4,070 Total $68,900 $9,870 The IRS tables reach the same answer with a shortcut. For a single filer with taxable income over $50,400 and up to $105,700, tax is $5,800 plus 22% of the amount over $50,400. Here that is $5,800 + 22% × ($68,900 − $50,400) = $5,800 + $4,070 = $9,870. The $5,800 is the tax on the first $50,400, already added up for you: $1,240 + $4,560 = $5,800. For more, read our guide on how much tax you will pay . Marginal Rate Versus Effective Rate Your marginal rate is the rate on your last dollar of taxable income, and your effective rate is your total tax divided by your income. In the $85,000 example, the marginal rate is 22% because the last $18,500 falls in the 22% band. The effective rate is far lower. Dividing $9,870 by $85,000 of income gives 11.6%, and dividing $9,870 by $68,900 of taxable income gives 14.3%. The gap comes from how the dollars are spread across the 2026 marginal tax rates: $16,100 is covered by the standard deduction. $12,400 is taxed at 10%. $38,000 is taxed at 12%. $18,500 is taxed at 22%. Those four amounts add up to the full $85,000. Only about a fifth of this filer's income ($18,500 of $85,000) is taxed at the 22% rate. A raise never lowers what you keep after federal income tax, because a higher rate applies only to the dollars above its threshold. If this filer's taxable income climbed past $105,700, only the dollars over $105,700 would be taxed at 24%. Each extra $100 in that band would add $24 of tax and leave $76, and the first $105,700 would be taxed exactly as before. Which 2026 Tax Bracket You Are In Your 2026 tax bracket is the band that holds your last dollar of taxable income. Three steps find it: Pick the table for your filing status. Subtract your deduction from your income. The standard deduction amounts are in the table above. Find the band your taxable income falls in. That band's rate is your marginal rate. Take a head of household with $70,000 of income. Subtracting the $24,150 standard deduction leaves $45,850 of taxable income, which falls in the 12% band (over $17,700 to $67,450). The same $70,000 for a single filer works out differently. Subtracting $16,100 leaves $53,900, which is over $50,400 and lands in the 22% band. Filing status alone moves this income from one bracket to the next. To skip the arithmetic, enter your income and filing status in our tax bracket calculator . What the 2026 Tax Brackets Leave Out The bracket tables on this page do not cover capital gains rates, tax credits, payroll tax or state income tax. The $9,870 in the worked example is federal income tax from the brackets alone, before any of those items. If part of your income comes from selling investments, read our comparison of ordinary income vs capital gains tax rates . If you are working out tax for a trust, see our guide to trust tax rates . Credits sit outside the brackets. The adoption credit, for example, has a 2025 refund adjustment, covered in our guide to the adoption tax credit refund for unused carryforwards . To place your own income in the 2026 tax brackets, enter your filing status and income in our tax bracket calculator . Frequently asked questions What are the 2026 federal tax brackets? The 2026 federal tax brackets are 10%, 12%, 22%, 24%, 32%, 35% and 37%. For a single filer, 10% applies up to $12,400 of taxable income and 37% applies above $640,600. Married couples filing jointly reach the 37% rate above $768,700. What is the standard deduction for 2026? The 2026 standard deduction is $16,100 for single filers and married couples filing separately, $32,200 for married couples filing jointly, and $24,150 for heads of household. Subtract it from your income to get the taxable income the brackets use. Do the 2026 brackets apply to the return I file in 2026? No. The 2026 brackets apply to the 2026 tax year, which you report on the return filed in 2027. The return filed in 2026 covers tax year 2025. If I move into a higher bracket, is all my income taxed at that rate? No. Each rate applies only to the dollars inside its band. A single filer with $68,900 of taxable income pays 22% only on the $18,500 above $50,400, and the rest is taxed at 10% and 12%. How do I find my tax bracket? Subtract your deduction from your income, then find the band your taxable income falls in on the table for your filing status. Our tax bracket calculator runs the same steps for your own numbers. Where can I check the official numbers? The IRS publishes the 2026 thresholds and standard deduction in tables 1 to 4 of Revenue Procedure 2025-32 . The same figures appear in the IRS newsroom release on the tax year 2026 inflation adjustments . Sources We prioritize primary sources for rules, formulas, rates, limits, and definitions. See our calculator methodology and editorial policy . IRS Revenue Procedure 2025-32 (2026 inflation adjustments) IRS: Tax inflation adjustments for tax year 2026 ModernWallet Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results. 📣 Advertise With Us Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Roth vs Traditional 401(k) Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax Comparisons All comparisons 401(k) vs Roth IRA Roth vs Traditional 401(k) 529 vs Roth IRA ETF vs Mutual Fund HSA vs FSA VA Loan vs Conventional 15 vs 30-Year Mortgage Fixed vs ARM Mortgage HYSA vs Money Market Stocks vs Bonds Free Templates All templates Freelance Invoice Freelance Contract Statement of Work Retainer Agreement Mileage Log Expense Report S-Corp Tax Calculator QBI Deduction Explained LLC vs S Corp Guides & Best-of All best-of roundups First-Time Home Buyer How to Buy a Car Best 401(k) Providers Best Budgeting Apps Best Money Market Accounts Best Net Worth Trackers Best Retirement Accounts Best Mileage Tracker Apps Best Freelance Accounting Software Best Invoicing Apps © 2026 ModernWallet · For educational purposes — not financial advice. Guides · About · Contact · Editorial Policy · Methodology · Privacy Policy · Powered by Layer3Labs Some links on this site are referral or affiliate links, including our Robinhood referral link — we may earn a reward or commission at no cost to you. This never affects our rankings or editorial coverage.",
+        "h1": "2026 Tax Brackets and Standard Deduction",
+        "title": "2026 Tax Brackets by Filing Status and Standard Deduction",
+        "canonical": "https://www.themodernwallet.com/guides/2026-tax-brackets/",
+        "meta": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "generator": "Astro v4.16.19",
+          "description": "The 2026 tax brackets run from 10% to 37%. See thresholds for all four filing statuses, the 2026 standard deduction, and a worked $85,000 example.",
+          "og:type": "website",
+          "og:site_name": "ModernWallet",
+          "og:title": "2026 Tax Brackets by Filing Status and Standard Deduction",
+          "og:description": "The 2026 tax brackets run from 10% to 37%. See thresholds for all four filing statuses, the 2026 standard deduction, and a worked $85,000 example.",
+          "og:url": "https://www.themodernwallet.com/guides/2026-tax-brackets/",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "2026 Tax Brackets by Filing Status and Standard Deduction",
+          "twitter:description": "The 2026 tax brackets run from 10% to 37%. See thresholds for all four filing statuses, the 2026 standard deduction, and a worked $85,000 example."
+        },
+        "links": [
+          "/",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/",
+          "/guides/",
+          "/about/",
+          "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+          "/guides/2027-tax-brackets-projected/",
+          "/tax-bracket-calculator/",
+          "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+          "/guides/how-much-tax-will-i-pay/",
+          "/tax-bracket-calculator/",
+          "/compare/ordinary-income-vs-capital-gains-tax/",
+          "/guides/trust-tax-rates-explained/",
+          "/guides/adoption-credit-carryforward-refund/",
+          "/tax-bracket-calculator/",
+          "/tax-bracket-calculator/",
+          "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+          "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+          "/methodology/",
+          "/editorial-policy/",
+          "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+          "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+          "/",
+          "/sponsor",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/compare/",
+          "/compare/401k-vs-roth-ira/",
+          "/compare/roth-401k-vs-traditional-401k/",
+          "/compare/529-vs-roth-ira/",
+          "/compare/etf-vs-mutual-fund/",
+          "/compare/hsa-vs-fsa/",
+          "/compare/va-loan-vs-conventional-loan/",
+          "/compare/15-year-vs-30-year-mortgage/",
+          "/compare/fixed-vs-arm-mortgage/",
+          "/compare/hysa-vs-money-market/",
+          "/compare/stocks-vs-bonds/",
+          "/templates/",
+          "/templates/freelance-invoice-template/",
+          "/templates/freelance-contract-template/",
+          "/templates/statement-of-work-template/",
+          "/templates/retainer-agreement-template/",
+          "/templates/mileage-log-template/",
+          "/templates/expense-report-template/",
+          "/s-corp-tax/",
+          "/guides/qbi-deduction-explained/",
+          "/compare/llc-vs-s-corp/",
+          "/roundup/",
+          "/guides/first-time-home-buyer-guide/",
+          "/guides/how-to-buy-a-car/",
+          "/roundup/best-401k-providers-for-small-business/",
+          "/roundup/best-budgeting-apps-for-couples/",
+          "/roundup/best-money-market-accounts/",
+          "/roundup/best-net-worth-tracker/",
+          "/roundup/best-retirement-accounts-for-self-employed/",
+          "/roundup/best-mileage-tracker-apps/",
+          "/roundup/best-accounting-software-for-freelancers/",
+          "/roundup/best-invoicing-apps-for-freelancers/",
+          "/guides/",
+          "/about/",
+          "/contact/",
+          "/editorial-policy/",
+          "/methodology/",
+          "/privacy-policy/",
+          "https://www.layer3labs.io"
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "ModernWallet",
+            "url": "https://www.themodernwallet.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results.",
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "Layer3Labs",
+              "url": "https://www.layer3labs.io"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.themodernwallet.com/#website",
+            "url": "https://www.themodernwallet.com/",
+            "name": "ModernWallet",
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results."
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ModernWallet",
+                "item": "https://www.themodernwallet.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Guides",
+                "item": "https://www.themodernwallet.com/guides/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "2026 Tax Brackets and Standard Deduction",
+                "item": "https://www.themodernwallet.com/guides/2026-tax-brackets/"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What are the 2026 federal tax brackets?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The 2026 federal tax brackets are 10%, 12%, 22%, 24%, 32%, 35% and 37%. For a single filer, 10% applies up to $12,400 of taxable income and 37% applies above $640,600. Married couples filing jointly reach the 37% rate above $768,700."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the standard deduction for 2026?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The 2026 standard deduction is $16,100 for single filers and married couples filing separately, $32,200 for married couples filing jointly, and $24,150 for heads of household. Subtract it from your income to get the taxable income the brackets use."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do the 2026 brackets apply to the return I file in 2026?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. The 2026 brackets apply to the 2026 tax year, which you report on the return filed in 2027. The return filed in 2026 covers tax year 2025."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "If I move into a higher bracket, is all my income taxed at that rate?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Each rate applies only to the dollars inside its band. A single filer with $68,900 of taxable income pays 22% only on the $18,500 above $50,400, and the rest is taxed at 10% and 12%."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I find my tax bracket?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Subtract your deduction from your income, then find the band your taxable income falls in on the table for your filing status. Our tax bracket calculator runs the same steps for your own numbers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I check the official numbers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The IRS publishes the 2026 thresholds and standard deduction in tables 1 to 4 of Revenue Procedure 2025-32. The same figures appear in the IRS newsroom release on the tax year 2026 inflation adjustments."
+                }
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jonathan Velez",
+            "url": "https://www.themodernwallet.com/about/",
+            "jobTitle": "Personal Finance Writer & Editor",
+            "description": "Jonathan Velez writes and edits ModernWallet's personal-finance content, focused on loans, interest, and debt payoff. Every calculator page is reviewed against primary sources like the CFPB and Federal Reserve.",
+            "knowsAbout": [
+              "Auto loans",
+              "Loan amortization",
+              "Interest and APR",
+              "Debt payoff strategies",
+              "Personal finance"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "2026 Tax Brackets and Standard Deduction",
+            "description": "The 2026 tax brackets run from 10% to 37%. See thresholds for all four filing statuses, the 2026 standard deduction, and a worked $85,000 example.",
+            "url": "https://www.themodernwallet.com/guides/2026-tax-brackets/",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "datePublished": "2026-10-28",
+            "dateModified": "2026-10-28",
+            "author": {
+              "@type": "Person",
+              "name": "Jonathan Velez",
+              "url": "https://www.themodernwallet.com/about/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.themodernwallet.com/favicon.svg"
+              }
+            },
+            "citation": [
+              {
+                "@type": "CreativeWork",
+                "name": "IRS Revenue Procedure 2025-32 (2026 inflation adjustments)",
+                "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS: Tax inflation adjustments for tax year 2026",
+                "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+              }
+            ]
+          }
+        ],
+        "structure": [
+          [
+            "html",
+            {}
+          ],
+          [
+            "body",
+            {}
+          ],
+          [
+            "header",
+            {
+              "class": "site-header"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "hdr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "brand-group"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "26",
+              "height": "26",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "19.8",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "22",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-name"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-divider",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-tagline"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "primary-nav",
+              "aria-label": "Primary"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-dd"
+            }
+          ],
+          [
+            "button",
+            {
+              "type": "button",
+              "class": "nav-trigger"
+            }
+          ],
+          [
+            "svg",
+            {
+              "class": "chev",
+              "viewbox": "0 0 24 24",
+              "width": "16",
+              "height": "16",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "polyline",
+            {
+              "points": "6 9 12 15 18 9"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-menu",
+              "role": "menu"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "menu-all",
+              "href": "/calculators/",
+              "role": "menuitem"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "menu-cols"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__toggle",
+              "type": "button",
+              "aria-label": "Search"
+            }
+          ],
+          [
+            "svg",
+            {
+              "width": "18",
+              "height": "18",
+              "viewbox": "0 0 24 24",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "11",
+              "cy": "11",
+              "r": "7"
+            }
+          ],
+          [
+            "path",
+            {
+              "d": "m20 20-3.5-3.5"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__panel",
+              "hidden": null
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__box"
+            }
+          ],
+          [
+            "input",
+            {
+              "class": "ns__input",
+              "type": "search",
+              "placeholder": "Search calculators, guides…",
+              "aria-label": "Search the site",
+              "role": "combobox"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__close",
+              "type": "button",
+              "aria-label": "Close search"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__results",
+              "role": "listbox"
+            }
+          ],
+          [
+            "main",
+            {
+              "class": "page"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "crumb",
+              "aria-label": "Breadcrumb"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "crumb-current"
+            }
+          ],
+          [
+            "header",
+            {
+              "class": "hero"
+            }
+          ],
+          [
+            "h1",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "byline"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "by"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "sep",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "rev"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/2027-tax-brackets-projected/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "tools",
+              "aria-label": "Tools for this journey"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "tools-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "tool-pills"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "tool-pill",
+              "href": "/tax-bracket-calculator/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "arrow",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "table-wrap"
+            }
+          ],
+          [
+            "table",
+            {
+              "class": "prose-table"
+            }
+          ],
+          [
+            "thead",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "tbody",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "table-wrap"
+            }
+          ],
+          [
+            "table",
+            {
+              "class": "prose-table"
+            }
+          ],
+          [
+            "thead",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "tbody",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "table-wrap"
+            }
+          ],
+          [
+            "table",
+            {
+              "class": "prose-table"
+            }
+          ],
+          [
+            "thead",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "tbody",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "table-wrap"
+            }
+          ],
+          [
+            "table",
+            {
+              "class": "prose-table"
+            }
+          ],
+          [
+            "thead",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "tbody",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "table-wrap"
+            }
+          ],
+          [
+            "table",
+            {
+              "class": "prose-table"
+            }
+          ],
+          [
+            "thead",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "tbody",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "table-wrap"
+            }
+          ],
+          [
+            "table",
+            {
+              "class": "prose-table"
+            }
+          ],
+          [
+            "thead",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "tbody",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/how-much-tax-will-i-pay/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ul",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ol",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/ordinary-income-vs-capital-gains-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/trust-tax-rates-explained/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/adoption-credit-carryforward-refund/"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "faqs"
+            }
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/"
+            }
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section sources"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "source-note"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+            }
+          ],
+          [
+            "footer",
+            {
+              "class": "site-footer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-left"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "22",
+              "height": "22",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "tagline"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "sponsor-pill",
+              "href": "/sponsor"
+            }
+          ],
+          [
+            "span",
+            {
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-navs"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer calculators"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/calculators/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer comparisons"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/401k-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/roth-401k-vs-traditional-401k/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/529-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/etf-vs-mutual-fund/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hsa-vs-fsa/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/va-loan-vs-conventional-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/15-year-vs-30-year-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/fixed-vs-arm-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hysa-vs-money-market/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/stocks-vs-bonds/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer templates"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-invoice-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-contract-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/statement-of-work-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/retainer-agreement-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/mileage-log-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/expense-report-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/qbi-deduction-explained/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/llc-vs-s-corp/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer guides"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/first-time-home-buyer-guide/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/how-to-buy-a-car/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-401k-providers-for-small-business/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-budgeting-apps-for-couples/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-money-market-accounts/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-net-worth-tracker/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-retirement-accounts-for-self-employed/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-mileage-tracker-apps/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-accounting-software-for-freelancers/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-invoicing-apps-for-freelancers/"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-legal"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "legal-left"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "legal-right"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/contact/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/privacy-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.layer3labs.io"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-disclosure"
+            }
+          ],
+          [
+            "p",
+            {}
+          ]
+        ]
+      },
+      "failures": [],
+      "htmlSha256": "b66bf9a515097fdd28f4d3ba7e0800a6823d978c97b13f8d681df5048e82ef7a",
+      "htmlFile": "reports/mindmap-pass/2026-10-28/live-snapshot/77c1b54f5872e0ca22aa.html",
+      "textFile": "reports/mindmap-pass/2026-10-28/live-snapshot/77c1b54f5872e0ca22aa.txt",
+      "textSha256": "adf422daab9d4604868000c593a699eb1c7aa1df678bd0c099e70bda82ffc30f"
+    }
+  ],
+  "snapshotSha256": "5994897c79ab6bc025adb3378d35d3e27cdc425a7d0a829a71b0194284a01b99"
+}
