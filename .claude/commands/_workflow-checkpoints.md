@@ -4,12 +4,12 @@ These are substeps of the existing workflow, not new phases or human gates. Pres
 
 ## Startup and complete reading
 
-Run `bash .claude/tools/workflow-start.sh` directly as a standalone command (add `--cloud` in cloud). Inspect its actual exit status. Never pipe it through `tail`, `head`, `tee` or another command, chain past failure, or treat a checkbox as proof. The wrapper's internal pipefail cannot protect its caller's pipeline.
+Run `bash .claude/tools/workflow-start.sh` directly as a standalone command (add `--cloud` in cloud). Inspect its actual exit status. Never pipe it through `tail`, `head`, `tee` or another command, chain past failure, or treat a checkbox as proof. The wrapper's internal pipefail cannot protect its caller's pipeline. Startup returns a fresh `runId` after verification. Pass that exact ID via `--run-id <runId>` to subsequent startup checks and every `workflow-preflight.py prepare` in this same routine. Never reuse a previous routine's ID, including when starting another routine in the same chat. Runners may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently in their environment. For the legacy standards loader, use `WORKFLOW_RUN_ID=<runId> bash .claude/tools/load-standards.sh <routine> <phase>` so its internal startup continues the same verified run. This preserves this run's edits without carrying exemptions into later routines.
 
 Before chart research/planning, substantive writing/enrichment, independent audit and publication, prepare the applicable instruction bundle:
 
 ```bash
-python3 .claude/tools/workflow-preflight.py prepare --phase build --actor <agent-id> --instruction .claude/commands/mindmap-pass/phase-build-brief.md --run-dir reports/mindmap-pass/<run-id>/preflight-build
+python3 .claude/tools/workflow-preflight.py prepare --run-id <runId> --phase build --actor <agent-id> --instruction .claude/commands/mindmap-pass/phase-build-brief.md --run-dir reports/mindmap-pass/<run-id>/preflight-build
 python3 .claude/tools/workflow-preflight.py next --run-dir reports/mindmap-pass/<run-id>/preflight-build
 python3 .claude/tools/workflow-preflight.py check --run-dir reports/mindmap-pass/<run-id>/preflight-build
 ```

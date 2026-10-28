@@ -49,11 +49,13 @@ def sources(root, phase, instructions):
     return list(dict.fromkeys(rels))
 
 
-def prepare(root, phase, instructions, directory, cloud=False, reuse=None, actor="worker"):
+def prepare(root, phase, instructions, directory, cloud=False, reuse=None, actor="worker", run_id=None):
     # Capture/check the exit code directly: no shell pipeline can turn failure into success.
     command = ['bash', str(root / '.claude/tools/workflow-start.sh')]
     if cloud:
         command.append('--cloud')
+    if run_id:
+        command.extend(['--run-id', run_id])
     subprocess.run(command, cwd=str(root), check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     previous = None
     if reuse is not None:
@@ -148,6 +150,7 @@ def main():
     a.add_argument('--run-dir', required=True, help='New unique project-relative directory for this actor and phase')
     a.add_argument('--cloud', action='store_true')
     a.add_argument('--actor', required=True, help='Current agent identity; independent reviewers use their own identity')
+    a.add_argument('--run-id', help='Identifier returned by this routine’s verified startup')
     a.add_argument('--reuse', help='Completed bundle from this same actor/run; re-read only new instructions')
     for name in ['next', 'check']:
         b = sub.add_parser(name); b.add_argument('--run-dir', required=True)
@@ -158,7 +161,7 @@ def main():
     try:
         if args.command == 'prepare':
             m = prepare(ROOT, args.phase, args.instruction, directory, args.cloud,
-                        inside(ROOT, args.reuse) if args.reuse else None, args.actor)
+                        inside(ROOT, args.reuse) if args.reuse else None, args.actor, args.run_id)
             print(json.dumps({'status': 'prepared-not-read', 'runDir': args.run_dir, 'parts': len(m['parts']), 'reusedFiles': len(m['reused']),
                               'next': 'Run next once per tool call until every part is read, then run check.'}))
         elif args.command == 'next':

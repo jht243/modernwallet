@@ -40,6 +40,42 @@ def state(root, rel):
     return mode + hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def run_identity():
+    # Scheduled invocations must not inherit another run's own-edit exemption.
+    for name in ['WORKFLOW_RUN_ID', 'CODEX_SESSION_ID', 'CODEX_THREAD_ID', 'CLAUDE_CODE_SESSION_ID', 'CLAUDE_SESSION_ID']:
+        value = os.environ.get(name)
+        if value:
+            return hashlib.sha256((name + ':' + value).encode()).hexdigest()
+    return None  # No session identity: perform full checks; never reuse a receipt.
+
+
+def checkout_branch(root):
+    result = subprocess.run(['git', '-C', str(root), 'symbolic-ref', '-q', 'HEAD'], capture_output=True, timeout=60)
+    if result.returncode not in [0, 1]:
+        raise RuntimeError('Cannot determine checkout branch')
+    return result.stdout.decode().strip() if result.returncode == 0 else 'detached'
+
+
+def receipt_file(root, kind, session):
+    directory = Path(os.fsdecode(git(root, 'rev-parse', '--absolute-git-dir')).strip())
+    return directory / ('workflow-' + kind + '-receipt-' + (session or 'unscoped') + '.json')
+
+
+def receipt_matches(receipt, root, session):
+    if not session or receipt.get('runIdentity') != session or receipt.get('root') != str(root) or receipt.get('branch') != checkout_branch(root) or not receipt.get('head'):
+        return False
+    result = subprocess.run(['git', '-C', str(root), 'merge-base', '--is-ancestor', receipt['head'], 'HEAD'], capture_output=True, timeout=60)
+    return result.returncode == 0
+
+
+def save_receipt(path, value, root, session):
+    import tempfile
+    value.update(root=str(root), branch=checkout_branch(root), runIdentity=session)
+    with tempfile.NamedTemporaryFile(mode='w', dir=path.parent, prefix=path.name+'.', delete=False) as file:
+        json.dump(value, file); file.write('\n'); temporary = file.name
+    os.replace(temporary, path)
+
+
 def cloud_check(root):
     """Verify a cloud clone against the live default branch, without resetting it.
 
@@ -67,19 +103,33 @@ def cloud_check(root):
     ref = next((line.split()[1] for line in listing.splitlines() if line.startswith('ref: refs/heads/')), None)
     if not ref:
         raise RuntimeError('Cannot resolve origin default branch; freshness is unknown')
-    git(root, 'fetch', '--quiet', '--no-tags', 'origin', ref)
-    revision = git(root, 'rev-parse', 'FETCH_HEAD').decode().strip()
+    revision = next((line.split()[0] for line in listing.splitlines() if line.endswith('\tHEAD') and not line.startswith('ref:')), None)
+    if not revision: raise RuntimeError('Cannot resolve published revision')
+    git(root, 'fetch', '--quiet', '--no-tags', '--no-write-fetch-head', 'origin', revision)
     head = git(root, 'rev-parse', 'HEAD').decode().strip()
-    receipt_path = Path(os.fsdecode(git(root, 'rev-parse', '--absolute-git-dir')).strip()) / 'workflow-cloud-receipt.json'
+    session = run_identity()
+    receipt_path = receipt_file(root, 'cloud', session)
     try:
         previous = json.loads(receipt_path.read_text())
     except (FileNotFoundError, ValueError):
         previous = {}
-    if previous.get('revision') == revision and previous.get('head') == head:
+    session = run_identity()
+    identity = hashlib.sha256((git(root, 'remote', 'get-url', 'origin').decode() + ref).encode()).hexdigest()
+    if receipt_matches(previous, root, session) and previous.get('identity') == identity and previous.get('revision') == revision:
         return {'status': 'current', 'source': 'origin/' + ref.removeprefix('refs/heads/'), 'revision': revision, 'missing': []}
+    if receipt_matches(previous, root, session) and previous.get('identity') == identity and previous.get('revision') and git(root, 'merge-base', previous['revision'], revision).decode().strip() == previous['revision']:
+        # A concurrent publication requires its delta, while preserving work
+        # authored after this run's verified start.
+        base = previous['revision']
+        paths = [os.fsdecode(p) for p in git(root, 'diff', '--no-renames', '--name-only', '-z', base, revision, '--').split(b'\0') if p and not p.startswith(b'reports/')]
+        missing = [p for p in paths if not includes_published(published_entry(root, base, p), working_entry(root, p), published_entry(root, revision, p))]
+        result = {'status': 'stale' if missing else 'current', 'source': 'origin/' + ref.removeprefix('refs/heads/'), 'revision': revision, 'missing': sorted(missing)}
+        if not missing: save_receipt(receipt_path, {'revision': revision, 'head': head, 'identity': identity}, root, session)
+        return result
     paths = set()
     for args in [('diff', '--no-renames', '--name-only', '-z', 'HEAD', revision, '--'),
-                 ('diff', '--no-renames', '--name-only', '-z', 'HEAD', '--')]:
+                 ('diff', '--no-renames', '--name-only', '-z', 'HEAD', '--'),
+                 ('ls-files', '--others', '--exclude-standard', '-z')]:
         paths.update(os.fsdecode(p) for p in git(root, *args).split(b'\0') if p)
     missing = []
     for rel in sorted(paths):
@@ -98,15 +148,109 @@ def cloud_check(root):
             missing.append(rel)
     result = {'status': 'stale' if missing else 'current', 'source': 'origin/' + ref.removeprefix('refs/heads/'), 'revision': revision, 'missing': missing}
     if not missing:
-        receipt_path.write_text(json.dumps({'revision': revision, 'head': head}) + '\n')
+        save_receipt(receipt_path, {'revision': revision, 'head': head, 'identity': identity}, root, session)
+    return result
+
+
+def published_entry(root, revision, rel):
+    line = git(root, 'ls-tree', revision, '--', rel).decode().strip()
+    if not line:
+        return None
+    mode, kind, oid = line.split('\t')[0].split()
+    if kind != 'blob':
+        raise RuntimeError('Unsupported published input: ' + rel)
+    return mode, git(root, 'cat-file', 'blob', oid)
+
+
+def working_entry(root, rel):
+    p = root / rel
+    if p.is_symlink():
+        return '120000', os.fsencode(os.readlink(p))
+    if not p.exists():
+        return None
+    if not p.is_file():
+        raise RuntimeError('Unsupported local input: ' + rel)
+    return ('100755' if p.stat().st_mode & 0o111 else '100644'), p.read_bytes()
+
+
+def includes_published(base, local, published):
+    """Would integrating the published change leave local bytes/mode unchanged?"""
+    if local == published or base == published:
+        return True
+    if base is None and local is not None and published is not None:
+        if local[0] != published[0] or local[0] not in ['100644','100755']:
+            return False
+        try:
+            ours, theirs = local[1].decode('utf-8'), published[1].decode('utf-8')
+        except UnicodeDecodeError:
+            return False
+        if '\0' in ours or '\0' in theirs:
+            return False
+        # New upstream file: retain every complete published line, permitting
+        # local rules to add lines without dropping/replacing published input.
+        import difflib
+        return all(tag in ['equal','insert'] for tag,*_ in difflib.SequenceMatcher(None, theirs.splitlines(keepends=True), ours.splitlines(keepends=True), autojunk=False).get_opcodes())
+    if base is None or local is None or published is None:
+        return False
+    old_mode, old = base; local_mode, ours = local; remote_mode, theirs = published
+    if remote_mode != old_mode and local_mode != remote_mode:
+        return False
+    if '120000' in {old_mode, local_mode, remote_mode}:
+        return local == published
+    if ours == theirs:
+        return True
+    if b'\0' in old + ours + theirs:
+        return False
+    import tempfile
+    with tempfile.TemporaryDirectory(prefix='workflow-merge-check-') as folder:
+        paths = [Path(folder) / name for name in ['local', 'base', 'published']]
+        for p, content in zip(paths, [ours, old, theirs]):
+            p.write_bytes(content)
+        merged = subprocess.run(['git', 'merge-file', '-p', *map(str, paths)], capture_output=True, timeout=60)
+        return merged.returncode == 0 and merged.stdout == ours
+
+
+def primary_check(root):
+    # A primary checkout is not automatically current: cloud publications may
+    # have advanced its default branch while its local HEAD stayed unchanged.
+    try:
+        origin = git(root, 'remote', 'get-url', 'origin').decode().strip()
+    except subprocess.CalledProcessError:
+        return {'status': 'current', 'source': str(root), 'missing': [], 'publishedSource': None}
+    listing = git(root, 'ls-remote', '--symref', 'origin', 'HEAD').decode().splitlines()
+    ref = next((l.split()[1] for l in listing if l.startswith('ref: refs/heads/')), None)
+    revision = next((l.split()[0] for l in listing if l.endswith('\tHEAD') and not l.startswith('ref:')), None)
+    if not ref or not revision:
+        raise RuntimeError('Cannot verify the live published default branch')
+    # Pin the advertised revision; do not race another routine's FETCH_HEAD.
+    git(root, 'fetch', '--quiet', '--no-tags', '--no-write-fetch-head', 'origin', revision)
+    head = git(root, 'rev-parse', 'HEAD').decode().strip()
+    identity = hashlib.sha256((str(root) + '\n' + origin + '\n' + ref).encode()).hexdigest()
+    session = run_identity()
+    receipt_path = receipt_file(root, 'primary', session)
+    try:
+        receipt = json.loads(receipt_path.read_text())
+    except (FileNotFoundError, ValueError):
+        receipt = {}
+    session = run_identity()
+    acknowledged = receipt.get('revision') if receipt_matches(receipt, root, session) and receipt.get('identity') == identity else None
+    if acknowledged and git(root, 'merge-base', acknowledged, revision).decode().strip() != acknowledged:
+        acknowledged = None  # A rewritten default branch needs a fresh comparison.
+    base = acknowledged or git(root, 'merge-base', head, revision).decode().strip()
+    paths = [os.fsdecode(p) for p in git(root, 'diff', '--no-renames', '--name-only', '-z', base, revision, '--').split(b'\0') if p and not p.startswith(b'reports/')]
+    missing = [p for p in paths if not includes_published(published_entry(root, base, p), working_entry(root, p), published_entry(root, revision, p))]
+    result = {'status': 'stale' if missing else 'current', 'source': str(root), 'publishedSource': 'origin/' + ref.removeprefix('refs/heads/'), 'revision': revision, 'missing': sorted(missing)}
+    if not missing:
+        save_receipt(receipt_path, {'identity': identity, 'head': head, 'revision': revision}, root, session)
     return result
 
 
 def check(root, source=None):
     root = Path(os.fsdecode(git(root, 'rev-parse', '--show-toplevel')).strip()).resolve()
     source = Path(source).resolve() if source else primary(root)
-    if source == root:
-        return {'status': 'current', 'source': str(source), 'missing': []}
+    published = primary_check(source)
+    if source == root or published['missing']:
+        return published
     # Never compare different repositories, including two unrelated clones.
     common = lambda p: Path(os.fsdecode(git(p, 'rev-parse', '--path-format=absolute', '--git-common-dir')).strip()).resolve()
     if common(root) != common(source):
@@ -121,12 +265,14 @@ def check(root, source=None):
     paths = sorted(p for p in paths if not p.startswith('reports/'))
     inputs = {p: state(source, p) for p in paths}
     head = git(root, 'rev-parse', 'HEAD').decode().strip()
-    receipt_path = Path(os.fsdecode(git(root, 'rev-parse', '--absolute-git-dir')).strip()) / 'workflow-source-receipt.json'
+    session = run_identity()
+    receipt_path = receipt_file(root, 'source', session)
     try:
         receipt = json.loads(receipt_path.read_text())
     except (FileNotFoundError, ValueError):
         receipt = {}
-    previous = receipt.get('inputs', {}) if receipt.get('source') == str(source) and receipt.get('head') == head else {}
+    session = run_identity()
+    previous = receipt.get('inputs', {}) if receipt_matches(receipt, root, session) and receipt.get('source') == str(source) else {}
     missing = []
     for rel, expected in inputs.items():
         # An unchanged source input already checked at startup may now differ
@@ -142,7 +288,7 @@ def check(root, source=None):
             missing.append(rel)
     result = {'status': 'stale' if missing else 'current', 'source': str(source), 'missing': sorted(missing)}
     if not missing:
-        receipt_path.write_text(json.dumps({'source': str(source), 'head': head, 'inputs': inputs}, indent=2) + '\n')
+        save_receipt(receipt_path, {'source': str(source), 'head': head, 'inputs': inputs}, root, session)
     return result
 
 
@@ -150,13 +296,26 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', default='.')
     parser.add_argument('--source')
+    parser.add_argument('--run-id', help='Unique routine invocation ID for runtimes without a session ID; preserve within this run only')
     parser.add_argument('--cloud', action='store_true', help='Verify against the live published default branch, not a laptop checkout')
     args = parser.parse_args()
+    generated_run = None
+    if args.run_id:
+        os.environ['WORKFLOW_RUN_ID'] = args.run_id
+    elif not os.environ.get('WORKFLOW_RUN_ID'):
+        # A thread/session can run several routines. Default CLI startup is a
+        # new verified run; later phases must explicitly carry its identifier.
+        import uuid
+        generated_run = uuid.uuid4().hex
+        os.environ['WORKFLOW_RUN_ID'] = generated_run
     try:
         result = cloud_check(args.root) if args.cloud else check(args.root, args.source)
     except (OSError, RuntimeError, subprocess.SubprocessError) as exc:
         print(f'FATAL: workflow freshness could not be verified ({type(exc).__name__}); resolve access/source availability before continuing.', file=sys.stderr)
         return 2
+    if generated_run and not result['missing']:
+        result['runId'] = generated_run
+        result['continuation'] = 'For this run only, pass --run-id ' + generated_run + ' to later startup and workflow-preflight.py prepare commands. A new routine starts without that old ID.'
     print(json.dumps(result, indent=2))
     if result['missing']:
         print('STOP: this checkout omits current source changes. Integrate the listed inputs and their dependencies, preserving local work, or run from the source checkout. Re-run this check before loading standards. Do not copy all dirty files or publish inherited work without its required review.', file=sys.stderr)
