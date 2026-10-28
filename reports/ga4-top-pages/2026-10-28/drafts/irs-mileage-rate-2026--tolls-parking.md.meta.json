@@ -1,0 +1,57 @@
+{
+ "slug": "irs-mileage-rate-2026--tolls-parking",
+ "schema": "none",
+ "kind": "section",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 144,
+ "floor": 80,
+ "input_tokens": 22631,
+ "output_tokens": 1339,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.1173,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 144,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 171,
+   "floor": 80,
+   "ratio": 2.14,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 1,
+   "found": [
+    0
+   ],
+   "applied": [],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 144
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 16.0,
+ "response_id": "msg_011CgUPdy4TKinVc2SJmTrsE",
+ "generated_at": "2026-10-28T09:23:02+0000"
+}

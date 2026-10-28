@@ -304,3 +304,7 @@
 | /retirement/couples-retirement-calculator/ | 2026-10-26 | 7 | 0/0/0/0/0 | 0 |
 | /guides/are-church-donations-tax-deductible/ | 2026-10-26 | 6 | 0/0/0/0/1 | 0 |
 | /checklists/house-viewing-checklist/ | 2026-10-27 | 27 | 0/0/0/0/0 | 0 |
+| /mileage-deduction/irs-mileage-rate-2026/ | 2026-10-28 | 52 | 0/0/1/0/0 | 0 |
+| /guides/is-social-security-taxable/ | 2026-10-28 | 27 | 0/0/0/0/0 | 1 |
+| /guides/social-security-changes-2027/ | 2026-10-28 | 12 | 0/0/0/0/0 | 0 |
+| /roundup/best-retirement-calculators/ | 2026-10-28 | 9 | 0/0/0/0/0 | 0 |

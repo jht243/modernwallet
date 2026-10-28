@@ -1,0 +1,128 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-27",
+  "window_start": "2026-10-27",
+  "window_end": "2026-10-27",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 52,
+      "sessions": 58,
+      "active_users": 52,
+      "clicks": 52
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 36,
+      "sessions": 39,
+      "active_users": 34,
+      "clicks": 36
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 27,
+      "sessions": 29,
+      "active_users": 27,
+      "clicks": 27
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 27,
+      "sessions": 29,
+      "active_users": 21,
+      "clicks": 27
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 23,
+      "sessions": 22,
+      "active_users": 17,
+      "clicks": 23
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 15,
+      "sessions": 15,
+      "active_users": 14,
+      "clicks": 15
+    },
+    {
+      "page": "/guides/trump-account-scams/",
+      "views": 14,
+      "sessions": 15,
+      "active_users": 12,
+      "clicks": 14
+    },
+    {
+      "page": "/guides/social-security-changes-2027/",
+      "views": 12,
+      "sessions": 13,
+      "active_users": 13,
+      "clicks": 12
+    },
+    {
+      "page": "/",
+      "views": 9,
+      "sessions": 8,
+      "active_users": 8,
+      "clicks": 9
+    },
+    {
+      "page": "/roundup/best-retirement-calculators/",
+      "views": 9,
+      "sessions": 9,
+      "active_users": 9,
+      "clicks": 9
+    }
+  ],
+  "top10_pages_total_views": 224,
+  "top10_pages_total_clicks": 224,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 55,
+      "Direct": 3,
+      "Unassigned": 1
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 37,
+      "Unassigned": 4,
+      "Direct": 2
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 28,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 25,
+      "Organic Social": 3,
+      "Direct": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 21,
+      "Direct": 1
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 15
+    },
+    "/guides/trump-account-scams/": {
+      "Organic Search": 14,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/guides/social-security-changes-2027/": {
+      "Organic Search": 12,
+      "Unassigned": 4
+    },
+    "/roundup/best-retirement-calculators/": {
+      "Direct": 9
+    },
+    "/": {
+      "Referral": 4,
+      "Direct": 2,
+      "Organic Search": 2
+    }
+  }
+}

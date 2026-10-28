@@ -17,7 +17,7 @@ export const MILEAGE_SPOKES: SpokeEntry[] = [
   {
     calculator: "mileage-deduction",
     slug: "irs-mileage-rate-2026",
-    updated: "2026-10-16",
+    updated: "2026-10-28",
     title: "IRS Mileage Rate 2026: 72.5¢ and 76¢ Explained",
     metaDescription:
       "The 2026 IRS mileage rate is 72.5 cents through June 30 and 76 cents from July 1. See both rates, why they changed mid-year, and how to split your miles.",
@@ -83,6 +83,11 @@ export const MILEAGE_SPOKES: SpokeEntry[] = [
         question: "Does the IRS mileage rate change if I drive an electric or hybrid vehicle?",
         answer:
           "No, the IRS standard mileage rate applies equally whether you drive a gasoline, diesel, hybrid, or all-electric vehicle. The 2026 business rates of 72.5 cents per mile from January 1 to June 30 and 76 cents per mile from July 1 to December 31 apply to electric and hybrid cars without adjustment. The IRS uses one blended figure to cover fuel, maintenance, insurance, and depreciation across all vehicle types, so no separate EV deduction exists.",
+      },
+      {
+        question: "Can I deduct tolls and parking on top of the 2026 IRS mileage rate?",
+        answer:
+          "Yes, tolls and parking fees for business trips are deducted on top of the 2026 IRS mileage rate, but fuel, repairs, tyres, insurance and depreciation are not. [IRS Topic 510](https://www.irs.gov/taxtopics/tc510) lists parking fees and tolls tied to business use as separately deductible, whether you use the standard mileage rate or actual expenses. The 2026 rates of 72.5 cents per mile (January to June) and 76 cents (July to December) already cover gas and the car's ownership costs, so you never claim those a second time.\n\nIf you are self-employed, both amounts go on Schedule C. In the example on this page, 12,000 business miles at a blended 74.25 cents comes to $8,910, and your toll and parking total is added on top of that $8,910. Keep toll statements and parking receipts with the mileage log that records each trip's date, destination and business purpose.",
       },
     ],
     sources: [IRS_MILEAGE, IRS_PUB463, IRS_SE_TAX],

@@ -1,0 +1,5 @@
+1. IRS Topic 510 (Business use of car) says parking fees and tolls attributable to business use are separately deductible, whether you use the standard mileage rate or actual expenses.
+2. The standard mileage rate is built to cover fuel, insurance, maintenance, tyres, registration and depreciation (the page already says this), so those are not deducted again on top of it.
+3. The 2026 business rate is 72.5 cents per mile for January 1 through June 30 and 76 cents per mile from July 1 through December 31.
+4. The self-employed deduct business mileage plus tolls and parking on Schedule C; the page's workedExample uses 12,000 miles at a blended 74.25 cents = $8,910.
+5. A contemporaneous record of date, destination and business purpose is the substantiation requirement already stated on the page; keep toll and parking receipts or statements with the mileage log.
