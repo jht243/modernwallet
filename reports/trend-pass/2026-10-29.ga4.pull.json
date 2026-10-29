@@ -1,0 +1,129 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-10-28",
+  "window_start": "2026-10-28",
+  "window_end": "2026-10-28",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 62,
+      "sessions": 65,
+      "active_users": 59,
+      "clicks": 62
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 34,
+      "sessions": 34,
+      "active_users": 31,
+      "clicks": 34
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 33,
+      "sessions": 34,
+      "active_users": 30,
+      "clicks": 33
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 32,
+      "sessions": 35,
+      "active_users": 30,
+      "clicks": 32
+    },
+    {
+      "page": "/guides/social-security-changes-2027/",
+      "views": 16,
+      "sessions": 16,
+      "active_users": 14,
+      "clicks": 16
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 15,
+      "sessions": 14,
+      "active_users": 12,
+      "clicks": 15
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 13,
+      "sessions": 14,
+      "active_users": 13,
+      "clicks": 13
+    },
+    {
+      "page": "/social-security-taxable-benefits-calculator/",
+      "views": 13,
+      "sessions": 8,
+      "active_users": 2,
+      "clicks": 13
+    },
+    {
+      "page": "/",
+      "views": 9,
+      "sessions": 9,
+      "active_users": 9,
+      "clicks": 9
+    },
+    {
+      "page": "/guides/trump-account-rules/",
+      "views": 9,
+      "sessions": 9,
+      "active_users": 9,
+      "clicks": 9
+    }
+  ],
+  "top10_pages_total_views": 236,
+  "top10_pages_total_clicks": 236,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 59,
+      "Unassigned": 13,
+      "Direct": 6
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 35,
+      "Unassigned": 3
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 34,
+      "Unassigned": 4
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 29,
+      "Unassigned": 5,
+      "Direct": 4,
+      "Organic Social": 1
+    },
+    "/guides/social-security-changes-2027/": {
+      "Organic Search": 16
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 14,
+      "Unassigned": 2
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 14
+    },
+    "/guides/trump-account-rules/": {
+      "Organic Search": 8,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/social-security-taxable-benefits-calculator/": {
+      "Organic Search": 7,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/": {
+      "Direct": 6,
+      "Referral": 2,
+      "Organic Search": 1,
+      "Unassigned": 1
+    }
+  }
+}

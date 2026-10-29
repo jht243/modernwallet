@@ -308,3 +308,6 @@
 | /guides/is-social-security-taxable/ | 2026-10-28 | 27 | 0/0/0/0/0 | 1 |
 | /guides/social-security-changes-2027/ | 2026-10-28 | 12 | 0/0/0/0/0 | 0 |
 | /roundup/best-retirement-calculators/ | 2026-10-28 | 9 | 0/0/0/0/0 | 0 |
+| /guides/inherited-ira-taxes-explained/ | 2026-10-29 | 32 | 0/0/0/0/0 | 0 |
+| /guides/how-to-open-a-trump-account/ | 2026-10-29 | 13 | 0/0/0/0/0 | 0 |
+| /social-security-taxable-benefits-calculator/ | 2026-10-29 | 13 | 0/0/0/0/0 | 0 |
