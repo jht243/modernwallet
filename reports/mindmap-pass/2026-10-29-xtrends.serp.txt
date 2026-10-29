@@ -1,0 +1,45 @@
+{
+ "keyword": "hidden cost of owning a home calculator",
+ "verdict": "winnable",
+ "forum_dominated": false,
+ "ai_overview_present": true,
+ "ai_overview_cited_domains": [],
+ "featured_snippet": null,
+ "top10_domains": [
+  "nationalmortgagecenter.com",
+  "www.nerdwallet.com",
+  "www.hometap.com",
+  "www.mutualfederal.com",
+  "www.guardianlife.com",
+  "www.ecentralcu.org",
+  "www.zillow.com",
+  "www.centerfinplan.com",
+  "www.newhomesource.com",
+  "www.reddit.com"
+ ],
+ "major_domains": [],
+ "forum_domains": [
+  "www.reddit.com"
+ ],
+ "serp_feature_mix": {
+  "ai_overview": 1,
+  "organic": 19,
+  "related_searches": 2
+ },
+ "paa": [],
+ "related_searches": [
+  "Monthly cost of home ownership Calculator",
+  "Total cost of home ownership",
+  "Mortgage calculator",
+  "Average cost of owning a home per month",
+  "Home cost calculator",
+  "Home affordability calculator",
+  "Total cost of ownership calculator",
+  "Rent vs buy calculator",
+  "Total mortgage cost calculator with interest",
+  "Total cost of mortgage over 30 years"
+ ],
+ "recommended_shape": "standard article/guide is viable",
+ "evidence": "AI Overview present",
+ "se_results_count": 129
+}

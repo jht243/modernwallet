@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "root": "/home/user/modernwallet",
+  "phase": "audit",
+  "instructions": [
+    ".claude/commands/mindmap-pass/phase-4-audit.md"
+  ],
+  "files": {
+    ".claude/commands/_decision-evidence.md": "6b47b8b4b6763f5b4ff303ca0443ecf67c01d5efae95c2b0c0e968131fb16d98",
+    ".claude/commands/_testing-labels.md": "8a9dc3c646a583d7afe80339efb880be431a9f528e491ef0ea156bee4db053d9",
+    ".claude/commands/_content-standard.md": "aa7c8963d434904a0a4974b134f35e69644670b95e705686d26c6ff748274c38",
+    ".claude/commands/_anti-ai-language.md": "59194cdd7f83f7423489faa07759e571c73ef993a681bd917faa8a6f1a6803ac",
+    ".claude/commands/_experience.md": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+    ".claude/commands/_workflow-checkpoints.md": "30e5d9851f270c5f450dd601be20278cae55584e49422cbdefc2eaa4d15f60c2",
+    ".claude/commands/_rendered-page-audit.md": "ed1a184c1ad83939b2e1a280ce2f6c21c350e03871d715b18f9c25c2fde80ec9",
+    ".claude/commands/_mindmap-execution.md": "4c3db9b70b067609823eb43a8a6d7e15e7eb51bcbfd898f2dbdfbe660e3d8d08",
+    ".claude/commands/_remediation-ladder.md": "7c1c0f0532d68f1c3be78496e15be8afadd4f296f799da6d4e0e35d66f6d645c",
+    ".claude/commands/mindmap-pass/phase-4-audit.md": "e037aca5f33fe1fb9aece593555da5cce92b3b518d3d873d17461b0077099451"
+  },
+  "parts": [
+    {
+      "path": "part-001.txt",
+      "sha256": "2dad9ace40c73ace417b1951a4fd8e99699c16b3d6c22bb4fbfaeba2ab957345"
+    },
+    {
+      "path": "part-002.txt",
+      "sha256": "16e335b553f0b36a4a1184a2efc47635ce5b23833a2ad719940cba1ae348fd4f"
+    },
+    {
+      "path": "part-003.txt",
+      "sha256": "b960b82769597d460509b0da0862f62b17b166a75e922725477f863bd19d38cf"
+    },
+    {
+      "path": "part-004.txt",
+      "sha256": "d9ddd624081c360eac094598842175be9d7445cfbf55bbca7f6eeb20874a96c5"
+    },
+    {
+      "path": "part-005.txt",
+      "sha256": "fb0bec769fae0068449358044d641d617faf332f84f6b4c5abbb88456810c442"
+    },
+    {
+      "path": "part-006.txt",
+      "sha256": "4404ecedbd9798a03c85cfae10ead3c5816ab78ff3b28756001cf2da7f2daf69"
+    },
+    {
+      "path": "part-007.txt",
+      "sha256": "c159bb8ee366897f8658173027edcf49fad7041e160481510fcaf104a01a7257"
+    },
+    {
+      "path": "part-008.txt",
+      "sha256": "fae29ce352f8744673709d1cb676c89e973853d6dcb06e82a02683c068a3d27a"
+    },
+    {
+      "path": "part-009.txt",
+      "sha256": "27944b98b75e766ee8152ba64053622ce6e7b7179033e96ce8325c57b6ecdef7"
+    },
+    {
+      "path": "part-010.txt",
+      "sha256": "2b3d63f56680b572f42a04654a385fef10c22a78487596b6a8a51f8704164eea"
+    },
+    {
+      "path": "part-011.txt",
+      "sha256": "1b0de324ae9173fd95227e99c8518127832a3cf13bc0ccfbea6d8553333eba0a"
+    },
+    {
+      "path": "part-012.txt",
+      "sha256": "c8f3cb7001bb1b8906156d94c2fac1835e098a2ec55de7f09b54306271519294"
+    },
+    {
+      "path": "part-013.txt",
+      "sha256": "145ef07f4cfb7423c579d190fd3d6e98e080026193391b21b94ebf8d559b4014"
+    },
+    {
+      "path": "part-014.txt",
+      "sha256": "99461fb0d3c5bc1e5344521f33639318800335c21158a95c2a6c65cacd5f5202"
+    },
+    {
+      "path": "part-015.txt",
+      "sha256": "047992998d467100b192dd393aa2e9bb4ac98496e9475b716f523a558e56466a"
+    },
+    {
+      "path": "part-016.txt",
+      "sha256": "34549613107638c88893928c3faa19de194555a3fc23529760ce8ec72ce0e502"
+    },
+    {
+      "path": "part-017.txt",
+      "sha256": "012002b3821eeafcddc31009548f95687c0ed8fd9ef09441eca917a18cd2e11a"
+    },
+    {
+      "path": "part-018.txt",
+      "sha256": "515313a6167c708a8e759e51585ef40c8cf857efe760a1f3b6f391c1a93e3eea"
+    },
+    {
+      "path": "part-019.txt",
+      "sha256": "6d0b3ed73ee78e138e8e3e250e896b21c8a781cf6ee170e5c524612a5e960346"
+    },
+    {
+      "path": "part-020.txt",
+      "sha256": "338b01d1bb39f231026534bf0e53e3a42b796fb11fc5d8388476139bee0b8ff4"
+    },
+    {
+      "path": "part-021.txt",
+      "sha256": "4686ddcb7912e42df4e009a3ac6d127ff09c2c54dd19edd8adc68676c2809b27"
+    },
+    {
+      "path": "part-022.txt",
+      "sha256": "9bf6f4dc1c935f32e9024c71c361d251fcf5498c579a666dc4e38f56aa915b37"
+    },
+    {
+      "path": "part-023.txt",
+      "sha256": "117214fea99bded1e549ac68211cb6c730b333ff0234f000ac33f274b4274123"
+    },
+    {
+      "path": "part-024.txt",
+      "sha256": "4bbfea30c6b0de10d5a33556995e2f9a9491650ee5561c3b302bb6c94422ce79"
+    },
+    {
+      "path": "part-025.txt",
+      "sha256": "4022a70f26badd391bea6e12a07c9e6be01c7f6b821d7000f1b9309f099c5538"
+    },
+    {
+      "path": "part-026.txt",
+      "sha256": "fa69d9bffe33f85f46ce242f1c382a03ecb287205c5bc7c71a02b685aad6c09f"
+    },
+    {
+      "path": "part-027.txt",
+      "sha256": "17c6edb952de4f8fe665ef233347c77a19e610c1aec527f50e9f2485f5f53f76"
+    },
+    {
+      "path": "part-028.txt",
+      "sha256": "04677a291e6a691c0af1f8182b4d4956f6e72e244e25d9c88ec8f17553c29843"
+    },
+    {
+      "path": "part-029.txt",
+      "sha256": "25f1d20b535368f186c9a9fc5ee20dacc76276fdfd8ff3e1f86ab1ab4ac77859"
+    },
+    {
+      "path": "part-030.txt",
+      "sha256": "420d9950e86c228ba189dd6db7a205a00b94a76c76340da219617514940e922d"
+    },
+    {
+      "path": "part-031.txt",
+      "sha256": "d94848ce9b7c5d106aaca732efc776d35bb452c2921d3ebca0dd4805dc344068"
+    }
+  ],
+  "delivered": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "actor": "phase4-auditor-1",
+  "reused": [],
+  "reuse": null
+}

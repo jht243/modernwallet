@@ -1,0 +1,33 @@
+.claude/commands/_mindmap-execution.md — characters 9000 onward
+
+erical synthesis or relevant documented case can pass. Do not imply an executed product test.
+
+The packet reader question must match the manifest exactly. Keep the existing source URLs, provenance, takeaway, survey and applicable growth fields. These gate fields extend the current packet; they do not create a second evidence system. If the page needs a claim the sources cannot support, narrow/exclude it rather than manufacturing numbers.
+
+Mindmap `content_gen.py write`, `section` and `fix` calls require:
+
+```text
+--mindmap-manifest <RUN>/approval-manifest.json --mindmap-review <RUN>/chart-review.json --analysis-packet <RUN>/evidence/<slug>/evidence.json
+```
+
+The shared writer checks these before spending a call when caller/path identifies Mindmap. Do not relocate prompts or change caller names to bypass it. The target must match the manifest and packet. This verifies preparation/evidence structure, not Phase 0 human approval or a final content PASS; the existing permissions and independent review remain mandatory.
+
+## 3. Existing Phase 4 verifies usefulness, reproducibility and the render
+
+First judge whether the finding resolves the approved reader decision beyond a rewrite of sources. Reject trivial arithmetic used as an originality claim, unsupported assumptions, missing material conditions, or an asset that adds no value. Accept relevant non-numerical reasoning and justified no-addition decisions.
+
+For calculations/modeling, inspect code and inputs, independently rerun the safe deterministic calculation, and save fresh JSON output to a distinct reviewer artifact (never the original output or an alias). Compare its results, units, boundary cases and counterexample to the exact article. Do not execute unreviewed code or spend on unnecessary repeat product/API runs. For measured work, inspect actual raw task records and independently verify the scoring/claims; do not demand identical stochastic outputs. For source-only/client work, verify the reasoning and exact approved public scope.
+
+Perform the existing complete rendered-page audit after all content, asset, template, affiliate and link transformations. Save the normal rendered snapshot and independent rendered review. In the analysis review JSON retain `reviewer`, `verdict: "PASS"`, canonical `packetSha256`, and `{status: "PASS", evidence: <concrete observation>}` for `usefulness`, `sourceAndAssumptions`, `conditionsAndCounterexample`, `renderedConsistency`, `localExclusions`. Include file-hashed `renderedSnapshot` and `renderedReview` references from that same reviewer. Quantitative replays also include canonical `replaySha256`.
+
+```bash
+python3 .claude/tools/mindmap-gates.py audit-analysis --packet <RUN>/evidence/<slug>/evidence.json --review <RUN>/audit/<slug>-analysis.json --replay-output <RUN>/audit/<slug>-replay.json
+```
+
+Omit `--replay-output` for measured/source/client work without a deterministic calculation. Independently check any numerical derived claims separately. This gate supplements the existing `rendered-audit.py check/compare` and does not replace them. Missing evidence is a failure; changed outputs invalidate affected approvals. Keep the existing rework limit and publication/live-verification process.
+
+The terminal no-addition branch needs no new rendered capture, product run, asset, numerical packet or growth registration. Its existing evidence-backed independent chart decision suffices. If explicitly checking a saved no-addition note with this helper, use `basis: no-addition`, `author`, `route`, `readerQuestion`, `whyNoAddition`, `existingAnswer: {path, sha256}` and an independent `noAddition: {status: PASS, evidence}` decision bound to that note; the helper returns before render/replay requirements.
+
+## 4. Finish the selected useful asset in the approved run
+
+Use prose, a finite table, SVG, a genuine screenshot, an image/illustration, downloadable data or an interactive tool when that format improves the answer and available capabilities support it. Reuse components. Generated illustrations never prove product use. Build and audit the actual asset and its page within Phase 3/4; no placeholder, spec-only completion or future-human-build branch. Determine feasibility before the chart; narrow or exclude an infeasible asset while retaining a supported useful answer. Do not force an asset or add another URL for existing intent. Videos remain outside this Mindmap evidence workflow.

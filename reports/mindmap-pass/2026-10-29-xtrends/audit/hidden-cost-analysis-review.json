@@ -1,0 +1,34 @@
+{
+ "reviewer": "phase4-auditor-1",
+ "verdict": "PASS",
+ "packetSha256": "2dc1b7afe5df2f9867d531e1e24609f3dc4afd495f37dcfb89fe19c0ce979d1d",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "The page answers the approved question (yearly cost on top of the mortgage) in the first paragraph with $16,566 a year and lets the reader replace the three inputs with own quotes; the modeled cases (low-maintenance $8,395, condo $11,729, Miami-style insurance $19,300) show the national figure can be off by thousands, so this is more than reworded source facts and the tool is not a placeholder."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "Inputs trace to the Zillow and Thumbtack release (re-fetched live; Fox Business corroboration only in the packet); scenario inputs are labeled our illustrative cases; 3% growth is the reported 2.8% rounded and called a planning default; exclusions (utilities, mortgage insurance, remodeling, income-tax effects) stated; my own Python replay reproduces output.json with identical canonical digest and the engine, run.mts, inputs, output and sources hashes match the packet."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "Counterexample S3 ($3,000 maintenance gives $8,395, $8,171 below typical, budgeting $1,380 would overstate by about $681 a month) and condo/HOA case with like-for-like comparison rule appear on the page; boundaries tested: empty, NaN, negative, growth 0, years 0/1/30/99, huge values with no NaN or crash."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "Rendered snapshot text agrees with the packet: opening $16,566 / about $1,380, tool default $1,381 and $16,566, how-it-works, takeaway (\"In our internal cost modeling...\") and 8 FAQs use the same numbers and conditions; attribution says internal cost modeling, scenarios chosen by us, checkable in the tool."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "Financial topic excluded by _experience.md section G: TESTED format off, no we-tested or in-our-testing text in title, meta, body, FAQ, schema or built HTML; no client or case-bank records used (cases.json reviewed: none relevant); no neutrality claim."
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-10-29-xtrends/audit/preview-snapshot.json",
+  "sha256": "5dfd6ab674f606915015b5eec668c0cb1b7bf5fa0da93dbecea63295355e3748"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-10-29-xtrends/audit/rendered-review.json",
+  "sha256": "774c8546d4096ca9f366ef12c40786aeacc7069c763cd2d0f4334f44653c342e"
+ },
+ "replaySha256": "d56b1b7a35d60fdf6f88d03878c148ef2b321a1f4f65ceff9485e4ab6367a76c"
+}

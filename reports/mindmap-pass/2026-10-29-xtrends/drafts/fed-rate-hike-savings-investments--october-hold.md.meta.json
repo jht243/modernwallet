@@ -1,0 +1,148 @@
+{
+ "slug": "fed-rate-hike-savings-investments--october-hold",
+ "schema": "none",
+ "kind": "section",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 292,
+ "floor": 0,
+ "input_tokens": 27300,
+ "output_tokens": 5671,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.2226,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Freddie Mac builds that average from rates offered Thursday through Wednesday, s'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 331,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 1,
+   "found": [
+    0
+   ],
+   "applied": [],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 331
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-10-29T17:37:58+0000",
+    "findings_file": "reports/mindmap-pass/2026-10-29-xtrends/audit/fed-findings.txt",
+    "applied": [
+     {
+      "id": "L3",
+      "quote": "The [Federal Reserve's statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm) reports a 10 to 2 vote, with Lisa D. Cook and Beth M. Hammack dissenting because they preferred a 1/4 percentage point increase at this meeting.",
+      "replacement": "The [Federal Reserve's statement](https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm) reports a 10 to 2 vote. Lisa D. Cook and Beth M. Hammack dissented because they preferred a 1/4 percentage point increase at this meeting.",
+      "type": "3. Monotone rhythm / overloaded sentences",
+      "why": "A 33-word chained sentence split into two shorter ones."
+     },
+     {
+      "id": "L5",
+      "quote": "Each bank sets its own rates on new CDs and savings accounts, so compare current quotes in the [CD calculator](/cd-calculator/) or the [high-yield savings account (HYSA) vs CD comparison](/compare/hysa-vs-cd/) before you pick one.",
+      "replacement": "Each bank sets its own rates on new CDs and savings accounts. Enter a bank's quote in the [CD calculator](/cd-calculator/) or read the [high-yield savings account (HYSA) vs CD comparison](/compare/hysa-vs-cd/) before you pick one.",
+      "type": "6. Misleading collocation",
+      "why": "Neither linked page lists current bank quotes."
+     },
+     {
+      "id": "L7",
+      "quote": "The hold is not a mortgage-rate event, and a fixed-rate loan you already have is unaffected by it.",
+      "replacement": "A fixed-rate loan you already have is unaffected by the hold.",
+      "type": "4. Unsupported mortgage claim",
+      "why": "Keep only the supported point that existing fixed-rate loans are unaffected."
+     },
+     {
+      "id": "L7",
+      "quote": "[Freddie Mac's weekly survey](https://www.freddiemac.com/pmms) put the average 30-year fixed rate at 7.24% on October 29, down from 7.32% a week earlier, a move that came with no change in the Fed's target range.",
+      "replacement": "[Freddie Mac's weekly survey](https://www.freddiemac.com/pmms) put the average 30-year fixed rate at 7.24% on October 29, down from 7.32% a week earlier.",
+      "type": "4. Unsupported mortgage claim",
+      "why": "The survey week ends on the decision day, so it cannot show a reaction to the hold."
+     },
+     {
+      "id": "L7",
+      "quote": "Freddie Mac builds that average from rates offered Thursday through Wednesday on loan applications submitted to it, so use the [mortgage rates guide](/guides/current-mortgage-rates-guide/) to compare your own quote against it.",
+      "replacement": "Freddie Mac builds that average from rates offered Thursday through Wednesday, so the figure ends on October 28, the day of the decision. Your own quote can differ, so compare it using the [mortgage rates guide](/guides/current-mortgage-rates-guide/).",
+      "type": "4. Unsupported mortgage claim",
+      "why": "State the survey window plainly and split the 30-word sentence."
+     },
+     {
+      "id": "L9",
+      "quote": "The two dissents show that 2 of the 12 voters wanted a quarter-point increase at this meeting, but the Federal Reserve statement gives no explicit guidance about the next meeting.",
+      "replacement": "The statement gives no explicit guidance about the next meeting.",
+      "type": "7. Restatement",
+      "why": "The dissents are already stated in paragraph one."
+     },
+     {
+      "id": "L9",
+      "quote": "If you hold bonds or a mortgage rate lock, the sections below explain how a rate change affects each one.",
+      "replacement": "If you hold bonds, the sections below explain how a rate change affects their price.",
+      "type": "5. False statement about the page",
+      "why": "No section on the page covers mortgage rate locks."
+     },
+     {
+      "id": "L9",
+      "quote": "Compare current CD and savings quotes before you lock a term, then read the Federal Reserve statement after the [December 8-9, 2026 meeting](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm), which comes with a Summary of Economic Projections.",
+      "replacement": "Before you lock a CD term, compare current bank quotes. Then read the Federal Reserve statement after the [December 8-9, 2026 meeting](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm), which comes with a Summary of Economic Projections.",
+      "type": "7. Closing sentence rewrite",
+      "why": "Split the long closing sentence as the auditor directed."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "L3",
+      "quote": "The Federal Open Market Committee (FOMC) held the federal funds target range at 3-3/4 to 4 percent on October 28, 2026, and that hold changes no rate you already have.",
+      "finding": "8. First mention of organisation unlinked",
+      "why": "Link the FOMC on first mention and split the long sentence.",
+      "replacement": "The [Federal Open Market Committee](https://www.federalreserve.gov/monetarypolicy/fomc.htm) (FOMC) held the federal funds target range at 3-3/4 to 4 percent on October 28, 2026. That hold changes no rate you already have.",
+      "reason": "replacement adds ['https://www.federalreserve.gov/monetarypolicy/fomc.htm'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "L7",
+       "quote": "Freddie Mac builds that average from rates offered Thursday through Wednesday, so the figure ends on October 28, the day of the decision.",
+       "type": "inference",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 292,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Freddie Mac builds that average from rates offered Thursday through Wednesday, s'"
+    ]
+   }
+  ]
+ },
+ "seconds": 58.7,
+ "response_id": "msg_011CgWuuozCuhknSxhqf3s38",
+ "generated_at": "2026-10-29T17:21:56+0000"
+}

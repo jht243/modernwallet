@@ -76,6 +76,7 @@ import DebtToIncomeCalculator from "./DebtToIncomeCalculator";
 import SocialSecurityTaxableCalculator from "./SocialSecurityTaxableCalculator";
 import CharitableDeductionCalculator from "./CharitableDeductionCalculator";
 import CarLoanInterestDeductionCalculator from "./CarLoanInterestDeductionCalculator";
+import HiddenHomeCostCalculator from "./HiddenHomeCostCalculator";
 import FloridaAmendment3Calculator from "./FloridaAmendment3Calculator";
 import StudentLoanGarnishmentCalculator from "./StudentLoanGarnishmentCalculator";
 import TaxBracketCalculator from "./TaxBracketCalculator";
@@ -179,6 +180,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "charitable-donation-tax-deduction-calculator": CharitableDeductionCalculator,
   // X-trends pass (2026-10-27): car loan interest deduction (Schedule 1-A Part IV), tax years 2025 to 2028.
   "car-loan-interest-deduction-calculator": CarLoanInterestDeductionCalculator,
+  // X-trends pass (2026-10-29): hidden cost of owning a home (maintenance, property tax, insurance, HOA).
+  "hidden-cost-of-owning-a-home-calculator": HiddenHomeCostCalculator,
   // Autocomplete pass (2026-10-28): rent vs buy break-even; stock sale capital gains tax (federal, 2026).
   "rent-vs-buy-calculator": RentVsBuyCalculator,
   "stock-capital-gains-tax-calculator": StockCapitalGainsCalculator,

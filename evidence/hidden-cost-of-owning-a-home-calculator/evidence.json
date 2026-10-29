@@ -1,0 +1,97 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "claude-main",
+ "route": "/hidden-cost-of-owning-a-home-calculator/",
+ "readerQuestion": "How much does it really cost per year to own a home on top of the mortgage? [PAA 0/0 on \"hidden cost of owning a home\" (none returned); ac 12/48 from the question-prefix sweep, e.g. \"what are hidden costs of owning a home\"]",
+ "demandSource": "DataForSEO US 2026-10-29 (reports/mindmap-pass/2026-10-29-xtrends.volumes.json): hidden cost of owning a home 210/mo KD 4; cost of owning a home calculator 170/mo KD 25; home maintenance cost calculator 110/mo KD 6; cost of owning a home 590/mo (expand).",
+ "decisionGap": "A buyer or new owner sees the mortgage payment but not the maintenance, tax and insurance that sit on top of it, and the site has no tool that turns the 2026 national typical figures into the reader's own number. Existing /mortgage/home-affordability-calculator/ and /rent-vs-buy-calculator/ model ownership costs as percent-of-value assumptions, not as the reader's own three quotes.",
+ "sampledAlternatives": "SERP 2026-10-29: head 'hidden cost of owning a home' (serp-head.txt): winnable, forum-dominated (youtube.com, reddit.com), AI Overview present, no PAA, smartfinancial.com, nationaldebtrelief.com and local TV pages; 'hidden cost of owning a home calculator' (serp.txt): nationalmortgagecenter.com, NerdWallet, hometap.com, a credit union, Guardian Life, Zillow, newhomesource.com, Reddit. Small sample, no uniqueness claim.",
+ "method": "Sum three yearly dollar inputs (maintenance, property tax, insurance) plus 12 times monthly HOA, divide by 12 for the monthly figure, compound a growth rate from year 2, and compare the three core lines with the national typical total. src/lib/home-ownership-costs.ts is run through evidence/hidden-cost-of-owning-a-home-calculator/run.mts over 7 scenarios and a back-cast check; output.json holds every result.",
+ "finding": "At the 2026 Zillow and Thumbtack typical figures the cost on top of the mortgage is $16,566 a year, $1,380.50 a month, two-thirds of it maintenance ($930.92 a month). The same arithmetic gives $8,395 a year for a home with $3,000 maintenance, $19,300 with $5,000 insurance, and $87,951 over five years at 3% yearly growth. The national typical is a starting point, not a budget, because each of the three lines can move a household total by thousands of dollars.",
+ "conditions": "Reader's own quotes replace the typical figures; newer homes and condos with HOA-paid exteriors shift maintenance and insurance; costs vary by metro (Zillow's 30-metro table runs from $14,187 in Phoenix to $25,111 in New York; insurance is up at least 50% over five years in 19 of 30 metros and nearly $5,000 a year in Miami); 3% growth is the reported one-year national change, not a forecast; utilities, mortgage insurance, remodeling by choice and income-tax effects are excluded.",
+ "whatWouldChange": "If your own insurance, tax and maintenance figures sum below the typical $16,566, budget your figures; if a condo association pays for roofing and exteriors, the maintenance line falls and HOA dues rise; a newer Zillow and Thumbtack study would replace the starting figures.",
+ "basis": "calculated",
+ "units": "US dollars per year and per month; growth in percent per year",
+ "limitations": "Inputs for the national typical come from Zillow and Thumbtack's own 2026-10-22 release (fetched 2026-10-29; Fox Business reports the same figures). The release does not define a typical home or give a home value; Zillow supplies property taxes and insurance, Thumbtack supplies maintenance as a weighted index of yearly projects. Scenarios S2 to S7 are illustrative reader cases chosen by us, not sourced facts; S4's $5,000 insurance echoes the release's nearly $5,000 a year in Miami.",
+ "counterexample": "Scenario S3 (maintenance $3,000, taxes $3,129, insurance $2,266) totals $8,395 a year, $8,171 below the national typical: budgeting $1,380 a month for that household would overstate cost by about $681 a month. Scenario S2 (condo, $400 HOA) lands at $11,729.",
+ "caseSelection": {
+  "path": "evidence/hidden-cost-of-owning-a-home-calculator/cases.json",
+  "sha256": "5dedae55d7fe5badb5d30402d3e9452d2b9cc091571aeaf6fc4683c2fa9ae6b9"
+ },
+ "caseDecisions": "All 8 retrieved records are Layer3Labs client or fleet records that matched on generic words (home, cost, rates). None is a themodernwallet.com first-party record and none concerns home-ownership costs or Fed policy, so none is selected. No client or survey claim appears on the page.",
+ "sourceArtifacts": [
+  {
+   "path": "evidence/hidden-cost-of-owning-a-home-calculator/sources.md",
+   "sha256": "f765b7dc6a2125cf66f4e39d04854fd932aebeb671011d9ff2859129d9a123de"
+  },
+  {
+   "path": "evidence/hidden-cost-of-owning-a-home-calculator/inputs.json",
+   "sha256": "d743b1b8801d3ce0c0dbb1f0c981b017bdcc1aea0290f9aa30a2d8ea011746c2"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-10-29-xtrends.volumes.json",
+   "sha256": "6496add483328a13750d4ec1bb7ec5ea3d2655976417e3dfa8c9c43203746ff8"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-10-29-xtrends.serp.txt",
+   "sha256": "774984180db65185d174d1cc19694b2838b090de4f2ea89f1ccb2fcec4647acf"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-10-29-xtrends.serp-head.txt",
+   "sha256": "29cd56827c86970c59201fdf46dcb119680f59b8ae96f5b584f92efe84523c6c"
+  }
+ ],
+ "execution": {
+  "command": [
+   "node",
+   "--experimental-strip-types",
+   "evidence/hidden-cost-of-owning-a-home-calculator/run.mts"
+  ],
+  "code": {
+   "path": "evidence/hidden-cost-of-owning-a-home-calculator/run.mts",
+   "sha256": "afcccbeb497e8aa28deabf3db72459657aedc1f64d7f829694f68fb84d74517f"
+  },
+  "inputs": [
+   {
+    "path": "evidence/hidden-cost-of-owning-a-home-calculator/inputs.json",
+    "sha256": "d743b1b8801d3ce0c0dbb1f0c981b017bdcc1aea0290f9aa30a2d8ea011746c2"
+   },
+   {
+    "path": "src/lib/home-ownership-costs.ts",
+    "sha256": "533355dcf854613af5d20b84305035bcd620ad382f95bd6b8e9c393d5addb0b5"
+   }
+  ],
+  "output": {
+   "path": "evidence/hidden-cost-of-owning-a-home-calculator/output.json",
+   "sha256": "b900f2bfa4b86c21745bf68eb12762f9fd8b830a47dfd0251eef312fb8f733f2"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://www.foxbusiness.com/economy/owning-home-comes-hidden-price-tag-its-getting-more-expensive",
+   "checked": "2026-10-29",
+   "use": "typical $16,566 total and components, five-year and one-year changes"
+  },
+  {
+   "url": "https://zillow.mediaroom.com/2026-10-22-Hidden-costs-of-homeownership-top-16-5K-year,-up-nearly-32-in-5-years",
+   "checked": "2026-10-29",
+   "use": "primary release: totals, components, 5-year and 1-year changes (+31.7%, +2.8%), 30-metro table, Miami insurance, method by Zillow and Thumbtack"
+  }
+ ],
+ "unknowns": "The home value behind the typical figures (the release does not define a typical home) and any figure for a specific house. No percent-of-value claim is made about the national figure.",
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "evidence/hidden-cost-of-owning-a-home-calculator/output.json",
+   "evidence/hidden-cost-of-owning-a-home-calculator/run.mts",
+   "evidence/hidden-cost-of-owning-a-home-calculator/inputs.json"
+  ],
+  "scopeAndLimits": "Calculated from reported national inputs and stated reader scenarios; no product tested, no client record, no measurement of any house.",
+  "publicMethod": "howItWorks section of the page states the three inputs, the growth rule and the scenarios; the calculator reproduces every figure.",
+  "placement": "intro worked example (first finding), howItWorks first-finding paragraph and the takeaway paragraph"
+ },
+ "teeupNote": "teeup-exempt: calculator page; paragraph one reports a sourced figure and the attribution sits at the first modeled finding in paragraph two",
+ "takeaway": "Treat $1,380 a month as the national typical starting point and replace it with your own insurance quote, tax bill and a maintenance reserve; budget the sum of your three figures. Applies to a buyer comparing a mortgage payment with the real monthly cost of owning. A newer home or condo with HOA-paid exteriors can run well below it, and a high-premium metro well above.",
+ "selectedMedium": "interactive tool (reader-entered inputs change the answer) with the national typical result and scenarios readable in the intro and how-it-works text",
+ "testingDecision": "TESTED format off: calculation/modeling page on a financial topic excluded by _experience.md section G; ordinary format; analysis attribution in body text only."
+}

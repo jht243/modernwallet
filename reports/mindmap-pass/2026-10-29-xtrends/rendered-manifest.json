@@ -1,0 +1,9 @@
+{
+  "author": "claude-main",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {"path": "/hidden-cost-of-owning-a-home-calculator/", "expectedUpdatedDate": "2026-10-29", "requiredText": ["Hidden Cost of Owning a Home Calculator", "In our internal cost modeling", "$16,566", "Zillow and Thumbtack"], "forbiddenText": ["we tested", "In our testing", "zillow.com/research", "ModernWallet, we ran"], "growthFile": "evidence/hidden-cost-of-owning-a-home-calculator/growth.json", "evidenceFile": "evidence/hidden-cost-of-owning-a-home-calculator/evidence.json"},
+    {"path": "/guides/fed-rate-hike-savings-investments/", "expectedUpdatedDate": "2026-10-29", "requiredText": ["What the October 2026 Fed Hold Means for Savings, CDs and Mortgages", "10 to 2", "7.24%"], "forbiddenText": ["we tested", "In our testing"], "growthFile": "evidence/fed-rate-hike-savings-investments/growth.json", "evidenceFile": "evidence/fed-rate-hike-savings-investments/evidence.json"},
+    {"path": "/rent-vs-buy-calculator/", "expectedUpdatedDate": "2026-10-28", "requiredText": ["What does owning cost beyond the mortgage?"], "forbiddenText": []}
+  ]
+}

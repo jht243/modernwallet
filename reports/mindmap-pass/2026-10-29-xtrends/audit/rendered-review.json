@@ -1,0 +1,111 @@
+{
+ "reviewer": "phase4-auditor-1",
+ "snapshotSha256": "f61a63fee4706ef6f222e170dcefa35cb1043a59ca3748e0955f8a14d2abb441",
+ "routes": [
+  {
+   "path": "/hidden-cost-of-owning-a-home-calculator/",
+   "fingerprint": "14ca208b1c4a0df60aa546f351b73457c60575bfa1c3c6a561606cb2906fe001",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the full rendered text (intro, hydrated tool, How it works, 8 FAQs, sources, related links, footer). Opening answer $16,566 a year / about $1,380 a month, tool default $1,381 and $16,566, how-it-works, takeaway and FAQs agree; condition (own quotes) and alternatives (own bills, rent vs buy) stated; HOA left out of the comparison line in both prose and tool; no contradictory block."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Every figure maps to closed facts R1-R6 and C1-C6; my independent replay digest d56b1b7a... equals evidence output.json; Zillow/Thumbtack release re-fetched live and matches totals, shares, 31.7%/2.8%, 54/32/19%, 9% to 1%, Miami, six metros, 14,187/25,111, method text."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Internal cost modeling attribution appears at the first modeled finding (intro paragraph 2), in how-it-works paragraph 1 (what we did, scenarios chosen by us, not measured, not client cases, checkable in the tool) and in the takeaway. No we-tested or in-our-testing text in title, meta, body, FAQ, JSON-LD or HTML; section G exclusion respected."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible Updated October 29, 2026; Article datePublished and dateModified 2026-10-29; JSON-LD parses (Organization, WebSite, BreadcrumbList, WebApplication, FAQPage 8, Person, Article with citation); canonical https://www.themodernwallet.com/hidden-cost-of-owning-a-home-calculator/; title 56 chars matches metaTitle."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Only external link is the Zillow/Thumbtack release (first mention, on the closed list); internal links are real routes; no robots block; route in dist/sitemap-0.xml; nav/footer entry present."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "390px and 1280px screenshots show stacked labeled inputs, no horizontal overflow or clipping; all 8 inputs sit inside labels, growth input has aria-label, data-tool root present; hydrated DOM shows computed results."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Calculation/modeling basis, TESTED format off, no client records used, no neutrality claim, disclaimer in last prose paragraph and footer only; site-wide effect limited to nav/footer link, home and hub cards, search index and sitemap."
+    }
+   }
+  },
+  {
+   "path": "/guides/fed-rate-hike-savings-investments/",
+   "fingerprint": "7bb77eb7225f5cd6b830934640794a3b2d22e5f7a7ab287b1c40f9513a8b65b4",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the entire rendered guide top to bottom (intro, new first section, Sept 16 section, bonds, CD and deposit sections, projections, equities, who-should-not, conditions, action steps, 6 FAQs). The new section (hold, 10 to 2, two dissents, existing CDs and fixed loans unaffected, survey ends on decision day and cannot show lender reaction, no forward guidance) does not contradict any inherited paragraph; inherited unexplained 0.38 percent average / 3.7 percent CPI line and the FAQ about continued hikes are unrelated advisory items."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Federal Reserve statement, Freddie Mac PMMS (7.24 / 7.32, Thursday through Wednesday) and FOMC calendar (Dec 8-9 with SEP) re-fetched live and match the closed fact list incl. F6b; no unsupported inflation or forecast claim."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Reported basis: Federal Reserve and Freddie Mac named and linked at first mention; no internal-testing or modeling claim; no we-tested text in HTML or schema."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible Updated October 29, 2026; Article dateModified 2026-10-29 (datePublished follows the site template, equal to updated); FAQPage 6 and other JSON-LD parse; canonical https://www.themodernwallet.com/guides/fed-rate-hike-savings-investments/."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "First FOMC mention linked to fomc.htm; statement, Freddie Mac survey and FOMC calendar links match the closed list; internal links (CD calculator, HYSA vs CD, mortgage rates guide) are real routes; in sitemap."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "390px and 1280px screenshots of the guide show normal reading layout, new section first after intro and tools block, no overflow."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Additive first section only (git diff: one section plus updated date); metadata preserved; financial topic so TESTED off; no neutrality claim; section sentence rhythm measured: no 10-run in one band, no 5-run within 3 words, nothing at 30 words or more."
+    }
+   }
+  },
+  {
+   "path": "/rent-vs-buy-calculator/",
+   "fingerprint": "e90d209d7da1aa3eebd353fb3eb74f517e8b15aa02889f27cccc953bea344a79",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Page content unchanged except one added related-link pill, \"What does owning cost beyond the mortgage?\", in Plan the bigger picture; rendered text otherwise coherent and the fingerprint is the same as in the previous capture."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "No new factual claim; the pill label is a question pointing to the new calculator route, which exists and is in the sitemap."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing or attribution text added; existing internal-modeling wording untouched."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Date-policy exception (link-only edit, per phase-7 sitemap rule and _rendered-page-audit item 5, coordinator ruling): updated stays 2026-10-28, visible Updated October 28, 2026, JSON-LD datePublished and dateModified 2026-10-28, matching manifest expectedUpdatedDate."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Pill href /hidden-cost-of-owning-a-home-calculator/ resolves to a built page; no other link changes; canonical and sitemap entry unchanged."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "390px and 1280px screenshots show the pill in the existing pill list without overflow."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only edit confined to src/data/cross-links.ts, no content, schema or date change; no exclusions touched."
+    }
+   }
+  }
+ ]
+}

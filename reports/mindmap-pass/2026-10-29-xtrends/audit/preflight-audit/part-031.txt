@@ -1,0 +1,7 @@
+.claude/commands/mindmap-pass/phase-4-audit.md — characters 27000 onward
+
+f any of those files is missing, FAIL the run and report it — never substitute your own gates. If `.claude/commands/_content-standard.local.md` exists in this repo, its sections override the same-named sections of the standard.
+
+<!-- mindmap-execution-v1 -->
+Apply `_mindmap-execution.md` inside this existing audit: independently judge usefulness and source/assumption limits, replay deterministic calculations where relevant, inspect real run records for measured work, and bind the analysis decision to the exact final rendered snapshot/review. Accept justified non-quantitative and no-addition branches; do not require new paid/physical testing merely to repeat a saved valid record.
+<!-- /mindmap-execution-v1 -->

@@ -1,0 +1,230 @@
+{
+  "schemaVersion": 1,
+  "query": "How much does it really cost per year to own a home on top of the mortgage? [PAA 0/0 on \"hidden cost of owning a home\" (none returned); ac 12/48 from the question-prefix sweep, e.g. \"what are hidden costs of owning a home\"]",
+  "publisher": "themodernwallet.com",
+  "bankSha256": "25605948752b9e0c030e58344dddb8105e9c3459106213447a48c3156e4f1db8",
+  "experienceSha256": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+  "localExperience": "# Experience — who \"we\" are on this site\n\n<!-- PER-REPO. NOT synced, NEVER overwritten by sync-standards.sh. Loaded by\n     _content-standard.md (## VOICE / ## ANCHOR). If ## DOMAIN is empty the run STOPS. -->\n\n## DOMAIN\n\nThe Modern Wallet (themodernwallet.com) is a personal-finance site built around free calculators and plain-language money guides, with 400-plus pages spanning auto loans, mortgages, retirement, investing, rentals, and net worth. Our reader is making one concrete decision and wants an accurate number, fast, with no signup. We show the math, name what moves it, and explain the tradeoff.\n\n**General framings this section licenses** (editorial \"we\", no client roster required):\n\n- \"In the guides we publish here...\"\n- \"What we see readers get wrong most often is...\"\n- \"Every guide we write starts from...\"\n- \"When we reviewed this ourselves...\"\n\nThese license a real editorial observation about work on this site. They never license a fabricated specific.\n\n---\n\n## SPECIFICS\n\n_(No named-client claims. This is a content property; the editorial \"we\" above is the voice.)_\n\n---\n\n### G — Products and models we test (added 2026-10-20)\n\nThe site owner tests every product, app, software tool and AI model this site writes about. On roundup, review and comparison pages this licenses first-person testing claims about those items: \"we tested\", \"in our testing\", \"we picked it because\". It does not license invented specifics: no measurements, scores, benchmark figures, durations, test dates, prices paid, or test setups unless they appear in the row's fact list.\n\nIt never covers medical treatments, clinics, drugs, the health effects of supplements, or legal, financial or professional services. Never claim to have tested those. See `_content-standard.md` ## TESTED for the required page format.\n\n",
+  "candidates": [
+    {
+      "record": {
+        "id": "owned-property-diy-repair-guide",
+        "entity": "DIY Repair Guide",
+        "owner": "Layer3Labs",
+        "relationship": "owned-property",
+        "approvedFacts": [
+          "Diagrams, dimension charts, and repair-cost ranges for the things that break in a house — work out what is wrong and what it costs to fix."
+        ],
+        "quotes": [],
+        "firstPartyPublishers": [
+          "layer3labs.io"
+        ],
+        "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+        "source": {
+          "repository": "jht243/layer3labs",
+          "path": "src/pages/portfolio.tsx",
+          "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+          "publicUrl": "https://www.layer3labs.io/portfolio"
+        }
+      },
+      "topicMatches": [
+        "cost",
+        "costs",
+        "the",
+        "what"
+      ],
+      "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
+    },
+    {
+      "record": {
+        "id": "owned-property-drones-defense",
+        "entity": "Drones & Defense",
+        "owner": "Layer3Labs",
+        "relationship": "owned-property",
+        "approvedFacts": [
+          "Research on drone stocks, defense-tech equities, and the unmanned-systems economy, with company analysis, ETF breakdowns, and how-to-invest guides."
+        ],
+        "quotes": [],
+        "firstPartyPublishers": [
+          "layer3labs.io"
+        ],
+        "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+        "source": {
+          "repository": "jht243/layer3labs",
+          "path": "src/pages/portfolio.tsx",
+          "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+          "publicUrl": "https://www.layer3labs.io/portfolio"
+        }
+      },
+      "topicMatches": [
+        "how",
+        "the"
+      ],
+      "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
+    },
+    {
+      "record": {
+        "id": "owned-property-ban-the-bots",
+        "entity": "Ban the Bots",
+        "owner": "Layer3Labs",
+        "relationship": "owned-property",
+        "approvedFacts": [
+          "Daily, human-first coverage of AI regulation, labor disruption, environmental cost, and real-world AI incidents."
+        ],
+        "quotes": [],
+        "firstPartyPublishers": [
+          "layer3labs.io"
+        ],
+        "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+        "source": {
+          "repository": "jht243/layer3labs",
+          "path": "src/pages/portfolio.tsx",
+          "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+          "publicUrl": "https://www.layer3labs.io/portfolio"
+        }
+      },
+      "topicMatches": [
+        "cost",
+        "the"
+      ],
+      "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
+    },
+    {
+      "record": {
+        "id": "owned-property-medical-frontier",
+        "entity": "Medical Frontier",
+        "owner": "Layer3Labs",
+        "relationship": "owned-property",
+        "approvedFacts": [
+          "Neutral guides to regenerative medicine — stem cell therapy, PRP, and exosomes — covering cost, legality, insurance, and how to vet a clinic."
+        ],
+        "quotes": [],
+        "firstPartyPublishers": [
+          "layer3labs.io"
+        ],
+        "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+        "source": {
+          "repository": "jht243/layer3labs",
+          "path": "src/pages/portfolio.tsx",
+          "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+          "publicUrl": "https://www.layer3labs.io/portfolio"
+        }
+      },
+      "topicMatches": [
+        "cost",
+        "how"
+      ],
+      "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
+    },
+    {
+      "record": {
+        "id": "owned-property-the-indoor-report",
+        "entity": "The Indoor Report",
+        "owner": "Layer3Labs",
+        "relationship": "owned-property",
+        "approvedFacts": [
+          "What to measure for indoor air, water, humidity, and mold, what the numbers mean, and which equipment actually fixes the problem."
+        ],
+        "quotes": [],
+        "firstPartyPublishers": [
+          "layer3labs.io"
+        ],
+        "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+        "source": {
+          "repository": "jht243/layer3labs",
+          "path": "src/pages/portfolio.tsx",
+          "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+          "publicUrl": "https://www.layer3labs.io/portfolio"
+        }
+      },
+      "topicMatches": [
+        "the",
+        "what"
+      ],
+      "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
+    },
+    {
+      "record": {
+        "id": "owned-property-new-parent-picks",
+        "entity": "New Parent Picks",
+        "owner": "Layer3Labs",
+        "relationship": "owned-property",
+        "approvedFacts": [
+          "Buying guides for the first year — baby gear, gifts, feeding kit, and registry checklists cut down to a short list you can act on."
+        ],
+        "quotes": [],
+        "firstPartyPublishers": [
+          "layer3labs.io"
+        ],
+        "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+        "source": {
+          "repository": "jht243/layer3labs",
+          "path": "src/pages/portfolio.tsx",
+          "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+          "publicUrl": "https://www.layer3labs.io/portfolio"
+        }
+      },
+      "topicMatches": [
+        "the",
+        "year"
+      ],
+      "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
+    },
+    {
+      "record": {
+        "id": "owned-property-the-bot-scout",
+        "entity": "The Bot Scout",
+        "owner": "Layer3Labs",
+        "relationship": "owned-property",
+        "approvedFacts": [
+          "Robot buying guides, reviews, and pricing research across home, consumer, industrial, service, and humanoid robots."
+        ],
+        "quotes": [],
+        "firstPartyPublishers": [
+          "layer3labs.io"
+        ],
+        "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+        "source": {
+          "repository": "jht243/layer3labs",
+          "path": "src/pages/portfolio.tsx",
+          "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+          "publicUrl": "https://www.layer3labs.io/portfolio"
+        }
+      },
+      "topicMatches": [
+        "home",
+        "the"
+      ],
+      "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
+    },
+    {
+      "record": {
+        "id": "owned-property-partygamekit",
+        "entity": "PartyGameKit",
+        "owner": "Layer3Labs",
+        "relationship": "owned-property",
+        "approvedFacts": [
+          "Free Secret Santa and White Elephant organizers, gift-exchange questionnaires, party-game printables, and gift ideas — run the whole group from one link."
+        ],
+        "quotes": [],
+        "firstPartyPublishers": [
+          "layer3labs.io"
+        ],
+        "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+        "source": {
+          "repository": "jht243/layer3labs",
+          "path": "src/pages/portfolio.tsx",
+          "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+          "publicUrl": "https://www.layer3labs.io/portfolio"
+        }
+      },
+      "topicMatches": [
+        "from",
+        "the"
+      ],
+      "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
+    }
+  ],
+  "privateClientContext": [],
+  "instruction": "Select only relevant approved facts/quotes; save selection/rejection reasons in the existing evidence packet. Local exclusions and public-use scope still govern. No result is an automatic testing permission."
+}

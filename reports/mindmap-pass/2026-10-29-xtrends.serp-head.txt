@@ -1,0 +1,46 @@
+{
+ "keyword": "hidden cost of owning a home",
+ "verdict": "winnable",
+ "forum_dominated": true,
+ "ai_overview_present": true,
+ "ai_overview_cited_domains": [
+  "www.citizensbank.com",
+  "www.investopedia.com",
+  "www.fbfs.com",
+  "news3lv.com",
+  "www.mypointcu.com",
+  "elevatecu.com",
+  "www.youtube.com",
+  "www.regions.com",
+  "m.youtube.com",
+  "www.reddit.com"
+ ],
+ "featured_snippet": null,
+ "top10_domains": [
+  "www.youtube.com",
+  "www.reddit.com",
+  "smartfinancial.com",
+  "www.nationaldebtrelief.com",
+  "www.fcfunding.ca",
+  "foxreno.com",
+  "fox49.tv",
+  "www.mypointcu.com",
+  "tapseries.io",
+  "www.hammortreefinancial.com"
+ ],
+ "major_domains": [],
+ "forum_domains": [
+  "www.youtube.com",
+  "www.reddit.com"
+ ],
+ "serp_feature_mix": {
+  "ai_overview": 1,
+  "discussions_and_forums": 1,
+  "organic": 18
+ },
+ "paa": [],
+ "related_searches": [],
+ "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+ "evidence": "forum/community results own the SERP (www.youtube.com, www.reddit.com) incl. #1; AI Overview present, cites www.citizensbank.com, www.investopedia.com, www.fbfs.com, news3lv.com",
+ "se_results_count": 125
+}

@@ -1,0 +1,69 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "claude-main",
+ "route": "/guides/fed-rate-hike-savings-investments/",
+ "readerQuestion": "What does the Fed holding rates with two votes to raise mean for my savings, CDs and mortgage? [PAA 6/6 on-topic on \"fed rate decision\" (decision today, next meeting date, December cut, did it raise, 3% mortgage rate, rate today); ac 95 question completions on \"fed rate decision\" and \"will the fed raise rates\", mostly decision-time and hike-or-not forms]",
+ "demandSource": "DataForSEO US 2026-10-29: fed rate decision 40,500/mo KD 49; will interest rates go up 2,400/mo KD 49; fed holds rates 140/mo KD 15; cd rates 165,000/mo KD 44 (volumes.json). Scout bullet marked [ENRICH] for this route.",
+ "decisionGap": "The guide ends its Sept 16 narrative at the 25-basis-point hike and never says what happened at the next meeting. A saver or borrower arriving after Oct 28 cannot tell from the page whether rates went up again, what the two dissents signal, or what to do with a CD or a mortgage rate lock now.",
+ "sampledAlternatives": "SERP 2026-10-29 for the head 'fed rate decision' (serp-fed-head.txt): winnable, AI Overview present, CNBC, federalreserve.gov, CME, YouTube, Trading Economics, Investing.com, Wikipedia; PAA 6: decision today, next decision date, December cut, did the Fed raise, 3% mortgage rate again, rate today. A longer-phrase read (serp-fed.txt) was forum-leaning. Small sample, no uniqueness claim.",
+ "method": "Source-to-conclusion reading of the FOMC statement of 2026-10-28 and the Freddie Mac survey of 2026-10-29 against the existing page's mechanics; no new arithmetic.",
+ "finding": "The FOMC held the target range at 3-3/4 to 4 percent on Oct 28, 2026, by a 10 to 2 vote; Lisa D. Cook and Beth M. Hammack preferred a quarter-point increase. The statement says inflation remains elevated and gives no explicit guidance on the next meeting. Freddie Mac's 30-year average was 7.24% on Oct 29, down from 7.32%. The next FOMC meeting is December 8-9, 2026, one with a Summary of Economic Projections. For a saver, a hold changes no deposit or CD rate by itself; a fixed-rate loan already in place is unaffected. Freddie Mac's survey ends on Oct 28, the decision day, so it cannot show how lenders reacted to the hold.",
+ "conditions": "Dissents are a signal that two voters wanted a hike, not a decision or a forecast; the statement gives no forward guidance; bank deposit rates move on bank decisions; a CD opened earlier keeps its rate; a mortgage quote depends on lender and borrower.",
+ "whatWouldChange": "A hike at the next meeting would revert the guide's hike mechanics to the live case; a cut or sharper inflation data would change the CD-timing logic.",
+ "basis": "reported",
+ "caseSelection": {
+  "path": "evidence/fed-rate-hike-savings-investments/cases.json",
+  "sha256": "949aa08ac30b98a1e06d725e3a3613120660fa2f7a0a0f8206749bb106b81567"
+ },
+ "caseDecisions": "All 8 retrieved records are Layer3Labs client or fleet records that matched on generic words (home, cost, rates). None is a themodernwallet.com first-party record and none concerns home-ownership costs or Fed policy, so none is selected. No client or survey claim appears on the page.",
+ "sourceArtifacts": [
+  {
+   "path": "evidence/fed-rate-hike-savings-investments/sources.md",
+   "sha256": "17eb3d5e95155396509cde168edfbcb39b1a4d672a61b198fd6ae79ffa6e1b44"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-10-29-xtrends.volumes.json",
+   "sha256": "6496add483328a13750d4ec1bb7ec5ea3d2655976417e3dfa8c9c43203746ff8"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-10-29-xtrends.serp-fed.txt",
+   "sha256": "73e9d9c477631fe68cfcee9bb8d63d293d7009ce081667e40f983208a126c5fa"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-10-29-xtrends.serp-fed-head.txt",
+   "sha256": "505f7dfc5867adcdfc1ba24ade5a9a67c85d66017fbcd880da46172a0cd32e09"
+  }
+ ],
+ "whyNoQuantitativeAnalysis": "The answer is an official decision and its vote record; no defensible calculation adds to it. Rate-impact arithmetic already sits on the page, and a 'what if rates rise' number for a stranger's balance would be arbitrary.",
+ "reasoning": "FOMC statement (primary) -> rates unchanged at 3-3/4 to 4 percent, vote 10-2, two dissents for +0.25, inflation elevated, no explicit forward guidance. Existing page (Sept 16 hike, deposit pass-through under 100%, CD locks) -> savers: nothing changes by itself, new CD quotes are the lever. Freddie Mac PMMS (primary) -> 30-year 7.24% (7.32% prior week), an average of rates offered Oct 22 to Oct 28, which ends on decision day, so it shows the level going in and says nothing about lender reaction to the hold. Conditions: dissents signal hike risk only; no forward guidance.",
+ "sources": [
+  {
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "checked": "2026-10-29",
+   "use": "decision, vote, dissents, inflation language"
+  },
+  {
+   "url": "https://www.freddiemac.com/pmms",
+   "checked": "2026-10-29",
+   "use": "30-year 7.24%, 7.32% prior week; weekly average method"
+  },
+  {
+   "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+   "checked": "2026-10-29",
+   "use": "next FOMC meeting December 8-9, 2026, with a Summary of Economic Projections"
+  }
+ ],
+ "unknowns": "Whether the next meeting hikes; the scout's 'PCE inflation is running hot' was not verified against a primary source and is excluded.",
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "evidence/fed-rate-hike-savings-investments/sources.md"
+  ],
+  "scopeAndLimits": "Reported from the Federal Reserve and Freddie Mac; no internal test or model.",
+  "publicMethod": "Section names the Fed statement and Freddie Mac survey as sources and links both.",
+  "placement": "new section 1, first paragraph"
+ },
+ "takeaway": "Savers: a hold changes no rate you already have; compare new CD and savings quotes, and do not assume the dissents mean a hike is coming. Borrowers: a fixed-rate loan you already have is unaffected by the hold; the 30-year average was 7.24% on Oct 29, in a survey week that ends on decision day, so compare your own quote. Applies to savers and rate shoppers. Conditions: dissents are a signal only; the statement gives no guidance on the next meeting.",
+ "selectedMedium": "text section inserted ahead of the existing sections",
+ "testingDecision": "TESTED format off: guide, financial topic excluded by _experience.md section G; reported evidence only, attributed to the Federal Reserve and Freddie Mac."
+}

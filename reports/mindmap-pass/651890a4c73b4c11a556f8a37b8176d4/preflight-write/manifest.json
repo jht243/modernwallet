@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "root": "/home/user/modernwallet",
+  "phase": "write",
+  "instructions": [
+    ".claude/commands/mindmap-pass/phase-0-discover.md",
+    ".claude/commands/mindmap-pass/phase-3-new-content.md",
+    ".claude/commands/mindmap-pass/phase-3c-tool-build.md",
+    ".claude/commands/mindmap-pass/phase-5-body.md",
+    ".claude/commands/mindmap-pass/phase-6-internal-linking.md",
+    ".claude/commands/mindmap-pass/phase-7-sitemap-indexnow.md",
+    ".claude/commands/mindmap-pass/phase-9-commit-deliver.md",
+    ".claude/commands/_content-generation.md"
+  ],
+  "files": {
+    ".claude/commands/_decision-evidence.md": "6b47b8b4b6763f5b4ff303ca0443ecf67c01d5efae95c2b0c0e968131fb16d98",
+    ".claude/commands/_testing-labels.md": "8a9dc3c646a583d7afe80339efb880be431a9f528e491ef0ea156bee4db053d9",
+    ".claude/commands/_content-standard.md": "aa7c8963d434904a0a4974b134f35e69644670b95e705686d26c6ff748274c38",
+    ".claude/commands/_anti-ai-language.md": "59194cdd7f83f7423489faa07759e571c73ef993a681bd917faa8a6f1a6803ac",
+    ".claude/commands/_experience.md": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+    ".claude/commands/_workflow-checkpoints.md": "30e5d9851f270c5f450dd601be20278cae55584e49422cbdefc2eaa4d15f60c2",
+    ".claude/commands/_rendered-page-audit.md": "ed1a184c1ad83939b2e1a280ce2f6c21c350e03871d715b18f9c25c2fde80ec9",
+    ".claude/commands/_mindmap-execution.md": "4c3db9b70b067609823eb43a8a6d7e15e7eb51bcbfd898f2dbdfbe660e3d8d08",
+    ".claude/commands/mindmap-pass/phase-0-discover.md": "e821433075ab41e5f66b4845f81ce7d747970b3c8fc2a85ed2715dc18b5ef692",
+    ".claude/commands/mindmap-pass/phase-3-new-content.md": "9255dad7ddcb05964f87a0f30d38e811336fefb3ea6c8d52a6a02c550246a1f5",
+    ".claude/commands/mindmap-pass/phase-3c-tool-build.md": "ee12eb40501758f034c4979de55634779ea45a6a49a2943c689453f7665c77dd",
+    ".claude/commands/mindmap-pass/phase-5-body.md": "e18c837e328439f0bcd5164dc3a7d421107d9777dfcd5bb69ecf87de9863a629",
+    ".claude/commands/mindmap-pass/phase-6-internal-linking.md": "90c80e9e201a7c6fa61c7ae2dafc4fbb47d15abf8bba8ac1379b8b2db9b396ed",
+    ".claude/commands/mindmap-pass/phase-7-sitemap-indexnow.md": "3aed8fc8c4453f528df6e1be029d2009823f637d439e055eb2318c0157c62c16",
+    ".claude/commands/mindmap-pass/phase-9-commit-deliver.md": "688648bf9d795e962834de53c75d08341684aa2d9251e90c4a977cc9b33b053c",
+    ".claude/commands/_content-generation.md": "c35a85aa02cb770dcf70db1cc77f1a48fee937c5b5193a5fbc4b29f42fa46af5"
+  },
+  "parts": [
+    {
+      "path": "part-001.txt",
+      "sha256": "f7de231d623f5a01bcf7dcc41baceb87a7e4500ba2bb9308b9da41427c2c9b6a"
+    },
+    {
+      "path": "part-002.txt",
+      "sha256": "8e1aedc131fed20e59e521df6b2cfee2904cbad8ae4f087a6a80a944c771a7b1"
+    },
+    {
+      "path": "part-003.txt",
+      "sha256": "99f76e442ffb322f43d0617ca735098e1972e5547dc965b33ff61ad9843e7ea7"
+    },
+    {
+      "path": "part-004.txt",
+      "sha256": "1e89e689b96b5a5a128203ff13c784fc48a6163aa1d2c2892b87b49ecb257530"
+    },
+    {
+      "path": "part-005.txt",
+      "sha256": "9f926934451b5420e236103e6f40f36f0fbcb9db9e08648cd9d170c8a4301100"
+    },
+    {
+      "path": "part-006.txt",
+      "sha256": "a40f74a670fa2dc810a334df295e5ac686a6cc467f933108d10e68f0bf2b777b"
+    },
+    {
+      "path": "part-007.txt",
+      "sha256": "7d6464026d2cbfad9677ee5b2f5380d2aabc25b8578a384386a8eca195f52dfb"
+    },
+    {
+      "path": "part-008.txt",
+      "sha256": "6cd04beddec733cf1dd90cb856d7caf577d0739bce1cbd0bee3319aacf2c922d"
+    },
+    {
+      "path": "part-009.txt",
+      "sha256": "3e861b69127cb88d5510002462019670223bfd2180ed9b7b25a13599eb615dc2"
+    },
+    {
+      "path": "part-010.txt",
+      "sha256": "6b302203b6d9ba95632f48a55b13bac6a504b42dcfe31398ab8882b1082a4136"
+    },
+    {
+      "path": "part-011.txt",
+      "sha256": "79cedf267bf291770963cc4c19dc69eaee3bf83470eb09a92152f19c49c71e92"
+    },
+    {
+      "path": "part-012.txt",
+      "sha256": "34a54940ede8fb731d3e595c14b46cda218c685304924c576175c89921b2522f"
+    },
+    {
+      "path": "part-013.txt",
+      "sha256": "99141117bf064fa4a99703526e9657713d9ca6b374dfe6b5121c9066b3ddcd05"
+    },
+    {
+      "path": "part-014.txt",
+      "sha256": "19542fb55c4df94e48f97fe6e3ebb8be1f409c10d8dee7be9a23901a1444be29"
+    },
+    {
+      "path": "part-015.txt",
+      "sha256": "f65a1317fb4c3d47ee7782d130c3e9faa3404a5537cdfc7dc4ddd4ca1b03d793"
+    },
+    {
+      "path": "part-016.txt",
+      "sha256": "9bb88f474cba1d9e8f0308e1ac0773f66bae07413fab94b3926f4dadd3c4375b"
+    }
+  ],
+  "delivered": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "actor": "claude-main",
+  "reused": [
+    ".claude/commands/_decision-evidence.md",
+    ".claude/commands/_testing-labels.md",
+    ".claude/commands/_content-standard.md",
+    ".claude/commands/_anti-ai-language.md",
+    ".claude/commands/_experience.md",
+    ".claude/commands/_workflow-checkpoints.md",
+    ".claude/commands/_rendered-page-audit.md",
+    ".claude/commands/_mindmap-execution.md"
+  ],
+  "reuse": {
+    "directory": "reports/mindmap-pass/651890a4c73b4c11a556f8a37b8176d4/preflight-build",
+    "sha256": "65228d460cbbe0eb0ddbc28c79a77b7afb4008c19775b564333c9d4efc3270e7"
+  }
+}

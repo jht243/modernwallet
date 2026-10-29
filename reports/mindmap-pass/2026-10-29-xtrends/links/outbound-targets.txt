@@ -1,0 +1,7 @@
+# Inspected 2026-10-29: new-page outbound link targets (all exist in the live sitemap, verified 2026-10-29)
+/mortgage/home-affordability-calculator/: 1 in sitemap
+/rent-vs-buy-calculator/: 1 in sitemap
+/mortgage/closing-cost-calculator/: 1 in sitemap
+/guides/tax-deductions-for-homeowners/: 1 in sitemap
+/checklists/home-buying-checklist/: 1 in sitemap
+/compare/renting-vs-buying/: 1 in sitemap

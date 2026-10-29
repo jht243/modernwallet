@@ -1,0 +1,68 @@
+{
+ "slug": "hidden-cost-of-owning-a-home-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1642,
+ "floor": 1000,
+ "input_tokens": 31142,
+ "output_tokens": 13291,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.3904,
+ "guards": {
+  "repairs": [
+   "slug None -> 'hidden-cost-of-owning-a-home-calculator'"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1642,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 581,
+   "floor": 1000,
+   "ratio": 0.58,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    0
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "At ModernWallet, we ran the calculator's arithmetic over seven homeowner scenarios in our internal cost modeling, including a low-maintenance home, a condo with HOA dues and a high-insurance market.",
+     "replacement": "In our internal cost modeling, we ran the calculator's arithmetic over seven homeowner scenarios, including a low-maintenance home, a condo with HOA dues and a high-insurance market.",
+     "type": "contradicted",
+     "why": "Site self-description names the site The Modern Wallet, not ModernWallet"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1644
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 133.3,
+ "response_id": "msg_011CgWuhmRpizi9CoRr36ypY",
+ "generated_at": "2026-10-29T17:20:27+0000"
+}

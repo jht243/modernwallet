@@ -1,0 +1,395 @@
+{
+ "nationalSumCheck": {
+  "components": 16566,
+  "reportedTotal": 16566,
+  "engineTotal": 16566,
+  "monthly": 1380.5
+ },
+ "backcastFiveYears": {
+  "maintenance": 8462.878787878788,
+  "propertyTax": 2629.4117647058824,
+  "insurance": 1471.4285714285713,
+  "sum": 12563.719124013242,
+  "totalFromReportedPct": 12550,
+  "impliedTotalChangePct": 31.855860804283132
+ },
+ "scenarios": [
+  {
+   "id": "S1-national-typical",
+   "input": {
+    "maintenance": 11171,
+    "propertyTax": 3129,
+    "insurance": 2266,
+    "hoaMonthly": 0,
+    "mortgageMonthly": 0,
+    "homeValue": 0,
+    "growthPct": 3,
+    "years": 5
+   },
+   "result": {
+    "annual": 16566,
+    "monthly": 1380.5,
+    "hoaAnnual": 0,
+    "vsNationalAnnual": 0,
+    "share": {
+     "maintenance": 0.6743329711457201,
+     "propertyTax": 0.18888084027526258,
+     "insurance": 0.13678618857901725,
+     "hoa": 0
+    },
+    "pctOfValue": null,
+    "allInMonthly": null,
+    "maintenanceMonthly": 930.9166666666666,
+    "schedule": [
+     {
+      "year": 1,
+      "total": 16566
+     },
+     {
+      "year": 2,
+      "total": 17062.98
+     },
+     {
+      "year": 3,
+      "total": 17574.8694
+     },
+     {
+      "year": 4,
+      "total": 18102.115482
+     },
+     {
+      "year": 5,
+      "total": 18645.17894646
+     }
+    ],
+    "cumulative": 87951.14382846
+   }
+  },
+  {
+   "id": "S2-condo-with-hoa-400",
+   "input": {
+    "maintenance": 3000,
+    "propertyTax": 3129,
+    "insurance": 800,
+    "hoaMonthly": 400,
+    "mortgageMonthly": 0,
+    "homeValue": 0,
+    "growthPct": 3,
+    "years": 5
+   },
+   "result": {
+    "annual": 11729,
+    "monthly": 977.4166666666666,
+    "hoaAnnual": 4800,
+    "vsNationalAnnual": -9637,
+    "share": {
+     "maintenance": 0.2557762810128741,
+     "propertyTax": 0.26677466109642767,
+     "insurance": 0.06820700827009975,
+     "hoa": 0.4092420496205985
+    },
+    "pctOfValue": null,
+    "allInMonthly": null,
+    "maintenanceMonthly": 250,
+    "schedule": [
+     {
+      "year": 1,
+      "total": 11729
+     },
+     {
+      "year": 2,
+      "total": 12080.87
+     },
+     {
+      "year": 3,
+      "total": 12443.2961
+     },
+     {
+      "year": 4,
+      "total": 12816.594983
+     },
+     {
+      "year": 5,
+      "total": 13201.092832490001
+     }
+    ],
+    "cumulative": 62270.853915490006
+   }
+  },
+  {
+   "id": "S3-new-build-low-maintenance",
+   "input": {
+    "maintenance": 3000,
+    "propertyTax": 3129,
+    "insurance": 2266,
+    "hoaMonthly": 0,
+    "mortgageMonthly": 0,
+    "homeValue": 0,
+    "growthPct": 3,
+    "years": 5
+   },
+   "result": {
+    "annual": 8395,
+    "monthly": 699.5833333333334,
+    "hoaAnnual": 0,
+    "vsNationalAnnual": -8171,
+    "share": {
+     "maintenance": 0.357355568790947,
+     "propertyTax": 0.3727218582489577,
+     "insurance": 0.2699225729600953,
+     "hoa": 0
+    },
+    "pctOfValue": null,
+    "allInMonthly": null,
+    "maintenanceMonthly": 250,
+    "schedule": [
+     {
+      "year": 1,
+      "total": 8395
+     },
+     {
+      "year": 2,
+      "total": 8646.85
+     },
+     {
+      "year": 3,
+      "total": 8906.2555
+     },
+     {
+      "year": 4,
+      "total": 9173.443165
+     },
+     {
+      "year": 5,
+      "total": 9448.646459950001
+     }
+    ],
+    "cumulative": 44570.19512495
+   }
+  },
+  {
+   "id": "S4-high-insurance-metro",
+   "input": {
+    "maintenance": 11171,
+    "propertyTax": 3129,
+    "insurance": 5000,
+    "hoaMonthly": 0,
+    "mortgageMonthly": 0,
+    "homeValue": 0,
+    "growthPct": 3,
+    "years": 5
+   },
+   "result": {
+    "annual": 19300,
+    "monthly": 1608.3333333333333,
+    "hoaAnnual": 0,
+    "vsNationalAnnual": 2734,
+    "share": {
+     "maintenance": 0.5788082901554404,
+     "propertyTax": 0.16212435233160621,
+     "insurance": 0.25906735751295334,
+     "hoa": 0
+    },
+    "pctOfValue": null,
+    "allInMonthly": null,
+    "maintenanceMonthly": 930.9166666666666,
+    "schedule": [
+     {
+      "year": 1,
+      "total": 19300
+     },
+     {
+      "year": 2,
+      "total": 19879
+     },
+     {
+      "year": 3,
+      "total": 20475.37
+     },
+     {
+      "year": 4,
+      "total": 21089.6311
+     },
+     {
+      "year": 5,
+      "total": 21722.320033000004
+     }
+    ],
+    "cumulative": 102466.32113299999
+   }
+  },
+  {
+   "id": "S5-with-mortgage-and-value",
+   "input": {
+    "maintenance": 11171,
+    "propertyTax": 3129,
+    "insurance": 2266,
+    "hoaMonthly": 0,
+    "mortgageMonthly": 2200,
+    "homeValue": 400000,
+    "growthPct": 3,
+    "years": 5
+   },
+   "result": {
+    "annual": 16566,
+    "monthly": 1380.5,
+    "hoaAnnual": 0,
+    "vsNationalAnnual": 0,
+    "share": {
+     "maintenance": 0.6743329711457201,
+     "propertyTax": 0.18888084027526258,
+     "insurance": 0.13678618857901725,
+     "hoa": 0
+    },
+    "pctOfValue": 4.1415,
+    "allInMonthly": 3580.5,
+    "maintenanceMonthly": 930.9166666666666,
+    "schedule": [
+     {
+      "year": 1,
+      "total": 16566
+     },
+     {
+      "year": 2,
+      "total": 17062.98
+     },
+     {
+      "year": 3,
+      "total": 17574.8694
+     },
+     {
+      "year": 4,
+      "total": 18102.115482
+     },
+     {
+      "year": 5,
+      "total": 18645.17894646
+     }
+    ],
+    "cumulative": 87951.14382846
+   }
+  },
+  {
+   "id": "S6-zero-growth-10-years",
+   "input": {
+    "maintenance": 11171,
+    "propertyTax": 3129,
+    "insurance": 2266,
+    "hoaMonthly": 0,
+    "mortgageMonthly": 0,
+    "homeValue": 0,
+    "growthPct": 0,
+    "years": 10
+   },
+   "result": {
+    "annual": 16566,
+    "monthly": 1380.5,
+    "hoaAnnual": 0,
+    "vsNationalAnnual": 0,
+    "share": {
+     "maintenance": 0.6743329711457201,
+     "propertyTax": 0.18888084027526258,
+     "insurance": 0.13678618857901725,
+     "hoa": 0
+    },
+    "pctOfValue": null,
+    "allInMonthly": null,
+    "maintenanceMonthly": 930.9166666666666,
+    "schedule": [
+     {
+      "year": 1,
+      "total": 16566
+     },
+     {
+      "year": 2,
+      "total": 16566
+     },
+     {
+      "year": 3,
+      "total": 16566
+     },
+     {
+      "year": 4,
+      "total": 16566
+     },
+     {
+      "year": 5,
+      "total": 16566
+     },
+     {
+      "year": 6,
+      "total": 16566
+     },
+     {
+      "year": 7,
+      "total": 16566
+     },
+     {
+      "year": 8,
+      "total": 16566
+     },
+     {
+      "year": 9,
+      "total": 16566
+     },
+     {
+      "year": 10,
+      "total": 16566
+     }
+    ],
+    "cumulative": 165660
+   }
+  },
+  {
+   "id": "S7-empty",
+   "input": {
+    "maintenance": 0,
+    "propertyTax": 0,
+    "insurance": 0,
+    "hoaMonthly": 0,
+    "mortgageMonthly": 0,
+    "homeValue": 0,
+    "growthPct": 3,
+    "years": 5
+   },
+   "result": {
+    "annual": 0,
+    "monthly": 0,
+    "hoaAnnual": 0,
+    "vsNationalAnnual": -16566,
+    "share": {
+     "maintenance": 0,
+     "propertyTax": 0,
+     "insurance": 0,
+     "hoa": 0
+    },
+    "pctOfValue": null,
+    "allInMonthly": null,
+    "maintenanceMonthly": 0,
+    "schedule": [
+     {
+      "year": 1,
+      "total": 0
+     },
+     {
+      "year": 2,
+      "total": 0
+     },
+     {
+      "year": 3,
+      "total": 0
+     },
+     {
+      "year": 4,
+      "total": 0
+     },
+     {
+      "year": 5,
+      "total": 0
+     }
+    ],
+    "cumulative": 0
+   }
+  }
+ ]
+}

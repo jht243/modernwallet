@@ -1,0 +1,21 @@
+coverage_lookup: 1 candidate(s) vs 797 repo pages / 807 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1000 past-chart lines
+
+### /hidden-cost-of-owning-a-home-calculator/  — row - · create new content
+keyword: hidden cost of owning a home; cost of owning a home calculator; true cost of owning a home
+reader question (new page intent): How much does it really cost per year to own a home on top of the mortgage?
+lookup terms: hidden owning home true   format cues: calculator pricing
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/renting-vs-buying  [in sitemap · src/data/comparisons.ts · topic match 0.5 on home true · same format: pricing]
+    title: Renting vs Buying a Home: Which Is Better for You?
+    desc:  Renting vs buying a home compared: true costs, equity, flexibility, and which choice wins at different life stages and markets.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-09-cybercab.md [table] | 3 | **Lens 3 (pricing) — total cost of ownership, not sticker price.** "cybercab price" 1000/kd8, "cybercab cost" 390/kd11, "cybercab ride cost" (est. 150), "cybercab fleet" 20, autocomplete "cybercab how much does it 
+- 2026-09-09-cybercab.md [table] | 4 | **Lens 3 (comparison) — Cybercab vs Uber, priced from both sides.** "cybercab vs uber" (est. band 150, 6 live autocompletes), "is cybercab cheaper than uber" (est. 75), autocomplete "cybercab uber". Real PAA: *"Is 
+- 2026-10-11-tool-usage.md [table] | 7 | Lens 1 (tool usage, net-worth — low-use lane: 1 use / 13 views). Persona: 38-year-old homeowner who searched "liquid net worth". Walkthrough: the big headline is total "Net worth"; the page's own keyword "Liquid ne
+- 2026-10-14-tool-usage.md [table] | 2 | Lens 1 (tool usage, mortgage). Persona quote: "I don't have a home price, I have a balance and 26 years left." The payoff tool only takes home price + down payment + a 10/15/20/30-yr term, and adds a PMI estimate w
+Commits naming the topic: none
+Same run overlap: none
+

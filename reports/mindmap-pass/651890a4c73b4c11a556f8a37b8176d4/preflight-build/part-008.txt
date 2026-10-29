@@ -1,0 +1,76 @@
+.claude/commands/_content-standard.md — characters 27000 onward
+
+by the site template from the record, never written into prose (GATE Byline in body prose still applies to them).
+
+---
+
+## DEPTH
+
+Every article page has a **minimum body word count** by page type. These are **floors, not targets** — a page under its floor does not compete, and the audit phase hard-fails it. Body words = reader-facing prose only (intro + section bodies + FAQ answers + verdict); title, meta, nav/header/footer, schema, CTA boilerplate, and code blocks do NOT count.
+
+| Page type | Floor (body words) |
+|---|---|
+| comparison (`X vs Y`) | 1,500 |
+| review | 1,500 |
+| persona / audience page (`for [audience]`) | 1,400 |
+| hub / section index | 1,200 |
+| worth-it | 1,200 |
+| explainer / spoke (**the default for anything else**) | 1,200 |
+| cost / pricing | 1,000 |
+| editorial (about / methodology) | 600 |
+
+The floors apply to **both registers**. A news or announcement page is held to the same floor as a guide; if a launch genuinely has less than a floor's worth of substance, it belongs merged into a broader page, not shipped thin.
+
+Hitting the floor with padding is a **worse** failure than missing it — `_anti-ai-language.md` and ANCHOR still apply in full, and the audit checks them on the same pass. If you cannot reach the floor without filler, the topic is too thin for its own page: STOP and flag the row for merging into a related page rather than shipping a padded one.
+
+**How to actually hit the floor — do NOT pad.** Adding words to reach a number produces exactly the AI filler the audit hard-fails. Reach it by *answering more of the query*:
+- Enumerate the 5–8 sub-questions a searcher on this term also has, and answer each on-page.
+- Give the **failure mode** and the **inversion case** — when the general advice is wrong, and for whom. This is the highest-information-gain content on any page and the most commonly missing.
+- Show the arithmetic rather than asserting the conclusion (cost math, dose math, break-even).
+- Add a table only where it carries data the prose does not.
+A page that clears its floor through longer sentences, restated headings, or a padded FAQ has failed this rule even though the count passes.
+
+**Record the page type on the row** as `page type: <type>`, using a label from the table above, alongside the `medium:` and `register:` records. The floor follows from it, so the audit phase must read the page type rather than infer it. Where a page could plausibly be two types, pick the one whose floor is HIGHER and say why in the row.
+
+Record the final body word count for each page you write and hand it to the audit phase with the page.
+
+---
+
+## QUALITY
+
+Before writing, research the topic using search tools. Gather current statistics, recent trends, competitor insights, expert quotes, authoritative citations, and real-world examples. Prioritize industry reports, government data, academic research, reputable publications, official company sources, and recent case studies.
+
+- Match search intent fully.
+- Write accurate, original, useful content with practical advice.
+- Include current-year references, recent data, statistics, trends, and examples.
+- Demonstrate E-E-A-T with citations, expert sources, detailed explanations, and credibility indicators where relevant.
+- Add specific examples, use cases, tips, and actionable takeaways.
+- **Information gain.** At least one example must contribute information NOT already present on the top-ranking pages for this topic (first-hand operational detail, an industry-specific failure mode, a non-obvious tradeoff, or a decision criterion competitors don't surface). Weave it INTO the relevant existing section as a supporting sentence or bullet — never split it into a standalone self-promotional section. Reframing the same ideas as competitors in different words does NOT satisfy this rule.
+- **Answer-engine optimization (AEO).** The FIRST sentence of each major section's content must be a complete, self-contained declarative statement that answers the section's question directly, without requiring context from surrounding paragraphs. AI assistants extract passages, not full articles — each passage must stand alone. This applies ONLY to section openers, never to the page's first body sentence (that slot is VOICE: the answer, then a tee-up only if it belongs). Transitions still apply within and between paragraphs. Each FAQ answer also leads with the direct answer; nuance and caveats follow.
+- **Authorship** (mandatory on YMYL — compliance, finance, medical, legal): a named, credentialed human reviewer in a visible byline + a Person entry in JSON-LD. **Reviewer name and review date belong in the page's header/byline area and in structured schema (`reviewer` / `lastReviewed`), NOT in body prose — do NOT write any "Reviewed by [name] on [date]", "Last updated…", author, or research-method sentence into the body/intro/sections/verdict/FAQ or any prose field.** If this project's template renders the byline from the record's date fields, just set the structured `publishedDate` / `updatedDate` field and let the template render it; if the template has no byline slot yet, put the byline in the header/metadata + JSON-LD — still never as a body paragraph. Organization-only author is not acceptable on YMYL.
+- **State the consequence, never a bare feature.** Buyers do not purchase specifications; they purchase a changed situation — time saved, risk removed, a job that stops needing a person. Every feature or capability you name must say what it does FOR the reader, in the same sentence or the next one. "A five-year warranty" is a spec. "A five-year warranty covers a cracked housing" is the claim. Prefer one natural sentence. Split only if the line becomes a stack the reader has to re-read. Listing capabilities and trusting the reader to infer why they matter is the most common reason competent copy fails to persuade. This does not license hype: the consequence must be concrete and true, and `_anti-ai-language.md` still bans the inflated adjectives that usually smuggle themselves in here.
+- **First-party sourcing.** Cite primary sources directly — the vendor's own page, the regulator's own page, the official trust center — never aggregators. The link is for verification; the article still carries the substantive answer on-page.
+- **Task completion.** The article must answer the reader's intent on-page. No thin wrappers around an external link, no empty templates. If the page points to a primary source, the on-page version still leads with the substantive answer.
+
+---
+
+## STYLE
+
+- Use simple, everyday language at a 7th–8th grade reading level.
+- Keep sentences easy enough to parse on the first read. One idea per sentence. A clear sentence a person would say aloud can run 20 to 28 words. Do not split a natural sentence just to hit a count. Do not write a 30-word stack.
+- Use active voice.
+- Write one main idea per sentence. One idea may take 22 words. That is still one idea.
+- Keep paragraphs to 3 sentences max.
+- **Lists for parallel items, prose for a story.** If you announce three or more items of the same job (steps, checks, tests, criteria), put them in a list. Numbered when sequence or a count matters; bullets when it does not. A one-sentence lead-in ("Check five things.") may stay prose. A closer that is a different job stays a paragraph after the list. Two related sentences, or a story that uses "first … then …", stay prose. Do not write "First, … Second, … Third, …" as body paragraphs when the items are parallel, and do not turn a pair into a list to look structured. If this project's page record has a list field (`bullets` on a section), put the items there. Do not fake a list inside body `content`.
+- Add subheadings every 200–300 words.
+- Use common words: "help" instead of "facilitate," "use" instead of "utilize," and "show" instead of "demonstrate."
+- Avoid jargon unless necessary.
+- Use transition words naturally.
+- Keep the tone helpful, clear, and professional.
+
+**Vary sentence length on purpose.** Uniform sentence length is the single most reliable signal that text was machine-produced, and it makes a page monotonous to read even when every sentence is correct. Sugarman edits specifically for rhythm; do the same. Working bands: **short (1 to 8 words), medium (9 to 14), long (15 or more)**. A long spoken sentence is often 20 to 28 words. That is allowed. Two concrete rules:
+- Any run of 10 consecutive sentences uses at least **two** bands. It does **not** have to include a 1-to-8 word sentence.
+- Never write **5 consecutive sentences** whose lengths sit within 3 words of each other.
+Short sentences carry emphasis. Spend them on the actual point, when you have one. Do not invent a short sentence to hit the mix. Do not split a natural sentence into a stub and a follow-up. A page of clear 12-to-24 word sentences a person would say is better than a page of 5-word stubs manufactured for the count.
+
+**The opening sentence earns the second one.** The first sentence of the page exis

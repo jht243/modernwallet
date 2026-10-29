@@ -1,0 +1,176 @@
+{
+ "rows": [
+  {
+   "keyword": "hidden cost of owning a home",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": 4,
+   "cpc": 1.52,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "hidden costs of homeownership",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": 4,
+   "cpc": 1.52,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "cost of owning a home calculator",
+   "volume": 170,
+   "volume_low": 170,
+   "volume_high": 170,
+   "kd": 25,
+   "cpc": 3.74,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "homeownership cost calculator",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 59,
+   "cpc": 2.59,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "home maintenance cost calculator",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": 6,
+   "cpc": 5.57,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "fed rate decision",
+   "volume": 40500,
+   "volume_low": 40500,
+   "volume_high": 40500,
+   "kd": 49,
+   "cpc": 3.8,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "fed holds rates",
+   "volume": 140,
+   "volume_low": 140,
+   "volume_high": 140,
+   "kd": 15,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "will interest rates go up",
+   "volume": 2400,
+   "volume_low": 2400,
+   "volume_high": 2400,
+   "kd": 49,
+   "cpc": 4.59,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "cd rates",
+   "volume": 165000,
+   "volume_low": 165000,
+   "volume_high": 165000,
+   "kd": 44,
+   "cpc": 6.72,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "true cost of homeownership",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 9 live autocomplete completions (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "cost of owning a house per year",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using dataforseo (quality order dataforseo)",
+  "dataforseo returned volume for 9/11 phrases",
+  "kd: using dataforseo (quality order dataforseo)",
+  "No tool volume for 2 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 11/11 rows corroborated live"
+ ]
+}

@@ -1,0 +1,102 @@
+.claude/commands/_content-standard.md — characters 45000 onward
+
+is page's nouns into their sentences, and do not import their nouns onto this page. "You" in 1 to 3 and 5 is the reader, or an "if you" role. It is not an ownership claim about this page's subject. Example 4 is the reporter register: third person, news first, no "we". Copy that register, not the news story. Example 5 is a long spoken sentence that still reads once. VOICE, STYLE, and `_anti-ai-language.md` still govern the page you ship. Only sentences that already clear those rules are quoted.
+
+### 1. Derek Sivers on CD Baby (story with numbers)
+
+Third person, then a nine-word consequence. Source: [sive.rs/a](https://sive.rs/a), [sive.rs/cdbe](https://sive.rs/cdbe).
+
+> Derek Sivers accidentally started a business by helping musicians sell their music. It became the largest online seller of independent music with over 150,000 musicians and $100M in sales. After ten years, he sold the company for $22 million and gave all the money to charity.
+>
+> When you make a business, you're making a little world where you control the laws. It doesn't matter how things are done everywhere else. In your little world, you can make it like it should be.
+>
+> That one goofy email created thousands of new customers.
+
+The move: a person, a job, a number, an ending you can see. The last line is the whole argument. No adjective is doing the work.
+
+### 2. James Clear on goals and systems (an idea you can picture)
+
+Each role is a different picture, not the same sentence twice. Source: [jamesclear.com/goals-systems](https://jamesclear.com/goals-systems), [jamesclear.com/saying-no](https://jamesclear.com/saying-no).
+
+> If you're a coach, your goal might be to win a championship. Your system is the way you recruit players, manage your assistant coaches, and conduct practice.
+>
+> If you're an entrepreneur, your goal might be to build a million-dollar business. Your system is how you test product ideas, hire employees, and run marketing campaigns.
+>
+> Goals are about the results you want to achieve. Systems are about the processes that lead to those results.
+>
+> Not doing something will always be faster than doing it. There is no meeting that goes faster than not having a meeting at all.
+>
+> When you say no, you are only saying no to one option. When you say yes, you are saying no to every other option.
+
+The move: name a person, name the goal, then name the work. "If you're a coach" scopes the "you". It does not assume the reader is one.
+
+### 3. GOV.UK passport page (the job, the price, the clock)
+
+A task page. Plain words. A number that changes the decision. Source: [gov.uk/apply-renew-passport](https://www.gov.uk/apply-renew-passport).
+
+> Use this service to apply for, renew, replace or update your passport and pay for it online.
+>
+> You'll need a debit or credit card to use this service.
+>
+> It's £13.50 cheaper to apply for a passport online than by post.
+>
+> Check how long it will take to get a passport before you apply.
+>
+> You can pick up a paper passport application form from your local Post Office and apply by post. It takes longer to apply by post than online.
+
+The move: say what the page does in one breath. Then the constraint, the saving, and the slower path. No warm-up. No summary.
+
+### 4. Reporter register (the news, then the fact)
+
+Sentence 1 is what happened. Third person. A date or a number if you have one. No "we". No tee-up. Source: [gov.uk](https://www.gov.uk/government/news/millions-to-receive-essential-benefit-payments-early).
+
+> Benefit payments originally due on Monday 31 August 2026 will be paid early on Friday 28 August 2026.
+
+The move: who, what, when. When the row is reporter, write like a notice. Do not wrap it in "we". Do not import this benefits story onto another page.
+
+### 5. A long sentence that still reads once (CFPB on payday loans)
+
+One thought, said in one breath, with a number in it. Not a 5-word stub and then the fact. Source: [consumerfinance.gov](https://www.consumerfinance.gov/ask-cfpb/what-is-a-payday-loan-en-1567/).
+
+> A typical two-week payday loan with a $15 per $100 fee equates to an annual percentage rate (APR) of almost 400 percent. By comparison, APRs on credit cards can range from about 12 percent to about 30 percent.
+>
+> If you don't repay the loan on or before the due date, the lender can cash the check or electronically withdraw money from your account.
+
+The move: 22 words, then 16, then 25. Each is one idea a person would say. Do not split any of them into a stub. Do not import this payday-loan story onto another page.
+
+---
+
+## COMPARISON
+
+**NET ADD — do not remove or shrink any existing section.**
+
+- After the page structure is fully planned, ask: does this topic have a natural "X vs Y," "X vs alternatives," or "which approach/tool is better for [use case]" question a reader would also want answered?
+- If yes, add a comparison table (3–5 criteria rows, one column per option, a verdict row) and a brief "when to choose X" paragraph as an EXTRA section on top of the already-planned outline. This is additive only — it must not replace, shorten, or merge with any section that was already planned.
+- Applicable on: tool/platform pages, methodology pages, regulatory/compliance option pages, any page where two or more approaches, products, or frameworks are meaningfully in scope. Skip if the page is definitional or reference content with no real comparison axis.
+- Do NOT force a comparison where none exists — one well-executed table beats a hollow one.
+
+---
+
+## LINKS
+
+**MANDATORY, NO EXCEPTIONS: the first time you name any company, you link to it.** This is the most frequently broken rule in this file. If a proper noun names an organisation, it gets a link on its first appearance. That includes companies you cite as a source, comparison and aggregator sites, publications, research outfits, and vendors you mention only in passing to dismiss them. Naming a source without linking it is the same defect as not naming it: the reader cannot check your work either way.
+
+**Writers (new content, body/enrich edits, tools).** The FIRST time a page names ANY external company, product, tool, model, benchmark, standard, law/regulation, dataset, study, or cited source a reader might click to act on your advice, that mention MUST link to its OFFICIAL primary source — the vendor's, lab's, or regulator's own page, or the benchmark's own repo. Never an aggregator. Link only the first mention of each entity.
+
+**Exception — projects that auto-link at render time.** If THIS project turns common entities into links automatically via a render-time registry (Phase 0 discovers whether it does, and where), write those names in PLAIN TEXT so the page is not double-linked, and never hand-write a referral URL. **CHECK the registry before writing — never assume a vendor is in it.** If the entity is NOT in the registry, hand-link it inline; if it will recur across many pages, extend the registry instead (preferred) and keep the name plain. If the project has no auto-linker, hand-link everything. When unsure, hand-link — one correct link on first mention is the goal.
+
+**Deep-link the page you are sending the reader to.** The auto-link registry sends a bare entity name to that organisation's HOMEPAGE. That is right for a passing mention and wrong whenever you direct the reader somewhere specific. When the sentence tells them to check a price, read the docs, confirm a limit, or verify a policy, hand-link the exact URL that answers it (the official pricing or docs URL, not the homepage). Markdown links are resolved BEFORE auto-linking and are left untouched, so a hand-written deep link does not double-link. Put the link on the destination words rather than on the bare entity name: the words "pricing page" point at that organisation's official pricing URL.
+
+**Name the subject; never write "the vendor".** On a page about a named product or company, use its name in every sentence that refers to it. Generic stand-ins ("the vendor", "the platform", "this provider") are banned by `_anti-ai-language.md` and fail the audit.
+
+**Auditors.** An unlinked first mention of a company/product NOT covered by the project's auto-link registry is a **HARD FAIL**, not an advisory note. The fix is additive: link the first occurrence, or register the entity. Never rewrite the page.
+
+---
+
+## ANCHOR
+
+Google's February 2026 core update rewarded pages carrying **proprietary substance** — first-hand detail, real cases, a defensible point of view — and demoted pages that carry none. Every page must give the reader something the top-ranking results do not already have.
+
+**Do this FIRST, before drafting.** Load `.claude/commands/_experience.md` and walk it against your topic:
+- Its **required** section says who we are to this site's reader and what we have actually done in this domain. This always licenses general framing.
+- Its **optional** section, where the repo has authored one, holds concrete, true, citable specifics — named clients, real engagements, systems we operate — pl

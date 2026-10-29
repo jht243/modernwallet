@@ -1,0 +1,3 @@
+.claude/commands/_rendered-page-audit.md — characters 9000 onward
+
+ng tooling, unavailable rendered output or a failed audit blocks the affected publication; resolve it within the authorized run.

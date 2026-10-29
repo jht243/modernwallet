@@ -1,0 +1,3 @@
+# Inspected 2026-10-29: Fed guide structure for section placement
+17950:    slug: "fed-rate-hike-savings-investments",
+sections[0] today: 'The Federal Funds Rate Mechanism and Borrowing Costs'; new section inserts at index 0 (section 1), before it.

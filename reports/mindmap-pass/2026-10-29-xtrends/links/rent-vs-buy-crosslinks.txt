@@ -1,0 +1,10 @@
+# Inspected 2026-10-29: src/data/cross-links.ts group for /rent-vs-buy-calculator/ (renders as the 'Plan the bigger picture' pill row on that page via CrossLinks.astro)
+  "rent-vs-buy-calculator": [
+    { href: "/compare/renting-vs-buying/", label: "Renting vs buying: the tradeoffs explained" },
+    { href: "/mortgage/affordability-calculator/", label: "How much house can you afford?" },
+    { href: "/mortgage/down-payment-calculator/", label: "How much should you put down?" },
+    { href: "/investing/compound-interest-calculator/", label: "See what invested cash grows to" },
+    { href: "/guides/how-much-should-i-spend-on-rent/", label: "How much of your income should go to rent?" },
+  ],
+
+# Plan: add one pill { href: "/hidden-cost-of-owning-a-home-calculator/", label: "What does owning cost beyond the mortgage?" } to this group only (1 route affected). The 'mortgage' group renders on the hub and its spokes (14+ routes), so it is left untouched this run.

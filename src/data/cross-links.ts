@@ -5,6 +5,14 @@
 export interface CrossLink { href: string; label: string; }
 
 export const CROSS_LINKS: Record<string, CrossLink[]> = {
+  // X-trends pass (2026-10-29).
+  "hidden-cost-of-owning-a-home-calculator": [
+    { href: "/mortgage/home-affordability-calculator/", label: "How much house can you afford?" },
+    { href: "/rent-vs-buy-calculator/", label: "Should you rent or buy? Find the break-even year" },
+    { href: "/mortgage/closing-cost-calculator/", label: "Estimate your closing costs" },
+    { href: "/guides/tax-deductions-for-homeowners/", label: "Tax deductions for homeowners" },
+    { href: "/checklists/home-buying-checklist/", label: "Home buying checklist" },
+  ],
   // Autocomplete pass (2026-10-28).
   "rent-vs-buy-calculator": [
     { href: "/compare/renting-vs-buying/", label: "Renting vs buying: the tradeoffs explained" },
@@ -12,6 +20,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/mortgage/down-payment-calculator/", label: "How much should you put down?" },
     { href: "/investing/compound-interest-calculator/", label: "See what invested cash grows to" },
     { href: "/guides/how-much-should-i-spend-on-rent/", label: "How much of your income should go to rent?" },
+    { href: "/hidden-cost-of-owning-a-home-calculator/", label: "What does owning cost beyond the mortgage?" },
   ],
   "stock-capital-gains-tax-calculator": [
     { href: "/tax-bracket-calculator/", label: "Find your 2026 tax bracket" },

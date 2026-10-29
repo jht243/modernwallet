@@ -1,0 +1,128 @@
+{
+  "source": "Zillow and Thumbtack 'Hidden costs of homeownership' release of 2026-10-22 (https://zillow.mediaroom.com/2026-10-22-Hidden-costs-of-homeownership-top-16-5K-year,-up-nearly-32-in-5-years), fetched 2026-10-29; the same figures are reported by Fox Business (2026-10-22). Zillow supplies property taxes and insurance, Thumbtack supplies maintenance.",
+  "national": {
+    "maintenance": 11171,
+    "propertyTax": 3129,
+    "insurance": 2266,
+    "reportedTotal": 16566,
+    "reportedMonthly": 1380
+  },
+  "reportedChanges": {
+    "totalFiveYearPct": 32,
+    "insuranceFiveYearPct": 54,
+    "maintenanceFiveYearPct": 32,
+    "propertyTaxFiveYearPct": 19,
+    "totalLastYearPct": 3,
+    "totalLastYearPctExact": 2.8,
+    "totalFiveYearPctExact": 31.7
+  },
+  "scenarios": [
+    {
+      "id": "S1-national-typical",
+      "input": {
+        "maintenance": 11171,
+        "propertyTax": 3129,
+        "insurance": 2266,
+        "hoaMonthly": 0,
+        "mortgageMonthly": 0,
+        "homeValue": 0,
+        "growthPct": 3,
+        "years": 5
+      }
+    },
+    {
+      "id": "S2-condo-with-hoa-400",
+      "input": {
+        "maintenance": 3000,
+        "propertyTax": 3129,
+        "insurance": 800,
+        "hoaMonthly": 400,
+        "mortgageMonthly": 0,
+        "homeValue": 0,
+        "growthPct": 3,
+        "years": 5
+      }
+    },
+    {
+      "id": "S3-new-build-low-maintenance",
+      "input": {
+        "maintenance": 3000,
+        "propertyTax": 3129,
+        "insurance": 2266,
+        "hoaMonthly": 0,
+        "mortgageMonthly": 0,
+        "homeValue": 0,
+        "growthPct": 3,
+        "years": 5
+      }
+    },
+    {
+      "id": "S4-high-insurance-metro",
+      "input": {
+        "maintenance": 11171,
+        "propertyTax": 3129,
+        "insurance": 5000,
+        "hoaMonthly": 0,
+        "mortgageMonthly": 0,
+        "homeValue": 0,
+        "growthPct": 3,
+        "years": 5
+      }
+    },
+    {
+      "id": "S5-with-mortgage-and-value",
+      "input": {
+        "maintenance": 11171,
+        "propertyTax": 3129,
+        "insurance": 2266,
+        "hoaMonthly": 0,
+        "mortgageMonthly": 2200,
+        "homeValue": 400000,
+        "growthPct": 3,
+        "years": 5
+      }
+    },
+    {
+      "id": "S6-zero-growth-10-years",
+      "input": {
+        "maintenance": 11171,
+        "propertyTax": 3129,
+        "insurance": 2266,
+        "hoaMonthly": 0,
+        "mortgageMonthly": 0,
+        "homeValue": 0,
+        "growthPct": 0,
+        "years": 10
+      }
+    },
+    {
+      "id": "S7-empty",
+      "input": {
+        "maintenance": 0,
+        "propertyTax": 0,
+        "insurance": 0,
+        "hoaMonthly": 0,
+        "mortgageMonthly": 0,
+        "homeValue": 0,
+        "growthPct": 3,
+        "years": 5
+      }
+    }
+  ],
+  "assumptionNote": "Scenario inputs S2 to S7 are illustrative reader cases chosen by us to exercise boundaries; they are not sourced facts and are labeled modeled on the page.",
+  "metroTotals": {
+    "highest": {
+      "metro": "New York, NY",
+      "total": 25111
+    },
+    "lowest": {
+      "metro": "Phoenix, AZ",
+      "total": 14187
+    },
+    "insuranceHighest": {
+      "metro": "Miami, FL",
+      "insuranceApprox": 5000
+    },
+    "count": 30
+  }
+}

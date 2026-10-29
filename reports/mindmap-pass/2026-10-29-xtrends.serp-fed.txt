@@ -1,0 +1,59 @@
+{
+ "keyword": "what does the fed holding rates mean for savings and mortgage rates",
+ "verdict": "winnable",
+ "forum_dominated": true,
+ "ai_overview_present": true,
+ "ai_overview_cited_domains": [],
+ "featured_snippet": null,
+ "top10_domains": [
+  "www.chase.com",
+  "www.stlouisfed.org",
+  "www.amerisave.com",
+  "en.wikipedia.org",
+  "www.unison.com",
+  "www.reddit.com",
+  "www.youtube.com",
+  "fortis.capital",
+  "www.chase.com",
+  "www.reddit.com"
+ ],
+ "major_domains": [
+  "en.wikipedia.org"
+ ],
+ "forum_domains": [
+  "www.reddit.com",
+  "www.youtube.com",
+  "www.reddit.com"
+ ],
+ "serp_feature_mix": {
+  "ai_overview": 1,
+  "organic": 19,
+  "people_also_ask": 1,
+  "related_searches": 2
+ },
+ "paa": [
+  "What was the Fed rate decision today?",
+  "What is expansionary monetary policy?",
+  "How do Fed interest rates work?",
+  "What is the interest rate on reserve balances?",
+  "What are the expected interest rates for 2026?",
+  "What would happen if the US abolished the Federal Reserve?"
+ ],
+ "related_searches": [
+  "Who sets interest rates for mortgages",
+  "What is the federal funds rate definition",
+  "Federal funds rate vs interest rate",
+  "How does the Fed vote on interest rates",
+  "Administered interest rates vs interest on reserves",
+  "Does the Federal Reserve set interest rates",
+  "How does the federal funds rate affect interest rates",
+  "Fed tools for monetary policy",
+  "What is the impact of Fed rate cut on gold",
+  "What does the federal funds rate do",
+  "Federal funds rate vs discount rate",
+  "What is the federal funds rate for"
+ ],
+ "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+ "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com); 1/10 major platforms (en.wikipedia.org); AI Overview present",
+ "se_results_count": 121
+}

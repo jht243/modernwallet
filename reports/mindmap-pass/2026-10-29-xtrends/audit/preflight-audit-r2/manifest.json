@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "root": "/home/user/modernwallet",
+  "phase": "audit",
+  "instructions": [
+    ".claude/commands/mindmap-pass/phase-4-audit.md"
+  ],
+  "files": {
+    ".claude/commands/_decision-evidence.md": "6b47b8b4b6763f5b4ff303ca0443ecf67c01d5efae95c2b0c0e968131fb16d98",
+    ".claude/commands/_testing-labels.md": "8a9dc3c646a583d7afe80339efb880be431a9f528e491ef0ea156bee4db053d9",
+    ".claude/commands/_content-standard.md": "aa7c8963d434904a0a4974b134f35e69644670b95e705686d26c6ff748274c38",
+    ".claude/commands/_anti-ai-language.md": "59194cdd7f83f7423489faa07759e571c73ef993a681bd917faa8a6f1a6803ac",
+    ".claude/commands/_experience.md": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+    ".claude/commands/_workflow-checkpoints.md": "30e5d9851f270c5f450dd601be20278cae55584e49422cbdefc2eaa4d15f60c2",
+    ".claude/commands/_rendered-page-audit.md": "ed1a184c1ad83939b2e1a280ce2f6c21c350e03871d715b18f9c25c2fde80ec9",
+    ".claude/commands/_mindmap-execution.md": "4c3db9b70b067609823eb43a8a6d7e15e7eb51bcbfd898f2dbdfbe660e3d8d08",
+    ".claude/commands/_remediation-ladder.md": "7c1c0f0532d68f1c3be78496e15be8afadd4f296f799da6d4e0e35d66f6d645c",
+    ".claude/commands/mindmap-pass/phase-4-audit.md": "e037aca5f33fe1fb9aece593555da5cce92b3b518d3d873d17461b0077099451"
+  },
+  "parts": [],
+  "delivered": [],
+  "actor": "phase4-auditor-1",
+  "reused": [
+    ".claude/commands/_decision-evidence.md",
+    ".claude/commands/_testing-labels.md",
+    ".claude/commands/_content-standard.md",
+    ".claude/commands/_anti-ai-language.md",
+    ".claude/commands/_experience.md",
+    ".claude/commands/_workflow-checkpoints.md",
+    ".claude/commands/_rendered-page-audit.md",
+    ".claude/commands/_mindmap-execution.md",
+    ".claude/commands/_remediation-ladder.md",
+    ".claude/commands/mindmap-pass/phase-4-audit.md"
+  ],
+  "reuse": {
+    "directory": "reports/mindmap-pass/2026-10-29-xtrends/audit/preflight-audit",
+    "sha256": "3c3cc457d532dec6dafb683fd87fafe1635bfe379393194db21755270a64d0bb"
+  }
+}
