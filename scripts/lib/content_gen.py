@@ -1900,8 +1900,8 @@ def cmd_system(a) -> int:
 def mindmap_gate(a) -> None:
     """Reject incomplete Mindmap preparation before a billable writer call."""
     paths = [getattr(a, key, '') for key in ('prompt', 'out', 'draft', 'facts')]
-    scoped = any('mindmap-pass' in pathlib.Path(p).parts for p in paths if p)
-    scoped = scoped or (CALLER or '').strip('/').startswith('mindmap-pass')
+    scoped = any(any(part in ('mindmap-pass', 'mindmappass-getopt') for part in pathlib.Path(p).parts) for p in paths if p)
+    scoped = scoped or (CALLER or '').strip('/').startswith(('mindmap-pass', 'mindmappass-getopt'))
     explicit = getattr(a, 'mindmap_manifest', '')
     if not scoped and not explicit:
         return
