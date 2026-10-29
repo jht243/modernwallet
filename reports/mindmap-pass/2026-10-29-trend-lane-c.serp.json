@@ -1,0 +1,283 @@
+{
+ "rows": [
+  {
+   "keyword": "index investment funds",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "investor.vanguard.com",
+    "www.investor.gov",
+    "www.fidelity.com",
+    "www.nerdwallet.com",
+    "www.investopedia.com",
+    "en.wikipedia.org",
+    "www.stonex.com",
+    "www.schwab.com",
+    "www.morningstar.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.schwab.com",
+    "www.morningstar.com",
+    "walknercondon.com",
+    "www.sofi.com",
+    "www.realized1031.com",
+    "www.sofi.com",
+    "www.aarp.org",
+    "www.nerdwallet.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "What is an index fund?",
+    "What if I invested $1000 a month in S&P 500?",
+    "Which is the best index mutual fund?",
+    "Which index fund is better, Nifty 50 or Nifty 100?",
+    "What are the top 3 index funds?",
+    "Why avoid index funds?"
+   ],
+   "related_searches": [
+    "Top index investment funds",
+    "Best index investment funds",
+    "Schwab index funds List",
+    "How to invest in index funds for beginners",
+    "Index funds vs mutual funds",
+    "How to invest in index funds without a broker",
+    "Schwab index funds performance",
+    "Schwab index funds S&P 500"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; AI Overview present, cites investor.vanguard.com, www.investor.gov, www.fidelity.com, www.nerdwallet.com",
+   "se_results_count": 117
+  },
+  {
+   "keyword": "nerdwallet investment calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "www.aarp.org"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.aarp.org",
+    "www.investor.gov",
+    "www.investor.gov"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "Nerdwallet investment calculator reddit",
+    "Nerdwallet investment calculator app",
+    "$10,000 invested in S&P 500 calculator",
+    "Monthly investment calculator",
+    "Best investment calculator",
+    "Monthly compound interest calculator",
+    "S&P 500 return calculator monthly investment",
+    "NerdWallet retirement calculator",
+    "Nerdwallet investment calculator fidelity",
+    "Nerdwallet investment calculator review",
+    "NerdWallet investing",
+    "How to calculate how much interest I will pay on credit card"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.nerdwallet.com, www.aarp.org",
+   "se_results_count": 113
+  },
+  {
+   "keyword": "online financial calculators",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.calculator.net",
+    "www.fncalculator.com",
+    "www.bankrate.com",
+    "www.investor.gov",
+    "www.dinkytown.net"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.fncalculator.com",
+    "www.brewittfinancial.com",
+    "www.calculator.io",
+    "www.bca.financial",
+    "www.finnacalc.com",
+    "financewebtools.com",
+    "www.fncalculator.com",
+    "alltoolsverse.com",
+    "calcsuite.org",
+    "www.brewittfinancial.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 19,
+    "related_searches": 2
+   },
+   "paa": [],
+   "related_searches": [
+    "Best financial calculator",
+    "HP 10bII+ Financial Calculator online",
+    "Financial projection calculator",
+    "EZ Calculator app",
+    "Financial Calculator download for desktop",
+    "Www thecalculatorsite com finance calculators",
+    "Financial calculator for CFA",
+    "Finance calculator NerdWallet",
+    "Free online financial calculators",
+    "Daily compound interest calculator",
+    "Bond financial calculator",
+    "Financial percentage Calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.calculator.net, www.fncalculator.com, www.bankrate.com, www.investor.gov",
+   "se_results_count": 100
+  },
+  {
+   "keyword": "are trump accounts a scam",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.theatlantic.com",
+    "keyt.com",
+    "www.mapscu.com",
+    "rbgcpa.com",
+    "washingtonspectator.org",
+    "www.instagram.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.centralbank.net",
+    "methodcpa.com",
+    "www.mapscu.com",
+    "www.instagram.com",
+    "www.tiktok.com",
+    "neal.house.gov",
+    "www.theatlantic.com",
+    "washingtonspectator.org",
+    "cautellus.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.tiktok.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "top_stories": 1,
+    "video": 1
+   },
+   "paa": [
+    "Is the Trump account real?",
+    "Can you lose money with a Trump account?",
+    "Who owns the money in a Trump account?",
+    "Is there any downside to creating a Trump account?",
+    "Who is eligible for a Trump account?",
+    "Can you close a Trump account?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.tiktok.com) incl. #1; AI Overview present, cites www.reddit.com, www.youtube.com, www.theatlantic.com, keyt.com",
+   "se_results_count": 6060000
+  },
+  {
+   "keyword": "roth vs 401k",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.umcu.org",
+    "www.irs.gov",
+    "www.johnsonfinancialgroup.com",
+    "www.youtube.com",
+    "www.schwab.com",
+    "www.empower.com",
+    "www.mutualofamerica.com",
+    "www.thepersonalfinancepodcast.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.youtube.com",
+    "www.investopedia.com",
+    "www.reddit.com",
+    "www.sofi.com",
+    "www.bcswealth.com",
+    "www.morningstar.com",
+    "www.youtube.com",
+    "erie.equitableadvisors.com",
+    "www.businessinsider.com",
+    "www.paulried.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "images": 1,
+    "organic": 17,
+    "people_also_ask": 1,
+    "related_searches": 2
+   },
+   "paa": [
+    "Is 401 better than Roth?",
+    "How much will $20,000 in 401k be worth in 20 years?",
+    "What happens to my 401k if I change jobs?",
+    "Is $500 a month into a 401k good?",
+    "What will $100,000 in a 401k be worth in 30 years?",
+    "Can I retire at 65 with $500,000 in my 401k?"
+   ],
+   "related_searches": [
+    "Roth vs 401k reddit",
+    "Roth vs 401k calculator",
+    "Roth vs 401k taxes",
+    "Roth 401k vs 401k for high income earners",
+    "Is a Roth 401k worth it",
+    "Roth vs traditional 401k early withdrawal",
+    "IRS Roth 401k",
+    "Roth IRA Roth 401(k)"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.youtube.com, www.reddit.com) incl. #1; AI Overview present, cites www.umcu.org, www.irs.gov, www.johnsonfinancialgroup.com, www.youtube.com",
+   "se_results_count": 113
+  }
+ ],
+ "cost": "DataForSEO: 5 calls, $0.02045 of $2.00 budget"
+}

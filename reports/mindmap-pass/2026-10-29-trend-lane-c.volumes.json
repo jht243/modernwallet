@@ -1,0 +1,176 @@
+{
+ "rows": [
+  {
+   "keyword": "index investment funds",
+   "volume": 74000,
+   "volume_low": 74000,
+   "volume_high": 74000,
+   "kd": 37,
+   "cpc": 8.55,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "online financial calculators",
+   "volume": 6600,
+   "volume_low": 6600,
+   "volume_high": 6600,
+   "kd": 54,
+   "cpc": 4.86,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "financial online calculators",
+   "volume": 6600,
+   "volume_low": 6600,
+   "volume_high": 6600,
+   "kd": "",
+   "cpc": 4.86,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "roth vs 401k",
+   "volume": 14800,
+   "volume_low": 14800,
+   "volume_high": 14800,
+   "kd": 25,
+   "cpc": 2.15,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "last will and testament online",
+   "volume": 320,
+   "volume_low": 320,
+   "volume_high": 320,
+   "kd": 39,
+   "cpc": 10.41,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "nerdwallet investment calculator",
+   "volume": 40500,
+   "volume_low": 40500,
+   "volume_high": 40500,
+   "kd": 61,
+   "cpc": 13.62,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "legal will online",
+   "volume": 390,
+   "volume_low": 390,
+   "volume_high": 390,
+   "kd": 43,
+   "cpc": 8.35,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "cheap will",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": 24,
+   "cpc": 6.18,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "coast fire amount",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 10 live autocomplete completions (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "are trump accounts a scam",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "trump account vs brokerage account for kids",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using dataforseo (quality order dataforseo)",
+  "dataforseo returned volume for 8/11 phrases",
+  "kd: using dataforseo (quality order dataforseo)",
+  "No tool volume for 3 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 9/11 rows corroborated live"
+ ]
+}
