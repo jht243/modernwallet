@@ -1,3 +1,8 @@
+
+<!-- mindmap-unattended-publication-v1 -->
+**Unattended Mindmap authorization and recovery:** Apply `_mindmap-execution.md`, “Authorized unattended Mindmap: continue through publication,” before the default Phase 0/stop rules below. Explicitly authorized end-to-end routines record their existing authorization, save the complete independently reviewed chart and continue through publication without asking. Repair failures automatically; after the existing per-page repair limit, isolate only failed pages and their dependencies, rebuild/review the passing subset, then publish and verify that subset. Preserve mandatory audits, exact rendered/live checks, professional review, local exclusions and authorization limits. Manual runs retain their Phase 0 gate and stop rules. A generated `ready-for-approval` chart is accepted after structural validation plus the separately recorded authorization; never rewrite it merely to change status.
+<!-- /mindmap-unattended-publication-v1 -->
+
 # Remediation ladder — how an audit finding gets fixed
 
 <!-- SOURCE OF TRUTH. Every routine whose audit phase gates a prose writer loads THIS file
