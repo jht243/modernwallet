@@ -1,5 +1,6 @@
 """Synthetic protocol fixtures: never production approval or evidence receipts."""
 import copy
+import ast
 import importlib.util
 import json
 import shutil
@@ -296,6 +297,24 @@ class Gates(unittest.TestCase):
             self.packet['execution']['command'] = command
             with self.assertRaisesRegex(ValueError, 'executable/arguments array'):
                 g.analysis(self.root, self.packet)
+
+    def test_actual_generator_accepts_gate_options_on_every_writer_command(self):
+        generator = Path(__file__).resolve().parents[2] / 'scripts/lib/content_gen.py'
+        if not generator.exists():
+            self.skipTest('No content generator installed in this fixture checkout')
+        tree = ast.parse(generator.read_text())
+        commands = {n.args[0].value for n in ast.walk(tree) if isinstance(n, ast.Call)
+                    and isinstance(n.func, ast.Attribute) and n.func.attr == 'add_parser'
+                    and n.args and isinstance(n.args[0], ast.Constant)} & {'write', 'section', 'fix'}
+        self.assertTrue({'write', 'section'} <= commands)
+        for command in sorted(commands):
+            with self.subTest(command=command):
+                result = subprocess.run([sys.executable, str(generator), command, '--help'],
+                                        cwd=self.root, capture_output=True, text=True)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                for option in ('--mindmap-manifest', '--mindmap-review', '--analysis-packet'):
+                    self.assertIn(option, result.stdout)
+
 
     def test_actual_generator_blocks_mindmap_before_any_writer_call(self):
         generator = Path(__file__).resolve().parents[2] / 'scripts/lib/content_gen.py'

@@ -2175,6 +2175,15 @@ def main(argv=None) -> int:
     fx.add_argument("--schema", default="none", choices=sorted(SCHEMAS))
     fx.add_argument("--format", default="", choices=["", "json", "markdown"])
     fx.add_argument("--tested", default="", choices=["", "yes", "no"])
+    w.add_argument('--mindmap-manifest', default="", help='Reviewed structured Mindmap approval manifest')
+    w.add_argument('--mindmap-review', default="", help='Independent preparation review bound to that manifest')
+    w.add_argument('--analysis-packet', default="", help='Current executed or justified non-quantitative evidence packet')
+    s.add_argument('--mindmap-manifest', default="", help='Reviewed structured Mindmap approval manifest')
+    s.add_argument('--mindmap-review', default="", help='Independent preparation review bound to that manifest')
+    s.add_argument('--analysis-packet', default="", help='Current executed or justified non-quantitative evidence packet')
+    fx.add_argument('--mindmap-manifest', default="", help='Reviewed structured Mindmap approval manifest')
+    fx.add_argument('--mindmap-review', default="", help='Independent preparation review bound to that manifest')
+    fx.add_argument('--analysis-packet', default="", help='Current executed or justified non-quantitative evidence packet')
     a = ap.parse_args(argv)
     if a.cmd == "section":
         a.format, a.schema = "markdown", "none"

@@ -1,0 +1,33 @@
+name: Content generator CLI regression
+on:
+  push:
+    paths:
+      - 'scripts/lib/content_gen.py'
+      - 'scripts/lib/content_gen_cli_test.py'
+      - 'scripts/fleet/mindmap_cli*.py'
+      - 'scripts/sync-mindmap-pass.py'
+      - '.claude/tools/mindmap-gates.py'
+      - '.github/workflows/content-gen-cli.yml'
+  pull_request:
+    paths:
+      - 'scripts/lib/content_gen.py'
+      - 'scripts/lib/content_gen_cli_test.py'
+      - 'scripts/fleet/mindmap_cli*.py'
+      - 'scripts/sync-mindmap-pass.py'
+      - '.claude/tools/mindmap-gates.py'
+      - '.github/workflows/content-gen-cli.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  cli:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/lib/content_gen_cli_test.py -v
+      - name: Fleet repair regression tests
+        if: ${{ hashFiles('scripts/fleet/mindmap_cli_test.py') != '' }}
+        run: python3 -m unittest discover -s scripts/fleet -p mindmap_cli_test.py -v
