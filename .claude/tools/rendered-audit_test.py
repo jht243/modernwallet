@@ -1,4 +1,6 @@
 import copy
+import json
+import tempfile
 import importlib.util
 import pathlib
 import unittest
@@ -76,6 +78,21 @@ class Tests(unittest.TestCase):
   with self.assertRaisesRegex(ValueError,'cycles'):a.validate_manifest(m)
   m['routes']=m['routes'][:1]
   with self.assertRaisesRegex(ValueError,'audited'):a.validate_manifest(m)
+ def test_mixed_legacy_ledger_preserves_records_clock_and_dedup(self):
+  with tempfile.TemporaryDirectory(dir=pathlib.Path.cwd()) as temp:
+   folder=pathlib.Path(temp); growth=folder/'growth.json'; ledger=folder/'ledger.jsonl'; rel=str(growth.relative_to(pathlib.Path.cwd()))
+   growth.write_text(json.dumps({'baseline':{'status':'available'}}))
+   legacy={'originRoutine':'link-audit','url':'https://example.com/legacy','status':'reviewed'}
+   old_same_path={'path':'/guide','originRoutine':'legacy-without-contribution','firstVerifiedLiveAt':'2026-10-01T01:00:00+00:00'}
+   previous={'path':'/guide','contributionId':rel,'firstVerifiedLiveAt':'2026-10-26T19:00:00+00:00','snapshotSha256':'prior-render'}
+   original=''.join(json.dumps(row)+'\n' for row in [legacy,old_same_path,previous]); ledger.write_text(original)
+   s=self.snapshot(); s['manifest']['routes'][0]['growthFile']=rel; del s['snapshotSha256']; s['snapshotSha256']=a.digest(s)
+   host={'commit':'a'*40,'status':'live','verifiedAt':s['capturedAt'],'evidenceUrl':'https://example.com/deployment-proof'}
+   self.assertEqual(a.record(s,s,self.review(s),'a'*40,host,ledger),1)
+   self.assertTrue(ledger.read_text().startswith(original)); rows=[json.loads(line) for line in ledger.read_text().splitlines()]
+   self.assertEqual(rows[:3],[legacy,old_same_path,previous]); self.assertEqual(len(rows),4)
+   self.assertEqual(rows[-1]['firstVerifiedLiveAt'],previous['firstVerifiedLiveAt']); self.assertEqual(rows[-1]['windows']['days1to28'],{'start':'2026-10-27','end':'2026-11-23'})
+   saved=ledger.read_bytes(); self.assertEqual(a.record(s,s,self.review(s),'a'*40,host,ledger),0); self.assertEqual(ledger.read_bytes(),saved)
 class Ads(unittest.TestCase):
  def setUp(self):
   self.route={'path':'/guide','volatileThirdPartyAds':'mediavine'}

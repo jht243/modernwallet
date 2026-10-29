@@ -264,7 +264,7 @@ def record(s, approved, review, commit, host, ledger):
         growth_path=Path(route['growthFile']); require(not growth_path.is_absolute() and '..' not in growth_path.parts,'Growth file must be repository-relative')
         growth=read(growth_path)
         contribution=route.get('contributionId',route['growthFile'])
-        previous=next((p for p in prior if p['path']==route['path'] and p.get('contributionId')==contribution and p.get('firstVerifiedLiveAt')),None)
+        previous=next((p for p in prior if p.get('path')==route['path'] and p.get('contributionId')==contribution and p.get('firstVerifiedLiveAt')),None)
         first=growth.get('firstVerifiedLiveAt') or (previous['firstVerifiedLiveAt'] if previous else s['capturedAt'])
         require(dt.datetime.fromisoformat(first.replace('Z','+00:00'))<=dt.datetime.fromisoformat(s['capturedAt'].replace('Z','+00:00')),'First live timestamp is in the future')
         day=dt.datetime.fromisoformat(first.replace('Z','+00:00')).date()+dt.timedelta(days=1)
