@@ -1,1 +1,40 @@
-{"origin": "x-trends-mindmap-auto 2026-10-29", "queryFamily": "fed holds rates / will interest rates go up / fed rate decision savings CD mortgage (DataForSEO US 2026-10-29: fed rate decision 40,500/mo KD 49; will interest rates go up 2,400/mo KD 49; fed holds rates 140/mo KD 15)", "hypothesis": "An up-front section on the Oct 28 hold and dissents keeps the existing page current for the query family; not proven uplift.", "primaryMetric": "Google clicks to /guides/fed-rate-hike-savings-investments/", "baseline": {"status": "unavailable", "reference": "GSC baseline to be read by the existing 28/56-day review routine; unavailable is not zero"}, "comparatorPlan": "unchanged guides of similar age", "changeScope": "one new section ahead of existing sections, FAQ unchanged unless contradicted, updated date bumped", "sourceRefreshTrigger": "next FOMC meeting", "outcomeStatus": "pending", "deployment": {"status": "not-deployed", "commit": null, "verifiedLiveAt": null}}
+{
+  "origin": "x-trends-mindmap-auto 2026-10-29",
+  "queryFamily": "fed holds rates / will interest rates go up / fed rate decision savings CD mortgage (DataForSEO US 2026-10-29: fed rate decision 40,500/mo KD 49; will interest rates go up 2,400/mo KD 49; fed holds rates 140/mo KD 15)",
+  "hypothesis": "An up-front section on the Oct 28 hold and dissents keeps the existing page current for the query family; not proven uplift.",
+  "primaryMetric": "Google clicks to /guides/fed-rate-hike-savings-investments/",
+  "baseline": {
+    "status": "unavailable",
+    "reference": "GSC baseline to be read by the existing 28/56-day review routine; unavailable is not zero"
+  },
+  "comparatorPlan": "unchanged guides of similar age",
+  "changeScope": "one new section ahead of existing sections, FAQ unchanged unless contradicted, updated date bumped",
+  "sourceRefreshTrigger": "next FOMC meeting",
+  "outcomeStatus": "pending",
+  "deployment": {
+    "commit": "a2e4db0bbb97cb1b518962b5ef75491c9d668fff",
+    "status": "live",
+    "evidenceUrl": "https://github.com/jht243/modernwallet/commit/a2e4db0bbb97cb1b518962b5ef75491c9d668fff",
+    "verifiedAt": "2026-10-29T18:08:00Z",
+    "note": "No host API was available to this run. Liveness is shown by origin/main containing the commit and rendered-audit.py compare reporting that the live render of all three routes at https://www.themodernwallet.com equals the approved preview render (audit/live-snapshot.json), including the new route that did not exist before the push."
+  },
+  "path": "/guides/fed-rate-hike-savings-investments/",
+  "contributionId": "evidence/fed-rate-hike-savings-investments/growth.json",
+  "growthFile": "evidence/fed-rate-hike-savings-investments/growth.json",
+  "evidenceFile": "evidence/fed-rate-hike-savings-investments/evidence.json",
+  "commit": "a2e4db0bbb97cb1b518962b5ef75491c9d668fff",
+  "status": "live-verified",
+  "firstVerifiedLiveAt": "2026-10-29T18:06:56.628070+00:00",
+  "verifiedAt": "2026-10-29T18:06:56.628070+00:00",
+  "snapshotSha256": "bcdc0bf85505898870c06938043cf13694e4eb6b3d660d3be7590e29983e8b0a",
+  "windows": {
+    "days1to28": {
+      "start": "2026-10-30",
+      "end": "2026-11-26"
+    },
+    "days29to56": {
+      "start": "2026-11-27",
+      "end": "2026-12-24"
+    }
+  }
+}
