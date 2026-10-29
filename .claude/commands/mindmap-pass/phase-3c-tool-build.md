@@ -84,3 +84,7 @@ Place the tool where the mirrored tool sits (above the fold, before the long pro
   markup gates. Confirm the new route rendered in the build output.
 
 Record each built tool's route in the chart row (`built: /route`). **Auto-continue to Phase 4.**
+
+<!-- mindmap-execution-v1 -->
+Follow `_mindmap-execution.md` for the approved manifest, relevant analysis/case selection and required flags on framing-prose writer calls. Build the actual useful asset; audit its complete rendered page, logic, inputs/outputs and exports.
+<!-- /mindmap-execution-v1 -->

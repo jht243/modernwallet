@@ -109,3 +109,7 @@ Use the existing growth/striking-distance review to assess eligible cohorts afte
 Primary outcome: incremental Google clicks. Diagnose impressions, query-level position and CTR separately; segment material country/device/query changes and compare suitable unchanged pages or age-matched cohorts. Keep query families and experiments non-overlapping where possible, record concurrent edits/algorithm changes, and label weak evidence `inconclusive`. Engagement, tool use and citations are supporting outcomes, not proof of ranking benefit. Do not infer success from publishing, a fresh date, an audit pass or a before/after CTR change with a different query mix.
 
 On subsequent passes, read available cohort outcomes before choosing more work. Expand approaches with credible incremental returns, revise inconclusive ones, and stop adding formats that only increase cost. Record production/maintenance cost with outcomes. This is the connection to the 10× ambition; never assign a fabricated traffic multiplier to a content feature.
+
+<!-- mindmap-execution-v1 -->
+Apply `_mindmap-execution.md` for the relevance-based execution branch, approved-case lookup, current packet/artifact checks and independent replay/usefulness checks. Execute useful research; a prior test log is not an admission requirement. Preserve source-only/no-addition and professional exclusions.
+<!-- /mindmap-execution-v1 -->

@@ -106,3 +106,9 @@ Acceptable approvals: "approve", "go", "start", "yes", or any clear affirmative.
 If the user declines or wants to revise: STOP cleanly. Do not start Phase 1. Wait for them to either edit the chart and re-run, or give new direction.
 
 Only after explicit approval, begin Phase 1.
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+<!-- mindmap-execution-v1 -->
+Load `_mindmap-execution.md` and validate/render this exact chart from its independently reviewed manifest before presenting it. Preserve every full brief and the single evidenced preparation row; revalidate imported charts rather than accepting missing detail. The existing Phase 0 approval remains the sole human gate.
+<!-- /mindmap-execution-v1 -->

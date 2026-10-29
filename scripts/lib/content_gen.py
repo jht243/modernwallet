@@ -1032,7 +1032,8 @@ def verify(text: str, a) -> tuple[dict, dict]:
         report["repairs"].append("relatedLinks was not a list -> []")
 
     # TESTED format (content standard ## TESTED): the page either qualifies or it does not,
-    # decided BEFORE writing by scripts/tested/check.mts. --tested yes: the tested fields must
+    # draft layout follows local eligibility and executed evidence; final labels require Phase 4.
+    # --tested yes: the tested fields must
     # be present (flags if not). --tested no: they must be absent (stripped, Rung 0).
     tested_mode = getattr(a, "tested", "") or ""
     if tested_mode and isinstance(page, dict) and a.format == "json":
@@ -1042,7 +1043,7 @@ def verify(text: str, a) -> tuple[dict, dict]:
         if tested_mode == "yes":
             hw = page.get("howWeTested")
             if not (isinstance(hw, list) and len(hw) == 3 and all(isinstance(x, str) and x.strip() for x in hw)):
-                report["flags"].append("tested: howWeTested must be exactly 3 bullets (use the category set in data/tested-methods.json)")
+                report["flags"].append("tested: howWeTested must be exactly 3 bullets (describe the actual recorded method; category wording only when accurate)")
             title = str(page.get("metaTitle", ""))
             if re.search(r"\b(19|20)\d{2}\b", title):
                 report["flags"].append("tested: metaTitle must not contain a year (the template appends '(Tested YYYY)')")
@@ -1896,8 +1897,43 @@ def cmd_system(a) -> int:
     return 0
 
 
+def mindmap_gate(a) -> None:
+    """Reject incomplete Mindmap preparation before a billable writer call."""
+    paths = [getattr(a, key, '') for key in ('prompt', 'out', 'draft', 'facts')]
+    scoped = any('mindmap-pass' in pathlib.Path(p).parts for p in paths if p)
+    scoped = scoped or (CALLER or '').strip('/').startswith('mindmap-pass')
+    explicit = getattr(a, 'mindmap_manifest', '')
+    if not scoped and not explicit:
+        return
+    root = _repo_root() or pathlib.Path(__file__).resolve().parents[2]
+    helper = root / '.claude/tools/mindmap-gates.py'
+    require_args = ['mindmap_manifest', 'mindmap_review', 'analysis_packet']
+    if not helper.is_file() or any(not getattr(a, k, '') for k in require_args):
+        raise RuntimeError('Mindmap writing blocked: supply --mindmap-manifest, --mindmap-review and --analysis-packet using the shared gate helper. Revalidate imported charts; do not bypass by relocating prompts.')
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('mindmap_gates', helper)
+    gate = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(gate)
+    try:
+        slug = a.slug
+        if not slug and getattr(a, 'draft', ''):
+            candidate = pathlib.Path(a.draft)
+            if candidate.suffix == '.json':
+                value = json.loads(candidate.read_text())
+                slug = value.get('slug') if isinstance(value, dict) else None
+        if not slug:
+            raise ValueError('Provide --slug for a renamed/Markdown draft without a stored page slug')
+        section = a.cmd == 'section' or (a.cmd == 'fix' and (a.format == 'markdown' or pathlib.Path(a.draft).suffix != '.json'))
+        gate.generation(root, gate.read(a.mindmap_manifest), gate.read(a.mindmap_review),
+                        gate.read(a.analysis_packet), slug, section)
+    except (ValueError, KeyError, OSError, TypeError) as e:
+        raise RuntimeError('Mindmap writing blocked: ' + str(e)) from e
+
+
+
 def cmd_write(a) -> int:
     global CALLER, JSON_MODE, THINKING, CMD
+    mindmap_gate(a)
     CMD = a.cmd
     if a.cmd == "section" and THINKING in _LEVELS and _LEVELS.index(SECTION_THINKING) < _LEVELS.index(THINKING):
         log(f"section: thinking {THINKING} -> {SECTION_THINKING} (CONTENT_SECTION_THINKING)")
@@ -1983,6 +2019,7 @@ def cmd_fix(a) -> int:
             CALLER = parts[parts.index("reports") + 1]
     a.prompt = a.prompt or a.facts
     a.out = str(draft)
+    mindmap_gate(a)
     raw = draft.read_text()
     page = json.loads(raw, strict=False) if fmt == "json" else raw
     # the page's own slug wins: verify() would otherwise "repair" it to the file name
@@ -2108,7 +2145,7 @@ def main(argv=None) -> int:
     w.add_argument("--allowed-urls", dest="allowed_urls", default="")
     w.add_argument("--facts", default="")
     w.add_argument("--tested", default="", choices=["", "yes", "no"],
-                   help="TESTED format: yes = page qualifies (scripts/tested/check.mts), fields required; no = fields forbidden")
+                   help="TESTED draft layout only: yes = locally eligible with relevant executed runs; no = fields forbidden. Final labels additionally require independent evidence approval.")
     # section: an ENRICHMENT of an existing page (FAQ answer, new section, body paragraphs, an
     # answer block, a rewritten section). Same models, same ladder, same meta.json; output is
     # always markdown prose the agent splices in (for TS/JSON stores it maps paragraphs to the

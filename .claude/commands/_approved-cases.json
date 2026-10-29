@@ -1,0 +1,898 @@
+{
+  "schemaVersion": 1,
+  "scope": "Existing approved public client/fleet facts and exact public testimonials. Retrieval is not a finding, a new approval or product-test evidence. Local rules and topic fit remain required.",
+  "records": [
+    {
+      "id": "client-bowlero-corporation",
+      "entity": "Bowlero Corporation",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "digital asset marketplace and platform for the league bowler certification program."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "client-professional-bowlers-association-pba",
+      "entity": "Professional Bowlers Association (PBA)",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "the same engagement as Bowlero: a digital-ownership, rewards, and gamification program (fan collectibles and loyalty tied to the bowling brand). Either name works when the topic is loyalty, digital ownership, rewards, or gamification for a sports or entertainment brand."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "client-nbc-universal",
+      "entity": "NBC Universal",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "media engagement."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "client-styr-trade",
+      "entity": "STYR Trade",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "high-frequency-trading, asset-backed sneaker marketplace."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "client-game-station",
+      "entity": "Game Station",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "digital wallet lead-generation platform with gaming and rewards."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "client-jane-goodall-institute",
+      "entity": "Jane Goodall Institute",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "membership, charity, and digital ticketing platform."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "client-ethereal-collective",
+      "entity": "Ethereal Collective",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "digital strategy and implementation to preserve Dr. Goodall's legacy and research."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "client-pipeflare-gaming",
+      "entity": "PipeFlare Gaming",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "gaming platform supporting 60,000 daily players and 7 custom games."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "client-horizen-labs",
+      "entity": "Horizen Labs",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "growth marketing and retention (see also the operator role in B)."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "client-metaking-studios-and-heromaker-studios",
+      "entity": "MetaKing Studios** and **HeroMaker Studios",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "game studios where we used AI to improve marketing, retention, and analytics. Good anchors for game and consumer-app growth, player retention, LTV, and AI-in-marketing topics. Reasonable extrapolation from that scope is fine; still never invent hard numbers."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "client-goblintown-game-development-odyssey-gaming",
+      "entity": "Goblintown Game Development**, **Odyssey Gaming",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "game development engagements."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "client-mjr-fractional-loan-investments-acorn-care-financial-management",
+      "entity": "MJR Fractional Loan Investments**, **Acorn Care Financial Management",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "finance-sector engagements."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "client-multiple-hoa-and-condo-boards-across-the-usa",
+      "entity": "Multiple HOA and condo boards across the USA",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "HOA and condo governance and operations."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "client-multiple-law-firms",
+      "entity": "Multiple law firms",
+      "owner": "Layer3Labs",
+      "relationship": "client",
+      "approvedFacts": [
+        "client intake and onboarding, engagement-letter automation, Clio setup and cleanup, CRM cleaning and de-duplication, and automated client outreach. The strongest anchor we have for legal-vertical topics: intake workflows, matter management, practice-management software, conflict checks, document and letter generation, and law-firm CRM hygiene."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": ".claude/commands/_experience.md",
+        "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "owned-property-caracas-research",
+      "entity": "Caracas Research",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Daily Venezuela investment and OFAC sanctions intelligence, with a live US Treasury SDN tracker, general licenses, and BCV rates."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-cuban-insights",
+      "entity": "Cuban Insights",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Daily Cuba investment briefings tracking OFAC CACR sanctions, Helms-Burton Title III, the Cuba Restricted List, and ongoing economic reforms."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-drones-defense",
+      "entity": "Drones & Defense",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Research on drone stocks, defense-tech equities, and the unmanned-systems economy, with company analysis, ETF breakdowns, and how-to-invest guides."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-orbitalintel",
+      "entity": "OrbitalIntel",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "A reference on the space economy: launch vehicles, satellites, and military space explained, plus guides to space stocks, ETFs, and IPOs."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-ban-the-bots",
+      "entity": "Ban the Bots",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Daily, human-first coverage of AI regulation, labor disruption, environmental cost, and real-world AI incidents."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-the-psychedelic-journal",
+      "entity": "The Psychedelic Journal",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "An independent journal of psychedelic research and law, tracking state legal status and the FDA pipeline for psilocybin, MDMA, and ketamine."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-lawfare-claims",
+      "entity": "Lawfare Claims",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Plain-English guides to class actions, settlements, mass torts, and workplace-rights claims, with a free match to a vetted attorney."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-rank-and-pay",
+      "entity": "Rank and Pay",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Free tools and daily briefings on military pay tables, BAH rates, VA disability ratings, and retirement benefits."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-the-metabolic-journal",
+      "entity": "The Metabolic Journal",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Evidence-based tools and guides for optimizing metabolism, hormones, and recovery, with a personalized assessment."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-medical-frontier",
+      "entity": "Medical Frontier",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Neutral guides to regenerative medicine — stem cell therapy, PRP, and exosomes — covering cost, legality, insurance, and how to vet a clinic."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-longevity-benchmark",
+      "entity": "Longevity Benchmark",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Reviews of longevity platforms, wearables, and screening services scored on one shared rubric, with date-stamped pricing."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-under-the-load",
+      "entity": "Under the Load",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Spec-led buying guides and load calculators for weighted vests, rucking packs, and walking pads, including safe starting loads."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-the-hoa-guide",
+      "entity": "The HOA Guide",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Plain-English answers on HOA and condo rules, fees, assessments, state laws, and who pays for repairs, plus free templates and tools for owners and boards."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-diy-repair-guide",
+      "entity": "DIY Repair Guide",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Diagrams, dimension charts, and repair-cost ranges for the things that break in a house — work out what is wrong and what it costs to fix."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-the-indoor-report",
+      "entity": "The Indoor Report",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "What to measure for indoor air, water, humidity, and mold, what the numbers mean, and which equipment actually fixes the problem."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-new-parent-picks",
+      "entity": "New Parent Picks",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Buying guides for the first year — baby gear, gifts, feeding kit, and registry checklists cut down to a short list you can act on."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-jet-beyond",
+      "entity": "Jet & Beyond",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "A free private jet cost calculator backed by independent operator reviews, jet card comparisons, and aircraft head-to-heads."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-humidorist",
+      "entity": "Humidorist",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Beginner cigar guides, honest accessory reviews, and a free humidor tracker to store and choose cigars with confidence."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-shaving-school",
+      "entity": "Shaving School",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Tested guidance on safety and straight razors, electric shavers, beard care, head shaving, and the technique that keeps skin calm."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-find-a-prayer",
+      "entity": "Find A Prayer",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Original, scripture-backed prayers for healing, strength, and peace — free to pray or share for every moment in life."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-modernwallet",
+      "entity": "ModernWallet",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Free, accurate personal-finance calculators for auto loans, mortgages, retirement, investing, rentals, and net worth — instant results, no signup."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-pipeflare",
+      "entity": "PipeFlare",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "A friendly hub of free crypto tools — convert sats to USD, calculate gas fees, find free crypto, and fix stuck transfers, all with live rates."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-the-bot-scout",
+      "entity": "The Bot Scout",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Robot buying guides, reviews, and pricing research across home, consumer, industrial, service, and humanoid robots."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-chalkbox",
+      "entity": "Chalkbox",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Free classroom tools for teachers: worksheet, lesson-plan, rubric, and quiz generators, seating charts, and review games."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-trecklist",
+      "entity": "Trecklist",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "A free tool that builds a personalized packing list tailored to your destination, dates, and who is coming along."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "owned-property-partygamekit",
+      "entity": "PartyGameKit",
+      "owner": "Layer3Labs",
+      "relationship": "owned-property",
+      "approvedFacts": [
+        "Free Secret Santa and White Elephant organizers, gift-exchange questionnaires, party-game printables, and gift ideas — run the whole group from one link."
+      ],
+      "quotes": [],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "src/pages/portfolio.tsx",
+        "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+        "publicUrl": "https://www.layer3labs.io/portfolio"
+      }
+    },
+    {
+      "id": "testimonial-styr-trade",
+      "entity": "STYR TRADE",
+      "owner": "Layer3Labs",
+      "relationship": "testimonial",
+      "approvedFacts": [],
+      "quotes": [
+        {
+          "text": "“Layer 3 Labs helped us design and build an innovative sneaker trading platform. Together we turned an idea into a well architected trading application.”",
+          "speaker": "Oscar R., Founder STYR Trade"
+        }
+      ],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "data/home.ts",
+        "sha256": "6755da92f87c2226ca81f19602e255f9c42927ad829066e5ac0a9db84863f924",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "testimonial-horizen",
+      "entity": "Horizen",
+      "owner": "Layer3Labs",
+      "relationship": "testimonial",
+      "approvedFacts": [],
+      "quotes": [
+        {
+          "text": "\"Layer3Labs helped us build a game with AI-powered experiences and personalized engagement. The team has a fantastic understanding of our needs and delivered an easy-to-use and engaging game.\"",
+          "speaker": "Manon, Senior Marketing Manager at Horizen"
+        }
+      ],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "data/home.ts",
+        "sha256": "6755da92f87c2226ca81f19602e255f9c42927ad829066e5ac0a9db84863f924",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "testimonial-beyond-all-the-noise",
+      "entity": "Beyond All The Noise",
+      "owner": "Layer3Labs",
+      "relationship": "testimonial",
+      "approvedFacts": [],
+      "quotes": [
+        {
+          "text": "\"It’s been a pleasure working with Jonathan’s team to build large-scale IP based games. His technology makes it easy for gamers to join.\"",
+          "speaker": "Pat Doran, CEO of Beyond All The Noise"
+        }
+      ],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "data/home.ts",
+        "sha256": "6755da92f87c2226ca81f19602e255f9c42927ad829066e5ac0a9db84863f924",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    },
+    {
+      "id": "testimonial-gamestation",
+      "entity": "Gamestation",
+      "owner": "Layer3Labs",
+      "relationship": "testimonial",
+      "approvedFacts": [],
+      "quotes": [
+        {
+          "text": "“I wanted to mention how fun, motivating, De-stressing and invigorating it is to work with layer III, everything went very smoothly.”",
+          "speaker": "Jason Kovar, COO of GAMESTATION"
+        }
+      ],
+      "firstPartyPublishers": [
+        "layer3labs.io"
+      ],
+      "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+      "source": {
+        "repository": "jht243/layer3labs",
+        "path": "data/home.ts",
+        "sha256": "6755da92f87c2226ca81f19602e255f9c42927ad829066e5ac0a9db84863f924",
+        "publicUrl": "https://www.layer3labs.io/"
+      }
+    }
+  ]
+}

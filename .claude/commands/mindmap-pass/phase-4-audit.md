@@ -51,15 +51,7 @@ This phase IS the gate for Phase 3. It checks net-new pages and substantive new 
 - The page prose describes the tool that was built (labels, steps, defaults, worked example match the code) ✓/✗
 Fix in place per the remediation ladder; after two failed rework attempts, stop the workflow and escalate with unresolved findings. Preserve unrelated work and do not commit, push or publish.
 
-**For other non-article format rows (`template`, `comparison table/database`, `glossary/reference`, `data report`):** Phase 3 produced a spec file, not prose. Audit the spec — not the placeholder route — against this checklist:
-- Spec file exists at `reports/mindmap-pass/specs/<slug>-spec.md` ✓/✗
-- Target route is named ✓/✗
-- Format is named with a rationale tied to the cluster's query signals ✓/✗
-- What the asset does is described in enough detail to build it (column schema for tables; data sources for reports; sections for templates) ✓/✗
-- Primary and secondary keywords are listed ✓/✗
-- Technical dependencies are noted (components needed, data required, etc.) ✓/✗
-- A placeholder exists at the target route (if the framework expects a route file) ✓/✗
-A spec that passes all seven points is a **PASS** — the human builds the asset in a follow-up; that is by design. Missing items are hard-fail rework.
+**For other asset rows (`template`, `comparison table/database`, `glossary/reference`, `data report`, chart, image or download):** audit the completed real asset plus its complete rendered page under `_mindmap-execution.md`. Verify source-to-output consistency, useful reader purpose, actual fields/format, accessibility/mobile behavior, exports/links and applicable boundary cases. Generated illustrations are not test evidence. A spec, placeholder or deferred human-build handoff fails; a useful finite table is acceptable when that is the approved complete deliverable. Framing prose gets the normal content/evidence review. Preserve justified no-addition and local exclusions.
 
 **For `article` format rows — and for `comparison table/database` rows that Phase 3 generated as REAL pages (a `<slug>.meta.json` exists):** apply the standard checklist below. A generated comparison is a page, not a spec: audit its comparison table, its verdict, and its objectivity (the business is never the auto-winner).
 
@@ -179,3 +171,7 @@ Also refresh every surface derived from that date: JSON-LD `dateModified`, and t
 **Also load `.claude/commands/_anti-ai-language.md`** and apply its **AUDITOR** section in full, including the meaning bar. It outranks the content standard on any conflict.
 
 If any of those files is missing, FAIL the run and report it — never substitute your own gates. If `.claude/commands/_content-standard.local.md` exists in this repo, its sections override the same-named sections of the standard.
+
+<!-- mindmap-execution-v1 -->
+Apply `_mindmap-execution.md` inside this existing audit: independently judge usefulness and source/assumption limits, replay deterministic calculations where relevant, inspect real run records for measured work, and bind the analysis decision to the exact final rendered snapshot/review. Accept justified non-quantitative and no-addition branches; do not require new paid/physical testing merely to repeat a saved valid record.
+<!-- /mindmap-execution-v1 -->

@@ -101,3 +101,9 @@ Also refresh every surface derived from that date: JSON-LD `dateModified`, and t
 > **‼️ HARD SEQUENCING RULE — do not skip.** Do NOT treat this phase as complete, and do NOT show, serve, publish, or hand off anything you write here, until the Phase 4 audit has run on THIS exact output and PASSED. Any rewrite (including fixing an audit finding) voids a prior pass and requires re-auditing. See the PHASE 4 IS NOT OPTIONAL rule at the top of `.claude/commands/_content-standard.md`.
 
 If `.claude/commands/_content-standard.local.md` exists in this repo, its sections override the same-named sections of the standard; see PRECEDENCE at the top of the standard. Neutrality and paid-placement claims are governed by the standard's neutrality rules (Phase 4 hard-fails them).
+
+<!-- mindmap-execution-v1 -->
+Apply `_mindmap-execution.md` to substantive additions on existing pages: current approved manifest, relevant executed/source-based evidence, case/survey retrieval and writer flags. The same independent Phase 4 usefulness/replay/rendered checks apply. Pure metadata/link corrections retain their existing scope.
+<!-- /mindmap-execution-v1 -->
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.

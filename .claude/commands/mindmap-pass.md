@@ -80,6 +80,7 @@ Phase 0 — load that chart, discover project facts, MANIFEST GATE (user approve
 
 - **Track A and Track B run in parallel.** Track A only creates new files; Track B only edits existing files — disjoint file sets, so they cannot collide.
 - **Track B order** (1 → 2 → 5). Phase 1 is **advisory-only** (detects/flags cannibalization, edits nothing). Phases 2 and 5 both edit existing pages and may touch the same file, so never run those two at once — that would cause lost edits.
+- **Phase 5 gate:** substantive new content/tools on existing routes require Phase 3 evidence preparation and a fresh Phase 4 pass on the exact output. Phase 6 waits for that pass; this is an automatic reviewer gate, not another human checkpoint.
 - **Phase 6 waits for both tracks**: it links *to* the new pages (needs Track A done) and it edits existing pages (must not collide with Track B).
 - **Phase 7 waits for everything before it** (needs every final URL + lastmod). It only *prepares* the IndexNow URL list — the actual IndexNow POST is deferred to Phase 9, after push + deploy + 200-verify, so search engines are only pinged with URLs that are already live (never not-yet-deployed 404s).
 - **Phase 8 is informational.** Print the summary table, then auto-continue to Phase 9 in the same turn — no approval, no stop.
@@ -152,3 +153,7 @@ When falling back:
 4. If retry still fails, note the HTTP status in the final report but do NOT block the rest of the run.
 
 This applies to **every phase that discovers or submits to IndexNow** in this workflow — Phase 0 (discovery), any prep phase that stages the IndexNow URL list, and the final submission phase. Prefer the env var if set; otherwise use the hard-coded default above.
+
+<!-- mindmap-execution-v1 -->
+Follow `_mindmap-execution.md` for mechanical chart rendering/validation, relevant same-run analysis, approved-case retrieval and final analysis/rendered checks. Revalidate an existing/imported chart against the complete current structured manifest; its existence is never a readiness exemption.
+<!-- /mindmap-execution-v1 -->

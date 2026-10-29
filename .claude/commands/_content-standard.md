@@ -138,27 +138,11 @@ A run with no ledger entry is treated as a run that never loaded the standard. T
 
 ## MEDIUM
 
-Deciding "new content" only settles *that* we build something. Before producing anything, decide **which medium** best serves the searcher's intent, then resolve it against what we can actually produce today — **we cannot generate image or video assets.**
+Choose the useful deliverable from the actual reader finding and verified capabilities, following `_decision-evidence.md` and `_mindmap-execution.md`. Prose, finite tables, SVG charts, genuine screenshots, images/illustrations, downloadable data and interactive tools are supported when this run can actually produce them. Generated illustrations never establish product testing. Videos remain outside the Mindmap evidence workflow.
 
-1. **Pick the single best medium** for the intent: `text` · `image` · `video` · `chart` · `downloadable data` · `interactive tool`.
-2. **Resolve it to a deliverable** with this fixed mapping (capability fallbacks are non-negotiable):
+Record `medium: <picked> → <resolved>` with the page's register and type. Assess inputs, logic, sources, implementation and feasibility before the approval chart. Prefer existing components and the smallest format that makes the answer useful. Keep the main answer readable without interaction.
 
-   | Best medium for the intent | Deliverable this phase ships |
-   |---|---|
-   | `text` | **text** — the page/article |
-   | `image` | **text** — we can't generate images; cover the intent in prose (describe/diagram in words) |
-   | `video` | **text** — we can't generate video; cover the intent in prose, optionally embedding a relevant third-party video |
-   | `chart` | **chart** (data visualization) + the minimal on-page text to frame and caption it |
-   | `downloadable data` | **downloadable data** (CSV/XLSX/JSON/etc.) **+ on-page text** describing and contextualizing the dataset |
-   | `interactive tool` | **interactive tool** — quiz, calculator, assessment, configurator, etc. |
-
-3. **Record the decision on the row** as `medium: <picked> → <resolved>` (e.g. `medium: video → text`, `medium: interactive tool → interactive tool`) so the audit phase can confirm the mapping was applied and that no image/video asset was promised.
-
-**Building each resolved deliverable:**
-- **text** → follow this whole standard.
-- **chart / downloadable data / interactive tool** → build the asset inline if this project has a mechanism to (an existing generator, component, or data file the routine uses); otherwise write the routine's one-page **asset spec** (the routine's own phase file says where). For **downloadable data**, the on-page framing text is written now regardless — it is never deferred to a spec. Never ship stub/placeholder page copy in place of one of these assets.
-
-If a row already carries a `format` hint from the chart, this medium gate **refines and overrides** it, and the capability fallback (image/video → text) always wins.
+Build the approved asset and its framing page in Phase 3 and independently audit both in Phase 4. A spec, stub, placeholder or promise that a human will build it later is not completion. If a requested format cannot be produced with available authorized capabilities, narrow/exclude that asset before approval, or resolve to a useful complete supported format. Do not force a calculator or visual when it adds nothing. Preserve local scope, exclusions and publication permissions.
 
 ---
 
@@ -538,11 +522,11 @@ Apply these gates in addition to the `## AUDITOR` section of `_anti-ai-language.
 - **GATE — No deferral in a data cell.** A comparison-table cell, spec row or pricing column exists to CARRY the fact. "Refer to current vendor console", "check vendor site", "verify current pricing" are not answers — the reader came to the page for that number, and sending them elsewhere is worse than omitting the row, because it advertises that you did not do the work. Go and get the figure: the vendor's own pricing page, and for AI model rates `data/pricing.ts`, which is maintained and dated. If the figure genuinely is not public, state THAT as the fact — "Quote-based", "Contact sales", "Not published" — which is information; an instruction to go look is not. Prose may of course tell a reader to confirm terms before signing; this gate is about cells that should hold a value. → FAIL, note `deferral-in-cell: "[cell]"`. Hard fail. **The link must be MARKDOWN — `[Label](https://url)` — never an HTML `<a href>`.** Page prose renders through a markdown parser that never injects HTML, so a raw tag is escaped and the reader sees the markup itself; the autolinker then linkifies company names inside that visible tag soup. The same applies to every other tag: a table is a GFM pipe table (one pipe-row per `content[]` element), emphasis is `**bold**` / `*italic*`. Raw HTML anywhere in a page field is a hard fail on its own, independent of whether the first mention is linked — checking only "is it linked?" is what let this ship live on five pages. In a URL, percent-encode `(` and `)` as `%28` / `%29`: the renderer's link pattern stops at the first paren. Exempt, as above: `metaTitle`, `metaDescription`, `h1` and `subtitle` render bare, so they take neither markdown nor HTML — plain text only.
 - **GATE — Naming and directives.** A generic stand-in ("the vendor", "the platform", "this provider", "the company", "the tool") on a page that names its subject → FAIL, note `coy-abstraction: "[text]"`. A sentence telling the reader to verify, confirm, or check something with no link to the exact page that answers it → FAIL, note `unlinked-directive: "[text]"`. A directive linked only to a vendor homepage when a specific sub-page answers it → FAIL. Scan body prose, FAQ answers, CTA copy, and every heading field.
 - **GATE — Load receipt.** `reports/standards-ledger.jsonl` must contain a `"via":"load-script"` entry for THIS run (this routine, this date), staged in the run's commit. Verify it yourself with `tail reports/standards-ledger.jsonl`. Missing → FAIL, note `no-load-receipt` — it means the writer opened the standard some other way or not at all. Recompute the three hashes yourself with `shasum -a 256` and compare: any mismatch means the writer used a stale or different file → FAIL, note `stale-standard: <which>`. An empty or placeholder `domain=` value → FAIL. This gate is what converts "the phase file told it to load the standard" into proof that it did.
-- **GATE — Medium and row records.** Each row must carry all three records: `medium: <picked> → <resolved>`, `register: operator|reporter`, and `page type: <type>`. Any one missing → FAIL. An image or video asset promised → FAIL.
+- **GATE — Medium and row records.** Each row must carry all three records: `medium: <picked> → <resolved>`, `register: operator|reporter`, and `page type: <type>`. Any one missing → FAIL. An infeasible/unbuilt promised asset or a video in this Mindmap workflow → FAIL. Actual useful images, SVGs and screenshots are allowed under the evidence/capability rules; inspect their sources and final rendering.
 - **GATE — Sentence rhythm.** Measure, do not eyeball. Extract the body prose, split into sentences, and word-count each. FAIL if any run of 10 consecutive sentences uses only one length band (short 1-8 / medium 9-14 / long 15+), or if 5 or more consecutive sentences fall within 3 words of each other. Report as `monotone-rhythm: sentences N-M, lengths [..]`. Also report the overall distribution across bands so run-wide monotony is visible. The fix varies real sentences; never pad, truncate, or split a clear spoken sentence to hit a count. Do **not** fail a page for lacking a 1-to-8 word sentence. Do **not** fail a clear spoken sentence of 20 to 28 words.
 - **GATE — Bare feature with no consequence.** For each named feature, capability, spec, or product attribute, confirm the same or the next sentence states what it does for the reader. A capability list where the reader must infer the value → FAIL, note `bare-feature: "[text]"`. The fix adds the concrete consequence, not an adjective.
 - **GATE — Opening sentence.** The page's first body sentence (the answer on operator pages, the news on reporter pages) must be short and easy enough that reading the next sentence is automatic. FAIL a page whose opener is a clause stack, opens on throat-clearing, or needs a second read. Note `weak-opener: "[text]"`. Do not fail a clear spoken sentence for sitting a few words over 20. Order is GATE Tee-up. Section openers are the AEO check, not this one.
-- **GATE — Depth.** Deterministic, and no reviewer opinion overrides it. Run it as the FIRST action of the audit and again as the last. Applies to `article` rows only; spec-only rows are exempt, since their deliverable is a spec, not prose.
+- **GATE — Depth.** Deterministic, and no reviewer opinion overrides it. Run it as the FIRST action of the audit and again as the last. Applies to article prose. Actual assets receive their format-specific checks and complete framing-page audit; an internal technical specification is not a reader-facing Mindmap deliverable.
 
   *Measure with the first rung that applies:*
   1. If Phase 0 found a `check-depth` script in this repo (`npm run check-depth`), run it. A non-zero exit blocks the phase. This is authoritative — it measures built output, so it catches thinness the source view misses.
@@ -609,8 +593,10 @@ The helper sends the intro alone to GPT-6.1 Sol, returns the same number of para
 
 ## SCOPE
 
-Applies to reader-facing **prose** — new pages, body-text updates, enrichments, and tool copy. Exempt: spec-only rows, pure technical/indexability fixes, and non-prose asset specs.
+Applies to reader-facing **prose** — new pages, body-text updates, enrichments, and tool copy. Exempt: pure technical/indexability fixes and internal non-prose technical specifications. Mindmap asset rows still require completed assets and audited framing prose.
 
 Body edits are explicitly in scope. Substantive body enrichments must pass the independent Phase 4 audit of the exact changed content and its evidence before publication, including testing attribution and the intent-based takeaway. Metadata/link-only edits retain their existing scope. A body edit inherits the page's existing `register` — never switch a page's voice mid-life.
 
 ---
+
+**Evidence authority:** read `.claude/commands/_testing-labels.md`. Local permission and exclusions come first; reviewed executed tests come second. Page type alone never enables the format.

@@ -84,3 +84,7 @@ If the push failed, STOP and report the failure with the error, the staged-but-u
 - ☐ IndexNow fired only after deployed-source and exact reviewed-output verification, for eligible canonical HTTP 200 routes
 - ☐ every affected route, including shared-template changes, has an HTTP status and exact reviewed-output result in the linked final report; interactive output was hydrated and freshly recaptured
 - ☐ the final response ENDS with the `🔗 New pages` clickable-link list — one full absolute URL (markdown link, page title as text) per newly created fully verified page; failed/reverted pages listed separately, never in the clickable list
+
+<!-- mindmap-execution-v1 -->
+Before this existing publication step, verify `_mindmap-execution.md` analysis checks and the actual unchanged rendered approvals for every applicable substantive action. Deliver the real approved assets and complete new-page link list; no spec-only asset completion. Preserve existing live verification, growth and IndexNow rules.
+<!-- /mindmap-execution-v1 -->

@@ -121,3 +121,7 @@ Fold legacy standalone duplicate-check pass rows into this one preparation summa
 ## Final rendered output and deployment closure
 
 Read and apply `_rendered-page-audit.md` in full. Central answer/setup/availability research must be complete before preparation Passed. Audit complete rendered pages including inherited decision sections, injected copy, dates, schema and links after all planned transformations. Use the shared rendered capture/review/freshness/live comparison commands; changed output invalidates affected approval. Close verified deployment and measurement records. These are enforceable substeps of the existing gates, with no added phase or human approval.
+
+<!-- mindmap-execution-v1 -->
+For Mindmap, enforce `_mindmap-execution.md`: the reviewed structured manifest and `mindmap-gates.py` renderer produce the complete actual chart, its full per-page briefs and one preparation row. Raw/imported charts require revalidation; the writer blocks missing preparation/evidence before a paid call. Install the shared helper, tests and approved public case bank with this contract.
+<!-- /mindmap-execution-v1 -->

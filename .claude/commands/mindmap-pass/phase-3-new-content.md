@@ -42,12 +42,7 @@ Act on every **new-content** row in the chart. The row's `format` column routes 
   `.claude/commands/mindmap-pass/phase-3c-tool-build.md` (mirror this repo's existing tool wiring,
   defensible logic, `data-tool` root, page prose from the API writer). A working tool on a live
   route — never a spec, never a stub. (MINDMAP-BUILDS-TOOLS)
-- **`template`, `glossary/reference`, `data report` (as an interactive asset)** → this phase does
-  NOT build the asset and does NOT call the generator. Write a one-page asset spec at
-  `reports/mindmap-pass/specs/<slug>-spec.md` (route, format + rationale, what it does — column
-  schema / data sources — keywords, scope, dependencies). `git add` it; Phase 4 reviews the spec.
-  Never write stub page content for these.
-
+- **`template`, `glossary/reference`, `data report`, chart, image or download** → produce the actual useful asset and its page in this approved run. Reuse the site's mechanisms; generate framing prose through the configured writer. Follow `_mindmap-execution.md`; a spec or placeholder cannot count as delivery. Assess feasibility before approval and narrow/exclude unsupported formats. Phase 4 reviews the actual asset and complete page.
 > **NET-NEW ONLY.** This phase creates brand-new routes. Never overwrite, regenerate, or
 > replace an existing page. A "new-content" row pointing at a route that already exists → STOP
 > and flag it.
@@ -110,7 +105,9 @@ python3 scripts/lib/content_gen.py write \
   --out    reports/mindmap-pass/<TODAY>/drafts/<slug>.<json|md> \
   --slug   <slug> --floor <floor> --format <json|markdown> [--schema guide|comparison|none] \
   --allowed-urls reports/mindmap-pass/<TODAY>/prompts/allowed-urls.txt \
-  --facts  reports/mindmap-pass/<TODAY>/prompts/<slug>.prompt.md
+  --facts  reports/mindmap-pass/<TODAY>/prompts/<slug>.prompt.md \
+  --mindmap-manifest <RUN>/approval-manifest.json --mindmap-review <RUN>/chart-review.json \
+  --analysis-packet <RUN>/evidence/<slug>/evidence.json
 ```
 Check draft one before draft two. The generator applies the remediation ladder to the returned
 draft rather than rejecting it: it **repairs in place** (fence, slug, a missing build-critical
@@ -139,7 +136,7 @@ one-line fix. **`git add` every `.meta.json`** — it is the provenance record.
    findings (unsupported / inferred / contradicted claims, restatements, AI tells) go to
    **Rung 1 FIX-IN-PLACE first**, never straight to a regeneration — save that page's findings
    to `reports/mindmap-pass/<TODAY>/audit/<slug>.findings.txt` and run
-   `python3 scripts/lib/content_gen.py fix --draft <draft> --findings <findings.txt> --facts <row prompt> --floor <floor> --allowed-urls <allowed-urls.txt>`,
+   `python3 scripts/lib/content_gen.py fix --draft <draft> --findings <findings.txt> --facts <row prompt> --floor <floor> --allowed-urls <allowed-urls.txt> --mindmap-manifest <RUN>/approval-manifest.json --mindmap-review <RUN>/chart-review.json --analysis-packet <RUN>/evidence/<slug>/evidence.json`,
    then re-template and re-audit that page in full on the same bar. **A re-audit that still
    finds claims or tells is another fix round (max 3 per page), not a failed attempt** — it
    never counts toward the 2-regeneration cap and never drops a page by itself (2026-10-08:
@@ -156,7 +153,7 @@ one-line fix. **`git add` every `.meta.json`** — it is the provenance record.
 ## Project specifics for this routine
 
 Match the page template + schema builders Phase 0 discovered so new pages carry the same
-scaffolding as existing pages. Tool rows → built per `phase-3c-tool-build.md`; other asset specs → `reports/mindmap-pass/specs/<slug>-spec.md`.
+scaffolding as existing pages. Tool rows → built per `phase-3c-tool-build.md`; other asset rows → complete real assets under `_mindmap-execution.md`.
 **The INTRO HUMANIZE step is SKIPPED for every page this phase generated** — they are exempt
 per the content standard's INTRO HUMANIZE section (the generator carries its guards).
 
@@ -167,3 +164,7 @@ EXACTLY ONE human stop (the Phase 0 manifest approval); this phase is not it. Ph
 informational summary that auto-continues to the Phase 9 push.
 
 **Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+<!-- mindmap-execution-v1 -->
+Before writing, follow `_mindmap-execution.md`: retrieve approved cases and applicable survey records, execute relevant supported analysis and save current evidence. Use a justified source-based branch when numerical work adds nothing or cannot be defended. Pass the manifest/review/packet flags to every Mindmap writer call.
+<!-- /mindmap-execution-v1 -->
