@@ -1,0 +1,12 @@
+[
+{"check":"Broken internal links (4xx)","rows":2},
+{"check":"Internal links to 5xx","rows":null,"note":"not run"},
+{"check":"Internal links to redirects (3xx)","rows":0},
+{"check":"Broken external links (4xx)","rows":0},
+{"check":"Orphan pages in sitemap","rows":0},
+{"check":"Redirect chains","rows":1},
+{"check":"Open Graph incomplete","rows":100},
+{"check":"Non-200 URL in sitemap","rows":0},
+{"check":"Noindex URL in sitemap","rows":0},
+{"check":"Non-canonical URL in sitemap","rows":null,"note":"not run"}
+]

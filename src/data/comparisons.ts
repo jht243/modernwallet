@@ -2653,7 +2653,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       },
       {
         "heading": "Claiming Social Security and Drawing From a 401(k)",
-        "content": "The age when you claim Social Security changes your monthly benefit. You can start retirement benefits at 62, but [claiming early permanently reduces the monthly amount](https://www.ssa.gov/benefits/retirement/planner/agereduction.html). [Delaying past full retirement age up to 70 increases the monthly amount](https://www.ssa.gov/benefits/retirement/planner/delayret.html). A larger monthly benefit lasts for life, so the claiming decision affects more than your first retirement-year budget.\n\nA 401(k) presents a different timing question: how much of the balance to draw down. You might plan for 401(k) withdrawals to cover more spending before claiming Social Security, or you might claim earlier and draw less from the 401(k) at first. Either plan needs a check on the balance left for later years. Claiming later does not create 401(k) money; it changes when Social Security income begins and how much arrives each month afterward.\n\nCompare at least two claiming ages using the same spending estimate. For each age, note the years before benefits begin, the monthly benefit afterward, and the 401(k) withdrawals your budget would call for. If your 401(k) balance could not support the years before a later claim, that finding matters even if the later monthly benefit looks appealing. The [Social Security retirement calculator](/calculators/social-security-retirement-calculator/) can help you test the timing against your own estimates."
+        "content": "The age when you claim Social Security changes your monthly benefit. You can start retirement benefits at 62, but [claiming early permanently reduces the monthly amount](https://www.ssa.gov/benefits/retirement/planner/agereduction.html). [Delaying past full retirement age up to 70 increases the monthly amount](https://www.ssa.gov/benefits/retirement/planner/delayret.html). A larger monthly benefit lasts for life, so the claiming decision affects more than your first retirement-year budget.\n\nA 401(k) presents a different timing question: how much of the balance to draw down. You might plan for 401(k) withdrawals to cover more spending before claiming Social Security, or you might claim earlier and draw less from the 401(k) at first. Either plan needs a check on the balance left for later years. Claiming later does not create 401(k) money; it changes when Social Security income begins and how much arrives each month afterward.\n\nCompare at least two claiming ages using the same spending estimate. For each age, note the years before benefits begin, the monthly benefit afterward, and the 401(k) withdrawals your budget would call for. If your 401(k) balance could not support the years before a later claim, that finding matters even if the later monthly benefit looks appealing. The [Social Security retirement calculator](/retirement/social-security-retirement-calculator/) can help you test the timing against your own estimates."
       },
       {
         "heading": "Taxes on Social Security and 401(k) Withdrawals",
@@ -2707,7 +2707,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     "calculatorLinks": [
       {
         "label": "Social Security retirement calculator",
-        "href": "/calculators/social-security-retirement-calculator/"
+        "href": "/retirement/social-security-retirement-calculator/"
       }
     ]
   },

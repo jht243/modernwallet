@@ -18,6 +18,15 @@ const jsonLdBreadcrumb = {
 ---
 <BaseLayout title={title} description={description} canonical={canonicalUrl}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: title,
+    description,
+    url: canonicalUrl,
+    isPartOf: { "@id": new URL("/", Astro.site).toString() + "#website" },
+    publisher: { "@id": new URL("/", Astro.site).toString() + "#organization" },
+  })} />
 
   <main class="page">
     <nav class="crumb" aria-label="Breadcrumb">

@@ -20,6 +20,7 @@ const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).toStri
 const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": new URL("/", Astro.site).toString() + "#organization",
   name: SITE.name,
   url: new URL("/", Astro.site).toString(),
   logo: { "@type": "ImageObject", url: new URL("/favicon.svg", Astro.site).toString() },
@@ -112,9 +113,11 @@ const websiteJsonLd = {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={new URL("/favicon-192.png", Astro.site).toString()} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL("/favicon-192.png", Astro.site).toString()} />
     <script type="application/ld+json" set:html={JSON.stringify(orgJsonLd)} />
     <script type="application/ld+json" set:html={JSON.stringify(websiteJsonLd)} />
     <style is:global>

@@ -12,12 +12,22 @@ const jsonLdBreadcrumb = {
     { "@type": "ListItem", position: 2, name: "Guides", item: canonicalUrl },
   ],
 };
+const jsonLdCollection = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": canonicalUrl + "#collection",
+  name: "Money Guides",
+  url: canonicalUrl,
+  isPartOf: { "@id": new URL("/", Astro.site).toString() + "#website" },
+  publisher: { "@id": new URL("/", Astro.site).toString() + "#organization" },
+};
 ---
 <BaseLayout
   title={`Money Guides — Step-by-Step Guides by ${SITE.name}`}
   description="Step-by-step money guides that walk you through buying a home, buying a car, and getting ready to retire — with the calculators for each step."
 >
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdCollection)} />
 
   <main class="page">
     <nav class="crumb" aria-label="Breadcrumb">

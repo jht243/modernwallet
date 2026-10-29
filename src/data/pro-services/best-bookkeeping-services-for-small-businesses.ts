@@ -10,7 +10,7 @@ export const BEST_BOOKKEEPING_SERVICES: RoundupEntry = {
   noAds: true,
   title: "Best Bookkeeping Services for Small Businesses (2026)",
   metaDescription:
-    "Five bookkeeping services for small businesses compared on monthly price, catch-up fees, and tax help, from a $250 flat fee to a local firm that quotes in writing.",
+    "Five bookkeeping services compared on monthly price, catch-up fees and tax help, from a $250 flat fee to a local firm that quotes in writing.",
   targetKeyword: "bookkeeping services for small businesses",
   category: "bookkeeping services",
   angle: "best",
