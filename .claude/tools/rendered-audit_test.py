@@ -126,4 +126,27 @@ class Ads(unittest.TestCase):
   for style in ['display:block;width:640px;height:480px','display:none;display:block;width:640px;height:480px']:
    html='<iframe width="0" height="0" style="'+style+'" src="https://ads.pubmatic.com/AdServer/js/user_sync.html"></iframe>'
    self.assertNotEqual(self.parse(body=body)['fingerprint'],self.parse(html,body=body)['fingerprint'])
+ def test_percent_encoded_preview_origin_normalized(self):
+  one=self.core.replace('{ad}','<iframe src="https://app.grow.me/iframe-login?callback=http%3A%2F%2Flocalhost%3A3000%2Fguide"></iframe>');two=one.replace('http%3A%2F%2Flocalhost%3A3000','https%3A%2F%2Fexample.com')
+  a1=a.parse(one,self.route,'http://localhost:3000','https://example.com');a2=a.parse(two,self.route,'https://example.com','https://example.com');self.assertEqual(a1['fingerprint'],a2['fingerprint'])
+  self.assertNotEqual(a1['fingerprint'],a.parse(two.replace('%2Fguide','%2Fdifferent'),self.route,'https://example.com','https://example.com')['fingerprint'])
+ def test_safeframe_hidden_exact_identity_only(self):
+  body=self.core.replace('<body>','<body class="mv-loaded">');frame='<iframe src="https://'+('a'*32)+'.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html" style="display:none"></iframe>'
+  self.assertEqual(self.parse(body=body)['fingerprint'],self.parse(frame,body=body)['fingerprint'])
+  for changed in [frame.replace('display:none','display:block'),frame.replace('display:none','display:none;display:block'),frame.replace('/html/container.html','/editorial.html'),frame.replace('.googlesyndication.com','.example.com')]:self.assertNotEqual(self.parse(body=body)['fingerprint'],self.parse(changed,body=body)['fingerprint'])
+ def test_confiant_holder_only_vendor_root_and_noneditorial_children(self):
+  body=self.core.replace('<body>','<body class="mv-loaded">');empty=body.replace('</body>','<div id="confiant_tag_holder" style="display:none"><script>vendor code</script></div></body>');self.assertEqual(self.parse(body=body)['fingerprint'],self.parse(body=empty)['fingerprint'])
+  for content in ['<p>CTA</p>','<section id="reader-survey">2 responses</section>','<script type="application/ld+json">{}</script>','Unverified text']:
+   with self.assertRaises(ValueError):self.parse(body=empty.replace('<script>vendor code</script>',content))
+  self.assertNotEqual(self.parse(body=body)['fingerprint'],self.parse('<div id="confiant_tag_holder" style="display:none"></div>',body=body)['fingerprint'])
+ def test_confiant_frame_identity_and_hidden_body_root_required(self):
+  body=self.core.replace('<body>','<body class="mv-loaded">');frame='<iframe name="cnftComm" style="display:none;width:0px;height:0px"></iframe>';atroot=body.replace('</body>',frame+'</body>');self.assertEqual(self.parse(body=body)['fingerprint'],self.parse(body=atroot)['fingerprint'])
+  self.assertNotEqual(self.parse(body=body)['fingerprint'],self.parse(frame,body=body)['fingerprint'])
+  for change in [atroot.replace('display:none','display:block'),atroot.replace('name="cnftComm"','name="generic"'),atroot.replace('name="cnftComm"','name="cnftComm" src="/first-party"')]:self.assertNotEqual(self.parse(body=body)['fingerprint'],self.parse(body=change)['fingerprint'])
+ def test_confiant_unknown_frame_and_unclosed_holder_rejected(self):
+  body=self.core.replace('<body>','<body class="mv-loaded">')
+  for holder in ['<div id="confiant_tag_holder" style="display:none"><iframe src="/firstparty" style="display:none"></iframe></div>','<div id="confiant_tag_holder" style="display:none">']:
+   with self.assertRaises(ValueError):self.parse(body=body.replace('</body>',holder+'</body>'))
+ def test_encoded_origin_prefix_lookalike_not_normalized(self):
+  self.assertNotEqual(a.normalize('http%3A%2F%2Flocalhost%3A3000.evil%2Fguide','http://localhost:3000','https://example.com'),'https%3A%2F%2Fexample.com.evil%2Fguide')
 if __name__=='__main__': unittest.main()

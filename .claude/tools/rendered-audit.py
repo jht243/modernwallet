@@ -10,7 +10,7 @@ from pathlib import Path
 import re
 import sys
 import urllib.request
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, quote
 
 CHECKS = {'wholePageCoherence', 'sourceSupport', 'testingAndAttribution', 'datesAndSchema', 'linksAndIndexability', 'renderedLayout', 'scopeAndExclusions'}
 REQUIRED = CHECKS - {'testingAndAttribution', 'scopeAndExclusions'}
@@ -28,7 +28,7 @@ def clean(text): return re.sub(r'\s+', ' ', text).strip()
 class Page(HTMLParser):
     def __init__(self, volatile_ads=None):
         super().__init__(convert_charrefs=True)
-        self.volatile_ads=volatile_ads; self.ad_stack=[]; self.fixed_ad_root=False; self.fixed_ad_children=0; self.vendor_body=False; self.closed_body=False; self.closed_html=False
+        self.volatile_ads=volatile_ads; self.ad_stack=[]; self.fixed_ad_root=False; self.fixed_ad_children=0; self.confiant_root=False; self.vendor_body=False; self.closed_body=False; self.closed_html=False
         self.stack=[]; self.text=[]; self.date_text=[]; self.headings=[]; self.links=[]; self.meta={}; self.schemas=[]; self.json=[]; self.is_json=False; self.title=[]; self.canonical=''; self.article=0; self.article_text=[]; self.structure=[]
     def handle_starttag(self, tag, attrs):
         a={k:v or "" for k,v in attrs}
@@ -38,26 +38,36 @@ class Page(HTMLParser):
         displays=[part.split(':',1)[1].strip().lower() for part in a.get('style','').split(';') if ':' in part and part.split(':',1)[0].strip().lower()=='display']
         unambiguously_hidden=displays==['none']
         fixed_root=tag=='div' and ident=='fixed_container_bottom' and self.stack==['html','body'] and self.vendor_body
+        confi_root=tag=='div' and ident=='confiant_tag_holder' and self.stack==['html','body'] and self.vendor_body and unambiguously_hidden
+        frame=urlsplit(a.get('src','')) if tag=='iframe' else None
+        known_hidden_tracker=bool(frame is not None and self.vendor_body and unambiguously_hidden and (
+            (frame.hostname,frame.path) in {
+                ('feed.pghub.io','/tag'),('ads.pubmatic.com','/AdServer/js/user_sync.html'),
+                ('eus.rubiconproject.com','/usync.html'),('elb.the-ozone-project.com','/static/load-cookie.html'),
+                ('onetag-sys.com','/usync/'),('mediavine-d.openx.net','/w/1.0/pd'),
+                ('eb2.3lift.com','/sync'),('csync.smilewanted.com',''),('csync.smilewanted.com','/')} or
+            (re.fullmatch(r'[0-9a-f]{32}\.safeframe\.googlesyndication\.com',frame.hostname or '') and
+             frame.path=='/safeframe/1-0-45/html/container.html') or
+            (a.get('name')=='cnftComm' and not a.get('src') and self.stack==['html','body'])))
         # Explicit manifest opt-in is hash-bound to independent review. Full HTML
         # remains archived; only known third-party rotating ad UI is normalized.
         ad=self.volatile_ads=='mediavine' and (
             (tag=='div' and ident=='mv-first-video' and 'mv-video-target' in classes) or
             (tag=='div' and re.fullmatch(r'(?:content(?:_\d+)?_btf|adhesion_(?:desktop|mobile)|universalPlayer)(?:_wrapper)?',ident) and bool(classes & {'adunit','adunitwrapper','adhesion_wrapper'})) or
-            (tag=='div' and 'mv-ad-box' in classes and re.fullmatch(r'content(?:_\d+)?_btf',a.get('data-slotid',''))) or fixed_root or
+            (tag=='div' and 'mv-ad-box' in classes and re.fullmatch(r'content(?:_\d+)?_btf',a.get('data-slotid',''))) or fixed_root or confi_root or
             (tag in {'div','iframe'} and ident.startswith('google_ads_iframe_')) or
             (tag=='iframe' and re.fullmatch(r'goog_\d+',ident)) or
             (tag=='iframe' and (a.get('width')=='0' and a.get('height')=='0' or 'display:none' in a.get('style','').replace(' ','') or all(v in a.get('style','').replace(' ','') for v in ['width:0px','height:0px'])) and
              ((a.get('src')=='about:blank' and a.get('name')=='__pb_locator__' and self.vendor_body) or urlsplit(a.get('src','')).hostname in {'i.liadm.com','exchange.mediavine.com','exchange.pubnation.com','exchange.journeymv.com','cm.g.doubleclick.net'} or
-              (self.vendor_body and unambiguously_hidden and (urlsplit(a.get('src','')).hostname,urlsplit(a.get('src','')).path) in {
-                  ('feed.pghub.io','/tag'),('ads.pubmatic.com','/AdServer/js/user_sync.html'),
-                  ('eus.rubiconproject.com','/usync.html'),('elb.the-ozone-project.com','/static/load-cookie.html'),
-                  ('onetag-sys.com','/usync/'),('mediavine-d.openx.net','/w/1.0/pd'),
-                  ('eb2.3lift.com','/sync'),('csync.smilewanted.com',''),('csync.smilewanted.com','/')}))))
+              known_hidden_tracker)))
         if self.ad_stack or ad:
             protected=' '.join(str(a.get(k,'')) for k in ['id','class','aria-label','data-testid']).lower()
             require(tag not in {'main','article','h1'} and not (tag=='script' and a.get('type')=='application/ld+json') and
                     not any(token in protected for token in ['reader-survey','readersurvey','reader survey','affiliate','tested','testing','byline']),
                     'Protected editorial content inside a volatile ad region')
+            if self.confiant_root and len(self.ad_stack)==1:
+                require(tag=='script' or (tag=='iframe' and ad),'Unverified child in Confiant tracking holder')
+            if not self.ad_stack and confi_root:self.confiant_root=True
             if self.fixed_ad_root and len(self.ad_stack)==1:
                 require(ad and not fixed_root,'Unverified child in fixed third-party ad container')
                 self.fixed_ad_children+=1
@@ -83,6 +93,7 @@ class Page(HTMLParser):
         if self.ad_stack:
             require(tag in self.ad_stack,'Unterminated volatile ad region')
             self.ad_stack=self.ad_stack[:len(self.ad_stack)-1-self.ad_stack[::-1].index(tag)]
+            if not self.ad_stack:self.confiant_root=False
             if not self.ad_stack and self.fixed_ad_root:
                 require(self.fixed_ad_children>0,'Unverified fixed third-party ad container')
                 self.fixed_ad_root=False
@@ -97,7 +108,7 @@ class Page(HTMLParser):
             self.stack=self.stack[:len(self.stack)-1-self.stack[::-1].index(tag)]
     def handle_data(self, data):
         if self.ad_stack:
-            require(not (self.fixed_ad_root and len(self.ad_stack)==1 and data.strip()),'Unexpected text in fixed third-party ad container')
+            require(not ((self.fixed_ad_root or self.confiant_root) and len(self.ad_stack)==1 and data.strip()),'Unexpected text in fixed third-party ad container')
             return
         if self.is_json: self.json.append(data)
         if 'title' in self.stack: self.title.append(data)
@@ -108,7 +119,9 @@ class Page(HTMLParser):
             if 'h1' in self.stack: self.headings.append(data)
 
 def normalize(value, base, canonical):
-    if isinstance(value,str): return value.replace(base.rstrip('/'),canonical.rstrip('/'))
+    if isinstance(value,str):
+        value=value.replace(base.rstrip('/'),canonical.rstrip('/'))
+        return re.sub(re.escape(quote(base.rstrip('/'),safe=''))+r'(?=$|%2[fF]|%3[fF]|%23|&)',lambda _:quote(canonical.rstrip('/'),safe=''),value)
     if isinstance(value,list): return [normalize(v,base,canonical) for v in value]
     if isinstance(value,dict): return {k:normalize(v,base,canonical) for k,v in value.items()}
     return value
