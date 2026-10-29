@@ -235,7 +235,13 @@ def primary_check(root):
     acknowledged = receipt.get('revision') if receipt_matches(receipt, root, session) and receipt.get('identity') == identity else None
     if acknowledged and git(root, 'merge-base', acknowledged, revision).decode().strip() != acknowledged:
         acknowledged = None  # A rewritten default branch needs a fresh comparison.
-    base = acknowledged or git(root, 'merge-base', head, revision).decode().strip()
+    common = git(root, 'merge-base', head, revision).decode().strip()
+    base = acknowledged or common
+    # A normal pull/merge can integrate a newer published baseline during this
+    # same run. Do not let an older receipt override that committed ancestry.
+    # Keep the acknowledged revision when HEAD has not integrated it yet.
+    if acknowledged and git(root, 'merge-base', acknowledged, common).decode().strip() == acknowledged:
+        base = common
     paths = [os.fsdecode(p) for p in git(root, 'diff', '--no-renames', '--name-only', '-z', base, revision, '--').split(b'\0') if p and not p.startswith(b'reports/')]
     missing = [p for p in paths if not includes_published(published_entry(root, base, p), working_entry(root, p), published_entry(root, revision, p))]
     result = {'status': 'stale' if missing else 'current', 'source': str(root), 'publishedSource': 'origin/' + ref.removeprefix('refs/heads/'), 'revision': revision, 'missing': sorted(missing)}

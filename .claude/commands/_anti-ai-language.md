@@ -14,10 +14,10 @@ The overall standard: every sentence must parse on the first read and carry info
 
 ---
 
-**THE INTRO HUMANIZE CARVE-OUT.** A routine's last prose step re-voices the intro of each NEW page through GPT-6.1 Sol, deliberately with no ban list, AFTER every gate in this file has already run against the drafted intro. See `## INTRO HUMANIZE` in `_content-standard.md`. Two consequences bind every reader of this file:
+**THE INTRO HUMANIZE CARVE-OUT.** A routine’s last prose step re-voices the intro of each NEW page through GPT-6.1 Sol, deliberately with no ban list, after the drafted intro passes the prose/style gates and BEFORE final independent review of the complete rendered page. See `## INTRO HUMANIZE` in `_content-standard.md`. Two consequences bind every reader of this file:
 
 - **Writers:** never call `scripts/humanize_intro.py` yourself, and never mid-draft. The orchestrator runs it once, at the end. Hand back your intro as drafted.
-- **Auditors and lint gates:** this file does NOT apply to an intro that has already been humanized. Do not re-check it, do not rewrite it, do not split its sentences or trim it to a length target. A style flag on a humanized intro is expected; let it stand. Only a lost fact or a broken link justifies action, and the fix is to restore the ORIGINAL intro, never to hand-edit the new one.
+- **Auditors and lint gates:** The style bans and rhythm/length checks in this file do not apply again to an already-humanized intro. Do not polish or hand-edit it for style. The final rendered review still checks facts, meaning, reader intent, evidence/testing claims, links, required disclosures and layout. A regression in any of those requires restoring the original intro verbatim, then recapturing and reviewing the affected page under `_rendered-page-audit.md`.
 
 ---
 
@@ -180,4 +180,4 @@ Applies to all reader-facing **text** — new pages, body-text updates, enrichme
 
 Do not confuse two different exclusions. Headings and metadata are excluded from **body word counts** so they cannot pad a depth floor. They are NOT excluded from **this scan**. An audit that extracts body prose for word-counting and then scans only that extract has left every headline unchecked, which is how a tell reaches the top of a live page. Scan the headline fields separately and explicitly.
 
-Body edits are explicitly in scope. The audit phase re-reviews only net-new pages and does **not** re-scan body edits, so a tell introduced during a body edit ships unaudited unless the writer catches it here.
+Body edits are explicitly in scope. New pages and substantive body updates, enrichments or tool copy must pass independent Phase 4 review of the exact final rendered page under `_rendered-page-audit.md`. Metadata/link-only changes retain their existing reviewer gates. Unrelated historical style issues may remain advisory; inherited contradictions affecting the revised answer remain blockers.

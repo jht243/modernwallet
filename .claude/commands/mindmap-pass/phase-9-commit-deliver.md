@@ -24,20 +24,20 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 <!-- /fleet-evidence-contract-v2 -->
 
 ## Worker
-After Phase 8 (Summary) is APPROVED by the user:
-1. `git status` — confirm only intended SEO changes are staged. If anything unexpected, STOP and report.
+After the informational Phase 8 summary, continue automatically within the publication scope authorized at Phase 0, provided every required independent review and final rendered check passes. Phase 8 adds no human approval gate:
+1. Inspect the working tree and staging. Commit only this run’s independently approved changes. Preserve unrelated edits and pre-existing staged work, using a separate index or an isolated reviewed publication checkout when needed. Unexpected changes require attribution and reconciliation, never a blanket add, stash or reset.
 2. Single commit:
    `Mindmap pass: {C} consolidations, {M} metadata, {N} new pages, {B} body, {L} link passes (chart: reports/mindmap-pass/<date>.md)`
    + blank line + short bullet list of routes touched + `Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>`.
 3. Deliver per the discovered push target: push directly to the default branch, or push a branch and open a PR.
-4. After push completes, run `git rev-parse HEAD` to capture the commit SHA. Then confirm `git fetch origin && git rev-parse origin/<branch>` matches — proving the commit actually reached the remote.
-5. Verify clean tree (`git status`).
-6. **‼️ VERIFY LIVE (200 check) — REQUIRED before IndexNow and before the final report.** Publishing is NOT "done" until the live pages actually load. Build the FULL list of URLs whose content this run created or modified (every new page + every body/metadata edit + every redirect destination you added) — NOT just the IndexNow list. Wait at least 3 minutes after push for the host to deploy (longer if the host builds slowly — Render / Vercel / Netlify cold builds routinely take 2–5 min; 60s is NOT enough), then for EACH URL: `curl -s -o /dev/null -w "%{http_code}\n" https://<BASE_URL>/<path>`. A page counts as shipped ONLY if it returns **200**. If any URL returns 404 / 500 / any non-200, the change is BROKEN — diagnose the root cause (bad template import/include, missing route, build error), fix it, commit, push, wait, re-verify. **Up to 2 fix attempts per URL.** If a newly-created page still isn't 200 after 2 attempts, **revert that page** (commit + push the revert) so a broken 500/404 is never left live, and mark it FAILED. Keep a running `{url → final status}` list for the final report. Do NOT proceed to step 7 or the final report until every URL has a final status.
-7. **IndexNow submission (post-deploy ONLY — this is the single point where IndexNow fires).** Read the URL list from `reports/mindmap-pass/<date>.indexnow.txt` and intersect with the verified-200 list from step 6 — **submit ONLY URLs that returned 200**. To submit, run `python3 .claude/scripts/indexnow-submit.py --urls-file <file of those verified-live URLs>` (write the list to a file first). The script picks the key Bing accepts for this host, tries api.indexnow.org, then www.bing.com, then yandex.com, and falls back to the fleet relay (layer3labs-web `/api/indexnow-relay`) if this sandbox can't reach them. Exit 0 means accepted; copy its `INDEXNOW …` line into the report. Never POST to `api.indexnow.com`: that host does not exist. **Never submit a URL that did not return 200.** List any URL that never went live (still non-200 after retries) in the final report so the user can investigate the deploy.
-8. **‼️ FINAL STEP — Direct links to every newly created page (REQUIRED, always last).** After the 200 verification (step 6) and IndexNow (step 7), end the run by giving the user a clickable link list of EVERY newly created page from this run, so they can open each one directly in a browser and see it. Rules:
+4. Capture the actual publication commit SHA from the commit operation or isolated publication checkout. Fetch the intended remote branch and verify that this commit exists in its history and that the selected reviewed file blobs are unchanged. With a separate index or isolated publication checkout, the primary working checkout’s HEAD and pre-existing staging need not move. Record the publication SHA and remote proof.
+5. Verify that the published commit contains only approved changes and that unrelated working files and pre-existing staging remain intact. Report the actual working-tree state; unrelated preserved work does not require cleanup.
+6. **VERIFY THE EXACT REVIEWED OUTPUT LIVE — REQUIRED before IndexNow and the final report.** Follow `_rendered-page-audit.md` and use `rendered-audit.py` to capture every affected route after deployment, including routes affected by shared templates, injected copy, affiliate transformations and links. Confirm the reviewed source revision is deployed; HTTP 200 alone is not a PASS. Hydrate interactive content in a real browser, independently audit the complete final render, freshly recapture it and compare live output with the exact approved snapshot. Recheck changed output before claiming it shipped. Fix a failed route in place, rebuild, obtain the required affected-page review and verify again; after two failed rework attempts stop and escalate. If this run left a broken change live, restore its last verified version without reverting unrelated work. Keep the per-route status and exact comparison evidence in the final verification report. Do not proceed while required checks are unresolved.
+7. **IndexNow submission, after exact live verification only.** Intersect the run’s IndexNow list with routes that returned HTTP 200, passed the exact reviewed-output comparison and are eligible canonical URLs. Exclude aliases, redirects and failed routes. Resolve the helper from the active project and verify it during preparation. If it is missing locally, restore that project’s current published `.claude/scripts/indexnow-submit.py` and dependencies. If the project has no published copy, install the published fleet-shared host-agnostic helper while preserving the project’s overrides and permissions. Global routines must resolve/install the helper into the active project before use. Preserve its host, key and site permissions; never borrow another project’s configuration. Run `python3 .claude/scripts/indexnow-submit.py --urls-file <verified-eligible-urls>` and record its result. Never submit a route merely because it returns 200.
+8. **‼️ FINAL STEP — Direct links to every newly created page (REQUIRED, always last).** After the exact live verification (step 6) and IndexNow (step 7), end the run by giving the user a clickable link list of EVERY newly created page from this run, so they can open each one directly in a browser and see it. Rules:
    - One page per line, as a full absolute URL (`https://<BASE_URL>/<path>`) — never a relative path, never a file path, never a route name.
    - Format each line as a markdown link whose text is the page's H1/title: `- [Page Title](https://<BASE_URL>/<path>)`.
-   - Include ONLY pages verified 200 in step 6. Pages that were reverted/FAILED go in a separate `⚠️ Not live` list underneath with their final status code — never mixed into the clickable list.
+   - Include ONLY pages that returned 200 and passed exact reviewed-output verification in step 6. Pages that were reverted/FAILED go in a separate `⚠️ Not live` list underneath with their final status code — never mixed into the clickable list.
    - This list is for NEW pages created this run. If existing pages were significantly enriched (body sections added), add a second, clearly separated `Updated pages` link list in the same format.
    - This must be the LAST section of the final response — nothing after it — so the links are immediately visible and clickable at the end of the run.
 
@@ -51,7 +51,7 @@ Commit SHA: {full 40-char SHA}
 Short SHA:  {7-char short SHA}
 Remote:     confirmed on origin/{branch}
 Files:      {N} changed
-Tree:       clean
+Tree:       {actual state; unrelated edits/staging preserved}
 
 GitHub: https://github.com/{owner}/{repo}/commit/{full SHA}
 
@@ -75,12 +75,12 @@ Updated pages (if any were enriched this run):
 If the push failed, STOP and report the failure with the error, the staged-but-unpushed commit SHA, and what the user should do next.
 
 ## Reviewer checklist
-- ☐ working tree clean post-delivery
+- ☐ approved publication scope verified; unrelated working files and pre-existing staging preserved
 - ☐ commit message references the chart
 - ☐ only intended files changed
 - ☐ delivery matches the push target
 - ☐ final response prominently displays the full commit SHA
-- ☐ remote-confirmation step ran and matched (local HEAD == origin/branch)
-- ☐ IndexNow fired only AFTER push, and only for URLs verified live (HTTP 200); no 404/3xx URL was submitted (or skipped cleanly if no key)
-- ☐ EVERY created/changed URL was fetched live and confirmed 200 (or reverted), and the final report has a `Live verification` row for each one
-- ☐ the final response ENDS with the `🔗 New pages` clickable-link list — one full absolute URL (markdown link, page title as text) per newly created 200-verified page; failed/reverted pages listed separately, never in the clickable list
+- ☐ the actual publication commit exists on the intended remote history and its reviewed file blobs are unchanged
+- ☐ IndexNow fired only after deployed-source and exact reviewed-output verification, for eligible canonical HTTP 200 routes
+- ☐ every affected route, including shared-template changes, has an HTTP status and exact reviewed-output result in the linked final report; interactive output was hydrated and freshly recaptured
+- ☐ the final response ENDS with the `🔗 New pages` clickable-link list — one full absolute URL (markdown link, page title as text) per newly created fully verified page; failed/reverted pages listed separately, never in the clickable list

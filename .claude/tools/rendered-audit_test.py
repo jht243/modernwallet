@@ -76,4 +76,54 @@ class Tests(unittest.TestCase):
   with self.assertRaisesRegex(ValueError,'cycles'):a.validate_manifest(m)
   m['routes']=m['routes'][:1]
   with self.assertRaisesRegex(ValueError,'audited'):a.validate_manifest(m)
+class Ads(unittest.TestCase):
+ def setUp(self):
+  self.route={'path':'/guide','volatileThirdPartyAds':'mediavine'}
+  self.core='<html><head><title>Guide</title><link rel="canonical" href="https://example.com/guide"><script type="application/ld+json">{"@type":"Article","dateModified":"2026-10-28"}</script></head><body><main><h1>Guide</h1><p>'+('Reader-facing guidance. '*20)+'</p><section id="reader-survey"><button>Results</button><p>1 response</p></section><aside class="affiliate-card"><a href="/product">Affiliate product</a></aside>{ad}<p>Following article paragraph</p></main></body></html>'
+  self.ad='<div id="content_2_btf_wrapper" class="adunitwrapper content_btf_wrapper"><div id="google_ads_iframe_123"><iframe id="goog_123"></iframe></div></div><div id="mv-first-video" class="mv-video-target"><p>Up next in 15s</p><a href="https://ads.example/one">Advertisement</a></div>'
+ def parse(self,ad='',route=None,body=None):return a.parse((body or self.core).replace('{ad}',ad),route or self.route,'https://example.com','https://example.com')
+ def test_rotating_ad_ui_only(self):
+  self.assertEqual(self.parse()['fingerprint'],self.parse(self.ad)['fingerprint']);self.assertEqual(self.parse(self.ad)['fingerprint'],self.parse(self.ad.replace('15s','4s').replace('/one','/two'))['fingerprint'])
+ def test_no_opt_in_no_exclusion(self):self.assertNotEqual(self.parse(route={'path':'/guide'})['fingerprint'],self.parse(self.ad,route={'path':'/guide'})['fingerprint'])
+ def test_reader_content_remains_bound(self):
+  for before,after in [('1 response','2 responses'),('Affiliate product','Untrue product claim'),('Following article paragraph','Changed answer'),('2026-10-28','2026-10-29'),('href="/product"','href="/other"')]:self.assertNotEqual(self.parse(self.ad)['fingerprint'],self.parse(self.ad,body=self.core.replace(before,after))['fingerprint'])
+ def test_body_classes_only_known_transients(self):
+  self.assertEqual(self.parse()['fingerprint'],self.parse(body=self.core.replace('<body>','<body class="mv-loaded mv-device-desktop">'))['fingerprint']);self.assertNotEqual(self.parse()['fingerprint'],self.parse(body=self.core.replace('<body>','<body class="hidden">'))['fingerprint'])
+ def test_unknown_region_rejected(self):
+  with self.assertRaises(ValueError):a.validate_manifest({'author':'a','canonicalBase':'https://example.com','routes':[{'path':'/guide','volatileThirdPartyAds':'reader-survey'}]})
+ def test_full_html_hash_retained(self):self.assertNotEqual(self.parse()['htmlSha256'],self.parse(self.ad)['htmlSha256'])
+ def test_generic_fixed_container_remains_bound(self):
+  self.assertNotEqual(self.parse('<div id="fixed_container_bottom">Original CTA</div>')['fingerprint'],self.parse('<div id="fixed_container_bottom">Changed CTA</div>')['fingerprint'])
+ def test_generic_ad_box_remains_bound(self):
+  self.assertNotEqual(self.parse('<div class="mv-ad-box">Original CTA</div>')['fingerprint'],self.parse('<div class="mv-ad-box">Changed CTA</div>')['fingerprint'])
+ def test_protected_content_nested_in_verified_ad_rejected(self):
+  for protected in ['<main>Answer</main>','<article>Answer</article>','<h1>Answer</h1>','<section id="reader-survey">2 responses</section>','<aside class="affiliate-card">Product</aside>','<span class="tested-badge">TESTED</span>','<script type="application/ld+json">{"dateModified":"2026-10-29"}</script>']:
+   with self.subTest(protected=protected),self.assertRaises(ValueError):self.parse('<div class="mv-ad-box" data-slotid="content_btf">'+protected+'</div>')
+ def test_unclosed_ad_rejected(self):
+  with self.assertRaises(ValueError):self.parse('<div class="mv-ad-box" data-slotid="content_btf">Ad')
+ def test_complete_capture_required_without_optin(self):
+  for ending in ['[Truncated]','']:
+   with self.assertRaisesRegex(ValueError,'Incomplete full-page'):a.parse(self.core.split('</main>')[0]+ending,{'path':'/guide'},'https://example.com','https://example.com')
+ def test_unknown_hidden_blank_iframe_still_bound(self):
+  self.assertNotEqual(self.parse()['fingerprint'],self.parse('<iframe src="about:blank" width="0" height="0"></iframe>')['fingerprint'])
+ def test_fixed_container_requires_verified_children(self):
+  core=self.core.replace('<body>','<body class="mv-loaded">').replace('</body>','<div id="fixed_container_bottom"><p>First-party CTA</p></div></body>')
+  with self.assertRaisesRegex(ValueError,'Unverified child'):self.parse(body=core)
+ def test_void_ad_tag_self_closing(self):self.assertEqual(self.parse()['fingerprint'],self.parse('<div class="mv-ad-box" data-slotid="content_btf"><img src="https://ads.example/ad.jpg"/></div>')['fingerprint'])
+ def test_boolean_empty_attributes_without_optin(self):self.assertFalse(self.parse('<div class></div>',route={'path':'/guide'})['failures'])
+ def test_fake_closures_in_unclosed_comment_or_script_rejected(self):
+  for opener in ['<!--','<script>']:
+   with self.assertRaisesRegex(ValueError,'Incomplete full-page'):self.parse(body=self.core.replace('</main></body></html>',opener+'</body></html>'))
+
+ def test_observed_tracking_frames_require_hidden_exact_identity(self):
+  html='<iframe width="0" height="0" style="display:none;" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?random=one"></iframe>';body=self.core.replace('<body>','<body class="mv-loaded">')
+  self.assertEqual(self.parse(body=body)['fingerprint'],self.parse(html,body=body)['fingerprint'])
+  self.assertNotEqual(self.parse(body=body)['fingerprint'],self.parse(html.replace('width="0"','width="300"').replace('height="0"','height="250"').replace('display:none;','display:block;'),body=body)['fingerprint'])
+  self.assertNotEqual(self.parse(body=body)['fingerprint'],self.parse(html.replace('/AdServer/js/user_sync.html','/editorial.html'),body=body)['fingerprint'])
+  self.assertNotEqual(self.parse()['fingerprint'],self.parse(html)['fingerprint'])
+ def test_tracking_frame_visible_style_overrides_remain_bound(self):
+  body=self.core.replace('<body>','<body class="mv-loaded">')
+  for style in ['display:block;width:640px;height:480px','display:none;display:block;width:640px;height:480px']:
+   html='<iframe width="0" height="0" style="'+style+'" src="https://ads.pubmatic.com/AdServer/js/user_sync.html"></iframe>'
+   self.assertNotEqual(self.parse(body=body)['fingerprint'],self.parse(html,body=body)['fingerprint'])
 if __name__=='__main__': unittest.main()

@@ -573,13 +573,13 @@ These are non-blocking observations. Do NOT set fail for any of them, and do not
 > Running the re-voice on them is a defect (a second call, a second chance to drift a claim).
 > This step still applies to pages the running agent wrote in-context.
 
-**Order, non-negotiable.** This step runs AFTER everything that judges prose: the Phase 4 audit, the anti-ai-language tell list, `content_lint.py`, the sentence-length and rhythm gates, and any polish pass. Those gates run against the DRAFTED intro. This step then re-voices that intro, and the run goes straight to sitemap/commit. Nothing between this step and the commit touches the intro.
+**Order, non-negotiable.** Run this last prose transformation after the drafted intro passes the prose/style gates, but BEFORE final independent approval of the complete rendered page. Apply other planned template, link and injected-content transformations before that final review as well. Earlier draft review is not the final rendered PASS. Do not reapply style-only bans or polish the humanized intro. The existing end-to-end `content_gen.py` exemption remains unchanged.
 
-**Who runs it.** The routine's top-level orchestrator, as its own step, once all writer and audit subagents have returned. NEVER a Phase 3 or Phase 5 writer subagent, and never mid-draft. A writer that pipes its own draft through the helper and then keeps editing has defeated the step: it just fed the gates back over the result. If you are a writer subagent, do not call `humanize_intro.py` at all. Hand your intro back as drafted.
+**Who runs it.** The routine’s top-level orchestrator runs it after the writer and draft-review work returns, before final rendered review. NEVER a Phase 3 or Phase 5 writer subagent, and never mid-draft. A writer that pipes its own draft through the helper and then keeps editing has defeated the step. If you are a writer subagent, do not call `humanize_intro.py`; hand your intro back as drafted.
 
-**Nothing edits the intro afterwards.** Once the helper returns, that text ships. Do not re-run the tell list, the lint, the word-count or rhythm checks, or a "quick polish" over it, and do not split its sentences, expand its abbreviations, or trim it to a length target. The step carries no ban list precisely because the gates already ran; re-applying them flattens it back to what it was written to fix. If a mechanical gate flags the humanized intro on STYLE (sentence length, cadence, a dash, a word on the tell list), that flag is expected. Let it stand and note it in the run email.
+**No style edits afterwards.** The returned intro is the candidate for final rendered review. Do not re-run the tell list, style lint, word-count or rhythm checks, or a “quick polish” over it, and do not split sentences, expand abbreviations, or trim it to a length target. The step carries no ban list because the prose/style gates already ran. A style-only flag on a humanized intro is expected; let it stand and note it in the run record. Final factual, meaning, evidence, link, disclosure and layout checks still apply.
 
-The one exception is a FACT problem: a number, date, claim, or link that changed or disappeared. Then discard the rewrite and keep the ORIGINAL intro verbatim. Never hand-repair the humanized text.
+The exception is a factual or meaning regression: a changed, missing or invented claim; an altered material qualification; a broken or lost link; or changed disclosure. Discard the rewrite and restore the ORIGINAL intro verbatim, then recapture and review the affected page. Never hand-repair the humanized text.
 
 **Why it is a separate step, not part of the writer.** The writer drafts against this whole standard plus the tell list, and a draft that dodges every ban comes out flat: the same "[verdict]. At {BUSINESS}, we [experience]. [one fact]." shape on every page. This step fixes only the intro, with GPT-6.1 Sol, using ONE instruction and NO ban list:
 
@@ -602,7 +602,7 @@ The helper sends the intro alone to GPT-6.1 Sol, returns the same number of para
 - **Never send a byline or a disclosure paragraph to the model.** Before piping, drop any intro paragraph that is a reviewer/author line (`Reviewed by…`, `Last updated…`) or affiliate/FTC disclosure copy (`…may earn a referral commission…`, `…at no extra cost to you…`), then put those paragraphs back verbatim, in their original position, after the rewrite. That text is attribution and legal copy, not voice; a reworded disclosure is a compliance change nobody asked for. (On 2026-09-03 the pass reworded the disclosure on 6 layer3 pages and had to be restored from git.)
 - Only the intro. Section bodies, tables, FAQs, metadata, and links are untouched.
 - It replaces the intro's field in place — same links, same facts. The model may split a long paragraph, which is fine. The helper drops the rewrite and keeps the original if a number or link went missing.
-- It is NOT re-audited and NOT re-linted. Its output is the shipped intro, byte for byte.
+- It is exempt from repeat style linting and polish; it remains subject to the final factual, meaning, evidence, link, disclosure and rendered-layout checks. Publish only the exact approved final output.
 - One human-sounding intro that keeps every fact beats a compliant flat one. If a fact moved or changed, that is a bug in the call — keep the original.
 
 ---

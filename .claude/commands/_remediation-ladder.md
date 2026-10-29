@@ -18,7 +18,7 @@ The audit itself is not the problem and does not get weaker here. On 2026-08-22 
 ---
 
 
-**Out of scope: a humanized intro.** The intro of a new page is re-voiced by the INTRO HUMANIZE step after every audit and lint gate has run (see `## INTRO HUMANIZE` in `_content-standard.md`). This ladder does not apply to it. Do not fix, polish, or rework a finding raised against a humanized intro; the only allowed action is restoring the original intro if a fact or link was lost.
+**Humanized intro: style-only exemption.** Humanization runs before final rendered approval. Do not polish or rework a humanized intro for style. Final facts, meaning, reader intent, evidence/testing claims, links, disclosures and layout remain in scope. On a regression, restore the original intro verbatim, then recapture and review the affected page under `_rendered-page-audit.md`.
 
 ## THE LADDER
 
@@ -37,12 +37,12 @@ The lint covers **only black-and-white rules**: em-dash, exclamation mark, headi
 
 Lint findings **never reach the reviewer, never count as a rework attempt, and never trigger a standard reload.** If the writer phase skipped the lint, run it here first — do not start the reviewer checklist on a page that still fails it.
 
-**The depth gate is a Rung 0 check too, and it must never stall the phase.** Where the audit phase says to run `npm run check-depth`, that script measures BUILT output, so it needs a build, and a routine sandbox starts with no `node_modules` (the 2026-09-04 shavingschool audit died chasing `astro: not found`). Run it in this order and take the first rung that works:
+**The depth gate is a Rung 0 check too.** Where the audit phase says to run `npm run check-depth`, that script measures built output. Use the following order to establish depth; source measurement alone never substitutes for final rendered review:
 
 1. `[ -d node_modules ] || npm ci --no-audit --no-fund` (fall back to `npm install --no-audit --no-fund` if there is no lockfile), then `npm run build`, then `npm run check-depth` on the new routes. Exit 0 = pass; non-zero = the named pages are under their floor.
-2. If the install or the build fails for any reason, do NOT keep debugging the toolchain. Measure from source instead: concatenate each new page's reader-facing prose (intro, section bodies, FAQ answers, verdict; not title, meta, schema, CTA boilerplate, or code) and count it with a real command (`wc -w`), then compare against the floors table. Record `depth: measured from source (build unavailable: <one-line reason>)` in the run email.
+2. If the install or build fails, record the reason and measure source prose as a provisional depth check: concatenate each affected page’s intro, section bodies, FAQ answers and verdict, excluding title, metadata, schema, CTA boilerplate and code. Count with a real command and compare with the applicable floor. Record `depth: measured from source (build unavailable: <reason>)`. Resolve the build/runtime failure before final rendered review and publication.
 
-Either way the verdict is the same deterministic floor check. A build failure is a note in the email, never a reason for the audit to stop, and never a reason to dispatch anything in the background and wait for it.
+Source measurement can establish the word-count floor. It cannot establish a rendered-page PASS. Final approval and publication remain blocked until the complete actual render is available and independently checked under `_rendered-page-audit.md`.
 
 **If this repo has no lint script**, the reviewer performs the same mechanical checks itself as an explicit FIRST pass, reports them as `MECHANICAL`, and the orchestrator applies those fixes directly. Mechanical findings still never count as a rework attempt. Do not add judgment gates (neutrality, "honest", inflated adjectives, register, depth) to a lint script — those need a reader and belong to the reviewer.
 
@@ -84,7 +84,7 @@ Reserved for findings that need new substance, new research, or a structurally d
 
 Hand the reviewer's notes for **that page only** to the writer phase and re-run it for that page. A regenerated API page gets the claim check again automatically; anything the audit still finds goes back through Rung 1 `fix`, not straight to another rework. The reworked page then gets a full audit again, from Rung 0.
 
-**Max 2 rework attempts per PAGE.** A page that still fails after its second rework is **dropped from the run**: unstage its entry, remove it from the sitemap and the IndexNow URL list, and record it under "Ambiguous / skipped" with its outstanding notes. The run continues with the pages that passed. Never stop a whole run over one page.
+**Max 2 rework attempts per page.** If a page still fails after its second rework, STOP this workflow and escalate its unresolved findings. Do not commit, push or publish. Preserve unrelated work and the review evidence for unchanged pages; do not silently drop the failed page and continue publication.
 
 ---
 
@@ -97,12 +97,12 @@ This does not weaken the re-audit invariant: a page whose own text changed is al
 The reviewer report ends with one line per page:
 
 ```
-<page>: PASS | FIX-IN-PLACE (n) | REWORK (attempt k/2) | DROPPED — <reason>
+<page>: PASS | FIX-IN-PLACE (n) | REWORK (attempt k/2) | BLOCKED — <reason>
 ```
 
-## ESCALATE ONLY WHEN
+## STOP AND ESCALATE WHEN
 
-- every page in the run has been DROPPED, or
+- any page still fails after two rework attempts, or
 - a rung cannot be executed at all (the lint script is broken, a canonical standard file is missing, the reviewer subagent cannot run).
 
-Then STOP and report the outstanding notes. A run that shipped some pages and dropped others is a **successful run with exclusions**, not a failure — report it that way.
+Then STOP the workflow and report the outstanding notes. Do not commit, push or publish while the required review is unresolved. Preserve unrelated work and retain valid evidence for unchanged pages.

@@ -26,11 +26,48 @@ def now(): return dt.datetime.now(dt.timezone.utc).isoformat()
 def clean(text): return re.sub(r'\s+', ' ', text).strip()
 
 class Page(HTMLParser):
-    def __init__(self):
+    def __init__(self, volatile_ads=None):
         super().__init__(convert_charrefs=True)
+        self.volatile_ads=volatile_ads; self.ad_stack=[]; self.fixed_ad_root=False; self.fixed_ad_children=0; self.vendor_body=False; self.closed_body=False; self.closed_html=False
         self.stack=[]; self.text=[]; self.date_text=[]; self.headings=[]; self.links=[]; self.meta={}; self.schemas=[]; self.json=[]; self.is_json=False; self.title=[]; self.canonical=''; self.article=0; self.article_text=[]; self.structure=[]
     def handle_starttag(self, tag, attrs):
-        a=dict(attrs)
+        a={k:v or "" for k,v in attrs}
+        void=tag in {'meta','link','img','input','br','hr','source','wbr','area','base','embed','param','track','col'}
+        classes=set(a.get('class','').split()); ident=a.get('id','')
+        if tag=='body':self.vendor_body='mv-loaded' in classes
+        displays=[part.split(':',1)[1].strip().lower() for part in a.get('style','').split(';') if ':' in part and part.split(':',1)[0].strip().lower()=='display']
+        unambiguously_hidden=displays==['none']
+        fixed_root=tag=='div' and ident=='fixed_container_bottom' and self.stack==['html','body'] and self.vendor_body
+        # Explicit manifest opt-in is hash-bound to independent review. Full HTML
+        # remains archived; only known third-party rotating ad UI is normalized.
+        ad=self.volatile_ads=='mediavine' and (
+            (tag=='div' and ident=='mv-first-video' and 'mv-video-target' in classes) or
+            (tag=='div' and re.fullmatch(r'(?:content(?:_\d+)?_btf|adhesion_(?:desktop|mobile)|universalPlayer)(?:_wrapper)?',ident) and bool(classes & {'adunit','adunitwrapper','adhesion_wrapper'})) or
+            (tag=='div' and 'mv-ad-box' in classes and re.fullmatch(r'content(?:_\d+)?_btf',a.get('data-slotid',''))) or fixed_root or
+            (tag in {'div','iframe'} and ident.startswith('google_ads_iframe_')) or
+            (tag=='iframe' and re.fullmatch(r'goog_\d+',ident)) or
+            (tag=='iframe' and (a.get('width')=='0' and a.get('height')=='0' or 'display:none' in a.get('style','').replace(' ','') or all(v in a.get('style','').replace(' ','') for v in ['width:0px','height:0px'])) and
+             ((a.get('src')=='about:blank' and a.get('name')=='__pb_locator__' and self.vendor_body) or urlsplit(a.get('src','')).hostname in {'i.liadm.com','exchange.mediavine.com','exchange.pubnation.com','exchange.journeymv.com','cm.g.doubleclick.net'} or
+              (self.vendor_body and unambiguously_hidden and (urlsplit(a.get('src','')).hostname,urlsplit(a.get('src','')).path) in {
+                  ('feed.pghub.io','/tag'),('ads.pubmatic.com','/AdServer/js/user_sync.html'),
+                  ('eus.rubiconproject.com','/usync.html'),('elb.the-ozone-project.com','/static/load-cookie.html'),
+                  ('onetag-sys.com','/usync/'),('mediavine-d.openx.net','/w/1.0/pd'),
+                  ('eb2.3lift.com','/sync'),('csync.smilewanted.com',''),('csync.smilewanted.com','/')}))))
+        if self.ad_stack or ad:
+            protected=' '.join(str(a.get(k,'')) for k in ['id','class','aria-label','data-testid']).lower()
+            require(tag not in {'main','article','h1'} and not (tag=='script' and a.get('type')=='application/ld+json') and
+                    not any(token in protected for token in ['reader-survey','readersurvey','reader survey','affiliate','tested','testing','byline']),
+                    'Protected editorial content inside a volatile ad region')
+            if self.fixed_ad_root and len(self.ad_stack)==1:
+                require(ad and not fixed_root,'Unverified child in fixed third-party ad container')
+                self.fixed_ad_children+=1
+            if not self.ad_stack and fixed_root:self.fixed_ad_root=True;self.fixed_ad_children=0
+            if not void:self.ad_stack.append(tag)
+            return
+        if self.volatile_ads=='mediavine' and tag=='body' and 'class' in a:
+            transient={'mv-loaded','mv-device-desktop','mv-device-mobile','mv-device-tablet','highImpact_adhesion','mediavine-video__has-sticky'}
+            a['class']=' '.join(c for c in a['class'].split() if c not in transient)
+            if not a['class']:del a['class']
         if tag in {'div','p','header','footer','article','main','section','li','aside','br','h1','h2','h3'}: self.date_text.append('\n')
         if tag not in {'script','style','noscript','meta','link','head','title'} and not any(t in self.stack for t in ['head','script','style','noscript']):
             keep = {k:v for k,v in a.items() if k in {'rel','target','class','hidden','min','max','step','placeholder','for','pattern','required','multiple','src','srcset','alt','type','value','checked','selected','disabled','aria-label','aria-hidden','role','colspan','rowspan','style','action','method','href','d','viewbox','points','cx','cy','r','x','y','width','height','fill','stroke','transform'}}
@@ -42,6 +79,16 @@ class Page(HTMLParser):
         if tag=='a' and a.get('href'): self.links.append(a['href'])
         if tag=='script' and a.get('type')=='application/ld+json': self.is_json=True; self.json=[]
     def handle_endtag(self, tag):
+        if tag in {'meta','link','img','input','br','hr','source','wbr','area','base','embed','param','track','col'}:return
+        if self.ad_stack:
+            require(tag in self.ad_stack,'Unterminated volatile ad region')
+            self.ad_stack=self.ad_stack[:len(self.ad_stack)-1-self.ad_stack[::-1].index(tag)]
+            if not self.ad_stack and self.fixed_ad_root:
+                require(self.fixed_ad_children>0,'Unverified fixed third-party ad container')
+                self.fixed_ad_root=False
+            return
+        if tag=='body' and 'body' in self.stack:self.closed_body=True
+        if tag=='html' and 'html' in self.stack:self.closed_html=True
         if tag=='script' and self.is_json:
             try: self.schemas.append(json.loads(''.join(self.json)))
             except json.JSONDecodeError: self.schemas.append({'INVALID_JSON': ''.join(self.json)})
@@ -49,6 +96,9 @@ class Page(HTMLParser):
         if tag in self.stack:
             self.stack=self.stack[:len(self.stack)-1-self.stack[::-1].index(tag)]
     def handle_data(self, data):
+        if self.ad_stack:
+            require(not (self.fixed_ad_root and len(self.ad_stack)==1 and data.strip()),'Unexpected text in fixed third-party ad container')
+            return
         if self.is_json: self.json.append(data)
         if 'title' in self.stack: self.title.append(data)
         if not any(t in self.stack for t in ['head','script','style','noscript']):
@@ -71,7 +121,8 @@ def objects(value):
         for v in value: yield from objects(v)
 
 def parse(html, route, base, canonical, status=200):
-    p=Page(); p.feed(html)
+    require(re.search(r'</body\s*>',html,re.I) and re.search(r'</html\s*>\s*$',html,re.I),'Incomplete full-page capture; recapture without truncation')
+    p=Page(route.get('volatileThirdPartyAds')); p.feed(html); require(not p.ad_stack,'Unterminated volatile ad region'); require(p.closed_body and p.closed_html,'Incomplete full-page capture; document closures were not parsed')
     semantic=normalize({'text':clean(' '.join(p.text)), 'h1':clean(' '.join(p.headings)), 'title':clean(''.join(p.title)), 'canonical':p.canonical,'meta':p.meta,'links':p.links,'schema':p.schemas,'structure':p.structure},base,canonical)
     failures=[]
     def test(ok, reason):
@@ -124,6 +175,7 @@ def validate_manifest(manifest):
     require(len(paths)==len(set(paths)), 'Duplicate route')
     require(all(p.startswith('/') and '..' not in p and '?' not in p and '#' not in p for p in paths),'Unsafe route path')
     for r in routes:
+        require(r.get('volatileThirdPartyAds') in (None,'mediavine'),'Unsupported volatile third-party region')
         if 'canonicalPath' in r:
             p=r['canonicalPath']
             require(p in paths and p.startswith('/') and not p.startswith('//') and '..' not in p and '?' not in p and '#' not in p,'Canonical target must be an audited same-site route')
