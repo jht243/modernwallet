@@ -1,4 +1,9 @@
 
+<!-- fleet-author-defaults-v1 -->
+**Author defaults — owner instruction, 2026-10-29:** Apply `_content-standard.md`, “Existing site author by default; missing person never holds publication,” ahead of older generic named-reviewer rules. Reuse this site's established default/category author automatically. If no person exists, use the existing publisher/editorial identity or omit an optional personal byline; a person can be added later. Do not ask for an author/professional assignment, block preparation or publication, or fabricate credentials/review dates. The independent Phase 4 reviewer is an automatic agent; internal `author`/`reviewer` actor IDs remain distinct and are separate from the public byline. Keep source, safety/exclusion, rendered-page and live-verification checks.
+<!-- /fleet-author-defaults-v1 -->
+
+
 <!-- mindmap-unattended-publication-v1 -->
 **Unattended Mindmap authorization and recovery:** Apply `_mindmap-execution.md`, “Authorized unattended Mindmap: continue through publication,” before the default Phase 0/stop rules below. Explicitly authorized end-to-end routines record their existing authorization, save the complete independently reviewed chart and continue through publication without asking. Repair failures automatically; after the existing per-page repair limit, isolate only failed pages and their dependencies, rebuild/review the passing subset, then publish and verify that subset. Preserve mandatory audits, exact rendered/live checks, professional review, local exclusions and authorization limits. Manual runs retain their Phase 0 gate and stop rules. A generated `ready-for-approval` chart is accepted after structural validation plus the separately recorded authorization; never rewrite it merely to change status.
 <!-- /mindmap-unattended-publication-v1 -->

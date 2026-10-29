@@ -1,4 +1,9 @@
 
+<!-- fleet-author-defaults-v1 -->
+**Author defaults — owner instruction, 2026-10-29:** Apply `_content-standard.md`, “Existing site author by default; missing person never holds publication,” ahead of older generic named-reviewer rules. Reuse this site's established default/category author automatically. If no person exists, use the existing publisher/editorial identity or omit an optional personal byline; a person can be added later. Do not ask for an author/professional assignment, block preparation or publication, or fabricate credentials/review dates. The independent Phase 4 reviewer is an automatic agent; internal `author`/`reviewer` actor IDs remain distinct and are separate from the public byline. Keep source, safety/exclusion, rendered-page and live-verification checks.
+<!-- /fleet-author-defaults-v1 -->
+
+
 <!-- mindmap-unattended-publication-v1 -->
 ## Authorized unattended Mindmap: continue through publication
 
