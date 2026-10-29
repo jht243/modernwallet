@@ -1,10 +1,16 @@
 {
   "slug": "best-portfolio-backtesting-and-analysis-tools",
-  "rows": [],
-  "cut": [
+  "rows": [
     {
-      "domain": "femaleinvest.com",
-      "why": "category 4 \u2014 investing education app with a virtual-money simulator; no backtesting or portfolio analysis tool, no fit in another category"
+      "name": "Portfolio Lab",
+      "domain": "portfoliolab.app",
+      "url": "https://www.portfoliolab.app/",
+      "values": [
+        "Yes, historical backtests back to 1926 for ETFs, funds and 57 asset classes",
+        "No for public tools; free account unlocks full platform",
+        "Self-directed investors, FIRE planners, advisors and finance students"
+      ]
     }
-  ]
+  ],
+  "cut": []
 }

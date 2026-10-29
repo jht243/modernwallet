@@ -2,25 +2,16 @@
   "slug": "best-invoicing-apps-for-freelancers",
   "rows": [
     {
-      "name": "Waco3",
-      "domain": "waco3.io",
-      "url": "https://waco3.io/",
+      "name": "Flowlancerr",
+      "domain": "flowlancerr.com",
+      "url": "https://www.flowlancerr.com/",
       "values": [
-        "Free; Pro $30/mo or $288/yr; Studio $60/mo",
-        "Not published; AI drafts follow-ups for your approval",
-        "N/A; no payment processing",
-        "Freelancers and small studios sending proposals, quotes and invoices"
+        "Free plan (5 invoices a month); paid $6, $14 or $39 monthly",
+        "Not published",
+        "Not published",
+        "Freelancers managing clients, proposals, time tracking and invoices in one workspace"
       ]
     }
   ],
-  "cut": [
-    {
-      "domain": "yaycommerce.com",
-      "why": "category 4 \u2014 WooCommerce plugin maker with no invoicing product; no fit in another category"
-    },
-    {
-      "domain": "smartbizmetrics.com",
-      "why": "category 1 \u2014 software review blog and publisher, no invoicing product of its own"
-    }
-  ]
+  "cut": []
 }

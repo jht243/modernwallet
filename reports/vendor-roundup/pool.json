@@ -1,54 +1,23 @@
 {
-  "generated": "2026-10-28T16:11:18.271Z",
+  "generated": "2026-10-29T16:11:25.310Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
       "label": "AI training work platforms",
       "roundupSlug": "dataannotation-alternatives",
-      "route": "ENRICH",
-      "qualified": 11,
+      "route": "ACCRUE",
+      "qualified": 10,
       "listed": 10,
-      "missing": [
-        {
-          "domain": "basic.ai",
-          "name": "10 Best Data Annotation and Data Labeling Tools",
-          "site_url": "https://basic.ai",
-          "one_liner": "10 Best Data Annotation and Data Labeling Tools · BasicAI Data Annotation Platform · Ango Hub · SuperAnnotate · V7 · Kili · Supervisely · Dataloop · Labelbox. Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 6,
-          "primary_email": null
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "ai-investing-apps",
       "label": "AI investing apps",
       "roundupSlug": "best-ai-investing-apps",
       "route": "ENRICH",
-      "qualified": 18,
-      "listed": 15,
+      "qualified": 17,
+      "listed": 16,
       "missing": [
-        {
-          "domain": "sales-hacking.com",
-          "name": "7 Best AI Investment Apps Reviewed",
-          "site_url": "https://sales-hacking.com",
-          "one_liner": "Explore the best AI investment software. Compare ease of use, integrations, and pricing to find the right tool for managing your portfolio.",
-          "site_kind": "unknown",
-          "has_pricing": true,
-          "serp_rank": 2,
-          "primary_email": null
-        },
-        {
-          "domain": "ainvesting.app",
-          "name": "Best AI investing app (2026): how to choose",
-          "site_url": "https://ainvesting.app",
-          "one_liner": "Jun 27, 2026 — There's no single \"best AI investing app\" for everything. For deep charting and community, a platform like TradingView. For free data breadth ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 12,
-          "primary_email": "contact@a2group.llc"
-        },
         {
           "domain": "ainvest.com",
           "name": "AI Investing App: Trade Stocks With AI Analysis",
@@ -66,29 +35,9 @@
       "label": "AI trading bots",
       "roundupSlug": "best-ai-trading-bots",
       "route": "ENRICH",
-      "qualified": 14,
+      "qualified": 12,
       "listed": 11,
       "missing": [
-        {
-          "domain": "alphagaindaily.com",
-          "name": "AI Stock Trading Bots Compared: Trade Ideas vs Danelfin vs ...",
-          "site_url": "https://alphagaindaily.com",
-          "one_liner": "Sep 3, 2026 — Three AI stock trading tools dominate retail investor attention in 2026 — Trade Ideas (Holly AI), Danelfin, and Tickeron.",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 2,
-          "primary_email": "admin@alphagaindaily.com"
-        },
-        {
-          "domain": "goldenowl.asia",
-          "name": "Top 10 AI Stock Trading Bots Free for beginners in 2026",
-          "site_url": "https://goldenowl.asia",
-          "one_liner": "Apr 10, 2024 — Integrations (Verified): Robinhood, Charles Schwab, Fidelity, E*TRADE, and WeBull.",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 4,
-          "primary_email": "hello@goldenowl.asia"
-        },
         {
           "domain": "switchmarkets.com",
           "name": "AlgoBuilder: Free AI Trading Bot Builder",
@@ -126,9 +75,19 @@
       "label": "AI trading assistants",
       "roundupSlug": "robinhood-agentic-trading-alternatives",
       "route": "ENRICH",
-      "qualified": 16,
+      "qualified": 17,
       "listed": 14,
       "missing": [
+        {
+          "domain": "captrader.com",
+          "name": "AI trading: will trading with AI tools be worthwhile in 2026?",
+          "site_url": "https://captrader.com",
+          "one_liner": "Unfortunately, AI trading bots do not show any measurable advantages in practical tests. Their results usually lag far behind the profits of an experienced ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 4,
+          "primary_email": "info@captrader.com"
+        },
         {
           "domain": "fensory.com",
           "name": "Robinhood Agentic Trading Alternatives (2026)",
@@ -155,37 +114,121 @@
       "vertical": "mortgage-lenders",
       "label": "mortgage lenders",
       "roundupSlug": "best-mortgage-lenders",
-      "route": "ACCRUE",
-      "qualified": 16,
+      "route": "ENRICH",
+      "qualified": 17,
       "listed": 16,
-      "missing": []
+      "missing": [
+        {
+          "domain": "lower.com",
+          "name": "Your one-stop shop for lower mortgage rates",
+          "site_url": "https://lower.com",
+          "one_liner": "Discover simple, fast mortgage solutions with no-impact credit checks. Get the home you love, refinance, or access cash from your home with dedicated ...",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": 2,
+          "primary_email": "press@lower.com"
+        }
+      ]
     },
     {
       "vertical": "ira-accounts",
       "label": "IRA providers",
       "roundupSlug": "best-ira-accounts",
-      "route": "ACCRUE",
-      "qualified": 10,
+      "route": "ENRICH",
+      "qualified": 13,
       "listed": 10,
-      "missing": []
+      "missing": [
+        {
+          "domain": "americancentury.com",
+          "name": "What Is an IRA? Get the Basics",
+          "site_url": "https://americancentury.com",
+          "one_liner": "Pricing & Trading Info. Each type of IRA offers advantages before and after you retire. Contributions are tax deductible. No minimum distributions are required.",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": 1,
+          "primary_email": null
+        },
+        {
+          "domain": "accio.com",
+          "name": "low cost roth ira investments for 2025",
+          "site_url": "https://accio.com",
+          "one_liner": "Discover the best low cost roth ira investments in 2025. Compare top funds, brokers, and robo-advisors. Click to find tax-free growth options with zero fees ...",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 9,
+          "primary_email": null
+        },
+        {
+          "domain": "sophisticatedinvestor.com",
+          "name": "American IRA Review",
+          "site_url": "https://sophisticatedinvestor.com",
+          "one_liner": "May 25, 2020 — The company boasts 19 reviews on its Google business profile with a rating of 4.3 stars out of five stars, which gives the organization an above ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 14,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "investment-apps-for-beginners",
       "label": "investment apps",
       "roundupSlug": "best-investment-apps-for-beginners",
-      "route": "ACCRUE",
-      "qualified": 5,
+      "route": "ENRICH",
+      "qualified": 8,
       "listed": 5,
-      "missing": []
+      "missing": [
+        {
+          "domain": "fortunebuilders.com",
+          "name": "18 Best Investment Apps For Beginners In 2022",
+          "site_url": "https://fortunebuilders.com",
+          "one_liner": "We have listed the best investment apps for beginners in 2022. Learn about the best apps with investing tools and user-friendly features at FortuneBuilders.",
+          "site_kind": "unknown",
+          "has_pricing": true,
+          "serp_rank": 5,
+          "primary_email": null
+        },
+        {
+          "domain": "finelo.com",
+          "name": "Investing Apps for Beginners",
+          "site_url": "https://finelo.com",
+          "one_liner": "Aug 17, 2026 — Investing apps for beginners should be compared on account fit, total costs, investment menu, safeguards, education, and support—not on a ... Read more",
+          "site_kind": "vendor",
+          "has_pricing": true,
+          "serp_rank": 5,
+          "primary_email": "support@finelo.com"
+        },
+        {
+          "domain": "crt-ms.com",
+          "name": "Best Investment Apps for Beginners 2025 Investing Guide",
+          "site_url": "https://crt-ms.com",
+          "one_liner": "Users also have access to the Trader Workstation platform at zero charges. The firm charges no commissions for Mutual Funds but charges $14.95 per transaction. Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 6,
+          "primary_email": "rfq@crt-ms.com"
+        }
+      ]
     },
     {
       "vertical": "money-market-accounts",
       "label": "money market accounts",
       "roundupSlug": "best-money-market-accounts",
-      "route": "ACCRUE",
-      "qualified": 13,
+      "route": "ENRICH",
+      "qualified": 14,
       "listed": 13,
-      "missing": []
+      "missing": [
+        {
+          "domain": "bmo.com",
+          "name": "Savings Accounts, Money Markets & CDs",
+          "site_url": "https://bmo.com",
+          "one_liner": "Growth Money Market · $10 monthly maintenance fee, waived with a $5,000 minimum daily balance · Earn a higher interest rate on your Growth Money Market account ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 9,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "budgeting-apps-for-couples",
@@ -211,41 +254,10 @@
       "vertical": "401k-providers-for-small-business",
       "label": "401(k) providers",
       "roundupSlug": "best-401k-providers-for-small-business",
-      "route": "ENRICH",
-      "qualified": 22,
-      "listed": 19,
-      "missing": [
-        {
-          "domain": "myshortlister.com",
-          "name": "Best 401(k) Providers: Top 17 Vendors Q4 2026",
-          "site_url": "https://myshortlister.com",
-          "one_liner": "Rowe Price offers a 401(k) plan mainly designed for small businesses with a broad range of investment options and high-quality service.",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 6,
-          "primary_email": "support@myshortlister.com"
-        },
-        {
-          "domain": "trinet.com",
-          "name": "2026 Guide to Affordable Small Business 401(k) Plans",
-          "site_url": "https://trinet.com",
-          "one_liner": "Sep 18, 2026 — Learn what a small business 401(k) really costs now, which tax credits can offset setup fees, and ways to help reduce plan expenses.",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 11,
-          "primary_email": "clients@trinet.com"
-        },
-        {
-          "domain": "maxusplans.com",
-          "name": "Small Business 401(k) vs Big Businesses",
-          "site_url": "https://maxusplans.com",
-          "one_liner": "Designed for businesses with fewer than 100 employees, SIMPLE 401(k) plans are easy to set up and maintain. They include mandatory employer contributions, ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 14,
-          "primary_email": "info@maxusplans.com"
-        }
-      ]
+      "route": "ACCRUE",
+      "qualified": 20,
+      "listed": 20,
+      "missing": []
     },
     {
       "vertical": "net-worth-tracker",
@@ -270,18 +282,18 @@
       "label": "online will makers",
       "roundupSlug": "best-online-will-makers",
       "route": "ENRICH",
-      "qualified": 11,
-      "listed": 10,
+      "qualified": 12,
+      "listed": 11,
       "missing": [
         {
-          "domain": "getmantle.ai",
-          "name": "Best Online Living Trust Services 2026 (Compared)",
-          "site_url": "https://getmantle.ai",
-          "one_liner": "May 8, 2026 — Best overall: Mantle. Nolo WillMaker — cheap but no support. Will $499–$599. Price $499–$599 (trust) + $150 notary Updates $19/month. Base ...",
+          "domain": "mygoodtrust.com",
+          "name": "Create Your Last Will Online In 15 Minutes",
+          "site_url": "https://mygoodtrust.com",
+          "one_liner": "All in one: Unlimited Will, Trust and Directives, valid in all 50 states. Family plan, no extra fee: Each individual can create their own plan. Read more",
           "site_kind": "vendor",
           "has_pricing": true,
-          "serp_rank": 9,
-          "primary_email": "support@getmantle.ai"
+          "serp_rank": 10,
+          "primary_email": null
         }
       ]
     },
@@ -290,9 +302,29 @@
       "label": "living trust services",
       "roundupSlug": "best-living-trust-services",
       "route": "ENRICH",
-      "qualified": 34,
+      "qualified": 36,
       "listed": 33,
       "missing": [
+        {
+          "domain": "livingtrustarizona.com",
+          "name": "Revocable Living Trust Packages at $750",
+          "site_url": "https://livingtrustarizona.com",
+          "one_liner": "Affordable living trusts in Arizona, click or call 480-229-6220 to establish guardians, reduce contests and avoid probate. In-home appointments",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": 2,
+          "primary_email": null
+        },
+        {
+          "domain": "ldaprolegal.com",
+          "name": "Best Online Trust and Will Services",
+          "site_url": "https://ldaprolegal.com",
+          "one_liner": "A living trust allows you to transfer ownership of your assets into a trust while maintaining control during your lifetime.",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": 5,
+          "primary_email": "contact@ldaprolegal.com"
+        },
         {
           "domain": "contractscounsel.com",
           "name": "How Much Does a Living Trust Cost?",
@@ -329,41 +361,10 @@
       "vertical": "budgeting-apps",
       "label": "budgeting apps",
       "roundupSlug": "best-budgeting-apps",
-      "route": "ENRICH",
-      "qualified": 13,
-      "listed": 10,
-      "missing": [
-        {
-          "domain": "fccu.org",
-          "name": "Top Budgeting Apps",
-          "site_url": "https://fccu.org",
-          "one_liner": "Excel is an excellent tool. Play YNAB, otherwise. A zero based budgeting app. You Need A Budget is great app. Good Budget Price: Free for basic account or $7. ...",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 2,
-          "primary_email": "info@fccu.org"
-        },
-        {
-          "domain": "smartwalt.com",
-          "name": "Best Mint Alternatives: Guide to Your New Wealth Partner",
-          "site_url": "https://smartwalt.com",
-          "one_liner": "Top 7 Mint Alternatives Ranked for 2026 #1 SmartWalt #2 Monarch Money (Best for Couples) #3 Copilot (Best for Apple Users) #4 YNAB (Best for Envelope Budgeting ...",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 6,
-          "primary_email": "support@smartwalt.com"
-        },
-        {
-          "domain": "middleclassfinance.app",
-          "name": "Free YNAB Alternative",
-          "site_url": "https://middleclassfinance.app",
-          "one_liner": "Looking for a YNAB alternative? Middle Class Finance offers zero-based budgeting plus 3 other methods, completely free. No subscription, no bank login.",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 6,
-          "primary_email": "admin@middleclassfinance.app"
-        }
-      ]
+      "route": "ACCRUE",
+      "qualified": 12,
+      "listed": 12,
+      "missing": []
     },
     {
       "vertical": "brokers-for-treasury-bonds",
@@ -379,7 +380,7 @@
       "label": "brokerage accounts",
       "roundupSlug": "best-brokerage-accounts-for-interest-on-cash",
       "route": "ENRICH",
-      "qualified": 9,
+      "qualified": 8,
       "listed": 6,
       "missing": [
         {
@@ -391,16 +392,6 @@
           "has_pricing": false,
           "serp_rank": 2,
           "primary_email": "gs-custodysolutions@gs.com"
-        },
-        {
-          "domain": "stash.com",
-          "name": "Best Investment Accounts That Use Compound Interest",
-          "site_url": "https://stash.com",
-          "one_liner": "Nov 8, 2024 — High-yield savings accounts offer a safe place to stash your cash while earning interest. They generally provide higher interest rates than ... Read more",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 8,
-          "primary_email": "support@stash.com"
         },
         {
           "domain": "massmutual.com",
@@ -427,10 +418,31 @@
       "vertical": "robo-advisors",
       "label": "robo-advisors",
       "roundupSlug": "best-robo-advisors",
-      "route": "ACCRUE",
-      "qualified": 2,
+      "route": "ENRICH",
+      "qualified": 4,
       "listed": 2,
-      "missing": []
+      "missing": [
+        {
+          "domain": "inven.ai",
+          "name": "Top 24 Robo Advisors Companies",
+          "site_url": "https://inven.ai",
+          "one_liner": "Top 24 Robo Advisory Companies · 1. Acorns · 2. Robowealth Group · 3. Betterment · 4. Ellevest · 5. Whitebox - Ihre digitale Vermögensverwaltung · 6. AI Quantec ... Read more",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": 6,
+          "primary_email": null
+        },
+        {
+          "domain": "fintechblueprint.com",
+          "name": "Roboadvisors",
+          "site_url": "https://fintechblueprint.com",
+          "one_liner": "Their speed of iteration and deployment is both faster and cheaper, and I am more excited for the future of digital investing than ever before. Read more",
+          "site_kind": "unknown",
+          "has_pricing": true,
+          "serp_rank": 9,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "credit-cards-for-fair-credit",
@@ -446,29 +458,9 @@
       "label": "custodial Roth IRA providers",
       "roundupSlug": "best-custodial-roth-ira-providers",
       "route": "ENRICH",
-      "qualified": 6,
-      "listed": 2,
+      "qualified": 4,
+      "listed": 3,
       "missing": [
-        {
-          "domain": "wiserinvestor.com",
-          "name": "Custodial Roth IRA Benefits for Your Children",
-          "site_url": "https://wiserinvestor.com",
-          "one_liner": "A Custodial Roth IRA allows your children to begin saving for retirement at an early age. Front loading retirement savings can give them a significant advantage ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 4,
-          "primary_email": "education@wiserinvestor.com"
-        },
-        {
-          "domain": "kahnlitwin.com",
-          "name": "What is a Custodial Roth IRA and How Can My Child Benefit?",
-          "site_url": "https://kahnlitwin.com",
-          "one_liner": "Dec 28, 2023 — The contribution limit for a custodial Roth IRA is $6,500 or the total amount of money that your child made during the year, whichever is less. Read more",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 5,
-          "primary_email": "info@kahnlitwin.com"
-        },
         {
           "domain": "tiaa.org",
           "name": "How a Roth IRA can give your adult children and ...",
@@ -477,16 +469,6 @@
           "site_kind": "unknown",
           "has_pricing": false,
           "serp_rank": 6,
-          "primary_email": null
-        },
-        {
-          "domain": "dodgeandcox.com",
-          "name": "Custodial IRAs",
-          "site_url": "https://dodgeandcox.com",
-          "one_liner": "With a custodial Roth IRA, contributions are after-tax dollars, and money grows potentially tax-free. Withdrawals after age 59½ are generally made tax- and ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 11,
           "primary_email": null
         }
       ]
@@ -505,8 +487,8 @@
       "label": "personal loan lenders",
       "roundupSlug": "personal-loan-rates-by-lender",
       "route": "ENRICH",
-      "qualified": 18,
-      "listed": 15,
+      "qualified": 20,
+      "listed": 16,
       "missing": [
         {
           "domain": "canvas.org",
@@ -519,14 +501,24 @@
           "primary_email": null
         },
         {
-          "domain": "cuofga.org",
-          "name": "Personal Loans",
-          "site_url": "https://cuofga.org",
-          "one_liner": "No weird fees or conditions. Just a simple online application and flexible terms to help you cover expenses, purchases or deal with high-interest debt. Read more",
+          "domain": "oportun.com",
+          "name": "Affordable personal loans $300-$10000",
+          "site_url": "https://oportun.com",
+          "one_liner": "Oportun is here with affordable personal loans. From $300 to $10,000 No collateral required to help you cover bills, repairs, debt consolidation, and more  ...",
           "site_kind": "unknown",
           "has_pricing": false,
-          "serp_rank": 6,
-          "primary_email": "contactus@cuofga.org"
+          "serp_rank": 1,
+          "primary_email": null
+        },
+        {
+          "domain": "netcredit.com",
+          "name": "How Does NetCredit Compare to Other Personal Lenders?",
+          "site_url": "https://netcredit.com",
+          "one_liner": "Apr 21, 2026 — Compared to other personal lenders, NetCredit offers higher loan amounts than OppLoans and does not charge origination or late fees like OneMain ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 8,
+          "primary_email": "support@netcredit.com"
         },
         {
           "domain": "mobiloans.com",
@@ -591,39 +583,50 @@
       "vertical": "cash-back-credit-cards",
       "label": "cash back credit cards",
       "roundupSlug": "best-cash-back-credit-cards",
-      "route": "ENRICH",
-      "qualified": 1,
-      "listed": 0,
-      "missing": [
-        {
-          "domain": "jbayerwealth.com",
-          "name": "Credit Cards with Cashback Rewards",
-          "site_url": "https://jbayerwealth.com",
-          "one_liner": "Value comes from ongoing category cash back and no annual fee. Card Details. Annual Fee. $39. Intro APR. 28.99%. Regular APR. 28.99% variable. Rewards Structure. Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 11,
-          "primary_email": "jacob@jbayerwealth.com"
-        }
-      ]
-    },
-    {
-      "vertical": "student-credit-cards",
-      "label": "student credit cards",
-      "roundupSlug": "best-student-credit-cards",
       "route": "ACCRUE",
       "qualified": 0,
       "listed": 0,
       "missing": []
     },
     {
+      "vertical": "student-credit-cards",
+      "label": "student credit cards",
+      "roundupSlug": "best-student-credit-cards",
+      "route": "ENRICH",
+      "qualified": 1,
+      "listed": 0,
+      "missing": [
+        {
+          "domain": "howtomoney.com",
+          "name": "4 Best Credit Cards for Students",
+          "site_url": "https://howtomoney.com",
+          "one_liner": "2. Capital One Quicksilver Student Cash Rewards Credit Card · $0 annual fee · Earn a flat 1.5% on all purchases (unlimited) · Get 10% cash back on Uber & Uber Eats ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 6,
+          "primary_email": "howtomoneypod@gmail.com"
+        }
+      ]
+    },
+    {
       "vertical": "portfolio-backtesting-and-analysis-tools",
       "label": "portfolio analysis tools",
       "roundupSlug": "best-portfolio-backtesting-and-analysis-tools",
-      "route": "ACCRUE",
-      "qualified": 18,
+      "route": "ENRICH",
+      "qualified": 19,
       "listed": 18,
-      "missing": []
+      "missing": [
+        {
+          "domain": "portfoliolab.app",
+          "name": "Free Portfolio Backtest: Any Fund or Asset",
+          "site_url": "https://portfoliolab.app",
+          "one_liner": "Import CSV or Excel holdings by ticker or ISIN. Backtest ETFs, funds and 57 asset classes free, with no signup. Review matches before running.",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 15,
+          "primary_email": "glenn@portfoliolab.app"
+        }
+      ]
     },
     {
       "vertical": "merchant-cash-advance-companies",
@@ -648,29 +651,9 @@
       "label": "business line of credit lenders",
       "roundupSlug": "business-line-of-credit-rates-by-lender",
       "route": "ENRICH",
-      "qualified": 12,
-      "listed": 9,
+      "qualified": 11,
+      "listed": 10,
       "missing": [
-        {
-          "domain": "wesbanco.com",
-          "name": "Business Lines of Credit",
-          "site_url": "https://wesbanco.com",
-          "one_liner": "Business Line of Credit. Easy access to a commercial or small business line of credit to manage large expenditures allows your business to be more flexible. Read more",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 2,
-          "primary_email": null
-        },
-        {
-          "domain": "fseb2b.com",
-          "name": "Business Lines of Credit: The Complete Guide for 2026",
-          "site_url": "https://fseb2b.com",
-          "one_liner": "Mar 18, 2026 — Everything about business lines of credit — how they work, secured vs unsecured, requirements, bad credit options, LOC vs term loan.",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 5,
-          "primary_email": "info@fseb2b.com"
-        },
         {
           "domain": "pulsproject.de",
           "name": "5 Best Lines of Credit for Small Business in 2025",
@@ -687,31 +670,10 @@
       "vertical": "business-credit-cards",
       "label": "business credit cards",
       "roundupSlug": "best-business-credit-cards",
-      "route": "ENRICH",
-      "qualified": 8,
-      "listed": 6,
-      "missing": [
-        {
-          "domain": "trykeep.com",
-          "name": "Best Credit Card for Business",
-          "site_url": "https://trykeep.com",
-          "one_liner": "The Blue Business Plus Credit Card from American Express stands out in this category by offering 2X points on everyday business purchases up to $50,000 annually ... Read more",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 1,
-          "primary_email": "support@trykeep.com"
-        },
-        {
-          "domain": "zenbusiness.com",
-          "name": "Best Business Credit Cards (October 2026)",
-          "site_url": "https://zenbusiness.com",
-          "one_liner": "Best Business Credit Cards · American Express Business Gold Card · American Express Blue Business Plus Card · Chase Ink Business Unlimited® Credit Card. Read more",
-          "site_kind": "unknown",
-          "has_pricing": true,
-          "serp_rank": 7,
-          "primary_email": null
-        }
-      ]
+      "route": "ACCRUE",
+      "qualified": 7,
+      "listed": 7,
+      "missing": []
     },
     {
       "vertical": "same-day-business-loans",
@@ -726,21 +688,10 @@
       "vertical": "business-bank-accounts",
       "label": "business bank accounts",
       "roundupSlug": "best-business-bank-accounts",
-      "route": "ENRICH",
-      "qualified": 20,
+      "route": "ACCRUE",
+      "qualified": 19,
       "listed": 19,
-      "missing": [
-        {
-          "domain": "cdcloans.com",
-          "name": "How to Choose the Right Bank Account for Your Business",
-          "site_url": "https://cdcloans.com",
-          "one_liner": "Jan 22, 2019 — When it comes to business bank accounts, one size does not fit all. Pick the right one for you with the help of these tips.",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 6,
-          "primary_email": "swatts@cdcloans.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "mileage-tracker-apps",
@@ -755,128 +706,56 @@
       "vertical": "accounting-software-for-freelancers",
       "label": "accounting software for freelancers",
       "roundupSlug": "best-accounting-software-for-freelancers",
-      "route": "ENRICH",
-      "qualified": 25,
-      "listed": 22,
-      "missing": [
-        {
-          "domain": "plutio.com",
-          "name": "8 Best Accounting Software for Freelancers (2026)",
-          "site_url": "https://plutio.com",
-          "one_liner": "Full accounting tools for freelancers · Zoho Books (Free / $20/month Standard) · Xero ($29/month Starter) · Sage Business Cloud Accounting ($10/month) · Hurdlr ... Read more",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 1,
-          "primary_email": "help@plutio.com"
-        },
-        {
-          "domain": "cloudester.com",
-          "name": "10 Best Bookkeeping Software for Small Business in 2025",
-          "site_url": "https://cloudester.com",
-          "one_liner": "May 27, 2025 — . 1. Wave Accounting Wave is one of the most popular free bookkeeping software ideal for freelancers, Plans start at around $30/month, but even ...",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 7,
-          "primary_email": null
-        },
-        {
-          "domain": "tools.chrisgulli.com",
-          "name": "Best accounting software for freelancers in 2026",
-          "site_url": "https://tools.chrisgulli.com",
-          "one_liner": "It's less of a full- $15/month. Prices start at $35/month and. Wave Payroll is available as an add-on from $20/month plus per-employee fees,",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 8,
-          "primary_email": null
-        }
-      ]
+      "route": "ACCRUE",
+      "qualified": 23,
+      "listed": 23,
+      "missing": []
     },
     {
       "vertical": "invoicing-apps-for-freelancers",
       "label": "invoicing apps for freelancers",
       "roundupSlug": "best-invoicing-apps-for-freelancers",
-      "route": "ACCRUE",
-      "qualified": 45,
+      "route": "ENRICH",
+      "qualified": 46,
       "listed": 45,
-      "missing": []
+      "missing": [
+        {
+          "domain": "flowlancerr.com",
+          "name": "Invoicing Software for Freelancers: 2026 Guide",
+          "site_url": "https://flowlancerr.com",
+          "one_liner": "Compare invoicing software for freelancers in 2026 : features, pricing and free plans. Find the best freelance invoicing software for your workflow.",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": 10,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "bookkeeping-services",
       "label": "bookkeeping services for small businesses",
       "roundupSlug": "best-bookkeeping-services-for-small-businesses",
-      "route": "ENRICH",
-      "qualified": 27,
-      "listed": 23,
-      "missing": [
-        {
-          "domain": "molentax.com",
-          "name": "Professional Bookkeeping Services in Houston, Texas",
-          "site_url": "https://molentax.com",
-          "one_liner": "Reclaim your time and gain total financial clarity with accurate, monthly bookkeeping from the professionals at Molen & Associates. Call Now: 281-440-6279",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 1,
-          "primary_email": "info@molentax.com"
-        },
-        {
-          "domain": "northcarolinabookkeeping.com",
-          "name": "Bookkeepers Charlotte NC",
-          "site_url": "https://northcarolinabookkeeping.com",
-          "one_liner": "Our Charlotte Bookkeeping Firm specializes in Small Business, Corporate and Personal Bookkeeping/Accounting. Some of our bookkeeping services include ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 1,
-          "primary_email": "info@accountingbythebooksnc.com"
-        },
-        {
-          "domain": "expertise.com",
-          "name": "The Best Bookkeeping Services",
-          "site_url": "https://expertise.com",
-          "one_liner": "We find the top local Bookkeeping Services near you. bookkeepers answer phones, collect money, and pay debts on behalf of companies.",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 4,
-          "primary_email": "info@expertise.com"
-        },
-        {
-          "domain": "rigits.com",
-          "name": "21 Best Bookkeeping Services in Chicago, IL",
-          "site_url": "https://rigits.com",
-          "one_liner": "Nov 15, 2022 — List of bookkeeping services in Chicago · 1. Rigits · 2. Amber's Bookkeeping · 3. Excel Bookkeeping & Tax Services · 4. FinancePal · 5. Plus ... Read more",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 8,
-          "primary_email": "julia@rigits.com"
-        }
-      ]
+      "route": "ACCRUE",
+      "qualified": 26,
+      "listed": 26,
+      "missing": []
     },
     {
       "vertical": "freelancer-tax-preparers",
       "label": "tax preparation services for freelancers and gig workers",
       "roundupSlug": "best-tax-preparation-services-for-freelancers",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 15,
-      "listed": 14,
-      "missing": [
-        {
-          "domain": "cpafirmnyc.com",
-          "name": "Self-Employment Accountant Manhattan, NYC",
-          "site_url": "https://cpafirmnyc.com",
-          "one_liner": "We are a Miller & Company, the best CPA for self employed professionals. ing bookkeeping tax preparation and accounting support for self employed clients. ...",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 5,
-          "primary_email": null
-        }
-      ]
+      "listed": 15,
+      "missing": []
     },
     {
       "vertical": "cpa-tax-advisers",
       "label": "CPAs and tax advisers",
       "roundupSlug": "how-to-choose-a-cpa-or-tax-adviser",
       "route": "ENRICH",
-      "qualified": 9,
-      "listed": 5,
+      "qualified": 8,
+      "listed": 7,
       "missing": [
         {
           "domain": "surgent.com",
@@ -887,36 +766,6 @@
           "has_pricing": true,
           "serp_rank": 1,
           "primary_email": "info@surgent.com"
-        },
-        {
-          "domain": "sandiegotaxprofessionals.com",
-          "name": "How to Choose the Right Tax Advisor",
-          "site_url": "https://sandiegotaxprofessionals.com",
-          "one_liner": "1. You Own a Business or Are Self-Employed · 2. You've Had Major Life Changes · 3. You Have Investments, Rental Income, or Cryptocurrency · 4. You're Concerned ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 8,
-          "primary_email": "help@sandiegotaxprofessionals.com"
-        },
-        {
-          "domain": "elderhanson.com",
-          "name": "How Much Does Income Tax Preparation Cost in Naperville?",
-          "site_url": "https://elderhanson.com",
-          "one_liner": "Their fees are usually higher than basic preparers. Certified Public Accountants (CPAs): A certified public accountant is the most qualified type of tax ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 9,
-          "primary_email": null
-        },
-        {
-          "domain": "hackerjohnson.com",
-          "name": "Affordable Tax Prep in Tampa: Costs & Services",
-          "site_url": "https://hackerjohnson.com",
-          "one_liner": "Affordable tax prep in Tampa costs $150–$450. Learn what's included, from e-filing to audit support, and how to choose the right CPA.",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 11,
-          "primary_email": "info@hackerjohnson.com"
         }
       ]
     },
@@ -924,41 +773,10 @@
       "vertical": "california-independent-insurance-agencies",
       "label": "independent insurance agencies in California",
       "roundupSlug": "best-independent-insurance-agencies-in-california",
-      "route": "ENRICH",
-      "qualified": 16,
-      "listed": 13,
-      "missing": [
-        {
-          "domain": "whins.com",
-          "name": "Insurance Agency Near Westlake Village California",
-          "site_url": "https://whins.com",
-          "one_liner": "WHINS Insurance Agency helps California businesses and families compare insurance options, review coverage requirements, Great Insurance From Even Better ...",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 2,
-          "primary_email": "info@whins.com"
-        },
-        {
-          "domain": "twig.so",
-          "name": "Best Insurance Agencies in Los Angeles, CA: 1 Rated",
-          "site_url": "https://twig.so",
-          "one_liner": "Independent agencies compare quotes from several insurance companies ; captive agencies represent one. Use the Coverage filter to see them.",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 2,
-          "primary_email": "support@twig.so"
-        },
-        {
-          "domain": "insurewiseins.com",
-          "name": "Why Choose an Independent Agent?",
-          "site_url": "https://insurewiseins.com",
-          "one_liner": "Insure Wise Insurance Brokers is an independent insurance agent located in Thousand Oaks, California. Contact Us 855-ASK-WISE 9:00 AM - 5:00 PM, M. Mon-Fri 9AM ...",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 3,
-          "primary_email": null
-        }
-      ]
+      "route": "ACCRUE",
+      "qualified": 15,
+      "listed": 15,
+      "missing": []
     },
     {
       "vertical": "massachusetts-restaurant-hr-services",

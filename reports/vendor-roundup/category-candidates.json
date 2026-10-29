@@ -1,14 +1,25 @@
 {
   "site": "themodernwallet.com",
   "cut_as_other_category": {
-    "business loan categories": [
-      "reilcap.com"
-    ],
     "unlabelled": [
+      "basic.ai",
       "femaleinvest.com",
       "glideapps.com",
-      "truereview.co",
-      "yaycommerce.com"
+      "hackerjohnson.com",
+      "kahnlitwin.com",
+      "trinet.com",
+      "wiserinvestor.com",
+      "yaycommerce.com",
+      "zenbusiness.com"
+    ],
+    "robo-advisor": [
+      "stash.com"
+    ],
+    "banking": [
+      "fccu.org"
+    ],
+    "business loans": [
+      "cdcloans.com"
     ],
     "credit repair": [
       "asapcreditrepairusa.com"

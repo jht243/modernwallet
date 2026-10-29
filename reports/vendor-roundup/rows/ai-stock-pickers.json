@@ -1,5 +1,17 @@
 {
- "slug": "best-ai-stock-pickers",
- "rows": [],
- "cut": []
+  "slug": "best-ai-stock-pickers",
+  "rows": [
+    {
+      "name": "Stocxer AI",
+      "domain": "stocxer.in",
+      "url": "https://stocxer.in/",
+      "values": [
+        "Research on Indian stocks and options (NIFTY, BANKNIFTY)",
+        "AI analysis combining Smart Money Concepts, ML models and news sentiment",
+        "Yes, 100 free credits, no credit card required",
+        "Not published"
+      ]
+    }
+  ],
+  "cut": []
 }

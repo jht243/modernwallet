@@ -1,18 +1,18 @@
 {
- "slug": "best-online-will-makers",
- "rows": [
-  {
-   "name": "Mantle",
-   "domain": "getmantle.ai",
-   "url": "https://getmantle.ai",
-   "values": [
-    "Not published (pour-over will free with trust)",
-    "Not published",
-    "Documents free to draft; optional Mantle Complete $499",
-    "Yes",
-    "Not included"
-   ]
-  }
- ],
- "cut": []
+  "slug": "best-online-will-makers",
+  "rows": [
+    {
+      "name": "GoodTrust",
+      "domain": "mygoodtrust.com",
+      "url": "https://mygoodtrust.com/",
+      "values": [
+        "$149 Estate+ plan (will, trust and directives)",
+        "Not published; each person creates own plan at no extra fee",
+        "Included in the $149 Estate+ plan",
+        "Power of attorney and health care directive included in Estate+",
+        "Not published; documents drafted by estate-planning attorneys"
+      ]
+    }
+  ],
+  "cut": []
 }

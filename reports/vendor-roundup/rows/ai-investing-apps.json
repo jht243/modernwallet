@@ -1,22 +1,5 @@
 {
- "slug": "best-ai-investing-apps",
- "rows": [
-  {
-   "name": "AI Investing",
-   "domain": "ainvesting.app",
-   "url": "https://ainvesting.app",
-   "values": [
-    "AI market analysis for stocks, ETFs and crypto; does not execute trades",
-    "Free; Pro $9.99/mo or $69.99/yr, 7-day trial",
-    "Not published (AI-powered analysis grounded in live market data)",
-    "N/A (analysis app, no brokerage account)"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "sales-hacking.com",
-   "why": "category 1 \u2014 French-language marketing blog and software review site, no product of its own"
-  }
- ]
+  "slug": "best-ai-investing-apps",
+  "rows": [],
+  "cut": []
 }

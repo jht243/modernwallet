@@ -3,8 +3,12 @@
   "rows": [],
   "cut": [
     {
-      "domain": "usetweed.com",
-      "why": "category 1 \u2014 publisher of calculators and guides, earns referral income, no investment product"
+      "domain": "inven.ai",
+      "why": "category 3 — AI software for M&A and consulting teams; no robo-advisor product"
+    },
+    {
+      "domain": "fintechblueprint.com",
+      "why": "category 1 — fintech research newsletter publisher, no investment product"
     }
   ]
 }

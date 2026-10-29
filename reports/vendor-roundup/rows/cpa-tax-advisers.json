@@ -1,33 +1,10 @@
 {
- "slug": "how-to-choose-a-cpa-or-tax-adviser",
- "rows": [
-  {
-   "name": "San Diego Tax Professionals",
-   "domain": "sandiegotaxprofessionals.com",
-   "url": "https://sandiegotaxprofessionals.com",
-   "values": [
-    "CPA and Enrolled Agent services; staff credentials not listed",
-    "Not published",
-    "Not published; contact for an estimate",
-    "Rental owners, small business owners and multiple-income households in San Diego County"
-   ]
-  },
-  {
-   "name": "Elder Hanson",
-   "domain": "elderhanson.com",
-   "url": "https://elderhanson.com",
-   "values": [
-    "CPA firm (listed partners are CPAs)",
-    "Not published",
-    "Not published; intake form first",
-    "Owner-run professional service firms around Naperville, Illinois"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "hackerjohnson.com",
-   "why": "category 4 \u2014 CPA firm page targets banks, insurers and audit clients; no individual or small-business tax service shown"
-  }
- ]
+  "slug": "how-to-choose-a-cpa-or-tax-adviser",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "surgent.com",
+      "why": "category 3 — CPA, EA and CFP exam-prep courses and professional CPE, not a tax service for consumers"
+    }
+  ]
 }

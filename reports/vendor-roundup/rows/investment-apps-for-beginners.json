@@ -3,16 +3,16 @@
   "rows": [],
   "cut": [
     {
-      "domain": "fxdailyreport.com",
-      "why": "category 1 \u2014 forex news and broker-comparison publisher"
+      "domain": "fortunebuilders.com",
+      "why": "category 1 — publisher/education site (listicle page), no investment app of its own"
     },
     {
-      "domain": "groupement-intercommunal-collines.org",
-      "why": "category 3 \u2014 municipal association in Benin, not finance product"
+      "domain": "finelo.com",
+      "why": "category 4 — trading education and paper-trading learning app with no brokerage; fits investing education or AI trading bots"
     },
     {
-      "domain": "eternilink.com",
-      "why": "category 3 \u2014 mental health technology company, no investment product"
+      "domain": "crt-ms.com",
+      "why": "category 3 — oil and gas measurement equipment maker, unrelated to finance"
     }
   ]
 }

@@ -3,8 +3,12 @@
   "rows": [],
   "cut": [
     {
-      "domain": "money.stackexchange.com",
-      "why": "category 1 — Q&A forum with no product of its own"
+      "domain": "accio.com",
+      "why": "category 3 \u2014 AI sourcing and business-automation tool, not personal or small-business finance and no IRA product"
+    },
+    {
+      "domain": "sophisticatedinvestor.com",
+      "why": "category 1 \u2014 review and affiliate site, no IRA product of its own"
     }
   ]
 }

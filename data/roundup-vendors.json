@@ -330,8 +330,8 @@
      "values": [
       "Investors researching Indian listed companies",
       "Screener AI reads company filings and earnings calls",
-      "Yes (Hobby Investor, \u20b90 per year)",
-      "\u20b94,999 per year (Active Investor)"
+      "Yes (Hobby Investor, ₹0 per year)",
+      "₹4,999 per year (Active Investor)"
      ],
      "added": "2026-10-16"
     },
@@ -379,7 +379,7 @@
       "Retail investors researching Indian stocks (NSE and BSE)",
       "Ask Iris answers from company filings; AI-curated stock themes",
       "Yes (Standard plan, 7-day paid trial)",
-      "\u20b97,199/year (Pro)"
+      "₹7,199/year (Pro)"
      ],
      "added": "2026-10-19"
     },
@@ -406,6 +406,18 @@
       "Not published"
      ],
      "added": "2026-10-26"
+    },
+    {
+     "name": "Stocxer AI",
+     "domain": "stocxer.in",
+     "url": "https://stocxer.in/",
+     "values": [
+      "Research on Indian stocks and options (NIFTY, BANKNIFTY)",
+      "AI analysis combining Smart Money Concepts, ML models and news sentiment",
+      "Yes, 100 free credits, no credit card required",
+      "Not published"
+     ],
+     "added": "2026-10-29"
     }
    ]
   },
@@ -585,6 +597,18 @@
       "$19.99/mo or $199.99/yr; 7-day PRO trial, no card"
      ],
      "added": "2026-10-27"
+    },
+    {
+     "name": "Capitalise.ai",
+     "domain": "capitalise.ai",
+     "url": "https://capitalise.ai/",
+     "values": [
+      "Traders automating their own strategies written in plain English, no code",
+      "Plain-English scenario builder with backtesting and simulated trading",
+      "Automated execution of user-written scenarios; broker list not on homepage",
+      "Not published"
+     ],
+     "added": "2026-10-29"
     }
    ]
   },
@@ -703,6 +727,19 @@
       "Offers Approved to Move pre-underwriting; NMLS #2184; serving customers since 1983"
      ],
      "added": "2026-10-27"
+    },
+    {
+     "name": "Lower",
+     "domain": "lower.com",
+     "url": "https://lower.com/",
+     "values": [
+      "Home buyers, refinancers and cash-out borrowers in 47 states plus DC",
+      "Yes",
+      "Not published",
+      "Not published",
+      "Free Re-Fi for Life: no lending fees on later refinances; third-party fees excluded"
+     ],
+     "added": "2026-10-29"
     }
    ]
   },
@@ -1294,7 +1331,7 @@
      "domain": "knowyourdosh.com",
      "url": "https://knowyourdosh.com",
      "values": [
-      "Free; paid \u00a34.99 to \u00a314.99/month per household",
+      "Free; paid £4.99 to £14.99/month per household",
       "Tracks stocks, crypto, ISAs and investments; no analysis tools listed",
       "Yes, properties and rental management",
       "Not published",
@@ -1463,7 +1500,7 @@
      "domain": "foluno.com",
      "url": "https://foluno.com",
      "values": [
-      "Free plan; Premium \u20ac599 one-time",
+      "Free plan; Premium €599 one-time",
       "Allocation by asset class, country, sector; cash-flow analysis",
       "Yes",
       "Not published",
@@ -1858,6 +1895,19 @@
       "Not included"
      ],
      "added": "2026-10-28"
+    },
+    {
+     "name": "GoodTrust",
+     "domain": "mygoodtrust.com",
+     "url": "https://mygoodtrust.com/",
+     "values": [
+      "$149 Estate+ plan (will, trust and directives)",
+      "Not published; each person creates own plan at no extra fee",
+      "Included in the $149 Estate+ plan",
+      "Power of attorney and health care directive included in Estate+",
+      "Not published; documents drafted by estate-planning attorneys"
+     ],
+     "added": "2026-10-29"
     }
    ]
   },
@@ -2296,6 +2346,32 @@
       "Law firm with offices in the Chicago area"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "Four Peaks Planning (Living Trust Arizona)",
+     "domain": "livingtrustarizona.com",
+     "url": "https://livingtrustarizona.com/",
+     "values": [
+      "$975 package; $30 per deed county recorder fee extra",
+      "Yes",
+      "One Arizona deed included; successor trustee guide",
+      "Not published",
+      "No; Arizona-certified legal document preparer, attorneys available on request"
+     ],
+     "added": "2026-10-29"
+    },
+    {
+     "name": "LDA Pro Legal",
+     "domain": "ldaprolegal.com",
+     "url": "https://ldaprolegal.com/",
+     "values": [
+      "Not published",
+      "Will included in living trust package",
+      "Trust transfer deed and funding instructions included",
+      "Not published",
+      "No; registered California legal document assistant, not a law firm"
+     ],
+     "added": "2026-10-29"
     }
    ]
   },
@@ -2508,7 +2584,7 @@
      "domain": "netoapp.es",
      "url": "https://netoapp.es",
      "values": [
-      "Free; optional PRO from \u20ac49.99/yr (iPhone, Spain pricing)",
+      "Free; optional PRO from €49.99/yr (iPhone, Spain pricing)",
       "No (manual entry, no bank connection)",
       "Manual tracking with category budget limits and savings goals",
       "People who track spending and net worth without linking banks"
@@ -3080,6 +3156,32 @@
       "Funds released immediately once approved"
      ],
      "added": "2026-10-28"
+    },
+    {
+     "name": "Oportun",
+     "domain": "oportun.com",
+     "url": "https://oportun.com/",
+     "values": [
+      "Bills, repairs and debt consolidation; no prior credit history required",
+      "$300 to $10,000 unsecured; $2,525 to $18,500 secured in 8 states",
+      "APR range not published; examples 35.95% unsecured, 34.95% secured",
+      "Administrative fee up to 10% of principal",
+      "Not published; says approval is typically within minutes"
+     ],
+     "added": "2026-10-29"
+    },
+    {
+     "name": "NetCredit",
+     "domain": "netcredit.com",
+     "url": "https://www.netcredit.com/",
+     "values": [
+      "Borrowers wanting a 6 to 60 month installment loan or credit line",
+      "Loans up to $10,000; line of credit up to $4,500",
+      "Fixed APR; range shown by state, not published",
+      "Not published; varies by state",
+      "Same day if approved before 1 p.m. CT on weekdays"
+     ],
+     "added": "2026-10-29"
     }
    ]
   },
@@ -3250,8 +3352,8 @@
   },
   "best-travel-credit-cards": {
    "domains": {
-    "Chase Sapphire Preferred\u00ae": "chase.com",
-    "Chase Sapphire Reserve\u00ae": "chase.com",
+    "Chase Sapphire Preferred®": "chase.com",
+    "Chase Sapphire Reserve®": "chase.com",
     "Capital One Venture Rewards": "capitalone.com",
     "Capital One VentureOne": "capitalone.com",
     "Bank of America Travel Rewards": "bankofamerica.com",
@@ -3285,12 +3387,12 @@
   },
   "best-student-credit-cards": {
    "domains": {
-    "Discover it\u00ae Student Cash Back": "discover.com",
+    "Discover it® Student Cash Back": "discover.com",
     "Capital One Savor Rewards for Students": "capitalone.com",
     "Capital One Quicksilver Rewards for Students": "capitalone.com",
-    "Chase Freedom Rise\u2120": "chase.com",
-    "Bank of America\u00ae Travel Rewards for Students": "bankofamerica.com",
-    "Bank of America\u00ae Customized Cash Rewards for Students": "bankofamerica.com"
+    "Chase Freedom Rise℠": "chase.com",
+    "Bank of America® Travel Rewards for Students": "bankofamerica.com",
+    "Bank of America® Customized Cash Rewards for Students": "bankofamerica.com"
    },
    "added": []
   },
@@ -3479,6 +3581,17 @@
       "European index investors; managed portfolios carry a 1% to 0.60% annual fee by asset tier"
      ],
      "added": "2026-10-25"
+    },
+    {
+     "name": "Portfolio Lab",
+     "domain": "portfoliolab.app",
+     "url": "https://www.portfoliolab.app/",
+     "values": [
+      "Yes, historical backtests back to 1926 for ETFs, funds and 57 asset classes",
+      "No for public tools; free account unlocks full platform",
+      "Self-directed investors, FIRE planners, advisors and finance students"
+     ],
+     "added": "2026-10-29"
     }
    ]
   },
@@ -3503,7 +3616,7 @@
      "url": "https://gokapital.com",
      "values": [
       "MCA, lines of credit, SBA, equipment loans",
-      "Working capital $20,000\u2013$50,000,000",
+      "Working capital $20,000–$50,000,000",
       "MCA funding in 24 hours or less",
       "No minimum credit score stated; $30,000+/mo revenue"
      ],
@@ -3515,7 +3628,7 @@
      "url": "https://www.greenboxcapital.com/",
      "values": [
       "MCA, factoring, line of credit, loans",
-      "$3,000\u2013$500,000",
+      "$3,000–$500,000",
       "As fast as 1 business day",
       "500 FICO, 5 mo., $10k/mo"
      ],
@@ -3527,7 +3640,7 @@
      "url": "https://sunwisecapital.com",
      "values": [
       "Unsecured loans, MCA, equipment financing",
-      "Unsecured $10,000\u2013$2M",
+      "Unsecured $10,000–$2M",
       "As fast as 4 hrs",
       "500 FICO, 12 mo., $25k/mo"
      ],
@@ -3551,7 +3664,7 @@
      "url": "https://jsvcapital.com",
      "values": [
       "MCA, loans, line of credit, equipment",
-      "$10,000\u2013$1,000,000",
+      "$10,000–$1,000,000",
       "As fast as 1 business day",
       "Not published"
      ],
@@ -3562,10 +3675,10 @@
      "domain": "mcashadvance.com",
      "url": "https://mcashadvance.com",
      "values": [
-      "MCA, factor rates 1.1\u20131.5",
-      "$5,000\u2013$900,000",
-      "1\u20133 days average",
-      "6 mo.; $7,500\u2013$8,000/mo; 500\u2013550 FICO"
+      "MCA, factor rates 1.1–1.5",
+      "$5,000–$900,000",
+      "1–3 days average",
+      "6 mo.; $7,500–$8,000/mo; 500–550 FICO"
      ],
      "added": "2026-10-15"
     },
@@ -3587,7 +3700,7 @@
      "url": "https://biz2credit.com",
      "values": [
       "Term loan, revenue-based financing, line of credit",
-      "$25K\u2013$2M+",
+      "$25K–$2M+",
       "Decision as fast as 24 hrs",
       "Term loan: 650 FICO, $100k revenue"
      ],
@@ -3599,7 +3712,7 @@
      "url": "https://mfebusinessloans.com",
      "values": [
       "Working capital, line of credit, MCA refinance",
-      "$5,000\u2013$5,000,000",
+      "$5,000–$5,000,000",
       "Same-day decision, next-day funding",
       "Not published"
      ],
@@ -5323,7 +5436,7 @@
      "domain": "equisettle.co.uk",
      "url": "https://equisettle.co.uk",
      "values": [
-      "From \u00a379/month (Foundation); \u00a3169/month (Operations)",
+      "From £79/month (Foundation); £169/month (Operations)",
       "Yes, automatic reminders listed; timing not published",
       "Not published",
       "B2B finance teams chasing receivables alongside Xero, QuickBooks or Sage"
@@ -5359,7 +5472,7 @@
      "domain": "trove.works",
      "url": "https://trove.works",
      "values": [
-      "\u00a350/month Essential; \u00a3135 Integrated; \u00a3285 Advanced",
+      "£50/month Essential; £135 Integrated; £285 Advanced",
       "Yes, automated due-date chasing with replies you approve",
       "Not published",
       "Xero, QuickBooks or FreeAgent users who need overdue invoices chased"
@@ -5395,7 +5508,7 @@
      "domain": "chaserhq.com",
      "url": "https://chaserhq.com",
      "values": [
-      "\u00a3199/month Compact; \u00a3599 Core; \u00a3899 Complete",
+      "£199/month Compact; £599 Core; £899 Complete",
       "Yes, automated chasing by email, SMS and phone",
       "Not published",
       "Larger credit control teams chasing receivables, not solo freelancers"
@@ -5409,7 +5522,7 @@
      "values": [
       "$79.99/year or $7.99/week, 3-day trial",
       "Not published",
-      "No BuildWell fee; Stripe 2.9% + 30\u00a2 passes through",
+      "No BuildWell fee; Stripe 2.9% + 30¢ passes through",
       "Contractors who want AI-drafted estimates and invoices"
      ],
      "added": "2026-10-18"
@@ -5545,6 +5658,18 @@
       "Freelancers and small studios sending proposals, quotes and invoices"
      ],
      "added": "2026-10-27"
+    },
+    {
+     "name": "Flowlancerr",
+     "domain": "flowlancerr.com",
+     "url": "https://www.flowlancerr.com/",
+     "values": [
+      "Free plan (5 invoices a month); paid $6, $14 or $39 monthly",
+      "Not published",
+      "Not published",
+      "Freelancers managing clients, proposals, time tracking and invoices in one workspace"
+     ],
+     "added": "2026-10-29"
     }
    ]
   },

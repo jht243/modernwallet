@@ -1,5 +1,35 @@
 {
- "slug": "best-living-trust-services",
- "rows": [],
- "cut": []
+  "slug": "best-living-trust-services",
+  "rows": [
+    {
+      "name": "Four Peaks Planning (Living Trust Arizona)",
+      "domain": "livingtrustarizona.com",
+      "url": "https://livingtrustarizona.com/",
+      "values": [
+        "$975 package; $30 per deed county recorder fee extra",
+        "Yes",
+        "One Arizona deed included; successor trustee guide",
+        "Not published",
+        "No; Arizona-certified legal document preparer, attorneys available on request"
+      ]
+    },
+    {
+      "name": "LDA Pro Legal",
+      "domain": "ldaprolegal.com",
+      "url": "https://ldaprolegal.com/",
+      "values": [
+        "Not published",
+        "Will included in living trust package",
+        "Trust transfer deed and funding instructions included",
+        "Not published",
+        "No; registered California legal document assistant, not a law firm"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "contractscounsel.com",
+      "why": "category 1 — lawyer marketplace, no trust product of its own"
+    }
+  ]
 }

@@ -1,17 +1,22 @@
 {
- "slug": "robinhood-agentic-trading-alternatives",
- "rows": [
-  {
-   "name": "Fensory",
-   "domain": "fensory.com",
-   "url": "https://fensory.com",
-   "values": [
-    "People running their own AI agents to trade; not available to US persons at launch",
-    "Connects your own assistant (Claude, ChatGPT, Cursor, Codex) via MCP",
-    "Agent trades within your per-trade cap and market allowlist; cannot withdraw",
-    "Free to connect; 0.01% to 0.05% builder fee on perpetuals and Hyperliquid spot"
-   ]
-  }
- ],
- "cut": []
+  "slug": "robinhood-agentic-trading-alternatives",
+  "rows": [
+    {
+      "name": "Capitalise.ai",
+      "domain": "capitalise.ai",
+      "url": "https://capitalise.ai/",
+      "values": [
+        "Traders automating their own strategies written in plain English, no code",
+        "Plain-English scenario builder with backtesting and simulated trading",
+        "Automated execution of user-written scenarios; broker list not on homepage",
+        "Not published"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "captrader.com",
+      "why": "category 4 \u2014 introducing broker for Interactive Brokers, no AI trading product on its site; fits online brokers"
+    }
+  ]
 }

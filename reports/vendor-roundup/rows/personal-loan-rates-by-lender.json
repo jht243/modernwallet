@@ -1,18 +1,30 @@
 {
- "slug": "personal-loan-rates-by-lender",
- "rows": [
-  {
-   "name": "Credit Union of Georgia",
-   "domain": "cuofga.org",
-   "url": "https://cuofga.org/loans/personal/",
-   "values": [
-    "Members wanting a simple unsecured loan or high-interest debt payoff",
-    "Not published",
-    "As low as 9.99% APR, by term, as of Oct 2026",
-    "No fee amounts listed; $10 minimum share account required",
-    "Funds released immediately once approved"
-   ]
-  }
- ],
- "cut": []
+  "slug": "personal-loan-rates-by-lender",
+  "rows": [
+    {
+      "name": "Oportun",
+      "domain": "oportun.com",
+      "url": "https://oportun.com/",
+      "values": [
+        "Bills, repairs and debt consolidation; no prior credit history required",
+        "$300 to $10,000 unsecured; $2,525 to $18,500 secured in 8 states",
+        "APR range not published; examples 35.95% unsecured, 34.95% secured",
+        "Administrative fee up to 10% of principal",
+        "Not published; says approval is typically within minutes"
+      ]
+    },
+    {
+      "name": "NetCredit",
+      "domain": "netcredit.com",
+      "url": "https://www.netcredit.com/",
+      "values": [
+        "Borrowers wanting a 6 to 60 month installment loan or credit line",
+        "Loans up to $10,000; line of credit up to $4,500",
+        "Fixed APR; range shown by state, not published",
+        "Not published; varies by state",
+        "Same day if approved before 1 p.m. CT on weekdays"
+      ]
+    }
+  ],
+  "cut": []
 }
