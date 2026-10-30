@@ -1,179 +1,179 @@
 {
   "reviewer": "chart_reviewer",
-  "snapshotSha256": "0ca0223f5e53702d805a6f14cfaf34caa1b6601fdb427cc4be6a85c82001c90a",
+  "snapshotSha256": "f6998783aa6c529ae87507cf45603483a0895f04b03317036f17c36c3f0e8547",
   "routes": [
     {
       "path": "/checklists/cancel-subscription-planner/",
-      "fingerprint": "446af4cbe9e49174f1a4c5d8a2ef91433260387fc2512e86925114e56e623d4b",
+      "fingerprint": "33a93b6c0e08f21025cb34585b514dc4920156c746c86e41c60426d27842998f",
       "verdict": "PASS",
       "checks": {
         "wholePageCoherence": {
           "status": "PASS",
-          "evidence": "Full rendered planner page read: direct answer identifies actual biller and signup channel, dated cancellation request, proof preservation, and conditional escalation; component branches, sectioned explainer, scripts and five FAQ answers align. No guaranteed cancellation/refund language; no 5,270-post/1.8× claim."
+          "evidence": "Read the complete captured page and current live planner. The first section directly answers the approved question with a biller-first mechanism, dated request, proof, and scoped escalation; the four labelled inputs, changing result, edit-ready script, five PAA-based FAQs, selected-law explainer, and source list agree. The two example paths are expressly hypothetical. No cancellation or refund is guaranteed."
         },
         "sourceSupport": {
           "status": "PASS",
-          "evidence": "Primary-sources.json was checked against the rendered claims: Eighth Circuit vacated the 2024 amendments for procedural failure; FTC page describes the March 2026 ANPRM; ROSCA is limited to qualifying internet negative-option transactions; official adopted NYC rule is effective Oct 1, 2026 and §5-110.3(c) exempts NYS-licensed security-system alarm operators. CA/CO/Maine/NY examples are bounded and linked. Packet source-artifact and cases hashes verified."
+          "evidence": "Independently checked all 22 evidence sourceArtifacts against primary-sources.json: IDs and URLs match, all evidence references use the current file SHA-256 6221a9db0298912993bec9578af8d33fe912c0642123f3f9920b2557ce58bb23, and all 22 official URLs appear in the rendered page. Current primary checks: Eighth Circuit vacated the FTC 2024 amendments for a procedural omission without deciding merits; ROSCA §8403 is limited to covered Internet negative-option transactions; the FTC March 2026 item is an ANPRM; the adopted NYC rule took effect Oct. 1, 2026 and §5-110.3(c) exempts NYS-licensed security-system alarm operators. NY GBL §527-a has its own alarm-operator exemption. The ADT branch and inline source now point to the correct legacy Blue by ADT FAQ, which says deleting the app account does not cancel monitoring. CA, CO, Maine, NY, NYC, FCC/FTC, and provider routes are conditional and linked to official sources."
         },
         "testingAndAttribution": {
           "status": "PASS",
-          "evidence": "TESTED format/schema is off. UI evidence labels five deterministic branch checks as manual UI checks, explicitly not consumer tests/outcomes; copy/privacy observations disclose no PII. Visible “Reviewed against primary sources,” linked Sources, and legal disclaimer (“general information, not legal advice”) match reported source synthesis; no attorney credential or test claim."
+          "evidence": "TESTED is not used. The packet's reported, source-based basis and case-selection record show no relevant ModernWallet experience; all five unrelated Layer3Labs candidates were rejected. The visible byline is the assigned Jonathan Velez, Personal Finance Writer & Editor, with 'Reviewed against primary sources'; the page does not claim attorney review or a consumer/provider test. I reselected the current live scenarios on port 4325: Google Play/California streaming after a charge, NY gym blocked, NYC Blue by ADT blocked, and the separate AT&T wireless and internet routes. No account or personal data was entered."
         },
         "datesAndSchema": {
           "status": "PASS",
-          "evidence": "Visible “Updated October 29, 2026”; primary Article JSON-LD datePublished=dateModified=2026-10-29; FAQPage and WebApplication schema present; canonical/title/H1 agree."
+          "evidence": "Visible Updated October 29, 2026 matches Article datePublished/dateModified 2026-10-29. Current HTML includes Person author Jonathan Velez, Article, FAQPage with five questions, and WebApplication schema; the canonical is the self URL. The SEO title is 53 characters ('What to Do If You Can't Cancel a Subscription in 2026') and differs from the longer on-page H1 ('Can't Cancel a Subscription? Your 2026 Rights + Step-by-Step Scripts'); both accurately describe the same page and the canonical is correct, so this is non-blocking."
         },
         "linksAndIndexability": {
           "status": "PASS",
-          "evidence": "Self-canonical/indexable HTTP 200, required title/disclaimer/FAQ/Sources present, in sitemap, 235 links. Three inbound contextual links and inspected outbound cross-link appear on their routes; all cited primary sources are linked from the article. No forbidden unsourced post-volume/spike/awareness claims."
+          "evidence": "The route is HTTP 200, self-canonical, indexable, and captured without failures. The page contains all 22 current primary-source URLs. The planner-to-budgeting internal link names the inspected Subscription Creep section. The checklist hub card and three approved contextual inbound links resolve to this planner. The current ADT href is https://help.adt.com/article/blue-account-creation; the stale ADT Blu URL is absent. FAQ, Sources, and not-legal-advice disclosure render, with the disclaimer after Sources."
         },
         "renderedLayout": {
           "status": "PASS",
-          "evidence": "Chrome desktop 1509px viewport/1494px document width, no horizontal overflow; 6 loaded Mediavine content slots all position:relative; no fixed adhesion roots; no browser console errors. Deterministic branches and copy confirmation in reports/mindmap-pass/2026-10-29-subscription-cancel/evidence/cancel-subscription-planner/ui-branch-evidence.json (SHA-256 fd62171b0b8f1b71e4689d79d1ccd5d058f747f789864699987c21631cfaeb56); mobile 390×844 width 375 and desktop 1280 width 1265, no overflow/fixed overlays; planner controls labeled; all-default and branch behaviors observed. Ad wrapper static in normal flow after footer."
+          "evidence": "The React island is wired in CalculatorIsland.tsx and renders the required cancel-subscription-planner data-tool root with four labelled selects and a copy control. The runtime output is deterministic; provider routes are distinct for AT&T wireless and internet, current scenario outputs showed no undefined/NaN text, all-default produces a general no-match plan, the copy control reports success, and the browser recorded no console errors. At 390x844 the editorial main is 375px wide with no editorial element outside it and no fixed overlay; the volatile Mediavine MV-AD-REPORTER transiently made document.scrollWidth one pixel wider than the nominal viewport, without covering page content. At 1280x900 the main is 920px wide, document width matches the 1265px client area, and no fixed overlays appear. Mediavine content slots remain in normal relative flow; the universal player wrapper, when present, follows the footer/disclosure."
         },
         "scopeAndExclusions": {
           "status": "PASS",
-          "evidence": "Legal/financial decision aid uses explicit not-legal-advice wording; selected examples only, no nationwide/state-by-state completeness claim, no individual-outcome guarantee, no social listening figures, no testing claims. Route-specific affiliate disclosure remains visible without the prohibited rankings/editorial-neutrality assurance."
+          "evidence": "The full page labels the examples as selected, not a 50-state survey; statutory coverage, offer date, enrollment method, contract terms, and NY/NYC alarm exceptions are stated. The unsupported 5,270-post count, Oct. 28 1.8x level, and awareness claim are absent. The selected-law pointer and 'Not legal advice' disclaimer do not promise an individual result. The affiliate footer discloses possible compensation without the prohibited blanket ranking/editorial-coverage assurance."
         }
       }
     },
     {
       "path": "/checklists/",
-      "fingerprint": "7e81b589b441ada235deab1eb53cd3f688ddf3fa897dd2e5dd8097e6ac627ee2",
+      "fingerprint": "a8c3ef6eff7235054e55a5ba82cb1f7ad2ca74055dbaa13361206036e6cb5561",
       "verdict": "PASS",
       "checks": {
         "wholePageCoherence": {
           "status": "PASS",
-          "evidence": "Full rendered checklist hub read; the Interactive planner card is a relevant option within the hub and does not misstate its legal coverage or promise outcomes."
+          "evidence": "Read the complete checklist-hub capture. The new card is under 'All Checklists' and the explicit 'Cancel a Subscription' heading; it names this separate interactive planner and does not imply it is one of the home-property dropdown worksheets."
         },
         "sourceSupport": {
           "status": "PASS",
-          "evidence": "The added planner-card placement makes no legal or product facts; destination is the self-canonical planner route and contains the supported answer."
+          "evidence": "The hub card adds no legal or provider claim. Its destination is the current self-canonical planner, whose legal and provider information is supported by the checked primary-source packet."
         },
         "testingAndAttribution": {
           "status": "PASS",
-          "evidence": "No testing endorsement/claim added; public byline and “Reviewed against primary sources” presentation remain consistent. The new planner is explicitly labeled as an interactive planner, not a tested product."
+          "evidence": "The hub card calls the destination an interactive planner and makes no TESTED, consumer-outcome, or professional-review claim. Existing author and sourcing presentation remain intact."
         },
         "datesAndSchema": {
           "status": "PASS",
-          "evidence": "Visible Updated October 29, 2026; Article datePublished=2026-10-26 and dateModified=2026-10-29; FAQPage/WebApplication schema and self-canonical match the hub."
+          "evidence": "Visible Updated October 29, 2026 matches Article dateModified 2026-10-29; Article datePublished remains 2026-10-26. Article Person author, FAQPage, and self-canonical are present."
         },
         "linksAndIndexability": {
           "status": "PASS",
-          "evidence": "HTTP 200, self-canonical and indexable, in sitemap; card anchor “Interactive planner” resolves to /checklists/cancel-subscription-planner/; 225 rendered links."
+          "evidence": "HTTP 200, self-canonical, indexable, and no capture failures. The 'Interactive planner' card resolves to /checklists/cancel-subscription-planner/; it is separate from the nine home checklist choices. Updated date and sitemap-ready route metadata are consistent."
         },
         "renderedLayout": {
           "status": "PASS",
-          "evidence": "Chrome desktop 1509px/1494px document width; 4 loaded Mediavine content slots in normal relative flow, no fixed adhesion roots, no browser console errors; affiliate disclosure remains visible."
+          "evidence": "At 1280x900, main width is 920px and document width equals the 1265px client area. Mediavine content boxes are relative in-flow slots; no fixed overlays appeared. The footer and disclosure are static and unobstructed."
         },
         "scopeAndExclusions": {
           "status": "PASS",
-          "evidence": "Hub remains a checklist library; added card is topical, affiliate disclosure retained, prohibited blanket rankings/editorial coverage claim absent."
+          "evidence": "Only the authorized hub card and update metadata changed the hub. Its home checklist content remains intact; the new card is explicitly separated under the cancellation heading. Affiliate disclosure is present without the prohibited blanket assurance."
         }
       }
     },
     {
       "path": "/guides/how-to-make-a-budget/",
-      "fingerprint": "c010ebe5d96a4a9845aec5c2b8943559793ce36bb2369f7a3bedd2c58d332b49",
+      "fingerprint": "bb2c5879ff01884a195b028391cbb8fc30d9fcb2c9193610dd43b050cab66567",
       "verdict": "PASS",
       "checks": {
         "wholePageCoherence": {
           "status": "PASS",
-          "evidence": "Full rendered guide read; the contextual paragraph under “Where the Numbers Come from When You Make a Budget” directs a reader who wants to stop a recurring charge to the planner for biller identification and dated proof, a natural next step."
+          "evidence": "Read the complete guide capture. Under 'Where the Numbers Come from When You Make a Budget,' the contextual link offers the cancellation planner as a next step for a reader addressing recurring charges; the destination answers that task."
         },
         "sourceSupport": {
           "status": "PASS",
-          "evidence": "New link sentence makes no claim about legal entitlement; it accurately describes the planner feature. Destination route and referenced section are present."
+          "evidence": "The new link text adds no independent legal or financial claim and resolves to the approved planner route. The route's legal/provider claims are supported by the 22 verified official sources."
         },
         "testingAndAttribution": {
           "status": "PASS",
-          "evidence": "No new first-person/product test claim or TESTED label; visible source-review attribution is unchanged."
+          "evidence": "The link makes no firsthand, product-test, attorney-review, or TESTED claim. Existing byline and page attribution remain intact."
         },
         "datesAndSchema": {
           "status": "PASS",
-          "evidence": "Visible Updated October 29, 2026; Article datePublished=2026-10-20 and dateModified=2026-10-29; FAQPage schema, self-canonical and article identity agree."
+          "evidence": "Visible Updated October 29, 2026 matches Article dateModified 2026-10-29; datePublished remains 2026-10-20. Article Person author, FAQPage, and self-canonical are present."
         },
         "linksAndIndexability": {
           "status": "PASS",
-          "evidence": "HTTP 200, self-canonical/indexable, in sitemap; contextual “subscription cancellation planner” anchor resolves to the planner; 198 rendered links."
+          "evidence": "HTTP 200, self-canonical and indexable with no capture failures. The contextual 'subscription cancellation planner' anchor resolves to /checklists/cancel-subscription-planner/; page remains represented by its canonical URL."
         },
         "renderedLayout": {
           "status": "PASS",
-          "evidence": "Chrome desktop 1509px/1494px document width; 6 loaded Mediavine slots at relative positions among content, no fixed adhesion roots, no browser console errors; footer disclosure visible."
+          "evidence": "At 1280x900, main width is 920px and document width equals the 1265px client area. Mediavine boxes are relative in-flow slots; no fixed overlay appeared. Footer and affiliate disclosure remain static after the article."
         },
         "scopeAndExclusions": {
           "status": "PASS",
-          "evidence": "Only a relevant recurring-charge cross-link plus expected update date; route disclosure is visible and prohibited blanket neutrality claim absent."
+          "evidence": "The change is limited to the approved recurring-charge contextual link and its update date. It adds no broad legal promise or outcome claim; the visible affiliate disclosure does not assert ranking neutrality."
         }
       }
     },
     {
       "path": "/guides/how-to-budget-for-teens-college-students/",
-      "fingerprint": "f3c6cf422f8e3f78b94814ab8ccc00ded36dfc1d68373af92504d0b6832bd253",
+      "fingerprint": "371297559d72a4ae17a61579707faafbde31b9d599de0872f82bd191ce41d882",
       "verdict": "PASS",
       "checks": {
         "wholePageCoherence": {
           "status": "PASS",
-          "evidence": "Full rendered student-budget guide read; under “Subscription Creep: The Quiet Budget Killer,” the new link recommends the planner only when a charge continues after a cancellation request, matching that section’s context."
+          "evidence": "Read the complete student-budget guide capture. In 'Subscription Creep: The Quiet Budget Killer,' the contextual planner link is offered for the relevant case of recurring charges that continue after cancellation."
         },
         "sourceSupport": {
           "status": "PASS",
-          "evidence": "Added anchor supplies no independent legal claim; it resolves to the planner and follows the contextual section."
+          "evidence": "The new link makes no legal or financial outcome claim; its destination is the approved planner. The planner's claims cite the current 22-source official packet."
         },
         "testingAndAttribution": {
           "status": "PASS",
-          "evidence": "No new testing claim or TESTED label; source-review/byline presentation remains intact."
+          "evidence": "The added anchor carries no firsthand, service-test, attorney-review, or TESTED claim. Visible author/source attribution remains intact."
         },
         "datesAndSchema": {
           "status": "PASS",
-          "evidence": "Visible Updated October 29, 2026; Article datePublished=2026-08-07 and dateModified=2026-10-29; FAQPage schema and self-canonical consistent."
+          "evidence": "Visible Updated October 29, 2026 matches Article dateModified 2026-10-29; Article datePublished remains 2026-08-07. Article Person author, FAQPage, and self-canonical are present."
         },
         "linksAndIndexability": {
           "status": "PASS",
-          "evidence": "HTTP 200, self-canonical/indexable and in sitemap; section-context “subscription cancellation planner” anchor resolves to the planner; 188 rendered links."
+          "evidence": "HTTP 200, self-canonical and indexable with no capture failures. The anchor in the inspected subscription-creep section resolves to /checklists/cancel-subscription-planner/."
         },
         "renderedLayout": {
           "status": "PASS",
-          "evidence": "Chrome desktop 1509px/1494px document width; 4 loaded Mediavine slots in normal relative flow, no fixed adhesion roots, no browser console errors; footer disclosure visible."
+          "evidence": "At 1280x900, main width is 920px and document width equals the 1265px client area. Mediavine boxes remain in normal relative flow and no fixed overlay appeared. Footer and disclosure remain static."
         },
         "scopeAndExclusions": {
           "status": "PASS",
-          "evidence": "Scoped contextual link only; no promise of refunds or legal result; route-specific affiliate disclosure remains, blanket neutrality claim absent."
+          "evidence": "The approved contextual link and date update preserve the guide's subject and add no individual cancellation, legal-coverage, or refund promise. Affiliate disclosure remains visible without blanket neutrality wording."
         }
       }
     },
     {
       "path": "/guides/is-robinhood-gold-worth-it/",
-      "fingerprint": "e3d8ab436d3ffd978f259cea0aef275057d64e451b85eb36355aa664ce88a7c9",
+      "fingerprint": "83a57d474c8810e78042ab5c6da0a41b569b4b49cd52393f240278359cc081e6",
       "verdict": "PASS",
       "checks": {
         "wholePageCoherence": {
           "status": "PASS",
-          "evidence": "Full rendered Robinhood Gold guide read, including the changed “Robinhood Gold Billing and Cancellation” section, all other sections, tables and FAQs. The planner link appears after Gold-specific cancel route and is described as a way to map a different subscription’s route and keep proof."
+          "evidence": "Read the complete Robinhood Gold guide capture, including the updated 'Robinhood Gold Billing and Cancellation' section, tables, remaining sections, and FAQs. The planner link follows Gold-specific billing/cancellation instructions and is expressly for a different subscription route."
         },
         "sourceSupport": {
           "status": "PASS",
-          "evidence": "Current hydrated capture was checked after the citation-preservation fix. The inline billing-guide anchor resolves directly to https://robinhood.com/us/en/support/articles/paying-for-robinhood-gold; the downgrading-policy anchor resolves directly to https://robinhood.com/support/articles/360026472551/downgrading-from-gold. All nine Gold source-list links also resolve to official Robinhood URLs. Dated cash APY and margin-rate statements remain linked to the official as-of materials; no new numeric claim was added."
+          "evidence": "The current rendered billing-guide citation resolves to https://robinhood.com/us/en/support/articles/paying-for-robinhood-gold and the downgrading-policy citation resolves to https://robinhood.com/support/articles/360026472551/downgrading-from-gold; all nine Gold source-list links are official Robinhood URLs. The planner's 22-source evidence packet is current and the ADT correction applies only to that planner."
         },
         "testingAndAttribution": {
           "status": "PASS",
-          "evidence": "No new TESTED or firsthand service-test claim; source links and visible byline remain distinct from affiliate links; “Reviewed against primary sources” is a sourcing statement, not an attorney or user-test claim."
+          "evidence": "The page makes no new firsthand Robinhood-service test claim and no TESTED endorsement. Visible author and financial-advice/affiliate disclosures remain present; the link to the planner makes no guarantee."
         },
         "datesAndSchema": {
           "status": "PASS",
-          "evidence": "Visible Updated October 29, 2026; Article datePublished=2026-09-30 and dateModified=2026-10-29; FAQPage schema, Article identity and self-canonical agree."
+          "evidence": "Visible Updated October 29, 2026 matches Article dateModified 2026-10-29; datePublished remains 2026-09-30. Article Person author, FAQPage, and self-canonical are present."
         },
         "linksAndIndexability": {
           "status": "PASS",
-          "evidence": "Current captured route is HTTP 200, self-canonical/indexable and in sitemap. The contextual planner link targets /checklists/cancel-subscription-planner/. Both changed inline source anchors in the exact current snapshot resolve to official Robinhood billing and downgrade URLs, and all nine source-list links remain official Robinhood citations."
+          "evidence": "HTTP 200, self-canonical and indexable with no capture failures. The contextual planner anchor resolves to /checklists/cancel-subscription-planner/. The two updated inline source anchors and all nine source-list citations remain linked to official Robinhood pages."
         },
         "renderedLayout": {
           "status": "PASS",
-          "evidence": "Chrome desktop 1509px/1494px document width; 7 loaded Mediavine slots at relative positions, no fixed adhesion roots, no browser console errors; table and FAQ sections remain readable in DOM; footer disclosure visible. Current exact hydrated route fingerprint: e3d8ab436d3ffd978f259cea0aef275057d64e451b85eb36355aa664ce88a7c9; the captured source anchors and source list are present."
+          "evidence": "At 1280x900, main width is 920px and document width equals the 1265px client area. Six Mediavine content boxes remain in relative in-flow positions; no fixed overlay appeared. Footer and affiliate disclosure are static after the page content."
         },
         "scopeAndExclusions": {
           "status": "PASS",
-          "evidence": "Finance disclosure remains “not financial advice”; referral/affiliate disclosure is present without the prohibited blanket rankings/editorial coverage assurance. Planner cross-link makes no outcome promise."
+          "evidence": "The inspected cancellation cross-link and restored official source anchors are within the approved page-scope changes. The page retains financial and affiliate disclosures and contains no blanket ranking/editorial-coverage assurance."
         }
       }
     }

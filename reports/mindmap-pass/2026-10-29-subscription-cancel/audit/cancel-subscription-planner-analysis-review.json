@@ -1,33 +1,33 @@
 {
   "reviewer": "chart_reviewer",
   "verdict": "PASS",
-  "packetSha256": "5f94df920cef69f907e682ce901eb8cd60a1f7e829b1e60df6eec95412cebe09",
+  "packetSha256": "224db160269ff52ff70e2d4a0efaf4489e811b816d12efe650b0f91eb159c365",
   "usefulness": {
     "status": "PASS",
-    "evidence": "The planner resolves the approved decision sequence—identify actual biller/signup path, take a dated cancellation step, preserve proof and escalate continued charges—while provider routes and selected legal examples remain separate. It adds usable branching rather than claiming that a law or provider guarantees success."
+    "evidence": "The approved question is answered with a biller-first route: identify the company and signup path, send a dated request, keep proof, and escalate continued charges with a matching provider or regulator. The live deterministic tool adds useful provider/jurisdiction branches and an editable script; it does not estimate success or promise a refund."
   },
   "sourceAndAssumptions": {
     "status": "PASS",
-    "evidence": "Independently reviewed the packet’s primary-sources.json claims and exact rendered links: Eighth Circuit vacatur is procedural; ROSCA §8403 is limited to internet negative-option transactions; FTC’s current cited item is a March 2026 ANPRM, not a universal binding click-to-cancel rule; official NYC adoption is effective Oct. 1, 2026 and exempts NYS-licensed alarm operators. Packet source and case file hashes match; unsupported social-volume claims are explicitly excluded."
+    "evidence": "Rechecked all 22 sourceArtifacts against research/primary-sources.json: all IDs/URLs match and all evidence refs bind to SHA-256 6221a9db0298912993bec9578af8d33fe912c0642123f3f9920b2557ce58bb23; all 22 URLs are present in the rendered article. The official Eighth Circuit opinion supports procedural vacatur only; ROSCA §8403 remains limited to covered internet negative-option transactions; the FTC March 2026 item is an ANPRM; NYC rule §5-110.3(c) and NY GBL §527-a contain alarm-operator exceptions. The corrected ADT citation is its legacy Blue by ADT FAQ. Provider directions are linked to official help pages. The 5,270-post and 1.8× claims have no retrievable source and were excluded."
   },
   "conditionsAndCounterexample": {
     "status": "PASS",
-    "evidence": "Packet states statutory scope depends on service, offer/renewal date and enrollment method, includes NY/NYC alarm exemption, notes partner/provider routing and that a payment dispute does not itself cancel service; counterexample explains a reader may fall outside the cited statute and may still owe a final bill or return equipment."
+    "evidence": "The article and tool bound laws by service, offer/renewal date, enrollment path, jurisdiction and contract terms; they explicitly limit NY/NYC alarm coverage and selected examples, not a 50-state survey. A reader can fall outside a cited statute, an ADT monitoring account may fit an alarm-operator exemption, and cancellation may still leave a final bill or equipment-return duty. Provider/regulator reports do not guarantee a private resolution or refund."
   },
   "renderedConsistency": {
     "status": "PASS",
-    "evidence": "Current rendered planner answer, tool branches, Scripts, five FAQ entries, linked Sources and legal disclaimer align with the packet’s conditional source-synthesis finding. TESTED format is off and manual UI observations are not described as consumer outcomes. The current five-route snapshot is bound to this reviewer’s same-reviewer rendered audit; the Robinhood billing and downgrading inline anchors and all nine Gold source-list links resolve to official Robinhood URLs."
+    "evidence": "I read the exact current five-route snapshot and hydrated DOM files; their HTML hashes match route-by-route. The planner page contains the direct answer, live tool, corrected legacy ADT link, current legal citations, five FAQs, all Sources, and then the not-legal-advice disclaimer. The title/H1 differ but are both accurate; byline and schema identify Jonathan Velez without a false attorney or consumer-test claim. The exact review is bound to snapshot f6998783aa6c529ae87507cf45603483a0895f04b03317036f17c36c3f0e8547. Mobile observation: a Mediavine reporter briefly extended raw document width by 1px; the editorial main had no overflow and no overlay."
   },
   "localExclusions": {
     "status": "PASS",
-    "evidence": "The page is a financial/legal decision aid and is excluded from TESTED presentation under the local testing contract; no legal professional credential is invented; selected examples are not presented as a 50-state survey; no user-provided unsourced post metrics are published; no guaranteed cancellation/refund claim."
+    "evidence": "TESTED remains off; deterministic UI checks are not represented as user research, provider trials or measured cancellation outcomes. Evidence records reject all unrelated case candidates and no local experience is invented. The page identifies itself as general information, not legal advice; it avoids nationwide completeness and individual-result guarantees, excludes the unsourced social-volume claims, and keeps a straightforward affiliate disclosure without a blanket ranking-neutrality claim."
   },
   "renderedSnapshot": {
-    "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/rendered-preview.json",
-    "sha256": "f4000551adc3639e7355e0824074a1dbe8c26905e88fb970daade05fff72b815"
+    "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/rendered-preview-corrected.json",
+    "sha256": "458c1b11206234f7d942dede6e888a6e5e8eb5ccd6652f1bdbe42c7247ec7a4d"
   },
   "renderedReview": {
     "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/audit/chart-review-phase4.json",
-    "sha256": "ba42c5a171e5855e2b0fb52adcd8d8342d516ff3abf032c6029c71b51f1923d8"
+    "sha256": "36d97de52071c732efc2deb2beb380cefc3f5b63c6809a8389552a460882756c"
   }
 }

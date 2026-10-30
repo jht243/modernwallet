@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-30",
+  "route": "/checklists/cancel-subscription-planner/",
+  "artifact": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/primary-sources.json",
+  "previousSha256": "46dd4a8aca74efa3d735632ef94cb8cb724a26a53c405b4198f17dcd02bc77fb",
+  "currentSha256": "6221a9db0298912993bec9578af8d33fe912c0642123f3f9920b2557ce58bb23",
+  "sourceId": "adt",
+  "previousUrl": "https://help.adt.com/article/blu-account-creation-faqs",
+  "currentUrl": "https://help.adt.com/article/blue-account-creation",
+  "reason": "Independent Phase 4 review found that the previous URL documents the newer ADT Blu/ADT+ product, while this claim concerns legacy Blue by ADT. The official legacy FAQ confirms that deleting its app account does not cancel the monitoring plan.",
+  "scopeImpact": "Citation correction only; the approved reader question, user-facing claim, page scope, author, and publication plan are unchanged."
+}

@@ -23,7 +23,7 @@ const URLS = {
   netflix: "https://help.netflix.com/en/node/407",
   attWireless: "https://www.att.com/support/article/wireless/KM1008472/",
   attInternet: "https://www.att.com/support/article/my-account/KM1009500/",
-  adt: "https://help.adt.com/article/blu-account-creation-faqs",
+  adt: "https://help.adt.com/article/blue-account-creation",
   crunch: "https://www.crunch.com/faq",
   california: "https://www.oag.ca.gov/news/press-releases/attorney-general-bonta-issues-consumer-alert-california%E2%80%99s-automatic-renewal-law",
   colorado: "https://www.leg.colorado.gov/bills/sb25-145",
@@ -107,7 +107,9 @@ function jurisdictionNote(place: Place, service: Service): { text: string; links
 
 function nextAction(outcome: Outcome, service: Service, biller: Biller): string {
   const route = providerRoute(service, biller);
-  const first = route ? `Open the route above${biller === "unknown" ? " when that company is the one billing you" : ""}.` : "A recent statement, receipt or account page usually identifies the company that bills you; use that company's cancellation route.";
+  const first = service === "gym" && biller === "unknown"
+    ? "Check your club's membership terms or account page for its cancellation route. The Crunch FAQ above is one club example."
+    : route ? `Open the route above${biller === "unknown" ? " when that company is the one billing you" : ""}.` : "A recent statement, receipt or account page usually identifies the company that bills you; use that company's cancellation route.";
   if (outcome === "blocked") return `Save a screenshot or note of the barrier. ${first} Then send the written request below and ask for the effective date and confirmation.`;
   if (outcome === "waiting") return `Follow up with the biller in writing. ${first} Ask whether cancellation is recorded, the effective date, any final balance and whether equipment must be returned.`;
   if (outcome === "charged") return `Match the charge to the company on your statement and send that biller your dated cancellation request and proof. ${first} If the biller does not address it, use only an escalation link that fits the service and location.`;

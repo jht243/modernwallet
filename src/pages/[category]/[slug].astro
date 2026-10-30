@@ -200,8 +200,17 @@ const jsonLdApp = {
       </div>
     </section>
 
-    {(isLegal || Boolean(entry.disclaimerText)) && <LegalDisclaimer scope={disclaimerScope} text={entry.disclaimerText} />}
-    <Sources sources={entry.sources} />
+    {isSubscriptionCancellationPlanner ? (
+      <>
+        <Sources sources={entry.sources} />
+        <LegalDisclaimer scope={disclaimerScope} text={entry.disclaimerText} />
+      </>
+    ) : (
+      <>
+        {(isLegal || Boolean(entry.disclaimerText)) && <LegalDisclaimer scope={disclaimerScope} text={entry.disclaimerText} />}
+        <Sources sources={entry.sources} />
+      </>
+    )}
 
     {stateLinks.length > 0 && (
       <section class="section">
