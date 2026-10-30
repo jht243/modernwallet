@@ -1,0 +1,51 @@
+{
+ "keyword": "cancel gym membership",
+ "verdict": "winnable",
+ "forum_dominated": true,
+ "ai_overview_present": true,
+ "ai_overview_cited_domains": [],
+ "featured_snippet": null,
+ "top10_domains": [
+  "www.actionnewsjax.com",
+  "subtracker.io",
+  "www.reddit.com",
+  "www.facebook.com",
+  "www.youtube.com",
+  "www.kiro7.com",
+  "lettrio.app",
+  "www.facebook.com",
+  "www.facebook.com",
+  "www.reliabills.com"
+ ],
+ "major_domains": [],
+ "forum_domains": [
+  "www.reddit.com",
+  "www.facebook.com",
+  "www.youtube.com",
+  "www.facebook.com",
+  "www.facebook.com"
+ ],
+ "serp_feature_mix": {
+  "ai_overview": 1,
+  "organic": 18,
+  "people_also_ask": 1,
+  "related_searches": 2,
+  "video": 1
+ },
+ "paa": [
+  "Can you cancel a Planet Fitness gym membership online?",
+  "Is it illegal for gyms to make it hard to cancel?",
+  "How do I cancel my fitness account?",
+  "Can you cancel your YouFit membership online?",
+  "How hard is it to cancel a gym membership?",
+  "Is YouFit hard to cancel?"
+ ],
+ "related_searches": [
+  "Cancel gym membership online",
+  "Cancel gym membership reddit",
+  "Cancel gym membership email"
+ ],
+ "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+ "evidence": "forum/community results own the SERP (www.reddit.com, www.facebook.com, www.youtube.com); AI Overview present",
+ "se_results_count": 46
+}

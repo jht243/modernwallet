@@ -1,0 +1,260 @@
+{
+  "date": "2026-10-29",
+  "database": "US",
+  "method": "Google Autocomplete simple-mode family seeds; one observed candidate per family checked with the pinned DataForSEO volume provider. Autocomplete fallback bands are expressly unmeasured estimates.",
+  "canonicalFamilyCount": 12,
+  "additionalAliasSeeds": [
+    "streaming subscription alternatives (0 suggestions)",
+    "streaming subscription pricing (10 suggestions; price-comparison family is separately in lens3-volumes.json)"
+  ],
+  "families": [
+    {
+      "entity": "AT&T",
+      "family": "comparison",
+      "autocompleteSeed": "AT&T vs",
+      "autocompleteSuggestions": 10,
+      "validatedPhrase": "at&t vs verizon",
+      "demand": {
+        "volume": 2900,
+        "volume_low": 2900,
+        "volume_high": 2900,
+        "source": "dataforseo",
+        "confidence": "high"
+      },
+      "evidence": [
+        "lens3-autocomplete.json",
+        "lens3-volumes.json"
+      ],
+      "autocompleteEvidence": "lens3-autocomplete.json",
+      "demandEvidence": "lens3-volumes.json"
+    },
+    {
+      "entity": "AT&T",
+      "family": "alternatives",
+      "autocompleteSeed": "AT&T alternatives",
+      "autocompleteSuggestions": 7,
+      "validatedPhrase": "at&t wireless alternatives",
+      "demand": {
+        "volume": 10,
+        "volume_low": 10,
+        "volume_high": 10,
+        "source": "dataforseo",
+        "confidence": "high"
+      },
+      "evidence": [
+        "lens3-autocomplete.json",
+        "lens3-volume-validation-additions.json"
+      ],
+      "autocompleteEvidence": "lens3-autocomplete.json",
+      "demandEvidence": "lens3-volume-validation-additions.json"
+    },
+    {
+      "entity": "AT&T",
+      "family": "pricing",
+      "autocompleteSeed": "AT&T pricing",
+      "autocompleteSuggestions": 9,
+      "validatedPhrase": "att pricing plans",
+      "demand": {
+        "volume": 2400,
+        "volume_low": 2400,
+        "volume_high": 2400,
+        "source": "dataforseo",
+        "confidence": "high"
+      },
+      "evidence": [
+        "lens3-autocomplete.json",
+        "lens3-volume-validation-additions.json"
+      ],
+      "autocompleteEvidence": "lens3-autocomplete.json",
+      "demandEvidence": "lens3-volume-validation-additions.json"
+    },
+    {
+      "entity": "ADT",
+      "family": "comparison",
+      "autocompleteSeed": "ADT vs",
+      "autocompleteSuggestions": 9,
+      "validatedPhrase": "adt vs simplisafe",
+      "demand": {
+        "volume": 1900,
+        "volume_low": 1900,
+        "volume_high": 1900,
+        "source": "dataforseo",
+        "confidence": "high"
+      },
+      "evidence": [
+        "lens3-autocomplete.json",
+        "lens3-volumes.json"
+      ],
+      "autocompleteEvidence": "lens3-autocomplete.json",
+      "demandEvidence": "lens3-volumes.json"
+    },
+    {
+      "entity": "ADT",
+      "family": "alternatives",
+      "autocompleteSeed": "ADT alternatives",
+      "autocompleteSuggestions": 8,
+      "validatedPhrase": "best adt alternatives",
+      "demand": {
+        "volume": 20,
+        "volume_low": 20,
+        "volume_high": 200,
+        "source": "estimate",
+        "confidence": "low",
+        "evidence": "Google Autocomplete — 6 live autocomplete completions (est. 20-200/mo, NOT measured)"
+      },
+      "evidence": [
+        "lens3-autocomplete.json",
+        "lens3-volume-validation-additions.json"
+      ],
+      "autocompleteEvidence": "lens3-autocomplete.json",
+      "demandEvidence": "lens3-volume-validation-additions.json"
+    },
+    {
+      "entity": "ADT",
+      "family": "pricing",
+      "autocompleteSeed": "ADT pricing",
+      "autocompleteSuggestions": 9,
+      "validatedPhrase": "adt pricing per month",
+      "demand": {
+        "volume": 2900,
+        "volume_low": 2900,
+        "volume_high": 2900,
+        "source": "dataforseo",
+        "confidence": "high"
+      },
+      "evidence": [
+        "lens3-autocomplete.json",
+        "lens3-volume-validation-additions.json"
+      ],
+      "autocompleteEvidence": "lens3-autocomplete.json",
+      "demandEvidence": "lens3-volume-validation-additions.json"
+    },
+    {
+      "entity": "Gym memberships",
+      "family": "comparison",
+      "autocompleteSeed": "gym membership vs",
+      "autocompleteSuggestions": 10,
+      "validatedPhrase": "gym membership vs home gym",
+      "demand": {
+        "volume": 260,
+        "volume_low": 260,
+        "volume_high": 260,
+        "source": "dataforseo",
+        "confidence": "high"
+      },
+      "evidence": [
+        "lens3-autocomplete-additions.json",
+        "lens3-volume-validation-additions.json"
+      ],
+      "autocompleteEvidence": "lens3-autocomplete-additions.json",
+      "demandEvidence": "lens3-volume-validation-additions.json"
+    },
+    {
+      "entity": "Gym memberships",
+      "family": "alternatives",
+      "autocompleteSeed": "gym membership alternatives",
+      "autocompleteSuggestions": 5,
+      "validatedPhrase": "gym membership options",
+      "demand": {
+        "volume": 3600,
+        "volume_low": 3600,
+        "volume_high": 3600,
+        "source": "dataforseo",
+        "confidence": "high"
+      },
+      "evidence": [
+        "lens3-autocomplete.json",
+        "lens3-volume-validation-additions.json"
+      ],
+      "autocompleteEvidence": "lens3-autocomplete.json",
+      "demandEvidence": "lens3-volume-validation-additions.json"
+    },
+    {
+      "entity": "Gym memberships",
+      "family": "pricing",
+      "autocompleteSeed": "gym membership pricing",
+      "autocompleteSuggestions": 9,
+      "validatedPhrase": "gym membership price comparison",
+      "demand": {
+        "volume": 210,
+        "volume_low": 210,
+        "volume_high": 210,
+        "source": "dataforseo",
+        "confidence": "high"
+      },
+      "evidence": [
+        "lens3-autocomplete.json",
+        "lens3-volumes.json"
+      ],
+      "autocompleteEvidence": "lens3-autocomplete.json",
+      "demandEvidence": "lens3-volumes.json"
+    },
+    {
+      "entity": "Streaming services",
+      "family": "comparison",
+      "autocompleteSeed": "streaming services vs",
+      "autocompleteSuggestions": 10,
+      "validatedPhrase": "streaming services vs cable",
+      "demand": {
+        "volume": 590,
+        "volume_low": 590,
+        "volume_high": 590,
+        "source": "dataforseo",
+        "confidence": "high"
+      },
+      "evidence": [
+        "lens3-autocomplete-additions.json",
+        "lens3-volume-validation-additions.json"
+      ],
+      "autocompleteEvidence": "lens3-autocomplete-additions.json",
+      "demandEvidence": "lens3-volume-validation-additions.json"
+    },
+    {
+      "entity": "Streaming services",
+      "family": "alternatives",
+      "autocompleteSeed": "streaming services alternatives",
+      "autocompleteSuggestions": 9,
+      "validatedPhrase": "best streaming services alternatives to netflix",
+      "demand": {
+        "volume": 75,
+        "volume_low": 75,
+        "volume_high": 750,
+        "source": "estimate",
+        "confidence": "low",
+        "evidence": "Google Autocomplete — exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)"
+      },
+      "evidence": [
+        "lens3-autocomplete-additions.json",
+        "lens3-volume-validation-additions.json"
+      ],
+      "alsoTriedSeed": {
+        "seed": "streaming subscription alternatives",
+        "suggestions": 0,
+        "file": "lens3-autocomplete.json"
+      },
+      "autocompleteEvidence": "lens3-autocomplete-additions.json",
+      "demandEvidence": "lens3-volume-validation-additions.json"
+    },
+    {
+      "entity": "Streaming services",
+      "family": "pricing",
+      "autocompleteSeed": "streaming services pricing",
+      "autocompleteSuggestions": 9,
+      "validatedPhrase": "streaming services pricing",
+      "demand": {
+        "volume": 1600,
+        "volume_low": 1600,
+        "volume_high": 1600,
+        "source": "dataforseo",
+        "confidence": "high"
+      },
+      "evidence": [
+        "lens3-autocomplete-streaming-pricing.json",
+        "lens3-volume-validation-streaming.json"
+      ],
+      "autocompleteEvidence": "lens3-autocomplete-streaming-pricing.json",
+      "demandEvidence": "lens3-volume-validation-streaming.json"
+    }
+  ],
+  "scopeDecision": "All comparison, provider-alternative and pricing families address choosing or evaluating a service, not the cancellation/refusal mechanism in this brief. They are documented exclusions from this action, not proposed content rows. Revisit separately if the user requests provider shopping content."
+}

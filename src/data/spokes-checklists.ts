@@ -1027,5 +1027,155 @@ export const CHECKLIST_SPOKES: SpokeEntry[] = [
       "final-walkthrough-checklist"
     ]
   },
-  // /House viewing checklist
+  // /House viewing checklist,
+  // Mindmap pass (2026-10-29): subscription cancellation rights and route planner.
+  {
+    "calculator": "checklists",
+    "slug": "cancel-subscription-planner",
+    "updated": "2026-10-29",
+    "title": "What to Do If You Can't Cancel a Subscription in 2026",
+    "metaDescription": "Find who bills you and your state or city rules, then get a cancellation script, a proof checklist and escalation links if charges continue.",
+    "targetKeyword": "what to do if you can't cancel a subscription",
+    "h1": "Can't Cancel a Subscription? Your 2026 Rights + Step-by-Step Scripts",
+    "introText": "If you can't cancel a subscription, identify the actual biller and how you signed up, then send a dated request through that company's verified cancellation route. Keep proof of each attempt, and take any charges that continue to the proper provider or regulator.\n\nTo build your plan, the planner below asks four questions: the service, who bills you or where you signed up, your state or city, and what happened when you tried to cancel. It returns a next action, plus an official provider path when your answers match a verified source. You also get the federal baseline, a note for California, Colorado, Maine, New York State or New York City (or a notice that no specific example matched), a script to copy and edit, proof reminders and escalation links. Your answers stay in your browser tab, and the planner does not collect your name, account, payment or contact details.",
+    "toolHeading": "Build Your Cancellation Plan",
+    "toolSubheading": "Choose the service, who bills you, your state or city, and what happened when you tried to cancel.",
+    "howItWorks": "The company that bills you controls the cancellation route, and that company can differ from the brand you watch or use. If Apple bills you, cancel through [Apple's subscription settings](https://support.apple.com/en-us/118428), which handle only Apple-billed subscriptions. If Google Play bills you, cancel in [Google Play](https://support.google.com/googleplay/answer/7018481), because deleting the app does not cancel the subscription. If Roku bills you, use [Roku's subscription page](https://support.roku.com/article/manage-or-cancel-subscriptions). Otherwise, use the provider's own route. [Netflix](https://help.netflix.com/en/node/407) separates direct Netflix billing from partner billing, and signing out or deleting the app does not cancel. AT&T publishes separate cancellation help for [wireless](https://www.att.com/support/article/wireless/KM1008472/) and [internet](https://www.att.com/support/article/my-account/KM1009500/) service, and account ownership and equipment-return steps vary. ADT's [Blue by ADT help page](https://help.adt.com/article/blu-account-creation-faqs) says deleting the app account does not cancel monitoring. [Crunch's FAQ](https://www.crunch.com/faq) says some clubs support online cancellation, while other members may need to contact or visit their home club. The [Federal Trade Commission (FTC) consumer advice](https://consumer.ftc.gov/articles/getting-and-out-free-trials-auto-renewals-and-negative-option-subscriptions) also tells you to record the terms, identify the actual biller and watch your charges.\n\nThe FTC's 2024 click-to-cancel amendments to its Negative Option Rule are not in effect, because a federal appeals court vacated them on procedural grounds. The [United States Court of Appeals for the Eighth Circuit](https://ecf.ca8.uscourts.gov/opndir/25/07/243137P.pdf) found the FTC had skipped a preliminary regulatory analysis that a statute requires. The court did not rule on the merits, and the federal framework was not abolished. The FTC's [February 2026 Federal Register notice](https://www.govinfo.gov/content/pkg/FR-2026-02-12/pdf/FR-2026-02-12.pdf) changed the rule text to match the ruling and restored the pre-2024 text. That notice is not a new click-to-cancel law. The FTC's [Negative Option Rule page](https://www.ftc.gov/legal-library/browse/rules/negative-option-rule) records a March 11, 2026 advance notice of proposed rulemaking (ANPRM) seeking comment on possible amendments, and an ANPRM is not binding law. The [Restore Online Shoppers' Confidence Act (ROSCA)](https://www.govinfo.gov/link/uscode/15/8403) still applies to covered internet transactions with a negative-option feature. For those transactions, the seller must disclose material terms before taking billing information, get your express informed consent and give you a simple way to stop recurring charges. ROSCA does not create a one-click or same-channel cancellation rule for every subscription. If the FTC adopts amendments after the ANPRM, the federal baseline in the planner would change.\n\nSome state and city laws add cancellation rules, and each one depends on coverage, dates and exceptions. The planner shows these as selected examples and does not survey every state. [California's Automatic Renewal Law amendments](https://www.oag.ca.gov/news/press-releases/attorney-general-bonta-issues-consumer-alert-california%E2%80%99s-automatic-renewal-law) took effect July 1, 2025, with consent and cancellation requirements for covered offers, including online cancellation where a covered enrollment was online. [Colorado Senate Bill (SB) 25-145](https://www.leg.colorado.gov/bills/sb25-145) sets channel-specific cancellation requirements for covered offers and renewals beginning February 16, 2026, based on how and when the contract was offered or renewed. Maine's [Title 10, section 1210-C](https://legislature.maine.gov/statutes/10/title10sec1210-C.html) covers listed automatic renewals for online media players, mobile apps, online software and health-club memberships, and covered sellers must accept cancellation by the same method and manner as signup. [New York General Business Law (GBL) § 527-a](https://www.nysenate.gov/legislation/laws/GBS/527-A) requires an easy cancellation mechanism through the same medium, plus other methods, for covered renewal offers, and it bars obstruction or unreasonable delay. GBL § 527-a exempts licensed security-system alarm operators and other specified businesses, so it may not help with an ADT monitoring contract where that exemption applies. [GBL § 624](https://www.nysenate.gov/legislation/laws/GBS/624) gives health-club members cancellation rights in specific circumstances, including a three-business-day right in covered contracts. GBL § 624 does not let you cancel every gym contract at any time. The [New York City (NYC) Click-to-Cancel rule](https://www.nyc.gov/content/dam/nycgov/nyc-main/pdf/2026/Click-to-Cancel-Rule.pdf) is effective October 1, 2026, and for covered offers it requires cancellation through the same medium you used to consent. The NYC rule also prohibits obstruction or unreasonable delay, and it exempts licensed alarm operators and other listed categories. The planner cannot decide whether one of these laws covers your contract, so read the coverage and exception language in the linked statute or rule.\n\n A written request can say: \"I am canceling my [service] on account [account number], effective [date]. Please confirm in writing the cancellation, the effective date, any final balance and any equipment I need to return.\" On a call, ask for those same four items and a confirmation number before you hang up. Save screenshots of the cancellation page, plus emails, chat transcripts and confirmation numbers. For each call, write down the date, the time and the representative's name. If AT&T or another provider asks you to return equipment, keep the shipping receipt with your cancellation record. The planner's copy button copies a generic script with placeholders, so fill in your own account details before you send it.\n\nIf charges continue after you ask to cancel, contact the company that bills you again and send your dated proof. [FTC ReportFraud](https://reportfraud.ftc.gov/) accepts reports of suspected deceptive or unfair business practices, but a report does not settle a private contract dispute or guarantee a refund. For communications-service problems within its scope, you can file with the [Federal Communications Commission (FCC)](https://consumercomplaints.fcc.gov/hc/en-us), and its jurisdiction varies. In New York City, the [Department of Consumer and Worker Protection (DCWP)](https://www.nyc.gov/main/click-to-cancel) offers a Click-to-Cancel summary and complaint route. Filing a DCWP complaint does not guarantee an individual resolution.\n\n Match each recurring charge on your card or bank statement to its biller, and file the cancellation confirmation once the charge is gone. For a wider review of recurring charges, read the section \"Subscription Creep: The Quiet Budget Killer\" in the [guide to budgeting for teens and college students](/guides/how-to-budget-for-teens-college-students/#subscription-creep-the-quiet-budget-killer). If the charge appears again, open the planner, choose charged after cancellation, and send your dated proof to the biller before you file with the matching regulator.",
+    "sectionHeadings": [
+      "Find the Company That Bills You",
+      "What the Federal Rule Change Means",
+      "State and NYC Protections: Selected Examples",
+      "Use These Scripts and Keep Proof",
+      "If Charges Continue After You Ask",
+      "After Cancellation: Check the Next Statement"
+    ],
+    "workedExample": "This is a hypothetical path through the planner, used to show how the route map works; it describes no real account or measured result. Suppose a reader in a state the planner does not list pays for a streaming service through Google Play and was charged again after asking to cancel. That reader would choose Netflix or other streaming, Google Play as the biller, Other or unknown for location, and Charged after cancellation. The plan would point to Google Play's cancellation route and show the ROSCA baseline. It would also say that no specific state example matched, then give a script, proof reminders and escalation links for continued charges.\n\nA second hypothetical reader in New York City has ADT monitoring and was blocked when trying to cancel. Before relying on the NYC rule, that reader should note that both the NYC rule and GBL § 527-a exempt licensed alarm operators. The same reader should also know that ADT's help page says deleting the Blue by ADT app account does not cancel monitoring.",
+    "workedExampleHeading": "Two Hypothetical Paths Through the Planner",
+    "commonMistakes": [
+      "Deleting the app and assuming the subscription ended. Netflix and Google Play both say deleting the app does not cancel.",
+      "Deleting a Blue by ADT app account and expecting monitoring to stop.",
+      "Asking the streaming brand to cancel when Apple, Google Play, Roku or a partner is the actual biller.",
+      "Canceling by phone without writing down the date, the representative's name and a confirmation number.",
+      "Treating the FTC's 2024 click-to-cancel amendments as current law after the Eighth Circuit vacated them.",
+      "Relying on New York's renewal law or the NYC rule for alarm monitoring when the licensed alarm operator exemption applies."
+    ],
+    "commonMistakesHeading": "Common Cancellation Mistakes",
+    "faqs": [
+      {
+        "question": "Can I cancel a subscription straight away?",
+        "answer": "No law on this page gives an instant cancellation right for every subscription. ROSCA requires a simple way to stop recurring charges for covered internet transactions, and some state and city laws add rules for covered offers. New York's health-club law includes a three-business-day right only in covered contracts. Ask the biller in writing for the effective date and any final balance."
+      },
+      {
+        "question": "How do I cancel streaming channels?",
+        "answer": "Cancel streaming channels through the company that bills you. Use [Roku's subscription page](https://support.roku.com/article/manage-or-cancel-subscriptions) if Roku bills you, Apple or Google Play if either one bills you, and the streaming service's own route otherwise. [Netflix](https://help.netflix.com/en/node/407) separates direct billing from partner billing and says signing out or deleting the app does not cancel."
+      },
+      {
+        "question": "How do I force cancel a subscription?",
+        "answer": "No single step forces a company to cancel. Send a dated written request through the biller's verified route, ask for written confirmation and keep proof. If charges continue, report them to [FTC ReportFraud](https://reportfraud.ftc.gov/), to the [FCC](https://consumercomplaints.fcc.gov/hc/en-us) for communications services within its scope, or to [NYC DCWP](https://www.nyc.gov/main/click-to-cancel) in New York City. A report or complaint does not guarantee a refund or an individual resolution."
+      },
+      {
+        "question": "How do I find all my streaming subscriptions?",
+        "answer": "Streaming subscriptions may be billed by Apple, Google Play, Roku, another partner or the service itself. [Apple subscription instructions](https://support.apple.com/en-us/118428), [Google Play subscription instructions](https://support.google.com/googleplay/answer/7018481) and [Roku subscription instructions](https://support.roku.com/article/manage-or-cancel-subscriptions) explain those billing routes. A card or bank statement can identify services that bill you directly. The [FTC's consumer advice](https://consumer.ftc.gov/articles/getting-and-out-free-trials-auto-renewals-and-negative-option-subscriptions) also explains how to identify the biller."
+      },
+      {
+        "question": "Why is it so hard to cancel subscriptions?",
+        "answer": "Signup, billing and service can sit with different companies, and each company publishes its own cancellation steps. Netflix can be billed directly or through a partner, AT&T splits wireless and internet cancellation, and Crunch members may need to contact or visit their home club. The FTC's 2024 click-to-cancel amendments were vacated, so the same-medium rules on this page come from selected state and city laws, each with its own coverage and exceptions."
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Court of Appeals, Eighth Circuit, Custom Communications, Inc. v. FTC, No. 24-3137 et al.",
+        "url": "https://ecf.ca8.uscourts.gov/opndir/25/07/243137P.pdf"
+      },
+      {
+        "label": "Federal Trade Commission, Negative Option Rule",
+        "url": "https://www.ftc.gov/legal-library/browse/rules/negative-option-rule"
+      },
+      {
+        "label": "Federal Register, FTC final rule, February 12, 2026",
+        "url": "https://www.govinfo.gov/content/pkg/FR-2026-02-12/pdf/FR-2026-02-12.pdf"
+      },
+      {
+        "label": "15 U.S.C. § 8403, official U.S. Code through GovInfo",
+        "url": "https://www.govinfo.gov/link/uscode/15/8403"
+      },
+      {
+        "label": "FTC Consumer Advice",
+        "url": "https://consumer.ftc.gov/articles/getting-and-out-free-trials-auto-renewals-and-negative-option-subscriptions"
+      },
+      {
+        "label": "California Department of Justice, Attorney General consumer alert",
+        "url": "https://www.oag.ca.gov/news/press-releases/attorney-general-bonta-issues-consumer-alert-california%E2%80%99s-automatic-renewal-law"
+      },
+      {
+        "label": "Colorado General Assembly, SB25-145",
+        "url": "https://www.leg.colorado.gov/bills/sb25-145"
+      },
+      {
+        "label": "Maine Revised Statutes, Title 10, § 1210-C",
+        "url": "https://legislature.maine.gov/statutes/10/title10sec1210-C.html"
+      },
+      {
+        "label": "New York General Business Law § 527-a",
+        "url": "https://www.nysenate.gov/legislation/laws/GBS/527-A"
+      },
+      {
+        "label": "New York General Business Law § 624",
+        "url": "https://www.nysenate.gov/legislation/laws/GBS/624"
+      },
+      {
+        "label": "NYC Department of Consumer and Worker Protection, final rule",
+        "url": "https://www.nyc.gov/content/dam/nycgov/nyc-main/pdf/2026/Click-to-Cancel-Rule.pdf"
+      },
+      {
+        "label": "New York City official Click to Cancel page",
+        "url": "https://www.nyc.gov/main/click-to-cancel"
+      },
+      {
+        "label": "AT&T official wireless support",
+        "url": "https://www.att.com/support/article/wireless/KM1008472/"
+      },
+      {
+        "label": "AT&T official internet support",
+        "url": "https://www.att.com/support/article/my-account/KM1009500/"
+      },
+      {
+        "label": "ADT official Help Center",
+        "url": "https://help.adt.com/article/blu-account-creation-faqs"
+      },
+      {
+        "label": "Crunch official FAQ",
+        "url": "https://www.crunch.com/faq"
+      },
+      {
+        "label": "Apple Support",
+        "url": "https://support.apple.com/en-us/118428"
+      },
+      {
+        "label": "Google Play Help",
+        "url": "https://support.google.com/googleplay/answer/7018481"
+      },
+      {
+        "label": "Roku Support",
+        "url": "https://support.roku.com/article/manage-or-cancel-subscriptions"
+      },
+      {
+        "label": "Netflix Help Center",
+        "url": "https://help.netflix.com/en/node/407"
+      },
+      {
+        "label": "Federal Communications Commission Consumer Complaint Center",
+        "url": "https://consumercomplaints.fcc.gov/hc/en-us"
+      },
+      {
+        "label": "Federal Trade Commission ReportFraud",
+        "url": "https://reportfraud.ftc.gov/"
+      }
+    ],
+    "preset": {},
+    "relatedSlugs": [],
+    "suppressRelatedFallback": true,
+    "islandId": "subscription-cancellation-planner",
+    "disclaimerText": "This page provides general information, not legal advice. Coverage depends on the service, biller, signup method, location, offer date and contract."
+  }
 ];

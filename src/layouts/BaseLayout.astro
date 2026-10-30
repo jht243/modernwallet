@@ -12,8 +12,10 @@ export interface Props {
   robots?: string;
   /** true drops the Mediavine ad script (paid sponsor pages). */
   noAds?: boolean;
+  /** Route-specific disclosure when the sitewide wording is unsuitable for the page. */
+  affiliateDisclosureText?: string;
 }
-const { title, description, canonical, noindex, robots, noAds } = Astro.props;
+const { title, description, canonical, noindex, robots, noAds, affiliateDisclosureText } = Astro.props;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
 
 // Sitewide Organization JSON-LD (brand entity for SEO).
@@ -146,6 +148,6 @@ const websiteJsonLd = {
   <body>
     <SiteHeader />
     <slot />
-    <SiteFooter />
+    <SiteFooter disclosureText={affiliateDisclosureText} />
   </body>
 </html>

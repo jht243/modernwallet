@@ -1,0 +1,33 @@
+{
+  "reviewer": "chart_reviewer",
+  "verdict": "PASS",
+  "packetSha256": "5f94df920cef69f907e682ce901eb8cd60a1f7e829b1e60df6eec95412cebe09",
+  "usefulness": {
+    "status": "PASS",
+    "evidence": "The planner resolves the approved decision sequence—identify actual biller/signup path, take a dated cancellation step, preserve proof and escalate continued charges—while provider routes and selected legal examples remain separate. It adds usable branching rather than claiming that a law or provider guarantees success."
+  },
+  "sourceAndAssumptions": {
+    "status": "PASS",
+    "evidence": "Independently reviewed the packet’s primary-sources.json claims and exact rendered links: Eighth Circuit vacatur is procedural; ROSCA §8403 is limited to internet negative-option transactions; FTC’s current cited item is a March 2026 ANPRM, not a universal binding click-to-cancel rule; official NYC adoption is effective Oct. 1, 2026 and exempts NYS-licensed alarm operators. Packet source and case file hashes match; unsupported social-volume claims are explicitly excluded."
+  },
+  "conditionsAndCounterexample": {
+    "status": "PASS",
+    "evidence": "Packet states statutory scope depends on service, offer/renewal date and enrollment method, includes NY/NYC alarm exemption, notes partner/provider routing and that a payment dispute does not itself cancel service; counterexample explains a reader may fall outside the cited statute and may still owe a final bill or return equipment."
+  },
+  "renderedConsistency": {
+    "status": "PASS",
+    "evidence": "Current rendered planner answer, tool branches, Scripts, five FAQ entries, linked Sources and legal disclaimer align with the packet’s conditional source-synthesis finding. TESTED format is off and manual UI observations are not described as consumer outcomes. The current five-route snapshot is bound to this reviewer’s same-reviewer rendered audit; the Robinhood billing and downgrading inline anchors and all nine Gold source-list links resolve to official Robinhood URLs."
+  },
+  "localExclusions": {
+    "status": "PASS",
+    "evidence": "The page is a financial/legal decision aid and is excluded from TESTED presentation under the local testing contract; no legal professional credential is invented; selected examples are not presented as a 50-state survey; no user-provided unsourced post metrics are published; no guaranteed cancellation/refund claim."
+  },
+  "renderedSnapshot": {
+    "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/rendered-preview.json",
+    "sha256": "f4000551adc3639e7355e0824074a1dbe8c26905e88fb970daade05fff72b815"
+  },
+  "renderedReview": {
+    "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/audit/chart-review-phase4.json",
+    "sha256": "ba42c5a171e5855e2b0fb52adcd8d8342d516ff3abf032c6029c71b51f1923d8"
+  }
+}

@@ -1,0 +1,25 @@
+{
+ "rows": [
+  {
+   "keyword": "what to do if you can't cancel a subscription",
+   "volume": 30,
+   "volume_low": 30,
+   "volume_high": 30,
+   "kd": 0,
+   "cpc": 9.63,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using dataforseo (quality order dataforseo)",
+  "dataforseo returned volume for 1/1 phrases",
+  "kd: using dataforseo (quality order dataforseo)",
+  "Autocomplete: 1/1 rows corroborated live"
+ ]
+}

@@ -67,6 +67,9 @@ for (const f of files) {
   const next = html.replace(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi, (tag, attrs, inner) => {
     const href = /\shref="(https?:\/\/[^"]+)"/i.exec(attrs)?.[1];
     if (!href || !pitchedHost(href)) return tag;
+    // Official references are editorial citations, not commercial links. Keep explicitly marked
+    // source anchors available for readers and the audit while still unlinking promotional links.
+    if (/\sdata-editorial-source="true"/i.test(attrs)) return tag;
     if (/\srel="[^"]*\bsponsored\b/i.test(attrs)) return tag;
     if (CHECK) { left.push(`${relative(OUT, f)}: ${href}`); return tag; }
     links++;

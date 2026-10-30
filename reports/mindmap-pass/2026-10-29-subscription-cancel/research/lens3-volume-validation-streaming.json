@@ -1,0 +1,25 @@
+{
+ "rows": [
+  {
+   "keyword": "streaming services pricing",
+   "volume": 1600,
+   "volume_low": 1600,
+   "volume_high": 1600,
+   "kd": 36,
+   "cpc": 3.22,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using dataforseo (quality order dataforseo)",
+  "dataforseo returned volume for 1/1 phrases",
+  "kd: using dataforseo (quality order dataforseo)",
+  "Autocomplete: 1/1 rows corroborated live"
+ ]
+}

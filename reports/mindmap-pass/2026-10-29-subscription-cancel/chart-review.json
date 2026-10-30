@@ -1,0 +1,19 @@
+{
+  "verdict": "PASS",
+  "reviewer": "/root/chart_reviewer",
+  "manifestSha256": "f566a2e33b75acb21c19ba29f76b6485e0ca777e42d8741b5193ca8a5017dfe7",
+  "readinessSha256": "abbb6bcf08b607716e239e86454060960c6ad1ff0af18d573df011c5e36031f9",
+  "evidence": [
+    "Reviewer-owned preflight-chart-review bundle: all 38 current instruction parts read; workflow-preflight check returned delivery-complete-sources-current; same-run source freshness check returned current.",
+    "approval-manifest.json: exactly one create-new-content action and one matching complete brief/cluster; Jonathan Velez established author; exact PAA/Autocomplete reader question and FAQ plan; mechanism answer in section 1; interactive tool format, operator register and 1,200-word explanatory depth floor.",
+    "research/discovery-audit.json and research/lens3-family-audit.json: five capped cancellation seeds, 100 DataForSEO plus 88 unique Autocomplete ideas; five accepted cancellation families; all 12 comparison/alternatives/pricing families across AT&T, ADT, gyms and streaming validated or labeled as estimates and explicitly excluded as service-selection intent; stop/widen rationale recorded.",
+    "research/serp-what-to-do-if-cant-cancel-subscription.json and research/autocomplete-questions-cant-cancel.json: six exact PAA results, five on-topic; 37 autocomplete suggestions with the exact query once; raw forum/UGC classifier lists five top-ten domains (YouTube, Reddit, Medium, LinkedIn, Quora), Google Support is one major-platform result, and AI Overview citation domains match the brief.",
+    "research/coverage-final.json and research/spokes-checklists-history.patch: no exact route/question coverage, redirect, same-run duplicate or shipped cancellation planner; prior lexical hits are unrelated bankruptcy and PMI pages.",
+    "research/primary-sources.json: independently checked Eighth Circuit July 2025 procedural vacatur of the 2024 Negative Option Rule amendments; ROSCA 15 U.S.C. \u00a78403; FTC current ANPRM; selected CA, CO, Maine, NY and NYC sources. NY GBL \u00a7527-a and NYC rule exempt licensed security-system alarm operators; NYC rule effective October 1, 2026. Scope is expressly selected examples, not a 50-state survey.",
+    "research/trend-signal.json: user-supplied 5,270-post and 1.8\u00d7 claims lack source export and are excluded from public claims; the awareness statement is not presented as fact.",
+    "research/site-inspection.json and src/data/guides.ts: the new outbound placement points from \u201cAfter Cancellation: Check the Next Statement\u201d to the inspected \u201cSubscription Creep: The Quiet Budget Killer\u201d section of /guides/how-to-budget-for-teens-college-students/; target content is relevant to recurring-charge review. The three inbound placements remain contextual. The dedicated SubscriptionCancellationPlanner and page-specific disclaimer flag are planned separately from reviewer/byline JSON-LD.",
+    "research/growth-baseline.json and readiness-report.md: no route baseline; measurement hypothesis and day-28/day-56 reporting are descriptive and make no causal uplift claim.",
+    "approval-manifest.json executionPlan and publicationScope: Phases 1\u20139 disclose commit, push, exact-live verification and IndexNow after required audits; unrelated dirty work is explicitly protected. No implementation or publication is misrepresented as complete.",
+    "All 40 manifest evidenceFiles SHA-256 entries independently matched their current files; preparation readiness hash matches the cited file."
+  ]
+}

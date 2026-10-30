@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "root": "/Users/jonathanteplitsky/Desktop/Github Projects/Growth Sites/WealthFinance",
+  "phase": "build",
+  "instructions": [
+    ".claude/commands/mindmap-pass/phase-3c-tool-build.md",
+    ".claude/commands/_content-generation.md",
+    ".claude/commands/_decision-evidence.md",
+    ".claude/commands/_testing-labels.md",
+    ".claude/commands/_mindmap-execution.md",
+    ".claude/commands/_workflow-checkpoints.md",
+    ".claude/commands/_rendered-page-audit.md"
+  ],
+  "files": {
+    ".claude/commands/_decision-evidence.md": "6b47b8b4b6763f5b4ff303ca0443ecf67c01d5efae95c2b0c0e968131fb16d98",
+    ".claude/commands/_testing-labels.md": "8a9dc3c646a583d7afe80339efb880be431a9f528e491ef0ea156bee4db053d9",
+    ".claude/commands/_content-standard.md": "ebf9e6f60f6265f0ebf847ce7853f503eedf17390ca61d5405602381d6cada5e",
+    ".claude/commands/_anti-ai-language.md": "59194cdd7f83f7423489faa07759e571c73ef993a681bd917faa8a6f1a6803ac",
+    ".claude/commands/_experience.md": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+    ".claude/commands/_workflow-checkpoints.md": "a80daacfb208a9d1e1c95b4c199f4a7ae671b89ee54a9f4cc25cbb2689e0f43b",
+    ".claude/commands/_rendered-page-audit.md": "5e649fef4cb23a9c97806bce5f04cee59a329265534f683b40ade791b9cc06da",
+    ".claude/commands/_mindmap-execution.md": "2ee21c15b10e654b4c6126089d8c2d2259d7edbfcb512bc09bd06553b14d6253",
+    ".claude/commands/_keyword-demand-ladder.md": "1ecc67610a23a569e92ced8ce0ad52ef365928913f63c3e7e4b87ce0bedfabc8",
+    ".claude/commands/mindmap-pass/phase-3c-tool-build.md": "ee12eb40501758f034c4979de55634779ea45a6a49a2943c689453f7665c77dd",
+    ".claude/commands/_content-generation.md": "c35a85aa02cb770dcf70db1cc77f1a48fee937c5b5193a5fbc4b29f42fa46af5"
+  },
+  "parts": [
+    {
+      "path": "part-001.txt",
+      "sha256": "2dad9ace40c73ace417b1951a4fd8e99699c16b3d6c22bb4fbfaeba2ab957345"
+    },
+    {
+      "path": "part-002.txt",
+      "sha256": "16e335b553f0b36a4a1184a2efc47635ce5b23833a2ad719940cba1ae348fd4f"
+    },
+    {
+      "path": "part-003.txt",
+      "sha256": "b960b82769597d460509b0da0862f62b17b166a75e922725477f863bd19d38cf"
+    },
+    {
+      "path": "part-004.txt",
+      "sha256": "d9ddd624081c360eac094598842175be9d7445cfbf55bbca7f6eeb20874a96c5"
+    },
+    {
+      "path": "part-005.txt",
+      "sha256": "2e0d842d043809abe4a5fd44991c53d8a90313d6a5c26af6282551254097afc7"
+    },
+    {
+      "path": "part-006.txt",
+      "sha256": "e45a945513d7aae4fe2c3f249e03d9124d72522bdfc8ddc858a6913aac4deb4d"
+    },
+    {
+      "path": "part-007.txt",
+      "sha256": "c556f738745b8a2a16ddb922d0473ca8e703b838b739b287a79ca857c43fb4a8"
+    },
+    {
+      "path": "part-008.txt",
+      "sha256": "d8e38acb5ce0d814860d673a7be32ba273080228f1fcaab9447e24f3cae7c777"
+    },
+    {
+      "path": "part-009.txt",
+      "sha256": "365d1dd6772ee8908ec868a313725f622c0cf18203c3c2cd85d302443282d30d"
+    },
+    {
+      "path": "part-010.txt",
+      "sha256": "d137db36c302353afd315df653fbf46450e120769c589adf5e87f04165f0ce9c"
+    },
+    {
+      "path": "part-011.txt",
+      "sha256": "f28c12f37a05f37f5233ff491e851ae600246a1733c437f1f061d6b66618b700"
+    },
+    {
+      "path": "part-012.txt",
+      "sha256": "9240bcc9799062695bc5b9815bf098b12ff2e8e742059a9ac4248aca5328f5fc"
+    },
+    {
+      "path": "part-013.txt",
+      "sha256": "e43aebb50a835effda74ca83a7fa0e32e45d94cbc1434207d22489ab2bce9434"
+    },
+    {
+      "path": "part-014.txt",
+      "sha256": "0c1b8b28969e92c2f7328714ba993864e900b392db4f5acd706c552cb8c67e6c"
+    },
+    {
+      "path": "part-015.txt",
+      "sha256": "99461fb0d3c5bc1e5344521f33639318800335c21158a95c2a6c65cacd5f5202"
+    },
+    {
+      "path": "part-016.txt",
+      "sha256": "047992998d467100b192dd393aa2e9bb4ac98496e9475b716f523a558e56466a"
+    },
+    {
+      "path": "part-017.txt",
+      "sha256": "34549613107638c88893928c3faa19de194555a3fc23529760ce8ec72ce0e502"
+    },
+    {
+      "path": "part-018.txt",
+      "sha256": "012002b3821eeafcddc31009548f95687c0ed8fd9ef09441eca917a18cd2e11a"
+    },
+    {
+      "path": "part-019.txt",
+      "sha256": "515313a6167c708a8e759e51585ef40c8cf857efe760a1f3b6f391c1a93e3eea"
+    },
+    {
+      "path": "part-020.txt",
+      "sha256": "2e64f62db07d2d7bcfb0594a98bf4d3391be6ce13698cc07df1fd961965d1c0d"
+    },
+    {
+      "path": "part-021.txt",
+      "sha256": "faadef90b2c921aabcc47714a83e8cd995498ebbb2d86e04c7c79c160d3626d3"
+    },
+    {
+      "path": "part-022.txt",
+      "sha256": "b9588a90299bae5ba0b28d11cffd0ed1a8369de9aeae2de5dad0787cf609562c"
+    },
+    {
+      "path": "part-023.txt",
+      "sha256": "88bbde44849976d9a952db62aebf6f3663a8300ecc4e93c03c55b0b2fa6a0d6c"
+    },
+    {
+      "path": "part-024.txt",
+      "sha256": "d3f5e4281f53fd34175ca1d51c1333167dd1c0e6b9867dc080109cd949ee0e6a"
+    },
+    {
+      "path": "part-025.txt",
+      "sha256": "a83ba6e3625e65f362ee8b23f113ae58900fcca8ad601f416df3e08cf0adb2c4"
+    },
+    {
+      "path": "part-026.txt",
+      "sha256": "1a6eb90b7a69de73118f455c755c2c267b4d95135e283fb2dedfec94dd440d00"
+    },
+    {
+      "path": "part-027.txt",
+      "sha256": "26b1ef08a4ed8e90e8f392b699bb7f4c62fbde4191f05e51a5ce0b74e9dafbed"
+    },
+    {
+      "path": "part-028.txt",
+      "sha256": "9c611cf129d7e174c0b66d9e1d9e86c147ffa974d990b78f9f96374674adf780"
+    },
+    {
+      "path": "part-029.txt",
+      "sha256": "a54c3d1021394aa3dea613f066eb3efc2f9fc0b084f964915dd6b751edee9a09"
+    },
+    {
+      "path": "part-030.txt",
+      "sha256": "9f926934451b5420e236103e6f40f36f0fbcb9db9e08648cd9d170c8a4301100"
+    },
+    {
+      "path": "part-031.txt",
+      "sha256": "a40f74a670fa2dc810a334df295e5ac686a6cc467f933108d10e68f0bf2b777b"
+    },
+    {
+      "path": "part-032.txt",
+      "sha256": "19542fb55c4df94e48f97fe6e3ebb8be1f409c10d8dee7be9a23901a1444be29"
+    },
+    {
+      "path": "part-033.txt",
+      "sha256": "f65a1317fb4c3d47ee7782d130c3e9faa3404a5537cdfc7dc4ddd4ca1b03d793"
+    },
+    {
+      "path": "part-034.txt",
+      "sha256": "9bb88f474cba1d9e8f0308e1ac0773f66bae07413fab94b3926f4dadd3c4375b"
+    }
+  ],
+  "delivered": [
+    1
+  ],
+  "actor": "root",
+  "reused": [],
+  "reuse": null
+}

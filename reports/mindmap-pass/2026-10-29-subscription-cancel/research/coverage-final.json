@@ -1,0 +1,35 @@
+[
+ {
+  "candidate": {
+   "route": "/checklists/cancel-subscription-planner",
+   "keyword": "what to do if you can't cancel a subscription",
+   "question": "What to do if a company won't let you cancel a subscription?",
+   "bucket": "create new content",
+   "row": "-"
+  },
+  "terms": [
+   "cancel",
+   "planner",
+   "if"
+  ],
+  "formats": [
+   "pricing"
+  ],
+  "matches": [],
+  "redirects": [],
+  "past_charts": [
+   {
+    "chart": "2026-10-10.md",
+    "section": "table",
+    "line": "| Lens 1 (direct intent) \u2014 the literal brief. \"how to get out of bankruptcy\" is 10/mo (estimate) with a mixed SERP (games, GM/Marvel/NYC histories); the real \"get out\" demand is people inside a Chapter 13 plan: `chapter "
+   },
+   {
+    "chart": "2026-10-26-xtrends.md",
+    "section": "table",
+    "line": "| 1 | Borrowers see the headline and ask if PMI ends automatically. lookup: no match | Guide: what the order does and does not change, today's 80%/78%/midpoint rules, our calculated PMI timeline, current-value illustrati"
+   }
+  ],
+  "commits": [],
+  "same_run": []
+ }
+]

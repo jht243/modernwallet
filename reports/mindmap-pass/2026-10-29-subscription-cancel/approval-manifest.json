@@ -1,0 +1,657 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-29",
+  "source": "Free-form text idea supplied by user; unsourced social post metric retained only as an internal idea signal.",
+  "interpretedBrief": "Create one practical U.S. cancellation decision aid for people whose gym, AT&T, ADT or streaming service is hard to cancel. Explain the vacatur of the FTC 2024 amendments without overstating remaining federal law; show selected state/NYC protections with scope limits; provide official provider steps, scripts and escalation paths.",
+  "author": "Jonathan Velez",
+  "chartPath": "reports/mindmap-pass/2026-10-29-subscription-cancel.md",
+  "actions": [
+    {
+      "id": "MW-CANCEL-01",
+      "problem": "Consumers may not know which entity bills them, which cancellation route applies, what federal protections remain or which state/local escalation path fits.",
+      "solution": "Create a dedicated subscription-cancellation decision aid with official provider links, selected state/NYC law notes, copyable scripts and proof/escalation steps. Do not reuse the real-estate ChecklistBuilder. register: operator; page type: explainer / spoke; depth floor: at least 1,200 reader-facing body words.",
+      "bucket": "create new content",
+      "target": "/checklists/cancel-subscription-planner",
+      "format": "interactive tool",
+      "best_medium": "interactive tool",
+      "resolved_deliverable": "interactive tool",
+      "serp_verdict": "winnable (forum/UGC-heavy, AI Overview)",
+      "serp_evidence": "Exact-query top 10 is mixed provider/help, press, community and editorial; raw DataForSEO forum_domains lists 5/10 forum/UGC domains (YouTube, Reddit, Medium, LinkedIn, Quora); 1/10 is a major platform (Google Support). AI Overview cites FTC Consumer Advice, CNET, EnrichPartners, The Information Zendesk and YouTube; no featured snippet.",
+      "reader_question": "What to do if a company won't let you cancel a subscription? [PAA 5/6 on-topic; 1/6 off-topic: EntityCheck subscription; ac 1/37 exact phrase]",
+      "answer": "Identify the actual biller and signup path, send a dated cancellation request through the verified route, keep proof, and escalate continued charges with the proper provider or regulator (answer shape: mechanism).",
+      "answer_placement": "section 1 — Build Your Cancellation Plan",
+      "register": "operator",
+      "page_type": "explainer / spoke",
+      "depth_floor_words": 1200
+    }
+  ],
+  "newPageBriefs": [
+    {
+      "actionId": "MW-CANCEL-01",
+      "target": "/checklists/cancel-subscription-planner",
+      "identity": {
+        "title": "Can't Cancel a Subscription? Your 2026 Rights + Step-by-Step Scripts",
+        "pageType": "explainer / spoke",
+        "format": "interactive tool",
+        "medium": "interactive tool",
+        "register": "operator",
+        "depthFloorWords": 1200
+      },
+      "readerAndAnswer": {
+        "question": "What to do if a company won't let you cancel a subscription? [PAA 5/6 on-topic; 1/6 off-topic: EntityCheck subscription; ac 1/37 exact phrase]",
+        "answer": "Identify the actual biller and signup path, send a dated cancellation request through the verified route, keep proof, and escalate continued charges with the proper provider or regulator (answer shape: mechanism).",
+        "placement": "section 1 — Build Your Cancellation Plan",
+        "reader": "U.S. consumer with an unwanted gym, telecom, alarm-monitoring, streaming or app subscription and uncertain biller, signup route or escalation path.",
+        "scope": "Selected examples and common steps, not individualized legal advice or a comprehensive state survey.",
+        "answerShape": "mechanism"
+      },
+      "keywordEvidence": {
+        "primary": {
+          "phrase": "what to do if you can't cancel a subscription",
+          "monthlySearches": 30,
+          "kd": 0,
+          "source": "DataForSEO",
+          "confidence": "high",
+          "autocompleteCorroborations": 4
+        },
+        "supporting": [
+          {
+            "phrase": "can't cancel a subscription",
+            "monthlySearches": 50,
+            "kd": 30,
+            "source": "DataForSEO"
+          },
+          {
+            "phrase": "how to cancel a subscription",
+            "monthlySearches": 2900,
+            "kd": 32,
+            "source": "DataForSEO"
+          },
+          {
+            "phrase": "cancel gym membership",
+            "monthlySearches": 590,
+            "kd": 14,
+            "source": "DataForSEO"
+          },
+          {
+            "phrase": "cancel AT&T service",
+            "monthlySearches": 4400,
+            "kd": 0,
+            "source": "DataForSEO"
+          },
+          {
+            "phrase": "cancel ADT contract",
+            "monthlySearches": 140,
+            "kd": 0,
+            "source": "DataForSEO"
+          }
+        ],
+        "caveat": "Google Ads volumes are bucketed and close variants may be merged; do not sum or label as real-time totals.",
+        "database": "US",
+        "researchDate": "2026-10-29"
+      },
+      "serpAndQuestions": {
+        "exactQuery": "what to do if you can't cancel a subscription",
+        "serp": "winnable; 5/10 forum/UGC domains (YouTube, Reddit, Medium, LinkedIn, Quora); 1/10 major platform; AI Overview present; no featured snippet",
+        "aiOverviewCites": "FTC Consumer Advice, CNET, EnrichPartners, The Information Zendesk, YouTube",
+        "paa": "5/6 on-topic; EntityCheck subscription query is off-topic",
+        "autocomplete": "Exact query 1/37 suggestions",
+        "shape": "Interactive decision aid with experience-led steps/scripts; generic explainer is unlikely to match the forum-heavy SERP.",
+        "paaQuestions": [
+          "What to do if a company won't let you cancel a subscription?",
+          "Can I cancel a subscription straight away?",
+          "How do I cancel streaming channels?",
+          "How do I force cancel a subscription?",
+          "How do I find all my streaming subscriptions?"
+        ],
+        "autocompleteQuestions": [
+          "what to do if you can't cancel a subscription",
+          "why is it so hard to cancel subscriptions"
+        ],
+        "offTopicPaa": "How can I cancel my EntityCheck subscription? (off-topic EntityCheck brand query; not an FAQ target)",
+        "sectionVsFaq": "Section 1 directly answers the exact company-refusal PAA question. FAQs cover the other four on-topic PAA questions plus the relevant Autocomplete “why is it so hard…” question."
+      },
+      "whyNewPage": {
+        "coverage": "Exact route/query lookup found no content matches, redirects, commits or same-run candidates. Two past-chart lexical matches are unrelated bankruptcy and PMI content. Existing brand support covers provider-specific steps only.",
+        "intentGap": "No current page joins biller discovery, signup route, cancellation evidence, state/local protections and escalation.",
+        "formatDecision": "A tool branches on provider, biller, signup route, jurisdiction and outcome, which is more useful than a generic explainer."
+      },
+      "outline": [
+        {
+          "section": "Build Your Cancellation Plan",
+          "purpose": "Directly answer PAA: “What to do if a company won't let you cancel a subscription?” Inputs: service/provider, actual biller, signup route, jurisdiction, what happened on cancellation, and continued charges. Output: official route, dated script, proof checklist. Collect no account data."
+        },
+        {
+          "section": "Find the Company That Bills You",
+          "purpose": "Distinguish the service brand from app-store/platform/franchise/monitoring biller and link the matching official cancellation route."
+        },
+        {
+          "section": "What the Federal Rule Change Means",
+          "purpose": "Explain the Eighth Circuit vacatur of the FTC 2024 amendments, procedural ground, surviving ROSCA scope and FTC 2026 ANPRM versus binding law."
+        },
+        {
+          "section": "State and NYC Protections: Selected Examples",
+          "purpose": "Cover CA, CO, Maine, NY and NYC with applicability dates, service scope and exceptions. Say selected examples, not 50-state survey; flag alarm-operator exclusions relevant to ADT."
+        },
+        {
+          "section": "Use These Scripts and Keep Proof",
+          "purpose": "Original call/written scripts; ask for end date, final balance, confirmation and return instructions; save dated proof; no guaranteed outcome."
+        },
+        {
+          "section": "If Charges Continue After You Ask",
+          "purpose": "Escalate to actual biller and relevant regulator; FCC only for in-scope communications, FTC for suspected deceptive practices; complaints do not guarantee resolution."
+        },
+        {
+          "section": "After Cancellation: Check the Next Statement",
+          "purpose": "Tell the reader to keep confirmation and check the next statement for continued billing. Prompt a review of other recurring charges and link to the existing subscription-creep budgeting guide."
+        },
+        {
+          "section": "FAQ plan from observed PAA and Autocomplete",
+          "questionsAndPurpose": [
+            {
+              "question": "Can I cancel a subscription straight away?",
+              "purpose": "Explain that timing depends on provider terms and applicable law; ask for effective date and final billing confirmation."
+            },
+            {
+              "question": "How do I cancel streaming channels?",
+              "purpose": "Route by the actual biller: streamer, Apple, Google Play or Roku; deleting an app is not cancellation."
+            },
+            {
+              "question": "How do I force cancel a subscription?",
+              "purpose": "Do not promise forced cancellation; provide documented request, evidence and relevant complaint steps."
+            },
+            {
+              "question": "How do I find all my streaming subscriptions?",
+              "purpose": "Check platform lists and statements, then identify the biller for each service."
+            },
+            {
+              "question": "Why is it so hard to cancel subscriptions?",
+              "purpose": "Explain distinct billers, signup paths, contract terms and retained options; move reader to the tool’s biller-identification step."
+            }
+          ]
+        }
+      ],
+      "contributionAndEvidence": {
+        "originalWork": "Rule-based flow joins biller discovery, provider instructions, selected state/local examples, scripts and proof/escalation steps.",
+        "legalSources": "Eighth Circuit opinion; FTC current Negative Option Rule page and 2026 conforming notice/ANPRM; 15 U.S.C. §8403; CA DOJ; Colorado SB25-145; Maine §1210-C; NY GBL §§527-a/624; NYC DCWP adopted rule.",
+        "providerSources": "Official AT&T, ADT, Crunch, Apple, Google Play, Roku and Netflix help; branch only when the biller/service matches.",
+        "visibleAttribution": "Link legal and agency claims at first mention to primary sources, provider instructions to their official help pages. Do not publish the unsourced social signal.",
+        "limits": "No comprehensive 50-state claim, legal conclusion, guaranteed refund, attorney-review claim, survey or customer outcome."
+      },
+      "tablesToolsVisuals": {
+        "tool": "Dedicated SubscriptionCancellationPlanner island. Inputs: service/provider, actual biller, signup channel, state/city, cancellation result and continued-charge status. Outputs: official route, selected-law note with applicability/exemption, suggested script and proof/escalation checklist. No account/card/address data stored or requested. Do not reuse ChecklistBuilder because its real-estate legal notice is misleading here. Add a next-statement follow-up reminder and link to the related recurring-charge budgeting guide.",
+        "matrix": "Federal baseline and selected jurisdictions with date, coverage, required cancellation method, exceptions and official sources; readable on mobile.",
+        "safeNoMatch": "If jurisdiction/service is not in a verified branch, say no specific match and link the state AG/official provider; do not infer a right."
+      },
+      "testingAndReview": {
+        "presentation": "Ordinary informational aid; no product rating or comparison/test claim.",
+        "toolLogic": "After approval verify provider/biller branches, state/date boundaries, NYC locality, licensed-alarm exceptions, no-match branch, script output, mobile/keyboard behavior and no personal-data retention. Keep actual test evidence under the testing-label contract.",
+        "review": "Jonathan Velez is the existing byline. No attorney is assigned or claimed. Independent Phase 4 reviewer audits the complete legal and rendered output.",
+        "labels": "No TESTED, attorney-reviewed, survey-supported, or successful-cancellation claim absent evidence from that actual run."
+      },
+      "takeaway": {
+        "intent": "Identify who bills you; send a dated cancellation request through the verified route; keep the request and confirmation; escalate continued charges with the appropriate provider or regulator.",
+        "placement": "Put the complete next-step answer in section 1 and repeat the evidence/escalation checklist near the end.",
+        "limitations": "The tool cannot determine individual contract liability or guarantee cancellation/refund; jurisdiction, service, offer date and exceptions control."
+      },
+      "inboundLinks": {
+        "required": 3,
+        "placements": [
+          {
+            "source": "/guides/how-to-make-a-budget/",
+            "target": "/checklists/cancel-subscription-planner",
+            "section": "Where the Numbers Come from When You Make a Budget",
+            "anchor": "subscription cancellation planner",
+            "purpose": "Readers reviewing account/card statements for spending can use the planner when a recurring charge is difficult to cancel.",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/site-inspection.json",
+              "sha256": "38c2b4216d4acc33e067ebd79dc1cf72b9b7d9a8f2ed936952f925c363835cfc"
+            }
+          },
+          {
+            "source": "/guides/how-to-budget-for-teens-college-students/",
+            "target": "/checklists/cancel-subscription-planner",
+            "section": "Subscription Creep: The Quiet Budget Killer",
+            "anchor": "step-by-step subscription cancellation planner",
+            "purpose": "The section advises reviewing recurring charges and the tool offers the next step when a charge is hard to stop.",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/site-inspection.json",
+              "sha256": "38c2b4216d4acc33e067ebd79dc1cf72b9b7d9a8f2ed936952f925c363835cfc"
+            }
+          },
+          {
+            "source": "/guides/is-robinhood-gold-worth-it/",
+            "target": "/checklists/cancel-subscription-planner",
+            "section": "Robinhood Gold Billing and Cancellation",
+            "anchor": "subscription cancellation rights and scripts",
+            "purpose": "The page answers product-specific cancellation; link the planner for readers facing obstruction.",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/site-inspection.json",
+              "sha256": "38c2b4216d4acc33e067ebd79dc1cf72b9b7d9a8f2ed936952f925c363835cfc"
+            }
+          }
+        ]
+      },
+      "outboundLinks": {
+        "placements": [
+          {
+            "source": "/checklists/cancel-subscription-planner",
+            "target": "/guides/how-to-budget-for-teens-college-students/",
+            "section": "After Cancellation: Check the Next Statement",
+            "anchor": "review recurring charges and avoid subscription creep",
+            "purpose": "After confirming cancellation, help the reader check the next statement and review other recurring charges using the existing subscription-creep budgeting guidance.",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/site-inspection.json",
+              "sha256": "38c2b4216d4acc33e067ebd79dc1cf72b9b7d9a8f2ed936952f925c363835cfc"
+            }
+          }
+        ]
+      },
+      "technicalAndMeasurement": {
+        "route": "/checklists/cancel-subscription-planner/",
+        "implementation": "Add one spoke route plus a dedicated SubscriptionCancellationPlanner React island, with narrow registry/dynamic-template wiring while keeping the /checklists/ URL and hub. Do not mount ChecklistBuilder; it embeds real-estate-only deposits/disclosures/notice copy. Add optional entry.disclaimerText wiring independently of reviewer/byline.",
+        "metadata": "Self-canonical; existing checklist Article/WebApplication/FAQ/Breadcrumb/Person schema pattern and established author; verify rendered output for duplicate JSON-LD.",
+        "publishing": "Generated sitemap route; commit/push only after Phase 4 and final rendered-page audit; live-check exact canonical output; IndexNow only after live verification.",
+        "measurement": "GA4 pull and content-evidence log have no matching route/topic rows; no baseline or comparator. Start baseline after launch; no uplift forecast.",
+        "disclaimer": "The current template renders LegalDisclaimer only when isLegal is true, and /checklists is excluded. Add an optional entry.disclaimerText field for this route, let LegalDisclaimer accept that page-specific neutral wording, and render the existing slot when isLegal || Boolean(entry.disclaimerText). This flag controls only the bottom notice and does not set a legal reviewer, reviewer byline, or reviewer JSON-LD. Place it after body and FAQ, before Sources.",
+        "measurementHypothesis": "A task-focused route finder may attract qualified search landings from refusal/cancellation queries. Measure GSC impressions, clicks, CTR/query coverage and GA4 organic landing sessions/engagement. No route baseline exists; compare with /checklists/ same-period performance only as descriptive context, not a causal control.",
+        "measurementSchedule": "At day 28 and day 56 after verified deployment, allow reporting delay and report each window separately. No uplift forecast or causal statement."
+      },
+      "evidenceFiles": [
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/volume-question.json",
+          "sha256": "3c6c46db066095a49f72ad8607d3784c4bb74b89d7d42846621bf03b5e24de5e"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/volumes.json",
+          "sha256": "d0cdf6d1fa5103ca083348b76c36aad09a17a3ac96878a842fc35b2c9cb8292b"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/autocomplete-questions-cant-cancel.json",
+          "sha256": "8963d071b12142181ef5bbc92355fc668a0342a6c75eee2928552039a247514a"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/serp-what-to-do-if-cant-cancel-subscription.json",
+          "sha256": "f2d14819f7878f0e58b9846e89a866df1851d3cced07bbb96260b8f48183fd89"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/serp-how-to-cancel-subscription.json",
+          "sha256": "e6ea9c7aa999bf0bff95db231d101aae0faa6e921b45869edbccabe2d4f50584"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/serp-cancel-gym-membership.json",
+          "sha256": "210b0dab6438a1ccb16ce7f7deb2933448f0148891962fdd6316dbe12b6e15c8"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/serp-cancel-att-service.json",
+          "sha256": "26dc6f6516ab493e568cd8eff97f367b8acd6956d4bf74769786989fbdebdb55"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/serp-cancel-adt-contract.json",
+          "sha256": "8178a33fb7e481f6ac03cf42908f540d11580de209b95fceb44a4978ea49e77b"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/serp-cancel-streaming-subscriptions.json",
+          "sha256": "66ac193dcb31a410651cf0f995b96d06d5234365c5ac251112530acbf72ba80b"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/coverage-final.json",
+          "sha256": "c5d14120dd24c36be97b300f6a906a65a120928d47e80241cdac8edd4ce197ce"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-autocomplete.json",
+          "sha256": "f4c36e936ee05aa7d5bfb6210f4dd9f441be75bcf849351847ebe2d1d9db7b8e"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-volumes.json",
+          "sha256": "7f1c58732bf82084ffa82abaf7120d6f21d7a68b2500666d7bba2138c3cc303a"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/primary-sources.json",
+          "sha256": "46dd4a8aca74efa3d735632ef94cb8cb724a26a53c405b4198f17dcd02bc77fb"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/trend-signal.json",
+          "sha256": "7495364c9f9e3ef320bc031e406f1567e1fab6c035685e53c47856b3aa6bd022"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/site-inspection.json",
+          "sha256": "38c2b4216d4acc33e067ebd79dc1cf72b9b7d9a8f2ed936952f925c363835cfc"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/growth-baseline.json",
+          "sha256": "2e661e2864cce36a3c5d6764edbd07b4e7d74e1e3772f745d166871daa42676a"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/readiness-report.md",
+          "sha256": "abbb6bcf08b607716e239e86454060960c6ad1ff0af18d573df011c5e36031f9"
+        },
+        {
+          "path": "src/data/spokes-checklists.ts",
+          "sha256": "84c4193aa8288429e56cedb65f7d9196f6ff60ddde06df3987f3ab93a433f35e"
+        },
+        {
+          "path": "src/components/CalculatorIsland.tsx",
+          "sha256": "429ab0f74fed6aa33ba18ac5d64c45ee3428fa4eaa01691b67ed72dc974f0e39"
+        },
+        {
+          "path": "src/lib/checklists.ts",
+          "sha256": "f140f833f9dd871368ea1461220b8ea1989f3354bd60557e79a67a57e625c70a"
+        },
+        {
+          "path": "src/data/site.ts",
+          "sha256": "f906ce20d55bd805628e69d15dfaf13aceafd62c812add6853a21d872d45d357"
+        },
+        {
+          "path": "src/data/guides.ts",
+          "sha256": "c79e393ecc6046d8f4bee4baac5939c3095f66876a7081703df869b2e7136d1b"
+        },
+        {
+          "path": "src/pages/[category]/[slug].astro",
+          "sha256": "5a267925bf9d40690451a2bc6b936940495133ed92ebbd8342e46364ac82015e"
+        },
+        {
+          "path": "astro.config.mjs",
+          "sha256": "81233c49247dd2152828b105b5dc79dd348efe533b7c0e8f279c08f2e74569d2"
+        },
+        {
+          "path": "reports/trend-pass/2026-10-29.ga4.pull.json",
+          "sha256": "ecb1ac595193110be6644fe9fdad6295652fdf08b28f66b4142bb92486b3828e"
+        },
+        {
+          "path": "reports/content-evidence.jsonl",
+          "sha256": "f9be813d7278c742156b0359e926a4a90f086b8cfe7f11c696bdc32253b920f1"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/spokes-checklists-history.patch",
+          "sha256": "6d4b5d09250827081590392f737e8af95434a690e526b5d31f960732cff1bbba"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/workflow-start-verification.json",
+          "sha256": "625063b5e175f6909418c518d8bb3b1073a17e22e96f04129e2b265f981936d6"
+        },
+        {
+          "path": "reports/mindmap-pass/a7ecaf6833fc4e07ac77218bc6041e39/preflight-build-replay/manifest.json",
+          "sha256": "3281ea0679297bec05e7b98ceaf60c2b3a67008dc60a3f3dd8e9f654e0596a13"
+        },
+        {
+          "path": "reports/question-gap-pass/gsc-top-pages-2026-09-28.json",
+          "sha256": "0b68b67d370db01910f9392040df3d06b56b4132d43042c51c409e2d32aa6a2a"
+        },
+        {
+          "path": "reports/trend-pass/2026-09-26.ga4.gsc-evidence.json",
+          "sha256": "454c09de8e3743021ecb0ca9b1cfda07523b076c38ff4e14bf15d70b061a31ff"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/discovery-audit.json",
+          "sha256": "5c12e60f4b0bc116a4d4a21d982e9776cf6087285c87a1eb231f615b6b15adbd"
+        },
+        {
+          "path": "src/components/ChecklistBuilder.tsx",
+          "sha256": "4e97ac1691050fbdd645ba4c4116caf1ef564046f1b2d86dc2a1878ac195ad11"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-autocomplete-additions.json",
+          "sha256": "2a36850a3604051170870aa2a252545c2eb487f9d9e79e2dae7ce7a9220f0726"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-autocomplete-streaming-pricing.json",
+          "sha256": "a9743bdd46e765639b2257612f68d4544e4f724c02743d34ce4e75e246bdf91e"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-volume-validation-additions.json",
+          "sha256": "33b6f41c1c192fb6608583953990c30a5ae058de798d2b0eb96448a6c315881b"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-volume-validation-streaming.json",
+          "sha256": "b2ddad65c81dced5aa7484211e73d4947e378ed74325aea83820e50b8bcbe528"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-validation-queries.txt",
+          "sha256": "f8883443cb63dbcdef5cdfff34e49f3a184ae09fd5c83559b660ccee02dc81b0"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-validation-queries-streaming.txt",
+          "sha256": "660feb610848e4c90ea3e93cab32a02f7af0e9ea06cb9eaae98579e17c74fbb2"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-family-audit.json",
+          "sha256": "9d1aeb6c672b04f636397371ad6375665a09cc8440a68b6f535c2edaedcc9dd2"
+        }
+      ]
+    }
+  ],
+  "preparation": {
+    "status": "PASS",
+    "readiness": {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/readiness-report.md",
+      "sha256": "abbb6bcf08b607716e239e86454060960c6ad1ff0af18d573df011c5e36031f9"
+    }
+  },
+  "evidenceFiles": [
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/volume-question.json",
+      "sha256": "3c6c46db066095a49f72ad8607d3784c4bb74b89d7d42846621bf03b5e24de5e"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/volumes.json",
+      "sha256": "d0cdf6d1fa5103ca083348b76c36aad09a17a3ac96878a842fc35b2c9cb8292b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/autocomplete-questions-cant-cancel.json",
+      "sha256": "8963d071b12142181ef5bbc92355fc668a0342a6c75eee2928552039a247514a"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/serp-what-to-do-if-cant-cancel-subscription.json",
+      "sha256": "f2d14819f7878f0e58b9846e89a866df1851d3cced07bbb96260b8f48183fd89"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/serp-how-to-cancel-subscription.json",
+      "sha256": "e6ea9c7aa999bf0bff95db231d101aae0faa6e921b45869edbccabe2d4f50584"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/serp-cancel-gym-membership.json",
+      "sha256": "210b0dab6438a1ccb16ce7f7deb2933448f0148891962fdd6316dbe12b6e15c8"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/serp-cancel-att-service.json",
+      "sha256": "26dc6f6516ab493e568cd8eff97f367b8acd6956d4bf74769786989fbdebdb55"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/serp-cancel-adt-contract.json",
+      "sha256": "8178a33fb7e481f6ac03cf42908f540d11580de209b95fceb44a4978ea49e77b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/serp-cancel-streaming-subscriptions.json",
+      "sha256": "66ac193dcb31a410651cf0f995b96d06d5234365c5ac251112530acbf72ba80b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/coverage-final.json",
+      "sha256": "c5d14120dd24c36be97b300f6a906a65a120928d47e80241cdac8edd4ce197ce"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-autocomplete.json",
+      "sha256": "f4c36e936ee05aa7d5bfb6210f4dd9f441be75bcf849351847ebe2d1d9db7b8e"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-volumes.json",
+      "sha256": "7f1c58732bf82084ffa82abaf7120d6f21d7a68b2500666d7bba2138c3cc303a"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/primary-sources.json",
+      "sha256": "46dd4a8aca74efa3d735632ef94cb8cb724a26a53c405b4198f17dcd02bc77fb"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/trend-signal.json",
+      "sha256": "7495364c9f9e3ef320bc031e406f1567e1fab6c035685e53c47856b3aa6bd022"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/site-inspection.json",
+      "sha256": "38c2b4216d4acc33e067ebd79dc1cf72b9b7d9a8f2ed936952f925c363835cfc"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/growth-baseline.json",
+      "sha256": "2e661e2864cce36a3c5d6764edbd07b4e7d74e1e3772f745d166871daa42676a"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/readiness-report.md",
+      "sha256": "abbb6bcf08b607716e239e86454060960c6ad1ff0af18d573df011c5e36031f9"
+    },
+    {
+      "path": "src/data/spokes-checklists.ts",
+      "sha256": "84c4193aa8288429e56cedb65f7d9196f6ff60ddde06df3987f3ab93a433f35e"
+    },
+    {
+      "path": "src/components/CalculatorIsland.tsx",
+      "sha256": "429ab0f74fed6aa33ba18ac5d64c45ee3428fa4eaa01691b67ed72dc974f0e39"
+    },
+    {
+      "path": "src/lib/checklists.ts",
+      "sha256": "f140f833f9dd871368ea1461220b8ea1989f3354bd60557e79a67a57e625c70a"
+    },
+    {
+      "path": "src/data/site.ts",
+      "sha256": "f906ce20d55bd805628e69d15dfaf13aceafd62c812add6853a21d872d45d357"
+    },
+    {
+      "path": "src/data/guides.ts",
+      "sha256": "c79e393ecc6046d8f4bee4baac5939c3095f66876a7081703df869b2e7136d1b"
+    },
+    {
+      "path": "src/pages/[category]/[slug].astro",
+      "sha256": "5a267925bf9d40690451a2bc6b936940495133ed92ebbd8342e46364ac82015e"
+    },
+    {
+      "path": "astro.config.mjs",
+      "sha256": "81233c49247dd2152828b105b5dc79dd348efe533b7c0e8f279c08f2e74569d2"
+    },
+    {
+      "path": "reports/trend-pass/2026-10-29.ga4.pull.json",
+      "sha256": "ecb1ac595193110be6644fe9fdad6295652fdf08b28f66b4142bb92486b3828e"
+    },
+    {
+      "path": "reports/content-evidence.jsonl",
+      "sha256": "f9be813d7278c742156b0359e926a4a90f086b8cfe7f11c696bdc32253b920f1"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/spokes-checklists-history.patch",
+      "sha256": "6d4b5d09250827081590392f737e8af95434a690e526b5d31f960732cff1bbba"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/workflow-start-verification.json",
+      "sha256": "625063b5e175f6909418c518d8bb3b1073a17e22e96f04129e2b265f981936d6"
+    },
+    {
+      "path": "reports/mindmap-pass/a7ecaf6833fc4e07ac77218bc6041e39/preflight-build-replay/manifest.json",
+      "sha256": "3281ea0679297bec05e7b98ceaf60c2b3a67008dc60a3f3dd8e9f654e0596a13"
+    },
+    {
+      "path": "reports/question-gap-pass/gsc-top-pages-2026-09-28.json",
+      "sha256": "0b68b67d370db01910f9392040df3d06b56b4132d43042c51c409e2d32aa6a2a"
+    },
+    {
+      "path": "reports/trend-pass/2026-09-26.ga4.gsc-evidence.json",
+      "sha256": "454c09de8e3743021ecb0ca9b1cfda07523b076c38ff4e14bf15d70b061a31ff"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/discovery-audit.json",
+      "sha256": "5c12e60f4b0bc116a4d4a21d982e9776cf6087285c87a1eb231f615b6b15adbd"
+    },
+    {
+      "path": "src/components/ChecklistBuilder.tsx",
+      "sha256": "4e97ac1691050fbdd645ba4c4116caf1ef564046f1b2d86dc2a1878ac195ad11"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-autocomplete-additions.json",
+      "sha256": "2a36850a3604051170870aa2a252545c2eb487f9d9e79e2dae7ce7a9220f0726"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-autocomplete-streaming-pricing.json",
+      "sha256": "a9743bdd46e765639b2257612f68d4544e4f724c02743d34ce4e75e246bdf91e"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-volume-validation-additions.json",
+      "sha256": "33b6f41c1c192fb6608583953990c30a5ae058de798d2b0eb96448a6c315881b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-volume-validation-streaming.json",
+      "sha256": "b2ddad65c81dced5aa7484211e73d4947e378ed74325aea83820e50b8bcbe528"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-validation-queries.txt",
+      "sha256": "f8883443cb63dbcdef5cdfff34e49f3a184ae09fd5c83559b660ccee02dc81b0"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-validation-queries-streaming.txt",
+      "sha256": "660feb610848e4c90ea3e93cab32a02f7af0e9ea06cb9eaae98579e17c74fbb2"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-family-audit.json",
+      "sha256": "9d1aeb6c672b04f636397371ad6375665a09cc8440a68b6f535c2edaedcc9dd2"
+    }
+  ],
+  "emergingClusters": [
+    {
+      "cluster": "Company will not let me cancel",
+      "queries": "what to do if you can't cancel a subscription (30/mo); can't cancel a subscription (50/mo); how to cancel a subscription (2,900/mo); cancel gym membership (590/mo); cancel AT&T service (4,400/mo); cancel ADT contract (140/mo); streaming cancellation questions (Autocomplete/PAA only)",
+      "why": "Exact refusal question appears in PAA and Autocomplete; forum-heavy SERP and no integrated biller/legal escalation tool on site.",
+      "coverage": "none for integrated refusal/escalation intent; provider-only support is partial",
+      "lever": "create new content",
+      "target": "/checklists/cancel-subscription-planner",
+      "format": "interactive tool",
+      "best_medium": "interactive tool",
+      "resolved_deliverable": "interactive tool",
+      "serp_verdict": "winnable (forum/UGC-heavy, AI Overview)",
+      "serp_evidence": "5/10 forum/UGC domains per raw DataForSEO classification (YouTube, Reddit, Medium, LinkedIn, Quora); 1/10 major platform (Google Support); AI Overview cites FTC and editorial/provider sources."
+    }
+  ],
+  "exclusions": "Do not publish the user-supplied 5,270 posts or 1.8× daily level, or ‘most people don’t know,’ without retrievable evidence. Do not claim nationwide comprehensive coverage or that every service in a named jurisdiction is covered. Lens 3 covered all three comparison/alternatives/pricing families for each of four entity groups (AT&T, ADT, gym memberships, streaming services): 12 canonical family checks, plus two streaming-subscription wording aliases. Representative autocomplete candidates were cross-checked through DataForSEO; measured volumes and labeled autocomplete estimates are recorded in research/lens3-family-audit.json. The streaming-subscription alternatives seed returned zero suggestions; the broader streaming-services alternatives seed returned nine, with its selected ‘best alternatives to Netflix’ phrase remaining an explicitly unmeasured autocomplete estimate. These families ask which service to choose, what alternatives exist or what it costs, rather than how to cancel or escalate a blocked cancellation, so they are documented exclusions from this page action and not new rows. No universal federal one-click claim; no NY/NYC alarm-operator exemption misstatement; no separate provider comparison, metadata-only, generic profile or video action.",
+  "executionPlan": [
+    {
+      "phase": 1,
+      "action": "Recheck cannibalization and duplication for this one route; no consolidation edits are planned."
+    },
+    {
+      "phase": 2,
+      "action": "Add page-specific title, description, byline and checklist metadata within the new route entry."
+    },
+    {
+      "phase": 3,
+      "action": "Write the tool answer, biller flow, selected-law matrix, official provider routes, scripts and escalation checklist from the primary-source packet; use Jonathan Velez byline, no attorney-review claim."
+    },
+    {
+      "phase": 4,
+      "action": "Independent adversarial audit of complete tool, sources, scope/exceptions, state/date routing, label claims and exact rendered output; rework and re-audit within the two-attempt limit."
+    },
+    {
+      "phase": 5,
+      "action": "Finalize page copy and FAQ; section 1 answers the exact question; preserve legal limits and clear no-match path."
+    },
+    {
+      "phase": 6,
+      "action": "Add three contextual inbound links from the inspected budget, student subscription-creep and Robinhood Gold cancellation sections; verify final anchors and destinations."
+    },
+    {
+      "phase": 7,
+      "action": "Add one route to generated sitemap and prepare run-specific IndexNow URL list; submit only after push and live verification."
+    },
+    {
+      "phase": 8,
+      "action": "Print full run summary, then continue to Phase 9 after required audits and rendered verification pass."
+    },
+    {
+      "phase": 9,
+      "action": "Commit only this run’s approved files; safely reconcile three-commit remote lag without staging unrelated dirty work; push, verify exact live canonical output, submit verified URL to IndexNow and report commit SHA."
+    }
+  ],
+  "publicationScope": {
+    "commit": true,
+    "push": true,
+    "liveVerification": true,
+    "indexNow": true
+  },
+  "lens3Coverage": {
+    "audit": "reports/mindmap-pass/2026-10-29-subscription-cancel/research/lens3-family-audit.json",
+    "summary": "12 canonical family checks (comparison, alternatives, pricing for each of AT&T, ADT, gym memberships and streaming services), plus two streaming-subscription wording aliases; each family has an observed candidate validated with DataForSEO or an explicitly labeled Autocomplete estimate. All are scope-excluded as purchase-choice intent rather than cancellation intent."
+  }
+}

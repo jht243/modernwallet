@@ -1,0 +1,59 @@
+.claude/commands/_content-standard.md — characters 54000 onward
+
+e vendor's, lab's, or regulator's own page, or the benchmark's own repo. Never an aggregator. Link only the first mention of each entity.
+
+**Exception — projects that auto-link at render time.** If THIS project turns common entities into links automatically via a render-time registry (Phase 0 discovers whether it does, and where), write those names in PLAIN TEXT so the page is not double-linked, and never hand-write a referral URL. **CHECK the registry before writing — never assume a vendor is in it.** If the entity is NOT in the registry, hand-link it inline; if it will recur across many pages, extend the registry instead (preferred) and keep the name plain. If the project has no auto-linker, hand-link everything. When unsure, hand-link — one correct link on first mention is the goal.
+
+**Deep-link the page you are sending the reader to.** The auto-link registry sends a bare entity name to that organisation's HOMEPAGE. That is right for a passing mention and wrong whenever you direct the reader somewhere specific. When the sentence tells them to check a price, read the docs, confirm a limit, or verify a policy, hand-link the exact URL that answers it (the official pricing or docs URL, not the homepage). Markdown links are resolved BEFORE auto-linking and are left untouched, so a hand-written deep link does not double-link. Put the link on the destination words rather than on the bare entity name: the words "pricing page" point at that organisation's official pricing URL.
+
+**Name the subject; never write "the vendor".** On a page about a named product or company, use its name in every sentence that refers to it. Generic stand-ins ("the vendor", "the platform", "this provider") are banned by `_anti-ai-language.md` and fail the audit.
+
+**Auditors.** An unlinked first mention of a company/product NOT covered by the project's auto-link registry is a **HARD FAIL**, not an advisory note. The fix is additive: link the first occurrence, or register the entity. Never rewrite the page.
+
+---
+
+## ANCHOR
+
+Google's February 2026 core update rewarded pages carrying **proprietary substance** — first-hand detail, real cases, a defensible point of view — and demoted pages that carry none. Every page must give the reader something the top-ranking results do not already have.
+
+**Do this FIRST, before drafting.** Load `.claude/commands/_experience.md` and walk it against your topic:
+- Its **required** section says who we are to this site's reader and what we have actually done in this domain. This always licenses general framing.
+- Its **optional** section, where the repo has authored one, holds concrete, true, citable specifics — named clients, real engagements, systems we operate — plus that repo's own rules about using them.
+
+If anything there has honest topical overlap, weave **ONE** observation into the relevant section. Never a standalone "Case study" sidebar.
+
+**Attribution by register:**
+- **operator** — grounded first-person, so a reader (and an extractor) understands this is real first-hand data rather than a hypothetical. Patterns: "In our engagement with [X], we observed…", "When we ran [Y] across the sites we operate, the pattern was…", "From the [X] rollout, the failure mode was [A] — we solved it by [B]."
+- **reporter** — the same substance as sourced analysis, third person, with no claim that we did it: "[X]'s own documentation puts the limit at…", "Filings from [regulator] show…", "The failure mode operators report is…".
+
+**Rules, both registers, non-negotiable:** proof not promotion; **max 2 named-client references per page**; the topic must genuinely overlap — **never force-fit**, a shoehorned reference is an audit fail exactly like having none; **never invent** specifics (numbers, percentages, durations, headcounts, dates, quotes) — reference only the real qualitative observation; no inline CTA hanging off a client sentence.
+
+**If nothing in `_experience.md` honestly fits**, anchor the page another way: an original number or benchmark you actually produced, an original artifact, a non-obvious tradeoff, or a defensible POV with reasoning. Only if none of that honestly applies may the page ship without an anchor, and you must leave a one-line note for the auditor: `anchor-exempt: [why nothing honestly fit this topic]`. The default is to include an anchor; the exemption bar is high.
+
+---
+
+## NEUTRALITY
+
+**NEVER assert our own neutrality or lack of financial interest.** Do not write that {BUSINESS_NAME} "does not resell", "takes no referral fee", "takes no commission", "does not partner with", "is vendor-neutral", that a ranking "is independent", or any "note on objectivity". The audit phase hard-fails any page carrying one.
+
+Two reasons. First, it is often **false**: where a project auto-inserts `rel="sponsored"` affiliate links from an entity registry, the very page making the claim may be earning a referral fee. Second, it does not work even when true — a reader credits objectivity that is **shown**, not claimed.
+
+**Never claim the site takes no payment for placement.** Do not write "no paid placement", "no sponsored placement", "we don't take payment to be listed", "rankings are not paid", "picks are chosen on the merits", or that affiliate commissions are the only revenue. The site sells paid placements; any such claim is false.
+
+Demonstrate it instead, using the required page elements in SEO: name who should NOT pick the option you favour, state plainly what would change your verdict, and ground every judgment in what each vendor actually publishes. If a real affiliate relationship exists, the site's affiliate-disclosure mechanism handles it. Body prose never does, and must never claim the relationship does not exist.
+
+---
+
+## AUDITOR
+
+Apply these gates in addition to the `## AUDITOR` section of `_anti-ai-language.md`. Each is objective. **This audit is mandatory: no page a writer produced or rewrote is finished, publishable, or shippable until it has passed here on its exact current text — a prior pass on an earlier draft does not count.**  The fix is always a targeted repair of the offending part, never a full-page rewrite.
+
+### Hard fails (any one blocks publication)
+
+- **GATE — Register.** The row must carry `register: operator` or `register: reporter`, and it must be right for what the page does. Missing record → FAIL. Wrong register → FAIL. Then check the page against it, **both directions**:
+  - operator page written in detached third-person encyclopedia prose → FAIL. "A firm that…" / "firms that…" as the default subject, instead of "you", is this fail.
+  - reporter page carrying "we"/"our", a first-person experience claim, or a tee-up → FAIL. This one matters most: a news item wrapped in our voice is worse than plain reporting.
+  - registers blended inside a paragraph, or more than one operator-register analysis section on a reporter page → FAIL.
+- **GATE — Tee-up.** Operator pages: sentence 1 of the first body paragraph is the direct answer, not the tee-up. A tee-up as sentence 1 → FAIL, note `teeup-before-answer`. If a tee-up is used, it is the next sentence, and it is one sentence. A tee-up of more than one sentence → FAIL. A missing tee-up with no `teeup-exempt:` note → FAIL. A tee-up that reads as bolted-on for this page → FAIL, same as a missing one. A tee-up placed in the title, subtitle, hero, deck, or any other header field → FAIL. The same sentence appearing in both a header field and the tee-up → FAIL, note `teeup-duplicated: [fields]`; the fix is to restore the header field to its own descriptive job, never to delete the body tee-up. The intro restating the subtitle in different words → FAIL, note `subtitle-restated: "[both]"`. The fix deletes the intro repeat, not the subtitle. On `teeup-exempt:` pages, sentence 1 is still the answer and there is no tee-up. Reporter pages: any tee-up → FAIL.
+- **GATE — Experience truth.** Established company claims must trace to the active site's `_experience.md`; original work must trace to the verified run packet under `_decision-evidence.md`. Testing claims additionally require local eligibility and executed records under `_testing-labels.md`; the TESTED format itself is not evidence. An invented number, duration, headcount, client name, date, quote, or test result → FAIL. More than two named-client references on one page → FAIL.
+- **GATE — Reader question.** The row must carry `reader question: "…"` (see INTENT) **with its evidence tag** — `[PAA n/m <pattern>; ac n/m]`, `[verb-only — no PAA, no completions]`, or the on-/off-topic split. Missing question → FAIL, note `no-reader-question`; question with no evidence tag → FAIL, note `question-unevidenced` (it was guessed from the topic noun, which is exactly the failure this gate exists for). Then check PAA's two jobs were kept apart: the top on-intent PAA question must be answered by the opening section (not merely by an FAQ entry), and the remaining on-topic PAA questions must appear in the FAQ; every PAA question sitting

@@ -1,0 +1,69 @@
+{
+ "keyword": "cancel streaming subscriptions",
+ "verdict": "locked",
+ "forum_dominated": false,
+ "ai_overview_present": true,
+ "ai_overview_cited_domains": [
+  "www.cnet.com",
+  "support.roku.com",
+  "www.amazon.com",
+  "www.facebook.com",
+  "www.youtube.com",
+  "www.primevideo.com",
+  "www.justanswer.com"
+ ],
+ "featured_snippet": null,
+ "top10_domains": [
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "www.wickedlocal.com",
+  "google.com",
+  "www.youtube.com",
+  "www.youtube.com",
+  "google.com"
+ ],
+ "major_domains": [
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com"
+ ],
+ "forum_domains": [
+  "www.youtube.com",
+  "www.youtube.com"
+ ],
+ "serp_feature_mix": {
+  "ai_overview": 1,
+  "organic": 18,
+  "people_also_ask": 1,
+  "related_searches": 2,
+  "short_videos": 1
+ },
+ "paa": [
+  "How can I start a free trial of Apple TV?",
+  "How can I view my subscriptions on my Roku account?",
+  "How can I cancel my ESPN Plus subscription?",
+  "How do I cancel a subscribe on my phone?",
+  "What's the easiest way to cancel subscriptions?",
+  "What number do I dial to cancel subscriptions?"
+ ],
+ "related_searches": [
+  "Netflix",
+  "Hulu",
+  "Paramount Plus",
+  "Disney Plus",
+  "HBO Max",
+  "Peacock",
+  "Rocket Money",
+  "Roku subscriptions"
+ ],
+ "recommended_shape": "standard article/guide is viable",
+ "evidence": "7/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.cnet.com, support.roku.com, www.amazon.com, www.facebook.com",
+ "se_results_count": 125
+}

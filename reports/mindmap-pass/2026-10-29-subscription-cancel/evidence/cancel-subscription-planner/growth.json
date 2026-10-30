@@ -1,0 +1,25 @@
+{
+  "origin_routine": "mindmap-pass",
+  "query_family": "can't cancel a subscription; cancel a gym membership, AT&T service, alarm monitoring, or a streaming subscription",
+  "hypothesis": "A biller-first planner with conditional federal, state and local examples, editable cancellation scripts, proof steps, and official escalation links may earn Google clicks from consumers who cannot complete a cancellation. No traffic or outcome increase is assumed.",
+  "primary_metric": "incremental Google clicks (GSC)",
+  "baseline": "unavailable",
+  "baseline_reason": "No verified pre-change GSC extract exists for this query family. The 2026-10-29 baseline review found no current route-level baseline or comparator; the available GA4 pull had zero matching rows.",
+  "prior_specification": "not-yet-published; use an age-matched cohort of relevant checklist and guide pages, with query-family GSC data recorded after launch",
+  "gsc": "unavailable",
+  "canonical_url": "https://www.themodernwallet.com/checklists/cancel-subscription-planner/",
+  "comparator_plan": "Age-match against relevant 2026-10 checklist and guide pages after the first complete 28-day live window; report impressions, clicks, and CTR without attributing causality from a small cohort.",
+  "change_scope": "new route with an added checklist-hub card and three contextual inbound links",
+  "source_refresh_trigger": "A change to the cited federal rule, statute, court ruling, agency guidance, or listed provider cancellation instructions.",
+  "windows": {
+    "day28": "first 28 complete live days after verified deployment",
+    "day56": "second 28 complete live days"
+  },
+  "outcome_status": "not-yet-published",
+  "deployed": null,
+  "production_cost": {
+    "amount_usd": 0.4934,
+    "scope": "Recorded estimate for the writer call only; research, review, implementation, and other generation costs were not fully itemized."
+  },
+  "trend_signal_note": "The brief cited 5,270 posts and an October 28 level about 1.8 times the usual daily level, but the underlying source/export was unavailable. These figures and the unsupported awareness claim were excluded from the page."
+}

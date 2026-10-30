@@ -1,0 +1,238 @@
+{
+  "seed": "how to cancel a subscription",
+  "mode": "questions",
+  "suggestions": [
+    {
+      "query": "which how to cancel subscription",
+      "via": "question:what"
+    },
+    {
+      "query": "how to cancel a subscription on iphone",
+      "via": "question:what"
+    },
+    {
+      "query": "how to cancel a subscription on amazon",
+      "via": "question:what"
+    },
+    {
+      "query": "how to cancel a subscription on roku",
+      "via": "question:what"
+    },
+    {
+      "query": "how to cancel a subscription on google play",
+      "via": "question:what"
+    },
+    {
+      "query": "how to cancel a subscription on paypal",
+      "via": "question:what"
+    },
+    {
+      "query": "how to cancel a subscription on apple",
+      "via": "question:what"
+    },
+    {
+      "query": "how to cancel a subscription on steam",
+      "via": "question:what"
+    },
+    {
+      "query": "how to cancel a subscription on tiktok",
+      "via": "question:what"
+    },
+    {
+      "query": "how to cancel a subscription on amazon prime",
+      "via": "question:what"
+    },
+    {
+      "query": "on amazon how to cancel a subscription",
+      "via": "question:is"
+    },
+    {
+      "query": "how to cancel a subscription iphone",
+      "via": "question:is"
+    },
+    {
+      "query": "how to cancel a subscription apple",
+      "via": "question:is"
+    },
+    {
+      "query": "how to cancel a subscription for an app",
+      "via": "question:is"
+    },
+    {
+      "query": "how to cancel a subscription with apple pay",
+      "via": "question:is"
+    },
+    {
+      "query": "how to cancel a subscription from google play",
+      "via": "question:is"
+    },
+    {
+      "query": "how to cancel a subscription from roku",
+      "via": "question:is"
+    },
+    {
+      "query": "how to cancel a subscription from paypal",
+      "via": "question:is"
+    },
+    {
+      "query": "how to cancel a subscription with rocket money",
+      "via": "question:is"
+    },
+    {
+      "query": "how do cancel a subscription on my iphone",
+      "via": "question:does"
+    },
+    {
+      "query": "how do i cancel a subscription on amazon",
+      "via": "question:does"
+    },
+    {
+      "query": "how do i cancel a subscription",
+      "via": "question:does"
+    },
+    {
+      "query": "how do i cancel a subscription on google play",
+      "via": "question:does"
+    },
+    {
+      "query": "how do i cancel a subscription on roku",
+      "via": "question:does"
+    },
+    {
+      "query": "how do you cancel a subscription on iphone",
+      "via": "question:does"
+    },
+    {
+      "query": "how do i cancel a subscription on paypal",
+      "via": "question:does"
+    },
+    {
+      "query": "how do i cancel a subscription on tiktok",
+      "via": "question:does"
+    },
+    {
+      "query": "how do i cancel a subscription on amazon prime",
+      "via": "question:does"
+    },
+    {
+      "query": "how do i cancel a subscription on iphone",
+      "via": "question:does"
+    },
+    {
+      "query": "how to cancel can a subscription",
+      "via": "question:can"
+    },
+    {
+      "query": "how can i cancel a subscription on my iphone",
+      "via": "question:can"
+    },
+    {
+      "query": "how can i cancel a subscription on amazon",
+      "via": "question:can"
+    },
+    {
+      "query": "how can i cancel a subscription on my credit card",
+      "via": "question:can"
+    },
+    {
+      "query": "how can i cancel a subscription on google play",
+      "via": "question:can"
+    },
+    {
+      "query": "how can i cancel a subscription through my bank",
+      "via": "question:can"
+    },
+    {
+      "query": "how can you cancel a subscription",
+      "via": "question:can"
+    },
+    {
+      "query": "how can i cancel a subscription on roku",
+      "via": "question:can"
+    },
+    {
+      "query": "how can i cancel a subscription on apple",
+      "via": "question:can"
+    },
+    {
+      "query": "how can i cancel a subscription on amazon prime",
+      "via": "question:can"
+    },
+    {
+      "query": "should i be able to cancel a subscription online",
+      "via": "question:should"
+    },
+    {
+      "query": "how to cancel a subscription when you don't have an account",
+      "via": "question:should"
+    },
+    {
+      "query": "how to cancel a subscription you don't know.you have",
+      "via": "question:should"
+    },
+    {
+      "query": "can you cancel a subscription at any time",
+      "via": "question:should"
+    },
+    {
+      "query": "can you cancel a subscription",
+      "via": "question:should"
+    },
+    {
+      "query": "can i cancel a monthly subscription",
+      "via": "question:should"
+    },
+    {
+      "query": "do you still have to pay if you cancel a subscription",
+      "via": "question:should"
+    },
+    {
+      "query": "when to cancel a subscription",
+      "via": "question:when"
+    },
+    {
+      "query": "when i cancel a subscription on iphone",
+      "via": "question:when"
+    },
+    {
+      "query": "where to cancel a subscription on iphone",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel a subscription",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel a subscription on amazon",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel a subscription apple",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel a subscription on paypal",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel a subscription on steam",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel a netflix subscription",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel subscriptions on android",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel subscription in google",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel subscription in canva",
+      "via": "question:where"
+    }
+  ]
+}

@@ -83,6 +83,8 @@ export interface CalculatorDef {
   /** ISO yyyy-mm-dd this page's content was last revised. Omit until the page is actually
    *  edited; the byline and schema fall back to the site-wide LAST_UPDATED. */
   updated?: string;
+  /** ISO yyyy-mm-dd this page was first published; preserves datePublished when updated changes. */
+  published?: string;
 
   /** Initial inputs for the hub's live calculator. Shape is calculator-specific. */
   defaultPreset: Record<string, unknown>;
@@ -109,9 +111,13 @@ export interface SpokeEntry {
   introText: string;
   /** "How it's calculated" — the methodology, in plain language. */
   howItWorks: string;
+  /** Approved section headings for a route whose explanation is divided into distinct steps. */
+  sectionHeadings?: string[];
   commonMistakes: string[];
   /** Optional narrative worked example (build-time numbers get injected around it). */
   workedExample?: string;
+  workedExampleHeading?: string;
+  commonMistakesHeading?: string;
   faqs: FAQ[];
   /** Authoritative primary sources cited on the page (E-E-A-T). */
   sources?: Source[];
@@ -126,6 +132,10 @@ export interface SpokeEntry {
   preset: Record<string, unknown>;
   /** Curated sibling slugs (within the same calculator) for cross-linking. */
   relatedSlugs?: string[];
+  /** Keep unrelated same-category pages out of this route's related list. */
+  suppressRelatedFallback?: boolean;
+  /** Optional neutral legal-information notice, without implying attorney review. */
+  disclaimerText?: string;
   /** State slugs this spoke has variants for. When set, the `[category]/[slug]/[state]` route
    *  generates one page per state, pre-filled with state-specific defaults + law context. */
   stateVariants?: string[];

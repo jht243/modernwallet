@@ -1,0 +1,178 @@
+[
+  {
+    "id": "eighth-circuit-2025",
+    "url": "https://ecf.ca8.uscourts.gov/opndir/25/07/243137P.pdf",
+    "source": "U.S. Court of Appeals, Eighth Circuit, Custom Communications, Inc. v. FTC, No. 24-3137 et al.",
+    "checked": "2026-10-29",
+    "supports": "The court vacated the FTC's 2024 amendments to the Negative Option Rule on procedural grounds after finding the FTC had not followed a statutory preliminary regulatory analysis requirement.",
+    "limits": "Do not describe the entire federal negative-option framework as abolished, or imply the court decided the merits of the rule's policy."
+  },
+  {
+    "id": "ftc-negative-option-current",
+    "url": "https://www.ftc.gov/legal-library/browse/rules/negative-option-rule",
+    "source": "Federal Trade Commission, Negative Option Rule",
+    "checked": "2026-10-29",
+    "supports": "The FTC is seeking public comment on whether to amend its Rule Concerning the Use of Prenotification Negative Option Plans (ANPRM dated March 11, 2026).",
+    "limits": "An advance notice is not a new binding cancellation requirement; the page identifies the existing rule as concerning prenotification plans."
+  },
+  {
+    "id": "ftc-conforming-rule-2026",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-02-12/pdf/FR-2026-02-12.pdf",
+    "source": "Federal Register, FTC final rule, February 12, 2026",
+    "checked": "2026-10-29",
+    "supports": "The FTC conformed the Negative Option Rule text to the court vacatur and recodified its pre-2024 text.",
+    "limits": "Confirm the exact section in the official notice during Phase 3 drafting; do not call this a new click-to-cancel law."
+  },
+  {
+    "id": "rosca",
+    "url": "https://www.govinfo.gov/link/uscode/15/8403",
+    "source": "15 U.S.C. § 8403, official U.S. Code through GovInfo",
+    "checked": "2026-10-29",
+    "supports": "For internet transactions using a negative-option feature, sellers must disclose material terms before obtaining billing information, obtain express informed consent, and provide simple mechanisms to stop recurring charges.",
+    "limits": "The statute does not prescribe a universal same-channel one-click cancellation method for every subscription; verify its definitions and scope before applying to a particular transaction."
+  },
+  {
+    "id": "ftc-consumer-advice",
+    "url": "https://consumer.ftc.gov/articles/getting-and-out-free-trials-auto-renewals-and-negative-option-subscriptions",
+    "source": "FTC Consumer Advice",
+    "checked": "2026-10-29",
+    "supports": "Consumer-facing FTC steps on recording terms, finding the actual biller, monitoring charges and reporting subscription issues.",
+    "limits": "Do not treat advice as an individualized legal opinion."
+  },
+  {
+    "id": "california-automatic-renewal",
+    "url": "https://www.oag.ca.gov/news/press-releases/attorney-general-bonta-issues-consumer-alert-california%E2%80%99s-automatic-renewal-law",
+    "source": "California Department of Justice, Attorney General consumer alert",
+    "checked": "2026-10-29",
+    "supports": "California's Automatic Renewal Law amendments effective July 1, 2025; express consent and clear cancellation method for covered renewals/continuous services; online cancellation rights where online enrollment applies.",
+    "limits": "Specific coverage, exceptions and applicability dates depend on transaction and statutory text; use as a covered-example path, not a guarantee about every service."
+  },
+  {
+    "id": "colorado-sb25-145",
+    "url": "https://www.leg.colorado.gov/bills/sb25-145",
+    "source": "Colorado General Assembly, SB25-145",
+    "checked": "2026-10-29",
+    "supports": "For covered contracts consented to online, online cancellation is required; if consent was by other means, an online link or in-person method is required. The direct-cancel-link provision preserves a link next to retention offers. Business applicability is February 16, 2026 for contracts offered/renewed on or after applicable dates.",
+    "limits": "Use bill's final text and date applicability for each step; do not apply the effective-date headline to earlier offers."
+  },
+  {
+    "id": "maine-1210c",
+    "url": "https://legislature.maine.gov/statutes/10/title10sec1210-C.html",
+    "source": "Maine Revised Statutes, Title 10, § 1210-C",
+    "checked": "2026-10-29",
+    "supports": "The updated definition covers automatic subscription renewals for online media players, mobile apps, online software and health-club memberships; covered sellers must accept cancellation using the same method and manner as signup.",
+    "limits": "Scope is defined categories and qualifying automatic renewals, including statutory definitions and exclusions; agreements must meet the law's application provision."
+  },
+  {
+    "id": "new-york-527a",
+    "url": "https://www.nysenate.gov/legislation/laws/GBS/527-A",
+    "source": "New York General Business Law § 527-a",
+    "checked": "2026-10-29",
+    "supports": "Covered automatic-renewal and continuous-service offers require a simple cancellation mechanism as easy to use as consent and through the same medium, plus additional cancellation mediums; obstruction or unreasonable delay is prohibited.",
+    "limits": "The statute exempts security-system alarm operators and certain financial/franchised/service-contract businesses; do not position it as a remedy against ADT where the exemption applies."
+  },
+  {
+    "id": "new-york-health-club",
+    "url": "https://www.nysenate.gov/legislation/laws/GBS/624",
+    "source": "New York General Business Law § 624",
+    "checked": "2026-10-29",
+    "supports": "New York health-club contracts include a 3-business-day cancellation right; covered clubs must accept cancellation through several methods and website cancellation when website enrollment is allowed.",
+    "limits": "Section lists specific circumstances and deadlines; do not imply unrestricted cancellation at any time for every gym contract."
+  },
+  {
+    "id": "nyc-rule",
+    "url": "https://www.nyc.gov/content/dam/nycgov/nyc-main/pdf/2026/Click-to-Cancel-Rule.pdf",
+    "source": "NYC Department of Consumer and Worker Protection, final rule",
+    "checked": "2026-10-29",
+    "supports": "NYC rule effective October 1, 2026; covered automatic-renewal/continuous-service offers must have clear terms and cancellation through the same medium as consent, with other offered mediums and protections against obstruction/delay.",
+    "limits": "NYC rule expressly exempts licensed security-system alarm operators and several other sectors. NYC is a local rule; address location/transaction coverage before applying."
+  },
+  {
+    "id": "nyc-complaint",
+    "url": "https://www.nyc.gov/main/click-to-cancel",
+    "source": "New York City official Click to Cancel page",
+    "checked": "2026-10-29",
+    "supports": "NYC rule effective date, consumer-facing summary, and complaint filing route through DCWP.",
+    "limits": "The city summary is an enforcement/consumer resource; the adopted rule controls exact scope."
+  },
+  {
+    "id": "att-wireless",
+    "url": "https://www.att.com/support/article/wireless/KM1008472/",
+    "source": "AT&T official wireless support",
+    "checked": "2026-10-29",
+    "supports": "Official starting path for AT&T wireless cancellation instructions.",
+    "limits": "Eligibility and steps differ by account/service/contract; direct the reader to verify the current official account route and confirmation."
+  },
+  {
+    "id": "att-internet",
+    "url": "https://www.att.com/support/article/my-account/KM1009500/",
+    "source": "AT&T official internet support",
+    "checked": "2026-10-29",
+    "supports": "Official starting path for AT&T internet cancellation instructions.",
+    "limits": "Account ownership, billing and equipment-return requirements can differ; do not promise cancellation in a single channel."
+  },
+  {
+    "id": "adt",
+    "url": "https://help.adt.com/article/blu-account-creation-faqs",
+    "source": "ADT official Help Center",
+    "checked": "2026-10-29",
+    "supports": "ADT product-specific official support route to distinguish online self-service from monitoring-service cancellation.",
+    "limits": "Do not imply deleting an app/account cancels monitoring. Contract terms and service type matter; flag New York state/NYC licensed-alarm exemptions."
+  },
+  {
+    "id": "crunch",
+    "url": "https://www.crunch.com/faq",
+    "source": "Crunch official FAQ",
+    "checked": "2026-10-29",
+    "supports": "Some clubs provide online portal cancellation; otherwise the member may need to call or visit the home club; club operations vary by location.",
+    "limits": "Franchise/home-club terms differ; verify the member's own club instructions."
+  },
+  {
+    "id": "apple",
+    "url": "https://support.apple.com/en-us/118428",
+    "source": "Apple Support",
+    "checked": "2026-10-29",
+    "supports": "If Apple is the biller, use Apple's subscription management route.",
+    "limits": "Apple route applies to Apple-billed subscriptions only."
+  },
+  {
+    "id": "google-play",
+    "url": "https://support.google.com/googleplay/answer/7018481",
+    "source": "Google Play Help",
+    "checked": "2026-10-29",
+    "supports": "If Google Play is the biller, cancel in Google Play; deleting the app does not cancel the subscription.",
+    "limits": "Applies to Google Play-billed subscriptions only."
+  },
+  {
+    "id": "roku",
+    "url": "https://support.roku.com/article/manage-or-cancel-subscriptions",
+    "source": "Roku Support",
+    "checked": "2026-10-29",
+    "supports": "Subscription cancellation path depends on whether Roku or the streaming provider bills the customer.",
+    "limits": "Applies to Roku-billed subscriptions; otherwise follow the provider's route."
+  },
+  {
+    "id": "netflix",
+    "url": "https://help.netflix.com/en/node/407",
+    "source": "Netflix Help Center",
+    "checked": "2026-10-29",
+    "supports": "Netflix account cancellation and partner-billing distinction; deleting/signing out of the app is not cancellation.",
+    "limits": "If billed by a partner, cancel through that partner."
+  },
+  {
+    "id": "fcc-complaints",
+    "url": "https://consumercomplaints.fcc.gov/hc/en-us",
+    "source": "Federal Communications Commission Consumer Complaint Center",
+    "checked": "2026-10-29",
+    "supports": "Official complaint route for communications service issues within FCC scope.",
+    "limits": "FCC complaint jurisdiction varies by service/issue; do not send every consumer billing dispute to FCC."
+  },
+  {
+    "id": "ftc-report",
+    "url": "https://reportfraud.ftc.gov/",
+    "source": "Federal Trade Commission ReportFraud",
+    "checked": "2026-10-29",
+    "supports": "Official FTC consumer report route for suspected deceptive/unfair business practices.",
+    "limits": "A report does not individually resolve or adjudicate a consumer's contract dispute."
+  }
+]

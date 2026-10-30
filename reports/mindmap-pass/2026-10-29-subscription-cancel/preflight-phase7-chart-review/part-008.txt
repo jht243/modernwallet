@@ -1,0 +1,67 @@
+.claude/commands/_content-standard.md — characters 27000 onward
+
+idance asks for evidence of first-hand experience and lists that stand on their own. On 2026-09-05 our "best X" and comparison pages lost rankings while pricing and how-to pages held. Qualifying pages with reviewed test evidence say what was tested and what the work showed.
+
+**What testing licenses.** Only relevant executed runs, independently reviewed against the exact page, license first-person testing claims. The local `_experience.md` sets the permitted scope; it does not replace page-specific records. Calculations, modeling, client observations and external research use their own accurate labels. Never invent measurements, scores, durations, dates or setups. Supported qualitative and quantitative findings must trace to the packet.
+
+Four required elements on every applicable page:
+
+1. **Meta description opens with "We tested N [items]".** N is the count of products or models the page ranks or compares; [items] is the plain plural the reader would use ("mini PCs", "AI video generators", "AI models"). The rest of the description carries the page's value as before. The existing length limit still applies.
+2. **The tested sentence is the tee-up.** Sentence 2 of the first body paragraph, right after the direct answer, says what we tested and for which job: "We tested every [item] on this list as [the job the reader buys it for]." One sentence. It replaces the generic tee-up on these pages. It is never sentence 1, because GATE Tee-up still requires the direct answer first.
+3. **A "How We Tested" section.** An H2 placed after the intro and before the picks or comparison. Exactly three bullets describing the method for the page's CATEGORY: the jobs each item was used for, what we checked, and what we judged. Pages in the same category may reuse wording only when it accurately describes the recorded work for every item; otherwise adapt the three bullets to the actual method. No numbers, durations or named test tools unless they are in the fact list.
+4. **Every pick carries three labeled parts, replacing the vendor-style blurb:**
+   - **Why We Picked It** — one or two first-person sentences from testing, tied to a documented pro.
+   - **Who It's For** — one sentence naming the buyer.
+   - **The Downside** — one sentence drawn from the documented cons.
+   On a comparison page, each side gets the three parts. If the page record has dedicated fields for these, fill them; otherwise write them as three labeled lines in the item's description field (`**Why we picked it:** …`). The three labels ("Why we picked it:", "Who it's for:", "The downside:") always show as bold on the live page: use the template's bold label style, or `**label:**` markdown on sites where it renders in a visibly bold face. No spec dumps and no marketing adjectives in any of the three.
+
+The byline ("Tested and reviewed by …") and the review markup are rendered by the site template from the record, never written into prose (GATE Byline in body prose still applies to them).
+
+---
+
+## DEPTH
+
+Every article page has a **minimum body word count** by page type. These are **floors, not targets** — a page under its floor does not compete, and the audit phase hard-fails it. Body words = reader-facing prose only (intro + section bodies + FAQ answers + verdict); title, meta, nav/header/footer, schema, CTA boilerplate, and code blocks do NOT count.
+
+| Page type | Floor (body words) |
+|---|---|
+| comparison (`X vs Y`) | 1,500 |
+| review | 1,500 |
+| persona / audience page (`for [audience]`) | 1,400 |
+| hub / section index | 1,200 |
+| worth-it | 1,200 |
+| explainer / spoke (**the default for anything else**) | 1,200 |
+| cost / pricing | 1,000 |
+| editorial (about / methodology) | 600 |
+
+The floors apply to **both registers**. A news or announcement page is held to the same floor as a guide; if a launch genuinely has less than a floor's worth of substance, it belongs merged into a broader page, not shipped thin.
+
+Hitting the floor with padding is a **worse** failure than missing it — `_anti-ai-language.md` and ANCHOR still apply in full, and the audit checks them on the same pass. If you cannot reach the floor without filler, the topic is too thin for its own page: STOP and flag the row for merging into a related page rather than shipping a padded one.
+
+**How to actually hit the floor — do NOT pad.** Adding words to reach a number produces exactly the AI filler the audit hard-fails. Reach it by *answering more of the query*:
+- Enumerate the 5–8 sub-questions a searcher on this term also has, and answer each on-page.
+- Give the **failure mode** and the **inversion case** — when the general advice is wrong, and for whom. This is the highest-information-gain content on any page and the most commonly missing.
+- Show the arithmetic rather than asserting the conclusion (cost math, dose math, break-even).
+- Add a table only where it carries data the prose does not.
+A page that clears its floor through longer sentences, restated headings, or a padded FAQ has failed this rule even though the count passes.
+
+**Record the page type on the row** as `page type: <type>`, using a label from the table above, alongside the `medium:` and `register:` records. The floor follows from it, so the audit phase must read the page type rather than infer it. Where a page could plausibly be two types, pick the one whose floor is HIGHER and say why in the row.
+
+Record the final body word count for each page you write and hand it to the audit phase with the page.
+
+---
+
+## QUALITY
+
+Before writing, research the topic using search tools. Gather current statistics, recent trends, competitor insights, expert quotes, authoritative citations, and real-world examples. Prioritize industry reports, government data, academic research, reputable publications, official company sources, and recent case studies.
+
+- Match search intent fully.
+- Write accurate, original, useful content with practical advice.
+- Include current-year references, recent data, statistics, trends, and examples.
+- Demonstrate E-E-A-T with citations, expert sources, detailed explanations, and credibility indicators where relevant.
+- Add specific examples, use cases, tips, and actionable takeaways.
+- **Information gain.** At least one example must contribute information NOT already present on the top-ranking pages for this topic (first-hand operational detail, an industry-specific failure mode, a non-obvious tradeoff, or a decision criterion competitors don't surface). Weave it INTO the relevant existing section as a supporting sentence or bullet — never split it into a standalone self-promotional section. Reframing the same ideas as competitors in different words does NOT satisfy this rule.
+- **Answer-engine optimization (AEO).** The FIRST sentence of each major section's content must be a complete, self-contained declarative statement that answers the section's question directly, without requiring context from surrounding paragraphs. AI assistants extract passages, not full articles — each passage must stand alone. This applies ONLY to section openers, never to the page's first body sentence (that slot is VOICE: the answer, then a tee-up only if it belongs). Transitions still apply within and between paragraphs. Each FAQ answer also leads with the direct answer; nuance and caveats follow.
+- **Authorship:** automatically reuse this site's established author/profile and the existing template's byline fields under the author-defaults owner rule above. If no person is configured, the existing publisher/editorial identity or an omitted optional personal byline is acceptable, including on informational YMYL pages. Do not request a named credentialed reviewer or invent a Person/review date. Keep author attribution in the template's header/byline and appropriate schema, outside body prose; accurate evidence/method attribution remains allowed under `_decision-evidence.md`. Preserve actual professional-review credit only when that review occurred.
+- **State the consequence, never a bare feature.** Buyers do not purchase specifications; they purchase a changed situation — time saved, risk removed, a job that stops needing a person. Every feature or capability you name must say what it does FOR the reader, in the same sentence or the next one. "A five-year warranty" is a spec. "A five-year warranty covers a cracked housing" is the claim. Prefer one natural sentence. Split only if the line becomes a stack the reader has to re-read. Listing capabilities and trusting the reader to infer why they matter is the most common reason competent copy fails to persuade. This does not license hype: the consequence must be concrete and true, and `_anti-ai-language.md` still bans the inflated adjectives that usually smuggle themselves in here.
+- **First-party sourcing.** Cite primary sources directly — the vendor's own page, the regulator's own page, the official trust center — never aggregators. The link is for verification; the article still carries the substantive answer on-page.

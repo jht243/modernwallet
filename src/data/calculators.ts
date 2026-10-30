@@ -3112,7 +3112,8 @@ export const CALCULATORS: CalculatorDef[] = [
         "url": "https://www.homeinspector.org/standards-of-practice"
       }
     ],
-    "updated": "2026-10-26",
+    "published": "2026-10-26",
+    "updated": "2026-10-29",
     "defaultPreset": {
       "checklist": "home-buying",
       "picker": true
@@ -3215,6 +3216,7 @@ export function relatedSpokes(entry: SpokeEntry, n = 4): SpokeEntry[] {
       seen.add(m.slug);
     }
   }
+  if (entry.suppressRelatedFallback) return out.slice(0, n);
   for (const s of spokesForCalc(entry.calculator)) {
     if (out.length >= n) break;
     if (!seen.has(s.slug)) {

@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-29",
+  "author": "Jonathan Velez",
+  "inspected": [
+    {
+      "file": "src/data/guides.ts",
+      "target": "/guides/how-to-make-a-budget/",
+      "section": "Where the Numbers Come from When You Make a Budget",
+      "purpose": "That section already instructs readers to review checking-account and credit-card statements; a short linked sentence about using the cancellation planner when an unwanted recurring charge is difficult to stop is contextually relevant.",
+      "sha256": "c79e393ecc6046d8f4bee4baac5939c3095f66876a7081703df869b2e7136d1b"
+    },
+    {
+      "file": "src/data/guides.ts",
+      "target": "/guides/is-robinhood-gold-worth-it/",
+      "section": "Robinhood Gold Billing and Cancellation",
+      "purpose": "This section already explains Gold cancellation and the annual subscription/match retention commitment; link the cancellation planner after the provider-specific instructions for a reader whose problem is an obstructed cancellation.",
+      "sha256": "c79e393ecc6046d8f4bee4baac5939c3095f66876a7081703df869b2e7136d1b"
+    },
+    {
+      "file": "src/data/guides.ts",
+      "target": "/guides/how-to-budget-for-teens-college-students/",
+      "section": "Subscription Creep: The Quiet Budget Killer",
+      "purpose": "That section advises students to review bank and card statements for recurring charges; linking the planner offers a concrete follow-up when one charge is difficult to cancel.",
+      "sha256": "c79e393ecc6046d8f4bee4baac5939c3095f66876a7081703df869b2e7136d1b"
+    },
+    {
+      "file": "src/data/spokes-checklists.ts",
+      "target": "/checklists/cancel-subscription-planner/",
+      "section": "No existing topic match",
+      "purpose": "Current checklist spokes were searched; no subscription-cancellation guide/tool was found.",
+      "sha256": "84c4193aa8288429e56cedb65f7d9196f6ff60ddde06df3987f3ab93a433f35e"
+    },
+    {
+      "file": "src/components/CalculatorIsland.tsx",
+      "target": "/checklists/cancel-subscription-planner/",
+      "section": "Existing component registry: checklists → ChecklistBuilder",
+      "purpose": "Current checklists registry maps to ChecklistBuilder, but that component contains real-estate-specific legal/help copy. It is not appropriate for subscription cancellation. The proposed implementation adds a separate SubscriptionCancellationPlanner registry entry and selects it for this spoke without changing existing checklist behavior.",
+      "sha256": "429ab0f74fed6aa33ba18ac5d64c45ee3428fa4eaa01691b67ed72dc974f0e39"
+    },
+    {
+      "file": "src/data/site.ts",
+      "target": "/checklists/cancel-subscription-planner/",
+      "section": "AUTHOR and site metadata",
+      "purpose": "Use the established Jonathan Velez byline. Do not invent a legal reviewer or claim attorney review.",
+      "sha256": "f906ce20d55bd805628e69d15dfaf13aceafd62c812add6853a21d872d45d357"
+    },
+    {
+      "file": "src/components/ChecklistBuilder.tsx",
+      "target": "/checklists/cancel-subscription-planner/",
+      "section": "Existing generic checklist disclaimer and print footer",
+      "purpose": "The current component says rental/real-estate deposits, disclosures and notice differ by locality, then tells users to confirm with a local attorney; this is unrelated to subscriptions. Do not reuse or display that content on the proposed page.",
+      "sha256": "4e97ac1691050fbdd645ba4c4116caf1ef564046f1b2d86dc2a1878ac195ad11"
+    },
+    {
+      "file": "src/pages/[category]/[slug].astro",
+      "target": "/checklists/cancel-subscription-planner/",
+      "section": "Dynamic spoke island selection and bottom disclaimer slot",
+      "purpose": "The template renders LegalDisclaimer only when isLegal is true for four legal pillars; /checklists is excluded. The notice slot is after FAQ and before Sources. Implement route-level disclaimerText selection for the notice only, independently of isLegal reviewer/byline/Person JSON-LD.",
+      "sha256": "5a267925bf9d40690451a2bc6b936940495133ed92ebbd8342e46364ac82015e"
+    }
+  ]
+}

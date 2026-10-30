@@ -1,0 +1,92 @@
+{
+ "slug": "cancel-subscription-planner",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1743,
+ "floor": 1200,
+ "input_tokens": 32829,
+ "output_tokens": 18105,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.4934,
+ "guards": {
+  "repairs": [
+   "slug None -> 'cancel-subscription-planner'"
+  ],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1743,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 1209,
+   "floor": 1200,
+   "ratio": 1.01,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    2
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "The [Restore Online Shoppers' Confidence Act (ROSCA)](https://www.govinfo.gov/link/uscode/15/8403) still applies to covered internet transactions with a negative-option feature, such as an auto-renewal.",
+     "replacement": "The [Restore Online Shoppers' Confidence Act (ROSCA)](https://www.govinfo.gov/link/uscode/15/8403) still applies to covered internet transactions with a negative-option feature.",
+     "type": "unsupported",
+     "why": "SOURCE does not give auto-renewal as an example of ROSCA's negative-option feature."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "For communications-service problems within its scope, you can file with the [Federal Communications Commission (FCC)](https://consumercomplaints.fcc.gov/hc/en-us), and its jurisdiction varies by issue.",
+     "replacement": "For communications-service problems within its scope, you can file with the [Federal Communications Commission (FCC)](https://consumercomplaints.fcc.gov/hc/en-us), and its jurisdiction varies.",
+     "type": "unsupported",
+     "why": "SOURCE says only that jurisdiction varies, not that it varies by issue."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "A dated written request sent through the biller's listed route gives you a record to show the biller or a regulator later.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not state this consequence of a written request."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Your first statement after the effective date shows whether billing stopped.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not make this claim about statements."
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1782
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 192.4,
+ "response_id": "msg_011CgXXScFTSFU27dRX6NKEq",
+ "generated_at": "2026-10-29T20:10:01-0500"
+}

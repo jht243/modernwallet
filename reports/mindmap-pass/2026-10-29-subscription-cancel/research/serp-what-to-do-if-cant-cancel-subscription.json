@@ -1,0 +1,65 @@
+{
+ "keyword": "what to do if you can't cancel a subscription",
+ "verdict": "winnable",
+ "forum_dominated": true,
+ "ai_overview_present": true,
+ "ai_overview_cited_domains": [
+  "consumer.ftc.gov",
+  "www.cnet.com",
+  "enrichpartners.com",
+  "theinformation.zendesk.com",
+  "www.youtube.com"
+ ],
+ "featured_snippet": null,
+ "top10_domains": [
+  "www.youtube.com",
+  "support.google.com",
+  "www.aarp.org",
+  "www.reddit.com",
+  "medium.com",
+  "askfelix.app",
+  "www.linkedin.com",
+  "www.quora.com",
+  "www.nerdwallet.com",
+  "spencersheehan.com"
+ ],
+ "major_domains": [
+  "support.google.com"
+ ],
+ "forum_domains": [
+  "www.youtube.com",
+  "www.reddit.com",
+  "medium.com",
+  "www.linkedin.com",
+  "www.quora.com"
+ ],
+ "serp_feature_mix": {
+  "ai_overview": 1,
+  "discussions_and_forums": 1,
+  "organic": 17,
+  "people_also_ask": 1,
+  "related_searches": 2,
+  "video": 1
+ },
+ "paa": [
+  "What to do if a company won't let you cancel a subscription?",
+  "How can I cancel my EntityCheck subscription?",
+  "Can I cancel a subscription straight away?",
+  "How do I cancel streaming channels?",
+  "How do I force cancel a subscription?",
+  "How do I find all my streaming Subscriptions?"
+ ],
+ "related_searches": [
+  "What to do if you can t cancel a subscription iphone",
+  "How to cancel subscriptions on iPhone",
+  "How to cancel All subscriptions on your phone",
+  "How to cancel subscriptions on Android",
+  "How to cancel Google Forms subscription on iphone",
+  "My subscriptions Cancel subscription",
+  "Google Play Cancel subscription",
+  "TryHerPlus cancel subscription without calling"
+ ],
+ "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+ "evidence": "forum/community results own the SERP (www.youtube.com, www.reddit.com, medium.com, www.linkedin.com, www.quora.com) incl. #1; 1/10 major platforms (support.google.com); AI Overview present, cites consumer.ftc.gov, www.cnet.com, enrichpartners.com, theinformation.zendesk.com",
+ "se_results_count": 133
+}

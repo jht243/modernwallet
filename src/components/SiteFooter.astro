@@ -3,6 +3,8 @@
 import { SITE } from "../data/site";
 import { liveCalculators } from "../data/calculators";
 import { AFFILIATE_DISCLOSURE } from "../data/partners";
+export interface Props { disclosureText?: string }
+const { disclosureText } = Astro.props;
 const calcs = liveCalculators();
 const year = 2026;
 ---
@@ -107,7 +109,7 @@ const year = 2026;
     </div>
   </div>
 
-  <div class="ftr-disclosure"><p>{AFFILIATE_DISCLOSURE}</p></div>
+  <div class="ftr-disclosure"><p>{disclosureText ?? AFFILIATE_DISCLOSURE}</p></div>
 </footer>
 
 <style>

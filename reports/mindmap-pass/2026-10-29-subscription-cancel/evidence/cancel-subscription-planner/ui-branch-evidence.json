@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-29",
+  "timezone": "America/Bogota",
+  "classification": "Manual UI branch check of deterministic planner output; not a user study, provider-service trial, or measured cancellation outcome.",
+  "route": "http://127.0.0.1:4321/checklists/cancel-subscription-planner/",
+  "cases": [
+    {
+      "name": "New York gym blocked",
+      "selections": {
+        "service": "gym or health club",
+        "biller": "service provider",
+        "location": "New York State outside NYC",
+        "outcome": "blocked or sent in circles"
+      },
+      "observed": "Showed the Crunch FAQ as one example only, stated that club policies vary and the home-club terms determine the route, and displayed New York GBL §§ 527-a and 624 with covered-contract limits and the three-business-day right noted."
+    },
+    {
+      "name": "California streaming billed by Google Play, charged after request",
+      "selections": {
+        "service": "another streaming service",
+        "biller": "Google Play",
+        "location": "California",
+        "outcome": "charged after asking to cancel"
+      },
+      "observed": "Showed Google Play cancellation instructions, stated that deleting an app does not cancel it, and displayed the California automatic-renewal example with its July 1, 2025 effective date and coverage limits."
+    },
+    {
+      "name": "New York City Blue by ADT monitoring blocked",
+      "selections": {
+        "service": "Blue by ADT monitoring",
+        "biller": "service provider",
+        "location": "New York City",
+        "outcome": "blocked or sent in circles"
+      },
+      "observed": "Showed the Blue by ADT help route and product-specific caveat, then displayed the NYC rule and New York alarm-operator exceptions with contract terms called out for the cancellation process."
+    },
+    {
+      "name": "AT&T wireless blocked",
+      "selections": {
+        "service": "AT&T wireless",
+        "biller": "service provider",
+        "location": "Other or not sure",
+        "outcome": "blocked or sent in circles"
+      },
+      "observed": "Showed AT&T wireless cancellation help and noted that account ownership and device steps can matter."
+    },
+    {
+      "name": "AT&T internet charged after request",
+      "selections": {
+        "service": "AT&T internet",
+        "biller": "service provider",
+        "location": "Other or not sure",
+        "outcome": "charged after asking to cancel"
+      },
+      "observed": "Showed AT&T internet cancellation help, whose linked official support route includes equipment-return steps."
+    }
+  ],
+  "copy_control": "Selected AT&T internet case; the Copy your plan button displayed “Plan copied. Add your account details only in your own message to the biller.”",
+  "privacy_note": "No account, payment, identity, or contact information was entered.",
+  "refreshedAt": "2026-10-29T20:52:46-05:00",
+  "layout": {
+    "mobile": {
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "documentScrollWidth": 375,
+      "horizontalOverflow": false,
+      "fixedOverlays": [],
+      "footerDisclosure": "Some links on this site are referral or affiliate links. We may earn a reward or commission at no cost to you."
+    },
+    "desktop": {
+      "viewportWidth": 1280,
+      "documentScrollWidth": 1265,
+      "horizontalOverflow": false,
+      "fixedOverlays": [],
+      "footerDisclosure": "Some links on this site are referral or affiliate links. We may earn a reward or commission at no cost to you."
+    },
+    "adPlacement": "The adhesion wrapper was static in document flow, positioned after the footer; it did not cover article text."
+  }
+}

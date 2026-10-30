@@ -1,0 +1,39 @@
+.scp {
+  color: #22352f;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.scp-heading { margin-bottom: 1.15rem; }
+.scp-heading h2 { margin: 0 0 .45rem; color: #153d32; font-size: 1.4rem; line-height: 1.25; }
+.scp-heading p { margin: 0; color: #4d5c56; }
+.scp-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; }
+.scp-field { display: flex; flex-direction: column; gap: .35rem; min-width: 0; }
+.scp-field label { color: #253b33; font-size: .94rem; font-weight: 650; }
+.scp-field select {
+  width: 100%; min-height: 46px; border: 1px solid #9db8ac; border-radius: 9px;
+  padding: .65rem .75rem; background: #fff; color: #1c3029; font: inherit;
+}
+.scp-field select:focus-visible, .scp a:focus-visible, .scp button:focus-visible {
+  outline: 3px solid #efb349; outline-offset: 2px;
+}
+.scp-result { margin-top: 1.2rem; padding: 1rem; border: 1px solid #d5e6de; border-radius: 13px; background: #fff; }
+.scp-result h3 { margin: 0 0 .45rem; color: #174d3e; font-size: 1.15rem; }
+.scp-result h4 { margin: 0 0 .35rem; color: #174d3e; font-size: 1rem; }
+.scp-result p { margin: 0 0 .65rem; }
+.scp-result ul { margin: .2rem 0 .7rem; padding-left: 1.25rem; }
+.scp-result li { margin: .2rem 0; }
+.scp-result a { color: #075e4d; font-weight: 650; text-decoration: underline; text-underline-offset: 2px; }
+.scp-route, .scp-link { display: flex; flex-direction: column; gap: .15rem; padding: .65rem .75rem; border-radius: 8px; background: #f1f8f5; }
+.scp-route span, .scp-link span { color: #4d5c56; font-size: .9rem; }
+.scp-legal-note, .scp-script { margin-top: .85rem; padding: .8rem .85rem .25rem; border-left: 3px solid #b6d8c9; background: #f7faf8; }
+.scp-bottom-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; margin-top: .9rem; }
+.scp-bottom-grid > div { min-width: 0; }
+.scp-copy { min-height: 44px; margin-top: .5rem; padding: .65rem 1rem; border: 0; border-radius: 8px; background: #0c6956; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.scp-copy:hover { background: #084c3f; }
+.scp-copy-status { min-height: 1.3em; margin: .35rem 0 !important; color: #174d3e; font-size: .9rem; }
+.scp-privacy { color: #5b6862; font-size: .86rem; }
+.scp-copy-fallback { position: fixed; left: -10000px; top: 0; width: 1px; height: 1px; opacity: 0; }
+@media (max-width: 620px) {
+  .scp-fields, .scp-bottom-grid { grid-template-columns: minmax(0, 1fr); }
+  .scp-result { padding: .8rem; }
+}

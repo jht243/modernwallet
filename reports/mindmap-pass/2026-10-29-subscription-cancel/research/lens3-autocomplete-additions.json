@@ -1,0 +1,136 @@
+[
+  {
+    "seed": "gym membership vs",
+    "mode": "simple",
+    "suggestions": [
+      {
+        "query": "gym membership vs home gym",
+        "via": "simple"
+      },
+      {
+        "query": "gym membership vs buying equipment",
+        "via": "simple"
+      },
+      {
+        "query": "gym membership vs working out at home",
+        "via": "simple"
+      },
+      {
+        "query": "gym membership vs home gym reddit",
+        "via": "simple"
+      },
+      {
+        "query": "gym membership vs apartment gym",
+        "via": "simple"
+      },
+      {
+        "query": "gym membership vs classpass",
+        "via": "simple"
+      },
+      {
+        "query": "gym membership vs walking pad",
+        "via": "simple"
+      },
+      {
+        "query": "gym membership vs pilates",
+        "via": "simple"
+      },
+      {
+        "query": "gym membership vs home equipment",
+        "via": "simple"
+      },
+      {
+        "query": "gym membership vs calisthenics",
+        "via": "simple"
+      }
+    ]
+  },
+  {
+    "seed": "streaming services vs",
+    "mode": "simple",
+    "suggestions": [
+      {
+        "query": "streaming services vs cable",
+        "via": "simple"
+      },
+      {
+        "query": "streaming services vs cable tv",
+        "via": "simple"
+      },
+      {
+        "query": "streaming services vs satellite tv",
+        "via": "simple"
+      },
+      {
+        "query": "streaming services vs physical media",
+        "via": "simple"
+      },
+      {
+        "query": "streaming services vs cable networks",
+        "via": "simple"
+      },
+      {
+        "query": "streaming services vs movie theaters",
+        "via": "simple"
+      },
+      {
+        "query": "streaming services vs traditional tv",
+        "via": "simple"
+      },
+      {
+        "query": "streaming services vs cinema",
+        "via": "simple"
+      },
+      {
+        "query": "streaming services vs movie theaters statistics",
+        "via": "simple"
+      },
+      {
+        "query": "streaming services vs youtube tv",
+        "via": "simple"
+      }
+    ]
+  },
+  {
+    "seed": "streaming services alternatives",
+    "mode": "simple",
+    "suggestions": [
+      {
+        "query": "streaming services alternatives to spotify",
+        "via": "simple"
+      },
+      {
+        "query": "streaming services alternatives reddit",
+        "via": "simple"
+      },
+      {
+        "query": "streaming service alternatives to youtube tv",
+        "via": "simple"
+      },
+      {
+        "query": "streaming services alternative to cable",
+        "via": "simple"
+      },
+      {
+        "query": "hulu streaming alternatives",
+        "via": "simple"
+      },
+      {
+        "query": "streaming services options",
+        "via": "simple"
+      },
+      {
+        "query": "music streaming services alternatives",
+        "via": "simple"
+      },
+      {
+        "query": "free streaming services alternatives",
+        "via": "simple"
+      },
+      {
+        "query": "best streaming services alternatives to netflix",
+        "via": "simple"
+      }
+    ]
+  }
+]

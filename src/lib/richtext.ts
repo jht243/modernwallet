@@ -19,15 +19,26 @@ const _rhAnchor = `<a href="${ROBINHOOD_URL}" target="_blank" rel="${PARTNER_REL
 /** Point Robinhood at our referral link everywhere it's mentioned in body prose:
  *  (1) rewrite any existing robinhood.com anchor to the referral URL + sponsored rel,
  *  (2) auto-link bare "Robinhood" mentions that aren't already inside an anchor. */
-function rewriteRobinhoodAnchors(html: string): string {
+type LinkifyOptions = { preserveSourceUrls?: string[] };
+
+function markEditorialSource(openingTag: string): string {
+  return /\sdata-editorial-source(?:\s|=|>)/i.test(openingTag)
+    ? openingTag
+    : openingTag.replace(/>$/, ' data-editorial-source="true">');
+}
+
+function rewriteRobinhoodAnchors(html: string, preserveSourceUrls: string[] = []): string {
+  const sourceUrls = new Set(preserveSourceUrls);
   return html.replace(
-    /<a href="https?:\/\/(?:www\.)?robinhood\.com[^"]*"[^>]*>/gi,
-    `<a href="${ROBINHOOD_URL}" target="_blank" rel="${PARTNER_REL}">`,
+    /<a href="(https?:\/\/(?:www\.)?robinhood\.com[^"]*)"[^>]*>/gi,
+    (openingTag, url: string) => sourceUrls.has(url)
+      ? markEditorialSource(openingTag)
+      : `<a href="${ROBINHOOD_URL}" target="_blank" rel="${PARTNER_REL}">`,
   );
 }
 
-function robinhoodize(html: string): string {
-  html = rewriteRobinhoodAnchors(html);
+function robinhoodize(html: string, preserveSourceUrls: string[] = []): string {
+  html = rewriteRobinhoodAnchors(html, preserveSourceUrls);
   // Split on existing anchors so we never link text that's already a link.
   return html
     .split(/(<a\b[^>]*>.*?<\/a>)/gis)
@@ -56,8 +67,8 @@ function renderLinks(input: string): string {
 }
 
 /** Body prose: inline links + Robinhood referral handling (anchor rewrite + bare-mention autolink). */
-export function linkify(input: string): string {
-  return robinhoodize(renderLinks(input));
+export function linkify(input: string, options: LinkifyOptions = {}): string {
+  return robinhoodize(renderLinks(input), options.preserveSourceUrls);
 }
 
 /** Short data fields (pricing, pros/cons, table cells, card intros): inline links only. Explicit
@@ -162,7 +173,7 @@ function list(block: string): string {
 
 /** Render a section body: blank-line-separated blocks, each a paragraph, a pipe table or a list.
  *  Use with a single <Fragment set:html={richBody(...)} />. */
-export function richBody(input: string): string {
+export function richBody(input: string, options: LinkifyOptions = {}): string {
   const blocks = (input || "").split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean);
   // A list written with a blank line between items arrives as several one-line blocks.
   // Merge adjacent all-list-line blocks so it renders as ONE list, not N paragraphs.
@@ -173,6 +184,6 @@ export function richBody(input: string): string {
     else merged.push(b);
   }
   return merged
-    .map((b) => (isPipeTable(b) ? pipeTable(b) : isList(b) ? list(b) : `<p>${linkify(b)}</p>`))
+    .map((b) => (isPipeTable(b) ? pipeTable(b) : isList(b) ? list(b) : `<p>${linkify(b, options)}</p>`))
     .join("");
 }

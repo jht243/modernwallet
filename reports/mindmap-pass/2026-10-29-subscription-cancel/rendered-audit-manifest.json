@@ -1,0 +1,73 @@
+{
+  "author": "root",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/checklists/cancel-subscription-planner/",
+      "expectedUpdatedDate": "2026-10-29",
+      "requiredText": [
+        "Can't Cancel a Subscription? Your 2026 Rights + Step-by-Step Scripts",
+        "Not legal advice",
+        "Frequently Asked Questions",
+        "Sources"
+      ],
+      "forbiddenText": [
+        "5,270 posts",
+        "1.8×",
+        "most people don't know",
+        "This never affects our rankings or editorial coverage."
+      ],
+      "volatileThirdPartyAds": "mediavine",
+      "contributionId": "mindmap-pass:cancel-subscription-planner:2026-10-29",
+      "growthFile": "reports/mindmap-pass/2026-10-29-subscription-cancel/evidence/cancel-subscription-planner/growth.json",
+      "evidenceFile": "reports/mindmap-pass/2026-10-29-subscription-cancel/evidence/cancel-subscription-planner/evidence.json"
+    },
+    {
+      "path": "/checklists/",
+      "expectedUpdatedDate": "2026-10-29",
+      "requiredText": [
+        "Interactive planner"
+      ],
+      "volatileThirdPartyAds": "mediavine",
+      "forbiddenText": [
+        "This never affects our rankings or editorial coverage."
+      ]
+    },
+    {
+      "path": "/guides/how-to-make-a-budget/",
+      "expectedUpdatedDate": "2026-10-29",
+      "requiredText": [
+        "Where the Numbers Come from When You Make a Budget",
+        "subscription cancellation planner"
+      ],
+      "volatileThirdPartyAds": "mediavine",
+      "forbiddenText": [
+        "This never affects our rankings or editorial coverage."
+      ]
+    },
+    {
+      "path": "/guides/how-to-budget-for-teens-college-students/",
+      "expectedUpdatedDate": "2026-10-29",
+      "requiredText": [
+        "Subscription Creep: The Quiet Budget Killer",
+        "subscription cancellation planner"
+      ],
+      "volatileThirdPartyAds": "mediavine",
+      "forbiddenText": [
+        "This never affects our rankings or editorial coverage."
+      ]
+    },
+    {
+      "path": "/guides/is-robinhood-gold-worth-it/",
+      "expectedUpdatedDate": "2026-10-29",
+      "requiredText": [
+        "Robinhood Gold Billing and Cancellation",
+        "subscription cancellation planner"
+      ],
+      "volatileThirdPartyAds": "mediavine",
+      "forbiddenText": [
+        "This never affects our rankings or editorial coverage."
+      ]
+    }
+  ]
+}

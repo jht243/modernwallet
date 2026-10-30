@@ -16,13 +16,26 @@ export function getStaticPaths() {
 
 const { guide } = Astro.props;
 const canonicalUrl = new URL(`/guides/${guide.slug}/`, Astro.site).toString();
+const APPROVED_SECTION_ANCHORS: Record<string, Record<string, string>> = {
+  "how-to-make-a-budget": {
+    "Where the Numbers Come from When You Make a Budget": "where-the-numbers-come-from-when-you-make-a-budget",
+  },
+  "how-to-budget-for-teens-college-students": {
+    "Subscription Creep: The Quiet Budget Killer": "subscription-creep-the-quiet-budget-killer",
+  },
+  "is-robinhood-gold-worth-it": {
+    "Robinhood Gold Billing and Cancellation": "robinhood-gold-billing-and-cancellation",
+  },
+};
 
 // Guides vendors read ("best X", "X vs Y", alternatives, reviews) get one
 // "Advertise With Us" box: under the section holding the first table, else
 // after the last body section.
 const showSponsor =
   /(^best-|-vs-|alternatives|-review$)/.test(guide.slug) && !guide.slug.startsWith("how-to-");
-const renderedSections = guide.sections.map((s) => ({ ...s, html: richBody(s.body) }));
+const preserveRobinhoodSourceLinks = guide.slug === "is-robinhood-gold-worth-it";
+const richTextOptions = { preserveSourceUrls: preserveRobinhoodSourceLinks ? (guide.sources ?? []).map((source) => source.url) : [] };
+const renderedSections = guide.sections.map((s) => ({ ...s, html: richBody(s.body, richTextOptions) }));
 const firstTableIdx = renderedSections.findIndex((s) => s.html.includes("<table"));
 const sponsorAfterIdx = showSponsor
   ? (firstTableIdx >= 0 ? firstTableIdx : renderedSections.length - 1)
@@ -52,12 +65,12 @@ const jsonLdArticle = articleSchema({
   headline: guide.h1,
   description: guide.metaDescription,
   url: canonicalUrl,
-  datePublished: guide.updated ?? LAST_UPDATED,
+  datePublished: guide.published ?? guide.updated ?? LAST_UPDATED,
   dateModified: guide.updated ?? LAST_UPDATED,
   sources: guide.sources,
 });
 ---
-<BaseLayout title={guide.title} description={guide.metaDescription} noAds={guide.noAds}>
+<BaseLayout title={guide.title} description={guide.metaDescription} noAds={guide.noAds} affiliateDisclosureText={["how-to-make-a-budget", "how-to-budget-for-teens-college-students", "is-robinhood-gold-worth-it"].includes(guide.slug) ? "Some links on this site are referral or affiliate links. We may earn a reward or commission at no cost to you." : undefined}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
   {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdPerson)} />
@@ -73,7 +86,7 @@ const jsonLdArticle = articleSchema({
     <header class="hero">
       <h1>{guide.h1}</h1>
       <Byline updated={guide.updated} />
-      {paragraphs(guide.introText).map((para) => <p class="lede" {...(guide.slug === "how-to-buy-anthropic-stock" ? { "data-no-entity-link": "" } : {})} set:html={linkify(para)} />)}
+      {paragraphs(guide.introText).map((para) => <p class="lede" {...(guide.slug === "how-to-buy-anthropic-stock" ? { "data-no-entity-link": "" } : {})} set:html={linkify(para, richTextOptions)} />)}
     </header>
 
     <section class="tools" aria-label="Tools for this journey">
@@ -88,7 +101,7 @@ const jsonLdArticle = articleSchema({
     {renderedSections.map((s, i) => (
       <>
         <section class="section" {...(guide.slug === "how-to-buy-anthropic-stock" ? { "data-no-entity-link": "" } : {})}>
-          <h2>{s.heading}</h2>
+          <h2 id={APPROVED_SECTION_ANCHORS[guide.slug]?.[s.heading]}>{s.heading}</h2>
           <Fragment set:html={s.html} />
         </section>
         {i === sponsorAfterIdx && <SponsorSlot path={`/guides/${guide.slug}/`} />}
@@ -101,14 +114,14 @@ const jsonLdArticle = articleSchema({
         {guide.faqs.map((f) => (
           <details class="faq">
             <summary><h3>{f.question}</h3></summary>
-            <p set:html={linkify(f.answer)} />
+            <p set:html={linkify(f.answer, richTextOptions)} />
           </details>
         ))}
       </div>
     </section>
 
     {BUSINESS_GUIDE_SLUGS.has(guide.slug) && <LeadForm heading="Ready to compare real financing offers?" />}
-    <Sources sources={guide.sources} />
+    <Sources sources={guide.sources} preserveEditorialSourceLinks={preserveRobinhoodSourceLinks} />
   </main>
 
   <style>

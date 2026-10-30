@@ -1,0 +1,132 @@
+{
+  "checked": "2026-10-29",
+  "provider": "DataForSEO only",
+  "expansionLimit": 20,
+  "providerIdeaRowsReturned": 100,
+  "uniqueAutocompleteRowsReturned": 88,
+  "rawIdeaRowsAcrossFiveSeeds": 188,
+  "seeds": [
+    {
+      "file": "expand-cancel-adt-contract.json",
+      "seed": "cancel adt contract",
+      "limitPerSource": 20,
+      "providerIdeas": 20,
+      "uniqueAutocompleteIdeas": 16,
+      "rawRows": 36,
+      "providerNote": "Expansion returned 20 provider + 16 unique autocomplete ideas for 'cancel ADT contract' (limit=20 per source; unmeasured autocomplete metrics remain estimates)"
+    },
+    {
+      "file": "expand-cancel-att-service.json",
+      "seed": "cancel at and t service",
+      "limitPerSource": 20,
+      "providerIdeas": 20,
+      "uniqueAutocompleteIdeas": 18,
+      "rawRows": 38,
+      "providerNote": "Expansion returned 20 provider + 18 unique autocomplete ideas for 'cancel AT&T service' (limit=20 per source; unmeasured autocomplete metrics remain estimates)"
+    },
+    {
+      "file": "expand-cancel-gym-membership.json",
+      "seed": "crunch gym cancel membership",
+      "limitPerSource": 20,
+      "providerIdeas": 20,
+      "uniqueAutocompleteIdeas": 20,
+      "rawRows": 40,
+      "providerNote": "Expansion returned 20 provider + 20 unique autocomplete ideas for 'cancel gym membership' (limit=20 per source; unmeasured autocomplete metrics remain estimates)"
+    },
+    {
+      "file": "expand-cancel-streaming-subscription.json",
+      "seed": "streaming zone eu cancel subscription",
+      "limitPerSource": 20,
+      "providerIdeas": 20,
+      "uniqueAutocompleteIdeas": 20,
+      "rawRows": 40,
+      "providerNote": "Expansion returned 20 provider + 20 unique autocomplete ideas for 'cancel streaming subscription' (limit=20 per source; unmeasured autocomplete metrics remain estimates)"
+    },
+    {
+      "file": "expand-how-to-cancel-subscription.json",
+      "seed": "how to cancel a subscription on amazon",
+      "limitPerSource": 20,
+      "providerIdeas": 20,
+      "uniqueAutocompleteIdeas": 14,
+      "rawRows": 34,
+      "providerNote": "Expansion returned 20 provider + 14 unique autocomplete ideas for 'how to cancel a subscription' (limit=20 per source; unmeasured autocomplete metrics remain estimates)"
+    }
+  ],
+  "shortlist": {
+    "count": 10,
+    "status": "selected for coverage/intent validation, not all standalone pages",
+    "families": [
+      {
+        "family": "general subscription cancellation / refusal",
+        "queries": [
+          "can't cancel a subscription",
+          "how to cancel a subscription",
+          "can't cancel subscription after calling",
+          "cancellation script for subscription"
+        ]
+      },
+      {
+        "family": "gym membership cancellation",
+        "queries": [
+          "cancel gym membership",
+          "how to cancel a Crunch gym membership"
+        ]
+      },
+      {
+        "family": "AT&T service cancellation",
+        "queries": [
+          "cancel AT&T service"
+        ]
+      },
+      {
+        "family": "ADT contract / alarm monitoring cancellation",
+        "queries": [
+          "cancel ADT contract"
+        ]
+      },
+      {
+        "family": "streaming subscription cancellation",
+        "queries": [
+          "cancel streaming subscriptions",
+          "how do I cancel streaming services"
+        ]
+      }
+    ],
+    "familiesAccepted": 5
+  },
+  "rejectedOrOmitted": {
+    "candidateScopeFamiliesRejectedAsSeparatePages": 4,
+    "families": [
+      {
+        "family": "telecom shopping/comparison",
+        "example": "AT&T vs Verizon",
+        "volume": "2,900/mo DataForSEO",
+        "reason": "shopping/provider-comparison intent, not cancellation refusal"
+      },
+      {
+        "family": "alarm-service comparison",
+        "example": "ADT vs SimpliSafe",
+        "volume": "1,900/mo DataForSEO",
+        "reason": "shopping/provider-comparison intent, not cancellation refusal"
+      },
+      {
+        "family": "gym price comparison",
+        "example": "gym membership price comparison",
+        "volume": "210/mo DataForSEO",
+        "reason": "price-shopping intent, not cancellation refusal"
+      },
+      {
+        "family": "streaming price comparison",
+        "example": "streaming subscription price comparison",
+        "volume": "150–1,500/mo autocomplete estimate only, not measured",
+        "reason": "price-shopping intent, not cancellation refusal"
+      }
+    ],
+    "offTopicSerpQuestions": [
+      "How can I cancel my EntityCheck subscription? (unrelated brand entity)"
+    ],
+    "notAttempted": "A comprehensive 50-state/locality legal survey; page scope is selected primary-source examples, with no exhaustive coverage claim."
+  },
+  "stopWidenRationale": "All five targeted cancellation seeds returned up to the per-source limit of 20 DataForSEO ideas. The free question sweeps returned 37 cancellation and 32 gym suggestions; exact-query live PAA provided six questions (five on-topic) and the direct target appeared in Autocomplete. Narrower biller/service families and comparison/pricing intents were checked; the latter are excluded. No additional paid expansion was justified for this single decision-aid scope. The legal examples are intentionally selected rather than comprehensive; widen legal research only if Phase 3 findings show the tool otherwise implies complete state coverage.",
+  "volumeCaveat": "Autocomplete rows are estimates, not measured search volume. DataForSEO volumes are rounded/bucketed; no post counts or awareness percentages were derived."
+}

@@ -1,0 +1,60 @@
+{
+ "keyword": "cancel AT&T service",
+ "verdict": "winnable",
+ "forum_dominated": true,
+ "ai_overview_present": true,
+ "ai_overview_cited_domains": [
+  "www.att.com",
+  "www.youtube.com",
+  "www.wikihow.com"
+ ],
+ "featured_snippet": null,
+ "top10_domains": [
+  "www.reddit.com",
+  "www.att.com",
+  "www.youtube.com",
+  "www.justanswer.com",
+  "www.att.com",
+  "www.slashgear.com",
+  "www.facebook.com",
+  "stilt.com",
+  "www.facebook.com",
+  "www.att.com"
+ ],
+ "major_domains": [],
+ "forum_domains": [
+  "www.reddit.com",
+  "www.youtube.com",
+  "www.facebook.com",
+  "www.facebook.com"
+ ],
+ "serp_feature_mix": {
+  "ai_overview": 1,
+  "organic": 17,
+  "people_also_ask": 1,
+  "perspectives": 1,
+  "related_searches": 2,
+  "video": 1
+ },
+ "paa": [
+  "How to return att air equipment?",
+  "What is the 1-800-number for AT&T customer service?",
+  "How do I pay my AT&T bill using my account number?",
+  "How can I contact AT&T Prepaid customer support?",
+  "How to speak with a live agent in AT&T?",
+  "What number is 1 800 331 0500?"
+ ],
+ "related_searches": [
+  "Cancel at&t service phone number",
+  "How to cancel AT&T service online",
+  "How to cancel AT&T service online without calling",
+  "Can you cancel AT&T service online",
+  "Cancel AT&T wireless service",
+  "How to cancel AT&T Internet on app",
+  "Cancel AT&T Internet",
+  "Can I cancel AT&T internet in store"
+ ],
+ "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+ "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com, www.facebook.com) incl. #1; AI Overview present, cites www.att.com, www.youtube.com, www.wikihow.com",
+ "se_results_count": 86
+}

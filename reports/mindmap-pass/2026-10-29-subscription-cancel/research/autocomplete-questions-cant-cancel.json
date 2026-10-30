@@ -1,0 +1,154 @@
+{
+  "seed": "can't cancel a subscription",
+  "mode": "questions",
+  "suggestions": [
+    {
+      "query": "what to cancel subscriptions",
+      "via": "question:what"
+    },
+    {
+      "query": "what to do if you can't cancel a subscription",
+      "via": "question:what"
+    },
+    {
+      "query": "why is it so hard to cancel subscriptions",
+      "via": "question:what"
+    },
+    {
+      "query": "how to cancel a subscription on iphone",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel a subscription on amazon",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel a subscription",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel a subscription on roku",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel a subscription on google play",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel a subscription on paypal",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel a subscription on apple",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel a subscription on steam",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel a subscription on tiktok",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel a subscription on amazon prime",
+      "via": "question:how"
+    },
+    {
+      "query": "why to cancel spotify subscription",
+      "via": "question:why"
+    },
+    {
+      "query": "when to cancel a subscription",
+      "via": "question:when"
+    },
+    {
+      "query": "when to cancel netflix subscription",
+      "via": "question:when"
+    },
+    {
+      "query": "when to cancel chatgpt subscription",
+      "via": "question:when"
+    },
+    {
+      "query": "when to cancel adobe subscription",
+      "via": "question:when"
+    },
+    {
+      "query": "when to cancel hulu subscription",
+      "via": "question:when"
+    },
+    {
+      "query": "when to cancel apple subscription",
+      "via": "question:when"
+    },
+    {
+      "query": "when to cancel adobe subscription without fee",
+      "via": "question:when"
+    },
+    {
+      "query": "when to cancel spotify subscription",
+      "via": "question:when"
+    },
+    {
+      "query": "when to cancel claude subscription",
+      "via": "question:when"
+    },
+    {
+      "query": "when to cancel ancestry subscription",
+      "via": "question:when"
+    },
+    {
+      "query": "where to cancel a subscription on iphone",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel a subscription",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel a subscription on amazon",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel a subscription apple",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel a subscription on paypal",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel a subscription on steam",
+      "via": "question:where"
+    },
+    {
+      "query": "where do i cancel a subscription",
+      "via": "question:where"
+    },
+    {
+      "query": "where do i cancel a subscription on amazon",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel a netflix subscription",
+      "via": "question:where"
+    },
+    {
+      "query": "where do i cancel a subscription on roku",
+      "via": "question:where"
+    },
+    {
+      "query": "where to cancel subscriptions on android",
+      "via": "question:which"
+    },
+    {
+      "query": "where to cancel subscription in google",
+      "via": "question:which"
+    },
+    {
+      "query": "where to cancel subscription in canva",
+      "via": "question:which"
+    }
+  ]
+}

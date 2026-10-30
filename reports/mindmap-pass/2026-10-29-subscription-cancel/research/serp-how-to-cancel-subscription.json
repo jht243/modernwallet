@@ -1,0 +1,65 @@
+{
+ "keyword": "how to cancel a subscription",
+ "verdict": "contested",
+ "forum_dominated": true,
+ "ai_overview_present": true,
+ "ai_overview_cited_domains": [
+  "support.apple.com",
+  "www.youtube.com",
+  "www.consumerreports.org",
+  "www.primevideo.com",
+  "www.nerdwallet.com"
+ ],
+ "featured_snippet": null,
+ "top10_domains": [
+  "support.apple.com",
+  "support.google.com",
+  "www.aarp.org",
+  "enrichpartners.com",
+  "support.google.com",
+  "www.nerdwallet.com",
+  "www.amazon.com",
+  "www.youtube.com",
+  "www.youtube.com",
+  "www.youtube.com"
+ ],
+ "major_domains": [
+  "support.apple.com",
+  "support.google.com",
+  "support.google.com",
+  "www.amazon.com"
+ ],
+ "forum_domains": [
+  "www.youtube.com",
+  "www.youtube.com",
+  "www.youtube.com"
+ ],
+ "serp_feature_mix": {
+  "ai_overview": 1,
+  "organic": 18,
+  "people_also_ask": 1,
+  "related_searches": 1,
+  "video": 1
+ },
+ "paa": [
+  "How can I remove a subscription?",
+  "How do I cancel subscriptions on my iPhone?",
+  "How do I unsubscribe from an unwanted subscription?",
+  "How do I cancel payment subscriptions?",
+  "How can I find and cancel unwanted subscriptions?",
+  "Can I block a subscription from my card?"
+ ],
+ "related_searches": [
+  "How to cancel a subscription on iphone",
+  "How to cancel app subscription on iPhone",
+  "How to cancel subscriptions on Android",
+  "My subscriptions Cancel subscription",
+  "How to cancel a subscription on samsung",
+  "Google Play subscription cancel",
+  "How to cancel subscription in Google",
+  "Cancel subscription Google pay"
+ ],
+ "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+ "evidence": "forum/community results own the SERP (www.youtube.com); 4/10 major platforms (support.apple.com, support.google.com, support.google.com, www.amazon.com); AI Overview present, cites support.apple.com, www.youtube.com, www.consumerreports.org, www.primevideo.com",
+ "se_results_count": 98
+}

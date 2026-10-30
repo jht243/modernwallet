@@ -1,0 +1,138 @@
+{
+  "seed": "cancel AT&T service",
+  "mode": "questions",
+  "suggestions": [
+    {
+      "query": "cancel at&t service online",
+      "via": "question:what"
+    },
+    {
+      "query": "cancel at&t service phone number",
+      "via": "question:what"
+    },
+    {
+      "query": "cancel at&t service internet",
+      "via": "question:what"
+    },
+    {
+      "query": "cancel at&t service number",
+      "via": "question:what"
+    },
+    {
+      "query": "what number to call to cancel at&t service",
+      "via": "question:what"
+    },
+    {
+      "query": "what happens if i cancel my att service",
+      "via": "question:what"
+    },
+    {
+      "query": "how do you cancel at&t service",
+      "via": "question:what"
+    },
+    {
+      "query": "can i cancel at&t service online",
+      "via": "question:how"
+    },
+    {
+      "query": "can i cancel at&t service",
+      "via": "question:how"
+    },
+    {
+      "query": "can i cancel att service on the app",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel at&t service online",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel at&t service online without calling",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel at&t service",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel att service on app",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel att service without calling",
+      "via": "question:how"
+    },
+    {
+      "query": "how do i cancel at&t service",
+      "via": "question:how"
+    },
+    {
+      "query": "how can you cancel att service",
+      "via": "question:how"
+    },
+    {
+      "query": "why did att cancel my service",
+      "via": "question:why"
+    },
+    {
+      "query": "why would att cancel my service",
+      "via": "question:why"
+    },
+    {
+      "query": "why would att cancel my order",
+      "via": "question:why"
+    },
+    {
+      "query": "why is at&t canceling my order",
+      "via": "question:why"
+    },
+    {
+      "query": "does att have a cancellation fee",
+      "via": "question:is"
+    },
+    {
+      "query": "can you cancel at&t service online",
+      "via": "question:does"
+    },
+    {
+      "query": "can you cancel att service in store",
+      "via": "question:does"
+    },
+    {
+      "query": "can you cancel att service on the app",
+      "via": "question:does"
+    },
+    {
+      "query": "how do i cancel att service for a deceased person",
+      "via": "question:does"
+    },
+    {
+      "query": "how do i cancel at&t service online",
+      "via": "question:does"
+    },
+    {
+      "query": "to cancel at&t service",
+      "via": "question:can"
+    },
+    {
+      "query": "number to cancel at&t service",
+      "via": "question:can"
+    },
+    {
+      "query": "need to cancel at&t service",
+      "via": "question:should"
+    },
+    {
+      "query": "when does at&t cancel service for non payment",
+      "via": "question:when"
+    },
+    {
+      "query": "when does at&t cancel service",
+      "via": "question:when"
+    },
+    {
+      "query": "when will at&t cancel my service",
+      "via": "question:when"
+    }
+  ]
+}

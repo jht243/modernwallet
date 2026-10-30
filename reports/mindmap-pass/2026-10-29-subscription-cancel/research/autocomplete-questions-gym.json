@@ -1,0 +1,134 @@
+{
+  "seed": "cancel gym membership",
+  "mode": "questions",
+  "suggestions": [
+    {
+      "query": "how cancel gym membership",
+      "via": "question:how"
+    },
+    {
+      "query": "can i cancel gym membership online",
+      "via": "question:how"
+    },
+    {
+      "query": "can i cancel gym membership over the phone",
+      "via": "question:how"
+    },
+    {
+      "query": "can i cancel gym membership",
+      "via": "question:how"
+    },
+    {
+      "query": "can i cancel gym membership through bank",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel gym membership puregym",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel gym membership crunch",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel gym membership without paying fee",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel gym membership eos",
+      "via": "question:how"
+    },
+    {
+      "query": "how to cancel gym membership fit4less",
+      "via": "question:how"
+    },
+    {
+      "query": "why cancel gym membership",
+      "via": "question:why"
+    },
+    {
+      "query": "why is cancelling gym membership so hard",
+      "via": "question:why"
+    },
+    {
+      "query": "reasons to cancel gym membership",
+      "via": "question:why"
+    },
+    {
+      "query": "can you cancel gym memberships",
+      "via": "question:why"
+    },
+    {
+      "query": "why can't you cancel gym memberships online",
+      "via": "question:why"
+    },
+    {
+      "query": "what happens if i cancel my gym membership",
+      "via": "question:why"
+    },
+    {
+      "query": "is it hard to cancel gym membership",
+      "via": "question:is"
+    },
+    {
+      "query": "can you cancel gym membership online",
+      "via": "question:does"
+    },
+    {
+      "query": "can you cancel gym membership over the phone",
+      "via": "question:does"
+    },
+    {
+      "query": "can you cancel gym membership",
+      "via": "question:does"
+    },
+    {
+      "query": "can t cancel gym membership",
+      "via": "question:does"
+    },
+    {
+      "query": "do you have to pay to cancel a gym membership",
+      "via": "question:does"
+    },
+    {
+      "query": "to cancel gym membership",
+      "via": "question:can"
+    },
+    {
+      "query": "can rocket money cancel gym memberships",
+      "via": "question:can"
+    },
+    {
+      "query": "should i cancel my gym membership",
+      "via": "question:should"
+    },
+    {
+      "query": "does cancelling a gym membership affect your credit",
+      "via": "question:should"
+    },
+    {
+      "query": "when to cancel gym membership",
+      "via": "question:when"
+    },
+    {
+      "query": "when can you cancel gym membership",
+      "via": "question:when"
+    },
+    {
+      "query": "when canceling planet fitness membership",
+      "via": "question:when"
+    },
+    {
+      "query": "when to cancel gym group membership",
+      "via": "question:when"
+    },
+    {
+      "query": "where to cancel gym membership",
+      "via": "question:where"
+    },
+    {
+      "query": "what do i need to cancel my gym membership",
+      "via": "question:which"
+    }
+  ]
+}

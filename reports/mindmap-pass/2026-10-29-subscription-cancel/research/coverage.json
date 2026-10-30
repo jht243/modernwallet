@@ -1,0 +1,24 @@
+[
+ {
+  "candidate": {
+   "route": "/guides/cancel-subscription-when-company-refuses",
+   "keyword": "how to cancel a subscription",
+   "question": "What to do if you can't cancel a subscription?",
+   "bucket": "create new content",
+   "row": "-"
+  },
+  "terms": [
+   "cancel",
+   "company",
+   "refuse"
+  ],
+  "formats": [
+   "pricing"
+  ],
+  "matches": [],
+  "redirects": [],
+  "past_charts": [],
+  "commits": [],
+  "same_run": []
+ }
+]

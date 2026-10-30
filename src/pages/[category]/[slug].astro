@@ -52,7 +52,9 @@ const shouldNoindex = NOINDEX_PILLARS.has(calc.id);
 const reviewer = isLegal ? (entry.reviewer ?? REVIEWER) : undefined;
 const disclaimerScope = calc.id === TAX_PILLAR ? "tax" : "legal";
 // Checklist pages (mindmap-pass 2026-10-25) reuse this template; only the calculator-specific labels change.
-const isChecklist = calc.id === "checklists";
+const isSubscriptionCancellationPlanner = entry.islandId === "subscription-cancellation-planner";
+const isChecklist = calc.id === "checklists" && !isSubscriptionCancellationPlanner;
+const howParagraphs = entry.howItWorks.split("\n\n");
 
 // Build-time computation — inject real numbers into static HTML before JS hydrates.
 const stats = spokeStats(entry);
@@ -100,13 +102,21 @@ const jsonLdApp = {
   "@type": "WebApplication",
   name: entry.title,
   description: entry.metaDescription,
-  applicationCategory: "FinanceApplication",
+  applicationCategory: isSubscriptionCancellationPlanner ? "UtilitiesApplication" : "FinanceApplication",
   operatingSystem: "Any (web)",
   offers: { "@type": "Offer", price: 0, priceCurrency: "USD" },
   url: canonicalUrl,
 };
 ---
-<BaseLayout title={entry.title} description={entry.metaDescription} noindex={shouldNoindex}>
+
+{isSubscriptionCancellationPlanner && (
+  <style is:global>
+    #fixed_container_bottom { position: static !important; inset: auto !important; height: auto !important; min-height: 0 !important; z-index: auto !important; }
+    #fixed_container_bottom #adhesion_desktop_wrapper,
+    #fixed_container_bottom #adhesion_desktop_container { position: static !important; inset: auto !important; }
+  </style>
+)}
+<BaseLayout title={entry.title} description={entry.metaDescription} noindex={shouldNoindex} affiliateDisclosureText={isSubscriptionCancellationPlanner ? "Some links on this site are referral or affiliate links. We may earn a reward or commission at no cost to you." : undefined}>
   {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdApp)} />
@@ -124,7 +134,7 @@ const jsonLdApp = {
     <header class="hero">
       <h1>{entry.h1}</h1>
       <Byline reviewer={reviewer} updated={entry.updated} />
-      {isChecklist && <a class="skip-tool" href="#checklist-tool">Skip to the checklist</a>}
+      {(isChecklist || isSubscriptionCancellationPlanner) && <a class="skip-tool" href="#checklist-tool">{isSubscriptionCancellationPlanner ? "Skip to your cancellation plan" : "Skip to the checklist"}</a>}
       {paragraphs(entry.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
       {stats.length > 0 && (
         <div class="proof">
@@ -137,8 +147,8 @@ const jsonLdApp = {
 
     <div class="tool-wrap">
       <ShareButton title={entry.h1} />
-    <section class="tool-section" id={isChecklist ? "checklist-tool" : undefined} aria-label={isChecklist ? "Interactive checklist" : "Interactive calculator"} data-tool={isChecklist ? entry.slug : calc.id}>
-      <div class="tool-badge"><span class="dot"></span> {isChecklist ? "Interactive — answer a few questions" : "Interactive — edit any field"}</div>
+    <section class="tool-section" id={(isChecklist || isSubscriptionCancellationPlanner) ? "checklist-tool" : undefined} aria-label={isSubscriptionCancellationPlanner ? "Interactive subscription cancellation planner" : isChecklist ? "Interactive checklist" : "Interactive calculator"} data-tool={(isChecklist || isSubscriptionCancellationPlanner) ? entry.slug : calc.id}>
+      <div class="tool-badge"><span class="dot"></span> {isSubscriptionCancellationPlanner ? "Interactive — build your next steps" : isChecklist ? "Interactive — answer a few questions" : "Interactive — edit any field"}</div>
       <CalculatorIsland
         client:only="react"
         calculatorId={entry.islandId ?? calc.islandId}
@@ -152,27 +162,34 @@ const jsonLdApp = {
 
     {isChecklist && <ChecklistFullList id={(entry.preset as { checklist: any }).checklist} />}
 
-    <section class="section">
-      <h2>{isChecklist ? "How the Checklist Is Built" : "How it's calculated"}</h2>
-      {entry.howItWorks.split("\n\n").map((para) => <p set:html={linkify(para)} />)}
-    </section>
+    {entry.sectionHeadings ? entry.sectionHeadings.map((heading, i) => (
+      <section class="section">
+        <h2>{heading}</h2>
+        {howParagraphs[i] && <p set:html={linkify(howParagraphs[i])} />}
+      </section>
+    )) : (
+      <section class="section">
+        <h2>{isChecklist ? "How the Checklist Is Built" : "How it's calculated"}</h2>
+        {howParagraphs.map((para) => <p set:html={linkify(para)} />)}
+      </section>
+    )}
 
     {entry.workedExample && (
       <section class="section">
-        <h2>A worked example</h2>
+        <h2>{entry.workedExampleHeading ?? "A worked example"}</h2>
         {paragraphs(entry.workedExample).map((para) => <p set:html={linkify(para)} />)}
       </section>
     )}
 
     <section class="section">
-      <h2>Common mistakes to avoid</h2>
+      <h2>{entry.commonMistakesHeading ?? "Common mistakes to avoid"}</h2>
       <ul class="mistakes">
         {entry.commonMistakes.map((m) => <li set:html={linkify(m)} />)}
       </ul>
     </section>
 
     <section class="section">
-      <h2>Frequently asked questions</h2>
+      <h2>{isSubscriptionCancellationPlanner ? "Frequently Asked Questions" : "Frequently asked questions"}</h2>
       <div class="faqs">
         {entry.faqs.map((f) => (
           <details class="faq">
@@ -183,7 +200,7 @@ const jsonLdApp = {
       </div>
     </section>
 
-    {isLegal && <LegalDisclaimer scope={disclaimerScope} />}
+    {(isLegal || Boolean(entry.disclaimerText)) && <LegalDisclaimer scope={disclaimerScope} text={entry.disclaimerText} />}
     <Sources sources={entry.sources} />
 
     {stateLinks.length > 0 && (
@@ -213,7 +230,7 @@ const jsonLdApp = {
     )}
 
     {BUSINESS_CALC_IDS.has(calc.id) && <LeadForm financingType={FINANCING_LABEL[calc.id]} />}
-    <CrossLinks calcId={calc.id} />
+    {!isSubscriptionCancellationPlanner && <CrossLinks calcId={calc.id} />}
   </main>
 
   <style>

@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-29",
+  "ga4_pull": "reports/trend-pass/2026-10-29.ga4.pull.json",
+  "matching_rows": 0,
+  "content_evidence": "reports/content-evidence.jsonl",
+  "decision": "No current route-level baseline or comparator for subscription cancellation. Start a post-launch baseline; no uplift forecast."
+}

@@ -5,18 +5,16 @@
 interface Props {
   /** Short category tag surfaced in the label, e.g. "legal" or "tax". Defaults to "legal". */
   scope?: "legal" | "tax";
+  /** Route-specific neutral wording; it does not imply professional review. */
+  text?: string;
 }
-const { scope = "legal" } = Astro.props as Props;
+const { scope = "legal", text } = Astro.props as Props;
 const label = scope === "tax" ? "Not tax advice" : "Not legal advice";
+const body = text ?? `This calculator provides estimates for educational purposes and is not ${scope === "tax" ? "tax" : "legal or tax"} advice. Laws, tax rules, and program eligibility vary by state and change over time. Consult a licensed ${scope === "tax" ? "tax professional" : "attorney"} in your state before acting on any result shown here.`;
 ---
 <aside class="legal-disclaimer" role="note" aria-label={label}>
   <span class="tag">{label}</span>
-  <p>
-    This calculator provides estimates for educational purposes and is not
-    {scope === "tax" ? "tax" : "legal or tax"} advice. Laws, tax rules, and program eligibility vary
-    by state and change over time. Consult a licensed {scope === "tax" ? "tax professional" : "attorney"}
-    in your state before acting on any result shown here.
-  </p>
+  <p>{body}</p>
 </aside>
 
 <style>

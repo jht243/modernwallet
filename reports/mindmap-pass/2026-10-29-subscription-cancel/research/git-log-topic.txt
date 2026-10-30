@@ -1,0 +1,691 @@
+commit 4ae85ee6467f5cb5f2ff29189af2f8db25c79fe0
+Author: Claude <noreply@anthropic.com>
+Date:   Thu Oct 29 12:11:29 2026 +0000
+
+    page-quality-pass: 2026-10-29 digest (no-changes)
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01YLDLKEzND9AVJRzLZdABjg
+
+ reports/page-quality-pass/2026-10-29.md        |  32 ++
+ reports/page-quality-pass/2026-10-29.pull.json | 450 +++++++++++++++++++++++++
+ 2 files changed, 482 insertions(+)
+
+commit 4742fc657785c0dfa86afd0ab602e658b8f40710
+Author: Claude <noreply@anthropic.com>
+Date:   Thu Oct 29 09:24:01 2026 +0000
+
+    ga4-top-pages: 2026-10-29 audit ledgers (3 pages audited, no surviving candidates)
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01YLDLKCF6Qifxqqy8wH88V3
+
+ reports/trend-pass/2026-10-29.ga4.pull.json | 129 ++++++++++++++++++++++++++++
+ reports/trend-pass/ga4-page-audits.md       |   3 +
+ reports/trend-pass/ledger.md                |   4 +
+ 3 files changed, 136 insertions(+)
+
+commit c781320fb640bd3b360fd3fcdcb9793570474e73
+Author: Claude <noreply@anthropic.com>
+Date:   Thu Oct 29 08:08:28 2026 +0000
+
+    chore(ahrefs-audit): fix 3 broken internal links, hub schema, og/twitter image, meta length
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01YLDLKBk1SBhhgp2CTZRoEk
+
+ reports/site-audit/2026-10-29.sweep.json           | 12 ++++++++++
+ src/data/comparisons.ts                            |  4 ++--
+ src/data/guides.ts                                 |  2 +-
+ ...st-bookkeeping-services-for-small-businesses.ts |  2 +-
+ src/layouts/BaseLayout.astro                       |  3 +++
+ src/pages/calculators/index.astro                  | 26 ++++++++++++++++++++++
+ src/pages/guides/index.astro                       | 10 +++++++++
+ src/pages/methodology.astro                        |  9 ++++++++
+ src/pages/roundup/index.astro                      | 11 +++++++++
+ 9 files changed, 75 insertions(+), 4 deletions(-)
+
+commit edaeab5a9a5f332578e776bc093600c30d1bc7b5
+Author: Claude <noreply@anthropic.com>
+Date:   Thu Oct 29 07:12:58 2026 +0000
+
+    trend-pass 2026-10-29: no pages built; Lane C chart, research pack, ledger
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01YLDLKBZSRzF5Um5rnqKRAj
+
+ ...-lane-c.autocomplete.index-investment-funds.csv |  20 ++
+ .../mindmap-pass/2026-10-29-trend-lane-c.heads.txt |   5 +
+ reports/mindmap-pass/2026-10-29-trend-lane-c.md    |  28 ++
+ .../2026-10-29-trend-lane-c.phrases.txt            |  11 +
+ .../mindmap-pass/2026-10-29-trend-lane-c.serp.json | 283 ++++++++++++++++++++
+ .../2026-10-29-trend-lane-c.volumes.err            |   5 +
+ .../2026-10-29-trend-lane-c.volumes.json           | 176 ++++++++++++
+ reports/trend-pass/2026-10-29.pull.json            | 296 +++++++++++++++++++++
+ reports/trend-pass/2026-10-29.research.md          |  12 +
+ reports/trend-pass/ledger.md                       |   2 +
+ 10 files changed, 838 insertions(+)
+
+commit 40eafda19fa8d08afb1c35e3f856e10227f8254b
+Author: Jonathan Teplitsky <jonathan@layer3labs.io>
+Date:   Wed Oct 28 21:55:29 2026 -0500
+
+    Preserve legacy measurement records when closing rendered-page audits
+
+ .claude/tools/rendered-audit.py      |  2 +-
+ .claude/tools/rendered-audit_test.py | 17 +++++++++++++++++
+ 2 files changed, 18 insertions(+), 1 deletion(-)
+
+commit 14f4482ee2135007468745be47a255da086c2fe7
+Author: Jonathan Teplitsky <jonathan@layer3labs.io>
+Date:   Wed Oct 28 20:53:53 2026 -0500
+
+    Complete final rendered-page audits and preserve workflow continuation
+
+ .claude/tools/rendered-audit.py      | 33 +++++++++++++++++++++++----------
+ .claude/tools/rendered-audit_test.py | 23 +++++++++++++++++++++++
+ 2 files changed, 46 insertions(+), 10 deletions(-)
+
+commit 9d8b41fe4c76e79062794b1e8c833a4ef2bae4db
+Author: Jonathan Teplitsky <jonathan@layer3labs.io>
+Date:   Wed Oct 28 20:29:01 2026 -0500
+
+    Complete final rendered-page audits and preserve workflow continuation
+
+ .claude/commands/_anti-ai-language.md              |  6 +--
+ .claude/commands/_content-standard.md              | 10 ++--
+ .claude/commands/_remediation-ladder.md            | 18 +++----
+ .claude/commands/_rendered-page-audit.md           |  3 +-
+ .../mindmap-pass/phase-9-commit-deliver.md         | 28 +++++-----
+ .claude/tools/primary-freshness_test.py            | 62 ++++++++++++++++++++++
+ .claude/tools/rendered-audit.py                    | 58 ++++++++++++++++++--
+ .claude/tools/rendered-audit_test.py               | 50 +++++++++++++++++
+ .claude/tools/worktree-freshness.py                |  8 ++-
+ 9 files changed, 207 insertions(+), 36 deletions(-)
+
+commit 3af7b0f47328650b3b674762f8550c606d0dc4de
+Author: Jonathan Teplitsky <jonathan@layer3labs.io>
+Date:   Wed Oct 28 18:08:04 2026 -0500
+
+    Preserve local additions during freshness verification and complete audit rules
+
+ .claude/commands/comparison-content-creator.md      |  4 ++--
+ .../comparison-content-creator/phase-4-audit.md     |  2 ++
+ .../ga4-top-pages-pass/phase-1-page-audit.md        |  8 +++++++-
+ .../commands/mindmap-pass/phase-3-new-content.md    |  2 ++
+ .claude/tools/worktree-freshness.py                 | 21 ++++++++++-----------
+ .claude/tools/worktree-freshness_test.py            | 17 +++++++++++++++++
+ 6 files changed, 40 insertions(+), 14 deletions(-)
+
+commit 07c70e14838c4374060a37d62a875ffffa0366f2
+Author: Jonathan Teplitsky <jonathan@layer3labs.io>
+Date:   Wed Oct 28 17:32:56 2026 -0500
+
+    Verify primary inputs and scope freshness receipts to each routine run
+
+ .claude/commands/_content-standard.md              |   1 +
+ .claude/commands/_workflow-checkpoints.md          |   4 +-
+ .claude/commands/ahrefs-site-audit-auto.md         |   1 +
+ .claude/commands/ai-answer-citation-pass-auto.md   |   1 +
+ .../ai-answer-citation-pass/phase-0-pull.md        |   1 +
+ .../ai-answer-citation-pass/phase-1-classify.md    |   1 +
+ .../ai-answer-citation-pass/phase-2-enrich.md      |   1 +
+ .../phase-3-audit-publish.md                       |   1 +
+ .claude/commands/autocomplete-pass-auto.md         |   1 +
+ .claude/commands/autocomplete-pass.md              |   1 +
+ .claude/commands/bing-webmaster-pass-auto.md       |   1 +
+ .claude/commands/bing-webmaster-pass.md            |   1 +
+ .claude/commands/comparison-content-auto.md        |   1 +
+ .claude/commands/comparison-content-creator.md     |   1 +
+ .../comparison-content-creator/phase-0-discover.md |   1 +
+ .../phase-1-candidates.md                          |   1 +
+ .../phase-1b-coverage-check.md                     |   1 +
+ .../comparison-content-creator/phase-2-score.md    |   1 +
+ .../comparison-content-creator/phase-3-generate.md |   1 +
+ .../comparison-content-creator/phase-3b-enrich.md  |   1 +
+ .../comparison-content-creator/phase-4-audit.md    |   1 +
+ .../comparison-content-creator/phase-5-publish.md  |   1 +
+ .../comparison-content-creator/phase-6-summary.md  |   1 +
+ .claude/commands/competitor-monitor-auto.md        |   1 +
+ .../competitor-monitor/phase-0-discover.md         |   1 +
+ .../commands/competitor-monitor/phase-1-scrape.md  |   1 +
+ .../commands/competitor-monitor/phase-2-dedup.md   |   1 +
+ .../competitor-monitor/phase-3-generate.md         |   1 +
+ .../competitor-monitor/phase-3c-tool-build.md      |   1 +
+ .../commands/competitor-monitor/phase-4-audit.md   |   1 +
+ .../commands/competitor-monitor/phase-5-publish.md |   1 +
+ .../competitor-monitor/phase-6-push-record.md      |   1 +
+ .../commands/competitor-monitor/phase-7-email.md   |   1 +
+ .claude/commands/core-update-report.md             |   1 +
+ .claude/commands/ga4-top-pages-pass-auto.md        |   1 +
+ .../commands/ga4-top-pages-pass/phase-0-pull.md    |   1 +
+ .../ga4-top-pages-pass/phase-1-page-audit.md       |   1 +
+ .../ga4-top-pages-pass/phase-2-opportunity-mine.md |   1 +
+ .../commands/ga4-top-pages-pass/phase-3-dedup.md   |   1 +
+ .../ga4-top-pages-pass/phase-4-execute-publish.md  |   1 +
+ .claude/commands/hype-radar-auto.md                |   1 +
+ .claude/commands/indexing-issues-gsc-pass.md       |   1 +
+ .../indexing-issues-gsc-pass/phase-0-discover.md   |   1 +
+ .../indexing-issues-gsc-pass/phase-1-canonical.md  |   1 +
+ .../phase-2-redirect-error.md                      |   1 +
+ .../phase-3-indexability.md                        |   1 +
+ .../phase-4-thin-content.md                        |   1 +
+ .../indexing-issues-gsc-pass/phase-5-audit.md      |   1 +
+ .../phase-6-internal-linking.md                    |   1 +
+ .../phase-7-sitemap-resubmit.md                    |   1 +
+ .../indexing-issues-gsc-pass/phase-8-summary.md    |   1 +
+ .../phase-9-commit-deliver.md                      |   1 +
+ .../indexing-issues-gsc-pass/phase-build-report.md |   1 +
+ .claude/commands/indexing-pass-auto.md             |   1 +
+ .claude/commands/keyword-gap-pass-auto.md          |   1 +
+ .claude/commands/keyword-gap-pass.md               |   1 +
+ .../commands/keyword-gap-pass/phase-0-discover.md  |   1 +
+ .../keyword-gap-pass/phase-1-consolidation.md      |   1 +
+ .../commands/keyword-gap-pass/phase-2-metadata.md  |   1 +
+ .../keyword-gap-pass/phase-3-new-content.md        |   1 +
+ .claude/commands/keyword-gap-pass/phase-4-audit.md |   1 +
+ .claude/commands/keyword-gap-pass/phase-5-body.md  |   1 +
+ .../keyword-gap-pass/phase-6-internal-linking.md   |   1 +
+ .../keyword-gap-pass/phase-7-sitemap-indexnow.md   |   1 +
+ .../commands/keyword-gap-pass/phase-8-summary.md   |   1 +
+ .../keyword-gap-pass/phase-9-commit-deliver.md     |   1 +
+ .../keyword-gap-pass/phase-build-keywords.md       |   1 +
+ .claude/commands/mindmap-pass.md                   |   1 +
+ .claude/commands/mindmap-pass/phase-0-discover.md  |   1 +
+ .../commands/mindmap-pass/phase-1-consolidation.md |   1 +
+ .claude/commands/mindmap-pass/phase-2-metadata.md  |   1 +
+ .../commands/mindmap-pass/phase-3-new-content.md   |   1 +
+ .../commands/mindmap-pass/phase-3c-tool-build.md   |   1 +
+ .claude/commands/mindmap-pass/phase-4-audit.md     |   1 +
+ .claude/commands/mindmap-pass/phase-5-body.md      |   1 +
+ .../mindmap-pass/phase-6-internal-linking.md       |   1 +
+ .../mindmap-pass/phase-7-sitemap-indexnow.md       |   1 +
+ .claude/commands/mindmap-pass/phase-8-summary.md   |   1 +
+ .../mindmap-pass/phase-9-commit-deliver.md         |   1 +
+ .claude/commands/mindmap-pass/phase-build-brief.md |   1 +
+ .claude/commands/page-1-2-no-clicks-pass-auto.md   |   1 +
+ .claude/commands/page-quality-pass-auto.md         |   1 +
+ .claude/commands/page-quality-pass/phase-0-pull.md |   1 +
+ .../commands/page-quality-pass/phase-1-diagnose.md |   1 +
+ .../page-quality-pass/phase-2-prescribe.md         |   1 +
+ .../commands/page-quality-pass/phase-3-execute.md  |   1 +
+ .../page-quality-pass/phase-4-audit-publish.md     |   1 +
+ .claude/commands/podcast-pain-pass-auto.md         |   1 +
+ .claude/commands/podcast-pain-pass/phase-0-mine.md |   1 +
+ .../podcast-pain-pass/phase-1-validate-chart.md    |   1 +
+ .../podcast-pain-pass/phase-2-execute-publish.md   |   1 +
+ .claude/commands/question-gap-pass-auto.md         |   1 +
+ .claude/commands/question-gap-pass.md              |   1 +
+ .../commands/question-gap-pass/phase-0-discover.md |   1 +
+ .../question-gap-pass/phase-1-select-pages.md      |   1 +
+ .../question-gap-pass/phase-2-questions.md         |   1 +
+ .../commands/question-gap-pass/phase-3-coverage.md |   1 +
+ .../commands/question-gap-pass/phase-4-enrich.md   |   1 +
+ .../commands/question-gap-pass/phase-5-audit.md    |   1 +
+ .../commands/question-gap-pass/phase-6-publish.md  |   1 +
+ .claude/commands/rank-drop-recovery-auto.md        |   1 +
+ .claude/commands/search-gap-content-auto.md        |   1 +
+ .claude/commands/seo-gsc-pass/phase-0-discover.md  |   1 +
+ .../commands/seo-gsc-pass/phase-1-consolidation.md |   1 +
+ .claude/commands/seo-gsc-pass/phase-2-metadata.md  |   1 +
+ .../commands/seo-gsc-pass/phase-3-new-content.md   |   1 +
+ .claude/commands/seo-gsc-pass/phase-4-audit.md     |   1 +
+ .claude/commands/seo-gsc-pass/phase-5-body.md      |   1 +
+ .../seo-gsc-pass/phase-6-internal-linking.md       |   1 +
+ .../seo-gsc-pass/phase-7-sitemap-indexnow.md       |   1 +
+ .claude/commands/seo-gsc-pass/phase-8-summary.md   |   1 +
+ .../seo-gsc-pass/phase-9-commit-deliver.md         |   1 +
+ .claude/commands/seo-gsc-pass/phase-build-chart.md |   1 +
+ .claude/commands/tool-usage-mindmap-auto.md        |   1 +
+ .claude/commands/trend-pass-auto.md                |   1 +
+ .claude/commands/trend-pass/phase-0-pull.md        |   1 +
+ .../commands/trend-pass/phase-1-trend-detect.md    |   1 +
+ .claude/commands/trend-pass/phase-1b-coverage.md   |   1 +
+ .claude/commands/trend-pass/phase-2-matrix.md      |   1 +
+ .claude/commands/trend-pass/phase-4-dedup.md       |   1 +
+ .claude/commands/trend-pass/phase-4c-mindmap.md    |   1 +
+ .../commands/trend-pass/phase-5-execute-publish.md |   1 +
+ .claude/commands/vendor-roundup-auto.md            |   1 +
+ .claude/commands/x-trends-mindmap-auto.md          |   1 +
+ .claude/tools/workflow-preflight.py                |   7 +-
+ .claude/tools/workflow-start.sh                    |   8 +-
+ .claude/tools/worktree-freshness.py                | 181 +++++++++++++++++++--
+ .claude/tools/worktree-freshness_test.py           |  64 +++++++-
+ AGENTS.md                                          |   1 +
+ CLAUDE.md                                          |   1 +
+ 130 files changed, 370 insertions(+), 19 deletions(-)
+
+commit a21c85014d357e8499b8455df5b80831a971b05d
+Author: Claude <noreply@anthropic.com>
+Date:   Wed Oct 28 22:12:54 2026 +0000
+
+    competitor-monitor 2026-10-28: live verification, deployment + measurement records
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01YLDLKEU2LmBwPfKPoZGquf
+
+ reports/content-evidence.jsonl                     |    2 +
+ .../content-evidence-deployment.jsonl              |    2 +
+ .../2026-10-28-competitor/deployment-evidence.json |    7 +
+ .../average-retirement-savings-by-age/growth.json  |   37 +-
+ .../evidence/student-loan-deferment/growth.json    |   37 +-
+ .../2026-10-28-competitor/rendered-live.json       | 8431 ++++++++++++++++++++
+ .../rendered-live/074c327c7523d219cf7a.html        |   59 +
+ .../rendered-live/074c327c7523d219cf7a.txt         |    1 +
+ .../rendered-live/29e954a5cadfc6a4632a.html        |   59 +
+ .../rendered-live/29e954a5cadfc6a4632a.txt         |    1 +
+ .../rendered-live/32720922e5b682f5a184.html        |   98 +
+ .../rendered-live/32720922e5b682f5a184.txt         |    1 +
+ 12 files changed, 8727 insertions(+), 8 deletions(-)
+
+commit c3025a8e8f187662e61f7c43dcb7d8f2a4a71db6
+Author: Claude <noreply@anthropic.com>
+Date:   Wed Oct 28 22:08:54 2026 +0000
+
+    competitor-monitor 2026-10-28: 2 new guides (average retirement savings by age, student loan deferment), 1 inbound link, ledger + baseline
+    
+    Chart: reports/mindmap-pass/2026-10-28-competitor.md. Independent Phase 4 r5 PASS.
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01YLDLKEU2LmBwPfKPoZGquf
+
+ .../competitor-monitor/baseline-2026-10-28.json    |  14814 ++
+ reports/competitor-monitor/baseline-2026-10-28.md  |    105 +
+ .../competitor-monitor/candidates-2026-10-28.json  | 229903 ++++++++++++++++++
+ reports/competitor-monitor/ledger.json             |  63473 ++---
+ reports/content-gen-usage.jsonl                    |     12 +
+ .../preflight-audit-reviewer/manifest.json         |    166 +
+ .../preflight-audit-reviewer/part-001.txt          |     58 +
+ .../preflight-audit-reviewer/part-002.txt          |     42 +
+ .../preflight-audit-reviewer/part-003.txt          |     19 +
+ .../preflight-audit-reviewer/part-004.txt          |     36 +
+ .../preflight-audit-reviewer/part-005.txt          |     62 +
+ .../preflight-audit-reviewer/part-006.txt          |    115 +
+ .../preflight-audit-reviewer/part-007.txt          |     75 +
+ .../preflight-audit-reviewer/part-008.txt          |     74 +
+ .../preflight-audit-reviewer/part-009.txt          |     70 +
+ .../preflight-audit-reviewer/part-010.txt          |    107 +
+ .../preflight-audit-reviewer/part-011.txt          |     48 +
+ .../preflight-audit-reviewer/part-012.txt          |     26 +
+ .../preflight-audit-reviewer/part-013.txt          |     64 +
+ .../preflight-audit-reviewer/part-014.txt          |     50 +
+ .../preflight-audit-reviewer/part-015.txt          |     54 +
+ .../preflight-audit-reviewer/part-016.txt          |     48 +
+ .../preflight-audit-reviewer/part-017.txt          |     42 +
+ .../preflight-audit-reviewer/part-018.txt          |     34 +
+ .../preflight-audit-reviewer/part-019.txt          |     55 +
+ .../preflight-audit-reviewer/part-020.txt          |     53 +
+ .../preflight-audit-reviewer/part-021.txt          |     23 +
+ .../preflight-audit-reviewer/part-022.txt          |     35 +
+ .../preflight-audit-reviewer/part-023.txt          |     80 +
+ .../preflight-audit-reviewer/part-024.txt          |     33 +
+ .../preflight-audit-reviewer/part-025.txt          |     50 +
+ .../preflight-audit-reviewer/part-026.txt          |     72 +
+ .../preflight-audit-reviewer/part-027.txt          |     66 +
+ .../preflight-audit-reviewer/part-028.txt          |      3 +
+ .../preflight-build/manifest.json                  |    176 +
+ .../preflight-build/part-001.txt                   |     58 +
+ .../preflight-build/part-002.txt                   |     42 +
+ .../preflight-build/part-003.txt                   |     19 +
+ .../preflight-build/part-004.txt                   |     36 +
+ .../preflight-build/part-005.txt                   |     62 +
+ .../preflight-build/part-006.txt                   |    115 +
+ .../preflight-build/part-007.txt                   |     75 +
+ .../preflight-build/part-008.txt                   |     74 +
+ .../preflight-build/part-009.txt                   |     70 +
+ .../preflight-build/part-010.txt                   |    107 +
+ .../preflight-build/part-011.txt                   |     48 +
+ .../preflight-build/part-012.txt                   |     26 +
+ .../preflight-build/part-013.txt                   |     64 +
+ .../preflight-build/part-014.txt                   |     50 +
+ .../preflight-build/part-015.txt                   |     54 +
+ .../preflight-build/part-016.txt                   |     48 +
+ .../preflight-build/part-017.txt                   |     42 +
+ .../preflight-build/part-018.txt                   |     34 +
+ .../preflight-build/part-019.txt                   |     55 +
+ .../preflight-build/part-020.txt                   |     53 +
+ .../preflight-build/part-021.txt                   |     23 +
+ .../preflight-build/part-022.txt                   |     35 +
+ .../preflight-build/part-023.txt                   |    148 +
+ .../preflight-build/part-024.txt                   |      7 +
+ .../preflight-build/part-025.txt                   |     45 +
+ .../preflight-build/part-026.txt                   |     57 +
+ .../preflight-build/part-027.txt                   |     52 +
+ .../preflight-build/part-028.txt                   |    107 +
+ .../preflight-build/part-029.txt                   |     56 +
+ .../preflight-build/part-030.txt                   |     52 +
+ .../preflight-write/manifest.json                  |     46 +
+ .../preflight-write/part-001.txt                   |     83 +
+ .../preflight-write/part-002.txt                   |     88 +
+ ...ocomplete.average-retirement-savings-by-age.csv |     21 +
+ ...etitor.autocomplete.business-loan-deferment.csv |      2 +
+ ...competitor.autocomplete.high-interest-loans.csv |     63 +
+ ...petitor.autocomplete.loan-to-buy-a-business.csv |     48 +
+ ...complete.personal-loans-for-non-us-citizens.csv |      7 +
+ ...petitor.autocomplete.student-loan-deferment.csv |     62 +
+ .../2026-10-28-competitor.indexnow.txt             |      3 +
+ reports/mindmap-pass/2026-10-28-competitor.md      |     72 +
+ ...erage-retirement-savings-by-age.findings-r2.txt |     59 +
+ ...erage-retirement-savings-by-age.findings-r3.txt |     30 +
+ .../average-retirement-savings-by-age.findings.txt |    103 +
+ .../audit/phase4-verdict-r2.md                     |     45 +
+ .../audit/phase4-verdict-r3.md                     |     23 +
+ .../audit/phase4-verdict-r4.md                     |     28 +
+ .../audit/phase4-verdict-r5.md                     |     29 +
+ .../2026-10-28-competitor/audit/phase4-verdict.md  |     55 +
+ .../audit/rendered-review-r2.json                  |    148 +
+ .../audit/rendered-review-r3.json                  |    113 +
+ .../audit/rendered-review-r4.json                  |    113 +
+ .../audit/rendered-review-r5.json                  |    113 +
+ .../audit/rendered-review.json                     |     78 +
+ .../audit/student-loan-deferment.findings-r2.txt   |     55 +
+ .../audit/student-loan-deferment.findings-r3.txt   |     30 +
+ .../audit/student-loan-deferment.findings.txt      |     85 +
+ .../drafts/average-retirement-savings-by-age.json  |     66 +
+ ...verage-retirement-savings-by-age.json.meta.json |    399 +
+ ...verage-retirement-savings-by-age.json.pre-fix-1 |     66 +
+ ...average-retirement-savings-by-age.json.precheck |     66 +
+ .../average-retirement-savings-by-age.v1.json      |     66 +
+ .../drafts/student-loan-deferment.json             |     62 +
+ .../drafts/student-loan-deferment.json.meta.json   |    400 +
+ .../drafts/student-loan-deferment.json.pre-fix-1   |     62 +
+ .../drafts/student-loan-deferment.json.precheck    |     62 +
+ .../drafts/student-loan-deferment.v1.json          |     62 +
+ .../average-retirement-savings-by-age/calc.py      |     14 +
+ .../evidence.json                                  |     40 +
+ .../average-retirement-savings-by-age/growth.json  |      9 +
+ .../average-retirement-savings-by-age/output.txt   |     12 +
+ .../evidence/student-loan-deferment/calc.py        |      7 +
+ .../evidence/student-loan-deferment/evidence.json  |     44 +
+ .../evidence/student-loan-deferment/growth.json    |      9 +
+ .../evidence/student-loan-deferment/output.txt     |     12 +
+ .../2026-10-28-competitor/prompts/allowed-urls.txt |      7 +
+ .../average-retirement-savings-by-age.prompt.md    |     74 +
+ .../prompts/contract-guide.md                      |     22 +
+ .../prompts/student-loan-deferment.prompt.md       |     83 +
+ .../2026-10-28-competitor/prompts/system.md        |    641 +
+ .../2026-10-28-competitor/prompts/voice.json       |     64 +
+ .../2026-10-28-competitor/readiness.md             |      7 +
+ .../2026-10-28-competitor/rendered-manifest.json   |     39 +
+ .../2026-10-28-competitor/rendered-snapshot.json   |   8431 +
+ .../rendered-snapshot.recapture.json               |   8431 +
+ .../074c327c7523d219cf7a.html                      |     59 +
+ .../074c327c7523d219cf7a.txt                       |      1 +
+ .../29e954a5cadfc6a4632a.html                      |     59 +
+ .../29e954a5cadfc6a4632a.txt                       |      1 +
+ .../32720922e5b682f5a184.html                      |     98 +
+ .../32720922e5b682f5a184.txt                       |      1 +
+ .../rendered-snapshot/074c327c7523d219cf7a.html    |     59 +
+ .../rendered-snapshot/074c327c7523d219cf7a.txt     |      1 +
+ .../rendered-snapshot/29e954a5cadfc6a4632a.html    |     59 +
+ .../rendered-snapshot/29e954a5cadfc6a4632a.txt     |      1 +
+ .../rendered-snapshot/32720922e5b682f5a184.html    |     98 +
+ .../rendered-snapshot/32720922e5b682f5a184.txt     |      1 +
+ .../rendered-snapshot/aeeb7db0b5d01b11a452.html    |     98 +
+ .../rendered-snapshot/aeeb7db0b5d01b11a452.txt     |      1 +
+ .../mindmap-pass/2026-10-28-competitor/template.py |     19 +
+ src/data/calculators.ts                            |      2 +-
+ src/data/cross-links.ts                            |      1 +
+ src/data/guides.ts                                 |    156 +
+ 138 files changed, 302496 insertions(+), 30935 deletions(-)
+
+commit 7617515459cab56d845db375fb6b7e86ca50b15f
+Author: Jonathan Teplitsky <jonathan@layer3labs.io>
+Date:   Wed Oct 28 16:33:58 2026 -0500
+
+    Require independent rendered-page audit and verified deployment closure
+
+ .claude/tools/rendered-audit.py      | 2 +-
+ .claude/tools/rendered-audit_test.py | 5 +++++
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+
+commit 52128c39db3a1952f4b76c35f6134ca84928d8f4
+Author: Jonathan Teplitsky <jonathan@layer3labs.io>
+Date:   Wed Oct 28 16:12:44 2026 -0500
+
+    Require independent rendered-page audit and verified deployment closure
+
+ .claude/tools/rendered-audit.py      | 20 ++++++++++++++++----
+ .claude/tools/rendered-audit_test.py | 11 +++++++++++
+ 2 files changed, 27 insertions(+), 4 deletions(-)
+
+commit a49c561472d911614c64040972491170427f1ae8
+Author: Claude <noreply@anthropic.com>
+Date:   Wed Oct 28 17:20:37 2026 +0000
+
+    x-trends 2026-10-28: Phase 4 PASS evidence, ledger, indexnow list
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01YLDLKEBXAG92TVr4bvBVpE
+
+ .../evidence.json                                  |   76 +-
+ .../mindmap-pass/2026-10-28/audit/phase4-report.md |   22 +
+ .../2026-10-28/audit/preflight-audit/manifest.json |  166 +
+ .../2026-10-28/audit/preflight-audit/part-001.txt  |   58 +
+ .../2026-10-28/audit/preflight-audit/part-002.txt  |   42 +
+ .../2026-10-28/audit/preflight-audit/part-003.txt  |   19 +
+ .../2026-10-28/audit/preflight-audit/part-004.txt  |   36 +
+ .../2026-10-28/audit/preflight-audit/part-005.txt  |   62 +
+ .../2026-10-28/audit/preflight-audit/part-006.txt  |  115 +
+ .../2026-10-28/audit/preflight-audit/part-007.txt  |   75 +
+ .../2026-10-28/audit/preflight-audit/part-008.txt  |   74 +
+ .../2026-10-28/audit/preflight-audit/part-009.txt  |   70 +
+ .../2026-10-28/audit/preflight-audit/part-010.txt  |  107 +
+ .../2026-10-28/audit/preflight-audit/part-011.txt  |   48 +
+ .../2026-10-28/audit/preflight-audit/part-012.txt  |   26 +
+ .../2026-10-28/audit/preflight-audit/part-013.txt  |   64 +
+ .../2026-10-28/audit/preflight-audit/part-014.txt  |   50 +
+ .../2026-10-28/audit/preflight-audit/part-015.txt  |   54 +
+ .../2026-10-28/audit/preflight-audit/part-016.txt  |   48 +
+ .../2026-10-28/audit/preflight-audit/part-017.txt  |   42 +
+ .../2026-10-28/audit/preflight-audit/part-018.txt  |   34 +
+ .../2026-10-28/audit/preflight-audit/part-019.txt  |   55 +
+ .../2026-10-28/audit/preflight-audit/part-020.txt  |   53 +
+ .../2026-10-28/audit/preflight-audit/part-021.txt  |   23 +
+ .../2026-10-28/audit/preflight-audit/part-022.txt  |   35 +
+ .../2026-10-28/audit/preflight-audit/part-023.txt  |   80 +
+ .../2026-10-28/audit/preflight-audit/part-024.txt  |   33 +
+ .../2026-10-28/audit/preflight-audit/part-025.txt  |   50 +
+ .../2026-10-28/audit/preflight-audit/part-026.txt  |   72 +
+ .../2026-10-28/audit/preflight-audit/part-027.txt  |   66 +
+ .../2026-10-28/audit/preflight-audit/part-028.txt  |    3 +
+ reports/mindmap-pass/2026-10-28/audit/review.json  |   76 +
+ .../2026-10-28/rendered-snapshot.recapture.json    | 6127 ++++++++++++++++++++
+ .../77c1b54f5872e0ca22aa.html                      |   59 +
+ .../77c1b54f5872e0ca22aa.txt                       |    1 +
+ .../f6bb306a5d50552e6dfb.html                      |   59 +
+ .../f6bb306a5d50552e6dfb.txt                       |    1 +
+ 37 files changed, 8069 insertions(+), 12 deletions(-)
+
+commit d1d02b0a5e5a1e73d6a3fb7d42b488610ee4ceb9
+Author: Claude <noreply@anthropic.com>
+Date:   Wed Oct 28 17:19:32 2026 +0000
+
+    x-trends 2026-10-28: apply Phase 4 fix-in-place findings (branch only, pre-deploy)
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01YLDLKEBXAG92TVr4bvBVpE
+
+ .../mindmap-pass/2026-10-28/rendered-snapshot.json | 27 ++++++++++++++--------
+ .../rendered-snapshot/77c1b54f5872e0ca22aa.html    |  2 +-
+ .../rendered-snapshot/77c1b54f5872e0ca22aa.txt     |  2 +-
+ .../rendered-snapshot/f6bb306a5d50552e6dfb.html    |  2 +-
+ .../rendered-snapshot/f6bb306a5d50552e6dfb.txt     |  2 +-
+ src/data/guides.ts                                 | 12 +++++-----
+ 6 files changed, 27 insertions(+), 20 deletions(-)
+
+commit 65f34a231c1de832c0db3b731da750ba6abb32b4
+Author: Claude <noreply@anthropic.com>
+Date:   Wed Oct 28 17:10:42 2026 +0000
+
+    x-trends 2026-10-28: adoption credit carryforward refund guide (pre-audit, branch only)
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01YLDLKEBXAG92TVr4bvBVpE
+
+ .../evidence.json                                  |   34 +
+ .../growth.json                                    |   11 +
+ reports/content-gen-usage.jsonl                    |    6 +
+ .../2026-10-28-xtrends.autocomplete.csv            |   18 +
+ .../mindmap-pass/2026-10-28-xtrends.coverage.txt   |   20 +
+ .../mindmap-pass/2026-10-28-xtrends.expand.json    |  460 ++
+ reports/mindmap-pass/2026-10-28-xtrends.md         |   50 +
+ .../mindmap-pass/2026-10-28-xtrends.readiness.md   |    8 +
+ reports/mindmap-pass/2026-10-28-xtrends.serp.txt   |   57 +
+ .../mindmap-pass/2026-10-28-xtrends.volumes.json   |  106 +
+ .../preflight-build/manifest.json                  |  248 +
+ .../preflight-build/part-001.txt                   |   58 +
+ .../preflight-build/part-002.txt                   |   42 +
+ .../preflight-build/part-003.txt                   |   19 +
+ .../preflight-build/part-004.txt                   |   36 +
+ .../preflight-build/part-005.txt                   |   62 +
+ .../preflight-build/part-006.txt                   |  115 +
+ .../preflight-build/part-007.txt                   |   75 +
+ .../preflight-build/part-008.txt                   |   74 +
+ .../preflight-build/part-009.txt                   |   70 +
+ .../preflight-build/part-010.txt                   |  107 +
+ .../preflight-build/part-011.txt                   |   48 +
+ .../preflight-build/part-012.txt                   |   26 +
+ .../preflight-build/part-013.txt                   |   64 +
+ .../preflight-build/part-014.txt                   |   50 +
+ .../preflight-build/part-015.txt                   |   54 +
+ .../preflight-build/part-016.txt                   |   48 +
+ .../preflight-build/part-017.txt                   |   42 +
+ .../preflight-build/part-018.txt                   |   34 +
+ .../preflight-build/part-019.txt                   |   55 +
+ .../preflight-build/part-020.txt                   |   53 +
+ .../preflight-build/part-021.txt                   |   23 +
+ .../preflight-build/part-022.txt                   |   35 +
+ .../preflight-build/part-023.txt                   |  148 +
+ .../preflight-build/part-024.txt                   |    7 +
+ .../preflight-build/part-025.txt                   |   45 +
+ .../preflight-build/part-026.txt                   |   57 +
+ .../preflight-build/part-027.txt                   |   52 +
+ .../preflight-build/part-028.txt                   |  107 +
+ .../preflight-build/part-029.txt                   |   56 +
+ .../preflight-build/part-030.txt                   |   52 +
+ .../preflight-build/part-031.txt                   |   48 +
+ .../preflight-build/part-032.txt                   |   64 +
+ .../preflight-build/part-033.txt                   |   83 +
+ .../preflight-build/part-034.txt                   |   88 +
+ .../preflight-build/part-035.txt                   |   50 +
+ .../preflight-build/part-036.txt                   |   72 +
+ .../preflight-build/part-037.txt                   |   66 +
+ .../preflight-build/part-038.txt                   |    3 +
+ .../preflight-build/part-039.txt                   |   63 +
+ .../preflight-build/part-040.txt                   |   44 +
+ .../preflight-build/part-041.txt                   |   38 +
+ .../preflight-build/part-042.txt                   |   52 +
+ reports/mindmap-pass/2026-10-28.indexnow.txt       |    1 +
+ .../adoption-credit-carryforward-refund.json       |  103 +
+ ...ption-credit-carryforward-refund.json.meta.json |   83 +
+ ...option-credit-carryforward-refund.json.precheck |  103 +
+ .../adoption-credit-carryforward-refund.prompt.md  |   70 +
+ .../2026-10-28/prompts/allowed-urls.txt            |    6 +
+ .../mindmap-pass/2026-10-28/prompts/contract.md    |    8 +
+ reports/mindmap-pass/2026-10-28/prompts/system.md  |  652 +++
+ .../2026-10-28/prompts/voice-sample.json           |   89 +
+ .../mindmap-pass/2026-10-28/rendered-manifest.json |   13 +
+ .../mindmap-pass/2026-10-28/rendered-snapshot.json | 6120 ++++++++++++++++++++
+ .../rendered-snapshot/77c1b54f5872e0ca22aa.html    |   59 +
+ .../rendered-snapshot/77c1b54f5872e0ca22aa.txt     |    1 +
+ .../rendered-snapshot/f6bb306a5d50552e6dfb.html    |   59 +
+ .../rendered-snapshot/f6bb306a5d50552e6dfb.txt     |    1 +
+ reports/standards-ledger.jsonl                     |    1 +
+ reports/x-trends/2026-10-28.md                     |    1 +
+ reports/x-trends/ledger.jsonl                      |    1 +
+ src/data/guides.ts                                 |  108 +-
+ 72 files changed, 10880 insertions(+), 2 deletions(-)
+
+commit 6e23296d3fc4119564b5ab48391659f0c8bed4c6
+Author: Claude <noreply@anthropic.com>
+Date:   Wed Oct 28 17:03:51 2026 +0000
+
+    page-1-2-no-clicks: 2026-10-28 detect + measure (0 pages picked)
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01U4zLiqSmV5X89RgsiQnpYA
+
+ reports/page-1-2-no-clicks/2026-10-28.json         | 72 ++++++++++++++++++++++
+ reports/page-1-2-no-clicks/2026-10-28.md           | 40 ++++++++++++
+ reports/page-1-2-no-clicks/2026-10-28.measure.json | 36 +++++++++++
+ reports/page-1-2-no-clicks/2026-10-28.measure.md   |  3 +
+ 4 files changed, 151 insertions(+)
+
+commit b5d81f3d673a7604ee8f33178075dc398815b43a
+Author: Claude <noreply@anthropic.com>
+Date:   Wed Oct 28 16:17:28 2026 +0000
+
+    vendor-roundup 2026-10-28: +18 vendors across 13 pages (+0 new pages)
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01U4zLio31RMjDVDKvkKtegR
+
+ data/roundup-vendors.json                          | 272 ++++++-
+ reports/vendor-roundup/category-candidates.json    |  32 +-
+ reports/vendor-roundup/pool.json                   | 795 ++++++++++++---------
+ .../rows/401k-providers-for-small-business.json    |  22 +-
+ .../rows/accounting-software-for-freelancers.json  |  11 +-
+ reports/vendor-roundup/rows/ai-investing-apps.json |  23 +-
+ reports/vendor-roundup/rows/ai-stock-pickers.json  |   6 +-
+ reports/vendor-roundup/rows/ai-trading-bots.json   |  15 +-
+ .../vendor-roundup/rows/bookkeeping-services.json  |  73 +-
+ .../brokerage-accounts-for-interest-on-cash.json   |  11 +-
+ .../rows/budgeting-apps-for-couples.json           |  19 +-
+ reports/vendor-roundup/rows/budgeting-apps.json    |  57 +-
+ .../rows/business-bank-accounts.json               |  11 +-
+ .../vendor-roundup/rows/business-credit-cards.json |  22 +-
+ .../business-line-of-credit-rates-by-lender.json   |  18 +-
+ .../california-independent-insurance-agencies.json |  56 +-
+ .../rows/cash-back-credit-cards.json               |   8 +-
+ reports/vendor-roundup/rows/cpa-tax-advisers.json  |  51 +-
+ .../rows/custodial-roth-ira-providers.json         |  26 +-
+ .../rows/dataannotation-alternatives.json          |  16 +-
+ .../rows/estate-planning-software.json             |  24 +-
+ .../rows/freelancer-tax-preparers.json             |  29 +-
+ .../vendor-roundup/rows/living-trust-services.json |   6 +-
+ .../vendor-roundup/rows/online-will-makers.json    |  19 +-
+ .../rows/personal-loan-rates-by-lender.json        |  19 +-
+ .../robinhood-agentic-trading-alternatives.json    |  50 +-
+ .../vendor-roundup/rows/secured-credit-cards.json  |  24 +-
+ 27 files changed, 947 insertions(+), 768 deletions(-)
+
+commit 7258a9178412be0ac198fa214d18d9f83e0b4f22
+Author: Claude <noreply@anthropic.com>
+Date:   Wed Oct 28 12:24:15 2026 +0000
+
+    Page quality pass 2026-10-28: no-action digest and GA4 pull
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01YLDLKBegD1DnoSfjaFJPyo
+
+ reports/page-quality-pass/2026-10-28.md        |  32 ++
+ reports/page-quality-pass/2026-10-28.pull.json | 448 +++++++++++++++++++++++++
+ 2 files changed, 480 insertions(+)
+
+commit c658f5ea588abd8a640e4451065d411669cc24dd
+Author: Claude <noreply@anthropic.com>
+Date:   Wed Oct 28 09:24:10 2026 +0000
+
+    ga4-top-pages-pass 2026-10-28: 1 enrichment, 0 metadata across 4 audited winners; 0 new-page/tool rows sent to mindmap
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+    Claude-Session: https://claude.ai/code/session_01YLDLKB98TfuLjsmRJ1dBuy
+
+ reports/content-gen-usage.jsonl                    |   2 +
+ .../drafts/irs-mileage-rate-2026--tolls-parking.md |   3 +
+ ...s-mileage-rate-2026--tolls-parking.md.meta.json |  57 +++
+ ...rs-mileage-rate-2026--tolls-parking.md.precheck |   3 +
+ .../2026-10-28/prompts/allowed-urls.txt            |   2 +
+ .../ga4-top-pages/2026-10-28/prompts/contract.md   |   1 +
+ reports/ga4-top-pages/2026-10-28/prompts/facts.txt |   5 +
+ .../irs-mileage-rate-2026--tolls-parking.prompt.md |  20 +
+ .../prompts/irs-mileage-rate-2026.page.md          |  84 ++++
+ reports/ga4-top-pages/2026-10-28/prompts/system.md | 516 +++++++++++++++++++++
+ .../ga4-top-pages/2026-10-28/prompts/voice.json    |   1 +
+ reports/trend-pass/2026-10-28.ga4.md               |   3 +
+ reports/trend-pass/2026-10-28.ga4.pull.json        | 128 +++++
+ reports/trend-pass/ga4-page-audits.md              |   4 +
+ reports/trend-pass/ledger.md                       |   5 +
+ src/data/spokes-mileage.ts                         |   7 +-
+ 16 files changed, 840 insertions(+), 1 deletion(-)

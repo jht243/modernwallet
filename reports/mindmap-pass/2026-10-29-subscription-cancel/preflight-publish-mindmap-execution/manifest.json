@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "root": "/Users/jonathanteplitsky/Desktop/Github Projects/Growth Sites/WealthFinance",
+  "phase": "publish",
+  "instructions": [
+    ".claude/commands/_mindmap-execution.md"
+  ],
+  "files": {
+    ".claude/commands/_decision-evidence.md": "6b47b8b4b6763f5b4ff303ca0443ecf67c01d5efae95c2b0c0e968131fb16d98",
+    ".claude/commands/_testing-labels.md": "8a9dc3c646a583d7afe80339efb880be431a9f528e491ef0ea156bee4db053d9",
+    ".claude/commands/_content-standard.md": "ebf9e6f60f6265f0ebf847ce7853f503eedf17390ca61d5405602381d6cada5e",
+    ".claude/commands/_anti-ai-language.md": "59194cdd7f83f7423489faa07759e571c73ef993a681bd917faa8a6f1a6803ac",
+    ".claude/commands/_experience.md": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+    ".claude/commands/_workflow-checkpoints.md": "a80daacfb208a9d1e1c95b4c199f4a7ae671b89ee54a9f4cc25cbb2689e0f43b",
+    ".claude/commands/_rendered-page-audit.md": "5e649fef4cb23a9c97806bce5f04cee59a329265534f683b40ade791b9cc06da",
+    ".claude/commands/_mindmap-execution.md": "2ee21c15b10e654b4c6126089d8c2d2259d7edbfcb512bc09bd06553b14d6253"
+  },
+  "parts": [],
+  "delivered": [],
+  "actor": "root",
+  "reused": [
+    ".claude/commands/_decision-evidence.md",
+    ".claude/commands/_testing-labels.md",
+    ".claude/commands/_content-standard.md",
+    ".claude/commands/_anti-ai-language.md",
+    ".claude/commands/_experience.md",
+    ".claude/commands/_workflow-checkpoints.md",
+    ".claude/commands/_rendered-page-audit.md",
+    ".claude/commands/_mindmap-execution.md"
+  ],
+  "reuse": {
+    "directory": "reports/mindmap-pass/2026-10-29-subscription-cancel/preflight-publish-root",
+    "sha256": "a8f51d915236894f49eccb2ca15a7f5514f1fed51ac0e4d081302d7d1fea3463"
+  }
+}
