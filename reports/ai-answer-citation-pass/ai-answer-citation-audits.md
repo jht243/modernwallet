@@ -117,3 +117,28 @@
 | /retirement/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
 | /auto-loan/payoff-calculator/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
 | /invoice-factoring/ | 2026-10-17 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| / | 2026-11-01 | financial calculators online | ABSENT | no | www.calculator.net/www.fncalculator.com/www.nerdwallet.com (+2 more) | none | n/a |
+| /guides/trump-account-worth-it/ | 2026-11-01 | are trump accounts for kids a scam | ABSENT | no | www.mapscu.com/methodcpa.com/www.jessietax.com (+2 more) | none | n/a |
+| /compare/trump-account-vs-brokerage-account/ | 2026-11-01 | trump account vs brokerage account for kids | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /roundup/best-mortgage-lenders/ | 2026-11-01 | best company for mortgage loan | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /roundup/best-online-will-makers/ | 2026-11-01 | can i get a will online | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /compare/roth-401k-vs-traditional-401k/ | 2026-11-01 | 401k roth or traditional | ABSENT | no | www.fidelity.com/www.benefits.ml.com/www.umcu.org (+5 more) | none | n/a |
+| /guides/ | 2026-11-01 | wealthability cost | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /budget/ | 2026-11-01 | nerdwallet budget calculator | ABSENT | no | www.nerdwallet.com/www.youtube.com | none | n/a |
+| /investing/ | 2026-11-01 | investment calculator with increasing contributions | ABSENT | no | www.financialmentor.com/investor.sebi.gov.in/myplan.johnhancock.com (+3 more) | none | n/a |
+| /roundup/best-money-market-accounts/ | 2026-11-01 | money market account wharton | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /roundup/best-living-trust-services/ | 2026-11-01 | best trust services | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /compare/custodial-account-vs-savings-account/ | 2026-11-01 | custodial account vs savings account | ABSENT | no | www.synchrony.com/www.chase.com/www.schwab.com (+6 more) | none | n/a |
+| /investing/withdrawal-calculator/ | 2026-11-01 | how long will my money last calculator nerdwallet | ABSENT | no | www.nerdwallet.com | none | n/a |
+| /about/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /methodology/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /calculators/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /invoice-factoring/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /roundup/best-net-worth-tracker/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /compare/trump-account-vs-529/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /merchant-cash-advance/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /probate/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /business-line-of-credit/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /portfolio/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /retirement/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /estate-planning/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
