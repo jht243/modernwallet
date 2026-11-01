@@ -58,6 +58,7 @@ const howParagraphs = entry.howItWorks.split("\n\n");
 
 // Build-time computation — inject real numbers into static HTML before JS hydrates.
 const stats = spokeStats(entry);
+const isUtilityTool = ["inherited-ira-withdrawal-calculator", "medicare-irmaa-calculator", "mileage-log-checker"].includes(entry.islandId ?? "");
 const stateLinks = (entry.stateVariants ?? [])
   .map((slug) => STATE_BY_SLUG[slug])
   .filter((s): s is NonNullable<typeof s> => Boolean(s));
@@ -116,7 +117,7 @@ const jsonLdApp = {
     #fixed_container_bottom #adhesion_desktop_container { position: static !important; inset: auto !important; }
   </style>
 )}
-<BaseLayout title={entry.title} description={entry.metaDescription} noindex={shouldNoindex} affiliateDisclosureText={isSubscriptionCancellationPlanner ? "Some links on this site are referral or affiliate links. We may earn a reward or commission at no cost to you." : undefined}>
+<BaseLayout title={entry.title} description={entry.metaDescription} noindex={shouldNoindex} affiliateDisclosureText={(isSubscriptionCancellationPlanner || isUtilityTool) ? "Some links on this site are referral or affiliate links. We may earn a reward or commission at no cost to you." : undefined}>
   {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdApp)} />
@@ -147,7 +148,7 @@ const jsonLdApp = {
 
     <div class="tool-wrap">
       <ShareButton title={entry.h1} />
-    <section class="tool-section" id={(isChecklist || isSubscriptionCancellationPlanner) ? "checklist-tool" : undefined} aria-label={isSubscriptionCancellationPlanner ? "Interactive subscription cancellation planner" : isChecklist ? "Interactive checklist" : "Interactive calculator"} data-tool={(isChecklist || isSubscriptionCancellationPlanner) ? entry.slug : calc.id}>
+    <section class="tool-section" id={(isChecklist || isSubscriptionCancellationPlanner) ? "checklist-tool" : undefined} aria-label={isSubscriptionCancellationPlanner ? "Interactive subscription cancellation planner" : isChecklist ? "Interactive checklist" : "Interactive calculator"} data-tool={(isChecklist || isSubscriptionCancellationPlanner || isUtilityTool) ? entry.slug : calc.id}>
       <div class="tool-badge"><span class="dot"></span> {isSubscriptionCancellationPlanner ? "Interactive — build your next steps" : isChecklist ? "Interactive — answer a few questions" : "Interactive — edit any field"}</div>
       <CalculatorIsland
         client:only="react"

@@ -1,4 +1,5 @@
 import type { SpokeEntry } from "./types";
+import { FLEET_TOOL_SPOKES } from "./spokes-fleet-tools";
 import { AUTO_SPOKES } from "./spokes-auto";
 import { MORTGAGE_SPOKES } from "./spokes-mortgage";
 import { REAL_ESTATE_SPOKES } from "./spokes-real-estate";
@@ -25,6 +26,7 @@ import { CHECKLIST_SPOKES } from "./spokes-checklists";
 // calculator and spreads it here. Pillar 1 = tax-resolution; Pillar 2 = estate-planning;
 // Pillar 3 = probate; Pillar 4 = elder-care.
 export const SPOKES: SpokeEntry[] = [
+  ...FLEET_TOOL_SPOKES,
   ...AUTO_SPOKES,
   ...MORTGAGE_SPOKES,
   ...REAL_ESTATE_SPOKES,

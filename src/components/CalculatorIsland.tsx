@@ -1,3 +1,4 @@
+import { InheritedIraWithdrawalCalculator, MedicareIrmaaCalculator, MileageLogChecker } from "./FleetFinanceTools";
 import AutoLoanCalculator from "./AutoLoanCalculator";
 import RentVsBuyCalculator from "./RentVsBuyCalculator";
 import StockCapitalGainsCalculator from "./StockCapitalGainsCalculator";
@@ -89,6 +90,9 @@ import ViewingChecklist from "./ViewingChecklist";
 // on the client. Phase 2 adds the other calculators to the map below.
 
 const ISLANDS: Record<string, React.ComponentType<any>> = {
+  "inherited-ira-withdrawal-calculator": InheritedIraWithdrawalCalculator,
+  "medicare-irmaa-calculator": MedicareIrmaaCalculator,
+  "mileage-log-checker": MileageLogChecker,
   "auto-loan": AutoLoanCalculator,
   "auto-refinance": AutoRefinanceCalculator,
   // MortgageIQ reuses the auto-loan amortization engine in mortgageMode (home price + 15/30-yr terms).

@@ -24,6 +24,7 @@ export interface Stat {
 }
 
 export function spokeStats(entry: SpokeEntry): Stat[] {
+  if (["inherited-ira-withdrawal-calculator", "medicare-irmaa-calculator", "mileage-log-checker"].includes(entry.islandId ?? "")) return [];
   // Buyer-journey override tools key off the spoke's islandId + preset.kind.
   if (entry.islandId === "affordability") return affordabilityStats(entry.preset as Record<string, unknown>);
   if (entry.islandId === "mortgage-extras") return extrasStats(entry.preset as Record<string, unknown>);
