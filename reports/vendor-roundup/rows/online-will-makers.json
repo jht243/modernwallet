@@ -1,18 +1,10 @@
 {
   "slug": "best-online-will-makers",
-  "rows": [
+  "rows": [],
+  "cut": [
     {
-      "name": "GoodTrust",
-      "domain": "mygoodtrust.com",
-      "url": "https://mygoodtrust.com/",
-      "values": [
-        "$149 Estate+ plan (will, trust and directives)",
-        "Not published; each person creates own plan at no extra fee",
-        "Included in the $149 Estate+ plan",
-        "Power of attorney and health care directive included in Estate+",
-        "Not published; documents drafted by estate-planning attorneys"
-      ]
+      "domain": "retiredby40blog.com",
+      "why": "category 1 \u2014 personal blog, no product of its own"
     }
-  ],
-  "cut": []
+  ]
 }

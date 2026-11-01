@@ -1,14 +1,18 @@
 {
   "slug": "best-tax-relief-companies",
-  "rows": [],
-  "cut": [
+  "rows": [
     {
-      "domain": "taxreliefscout.com",
-      "why": "category 1 \u2014 educational directory and lead-gen, not a tax relief provider"
-    },
-    {
-      "domain": "top10taxreliefservices.com",
-      "why": "category 1 \u2014 review and ranking site paid by reviewed brands"
+      "name": "Clarity Tax Relief",
+      "domain": "claritytaxrelief.com",
+      "url": "https://claritytaxrelief.com/",
+      "values": [
+        "Not published",
+        "Tax professionals; NAEA member",
+        "Flat fee quoted in writing after free consultation",
+        "Since 2018, per its site",
+        "BBB accredited, A+ rating"
+      ]
     }
-  ]
+  ],
+  "cut": []
 }

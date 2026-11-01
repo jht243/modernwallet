@@ -3,23 +3,21 @@
   "cut_as_other_category": {
     "unlabelled": [
       "basic.ai",
-      "femaleinvest.com",
       "glideapps.com",
-      "hackerjohnson.com",
-      "kahnlitwin.com",
       "trinet.com",
-      "wiserinvestor.com",
-      "yaycommerce.com",
       "zenbusiness.com"
-    ],
-    "robo-advisor": [
-      "stash.com"
     ],
     "banking": [
       "fccu.org"
     ],
     "business loans": [
       "cdcloans.com"
+    ],
+    "investing education or ai trading bots": [
+      "finelo.com"
+    ],
+    "online brokers": [
+      "captrader.com"
     ],
     "credit repair": [
       "asapcreditrepairusa.com"

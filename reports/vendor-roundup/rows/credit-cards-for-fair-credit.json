@@ -1,18 +1,18 @@
 {
- "slug": "best-credit-cards-for-fair-credit",
- "rows": [
-  {
-   "name": "Prosper Card",
-   "domain": "prosper.com",
-   "url": "https://www.prosper.com/credit-card",
-   "values": [
-    "None; unsecured card",
-    "Not published",
-    "Cash back from retailers",
-    "$59, waived first year with AutoPay",
-    "Eligibility check does not affect score; hard pull not stated"
-   ]
-  }
- ],
- "cut": []
+  "slug": "best-credit-cards-for-fair-credit",
+  "rows": [
+    {
+      "name": "Aspire Mastercard",
+      "domain": "aspire.com",
+      "url": "https://www.aspire.com/",
+      "values": [
+        "No",
+        "Not published",
+        "1% cash back on the Cash Back Rewards version only",
+        "Not published; no program fee",
+        "Yes; soft pull to prequalify, hard pull on accepting"
+      ]
+    }
+  ],
+  "cut": []
 }

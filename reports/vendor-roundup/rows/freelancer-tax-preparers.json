@@ -1,1 +1,17 @@
-{"slug":"best-tax-preparation-services-for-freelancers","rows":[{"name":"Miller & Company","domain":"cpafirmnyc.com","url":"https://cpafirmnyc.com","values":["CPA firm with in-person offices","Quote on request; not published","Offices in New York, Florida and Washington DC","Self-employed professionals and business owners in the New York area"]}],"cut":[]}
+{
+  "slug": "best-tax-preparation-services-for-freelancers",
+  "rows": [
+    {
+      "name": "TaxHub",
+      "domain": "gettaxhub.com",
+      "url": "https://www.gettaxhub.com/",
+      "values": [
+        "Online CPA firm, fully virtual",
+        "Priced per form prepared; free call for a quote",
+        "Not published",
+        "Freelancers, solopreneurs and S-Corps"
+      ]
+    }
+  ],
+  "cut": []
+}
