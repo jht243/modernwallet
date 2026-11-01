@@ -5,6 +5,8 @@ import { liveCalculators } from "../data/calculators";
 import { AFFILIATE_DISCLOSURE } from "../data/partners";
 export interface Props { disclosureText?: string }
 const { disclosureText } = Astro.props;
+const toolDeploymentRoutes = new Set(["/", "/calculators/", "/mileage-deduction/", "/mileage-deduction/doordash-mileage-deduction/", "/mileage-deduction/irs-mileage-rate-2026/", "/mileage-deduction/mileage-log-checker/", "/mileage-deduction/standard-mileage-vs-actual-expenses/", "/retirement/", "/retirement/inherited-ira-withdrawal-calculator/", "/retirement/medicare-irmaa-calculator/"]);
+const deploymentDisclosure = toolDeploymentRoutes.has(Astro.url.pathname) ? "Some links on this site are referral or affiliate links. We may earn a reward or commission at no cost to you." : AFFILIATE_DISCLOSURE;
 const calcs = liveCalculators();
 const year = 2026;
 ---
@@ -109,7 +111,7 @@ const year = 2026;
     </div>
   </div>
 
-  <div class="ftr-disclosure"><p>{disclosureText ?? AFFILIATE_DISCLOSURE}</p></div>
+  <div class="ftr-disclosure"><p>{disclosureText ?? deploymentDisclosure}</p></div>
 </footer>
 
 <style>
