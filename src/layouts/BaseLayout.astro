@@ -17,6 +17,13 @@ export interface Props {
 }
 const { title, description, canonical, noindex, robots, noAds, affiliateDisclosureText } = Astro.props;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
+const toolSharingImages: Record<string, string> = {
+  "/retirement/inherited-ira-withdrawal-calculator/": "/images/tools/inherited-ira-withdrawal-calculator.png",
+  "/retirement/medicare-irmaa-calculator/": "/images/tools/medicare-irmaa-calculator.png",
+  "/mileage-deduction/mileage-log-checker/": "/images/tools/mileage-log-checker.png",
+};
+const toolSharingImage = toolSharingImages[Astro.url.pathname];
+const sharingImage = new URL(toolSharingImage ?? "/favicon-192.png", Astro.site).toString();
 
 // Sitewide Organization JSON-LD (brand entity for SEO).
 const orgJsonLd = {
@@ -115,11 +122,18 @@ const websiteJsonLd = {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
-    <meta property="og:image" content={new URL("/favicon-192.png", Astro.site).toString()} />
+    <meta property="og:image" content={sharingImage} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={new URL("/favicon-192.png", Astro.site).toString()} />
+    <meta name="twitter:image" content={sharingImage} />
+    {toolSharingImage && <>
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={`${SITE.name}: ${title}`} />
+      <meta name="twitter:image:alt" content={`${SITE.name}: ${title}`} />
+    </>}
     <script type="application/ld+json" set:html={JSON.stringify(orgJsonLd)} />
     <script type="application/ld+json" set:html={JSON.stringify(websiteJsonLd)} />
     <style is:global>
