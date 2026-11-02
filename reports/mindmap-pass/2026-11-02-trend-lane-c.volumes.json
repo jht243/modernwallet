@@ -1,0 +1,115 @@
+{
+ "rows": [
+  {
+   "keyword": "best trust services",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 58,
+   "cpc": 15.07,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "living trust services",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": 29,
+   "cpc": 5.75,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "roth 401k vs regular 401k",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": 9,
+   "cpc": 2.15,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "best living trust services",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "living trust cost",
+   "volume": 2900,
+   "volume_low": 2900,
+   "volume_high": 2900,
+   "kd": 0,
+   "cpc": 4.53,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "online living trust",
+   "volume": 1000,
+   "volume_low": 1000,
+   "volume_high": 1000,
+   "kd": 16,
+   "cpc": 7.86,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "roth 401k vs traditional 401k",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": 4,
+   "cpc": 2.15,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using dataforseo (quality order dataforseo)",
+  "dataforseo returned volume for 7/7 phrases",
+  "kd: using dataforseo (quality order dataforseo)",
+  "Autocomplete: 6/7 rows corroborated live"
+ ]
+}
