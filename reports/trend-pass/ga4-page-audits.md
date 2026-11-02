@@ -311,3 +311,9 @@
 | /guides/inherited-ira-taxes-explained/ | 2026-10-29 | 32 | 0/0/0/0/0 | 0 |
 | /guides/how-to-open-a-trump-account/ | 2026-10-29 | 13 | 0/0/0/0/0 | 0 |
 | /social-security-taxable-benefits-calculator/ | 2026-10-29 | 13 | 0/0/0/0/0 | 0 |
+| /guides/trump-gold-coin/ | 2026-11-02 | 14 | 0/0/0/0/0 | 0 |
+| /guides/trump-account-rules/ | 2026-11-02 | 11 | 0/0/0/0/0 | 0 |
+| /investing/high-yield-savings-calculator/ | 2026-11-02 | 11 | 0/0/0/0/0 | 0 |
+| /social-security-cola-calculator/ | 2026-11-02 | 11 | 0/0/0/0/0 | 1 |
+| /guides/trump-account-worth-it/ | 2026-11-02 | 10 | 0/0/0/0/0 | 0 |
+| / | 2026-11-02 | 8 | 0/0/0/0/0 | 0 |

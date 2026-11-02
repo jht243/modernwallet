@@ -1,0 +1,124 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-11-01",
+  "window_start": "2026-11-01",
+  "window_end": "2026-11-01",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 19,
+      "sessions": 18,
+      "active_users": 18,
+      "clicks": 19
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 18,
+      "sessions": 19,
+      "active_users": 17,
+      "clicks": 18
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 16,
+      "sessions": 16,
+      "active_users": 14,
+      "clicks": 16
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 14,
+      "sessions": 13,
+      "active_users": 12,
+      "clicks": 14
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 12,
+      "sessions": 15,
+      "active_users": 13,
+      "clicks": 12
+    },
+    {
+      "page": "/guides/trump-account-rules/",
+      "views": 11,
+      "sessions": 11,
+      "active_users": 9,
+      "clicks": 11
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 11,
+      "sessions": 10,
+      "active_users": 8,
+      "clicks": 11
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 11,
+      "sessions": 13,
+      "active_users": 11,
+      "clicks": 11
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 10,
+      "sessions": 11,
+      "active_users": 8,
+      "clicks": 10
+    },
+    {
+      "page": "/",
+      "views": 8,
+      "sessions": 7,
+      "active_users": 7,
+      "clicks": 8
+    }
+  ],
+  "top10_pages_total_views": 130,
+  "top10_pages_total_clicks": 130,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 19,
+      "Unassigned": 2
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 16,
+      "Direct": 2
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 14,
+      "Unassigned": 2,
+      "Direct": 1
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 14,
+      "Direct": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 13,
+      "Unassigned": 2
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 13,
+      "Unassigned": 1
+    },
+    "/guides/trump-account-rules/": {
+      "Organic Search": 11
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 11,
+      "Unassigned": 2
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 10
+    },
+    "/": {
+      "Referral": 4,
+      "Direct": 3,
+      "Unassigned": 1
+    }
+  }
+}
