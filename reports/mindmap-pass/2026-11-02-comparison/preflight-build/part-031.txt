@@ -1,0 +1,58 @@
+.claude/commands/mindmap-pass/phase-build-brief.md — characters 9000 onward
+
+ng screenshot** → identify what product or topic it depicts.
+- **A pasted news article or URL** — extract the story's entities, claims, and the emerging theme; treat "what would a searcher look up after reading this?" as the seed set. If it's a bare URL and fetching is available, fetch it; otherwise work from the text the user pasted.
+- **A collection / cluster the user typed** — e.g. a list of topics or keywords. Treat each as a seed.
+- **A mix** — e.g. an image plus a sentence of context. Merge them into one intent.
+
+**If NO input is present** (no text beyond the bare command, no image, no article) AND no chart exists → **STOP** and ask the user to paste the text / attach the image / drop the article or link describing what they want added. Do NOT invent a brief.
+
+Write a short **Interpreted brief** paragraph at the top of your working notes (and later into the saved chart's frontmatter/source line): 2–4 sentences restating, in your own words, what the user wants added — the topics, the audience, the angle, and the input modality it came from. This is what everything downstream is validated against; if your interpretation is wrong, the user catches it at the Phase 0 manifest gate.
+
+## API key (read from environment — NEVER embed in this file or the saved chart)
+- **DATA SOURCE IS DATAFORSEO — USER RULE 2026-10-20, overrides every provider line below.** This pass never uses Ahrefs (no Ahrefs API, no Ahrefs MCP) or any other paid keyword vendor. Prefix EVERY `scripts/lib/keyword_data.py` call with `KEYWORD_PROVIDERS=dataforseo` (in Python, set `os.environ["KEYWORD_PROVIDERS"] = "dataforseo"` before the first call), so volume, KD and expansion all come from DataForSEO; live SERP / PAA comes from `scripts/lib/serp.py` (also DataForSEO). Wherever this file says "SEMRUSH-validate" or names a SEMRUSH report, run the DataForSEO equivalent instead: `phrase_these` / `phrase_kdi` → `volumes()`; `phrase_related` / `phrase_fullsearch` / `phrase_questions` → `expand()` + the SERP's PAA; `phrase_organic` → `serp.py`. If DataForSEO is unavailable or hits `DFS_MAX_COST_USD`, the helper drops to the labelled autocomplete estimate — never to Ahrefs. Check with `KEYWORD_PROVIDERS=dataforseo python3 scripts/lib/keyword_data.py status` (ahrefs and semrush must read `off`).
+- **Keyword demand comes from the shared ladder, not a single API.** Call `scripts/lib/keyword_data.py` (`volumes()` / `expand()`), which picks the best usable provider for each field automatically (pinned to DataForSEO for this pass — see the rule above) and always adds live Google Autocomplete on top. Read `.claude/commands/_keyword-demand-ladder.md` before this phase. Do NOT hand-roll a SEMRUSH call and do NOT hardcode a key — the helper reads `$DATAFORSEO_B64` (or `$DATAFORSEO_LOGIN` / `$DATAFORSEO_PASSWORD`) from the environment (`us` database by default; override with `SEMRUSH_DATABASE`).
+- **Do not over-read DataForSEO KD or volume.** Its KD is modeled, not link-graph calibrated; its volume comes from Google but is rounded into buckets with close variants merged. Trust cluster totals over single rows, and never drop a row on a DataForSEO KD alone.
+- **DataForSEO controls:** `DFS_ENABLED=0` removes it from every ladder; `DFS_MAX_COST_USD` (default `$2.00`) caps per-process spend, demoting the field rather than overspending. (GSC performance data may still be consulted later, in the execution phases' metadata gates — that is a separate signal, not keyword discovery.)
+- **NEVER stop this pass because a key is missing or dry.** The helper demotes a rung and continues. If a phrase has no provider volume, keep going and label that row `source: estimate (autocomplete) — NOT measured`, carrying the band rather than a point figure. Apply floors with `passes_floor()`, and state the rung that ran in the summary (`keyword_data.notes()`). Fabricating a volume number, or inventing a keyword phrase, remains forbidden at every rung.
+- If you must call SEMRUSH from a shell, prefix so the key never lands in shell history/logs (e.g. `SEMRUSH_API_KEY="$SEMRUSH_API_KEY" python scripts/semrush_ai_seo_research.py ...`).
+
+## API budget discipline (SEMRUSH costs credits — use it moderately)
+Be deliberately economical; do not hammer the API.
+- **One pull per seed / phrase.** Expand each seed once (`phrase_related` / `phrase_fullsearch` / `phrase_questions`), validate each candidate once (`phrase_these` for volume/CPC, `phrase_kdi` for difficulty). Batch phrases with `;` joins (both `phrase_these` and `phrase_kdi` accept a `;`-separated `phrase` list) instead of one call per keyword.
+- **Only look up metrics for real candidates**, not every raw expansion result. Filter to plausible, on-mission phrases first, then validate that shortlist.
+- **Keep the seed set tight** (a handful of seeds derived from the brief). Cache intermediate JSON/CSV under `reports/mindmap-pass/` and read from it instead of re-querying.
+- Prefer free signals (the Autocomplete tool, web search, the codebase, the target-keyword doc) for judgment calls; spend SEMRUSH credits only where a real metric is needed.
+
+## SEMRUSH report types (same endpoint the repo scripts already use)
+| Need | `type=` | Notes |
+|---|---|---|
+| Volume / CPC / competition for exact phrases | `phrase_these` | Batch with `phrase=a;b;c`. The primary validation call. |
+| Keyword difficulty (KD) | `phrase_kdi` | Batch with `phrase=a;b;c`. |
+| Related-keyword expansion | `phrase_related` | Per seed; cap with `display_limit`. |
+| Broad-match expansion | `phrase_fullsearch` | Per seed; cap with `display_limit`. |
+| Question-format expansion | `phrase_questions` | Per seed; the "what/how/can/is" long-tail. |
+| Who ranks (SERP / competition read) | `phrase_organic` | Per top candidate — tells you how contested the term is and who owns it. |
+
+Free live-demand miner (no SEMRUSH credits, real Google data) — run it on every core seed to widen long-tail/question coverage:
+```bash
+python3 .claude/tools/autocomplete-paa/autocomplete.py \
+  --seed "<seed phrase from the brief>" \
+  --mode all \
+  --csv reports/mindmap-pass/<TODAY>.autocomplete.<seed-slug>.csv
+```
+`--mode all` runs the 10 question-prefix sweep + the a–z alphabet sweep and dedups; output is `seed,suggestion,via` CSV. Treat every row as a Lens-2 candidate. If the project has a tracked-keyword inventory file, pass `--inventory <that file>` so new suggestions are appended (deduped) to THIS project's inventory only.
+
+---
+
+## ► ANALYZE THE BRIEF THROUGH THREE MANDATORY LENSES — ALL RUN ON EVERY PASS
+
+- **Lens 1 — Direct intent (what the user explicitly wants added).** Parse the interpreted brief into the concrete topics/pages the user is actually asking for. For each, derive the exact keyword phrase(s) a searcher would use, **validate them on SEMRUSH** (`phrase_these` + `phrase_kdi`, and `phrase_organic` on the strongest to read competition), and shape each into a chart row with a real target. This lens honors the user's request literally.
+- **Lens 2 — Adjacent-demand discovery (CORE TENET — never skip).** The brief is a seed, not a ceiling. Expand around it with SEMRUSH (`phrase_related` / `phrase_fullsearch` / `phrase_questions`) + the Autocomplete miner + a quick web/news scan, and surface **clusters of real demand the user did NOT name but that belong with their idea** — sibling questions, adjacent audiences/verticals, comparison/format variants, news-driven spikes. This is the same emerging-search-pattern engine `/seo-gsc-pass` runs, re-pointed from "the GSC query set" to "the demand space around the user's brief." **A pass that returns only the literal terms the user typed, with no SEMRUSH-driven adjacent clusters, has failed this rule.**
+- **Lens 3 — Comparison / Alternatives / Pricing (CORE TENET — run on EVERY pass; see the dedicated section below).** For every primary entity the brief names or implies (product, tool, vendor, model, platform, service), systematically mine the three highest-commercial-intent bottom-funnel formats: **`{entity} vs {rival}` comparisons**, **`{entity} alternatives`**, and **`{entity} pricing / cost / is it worth it`**. These convert and are where competitors concentrate — a mindmap pass that ships topical/how-to rows but no vs/alternatives/pricing coverage for the brief's entities has failed this rule. All three lenses feed the same output table.
+- **Lens 3b — Model-launch overlay (CONDITIONAL).** Runs only on an AI-content repo when the brief or the lenses surfaced a **new AI model release**; every other repo and brief skips it. It forces the Tier 0 Launch Core rows into the chart regardless of keyword-tool volume. See the dedicated section below.
+
+## LENS 1 — Direct intent → validated rows
+
+1. **Extract seeds from the interpreted brief.** List the concrete topics/entities/audiences/angles the user wants. Convert each into 1–3 candidate search phrases (how a real searcher phrases it), not marketing copy.
+2. **Validate on SEMRUSH.** Batch the candidates through `phrase_these`

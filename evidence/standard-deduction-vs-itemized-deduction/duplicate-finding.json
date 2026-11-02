@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-02",
+  "decision": "DEFERRED - exact-intent duplicate already live; no new route created",
+  "proposedRoute": "/compare/standard-deduction-vs-itemized-deduction/",
+  "existingRoute": "/compare/standard-vs-itemized-deduction/",
+  "existingSource": "src/data/comparisons.ts (slug standard-vs-itemized-deduction, updated 2026-10-12, targetKeyword 'standard deduction vs itemized deduction', not draft, in sitemap)",
+  "lookup": "scripts/mindmap/coverage_lookup.py --candidate 'standard deduction vs itemized deduction' --site-url https://www.themodernwallet.com (topic match 1.0, same format)",
+  "rule": "phase-3-new-content.md NET-NEW ONLY: a new-content row pointing at an existing route -> STOP and flag; _decision-evidence.md: do not create another URL for the same intent",
+  "existingPageGap": "Existing page states no dollar figures at all and its 'How the amount is set' itemized cell reads 'Not published'. Candidate enrichment (separate body-update action, not authorized in this run).",
+  "verifiedIrsFigures_checked_2026-11-02": {
+    "standardDeductionTY2026": {"single_mfs": 16100, "mfj_surviving_spouse": 32200, "head_of_household": 24150, "source": ["https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill", "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf (Rev. Proc. 2025-32 sec. 3.14)"]},
+    "standardDeductionTY2025": {"single_mfs": 15750, "mfj": 31500, "head_of_household": 23625, "source": "IR-2025-103 (same newsroom URL)"},
+    "additionalAgeOrBlind": {"TY2026": [1650, 2050], "TY2025": [1600, 2000], "source": ["Rev. Proc. 2025-32 sec. 3.14(3)", "https://www.irs.gov/taxtopics/tc551"]},
+    "dependentLimit": {"greaterOf": 1350, "orEarnedIncomePlus": 450, "source": "Rev. Proc. 2025-32 sec. 3.14(2)"},
+    "saltCapTY2025": {"cap": 40000, "mfs": 20000, "phaseDownMAGIOver": 500000, "floor": 10000, "source": ["https://www.irs.gov/taxtopics/tc503", "https://www.irs.gov/instructions/i1040sca"], "note": "No fetched IRS page gave a 2026 SALT figure; do not state one."},
+    "nonItemizerCharityTY2026": {"single": 1000, "joint": 2000, "source": "https://www.irs.gov/taxtopics/tc506"},
+    "medicalFloor": {"pctOfAGI": 7.5, "source": "https://www.irs.gov/taxtopics/tc502"},
+    "mortgageDebtLimitPost2017": {"limit": 750000, "mfs": 375000, "source": "https://www.irs.gov/instructions/i1040sca"},
+    "seniorDeductionTY2025": {"amount": 6000, "note": "separate from standard deduction, AGI-limited", "source": "https://www.irs.gov/taxtopics/tc551"}
+  },
+  "irsPrimaryPages": ["https://www.irs.gov/taxtopics/tc501", "https://www.irs.gov/taxtopics/tc551", "https://www.irs.gov/taxtopics/tc503", "https://www.irs.gov/taxtopics/tc506", "https://www.irs.gov/taxtopics/tc502", "https://www.irs.gov/publications/p501"]
+}
