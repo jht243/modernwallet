@@ -30,7 +30,10 @@ TWO RULES GOVERN THIS MODULE (they are the whole contract):
                     autocomplete BAND (source="estimate", confidence="low").
     Disable only with AUTOCOMPLETE_ENRICH=0, and only for a speed-critical run.
 
-Provider selection order (first one usable wins the whole run):
+Provider selection order (first one usable wins each field for the whole run;
+USER RULE 2026-11-02 — SEMRUSH first, see FIELD_ORDER): semrush > dataforseo >
+ahrefs. The numbered list below is the original rung history, kept for the
+per-provider notes:
   0. dataforseo — DataForSEO API v3 ($DATAFORSEO_LOGIN/$DATAFORSEO_PASSWORD, or
                 the pre-encoded $DATAFORSEO_B64). Real Google-Ads volume/CPC +
                 Labs keyword difficulty. Pay-as-you-go with no subscription
@@ -506,10 +509,14 @@ def _estimate_expand(seed: str, limit: int, gl: str = "us") -> list[dict]:
 # with PAA and AI Overview citations, so there is no ladder to rank. See
 # scripts/lib/serp.py.
 
+# USER RULE 2026-11-02: SEMRUSH first for every field whenever it can answer
+# (prepaid units, ~1.98M on the fleet key); DataForSEO is the fallback; Ahrefs
+# units are reserved for site audits, so Ahrefs is last and only reached when
+# both others fail. This supersedes the quality ranking above.
 FIELD_ORDER = {
-    "volume": ("ahrefs", "dataforseo", "semrush"),
-    "kd":     ("ahrefs", "semrush", "dataforseo"),
-    "expand": ("ahrefs", "semrush", "dataforseo"),
+    "volume": ("semrush", "dataforseo", "ahrefs"),
+    "kd":     ("semrush", "dataforseo", "ahrefs"),
+    "expand": ("semrush", "dataforseo", "ahrefs"),
 }
 
 _FIELD_PROVIDER: dict[str, str | None] = {}
@@ -518,14 +525,19 @@ _FIELD_PROVIDER: dict[str, str | None] = {}
 def _order(field: str) -> tuple[str, ...]:
     """FIELD_ORDER, unless KEYWORD_PROVIDERS pins one order for every field.
 
-    KEYWORD_PROVIDERS is a comma list (e.g. "dataforseo"). A provider left off
-    the list is never called. /mindmap-pass runs with KEYWORD_PROVIDERS=dataforseo
-    (USER RULE 2026-10-20: mindmap uses DataForSEO, never Ahrefs).
+    KEYWORD_PROVIDERS is a comma list (e.g. "semrush,dataforseo"). A provider left
+    off the list is never called. /mindmap-pass runs with
+    KEYWORD_PROVIDERS=semrush,dataforseo (never Ahrefs, USER RULE 2026-10-20;
+    SEMRUSH first, USER RULE 2026-11-02). An old pin of just "dataforseo" is
+    widened to put SEMRUSH in front, so routine prompts written before
+    2026-11-02 follow the new rule without an edit; SEMRUSH_ENABLED=0 undoes it.
     """
     pinned = os.environ.get("KEYWORD_PROVIDERS", "").strip()
     if not pinned:
         return FIELD_ORDER[field]
     names = [n.strip().lower() for n in pinned.split(",")]
+    if names == ["dataforseo"] and os.environ.get("SEMRUSH_ENABLED", "").strip() != "0":
+        names = ["semrush", "dataforseo"]
     return tuple(n for n in dict.fromkeys(names) if n in ("dataforseo", "semrush", "ahrefs"))
 
 

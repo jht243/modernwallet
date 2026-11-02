@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Competitor keyword gap on DataForSEO — the ONLY source for keyword-gap routines.
+"""Competitor keyword gap — SEMRUSH first, DataForSEO fallback, never Ahrefs.
 
-Ahrefs units are reserved for technical site audits (see
-.claude/commands/_site-audit-section.md). SEMRUSH is dead on the fleet key. So
-the keyword-gap pass gets its competitor data here, never from the Ahrefs API or
-the Ahrefs MCP connector. The 2026-09-20 Sunday run burned ~143k Ahrefs units
+USER RULE 2026-11-02: SEMRUSH is primary wherever it can answer. Each domain's
+ranked keywords come from SEMRUSH domain_organic and the competitor list from
+domain_organic_organic (scripts/lib/semrush.py); a SEMRUSH failure (no key,
+units out) falls back to DataForSEO Labs per call. Ahrefs units are reserved for
+technical site audits (see .claude/commands/_site-audit-section.md), so the
+keyword-gap pass never uses the Ahrefs API or the Ahrefs MCP connector. The 2026-09-20 Sunday run burned ~143k Ahrefs units
 in 50 minutes doing this through the Ahrefs MCP; the same pull here is ~$0.50.
 
 Per-site config is read (by AST, never imported — some import src.* modules)
@@ -13,7 +15,8 @@ from the repo's existing scripts/semrush_keyword_gap.py:
 Anything missing falls back to a CLI flag or a permissive default.
 
 COST DISCIPLINE
-  * ranked_keywords is $0.012/request + $0.00012/row (measured 2026-09-24).
+  * SEMRUSH domain_organic is 10 units/row (a 200-row competitor pull = 2,000 units).
+  * DataForSEO fallback: ranked_keywords is $0.012/request + $0.00012/row (2026-09-24).
   * Every domain pull is cached in reports/seo-research/dfs-cache/ for
     CACHE_DAYS (28). Competitor keyword sets barely move week to week, so a
     weekly routine pays for fresh pulls about once a month.
@@ -39,6 +42,7 @@ from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import dataforseo as dfs  # noqa: E402
+import semrush as sr  # noqa: E402
 
 ROOT = Path.cwd()
 OUT_DIR = ROOT / "reports" / "seo-research"
@@ -149,10 +153,17 @@ def cached_ranked(domain: str, limit: int, database: str, use_cache: bool,
                 return blob["rows"][:limit]
         except Exception:
             pass
-    rows = dfs.ranked_keywords(domain, limit, database)
+    src = "semrush"
+    try:
+        rows = sr.ranked_keywords(domain, limit, database)
+    except sr.SemrushError as e:
+        if not dfs.available():
+            raise dfs.DFSError(f"SEMRUSH failed ({e}) and DataForSEO is unavailable")
+        notes.append(f"{domain}: SEMRUSH failed ({str(e)[:60]}) -> DataForSEO")
+        rows, src = dfs.ranked_keywords(domain, limit, database), "dataforseo"
     f.write_text(json.dumps({"domain": domain, "limit": limit, "fetched_at": time.time(),
-                             "rows": rows}))
-    notes.append(f"{domain}: fresh pull ({len(rows)} rows)")
+                             "source": src, "rows": rows}))
+    notes.append(f"{domain}: fresh pull from {src} ({len(rows)} rows)")
     return rows
 
 
@@ -179,8 +190,8 @@ def main(argv=None) -> int:
         print(json.dumps({"error": "no OUR_DOMAIN in scripts/semrush_keyword_gap.py or "
                           ".claude/project-facts.json; pass --domain <site host>"}))
         return 2
-    if not dfs.available():
-        print(json.dumps({"error": "DataForSEO unavailable (no credentials or DFS_ENABLED=0)"}))
+    if not (sr.available() or dfs.available()):
+        print(json.dumps({"error": "SEMRUSH and DataForSEO both unavailable (no keys, or disabled)"}))
         return 2
 
     comps = (a.competitor or cfg.get("COMPETITORS") or [])[:a.max_competitors]
@@ -192,9 +203,13 @@ def main(argv=None) -> int:
     live_competitors = []
     if a.refresh_competitors or not comps:
         try:
-            live_competitors = dfs.competitors_domain(a.domain, 20, a.database)
-        except (dfs.DFSError, dfs.BudgetExceeded) as e:
-            notes.append(f"competitors_domain failed: {e}")
+            live_competitors = sr.competitors_domain(a.domain, 20, a.database)
+        except sr.SemrushError as e:
+            notes.append(f"SEMRUSH competitors failed ({str(e)[:60]}) -> DataForSEO")
+            try:
+                live_competitors = dfs.competitors_domain(a.domain, 20, a.database)
+            except (dfs.DFSError, dfs.BudgetExceeded) as e2:
+                notes.append(f"competitors_domain failed: {e2}")
         if not comps:
             comps = [c["domain"] for c in live_competitors][:min(8, a.max_competitors)]
             notes.append("no COMPETITORS configured -> using top live SERP-overlap domains; "
@@ -245,7 +260,7 @@ def main(argv=None) -> int:
     results.sort(key=lambda x: x["score"], reverse=True)
 
     out = {
-        "source": "dataforseo",
+        "source": "semrush (dataforseo fallback per domain; see notes)",
         "domain": a.domain, "database": a.database, "competitors": comps,
         "live_competitors": live_competitors,
         "our_keyword_count": len(ours), "tracked_keyword_count": len(tracked),

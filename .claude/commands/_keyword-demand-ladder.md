@@ -9,17 +9,21 @@
 a routine must never stop, skip, or email failure because a keyword API key is
 missing, expired, or out of credits.** Demote one rung and keep going.
 
-## The ladder — BEST SOURCE PER FIELD, with ranked backups
+## The ladder — SEMRUSH FIRST, with ranked backups
 
-There is no single "best" keyword vendor, so there is no single ladder. Each
-FIELD has its own quality order, and the best **usable** provider wins that
-field for the whole run:
+**USER RULE 2026-11-02: SEMRUSH is the primary keyword tool wherever it can
+answer; DataForSEO is primary only for what SEMRUSH does not have (live SERPs
+with titles/snippets, People Also Ask text, AI Overview citations, long-tail
+phrases SEMRUSH does not track).** Ahrefs units are reserved for site audits,
+so Ahrefs is last. The best **usable** provider wins each field for the whole run:
 
-| Field | Quality order | Why this order |
+| Field | Order | Why this order |
 |---|---|---|
-| **volume** | `ahrefs` → `dataforseo` → `semrush` | Ahrefs/SEMRUSH model finer-grained numbers from clickstream. DataForSEO reports Google's own counts, but **rounded into buckets** (10/20/50/390/4400) with close variants merged — closer to the primary source, coarser in the hand. |
-| **kd** | `ahrefs` → `semrush` → `dataforseo` | Ahrefs KD is calibrated against a real link graph and is the industry reference. DataForSEO Labs KD is **modeled** and the least proven of the three. |
-| **expand** | `ahrefs` → `semrush` → `dataforseo` | Ahrefs/SEMRUSH have larger, cleaner idea databases, and SEMRUSH ships a dedicated questions report. |
+| **volume** | `semrush` → `dataforseo` → `ahrefs` | SEMRUSH `phrase_these` (10 units/keyword, prepaid). DataForSEO `keyword_overview` only when SEMRUSH has no key, no units, or errors. |
+| **kd** | `semrush` → `dataforseo` → `ahrefs` | SEMRUSH KDI (`phrase_kdi`, 50 units/keyword). DataForSEO Labs KD is modeled; fallback only. |
+| **expand** | `semrush` → `dataforseo` → `ahrefs` | SEMRUSH `phrase_related` + `phrase_questions` (dedicated questions report). |
+| **ranked keywords / competitors / movers** | `semrush` → `dataforseo` | `scripts/lib/semrush.py` (`domain_organic`, `domain_organic_organic`, `display_positions`) behind `dfs_keyword_gap.py` and `dfs_winner_loser.py`. |
+| **vendor roster for head keywords** | `semrush` → `dataforseo` | SEMRUSH `phrase_organic` top 10 (no titles); a keyword SEMRUSH does not track falls back to the live SERP. |
 | **SERP** | `dataforseo` only | No other vendor sells live SERP with PAA text and AI Overview citations at any price. Not a ladder — see `scripts/lib/serp.py`. |
 | **technical site audit** | `ahrefs` → `dataforseo` | Ahrefs' crawler sees what a page alone cannot (backlink-driven issues, crawl depth, orphan pages). DataForSEO OnPage covers every issue the auto-fix table can act on, at ~$0.00015/URL — see `scripts/lib/site_audit.py`, which emits **Ahrefs' issue slugs** so nothing downstream changes. |
 
@@ -72,11 +76,13 @@ the field demotes to the next provider instead of spending on.
 
 ### Pinned order — `KEYWORD_PROVIDERS`
 
-Set `KEYWORD_PROVIDERS` (comma list, e.g. `dataforseo`) to replace the per-field
-order above for every field; a provider left off the list is never called.
-**/mindmap-pass always runs with `KEYWORD_PROVIDERS=dataforseo`** (USER RULE
-2026-10-20: mindmap uses DataForSEO, never Ahrefs). If DataForSEO is down or
-capped, that run falls to the labelled autocomplete estimate, not to Ahrefs.
+Set `KEYWORD_PROVIDERS` (comma list, e.g. `semrush,dataforseo`) to replace the
+per-field order above for every field; a provider left off the list is never called.
+**/mindmap-pass always runs with `KEYWORD_PROVIDERS=semrush,dataforseo`** (never
+Ahrefs, USER RULE 2026-10-20; SEMRUSH first, USER RULE 2026-11-02). An older pin of
+just `dataforseo` is widened to `semrush,dataforseo` by the helper itself
+(`SEMRUSH_ENABLED=0` turns that off). If both are down or capped, the run falls to
+the labelled autocomplete estimate, not to Ahrefs.
 
 ## How to call it — always through the shared helper
 

@@ -41,13 +41,21 @@ class ExpansionTests(unittest.TestCase):
                 with self.assertRaises(ValueError): k.expand('fixture', limit)
             provider.assert_not_called()
     def test_pinned_provider_never_probes_excluded_vendors(self):
-        with patch.dict(k.os.environ, {'KEYWORD_PROVIDERS': 'dataforseo'}), patch.dict(k._FIELD_PROVIDER, {}, clear=True), patch.object(k, '_provider_usable', return_value=True) as probe:
+        with patch.dict(k.os.environ, {'KEYWORD_PROVIDERS': 'dataforseo', 'SEMRUSH_ENABLED': '0'}), patch.dict(k._FIELD_PROVIDER, {}, clear=True), patch.object(k, '_provider_usable', return_value=True) as probe:
             self.assertEqual(k.field_provider('expand'), 'dataforseo')
             self.assertEqual([c.args[0] for c in probe.call_args_list], ['dataforseo'])
     def test_pinned_dry_provider_does_not_fall_to_excluded_vendor(self):
-        with patch.dict(k.os.environ, {'KEYWORD_PROVIDERS': 'dataforseo'}), patch.dict(k._FIELD_PROVIDER, {}, clear=True), patch.object(k, '_provider_usable', return_value=False) as probe:
+        with patch.dict(k.os.environ, {'KEYWORD_PROVIDERS': 'dataforseo', 'SEMRUSH_ENABLED': '0'}), patch.dict(k._FIELD_PROVIDER, {}, clear=True), patch.object(k, '_provider_usable', return_value=False) as probe:
             self.assertIsNone(k.field_provider('expand'))
             self.assertEqual([c.args[0] for c in probe.call_args_list], ['dataforseo'])
+    def test_old_dataforseo_pin_puts_semrush_first_never_ahrefs(self):
+        with patch.dict(k.os.environ, {'KEYWORD_PROVIDERS': 'dataforseo'}), patch.dict(k._FIELD_PROVIDER, {}, clear=True), patch.object(k, '_provider_usable', side_effect=lambda n, d: n == 'dataforseo') as probe:
+            k.os.environ.pop('SEMRUSH_ENABLED', None)
+            self.assertEqual(k.field_provider('volume'), 'dataforseo')
+            self.assertEqual([c.args[0] for c in probe.call_args_list], ['semrush', 'dataforseo'])
+    def test_default_order_is_semrush_first(self):
+        with patch.dict(k.os.environ, {'KEYWORD_PROVIDERS': ''}), patch.dict(k._FIELD_PROVIDER, {}, clear=True), patch.object(k, '_provider_usable', return_value=True):
+            self.assertEqual({f: k.field_provider(f) for f in ('volume', 'kd', 'expand')}, {'volume': 'semrush', 'kd': 'semrush', 'expand': 'semrush'})
     def test_empty_sources(self): self.assertEqual(self.expand([], []), [])
 
 if __name__ == '__main__': unittest.main()
