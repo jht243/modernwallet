@@ -176,7 +176,28 @@ def _dfs_on() -> bool:
 
 
 def _dfs_volumes(phrases: list[str], database: str) -> dict[str, dict]:
-    """Google Ads volume/CPC + Labs KD, merged into ladder rows.
+    """Volume/CPC/KD from ONE Labs keyword_overview call, cached 30 days in Supabase.
+
+    Owner 2026-11-02: the Google Ads search_volume call is a flat $0.09 per run
+    and 58 routine runs a day across the fleet made it $5+/day; keyword_overview
+    is ~$0.013 for the same dozen phrases and carries KD, so the second call goes
+    too. The old pair stays as the fallback when the overview endpoint fails.
+    """
+    if hasattr(_dfs, "keyword_overview"):
+        try:
+            rows = _dfs.keyword_overview(phrases, database)
+        except Exception as e:
+            if type(e).__name__ == "BudgetExceeded":
+                raise
+            _note(f"DataForSEO keyword_overview failed ({str(e)[:80]}) — falling back to search_volume + KD")
+        else:
+            return {k: _row(r["keyword"], r["volume"], r["kd"], r["cpc"], "dataforseo", "high")
+                    for k, r in rows.items()}
+    return _dfs_volumes_legacy(phrases, database)
+
+
+def _dfs_volumes_legacy(phrases: list[str], database: str) -> dict[str, dict]:
+    """Google Ads volume/CPC + Labs KD, merged into ladder rows (two paid calls).
 
     Volume and KD are two endpoints. Volume is the load-bearing one, so a KD
     failure degrades the rows (kd="") instead of losing the whole rung.

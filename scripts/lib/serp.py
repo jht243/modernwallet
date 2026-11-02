@@ -15,8 +15,9 @@ unattended routine is far more expensive than a mislabeled one, and this fleet
 has been bitten by silent single-record failures before. Label first; promote
 to a hard gate only after real runs prove the labels right.
 
-Cost: one live advanced SERP is ~$0.00415 (depth 20 + PAA click depth 1). Read
-the top ~10 cluster heads per pass, not every candidate row.
+Cost: one live advanced SERP is ~$0.002 at depth 10 (+ PAA click depth 1); the
+verdict only reads the top 10, so depth 20 (owner 2026-11-02) just doubled the
+bill. Read the top ~10 cluster heads per pass, not every candidate row.
 
 Usage:
     import sys; sys.path.insert(0, "scripts/lib")
@@ -83,7 +84,7 @@ def _matches(domain: str, table: set) -> bool:
     return d in table or _root(d) in table
 
 
-def read(keyword: str, database: str = "us", depth: int = 20,
+def read(keyword: str, database: str = "us", depth: int = 10,
          paa_depth: int = 1) -> dict:
     """One SERP -> one verdict. Raises RuntimeError if the SERP can't be read."""
     if not _dfs or not _dfs.available():

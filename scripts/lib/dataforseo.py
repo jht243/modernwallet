@@ -11,19 +11,31 @@ which walks dataforseo -> semrush -> ahrefs -> estimate and normalizes rows.
 This module is the transport + cost discipline layer only.
 
 COST DISCIPLINE (the whole reason this file is separate):
-  * keywords_data/google_ads/search_volume is charged FLAT PER REQUEST for
-    1..1000 keywords ($0.09 measured). Sending one keyword per call instead of
-    batching is the difference between $0.09 and $90 for the same data, so
-    batching is enforced here, not left to the caller.
+  * Volume + KD come from ONE labs/keyword_overview call (keyword_overview(),
+    $0.0132 measured for 12 phrases). The old pair — google_ads/search_volume at
+    a FLAT $0.09 per request plus bulk_keyword_difficulty — cost $0.10 per
+    routine run; 58 runs a day across the fleet was $5.90/day (2026-11-02).
+    search_volume() is kept for callers that need Google Ads' own numbers.
+  * Rows are cached in Supabase (dfs_keyword_cache, CACHE_DAYS) so the same
+    phrase is never bought twice in a month; "no data" is cached too.
   * Every call's returned `cost` is accumulated. Once DFS_MAX_COST_USD is hit
     the client raises BudgetExceeded and the ladder demotes to the next rung
     rather than spending unbounded money in an unattended cloud routine.
+  * FLEET CAP: every paid call is logged to Supabase (dfs_spend) and the client
+    refuses to spend once today's fleet-wide total passes
+    FLEET_DFS_DAILY_CAP_USD (default $4). The per-process cap alone never
+    bounded the day: 25 sites x several routines x $2.
+  * Every task carries a `tag` ("<routine>|<site>", DFS_TAG to override) so
+    DataForSEO's own task log attributes spend without guessing from timestamps.
+  Both Supabase features need SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY and
+  fail OPEN (no cache, no fleet cap) when they are missing or unreachable.
 
 KILL SWITCH: set DFS_ENABLED=0 to make available() return False, which takes
 this rung out of the ladder without editing any code.
 
-Measured prices on this account (2026-08-23), for the cost model:
-  serp/google/organic/live/advanced   $0.00415  (depth 20 + PAA click depth 1)
+Measured prices on this account, for the cost model:
+  serp/google/organic/live/advanced   $0.002    depth 10 (2026-11-01); $0.004 at depth 20
+  labs/keyword_overview               $0.0132   for 12 keywords (2026-11-02), volume+CPC+KD
   keywords_data/.../search_volume     $0.09     flat, 1-1000 keywords
   labs/keyword_ideas                  $0.012 base + ~$0.00012/item
   labs/bulk_keyword_difficulty        $0.01236 for 3 keywords
@@ -34,10 +46,13 @@ Stdlib only. No pip installs.
 from __future__ import annotations
 
 import base64
+import datetime as _dt
 import json
 import os
+import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 
 API = "https://api.dataforseo.com/v3"
@@ -52,7 +67,10 @@ SECRETS_FILES = [
 ]
 
 DEFAULT_MAX_COST = 2.00      # USD per process, override with DFS_MAX_COST_USD
+DEFAULT_FLEET_DAILY_CAP = 4.00  # USD per UTC day across EVERY repo, override with FLEET_DFS_DAILY_CAP_USD
 SEARCH_VOLUME_BATCH = 1000   # hard API max, and the whole point of batching
+KEYWORD_OVERVIEW_BATCH = 700  # hard API max for labs/keyword_overview
+CACHE_DAYS = 30              # a phrase's volume/KD is reused this long before it is bought again
 
 
 class BudgetExceeded(RuntimeError):
@@ -122,14 +140,87 @@ def cost_summary() -> str:
     return f"DataForSEO: {len(_CALLS)} calls, ${spent():.5f} of ${budget():.2f} budget"
 
 
+# ------------------------------------------------- Supabase: cache + fleet cap
+# Fail OPEN: a missing key or a Supabase hiccup must never block a routine. The
+# worst case is the pre-2026-11-02 behaviour (every phrase bought, per-process
+# cap only).
+
+def _sb() -> tuple[str, str]:
+    url = resolve_key("SUPABASE_URL").rstrip("/")
+    key = resolve_key("SUPABASE_SERVICE_ROLE_KEY")
+    return (url, key) if url and key else ("", "")
+
+
+def _sb_req(method: str, path: str, body=None, prefer: str = ""):
+    """One PostgREST call; parsed JSON, [] for an empty body, None on ANY failure."""
+    url, key = _sb()
+    if not url:
+        return None
+    headers = {**_UA, "apikey": key, "Authorization": f"Bearer {key}",
+               "Content-Type": "application/json"}
+    if prefer:
+        headers["Prefer"] = prefer
+    req = urllib.request.Request(f"{url}/rest/v1/{path}", method=method, headers=headers,
+                                 data=None if body is None else json.dumps(body).encode())
+    try:
+        with urllib.request.urlopen(req, timeout=15) as r:
+            raw = r.read().decode("utf-8", "replace").strip()
+            return json.loads(raw) if raw else []
+    except Exception:
+        return None
+
+
+def _tag() -> str:
+    """'<routine>|<site>' stamped on every task — DataForSEO keeps it in its own
+    task log (free), so a cost question is one id_list query, not timestamp forensics."""
+    explicit = os.environ.get("DFS_TAG", "").strip()
+    if explicit:
+        return explicit[:255]
+    routine = (os.environ.get("ROUTINE_NAME", "").strip()
+               or os.path.splitext(os.path.basename(sys.argv[0] or ""))[0] or "python")
+    site = os.environ.get("OUR_DOMAIN", "").strip() or os.path.basename(os.getcwd())
+    return re.sub(r"[^A-Za-z0-9 _.|:/-]", "", f"{routine}|{site}")[:255]
+
+
+def fleet_cap() -> float:
+    try:
+        return float(os.environ.get("FLEET_DFS_DAILY_CAP_USD", "") or DEFAULT_FLEET_DAILY_CAP)
+    except ValueError:
+        return DEFAULT_FLEET_DAILY_CAP
+
+
+_FLEET_TODAY: float | None = None   # today's fleet total at first call; this process adds to it
+
+
+def fleet_spent_today() -> float | None:
+    """Sum of every repo's paid calls today (dfs_spend), or None when Supabase is off."""
+    global _FLEET_TODAY
+    if _FLEET_TODAY is None:
+        got = _sb_req("POST", "rpc/dfs_spent_today", {})
+        if isinstance(got, (int, float, str)):
+            try:
+                _FLEET_TODAY = float(got)
+            except ValueError:
+                _FLEET_TODAY = None
+    return _FLEET_TODAY
+
+
 def _post(path: str, payload: list[dict]) -> dict:
-    """POST one task array. Accumulates cost, enforces the budget cap."""
-    global _SPENT
+    """POST one task array. Tags every task, accumulates cost, enforces both caps."""
+    global _SPENT, _FLEET_TODAY
     cred = _auth()
     if not cred:
         raise DFSError("no DataForSEO credentials")
     if _SPENT >= budget():
         raise BudgetExceeded(f"spent ${_SPENT:.4f} >= cap ${budget():.2f}")
+    fleet = fleet_spent_today()
+    if fleet is not None and fleet >= fleet_cap():
+        raise BudgetExceeded(f"fleet spent ${fleet:.2f} today >= daily cap ${fleet_cap():.2f}")
+
+    tag = _tag()
+    for task in payload:
+        if isinstance(task, dict):
+            task.setdefault("tag", tag)
 
     req = urllib.request.Request(
         f"{API}/{path}",
@@ -154,6 +245,11 @@ def _post(path: str, payload: list[dict]) -> dict:
     cost = float(body.get("cost") or 0)
     _SPENT += cost
     _CALLS.append((path, cost))
+    if cost > 0:
+        if _FLEET_TODAY is not None:
+            _FLEET_TODAY += cost
+        _sb_req("POST", "dfs_spend", {"usd": round(cost, 5), "path": path, "tag": tag},
+                prefer="return=minimal")
 
     if body.get("status_code") != 20000:
         raise DFSError(f"{body.get('status_code')} {body.get('status_message')}")
@@ -189,10 +285,100 @@ def _loc(database: str) -> int:
 
 # ------------------------------------------------------------------ endpoints
 
+def _cache_row(r: dict) -> dict:
+    return {"keyword": r.get("keyword") or "",
+            "volume": _num(r.get("volume")),
+            "cpc": "" if r.get("cpc") in (None, "") else round(float(r["cpc"]), 2),
+            "competition": r.get("competition") or "",
+            "kd": "" if r.get("kd") in (None, "") else _num(r["kd"])}
+
+
+def _cache_get(keys: list[str], loc: int) -> dict[str, dict | None]:
+    """Cached rows younger than CACHE_DAYS, keyed by lowercase phrase.
+    None = DataForSEO had no data for it last time (do not buy it again)."""
+    found: dict[str, dict | None] = {}
+    since = (_dt.datetime.now(_dt.timezone.utc) - _dt.timedelta(days=CACHE_DAYS)).isoformat()
+    for i in range(0, len(keys), 60):
+        quoted = ",".join('"' + k.replace('"', "").replace("\\", "") + '"' for k in keys[i:i + 60])
+        rows = _sb_req("GET", "dfs_keyword_cache?select=keyword,volume,cpc,competition,kd"
+                              f"&location_code=eq.{loc}&fetched_at=gte.{urllib.parse.quote(since)}"
+                              f"&keyword=in.({urllib.parse.quote(quoted)})")
+        if rows is None:
+            return found                 # Supabase off -> buy everything, as before
+        for r in rows:
+            k = (r.get("keyword") or "").lower()
+            found[k] = None if r.get("volume") is None else _cache_row(r)
+    return found
+
+
+def _cache_put(rows: list[dict], loc: int) -> None:
+    now = _dt.datetime.now(_dt.timezone.utc).isoformat()
+    body = [{"keyword": r["keyword"].lower(), "location_code": loc,
+             "volume": r["volume"],
+             "cpc": None if r["cpc"] == "" else r["cpc"],
+             "competition": r["competition"] or None,
+             "kd": None if r["kd"] == "" else r["kd"],
+             "fetched_at": now} for r in rows if r.get("keyword")]
+    if body:
+        _sb_req("POST", "dfs_keyword_cache?on_conflict=keyword,location_code", body,
+                prefer="resolution=merge-duplicates,return=minimal")
+
+
+def keyword_overview(phrases: list[str], database: str = "us",
+                     use_cache: bool = True) -> dict[str, dict]:
+    """Volume / CPC / competition / KD in ONE Labs call, keyed by lowercase phrase.
+
+    Replaces search_volume() + keyword_difficulty() for the ladder: $0.0132 for
+    12 phrases instead of $0.09 + $0.013 (measured 2026-11-02). Up to 700
+    phrases per request. Phrases DataForSEO has no row for are left out (the
+    ladder's estimate rung takes them) and cached as volume NULL so they are
+    not bought again for CACHE_DAYS.
+    """
+    out: dict[str, dict] = {}
+    clean: list[str] = []
+    seen: set[str] = set()
+    for p in phrases:
+        p = (p or "").strip()
+        if len(p) >= 3 and p.lower() not in seen:
+            seen.add(p.lower())
+            clean.append(p)
+    loc = _loc(database)
+    todo = clean
+    if use_cache and clean:
+        cached = _cache_get([p.lower() for p in clean], loc)
+        todo = [p for p in clean if p.lower() not in cached]
+        out.update({k: r for k, r in cached.items() if r is not None})
+    fresh: list[dict] = []
+    for i in range(0, len(todo), KEYWORD_OVERVIEW_BATCH):
+        chunk = todo[i:i + KEYWORD_OVERVIEW_BATCH]
+        body = _post("dataforseo_labs/google/keyword_overview/live",
+                     [{"keywords": chunk, "location_code": loc, "language_code": "en"}])
+        got: set[str] = set()
+        for res in _task_result(body):
+            for it in (res.get("items") or []):
+                kw = (it.get("keyword") or "").strip()
+                ki = it.get("keyword_info") or {}
+                kp = it.get("keyword_properties") or {}
+                if not kw or ki.get("search_volume") is None:
+                    continue
+                row = _cache_row({"keyword": kw, "volume": ki.get("search_volume"),
+                                  "cpc": ki.get("cpc"), "competition": ki.get("competition_level"),
+                                  "kd": kp.get("keyword_difficulty")})
+                out[kw.lower()] = row
+                got.add(kw.lower())
+                fresh.append(row)
+        fresh.extend({"keyword": p, "volume": None, "cpc": "", "competition": "", "kd": ""}
+                     for p in chunk if p.lower() not in got)
+    if use_cache and fresh:
+        _cache_put(fresh, loc)
+    return out
+
+
 def search_volume(phrases: list[str], database: str = "us") -> dict[str, dict]:
     """Real Google Ads volume/competition/CPC, keyed by lowercase phrase.
 
-    BATCHED — flat price per request, so we send up to 1000 phrases at a time.
+    $0.09 FLAT per request — prefer keyword_overview() unless Google Ads' own
+    numbers are required. BATCHED: up to 1000 phrases at a time.
     """
     out: dict[str, dict] = {}
     clean = [p.strip() for p in phrases if p and len(p.strip()) >= 3]
@@ -325,10 +511,14 @@ def related_keywords(seed: str, limit: int = 200, database: str = "us",
     return rows
 
 
-def serp_organic(keyword: str, database: str = "us", depth: int = 20,
+def serp_organic(keyword: str, database: str = "us", depth: int = 10,
                  paa_depth: int = 1) -> dict:
     """
     One live Google SERP, advanced. Raw payload — see serp.py for the verdict.
+
+    depth 10 (owner 2026-11-02): the top 10 is the answer every caller reads;
+    depth 20 doubled the price of ~200 routine SERPs a day. Pass depth=20 where
+    positions 11-20 matter.
 
     paa_depth <= 0 OMITS the People-Also-Ask field entirely rather than sending
     a zero, which the API rejects as an invalid field (task error 40501). Drop
@@ -410,7 +600,10 @@ def account() -> dict:
         raise DFSError(str(e)[:200])
     res = ((body.get("tasks") or [{}])[0].get("result") or [{}])[0]
     return {"login": res.get("login"),
-            "balance": (res.get("money") or {}).get("balance")}
+            "balance": (res.get("money") or {}).get("balance"),
+            "spent_today": ((res.get("money") or {}).get("statistics") or {}).get("day", {}).get("total"),
+            "fleet_logged_today": fleet_spent_today(),
+            "fleet_daily_cap": fleet_cap()}
 
 
 def main(argv=None) -> int:
@@ -426,7 +619,7 @@ def main(argv=None) -> int:
         if a.cmd == "account":
             print(json.dumps(account(), indent=1)); return 0
         if a.cmd == "volumes":
-            print(json.dumps({"rows": search_volume(a.phrase),
+            print(json.dumps({"rows": keyword_overview(a.phrase),
                               "cost": cost_summary()}, indent=1)); return 0
         print(json.dumps({"rows": keyword_ideas(a.seed, a.limit, min_volume=a.min_volume),
                           "cost": cost_summary()}, indent=1)); return 0
