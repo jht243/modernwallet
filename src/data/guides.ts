@@ -189,6 +189,110 @@ export const GUIDES: Guide[] = [
       }
     ]
   },
+  // ── x-trends-mindmap-auto 2026-11-02: medicare-part-d-2027-premiums ──
+  {
+      "updated": "2026-11-02",
+      "slug": "medicare-part-d-2027-premiums",
+      "title": "Medicare Part D 2027: KFF Projects Premiums Up 50%",
+      "metaDescription": "KFF projects stand-alone Medicare Part D premiums averaging $51 a month in 2027, up from $34. See what to compare before open enrollment ends December 7.",
+      "h1": "Medicare Part D 2027 Stand-Alone Plan Premiums Projected to Rise 50 Percent",
+      "cardBlurb": "KFF projects the average stand-alone Part D premium may rise from $34 to $51 a month in 2027 unless enrollees switch to lower-cost plans.",
+      "introText": "Medicare Part D 2027 premiums for stand-alone plans are projected to average $51 a month, up 50 percent from $34, according to [KFF](https://www.kff.org/medicare/the-average-monthly-premium-for-medicare-part-d-stand-alone-plans-is-projected-to-increase-by-50-from-34-to-51-in-2027-unless-enrollees-switch-to-lower-cost-plans/). KFF's projection assumes current enrollees keep their plans. The increase is $17 a month, or $204 a year, by simple arithmetic on KFF's figures.\n\nKFF also reports that no zero-premium stand-alone plans are available in 2027. In its October 30, 2026 release, KFF says people facing large premium increases need to take action if they want to avoid paying significantly more. Open enrollment runs through December 7.",
+      "sections": [
+          {
+              "heading": "How Much Medicare Part D 2027 Premiums Rise",
+              "body": "KFF projects the average monthly premium for stand-alone prescription drug plans (PDPs) will rise to $51 in 2027, up 50 percent from $34 in 2026. The projection assumes current enrollees do not switch plans. \n\nThe arithmetic on KFF's two averages works out as follows:\n\n- $34 a month in 2026 equals $408 a year.\n- $51 a month in 2027 equals $612 a year.\n- The gap between the two averages is $17 a month, or $204 a year.\n\nKFF says more than 4 million people enrolled in zero-premium PDPs will face higher premiums, because no zero-premium PDPs are available in 2027. For Medicare Advantage plans with drug coverage (MA-PDs), KFF projects an average of $9 a month in 2027, an increase of less than $2.\n\nThe $51 figure is an average projection, so a given enrollee may pay more or less. [Medicare.gov](https://www.medicare.gov/health-drug-plans/part-d/basics/costs) says Part D premiums vary by plan and may be higher depending on income. Medicare.gov does not list premiums by state or for any individual on the page cited here."
+          },
+          {
+              "heading": "No Zero-Premium Stand-Alone Plans in 2027",
+              "body": "KFF reports that no zero-premium stand-alone drug plans are available in 2027. KFF's release does not say why plans raised premiums.\n\nThe [Centers for Medicare & Medicaid Services (CMS)](https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information) addressed a change to stand-alone plans in a fact sheet dated July 28, 2026. CMS said it will discontinue the voluntary premium stabilization demonstration for stand-alone plans, which began in 2025, at the end of 2026. CMS said plan sponsors had enough experience under the redesigned benefit, so the program returns to traditional market conditions in 2027.\n\n CMS does not present the end of the demonstration in the fact sheet as the reason zero-premium plans are absent, and KFF does not offer it as an explanation either.\n\nThe same CMS fact sheet sets the 2027 national average monthly bid amount at $296.05 and the base beneficiary premium at $41.33. Under the Inflation Reduction Act's premium stabilization provision, the base premium can rise no more than 6 percent per year. Medicare.gov lists the 2026 base beneficiary premium as $38.99, and $38.99 times 1.06 equals $41.33, so by arithmetic the 2027 figure rose by the full 6 percent allowed."
+          },
+          {
+              "heading": "What the Lowest- and Highest-Premium National Plans Cost",
+              "body": "KFF counts eight national PDPs for 2027, with projected average premiums ranging from about $6 to $204 a month. The lowest is [Centene](https://www.centene.com/)'s [Wellcare](https://www.wellcare.com/) Value Script Rx at $6.50, up from $5.80. The highest is [United](https://www.uhc.com/)'s [AARP](https://www.aarp.org/) Medicare Rx Preferred at $204.50, up from $126.00.\n\n| Plan | 2026 Monthly Premium | 2027 Projected Monthly Premium | 2027 Annual Premium (Arithmetic) |\n| --- | --- | --- | --- |\n| Wellcare Value Script Rx (Centene) | $5.80 | $6.50 | $78 |\n| AARP Medicare Rx Preferred (United) | $126.00 | $204.50 | $2,454 |\n\nBy arithmetic, the Wellcare plan rises $0.70 a month and the AARP plan rises $78.50 a month. \n\nThese are average premiums for national plans, and premiums vary by plan. The table covers premiums only, so it does not show what either plan charges as a deductible or for a specific drug. Plans can be compared in [Medicare Plan Finder](https://www.medicare.gov/plan-compare), the Medicare.gov tool for finding and comparing plans."
+          },
+          {
+              "heading": "Deductibles and Cost Sharing in Medicare Part D 2027",
+              "body": "KFF reports the maximum Part D deductible allowed in 2027 is $700, up from $615 in 2026, and plans may charge less. Medicare.gov lists the same $700 ceiling and notes that some plans have no deductible.\n\nAverage deductibles and the share of enrollees facing one also rise, according to KFF:\n\n- PDP enrollees: $643 on average, up from $540.\n- MA-PD enrollees: $489 on average, up from $360.\n- 99.8 percent of PDP enrollees face a deductible if they keep their plans, up from 96 percent.\n- 85 percent of MA-PD enrollees face a deductible if they keep their plans, up from 80 percent.\n\n \n\nAfter the deductible, Medicare.gov says enrollees pay 25 percent coinsurance until out-of-pocket spending reaches $2,100 in 2026 or $2,400 in 2027. Once spending reaches that limit, enrollees pay nothing for covered Part D drugs for the rest of the calendar year. The 2027 limit is $300 higher than the 2026 limit, by arithmetic.\n\nKFF says most enrollees will pay coinsurance rather than copayments for preferred and non-preferred drugs, which can make out-of-pocket costs less predictable. Medicare.gov defines a copayment as a fixed dollar amount per prescription and coinsurance as a percentage of the drug cost. A 25 percent coinsurance charge moves with the price of the drug, while a copayment stays the same."
+          },
+          {
+              "heading": "How to Compare and Switch Before December 7",
+              "body": "Open enrollment runs through December 7, according to KFF, and KFF says relatively low-premium PDP options exist. Medicare Plan Finder at medicare.gov/plan-compare is the Medicare.gov tool for finding and comparing plans.\n\nA premium is only part of a plan's yearly cost, because the deductible and coinsurance are added to it. A plan with a lower premium may carry a deductible as high as $700 plus 25 percent coinsurance. A plan with a higher premium may charge a smaller deductible or none.\n\nThese four items cover the main 2027 drug costs that KFF and Medicare.gov list:\n\n1. The 2027 monthly premium, multiplied by 12 for the annual premium.\n2. The deductible, which can be anywhere from $0 to $700.\n3. Whether drugs carry coinsurance or copayments after the deductible.\n4. The $2,400 out-of-pocket limit, after which covered drugs cost $0 for the rest of 2027.\n\nTwelve times the monthly premium plus the deductible is the least a plan costs in a year when the full deductible is paid. Coinsurance on each prescription then adds to that total until out-of-pocket spending reaches $2,400.\n\n No source cited publishes any individual's 2027 premium, so each plan's own figures are the numbers to compare."
+          },
+          {
+              "heading": "Who Pays Less with Extra Help",
+              "body": "Extra Help is a Medicare program for people with limited income and resources, according to Medicare.gov's [Extra Help page](https://www.medicare.gov/basics/costs/help/drug-costs). KFF notes that the 2027 premium increases affect most PDP enrollees who do not receive the extra subsidies provided to low-income enrollees.\n\nMedicare.gov lists these 2026 limits:\n\n- Individual: income of $23,940 and resources of $18,090.\n- Married couple: income of $32,460 and resources of $36,100.\n\nMedicare.gov says these limits may rise each year, and Alaska and Hawaii have separate limits that the page does not list. Extra Help is not available in Puerto Rico, the U.S. Virgin Islands, Guam, the Northern Mariana Islands or American Samoa.\n\nSome people qualify automatically: those with full-benefit Medicaid, those getting state help with Part B premiums through a Medicare Savings Program, and those receiving Supplemental Security Income (SSI). Medicare.gov says people can apply for Extra Help and a Medicare Savings Program together. The [Medicare Savings Programs guide](/guides/medicare-savings-programs/) covers that second program.\n\nFor 2027, Medicare.gov's Extra Help page describes these costs:\n\n- Plan premium: $0.\n- Plan deductible: $0.\n- Up to $5.80 per generic drug and up to $14.40 per brand-name drug at participating pharmacies.\n- $0 per covered drug once total drug costs reach $2,400.\n\nMedicare.gov says applications go through [Social Security](https://www.ssa.gov/medicare/part-d-extra-help) online, and free help is available from the State Health Insurance Assistance Program (SHIP). Someone who does not qualify now can reapply at any time. If an approved applicant has no Part D plan, Medicare enrolls that person in one."
+          },
+          {
+              "heading": "Medicare Advantage Plans with Drug Coverage",
+              "body": "KFF projects MA-PD premiums will average $9 a month in 2027, up less than $2, and says the stand-alone PDP premium is more than five times higher. That comparison covers average premiums only.\n\nMA-PD enrollees face deductibles too. KFF puts the average MA-PD deductible at $489 in 2027, and 85 percent of MA-PD enrollees face one if they keep their plans.\n\nChoosing Medicare Advantage is a different decision from choosing a stand-alone drug plan. The [Medicare vs. Medicare Advantage comparison](/compare/medicare-vs-medicare-advantage/) covers those differences."
+          },
+          {
+              "heading": "Takeaway",
+              "body": "A stand-alone Part D enrollee who keeps the same plan may see the average increase in KFF's October 30, 2026 projection. The average rise is $17 a month, or $204 a year by arithmetic, and KFF says people facing large increases need to take action to avoid paying significantly more. This applies to stand-alone plan enrollees who do not receive Extra Help, whose plan premium Medicare.gov lists as $0. MA-PD premiums average $9 a month.\n\nKeeping the current plan can still be the cheaper choice. If a plan's own 2027 premium, deductible and coinsurance on the enrollee's drugs add up to a lower yearly total than the other plans, staying costs less. A low premium paired with a $700 deductible can cost more over a year than a higher premium with a smaller deductible.\n\nBefore December 7, you can open [Medicare Plan Finder](https://www.medicare.gov/plan-compare) and compare each Medicare Part D 2027 plan's premium together with its deductible and coinsurance."
+          }
+      ],
+      "tools": [
+          {
+              "href": "/retirement/medicare-irmaa-calculator/",
+              "label": "Medicare IRMAA Calculator"
+          }
+      ],
+      "faqs": [
+          {
+              "question": "How much will Part D cost in 2027?",
+              "answer": "KFF projects the average stand-alone Part D premium at $51 a month in 2027, up from $34, if enrollees keep their current plans. That works out to $612 a year, or $204 more than 2026, by arithmetic. Individual premiums vary by plan, and Medicare.gov lists the maximum 2027 deductible as $700."
+          },
+          {
+              "question": "Is Medicare Part D going away in 2027?",
+              "answer": "No. CMS sets a 2027 base beneficiary premium of $41.33. KFF lists eight national stand-alone plans with projected 2027 premiums, and Medicare.gov publishes 2027 deductible and out-of-pocket limits. What KFF reports is that no zero-premium stand-alone plans are available in 2027."
+          },
+          {
+              "question": "What do KFF and CMS say about the 2027 increase?",
+              "answer": "KFF projects the average stand-alone premium will rise 50 percent, from $34 to $51 a month, if enrollees do not switch plans. CMS says it will end the voluntary premium stabilization demonstration for stand-alone plans at the end of 2026 and sets the 2027 base beneficiary premium at $41.33. KFF's release does not say why plans raised premiums."
+          },
+          {
+              "question": "When does Medicare open enrollment end?",
+              "answer": "KFF says open enrollment runs through December 7. Plans can be compared before then in Medicare Plan Finder at medicare.gov/plan-compare."
+          },
+          {
+              "question": "What is the Part D deductible in 2027?",
+              "answer": "The maximum Part D deductible in 2027 is $700, up from $615 in 2026, and some plans charge less or nothing. KFF puts the average at $643 for stand-alone plan enrollees and $489 for MA-PD enrollees. After the deductible, Medicare.gov says enrollees pay 25 percent coinsurance until out-of-pocket spending reaches $2,400."
+          },
+          {
+              "question": "Does Extra Help lower Part D premiums?",
+              "answer": "Medicare.gov's Extra Help page lists the 2027 plan premium and deductible as $0 for people in the program. Generic drugs cost up to $5.80 and brand-name drugs up to $14.40 at participating pharmacies, and covered drugs cost $0 once total drug costs reach $2,400. Medicare.gov says applications go through [Social Security](https://www.ssa.gov/medicare/part-d-extra-help)."
+          }
+      ],
+      "sources": [
+          {
+              "label": "KFF: Average monthly premium for Medicare Part D stand-alone plans projected to increase 50% in 2027",
+              "url": "https://www.kff.org/medicare/the-average-monthly-premium-for-medicare-part-d-stand-alone-plans-is-projected-to-increase-by-50-from-34-to-51-in-2027-unless-enrollees-switch-to-lower-cost-plans/"
+          },
+          {
+              "label": "CMS: Medicare Part D 2027 national average monthly bid amount information",
+              "url": "https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information"
+          },
+          {
+              "label": "Medicare.gov: Medicare Plan Finder",
+              "url": "https://www.medicare.gov/plan-compare"
+          },
+          {
+              "label": "Medicare.gov: Help with drug costs (Extra Help)",
+              "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+          },
+          {
+              "label": "Medicare.gov: Costs for Medicare drug coverage",
+              "url": "https://www.medicare.gov/health-drug-plans/part-d/basics/costs"
+          }
+      ],
+      "metaTitle": "",
+      "subtitle": "",
+      "ctaTitle": "",
+      "ctaText": "",
+      "ctaButton": "",
+      "faqItems": []
+  },
   // ── x-trends-mindmap-auto 2026-10-28: adoption-credit-carryforward-refund ──
   {
     "updated": "2026-10-28",
@@ -3157,7 +3261,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "heading": "Why the Net Raise Can Look Smaller After Medicare Part B",
-        "body": "Your deposit can rise by less than the COLA because most Medicare Part B enrollees have the premium deducted from their Social Security benefit. When the premium goes up, the increase comes out of the raise.\n\nThe standard Part B premium was $185.00 in 2025 and is $202.90 in 2026. The 2026 Medicare Trustees Report projects $209.50 for 2027, an increase of $6.60, or about 3.3%. The Centers for Medicare & Medicaid Services (CMS) sets the final amount later.\n\nOn the $2,000 example, the math runs like this:\n\n- Gross COLA at 3.6%: +$72.00 a month\n- Part B increase from $202.90 to $209.50: minus $6.60 a month\n- Net monthly gain: $65.40\n\nThis is a simplified illustration. It leaves out other deductions, such as taxes on benefits or a Part D premium, and the 2027 premium is not set yet.\n\nThe hold-harmless rule generally limits your Part B increase to the dollar increase in your Social Security benefit. In the $2,000 example, the $72 raise is much larger than the $6.60 premium increase, so the cap would not apply. The rule does not cover everyone, including new enrollees and some people who pay the income-related amounts.\n\nHigher-income enrollees pay an Income-Related Monthly Adjustment Amount (IRMAA) as a surcharge on Part B. In 2026, the surcharge starts above $109,000 of modified adjusted gross income (MAGI) for individuals, or $218,000 for married couples filing jointly. About 8% of beneficiaries pay these amounts.\n\n2027 premiums generally use 2025 income. Pull your 2025 tax return and compare your MAGI to those 2026 thresholds to see whether a surcharge could shrink your net raise further."
+        "body": "Your deposit can rise by less than the COLA because most Medicare Part B enrollees have the premium deducted from their Social Security benefit. When the premium goes up, the increase comes out of the raise.\n\nThe standard Part B premium was $185.00 in 2025 and is $202.90 in 2026. The 2026 Medicare Trustees Report projects $209.50 for 2027, an increase of $6.60, or about 3.3%. The Centers for Medicare & Medicaid Services (CMS) sets the final amount later.\n\nOn the $2,000 example, the math runs like this:\n\n- Gross COLA at 3.6%: +$72.00 a month\n- Part B increase from $202.90 to $209.50: minus $6.60 a month\n- Net monthly gain: $65.40\n\nThis is a simplified illustration. It leaves out other deductions, such as taxes on benefits or [a Part D premium](/guides/medicare-part-d-2027-premiums/), and the 2027 premium is not set yet.\n\nThe hold-harmless rule generally limits your Part B increase to the dollar increase in your Social Security benefit. In the $2,000 example, the $72 raise is much larger than the $6.60 premium increase, so the cap would not apply. The rule does not cover everyone, including new enrollees and some people who pay the income-related amounts.\n\nHigher-income enrollees pay an Income-Related Monthly Adjustment Amount (IRMAA) as a surcharge on Part B. In 2026, the surcharge starts above $109,000 of modified adjusted gross income (MAGI) for individuals, or $218,000 for married couples filing jointly. About 8% of beneficiaries pay these amounts.\n\n2027 premiums generally use 2025 income. Pull your 2025 tax return and compare your MAGI to those 2026 thresholds to see whether a surcharge could shrink your net raise further."
       },
       {
         "heading": "Past Social Security COLAs Compared with the 2027 COLA",
@@ -22952,7 +23056,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "heading": "What a Medicare Savings Program Is Worth in 2026",
-        "body": "A Medicare Savings Program that pays your Part B premium covers $202.90 a month in 2026, or $2,434.80 over 12 months ($202.90 x 12). The Part B premium can be higher depending on income, and Medicare.gov lists the 2026 figures on its [Medicare costs page](https://www.medicare.gov/basics/costs/medicare-costs).\n\nQMB pays more than the premium. It also covers Part B deductibles, coinsurance and copayments. The Part B deductible is $283 a year, so the premium plus the deductible comes to $2,717.80 in 2026 ($2,434.80 + $283).\n\nPart B coinsurance is usually 20% of the cost of each covered service after the deductible. Under QMB, Medicare providers cannot bill you for that coinsurance on services and items Medicare covers.\n\nFor someone who has to buy Part A, QMB adds the Part A premium. That premium is $311 or $565 a month, depending on how long you or your spouse worked and paid Medicare taxes. The Part A deductible is $1,736 per inpatient hospital benefit period, and the QMB billing rule covers deductibles on Medicare-covered services too.\n\nQMB, SLMB and QI members also get Extra Help with prescription drugs. Extra Help means you pay no more than $12.65 in 2026 for each drug covered by your Medicare drug plan, and Medicare.gov's [prescription drug cost help page](https://www.medicare.gov/basics/costs/help/drug-costs) for details."
+        "body": "A Medicare Savings Program that pays your Part B premium covers $202.90 a month in 2026, or $2,434.80 over 12 months ($202.90 x 12). The Part B premium can be higher depending on income, and Medicare.gov lists the 2026 figures on its [Medicare costs page](https://www.medicare.gov/basics/costs/medicare-costs).\n\nQMB pays more than the premium. It also covers Part B deductibles, coinsurance and copayments. The Part B deductible is $283 a year, so the premium plus the deductible comes to $2,717.80 in 2026 ($2,434.80 + $283).\n\nPart B coinsurance is usually 20% of the cost of each covered service after the deductible. Under QMB, Medicare providers cannot bill you for that coinsurance on services and items Medicare covers.\n\nFor someone who has to buy Part A, QMB adds the Part A premium. That premium is $311 or $565 a month, depending on how long you or your spouse worked and paid Medicare taxes. The Part A deductible is $1,736 per inpatient hospital benefit period, and the QMB billing rule covers deductibles on Medicare-covered services too.\n\nQMB, SLMB and QI members also get Extra Help with prescription drugs. For how stand-alone drug plan premiums are changing in 2027, see our guide to [Medicare Part D 2027 premiums](/guides/medicare-part-d-2027-premiums/). Extra Help means you pay no more than $12.65 in 2026 for each drug covered by your Medicare drug plan, and Medicare.gov's [prescription drug cost help page](https://www.medicare.gov/basics/costs/help/drug-costs) for details."
       },
       {
         "heading": "Who Does Not Fit and Where the Limits Bend",

@@ -1,0 +1,33 @@
+{
+ "reviewer": "phase4-reviewer",
+ "verdict": "PASS",
+ "packetSha256": "2d04739df0d0f0300808785b99b3240c4916e64f751f73e5b77e07430790f684",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "Reported-basis page resolves the approved question: sentence 1 and section 1 give KFF's $34 to $51 average with the $17/$204 arithmetic, then the action before December 7, exceptions (Extra Help, MA-PD) and a premium-plus-deductible comparison. It restates KFF/CMS/Medicare.gov and adds only labeled arithmetic; it does not claim original analysis."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "All figures re-verified by the auditor against live KFF, CMS and Medicare.gov pages on 2026-11-02 and traced to F1-F16; $51 is stated as an average projection conditional on enrollees not switching. Arithmetic (41.33, 0.70, 78.50, 300, 204, 408, 612) recomputed. Source summaries in sources.md were supplemented by direct reads."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "Packet counterexample (flat-premium plan, Extra Help $0, MA-PD $9, lower-premium plan with $700 deductible costing more) appears on the page in sections 6, 7 and the Takeaway. No cause is asserted for the increase or for zero-premium plans ending."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "Rendered intro, section 1, Takeaway, table and FAQs agree on the figures and conditions after round 3; H1 carries the stand-alone condition; FAQ schema text matches the page."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "TESTED excluded (insurance outside _experience.md section G); no testing, modeling or client claims in text or schema; no professional-review claim; reporter register with no first person."
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-02/rendered-snapshot.json",
+  "sha256": "ebbccdc9f9bd99a0e440c0646f749d2ab0f98ffffe95c8d5715be3c7bd20ce27"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-02/audit/review.json",
+  "sha256": "07a6da8e6a7ec12692ae73b09c44b8b2e257f2d0c1bbf56c359a8851db87e4a7"
+ }
+}

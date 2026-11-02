@@ -1,0 +1,129 @@
+{
+  "route": "/guides/medicare-part-d-2027-premiums/",
+  "origin": "x-trends-mindmap-auto 2026-11-02",
+  "readerQuestion": "How much will my Part D premium go up in 2027, and what do I do before December 7? [PAA 1/6 on-topic, 5/6 off-topic: RX plan, losing Medicare, free plan at 65, Star Ratings, MA cancellations (keyword-intent flag); ac 4 of 21 shown: premium / cost / how-much / is-increasing completions (seniors, rates, pdf variants not counted)]",
+  "demandSource": "SEMRUSH us 2026-11-02 (KEYWORD_PROVIDERS=semrush,dataforseo): 'medicare part d 2027' 260/mo KD 0 measured; 'medicare part d premiums 2027' 20/mo KD 0; 'medicare open enrollment 2027' 140/mo KD 45; Autocomplete-estimated, NOT measured: 'part d premium increase 2027' 75-750, 'switch part d plan' 100-1,000. SERP (DataForSEO) contested, AI Overview cites medicare.gov, medicarerights.org, kff.org; fresh-trend rule applied (KFF analysis Oct 30, 2026).",
+  "decisionGap": "A stand-alone Part D enrollee cannot tell from the headline how large the increase is in dollars, whether a zero-premium option exists, what else changes (deductible, cost sharing), who is protected (Extra Help), and what to compare before December 7.",
+  "method": "No test or model. Basis is reported KFF, CMS and Medicare.gov figures fetched 2026-11-02 (page summaries), plus simple monthly-to-annual arithmetic on those figures (fact F14).",
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [
+      "KFF-2027-PDP",
+      "CMS-2027-NAMBA",
+      "MEDICARE-GOV-PARTD-COSTS",
+      "MEDICARE-GOV-EXTRA-HELP"
+    ],
+    "scopeAndLimits": "Page restates and organizes KFF, CMS and Medicare.gov statements. The $51 figure is a national average projection, not any reader's premium. Arithmetic is labeled as arithmetic.",
+    "publicMethod": "Sources linked in-line and in the Sources list; arithmetic shown in the table and text.",
+    "placement": "Third-person attribution to KFF, CMS and Medicare.gov beside each finding; Takeaway names the evidence basis."
+  },
+  "sources": [
+    {
+      "id": "KFF-2027-PDP",
+      "url": "https://www.kff.org/medicare/the-average-monthly-premium-for-medicare-part-d-stand-alone-plans-is-projected-to-increase-by-50-from-34-to-51-in-2027-unless-enrollees-switch-to-lower-cost-plans/",
+      "checked": "2026-11-02"
+    },
+    {
+      "id": "CMS-2027-NAMBA",
+      "url": "https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information",
+      "checked": "2026-11-02"
+    },
+    {
+      "id": "MEDICARE-GOV-PARTD-COSTS",
+      "url": "https://www.medicare.gov/health-drug-plans/part-d/basics/costs",
+      "checked": "2026-11-02"
+    },
+    {
+      "id": "MEDICARE-GOV-EXTRA-HELP",
+      "url": "https://www.medicare.gov/basics/costs/help/drug-costs",
+      "checked": "2026-11-02"
+    },
+    {
+      "id": "MEDICARE-GOV-PLAN-FINDER",
+      "url": "https://www.medicare.gov/plan-compare",
+      "checked": "2026-11-02"
+    }
+  ],
+  "findings": [
+    {
+      "claim": "Average stand-alone PDP premium projected $34 (2026) to $51 (2027), +50%, if enrollees do not switch",
+      "label": "reported",
+      "source": "KFF-2027-PDP"
+    },
+    {
+      "claim": "No zero-premium PDPs available in 2027; 4+ million enrollees in zero-premium PDPs face higher premiums",
+      "label": "reported",
+      "source": "KFF-2027-PDP"
+    },
+    {
+      "claim": "MA-PD premium averages $9 in 2027, up less than $2",
+      "label": "reported",
+      "source": "KFF-2027-PDP"
+    },
+    {
+      "claim": "CMS ends the premium stabilization demonstration for stand-alone plans after 2026",
+      "label": "reported",
+      "source": "CMS-2027-NAMBA"
+    },
+    {
+      "claim": "$17 a month more equals $204 a year more; $6.50 a month is $78 a year; $204.50 a month is $2,454 a year",
+      "label": "calculated",
+      "source": "arithmetic on KFF figures (F14)"
+    },
+    {
+      "claim": "Max deductible $700 in 2027; out-of-pocket limit $2,400 in 2027",
+      "label": "reported",
+      "source": "MEDICARE-GOV-PARTD-COSTS, KFF-2027-PDP"
+    },
+    {
+      "claim": "Extra Help 2027 costs: $0 premium and deductible, copays capped at $5.80 generic and $14.40 brand",
+      "label": "reported",
+      "source": "MEDICARE-GOV-EXTRA-HELP"
+    },
+    {
+      "claim": "Any individual reader's 2027 premium",
+      "label": "unknown",
+      "source": "varies by plan and location; not published in the sources read"
+    },
+    {
+      "claim": "Why zero-premium plans disappear",
+      "label": "unknown",
+      "source": "KFF page does not state a cause; CMS statement concerns the demonstration ending only"
+    }
+  ],
+  "counterexample": "A reader with a plan whose own 2027 premium is flat, or who qualifies for Extra Help (premium $0), or who is in Medicare Advantage with drug coverage (average $9), does not face the $17 a month average increase; a lower-premium stand-alone plan with a $700 deductible can cost more over a year than a higher-premium plan with a lower deductible.",
+  "exclusions": [
+    "No TESTED format: Medicare insurance plans are a financial/insurance service topic outside _experience.md section G; no executed tests exist.",
+    "No client-conversation claims.",
+    "No recommendation of any specific plan or of Medicare Advantage."
+  ],
+  "unknowns": [
+    "Per-reader premium",
+    "Cause of the zero-premium plan disappearance",
+    "Exact date 2027 coverage begins (not on pages read)",
+    "Premiums by state"
+  ],
+  "whatWouldChangeTheRecommendation": "A revised KFF projection, CMS final 2027 plan data, or a change to the December 7 deadline.",
+  "selectedMedium": "text with one comparison table (2026 vs 2027 for the eight-plan range and the plan-year figures); no calculator because plan premiums are plan-specific and the Medicare Plan Finder already does the comparison",
+  "testingLabel": "ordinary presentation (TESTED excluded; reason above)",
+  "noteOnScoutDate": "Scout bullet (Nov 1 thread) cited KFF and CMS; KFF release date is Oct 30, 2026 and the CMS fact sheet is dated July 28, 2026. The scout phrase 'no zero-premium plans exist without Extra Help' is narrowed to KFF's wording: no zero-premium PDPs available in 2027.",
+  "gateSchemaVersion": 1,
+  "author": "claude-writer",
+  "basis": "reported",
+  "finding": "For a stand-alone Part D enrollee who keeps the same plan, KFF projects the average premium rising from $34 to $51 a month in 2027 (arithmetic: $17 a month, $204 a year); KFF reports no zero-premium stand-alone plans are available in 2027, and says people facing large increases need to act, with open enrollment through December 7.",
+  "conditions": "Average projection, not any reader's premium; applies to stand-alone PDP enrollees who do not switch; Extra Help recipients are listed by Medicare.gov at $0 premium; MA-PD average is $9.",
+  "whatWouldChange": "A revised KFF projection, CMS final 2027 plan data, or a change to the December 7 deadline.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-02-xtrends/evidence/cases.json",
+    "sha256": "633e0adfcdbbf5377c6c76feadd685652956291bcd5a6f2747044cfab2a53f1e"
+  },
+  "caseDecisions": "All 8 retrieved approved-case candidates (Rank and Pay, Medical Frontier, DIY Repair Guide, Jet & Beyond, PipeFlare, Chalkbox, Professional Bowlers Association (PBA), Caracas Research) are Layer3Labs properties or a client on unrelated topics, matching only on generic words; none concerns Medicare. This site's _experience.md lists no named-client claims. All rejected; no client mention is forced.",
+  "sourceArtifacts": [
+    {
+      "path": "evidence/medicare-part-d-2027-premiums/sources.md",
+      "sha256": "4a641aca45ca3bcb5f5388266b175421f287c321245cc4c2e191ab7fe5183065"
+    }
+  ],
+  "whyNoQuantitativeAnalysis": "The decision turns on published KFF, CMS and Medicare.gov figures, and individual plan premiums vary by plan and location, so no defensible model of a reader's premium exists. The only numbers added are labeled monthly-to-annual arithmetic on KFF figures (fact F14), which is a restatement, not an original analysis claim.",
+  "reasoning": "KFF's average ($34 to $51) is conditional on enrollees not switching. KFF says no zero-premium stand-alone plans exist in 2027 and that low-premium options still exist; CMS says the stabilization demonstration ends after 2026. Medicare.gov shows Extra Help recipients pay $0 premium and deductible in 2027. Medicare.gov and KFF show deductibles up to $700 and coinsurance, so a lower premium can cost more in total. Therefore the supported answer is conditional: stand-alone enrollees who keep a plan face the average increase, should compare total 2027 cost before December 7, and Extra Help or Medicare Advantage change the picture."
+}

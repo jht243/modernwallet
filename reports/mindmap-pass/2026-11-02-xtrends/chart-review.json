@@ -1,0 +1,7 @@
+{
+  "reviewer": "chart-reviewer-2",
+  "verdict": "PASS",
+  "manifestSha256": "dc173eb9ade4e17787f334c14528a466020307a4aa878c92c4d87f8d0d3caf8d",
+  "readinessSha256": "0f7756db57b3958101e85f497fef4e1176b2c17a5f6f2e663e1a5d509bc2d487",
+  "evidence": "Re-verified after packet changes. Title 'Medicare Part D 2027: KFF Projects Premiums Up 50%' 50 chars, description 154; section 2 heading 'No Zero-Premium Stand-Alone Plans in 2027' with CMS demonstration non-causal; keyword numbers match volumes.json; expand/ac/PAA/SERP tags match raw files; no cause asserted for premium rise or zero-premium plans disappearing (KFF page fetched by me states none); Medicare.gov Extra Help and KFF URLs fetched by me and confirm cited facts, other closed-list URLs recorded fetched in sources.md; F14 arithmetic recomputed correct; TESTED off, reporter register, no first-person; coverage_lookup no home, git log grep part d empty (KEEP). New packet fields reviewed: readerQuestion equals manifest reader_question; finding/conditions/reasoning conditional and attributed; caseDecisions names exactly the 8 current cases.json candidates, all unrelated and rejected; caseSelection sha matches cases.json; all manifest evidence hashes match disk; preflight build 35/35 and write 13/13 exit 0."
+}

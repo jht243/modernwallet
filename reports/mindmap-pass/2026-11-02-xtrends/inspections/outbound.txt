@@ -1,0 +1,1 @@
+Inspected 2026-11-02 (sitemap https://www.themodernwallet.com/sitemap-0.xml and src/data): destinations exist and are live: /guides/medicare-savings-programs/, /compare/medicare-vs-medicare-advantage/, /retirement/medicare-irmaa-calculator/ (IRMAA calculator: Part D income-related surcharge context; used only if natural).

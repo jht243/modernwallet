@@ -1,0 +1,63 @@
+{
+ "keyword": "medicare part d 2027",
+ "verdict": "contested",
+ "forum_dominated": false,
+ "ai_overview_present": true,
+ "ai_overview_cited_domains": [
+  "www.medicare.gov",
+  "www.medicarerights.org",
+  "www.facebook.com",
+  "www.bmsaccesssupport.com",
+  "www.youtube.com",
+  "www.kff.org"
+ ],
+ "featured_snippet": null,
+ "top10_domains": [
+  "www.cms.gov",
+  "google.com",
+  "google.com",
+  "www.youtube.com",
+  "google.com",
+  "google.com",
+  "www.comparemedsrx.com",
+  "abcnews.com",
+  "google.com"
+ ],
+ "major_domains": [
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com"
+ ],
+ "forum_domains": [
+  "www.youtube.com"
+ ],
+ "serp_feature_mix": {
+  "ai_overview": 1,
+  "organic": 9,
+  "people_also_ask": 1,
+  "related_searches": 1
+ },
+ "paa": [
+  "What is a RX plan?",
+  "Am I going to lose my Medicare?",
+  "Which medicare plan is free at age 65?",
+  "What are the changes to the Medicare Advantage Star Rating System?",
+  "What are the changes to Medicare Part D in 2027?",
+  "What insurance company is cancelling Medicare Advantage plans?"
+ ],
+ "related_searches": [
+  "Medicare part d 2027 pdf",
+  "Medicare part d 2027 cost",
+  "CMS final rate Notice 2027",
+  "Medicare part d 2027 california",
+  "2027 Medicare Advantage and Part D Advance Notice",
+  "CMS Rate Announcement 2027",
+  "CMS landscape files 2027",
+  "Final CY 2027 Part D Redesign Program instructions"
+ ],
+ "recommended_shape": "standard article/guide is viable",
+ "evidence": "5/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.medicare.gov, www.medicarerights.org, www.facebook.com, www.bmsaccesssupport.com",
+ "se_results_count": 128
+}

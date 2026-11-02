@@ -1,0 +1,13 @@
+{
+  "author": "claude-writer",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {"path": "/guides/medicare-part-d-2027-premiums/", "expectedUpdatedDate": "2026-11-02",
+     "requiredText": ["Medicare Part D 2027", "$34", "$51", "December 7", "Takeaway"],
+     "forbiddenText": ["we tested", "We tested", "our testing", "In our internal"],
+     "growthFile": "evidence/medicare-part-d-2027-premiums/growth.json",
+     "evidenceFile": "evidence/medicare-part-d-2027-premiums/evidence.json"},
+    {"path": "/guides/2027-social-security-cola/", "requiredText": ["a Part D premium"]},
+    {"path": "/guides/medicare-savings-programs/", "requiredText": ["Medicare Part D 2027 premiums"]}
+  ]
+}

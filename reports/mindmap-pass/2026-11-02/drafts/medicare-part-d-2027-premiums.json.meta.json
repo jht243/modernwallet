@@ -1,0 +1,431 @@
+{
+ "slug": "medicare-part-d-2027-premiums",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 2013,
+ "floor": 1200,
+ "input_tokens": 35439,
+ "output_tokens": 17212,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.486,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2178,
+  "numbers_not_in_facts": [
+   "0.7",
+   "1.06",
+   "12",
+   "300"
+  ],
+  "fact_budget": {
+   "fact_words": 833,
+   "floor": 1200,
+   "ratio": 0.69,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    7,
+    0
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "An enrollee who moves to a different plan during open enrollment falls outside that average.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE states only the no-switch assumption, not this consequence."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The Centers for Medicare & Medicaid Services (CMS) addressed a related change in a [fact sheet](https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information) dated July 28, 2026.",
+     "replacement": "The Centers for Medicare & Medicaid Services (CMS) addressed a change to stand-alone plans in a [fact sheet](https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information) dated July 28, 2026.",
+     "type": "inference",
+     "why": "Calling it 'related' implies a link SOURCE says not to claim."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "These are average premiums for national plans, and premiums vary by plan and location.",
+     "replacement": "These are average premiums for national plans, and premiums vary by plan.",
+     "type": "unsupported",
+     "why": "Fact list says premiums vary by plan; location is not stated."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "For an enrollee who reaches the full deductible, that charge can add more to a year's drug spending than the premium change does.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not state this consequence or compare these costs."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Switching to Medicare Advantage changes provider networks and other coverage rules, so it is a separate decision from choosing a drug plan.",
+     "replacement": "Choosing Medicare Advantage is a different decision from choosing a stand-alone drug plan.",
+     "type": "unsupported",
+     "why": "No fact on the list covers provider networks or coverage rules."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "A stand-alone Part D enrollee who keeps the same plan faces the largest increase in KFF's October 30, 2026 projection.",
+     "replacement": "A stand-alone Part D enrollee who keeps the same plan faces the projected increase in KFF's October 30, 2026 projection.",
+     "type": "unsupported",
+     "why": "No source on the fact list ranks this as the 'largest' increase."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Individual premiums vary by plan and location, and Medicare.gov sets the maximum 2027 deductible at $700.",
+     "replacement": "Individual premiums vary by plan, and Medicare.gov lists the maximum 2027 deductible as $700.",
+     "type": "unsupported",
+     "why": "Location variation is not on the fact list; Medicare.gov lists the limit, it does not set it."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2227
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-02T18:07:48+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-02/audit/medicare-part-d-2027-premiums.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "Medicare Part D 2027 premiums for stand-alone drug plans are projected to average $51 a month, up 50 percent from $34 in 2026, if current enrollees keep their plans, according to [KFF](https://www.kff.org/medicare/the-average-monthly-premium-for-medicare-part-d-stand-alone-plans-is-projected-to-increase-by-50-from-34-to-51-in-2027-unless-enrollees-switch-to-lower-cost-plans/).",
+      "replacement": "Medicare Part D 2027 premiums for stand-alone plans are projected to average $51 a month, up 50 percent from $34, according to [KFF](https://www.kff.org/medicare/the-average-monthly-premium-for-medicare-part-d-stand-alone-plans-is-projected-to-increase-by-50-from-34-to-51-in-2027-unless-enrollees-switch-to-lower-cost-plans/). KFF's projection assumes current enrollees keep their plans.",
+      "type": "weak-opener: overloaded 32-word first sentence",
+      "why": "Splits the clause stack into two sentences with the same supported meaning."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "- The gap is $17 a month, or $204 a year.",
+      "replacement": "- The gap between the two averages is $17 a month, or $204 a year.",
+      "type": "monotone-rhythm in bullets",
+      "why": "Lengthens one bullet to break five similar-length sentences in a row."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Enrollees who paid no plan premium in 2026 will owe one if they keep a stand-alone plan.",
+      "replacement": "",
+      "type": "unsupported, contradicted by Extra Help $0",
+      "why": "Not on fact list; Extra Help recipients keep a $0 premium; KFF's wording is already in section 1."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "KFF's release does not give a cause for the 2027 premium increase.",
+      "replacement": "KFF's release does not say why plans raised premiums.",
+      "type": "overbroad absence claim",
+      "why": "KFF does give a cause for zero-premium enrollees' increases; it does not say why plans raised premiums."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "KFF's release does not state a cause for the increase.",
+      "replacement": "KFF's release does not say why plans raised premiums.",
+      "type": "overbroad absence claim",
+      "why": "Same overbroad claim as section 2; narrow it to why plans raised premiums."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "The $700 maximum deductible is $496 more than the $204 average annual premium increase, by arithmetic.",
+      "replacement": "",
+      "type": "meaningless arithmetic",
+      "why": "Compares a cap on one cost with an average change in another cost, which has no decision value."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "KFF's cost-sharing figures show why comparing premiums alone can mislead.",
+      "replacement": "A premium is only part of a plan's yearly cost, because the deductible and coinsurance are added to it.",
+      "type": "misattribution of inference to KFF",
+      "why": "KFF does not state the premium-versus-total-cost point; restate it as plain cost structure."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Both plans, along with other options, can be compared in [Medicare Plan Finder](https://www.medicare.gov/plan-compare), the Medicare.gov tool for finding and comparing plans.",
+      "replacement": "Plans can be compared in [Medicare Plan Finder](https://www.medicare.gov/plan-compare), the Medicare.gov tool for finding and comparing plans.",
+      "type": "unsupported plan availability in Plan Finder",
+      "why": "F16 does not establish that these named plans are listed in Plan Finder."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "A stand-alone Part D enrollee who keeps the same plan faces the projected increase in KFF's October 30, 2026 projection.",
+      "replacement": "A stand-alone Part D enrollee who keeps the same plan may see the average increase in KFF's October 30, 2026 projection.",
+      "type": "Takeaway redundant wording, stated as certain",
+      "why": "Removes 'projected... projection' and hedges with 'may' as the prompt requires."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "This applies to stand-alone plan enrollees, since MA-PD premiums average $9 a month and Medicare.gov lists the plan premium as $0 for Extra Help recipients.",
+      "replacement": "This applies to stand-alone plan enrollees who do not receive Extra Help, whose plan premium Medicare.gov lists as $0. MA-PD premiums average $9 a month.",
+      "type": "Takeaway illogical 'since' clause",
+      "why": "Extra Help recipients are also stand-alone enrollees, so the condition is no Extra Help."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "add up to a lower total in Plan Finder, staying costs less.",
+      "replacement": "add up to a lower yearly total than the other plans, staying costs less.",
+      "type": "claims Plan Finder computes totals",
+      "why": "F16 forbids describing Plan Finder features beyond comparing plans."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "KFF, CMS and Medicare.gov all publish 2027 Part D figures, and none reports the program ending.",
+      "replacement": "No. CMS sets a 2027 base beneficiary premium of $41.33.",
+      "type": "absence overclaim; no yes/no first",
+      "why": "Answers 'No' first and drops the claim about the complete contents of three sites."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "What KFF reports is that no zero-premium stand-alone plans are available in 2027, and CMS says its premium stabilization demonstration ends after 2026.",
+      "replacement": "What KFF reports is that no zero-premium stand-alone plans are available in 2027.",
+      "type": "FAQ 2 implies demonstration causes the change",
+      "why": "Auditor asks to keep the demonstration sentence out of FAQ 2."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Premiums by state and premiums for any individual are not published on the KFF, CMS or Medicare.gov pages cited here.",
+      "replacement": "Medicare.gov does not list premiums by state or for any individual on the page cited here.",
+      "type": "CMS first mention unexpanded and unlinked",
+      "why": "Removes the bare CMS acronym before its linked expansion and keeps the gap statement."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "The Centers for Medicare & Medicaid Services (CMS) addressed a change to stand-alone plans in a [fact sheet](https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information) dated July 28, 2026.",
+      "replacement": "The [Centers for Medicare & Medicaid Services (CMS)](https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information) addressed a change to stand-alone plans in a fact sheet dated July 28, 2026.",
+      "type": "CMS first mention must be linked",
+      "why": "The row prompt requires the CMS name itself to link to the fact sheet."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Centene's Wellcare Value Script Rx",
+      "replacement": "[Centene](https://www.centene.com/)'s [Wellcare](https://www.wellcare.com/) Value Script Rx",
+      "type": "unlinked company first mentions",
+      "why": "Centene and Wellcare URLs are on the closed list."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "United's AARP Medicare Rx Preferred",
+      "replacement": "[United](https://www.uhc.com/)'s [AARP](https://www.aarp.org/) Medicare Rx Preferred",
+      "type": "unlinked company first mentions",
+      "why": "United and AARP URLs are on the closed list."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "applications go through Social Security online at ssa.gov/medicare/part-d-extra-help",
+      "replacement": "applications go through [Social Security](https://www.ssa.gov/medicare/part-d-extra-help) online",
+      "type": "unlinked Social Security and apply URL",
+      "why": "The closed URL list says to link the first Social Security mention to the ssa.gov apply page."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "applications go through Social Security.",
+      "replacement": "applications go through [Social Security](https://www.ssa.gov/medicare/part-d-extra-help).",
+      "type": "unlinked directive",
+      "why": "Links the apply directive to the listed ssa.gov URL."
+     },
+     {
+      "id": "h1",
+      "quote": "Medicare Part D 2027 Premiums Projected to Rise 50 Percent",
+      "replacement": "Medicare Part D 2027 Stand-Alone Plan Premiums Projected to Rise 50 Percent",
+      "type": "headline drops stand-alone condition",
+      "why": "The 50 percent applies to stand-alone plans only."
+     },
+     {
+      "id": "title",
+      "quote": "Medicare Part D 2027: KFF Projects Premiums Up 50%",
+      "replacement": "Medicare Part D 2027: KFF Projects Premiums Up 50%",
+      "type": "ADVISORY title omits stand-alone",
+      "why": "Kept: the title is mandated and adding 'Stand-Alone' exceeds 60 characters."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "That CMS statement describes the demonstration ending.",
+      "replacement": "",
+      "type": "ADVISORY restatement",
+      "why": "Repeats the previous sentence; the next sentence stays."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "$38.99 times 1.06 equals $41.33",
+      "replacement": "$38.99 times 1.06 equals $41.33",
+      "type": "ADVISORY 1.06 arithmetic",
+      "why": "Auditor verified it as correct labeled arithmetic; keep."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "At the projected 2027 averages, the annual premium gap between the two plans is $2,376 ($2,454 minus $78).",
+      "replacement": "",
+      "type": "ADVISORY $2,376 adds little",
+      "why": "Correct arithmetic, but it adds little; dropped as the auditor suggested."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "The 2027 limit is $300 higher than the 2026 limit, by arithmetic.",
+      "replacement": "The 2027 limit is $300 higher than the 2026 limit, by arithmetic.",
+      "type": "ADVISORY $300 arithmetic",
+      "why": "Correct and useful; keep."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "The base beneficiary premium is also the basis for the Part D late enrollment penalty.",
+      "replacement": "",
+      "type": "ADVISORY tangential penalty paragraph",
+      "why": "Tangential to the reader question; delete the paragraph."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Medicare.gov says the penalty equals 1 percent of the national base beneficiary premium times the number of full uncovered months, rounded to the nearest $0.10 and added to the monthly premium.",
+      "replacement": "",
+      "type": "ADVISORY tangential penalty paragraph, 31-word sentence",
+      "why": "Part of the deleted tangential paragraph."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Extra Help recipients do not pay the penalty.",
+      "replacement": "",
+      "type": "ADVISORY tangential penalty paragraph",
+      "why": "Part of the deleted tangential paragraph."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "None of the KFF, CMS or Medicare.gov pages cited here states the exact date 2027 coverage begins under a new plan.",
+      "replacement": "",
+      "type": "ADVISORY dead-end coverage-date gap",
+      "why": "Raises an unasked gap and leaves it unresolved."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "No source cited publishes any individual's 2027 premium either, so",
+      "replacement": "No source cited publishes any individual's 2027 premium, so",
+      "type": "ADVISORY dead-end coverage-date gap (follow-on)",
+      "why": "Removes the dangling 'either' left after deleting the previous sentence."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "The exact date 2027 coverage begins is not stated on the KFF, CMS or Medicare.gov pages cited.",
+      "replacement": "",
+      "type": "ADVISORY dead-end coverage-date gap",
+      "why": "Raises an unasked gap and leaves it unresolved."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Adding the annual premium to the deductible gives a floor for what a plan costs in a year when the full deductible is paid.",
+      "replacement": "Twelve times the monthly premium plus the deductible is the least a plan costs in a year when the full deductible is paid.",
+      "type": "ADVISORY floor method wording",
+      "why": "Uses the auditor's clearer wording for the same arithmetic."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Coinsurance on each prescription then adds to that total until spending reaches $2,400.",
+      "replacement": "Coinsurance on each prescription then adds to that total until out-of-pocket spending reaches $2,400.",
+      "type": "ADVISORY $2,400 misread as including premium",
+      "why": "Ties the limit to out-of-pocket spending, per Medicare.gov."
+     },
+     {
+      "id": "introText",
+      "quote": "That is $17 more a month, or $204 more a year, by simple arithmetic on KFF's figures.",
+      "replacement": "That is $17 more a month, or $204 more a year, by simple arithmetic on KFF's figures.",
+      "type": "ADVISORY $17 labeled arithmetic",
+      "why": "Kept: the fact list labels $17 as arithmetic, not a KFF-stated figure."
+     },
+     {
+      "id": "introText",
+      "quote": "KFF",
+      "replacement": "KFF",
+      "type": "ADVISORY KFF never expanded",
+      "why": "KFF is the organization's own name; no change needed."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[1].body",
+      "quote": "Under the Inflation Reduction Act's premium stabilization provision",
+      "finding": "ADVISORY unlinked law",
+      "why": "needs new substance: no official URL for the law is on the closed list.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "ADVISORY add PAA FAQ on 2027 changes",
+      "why": "needs new substance: a new FAQ entry cannot be added in place.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "ADVISORY run notes anchor note",
+      "why": "needs new substance: this is a run-record item, not page text.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "ADVISORY standards-ledger load-script line",
+      "why": "needs new substance: this is a process file, not page text.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "ADVISORY medicare-savings-programs sentence placement",
+      "why": "needs new substance: the text is on another page, not in these units.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "ADVISORY date policy exception",
+      "why": "needs new substance: documentation item, no page text to change.",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 2013,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 192.0,
+ "response_id": "msg_011CgeXLZZLCNnw3ybWw4ADR",
+ "generated_at": "2026-11-02T17:52:53+0000"
+}

@@ -1,0 +1,111 @@
+{
+ "reviewer": "phase4-reviewer",
+ "snapshotSha256": "b012412a70e1fcc04fc3542589a82c6a47077f257ec74f6fe6b442e520967d5f",
+ "routes": [
+  {
+   "path": "/guides/medicare-part-d-2027-premiums/",
+   "fingerprint": "c897e5c5b80c95745258ea858c6e09471e7a27069d9c911e6fb0f74f9446fe1e",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read intro, 8 sections, table, 6 FAQs, sources and footer in dist HTML after round 3 fixes. Intro, section 1, Takeaway and FAQ 1 agree: KFF average $34 to $51 for stand-alone plans if enrollees keep plans, $17/$204 labeled arithmetic, conditions (Extra Help $0 premium, MA-PD $9, own-plan comparison) kept. H1 carries 'Stand-Alone Plan'. No cause asserted for the increase or for zero-premium plans ending; CMS demonstration reported as CMS's own announcement with explicit non-linkage."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Auditor fetched live KFF release (Oct 30 2026), CMS fact sheet (Jul 28 2026), Medicare.gov Part D costs and Extra Help pages 2026-11-02 and traced every figure to F1-F16. Arithmetic re-done: 38.99*1.06=41.33, 6.50-5.80=0.70, 204.50-126.00=78.50, 2400-2100=300, 34*12=408, 51*12=612. KFF 'does not say why plans raised premiums' verified against release text. Plan Finder page returned 403 to scripted fetch; only its title and role are claimed."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Reporter register, basis reported. KFF, CMS and Medicare.gov named beside each finding; arithmetic labeled 'by arithmetic'. No we/our, no testing or modeling claim. Built HTML has zero 'we tested', 'our testing', 'in our internal', 'how we tested'. No testing-evidence record exists, ordinary presentation; insurance is outside _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 2, 2026'; JSON-LD Article datePublished and dateModified 2026-11-02; FAQPage present with clean text (no markdown brackets); canonical https://www.themodernwallet.com/guides/medicare-part-d-2027-premiums/; breadcrumb correct; sitemap-0.xml lists the route."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "First mentions linked: KFF (intro), Medicare.gov (section 1), CMS name to fact sheet (section 2), Centene, Wellcare, United/UHC, AARP, Plan Finder, Social Security (ssa.gov apply URL, taken from the Medicare.gov Extra Help page). Internal links /guides/medicare-savings-programs/, /compare/medicare-vs-medicare-advantage/ and tools[] /retirement/medicare-irmaa-calculator/ all exist in dist. No noindex. uhc.com and ssa.gov return 403 to scripted fetch and were not browser-checked. Inflation Reduction Act unlinked (advisory)."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "GFM table renders as a semantic table with scoped headers (2 data rows, 4 columns); lists render as ul/ol; sections and FAQ details render; disclaimer 'not financial advice' appears only in the footer. Not viewed in a visual browser at 390px; table is 4 short columns in the site's prose-table class."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Scope: new route plus two link-only inbound edits. TESTED excluded (insurance outside section G). No professional-review claim; byline is the existing template author. Whole-file git diff of guides.ts shows only the new entry plus the two link edits."
+    }
+   }
+  },
+  {
+   "path": "/guides/2027-social-security-cola/",
+   "fingerprint": "1a3309e119db31db43919c7e47c49e21a35badc598a9fa96d5ac66c26d05d04b",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Only change is the words 'a Part D premium' now link to the new guide inside the existing Part B net-raise section; surrounding text unchanged and coherent."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "No new claim added; link-only edit. The sentence 'the 2027 premium is not set yet' refers to Part B and is inherited, not contradicted by the new guide."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing or attribution content added or present."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Date-policy exception, link-only edit: visible 'Updated October 23, 2026' and JSON-LD dateModified 2026-10-23 deliberately unchanged because no substantive content changed (orchestrator ruling; _rendered-page-audit.md permits documented link-only differences). Matches expected source date."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Anchor resolves to /guides/medicare-part-d-2027-premiums/, which exists in dist; no other link changed."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Inline link inside a paragraph; no layout change."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only; no exclusions affected."
+    }
+   }
+  },
+  {
+   "path": "/guides/medicare-savings-programs/",
+   "fingerprint": "ab0b633bc6bd670a65d6798dc9e83e5fe4fc6d2b604ff6ebb6997aeb30f939c9",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "One sentence added inside the Extra Help paragraph of 'What a Medicare Savings Program Is Worth in 2026': 'For how stand-alone drug plan premiums are changing in 2027, see our guide to Medicare Part D 2027 premiums.' It sits between two Extra Help sentences and slightly interrupts the explanation (advisory: move to paragraph end). Inherited $12.65 (2026) vs the new guide's 2027 Extra Help copays are different years, each labeled. Inherited sentence fragment ending 'for details.' predates this run."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "The added sentence makes no factual claim beyond pointing to the new guide; the pointer is accurate."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing or attribution content added."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Date-policy exception, link-only addition of a pointer sentence: visible 'Updated October 20, 2026' and JSON-LD dateModified 2026-10-20 unchanged by orchestrator ruling; documented here per _rendered-page-audit.md. No substantive answer on the page changed."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Link text 'Medicare Part D 2027 premiums' resolves to the new guide, present in dist."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Inline link in paragraph; no layout change."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only scope; no exclusions affected."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+Inspected 2026-11-02: src/data/guides.ts entry slug "medicare-savings-programs" (route /guides/medicare-savings-programs/).
+Section "What a Medicare Savings Program Is Worth in 2026": "QMB, SLMB and QI members also get Extra Help with prescription drugs. Extra Help means you pay no more than $12.65 in 2026 for each drug covered by your Medicare drug plan..."
+Planned placement: add a short clause linking "Medicare Part D 2027 premiums" after the Extra Help sentence (link-only edit; reader purpose: people with Extra Help are the group KFF says is not hit by the 2027 stand-alone premium increase).

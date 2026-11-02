@@ -1,0 +1,26 @@
+coverage_lookup: 1 candidate(s) vs 801 repo pages / 812 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1019 past-chart lines
+
+### /guides/medicare-part-d-2027-premiums  — row - · create new content
+keyword: medicare part d 2027
+reader question (new page intent): How much will my Part D premium go up in 2027, and what do I do before December 7?
+lookup terms: medicare part 2027 premium   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/medicare-savings-programs  [in sitemap · src/data/guides.ts · topic match 0.75 on medicare part premium]
+    title: Medicare Savings Program 2026: Who Gets Premiums Paid
+    desc:  A Medicare Savings Program can pay your $202.90 Part B premium. See the 2026 income limits for all four programs and how to apply through your state.
+- /retirement/medicare-irmaa-calculator  [in sitemap · src/data/spokes-fleet-tools.ts · topic match 0.5 on medicare premium]
+    title: 2026 Medicare IRMAA Calculator With Income Scenarios
+    desc:  Compare Medicare's 2026 income-related surcharges using 2024 income and filing status, with separate Part B and Part D results.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-20-trend-lane-c.md [table] | Lens 2 (adjacent) off the top-10 query "+medicare +medicaid +benefits +cost" and the page /compare/medicare-vs-medicaid/. Cluster "Medicare Savings Programs / Medicaid pays Medicare premiums": `medicare savings program
+- 2026-10-20-trend-lane-c.md [table] | Medicare Savings Programs (state pays Medicare premiums) | medicare savings program; does medicaid pay for medicare premiums; can medicaid pay for medicare premiums; does medicaid help pay medicare premiums; PAA: how d
+- 2026-10-21-tool-usage.md [table] | 6 | Lens 1 (tool usage, social-security-cola-calculator — 165 people, top tool this week). Persona: 71-year-old retiree on a phone who knows only the $1,644 bank deposit. Walkthrough: the hint asks for "the benefit amo
+- 2026-10-21-tool-usage.md [table] | 7 | Lens 1 (tool usage, social-security-cola-calculator — same persona). The Part B field says the 2027 premium "has not been announced" and leaves the persona nothing to type. Quote: "What's my 2027 premium? It says i
+- 2026-10-21-tool-usage.md [table] | 9 | Lens C (monetize, social-security-cola-calculator). Persona has a 2027 benefit/deposit figure; next job = understand the benefit and the Medicare deduction. Verdict fit — YMYL → books. Pick types: Medicare guide, S
+- 2026-10-23-xtrends.md [table] | Lens 1. lookup: /guides/2027-social-security-cola/ covers the raise and Part B but not how to get the notice online by Nov 18 | Add one section with the step-by-step (Message Center > Preferences) | update existing bod
+Commits naming the topic: none
+Same run overlap: none
+

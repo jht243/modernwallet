@@ -1,0 +1,22 @@
+.claude/commands/mindmap-pass/phase-4-audit.md — characters 27000 onward
+
+t the date column.
+- **File-backed pages**: bump the frontmatter/date field the template renders (`last_updated`, `updated`, `dateModified`, …) and re-render if the project pre-renders static HTML.
+
+Also refresh every surface derived from that date: JSON-LD `dateModified`, and the sitemap `<lastmod>` when the generator does not derive it from the same field. **New pages created this run are exempt** (their date fields already default to now). **Purely non-rendering technical fixes are exempt** (robots.txt, redirects, canonical tags, sitemap-only hygiene) — do NOT bump dates for those.
+
+**Auditors / reviewer gates (adversarial review):** for EVERY existing page this run edited, verify the rendered "Last updated" date (and JSON-LD `dateModified`) now equals the run date. A stale date on an updated page is a **HARD FAIL** — the page does not pass until the date is bumped. The fix is a one-field update; never rewrite the page. Conversely, a bumped date on a page whose rendered content did NOT change is also a fail (date churn fakes freshness) — revert it.
+
+## Content standard — audit gates
+
+**Load `.claude/commands/_content-standard.md` and apply its `## AUDITOR` section in full.** It is the single source of truth for the content gates: register and voice, tee-up, experience truth, required page elements, byline-in-body, the proprietary anchor, neutrality, disclaimer placement, depth floors, first-mention links, and the row records.
+
+**Also load `.claude/commands/_experience.md`** — every first-person experience claim on a page must be traceable to it; anything it does not license is an invented claim and fails.
+
+**Also load `.claude/commands/_anti-ai-language.md`** and apply its **AUDITOR** section in full, including the meaning bar. It outranks the content standard on any conflict.
+
+If any of those files is missing, FAIL the run and report it — never substitute your own gates. If `.claude/commands/_content-standard.local.md` exists in this repo, its sections override the same-named sections of the standard.
+
+<!-- mindmap-execution-v1 -->
+Apply `_mindmap-execution.md` inside this existing audit: independently judge usefulness and source/assumption limits, replay deterministic calculations where relevant, inspect real run records for measured work, and bind the analysis decision to the exact final rendered snapshot/review. Accept justified non-quantitative and no-addition branches; do not require new paid/physical testing merely to repeat a saved valid record.
+<!-- /mindmap-execution-v1 -->

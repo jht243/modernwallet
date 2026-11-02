@@ -1,0 +1,3 @@
+Inspected 2026-11-02: src/data/guides.ts entry slug "2027-social-security-cola" (route /guides/2027-social-security-cola/).
+Section "Why the Net Raise Can Look Smaller After Medicare Part B" / calculator-limits sentence: "It leaves out other deductions, such as taxes on benefits or a Part D premium, and the 2027 premium is not set yet."
+Planned placement: link the words "a Part D premium" to /guides/medicare-part-d-2027-premiums/ (link-only; no content or date change; reader purpose: Part D premiums are the deduction KFF projects to rise in 2027).
