@@ -3,9 +3,40 @@
   "queryFamily": "medicare part d 2027 / part d premium 2027 / switch part d plan",
   "hypothesis": "A dedicated, KFF/CMS/Medicare.gov-sourced answer page earns clicks for a newly spiking query family where the site has no Medicare drug-plan page.",
   "primaryMetric": "Google Search Console clicks for the canonical URL",
-  "baseline": "not-yet-published; age-matched comparator to be chosen by the growth review",
+  "baseline": {
+    "status": "unavailable",
+    "reason": "No verified pre-change GSC extract in the run evidence; retry historical date-filtered extraction during the existing measurement routine.",
+    "priorSpecification": "not-yet-published; age-matched comparator to be chosen by the growth review"
+  },
   "changeScope": "new route",
   "sourceRefreshTrigger": "KFF or CMS revise the 2027 projections, or Medicare open enrollment ends December 7, 2026",
   "outcomeStatus": "not-yet-published",
-  "productionCost": "unknown; see .meta.json for generator usage"
+  "productionCost": "unknown; see .meta.json for generator usage",
+  "path": "/guides/medicare-part-d-2027-premiums/",
+  "contributionId": "evidence/medicare-part-d-2027-premiums/growth.json",
+  "growthFile": "evidence/medicare-part-d-2027-premiums/growth.json",
+  "evidenceFile": "evidence/medicare-part-d-2027-premiums/evidence.json",
+  "commit": "010a8ff7d7b16158a4def3b39684af607253d32a",
+  "status": "live-verified",
+  "firstVerifiedLiveAt": "2026-11-02T18:23:23.741326+00:00",
+  "verifiedAt": "2026-11-02T18:23:23.741326+00:00",
+  "snapshotSha256": "61d42c0b076772b5ba827bdcdeada7ec8773ba1051ac71f9ae7ef476d8bedb39",
+  "deployment": {
+    "commit": "010a8ff7d7b16158a4def3b39684af607253d32a",
+    "status": "live",
+    "evidenceUrl": "https://github.com/jht243/modernwallet/commit/010a8ff7d7b16158a4def3b39684af607253d32a",
+    "liveUrl": "https://www.themodernwallet.com/guides/medicare-part-d-2027-premiums/",
+    "verifiedAt": "2026-11-02T18:23:57Z",
+    "note": "origin/main contains the commit; live HTTP 200 on 3 routes; rendered-audit compare: live render matches approved render"
+  },
+  "windows": {
+    "days1to28": {
+      "start": "2026-11-03",
+      "end": "2026-11-30"
+    },
+    "days29to56": {
+      "start": "2026-12-01",
+      "end": "2026-12-28"
+    }
+  }
 }
