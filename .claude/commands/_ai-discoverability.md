@@ -67,7 +67,10 @@ Treat each non-empty result as an issue row and fix it with the named fix row
 entry per row of the table above — `{"check": "<Check>", "rows": <count>}` — all
 21 of them, including the zeros, and commit it with the run. A sweep with any
 check missing from the receipt is incomplete: run the missing checks before the
-commit.
+commit. If Ahrefs runs out of units mid-sweep, record the unrun checks as
+`{"check": "<Check>", "rows": null, "error": "<exact error>"}` and ALSO run the
+DataForSEO rung and commit its `<date>.dataforseo.json` — a partial sweep alone
+is never an acceptable source receipt.
 
 **Reconcile before the email.** `site-audit-projects` gives `urls_with_errors`
 and `urls_with_warnings`. The email's `## Ahrefs issue counts` section must show

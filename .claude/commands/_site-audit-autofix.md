@@ -40,6 +40,11 @@ date, source and legal statement stays byte-identical, and the rewrite only
 changes the wording around them. A repo's YMYL / editorial hard rule is a reason
 to fact-lock strictly, never a reason to skip.
 
+**Which receipts an edit needs:**
+- **Short-field edits** — `title`, `metaTitle`, `description`, `deck`, H1, image
+  `alt`, link text: step 3 (fact-lock gate) only.
+- **Body prose** — intro, sections, FAQ answers, list/card copy: all of steps 1–5.
+
 Rewrites must not drift facts (see the 2026-09 humanize claim-drift incident).
 Every step below is REQUIRED and leaves a receipt that is committed with the run:
 
@@ -73,6 +78,10 @@ Every step below is REQUIRED and leaves a receipt that is committed with the run
    line, a `PASS` line in the rewrite-gate JSONL and a `PASS` verdict in
    rewrite-audit.md for every rewritten file. A rewritten file without all three
    is reverted, never shipped. `git add` the receipts with the content.
+   Then run `python3 .claude/scripts/rewrite-gate.py --check-ledger <every content
+   file this run touched>` — it exits 2 if any file's LATEST gate line is FAIL or
+   missing. Exit 2 → fix or revert that file; never commit past it. "All PASS" in
+   a report is not evidence; the exit code is.
 
 ## Required repo checks
 
@@ -93,7 +102,8 @@ changes that depend on it and report the exact check output under
 
 - **Send the email LAST** — after the push, the deploy check, the live 200
   check and the IndexNow submission have all finished, so every line in it is
-  already true. Never send it and then keep working.
+  already true. Never send it and then keep working. Gate: `git fetch -q origin
+  main && git merge-base --is-ancestor HEAD origin/main` must exit 0 first.
 - Rename the heading `## Flagged for human (not auto-fixed)` to
   `## Not fixed this run (auto-retried next run)`. Each line: issue, URL, the
   gate that failed or why no repo-side fix exists. Write it as a status line,

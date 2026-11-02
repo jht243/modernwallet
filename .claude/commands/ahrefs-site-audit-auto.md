@@ -113,10 +113,19 @@ Group every returned issue by **kind** (the Ahrefs issue slug, e.g. `meta_desc_t
 2. `.claude/commands/_site-audit-autofix.md` — the fixes and verify gates for
    every row STEP 4 below marks "flag for human" / "NO".
 
-**Fixed order of work (do not reorder, do not split commits):**
+**Fixed order of work (do not reorder):**
 1. Pull issues + URLs (STEP 3 + lane §1) AND run the lane §1b sweep — the issues
    endpoint stops at 100 rows, so the sweep is the only way to see Links,
    Redirects, Social, Localization, Performance and Sitemaps issues.
+   **Ahrefs dry, out of units (even mid-sweep) or no crawl → the DataForSEO rung
+   is MANDATORY** (`scripts/lib/site_audit.py`, see "Data source" above). "No
+   other source available" is never true while that script exists.
+   **Source receipt — every run, even one with no changes:** commit exactly one of
+   `reports/site-audit/<date>.sweep.json` (Ahrefs) or
+   `reports/site-audit/<date>.dataforseo.json` (fallback). Both rungs failed →
+   commit `reports/site-audit/<date>.source.json` =
+   `{"ahrefs": "<exact error>", "dataforseo": "<exact error>"}`. A run that
+   commits none of the three is a run defect.
 2. Template / schema / robots / link fixes.
 3. **Content rewrites for every content-quality URL** (high AI content,
    similar AI content) per `_site-audit-autofix.md` steps 1–5 — load-standards,
@@ -126,9 +135,18 @@ Group every returned issue by **kind** (the Ahrefs issue slug, e.g. `meta_desc_t
 4. Build + every gate (typecheck, site checks, JSON-LD, fact diff, audit). Every
    required repo check must PASS — fix pre-existing failures too
    (`_site-audit-autofix.md` → Required repo checks).
-5. ONE commit with all of it, push, deploy check, live 200 check.
-6. IndexNow (all changed URLs + Ahrefs' list), must print `INDEXNOW OK`.
-7. Email — LAST.
+5. Before committing: `python3 .claude/scripts/rewrite-gate.py --check-ledger
+   <every content file this run touched>` must exit 0 (no file may ship whose
+   latest gate line is FAIL). Then **commit #1** = all fixes + source receipt +
+   rewrite receipts. Push to main (`deploy-run-to-main.sh push`), deploy check,
+   live 200 check.
+6. IndexNow (all changed URLs + Ahrefs' list), must print `INDEXNOW OK`. Then
+   **commit #2** = the IndexNow receipt only. Never more than these two commits.
+7. Email — LAST, and only after this passes:
+   `git fetch -q origin main && git merge-base --is-ancestor HEAD origin/main`
+   (exit 0 = this run's work is on main). Non-zero → push first; if the push
+   cannot land, the email says "NOT DEPLOYED — needs manual merge of <branch>"
+   as its first line instead of reporting fixes as done.
 
 A content-quality URL may only end the run as **rewritten + live** or
 **reverted: <named audit check that FAILED>**. "Deferred", "left for next run",
