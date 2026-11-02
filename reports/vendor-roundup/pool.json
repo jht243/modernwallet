@@ -1,14 +1,25 @@
 {
-  "generated": "2026-11-01T16:10:05.796Z",
+  "generated": "2026-11-02T16:35:06.089Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
       "label": "AI training work platforms",
       "roundupSlug": "dataannotation-alternatives",
-      "route": "ACCRUE",
-      "qualified": 10,
+      "route": "ENRICH",
+      "qualified": 11,
       "listed": 10,
-      "missing": []
+      "missing": [
+        {
+          "domain": "builtin.com",
+          "name": "Get Paid to Train AI: The New Side Hustle for Professionals",
+          "site_url": "https://builtin.com",
+          "one_liner": "Nov 12, 2025 — Companies are hiring people to train AI models through both full-time and part-time work. These opportunities range from basic data ...",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 17,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "ai-investing-apps",
@@ -83,10 +94,21 @@
       "vertical": "mortgage-lenders",
       "label": "mortgage lenders",
       "roundupSlug": "best-mortgage-lenders",
-      "route": "ACCRUE",
-      "qualified": 17,
+      "route": "ENRICH",
+      "qualified": 18,
       "listed": 17,
-      "missing": []
+      "missing": [
+        {
+          "domain": "casaplorer.com",
+          "name": "Best Mortgage Lenders August 2026",
+          "site_url": "https://casaplorer.com",
+          "one_liner": "Runner Ups for Online Mortgages. Some of the other best online mortgage lenders include SoFi, Reali, and nbkc bank. BEST MORTGAGE LENDER ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 4,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "ira-accounts",
@@ -180,50 +202,39 @@
       "vertical": "net-worth-tracker",
       "label": "net worth trackers",
       "roundupSlug": "best-net-worth-tracker",
-      "route": "ACCRUE",
-      "qualified": 27,
+      "route": "ENRICH",
+      "qualified": 28,
       "listed": 27,
-      "missing": []
+      "missing": [
+        {
+          "domain": "creditdonkey.com",
+          "name": "Best Net Worth Tracker to Track Your Wealth",
+          "site_url": "https://creditdonkey.com",
+          "one_liner": "Mar 31, 2025 — 10 Best Net Worth Trackers · 1. EMPOWER: BEST OVERALL · 2. KUBERA: BEST FOR DIVERSE ASSET HOLDERS · 3. TILLER: BEST FOR SPREADSHEET USERS · 4. Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 17,
+          "primary_email": "feedback@creditdonkey.com"
+        }
+      ]
     },
     {
       "vertical": "tax-relief-companies",
       "label": "tax relief companies",
       "roundupSlug": "best-tax-relief-companies",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 21,
-      "listed": 20,
-      "missing": [
-        {
-          "domain": "claritytaxrelief.com",
-          "name": "Tax Relief Companies Compared: Fees, Guarantees, BBB",
-          "site_url": "https://claritytaxrelief.com",
-          "one_liner": "Oct 4, 2026 — Every firm here holds an A+ BBB rating and BBB accreditation, so the rating alone does not separate them. Complaint history, review counts and ... Read more",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 16,
-          "primary_email": null
-        }
-      ]
+      "listed": 21,
+      "missing": []
     },
     {
       "vertical": "online-will-makers",
       "label": "online will makers",
       "roundupSlug": "best-online-will-makers",
-      "route": "ENRICH",
-      "qualified": 13,
+      "route": "ACCRUE",
+      "qualified": 12,
       "listed": 12,
-      "missing": [
-        {
-          "domain": "retiredby40blog.com",
-          "name": "Which is the Best Online Will Creator?",
-          "site_url": "https://retiredby40blog.com",
-          "one_liner": "Nov 10, 2014 — Regardless of your preferences or needs, I've rounded up the best, most affordable, most dependable will-creation options based on the following ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 17,
-          "primary_email": null
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "living-trust-services",
@@ -256,21 +267,10 @@
       "vertical": "brokers-for-treasury-bonds",
       "label": "brokers for Treasury bonds",
       "roundupSlug": "best-brokers-for-treasury-bonds",
-      "route": "ENRICH",
-      "qualified": 5,
+      "route": "ACCRUE",
+      "qualified": 4,
       "listed": 4,
-      "missing": [
-        {
-          "domain": "investingoal.com",
-          "name": "7 Best Bond Trading Brokers (2026)",
-          "site_url": "https://investingoal.com",
-          "one_liner": "Nov 15, 2022 — The best bond trading brokers are DEGIRO, Exante, AvaTrade, and Saxo. To choose the best brokers for trading bonds, the fees charged on bonds, ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 17,
-          "primary_email": "info@investingoal.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "brokerage-accounts-for-interest-on-cash",
@@ -324,21 +324,10 @@
       "vertical": "credit-cards-for-fair-credit",
       "label": "credit cards for fair credit",
       "roundupSlug": "best-credit-cards-for-fair-credit",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 5,
-      "listed": 4,
-      "missing": [
-        {
-          "domain": "aspire.com",
-          "name": "Prequalify* For Up To $500 Credit Limit",
-          "site_url": "https://aspire.com",
-          "one_liner": "Prequalify* For Up To $500 Credit Limit Subject to credit approval. Even less than perfect credit accepted. No Program Fees or Initial Deposit Needed to Open ...",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 7,
-          "primary_email": null
-        }
-      ]
+      "listed": 5,
+      "missing": []
     },
     {
       "vertical": "custodial-roth-ira-providers",
@@ -384,7 +373,7 @@
       "label": "personal loan lenders",
       "roundupSlug": "personal-loan-rates-by-lender",
       "route": "ENRICH",
-      "qualified": 21,
+      "qualified": 22,
       "listed": 18,
       "missing": [
         {
@@ -405,6 +394,16 @@
           "site_kind": "unknown",
           "has_pricing": false,
           "serp_rank": 9,
+          "primary_email": null
+        },
+        {
+          "domain": "learn.trybeem.com",
+          "name": "Best Loans Like Oportun to Watch Out for in 2026",
+          "site_url": "https://learn.trybeem.com",
+          "one_liner": "SoFi: Best Loan. Prosper: Best Peer-to-Peer Loan. Upstart offers personal loans from $1,000 to $50,000, than Oportun's $10,000 cap. APR ranges from 6.40% to 35 ...",
+          "site_kind": "unknown",
+          "has_pricing": true,
+          "serp_rank": 4,
           "primary_email": null
         },
         {
@@ -442,7 +441,7 @@
       "label": "secured credit cards",
       "roundupSlug": "best-secured-credit-cards",
       "route": "ENRICH",
-      "qualified": 7,
+      "qualified": 8,
       "listed": 6,
       "missing": [
         {
@@ -454,6 +453,16 @@
           "has_pricing": false,
           "serp_rank": 10,
           "primary_email": "client.service@bankatfirst.com"
+        },
+        {
+          "domain": "creditninja.com",
+          "name": "Loans Like Bright Lending: Compare Alternatives",
+          "site_url": "https://creditninja.com",
+          "one_liner": "May 26, 2023 — Alternative loans to Bright Lending include personal loans from online lenders, credit union loans, and payday alternative loans (PALs) from ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 5,
+          "primary_email": null
         }
       ]
     },
@@ -470,21 +479,10 @@
       "vertical": "cash-back-credit-cards",
       "label": "cash back credit cards",
       "roundupSlug": "best-cash-back-credit-cards",
-      "route": "ENRICH",
-      "qualified": 1,
+      "route": "ACCRUE",
+      "qualified": 0,
       "listed": 0,
-      "missing": [
-        {
-          "domain": "chrishutchins.com",
-          "name": "Best Cash Back Cards and How to Earn up to 20% ...",
-          "site_url": "https://chrishutchins.com",
-          "one_liner": "U.S. Bank Smartly Visa Signature Credit Card · Robinhood Gold Card · Discover it® Miles card · Bank of America® Unlimited Cash Rewards Credit Card ...",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 17,
-          "primary_email": null
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "student-credit-cards",
@@ -517,10 +515,21 @@
       "vertical": "invoice-factoring-companies",
       "label": "invoice factoring companies",
       "roundupSlug": "best-invoice-factoring-companies",
-      "route": "ACCRUE",
-      "qualified": 31,
+      "route": "ENRICH",
+      "qualified": 32,
       "listed": 31,
-      "missing": []
+      "missing": [
+        {
+          "domain": "insights.cerco.ai",
+          "name": "Top 24 peer-to-peer invoice financing companies in ...",
+          "site_url": "https://insights.cerco.ai",
+          "one_liner": "Sep 26, 2026 — Explore the top 24 peer-to-peer invoice financing companies in the US, offering specialized and innovative financial solutions.",
+          "site_kind": "vendor",
+          "has_pricing": true,
+          "serp_rank": 17,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "business-line-of-credit-rates-by-lender",
@@ -544,30 +553,29 @@
       "vertical": "same-day-business-loans",
       "label": "business lenders",
       "roundupSlug": "best-same-day-business-loans",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 9,
-      "listed": 8,
-      "missing": [
-        {
-          "domain": "vipcapitalfunding.com",
-          "name": "Same-Day Business Loans",
-          "site_url": "https://vipcapitalfunding.com",
-          "one_liner": "Get up to $15 million in same-day business loans with no collateral. Approvals within hours and deposits the same day. BBB A+ trusted lender.",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 16,
-          "primary_email": null
-        }
-      ]
+      "listed": 9,
+      "missing": []
     },
     {
       "vertical": "business-bank-accounts",
       "label": "business bank accounts",
       "roundupSlug": "best-business-bank-accounts",
       "route": "ENRICH",
-      "qualified": 20,
+      "qualified": 21,
       "listed": 19,
       "missing": [
+        {
+          "domain": "bench.co",
+          "name": "8 Best Online Business Bank Accounts: 2024",
+          "site_url": "https://bench.co",
+          "one_liner": "Apr 4, 2025 — $1,000 minimum deposit (for the Basic Business Checking account) · Limited free transactions per month, with fees that apply once you exceed 200 ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": true,
+          "serp_rank": 17,
+          "primary_email": null
+        },
         {
           "domain": "elevate.store",
           "name": "Your Quick Guide to the Best Business Bank Accounts",
@@ -620,21 +628,10 @@
       "vertical": "freelancer-tax-preparers",
       "label": "tax preparation services for freelancers and gig workers",
       "roundupSlug": "best-tax-preparation-services-for-freelancers",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 16,
-      "listed": 15,
-      "missing": [
-        {
-          "domain": "gettaxhub.com",
-          "name": "Independent Contractor Tax Help",
-          "site_url": "https://gettaxhub.com",
-          "one_liner": "At taxhub, we can walk you through the process of filing taxes as a freelancer. Our experienced CPAs will help you find your maximum deductions and calculate ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": true,
-          "serp_rank": 17,
-          "primary_email": "info@gettaxhub.com"
-        }
-      ]
+      "listed": 16,
+      "missing": []
     },
     {
       "vertical": "cpa-tax-advisers",
@@ -659,7 +656,7 @@
       "label": "restaurant HR support services in Massachusetts",
       "roundupSlug": "best-restaurant-hr-support-services-in-massachusetts",
       "route": "ENRICH",
-      "qualified": 21,
+      "qualified": 20,
       "listed": 18,
       "missing": [
         {
@@ -681,16 +678,6 @@
           "has_pricing": false,
           "serp_rank": 17,
           "primary_email": "info@cayugahospitality.com"
-        },
-        {
-          "domain": "jobs.latinasrisingupinhr.com",
-          "name": "Full time Human Resources Restaurant-Food Service ...",
-          "site_url": "https://jobs.latinasrisingupinhr.com",
-          "one_liner": "2 Full time Human Resources Restaurant-Food Service Management jobs available on LATINAS RISING UP IN HR Job Board. Apply or sign up for job alerts to get ...",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 17,
-          "primary_email": null
         }
       ]
     },

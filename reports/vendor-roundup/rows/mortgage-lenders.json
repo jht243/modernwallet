@@ -1,18 +1,10 @@
 {
   "slug": "best-mortgage-lenders",
-  "rows": [
+  "rows": [],
+  "cut": [
     {
-      "name": "Lower",
-      "domain": "lower.com",
-      "url": "https://lower.com/",
-      "values": [
-        "Home buyers, refinancers and cash-out borrowers in 47 states plus DC",
-        "Yes",
-        "Not published",
-        "Not published",
-        "Free Re-Fi for Life: no lending fees on later refinances; third-party fees excluded"
-      ]
+      "domain": "casaplorer.com",
+      "why": "category 1 \u2014 comparison/review site, no product of its own"
     }
-  ],
-  "cut": []
+  ]
 }

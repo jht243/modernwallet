@@ -1,35 +1,10 @@
 {
   "slug": "best-net-worth-tracker",
-  "rows": [
-    {
-      "name": "FinancialAha",
-      "domain": "financialaha.com",
-      "url": "https://www.financialaha.com/",
-      "values": [
-        "Net Worth Tracker $29 one-time; planning bundle $139",
-        "Financial Planning template ($29) tracks stocks, crypto and retirement accounts",
-        "Real estate templates $29 to $59, including mortgage analysis and rental analysis",
-        "Retirement Planning template $39; two simple retirement calculators free",
-        "Spreadsheet users wanting Google Sheets or Excel templates with no bank connection"
-      ]
-    },
-    {
-      "name": "WorthTracker",
-      "domain": "worthtracker.net",
-      "url": "https://www.worthtracker.net/",
-      "values": [
-        "Free $0; Pro $9/mo; Family $19/mo (list prices as of Oct 2026)",
-        "Allocation breakdown across real estate, investments, cash and other; no detailed analysis listed",
-        "Property tracked as a manually entered asset; no dedicated real estate features",
-        "FIRE projections on Pro; free FIRE and Coast FIRE calculators",
-        "Manual-entry users wanting monthly net worth snapshots without bank logins"
-      ]
-    }
-  ],
+  "rows": [],
   "cut": [
     {
-      "domain": "glideapps.com",
-      "why": "category 4 — AI app builder for internal business apps, no net worth tracker product"
+      "domain": "creditdonkey.com",
+      "why": "category 1 \u2014 review and comparison site, no product of its own"
     }
   ]
 }

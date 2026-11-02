@@ -1,10 +1,22 @@
 {
   "slug": "best-restaurant-hr-support-services-in-massachusetts",
-  "rows": [],
+  "rows": [
+    {
+      "name": "BBSI",
+      "domain": "bbsi.com",
+      "url": "https://www.bbsi.com/",
+      "values": [
+        "PEO: payroll, HR consulting, risk and safety; hospitality offering listed",
+        "Not published; custom quote based on client payroll",
+        "BBSI processes payroll and tax filings; client manages employees",
+        "Not published"
+      ]
+    }
+  ],
   "cut": [
     {
-      "domain": "jobs.latinasrisingupinhr.com",
-      "why": "category 1 \u2014 job board, no product of its own"
+      "domain": "cayugahospitality.com",
+      "why": "category 4 \u2014 hospitality executive-search/consulting, no defined restaurant HR service or Massachusetts coverage"
     }
   ]
 }

@@ -3208,6 +3208,32 @@
       "Same day if approved before 1 p.m. CT on weekdays"
      ],
      "added": "2026-10-29"
+    },
+    {
+     "name": "Tower Loan",
+     "domain": "towerloan.com",
+     "url": "https://www.towerloan.com",
+     "values": [
+      "Borrowers in AL, FL, IL, LA, MS, MO, TN, TX; secured loans in-branch only",
+      "Not published; varies by state and underwriting",
+      "Example: 34.96% APR on $6,000, 26 months",
+      "Origination fees apply; vary by state",
+      "Not published"
+     ],
+     "added": "2026-11-02"
+    },
+    {
+     "name": "CreditNinja",
+     "domain": "creditninja.com",
+     "url": "https://www.creditninja.com",
+     "values": [
+      "Short-term installment loans; limits and availability vary by state",
+      "Generally up to $5,000 unsecured; varies by state",
+      "Up to 35.99% APR on own products; terms 3 to 24 months",
+      "Not published",
+      "Same business day if approved before 10:30 a.m. CT weekdays"
+     ],
+     "added": "2026-11-02"
     }
    ]
   },
@@ -6715,6 +6741,18 @@
       "You"
      ],
      "added": "2026-10-27"
+    },
+    {
+     "name": "BBSI",
+     "domain": "bbsi.com",
+     "url": "https://www.bbsi.com/",
+     "values": [
+      "PEO: payroll, HR consulting, risk and safety; hospitality offering listed",
+      "Not published; custom quote based on client payroll",
+      "BBSI processes payroll and tax filings; client manages employees",
+      "Not published"
+     ],
+     "added": "2026-11-02"
     }
    ]
   },
