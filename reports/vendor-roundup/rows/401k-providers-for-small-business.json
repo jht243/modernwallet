@@ -1,27 +1,10 @@
 {
  "slug": "best-401k-providers-for-small-business",
- "rows": [
-  {
-   "name": "Maxus Plan Solutions",
-   "domain": "maxusplans.com",
-   "url": "https://maxusplans.com",
-   "values": [
-    "Employers under 100 employees (SIMPLE 401(k))",
-    "Not published",
-    "Not published",
-    "Not published",
-    "Compliance testing handled; Safe Harbor plans skip nondiscrimination testing"
-   ]
-  }
- ],
+ "rows": [],
  "cut": [
   {
-   "domain": "myshortlister.com",
-   "why": "category 1 \u2014 vendor directory and RFP platform, no product of its own"
-  },
-  {
-   "domain": "trinet.com",
-   "why": "category 4 \u2014 PEO/HR/payroll provider; no 401(k) product shown on its site"
+   "domain": "sensefinancial.com",
+   "why": "category 4 \u2014 individual Solo 401(k) only; fits a solo 401k category, not employer plans"
   }
  ]
 }

@@ -1,1 +1,30 @@
-{"slug":"best-bookkeeping-services-for-small-businesses","rows":[{"name":"Molen & Associates","domain":"molentax.com","url":"https://molentax.com","values":["Not published; per project or monthly subscription","Cleanup work offered; price not published","Yes (individual, small business, S-corp, C-corp)","Houston-area small businesses needing bookkeeping plus tax prep"]},{"name":"North Carolina Bookkeeping","domain":"northcarolinabookkeeping.com","url":"https://northcarolinabookkeeping.com","values":["Not published; call for a quote","Accounting cleanups offered; price not published","Not published","Charlotte small businesses and individuals, in person or remote"]},{"name":"Rigits","domain":"rigits.com","url":"https://rigits.com","values":["From $895/month, three tiers","Books cleaned up after signing; separate price not published","Not published","Growing businesses wanting bookkeeping, payroll and fractional CFO support"]}],"cut":[{"domain":"expertise.com","why":"category 1 — local professional directory and ranking site, no bookkeeping service of its own"}]}
+{
+ "slug": "best-bookkeeping-services-for-small-businesses",
+ "rows": [
+  {
+   "name": "TallyClaw",
+   "domain": "tallyclaw.com",
+   "url": "https://tallyclaw.com",
+   "values": [
+    "Not published; pricing via onboarding call",
+    "Cleanup scoping in onboarding; price not published",
+    "Not mentioned; bookkeeping and monthly close only",
+    "QuickBooks Online businesses wanting done-for-you monthly bookkeeping"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "searcheye.io",
+   "why": "category 1 \u2014 review/listicle site, no product of its own"
+  },
+  {
+   "domain": "gidamakinem.com",
+   "why": "category 3 \u2014 Turkish food-machinery maker, outside finance scope"
+  },
+  {
+   "domain": "countingworks.com",
+   "why": "category 2 \u2014 redirects to unrelated site (taxbuzz.com)"
+  }
+ ]
+}

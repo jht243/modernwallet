@@ -1,25 +1,14 @@
 {
-  "generated": "2026-11-02T16:35:06.089Z",
+  "generated": "2026-11-03T16:14:27.177Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
       "label": "AI training work platforms",
       "roundupSlug": "dataannotation-alternatives",
-      "route": "ENRICH",
-      "qualified": 11,
+      "route": "ACCRUE",
+      "qualified": 10,
       "listed": 10,
-      "missing": [
-        {
-          "domain": "builtin.com",
-          "name": "Get Paid to Train AI: The New Side Hustle for Professionals",
-          "site_url": "https://builtin.com",
-          "one_liner": "Nov 12, 2025 — Companies are hiring people to train AI models through both full-time and part-time work. These opportunities range from basic data ...",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 17,
-          "primary_email": null
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "ai-investing-apps",
@@ -94,21 +83,10 @@
       "vertical": "mortgage-lenders",
       "label": "mortgage lenders",
       "roundupSlug": "best-mortgage-lenders",
-      "route": "ENRICH",
-      "qualified": 18,
+      "route": "ACCRUE",
+      "qualified": 17,
       "listed": 17,
-      "missing": [
-        {
-          "domain": "casaplorer.com",
-          "name": "Best Mortgage Lenders August 2026",
-          "site_url": "https://casaplorer.com",
-          "one_liner": "Runner Ups for Online Mortgages. Some of the other best online mortgage lenders include SoFi, Reali, and nbkc bank. BEST MORTGAGE LENDER ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 4,
-          "primary_email": null
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "ira-accounts",
@@ -193,48 +171,80 @@
       "vertical": "401k-providers-for-small-business",
       "label": "401(k) providers",
       "roundupSlug": "best-401k-providers-for-small-business",
-      "route": "ACCRUE",
-      "qualified": 20,
+      "route": "ENRICH",
+      "qualified": 21,
       "listed": 20,
-      "missing": []
+      "missing": [
+        {
+          "domain": "sensefinancial.com",
+          "name": "Best 401k for Small Business: In-Depth Outline",
+          "site_url": "https://sensefinancial.com",
+          "one_liner": "Jan 4, 2014 — Sense Financial is the chief provider and facilitator of the best 401k for small business today. Retirees, self-employed or small business ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 17,
+          "primary_email": "contact@sensefinancial.com"
+        }
+      ]
     },
     {
       "vertical": "net-worth-tracker",
       "label": "net worth trackers",
       "roundupSlug": "best-net-worth-tracker",
-      "route": "ENRICH",
-      "qualified": 28,
+      "route": "ACCRUE",
+      "qualified": 27,
       "listed": 27,
-      "missing": [
-        {
-          "domain": "creditdonkey.com",
-          "name": "Best Net Worth Tracker to Track Your Wealth",
-          "site_url": "https://creditdonkey.com",
-          "one_liner": "Mar 31, 2025 — 10 Best Net Worth Trackers · 1. EMPOWER: BEST OVERALL · 2. KUBERA: BEST FOR DIVERSE ASSET HOLDERS · 3. TILLER: BEST FOR SPREADSHEET USERS · 4. Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 17,
-          "primary_email": "feedback@creditdonkey.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "tax-relief-companies",
       "label": "tax relief companies",
       "roundupSlug": "best-tax-relief-companies",
-      "route": "ACCRUE",
-      "qualified": 21,
+      "route": "ENRICH",
+      "qualified": 22,
       "listed": 21,
-      "missing": []
+      "missing": [
+        {
+          "domain": "defensetax.com",
+          "name": "Best Tax Relief Company To Help With Back Taxes",
+          "site_url": "https://defensetax.com",
+          "one_liner": "Jul 6, 2020 — Defense Tax Partners is the best tax relief company to help with back taxes. If you need tax help, reach out to our lawyers today.",
+          "site_kind": "vendor",
+          "has_pricing": true,
+          "serp_rank": 18,
+          "primary_email": "clientcare@partnerstg.com"
+        }
+      ]
     },
     {
       "vertical": "online-will-makers",
       "label": "online will makers",
       "roundupSlug": "best-online-will-makers",
-      "route": "ACCRUE",
-      "qualified": 12,
+      "route": "ENRICH",
+      "qualified": 14,
       "listed": 12,
-      "missing": []
+      "missing": [
+        {
+          "domain": "trustedcompanyreviews.com",
+          "name": "The Best Online Will Services",
+          "site_url": "https://trustedcompanyreviews.com",
+          "one_liner": "Quicken WillMaker & Trust is a trusted online DIY estate-planning tool. They offer 3 plan options, each providing essential documents to help you complete your ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 2,
+          "primary_email": null
+        },
+        {
+          "domain": "fixthephoto.com",
+          "name": "7 Best Online Will Makers in 2026",
+          "site_url": "https://fixthephoto.com",
+          "one_liner": "1. Trust & Will - Our Choice. Best for novice. Bank-level encryption ; 2. LegalZoom. Fast will maker. With individual forms ; 3. Tomorrow. Best for mobile. Read more",
+          "site_kind": "vendor",
+          "has_pricing": true,
+          "serp_rank": 17,
+          "primary_email": "fixthephotocom@gmail.com"
+        }
+      ]
     },
     {
       "vertical": "living-trust-services",
@@ -373,8 +383,8 @@
       "label": "personal loan lenders",
       "roundupSlug": "personal-loan-rates-by-lender",
       "route": "ENRICH",
-      "qualified": 22,
-      "listed": 18,
+      "qualified": 21,
+      "listed": 19,
       "missing": [
         {
           "domain": "canvas.org",
@@ -394,26 +404,6 @@
           "site_kind": "unknown",
           "has_pricing": false,
           "serp_rank": 9,
-          "primary_email": null
-        },
-        {
-          "domain": "learn.trybeem.com",
-          "name": "Best Loans Like Oportun to Watch Out for in 2026",
-          "site_url": "https://learn.trybeem.com",
-          "one_liner": "SoFi: Best Loan. Prosper: Best Peer-to-Peer Loan. Upstart offers personal loans from $1,000 to $50,000, than Oportun's $10,000 cap. APR ranges from 6.40% to 35 ...",
-          "site_kind": "unknown",
-          "has_pricing": true,
-          "serp_rank": 4,
-          "primary_email": null
-        },
-        {
-          "domain": "towerloan.com",
-          "name": "Personal Loans Online",
-          "site_url": "https://towerloan.com",
-          "one_liner": "Interested in a personal loan or want to learn more about how to get a personal loan? We take pride in helping our customers take control of their finances.",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 15,
           "primary_email": null
         }
       ]
@@ -456,7 +446,7 @@
         },
         {
           "domain": "creditninja.com",
-          "name": "Loans Like Bright Lending: Compare Alternatives",
+          "name": "CreditNinja",
           "site_url": "https://creditninja.com",
           "one_liner": "May 26, 2023 — Alternative loans to Bright Lending include personal loans from online lenders, credit union loans, and payday alternative loans (PALs) from ... Read more",
           "site_kind": "unknown",
@@ -515,21 +505,10 @@
       "vertical": "invoice-factoring-companies",
       "label": "invoice factoring companies",
       "roundupSlug": "best-invoice-factoring-companies",
-      "route": "ENRICH",
-      "qualified": 32,
+      "route": "ACCRUE",
+      "qualified": 31,
       "listed": 31,
-      "missing": [
-        {
-          "domain": "insights.cerco.ai",
-          "name": "Top 24 peer-to-peer invoice financing companies in ...",
-          "site_url": "https://insights.cerco.ai",
-          "one_liner": "Sep 26, 2026 — Explore the top 24 peer-to-peer invoice financing companies in the US, offering specialized and innovative financial solutions.",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 17,
-          "primary_email": null
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "business-line-of-credit-rates-by-lender",
@@ -562,31 +541,10 @@
       "vertical": "business-bank-accounts",
       "label": "business bank accounts",
       "roundupSlug": "best-business-bank-accounts",
-      "route": "ENRICH",
-      "qualified": 21,
+      "route": "ACCRUE",
+      "qualified": 19,
       "listed": 19,
-      "missing": [
-        {
-          "domain": "bench.co",
-          "name": "8 Best Online Business Bank Accounts: 2024",
-          "site_url": "https://bench.co",
-          "one_liner": "Apr 4, 2025 — $1,000 minimum deposit (for the Basic Business Checking account) · Limited free transactions per month, with fees that apply once you exceed 200 ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": true,
-          "serp_rank": 17,
-          "primary_email": null
-        },
-        {
-          "domain": "elevate.store",
-          "name": "Your Quick Guide to the Best Business Bank Accounts",
-          "site_url": "https://elevate.store",
-          "one_liner": "Some top choices can be US Bank Business Accounts, Chase Business Complete Banking, and Wells Fargo's Initiate Business Checking. How can I open a business bank ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": true,
-          "serp_rank": 17,
-          "primary_email": "partners@elevate.store"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "mileage-tracker-apps",
@@ -619,10 +577,71 @@
       "vertical": "bookkeeping-services",
       "label": "bookkeeping services for small businesses",
       "roundupSlug": "best-bookkeeping-services-for-small-businesses",
-      "route": "ACCRUE",
-      "qualified": 26,
+      "route": "ENRICH",
+      "qualified": 32,
       "listed": 26,
-      "missing": []
+      "missing": [
+        {
+          "domain": "tallyclaw.com",
+          "name": "Xendoo alternative",
+          "site_url": "https://tallyclaw.com",
+          "one_liner": "Xendoo alternatives typically prioritize close readiness, consistency, and response quality. TallyClaw offers monthly bookkeeping operations, onboarding ...",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 2,
+          "primary_email": null
+        },
+        {
+          "domain": "slateridgefinance.com",
+          "name": "Top Online Bookkeeping Firms That Won't Break the Bank",
+          "site_url": "https://slateridgefinance.com",
+          "one_liner": "Discover affordable bookkeeping and accounting services online. Save 20+ hours/month, boost survival 313%, scale with expert virtual support for startups.",
+          "site_kind": "vendor",
+          "has_pricing": true,
+          "serp_rank": 4,
+          "primary_email": "info@slateridgefinance.com"
+        },
+        {
+          "domain": "searcheye.io",
+          "name": "8 Best Bookkeeping Services in 2026",
+          "site_url": "https://searcheye.io",
+          "one_liner": "Oct 6, 2026 — The rest of this list covers inDinero, 1-800Accountant, Decimal, Doola, QuickBooks Live, and Bookkeeper360, each for a specific type of buyer.",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 8,
+          "primary_email": "brands@searcheye.io"
+        },
+        {
+          "domain": "fastcorp.eu",
+          "name": "7 Best Accounting Services for Small Business (2026)",
+          "site_url": "https://fastcorp.eu",
+          "one_liner": "Aug 11, 2026 — 1. FastCorp · 2. Bench Accounting · 3. Pilot · 4. QuickBooks Live Bookkeeping (Intuit) · 5. Bookkeeper360 · 6. Xendoo · 7. Block Advisors by H&R Block. Read more",
+          "site_kind": "vendor",
+          "has_pricing": true,
+          "serp_rank": 8,
+          "primary_email": "info@fastcorp.eu"
+        },
+        {
+          "domain": "countingworks.com",
+          "name": "Connect with the best accounting and bookkeeping pros",
+          "site_url": "https://countingworks.com",
+          "one_liner": "Running a business? Need help with your numbers? CountingWorks uses reviews, background screenings and qualifications to connect you with the perfect CPA, ...",
+          "site_kind": "unknown",
+          "has_pricing": true,
+          "serp_rank": 9,
+          "primary_email": null
+        },
+        {
+          "domain": "gidamakinem.com",
+          "name": "Best Virtual & Outsourced Accounting Services 2023",
+          "site_url": "https://gidamakinem.com",
+          "one_liner": "Merritt Bookkeeping : Best Value for Basic Bookkeeping Services. Uncomplicated navigation, an attractive, intuitive UI, and exceptional mobile access add to ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 9,
+          "primary_email": "info@gidamakinem.com"
+        }
+      ]
     },
     {
       "vertical": "freelancer-tax-preparers",
@@ -655,31 +674,10 @@
       "vertical": "massachusetts-restaurant-hr-services",
       "label": "restaurant HR support services in Massachusetts",
       "roundupSlug": "best-restaurant-hr-support-services-in-massachusetts",
-      "route": "ENRICH",
-      "qualified": 20,
-      "listed": 18,
-      "missing": [
-        {
-          "domain": "bbsi.com",
-          "name": "Hospitality & Restaurant Industry PEO Solutions",
-          "site_url": "https://bbsi.com",
-          "one_liner": "BBSI provides local HR and compliance consulting, payroll, workforce training, and risk mitigation tailored to the hospitality and restaurant industries.",
-          "site_kind": "unknown",
-          "has_pricing": true,
-          "serp_rank": 17,
-          "primary_email": "info@bbsi.com"
-        },
-        {
-          "domain": "cayugahospitality.com",
-          "name": "Hospitality Human Resources and Executive Search",
-          "site_url": "https://cayugahospitality.com",
-          "one_liner": "Cayuga Hospitality Consultants are skilled in hospitality executive search, HR management, employee and labor relations and use their decades of hospitality ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 17,
-          "primary_email": "info@cayugahospitality.com"
-        }
-      ]
+      "route": "ACCRUE",
+      "qualified": 19,
+      "listed": 19,
+      "missing": []
     },
     {
       "vertical": "healthcare-directive-services",
