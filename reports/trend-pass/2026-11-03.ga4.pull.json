@@ -1,0 +1,128 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-11-02",
+  "window_start": "2026-11-02",
+  "window_end": "2026-11-02",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 83,
+      "sessions": 89,
+      "active_users": 79,
+      "clicks": 83
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 26,
+      "sessions": 24,
+      "active_users": 22,
+      "clicks": 26
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 24,
+      "sessions": 27,
+      "active_users": 21,
+      "clicks": 24
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 22,
+      "sessions": 22,
+      "active_users": 20,
+      "clicks": 22
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 15,
+      "sessions": 14,
+      "active_users": 13,
+      "clicks": 15
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 14,
+      "sessions": 14,
+      "active_users": 12,
+      "clicks": 14
+    },
+    {
+      "page": "/guides/tax-deductions-checklist/",
+      "views": 12,
+      "sessions": 13,
+      "active_users": 10,
+      "clicks": 12
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 9,
+      "sessions": 7,
+      "active_users": 5,
+      "clicks": 9
+    },
+    {
+      "page": "/guides/dell-trump-account-250/",
+      "views": 8,
+      "sessions": 7,
+      "active_users": 4,
+      "clicks": 8
+    },
+    {
+      "page": "/stock-capital-gains-tax-calculator/",
+      "views": 8,
+      "sessions": 9,
+      "active_users": 8,
+      "clicks": 8
+    }
+  ],
+  "top10_pages_total_views": 221,
+  "top10_pages_total_clicks": 221,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 87,
+      "Unassigned": 13,
+      "Direct": 1,
+      "Referral": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 26,
+      "Unassigned": 3,
+      "Direct": 1
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 23,
+      "Unassigned": 4
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 21,
+      "Unassigned": 3,
+      "Direct": 1
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 12,
+      "Direct": 2,
+      "Unassigned": 1
+    },
+    "/guides/tax-deductions-checklist/": {
+      "Organic Search": 11,
+      "Direct": 2,
+      "Unassigned": 1
+    },
+    "/stock-capital-gains-tax-calculator/": {
+      "Organic Search": 9
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 8,
+      "Direct": 5,
+      "Unassigned": 4
+    },
+    "/guides/dell-trump-account-250/": {
+      "Organic Search": 7
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 7
+    }
+  }
+}

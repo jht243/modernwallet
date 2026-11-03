@@ -317,3 +317,6 @@
 | /social-security-cola-calculator/ | 2026-11-02 | 11 | 0/0/0/0/0 | 1 |
 | /guides/trump-account-worth-it/ | 2026-11-02 | 10 | 0/0/0/0/0 | 0 |
 | / | 2026-11-02 | 8 | 0/0/0/0/0 | 0 |
+| /guides/tax-deductions-checklist/ | 2026-11-03 | 12 | 0/0/0/0/0 | 0 |
+| /guides/dell-trump-account-250/ | 2026-11-03 | 8 | 0/0/0/0/0 | 0 |
+| /stock-capital-gains-tax-calculator/ | 2026-11-03 | 8 | 0/0/0/0/0 | 0 |
