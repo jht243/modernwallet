@@ -37,11 +37,11 @@ HUBS = {
 # SEMRUSH then filters to real demand. These are questions/terms people TYPE, not the
 # spoken pain from the transcript.
 THEME_TERMS = {
-    "retirement": ["how much do i need to retire", "roth vs traditional ira", "when to take social security", "coast fire calculator"],
-    "investing": ["how to start investing", "index funds vs etf", "dividend investing strategy", "portfolio rebalancing"],
-    "budget": ["how to make a budget", "emergency fund amount", "debt payoff strategy", "50 30 20 rule"],
-    "real-estate": ["mortgage payoff calculator", "rental property roi", "should i refinance", "closing costs explained"],
-    "tax-estate": ["estate planning basics", "how does probate work", "tax deductions checklist", "trust vs will"],
+    "retirement": ["how much do i need to retire", "roth vs traditional ira", "when to take social security", "coast fire calculator", "safe withdrawal rate", "4.7 percent rule", "retirement stress test", "how to turn savings into retirement paycheck"],
+    "investing": ["how to start investing", "index funds vs etf", "dividend investing strategy", "portfolio rebalancing", "target date fund fees", "brokerage account vs ira", "tax loss harvesting", "capital gains harvesting"],
+    "budget": ["how to make a budget", "emergency fund amount", "debt payoff strategy", "50 30 20 rule", "retirement budget", "how much can i spend in retirement"],
+    "real-estate": ["mortgage payoff calculator", "rental property roi", "should i refinance", "closing costs explained", "arm vs fixed rate mortgage", "brrrr method", "house hacking", "how to evict squatters"],
+    "tax-estate": ["estate planning basics", "how does probate work", "tax deductions checklist", "trust vs will", "0 capital gains bracket", "hsa triple tax advantage", "how to appeal property taxes"],
     "net-worth": ["how to calculate net worth", "average net worth by age", "net worth milestones"],
 }
 

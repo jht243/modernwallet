@@ -1,0 +1,50 @@
+{
+ "budget": {
+  "count": 14,
+  "examples": [
+   "Far too often, the regrets people actually have have nothing to do with finances and how much money they didn't spend, the bonuses they didn't receive.",
+   "Or if you do not want to sacrifice, how much you're spending?",
+   "And if you spend your retirement years too afraid to spend this, what's going to suffer isn't your portfolio."
+  ]
+ },
+ "retirement": {
+  "count": 14,
+  "examples": [
+   "There's a growing number of retirees who are experiencing depression, anxiety, stress-related, chronic health conditions and we don't think of that in retirement.",
+   "But I was always confused why people wouldn't retire.",
+   "The net flows is telling us how much of this, how much of this expense that we're going to incur, needs to be funded from our retirement portfolio."
+  ]
+ },
+ "investing": {
+  "count": 21,
+  "examples": [
+   "The net flows is telling us how much of this, how much of this expense that we're going to incur, needs to be funded from our retirement portfolio.",
+   "How do I allocate my portfolio?",
+   "And if you spend your retirement years too afraid to spend this, what's going to suffer isn't your portfolio."
+  ]
+ },
+ "real-estate": {
+  "count": 11,
+  "examples": [
+   "We do the same with property taxes because, depending upon the county you're in, there might be a limit on how much property taxes can increase or how much we want to project it.",
+   "Why do I have to pay property taxes?",
+   "00:10:14 Suze: Those of you who want to buy, prices are too high, mortgages are too high, so you don't know what to do."
+  ]
+ },
+ "tax-estate": {
+  "count": 12,
+  "examples": [
+   "We do the same with property taxes because, depending upon the county you're in, there might be a limit on how much property taxes can increase or how much we want to project it.",
+   "Let's figure out how to use these in the most tax-sufficient way.",
+   "Why do I have to pay property taxes?"
+  ]
+ },
+ "net-worth": {
+  "count": 7,
+  "examples": [
+   "I don't know where to start on how to get my finances back on track.",
+   "So it's like the Wild West still, and people think, \"Oh no, we've got this all figured out.\" With all of our other asset classes, we have 100, 150 years of back-tested data.",
+   "All of these are pieces of your income portfolio, but how much work you have to do with the assets you've accumulated."
+  ]
+ }
+}
