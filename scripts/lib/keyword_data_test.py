@@ -58,4 +58,41 @@ class ExpansionTests(unittest.TestCase):
             self.assertEqual({f: k.field_provider(f) for f in ('volume', 'kd', 'expand')}, {'volume': 'semrush', 'kd': 'semrush', 'expand': 'semrush'})
     def test_empty_sources(self): self.assertEqual(self.expand([], []), [])
 
+class CostTests(unittest.TestCase):
+    def test_semrush_volumes_is_one_phrase_these_call(self):
+        csv_rows = [{'Keyword': 'kobo vs nook', 'Search Volume': '260', 'CPC': '0.5', 'Keyword Difficulty Index': '16'}]
+        with patch.object(k, '_semrush_csv', return_value=csv_rows) as api:
+            r = k._semrush_volumes(['kobo vs nook'], 'us')
+        self.assertEqual([c.args[0]['type'] for c in api.call_args_list], ['phrase_these'])
+        self.assertEqual((r['kobo vs nook']['volume'], r['kobo vs nook']['kd']), (260, '16'))
+
+    def volumes(self, cached, fetched):
+        fetch = patch.object(k, '_fetch_volumes', return_value=fetched)
+        with patch.object(k, '_cache_get', return_value=cached), patch.object(k, '_cache_put') as put, \
+             fetch as paid, patch.object(k, 'field_provider', return_value='semrush'), \
+             patch.dict(k._FIELD_PROVIDER, {'volume': 'semrush'}), patch.object(k, '_enrich_rows'), \
+             patch.object(k, '_estimate_volumes', return_value={}):
+            return k.volumes(['a', 'b', 'c']), paid, put
+
+    def test_cache_hits_are_not_bought_again(self):
+        hit = {'keyword': 'a', 'volume': 50, 'kd': 10, 'source': 'semrush', 'kd_source': 'semrush'}
+        got = {'b': {'keyword': 'b', 'volume': 70, 'kd': 5, 'source': 'semrush'}}
+        out, paid, put = self.volumes({'a': hit, 'c': None}, got)
+        self.assertEqual(paid.call_args.args[1], ['b'])          # only the miss is bought
+        self.assertEqual(out['a']['volume'], 50); self.assertNotIn('c', out)
+        self.assertEqual(put.call_args.args[1], [])               # b answered, nothing new to mark empty
+
+    def test_full_cache_hit_makes_no_paid_call(self):
+        rows = {x: {'keyword': x, 'volume': 1, 'kd': 1, 'source': 'semrush', 'kd_source': 'semrush'} for x in 'abc'}
+        out, paid, put = self.volumes(rows, {})
+        paid.assert_not_called(); put.assert_not_called(); self.assertEqual(len(out), 3)
+
+    def test_misses_without_data_are_cached_empty(self):
+        out, paid, put = self.volumes({}, {'a': {'keyword': 'a', 'volume': 9, 'kd': 1, 'source': 'semrush'}})
+        self.assertEqual(sorted(put.call_args.args[1]), ['b', 'c']); self.assertEqual(put.call_args.args[2], 'semrush')
+
+    def test_cache_off_without_flag(self):
+        with patch.dict(k.os.environ, {'KEYWORD_CACHE': '0'}):
+            self.assertEqual(k._cache_get(['a'], 'us'), {})
+
 if __name__ == '__main__': unittest.main()

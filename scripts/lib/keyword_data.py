@@ -76,6 +76,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import datetime as _dt
 import json
 import os
 import sys
@@ -303,25 +304,20 @@ def _semrush_dead(err: str) -> bool:
 
 
 def _semrush_volumes(phrases: list[str], database: str) -> dict[str, dict]:
+    """Volume/CPC/KD from phrase_these alone.
+
+    Measured 2026-11-03: phrase_these with the Kd column costs 10 units per
+    returned row and gives the SAME KD as phrase_kdi, which costs 50 units per
+    row. The second call used to buy every KD twice (~83% of the units).
+    """
     out: dict[str, dict] = {}
     for i in range(0, len(phrases), 100):
-        chunk = phrases[i:i + 100]
-        these = _semrush_csv({"type": "phrase_these", "database": database,
-                              "phrase": ";".join(chunk),
-                              "export_columns": "Ph,Nq,Cp,Co,Kd"})
-        kdi = {}
-        try:
-            for r in _semrush_csv({"type": "phrase_kdi", "database": database,
-                                   "phrase": ";".join(chunk),
-                                   "export_columns": "Ph,Kd"}):
-                kdi[r.get("Keyword", "").lower()] = r.get("Keyword Difficulty Index", "")
-        except RuntimeError:
-            pass  # difficulty is a nice-to-have; volume already landed
-        for r in these:
-            k = r.get("Keyword", "").lower()
-            out[k] = _row(r.get("Keyword", ""), _num(r.get("Search Volume")),
-                          kdi.get(k) or r.get("Keyword Difficulty Index", ""),
-                          r.get("CPC", ""), "semrush", "high")
+        for r in _semrush_csv({"type": "phrase_these", "database": database,
+                               "phrase": ";".join(phrases[i:i + 100]),
+                               "export_columns": "Ph,Nq,Cp,Co,Kd"}):
+            out[r.get("Keyword", "").lower()] = _row(
+                r.get("Keyword", ""), _num(r.get("Search Volume")),
+                r.get("Keyword Difficulty Index", ""), r.get("CPC", ""), "semrush", "high")
     return out
 
 
@@ -621,8 +617,9 @@ def _fetch_kd(name: str, phrases: list[str], database: str) -> dict[str, int]:
     if name == "dataforseo":
         return _dfs.keyword_difficulty(phrases, database) if _dfs else {}
     if name == "semrush":
+        # phrase_these, not phrase_kdi: same KD at 10 units/row instead of 50.
         for i in range(0, len(phrases), 100):
-            for r in _semrush_csv({"type": "phrase_kdi", "database": database,
+            for r in _semrush_csv({"type": "phrase_these", "database": database,
                                    "phrase": ";".join(phrases[i:i + 100]),
                                    "export_columns": "Ph,Kd"}):
                 kd = r.get("Keyword Difficulty Index", "")
@@ -680,6 +677,77 @@ def _enrich_rows(rows: dict[str, dict], gl: str = "us") -> None:
 
 
 # --------------------------------------------------------------------------
+# Shared 30-day cache (Supabase keyword_cache) — every provider, every repo
+# --------------------------------------------------------------------------
+# Monthly volumes do not move inside a month, so a phrase one routine already
+# paid for is reused by every other routine and site instead of bought again.
+# Needs SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY (resolved like every other
+# key); without them, or with KEYWORD_CACHE=0, it fails open and buys as before.
+
+CACHE_DAYS = 30
+_CACHE_SOURCES = ("semrush", "dataforseo", "ahrefs")
+
+
+def _cache_on() -> bool:
+    return (bool(_dfs) and hasattr(_dfs, "_sb_req")
+            and os.environ.get("KEYWORD_CACHE", "").strip() != "0")
+
+
+def _cache_get(phrases: list[str], database: str) -> dict[str, dict | None]:
+    """Fresh cached rows keyed by lowercase phrase; None = provider had no data.
+    Only rows from a provider this run may use are returned."""
+    if not _cache_on():
+        return {}
+    allowed = set(_order("volume"))
+    since = (_dt.datetime.now(_dt.timezone.utc) - _dt.timedelta(days=CACHE_DAYS)).isoformat()
+    keys = [p.lower() for p in phrases]
+    found: dict[str, dict | None] = {}
+    for i in range(0, len(keys), 60):
+        quoted = ",".join('"' + k.replace('"', "").replace("\\", "") + '"' for k in keys[i:i + 60])
+        rows = _dfs._sb_req("GET", "keyword_cache?select=keyword,volume,kd,cpc,source"
+                                   f"&database=eq.{urllib.parse.quote(database)}"
+                                   f"&fetched_at=gte.{urllib.parse.quote(since)}"
+                                   f"&keyword=in.({urllib.parse.quote(quoted)})")
+        if rows is None:
+            return found
+        for r in rows:
+            if r.get("source") not in allowed:
+                continue
+            k = (r.get("keyword") or "").lower()
+            if r.get("volume") is None:
+                found[k] = None
+                continue
+            row = _row(r["keyword"], _num(r["volume"]),
+                       "" if r.get("kd") is None else _num(r["kd"]),
+                       "" if r.get("cpc") is None else r["cpc"], r["source"], "high")
+            row["kd_source"] = r["source"]
+            found[k] = row
+    return found
+
+
+def _cache_put(rows: list[dict], no_data: list[str], source: str, database: str) -> None:
+    if not _cache_on() or source not in _CACHE_SOURCES:
+        return
+    now = _dt.datetime.now(_dt.timezone.utc).isoformat()
+    body = []
+    for r in rows:
+        if r.get("source") != source or not r.get("keyword"):
+            continue
+        same_kd = r.get("kd_source", source) == source and r.get("kd") not in ("", None)
+        cpc = r.get("cpc")
+        body.append({"keyword": r["keyword"].lower(), "database": database,
+                     "volume": _num(r.get("volume")),
+                     "kd": _num(r["kd"]) if same_kd else None,
+                     "cpc": None if cpc in ("", None) else _num(cpc, float),
+                     "source": source, "fetched_at": now})
+    body += [{"keyword": p.lower(), "database": database, "volume": None, "kd": None,
+              "cpc": None, "source": source, "fetched_at": now} for p in no_data]
+    for i in range(0, len(body), 500):
+        _dfs._sb_req("POST", "keyword_cache?on_conflict=keyword,database", body[i:i + 500],
+                     prefer="resolution=merge-duplicates,return=minimal")
+
+
+# --------------------------------------------------------------------------
 # Public API
 # --------------------------------------------------------------------------
 
@@ -732,31 +800,45 @@ def volumes(phrases, database: str = "us", allow_estimate: bool = True) -> dict[
         return {}
     out: dict[str, dict] = {}
 
+    # --- shared cache first: a phrase any routine bought this month is free --
+    cached = _cache_get(phrases, database)
+    out.update({k: r for k, r in cached.items() if r is not None})
+    todo = [p for p in phrases if p.lower() not in cached]
+    if cached:
+        _note(f"keyword_cache: {len(cached)}/{len(phrases)} phrases reused "
+              f"(<{CACHE_DAYS}d old), {len(todo)} bought")
+
     # --- volume: one provider for the whole run ---------------------------
-    while True:
+    fresh: dict[str, dict] = {}
+    fetched_by = None
+    while todo:
         vp = field_provider("volume", database)
         if not vp:
             break
         try:
-            out.update(_fetch_volumes(vp, phrases, database))
-            _note(f"{vp} returned volume for {len(out)}/{len(phrases)} phrases")
+            fresh = _fetch_volumes(vp, todo, database)
+            fetched_by = vp
+            _note(f"{vp} returned volume for {len(fresh)}/{len(todo)} phrases")
             break
         except Exception as e:
             _died(vp, e)
             if vp not in _DEAD:      # transient, not worth another rung
                 break
-    for r in out.values():
+    for r in fresh.values():
         r["kd_source"] = r.get("source", "")
+    out.update(fresh)
 
     # --- kd: its own ladder; only overwrite when a better source answers --
-    kp = field_provider("kd", database)
-    if kp and out:
+    need_kd = {k: r for k, r in out.items()
+               if k in fresh or r.get("kd") in ("", None)}
+    kp = field_provider("kd", database) if need_kd else None
+    if kp:
         vp_now = _FIELD_PROVIDER.get("volume")
-        if kp != vp_now or not any(r.get("kd") not in ("", None) for r in out.values()):
+        if kp != vp_now or not any(r.get("kd") not in ("", None) for r in need_kd.values()):
             try:
-                kd = _fetch_kd(kp, [r["keyword"] for r in out.values()], database)
+                kd = _fetch_kd(kp, [r["keyword"] for r in need_kd.values()], database)
                 hits = 0
-                for k, r in out.items():
+                for k, r in need_kd.items():
                     if k in kd:
                         r["kd"], r["kd_source"], hits = kd[k], kp, hits + 1
                 if hits:
@@ -765,6 +847,10 @@ def volumes(phrases, database: str = "us", allow_estimate: bool = True) -> dict[
             except Exception as e:
                 _died(kp, e)
                 _note("KD unavailable — rows keep whatever KD the volume provider gave")
+
+    if fetched_by:
+        _cache_put(list(fresh.values()), [p for p in todo if p.lower() not in fresh],
+                   fetched_by, database)
 
     # --- phrases nobody had: autocomplete band, clearly labelled ----------
     pending = [p for p in phrases if p.lower() not in out]
