@@ -1,0 +1,449 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-11-03",
+  "window_start": "2026-10-07",
+  "window_end": "2026-11-03",
+  "window_days": 28,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 1185,
+      "sessions": 1228,
+      "active_users": 1061,
+      "clicks": 1185,
+      "avg_eng_s": 50.9,
+      "engagement_rate": 0.5879,
+      "bounce_rate": 0.4121,
+      "scrolled_users": 51,
+      "scrolled_pct": 0.0481
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 1030,
+      "sessions": 1044,
+      "active_users": 877,
+      "clicks": 1030,
+      "avg_eng_s": 111.8,
+      "engagement_rate": 0.6293,
+      "bounce_rate": 0.3707,
+      "scrolled_users": 21,
+      "scrolled_pct": 0.0239
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 844,
+      "sessions": 809,
+      "active_users": 643,
+      "clicks": 844,
+      "avg_eng_s": 79.8,
+      "engagement_rate": 0.5649,
+      "bounce_rate": 0.4351,
+      "scrolled_users": 19,
+      "scrolled_pct": 0.0295
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 683,
+      "sessions": 734,
+      "active_users": 583,
+      "clicks": 683,
+      "avg_eng_s": 179.9,
+      "engagement_rate": 0.5668,
+      "bounce_rate": 0.4332,
+      "scrolled_users": 46,
+      "scrolled_pct": 0.0789
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 559,
+      "sessions": 582,
+      "active_users": 462,
+      "clicks": 559,
+      "avg_eng_s": 124.1,
+      "engagement_rate": 0.5464,
+      "bounce_rate": 0.4536,
+      "scrolled_users": 16,
+      "scrolled_pct": 0.0346
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 545,
+      "sessions": 531,
+      "active_users": 473,
+      "clicks": 545,
+      "avg_eng_s": 91.9,
+      "engagement_rate": 0.6271,
+      "bounce_rate": 0.3729,
+      "scrolled_users": 17,
+      "scrolled_pct": 0.0359
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 353,
+      "sessions": 332,
+      "active_users": 305,
+      "clicks": 353,
+      "avg_eng_s": 115.2,
+      "engagement_rate": 0.741,
+      "bounce_rate": 0.259,
+      "scrolled_users": 11,
+      "scrolled_pct": 0.0361
+    },
+    {
+      "page": "/",
+      "views": 323,
+      "sessions": 295,
+      "active_users": 279,
+      "clicks": 323,
+      "avg_eng_s": 17.3,
+      "engagement_rate": 0.4034,
+      "bounce_rate": 0.5966,
+      "scrolled_users": 29,
+      "scrolled_pct": 0.1039
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 306,
+      "sessions": 302,
+      "active_users": 234,
+      "clicks": 306,
+      "avg_eng_s": 91.1,
+      "engagement_rate": 0.5828,
+      "bounce_rate": 0.4172,
+      "scrolled_users": 17,
+      "scrolled_pct": 0.0726
+    },
+    {
+      "page": "/guides/trump-account-scams/",
+      "views": 270,
+      "sessions": 263,
+      "active_users": 228,
+      "clicks": 270,
+      "avg_eng_s": 64.5,
+      "engagement_rate": 0.6616,
+      "bounce_rate": 0.3384
+    },
+    {
+      "page": "/guides/trump-account-rules/",
+      "views": 260,
+      "sessions": 243,
+      "active_users": 214,
+      "clicks": 260,
+      "avg_eng_s": 101.3,
+      "engagement_rate": 0.6667,
+      "bounce_rate": 0.3333,
+      "scrolled_users": 6,
+      "scrolled_pct": 0.028
+    },
+    {
+      "page": "/guides/social-security-changes-2027/",
+      "views": 193,
+      "sessions": 184,
+      "active_users": 156,
+      "clicks": 193,
+      "avg_eng_s": 93.0,
+      "engagement_rate": 0.6902,
+      "bounce_rate": 0.3098,
+      "scrolled_users": 7,
+      "scrolled_pct": 0.0449
+    },
+    {
+      "page": "/trump-account/",
+      "views": 188,
+      "sessions": 177,
+      "active_users": 149,
+      "clicks": 188,
+      "avg_eng_s": 82.7,
+      "engagement_rate": 0.7119,
+      "bounce_rate": 0.2881,
+      "scrolled_users": 34,
+      "scrolled_pct": 0.2282
+    },
+    {
+      "page": "/guides/senior-deduction-social-security/",
+      "views": 152,
+      "sessions": 157,
+      "active_users": 133,
+      "clicks": 152,
+      "avg_eng_s": 105.2,
+      "engagement_rate": 0.6688,
+      "bounce_rate": 0.3312
+    },
+    {
+      "page": "/roundup/best-401k-providers-for-small-business/",
+      "views": 149,
+      "sessions": 148,
+      "active_users": 142,
+      "clicks": 149,
+      "avg_eng_s": 23.3,
+      "engagement_rate": 0.1689,
+      "bounce_rate": 0.8311,
+      "scrolled_users": 5,
+      "scrolled_pct": 0.0352
+    },
+    {
+      "page": "/guides/how-to-claim-a-trump-account/",
+      "views": 143,
+      "sessions": 138,
+      "active_users": 105,
+      "clicks": 143,
+      "avg_eng_s": 130.0,
+      "engagement_rate": 0.7536,
+      "bounce_rate": 0.2464,
+      "scrolled_users": 4,
+      "scrolled_pct": 0.0381
+    },
+    {
+      "page": "/roundup/best-money-market-accounts/",
+      "views": 141,
+      "sessions": 137,
+      "active_users": 130,
+      "clicks": 141,
+      "avg_eng_s": 64.2,
+      "engagement_rate": 0.6204,
+      "bounce_rate": 0.3796
+    },
+    {
+      "page": "/sponsor",
+      "views": 135,
+      "sessions": 135,
+      "active_users": 135,
+      "clicks": 135,
+      "avg_eng_s": 2.2,
+      "engagement_rate": 0.0593,
+      "bounce_rate": 0.9407,
+      "scrolled_users": 11,
+      "scrolled_pct": 0.0815
+    },
+    {
+      "page": "/roundup/best-brokers-for-treasury-bonds/",
+      "views": 134,
+      "sessions": 136,
+      "active_users": 108,
+      "clicks": 134,
+      "avg_eng_s": 149.3,
+      "engagement_rate": 0.4853,
+      "bounce_rate": 0.5147,
+      "scrolled_users": 6,
+      "scrolled_pct": 0.0556
+    },
+    {
+      "page": "/retirement/social-security-retirement-calculator/",
+      "views": 127,
+      "sessions": 119,
+      "active_users": 112,
+      "clicks": 127,
+      "avg_eng_s": 71.3,
+      "engagement_rate": 0.8992,
+      "bounce_rate": 0.1008,
+      "scrolled_users": 33,
+      "scrolled_pct": 0.2946
+    },
+    {
+      "page": "/guides/high-yield-savings-account-for-kids-and-teens/",
+      "views": 113,
+      "sessions": 107,
+      "active_users": 102,
+      "clicks": 113,
+      "avg_eng_s": 50.1,
+      "engagement_rate": 0.7664,
+      "bounce_rate": 0.2336,
+      "scrolled_users": 4,
+      "scrolled_pct": 0.0392
+    },
+    {
+      "page": "/guides/are-church-donations-tax-deductible/",
+      "views": 110,
+      "sessions": 103,
+      "active_users": 95,
+      "clicks": 110,
+      "avg_eng_s": 168.6,
+      "engagement_rate": 0.7087,
+      "bounce_rate": 0.2913
+    },
+    {
+      "page": "/guides/trump-accounts/",
+      "views": 105,
+      "sessions": 97,
+      "active_users": 91,
+      "clicks": 105,
+      "avg_eng_s": 54.8,
+      "engagement_rate": 0.5773,
+      "bounce_rate": 0.4227,
+      "scrolled_users": 4,
+      "scrolled_pct": 0.044
+    },
+    {
+      "page": "/guides/social-security-survivor-benefits-and-working/",
+      "views": 100,
+      "sessions": 101,
+      "active_users": 76,
+      "clicks": 100,
+      "avg_eng_s": 117.5,
+      "engagement_rate": 0.604,
+      "bounce_rate": 0.396
+    },
+    {
+      "page": "/investing/withdrawal-calculator/",
+      "views": 94,
+      "sessions": 86,
+      "active_users": 74,
+      "clicks": 94,
+      "avg_eng_s": 127.5,
+      "engagement_rate": 0.7442,
+      "bounce_rate": 0.2558,
+      "scrolled_users": 4,
+      "scrolled_pct": 0.0541
+    }
+  ],
+  "top10_pages_total_views": 8242,
+  "top10_pages_total_clicks": 8242,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 1190,
+      "Direct": 34,
+      "Unassigned": 14,
+      "Referral": 2
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 1010,
+      "Direct": 29,
+      "Referral": 4,
+      "Unassigned": 3,
+      "AI Assistant": 1
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 705,
+      "Direct": 25,
+      "Unassigned": 4,
+      "AI Assistant": 3
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 661,
+      "Direct": 125,
+      "Unassigned": 13,
+      "Referral": 12,
+      "Organic Social": 4
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 512,
+      "Direct": 54,
+      "Organic Social": 13,
+      "Unassigned": 2,
+      "AI Assistant": 1,
+      "Referral": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 478,
+      "Organic Social": 35,
+      "Direct": 17,
+      "Referral": 1
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 322,
+      "Direct": 10
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 296,
+      "Unassigned": 5,
+      "Direct": 3,
+      "AI Assistant": 1,
+      "Referral": 1
+    },
+    "/guides/trump-account-scams/": {
+      "Organic Search": 236,
+      "Direct": 24,
+      "AI Assistant": 2,
+      "Organic Social": 1
+    },
+    "/guides/trump-account-rules/": {
+      "Organic Search": 223,
+      "Direct": 20
+    },
+    "/guides/social-security-changes-2027/": {
+      "Organic Search": 177,
+      "Direct": 5,
+      "Referral": 1,
+      "Unassigned": 1
+    },
+    "/": {
+      "Direct": 168,
+      "Referral": 75,
+      "Organic Search": 49,
+      "Organic Social": 2,
+      "Unassigned": 1
+    },
+    "/guides/senior-deduction-social-security/": {
+      "Organic Search": 145,
+      "Direct": 12
+    },
+    "/trump-account/": {
+      "Organic Search": 141,
+      "Direct": 31,
+      "Unassigned": 3,
+      "Referral": 2
+    },
+    "/sponsor": {
+      "Direct": 128,
+      "Organic Search": 7
+    },
+    "/roundup/best-401k-providers-for-small-business/": {
+      "Direct": 113,
+      "Organic Search": 31,
+      "Referral": 3,
+      "AI Assistant": 1
+    },
+    "/roundup/best-brokers-for-treasury-bonds/": {
+      "Organic Search": 112,
+      "Direct": 21,
+      "Unassigned": 4
+    },
+    "/roundup/best-money-market-accounts/": {
+      "Organic Search": 112,
+      "Direct": 23,
+      "Unassigned": 2,
+      "Referral": 1
+    },
+    "/retirement/social-security-retirement-calculator/": {
+      "Organic Search": 110,
+      "Direct": 7,
+      "Unassigned": 2
+    },
+    "/guides/how-to-claim-a-trump-account/": {
+      "Organic Search": 104,
+      "Direct": 29,
+      "Referral": 2,
+      "Unassigned": 2,
+      "AI Assistant": 1
+    },
+    "/guides/high-yield-savings-account-for-kids-and-teens/": {
+      "Organic Search": 101,
+      "Direct": 3,
+      "Unassigned": 2,
+      "Referral": 1
+    },
+    "/guides/are-church-donations-tax-deductible/": {
+      "Organic Search": 99,
+      "Direct": 4
+    },
+    "/guides/social-security-survivor-benefits-and-working/": {
+      "Organic Search": 94,
+      "Direct": 5,
+      "AI Assistant": 2,
+      "Unassigned": 2
+    },
+    "/investing/withdrawal-calculator/": {
+      "Organic Search": 76,
+      "Direct": 8,
+      "AI Assistant": 2,
+      "Unassigned": 1
+    },
+    "/guides/trump-accounts/": {
+      "Organic Search": 60,
+      "Direct": 35,
+      "Referral": 1,
+      "Unassigned": 1
+    }
+  }
+}
