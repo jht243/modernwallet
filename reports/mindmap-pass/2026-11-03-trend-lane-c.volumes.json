@@ -1,0 +1,100 @@
+{
+ "rows": [
+  {
+   "keyword": "best trust services",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": "58",
+   "cpc": "5.69",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "living trust services",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": "30",
+   "cpc": "4.08",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "nerdwallet retirement calculator",
+   "volume": 18100,
+   "volume_low": 18100,
+   "volume_high": 18100,
+   "kd": "72",
+   "cpc": "2.51",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "nerdwallet calculator retirement",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": "72",
+   "cpc": "1.6",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "best online trust services",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "0",
+   "cpc": "7.15",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "trust and will vs legalzoom",
+   "volume": 390,
+   "volume_low": 390,
+   "volume_high": 390,
+   "kd": "8",
+   "cpc": "3.99",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using semrush (quality order semrush > dataforseo)",
+  "semrush returned volume for 6/6 phrases",
+  "kd: using semrush (quality order semrush > dataforseo)",
+  "Autocomplete: 6/6 rows corroborated live"
+ ]
+}

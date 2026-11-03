@@ -1,0 +1,187 @@
+{
+ "rows": [
+  {
+   "keyword": "is trust and will legit",
+   "verdict": "contested",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "ryanreiffert.com",
+    "www.trustpilot.com",
+    "www.youtube.com",
+    "www.cnbc.com",
+    "trustandwill.com",
+    "marriagekidsandmoney.com",
+    "www.meetneptune.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.evansdavis.com",
+    "google.com",
+    "trustandwill.com",
+    "www.youtube.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 7,
+    "people_also_ask": 1,
+    "related_searches": 1,
+    "video": 1
+   },
+   "paa": [
+    "Which is better, LegalZoom or trust and will?",
+    "What are the disadvantages of trust?",
+    "What is the best online will and trust maker?",
+    "What are the four things required for a trust to be valid?",
+    "What should you not put in a trust?",
+    "How much does it usually cost to set up a trust?"
+   ],
+   "related_searches": [
+    "Is trust and will legit reddit",
+    "Trust and will vs LegalZoom",
+    "Who needs a trust instead of a will",
+    "What are the negatives to a trust vs will",
+    "Will vs trust chart",
+    "Trust and Will promo code",
+    "Cost of a trust vs will",
+    "Tax benefits of trust vs will"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "4/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites ryanreiffert.com, www.trustpilot.com, www.youtube.com, www.cnbc.com",
+   "se_results_count": 130
+  },
+  {
+   "keyword": "trust and will vs legalzoom",
+   "verdict": "contested",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.linkedin.com",
+    "www.reddit.com",
+    "ailawyer.pro",
+    "www.youtube.com",
+    "www.legalzoom.com",
+    "www.ncoa.org",
+    "www.facebook.com",
+    "markmlegal.com",
+    "livingtrust-attorneys.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.legalzoom.com",
+    "simplytrust.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 7,
+    "people_also_ask": 1,
+    "people_also_search": 1,
+    "related_searches": 1,
+    "video": 1
+   },
+   "paa": [
+    "Which is better, LegalZoom or trust and will?",
+    "What is the best online will and trust maker?",
+    "Is LegalZoom a legitimate company?",
+    "What is the cheapest way to do a living trust?",
+    "What are five things that should not be placed in a trust?",
+    "Is there a monthly fee for having a trust?"
+   ],
+   "related_searches": [
+    "Trust and will vs legalzoom reviews",
+    "Trust and will vs legalzoom reddit",
+    "Trust and will vs legalzoom cost",
+    "Trust and will vs legalzoom california",
+    "LegalZoom will reviews",
+    "LegalZoom living trust reviews",
+    "LegalZoom will cost",
+    "LegalZoom trust cost"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "5/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.linkedin.com, www.reddit.com, ailawyer.pro, www.youtube.com",
+   "se_results_count": 108
+  },
+  {
+   "keyword": "most accurate retirement calculator",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.financialmentor.com",
+    "investor.vanguard.com",
+    "www.schwab.com",
+    "www.youtube.com",
+    "www.investor.gov",
+    "www.nerdwallet.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.whitecoatinvestor.com",
+    "bogartwealth.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.theretirementmanifesto.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "related_searches": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "Most accurate retirement calculator fidelity",
+    "Realistic retirement calculator",
+    "Simple retirement calculator",
+    "NerdWallet retirement calculator",
+    "Retirement calculator 401k",
+    "Investor gov retirement Calculator",
+    "AARP retirement Calculator",
+    "Best retirement calculator with pension and Social Security"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "6/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.financialmentor.com, investor.vanguard.com, www.schwab.com, www.youtube.com",
+   "se_results_count": 135
+  }
+ ],
+ "cost": "DataForSEO: 3 calls, $0.00630 of $2.00 budget"
+}

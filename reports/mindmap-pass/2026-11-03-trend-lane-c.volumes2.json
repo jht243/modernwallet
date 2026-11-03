@@ -1,0 +1,131 @@
+{
+ "rows": [
+  {
+   "keyword": "why do retirement calculators vary so much",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 0,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "which retirement calculator is most accurate",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "most accurate retirement calculator",
+   "volume": 170,
+   "volume_low": 170,
+   "volume_high": 170,
+   "kd": "55",
+   "cpc": "1.46",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "do retirement calculators account for inflation",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "trust and will review",
+   "volume": 260,
+   "volume_low": 260,
+   "volume_high": 260,
+   "kd": "17",
+   "cpc": "2.98",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "is trust and will legit",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": "20",
+   "cpc": "2.16",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "trust and will vs legalzoom",
+   "volume": 390,
+   "volume_low": 390,
+   "volume_high": 390,
+   "kd": "8",
+   "cpc": "3.99",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "retirement calculator accuracy",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": false
+   }
+  }
+ ],
+ "notes": [
+  "volume: using semrush (quality order semrush > dataforseo)",
+  "semrush returned volume for 7/8 phrases",
+  "kd: using semrush (quality order semrush > dataforseo)",
+  "No tool volume for 1 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 7/8 rows corroborated live"
+ ]
+}
