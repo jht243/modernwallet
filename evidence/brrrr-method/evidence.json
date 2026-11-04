@@ -6,9 +6,9 @@
   "author": "root-orchestrator",
   "caseSelection": {
     "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/evidence/brrrr-method/cases.json",
-    "sha256": "8c21386334ce107ba3737061ea3778b8d6f394d0a1195b95eb71eb35d43c5aa7"
+    "sha256": "b509915081618233d42528e8c954a334220b456d01207300fbc3b2b5b025e4be"
   },
-  "caseDecisions": "All 8 retrieved approved-case candidates (client-professional-bowlers-association-pba, owned-property-drones-defense, owned-property-diy-repair-guide, testimonial-gamestation, client-bowlero-corporation, client-horizen-labs, client-multiple-hoa-and-condo-boards-across-the-usa, client-multiple-law-firms) are Layer3Labs-owned properties, testimonials or clients on unrelated topics that matched only on generic words; none concerns this topic. This site's _experience.md lists no named-client claims. All rejected; no client mention is forced.",
+  "caseDecisions": "All 8 retrieved approved-case candidates (client-professional-bowlers-association-pba, owned-property-drones-defense, owned-property-diy-repair-guide, testimonial-gamestation, client-bowlero-corporation, client-horizen-labs, client-metaking-studios-and-heromaker-studios, client-multiple-hoa-and-condo-boards-across-the-usa) are Layer3Labs-owned properties, testimonials or clients on unrelated topics that matched only on generic words; none concerns this topic. This site's _experience.md lists no named-client claims. All rejected; no client mention is forced.",
   "testingLabel": "ordinary presentation (TESTED excluded: personal-finance, tax and lending topics are financial services outside _experience.md section G; no executed product tests exist)",
   "exclusions": [
     "No TESTED format, no 'we tested' claims.",

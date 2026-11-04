@@ -6,9 +6,9 @@
   "author": "root-orchestrator",
   "caseSelection": {
     "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/evidence/tax-loss-harvesting/cases.json",
-    "sha256": "398794689699d85552d544d1e65405f42d346030974b33566db99c1bd3913df8"
+    "sha256": "22bef08964d625a2508757bc959e7abba18fca90688dd2d59532d91b8a9b20d1"
   },
-  "caseDecisions": "All 8 retrieved approved-case candidates (testimonial-gamestation, owned-property-drones-defense, owned-property-medical-frontier, owned-property-diy-repair-guide, owned-property-new-parent-picks, client-bowlero-corporation, client-professional-bowlers-association-pba, client-game-station) are Layer3Labs-owned properties, testimonials or clients on unrelated topics that matched only on generic words; none concerns this topic. This site's _experience.md lists no named-client claims. All rejected; no client mention is forced.",
+  "caseDecisions": "All 8 retrieved approved-case candidates (client-professional-bowlers-association-pba, owned-property-drones-defense, owned-property-new-parent-picks, owned-property-orbitalintel, owned-property-diy-repair-guide, testimonial-gamestation, client-bowlero-corporation, client-pipeflare-gaming) are Layer3Labs-owned properties, testimonials or clients on unrelated topics that matched only on generic words; none concerns this topic. This site's _experience.md lists no named-client claims. All rejected; no client mention is forced.",
   "testingLabel": "ordinary presentation (TESTED excluded: personal-finance, tax and lending topics are financial services outside _experience.md section G; no executed product tests exist)",
   "exclusions": [
     "No TESTED format, no 'we tested' claims.",

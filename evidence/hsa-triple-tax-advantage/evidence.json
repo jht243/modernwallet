@@ -6,9 +6,9 @@
   "author": "root-orchestrator",
   "caseSelection": {
     "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/evidence/hsa-triple-tax-advantage/cases.json",
-    "sha256": "02d16d30be8bf9ea859469f416044320c63087f2108fdb63523b5cf260f5a02a"
+    "sha256": "76501f9eeb96badc6fe21f30ed9640f5a1098784e3b6c4c615e6d9c3eabacc90"
   },
-  "caseDecisions": "All 8 retrieved approved-case candidates (owned-property-the-indoor-report, owned-property-diy-repair-guide, client-bowlero-corporation, client-professional-bowlers-association-pba, client-horizen-labs, client-multiple-hoa-and-condo-boards-across-the-usa, client-multiple-law-firms, owned-property-cuban-insights) are Layer3Labs-owned properties, testimonials or clients on unrelated topics that matched only on generic words; none concerns this topic. This site's _experience.md lists no named-client claims. All rejected; no client mention is forced.",
+  "caseDecisions": "All 8 retrieved approved-case candidates (owned-property-the-indoor-report, client-professional-bowlers-association-pba, owned-property-orbitalintel, owned-property-diy-repair-guide, client-bowlero-corporation, client-horizen-labs, client-multiple-hoa-and-condo-boards-across-the-usa, client-multiple-law-firms) are Layer3Labs-owned properties, testimonials or clients on unrelated topics that matched only on generic words; none concerns this topic. This site's _experience.md lists no named-client claims. All rejected; no client mention is forced.",
   "testingLabel": "ordinary presentation (TESTED excluded: personal-finance, tax and lending topics are financial services outside _experience.md section G; no executed product tests exist)",
   "exclusions": [
     "No TESTED format, no 'we tested' claims.",

@@ -160,7 +160,7 @@
         },
         {
           "path": "evidence/tax-loss-harvesting/evidence.json",
-          "sha256": "67b4e55fd5779c9cae2051b0644b18fade506b9960dbf42bd3e94f4ae9cf4041"
+          "sha256": "202b9521c03e446fd2a3e44fe5e4aad6ffec7c9720bc2893b9c8085fa7e63dc6"
         },
         {
           "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/volumes.json",
@@ -184,7 +184,7 @@
         },
         {
           "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/evidence/tax-loss-harvesting/cases.json",
-          "sha256": "398794689699d85552d544d1e65405f42d346030974b33566db99c1bd3913df8"
+          "sha256": "22bef08964d625a2508757bc959e7abba18fca90688dd2d59532d91b8a9b20d1"
         },
         {
           "path": "evidence/tax-loss-harvesting/run.py",
@@ -307,7 +307,7 @@
         },
         {
           "path": "evidence/hsa-triple-tax-advantage/evidence.json",
-          "sha256": "f0fe34ebac0a9a8279ca16a82d5251527505fa9748f2d83f93e7ab684b5ca883"
+          "sha256": "550188212f4957da5a31b2387a80bcdf27b5c7e98035b56982aefa899d199777"
         },
         {
           "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/volumes.json",
@@ -331,7 +331,7 @@
         },
         {
           "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/evidence/hsa-triple-tax-advantage/cases.json",
-          "sha256": "02d16d30be8bf9ea859469f416044320c63087f2108fdb63523b5cf260f5a02a"
+          "sha256": "76501f9eeb96badc6fe21f30ed9640f5a1098784e3b6c4c615e6d9c3eabacc90"
         }
       ]
     },
@@ -442,7 +442,7 @@
         },
         {
           "path": "evidence/brrrr-method/evidence.json",
-          "sha256": "c1f9520beabefb36b1a22ace9bbb7fd901cdd3d862b54bfcf99438a9098d3955"
+          "sha256": "7ffa63d96929da318354cba272996d049890bdabf5225f070f321a08d363559e"
         },
         {
           "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/volumes.json",
@@ -466,7 +466,7 @@
         },
         {
           "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/evidence/brrrr-method/cases.json",
-          "sha256": "8c21386334ce107ba3737061ea3778b8d6f394d0a1195b95eb71eb35d43c5aa7"
+          "sha256": "b509915081618233d42528e8c954a334220b456d01207300fbc3b2b5b025e4be"
         },
         {
           "path": "evidence/brrrr-method/run.py",
@@ -497,7 +497,7 @@
     },
     {
       "path": "evidence/tax-loss-harvesting/evidence.json",
-      "sha256": "67b4e55fd5779c9cae2051b0644b18fade506b9960dbf42bd3e94f4ae9cf4041"
+      "sha256": "202b9521c03e446fd2a3e44fe5e4aad6ffec7c9720bc2893b9c8085fa7e63dc6"
     },
     {
       "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/volumes.json",
@@ -521,7 +521,7 @@
     },
     {
       "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/evidence/tax-loss-harvesting/cases.json",
-      "sha256": "398794689699d85552d544d1e65405f42d346030974b33566db99c1bd3913df8"
+      "sha256": "22bef08964d625a2508757bc959e7abba18fca90688dd2d59532d91b8a9b20d1"
     },
     {
       "path": "evidence/tax-loss-harvesting/run.py",
@@ -541,7 +541,7 @@
     },
     {
       "path": "evidence/hsa-triple-tax-advantage/evidence.json",
-      "sha256": "f0fe34ebac0a9a8279ca16a82d5251527505fa9748f2d83f93e7ab684b5ca883"
+      "sha256": "550188212f4957da5a31b2387a80bcdf27b5c7e98035b56982aefa899d199777"
     },
     {
       "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/expand.hsa-triple-tax-advantage.json",
@@ -553,7 +553,7 @@
     },
     {
       "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/evidence/hsa-triple-tax-advantage/cases.json",
-      "sha256": "02d16d30be8bf9ea859469f416044320c63087f2108fdb63523b5cf260f5a02a"
+      "sha256": "76501f9eeb96badc6fe21f30ed9640f5a1098784e3b6c4c615e6d9c3eabacc90"
     },
     {
       "path": "evidence/brrrr-method/sources.md",
@@ -561,7 +561,7 @@
     },
     {
       "path": "evidence/brrrr-method/evidence.json",
-      "sha256": "c1f9520beabefb36b1a22ace9bbb7fd901cdd3d862b54bfcf99438a9098d3955"
+      "sha256": "7ffa63d96929da318354cba272996d049890bdabf5225f070f321a08d363559e"
     },
     {
       "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/expand.brrrr-method.json",
@@ -573,7 +573,7 @@
     },
     {
       "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/evidence/brrrr-method/cases.json",
-      "sha256": "8c21386334ce107ba3737061ea3778b8d6f394d0a1195b95eb71eb35d43c5aa7"
+      "sha256": "b509915081618233d42528e8c954a334220b456d01207300fbc3b2b5b025e4be"
     },
     {
       "path": "evidence/brrrr-method/run.py",

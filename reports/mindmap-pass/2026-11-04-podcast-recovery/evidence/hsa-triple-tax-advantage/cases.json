@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "query": "What does the HSA triple tax advantage mean and what are the limits?",
+  "query": "What does the HSA triple tax advantage mean, and what are the limits? [PAA 5/6 on-topic (meaning, expire, adult-child, advantages, downside), 1/6 off-topic: Dave Ramsey opinion; ac 14 answerable of 19 question-sweep suggestions: what-is / what-does-it-mean / explained / after-65 shapes]",
   "publisher": "themodernwallet.com",
   "bankSha256": "25605948752b9e0c030e58344dddb8105e9c3459106213447a48c3156e4f1db8",
   "experienceSha256": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
@@ -32,6 +32,62 @@
         "mean",
         "the",
         "what"
+      ],
+      "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
+    },
+    {
+      "record": {
+        "id": "client-professional-bowlers-association-pba",
+        "entity": "Professional Bowlers Association (PBA)",
+        "owner": "Layer3Labs",
+        "relationship": "client",
+        "approvedFacts": [
+          "the same engagement as Bowlero: a digital-ownership, rewards, and gamification program (fan collectibles and loyalty tied to the bowling brand). Either name works when the topic is loyalty, digital ownership, rewards, or gamification for a sports or entertainment brand."
+        ],
+        "quotes": [],
+        "firstPartyPublishers": [
+          "layer3labs.io"
+        ],
+        "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+        "source": {
+          "repository": "jht243/layer3labs",
+          "path": ".claude/commands/_experience.md",
+          "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
+          "publicUrl": "https://www.layer3labs.io/"
+        }
+      },
+      "topicMatches": [
+        "and",
+        "the",
+        "topic"
+      ],
+      "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
+    },
+    {
+      "record": {
+        "id": "owned-property-orbitalintel",
+        "entity": "OrbitalIntel",
+        "owner": "Layer3Labs",
+        "relationship": "owned-property",
+        "approvedFacts": [
+          "A reference on the space economy: launch vehicles, satellites, and military space explained, plus guides to space stocks, ETFs, and IPOs."
+        ],
+        "quotes": [],
+        "firstPartyPublishers": [
+          "layer3labs.io"
+        ],
+        "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
+        "source": {
+          "repository": "jht243/layer3labs",
+          "path": "src/pages/portfolio.tsx",
+          "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
+          "publicUrl": "https://www.layer3labs.io/portfolio"
+        }
+      },
+      "topicMatches": [
+        "and",
+        "explained",
+        "the"
       ],
       "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
     },
@@ -71,33 +127,6 @@
         "relationship": "client",
         "approvedFacts": [
           "digital asset marketplace and platform for the league bowler certification program."
-        ],
-        "quotes": [],
-        "firstPartyPublishers": [
-          "layer3labs.io"
-        ],
-        "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
-        "source": {
-          "repository": "jht243/layer3labs",
-          "path": ".claude/commands/_experience.md",
-          "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
-          "publicUrl": "https://www.layer3labs.io/"
-        }
-      },
-      "topicMatches": [
-        "and",
-        "the"
-      ],
-      "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
-    },
-    {
-      "record": {
-        "id": "client-professional-bowlers-association-pba",
-        "entity": "Professional Bowlers Association (PBA)",
-        "owner": "Layer3Labs",
-        "relationship": "client",
-        "approvedFacts": [
-          "the same engagement as Bowlero: a digital-ownership, rewards, and gamification program (fan collectibles and loyalty tied to the bowling brand). Either name works when the topic is loyalty, digital ownership, rewards, or gamification for a sports or entertainment brand."
         ],
         "quotes": [],
         "firstPartyPublishers": [
@@ -190,33 +219,6 @@
           "path": ".claude/commands/_experience.md",
           "sha256": "47803b94963b2570a041ccfa89248aa3d18f49154bc54dc034de9375a1155684",
           "publicUrl": "https://www.layer3labs.io/"
-        }
-      },
-      "topicMatches": [
-        "and",
-        "the"
-      ],
-      "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
-    },
-    {
-      "record": {
-        "id": "owned-property-cuban-insights",
-        "entity": "Cuban Insights",
-        "owner": "Layer3Labs",
-        "relationship": "owned-property",
-        "approvedFacts": [
-          "Daily Cuba investment briefings tracking OFAC CACR sanctions, Helms-Burton Title III, the Cuba Restricted List, and ongoing economic reforms."
-        ],
-        "quotes": [],
-        "firstPartyPublishers": [
-          "layer3labs.io"
-        ],
-        "publicUse": "Only these approved facts/exact quotes; no inferred outcomes, sample sizes, client measurements or extra history. Other brands must attribute Layer3Labs and apply their own local permission/exclusion rules.",
-        "source": {
-          "repository": "jht243/layer3labs",
-          "path": "src/pages/portfolio.tsx",
-          "sha256": "2e923f194e84fea1f1e9994a12a96a41efde4fe301fdde86e03ce02e042e0be9",
-          "publicUrl": "https://www.layer3labs.io/portfolio"
         }
       },
       "topicMatches": [

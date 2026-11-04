@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "query": "How does the BRRRR method work and when does it stop working?",
+  "query": "How does the BRRRR method work, and when does it stop working? [PAA 6/6 on-topic (cash needed x2, spelling, 2% rule, vs flipping, 70% rule); ac 28 on-topic of 32 question-sweep suggestions: how-does-it-work / how-to-start / is-it-worth-it / does-it-still-work shapes]",
   "publisher": "themodernwallet.com",
   "bankSha256": "25605948752b9e0c030e58344dddb8105e9c3459106213447a48c3156e4f1db8",
   "experienceSha256": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
@@ -30,6 +30,7 @@
       "topicMatches": [
         "and",
         "the",
+        "topic",
         "when"
       ],
       "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
@@ -177,12 +178,12 @@
     },
     {
       "record": {
-        "id": "client-multiple-hoa-and-condo-boards-across-the-usa",
-        "entity": "Multiple HOA and condo boards across the USA",
+        "id": "client-metaking-studios-and-heromaker-studios",
+        "entity": "MetaKing Studios** and **HeroMaker Studios",
         "owner": "Layer3Labs",
         "relationship": "client",
         "approvedFacts": [
-          "HOA and condo governance and operations."
+          "game studios where we used AI to improve marketing, retention, and analytics. Good anchors for game and consumer-app growth, player retention, LTV, and AI-in-marketing topics. Reasonable extrapolation from that scope is fine; still never invent hard numbers."
         ],
         "quotes": [],
         "firstPartyPublishers": [
@@ -198,18 +199,18 @@
       },
       "topicMatches": [
         "and",
-        "the"
+        "still"
       ],
       "attribution": "attribute to Layer3Labs; do not claim this as this site’s own engagement"
     },
     {
       "record": {
-        "id": "client-multiple-law-firms",
-        "entity": "Multiple law firms",
+        "id": "client-multiple-hoa-and-condo-boards-across-the-usa",
+        "entity": "Multiple HOA and condo boards across the USA",
         "owner": "Layer3Labs",
         "relationship": "client",
         "approvedFacts": [
-          "client intake and onboarding, engagement-letter automation, Clio setup and cleanup, CRM cleaning and de-duplication, and automated client outreach. The strongest anchor we have for legal-vertical topics: intake workflows, matter management, practice-management software, conflict checks, document and letter generation, and law-firm CRM hygiene."
+          "HOA and condo governance and operations."
         ],
         "quotes": [],
         "firstPartyPublishers": [
