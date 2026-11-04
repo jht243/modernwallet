@@ -320,3 +320,6 @@
 | /guides/tax-deductions-checklist/ | 2026-11-03 | 12 | 0/0/0/0/0 | 0 |
 | /guides/dell-trump-account-250/ | 2026-11-03 | 8 | 0/0/0/0/0 | 0 |
 | /stock-capital-gains-tax-calculator/ | 2026-11-03 | 8 | 0/0/0/0/0 | 0 |
+| /mileage-deduction/irs-mileage-rate-2026/ | 2026-11-04 | 69 | 0/0/0/0/0 | 0 |
+| /guides/is-social-security-taxable/ | 2026-11-04 | 31 | 0/0/0/0/0 | 0 |
+| /florida-amendment-3-calculator/ | 2026-11-04 | 11 | 0/0/1/0/0 | 0 |
