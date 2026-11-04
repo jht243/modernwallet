@@ -1,0 +1,115 @@
+{
+ "slug": "brrrr-method",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 2476,
+ "floor": 1200,
+ "input_tokens": 37025,
+ "output_tokens": 19903,
+ "thinking_tokens": null,
+ "cached_tokens": 31074,
+ "est_cost_usd": 0.4281,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['How the BRRRR Method Works Step by Step', 'The BRRRR Method in a Worked Example', 'Lender Seasoning Rules That Slow the BRRRR Refinance', 'The Delayed Financing Exception Inside Six Months', 'Depreciation on a Repaired BRRRR Rental'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2476,
+  "numbers_not_in_facts": [
+   "0.75",
+   "0.98",
+   "10000",
+   "32585",
+   "7350"
+  ],
+  "fact_budget": {
+   "fact_words": 1019,
+   "floor": 1200,
+   "ratio": 0.85,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    4
+   ],
+   "applied": [
+    {
+     "id": "sections[4].body",
+     "quote": "The Internal Revenue Service (IRS) depreciates residential rental buildings over 27.5 years under the general depreciation system (GDS), according to [IRS Publication 527](https://www.irs.gov/publications/p527).",
+     "replacement": "Residential rental buildings are generally depreciated over 27.5 years under the general depreciation system (GDS), according to the Internal Revenue Service (IRS) in [IRS Publication 527](https://www.irs.gov/publications/p527).",
+     "type": "contradicted",
+     "why": "Pub. 527 says the property is depreciated; the IRS does not depreciate it"
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Inside six months, only the delayed financing exception allows a cash-out refinance, and it caps the loan at your documented purchase investment plus financed loan costs.",
+     "replacement": "Inside six months, Fannie Mae's delayed financing exception allows a cash-out refinance if all its requirements are met, and it caps the loan at your documented purchase investment plus financed loan costs.",
+     "type": "unsupported",
+     "why": "SOURCE notes other title exceptions exist; 'only' is not stated"
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Rent it to a tenant.",
+     "replacement": "Rent it.",
+     "type": "unsupported",
+     "why": "SOURCE defines only the step names; tenant detail is acceptable paraphrase"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Our [rental property tax deductions guide](/guides/rental-property-tax-deductions/) walks through the other write-offs a landlord can claim.",
+     "replacement": "See our [rental property tax deductions guide](/guides/rental-property-tax-deductions/).",
+     "type": "unsupported",
+     "why": "SOURCE does not describe that guide's content"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If that describes you, plan to leave cash in the property until the seasoning periods pass.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE gives no advice to leave cash until seasoning passes"
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Borrowed purchase money still has to be repaid: under Fannie Mae's delayed financing exception, if the purchase was funded with an unsecured loan or a HELOC on another property, the refinance proceeds must pay off or pay down that loan.",
+     "replacement": "Under Fannie Mae's delayed financing exception, if the purchase was funded with an unsecured loan or a HELOC on another property, the refinance proceeds must pay off or pay down that loan.",
+     "type": "inference",
+     "why": "F7 covers delayed financing only; general repayment claim not stated"
+    }
+   ],
+   "deleted_final": 4,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2502
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 208.4,
+ "response_id": "msg_011Cgh2SaArcfyuT6bxzkSjk",
+ "generated_at": "2026-11-04T01:36:00+0000"
+}

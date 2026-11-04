@@ -1,0 +1,23 @@
+{
+  "author": "root-orchestrator",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {"path": "/guides/tax-loss-harvesting/", "expectedUpdatedDate": "2026-11-04",
+     "requiredText": ["Tax Loss Harvesting", "$3,000", "Our Takeaway"],
+     "forbiddenText": ["we tested", "We tested", "our testing"],
+     "growthFile": "evidence/tax-loss-harvesting/growth.json", "evidenceFile": "evidence/tax-loss-harvesting/evidence.json"},
+    {"path": "/guides/hsa-triple-tax-advantage/", "expectedUpdatedDate": "2026-11-04",
+     "requiredText": ["$4,400", "$8,750", "Our Takeaway"],
+     "forbiddenText": ["we tested", "We tested", "our testing", "In our internal"],
+     "growthFile": "evidence/hsa-triple-tax-advantage/growth.json", "evidenceFile": "evidence/hsa-triple-tax-advantage/evidence.json"},
+    {"path": "/guides/brrrr-method/", "expectedUpdatedDate": "2026-11-04",
+     "requiredText": ["$262,585", "Our Takeaway"],
+     "forbiddenText": ["we tested", "We tested", "our testing"],
+     "growthFile": "evidence/brrrr-method/growth.json", "evidenceFile": "evidence/brrrr-method/evidence.json"},
+    {"path": "/guides/tax-tips/", "requiredText": ["Tax-loss harvesting", "triple tax advantage"]},
+    {"path": "/guides/wash-sale-rule-explained/", "requiredText": ["harvest tax losses"]},
+    {"path": "/compare/hsa-vs-fsa/", "requiredText": ["triple tax advantage"]},
+    {"path": "/compare/cash-out-refinance-vs-heloc/", "requiredText": ["BRRRR method"]},
+    {"path": "/compare/reit-vs-rental-property/", "requiredText": ["BRRRR method"]}
+  ]
+}

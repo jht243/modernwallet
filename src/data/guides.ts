@@ -33,6 +33,260 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── mindmap-pass 2026-11-04 (podcast recovery): brrrr-method ──
+  {
+    "updated": "2026-11-04",
+    "slug": "brrrr-method",
+    "title": "BRRRR Method Works Only If the Appraisal Covers Your Costs",
+    "metaDescription": "BRRRR (buy, rehab, rent, refinance, repeat) returns your cash only when the appraisal and loan-to-value cover it. See the break-even and Fannie Mae rules.",
+    "h1": "The BRRRR Method",
+    "cardBlurb": "How the buy, rehab, rent, refinance, repeat strategy works and what appraisal it takes to get your cash back under Fannie Mae refinance rules.",
+    "introText": "The BRRRR method gets your cash back only when the refinance loan on the repaired house covers what you put into it. At ModernWallet, we show the math behind each money decision, so we ran one hypothetical rental through that refinance at three appraised values.\n\nBRRRR is investor shorthand for buy, rehab, rent, refinance, repeat. The new loan equals the post-repair appraisal times the lender's loan-to-value (LTV) limit, and the cost of that loan comes out of it. In our internal modeling, a rental with $193,000 of purchase price, closing costs and repairs needed an appraisal of about $262,585 to return all of it, at an assumed 75% LTV and 2% refinance cost.\n\nThe strategy stops working in three situations: the appraisal comes in low, lender seasoning rules or the six-month delayed financing cap limit the loan, or the new loan payment is more than the rent brings in.",
+    "sections": [
+      {
+        "heading": "How the BRRRR Method Works Step by Step",
+        "body": "The BRRRR method runs in five steps, and your cash comes back at the fourth step, the refinance. Investors describe the strategy with this shorthand:\n\n1. Buy a property that needs work.\n2. Rehab it with repairs.\n3. Rent it.\n4. Refinance it with a new loan based on the repaired value.\n5. Repeat with the cash the refinance returns.\n\nBuild the refinance math before you buy. Two numbers decide the deal: the total cash you put in (purchase price, closing costs and repairs) and the cash the new loan hands back (the appraised value times the lender's LTV limit, minus the cost of the new loan). If the second number is smaller, the gap stays tied up in the property.\n\nThe refinance in step 4 is a cash-out refinance. Under the [Fannie Mae Selling Guide](https://selling-guide.fanniemae.com/sel/b2-1.3-03/cash-out-refinance-transactions), a cash-out refinance can take equity out of the property for any purpose. The new loan must either pay off the existing mortgage with a new first mortgage on the same property, or be a new mortgage on a property with no mortgage lien.\n\nA house bought with cash and carrying no lien fits that second case. Fannie Mae sets the maximum LTV for a cash-out refinance in its Eligibility Matrix. The 75% figure in our example below is an assumption of ours, so swap in the limit your lender quotes."
+      },
+      {
+        "heading": "The BRRRR Method in a Worked Example",
+        "body": "In our internal modeling, we ran one hypothetical $150,000 purchase with $40,000 of repairs through a refinance at three appraised values, and getting all $193,000 back took an appraisal of about $262,585. That result assumes a 75% LTV and a 2% cost on the new loan. Both are our assumptions, and neither is a lender limit or a Fannie Mae figure.\n\nThese are the inputs we used:\n\n- Purchase price: $150,000, paid in cash\n- Purchase closing costs: $3,000\n- Repairs: $40,000\n- Total cash invested: $193,000\n- Assumed LTV on the appraised value: 75%\n- Assumed cost of the new loan: 2% of the loan amount\n\nThe table shows two refinance paths. The standard path lends 75% of the appraised value. The capped path applies our reading of Fannie Mae's delayed financing limit, which the section on that exception explains.\n\n| Appraised value | Standard loan (75% LTV) | Net after 2% cost | Cash left in deal (standard) | Capped loan (delayed financing reading) | Cash left in deal (capped) |\n|---|---|---|---|---|---|\n| $200,000 | $150,000 | $147,000 | $46,000 | $150,000 | $46,000 |\n| $230,000 | $172,500 | $169,050 | $23,950 | about $156,122 | $40,000 |\n| $260,000 | $195,000 | $191,100 | $1,900 | about $156,122 | $40,000 |\n\nThe break-even works backward from the cash invested. Dividing $193,000 by 0.98 gives a loan of about $196,939, and dividing that loan by 0.75 gives an appraisal of about $262,585. That appraisal is 1.36 times the $193,000 you put in.\n\nOn the standard path, each extra $10,000 of appraised value adds $7,350 of net proceeds ($10,000 × 0.75 × 0.98). The $230,000 appraisal falls about $32,585 short of break-even, so $23,950 stays in the deal. We did not buy or refinance a property, and every dollar amount in this example is illustrative."
+      },
+      {
+        "heading": "Lender Seasoning Rules That Slow the BRRRR Refinance",
+        "body": "Fannie Mae requires at least one borrower to be on title for six months before a cash-out refinance disburses, and it adds two more timing and listing rules. These rules come from Selling Guide section B2-1.3-03, dated December 10, 2025:\n\n- Title: at least one borrower must have been on title for at least six months before the disbursement date of the new loan. Fannie Mae lists exceptions under \"Ownership of the Property.\"\n- Existing first mortgage: a first mortgage paid off by the refinance must be at least 12 months old, measured from its note date to the new loan's note date. The rule does not apply to subordinate liens or to buying out a co-owner under a legal agreement.\n- Listing: a property that was listed for sale must come off the market on or before the disbursement date of the new loan.\n\nIf you financed the purchase with a first mortgage on the house, the refinance cannot pay that loan off until it is 12 months old. A cash purchase leaves no first mortgage to pay off. In that case the six-month title rule and the delayed financing exception set the timing.\n\nFannie Mae's rules apply to loans sold to or guaranteed by Fannie Mae. Portfolio loans and other loan types follow each lender's own rules, which are not covered here. If you are weighing a cash-out refinance against a home equity line of credit (HELOC), our [cash-out refinance vs. HELOC comparison](/compare/cash-out-refinance-vs-heloc/) sets the two side by side."
+      },
+      {
+        "heading": "The Delayed Financing Exception Inside Six Months",
+        "body": "Fannie Mae's delayed financing exception lets a borrower who bought the property within the past six months take a cash-out refinance, with the new loan capped at the documented purchase investment. The six months run from the purchase date to the disbursement date of the new loan. Every one of these requirements must be met:\n\n- The original purchase was an arms-length transaction.\n- You meet Fannie Mae's borrower eligibility requirements.\n- A settlement statement shows no mortgage financing was used for the purchase.\n- A title search shows no existing liens.\n- The sources of the purchase funds are documented.\n- If the purchase money came from an unsecured loan or a loan on another asset, such as a HELOC on another property, the refinance settlement statement must show all cash-out proceeds paying off or paying down that loan.\n- Gift funds used for the purchase cannot be reimbursed with the new loan.\n\nCash-out pricing applies to the new loan. The loan can be no more than the documented initial investment in purchasing the property plus financed closing costs, prepaid fees and points on the new loan. It also cannot exceed the maximum LTV on the current appraised value.\n\nOur reading of that wording is that repair spending falls outside the \"initial investment in purchasing the property.\" Fannie Mae's guide does not address repair spending either way, so this interpretation is ours. A lender could read the rule differently.\n\nIn our internal modeling, we capped the loan at the $153,000 purchase investment ($150,000 price plus $3,000 closing costs) plus 2% financing of the new loan's costs. That cap comes to about $156,122. At the $230,000 and $260,000 appraisals, net proceeds were $153,000 and the $40,000 of repair money stayed in the deal.\n\nAt the $200,000 appraisal, the 75% limit produced a smaller loan than the cap. The loan was $150,000 and $46,000 stayed in. Ask the lender how it counts repair costs under this exception before you buy, and read the exception's full text in [Fannie Mae's Selling Guide](https://selling-guide.fanniemae.com/sel/b2-1.3-03/cash-out-refinance-transactions)."
+      },
+      {
+        "heading": "Depreciation on a Repaired BRRRR Rental",
+        "body": "Residential rental buildings are generally depreciated over 27.5 years under the general depreciation system (GDS), according to the Internal Revenue Service (IRS) in [IRS Publication 527](https://www.irs.gov/publications/p527). The alternative depreciation system (ADS) uses 30 years. Both periods cover the building and its structural components.\n\nLand is not part of the depreciation basis. Publication 527's example is a $185,000 rental with a $160,000 building and $25,000 of land, so the basis is $160,000. Placed in service on February 8 under GDS, the first-year rate is 3.182%, which gives a deduction of $5,091 ($160,000 × 3.182%).\n\nFor a BRRRR property, the depreciation start date follows the repairs. In another Publication 527 example, a house bought and extensively repaired was ready for rent on July 5, advertised in July and rented starting September 1. The IRS treats that house as placed in service in July, when it was ready and available for rent, so depreciation can begin then.\n\nOur scenario does not split the $150,000 price into land and building, so it produces no depreciation figure. See our [rental property tax deductions guide](/guides/rental-property-tax-deductions/)."
+      },
+      {
+        "heading": "When the BRRRR Method Stops Working",
+        "body": "The BRRRR method stops returning your cash when the appraisal comes in low, when a lender cap limits the loan, or when the new payment is more than the rent brings in. Each one shows up differently in the numbers.\n\nThe $200,000 row in our model shows a low appraisal. The loan is $150,000, net proceeds are $147,000 and $46,000 stays in the deal. Any appraisal below about $262,585 leaves some cash behind at our assumed 75% LTV.\n\nA lender cap can hold back cash even when the appraisal is high. On our reading of the delayed financing exception, a refinance inside six months returns about the purchase money and leaves the $40,000 of repairs in the deal at both the $230,000 and $260,000 appraisals.\n\nThe new loan payment can also outrun the rent. Our model leaves out rent, the new interest rate, the monthly payment, property taxes, insurance, vacancy and holding costs, so it says nothing about cash flow. Price the new payment, taxes and insurance against the rent before you plan the refinance.\n\nThe BRRRR method does not fit these readers:\n\n- Someone who cannot wait out six months on title, or 12 months when the refinance pays off a first mortgage on the house.\n- Someone whose plan depends on an appraisal that has not happened yet.\n- Someone who needs the repair money back inside six months.\n\n If you want to own real estate without a rehab or a refinance, our comparison of a [real estate investment trust (REIT) vs. a rental property](/compare/reit-vs-rental-property/) lays out that route.\n\nThree inputs would change our answer: the lender's actual LTV limit, the appraisal on the repaired house, and any change to Fannie Mae's seasoning or delayed financing rules. A lender LTV limit above our 75% assumption lowers the appraisal needed to break even. A limit below 75% raises it."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "The BRRRR method can return most or all of your cash only when the post-repair appraisal is high enough for the loan to cover the money in the deal. In our modeled example, that took an appraisal of about $262,585 on $193,000 invested, at our assumed 75% LTV and 2% refinance cost. The rules come from Fannie Mae's Selling Guide and IRS Publication 527, and the math comes from our own scenario.\n\nThe strategy fits an investor who can wait out lender seasoning and buys below the finished value. It does not fit anyone whose plan depends on an appraisal the house may not reach, or on a payment the rent cannot cover. It also does not fit anyone who needs a refinance inside six months to recover repair spending, based on our reading of the delayed financing wording.\n\nThe lender's real LTV limit and the appraisal can move this verdict in either direction. Ask a lender for its seasoning rule and maximum investment-property LTV, then rerun the BRRRR method math with your own purchase, repair and appraisal numbers before you buy."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/real-estate/",
+        "label": "Real estate calculators"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much money do you need to start the BRRRR method?",
+        "answer": "There is no verified standard amount, because the cash you need equals the purchase price, repairs and closing costs you carry until the refinance. In our modeled example, that was $193,000: a $150,000 cash purchase, $3,000 of closing costs and $40,000 of repairs. How much comes back depends on the appraisal and the lender's LTV limit. Under Fannie Mae's delayed financing exception, if the purchase was funded with an unsecured loan or a HELOC on another property, the refinance proceeds must pay off or pay down that loan."
+      },
+      {
+        "question": "Is it BRRR or BRRRR?",
+        "answer": "Investors use both spellings. BRRRR stands for buy, rehab, rent, refinance, repeat. BRRR describes the same strategy without the final \"repeat\" step."
+      },
+      {
+        "question": "What is the 2% rule for rental property?",
+        "answer": "The 2% rule is an investor rule of thumb, and no primary source cited here defines it, so we do not treat any figure from it as a standard. A rule of thumb cannot tell you whether the refinance returns your cash. Run the break-even math from the worked example above with your own purchase, repair and appraisal numbers."
+      },
+      {
+        "question": "What is the 70% rule for BRRRR?",
+        "answer": "The 70% rule is another unverified investor rule of thumb with no primary source on this page, and we do not endorse a figure from it. The number that decides a BRRRR deal is the appraisal needed for the new loan to cover your cash. Divide your total cash invested by one minus the loan cost, then by the lender's LTV limit, as shown in the worked example."
+      },
+      {
+        "question": "Is BRRRR better than flipping?",
+        "answer": "BRRRR fits a goal of keeping a rental, and flipping fits a goal of selling. A flip ends with a sale of the property. A BRRRR ends with a refinance loan and a rental you keep, so you also take on the new loan payment."
+      },
+      {
+        "question": "How long does the BRRRR method take?",
+        "answer": "Fannie Mae's floor is six months on title before a cash-out refinance disburses, and 12 months if the refinance pays off an existing first mortgage. Inside six months, Fannie Mae's delayed financing exception allows a cash-out refinance if all its requirements are met, and it caps the loan at your documented purchase investment plus financed loan costs. Repair time and the time to find a tenant are not published in the sources here, so we do not estimate them."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Fannie Mae Selling Guide B2-1.3-03, Cash-Out Refinance Transactions",
+        "url": "https://selling-guide.fanniemae.com/sel/b2-1.3-03/cash-out-refinance-transactions"
+      },
+      {
+        "label": "IRS Publication 527, Residential Rental Property",
+        "url": "https://www.irs.gov/publications/p527"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-11-04 (podcast recovery): hsa-triple-tax-advantage ──
+  {
+    "updated": "2026-11-04",
+    "slug": "hsa-triple-tax-advantage",
+    "title": "The HSA Triple Tax Advantage Allows $4,400 in 2026",
+    "metaDescription": "The health savings account (HSA) triple tax advantage covers contributions, growth and medical withdrawals. 2026 limits: $4,400 self-only, $8,750 family.",
+    "h1": "The HSA Triple Tax Advantage",
+    "cardBlurb": "The three HSA tax breaks, the 2026 IRS contribution and high-deductible plan limits, and the penalties and Medicare rule that end each break.",
+    "introText": "The HSA triple tax advantage means a health savings account (HSA) gets three tax breaks. You get a deduction or employer exclusion on money going in, tax-free earnings while the money sits in the account, and tax-free withdrawals for qualified medical expenses. At ModernWallet, we show the math in every guide we publish, so this page gives the exact 2026 dollar limits from the [Internal Revenue Service (IRS)](https://www.irs.gov/publications/p969) and the rules that end each break.\n\nFor 2026, an eligible person with a qualifying high-deductible health plan (HDHP) can contribute up to $4,400 for self-only coverage or $8,750 for family coverage, plus $1,000 at age 55 or older. Contributions stop with the first month of Medicare enrollment. A withdrawal for anything other than qualified medical expenses is taxed as income and, before age 65, can carry an additional 20% tax.",
+    "sections": [
+      {
+        "heading": "What the HSA Triple Tax Advantage Is and the 2026 Limits",
+        "body": "The HSA triple tax advantage is three separate tax breaks that apply when money goes in, while it earns and when it comes out for medical bills. [IRS Publication 969](https://www.irs.gov/publications/p969) describes each break. The 2026 dollar limits come from [IRS Revenue Procedure 2025-19 (Rev. Proc. 2025-19)](https://www.irs.gov/pub/irs-drop/rp-25-19.pdf).\n\n- **Contributions:** Publication 969 says you can deduct contributions that you, or anyone other than your employer, make to your HSA, even if you do not itemize deductions on Schedule A (Form 1040). Contributions from your employer, including those made through a cafeteria plan, may be excluded from your gross income instead.\n- **Earnings:** Interest and other earnings on the assets in the account are tax free.\n- **Withdrawals:** Distributions are tax free when you use them to pay qualified medical expenses.\n\nYou report contributions on Form 8889 with your Form 1040. The HSA trustee reports contributions on Form 5498-SA and distributions on Form 1099-SA. Employer contributions appear on your Form W-2 in box 12 with code W.\n\nThe 2026 figures below apply only when your coverage meets the IRS definition of an HDHP.\n\n| 2026 figure | Self-only coverage | Family coverage |\n|---|---|---|\n| HSA contribution limit | $4,400 | $8,750 |\n| Added amount at age 55 or older | $1,000 (total $5,400) | Spouse rules in Publication 969 |\n| HDHP minimum annual deductible | $1,700 | $3,400 |\n| HDHP maximum deductible plus out-of-pocket costs (premiums not counted) | $8,500 | $17,000 |\n\nArithmetic on those two IRS figures: an eligible self-only person age 55 or older can contribute $4,400 + $1,000 = $5,400 in 2026. We do not add the $1,000 to the family limit here, because Publication 969 has separate rules for spouses.\n\nThe out-of-pocket cap counts deductibles, co-payments and other amounts. Premiums do not count. If your plan uses a provider network, Publication 969 says only in-network deductibles and out-of-pocket expenses count toward the limit.\n\nThe contribution limit covers all your HSAs combined. If you have more than one HSA, your total contributions to all of them cannot exceed the limit. You must also reduce what you can contribute by any employer contributions that are excluded from your income."
+      },
+      {
+        "heading": "Who Can Contribute to an HSA",
+        "body": "Only an eligible individual covered by a qualifying HDHP can contribute to an HSA, and for 2026 the plan must meet the deductible and out-of-pocket figures in the table above. A self-only plan with a deductible under $1,700 does not meet the 2026 definition. Neither does a family plan whose deductible and out-of-pocket costs can run past $17,000.\n\nMedicare enrollment ends new contributions. Publication 969 says that beginning with the first month you are enrolled in Medicare, your contribution limit is zero. Excess contributions carry a 6% excise tax, covered in the next section.\n\nThe Medicare rule reaches back in time. If you delay applying for Medicare and your enrollment is backdated, contributions made during the retroactive period count as excess contributions. Readers near Medicare enrollment can see what help exists in our [Medicare Savings Programs guide](/guides/medicare-savings-programs/).\n\nThe last-month rule lets some people contribute a full year's amount. Under Publication 969, if you have family HDHP coverage on the first day of the last month of your tax year, you can contribute the full-year limit. That choice comes with a testing period.\n\nIf you fail to stay an eligible individual during the testing period, for any reason other than death or disability, you owe tax on the extra amount. You include in income the contributions you could only make because of the last-month rule. You also owe a 10% additional tax, figured in Form 8889, Part III."
+      },
+      {
+        "heading": "Penalties That End the Three Tax Breaks",
+        "body": "Four IRS rules limit the three tax breaks.\n\n- **Excess contributions:** Publication 969 says you generally pay a 6% excise tax on excess contributions. The tax applies to each tax year the excess stays in the account, and you report it on Form 5329.\n- **Non-medical withdrawals:** You can take a distribution at any time, but only amounts used exclusively for qualified medical expenses are tax free. Other distributions are subject to income tax and may be subject to an additional 20% tax.\n- **Insurance premiums:** You may not use HSA funds to pay for insurance, with four exceptions. The exceptions are long-term care insurance, health care continuation coverage, health care coverage while you receive unemployment compensation, and Medicare and other health care coverage if you are 65 or older. Premiums for a Medicare supplemental policy such as Medigap do not qualify.\n- **Double counting:** You cannot deduct, as an itemized deduction on Schedule A, qualified medical expenses equal to the tax-free distribution from your HSA.\n\nThe 20% additional tax does not apply to distributions made after you become disabled, reach age 65 or die. Income tax on a non-medical withdrawal still applies after 65. Only the extra 20% goes away."
+      },
+      {
+        "heading": "Year-to-Year Carryover and Portability",
+        "body": "HSA funds do not expire. Publication 969 says amounts left at the end of the year generally carry over to the next year, and you do not have to make withdrawals each year. The contributions stay in the account until you use them, and the HSA itself is generally exempt from tax.\n\nThe account is portable. It stays with you if you change employers or leave the work force.\n\nYou can roll over amounts from Archer medical savings accounts (MSAs) and from other HSAs into an HSA. Rollovers are not subject to the annual contribution limit, and you do not need to be an eligible individual to roll over from an existing HSA to a new HSA."
+      },
+      {
+        "heading": "HSA Triple Tax Advantage Compared With an FSA or Roth IRA",
+        "body": "Two other ModernWallet guides compare the HSA triple tax advantage with a flexible spending account (FSA) and with a Roth individual retirement account (IRA). Our [HSA vs. FSA comparison](/compare/hsa-vs-fsa/) puts the two health accounts side by side. Our [HSA vs. Roth IRA comparison](/compare/hsa-vs-roth-ira/) does the same for the HSA and the Roth IRA. This page sticks to HSA rules, so the side-by-side figures are on those two pages."
+      },
+      {
+        "heading": "What the HSA Triple Tax Advantage Does Not Cover",
+        "body": "This explainer covers the federal rules in IRS Publication 969 and Rev. Proc. 2025-19, and several questions sit outside those two documents as we read them.\n\n- State income tax treatment of HSAs.\n- Any custodian's fees or investment menu.\n- Employer contribution amounts.\n- Limits for 2027.\n- The \"adult child\" coverage question.\n- Your own tax saving, which depends on your marginal tax rate and your state.\n\nThe figures on this page do not fit three readers.\n\n- **No qualifying HDHP:** Without a qualifying HDHP, the contribution limits above do not apply to you. The [HSA vs. FSA comparison](/compare/hsa-vs-fsa/) covers the FSA side.\n- **Already enrolled in Medicare and wanting to contribute:** Your contribution limit is zero from the first month of enrollment. You do not need to be an eligible individual to roll over from an existing HSA to a new HSA.\n- **Expecting to spend the money on non-medical costs before 65:** Those withdrawals owe income tax and may owe the additional 20% tax. The [HSA vs. Roth IRA comparison](/compare/hsa-vs-roth-ira/) covers the retirement-account side.\n\nOur answer would change if the IRS publishes new contribution limits or changes the HDHP deductible and out-of-pocket rules. Every dollar figure here is for 2026 only. For other planning moves at tax time, our [tax tips guide](/guides/tax-tips/) lists more."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "An HSA is worth opening for an eligible person on a qualifying HDHP who can pay current medical bills from other cash and let the HSA balance carry over or be invested. The deduction, the tax-free earnings and the tax-free medical withdrawals all apply to the same dollars. That answer rests on IRS Publication 969 and Rev. Proc. 2025-19.\n\nThe answer changes in three cases. Your plan may not be a qualifying HDHP. Your state may tax HSAs differently, which this page does not cover.\n\nYou may also expect to need the money for non-medical costs before 65, when a withdrawal costs income tax plus a possible 20% additional tax. Contributions end once Medicare enrollment starts. Confirm your plan meets the 2026 high-deductible definition in [Rev. Proc. 2025-19](https://www.irs.gov/pub/irs-drop/rp-25-19.pdf) before you count on the HSA triple tax advantage, then compare the HSA with an [FSA](/compare/hsa-vs-fsa/) or a [Roth IRA](/compare/hsa-vs-roth-ira/)."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/retirement/",
+        "label": "Retirement calculators"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What does a triple tax advantage mean?",
+        "answer": "It means one account gets three tax breaks. For an HSA, IRS Publication 969 says contributions are deductible, or excluded from income when your employer makes them. Earnings are tax free, and withdrawals are tax free when you use them for qualified medical expenses."
+      },
+      {
+        "question": "Do HSA funds expire?",
+        "answer": "No. Amounts left at the end of the year generally carry over to the next year, and you do not have to make withdrawals each year. The HSA also stays with you if you change employers or leave the work force."
+      },
+      {
+        "question": "What are the advantages of an HSA?",
+        "answer": "The advantages are the three tax breaks, plus carryover and portability. You can deduct your own contributions without itemizing, earnings are tax free, and qualified medical withdrawals come out tax free. Rollovers from another HSA do not count against the annual contribution limit."
+      },
+      {
+        "question": "What is one potential downside of an HSA?",
+        "answer": "A withdrawal for anything other than qualified medical expenses is taxed as income and may carry an additional 20% tax before age 65. You also need a qualifying HDHP to contribute. Your contribution limit drops to zero from the first month of Medicare enrollment."
+      },
+      {
+        "question": "Are HSA contributions tax deductible if I do not itemize?",
+        "answer": "Yes. Publication 969 says you can deduct contributions you or someone other than your employer make even if you do not itemize deductions on Schedule A. Employer contributions, including those made through a cafeteria plan, may be excluded from your gross income instead, and you report contributions on Form 8889."
+      },
+      {
+        "question": "Is an HSA worth it?",
+        "answer": "An HSA can be worth it if you are eligible, covered by a qualifying HDHP, and able to pay current medical bills from other cash while the balance carries over or is invested. New contributions are not allowed once Medicare enrollment starts. A non-medical withdrawal before 65 costs income tax plus a possible 20% additional tax, and state tax treatment is not covered here."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Publication 969, Health Savings Accounts and Other Tax-Favored Health Plans",
+        "url": "https://www.irs.gov/publications/p969"
+      },
+      {
+        "label": "IRS Revenue Procedure 2025-19",
+        "url": "https://www.irs.gov/pub/irs-drop/rp-25-19.pdf"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-11-04 (podcast recovery): tax-loss-harvesting ──
+  {
+    "updated": "2026-11-04",
+    "slug": "tax-loss-harvesting",
+    "title": "Tax Loss Harvesting Offsets Gains and Up to $3,000 a Year",
+    "metaDescription": "Tax loss harvesting cancels capital gains, then up to $3,000 of other income a year. See what a $10,000 loss saves at 0%, 15% and 20%.",
+    "h1": "How Tax Loss Harvesting Works",
+    "cardBlurb": "How a harvested loss cancels capital gains, what a $10,000 loss saves at each federal rate, and how the wash sale rule can block the deduction.",
+    "introText": "Tax loss harvesting means selling an investment for less than its cost so the realized loss cancels capital gains you would otherwise pay tax on. At ModernWallet, we show the math in the guides we publish here, so this page works the dollar figures for a $10,000 loss. If your losses exceed your gains, the [Internal Revenue Service (IRS)](https://www.irs.gov/taxtopics/tc409) lets you deduct up to $3,000 of the excess from other income each year ($1,500 if married filing separately) and carry the rest forward.\n\nThe saving equals the tax rate on the gains the loss cancels, so a loss against gains taxed at 0% saves nothing. Most of the benefit is a deferral, because the replacement investment starts with a lower cost basis. Buying the same or a substantially identical security within 30 days before or after the sale triggers the wash sale rule and blocks the deduction.",
+    "sections": [
+      {
+        "heading": "How Tax Loss Harvesting Works and What It Can Deduct",
+        "body": "Tax loss harvesting works by selling an asset for less than its adjusted basis and claiming the difference as a capital loss. IRS Topic 409 says an asset's basis is generally its cost, and a sale for more than that basis is a capital gain. Losses from selling personal-use property, such as a home or car, are not tax deductible.\n\nThe loss cancels capital gains. If losses are still left over, you can claim the lesser of $3,000 ($1,500 if married filing separately) or your total net loss from line 16 of Schedule D against your other income. Any net loss above that limit carries forward to later years.\n\nThe holding period sets the type of loss. IRS Topic 409 treats an asset held more than one year as long-term and one held one year or less as short-term.\n\nThe type matters because the two are taxed differently. Net short-term capital gains are taxed as ordinary income at graduated rates. Most net capital gain is taxed at 0%, 15% or 20%, and IRS Topic 409 names higher rates for some gains: 28% for collectibles and section 1202 stock, and 25% for unrecaptured section 1250 gain."
+      },
+      {
+        "heading": "What a Harvested Loss Is Worth at 0%, 15% and 20%",
+        "body": "A harvested loss is worth the tax rate on the gain it cancels, multiplied by the size of the loss. In our internal modeling, we ran a $10,000 harvested loss against $10,000 of long-term gains taxed at 0%, 15% and 20%, using the IRS 2026 thresholds. The saving came out to the rate times the loss, which is nothing at 0%.\n\n| Long-term gains rate | Gain cancelled | Federal tax saved |\n|---|---|---|\n| 0% | $10,000 | $0 |\n| 15% | $10,000 | $1,500 |\n| 20% | $10,000 | $2,000 |\n\nThe inputs are a $10,000 loss, $10,000 of long-term gain and one federal rate per row. The model leaves out ordinary-income rates, state tax, the net investment income tax and transaction costs, so every figure is illustrative.\n\nYour rate depends on your 2026 taxable income, and that test includes the gain itself. [IRS Revenue Procedure 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) sets these 2026 ceilings for the 0% and 15% rates:\n\n- Married filing jointly: 0% up to $98,900, 15% up to $613,700\n- Head of household: 0% up to $66,200, 15% up to $579,600\n- Married filing separately: 0% up to $49,450, 15% up to $306,850\n- All other individuals: 0% up to $49,450, 15% up to $545,500\n\nAbove the 15% ceiling for your filing status, the 20% rate applies.\n\nA year with losses and no gains works differently. With a $10,000 net capital loss and no gains, our model deducts $3,000 against other income and carries $7,000 forward. A married person filing separately deducts $1,500. The cash value of that deduction depends on the rate on your other income, which this page does not model."
+      },
+      {
+        "heading": "Tax Loss Harvesting Defers Tax Rather Than Erasing It",
+        "body": "Tax loss harvesting usually moves tax to a later year, because the replacement you buy has a lower basis than the investment you sold. In our internal modeling, a share bought for $10,000 and sold at $7,000 produces a $3,000 loss. A replacement bought for $7,000 has a $7,000 basis.\n\nSell that replacement later for $10,000 and you realize a $3,000 gain. That is the same amount as the loss you harvested.\n\nThe tax comes back unless the rates differ between the two years or the gain is never realized. A later rate above today's rate makes the deferral cost more than it saved. Some cases, such as a 0% year, a basis step-up at death or a gift to charity, can change the result, and this page does not cover them."
+      },
+      {
+        "heading": "The Wash Sale Rule and Tax Loss Harvesting in an IRA",
+        "body": "The wash sale rule blocks a harvested loss when, within 30 days before or after the sale, you acquire substantially identical stock or securities. [IRS Publication 550](https://www.irs.gov/publications/p550) lists four ways to trigger it:\n\n- Buy substantially identical stock or securities\n- Acquire substantially identical stock or securities in a fully taxable trade\n- Acquire a contract or option to buy substantially identical stock or securities\n- Acquire substantially identical stock for your individual retirement arrangement (IRA) or Roth IRA\n\nA purchase of substantially identical stock by your spouse, or by a corporation you control, after your sale also creates a wash sale. \n\nIn a taxable account, the disallowed loss is added to the cost of the new shares, which becomes their basis. That postpones the deduction until you sell the new shares, and the holding period of the shares you sold carries over to them. Publication 550 gives this example: you buy 100 shares of X stock for $1,000, sell them for $750 and within 30 days buy 100 shares for $800, so you cannot deduct the $250 loss and your new basis is $1,050.\n\n When the repurchase is for an IRA or Roth IRA, Publication 550 excepts it from adding the disallowed loss to the cost of the new stock.\n\nNo mechanical formula defines substantially identical, as our [wash sale rule guide](/guides/wash-sale-rule-explained/) explains. You weigh all the facts and circumstances, and stock of two different corporations is ordinarily not substantially identical."
+      },
+      {
+        "heading": "When Tax Loss Harvesting Does Not Pay",
+        "body": "Tax loss harvesting saves nothing now when the gains it cancels would have been taxed at 0%. Four cases reduce or remove the benefit:\n\n- Your long-term gains fall under the 2026 0% ceiling for your filing status, so the loss cancels gains that carried no federal tax.\n- You have no gains, so the loss lowers other income by at most $3,000 a year ($1,500 if married filing separately) and the rest waits in carryover.\n- You buy back the same or a substantially identical security inside the 30-day windows, including in an IRA.\n- Your tax rate when you sell the replacement is higher than the rate on the gains you cancelled.\n\nThis page covers sales in taxable accounts that you report on Form 8949. If your losses sit in an IRA or another tax-deferred account, the IRS pages linked here describe sales reported on Form 8949, and this guide does not address losses inside those accounts. If you need a decision on your own holdings, a tax professional can apply these rules to your return.\n\nOur answer would change if your bracket differs from the ones modeled, or if the $3,000 limit or the wash sale rule changes. State tax treatment, the net investment income tax, broker reporting of wash sales across accounts and cryptocurrency are not covered on the IRS pages this guide draws on. Our [tax tips guide](/guides/tax-tips/) covers other year-end moves."
+      },
+      {
+        "heading": "How to Report a Harvested Loss",
+        "body": "You report a harvested loss on Form 8949, Sales and Other Dispositions of Capital Assets, which IRS Topic 409 names as the form for most sales of capital assets. Each sale's gain or loss is figured there and then totalled on Schedule D.\n\nIRS Publication 550 has you combine your net short-term gain or loss from Schedule D line 7 with your net long-term gain or loss from line 15. The total goes on Part III, line 16. A net loss allowed against other income goes on line 7a of Form 1040, Form 1040-SR or Form 1040-NR.\n\nAny loss above the yearly limit is tracked with the Capital Loss Carryover Worksheet. That worksheet appears in Publication 550 and in the [IRS Instructions for Schedule D](https://www.irs.gov/instructions/i1040sd), with separate lines for short-term and long-term carryovers. To figure the tax on one specific sale before you report it, use our [Stock Capital Gains Tax Calculator](/stock-capital-gains-tax-calculator/)."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "For a US taxpayer with realized capital gains taxed at 15% or 20%, harvesting a loss saves 15 or 20 cents of federal tax per dollar of loss now. With gains taxed at 0% it saves nothing, and with no gains it saves tax only on the first $3,000 of loss a year. That conclusion applies to taxable accounts and rests on IRS rules plus our worked arithmetic.\n\nThe answer changes if you buy the same or a substantially identical security within the 30-day windows, including in an IRA. It also changes if a higher future rate makes the deferral cost more than it saved.\n\nList your 2026 realized gains and losses, and confirm no repurchase falls inside the 30-day windows before you harvest a loss. If your case is not simple, take that list to a tax professional before any tax loss harvesting sale."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/stock-capital-gains-tax-calculator/",
+        "label": "Stock Capital Gains Tax Calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is it possible to sell stocks at a loss to reduce taxes?",
+        "answer": "Yes. Selling stock below its adjusted basis creates a capital loss that cancels capital gains, and IRS Topic 409 lets you deduct up to $3,000 of any excess against other income ($1,500 if married filing separately). The deduction is blocked if you buy substantially identical stock within 30 days before or after the sale."
+      },
+      {
+        "question": "Do I get $3,000 back from a stock loss?",
+        "answer": "No. The $3,000 limit is a deduction that lowers your taxable income on line 7a of Form 1040. The cash you save depends on the tax rate on that income, and any loss above the limit carries forward to later years."
+      },
+      {
+        "question": "Is there a downside to tax loss harvesting?",
+        "answer": "Yes, the saving is usually a deferral. The replacement investment has a lower basis, so in our $10,000 example the $3,000 harvested loss returns as a $3,000 gain when the replacement is sold at $10,000. A wash sale repurchase postpones the deduction, and a higher future tax rate can make the deferral cost more than it saved."
+      },
+      {
+        "question": "Does tax loss harvesting reduce taxable income?",
+        "answer": "Yes, up to a limit. After your losses cancel your capital gains, IRS Topic 409 lets you deduct the lesser of $3,000 ($1,500 if married filing separately) or your total net loss from other income. The rest carries forward to later years."
+      },
+      {
+        "question": "Is tax loss harvesting just deferring taxes?",
+        "answer": "Mostly, yes. Because the replacement starts at a lower basis, the gain you avoid now comes back when you sell it, unless the tax rates differ or the gain is never realized. Cases such as a 0% year, a basis step-up at death or a gift to charity are not covered here."
+      },
+      {
+        "question": "Can short-term losses offset long-term gains?",
+        "answer": "Schedule D combines them into one total. IRS Publication 550 has you combine net short-term gain or loss from line 7 with net long-term gain or loss from line 15 into one total on line 16. Any carryover keeps its short-term or long-term character, and the Schedule D instructions show a separate carryover line for each."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Topic No. 409, Capital Gains and Losses",
+        "url": "https://www.irs.gov/taxtopics/tc409"
+      },
+      {
+        "label": "IRS Publication 550, Investment Income and Expenses",
+        "url": "https://www.irs.gov/publications/p550"
+      },
+      {
+        "label": "IRS Revenue Procedure 2025-32, 2026 Inflation Adjustments",
+        "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+      },
+      {
+        "label": "IRS Instructions for Schedule D (Form 1040)",
+        "url": "https://www.irs.gov/instructions/i1040sd"
+      }
+    ]
+  },
   // ── mindmap-pass 2026-10-28 (competitor): student-loan-deferment ──
   {
     "updated": "2026-10-28",
@@ -9262,8 +9516,8 @@ export const GUIDES: Guide[] = [
       "These tax tips focus on practical planning moves that individuals often overlook during the year, not just at filing time. You'll learn how retirement accounts, HSAs, and tax-loss harvesting can lower your bill, as well as how tax brackets and the standard deduction shape every decision. This guide provides general information, not tax advice. Rules change, and your situation may need review by a CPA or enrolled agent. Once you've put these moves in place, see [TurboTax vs. TaxAct](/compare/turbotax-vs-taxact/) to find out which filing software actually applies them correctly at the lowest cost.",
     sections: [
       { heading: "Tip 1: Fund tax-advantaged accounts first", body: "The biggest tax break most people miss is simply funding tax-advantaged accounts up to the annual limit. For 2026, the IRS lets you contribute up to $24,500 to a 401(k), plus an $8,000 catch-up at age 50 or older. Traditional 401(k) contributions lower your taxable income today.\n\nIRAs offer a smaller but useful boost. The [2026 IRA contribution limit](/guides/ira-contribution-limits-2026/) is $7,500, with a $1,100 catch-up at age 50 or older. Use our [401k calculator](/retirement/401k-calculator/) and [Roth IRA calculator](/investing/roth-ira-calculator/) to see how each choice grows over time. Always contribute enough to your 401(k) to capture the full employer match first, because that is a 100% return that you cannot get anywhere else." },
-      { heading: "Tip 2: Use an HSA for the triple tax break", body: "A Health Savings Account (HSA) is the only account that offers a triple tax advantage. IRS Publication 969 confirms all three: contributions are tax-deductible, growth is tax-free, and qualified medical withdrawals are tax-free. You need a high-deductible health plan to qualify.\n\nFor 2026, the IRS lets you contribute up to $4,400 for self-only coverage and $8,750 for family coverage. Many people miss the biggest opportunity by spending the HSA balance right away instead of investing it. If you can pay medical bills from other cash, let the HSA grow, then withdraw for those past expenses years later, tax-free." },
-      { heading: "Tip 3: Consider tax-loss harvesting each fall", body: "Tax-loss harvesting means selling investments at a loss to offset gains and reduce your tax bill. The IRS lets you use realized losses to cancel out realized capital gains dollar for dollar. Any extra loss can offset up to $3,000 of ordinary income each year, and any remainder carries forward to future years.\n\nWatch the wash-sale rule. If you buy the same or a substantially identical security within 30 days before or after the sale, the loss is disallowed. Review your taxable brokerage account each November, not just in December, so you have time to act without rushing." },
+      { heading: "Tip 2: Use an HSA for the triple tax break", body: "A Health Savings Account (HSA) is the only account that offers a [triple tax advantage](/guides/hsa-triple-tax-advantage/). IRS Publication 969 confirms all three: contributions are tax-deductible, growth is tax-free, and qualified medical withdrawals are tax-free. You need a high-deductible health plan to qualify.\n\nFor 2026, the IRS lets you contribute up to $4,400 for self-only coverage and $8,750 for family coverage. Many people miss the biggest opportunity by spending the HSA balance right away instead of investing it. If you can pay medical bills from other cash, let the HSA grow, then withdraw for those past expenses years later, tax-free." },
+      { heading: "Tip 3: Consider tax-loss harvesting each fall", body: "[Tax-loss harvesting](/guides/tax-loss-harvesting/) means selling investments at a loss to offset gains and reduce your tax bill. The IRS lets you use realized losses to cancel out realized capital gains dollar for dollar. Any extra loss can offset up to $3,000 of ordinary income each year, and any remainder carries forward to future years.\n\nWatch the wash-sale rule. If you buy the same or a substantially identical security within 30 days before or after the sale, the loss is disallowed. Review your taxable brokerage account each November, not just in December, so you have time to act without rushing." },
       { heading: "Tip 4: Watch your bracket transitions", body: "The federal income tax uses marginal brackets, which means only the income above each threshold is taxed at that bracket's rate. This is not the same as your average tax rate. Understanding the difference helps you plan year-end income and deductions.\n\nA small change can matter near a bracket edge. Timing a Roth conversion, a bonus, or a large deduction can keep you in a lower bracket. If you are near a threshold, delaying $5,000 of income or accelerating a deduction can save real money. Our [high-yield savings calculator](/investing/high-yield-savings-calculator/) helps you plan year-end cash moves." },
       { heading: "Tip 5: Standard versus itemized deduction", body: "Most filers now take the standard deduction because it is larger than their itemized total. You should itemize only when your qualifying deductions exceed the standard amount. Common itemized items include state and local taxes (capped at $10,000), mortgage interest, and charitable gifts.\n\nOne planning move: bunching. If your itemized total is close to the standard, group two years of charitable gifts into one year to clear the threshold, then take the standard next year. A [donor-advised fund](/compare/donor-advised-fund-vs-private-foundation/) can hold the gift now and distribute it over time — see how it compares to a private foundation if you're giving at a larger scale, or read [how a donor-advised fund works](/guides/donor-advised-funds-explained/). Check the current standard deduction on IRS.gov before you plan." },
       { heading: "The 2026 Standard Deduction for Married Couples Filing Jointly", body: "A married couple filing jointly gets a $32,200 standard deduction for 2026, exactly double the $16,100 amount for a single filer, compared to $24,150 for head of household. Filing jointly clears more income before any tax applies, which is one reason most married couples file jointly rather than as married filing separately, where each spouse is capped at the lower $16,100 amount.\n\nA couple where one or both spouses are 65 or older adds $1,650 per qualifying spouse on top of the $32,200 base, so two spouses both 65 or older reach a combined $35,500 standard deduction before a single itemized deduction enters the picture. That extra amount doubles again to $3,300 per spouse if a spouse is also legally blind. Run the bunching strategy above against your own itemized total using the higher $32,200 (or $35,500) baseline before deciding it's worth the extra recordkeeping." },
@@ -21826,7 +22080,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "heading": "Cross-Account Trading and Autonomous Bot Execution",
-        "body": "Brokerage firms are only required to calculate and report wash sales for covered securities sharing the same CUSIP number within a single brokerage account. Under the official [Form 1099-B instructions](https://www.irs.gov/instructions/i1099b), a broker is permitted, but not required, to aggregate transactions across different accounts. If you sell a stock at a loss at one brokerage and buy it back two weeks later at another, your Form 1099-B may show no disallowed loss. Publication 550 says you still cannot deduct it.\n\nThe same gap applies when software buys for you. As explained in our breakdown of [Robinhood agentic trading](/guides/robinhood-agentic-trading-explained/), an AI agent can trade in its own account. If that agent buys a stock you sold at a loss in your main account within 30 days, you have a wash sale that your Form 1099-B may not flag.\n\nAn agent trading in the [Robinhood 24 Hour Market](/guides/robinhood-24-hour-trading/) can make that purchase overnight, before you check your account. Robo-advisors that harvest tax losses raise the same question, and our [best robo-advisors roundup](/roundup/best-robo-advisors/) covers how each handles tax-loss harvesting. You remain personally responsible for identifying and adjusting every matching trade on your return regardless of automated origin."
+        "body": "Brokerage firms are only required to calculate and report wash sales for covered securities sharing the same CUSIP number within a single brokerage account. Under the official [Form 1099-B instructions](https://www.irs.gov/instructions/i1099b), a broker is permitted, but not required, to aggregate transactions across different accounts. If you sell a stock at a loss at one brokerage and buy it back two weeks later at another, your Form 1099-B may show no disallowed loss. Publication 550 says you still cannot deduct it.\n\nThe same gap applies when software buys for you. As explained in our breakdown of [Robinhood agentic trading](/guides/robinhood-agentic-trading-explained/), an AI agent can trade in its own account. If that agent buys a stock you sold at a loss in your main account within 30 days, you have a wash sale that your Form 1099-B may not flag.\n\nAn agent trading in the [Robinhood 24 Hour Market](/guides/robinhood-24-hour-trading/) can make that purchase overnight, before you check your account. Robo-advisors that [harvest tax losses](/guides/tax-loss-harvesting/) raise the same question, and our [best robo-advisors roundup](/roundup/best-robo-advisors/) covers how each handles tax-loss harvesting. You remain personally responsible for identifying and adjusting every matching trade on your return regardless of automated origin."
       },
       {
         "heading": "Tax Reporting on Form 1099-B and Form 8949",

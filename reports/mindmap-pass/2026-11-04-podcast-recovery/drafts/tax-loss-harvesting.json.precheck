@@ -1,0 +1,95 @@
+{
+  "updated": "2026-11-04",
+  "slug": "tax-loss-harvesting",
+  "title": "Tax Loss Harvesting Offsets Gains and Up to $3,000 a Year",
+  "metaDescription": "Tax loss harvesting cancels capital gains, then up to $3,000 of other income a year. See what a $10,000 loss saves at 0%, 15% and 20%.",
+  "h1": "How Tax Loss Harvesting Works",
+  "cardBlurb": "How a harvested loss cancels capital gains, what a $10,000 loss saves at each federal rate, and how the wash sale rule can block the deduction.",
+  "introText": "Tax loss harvesting means selling an investment for less than its cost so the realized loss cancels capital gains you would otherwise pay tax on. At ModernWallet, we show the math behind every rule in the guides we publish here, so this page works the dollar figures for a $10,000 loss. If your losses exceed your gains, the [Internal Revenue Service (IRS)](https://www.irs.gov/taxtopics/tc409) lets you deduct up to $3,000 of the excess from other income each year ($1,500 if married filing separately) and carry the rest forward.\n\nThe saving equals the tax rate on the gains the loss cancels, so a loss against gains taxed at 0% saves nothing. Most of the benefit is a deferral, because the replacement investment starts with a lower cost basis. Buying the same or a substantially identical security within 30 days before or after the sale triggers the wash sale rule and blocks the deduction.",
+  "sections": [
+    {
+      "heading": "How Tax Loss Harvesting Works and What It Can Deduct",
+      "body": "Tax loss harvesting works by selling an asset for less than its adjusted basis and claiming the difference as a capital loss. IRS Topic 409 says an asset's basis is generally its cost, and a sale for more than that basis is a capital gain. Losses from selling personal-use property, such as a home or car, are not tax deductible, so harvesting applies to investment assets.\n\nThe loss first cancels capital gains you realized in the same year. If losses are still left over, you can claim the lesser of $3,000 ($1,500 if married filing separately) or your total net loss from line 16 of Schedule D against your other income. Any net loss above that limit carries forward to later years.\n\nThe holding period sets the type of loss. IRS Topic 409 treats an asset held more than one year as long-term and one held one year or less as short-term.\n\nThe type matters because the two are taxed differently. Net short-term capital gains are taxed as ordinary income at graduated rates. Most net capital gain is taxed at 0%, 15% or 20%, and IRS Topic 409 names higher rates for some gains: 28% for collectibles and section 1202 stock, and 25% for unrecaptured section 1250 gain."
+    },
+    {
+      "heading": "What a Harvested Loss Is Worth at 0%, 15% and 20%",
+      "body": "A harvested loss is worth the tax rate on the gain it cancels, multiplied by the size of the loss. In our internal modeling, we ran a $10,000 harvested loss against $10,000 of long-term gains taxed at 0%, 15% and 20%, using the IRS 2026 thresholds. The saving came out to the rate times the loss, which is nothing at 0%.\n\n| Long-term gains rate | Gain cancelled | Federal tax saved |\n|---|---|---|\n| 0% | $10,000 | $0 |\n| 15% | $10,000 | $1,500 |\n| 20% | $10,000 | $2,000 |\n\nThe inputs are a $10,000 loss, $10,000 of long-term gain and one federal rate per row. The model leaves out ordinary-income rates, state tax, the net investment income tax and transaction costs, so every figure is illustrative.\n\nYour rate depends on your 2026 taxable income, and that test includes the gain itself. [IRS Revenue Procedure 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) sets these 2026 ceilings for the 0% and 15% rates:\n\n- Married filing jointly: 0% up to $98,900, 15% up to $613,700\n- Head of household: 0% up to $66,200, 15% up to $579,600\n- Married filing separately: 0% up to $49,450, 15% up to $306,850\n- All other individuals: 0% up to $49,450, 15% up to $545,500\n\nAbove the 15% ceiling for your filing status, the 20% rate applies.\n\nA year with losses and no gains works differently. With a $10,000 net capital loss and no gains, our model deducts $3,000 against other income and carries $7,000 forward. A married person filing separately deducts $1,500 and carries $8,500 forward. The cash value of that deduction depends on the rate on your other income, which this page does not model."
+    },
+    {
+      "heading": "Tax Loss Harvesting Defers Tax Rather Than Erasing It",
+      "body": "Tax loss harvesting usually moves tax to a later year, because the replacement you buy has a lower basis than the investment you sold. In our internal modeling, a share bought for $10,000 and sold at $7,000 produces a $3,000 loss. A replacement bought for $7,000 has a $7,000 basis.\n\nSell that replacement later for $10,000 and you realize a $3,000 gain. That is the same amount as the loss you harvested.\n\nThe tax comes back unless the rates differ between the two years or the gain is never realized. A later rate below today's rate leaves you ahead, and a later rate above it makes the deferral cost more than it saved. Some cases, such as a 0% year, a basis step-up at death or a gift to charity, can change the result, and this page does not cover them."
+    },
+    {
+      "heading": "The Wash Sale Rule and Tax Loss Harvesting in an IRA",
+      "body": "The wash sale rule blocks a harvested loss when, within 30 days before or after the sale, you acquire substantially identical stock or securities. [IRS Publication 550](https://www.irs.gov/publications/p550) lists four ways to trigger it:\n\n- Buy substantially identical stock or securities\n- Acquire substantially identical stock or securities in a fully taxable trade\n- Acquire a contract or option to buy substantially identical stock or securities\n- Acquire substantially identical stock for your individual retirement arrangement (IRA) or Roth IRA\n\nA purchase of substantially identical stock by your spouse, or by a corporation you control, after your sale also creates a wash sale. Publication 550 exempts only losses a dealer incurs in the ordinary course of business.\n\nIn a taxable account, the disallowed loss is added to the cost of the new shares, which becomes their basis. That postpones the deduction until you sell the new shares, and the holding period of the shares you sold carries over to them. Publication 550 gives this example: you buy 100 shares of X stock for $1,000, sell them for $750 and within 30 days buy 100 shares for $800, so you cannot deduct the $250 loss and your new basis is $1,050.\n\nThe IRA case is harsher. When the repurchase is for an IRA or Roth IRA, Publication 550 does not add the disallowed loss to any basis, so the postponement described above does not happen.\n\nNo mechanical formula defines substantially identical, as our [wash sale rule guide](/guides/wash-sale-rule-explained/) explains. You weigh all the facts and circumstances, and stock of two different corporations is ordinarily not substantially identical."
+    },
+    {
+      "heading": "When Tax Loss Harvesting Does Not Pay",
+      "body": "Tax loss harvesting saves nothing now when the gains it cancels would have been taxed at 0%. Four cases reduce or remove the benefit:\n\n- Your long-term gains fall under the 2026 0% ceiling for your filing status, so the loss cancels gains that carried no federal tax.\n- You have no gains, so the loss lowers other income by at most $3,000 a year ($1,500 if married filing separately) and the rest waits in carryover.\n- You or your spouse buy back the same or a substantially identical security inside the 30-day windows, including in an IRA.\n- Your tax rate when you sell the replacement is higher than the rate on the gains you cancelled.\n\nThis page covers sales in taxable accounts that you report on Form 8949. If your losses sit in an IRA or another tax-deferred account, the IRS pages linked here describe sales reported on Form 8949, and this guide does not address losses inside those accounts. If you need a decision on your own holdings, a tax professional can apply these rules to your return.\n\nOur answer would change if your bracket differs from the ones modeled, or if Congress changes the $3,000 limit or the wash sale rule. State tax treatment, the net investment income tax, broker reporting of wash sales across accounts and cryptocurrency are not covered on the IRS pages this guide draws on. Our [tax tips guide](/guides/tax-tips/) covers other year-end moves."
+    },
+    {
+      "heading": "How to Report a Harvested Loss",
+      "body": "You report a harvested loss on Form 8949, Sales and Other Dispositions of Capital Assets, which IRS Topic 409 names as the form for most sales of capital assets. Each sale's gain or loss is figured there and then totalled on Schedule D.\n\nIRS Publication 550 has you combine your net short-term gain or loss from Schedule D line 7 with your net long-term gain or loss from line 15. The total goes on Part III, line 16. A net loss allowed against other income goes on line 7a of Form 1040, Form 1040-SR or Form 1040-NR.\n\nAny loss above the yearly limit is tracked with the Capital Loss Carryover Worksheet. That worksheet appears in Publication 550 and in the [IRS Instructions for Schedule D](https://www.irs.gov/instructions/i1040sd), with separate lines for short-term and long-term carryovers. To figure the tax on one specific sale before you report it, use our [Stock Capital Gains Tax Calculator](/stock-capital-gains-tax-calculator/)."
+    },
+    {
+      "heading": "Our Takeaway",
+      "body": "For a US taxpayer with realized capital gains taxed at 15% or 20%, harvesting a loss saves 15 or 20 cents of federal tax per dollar of loss now. With gains taxed at 0% it saves nothing, and with no gains it saves tax only on the first $3,000 of loss a year. That conclusion applies to taxable accounts and rests on IRS rules plus our worked arithmetic.\n\nThe answer changes if anyone buys the same or a substantially identical security within the 30-day windows, including in an IRA. It also changes if a higher future rate makes the deferral cost more than it saved.\n\nList your 2026 realized gains and losses, and confirm no repurchase falls inside the 30-day windows before you harvest a loss. If your case is not simple, take that list to a tax professional before any tax loss harvesting sale."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/stock-capital-gains-tax-calculator/",
+      "label": "Stock Capital Gains Tax Calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is it possible to sell stocks at a loss to reduce taxes?",
+      "answer": "Yes. Selling stock below its adjusted basis creates a capital loss that cancels capital gains, and IRS Topic 409 lets you deduct up to $3,000 of any excess against other income ($1,500 if married filing separately). The deduction is blocked if you buy substantially identical stock within 30 days before or after the sale."
+    },
+    {
+      "question": "Do I get $3,000 back from a stock loss?",
+      "answer": "No. The $3,000 limit is a deduction that lowers your taxable income on line 7a of Form 1040. The cash you save depends on the tax rate on that income, and any loss above the limit carries forward to later years."
+    },
+    {
+      "question": "Is there a downside to tax loss harvesting?",
+      "answer": "Yes, the saving is usually a deferral. The replacement investment has a lower basis, so in our $10,000 example the $3,000 harvested loss returns as a $3,000 gain when the replacement is sold at $10,000. A wash sale repurchase postpones the deduction, and a higher future tax rate can make the deferral cost more than it saved."
+    },
+    {
+      "question": "Does tax loss harvesting reduce taxable income?",
+      "answer": "Yes, up to a limit. After your losses cancel your capital gains, IRS Topic 409 lets you deduct the lesser of $3,000 ($1,500 if married filing separately) or your total net loss from other income. The rest carries forward to later years."
+    },
+    {
+      "question": "Is tax loss harvesting just deferring taxes?",
+      "answer": "Mostly, yes. Because the replacement starts at a lower basis, the gain you avoid now comes back when you sell it, unless the tax rates differ or the gain is never realized. Cases such as a 0% year, a basis step-up at death or a gift to charity are not covered here."
+    },
+    {
+      "question": "Can short-term losses offset long-term gains?",
+      "answer": "Yes, in the combined total on Schedule D. IRS Publication 550 has you combine net short-term gain or loss from line 7 with net long-term gain or loss from line 15 into one total on line 16. Any carryover keeps its short-term or long-term character, and the Schedule D instructions show a separate carryover line for each."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS Topic No. 409, Capital Gains and Losses",
+      "url": "https://www.irs.gov/taxtopics/tc409"
+    },
+    {
+      "label": "IRS Publication 550, Investment Income and Expenses",
+      "url": "https://www.irs.gov/publications/p550"
+    },
+    {
+      "label": "IRS Revenue Procedure 2025-32, 2026 Inflation Adjustments",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+    },
+    {
+      "label": "IRS Instructions for Schedule D (Form 1040)",
+      "url": "https://www.irs.gov/instructions/i1040sd"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}
