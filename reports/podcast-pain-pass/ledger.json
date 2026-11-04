@@ -730,7 +730,10 @@
   "phases-of-retirement",
   "what-to-do-with-401k-when-you-retire",
   "15-year-mortgage-for-rental-property",
-  "does-closing-a-credit-card-hurt-your-credit-score"
+  "does-closing-a-credit-card-hurt-your-credit-score",
+  "tax-loss-harvesting",
+  "brrrr-method",
+  "hsa-triple-tax-advantage"
  ],
  "deferred_rows": [
   {
@@ -813,40 +816,28 @@
   },
   {
    "date": "2026-11-03",
-   "reason": "execution not completed this run (mindmap gates not run); re-queue next run",
+   "reason": "2026-11-04 recovery built tax-loss-harvesting, hsa-triple-tax-advantage, brrrr-method; remaining rows deferred with next steps",
    "rows": [
-    {
-     "slug": "tax-loss-harvesting",
-     "kw": "tax loss harvesting",
-     "vol": 12100
-    },
-    {
-     "slug": "brrrr-method",
-     "kw": "brrrr method",
-     "vol": 6600
-    },
     {
      "slug": "house-hacking",
      "kw": "house hacking",
-     "vol": 4400
-    },
-    {
-     "slug": "hsa-triple-tax-advantage",
-     "kw": "hsa triple tax advantage",
-     "vol": 2400
+     "vol": 4400,
+     "note": "2026-11-04 recovery: deferred; only the 2019 HUD Handbook 4000.1 PDF retrievable (not the current online handbook). Next: fetch current HUD online handbook + CFPB owner-occupancy pages."
     },
     {
      "slug": "retirement-budget",
      "kw": "retirement budget",
-     "vol": 1300
+     "vol": 1300,
+     "note": "2026-11-04 recovery: deferred; BLS Access Denied, ssa.gov 403. Next: obtain BLS Consumer Expenditure tables or another primary source."
     },
     {
      "slug": "how-to-appeal-property-taxes",
      "kw": "how to appeal property taxes",
-     "vol": 590
+     "vol": 590,
+     "note": "2026-11-04 recovery: deferred; procedures set per county/state, no single primary source. Next: choose official assessor sources or scope per state."
     }
    ]
   }
  ],
- "last_run": "2026-10-27"
+ "last_run": "2026-11-04"
 }

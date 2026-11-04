@@ -1,62 +1,22 @@
-PHASE 4 FINDINGS, ROUND 2: /guides/hsa-triple-tax-advantage/
-Reviewer: phase4-reviewer-1. Re-audit of the CURRENT built text (snapshot e5a0939c6899...). Round-1 files are in audit/round1/.
-OVERALL VERDICT: FAIL (3 hard; two need a one-line fact-list addition or deletion)
-Hard findings: 3. Advisory findings: 3.
+PHASE 4 FINDINGS, ROUND 3: /guides/hsa-triple-tax-advantage/
+Reviewer: phase4-reviewer-1. Re-audit of the CURRENT built text (snapshot ad5d6df0a1f0...). Round-1 and round-2 files are in audit/round1 and audit/round2.
+OVERALL VERDICT: PASS (0 hard findings)
 
-GATE RESULTS
-  Depth (first and last, `wc -w`): 1,720 with the table, 1,649 without words. Floor 1,200. PASS.
-  Rhythm (117 sentences and fragments; short 37, medium 27, long 53): no 10-run; flat-5 only in the "do not cover" list fragments. PASS.
-  Headline fields: PASS (title now "...Allows $4,400 Self-Only in 2026"; H2s "HSA Triple Tax Advantage Limits for 2026", "Where the Three Tax Breaks End", "Compared with"; cardBlurb one claim).
-  Mechanical: em-dash 0, "honest" 0, "we tested"/"In our internal" 0, asterisks in render 0 (H1 fixed), Title Case PASS.
-  Source claims: PASS. Pub. 969 and Rev. Proc. 2025-19 re-verified; the investing and pay-from-other-cash condition is gone from the takeaway and FAQ.
-  Provenance: PASS (reported, third person; no modeling or testing language).
-  Links: PASS. Layout: PASS (real <table>, deferral cell replaced).
-  Dates/schema: PASS.
-  Anti-AI body / dead-end gate: FAIL (R2-H1 placeholder, R2-H2 undefined term, R2-H3 limitations with no route).
+GATES
+  Depth (first and last, `wc -w`): 1,758 words with the table, 1,687 without. Floor 1,200. PASS.
+  Rhythm: no run of 10 consecutive sentences in one band; no prose flat-5. PASS.
+  Headline fields (title, metaDescription, h1, cardBlurb, every H2, every FAQ question): no tell. PASS.
+  Mechanical: em-dash 0, "honest" 0, exclamation 0, hype 0, "we tested" 0, literal markdown or ** in render 0, Title Case PASS.
+  Anti-AI body and meaning bar: every round-2 finding verified fixed in the current text (self-references removed, dead ends routed or deleted, overloaded sentences split). PASS.
+  Source claims: PASS against live IRS and Fannie Mae pages (unchanged from round 2 plus Pub. 969 testing-period definition re-checked).
+  Provenance: PASS (internal modeling only where calculated/modeled with inputs beside it; HSA reported; no testing, client or byline claim; "At ModernWallet, we" once).
+  Replay: audit/hsa-triple-tax-advantage-replay.json identical to evidence output.json where a calculation exists; every page figure matches.
+  Links, dates, schema, layout: PASS (first mentions linked, internal routes resolve, Updated November 4, 2026 = dateModified = datePublished, canonical, FAQPage, sitemap, tables in .table-wrap).
+  Intent, required elements, takeaway agreement: PASS.
 
-RESOLVED FROM ROUND 1
-  H1 (0 asterisks in the rendered text), H2 and H2b (cell and Pub. 969 link), H3 and H9 (takeaway and FAQ no longer claim investing or paying from other cash), H4, H4b, H4c, H4d (title now "Self-Only"), H5, H5b, H5c (adult-child bullet removed), H5d, H5e (partly; see R2-H3), H7, HA4 fixed and verified. H6 and H8 unchanged.
-
-
-HARD FINDINGS
-
-[R2-H1] HARD | placeholder noun / force-fit link (round-1 H6, unchanged)
-  field: sections[1] paragraph 3
-  quote: "Readers near Medicare enrollment can see what help exists in our Medicare Savings Programs guide."
-  defect: "what help exists" is a placeholder and the sentence does not say what the linked guide covers or why it follows the retroactive-coverage point. The fix tool could not fix it because no fact describes the guide.
-  fix: FACTS: add "F21. The existing guide /guides/medicare-savings-programs/ says your state can pay your Medicare premiums through a Medicare Savings Program if you qualify (checked 2026-11-04)." Then: If you are near Medicare enrollment, our Medicare Savings Programs guide explains that your state can pay your Medicare premiums through a Medicare Savings Program if you qualify. Alternative with no fact change: delete the sentence.
-
-[R2-H2] HARD | dead-end + backward pronoun (round-1 H8, unchanged)
-  field: sections[1] paragraph 4
-  quote: "That choice comes with a testing period."
-  defect: "Testing period" is raised and never defined; the next paragraph says what happens if you fail it. "That choice" is a backward pronoun for a rule that is not a choice.
-  fix: FACTS: add Pub. 969 text "For the last-month rule, the testing period begins with the last month of your tax year and ends on the last day of the 12th month following that month (for example, December 1, 2025, through December 31, 2026)." Then: The last-month rule carries a testing period that begins with the last month of your tax year and ends on the last day of the 12th month after it. Alternative with no fact change: delete this sentence and rephrase the next paragraph as "If you fail to stay an eligible individual in the 12 months after that, for any reason other than death or disability..." (also needs the fact) or delete both paragraphs.
-
-[R2-H3] HARD | dead-end (limitations with no route)
-  field: sections[5] opening and list; sections[6] paragraph 2; faqs[5]
-  quote: "IRS Publication 969 and Rev. Proc. 2025-19 do not cover these questions:"
-  defect: The list (state income tax, custodian fees and investment menu, employer contribution amounts, limits for 2027, your own tax saving), the takeaway sentence "Your state may tax HSAs differently, and IRS Publication 969 does not address state income tax treatment." and the FAQ clause "state tax treatment is not covered here" all name a limit and route the reader nowhere. The fix tool could not resolve them because the HSA row prompt does not license a tax-professional pointer.
-  fix: FACTS: add "F22. For state tax treatment and your own tax saving, a tax professional can apply your state rules and your marginal rate." Then keep only the two items a reader can act on: "State income tax treatment of HSAs." and "Your own tax saving, which depends on your marginal tax rate and your state." and close the list with "A tax professional can apply those to your return." Delete the custodian, employer-amount and 2027 bullets (no reader decision here depends on them; "Every dollar figure here is for 2026 only" already covers 2027). Takeaway: "Your state may tax HSAs differently, so ask a tax professional about your state." FAQ: replace ", and state tax treatment is not covered here" with ". A tax professional can apply your state rules." Alternative with no fact change: delete the three sentences and the list.
-
-
-ADVISORY
-
-[R2-HA1] ADVISORY | rendering (cosmetic)
-  field: sections[5] list
-  quote: "- Limits for 2027.
-
-- Your own tax saving"
-  defect: A blank line between two bullets splits one list into two <ul> blocks in the built HTML. Cosmetic; disappears when the list is cut per R2-H3.
-  fix: Remove the blank line.
-
-[R2-HA2] ADVISORY | narrow framing vs source (round-1 HA1)
-  field: sections[1] paragraph 4
-  quote: "if you have family HDHP coverage on the first day of the last month of your tax year, you can contribute the full-year limit"
-  defect: Matches F11 and the Pub. 969 Tip; Pub. 969 states the general last-month rule for any eligible individual on December 1. Reads as family-only.
-  fix: Optional: broaden F11.
-
-[R2-HA3] ADVISORY | claim-check residual flags
-  field: meta.guards.flags
-  quote: "$1,000 for each eligible individual age 55 or older (no family total shown)"
-  defect: F6 supports the cell (Pub. 969: eligible individual age 55 or older, limit increased by $1,000). The inherited-comparison flag concerns /compare/hsa-vs-fsa/ text, not this page.
-  fix: None.
+ADVISORY (record only)
+  - Last-month rule is framed around family coverage (matches F11 and the Pub. 969 Tip); Pub. 969 states it for any eligible individual on December 1. Optional F11 broadening.
+  - The FAQ "Is an HSA worth it?" ends with "A tax professional can apply your state's rules and your marginal rate." without naming state tax in the same answer; mild but supported by F23.
+  - The not-for/limits paragraph and the testing-period sentence are supported by F21 to F23 (Pub. 969 testing-period text re-checked live).
+  - Residual claim-check flags: routing sentences (F23) and "Unspent amounts carry over" (F16); accepted.
+  - The three-readers list and the takeaway "three cases" are lists written across a paragraph break; stylistic.
