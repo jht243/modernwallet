@@ -15,5 +15,28 @@
   "path": "/guides/brrrr-method/",
   "contributionId": "evidence/brrrr-method/growth.json",
   "growthFile": "evidence/brrrr-method/growth.json",
-  "evidenceFile": "evidence/brrrr-method/evidence.json"
+  "evidenceFile": "evidence/brrrr-method/evidence.json",
+  "commit": "858e57b4a8a33511c7d3b4764b1a7c571a51c069",
+  "status": "live-verified",
+  "firstVerifiedLiveAt": "2026-11-04T02:26:23.311744+00:00",
+  "verifiedAt": "2026-11-04T02:26:23.311744+00:00",
+  "snapshotSha256": "e0ffcd451326bba064b9b527f24eeb4bf6e4ff9d7de95d07567e0a63012d5553",
+  "deployment": {
+    "commit": "858e57b4a8a33511c7d3b4764b1a7c571a51c069",
+    "status": "live",
+    "evidenceUrl": "https://github.com/jht243/modernwallet/commit/858e57b4a8a33511c7d3b4764b1a7c571a51c069",
+    "liveUrl": "https://www.themodernwallet.com/guides/brrrr-method/",
+    "verifiedAt": "2026-11-04T02:26:30Z",
+    "note": "origin/main contains the commit; live HTTP 200 on 8 routes; rendered-audit compare: live render matches approved render"
+  },
+  "windows": {
+    "days1to28": {
+      "start": "2026-11-05",
+      "end": "2026-12-02"
+    },
+    "days29to56": {
+      "start": "2026-12-03",
+      "end": "2026-12-30"
+    }
+  }
 }
