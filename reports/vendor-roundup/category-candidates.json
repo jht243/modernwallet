@@ -1,10 +1,8 @@
 {
   "site": "themodernwallet.com",
   "cut_as_other_category": {
-    "unlabelled": [
-      "cayugahospitality.com",
-      "trinet.com",
-      "zenbusiness.com"
+    "solo 401k": [
+      "sensefinancial.com"
     ],
     "banking": [
       "fccu.org"
@@ -12,11 +10,17 @@
     "bookkeeping-services": [
       "bench.co"
     ],
-    "investing education or ai trading bots": [
-      "finelo.com"
+    "unlabelled": [
+      "zenbusiness.com"
+    ],
+    "invoicing-apps-for-freelancers": [
+      "invoicingpro.org"
     ],
     "online brokers": [
       "captrader.com"
+    ],
+    "personal loan lender": [
+      "creditninja.com"
     ],
     "credit repair": [
       "asapcreditrepairusa.com"

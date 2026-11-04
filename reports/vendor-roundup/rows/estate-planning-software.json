@@ -1,10 +1,24 @@
 {
-  "slug": "best-estate-planning-software",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "estateably.com",
-      "why": "category 3 — trust and estate administration software sold only to attorneys, trust officers and fiduciaries, not to individuals"
-    }
-  ]
+ "slug": "best-estate-planning-software",
+ "rows": [
+  {
+   "name": "Statular",
+   "domain": "statular.com",
+   "url": "https://statular.com",
+   "values": [
+    "Statular estate-planning drafting platform for licensed attorneys; no public price, free trial",
+    "Not published",
+    "Revocable, special needs, Medicaid asset protection and QTIP trusts",
+    "Yes; durable POAs and advance health care directives",
+    "Attorney keeps control of the final document",
+    "Web templates by state and county; branded client portal"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "openlaw.com",
+   "why": "category 1 \u2014 attorney-matching marketplace; page says it is not a law firm and sells no estate planning software"
+  }
+ ]
 }

@@ -1,1 +1,17 @@
-{"slug":"best-independent-insurance-agencies-in-california","rows":[{"name":"WHINS Insurance Agency","domain":"whins.com","url":"https://whins.com","values":["Westlake Village, San Diego, Palo Alto, Fresno","Not published","Personal, business, specialty","Californians wanting a local team and multiple carrier quotes"]},{"name":"Insure Wise Insurance Brokers","domain":"insurewiseins.com","url":"https://insurewiseins.com","values":["Thousand Oaks","0H55875","Personal, commercial, specialty","Local California individuals and businesses wanting an independent agent"]}],"cut":[{"domain":"twig.so","why":"category 3 — AI receptionist software company, not an insurance agency"}]}
+{
+ "slug": "best-independent-insurance-agencies-in-california",
+ "rows": [
+  {
+   "name": "Aims Insurance",
+   "domain": "aims4insurance.com",
+   "url": "https://aims4insurance.com",
+   "values": [
+    "Multiple California offices; also serves AZ, WA, UT, NV, TX, OH",
+    "0F27205",
+    "Auto (incl. SR-22), home, renters, commercial, motorcycle",
+    "Drivers needing SR-22 filings and budget-focused auto shoppers"
+   ]
+  }
+ ],
+ "cut": []
+}

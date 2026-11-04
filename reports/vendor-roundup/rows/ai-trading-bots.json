@@ -1,5 +1,17 @@
 {
-  "slug": "best-ai-trading-bots",
-  "rows": [],
-  "cut": []
+ "slug": "best-ai-trading-bots",
+ "rows": [
+  {
+   "name": "Switch Markets",
+   "domain": "switchmarkets.com",
+   "url": "https://switchmarkets.com",
+   "values": [
+    "Non-US traders wanting a plain-English AI strategy builder on MT4/MT5",
+    "AlgoBuilder free with a live account; $0 commission account, spreads from 0.0",
+    "Not published",
+    "Forex and CFD traders outside the US; $50 minimum deposit"
+   ]
+  }
+ ],
+ "cut": []
 }

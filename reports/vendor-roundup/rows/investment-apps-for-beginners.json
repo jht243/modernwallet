@@ -1,18 +1,10 @@
 {
-  "slug": "best-investment-apps-for-beginners",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "fortunebuilders.com",
-      "why": "category 1 — publisher/education site (listicle page), no investment app of its own"
-    },
-    {
-      "domain": "finelo.com",
-      "why": "category 4 — trading education and paper-trading learning app with no brokerage; fits investing education or AI trading bots"
-    },
-    {
-      "domain": "crt-ms.com",
-      "why": "category 3 — oil and gas measurement equipment maker, unrelated to finance"
-    }
-  ]
+ "slug": "best-investment-apps-for-beginners",
+ "rows": [],
+ "cut": [
+  {
+   "domain": "invoicingpro.org",
+   "why": "category 4 \u2014 fits invoicing-apps-for-freelancers category (offline invoicing app, Free or $49 one-time)"
+  }
+ ]
 }

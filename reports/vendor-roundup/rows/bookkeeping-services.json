@@ -2,29 +2,21 @@
  "slug": "best-bookkeeping-services-for-small-businesses",
  "rows": [
   {
-   "name": "TallyClaw",
-   "domain": "tallyclaw.com",
-   "url": "https://tallyclaw.com",
+   "name": "Slate Ridge Finance",
+   "domain": "slateridgefinance.com",
+   "url": "https://www.slateridgefinance.com",
    "values": [
-    "Not published; pricing via onboarding call",
-    "Cleanup scoping in onboarding; price not published",
-    "Not mentioned; bookkeeping and monthly close only",
-    "QuickBooks Online businesses wanting done-for-you monthly bookkeeping"
+    "Not published; see plans page",
+    "Clean-up/catch-up service offered; price not published",
+    "Tax support through a CPA partner",
+    "Startups, contractors, consultants, SaaS firms and franchisees"
    ]
   }
  ],
  "cut": [
   {
-   "domain": "searcheye.io",
-   "why": "category 1 \u2014 review/listicle site, no product of its own"
-  },
-  {
-   "domain": "gidamakinem.com",
-   "why": "category 3 \u2014 Turkish food-machinery maker, outside finance scope"
-  },
-  {
-   "domain": "countingworks.com",
-   "why": "category 2 \u2014 redirects to unrelated site (taxbuzz.com)"
+   "domain": "fastcorp.eu",
+   "why": "category 3 \u2014 Bulgarian company formation and compliance, outside this site's US scope"
   }
  ]
 }

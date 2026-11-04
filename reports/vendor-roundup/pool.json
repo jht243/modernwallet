@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-03T16:14:27.177Z",
+  "generated": "2026-11-04T16:09:26.890Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
@@ -112,10 +112,21 @@
       "vertical": "investment-apps-for-beginners",
       "label": "investment apps",
       "roundupSlug": "best-investment-apps-for-beginners",
-      "route": "ACCRUE",
-      "qualified": 5,
+      "route": "ENRICH",
+      "qualified": 6,
       "listed": 5,
-      "missing": []
+      "missing": [
+        {
+          "domain": "invoicingpro.org",
+          "name": "I don't understand why invoicing apps cost $10/month",
+          "site_url": "https://invoicingpro.org/",
+          "one_liner": "Show HN: I don't understand why invoicing apps cost $10/month",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": null,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "money-market-accounts",
@@ -171,21 +182,10 @@
       "vertical": "401k-providers-for-small-business",
       "label": "401(k) providers",
       "roundupSlug": "best-401k-providers-for-small-business",
-      "route": "ENRICH",
-      "qualified": 21,
+      "route": "ACCRUE",
+      "qualified": 20,
       "listed": 20,
-      "missing": [
-        {
-          "domain": "sensefinancial.com",
-          "name": "Best 401k for Small Business: In-Depth Outline",
-          "site_url": "https://sensefinancial.com",
-          "one_liner": "Jan 4, 2014 — Sense Financial is the chief provider and facilitator of the best 401k for small business today. Retirees, self-employed or small business ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 17,
-          "primary_email": "contact@sensefinancial.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "net-worth-tracker",
@@ -220,49 +220,60 @@
       "vertical": "online-will-makers",
       "label": "online will makers",
       "roundupSlug": "best-online-will-makers",
-      "route": "ENRICH",
-      "qualified": 14,
+      "route": "ACCRUE",
+      "qualified": 12,
       "listed": 12,
-      "missing": [
-        {
-          "domain": "trustedcompanyreviews.com",
-          "name": "The Best Online Will Services",
-          "site_url": "https://trustedcompanyreviews.com",
-          "one_liner": "Quicken WillMaker & Trust is a trusted online DIY estate-planning tool. They offer 3 plan options, each providing essential documents to help you complete your ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 2,
-          "primary_email": null
-        },
-        {
-          "domain": "fixthephoto.com",
-          "name": "7 Best Online Will Makers in 2026",
-          "site_url": "https://fixthephoto.com",
-          "one_liner": "1. Trust & Will - Our Choice. Best for novice. Bank-level encryption ; 2. LegalZoom. Fast will maker. With individual forms ; 3. Tomorrow. Best for mobile. Read more",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 17,
-          "primary_email": "fixthephotocom@gmail.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "living-trust-services",
       "label": "living trust services",
       "roundupSlug": "best-living-trust-services",
-      "route": "ACCRUE",
-      "qualified": 35,
+      "route": "ENRICH",
+      "qualified": 36,
       "listed": 35,
-      "missing": []
+      "missing": [
+        {
+          "domain": "ethos.com",
+          "name": "How to Create a Living Trust: Step-by-Step Guide",
+          "site_url": "https://ethos.com",
+          "one_liner": "Learn how to create a living trust to protect your assets, avoid probate, and ensure your wishes are honored. Easy step-by-step guide for 2025 and beyond.",
+          "site_kind": "vendor",
+          "has_pricing": true,
+          "serp_rank": 18,
+          "primary_email": "press@ethos.com"
+        }
+      ]
     },
     {
       "vertical": "estate-planning-software",
       "label": "estate planning software",
       "roundupSlug": "best-estate-planning-software",
-      "route": "ACCRUE",
-      "qualified": 9,
+      "route": "ENRICH",
+      "qualified": 11,
       "listed": 9,
-      "missing": []
+      "missing": [
+        {
+          "domain": "statular.com",
+          "name": "Best Estate Planning Software for Attorneys (2026)",
+          "site_url": "https://statular.com",
+          "one_liner": "Eleven platforms, and who each is best for. · Statular · WealthCounsel (Wealth Docx) · InterActive Legal · Gavel · Lawgic · HotDocs · Adapt · Fore! Trust Software. Read more",
+          "site_kind": "vendor",
+          "has_pricing": true,
+          "serp_rank": 4,
+          "primary_email": "contact@statular.com"
+        },
+        {
+          "domain": "openlaw.com",
+          "name": "WealthCounsel vs Lexi: Estate Planning Documents vs Firm ...",
+          "site_url": "https://openlaw.com",
+          "one_liner": "May 21, 2026 — WealthCounsel is built for estate planning drafting, templates, and practice resources. Lexi is built for the operational path around the work: ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 5,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "budgeting-apps",
@@ -383,7 +394,7 @@
       "label": "personal loan lenders",
       "roundupSlug": "personal-loan-rates-by-lender",
       "route": "ENRICH",
-      "qualified": 21,
+      "qualified": 22,
       "listed": 19,
       "missing": [
         {
@@ -404,6 +415,16 @@
           "site_kind": "unknown",
           "has_pricing": false,
           "serp_rank": 9,
+          "primary_email": null
+        },
+        {
+          "domain": "liberty-bank.com",
+          "name": "Personal Loans with Competitive Rates & Terms",
+          "site_url": "https://liberty-bank.com",
+          "one_liner": "Accomplish your financial goals with a personal loan designed for your needs. We offer competitive rates & flexible terms for qualified borrowers in CT.",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 18,
           "primary_email": null
         }
       ]
@@ -431,7 +452,7 @@
       "label": "secured credit cards",
       "roundupSlug": "best-secured-credit-cards",
       "route": "ENRICH",
-      "qualified": 8,
+      "qualified": 7,
       "listed": 6,
       "missing": [
         {
@@ -443,16 +464,6 @@
           "has_pricing": false,
           "serp_rank": 10,
           "primary_email": "client.service@bankatfirst.com"
-        },
-        {
-          "domain": "creditninja.com",
-          "name": "CreditNinja",
-          "site_url": "https://creditninja.com",
-          "one_liner": "May 26, 2023 — Alternative loans to Bright Lending include personal loans from online lenders, credit union loans, and payday alternative loans (PALs) from ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 5,
-          "primary_email": null
         }
       ]
     },
@@ -505,10 +516,21 @@
       "vertical": "invoice-factoring-companies",
       "label": "invoice factoring companies",
       "roundupSlug": "best-invoice-factoring-companies",
-      "route": "ACCRUE",
-      "qualified": 31,
+      "route": "ENRICH",
+      "qualified": 32,
       "listed": 31,
-      "missing": []
+      "missing": [
+        {
+          "domain": "cdlworker.com",
+          "name": "18 Factoring Companies That Can Help You Generate ...",
+          "site_url": "https://cdlworker.com",
+          "one_liner": "Feb 21, 2024 — Top 18 freight factoring companies for truckers · Compass Funding Solutions · OTR Solutions · eCapital Freight Factoring Inc. · Apex Capital Corp. Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 18,
+          "primary_email": "info@cdlworker.com"
+        }
+      ]
     },
     {
       "vertical": "business-line-of-credit-rates-by-lender",
@@ -578,19 +600,9 @@
       "label": "bookkeeping services for small businesses",
       "roundupSlug": "best-bookkeeping-services-for-small-businesses",
       "route": "ENRICH",
-      "qualified": 32,
-      "listed": 26,
+      "qualified": 30,
+      "listed": 27,
       "missing": [
-        {
-          "domain": "tallyclaw.com",
-          "name": "Xendoo alternative",
-          "site_url": "https://tallyclaw.com",
-          "one_liner": "Xendoo alternatives typically prioritize close readiness, consistency, and response quality. TallyClaw offers monthly bookkeeping operations, onboarding ...",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 2,
-          "primary_email": null
-        },
         {
           "domain": "slateridgefinance.com",
           "name": "Top Online Bookkeeping Firms That Won't Break the Bank",
@@ -600,16 +612,6 @@
           "has_pricing": true,
           "serp_rank": 4,
           "primary_email": "info@slateridgefinance.com"
-        },
-        {
-          "domain": "searcheye.io",
-          "name": "8 Best Bookkeeping Services in 2026",
-          "site_url": "https://searcheye.io",
-          "one_liner": "Oct 6, 2026 — The rest of this list covers inDinero, 1-800Accountant, Decimal, Doola, QuickBooks Live, and Bookkeeper360, each for a specific type of buyer.",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 8,
-          "primary_email": "brands@searcheye.io"
         },
         {
           "domain": "fastcorp.eu",
@@ -622,24 +624,14 @@
           "primary_email": "info@fastcorp.eu"
         },
         {
-          "domain": "countingworks.com",
-          "name": "Connect with the best accounting and bookkeeping pros",
-          "site_url": "https://countingworks.com",
-          "one_liner": "Running a business? Need help with your numbers? CountingWorks uses reviews, background screenings and qualifications to connect you with the perfect CPA, ...",
-          "site_kind": "unknown",
-          "has_pricing": true,
-          "serp_rank": 9,
-          "primary_email": null
-        },
-        {
-          "domain": "gidamakinem.com",
-          "name": "Best Virtual & Outsourced Accounting Services 2023",
-          "site_url": "https://gidamakinem.com",
-          "one_liner": "Merritt Bookkeeping : Best Value for Basic Bookkeeping Services. Uncomplicated navigation, an attractive, intuitive UI, and exceptional mobile access add to ... Read more",
+          "domain": "ambersbookkeeping.com",
+          "name": "Denver Bookkeeping Services for Service-Based Businesses",
+          "site_url": "https://ambersbookkeeping.com",
+          "one_liner": "Sep 14, 2026 — How much does a bookkeeper cost for a small business in Denver? Bookkeeping packages start at $425 per month. Your price depends on how many ... Read more",
           "site_kind": "unknown",
           "has_pricing": false,
-          "serp_rank": 9,
-          "primary_email": "info@gidamakinem.com"
+          "serp_rank": 19,
+          "primary_email": null
         }
       ]
     },
@@ -665,19 +657,41 @@
       "vertical": "california-independent-insurance-agencies",
       "label": "independent insurance agencies in California",
       "roundupSlug": "best-independent-insurance-agencies-in-california",
-      "route": "ACCRUE",
-      "qualified": 15,
+      "route": "ENRICH",
+      "qualified": 16,
       "listed": 15,
-      "missing": []
+      "missing": [
+        {
+          "domain": "aims4insurance.com",
+          "name": "Aims Insurance",
+          "site_url": "https://aims4insurance.com",
+          "one_liner": "Aims Insurance offers affordable auto, home, renters, and business insurance in California and beyond. Compare quotes, get SR‑22 assistance, ...",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 18,
+          "primary_email": "info@aims4insurance.com"
+        }
+      ]
     },
     {
       "vertical": "massachusetts-restaurant-hr-services",
       "label": "restaurant HR support services in Massachusetts",
       "roundupSlug": "best-restaurant-hr-support-services-in-massachusetts",
-      "route": "ACCRUE",
-      "qualified": 19,
+      "route": "ENRICH",
+      "qualified": 20,
       "listed": 19,
-      "missing": []
+      "missing": [
+        {
+          "domain": "masshirecentralcc.com",
+          "name": "Business Development",
+          "site_url": "https://masshirecentralcc.com",
+          "one_liner": "Mar 30, 2026 — As a federally and state-funded Massachusetts One-Stop Career Center, we provide services for both job seekers and employers. The City of ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 19,
+          "primary_email": "info@masshirecentralcc.com"
+        }
+      ]
     },
     {
       "vertical": "healthcare-directive-services",
