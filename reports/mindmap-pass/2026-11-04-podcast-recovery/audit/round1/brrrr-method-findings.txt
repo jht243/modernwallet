@@ -1,0 +1,143 @@
+PHASE 4 FINDINGS: /guides/brrrr-method/ (guide, operator register, page type explainer, floor 1,200; basis modeled plus reported)
+Reviewer: phase4-reviewer-1 (independent; did not write the page). Date: 2026-11-04.
+OVERALL VERDICT: FAIL (monotone rhythm run, overloaded sentences, unlinked IRS first mention, consistency of the repair-spending label; all are sentence-level fixes)
+Hard findings: 11. Advisory findings: 8.
+
+GATE RESULTS
+  Depth (first and last; `wc -w`): 2,302 words with the table, 2,229 without. Floor 1,200. PASS. Built-HTML cross-check: 2,208.
+  Sentence rhythm (132 sentences): short 32, medium 31, long 69. FAIL: monotone-rhythm sentences 106-115 (Our Takeaway sentences 1-8 and the first two sentences of the first FAQ answer), lengths [29, 23, 20, 17, 24, 26, 15, 28, 24, 19], all in the 15+ band (B1). No flat-5 run.
+  Headline-field scan (title, metaDescription, h1, cardBlurb, 7 H2, 6 FAQ questions): PASS. title "BRRRR Method Works Only If the Appraisal Covers Your Costs" (58 chars), metaDescription (154), h1, cardBlurb (two items), H2s and FAQ questions carry no tell. "$40,000" appears in no headline field and not in the intro (CONFIRMED).
+  Mechanical: em-dash 0, "honest" 0, exclamation 0, hype adjectives 0, neutrality claims 0, "we tested" 0. Title Case PASS. No raw markdown in the rendered text.
+  Anti-AI body tells: FAIL. Overloaded sentences B2, B2b, B2c, B2d; meaning-bar B4, B4b; bare feature B8; page self-reference B7.
+  Experience truth and provenance: PASS. "In our internal modeling, ..." appears three times (intro, section 2, section 4): modeled; inputs beside each ($150,000 / $3,000 / $40,000 / $193,000; 75 percent and 2 percent called "our assumptions, and neither is a lender limit or a Fannie Mae figure"); "We did not buy or refinance a property" is stated; no testing claim. "At ModernWallet, we" once (intro sentence 2). Repair spending under delayed financing is labeled "Our reading ... Fannie Mae's guide does not address repair spending either way, so this interpretation is ours. A lender could read the rule differently." with "Ask the lender how it counts repair costs ... before you buy" (section 4). The live Fannie Mae page B2-1.3-03 (12/10/2025) contains no mention of repairs or renovation: CONFIRMED. B5 covers the missing "ask the lender" in the table lead-in and takeaway.
+  Evidence packet and replay: PASS. evidence/brrrr-method/run.py re-run to audit/brrrr-method-replay.json; canonical JSON identical to output.json. Every page figure matches ($193,000; $150,000/$147,000/$46,000; $172,500/$169,050/$23,950; $195,000/$191,100/$1,900; $196,939; $262,585; 1.36x; capped loan about $156,122, net $153,000, $40,000 left at $230,000 and $260,000, $46,000 at $200,000). The generator-flagged numbers (0.75, 0.98, 10000, 32585, 7350) are all arithmetically correct and labeled as model arithmetic: 262,585.03 - 230,000 = 32,585; 10,000 x 0.75 x 0.98 = 7,350; 193,000 / 0.98 = 196,938.78; 196,938.78 / 0.75 = 262,585.03. Boundary: at $200,000 the 75 percent limit binds under the cap (loan $150,000, below the $156,122 cap) and the page says so. Counterexample (low appraisal; capped path) present.
+  Source claims traced (live, fetched 2026-11-04): Fannie Mae B2-1.3-03 (12/10/2025): any purpose, no-lien case, 12-month existing first mortgage, six months on title with exceptions, listed-for-sale rule, Eligibility Matrix pointer, delayed financing requirements and the "initial investment ... plus the financing of closing costs, prepaid fees, and points" cap, gift funds, unsecured loan or HELOC payoff, cash-out pricing: all VERIFIED. IRS Pub. 527 (reviewed 30-Apr-2026): 27.5 years GDS / 30 years ADS, land not depreciable, $185,000 / $160,000 / 3.182 percent / $5,091 example, July 5 placed-in-service example: all VERIFIED.
+  Carry-forward advisories: the 2 percent and 70 percent rules are labeled unverified investor rules of thumb with no figure endorsed: CONFIRMED (FAQ). The 75 percent LTV and 2 percent cost read as assumptions in the intro, inputs list, break-even and takeaway (B6 advisory on one table lead-in sentence).
+  Intent: PASS. Answer in the intro and sections 1-2; PAA 6/6 on-topic present (cash needed, spelling, 2 percent rule, flipping, 70 percent rule, how long). Who this is not for (three readers) and what would change our answer (three inputs) present; the takeaway agrees with the intro, table and FAQs; the last body sentence is a next action carrying the keyword.
+  Links: FAIL on B3 only. Fannie Mae first mention linked to the closed-list URL; internal /compare/cash-out-refinance-vs-heloc/, /guides/rental-property-tax-deductions/, /compare/reit-vs-rental-property/, /real-estate/ exist in dist; markdown only.
+  Dates, schema, indexing: PASS (Updated November 4, 2026; dateModified = datePublished; canonical; FAQPage; route in sitemap).
+  Rendered layout: PASS. A 6-column <table> inside .table-wrap (overflow-x:auto) so it scrolls instead of overflowing at 390px (structural check; no browser available in this run).
+  Dead-end gate: PASS after B4b (the "not covered here" lender-rules sentence is routed by "Ask a lender for its seasoning rule" in the takeaway).
+
+
+HARD FINDINGS (each blocks; quote, defect, plain fix)
+
+[B1] HARD | monotone-rhythm
+  field: Our Takeaway paragraphs + faqs[0] (sentences 106-115 of 132)
+  quote: "[29, 23, 20, 17, 24, 26, 15, 28, 24, 19]"
+  defect: Ten consecutive body sentences, all 15+ words (long band). Gate: FAIL if any run of 10 consecutive sentences uses one band.
+  fix: FIX sections[6] Our Takeaway: "The lender's real LTV limit and the appraisal can move this verdict in either direction." -> "The lender's real LTV limit and the appraisal can move this verdict either way." (14 words, medium band; breaks the run).
+
+[B2] HARD | overloaded sentence / unparseable (35 words)
+  field: introText para 2 sentence 3
+  quote: "In our internal modeling, a rental with $193,000 of purchase price, closing costs and repairs needed an appraisal of about $262,585 to return all of it, at an assumed 75% LTV and 2% refinance cost."
+  defect: First read: the rental has a $193,000 purchase price. "to return all of it" has no clear antecedent. 35 words, three ideas.
+  fix: In our internal modeling, a rental with $193,000 invested (purchase price, closing costs and repairs) needed an appraisal of about $262,585 to return all of it. That assumes a 75% LTV and a 2% refinance cost.
+
+[B2b] HARD | overloaded sentence (36 words, nested or)
+  field: introText para 3
+  quote: "The strategy stops working in three situations: the appraisal comes in low, lender seasoning rules or the six-month delayed financing cap limit the loan, or the new loan payment is more than the rent brings in."
+  defect: Three situations in one sentence with an "or" nested inside the second one; the reader cannot tell where item two ends.
+  fix: The strategy stops working when the appraisal comes in low, when a lender rule limits the loan, or when the new loan payment is more than the rent.
+
+[B2c] HARD | overloaded sentence (40 words)
+  field: sections[0] paragraph 3
+  quote: "Two numbers decide the deal: the total cash you put in (purchase price, closing costs and repairs) and the cash the new loan hands back (the appraised value times the lender's LTV limit, minus the cost of the new loan)."
+  defect: 40 words with two nested parentheticals.
+  fix: Two numbers decide the deal. The first is the total cash you put in: purchase price, closing costs and repairs. The second is the cash the new loan hands back: the appraised value times the lender's LTV limit, minus the cost of the new loan.
+
+[B2d] HARD | overloaded sentence (38 words)
+  field: sections[3] paragraph 2
+  quote: "If the purchase money came from an unsecured loan or a loan on another asset, such as a HELOC on another property, the refinance settlement statement must show all cash-out proceeds paying off or paying down that loan."
+  defect: 38 words, a conditional with a nested example and a participial result.
+  fix: If the purchase money came from an unsecured loan or a loan on another asset, such as a HELOC on another property, the cash-out proceeds must pay off or pay down that loan. The refinance settlement statement must show it.
+
+[B3] HARD | unlinked-company (first mention)
+  field: sections[4] (Depreciation) sentence 1
+  quote: "according to the Internal Revenue Service (IRS) in IRS Publication 527"
+  defect: The first mention of the IRS on the page is plain text; the link sits on the next three words. The closed URL list says to link the first mention of "IRS" to Publication 527.
+  fix: Residential rental buildings are generally depreciated over 27.5 years under the general depreciation system (GDS), according to the [Internal Revenue Service (IRS)](https://www.irs.gov/publications/p527) in Publication 527.
+
+[B4] HARD | meaning bar (placeholder nouns / backward pronoun)
+  field: sections[5] (When the BRRRR Method Stops Working) paragraph 1
+  quote: "Each one shows up differently in the numbers."
+  defect: "Each one" points back to three situations; "shows up differently in the numbers" names nothing; the next paragraph does the work.
+  fix: Delete the sentence.
+
+[B4b] HARD | off-question / unsupported lead
+  field: faqs[0] answer, last sentence
+  quote: "Under Fannie Mae's delayed financing exception, if the purchase was funded with an unsecured loan or a HELOC on another property, the refinance proceeds must pay off or pay down that loan."
+  defect: The question is how much money you need to start. This sentence (left behind when the claim check deleted its lead-in) states a delayed-financing rule with no connection to the question; the rule is already in section 4.
+  fix: Delete the sentence.
+
+[B5] HARD | consistency: "our reading + ask the lender" must appear in every place the repair-spending treatment is used
+  field: sections[1] table lead-in; sections[5] paragraph 3; sections[6] Our Takeaway
+  quote: "The capped path applies our reading of Fannie Mae's delayed financing limit, which the section on that exception explains. / On our reading of the delayed financing exception, a refinance inside six months returns about the purchase money and leaves the $40,000 of repairs in the deal at both the $230,000 and $260,000 appraisals. / based on our reading of the delayed financing wording."
+  defect: "Our reading" is present in all three places, but "ask the lender" appears only in section 4. The table lead-in and the takeaway present the capped column and the "not for" segment without the instruction that resolves the open question. The table lead-in also self-references ("which the section on that exception explains").
+  fix: Table lead-in: "The capped path applies our reading of Fannie Mae's delayed financing limit. Fannie Mae does not address repair spending, so ask the lender how it counts repair costs." Takeaway: "...based on our reading of the delayed financing wording, so ask the lender how it counts repair costs." Stops-working section: append "Fannie Mae does not address repair spending, so ask the lender."
+
+[B7] HARD | meta-narration / page self-reference
+  field: faqs[3] answer; faqs[2] answer
+  quote: "with no primary source on this page / no primary source cited here defines it"
+  defect: Page self-reference; F16 only requires saying that no listed source defines the rule.
+  fix: The 70% rule is another unverified investor rule of thumb that none of the sources listed below defines, and we do not endorse a figure from it. (Use the same wording in the 2% rule answer.)
+
+[B8] HARD | bare feature / jargon with no consequence
+  field: sections[3] paragraph 2
+  quote: "Cash-out pricing applies to the new loan."
+  defect: "Cash-out pricing" is unexplained and no consequence for the reader is on the fact list.
+  fix: Delete the sentence.
+
+
+ADVISORY FINDINGS (record only; do not block)
+
+[B6] ADVISORY | assumption must read as assumption
+  field: sections[1] paragraph after the inputs list
+  quote: "The standard path lends 75% of the appraised value."
+  defect: Read alone this states lender behavior. The 75% is the page's assumption (and the prompt says it must never read as a lender limit or a Fannie Mae figure). The assumption is labeled two paragraphs earlier, but this sentence and the table column header "Standard loan (75% LTV)" carry no label.
+  fix: The standard path assumes a loan of 75% of the appraised value. (Optional: header "Standard loan (assumed 75% LTV)".)
+
+[BA1] ADVISORY | derived numbers (generator flags 0.75, 0.98, 10000, 32585, 7350)
+  field: sections[1] paragraph 5
+  quote: "Dividing $193,000 by 0.98 gives a loan of about $196,939"
+  defect: All five flagged numbers are correct and traced: 0.75 is the labeled LTV assumption; 0.98 = 1 - 0.02 (output.json breakevenLoanForFullCashOut 196,938.78); 10000 is the $10,000 appraisal step; $32,585 = 262,585.03 - 230,000; $7,350 = 10,000 x 0.75 x 0.98. But 0.98 is not explained as "one minus the 2% cost", and $32,585 and $7,350 are not in the saved output.json.
+  fix: Dividing $193,000 by 0.98 (one minus the 2% cost) gives... Optionally add the $7,350 and $32,585 lines to run.py output on the next regeneration.
+
+[BA2] ADVISORY | restatement
+  field: introText para 1 sentence 2 and para 2 sentence 3
+  quote: "so we ran one hypothetical rental through that refinance at three appraised values / In our internal modeling, a rental with $193,000..."
+  defect: The tee-up and the modeling sentence both announce the hypothetical run.
+  fix: Keep the modeling sentence; keep the tee-up short.
+
+[BA3] ADVISORY | low information gain
+  field: sections[4] (Depreciation) paragraph 3
+  quote: "Publication 527's example is a $185,000 rental with a $160,000 building and $25,000 of land, so the basis is $160,000."
+  defect: The $185,000 / 3.182% / $5,091 example restates Pub. 527 without tying it to the $150,000 scenario; only the "placed in service when ready and available" example (July 5) is BRRRR-specific. The section stays above the floor without the first example.
+  fix: Optional trim.
+
+[BA4] ADVISORY | unexplained generalization
+  field: introText para 2
+  quote: "The new loan equals the post-repair appraisal times the lender's loan-to-value (LTV) limit"
+  defect: States the model as the rule: the loan can be up to that amount, and the later sections show the delayed-financing cap lowering it.
+  fix: The new loan can be as large as the post-repair appraisal times the lender's loan-to-value (LTV) limit, less the cost of the loan.
+
+[BA5] ADVISORY | acronym on first use
+  field: introText para 1
+  quote: "The BRRRR method gets your cash back only when..."
+  defect: BRRRR is spelled out in the meta description and in intro paragraph 2, after first use in the H1, title and first sentence.
+  fix: No change required.
+
+[BA6] ADVISORY | inherited context
+  field: /compare/cash-out-refinance-vs-heloc/
+  quote: "Both options usually cap your combined loan-to-value at about 80% to 85%."
+  defect: The edited comparison says 80% to 85% (unsourced, owner-occupied framing) while the BRRRR page assumes 75% for an investment property and labels it an assumption. Not a contradiction; flagged for a later source refresh.
+  fix: No change required in this run.
+
+[BA7] ADVISORY | 2% rule FAQ intent
+  field: faqs[2]
+  quote: "What is the 2% rule for rental property?"
+  defect: The answer never says what the rule is (F16 forbids any figure). Honest and consistent with the fact list, but a searcher gets no definition. Acceptable as written; if a sourced definition is wanted, add a labeled-unverified fact first.
+  fix: No change required.
+
+
+Note on generator flags: meta.guards 'missing metaTitle/subtitle/ctaTitle/ctaText/ctaButton/faqItems' are schema noise (the Guide template has no such fields; the page renders title, metaDescription, h1 and cardBlurb). The 'emptied by the claim check' flag lists section headings, but every section body is non-empty in the draft, in src/data/guides.ts and in the rendered HTML (verified line by line: every draft paragraph is found in dist, except the bold-label list lines of the HSA page, which render with literal asterisks, H1).

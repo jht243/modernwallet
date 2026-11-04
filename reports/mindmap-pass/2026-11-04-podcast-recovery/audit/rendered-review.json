@@ -1,0 +1,286 @@
+{
+  "reviewer": "phase4-reviewer-1",
+  "snapshotSha256": "1c13f527f3b5e956debe3c6b8c3e6924507b4dfe91d8baaa6960c6c0f51506cb",
+  "routes": [
+    {
+      "path": "/guides/tax-loss-harvesting/",
+      "fingerprint": "eb4419b30c11c57649959cae611a72d7e06ad23fa1e6a6f18911f7aff55fb783",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "FAIL",
+          "evidence": "Read the whole rendered page (intro, six sections, takeaway, six FAQs, sources). The decision path is coherent (answer in sentences 1-5, 0/15/20 table, deferral, wash sale, report, takeaway), but section 5 bullet 1 says \"Your long-term gains fall under the 2026 0% ceiling\" while section 2 says the test is taxable income including the gain (T3); five passages name a limitation and route nowhere or refer to \"this page\" (T1b-T1e, T2); \"The loss cancels capital gains.\" follows the personal-use sentence and reads as the wrong loss (T6). See audit/tax-loss-harvesting-findings.txt."
+        },
+        "sourceSupport": {
+          "status": "FAIL",
+          "evidence": "Live IRS fetches 2026-11-04: Topic 409, Rev. Proc. 2025-32 section 3.03 (all eight ceilings match), Pub. 550, Schedule D instructions support every figure and rule except: \"after your sale\" for a spouse or controlled-corporation purchase is not in Pub. 550 (T4), and the 0% ceiling is described on gains instead of taxable income (T3)."
+        },
+        "testingAndAttribution": {
+          "status": "FAIL",
+          "evidence": "No testing, client or review claim (grep: \"we tested\" 0). \"In our internal modeling\" appears twice for calculated arithmetic with inputs beside it and matches evidence.json provenance (basis calculated; replay identical). Defect T8: the sentence says the modeling used \"the IRS 2026 thresholds\", but run.py multiplies the loss by 0%, 15% and 20% and does not use the thresholds."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Visible \"Updated November 4, 2026\"; JSON-LD Article datePublished and dateModified both 2026-11-04; canonical https://www.themodernwallet.com/guides/tax-loss-harvesting/; FAQPage with 6 questions; Person author per site template; no noindex; route in dist/sitemap-0.xml."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "First IRS mention links tc409; Rev. Proc. 2025-32, Pub. 550 and Schedule D instructions linked at first mention; external hrefs all on allowed-urls.txt; internal /guides/wash-sale-rule-explained/, /guides/tax-tips/, /stock-capital-gains-tax-calculator/ resolve in dist; markdown only (no escaped tags)."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "One <table class=\"prose-table\"> (3 columns, th scope) inside .table-wrap with overflow-x:auto; the ceilings render as a <ul>; no literal markdown or ** in the captured text."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Finance/tax topic outside _experience.md section G: no TESTED format, no testing schema; no medical content; no professional-review or byline sentence in prose; disclaimer only in the template footer."
+        }
+      }
+    },
+    {
+      "path": "/guides/hsa-triple-tax-advantage/",
+      "fingerprint": "523e6ca94e27e1cb1754db20c1b78fe80e43da575a3423c73214f8853d69ad0e",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "FAIL",
+          "evidence": "Read the whole rendered page. Answer and limits are up top and consistent with the table and FAQs, but: the table family cell reads \"Spouse rules in Publication 969\" (H2); the takeaway and FAQ \"Is an HSA worth it?\" add a condition (pay bills from other cash, invest) that appears nowhere in the sources the same paragraph cites (H3); seven page self-references and several raised-and-dropped items (H5-H8); \"testing period\" is used but never defined (H8)."
+        },
+        "sourceSupport": {
+          "status": "FAIL",
+          "evidence": "Rev. Proc. 2025-19 and Pub. 969 (fetched 2026-11-04) support every dollar figure and rule on the page ($4,400, $8,750, $1,000, $1,700, $3,400, $8,500, $17,000, 6%, 20%, 10%, Medicare first month, last-month rule, premiums list). Defect H3: the takeaway says the answer \"rests on IRS Publication 969 and Rev. Proc. 2025-19\" but \"be invested\" and \"pay current medical bills from other cash\" are in neither; Pub. 969 contains no investing statement."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "Reported basis, third-person IRS attribution beside each rule, one labeled arithmetic line ($4,400 + $1,000 = $5,400); forbidden strings \"we tested\", \"our testing\" and \"In our internal\" are absent (grep 0); \"At ModernWallet, we\" appears once in the first body paragraph; no byline or review claim in prose."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Visible \"Updated November 4, 2026\"; Article datePublished = dateModified = 2026-11-04; canonical https://www.themodernwallet.com/guides/hsa-triple-tax-advantage/; FAQPage with 6 questions; route in dist/sitemap-0.xml; no noindex."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "First IRS mention links Pub. 969; Rev. Proc. 2025-19 linked; internal /compare/hsa-vs-fsa/, /compare/hsa-vs-roth-ira/, /guides/medicare-savings-programs/, /guides/tax-tips/, /retirement/ all resolve in dist. (The Medicare Savings Programs sentence is a copy defect, H6, not a link defect.)"
+        },
+        "renderedLayout": {
+          "status": "FAIL",
+          "evidence": "The built HTML and captured text show literal \"**\" in 10 list items (<li>**Contributions:** ...</li>, Earnings, Withdrawals, Excess contributions, Non-medical withdrawals, Insurance premiums, Double counting, and the three \"not for\" items): 20 asterisk characters in the rendered text, versus 0 on the other seven routes (H1). The 3-column table itself is a proper <table> inside .table-wrap."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "HSA is a tax-account topic: no medical claims, no TESTED format, no testing schema, no professional-review claim; state tax is explicitly out of scope; disclaimer only in the template footer."
+        }
+      }
+    },
+    {
+      "path": "/guides/brrrr-method/",
+      "fingerprint": "b0d23e51a336376c59762d977c3fe9a5da4d4c170c6c3d88aa5ac1fcda124116",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "FAIL",
+          "evidence": "Read the whole rendered page. Intro, worked example, seasoning rules, delayed financing, depreciation, stops-working section, takeaway and FAQs agree on $193,000 / $262,585 / 75% LTV / 2% cost and on the capped path ($40,000 left inside six months, labeled our reading). Defects: \"Each one shows up differently in the numbers.\" names nothing (B4); the first FAQ answer ends with an unrelated delayed-financing sentence (B4b); the table lead-in and takeaway present the capped reading without the \"ask the lender\" instruction that section 4 gives (B5); four sentences of 35-40 words (B2-B2d)."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Live fetch of Fannie Mae B2-1.3-03 (12/10/2025) supports the 12-month, six-month, listing, Eligibility Matrix, delayed-financing requirements and the \"initial investment ... plus financing of closing costs, prepaid fees, and points\" cap; the page has no mention of repairs, so \"Fannie Mae does not address repair spending\" is accurate. Pub. 527 supports 27.5/30 years, land, $185,000/$160,000/3.182%/$5,091 and the July 5 example. Generator-flagged 0.75, 0.98, 10000, 32585, 7350 are correct model arithmetic (replay: 262,585.03; 196,938.78)."
+        },
+        "testingAndAttribution": {
+          "status": "FAIL",
+          "evidence": "No testing or client claim; \"In our internal modeling\" x3 for modeled arithmetic with inputs beside it; 75% and 2% called \"our assumptions, and neither is a lender limit or a Fannie Mae figure\"; \"We did not buy or refinance a property\" stated. Defect B5: the repair-spending reading is labeled \"our reading\" everywhere but \"ask the lender\" is missing from the table lead-in, the stops-working paragraph and the takeaway, so the label is not consistent across section, table lead-in and takeaway."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Visible \"Updated November 4, 2026\"; Article datePublished = dateModified = 2026-11-04; canonical https://www.themodernwallet.com/guides/brrrr-method/; FAQPage with 6 questions; route in dist/sitemap-0.xml; no noindex."
+        },
+        "linksAndIndexability": {
+          "status": "FAIL",
+          "evidence": "Fannie Mae first mention links the closed-list B2-1.3-03 URL and internal routes /compare/cash-out-refinance-vs-heloc/, /guides/rental-property-tax-deductions/, /compare/reit-vs-rental-property/, /real-estate/ resolve. Defect B3: the first IRS mention (\"according to the Internal Revenue Service (IRS) in IRS Publication 527\") is unlinked; the link sits on the following three words."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "One 6-column <table class=\"prose-table\"> inside .table-wrap (overflow-x:auto) with th scope; <ul> inputs list and <ol> steps list render; no literal markdown in the captured text. Mobile check is structural (overflow wrapper present); no browser was available."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Lending/real-estate topic outside section G: no TESTED label, no testing schema; no \"we completed a BRRRR deal\" claim; $40,000 absent from title, metaDescription, h1, cardBlurb, headings and the intro; disclaimer only in the template footer."
+        }
+      }
+    },
+    {
+      "path": "/guides/tax-tips/",
+      "fingerprint": "cd8827bb70098edf5d85bb47a0871a292d514852654356b0855eb722083b82db",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Read the entire rendered page including inherited paragraphs, tables, FAQs and sources. Two anchors added: \"triple tax advantage\" in Tip 2 (links /guides/hsa-triple-tax-advantage/) and \"Tax-loss harvesting\" in Tip 3 (links /guides/tax-loss-harvesting/), both on existing words. No inherited statement contradicts the new guide it links to. Inherited $4,400/$8,750 and $3,000 figures agree with the new guides."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The edit adds no new rule, figure or claim that needs a source; the linked new guide is the page audited separately. Inherited figures are unchanged from the published page."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing, modeling or client claim added; the edit is a link (and, where noted, one plain sentence); forbidden strings absent."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Date policy exception, documented per _rendered-page-audit.md: the approved plan (readiness.md, chart-review.json PASS) makes these link-only edits with no date bump; visible Updated date and JSON-LD datePublished/dateModified are unchanged and equal to each other (tax-tips 2026-10-23, wash-sale 2026-09-30, the three comparisons 2026-06-25). phase-4-audit.md \"Updated-page date-bump rule\" would require a bump for any rendered link change; the orchestrator must confirm the exception (a bump on /compare/hsa-vs-fsa/ would stamp fresh a page that still shows 2025 limits). No sitemap lastmod is generated site-wide."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New anchor resolves to a built route (dist/guides/... exists), is markdown-rendered as a normal internal <a>, sits on natural anchor words, and canonical and indexability are unchanged."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Captured HTML shows the link inside the original <p>; no raw markdown or escaped tags; tables and layout unchanged."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Link-only scope respected: no other copy, metadata or schema changed (git diff 4251502..HEAD touches only the anchored text); no exclusion topics added; page not on a defend-lock list (no defended-pages.json)."
+        }
+      }
+    },
+    {
+      "path": "/guides/wash-sale-rule-explained/",
+      "fingerprint": "64d68303c76ab472069f392853b85d8823ac6df6914629e26dbf0676e8822f06",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Read the entire rendered page including inherited paragraphs, tables, FAQs and sources. One anchor \"harvest tax losses\" in the robo-advisor sentence links /guides/tax-loss-harvesting/, on existing words. No inherited statement contradicts the new guide it links to. The inherited IRA paragraph (loss never recovered, Rev. Rul. 2008-5) is consistent with the new guide; it is also the answer the new guide should route to (T2)."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The edit adds no new rule, figure or claim that needs a source; the linked new guide is the page audited separately. Inherited figures are unchanged from the published page."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing, modeling or client claim added; the edit is a link (and, where noted, one plain sentence); forbidden strings absent."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Date policy exception, documented per _rendered-page-audit.md: the approved plan (readiness.md, chart-review.json PASS) makes these link-only edits with no date bump; visible Updated date and JSON-LD datePublished/dateModified are unchanged and equal to each other (tax-tips 2026-10-23, wash-sale 2026-09-30, the three comparisons 2026-06-25). phase-4-audit.md \"Updated-page date-bump rule\" would require a bump for any rendered link change; the orchestrator must confirm the exception (a bump on /compare/hsa-vs-fsa/ would stamp fresh a page that still shows 2025 limits). No sitemap lastmod is generated site-wide."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New anchor resolves to a built route (dist/guides/... exists), is markdown-rendered as a normal internal <a>, sits on natural anchor words, and canonical and indexability are unchanged."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Captured HTML shows the link inside the original <p>; no raw markdown or escaped tags; tables and layout unchanged."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Link-only scope respected: no other copy, metadata or schema changed (git diff 4251502..HEAD touches only the anchored text); no exclusion topics added; page not on a defend-lock list (no defended-pages.json)."
+        }
+      }
+    },
+    {
+      "path": "/compare/hsa-vs-fsa/",
+      "fingerprint": "77846fb91e28f039c27d9a6b021de18154eb3fcc0d73f91e1e4f86bdd47d0dbe",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Read the entire rendered page including inherited paragraphs, tables, FAQs and sources. One anchor \"triple tax advantage\" in the third FSA-wins scenario links /guides/hsa-triple-tax-advantage/, on existing words. No inherited statement contradicts the new guide it links to. Advisory HA7: this older page labels its limits 2025 ($4,300/$8,550, HDHP $1,650/$3,300) while the linked guide gives 2026 limits; not a contradiction and not caused by this run."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The edit adds no new rule, figure or claim that needs a source; the linked new guide is the page audited separately. Inherited figures are unchanged from the published page."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing, modeling or client claim added; the edit is a link (and, where noted, one plain sentence); forbidden strings absent."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Date policy exception, documented per _rendered-page-audit.md: the approved plan (readiness.md, chart-review.json PASS) makes these link-only edits with no date bump; visible Updated date and JSON-LD datePublished/dateModified are unchanged and equal to each other (tax-tips 2026-10-23, wash-sale 2026-09-30, the three comparisons 2026-06-25). phase-4-audit.md \"Updated-page date-bump rule\" would require a bump for any rendered link change; the orchestrator must confirm the exception (a bump on /compare/hsa-vs-fsa/ would stamp fresh a page that still shows 2025 limits). No sitemap lastmod is generated site-wide."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New anchor resolves to a built route (dist/guides/... exists), is markdown-rendered as a normal internal <a>, sits on natural anchor words, and canonical and indexability are unchanged."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Captured HTML shows the link inside the original <p>; no raw markdown or escaped tags; tables and layout unchanged."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Link-only scope respected: no other copy, metadata or schema changed (git diff 4251502..HEAD touches only the anchored text); no exclusion topics added; page not on a defend-lock list (no defended-pages.json)."
+        }
+      }
+    },
+    {
+      "path": "/compare/cash-out-refinance-vs-heloc/",
+      "fingerprint": "840cf0d3e831fd2f0e726e94812e714c5d935ada6a5fdb0c7f765352e3d80ab6",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Read the entire rendered page including inherited paragraphs, tables, FAQs and sources. One sentence added in paragraph 1: \"Investors who buy a rental, repair it and refinance to pull their cash back out use this structure in the BRRRR method.\" with the anchor on \"BRRRR method\". No inherited statement contradicts the new guide it links to. Advisory: the sentence sits between the cash-out and HELOC sentences of the contrast and BRRRR is not expanded; moving it after the HELOC sentence would read better. Inherited \"80% to 85%\" combined LTV (owner-occupied framing) differs from the BRRRR guide's labeled 75% assumption (BA6); not a contradiction."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The edit adds no new rule, figure or claim that needs a source; the linked new guide is the page audited separately. Inherited figures are unchanged from the published page."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing, modeling or client claim added; the edit is a link (and, where noted, one plain sentence); forbidden strings absent."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Date policy exception, documented per _rendered-page-audit.md: the approved plan (readiness.md, chart-review.json PASS) makes these link-only edits with no date bump; visible Updated date and JSON-LD datePublished/dateModified are unchanged and equal to each other (tax-tips 2026-10-23, wash-sale 2026-09-30, the three comparisons 2026-06-25). phase-4-audit.md \"Updated-page date-bump rule\" would require a bump for any rendered link change; the orchestrator must confirm the exception (a bump on /compare/hsa-vs-fsa/ would stamp fresh a page that still shows 2025 limits). No sitemap lastmod is generated site-wide."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New anchor resolves to a built route (dist/guides/... exists), is markdown-rendered as a normal internal <a>, sits on natural anchor words, and canonical and indexability are unchanged."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Captured HTML shows the link inside the original <p>; no raw markdown or escaped tags; tables and layout unchanged."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Link-only scope respected: no other copy, metadata or schema changed (git diff 4251502..HEAD touches only the anchored text); no exclusion topics added; page not on a defend-lock list (no defended-pages.json)."
+        }
+      }
+    },
+    {
+      "path": "/compare/reit-vs-rental-property/",
+      "fingerprint": "6d2b818d8c6945d3281785e9b984d0dbec6e27c50e67ea58b6d149c000f4a906",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Read the entire rendered page including inherited paragraphs, tables, FAQs and sources. One sentence added as its own paragraph in \"How owning a rental property works\": \"Investors who repair a rental and then refinance to recover their cash follow the BRRRR method.\" with the anchor on \"BRRRR method\". No inherited statement contradicts the new guide it links to. Advisory: the one-sentence paragraph follows the REIT tax-classification paragraph and gives no consequence for the REIT-vs-rental decision; acceptable as a link bridge."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The edit adds no new rule, figure or claim that needs a source; the linked new guide is the page audited separately. Inherited figures are unchanged from the published page."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing, modeling or client claim added; the edit is a link (and, where noted, one plain sentence); forbidden strings absent."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Date policy exception, documented per _rendered-page-audit.md: the approved plan (readiness.md, chart-review.json PASS) makes these link-only edits with no date bump; visible Updated date and JSON-LD datePublished/dateModified are unchanged and equal to each other (tax-tips 2026-10-23, wash-sale 2026-09-30, the three comparisons 2026-06-25). phase-4-audit.md \"Updated-page date-bump rule\" would require a bump for any rendered link change; the orchestrator must confirm the exception (a bump on /compare/hsa-vs-fsa/ would stamp fresh a page that still shows 2025 limits). No sitemap lastmod is generated site-wide."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New anchor resolves to a built route (dist/guides/... exists), is markdown-rendered as a normal internal <a>, sits on natural anchor words, and canonical and indexability are unchanged."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Captured HTML shows the link inside the original <p>; no raw markdown or escaped tags; tables and layout unchanged."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Link-only scope respected: no other copy, metadata or schema changed (git diff 4251502..HEAD touches only the anchored text); no exclusion topics added; page not on a defend-lock list (no defended-pages.json)."
+        }
+      }
+    }
+  ]
+}

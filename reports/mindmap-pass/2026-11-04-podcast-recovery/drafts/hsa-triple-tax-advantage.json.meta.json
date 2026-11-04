@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "CONTENT_ANTHROPIC_KEY_2",
  "finish_reason": "STOP",
- "words": 1947,
+ "words": 1888,
  "floor": 1200,
  "input_tokens": 36246,
  "output_tokens": 16556,
@@ -21,13 +21,7 @@
  "guards": {
   "repairs": [],
   "flags": [
-   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "emptied by the claim check (nothing in the fact list could carry it): ['What the HSA Triple Tax Advantage Is and the 2026 Limits', 'Who Can Contribute to an HSA', 'Penalties That End the Three Tax Breaks', 'Year-to-Year Carryover and Portability', 'HSA Triple Tax Advantage Compared With an FSA or Roth IRA'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+   "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: '$1,000 for each eligible individual age 55 or older (no family total shown)'; 'Our [HSA vs. FSA comparison](/compare/hsa-vs-fsa/) puts the two health accounts '; 'Your own tax saving, which depends on your marginal tax rate and your state.'"
   ],
   "disallowed_urls_removed": [],
   "words": 1947,
@@ -94,7 +88,295 @@
    "html_comments_dropped": 0,
    "tokens_dropped_est": 0,
    "tokens_sent_est": 1169
-  }
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-04T02:11:41+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/hsa-triple-tax-advantage-findings.txt",
+    "applied": [
+     {
+      "id": "sections[0].body",
+      "quote": "**Contributions:**",
+      "replacement": "Contributions:",
+      "type": "H1 literal markdown",
+      "why": "Renderer shows literal asterisks in list labels."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "**Earnings:**",
+      "replacement": "Earnings:",
+      "type": "H1 literal markdown",
+      "why": "Renderer shows literal asterisks in list labels."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "**Withdrawals:**",
+      "replacement": "Withdrawals:",
+      "type": "H1 literal markdown",
+      "why": "Renderer shows literal asterisks in list labels."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "**Excess contributions:**",
+      "replacement": "Excess contributions:",
+      "type": "H1 literal markdown",
+      "why": "Renderer shows literal asterisks in list labels."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "**Non-medical withdrawals:**",
+      "replacement": "Non-medical withdrawals:",
+      "type": "H1 literal markdown",
+      "why": "Renderer shows literal asterisks in list labels."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "**Insurance premiums:**",
+      "replacement": "Insurance premiums:",
+      "type": "H1 literal markdown",
+      "why": "Renderer shows literal asterisks in list labels."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "**Double counting:**",
+      "replacement": "Double counting:",
+      "type": "H1 literal markdown",
+      "why": "Renderer shows literal asterisks in list labels."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "**No qualifying HDHP:**",
+      "replacement": "No qualifying HDHP:",
+      "type": "H1 literal markdown",
+      "why": "Renderer shows literal asterisks in list labels."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "**Already enrolled in Medicare and wanting to contribute:**",
+      "replacement": "Already enrolled in Medicare and wanting to contribute:",
+      "type": "H1 literal markdown",
+      "why": "Renderer shows literal asterisks in list labels."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "**Expecting to spend the money on non-medical costs before 65:**",
+      "replacement": "Expecting to spend the money on non-medical costs before 65:",
+      "type": "H1 literal markdown",
+      "why": "Renderer shows literal asterisks in list labels."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Spouse rules in Publication 969",
+      "replacement": "$1,000 for each eligible individual age 55 or older (no family total shown)",
+      "type": "H2 deferral cell",
+      "why": "Cell defers instead of stating the F6 fact."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "We do not add the $1,000 to the family limit here, because Publication 969 has separate rules for spouses.",
+      "replacement": "We do not total the family limit with the $1,000 here, because [IRS Publication 969](https://www.irs.gov/publications/p969) has spouse-specific rules.",
+      "type": "H2b dead-end",
+      "why": "Raises spouse rules without routing to the source."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "An HSA is worth opening for an eligible person on a qualifying HDHP who can pay current medical bills from other cash and let the HSA balance carry over or be invested.",
+      "replacement": "An HSA fits an eligible person on a qualifying HDHP who expects to use the money for qualified medical expenses.",
+      "type": "H3 unsupported takeaway condition",
+      "why": "Investing and paying from other cash are not in either IRS source."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "An HSA can be worth it if you are eligible, covered by a qualifying HDHP, and able to pay current medical bills from other cash while the balance carries over or is invested.",
+      "replacement": "An HSA can be worth it if you are eligible, covered by a qualifying HDHP and expect to spend the money on qualified medical expenses. Unspent amounts carry over to the next year.",
+      "type": "H3/H9 unsupported, overloaded FAQ sentence",
+      "why": "Same unsupported condition, and the sentence is overloaded."
+     },
+     {
+      "id": "sections[0].heading",
+      "quote": "What the HSA Triple Tax Advantage Is and the 2026 Limits",
+      "replacement": "HSA Triple Tax Advantage Limits for 2026",
+      "type": "H4 two-clause headline",
+      "why": "Uses the two-clause headline formula."
+     },
+     {
+      "id": "sections[4].heading",
+      "quote": "HSA Triple Tax Advantage Compared With an FSA or Roth IRA",
+      "replacement": "HSA Triple Tax Advantage Compared with an FSA or Roth IRA",
+      "type": "H4b heading case",
+      "why": "\"with\" stays lowercase in Title Case."
+     },
+     {
+      "id": "cardBlurb",
+      "quote": "The three HSA tax breaks, the 2026 IRS contribution and high-deductible plan limits, and the penalties and Medicare rule that end each break.",
+      "replacement": "For 2026, the HSA triple tax advantage applies to contributions of up to $4,400 self-only or $8,750 family, and contributions stop at Medicare enrollment.",
+      "type": "H4c tricolon deck",
+      "why": "Three parallel noun phrases built as a deck."
+     },
+     {
+      "id": "title",
+      "quote": "The HSA Triple Tax Advantage Allows $4,400 in 2026",
+      "replacement": "The HSA Triple Tax Advantage Allows $4,400 Self-Only in 2026",
+      "type": "H4d title accuracy",
+      "why": "Implies every reader can contribute $4,400."
+     },
+     {
+      "id": "introText",
+      "quote": "so this page gives the exact 2026 dollar limits from the [Internal Revenue Service (IRS)](https://www.irs.gov/publications/p969) and the rules that end each break",
+      "replacement": "so we list the exact 2026 dollar limits from the [Internal Revenue Service (IRS)](https://www.irs.gov/publications/p969) and the rules that end each break",
+      "type": "H5 page self-reference",
+      "why": "Page self-reference in the tee-up sentence."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "This page sticks to HSA rules, so the side-by-side figures are on those two pages.",
+      "replacement": "",
+      "type": "H5b self-reference/restatement",
+      "why": "Restates the two sentences before it."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "This explainer covers the federal rules in IRS Publication 969 and Rev. Proc. 2025-19, and several questions sit outside those two documents as we read them.",
+      "replacement": "IRS Publication 969 and Rev. Proc. 2025-19 do not cover these questions:",
+      "type": "H5c self-reference and hedge",
+      "why": "Self-reference and the \"as we read them\" hedge."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "- The \"adult child\" coverage question.",
+      "replacement": "",
+      "type": "H5c unexplained jargon bullet",
+      "why": "Jargon is raised but never explained, and F19 forbids an answer."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "The figures on this page do not fit three readers.",
+      "replacement": "The 2026 figures above do not fit three readers.",
+      "type": "H5d page self-reference",
+      "why": "Page self-reference."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Your state may tax HSAs differently, which this page does not cover.",
+      "replacement": "Your state may tax HSAs differently, and IRS Publication 969 does not address state income tax treatment.",
+      "type": "H5e self-reference/dead-end",
+      "why": "Self-reference; the replacement routes to the documented source gap instead."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "The Medicare rule reaches back in time.",
+      "replacement": "The Medicare rule can apply to earlier months.",
+      "type": "H7 abstract metaphor",
+      "why": "Metaphor stands in for a plain fact."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "You can deduct your own contributions without itemizing, earnings are tax free, and qualified medical withdrawals come out tax free.",
+      "replacement": "",
+      "type": "HA3 restatement",
+      "why": "Repeats the three breaks stated elsewhere; keep carryover and rollover."
+     },
+     {
+      "id": "sections[2].heading",
+      "quote": "Penalties That End the Three Tax Breaks",
+      "replacement": "Where the Three Tax Breaks End",
+      "type": "HA4 heading mislabel",
+      "why": "Premiums and double counting are limits, not penalties."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[1].body",
+      "quote": "Readers near Medicare enrollment can see what help exists in our [Medicare Savings Programs guide](/guides/medicare-savings-programs/).",
+      "finding": "H6 placeholder / force-fit link",
+      "why": "Needs new substance: describing the guide's content requires a fact not in SOURCE.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "That choice comes with a testing period.",
+      "finding": "H8 undefined term",
+      "why": "Needs new substance: the testing period definition is not in the fact list.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "if you have family HDHP coverage on the first day of the last month of your tax year, you can contribute the full-year limit",
+      "finding": "HA1 narrow framing",
+      "why": "Needs new substance: broadening requires a fact not in F11.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "HA2 adult child PAA not in FAQ",
+      "why": "Needs new substance: F19 forbids an answer without a source.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "introText",
+      "quote": "Medicare",
+      "finding": "HA5 unlinked first mention",
+      "why": "Advisory: Medicare is not on the closed URL list, so no change.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     },
+     {
+      "id": "sections[4].heading",
+      "quote": "HSA Triple Tax Advantage Compared with an FSA or Roth IRA",
+      "finding": "HA6 headline acronym",
+      "why": "Advisory: no change required.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "HA7 inherited 2025 figures on /compare/hsa-vs-fsa/",
+      "why": "Not on this page; the refresh belongs to a separate run.",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      3
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[0].body",
+       "quote": "$1,000 for each eligible individual age 55 or older (no family total shown)",
+       "type": "inference",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "Our [HSA vs. FSA comparison](/compare/hsa-vs-fsa/) puts the two health accounts side by side.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[5].body",
+       "quote": "Your own tax saving, which depends on your marginal tax rate and your state.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1888,
+    "flags": [
+     "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: '$1,000 for each eligible individual age 55 or older (no family total shown)'; 'Our [HSA vs. FSA comparison](/compare/hsa-vs-fsa/) puts the two health accounts '; 'Your own tax saving, which depends on your marginal tax rate and your state.'"
+    ]
+   }
+  ]
  },
  "seconds": 169.4,
  "response_id": "msg_011Cgh2E5TrmBj25g4U4DkT4",

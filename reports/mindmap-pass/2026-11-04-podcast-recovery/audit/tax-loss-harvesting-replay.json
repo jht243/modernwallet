@@ -1,0 +1,30 @@
+{
+  "deferral": {
+    "gainEqualsHarvestedLoss": true,
+    "gainIfLaterSoldAtOriginalPrice": 3000,
+    "newBasis": 7000,
+    "realizedLoss": 3000
+  },
+  "federalTaxSavedOnTenThousandDollarLossAgainstLongTermGains": {
+    "0pct": 0.0,
+    "15pct": 1500.0,
+    "20pct": 2000.0
+  },
+  "netLossYear": {
+    "carriedForward": 7000,
+    "deductibleAgainstOtherIncome": 3000,
+    "marriedFilingSeparatelyDeductible": 1500,
+    "netLoss": 10000
+  },
+  "units": "USD",
+  "washSaleIrsExample": {
+    "disallowedLoss": 250,
+    "newBasis": 1050
+  },
+  "zeroRateMaxTaxableIncome2026": {
+    "headOfHousehold": 66200,
+    "marriedFilingJointly": 98900,
+    "marriedFilingSeparately": 49450,
+    "single": 49450
+  }
+}

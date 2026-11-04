@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "CONTENT_ANTHROPIC_KEY_2",
  "finish_reason": "STOP",
- "words": 2476,
+ "words": 2419,
  "floor": 1200,
  "input_tokens": 37025,
  "output_tokens": 19903,
@@ -21,13 +21,7 @@
  "guards": {
   "repairs": [],
   "flags": [
-   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "emptied by the claim check (nothing in the fact list could carry it): ['How the BRRRR Method Works Step by Step', 'The BRRRR Method in a Worked Example', 'Lender Seasoning Rules That Slow the BRRRR Refinance', 'The Delayed Financing Exception Inside Six Months', 'Depreciation on a Repaired BRRRR Rental'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A rule of thumb cannot tell you whether the refinance returns your cash.'"
   ],
   "disallowed_urls_removed": [],
   "words": 2476,
@@ -107,7 +101,207 @@
    "html_comments_dropped": 0,
    "tokens_dropped_est": 0,
    "tokens_sent_est": 1169
-  }
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-04T02:12:35+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/brrrr-method-findings.txt",
+    "applied": [
+     {
+      "id": "sections[6].body",
+      "quote": "The lender's real LTV limit and the appraisal can move this verdict in either direction.",
+      "replacement": "The lender's real LTV limit and the appraisal can move this verdict either way.",
+      "type": "B1 monotone rhythm",
+      "why": "Shortens the sentence to the medium band so the run of long sentences breaks."
+     },
+     {
+      "id": "introText",
+      "quote": "In our internal modeling, a rental with $193,000 of purchase price, closing costs and repairs needed an appraisal of about $262,585 to return all of it, at an assumed 75% LTV and 2% refinance cost.",
+      "replacement": "In our internal modeling, a rental with $193,000 invested (purchase price, closing costs and repairs) needed an appraisal of about $262,585 to return all of it. That assumes a 75% LTV and a 2% refinance cost.",
+      "type": "B2 overloaded sentence",
+      "why": "Splits the sentence and makes clear that $193,000 is the total invested."
+     },
+     {
+      "id": "introText",
+      "quote": "The strategy stops working in three situations: the appraisal comes in low, lender seasoning rules or the six-month delayed financing cap limit the loan, or the new loan payment is more than the rent brings in.",
+      "replacement": "The strategy stops working when the appraisal comes in low, when a lender rule limits the loan, or when the new loan payment is more than the rent.",
+      "type": "B2b overloaded sentence",
+      "why": "Removes the nested 'or' so each of the three situations reads clearly."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Two numbers decide the deal: the total cash you put in (purchase price, closing costs and repairs) and the cash the new loan hands back (the appraised value times the lender's LTV limit, minus the cost of the new loan).",
+      "replacement": "Two numbers decide the deal. The first is the total cash you put in: purchase price, closing costs and repairs. The second is the cash the new loan hands back: the appraised value times the lender's LTV limit, minus the cost of the new loan.",
+      "type": "B2c overloaded sentence",
+      "why": "Splits the 40-word sentence and removes the nested parentheticals."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "If the purchase money came from an unsecured loan or a loan on another asset, such as a HELOC on another property, the refinance settlement statement must show all cash-out proceeds paying off or paying down that loan.",
+      "replacement": "If the purchase money came from an unsecured loan or a loan on another asset, such as a HELOC on another property, all cash-out proceeds must pay off or pay down that loan. The refinance settlement statement must show it.",
+      "type": "B2d overloaded sentence",
+      "why": "Splits the rule into two sentences and keeps the meaning of F7."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "according to the Internal Revenue Service (IRS) in [IRS Publication 527](https://www.irs.gov/publications/p527)",
+      "replacement": "according to the [Internal Revenue Service (IRS)](https://www.irs.gov/publications/p527) in Publication 527",
+      "type": "B3 unlinked IRS first mention",
+      "why": "Moves the closed-list link onto the first mention of the IRS."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Each one shows up differently in the numbers.",
+      "replacement": "",
+      "type": "B4 meaning bar",
+      "why": "Placeholder sentence that names nothing; the next paragraph does the work."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "Under Fannie Mae's delayed financing exception, if the purchase was funded with an unsecured loan or a HELOC on another property, the refinance proceeds must pay off or pay down that loan.",
+      "replacement": "",
+      "type": "B4b off-question sentence",
+      "why": "Off-question leftover; the rule is already covered in section 4."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "The capped path applies our reading of Fannie Mae's delayed financing limit, which the section on that exception explains.",
+      "replacement": "The capped path applies our reading of Fannie Mae's delayed financing limit. Fannie Mae does not address repair spending, so ask the lender how it counts repair costs.",
+      "type": "B5 consistency, ask the lender",
+      "why": "Adds the 'ask the lender' instruction and removes the page self-reference."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "On our reading of the delayed financing exception, a refinance inside six months returns about the purchase money and leaves the $40,000 of repairs in the deal at both the $230,000 and $260,000 appraisals.",
+      "replacement": "On our reading of the delayed financing exception, a refinance inside six months returns about the purchase money and leaves the $40,000 of repairs in the deal at both the $230,000 and $260,000 appraisals. Fannie Mae does not address repair spending, so ask the lender how it counts repair costs.",
+      "type": "B5 consistency, ask the lender",
+      "why": "Appends the required 'ask the lender' instruction to the repair-spending reading."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "It also does not fit anyone who needs a refinance inside six months to recover repair spending, based on our reading of the delayed financing wording.",
+      "replacement": "It also does not fit anyone who needs a refinance inside six months to recover repair spending, based on our reading of the delayed financing wording, so ask the lender how it counts repair costs.",
+      "type": "B5 consistency, ask the lender",
+      "why": "Adds the 'ask the lender' instruction to the takeaway's repair-spending point."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "The 70% rule is another unverified investor rule of thumb with no primary source on this page, and we do not endorse a figure from it.",
+      "replacement": "The 70% rule is another unverified investor rule of thumb that none of our listed sources defines, and we do not endorse a figure from it.",
+      "type": "B7 page self-reference",
+      "why": "Removes the 'on this page' self-reference while keeping the F16 point."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "The 2% rule is an investor rule of thumb, and no primary source cited here defines it, so we do not treat any figure from it as a standard.",
+      "replacement": "The 2% rule is an unverified investor rule of thumb that none of our listed sources defines, so we do not treat any figure from it as a standard.",
+      "type": "B7 page self-reference",
+      "why": "Removes the 'cited here' self-reference and matches the 70% rule wording."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Cash-out pricing applies to the new loan.",
+      "replacement": "",
+      "type": "B8 bare feature",
+      "why": "Unexplained jargon with no consequence for the reader on the fact list."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "The standard path lends 75% of the appraised value.",
+      "replacement": "The standard path assumes a loan of 75% of the appraised value.",
+      "type": "B6 assumption as assumption",
+      "why": "Labels the 75% as our assumption, not a lender behavior."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Standard loan (75% LTV)",
+      "replacement": "Standard loan (assumed 75% LTV)",
+      "type": "B6 table header label",
+      "why": "Labels the 75% in the table header as an assumption."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Dividing $193,000 by 0.98 gives a loan of about $196,939",
+      "replacement": "Dividing $193,000 by 0.98 (one minus the 2% cost) gives a loan of about $196,939",
+      "type": "BA1 derived numbers",
+      "why": "Explains that 0.98 is one minus the 2% cost."
+     },
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we show the math behind each money decision, so we ran one hypothetical rental through that refinance at three appraised values.",
+      "replacement": "At ModernWallet, we show the math behind each money decision.",
+      "type": "BA2 restatement",
+      "why": "Shortens the tee-up; the modeling sentence already announces the run."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Publication 527's example is a $185,000 rental with a $160,000 building and $25,000 of land, so the basis is $160,000.",
+      "replacement": "",
+      "type": "BA3 low information gain",
+      "why": "Optional trim; this example does not tie to the BRRRR scenario."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Placed in service on February 8 under GDS, the first-year rate is 3.182%, which gives a deduction of $5,091 ($160,000 \u00d7 3.182%).",
+      "replacement": "",
+      "type": "BA3 low information gain",
+      "why": "Removed together with the example sentence it depends on."
+     },
+     {
+      "id": "introText",
+      "quote": "The new loan equals the post-repair appraisal times the lender's loan-to-value (LTV) limit, and the cost of that loan comes out of it.",
+      "replacement": "The new loan can be as large as the post-repair appraisal times the lender's loan-to-value (LTV) limit, and the cost of that loan comes out of it.",
+      "type": "BA4 unexplained generalization",
+      "why": "States the amount as a ceiling, since the delayed-financing cap can lower it."
+     },
+     {
+      "id": "introText",
+      "quote": "The BRRRR method gets your cash back only when the refinance loan on the repaired house covers what you put into it.",
+      "replacement": "The BRRRR method gets your cash back only when the refinance loan on the repaired house covers what you put into it.",
+      "type": "BA5 acronym on first use",
+      "why": "Reviewer says no change required; text kept as is."
+     },
+     {
+      "id": "faqs[2].question",
+      "quote": "What is the 2% rule for rental property?",
+      "replacement": "What is the 2% rule for rental property?",
+      "type": "BA7 2% rule FAQ intent",
+      "why": "No change required; a definition needs new substance not in SOURCE."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "BA6 inherited context on comparison page",
+      "why": "Points at another page; reviewer says no change required in this run.",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "faqs[2].answer",
+       "quote": "A rule of thumb cannot tell you whether the refinance returns your cash.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2419,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A rule of thumb cannot tell you whether the refinance returns your cash.'"
+    ]
+   }
+  ]
  },
  "seconds": 208.4,
  "response_id": "msg_011Cgh2SaArcfyuT6bxzkSjk",

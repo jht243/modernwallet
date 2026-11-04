@@ -1,0 +1,173 @@
+PHASE 4 FINDINGS: /guides/hsa-triple-tax-advantage/ (guide, operator register, page type explainer, floor 1,200; basis reported plus one labeled arithmetic line)
+Reviewer: phase4-reviewer-1 (independent; did not write the page). Date: 2026-11-04.
+OVERALL VERDICT: FAIL (rendered literal markdown, deferral cell, unsupported takeaway condition; fixes below)
+Hard findings: 17. Advisory findings: 7.
+
+GATE RESULTS
+  Depth (first and last; `wc -w`): 1,776 words with the table, 1,713 without. Floor 1,200. PASS. Built-HTML cross-check: 1,707.
+  Sentence rhythm (119 sentences and fragments): short 35, medium 30, long 54. No run of 10 in one band. The only flat-5 (6, 6, 3, 3, 5 words) is the "does not cover" list fragments (see H5c). PASS.
+  Headline-field scan (title, metaDescription, h1, cardBlurb, 7 H2, 6 FAQ questions): FAIL. Title accuracy H4d; two-clause H2 H4; heading case ("With") H4b; tricolon cardBlurb H4c. metaDescription "covers contributions, growth and medical withdrawals" is three distinct items inside one sentence, not a deck: advisory only. FAQ questions clean (PAA verbatim).
+  Mechanical: em-dash 0, "honest" 0, exclamation 0, hype adjectives 0, neutrality claims 0, "we tested" or "in our internal" 0. Heading Title Case: FAIL on one H2 (H4b). Literal markdown in rendered text: FAIL (H1: 20 asterisk characters in 10 list items).
+  Anti-AI body tells: FAIL. Page self-reference x7 (H5, H5b, H5c, H5d, H5e), dead-ends (H2b, H5c, H5e, H8), placeholder "what help exists" (H6), abstract metaphor (H7), 33-word tee-up (H5).
+  Experience truth and provenance: PASS. Reported basis: every rule is attributed to IRS Publication 969 or Rev. Proc. 2025-19 in third person; one labeled arithmetic line ($4,400 + $1,000 = $5,400). No internal-modeling, testing, client or review claim. "At ModernWallet, we" once (intro sentence 2).
+  Source claims traced to the F-list and live sources (fetched 2026-11-04): Rev. Proc. 2025-19: $4,400, $8,750, $1,700, $3,400, $8,500, $17,000 exact. Pub. 969 (reviewed 30-Apr-2026): 2026 Tip ($4,400/$8,750), $1,000 at 55 or older, Medicare first month and retroactive rule, last-month rule and testing period, 6 percent excise (Form 5329), 20 percent additional tax with disability, age 65 and death exceptions, premium exceptions and Medigap, Schedule A double counting, rollovers, carryover, portability, in-network rule, Forms 8889/5498-SA/1099-SA/W-2 box 12 code W. All VERIFIED. FAIL on H3 only (investing and "pay from other cash" are in neither document).
+  Carry-forward advisories: disability and death exceptions to the extra 20 percent stated (Penalties section): CONFIRMED. $4,400 is labeled self-only in the intro, the table header and the meta description: CONFIRMED (but not in the title: H4d).
+  Intent: PASS with HA2. Answer in the intro and section 1; on-topic PAA meaning, expire, advantages, downside are in the FAQ; the "adult child" PAA is unanswered (F19 forbids an answer; advisory); off-topic Dave Ramsey absent.
+  Required elements: PASS. Not-for readers (no HDHP, Medicare enrollees, pre-65 non-medical spending) and what would change the answer (new IRS limits, HDHP rule change) present; the last body sentence is a next action carrying the keyword.
+  Links: PASS. First IRS mention (intro) links Pub. 969; Rev. Proc. 2025-19 linked; allowed URLs only; internal /compare/hsa-vs-fsa/, /compare/hsa-vs-roth-ira/, /guides/medicare-savings-programs/, /guides/tax-tips/, /retirement/ exist in dist. H6 is a copy defect in the anchor sentence, not a broken link.
+  Dates, schema, indexing: PASS (Updated November 4, 2026; datePublished = dateModified = 2026-11-04; canonical correct; FAQPage; route in sitemap).
+  Rendered layout: FAIL (H1). The table is a real <table> in .table-wrap; the deferral cell is H2.
+  Decision-evidence section 4 (reported basis): the reasoning trail from sources to conclusion is in evidence.json; the takeaway attributes an unsupported condition to the sources (H3).
+
+
+HARD FINDINGS (each blocks; quote, defect, plain fix)
+
+[H1] HARD | rendered layout: literal markdown
+  field: sections[0], sections[2], sections[5] list items
+  quote: "**Contributions:** Publication 969 says you can deduct contributions"
+  defect: The page renderer does not parse inline bold inside list items. The built HTML (dist/guides/hsa-triple-tax-advantage/index.html) and the captured text show the literal asterisks in 10 list items: Contributions, Earnings, Withdrawals, Excess contributions, Non-medical withdrawals, Insurance premiums, Double counting, No qualifying HDHP, Already enrolled in Medicare and wanting to contribute, Expecting to spend the money on non-medical costs before 65. Verified: 20 "**" occurrences in the rendered text; the other two new pages and all five edited pages have none.
+  fix: Mechanical (Rung 0): delete the paired ** markers in all 10 list items, leaving plain "Contributions: Publication 969 says ..." labels (or turn each label into a lead-in sentence).
+
+[H2] HARD | deferral in a data cell
+  field: sections[0] table row 2, family column
+  quote: "Spouse rules in Publication 969"
+  defect: A table cell that sends the reader elsewhere instead of carrying the fact. The fact is public: IRS Publication 969 says the $1,000 increase applies to an eligible individual age 55 or older (F6), and that when both spouses are 55 or older and not enrolled in Medicare each spouse's limit increases by the additional contribution.
+  fix: Replace the cell with a statement from F6: "$1,000 for each eligible individual age 55 or older (no family total shown)". If the orchestrator wants the spouse rule itself, add the Pub. 969 "Rules for married people" sentence to the closed fact list first.
+
+[H2b] HARD | dead-end
+  field: sections[0] paragraph after the table
+  quote: "We do not add the $1,000 to the family limit here, because Publication 969 has separate rules for spouses."
+  defect: Raises the spouse rules and does not route to them (no link to the exact page, which is on the closed URL list).
+  fix: We do not total the family limit with the $1,000 here, because [IRS Publication 969](https://www.irs.gov/publications/p969) has separate rules for married people.
+
+[H3] HARD | unsupported claim attributed to the sources
+  field: sections[6] (Our Takeaway) paragraph 1; faqs[5]
+  quote: "An HSA is worth opening for an eligible person on a qualifying HDHP who can pay current medical bills from other cash and let the HSA balance carry over or be invested."
+  defect: The takeaway then says "That answer rests on IRS Publication 969 and Rev. Proc. 2025-19." Neither document (fetched 2026-11-04) says anything about investing HSA money or about paying current bills from other cash; F19 lists custodian investment menus as not covered. The condition is the site's own tax-tips advice, unsupported on this page and unlabeled as our view. The same conclusion is repeated in the FAQ "Is an HSA worth it?" ("able to pay current medical bills from other cash while the balance carries over or is invested").
+  fix: An HSA fits an eligible person on a qualifying HDHP who expects to use the money for qualified medical expenses, because the deduction, the tax-free earnings and the tax-free medical withdrawals all apply to the same dollars. // FAQ: An HSA can be worth it if you are eligible, covered by a qualifying HDHP and expect to spend the money on qualified medical expenses. Unspent amounts carry over to the next year, and a non-medical withdrawal before 65 costs income tax plus a possible 20% additional tax.
+
+[H4] HARD | headline-tell (two-clause formula)
+  field: sections[0].heading (H2)
+  quote: "What the HSA Triple Tax Advantage Is and the 2026 Limits"
+  defect: "What X Is and the Y" is the two-clause headline formula.
+  fix: HSA Triple Tax Advantage Limits for 2026
+
+[H4b] HARD | heading case
+  field: sections[4].heading (H2)
+  quote: "HSA Triple Tax Advantage Compared With an FSA or Roth IRA"
+  defect: Title Case rule keeps "with" lowercase unless first or last word. (Mechanical.)
+  fix: HSA Triple Tax Advantage Compared with an FSA or Roth IRA
+
+[H4c] HARD | headline-tell (tricolon deck)
+  field: cardBlurb
+  quote: "The three HSA tax breaks, the 2026 IRS contribution and high-deductible plan limits, and the penalties and Medicare rule that end each break."
+  defect: Three parallel noun phrases built as a deck.
+  fix: The HSA triple tax advantage allows up to $4,400 self-only or $8,750 family in 2026, until Medicare enrollment or a non-medical withdrawal ends a break.
+
+[H4d] HARD | headline accuracy (carried advisory from chart review)
+  field: title
+  quote: "The HSA Triple Tax Advantage Allows $4,400 in 2026"
+  defect: The chart reviewer carried "self-only in title" to Phase 4. The title implies every reader can contribute $4,400; the prompt constraint says never imply that. The qualifier is in the intro, table and meta description but not in the title a searcher reads first.
+  fix: The HSA Triple Tax Advantage Allows $4,400 Self-Only in 2026 (60 characters)
+
+[H5] HARD | meta-narration / page self-reference
+  field: introText para 1
+  quote: "so this page gives the exact 2026 dollar limits from the Internal Revenue Service (IRS) and the rules that end each break"
+  defect: Page self-reference in a 33-word tee-up sentence.
+  fix: At ModernWallet, we show the math in every guide we publish, so we list the exact 2026 dollar limits from the [Internal Revenue Service (IRS)](https://www.irs.gov/publications/p969) and the rules that end each break. (Keep the link.)
+
+[H5b] HARD | meta-narration / restatement
+  field: sections[4] (Compared With an FSA or Roth IRA)
+  quote: "This page sticks to HSA rules, so the side-by-side figures are on those two pages."
+  defect: Page self-reference that restates the two sentences before it (which already say where the comparisons are).
+  fix: Delete the sentence.
+
+[H5c] HARD | meta-narration / dead-end
+  field: sections[5] (Does Not Cover) opening and list
+  quote: "This explainer covers the federal rules in IRS Publication 969 and Rev. Proc. 2025-19, and several questions sit outside those two documents as we read them."
+  defect: Self-reference ("This explainer") followed by six list fragments that are all raised and not routed: state income tax, custodian fees and investment menu, employer contribution amounts, limits for 2027, the "adult child" coverage question (jargon, never explained), your own tax saving. Also hedges with "as we read them".
+  fix: IRS Publication 969 and Rev. Proc. 2025-19 do not cover state income tax treatment of HSAs, custodian fees and investment menus, employer contribution amounts or limits for 2027. A tax professional can apply your marginal rate and your state's rules. Delete the "adult child" bullet (or answer it only if a source is added to the fact list).
+
+[H5d] HARD | meta-narration
+  field: sections[5]
+  quote: "The figures on this page do not fit three readers."
+  defect: Page self-reference; three parallel items announced as a set (already a list, fine).
+  fix: Three readers should look elsewhere:
+
+[H5e] HARD | meta-narration / dead-end
+  field: sections[6] (Our Takeaway) paragraph 2
+  quote: "Your state may tax HSAs differently, which this page does not cover."
+  defect: Self-reference; state tax raised and not routed.
+  fix: Your state may tax HSAs differently, so ask a tax professional about your state.
+
+[H6] HARD | placeholder noun / force-fit link
+  field: sections[1] paragraph 3
+  quote: "Readers near Medicare enrollment can see what help exists in our Medicare Savings Programs guide."
+  defect: "what help exists" is a placeholder. The linked guide ("Can Your State Pay Your Part B Premium?") is about state help with Medicare premiums for low-income enrollees, not about HSA contributions after retroactive Medicare coverage, so the sentence neither says what the link is nor why it follows the retroactive-coverage point.
+  fix: If you are near Medicare enrollment, our Medicare Savings Programs guide explains how your state can pay your Part B premium if you qualify. (Verified against the linked guide's first paragraph; add that to the fact list or delete the sentence.)
+
+[H7] HARD | abstract metaphor
+  field: sections[1] paragraph 3
+  quote: "The Medicare rule reaches back in time."
+  defect: Folksy/abstract metaphor for a plain fact; the next sentence states the fact.
+  fix: The Medicare rule can apply to earlier months.
+
+[H8] HARD | dead-end (undefined term)
+  field: sections[1] paragraphs 4-5
+  quote: "That choice comes with a testing period."
+  defect: "Testing period" is raised, never defined, and the next paragraph says what happens if you fail it. IRS Publication 969: the testing period begins with the last month of your tax year and ends on the last day of the 12th month after it (for example December 1, 2025 to December 31, 2026). "That choice" is also a backward pronoun for a rule that is not a choice.
+  fix: Add the Pub. 969 definition to the fact list, then: "The last-month rule carries a testing period that begins with the last month of your tax year and ends on the last day of the 12th month after it." Or delete both sentences.
+
+[H9] HARD | overloaded sentence (33 words)
+  field: faqs[5] answer / introText
+  quote: "An HSA can be worth it if you are eligible, covered by a qualifying HDHP, and able to pay current medical bills from other cash while the balance carries over or is invested."
+  defect: See H3; rewrite together with H3.
+  fix: See H3 FAQ replacement.
+
+
+ADVISORY FINDINGS (record only; do not block)
+
+[HA1] ADVISORY | narrow framing vs source
+  field: sections[1] paragraph 4
+  quote: "if you have family HDHP coverage on the first day of the last month of your tax year, you can contribute the full-year limit"
+  defect: Matches F11 and the Pub. 969 Tip, but the general last-month rule in Pub. 969 applies to any eligible individual on the first day of the last month (December 1 for most taxpayers). Reads as family-only.
+  fix: Broaden F11 to "if you are an eligible individual on the first day of the last month of your tax year (December 1 for most taxpayers)".
+
+[HA2] ADVISORY | PAA coverage
+  field: faqs
+  quote: "(adult child)"
+  defect: The on-topic PAA "adult child" question is not in the FAQ; it appears only as an unexplained "not covered" bullet. F19 forbids an answer, so the gate is met only by narrowing: remove the jargon bullet (see H5c).
+  fix: No new FAQ unless a source is added.
+
+[HA3] ADVISORY | restatement across the page
+  field: introText, sections[0], faqs[0], faqs[2]
+  quote: "three tax breaks"
+  defect: The three breaks are stated in the intro (twice), the section opener, three bullets, FAQ 1 and FAQ 3. Each passage stands alone for extraction, so it is advisory, but it is the main reason the page reads long.
+  fix: Trim FAQ 3 to the carryover and portability advantages it adds.
+
+[HA4] ADVISORY | heading mislabel
+  field: sections[2].heading
+  quote: "Penalties That End the Three Tax Breaks"
+  defect: "Insurance premiums" and "Double counting" are limits, not penalties.
+  fix: Where the Three Tax Breaks End (the prompt's own heading).
+
+[HA5] ADVISORY | unlinked first mention
+  field: introText
+  quote: "Medicare"
+  defect: First mention of Medicare is plain text; it is a federal program, not an organization on the closed URL list, so advisory. The related internal guide link arrives two sections later.
+  fix: No change required.
+
+[HA6] ADVISORY | headline acronym
+  field: sections[4].heading
+  quote: "HSA Triple Tax Advantage Compared With an FSA or Roth IRA"
+  defect: FSA and IRA are expanded only in the first sentence of that section, after the heading.
+  fix: No change required.
+
+[HA7] ADVISORY | inherited context
+  field: /compare/hsa-vs-fsa/
+  quote: "2025 contribution limit $4,300 individual / $8,550 family"
+  defect: The edited comparison page labels its figures 2025 (and shows "Updated June 25, 2026") while the page it now links to publishes 2026 limits. Not a contradiction, and not caused by this run. Follow-up refresh belongs to a separate run; do not bump this date without refreshing the figures.
+  fix: No change required in this run.
+
+
+Note on generator flags: meta.guards 'missing metaTitle/subtitle/ctaTitle/ctaText/ctaButton/faqItems' are schema noise (the Guide template has no such fields; the page renders title, metaDescription, h1 and cardBlurb). The 'emptied by the claim check' flag lists section headings, but every section body is non-empty in the draft, in src/data/guides.ts and in the rendered HTML (verified line by line: every draft paragraph is found in dist, except the bold-label list lines of the HSA page, which render with literal asterisks, H1).

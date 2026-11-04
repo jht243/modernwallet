@@ -1,0 +1,87 @@
+{
+  "updated": "2026-11-04",
+  "slug": "brrrr-method",
+  "title": "BRRRR Method Works Only If the Appraisal Covers Your Costs",
+  "metaDescription": "BRRRR (buy, rehab, rent, refinance, repeat) returns your cash only when the appraisal and loan-to-value cover it. See the break-even and Fannie Mae rules.",
+  "h1": "The BRRRR Method",
+  "cardBlurb": "How the buy, rehab, rent, refinance, repeat strategy works and what appraisal it takes to get your cash back under Fannie Mae refinance rules.",
+  "introText": "The BRRRR method gets your cash back only when the refinance loan on the repaired house covers what you put into it. At ModernWallet, we show the math behind each money decision, so we ran one hypothetical rental through that refinance at three appraised values.\n\nBRRRR is investor shorthand for buy, rehab, rent, refinance, repeat. The new loan equals the post-repair appraisal times the lender's loan-to-value (LTV) limit, and the cost of that loan comes out of it. In our internal modeling, a rental with $193,000 of purchase price, closing costs and repairs needed an appraisal of about $262,585 to return all of it, at an assumed 75% LTV and 2% refinance cost.\n\nThe strategy stops working in three situations: the appraisal comes in low, lender seasoning rules or the six-month delayed financing cap limit the loan, or the new loan payment is more than the rent brings in.",
+  "sections": [
+    {
+      "heading": "How the BRRRR Method Works Step by Step",
+      "body": "The BRRRR method runs in five steps, and your cash comes back at the fourth step, the refinance. Investors describe the strategy with this shorthand:\n\n1. Buy a property that needs work.\n2. Rehab it with repairs.\n3. Rent it.\n4. Refinance it with a new loan based on the repaired value.\n5. Repeat with the cash the refinance returns.\n\nBuild the refinance math before you buy. Two numbers decide the deal: the total cash you put in (purchase price, closing costs and repairs) and the cash the new loan hands back (the appraised value times the lender's LTV limit, minus the cost of the new loan). If the second number is smaller, the gap stays tied up in the property.\n\nThe refinance in step 4 is a cash-out refinance. Under the [Fannie Mae Selling Guide](https://selling-guide.fanniemae.com/sel/b2-1.3-03/cash-out-refinance-transactions), a cash-out refinance can take equity out of the property for any purpose. The new loan must either pay off the existing mortgage with a new first mortgage on the same property, or be a new mortgage on a property with no mortgage lien.\n\nA house bought with cash and carrying no lien fits that second case. Fannie Mae sets the maximum LTV for a cash-out refinance in its Eligibility Matrix. The 75% figure in our example below is an assumption of ours, so swap in the limit your lender quotes."
+    },
+    {
+      "heading": "The BRRRR Method in a Worked Example",
+      "body": "In our internal modeling, we ran one hypothetical $150,000 purchase with $40,000 of repairs through a refinance at three appraised values, and getting all $193,000 back took an appraisal of about $262,585. That result assumes a 75% LTV and a 2% cost on the new loan. Both are our assumptions, and neither is a lender limit or a Fannie Mae figure.\n\nThese are the inputs we used:\n\n- Purchase price: $150,000, paid in cash\n- Purchase closing costs: $3,000\n- Repairs: $40,000\n- Total cash invested: $193,000\n- Assumed LTV on the appraised value: 75%\n- Assumed cost of the new loan: 2% of the loan amount\n\nThe table shows two refinance paths. The standard path lends 75% of the appraised value. The capped path applies our reading of Fannie Mae's delayed financing limit, which the section on that exception explains.\n\n| Appraised value | Standard loan (75% LTV) | Net after 2% cost | Cash left in deal (standard) | Capped loan (delayed financing reading) | Cash left in deal (capped) |\n|---|---|---|---|---|---|\n| $200,000 | $150,000 | $147,000 | $46,000 | $150,000 | $46,000 |\n| $230,000 | $172,500 | $169,050 | $23,950 | about $156,122 | $40,000 |\n| $260,000 | $195,000 | $191,100 | $1,900 | about $156,122 | $40,000 |\n\nThe break-even works backward from the cash invested. Dividing $193,000 by 0.98 gives a loan of about $196,939, and dividing that loan by 0.75 gives an appraisal of about $262,585. That appraisal is 1.36 times the $193,000 you put in.\n\nOn the standard path, each extra $10,000 of appraised value adds $7,350 of net proceeds ($10,000 × 0.75 × 0.98). The $230,000 appraisal falls about $32,585 short of break-even, so $23,950 stays in the deal. We did not buy or refinance a property, and every dollar amount in this example is illustrative."
+    },
+    {
+      "heading": "Lender Seasoning Rules That Slow the BRRRR Refinance",
+      "body": "Fannie Mae requires at least one borrower to be on title for six months before a cash-out refinance disburses, and it adds two more timing and listing rules. These rules come from Selling Guide section B2-1.3-03, dated December 10, 2025:\n\n- Title: at least one borrower must have been on title for at least six months before the disbursement date of the new loan. Fannie Mae lists exceptions under \"Ownership of the Property.\"\n- Existing first mortgage: a first mortgage paid off by the refinance must be at least 12 months old, measured from its note date to the new loan's note date. The rule does not apply to subordinate liens or to buying out a co-owner under a legal agreement.\n- Listing: a property that was listed for sale must come off the market on or before the disbursement date of the new loan.\n\nIf you financed the purchase with a first mortgage on the house, the refinance cannot pay that loan off until it is 12 months old. A cash purchase leaves no first mortgage to pay off. In that case the six-month title rule and the delayed financing exception set the timing.\n\nFannie Mae's rules apply to loans sold to or guaranteed by Fannie Mae. Portfolio loans and other loan types follow each lender's own rules, which are not covered here. If you are weighing a cash-out refinance against a home equity line of credit (HELOC), our [cash-out refinance vs. HELOC comparison](/compare/cash-out-refinance-vs-heloc/) sets the two side by side."
+    },
+    {
+      "heading": "The Delayed Financing Exception Inside Six Months",
+      "body": "Fannie Mae's delayed financing exception lets a borrower who bought the property within the past six months take a cash-out refinance, with the new loan capped at the documented purchase investment. The six months run from the purchase date to the disbursement date of the new loan. Every one of these requirements must be met:\n\n- The original purchase was an arms-length transaction.\n- You meet Fannie Mae's borrower eligibility requirements.\n- A settlement statement shows no mortgage financing was used for the purchase.\n- A title search shows no existing liens.\n- The sources of the purchase funds are documented.\n- If the purchase money came from an unsecured loan or a loan on another asset, such as a HELOC on another property, the refinance settlement statement must show all cash-out proceeds paying off or paying down that loan.\n- Gift funds used for the purchase cannot be reimbursed with the new loan.\n\nCash-out pricing applies to the new loan. The loan can be no more than the documented initial investment in purchasing the property plus financed closing costs, prepaid fees and points on the new loan. It also cannot exceed the maximum LTV on the current appraised value.\n\nOur reading of that wording is that repair spending falls outside the \"initial investment in purchasing the property.\" Fannie Mae's guide does not address repair spending either way, so this interpretation is ours. A lender could read the rule differently.\n\nIn our internal modeling, we capped the loan at the $153,000 purchase investment ($150,000 price plus $3,000 closing costs) plus 2% financing of the new loan's costs. That cap comes to about $156,122. At the $230,000 and $260,000 appraisals, net proceeds were $153,000 and the $40,000 of repair money stayed in the deal.\n\nAt the $200,000 appraisal, the 75% limit produced a smaller loan than the cap. The loan was $150,000 and $46,000 stayed in. Ask the lender how it counts repair costs under this exception before you buy, and read the exception's full text in [Fannie Mae's Selling Guide](https://selling-guide.fanniemae.com/sel/b2-1.3-03/cash-out-refinance-transactions)."
+    },
+    {
+      "heading": "Depreciation on a Repaired BRRRR Rental",
+      "body": "Residential rental buildings are generally depreciated over 27.5 years under the general depreciation system (GDS), according to the Internal Revenue Service (IRS) in [IRS Publication 527](https://www.irs.gov/publications/p527). The alternative depreciation system (ADS) uses 30 years. Both periods cover the building and its structural components.\n\nLand is not part of the depreciation basis. Publication 527's example is a $185,000 rental with a $160,000 building and $25,000 of land, so the basis is $160,000. Placed in service on February 8 under GDS, the first-year rate is 3.182%, which gives a deduction of $5,091 ($160,000 × 3.182%).\n\nFor a BRRRR property, the depreciation start date follows the repairs. In another Publication 527 example, a house bought and extensively repaired was ready for rent on July 5, advertised in July and rented starting September 1. The IRS treats that house as placed in service in July, when it was ready and available for rent, so depreciation can begin then.\n\nOur scenario does not split the $150,000 price into land and building, so it produces no depreciation figure. See our [rental property tax deductions guide](/guides/rental-property-tax-deductions/)."
+    },
+    {
+      "heading": "When the BRRRR Method Stops Working",
+      "body": "The BRRRR method stops returning your cash when the appraisal comes in low, when a lender cap limits the loan, or when the new payment is more than the rent brings in. Each one shows up differently in the numbers.\n\nThe $200,000 row in our model shows a low appraisal. The loan is $150,000, net proceeds are $147,000 and $46,000 stays in the deal. Any appraisal below about $262,585 leaves some cash behind at our assumed 75% LTV.\n\nA lender cap can hold back cash even when the appraisal is high. On our reading of the delayed financing exception, a refinance inside six months returns about the purchase money and leaves the $40,000 of repairs in the deal at both the $230,000 and $260,000 appraisals.\n\nThe new loan payment can also outrun the rent. Our model leaves out rent, the new interest rate, the monthly payment, property taxes, insurance, vacancy and holding costs, so it says nothing about cash flow. Price the new payment, taxes and insurance against the rent before you plan the refinance.\n\nThe BRRRR method does not fit these readers:\n\n- Someone who cannot wait out six months on title, or 12 months when the refinance pays off a first mortgage on the house.\n- Someone whose plan depends on an appraisal that has not happened yet.\n- Someone who needs the repair money back inside six months.\n\n If you want to own real estate without a rehab or a refinance, our comparison of a [real estate investment trust (REIT) vs. a rental property](/compare/reit-vs-rental-property/) lays out that route.\n\nThree inputs would change our answer: the lender's actual LTV limit, the appraisal on the repaired house, and any change to Fannie Mae's seasoning or delayed financing rules. A lender LTV limit above our 75% assumption lowers the appraisal needed to break even. A limit below 75% raises it."
+    },
+    {
+      "heading": "Our Takeaway",
+      "body": "The BRRRR method can return most or all of your cash only when the post-repair appraisal is high enough for the loan to cover the money in the deal. In our modeled example, that took an appraisal of about $262,585 on $193,000 invested, at our assumed 75% LTV and 2% refinance cost. The rules come from Fannie Mae's Selling Guide and IRS Publication 527, and the math comes from our own scenario.\n\nThe strategy fits an investor who can wait out lender seasoning and buys below the finished value. It does not fit anyone whose plan depends on an appraisal the house may not reach, or on a payment the rent cannot cover. It also does not fit anyone who needs a refinance inside six months to recover repair spending, based on our reading of the delayed financing wording.\n\nThe lender's real LTV limit and the appraisal can move this verdict in either direction. Ask a lender for its seasoning rule and maximum investment-property LTV, then rerun the BRRRR method math with your own purchase, repair and appraisal numbers before you buy."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/real-estate/",
+      "label": "Real estate calculators"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How much money do you need to start the BRRRR method?",
+      "answer": "There is no verified standard amount, because the cash you need equals the purchase price, repairs and closing costs you carry until the refinance. In our modeled example, that was $193,000: a $150,000 cash purchase, $3,000 of closing costs and $40,000 of repairs. How much comes back depends on the appraisal and the lender's LTV limit. Under Fannie Mae's delayed financing exception, if the purchase was funded with an unsecured loan or a HELOC on another property, the refinance proceeds must pay off or pay down that loan."
+    },
+    {
+      "question": "Is it BRRR or BRRRR?",
+      "answer": "Investors use both spellings. BRRRR stands for buy, rehab, rent, refinance, repeat. BRRR describes the same strategy without the final \"repeat\" step."
+    },
+    {
+      "question": "What is the 2% rule for rental property?",
+      "answer": "The 2% rule is an investor rule of thumb, and no primary source cited here defines it, so we do not treat any figure from it as a standard. A rule of thumb cannot tell you whether the refinance returns your cash. Run the break-even math from the worked example above with your own purchase, repair and appraisal numbers."
+    },
+    {
+      "question": "What is the 70% rule for BRRRR?",
+      "answer": "The 70% rule is another unverified investor rule of thumb with no primary source on this page, and we do not endorse a figure from it. The number that decides a BRRRR deal is the appraisal needed for the new loan to cover your cash. Divide your total cash invested by one minus the loan cost, then by the lender's LTV limit, as shown in the worked example."
+    },
+    {
+      "question": "Is BRRRR better than flipping?",
+      "answer": "BRRRR fits a goal of keeping a rental, and flipping fits a goal of selling. A flip ends with a sale of the property. A BRRRR ends with a refinance loan and a rental you keep, so you also take on the new loan payment."
+    },
+    {
+      "question": "How long does the BRRRR method take?",
+      "answer": "Fannie Mae's floor is six months on title before a cash-out refinance disburses, and 12 months if the refinance pays off an existing first mortgage. Inside six months, Fannie Mae's delayed financing exception allows a cash-out refinance if all its requirements are met, and it caps the loan at your documented purchase investment plus financed loan costs. Repair time and the time to find a tenant are not published in the sources here, so we do not estimate them."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Fannie Mae Selling Guide B2-1.3-03, Cash-Out Refinance Transactions",
+      "url": "https://selling-guide.fanniemae.com/sel/b2-1.3-03/cash-out-refinance-transactions"
+    },
+    {
+      "label": "IRS Publication 527, Residential Rental Property",
+      "url": "https://www.irs.gov/publications/p527"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

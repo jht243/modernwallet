@@ -1,0 +1,33 @@
+{
+  "reviewer": "phase4-reviewer-1",
+  "verdict": "FAIL",
+  "packetSha256": "a5b81a7f29098059cf4a1075a138560c41b0e35eaf6ea1effaf6a7c0034ed6a4",
+  "usefulness": {
+    "status": "PASS",
+    "evidence": "Reported basis with a saved source-to-conclusion trail (evidence.json reasoning, whyNoQuantitativeAnalysis). The page adds what the site's comparison pages and tax-tips paragraph lack: where each of the three breaks ends (Medicare first month and retroactive rule, 6% excise, income tax plus 20% before 65 with disability/death exceptions, premium rules) beside the exact 2026 limits and HDHP definition. No number is invented; the only arithmetic ($4,400 + $1,000 = $5,400) is labeled."
+  },
+  "sourceAndAssumptions": {
+    "status": "FAIL",
+    "evidence": "Rev. Proc. 2025-19 ($4,400, $8,750, $1,700, $3,400, $8,500, $17,000) and Pub. 969 (reviewed 30-Apr-2026) fetched live 2026-11-04 support every figure and rule. Failing point (H3): the takeaway and the FAQ \"Is an HSA worth it?\" make the conclusion depend on paying current bills from other cash and letting the balance \"be invested\", then say the answer rests on Pub. 969 and Rev. Proc. 2025-19; neither says either (Pub. 969 has no investing statement; fact F19 lists the investment menu as not covered). The condition is the packet author's inference, unlabeled."
+  },
+  "conditionsAndCounterexample": {
+    "status": "PASS",
+    "evidence": "Counterexamples are on the page and in evidence.json: a Medicare enrollee (limit zero from the first month, including retroactive coverage), a plan below the $1,700/$3,400 deductible floor or above the $8,500/$17,000 cap, and a non-medical withdrawal before 65 (income tax plus a possible 20%); the disability, death and age-65 exceptions are stated. Conditions that change the answer (new IRS limits, HDHP rules) are stated."
+  },
+  "renderedConsistency": {
+    "status": "PASS",
+    "evidence": "Rendered figures equal the packet and the live sources: $4,400/$8,750, $1,000 and $5,400, $1,700/$3,400, $8,500/$17,000, 6%, 20%, 10%. The intro, table, penalties section, takeaway and FAQs agree on limits and conditions. Layout and the deferral cell are recorded as rendered-review defects (H1, H2); the rendered snapshot is not approved overall (route FAIL), which blocks this analysis audit."
+  },
+  "localExclusions": {
+    "status": "PASS",
+    "evidence": "Tax-account topic outside _experience.md section G and not a medical treatment: no TESTED format, no \"we tested\" or \"In our internal\" (grep 0), no client claim (all 8 retrieved cases unrelated and rejected), no professional-review claim; state tax explicitly excluded."
+  },
+  "renderedSnapshot": {
+    "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/rendered-snapshot.json",
+    "sha256": "87ce83255a273de060fd70abce5bbd58addb9d765ef5e3c7bf419783cdb33ba1"
+  },
+  "renderedReview": {
+    "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/rendered-review.json",
+    "sha256": "07a32d85024b0199a382b45592d46ffa323f093fee4d39e0d84db90e8d90660c"
+  }
+}

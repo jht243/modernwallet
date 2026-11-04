@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "CONTENT_ANTHROPIC_KEY_2",
  "finish_reason": "STOP",
- "words": 2043,
+ "words": 2066,
  "floor": 1200,
  "input_tokens": 36913,
  "output_tokens": 12107,
@@ -21,13 +21,7 @@
  "guards": {
   "repairs": [],
   "flags": [
-   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
-   "emptied by the claim check (nothing in the fact list could carry it): ['How Tax Loss Harvesting Works and What It Can Deduct', 'What a Harvested Loss Is Worth at 0%, 15% and 20%', 'Tax Loss Harvesting Defers Tax Rather Than Erasing It', 'The Wash Sale Rule and Tax Loss Harvesting in an IRA', 'When Tax Loss Harvesting Does Not Pay'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+   "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A tax professional can apply your rate.'; 'Some cases, such as a 0% year, a basis step-up at death or a gift to charity, ca'; 'In a taxable account, the disallowed loss is added to the cost of the new shares'; 'When the repurchase is for an IRA or Roth IRA, Publication 550 does not add the '"
   ],
   "disallowed_urls_removed": [],
   "words": 2043,
@@ -143,7 +137,231 @@
    "html_comments_dropped": 0,
    "tokens_dropped_est": 0,
    "tokens_sent_est": 1169
-  }
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-04T02:10:31+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/tax-loss-harvesting-findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "so this page works the dollar figures for a $10,000 loss",
+      "replacement": "starting with a $10,000 loss",
+      "type": "T1 meta-narration",
+      "why": "Page self-reference and wrong collocation; keep the $10,000 framing."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "which this page does not model",
+      "replacement": "which we did not model. A tax professional can apply your rate",
+      "type": "T1b meta-narration / dead-end",
+      "why": "Page self-reference with no route; name what was not modeled and who applies the rate."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Some cases, such as a 0% year, a basis step-up at death or a gift to charity, can change the result, and this page does not cover them.",
+      "replacement": "Some cases, such as a 0% year, a basis step-up at death or a gift to charity, can change the result, and a tax professional can explain how they apply to your return.",
+      "type": "T1c meta-narration / dead-end",
+      "why": "Self-reference and dead-end; route to a tax professional without giving advice."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "This page covers sales in taxable accounts that you report on Form 8949.",
+      "replacement": "This guide covers sales in taxable accounts that you report on Form 8949.",
+      "type": "T1d meta-narration",
+      "why": "Page self-reference."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "If your losses sit in an IRA or another tax-deferred account, the IRS pages linked here describe sales reported on Form 8949, and this guide does not address losses inside those accounts.",
+      "replacement": "It does not cover losses inside an IRA or another tax-deferred account, so a tax professional is the place to take those.",
+      "type": "T1d dead-end / overloaded",
+      "why": "Long self-referential sentence leaves the IRA reader with no next step."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "State tax treatment, the net investment income tax, broker reporting of wash sales across accounts and cryptocurrency are not covered on the IRS pages this guide draws on.",
+      "replacement": "The IRS pages this guide draws on do not cover state tax treatment, the net investment income tax or cryptocurrency, so a tax professional can add those to your figures. Our [wash sale rule guide](/guides/wash-sale-rule-explained/) covers how brokers report wash sales across accounts.",
+      "type": "T1e dead-end",
+      "why": "Omissions raised without routes; F20 points broker reporting to the wash-sale guide."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "When the repurchase is for an IRA or Roth IRA, Publication 550 excepts it from adding the disallowed loss to the cost of the new stock.",
+      "replacement": "When the repurchase is for an IRA or Roth IRA, Publication 550 does not add the disallowed loss to the cost of the new stock, and a tax professional can explain what that means for your loss.",
+      "type": "T2 dead-end",
+      "why": "Consequence for the loss is not in SOURCE; clarify the rule and route to a professional."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Your long-term gains fall under the 2026 0% ceiling for your filing status, so the loss cancels gains that carried no federal tax.",
+      "replacement": "Your 2026 taxable income, including the gain, is at or below the 0% ceiling for your filing status, so the loss cancels gain that carried no federal tax.",
+      "type": "T3 source claim imprecise",
+      "why": "F7 ceiling applies to taxable income including the gain, not to gains."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "A purchase of substantially identical stock by your spouse, or by a corporation you control, after your sale also creates a wash sale.",
+      "replacement": "A purchase of substantially identical stock by your spouse or by a corporation you control also creates a wash sale.",
+      "type": "T4 unsupported narrowing",
+      "why": "Pub. 550 and corrected F13 do not limit this to purchases after the sale."
+     },
+     {
+      "id": "introText",
+      "quote": "If your losses exceed your gains, the [Internal Revenue Service (IRS)](https://www.irs.gov/taxtopics/tc409) lets you deduct up to $3,000 of the excess from other income each year ($1,500 if married filing separately) and carry the rest forward.",
+      "replacement": "If your losses exceed your gains, the [Internal Revenue Service (IRS)](https://www.irs.gov/taxtopics/tc409) lets you deduct up to $3,000 of the excess from other income each year ($1,500 if married filing separately). You carry the rest forward.",
+      "type": "T5 overloaded sentence",
+      "why": "Split the 35-word sentence; keep the first-mention link."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Most net capital gain is taxed at 0%, 15% or 20%, and IRS Topic 409 names higher rates for some gains: 28% for collectibles and section 1202 stock, and 25% for unrecaptured section 1250 gain.",
+      "replacement": "Most net capital gain is taxed at 0%, 15% or 20%. IRS Topic 409 names higher maximum rates for a few gains: 28% for collectibles and section 1202 stock, and 25% for unrecaptured section 1250 gain.",
+      "type": "T5b overloaded sentence",
+      "why": "Split the 35-word sentence and use the IRS term for maximum rates."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Publication 550 gives this example: you buy 100 shares of X stock for $1,000, sell them for $750 and within 30 days buy 100 shares for $800, so you cannot deduct the $250 loss and your new basis is $1,050.",
+      "replacement": "Publication 550 gives this example. You buy 100 shares of X stock for $1,000 and sell them for $750. Within 30 days you buy 100 shares for $800. You cannot deduct the $250 loss, and your new basis is $1,050.",
+      "type": "T5c overloaded sentence",
+      "why": "Split the 40-word sentence into readable steps."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "The loss cancels capital gains.",
+      "replacement": "A capital loss on an investment cancels capital gains.",
+      "type": "T6 unparseable reference",
+      "why": "Reads as if the personal-use loss cancels gains; name the loss."
+     },
+     {
+      "id": "sections[0].heading",
+      "quote": "How Tax Loss Harvesting Works and What It Can Deduct",
+      "replacement": "What Tax Loss Harvesting Can Deduct Each Year",
+      "type": "T7 two-clause headline",
+      "why": "Two-clause formula that repeats the H1."
+     },
+     {
+      "id": "sections[2].heading",
+      "quote": "Tax Loss Harvesting Defers Tax Rather Than Erasing It",
+      "replacement": "Tax Loss Harvesting Usually Defers Tax to a Later Year",
+      "type": "T7b antithesis headline",
+      "why": "Uses the banned X-rather-than-Y antithesis."
+     },
+     {
+      "id": "cardBlurb",
+      "quote": "How a harvested loss cancels capital gains, what a $10,000 loss saves at each federal rate, and how the wash sale rule can block the deduction.",
+      "replacement": "A $10,000 harvested loss saves $0, $1,500 or $2,000 of federal tax depending on your long-term gains rate, unless the wash sale rule blocks the deduction.",
+      "type": "T7c tricolon deck",
+      "why": "Three parallel how/what/how items; state the finding in one clause."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": ", using the IRS 2026 thresholds",
+      "replacement": "",
+      "type": "T8 method overstated",
+      "why": "The 2026 thresholds were not an input to the calculation."
+     },
+     {
+      "id": "introText",
+      "quote": "Tax loss harvesting means selling an investment for less than its cost so the realized loss cancels capital gains you would otherwise pay tax on.",
+      "replacement": "Tax loss harvesting means selling an investment below its cost so the loss cancels capital gains.",
+      "type": "TA1 long opening sentence (advisory)",
+      "why": "Optional shortening; same meaning."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "That is the same amount as the loss you harvested.",
+      "replacement": "The gain equals the loss you harvested.",
+      "type": "TA2 backward pronoun (advisory)",
+      "why": "Name the subject instead of a backward 'That'."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "That postpones the deduction until you sell the new shares",
+      "replacement": "The added cost postpones the deduction until you sell the new shares",
+      "type": "TA2 backward pronoun (advisory)",
+      "why": "Name the subject instead of a backward 'That'."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "Schedule D combines them into one total.",
+      "replacement": "Yes, Schedule D combines them into one net result.",
+      "type": "TA4 indirect FAQ answer (advisory)",
+      "why": "Lead with a direct answer F19 allows."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "After your losses cancel your capital gains, IRS Topic 409 lets you deduct the lesser of $3,000 ($1,500 if married filing separately) or your total net loss from other income.",
+      "replacement": "After your losses cancel your capital gains, the remaining loss lowers your taxable income on line 7a of Form 1040, up to the lesser of $3,000 ($1,500 if married filing separately) or your total net loss.",
+      "type": "TA4 FAQ redundancy (advisory)",
+      "why": "Shift the focus to the taxable income effect so it differs from FAQ 1."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "confirm no repurchase falls inside the 30-day windows before you harvest a loss",
+      "replacement": "check your trade history for any repurchase inside the 30-day windows before you harvest a loss",
+      "type": "TA5 unlinked directive (advisory)",
+      "why": "Point to the source that answers the check."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[1].body",
+      "quote": "Married filing jointly: 0% up to $98,900, 15% up to $613,700",
+      "finding": "TA3 filing-status label (advisory)",
+      "why": "needs new substance: surviving spouse is not in the closed fact list.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      5
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[1].body",
+       "quote": "A tax professional can apply your rate.",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[2].body",
+       "quote": "Some cases, such as a 0% year, a basis step-up at death or a gift to charity, can change the result, and a tax professional can explain how they apply to your return.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[3].body",
+       "quote": "In a taxable account, the disallowed loss is added to the cost of the new shares, which becomes their basis.",
+       "type": "inference",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[3].body",
+       "quote": "When the repurchase is for an IRA or Roth IRA, Publication 550 does not add the disallowed loss to the cost of the new stock, and a tax professional can explain what that means for your loss.",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "The IRS pages this guide draws on do not cover state tax treatment, the net investment income tax or cryptocurrency, so a tax professional can add those to your figures.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2066,
+    "flags": [
+     "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A tax professional can apply your rate.'; 'Some cases, such as a 0% year, a basis step-up at death or a gift to charity, ca'; 'In a taxable account, the disallowed loss is added to the cost of the new shares'; 'When the repurchase is for an IRA or Roth IRA, Publication 550 does not add the '"
+    ]
+   }
+  ]
  },
  "seconds": 132.8,
  "response_id": "msg_011Cgh23Zps8ZtmDUkubcqHX",

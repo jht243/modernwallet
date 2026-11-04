@@ -1,0 +1,34 @@
+{
+  "reviewer": "phase4-reviewer-1",
+  "verdict": "FAIL",
+  "packetSha256": "c28d37bd70a16ca9521bd96ae4920aac405b8dab1722a308127d5e5b2eabd179",
+  "usefulness": {
+    "status": "PASS",
+    "evidence": "The packet resolves the approved reader question (\"how does it work, how much can I deduct\") with decision-changing conditions that the site's existing wash-sale guide and tax-tips paragraph do not give: a loss saves the tax rate on the gain it cancels and nothing at 0% (Rev. Proc. 2025-32 ceilings, all four filing statuses), the $3,000/$1,500 lesser-of limit with carryforward, and that the saving is mostly a deferral. The arithmetic is simple (rate x loss; basis subtraction) and the page labels it illustrative and calculated, never empirical, so it passes as a labeled planning illustration; the contribution is the conditions and counterexample, not the multiplication."
+  },
+  "sourceAndAssumptions": {
+    "status": "FAIL",
+    "evidence": "Inputs verified against live IRS pages fetched 2026-11-04 (Topic 409 reviewed 24-Sep-2026; Rev. Proc. 2025-32 section 3.03; Pub. 550; Schedule D instructions) and run.py inputs.json (limit 3000/1500, rates 0/0.15/0.20, ceilings 49,450/98,900/66,200/49,450). Failing points: closed fact F13 says a spouse or controlled-corporation purchase \"after your sale\" creates a wash sale, but Pub. 550 does not say \"after\" and the 30-day window runs both ways (T4); and the page sentence \"using the IRS 2026 thresholds\" overstates what the model used because run.py does not take the ceilings as an input (T8). Assumptions (illustrative loss amounts, federal only, ordinary rates, NIIT and state tax not modeled) are visible beside the table."
+  },
+  "conditionsAndCounterexample": {
+    "status": "PASS",
+    "evidence": "The 0% case is the counterexample on the page ($0 saved at 0%, run.py 0pct = 0.0) and the replay reproduces it; the no-gains year (deduct $3,000, carry $7,000; $1,500 MFS) and the wash-sale disallowance (Pub. 550 example $250 loss, $1,050 basis) are shown; the deferral case (loss $3,000, replacement basis $7,000, later gain $3,000) shows the benefit reversing. Boundary: net loss exactly equal to or above the limit uses min(limit, loss); head-of-household and MFS ceilings are on the page."
+  },
+  "renderedConsistency": {
+    "status": "FAIL",
+    "evidence": "Every number on the rendered page matches the independent replay (audit/tax-loss-harvesting-replay.json equals evidence/tax-loss-harvesting/output.json canonically): $0/$1,500/$2,000; $3,000/$7,000/$1,500; $3,000/$7,000/$3,000; $250/$1,050. Inconsistency with the packet conditions: evidence.json conditions say the 0% case applies when TAXABLE INCOME including the gain is at or below the ceiling, but section 5 bullet 1 says \"Your long-term gains fall under the 2026 0% ceiling\" (T3). The rendered snapshot is also not approved (see rendered-review.json: route FAIL)."
+  },
+  "localExclusions": {
+    "status": "PASS",
+    "evidence": "Finance/tax topic outside _experience.md section G: no TESTED format, no \"we tested\" (grep 0 on the page and in the rendered snapshot), no testing schema, no client claim (all 8 retrieved approved cases are unrelated Layer3Labs properties and were rejected in evidence.json caseDecisions), no professional-review claim; \"not tax advice\" disclaimer only in the template footer."
+  },
+  "renderedSnapshot": {
+    "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/rendered-snapshot.json",
+    "sha256": "87ce83255a273de060fd70abce5bbd58addb9d765ef5e3c7bf419783cdb33ba1"
+  },
+  "renderedReview": {
+    "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/rendered-review.json",
+    "sha256": "07a32d85024b0199a382b45592d46ffa323f093fee4d39e0d84db90e8d90660c"
+  },
+  "replaySha256": "120dc7734bfd1b13d70c3b0be3af314979b8175fb91a204f60c3147f841d9233"
+}
