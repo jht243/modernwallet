@@ -10,7 +10,7 @@
 - Rates: the page describes rates of 0%, 15% and 20% on most net capital gain (it prints 2025 thresholds; the 2026 thresholds below come from Rev. Proc. 2025-32).
 
 ## IRS-RP-2025-32 — https://www.irs.gov/pub/irs-drop/rp-25-32.pdf (2026 inflation adjustments)
-- "2026, the maximum zero rate amounts and maximum 15 percent rate amounts under" section 1(h): Married filing jointly $98,900 (0% max) and $613,700 (15% max); Married filing separately $49,450 and $306,850; All other individuals $49,450 and $545,500.
+- "2026, the maximum zero rate amounts and maximum 15 percent rate amounts under" section 1(h): Married filing jointly $98,900 (0% max) and $613,700 (15% max); Heads of Household $66,200 and $579,600; Married filing separately $49,450 and $306,850; All other individuals $49,450 and $545,500. The 0% test is on taxable income (the gain is part of it).
 
 ## IRS-PUB550 — https://www.irs.gov/publications/p550 (Wash Sales)
 - "You cannot deduct losses from sales or trades of stock or securities in a wash sale unless the loss was incurred in the ordinary course of your business as a dealer in stock or securities."
@@ -21,3 +21,8 @@
 - "To figure your total net gain or loss, combine your net short-term capital gain or loss (Schedule D (Form 1040), line 7) with your net long-term capital gain or loss (Schedule D (Form 1040), line 15)."
 
 ## Site page used for the wash-sale detail (internal): /guides/wash-sale-rule-explained/ (shipped 2026-09-30)
+
+## IRS-SCHD-INSTR — https://www.irs.gov/instructions/i1040sd (Instructions for Schedule D (Form 1040) (2025), fetched 2026-11-04; 2025-year edition)
+- Contains a "Capital Loss Carryover Worksheet—Lines 6 and 14": "Use this worksheet to figure your capital loss carryovers from 2024 to 2025 if your 2024 Schedule D, line 21, is a loss..."
+- Has separate entries "Short-term capital loss carryover for 2025." and "Long-term capital loss carryover for 2025."
+- "You have a capital loss carryover from 2025 to 2026 if you have a loss on line 16 and either:" ... "To figure any capital loss carryover to 2026, you will use the Capital Loss Carryover Worksheet in the 2026 Instructions for Schedule D. If you want to figure your carryover to 2026 now, see Pub. 550."

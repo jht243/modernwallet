@@ -22,7 +22,9 @@
     "newBasis": 1050
   },
   "zeroRateMaxTaxableIncome2026": {
+    "headOfHousehold": 66200,
     "marriedFilingJointly": 98900,
+    "marriedFilingSeparately": 49450,
     "single": 49450
   }
 }

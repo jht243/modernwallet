@@ -13,7 +13,8 @@ def main(inp_path, out_path):
         loan_a = arv * ltv
         net_a = loan_a * (1 - rate)
         # Path B: delayed-financing style cap: loan cannot exceed documented initial purchase investment
-        loan_b = min(initial_investment, arv * ltv)
+        # cap: documented purchase investment plus financing of the new loan's closing costs (fee rate x loan) => L <= I / (1 - rate)
+        loan_b = min(initial_investment / (1 - rate), arv * ltv)
         net_b = loan_b * (1 - rate)
         rows[name] = {
             "arv": arv,

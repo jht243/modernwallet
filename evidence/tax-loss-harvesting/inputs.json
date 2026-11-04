@@ -2,14 +2,32 @@
   "sourceFigures": {
     "netCapitalLossDeductionLimit": 3000,
     "netCapitalLossDeductionLimitMarriedFilingSeparately": 1500,
-    "longTermRates": [0.0, 0.15, 0.20],
-    "zeroRateMaxTaxableIncome2026": {"single": 49450, "marriedFilingJointly": 98900},
-    "washSaleExample": {"sharesBought": 100, "originalCost": 1000, "salePrice": 750, "repurchaseCost": 800}
+    "longTermRates": [
+      0.0,
+      0.15,
+      0.2
+    ],
+    "zeroRateMaxTaxableIncome2026": {
+      "single": 49450,
+      "marriedFilingJointly": 98900,
+      "headOfHousehold": 66200,
+      "marriedFilingSeparately": 49450
+    },
+    "washSaleExample": {
+      "sharesBought": 100,
+      "originalCost": 1000,
+      "salePrice": 750,
+      "repurchaseCost": 800
+    }
   },
   "scenario": {
     "harvestedLossAgainstLongTermGains": 10000,
     "netLossOnlyYearHarvestedLoss": 10000,
-    "deferralExample": {"basis": 10000, "salePrice": 7000, "laterSalePrice": 10000}
+    "deferralExample": {
+      "basis": 10000,
+      "salePrice": 7000,
+      "laterSalePrice": 10000
+    }
   },
   "notes": "Rates and limits are from IRS Topic 409 and Rev. Proc. 2025-32 (2026). The dollar amounts in 'scenario' are illustrative author inputs. Ordinary-income rates are not modeled."
 }

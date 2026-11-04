@@ -12,9 +12,9 @@
         "netProceeds": 169050.0
       },
       "pathB": {
-        "cashLeftInDeal": 43060.0,
-        "loan": 153000,
-        "netProceeds": 149940.0
+        "cashLeftInDeal": 40000.0,
+        "loan": 156122.45,
+        "netProceeds": 153000.0
       }
     },
     "high": {
@@ -25,9 +25,9 @@
         "netProceeds": 191100.0
       },
       "pathB": {
-        "cashLeftInDeal": 43060.0,
-        "loan": 153000,
-        "netProceeds": 149940.0
+        "cashLeftInDeal": 40000.0,
+        "loan": 156122.45,
+        "netProceeds": 153000.0
       }
     },
     "low": {

@@ -15,3 +15,6 @@
 - Example: "You purchased a single family rental house for $185,000 and placed it in service on February 8. The sales contract showed that the building cost $160,000 and the land cost $25,000. Your basis for depreciation is its original cost, $160,000... GDS, which has a recovery period of 27.5 years... 3.182%... That year's depreciation deduction is $5,091."
 
 ## Our modeled worked example — evidence/brrrr-method/run.py (inputs.json, output.json). All dollar inputs and the 75% loan-to-value and 2% refinance-cost assumptions are illustrative author assumptions, not lender limits and not Fannie Mae figures.
+
+## Reading note (author's interpretation, not a Fannie Mae statement)
+Fannie Mae's delayed-financing text caps the new loan at the documented amount of the borrower's initial investment in purchasing the property plus financing of closing costs, prepaid fees and points on the new loan. It does not mention repair spending. The model counts purchase price plus purchase closing costs as the initial investment and adds the 2% cost of the new loan as financed (loan cap = $153,000 / 0.98, about $156,122). Whether a lender counts repair costs is a question for the lender.

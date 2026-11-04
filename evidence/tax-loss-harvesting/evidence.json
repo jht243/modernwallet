@@ -1,7 +1,7 @@
 {
   "route": "/guides/tax-loss-harvesting/",
   "origin": "podcast-pain-pass-auto recovery 2026-11-04 (deferred row from 2026-11-03 run, main 2b7393f)",
-  "readerQuestion": "How does tax loss harvesting work, and how much can I deduct? [PAA 3/6 on-topic (sell stocks at a loss to cut taxes, the $3,000 loss, downside), 3/6 off-topic: capital gains on $300,000, Warren Buffett view, Buffett 70/30 rule (keyword-intent flag); ac 71 question-sweep suggestions: how-it-works / how-much / is-it-worth-it / does-it-work shapes]",
+  "readerQuestion": "How does tax loss harvesting work, and how much can I deduct? [PAA 3/6 on-topic (sell stocks at a loss to cut taxes, the $3,000 loss, downside), 3/6 off-topic: capital gains on $300,000, Warren Buffett view, Buffett 70/30 rule (keyword-intent flag); ac 67 on-topic of 71 question-sweep suggestions: how-it-works / how-much / is-it-worth-it / does-it-work shapes]",
   "gateSchemaVersion": 1,
   "author": "root-orchestrator",
   "caseSelection": {
@@ -60,7 +60,7 @@
       "source": "IRS-TC409"
     },
     {
-      "claim": "2026 long-term rates: 0% up to $49,450 taxable income (single/other, MFS) and $98,900 (MFJ); 15% up to $545,500 / $613,700 / $306,850",
+      "claim": "2026 long-term rates: 0% up to $49,450 taxable income (single, married filing separately), $66,200 (head of household) and $98,900 (married filing jointly), tested on taxable income including the gain; 15% up to $545,500 / $613,700 / $306,850",
       "label": "reported",
       "source": "IRS-RP-2025-32"
     },
@@ -86,12 +86,12 @@
     }
   ],
   "finding": "Tax loss harvesting is worth the tax rate on the gains the loss cancels (nothing if those gains would be taxed at 0%), the first $3,000 a year of any excess loss also reduces other income, the rest carries forward, and the benefit is mostly a deferral because the replacement shares start at a lower basis. A purchase of the same or a substantially identical security within 30 days before or after the sale, in any of your accounts including an IRA, disallows the loss.",
-  "conditions": "Federal rules, taxable accounts, US taxpayers. The benefit disappears if the offset gains are taxed at 0% (taxable income at or below $49,450 single / $98,900 married filing jointly in 2026), if the replacement purchase triggers the wash-sale rule, or if the investor never realizes the deferred gain at a higher rate. Not tax advice.",
+  "conditions": "Federal rules, taxable accounts, US taxpayers. The benefit disappears if the offset gains are taxed at 0% (taxable income including the gain at or below $49,450 single or married filing separately, $66,200 head of household, $98,900 married filing jointly in 2026), if the replacement purchase triggers the wash-sale rule, or if the investor never realizes the deferred gain at a higher rate. Not tax advice.",
   "whatWouldChange": "A change to the IRS loss limit, the 2026 rate thresholds, or the wash-sale rule; for an individual, a different taxable-income bracket or a state-tax rule.",
   "decisionChangingCounterexample": "At a 0% long-term rate the $10,000 loss saves $0 against gains; with no gains the deduction is capped at $3,000 and the rest waits.",
   "counterexample": "Reader in the 0% long-term bracket: harvesting $10,000 of losses against $10,000 of long-term gains saves $0 in federal tax that year (run.py: 0pct = 0.0); a reader who rebuys the same fund inside 30 days or in an IRA loses the deduction altogether (IRS Pub. 550 example 1: $250 loss disallowed, basis $1,050).",
   "units": "USD",
-  "limitations": "Illustrative inputs; federal only; ordinary-income rates, NIIT, state taxes and transaction costs are not modeled.",
+  "limitations": "Illustrative inputs; federal only; short-term gains are taxed at ordinary rates (not modeled); NIIT, state taxes and transaction costs are not modeled; the deferral has exceptions (a 0% year, step-up at death, gift to charity).",
   "execution": {
     "command": [
       "python3",
@@ -106,18 +106,18 @@
     "inputs": [
       {
         "path": "evidence/tax-loss-harvesting/inputs.json",
-        "sha256": "2eb0bf8c787094121e986b0509d0e8e11ddc70f730c4f02274cdcb83ce7db5cb"
+        "sha256": "aed45bc96c601ffe260e6397d1f37243c54773a85c95cef42e53067978aeb72d"
       }
     ],
     "output": {
       "path": "evidence/tax-loss-harvesting/output.json",
-      "sha256": "33089f54405bbc7bf9a32bdea5b18b2c06f319b293e5bb5bda4daccaef0ba695"
+      "sha256": "e25c9fd699befe4e0161282332a23f81732b667cd597d71139c6fff5fbaeecd0"
     }
   },
   "sourceArtifacts": [
     {
       "path": "evidence/tax-loss-harvesting/sources.md",
-      "sha256": "d6ff0ec79e0ea10d0812ec2de90e8b357355ee8e48a5e8a7e3d4dbd47a86c16e"
+      "sha256": "9758de2949c9eb4984f16475f3719328ae139cd2b8267fe6457f0911d145f7cb"
     }
   ],
   "unknowns": [
