@@ -1,0 +1,19 @@
+{
+  "originRoutine": "podcast-pain-pass-auto",
+  "queryFamily": "brrrr method / brrrr strategy / what is the brrrr method",
+  "hypothesis": "A rules-plus-break-even BRRRR explainer is winnable (SERP verdict winnable) and earns clicks where the site has no BRRRR page.",
+  "primaryMetric": "Google Search Console clicks for the canonical URL",
+  "baseline": {
+    "status": "unavailable",
+    "reason": "No verified pre-change GSC extract in the run evidence; retry historical date-filtered extraction during the existing measurement routine.",
+    "priorSpecification": "not-yet-published; age-matched comparator to be chosen by the growth review"
+  },
+  "changeScope": "new route",
+  "sourceRefreshTrigger": "Fannie Mae revises B2-1.3-03 or the scenario assumptions go stale",
+  "outcomeStatus": "not-yet-published",
+  "productionCost": "unknown; see .meta.json for generator usage",
+  "path": "/guides/brrrr-method/",
+  "contributionId": "evidence/brrrr-method/growth.json",
+  "growthFile": "evidence/brrrr-method/growth.json",
+  "evidenceFile": "evidence/brrrr-method/evidence.json"
+}

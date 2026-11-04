@@ -1,0 +1,141 @@
+.claude/commands/_content-generation.md — characters 9000 onward
+
+uestions (verbatim PAA where available)
+- for comparisons: `optionAName`/`optionBName`, the table dimensions, the objectivity rule
+
+### What the writer is actually sent (2026-09-07)
+
+The standards files are shared by writers, auditors and orchestrators, so they carry sections a
+writer cannot use. **Nothing is removed from the files.** At send time the generator drops, by
+heading name, the AUDITOR checklists (both files), PREFLIGHT, DEFEND-LOCK, SCOPE, INTRO HUMANIZE,
+"Step 4 — read it back before hand-off", and `<!-- -->` sync banners — and lists every dropped
+section in `meta.guards.writer_scope`. The voice sample, output contract, anti-AI WRITER rules,
+`_experience.md`, the local standard and every writing rule in the standard go through whole.
+Build `system.md` with the builder instead of pasting files by hand:
+
+```bash
+python3 scripts/lib/content_gen.py system --voice <real page file> --contract <contract file> \
+  --out reports/<routine>/<TODAY>/prompts/system.md      # reads .claude/commands/_*.md, files untouched
+```
+
+## Step 2 — generate, one row at a time
+
+```bash
+python3 scripts/lib/content_gen.py write \
+  --system reports/<run>/prompts/system.md \
+  --prompt reports/<run>/prompts/<slug>.prompt.md \
+  --out    reports/<run>/drafts/<slug>.json \
+  --slug   <slug> --floor <depth floor> --schema guide|comparison \
+  --allowed-urls reports/<run>/prompts/allowed-urls.txt \
+  --facts  reports/<run>/prompts/<slug>.prompt.md
+```
+
+The generator's built-in verify stage is **the remediation ladder applied to the returned
+draft** — it never throws a page away for a one-line fix:
+
+- **Rung 0 — repaired in place, logged in `meta.guards.repairs`:** a code fence stripped, the
+  JSON object salvaged from surrounding text, control characters and house style normalised
+  (dashes → commas, ranges → "to", straight quotes), the slug set to the expected one, a
+  missing `relatedLinks` inserted (undefined crashes `next build`), any external link off the
+  allowed list **stripped while keeping the sentence**.
+- **Rung 1 — placeholder + flag in `meta.guards.flags` for the auditor:** a missing content
+  field, a sentence whose citation was stripped ("verify it is still supported"), a draft
+  under the depth floor, and every number it could not trace to the fact list.
+- **Rung 2 — regenerate, only for what nobody can repair:** a draft cut off at the token cap
+  (the same model is first retried once at double the cap, then the fallback), or output that
+  is not a parseable page object at all (the raw text is saved beside the draft first).
+
+- **Claim check (every draft written with `--facts`):** a GROUNDING block rides on the row
+  prompt; then a verifier call lists each sentence/table cell the fact list does not support and
+  replaces it with what the list does say (or deletes it), and a second pass DELETES whatever is
+  still unsupported. Exact string splices; a replacement can never add a number, link or name
+  that is not in the fact list. Logged in `meta.guards.claim_check`; the unchecked draft is kept
+  as `<out>.precheck`. A `thin fact list` flag means the list is too short for the floor: expand
+  it with SOURCED facts before anything else. `CONTENT_FACTCHECK=0` disables it.
+
+Read `meta.guards` before handing the draft on — it is the repair log the auditor needs.
+
+Check draft one before generating draft two: a systemic prompt defect is cheapest on page one.
+
+## Step 3 — verify, then the Phase 4 audit (the gate — unchanged)
+
+The draft is a draft, not a page. Before templating:
+- **Topic residue**: grep for sibling topics that could have leaked from the voice sample or
+  other rows (a predecessor's price presented as the new model's, a disclaimer from another page).
+- **Read it.** Reject on: a claim not traceable to the fact list; violated row constraints;
+  first-person claims unsupported by `_experience.md` or the verified run-specific evidence permitted by `_decision-evidence.md`; anti-AI WRITER tells; device misplacement.
+- Then run the **Phase 4 adversarial audit exactly as for hand-written content.** No reduced
+  standard. Hand the auditor the closed fact list and the allowed URL list so it can tell a
+  real fact from an invented one — an auditor working from a trimmed list will flag true
+  facts as fabrication (verify any "unsupported" finding against the source before acting).
+
+**Fixing a finding** follows `_remediation-ladder.md`: Rung 0 mechanical lint (a banned word,
+a heading, an anchor text, one sentence) is applied in place. **Claim and tell findings
+(invented, unsourced, contradicted or inferred claims; AI tells; unlinked directives) go to
+`content_gen.py fix` FIRST** — never straight to a regeneration, which re-rolls every sentence
+and fails on new claims:
+
+```bash
+python3 scripts/lib/content_gen.py fix --draft reports/<run>/drafts/<slug>.json \
+  --findings reports/<run>/audit/<slug>.findings.txt \
+  --facts reports/<run>/prompts/<slug>.prompt.md --floor <depth floor> \
+  --allowed-urls reports/<run>/prompts/allowed-urls.txt
+```
+
+The findings file is the auditor's report for that page (quote + defect per finding). The
+replacements are model-written and only restate the fact list or delete; then re-template and
+re-audit that page in full on the same bar. A **regeneration** with a `# CORRECTIONS FROM THE
+PHASE 4 AUDIT` block appended to the row prompt (defect → the exact offending text → the
+replacing rule) is only for what `fix` lists as NOT FIXABLE IN PLACE or a page now under its
+floor — and for that, expand the fact list with sourced facts first. Never hand-write generated
+prose; it defeats the routine and falsifies the provenance record. Two failed regenerations
+on the same defect → stop the workflow and escalate with the unresolved findings. Do not continue to commit, push or publish. Higher-priority user/project gate rules override older drop-and-continue instructions.
+
+## Step 4 — template + provenance
+
+Insert the verified object into the repo's store exactly as the routine already does (in a
+Next/TS repo: an `_entries.push({...});` block before the `export const …` line; add
+`publishedDate`/`updatedDate`). **`git add` the `.meta.json` beside every draft** — it records
+the model actually used, whether the fallback fired and why, tokens including thinking, and
+the estimated cost. The run summary / routine email MUST state the model used per page and
+call out any page that fell back.
+
+## Enrichment — adding to an EXISTING page goes through the same generator
+
+**Rule (2026-09-06): any reader-facing addition longer than ONE sentence is generated by the
+API writer, never written in-context.** That covers an FAQ answer, a new section, body
+paragraphs, an "answer block", an expansion of thin content, a rewritten section or intro, a
+comparison row's prose. The agent still decides WHAT to add and WHERE, still assembles the
+facts, and still splices the result in with a targeted `Edit` — it just does not write the prose.
+**Exempt (stay in-context):** a title or description, a single clarifying sentence, an
+internal-link sentence, a number/date correction, alt text, a schema field.
+
+```
+python3 scripts/lib/content_gen.py section \
+  --system  reports/<routine>/<TODAY>/prompts/system.md      # same system.md as Step 1 (voice sample, anti-AI, standard)
+  --prompt  reports/<routine>/<TODAY>/prompts/<slug>--<section-id>.prompt.md \
+  --page    reports/<routine>/<TODAY>/prompts/<slug>.page.md  # the page's CURRENT text, plain
+  --out     reports/<routine>/<TODAY>/drafts/<slug>--<section-id>.md \
+  --slug    <slug>--<section-id> --facts <facts file> --allowed-urls <allowed-urls.txt> [--floor <words>]
+```
+
+The per-section prompt is DATA-ONLY, like Step 1's: the page's current text (so the writer
+matches its voice and does not repeat what is already said), the **closed fact list** for the
+addition, the **closed URL list**, and the task in one line — the reader question to answer,
+or the section to add and why (the GSC/GA4/citation signal). Output is always markdown: one
+`## ` heading (omit it for an FAQ answer or a paragraph insert — say so in the task line) plus
+the prose. The generator applies the same ladder as `write`: fences and control characters
+repaired, house style normalised, off-list links removed with the text kept, any H1 dropped,
+a heading the page already has flagged for the auditor, numbers not in the fact list listed
+in `meta.guards`. `<slug>--<section-id>.md.meta.json` is committed beside the draft like a
+page's.
+
+**Splicing:** markdown/MDX stores insert the draft verbatim at the chosen anchor. TS/JSON
+stores map each paragraph to one `content[]` string (or the FAQ `answer` field) — no
+re-wording while mapping. The routine's existing reviewer gate then audits the addition
+exactly as before, with the fact list beside it (see Step 3). A one-sentence edit that the
+agent writes itself is still subject to `_anti-ai-language.md`.
+
+## What this retires
+
+For pages generated here end-to-end, the **INTRO HUMANIZE step does not run*

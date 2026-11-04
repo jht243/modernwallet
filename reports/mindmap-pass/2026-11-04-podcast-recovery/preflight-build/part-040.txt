@@ -1,0 +1,14 @@
+.claude/commands/podcast-pain-pass/phase-1-validate-chart.md — characters 9000 onward
+
+ars in the main table; if none: `No emerging clusters detected this run.`), then the exclusions paragraph.
+
+## Duplicate-suppression gate (adversarial reviewer — BEFORE the chart is final)
+Spawn ONE read-only Explore subagent that did NOT build the chart. It independently checks every row against: `TARGET_KEYWORD_INVENTORY.md` (entire file — primary AND supporting keywords), the sitemap/route definitions (`server.py`, templates), recent `git log`, and `reports/podcast-pain-pass/ledger.json` `shipped_slugs`. Verdicts: `KEEP` / `DROP — covered by <route or SHA>` / `RECLASSIFY — <bucket>`. Cluster rows get the two extra checks: member phrases must be real (SEMRUSH/autocomplete evidence, not invented) and the lever must be right. Apply verdicts; max 2 rework attempts; be conservative on YMYL near-synonyms (same intent = covered).
+
+## Deferred backlog — drain it FIRST (prevents stranded approved rows)
+Before finalizing this run's approved set, load `reports/podcast-pain-pass/ledger.json` `deferred_rows` (approved-but-unbuilt rows carried over from a prior run that hit the Phase-2 build cap). For each, re-run ONLY the Step 1.1 dedup check (it may have shipped/been covered since). Surviving deferred rows join this run's approved set with **priority** — Phase 2 builds them BEFORE newly-mined rows. Drop any deferred row now covered (remove from `deferred_rows`). This guarantees a backlog always drains and no approved row is stranded forever.
+
+## Deterministic AUTO-APPROVE (replaces the human manifest gate)
+- **0 surviving rows →** send `no-changes` email, STOP.
+- **> 20 surviving rows →** CIRCUIT-BREAKER: save the chart, email a hold note, STOP (runaway backstop, not a cap).
+- **1–20 →** auto-approve ALL rows. Proceed to Phase 2 with `$RUN/chart.md`.

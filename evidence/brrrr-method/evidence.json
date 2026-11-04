@@ -1,0 +1,118 @@
+{
+  "route": "/guides/brrrr-method/",
+  "origin": "podcast-pain-pass-auto recovery 2026-11-04 (deferred row from 2026-11-03 run, main 2b7393f)",
+  "readerQuestion": "How does the BRRRR method work, and when does it stop working? [PAA 6/6 on-topic (cash needed x2, spelling, 2% rule, vs flipping, 70% rule); ac 32 question-sweep suggestions: how-does-it-work / how-to-start / is-it-worth-it / does-it-still-work shapes]",
+  "gateSchemaVersion": 1,
+  "author": "root-orchestrator",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/evidence/brrrr-method/cases.json",
+    "sha256": "8c21386334ce107ba3737061ea3778b8d6f394d0a1195b95eb71eb35d43c5aa7"
+  },
+  "caseDecisions": "All 8 retrieved approved-case candidates (client-professional-bowlers-association-pba, owned-property-drones-defense, owned-property-diy-repair-guide, testimonial-gamestation, client-bowlero-corporation, client-horizen-labs, client-multiple-hoa-and-condo-boards-across-the-usa, client-multiple-law-firms) are Layer3Labs-owned properties, testimonials or clients on unrelated topics that matched only on generic words; none concerns this topic. This site's _experience.md lists no named-client claims. All rejected; no client mention is forced.",
+  "testingLabel": "ordinary presentation (TESTED excluded: personal-finance, tax and lending topics are financial services outside _experience.md section G; no executed product tests exist)",
+  "exclusions": [
+    "No TESTED format, no 'we tested' claims.",
+    "No client-conversation claims.",
+    "No individualized investment, tax, or lending advice; rules and trade-offs only, with a pointer to a tax professional or lender."
+  ],
+  "demandSource": "SEMRUSH us 2026-11-04 measured: 'brrrr method' 6,600/mo KD 41 CPC $0.97; 'brrrr strategy' 1,900; 'what is the brrrr method' 720; 'brrrr loans' 480; 'brrrr method with no money' 260; 'how does the brrrr method work' 40. SERP (DataForSEO, 2026-11-04): winnable (not locked), AI Overview cites chase.com, reddit.com, americanhomelandtitle.com, youtube.com, taxstra.com, amerisave.com, yardi.com, biggerpockets.com; page one led by corevestfinance.com, agorareal.com, newfi.com; PAA 6/6 on-topic. Source: podcast pain mining (Rental Income Podcast; Catching Up to FI).",
+  "decisionGap": "Readers see BRRRR as a loop that recycles the same cash. They cannot tell from competitor explainers what stops it: the refinance must wait for lender seasoning, the new loan is sized on the appraised value, and inside six months the delayed-financing limit ties the loan to the purchase investment, not the rehab spending. A worked break-even shows how high the appraisal must land.",
+  "method": "Modeled: a deterministic scenario (evidence/brrrr-method/run.py) with illustrative inputs ($150,000 purchase, $3,000 purchase closing costs, $40,000 rehab) and illustrative assumptions (75% loan-to-value, 2% refinance cost) at three appraised values; the rules are reported from the Fannie Mae Selling Guide (B2-1.3-03) and IRS Publication 527 fetched 2026-11-04.",
+  "basis": "modeled",
+  "provenance": {
+    "basis": "modeled",
+    "supportingRecordIds": [
+      "FANNIE-B2-1.3-03",
+      "IRS-PUB527"
+    ],
+    "scopeAndLimits": "Hypothetical scenario with author-chosen inputs; the 75% loan-to-value and 2% refinance cost rate are assumptions, not lender limits and not Fannie Mae figures (the Eligibility Matrix was not retrievable). Fannie Mae rules apply to loans sold to Fannie Mae; other lenders set their own rules. Rent, cash flow, taxes and the new interest rate are not modeled. No claim that we completed a BRRRR purchase.",
+    "publicMethod": "Inputs, assumptions and the arithmetic are shown in a table on the page.",
+    "placement": "Section 2: 'In our internal modeling, we ran one hypothetical $150,000 purchase with $40,000 of repairs through a refinance at three appraised values...' with inputs beside the result."
+  },
+  "sources": [
+    {
+      "id": "FANNIE-B2-1.3-03",
+      "url": "https://selling-guide.fanniemae.com/sel/b2-1.3-03/cash-out-refinance-transactions",
+      "checked": "2026-11-04"
+    },
+    {
+      "id": "IRS-PUB527",
+      "url": "https://www.irs.gov/publications/p527",
+      "checked": "2026-11-04"
+    }
+  ],
+  "findings": [
+    {
+      "claim": "Fannie Mae cash-out refinance: existing first mortgage being paid off must be at least 12 months old; at least one borrower on title six months before disbursement; listed properties must be off the market",
+      "label": "reported",
+      "source": "FANNIE-B2-1.3-03"
+    },
+    {
+      "claim": "Delayed financing exception for purchases within six months: arms-length purchase, no mortgage used, no liens, funds documented, and new loan no more than the documented initial purchase investment plus financed closing costs, prepaid fees and points, subject to max LTV on current appraised value",
+      "label": "reported",
+      "source": "FANNIE-B2-1.3-03"
+    },
+    {
+      "claim": "Residential rental property is depreciated over 27.5 years under GDS; land is not part of the depreciation basis; a rehabbed house is placed in service when ready and available for rent",
+      "label": "reported",
+      "source": "IRS-PUB527"
+    },
+    {
+      "claim": "Illustration: $193,000 total cash invested; at a $230,000 appraisal, assumed 75% LTV and 2% cost, $23,950 stays in the deal; at $200,000, $46,000; at $260,000, $1,900",
+      "label": "modeled",
+      "source": "run.py output"
+    },
+    {
+      "claim": "Illustration: full cash-out at the assumed 75% LTV and 2% cost needs an appraisal of about $262,585 (1.36 times the cash invested)",
+      "label": "modeled",
+      "source": "run.py output"
+    },
+    {
+      "claim": "Illustration: inside six months, a loan capped at the $153,000 initial purchase investment leaves $43,060 in the deal at $230,000 and $260,000 appraisals",
+      "label": "modeled",
+      "source": "run.py output"
+    }
+  ],
+  "finding": "BRRRR recycles cash only when the appraised value after repairs times the lender's loan-to-value limit, less refinance costs, covers what the investor put in. In our modeled example (assumed 75% loan-to-value, 2% costs) a $230,000 appraisal leaves $23,950 of $193,000 in the deal and full recovery needs about $262,585. Under Fannie Mae's delayed-financing exception, a refinance inside six months is capped by the documented purchase investment, which on its wording does not include the later repair spending.",
+  "conditions": "Modeled scenario with author-chosen inputs; the loan-to-value and cost assumptions are not lender limits; rules cited are Fannie Mae's, and other lenders differ; rent, cash flow, the new rate, taxes and holding costs are not modeled; investor-property loan-to-value limits are in the Fannie Mae Eligibility Matrix, not read.",
+  "whatWouldChange": "A lender's actual maximum loan-to-value for an investment-property cash-out refinance, a different appraised value, a change to the Fannie Mae seasoning or delayed-financing rules, or the investor's cash flow after the refinance.",
+  "counterexample": "At a $200,000 appraisal the same project leaves $46,000 in the deal (run.py low scenario); inside six months the delayed-financing cap leaves $43,060 even at a $260,000 appraisal because the loan is capped at $153,000.",
+  "units": "USD",
+  "limitations": "Illustrative inputs and assumptions; one scenario; no cash flow, taxes, new interest rate or holding costs; delayed-financing cap modeled as purchase price plus purchase closing costs.",
+  "execution": {
+    "command": [
+      "python3",
+      "evidence/brrrr-method/run.py",
+      "evidence/brrrr-method/inputs.json",
+      "evidence/brrrr-method/output.json"
+    ],
+    "code": {
+      "path": "evidence/brrrr-method/run.py",
+      "sha256": "96e9a319280dfb35f21d1bf6b709ebb20c9537d5f96d9161dd126a12b501d5f5"
+    },
+    "inputs": [
+      {
+        "path": "evidence/brrrr-method/inputs.json",
+        "sha256": "9a07e804c8fbdc34bf73151f3c7ae5bddf22d15f8745983c5c15e3db5403c581"
+      }
+    ],
+    "output": {
+      "path": "evidence/brrrr-method/output.json",
+      "sha256": "55d083d0bba30eae3bf8cd57aebe8a550f13a18b6cbf9d1687325b0b109af1bc"
+    }
+  },
+  "sourceArtifacts": [
+    {
+      "path": "evidence/brrrr-method/sources.md",
+      "sha256": "8a9cc59222488d37d3378954db50bd15ef5cc4ed36005a37dcca903f3adfca08"
+    }
+  ],
+  "unknowns": [
+    "Any lender's actual investment-property LTV and rate",
+    "Market rents and cash flow",
+    "Non-Fannie-Mae lender seasoning rules (DSCR and portfolio lenders)",
+    "Appraisal outcome for any specific property"
+  ],
+  "selectedMedium": "text with one scenario table (three appraised values, two refinance paths) and a break-even sentence; no interactive calculator in this run (scenario is deterministic and reproducible from the saved script; a calculator would need a verified LTV table)",
+  "takeaway": "BRRRR can recycle most or all of an investor's cash only when the appraisal after repairs is high enough that the loan covers the money in the deal: in our modeled example that took about $262,585 on $193,000 invested. It fits an investor who can wait out lender seasoning and is buying below the finished value; it does not fit anyone counting on a low appraisal, a refinance inside six months to recover repair spending, or a payment the rent cannot cover. Evidence basis: Fannie Mae Selling Guide and IRS Publication 527 (reported) plus our scenario (modeled). Changes with the lender's real loan-to-value limit and the appraisal. Next step: ask a lender for its seasoning rule and maximum investment-property loan-to-value before buying."
+}

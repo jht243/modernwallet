@@ -1,0 +1,100 @@
+{
+ "rows": [
+  {
+   "keyword": "tax loss harvesting",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": "53",
+   "cpc": "3.93",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "hsa triple tax advantage",
+   "volume": 2400,
+   "volume_low": 2400,
+   "volume_high": 2400,
+   "kd": "37",
+   "cpc": "1.11",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "brrrr method",
+   "volume": 6600,
+   "volume_low": 6600,
+   "volume_high": 6600,
+   "kd": "41",
+   "cpc": "0.97",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "tax loss harvesting rules",
+   "volume": 1300,
+   "volume_low": 1300,
+   "volume_high": 1300,
+   "kd": "46",
+   "cpc": "1.62",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "hsa contribution limits 2026",
+   "volume": 33100,
+   "volume_low": 33100,
+   "volume_high": 33100,
+   "kd": "44",
+   "cpc": "0.59",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how does the brrrr method work",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": "23",
+   "cpc": "0.3",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using semrush (quality order semrush > dataforseo)",
+  "semrush returned volume for 6/6 phrases",
+  "kd: using semrush (quality order semrush > dataforseo)",
+  "Autocomplete: 6/6 rows corroborated live"
+ ]
+}

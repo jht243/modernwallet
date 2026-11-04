@@ -1,0 +1,7 @@
+.claude/commands/_mindmap-execution.md — characters 18000 onward
+
+on`, `whyNoAddition`, `existingAnswer: {path, sha256}` and an independent `noAddition: {status: PASS, evidence}` decision bound to that note; the helper returns before render/replay requirements.
+
+## 4. Finish the selected useful asset in the approved run
+
+Use prose, a finite table, SVG, a genuine screenshot, an image/illustration, downloadable data or an interactive tool when that format improves the answer and available capabilities support it. Reuse components. Generated illustrations never prove product use. Build and audit the actual asset and its page within Phase 3/4; no placeholder, spec-only completion or future-human-build branch. Determine feasibility before the chart; narrow or exclude an infeasible asset while retaining a supported useful answer. Do not force an asset or add another URL for existing intent. Videos remain outside this Mindmap evidence workflow.

@@ -1,0 +1,23 @@
+.claude/commands/_content-standard.md — characters 81000 onward
+
+ze_intros.py --changed <run-base>`, that finds and rewrites every new `data/*.ts` intro in one call; other repos use the portable helper above.)
+
+**Rules.**
+- New pages only. Do NOT run it on existing pages a routine merely edited, and never on a page under DEFEND-LOCK.
+- **Never send a byline or a disclosure paragraph to the model.** Before piping, drop any intro paragraph that is a reviewer/author line (`Reviewed by…`, `Last updated…`) or affiliate/FTC disclosure copy (`…may earn a referral commission…`, `…at no extra cost to you…`), then put those paragraphs back verbatim, in their original position, after the rewrite. That text is attribution and legal copy, not voice; a reworded disclosure is a compliance change nobody asked for. (On 2026-09-03 the pass reworded the disclosure on 6 layer3 pages and had to be restored from git.)
+- Only the intro. Section bodies, tables, FAQs, metadata, and links are untouched.
+- It replaces the intro's field in place — same links, same facts. The model may split a long paragraph, which is fine. The helper drops the rewrite and keeps the original if a number or link went missing.
+- It is exempt from repeat style linting and polish; it remains subject to the final factual, meaning, evidence, link, disclosure and rendered-layout checks. Publish only the exact approved final output.
+- One human-sounding intro that keeps every fact beats a compliant flat one. If a fact moved or changed, that is a bug in the call — keep the original.
+
+---
+
+## SCOPE
+
+Applies to reader-facing **prose** — new pages, body-text updates, enrichments, and tool copy. Exempt: pure technical/indexability fixes and internal non-prose technical specifications. Mindmap asset rows still require completed assets and audited framing prose.
+
+Body edits are explicitly in scope. Substantive body enrichments must pass the independent Phase 4 audit of the exact changed content and its evidence before publication, including testing attribution and the intent-based takeaway. Metadata/link-only edits retain their existing scope. A body edit inherits the page's existing `register` — never switch a page's voice mid-life.
+
+---
+
+**Evidence authority:** read `.claude/commands/_testing-labels.md`. Local permission and exclusions come first; reviewed executed tests come second. Page type alone never enables the format.

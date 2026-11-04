@@ -1,0 +1,68 @@
+coverage_lookup: 3 candidate(s) vs 802 repo pages / 813 sitemap routes (https://themodernwallet.com) / 0 redirects / 1036 past-chart lines
+
+### /guides/tax-loss-harvesting/  — row - · create new content
+keyword: tax loss harvesting
+reader question (new page intent): How does tax loss harvesting work and how much can I deduct?
+lookup terms: tax loss harvesting   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-05.md [table] | **Lens 2 — the deduction searchers ask about most, and the one they most fear.** "home office deduction" 6,600/mo KD 58 CPC $7.27; "home office tax deduction" 3,600/mo KD 50; "home office deduction calculator" 590/mo K
+- 2026-09-30-robinhood.md [table] | 7 | **Lens 2 (the rule an always-on bot trips) — Wash sale rule.** "wash sale rule" 14,800/kd61 (largest head); PAA: *How do day traders avoid wash sales?*, *Is wash sale rule 30 or 60 days?*, *Can I claim a loss after
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/hsa-triple-tax-advantage/  — row - · create new content
+keyword: hsa triple tax advantage
+reader question (new page intent): What does the HSA triple tax advantage mean and what are the limits?
+lookup terms: hsa triple tax advantage   format cues: limits
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/hsa-vs-fsa  [in sitemap · src/data/comparisons.ts · topic match 0.5 on hsa tax]
+    title: HSA vs FSA: Which Account Saves You More?
+    desc:  HSA vs FSA compared: contribution limits, rollover rules, investment options, and which pre-tax health savings account is right for you in 2025.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-08-30.md [table] | **Lens 2 — adjacent discovery.** The generic version of the brief's headline promise. `tax free retirement account` 2,400/mo KD 22 · `tax free investing` 1,300/mo KD 20 · `tax free retirement income strategies` 10/mo K
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/brrrr-method/  — row - · create new content
+keyword: brrrr method
+reader question (new page intent): How does the BRRRR method work and when does it stop working?
+lookup terms: brrrr method   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/what-target-date-fund-should-i-choose  [in sitemap · src/data/guides.ts · topic match 0.5 on method]
+    title: What Target Date Fund Should I Choose? A Simple Method
+    desc:  What target date fund should I choose? Learn how the fund year, the to vs through glide path, index vs active, and share class change what you actually own.
+- /roundup/best-retirement-calculators  [in sitemap · src/data/roundups.ts · topic match 0.5 on method]
+    title: Best Retirement Calculators of 2026: Compared by Method
+    desc:  The best retirement calculators of 2026, compared by methodology — Monte Carlo vs simple projection, Social Security, taxes, and cost.
+- /compare/debt-snowball-vs-avalanche  [in sitemap · src/data/comparisons.ts · topic match 0.5 on method]
+    title: Debt Snowball vs Avalanche: Which Pays Off Faster?
+    desc:  Debt snowball vs avalanche compared: the snowball clears your smallest balance first, the avalanche targets your highest APR to pay less interest.
+- /guides/home-office-deduction  [in sitemap · src/data/guides-self-employed.ts · topic match 0.5 on method]
+    title: Home Office Deduction: Rules, Methods, and Myths
+    desc:  The home office deduction explained: the exclusive-use test, simplified vs actual method, why yours may be zero, and whether it really triggers an audit.
+- /guides/how-much-life-insurance-do-i-need  [in sitemap · src/data/guides.ts · topic match 0.5 on method]
+    title: How Much Life Insurance Do I Need? (DIME Method)
+    desc:  Most families need about 10 to 12 times their income in life insurance. Use the DIME method (debt, income, mortgage, education) to size your coverage.
+- /guides/investment-appraisal-methods-npv-irr  [in sitemap · src/data/guides.ts · topic match 0.5 on method]
+    title: Investment Appraisal Methods: NPV, IRR, and Payback
+    desc:  Net present value, internal rate of return, and payback period explained with worked numeric examples, so you can size up any investment with real numbers.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-19.md [table] | Lens 2 (adjacent). Cluster "parent buys SpaceX stock for a child": `how to buy spacex stock for my child` (est.), `buy spacex stock for kids` (est. 10); PAA "Can a parent buy stocks for their child?", "How much will on
+- 2026-10-19.md [table] | Lens 2 (adjacent, highest measured demand). Cluster "how to buy SpaceX stock": `how to buy spacex stock` 7,400/KD 22 (ahrefs), `how to buy stock in spacex` 800/KD 0, `how to buy spacex stock 2026` 500, `how to buy spac
+- 2026-10-21-tool-usage.md [table] | 4 | Lens 1 (tool usage, auto-loan — 12 people). Persona: buyer with a buyer's order: $38,995, $4,000 down, $9,500 trade-in owing $6,200, 6.79% / 72 mo, 7% sales tax, $850 fees. Walkthrough: tool says $537/mo; the deale
+- 2026-10-22-trend-lane-c.md [exclusions] - financial calculator online npv / irr / ytm (10/mo each, KD 62 to 65): DROP as separate pages — demand 10/mo; the TVM solver page and the existing /guides/investment-appraisal-methods-npv-irr/ carry them. An NPV/IRR ca
+- 2026-10-27-podcast.md [table] | 2 | Direct intent (podcast: Ready For Retirement "What Should You Do With Your 401k When You Retire?"). Cluster: what to do with your 401k when you retire 260/mo KD 7 (DataForSEO measured); ac: what can you do with you
+- 2026-10-27-xtrends.md [table] | 2 | Lens 2 (news-driven, scout bullet "Can you buy Anthropic IPO shares?"). `anthropic stock` 110,000/mo KD 10 and `anthropic ipo` 74,000/mo KD 20 (DataForSEO measured); `how to buy anthropic stock` est. 250-2,500 (ban
+Commits naming the topic: none
+Same run overlap: none
+

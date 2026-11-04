@@ -1,0 +1,9 @@
+{
+  "purchasePrice": 150000,
+  "purchaseClosingCosts": 3000,
+  "rehabCost": 40000,
+  "refinanceLtvAssumption": 0.75,
+  "refinanceClosingCostRate": 0.02,
+  "afterRepairValueScenarios": {"low": 200000, "base": 230000, "high": 260000},
+  "notes": "All figures are illustrative scenario inputs chosen by the author for a worked example. The 75% loan-to-value and 2% refinance cost rate are assumptions, not lender limits and not Fannie Mae figures."
+}

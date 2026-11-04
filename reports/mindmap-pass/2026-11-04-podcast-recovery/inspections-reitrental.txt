@@ -1,0 +1,1 @@
+Inspected 2026-11-04 in src/data/comparisons.ts slug reit-vs-rental-property (live 200). Section 'How owning a rental property works' describes buying, financing and managing a rental. Planned link-only edit: append one sentence to that section: 'Investors who repair a rental and then refinance to recover their cash follow the [BRRRR method](/guides/brrrr-method/).' No date bump.

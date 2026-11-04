@@ -1,0 +1,49 @@
+{
+  "breakevenArvAsMultipleOfCashInvested": 1.3605,
+  "breakevenArvForFullCashOutAtAssumedLtv": 262585.03,
+  "breakevenLoanForFullCashOut": 196938.78,
+  "initialPurchaseInvestment": 153000,
+  "scenarios": {
+    "base": {
+      "arv": 230000,
+      "pathA": {
+        "cashLeftInDeal": 23950.0,
+        "loan": 172500.0,
+        "netProceeds": 169050.0
+      },
+      "pathB": {
+        "cashLeftInDeal": 43060.0,
+        "loan": 153000,
+        "netProceeds": 149940.0
+      }
+    },
+    "high": {
+      "arv": 260000,
+      "pathA": {
+        "cashLeftInDeal": 1900.0,
+        "loan": 195000.0,
+        "netProceeds": 191100.0
+      },
+      "pathB": {
+        "cashLeftInDeal": 43060.0,
+        "loan": 153000,
+        "netProceeds": 149940.0
+      }
+    },
+    "low": {
+      "arv": 200000,
+      "pathA": {
+        "cashLeftInDeal": 46000.0,
+        "loan": 150000.0,
+        "netProceeds": 147000.0
+      },
+      "pathB": {
+        "cashLeftInDeal": 46000.0,
+        "loan": 150000.0,
+        "netProceeds": 147000.0
+      }
+    }
+  },
+  "totalCashInvested": 193000,
+  "units": "USD"
+}

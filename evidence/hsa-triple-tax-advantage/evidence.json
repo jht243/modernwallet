@@ -1,0 +1,101 @@
+{
+  "route": "/guides/hsa-triple-tax-advantage/",
+  "origin": "podcast-pain-pass-auto recovery 2026-11-04 (deferred row from 2026-11-03 run, main 2b7393f)",
+  "readerQuestion": "What does the HSA triple tax advantage mean, and what are the limits? [PAA 5/6 on-topic (meaning, expire, adult-child, advantages, downside), 1/6 off-topic: Dave Ramsey opinion; ac 19 question-sweep suggestions: what-is / what-does-it-mean / explained / after-65 shapes]",
+  "gateSchemaVersion": 1,
+  "author": "root-orchestrator",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/evidence/hsa-triple-tax-advantage/cases.json",
+    "sha256": "02d16d30be8bf9ea859469f416044320c63087f2108fdb63523b5cf260f5a02a"
+  },
+  "caseDecisions": "All 8 retrieved approved-case candidates (owned-property-the-indoor-report, owned-property-diy-repair-guide, client-bowlero-corporation, client-professional-bowlers-association-pba, client-horizen-labs, client-multiple-hoa-and-condo-boards-across-the-usa, client-multiple-law-firms, owned-property-cuban-insights) are Layer3Labs-owned properties, testimonials or clients on unrelated topics that matched only on generic words; none concerns this topic. This site's _experience.md lists no named-client claims. All rejected; no client mention is forced.",
+  "testingLabel": "ordinary presentation (TESTED excluded: personal-finance, tax and lending topics are financial services outside _experience.md section G; no executed product tests exist)",
+  "exclusions": [
+    "No TESTED format, no 'we tested' claims.",
+    "No client-conversation claims.",
+    "No individualized investment, tax, or lending advice; rules and trade-offs only, with a pointer to a tax professional or lender."
+  ],
+  "demandSource": "SEMRUSH us 2026-11-04 measured: 'hsa triple tax advantage' 2,400/mo KD 37 CPC $1.11; 'hsa contribution limits 2026' 33,100/mo KD 44 (supporting phrase, same page: limits are section 1); 'hsa tax benefits' 1,900; 'are hsa contributions tax deductible' 2,400; 'is an hsa worth it' 1,900. SERP (DataForSEO, 2026-11-04): locked, AI Overview cites morganstanley.com, reddit.com, fidelity.com, facebook.com, youtube.com, ameriprise.com, hsacentral.net, huntington.com; PAA 5/6 on-topic. Source: podcast pain mining (How to Money 'Maxxing HSA Benefits').",
+  "decisionGap": "Readers searching the triple advantage get a slogan. They still cannot tell what the three breaks are under IRS rules, the exact 2026 dollar limits and HDHP definition, who is shut out (Medicare enrollees), what an excess or non-medical withdrawal costs (6% excise, income tax plus 20% before 65), and whether HSA money expires (it does not). The site's HSA pages are head-to-head comparisons (vs FSA, vs Roth IRA), not the explainer.",
+  "method": "Reported: IRS Publication 969 (page reviewed 2026-04-30) and Rev. Proc. 2025-19 (2026 inflation adjustments), both fetched 2026-11-04, plus labeled arithmetic (self-only limit $4,400 plus the $1,000 age-55 amount = $5,400).",
+  "basis": "reported",
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [
+      "IRS-PUB969",
+      "IRS-RP-2025-19"
+    ],
+    "scopeAndLimits": "Page restates and organizes IRS statements for 2026. Federal rules only; state tax treatment was not verified and the page says so. No claim that we tested any HSA provider.",
+    "publicMethod": "Rules linked inline to Publication 969 and Rev. Proc. 2025-19; the one addition is shown arithmetic.",
+    "placement": "Third-person attribution to the IRS beside each limit; the takeaway names the evidence basis."
+  },
+  "sources": [
+    {
+      "id": "IRS-PUB969",
+      "url": "https://www.irs.gov/publications/p969",
+      "checked": "2026-11-04"
+    },
+    {
+      "id": "IRS-RP-2025-19",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-19.pdf",
+      "checked": "2026-11-04"
+    }
+  ],
+  "findings": [
+    {
+      "claim": "Three breaks per IRS Pub. 969: deduction for your contributions (even without itemizing), employer contributions may be excluded from gross income, earnings are tax free, distributions tax free for qualified medical expenses",
+      "label": "reported",
+      "source": "IRS-PUB969"
+    },
+    {
+      "claim": "2026 contribution limits $4,400 self-only, $8,750 family; plus $1,000 at age 55 or older",
+      "label": "reported",
+      "source": "IRS-RP-2025-19 / IRS-PUB969"
+    },
+    {
+      "claim": "2026 HDHP: minimum deductible $1,700 / $3,400; maximum deductible plus out-of-pocket $8,500 / $17,000",
+      "label": "reported",
+      "source": "IRS-RP-2025-19"
+    },
+    {
+      "claim": "Medicare enrollment sets the contribution limit to zero from the first month enrolled, including retroactive coverage",
+      "label": "reported",
+      "source": "IRS-PUB969"
+    },
+    {
+      "claim": "Excess contributions: 6% excise tax each year they remain; non-qualified withdrawals: income tax plus 20% additional tax, no additional tax after age 65, disability or death",
+      "label": "reported",
+      "source": "IRS-PUB969"
+    },
+    {
+      "claim": "Balances carry over; no yearly withdrawal required; premiums generally not payable from an HSA except LTC, COBRA, unemployment coverage, and Medicare coverage at 65+ (not Medigap)",
+      "label": "reported",
+      "source": "IRS-PUB969"
+    },
+    {
+      "claim": "Self-only 2026 limit with the age-55 amount: $4,400 + $1,000 = $5,400",
+      "label": "calculated",
+      "source": "arithmetic on IRS figures"
+    }
+  ],
+  "finding": "Under IRS rules the HSA triple tax advantage is a deduction or employer exclusion on contributions, tax-free earnings, and tax-free withdrawals for qualified medical expenses. For 2026 an eligible person can contribute up to $4,400 with self-only coverage or $8,750 with family coverage (plus $1,000 at 55 or older), only with a qualifying high-deductible health plan, and contributions stop once Medicare enrollment starts. Money that is not spent carries over; non-medical withdrawals are taxed and, before age 65, carry an extra 20% tax.",
+  "conditions": "Federal rules only; requires HDHP coverage that meets the 2026 definition and no disqualifying other coverage; contributions stop at Medicare enrollment; state income tax treatment not verified; the benefit depends on the reader's marginal rate and on paying medical costs from the account.",
+  "whatWouldChange": "A new IRS revenue procedure (2027 limits are normally published in the spring or earlier), a change to the Medicare or HDHP rules, or state-specific treatment for the reader's state.",
+  "counterexample": "A reader who enrolls in Medicare, who has coverage that is not a qualifying HDHP, or who takes non-medical withdrawals before 65 does not get the full triple benefit: the contribution limit is zero from the first Medicare month, and a non-qualified withdrawal is taxable plus 20%.",
+  "whyNoQuantitativeAnalysis": "The answer is a rules-and-limits explainer built on IRS figures; a reader's tax saving depends on their marginal rate, state and spending, which no defensible model can assume. The only number we add is the $5,400 arithmetic on IRS figures.",
+  "reasoning": "Pub. 969 lists the deduction/exclusion, tax-free earnings and tax-free qualified distributions; Rev. Proc. 2025-19 sets the 2026 dollar limits and HDHP definition; Pub. 969 adds the age-55 amount, the Medicare stop, the excess-contribution and non-qualified-withdrawal consequences and the carryover rule. Together these define the three breaks and exactly where each one ends.",
+  "sourceArtifacts": [
+    {
+      "path": "evidence/hsa-triple-tax-advantage/sources.md",
+      "sha256": "899b59d5ec211fdd70e1696497a9c63be181e1376282bfed7d44f03c693d256f"
+    }
+  ],
+  "unknowns": [
+    "State income tax treatment",
+    "Any custodian's fees or investment menu",
+    "Employer contribution amounts",
+    "2027 limits (not yet in the sources read)"
+  ],
+  "selectedMedium": "text with one limits table (2026 self-only vs family, with the age-55 amount) and one 'where the breaks end' list; no calculator because the saving depends on marginal rate and the HSA comparison pages already weigh HSA against FSA and Roth IRA",
+  "takeaway": "An HSA is worth opening for an eligible person on a qualifying HDHP who can pay current medical bills from other cash and invest or carry over the balance, because the deduction, tax-free earnings and tax-free medical withdrawals stack. It is not available once Medicare enrollment starts, and a non-medical withdrawal before 65 costs income tax plus 20%. Evidence basis: IRS Publication 969 and Rev. Proc. 2025-19 (reported). Changes if your plan is not a qualifying HDHP, if your state taxes HSAs differently, or if you expect to need the money for non-medical costs before 65. Next step: confirm your plan meets the 2026 HDHP definition, then compare the HSA with an FSA or Roth IRA."
+}

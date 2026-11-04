@@ -1,0 +1,130 @@
+{
+  "route": "/guides/tax-loss-harvesting/",
+  "origin": "podcast-pain-pass-auto recovery 2026-11-04 (deferred row from 2026-11-03 run, main 2b7393f)",
+  "readerQuestion": "How does tax loss harvesting work, and how much can I deduct? [PAA 3/6 on-topic (sell stocks at a loss to cut taxes, the $3,000 loss, downside), 3/6 off-topic: capital gains on $300,000, Warren Buffett view, Buffett 70/30 rule (keyword-intent flag); ac 71 question-sweep suggestions: how-it-works / how-much / is-it-worth-it / does-it-work shapes]",
+  "gateSchemaVersion": 1,
+  "author": "root-orchestrator",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/evidence/tax-loss-harvesting/cases.json",
+    "sha256": "398794689699d85552d544d1e65405f42d346030974b33566db99c1bd3913df8"
+  },
+  "caseDecisions": "All 8 retrieved approved-case candidates (testimonial-gamestation, owned-property-drones-defense, owned-property-medical-frontier, owned-property-diy-repair-guide, owned-property-new-parent-picks, client-bowlero-corporation, client-professional-bowlers-association-pba, client-game-station) are Layer3Labs-owned properties, testimonials or clients on unrelated topics that matched only on generic words; none concerns this topic. This site's _experience.md lists no named-client claims. All rejected; no client mention is forced.",
+  "testingLabel": "ordinary presentation (TESTED excluded: personal-finance, tax and lending topics are financial services outside _experience.md section G; no executed product tests exist)",
+  "exclusions": [
+    "No TESTED format, no 'we tested' claims.",
+    "No client-conversation claims.",
+    "No individualized investment, tax, or lending advice; rules and trade-offs only, with a pointer to a tax professional or lender."
+  ],
+  "demandSource": "SEMRUSH us (KEYWORD_PROVIDERS=semrush,dataforseo) 2026-11-04 measured: 'tax loss harvesting' 12,100/mo KD 53 CPC $3.93; 'tax loss harvesting rules' 1,300/mo KD 46; 'what is tax loss harvesting' 2,900; 'tax loss harvesting for capital gains' 880; 'can short term losses offset long term gains' 1,300. SERP (DataForSEO, 2026-11-04): locked, AI Overview cites investor.vanguard.com, fidelity.com, YouTube, wealthenhancement.com, am.gs.com, newyorklife.com; page one led by pbig.ml.com, ameriprise.com, blog.turbotax.intuit.com. Source: podcast pain mining (How to Money 'capital gains harvesting', Ready For Retirement 'brokerage accounts').",
+  "decisionGap": "A reader who has heard 'harvest your losses' cannot tell from the headline how much a loss is worth (it depends on the rate on the gains it cancels, including 0%), how the $3,000 limit and carryforward work, that the technique defers tax rather than erasing it, or that buying the same fund in an IRA can void the loss. The existing wash-sale guide explains the 30-day rule in depth but not the how-much/when-it-pays question.",
+  "method": "Calculated: a deterministic worked-arithmetic script (evidence/tax-loss-harvesting/run.py) applies the IRS-published $3,000 net-loss limit, the 0/15/20% long-term rates and the 2026 0%-bracket ceilings (Rev. Proc. 2025-32) to illustrative loss amounts, plus the IRS Pub. 550 wash-sale example. Rules are reported from IRS sources fetched 2026-11-04.",
+  "basis": "calculated",
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "IRS-TC409",
+      "IRS-RP-2025-32",
+      "IRS-PUB550",
+      "IRS-SCHD-INSTR"
+    ],
+    "scopeAndLimits": "Federal income tax, taxable accounts, US filers. Dollar amounts in the examples are illustrative, not any reader's result. Ordinary-income rates, state tax, net investment income tax and AMT are not modeled. The page does not claim we tested a harvesting product.",
+    "publicMethod": "Worked examples with inputs and arithmetic shown on the page; every rule linked to its IRS page.",
+    "placement": "Section 1 and the worked-example table: 'In our internal modeling, we ran a $10,000 harvested loss against long-term gains taxed at 0%, 15% and 20%...' with the inputs visible."
+  },
+  "sources": [
+    {
+      "id": "IRS-TC409",
+      "url": "https://www.irs.gov/taxtopics/tc409",
+      "checked": "2026-11-04"
+    },
+    {
+      "id": "IRS-RP-2025-32",
+      "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf",
+      "checked": "2026-11-04"
+    },
+    {
+      "id": "IRS-PUB550",
+      "url": "https://www.irs.gov/publications/p550",
+      "checked": "2026-11-04"
+    },
+    {
+      "id": "IRS-SCHD-INSTR",
+      "url": "https://www.irs.gov/instructions/i1040sd",
+      "checked": "2026-11-04"
+    }
+  ],
+  "findings": [
+    {
+      "claim": "Net capital loss beyond gains: deduct the lesser of $3,000 ($1,500 married filing separately) or the net loss against other income; the remainder carries forward",
+      "label": "reported",
+      "source": "IRS-TC409"
+    },
+    {
+      "claim": "2026 long-term rates: 0% up to $49,450 taxable income (single/other, MFS) and $98,900 (MFJ); 15% up to $545,500 / $613,700 / $306,850",
+      "label": "reported",
+      "source": "IRS-RP-2025-32"
+    },
+    {
+      "claim": "Wash sale: loss disallowed if substantially identical stock or securities are bought within 30 days before or after the sale, including in an IRA or Roth IRA; disallowed loss is added to the new shares' basis and the holding period carries over",
+      "label": "reported",
+      "source": "IRS-PUB550"
+    },
+    {
+      "claim": "$10,000 harvested loss against $10,000 of long-term gain saves $0 / $1,500 / $2,000 of federal tax at 0% / 15% / 20%",
+      "label": "calculated",
+      "source": "run.py output"
+    },
+    {
+      "claim": "$10,000 net loss with no gains: $3,000 deducted ($1,500 MFS), $7,000 carried forward",
+      "label": "calculated",
+      "source": "run.py output"
+    },
+    {
+      "claim": "Deferral: a $3,000 harvested loss resets basis to the new purchase price, so selling later at the original price realizes the same $3,000 gain",
+      "label": "calculated",
+      "source": "run.py output"
+    }
+  ],
+  "finding": "Tax loss harvesting is worth the tax rate on the gains the loss cancels (nothing if those gains would be taxed at 0%), the first $3,000 a year of any excess loss also reduces other income, the rest carries forward, and the benefit is mostly a deferral because the replacement shares start at a lower basis. A purchase of the same or a substantially identical security within 30 days before or after the sale, in any of your accounts including an IRA, disallows the loss.",
+  "conditions": "Federal rules, taxable accounts, US taxpayers. The benefit disappears if the offset gains are taxed at 0% (taxable income at or below $49,450 single / $98,900 married filing jointly in 2026), if the replacement purchase triggers the wash-sale rule, or if the investor never realizes the deferred gain at a higher rate. Not tax advice.",
+  "whatWouldChange": "A change to the IRS loss limit, the 2026 rate thresholds, or the wash-sale rule; for an individual, a different taxable-income bracket or a state-tax rule.",
+  "decisionChangingCounterexample": "At a 0% long-term rate the $10,000 loss saves $0 against gains; with no gains the deduction is capped at $3,000 and the rest waits.",
+  "counterexample": "Reader in the 0% long-term bracket: harvesting $10,000 of losses against $10,000 of long-term gains saves $0 in federal tax that year (run.py: 0pct = 0.0); a reader who rebuys the same fund inside 30 days or in an IRA loses the deduction altogether (IRS Pub. 550 example 1: $250 loss disallowed, basis $1,050).",
+  "units": "USD",
+  "limitations": "Illustrative inputs; federal only; ordinary-income rates, NIIT, state taxes and transaction costs are not modeled.",
+  "execution": {
+    "command": [
+      "python3",
+      "evidence/tax-loss-harvesting/run.py",
+      "evidence/tax-loss-harvesting/inputs.json",
+      "evidence/tax-loss-harvesting/output.json"
+    ],
+    "code": {
+      "path": "evidence/tax-loss-harvesting/run.py",
+      "sha256": "fb3c98c7a761f596557e6d1dbdfb1fc58aa7bf12897cedda536b09b8d1496e56"
+    },
+    "inputs": [
+      {
+        "path": "evidence/tax-loss-harvesting/inputs.json",
+        "sha256": "2eb0bf8c787094121e986b0509d0e8e11ddc70f730c4f02274cdcb83ce7db5cb"
+      }
+    ],
+    "output": {
+      "path": "evidence/tax-loss-harvesting/output.json",
+      "sha256": "33089f54405bbc7bf9a32bdea5b18b2c06f319b293e5bb5bda4daccaef0ba695"
+    }
+  },
+  "sourceArtifacts": [
+    {
+      "path": "evidence/tax-loss-harvesting/sources.md",
+      "sha256": "d6ff0ec79e0ea10d0812ec2de90e8b357355ee8e48a5e8a7e3d4dbd47a86c16e"
+    }
+  ],
+  "unknowns": [
+    "Any reader's own taxable income, basis or holdings",
+    "State tax treatment",
+    "Which replacement funds an IRS reviewer would call substantially identical (no mechanical IRS test; Pub. 550 says facts and circumstances)"
+  ],
+  "selectedMedium": "text with one worked-arithmetic table (loss amount x long-term rate) and one 'what would change this' section; no calculator because /stock-capital-gains-tax-calculator/ already computes sale-specific tax and a harvest depends on the reader's holdings",
+  "takeaway": "For a US taxpayer with realized capital gains taxed at 15% or 20%, harvesting a loss saves 15 or 20 cents of federal tax per dollar of loss now; with gains taxed at 0% it saves nothing, and with no gains it saves tax only on the first $3,000 a year. Applies to taxable accounts, not IRAs. Evidence basis: IRS rules (reported) plus our worked arithmetic (calculated). Changes if you buy the same or a substantially identical security within the 30-day windows, or if a higher future rate makes the deferral costly. Next step: list your realized gains and losses for 2026 on the IRS worksheet and, before selling, confirm no repurchase falls inside the window."
+}

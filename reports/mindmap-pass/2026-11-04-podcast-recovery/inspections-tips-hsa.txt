@@ -1,0 +1,1 @@
+Inspected 2026-11-04 in src/data/guides.ts slug tax-tips. Section heading 'Tip 2: Use an HSA for the triple tax break', body sentence 1: 'A Health Savings Account (HSA) is the only account that offers a triple tax advantage.' Planned link-only edit: link 'triple tax advantage' to /guides/hsa-triple-tax-advantage/. No date bump.

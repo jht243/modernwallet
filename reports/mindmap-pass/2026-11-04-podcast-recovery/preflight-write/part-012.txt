@@ -1,0 +1,16 @@
+.claude/commands/podcast-pain-pass/phase-2-execute-publish.md — characters 9000 onward
+
+d render as a broken relative link — always paste the complete `https://…` URL):
+
+```markdown
+## New pages shipped
+- [Magnesium for Sleep](https://www.themetabolicjournal.com/guides/magnesium-for-sleep)
+- [Magnesium Glycinate vs Citrate](https://www.themetabolicjournal.com/compare/magnesium-glycinate-vs-citrate)
+- [Magnesium Deficiency Symptoms](https://www.themetabolicjournal.com/symptoms/magnesium-deficiency)
+```
+
+Rules for this section:
+- **List ALL of them** — one bullet per page actually shipped this run, never a truncated/"top N" subset, never a count-only summary line ("1 new page"). If 15 pages shipped, all 15 bullets appear.
+- Each bullet is `[Human title](https://www.themetabolicjournal.com<route>)` using the exact route from `shipped_slugs` + the live host, so every page renders as a clickable link.
+- If the run also updated existing page bodies, add a second section titled EXACTLY `## Updated pages` (this heading survives the filter — `## Body updates` does NOT) listing each as a `[Title](FULL-URL)` bullet the same way.
+- If ZERO pages shipped (empty/no-changes run), send `no-changes` — there is no New-pages section to build.

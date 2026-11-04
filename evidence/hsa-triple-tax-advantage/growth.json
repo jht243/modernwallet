@@ -1,0 +1,19 @@
+{
+  "originRoutine": "podcast-pain-pass-auto",
+  "queryFamily": "hsa triple tax advantage / hsa contribution limits 2026 / hsa tax benefits",
+  "hypothesis": "A dedicated IRS-sourced HSA explainer earns clicks for the triple-advantage and 2026-limits query families where the site has only comparison pages.",
+  "primaryMetric": "Google Search Console clicks for the canonical URL",
+  "baseline": {
+    "status": "unavailable",
+    "reason": "No verified pre-change GSC extract in the run evidence; retry historical date-filtered extraction during the existing measurement routine.",
+    "priorSpecification": "not-yet-published; age-matched comparator to be chosen by the growth review"
+  },
+  "changeScope": "new route",
+  "sourceRefreshTrigger": "IRS publishes 2027 HSA limits (Rev. Proc.) or revises Publication 969",
+  "outcomeStatus": "not-yet-published",
+  "productionCost": "unknown; see .meta.json for generator usage",
+  "path": "/guides/hsa-triple-tax-advantage/",
+  "contributionId": "evidence/hsa-triple-tax-advantage/growth.json",
+  "growthFile": "evidence/hsa-triple-tax-advantage/growth.json",
+  "evidenceFile": "evidence/hsa-triple-tax-advantage/evidence.json"
+}

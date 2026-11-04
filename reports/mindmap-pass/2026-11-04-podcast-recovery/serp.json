@@ -1,0 +1,181 @@
+{
+ "rows": [
+  {
+   "keyword": "tax loss harvesting",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "investor.vanguard.com",
+    "www.fidelity.com",
+    "www.youtube.com",
+    "www.wealthenhancement.com",
+    "am.gs.com",
+    "www.newyorklife.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "www.pbig.ml.com",
+    "www.ameriprise.com",
+    "google.com",
+    "blog.turbotax.intuit.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "blog.turbotax.intuit.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 8,
+    "people_also_ask": 1,
+    "people_also_search": 1,
+    "product_considerations": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "Is it possible to sell stocks at a loss to reduce taxes?",
+    "How much capital gains do I pay on $300,000?",
+    "Do I get $3,000 back from stock loss?",
+    "What does Warren Buffett say about tax-loss harvesting?",
+    "Is there a downside to tax loss harvesting?",
+    "What is Warren Buffett's 70/30 rule?"
+   ],
+   "related_searches": [
+    "Tax loss harvesting example",
+    "Tax loss harvesting calculator",
+    "Tax-loss harvesting pros and cons",
+    "Tax-loss harvesting rules",
+    "Tax loss harvesting 30 day rule",
+    "Tax-loss harvesting funds",
+    "Tax-loss harvesting ETF",
+    "Why tax loss harvesting doesn t work"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "6/10 major platforms (google.com, google.com, blog.turbotax.intuit.com, google.com); AI Overview present, cites investor.vanguard.com, www.fidelity.com, www.youtube.com, www.wealthenhancement.com",
+   "se_results_count": 144
+  },
+  {
+   "keyword": "hsa triple tax advantage",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.morganstanley.com",
+    "www.reddit.com",
+    "www.fidelity.com",
+    "www.facebook.com",
+    "www.youtube.com",
+    "www.ameriprise.com",
+    "www.hsacentral.net",
+    "www.huntington.com",
+    "www.instead.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.wealthcharterretirement.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 7,
+    "people_also_ask": 1,
+    "video": 1
+   },
+   "paa": [
+    "What does a triple tax advantage mean?",
+    "Do HSA funds expire?",
+    "What is the adult child loophole for HSA?",
+    "What are the advantages of HSA?",
+    "What does Dave Ramsey say about HSA?",
+    "What's one potential downside of an HSA?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "6/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.morganstanley.com, www.reddit.com, www.fidelity.com, www.facebook.com",
+   "se_results_count": 124
+  },
+  {
+   "keyword": "brrrr method",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.chase.com",
+    "www.reddit.com",
+    "www.ube.ac.uk",
+    "americanhomelandtitle.com",
+    "www.youtube.com",
+    "taxstra.com",
+    "www.amerisave.com",
+    "www.yardi.com",
+    "www.biggerpockets.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.corevestfinance.com",
+    "agorareal.com",
+    "google.com",
+    "newfi.com",
+    "google.com",
+    "www.relocatetohuntsville.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "images": 1,
+    "organic": 6,
+    "people_also_ask": 1,
+    "related_searches": 1,
+    "video": 1
+   },
+   "paa": [
+    "How much money do you need to start the Brrrr method?",
+    "Is it brrr or brrrr?",
+    "What is the 2% rule for rental property?",
+    "Is brrrr better than flipping?",
+    "What is the 70 rule for brrrr?",
+    "How much money do you need for Brrr?"
+   ],
+   "related_searches": [
+    "BRRRR method with no money",
+    "BRRRR calculator",
+    "BRRRR book",
+    "Brrr cold"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "2/10 major platforms (google.com, google.com); AI Overview present, cites www.chase.com, www.reddit.com, www.ube.ac.uk, americanhomelandtitle.com",
+   "se_results_count": 141
+  }
+ ],
+ "cost": "DataForSEO: 3 calls, $0.00645 of $2.00 budget"
+}

@@ -1,0 +1,49 @@
+.claude/commands/_workflow-checkpoints.md — characters 9000 onward
+
+where applicable; retain a reasoning trail for non-numerical work.
+4. Visible attribution beside the finding: what we did, the supported result, scope and a publishable way to inspect the method. Source-only work names the external source; private records remain private. No exact wording quota.
+5. Intent-based takeaway (or existing sufficient verdict), agreement with the opening answer, table/tool and FAQs, and the condition or alternative that changes the recommendation. An honestly inconclusive answer may pass.
+6. Testing eligibility separately from executed evidence; complete item coverage, real test dates, raw records and independent approval of the exact final content. Check title, metadata, byline, methods, picks and schema use one decision; inspect residual testing claims even when the badge is off. An unchanged migration snapshot is not a new test approval.
+7. Selected visuals/tools match source outputs; test defaults/boundaries, accessibility and mobile readability. No mandatory calculator, screenshot or exact heading; no videos under the evidence contract.
+8. Growth record and baseline/comparator status where the contribution requires them; unknown/unavailable is not zero and publishing is not proven uplift. Respect the terminal no-addition exemption.
+
+Missing evidence for an applicable check is FAIL, not N/A. Recheck any changed reviewed artifact before publishing. At the existing publication gate, verify the audit's exact content/artifact hashes, current rules and required deployed source files; check built output, then verify live URLs after deployment. Never replace independent judgment with hashes or a fabricated PASS. Existing unchanged pages outside this run remain out of scope.
+
+## Approval chart — completed preparation only
+
+The approval chart is the gate to START content work. Present it only after all applicable preparation is complete and independently checked. Never show a ready-for-approval chart with “pending”, “not yet”, unchecked boxes or missing evidence. A failed preparation status may be shown only as a blocked readiness report with its specific failures, without asking for approval. If a prerequisite is unfinished, finish it before presenting the chart. If blocked, report the specific blocker without presenting a ready-for-approval chart. This does not authorize content generation, content edits or publication before Phase 0 approval.
+
+Separate completed preparation from the execution plan:
+- **Preparation summary:** show exactly ONE aggregate row: **Check / Result / Evidence** → **Preparation check / ✅ Passed / link to the full readiness report**. Pass requires every applicable underlying instruction/readiness check and independent review to be complete and evidenced. Keep the detailed read/application checklist and per-page checks in the linked run evidence; do not print the long checklist or repeat passed items in the on-screen chart. If any required check fails or lacks evidence, show **Preparation check / ❌ Failed — approval blocked / evidence link**, followed ONLY by the specific failures, affected targets and required fixes. No approval question until those failures are resolved. N/A decisions and their reasons stay in the detailed report, not as extra summary rows.
+- **Execution plan:** retain the full original action table and Phases 1–9, including metadata, substantive writing, independent content audit, body updates, internal links, sitemap/IndexNow and commit/deploy/live verification. Use future action verbs and exact targets. These are the actions being approved, not completed-work checkboxes. Do not add a “pending” status column or label them passed.
+- **Final results:** report actual completed execution/review/publication results after they occur. A blocked or failed run reports its actual issue; it does not display a partially complete approval chart or fabricate success.
+
+Before showing the chart, read ALL applicable workflow instructions, including downstream writing, audit, linking and publication requirements. Use repeated `--instruction` arguments with `workflow-preflight.py prepare` to include those phase files in the build bundle; reuse already completed same-actor reading only when valid. The independent chart reviewer uses its own current instructions and verifies the preparation, not a fictitious Phase 4 content PASS.
+
+Complete and evidence these preparation checks before the approval presentation:
+
+| Preparation requirement | What must already be finished |
+|---|---|
+| Workflow freshness and full instruction reading | Verified startup; complete/current contracts, local rules and applicable phase instructions |
+| Brief, scope and reader questions | Interpreted brief, exact reader questions, answer placement, formats and actionable targets |
+| Keyword demand, relevance and discovery coverage | Saved real discovery results, correct provider/provenance, exact candidate checks, required SERP/PAA/question sweep and stop/widen rationale |
+| Duplication and existing-page intent | Coverage lookup, checked commits, same-run overlap and independent duplicate-review decisions for every applicable target |
+| Local testing eligibility and exclusions | Resolved per-page permission/exclusion decisions, including required professional-review obligations |
+| Evidence and attribution preparation | Sources/reusable records inspected, actual evidence basis classified and a supported findings/attribution brief; no invented tests or benefits |
+| Takeaway preparation | Planned intent-answering conclusion grounded in the research, material conditions and existing sufficient-verdict/no-addition decisions |
+| Testing presentation preparation | Determine from actual available records whether TESTED can be proposed or the ordinary/excluded format is required; do not promise an unsupported label |
+| Content standard and audit preparation | Required elements, depth/voice rules, source requirements and independent Phase 4 acceptance criteria incorporated in the brief |
+| Tool/visual preparation | Useful medium chosen, inputs/sources/logic and feasibility assessed where applicable; actual implementation/audit remains in the approved execution plan |
+| Internal-link preparation | Inspect source pages and relevant sections, specify inbound/outbound placements and targets, and confirm the required link coverage can be achieved |
+| Technical SEO and publication preparation | Inspect applicable metadata/schema/canonical/sitemap/deployment wiring; define exact actions and live checks |
+| Growth preparation | Read available outcomes; identify the applicable baseline/comparator/data status and hypothesis without claiming uplift; respect no-addition exemptions |
+| Independent chart review | Final proposed rows, exclusions, research, readiness evidence and checklist verified by a distinct reviewer |
+| Approval scope prepared | Explicit planned commit, push, live verification and IndexNow actions disclosed, or an explicit local-only scope; approval itself is the next user action, not a completed checklist row |
+
+Show the same single aggregate preparation row in both the saved approval chart and on-screen presentation. Keep the complete underlying checklist in a separate linked run evidence report. Preserve the original action table, emerging clusters and exclusions; put the aggregate row under its own `## Preparation check` heading before the existing Phase 0 approval question. It cannot become an action row. When failed, show the specific failures as a blocked readiness report and do not present a ready chart or ask for approval. When passed, show no failure list or expanded checklist.
+
+Maintain **Per-page preparation checks** in the linked readiness evidence (not as another visible checklist table on a passed chart): **Page / Duplicate check / Testing eligibility / Evidence and label decision / Takeaway brief / Evidence**. Every applicable preparation cell must have a verified decision and linked proof. Testing exclusions can pass preparation with the ordinary presentation explicitly selected; this never means a product test was performed. Do not include actual content-audit, implementation or live-deployment checkboxes in this pre-content table.
+
+A preparatory testing decision does not approve final testing labels. After approval, Phase 3/4 still checks real run records, exact final content, independent approval, rendered methods/title/byline/schema and professional review as required. Likewise a planned takeaway is reviewed again against the actual generated page. No content is described as written, audited, built or live before those events occur.
+
+Changed rules, targets or research invalidate the affected readiness decisions. Recheck them before presenting a revised approval chart. Imported charts must have their current preparation evidence revalidated. The independent chart reviewer rejects any missing preparation evidence, unsupported check mark or future execution result misrepresented as already complete

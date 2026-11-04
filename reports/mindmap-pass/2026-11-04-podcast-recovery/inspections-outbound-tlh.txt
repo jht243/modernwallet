@@ -1,0 +1,1 @@
+Inspected 2026-11-04: /guides/wash-sale-rule-explained/ live 200 (covers the 30-day window, basis adjustment, IRA trap); /stock-capital-gains-tax-calculator/ live 200 (src/data/calculators.ts id stock-capital-gains-tax-calculator); /guides/tax-tips/ live 200.
