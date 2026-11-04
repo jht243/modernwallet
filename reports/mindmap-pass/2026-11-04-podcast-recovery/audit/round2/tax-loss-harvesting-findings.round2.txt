@@ -1,0 +1,79 @@
+PHASE 4 FINDINGS, ROUND 2: /guides/tax-loss-harvesting/
+Reviewer: phase4-reviewer-1. Re-audit of the CURRENT built text (snapshot e5a0939c6899...). Round-1 files are in audit/round1/.
+OVERALL VERDICT: FAIL (5 hard, all sentence-level or routing; no new facts needed)
+Hard findings: 5. Advisory findings: 4.
+
+GATE RESULTS
+  Depth (first and last, `wc -w` on intro + section bodies + FAQ answers): 1,852 with the table, 1,819 without words. Floor 1,200. PASS.
+  Rhythm (106 sentences; short 16, medium 28, long 62): no run of 10 in one band; no prose flat-5 (only the filing-status list items). PASS.
+  Headline fields (title, metaDescription, h1, cardBlurb, 7 H2, 6 FAQ questions): PASS (T7, T7b, T7c fixed; H2s now "What Tax Loss Harvesting Can Deduct Each Year", "Tax Loss Harvesting Usually Defers Tax to a Later Year").
+  Mechanical: em-dash 0, "honest" 0, exclamation 0, hype 0, "we tested" 0, asterisks in render 0, Title Case PASS.
+  Source claims: PASS. Re-checked against live Topic 409, Rev. Proc. 2025-32, Pub. 550, Schedule D; F13 corrected, taxable-income wording corrected, spouse/controlled-corporation sentence now matches Pub. 550.
+  Provenance: PASS. "In our internal modeling" x2, calculated, inputs beside it; "using the IRS 2026 thresholds" removed. "At ModernWallet, we" once.
+  Replay: PASS, audit/tax-loss-harvesting-replay.json canonically identical to evidence output.json; every page figure matches.
+  Links: PASS (IRS first mention linked; new /guides/wash-sale-rule-explained/ link for broker reporting resolves).
+  Dates/schema/layout: PASS (Updated November 4, 2026; dateModified = datePublished; canonical; FAQPage; sitemap; table in .table-wrap).
+  Anti-AI body / dead-end gate: FAIL (R2-T1, R2-T5; overloaded R2-T2, R2-T3, R2-T4).
+
+RESOLVED FROM ROUND 1
+  T1, T1b, T1c, T1d (partly; see R2-T1), T1e, T2 (routed to a tax professional), T3, T4 (F13 corrected, "after your sale" gone), T5, T5b, T5c, T6, T7, T7b, T7c, T8, TA2, TA4, TA5 fixed and verified in the current text.
+
+
+HARD FINDINGS
+
+[R2-T1] HARD | meta-narration (banned "This guide covers")
+  field: sections[4] scope paragraph and omissions paragraph
+  quote: "This guide covers sales in taxable accounts that you report on Form 8949. It does not cover losses inside an IRA or another tax-deferred account, so a tax professional is the place to take those."
+  defect: Page self-reference. The ban list names "This guide covers...". The round-1 suggested replacement reused it, which was my error. The next paragraph also says "The IRS pages this guide draws on".
+  fix: Losses inside an IRA or another tax-deferred account are a question for a tax professional. (Taxable-account scope is already stated in the takeaway.) Second place: "The IRS pages this guide draws on do not cover state tax treatment..." -> "The IRS pages cited above do not cover state tax treatment, the net investment income tax or cryptocurrency, so a tax professional can add those to your figures."
+
+[R2-T2] HARD | overloaded sentence (37 words)
+  field: sections[3] IRA paragraph
+  quote: "When the repurchase is for an IRA or Roth IRA, Publication 550 does not add the disallowed loss to the cost of the new stock, and a tax professional can explain what that means for your loss."
+  defect: Two ideas and a routing clause in 37 words (introduced by round-1 fix).
+  fix: When the repurchase is for an IRA or Roth IRA, Publication 550 does not add the disallowed loss to the cost of the new stock. A tax professional can explain what that means for your loss.
+
+[R2-T3] HARD | overloaded sentence (35 words)
+  field: faqs[0] answer
+  quote: "Selling stock below its adjusted basis creates a capital loss that cancels capital gains, and IRS Topic 409 lets you deduct up to $3,000 of any excess against other income ($1,500 if married filing separately)."
+  defect: Same 35-word stack I flagged as optional in round 1; held to the same ~35-word line as T5/T5b.
+  fix: Yes. Selling stock below its adjusted basis creates a capital loss that cancels capital gains. IRS Topic 409 lets you deduct up to $3,000 of any excess against other income ($1,500 if married filing separately). The deduction is blocked if you buy substantially identical stock within 30 days before or after the sale.
+
+[R2-T4] HARD | overloaded sentence (36 words)
+  field: faqs[3] answer
+  quote: "After your losses cancel your capital gains, the remaining loss lowers your taxable income on line 7a of Form 1040, up to the lesser of $3,000 ($1,500 if married filing separately) or your total net loss."
+  defect: 36 words, rewritten by round-1 fix; three ideas.
+  fix: Yes, up to a limit. After your losses cancel your capital gains, the remaining loss lowers your taxable income on line 7a of Form 1040. The limit is the lesser of $3,000 ($1,500 if married filing separately) or your total net loss. The rest carries forward to later years.
+
+[R2-T5] HARD | dead-end
+  field: faqs[4] answer
+  quote: "Cases such as a 0% year, a basis step-up at death or a gift to charity are not covered here."
+  defect: Names the exceptions to "mostly a deferral" and leaves the reader with no next step. Section 3 was fixed to route to a tax professional; this FAQ was not.
+  fix: A tax professional can explain how a 0% year, a basis step-up at death or a gift to charity apply to you.
+
+
+ADVISORY
+
+[R2-TA1] ADVISORY | overloaded sentence (33 words)
+  field: sections[2] last paragraph
+  quote: "Some cases, such as a 0% year, a basis step-up at death or a gift to charity, can change the result, and a tax professional can explain how they apply to your return."
+  defect: Under the ~35-word line; two ideas. Optional split.
+  fix: Some cases, such as a 0% year, a basis step-up at death or a gift to charity, can change the result. A tax professional can explain how they apply to your return.
+
+[R2-TA2] ADVISORY | claim-check residual flags
+  field: meta.guards.flags
+  quote: "A tax professional can apply your rate."
+  defect: The five residual flags are routing sentences to a tax professional. The row prompt (section 5, section 1 plan) licenses naming a tax professional and F21 allows the exceptions to be named, so they are supported; no cut needed.
+  fix: None.
+
+[R2-TA3] ADVISORY | filing-status label (not fixable item from fix tool)
+  field: sections[1] list item 1
+  quote: "Married filing jointly: 0% up to $98,900, 15% up to $613,700"
+  defect: Rev. Proc. 2025-32 row reads "Married Individuals Filing Joint Returns and Surviving Spouse". A surviving spouse cannot tell which row applies. Needs a one-line fact-list edit (F7) before the writer can add "and surviving spouses"; otherwise accept.
+  fix: Optional.
+
+[R2-TA4] ADVISORY | rhythm / list
+  field: whole page
+  quote: "106 sentences: short 16, medium 28, long 62; flat-5 only among the four filing-status list items."
+  defect: Gate passes (no 10-run, no prose flat-5).
+  fix: None.

@@ -1,0 +1,34 @@
+{
+  "reviewer": "phase4-reviewer-1",
+  "verdict": "FAIL",
+  "note": "Round 2. All five analysis checks pass on the current text; the overall verdict is FAIL only because the route is not approved in rendered-review.json (see findings file for the remaining prose defects).",
+  "packetSha256": "a5b81a7f29098059cf4a1075a138560c41b0e35eaf6ea1effaf6a7c0034ed6a4",
+  "usefulness": {
+    "status": "PASS",
+    "evidence": "Reported basis with a saved source-to-conclusion trail (evidence.json reasoning, whyNoQuantitativeAnalysis). The page adds what the site's comparison pages and tax-tips paragraph lack: where each of the three breaks ends (Medicare first month and retroactive rule, 6% excise, income tax plus 20% before 65 with disability/death exceptions, premium rules) beside the exact 2026 limits and HDHP definition. No number is invented; the only arithmetic ($4,400 + $1,000 = $5,400) is labeled."
+  },
+  "sourceAndAssumptions": {
+    "status": "PASS",
+    "evidence": "Round 2: Rev. Proc. 2025-19 and Pub. 969 re-verified; the takeaway and FAQ no longer attribute investing or paying bills from other cash to the IRS documents, and the spouse cell matches Pub. 969 and F6. Reported-basis reasoning trail in evidence.json is unchanged."
+  },
+  "conditionsAndCounterexample": {
+    "status": "PASS",
+    "evidence": "Counterexamples are on the page and in evidence.json: a Medicare enrollee (limit zero from the first month, including retroactive coverage), a plan below the $1,700/$3,400 deductible floor or above the $8,500/$17,000 cap, and a non-medical withdrawal before 65 (income tax plus a possible 20%); the disability, death and age-65 exceptions are stated. Conditions that change the answer (new IRS limits, HDHP rules) are stated."
+  },
+  "renderedConsistency": {
+    "status": "PASS",
+    "evidence": "Round 2: rendered figures equal the packet and live sources ($4,400/$8,750, $1,000 and $5,400, $1,700/$3,400, $8,500/$17,000, 6%, 20%, 10%); the intro, table, takeaway and FAQs agree and the title now says Self-Only. Route still FAIL in rendered-review.json for R2-H1 to R2-H3."
+  },
+  "localExclusions": {
+    "status": "PASS",
+    "evidence": "Tax-account topic outside _experience.md section G and not a medical treatment: no TESTED format, no \"we tested\" or \"In our internal\" (grep 0), no client claim (all 8 retrieved cases unrelated and rejected), no professional-review claim; state tax explicitly excluded."
+  },
+  "renderedSnapshot": {
+    "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/rendered-snapshot.json",
+    "sha256": "58de0e6bdf1f0c6d7eaa715a0dc834e019749aaa5b67886e617beb5fed4bcdd7"
+  },
+  "renderedReview": {
+    "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/rendered-review.json",
+    "sha256": "1ad08623cb5c0e895d192de484fd42c5f00a21703217e6c4086f16edb18f9c9a"
+  }
+}

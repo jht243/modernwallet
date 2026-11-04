@@ -1,0 +1,286 @@
+{
+  "reviewer": "phase4-reviewer-1",
+  "snapshotSha256": "e5a0939c6899c740570392a5490950c482e696833dc8d3ba079f5769ece2f549",
+  "routes": [
+    {
+      "path": "/guides/tax-loss-harvesting/",
+      "fingerprint": "3320c1f10cca9c0a7c322fc5479c3666e94ff90062b71e500ba394f4808385f5",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "FAIL",
+          "evidence": "Re-read the whole current page. Round-1 contradictions are fixed (taxable-income wording, spouse sentence, \"which loss\"). Remaining: FAQ \"Is tax loss harvesting just deferring taxes?\" still ends \"Cases such as a 0% year, a basis step-up at death or a gift to charity are not covered here.\" with no route, while section 3 now routes to a tax professional (R2-T5); the scope paragraph opens \"This guide covers...\" (R2-T1); three sentences of 35 to 37 words (R2-T2, T3, T4)."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Re-verified live (Topic 409, Rev. Proc. 2025-32 section 3.03, Pub. 550, Schedule D): the 0% ceiling is now described on taxable income including the gain; the spouse or controlled-corporation sentence matches Pub. 550 with no \"after your sale\"; all eight ceilings, $3,000/$1,500, line 7a, Example 1 ($250, $1,050) match."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "\"In our internal modeling\" x2, calculated, inputs beside it; the \"using the IRS 2026 thresholds\" overstatement is removed; no testing, client or review claim (grep 0)."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Updated November 4, 2026; Article datePublished = dateModified = 2026-11-04; canonical correct; FAQPage; route in sitemap; no noindex."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "IRS first mention links tc409; Rev. Proc., Pub. 550 and Schedule D linked; the new /guides/wash-sale-rule-explained/ link for broker reporting resolves in dist; all external URLs on allowed-urls.txt."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "One 3-column <table> in .table-wrap; 0 literal ** or markdown in the captured text; lists render as <ul>."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "No TESTED label, no testing schema, no client or professional-review claim; disclaimer only in the template footer."
+        }
+      }
+    },
+    {
+      "path": "/guides/hsa-triple-tax-advantage/",
+      "fingerprint": "86e4ee1304c15b119f08c11cae8af1ebdcd09cd9a815a5e73919b62034ab3e5c",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "FAIL",
+          "evidence": "Re-read the whole current page. The takeaway and FAQ are now supported and agree with the table; deferral cell and literal asterisks are fixed. Remaining: \"Readers near Medicare enrollment can see what help exists in our Medicare Savings Programs guide.\" is a placeholder sentence (R2-H1); \"That choice comes with a testing period.\" never defines the term (R2-H2); the \"do not cover these questions\" list, the takeaway state-tax sentence and the FAQ state-tax clause name limits with no route (R2-H3)."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Rev. Proc. 2025-19 and Pub. 969 re-verified live; the unsupported \"pay from other cash or be invested\" condition is removed; the spouse cell \"$1,000 for each eligible individual age 55 or older\" matches Pub. 969 and F6; every other figure unchanged and correct."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "Reported basis, third-person IRS attribution, one labeled arithmetic line; \"we tested\" and \"In our internal\" absent (grep 0)."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Updated November 4, 2026; dateModified = datePublished = 2026-11-04; canonical; FAQPage; sitemap."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "IRS first mention links Pub. 969; Rev. Proc. 2025-19 linked; new IRS Publication 969 link in the spouse sentence is on the closed list; internal routes resolve in dist."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Rendered text now has 0 asterisks (was 20); labels render as plain \"Contributions:\" in <li>; 3-column <table> in .table-wrap. Cosmetic: a blank line splits the \"do not cover\" bullets into two <ul> blocks (R2-HA1)."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Tax-account topic, no medical claims, no TESTED format or testing schema, no professional-review claim."
+        }
+      }
+    },
+    {
+      "path": "/guides/brrrr-method/",
+      "fingerprint": "0093850c6f8a12345c33c7c930f02ae32b04d73ab87420e6db7fe05d7e0e7753",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "FAIL",
+          "evidence": "Re-read the whole current page. Intro, example, table, delayed-financing section, stops-working section, takeaway and FAQs agree; round-1 non-sequiturs are removed. One sentence fails the first-read test: the takeaway sentence beginning \"It also does not fit anyone who needs a refinance inside six months...\" is 35 words with two ideas (R2-B1)."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Fannie Mae B2-1.3-03 (12/10/2025) and Pub. 527 re-verified live; every figure matches the replay; Fannie Mae text has no mention of repairs, so the \"does not address repair spending\" statement is accurate."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "\"our reading ... ask the lender\" now present in the table lead-in, section 4, the stops-working section and the takeaway; 75% and 2% called assumptions (table header \"assumed 75% LTV\"); no testing or completed-deal claim."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Updated November 4, 2026; dateModified = datePublished; canonical; FAQPage; sitemap."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "First IRS mention (\"Internal Revenue Service (IRS)\") now links the closed-list Pub. 527 URL; Fannie Mae first mention linked; internal routes resolve."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "6-column <table> in .table-wrap (overflow-x:auto); lists render; 0 literal markdown. Structural mobile check only."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "No TESTED label, no completed-deal or client claim; $40,000 absent from every headline field and the intro."
+        }
+      }
+    },
+    {
+      "path": "/guides/tax-tips/",
+      "fingerprint": "cd8827bb70098edf5d85bb47a0871a292d514852654356b0855eb722083b82db",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Re-read the entire current page, including inherited paragraphs, tables, FAQs and sources; rendered text is byte-identical to the round-1 reviewed text (textSha256 unchanged). Anchors \"triple tax advantage\" (Tip 2) and \"Tax-loss harvesting\" (Tip 3) on existing words. No inherited statement contradicts the revised answer; inherited-context items are advisory (see report)."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The edit adds no rule or figure that needs a source; inherited figures are unchanged and are labeled by year on the page itself."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing, modeling or client claim added; forbidden strings absent."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Documented date-policy exception per _rendered-page-audit.md, confirmed by the orchestrator in round 2: no bump on link-only edits (a bump would label /compare/hsa-vs-fsa/ fresh while it shows 2025 limits). Visible Updated date equals JSON-LD dateModified and datePublished and is unchanged from the published page."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New anchor resolves to a built route and renders as a normal internal <a>; canonical and indexability unchanged."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Link sits inside the original <p>; 0 literal markdown; layout unchanged."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Link-only scope respected; no exclusion topics; no defend-lock list exists."
+        }
+      }
+    },
+    {
+      "path": "/guides/wash-sale-rule-explained/",
+      "fingerprint": "64d68303c76ab472069f392853b85d8823ac6df6914629e26dbf0676e8822f06",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Re-read the entire current page, including inherited paragraphs, tables, FAQs and sources; rendered text is byte-identical to the round-1 reviewed text (textSha256 unchanged). Anchor \"harvest tax losses\" on existing words. No inherited statement contradicts the revised answer; inherited-context items are advisory (see report)."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The edit adds no rule or figure that needs a source; inherited figures are unchanged and are labeled by year on the page itself."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing, modeling or client claim added; forbidden strings absent."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Documented date-policy exception per _rendered-page-audit.md, confirmed by the orchestrator in round 2: no bump on link-only edits (a bump would label /compare/hsa-vs-fsa/ fresh while it shows 2025 limits). Visible Updated date equals JSON-LD dateModified and datePublished and is unchanged from the published page."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New anchor resolves to a built route and renders as a normal internal <a>; canonical and indexability unchanged."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Link sits inside the original <p>; 0 literal markdown; layout unchanged."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Link-only scope respected; no exclusion topics; no defend-lock list exists."
+        }
+      }
+    },
+    {
+      "path": "/compare/hsa-vs-fsa/",
+      "fingerprint": "77846fb91e28f039c27d9a6b021de18154eb3fcc0d73f91e1e4f86bdd47d0dbe",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Re-read the entire current page, including inherited paragraphs, tables, FAQs and sources; rendered text is byte-identical to the round-1 reviewed text (textSha256 unchanged). Anchor \"triple tax advantage\" on existing words; the page still labels its figures 2025. No inherited statement contradicts the revised answer; inherited-context items are advisory (see report)."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The edit adds no rule or figure that needs a source; inherited figures are unchanged and are labeled by year on the page itself."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing, modeling or client claim added; forbidden strings absent."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Documented date-policy exception per _rendered-page-audit.md, confirmed by the orchestrator in round 2: no bump on link-only edits (a bump would label /compare/hsa-vs-fsa/ fresh while it shows 2025 limits). Visible Updated date equals JSON-LD dateModified and datePublished and is unchanged from the published page."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New anchor resolves to a built route and renders as a normal internal <a>; canonical and indexability unchanged."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Link sits inside the original <p>; 0 literal markdown; layout unchanged."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Link-only scope respected; no exclusion topics; no defend-lock list exists."
+        }
+      }
+    },
+    {
+      "path": "/compare/cash-out-refinance-vs-heloc/",
+      "fingerprint": "840cf0d3e831fd2f0e726e94812e714c5d935ada6a5fdb0c7f765352e3d80ab6",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Re-read the entire current page, including inherited paragraphs, tables, FAQs and sources; rendered text is byte-identical to the round-1 reviewed text (textSha256 unchanged). One sentence added in paragraph 1 with anchor \"BRRRR method\" (placement between the cash-out and HELOC sentences is advisory). No inherited statement contradicts the revised answer; inherited-context items are advisory (see report)."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The edit adds no rule or figure that needs a source; inherited figures are unchanged and are labeled by year on the page itself."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing, modeling or client claim added; forbidden strings absent."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Documented date-policy exception per _rendered-page-audit.md, confirmed by the orchestrator in round 2: no bump on link-only edits (a bump would label /compare/hsa-vs-fsa/ fresh while it shows 2025 limits). Visible Updated date equals JSON-LD dateModified and datePublished and is unchanged from the published page."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New anchor resolves to a built route and renders as a normal internal <a>; canonical and indexability unchanged."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Link sits inside the original <p>; 0 literal markdown; layout unchanged."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Link-only scope respected; no exclusion topics; no defend-lock list exists."
+        }
+      }
+    },
+    {
+      "path": "/compare/reit-vs-rental-property/",
+      "fingerprint": "6d2b818d8c6945d3281785e9b984d0dbec6e27c50e67ea58b6d149c000f4a906",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Re-read the entire current page, including inherited paragraphs, tables, FAQs and sources; rendered text is byte-identical to the round-1 reviewed text (textSha256 unchanged). One sentence added as its own paragraph with anchor \"BRRRR method\" (advisory: no consequence stated for the REIT-versus-rental choice). No inherited statement contradicts the revised answer; inherited-context items are advisory (see report)."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The edit adds no rule or figure that needs a source; inherited figures are unchanged and are labeled by year on the page itself."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing, modeling or client claim added; forbidden strings absent."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Documented date-policy exception per _rendered-page-audit.md, confirmed by the orchestrator in round 2: no bump on link-only edits (a bump would label /compare/hsa-vs-fsa/ fresh while it shows 2025 limits). Visible Updated date equals JSON-LD dateModified and datePublished and is unchanged from the published page."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New anchor resolves to a built route and renders as a normal internal <a>; canonical and indexability unchanged."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Link sits inside the original <p>; 0 literal markdown; layout unchanged."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Link-only scope respected; no exclusion topics; no defend-lock list exists."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+PHASE 4 FINDINGS, ROUND 2: /guides/brrrr-method/
+Reviewer: phase4-reviewer-1. Re-audit of the CURRENT built text (snapshot e5a0939c6899...). Round-1 files are in audit/round1/.
+OVERALL VERDICT: FAIL (1 hard: one 35-word sentence)
+Hard findings: 1. Advisory findings: 5.
+
+GATE RESULTS
+  Depth (first and last, `wc -w`): 2,248 with the table, 2,174 without words. Floor 1,200. PASS.
+  Rhythm (133 sentences; short 32, medium 35, long 66): no 10-run (B1 fixed), no flat-5. PASS.
+  Headline fields: PASS. "$40,000" in no headline field and not in the intro.
+  Mechanical: em-dash 0, "honest" 0, "we tested" 0, asterisks 0, Title Case PASS.
+  Source claims and replay: PASS. Fannie Mae and Pub. 527 re-verified; audit/brrrr-method-replay.json canonically identical; all page figures match; 75% and 2% read as assumptions everywhere (table header now "assumed 75% LTV"). "Our reading ... ask the lender" now present in the table lead-in, section 4, the stops-working section and the takeaway: CONFIRMED.
+  Links: PASS (first IRS mention now linked to the closed-list Pub. 527 URL; Fannie Mae first mention linked).
+  Dates/schema/layout: PASS (6-column table in .table-wrap).
+  Anti-AI body: FAIL on one 35-word sentence (R2-B1).
+
+RESOLVED FROM ROUND 1
+  B1 (no 10-run now), B2, B2b, B2c, B2d, B3 (first IRS mention linked), B4, B4b, B5 ("ask the lender" now in the table lead-in, stops-working section and takeaway), B6, B7, B8, BA1, BA3 fixed and verified.
+
+
+HARD FINDINGS
+
+[R2-B1] HARD | overloaded sentence (35 words)
+  field: sections[6] Our Takeaway paragraph 2
+  quote: "It also does not fit anyone who needs a refinance inside six months to recover repair spending, based on our reading of the delayed financing wording, so ask the lender how it counts repair costs."
+  defect: Round-1 fix B5 added the "ask the lender" clause to an already 26-word sentence, giving 35 words and two ideas.
+  fix: It also does not fit anyone who needs a refinance inside six months to recover repair spending, based on our reading of the delayed financing wording. Ask the lender how it counts repair costs.
+
+
+ADVISORY
+
+[R2-BA1] ADVISORY | overloaded sentence (34 words)
+  field: sections[5] paragraph 2
+  quote: "On our reading of the delayed financing exception, a refinance inside six months returns about the purchase money and leaves the $40,000 of repairs in the deal at both the $230,000 and $260,000 appraisals."
+  defect: Just under the line; optional split after "purchase money".
+  fix: Optional.
+
+[R2-BA2] ADVISORY | restatement across sections
+  field: sections[1], sections[3], sections[5], sections[6]
+  quote: "Fannie Mae does not address repair spending, so ask the lender how it counts repair costs."
+  defect: The same instruction now appears in the table lead-in, section 4 (twice in different words), the stops-working section and the takeaway. The user-required consistency is met; a fifth restatement would be padding.
+  fix: Optional: trim the stops-working copy.
+
+[R2-BA3] ADVISORY | residual claim-check flag
+  field: faqs[2] answer
+  quote: "A rule of thumb cannot tell you whether the refinance returns your cash."
+  defect: Flagged by the fix tool as unsupported. It is an analytic statement (a rule of thumb has no inputs for appraisal, LTV or loan cost), not a factual claim; accepted. Cut it if the orchestrator wants zero residual flags.
+  fix: Optional delete.
+
+[R2-BA4] ADVISORY | inherited comparison context (not fixable item)
+  field: /compare/cash-out-refinance-vs-heloc/
+  quote: "Both options usually cap your combined loan-to-value at about 80% to 85%."
+  defect: Inherited, unsourced, owner-occupied framing; the BRRRR guide labels its 75% an assumption and says to use the lender's figure, so no reader is misled about this page's answer. Advisory (see report).
+  fix: None in this run.
+
+[R2-BA5] ADVISORY | derived numbers
+  field: sections[1] paragraph 5
+  quote: "Dividing $193,000 by 0.98 (one minus the 2% cost) gives a loan of about $196,939"
+  defect: Generator-flagged 0.75, 0.98, 10000, 32585 and 7350 remain correct; 0.98 is now explained. Re-verified against the replay: 196,938.78 and 262,585.03.
+  fix: None.

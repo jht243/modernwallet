@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "CONTENT_ANTHROPIC_KEY_2",
  "finish_reason": "STOP",
- "words": 2066,
+ "words": 2058,
  "floor": 1200,
  "input_tokens": 36913,
  "output_tokens": 12107,
@@ -21,7 +21,7 @@
  "guards": {
   "repairs": [],
   "flags": [
-   "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A tax professional can apply your rate.'; 'Some cases, such as a 0% year, a basis step-up at death or a gift to charity, ca'; 'In a taxable account, the disallowed loss is added to the cost of the new shares'; 'When the repurchase is for an IRA or Roth IRA, Publication 550 does not add the '"
+   "claim check: 8 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: \"A later rate above today's rate makes the deferral cost more than it saved.\"; 'A tax professional can explain how they apply to your return.'; 'A tax professional can explain what that means for your loss.'; 'The rules above describe sales in taxable accounts that you report on Form 8949.'"
   ],
   "disallowed_urls_removed": [],
   "words": 2043,
@@ -359,6 +359,156 @@
     "words": 2066,
     "flags": [
      "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A tax professional can apply your rate.'; 'Some cases, such as a 0% year, a basis step-up at death or a gift to charity, ca'; 'In a taxable account, the disallowed loss is added to the cost of the new shares'; 'When the repurchase is for an IRA or Roth IRA, Publication 550 does not add the '"
+    ]
+   },
+   {
+    "round": 2,
+    "at": "2026-11-04T02:19:40+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/tax-loss-harvesting-findings.round2.txt",
+    "applied": [
+     {
+      "id": "sections[4].body",
+      "quote": "This guide covers sales in taxable accounts that you report on Form 8949.",
+      "replacement": "The rules above describe sales in taxable accounts that you report on Form 8949.",
+      "type": "R2-T1 meta-narration",
+      "why": "Banned page self-reference; keeps the taxable-account and Form 8949 scope without it."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "It does not cover losses inside an IRA or another tax-deferred account, so a tax professional is the place to take those.",
+      "replacement": "Losses inside an IRA or another tax-deferred account are a question for a tax professional.",
+      "type": "R2-T1 meta-narration",
+      "why": "Self-reference removed; keeps the IRA scope and the routing to a tax professional."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "The IRS pages this guide draws on do not cover state tax treatment, the net investment income tax or cryptocurrency, so a tax professional can add those to your figures.",
+      "replacement": "The IRS pages cited above do not cover state tax treatment, the net investment income tax or cryptocurrency, so a tax professional can add those to your figures.",
+      "type": "R2-T1 meta-narration (second place)",
+      "why": "Removes \"this guide\" self-reference; same scope statement."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "When the repurchase is for an IRA or Roth IRA, Publication 550 does not add the disallowed loss to the cost of the new stock, and a tax professional can explain what that means for your loss.",
+      "replacement": "When the repurchase is for an IRA or Roth IRA, Publication 550 does not add the disallowed loss to the cost of the new stock. A tax professional can explain what that means for your loss.",
+      "type": "R2-T2 overloaded sentence",
+      "why": "37 words with two ideas; split into two sentences."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "Selling stock below its adjusted basis creates a capital loss that cancels capital gains, and IRS Topic 409 lets you deduct up to $3,000 of any excess against other income ($1,500 if married filing separately).",
+      "replacement": "Selling stock below its adjusted basis creates a capital loss that cancels capital gains. IRS Topic 409 lets you deduct up to $3,000 of any excess against other income ($1,500 if married filing separately).",
+      "type": "R2-T3 overloaded sentence",
+      "why": "35-word stack; split into two sentences with the same facts."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "After your losses cancel your capital gains, the remaining loss lowers your taxable income on line 7a of Form 1040, up to the lesser of $3,000 ($1,500 if married filing separately) or your total net loss.",
+      "replacement": "After your losses cancel your capital gains, the remaining loss lowers your taxable income on line 7a of Form 1040. The limit is the lesser of $3,000 ($1,500 if married filing separately) or your total net loss.",
+      "type": "R2-T4 overloaded sentence",
+      "why": "36 words with three ideas; split so the limit stands alone."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "Cases such as a 0% year, a basis step-up at death or a gift to charity are not covered here.",
+      "replacement": "A tax professional can explain how a 0% year, a basis step-up at death or a gift to charity apply to you.",
+      "type": "R2-T5 dead-end",
+      "why": "Names the exceptions without a next step; route to a tax professional."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Some cases, such as a 0% year, a basis step-up at death or a gift to charity, can change the result, and a tax professional can explain how they apply to your return.",
+      "replacement": "Some cases, such as a 0% year, a basis step-up at death or a gift to charity, can change the result. A tax professional can explain how they apply to your return.",
+      "type": "R2-TA1 advisory overloaded sentence",
+      "why": "Two ideas in one sentence; optional split."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "A tax professional can apply your rate.",
+      "replacement": "A tax professional can apply your rate.",
+      "type": "R2-TA2 advisory residual flag",
+      "why": "Reviewer confirms the routing is supported by the row plan; no change needed."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[1].body",
+      "quote": "- Married filing jointly: 0% up to $98,900, 15% up to $613,700",
+      "finding": "R2-TA3 advisory filing-status label",
+      "why": "Needs new substance: surviving spouse wording is not in F7.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "R2-TA4 advisory rhythm/list",
+      "why": "No page text to change; the gate passes and the reviewer requests no fix.",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      8
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[2].body",
+       "quote": "A later rate above today's rate makes the deferral cost more than it saved.",
+       "type": "inference",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[2].body",
+       "quote": "A tax professional can explain how they apply to your return.",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[3].body",
+       "quote": "A tax professional can explain what that means for your loss.",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "The rules above describe sales in taxable accounts that you report on Form 8949.",
+       "type": "inference",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "Losses inside an IRA or another tax-deferred account are a question for a tax professional.",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "If you need a decision on your own holdings, a tax professional can apply these rules to your return.",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "The IRS pages cited above do not cover state tax treatment, the net investment income tax or cryptocurrency, so a tax professional can add those to your figures.",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[4].answer",
+       "quote": "A tax professional can explain how a 0% year, a basis step-up at death or a gift to charity apply to you.",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2058,
+    "flags": [
+     "claim check: 8 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: \"A later rate above today's rate makes the deferral cost more than it saved.\"; 'A tax professional can explain how they apply to your return.'; 'A tax professional can explain what that means for your loss.'; 'The rules above describe sales in taxable accounts that you report on Form 8949.'"
     ]
    }
   ]

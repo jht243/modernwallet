@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "CONTENT_ANTHROPIC_KEY_2",
  "finish_reason": "STOP",
- "words": 1888,
+ "words": 1926,
  "floor": 1200,
  "input_tokens": 36246,
  "output_tokens": 16556,
@@ -21,7 +21,7 @@
  "guards": {
   "repairs": [],
   "flags": [
-   "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: '$1,000 for each eligible individual age 55 or older (no family total shown)'; 'Our [HSA vs. FSA comparison](/compare/hsa-vs-fsa/) puts the two health accounts '; 'Your own tax saving, which depends on your marginal tax rate and your state.'"
+   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Unspent amounts carry over to the next year.'"
   ],
   "disallowed_urls_removed": [],
   "words": 1947,
@@ -374,6 +374,107 @@
     "words": 1888,
     "flags": [
      "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: '$1,000 for each eligible individual age 55 or older (no family total shown)'; 'Our [HSA vs. FSA comparison](/compare/hsa-vs-fsa/) puts the two health accounts '; 'Your own tax saving, which depends on your marginal tax rate and your state.'"
+    ]
+   },
+   {
+    "round": 2,
+    "at": "2026-11-04T02:20:12+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/hsa-triple-tax-advantage-findings.round2.txt",
+    "applied": [
+     {
+      "id": "sections[1].body",
+      "quote": "Readers near Medicare enrollment can see what help exists in our [Medicare Savings Programs guide](/guides/medicare-savings-programs/).",
+      "replacement": "If you are near Medicare enrollment, our [Medicare Savings Programs guide](/guides/medicare-savings-programs/) explains that your state can pay your Medicare premiums through a Medicare Savings Program if you qualify.",
+      "type": "R2-H1 placeholder noun / force-fit link",
+      "why": "Placeholder 'what help exists'; F22 now says what the linked guide covers."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "That choice comes with a testing period.",
+      "replacement": "The last-month rule carries a testing period that begins with the last month of your tax year and ends on the last day of the 12th month after that month.",
+      "type": "R2-H2 undefined term, backward pronoun",
+      "why": "Testing period was never defined and 'That choice' points back vaguely; F21 supplies the definition."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "- Any custodian's fees or investment menu.",
+      "replacement": "",
+      "type": "R2-H3 limitations with no route",
+      "why": "F23 says to delete the custodian bullet as an open item."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "- Employer contribution amounts.",
+      "replacement": "",
+      "type": "R2-H3 limitations with no route",
+      "why": "F23 says to delete the employer-amount bullet as an open item."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "- Limits for 2027.",
+      "replacement": "",
+      "type": "R2-H3 limitations with no route; R2-HA1 split list",
+      "why": "F23 says to delete the 2027 bullet. Removing it also removes the blank-line split."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "- Your own tax saving, which depends on your marginal tax rate and your state.",
+      "replacement": "- Your own tax saving, which depends on your marginal tax rate and your state. A tax professional can apply your state's rules and your marginal rate to your return.",
+      "type": "R2-H3 limitations with no route",
+      "why": "The list needs a route; F23 routes state tax and personal saving to a tax professional."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Your state may tax HSAs differently, and IRS Publication 969 does not address state income tax treatment.",
+      "replacement": "Your state may tax HSAs differently, and a tax professional can apply your state's rules.",
+      "type": "R2-H3 takeaway dead-end",
+      "why": "Names a limit with no route; F23 supplies the tax-professional route."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "A non-medical withdrawal before 65 costs income tax plus a possible 20% additional tax, and state tax treatment is not covered here.",
+      "replacement": "A non-medical withdrawal before 65 costs income tax plus a possible 20% additional tax. A tax professional can apply your state's rules and your marginal rate.",
+      "type": "R2-H3 FAQ dead-end",
+      "why": "State tax limit has no route; F23 routes it to a tax professional."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[1].body",
+      "quote": "if you have family HDHP coverage on the first day of the last month of your tax year, you can contribute the full-year limit",
+      "finding": "R2-HA2 narrow family-only framing",
+      "why": "needs new substance: F11 states only the family case; broadening needs a new fact.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "$1,000 for each eligible individual age 55 or older (no family total shown)",
+      "finding": "R2-HA3 claim-check residual flag",
+      "why": "Advisory only; F6 supports the cell and the reviewer says no fix is needed.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "faqs[5].answer",
+       "quote": "Unspent amounts carry over to the next year.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1926,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Unspent amounts carry over to the next year.'"
     ]
    }
   ]

@@ -1,182 +1,79 @@
-PHASE 4 FINDINGS: /guides/tax-loss-harvesting/ (guide, operator register, page type explainer, floor 1,200)
-Reviewer: phase4-reviewer-1 (independent; did not write the page). Date: 2026-11-04.
-OVERALL VERDICT: FAIL (fix in place via content_gen.py fix; the only fact-list change is the F13 correction)
-Hard findings: 16. Advisory findings: 9.
+PHASE 4 FINDINGS, ROUND 2: /guides/tax-loss-harvesting/
+Reviewer: phase4-reviewer-1. Re-audit of the CURRENT built text (snapshot e5a0939c6899...). Round-1 files are in audit/round1/.
+OVERALL VERDICT: FAIL (5 hard, all sentence-level or routing; no new facts needed)
+Hard findings: 5. Advisory findings: 4.
 
 GATE RESULTS
-  Depth (first action and again last; `wc -w` on intro + section bodies + FAQ answers, markdown stripped): 1,828 words with the table, 1,795 without. Floor 1,200. PASS. Built-HTML cross-check (between header and Sources, headings included): 1,775. Generator meta reported 2,043 (different counting).
-  Sentence rhythm (measured, 99 sentences, list items counted as sentences): short 14, medium 22, long 63. No run of 10 in one band. No 5 consecutive prose sentences within 3 words; the only flat-5 (lengths 11, 11, 11, 11, 12) is the four filing-status list items. PASS with advisory TA6 (64 percent long).
-  Headline-field scan (title, metaDescription, h1, cardBlurb, 6 H2 plus Our Takeaway, 6 FAQ questions, scanned separately from the body): FAIL. title "Tax Loss Harvesting Offsets Gains and Up to $3,000 a Year" clean (57 chars). metaDescription clean (134). h1 clean. Tells: T7 (two-clause H2), T7b (antithesis H2), T7c (tricolon cardBlurb). FAQ questions clean.
-  Mechanical (grep on all fields and bodies): em-dash 0, "honest" 0, exclamation 0, banned hype adjectives 0, "the vendor/platform/tool" 0, neutrality claims 0, "we tested" 0. Heading Title Case PASS.
-  Anti-AI body tells: FAIL. T1, T1b, T1c, T1d, T1e meta-narration and dead-ends; T5, T5b, T5c overloaded sentences; T6 unparseable reference.
-  Experience truth and provenance: PASS with T8. "In our internal modeling, we ran ..." (section 2) and "In our internal modeling, a share ..." (section 3): calculated, inputs beside each ($10,000 loss, $10,000 gain, one rate per row; $10,000 basis, $7,000 sale, $10,000 later price). No testing, client, professional-review or byline claim in prose. "At ModernWallet, we" occurs once, in the first body paragraph, sentence 2. The footer disclaimer renders last (template). No disclaimer at the top.
-  Evidence packet and replay: PASS. evidence/tax-loss-harvesting/run.py re-run to audit/tax-loss-harvesting-replay.json; canonical JSON identical to output.json. Every figure on the page matches: $0 / $1,500 / $2,000; $3,000 deducted, $7,000 carried forward, $1,500 married filing separately; $3,000 loss, $7,000 basis, $3,000 gain; $250 and $1,050 (Pub. 550 example). Boundary and counterexample hold: the 0 percent row saves $0; the MFS limit is a lesser-of.
-  Source claims traced to the F-list and to live primary sources (fetched 2026-11-04): Topic 409 (reviewed 24-Sep-2026): lesser-of $3,000/$1,500, line 16, line 7a, holding period, 28 and 25 percent maxima, Form 8949, carryover worksheet. Rev. Proc. 2025-32 section 3.03: all four filing-status rows match exactly ($98,900/$613,700; $66,200/$579,600; $49,450/$306,850; $49,450/$545,500). Pub. 550: wash-sale list, IRA exception, basis and holding period, Example 1, lines 7/15/16. Schedule D instructions: carryover worksheet with separate short-term and long-term lines. FAIL on T3 and T4 only.
-  Generator flag '8500': the draft sentence "A married person filing separately deducts $1,500 and carries $8,500 forward" was removed by the claim check (the $8,500 was derived from an unstated $10,000 loss). '8500' does not appear on the rendered page. Resolved.
-  Carry-forward advisories: head-of-household ($66,200 / $579,600) and married-filing-separately ($49,450 / $306,850) ceilings stated: CONFIRMED. Ordinary rates on short-term gains and NIIT/state tax not modeled: CONFIRMED (sections 1, 2 and 5). "Mostly defers": softened ("Most of the benefit", "Mostly, yes") and the three exceptions are named (0 percent year, step-up at death, gift to charity) but not explained or routed: T1c.
-  Intent: PASS. The reader question is answered in intro sentences 1 to 5 and sections 1 to 2. On-topic PAA (sell stocks at a loss, the $3,000 loss, downside) are all in the FAQ; off-topic PAA (Buffett, $300,000 gains) are absent (grep). "Do I get $3,000 back from a stock loss?" is answered "No. The $3,000 limit is a deduction that lowers your taxable income on line 7a of Form 1040" (a deduction, not a refund): CONFIRMED.
-  Required elements: PASS. Direct answer in sentence 1; who this is not for (0 percent bracket, no gains, IRA or tax-deferred losses, anyone needing a decision on their holdings); what would change our answer (bracket, $3,000 limit, wash sale rule); last body sentence is a concrete next action carrying the keyword; the takeaway agrees with the intro, table and FAQs and names the basis (IRS rules plus our worked arithmetic) and the conditions that change it.
-  Links: PASS. First IRS mention (intro) links tc409; Rev. Proc. 2025-32, Pub. 550 and the Schedule D instructions are linked at first mention; all external URLs are on allowed-urls.txt; markdown only (0 escaped tags in the built HTML); internal links /guides/wash-sale-rule-explained/, /guides/tax-tips/, /stock-capital-gains-tax-calculator/, /methodology/, /editorial-policy/ exist in dist.
-  Dates, schema, indexing: PASS. Visible "Updated November 4, 2026"; JSON-LD Article datePublished = dateModified = 2026-11-04; canonical https://www.themodernwallet.com/guides/tax-loss-harvesting/; FAQPage with 6 questions; no robots noindex; route present in dist/sitemap-0.xml.
-  Rendered layout: PASS. One <table class="prose-table"> inside .table-wrap (overflow-x:auto), th scope attributes, 3 columns; no raw markdown in the rendered text.
-  Dead-end gate (meaning bar): FAIL (T1b, T1c, T1d, T1e, T2).
-  Decision-evidence section 4: PASS. No unsupported central finding; the analysis is simple arithmetic but labeled calculated and replayable; the takeaway matches the packet.
+  Depth (first and last, `wc -w` on intro + section bodies + FAQ answers): 1,852 with the table, 1,819 without words. Floor 1,200. PASS.
+  Rhythm (106 sentences; short 16, medium 28, long 62): no run of 10 in one band; no prose flat-5 (only the filing-status list items). PASS.
+  Headline fields (title, metaDescription, h1, cardBlurb, 7 H2, 6 FAQ questions): PASS (T7, T7b, T7c fixed; H2s now "What Tax Loss Harvesting Can Deduct Each Year", "Tax Loss Harvesting Usually Defers Tax to a Later Year").
+  Mechanical: em-dash 0, "honest" 0, exclamation 0, hype 0, "we tested" 0, asterisks in render 0, Title Case PASS.
+  Source claims: PASS. Re-checked against live Topic 409, Rev. Proc. 2025-32, Pub. 550, Schedule D; F13 corrected, taxable-income wording corrected, spouse/controlled-corporation sentence now matches Pub. 550.
+  Provenance: PASS. "In our internal modeling" x2, calculated, inputs beside it; "using the IRS 2026 thresholds" removed. "At ModernWallet, we" once.
+  Replay: PASS, audit/tax-loss-harvesting-replay.json canonically identical to evidence output.json; every page figure matches.
+  Links: PASS (IRS first mention linked; new /guides/wash-sale-rule-explained/ link for broker reporting resolves).
+  Dates/schema/layout: PASS (Updated November 4, 2026; dateModified = datePublished; canonical; FAQPage; sitemap; table in .table-wrap).
+  Anti-AI body / dead-end gate: FAIL (R2-T1, R2-T5; overloaded R2-T2, R2-T3, R2-T4).
+
+RESOLVED FROM ROUND 1
+  T1, T1b, T1c, T1d (partly; see R2-T1), T1e, T2 (routed to a tax professional), T3, T4 (F13 corrected, "after your sale" gone), T5, T5b, T5c, T6, T7, T7b, T7c, T8, TA2, TA4, TA5 fixed and verified in the current text.
 
 
-HARD FINDINGS (each blocks; quote, defect, plain fix)
+HARD FINDINGS
 
-[T1] HARD | meta-narration / page self-reference
-  field: introText para 1
-  quote: "so this page works the dollar figures for a $10,000 loss"
-  defect: Page self-reference ("this page works the dollar figures"); "works" is the wrong collocation for figures.
-  fix: At ModernWallet, we show the math in the guides we publish here, starting with a $10,000 loss.
+[R2-T1] HARD | meta-narration (banned "This guide covers")
+  field: sections[4] scope paragraph and omissions paragraph
+  quote: "This guide covers sales in taxable accounts that you report on Form 8949. It does not cover losses inside an IRA or another tax-deferred account, so a tax professional is the place to take those."
+  defect: Page self-reference. The ban list names "This guide covers...". The round-1 suggested replacement reused it, which was my error. The next paragraph also says "The IRS pages this guide draws on".
+  fix: Losses inside an IRA or another tax-deferred account are a question for a tax professional. (Taxable-account scope is already stated in the takeaway.) Second place: "The IRS pages this guide draws on do not cover state tax treatment..." -> "The IRS pages cited above do not cover state tax treatment, the net investment income tax or cryptocurrency, so a tax professional can add those to your figures."
 
-[T1b] HARD | meta-narration / page self-reference
-  field: sections[1] (What a Harvested Loss Is Worth) last paragraph
-  quote: "which this page does not model"
-  defect: Page self-reference plus a limitation raised and not routed (dead-end): the reader is told the cash value of the $3,000 deduction is not modeled and given nowhere to go.
-  fix: The cash value of that deduction depends on the tax rate on your other income, which we did not model. A tax professional can apply your rate.
+[R2-T2] HARD | overloaded sentence (37 words)
+  field: sections[3] IRA paragraph
+  quote: "When the repurchase is for an IRA or Roth IRA, Publication 550 does not add the disallowed loss to the cost of the new stock, and a tax professional can explain what that means for your loss."
+  defect: Two ideas and a routing clause in 37 words (introduced by round-1 fix).
+  fix: When the repurchase is for an IRA or Roth IRA, Publication 550 does not add the disallowed loss to the cost of the new stock. A tax professional can explain what that means for your loss.
 
-[T1c] HARD | meta-narration / dead-end
-  field: sections[2] (Defers Tax) last paragraph
-  quote: "Some cases, such as a 0% year, a basis step-up at death or a gift to charity, can change the result, and this page does not cover them."
-  defect: Names three exceptions to "mostly a deferral" but explains none and routes nowhere (dead-end); "this page" is self-reference. F21 only allows naming them with no tax advice.
-  fix: Some cases, such as a 0% year, a basis step-up at death or a gift to charity, can change the result, so ask a tax professional how they apply to your holdings.
+[R2-T3] HARD | overloaded sentence (35 words)
+  field: faqs[0] answer
+  quote: "Selling stock below its adjusted basis creates a capital loss that cancels capital gains, and IRS Topic 409 lets you deduct up to $3,000 of any excess against other income ($1,500 if married filing separately)."
+  defect: Same 35-word stack I flagged as optional in round 1; held to the same ~35-word line as T5/T5b.
+  fix: Yes. Selling stock below its adjusted basis creates a capital loss that cancels capital gains. IRS Topic 409 lets you deduct up to $3,000 of any excess against other income ($1,500 if married filing separately). The deduction is blocked if you buy substantially identical stock within 30 days before or after the sale.
 
-[T1d] HARD | meta-narration / dead-end
-  field: sections[4] (When Tax Loss Harvesting Does Not Pay)
-  quote: "This page covers sales in taxable accounts that you report on Form 8949. If your losses sit in an IRA or another tax-deferred account, the IRS pages linked here describe sales reported on Form 8949, and this guide does not address losses inside those accounts."
-  defect: Two page self-references, a 32-word sentence that needs a second read, and the IRA-loss reader (the page's "not for" segment) is left with no next step.
-  fix: This guide covers sales in taxable accounts that you report on Form 8949. It does not cover losses inside an IRA or another tax-deferred account, so take those to a tax professional.
+[R2-T4] HARD | overloaded sentence (36 words)
+  field: faqs[3] answer
+  quote: "After your losses cancel your capital gains, the remaining loss lowers your taxable income on line 7a of Form 1040, up to the lesser of $3,000 ($1,500 if married filing separately) or your total net loss."
+  defect: 36 words, rewritten by round-1 fix; three ideas.
+  fix: Yes, up to a limit. After your losses cancel your capital gains, the remaining loss lowers your taxable income on line 7a of Form 1040. The limit is the lesser of $3,000 ($1,500 if married filing separately) or your total net loss. The rest carries forward to later years.
 
-[T1e] HARD | dead-end / meta-narration
-  field: sections[4] (When Tax Loss Harvesting Does Not Pay)
-  quote: "State tax treatment, the net investment income tax, broker reporting of wash sales across accounts and cryptocurrency are not covered on the IRS pages this guide draws on. Our tax tips guide covers other year-end moves."
-  defect: Four omissions raised with no resolution; the only route offered (tax tips guide, "other year-end moves") does not handle any of them. F20 points to the wash-sale guide for broker reporting.
-  fix: The IRS pages this guide draws on do not cover state tax treatment or the net investment income tax, so a tax professional can add those to your figures. Our wash sale rule guide covers how brokers report wash sales across accounts. Our tax tips guide covers other year-end moves.
-
-[T2] HARD | dead-end
-  field: sections[3] (The Wash Sale Rule and Tax Loss Harvesting in an IRA)
-  quote: "When the repurchase is for an IRA or Roth IRA, Publication 550 excepts it from adding the disallowed loss to the cost of the new stock."
-  defect: States an IRA exception but not what it does to the loss (the claim check deleted "The IRA case is harsher" for lack of a fact). The reader is left asking what happens to the loss; the linked wash-sale guide answers it (Revenue Ruling 2008-5: basis in the IRA is not increased, loss never recovered) but the link is not attached to this point. The H2 promises the IRA case.
-  fix: When the repurchase is for an IRA or Roth IRA, Publication 550 does not let you add the disallowed loss to the cost of the new stock, and our wash sale rule guide explains what that means for the loss. (If the orchestrator wants the consequence stated on this page, add the wash-sale guide's Rev. Rul. 2008-5 statement to the closed fact list first.)
-
-[T3] HARD | source claim imprecise
-  field: sections[4] list item 1
-  quote: "Your long-term gains fall under the 2026 0% ceiling for your filing status, so the loss cancels gains that carried no federal tax."
-  defect: Rev. Proc. 2025-32 sets the 0% ceiling on TAXABLE INCOME (F7: "the test includes the gain itself"), not on the gains. The bullet contradicts the page's own section 2 sentence "Your rate depends on your 2026 taxable income, and that test includes the gain itself."
-  fix: Your 2026 taxable income, including the gain, is at or below the 0% ceiling for your filing status, so the loss cancels gain that carried no federal tax.
-
-[T4] HARD | unsupported narrowing of a rule
-  field: sections[3] paragraph 2
-  quote: "A purchase of substantially identical stock by your spouse, or by a corporation you control, after your sale also creates a wash sale."
-  defect: IRS Publication 550 (fetched 2026-11-04): "If you sell stock and your spouse or a corporation you control buys substantially identical stock, you also have a wash sale." It does not say "after your sale". The 30-day window runs before and after, and the existing wash-sale guide (linked from this section) says a spouse purchase "within the window". F13 added "after your sale" (the claim check also changed an earlier draft line to fit F13), so the closed fact itself is narrower than the source.
-  fix: A purchase of substantially identical stock by your spouse or by a corporation you control also creates a wash sale. (Correct F13 in the fact list to match Pub. 550 before any regeneration.)
-
-[T5] HARD | overloaded sentence (35 words, three ideas)
-  field: introText para 1
-  quote: "If your losses exceed your gains, the Internal Revenue Service (IRS) lets you deduct up to $3,000 of the excess from other income each year ($1,500 if married filing separately) and carry the rest forward."
-  defect: 35 words chaining deduct, married-filing-separately and carryforward.
-  fix: If your losses exceed your gains, the [Internal Revenue Service (IRS)](https://www.irs.gov/taxtopics/tc409) lets you deduct up to $3,000 of the excess from other income each year ($1,500 if married filing separately). You carry the rest forward. (Keep the first-mention link.)
-
-[T5b] HARD | overloaded sentence (35 words, jargon)
-  field: sections[0] paragraph 3
-  quote: "Most net capital gain is taxed at 0%, 15% or 20%, and IRS Topic 409 names higher rates for some gains: 28% for collectibles and section 1202 stock, and 25% for unrecaptured section 1250 gain."
-  defect: 35 words; "section 1202 stock" and "unrecaptured section 1250 gain" are unexplained jargon that serve no reader of a stock-loss page; IRS says "maximum" rates.
-  fix: Most net capital gain is taxed at 0%, 15% or 20%. IRS Topic 409 names higher maximum rates for a few gains: 28% for collectibles and section 1202 stock, and 25% for unrecaptured section 1250 gain.
-
-[T5c] HARD | overloaded sentence (40 words)
-  field: sections[3] paragraph 3
-  quote: "Publication 550 gives this example: you buy 100 shares of X stock for $1,000, sell them for $750 and within 30 days buy 100 shares for $800, so you cannot deduct the $250 loss and your new basis is $1,050."
-  defect: 40 words, four events and two results in one sentence; needs a second read.
-  fix: Publication 550 gives this example. You buy 100 shares of X stock for $1,000 and sell them for $750. Within 30 days you buy 100 shares for $800. You cannot deduct the $250 loss, and your new basis is $1,050.
-
-[T6] HARD | unparseable / backward reference
-  field: sections[0] paragraph 2
-  quote: "The loss cancels capital gains."
-  defect: It follows "Losses from selling personal-use property, such as a home or car, are not tax deductible." The first reading is that the personal-use loss cancels gains, which is the opposite of the rule. Which loss is unnamed.
-  fix: A capital loss on an investment cancels capital gains.
-
-[T7] HARD | headline-tell (two-clause formula)
-  field: sections[0].heading (H2)
-  quote: "How Tax Loss Harvesting Works and What It Can Deduct"
-  defect: "X Works and What It Can Deduct" is the two-clause headline formula. It also repeats the H1 ("How Tax Loss Harvesting Works").
-  fix: What Tax Loss Harvesting Can Deduct Each Year
-
-[T7b] HARD | headline-tell (antithesis flourish)
-  field: sections[2].heading (H2)
-  quote: "Tax Loss Harvesting Defers Tax Rather Than Erasing It"
-  defect: "X rather than Y" is the compressed antithesis cadence banned as "X, not Y".
-  fix: Tax Loss Harvesting Usually Defers Tax to a Later Year
-
-[T7c] HARD | headline-tell (tricolon deck)
-  field: cardBlurb
-  quote: "How a harvested loss cancels capital gains, what a $10,000 loss saves at each federal rate, and how the wash sale rule can block the deduction."
-  defect: Three parallel "how/what/how" items: headline tricolon in a deck field.
-  fix: A $10,000 harvested loss saves $0, $1,500 or $2,000 of federal tax depending on your long-term gains rate, unless the wash sale rule blocks the deduction.
-
-[T8] HARD | attribution accuracy (method overstated)
-  field: sections[1] paragraph 1
-  quote: "using the IRS 2026 thresholds"
-  defect: The saved model (run.py) multiplies a $10,000 loss by 0%, 15% and 20%. The 2026 ceilings are not an input to the calculation; they are carried through unused. The sentence says the modeling used them.
-  fix: In our internal modeling, we ran a $10,000 harvested loss against $10,000 of long-term gains taxed at 0%, 15% and 20%.
+[R2-T5] HARD | dead-end
+  field: faqs[4] answer
+  quote: "Cases such as a 0% year, a basis step-up at death or a gift to charity are not covered here."
+  defect: Names the exceptions to "mostly a deferral" and leaves the reader with no next step. Section 3 was fixed to route to a tax professional; this FAQ was not.
+  fix: A tax professional can explain how a 0% year, a basis step-up at death or a gift to charity apply to you.
 
 
-ADVISORY FINDINGS (record only; do not block)
+ADVISORY
 
-[TA1] ADVISORY | opening sentence
-  field: introText para 1 sentence 1
-  quote: "Tax loss harvesting means selling an investment for less than its cost so the realized loss cancels capital gains you would otherwise pay tax on."
-  defect: 26 words and a definition, with a trailing relative clause; acceptable as a clear single idea but longer than "short and easy".
-  fix: No change required. Optional: Tax loss harvesting means selling an investment below its cost so the loss cancels capital gains.
+[R2-TA1] ADVISORY | overloaded sentence (33 words)
+  field: sections[2] last paragraph
+  quote: "Some cases, such as a 0% year, a basis step-up at death or a gift to charity, can change the result, and a tax professional can explain how they apply to your return."
+  defect: Under the ~35-word line; two ideas. Optional split.
+  fix: Some cases, such as a 0% year, a basis step-up at death or a gift to charity, can change the result. A tax professional can explain how they apply to your return.
 
-[TA2] ADVISORY | backward pronoun
-  field: sections[2] paragraph 1 and sections[3] paragraph 3
-  quote: "That is the same amount as the loss you harvested. / That postpones the deduction until you sell the new shares"
-  defect: "That" refers to the previous sentence in both places.
-  fix: The gain equals the loss you harvested. / The disallowed loss added to the basis postpones the deduction until you sell the new shares.
+[R2-TA2] ADVISORY | claim-check residual flags
+  field: meta.guards.flags
+  quote: "A tax professional can apply your rate."
+  defect: The five residual flags are routing sentences to a tax professional. The row prompt (section 5, section 1 plan) licenses naming a tax professional and F21 allows the exceptions to be named, so they are supported; no cut needed.
+  fix: None.
 
-[TA3] ADVISORY | filing-status label
+[R2-TA3] ADVISORY | filing-status label (not fixable item from fix tool)
   field: sections[1] list item 1
   quote: "Married filing jointly: 0% up to $98,900, 15% up to $613,700"
-  defect: Rev. Proc. 2025-32 row is "Married Individuals Filing Joint Returns and Surviving Spouse". A surviving spouse cannot tell which row applies.
-  fix: Married filing jointly and surviving spouses: 0% up to $98,900, 15% up to $613,700
+  defect: Rev. Proc. 2025-32 row reads "Married Individuals Filing Joint Returns and Surviving Spouse". A surviving spouse cannot tell which row applies. Needs a one-line fact-list edit (F7) before the writer can add "and surviving spouses"; otherwise accept.
+  fix: Optional.
 
-[TA4] ADVISORY | FAQ redundancy / indirect answer
-  field: faqs[0] and faqs[3]; faqs[5]
-  quote: "Does tax loss harvesting reduce taxable income? / Can short-term losses offset long-term gains?"
-  defect: FAQ 1 and FAQ 4 give the same $3,000 / $1,500 answer. FAQ 6 answers "Can short-term losses offset long-term gains?" with "Schedule D combines them into one total" and never says yes or no (F19 forbids ordering claims, so a yes is allowed only as "they are combined into one net result").
-  fix: Differentiate FAQ 4 (taxable income effect) from FAQ 1; lead FAQ 6 with "Yes, they are combined into one net result on Schedule D."
-
-[TA5] ADVISORY | unlinked directive
-  field: sections[6] (Our Takeaway) last paragraph
-  quote: "confirm no repurchase falls inside the 30-day windows before you harvest a loss"
-  defect: A directive to confirm something; no link. The source that answers it is the reader's own account history, so this is advisory.
-  fix: Optional: ...and check your brokerage trade history for any repurchase inside the 30-day windows before you harvest a loss.
-
-[TA6] ADVISORY | rhythm (run-wide)
+[R2-TA4] ADVISORY | rhythm / list
   field: whole page
-  quote: "63 of 99 sentences are 15+ words; 14 short, 22 medium."
-  defect: No 10-run in one band and no flat-5 among prose sentences (only the filing-status list items sit within 3 words of each other), so the gate passes, but the run-wide lean to long sentences is heavy.
-  fix: Vary during the T5 splits; do not pad.
-
-[TA7] ADVISORY | heading acronym
-  field: sections[3].heading
-  quote: "The Wash Sale Rule and Tax Loss Harvesting in an IRA"
-  defect: "IRA" appears in an H2 before the first expansion ("individual retirement arrangement (IRA)") in the Publication 550 list below it.
-  fix: Expand at the heading or accept as common usage.
-
-[TA8] ADVISORY | evidence usefulness note
-  field: sections[1], sections[2]
-  quote: "In our internal modeling, a share bought for $10,000 and sold at $7,000 produces a $3,000 loss."
-  defect: The "internal modeling" label covers rate x loss and a one-line basis subtraction. Truthful and replayable, but thin: the real contribution is the 0% case and the deferral reasoning. Do not repeat the cue a third time.
-  fix: No change required.
-
-[TA9] ADVISORY | load receipt
-  field: reports/standards-ledger.jsonl
-  quote: "(ledger)"
-  defect: No "via":"load-script" entry for 2026-11-04; the run used workflow-preflight bundles (preflight-build/preflight-write) which _workflow-checkpoints.md accepts in place of the legacy receipt. Hashes cs=ebf9e6f6 aa=59194cdd exp=1969dcd5 match the files on disk.
-  fix: No change required.
-
-
-Note on generator flags: meta.guards 'missing metaTitle/subtitle/ctaTitle/ctaText/ctaButton/faqItems' are schema noise (the Guide template has no such fields; the page renders title, metaDescription, h1 and cardBlurb). The 'emptied by the claim check' flag lists section headings, but every section body is non-empty in the draft, in src/data/guides.ts and in the rendered HTML (verified line by line: every draft paragraph is found in dist, except the bold-label list lines of the HSA page, which render with literal asterisks, H1).
+  quote: "106 sentences: short 16, medium 28, long 62; flat-5 only among the four filing-status list items."
+  defect: Gate passes (no 10-run, no prose flat-5).
+  fix: None.

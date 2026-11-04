@@ -11,7 +11,7 @@
  "thinking": "medium",
  "key_source": "CONTENT_ANTHROPIC_KEY_2",
  "finish_reason": "STOP",
- "words": 2419,
+ "words": 2397,
  "floor": 1200,
  "input_tokens": 37025,
  "output_tokens": 19903,
@@ -20,9 +20,7 @@
  "est_cost_usd": 0.4281,
  "guards": {
   "repairs": [],
-  "flags": [
-   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A rule of thumb cannot tell you whether the refinance returns your cash.'"
-  ],
+  "flags": [],
   "disallowed_urls_removed": [],
   "words": 2476,
   "numbers_not_in_facts": [
@@ -300,6 +298,69 @@
     "flags": [
      "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A rule of thumb cannot tell you whether the refinance returns your cash.'"
     ]
+   },
+   {
+    "round": 2,
+    "at": "2026-11-04T02:20:34+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/brrrr-method-findings.round2.txt",
+    "applied": [
+     {
+      "id": "sections[6].body",
+      "quote": "It also does not fit anyone who needs a refinance inside six months to recover repair spending, based on our reading of the delayed financing wording, so ask the lender how it counts repair costs.",
+      "replacement": "It also does not fit anyone who needs a refinance inside six months to recover repair spending, based on our reading of the delayed financing wording. Ask the lender how it counts repair costs.",
+      "type": "R2-B1 overloaded 35-word sentence",
+      "why": "Split into two sentences so each carries one idea."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "On our reading of the delayed financing exception, a refinance inside six months returns about the purchase money and leaves the $40,000 of repairs in the deal at both the $230,000 and $260,000 appraisals.",
+      "replacement": "On our reading of the delayed financing exception, a refinance inside six months returns about the purchase money. It leaves the $40,000 of repairs in the deal at both the $230,000 and $260,000 appraisals.",
+      "type": "R2-BA1 overloaded 34-word sentence",
+      "why": "Optional split after \"purchase money\" to shorten the sentence."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Fannie Mae does not address repair spending, so ask the lender how it counts repair costs.",
+      "replacement": "Ask the lender how it counts repair costs.",
+      "type": "R2-BA2 restatement across sections",
+      "why": "Trimmed the stops-working copy. The ask-the-lender instruction stays for consistency."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "A rule of thumb cannot tell you whether the refinance returns your cash.",
+      "replacement": "",
+      "type": "R2-BA3 residual claim-check flag",
+      "why": "Optional delete for zero residual flags. The answer still sends the reader to the break-even."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Dividing $193,000 by 0.98 (one minus the 2% cost) gives a loan of about $196,939",
+      "replacement": "Dividing $193,000 by 0.98 (one minus the 2% cost) gives a loan of about $196,939",
+      "type": "R2-BA5 derived numbers",
+      "why": "Re-verified against the replay. No change is needed, so the text is kept as is."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "R2-BA4 inherited 80% to 85% CLTV claim on comparison page",
+      "why": "Text is on /compare/cash-out-refinance-vs-heloc/, not on this page. Not fixable in place.",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 2397,
+    "flags": []
    }
   ]
  },

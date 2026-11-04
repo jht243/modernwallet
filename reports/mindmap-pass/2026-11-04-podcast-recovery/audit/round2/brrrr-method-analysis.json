@@ -1,0 +1,35 @@
+{
+  "reviewer": "phase4-reviewer-1",
+  "verdict": "FAIL",
+  "note": "Round 2. All five analysis checks pass on the current text; the overall verdict is FAIL only because the route is not approved in rendered-review.json (see findings file for the remaining prose defects).",
+  "packetSha256": "2886e209185f66c5a081bd7a733760439907220473b333e07b126a65054f5a68",
+  "usefulness": {
+    "status": "PASS",
+    "evidence": "The packet answers \"how does BRRRR work and when does it stop working\" with a break-even the competitor explainers in the SERP sample did not give (appraisal about $262,585, 1.36x cash invested, at labeled assumptions) and the decision-changing delayed-financing cap (loan about $156,122, $40,000 left in the deal inside six months on the labeled reading). It is a hypothetical single scenario and the page says so (\"We did not buy or refinance a property\"); it models no rent, rate or cash flow and says that too."
+  },
+  "sourceAndAssumptions": {
+    "status": "PASS",
+    "evidence": "Fannie Mae B2-1.3-03 (12/10/2025) and IRS Pub. 527 fetched live 2026-11-04 support every rule used; the page contains no mention of repairs, so the statement that Fannie Mae does not address repair spending is accurate and the capped column is correctly labeled \"our reading\". The 75% LTV and 2% cost are inputs.json assumptions and the page states they are not lender limits or Fannie Mae figures (intro, inputs list, break-even, takeaway). Advisory B6: one table lead-in sentence says \"The standard path lends 75%\" without \"assumes\". Hand-derived 0.98, 7,350 and 32,585 are correct (replay 262,585.03 - 230,000 = 32,585.03) but not in output.json."
+  },
+  "conditionsAndCounterexample": {
+    "status": "PASS",
+    "evidence": "Counterexamples on the page and replayed: low appraisal ($200,000 leaves $46,000 in the deal) and the capped path ($230,000 and $260,000 both leave $40,000). Boundary: at $200,000 the 75% limit binds under the cap (loan $150,000 < $156,122) and the page states it; break-even (loan 196,938.78, appraisal 262,585.03) reproduced to the cent. Conditions that change the answer (lender LTV, appraisal, Fannie Mae rule change) are listed."
+  },
+  "renderedConsistency": {
+    "status": "PASS",
+    "evidence": "Round 2: all rendered figures equal the independent replay (canonically identical to evidence output.json). \"our reading ... ask the lender\" is now present in the table lead-in, section 4, stops-working section and takeaway, matching evidence.json. Route still FAIL in rendered-review.json for one 35-word sentence (R2-B1)."
+  },
+  "localExclusions": {
+    "status": "PASS",
+    "evidence": "Lending/real-estate topic outside section G: no TESTED format, no \"we tested\", no completed-deal claim, no client claim (all 8 retrieved cases unrelated and rejected), no professional-review claim; $40,000 absent from every headline field and the intro; \"not lending advice\" language in the template footer only."
+  },
+  "renderedSnapshot": {
+    "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/rendered-snapshot.json",
+    "sha256": "58de0e6bdf1f0c6d7eaa715a0dc834e019749aaa5b67886e617beb5fed4bcdd7"
+  },
+  "renderedReview": {
+    "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/rendered-review.json",
+    "sha256": "1ad08623cb5c0e895d192de484fd42c5f00a21703217e6c4086f16edb18f9c9a"
+  },
+  "replaySha256": "bae3bf089e283f954684da3471a922c2d4cd089b97cc9fe417da8370d380b42a"
+}

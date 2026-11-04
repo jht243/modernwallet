@@ -1,0 +1,35 @@
+{
+  "reviewer": "phase4-reviewer-1",
+  "verdict": "FAIL",
+  "note": "Round 2. All five analysis checks pass on the current text; the overall verdict is FAIL only because the route is not approved in rendered-review.json (see findings file for the remaining prose defects).",
+  "packetSha256": "c28d37bd70a16ca9521bd96ae4920aac405b8dab1722a308127d5e5b2eabd179",
+  "usefulness": {
+    "status": "PASS",
+    "evidence": "The packet resolves the approved reader question (\"how does it work, how much can I deduct\") with decision-changing conditions that the site's existing wash-sale guide and tax-tips paragraph do not give: a loss saves the tax rate on the gain it cancels and nothing at 0% (Rev. Proc. 2025-32 ceilings, all four filing statuses), the $3,000/$1,500 lesser-of limit with carryforward, and that the saving is mostly a deferral. The arithmetic is simple (rate x loss; basis subtraction) and the page labels it illustrative and calculated, never empirical, so it passes as a labeled planning illustration; the contribution is the conditions and counterexample, not the multiplication."
+  },
+  "sourceAndAssumptions": {
+    "status": "PASS",
+    "evidence": "Round 2: inputs re-verified against live IRS pages (Topic 409, Rev. Proc. 2025-32 section 3.03, Pub. 550, Schedule D instructions) and inputs.json. F13 corrected (no \"after your sale\"), and \"using the IRS 2026 thresholds\" removed so the modeling sentence names only what run.py used (the 0%, 15% and 20% rates). Assumptions (illustrative amounts, federal only, ordinary rates, NIIT and state tax not modeled) remain visible beside the table."
+  },
+  "conditionsAndCounterexample": {
+    "status": "PASS",
+    "evidence": "The 0% case is the counterexample on the page ($0 saved at 0%, run.py 0pct = 0.0) and the replay reproduces it; the no-gains year (deduct $3,000, carry $7,000; $1,500 MFS) and the wash-sale disallowance (Pub. 550 example $250 loss, $1,050 basis) are shown; the deferral case (loss $3,000, replacement basis $7,000, later gain $3,000) shows the benefit reversing. Boundary: net loss exactly equal to or above the limit uses min(limit, loss); head-of-household and MFS ceilings are on the page."
+  },
+  "renderedConsistency": {
+    "status": "PASS",
+    "evidence": "Round 2: every rendered number equals the independent replay (audit/tax-loss-harvesting-replay.json canonically identical to evidence output.json), and section 5 bullet 1 now says taxable income including the gain, matching evidence.json conditions. Route still FAIL in rendered-review.json for prose defects R2-T1 to R2-T5."
+  },
+  "localExclusions": {
+    "status": "PASS",
+    "evidence": "Finance/tax topic outside _experience.md section G: no TESTED format, no \"we tested\" (grep 0 on the page and in the rendered snapshot), no testing schema, no client claim (all 8 retrieved approved cases are unrelated Layer3Labs properties and were rejected in evidence.json caseDecisions), no professional-review claim; \"not tax advice\" disclaimer only in the template footer."
+  },
+  "renderedSnapshot": {
+    "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/rendered-snapshot.json",
+    "sha256": "58de0e6bdf1f0c6d7eaa715a0dc834e019749aaa5b67886e617beb5fed4bcdd7"
+  },
+  "renderedReview": {
+    "path": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/rendered-review.json",
+    "sha256": "1ad08623cb5c0e895d192de484fd42c5f00a21703217e6c4086f16edb18f9c9a"
+  },
+  "replaySha256": "120dc7734bfd1b13d70c3b0be3af314979b8175fb91a204f60c3147f841d9233"
+}
