@@ -1,0 +1,64 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "tool-usage-main",
+ "route": "/pay-off-mortgage-or-invest-calculator/",
+ "readerQuestion": "Should I pay off my mortgage or invest the money? [PAA 0 returned; ac ~27/37 verdict-pattern completions (should i / is it better / which / what's better); off-jurisdiction rejected: uk, canada, australia, super, pension, shares]",
+ "decisionGap": "The site's guide and comparison explain the tradeoff with fixed examples ($500/month at 3% and 7.5%), and their own text lists taxes on gains as left out. A reader with a different balance, rate, extra amount or account type cannot get their own answer or the return they would need to beat. The SERP top 10 (arvest.com, zillow.com, usbank.com) is mostly bank calculators; sampled only.",
+ "finding": "In our internal calculation for a $300,000 loan at 6.5% over 30 years with $300 a month extra and a 15% tax on investment gains, prepaying ends the loan 110 months early and saves $135,115.17 in interest; investing the freed payment (and the cash left over in the payoff month) leaves $322,598.79 after tax at the original payoff date. Investing the $300 instead leaves $314,410.41 at a 7% return, so prepaying ends $8,188.38 ahead. The break-even return is 7.19%. At a 3% mortgage the break-even falls to 3.40% and investing ends $116,226.56 ahead at 7%. In a tax-free account (0% tax on gains) the break-even at 6.5% is 6.70%, the loan's effective annual rate, and investing ends $14,210.46 ahead at 7%.",
+ "conditions": "Same cash outlay on both paths (payment + extra) until the original payoff date; returns are steady (no market swings or sequence risk); tax on gains paid at the end; mortgage-interest deduction ignored (it only applies if you itemize, IRS Pub 936).",
+ "whatWouldChange": "A different expected return (the reader's own input), an account with no tax on gains, itemizing with a large mortgage-interest deduction, needing liquidity, or market losses.",
+ "basis": "calculated",
+ "method": "Month-by-month simulation of both paths to the scheduled payoff date; investments compound monthly at (1+g)^(1/12)-1; tax = rate \u00d7 (balance \u2212 contributions); break-even return by bisection on 0-30%. Cash left over in the payoff month is invested that month as a contribution.",
+ "units": "USD, months, annual %",
+ "limitations": "Steady returns are an assumption, not a forecast; no PMI, escrow, fees or inflation; tax on gains simplified to one rate at the end.",
+ "counterexample": "At a 3% mortgage the conclusion flips: investing at 7% ends $116,226.56 ahead. With 0% tax on gains at 6.5%, investing at 7% also wins by $14,210.46. Regression: with 0% tax the break-even equals the effective annual mortgage rate (6.70% at 6.5% APR; 3.04% at 3% APR).",
+ "execution": {
+  "command": [
+   "python3",
+   "reports/mindmap-pass/2026-11-04-tool-usage/evidence/pay-off-mortgage-or-invest-calculator/calc.py",
+   "reports/mindmap-pass/2026-11-04-tool-usage/evidence/pay-off-mortgage-or-invest-calculator/output.json"
+  ],
+  "code": {
+   "path": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/pay-off-mortgage-or-invest-calculator/calc.py",
+   "sha256": "d4c527502192871af2691f98f2ac13cad7ab80f5358bda474a6610e70627959a"
+  },
+  "inputs": [
+   {
+    "path": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/pay-off-mortgage-or-invest-calculator/inputs.json",
+    "sha256": "a947d8ea518a07e69a89159fdfd7c807e0c9ee443a3b3dbb029a7d1a902cc228"
+   }
+  ],
+  "output": {
+   "path": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/pay-off-mortgage-or-invest-calculator/output.json",
+   "sha256": "d62032d78c3792bff652ddf9b76867374a07fa022e8195d6b80d936b3a03ff75"
+  }
+ },
+ "sourceArtifacts": [
+  {
+   "path": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/pay-off-mortgage-or-invest-calculator/sources.md",
+   "sha256": "e7cc14ef2e9b1bc63e01d37cea26eaa60df9df926efd850c85382b25ca71ad81"
+  }
+ ],
+ "caseSelection": {
+  "path": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/pay-off-mortgage-or-invest-calculator/cases.json",
+  "sha256": "0dbe9a4deae381fdb007bc074e12887eac87049eed09824749884a1032cc16bc"
+ },
+ "caseDecisions": "Retrieved with the exact packet reader question. 8 candidates: owned-property-the-indoor-report, owned-property-drones-defense, owned-property-diy-repair-guide, client-bowlero-corporation, client-professional-bowlers-association-pba, client-horizen-labs, client-multiple-hoa-and-condo-boards-across-the-usa, client-multiple-law-firms. The nearest topic, client-multiple-hoa-and-condo-boards-across-the-usa, concerns association management, not an owner's choice between prepaying a mortgage and investing. The rest are other Layer3Labs sites and bowling, blockchain and legal clients. None licenses a client claim on ModernWallet, whose _experience.md has no named-client specifics. Rejected all; no client claim on the page.",
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "output.json cases 1-7 + regression rows"
+  ],
+  "scopeAndLimits": "illustrative scenarios; reader-entered return",
+  "publicMethod": "How it works section with the method, worked example and break-even",
+  "placement": "introText worked example + howItWorks"
+ },
+ "medium": "interactive tool (calculator) \u2014 reader inputs change the answer",
+ "exclusions": "No TESTED label; no expected return claimed; YMYL disclaimer via template.",
+ "sourceUrls": [
+  {
+   "url": "https://www.irs.gov/publications/p936",
+   "checked": "2026-11-04"
+  }
+ ]
+}

@@ -1,0 +1,611 @@
+{
+ "biweekly": [
+  {
+   "case": {
+    "balance": 300000,
+    "aprPct": 6.5,
+    "monthsLeft": 360,
+    "setupFee": 0,
+    "perDebitFee": 0
+   },
+   "payment": [
+    1896.2,
+    1896.2
+   ],
+   "biPayments": [
+    628,
+    628
+   ],
+   "biInterestSaved": [
+    88121.78,
+    88121.78
+   ],
+   "fees": [
+    0,
+    0
+   ],
+   "net": [
+    88121.78,
+    88121.78
+   ],
+   "exMonths": [
+    290,
+    290
+   ],
+   "exSaved": [
+    87256.29,
+    87256.29
+   ],
+   "monthsEq": [
+    289.8,
+    289.8
+   ]
+  },
+  {
+   "case": {
+    "balance": 300000,
+    "aprPct": 6.5,
+    "monthsLeft": 360,
+    "setupFee": 400,
+    "perDebitFee": 2.5
+   },
+   "payment": [
+    1896.2,
+    1896.2
+   ],
+   "biPayments": [
+    628,
+    628
+   ],
+   "biInterestSaved": [
+    88121.78,
+    88121.78
+   ],
+   "fees": [
+    1970,
+    1970
+   ],
+   "net": [
+    86151.78,
+    86151.78
+   ],
+   "exMonths": [
+    290,
+    290
+   ],
+   "exSaved": [
+    87256.29,
+    87256.29
+   ],
+   "monthsEq": [
+    289.8,
+    289.8
+   ]
+  },
+  {
+   "case": {
+    "balance": 238000,
+    "aprPct": 6.875,
+    "monthsLeft": 312,
+    "setupFee": 0,
+    "perDebitFee": 0
+   },
+   "payment": [
+    1639.33,
+    1639.33
+   ],
+   "biPayments": [
+    553,
+    553
+   ],
+   "biInterestSaved": [
+    58271.57,
+    58271.57
+   ],
+   "fees": [
+    0,
+    0
+   ],
+   "net": [
+    58271.57,
+    58271.57
+   ],
+   "exMonths": [
+    256,
+    256
+   ],
+   "exSaved": [
+    57573.28,
+    57573.28
+   ],
+   "monthsEq": [
+    255.2,
+    255.2
+   ]
+  },
+  {
+   "case": {
+    "balance": 300000,
+    "aprPct": 0,
+    "monthsLeft": 360,
+    "setupFee": 0,
+    "perDebitFee": 0
+   },
+   "payment": [
+    833.33,
+    833.33
+   ],
+   "biPayments": [
+    720,
+    720
+   ],
+   "biInterestSaved": [
+    0,
+    0
+   ],
+   "fees": [
+    0,
+    0
+   ],
+   "net": [
+    0,
+    0
+   ],
+   "exMonths": [
+    333,
+    333
+   ],
+   "exSaved": [
+    0,
+    0
+   ],
+   "monthsEq": [
+    332.3,
+    332.3
+   ]
+  },
+  {
+   "case": {
+    "balance": 300000,
+    "aprPct": 3,
+    "monthsLeft": 360,
+    "setupFee": 0,
+    "perDebitFee": 0
+   },
+   "payment": [
+    1264.81,
+    1264.81
+   ],
+   "biPayments": [
+    688,
+    688
+   ],
+   "biInterestSaved": [
+    20637.3,
+    20637.3
+   ],
+   "fees": [
+    0,
+    0
+   ],
+   "net": [
+    20637.3,
+    20637.3
+   ],
+   "exMonths": [
+    318,
+    318
+   ],
+   "exSaved": [
+    20344.72,
+    20344.72
+   ],
+   "monthsEq": [
+    317.5,
+    317.5
+   ]
+  }
+ ],
+ "payoff": [
+  {
+   "case": {
+    "balance": 300000,
+    "aprPct": 6.5,
+    "monthsLeft": 360,
+    "extraPerMonth": 300,
+    "returnPct": 7,
+    "taxOnGainsPct": 15
+   },
+   "payoffMonth": [
+    250,
+    250
+   ],
+   "interestSaved": [
+    135115.17,
+    135115.17
+   ],
+   "prepay": [
+    322598.79,
+    322598.79
+   ],
+   "invest": [
+    314410.41,
+    314410.41
+   ],
+   "diff": [
+    -8188.38,
+    -8188.38
+   ],
+   "be": [
+    7.19,
+    7.19
+   ]
+  },
+  {
+   "case": {
+    "balance": 300000,
+    "aprPct": 6.5,
+    "monthsLeft": 360,
+    "extraPerMonth": 300,
+    "returnPct": 5,
+    "taxOnGainsPct": 15
+   },
+   "payoffMonth": [
+    250,
+    250
+   ],
+   "interestSaved": [
+    135115.17,
+    135115.17
+   ],
+   "prepay": [
+    296928.55,
+    296928.55
+   ],
+   "invest": [
+    224120.86,
+    224120.86
+   ],
+   "diff": [
+    -72807.7,
+    -72807.7
+   ],
+   "be": [
+    7.19,
+    7.19
+   ]
+  },
+  {
+   "case": {
+    "balance": 300000,
+    "aprPct": 3,
+    "monthsLeft": 360,
+    "extraPerMonth": 300,
+    "returnPct": 7,
+    "taxOnGainsPct": 15
+   },
+   "payoffMonth": [
+    262,
+    262
+   ],
+   "interestSaved": [
+    46365.85,
+    46365.85
+   ],
+   "prepay": [
+    198183.85,
+    198183.85
+   ],
+   "invest": [
+    314410.41,
+    314410.41
+   ],
+   "diff": [
+    116226.56,
+    116226.56
+   ],
+   "be": [
+    3.4,
+    3.4
+   ]
+  },
+  {
+   "case": {
+    "balance": 250000,
+    "aprPct": 6.5,
+    "monthsLeft": 300,
+    "extraPerMonth": 500,
+    "returnPct": 7,
+    "taxOnGainsPct": 15
+   },
+   "payoffMonth": [
+    179,
+    179
+   ],
+   "interestSaved": [
+    115668.35,
+    115668.35
+   ],
+   "prepay": [
+    363177.37,
+    363177.37
+   ],
+   "invest": [
+    355292.8,
+    355292.8
+   ],
+   "diff": [
+    -7884.57,
+    -7884.57
+   ],
+   "be": [
+    7.24,
+    7.24
+   ]
+  },
+  {
+   "case": {
+    "balance": 300000,
+    "aprPct": 6.5,
+    "monthsLeft": 360,
+    "extraPerMonth": 300,
+    "returnPct": 7,
+    "taxOnGainsPct": 0
+   },
+   "payoffMonth": [
+    250,
+    250
+   ],
+   "interestSaved": [
+    135115.17,
+    135115.17
+   ],
+   "prepay": [
+    336625.32,
+    336625.32
+   ],
+   "invest": [
+    350835.78,
+    350835.78
+   ],
+   "diff": [
+    14210.46,
+    14210.46
+   ],
+   "be": [
+    6.7,
+    6.7
+   ]
+  },
+  {
+   "case": {
+    "balance": 300000,
+    "aprPct": 6.5,
+    "monthsLeft": 360,
+    "extraPerMonth": 0,
+    "returnPct": 7,
+    "taxOnGainsPct": 15
+   },
+   "payoffMonth": [
+    360,
+    360
+   ],
+   "interestSaved": [
+    0,
+    0
+   ],
+   "prepay": [
+    0,
+    0
+   ],
+   "invest": [
+    0,
+    0
+   ],
+   "diff": [
+    0,
+    0
+   ],
+   "be": [
+    null,
+    null
+   ]
+  },
+  {
+   "case": {
+    "balance": 300000,
+    "aprPct": 3,
+    "monthsLeft": 360,
+    "extraPerMonth": 300,
+    "returnPct": 7,
+    "taxOnGainsPct": 0
+   },
+   "payoffMonth": [
+    262,
+    262
+   ],
+   "interestSaved": [
+    46365.85,
+    46365.85
+   ],
+   "prepay": [
+    205916.44,
+    205916.44
+   ],
+   "invest": [
+    350835.78,
+    350835.78
+   ],
+   "diff": [
+    144919.34,
+    144919.34
+   ],
+   "be": [
+    3.04,
+    3.04
+   ]
+  }
+ ],
+ "edges": {
+  "bi_zero_rate": {
+   "monthlyPayment": 833.3333333333334,
+   "halfPayment": 416.6666666666667,
+   "monthly": {
+    "months": 360,
+    "interest": 0
+   },
+   "biweekly": {
+    "payments": 720,
+    "monthsEquivalent": 332.3076923076923,
+    "interest": 0,
+    "interestSaved": 0,
+    "fees": 0,
+    "netSaved": 0,
+    "monthsSooner": 27.69230769230768
+   },
+   "extraTwelfth": {
+    "extraPerMonth": 69.44444444444444,
+    "months": 333,
+    "interest": 0,
+    "interestSaved": 0,
+    "monthsSooner": 27
+   }
+  },
+  "bi_zero_balance": null,
+  "bi_zero_months": null,
+  "bi_negative": null,
+  "bi_huge": {
+   "monthlyPayment": 25000009.19646523,
+   "halfPayment": 12500004.598232616,
+   "monthly": {
+    "months": 600,
+    "interest": 14000005517.481924
+   },
+   "biweekly": {
+    "payments": 224,
+    "monthsEquivalent": 103.38461538461539,
+    "interest": 1794709151.488368,
+    "interestSaved": 12205296365.993557,
+    "fees": 0,
+    "netSaved": 12205296365.993557,
+    "monthsSooner": 496.61538461538464
+   },
+   "extraTwelfth": {
+    "extraPerMonth": 2083334.099705436,
+    "months": 104,
+    "interest": 1813318538.439046,
+    "interestSaved": 12186686979.042877,
+    "monthsSooner": 496
+   }
+  },
+  "bi_nan": null,
+  "bi_1month": {
+   "monthlyPayment": 1005.4166666666827,
+   "halfPayment": 502.70833333334133,
+   "monthly": {
+    "months": 1,
+    "interest": 5.416666666666667
+   },
+   "biweekly": {
+    "payments": 2,
+    "monthsEquivalent": 0.9230769230769231,
+    "interest": 3.7494791666666467,
+    "interestSaved": 1.6671875000000203,
+    "fees": 0,
+    "netSaved": 1.6671875000000203,
+    "monthsSooner": 0.07692307692307687
+   },
+   "extraTwelfth": {
+    "extraPerMonth": 83.78472222222355,
+    "months": 1,
+    "interest": 5.416666666666667,
+    "interestSaved": 0,
+    "monthsSooner": 0
+   }
+  },
+  "pi_zero_extra": {
+   "payment": 1896.2040704788958,
+   "payoffMonth": 360,
+   "monthsSooner": 0,
+   "interestSaved": 5.005858838558197e-9,
+   "prepayWealth": 3.670265869004652e-9,
+   "investWealth": 0,
+   "investMinusPrepay": -3.670265869004652e-9,
+   "breakEvenReturnPct": null
+  },
+  "pi_zero_tax_65": {
+   "payment": 1896.2040704788958,
+   "payoffMonth": 250,
+   "monthsSooner": 110,
+   "interestSaved": 135115.16576786505,
+   "prepayWealth": 336625.3165603924,
+   "investWealth": 350835.7809859799,
+   "investMinusPrepay": 14210.464425587503,
+   "breakEvenReturnPct": 6.697185200254761
+  },
+  "eff_65": 6.69718520025433,
+  "pi_zero_tax_3": {
+   "payment": 1264.812101188368,
+   "payoffMonth": 262,
+   "monthsSooner": 98,
+   "interestSaved": 46365.851332814535,
+   "prepayWealth": 205916.43964499666,
+   "investWealth": 350835.7809859799,
+   "investMinusPrepay": 144919.34134098323,
+   "breakEvenReturnPct": 3.041595691351085
+  },
+  "eff_3": 3.0415956913506736,
+  "pi_zero_rate": {
+   "payment": 833.3333333333334,
+   "payoffMonth": 265,
+   "monthsSooner": 95,
+   "interestSaved": 0,
+   "prepayWealth": 137400.22866577297,
+   "investWealth": 314410.4138380829,
+   "investMinusPrepay": 177010.18517230995,
+   "breakEvenReturnPct": 1.443246563925804e-13
+  },
+  "pi_neg_return": {
+   "payment": 1896.2040704788958,
+   "payoffMonth": 250,
+   "monthsSooner": 110,
+   "interestSaved": 135115.16576786505,
+   "prepayWealth": 194104.0166039859,
+   "investWealth": 55238.16228147516,
+   "investMinusPrepay": -138865.8543225107,
+   "breakEvenReturnPct": 7.192764207727599
+  },
+  "pi_tax_100": {
+   "payment": 1896.2040704788958,
+   "payoffMonth": 250,
+   "monthsSooner": 110,
+   "interestSaved": 135115.16576786505,
+   "prepayWealth": 243115.16576786683,
+   "investWealth": 108000,
+   "investMinusPrepay": -135115.16576786683,
+   "breakEvenReturnPct": 30
+  },
+  "pi_high_rate": {
+   "payment": 7251.3396427108355,
+   "payoffMonth": 135,
+   "monthsSooner": 225,
+   "interestSaved": 1591820.9489132552,
+   "prepayWealth": 3158746.147169508,
+   "investWealth": 314410.4138380829,
+   "investMinusPrepay": -2844335.733331425,
+   "breakEvenReturnPct": 30
+  },
+  "pi_extra_exceeds": {
+   "payment": 6.320680234929653,
+   "payoffMonth": 1,
+   "monthsSooner": 359,
+   "interestSaved": 1270.0282179080084,
+   "prepayWealth": 5240178.154923502,
+   "investWealth": 5240173.56396805,
+   "investMinusPrepay": -4.59095545206219,
+   "breakEvenReturnPct": 7.0070425193698895
+  },
+  "pi_nan": null
+ },
+ "mismatches": 0
+}

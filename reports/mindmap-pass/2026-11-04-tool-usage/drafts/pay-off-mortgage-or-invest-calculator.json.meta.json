@@ -1,0 +1,117 @@
+{
+ "slug": "pay-off-mortgage-or-invest-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1158,
+ "floor": 600,
+ "input_tokens": 29486,
+ "output_tokens": 8701,
+ "thinking_tokens": null,
+ "cached_tokens": 26688,
+ "est_cost_usd": 0.1905,
+ "guards": {
+  "repairs": [
+   "slug None -> 'pay-off-mortgage-or-invest-calculator'"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1126,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 321,
+   "floor": 600,
+   "ratio": 0.54,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    2
+   ],
+   "applied": [
+    {
+     "id": "faqs[6].answer",
+     "quote": "Prepaid principal cannot be taken back out without selling or borrowing against the home, so you cannot reach that cash quickly.",
+     "replacement": "Prepaid principal cannot be taken back out without selling or borrowing against the home.",
+     "type": "inference",
+     "why": "SOURCE states only the selling/borrowing limit, nothing about speed of access"
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we ran an internal calculation that follows the same $300 a month both ways, month by month.",
+     "replacement": "In our internal calculation, we followed the same $300 a month both ways, month by month.",
+     "type": "unsupported",
+     "why": "Brand name is 'The Modern Wallet'; attribution should be 'In our internal calculation'."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "It also puts no value on access to your cash, and prepaid principal cannot be taken back out without selling or borrowing against the home.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not say the calculator values cash access; only the prepaid-principal fact."
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1161
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-04T20:11:05+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-04-tool-usage/audit/pay-off-mortgage-or-invest-calculator.prose-findings.txt",
+    "applied": [
+     {
+      "id": "faqs[4].answer",
+      "quote": "If you itemize, keep in mind that the results do not include the deduction.",
+      "replacement": "If you itemize, the results do not include the deduction, so read the [pay off mortgage vs invest comparison](/compare/pay-off-mortgage-vs-invest/) before you decide.",
+      "type": "Finding 1: dead-end, no next step",
+      "why": "Adds an allowed route as the next step without claiming what that page says."
+     },
+     {
+      "id": "faqs[5].answer",
+      "quote": "It ignores the mortgage-interest deduction and shows principal and interest only.",
+      "replacement": "It ignores the mortgage-interest deduction and shows principal and interest only. To see how weaker returns change the answer, enter a lower return: at 5% on the example loan, paying off early ends $72,807.70 ahead.",
+      "type": "Finding 2: dead-end, limitations with no next step",
+      "why": "Adds an action using the closed-list 5% return figure."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 1158,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 92.2,
+ "response_id": "msg_011CgiTijX2Wp5FjTm9dh47G",
+ "generated_at": "2026-11-04T19:46:09+0000"
+}

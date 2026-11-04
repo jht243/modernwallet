@@ -13,7 +13,8 @@
 //     * Adult day care:             $ 25,000/yr ($95/day)
 //   - LTC costs inflate ~4.5%/year over the last decade (Genworth trend data)
 //   - Medicare covers ONLY skilled nursing up to 100 days (SNF benefit) after a 3-night hospital
-//     stay; days 21-100 have a $209.50/day copay (2026 figure, projected from CMS Part A deductible)
+//     stay; days 21-100 have a $217.00/day coinsurance (2026, CMS 2026 Medicare Parts A & B fact sheet:
+//     https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles)
 //   - Medicare does NOT cover custodial care, assisted living, or long-term home aide (CMS.gov)
 
 export type CareType = "nursing-private" | "nursing-semi-private" | "assisted-living" | "home-health-aide" | "adult-day-care";
@@ -154,10 +155,13 @@ export function projectLTCCost(input: LTCInput): LTCResult {
   } else if (medicaidLikelihood === "medium") {
     reasoning = `Your assets cover ${yearsOfAssetsCoverage} of the projected ${yrsOfCare} care years. You may partially self-fund and rely on Medicaid for the tail. Consider hybrid strategies: LTC insurance rider on a life policy, a Medicaid Asset Protection Trust for a portion of assets, or a partnership LTC policy that adds asset protection above the policy benefit paid.`;
   } else {
-    reasoning = `Your assets ($${input.otherLiquidAssets.toLocaleString()}) plus income and LTC insurance cover the projected ${yrsOfCare}-year cost. Focus on tax-efficient withdrawal ordering and ensure the LTC insurance triggers on the qualifying event (2 of 6 ADLs or cognitive impairment per HIPAA §7702B).`;
+    // Mention LTC insurance only when the visitor ticked it (tool-usage pass 2026-11-04, F6).
+    reasoning = input.hasLTCInsurance
+      ? `Your assets ($${input.otherLiquidAssets.toLocaleString()}) plus income and LTC insurance cover the projected ${yrsOfCare}-year cost. Focus on tax-efficient withdrawal ordering and ensure the LTC insurance triggers on the qualifying event (2 of 6 ADLs or cognitive impairment per HIPAA §7702B).`
+      : `Your assets ($${input.otherLiquidAssets.toLocaleString()}) plus income cover the projected ${yrsOfCare}-year cost. Focus on tax-efficient withdrawal ordering so the money lasts through the care years.`;
   }
 
-  const medicareCoverageNote = "Medicare pays $0 for custodial care, assisted living, and long-term home aide. Medicare's Skilled Nursing Facility benefit covers up to 100 days after a qualifying 3-night hospital stay — days 1-20 fully covered, days 21-100 with a $209.50/day copay (2026). Day 101 onward: $0 Medicare coverage.";
+  const medicareCoverageNote = "Medicare pays $0 for custodial care, assisted living, and long-term home aide. Medicare's Skilled Nursing Facility benefit covers up to 100 days after a qualifying 3-night hospital stay — days 1-20 fully covered, days 21-100 with a $217.00/day copay (2026). Day 101 onward: $0 Medicare coverage.";
 
   return {
     annualCostToday,

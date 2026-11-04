@@ -1,0 +1,100 @@
+{
+ "rows": [
+  {
+   "keyword": "biweekly mortgage calculator",
+   "volume": 1900,
+   "volume_low": 1900,
+   "volume_high": 1900,
+   "kd": "29",
+   "cpc": "0.63",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "biweekly mortgage payment calculator",
+   "volume": 480,
+   "volume_low": 480,
+   "volume_high": 480,
+   "kd": "28",
+   "cpc": "0.65",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "bi weekly mortgage calculator",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": "29",
+   "cpc": "0.63",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "pay off mortgage or invest calculator",
+   "volume": 260,
+   "volume_low": 260,
+   "volume_high": 260,
+   "kd": "17",
+   "cpc": "1.5",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "pay off mortgage vs invest calculator",
+   "volume": 260,
+   "volume_low": 260,
+   "volume_high": 260,
+   "kd": "11",
+   "cpc": "1.2",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "should i pay off my mortgage or invest",
+   "volume": 590,
+   "volume_low": 590,
+   "volume_high": 590,
+   "kd": "37",
+   "cpc": "0.93",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using semrush (quality order semrush > dataforseo)",
+  "semrush returned volume for 6/6 phrases",
+  "kd: using semrush (quality order semrush > dataforseo)",
+  "Autocomplete: 6/6 rows corroborated live"
+ ]
+}

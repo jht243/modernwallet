@@ -1,0 +1,5 @@
+# Sources — /pay-off-mortgage-or-invest-calculator/ (checked 2026-11-04)
+- IRS Publication 936 (2025 returns): https://www.irs.gov/publications/p936 — fetched 2026-11-04: "You can't deduct home mortgage interest unless the following conditions are met", first condition: file Form 1040/1040-SR and itemize deductions on Schedule A. Use: the calculator ignores the mortgage-interest deduction and says so; it only matters if you itemize.
+- Existing site guide /guides/pay-off-mortgage-early-or-invest/ (src/data/guides.ts slug pay-off-mortgage-early-or-invest): worked examples at 3% and 7.5% with $500/month extra; its own "What the Examples Leave Out" section names taxes on gains and the deduction. The calculator lets readers run their own numbers with a tax-on-gains input.
+- Existing comparison /compare/pay-off-mortgage-vs-invest/ (src/data/comparisons.ts) — qualitative tradeoffs (guaranteed return, liquidity, Pub 936).
+- Expected investment return and tax rate on gains are reader inputs; no return is presented as expected.

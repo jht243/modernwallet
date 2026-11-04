@@ -10,6 +10,7 @@ import type { SpokeEntry } from "./types";
 export const PROBATE_SPOKES: SpokeEntry[] = [
   {
     calculator: "probate",
+    updated: "2026-11-04",
     slug: "fee-calculator",
     islandId: "probate",
     title: "Probate Fee Calculator: Attorney + Executor + Court Costs",
@@ -107,6 +108,7 @@ export const PROBATE_SPOKES: SpokeEntry[] = [
 
   {
     calculator: "probate",
+    updated: "2026-11-04",
     slug: "timeline-calculator",
     islandId: "probate",
     title: "Probate Timeline Calculator: Months to Close by State",
@@ -194,6 +196,7 @@ export const PROBATE_SPOKES: SpokeEntry[] = [
 
   {
     calculator: "probate",
+    updated: "2026-11-04",
     slug: "cost-vs-trust-calculator",
     islandId: "probate",
     title: "Probate vs Living Trust Cost Calculator: The Real Math",
@@ -204,7 +207,7 @@ export const PROBATE_SPOKES: SpokeEntry[] = [
     estimatedKD: 26,
     h1: "Probate vs Living Trust: What It Actually Costs to Skip Probate",
     introText:
-      "A probate-vs-living-trust calculator shows the exact tradeoff between what probate will cost your estate at death (attorney fees, executor commission, court costs, and ancillary probate) and what a revocable living trust would cost to set up during life: $1,500-$5,000 with an attorney or $499-$599 online.\n\nThe calculator above works out both costs for your specific state and estate value. For a $750,000 California moderate estate, probate runs $36,000-$42,000 and takes 15-30 months. A California revocable living trust costs $2,025-$6,750 today. By setting up the trust now, the net savings are $30,000-$40,000, plus 12+ months of estate settlement time.",
+      "A probate-vs-living-trust calculator shows the exact tradeoff between what probate will cost your estate at death (attorney fees, executor commission, court costs, and ancillary probate) and what a revocable living trust would cost to set up during life: $1,500-$5,000 with an attorney or $499-$599 online.\n\nThe calculator below works out both costs for your specific state and estate value. For a $750,000 California moderate estate, probate runs $36,000-$42,000 and takes 15-30 months. A California revocable living trust costs $2,025-$6,750 today. By setting up the trust now, the net savings are $30,000-$40,000, plus 12+ months of estate settlement time.",
     howItWorks:
       "The math almost always favors the trust once you're above the state's small-estate threshold. Attorney-drafted revocable living trust runs $1,500-$5,000 in most states, $5,000-$10,000+ in California and other high-cost/HNW metros; online tools like Trust & Will ($499 individual / $599 couple) work for straightforward cases. Add $500-$2,000 for trust funding (retitling deeds and accounts). Total trust setup: $2,000-$8,000 most cases.\n\nProbate cost varies by state statute. California under Cal. Prob. Code §10810 charges attorney AND executor each the same tiered percentage (4%/3%/2%/1%/0.5%) — a $750,000 estate faces $36,000 in statutory fees alone. Florida under Fla. Stat. §733.6171 charges a stepped attorney fee ($1,500 base + tiered percentages) plus a separate personal-representative commission under §733.617. New York charges statutory executor commission under SCPA §2307 (5%/4%/3%/2.5%/2%) plus reasonable attorney fees at 2-4% of gross estate. The other ~41 states use a reasonable-fee model at roughly 2-4% for both attorney and executor.\n\nOne pattern the calculator surfaces cleanly: for real-estate-heavy estates, the trust math wins by wider margins than most people expect. Probate fees are based on GROSS estate (Cal. Prob. Code §10810 uses inventory before deducting the mortgage), so a $500,000 house with a $400,000 mortgage still counts as $500,000 for the fee schedule. A trust with the house properly titled avoids that entirely.\n\nWhat the trust doesn't save: estate tax. A revocable living trust doesn't reduce estate tax because you retained control. The 2026 federal exemption is $15M per individual (permanent under OBBBA P.L. 119-21) — see the [estate tax calculator](/estate-planning/estate-tax-calculator/) for federal + state exposure. For that you need irrevocable structures.",
     commonMistakes: [

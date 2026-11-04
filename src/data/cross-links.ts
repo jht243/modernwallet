@@ -124,8 +124,22 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/529-savings-calculator/", label: "Saving for college? Project a 529" },
     { href: "/compare/trump-account-vs-529/", label: "Trump Account vs 529: the rules" },
   ],
+  // Tool-usage pass (2026-11-04).
+  "biweekly-mortgage-calculator": [
+    { href: "/mortgage/extra-payment-calculator/", label: "Test a different extra amount each month" },
+    { href: "/pay-off-mortgage-or-invest-calculator/", label: "Pay off the mortgage or invest the extra?" },
+    { href: "/mortgage-recast-calculator/", label: "Have a lump sum? See what a recast does" },
+    { href: "/mortgage/", label: "Mortgage payment calculator" },
+  ],
+  "pay-off-mortgage-or-invest-calculator": [
+    { href: "/guides/pay-off-mortgage-early-or-invest/", label: "Pay off mortgage early or invest: worked examples" },
+    { href: "/compare/pay-off-mortgage-vs-invest/", label: "Pay off mortgage vs invest: the tradeoffs" },
+    { href: "/mortgage/payoff-calculator/", label: "See your new mortgage payoff date" },
+    { href: "/biweekly-mortgage-calculator/", label: "Biweekly payments vs paying extra monthly" },
+  ],
   "mortgage-recast-calculator": [
     { href: "/mortgage/payoff-calculator/", label: "Paying extra each month instead? See the payoff date" },
+    { href: "/biweekly-mortgage-calculator/", label: "Paying biweekly instead? See the payoff date" },
     { href: "/mortgage/early-payoff-calculator/", label: "Early payoff calculator" },
     { href: "/guides/pay-off-mortgage-early-or-invest/", label: "Pay off the mortgage or invest the lump sum?" },
     { href: "/mortgage/", label: "Mortgage payment calculator" },

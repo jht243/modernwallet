@@ -1,0 +1,23 @@
+# Phase 4 findings — /biweekly-mortgage-calculator/ (reviewer: phase4-pages-auditor, 2026-11-04)
+# Draft: reports/mindmap-pass/2026-11-04-tool-usage/drafts/biweekly-mortgage-calculator.json
+# Findings 1-2 are prose fixes for `content_gen.py fix`. Findings 3-4 are not in the draft: the orchestrator applies them.
+
+FINDING 1 [introText] reader-question / omitted condition
+QUOTE: "On a $300,000 loan at 6.5%, biweekly payments end the mortgage about 70 months sooner."
+DEFECT: The opening answer leaves out the loan term. The approved answer and the fact list both say "$300,000, 6.5%, 30-year (360 months)". The 70-month figure only holds for 360 months left, so a reader with a shorter loan cannot tell the figure does not apply to them.
+REPLACEMENT: "On a $300,000, 30-year loan at 6.5%, biweekly payments end the mortgage about 70 months sooner."
+
+FINDING 2 [howItWorks, paragraph 5] meaning bar: unclear what would change the answer
+QUOTE: "The answer changes if your servicer applies each half-payment the day it arrives and charges no fee."
+DEFECT: The sentence says the answer changes but not what the new answer is. The reader has to work out whether to use the servicer's biweekly option, so the "what would change our answer" element is unclear.
+REPLACEMENT: "If your servicer applies each half-payment the day it arrives and charges no fee, its biweekly option saves $865.49 more than the 1/12-extra path on the example loan."
+
+FINDING 3 [run record, not draft prose] GATE Tee-up: teeup-missing-no-exemption
+QUOTE: (paragraph one, sentence 2) "Enter your balance, rate, months left and any plan fees in the biweekly mortgage calculator below to see the result for your own loan."
+DEFECT: The page is in operator register. Paragraph one has no tee-up, and the run records have no `teeup-exempt:` note (prompt, manifest, readiness, chart and run report checked).
+FIX (orchestrator): add to the run notes: "teeup-exempt: biweekly-mortgage-calculator — calculator page; paragraph one answers and then says what the tool returns, and the operator voice is carried by the 'At ModernWallet, we ran that loan three ways in an internal calculation' attribution in paragraph two (same layout as /mortgage-recast-calculator/)." Do not add a forced tee-up sentence.
+
+FINDING 4 [tool copy, src/components/BiweeklyMortgageCalculator.tsx line 43] punctuation tell: semicolon joining clauses
+QUOTE: "Leave the fees at $0 if you set up biweekly payments yourself; enter them if a servicer or company charges for a biweekly plan."
+DEFECT: The semicolon joins two clauses. _content-standard.md PREFLIGHT and the _anti-ai-language.md punctuation tells ban this, and tool copy is in scope.
+REPLACEMENT: "Leave the fees at $0 if you set up biweekly payments yourself. Enter them if a servicer or company charges for a biweekly plan."

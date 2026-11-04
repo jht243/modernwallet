@@ -1,0 +1,16 @@
+# Phase 4 findings — /pay-off-mortgage-or-invest-calculator/ (reviewer: phase4-pages-auditor, 2026-11-04)
+# Draft: reports/mindmap-pass/2026-11-04-tool-usage/drafts/pay-off-mortgage-or-invest-calculator.json
+# Findings 1-2 are prose fixes for `content_gen.py fix`. Finding 3 is a run-record fix the orchestrator applies.
+
+FINDING 1 [faqs[4].answer "Should I count the mortgage interest deduction?"] dead-end
+QUOTE: "If you itemize, keep in mind that the results do not include the deduction."
+DEFECT: This raises a limitation for readers who itemize but gives no next step or route. The reader knows the result is off for them but not which way or where to find out.
+REPLACEMENT: "If you itemize, the [pay off mortgage vs invest comparison](/compare/pay-off-mortgage-vs-invest/) explains how the deduction changes what prepaying saves."
+(The internal route is on the prompt's allowed list. That page's "The Tax Angle and Itemized Deductions" section covers the effect.)
+
+FINDING 2 [faqs[5].answer "What does the calculator leave out?"] dead-end
+QUOTE: "It ignores the mortgage-interest deduction and shows principal and interest only."
+DEFECT: The answer lists what the calculator leaves out (market losses, the deduction, escrow) and stops there. It gives no way to act on them, so it fails the meaning-bar rule that every limitation needs a next step.
+REPLACEMENT: "It ignores the mortgage-interest deduction and shows principal and interest only. To see how weaker returns change the answer, enter a lower return: at 5% on the example loan, paying off early ends $72,807.70 ahead."
+(Every figure is in the closed fact list.)
+

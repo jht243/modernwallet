@@ -1,0 +1,1021 @@
+{
+ "reviewer": "phase4-pages-auditor",
+ "snapshotSha256": "9481589b31925ad19ef665aec781e89867c647fc5396f343b98b98d972fb3346",
+ "routes": [
+  {
+   "path": "/biweekly-mortgage-calculator/",
+   "fingerprint": "e858ed305280055f256dc8445027cbf9fb3917cafecd59d0cc382e2d5204effc",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Round 2 render: sentence 1 now 'On a $300,000, 30-year loan at 6.5%, biweekly payments end the mortgage about 70 months sooner.'; the condition sentence now states its result ('...its biweekly option saves $865.49 more than the 1/12-extra path on the example loan.'); tool hint now 'Leave the fees at $0 if you set up biweekly payments yourself. Enter them if a servicer or company charges for a biweekly plan.'; teeup-exempt recorded in reports/tool-usage-pass/2026-11-04/run-notes.md with medium/register/page-type. Intro, tool (5 years 10 months, $88,122, $87,256), takeaway and FAQs agree; 0 semicolons, 0 em-dashes in page fields, no 'honest'. Rhythm: 69 sentences S/M/L 14/20/35, no violations. Body 1,066 words vs mirror 802."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Every figure is in the closed fact list (script check: 105 numeric tokens, 0 outside list) and matches output.json; Regulation Z 12 CFR 1026.36(c)(1) verified live (HTTP 200, text: servicer must credit a periodic payment as of the date of receipt; partial payments may be held). Formula matches src/lib/biweekly-mortgage.ts (TS cross-check: 0 mismatches)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Visible attribution beside the first finding: 'At ModernWallet, we ran that loan three ways in an internal calculation: monthly, biweekly, and monthly with 1/12 of a payment added... You can check every figure by changing the inputs in the calculator.' Takeaway: 'Based on our internal calculation...'. Calculated basis, matches evidence.json provenance; no testing claims; Article/WebApplication/FAQPage schema only."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/biweekly-mortgage-calculator/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "390px and 1366px: scrollWidth equals clientWidth (no overflow), five labelled inputs 40px tall, results readable, no console/page errors; fee inputs 400 / 2.5 show 'Plan fees over the loan $1,970' and 'Interest saved, after fees $86,152'; 3% gives $20,637; 0% gives $0 interest saved; 0 balance shows 'Enter a balance and months left'."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/compare/pay-off-mortgage-vs-invest/",
+   "fingerprint": "dc61385c79441bf5a32578fdbd130c96e34116fb4f7fc172e979d32ae93a66c2",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Added sentence 'use the pay off mortgage or invest calculator, which shows the return investing must beat' sits in 'The Return You Earn Each Way'. The table rows ('Your mortgage rate must beat the net after-tax return'; 'net investment portfolio return must finish higher than your mortgage interest rate') agree with the calculator's after-tax break-even; the remaining APR vs effective-annual nuance (6.5% vs 6.70%) is explained on the calculator page and does not reverse the verdict."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "IRS Publication 936 claims unchanged and verified live; the new sentence describes the calculator's actual output (break-even return)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/compare/pay-off-mortgage-vs-invest/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Browser check at 390px (playwright, preview build): scrollWidth 390 = clientWidth 390, no horizontal overflow, no page errors; tool panel and text readable in screenshot."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/florida-amendment-3-calculator/",
+   "fingerprint": "7b69fd80a7f401ecf1f570e3743e155613c58b29c80a824e9461d963c096bf92",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Tool sub-line now reads 'approved by voters Nov 3, 2026', matching the prose and FAQ 'Did Florida Amendment 3 pass? Yes'; forbidden 'if Amendment 3 passes' absent. $400,000 example ($1,035.18 / $2,085.18) and $100,000 example ($510.18) agree with the tool; $60,000 at 10.5 mills shows $263 saved (banded exemption $35,000). Advisory: prose still says 'The tool does not model ... the five-year phase-in for newcomers' while the tool now has a 'Florida resident with homestead on Dec 31, 2026?' toggle; the toggle keeps today's exemption rather than modelling the ramp, so the sentence remains literally true but could mention the toggle."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Florida TaxWatch and WUSF/News Service of Florida links unchanged; banded exemption note cites the same TaxWatch page."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/florida-amendment-3-calculator/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Browser check at 390px (playwright, preview build): scrollWidth 390 = clientWidth 390, no horizontal overflow, no page errors; tool panel and text readable in screenshot."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/guides/pay-off-mortgage-early-or-invest/",
+   "fingerprint": "13451d50572a4a521a5d64080efe1d29b7722143de1b826917a56460720c41a8",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Added sentence in 'What the Examples Leave Out' links the calculator for 'your own balance, rate, extra amount, return and tax rate'. Guide examples (3% loan: investing ahead $56,934-$141,557; 7.5% loan: prepaying ahead $35,316-$143,163) agree in direction with the calculator's break-evens (3.40% at 3%; above 7.5% at 7.5%); the guide labels its totals pre-tax and its decision rule gives the guarantee extra weight when rate and return are close, which is consistent with the calculator's break-even sitting above the mortgage rate."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Inherited sources (CFPB extra-payment page, Freddie Mac PMMS, NAHB) unchanged; new sentence carries no new factual claim beyond what the calculator does."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/guides/pay-off-mortgage-early-or-invest/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Browser check at 390px (playwright, preview build): scrollWidth 390 = clientWidth 390, no horizontal overflow, no page errors; tool panel and text readable in screenshot."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/inflation-calculator/",
+   "fingerprint": "703daa8c68d38f3f00146c4949fbf4c7b50e2c0cc0f896797febbb42c790fc04",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Tool hint now 'Rates below 0% (deflation) are not supported. A minus sign is ignored.' (no semicolon). Rate chips and FAQ 'The calculator does not pick a rate for you' remain consistent (chips are optional presets). Advisory unchanged: intro 'in the calculator above' though the tool renders below."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "2% target linked to federalreserve.gov FAQ; BLS CPI link; $10,000 / 3% / 10 years outputs ($13,439, $7,441, 25.6%, 23.4 years, -2.91%, 1.94%, $16,289, $12,121) agree between prose and the default tool render."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/inflation-calculator/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Browser check at 390px (playwright, preview build): scrollWidth 390 = clientWidth 390, no horizontal overflow, no page errors; tool panel and text readable in screenshot."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/mortgage-recast-calculator/",
+   "fingerprint": "05ffd9e69df87f8a644c5d1abc6c5b16bd768d66f170df296300b765d17a5299",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Only change is the cross-link 'Paying biweekly instead? See the payoff date' -> /biweekly-mortgage-calculator/ in 'Plan the bigger picture'; recast intro, tool and FAQs ($238,000, 6.875%, $30,000 lump sum, $206.64 drop) are unchanged and do not discuss biweekly payments, so no contradiction with the new page."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Unchanged recast figures still follow the site's mortgage-recast.ts formula; the added link is internal and resolves (200)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/mortgage-recast-calculator/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Browser check at 390px (playwright, preview build): scrollWidth 390 = clientWidth 390, no horizontal overflow, no page errors; tool panel and text readable in screenshot."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/mortgage/extra-payment-calculator/",
+   "fingerprint": "496d1eea30e08cf17b6daf8036e3183916de8494237c8362daab640277f9a936",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "FAQ now 'One extra payment a year still cuts years off a 30-year loan: about 70 months on a $300,000 loan at 6.5%, and fewer at lower rates.', which agrees with the linked biweekly calculator (70 months at 6.5%, evidence output.json; 42 at 3%). 'four to five' no longer present. New link sentence to /biweekly-mortgage-calculator/ intact."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Dead CFPB Ask citation replaced by 'CFPB, Mortgage key terms: bi-weekly payment' https://www.consumerfinance.gov/consumer-tools/mortgages/answers/key-terms/ (HTTP 200, fetched 2026-11-04). Its bi-weekly entry says 'You may be able to accomplish the same goal without the fee by making an extra monthly mortgage payment each year', supporting the common-mistake line 'The CFPB notes you can get the same result for free by sending one extra payment a year yourself'."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/mortgage/extra-payment-calculator/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Browser check at 390px (playwright, preview build): scrollWidth 390 = clientWidth 390, no horizontal overflow, no page errors; tool panel and text readable in screenshot."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/pay-off-mortgage-or-invest-calculator/",
+   "fingerprint": "ff41ea4e1a44170e6c2cdeba320291eaa55832e39f12f4eeffe2050571b63fb9",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Round 2 render: FAQ 5 now routes itemizers to the pay off mortgage vs invest comparison (/compare/pay-off-mortgage-vs-invest/, resolves 200); FAQ 6 adds 'enter a lower return: at 5% on the example loan, paying off early ends $72,807.70 ahead' (fact list, output.json case 2); teeup-exempt recorded in run-notes.md. Intro rule, tool break-even 7.19%, takeaway and FAQ 1 agree. Rhythm: 70 sentences S/M/L 10/26/34, no violations. Body 1,048 words vs mirror 802."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "63 numeric tokens, 0 outside the closed fact list; IRS Publication 936 itemizing condition verified live (HTTP 200); replayed calc.py output byte-identical to output.json; TS engine matches every case (0 mismatches)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "'In our internal calculation, we followed the same $300 a month both ways, month by month.' beside the first finding, with 'You can check the result by changing any input.' and 'Based on our internal calculation' in the takeaway. Calculated basis; no testing claims; return/tax labelled as placeholders."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/pay-off-mortgage-or-invest-calculator/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "390px and 1366px: no horizontal overflow, six labelled inputs, results readable, no console/page errors. Interaction checked: 5% return -> paying off early +$72,808; 3% mortgage -> investing +$116,227, break-even 3.40%; 0% tax -> 6.70%; $0 extra -> 'Enter an extra amount to compare'. Advisory: 100% tax shows 'Break-even return 30.00%' (bisection cap, true value has no break-even)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/probate/",
+   "fingerprint": "03fddbef4019a9d231db2fa0b81fea3d2c7ef93eac0692d02b1270f820d54fd9",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Hub tool output at the default ($750,000 California moderate: $36,400-$39,300, 15-30 months, trust $2,025-$6,750, savings $29,650-$37,275) sits inside the intro's 'about $36,000 to $42,000' and the trust range matches exactly. ToolPicks books render below the 'Consult a licensed attorney' line. Advisories: intro says 'the calculator above applies it' although the tool renders below the intro (the defect F7 fixed on the cost-vs-trust spoke); the prose range upper bound $42,000 is looser than the tool's $39,300."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Statute citations unchanged; Texas \u00a7352.002 executor note (new) links statutes.capitol.texas.gov and only appears for Texas."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/probate/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Browser check at 390px (playwright, preview build): scrollWidth 390 = clientWidth 390, no horizontal overflow, no page errors; tool panel and text readable in screenshot."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/",
+   "fingerprint": "28f8467f62dec7700af96e7aab7279af9a062f04d234f670030713ab299df6c9",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Hub ToolPicks 'Further reading on self-employment taxes' renders after the results with the Amazon Associate disclosure. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/1099-tax-calculator/",
+   "fingerprint": "912167b5629191f30f2a1c9c43fa803bb940479d2040443d7f75fce9bd6dfb65",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/1099-tax-calculator/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/amazon-flex-taxes/",
+   "fingerprint": "6ce56e22667f4352aea8b960041332c7db90ffc26eb1c6b94cac53da5476043d",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/amazon-flex-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/doordash-taxes/",
+   "fingerprint": "9dfa37e4fa81c32bbccab31f3edda1b5e050cb920bf73b507ca4ce4c58f1356b",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/doordash-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Browser check at 390px (playwright, preview build): scrollWidth 390 = clientWidth 390, no horizontal overflow, no page errors; tool panel and text readable in screenshot."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/etsy-taxes/",
+   "fingerprint": "dc95764a159a67ba9f895344bb8837c85b3dd61342ea22b80d105684c8f199ec",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/etsy-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/fiverr-taxes/",
+   "fingerprint": "756630ad9186370e83d0de5e47a1a9a396088ddeb63818416555980afcd9ea31",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/fiverr-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/how-much-to-set-aside-for-taxes/",
+   "fingerprint": "161fd1e8ba51e0c71e43aa480974c45e42bffe73c80a786b10090ba45e0192be",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Prose now 'It is 15.3% of 92.35% of profit, an effective 14.13%, and it applies once net earnings reach $400 (Schedule SE), up to the $184,500 Social Security wage base', matching the tool's under-$400 rule (SE_MIN_NET_EARNINGS = 400). 'very first dollar of profit' no longer present. Shared-component copy as reviewed in round 1; aria-label for Head of household now contains the visible text."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Tool's $400 floor and QBI threshold (taxable income before QBI vs $201,750 single/HOH, Rev. Proc. 2025-32) are sourced in src/lib/self-employment-tax.ts; due-date note links the IRS estimated tax FAQ."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/how-much-to-set-aside-for-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/instacart-taxes/",
+   "fingerprint": "44ba65613ded97dc2d1122519c2b77acf47f4363be635465700f721e1fbb116d",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/instacart-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/lyft-driver-taxes/",
+   "fingerprint": "66d3f1fde40c9abc870aee0c8734bdc5554c034d5493b778f1c41ce3cf2fa747",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/lyft-driver-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/quarterly-estimated-tax-calculator/",
+   "fingerprint": "969faf61179471377b35fc4753b5931e1b78dcb1e0954d80bcf5aaf32f0197e5",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. On this page the note omits the self-link to the quarterly calculator (checked in render). Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/quarterly-estimated-tax-calculator/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/rover-taxes/",
+   "fingerprint": "caac7179188af16db0f33a4ae9b25186e7a2f72e8e8ee38ce33e50e40b182cc3",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/rover-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/shipt-taxes/",
+   "fingerprint": "1b7933464a60be43334bee1e312144cfb01193a9523aa75f4a9922d0aba50612",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/shipt-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/twitch-taxes/",
+   "fingerprint": "5afbbc7eb2a67c85fb1f7b7eab95b5629b1ec5381050011575f7da7324f885df",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/twitch-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/uber-driver-taxes/",
+   "fingerprint": "e80a8371a1caeebbe65e45d8c28968c169a85a770fd5bc36ffc7f0f94bd03d3a",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/uber-driver-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/uber-eats-taxes/",
+   "fingerprint": "ca6d44a66298f2ec316fb935aba968224583c3aa40354db794ee49088c478125",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/uber-eats-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/upwork-taxes/",
+   "fingerprint": "dd957a6e4e52a0cbcad2f87cc7a2dddca1991c23e1980f8e18f419d19c186942",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Shared SelfEmploymentTaxCalculator changes render here (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; 'Head of household' title/aria). The spoke prose states the $400 net-earnings trigger consistently ('Your own obligation starts at $400 of net self-employment earnings'), names no QBI threshold figure, and gives due months that agree with the new note; no sentence says SE tax applies from the first dollar of profit. Round 2 fingerprint change is the Head of household aria-label (now contains the visible text); prose unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Due dates, $1,000 rule and 100%/110% safe harbor link the IRS estimated tax FAQ; $400 floor links the Schedule SE instructions; spoke prose figures unchanged from the previously published version."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/upwork-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared SelfEmploymentTaxCalculator island and spoke template as the 390px-checked /self-employment-tax/doordash-taxes/ sample (no overflow, no page errors); route captured via hydrated DOM with zero capture errors (domcap refresh 2026-11-04T20:05Z)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/social-security-taxable-benefits-calculator/",
+   "fingerprint": "f5ba699c304c6ad137a28d4efbfa6d961a5ce7a2702761782e7c735210d4b7fa",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "New tool copy (taxable amounts only, Form 1099-R box 2a; qualified Roth withdrawals excluded; W-4V 7/10/12/22%; MFS lived-with-spouse $0 base) agrees with the prose ('$0 for married filing separately if you lived with your spouse'). Default $42,000 benefits + $30,000 other income gives $11,950 taxable in both prose and tool. Advisory: the pre-existing disclaimer sentence '...taxed at your normal rates; this tool does not compute that tax.' carries a semicolon (not changed this run)."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "IRS Publication 915 Worksheet 1 cited and linked; W-4V percentages match Form W-4V options."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/social-security-taxable-benefits-calculator/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Browser check at 390px (playwright, preview build): scrollWidth 390 = clientWidth 390, no horizontal overflow, no page errors; tool panel and text readable in screenshot."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/stock-capital-gains-tax-calculator/",
+   "fingerprint": "01c0f27e9f726cc6aa82c255e783afc39e9cace608bd6e4a2d9b6d905baab675",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Tool sub-line now 'Before this sale. This sale uses $0 at 0%, leaving $0.' (no semicolon). Standard deduction ($16,100/$32,200/$24,150), loss limit and $3,000 default tax agree with prose and FAQs."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Rev. Proc. 2025-32 figures, IRS Topic 409 loss limit and Pub 550 holding-period rule linked; holding-period example (bought March 10, 2025, long-term on or after March 11, 2026) matches Pub 550 day-after counting."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible byline 'Updated November 4, 2026'; JSON-LD Article dateModified 2026-11-04, datePublished 2026-11-04 (dateModified not before datePublished). Advisory: datePublished equals the bumped updated date via the pre-existing template fallback (published ?? updated), so the original publication date is not preserved."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/stock-capital-gains-tax-calculator/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Browser check at 390px (playwright, preview build): scrollWidth 390 = clientWidth 390, no horizontal overflow, no page errors; tool panel and text readable in screenshot."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/dataannotation-taxes/",
+   "fingerprint": "54582762576418a12d467a2028a94f5c8faadf7e9b3c9f143fe08e61034c10f7",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Renders the changed shared SelfEmploymentTaxCalculator (2026 due dates April 15, June 15, September 15, 2026 and January 15, 2027 with the IRS estimated tax FAQ link; under-$400 note; Form 7206 note; Head of household aria-label) plus the self-employment ToolPicks with the Amazon Associate disclosure. Prose states 'you must file Schedule SE whenever your net self-employment earnings reach $400 or more', consistent with the tool's $400 floor; no sentence says SE tax applies from the first dollar of profit; no QBI threshold figure in prose; no semicolons in tool copy."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Shared-tool facts sourced as on the other spokes (IRS estimated tax FAQ, Schedule SE instructions, Form 7206 page, Rev. Proc. 2025-32 in src/lib/self-employment-tax.ts); spoke prose unchanged from the previously published version apart from the date bump."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 4, 2026'; JSON-LD Article datePublished 2026-11-04, dateModified 2026-11-04 (not before datePublished). Date bump justified: the rendered shared tool changed. Advisory: datePublished follows the template fallback to updated."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/doordash-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Browser at 390px (round 2 and round 3 preview): scrollWidth 390 = clientWidth 390, 0 page errors; round-3 hydrated DOM captured with 0 page errors; snapshot capture failures []."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  },
+  {
+   "path": "/self-employment-tax/youtube-taxes/",
+   "fingerprint": "219c6ca7da128176636ff058b7e84437685ba9436000f92eff43ae0fb8494152",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Renders the changed shared SelfEmploymentTaxCalculator (same 2026 due-date note, under-$400 note, Form 7206 note, aria-label) plus ToolPicks with disclosure. Prose: 'YouTube earnings count as taxable income starting from the first dollar' (income tax) followed by 'You then owe self-employment tax once net earnings reach $400 for the year', consistent with the tool; prose due dates (April 15, June 15, September 15, January 15) agree with the note; no semicolons in tool copy."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Shared-tool facts sourced as on the other spokes (IRS estimated tax FAQ, Schedule SE instructions, Form 7206 page, Rev. Proc. 2025-32 in src/lib/self-employment-tax.ts); spoke prose unchanged from the previously published version apart from the date bump."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No TESTED label, 'we tested', howWeTested or review/rating schema in the render; schema is Article/WebApplication/FAQPage/Breadcrumb/Person only. Financial tool, excluded from testing under _experience.md section G."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 4, 2026'; JSON-LD Article datePublished 2026-11-04, dateModified 2026-11-04 (not before datePublished). Date bump justified: the rendered shared tool changed. Advisory: datePublished follows the template fallback to updated."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 in snapshot, no robots meta (indexable), self-canonical https://www.themodernwallet.com/self-employment-tax/doordash-taxes/; internal links resolve on the preview build; ToolPicks Amazon links (where present) carry rel='sponsored nofollow noopener noreferrer' with the 'As an Amazon Associate' disclosure."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Browser at 390px (round 2 and round 3 preview): scrollWidth 390 = clientWidth 390, 0 page errors; round-3 hydrated DOM captured with 0 page errors; snapshot capture failures []."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial informational page; YMYL 'not financial advice' footer at the bottom; no medical/psychedelic content; testing exclusion respected; footer affiliate line ('This never affects our rankings or editorial coverage') is pre-existing site-wide template copy, recorded as an advisory neutrality note, not authored by this run."
+    }
+   }
+  }
+ ]
+}

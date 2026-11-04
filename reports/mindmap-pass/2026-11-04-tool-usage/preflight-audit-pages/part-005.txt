@@ -1,0 +1,49 @@
+.claude/commands/_content-standard.md — characters 0 onward
+
+
+<!-- fleet-author-defaults-v1 -->
+## Existing site author by default; missing person never holds publication
+
+Owner instruction, 2026-10-29. Every content routine, including unattended local, global and cloud Mindmap runs, automatically reuses the active site's established author. Discover the existing author object/profile in the shared template, site configuration, author registry, About page and comparable pages. Prefer the existing category/template mapping, then the site's configured default. Reuse that person's exact established identity, profile URL and supported credentials; preserve the site's existing attribution format. Record the source once in the run notes and pass the selected identity through the existing page/template fields. Never copy another fleet site's author or create a different person for each page. Do not ask the owner to select or assign an author.
+
+If no person is configured, continue with the site's existing publisher/editorial identity and an honest Organization author where the template/schema supports it; otherwise omit the optional personal byline. Adding a person later is optional follow-up in existing internal notes. A missing named author, Person schema, credentialed reviewer, `reviewer`/`reviewedBy` or `lastReviewed` is not a preparation, writing, audit or publication blocker. Do not defer an otherwise publishable page for that reason, require a new profile before continuing, create a separate human gate, or show "author pending"/"review pending" to visitors. Never invent a person, qualifications, a professional-review claim or a review date.
+
+YMYL, consumer-rights, legal, financial and medical categorization alone does not require assigning a named professional. Use accurate primary sources and the existing informational scope, disclosures and safety exclusions. Narrow unsupported or out-of-scope recommendations to a supported informational answer within the existing authorization. Genuine completed professional review may retain its actual reviewer and date; an author's presence alone does not establish professional review. This owner rule supersedes older generic named-credentialed-reviewer and Person-only authorship requirements in shared or local instructions.
+
+The independent Phase 4 reviewer remains an automatic reviewer agent, distinct from the writing agent. Internal manifest/evidence `author` and `reviewer` values identify those workflow actors; they do not require a visitor-facing person's name, professional credentials or a client appointment. Preserve independent factual/usefulness checks, testing-evidence decisions, local medical/psychedelic testing exclusions, the complete rendered-page audit, publication authorization and exact live verification. Authorship fallback adds no new gate and never substitutes for those automatic checks.
+<!-- /fleet-author-defaults-v1 -->
+
+
+<!-- workflow-source-freshness-v1 -->
+**WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
+Startup returns a fresh `runId` after verification; pass it via `--run-id` to this run's later startup checks and every `workflow-preflight.py prepare`. Never reuse an old run ID for a new routine, including in the same chat. A runner may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently.
+<!-- /workflow-source-freshness-v1 -->
+
+# Content standard — the canonical page-writing guide
+
+<!-- workflow-checkpoints-v1 -->
+**Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
+<!-- /workflow-checkpoints-v1 -->
+
+
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
+> **STOP — if you opened this file directly, you have skipped the load receipt.** Run `bash .claude/tools/load-standards.sh "<routine>" "<phase>"` now; it prints this file (and its two companions) AND records the load in `reports/standards-ledger.jsonl`. A run with no ledger entry is treated as a run that never loaded the standard.
+
+<!-- SOURCE OF TRUTH. Every routine that writes or materially expands reader-facing prose loads THIS file
+     and applies it IN FULL. Do not restate any of it anywhere else — point at this file instead.
+     In repos other than layer3 this file is GENERATED by layer3/scripts/sync-standards.sh; edit the layer3 copy.
+
+     Companion files, both loaded alongside this one:
+       .claude/commands/_anti-ai-language.md        — the tell list. Outranks this file on any conflict.
+       .claude/commands/_experience.md              — per-repo. Who "we" are on THIS site. Required.
+       .claude/commands/_content-standard.local.md  — per-repo, OPTIONAL tone override. See PRECEDENCE below. -->
+
+**PHASE 4 IS NOT OPTIONAL, AND IT BINDS TO THE EXACT TEXT YOU SHIPPED.** Writing a page (Phase 3 / any writer phase) is never finished until the Phase 4 adversarial audit has run on THAT version and passed. This holds everywhere, no exceptions: an autonomous routine, a manual run, a one-off in a chat, a test, a demo, a "quick" single page. If you generate or materially rewrite reader-facing text, you MUST run the audit on the result before you call it done, publish it, serve it, screenshot it, hand it back, or ask anyone to read it.
+
+A prior audit pass covers only the exact bytes it reviewed. The moment you edit, expand, or rewrite a page — even to fix an audit finding — the previous pass is void and Phase 4 must run again on the new text. "I audited an earlier draft" is not a pass. Re-running the writer without re-running the auditor is the specific failure this rule exists to stop. When in doubt, run Phase 4.
+
+**THE WHOLE FIL

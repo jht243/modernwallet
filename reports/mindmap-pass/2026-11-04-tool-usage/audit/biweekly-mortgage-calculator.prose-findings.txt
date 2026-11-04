@@ -1,0 +1,14 @@
+# Phase 4 findings — /biweekly-mortgage-calculator/ (reviewer: phase4-pages-auditor, 2026-11-04)
+# Draft: reports/mindmap-pass/2026-11-04-tool-usage/drafts/biweekly-mortgage-calculator.json
+# Findings 1-2 are prose fixes for `content_gen.py fix`. Findings 3-4 are not in the draft: the orchestrator applies them.
+
+FINDING 1 [introText] reader-question / omitted condition
+QUOTE: "On a $300,000 loan at 6.5%, biweekly payments end the mortgage about 70 months sooner."
+DEFECT: The opening answer leaves out the loan term. The approved answer and the fact list both say "$300,000, 6.5%, 30-year (360 months)". The 70-month figure only holds for 360 months left, so a reader with a shorter loan cannot tell the figure does not apply to them.
+REPLACEMENT: "On a $300,000, 30-year loan at 6.5%, biweekly payments end the mortgage about 70 months sooner."
+
+FINDING 2 [howItWorks, paragraph 5] meaning bar: unclear what would change the answer
+QUOTE: "The answer changes if your servicer applies each half-payment the day it arrives and charges no fee."
+DEFECT: The sentence says the answer changes but not what the new answer is. The reader has to work out whether to use the servicer's biweekly option, so the "what would change our answer" element is unclear.
+REPLACEMENT: "If your servicer applies each half-payment the day it arrives and charges no fee, its biweekly option saves $865.49 more than the 1/12-extra path on the example loan."
+

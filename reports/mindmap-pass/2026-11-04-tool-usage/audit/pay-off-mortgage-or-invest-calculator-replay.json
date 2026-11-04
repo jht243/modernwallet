@@ -1,0 +1,140 @@
+[
+ {
+  "payment": 1896.2,
+  "payoffMonth": 250,
+  "monthsSooner": 110,
+  "interestSaved": 135115.17,
+  "prepayWealth": 322598.79,
+  "investWealth": 314410.41,
+  "investMinusPrepay": -8188.38,
+  "inputs": {
+   "balance": 300000,
+   "aprPct": 6.5,
+   "monthsLeft": 360,
+   "extraPerMonth": 300,
+   "returnPct": 7,
+   "taxOnGainsPct": 15
+  },
+  "breakEvenReturnPct": 7.19
+ },
+ {
+  "payment": 1896.2,
+  "payoffMonth": 250,
+  "monthsSooner": 110,
+  "interestSaved": 135115.17,
+  "prepayWealth": 296928.55,
+  "investWealth": 224120.86,
+  "investMinusPrepay": -72807.7,
+  "inputs": {
+   "balance": 300000,
+   "aprPct": 6.5,
+   "monthsLeft": 360,
+   "extraPerMonth": 300,
+   "returnPct": 5,
+   "taxOnGainsPct": 15
+  },
+  "breakEvenReturnPct": 7.19
+ },
+ {
+  "payment": 1264.81,
+  "payoffMonth": 262,
+  "monthsSooner": 98,
+  "interestSaved": 46365.85,
+  "prepayWealth": 198183.85,
+  "investWealth": 314410.41,
+  "investMinusPrepay": 116226.56,
+  "inputs": {
+   "balance": 300000,
+   "aprPct": 3.0,
+   "monthsLeft": 360,
+   "extraPerMonth": 300,
+   "returnPct": 7,
+   "taxOnGainsPct": 15
+  },
+  "breakEvenReturnPct": 3.4
+ },
+ {
+  "payment": 1688.02,
+  "payoffMonth": 179,
+  "monthsSooner": 121,
+  "interestSaved": 115668.35,
+  "prepayWealth": 363177.37,
+  "investWealth": 355292.8,
+  "investMinusPrepay": -7884.57,
+  "inputs": {
+   "balance": 250000,
+   "aprPct": 6.5,
+   "monthsLeft": 300,
+   "extraPerMonth": 500,
+   "returnPct": 7,
+   "taxOnGainsPct": 15
+  },
+  "breakEvenReturnPct": 7.24
+ },
+ {
+  "payment": 1896.2,
+  "payoffMonth": 250,
+  "monthsSooner": 110,
+  "interestSaved": 135115.17,
+  "prepayWealth": 336625.32,
+  "investWealth": 350835.78,
+  "investMinusPrepay": 14210.46,
+  "inputs": {
+   "balance": 300000,
+   "aprPct": 6.5,
+   "monthsLeft": 360,
+   "extraPerMonth": 300,
+   "returnPct": 7,
+   "taxOnGainsPct": 0
+  },
+  "breakEvenReturnPct": 6.7
+ },
+ {
+  "payment": 1896.2,
+  "payoffMonth": 360,
+  "monthsSooner": 0,
+  "interestSaved": 0.0,
+  "prepayWealth": 0.0,
+  "investWealth": 0.0,
+  "investMinusPrepay": -0.0,
+  "inputs": {
+   "balance": 300000,
+   "aprPct": 6.5,
+   "monthsLeft": 360,
+   "extraPerMonth": 0,
+   "returnPct": 7,
+   "taxOnGainsPct": 15
+  },
+  "breakEvenReturnPct": null
+ },
+ {
+  "payment": 1264.81,
+  "payoffMonth": 262,
+  "monthsSooner": 98,
+  "interestSaved": 46365.85,
+  "prepayWealth": 205916.44,
+  "investWealth": 350835.78,
+  "investMinusPrepay": 144919.34,
+  "inputs": {
+   "balance": 300000,
+   "aprPct": 3.0,
+   "monthsLeft": 360,
+   "extraPerMonth": 300,
+   "returnPct": 7,
+   "taxOnGainsPct": 0
+  },
+  "breakEvenReturnPct": 3.04
+ },
+ {
+  "regression": "0% tax break-even == effective annual rate",
+  "aprPct": 6.5,
+  "effectiveAnnualPct": 6.697,
+  "breakEvenReturnPct": 6.7
+ },
+ {
+  "regression": "0% tax break-even == effective annual rate",
+  "aprPct": 3.0,
+  "effectiveAnnualPct": 3.042,
+  "breakEvenReturnPct": 3.04
+ }
+]

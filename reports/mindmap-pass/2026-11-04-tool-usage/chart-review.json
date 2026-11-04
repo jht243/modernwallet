@@ -1,0 +1,24 @@
+{
+ "reviewer": "chart-reviewer-2026-11-04",
+ "verdict": "PASS",
+ "manifestSha256": "48cd87ec602d56ca2f04bf5025f7907ab9017968eded9203c1600ca3120720ba",
+ "readinessSha256": "01797696b62dd60701509657a9d7bc691142fe07196e8bd0c82e11e5dd323ba0",
+ "evidence": "Fourth review pass; both third-pass fixes are verified. (1) Each packet's evidence.json readerQuestion is now byte-identical to its manifest action reader_question. I checked this by script for C1 and C2, and each cases.json query equals that string. I regenerated both receipts myself into the scratchpad with `mindmap-gates.py cases --query <exact readerQuestion> --publisher themodernwallet.com`, and both are identical to the stored cases.json. (2) caseDecisions now lists the actual returned ids. C1's 8 candidates: drones-defense, testimonial-gamestation, client-game-station, client-mjr-fractional-loan-investments-acorn-care-financial-management, caracas-research, lawfare-claims, rank-and-pay, the-metabolic-journal. C2's 8 candidates: the-indoor-report, drones-defense, diy-repair-guide, bowlero, pba, horizen-labs, hoa-and-condo-boards, multiple-law-firms. I checked each record's relationship and approvedFacts: none documents a homeowner's mortgage-prepayment or biweekly decision, so rejecting all and making no client claim is correct. The '(if listed)' hedge is gone, and the C1 finding now says $865. Unchanged and re-confirmed: both calc.py replays are identical to output.json (C1 $88,121.78 / $87,256.29 / 628 payments; C2 break-evens 7.19 / 3.40 / 6.70 / 3.04 / 7.24, with the 0%-tax regression asserting break-even = effective annual rate). The manifest has 17 actions (F1-F7, M2-M7, C1, C2, L1, L2) and its briefs match the action rows one to one. The C1 answer says 70 months (nearly 6 years) and $865; the C2 answer says about 7.2% / 3.4%. The C2 compare placement is 'The Return You Earn Each Way', shown in the re-captured inspection. All 28 artifact references across the manifest and both evidence.json files hash-match. readiness.md is unchanged and equals the manifest preparation reference. Carried over from earlier passes: coverage_lookup, the src/data grep, git log --all -S (only competitor URLs, in 4f3fbf0/8413847; shallow clone of 50 commits) and live 404s support KEEP for both new pages. YMYL facts were verified against fetched primary sources: Fla. s.196.031 and FL DOR 2026 $26,411 (total $51,411, band to $76,411); Rev. Proc. 2025-32 QBI $403,500/$201,775/$201,750, standard deduction $32,200/$24,150/$16,100, 0% LTCG $98,900/$49,450; Schedule SE $400 floor; CMS 2026 SNF $217.00/day; Tex. Est. Code s.352.002 (5% of cash, capped, with exclusions). Tool-fix guardrails, exclusions, testing exclusion (financial), books-only picks with tag soulcircle01-20, and the L1/L2 date bump were all verified. Hash: mindmap-gates.py hash gives manifest canonicalJsonSha256 48cd87ec...20ba. The helper cannot read markdown, so the readiness.md hash is from sha256sum: 01797696...23ba0.",
+ "duplicateDecisions": {
+  "C1": "KEEP: no biweekly mortgage tool on the site (spokes-mortgage.ts:8 'deferred'). The extra-payment FAQ and the recast calculator serve different jobs. No shipped commit (only competitor-URL mentions in 4f3fbf0/8413847). Live route returns 404.",
+  "C2": "KEEP: /compare/pay-off-mortgage-vs-invest/, /guides/pay-off-mortgage-early-or-invest/, /guides/mortgage-early-payoff-tax-implications/ and /guides/pay-off-debt-or-invest/ have no personal-input calculator or break-even. No shipped commit. Live route returns 404."
+ },
+ "factChecks": {
+  "floridaHomestead": "CONFIRMED: s.196.031(1)(a)/(b) F.S. (http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0196/Sections/0196.031.html); FL DOR 2026 $26,411 (https://www.floridarevenue.com/property/Documents/cpi_homestead_exemption.pdf)",
+  "revProc2025_32": "CONFIRMED: 199A $403,500/$201,775/$201,750; standard deduction $32,200/$24,150/$16,100; 0% LTCG $98,900 MFJ / $49,450 single, HOH $66,200 (https://www.irs.gov/pub/irs-drop/rp-25-32.pdf)",
+  "scheduleSE400": "CONFIRMED (https://www.irs.gov/instructions/i1040sse)",
+  "cmsSNF2026": "CONFIRMED $217.00/day days 21-100 (https://www.cms.gov/newsroom/fact-sheets/2026-medicare-parts-b-premiums-deductibles)",
+  "texas352_002": "CONFIRMED 5% of cash received/paid out, capped at 5% of gross FMV, with exclusions (https://texas.public.law/statutes/tex._est._code_section_352.002)"
+ },
+ "advisories": [
+  "Re-render approval-chart.md from this manifest before the writer runs, so saved_chart() passes.",
+  "Phase 4 should check that the fixed examples in /guides/pay-off-mortgage-early-or-invest/ and /guides/pay-off-debt-or-invest/ do not contradict the new calculator.",
+  "F1 newcomer toggle and fifth-year note: Phase 4 should verify against the enacted Amendment 3 text.",
+  "When building src/lib/payoff-vs-invest.ts, port the 0%-tax break-even regression as a unit test."
+ ]
+}

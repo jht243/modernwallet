@@ -1,0 +1,152 @@
+[
+ {
+  "inputs": {
+   "balance": 300000,
+   "aprPct": 6.5,
+   "monthsLeft": 360,
+   "setupFee": 0,
+   "perDebitFee": 0
+  },
+  "monthlyPayment": 1896.2,
+  "halfPayment": 948.1,
+  "monthly": {
+   "months": 360,
+   "interest": 382633.47
+  },
+  "biweekly": {
+   "payments": 628,
+   "years": 24.15,
+   "monthsEquivalent": 289.8,
+   "interest": 294511.68,
+   "interestSaved": 88121.78,
+   "fees": 0,
+   "netSaved": 88121.78
+  },
+  "extraTwelfth": {
+   "extraPerMonth": 158.02,
+   "months": 290,
+   "interest": 295377.18,
+   "interestSaved": 87256.29
+  }
+ },
+ {
+  "inputs": {
+   "balance": 300000,
+   "aprPct": 6.5,
+   "monthsLeft": 360,
+   "setupFee": 400,
+   "perDebitFee": 2.5
+  },
+  "monthlyPayment": 1896.2,
+  "halfPayment": 948.1,
+  "monthly": {
+   "months": 360,
+   "interest": 382633.47
+  },
+  "biweekly": {
+   "payments": 628,
+   "years": 24.15,
+   "monthsEquivalent": 289.8,
+   "interest": 294511.68,
+   "interestSaved": 88121.78,
+   "fees": 1970.0,
+   "netSaved": 86151.78
+  },
+  "extraTwelfth": {
+   "extraPerMonth": 158.02,
+   "months": 290,
+   "interest": 295377.18,
+   "interestSaved": 87256.29
+  }
+ },
+ {
+  "inputs": {
+   "balance": 238000,
+   "aprPct": 6.875,
+   "monthsLeft": 312,
+   "setupFee": 0,
+   "perDebitFee": 0
+  },
+  "monthlyPayment": 1639.33,
+  "halfPayment": 819.67,
+  "monthly": {
+   "months": 312,
+   "interest": 273472.02
+  },
+  "biweekly": {
+   "payments": 553,
+   "years": 21.27,
+   "monthsEquivalent": 255.2,
+   "interest": 215200.44,
+   "interestSaved": 58271.57,
+   "fees": 0,
+   "netSaved": 58271.57
+  },
+  "extraTwelfth": {
+   "extraPerMonth": 136.61,
+   "months": 256,
+   "interest": 215898.74,
+   "interestSaved": 57573.28
+  }
+ },
+ {
+  "inputs": {
+   "balance": 300000,
+   "aprPct": 0,
+   "monthsLeft": 360,
+   "setupFee": 0,
+   "perDebitFee": 0
+  },
+  "monthlyPayment": 833.33,
+  "halfPayment": 416.67,
+  "monthly": {
+   "months": 360,
+   "interest": 0.0
+  },
+  "biweekly": {
+   "payments": 720,
+   "years": 27.69,
+   "monthsEquivalent": 332.3,
+   "interest": 0.0,
+   "interestSaved": 0.0,
+   "fees": 0,
+   "netSaved": 0.0
+  },
+  "extraTwelfth": {
+   "extraPerMonth": 69.44,
+   "months": 333,
+   "interest": 0.0,
+   "interestSaved": 0.0
+  }
+ },
+ {
+  "inputs": {
+   "balance": 300000,
+   "aprPct": 3.0,
+   "monthsLeft": 360,
+   "setupFee": 0,
+   "perDebitFee": 0
+  },
+  "monthlyPayment": 1264.81,
+  "halfPayment": 632.41,
+  "monthly": {
+   "months": 360,
+   "interest": 155332.36
+  },
+  "biweekly": {
+   "payments": 688,
+   "years": 26.46,
+   "monthsEquivalent": 317.5,
+   "interest": 134695.06,
+   "interestSaved": 20637.3,
+   "fees": 0,
+   "netSaved": 20637.3
+  },
+  "extraTwelfth": {
+   "extraPerMonth": 105.4,
+   "months": 318,
+   "interest": 134987.64,
+   "interestSaved": 20344.72
+  }
+ }
+]

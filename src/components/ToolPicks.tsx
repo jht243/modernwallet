@@ -42,6 +42,18 @@ export const BOOKS = {
   medicareGetWhatsYours: { asin: "1668031914", title: "Get What's Yours for Medicare (revised and updated) by Philip Moeller" },
   hanTaxStrategies: { asin: "0990711765", title: "The Book on Tax Strategies for the Savvy Real Estate Investor by Amanda Han and Matthew MacFarland" },
   hanAdvancedTax: { asin: "1947200224", title: "The Book on Advanced Tax Strategies by Amanda Han and Matthew MacFarland" },
+  // Tool-usage pass 2026-11-04 (ASINs returned by scripts/tool_usage/amazon_pick.py --index Books this run).
+  taxesMadeSimple: { asin: "1950967204", title: "Taxes Made Simple by Mike Piper" },
+  piperContractorTaxes: { asin: "1950967174", title: "Independent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper" },
+  lasserSmallBiz2027: { asin: "1394448961", title: "J.K. Lasser's Small Business Taxes 2027" },
+  noloLongTermCare: { asin: "1413330010", title: "Long-Term Care: How to Plan & Pay for It by Joseph L. Matthews (Nolo)" },
+  careForAgingParents: { asin: "0761166769", title: "How to Care for Aging Parents (3rd ed.) by Virginia Morris" },
+  noloAvoidProbate: { asin: "1413333400", title: "8 Ways to Avoid Probate by Mary Randolph (Nolo)" },
+  noloEstateBasics: { asin: "1413333257", title: "Estate Planning Basics by Denis Clifford (Nolo)" },
+  noloCaliforniaEstate: { asin: "1413333192", title: "Every Californian's Guide to Estate Planning (Nolo)" },
+  noloLivingTrust: { asin: "1413330576", title: "Make Your Own Living Trust by Denis Clifford (Nolo)" },
+  noloPlanEstate: { asin: "1413329810", title: "Plan Your Estate by Denis Clifford (Nolo)" },
+  noloExecutorGuide: { asin: "1413331742", title: "The Executor's Guide by Mary Randolph (Nolo)" },
 } as const;
 
 export function book(key: keyof typeof BOOKS, why: string): Pick {

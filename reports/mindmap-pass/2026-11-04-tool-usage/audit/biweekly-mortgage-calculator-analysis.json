@@ -1,0 +1,57 @@
+{
+ "reviewer": "phase4-pages-auditor",
+ "verdict": "PASS",
+ "packetSha256": "d23722709babeb344ddb2fe29059e38f8ed91cc62e530cba8f634789c4f34707",
+ "replaySha256": "5d51290ad1d3378740167ff92eb358700d565116ba687c37b5314d00d1836f49",
+ "checks": {
+  "usefulness": {
+   "status": "PASS",
+   "evidence": "The finding changes a real choice: the free 1/12-extra path ends 290 months / saves $87,256.29 versus biweekly 289.8 months / $88,121.78 on $300,000 at 6.5% (gap $865.49), so a $400 + $2.50/debit plan ($1,970) leaves $86,151.78, less than the free path. The calculator lets readers test their own loan and fees; this is a decision aid, not restated vendor facts."
+  },
+  "sourceAndAssumptions": {
+   "status": "PASS",
+   "evidence": "Regulation Z 12 CFR 1026.36(c)(1) fetched live 2026-11-04 (HTTP 200) and supports the partial-payment/suspense statements; applied-when-paid assumption (APR/26 per period) is stated on page and in the tool disclaimer; fees are labelled illustrative reader inputs; inputs.json documents all five cases."
+  },
+  "conditionsAndCounterexample": {
+   "status": "PASS",
+   "evidence": "Replay of calc.py is byte-identical to output.json (canonical sha 5d51290a...). TS engine (src/lib/biweekly-mortgage.ts) matches every case to the cent (audit/ts-engine-crosscheck.json). Boundaries: 0% rate gives $0 interest saved (720 half-payments, 27.7 years) in both engines and the browser; 3% gives $20,637.30; $0 fees hide the fee row; 0 balance/0 months/NaN return null and the UI shows 'Enter a balance and months left'. Rate sweep: 70.2 months saved at 6.5%, 42.5 at 3%, 80.3 at 7.5%."
+  },
+  "renderedConsistency": {
+   "status": "PASS",
+   "evidence": "Round 2 render (snapshot 4a3caa54...) matches the analysis: sentence 1 now carries the 30-year condition ('On a $300,000, 30-year loan at 6.5%...'); the servicer condition states its $865.49 result; tool default (5 years 10 months sooner, $88,122, $87,256, $1,896.20/$948.10) and every prose/FAQ figure match output.json (0 numbers outside the fact list). Final rendered review of this route: PASS."
+  },
+  "localExclusions": {
+   "status": "PASS",
+   "evidence": "Financial tool: no TESTED label, no 'we tested', no review schema; attribution is 'internal calculation' (calculated basis) as in evidence.json provenance; YMYL not-advice footer at the bottom; no client claims (cases.json all rejected)."
+  }
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-04-tool-usage/audit/preview-snapshot.json",
+  "sha256": "69c7db54dcbcfd0893c7cf4b282aa7618410d4ea4c188ab6a3f402320e5f7878"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-04-tool-usage/audit/rendered-review.json",
+  "sha256": "d2ab58c9fc664e6157acf7dfee3af09c931d6086d91374c6b403ee1d90cedd95"
+ },
+ "note": "Round 3: bound to the 29-route snapshot (route fingerprint unchanged since round 2); replay unchanged.",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "The finding changes a real choice: the free 1/12-extra path ends 290 months / saves $87,256.29 versus biweekly 289.8 months / $88,121.78 on $300,000 at 6.5% (gap $865.49), so a $400 + $2.50/debit plan ($1,970) leaves $86,151.78, less than the free path. The calculator lets readers test their own loan and fees; this is a decision aid, not restated vendor facts."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "Regulation Z 12 CFR 1026.36(c)(1) fetched live 2026-11-04 (HTTP 200) and supports the partial-payment/suspense statements; applied-when-paid assumption (APR/26 per period) is stated on page and in the tool disclaimer; fees are labelled illustrative reader inputs; inputs.json documents all five cases."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "Replay of calc.py is byte-identical to output.json (canonical sha 5d51290a...). TS engine (src/lib/biweekly-mortgage.ts) matches every case to the cent (audit/ts-engine-crosscheck.json). Boundaries: 0% rate gives $0 interest saved (720 half-payments, 27.7 years) in both engines and the browser; 3% gives $20,637.30; $0 fees hide the fee row; 0 balance/0 months/NaN return null and the UI shows 'Enter a balance and months left'. Rate sweep: 70.2 months saved at 6.5%, 42.5 at 3%, 80.3 at 7.5%."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "Round 2 render (snapshot 4a3caa54...) matches the analysis: sentence 1 now carries the 30-year condition ('On a $300,000, 30-year loan at 6.5%...'); the servicer condition states its $865.49 result; tool default (5 years 10 months sooner, $88,122, $87,256, $1,896.20/$948.10) and every prose/FAQ figure match output.json (0 numbers outside the fact list). Final rendered review of this route: PASS."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "Financial tool: no TESTED label, no 'we tested', no review schema; attribution is 'internal calculation' (calculated basis) as in evidence.json provenance; YMYL not-advice footer at the bottom; no client claims (cases.json all rejected)."
+ }
+}

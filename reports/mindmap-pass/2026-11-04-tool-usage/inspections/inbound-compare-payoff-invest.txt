@@ -1,0 +1,13 @@
+    "slug": "pay-off-mortgage-vs-invest",
+    "title": "Pay Off Mortgage or Invest: How to Choose Your Path",
+    "metaDescription": "Deciding whether to pay off mortgage or invest? We compare guaranteed returns, tax rules under IRS Pub 936, liquidity, and what to fund first.",
+    "targetKeyword": "pay off mortgage or invest",
+    "optionA": "Pay Off the Mortgage Early",
+...
+    "verdict": "Choose to pay off the mortgage early if your mortgage rate is high, you value a completely guaranteed financial return, and you place personal value on eliminating debt obligations from your life. Choose to invest the extra money if your mortgage rate is low, you have a multi-year horizon that can ride through market volatility, and you want to maintain access to liquid capital in 
+    "sections": [
+      {
+        "heading": "The Return You Earn Each Way",
+        "content": "The mathematical mechanism of early debt repayment is straightforward. Every extra dollar of principal you pay saves the interest that dollar would have accrued at your loan's rate for the rest of the loan term. Because this savings is baked into your promissory note, the return from extra payments equals your mortgage rate and is not subject to market swings.\n\nInvesting your
+      },
+      {

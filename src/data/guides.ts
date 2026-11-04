@@ -23227,7 +23227,7 @@ export const GUIDES: Guide[] = [
     },
     {
       "heading": "What the Examples Leave Out",
-      "body": "The worked examples use level payments and monthly compounding, and they leave out several items that can move your result. They do not include:\n\n- income taxes on investment gains\n- the mortgage interest deduction\n- investment fees\n\nThe 5% and 7% returns are assumptions chosen to show a range. They are not forecasts of what any account will earn over 25 or 30 years.\n\nThe guaranteed-versus-uncertain difference also sits outside the totals. A dollar of interest saved by prepaying is locked in at the loan rate. A projected account balance depends on returns landing close to the assumption for the full period, so give the guarantee extra weight when the two paths end up close.\n\nThe figures are arithmetic and are not tax advice. Your after-tax result depends on your own tax situation, which the examples do not model, so treat the gaps above as pre-tax gaps."
+      "body": "The worked examples use level payments and monthly compounding, and they leave out several items that can move your result. They do not include:\n\n- income taxes on investment gains\n- the mortgage interest deduction\n- investment fees\n\nThe 5% and 7% returns are assumptions chosen to show a range. They are not forecasts of what any account will earn over 25 or 30 years.\n\nThe guaranteed-versus-uncertain difference also sits outside the totals. A dollar of interest saved by prepaying is locked in at the loan rate. A projected account balance depends on returns landing close to the assumption for the full period, so give the guarantee extra weight when the two paths end up close.\n\nThe figures are arithmetic and are not tax advice. Your after-tax result depends on your own tax situation, which the examples do not model, so treat the gaps above as pre-tax gaps. To run the comparison with your own balance, rate, extra amount, return and tax rate, use the [pay off mortgage or invest calculator](/pay-off-mortgage-or-invest-calculator/)."
     },
     {
       "heading": "A Decision Rule to Pay Off Your Mortgage Early or Invest",
@@ -23292,7 +23292,7 @@ export const GUIDES: Guide[] = [
       "url": "https://eyeonhousing.org/2026/10/arm-share-increased-as-mortgage-rates-spiked/"
     }
   ],
-  "updated": "2026-10-11"
+  "updated": "2026-11-04"
 },
   // ── trend-pass 2026-10-20 (Lane C, Lens 2 off '+medicare +medicaid +benefits +cost'): medicare-savings-programs ──
   {

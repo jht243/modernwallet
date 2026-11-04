@@ -1,0 +1,95 @@
+.claude/commands/_content-generation.md — characters 0 onward
+
+# Content generation — the canonical Phase 3 contract (API-generated prose)
+
+<!-- workflow-checkpoints-v1 -->
+**Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
+<!-- /workflow-checkpoints-v1 -->
+
+
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
+**Status:** MANDATORY for every routine that creates NEW pages, once that routine has been
+migrated (see the rollout table at the bottom). Manual global routines and cloud routines
+follow the same contract. This file is the single source of truth; a routine's Phase 3 file
+points here and adds only its page-specific data.
+
+**One rule above all: the running agent does NOT write the article.** Prose is produced by
+the configured model through `scripts/lib/content_gen.py`. The agent assembles the prompts,
+runs the generator, verifies the draft mechanically, and hands it to the Phase 4 audit. If the
+generator cannot run, STOP and report — never write the page yourself, and never substitute a
+model silently.
+
+## The generator
+
+`scripts/lib/content_gen.py` (stdlib only; vendored in every repo, mirrored at
+`~/.claude/tools/content_gen/` for manual global runs). The MODEL is configuration:
+
+| Env | Default | Meaning |
+|---|---|---|
+| `CONTENT_MODEL` | `gemini-3.8-flash` | primary writer. Changing the fleet's model = changing this value. |
+| `CONTENT_FALLBACK_MODEL` | `gpt-6.1-sol` | used ONLY when the primary errors, truncates, or returns nothing. Always logged. `""` disables. |
+| `CONTENT_THINKING` | per site | reasoning effort (Gemini `thinkingLevel`, OpenAI `reasoning.effort`). **Set ONLY by the repo's `.claude/content-gen.env`** (site value tier, 2026-09-30); default `high` when the file is absent. **Never export it or pass it on a command line** — an environment value overrides the site's tier. |
+| `CONTENT_SECTION_THINKING` | per site | ceiling for `section` enrichments; same rule — set only by `.claude/content-gen.env`. |
+| `CONTENT_MAX_TOKENS` | `40000` | thinking tokens count against this on Gemini — keep it high |
+
+Keys: `GEMINI_API_KEY` (or `GEMINI_ACCESS_TOKEN`), `OPENAI_API_KEY` (site-scoped
+`CONTENT_OPENAI_KEY` wins). Read from env, `$CONTENT_SECRETS`, `./.env`, `~/.claude/secrets.env`.
+**Cloud routines cannot use environment variables for secrets** (the platform redacts them);
+their prompt carries an inline key block, and the routine `export`s those values before
+calling the generator — the same mechanism the DataForSEO / humanize keys use.
+
+## Step 0 — preflight ONCE per run
+
+```bash
+python3 scripts/lib/content_gen.py preflight
+```
+Verifies every model in the chain has a key and answers. A failing preflight STOPS the phase.
+
+## Testing-format decision
+
+Read `_testing-labels.md` before selecting `--tested yes/no`. Local exclusions always win. A qualifying draft with relevant executed runs may request the tested layout, but only independent Phase 4 approval of the exact final content enables the template labels. The writer flag never certifies evidence.
+
+## Decision-evidence hand-off
+
+For mindmap-pass and comparison-content-creator, including their enrichment paths, apply `_decision-evidence.md` before prompt assembly. Keep calculated findings, assumptions, reported facts and unknowns distinct in the CLOSED FACT LIST. The generator writes from that packet; it must not invent experiment results. Other callers may adopt this protocol without changing their scope or authorization.
+
+When original analysis/testing is supplied, include its approved provenance in the CLOSED FACT LIST and request one natural, specific attribution beside the first finding: what we did → what we found → how readers can check it. Prefer “In our internal analysis/modeling/testing, we [specific action]…” according to the evidence; naming published inputs alone is insufficient. Follow `_decision-evidence.md` section 3. Never let the writer invent product trials, client conversations, quotes or outcomes to satisfy a voice/experience template. Existing clear attribution needs no repeated cue.
+
+## Step 1 — assemble the prompts
+
+**`system.md` — once per run.** Order is load-bearing (each rule fixed an observed failure):
+
+1. **A real published page of the SAME page type, as a JSON object, labelled "imitate this"** —
+   the voice comes from an example, not a description of one. Pick for voice quality; never the
+   page being written. (A sibling of the same family is ideal.)
+2. The **output contract**: "return ONE JSON object with exactly these keys" + the page-type
+   shape (`guide` / `comparison`), noun-phrase headings, at most one heading opening with the
+   keyword, CTA button text, the brand first-"we" rule ("At {BUSINESS_NAME}, we…").
+3. `.claude/commands/_anti-ai-language.md` WRITER section — state that it wins on conflict.
+4. `.claude/commands/_experience.md` in full — the source for established company experience; new run-specific analysis/tests and client observations additionally require verified records under `_decision-evidence.md`, never invented experience.
+5. Any `_content-standard.local.md`.
+6. `.claude/commands/_content-standard.md` **LAST**, under a heading that scopes it:
+   *"governs STRUCTURE, SEO, depth, sourcing, linking. Follow its rules. Do not copy its tone."*
+
+**`<slug>.prompt.md` — one per row, DATA ONLY.** Copy the row template; never restate a
+standing rule here (retyping them is how they go missing). It carries:
+
+- route, slug, page type, depth floor, primary/secondary keywords, intent
+- **`reader question: "…"`, `answer: …`, `answer placement: section 1|2 "<heading>"`** — copied
+  from the chart (mindmap build-brief Step 4.6 cols 10–12, or the equivalent step in the calling
+  routine), never derived in this phase. The row prompt tells the writer the answering section
+  goes in that slot, before any scope/definition/taxonomy material (`_content-standard.md` INTENT). A "how" question must get the trigger,
+  the sequence of hops, the parts to assemble, and the thing to build first — not a
+  classification of the work.
+- **the CLOSED FACT LIST** — every number, date, price, limit, score the page may state, with
+  the sentence *"Anything not on this list, you do not know. Never invent a price, limit,
+  benchmark, or URL; say it is unpublished and tell the reader to verify at the vendor page."*
+  Where a fact is contested (two sources disagree), say so and require the page to present it
+  as varying. Where a sibling page's numbers must NOT leak (e.g. a predecessor's prices), say so.
+- **the CLOSED URL LIST** — the only external `href`s allowed (also written to
+  `allowed-urls.txt` for the mechanical guard)
+- the **internal links** it may use — real routes only (siblings shipping in the same run are fine)
+- what to cover, section by section; the FAQ q

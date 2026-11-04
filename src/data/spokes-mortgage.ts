@@ -93,6 +93,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
   {
     calculator: "mortgage",
     slug: "extra-payment-calculator",
+    updated: "2026-11-04",
     title: "Mortgage Extra Payment Calculator: See Your Savings",
     metaDescription:
       "Use this mortgage extra payment calculator to see how extra monthly payments cut years off your loan and save thousands in interest. Free 2026 tool.",
@@ -122,7 +123,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
       {
         question: "Does one extra mortgage payment a year really help?",
         answer:
-          "Yes. One extra payment a year still cuts roughly four to five years off a typical 30-year loan. A biweekly schedule does the same thing: paying half your amount every two weeks adds up to 26 half-payments, or 13 full monthly payments, each year.",
+          "Yes. One extra payment a year still cuts years off a 30-year loan: about 70 months on a $300,000 loan at 6.5%, and fewer at lower rates. A biweekly schedule does the same thing: paying half your amount every two weeks adds up to 26 half-payments, or 13 full monthly payments, each year.",
       },
       {
         question: "How do I make sure extra payments go to principal?",
@@ -137,7 +138,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
       {
         question: "Is a biweekly plan better than just paying extra?",
         answer:
-          "Both reach the same goal, but doing it yourself is free. Third-party biweekly plans can charge setup or service fees. You can match the result by adding one extra payment a year on your own, or using the calculator above to set a monthly extra amount.",
+          "Both reach the same goal, but doing it yourself is free. Third-party biweekly plans can charge setup or service fees. You can match the result by adding one extra payment a year on your own, or using the calculator above to set a monthly extra amount. To compare the two schedules side by side, use the [biweekly mortgage calculator](/biweekly-mortgage-calculator/).",
       },
       {
         question: "Should I pay extra on my mortgage or invest the money instead?",
@@ -147,7 +148,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     ],
     sources: [
       { label: "CFPB — What is a prepayment penalty?", url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-prepayment-penalty-en-1957/" },
-      { label: "CFPB — Pay down your loan faster without a biweekly plan fee", url: "https://www.consumerfinance.gov/ask-cfpb/someone-offered-me-the-ability-to-make-26-bi-weekly-mortgage-payments-a-year-for-a-fee-is-there-a-way-i-can-pay-down-my-loan-faster-on-my-own-without-paying-a-fee-to-sign-up-for-this-plan-en-203/" },
+      { label: "CFPB — Mortgage key terms: bi-weekly payment", url: "https://www.consumerfinance.gov/consumer-tools/mortgages/answers/key-terms/" },
       { label: "CFPB — How does paying down a mortgage work?", url: "https://www.consumerfinance.gov/ask-cfpb/how-does-paying-down-a-mortgage-work-en-1943/" },
     ],
     toolHeading: "How much will extra payments save?",

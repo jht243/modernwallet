@@ -1,0 +1,165 @@
+{
+ "author": "tool-usage-main",
+ "canonicalBase": "https://www.themodernwallet.com",
+ "routes": [
+  {
+   "path": "/biweekly-mortgage-calculator/",
+   "expectedUpdatedDate": "2026-11-04",
+   "requiredText": [
+    "Biweekly Mortgage Calculator",
+    "$88,121.78",
+    "$865.49"
+   ],
+   "growthFile": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/biweekly-mortgage-calculator/growth.json",
+   "evidenceFile": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/biweekly-mortgage-calculator/evidence.json"
+  },
+  {
+   "path": "/compare/pay-off-mortgage-vs-invest/",
+   "expectedUpdatedDate": "2026-11-04",
+   "requiredText": [
+    "pay off mortgage or invest calculator"
+   ]
+  },
+  {
+   "path": "/florida-amendment-3-calculator/",
+   "expectedUpdatedDate": "2026-11-04",
+   "requiredText": [
+    "approved by voters"
+   ],
+   "forbiddenText": [
+    "if Amendment 3 passes"
+   ]
+  },
+  {
+   "path": "/guides/pay-off-mortgage-early-or-invest/",
+   "expectedUpdatedDate": "2026-11-04",
+   "requiredText": [
+    "pay off mortgage or invest calculator"
+   ]
+  },
+  {
+   "path": "/inflation-calculator/",
+   "expectedUpdatedDate": "2026-11-04",
+   "requiredText": [
+    "Show year-by-year",
+    "Further reading on beating inflation"
+   ]
+  },
+  {
+   "path": "/mortgage-recast-calculator/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/mortgage/extra-payment-calculator/",
+   "expectedUpdatedDate": "2026-11-04",
+   "requiredText": [
+    "biweekly mortgage calculator"
+   ]
+  },
+  {
+   "path": "/pay-off-mortgage-or-invest-calculator/",
+   "expectedUpdatedDate": "2026-11-04",
+   "requiredText": [
+    "Pay Off Mortgage or Invest Calculator",
+    "7.19%",
+    "$8,188.38"
+   ],
+   "growthFile": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/pay-off-mortgage-or-invest-calculator/growth.json",
+   "evidenceFile": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/pay-off-mortgage-or-invest-calculator/evidence.json"
+  },
+  {
+   "path": "/probate/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/",
+   "expectedUpdatedDate": "2026-11-04",
+   "requiredText": [
+    "Further reading on self-employment taxes"
+   ]
+  },
+  {
+   "path": "/self-employment-tax/1099-tax-calculator/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/amazon-flex-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/doordash-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/etsy-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/fiverr-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/how-much-to-set-aside-for-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/instacart-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/lyft-driver-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/quarterly-estimated-tax-calculator/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/rover-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/shipt-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/twitch-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/uber-driver-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/uber-eats-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/upwork-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/social-security-taxable-benefits-calculator/",
+   "expectedUpdatedDate": "2026-11-04",
+   "requiredText": [
+    "W-4V",
+    "Further reading on how your Social Security is taxed"
+   ]
+  },
+  {
+   "path": "/stock-capital-gains-tax-calculator/",
+   "expectedUpdatedDate": "2026-11-04",
+   "requiredText": [
+    "Further reading on taxes when you sell investments"
+   ]
+  },
+  {
+   "path": "/self-employment-tax/dataannotation-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  },
+  {
+   "path": "/self-employment-tax/youtube-taxes/",
+   "expectedUpdatedDate": "2026-11-04"
+  }
+ ]
+}

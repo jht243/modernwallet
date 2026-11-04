@@ -41,6 +41,11 @@ export const MEDICARE_RATE = 0.029;
 export const ADDITIONAL_MEDICARE_RATE = 0.009;
 /** Maximum earnings subject to Social Security tax in 2026. */
 export const SS_WAGE_BASE_2026 = 184_500;
+/**
+ * No SE tax is owed when net earnings from self-employment are under $400 (Schedule SE
+ * instructions, https://www.irs.gov/instructions/i1040sse). Profit up to $433.13 stays under it.
+ */
+export const SE_MIN_NET_EARNINGS = 400;
 
 /** Additional Medicare Tax thresholds by filing status. Not inflation-adjusted — set by statute. */
 export const ADDITIONAL_MEDICARE_THRESHOLD: Record<FilingStatus, number> = {
@@ -95,11 +100,15 @@ export const BRACKETS_2026: Record<FilingStatus, Bracket[]> = {
   ],
 };
 
-/** QBI (§199A) phase-in start, above which the wage/property limits begin to bite. */
+/**
+ * QBI (§199A) phase-in start, above which the wage/property limits begin to bite. Compared with
+ * taxable income BEFORE the QBI deduction. Rev. Proc. 2025-32 §4.26: $403,500 MFJ, $201,775
+ * married filing separately, $201,750 all other returns (single and head of household).
+ */
 export const QBI_THRESHOLD_2026: Record<FilingStatus, number> = {
-  single: 201_775,
+  single: 201_750,
   mfj: 403_500,
-  hoh: 201_775,
+  hoh: 201_750,
 };
 export const QBI_RATE = 0.2;
 
@@ -133,6 +142,8 @@ export interface SelfEmploymentTaxResult {
   effectiveSeRateOnProfit: number;
   /** True when W-2 wages alone met or exceeded the wage base, so no SS tax is due on SE income. */
   wageBaseFullyUsedByW2: boolean;
+  /** True when net profit > 0 but net earnings are under $400, so no SE tax is owed. */
+  belowSeFloor: boolean;
 
   // ---- Income-tax estimate (null when includeIncomeTax is false) ----
   qbiDeduction: number | null;
@@ -140,7 +151,10 @@ export interface SelfEmploymentTaxResult {
   federalIncomeTax: number | null;
   /** Marginal ordinary rate the last dollar of taxable income landed in. */
   marginalRate: number | null;
-  /** True when income exceeded the QBI phase-in threshold, where the estimate gets unreliable. */
+  /**
+   * True when taxable income before the QBI deduction exceeded the QBI phase-in threshold, where
+   * the estimate gets unreliable.
+   */
   qbiAboveThreshold: boolean;
 
   /** Household total: SE tax + federal income tax on ALL income entered. */
@@ -193,22 +207,25 @@ export function calculateSelfEmploymentTax(input: SelfEmploymentTaxInput): SelfE
 
   // ---- Schedule SE ----
   const netEarnings = netProfit * SE_NET_EARNINGS_FACTOR;
+  // Under $400 of net earnings there is no SE tax at all (and so no half-SE deduction).
+  const belowSeFloor = netProfit > 0 && netEarnings < SE_MIN_NET_EARNINGS;
+  const seEarnings = belowSeFloor ? 0 : netEarnings;
 
   // W-2 wages consume the Social Security wage base first (Schedule SE Part I).
   const remainingWageBase = Math.max(0, SS_WAGE_BASE_2026 - w2Wages);
-  const socialSecurityTaxable = Math.min(netEarnings, remainingWageBase);
+  const socialSecurityTaxable = Math.min(seEarnings, remainingWageBase);
   const socialSecurityTax = socialSecurityTaxable * SS_RATE;
 
   // Medicare has no ceiling — the full net earnings figure is taxed.
-  const medicareTax = netEarnings * MEDICARE_RATE;
+  const medicareTax = seEarnings * MEDICARE_RATE;
 
   // Additional Medicare Tax applies to combined wages + SE earnings above the threshold. The
   // self-employed pay the full 0.9% (there is no employer half to match).
   const additionalMedicareBase = Math.max(
     0,
-    w2Wages + netEarnings - ADDITIONAL_MEDICARE_THRESHOLD[filingStatus],
+    w2Wages + seEarnings - ADDITIONAL_MEDICARE_THRESHOLD[filingStatus],
   );
-  const additionalMedicareOnSe = Math.min(additionalMedicareBase, netEarnings);
+  const additionalMedicareOnSe = Math.min(additionalMedicareBase, seEarnings);
   const additionalMedicareTax = additionalMedicareOnSe * ADDITIONAL_MEDICARE_RATE;
 
   const totalSelfEmploymentTax = socialSecurityTax + medicareTax + additionalMedicareTax;
@@ -222,12 +239,12 @@ export function calculateSelfEmploymentTax(input: SelfEmploymentTaxInput): SelfE
   let federalIncomeTax: number | null = null;
   let marginalRate: number | null = null;
 
-  const qbiAboveThreshold =
-    netProfit + w2Wages + otherIncome > QBI_THRESHOLD_2026[filingStatus];
+  const agi = netProfit + w2Wages + otherIncome - halfSeTaxDeduction;
+  // Taxable income before the QBI deduction: the figure §199A tests against the threshold.
+  const afterStandard = Math.max(0, agi - STANDARD_DEDUCTION_2026[filingStatus]);
+  const qbiAboveThreshold = afterStandard > QBI_THRESHOLD_2026[filingStatus];
 
   if (includeIncomeTax) {
-    const agi = netProfit + w2Wages + otherIncome - halfSeTaxDeduction;
-    const afterStandard = Math.max(0, agi - STANDARD_DEDUCTION_2026[filingStatus]);
 
     // QBI is 20% of qualified business income, capped at 20% of taxable income before the QBI
     // deduction. Below the phase-in threshold there is no wage or property limit to apply.
@@ -262,6 +279,7 @@ export function calculateSelfEmploymentTax(input: SelfEmploymentTaxInput): SelfE
     halfSeTaxDeduction: round2(halfSeTaxDeduction),
     effectiveSeRateOnProfit: netProfit > 0 ? totalSelfEmploymentTax / netProfit : 0,
     wageBaseFullyUsedByW2: w2Wages >= SS_WAGE_BASE_2026,
+    belowSeFloor,
     qbiDeduction: qbiDeduction === null ? null : round2(qbiDeduction),
     taxableIncome: taxableIncome === null ? null : round2(taxableIncome),
     federalIncomeTax: federalIncomeTax === null ? null : round2(federalIncomeTax),

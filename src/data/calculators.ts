@@ -587,6 +587,7 @@ export const CALCULATORS: CalculatorDef[] = [
   {
     id: "probate",
     islandId: "probate",
+    updated: "2026-11-04",
     label: "Probate",
     navOrder: 11,
     metaTitle: "Probate Calculator: What Will It Cost and How Long?",
@@ -1601,7 +1602,7 @@ export const CALCULATORS: CalculatorDef[] = [
       { label: "Bureau of Labor Statistics: Consumer Price Index", url: "https://www.bls.gov/cpi/" },
       { label: "Investor.gov (SEC): Inflation", url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/inflation" },
     ],
-    updated: "2026-10-11",
+    updated: "2026-11-04",
     defaultPreset: {"amount": 10000, "years": 10, "inflationPct": 3, "nominalReturnPct": 0},
   },
   // Expense Ratio calculator — keyword-gap-pass (2026-10-11). Prose generated via scripts/lib/content_gen.py (meta beside the draft in
@@ -2508,8 +2509,121 @@ export const CALCULATORS: CalculatorDef[] = [
       { question: "Does recasting change my interest rate or loan term?", answer: "No. A recast keeps the same interest rate and the same months left, so only the balance and the payment change. On the example loan, the rate stays at 6.875% with 312 months left. The payment falls to $1,432.69 on the $208,000 balance." },
       { question: "How do I cut years off my mortgage instead?", answer: "Prepay principal without a recast and keep making your current payment. Putting $30,000 toward the example loan and keeping the $1,639.33 payment ends it in 228 months. That is 7 years sooner. To test monthly extra payments, use the [mortgage payoff calculator](/mortgage/payoff-calculator/)." },
     ],
-    updated: "2026-10-14",
+    updated: "2026-11-04",
     defaultPreset: {"balance": 238000, "ratePct": 6.875, "monthsLeft": 312, "lumpSum": 30000, "fee": 250},
+  },
+  // Biweekly mortgage calculator — tool-usage pass (2026-11-04). Prose generated via scripts/lib/content_gen.py
+  // (meta beside the draft in reports/mindmap-pass/2026-11-04-tool-usage/drafts/).
+  {
+    "id": "biweekly-mortgage-calculator",
+    "islandId": "biweekly-mortgage-calculator",
+    "label": "Biweekly Mortgage",
+    "navOrder": 57,
+    "metaTitle": "Biweekly Mortgage Calculator: Payoff Time & Interest Saved",
+    "metaDescription": "Biweekly mortgage calculator. Enter your balance, rate and months left to see how much sooner biweekly payments end the loan and the interest saved.",
+    "targetKeyword": "biweekly mortgage calculator",
+    "h1": "Biweekly Mortgage Calculator",
+    "introText": "On a $300,000, 30-year loan at 6.5%, biweekly payments end the mortgage about 70 months sooner. Enter your balance, rate, months left and any plan fees in the biweekly mortgage calculator below to see the result for your own loan. It returns the months saved, the interest saved and the half-payment, and it also shows the same 13th payment made with no biweekly plan.\n\nTake a $300,000 balance at 6.5% with 360 months left. At ModernWallet, we ran that loan three ways in an internal calculation: monthly, biweekly, and monthly with 1/12 of a payment added. The monthly payment is $1,896.20, and biweekly half-payments of $948.10 save $88,121.78 in interest. Adding $158.02 a month instead saves $87,256.29, which is $865.49 less and needs no plan. You can check every figure by changing the inputs in the calculator.",
+    "howItWorks": "The biweekly mortgage calculator sets the monthly payment with payment = balance × r ÷ (1 − (1 + r)^−n), where r is the annual rate divided by 12 and n is the months left. A biweekly plan pays half that amount every two weeks. That is 26 half-payments a year, or the value of 13 monthly payments. Each two-week period is charged the annual rate divided by 26 in interest, and each half-payment is applied the day it is paid. On the example loan, the biweekly schedule takes 628 half-payments, about 289.8 months. Total interest falls from $382,633.47 to $294,511.68. The calculator covers fixed-rate loans and shows principal and interest only, so taxes, insurance and escrow are not included.\n\nThe calculator assumes your servicer applies each half-payment the day it arrives, and a servicer may hold it instead. Regulation Z, at 12 Code of Federal Regulations (CFR) 1026.36(c)(1), says a servicer must credit a full periodic payment as of the date it is received. A half-payment is a partial payment, so the servicer may hold it in a suspense or unapplied-funds account and show it on the periodic statement. Once enough builds up to cover a full payment, the servicer must treat the funds as a payment received. If your servicer holds half-payments, the real saving is somewhat smaller than the calculator shows, so ask your servicer whether it applies each half-payment on arrival.\n\nYou can get almost the same result with no plan by adding 1/12 of the monthly payment to each monthly payment. That path also adds 13 payments' worth a year, and it does not depend on when the servicer applies a half-payment. On the example loan, the extra is $158.02 a month. The loan ends in 290 months, 70 months sooner, with $87,256.29 saved in interest. That is $865.49 less than the biweekly saving.\n\nPlan fees come out of the interest you save, and the calculator shows the plan fees over the loan and the interest saved after fees. As an illustration, take a $400 setup fee plus $2.50 per debit. Over 628 debits, those fees cost $1,970. That leaves $86,151.78 saved after fees, which is less than the $87,256.29 the free 1/12-extra path saves. A lower rate also shrinks the saving: take the same $300,000 at 3% for 360 months. The payment is $1,264.81, and biweekly saves $20,637.30 in interest. At 0% interest, biweekly saves $0.\n\nSkip a paid biweekly plan if your rate is low, if your servicer holds half-payments, or if the fee is larger than the gap between the plan and the 1/12-extra path. If your servicer applies each half-payment the day it arrives and charges no fee, its biweekly option saves $865.49 more than the 1/12-extra path on the example loan. Based on our internal calculation, biweekly payments end the example loan about 70 months sooner, and adding 1/12 of a payment each month comes within $865.49 with no plan. That saving depends on the rate, falling to $20,637.30 at 3% and $0 at 0%. To test a different extra amount, use the [mortgage extra payment calculator](/mortgage/extra-payment-calculator/), and to decide whether to prepay at all, use the [pay off mortgage or invest calculator](/pay-off-mortgage-or-invest-calculator/).",
+    "faqs": [
+      {
+        "question": "How much faster will biweekly payments pay off my mortgage?",
+        "answer": "Biweekly payments end the example loan about 70 months, or 5 years 10 months, sooner. The example is a $300,000 balance at 6.5% with 360 months left. It takes 628 half-payments, about 289.8 months, instead of 360 monthly payments. Enter your own balance, rate and months left to see your result."
+      },
+      {
+        "question": "Does paying biweekly really save money?",
+        "answer": "Yes, when the loan charges interest. On the example loan, biweekly payments cut total interest from $382,633.47 to $294,511.68, a saving of $88,121.78. At 0% interest, biweekly saves nothing. A plan fee, or a servicer that holds half-payments, lowers the saving."
+      },
+      {
+        "question": "Is a biweekly plan better than paying extra each month?",
+        "answer": "The two give almost the same result. Adding 1/12 of the payment each month, $158.02 on the example loan, saves $87,256.29. Biweekly saves $865.49 more when the servicer applies each half-payment the day it is paid and charges no fee. The 1/12-extra path needs no plan and does not depend on when the servicer applies a payment."
+      },
+      {
+        "question": "Can my servicer hold my half payments?",
+        "answer": "Yes. Under [Regulation Z, 12 CFR 1026.36(c)(1)](https://www.consumerfinance.gov/rules-policy/regulations/1026/36/), a servicer may hold a payment smaller than a full periodic payment in a suspense or unapplied-funds account. It must show those funds on the periodic statement and treat them as a payment once they cover a full payment. If your servicer holds half-payments, the real saving is somewhat smaller than the calculator shows, so ask the servicer how it applies them."
+      },
+      {
+        "question": "Is a biweekly mortgage plan worth a fee?",
+        "answer": "A plan fee is worth paying only if it stays below the gap between the biweekly saving and the free 1/12-extra saving. On the example loan, that gap is $865.49. A sample $400 setup fee plus $2.50 per debit costs $1,970 over the loan. That leaves $86,151.78 saved after fees, which is less than the $87,256.29 the free path saves."
+      },
+      {
+        "question": "Is biweekly worth it on a low-rate mortgage?",
+        "answer": "The saving is much smaller on a low-rate loan. Take $300,000 at 3% for 360 months. There, biweekly saves $20,637.30, against $88,121.78 at 6.5%. At 0% it saves $0."
+      },
+      {
+        "question": "How much extra do I pay each year with biweekly payments?",
+        "answer": "Biweekly payments add one monthly payment's worth each year. The 26 half-payments equal 13 monthly payments. On the example loan, the extra is one payment of $1,896.20 a year. Spread over 12 months, that is $158.02 a month."
+      },
+      {
+        "question": "Does the calculator include taxes and insurance?",
+        "answer": "No. The calculator covers fixed-rate loans and shows principal and interest only, so taxes, insurance and escrow are not included. Copy the balance, rate and months left from your mortgage statement to get your own figures. To work out a monthly payment from a loan amount, use the [mortgage payment calculator](/mortgage/)."
+      }
+    ],
+    "updated": "2026-11-04",
+    "defaultPreset": {
+      "balance": 300000,
+      "ratePct": 6.5,
+      "monthsLeft": 360,
+      "setupFee": 0,
+      "perDebitFee": 0
+    }
+  },
+  // Pay off mortgage or invest calculator — tool-usage pass (2026-11-04). Prose generated via scripts/lib/content_gen.py
+  // (meta beside the draft in reports/mindmap-pass/2026-11-04-tool-usage/drafts/).
+  {
+    "id": "pay-off-mortgage-or-invest-calculator",
+    "islandId": "pay-off-mortgage-or-invest-calculator",
+    "label": "Pay Off Mortgage or Invest",
+    "navOrder": 58,
+    "metaTitle": "Pay Off Mortgage or Invest Calculator: Break-Even Return",
+    "metaDescription": "Pay off mortgage or invest calculator. Enter your loan, extra cash, return and tax rate to see which path ends ahead after tax and your break-even return.",
+    "targetKeyword": "pay off mortgage or invest calculator",
+    "h1": "Pay Off Mortgage or Invest Calculator",
+    "introText": "Pay off the mortgage when your expected return is below the break-even return. If your expected return is above it, invest the extra instead. Enter your balance, mortgage rate, months left, extra cash each month, expected annual return and tax rate on gains in the pay off mortgage or invest calculator below. It shows which path ends ahead after tax and by how much, the break-even return, the interest saved by paying off early and how much sooner the loan is gone.\n\nTake a $300,000 balance at 6.5% with 360 months left. You have $300 extra a month, expect a 7% return and pay 15% tax on gains. The monthly payment is $1,896.20. In our internal calculation, we followed the same $300 a month both ways, month by month. Paying off early ends $8,188.38 ahead because the 7% return sits below the 7.19% break-even. You can check the result by changing any input.",
+    "howItWorks": "The calculator gives both paths the same cash each month until the loan's scheduled payoff date. That cash is the mortgage payment plus the extra. Paying off early sends the extra to principal. Once the loan is gone, the full payment plus the extra is invested every month, including the cash left over in the payoff month. Investing sends the extra to investments every month while the loan runs on schedule. Investments grow monthly at your annual return, and at the end, tax is charged on gains (balance minus contributions) at your tax rate. Both homes are paid off by the original payoff date, so the comparison comes down to the after-tax invested balance on each path.\n\nThe break-even return is the annual return at which both paths end equal. Compare it with the return you expect after fees. Below the break-even, paying off early wins, and above it, investing wins. On the example loan, the break-even is 7.19%, so the 7% placeholder leaves paying off early $8,188.38 ahead. Paying off early also ends the loan 110 months sooner and saves $135,115.17 in interest. The pay-off-early path ends with an after-tax balance of $322,598.79 at the original payoff date, against $314,410.41 for investing the $300. At a 5% return on the same loan, paying off early ends $72,807.70 ahead. Treat the 7% return and 15% tax rate as placeholders and replace them with your own.\n\nA lower mortgage rate moves the break-even down. Keep the same balance, term, extra cash and tax rate but use a 3% mortgage, and the break-even return is 3.40%. At a 7% return, investing then ends $116,226.56 ahead. A tax-free account also lowers the break-even. Enter 0% tax for a Roth individual retirement account (IRA) or another account with no tax on gains, and the 6.5% loan has a break-even of 6.70%. That break-even equals the loan's effective annual rate. At a 7% return, investing ends $14,210.46 ahead.\n\nThe calculator assumes steady returns with no market losses. Real returns vary year to year, and investing can lose money while paying off principal cannot. It ignores the mortgage-interest deduction because [Internal Revenue Service (IRS) Publication 936](https://www.irs.gov/publications/p936) lets you deduct home mortgage interest only if you itemize deductions on Schedule A. Results cover principal and interest only. Prepaid principal cannot be taken back out without selling or borrowing against the home. If you have no emergency fund, size one with the [emergency fund calculator](/emergency-fund-calculator/) before you send extra cash to the loan.\n\nBased on our internal calculation, pay off early when your expected return is below the break-even, and invest when it is above. A lower mortgage rate or a tax-free account lowers the break-even, which tips the result toward investing. For more worked examples, read the [pay off mortgage early or invest](/guides/pay-off-mortgage-early-or-invest/) guide. Run your own numbers in the pay off mortgage or invest calculator, then use the [mortgage payoff calculator](/mortgage/payoff-calculator/) to see your new payoff date.",
+    "faqs": [
+      {
+        "question": "Should I pay off my mortgage or invest the money?",
+        "answer": "Pay off the mortgage if your expected return is below the break-even return, and invest if it is above. Take a $300,000 loan at 6.5% with $300 extra a month. With a 15% tax on gains, the break-even return is 7.19%. At a 7% return, paying off early ends $8,188.38 ahead."
+      },
+      {
+        "question": "What return do I need to beat my mortgage rate?",
+        "answer": "You need a return above the break-even return the calculator shows, and that figure can sit above your mortgage rate. With a 15% tax on gains, a 6.5% loan has a break-even return of 7.19%. With no tax on gains, the break-even is 6.70%, which equals the loan's effective annual rate."
+      },
+      {
+        "question": "Is it better to pay off a 3% mortgage or invest?",
+        "answer": "On a 3% mortgage, investing comes out ahead at a 7% return. The example uses a $300,000 balance, 360 months left and $300 extra a month. With a 15% tax on gains, the break-even return is 3.40%. At a 7% return, investing ends $116,226.56 ahead."
+      },
+      {
+        "question": "Does a Roth IRA change the answer?",
+        "answer": "Yes, a Roth IRA lowers the break-even return because gains are not taxed. Enter 0% tax for a Roth IRA or any account with no tax on gains. On the 6.5% example loan, the break-even drops from 7.19% to 6.70%. At a 7% return, investing then ends $14,210.46 ahead."
+      },
+      {
+        "question": "Should I count the mortgage interest deduction?",
+        "answer": "The calculator leaves the mortgage-interest deduction out. [IRS Publication 936](https://www.irs.gov/publications/p936) lets you deduct home mortgage interest only if you itemize deductions on Schedule A. If you itemize, the results do not include the deduction, so read the [pay off mortgage vs invest comparison](/compare/pay-off-mortgage-vs-invest/) before you decide."
+      },
+      {
+        "question": "What does the calculator leave out?",
+        "answer": "The calculator assumes steady returns with no market losses, though real returns vary year to year and investing can lose money. It ignores the mortgage-interest deduction and shows principal and interest only. To see how weaker returns change the answer, enter a lower return: at 5% on the example loan, paying off early ends $72,807.70 ahead."
+      },
+      {
+        "question": "Should I build an emergency fund before paying extra on my mortgage?",
+        "answer": "Build the emergency fund first. Prepaid principal cannot be taken back out without selling or borrowing against the home. Size your fund with the [emergency fund calculator](/emergency-fund-calculator/), then come back and test extra payments."
+      },
+      {
+        "question": "What if I pay off the mortgage early and then invest?",
+        "answer": "The calculator models that path when you choose to pay off early. Once the loan is gone, the full payment plus the extra is invested every month, including the cash left over in the payoff month. On the example loan, the loan ends 110 months sooner, and the after-tax balance reaches $322,598.79 at the original payoff date. To see the new payoff date for your own loan, use the [mortgage payoff calculator](/mortgage/payoff-calculator/)."
+      }
+    ],
+    "updated": "2026-11-04",
+    "defaultPreset": {
+      "balance": 300000,
+      "ratePct": 6.5,
+      "monthsLeft": 360,
+      "extraPerMonth": 300,
+      "returnPct": 7,
+      "taxOnGainsPct": 15
+    }
   },
   // Social Security COLA calculator — mindmap-pass 2026-10-14 (2027 COLA brief). Prose generated via scripts/lib/content_gen.py
   // (meta beside the draft in reports/mindmap-pass/2026-10-14-cola/drafts/).
@@ -2808,7 +2922,7 @@ export const CALCULATORS: CalculatorDef[] = [
     sources: [
       { label: "IRS Publication 915: Social Security and Equivalent Railroad Retirement Benefits", url: "https://www.irs.gov/publications/p915" },
     ],
-    updated: "2026-10-21",
+    updated: "2026-11-04",
     defaultPreset: {"status": "mfj", "benefits": 42000, "otherIncome": 30000, "taxExemptInterest": 0},
   },
   // Charitable donation tax deduction calculator — GA4 top-pages pass (2026-10-26). Prose generated via
@@ -3048,7 +3162,7 @@ export const CALCULATORS: CalculatorDef[] = [
         "url": "https://www.irs.gov/taxtopics/tc703"
       }
     ],
-    "updated": "2026-10-28",
+    "updated": "2026-11-04",
     "defaultPreset": {
       "status": "single",
       "taxableIncome": 85000,

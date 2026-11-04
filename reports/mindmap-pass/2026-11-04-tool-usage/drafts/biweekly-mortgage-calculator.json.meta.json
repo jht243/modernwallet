@@ -1,0 +1,121 @@
+{
+ "slug": "biweekly-mortgage-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1166,
+ "floor": 600,
+ "input_tokens": 29793,
+ "output_tokens": 10553,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.3302,
+ "guards": {
+  "repairs": [
+   "slug None -> 'biweekly-mortgage-calculator'"
+  ],
+  "flags": [
+   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'At ModernWallet, we ran that loan three ways in an internal calculation: monthly'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1154,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 353,
+   "floor": 600,
+   "ratio": 0.59,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    1
+   ],
+   "applied": [
+    {
+     "id": "faqs[5].answer",
+     "quote": "At 0% it saves $0, so any fee takes a larger share of a smaller saving.",
+     "replacement": "At 0% it saves $0.",
+     "type": "inference",
+     "why": "SOURCE states only the $0 saving at 0%, not the fee-share consequence"
+    },
+    {
+     "id": "howItWorks",
+     "quote": "The answer changes if your servicer applies each half-payment the day it arrives and charges no fee, because then the plan keeps its full saving.",
+     "replacement": "The answer changes if your servicer applies each half-payment the day it arrives and charges no fee.",
+     "type": "inference",
+     "why": "SOURCE does not state the plan keeps its full saving under these conditions."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1173
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-04T20:10:55+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-04-tool-usage/audit/biweekly-mortgage-calculator.prose-findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "On a $300,000 loan at 6.5%, biweekly payments end the mortgage about 70 months sooner.",
+      "replacement": "On a $300,000, 30-year loan at 6.5%, biweekly payments end the mortgage about 70 months sooner.",
+      "type": "Finding 1: opening answer omits loan term",
+      "why": "The 70-month figure holds only for 360 months left; SOURCE gives a 30-year term."
+     },
+     {
+      "id": "howItWorks",
+      "quote": "The answer changes if your servicer applies each half-payment the day it arrives and charges no fee.",
+      "replacement": "If your servicer applies each half-payment the day it arrives and charges no fee, its biweekly option saves $865.49 more than the 1/12-extra path on the example loan.",
+      "type": "Finding 2: unclear what would change the answer",
+      "why": "States the changed answer using the supported $865.49 gap under the applied-on-arrival, no-fee condition."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "introText",
+       "quote": "At ModernWallet, we ran that loan three ways in an internal calculation: monthly, biweekly, and monthly with 1/12 of a payment added.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1166,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'At ModernWallet, we ran that loan three ways in an internal calculation: monthly'"
+    ]
+   }
+  ]
+ },
+ "seconds": 107.4,
+ "response_id": "msg_011CgiTZjeEGDrgCTcara2N1",
+ "generated_at": "2026-11-04T19:44:22+0000"
+}

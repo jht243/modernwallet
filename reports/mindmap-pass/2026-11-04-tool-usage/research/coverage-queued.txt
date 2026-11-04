@@ -1,0 +1,86 @@
+coverage_lookup: 2 candidate(s) vs 805 repo pages / 816 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1051 past-chart lines
+
+### /biweekly-mortgage-calculator/  — row - · create new content
+keyword: biweekly mortgage calculator
+reader question (new page intent): How much faster do biweekly mortgage payments pay off my loan?
+lookup terms: biweekly mortgage   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /mortgage  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on mortgage]
+    title: Free Mortgage Calculator: Instant Home Loan Estimate
+    desc:  Use our free, simple mortgage calculator to instantly estimate your monthly principal and interest, see full amortization, and learn how a home loan works.
+- /guides/commercial-mortgage-calculator-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage · same format: calculator]
+    title: Commercial Mortgage Calculator: Payment & Balloon
+    desc:  Estimate a commercial mortgage payment, the DSCR lenders require, and the balloon balance due at the end of a typical 10-year loan term.
+- /mortgage/piti-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on mortgage · same format: calculator]
+    title: PITI Mortgage Calculator: All-In Monthly Payment
+    desc:  Calculate your full PITI mortgage payment — principal, interest, property taxes, homeowner's insurance, and PMI — to see what you truly owe each month.
+- /mortgage/affordability-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on mortgage · same format: calculator]
+    title: Mortgage Affordability Calculator: How Much House?
+    desc:  Find out how much house you can afford based on your income, debts, and down payment. Uses the 28/36 DTI rules lenders actually apply.
+- /commercial-mortgage-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on mortgage · same format: calculator]
+    title: Commercial Mortgage Calculator: Payment & Balloon
+    desc:  Commercial mortgage calculator. Estimate your monthly debt service, balloon payment, debt service coverage ratio (DSCR), and debt yield.
+- /mortgage-recast-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on mortgage · same format: calculator]
+    title: Mortgage Recast Calculator: New Payment & Interest Saved
+    desc:  Mortgage recast calculator. Enter your balance, rate and lump sum to see the new payment, interest saved, and how a recast compares to prepaying.
+- /guides/who-overpays-on-mortgages  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage]
+    title: Who Overpays on Mortgages and What It Costs Over Time
+    desc:  Learn who overpays on mortgages, what a quarter-point difference costs on a 30-year loan, and how to compare official Loan Estimates before signing.
+- /roundup/best-mortgage-lenders  [in sitemap · src/data/roundups.ts · topic match 0.5 on mortgage]
+    title: Best Mortgage Lenders of 2026: Top Picks for Buyers
+    desc:  Compare the best mortgage lenders of 2026 by rates, fees, and loan types. Expert picks for first-time buyers, VA borrowers, and refinancers.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-27-trend-lane-c.md [exclusions] - best lenders for home loans / most trusted living trust company for real estate owners / coast fire amount / index investment funds: /roundup/best-mortgage-lenders, /roundup/best-living-trust-services, /guides/coast-fi
+- 2026-10-28-autocomplete.md [table] | 1 | Lens 1 (seed "rent vs buy calculator", 158 completions). `rent vs buy calculator` 14,800/mo KD 49 CPC $1.06 and `rent or buy calculator` 14,800/mo KD 49 (DataForSEO measured, US, 2026-10-28); `rent vs buy calculato
+- 2026-10-28-autocomplete.md [exclusions] - `mortgage payment calculator with pmi` (2,400, KD 66), down payment and home affordability variants (`home affordability calculator by income` est.; `how much is 10 percent down payment` 10): DROP, /mortgage/ calculato
+- 2026-10-29-xtrends.md [table] | Lens 1 direct intent + news-driven (Zillow and Thumbtack 2026 study, Fox Business 2026-10-22). 'hidden cost of owning a home' 210/mo KD 4, 'cost of owning a home calculator' 170/mo KD 25, 'home maintenance cost calcula
+- 2026-10-29-xtrends.md [table] | Scout bullet marked [ENRICH /guides/fed-rate-hike-savings-investments/]. The guide (updated 2026-09-16) stops at the Sept 16 hike and says nothing about the Oct 28 hold with two dissents for a hike. 'fed rate decision'
+- 2026-10-29-xtrends.md [exclusions] - The 'mortgage' CROSS_LINKS group (hub plus 13 spokes) is not edited this run: a shared-group change would need a separate rendered review of 14 routes.
+Commits naming the topic: none
+Same run overlap: row - /pay-off-mortgage-or-invest-calculator/ (0.5)
+
+### /pay-off-mortgage-or-invest-calculator/  — row - · create new content
+keyword: pay off mortgage or invest calculator
+reader question (new page intent): Should I pay off my mortgage or invest the money?
+lookup terms: pay off mortgage invest   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/pay-off-mortgage-vs-invest  [in sitemap · src/data/comparisons.ts · topic match 1.0 on pay off mortgage invest]
+    title: Pay Off Mortgage or Invest: How to Choose Your Path
+    desc:  Deciding whether to pay off mortgage or invest? We compare guaranteed returns, tax rules under IRS Pub 936, liquidity, and what to fund first.
+- /guides/pay-off-mortgage-early-or-invest  [in sitemap · src/data/guides.ts · topic match 1.0 on pay off mortgage invest]
+    title: Pay Off Mortgage Early or Invest at a 3% or 7.5% Rate
+    desc:  Pay off mortgage early or invest? At a 3% rate, investing $500 a month came out ahead in the example. At 7.5%, prepaying won at both 5% and 7% returns.
+- /guides/pay-off-debt-or-invest  [in sitemap · src/data/guides.ts · topic match 0.75 on pay off invest]
+    title: Pay Off Debt or Invest? A Simple Decision Framework
+    desc:  Deciding to pay off debt or invest? Compare your debt's interest rate to your expected return. Grab the 401(k) match, then kill high-rate debt first.
+- /guides/how-to-pay-off-debt  [in sitemap · src/data/guides.ts · topic match 0.5 on pay off]
+    title: How to Pay Off Debt the Fastest Way for Your Situation
+    desc:  Learn how to pay off debt step by step, compare snowball vs. avalanche strategies, avoid minimum payment traps, and explore consolidation or relief.
+- /auto-loan/early-payoff-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on pay off · same format: calculator]
+    title: Pay Off Car Loan Early Calculator: Interest & Time Saved
+    desc:  Use our auto loan early payoff calculator to see how extra payments cut your interest, shorten your payoff date, and save you money. Free instant results.
+- /guides/mortgage-refinance-closing-costs  [in sitemap · src/data/guides.ts · topic match 0.5 on pay mortgage]
+    title: Mortgage Refinance Closing Costs: What You'll Actually Pay
+    desc:  How much does refinancing a mortgage cost? See the real refinance closing cost breakdown, no-closing-cost tradeoffs, and a worked break-even example.
+- /compare/debt-snowball-vs-avalanche  [in sitemap · src/data/comparisons.ts · topic match 0.5 on pay off]
+    title: Debt Snowball vs Avalanche: Which Pays Off Faster?
+    desc:  Debt snowball vs avalanche compared: the snowball clears your smallest balance first, the avalanche targets your highest APR to pay less interest.
+- /guides/how-long-to-pay-off-credit-card  [in sitemap · src/data/guides.ts · topic match 0.5 on pay off]
+    title: How Long to Pay Off Credit Card: The Real Math
+    desc:  How long to pay off a credit card depends on your balance, APR, and payment. See the payoff math, why minimum payments trap you, and how to pay faster.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-25.md [table] | 1 | **Lens 2 (adjacent — the single largest demand cluster around "buying a house").** `home inspection checklist` **8,800/mo, KD 15** (ahrefs), `home buying inspection checklist` 150/KD 22, `buying a home inspection c
+- 2026-10-25.md [table] | 7 | **Lens 1 (direct intent — brief item 2, house selling).** `home selling checklist` 400/KD 8 ($0.90 CPC), `checklist for selling a house` 250/KD 6, `checklist for selling home` 150/KD 11, `home selling checklist pdf
+- 2026-10-27-podcast.md [table] | 3 | Direct intent (podcast: Rental Income Podcast Ep 510 "Does It Make Sense To Buy Rentals With 15 Year Mortgages?"). Cluster: 15 year mortgage for rental property ~250/mo (DataForSEO ESTIMATE band 250-2,500, NOT meas
+- 2026-10-27-podcast.md [exclusions] - how to know if you are ready to retire (30), 401k rollover to ira at retirement (10), how much to spend in retirement (30), how to pay off 60000 in debt (20), spouse handles all the money (est. 0): below the 70/mo floo
+- 2026-10-28-autocomplete.md [table] | 1 | Lens 1 (seed "rent vs buy calculator", 158 completions). `rent vs buy calculator` 14,800/mo KD 49 CPC $1.06 and `rent or buy calculator` 14,800/mo KD 49 (DataForSEO measured, US, 2026-10-28); `rent vs buy calculato
+- 2026-11-02-xtrends.md [table] | Lens 1 direct intent + fresh news. 'medicare part d 2027' 260/mo KD 0 (measured, SEMRUSH us 2026-11-02), 'medicare open enrollment 2027' 140/mo KD 45, 'medicare part d premiums 2027' 20/mo; 'part d premium increase 202
+Commits naming the topic: none
+Same run overlap: none
+

@@ -1,0 +1,214 @@
+{
+ "tag": "soulcircle01-20",
+ "api": true,
+ "queries": {
+  "The Bogleheads' Guide to Investing Larimore Lindauer LeBoeuf": [
+   {
+    "asin": "1119847672",
+    "title": "The Bogleheads' Guide to Investing"
+   },
+   {
+    "asin": "0470067365",
+    "title": "The Bogleheads' Guide to Investing"
+   },
+   {
+    "asin": "0470919019",
+    "title": "The Bogleheads' Guide to Retirement Planning"
+   },
+   {
+    "asin": "0471730335",
+    "title": "The Bogleheads' Guide to Investing"
+   },
+   {
+    "asin": "1394330952",
+    "title": "The Bogleheads' Guide to the Three-Fund Portfolio: How a Simple Portfolio of Three Total Market Index Funds Outperforms Most Investors with Less Risk"
+   }
+  ],
+  "How to Make Your Money Last Jane Bryant Quinn": [
+   {
+    "asin": "1982115831",
+    "title": "How to Make Your Money Last - Completely Updated for Planning Today: The Indispensable Retirement Guide"
+   },
+   {
+    "asin": "B07X3VN963",
+    "title": "How to Make Your Money Last: The Indispensable Retirement Guide Jane Bryant Quinn - Paperback"
+   },
+   {
+    "asin": "0743269969",
+    "title": "Making the Most of Your Money Now: The Classic Bestseller Completely Revised for the New Economy"
+   },
+   {
+    "asin": "0684811766",
+    "title": "Making The Most of Your Money"
+   },
+   {
+    "asin": "140199539X",
+    "title": "The Ultimate Retirement Guide for 50+: Winning Strategies to Make Your Money Last a Lifetime (Revised & Updated for 2025)"
+   }
+  ],
+  "The Four Pillars of Investing William Bernstein second edition": [
+   {
+    "asin": "1264715919",
+    "title": "The Four Pillars of Investing, Second Edition: Lessons for Building a Winning Portfolio"
+   },
+   {
+    "asin": "626315411X",
+    "title": "The Four Pillars of Investing, Second Edition: Lessons for Building a Winning Portfolio (Chinese Edition)"
+   },
+   {
+    "asin": "0071747052",
+    "title": "The Four Pillars of Investing: Lessons for Building a Winning Portfolio"
+   },
+   {
+    "asin": "B0G69SZ6ZR",
+    "title": "Start Investing and Stop Gambling: Classic Investing Principles That Work"
+   },
+   {
+    "asin": "0988780321",
+    "title": "Rational Expectations: Asset Allocation for Investing Adults (Investing for Adults)"
+   }
+  ],
+  "Retirement Planning Guidebook Wade Pfau": [
+   {
+    "asin": "1945640197",
+    "title": "Retirement Planning Guidebook: Navigating the Important Decisions for Retirement Success (The Retirement Researcher Guide Series)"
+   },
+   {
+    "asin": "1945640154",
+    "title": "Retirement Planning Guidebook: Navigating the Important Decisions for Retirement Success (The Retirement Researcher Guide)"
+   },
+   {
+    "asin": "B09FFQCDXY",
+    "title": "Retirement Planning Guidebook: Navigating the Important Decisions for Retirement Success"
+   },
+   {
+    "asin": "B0DCV3X2S7",
+    "title": "THE PRACTICAL GUIDEBOOK TO RETIREMENT PLANNING: Effective Tactics for Growing Savings, Expanding Investments, and Securing Long-Term Income Regardless of When You Begin."
+   },
+   {
+    "asin": "1507213603",
+    "title": "The 5 Years Before You Retire, Updated Edition: Retirement Planning When You Need It the Most"
+   }
+  ],
+  "J.K. Lasser's Your Income Tax 2027": [
+   {
+    "asin": "1394461577",
+    "title": "J.K. Lasser's Your Income Tax 2027: For Preparing Your 2026 Tax Return"
+   },
+   {
+    "asin": "1394448961",
+    "title": "J.K. Lasser's Small Business Taxes 2027: Your Complete Guide to a Better Bottom Line"
+   },
+   {
+    "asin": "1394461607",
+    "title": "Your Income Tax Professional 2027"
+   },
+   {
+    "asin": "1394359799",
+    "title": "J.K. Lasser's Small Business Taxes 2026: Your Complete Guide to a Better Bottom Line"
+   },
+   {
+    "asin": "1394449119",
+    "title": "J.K. Lasser's 1001 Deductions and Tax Breaks 2027: Your Complete Guide to Everything Deductible"
+   }
+  ],
+  "Social Security Made Simple Mike Piper": [
+   {
+    "asin": "1950967190",
+    "title": "Social Security Made Simple: Social Security Retirement Benefits and Related Planning Topics Explained in 100 Pages or Less (Financial Topics in 100 Pages or Less)"
+   },
+   {
+    "asin": "0997946512",
+    "title": "Social Security Made Simple: Social Security Retirement Benefits and Related Planning Topics Explained in 100 Pages or Less"
+   },
+   {
+    "asin": "1962693333",
+    "title": "Social Security: Simple & Smart: (Updated for 2026)"
+   },
+   {
+    "asin": "1949673995",
+    "title": "Social Security: Simple & Smart (Updated for 2023)"
+   },
+   {
+    "asin": "B0HKCQF8KG",
+    "title": "Social Security Made Simple: The Beginner's Guide to Claiming at the Right Time, Understanding Medicare, Avoiding Tax Surprises, and Creating a Smarter Retirement Income Plan"
+   }
+  ],
+  "Get What's Yours Kotlikoff Moeller Solman": [
+   {
+    "asin": "1501144766",
+    "title": "Get What's Yours - Revised & Updated: The Secrets to Maxing Out Your Social Security (The Get What's Yours Series)"
+   },
+   {
+    "asin": "1511519169",
+    "title": "Summary and Critique, Key Ideas and Facts: A Guide to: Get What's Yours: The Secrets to Maxing Out Your Social Security\""
+   }
+  ],
+  "Get What's Yours for Medicare Philip Moeller": [
+   {
+    "asin": "1668031914",
+    "title": "Get What's Yours for Medicare - Revised and Updated: Maximize Your Coverage, Minimize Your Costs (The Get What's Yours Series)"
+   },
+   {
+    "asin": "1501124005",
+    "title": "Get What's Yours for Medicare: Maximize Your Coverage, Minimize Your Costs (The Get What's Yours Series)"
+   },
+   {
+    "asin": "1501144766",
+    "title": "Get What's Yours - Revised & Updated: The Secrets to Maxing Out Your Social Security (The Get What's Yours Series)"
+   },
+   {
+    "asin": "B0GPXNVBLG",
+    "title": "Tackling Medicare: A Simple 2026 Guide to Understanding What You Need to Know About Medicare"
+   },
+   {
+    "asin": "1982134259",
+    "title": "Get What's Yours for Health Care: How to Get the Best Care at the Right Price (The Get What's Yours Series)"
+   }
+  ],
+  "Deduct It Lower Your Small Business Taxes Stephen Fishman": [
+   {
+    "asin": "1413333052",
+    "title": "Deduct It!: Lower Your Small Business Taxes"
+   },
+   {
+    "asin": "1413332153",
+    "title": "Deduct It!: Lower Your Small Business Taxes"
+   },
+   {
+    "asin": "1413326811",
+    "title": "Deduct It!: Lower Your Small Business Taxes"
+   },
+   {
+    "asin": "B0GH14X12P",
+    "title": "LLC & S-Corp Taxes for Beginners: Step-by-Step Small Business Tax Guide to Choose the Right Business Entity, Save Thousands on Taxes & Avoid Costly Mistakes"
+   },
+   {
+    "asin": "1413333117",
+    "title": "Every Landlord's Tax Deduction Guide"
+   }
+  ],
+  "Working for Yourself Law and Taxes for Independent Contractors Stephen Fishman": [
+   {
+    "asin": "141333217X",
+    "title": "Working for Yourself: Law & Taxes for Independent Contractors, Freelancers & Gig Workers of All Types"
+   },
+   {
+    "asin": "1413323693",
+    "title": "Working for Yourself: Law & Taxes for Independent Contractors, Freelancers & Gig Workers of All Types"
+   },
+   {
+    "asin": "1413307523",
+    "title": "Working for Yourself: Law & Taxes for Independent Contractors, Freelancers & Consultants"
+   },
+   {
+    "asin": "B00ZY8N3YI",
+    "title": "Working for Yourself: Law & Taxes for Independent Contractors, Freelancers & Consultants 9th edition by Fishman, Stephen (2014) Paperback"
+   },
+   {
+    "asin": "1413333621",
+    "title": "Consultant & Independent Contractor Agreements"
+   }
+  ]
+ }
+}

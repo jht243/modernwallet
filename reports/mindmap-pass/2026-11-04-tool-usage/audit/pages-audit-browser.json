@@ -1,0 +1,385 @@
+{
+ "/biweekly-mortgage-calculator/@390": {
+  "overflow": {
+   "sw": 390,
+   "cw": 390
+  },
+  "dataTool": [
+   "biweekly-mortgage-calculator"
+  ],
+  "labels": [
+   {
+    "t": "Current loan balance $",
+    "hasInput": true,
+    "w": 316
+   },
+   {
+    "t": "Interest rate %",
+    "hasInput": true,
+    "w": 152
+   },
+   {
+    "t": "Months left",
+    "hasInput": true,
+    "w": 152
+   },
+   {
+    "t": "Biweekly plan setup fee $",
+    "hasInput": true,
+    "w": 152
+   },
+   {
+    "t": "Fee per biweekly debit $",
+    "hasInput": true,
+    "w": 152
+   }
+  ],
+  "inputs": [
+   {
+    "v": "300,000",
+    "h": 40,
+    "w": 316,
+    "aria": null
+   },
+   {
+    "v": "6.5",
+    "h": 40,
+    "w": 152,
+    "aria": "Percent"
+   },
+   {
+    "v": "360",
+    "h": 40,
+    "w": 152,
+    "aria": null
+   },
+   {
+    "v": "",
+    "h": 40,
+    "w": 152,
+    "aria": null
+   },
+   {
+    "v": "",
+    "h": 40,
+    "w": 152,
+    "aria": null
+   }
+  ],
+  "default": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Interest rate % Months left Biweekly plan setup fee $ Fee per biweekly debit $ Copy the balance, rate and months left from your mortgage statement. The figures above are placeholders. Leave the fees at $0 if you set up biweekly payments yourself; enter them if a servicer or company charges for a biweekly plan. BIWEEKLY PAYMENTS END THE LOAN 5 years 10 months sooner $948.10 every two weeks instead of $1,896.20 a month (principal and interest) Interest saved (biweekly) $88,122 Paid off in 24 years 2 months SAME 13TH PAYMENT, NO PLAN $87,256 interest saved Add $158.02 (1/12 of a payment) to each monthly payment and the loan ends in 24 years 2 months, 5 years 10 months sooner, with no fees and no half-payments to time. Monthly schedule 30 years Interest, monthly schedule $382,633 Estimate only. Assumes a fixed-rate loan and principal and interest only (taxes and insurance not included). Biweekly results assume each half-payment is applied the day it is paid. Under Regulation Z, 12 CFR 1026.36(c), a servicer may hold a payment smaller than a full monthly payment until a full payment builds up, which would make the biweekly savings somewhat smaller."
+ },
+ "/pay-off-mortgage-or-invest-calculator/@390": {
+  "overflow": {
+   "sw": 390,
+   "cw": 390
+  },
+  "dataTool": [
+   "pay-off-mortgage-or-invest-calculator"
+  ],
+  "labels": [
+   {
+    "t": "Current loan balance $",
+    "hasInput": true,
+    "w": 316
+   },
+   {
+    "t": "Mortgage rate %",
+    "hasInput": true,
+    "w": 152
+   },
+   {
+    "t": "Months left",
+    "hasInput": true,
+    "w": 152
+   },
+   {
+    "t": "Extra cash each month $",
+    "hasInput": true,
+    "w": 316
+   },
+   {
+    "t": "Your expected annual return %",
+    "hasInput": true,
+    "w": 152
+   },
+   {
+    "t": "Tax rate on investment gains %",
+    "hasInput": true,
+    "w": 152
+   }
+  ],
+  "inputs": [
+   {
+    "v": "300,000",
+    "h": 40,
+    "w": 316,
+    "aria": null
+   },
+   {
+    "v": "6.5",
+    "h": 40,
+    "w": 152,
+    "aria": "Percent"
+   },
+   {
+    "v": "360",
+    "h": 40,
+    "w": 152,
+    "aria": null
+   },
+   {
+    "v": "300",
+    "h": 40,
+    "w": 316,
+    "aria": null
+   },
+   {
+    "v": "7",
+    "h": 40,
+    "w": 152,
+    "aria": "Percent"
+   },
+   {
+    "v": "15",
+    "h": 40,
+    "w": 152,
+    "aria": "Percent"
+   }
+  ],
+  "default": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Mortgage rate % Months left Extra cash each month $ Your expected annual return % Tax rate on investment gains % The 7% return and 15% tax rate are placeholders, not a forecast. Enter the return you expect after fees, and 0% tax if the money goes into a Roth IRA or other account with no tax on gains. PAYING OFF EARLY ENDS AHEAD BY $8,188 after tax, at the loan's scheduled payoff in 30 years BREAK-EVEN RETURN 7.19% Investing beats paying off early only if your steady annual return beats this rate, after the tax rate you entered. Pay off early: invested after tax $322,599 Invest the extra: invested after tax $314,410 Interest saved by paying off early $135,115 Loan gone sooner by 9 years 2 months Estimate only. Both paths spend the same cash each month until the scheduled payoff: paying off early sends the extra to principal, then invests the full payment once the loan is gone. Returns are treated as steady, with no market losses. The mortgage-interest deduction is left out because it only applies if you itemize (IRS Publication 936). Principal and interest only."
+ },
+ "errors@390": [],
+ "/biweekly-mortgage-calculator/@1366": {
+  "overflow": {
+   "sw": 1366,
+   "cw": 1366
+  },
+  "dataTool": [
+   "biweekly-mortgage-calculator"
+  ],
+  "labels": [
+   {
+    "t": "Current loan balance $",
+    "hasInput": true,
+    "w": 405
+   },
+   {
+    "t": "Interest rate %",
+    "hasInput": true,
+    "w": 197
+   },
+   {
+    "t": "Months left",
+    "hasInput": true,
+    "w": 197
+   },
+   {
+    "t": "Biweekly plan setup fee $",
+    "hasInput": true,
+    "w": 197
+   },
+   {
+    "t": "Fee per biweekly debit $",
+    "hasInput": true,
+    "w": 197
+   }
+  ],
+  "inputs": [
+   {
+    "v": "300,000",
+    "h": 40,
+    "w": 405,
+    "aria": null
+   },
+   {
+    "v": "6.5",
+    "h": 40,
+    "w": 197,
+    "aria": "Percent"
+   },
+   {
+    "v": "360",
+    "h": 40,
+    "w": 197,
+    "aria": null
+   },
+   {
+    "v": "",
+    "h": 40,
+    "w": 197,
+    "aria": null
+   },
+   {
+    "v": "",
+    "h": 40,
+    "w": 197,
+    "aria": null
+   }
+  ],
+  "default": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Interest rate % Months left Biweekly plan setup fee $ Fee per biweekly debit $ Copy the balance, rate and months left from your mortgage statement. The figures above are placeholders. Leave the fees at $0 if you set up biweekly payments yourself; enter them if a servicer or company charges for a biweekly plan. BIWEEKLY PAYMENTS END THE LOAN 5 years 10 months sooner $948.10 every two weeks instead of $1,896.20 a month (principal and interest) Interest saved (biweekly) $88,122 Paid off in 24 years 2 months SAME 13TH PAYMENT, NO PLAN $87,256 interest saved Add $158.02 (1/12 of a payment) to each monthly payment and the loan ends in 24 years 2 months, 5 years 10 months sooner, with no fees and no half-payments to time. Monthly schedule 30 years Interest, monthly schedule $382,633 Estimate only. Assumes a fixed-rate loan and principal and interest only (taxes and insurance not included). Biweekly results assume each half-payment is applied the day it is paid. Under Regulation Z, 12 CFR 1026.36(c), a servicer may hold a payment smaller than a full monthly payment until a full payment builds up, which would make the biweekly savings somewhat smaller.",
+  "fees": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Interest rate % Months left Biweekly plan setup fee $ Fee per biweekly debit $ Copy the balance, rate and months left from your mortgage statement. The figures above are placeholders. Leave the fees at $0 if you set up biweekly payments yourself; enter them if a servicer or company charges for a biweekly plan. BIWEEKLY PAYMENTS END THE LOAN 5 years 10 months sooner $948.10 every two weeks instead of $1,896.20 a month (principal and interest) Interest saved (biweekly) $88,122 Paid off in 24 years 2 months Plan fees over the loan $1,970 Interest saved, after fees $86,152 SAME 13TH PAYMENT, NO PLAN $87,256 interest saved Add $158.02 (1/12 of a payment) to each monthly payment and the loan ends in 24 years 2 months, 5 years 10 months sooner, with no fees and no half-payments to time. Monthly schedule 30 years Interest, monthly schedule $382,633 Estimate only. Assumes a fixed-rate loan and principal and interest only (taxes and insurance not included). Biweekly results assume each half-payment is applied the day it is paid. Under Regulation Z, 12 CFR 1026.36(c), a servicer may hold a payment smaller than a full monthly payment until a full payment builds up, which would make the biweekly savings somewhat smaller.",
+  "rate3": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Interest rate % Months left Biweekly plan setup fee $ Fee per biweekly debit $ Copy the balance, rate and months left from your mortgage statement. The figures above are placeholders. Leave the fees at $0 if you set up biweekly payments yourself; enter them if a servicer or company charges for a biweekly plan. BIWEEKLY PAYMENTS END THE LOAN 3 years 6 months sooner $632.41 every two weeks instead of $1,264.81 a month (principal and interest) Interest saved (biweekly) $20,637 Paid off in 26 years 6 months SAME 13TH PAYMENT, NO PLAN $20,345 interest saved Add $105.40 (1/12 of a payment) to each monthly payment and the loan ends in 26 years 6 months, 3 years 6 months sooner, with no fees and no half-payments to time. Monthly schedule 30 years Interest, monthly schedule $155,332 Estimate only. Assumes a fixed-rate loan and principal and interest only (taxes and insurance not included). Biweekly results assume each half-payment is applied the day it is paid. Under Regulation Z, 12 CFR 1026.36(c), a servicer may hold a payment smaller than a full monthly payment until a full payment builds up, which would make the biweekly savings somewhat smaller.",
+  "rate0": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Interest rate % Months left Biweekly plan setup fee $ Fee per biweekly debit $ Copy the balance, rate and months left from your mortgage statement. The figures above are placeholders. Leave the fees at $0 if you set up biweekly payments yourself; enter them if a servicer or company charges for a biweekly plan. BIWEEKLY PAYMENTS END THE LOAN 2 years 4 months sooner $416.67 every two weeks instead of $833.33 a month (principal and interest) Interest saved (biweekly) $0 Paid off in 27 years 8 months SAME 13TH PAYMENT, NO PLAN $0 interest saved Add $69.44 (1/12 of a payment) to each monthly payment and the loan ends in 27 years 9 months, 2 years 3 months sooner, with no fees and no half-payments to time. Monthly schedule 30 years Interest, monthly schedule $0 Estimate only. Assumes a fixed-rate loan and principal and interest only (taxes and insurance not included). Biweekly results assume each half-payment is applied the day it is paid. Under Regulation Z, 12 CFR 1026.36(c), a servicer may hold a payment smaller than a full monthly payment until a full payment builds up, which would make the biweekly savings somewhat smaller.",
+  "bal0": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Interest rate % Months left Biweekly plan setup fee $ Fee per biweekly debit $ Copy the balance, rate and months left from your mortgage statement. The figures above are placeholders. Leave the fees at $0 if you set up biweekly payments yourself; enter them if a servicer or company charges for a biweekly plan. ENTER A BALANCE AND MONTHS LEFT",
+  "mid": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Interest rate % Months left Biweekly plan setup fee $ Fee per biweekly debit $ Copy the balance, rate and months left from your mortgage statement. The figures above are placeholders. Leave the fees at $0 if you set up biweekly payments yourself; enter them if a servicer or company charges for a biweekly plan. BIWEEKLY PAYMENTS END THE LOAN 4 years 9 months sooner $819.67 every two weeks instead of $1,639.33 a month (principal and interest) Interest saved (biweekly) $58,272 Paid off in 21 years 3 months SAME 13TH PAYMENT, NO PLAN $57,573 interest saved Add $136.61 (1/12 of a payment) to each monthly payment and the loan ends in 21 years 4 months, 4 years 8 months sooner, with no fees and no half-payments to time. Monthly schedule 26 years Interest, monthly schedule $273,472 Estimate only. Assumes a fixed-rate loan and principal and interest only (taxes and insurance not included). Biweekly results assume each half-payment is applied the day it is paid. Under Regulation Z, 12 CFR 1026.36(c), a servicer may hold a payment smaller than a full monthly payment until a full payment builds up, which would make the biweekly savings somewhat smaller.",
+  "monthsHuge": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Interest rate % Months left Biweekly plan setup fee $ Fee per biweekly debit $ Copy the balance, rate and months left from your mortgage statement. The figures above are placeholders. Leave the fees at $0 if you set up biweekly payments yourself; enter them if a servicer or company charges for a biweekly plan. BIWEEKLY PAYMENTS END THE LOAN 11 years sooner $728.72 every two weeks instead of $1,457.45 a month (principal and interest) Interest saved (biweekly) $149,825 Paid off in 29 years SAME 13TH PAYMENT, NO PLAN $148,979 interest saved Add $121.45 (1/12 of a payment) to each monthly payment and the loan ends in 29 years 1 month, 10 years 11 months sooner, with no fees and no half-payments to time. Monthly schedule 40 years Interest, monthly schedule $461,575 Estimate only. Assumes a fixed-rate loan and principal and interest only (taxes and insurance not included). Biweekly results assume each half-payment is applied the day it is paid. Under Regulation Z, 12 CFR 1026.36(c), a servicer may hold a payment smaller than a full monthly payment until a full payment builds up, which would make the biweekly savings somewhat smaller."
+ },
+ "/pay-off-mortgage-or-invest-calculator/@1366": {
+  "overflow": {
+   "sw": 1366,
+   "cw": 1366
+  },
+  "dataTool": [
+   "pay-off-mortgage-or-invest-calculator"
+  ],
+  "labels": [
+   {
+    "t": "Current loan balance $",
+    "hasInput": true,
+    "w": 405
+   },
+   {
+    "t": "Mortgage rate %",
+    "hasInput": true,
+    "w": 197
+   },
+   {
+    "t": "Months left",
+    "hasInput": true,
+    "w": 197
+   },
+   {
+    "t": "Extra cash each month $",
+    "hasInput": true,
+    "w": 405
+   },
+   {
+    "t": "Your expected annual return %",
+    "hasInput": true,
+    "w": 197
+   },
+   {
+    "t": "Tax rate on investment gains %",
+    "hasInput": true,
+    "w": 197
+   }
+  ],
+  "inputs": [
+   {
+    "v": "300,000",
+    "h": 40,
+    "w": 405,
+    "aria": null
+   },
+   {
+    "v": "6.5",
+    "h": 40,
+    "w": 197,
+    "aria": "Percent"
+   },
+   {
+    "v": "360",
+    "h": 40,
+    "w": 197,
+    "aria": null
+   },
+   {
+    "v": "300",
+    "h": 40,
+    "w": 405,
+    "aria": null
+   },
+   {
+    "v": "7",
+    "h": 40,
+    "w": 197,
+    "aria": "Percent"
+   },
+   {
+    "v": "15",
+    "h": 40,
+    "w": 197,
+    "aria": "Percent"
+   }
+  ],
+  "default": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Mortgage rate % Months left Extra cash each month $ Your expected annual return % Tax rate on investment gains % The 7% return and 15% tax rate are placeholders, not a forecast. Enter the return you expect after fees, and 0% tax if the money goes into a Roth IRA or other account with no tax on gains. PAYING OFF EARLY ENDS AHEAD BY $8,188 after tax, at the loan's scheduled payoff in 30 years BREAK-EVEN RETURN 7.19% Investing beats paying off early only if your steady annual return beats this rate, after the tax rate you entered. Pay off early: invested after tax $322,599 Invest the extra: invested after tax $314,410 Interest saved by paying off early $135,115 Loan gone sooner by 9 years 2 months Estimate only. Both paths spend the same cash each month until the scheduled payoff: paying off early sends the extra to principal, then invests the full payment once the loan is gone. Returns are treated as steady, with no market losses. The mortgage-interest deduction is left out because it only applies if you itemize (IRS Publication 936). Principal and interest only.",
+  "ret5": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Mortgage rate % Months left Extra cash each month $ Your expected annual return % Tax rate on investment gains % The 7% return and 15% tax rate are placeholders, not a forecast. Enter the return you expect after fees, and 0% tax if the money goes into a Roth IRA or other account with no tax on gains. PAYING OFF EARLY ENDS AHEAD BY $72,808 after tax, at the loan's scheduled payoff in 30 years BREAK-EVEN RETURN 7.19% Investing beats paying off early only if your steady annual return beats this rate, after the tax rate you entered. Pay off early: invested after tax $296,929 Invest the extra: invested after tax $224,121 Interest saved by paying off early $135,115 Loan gone sooner by 9 years 2 months Estimate only. Both paths spend the same cash each month until the scheduled payoff: paying off early sends the extra to principal, then invests the full payment once the loan is gone. Returns are treated as steady, with no market losses. The mortgage-interest deduction is left out because it only applies if you itemize (IRS Publication 936). Principal and interest only.",
+  "rate3": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Mortgage rate % Months left Extra cash each month $ Your expected annual return % Tax rate on investment gains % The 7% return and 15% tax rate are placeholders, not a forecast. Enter the return you expect after fees, and 0% tax if the money goes into a Roth IRA or other account with no tax on gains. INVESTING ENDS AHEAD BY $116,227 after tax, at the loan's scheduled payoff in 30 years BREAK-EVEN RETURN 3.40% Investing beats paying off early only if your steady annual return beats this rate, after the tax rate you entered. Pay off early: invested after tax $198,184 Invest the extra: invested after tax $314,410 Interest saved by paying off early $46,366 Loan gone sooner by 8 years 2 months Estimate only. Both paths spend the same cash each month until the scheduled payoff: paying off early sends the extra to principal, then invests the full payment once the loan is gone. Returns are treated as steady, with no market losses. The mortgage-interest deduction is left out because it only applies if you itemize (IRS Publication 936). Principal and interest only.",
+  "tax0": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Mortgage rate % Months left Extra cash each month $ Your expected annual return % Tax rate on investment gains % The 7% return and 15% tax rate are placeholders, not a forecast. Enter the return you expect after fees, and 0% tax if the money goes into a Roth IRA or other account with no tax on gains. INVESTING ENDS AHEAD BY $14,210 after tax, at the loan's scheduled payoff in 30 years BREAK-EVEN RETURN 6.70% Investing beats paying off early only if your steady annual return beats this rate, after the tax rate you entered. Pay off early: invested after tax $336,625 Invest the extra: invested after tax $350,836 Interest saved by paying off early $135,115 Loan gone sooner by 9 years 2 months Estimate only. Both paths spend the same cash each month until the scheduled payoff: paying off early sends the extra to principal, then invests the full payment once the loan is gone. Returns are treated as steady, with no market losses. The mortgage-interest deduction is left out because it only applies if you itemize (IRS Publication 936). Principal and interest only.",
+  "extra0": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Mortgage rate % Months left Extra cash each month $ Your expected annual return % Tax rate on investment gains % The 7% return and 15% tax rate are placeholders, not a forecast. Enter the return you expect after fees, and 0% tax if the money goes into a Roth IRA or other account with no tax on gains. ENTER AN EXTRA AMOUNT TO COMPARE $0 after tax, at the loan's scheduled payoff in 30 years Pay off early: invested after tax $0 Invest the extra: invested after tax $0 Interest saved by paying off early $0 Loan gone sooner by 0 months Estimate only. Both paths spend the same cash each month until the scheduled payoff: paying off early sends the extra to principal, then invests the full payment once the loan is gone. Returns are treated as steady, with no market losses. The mortgage-interest deduction is left out because it only applies if you itemize (IRS Publication 936). Principal and interest only.",
+  "rate0": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Mortgage rate % Months left Extra cash each month $ Your expected annual return % Tax rate on investment gains % The 7% return and 15% tax rate are placeholders, not a forecast. Enter the return you expect after fees, and 0% tax if the money goes into a Roth IRA or other account with no tax on gains. INVESTING ENDS AHEAD BY $177,010 after tax, at the loan's scheduled payoff in 30 years BREAK-EVEN RETURN 0.00% Investing beats paying off early only if your steady annual return beats this rate, after the tax rate you entered. Pay off early: invested after tax $137,400 Invest the extra: invested after tax $314,410 Interest saved by paying off early $0 Loan gone sooner by 7 years 11 months Estimate only. Both paths spend the same cash each month until the scheduled payoff: paying off early sends the extra to principal, then invests the full payment once the loan is gone. Returns are treated as steady, with no market losses. The mortgage-interest deduction is left out because it only applies if you itemize (IRS Publication 936). Principal and interest only.",
+  "tax100": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Mortgage rate % Months left Extra cash each month $ Your expected annual return % Tax rate on investment gains % The 7% return and 15% tax rate are placeholders, not a forecast. Enter the return you expect after fees, and 0% tax if the money goes into a Roth IRA or other account with no tax on gains. PAYING OFF EARLY ENDS AHEAD BY $135,115 after tax, at the loan's scheduled payoff in 30 years BREAK-EVEN RETURN 30.00% Investing beats paying off early only if your steady annual return beats this rate, after the tax rate you entered. Pay off early: invested after tax $243,115 Invest the extra: invested after tax $108,000 Interest saved by paying off early $135,115 Loan gone sooner by 9 years 2 months Estimate only. Both paths spend the same cash each month until the scheduled payoff: paying off early sends the extra to principal, then invests the full payment once the loan is gone. Returns are treated as steady, with no market losses. The mortgage-interest deduction is left out because it only applies if you itemize (IRS Publication 936). Principal and interest only.",
+  "months0": "INTERACTIVE — EDIT ANY FIELD Current loan balance $ Mortgage rate % Months left Extra cash each month $ Your expected annual return % Tax rate on investment gains % The 7% return and 15% tax rate are placeholders, not a forecast. Enter the return you expect after fees, and 0% tax if the money goes into a Roth IRA or other account with no tax on gains. ENTER A BALANCE AND MONTHS LEFT"
+ },
+ "errors@1366": [],
+ "sample390/mortgage/extra-payment-calculator/": {
+  "overflow": {
+   "sw": 390,
+   "cw": 390
+  },
+  "errs": []
+ },
+ "sample390/mortgage-recast-calculator/": {
+  "overflow": {
+   "sw": 390,
+   "cw": 390
+  },
+  "errs": []
+ },
+ "sample390/guides/pay-off-mortgage-early-or-invest/": {
+  "overflow": {
+   "sw": 390,
+   "cw": 390
+  },
+  "errs": []
+ },
+ "sample390/compare/pay-off-mortgage-vs-invest/": {
+  "overflow": {
+   "sw": 390,
+   "cw": 390
+  },
+  "errs": []
+ },
+ "sample390/inflation-calculator/": {
+  "overflow": {
+   "sw": 390,
+   "cw": 390
+  },
+  "errs": []
+ },
+ "sample390/florida-amendment-3-calculator/": {
+  "overflow": {
+   "sw": 390,
+   "cw": 390
+  },
+  "errs": []
+ },
+ "sample390/self-employment-tax/doordash-taxes/": {
+  "overflow": {
+   "sw": 390,
+   "cw": 390
+  },
+  "errs": []
+ },
+ "sample390/stock-capital-gains-tax-calculator/": {
+  "overflow": {
+   "sw": 390,
+   "cw": 390
+  },
+  "errs": []
+ },
+ "sample390/social-security-taxable-benefits-calculator/": {
+  "overflow": {
+   "sw": 390,
+   "cw": 390
+  },
+  "errs": []
+ },
+ "sample390/probate/": {
+  "overflow": {
+   "sw": 390,
+   "cw": 390
+  },
+  "errs": []
+ }
+}

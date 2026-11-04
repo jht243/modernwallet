@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   calculateSelfEmploymentTax,
   type SelfEmploymentTaxInput,
@@ -6,6 +6,10 @@ import {
   SS_WAGE_BASE_2026,
 } from "../lib/self-employment-tax";
 import { fmtUSD, fmtPct } from "../lib/format";
+import ToolPicks, { book } from "./ToolPicks";
+
+/** Spoke that this island also powers; the quarterly note links there except on that page itself. */
+const QUARTERLY_PATH = "/self-employment-tax/quarterly-estimated-tax-calculator/";
 
 // Self-employment / 1099 tax island. The headline answer is deliberately the SET-ASIDE SHARE, not
 // a total tax bill: the question people actually arrive with is "how much of this invoice isn't
@@ -69,6 +73,11 @@ export default function SelfEmploymentTaxCalculator({
   const [input, setInput] = useState<SelfEmploymentTaxInput>({ ...DEFAULTS, ...presetNumbers });
   const result = useMemo(() => calculateSelfEmploymentTax(input), [input]);
   const set = (patch: Partial<SelfEmploymentTaxInput>) => setInput((s) => ({ ...s, ...patch }));
+  // Decided after hydration so the server and first client render match.
+  const [onQuarterlyPage, setOnQuarterlyPage] = useState(false);
+  useEffect(() => {
+    setOnQuarterlyPage(window.location.pathname.replace(/\/?$/, "/") === QUARTERLY_PATH);
+  }, []);
 
   return (
     <div style={S.wrap}>
@@ -93,6 +102,8 @@ export default function SelfEmploymentTaxCalculator({
                   type="button"
                   style={{ ...S.toggleBtn, ...(input.filingStatus === s ? S.toggleBtnActive : {}) }}
                   onClick={() => set({ filingStatus: s })}
+                  title={s === "hoh" ? STATUS_LABEL.hoh : undefined}
+                  aria-label={s === "hoh" ? "Head of hh (head of household)" : undefined}
                 >
                   {s === "mfj" ? "Married" : s === "hoh" ? "Head of hh" : "Single"}
                 </button>
@@ -149,6 +160,30 @@ export default function SelfEmploymentTaxCalculator({
               value={fmtPct(result.effectiveSeRateOnProfit * 100, 2)}
             />
           </div>
+          <p style={S.statNote}>
+            2026 estimated payments are due April 15, June 15 and September 15, 2026, and January
+            15, 2027. You generally don't need to make them if you'll owe less than $1,000 after
+            withholding. Paying 100% of last year's tax (110% if last year's AGI was over $150,000)
+            on time in four payments avoids the underpayment penalty.{" "}
+            {!onQuarterlyPage && (
+              <>
+                <a href={QUARTERLY_PATH} style={S.link}>
+                  Quarterly estimated tax calculator
+                </a>
+                .{" "}
+              </>
+            )}
+            Source:{" "}
+            <a
+              href="https://www.irs.gov/faqs/estimated-tax"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={S.link}
+            >
+              IRS estimated tax FAQ
+            </a>
+            .
+          </p>
 
           <div style={S.breakdown}>
             <Row
@@ -175,7 +210,26 @@ export default function SelfEmploymentTaxCalculator({
             )}
           </div>
 
-          {result.wageBaseFullyUsedByW2 && (
+          {result.belowSeFloor && (
+            <div style={{ ...S.noteBox, ...S.noteOk }}>
+              <span style={S.noteLabel}>No self-employment tax under $400</span>
+              <span style={S.noteText}>
+                Net earnings of {fmtUSD(result.netEarnings)} are under $400, so no self-employment
+                tax is owed (
+                <a
+                  href="https://www.irs.gov/instructions/i1040sse"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={S.link}
+                >
+                  Schedule SE instructions
+                </a>
+                ). Income tax may still apply.
+              </span>
+            </div>
+          )}
+
+          {result.wageBaseFullyUsedByW2 && !result.belowSeFloor && (
             <div style={{ ...S.noteBox, ...S.noteOk }}>
               <span style={S.noteLabel}>No Social Security tax on this income</span>
               <span style={S.noteText}>
@@ -206,8 +260,42 @@ export default function SelfEmploymentTaxCalculator({
             Estimate only, using 2026 federal figures: a {fmtUSD(SS_WAGE_BASE_2026)} Social Security
             wage base and the Rev. Proc. 2025-32 brackets and standard deduction. It does not
             include state or local income tax, a self-employed health insurance or retirement
-            deduction, or tax credits.
+            deduction, or tax credits. Self-employed health insurance (
+            <a
+              href="https://www.irs.gov/forms-pubs/about-form-7206"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={S.link}
+            >
+              Form 7206
+            </a>
+            ) and retirement contributions lower income tax, not self-employment tax, so the
+            set-aside shown is on the high side if you have them.
           </div>
+
+          {input.netProfit > 0 && (
+            <ToolPicks
+              tool="self-employment-tax"
+              heading="Further reading on self-employment taxes"
+              picks={
+                result.qbiAboveThreshold
+                  ? [
+                      book("lasserSmallBiz2027", "A full reference for the 2026 return, including the QBI limits this estimate can't model."),
+                      book("piperContractorTaxes", "A short, plain-English overview of self-employment tax, QBI and quarterly payments."),
+                    ]
+                  : (input.w2Wages ?? 0) > 0
+                    ? [
+                        book("piperContractorTaxes", "How side profit stacks on your wages, and when withholding can cover it instead of quarterly payments."),
+                        book("deductIt", "Which side-business costs you can deduct to lower the profit this rate applies to."),
+                      ]
+                    : [
+                        book("piperContractorTaxes", "Self-employment tax, the QBI deduction and quarterly payments in plain English."),
+                        book("workingForYourself", "The contracts, records and tax rules for working as an independent contractor."),
+                        book("deductIt", "Deductions that lower the profit this rate applies to."),
+                      ]
+              }
+            />
+          )}
         </div>
       </div>
     </div>
@@ -294,4 +382,6 @@ const S: Record<string, React.CSSProperties> = {
   noteLabel: { fontSize: "0.78rem", fontWeight: 600, color: "#666", textTransform: "uppercase", letterSpacing: "0.03em" },
   noteText: { fontSize: "0.8rem", color: "#777", lineHeight: 1.5 },
   disclaimer: { fontSize: "0.76rem", color: "#7a8783", lineHeight: 1.5, marginTop: 2 },
+  statNote: { fontSize: "0.78rem", color: "#666", lineHeight: 1.5, margin: 0 },
+  link: { color: PRIMARY },
 };

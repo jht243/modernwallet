@@ -1,0 +1,114 @@
+{
+ "rows": [
+  {
+   "keyword": "biweekly mortgage calculator",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.bankrate.com",
+    "www.mortgagecalculator.org",
+    "www.southwest.bank",
+    "mct.bank",
+    "www.financialmentor.com",
+    "crosscountrymortgage.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "www.financialmentor.com",
+    "google.com",
+    "google.com",
+    "mct.bank",
+    "google.com",
+    "www.experian.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "related_searches": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "Biweekly mortgage calculator excel",
+    "Free biweekly mortgage calculator",
+    "Biweekly mortgage calculator with extra payments",
+    "Monthly vs biweekly mortgage calculator",
+    "Biweekly mortgage calculator with escrow",
+    "Biweekly mortgage calculator 2022",
+    "Biweekly mortgage calculator with extra payments Bankrate",
+    "BI weekly mortgage calculator with extra payments Excel"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "6/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.bankrate.com, www.mortgagecalculator.org, www.southwest.bank, mct.bank",
+   "se_results_count": 100
+  },
+  {
+   "keyword": "pay off mortgage or invest calculator",
+   "verdict": "contested",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "myfinancialfreedomtracker.com",
+    "biggerpocketsmoney.com",
+    "www.envoymortgage.com",
+    "www.flagstar.com",
+    "www.lpl.com",
+    "www.youtube.com",
+    "www.facebook.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "www.arvest.com",
+    "google.com",
+    "www.zillow.com",
+    "google.com",
+    "google.com",
+    "www.usbank.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 8,
+    "related_searches": 1,
+    "video": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "Pay off mortgage or invest calculator excel",
+    "Pay off mortgage or invest calculator s&p 500",
+    "Pay off mortgage or invest calculator with extra payments",
+    "How to pay off mortgage in 5 years calculator",
+    "Current mortgage payoff calculator",
+    "Freedom mortgage extra payment calculator",
+    "Early mortgage payoff calculator",
+    "Early mortgage payoff calculator based on current balance"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "5/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites myfinancialfreedomtracker.com, biggerpocketsmoney.com, www.envoymortgage.com, www.flagstar.com",
+   "se_results_count": 147
+  }
+ ],
+ "cost": "DataForSEO: 2 calls, $0.00400 of $2.00 budget"
+}

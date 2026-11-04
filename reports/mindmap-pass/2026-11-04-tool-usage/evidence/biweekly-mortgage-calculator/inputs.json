@@ -1,0 +1,3 @@
+{"cases":[[300000,6.5,360,0,0],[300000,6.5,360,400,2.5],[238000,6.875,312,0,0],[300000,0,360,0,0],[300000,3.0,360,0,0]],
+ "fields":["balance","aprPct","monthsLeft","setupFee","perDebitFee"],
+ "note":"Scenario inputs are illustrative loans (not market quotes). The $400 setup and $2.50 per-debit fees are illustrative reader inputs, not a claimed market rate. Cases are hard-coded in calc.py in this order."}

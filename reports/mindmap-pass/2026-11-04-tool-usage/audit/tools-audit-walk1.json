@@ -1,0 +1,1410 @@
+[
+  {
+    "name": "florida",
+    "path": "/florida-amendment-3-calculator/",
+    "width": 1366,
+    "checks": {
+      "fl60kHas280": true,
+      "fl45kHas224": true,
+      "fl285": {
+        "savings2028": true,
+        "sub2027": true,
+        "oldPasses": false
+      },
+      "newcomer": {
+        "note": true,
+        "fifth": false,
+        "link": "https://floridarevenue.com/property/Pages/LocalOfficials.aspx"
+      }
+    },
+    "head": {
+      "title": "Florida Amendment 3 Property Tax Calculator",
+      "h1": "Florida Amendment 3 Property Tax Calculator",
+      "meta": "Calculate your property tax savings under Florida Amendment 3. See estimated 2027 and 2028 homestead savings based on your home value and millage rate.",
+      "dataTool": [
+        "florida-amendment-3-calculator"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Yes', exact: true })\u001b[22m\n",
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "inflation",
+    "path": "/inflation-calculator/",
+    "width": 1366,
+    "checks": {
+      "chipSets2": "2",
+      "deflationHint": true,
+      "tierCash": [
+        "The Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf",
+        "How to Make Your Money Last by Jane Bryant Quinn"
+      ],
+      "picks0": {
+        "heading": "Further reading on beating inflation",
+        "titles": [
+          "The Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf",
+          "How to Make Your Money Last by Jane Bryant Quinn"
+        ],
+        "links": [
+          {
+            "href": "https://www.amazon.com/dp/1119847672?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1982115831?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          }
+        ],
+        "disclosure": true,
+        "priceLike": false,
+        "text": "FURTHER READING ON BEATING INFLATION\nThe Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf\nHow to move idle cash into low-cost index funds that can outpace the inflation rate you entered.\nCheck price on Amazon\nHow to Make Your Money Last by Jane Bryant Quinn\nHow to make savings last while prices rise.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases."
+      },
+      "orderBelow": true,
+      "tableRows": 20,
+      "year1": "1\t$51,000\t$49,020\t$50,000",
+      "tierNegReal": [
+        "Retirement Planning Guidebook by Wade Pfau",
+        "How to Make Your Money Last by Jane Bryant Quinn"
+      ],
+      "tierPosLong": [
+        "Retirement Planning Guidebook by Wade Pfau",
+        "How to Make Your Money Last by Jane Bryant Quinn"
+      ],
+      "tierPosShort": [
+        "The Four Pillars of Investing (2nd ed.) by William Bernstein",
+        "Retirement Planning Guidebook by Wade Pfau"
+      ]
+    },
+    "head": {
+      "title": "Inflation Calculator: Future Cost and Buying Power",
+      "h1": "Inflation Calculator",
+      "meta": "Free inflation calculator. See what an amount of money will cost or buy in future years at the inflation rate you choose, plus your real return after inflation.",
+      "dataTool": [
+        "inflation-calculator"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "ss",
+    "path": "/social-security-taxable-benefits-calculator/",
+    "width": 1366,
+    "checks": {
+      "otherIncomeHint": true,
+      "picks0": {
+        "heading": "Further reading on how your Social Security is taxed",
+        "titles": [
+          "Retirement Planning Guidebook by Wade Pfau",
+          "Taxes Made Simple by Mike Piper",
+          "J.K. Lasser's Your Income Tax 2027 (for preparing your 2026 return)"
+        ],
+        "links": [
+          {
+            "href": "https://www.amazon.com/dp/1945640154?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1950967204?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1394461577?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          }
+        ],
+        "disclosure": true,
+        "priceLike": false,
+        "text": "FURTHER READING ON HOW YOUR SOCIAL SECURITY IS TAXED\nRetirement Planning Guidebook by Wade Pfau\nOrdering IRA, Roth and taxable withdrawals so less of your benefit is taxed.\nCheck price on Amazon\nTaxes Made Simple by Mike Piper\nHow the taxable part of your benefit is taxed at your normal rates.\nCheck price on Amazon\nJ.K. Lasser's Your Income Tax 2027 (for preparing your 2026 return)\nA full reference for preparing your 2026 return.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases."
+      },
+      "tier0": [
+        "Retirement Planning Guidebook by Wade Pfau",
+        "Taxes Made Simple by Mike Piper",
+        "J.K. Lasser's Your Income Tax 2027 (for preparing your 2026 return)"
+      ],
+      "w4v": true,
+      "orderBelow": true,
+      "mfs": {
+        "base0": true,
+        "above0": false
+      },
+      "tierMfs": [
+        "Retirement Planning Guidebook by Wade Pfau",
+        "Taxes Made Simple by Mike Piper",
+        "J.K. Lasser's Your Income Tax 2027 (for preparing your 2026 return)"
+      ],
+      "tierNone": [
+        "Social Security Made Simple by Mike Piper",
+        "Get What's Yours (revised) by Laurence Kotlikoff, Philip Moeller and Paul Solman"
+      ],
+      "w4vHiddenAtZero": true
+    },
+    "head": {
+      "title": "Social Security Taxable Benefits Calculator 2026",
+      "h1": "Social Security Taxable Benefits Calculator",
+      "meta": "Social Security taxable benefits calculator. Enter your benefits and other income to see provisional income, the taxable part and the 50% or 85% tier.",
+      "dataTool": [
+        "social-security-taxable-benefits-calculator"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "se",
+    "path": "/self-employment-tax/how-much-to-set-aside-for-taxes/",
+    "width": 1366,
+    "checks": {
+      "se420": {
+        "note": false,
+        "seZero": true
+      },
+      "dueDates": true,
+      "form7206": true,
+      "quarterlyLink": 1,
+      "hohLabel": [
+        "Head of household"
+      ],
+      "tierLow": [
+        "Independent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper",
+        "Working for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)",
+        "Deduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)"
+      ],
+      "picks0": {
+        "heading": "Further reading on self-employment taxes",
+        "titles": [
+          "Independent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper",
+          "Working for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)",
+          "Deduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)"
+        ],
+        "links": [
+          {
+            "href": "https://www.amazon.com/dp/1950967174?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/141333217X?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1413333052?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          }
+        ],
+        "disclosure": true,
+        "priceLike": false,
+        "text": "FURTHER READING ON SELF-EMPLOYMENT TAXES\nIndependent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper\nSelf-employment tax, the QBI deduction and quarterly payments in plain English.\nCheck price on Amazon\nWorking for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)\nThe contracts, records and tax rules for working as an independent contractor.\nCheck price on Amazon\nDeduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)\nDeductions that lower the profit this rate applies to.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases."
+      },
+      "se62k": [
+        "20.2",
+        "$12,498"
+      ],
+      "tier62k": [
+        "Independent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper",
+        "Working for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)",
+        "Deduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)"
+      ],
+      "orderBelow": "answer-not-found",
+      "tierQbi": [
+        "J.K. Lasser's Small Business Taxes 2027",
+        "Independent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper"
+      ]
+    },
+    "head": {
+      "title": "How Much to Set Aside for Taxes (1099, 2026)",
+      "h1": "How Much Should I Set Aside for Taxes on 1099 Income?",
+      "meta": "How much should you set aside for taxes on 1099 income? See the real percentage for your income — it is not 30% — with 2026 IRS self-employment tax rates.",
+      "dataTool": [
+        "self-employment-tax"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "stock",
+    "path": "/stock-capital-gains-tax-calculator/",
+    "width": 1366,
+    "checks": {
+      "roomLine": "Before this sale. This sale uses $18,900 at 0%; $0 left.",
+      "stdDed": true,
+      "holdHint": true,
+      "tierGain": [
+        "Taxes Made Simple by Mike Piper",
+        "The Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf"
+      ],
+      "picks0": {
+        "heading": "Further reading on taxes when you sell investments",
+        "titles": [
+          "Taxes Made Simple by Mike Piper",
+          "The Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf"
+        ],
+        "links": [
+          {
+            "href": "https://www.amazon.com/dp/1950967204?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1119847672?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          }
+        ],
+        "disclosure": true,
+        "priceLike": false,
+        "text": "FURTHER READING ON TAXES WHEN YOU SELL INVESTMENTS\nTaxes Made Simple by Mike Piper\nWhy part of a gain can be taxed at 0%, and how to use that band on purpose.\nCheck price on Amazon\nThe Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf\nTax-efficient fund placement for your next sale.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases."
+      },
+      "orderBelow": "answer-not-found",
+      "loss": [
+        "Deductible against other income this year\n$3,000",
+        "Carried forward to 2027\n$20,500",
+        "saves about $660"
+      ],
+      "tierLoss": [
+        "Taxes Made Simple by Mike Piper",
+        "The Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf"
+      ],
+      "tierHigh": [
+        "J.K. Lasser's Your Income Tax 2027 (for preparing your 2026 return)",
+        "Taxes Made Simple by Mike Piper"
+      ]
+    },
+    "head": {
+      "title": "Stock Capital Gains Tax Calculator for 2026 Stock Sales",
+      "h1": "Stock Capital Gains Tax Calculator",
+      "meta": "Stock capital gains tax calculator for 2026. Enter income, cost basis and sale price to see federal tax on a long-term or short-term stock sale.",
+      "dataTool": [
+        "stock-capital-gains-tax-calculator"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "ltc",
+    "path": "/elder-care/long-term-care-cost-calculator/",
+    "width": 1366,
+    "checks": {
+      "noDoubleDollar": true,
+      "rising": "Total shortfall if costs keep rising\n$381,255",
+      "startYear": "Total shortfall over care period (at start-year prices)\n$346,464",
+      "copay217": true,
+      "copay209": false,
+      "ageHint": true,
+      "carescout": 1,
+      "checkbox": {
+        "w": 20,
+        "h": 20,
+        "rowH": 44
+      },
+      "ltcInsMentionUnticked": false,
+      "picks0": {
+        "heading": "Further reading on paying for long-term care",
+        "titles": [
+          "How to Make Your Money Last by Jane Bryant Quinn",
+          "Retirement Planning Guidebook by Wade Pfau",
+          "Long-Term Care: How to Plan & Pay for It by Joseph L. Matthews (Nolo)"
+        ],
+        "links": [
+          {
+            "href": "https://www.amazon.com/dp/1982115831?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1945640154?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1413330010?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          }
+        ],
+        "disclosure": true,
+        "priceLike": false,
+        "text": "FURTHER READING ON PAYING FOR LONG-TERM CARE\nHow to Make Your Money Last by Jane Bryant Quinn\nWhich accounts to draw from first while paying for care.\nCheck price on Amazon\nRetirement Planning Guidebook by Wade Pfau\nRetirement income planning that includes long-term care costs.\nCheck price on Amazon\nLong-Term Care: How to Plan & Pay for It by Joseph L. Matthews (Nolo)\nLong-term care insurance and other ways to pay.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases."
+      },
+      "tierDefault": [
+        "How to Make Your Money Last by Jane Bryant Quinn",
+        "Retirement Planning Guidebook by Wade Pfau",
+        "Long-Term Care: How to Plan & Pay for It by Joseph L. Matthews (Nolo)"
+      ],
+      "likelihood0": "Medicaid likelihood: LOW",
+      "orderBelow": "answer-not-found",
+      "picksInsideLikelihood": false,
+      "likelihood1": "Medicaid likelihood: LOW",
+      "tierRich": [
+        "How to Make Your Money Last by Jane Bryant Quinn",
+        "Retirement Planning Guidebook by Wade Pfau",
+        "Long-Term Care: How to Plan & Pay for It by Joseph L. Matthews (Nolo)"
+      ],
+      "lowReasonNoIns": true,
+      "likelihood2": "Medicaid likelihood: HIGH",
+      "tierPoor": [
+        "Long-Term Care: How to Plan & Pay for It by Joseph L. Matthews (Nolo)",
+        "How to Care for Aging Parents (3rd ed.) by Virginia Morris",
+        "Get What's Yours for Medicare (revised and updated) by Philip Moeller"
+      ],
+      "risingNow": "Total shortfall if costs keep rising\n$381,255"
+    },
+    "head": {
+      "title": "Long-Term Care Cost Calculator: Nursing Home & Home Care",
+      "h1": "Long-Term Care Cost Calculator: What It Costs and Who Pays",
+      "meta": "Free long-term care cost & insurance calculator. Projected nursing home, assisted living, and home aide cost by state + inflation + Medicare + Medicaid.",
+      "dataTool": [
+        "elder-care"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "probate-trust",
+    "path": "/probate/cost-vs-trust-calculator/",
+    "width": 1366,
+    "checks": {
+      "defaultState": "california",
+      "picks0": {
+        "heading": "Further reading on probate and living trusts",
+        "titles": [
+          "Every Californian's Guide to Estate Planning (Nolo)",
+          "Make Your Own Living Trust by Denis Clifford (Nolo)",
+          "8 Ways to Avoid Probate by Mary Randolph (Nolo)"
+        ],
+        "links": [
+          {
+            "href": "https://www.amazon.com/dp/1413333192?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1413330576?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1413333400?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          }
+        ],
+        "disclosure": true,
+        "priceLike": false,
+        "text": "FURTHER READING ON PROBATE AND LIVING TRUSTS\nEvery Californian's Guide to Estate Planning (Nolo)\nCalifornia trusts, wills and probate rules in one place.\nCheck price on Amazon\nMake Your Own Living Trust by Denis Clifford (Nolo)\nHow a living trust is drafted and funded.\nCheck price on Amazon\n8 Ways to Avoid Probate by Mary Randolph (Nolo)\nWays to skip probate that cost less than a trust.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases."
+      },
+      "tierDefault": [
+        "Every Californian's Guide to Estate Planning (Nolo)",
+        "Make Your Own Living Trust by Denis Clifford (Nolo)",
+        "8 Ways to Avoid Probate by Mary Randolph (Nolo)"
+      ],
+      "funding": true,
+      "orderBelow": true,
+      "texas": {
+        "note352": true,
+        "link": 1,
+        "name": true
+      },
+      "tierTexas": [
+        "Make Your Own Living Trust by Denis Clifford (Nolo)",
+        "8 Ways to Avoid Probate by Mary Randolph (Nolo)",
+        "Plan Your Estate by Denis Clifford (Nolo)"
+      ],
+      "small": {
+        "ifFull": true,
+        "row": true,
+        "properName": true,
+        "lower": false
+      },
+      "tierSmall": [
+        "8 Ways to Avoid Probate by Mary Randolph (Nolo)",
+        "Estate Planning Basics by Denis Clifford (Nolo)"
+      ],
+      "realProp": true,
+      "timelineAdds": "Includes 3 to 6 months for real estate.",
+      "tierContested": [
+        "The Executor's Guide by Mary Randolph (Nolo)",
+        "Plan Your Estate by Denis Clifford (Nolo)"
+      ],
+      "caStatutory": "Executor commission\n$18,000 (statutory)",
+      "tierCA": [
+        "Every Californian's Guide to Estate Planning (Nolo)",
+        "Make Your Own Living Trust by Denis Clifford (Nolo)",
+        "8 Ways to Avoid Probate by Mary Randolph (Nolo)"
+      ],
+      "dashRange": "ok"
+    },
+    "head": {
+      "title": "Probate vs Living Trust Cost Calculator: The Real Math",
+      "h1": "Probate vs Living Trust: What It Actually Costs to Skip Probate",
+      "meta": "Probate vs living trust cost calculator. See what probate would cost your estate now versus setting up a revocable living trust today.",
+      "dataTool": [
+        "probate"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "doordash",
+    "path": "/self-employment-tax/doordash-taxes/",
+    "width": 1366,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nDoorDash tax calculator\nEnter earnings after mileage and expenses\nDoorDash profit (earnings minus mileage and expenses)\n$\nFiling status\nSingle\nMarried\nHead of hh\nW-2 wages from a job (if any)\n$\n\nWages use up the Social Security wage base first, so a day job lowers the Social Security part of your self-employment tax — but raises the income-tax rate your 1099 profit stacks on top of.\n\nOther household income\n$\nApply the 20% qualified business income (QBI) deduction\nSET ASIDE FROM EVERY PAYMENT\n14.1%\n$1,130 of federal tax on $8,000 of net profit\nSelf-employment tax\n$1,130\nFederal income tax (on this income)\n$0\nQuarterly payment (1040-ES)\n$283\nEffective SE rate on profit\n14.13%\n\n2026 estimated payments are due April 15, June 15 and September 15, 2026, and January 15, 2027. You generally don't need to make them if you'll owe less than $1,000 after withholding. Paying 100% of last year's tax (110% if last year's AGI was over $150,000) on time in four payments avoids the underpayment penalty. Quarterly estimated tax calculator. Source: IRS estimated tax FAQ.\n\nNet earnings ($8,000 × 92.35%)\n$7,388\nSocial Security 12.4% on $7,388\n$916\nMedicare 2.9% (no ceiling)\n$214\nDeduction for half of SE tax\n− $565\nDoorDash withholds nothing and reports on Form 1099-NEC through Stripe — and only at $2,000 or more for 2026. Subtract your mileage before entering a figure here: 18,000 business miles is a $13,400 deduction at the 2026 rates.\nEstimate only, using 2026 federal figures: a $184,500 Social Security wage base and the Rev. Proc. 2025-32 brackets and standard deduction. It does not include state or local income tax, a self-employed health insurance or retirement deduction, or tax credits. Self-employed health insurance (Form 7206) and retirement contributions lower income tax, not self-employment tax, so the set-aside shown is on the high side if you have them.\nFURTHER READING ON SELF-EMPLOYMENT TAXES\nIndependent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper\nSelf-employment tax, the QBI deduction and quarterly payments in plain English.\nCheck price on Amazon\nWorking for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)\nThe contracts, records and tax rules for working as an independent contractor.\nCheck price on Amazon\nDeduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)\nDeductions that lower the profit this rate applies to.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "self-employment-tax"
+      ]
+    },
+    "head": {
+      "title": "DoorDash Taxes: What Dashers Owe in 2026",
+      "h1": "DoorDash Taxes: What Dashers Actually Owe",
+      "meta": "DoorDash taxes in 2026: the 1099-NEC threshold rose to $2,000, mileage is your biggest deduction, and most part-time Dashers owe SE tax only.",
+      "dataTool": [
+        "self-employment-tax"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "quarterly",
+    "path": "/self-employment-tax/quarterly-estimated-tax-calculator/",
+    "width": 1366,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nQuarterly estimated tax\nThe quarterly figure is one quarter of the annual total\nNet profit (business income minus expenses)\n$\nFiling status\nSingle\nMarried\nHead of hh\nW-2 wages from a job (if any)\n$\n\nWages use up the Social Security wage base first, so a day job lowers the Social Security part of your self-employment tax — but raises the income-tax rate your 1099 profit stacks on top of.\n\nOther household income\n$\nApply the 20% qualified business income (QBI) deduction\nSET ASIDE FROM EVERY PAYMENT\n20.1%\n$12,037 of federal tax on $60,000 of net profit\nSelf-employment tax\n$8,478\nFederal income tax (on this income)\n$3,559\nQuarterly payment (1040-ES)\n$3,009\nEffective SE rate on profit\n14.13%\n\n2026 estimated payments are due April 15, June 15 and September 15, 2026, and January 15, 2027. You generally don't need to make them if you'll owe less than $1,000 after withholding. Paying 100% of last year's tax (110% if last year's AGI was over $150,000) on time in four payments avoids the underpayment penalty. Source: IRS estimated tax FAQ.\n\nNet earnings ($60,000 × 92.35%)\n$55,410\nSocial Security 12.4% on $55,410\n$6,871\nMedicare 2.9% (no ceiling)\n$1,607\nDeduction for half of SE tax\n− $4,239\nQBI deduction (20%)\n− $7,932\nEstimate only, using 2026 federal figures: a $184,500 Social Security wage base and the Rev. Proc. 2025-32 brackets and standard deduction. It does not include state or local income tax, a self-employed health insurance or retirement deduction, or tax credits. Self-employed health insurance (Form 7206) and retirement contributions lower income tax, not self-employment tax, so the set-aside shown is on the high side if you have them.\nFURTHER READING ON SELF-EMPLOYMENT TAXES\nIndependent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper\nSelf-employment tax, the QBI deduction and quarterly payments in plain English.\nCheck price on Amazon\nWorking for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)\nThe contracts, records and tax rules for working as an independent contractor.\nCheck price on Amazon\nDeduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)\nDeductions that lower the profit this rate applies to.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "self-employment-tax"
+      ]
+    },
+    "head": {
+      "title": "Quarterly Estimated Tax Calculator (1040-ES)",
+      "h1": "Quarterly Estimated Tax Calculator",
+      "meta": "Work out your quarterly estimated tax payments for 2026, plus the safe-harbor rule that switches off the underpayment penalty even if you owe more.",
+      "dataTool": [
+        "self-employment-tax"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "youtube",
+    "path": "/self-employment-tax/youtube-taxes/",
+    "width": 1366,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nYouTube tax calculator\nEstimate self-employment tax on channel profit\nYouTube profit (revenue minus business expenses)\n$\nFiling status\nSingle\nMarried\nHead of hh\nW-2 wages from a job (if any)\n$\n\nWages use up the Social Security wage base first, so a day job lowers the Social Security part of your self-employment tax — but raises the income-tax rate your 1099 profit stacks on top of.\n\nOther household income\n$\nApply the 20% qualified business income (QBI) deduction\nSET ASIDE FROM EVERY PAYMENT\n14.1%\n$989 of federal tax on $7,000 of net profit\nSelf-employment tax\n$989\nFederal income tax (on this income)\n$0\nQuarterly payment (1040-ES)\n$247\nEffective SE rate on profit\n14.13%\n\n2026 estimated payments are due April 15, June 15 and September 15, 2026, and January 15, 2027. You generally don't need to make them if you'll owe less than $1,000 after withholding. Paying 100% of last year's tax (110% if last year's AGI was over $150,000) on time in four payments avoids the underpayment penalty. Quarterly estimated tax calculator. Source: IRS estimated tax FAQ.\n\nNet earnings ($7,000 × 92.35%)\n$6,465\nSocial Security 12.4% on $6,465\n$802\nMedicare 2.9% (no ceiling)\n$187\nDeduction for half of SE tax\n− $495\nThis calculation assumes your YouTube channel operates as a business. If the IRS treats your channel as a hobby, you report the income on Schedule 1 (Form 1040), line 8.\nEstimate only, using 2026 federal figures: a $184,500 Social Security wage base and the Rev. Proc. 2025-32 brackets and standard deduction. It does not include state or local income tax, a self-employed health insurance or retirement deduction, or tax credits. Self-employed health insurance (Form 7206) and retirement contributions lower income tax, not self-employment tax, so the set-aside shown is on the high side if you have them.\nFURTHER READING ON SELF-EMPLOYMENT TAXES\nIndependent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper\nSelf-employment tax, the QBI deduction and quarterly payments in plain English.\nCheck price on Amazon\nWorking for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)\nThe contracts, records and tax rules for working as an independent contractor.\nCheck price on Amazon\nDeduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)\nDeductions that lower the profit this rate applies to.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "self-employment-tax"
+      ]
+    },
+    "head": {
+      "title": "YouTube Taxes: What Creators Owe in 2026",
+      "h1": "YouTube Taxes: What Creators Owe on Channel Earnings",
+      "meta": "Calculate your YouTube taxes for 2026. Learn self-employment tax rates, AdSense W-9 withholding rules, 1099 thresholds, and valid deductions.",
+      "dataTool": [
+        "self-employment-tax"
+      ],
+      "byline": "Updated October 9, 2026",
+      "dm": "2026-10-09"
+    },
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "se-hub",
+    "path": "/self-employment-tax/",
+    "width": 1366,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nNet profit (business income minus expenses)\n$\nFiling status\nSingle\nMarried\nHead of hh\nW-2 wages from a job (if any)\n$\n\nWages use up the Social Security wage base first, so a day job lowers the Social Security part of your self-employment tax — but raises the income-tax rate your 1099 profit stacks on top of.\n\nOther household income\n$\nApply the 20% qualified business income (QBI) deduction\nSET ASIDE FROM EVERY PAYMENT\n20.1%\n$12,037 of federal tax on $60,000 of net profit\nSelf-employment tax\n$8,478\nFederal income tax (on this income)\n$3,559\nQuarterly payment (1040-ES)\n$3,009\nEffective SE rate on profit\n14.13%\n\n2026 estimated payments are due April 15, June 15 and September 15, 2026, and January 15, 2027. You generally don't need to make them if you'll owe less than $1,000 after withholding. Paying 100% of last year's tax (110% if last year's AGI was over $150,000) on time in four payments avoids the underpayment penalty. Quarterly estimated tax calculator. Source: IRS estimated tax FAQ.\n\nNet earnings ($60,000 × 92.35%)\n$55,410\nSocial Security 12.4% on $55,410\n$6,871\nMedicare 2.9% (no ceiling)\n$1,607\nDeduction for half of SE tax\n− $4,239\nQBI deduction (20%)\n− $7,932\nEstimate only, using 2026 federal figures: a $184,500 Social Security wage base and the Rev. Proc. 2025-32 brackets and standard deduction. It does not include state or local income tax, a self-employed health insurance or retirement deduction, or tax credits. Self-employed health insurance (Form 7206) and retirement contributions lower income tax, not self-employment tax, so the set-aside shown is on the high side if you have them.\nFURTHER READING ON SELF-EMPLOYMENT TAXES\nIndependent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper\nSelf-employment tax, the QBI deduction and quarterly payments in plain English.\nCheck price on Amazon\nWorking for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)\nThe contracts, records and tax rules for working as an independent contractor.\nCheck price on Amazon\nDeduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)\nDeductions that lower the profit this rate applies to.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "self-employment-tax"
+      ]
+    },
+    "head": {
+      "title": "Self-Employment Tax Calculator (2026)",
+      "h1": "Self-Employment Tax Calculator: What to Set Aside in 2026",
+      "meta": "Free self-employment tax calculator using 2026 IRS rates. See your SE tax, your federal income tax, and the share of every payment to set aside for taxes.",
+      "dataTool": [
+        "self-employment-tax"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "probate-hub",
+    "path": "/probate/",
+    "width": 1366,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nState\nAlabama\nAlaska\nArizona\nArkansas\nCalifornia\nColorado\nConnecticut\nDelaware\nFlorida\nGeorgia\nHawaii\nIdaho\nIllinois\nIndiana\nIowa\nKansas\nKentucky\nLouisiana\nMaine\nMaryland\nMassachusetts\nMichigan\nMinnesota\nMississippi\nMissouri\nMontana\nNebraska\nNevada\nNew Hampshire\nNew Jersey\nNew Mexico\nNew York\nNorth Carolina\nNorth Dakota\nOhio\nOklahoma\nOregon\nPennsylvania\nRhode Island\nSouth Carolina\nSouth Dakota\nTennessee\nTexas\nUtah\nVermont\nVirginia\nWashington\nWest Virginia\nWisconsin\nWyoming\nGross estate value\n$\nComplexity\nSimple — uncontested, no real estate\nModerate — uncontested with real estate\nContested — will contest or creditor litigation\nAdditional states with real property (ancillary probate)\n0\n1\n2\n3\nTOTAL PROBATE COST\n$36,400–$39,300\nTimeline: 15–30 months\nIncludes 3 to 6 months for real estate.\nCOST BREAKDOWN\nAttorney fees (statutory)\n$18,000–$19,800\nExecutor commission\n$18,000 (statutory)\nCourt filing + publication\n$400–$1,500\nCAL. PROB. CODE §10810\n\nCalifornia uses a statutory percentage schedule under Cal. Prob. Code §10810 (attorney) and §10800 (executor). Both are entitled to the SAME schedule, so total statutory fees roughly double. The 4-month creditor claim period under §9100 plus urban court backlogs push typical timelines to 12-24 months.\n\nWHAT A LIVING TRUST WOULD HAVE COST\nTrust setup cost\n$2,025–$6,750\nNet probate savings avoided\n$29,650–$37,275\nEstimates only. Actual probate costs depend on estate composition, court backlog in your county, and creditor claims. Consult a licensed attorney in your state before acting on these numbers.\nFURTHER READING ON PROBATE AND LIVING TRUSTS\nEvery Californian's Guide to Estate Planning (Nolo)\nCalifornia trusts, wills and probate rules in one place.\nCheck price on Amazon\nMake Your Own Living Trust by Denis Clifford (Nolo)\nHow a living trust is drafted and funded.\nCheck price on Amazon\n8 Ways to Avoid Probate by Mary Randolph (Nolo)\nWays to skip probate that cost less than a trust.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "probate"
+      ]
+    },
+    "head": {
+      "title": "Probate Calculator: What Will It Cost and How Long?",
+      "h1": "Probate Calculator: Cost, Timeline, and What a Trust Would've Saved",
+      "meta": "Free probate calculator. Enter state and estate value to see total cost, timeline, small-estate options, and how much a living trust would have saved.",
+      "dataTool": [
+        "probate"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "probate-fee",
+    "path": "/probate/fee-calculator/",
+    "width": 1366,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nEstimate your probate fees\nState + estate value + complexity → attorney + executor + court fees, plus what a living trust would have saved.\nState\nAlabama\nAlaska\nArizona\nArkansas\nCalifornia\nColorado\nConnecticut\nDelaware\nFlorida\nGeorgia\nHawaii\nIdaho\nIllinois\nIndiana\nIowa\nKansas\nKentucky\nLouisiana\nMaine\nMaryland\nMassachusetts\nMichigan\nMinnesota\nMississippi\nMissouri\nMontana\nNebraska\nNevada\nNew Hampshire\nNew Jersey\nNew Mexico\nNew York\nNorth Carolina\nNorth Dakota\nOhio\nOklahoma\nOregon\nPennsylvania\nRhode Island\nSouth Carolina\nSouth Dakota\nTennessee\nTexas\nUtah\nVermont\nVirginia\nWashington\nWest Virginia\nWisconsin\nWyoming\nGross estate value\n$\nComplexity\nSimple — uncontested, no real estate\nModerate — uncontested with real estate\nContested — will contest or creditor litigation\nAdditional states with real property (ancillary probate)\n0\n1\n2\n3\nTOTAL PROBATE COST\n$36,400–$39,300\nTimeline: 15–30 months\nIncludes 3 to 6 months for real estate.\nCOST BREAKDOWN\nAttorney fees (statutory)\n$18,000–$19,800\nExecutor commission\n$18,000 (statutory)\nCourt filing + publication\n$400–$1,500\nCAL. PROB. CODE §10810\n\nCalifornia uses a statutory percentage schedule under Cal. Prob. Code §10810 (attorney) and §10800 (executor). Both are entitled to the SAME schedule, so total statutory fees roughly double. The 4-month creditor claim period under §9100 plus urban court backlogs push typical timelines to 12-24 months.\n\nWHAT A LIVING TRUST WOULD HAVE COST\nTrust setup cost\n$2,025–$6,750\nNet probate savings avoided\n$29,650–$37,275\nEstimates only. Actual probate costs depend on estate composition, court backlog in your county, and creditor claims. Consult a licensed attorney in your state before acting on these numbers.\nFURTHER READING ON PROBATE AND LIVING TRUSTS\nEvery Californian's Guide to Estate Planning (Nolo)\nCalifornia trusts, wills and probate rules in one place.\nCheck price on Amazon\nMake Your Own Living Trust by Denis Clifford (Nolo)\nHow a living trust is drafted and funded.\nCheck price on Amazon\n8 Ways to Avoid Probate by Mary Randolph (Nolo)\nWays to skip probate that cost less than a trust.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "probate"
+      ]
+    },
+    "head": {
+      "title": "Probate Fee Calculator: Attorney + Executor + Court Costs",
+      "h1": "Probate Fee Calculator: What Probate Actually Costs by State",
+      "meta": "Free probate fee calculator. See attorney fees (statutory in 9 states) plus executor commission and court costs by state, with living-trust savings.",
+      "dataTool": [
+        "probate"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "probate-fee-tx",
+    "path": "/probate/fee-calculator/texas/",
+    "width": 1366,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nEstimate your probate fees\nState + estate value + complexity → attorney + executor + court fees, plus what a living trust would have saved.\nState\nAlabama\nAlaska\nArizona\nArkansas\nCalifornia\nColorado\nConnecticut\nDelaware\nFlorida\nGeorgia\nHawaii\nIdaho\nIllinois\nIndiana\nIowa\nKansas\nKentucky\nLouisiana\nMaine\nMaryland\nMassachusetts\nMichigan\nMinnesota\nMississippi\nMissouri\nMontana\nNebraska\nNevada\nNew Hampshire\nNew Jersey\nNew Mexico\nNew York\nNorth Carolina\nNorth Dakota\nOhio\nOklahoma\nOregon\nPennsylvania\nRhode Island\nSouth Carolina\nSouth Dakota\nTennessee\nTexas\nUtah\nVermont\nVirginia\nWashington\nWest Virginia\nWisconsin\nWyoming\nGross estate value\n$\nComplexity\nSimple — uncontested, no real estate\nModerate — uncontested with real estate\nContested — will contest or creditor litigation\nAdditional states with real property (ancillary probate)\n0\n1\n2\n3\nTOTAL PROBATE COST\n$36,400–$39,300\nTimeline: 15–30 months\nIncludes 3 to 6 months for real estate.\nCOST BREAKDOWN\nAttorney fees (statutory)\n$18,000–$19,800\nExecutor commission\n$18,000 (statutory)\nCourt filing + publication\n$400–$1,500\nCAL. PROB. CODE §10810\n\nCalifornia uses a statutory percentage schedule under Cal. Prob. Code §10810 (attorney) and §10800 (executor). Both are entitled to the SAME schedule, so total statutory fees roughly double. The 4-month creditor claim period under §9100 plus urban court backlogs push typical timelines to 12-24 months.\n\nWHAT A LIVING TRUST WOULD HAVE COST\nTrust setup cost\n$2,025–$6,750\nNet probate savings avoided\n$29,650–$37,275\nEstimates only. Actual probate costs depend on estate composition, court backlog in your county, and creditor claims. Consult a licensed attorney in your state before acting on these numbers.\nFURTHER READING ON PROBATE AND LIVING TRUSTS\nEvery Californian's Guide to Estate Planning (Nolo)\nCalifornia trusts, wills and probate rules in one place.\nCheck price on Amazon\nMake Your Own Living Trust by Denis Clifford (Nolo)\nHow a living trust is drafted and funded.\nCheck price on Amazon\n8 Ways to Avoid Probate by Mary Randolph (Nolo)\nWays to skip probate that cost less than a trust.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "probate"
+      ]
+    },
+    "head": {
+      "title": "Probate Fee Calculator — Texas | ModernWallet",
+      "h1": "Probate Fee Calculator: What Probate Actually Costs by State — Texas",
+      "meta": "Texas probate fee calculator estimator. Free probate fee calculator. See attorney fees (statutory in 9 states) plus executor commission and court costs by state",
+      "dataTool": [
+        "probate"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 1366,
+      "clientW": 1366,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "florida",
+    "path": "/florida-amendment-3-calculator/",
+    "width": 390,
+    "checks": {
+      "fl60kHas280": true,
+      "fl45kHas224": true,
+      "fl285": {
+        "savings2028": true,
+        "sub2027": true,
+        "oldPasses": false
+      },
+      "newcomer": {
+        "note": true,
+        "fifth": false,
+        "link": "https://floridarevenue.com/property/Pages/LocalOfficials.aspx"
+      }
+    },
+    "head": {
+      "title": "Florida Amendment 3 Property Tax Calculator",
+      "h1": "Florida Amendment 3 Property Tax Calculator",
+      "meta": "Calculate your property tax savings under Florida Amendment 3. See estimated 2027 and 2028 homestead savings based on your home value and millage rate.",
+      "dataTool": [
+        "florida-amendment-3-calculator"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Yes', exact: true })\u001b[22m\n",
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "inflation",
+    "path": "/inflation-calculator/",
+    "width": 390,
+    "checks": {
+      "chipSets2": "2",
+      "deflationHint": true,
+      "tierCash": [
+        "The Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf",
+        "How to Make Your Money Last by Jane Bryant Quinn"
+      ],
+      "picks0": {
+        "heading": "Further reading on beating inflation",
+        "titles": [
+          "The Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf",
+          "How to Make Your Money Last by Jane Bryant Quinn"
+        ],
+        "links": [
+          {
+            "href": "https://www.amazon.com/dp/1119847672?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1982115831?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          }
+        ],
+        "disclosure": true,
+        "priceLike": false,
+        "text": "FURTHER READING ON BEATING INFLATION\nThe Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf\nHow to move idle cash into low-cost index funds that can outpace the inflation rate you entered.\nCheck price on Amazon\nHow to Make Your Money Last by Jane Bryant Quinn\nHow to make savings last while prices rise.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases."
+      },
+      "orderBelow": true,
+      "tableRows": 20,
+      "year1": "1\t$51,000\t$49,020\t$50,000",
+      "tierNegReal": [
+        "Retirement Planning Guidebook by Wade Pfau",
+        "How to Make Your Money Last by Jane Bryant Quinn"
+      ],
+      "tierPosLong": [
+        "Retirement Planning Guidebook by Wade Pfau",
+        "How to Make Your Money Last by Jane Bryant Quinn"
+      ],
+      "tierPosShort": [
+        "The Four Pillars of Investing (2nd ed.) by William Bernstein",
+        "Retirement Planning Guidebook by Wade Pfau"
+      ]
+    },
+    "head": {
+      "title": "Inflation Calculator: Future Cost and Buying Power",
+      "h1": "Inflation Calculator",
+      "meta": "Free inflation calculator. See what an amount of money will cost or buy in future years at the inflation rate you choose, plus your real return after inflation.",
+      "dataTool": [
+        "inflation-calculator"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "ss",
+    "path": "/social-security-taxable-benefits-calculator/",
+    "width": 390,
+    "checks": {
+      "otherIncomeHint": true,
+      "picks0": {
+        "heading": "Further reading on how your Social Security is taxed",
+        "titles": [
+          "Retirement Planning Guidebook by Wade Pfau",
+          "Taxes Made Simple by Mike Piper",
+          "J.K. Lasser's Your Income Tax 2027 (for preparing your 2026 return)"
+        ],
+        "links": [
+          {
+            "href": "https://www.amazon.com/dp/1945640154?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1950967204?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1394461577?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          }
+        ],
+        "disclosure": true,
+        "priceLike": false,
+        "text": "FURTHER READING ON HOW YOUR SOCIAL SECURITY IS TAXED\nRetirement Planning Guidebook by Wade Pfau\nOrdering IRA, Roth and taxable withdrawals so less of your benefit is taxed.\nCheck price on Amazon\nTaxes Made Simple by Mike Piper\nHow the taxable part of your benefit is taxed at your normal rates.\nCheck price on Amazon\nJ.K. Lasser's Your Income Tax 2027 (for preparing your 2026 return)\nA full reference for preparing your 2026 return.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases."
+      },
+      "tier0": [
+        "Retirement Planning Guidebook by Wade Pfau",
+        "Taxes Made Simple by Mike Piper",
+        "J.K. Lasser's Your Income Tax 2027 (for preparing your 2026 return)"
+      ],
+      "w4v": true,
+      "orderBelow": true,
+      "mfs": {
+        "base0": true,
+        "above0": false
+      },
+      "tierMfs": [
+        "Retirement Planning Guidebook by Wade Pfau",
+        "Taxes Made Simple by Mike Piper",
+        "J.K. Lasser's Your Income Tax 2027 (for preparing your 2026 return)"
+      ],
+      "tierNone": [
+        "Social Security Made Simple by Mike Piper",
+        "Get What's Yours (revised) by Laurence Kotlikoff, Philip Moeller and Paul Solman"
+      ],
+      "w4vHiddenAtZero": true
+    },
+    "head": {
+      "title": "Social Security Taxable Benefits Calculator 2026",
+      "h1": "Social Security Taxable Benefits Calculator",
+      "meta": "Social Security taxable benefits calculator. Enter your benefits and other income to see provisional income, the taxable part and the 50% or 85% tier.",
+      "dataTool": [
+        "social-security-taxable-benefits-calculator"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "se",
+    "path": "/self-employment-tax/how-much-to-set-aside-for-taxes/",
+    "width": 390,
+    "checks": {
+      "se420": {
+        "note": false,
+        "seZero": true
+      },
+      "dueDates": true,
+      "form7206": true,
+      "quarterlyLink": 1,
+      "hohLabel": [
+        "Head of household"
+      ],
+      "tierLow": [
+        "Independent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper",
+        "Working for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)",
+        "Deduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)"
+      ],
+      "picks0": {
+        "heading": "Further reading on self-employment taxes",
+        "titles": [
+          "Independent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper",
+          "Working for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)",
+          "Deduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)"
+        ],
+        "links": [
+          {
+            "href": "https://www.amazon.com/dp/1950967174?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/141333217X?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1413333052?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          }
+        ],
+        "disclosure": true,
+        "priceLike": false,
+        "text": "FURTHER READING ON SELF-EMPLOYMENT TAXES\nIndependent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper\nSelf-employment tax, the QBI deduction and quarterly payments in plain English.\nCheck price on Amazon\nWorking for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)\nThe contracts, records and tax rules for working as an independent contractor.\nCheck price on Amazon\nDeduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)\nDeductions that lower the profit this rate applies to.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases."
+      },
+      "se62k": [
+        "20.2",
+        "$12,498"
+      ],
+      "tier62k": [
+        "Independent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper",
+        "Working for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)",
+        "Deduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)"
+      ],
+      "orderBelow": "answer-not-found",
+      "tierQbi": [
+        "J.K. Lasser's Small Business Taxes 2027",
+        "Independent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper"
+      ]
+    },
+    "head": {
+      "title": "How Much to Set Aside for Taxes (1099, 2026)",
+      "h1": "How Much Should I Set Aside for Taxes on 1099 Income?",
+      "meta": "How much should you set aside for taxes on 1099 income? See the real percentage for your income — it is not 30% — with 2026 IRS self-employment tax rates.",
+      "dataTool": [
+        "self-employment-tax"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "stock",
+    "path": "/stock-capital-gains-tax-calculator/",
+    "width": 390,
+    "checks": {
+      "roomLine": "Before this sale. This sale uses $18,900 at 0%; $0 left.",
+      "stdDed": true,
+      "holdHint": true,
+      "tierGain": [
+        "Taxes Made Simple by Mike Piper",
+        "The Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf"
+      ],
+      "picks0": {
+        "heading": "Further reading on taxes when you sell investments",
+        "titles": [
+          "Taxes Made Simple by Mike Piper",
+          "The Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf"
+        ],
+        "links": [
+          {
+            "href": "https://www.amazon.com/dp/1950967204?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1119847672?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          }
+        ],
+        "disclosure": true,
+        "priceLike": false,
+        "text": "FURTHER READING ON TAXES WHEN YOU SELL INVESTMENTS\nTaxes Made Simple by Mike Piper\nWhy part of a gain can be taxed at 0%, and how to use that band on purpose.\nCheck price on Amazon\nThe Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf\nTax-efficient fund placement for your next sale.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases."
+      },
+      "orderBelow": "answer-not-found",
+      "loss": [
+        "Deductible against other income this year\n$3,000",
+        "Carried forward to 2027\n$20,500",
+        "saves about $660"
+      ],
+      "tierLoss": [
+        "Taxes Made Simple by Mike Piper",
+        "The Bogleheads' Guide to Investing by Taylor Larimore, Mel Lindauer and Michael LeBoeuf"
+      ],
+      "tierHigh": [
+        "J.K. Lasser's Your Income Tax 2027 (for preparing your 2026 return)",
+        "Taxes Made Simple by Mike Piper"
+      ]
+    },
+    "head": {
+      "title": "Stock Capital Gains Tax Calculator for 2026 Stock Sales",
+      "h1": "Stock Capital Gains Tax Calculator",
+      "meta": "Stock capital gains tax calculator for 2026. Enter income, cost basis and sale price to see federal tax on a long-term or short-term stock sale.",
+      "dataTool": [
+        "stock-capital-gains-tax-calculator"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "ltc",
+    "path": "/elder-care/long-term-care-cost-calculator/",
+    "width": 390,
+    "checks": {
+      "noDoubleDollar": true,
+      "rising": "Total shortfall if costs keep rising\n$381,255",
+      "startYear": "Total shortfall over care period (at start-year prices)\n$346,464",
+      "copay217": true,
+      "copay209": false,
+      "ageHint": true,
+      "carescout": 1,
+      "checkbox": {
+        "w": 20,
+        "h": 20,
+        "rowH": 44
+      },
+      "ltcInsMentionUnticked": false,
+      "picks0": {
+        "heading": "Further reading on paying for long-term care",
+        "titles": [
+          "How to Make Your Money Last by Jane Bryant Quinn",
+          "Retirement Planning Guidebook by Wade Pfau",
+          "Long-Term Care: How to Plan & Pay for It by Joseph L. Matthews (Nolo)"
+        ],
+        "links": [
+          {
+            "href": "https://www.amazon.com/dp/1982115831?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1945640154?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1413330010?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          }
+        ],
+        "disclosure": true,
+        "priceLike": false,
+        "text": "FURTHER READING ON PAYING FOR LONG-TERM CARE\nHow to Make Your Money Last by Jane Bryant Quinn\nWhich accounts to draw from first while paying for care.\nCheck price on Amazon\nRetirement Planning Guidebook by Wade Pfau\nRetirement income planning that includes long-term care costs.\nCheck price on Amazon\nLong-Term Care: How to Plan & Pay for It by Joseph L. Matthews (Nolo)\nLong-term care insurance and other ways to pay.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases."
+      },
+      "tierDefault": [
+        "How to Make Your Money Last by Jane Bryant Quinn",
+        "Retirement Planning Guidebook by Wade Pfau",
+        "Long-Term Care: How to Plan & Pay for It by Joseph L. Matthews (Nolo)"
+      ],
+      "likelihood0": "Medicaid likelihood: LOW",
+      "orderBelow": "answer-not-found",
+      "picksInsideLikelihood": false,
+      "likelihood1": "Medicaid likelihood: LOW",
+      "tierRich": [
+        "How to Make Your Money Last by Jane Bryant Quinn",
+        "Retirement Planning Guidebook by Wade Pfau",
+        "Long-Term Care: How to Plan & Pay for It by Joseph L. Matthews (Nolo)"
+      ],
+      "lowReasonNoIns": true,
+      "likelihood2": "Medicaid likelihood: HIGH",
+      "tierPoor": [
+        "Long-Term Care: How to Plan & Pay for It by Joseph L. Matthews (Nolo)",
+        "How to Care for Aging Parents (3rd ed.) by Virginia Morris",
+        "Get What's Yours for Medicare (revised and updated) by Philip Moeller"
+      ],
+      "risingNow": "Total shortfall if costs keep rising\n$381,255"
+    },
+    "head": {
+      "title": "Long-Term Care Cost Calculator: Nursing Home & Home Care",
+      "h1": "Long-Term Care Cost Calculator: What It Costs and Who Pays",
+      "meta": "Free long-term care cost & insurance calculator. Projected nursing home, assisted living, and home aide cost by state + inflation + Medicare + Medicaid.",
+      "dataTool": [
+        "elder-care"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "probate-trust",
+    "path": "/probate/cost-vs-trust-calculator/",
+    "width": 390,
+    "checks": {
+      "defaultState": "california",
+      "picks0": {
+        "heading": "Further reading on probate and living trusts",
+        "titles": [
+          "Every Californian's Guide to Estate Planning (Nolo)",
+          "Make Your Own Living Trust by Denis Clifford (Nolo)",
+          "8 Ways to Avoid Probate by Mary Randolph (Nolo)"
+        ],
+        "links": [
+          {
+            "href": "https://www.amazon.com/dp/1413333192?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1413330576?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          },
+          {
+            "href": "https://www.amazon.com/dp/1413333400?tag=soulcircle01-20",
+            "rel": "sponsored nofollow noopener noreferrer",
+            "target": "_blank",
+            "text": "Check price on Amazon"
+          }
+        ],
+        "disclosure": true,
+        "priceLike": false,
+        "text": "FURTHER READING ON PROBATE AND LIVING TRUSTS\nEvery Californian's Guide to Estate Planning (Nolo)\nCalifornia trusts, wills and probate rules in one place.\nCheck price on Amazon\nMake Your Own Living Trust by Denis Clifford (Nolo)\nHow a living trust is drafted and funded.\nCheck price on Amazon\n8 Ways to Avoid Probate by Mary Randolph (Nolo)\nWays to skip probate that cost less than a trust.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases."
+      },
+      "tierDefault": [
+        "Every Californian's Guide to Estate Planning (Nolo)",
+        "Make Your Own Living Trust by Denis Clifford (Nolo)",
+        "8 Ways to Avoid Probate by Mary Randolph (Nolo)"
+      ],
+      "funding": true,
+      "orderBelow": true,
+      "texas": {
+        "note352": true,
+        "link": 1,
+        "name": true
+      },
+      "tierTexas": [
+        "Make Your Own Living Trust by Denis Clifford (Nolo)",
+        "8 Ways to Avoid Probate by Mary Randolph (Nolo)",
+        "Plan Your Estate by Denis Clifford (Nolo)"
+      ],
+      "small": {
+        "ifFull": true,
+        "row": true,
+        "properName": true,
+        "lower": false
+      },
+      "tierSmall": [
+        "8 Ways to Avoid Probate by Mary Randolph (Nolo)",
+        "Estate Planning Basics by Denis Clifford (Nolo)"
+      ],
+      "realProp": true,
+      "timelineAdds": "Includes 3 to 6 months for real estate.",
+      "tierContested": [
+        "The Executor's Guide by Mary Randolph (Nolo)",
+        "Plan Your Estate by Denis Clifford (Nolo)"
+      ],
+      "caStatutory": "Executor commission\n$18,000 (statutory)",
+      "tierCA": [
+        "Every Californian's Guide to Estate Planning (Nolo)",
+        "Make Your Own Living Trust by Denis Clifford (Nolo)",
+        "8 Ways to Avoid Probate by Mary Randolph (Nolo)"
+      ],
+      "dashRange": "ok"
+    },
+    "head": {
+      "title": "Probate vs Living Trust Cost Calculator: The Real Math",
+      "h1": "Probate vs Living Trust: What It Actually Costs to Skip Probate",
+      "meta": "Probate vs living trust cost calculator. See what probate would cost your estate now versus setting up a revocable living trust today.",
+      "dataTool": [
+        "probate"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "doordash",
+    "path": "/self-employment-tax/doordash-taxes/",
+    "width": 390,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nDoorDash tax calculator\nEnter earnings after mileage and expenses\nDoorDash profit (earnings minus mileage and expenses)\n$\nFiling status\nSingle\nMarried\nHead of hh\nW-2 wages from a job (if any)\n$\n\nWages use up the Social Security wage base first, so a day job lowers the Social Security part of your self-employment tax — but raises the income-tax rate your 1099 profit stacks on top of.\n\nOther household income\n$\nApply the 20% qualified business income (QBI) deduction\nSET ASIDE FROM EVERY PAYMENT\n14.1%\n$1,130 of federal tax on $8,000 of net profit\nSelf-employment tax\n$1,130\nFederal income tax (on this income)\n$0\nQuarterly payment (1040-ES)\n$283\nEffective SE rate on profit\n14.13%\n\n2026 estimated payments are due April 15, June 15 and September 15, 2026, and January 15, 2027. You generally don't need to make them if you'll owe less than $1,000 after withholding. Paying 100% of last year's tax (110% if last year's AGI was over $150,000) on time in four payments avoids the underpayment penalty. Quarterly estimated tax calculator. Source: IRS estimated tax FAQ.\n\nNet earnings ($8,000 × 92.35%)\n$7,388\nSocial Security 12.4% on $7,388\n$916\nMedicare 2.9% (no ceiling)\n$214\nDeduction for half of SE tax\n− $565\nDoorDash withholds nothing and reports on Form 1099-NEC through Stripe — and only at $2,000 or more for 2026. Subtract your mileage before entering a figure here: 18,000 business miles is a $13,400 deduction at the 2026 rates.\nEstimate only, using 2026 federal figures: a $184,500 Social Security wage base and the Rev. Proc. 2025-32 brackets and standard deduction. It does not include state or local income tax, a self-employed health insurance or retirement deduction, or tax credits. Self-employed health insurance (Form 7206) and retirement contributions lower income tax, not self-employment tax, so the set-aside shown is on the high side if you have them.\nFURTHER READING ON SELF-EMPLOYMENT TAXES\nIndependent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper\nSelf-employment tax, the QBI deduction and quarterly payments in plain English.\nCheck price on Amazon\nWorking for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)\nThe contracts, records and tax rules for working as an independent contractor.\nCheck price on Amazon\nDeduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)\nDeductions that lower the profit this rate applies to.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "self-employment-tax"
+      ]
+    },
+    "head": {
+      "title": "DoorDash Taxes: What Dashers Owe in 2026",
+      "h1": "DoorDash Taxes: What Dashers Actually Owe",
+      "meta": "DoorDash taxes in 2026: the 1099-NEC threshold rose to $2,000, mileage is your biggest deduction, and most part-time Dashers owe SE tax only.",
+      "dataTool": [
+        "self-employment-tax"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "quarterly",
+    "path": "/self-employment-tax/quarterly-estimated-tax-calculator/",
+    "width": 390,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nQuarterly estimated tax\nThe quarterly figure is one quarter of the annual total\nNet profit (business income minus expenses)\n$\nFiling status\nSingle\nMarried\nHead of hh\nW-2 wages from a job (if any)\n$\n\nWages use up the Social Security wage base first, so a day job lowers the Social Security part of your self-employment tax — but raises the income-tax rate your 1099 profit stacks on top of.\n\nOther household income\n$\nApply the 20% qualified business income (QBI) deduction\nSET ASIDE FROM EVERY PAYMENT\n20.1%\n$12,037 of federal tax on $60,000 of net profit\nSelf-employment tax\n$8,478\nFederal income tax (on this income)\n$3,559\nQuarterly payment (1040-ES)\n$3,009\nEffective SE rate on profit\n14.13%\n\n2026 estimated payments are due April 15, June 15 and September 15, 2026, and January 15, 2027. You generally don't need to make them if you'll owe less than $1,000 after withholding. Paying 100% of last year's tax (110% if last year's AGI was over $150,000) on time in four payments avoids the underpayment penalty. Source: IRS estimated tax FAQ.\n\nNet earnings ($60,000 × 92.35%)\n$55,410\nSocial Security 12.4% on $55,410\n$6,871\nMedicare 2.9% (no ceiling)\n$1,607\nDeduction for half of SE tax\n− $4,239\nQBI deduction (20%)\n− $7,932\nEstimate only, using 2026 federal figures: a $184,500 Social Security wage base and the Rev. Proc. 2025-32 brackets and standard deduction. It does not include state or local income tax, a self-employed health insurance or retirement deduction, or tax credits. Self-employed health insurance (Form 7206) and retirement contributions lower income tax, not self-employment tax, so the set-aside shown is on the high side if you have them.\nFURTHER READING ON SELF-EMPLOYMENT TAXES\nIndependent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper\nSelf-employment tax, the QBI deduction and quarterly payments in plain English.\nCheck price on Amazon\nWorking for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)\nThe contracts, records and tax rules for working as an independent contractor.\nCheck price on Amazon\nDeduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)\nDeductions that lower the profit this rate applies to.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "self-employment-tax"
+      ]
+    },
+    "head": {
+      "title": "Quarterly Estimated Tax Calculator (1040-ES)",
+      "h1": "Quarterly Estimated Tax Calculator",
+      "meta": "Work out your quarterly estimated tax payments for 2026, plus the safe-harbor rule that switches off the underpayment penalty even if you owe more.",
+      "dataTool": [
+        "self-employment-tax"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "youtube",
+    "path": "/self-employment-tax/youtube-taxes/",
+    "width": 390,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nYouTube tax calculator\nEstimate self-employment tax on channel profit\nYouTube profit (revenue minus business expenses)\n$\nFiling status\nSingle\nMarried\nHead of hh\nW-2 wages from a job (if any)\n$\n\nWages use up the Social Security wage base first, so a day job lowers the Social Security part of your self-employment tax — but raises the income-tax rate your 1099 profit stacks on top of.\n\nOther household income\n$\nApply the 20% qualified business income (QBI) deduction\nSET ASIDE FROM EVERY PAYMENT\n14.1%\n$989 of federal tax on $7,000 of net profit\nSelf-employment tax\n$989\nFederal income tax (on this income)\n$0\nQuarterly payment (1040-ES)\n$247\nEffective SE rate on profit\n14.13%\n\n2026 estimated payments are due April 15, June 15 and September 15, 2026, and January 15, 2027. You generally don't need to make them if you'll owe less than $1,000 after withholding. Paying 100% of last year's tax (110% if last year's AGI was over $150,000) on time in four payments avoids the underpayment penalty. Quarterly estimated tax calculator. Source: IRS estimated tax FAQ.\n\nNet earnings ($7,000 × 92.35%)\n$6,465\nSocial Security 12.4% on $6,465\n$802\nMedicare 2.9% (no ceiling)\n$187\nDeduction for half of SE tax\n− $495\nThis calculation assumes your YouTube channel operates as a business. If the IRS treats your channel as a hobby, you report the income on Schedule 1 (Form 1040), line 8.\nEstimate only, using 2026 federal figures: a $184,500 Social Security wage base and the Rev. Proc. 2025-32 brackets and standard deduction. It does not include state or local income tax, a self-employed health insurance or retirement deduction, or tax credits. Self-employed health insurance (Form 7206) and retirement contributions lower income tax, not self-employment tax, so the set-aside shown is on the high side if you have them.\nFURTHER READING ON SELF-EMPLOYMENT TAXES\nIndependent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper\nSelf-employment tax, the QBI deduction and quarterly payments in plain English.\nCheck price on Amazon\nWorking for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)\nThe contracts, records and tax rules for working as an independent contractor.\nCheck price on Amazon\nDeduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)\nDeductions that lower the profit this rate applies to.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "self-employment-tax"
+      ]
+    },
+    "head": {
+      "title": "YouTube Taxes: What Creators Owe in 2026",
+      "h1": "YouTube Taxes: What Creators Owe on Channel Earnings",
+      "meta": "Calculate your YouTube taxes for 2026. Learn self-employment tax rates, AdSense W-9 withholding rules, 1099 thresholds, and valid deductions.",
+      "dataTool": [
+        "self-employment-tax"
+      ],
+      "byline": "Updated October 9, 2026",
+      "dm": "2026-10-09"
+    },
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "se-hub",
+    "path": "/self-employment-tax/",
+    "width": 390,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nNet profit (business income minus expenses)\n$\nFiling status\nSingle\nMarried\nHead of hh\nW-2 wages from a job (if any)\n$\n\nWages use up the Social Security wage base first, so a day job lowers the Social Security part of your self-employment tax — but raises the income-tax rate your 1099 profit stacks on top of.\n\nOther household income\n$\nApply the 20% qualified business income (QBI) deduction\nSET ASIDE FROM EVERY PAYMENT\n20.1%\n$12,037 of federal tax on $60,000 of net profit\nSelf-employment tax\n$8,478\nFederal income tax (on this income)\n$3,559\nQuarterly payment (1040-ES)\n$3,009\nEffective SE rate on profit\n14.13%\n\n2026 estimated payments are due April 15, June 15 and September 15, 2026, and January 15, 2027. You generally don't need to make them if you'll owe less than $1,000 after withholding. Paying 100% of last year's tax (110% if last year's AGI was over $150,000) on time in four payments avoids the underpayment penalty. Quarterly estimated tax calculator. Source: IRS estimated tax FAQ.\n\nNet earnings ($60,000 × 92.35%)\n$55,410\nSocial Security 12.4% on $55,410\n$6,871\nMedicare 2.9% (no ceiling)\n$1,607\nDeduction for half of SE tax\n− $4,239\nQBI deduction (20%)\n− $7,932\nEstimate only, using 2026 federal figures: a $184,500 Social Security wage base and the Rev. Proc. 2025-32 brackets and standard deduction. It does not include state or local income tax, a self-employed health insurance or retirement deduction, or tax credits. Self-employed health insurance (Form 7206) and retirement contributions lower income tax, not self-employment tax, so the set-aside shown is on the high side if you have them.\nFURTHER READING ON SELF-EMPLOYMENT TAXES\nIndependent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper\nSelf-employment tax, the QBI deduction and quarterly payments in plain English.\nCheck price on Amazon\nWorking for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)\nThe contracts, records and tax rules for working as an independent contractor.\nCheck price on Amazon\nDeduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)\nDeductions that lower the profit this rate applies to.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "self-employment-tax"
+      ]
+    },
+    "head": {
+      "title": "Self-Employment Tax Calculator (2026)",
+      "h1": "Self-Employment Tax Calculator: What to Set Aside in 2026",
+      "meta": "Free self-employment tax calculator using 2026 IRS rates. See your SE tax, your federal income tax, and the share of every payment to set aside for taxes.",
+      "dataTool": [
+        "self-employment-tax"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "probate-hub",
+    "path": "/probate/",
+    "width": 390,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nState\nAlabama\nAlaska\nArizona\nArkansas\nCalifornia\nColorado\nConnecticut\nDelaware\nFlorida\nGeorgia\nHawaii\nIdaho\nIllinois\nIndiana\nIowa\nKansas\nKentucky\nLouisiana\nMaine\nMaryland\nMassachusetts\nMichigan\nMinnesota\nMississippi\nMissouri\nMontana\nNebraska\nNevada\nNew Hampshire\nNew Jersey\nNew Mexico\nNew York\nNorth Carolina\nNorth Dakota\nOhio\nOklahoma\nOregon\nPennsylvania\nRhode Island\nSouth Carolina\nSouth Dakota\nTennessee\nTexas\nUtah\nVermont\nVirginia\nWashington\nWest Virginia\nWisconsin\nWyoming\nGross estate value\n$\nComplexity\nSimple — uncontested, no real estate\nModerate — uncontested with real estate\nContested — will contest or creditor litigation\nAdditional states with real property (ancillary probate)\n0\n1\n2\n3\nTOTAL PROBATE COST\n$36,400–$39,300\nTimeline: 15–30 months\nIncludes 3 to 6 months for real estate.\nCOST BREAKDOWN\nAttorney fees (statutory)\n$18,000–$19,800\nExecutor commission\n$18,000 (statutory)\nCourt filing + publication\n$400–$1,500\nCAL. PROB. CODE §10810\n\nCalifornia uses a statutory percentage schedule under Cal. Prob. Code §10810 (attorney) and §10800 (executor). Both are entitled to the SAME schedule, so total statutory fees roughly double. The 4-month creditor claim period under §9100 plus urban court backlogs push typical timelines to 12-24 months.\n\nWHAT A LIVING TRUST WOULD HAVE COST\nTrust setup cost\n$2,025–$6,750\nNet probate savings avoided\n$29,650–$37,275\nEstimates only. Actual probate costs depend on estate composition, court backlog in your county, and creditor claims. Consult a licensed attorney in your state before acting on these numbers.\nFURTHER READING ON PROBATE AND LIVING TRUSTS\nEvery Californian's Guide to Estate Planning (Nolo)\nCalifornia trusts, wills and probate rules in one place.\nCheck price on Amazon\nMake Your Own Living Trust by Denis Clifford (Nolo)\nHow a living trust is drafted and funded.\nCheck price on Amazon\n8 Ways to Avoid Probate by Mary Randolph (Nolo)\nWays to skip probate that cost less than a trust.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "probate"
+      ]
+    },
+    "head": {
+      "title": "Probate Calculator: What Will It Cost and How Long?",
+      "h1": "Probate Calculator: Cost, Timeline, and What a Trust Would've Saved",
+      "meta": "Free probate calculator. Enter state and estate value to see total cost, timeline, small-estate options, and how much a living trust would have saved.",
+      "dataTool": [
+        "probate"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "probate-fee",
+    "path": "/probate/fee-calculator/",
+    "width": 390,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nEstimate your probate fees\nState + estate value + complexity → attorney + executor + court fees, plus what a living trust would have saved.\nState\nAlabama\nAlaska\nArizona\nArkansas\nCalifornia\nColorado\nConnecticut\nDelaware\nFlorida\nGeorgia\nHawaii\nIdaho\nIllinois\nIndiana\nIowa\nKansas\nKentucky\nLouisiana\nMaine\nMaryland\nMassachusetts\nMichigan\nMinnesota\nMississippi\nMissouri\nMontana\nNebraska\nNevada\nNew Hampshire\nNew Jersey\nNew Mexico\nNew York\nNorth Carolina\nNorth Dakota\nOhio\nOklahoma\nOregon\nPennsylvania\nRhode Island\nSouth Carolina\nSouth Dakota\nTennessee\nTexas\nUtah\nVermont\nVirginia\nWashington\nWest Virginia\nWisconsin\nWyoming\nGross estate value\n$\nComplexity\nSimple — uncontested, no real estate\nModerate — uncontested with real estate\nContested — will contest or creditor litigation\nAdditional states with real property (ancillary probate)\n0\n1\n2\n3\nTOTAL PROBATE COST\n$36,400–$39,300\nTimeline: 15–30 months\nIncludes 3 to 6 months for real estate.\nCOST BREAKDOWN\nAttorney fees (statutory)\n$18,000–$19,800\nExecutor commission\n$18,000 (statutory)\nCourt filing + publication\n$400–$1,500\nCAL. PROB. CODE §10810\n\nCalifornia uses a statutory percentage schedule under Cal. Prob. Code §10810 (attorney) and §10800 (executor). Both are entitled to the SAME schedule, so total statutory fees roughly double. The 4-month creditor claim period under §9100 plus urban court backlogs push typical timelines to 12-24 months.\n\nWHAT A LIVING TRUST WOULD HAVE COST\nTrust setup cost\n$2,025–$6,750\nNet probate savings avoided\n$29,650–$37,275\nEstimates only. Actual probate costs depend on estate composition, court backlog in your county, and creditor claims. Consult a licensed attorney in your state before acting on these numbers.\nFURTHER READING ON PROBATE AND LIVING TRUSTS\nEvery Californian's Guide to Estate Planning (Nolo)\nCalifornia trusts, wills and probate rules in one place.\nCheck price on Amazon\nMake Your Own Living Trust by Denis Clifford (Nolo)\nHow a living trust is drafted and funded.\nCheck price on Amazon\n8 Ways to Avoid Probate by Mary Randolph (Nolo)\nWays to skip probate that cost less than a trust.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "probate"
+      ]
+    },
+    "head": {
+      "title": "Probate Fee Calculator: Attorney + Executor + Court Costs",
+      "h1": "Probate Fee Calculator: What Probate Actually Costs by State",
+      "meta": "Free probate fee calculator. See attorney fees (statutory in 9 states) plus executor commission and court costs by state, with living-trust savings.",
+      "dataTool": [
+        "probate"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "probate-fee-tx",
+    "path": "/probate/fee-calculator/texas/",
+    "width": 390,
+    "checks": {
+      "text": "INTERACTIVE — EDIT ANY FIELD\nEstimate your probate fees\nState + estate value + complexity → attorney + executor + court fees, plus what a living trust would have saved.\nState\nAlabama\nAlaska\nArizona\nArkansas\nCalifornia\nColorado\nConnecticut\nDelaware\nFlorida\nGeorgia\nHawaii\nIdaho\nIllinois\nIndiana\nIowa\nKansas\nKentucky\nLouisiana\nMaine\nMaryland\nMassachusetts\nMichigan\nMinnesota\nMississippi\nMissouri\nMontana\nNebraska\nNevada\nNew Hampshire\nNew Jersey\nNew Mexico\nNew York\nNorth Carolina\nNorth Dakota\nOhio\nOklahoma\nOregon\nPennsylvania\nRhode Island\nSouth Carolina\nSouth Dakota\nTennessee\nTexas\nUtah\nVermont\nVirginia\nWashington\nWest Virginia\nWisconsin\nWyoming\nGross estate value\n$\nComplexity\nSimple — uncontested, no real estate\nModerate — uncontested with real estate\nContested — will contest or creditor litigation\nAdditional states with real property (ancillary probate)\n0\n1\n2\n3\nTOTAL PROBATE COST\n$36,400–$39,300\nTimeline: 15–30 months\nIncludes 3 to 6 months for real estate.\nCOST BREAKDOWN\nAttorney fees (statutory)\n$18,000–$19,800\nExecutor commission\n$18,000 (statutory)\nCourt filing + publication\n$400–$1,500\nCAL. PROB. CODE §10810\n\nCalifornia uses a statutory percentage schedule under Cal. Prob. Code §10810 (attorney) and §10800 (executor). Both are entitled to the SAME schedule, so total statutory fees roughly double. The 4-month creditor claim period under §9100 plus urban court backlogs push typical timelines to 12-24 months.\n\nWHAT A LIVING TRUST WOULD HAVE COST\nTrust setup cost\n$2,025–$6,750\nNet probate savings avoided\n$29,650–$37,275\nEstimates only. Actual probate costs depend on estate composition, court backlog in your county, and creditor claims. Consult a licensed attorney in your state before acting on these numbers.\nFURTHER READING ON PROBATE AND LIVING TRUSTS\nEvery Californian's Guide to Estate Planning (Nolo)\nCalifornia trusts, wills and probate rules in one place.\nCheck price on Amazon\nMake Your Own Living Trust by Denis Clifford (Nolo)\nHow a living trust is drafted and funded.\nCheck price on Amazon\n8 Ways to Avoid Probate by Mary Randolph (Nolo)\nWays to skip probate that cost less than a trust.\nCheck price on Amazon\n\nAs an Amazon Associate we earn from qualifying purchases.",
+      "picksSlug": [
+        "probate"
+      ]
+    },
+    "head": {
+      "title": "Probate Fee Calculator — Texas | ModernWallet",
+      "h1": "Probate Fee Calculator: What Probate Actually Costs by State — Texas",
+      "meta": "Texas probate fee calculator estimator. Free probate fee calculator. See attorney fees (statutory in 9 states) plus executor commission and court costs by state",
+      "dataTool": [
+        "probate"
+      ],
+      "byline": "Updated November 4, 2026",
+      "dm": "2026-11-04"
+    },
+    "layout": {
+      "scrollW": 390,
+      "clientW": 390,
+      "overflow": false
+    },
+    "consoleErrors": []
+  }
+]

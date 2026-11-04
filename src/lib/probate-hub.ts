@@ -32,6 +32,15 @@
 //     Contested: 2-5 years
 //     Ancillary: +6-12 months per additional state
 //   Ancillary cost: $2,000-$8,000 per additional state.
+//   Texas executor compensation: Tex. Est. Code §352.002: 5% of cash received and 5% of cash paid
+//     out, capped at 5% of the estate's gross fair market value; excludes cash on hand at death,
+//     life insurance proceeds and cash paid to heirs/beneficiaries
+//     (https://statutes.capitol.texas.gov/Docs/ES/htm/ES.352.htm). Shown as an explanation only;
+//     the 2-5% executor band is unchanged and read as a ceiling (tool-usage pass 2026-11-04, F7).
+
+/** Months added to the base timeline for real estate ("moderate") and per ancillary state. */
+export const MODERATE_TIMELINE_ADD: [number, number] = [3, 6];
+export const ANCILLARY_TIMELINE_ADD_PER_STATE: [number, number] = [6, 12];
 
 export type ProbateComplexity = "simple" | "moderate" | "contested";
 
@@ -73,6 +82,9 @@ export interface ProbateResult {
   statuteCite?: string;
   /** State-specific note (statutory basis, timeline driver, ancillary rule). */
   stateNote: string;
+  /** Optional primary-source link for the state note (e.g. Tex. Est. Code §352.002). */
+  stateNoteSourceUrl?: string;
+  stateNoteSourceLabel?: string;
 
   /** Living trust cost that would have avoided probate entirely (from living-trust-cost baselines). */
   trustAvoidanceCostLow: number;
@@ -380,12 +392,14 @@ const STATUTORY_STATES: Record<string, StateProbate> = {
 // ---- Reasonable-fee states — market-typical percentages ----
 
 /** State-specific market attorney fee percentage bands (of gross estate) for uncontested probate. */
-const REASONABLE_FEE_BANDS: Record<string, { attorneyPct: [number, number]; executorPct: [number, number]; timeline: [number, number]; note: string; statutoryScheme: false }> = {
+const REASONABLE_FEE_BANDS: Record<string, { attorneyPct: [number, number]; executorPct: [number, number]; timeline: [number, number]; note: string; noteSourceUrl?: string; noteSourceLabel?: string; statutoryScheme: false }> = {
   "texas": {
     attorneyPct: [0.015, 0.03],
     executorPct: [0.02, 0.05],
     timeline: [3, 6],
-    note: "Texas has no statutory attorney fee schedule; independent administration (Tex. Est. Code §401.001+) is the default in most estates, which dramatically speeds probate. Attorney fees typically run 1.5-3% of gross estate; typical uncontested independent probate closes in 3-6 months.",
+    note: "Texas has no statutory attorney fee schedule; independent administration (Tex. Est. Code §401.001+) is the default in most estates, which dramatically speeds probate. Attorney fees typically run 1.5-3% of gross estate; typical uncontested independent probate closes in 3-6 months. Executor pay under Tex. Est. Code §352.002 is 5% of cash received and 5% of cash paid out, capped at 5% of the estate's gross fair market value. It excludes cash on hand at death, life insurance proceeds and cash paid to heirs or beneficiaries. The executor range shown is a ceiling.",
+    noteSourceUrl: "https://statutes.capitol.texas.gov/Docs/ES/htm/ES.352.htm",
+    noteSourceLabel: "Tex. Est. Code §352.002",
     statutoryScheme: false,
   },
   "colorado": {
@@ -480,6 +494,8 @@ export function estimateProbate(input: ProbateInput): ProbateResult {
   let statutoryScheme: boolean;
   let statuteCite: string | undefined;
   let stateNote: string;
+  let stateNoteSourceUrl: string | undefined;
+  let stateNoteSourceLabel: string | undefined;
   let baseTimelineLow: number, baseTimelineHigh: number;
 
   const statutory = STATUTORY_STATES[state];
@@ -501,14 +517,16 @@ export function estimateProbate(input: ProbateInput): ProbateResult {
     execLow = Math.round(estate * band.executorPct[0]);
     execHigh = Math.round(estate * band.executorPct[1]);
     stateNote = band.note;
+    stateNoteSourceUrl = band.noteSourceUrl;
+    stateNoteSourceLabel = band.noteSourceLabel;
     baseTimelineLow = band.timeline[0];
     baseTimelineHigh = band.timeline[1];
   }
 
   // Complexity/contested adjustments
   if (complexity === "moderate") {
-    baseTimelineLow += 3;
-    baseTimelineHigh += 6;
+    baseTimelineLow += MODERATE_TIMELINE_ADD[0];
+    baseTimelineHigh += MODERATE_TIMELINE_ADD[1];
   }
   if (complexity === "contested") {
     baseTimelineLow = 24;
@@ -525,8 +543,8 @@ export function estimateProbate(input: ProbateInput): ProbateResult {
   const ancillaryFeeLow = ancillary * 2_000;
   const ancillaryFeeHigh = ancillary * 8_000;
   if (ancillary > 0) {
-    baseTimelineLow += ancillary * 6;
-    baseTimelineHigh += ancillary * 12;
+    baseTimelineLow += ancillary * ANCILLARY_TIMELINE_ADD_PER_STATE[0];
+    baseTimelineHigh += ancillary * ANCILLARY_TIMELINE_ADD_PER_STATE[1];
   }
 
   const totalLow = attorneyLow + execLow + courtFeesLow + ancillaryFeeLow;
@@ -552,6 +570,8 @@ export function estimateProbate(input: ProbateInput): ProbateResult {
     statutoryScheme,
     statuteCite,
     stateNote,
+    stateNoteSourceUrl,
+    stateNoteSourceLabel,
     trustAvoidanceCostLow: trustLow,
     trustAvoidanceCostHigh: trustHigh,
     savingsIfTrustLow: savingsLow,

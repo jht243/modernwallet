@@ -1,0 +1,4 @@
+.claude/commands/mindmap-pass/phase-3c-tool-build.md — characters 9000 onward
+
+fest, relevant analysis/case selection and required flags on framing-prose writer calls. Build the actual useful asset; audit its complete rendered page, logic, inputs/outputs and exports.
+<!-- /mindmap-execution-v1 -->

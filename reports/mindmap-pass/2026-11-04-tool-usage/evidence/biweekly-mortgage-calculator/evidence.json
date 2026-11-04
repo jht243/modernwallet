@@ -1,0 +1,64 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "tool-usage-main",
+ "route": "/biweekly-mortgage-calculator/",
+ "readerQuestion": "How much faster do biweekly mortgage payments pay off my loan? [verb-only - no PAA, no completions; related searches: monthly vs biweekly mortgage calculator, biweekly mortgage calculator with extra payments]",
+ "decisionGap": "Readers can find biweekly calculators, but the top results (financialmentor.com, mct.bank, Bankrate in the AI Overview) show the biweekly saving alone. They do not show the reader that the same 13th payment, sent as 1/12 extra each month, reaches almost the same result without a plan or servicer timing questions, or what plan fees take back. Sampled only the 2026-11-04 SERP top 10 for 'biweekly mortgage calculator'; no site-wide uniqueness claimed.",
+ "finding": "In our internal calculation for a $300,000 loan at 6.5% over 30 years ($1,896.20 a month), biweekly half-payments of $948.10 applied when paid end the loan in 628 payments (about 24.2 years, 289.8 months) and save $88,121.78 in interest. Adding $158.02 (1/12 of a payment) each month ends it in 290 months and saves $87,256.29, within $865 of the biweekly result, with no plan. Illustrative plan fees of $400 setup plus $2.50 per debit cost $1,970 over the shortened loan. At 3% the biweekly saving falls to $20,637.30; at 0% it is $0.",
+ "conditions": "Fixed-rate loan; principal and interest only; biweekly modeled as each half-payment applied on the day paid (APR/26 per period). Regulation Z 1026.36(c)(1)(ii) lets a servicer hold a partial payment in a suspense account until a full payment builds up, which would make the real biweekly saving slightly smaller than shown; the 1/12-extra result does not depend on that timing.",
+ "whatWouldChange": "A servicer that holds half-payments, a plan fee, a lower rate (savings shrink sharply at 3%), or a loan with a prepayment penalty.",
+ "basis": "calculated",
+ "method": "Deterministic amortization of three payment schedules from the same loan: monthly; 26 half-payments a year at APR/26 per period; monthly payment + payment/12. Fees = setup + per-debit fee \u00d7 biweekly payment count.",
+ "units": "USD, months, two-week periods",
+ "limitations": "No escrow, PMI, taxes or insurance; no ARM resets; servicer crediting of half-payments varies (Reg Z suspense rule).",
+ "counterexample": "At 0% APR the biweekly schedule saves $0 interest (only time); at 3% it saves $20,637.30 versus $88,121.78 at 6.5%, so a fee-charging plan on a low-rate loan buys little.",
+ "execution": {
+  "command": [
+   "python3",
+   "reports/mindmap-pass/2026-11-04-tool-usage/evidence/biweekly-mortgage-calculator/calc.py",
+   "reports/mindmap-pass/2026-11-04-tool-usage/evidence/biweekly-mortgage-calculator/output.json"
+  ],
+  "code": {
+   "path": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/biweekly-mortgage-calculator/calc.py",
+   "sha256": "d45028bb751e65e39a229611dfa3dfb718169613b8a7b51697b5361951c38216"
+  },
+  "inputs": [
+   {
+    "path": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/biweekly-mortgage-calculator/inputs.json",
+    "sha256": "e8295c09885981aa937e269a6c62d22201d55293faf6224b6eb7e8a10f1cadc2"
+   }
+  ],
+  "output": {
+   "path": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/biweekly-mortgage-calculator/output.json",
+   "sha256": "931a466f9a90a0900f336edd843bef411e94782a478c5a45f30a3a0313f8a81d"
+  }
+ },
+ "sourceArtifacts": [
+  {
+   "path": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/biweekly-mortgage-calculator/sources.md",
+   "sha256": "2c64759de9cbd57fa2787e0032ced686e6e414c1424ddcfd8de197c692ba48a6"
+  }
+ ],
+ "caseSelection": {
+  "path": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/biweekly-mortgage-calculator/cases.json",
+  "sha256": "a13713e99b299fb90e370d92de12c00929dcb667990f8bed53de13a18da487b1"
+ },
+ "caseDecisions": "Retrieved with the exact packet reader question. 8 candidates: owned-property-drones-defense, testimonial-gamestation, client-game-station, client-mjr-fractional-loan-investments-acorn-care-financial-management, owned-property-caracas-research, owned-property-lawfare-claims, owned-property-rank-and-pay, owned-property-the-metabolic-journal. The closest, client-mjr-fractional-loan-investments-acorn-care-financial-management, documents a Layer3Labs business engagement with lending firms, not an observation about homeowners' biweekly mortgage payments. The rest are other Layer3Labs sites and gaming/media clients. None licenses a client claim on ModernWallet, whose _experience.md has no named-client specifics. Rejected all; no client claim on the page.",
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "output.json case 1-5"
+  ],
+  "scopeAndLimits": "illustrative loans; applied-when-paid assumption",
+  "publicMethod": "How it works section with the formula, the worked example and the Reg Z suspense note",
+  "placement": "introText worked example + howItWorks"
+ },
+ "medium": "interactive tool (calculator) \u2014 reader inputs change the answer; reuses calc-ui components",
+ "exclusions": "No TESTED label (financial tool; _experience.md section G excludes financial services and no product test exists).",
+ "sourceUrls": [
+  {
+   "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/36/",
+   "checked": "2026-11-04"
+  }
+ ]
+}

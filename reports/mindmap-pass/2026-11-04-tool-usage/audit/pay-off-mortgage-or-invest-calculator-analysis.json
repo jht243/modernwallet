@@ -1,0 +1,57 @@
+{
+ "reviewer": "phase4-pages-auditor",
+ "verdict": "PASS",
+ "packetSha256": "3b3791419a8a749d5ad21023710a5d529c1b3993388de8087deb2f2f93c7ad45",
+ "replaySha256": "8f2ad54d87b80eb20e90bbd8a6dfd24c21f7429debcf414f0d74ef15d5467934",
+ "checks": {
+  "usefulness": {
+   "status": "PASS",
+   "evidence": "The break-even return with a tax-on-gains input answers 'pay off or invest' with the reader's own numbers: 7.19% at 6.5% with 15% tax, 3.40% at a 3% mortgage, 6.70% with no tax. The site's guide and comparison give only fixed pre-tax examples, so this adds a decision threshold rather than restating sources."
+  },
+  "sourceAndAssumptions": {
+   "status": "PASS",
+   "evidence": "IRS Publication 936 itemizing condition verified live (HTTP 200); steady-return, same-cash, tax-at-end and P&I-only assumptions are stated on the page and in the tool; the 7% return and 15% tax are labelled placeholders, not forecasts."
+  },
+  "conditionsAndCounterexample": {
+   "status": "PASS",
+   "evidence": "Replay of calc.py is byte-identical to output.json (canonical sha 8f2ad54d...), including its built-in assertion that 0% tax break-even equals the effective annual rate (6.697% at 6.5%, 3.042% at 3%). TS engine matches all 7 cases (0 mismatches) and the 0%-tax break-even equals (1+APR/12)^12-1 to 1e-9. Boundaries: $0 extra returns null break-even and the UI says 'Enter an extra amount to compare'; 0% mortgage gives 0.00% break-even; 3% mortgage flips to investing (+$116,226.56). Limitation recorded: break-even bisection is capped at 30%, so 100% tax or a mortgage rate near 27%+ displays 30.00% instead of 'no break-even/above 30%' (advisory, unrealistic inputs)."
+  },
+  "renderedConsistency": {
+   "status": "PASS",
+   "evidence": "Round 2 render (snapshot 4a3caa54...) matches the analysis: default ($8,188 ahead, 7.19%, $322,599, $314,410, $135,115, 9 years 2 months) and all prose/FAQ figures match output.json; the new FAQ 6 figure ($72,807.70 at 5%) is output.json case 2. Final rendered review of this route: PASS."
+  },
+  "localExclusions": {
+   "status": "PASS",
+   "evidence": "No TESTED label or testing claim; calculated attribution only; no expected return asserted; YMYL not-advice footer at the bottom; no client claims (cases.json all rejected)."
+  }
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-04-tool-usage/audit/preview-snapshot.json",
+  "sha256": "69c7db54dcbcfd0893c7cf4b282aa7618410d4ea4c188ab6a3f402320e5f7878"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-04-tool-usage/audit/rendered-review.json",
+  "sha256": "d2ab58c9fc664e6157acf7dfee3af09c931d6086d91374c6b403ee1d90cedd95"
+ },
+ "note": "Round 3: bound to the 29-route snapshot (route fingerprint unchanged since round 2); replay unchanged.",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "The break-even return with a tax-on-gains input answers 'pay off or invest' with the reader's own numbers: 7.19% at 6.5% with 15% tax, 3.40% at a 3% mortgage, 6.70% with no tax. The site's guide and comparison give only fixed pre-tax examples, so this adds a decision threshold rather than restating sources."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "IRS Publication 936 itemizing condition verified live (HTTP 200); steady-return, same-cash, tax-at-end and P&I-only assumptions are stated on the page and in the tool; the 7% return and 15% tax are labelled placeholders, not forecasts."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "Replay of calc.py is byte-identical to output.json (canonical sha 8f2ad54d...), including its built-in assertion that 0% tax break-even equals the effective annual rate (6.697% at 6.5%, 3.042% at 3%). TS engine matches all 7 cases (0 mismatches) and the 0%-tax break-even equals (1+APR/12)^12-1 to 1e-9. Boundaries: $0 extra returns null break-even and the UI says 'Enter an extra amount to compare'; 0% mortgage gives 0.00% break-even; 3% mortgage flips to investing (+$116,226.56). Limitation recorded: break-even bisection is capped at 30%, so 100% tax or a mortgage rate near 27%+ displays 30.00% instead of 'no break-even/above 30%' (advisory, unrealistic inputs)."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "Round 2 render (snapshot 4a3caa54...) matches the analysis: default ($8,188 ahead, 7.19%, $322,599, $314,410, $135,115, 9 years 2 months) and all prose/FAQ figures match output.json; the new FAQ 6 figure ($72,807.70 at 5%) is output.json case 2. Final rendered review of this route: PASS."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "No TESTED label or testing claim; calculated attribution only; no expected return asserted; YMYL not-advice footer at the bottom; no client claims (cases.json all rejected)."
+ }
+}

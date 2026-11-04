@@ -1,0 +1,264 @@
+---
+mindmap_pass_date: 2026-11-04
+source: "tool-usage brief: our own tool tracking (30 days, data_days 27) + 7 live persona walkthroughs + queued tool specs"
+interpreted_brief: "Real visitors used seven ModernWallet calculators (Florida Amendment 3, inflation, Social Security taxable benefits, self-employment set-aside, stock capital gains, long-term care cost, probate vs trust). Fix what blocked them in their walkthroughs, add books under the result where a book fits the result, and build the next tools a mortgage-tool user reaches for (biweekly payments; pay off or invest), which earlier runs specced twice."
+status: ready-for-approval
+---
+
+# Content approval plan
+
+## Action chart
+
+| Problem | Solution | Bucket | Target (file or route) | Format | Best medium | Resolved deliverable | SERP verdict | SERP evidence | Reader question | Answer | Answer placement | ID |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| florida-amendment-3-calculator (67 people, 71 uses, 142 views; data_days 27). Walkthrough: the result says 'if Amendment 3 passes' though voters approved it Nov 3, 2026 (page FAQ says so); homes assessed $25,000-$76,411 get a flat $51,411 exemption instead of the banded one (Fla. Const. Art. VII s.6(a), s. 196.031(1)(b) F.S.), so a $60,000 home at 11.2 mills shows $96 saved instead of $280; no newcomer input; 0 millage gives a silent $0. Evidence: reports/tool-usage-pass/2026-11-04/personas/florida-amendment-3-calculator.md | In src/lib/florida-amendment-3.ts compute today's exemption as 25,000 + clamp(assessed - 50,000, 0, 26,411) (2027/2028 and homes >= $76,411 unchanged; regression cases $60,000 -> $280, $45,000 -> $224); in src/components/FloridaAmendment3Calculator.tsx change the sub-line to 'approved by voters Nov 3, 2026', add a 'Florida resident with homestead on Dec 31, 2026?' Yes/No toggle (default Yes; No keeps the current exemption for 2027-2028 with the fifth-year note) and a zero-millage hint. | update existing body text | /florida-amendment-3-calculator/ | tool fix | n/a | n/a | unread | tool-fix row backed by real usage; no SERP read needed (routine: volume never vetoes a tool fix) | How much will Amendment 3 save on my homestead tax bill? [persona walkthrough 2026-11-04 at 1366px + 390px and tracked usage; no GSC access] | Savings = extra exempt value x non-school millage, with today's exemption banded correctly for low-value homes (figure). | results panel big number and sub-line | F1 |
+| inflation-calculator (21 people, 23 uses, 51 views; data_days 27). Walkthrough: a minus sign is silently dropped (-1% becomes +1%); no guidance on which rate to enter; no year-by-year figures or way to keep them. Evidence: reports/tool-usage-pass/2026-11-04/personas/inflation-calculator.md | In src/components/InflationCalculator.tsx add a hint that deflation (negative rates) is not supported, rate chips 2% (Federal Reserve long-run target, federalreserve.gov FAQ), 3%, 4% plus a BLS CPI link, and a collapsed year-by-year table (amount x (1+i)^t, the existing formula) with a Copy table button. | update existing body text | /inflation-calculator/ | tool fix | n/a | n/a | unread | tool-fix row backed by real usage; no SERP read needed (routine: volume never vetoes a tool fix) | What will my costs be in 5, 10 and 15 years at this inflation rate? [persona walkthrough 2026-11-04 at 1366px + 390px and tracked usage; no GSC access] | Future cost = amount x (1 + rate)^years, shown per year (figure). | results panel table | F2 |
+| inflation-calculator (21 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Evidence: reports/tool-usage-pass/2026-11-04/personas/inflation-calculator.md | Render <ToolPicks tool="inflation-calculator"> in the results panel below the disclaimer, tag soulcircle01-20 via src/components/ToolPicks.tsx, tier -> books: 1119847672, 1982115831, 1264715919, 1945640154 by real-return tier. Disclosure line, rel sponsored nofollow noopener noreferrer, no prices. | update existing body text | /inflation-calculator/ | tool monetize | n/a | n/a | unread | tool-fix row backed by real usage; no SERP read needed (routine: volume never vetoes a tool fix) | What should I read next to act on this result? [persona walkthrough 2026-11-04 at 1366px + 390px and tracked usage; no GSC access] | Books matched to the result tier, under the answer, after any professional-help line (list). | results panel, below the disclaimer (tier by return blank / real return < 0 / years >= 10) | M2 |
+| social-security-taxable-benefits-calculator (46 people, 51 uses, 109 views; data_days 27). Walkthrough: married-filing-separately-living-together prints 'above $0'; no hint on what counts as other income (Roth withdrawals wrongly included overstate taxable benefits by up to 0.85 x amount); result stops at the taxable amount with no withholding route. Evidence: reports/tool-usage-pass/2026-11-04/personas/social-security-taxable-benefits-calculator.md | In src/components/SocialSecurityTaxableCalculator.tsx add the MFS $0-base sentence (IRS Pub 915), a hint under 'All other income' (taxable amounts only, 1099-R box 2a, exclude qualified Roth withdrawals), and a note on Form W-4V withholding choices 7/10/12/22% linking /tax-bracket-calculator/ and /guides/senior-deduction-social-security/. No math change. | update existing body text | /social-security-taxable-benefits-calculator/ | tool fix | n/a | n/a | unread | tool-fix row backed by real usage; no SERP read needed (routine: volume never vetoes a tool fix) | How much of my Social Security is taxable, and what do I do about it? [persona walkthrough 2026-11-04 at 1366px + 390px and tracked usage; no GSC access] | The Pub 915 Worksheet 1 figure, then W-4V withholding as the next step (figure). | results panel | F3 |
+| social-security-taxable-benefits-calculator (46 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Evidence: reports/tool-usage-pass/2026-11-04/personas/social-security-taxable-benefits-calculator.md | Render <ToolPicks tool="social-security-taxable-benefits-calculator"> in the results panel below the disclaimer, tag soulcircle01-20 via src/components/ToolPicks.tsx, tier -> books: 1945640154, 1950967204, 1394461577, 1950967190, 1501144766 by tier. Disclosure line, rel sponsored nofollow noopener noreferrer, no prices. | update existing body text | /social-security-taxable-benefits-calculator/ | tool monetize | n/a | n/a | unread | tool-fix row backed by real usage; no SERP read needed (routine: volume never vetoes a tool fix) | What should I read next to act on this result? [persona walkthrough 2026-11-04 at 1366px + 390px and tracked usage; no GSC access] | Books matched to the result tier, under the answer, after any professional-help line (list). | results panel, below the disclaimer (tier by none / up to 50% / up to 85% taxable) | M3 |
+| self-employment-tax (40 people, 42 uses, 117 views; data_days 27). Walkthrough: $420 profit shows $59 SE tax though net earnings $387.87 < $400 owe none (Schedule SE line 4c); QBI phase-in warning tests gross income and uses $201,775 (the MFS figure) for single/HOH instead of $201,750 (Rev. Proc. 2025-32 s.4.26); quarterly figure has no due dates; SE health insurance/retirement deductions not sized; 'Head of hh' label. Evidence: reports/tool-usage-pass/2026-11-04/personas/self-employment-tax.md | In src/lib/self-employment-tax.ts zero SE tax and the half-SE deduction when net earnings < $400, test taxable income before QBI against the threshold and set single/HOH to 201,750; in src/components/SelfEmploymentTaxCalculator.tsx add the under-$400 note, the 2026 estimated-tax due dates and safe-harbor note (IRS estimated tax FAQ), the Form 7206 note and an aria-label/title 'Head of household'. Shared component: also renders on the other self-employment spokes. | update existing body text | /self-employment-tax/how-much-to-set-aside-for-taxes/ | tool fix | n/a | n/a | unread | tool-fix row backed by real usage; no SERP read needed (routine: volume never vetoes a tool fix) | How much should I set aside for self-employment taxes? [persona walkthrough 2026-11-04 at 1366px + 390px and tracked usage; no GSC access] | Set-aside = SE tax + income tax on the profit, with the $400 floor and correct QBI test (figure). | results panel big number | F4 |
+| self-employment-tax (40 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Evidence: reports/tool-usage-pass/2026-11-04/personas/self-employment-tax.md | Render <ToolPicks tool="self-employment-tax"> in the results panel below the disclaimer, tag soulcircle01-20 via src/components/ToolPicks.tsx, tier -> books: 1950967174, 141333217X, 1413333052, 1394448961 by tier. Disclosure line, rel sponsored nofollow noopener noreferrer, no prices. | update existing body text | /self-employment-tax/how-much-to-set-aside-for-taxes/ | tool monetize | n/a | n/a | unread | tool-fix row backed by real usage; no SERP read needed (routine: volume never vetoes a tool fix) | What should I read next to act on this result? [persona walkthrough 2026-11-04 at 1366px + 390px and tracked usage; no GSC access] | Books matched to the result tier, under the answer, after any professional-help line (list). | results panel, below the disclaimer (tier by W-2 wages / QBI warning) | M4 |
+| stock-capital-gains-tax-calculator (19 people, 20 uses, 36 views (all 19 in the last 7 days); data_days 27). Walkthrough: '0% room left' is the room before the sale (MFJ $80,000 TI + $30,000 gain shows $18,900 though the sale uses it all); a loss shows the $3,000 rule but no numbers; no holding-period counting hint; taxable-income hint gives no deduction figure. Evidence: reports/tool-usage-pass/2026-11-04/personas/stock-capital-gains-tax-calculator.md | In src/components/StockCapitalGainsCalculator.tsx add a sub-line 'before this sale; this sale uses $X; $Y left', loss stats (deductible this year = min(loss, $3,000; $1,500 MFS) and carried forward, IRS Topic 409), a holding-period hint (count from the day after purchase, Pub 550) and the 2026 standard deduction in the taxable-income hint ($16,100 / $32,200 / $24,150, Rev. Proc. 2025-32). Tax math unchanged. | update existing body text | /stock-capital-gains-tax-calculator/ | tool fix | n/a | n/a | unread | tool-fix row backed by real usage; no SERP read needed (routine: volume never vetoes a tool fix) | How much tax will I owe when I sell this stock? [persona walkthrough 2026-11-04 at 1366px + 390px and tracked usage; no GSC access] | Tax by band (0/15/20% long-term or ordinary short-term) plus NIIT; loss shows this year's deduction and carryforward (figure). | results panel | F5 |
+| stock-capital-gains-tax-calculator (19 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Evidence: reports/tool-usage-pass/2026-11-04/personas/stock-capital-gains-tax-calculator.md | Render <ToolPicks tool="stock-capital-gains-tax-calculator"> in the results panel below the disclaimer, tag soulcircle01-20 via src/components/ToolPicks.tsx, tier -> books: 1950967204, 1119847672, 1394461577 by tier. Disclosure line, rel sponsored nofollow noopener noreferrer, no prices. | update existing body text | /stock-capital-gains-tax-calculator/ | tool monetize | n/a | n/a | unread | tool-fix row backed by real usage; no SERP read needed (routine: volume never vetoes a tool fix) | What should I read next to act on this result? [persona walkthrough 2026-11-04 at 1366px + 390px and tracked usage; no GSC access] | Books matched to the result tier, under the answer, after any professional-help line (list). | results panel, below the disclaimer (tier by long-term / short-term / NIIT-20% / loss) | M5 |
+| elder-care (1 person, 3 uses, 16 views; low-use lane; data_days 27). Walkthrough: result prints '$$180,000'; the total shortfall uses start-year prices while the total cost inflates ($256,068 vs $270,891 on the same basis); Medicare SNF copay shown as $209.50 for 2026 (CMS 2026: $217.00); state figures are a national median x state factor without saying so; LTC insurance mentioned when unticked; 'Current age' ambiguous; 13px checkbox. Evidence: reports/tool-usage-pass/2026-11-04/personas/elder-care.md | In src/components/LongTermCareCostCalculator.tsx fix the stray $, label the shortfall '(at start-year prices)' and add a 'Total shortfall if costs keep rising' row (total cost - income x 12 x years - LTC benefit x 12 x years, income held flat, stated), the state-factor note with the CareScout/Genworth link, the age hint and a 20px checkbox/44px row; in src/lib/long-term-care-cost.ts change the copay to $217.00/day (CMS 2026 Parts A & B fact sheet) and only mention LTC insurance when ticked. | update existing body text | /elder-care/long-term-care-cost-calculator/ | tool fix | n/a | n/a | unread | tool-fix row backed by real usage; no SERP read needed (routine: volume never vetoes a tool fix) | How much will long-term care cost, and can my parent's savings cover it? [persona walkthrough 2026-11-04 at 1366px + 390px and tracked usage; no GSC access] | Total cost over the care years and the shortfall on the same basis (figure). | results panel | F6 |
+| elder-care (1 person; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Evidence: reports/tool-usage-pass/2026-11-04/personas/elder-care.md | Render <ToolPicks tool="elder-care"> in the results panel below the disclaimer, tag soulcircle01-20 via src/components/ToolPicks.tsx, tier -> books: 1413330010, 0761166769, 1668031914, 1982115831, 1945640154 by Medicaid-likelihood tier. Disclosure line, rel sponsored nofollow noopener noreferrer, no prices. | update existing body text | /elder-care/long-term-care-cost-calculator/ | tool monetize | n/a | n/a | unread | tool-fix row backed by real usage; no SERP read needed (routine: volume never vetoes a tool fix) | What should I read next to act on this result? [persona walkthrough 2026-11-04 at 1366px + 390px and tracked usage; no GSC access] | Books matched to the result tier, under the answer, after any professional-help line (list). | results panel, below the disclaimer (tier by Medicaid likelihood) | M6 |
+| probate (2 people, 3 uses, 15 views; low-use lane; data_days 27). Walkthrough: intro says 'the calculator above' though it sits below; small-estate banner contradicts the big probate number; trust cost omits the $500-$2,000 funding cost the page itself cites; '$25,000-$25,000' ranges; timeline adds months silently; lowercase state name; Texas executor fee band overstates Tex. Est. Code s.352.002. Evidence: reports/tool-usage-pass/2026-11-04/personas/probate.md | Change 'above' to 'below' in the cost-vs-trust-calculator introText (src/data/spokes-probate.ts); in src/components/ProbateHubCalculator.tsx add the 'if full probate were required' line and small-estate row when the estate qualifies, a real-property caveat, the funding-cost explanation row, single figures when low = high '(statutory)', the added-months explanation and the proper state name; in src/lib/probate-hub.ts add the Texas s.352.002 note (5% of cash received and paid out, capped at 5% of gross fair market value, with the statutory exclusions). No savings math change. Shared component: renders on the probate hub and spokes. | update existing body text | /probate/cost-vs-trust-calculator/ | tool fix | n/a | n/a | unread | tool-fix row backed by real usage; no SERP read needed (routine: volume never vetoes a tool fix) | Is a living trust cheaper than probate for my estate? [persona walkthrough 2026-11-04 at 1366px + 390px and tracked usage; no GSC access] | Probate cost range vs trust cost, with the small-estate path when it applies (verdict). | results panel big number | F7 |
+| probate (2 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Evidence: reports/tool-usage-pass/2026-11-04/personas/probate.md | Render <ToolPicks tool="probate"> in the results panel below the disclaimer, tag soulcircle01-20 via src/components/ToolPicks.tsx, tier -> books: 1413333400, 1413333257, 1413333192, 1413330576, 1413329810, 1413331742 by tier. Disclosure line, rel sponsored nofollow noopener noreferrer, no prices. | update existing body text | /probate/cost-vs-trust-calculator/ | tool monetize | n/a | n/a | unread | tool-fix row backed by real usage; no SERP read needed (routine: volume never vetoes a tool fix) | What should I read next to act on this result? [persona walkthrough 2026-11-04 at 1366px + 390px and tracked usage; no GSC access] | Books matched to the result tier, under the answer, after any professional-help line (list). | results panel, below the disclaimer (tier by small estate / California / other states / contested) | M7 |
+| Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage /mortgage/payoff-calculator/). 'biweekly mortgage calculator' 1,900/mo KD 29, 'bi weekly mortgage calculator' 720, 'biweekly mortgage payment calculator' 480 (SEMRUSH us, measured 2026-11-04). lookup: /mortgage/extra-payment-calculator/ - flat monthly extra, FAQ mentions biweekly but no biweekly schedule (different job); /mortgage-recast-calculator/ - lump-sum recast (different goal). No prior commits touch this route. | Create /biweekly-mortgage-calculator/ targeting 'biweekly mortgage calculator' [calculator]: balance, rate, months left, optional plan setup and per-debit fees -> payoff time and interest for monthly vs biweekly vs monthly + 1/12 extra, and net savings after fees. | create new content | /biweekly-mortgage-calculator/ | calculator | interactive tool | interactive tool | locked (AI Overview) | 6/10 page-one slots google.com features; AI Overview cites bankrate.com, mortgagecalculator.org, financialmentor.com; organic financialmentor.com, mct.bank, experian.com; no PAA | How much faster do biweekly mortgage payments pay off my loan? [verb-only - no PAA, no completions; related searches: monthly vs biweekly mortgage calculator, biweekly mortgage calculator with extra payments] | On a $300,000, 6.5%, 30-year loan, biweekly half-payments end the loan about 70 months (nearly 6 years) sooner and save about $88,100 in interest, and adding 1/12 of a payment each month gets within $865 of that with no plan (figure). | section 1: the calculator results and intro worked example | C1 |
+| Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage). 'pay off mortgage or invest calculator' 260/mo KD 17, 'pay off mortgage vs invest calculator' 260 KD 11, 'should i pay off my mortgage or invest' 590 KD 37 (SEMRUSH us, measured 2026-11-04). lookup: /compare/pay-off-mortgage-vs-invest/ - qualitative comparison; /guides/pay-off-mortgage-early-or-invest/ - fixed worked examples, no calculator (same topic, different job: personal numbers + break-even). No prior commits touch this route. | Create /pay-off-mortgage-or-invest-calculator/ targeting 'pay off mortgage or invest calculator' [calculator]: balance, rate, months left, extra per month, expected return, tax on gains -> after-tax wealth on each path at the original payoff date, interest saved, months sooner and break-even return. | create new content | /pay-off-mortgage-or-invest-calculator/ | calculator | interactive tool | interactive tool | contested (AI Overview, video) | 5/10 google.com features; AI Overview cites myfinancialfreedomtracker.com, biggerpocketsmoney.com, envoymortgage.com, flagstar.com, lpl.com; organic arvest.com, zillow.com, usbank.com; no PAA | Should I pay off my mortgage or invest the money? [PAA 0 returned; ac ~27/37 verdict-pattern completions (should i / is it better / which / what's better); off-jurisdiction rejected: uk, canada, australia, super, pension, shares] | Prepaying wins when your expected after-tax return is below the break-even return; on a 6.5% loan with $300 extra and a 15% tax on gains that break-even is about 7.2%, and at a 3% mortgage it falls to about 3.4% (verdict with break-even). | section 1: the calculator results and intro worked example | C2 |
+| New route C1 needs inbound links from inspected pages that already discuss biweekly payments. | Link 'biweekly mortgage calculator' from the /mortgage/extra-payment-calculator/ FAQ 'Is a biweekly plan better than just paying extra?' and add a cross-link entry on /mortgage-recast-calculator/ (src/data/cross-links.ts). Link edit; bump the edited page's updated date to 2026-11-04 per the Phase 6 date-bump rule. | add internal links | /mortgage/extra-payment-calculator/ | n/a | n/a | n/a | n/a | n/a | n/a | n/a | n/a | L1 |
+| New route C2 needs inbound links from the existing payoff-or-invest guide and comparison. | Add one link sentence to /guides/pay-off-mortgage-early-or-invest/ ('What the Examples Leave Out') and to /compare/pay-off-mortgage-vs-invest/ pointing at the calculator, plus a cross-link entry from the C1 calculator. Link edit; bump the edited page's updated date to 2026-11-04 per the Phase 6 date-bump rule. | add internal links | /guides/pay-off-mortgage-early-or-invest/ | n/a | n/a | n/a | n/a | n/a | n/a | n/a | n/a | L2 |
+
+## Emerging search patterns (clusters)
+
+- **theme:** Mortgage prepayment schedules
+**members:** biweekly mortgage calculator; bi weekly mortgage calculator; biweekly mortgage payment calculator
+**why:** coverage gap (no biweekly tool)
+**lever:** create new content
+**target:** /biweekly-mortgage-calculator/
+**format:** calculator
+- **theme:** Pay off mortgage or invest
+**members:** pay off mortgage or invest calculator; pay off mortgage vs invest calculator; should i pay off my mortgage or invest
+**why:** intent mismatch (article + comparison, no calculator)
+**lever:** create new content
+**target:** /pay-off-mortgage-or-invest-calculator/
+**format:** calculator
+
+## Exclusions
+
+- Walked, no monetization fit: florida-amendment-3-calculator (only self-published Florida property-tax books returned; verdict no-fit).
+- Not edited: the shared [category]/[slug].astro skip-to-calculator link proposed for elder-care/probate/inflation - a template change reaches ~800 routes and needs its own rendered review; queued as next in line.
+- Next in line (specs, cap of 3 builds, 2 built): depreciation-recapture-calculator, 1031-exchange-calculator (prior specs); Social Security withholding (W-4V) estimator; capital loss carryover calculator; Florida homestead portability calculator; historical CPI value-of-a-dollar calculator; SEP-IRA/Solo 401(k) contribution calculator.
+- Inherited dead citation: CFPB biweekly Ask page on /mortgage/extra-payment-calculator/ now redirects to the CFPB mortgages hub; logged, not edited (outside reviewed scope).
+
+## New-page briefs
+
+### C1 — /biweekly-mortgage-calculator/
+
+**Identity**
+
+**title:** Biweekly Mortgage Calculator
+**h1:** Biweekly Mortgage Calculator
+**metaTitle:** Biweekly Mortgage Calculator: Payoff Date & Interest Saved
+**metaDescription:** Biweekly mortgage calculator. See how 26 half-payments a year shorten your loan, compare it with adding 1/12 extra each month, and check plan fees.
+**pageType:** explainer (tool page; mirrors /mortgage-recast-calculator/ depth)
+**format:** calculator
+**medium:** interactive tool
+
+**Reader and answer**
+
+**question:** How much faster do biweekly mortgage payments pay off my loan? [verb-only - no PAA, no completions; related searches: monthly vs biweekly mortgage calculator, biweekly mortgage calculator with extra payments]
+**answer:** On a $300,000, 6.5%, 30-year loan, biweekly half-payments end the loan about 70 months (nearly 6 years) sooner and save about $88,100 in interest, and adding 1/12 of a payment each month gets within $865 of that with no plan (figure).
+**placement:** section 1: the calculator results and intro worked example
+**audience:** Homeowners with a fixed-rate mortgage weighing biweekly payments or a servicer/third-party biweekly plan
+**intent:** figure (payoff time and interest saved)
+
+**Keyword evidence**
+
+SEMRUSH us 2026-11-04 measured: biweekly mortgage calculator 1,900 KD 29; bi weekly mortgage calculator 720 KD 29; biweekly mortgage payment calculator 480 KD 28 (research/volumes-queued.json, all autocomplete-corroborated). Primary: biweekly mortgage calculator.
+
+**SERP and questions**
+
+SERP (serp.json) locked: google.com features own 6/10; AI Overview cites bankrate.com, mortgagecalculator.org, financialmentor.com; organic financialmentor.com, mct.bank, experian.com. No PAA; autocomplete question sweep returned 0. Related searches: monthly vs biweekly mortgage calculator; with extra payments; with escrow. Opportunity: none of the sampled results shows the DIY 1/12-extra comparison and fee drag beside the biweekly result. Limit: locked SERP; tool usefulness and internal links carry it.
+
+**Why a new page**
+
+coverage_lookup: no biweekly page. /mortgage/extra-payment-calculator/ answers 'what does a flat monthly extra do' (its FAQ only says biweekly equals 13 payments); /mortgage-recast-calculator/ answers 'how much does a lump-sum recast lower my payment'. Neither models 26 half-payments or plan fees. No commits; prior charts list it only as a spec. Duplicate decision: KEEP (subject to independent review).
+
+**Planned outline**
+
+- Calculator (above the prose): inputs balance, rate, months left, plan setup fee, per-debit fee; results: biweekly payoff time, interest saved, months sooner, fees and net savings, DIY 1/12-extra comparison
+- introText: direct answer with the $300,000 / 6.5% worked example and the DIY comparison
+- howItWorks: formula, APR/26 per period, applied-when-paid assumption and the Regulation Z suspense-account rule, fee arithmetic, low-rate counterexample (3%: $20,637), who should skip a paid plan, takeaway
+- FAQ: Does paying biweekly really save money?; How much faster will biweekly payments pay off my mortgage?; Is a biweekly plan better than paying extra each month?; Can my servicer hold half payments?; Is a biweekly payment plan worth a fee?; Monthly vs biweekly: which is better on a low-rate loan?
+
+**Contribution and evidence**
+
+Calculated (evidence/biweekly-mortgage-calculator/evidence.json; calc.py executed, output.json). Finding: biweekly saves $88,121.78 on the example, DIY 1/12 extra saves $87,256.29, illustrative $400 + $2.50/debit fees cost $1,970; at 3% savings fall to $20,637.30. Source: Regulation Z 12 CFR 1026.36(c)(1) (checked 2026-11-04). Attribution: 'In our internal calculation...' beside the worked example.
+
+**Tables, tools or visuals**
+
+Interactive calculator (React island, calc-ui components, mirrors MortgageRecastCalculator). No chart/table beyond the results panel.
+
+**Testing and review**
+
+Testing excluded (financial; _experience.md section G). Ordinary presentation; operator register with editorial 'we'; existing template byline; YMYL disclaimer at the bottom via template.
+
+**Planned takeaway**
+
+Biweekly payments shorten a 6.5% 30-year loan by about 70 months, but sending 1/12 extra with each monthly payment does nearly the same for free; skip any plan whose fees eat the difference, and expect much smaller savings on low-rate loans or if the servicer holds half-payments.
+
+**Inbound internal links**
+
+**required:** 2
+**placements:** - **source:** /mortgage/extra-payment-calculator/
+**target:** /biweekly-mortgage-calculator/
+**section:** FAQ 'Is a biweekly plan better than just paying extra?'
+**anchor:** biweekly mortgage calculator
+**purpose:** the FAQ discusses biweekly plans; the new tool runs the numbers
+**inspection:** **path:** reports/mindmap-pass/2026-11-04-tool-usage/inspections/inbound-mortgage-payoff.txt
+**sha256:** 24dc6fa26b66dc2a640073ab5132089d2322185ac1d0dc595e8e334aadef9f6f
+- **source:** /mortgage-recast-calculator/
+**target:** /biweekly-mortgage-calculator/
+**section:** cross-links list (src/data/cross-links.ts mortgage-recast-calculator)
+**anchor:** Paying biweekly instead? See the payoff date
+**purpose:** alternative way to pay a mortgage down
+**inspection:** **path:** reports/mindmap-pass/2026-11-04-tool-usage/inspections/inbound-recast-crosslinks.txt
+**sha256:** 6fb0aca2ac551c98e5ea0f65541d0f4cbe8b25f184e65565bed3e78f1dafa93a
+
+**Outbound internal links**
+
+**placements:** - **source:** /biweekly-mortgage-calculator/
+**target:** /mortgage/extra-payment-calculator/
+**section:** howItWorks / cross-links
+**anchor:** extra payment calculator
+**purpose:** test a different monthly extra amount
+**inspection:** **path:** reports/mindmap-pass/2026-11-04-tool-usage/inspections/inbound-mortgage-payoff.txt
+**sha256:** 24dc6fa26b66dc2a640073ab5132089d2322185ac1d0dc595e8e334aadef9f6f
+- **source:** /biweekly-mortgage-calculator/
+**target:** /pay-off-mortgage-or-invest-calculator/
+**section:** cross-links
+**anchor:** Pay off the mortgage or invest the extra?
+**purpose:** the next decision after deciding to prepay
+**inspection:** **path:** reports/mindmap-pass/2026-11-04-tool-usage/inspections/inbound-guide-payoff-invest.txt
+**sha256:** fafe4add00cd249d69dbd27eede7dfce44465d9656c56cc5e6be2485ddf97205
+
+**Technical and measurement scope**
+
+New entry in src/data/calculators.ts (top-level calculator route like /mortgage-recast-calculator/), CalculatorIsland map, registry LIVE_IDS, cross-links; data-tool root from the [category] template; sitemap from build; IndexNow after live verification. growth: not-yet-published, primary metric GSC clicks + tracked uses; no uplift claimed.
+
+### C2 — /pay-off-mortgage-or-invest-calculator/
+
+**Identity**
+
+**title:** Pay Off Mortgage or Invest Calculator
+**h1:** Pay Off Mortgage or Invest Calculator
+**metaTitle:** Pay Off Mortgage or Invest Calculator: Break-Even Return
+**metaDescription:** Pay off mortgage or invest calculator. Compare after-tax wealth on each path at your payoff date and find the return investing must beat.
+**pageType:** explainer (tool page; mirrors /mortgage-recast-calculator/ depth)
+**format:** calculator
+**medium:** interactive tool
+
+**Reader and answer**
+
+**question:** Should I pay off my mortgage or invest the money? [PAA 0 returned; ac ~27/37 verdict-pattern completions (should i / is it better / which / what's better); off-jurisdiction rejected: uk, canada, australia, super, pension, shares]
+**answer:** Prepaying wins when your expected after-tax return is below the break-even return; on a 6.5% loan with $300 extra and a 15% tax on gains that break-even is about 7.2%, and at a 3% mortgage it falls to about 3.4% (verdict with break-even).
+**placement:** section 1: the calculator results and intro worked example
+**audience:** Homeowners with spare monthly cash deciding between extra principal and investing
+**intent:** verdict with break-even
+
+**Keyword evidence**
+
+SEMRUSH us 2026-11-04 measured: pay off mortgage or invest calculator 260 KD 17; pay off mortgage vs invest calculator 260 KD 11; should i pay off my mortgage or invest 590 KD 37 (research/volumes-queued.json).
+
+**SERP and questions**
+
+SERP contested: google.com features 5/10, AI Overview cites myfinancialfreedomtracker.com, biggerpocketsmoney.com, envoymortgage.com, flagstar.com, lpl.com; organic arvest.com, zillow.com, usbank.com; video present; no PAA. Autocomplete 37 completions incl. 'should i pay off mortgage or invest calculator', '...the money', '...in stocks', '...inheritance'; uk/canada/australia/super rejected (off-jurisdiction). Opportunity: a break-even return and a tax-on-gains input.
+
+**Why a new page**
+
+/compare/pay-off-mortgage-vs-invest/ answers 'what are the tradeoffs' qualitatively; /guides/pay-off-mortgage-early-or-invest/ answers with two fixed examples and lists taxes as left out. /guides/mortgage-early-payoff-tax-implications/ and /guides/pay-off-debt-or-invest/ also discuss the tradeoff without a calculator. None lets the reader enter their own loan, extra amount, return and tax rate or shows the break-even return. Duplicate decision: KEEP as a calculator, linked both ways (subject to independent review).
+
+**Planned outline**
+
+- Calculator: inputs balance, rate, months left, extra per month, expected annual return, tax rate on gains; results: which path ends ahead and by how much, after-tax balances on each path, interest saved, months sooner, break-even return
+- introText: direct answer with the $300,000 / 6.5% / $300 worked example and the break-even
+- howItWorks: same-cash method, monthly compounding, tax at the end, why the mortgage-interest deduction is ignored (Pub 936 itemizing), 3% counterexample, tax-free account case, risk and liquidity caveat, takeaway
+- FAQ: Is it better to pay off my mortgage or invest?; What return do I need to beat my mortgage rate?; Does a Roth IRA or 401(k) change the answer?; What if I have a 3% mortgage?; Should I count the mortgage interest deduction?; What does the calculator leave out?
+
+**Contribution and evidence**
+
+Calculated (evidence/pay-off-mortgage-or-invest-calculator/evidence.json; calc.py executed, output.json). Finding: break-even 7.19% at 6.5% with 15% tax; 3.40% at a 3% mortgage; 6.70% (the loan's effective annual rate) with no tax on gains; leftover payoff-month cash is invested (fixed after chart review). Source: IRS Pub 936 itemizing condition (checked 2026-11-04). Attribution: 'In our internal calculation...' beside the worked example.
+
+**Tables, tools or visuals**
+
+Interactive calculator (React island, calc-ui components). No default return presented as expected; the 7% default is labelled an assumption to replace.
+
+**Testing and review**
+
+Testing excluded (financial). Ordinary presentation; operator register; template byline; YMYL disclaimer at the bottom.
+
+**Planned takeaway**
+
+Prepay when the after-tax return you can count on is below the break-even rate the calculator shows; invest when your mortgage rate is low or the money goes into a tax-free account; keep an emergency fund first, because prepaid principal is hard to get back.
+
+**Inbound internal links**
+
+**required:** 2
+**placements:** - **source:** /guides/pay-off-mortgage-early-or-invest/
+**target:** /pay-off-mortgage-or-invest-calculator/
+**section:** What the Examples Leave Out
+**anchor:** pay off mortgage or invest calculator
+**purpose:** run the comparison with your own numbers and tax rate
+**inspection:** **path:** reports/mindmap-pass/2026-11-04-tool-usage/inspections/inbound-guide-payoff-invest.txt
+**sha256:** fafe4add00cd249d69dbd27eede7dfce44465d9656c56cc5e6be2485ddf97205
+- **source:** /compare/pay-off-mortgage-vs-invest/
+**target:** /pay-off-mortgage-or-invest-calculator/
+**section:** The Return You Earn Each Way
+**anchor:** pay off mortgage or invest calculator
+**purpose:** turn the comparison into a personal break-even
+**inspection:** **path:** reports/mindmap-pass/2026-11-04-tool-usage/inspections/inbound-compare-payoff-invest.txt
+**sha256:** b2e97c46d80d69c544172f28d199233e2595e5d7b85efcbbebe5f711fa0c57d2
+
+**Outbound internal links**
+
+**placements:** - **source:** /pay-off-mortgage-or-invest-calculator/
+**target:** /guides/pay-off-mortgage-early-or-invest/
+**section:** howItWorks / cross-links
+**anchor:** pay off mortgage early or invest
+**purpose:** worked examples and context
+**inspection:** **path:** reports/mindmap-pass/2026-11-04-tool-usage/inspections/inbound-guide-payoff-invest.txt
+**sha256:** fafe4add00cd249d69dbd27eede7dfce44465d9656c56cc5e6be2485ddf97205
+- **source:** /pay-off-mortgage-or-invest-calculator/
+**target:** /mortgage/payoff-calculator/
+**section:** cross-links
+**anchor:** mortgage payoff calculator
+**purpose:** see the new payoff date
+**inspection:** **path:** reports/mindmap-pass/2026-11-04-tool-usage/inspections/inbound-recast-crosslinks.txt
+**sha256:** 6fb0aca2ac551c98e5ea0f65541d0f4cbe8b25f184e65565bed3e78f1dafa93a
+
+**Technical and measurement scope**
+
+New entry in src/data/calculators.ts, CalculatorIsland map, registry LIVE_IDS, cross-links; sitemap from build; IndexNow after live verification. growth: not-yet-published; no uplift claimed.
+
+## Execution plan
+
+1. Skip: no consolidation rows
+2. Skip: no metadata rows (titles/H1/meta of fixed tools unchanged)
+3. Build /biweekly-mortgage-calculator/ and /pay-off-mortgage-or-invest-calculator/ (Phase 3c): lib + React island + calculators.ts entry with prose from the API writer (content_gen)
+4. Independent Phase 4 audit of both new pages, all 13 tool fix/monetize diffs, rendered snapshots of every changed and shared-component route, analysis replays
+5. Apply tool fix and tool monetize rows F1-F7, M2-M7 as code in the named components, bump the 'updated' date of each changed tool page
+6. Add inbound links L1/L2 (extra-payment FAQ, recast cross-links, payoff-or-invest guide and comparison) and bump each edited page's updated date; cross-links between the two new tools
+7. Sitemap regenerated at build; write the IndexNow list of new and changed URLs
+8. Save the run summary to reports/tool-usage-pass/2026-11-04/phase8-summary.md and continue
+9. Commit, run the deploy-to-main helper, verify every changed URL live (200, data-tool, picks), rendered compare, IndexNow for verified URLs
+
+Publication scope: commit: True, push: True, liveVerification: True, indexNow: True
+
+## Preparation check
+
+| Check | Result | Evidence |
+|---|---|---|
+| Preparation check | ✅ Passed | [Full readiness report](reports/mindmap-pass/2026-11-04-tool-usage/readiness.md) |
+
+Approve this plan to start the listed content work?

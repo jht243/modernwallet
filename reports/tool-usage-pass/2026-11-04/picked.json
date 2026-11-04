@@ -1,0 +1,72 @@
+[
+ {
+  "tool": "florida-amendment-3-calculator",
+  "path": "/florida-amendment-3-calculator/",
+  "people": 67,
+  "uses": 71,
+  "views": 142,
+  "use_rate": 0.5,
+  "people_7d": 51,
+  "lane": "persona"
+ },
+ {
+  "tool": "social-security-taxable-benefits-calculator",
+  "path": "/social-security-taxable-benefits-calculator/",
+  "people": 46,
+  "uses": 51,
+  "views": 109,
+  "use_rate": 0.468,
+  "people_7d": 17,
+  "lane": "persona"
+ },
+ {
+  "tool": "self-employment-tax",
+  "path": "/self-employment-tax/how-much-to-set-aside-for-taxes/",
+  "people": 40,
+  "uses": 42,
+  "views": 117,
+  "use_rate": 0.359,
+  "people_7d": 16,
+  "lane": "persona"
+ },
+ {
+  "tool": "inflation-calculator",
+  "path": "/inflation-calculator/",
+  "people": 21,
+  "uses": 23,
+  "views": 51,
+  "use_rate": 0.451,
+  "people_7d": 1,
+  "lane": "persona"
+ },
+ {
+  "tool": "stock-capital-gains-tax-calculator",
+  "path": "/stock-capital-gains-tax-calculator/",
+  "people": 19,
+  "uses": 20,
+  "views": 36,
+  "use_rate": 0.556,
+  "people_7d": 19,
+  "lane": "persona"
+ },
+ {
+  "tool": "elder-care",
+  "path": "/elder-care/long-term-care-cost-calculator/",
+  "people": 1,
+  "uses": 3,
+  "views": 16,
+  "use_rate": 0.188,
+  "people_7d": 1,
+  "lane": "low-use"
+ },
+ {
+  "tool": "probate",
+  "path": "/probate/cost-vs-trust-calculator/",
+  "people": 2,
+  "uses": 3,
+  "views": 15,
+  "use_rate": 0.2,
+  "people_7d": 1,
+  "lane": "low-use"
+ }
+]

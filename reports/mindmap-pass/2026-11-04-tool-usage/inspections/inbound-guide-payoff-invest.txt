@@ -1,0 +1,22 @@
+  "slug": "pay-off-mortgage-early-or-invest",
+  "title": "Pay Off Mortgage Early or Invest at a 3% or 7.5% Rate",
+  "metaDescription": "Pay off mortgage early or invest? At a 3% rate, investing $500 a month came out ahead in the example. At 7.5%, prepaying won at both 5% and 7% returns.",
+  "h1": "Should You Pay Off Your Mortgage Early or Invest? Worked Examples at 3% and 7.5%",
+  "cardBlurb": "Compare your mortgage rate to a realistic return. At 3%, investing led in the example, while at 7.5%, prepaying beat a 7% return.",
+  "introText": "Whether you should pay off your mortgage early or invest depends on your mortgage rate compared with the return you can reasonably expect from investing. In two worked examples with a $300,000 balance, the loan at 3% ended further ahe
+  "sections": [
+    {
+      "heading": "The Rate Comparison That Decides Mortgage Payoff or Investing",
+      "body": "Paying extra on a mortgage earns a guaranteed return equal to the mortgage rate, before taxes, while an investment return is an assumption. If your loan charges 3%, every extra dollar of principal earns 3% with certainty. If your loan 
+    },
+    {
+      "heading": "Worked Example for a Locked-In Owner at 3%",
+      "body": "For a locked-in owner at 3%, investing the extra $500 a month ended ahead of prepaying at both a 5% and a 7% assumed return. The example starts with a $300,000 balance at 3% and 25 years (300 months) left, with a required payment of $1
+    },
+    {
+      "heading": "Worked Example for a New Borrower at 7.5%",
+      "body": "For a new borrower at 7.5%, prepaying the extra $500 a month ended ahead of investing it at both a 5% and a 7% assumed return. The example is a $300,000 loan at 7.5% over 30 years, with a payment of $2,097.64 a month. Paid on schedule,
+    },
+    {
+      "heading": "What the Examples Leave Out",
+      "body": "The worked examples use level payments and monthly compounding, and they leave out several items that can move your result. They do not include:\n\n- income taxes on investment gains\n- the mortgage interest deduction\n- investment fee

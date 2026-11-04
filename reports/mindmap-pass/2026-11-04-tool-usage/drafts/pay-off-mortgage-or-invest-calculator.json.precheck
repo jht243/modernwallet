@@ -1,0 +1,41 @@
+{
+  "metaTitle": "Pay Off Mortgage or Invest Calculator: Break-Even Return",
+  "metaDescription": "Pay off mortgage or invest calculator. Enter your loan, extra cash, return and tax rate to see which path ends ahead after tax and your break-even return.",
+  "introText": "Pay off the mortgage when your expected return is below the break-even return. If your expected return is above it, invest the extra instead. Enter your balance, mortgage rate, months left, extra cash each month, expected annual return and tax rate on gains in the pay off mortgage or invest calculator below. It shows which path ends ahead after tax and by how much, the break-even return, the interest saved by paying off early and how much sooner the loan is gone.\n\nTake a $300,000 balance at 6.5% with 360 months left. You have $300 extra a month, expect a 7% return and pay 15% tax on gains. The monthly payment is $1,896.20. At ModernWallet, we ran an internal calculation that follows the same $300 a month both ways, month by month. Paying off early ends $8,188.38 ahead because the 7% return sits below the 7.19% break-even. You can check the result by changing any input.",
+  "howItWorks": "The calculator gives both paths the same cash each month until the loan's scheduled payoff date. That cash is the mortgage payment plus the extra. Paying off early sends the extra to principal. Once the loan is gone, the full payment plus the extra is invested every month, including the cash left over in the payoff month. Investing sends the extra to investments every month while the loan runs on schedule. Investments grow monthly at your annual return, and at the end, tax is charged on gains (balance minus contributions) at your tax rate. Both homes are paid off by the original payoff date, so the comparison comes down to the after-tax invested balance on each path.\n\nThe break-even return is the annual return at which both paths end equal. Compare it with the return you expect after fees. Below the break-even, paying off early wins, and above it, investing wins. On the example loan, the break-even is 7.19%, so the 7% placeholder leaves paying off early $8,188.38 ahead. Paying off early also ends the loan 110 months sooner and saves $135,115.17 in interest. The pay-off-early path ends with an after-tax balance of $322,598.79 at the original payoff date, against $314,410.41 for investing the $300. At a 5% return on the same loan, paying off early ends $72,807.70 ahead. Treat the 7% return and 15% tax rate as placeholders and replace them with your own.\n\nA lower mortgage rate moves the break-even down. Keep the same balance, term, extra cash and tax rate but use a 3% mortgage, and the break-even return is 3.40%. At a 7% return, investing then ends $116,226.56 ahead. A tax-free account also lowers the break-even. Enter 0% tax for a Roth individual retirement account (IRA) or another account with no tax on gains, and the 6.5% loan has a break-even of 6.70%. That break-even equals the loan's effective annual rate. At a 7% return, investing ends $14,210.46 ahead.\n\nThe calculator assumes steady returns with no market losses. Real returns vary year to year, and investing can lose money while paying off principal cannot. It ignores the mortgage-interest deduction because [Internal Revenue Service (IRS) Publication 936](https://www.irs.gov/publications/p936) lets you deduct home mortgage interest only if you itemize deductions on Schedule A. Results cover principal and interest only. Prepaid principal cannot be taken back out without selling or borrowing against the home. If you have no emergency fund, size one with the [emergency fund calculator](/emergency-fund-calculator/) before you send extra cash to the loan.\n\nBased on our internal calculation, pay off early when your expected return is below the break-even, and invest when it is above. A lower mortgage rate or a tax-free account lowers the break-even, which tips the result toward investing. For more worked examples, read the [pay off mortgage early or invest](/guides/pay-off-mortgage-early-or-invest/) guide. Run your own numbers in the pay off mortgage or invest calculator, then use the [mortgage payoff calculator](/mortgage/payoff-calculator/) to see your new payoff date.",
+  "faqs": [
+    {
+      "question": "Should I pay off my mortgage or invest the money?",
+      "answer": "Pay off the mortgage if your expected return is below the break-even return, and invest if it is above. Take a $300,000 loan at 6.5% with $300 extra a month. With a 15% tax on gains, the break-even return is 7.19%. At a 7% return, paying off early ends $8,188.38 ahead."
+    },
+    {
+      "question": "What return do I need to beat my mortgage rate?",
+      "answer": "You need a return above the break-even return the calculator shows, and that figure can sit above your mortgage rate. With a 15% tax on gains, a 6.5% loan has a break-even return of 7.19%. With no tax on gains, the break-even is 6.70%, which equals the loan's effective annual rate."
+    },
+    {
+      "question": "Is it better to pay off a 3% mortgage or invest?",
+      "answer": "On a 3% mortgage, investing comes out ahead at a 7% return. The example uses a $300,000 balance, 360 months left and $300 extra a month. With a 15% tax on gains, the break-even return is 3.40%. At a 7% return, investing ends $116,226.56 ahead."
+    },
+    {
+      "question": "Does a Roth IRA change the answer?",
+      "answer": "Yes, a Roth IRA lowers the break-even return because gains are not taxed. Enter 0% tax for a Roth IRA or any account with no tax on gains. On the 6.5% example loan, the break-even drops from 7.19% to 6.70%. At a 7% return, investing then ends $14,210.46 ahead."
+    },
+    {
+      "question": "Should I count the mortgage interest deduction?",
+      "answer": "The calculator leaves the mortgage-interest deduction out. [IRS Publication 936](https://www.irs.gov/publications/p936) lets you deduct home mortgage interest only if you itemize deductions on Schedule A. If you itemize, keep in mind that the results do not include the deduction."
+    },
+    {
+      "question": "What does the calculator leave out?",
+      "answer": "The calculator assumes steady returns with no market losses, though real returns vary year to year and investing can lose money. It ignores the mortgage-interest deduction and shows principal and interest only. It also puts no value on access to your cash, and prepaid principal cannot be taken back out without selling or borrowing against the home."
+    },
+    {
+      "question": "Should I build an emergency fund before paying extra on my mortgage?",
+      "answer": "Build the emergency fund first. Prepaid principal cannot be taken back out without selling or borrowing against the home, so you cannot reach that cash quickly. Size your fund with the [emergency fund calculator](/emergency-fund-calculator/), then come back and test extra payments."
+    },
+    {
+      "question": "What if I pay off the mortgage early and then invest?",
+      "answer": "The calculator models that path when you choose to pay off early. Once the loan is gone, the full payment plus the extra is invested every month, including the cash left over in the payoff month. On the example loan, the loan ends 110 months sooner, and the after-tax balance reaches $322,598.79 at the original payoff date. To see the new payoff date for your own loan, use the [mortgage payoff calculator](/mortgage/payoff-calculator/)."
+    }
+  ],
+  "slug": "pay-off-mortgage-or-invest-calculator"
+}

@@ -1,0 +1,6 @@
+  "mortgage-recast-calculator": [
+    { href: "/mortgage/payoff-calculator/", label: "Paying extra each month instead? See the payoff date" },
+    { href: "/mortgage/early-payoff-calculator/", label: "Early payoff calculator" },
+    { href: "/guides/pay-off-mortgage-early-or-invest/", label: "Pay off the mortgage or invest the lump sum?" },
+    { href: "/mortgage/", label: "Mortgage payment calculator" },
+  ],

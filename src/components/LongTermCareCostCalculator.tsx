@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { projectLTCCost, type CareType } from "../lib/long-term-care-cost";
 import { fmtUSD } from "../lib/format";
 import { STATES } from "../data/states";
+import ToolPicks, { book, type Pick } from "./ToolPicks";
 
 interface Props {
   initialData?: Record<string, unknown>;
@@ -40,6 +41,14 @@ export default function LongTermCareCostCalculator({ initialData, heading, subhe
 
   const startAge = v.currentAge + v.yearsUntilCare;
   const likelihoodColor = r.medicaidLikelihood === "high" ? "#8A2A2A" : r.medicaidLikelihood === "medium" ? "#8A6A00" : "#0E7C66";
+  // Shortfall on the same basis as the inflating total cost (tool-usage pass 2026-11-04, F6).
+  // Income and any LTC insurance benefit are held flat at their start-year amounts.
+  const careYears = Math.max(0, v.expectedYearsOfCare || 0);
+  const risingShortfall = Math.max(
+    0,
+    r.totalLifetimeCost - r.monthlyIncomeAvailable * 12 * careYears - r.monthlyLTCInsuranceBenefit * 12 * careYears,
+  );
+  const picks = ltcPicks(r.medicaidLikelihood, v.careType);
 
   return (
     <div style={S.wrap}>
@@ -66,7 +75,7 @@ export default function LongTermCareCostCalculator({ initialData, heading, subhe
             </select>
           </Field>
           <div style={S.row2}>
-            <Field label="Current age"><input style={S.input} type="number" min={30} max={100} value={v.currentAge} onChange={(e) => set({ currentAge: parseInt(e.target.value) || 0 })} /></Field>
+            <Field label="Current age" hint="Age of the person who may need care"><input style={S.input} type="number" min={30} max={100} value={v.currentAge} onChange={(e) => set({ currentAge: parseInt(e.target.value) || 0 })} /></Field>
             <Field label="Years until care starts"><input style={S.input} type="number" min={0} max={50} value={v.yearsUntilCare} onChange={(e) => set({ yearsUntilCare: parseInt(e.target.value) || 0 })} /></Field>
           </div>
           <Field label="Expected years of care"><input style={S.input} type="number" min={0} max={20} value={v.expectedYearsOfCare} onChange={(e) => set({ expectedYearsOfCare: parseInt(e.target.value) || 0 })} /></Field>
@@ -80,7 +89,7 @@ export default function LongTermCareCostCalculator({ initialData, heading, subhe
           <Field label="Liquid assets available for care"><Money v={v.otherLiquidAssets} on={(x) => set({ otherLiquidAssets: x })} /></Field>
 
           <label style={S.checkboxRow}>
-            <input type="checkbox" checked={v.hasLTCInsurance} onChange={(e) => set({ hasLTCInsurance: e.target.checked })} />
+            <input type="checkbox" style={S.checkbox} checked={v.hasLTCInsurance} onChange={(e) => set({ hasLTCInsurance: e.target.checked })} />
             <span>I have long-term care insurance</span>
           </label>
           {v.hasLTCInsurance && (
@@ -105,12 +114,16 @@ export default function LongTermCareCostCalculator({ initialData, heading, subhe
             <Row label="Monthly income available" value={fmtUSD(r.monthlyIncomeAvailable)} />
             {v.hasLTCInsurance && <Row label="Monthly LTC insurance benefit" value={fmtUSD(r.monthlyLTCInsuranceBenefit)} />}
             <Row label="Monthly SHORTFALL" value={fmtUSD(r.monthlyShortfall)} negative={r.monthlyShortfall > 0} />
-            <Row label="Total shortfall over care period" value={fmtUSD(r.totalShortfall)} negative={r.totalShortfall > 0} />
+            <Row label="Total shortfall over care period (at start-year prices)" value={fmtUSD(r.totalShortfall)} negative={r.totalShortfall > 0} />
+            <Row label="Total shortfall if costs keep rising" value={fmtUSD(risingShortfall)} negative={risingShortfall > 0} />
+            <div style={S.rowNote}>
+              Costs rise 4.5% a year during care, as in the total above. Income{v.hasLTCInsurance ? " and the insurance benefit are" : " is"} held flat, so Social Security raises would narrow this a little.
+            </div>
           </div>
 
           <div style={{ ...S.likelihood, borderColor: likelihoodColor }}>
             <div style={{ ...S.likelihoodLabel, color: likelihoodColor }}>Medicaid likelihood: {r.medicaidLikelihood.toUpperCase()}</div>
-            <div style={S.likelihoodBody}>Your ${fmtUSD(v.otherLiquidAssets)} in liquid assets covers ~{r.yearsOfAssetsCoverage} years of the shortfall.</div>
+            <div style={S.likelihoodBody}>Your {fmtUSD(v.otherLiquidAssets)} in liquid assets covers ~{r.yearsOfAssetsCoverage} years of the shortfall.</div>
           </div>
 
           <div style={S.reasonBox}>
@@ -125,7 +138,13 @@ export default function LongTermCareCostCalculator({ initialData, heading, subhe
 
           <div style={S.note}>
             Estimates use 2024 Genworth Cost of Care survey medians inflated to 2026 at 4.5%/year and projected forward with the same rate. Actual costs vary widely by county and facility — Genworth's own state median is a starting point, not an offer. Long-term care insurance premiums have risen sharply since 2018; obtain quotes before assuming coverage.
+            {" "}State figures apply one state cost factor, drawn from Genworth survey state medians, to the national median for each care type. Check your county in the{" "}
+            <a href="https://www.carescout.com/cost-of-care" target="_blank" rel="noopener noreferrer" style={S.link}>CareScout (formerly Genworth) Cost of Care Survey</a>.
           </div>
+
+          {r.totalLifetimeCost > 0 && (
+            <ToolPicks tool="elder-care" heading="Further reading on paying for long-term care" picks={picks} />
+          )}
         </div>
       </div>
     </div>
@@ -140,8 +159,36 @@ function Row({ label, value, negative }: { label: string; value: string; negativ
     </div>
   );
 }
-function Field({ label, children }: { label: string; children: React.ReactNode }) {
-  return <label style={S.field}><span style={S.label}>{label}</span>{children}</label>;
+function Field({ label, hint, children }: { label: string; hint?: string; children: React.ReactNode }) {
+  return <label style={S.field}><span style={S.label}>{label}</span>{hint && <span style={S.hint}>{hint}</span>}{children}</label>;
+}
+
+// Books only (YMYL). Tiered by the Medicaid-likelihood result; home-based care leads with the
+// caregiving guide (tool-usage pass 2026-11-04, M6). Rendered below the answer and the source note.
+function ltcPicks(tier: "high" | "medium" | "low", careType: CareType): Pick[] {
+  const caregiving = book("careForAgingParents", "Choosing care and running it day to day, including the money and legal side.");
+  const byTier: Record<typeof tier, Pick[]> = {
+    high: [
+      book("noloLongTermCare", "Explains Medicaid eligibility, spend-down and the look-back before you meet an elder-law attorney."),
+      caregiving,
+      book("medicareGetWhatsYours", "What Medicare pays for skilled nursing and what it does not."),
+    ],
+    medium: [
+      book("noloLongTermCare", "How savings, insurance and Medicaid fit together over a long stay."),
+      book("moneyLast", "Stretching savings across the care years."),
+      caregiving,
+    ],
+    low: [
+      book("moneyLast", "Which accounts to draw from first while paying for care."),
+      book("pfauGuidebook", "Retirement income planning that includes long-term care costs."),
+      book("noloLongTermCare", "Long-term care insurance and other ways to pay."),
+    ],
+  };
+  const list = byTier[tier];
+  if (careType === "home-health-aide" || careType === "adult-day-care") {
+    return [caregiving, ...list.filter((p) => p.asin !== caregiving.asin)];
+  }
+  return list;
 }
 function Money({ v, on }: { v: number; on: (n: number) => void }) {
   return (
@@ -169,7 +216,11 @@ const S: Record<string, React.CSSProperties> = {
   suffixWrap: { position: "relative", display: "flex", alignItems: "center" },
   prefix: { position: "absolute", left: 11, color: "#888", fontSize: "0.95rem", pointerEvents: "none" },
   sectionLabel: { fontSize: "0.75rem", fontWeight: 700, color: "#2A6A58", textTransform: "uppercase", letterSpacing: "0.04em", marginTop: 6, borderTop: "1px solid #E6F0EC", paddingTop: 10 },
-  checkboxRow: { display: "flex", alignItems: "center", gap: 8, fontSize: "0.9rem", color: "#333", marginTop: 4 },
+  checkboxRow: { display: "flex", alignItems: "center", gap: 8, fontSize: "0.9rem", color: "#333", marginTop: 4, minHeight: 44, cursor: "pointer" },
+  checkbox: { width: 20, height: 20, margin: 0, flexShrink: 0 },
+  hint: { fontSize: "0.75rem", color: "#666" },
+  rowNote: { fontSize: "0.75rem", color: "#666", lineHeight: 1.45 },
+  link: { color: PRIMARY },
 
   results: { background: "linear-gradient(180deg,#F4FAF8 0%,#FFFFFF 100%)", border: "1px solid #D8EEE6", borderRadius: 14, padding: 18, display: "flex", flexDirection: "column", gap: 12, alignSelf: "start" },
   bigStat: { display: "flex", flexDirection: "column", gap: 2, paddingBottom: 12, borderBottom: "1px solid #E6F0EC" },

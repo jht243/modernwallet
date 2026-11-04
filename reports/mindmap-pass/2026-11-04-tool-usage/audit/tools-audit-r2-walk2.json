@@ -1,0 +1,266 @@
+{
+ "390": {
+  "flButtons": [
+   "Yes:true:40",
+   "No:false:40"
+  ],
+  "flNewcomer": {
+   "note": "The larger exemption phases in for people who become Florida residents after Jan 1, 2027. Newcomers may not get the full increase right away, so the 2027 and 2028 bills above keep today's exemption. Check with your county property appraiser for when it starts for you.",
+   "savings": null
+  },
+  "flBackYes": true,
+  "flZero": true,
+  "se420": {
+   "note": true,
+   "line": "Net earnings of $388 are under $400, so no self-employment tax is owed (Schedule SE instructions). Income tax may still apply.",
+   "seTax": "Self-employment tax\n$0"
+  },
+  "sePos": {
+   "answerBottom": 2199,
+   "picksTop": 2215,
+   "below": true,
+   "picksInsideAnswer": false
+  },
+  "seAnswerPos": {
+   "answerBottom": 1656,
+   "picksTop": 2215,
+   "below": true,
+   "picksInsideAnswer": false
+  },
+  "seW2tier": [
+   "Independent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper",
+   "Deduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)"
+  ],
+  "quarterly": {
+   "selfLink": 0,
+   "dates": true,
+   "note": "2026 estimated payments are due April 15, June 15 and September 15, 2026, and January 15, 2027. You generally don't need to make them if you'll owe less than $1,000 after withholding. Paying 100% of last year's tax (110% if last year's AGI was over $150,000) on time in four payments avoids the underpayment penalty. Source: IRS estimated tax FAQ.\n\nNet earnings ($60,000 × 92.35%)\n$55,410"
+  },
+  "doordash": {
+   "dates": true,
+   "selfLink": 1,
+   "picks": true,
+   "form7206": true
+  },
+  "youtube": {
+   "dates": true,
+   "picks": true,
+   "form7206": true,
+   "byline": "Updated November 4, 2026"
+  },
+  "stockPos": {
+   "answerBottom": 2387,
+   "picksTop": 2403,
+   "below": true,
+   "picksInsideAnswer": false
+  },
+  "ltcPos": {
+   "answerBottom": 3717,
+   "picksTop": 3733,
+   "below": true,
+   "picksInsideAnswer": false
+  },
+  "ltcLikelihoodPos": {
+   "answerBottom": 2941,
+   "picksTop": 3733,
+   "below": true,
+   "picksInsideAnswer": false
+  },
+  "ltcPersona": {
+   "total": "$339,291",
+   "start": "at start-year prices)\n$256,068",
+   "rising": "keep rising\n$270,891",
+   "likelihood": "Medicaid likelihood: MEDIUM",
+   "assets": "Your $180,000 in liquid assets covers ~2.1 years of the shortfall.",
+   "picks": [
+    "Long-Term Care: How to Plan & Pay for It by Joseph L. Matthews (Nolo)",
+    "How to Make Your Money Last by Jane Bryant Quinn",
+    "How to Care for Aging Parents (3rd ed.) by Virginia Morris"
+   ]
+  },
+  "ltcInsNote": "Costs rise 4.5% a year during care, as in the total above. Income and the insurance benefit are held flat, so Social Security raises would narrow this a little.",
+  "ltcHomeFirst": "How to Care for Aging Parents (3rd ed.) by Virginia Morris",
+  "probate/probate/": {
+   "funding": false,
+   "checkLine": "Real estate often needs a separate procedure, and many states set a lower limit for real property.",
+   "txName": true,
+   "smallRow": true,
+   "ifFull": true,
+   "pos": {
+    "answerBottom": 2832,
+    "picksTop": 2848,
+    "below": true,
+    "picksInsideAnswer": false
+   },
+   "executor": "Executor commission\n$1,200–$3,000"
+  },
+  "probate/probate/fee-calculator/": {
+   "funding": false,
+   "checkLine": "Real estate often needs a separate procedure, and many states set a lower limit for real property.",
+   "txName": true,
+   "smallRow": true,
+   "ifFull": true,
+   "pos": {
+    "answerBottom": 2949,
+    "picksTop": 2965,
+    "below": true,
+    "picksInsideAnswer": false
+   },
+   "executor": "Executor commission\n$1,200–$3,000"
+  },
+  "probate/probate/cost-vs-trust-calculator/": {
+   "funding": true,
+   "checkLine": "Real estate often needs a separate procedure, and many states set a lower limit for real property.",
+   "txName": true,
+   "smallRow": true,
+   "ifFull": true,
+   "pos": {
+    "answerBottom": 2912,
+    "picksTop": 2928,
+    "below": true,
+    "picksInsideAnswer": false
+   },
+   "executor": "Executor commission\n$1,200–$3,000"
+  },
+  "trustIntro": "The calculator below works out both costs for your specific state and ",
+  "trustIntroBelowTrue": true,
+  "ltcBody": {
+   "c217": 2,
+   "c209": 0
+  },
+  "consoleErrors": [],
+  "overflowLast": false
+ },
+ "1366": {
+  "flButtons": [
+   "Yes:true:40",
+   "No:false:40"
+  ],
+  "flNewcomer": {
+   "note": "The larger exemption phases in for people who become Florida residents after Jan 1, 2027. Newcomers may not get the full increase right away, so the 2027 and 2028 bills above keep today's exemption. Check with your county property appraiser for when it starts for you.",
+   "savings": null
+  },
+  "flBackYes": true,
+  "flZero": true,
+  "se420": {
+   "note": true,
+   "line": "Net earnings of $388 are under $400, so no self-employment tax is owed (Schedule SE instructions). Income tax may still apply.",
+   "seTax": "Self-employment tax\n$0"
+  },
+  "sePos": {
+   "answerBottom": 1223,
+   "picksTop": 1239,
+   "below": true,
+   "picksInsideAnswer": false
+  },
+  "seAnswerPos": {
+   "answerBottom": 770,
+   "picksTop": 1239,
+   "below": true,
+   "picksInsideAnswer": false
+  },
+  "seW2tier": [
+   "Independent Contractor, Sole Proprietor, and LLC Taxes Explained in 100 Pages or Less by Mike Piper",
+   "Deduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)"
+  ],
+  "quarterly": {
+   "selfLink": 0,
+   "dates": true,
+   "note": "2026 estimated payments are due April 15, June 15 and September 15, 2026, and January 15, 2027. You generally don't need to make them if you'll owe less than $1,000 after withholding. Paying 100% of last year's tax (110% if last year's AGI was over $150,000) on time in four payments avoids the underpayment penalty. Source: IRS estimated tax FAQ.\n\nNet earnings ($60,000 × 92.35%)\n$55,410"
+  },
+  "doordash": {
+   "dates": true,
+   "selfLink": 1,
+   "picks": true,
+   "form7206": true
+  },
+  "youtube": {
+   "dates": true,
+   "picks": true,
+   "form7206": true,
+   "byline": "Updated November 4, 2026"
+  },
+  "stockPos": {
+   "answerBottom": 1053,
+   "picksTop": 1069,
+   "below": true,
+   "picksInsideAnswer": false
+  },
+  "ltcPos": {
+   "answerBottom": 2052,
+   "picksTop": 2068,
+   "below": true,
+   "picksInsideAnswer": false
+  },
+  "ltcLikelihoodPos": {
+   "answerBottom": 1667,
+   "picksTop": 2068,
+   "below": true,
+   "picksInsideAnswer": false
+  },
+  "ltcPersona": {
+   "total": "$339,291",
+   "start": "at start-year prices)\n$256,068",
+   "rising": "keep rising\n$270,891",
+   "likelihood": "Medicaid likelihood: MEDIUM",
+   "assets": "Your $180,000 in liquid assets covers ~2.1 years of the shortfall.",
+   "picks": [
+    "Long-Term Care: How to Plan & Pay for It by Joseph L. Matthews (Nolo)",
+    "How to Make Your Money Last by Jane Bryant Quinn",
+    "How to Care for Aging Parents (3rd ed.) by Virginia Morris"
+   ]
+  },
+  "ltcInsNote": "Costs rise 4.5% a year during care, as in the total above. Income and the insurance benefit are held flat, so Social Security raises would narrow this a little.",
+  "ltcHomeFirst": "How to Care for Aging Parents (3rd ed.) by Virginia Morris",
+  "probate/probate/": {
+   "funding": false,
+   "checkLine": "Real estate often needs a separate procedure, and many states set a lower limit for real property.",
+   "txName": true,
+   "smallRow": true,
+   "ifFull": true,
+   "pos": {
+    "answerBottom": 1710,
+    "picksTop": 1726,
+    "below": true,
+    "picksInsideAnswer": false
+   },
+   "executor": "Executor commission\n$1,200–$3,000"
+  },
+  "probate/probate/fee-calculator/": {
+   "funding": false,
+   "checkLine": "Real estate often needs a separate procedure, and many states set a lower limit for real property.",
+   "txName": true,
+   "smallRow": true,
+   "ifFull": true,
+   "pos": {
+    "answerBottom": 1757,
+    "picksTop": 1773,
+    "below": true,
+    "picksInsideAnswer": false
+   },
+   "executor": "Executor commission\n$1,200–$3,000"
+  },
+  "probate/probate/cost-vs-trust-calculator/": {
+   "funding": true,
+   "checkLine": "Real estate often needs a separate procedure, and many states set a lower limit for real property.",
+   "txName": true,
+   "smallRow": true,
+   "ifFull": true,
+   "pos": {
+    "answerBottom": 1807,
+    "picksTop": 1823,
+    "below": true,
+    "picksInsideAnswer": false
+   },
+   "executor": "Executor commission\n$1,200–$3,000"
+  },
+  "trustIntro": "The calculator below works out both costs for your specific state and ",
+  "trustIntroBelowTrue": true,
+  "ltcBody": {
+   "c217": 2,
+   "c209": 0
+  },
+  "consoleErrors": [],
+  "overflowLast": false
+ }
+}
