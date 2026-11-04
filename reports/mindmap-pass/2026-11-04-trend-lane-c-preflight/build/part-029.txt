@@ -1,0 +1,15 @@
+.claude/commands/_keyword-demand-ladder.md — characters 9000 onward
+
+lume=dataforseo, kd=dataforseo (Ahrefs units
+   exhausted, SEMRUSH 403)`. `keyword_data.notes()` returns exactly that log. A
+   run that silently degrades is a bug.
+6. **Do not over-read DataForSEO KD.** It is modeled, not calibrated against a
+   link graph. Nothing in this fleet gates on KD — `passes_floor()` scores
+   volume only — so treat a DataForSEO KD as a rough ordering hint, never as a
+   reason to drop a row.
+7. **Read DataForSEO volume as a bucket, not a count.** Google rounds Keyword
+   Planner volumes and merges close variants, so cluster totals are more
+   trustworthy than any single row.
+8. **Still never invent a keyword.** The ladder relaxes where the *numbers* come
+   from. Phrases themselves must always be real (autocomplete, GSC, the brief,
+   the SERP) — fabricating queries remains forbidden at every rung.
