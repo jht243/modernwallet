@@ -1,0 +1,224 @@
+{
+ "rows": [
+  {
+   "keyword": "best trust services",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.tiaa.org",
+    "investor.vanguard.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "local_pack": 3,
+    "organic": 9,
+    "people_also_ask": 1,
+    "people_also_search": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "What is the average cost of getting a trust?",
+    "Who is the best person to manage a trust?",
+    "What does Dave Ramsey say about trusts?",
+    "Which trust company is best?",
+    "What is the downside of having a trust?",
+    "Which trust does Suze Orman recommend?"
+   ],
+   "related_searches": [
+    "Best trust services reddit",
+    "Best trust services near me",
+    "Best trust services reviews",
+    "Top 25 trust companies",
+    "Schwab personal trust services",
+    "Vanguard trust services fees",
+    "Trustee services near me",
+    "Best trust management companies"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "7/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present",
+   "se_results_count": 138
+  },
+  {
+   "keyword": "nerdwallet retirement calculator",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "www.nerdwallet.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.nerdwallet.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 8,
+    "people_also_search": 1,
+    "related_searches": 1,
+    "video": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "Nerdwallet retirement calculator withdrawal",
+    "Nerdwallet retirement calculator reddit",
+    "Best retirement withdrawal calculator",
+    "Monthly retirement withdrawal calculator",
+    "Mutual of Omaha retirement calculator",
+    "Best retirement plans for 30 year olds",
+    "Best Mutual of Omaha Retirement calculator",
+    "Best retirement plans for individuals"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "6/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.nerdwallet.com, www.youtube.com",
+   "se_results_count": 178
+  },
+  {
+   "keyword": "best retirement calculator",
+   "verdict": "contested",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.financialmentor.com",
+    "www.nerdwallet.com",
+    "www.schwab.com",
+    "www.youtube.com",
+    "www.investor.gov"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "www.troweprice.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "safemoney.com",
+    "www.edwardjones.com",
+    "www.fisherinvestments.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_search": 1,
+    "related_searches": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "Best retirement calculator with Social Security",
+    "Realistic retirement calculator",
+    "Simple retirement calculator",
+    "Best retirement calculator for married couples",
+    "Best retirement calculator fidelity",
+    "Monthly retirement income calculator",
+    "Best free retirement calculator",
+    "Empower retirement calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "5/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.financialmentor.com, www.nerdwallet.com, www.schwab.com, www.youtube.com",
+   "se_results_count": 133
+  },
+  {
+   "keyword": "living trust services",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.yelp.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.racinelaw.net",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "local_pack": 3,
+    "organic": 9,
+    "people_also_ask": 1,
+    "people_also_search": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "How much does an attorney charge for a trust?",
+    "Who owns a house when it is in probate?",
+    "What are the benefits of starting a trust?",
+    "What is the biggest mistake with wills?",
+    "What should you never put in a will?",
+    "Who should you never name as a beneficiary?"
+   ],
+   "related_searches": [
+    "Do it yourself living trust",
+    "Living trust near me",
+    "How to make a living trust without a lawyer",
+    "Best online revocable living trust",
+    "How to create a living trust",
+    "Can you set up a trust without an attorney",
+    "Create a trust online free",
+    "LegalZoom living trust"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "7/10 major platforms (google.com, google.com, google.com, google.com)",
+   "se_results_count": 142
+  }
+ ],
+ "cost": "DataForSEO: 4 calls, $0.00830 of $2.00 budget"
+}

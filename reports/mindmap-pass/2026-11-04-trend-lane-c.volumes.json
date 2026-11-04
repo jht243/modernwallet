@@ -1,0 +1,115 @@
+{
+ "rows": [
+  {
+   "keyword": "best trust services",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": "58",
+   "cpc": "5.69",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "living trust services",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": "30",
+   "cpc": "4.08",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "best living trust services",
+   "volume": 30,
+   "volume_low": 30,
+   "volume_high": 30,
+   "kd": "49",
+   "cpc": "5.56",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "nerdwallet retirement calculator",
+   "volume": 18100,
+   "volume_low": 18100,
+   "volume_high": 18100,
+   "kd": "72",
+   "cpc": "2.51",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "best retirement calculator",
+   "volume": 9900,
+   "volume_low": 9900,
+   "volume_high": 9900,
+   "kd": "55",
+   "cpc": "1.93",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "online living trust",
+   "volume": 590,
+   "volume_low": 590,
+   "volume_high": 590,
+   "kd": "30",
+   "cpc": "2.37",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "living trust cost",
+   "volume": 2400,
+   "volume_low": 2400,
+   "volume_high": 2400,
+   "kd": "13",
+   "cpc": "1.73",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using semrush (quality order semrush > dataforseo)",
+  "semrush returned volume for 7/7 phrases",
+  "kd: using semrush (quality order semrush > dataforseo)",
+  "Autocomplete: 6/7 rows corroborated live"
+ ]
+}

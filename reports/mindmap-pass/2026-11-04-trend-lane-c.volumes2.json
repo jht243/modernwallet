@@ -1,0 +1,100 @@
+{
+ "rows": [
+  {
+   "keyword": "what is a living trust",
+   "volume": 14800,
+   "volume_low": 14800,
+   "volume_high": 14800,
+   "kd": "40",
+   "cpc": "0.29",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how does a living trust work",
+   "volume": 1000,
+   "volume_low": 1000,
+   "volume_high": 1000,
+   "kd": "34",
+   "cpc": "0.23",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "revocable living trust",
+   "volume": 22200,
+   "volume_low": 22200,
+   "volume_high": 22200,
+   "kd": "47",
+   "cpc": "1.04",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "what is a revocable living trust",
+   "volume": 4400,
+   "volume_low": 4400,
+   "volume_high": 4400,
+   "kd": "35",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "trust and will reviews",
+   "volume": 5400,
+   "volume_low": 5400,
+   "volume_high": 5400,
+   "kd": "33",
+   "cpc": "3.16",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "dave ramsey retirement calculator",
+   "volume": 22200,
+   "volume_low": 22200,
+   "volume_high": 22200,
+   "kd": "36",
+   "cpc": "2.17",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using semrush (quality order semrush > dataforseo)",
+  "semrush returned volume for 6/6 phrases",
+  "kd: using semrush (quality order semrush > dataforseo)",
+  "Autocomplete: 6/6 rows corroborated live"
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "rows": [
+  {
+   "keyword": "what is a living trust",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "giving.drexel.edu",
+    "www.metlife.com",
+    "www.consumerfinance.gov",
+    "www.lawhelpny.org",
+    "www.youtube.com",
+    "www.usbank.com",
+    "www.law.cornell.edu",
+    "www.ltcfeds.gov",
+    "www.nationwide.com",
+    "www.lifegenlawgroup.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "trustandwill.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 8,
+    "people_also_ask": 1,
+    "video": 1
+   },
+   "paa": [
+    "What are the key differences between a dynasty trust and a revocable trust?",
+    "What is a trust?",
+    "What are the three primary types of trusts?",
+    "What is the difference between a living trust and a non-living trust?",
+    "What is the downside of a living trust?",
+    "What are five assets that should never be included in a living trust?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "7/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites giving.drexel.edu, www.metlife.com, www.consumerfinance.gov, www.lawhelpny.org",
+   "se_results_count": 875000
+  },
+  {
+   "keyword": "how does a living trust work",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "giving.drexel.edu",
+    "www.metlife.com",
+    "www.estateplanning.com",
+    "www.youtube.com",
+    "www.consumerfinance.gov",
+    "www.lawhelpny.org",
+    "www.tiaa.org",
+    "www.johnsonmaylaw.com",
+    "www.usbank.com",
+    "www.titushillis.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "www.youtube.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.legalzoom.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 8,
+    "people_also_ask": 1,
+    "related_searches": 1,
+    "video": 1
+   },
+   "paa": [
+    "What does it mean to have a living trust?",
+    "What are reasons to not have a trust?",
+    "What is a trust?",
+    "How much does it cost to run a living trust?",
+    "What are five assets that should never be included in a living trust?",
+    "Do you have to pay taxes on a trust you inherit?"
+   ],
+   "related_searches": [
+    "What is a living trust on a house",
+    "What is the downside to a living trust",
+    "Revocable living trust",
+    "Living trust vs will",
+    "How much does a living trust cost",
+    "How much do lawyers charge to set up a trust",
+    "Can you set up a trust without an attorney",
+    "Living trust - youtube"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "6/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites giving.drexel.edu, www.metlife.com, www.estateplanning.com, www.youtube.com",
+   "se_results_count": 118
+  }
+ ],
+ "cost": "DataForSEO: 2 calls, $0.00430 of $2.00 budget"
+}
