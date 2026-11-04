@@ -1,0 +1,18 @@
+## Live verification
+- https://www.themodernwallet.com/biweekly-mortgage-calculator/ — 200
+- https://www.themodernwallet.com/elder-care/long-term-care-cost-calculator/ — 200
+- https://www.themodernwallet.com/florida-amendment-3-calculator/ — 200
+- https://www.themodernwallet.com/guides/pay-off-mortgage-early-or-invest/ — 200 — NO data-tool root
+- https://www.themodernwallet.com/inflation-calculator/ — 200
+- https://www.themodernwallet.com/mortgage/extra-payment-calculator/ — 200
+- https://www.themodernwallet.com/pay-off-mortgage-or-invest-calculator/ — 200
+- https://www.themodernwallet.com/probate/cost-vs-trust-calculator/ — 200
+- https://www.themodernwallet.com/self-employment-tax/how-much-to-set-aside-for-taxes/ — 200
+- https://www.themodernwallet.com/social-security-taxable-benefits-calculator/ — 200
+- https://www.themodernwallet.com/stock-capital-gains-tax-calculator/ — 200
+- https://www.themodernwallet.com/inflation-calculator/ — affiliate picks: OK (data-tool-picks="inflation-calculator", tag soulcircle01-20, 4 pinned ASINs)
+- https://www.themodernwallet.com/social-security-taxable-benefits-calculator/ — affiliate picks: OK (data-tool-picks="social-security-taxable-benefits-calculator", tag soulcircle01-20, 5 pinned ASINs)
+- https://www.themodernwallet.com/self-employment-tax/how-much-to-set-aside-for-taxes/ — affiliate picks: OK (data-tool-picks="how-much-to-set-aside-for-taxes", tag soulcircle01-20, 4 pinned ASINs)
+- https://www.themodernwallet.com/stock-capital-gains-tax-calculator/ — affiliate picks: OK (data-tool-picks="stock-capital-gains-tax-calculator", tag soulcircle01-20, 3 pinned ASINs)
+- https://www.themodernwallet.com/elder-care/long-term-care-cost-calculator/ — affiliate picks: OK (data-tool-picks="long-term-care-cost-calculator", tag soulcircle01-20, 5 pinned ASINs)
+- https://www.themodernwallet.com/probate/cost-vs-trust-calculator/ — affiliate picks: OK (data-tool-picks="cost-vs-trust-calculator", tag soulcircle01-20, 6 pinned ASINs)

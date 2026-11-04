@@ -1,1 +1,44 @@
-{"originRoutine":"tool-usage-mindmap-auto","route":"/biweekly-mortgage-calculator/","canonicalUrl":"https://www.themodernwallet.com/biweekly-mortgage-calculator/","queryFamily":"biweekly mortgage calculator","hypothesis":"A working calculator with the DIY/break-even comparison earns impressions and tool uses for its query family.","primaryMetric":"GSC clicks (28/56-day windows) + tracked tool uses","baseline":"not-yet-published","comparator":"age-matched new calculators from tool-usage runs 2026-10-14 and 2026-10-21","changeScope":"new route","sourceRefreshTrigger":"rate formula or Regulation Z/IRS Pub 936 change","outcomeStatus":"pending","deployment":"not-yet-deployed"}
+{
+  "originRoutine": "tool-usage-mindmap-auto",
+  "route": "/biweekly-mortgage-calculator/",
+  "canonicalUrl": "https://www.themodernwallet.com/biweekly-mortgage-calculator/",
+  "queryFamily": "biweekly mortgage calculator",
+  "hypothesis": "A working calculator with the DIY/break-even comparison earns impressions and tool uses for its query family.",
+  "primaryMetric": "GSC clicks (28/56-day windows) + tracked tool uses",
+  "baseline": {
+    "status": "not-yet-published",
+    "priorSpecification": "new route; age-matched comparator: calculators built by tool-usage runs 2026-10-14 and 2026-10-21",
+    "reason": "Route did not exist before this run; no pre-change GSC data can exist."
+  },
+  "comparator": "age-matched new calculators from tool-usage runs 2026-10-14 and 2026-10-21",
+  "changeScope": "new route",
+  "sourceRefreshTrigger": "rate formula or Regulation Z/IRS Pub 936 change",
+  "outcomeStatus": "pending",
+  "deployment": {
+    "commit": "df88efc8d87b5899c61e46ce29b260ec6ed66794",
+    "status": "live",
+    "evidenceUrl": "https://github.com/jht243/modernwallet/commit/df88efc8d87b5899c61e46ce29b260ec6ed66794",
+    "liveUrl": "https://www.themodernwallet.com/biweekly-mortgage-calculator/",
+    "verifiedAt": "2026-11-04T20:30:35Z",
+    "note": "origin/main contains the commit; tool_usage_gate live PASS (11 URLs 200, 6 pick blocks live); rendered-audit compare: live render matches approved render (29 routes)"
+  },
+  "path": "/biweekly-mortgage-calculator/",
+  "contributionId": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/biweekly-mortgage-calculator/growth.json",
+  "growthFile": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/biweekly-mortgage-calculator/growth.json",
+  "evidenceFile": "reports/mindmap-pass/2026-11-04-tool-usage/evidence/biweekly-mortgage-calculator/evidence.json",
+  "commit": "df88efc8d87b5899c61e46ce29b260ec6ed66794",
+  "status": "live-verified",
+  "firstVerifiedLiveAt": "2026-11-04T20:30:19.043654+00:00",
+  "verifiedAt": "2026-11-04T20:30:19.043654+00:00",
+  "snapshotSha256": "910b0a174bab0810d7eaac47624e32760452d438ff2bca530dafd298ff78dafe",
+  "windows": {
+    "days1to28": {
+      "start": "2026-11-05",
+      "end": "2026-12-02"
+    },
+    "days29to56": {
+      "start": "2026-12-03",
+      "end": "2026-12-30"
+    }
+  }
+}

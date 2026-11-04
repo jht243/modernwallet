@@ -18,3 +18,10 @@ Authorization: scheduled /tool-usage-mindmap-auto routine (owner-authorized unat
 
 ## Content generation
 Model: claude-opus-5-5 for both pages and fix rounds (no fallback). CONTENT_ANTHROPIC_KEY (key 1) returned "credit balance too low"; the pool's second key served every call.
+
+## Deployment and live verification
+- Commit df88efc pushed to main by the deploy helper (attempt 1); host served the new routes within ~2 minutes.
+- tool_usage_gate live: PASS (11 URLs 200; 6 data-tool-picks blocks live with tag soulcircle01-20 and every pinned ASIN).
+- rendered-audit compare (29 indexable routes, hydrated DOM): "Live render matches approved render". record-deployment: 2 growth records (both new calculators) written to reports/content-evidence.jsonl.
+- verify_beacons: PASS (view=1, use=1) on biweekly, payoff-or-invest, inflation, Florida, stock CG.
+- IndexNow: OK 200, 29 URLs (noindex probate/elder-care spokes excluded).
