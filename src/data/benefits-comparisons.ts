@@ -132,7 +132,7 @@ export const BENEFIT_COMPARISONS: ComparisonEntry[] = [
   {
     "slug": "aca-vs-medicaid",
     "title": "ACA vs Medicaid Coverage Compared for U.S. Households",
-    "metaDescription": "Compare ACA Marketplace coverage vs Medicaid on eligibility, premiums, applications, and subsidies. Learn which official application to use for your household.",
+    "metaDescription": "Compare ACA Marketplace coverage vs Medicaid on eligibility, premiums, applications, and subsidies. See which official application fits your household.",
     "targetKeyword": "aca vs medicaid",
     "optionA": "ACA Marketplace Coverage",
     "optionB": "Medicaid",

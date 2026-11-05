@@ -2869,7 +2869,7 @@ export const CALCULATORS: CalculatorDef[] = [
     navOrder: 61,
     metaTitle: "Debt to Income Ratio Calculator: DTI vs Lender Limits",
     metaDescription:
-      "Debt to income ratio calculator. Enter income and monthly debt payments to see your DTI, housing ratio and room before Fannie Mae's 36%, 45% and 50% limits.",
+      "Debt to income ratio calculator. Enter income and debt payments to see your DTI, housing ratio and room before Fannie Mae's 36%, 45% and 50% limits.",
     targetKeyword: "debt to income ratio calculator",
     h1: "Debt-to-Income Ratio Calculator",
     introText:
@@ -3179,7 +3179,7 @@ export const CALCULATORS: CalculatorDef[] = [
     "label": "Checklists",
     "navOrder": 63,
     "metaTitle": "House Checklist Library: Free Interactive Checklists",
-    "metaDescription": "Pick a customized house checklist for buying, selling, or renting. Filter by property hazards and print your worksheet as a Portable Document Format (PDF) file.",
+    "metaDescription": "Pick a house checklist for buying, selling, or renting. Filter by property hazards and print your worksheet as a Portable Document Format (PDF) file.",
     "targetKeyword": "house checklist",
     "h1": "House Checklist Library for Buyers, Sellers, and Renters",
     "introText": "To get the checklist you need, pick the move you are making from buying, selling, renting, renting out, inspection, final walkthrough, move-in condition reporting, moving into a first apartment, or [moving to a new home](/checklists/moving-checklist/). You can answer a few quick questions to customize the tasks, then print or save the list as a Portable Document Format (PDF) worksheet. This house checklist library requires no signup.\n\nChoose one of the nine options from the Checklist dropdown below to load your questions. Select your home type, construction era, payment method, state, and local hazard conditions like freezing winters or coastal storms. Click the Print or save as PDF button to create your clean printable worksheet, while your checkmarks and notes stay stored in your browser.",

@@ -1,0 +1,2 @@
+{"ts": "2026-11-05T08:07:09+00:00", "file": "src/data/calculators.ts", "base": "HEAD", "facts": 5162, "verdict": "PASS", "removed": {}, "added": {}, "words_before": 80282, "words_after": 80280}
+{"ts": "2026-11-05T08:07:10+00:00", "file": "src/data/benefits-comparisons.ts", "base": "HEAD", "facts": 114, "verdict": "PASS", "removed": {}, "added": {}, "words_before": 5315, "words_after": 5313}
