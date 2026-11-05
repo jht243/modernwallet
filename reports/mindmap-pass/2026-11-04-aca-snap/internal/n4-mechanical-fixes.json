@@ -1,0 +1,14 @@
+{
+  "actor": "benefits_content",
+  "source": "audit/n4-findings.json mechanical items",
+  "draft": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/aca-vs-medicaid.json",
+  "beforeSha256": "738f10b0e0773c44396e521ed664af84a2168c7b834aa1efcd90f621c665b5ca",
+  "afterSha256": "eadb3c7ec3f030f39ca7cf7281c5a168d0c03e3e5898e419a17a51d844c74a45",
+  "changes": [
+    "Applied approved H1 metadata replacement",
+    "Added2actualprimarysourcepanelcitations",
+    "Removedremainingliteralboldmarkersifpresent"
+  ],
+  "boldMarkersBefore": 0,
+  "scope": "Mechanical formatting/metadata/source citations; independent finalrenderreview remains required"
+}

@@ -1,3 +1,4 @@
+import { BENEFIT_GUIDES } from "./benefits-guides";
 import type { FAQ, Source } from "./types";
 import { BUSINESS_GUIDES } from "./guides-business";
 import { SELF_EMPLOYED_GUIDES } from "./guides-self-employed";
@@ -30,9 +31,11 @@ export interface Guide {
   tools: GuideTool[];
   faqs: FAQ[];
   sources?: Source[];
+  disclaimerText?: string;
 }
 
 export const GUIDES: Guide[] = [
+  ...BENEFIT_GUIDES,
   // ── mindmap-pass 2026-11-04 (podcast recovery): brrrr-method ──
   {
     "updated": "2026-11-04",
@@ -2228,7 +2231,7 @@ export const GUIDES: Guide[] = [
   // ── mindmap-pass 2026-10-20 (podcast-pain-pass): how-to-make-a-budget ──
   {
     "published": "2026-10-20",
-    "updated": "2026-10-29",
+    "updated": "2026-11-04",
     "slug": "how-to-make-a-budget",
     "title": "How to Make a Budget in Four Steps (Beginner Guide)",
     "metaDescription": "How to make a budget in four steps: list income, track a month of spending, map bill due dates, then build a 50/30/20 or zero-based plan.",
@@ -2238,7 +2241,7 @@ export const GUIDES: Guide[] = [
     "sections": [
       {
         "heading": "The Four Steps to Build a Budget from Scratch",
-        "body": "A budget gets built in four steps, and the first three steps each answer a question the CFPB asks:\n\n1. Where does my money come from? Write down every source of income, including pay from each job, self-employment income, child support and government benefits. The CFPB offers an Income Tracker for this step.\n2. Where does my money go? Log your spending for a month and sort it into categories, so you can see what a typical month costs you. The CFPB offers a Spending Tracker for this step.\n3. What are all my bills and when are they due? Put every bill on a calendar by its due date. The CFPB offers a Bill Calendar to track due dates and spot tight weeks.\n4. Create your working budget. Combine your income, your spending and your bill timing into one realistic plan.\n\nStart step 1 today. Pull your latest pay stub and any benefit or support statements, then write down each amount and the date it arrives.\n\nStep 2 needs a full month of records. Do them in order anyway, since step 4 only works when it is built from the numbers you collected in steps 1 to 3."
+        "body": "A budget gets built in four steps, and the first three steps each answer a question the CFPB asks:\n\n1. Where does my money come from? Write down every source of income, including pay from each job, self-employment income, child support and government benefits. The CFPB offers an Income Tracker for this step. If you need food assistance, follow the [SNAP application steps](/guides/how-to-apply-for-food-stamps/) through your state agency.\n2. Where does my money go? Log your spending for a month and sort it into categories, so you can see what a typical month costs you. The CFPB offers a Spending Tracker for this step.\n3. What are all my bills and when are they due? Put every bill on a calendar by its due date. The CFPB offers a Bill Calendar to track due dates and spot tight weeks.\n4. Create your working budget. Combine your income, your spending and your bill timing into one realistic plan.\n\nStart step 1 today. Pull your latest pay stub and any benefit or support statements, then write down each amount and the date it arrives.\n\nStep 2 needs a full month of records. Do them in order anyway, since step 4 only works when it is built from the numbers you collected in steps 1 to 3."
       },
       {
         "heading": "Where the Numbers Come from When You Make a Budget",
@@ -13918,6 +13921,8 @@ export const GUIDES: Guide[] = [
   ]
 },
 {
+    published: "2026-06-25",
+    updated: "2026-11-04",
   slug: "how-to-budget-with-irregular-income",
   title: "How to Budget With Irregular Income (Step by Step)",
   metaDescription: "Learn how to budget with irregular income using a real baseline month, a variability-based buffer fund, and quarterly estimated tax planning.",
@@ -13943,7 +13948,7 @@ export const GUIDES: Guide[] = [
     },
     {
       heading: "How Do Freelancers Budget for Health Insurance Without an Employer Plan?",
-      body: "Freelancers without an employer plan can buy coverage through the ACA Health Insurance Marketplace at [HealthCare.gov](https://www.healthcare.gov/self-employed/). Premiums depend on your income, age, and state, and many self-employed workers qualify for subsidies that lower the monthly cost. Because your income changes, you report your estimated net self-employment income for the year, not last year's number.\n\nBuild the premium into your baseline budget as a fixed cost, the same as rent. If your income rises well above your estimate, update your Marketplace application, since a higher income can change your subsidy. Waiting until tax time to reconcile a big gap can mean owing money back.\n\nSome freelancers also budget a separate line for deductibles and copays, especially with a high-deductible plan. Treat this like the buffer fund: a specific amount, kept separate from daily spending money."
+      body: "Freelancers without an employer plan can buy coverage through the ACA Health Insurance Marketplace at [HealthCare.gov](https://www.healthcare.gov/self-employed/). Premiums depend on your income, age, and state, and many self-employed workers qualify for subsidies that lower the monthly cost. Because your income changes, you report your estimated net self-employment income for the year, not last year's number.\n\nBuild the premium into your baseline budget as a fixed cost, the same as rent. If your income rises well above your estimate, update your Marketplace application, since a higher income can change your subsidy. Waiting until tax time to reconcile a big gap can mean owing money back.\n\nSome freelancers also budget a separate line for deductibles and copays, especially with a high-deductible plan. Treat this like the buffer fund: a specific amount, kept separate from daily spending money.\n\nUse the calculator to [estimate a federal premium credit](/budget/aca-subsidy-calculator/) and [compare Marketplace coverage with Medicaid](/compare/aca-vs-medicaid/) before planning your coverage costs."
     },
     {
       heading: "How Can Self-Employed Workers Save for Retirement Without a 401(k) Match?",

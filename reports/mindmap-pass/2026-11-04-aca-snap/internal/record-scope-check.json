@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "recordsChanged": [
+    {
+      "file": "src/data/guides.ts",
+      "slug": "how-to-budget-with-irregular-income",
+      "fields": [
+        "sections",
+        "published",
+        "updated"
+      ]
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "how-to-make-a-budget",
+      "fields": [
+        "updated",
+        "sections"
+      ]
+    },
+    {
+      "file": "src/data/spokes-budget.ts",
+      "slug": "household-budget-calculator",
+      "fields": [
+        "howItWorks",
+        "commonMistakes",
+        "published",
+        "updated"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "status": "Provisional source checks only; independent whole-render review required",
+  "rows": [
+    {
+      "slug": "aca-vs-medicaid",
+      "titleLength": 53,
+      "descriptionLength": 159,
+      "emDashCount": 0,
+      "exclamationCount": 0,
+      "boldMarkerCount": 0,
+      "rawHtmlTagCount": 0,
+      "emptySectionBodyCount": 0,
+      "voiceResidue": []
+    },
+    {
+      "slug": "snap-benefits-calculator",
+      "titleLength": 50,
+      "descriptionLength": 150,
+      "emDashCount": 0,
+      "exclamationCount": 0,
+      "boldMarkerCount": 0,
+      "rawHtmlTagCount": 0,
+      "emptySectionBodyCount": 0,
+      "voiceResidue": []
+    },
+    {
+      "slug": "how-to-apply-for-food-stamps",
+      "titleLength": 52,
+      "descriptionLength": 152,
+      "emDashCount": 0,
+      "exclamationCount": 0,
+      "boldMarkerCount": 0,
+      "rawHtmlTagCount": 0,
+      "emptySectionBodyCount": 0,
+      "voiceResidue": []
+    },
+    {
+      "slug": "aca-subsidy-calculator",
+      "titleLength": 52,
+      "descriptionLength": 152,
+      "emDashCount": 0,
+      "exclamationCount": 0,
+      "boldMarkerCount": 0,
+      "rawHtmlTagCount": 0,
+      "emptySectionBodyCount": 0,
+      "voiceResidue": []
+    },
+    {
+      "slug": "snap-vs-wic",
+      "titleLength": 54,
+      "descriptionLength": 146,
+      "emDashCount": 0,
+      "exclamationCount": 0,
+      "boldMarkerCount": 0,
+      "rawHtmlTagCount": 0,
+      "emptySectionBodyCount": 0,
+      "voiceResidue": []
+    }
+  ]
+}

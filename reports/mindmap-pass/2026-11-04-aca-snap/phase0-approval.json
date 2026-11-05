@@ -1,0 +1,8 @@
+{
+  "status": "approved",
+  "actor": "user",
+  "message": "Approved, go ahead with all five pages and the link updates, then publish and verify everything live.",
+  "manifest": "approval-manifest.json",
+  "date": "2026-11-04",
+  "scope": "N1\u2013N5, L1\u2013L3; commit, push, live verification and IndexNow under approved manifest"
+}

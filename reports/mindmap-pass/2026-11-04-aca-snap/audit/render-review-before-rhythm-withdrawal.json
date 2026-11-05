@@ -1,0 +1,479 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "snapshotSha256": "fab596725851d998fc23e14a28e3cd3d52700b177908f4ee3025802a8567cb7b",
+  "verdict": "PASS",
+  "sourceBinding": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/internal/selected-source.json",
+    "sha256": "014530e287b5556152c53d3f75b528baac4b595945bad3352584500c230f21c7"
+  },
+  "independentBrowserSnapshot": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/audit/reviewer-approved-snapshot.json",
+    "sha256": "d841a2b9b2829c1d1ac71246e635ea8ca923b97167cd9ca0ec517a273eafd0af"
+  },
+  "instructionBundles": [
+    "reports/mindmap-pass/2026-11-04-aca-snap/preflight-final-review",
+    "reports/mindmap-pass/2026-11-04-aca-snap/preflight-final-local"
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "fingerprint": "3e80ecf7ccc0762d48530d3d0ad5d827cf247d772b262c284af8194ee6a3aaa7",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Only the budget category count changes from5 to7; the two additional budget spokes explain it. The rest of the home reader path is unchanged against published850b. See reviewer-all-route-comparison-v2.json."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The seven-tool count matches the budget registry and the seven-card budget hub; no acquisition or traffic uplift is asserted."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing or professional-review claim is introduced by this count-only change; the established site identity is retained."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Home canonical and structured data are intact, with no new article date or freshness claim; captured parsing reports no failures."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "The Budget category card still reaches /budget/; every internal target resolves in the candidate output. Navigation is unchanged."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Independently visited at1280 and390px; zero horizontal overflow or page errors. Home card grid screenshot was visually inspected in audit/final-browser/homedesktop.png."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Count-only existing-page scope. The independent1,089-to1,094 route comparison found no removals or unrelated changed routes."
+        }
+      }
+    },
+    {
+      "path": "/budget/",
+      "fingerprint": "e078341a662c80b22b6fc2cce1060fc7e45eaa2b21a63fe1216d234e7e9ccf4e",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Existing budget explanation/tool remains unchanged; exactly the SNAP and ACA spoke cards are added. Hydrated default income5000/plan4800 is coherent and independent browser capture is complete."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "New labels correspond to the two actual local deterministic tools, with ordinary free/instant card wording and no eligibility or benefit-award promise."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No TESTED label or new experience claim is added. The original author and existing June25 update date remain unchanged for this collection/card-only change."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Selfcanonical /budget/, structured data and original collection date remain intact. New tool article dates are on their individual routes."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Both new card links reach their exact canonical budget spoke paths; SNAP/ACA casing is correct and all internal destinations exist."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Desktop budget tool/grid screenshot was visually inspected; new cards wrap correctly. Own390px capture has no page overflow or code errors; existing calculator remains usable."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Only two approved cards are added; no header/nav expansion, unrelated budget prose rewrite or new backend. Existing source provenance remains unchanged."
+        }
+      }
+    },
+    {
+      "path": "/budget/aca-subsidy-calculator/",
+      "fingerprint": "0dc2ada44e3c626ca0338df88c9d8613266e5a16b3bc306a07fc14d08c61fbf3",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "The whole article/tool/FAQ path agrees on benchmark-minus-contribution capped by eligible enrollment premiums, conditional nonfinancial eligibility and2027 coverage using2026 FPL. The worked cases and closing next action retain all conditions."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "IRS2027 percentages, FPL and PTC Q26 support268.85 credit/281.15 premium,400% inclusive262.80 and the100 cap example.552 Decimal cases reproduced the corrected exact133% income boundary; IRS Q31 supports uncapped post2025 repayment."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "Visible attribution accurately describes hypothetical calculations with inspectable formula/table. It does not claim insurance product testing, local plan quotes, professional review or guaranteed subsidy eligibility."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Article/FAQ/WebApplication schema, canonical and visible date match published/modified2026-11-04; source body2617 exceeds1200."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Approved budget/irregular-income inbounds and budget outbounds resolve; official IRS/HealthCare.gov deep links support action instructions. Canonical appears once in sitemap with Nov4 lastmod."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Own browser verified unknown/invalid/excluded withholding, confirmed268.85/281.15, exact133%,400%/one-cent-above and100 premium cap. Actual copy/download includes full program and MAGI names; keyboard/mobile390 checks and table inspection passed."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Only federal planning math for1\u20138 contiguous48/DC. No ZIP quote database, national Medicaid verdict, state subsidy, cost-sharing estimate, backend or empirical product-testing claim."
+        }
+      }
+    },
+    {
+      "path": "/budget/household-budget-calculator/",
+      "fingerprint": "f6885d8834a1544546ed8b1e0a42b4dc15a79600833822420518dd9ed36dfeee",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "The entire existing budget path was read. The two additions keep restricted food benefits separate from cash income and point child-food-cost readers toward SNAP/WIC; existing calculator examples remain coherent."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The SNAP-only-eligible-food statement is supported by USDA food rules. The comparison link makes no blanket eligibility or enrollment promise. Existing unrelated budget guidance is preserved."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "Only two contextual links/date are new; no testing attribution is added. Jonathan Velez remains the original byline."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Independently compared baseline and final Article dates: published2026-06-25 preserved, modified2026-11-04. Sitemap lastmod remains absent as before; see reviewer-dates-sitemap.json."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Exact approved anchors estimate SNAP food benefits and compare SNAP and WIC point to the two correct routes; every internal target resolves."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Own desktop/mobile capture hydrated the existing7500-income/7450-plan tool without page/console errors or390px overflow; the short link additions render inside their intended paragraphs/list item."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Baseline prose delta contains exactly two approved new sentences plus the visible date change; no unrelated body or metadata edit. See reviewer-existing-prose-deltas.json."
+        }
+      }
+    },
+    {
+      "path": "/budget/snap-benefits-calculator/",
+      "fingerprint": "519de2d5fa4f9e983292de65adfc4f05d15715b794011b37be2e2eb67eb454dd",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "The complete tool/article/FAQ/source/footer path agrees on a base formula before eligible minimums, conditional state eligibility and full-month FY2027 scope. The corrected U.S. Virgin Islands paragraphs are intact; all original findings are retained under audit/."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "FY2027 USDA allotments/deductions and federal method support766/826 worked cases. Fresh reviewer replay and552 independent Decimal cases cover zero/high income, shelter cap, medical threshold, minimum and suppression behavior."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "Visible ModernWallet calculation attribution names our hypothetical cases and inspectable worked table. No TESTED or clinical/professional-review claim appears; reused site byline and final financial notice are truthful."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Selfcanonical and Article/FAQ/WebApplication schema are consistent; published/modified2026-11-04 and visible update date agree. Source body2189 exceeds1200."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Two approved inbound sources plus relevant budget links exist; first-source citations and law link work. Every internal destination resolves; sitemap lists this canonical once with Nov4 lastmod."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Own browser observed766 default,826 with higher shelter, high-net suppression, conditional25 minimum, invalid inputs and region errors, keyboard Tab and actual clipboard/download.390px layout/table were visually inspected; abbreviation-only refresh passed."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Scope is1\u20138 members, contiguous48/DC, FY2027; no eligibility award, first-month proration, state supplement or unsupported product test. Inputs stay local; inspected tracker transmits event metadata rather than field values."
+        }
+      }
+    },
+    {
+      "path": "/calculators/",
+      "fingerprint": "ef77882b93c00530c565236cc152d99dde042890154ff717013e16836b8bf6a6",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "The all-calculators listing adds the same two budget spokes and preserves its remaining groups. The independent baseline comparison isolates those two card insertions."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Both entries map to real implemented tools rather than placeholders, with source-supported program names and no invented result figures."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No executed-product testing, tested badge or new professional-review attribution is asserted by these index cards."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "The all-calculators canonical/structured data remain intact; no date was stamped on unchanged index prose."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Both uppercase SNAP/ACA cards link to the new canonical /budget/ routes. Mechanical checks resolve every internal destination."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Own desktop/mobile full-page capture completed without page/console errors or390px overflow. The changed LinkCard variant matches the visually inspected budget grid."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Only the approved budget-spoke listing changes; the CALCULATORS navigation registry was not expanded with new hubs."
+        }
+      }
+    },
+    {
+      "path": "/compare/",
+      "fingerprint": "01e9e47d8b1a80e635263cd9846cb3bdee809d86c8eb4b02bdb242ab7f2afa57",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Two comparison cards are inserted in the existing listing. Their identities correctly distinguish SNAP/WIC and Marketplace/Medicaid; the remaining comparison cards are unchanged."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Card subjects/title promises match the reported-source comparisons and their implemented five-criterion tables; neither card promises a universal coverage winner."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "New program comparisons use ordinary source-based presentation; no tests, credentials or professional review are invented."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Comparison-index canonical and schema remain valid with no artificial article-date bump."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "New cards target /compare/snap-vs-wic/ and /compare/aca-vs-medicaid/ directly; all internal destinations resolve."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Own desktop and390px browser captures show a working card listing with no horizontal overflow, page errors or console errors. Long source program labels remain in the normal existing card layout."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Exactly two approved comparison cards are added; unrelated Medicare/Medicaid content is neither used as a source nor rewritten."
+        }
+      }
+    },
+    {
+      "path": "/compare/aca-vs-medicaid/",
+      "fingerprint": "6da7830eddb902bdea95d9deb34c3beb344ff4704f4eaa50c6c0556b22544ee2",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "The whole law/private/public distinction, five-row table, exceptions, FAQs and conditional takeaway agree. The final changed sentence now says denial/limited-benefit paths can lead to different savings outcomes rather than guaranteeing three distinct answers."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "HealthCare.gov/IRS support full-benefit versus limited-benefit coverage, state/category rules, MAGI scope,2027 work-denial restriction and IRS timing exception. Official NYC and federal expansion supplements support only the naming and conditional gap FAQs. Source-guard adjudication is saved honestly."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "Reporter source-based comparison, not empirical insurance testing. The no-universal-winner takeaway follows the approved decision criteria and named exceptions; no professional credentials or review dates are fabricated."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Selfcanonical, Article/FAQ schema and visible date agree on2026-11-04; source body2402 exceeds1500. Immigration/status conditions are scoped to noncitizens with state pregnant/child exceptions preserved."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Approved comparison-index/irregular-income inbounds, budget outbounds and official eligibility/update links resolve. Both supplemental source citations are visible; sitemap includes the canonical once with Nov4 lastmod."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Own desktop/mobile browser checked the five-row table, six TOC anchors and FAQ behavior with zero code errors or390px overflow. The final one-sentence qualification was independently compared; subsequent normalized text is identical."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "No insurer ranking, national Medicaid calculator, clinical advice or universal winner. Current coverage is ended only after replacement confirmation; limited-benefit, initial-assessment and work-denial distinctions remain explicit."
+        }
+      }
+    },
+    {
+      "path": "/compare/snap-vs-wic/",
+      "fingerprint": "184c1ad981d99ca3946b185b36ee2f6bb8053108ac1b8b9527733e82e8dc476d",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "The full five-row table and surrounding decision path consistently distinguish household SNAP groceries from WIC participant foods/services, allow both only when qualified, and retain the remaining WIC category/local assessment requirements."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "USDA SNAP/WIC eligibility/food/benefit sources and California WIC support the table, different household definitions and conditional documents. USAGov supports food-stamps terminology. No arbitrary dollar score or clinical recommendation is added."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "Reporter register names external sources rather than inventing tests or client experience. No TESTED badge or professional-review credit appears; the final educational notice and ordinary byline are present."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Canonical/Article/FAQ schema and visible November4 date agree; new Article dates both2026-11-04. Source body2220 exceeds1500."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Approved comparison-index/household-budget inbounds and two relevant budget outbounds resolve. Source citations and both official agency locators are present; sitemap contains this route once."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Own browser inspected the complete three-column/five-row table at390px, valid TOC anchors and FAQ expansion with zero code errors/overflow. Raw bold markers are gone; the fresh Oct.1/Sept.30 paragraphs keep dates together."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "No universal winner, medical advice, cash/diaper promise or automatic WIC enrollment. The California document example is conditional; no actual program participation or testing is asserted."
+        }
+      }
+    },
+    {
+      "path": "/guides/",
+      "fingerprint": "0ee1a271e76575e66b4ee35a348eabded5f056ed2f56583d5543897bcd6a8b48",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Only the new food-stamps guide card is inserted. Its text names the state application, dated confirmation, interview/proof and conditional expedited route; those match the six-step guide."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The guide card now truthfully reads1 tool and6 application steps, matching its one budget-tool link and actual six-step procedure; it does not promise guaranteed seven-day approval."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "The card makes no product-test or fabricated client-experience claim; the destination uses ordinary sourced process guidance."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Guide-index selfcanonical/schema are intact, with no index freshness-date churn."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "The new card reaches /guides/how-to-apply-for-food-stamps/ directly and its tool link is the existing household budget calculator; internal links resolve."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Own desktop/mobile guide-index captures completed with zero page/console errors and no390px overflow. The new card uses the established guide-card variant."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "One approved guide/card is added. No application form, SSN collection, lead portal or unrelated guide rewrite is introduced."
+        }
+      }
+    },
+    {
+      "path": "/guides/how-to-apply-for-food-stamps/",
+      "fingerprint": "a53e082caeabf0d4552fcef78f5063b455443984a74e3812252be3eadf5961ba",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "The whole six-step process, document-purpose table, status/action table and FAQs distinguish filing, interview, verification, notice, expedited review and recertification. The blanket non-agency-form invalidity claim and research-absence narration are removed."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "USDA/USAGov support residence-state filing, interviews/proof, ordinary30-day and conditional7-day timing,90-day fair hearing and notices. Document records are preparation rather than a universal mandatory list; phone filing is referred to the state agency."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "Official-process operator page has the approved tee-up exemption and attributes agency rules. No personal enrollment, product testing, professional review or invented client record is claimed; final notice and standard byline are present."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Selfcanonical, Article/FAQ schema and visible modified date agree on2026-11-04, also its publication date; source body1921 exceeds1200. Fresh Oct.1/Sept.30 contexts now remain in complete paragraphs."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Approved guide-index/make-a-budget inbounds and two budget outbounds resolve. State directory, source agency and linked current-rule update notice are real primary destinations; sitemap includes this canonical once."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Own browser observed two readable tables, seven valid contents anchors and working FAQ expansion, no code errors and no390px overflow. The guide-card count is now1 tool/6 application steps; fresh paragraph refresh passed."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "No SSN form, application collection, case-status portal or filing claim. The linked notice truthfully says work/noncitizen guidance is being updated. Restricted food benefits remain separate from cash income."
+        }
+      }
+    },
+    {
+      "path": "/guides/how-to-budget-with-irregular-income/",
+      "fingerprint": "09e098ae4b19ebfbc31a6a12720b163474e8afbfaba9511d975a89506b611948",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "The complete existing guide was read. The sole new health-insurance sentence fits its annual-income/Marketplace update advice and points readers to conditional credit math and the Medicaid distinction."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The linked targets explain all nonfinancial conditions and state/category variation. The source section does not promise that every freelancer receives a subsidy."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing/experience or professional credential is introduced; the established writer byline remains unchanged."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Baseline/final Article published2026-06-25 is preserved while modified becomes2026-11-04; sitemap lastmod remains absent as before."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Exact approved anchors estimate a federal premium credit and compare Marketplace coverage with Medicaid resolve to N2/N4; other internal destinations also exist."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Own desktop/mobile full-page capture shows the contextual sentence in the health-insurance section, with no page/console errors or390px overflow."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Baseline prose comparison contains only the approved link sentence and date. The historical tax-percentage inconsistency is unrelated to the revised coverage decision and was retained as an advisory."
+        }
+      }
+    },
+    {
+      "path": "/guides/how-to-make-a-budget/",
+      "fingerprint": "c11f11cdcf5c368aefd2479c9b272fa2d0b1dd7d8bfbfb97b3a2e33a5ba3ea59",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "The full four-step budget guide was read. The new SNAP application link stays within the income/benefit-statements step and does not alter the four-step method or turn food benefits into a filing confirmation."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "The official-application destination gives the required state-specific mechanism and explicitly separates restricted food benefits from cash budgeting; the source guide defines take-home pay as money landing in the account."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No product-test or invented personal/program-use experience is added to this existing guide."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Baseline/final published2026-10-20 is preserved; modified changes from2026-10-29 to2026-11-04. Sitemap lastmod remains absent, consistent with link-only policy."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Exact approved SNAP application steps anchor points to N5 in the first budget step. All internal destinations resolve."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Own desktop/mobile capture shows the link as part of the first step; four-step structure, tables and FAQs remain intact, with no390px overflow or browser code errors."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Only the approved new sentence and date differ from published baseline prose. No budget method, metadata experiment or unrelated author work is imported."
+        }
+      }
+    }
+  ],
+  "advisories": [
+    "Unrelated historical style and footer-neutrality wording on retained legacy routes was not rewritten or certified as new evidence; no such claim is present on the five new pages.",
+    "The pre-existing tax-percentage inconsistency in the irregular-income guide is unrelated to its revised benefits link context."
+  ],
+  "history": "Original FAIL/FIX receipts and counters remain under audit/. N1 narrow base-formula correction used substantive rework1; no review history was reset. The ordinary editorial workflow applies, without client/upsell release exceptions."
+}

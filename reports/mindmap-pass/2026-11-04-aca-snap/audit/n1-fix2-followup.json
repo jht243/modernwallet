@@ -1,0 +1,60 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "route": "/budget/snap-benefits-calculator/",
+  "status": "targeted-followup-needed-not-render-PASS",
+  "draftSha256": "fed5c6c083550b23fe1265517ba71be9913ebe8a61db09fffa46c09634081e6d",
+  "reworkAttempts": 0,
+  "confirmedFixed": [
+    "Intro rounds30%ratherthanallotment; methodattributionretainedasbodysecond sentence.",
+    "Income reference and FAQ now meetbothlimits; no strict-underthreshold mistake.",
+    "Previouslyflagged10sentenceall-longbandruns and5sentence-near-lengthruns nowabsent onfresh measurement.",
+    "Lawfirstmentionlinked and final43wordcommaspliceremoved."
+  ],
+  "findings": [
+    {
+      "field": "How much can you get in SNAP benefits?",
+      "quote": "Your amount is that maximum minus 30% of your net income, rounded up, so a household with $0 net income gets the full maximum.",
+      "defect": "Same ambiguousrounding asoriginalintro persists; roundedup appears tomodifyresult.",
+      "replacement": "Subtract 30% of net income, rounded up to the next whole dollar, from the maximum allotment. An otherwise eligible household with $0 net income receives the full maximum."
+    },
+    {
+      "field": "introText",
+      "quote": "At ModernWallet, we calculated these hypothetical full-month cases using federal fiscal year (FY) 2027 amounts.",
+      "replacement": "At ModernWallet, we calculated these hypothetical full-month cases for the SNAP benefits calculator using federal fiscal year (FY) 2027 amounts.",
+      "defect": "Exactprimaryphrase missingfromfirstparagraph afterfix2; retainsecond-sentencemethodattribution."
+    },
+    {
+      "field": "Your Next Step",
+      "quote": "Run your own numbers above and take the downloaded result to your state application.",
+      "replacement": "Run your numbers in the SNAP benefits calculator and take the downloaded result to your state application.",
+      "defect": "Exactprimaryphrase missingfromlastbodyaction afterfix2; restorespriorreviewedreplacement."
+    }
+  ],
+  "mechanical": [
+    {
+      "field": "introText",
+      "quote": " The worked-example table below shows each step.",
+      "replacement": "\n\nThe worked-example table below shows each step.",
+      "defect": "Fix2 convertedintro tosingle5-sentenceparagraph; max3sentencesperparagraph. Paragraphbreakretainssentence1answer andsecond-sentenceprovenance."
+    },
+    {
+      "field": "What is the minimum SNAP benefit?",
+      "quote": "[FY2027 COLA tables]",
+      "replacement": "[FY2027 cost-of-living adjustment (COLA) tables]",
+      "defect": "FirstuseCOLAunexpanded; preserveexistingURL."
+    },
+    {
+      "field": "section heading",
+      "quote": "Which Income and Deductions to Enter",
+      "replacement": "Income and Deductions for the SNAP Benefits Calculator",
+      "defect": "SEOrequiresprimaryphrasein2\u20133sectionheadings; retainapprovedfirstanswerheadingunchanged."
+    },
+    {
+      "field": "section heading",
+      "quote": "What the Estimate Cannot Decide",
+      "replacement": "What the SNAP Benefits Calculator Cannot Decide",
+      "defect": "Secondnaturalprimaryphraseheading; preservecontentandanswerplacement."
+    }
+  ],
+  "scope": "Readcurrentdraft/source-onlyfollowup; awaitfreshcompletehydrat edrenderwithchangesbeforePASS."
+}

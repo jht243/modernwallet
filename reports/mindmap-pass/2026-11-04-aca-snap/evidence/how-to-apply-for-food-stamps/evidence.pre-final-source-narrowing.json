@@ -1,0 +1,134 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "benefits_content",
+  "route": "/guides/how-to-apply-for-food-stamps/",
+  "readerQuestion": "How do I apply for food stamps? [PAA 0/0; ac 78 application-family completions, including documents and online steps]",
+  "decisionGap": "No dedicated application guide in coverage, redirects, past charts or exact-slug history. /guides/how-to-make-a-budget/ records income/spending but does not explain SNAP filing. The amount calculator models dollars and WIC comparison explains program choice, so neither replaces these application steps.",
+  "finding": "Reported-source practical synthesis keeps application filing, verification, expedited review and award separate. Explain why a calculator or third-party form does not file an application. Use a document-purpose table and a status/action table, not a thin directory wrapper; attribute process/timing to USDA/USAGov.",
+  "conditions": "Full article with numbered application sequence and a concise document-purpose checklist/table. No questionnaire collecting SSNs, no unofficial application form, no state benefit login imitation. All central source research is captured; no custom visual or calculator adds value to this process answer.",
+  "whatWouldChange": "Apply through the state where you live and keep the filing confirmation. Finish the agency\u2019s interview/verification and ask about expedited processing when necessary. Eligibility, state channels and individual verification requests change the process; a calculator result never replaces the agency notice.",
+  "basis": "reported",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligibility.txt",
+      "sha256": "13160ffc3ba82531a517e7e6f13d4b3df9a75f4a6afb4491a6701880c391c911"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-state.txt",
+      "sha256": "8bf6530c65b122cc7b36c4c0ceca308bb97610fb6fe203fbf6cd8d245335b33b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-apply.txt",
+      "sha256": "e86cb709edc18e4add040fd933d18e84ff3d4b1dc635719a99cc6b3722df6d0f"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-cola.txt",
+      "sha256": "f8ebb22951e90e78e6d37cd30fe07c357e76b4c36479b98010459c689c1753c5"
+    }
+  ],
+  "sources": [
+    {
+      "id": "snap-eligibility",
+      "url": "https://fns-prod.azureedge.us/snap/recipient/eligibility",
+      "resolvedUrl": "https://fns-prod.azureedge.us/snap/recipient/eligibility",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligibility.txt",
+      "sha256": "13160ffc3ba82531a517e7e6f13d4b3df9a75f4a6afb4491a6701880c391c911"
+    },
+    {
+      "id": "snap-state",
+      "url": "https://fns-prod.azureedge.us/snap/state-directory",
+      "resolvedUrl": "https://fns-prod.azureedge.us/snap/state-directory",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-state.txt",
+      "sha256": "8bf6530c65b122cc7b36c4c0ceca308bb97610fb6fe203fbf6cd8d245335b33b"
+    },
+    {
+      "id": "snap-apply",
+      "url": "https://www.usa.gov/food-stamps",
+      "resolvedUrl": "https://www.usa.gov/food-stamps",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-apply.txt",
+      "sha256": "e86cb709edc18e4add040fd933d18e84ff3d4b1dc635719a99cc6b3722df6d0f"
+    },
+    {
+      "id": "snap-cola",
+      "url": "https://fns-prod.azureedge.us/snap/allotment/cola",
+      "resolvedUrl": "https://fns-prod.azureedge.us/snap/allotment/cola",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-cola.txt",
+      "sha256": "f8ebb22951e90e78e6d37cd30fe07c357e76b4c36479b98010459c689c1753c5"
+    }
+  ],
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/how-to-apply-for-food-stamps/cases.json",
+    "sha256": "be07ff6639c11ffc6a2c7a86a7636244c6387b6e6ae60d8b012b1264bcaa41a2"
+  },
+  "caseDecisions": [
+    {
+      "recordId": "owned-property-under-the-load",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "client-bowlero-corporation",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "client-professional-bowlers-association-pba",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "client-metaking-studios-and-heromaker-studios",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "client-multiple-law-firms",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "owned-property-drones-defense",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "owned-property-the-psychedelic-journal",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "owned-property-the-metabolic-journal",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    }
+  ],
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [
+      "snap-eligibility",
+      "snap-state",
+      "snap-apply",
+      "snap-cola"
+    ],
+    "scopeAndLimits": "Ordinary financial/program information, excluded from product TESTED format. Reuse existing Jonathan Velez byline without invented credentials/professional review. No clinical/personal eligibility claim. Fresh independent Phase4 review must cover exact final whole render, sources and all transformations. Operator process voice, teeup-exempt because official filing steps need no company-experience claim.",
+    "publicMethod": "Inline primary-source citations and program comparison/process tables",
+    "placement": "First answer, comparison/process sections and takeaway"
+  },
+  "plannedTakeaway": "Apply through the state where you live and keep the filing confirmation. Finish the agency\u2019s interview/verification and ask about expedited processing when necessary. Eligibility, state channels and individual verification requests change the process; a calculator result never replaces the agency notice.",
+  "selectedMedium": "text",
+  "mediumReason": "Full article with numbered application sequence and a concise document-purpose checklist/table. No questionnaire collecting SSNs, no unofficial application form, no state benefit login imitation. All central source research is captured; no custom visual or calculator adds value to this process answer.",
+  "whyNoQuantitativeAnalysis": "Program identity, eligibility relationships and application sequences require sourced distinctions rather than arbitrary numerical scores.",
+  "reasoning": [
+    "mechanism: Find the SNAP agency for the state where you live, submit its application, complete the required interview and verification, and keep the agency notice; ask about expedited service if food is urgently needed.",
+    "Reported-source practical synthesis keeps application filing, verification, expedited review and award separate. Explain why a calculator or third-party form does not file an application. Use a document-purpose table and a status/action table, not a thin directory wrapper; attribute process/timing to USDA/USAGov.",
+    "Apply through the state where you live and keep the filing confirmation. Finish the agency\u2019s interview/verification and ask about expedited processing when necessary. Eligibility, state channels and individual verification requests change the process; a calculator result never replaces the agency notice."
+  ]
+}

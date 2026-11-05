@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "aca-subsidy-calculator",
+    "exitCode": 0,
+    "stdout": "{\"status\": \"PASS\", \"scope\": \"Structural/artifact checks only; independent judgment and existing approval/rendered-publication gates remain required.\"}",
+    "stderr": ""
+  },
+  {
+    "slug": "aca-vs-medicaid",
+    "exitCode": 0,
+    "stdout": "{\"status\": \"PASS\", \"scope\": \"Structural/artifact checks only; independent judgment and existing approval/rendered-publication gates remain required.\"}",
+    "stderr": ""
+  },
+  {
+    "slug": "how-to-apply-for-food-stamps",
+    "exitCode": 0,
+    "stdout": "{\"status\": \"PASS\", \"scope\": \"Structural/artifact checks only; independent judgment and existing approval/rendered-publication gates remain required.\"}",
+    "stderr": ""
+  },
+  {
+    "slug": "snap-benefits-calculator",
+    "exitCode": 0,
+    "stdout": "{\"status\": \"PASS\", \"scope\": \"Structural/artifact checks only; independent judgment and existing approval/rendered-publication gates remain required.\"}",
+    "stderr": ""
+  },
+  {
+    "slug": "snap-vs-wic",
+    "exitCode": 0,
+    "stdout": "{\"status\": \"PASS\", \"scope\": \"Structural/artifact checks only; independent judgment and existing approval/rendered-publication gates remain required.\"}",
+    "stderr": ""
+  }
+]

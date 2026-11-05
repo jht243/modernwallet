@@ -1,0 +1,12 @@
+Targeted fixes only. Retain supported detail and at least1,200 bodywords.
+1. Opener is39 words, overloading the direct answer. Shorten just its first sentence while keeping benefit formula conditional on state eligibility; move details into next sentence if necessary.
+2. Delete the paragraph beginning "We did not copy the example on FNA's eligibility page." Internal preparation criticism is unnecessary visitor content. Do not replace it.
+3. Utility input must be state-approved utility allowance, not an unsourced permission to use actual bills. Fix "Enter either your actual monthly bills or the amount your state SNAP agency approves." to state the actual allowed input. Source details must not invite double-counting.
+4. Extra $1,600 shelter/elderly numerical scenario was not executed in supplied record. Remove that numerical scenario while retain the clear sourced uncapped deduction explanation. Keep the original two executed four-person worked examples, $766/$826.
+5. Remove the unexecuted $1,454.50 cap-threshold/$842 numerical calculation. Explain the cap in sourced words without introducing a new scenario.
+6. Remove precise $4,538 special-household income number. The165% rule can stay if linked and correctly attributed, but no extra calculated threshold.
+7. Do not copy detailed student/work/noncitizen exemptions from eligibility page being updated. Remove the student age18-49 rule bullet. Keep general statement that calculator cannot decide student/work/noncitizen eligibility, with agency link.
+8. Make visible provenance beside first finding explain that we calculated the hypothetical full-month cases and the method table allows checking. "Built this one" alone is not provenance for original result. Use accurate authorial editorial attribution without invented testing.
+9. The closing takeaway must state that allowed deductions and net income determine a conditional amount, agency determines eligibility, and changing state allowances/first-month dates/currentCOLA changes result. Preserve concrete budget/application next step.
+10. Tool heading must be Title Case.
+11. Tool scope is1-8peoplecontiguous48/DC. Remove detailed benefit amounts forAK/HI/territories/9+fromFAQ. Keep short official COLA-table link for these exclusions. This is an informational-scope narrowing, not a changed calculator brief.

@@ -1,0 +1,195 @@
+{
+  "status": "observed-browser-checks-completed",
+  "results": [
+    "Default conditional766 observed",
+    "Higher shelter1400 gives826 observed",
+    "Highnet unknown amount withheld",
+    "Stateconfirmed minimum25 conditional",
+    "Blank input accessible invalid and result withheld",
+    "Negative input blocked",
+    "Unsupported region blocked",
+    "Actual clipboard save with full result",
+    "Keyboard Tab moves between numeric controls"
+  ],
+  "width": {
+    "scroll": 390,
+    "width": 390
+  },
+  "errors": [],
+  "headings": [
+    "How SNAP Benefits Are Calculated",
+    "Which Income and Deductions to Enter",
+    "SNAP Income Limits Are a Federal Reference",
+    "SNAP Benefits for Older or Disabled Members",
+    "A Full-Month SNAP Worked Example",
+    "What the Estimate Cannot Decide",
+    "Your Next Step",
+    "Common mistakes to avoid",
+    "Frequently Asked Questions",
+    "Sources",
+    "Plan the bigger picture"
+  ],
+  "links": [
+    {
+      "text": "ModernWallet",
+      "href": "/"
+    },
+    {
+      "text": "Budget",
+      "href": "/budget/"
+    },
+    {
+      "text": "Jonathan Velez",
+      "href": "/about/"
+    },
+    {
+      "text": "state SNAP office",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "USDA FY2027 amounts",
+      "href": "https://fns-prod.azureedge.us/snap/allotment/cola"
+    },
+    {
+      "text": "federal deduction method",
+      "href": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "text": "How SNAP Benefits Are Calculated",
+      "href": "#benefits-section-1"
+    },
+    {
+      "text": "Which Income and Deductions to Enter",
+      "href": "#benefits-section-2"
+    },
+    {
+      "text": "SNAP Income Limits Are a Federal Reference",
+      "href": "#benefits-section-3"
+    },
+    {
+      "text": "SNAP Benefits for Older or Disabled Members",
+      "href": "#benefits-section-4"
+    },
+    {
+      "text": "A Full-Month SNAP Worked Example",
+      "href": "#benefits-section-5"
+    },
+    {
+      "text": "What the Estimate Cannot Decide",
+      "href": "#benefits-section-6"
+    },
+    {
+      "text": "Your Next Step",
+      "href": "#benefits-section-7"
+    },
+    {
+      "text": "U.S. Department of Agriculture (USDA) Food and Nutrition Administration (FNA)",
+      "href": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "text": "FY2027 allotment and deduction tables",
+      "href": "https://fns-prod.azureedge.us/snap/allotment/cola"
+    },
+    {
+      "text": "state SNAP agency",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "SNAP state directory",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "FNA",
+      "href": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "text": "FNA eligibility page",
+      "href": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "text": "FNA eligibility page",
+      "href": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "text": "SNAP state directory",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "can buy food for the household",
+      "href": "https://fns-prod.azureedge.us/snap/eligible-food-items"
+    },
+    {
+      "text": "plan the rest of your household budget",
+      "href": "/budget/household-budget-calculator/"
+    },
+    {
+      "text": "build a budget from your statements",
+      "href": "/guides/how-to-make-a-budget/"
+    },
+    {
+      "text": "FY2027 COLA tables",
+      "href": "https://fns-prod.azureedge.us/snap/allotment/cola"
+    },
+    {
+      "text": "FY2027 COLA tables",
+      "href": "https://fns-prod.azureedge.us/snap/allotment/cola"
+    },
+    {
+      "text": "calculator methodology",
+      "href": "/methodology/"
+    },
+    {
+      "text": "editorial policy",
+      "href": "/editorial-policy/"
+    },
+    {
+      "text": "USDA Food and Nutrition Administration: SNAP Cost-of-Living Adjustment (COLA) Information",
+      "href": "https://fns-prod.azureedge.us/snap/allotment/cola"
+    },
+    {
+      "text": "USDA Food and Nutrition Administration: SNAP Eligibility",
+      "href": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "text": "USDA Food and Nutrition Administration: SNAP State Directory of Resources",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "USDA Food and Nutrition Administration: What Can SNAP Buy?",
+      "href": "https://fns-prod.azureedge.us/snap/eligible-food-items"
+    },
+    {
+      "text": "Size your emergency fund from your essential bills→",
+      "href": "/emergency-fund-calculator/"
+    },
+    {
+      "text": "See your full net worth→",
+      "href": "/net-worth/"
+    },
+    {
+      "text": "Invest your monthly surplus→",
+      "href": "/investing/"
+    },
+    {
+      "text": "Are you saving enough to retire?→",
+      "href": "/retirement/"
+    },
+    {
+      "text": "Consolidating debt? Model a personal loan→",
+      "href": "/personal-loan/"
+    },
+    {
+      "text": "Do sales tax holidays actually save money?→",
+      "href": "/guides/sales-tax-holidays-guide/"
+    },
+    {
+      "text": "Using AI chatbots for money questions→",
+      "href": "/guides/ai-financial-advice-chatbots-guide/"
+    },
+    {
+      "text": "Lending money to family? Set boundaries first→",
+      "href": "/guides/lending-money-to-family-boundaries/"
+    }
+  ],
+  "partialReview": true
+}

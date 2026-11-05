@@ -1,0 +1,33 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "verdict": "PASS",
+  "packetSha256": "747cf70a1b2ba05cca0c58385c4e0d4386b59654757e9990f030af793df59543",
+  "renderedSnapshot": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/final-snapshot.json",
+    "sha256": "42c1473619067a0193c917beba106ddbdfc665866bbc1f37799e194c53285e94"
+  },
+  "renderedReview": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/final-render-review.json",
+    "sha256": "fac6e97cddf8b8951d6656836517c910fe1d8044f893141c781b15b48a79e4cb"
+  },
+  "usefulness": {
+    "status": "PASS",
+    "evidence": "The six-step state application mechanism plus two practical tables completes the reader task beyond a directory link. It separates filing, proof, interview, notice and recertification, and routes urgent need to conditional expedited review."
+  },
+  "sourceAndAssumptions": {
+    "status": "PASS",
+    "evidence": "USDA/USAGov sources support the application sequence and timing. The packet was honestly narrowed after removing the unsupported blanket third-party-form assertion; the original packet is preserved. No national mandatory document list or national phone-filing claim is invented."
+  },
+  "conditionsAndCounterexample": {
+    "status": "PASS",
+    "evidence": "State submission channels and requested proof vary; expedited7-day processing is conditional, ordinary timing is generally30days, and the agency determines eligibility/award. The work/noncitizen notice is explicitly still being updated. This is reported process synthesis, so no artificial numerical experiment is needed."
+  },
+  "renderedConsistency": {
+    "status": "PASS",
+    "evidence": "The final guide preserves the six steps, preparation/status tables, exact source links and restricted-food-benefit budget distinction. Own browser checked both tables, seven contents anchors and FAQ behavior, with fresh intact date paragraphs; final snapshot/review bind the exact result."
+  },
+  "localExclusions": {
+    "status": "PASS",
+    "evidence": "Operator process voice uses the recorded tee-up exemption. No SSN/application collection, case access, personal enrollment/test experience or professional credential is claimed. Unrelated case matches were rejected; state agencies remain the decision makers."
+  }
+}

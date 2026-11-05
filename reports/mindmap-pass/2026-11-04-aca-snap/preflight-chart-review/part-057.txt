@@ -1,0 +1,3 @@
+.claude/commands/mindmap-pass/phase-6-internal-linking.md — characters 9000 onward
+
+ FAIL** — the page does not pass until the date is bumped. The fix is a one-field update; never rewrite the page. Conversely, a bumped date on a page whose rendered content did NOT change is also a fail (date churn fakes freshness) — revert it.

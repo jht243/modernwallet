@@ -1,0 +1,38 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "verdict": "PASS",
+  "packetSha256": "17ffbf00248b9f5ab3459acdc37f99dcc42b2fba4a3c6606451b69bd8ce52354",
+  "renderedSnapshot": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/final-snapshot.json",
+    "sha256": "42c1473619067a0193c917beba106ddbdfc665866bbc1f37799e194c53285e94"
+  },
+  "renderedReview": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/final-render-review.json",
+    "sha256": "fac6e97cddf8b8951d6656836517c910fe1d8044f893141c781b15b48a79e4cb"
+  },
+  "usefulness": {
+    "status": "PASS",
+    "evidence": "Benchmark/contribution/enrollment cap and conditional eligibility resolve the approved calculation question. The268.85 case,400% boundary and100 premium cap materially explain how inputs change federal assistance without fabricating local quotes."
+  },
+  "sourceAndAssumptions": {
+    "status": "PASS",
+    "evidence": "IRS2027 percentage bands/2026FPL and PTC Q26 inputs were inspected. Fresh calculate.py replay matches creator output; independent552-case Decimal comparison reproduced the corrected133% income-path boundary and all stated examples."
+  },
+  "conditionsAndCounterexample": {
+    "status": "PASS",
+    "evidence": "Checked100/400 endpoints, one-cent-above exclusion, unknown/excluded conditions, low benchmark, enrollment cap and tobacco benchmark/enrollment distinction. Household/region/year limits and no tax reconciliation/state subsidy are explicit; IRS Q31 repayment warning remains."
+  },
+  "renderedConsistency": {
+    "status": "PASS",
+    "evidence": "The final article, worked table and tool agree on268.85/281.15 and conditional withholding. Actual independent browser copy/download includes full ACA and MAGI names; the exact final fingerprint is in final-render-review.json."
+  },
+  "localExclusions": {
+    "status": "PASS",
+    "evidence": "Calculated planning evidence does not enable TESTED labels or professional eligibility advice. No fabricated insurer trial, local rating database or client history; unrelated retrieved case records were appropriately rejected."
+  },
+  "replaySha256": "d985840851234abd0e5b342f1827fd3aee398ce36fca3d98a948f8a0b5b450f6",
+  "replayArtifact": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/aca-subsidy-calculator/reviewer-replay.json",
+    "sha256": "7fe82f3f5591062973fc449e53c961ae2b7f40b2efe96f483bfe3080c8705966"
+  }
+}

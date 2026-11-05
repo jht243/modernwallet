@@ -1,0 +1,47 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "route": "/compare/aca-vs-medicaid/",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-medicaid-current.txt",
+      "sha256": "5eccdbf370947aada7cad7c3162a0c7dc52e88753ead5be8c1395fc01dfcd983"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-limited.txt",
+      "sha256": "7244780bbf275cd871952c1c647f49dc98b83a2cba71452379e4254142d11436"
+    }
+  ],
+  "decisions": [
+    {
+      "quote": "Limited-benefit Medicaid, an ordinary Medicaid denial and a work-requirement denial each lead to a different savings answer.",
+      "decision": "Targeted qualification needed",
+      "basis": "The sources support different rules, but limited-benefit coverage and an ordinary denial can both permit savings. Each does not guarantee three distinct outcomes.",
+      "replacement": "Limited-benefit Medicaid, an ordinary Medicaid denial and a work-requirement denial can lead to different savings outcomes.",
+      "resolution": "Writer fix3 applied the exact conditional replacement; verify its final rendered fingerprint before release."
+    },
+    {
+      "quote": "A child may also lose CHIP eligibility if the family keeps the Marketplace plan.",
+      "decision": "Supported conditional claim; retain may",
+      "basis": "Captured HealthCare.gov page explicitly says You may no longer qualify for CHIP if you keep your Marketplace plan. The same source describes CHIP as covering children/pregnant women. The article separately explains that parents and children can follow different coverage paths; it does not say parental Marketplace enrollment automatically disqualifies all children.",
+      "sourceSection": "What if I qualify for Medicaid, but want a Marketplace plan instead?"
+    },
+    {
+      "quote": "HealthCare.gov says to tell the state agency if you want to keep both, and notes that a child may no longer qualify for CHIP if the family keeps the Marketplace plan.",
+      "decision": "Supported conditional source summary",
+      "basis": "The source directly says If you want to keep both, tell your state agency followed by the conditional CHIP warning. Preserve may and the official-agency instruction.",
+      "sourceSection": "What if I qualify for Medicaid, but want a Marketplace plan instead?"
+    },
+    {
+      "quote": "Neither option is the better choice for every household, because eligibility rules decide which coverage comes with financial help.",
+      "decision": "Supported scoped comparative conclusion; retain",
+      "basis": "The approved brief explicitly excludes a universal winner. HealthCare.gov establishes state/category variation and free or low-cost Medicaid for eligible groups; IRS/HealthCare.gov condition Marketplace savings on income, other coverage and filing/status rules, including limited-benefit and work-denial distinctions. The article then tells eligible readers to obtain an official result, compare actual premiums/provider networks when Marketplace coverage applies, and confirm replacement coverage. This is a supported decision rule, not an evasive purchase verdict, empirical superiority claim or product test.",
+      "sourceSections": [
+        "HealthCare.gov Medicaid and CHIP coverage: state/category conditions and mixed-family coverage",
+        "IRS PTC Q5 and Medicaid initial-assessment exception",
+        "HealthCare.gov limited-benefit Medicaid lookup"
+      ],
+      "approvedScope": "approval-manifest.json N4: no universal winner, insurer ranking, medical recommendation or national Medicaid eligibility calculator."
+    }
+  ],
+  "status": "source-guard-adjudication-not-final-rendered-PASS"
+}

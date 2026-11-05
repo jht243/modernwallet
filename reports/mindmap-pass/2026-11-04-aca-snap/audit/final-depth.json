@@ -1,0 +1,44 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "method": "Reader-facing source intro/sections/FAQ answers/verdict/common-mistake and comparison answer cells. Title, metadata, headings, CTA, nav, schema and code excluded.",
+  "pages": [
+    {
+      "slug": "snap-benefits-calculator",
+      "proseBodyWords": 2185,
+      "floor": 1200,
+      "draftSha256": "da8044ae5f34c7e0bdb14b1760dbf15f637db1e6a54bc72d662221bc44ed1e9b",
+      "status": "depth-floor-cleared"
+    },
+    {
+      "slug": "aca-subsidy-calculator",
+      "proseBodyWords": 2617,
+      "floor": 1200,
+      "draftSha256": "62c2cc2d2ad711efaccef1b9bb4123002d34237f7ecaffa2c063a66a07376ee8",
+      "status": "depth-floor-cleared"
+    },
+    {
+      "slug": "snap-vs-wic",
+      "proseBodyWords": 2220,
+      "floor": 1500,
+      "draftSha256": "792af8e7a1048a42390ae15e50a0434629bb0e34ed984ed133a02a9d7f9c436d",
+      "status": "depth-floor-cleared"
+    },
+    {
+      "slug": "aca-vs-medicaid",
+      "proseBodyWords": 2402,
+      "floor": 1500,
+      "draftSha256": "13170e72233cfef18beaecbcbf2ed41ccf0834e5ecd50cdff242c72564510c60",
+      "status": "depth-floor-cleared"
+    },
+    {
+      "slug": "how-to-apply-for-food-stamps",
+      "proseBodyWords": 1918,
+      "floor": 1200,
+      "draftSha256": "5b0cebb22db4d2f1f73b3bbf426781597436bec4d5d237af271b57b00d2bb5b9",
+      "status": "depth-floor-cleared"
+    }
+  ],
+  "passing": 5,
+  "failing": 0,
+  "median": 2220
+}

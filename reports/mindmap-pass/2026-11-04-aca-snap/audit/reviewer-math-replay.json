@@ -1,0 +1,24 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "status": "arithmetic-replay-matched",
+  "scope": "Independent deterministic Decimal formula comparison only; not final page/render/editorial approval.",
+  "cases": 552,
+  "comparisons": 3000,
+  "mismatches": [],
+  "codeSha256": "7e93453fc3166bc79e75ddd1376c3d9fa847db8e5ec61a192fe6a1e7b0c18ede",
+  "expectedCasesSha256": "178cd759260f4b0d3bae165a451a490552925a3f12df5c4e6788dac22233bed0",
+  "independentFormulaSha256": "3a884556f463892704bef854b9c0d84ea9d30353fa894794cad7d4bf358f3fe6",
+  "semanticObservations": [
+    "SNAP ordinary unknown high-net amounts suppressed; confirmed state eligibility permits conditional minimum. Excluded always suppresses.",
+    "ACA unknown/excluded and below100/above400 FPL credit withheld, including all8 household boundaries.",
+    "133% boundary deliberately jumps from2.15% to3.23% per published2027 table; continuous interpolation within remaining bands.",
+    "No tax-return rounding or tax reconciliation modeled; full-precision planning arithmetic must be described accordingly."
+  ],
+  "reviewedSources": [
+    "snap-cola.txt",
+    "snap-eligibility.txt",
+    "irs-2027.txt",
+    "irs-ptc.txt",
+    "irs-8962-tools.txt"
+  ]
+}

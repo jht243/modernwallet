@@ -1,0 +1,12 @@
+{
+  "actor": "benefits_content",
+  "source": "audit/n3-findings.json mechanical formatting instructions",
+  "draft": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/snap-vs-wic.json",
+  "beforeSha256": "176144efdec7aae5188634dd33e82cd6d21dd813d7f6bc4f72e4dd59f983a61d",
+  "afterSha256": "792af8e7a1048a42390ae15e50a0434629bb0e34ed984ed133a02a9d7f9c436d",
+  "changes": [
+    "Verified zero literal double-asterisk markers after API fix; no additional marker removal needed",
+    "Paragraphbreak before first WIC expansion to retain max3sentences; allwords unchanged"
+  ],
+  "scope": "Formatting only, still subject to independent exactrenderreview"
+}

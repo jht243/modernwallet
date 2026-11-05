@@ -1,0 +1,440 @@
+{
+ "rows": [
+  {
+   "keyword": "aca subsidy calculator",
+   "verdict": "contested",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.kff.org",
+    "www.healthcare.gov",
+    "healthcareinsider.com",
+    "www.youtube.com",
+    "www.blueshieldca.com",
+    "www.uhc.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "healthjournalism.org",
+    "berkeleycollege.libguides.com",
+    "www.kff.org",
+    "google.com",
+    "google.com",
+    "google.com",
+    "obamacarefacts.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "related_searches": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "ACA subsidy calculator 2027",
+    "ACA subsidy calculator 2026",
+    "ACA subsidy income limits 2026",
+    "Healthcare gov income calculator",
+    "Estimated household income calculator",
+    "Healthcare Marketplace income limits 2026",
+    "How to calculate household income for health insurance",
+    "Estimated income amount Calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "5/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.kff.org, www.healthcare.gov, healthcareinsider.com, www.youtube.com",
+   "se_results_count": 149
+  },
+  {
+   "keyword": "aca subsidy income limits",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.healthinsurance.org",
+    "www.kff.org",
+    "hummingbirdins.com",
+    "hsaforamerica.com",
+    "www.wellpoint.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.healthinsurance.org",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.healthreformbeyondthebasics.org"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "Are there still subsidies for health insurance?",
+    "What is the average cost of health insurance?",
+    "How much money can you make and still be eligible for Medicare?",
+    "What is a tax credit for health insurance?",
+    "What is the most overlooked tax deduction?",
+    "Who gets the new $6000 tax break?"
+   ],
+   "related_searches": [
+    "Aca subsidy income limits calculator",
+    "ACA subsidy income limits 2026",
+    "ACA subsidy cliff 2026 update",
+    "ACA subsidies",
+    "ACA enhanced subsidies",
+    "Premium tax credit income limits 2026",
+    "ACA subsidy cliff 2026 family of 2",
+    "ACA subsidy calculator 2026"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "7/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.healthinsurance.org, www.kff.org, hummingbirdins.com, hsaforamerica.com",
+   "se_results_count": 174
+  },
+  {
+   "keyword": "snap benefits calculator",
+   "verdict": "contested",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "www.snapscreener.com",
+    "www.snapscreener.com",
+    "hungerandpoverty.web.baylor.edu",
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.snapscreener.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "related_searches": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "Food stamp eligibility calculator 2026",
+    "SNAP eligibility - income chart",
+    "SNAP calculator app",
+    "Food stamp eligibility calculator 2025",
+    "Mo SNAP calculator",
+    "Food Stamp eligibility calculator NM",
+    "Mi SNAP Calculator",
+    "SNAP eligibility quiz"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "5/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present",
+   "se_results_count": 93
+  },
+  {
+   "keyword": "snap benefits income limits",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.feedingtexas.org",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "What are the income limits for receiving SNAP benefits in Pennsylvania?",
+    "How do I apply for food stamps in Tennessee?",
+    "What are the income limits for SNAP in Colorado?",
+    "What are the requirements to be eligible for SNAP Assistance in Michigan?",
+    "What is the income limit for receiving SNAP benefits in Michigan in 2026?",
+    "What is the maximum you can make and still get SNAP benefits?"
+   ],
+   "related_searches": [
+    "MI food stamps income limit",
+    "Food stamps family of 4 income limit",
+    "Food stamp income limit PA 2026",
+    "SNAP benefits income limits PA",
+    "TN SNAP income limits 2026",
+    "Yourtexasbenefits apply online for food stamps",
+    "SNAP eligibility calculator",
+    "SNAP benefits income limits TN"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "8/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present",
+   "se_results_count": 118
+  },
+  {
+   "keyword": "apply for food stamps",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "wholesomewavegeorgia.org",
+    "google.com",
+    "google.com",
+    "google.com",
+    "wholesomewavegeorgia.org",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "related_searches": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "apply for food stamps near california",
+    "apply for food stamps near texas",
+    "Apply for Food Stamps online GA",
+    "Food stamp application form online",
+    "Apply for food stamps memphis TN",
+    "Www Gateway GA Gov Food Stamps application",
+    "How to apply for Food Stamps in GA",
+    "TN gov SNAP application online"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "7/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present",
+   "se_results_count": 42
+  },
+  {
+   "keyword": "snap vs wic",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.facebook.com",
+    "finance.yahoo.com",
+    "www.bread.org",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "Are food stamps the same as SNAP?",
+    "What foods are approved for WIC in Connecticut?",
+    "What is the highest income to qualify for SNAP?",
+    "How much do you get for one person on SNAP?",
+    "Why is rotisserie chicken not covered by EBT?",
+    "Do people get $1000 in food stamps?"
+   ],
+   "related_searches": [
+    "SNAP vs WIC vs food stamps",
+    "SNAP vs EBT",
+    "WIC CT",
+    "WIC ct income guidelines",
+    "Do i qualify for WIC in ct",
+    "How to apply for WIC in CT",
+    "WIC income guidelines ct 2026",
+    "WIC program"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "6/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present",
+   "se_results_count": 125
+  },
+  {
+   "keyword": "aca vs medicaid",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "www.priorityhealth.com",
+    "healthplansofnc.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "What is Obamacare insurance?",
+    "What is a coverage gap in health insurance?",
+    "What disqualifies you for Medicaid?",
+    "What is a disadvantage of the Affordable Care Act?",
+    "Why are Republicans trying to get rid of the ACA?",
+    "How much does Obamacare cost taxpayers each year?"
+   ],
+   "related_searches": [
+    "Aca vs medicaid vs medicare",
+    "Aca vs medicaid pros and cons",
+    "Aca vs medicaid cost",
+    "ACA vs Obamacare approval",
+    "What is Obamacare",
+    "ACA vs private insurance cost",
+    "Can you have Medicaid and Marketplace insurance at the same time",
+    "Is Marketplace insurance Medicaid or Medicare"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "7/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present",
+   "se_results_count": 106
+  },
+  {
+   "keyword": "snap benefits for seniors",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "wegotyouillinois.org",
+    "dhr.alabama.gov",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "What is the highest income to qualify for SNAP?",
+    "Why are food stamps being cut?",
+    "What can you no longer buy with EBT in 2026?",
+    "Why is rotisserie chicken not covered by EBT?",
+    "Does McDonald's take EBT hot meals?",
+    "Why are people avoiding Walmart rotisserie chicken?"
+   ],
+   "related_searches": [
+    "Food stamp application online",
+    "Apply for food stamps mobile al",
+    "KY SNAP benefits",
+    "KY SNAP phone number",
+    "Kynect KY gov food stamps",
+    "Myalabama gov Food stamps",
+    "Al Food stamp application online",
+    "How to apply for food stamps In KY"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "7/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present",
+   "se_results_count": 85
+  }
+ ],
+ "cost": "DataForSEO: 8 calls, $0.01675 of $2.00 budget"
+}

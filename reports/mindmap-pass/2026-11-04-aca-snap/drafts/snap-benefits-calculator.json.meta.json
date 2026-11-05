@@ -1,0 +1,395 @@
+{
+ "slug": "snap-benefits-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 2404,
+ "floor": 1200,
+ "input_tokens": 52345,
+ "output_tokens": 23481,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.679,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2508,
+  "numbers_not_in_facts": [
+   "200",
+   "400",
+   "685.5"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "sections[4].body",
+     "quote": "The second column raises shelter costs to $1,400, and both columns are our own arithmetic on the FY2027 figures using the calculator's default inputs.",
+     "replacement": "The second column raises shelter costs to $1,400, and both columns are our own arithmetic on the FY2027 figures.",
+     "type": "contradicted",
+     "why": "Default is $1,200 shelter; the $1,400 column is not a default input."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Most states send an eligibility notice within 30 days, and a household with less than $100 in liquid resources and $150 in monthly gross income may get benefits within 7 days.",
+     "replacement": "In most cases, the state agency sends an eligibility notice within 30 days, and a household with less than $100 in liquid resources and $150 in monthly gross income may get benefits within 7 days.",
+     "type": "unsupported",
+     "why": "Source says 'in most cases', not 'most states'."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2509
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-04T21:47:15-0500",
+    "findings_file": "reports/mindmap-pass/2026-11-04-aca-snap/prompts/snap-initial.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "A Supplemental Nutrition Assistance Program (SNAP) benefits calculator estimates a full-month food benefit by subtracting 30% of your household's SNAP net income, rounded up, from the maximum allotment for your household size.",
+      "replacement": "If the state finds a household eligible, its full-month SNAP benefit is the maximum allotment minus 30% of SNAP net income, rounded up.",
+      "type": "1. Opener overloaded",
+      "why": "First sentence too long; shortened while keeping formula conditional on state eligibility."
+     },
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we built this one on the federal fiscal year (FY) 2027 amounts, which apply from October 1, 2026, through September 30, 2027.",
+      "replacement": "At ModernWallet, we calculated the hypothetical full-month cases on this page from the federal fiscal year (FY) 2027 amounts, which apply from October 1, 2026, through September 30, 2027, and the worked-example table below lets you check each step.",
+      "type": "8. Visible provenance",
+      "why": "'Built this one' is not provenance; state our calculation and the checkable method table."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "We did not copy the example on FNA's eligibility page.",
+      "replacement": "",
+      "type": "2. Delete FNA example paragraph",
+      "why": "Internal preparation criticism is unnecessary for visitors."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "That example subtracts a $217 standard deduction for four people while the FY2027 deduction table lists $229, and its adjusted income changes from $1,171 to $1,165 between steps.",
+      "replacement": "",
+      "type": "2. Delete FNA example paragraph",
+      "why": "Part of the paragraph to delete; no replacement wanted."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Enter either your actual monthly bills or the amount your [state SNAP agency](https://fns-prod.azureedge.us/snap/state-directory) approves.",
+      "replacement": "Enter only the utility amount your [state SNAP agency](https://fns-prod.azureedge.us/snap/state-directory) approves, and do not add actual bills on top of it.",
+      "type": "3. Utility input",
+      "why": "Input must be the state-approved utility allowance, without inviting double-counting."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Our arithmetic shows the shelter difference for the four-person household from the worked example with shelter costs raised to $1,600.",
+      "replacement": "",
+      "type": "4. Unexecuted $1,600 scenario",
+      "why": "Scenario not in the executed calculation record."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Without an elderly or disabled member, the shelter deduction stops at $769 and the benefit is $842.",
+      "replacement": "",
+      "type": "4. Unexecuted $1,600 scenario",
+      "why": "Unexecuted numerical result."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "With an elderly or disabled member, the full $914.50 of excess shelter comes off.",
+      "replacement": "",
+      "type": "4. Unexecuted $1,600 scenario",
+      "why": "Unexecuted numerical result; the uncapped rule is already stated in the bullets."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Net income drops to $456.50, 30% rounds up to $137, and the benefit becomes $886.",
+      "replacement": "",
+      "type": "4. Unexecuted $1,600 scenario",
+      "why": "Unexecuted numerical result."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "The shelter deduction stops at $769 once shelter costs pass $1,454.50 ($685.50 plus $769), and from that point this household's benefit stays at $842 however high rent goes.",
+      "replacement": "Without an elderly or disabled member, the excess shelter deduction is capped at $769, so shelter costs beyond that cap no longer raise the benefit.",
+      "type": "5. Unexecuted cap-threshold calculation",
+      "why": "Remove the unexecuted $1,454.50/$842 figures; explain the cap in sourced words."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "That applies only when the others they live with have income no higher than 165% of the poverty level, which is $4,538 a month for a household of four in FY2027.",
+      "replacement": "That applies only when the others they live with have income no higher than 165% of the poverty level, according to [FNA](https://fns-prod.azureedge.us/snap/recipient/eligibility).",
+      "type": "6. Remove $4,538 threshold",
+      "why": "Keep the 165% rule with attribution; drop the extra calculated figure."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "- College students ages 18 through 49 enrolled at least half time, who are generally not eligible unless they meet specific exemptions.",
+      "replacement": "- Student eligibility, which the [FNA eligibility page](https://fns-prod.azureedge.us/snap/recipient/eligibility) covers.",
+      "type": "7. Remove student age rule",
+      "why": "Detailed exemption rule removed; keep a general statement with the agency link."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Then run your own numbers in the SNAP benefits calculator above and take the downloaded result to your state application.",
+      "replacement": "Allowed deductions and net income set a conditional amount, only your state agency decides eligibility, and a different state allowance, first-month date, or cost-of-living update changes the result, so run your own numbers above and take the downloaded result to your state application.",
+      "type": "9. Closing takeaway",
+      "why": "Must state conditional amount, agency decides eligibility, and what changes the result, plus the next step."
+     },
+     {
+      "id": "toolHeading",
+      "quote": "Estimate your SNAP food benefit",
+      "replacement": "Estimate Your SNAP Food Benefit",
+      "type": "10. Title Case heading",
+      "why": "Tool heading must use Title Case."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "It is $31 to $49 in Alaska depending on area, $40 in Hawaii, $36 in Guam, and $32 in the U.S. Virgin Islands.",
+      "replacement": "Other areas use the amounts in the [FY2027 COLA tables](https://fns-prod.azureedge.us/snap/allotment/cola).",
+      "type": "11. Out-of-scope FAQ amounts",
+      "why": "Remove AK/HI/territory amounts; link the official COLA tables instead."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Households of 9 to 17 add $225 per extra person.",
+      "replacement": "Households of nine or more can check the [FY2027 COLA tables](https://fns-prod.azureedge.us/snap/allotment/cola).",
+      "type": "11. Out-of-scope FAQ amounts",
+      "why": "Households of 9 or more are out of scope; link the official tables instead."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 2402,
+    "flags": []
+   },
+   {
+    "round": 2,
+    "at": "2026-11-04T21:59:02-0500",
+    "findings_file": "reports/mindmap-pass/2026-11-04-aca-snap/audit/n1-findings.json",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "If the state finds a household eligible, its full-month SNAP benefit is the maximum allotment minus 30% of SNAP net income, rounded up.",
+      "replacement": "For an eligible household, the full-month SNAP benefit is the maximum allotment minus 30% of SNAP net income, with that 30% rounded up.",
+      "type": "Ambiguous rounding in intro",
+      "why": "Rounding applies to the 30% income share, not the benefit."
+     },
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we calculated the hypothetical full-month cases on this page from the federal fiscal year (FY) 2027 amounts, which apply from October 1, 2026, through September 30, 2027, and the worked-example table below lets you check each step.",
+      "replacement": "At ModernWallet, we calculated these hypothetical full-month cases using federal fiscal year (FY) 2027 amounts. FY2027 runs from October 1, 2026, through September 30, 2027. The worked-example table below shows each step.",
+      "type": "39-word stacked intro sentence",
+      "why": "Splits ownership, fiscal dates and method into separate readable sentences."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "and most households must stay under both.",
+      "replacement": "and most households must meet both limits.",
+      "type": "Income limit excludes threshold",
+      "why": "FNA says households must meet both limits; the threshold itself qualifies."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "need gross monthly income under 130% of the poverty level and net income under 100%.",
+      "replacement": "need to meet both the gross limit of 130% of the poverty level and the net limit of 100%.",
+      "type": "FAQ income limit excludes threshold",
+      "why": "Uses FNA's wording, which treats the limit itself as passing."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Under BBCE, a household still needs income low enough to produce a SNAP benefit and must still meet the non-financial rules.",
+      "replacement": "Under BBCE, household income still must be low enough to produce a SNAP benefit. Non-financial rules also apply.",
+      "type": "Long-sentence run in income limits",
+      "why": "Splitting the sentence breaks a run of long sentences without adding anything."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "The household only has to meet the net income limit, so the gross income test does not apply.",
+      "replacement": "The gross income test does not apply. The net income limit still applies.",
+      "type": "Long-sentence run in older-member rules",
+      "why": "Two short sentences carry the same supported rule."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Your estimate changes if your state uses a set utility amount, allows the child support deduction, or applies BBCE limits.",
+      "replacement": "A state set utility amount, the child support deduction, or BBCE limits can change your estimate.",
+      "type": "Second long-sentence run",
+      "why": "A shorter restatement of the same conditions breaks the long-sentence run."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Save the calculator's download with your inputs, then apply through the SNAP agency in the state where you live.",
+      "replacement": "Save your inputs with the calculator's download. Apply through the SNAP agency in the state where you live.",
+      "type": "Long-sentence run in next step",
+      "why": "The sentence splits naturally into two steps."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Allowed deductions and net income set a conditional amount, only your state agency decides eligibility, and a different state allowance, first-month date, or cost-of-living update changes the result, so run your own numbers above and take the downloaded result to your state application.",
+      "replacement": "Allowed deductions and net income set a conditional amount. Only your state agency decides eligibility. A different state allowance, first-month date, or cost-of-living update changes the result. Run your own numbers above and take the downloaded result to your state application.",
+      "type": "43-word comma splice",
+      "why": "Splits four chained clauses into short sentences with the same meaning."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Work requirements and non-citizen eligibility, which the Working Families Tax Cuts Act changed.",
+      "replacement": "Work requirements and non-citizen eligibility, which the [Working Families Tax Cuts Act](https://fns-prod.azureedge.us/snap/recipient/eligibility) changed.",
+      "type": "Named law lacks inline source link",
+      "why": "Links the first mention of the law to the FNA page that names it."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "Mechanical: empty commonMistakes section, lowercase heading",
+      "why": "This section is not in the page units; it cannot be fixed in place here.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "Mechanical: Plan the bigger picture H2 capitalization",
+      "why": "This heading is not in the page units; it cannot be fixed in place here.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "Mechanical: tool label USDA FY2027 amounts",
+      "why": "This linked tool label is not in the page units; it cannot be fixed in place here.",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[2].body",
+       "quote": "Net income is gross income minus the allowed deductions from the six calculator steps.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2384,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Net income is gross income minus the allowed deductions from the six calculator '"
+    ]
+   },
+   {
+    "round": 3,
+    "at": "2026-11-04T22:07:48-0500",
+    "findings_file": "reports/mindmap-pass/2026-11-04-aca-snap/audit/n1-fix2-followup.json",
+    "applied": [
+     {
+      "id": "faqs[2].answer",
+      "quote": "Your amount is that maximum minus 30% of your net income, rounded up, so a household with $0 net income gets the full maximum.",
+      "replacement": "Subtract 30% of net income, rounded up to the next whole dollar, from the maximum allotment. An otherwise eligible household with $0 net income receives the full maximum.",
+      "type": "Ambiguous rounding in FAQ",
+      "why": "'Rounded up' seems to modify the result rather than the 30% share; the source rounds the 30% up."
+     },
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we calculated these hypothetical full-month cases using federal fiscal year (FY) 2027 amounts.",
+      "replacement": "At ModernWallet, we calculated these hypothetical full-month cases for the SNAP benefits calculator using federal fiscal year (FY) 2027 amounts.",
+      "type": "Primary phrase missing from first paragraph",
+      "why": "Adds the exact primary phrase and keeps the method attribution in the second sentence."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Run your own numbers above and take the downloaded result to your state application.",
+      "replacement": "Run your numbers in the SNAP benefits calculator and take the downloaded result to your state application.",
+      "type": "Primary phrase missing from last body action",
+      "why": "Restores the exact primary phrase in the closing action with the same meaning."
+     },
+     {
+      "id": "introText",
+      "quote": "The worked-example table below shows each step.",
+      "replacement": "The worked-example table below shows each step.",
+      "type": "Intro paragraph exceeds 3 sentences",
+      "why": "A paragraph break splits five sentences into three and two."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "[FY2027 COLA tables]",
+      "replacement": "[FY2027 cost-of-living adjustment (COLA) tables]",
+      "type": "COLA unexpanded",
+      "why": "Expands the acronym in the link text and keeps the existing URL."
+     },
+     {
+      "id": "sections[1].heading",
+      "quote": "Which Income and Deductions to Enter",
+      "replacement": "Income and Deductions for the SNAP Benefits Calculator",
+      "type": "Primary phrase needed in section headings",
+      "why": "Adds the primary keyword to the heading without changing the section content."
+     },
+     {
+      "id": "sections[5].heading",
+      "quote": "What the Estimate Cannot Decide",
+      "replacement": "What the SNAP Benefits Calculator Cannot Decide",
+      "type": "Second primary-phrase heading",
+      "why": "Adds the primary keyword and keeps the same meaning."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 2404,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 239.0,
+ "response_id": "msg_011Cgj1YHTLCTzinsrVCTNvd",
+ "generated_at": "2026-11-04T21:45:52-0500"
+}

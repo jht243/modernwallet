@@ -1,0 +1,109 @@
+{
+  "actor": "benefits_content",
+  "status": "Phase3 generated candidates; independent exact rendered Phase4 remains parent-owned",
+  "modules": [
+    "src/data/benefits-spokes.ts",
+    "src/data/benefits-comparisons.ts",
+    "src/data/benefits-guides.ts"
+  ],
+  "moduleExports": [
+    "BENEFIT_SPOKES",
+    "BENEFIT_COMPARISONS",
+    "BENEFIT_GUIDES"
+  ],
+  "rows": [
+    {
+      "slug": "snap-benefits-calculator",
+      "words": 2105,
+      "floor": 1200,
+      "measured": "source prose incl table values excludes headings/meta/disclaimer",
+      "draft": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/snap-benefits-calculator.json",
+      "draftSha256": "da8044ae5f34c7e0bdb14b1760dbf15f637db1e6a54bc72d662221bc44ed1e9b",
+      "model": "claude-opus-5-5",
+      "fallbackUsed": false,
+      "fallbackReason": null,
+      "writerMeta": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/snap-benefits-calculator.json.meta.json",
+      "fixRounds": 3,
+      "guardFlags": [],
+      "latestFixFlags": [],
+      "substantiveReworks": 2,
+      "reworkReceipt": "internal/n1-rework1.json",
+      "additionalProvenance": [
+        "drafts/n1-base-snippets.md.meta.json",
+        "drafts/n1-rhythm-rework2.md.meta.json"
+      ],
+      "reworkReceipts": [
+        "internal/n1-rework1.json",
+        "internal/n1-rework2.json"
+      ]
+    },
+    {
+      "slug": "aca-subsidy-calculator",
+      "words": 2528,
+      "floor": 1200,
+      "measured": "source prose incl table values excludes headings/meta/disclaimer",
+      "draft": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/aca-subsidy-calculator.json",
+      "draftSha256": "62c2cc2d2ad711efaccef1b9bb4123002d34237f7ecaffa2c063a66a07376ee8",
+      "model": "claude-opus-5-5",
+      "fallbackUsed": false,
+      "fallbackReason": null,
+      "writerMeta": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/aca-subsidy-calculator.json.meta.json",
+      "fixRounds": 3,
+      "guardFlags": [],
+      "latestFixFlags": []
+    },
+    {
+      "slug": "snap-vs-wic",
+      "words": 2220,
+      "floor": 1500,
+      "measured": "source prose incl table values excludes headings/meta/disclaimer",
+      "draft": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/snap-vs-wic.json",
+      "draftSha256": "792af8e7a1048a42390ae15e50a0434629bb0e34ed984ed133a02a9d7f9c436d",
+      "model": "claude-opus-5-5",
+      "fallbackUsed": false,
+      "fallbackReason": null,
+      "writerMeta": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/snap-vs-wic.json.meta.json",
+      "fixRounds": 2,
+      "guardFlags": [],
+      "latestFixFlags": []
+    },
+    {
+      "slug": "aca-vs-medicaid",
+      "words": 2402,
+      "floor": 1500,
+      "measured": "source prose incl table values excludes headings/meta/disclaimer",
+      "draft": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/aca-vs-medicaid.json",
+      "draftSha256": "13170e72233cfef18beaecbcbf2ed41ccf0834e5ecd50cdff242c72564510c60",
+      "model": "claude-opus-5-5",
+      "fallbackUsed": false,
+      "fallbackReason": null,
+      "writerMeta": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/aca-vs-medicaid.json.meta.json",
+      "fixRounds": 3,
+      "guardFlags": [
+        "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Neither option is the better choice for every household, because eligibility rul'"
+      ],
+      "latestFixFlags": [
+        "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Neither option is the better choice for every household, because eligibility rul'"
+      ]
+    },
+    {
+      "slug": "how-to-apply-for-food-stamps",
+      "words": 1858,
+      "floor": 1200,
+      "measured": "source prose incl table values excludes headings/meta/disclaimer",
+      "draft": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/how-to-apply-for-food-stamps.json",
+      "draftSha256": "5b0cebb22db4d2f1f73b3bbf426781597436bec4d5d237af271b57b00d2bb5b9",
+      "model": "claude-opus-5-5",
+      "fallbackUsed": false,
+      "fallbackReason": null,
+      "writerMeta": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/how-to-apply-for-food-stamps.json.meta.json",
+      "fixRounds": 3,
+      "guardFlags": [],
+      "latestFixFlags": []
+    }
+  ],
+  "evidence": "evidence/<slug>/evidence.json and growth.json; shared executable calculate.py with inputs.json/calculation-output.json",
+  "preflight": "preflight-write-content completed32parts own actor; writer-preflight.json reused actualsame-runcheck",
+  "testing": "Excluded financial/program information; ordinary calculated/reported claims only",
+  "publication": "No worker commit/push/deploy; root owns reviews/links/build/liveverification"
+}

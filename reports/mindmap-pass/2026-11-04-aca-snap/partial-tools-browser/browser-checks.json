@@ -1,0 +1,73 @@
+{
+  "base": "http://127.0.0.1:4396",
+  "startedAt": "2026-11-05T02:56:27.685Z",
+  "externalRequestsBlocked": true,
+  "pages": [
+    {
+      "path": "/budget/snap-benefits-calculator/",
+      "title": "SNAP Benefits Calculator for a Monthly Food Budget",
+      "headings": [
+        "How SNAP Benefits Are Calculated",
+        "Which Income and Deductions to Enter",
+        "SNAP Income Limits Are a Federal Reference",
+        "SNAP Benefits for Older or Disabled Members",
+        "A Full-Month SNAP Worked Example",
+        "What the Estimate Cannot Decide",
+        "Your Next Step",
+        "Frequently Asked Questions",
+        "Sources",
+        "Plan the Bigger Picture"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [
+        "Default766",
+        "Shelter1400→826",
+        "High-income unknown suppresses amount",
+        "State-confirmed conditional minimum25",
+        "Unsupported region blocks result",
+        "Clipboard contains inputs and result",
+        "Downloaded text contains inputs and result"
+      ],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/partial-tools-browser/dom/budget/snap-benefits-calculator/index.html",
+      "htmlLength": 76678
+    },
+    {
+      "path": "/budget/aca-subsidy-calculator/",
+      "title": "ACA Subsidy Calculator for 2027 Marketplace Premiums",
+      "headings": [
+        "How ACA Subsidies Are Calculated",
+        "The Income to Enter for 2027",
+        "ACA Subsidy Income Limits for 2027",
+        "The Benchmark and Your Chosen Plan",
+        "A Worked Federal Premium-Credit Calculation",
+        "When the ACA Estimate Does Not Apply",
+        "Updating Income Before Tax Reconciliation",
+        "Frequently Asked Questions",
+        "Sources",
+        "Plan the Bigger Picture"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [
+        "Unknown eligibility suppresses credit",
+        "Confirmed default268.85/net281.15",
+        "Exact133%correct3.23",
+        "400%credit262.80",
+        "Above400%withholds estimate",
+        "Clipboard contains inputs and result",
+        "Downloaded text contains inputs and result"
+      ],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/partial-tools-browser/dom/budget/aca-subsidy-calculator/index.html",
+      "htmlLength": 80656
+    }
+  ],
+  "checks": [],
+  "pageErrors": [],
+  "status": "PASS",
+  "completedAt": "2026-11-05T02:56:32.933Z"
+}

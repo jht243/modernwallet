@@ -1,3 +1,4 @@
+import { BENEFIT_SPOKES } from "./benefits-spokes";
 import type { SpokeEntry } from "./types";
 import { FLEET_TOOL_SPOKES } from "./spokes-fleet-tools";
 import { AUTO_SPOKES } from "./spokes-auto";
@@ -35,6 +36,7 @@ export const SPOKES: SpokeEntry[] = [
   ...PORTFOLIO_SPOKES,
   ...NET_WORTH_SPOKES,
   ...BUDGET_SPOKES,
+  ...BENEFIT_SPOKES,
   ...TAX_RESOLUTION_SPOKES,
   ...ESTATE_PLANNING_SPOKES,
   ...PROBATE_SPOKES,

@@ -1,0 +1,27 @@
+{
+  "reason": "During execution, source guard identified missing direct support for two already approved N4 FAQ definitions. Supplement inspected before targeted rewrite, without changing approved scope. Original preparation artifacts preserved.",
+  "sources": [
+    {
+      "id": "hc-expansion-gap",
+      "url": "https://www.healthcare.gov/medicaid-chip/medicaid-expansion-and-you/",
+      "resolvedUrl": "https://www.healthcare.gov/medicaid-chip/medicaid-expansion-and-you/",
+      "checked": "2026-11-04",
+      "status": 200,
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-expansion-gap.txt",
+      "sha256": "303b0c3419c9857ffda5168e90fb6c4f9583669501230f751f883b91ba0472e6"
+    },
+    {
+      "id": "nyc-aca-definition",
+      "url": "https://www.nyc.gov/site/ochia/your-rights/affordable-care-act.page",
+      "resolvedUrl": "https://www.nyc.gov/site/ochia/your-rights/affordable-care-act.page",
+      "checked": "2026-11-04",
+      "status": 200,
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/nyc-aca-definition.txt",
+      "sha256": "22a642b955563fb054a11c6eb6d8bd6a63daf4fdfeb378d9dc2b44c2b56f7f19"
+    }
+  ],
+  "facts": {
+    "nyc-aca-definition": "Official NYC Office of Citywide Health Insurance Access explicitly identifies Obamacare as another name for the Affordable Care Act. Use only this naming fact; not its historical responsibilities or state specifics.",
+    "hc-expansion-gap": "Official federal page explains that in non-expansion states some adults below100%FPL who do not qualify under state Medicaid rules fall into a coverage gap: too much income for state Medicaid and too little for ordinary Marketplace savings. Still apply: category and other state options vary. Current page also includes2027 work-denial savings restriction. Avoid universal eligibility verdict."
+  }
+}

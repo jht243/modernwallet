@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "beforeSnapshot": "b99d037d8b8116168a6c6e4b0d5e660cea5077f77a958320da0fbc55a688d894",
+  "afterSnapshot": "fab596725851d998fc23e14a28e3cd3d52700b177908f4ee3025802a8567cb7b",
+  "visibleTextChanged": [],
+  "structureChanged": [
+    "/budget/snap-benefits-calculator/",
+    "/compare/snap-vs-wic/",
+    "/guides/how-to-apply-for-food-stamps/"
+  ],
+  "routesInspected": 13
+}

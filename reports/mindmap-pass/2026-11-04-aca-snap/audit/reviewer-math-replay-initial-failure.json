@@ -1,0 +1,305 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "status": "FAIL",
+  "scope": "Independent deterministic Decimal formula comparison only; not final page/render/editorial approval.",
+  "cases": 552,
+  "comparisons": 3000,
+  "mismatches": [
+    {
+      "index": 249,
+      "key": "percentage",
+      "expected": 3.23,
+      "actual": 2.15,
+      "input": {
+        "household": 1,
+        "income": 21226.8,
+        "benchmark": 340.63,
+        "enrollment": 311.68,
+        "region": "contiguous",
+        "eligibility": "unknown"
+      }
+    },
+    {
+      "index": 249,
+      "key": "contribution",
+      "expected": 57.13547,
+      "actual": 38.031349999999996,
+      "input": {
+        "household": 1,
+        "income": 21226.8,
+        "benchmark": 340.63,
+        "enrollment": 311.68,
+        "region": "contiguous",
+        "eligibility": "unknown"
+      }
+    },
+    {
+      "index": 250,
+      "key": "percentage",
+      "expected": 3.23,
+      "actual": 2.15,
+      "input": {
+        "household": 1,
+        "income": 21226.8,
+        "benchmark": 1937.69,
+        "enrollment": 127.48,
+        "region": "contiguous",
+        "eligibility": "confirmed"
+      }
+    },
+    {
+      "index": 250,
+      "key": "contribution",
+      "expected": 57.13547,
+      "actual": 38.031349999999996,
+      "input": {
+        "household": 1,
+        "income": 21226.8,
+        "benchmark": 1937.69,
+        "enrollment": 127.48,
+        "region": "contiguous",
+        "eligibility": "confirmed"
+      }
+    },
+    {
+      "index": 251,
+      "key": "percentage",
+      "expected": 3.23,
+      "actual": 2.15,
+      "input": {
+        "household": 1,
+        "income": 21226.8,
+        "benchmark": 1088.21,
+        "enrollment": 883.16,
+        "region": "contiguous",
+        "eligibility": "excluded"
+      }
+    },
+    {
+      "index": 251,
+      "key": "contribution",
+      "expected": 57.13547,
+      "actual": 38.031349999999996,
+      "input": {
+        "household": 1,
+        "income": 21226.8,
+        "benchmark": 1088.21,
+        "enrollment": 883.16,
+        "region": "contiguous",
+        "eligibility": "excluded"
+      }
+    },
+    {
+      "index": 327,
+      "key": "percentage",
+      "expected": 3.23,
+      "actual": 2.15,
+      "input": {
+        "household": 3,
+        "income": 36335.6,
+        "benchmark": 1503.34,
+        "enrollment": 450.98,
+        "region": "contiguous",
+        "eligibility": "unknown"
+      }
+    },
+    {
+      "index": 327,
+      "key": "contribution",
+      "expected": 97.80332333333334,
+      "actual": 65.10128333333333,
+      "input": {
+        "household": 3,
+        "income": 36335.6,
+        "benchmark": 1503.34,
+        "enrollment": 450.98,
+        "region": "contiguous",
+        "eligibility": "unknown"
+      }
+    },
+    {
+      "index": 328,
+      "key": "percentage",
+      "expected": 3.23,
+      "actual": 2.15,
+      "input": {
+        "household": 3,
+        "income": 36335.6,
+        "benchmark": 1495.65,
+        "enrollment": 667,
+        "region": "contiguous",
+        "eligibility": "confirmed"
+      }
+    },
+    {
+      "index": 328,
+      "key": "contribution",
+      "expected": 97.80332333333334,
+      "actual": 65.10128333333333,
+      "input": {
+        "household": 3,
+        "income": 36335.6,
+        "benchmark": 1495.65,
+        "enrollment": 667,
+        "region": "contiguous",
+        "eligibility": "confirmed"
+      }
+    },
+    {
+      "index": 329,
+      "key": "percentage",
+      "expected": 3.23,
+      "actual": 2.15,
+      "input": {
+        "household": 3,
+        "income": 36335.6,
+        "benchmark": 1194.5,
+        "enrollment": 993.02,
+        "region": "contiguous",
+        "eligibility": "excluded"
+      }
+    },
+    {
+      "index": 329,
+      "key": "contribution",
+      "expected": 97.80332333333334,
+      "actual": 65.10128333333333,
+      "input": {
+        "household": 3,
+        "income": 36335.6,
+        "benchmark": 1194.5,
+        "enrollment": 993.02,
+        "region": "contiguous",
+        "eligibility": "excluded"
+      }
+    },
+    {
+      "index": 483,
+      "key": "percentage",
+      "expected": 3.23,
+      "actual": 2.15,
+      "input": {
+        "household": 7,
+        "income": 66553.2,
+        "benchmark": 746.63,
+        "enrollment": 663.58,
+        "region": "contiguous",
+        "eligibility": "unknown"
+      }
+    },
+    {
+      "index": 483,
+      "key": "contribution",
+      "expected": 179.13903,
+      "actual": 119.24114999999999,
+      "input": {
+        "household": 7,
+        "income": 66553.2,
+        "benchmark": 746.63,
+        "enrollment": 663.58,
+        "region": "contiguous",
+        "eligibility": "unknown"
+      }
+    },
+    {
+      "index": 484,
+      "key": "percentage",
+      "expected": 3.23,
+      "actual": 2.15,
+      "input": {
+        "household": 7,
+        "income": 66553.2,
+        "benchmark": 591.34,
+        "enrollment": 632.04,
+        "region": "contiguous",
+        "eligibility": "confirmed"
+      }
+    },
+    {
+      "index": 484,
+      "key": "contribution",
+      "expected": 179.13903,
+      "actual": 119.24114999999999,
+      "input": {
+        "household": 7,
+        "income": 66553.2,
+        "benchmark": 591.34,
+        "enrollment": 632.04,
+        "region": "contiguous",
+        "eligibility": "confirmed"
+      }
+    },
+    {
+      "index": 484,
+      "key": "credit",
+      "expected": 412.20097,
+      "actual": 472.09885,
+      "input": {
+        "household": 7,
+        "income": 66553.2,
+        "benchmark": 591.34,
+        "enrollment": 632.04,
+        "region": "contiguous",
+        "eligibility": "confirmed"
+      }
+    },
+    {
+      "index": 484,
+      "key": "netPremium",
+      "expected": 219.83903,
+      "actual": 159.94114999999994,
+      "input": {
+        "household": 7,
+        "income": 66553.2,
+        "benchmark": 591.34,
+        "enrollment": 632.04,
+        "region": "contiguous",
+        "eligibility": "confirmed"
+      }
+    },
+    {
+      "index": 485,
+      "key": "percentage",
+      "expected": 3.23,
+      "actual": 2.15,
+      "input": {
+        "household": 7,
+        "income": 66553.2,
+        "benchmark": 663.92,
+        "enrollment": 766.95,
+        "region": "contiguous",
+        "eligibility": "excluded"
+      }
+    },
+    {
+      "index": 485,
+      "key": "contribution",
+      "expected": 179.13903,
+      "actual": 119.24114999999999,
+      "input": {
+        "household": 7,
+        "income": 66553.2,
+        "benchmark": 663.92,
+        "enrollment": 766.95,
+        "region": "contiguous",
+        "eligibility": "excluded"
+      }
+    }
+  ],
+  "codeSha256": "72435e7e612df73cf08733b4199342df090bbc7f4ecfaf41810eef2671dcd007",
+  "expectedCasesSha256": "178cd759260f4b0d3bae165a451a490552925a3f12df5c4e6788dac22233bed0",
+  "independentFormulaSha256": "3a884556f463892704bef854b9c0d84ea9d30353fa894794cad7d4bf358f3fe6",
+  "semanticObservations": [
+    "SNAP ordinary unknown high-net amounts suppressed; confirmed state eligibility permits conditional minimum. Excluded always suppresses.",
+    "ACA unknown/excluded and below100/above400 FPL credit withheld, including all8 household boundaries.",
+    "133% boundary deliberately jumps from2.15% to3.23% per published2027 table; continuous interpolation within remaining bands.",
+    "No tax-return rounding or tax reconciliation modeled; full-precision planning arithmetic must be described accordingly."
+  ],
+  "reviewedSources": [
+    "snap-cola.txt",
+    "snap-eligibility.txt",
+    "irs-2027.txt",
+    "irs-ptc.txt",
+    "irs-8962-tools.txt"
+  ]
+}

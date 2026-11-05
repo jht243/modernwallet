@@ -1,0 +1,352 @@
+[
+ {
+  "candidate": {
+   "route": "/aca-subsidy-calculator/",
+   "keyword": "aca subsidy calculator",
+   "question": "How is ACA subsidy calculated?",
+   "bucket": "create new content",
+   "row": "-"
+  },
+  "terms": [
+   "aca",
+   "subsidy"
+  ],
+  "formats": [
+   "calculator"
+  ],
+  "matches": [],
+  "redirects": [],
+  "past_charts": [],
+  "commits": [],
+  "same_run": [
+   {
+    "route": "/compare/aca-vs-medicaid/",
+    "row": "-",
+    "score": 0.5
+   }
+  ]
+ },
+ {
+  "candidate": {
+   "route": "/snap-benefits-calculator/",
+   "keyword": "snap benefits calculator",
+   "question": "How are SNAP benefits calculated?",
+   "bucket": "create new content",
+   "row": "-"
+  },
+  "terms": [
+   "snap",
+   "benefit"
+  ],
+  "formats": [
+   "calculator"
+  ],
+  "matches": [
+   {
+    "route": "/compare/1099-vs-w2",
+    "file": "src/data/comparisons.ts",
+    "title": "1099 vs W-2: Which Pays More After Taxes and Benefits?",
+    "desc": "1099 vs W-2 compared: who pays FICA, quarterly taxes, deductible expenses, benefits, and the real pay-rate math behind an equal offer.",
+    "score": 0.5,
+    "shared": [
+     "benefit"
+    ],
+    "formats": [],
+    "exact_slug": false,
+    "parent": false,
+    "extra": 2,
+    "published": true
+   },
+   {
+    "route": "/guides/ssi-and-inheritance",
+    "file": "src/data/guides.ts",
+    "title": "Will an Inheritance Affect Your SSI Benefits in 2026?",
+    "desc": "Find out how SSI and inheritance rules interact in 2026: the resource limit, the 10-day reporting rule, special needs trusts, and ABLE accounts explained.",
+    "score": 0.5,
+    "shared": [
+     "benefit"
+    ],
+    "formats": [],
+    "exact_slug": false,
+    "parent": false,
+    "extra": 2,
+    "published": true
+   },
+   {
+    "route": "/special-needs-trust-calculator",
+    "file": "src/data/spokes-elder-care.ts",
+    "title": "Special Needs Trust Calculator: Type + Setup Cost + Benefits",
+    "desc": "Free special needs trust calculator. See recommended SNT type (first-party, third-party, pooled), setup cost, Medicaid payback, and effect on SSI/Medicaid.",
+    "score": 0.5,
+    "shared": [
+     "benefit"
+    ],
+    "formats": [
+     "calculator"
+    ],
+    "exact_slug": false,
+    "parent": false,
+    "extra": 3,
+    "published": false
+   },
+   {
+    "route": "/retirement/social-security-retirement-calculator",
+    "file": "src/data/spokes-retirement.ts",
+    "title": "Social Security Retirement Calculator",
+    "desc": "Our Social Security retirement calculator shows how claiming age affects your benefit and how to add SSA income to your total retirement projection.",
+    "score": 0.5,
+    "shared": [
+     "benefit"
+    ],
+    "formats": [
+     "calculator"
+    ],
+    "exact_slug": false,
+    "parent": false,
+    "extra": 3,
+    "published": true
+   },
+   {
+    "route": "/social-security-taxable-benefits-calculator",
+    "file": "(sitemap only)",
+    "title": "Social Security Taxable Benefits Calculator",
+    "desc": "",
+    "score": 0.5,
+    "shared": [
+     "benefit"
+    ],
+    "formats": [
+     "calculator"
+    ],
+    "exact_slug": false,
+    "parent": false,
+    "extra": 3,
+    "published": true
+   },
+   {
+    "route": "/guides/senior-deduction-social-security",
+    "file": "src/data/guides.ts",
+    "title": "Social Security Tax Deduction for Seniors (2026)",
+    "desc": "Learn how the new Social Security tax deduction for seniors works, who qualifies for up to $6,000, and how benefits are taxed in 2026.",
+    "score": 0.5,
+    "shared": [
+     "benefit"
+    ],
+    "formats": [],
+    "exact_slug": false,
+    "parent": false,
+    "extra": 4,
+    "published": true
+   },
+   {
+    "route": "/guides/states-that-tax-social-security",
+    "file": "src/data/guides.ts",
+    "title": "States That Tax Social Security Benefits in 2026",
+    "desc": "Eight states tax some Social Security in 2026. See exemptions, income thresholds, and rules for Colorado, Connecticut, Minnesota, Montana, and others.",
+    "score": 0.5,
+    "shared": [
+     "benefit"
+    ],
+    "formats": [],
+    "exact_slug": false,
+    "parent": false,
+    "extra": 4,
+    "published": true
+   },
+   {
+    "route": "/guides/social-security-survivor-benefits-and-working",
+    "file": "src/data/guides.ts",
+    "title": "Social Security Survivor Benefits and the Earnings Limit",
+    "desc": "Yes, working while you collect Social Security survivor benefits before full retirement age can reduce your check. Here's the 2026 limit and how it's repaid.",
+    "score": 0.5,
+    "shared": [
+     "benefit"
+    ],
+    "formats": [],
+    "exact_slug": false,
+    "parent": false,
+    "extra": 4,
+    "published": true
+   }
+  ],
+  "redirects": [],
+  "past_charts": [
+   {
+    "chart": "2026-10-21-tool-usage.md",
+    "section": "table",
+    "line": "| 7 | Lens 1 (tool usage, social-security-cola-calculator \u2014 same persona). The Part B field says the 2027 premium \"has not been announced\" and leaves the persona nothing to type. Quote: \"What's my 2027 premium? It says i"
+   },
+   {
+    "chart": "2026-10-21-tool-usage.md",
+    "section": "table",
+    "line": "| 9 | Lens C (monetize, social-security-cola-calculator). Persona has a 2027 benefit/deposit figure; next job = understand the benefit and the Medicare deduction. Verdict fit \u2014 YMYL \u2192 books. Pick types: Medicare guide, S"
+   },
+   {
+    "chart": "2026-10-21-tool-usage.md",
+    "section": "table",
+    "line": "| 15 | Lens 2 (next tool after the COLA calculator \u2014 the same retiree asks if the raise is taxed; the COLA page's own FAQ \"Is my COLA taxable?\" defers to a guide). `social security taxable benefits calculator` **1,900/mo"
+   },
+   {
+    "chart": "2026-10-21-tool-usage.md",
+    "section": "table",
+    "line": "| Taxable Social Security benefits | social security taxable benefits calculator (1,900); how much of my social security is taxable calculator (110); How do I calculate my taxable Social Security benefits for 2026? (PAA)"
+   },
+   {
+    "chart": "2026-10-21-trend-lane-c.md",
+    "section": "exclusions",
+    "line": "- best mortgage lenders / online will / last will online variants, 401k vs 529 / 529 vs 401k, +medicare +medicaid +benefits +cost, deposit vs custodial account: DROP \u2014 pages exist (see research pack)."
+   },
+   {
+    "chart": "2026-10-22-trend-lane-c.md",
+    "section": "exclusions",
+    "line": "- regular/roth/traditional 401k variants, will online / last will online / online will / can i get a will online, best mortgage lenders and lender variants, 529 vs 401k, deposit vs custodial account, etf mutual funds, +m"
+   }
+  ],
+  "commits": [],
+  "same_run": [
+   {
+    "route": "/compare/snap-vs-wic/",
+    "row": "-",
+    "score": 0.5
+   }
+  ]
+ },
+ {
+  "candidate": {
+   "route": "/guides/how-to-apply-for-food-stamps/",
+   "keyword": "apply for food stamps",
+   "question": "How do I apply for food stamps?",
+   "bucket": "create new content",
+   "row": "-"
+  },
+  "terms": [
+   "apply",
+   "food",
+   "stamp"
+  ],
+  "formats": [],
+  "matches": [],
+  "redirects": [],
+  "past_charts": [],
+  "commits": [],
+  "same_run": []
+ },
+ {
+  "candidate": {
+   "route": "/compare/snap-vs-wic/",
+   "keyword": "snap vs wic",
+   "question": "Can I get SNAP and WIC at the same time?",
+   "bucket": "create new content",
+   "row": "-"
+  },
+  "terms": [
+   "snap",
+   "wic"
+  ],
+  "formats": [
+   "vs"
+  ],
+  "matches": [],
+  "redirects": [],
+  "past_charts": [],
+  "commits": [],
+  "same_run": [
+   {
+    "route": "/snap-benefits-calculator/",
+    "row": "-",
+    "score": 0.5
+   }
+  ]
+ },
+ {
+  "candidate": {
+   "route": "/compare/aca-vs-medicaid/",
+   "keyword": "aca vs medicaid",
+   "question": "What is the difference between ACA and Medicaid?",
+   "bucket": "create new content",
+   "row": "-"
+  },
+  "terms": [
+   "aca",
+   "medicaid"
+  ],
+  "formats": [
+   "vs"
+  ],
+  "matches": [
+   {
+    "route": "/compare/medicare-vs-medicaid",
+    "file": "src/data/comparisons.ts",
+    "title": "Medicare vs Medicaid: Difference, Eligibility, and Costs",
+    "desc": "Medicare vs Medicaid explained: compare eligibility, covered benefits, dual enrollment, and long-term care to find the right coverage for you.",
+    "score": 0.5,
+    "shared": [
+     "medicaid"
+    ],
+    "formats": [
+     "vs"
+    ],
+    "exact_slug": false,
+    "parent": false,
+    "extra": 1,
+    "published": true
+   },
+   {
+    "route": "/medicaid-spend-down-calculator",
+    "file": "src/data/spokes-elder-care.ts",
+    "title": "Medicaid Spend-Down Calculator: Your Exact Target by State",
+    "desc": "Get your exact Medicaid spend-down target for elder care planning, by state, free. See countable assets, CSRA, MMMNA, home equity limit & income cap.",
+    "score": 0.5,
+    "shared": [
+     "medicaid"
+    ],
+    "formats": [],
+    "exact_slug": false,
+    "parent": false,
+    "extra": 2,
+    "published": false
+   }
+  ],
+  "redirects": [],
+  "past_charts": [
+   {
+    "chart": "2026-10-19-trend-lane-c.md",
+    "section": "exclusions",
+    "line": "- medicare vs medicaid cost 70/mo, does medicare or medicaid pay first 40/mo: DROP \u2014 /compare/medicare-vs-medicaid/ exists."
+   },
+   {
+    "chart": "2026-10-20-trend-lane-c.md",
+    "section": "table",
+    "line": "| Lens 2 (adjacent) off the top-10 query \"+medicare +medicaid +benefits +cost\" and the page /compare/medicare-vs-medicaid/. Cluster \"Medicare Savings Programs / Medicaid pays Medicare premiums\": `medicare savings program"
+   },
+   {
+    "chart": "2026-10-20-trend-lane-c.md",
+    "section": "table",
+    "line": "| Medicare Savings Programs (state pays Medicare premiums) | medicare savings program; does medicaid pay for medicare premiums; can medicaid pay for medicare premiums; does medicaid help pay medicare premiums; PAA: how d"
+   },
+   {
+    "chart": "2026-10-20-trend-lane-c.md",
+    "section": "exclusions",
+    "line": "- medicare medicaid benefits cost / \"+medicare +medicaid +benefits +cost\": the crawler-style operator string is not human demand; its intent is covered by /compare/medicare-vs-medicaid/. The new row above comes from the "
+   },
+   {
+    "chart": "2026-10-21-trend-lane-c.md",
+    "section": "exclusions",
+    "line": "- best mortgage lenders / online will / last will online variants, 401k vs 529 / 529 vs 401k, +medicare +medicaid +benefits +cost, deposit vs custodial account: DROP \u2014 pages exist (see research pack)."
+   },
+   {
+    "chart": "2026-10-22-trend-lane-c.md",
+    "section": "exclusions",
+    "line": "- regular/roth/traditional 401k variants, will online / last will online / online will / can i get a will online, best mortgage lenders and lender variants, 529 vs 401k, deposit vs custodial account, etf mutual funds, +m"
+   }
+  ],
+  "commits": [],
+  "same_run": [
+   {
+    "route": "/aca-subsidy-calculator/",
+    "row": "-",
+    "score": 0.5
+   }
+  ]
+ }
+]

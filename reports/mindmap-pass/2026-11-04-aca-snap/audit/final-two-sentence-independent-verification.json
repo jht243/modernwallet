@@ -1,0 +1,20 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "verdict": "PASS",
+  "snapshotSha256": "dcb58a71da4487025e6b14de11b3aa66e24dee6bc5a28511deee81f0e98518e3",
+  "independentMatchedRoutes": 13,
+  "changedFromWithdrawnSnapshot": [
+    "/budget/snap-benefits-calculator/",
+    "/guides/how-to-apply-for-food-stamps/"
+  ],
+  "otherElevenFingerprintsUnchanged": true,
+  "selectedSourceHashesVerified": 22,
+  "freshBrowserChecks": "audit/final-two-browser/browser-checks.json",
+  "exactRenderedCorrections": [
+    "FY2027 sets a $25 minimum for eligible one- or two-person households.",
+    "Request a fair hearing by phone, in writing or at your SNAP office."
+  ],
+  "rhythm": "audit/final-rhythm.json",
+  "depth": "audit/final-depth.json",
+  "history": "Prior PASS superseded and withdrawn FAIL preserved. No content changes by reviewer."
+}

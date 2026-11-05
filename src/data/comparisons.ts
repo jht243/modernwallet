@@ -1,3 +1,4 @@
+import { BENEFIT_COMPARISONS } from "./benefits-comparisons";
 // Comparison page data — head-to-head X vs Y articles.
 // Route: /compare/<slug>/   (src/pages/compare/[slug].astro)
 import type { FAQ, Source } from "./types";
@@ -21,6 +22,9 @@ export interface ComparisonEntry {
     rows: Array<{ dimension: string; a: string; b: string }>;
   };
   verdict: string;
+  verdictHeading?: string;
+  tableHeading?: string;
+  disclaimerText?: string;
   sections: Array<{ heading: string; content: string }>;
   faqs: FAQ[];
   sources?: Source[];
@@ -30,6 +34,7 @@ export interface ComparisonEntry {
 }
 
 export const COMPARISONS: ComparisonEntry[] = [
+  ...BENEFIT_COMPARISONS,
   // ── comparison-content-auto 2026-10-26: hsa-vs-hra ──
   {
     "updated": "2026-10-26",

@@ -1,0 +1,33 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "verdict": "PASS",
+  "packetSha256": "edd875824020a88555dd38e0bd44fdd3bc216411ce45ef6cabcfde908589ee2a",
+  "renderedSnapshot": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/final-snapshot.json",
+    "sha256": "2cdf8df796544f3cbe141c1c78d6ed478ac74b2aefda5861daf48bdc17a30558"
+  },
+  "renderedReview": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/final-render-review.json",
+    "sha256": "abd846088725f50c358f24ee3927e22f8ca4fced5963b835eca50a76b4f3619c"
+  },
+  "usefulness": {
+    "status": "PASS",
+    "evidence": "The law/private/public distinction and eligibility-first decision rule answer the approved query. Full-benefit, limited-benefit, ordinary denial and2027 work-denial rules explain why declining Medicaid does not freely substitute subsidized private coverage."
+  },
+  "sourceAndAssumptions": {
+    "status": "PASS",
+    "evidence": "Inspected HealthCare.gov/IRS and the two official FAQ supplements. The NYC source is limited to the Obamacare naming fact; the federal expansion source supports a conditional non-expansion gap. Three guard doubts plus the no-universal-winner takeaway have evidence-bound adjudications; the overstrong outcomes sentence is corrected."
+  },
+  "conditionsAndCounterexample": {
+    "status": "PASS",
+    "evidence": "State/category income differences, noncitizen/status conditions, limited-benefit coverage, the IRS initial-assessment exception and replacement-coverage timing are retained. The conclusion is conditional and uses an official household-member result; no fabricated premium average or numeric ranking is needed."
+  },
+  "renderedConsistency": {
+    "status": "PASS",
+    "evidence": "The final full render includes the corrected conditional outcomes sentence, source-supported CHIP may statements, official citations and all material exceptions. Its exact fingerprint is approved in final-render-review.json; own browser checked table/TOC/FAQ/mobile layout."
+  },
+  "localExclusions": {
+    "status": "PASS",
+    "evidence": "Ordinary source-reported comparison, not medical advice, empirical insurance testing or professional service review. The approved brief excludes a universal winner and a national Medicaid calculator. Retrieved unrelated cases remain rejected with their actual reasons."
+  }
+}

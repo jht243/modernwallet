@@ -1,0 +1,9 @@
+{
+  "actor": "benefits_content",
+  "source": "audit/n4-fix1-followup.json mechanical item",
+  "field": "sources.label",
+  "beforeLabel": "NYC Office of Citywide Health Insurance Access: Affordable Care Act",
+  "afterLabel": "New York City Office of Citywide Health Insurance Access: Affordable Care Act",
+  "currentDraftSha256": "bb3804985b5f2b0f394ea49f788e901296f7fbdd0e7e8657a6e26554c92d8bb2",
+  "scope": "Source-label metadata only"
+}

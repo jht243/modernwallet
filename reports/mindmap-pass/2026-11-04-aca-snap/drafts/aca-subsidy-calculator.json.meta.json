@@ -1,0 +1,452 @@
+{
+ "slug": "aca-subsidy-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 2835,
+ "floor": 1200,
+ "input_tokens": 68949,
+ "output_tokens": 28010,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.836,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2734,
+  "numbers_not_in_facts": [
+   "109280",
+   "132000",
+   "138.63",
+   "154720",
+   "177440",
+   "200160",
+   "222880",
+   "231.05",
+   "3.58",
+   "30000",
+   "31.05",
+   "331.15",
+   "3973.81",
+   "400.0046",
+   "63840",
+   "7.95",
+   "737.2",
+   "89.61"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    4
+   ],
+   "applied": [
+    {
+     "id": "sections[6].body",
+     "quote": "you can [put the premium in a household budget](/budget/household-budget-calculator/) beside housing and groceries.",
+     "replacement": "you can [put the premium in a household budget](/budget/household-budget-calculator/).",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the household budget calculator's categories."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "That single dollar costs about $3,154 a year in this example.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Annualized loss figure not in SOURCE; only monthly $262.80 credit stated."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "If the benchmark minus your contribution is more than your plan's premium, the credit stops at that premium and you pay nothing for the plan.",
+     "replacement": "If the benchmark minus your contribution is more than your plan's premium, the credit stops at that premium.",
+     "type": "inference",
+     "why": "SOURCE states the cap; 'pay nothing' generalization goes beyond the premium-cap case."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Catastrophic plans do not count, because the IRS excludes catastrophic coverage from the credit.",
+     "replacement": "",
+     "type": "inference",
+     "why": "IRS Q5 excludes catastrophic coverage from enrollment requirement; causal phrasing added."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "The benchmark moves the credit dollar for dollar until the plan premium caps it or the result reaches zero.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Dollar-for-dollar claim is a derived generalization not stated in SOURCE."
+    }
+   ],
+   "deleted_final": 4,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2789
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-04T21:54:02-0500",
+    "findings_file": "reports/mindmap-pass/2026-11-04-aca-snap/prompts/aca-initial.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "An Affordable Care Act (ACA) subsidy calculator estimates your 2027 federal premium tax credit: the benchmark Silver premium minus an income-based contribution, capped at your plan's premium.",
+      "replacement": "An Affordable Care Act (ACA) subsidy calculator gives a conditional estimate of your 2027 federal premium tax credit, not a personal eligibility decision. The credit is the benchmark Silver premium minus an income-based contribution, capped at your plan's premium.",
+      "type": "1. Overloaded opener",
+      "why": "Split into one direct answer, then the formula sentence, keeping the conditional framing."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Keep two people and the $600 benchmark, then set MAGI at $30,000 and the chosen plan at $100 a month.",
+      "replacement": "Keep two people, then set MAGI at $30,000, the benchmark at $900, and the chosen plan at $100 a month, assuming every other eligibility condition is met, including that no one is eligible for Medicaid.",
+      "type": "2. Unexecuted premium-cap scenario",
+      "why": "The executed case used a $900 benchmark. The assumption, including Medicaid, must sit beside the case."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "The benchmark minus that contribution comes to $510.39.",
+      "replacement": "The benchmark minus that contribution is far more than the $100 plan premium.",
+      "type": "2. Unexecuted dollar detail",
+      "why": "$510.39 came from the altered $600 benchmark and is not in the executed output."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "In our lower-income example, two people with $30,000 of MAGI and a $100 plan get a $100 credit and pay $0.",
+      "replacement": "In our lower-income example, two people with $30,000 of MAGI, a $900 benchmark, and a $100 plan get a $100 credit and pay $0, assuming every other eligibility condition is met.",
+      "type": "2. Premium-cap case consistency",
+      "why": "Align with the executed $900 benchmark and state the eligibility assumption."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "The calculator's figure does not apply to anyone who can get government coverage or affordable employer coverage, or to a household that fails the IRS filing rules.",
+      "replacement": "The calculator's figure does not apply to anyone eligible for government coverage that counts as qualifying health coverage, anyone with affordable employer coverage, or a household that fails the IRS filing rules.",
+      "type": "3. Blanket government-coverage exclusion",
+      "why": "Limited Medicaid that is not qualifying coverage does not block the credit."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Government coverage: a person eligible for Medicaid, the [Children's Health Insurance Program (CHIP)](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/), Medicare, or TRICARE cannot get the credit for that person's Marketplace coverage.",
+      "replacement": "Government coverage: a person eligible for Medicaid, the [Children's Health Insurance Program (CHIP)](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/), Medicare, or another government program that counts as qualifying health coverage cannot get the credit for that person's Marketplace coverage. Limited-benefit Medicaid that does not count is an exception.",
+      "type": "3. Bullet lacks limited exception; 5. TRICARE unexpanded",
+      "why": "Add the limited-benefit exception and replace TRICARE with a generic description."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Three facts can reverse an estimate: an affordable employer offer, eligibility for Medicaid or another government program, and changes in law or plan prices.",
+      "replacement": "Three facts can reverse an estimate: an affordable employer offer, eligibility for Medicaid or another government program that counts as qualifying coverage, and changes in law or plan prices.",
+      "type": "3. Blanket Medicaid exclusion",
+      "why": "Qualify the clause as coverage that counts as qualifying coverage."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "The person covered must be enrolled in a non-catastrophic Marketplace plan, lack affordable employer coverage, be ineligible for programs such as Medicaid or Medicare, and pay the share of premiums the credit does not cover.",
+      "replacement": "The person covered must be enrolled in a non-catastrophic Marketplace plan, lack affordable employer coverage, be ineligible for government coverage that counts as qualifying coverage, such as most Medicaid or Medicare (limited-benefit Medicaid that does not count is an exception), and pay the share of premiums the credit does not cover.",
+      "type": "3. FAQ lacks limited-Medicaid exception",
+      "why": "Most Medicaid is qualifying coverage, but limited-benefit Medicaid is not a blanket bar."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "The official next step is a Marketplace application.",
+      "replacement": "The official next step is a [Marketplace application](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/).",
+      "type": "4. Directive without source link",
+      "why": "Link the approved HealthCare.gov page that describes applying through the Marketplace."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Households in either group should rely on the Marketplace application for their figure.",
+      "replacement": "Households in either group should rely on the [Marketplace application](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/) for their figure.",
+      "type": "4. Directive without source link",
+      "why": "Add the approved HealthCare.gov deep link."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Reporting changes to the Marketplace as soon as they happen lets it adjust your advance payments.",
+      "replacement": "[Reporting changes to the Marketplace](https://www.healthcare.gov/income-and-household-information/income/) as soon as they happen lets it adjust your advance payments.",
+      "type": "4. Update directive without source link",
+      "why": "HealthCare.gov income page covers reporting income changes; link it."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Coverage from a former employer, such as COBRA or retiree coverage, can be declined, and the credit may still be available.",
+      "replacement": "Coverage from a former employer, including retiree coverage, can be declined, and the credit may still be available.",
+      "type": "5. COBRA unexpanded",
+      "why": "Replace the acronym with a generic supported description."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "a taxable lump-sum distribution from an IRA or other retirement account",
+      "replacement": "a taxable lump-sum distribution from an individual retirement account or other retirement arrangement",
+      "type": "5. IRA unexpanded",
+      "why": "Use the IRS source's spelled-out wording."
+     },
+     {
+      "id": "toolHeading",
+      "quote": "2027 Federal Premium Credit Estimate",
+      "replacement": "2027 Federal Premium Tax Credit Estimate",
+      "type": "6. Tool heading Title Case",
+      "why": "Already Title Case. Aligned with the page's credit term. Disclaimer already appears only in its own field."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Start with the ACA subsidy calculator above at your expected 2027 MAGI, then update your Marketplace application whenever that income estimate changes.",
+      "replacement": "The estimate holds only with a correct benchmark premium and annual MAGI, not take-home pay alone. An affordable employer offer, qualifying government coverage, or changed law or plan prices can reverse it. Compare income scenarios in the calculator above, then [update your Marketplace application](https://www.healthcare.gov/income-and-household-information/income/) whenever your income changes.",
+      "type": "7. Closing takeaway; 4. update link",
+      "why": "Add the supported benchmark/MAGI condition, the reversal exceptions and a linked official update step."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      3
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[4].body",
+       "quote": "Keep two people, then set MAGI at $30,000, the benchmark at $900, and the chosen plan at $100 a month, assuming every other eligibility condition is met, including that no one is eligible for Medicaid.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "The benchmark minus that contribution is far more than the $100 plan premium.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[2].answer",
+       "quote": "In our lower-income example, two people with $30,000 of MAGI, a $900 benchmark, and a $100 plan get a $100 credit and pay $0, assuming every other eligibility condition is met.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2845,
+    "flags": [
+     "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Keep two people, then set MAGI at $30,000, the benchmark at $900, and the chosen'; 'The benchmark minus that contribution is far more than the $100 plan premium.'; 'In our lower-income example, two people with $30,000 of MAGI, a $900 benchmark, '"
+    ]
+   },
+   {
+    "round": 2,
+    "at": "2026-11-04T22:01:51-0500",
+    "findings_file": "reports/mindmap-pass/2026-11-04-aca-snap/audit/n2-findings.json",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "An Affordable Care Act (ACA) subsidy calculator gives a conditional estimate of your 2027 federal premium tax credit, not a personal eligibility decision.",
+      "replacement": "An Affordable Care Act (ACA) subsidy estimate subtracts an income-based contribution from the benchmark Silver premium, capped at the eligible plan premium.",
+      "type": "introText: opener defines calculator; comma-antithesis",
+      "why": "Opener must answer how the subsidy is calculated, without the antithesis."
+     },
+     {
+      "id": "introText",
+      "quote": "The credit is the benchmark Silver premium minus an income-based contribution, capped at your plan's premium.",
+      "replacement": "At ModernWallet, we calculated hypothetical ACA premium-credit cases to show how income and premiums affect the estimate.",
+      "type": "introText: company line must be sentence 2",
+      "why": "Moves the calculated-cases claim to sentence two; the formula is now stated in sentence one."
+     },
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we built the calculator above to show each step of that federal formula beside your own inputs.",
+      "replacement": "",
+      "type": "introText: calculator wrongly called 'above'",
+      "why": "The tool renders below the intro. Content is now covered by sentence two."
+     },
+     {
+      "id": "introText",
+      "quote": "Its default case is hypothetical:",
+      "replacement": "The default case is hypothetical:",
+      "type": "introText: exact intro repair",
+      "why": "Antecedent changed after the rewrite; keeps the reference clear."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Keep two people, then set MAGI at $30,000, the benchmark at $900, and the chosen plan at $100 a month, assuming every other eligibility condition is met, including that no one is eligible for Medicaid.",
+      "replacement": "Use two people with $30,000 of MAGI, a $900 benchmark, and a $100 monthly plan premium. Assume every other eligibility condition is met, including that no one is eligible for Medicaid.",
+      "type": "Worked calculation: 35-word nested stack",
+      "why": "Separates the case inputs from the eligibility assumption."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "A person who lost or was denied Medicaid for not meeting that requirement may get Marketplace coverage but will not qualify for savings, so leave eligibility unconfirmed and the calculator shows an explanation in place of a credit.",
+      "replacement": "A person who lost or was denied Medicaid for not meeting that requirement may get Marketplace coverage but will not qualify for savings. Leave eligibility unconfirmed in the calculator to show an explanation instead of a credit.",
+      "type": "Does Not Apply: 38-word stack",
+      "why": "Splits the eligibility restriction from the UI instruction and keeps the 2027 restriction."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "You qualify by meeting every IRS condition, not income alone.",
+      "replacement": "You must meet every IRS eligibility condition. Income alone cannot establish eligibility.",
+      "type": "FAQ qualify: comma-antithesis",
+      "why": "Removes the compressed antithesis and keeps the same meaning."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Household income must fall in the allowed range, you cannot file married filing separately (with a limited abuse or abandonment exception), and no one else can claim you as a dependent.",
+      "replacement": "Household income must fall in the allowed range. Married filing separately generally prevents the credit, with a limited abuse or abandonment exception. No one else can claim you as a dependent.",
+      "type": "FAQ qualify: 31-word comma stack",
+      "why": "Splits the independent filing conditions into separate sentences."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "The person covered must be enrolled in a non-catastrophic Marketplace plan, lack affordable employer coverage, be ineligible for government coverage that counts as qualifying coverage, such as most Medicaid or Medicare (limited-benefit Medicaid that does not count is an exception), and pay the share of premiums the credit does not cover.",
+      "replacement": "The covered person must enroll in a non-catastrophic Marketplace plan and lack affordable employer coverage. Eligibility for qualifying government coverage, such as most Medicaid or Medicare, prevents the credit. Limited-benefit Medicaid that does not count as qualifying coverage is an exception. The covered person must pay the share of premiums the credit does not cover.",
+      "type": "FAQ qualify: 51-word nested list",
+      "why": "Splits the four conditions into shorter supported sentences."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "The estimate holds only with a correct benchmark premium and annual MAGI, not take-home pay alone.",
+      "replacement": "The estimate requires a correct benchmark premium and annual MAGI. Take-home pay alone cannot establish annual MAGI.",
+      "type": "Updating Income: comma-antithesis",
+      "why": "Removes the antithesis and keeps the requirement."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "IRS Form 1040",
+      "replacement": "[IRS Form 1040](https://www.healthcare.gov/income-and-household-information/income/)",
+      "type": "Income to Enter: Form 1040 lacks inline source",
+      "why": "Adds the allowed HealthCare.gov income source, which cites Form 1040 line 11."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "Tool scope note: comma-antithesis",
+      "why": "Quoted tool text is not in the supplied units, so it cannot be edited in place here.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "Tool income help: comma-antithesis",
+      "why": "Quoted tool text is not in the supplied units, so it cannot be edited in place here.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "Tool eligibility hint: CHIP expansion",
+      "why": "Quoted tool text is not in the supplied units, so it cannot be edited in place here.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "Tool first IRS anchor: IRS expansion",
+      "why": "Quoted tool text is not in the supplied units, so it cannot be edited in place here.",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      2
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[4].body",
+       "quote": "Use two people with $30,000 of MAGI, a $900 benchmark, and a $100 monthly plan premium.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "The benchmark minus that contribution is far more than the $100 plan premium.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2828,
+    "flags": [
+     "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Use two people with $30,000 of MAGI, a $900 benchmark, and a $100 monthly plan p'; 'The benchmark minus that contribution is far more than the $100 plan premium.'"
+    ]
+   },
+   {
+    "round": 3,
+    "at": "2026-11-04T22:08:30-0500",
+    "findings_file": "reports/mindmap-pass/2026-11-04-aca-snap/audit/n2-fix2-followup.json",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we calculated hypothetical ACA premium-credit cases to show how income and premiums affect the estimate.",
+      "replacement": "At ModernWallet, we calculated hypothetical cases for the ACA subsidy calculator to show how income and premiums affect the estimate.",
+      "type": "Exact primary phrase missing from first paragraph",
+      "why": "Adds the target phrase 'ACA subsidy calculator' to the intro without changing the supported meaning."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Compare income scenarios in the calculator above, then [update your Marketplace application](https://www.healthcare.gov/income-and-household-information/income/) whenever your income changes.",
+      "replacement": "Compare income scenarios in the ACA subsidy calculator, then [update your Marketplace application](https://www.healthcare.gov/income-and-household-information/income/) whenever your income changes.",
+      "type": "Exact primary phrase missing from last body action",
+      "why": "Names the ACA subsidy calculator in the closing action and keeps the same supported link."
+     },
+     {
+      "id": "sections[1].heading",
+      "quote": "The Income to Enter for 2027",
+      "replacement": "Income for the 2027 ACA Subsidy Calculator",
+      "type": "Heading lacks exact primary phrase",
+      "why": "Adds the exact primary phrase to the heading and keeps the section's job."
+     },
+     {
+      "id": "sections[5].heading",
+      "quote": "When the ACA Estimate Does Not Apply",
+      "replacement": "When the ACA Subsidy Calculator Does Not Apply",
+      "type": "Heading lacks exact primary phrase",
+      "why": "Adds the exact primary phrase to the heading and leaves the section content unchanged."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "listed under When the ACA Estimate Does Not Apply",
+      "replacement": "listed under When the ACA Subsidy Calculator Does Not Apply",
+      "type": "Heading rename cross-reference (section 5 heading)",
+      "why": "Keeps the in-text reference matching the renamed section heading."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 2835,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 277.9,
+ "response_id": "msg_011Cgj1xww1uCxiQXUDD7Y9C",
+ "generated_at": "2026-11-04T21:52:05-0500"
+}

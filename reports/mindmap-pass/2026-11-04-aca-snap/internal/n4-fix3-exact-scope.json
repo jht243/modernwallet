@@ -1,0 +1,17 @@
+{
+  "actor": "benefits_content",
+  "route": "/compare/aca-vs-medicaid/",
+  "targetedFixRound": 3,
+  "substantiveReworks": 0,
+  "exactScopeVerified": "Only requested single sentence changed; both supported CHIP statements and every otherfieldvalue retained",
+  "before": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/aca-vs-medicaid.json.pre-fix-3",
+    "sha256": "bb3804985b5f2b0f394ea49f788e901296f7fbdd0e7e8657a6e26554c92d8bb2"
+  },
+  "after": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/aca-vs-medicaid.json",
+    "sha256": "13170e72233cfef18beaecbcbf2ed41ccf0834e5ecd50cdff242c72564510c60"
+  },
+  "reviewerReceipt": "audit/n4-source-guard-adjudication.json",
+  "remainingGuardDoubt": "Neither option is universally better; reviewer must adjudicate this inference flag rather than invent a PASS"
+}

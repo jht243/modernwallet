@@ -1,0 +1,101 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "route": "/compare/snap-vs-wic/",
+  "snapshotSha256": "8c82fe6a18473d54bc951eafe03114cdf551dec259f5e20d1a38dc687a0b21f5",
+  "verdict": "FIX-IN-PLACE",
+  "reworkAttempts": 0,
+  "findings": [
+    {
+      "field": "introText",
+      "quote": "SNAP and WIC are two separate federal food programs, and a family that qualifies for both can receive both at the same time.",
+      "replacement": "The SNAP vs WIC difference is household grocery purchasing power versus food and nutrition benefits for eligible individual participants. A family that qualifies for both programs can receive both at the same time.",
+      "defect": "Primaryphrase missingfromfirstparagraph; answersapproveddifferenceintent beforecoexistence."
+    },
+    {
+      "field": "Which Household Members Count",
+      "quote": "SNAP has two narrow exceptions to that grouping.",
+      "replacement": "Other SNAP rules affect separate-household status and eligibility for people receiving institutional meals.",
+      "defect": "Theinstitutionalmealsruleisnotanexceptiontohouseholdgrouping; two narrowexceptions categoricalclaimunsupported."
+    },
+    {
+      "field": "Which Household Members Count",
+      "quote": "A person 60 or older who cannot buy and prepare meals separately because of a permanent disability may form a separate SNAP household with a spouse, if the others they live with have income no higher than 165% of the poverty level.",
+      "replacement": "A person 60 or older who cannot buy and prepare meals separately because of a permanent disability may form a separate SNAP household with a spouse. The separate-household exception requires the other people in the home to have income no higher than 165% of the poverty level.",
+      "defect": "42wordnestedmedicalstatus+spouse+incomequalification. Splitretainseverymaterialcondition; noclinicalclaim."
+    },
+    {
+      "field": "Eligible Families Can Receive Both",
+      "quote": "The USDA WIC eligibility page says that if you or children in your care receive Medicaid, SNAP or Temporary Assistance for Needy Families (TANF), you may already be income eligible for WIC and can skip the WIC income chart.",
+      "replacement": "If you or children in your care receive Medicaid, SNAP or Temporary Assistance for Needy Families (TANF), you may already be income eligible for WIC. The USDA WIC eligibility page says those applicants can skip the WIC income chart.",
+      "defect": "39wordnestedsource+participant+income+actionstack."
+    },
+    {
+      "field": "Which Household Members Count",
+      "quote": "WIC leaves out loans, AmeriCorps income and certain military pay such as Basic Allowance for Housing and combat pay, and the USDA WIC page shows its income limits after you select a household size and state.",
+      "replacement": "WIC leaves out loans, AmeriCorps income and certain military pay such as Basic Allowance for Housing and combat pay. The USDA WIC page shows income limits after you select a household size and state.",
+      "defect": "36wordlist plus unrelatedUIinstruction."
+    },
+    {
+      "field": "How to Apply Through the Right Agency",
+      "quote": "Gather documents for the first appointment. The California WIC Program lists identification for yourself and any children under 5, proof of address, proof of household income, proof of pregnancy and medical forms from a health care provider.",
+      "replacement": "Ask the local WIC office which documents to bring. The California WIC Program may ask for identification, proof of address and income, proof of pregnancy, and medical forms from a health care provider.",
+      "defect": "CapturedCalifornia source saysmayask. Currentnationalinstructioncouldreadasalldocumentsmandatory; preserveexampleandlocalstaffdecision."
+    },
+    {
+      "field": "verdict",
+      "quote": "When the youngest child reaches the fifth birthday and no one else fits a WIC category, WIC no longer applies to that household, while SNAP eligibility continues to follow its own household and income rules.",
+      "replacement": "WIC no longer applies when the youngest child turns 5 and no one else fits a WIC category. SNAP eligibility continues to follow its own household and income rules.",
+      "defect": "35wordconditionalcontraststack; splitpreservesageexceptionandSNAPindependence."
+    },
+    {
+      "field": "verdict",
+      "quote": "To act on this SNAP vs WIC comparison today, open your state's entry in the [SNAP State Directory of Resources](https://fns-prod.azureedge.us/snap/state-directory) and the WIC locator on the [USDA WIC eligibility page](https://fns-prod.azureedge.us/wic/eligibility), then start the application for each program your household fits.",
+      "replacement": "Check SNAP vs WIC requirements with your [state SNAP agency](https://fns-prod.azureedge.us/snap/state-directory) and [local WIC agency](https://fns-prod.azureedge.us/wic/eligibility), then apply for each program your household fits.",
+      "defect": "40wordselfreferentialending narratespageandaction; exactreplacement keepskeywordandbothprimaryapplicationlinks."
+    }
+  ],
+  "mechanical": [
+    {
+      "field": "section heading",
+      "quote": "Which Household Members Count",
+      "replacement": "SNAP vs WIC Household Rules",
+      "defect": "Firstnaturalexactprimaryphraseheading; preserveapprovedfirstanswerheading."
+    },
+    {
+      "field": "section heading",
+      "quote": "What Each Program Pays For",
+      "replacement": "SNAP vs WIC Food Benefits",
+      "defect": "Secondnaturalexactprimaryphraseheading; preservecontent."
+    },
+    {
+      "field": "SNAP and WIC Eligibility and Food Benefits",
+      "quote": "The table above draws on four USDA pages:",
+      "replacement": "The table below draws on four USDA pages:",
+      "defect": "Firstsectionmovedbeforetable; aboveisfalse."
+    },
+    {
+      "field": "allN3listlabels",
+      "quote": "**...**",
+      "replacement": "plainlabeltextwithoutasterisks",
+      "defect": "ActualrenderleavesrawboldMarkdownvisible; removeonlytheseformatmarkersfromN3recordorfixscopedrendering."
+    },
+    {
+      "field": "introText",
+      "quote": "It provides specific healthy foods, nutrition education, breastfeeding support and referrals.",
+      "replacement": "It provides specific healthy foods, nutrition education, breastfeeding support and referrals.",
+      "defect": "Introfirstparagraphhas4sentencescurrently; afterkeywordrepairparagraphbreakbeforeWICexpansionkeepmax3."
+    },
+    {
+      "field": "footernewbenefitpagesonly",
+      "quote": "Some links on this site are referral or affiliate links, including our Robinhood referral link \u2014 we may earn a reward or commission at no cost to you. This never affects our rankings or editorial coverage.",
+      "replacement": "Some links on this site are referral or affiliate links. We may earn a reward or commission at no cost to you.",
+      "defect": "Lastsentenceunsupportedneutralityassertion. Robinhoodfirstmentionisalsoanunlinkedcompanyandunnecessaryreferral-specificclaiminthispage. Generictruthfulaffiliate disclosurepreserved; no unrelatedhistoricalrouteedit."
+    }
+  ],
+  "observations": [
+    "Fullarchivedrenderread;coenrollmentqualifiednotautomatic;WICcategoricalparticipantsandnutritionassessmentcovered;foodbenefitsremainseparatefromcash.",
+    "Sourcebody2046wordsbeforechangesclears1500;rhythmhasnolong10runand17to34plusbandsdistribution;title/descriptionwithinmetadatarequirements,Articledate2026-11-04,selfcanonical.",
+    "No claimedtestingorprofessionalreview; reportedusefulsynthesisandfactualtakeaway.",
+    "No finalcontentPASSuntilfixandfreshbrowser/renderbinding."
+  ]
+}

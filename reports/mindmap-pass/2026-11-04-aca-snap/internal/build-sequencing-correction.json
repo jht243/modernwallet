@@ -1,0 +1,7 @@
+{
+  "firstAttempt": "Build started before candidate assembly completed; dependency symlink was not yet installed. ERR_MODULE_NOT_FOUND saved in build-before-assembly-finish.log.",
+  "correction": "Waited for assembly exit0, then reran the entire production build sequentially.",
+  "finalBuild": "PASS (exit0)",
+  "contentReworkCounterImpact": "None; build orchestration only.",
+  "originalStagingStillPreserved": true
+}

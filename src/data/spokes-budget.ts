@@ -140,6 +140,8 @@ export const BUDGET_SPOKES: SpokeEntry[] = [
   },
 
   {
+    published: "2026-06-25",
+    updated: "2026-11-04",
     calculator: "budget",
     slug: "household-budget-calculator",
     title: "Household Budget Calculator: Plan Family Spending",
@@ -152,11 +154,11 @@ export const BUDGET_SPOKES: SpokeEntry[] = [
     introText:
       "A household budget calculator adds up your family's total take-home income and expenses, showing where your money goes and how much you can save. Enter your household's monthly net pay and shared costs into the calculator above to see targets for needs, wants, and savings based on the 50/30/20 rule. With a combined take-home income of $7,500, that means $3,750 for needs, $2,250 for wants, and $1,500 for savings.",
     howItWorks:
-      "A household budget works like an individual one, scaled to everyone under the roof. Add up all reliable take-home income — both partners' paychecks plus any steady side income — then list shared and personal expenses across needs, wants, and savings.\n\nThe calculator applies the 50/30/20 rule to your combined income: 50% for needs like housing, utilities, groceries, transportation, insurance, and minimum debt payments; 30% for wants; and 20% for savings and debt payoff. For families, the savings bucket often carries extra weight — an emergency fund sized to household expenses, retirement for two, and goals like a 529 college account. Because households have more moving parts, the most useful habit is a monthly review where both partners see the same numbers, comparing each bucket's actual spending against its target the same way our [budget variance guide](/guides/budget-variance-calculation-explained/) explains for a business budget. Once you know your savings target, plan the bigger picture: [check your net worth](/net-worth/) and [stay on track for retirement](/retirement/).",
+      "A household budget works like an individual one, scaled to everyone under the roof. You can [estimate SNAP food benefits](/budget/snap-benefits-calculator/) separately from cash income because SNAP can pay only for eligible food. Add up all reliable take-home income — both partners' paychecks plus any steady side income — then list shared and personal expenses across needs, wants, and savings.\n\nThe calculator applies the 50/30/20 rule to your combined income: 50% for needs like housing, utilities, groceries, transportation, insurance, and minimum debt payments; 30% for wants; and 20% for savings and debt payoff. For families, the savings bucket often carries extra weight — an emergency fund sized to household expenses, retirement for two, and goals like a 529 college account. Because households have more moving parts, the most useful habit is a monthly review where both partners see the same numbers, comparing each bucket's actual spending against its target the same way our [budget variance guide](/guides/budget-variance-calculation-explained/) explains for a business budget. Once you know your savings target, plan the bigger picture: [check your net worth](/net-worth/) and [stay on track for retirement](/retirement/).",
     commonMistakes: [
       "Counting income you don't reliably receive. Budget steady take-home pay; treat bonuses and variable side income as extra.",
       "Tracking only one partner's spending. A household budget needs every account and card in the picture.",
-      "Underbudgeting kid-related costs — childcare, activities, and growing grocery bills add up fast.",
+      "Underbudgeting kid-related costs — childcare, activities, and growing grocery bills add up fast. If food costs are hard to cover, [compare SNAP and WIC](/compare/snap-vs-wic/) for the assistance each program offers.",
       "Skipping a shared emergency fund. Size it to household monthly expenses, not a single income.",
       "Not giving each partner a personal-spending line. A little autonomy makes the shared budget easier to keep.",
     ],

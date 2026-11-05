@@ -1,0 +1,80 @@
+{
+  "purpose": "Internal preparation feasibility calculations, not published content or a product test",
+  "aca": {
+    "ordinary": {
+      "fplPercent": 231.0536044362292,
+      "applicablePercent": 7.947615526802218,
+      "expectedMonthlyContribution": 331.1506469500924,
+      "credit": 268.8493530499076,
+      "selectedPlanNetPremium": 281.1506469500924,
+      "basis": "Conditional federal arithmetic; other eligibility assumed"
+    },
+    "at400Percent": {
+      "fplPercent": 400.0,
+      "applicablePercent": 10.22,
+      "expectedMonthlyContribution": 737.2026666666667,
+      "credit": 262.7973333333333,
+      "selectedPlanNetPremium": 737.2026666666667,
+      "basis": "Conditional federal arithmetic; other eligibility assumed"
+    },
+    "oneDollarAbove400Percent": {
+      "fplPercent": 400.0046210720887,
+      "credit": 0,
+      "status": "Outside modeled income range; eligibility/special cases not assessed"
+    },
+    "selectedPremiumCap": {
+      "fplPercent": 138.6321626617375,
+      "applicablePercent": 3.5844949440034783,
+      "expectedMonthlyContribution": 89.61237360008697,
+      "credit": 100,
+      "selectedPlanNetPremium": 0,
+      "basis": "Conditional federal arithmetic; other eligibility assumed"
+    }
+  },
+  "snap": {
+    "ordinary": {
+      "standardDeduction": 229,
+      "incomeAfterOtherDeductions": 1371.0,
+      "shelterDeduction": 514.5,
+      "netIncome": 856.5,
+      "roundedContribution": 257,
+      "formulaAmount": 766,
+      "conditionalEligibleFullMonthAmount": 766,
+      "eligibility": "not determined",
+      "scope": "FY2027; 48 contiguous states/DC; first-month proration and state supplements excluded"
+    },
+    "higherAllowedShelter": {
+      "standardDeduction": 229,
+      "incomeAfterOtherDeductions": 1371.0,
+      "shelterDeduction": 714.5,
+      "netIncome": 656.5,
+      "roundedContribution": 197,
+      "formulaAmount": 826,
+      "conditionalEligibleFullMonthAmount": 826,
+      "eligibility": "not determined",
+      "scope": "FY2027; 48 contiguous states/DC; first-month proration and state supplements excluded"
+    },
+    "zeroIncome": {
+      "standardDeduction": 217,
+      "incomeAfterOtherDeductions": 0,
+      "shelterDeduction": 0,
+      "netIncome": 0,
+      "roundedContribution": 0,
+      "formulaAmount": 306,
+      "conditionalEligibleFullMonthAmount": 306,
+      "eligibility": "not determined",
+      "scope": "FY2027; 48 contiguous states/DC; first-month proration and state supplements excluded"
+    },
+    "highIncomeConditionalOnly": {
+      "standardDeduction": 217,
+      "incomeAfterOtherDeductions": 7783.0,
+      "shelterDeduction": 0,
+      "netIncome": 7783.0,
+      "roundedContribution": 2335,
+      "formulaAmount": 0,
+      "conditionalEligibleFullMonthAmount": 25,
+      "eligibility": "not determined",
+      "scope": "FY2027; 48 contiguous states/DC; first-month proration and state supplements excluded"
+    }
+  }
+}

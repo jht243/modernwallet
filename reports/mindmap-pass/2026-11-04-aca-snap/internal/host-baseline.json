@@ -1,0 +1,11 @@
+{
+  "id": "dep-dblq3drncjis73fs0200",
+  "status": "live",
+  "commit": {
+    "id": "850b1e422607e8ed8ca999f6a1c8dcd98a6c10c8",
+    "message": "competitor-monitor: ledger + baseline 2026-11-04 (4 news bulletins skipped-low-value)\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01YLDLKENFaQzUpGcQT7vrih",
+    "createdAt": "2026-11-04T21:20:41Z"
+  },
+  "createdAt": "2026-11-04T21:20:55.610148Z",
+  "finishedAt": "2026-11-04T21:22:39.212579Z"
+}

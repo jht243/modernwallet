@@ -1,0 +1,65 @@
+{
+  "base": "http://127.0.0.1:4396",
+  "startedAt": "2026-11-05T04:10:20.333Z",
+  "externalRequestsBlocked": true,
+  "pages": [
+    {
+      "path": "/budget/snap-benefits-calculator/",
+      "title": "SNAP Benefits Calculator for a Monthly Food Budget",
+      "headings": [
+        "How SNAP Benefits Are Calculated",
+        "Income and Deductions for the SNAP Benefits Calculator",
+        "SNAP Income Limits Are a Federal Reference",
+        "SNAP Benefits for Older or Disabled Members",
+        "A Full-Month SNAP Worked Example",
+        "What the SNAP Benefits Calculator Cannot Decide",
+        "Your Next Step",
+        "Frequently Asked Questions",
+        "Sources",
+        "Plan the Bigger Picture"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [
+        "Default766",
+        "Shelter1400→826",
+        "High-income unknown suppresses amount",
+        "State-confirmed conditional minimum25",
+        "Unsupported region blocks result",
+        "Clipboard contains inputs and result",
+        "Downloaded text contains inputs and result"
+      ],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/audit/final-two-browser/dom/budget/snap-benefits-calculator/index.html",
+      "htmlLength": 77397
+    },
+    {
+      "path": "/guides/how-to-apply-for-food-stamps/",
+      "title": "Apply for Food Stamps Through Your State SNAP Office",
+      "headings": [
+        "Apply for Food Stamps in These Steps",
+        "What to Have Ready for the SNAP Application",
+        "Apply for Food Stamps Online or With Help",
+        "What Happens After You Apply",
+        "When to Ask About Expedited SNAP Service",
+        "If Your Notice or Application Needs Follow-Up",
+        "The Next Step for Your Food Budget",
+        "Frequently Asked Questions",
+        "Sources"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/audit/final-two-browser/dom/guides/how-to-apply-for-food-stamps/index.html",
+      "htmlLength": 60716
+    }
+  ],
+  "checks": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "status": "observed-independent-browser-checks-completed",
+  "completedAt": "2026-11-05T04:10:24.494Z"
+}

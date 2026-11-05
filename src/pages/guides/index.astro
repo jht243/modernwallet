@@ -45,7 +45,7 @@ const jsonLdCollection = {
         <a class="gcard" href={`/guides/${g.slug}/`}>
           <span class="gcard-title">{g.h1}</span>
           <span class="gcard-blurb">{g.cardBlurb}</span>
-          <span class="gcard-meta">{g.tools.length} tools · {g.sections.length} steps</span>
+          <span class="gcard-meta">{g.slug === "how-to-apply-for-food-stamps" ? `${g.tools.length} tool${g.tools.length === 1 ? "" : "s"} · 6 application steps` : `${g.tools.length} tools · ${g.sections.length} steps`}</span>
         </a>
       ))}
     </div>

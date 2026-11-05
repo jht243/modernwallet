@@ -1,0 +1,38 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "verdict": "PASS",
+  "packetSha256": "4c6c3c20b229c82c7c5dc87f80edb62a8ab641908ed46348f608c2c9ebbce7ec",
+  "renderedSnapshot": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/final-snapshot.json",
+    "sha256": "2cdf8df796544f3cbe141c1c78d6ed478ac74b2aefda5861daf48bdc17a30558"
+  },
+  "renderedReview": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/final-render-review.json",
+    "sha256": "abd846088725f50c358f24ee3927e22f8ca4fced5963b835eca50a76b4f3619c"
+  },
+  "usefulness": {
+    "status": "PASS",
+    "evidence": "An adjustable deduction breakdown answers the approved amount question. The766/826 comparison and minimum/suppression cases show why maximum allotment alone is insufficient; the final base-formula wording avoids treating the minimum as an arithmetic error."
+  },
+  "sourceAndAssumptions": {
+    "status": "PASS",
+    "evidence": "Inspected USDA FY2027 constants and eligibility method; independently executed calculate.py into reviewer-replay.json and compared its output. Separate552-case Decimal replay found and corrected a genuine ACA boundary issue; SNAP cases matched. Public worked inputs and assumptions are visible."
+  },
+  "conditionsAndCounterexample": {
+    "status": "PASS",
+    "evidence": "Checked zero income, high net, eligible small-household minimum, shelter cap and age/disability medical cases. Amounts are conditional on state eligibility,1\u20138 contiguous48/DC and full-month FY2027; source changes, deductions and first-month rules can alter the answer."
+  },
+  "renderedConsistency": {
+    "status": "PASS",
+    "evidence": "Final rendered route matches the reviewed tool/default766/table826 and clarified minimum semantics. Own browser tested controls, errors, clipboard and downloaded full-name result. Refer to final-render-review.json and the matching independent snapshot."
+  },
+  "localExclusions": {
+    "status": "PASS",
+    "evidence": "Financial/program arithmetic is ordinary calculated evidence, not a product test or professional benefits determination. Approved case matches were rejected because they do not establish ModernWallet program experience; no client/clinical claim appears."
+  },
+  "replaySha256": "d985840851234abd0e5b342f1827fd3aee398ce36fca3d98a948f8a0b5b450f6",
+  "replayArtifact": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/snap-benefits-calculator/reviewer-replay.json",
+    "sha256": "7fe82f3f5591062973fc449e53c961ae2b7f40b2efe96f483bfe3080c8705966"
+  }
+}

@@ -1,0 +1,19 @@
+ACA 2027 conditional federal premium-credit calculation
+Scope: 1 to 8 members, contiguous 48 states/DC. Uses 2026 poverty guidelines.
+Tax household members: 2
+Expected 2027 annual household MAGI ($): 50000
+Monthly benchmark Silver premium without tobacco rating ($): 600
+Monthly tax-credit-eligible selected plan premium ($): 550
+Other eligibility conditions: confirmed
+Location: contiguous
+2026 annual poverty guideline: $21,640.00
+Income as a share of guideline: 231.05%
+2027 applicable percentage: 7.9476%
+Monthly income-based contribution: $331.15
+Non-tobacco benchmark premium: $600.00
+Eligible selected plan premium: $550.00
+Conditional monthly federal credit: $268.85
+Monthly eligible plan premium after credit: $281.15
+Conditional federal premium-credit estimate for 2027, assuming all other eligibility conditions are met. The Marketplace and your tax return determine the actual credit.
+Federal premium credit only. No state subsidies, cost-sharing reduction, exact plan quote or tax determination. Report income changes to the Marketplace.
+Sources: https://www.irs.gov/irb/2026-31_irb and https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit

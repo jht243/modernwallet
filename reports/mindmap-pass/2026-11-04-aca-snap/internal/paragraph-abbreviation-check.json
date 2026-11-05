@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "input": "Use the 48 states, District of Columbia, or the U.S. Virgin Islands. Applications start Oct. 1, 2026. The period ends Sept. 30, 2027. Apply through your state.",
+      "paragraphs": [
+        "Use the 48 states, District of Columbia, or the U.S. Virgin Islands. Applications start Oct. 1, 2026.",
+        "The period ends Sept. 30, 2027. Apply through your state."
+      ]
+    },
+    {
+      "input": "Read the [U.S. Department of Agriculture](https://fns-prod.azureedge.us/snap/recipient/eligibility). Use the dates Oct. 1, 2026 through Sept. 30, 2027. Keep a dated receipt.",
+      "paragraphs": [
+        "Read the [U.S. Department of Agriculture](https://fns-prod.azureedge.us/snap/recipient/eligibility). Use the dates Oct. 1, 2026 through Sept. 30, 2027.",
+        "Keep a dated receipt."
+      ]
+    }
+  ],
+  "scope": "Lossless abbreviation/date grouping; Markdown table retained.",
+  "originalRendererComparison": {
+    "table": "byte-identical",
+    "list": "byte-identical"
+  }
+}

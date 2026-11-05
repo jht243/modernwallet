@@ -1,0 +1,172 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "benefits_content",
+  "route": "/budget/snap-benefits-calculator/",
+  "readerQuestion": "How are SNAP benefits calculated? [PAA 0/0; ac 9/9 on-topic, 4/9 calculation-method]",
+  "decisionGap": "The strongest lookup matches are /compare/1099-vs-w2/ (pay/tax compensation) and /guides/ssi-and-inheritance/ (inheritance and SSI), neither computes food allotments. Same-run application guide answers submitting an application, and WIC comparison answers program differences. No exact route history at local HEAD or pinned published850b1e4; final /budget/ route lookup separately saved.",
+  "finding": "Calculated, with explicit hypothetical inputs: for four people and $2,000 earned monthly income, $1,200 allowed shelter, no other deductions, standard deduction $229 gives net $856.50 and conditional full-month benefit $766. Raising allowed shelter to $1,400 gives $826 before shelter cap binds. Use current COLA constants and our own arithmetic, not USDA\u2019s internally inconsistent worked example. Visible wording will identify our calculation and link a nearby method/inputs table.",
+  "conditions": "Client-side deterministic React island. Inputs: household1\u20138, monthly earned/unearned income, necessary dependent care, state-allowed child support, elderly/disabled flag and medical costs, rent/mortgage plus state-approved utility allowance. Standard deductions [217,217,217,229,268,308,308,308]; 20% earned deduction; medical excess above$35 where eligible; excess shelter above half adjusted income, cap$769 unless elderly/disabled. Max allotments [306,562,808,1023,1217,1463,1616,1841]; subtract ceil(0.3\u00d7net). Show raw formula and conditional eligible1\u20132-member $25 minimum distinctly; suppress an award-like amount above federal net reference unless the user explicitly confirms a state eligibility determination. No estimate for AK/HI/territories or9+; link official tables. Defaults are a disclosed hypothetical four-person case. Copy/download result and inputs; no server submission. Validate all boundaries, mobile390px and keyboard access.",
+  "whatWouldChange": "Net income and allowed deductions determine a conditional amount up to the household maximum. Use the breakdown and current state allowances to plan, then have the state decide eligibility. Different deductions, state options, first-month dates or a revised COLA change the answer.",
+  "basis": "calculated",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-cola.txt",
+      "sha256": "f8ebb22951e90e78e6d37cd30fe07c357e76b4c36479b98010459c689c1753c5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligibility.txt",
+      "sha256": "13160ffc3ba82531a517e7e6f13d4b3df9a75f4a6afb4491a6701880c391c911"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-state.txt",
+      "sha256": "8bf6530c65b122cc7b36c4c0ceca308bb97610fb6fe203fbf6cd8d245335b33b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligible-food.txt",
+      "sha256": "8fc837e4e8b3a2bc286843548fead789eba6a39d34c8317340f40cf932487a8d"
+    }
+  ],
+  "sources": [
+    {
+      "id": "snap-cola",
+      "url": "https://fns-prod.azureedge.us/snap/allotment/cola",
+      "resolvedUrl": "https://fns-prod.azureedge.us/snap/allotment/cola",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-cola.txt",
+      "sha256": "f8ebb22951e90e78e6d37cd30fe07c357e76b4c36479b98010459c689c1753c5"
+    },
+    {
+      "id": "snap-eligibility",
+      "url": "https://fns-prod.azureedge.us/snap/recipient/eligibility",
+      "resolvedUrl": "https://fns-prod.azureedge.us/snap/recipient/eligibility",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligibility.txt",
+      "sha256": "13160ffc3ba82531a517e7e6f13d4b3df9a75f4a6afb4491a6701880c391c911"
+    },
+    {
+      "id": "snap-state",
+      "url": "https://fns-prod.azureedge.us/snap/state-directory",
+      "resolvedUrl": "https://fns-prod.azureedge.us/snap/state-directory",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-state.txt",
+      "sha256": "8bf6530c65b122cc7b36c4c0ceca308bb97610fb6fe203fbf6cd8d245335b33b"
+    },
+    {
+      "id": "snap-eligible-food",
+      "url": "https://fns-prod.azureedge.us/snap/eligible-food-items",
+      "resolvedUrl": "https://fns-prod.azureedge.us/snap/eligible-food-items",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligible-food.txt",
+      "sha256": "8fc837e4e8b3a2bc286843548fead789eba6a39d34c8317340f40cf932487a8d"
+    }
+  ],
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/snap-benefits-calculator/cases.json",
+    "sha256": "acfb40cf4a84375d9bed9e86b84c11e4ef37b6e679d85a1dc9209802ccbdf9a7"
+  },
+  "caseDecisions": [
+    {
+      "recordId": "client-professional-bowlers-association-pba",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "owned-property-drones-defense",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "owned-property-rank-and-pay",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "owned-property-medical-frontier",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "testimonial-gamestation",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    }
+  ],
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "snap-cola",
+      "snap-eligibility",
+      "snap-state",
+      "snap-eligible-food"
+    ],
+    "scopeAndLimits": "Ordinary financial/program information, excluded from product TESTED format. Reuse existing Jonathan Velez byline without invented credentials/professional review. No clinical/personal eligibility claim. Fresh independent Phase4 review must cover exact final whole render, sources and all transformations. Tool-code validation is separate from product testing. The scope1\u20138/contiguous48+DC is visible beside inputs.",
+    "publicMethod": "On-page formula and worked-input table",
+    "placement": "Worked example and closing takeaway"
+  },
+  "plannedTakeaway": "Net income and allowed deductions determine a conditional amount up to the household maximum. Use the breakdown and current state allowances to plan, then have the state decide eligibility. Different deductions, state options, first-month dates or a revised COLA change the answer.",
+  "selectedMedium": "interactive tool",
+  "mediumReason": "Client-side deterministic React island. Inputs: household1\u20138, monthly earned/unearned income, necessary dependent care, state-allowed child support, elderly/disabled flag and medical costs, rent/mortgage plus state-approved utility allowance. Standard deductions [217,217,217,229,268,308,308,308]; 20% earned deduction; medical excess above$35 where eligible; excess shelter above half adjusted income, cap$769 unless elderly/disabled. Max allotments [306,562,808,1023,1217,1463,1616,1841]; subtract ceil(0.3\u00d7net). Show raw formula and conditional eligible1\u20132-member $25 minimum distinctly; suppress an award-like amount above federal net reference unless the user explicitly confirms a state eligibility determination. No estimate for AK/HI/territories or9+; link official tables. Defaults are a disclosed hypothetical four-person case. Copy/download result and inputs; no server submission. Validate all boundaries, mobile390px and keyboard access.",
+  "method": "Deterministic published federal formulas applied to explicit hypothetical scenarios.",
+  "units": "USD monthly benefit/premium, annual ACA income and FPL percent",
+  "limitations": "Client-side deterministic React island. Inputs: household1\u20138, monthly earned/unearned income, necessary dependent care, state-allowed child support, elderly/disabled flag and medical costs, rent/mortgage plus state-approved utility allowance. Standard deductions [217,217,217,229,268,308,308,308]; 20% earned deduction; medical excess above$35 where eligible; excess shelter above half adjusted income, cap$769 unless elderly/disabled. Max allotments [306,562,808,1023,1217,1463,1616,1841]; subtract ceil(0.3\u00d7net). Show raw formula and conditional eligible1\u20132-member $25 minimum distinctly; suppress an award-like amount above federal net reference unless the user explicitly confirms a state eligibility determination. No estimate for AK/HI/territories or9+; link official tables. Defaults are a disclosed hypothetical four-person case. Copy/download result and inputs; no server submission. Validate all boundaries, mobile390px and keyboard access.",
+  "counterexample": {
+    "ordinary": {
+      "adjustedIncome": 1371.0,
+      "shelterDeduction": 514.5,
+      "netIncome": 856.5,
+      "contribution": 257,
+      "formulaBenefit": 766,
+      "eligibility": "not determined"
+    },
+    "higherShelter": {
+      "adjustedIncome": 1371.0,
+      "shelterDeduction": 714.5,
+      "netIncome": 656.5,
+      "contribution": 197,
+      "formulaBenefit": 826,
+      "eligibility": "not determined"
+    },
+    "zeroIncome": {
+      "adjustedIncome": 0,
+      "shelterDeduction": 0,
+      "netIncome": 0,
+      "contribution": 0,
+      "formulaBenefit": 306,
+      "eligibility": "not determined"
+    },
+    "highIncome": {
+      "adjustedIncome": 7783.0,
+      "shelterDeduction": 0,
+      "netIncome": 7783.0,
+      "contribution": 2335,
+      "formulaBenefit": 0,
+      "eligibility": "not determined"
+    }
+  },
+  "execution": {
+    "command": [
+      "/opt/homebrew/opt/python@3.12/bin/python3.12",
+      "reports/mindmap-pass/2026-11-04-aca-snap/evidence/calculate.py",
+      "reports/mindmap-pass/2026-11-04-aca-snap/evidence/inputs.json",
+      "reports/mindmap-pass/2026-11-04-aca-snap/evidence/calculation-output.json"
+    ],
+    "code": {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/calculate.py",
+      "sha256": "1758462c892c7a2c31b54585f7adf4d8d6d26b94f98ac4c68a6cdc78d31e2e66"
+    },
+    "inputs": [
+      {
+        "path": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/inputs.json",
+        "sha256": "218ad3c360a0eb5aedb3a45565ecd7eec8eb354c69e9b229c2cf44a2f8b4899b"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/calculation-output.json",
+      "sha256": "7fe82f3f5591062973fc449e53c961ae2b7f40b2efe96f483bfe3080c8705966"
+    }
+  }
+}

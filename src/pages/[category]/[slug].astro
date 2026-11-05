@@ -4,6 +4,8 @@ import LinkCard from "../../components/LinkCard.astro";
 import Byline from "../../components/Byline.astro";
 import Sources from "../../components/Sources.astro";
 import LegalDisclaimer from "../../components/LegalDisclaimer.astro";
+import BenefitsNotice from "../../components/BenefitsNotice.astro";
+import { benefitBody, benefitParagraphs } from "../../lib/benefits-text";
 import { SITE, LAST_UPDATED, REVIEWER } from "../../data/site";
 import { SPOKES } from "../../data/spokes";
 import { CALC_BY_ID, isLive, relatedSpokes } from "../../data/calculators";
@@ -11,7 +13,7 @@ import { STATE_BY_SLUG } from "../../data/states";
 import CalculatorIsland from "../../components/CalculatorIsland";
 import ShareButton from "../../components/ShareButton.astro";
 import { spokeStats } from "../../lib/stats";
-import { linkify, plain, paragraphs } from "../../lib/richtext";
+import { linkify, plain, paragraphs, richBody } from "../../lib/richtext";
 import { titleCase } from "../../lib/format";
 import { personSchema, articleSchema, reviewerPersonSchema } from "../../lib/jsonld";
 import { iconForSpoke } from "../../data/icons";
@@ -58,7 +60,8 @@ const howParagraphs = entry.howItWorks.split("\n\n");
 
 // Build-time computation — inject real numbers into static HTML before JS hydrates.
 const stats = spokeStats(entry);
-const isUtilityTool = ["inherited-ira-withdrawal-calculator", "medicare-irmaa-calculator", "mileage-log-checker"].includes(entry.islandId ?? "");
+const isBenefitsTool = ["snap-benefits", "aca-subsidy"].includes(entry.islandId ?? "");
+const isUtilityTool = ["inherited-ira-withdrawal-calculator", "medicare-irmaa-calculator", "mileage-log-checker", "snap-benefits", "aca-subsidy"].includes(entry.islandId ?? "");
 const stateLinks = (entry.stateVariants ?? [])
   .map((slug) => STATE_BY_SLUG[slug])
   .filter((s): s is NonNullable<typeof s> => Boolean(s));
@@ -82,7 +85,7 @@ const jsonLdArticle = articleSchema({
   headline: entry.h1,
   description: entry.metaDescription,
   url: canonicalUrl,
-  datePublished: entry.updated ?? LAST_UPDATED,
+  datePublished: entry.published ?? entry.updated ?? LAST_UPDATED,
   dateModified: entry.updated ?? LAST_UPDATED,
   sources: entry.sources,
   reviewedBy: reviewer,
@@ -136,7 +139,7 @@ const jsonLdApp = {
       <h1>{entry.h1}</h1>
       <Byline reviewer={reviewer} updated={entry.updated} />
       {(isChecklist || isSubscriptionCancellationPlanner) && <a class="skip-tool" href="#checklist-tool">{isSubscriptionCancellationPlanner ? "Skip to your cancellation plan" : "Skip to the checklist"}</a>}
-      {paragraphs(entry.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
+      {(isBenefitsTool ? benefitParagraphs(entry.introText) : paragraphs(entry.introText)).map((para) => <p class="lede" set:html={linkify(para)} />)}
       {stats.length > 0 && (
         <div class="proof">
           {stats.map((s) => (
@@ -163,7 +166,13 @@ const jsonLdApp = {
 
     {isChecklist && <ChecklistFullList id={(entry.preset as { checklist: any }).checklist} />}
 
-    {entry.sectionHeadings ? entry.sectionHeadings.map((heading, i) => (
+    {isBenefitsTool && entry.sections && <nav class="benefits-toc" aria-label="On This Page"><strong>On This Page</strong><ol>{entry.sections.map((section, i) => <li><a href={`#benefits-section-${i + 1}`}>{section.heading}</a></li>)}</ol></nav>}
+    {entry.sections ? entry.sections.map((section, i) => (
+      <section class="section benefits-prose" id={`benefits-section-${i + 1}`}>
+        <h2>{section.heading}</h2>
+        <Fragment set:html={benefitBody(section.body)} />
+      </section>
+    )) : entry.sectionHeadings ? entry.sectionHeadings.map((heading, i) => (
       <section class="section">
         <h2>{heading}</h2>
         {howParagraphs[i] && <p set:html={linkify(howParagraphs[i])} />}
@@ -182,26 +191,26 @@ const jsonLdApp = {
       </section>
     )}
 
-    <section class="section">
+    {(entry.commonMistakes.length > 0 || !isBenefitsTool) && <section class="section">
       <h2>{entry.commonMistakesHeading ?? "Common mistakes to avoid"}</h2>
       <ul class="mistakes">
         {entry.commonMistakes.map((m) => <li set:html={linkify(m)} />)}
       </ul>
-    </section>
+    </section>}
 
     <section class="section">
-      <h2>{isSubscriptionCancellationPlanner ? "Frequently Asked Questions" : "Frequently asked questions"}</h2>
+      <h2>{(isSubscriptionCancellationPlanner || isBenefitsTool) ? "Frequently Asked Questions" : "Frequently asked questions"}</h2>
       <div class="faqs">
         {entry.faqs.map((f) => (
           <details class="faq">
             <summary><h3>{f.question}</h3></summary>
-            <p set:html={linkify(f.answer)} />
+            {isBenefitsTool ? benefitParagraphs(f.answer).map((para) => <p set:html={linkify(para)} />) : <p set:html={linkify(f.answer)} />}
           </details>
         ))}
       </div>
     </section>
 
-    {isSubscriptionCancellationPlanner ? (
+    {isBenefitsTool ? <Sources sources={entry.sources} /> : isSubscriptionCancellationPlanner ? (
       <>
         <Sources sources={entry.sources} />
         <LegalDisclaimer scope={disclaimerScope} text={entry.disclaimerText} />
@@ -226,7 +235,7 @@ const jsonLdApp = {
 
     {related.length > 0 && (
       <section class="section">
-        <h2>{isChecklist ? "Related Checklists" : `Related ${calc.label.toLowerCase()} calculators`}</h2>
+        <h2>{isChecklist ? "Related Checklists" : isBenefitsTool ? "Related Budget Calculators" : `Related ${calc.label.toLowerCase()} calculators`}</h2>
         <div class="related-grid">
           {related.map((r) => (
             <LinkCard href={`/${r.calculator}/${r.slug}/`} title={r.targetKeyword} meta="Free · instant" icon={iconForSpoke(r.calculator, r.slug)} />
@@ -240,7 +249,8 @@ const jsonLdApp = {
     )}
 
     {BUSINESS_CALC_IDS.has(calc.id) && <LeadForm financingType={FINANCING_LABEL[calc.id]} />}
-    {!isSubscriptionCancellationPlanner && <CrossLinks calcId={calc.id} />}
+    {!isSubscriptionCancellationPlanner && <CrossLinks calcId={calc.id} heading={isBenefitsTool ? "Plan the Bigger Picture" : undefined} />}
+    {isBenefitsTool && entry.disclaimerText && <BenefitsNotice text={entry.disclaimerText} />}
   </main>
 
   <style>
@@ -273,6 +283,12 @@ const jsonLdApp = {
     .section > *:last-child { margin-bottom: 0; }
     .section h2 { font-size: 1.5rem; margin: 0 0 16px; }
     .section p { color: #2c2c2c; font-size: 1.05rem; line-height: 1.85; margin: 0 0 18px; }
+    .benefits-toc { padding: 18px; margin: 20px 0; border: 1px solid #d8eee6; border-radius: 10px; }
+    .benefits-toc ol { padding-left: 22px; line-height: 1.8; margin-bottom: 0; }
+    .benefits-prose { scroll-margin-top: 80px; }
+    .benefits-prose :global(p), .benefits-prose :global(li) { color: #2c2c2c; font-size: 1.05rem; line-height: 1.85; }
+    .benefits-prose :global(table) { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
+    .benefits-prose :global(th), .benefits-prose :global(td) { padding: 10px; border: 1px solid #d8eee6; text-align: left; vertical-align: top; }
     .mistakes { padding-left: 22px; line-height: 1.85; }
     .mistakes li { margin-bottom: 10px; color: #2c2c2c; padding-left: 4px; }
     .faqs { display: flex; flex-direction: column; gap: 8px; }

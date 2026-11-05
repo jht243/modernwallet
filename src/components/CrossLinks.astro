@@ -1,13 +1,13 @@
 ---
 // A compact row of cross-category "you might also need" pill links. Bridges the calculator silos.
 import { crossLinksFor } from "../data/cross-links";
-interface Props { calcId: string; }
-const { calcId } = Astro.props as Props;
+interface Props { calcId: string; heading?: string; }
+const { calcId, heading = "Plan the bigger picture" } = Astro.props as Props;
 const links = crossLinksFor(calcId);
 ---
 {links.length > 0 && (
   <section class="cross">
-    <h2>Plan the bigger picture</h2>
+    <h2>{heading}</h2>
     <div class="pills">
       {links.map((l) => (
         <a class="pill" href={l.href}>{l.label}<span class="arrow" aria-hidden="true">→</span></a>

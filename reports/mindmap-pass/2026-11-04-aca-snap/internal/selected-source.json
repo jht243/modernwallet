@@ -1,0 +1,29 @@
+{
+  "partial": false,
+  "baseRevision": "850b1e422607e8ed8ca999f6a1c8dcd98a6c10c8",
+  "candidate": "/var/folders/2v/xfn8f1l116gbg0tyz00ndfkm0000gn/T/modernwallet-aca-snap-publication-zsfw3by2/candidate",
+  "selectedFiles": {
+    "astro.config.mjs": "214baf8eacbf6ff631fbc89c23f615dcb26303be4d83934c4e6a558dfe9c80d4",
+    "src/data/types.ts": "af4e3c19951fb042fc908661182014e0f3eb9381253d1beb7234a8f1f9adc843",
+    "src/data/spokes.ts": "4c5c5f2113b860046183c78cc4ac1f2e16fb7933be45d28634397684470a6a9b",
+    "src/data/guides.ts": "fbb8d55e3f784fb64831a9225db8e4d6eb2d04524b20691bbf3dfa163c467510",
+    "src/data/comparisons.ts": "265fd02ce84307b93a99d617e90e4fab7b13c3b95e77c853d390056e74751bf6",
+    "src/data/spokes-budget.ts": "d8b17e7f2f6a7ffe6e6733a47f76f524efe20d9b5380fef69215b3b6d40d2d13",
+    "src/components/CalculatorIsland.tsx": "bb541c6482f014b923b208c9da49e492177b1c52123cd10d6e3f0eedcadc1af9",
+    "src/lib/stats.ts": "3663786b67f17c2b0c58040a3af744b1f24ed9b4e3600d7cae1c4728711bf495",
+    "src/pages/[category]/[slug].astro": "48421a337ef970238701ccfa782cbdd926c0c3a6b2e8167e598f1272f5a7b083",
+    "src/pages/compare/[slug].astro": "9a54b98013ffe849b192a1f43b96f15137cbcdecd312c6f539c4e8c1dc24d945",
+    "src/pages/guides/[slug].astro": "5e78d0f0320121df7efa703031161558fb5ef40c3bc80dd7061d52dd8789147d",
+    "src/components/CrossLinks.astro": "525183d4524b6a38b76556607709910e4696ec6b55be1c11480d273cb90b3714",
+    "src/pages/guides/index.astro": "90e5aae0b880601c6df5da235e4bba1b70389364e5d1e94fba59cf0d30a4eff3",
+    "src/components/BenefitsNotice.astro": "d2d1851623f7fade3a70c635c7dc6ee8591c050571a95f92239abff7d8d7e7b3",
+    "src/components/BenefitsCalculators.tsx": "733d6d3705a3737141126c5503d9c9646e0c8495de6ac6dc46e5874c6db8857a",
+    "src/components/BenefitsCalculators.css": "2e63b28925d92037adc94a6e2e2b804cd72071cd7ebb73bc93f70731e359190d",
+    "src/lib/benefits-math.ts": "7e93453fc3166bc79e75ddd1376c3d9fa847db8e5ec61a192fe6a1e7b0c18ede",
+    "src/lib/benefits-text.ts": "0f6ce22487f831b26f247d22af6d60c89c6a48c7fc6ed28d4854c21a448ace63",
+    "src/data/benefits-guides.ts": "75c17c089c4e8b0a1c807b12f5751933e5af18914d904fd9f2239859d27de9b5",
+    "src/data/benefits-comparisons.ts": "6ef01b5d5eb2f32584f6b48e9adbc5994cd1633f797a5eac47b6b19214ba17c5",
+    "src/data/benefits-spokes.ts": "279ca96d344b979f3f1b7ee8e9c97f7784fd73c6502f486b5dc1e121a082f26c",
+    "scripts/test-benefits-tools.mjs": "987a0bad3fece692e57fb716afa2b032866825ce9f8e5cdcce50cef1e7dced63"
+  }
+}

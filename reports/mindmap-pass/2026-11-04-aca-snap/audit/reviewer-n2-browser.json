@@ -1,0 +1,210 @@
+{
+  "status": "observed-browser-checks-completed",
+  "results": [
+    "Unknown default withholds credit",
+    "Confirmeddefault268.85credit281.15net",
+    "Actualincome exact133% selects3.23",
+    "400%inclusive262.80credit;onecentabovewithholds",
+    "Lowerincome eligiblepremiumcap100credit0net",
+    "Excludedconditionswithhold",
+    "Blankvalidationwithholdsandaria-invalid",
+    "Actualclipboardanddownloadpreserveinputscreditandnet",
+    "KeyboardTabnumericcontrols"
+  ],
+  "width": {
+    "scroll": 390,
+    "width": 390
+  },
+  "errors": [],
+  "links": [
+    {
+      "text": "ModernWallet",
+      "href": "/"
+    },
+    {
+      "text": "Budget",
+      "href": "/budget/"
+    },
+    {
+      "text": "Jonathan Velez",
+      "href": "/about/"
+    },
+    {
+      "text": "Marketplace household income",
+      "href": "https://www.healthcare.gov/income-and-household-information/income/"
+    },
+    {
+      "text": "excludes premiums for nonessential benefits",
+      "href": "https://www.irs.gov/instructions/i8962"
+    },
+    {
+      "text": "IRS premium-tax-credit eligibility rules",
+      "href": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit"
+    },
+    {
+      "text": "Marketplace application",
+      "href": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
+    },
+    {
+      "text": "Apply through the Marketplace",
+      "href": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
+    },
+    {
+      "text": "IRS 2027 percentage table",
+      "href": "https://www.irs.gov/irb/2026-31_irb"
+    },
+    {
+      "text": "2026 poverty guidelines",
+      "href": "https://www.healthcare.gov/glossary/federal-poverty-level-fpl/"
+    },
+    {
+      "text": "How ACA Subsidies Are Calculated",
+      "href": "#benefits-section-1"
+    },
+    {
+      "text": "The Income to Enter for 2027",
+      "href": "#benefits-section-2"
+    },
+    {
+      "text": "ACA Subsidy Income Limits for 2027",
+      "href": "#benefits-section-3"
+    },
+    {
+      "text": "The Benchmark and Your Chosen Plan",
+      "href": "#benefits-section-4"
+    },
+    {
+      "text": "A Worked Federal Premium-Credit Calculation",
+      "href": "#benefits-section-5"
+    },
+    {
+      "text": "When the ACA Estimate Does Not Apply",
+      "href": "#benefits-section-6"
+    },
+    {
+      "text": "Updating Income Before Tax Reconciliation",
+      "href": "#benefits-section-7"
+    },
+    {
+      "text": "Internal Revenue Service (IRS)",
+      "href": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit"
+    },
+    {
+      "text": "Revenue Procedure 2026-26",
+      "href": "https://www.irs.gov/irb/2026-31_irb"
+    },
+    {
+      "text": "HealthCare.gov",
+      "href": "https://www.healthcare.gov/income-and-household-information/income/"
+    },
+    {
+      "text": "HealthCare.gov glossary",
+      "href": "https://www.healthcare.gov/glossary/federal-poverty-level-fpl/"
+    },
+    {
+      "text": "Medicaid",
+      "href": "https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/"
+    },
+    {
+      "text": "Marketplace application",
+      "href": "https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/"
+    },
+    {
+      "text": "Children's Health Insurance Program (CHIP)",
+      "href": "https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/"
+    },
+    {
+      "text": "qualifying health coverage",
+      "href": "https://www.healthcare.gov/medicaid-limited-benefits/"
+    },
+    {
+      "text": "Marketplace application",
+      "href": "https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/"
+    },
+    {
+      "text": "Reporting changes to the Marketplace",
+      "href": "https://www.healthcare.gov/income-and-household-information/income/"
+    },
+    {
+      "text": "Form 8962",
+      "href": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit"
+    },
+    {
+      "text": "budget with irregular income",
+      "href": "/guides/how-to-budget-with-irregular-income/"
+    },
+    {
+      "text": "put the premium in a household budget",
+      "href": "/budget/household-budget-calculator/"
+    },
+    {
+      "text": "update your Marketplace application",
+      "href": "https://www.healthcare.gov/income-and-household-information/income/"
+    },
+    {
+      "text": "calculator methodology",
+      "href": "/methodology/"
+    },
+    {
+      "text": "editorial policy",
+      "href": "/editorial-policy/"
+    },
+    {
+      "text": "IRS: Revenue Procedure 2026-26, 2027 applicable percentage table",
+      "href": "https://www.irs.gov/irb/2026-31_irb"
+    },
+    {
+      "text": "IRS: Questions and answers on the Premium Tax Credit",
+      "href": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit"
+    },
+    {
+      "text": "HealthCare.gov: What to include as income",
+      "href": "https://www.healthcare.gov/income-and-household-information/income/"
+    },
+    {
+      "text": "HealthCare.gov: Federal poverty level (FPL)",
+      "href": "https://www.healthcare.gov/glossary/federal-poverty-level-fpl/"
+    },
+    {
+      "text": "HealthCare.gov: Medicaid and CHIP coverage",
+      "href": "https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/"
+    },
+    {
+      "text": "HealthCare.gov: Medicaid programs and qualifying health coverage",
+      "href": "https://www.healthcare.gov/medicaid-limited-benefits/"
+    },
+    {
+      "text": "Size your emergency fund from your essential bills→",
+      "href": "/emergency-fund-calculator/"
+    },
+    {
+      "text": "See your full net worth→",
+      "href": "/net-worth/"
+    },
+    {
+      "text": "Invest your monthly surplus→",
+      "href": "/investing/"
+    },
+    {
+      "text": "Are you saving enough to retire?→",
+      "href": "/retirement/"
+    },
+    {
+      "text": "Consolidating debt? Model a personal loan→",
+      "href": "/personal-loan/"
+    },
+    {
+      "text": "Do sales tax holidays actually save money?→",
+      "href": "/guides/sales-tax-holidays-guide/"
+    },
+    {
+      "text": "Using AI chatbots for money questions→",
+      "href": "/guides/ai-financial-advice-chatbots-guide/"
+    },
+    {
+      "text": "Lending money to family? Set boundaries first→",
+      "href": "/guides/lending-money-to-family-boundaries/"
+    }
+  ],
+  "partialReview": true
+}

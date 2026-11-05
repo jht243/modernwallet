@@ -1,0 +1,24 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "route": "/guides/how-to-apply-for-food-stamps/",
+  "status": "source-fix1-followup-awaiting-fresh-render",
+  "draftSha256": "366c80c94dddaa043ce24e8b4a91cb7302657b9530a2ba5154857fe273139ea0",
+  "reworkAttempts": 0,
+  "findings": [
+    {
+      "field": "Who can apply for food stamps?",
+      "quote": "FNA notes on its [eligibility page](https://fns-prod.azureedge.us/snap/recipient/eligibility) that the Working Families Tax Cuts change certain eligibility factors, including work requirements and non-citizen eligibility, and that it is updating the page.",
+      "replacement": "SNAP work requirements and non-citizen eligibility rules have changed. The [official eligibility page](https://fns-prod.azureedge.us/snap/recipient/eligibility) is being updated with those changes.",
+      "defect": "Omit the unnecessary political law nickname and keep the source warning that guidance is still being updated; no possessive agency acronym or unsourced law-name variant."
+    }
+  ],
+  "confirmedFixed": [
+    "The blanket invalid-form assertion is removed.",
+    "The two document-list absence claims and self-reference are removed.",
+    "Phone filing is correctly referred to the state agency, distinct from interview channels.",
+    "The duplicate dated-confirmation instruction is gone.",
+    "The fair-hearing request now breaks the prior all-long rhythm run.",
+    "The approved apply for food stamps phrase now appears in two relevant H2 headings and remains in the intro/H1/title/closing."
+  ],
+  "remaining": "Only the exact linked guidance-warning replacement above; final render including the new paragraph helper still needs fresh review."
+}

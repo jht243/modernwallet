@@ -1,0 +1,1183 @@
+{
+  "schemaVersion": 1,
+  "author": "root",
+  "date": "2026-11-04",
+  "source": "User text: run a mindmap pass on ModernWallet focused on ACA and SNAP benefits; SEMrushUS, autocomplete and live SERP/source research.",
+  "interpretedBrief": "Expand ModernWallet’s U.S. household-benefits coverage around Affordable Care Act Marketplace assistance and Supplemental Nutrition Assistance Program food benefits. Prioritize useful calculations and application/program decisions supported by current official sources, with adjacent income/household and comparison demand. This is a manual editorial run: Phase0 approval is required before website content changes or publication.",
+  "chartPath": "reports/mindmap-pass/2026-11-04-aca-snap.md",
+  "actions": [
+    {
+      "id": "N1",
+      "problem": "Direct/adjacent demand: snap benefits calculator, 2,900/month, KD30 (SEMrushUS2026-11-04). lookup: /compare/1099-vs-w2/ — compensation/tax comparison, not food allotments. Dedicated reader-intent gap; no prior exact-slug commits at local/pinned published revisions.",
+      "solution": "Create /budget/snap-benefits-calculator/ to answer the researched question with calculator; Client-side deterministic React island.",
+      "bucket": "create new content",
+      "target": "/budget/snap-benefits-calculator/",
+      "format": "calculator",
+      "best_medium": "interactive tool",
+      "resolved_deliverable": "interactive tool",
+      "serp_verdict": "unread (redirect-heavy domain evidence; actual result types checked)",
+      "serp_evidence": "Raw contested; AI Overview observed. SNAP result set includes SNAP Screener/state calculators or official application/program pages; redirect-heavy top10 is not a reliable lock count.",
+      "reader_question": "How are SNAP benefits calculated? [PAA 0/0; ac 9/9 on-topic, 4/9 calculation-method]",
+      "answer": "figure: For an otherwise eligible household, a full-month federal allotment is the household maximum minus rounded-up 30% of SNAP net income; the estimator will show deductions and conditional minimum rules without deciding eligibility.",
+      "answer_placement": "section 1: How SNAP Benefits Are Calculated"
+    },
+    {
+      "id": "N2",
+      "problem": "Direct/adjacent demand: aca subsidy calculator, 1,900/month, KD54 (SEMrushUS2026-11-04). lookup: no match. Dedicated reader-intent gap; no prior exact-slug commits at local/pinned published revisions.",
+      "solution": "Create /budget/aca-subsidy-calculator/ to answer the researched question with calculator; Client-side React island; inputs 2027 coverage fixed, household1–8, annual household MAGI, non-tobacco benchmark monthly premium, chosen eligible enrollment premium, and nonfinancial eligibility confirmation/unknown state.",
+      "bucket": "create new content",
+      "target": "/budget/aca-subsidy-calculator/",
+      "format": "calculator",
+      "best_medium": "interactive tool",
+      "resolved_deliverable": "interactive tool",
+      "serp_verdict": "unread (redirect-heavy domain evidence; actual result types checked)",
+      "serp_evidence": "Raw contested; AI Overview observed. ACA result set includes KFF calculators and HealthCare.gov; snapshots inspected.",
+      "reader_question": "How are ACA subsidies calculated? [PAA 0/0; ac 6/6 on-topic, calculation and income-basis questions]",
+      "answer": "figure: A conditional federal premium credit is the non-tobacco benchmark Silver premium minus the income-based contribution, capped by eligible enrollment premiums; 2027 calculations use 2026 poverty guidelines and the published 2027 percentage table.",
+      "answer_placement": "section 1: How ACA Subsidies Are Calculated"
+    },
+    {
+      "id": "N3",
+      "problem": "Comparison discovery: snap vs wic, 1,300/month, KD24 (SEMrushUS2026-11-04). lookup: no match. Dedicated reader-intent gap; no prior exact-slug commits at local/pinned published revisions.",
+      "solution": "Create /compare/snap-vs-wic/ to answer the researched question with comparison table/database; Completed finite comparison table in the existing ComparisonEntry shape, five criteria with factual source-linked cells and a nonexclusive next-step paragraph.",
+      "bucket": "create new content",
+      "target": "/compare/snap-vs-wic/",
+      "format": "comparison table/database",
+      "best_medium": "text",
+      "resolved_deliverable": "comparison table/database",
+      "serp_verdict": "unread (redirect-heavy domain evidence; actual result types checked)",
+      "serp_evidence": "Raw locked; AI Overview observed. SNAP result set includes SNAP Screener/state calculators or official application/program pages; redirect-heavy top10 is not a reliable lock count.",
+      "reader_question": "How are SNAP and WIC different? [PAA 0/6 on-intent; 6/6 off-intent: SNAP-only shopping or Connecticut WIC; ac 32 completions include program-difference questions]",
+      "answer": "definition/comparison: SNAP supplies household food-purchasing benefits, while WIC supplies specified foods and related nutrition services to eligible pregnant/postpartum/breastfeeding participants and children under5; qualifying families can use both.",
+      "answer_placement": "section 1: SNAP and WIC Eligibility and Food Benefits"
+    },
+    {
+      "id": "N4",
+      "problem": "Comparison discovery: aca vs medicaid, 390/month, KD37 (SEMrushUS2026-11-04). lookup: /compare/medicare-vs-medicaid/ — Medicare versus Medicaid, not Marketplace coverage. Dedicated reader-intent gap; no prior exact-slug commits at local/pinned published revisions.",
+      "solution": "Create /compare/aca-vs-medicaid/ to answer the researched question with comparison table/database; Finite source-linked table comparing identity/administration, eligibility factors, premium assistance, application route and enrollment timing.",
+      "bucket": "create new content",
+      "target": "/compare/aca-vs-medicaid/",
+      "format": "comparison table/database",
+      "best_medium": "text",
+      "resolved_deliverable": "comparison table/database",
+      "serp_verdict": "unread (redirect-heavy domain evidence; actual result types checked)",
+      "serp_evidence": "Raw locked; AI Overview observed. ACA result set includes KFF calculators and HealthCare.gov; snapshots inspected.",
+      "reader_question": "Are Medicaid and ACA the same thing? [PAA 3/6 on-topic; 3/6 off-topic or broad policy: disadvantages, politics, taxpayer costs; ac 13 program-identity comparisons]",
+      "answer": "definition/comparison: The ACA is a law, Marketplace plans are private insurance, and Medicaid is a public coverage program; full-benefit Medicaid eligibility generally prevents Marketplace premium savings, with limited-benefit exceptions.",
+      "answer_placement": "section 1: Marketplace Coverage and Medicaid Are Different"
+    },
+    {
+      "id": "N5",
+      "problem": "Direct/adjacent demand: apply for food stamps, 40,500/month, KD58 (SEMrushUS2026-11-04). lookup: no match. Dedicated reader-intent gap; no prior exact-slug commits at local/pinned published revisions.",
+      "solution": "Create /guides/how-to-apply-for-food-stamps/ to answer the researched question with article; Full article with numbered application sequence and a concise document-purpose checklist/table.",
+      "bucket": "create new content",
+      "target": "/guides/how-to-apply-for-food-stamps/",
+      "format": "article",
+      "best_medium": "text",
+      "resolved_deliverable": "text",
+      "serp_verdict": "unread (redirect-heavy domain evidence; actual result types checked)",
+      "serp_evidence": "Raw locked; AI Overview observed. SNAP result set includes SNAP Screener/state calculators or official application/program pages; redirect-heavy top10 is not a reliable lock count.",
+      "reader_question": "How do I apply for food stamps? [PAA 0/0; ac 78 application-family completions, including documents and online steps]",
+      "answer": "mechanism: Find the SNAP agency for the state where you live, submit its application, complete the required interview and verification, and keep the agency notice; ask about expedited service if food is urgently needed.",
+      "answer_placement": "section 1: Apply for Food Stamps in These Steps"
+    },
+    {
+      "id": "L1",
+      "problem": "New benefit pages need contextual discovery from inspected existing budgeting content.",
+      "solution": "Add one health-insurance sentence linking to the ACA calculator and ACA/Medicaid comparison, with no other body/metadata rewrite.",
+      "bucket": "add internal links",
+      "target": "/guides/how-to-budget-with-irregular-income/",
+      "format": "n/a",
+      "best_medium": "n/a",
+      "resolved_deliverable": "n/a",
+      "serp_verdict": "n/a",
+      "serp_evidence": "n/a",
+      "reader_question": "n/a",
+      "answer": "n/a",
+      "answer_placement": "n/a"
+    },
+    {
+      "id": "L2",
+      "problem": "New benefit pages need contextual discovery from inspected existing budgeting content.",
+      "solution": "Add contextual food-benefit links to the SNAP calculator and SNAP/WIC comparison; explicitly keep restricted food benefits separate from cash income.",
+      "bucket": "add internal links",
+      "target": "/budget/household-budget-calculator/",
+      "format": "n/a",
+      "best_medium": "n/a",
+      "resolved_deliverable": "n/a",
+      "serp_verdict": "n/a",
+      "serp_evidence": "n/a",
+      "reader_question": "n/a",
+      "answer": "n/a",
+      "answer_placement": "n/a"
+    },
+    {
+      "id": "L3",
+      "problem": "New benefit pages need contextual discovery from inspected existing budgeting content.",
+      "solution": "Add one relevant SNAP application link sentence in the benefit-statements context; retain the existing four-step method.",
+      "bucket": "add internal links",
+      "target": "/guides/how-to-make-a-budget/",
+      "format": "n/a",
+      "best_medium": "n/a",
+      "resolved_deliverable": "n/a",
+      "serp_verdict": "n/a",
+      "serp_evidence": "n/a",
+      "reader_question": "n/a",
+      "answer": "n/a",
+      "answer_placement": "n/a"
+    }
+  ],
+  "newPageBriefs": [
+    {
+      "actionId": "N1",
+      "target": "/budget/snap-benefits-calculator/",
+      "identity": {
+        "title": "SNAP Benefits Calculator for a Monthly Food Budget",
+        "h1": "Supplemental Nutrition Assistance Program (SNAP) Benefits Calculator",
+        "pageType": "explainer",
+        "format": "calculator",
+        "medium": "interactive tool",
+        "register": "operator",
+        "bodyFloor": 1200,
+        "metaDescription": "Estimate a full-month SNAP food benefit from household income and allowed deductions. See the federal math, current limits, and state-rule exceptions."
+      },
+      "readerAndAnswer": {
+        "question": "How are SNAP benefits calculated? [PAA 0/0; ac 9/9 on-topic, 4/9 calculation-method]",
+        "answer": "figure: For an otherwise eligible household, a full-month federal allotment is the household maximum minus rounded-up 30% of SNAP net income; the estimator will show deductions and conditional minimum rules without deciding eligibility.",
+        "placement": "section 1: How SNAP Benefits Are Calculated",
+        "audienceAndIntent": "U.S. households planning food expenses; federal arithmetic for 1–8 members in the 48 contiguous states and District of Columbia, FY2027 only (Oct1 2026–Sep30 2027)."
+      },
+      "keywordEvidence": "snap benefits calculator: 2,900/month, KD30; snap benefits income limits: 1,300/month, KD44; snap benefits for seniors: 590/month, KD39. SEMrushUS exact metrics checked2026-11-04, corroborated by live autocomplete. Supporting phrases become sections/FAQs, not duplicate pages.",
+      "serpAndQuestions": {
+        "findings": "Raw contested; AI Overview observed. SNAP result set includes SNAP Screener/state calculators or official application/program pages; redirect-heavy top10 is not a reliable lock count.",
+        "actualCompetingPages": "[Benefits Plus New York calculator](https://bplc.cssny.org/benefit_tools/snap_calculator) and [Illinois DHS calculator](https://fscalc.dhs.illinois.gov/FSCalc/calculateFS.do) are actual calculator results. The New York page explicitly limits geography and says the result is an estimate; the new page will expose its own federal/state boundary instead of pretending to be a national eligibility screener.",
+        "questions": [
+          "How do they calculate how much food stamps I get?",
+          "What is the minimum SNAP benefit?",
+          "How much can you get in SNAP benefits?",
+          "What are SNAP benefits income limits?",
+          "Can seniors get food stamps?"
+        ],
+        "limits": "PAA noise is explicit in the question tag. Off-topic politics, taxpayer-cost, unrelated nutrition/shopping rumors and unsupported state specifics are excluded. Observed program questions not answered as the opener are assigned to the listed FAQ/section, not invented."
+      },
+      "whyNewPage": "The strongest lookup matches are /compare/1099-vs-w2/ (pay/tax compensation) and /guides/ssi-and-inheritance/ (inheritance and SSI), neither computes food allotments. Same-run application guide answers submitting an application, and WIC comparison answers program differences. No exact route history at local HEAD or pinned published850b1e4; final /budget/ route lookup separately saved.",
+      "outline": [
+        {
+          "heading": "How SNAP Benefits Are Calculated",
+          "purpose": "Tool and immediate max-minus-contribution answer, conditional on eligibility."
+        },
+        {
+          "heading": "Which Income and Deductions to Enter",
+          "purpose": "Earned/unearned income, standard deduction, dependent care and state-allowed support; state-approved utility allowance, not an invented national amount."
+        },
+        {
+          "heading": "SNAP Income Limits Are a Federal Reference",
+          "purpose": "FY2027 gross/net table; categorical eligibility and state options mean no national approval verdict."
+        },
+        {
+          "heading": "SNAP Benefits for Older or Disabled Members",
+          "purpose": "Medical expense deduction and uncapped excess shelter; no stale work-exemption list."
+        },
+        {
+          "heading": "A Full-Month SNAP Worked Example",
+          "purpose": "Recomputed four-person case, rounding, then a higher allowed shelter amount; distinguish first-month proration."
+        },
+        {
+          "heading": "What the Estimate Cannot Decide",
+          "purpose": "Assets, student/work/noncitizen rules, state supplements, out-of-scope geographies and official agency decision."
+        },
+        {
+          "heading": "Your Next Step",
+          "purpose": "Record assumptions and apply through the correct state office; keep SNAP separate from cash-income budgeting."
+        },
+        {
+          "heading": "Frequently Asked Questions",
+          "purpose": "How do they calculate how much food stamps I get?; What is the minimum SNAP benefit?; How much can you get in SNAP benefits?; What are SNAP benefits income limits?; Can seniors get food stamps?"
+        }
+      ],
+      "contributionAndEvidence": {
+        "findingAndBasis": "Calculated, with explicit hypothetical inputs: for four people and $2,000 earned monthly income, $1,200 allowed shelter, no other deductions, standard deduction $229 gives net $856.50 and conditional full-month benefit $766. Raising allowed shelter to $1,400 gives $826 before shelter cap binds. Use current COLA constants and our own arithmetic, not USDA’s internally inconsistent worked example. Visible wording will identify our calculation and link a nearby method/inputs table.",
+        "inspectedPrimarySources": "[snap-cola](https://fns-prod.azureedge.us/snap/allotment/cola); [snap-eligibility](https://fns-prod.azureedge.us/snap/recipient/eligibility); [snap-state](https://fns-prod.azureedge.us/snap/state-directory); [snap-eligible-food](https://fns-prod.azureedge.us/snap/eligible-food-items). All inspected 2026-11-04; exact captured records are bound in evidenceFiles.",
+        "provenance": "Calculated results identify our arithmetic, assumptions and nearby method; source-only synthesis names the actual agency. Preparation feasibility arithmetic is recorded, not a Phase3 implementation or Phase4 PASS."
+      },
+      "tablesToolsVisuals": "Client-side deterministic React island. Inputs: household1–8, monthly earned/unearned income, necessary dependent care, state-allowed child support, elderly/disabled flag and medical costs, rent/mortgage plus state-approved utility allowance. Standard deductions [217,217,217,229,268,308,308,308]; 20% earned deduction; medical excess above$35 where eligible; excess shelter above half adjusted income, cap$769 unless elderly/disabled. Max allotments [306,562,808,1023,1217,1463,1616,1841]; subtract ceil(0.3×net). Show raw formula and conditional eligible1–2-member $25 minimum distinctly; suppress an award-like amount above federal net reference unless the user explicitly confirms a state eligibility determination. No estimate for AK/HI/territories or9+; link official tables. Defaults are a disclosed hypothetical four-person case. Copy/download result and inputs; no server submission. Validate all boundaries, mobile390px and keyboard access.",
+      "testingAndReview": "Ordinary financial/program information, excluded from product TESTED format. Reuse existing Jonathan Velez byline without invented credentials/professional review. No clinical/personal eligibility claim. Fresh independent Phase4 review must cover exact final whole render, sources and all transformations. Tool-code validation is separate from product testing. The scope1–8/contiguous48+DC is visible beside inputs.",
+      "takeaway": "Net income and allowed deductions determine a conditional amount up to the household maximum. Use the breakdown and current state allowances to plan, then have the state decide eligibility. Different deductions, state options, first-month dates or a revised COLA change the answer.",
+      "inboundLinks": {
+        "required": 1,
+        "target": 3,
+        "reasonBelowTarget": "Two strong existing placements are identified for each page. One is a relevant existing collection/hub. Do not force a third or count an uninspected future sibling as already present.",
+        "placements": [
+          {
+            "source": "/budget/",
+            "target": "/budget/snap-benefits-calculator/",
+            "section": "Budget calculator spoke grid",
+            "anchor": "SNAP benefits calculator",
+            "purpose": "Reader moves from the inspected existing section to this exact decision",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          },
+          {
+            "source": "/budget/household-budget-calculator/",
+            "target": "/budget/snap-benefits-calculator/",
+            "section": "How it works",
+            "anchor": "estimate SNAP food benefits",
+            "purpose": "Reader moves from the inspected existing section to this exact decision",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          }
+        ]
+      },
+      "outboundLinks": {
+        "placements": [
+          {
+            "source": "/budget/snap-benefits-calculator/",
+            "target": "/budget/household-budget-calculator/",
+            "section": "Your Next Step",
+            "anchor": "plan the rest of your household budget",
+            "purpose": "Existing destination inspected in link-source-records; supports the next budgeting action",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          },
+          {
+            "source": "/budget/snap-benefits-calculator/",
+            "target": "/guides/how-to-make-a-budget/",
+            "section": "Your Next Step",
+            "anchor": "build a budget from your statements",
+            "purpose": "Existing destination inspected in link-source-records; supports the next budgeting action",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          }
+        ]
+      },
+      "technicalAndMeasurement": "Astro static, self-canonical https://www.themodernwallet.com with trailing slash; exact title≤60 and description≤160. Reuse existing byline/source/schema components and honest dates. Astro sitemap and existing search-index builder. New-route baseline not-yet-published, age-matched unchanged cohort comparator; measure incremental Google clicks over first28/second28 complete live days after deployment, with reporting delay and unavailable data explicit. Register a budget spoke with dedicated React island, named-source constants and data-tool equal to the route last segment; mirror the existing /mileage-deduction/mileage-log-checker/ utility island wiring, no new calculator hub/header. Add route-scoped sections/disclaimer/stat suppression only for the two benefit slugs; every other rendered route must remain semantically unchanged.",
+      "evidenceFiles": [
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/metrics.json",
+          "sha256": "1b9ba89513d5e2a9c58168112d18e9ba61b3a302fe3fb66ba0ede17dbb38b555"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/serp.json",
+          "sha256": "1fab3ee648493fe6a4b4f3425cf9f928bcd9c6b124353fbfb2634ff8819896df"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/coverage.json",
+          "sha256": "63e5328e9d3c2f32d48f7eee76c1351045c8ec01ca6f57d1e061e7276b171a6c"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/coverage-tool-final-routes.json",
+          "sha256": "82ea5efe06ecd43ff43cdfae9f94e12585aaabacb745f2e871ae734d660ac3e4"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/history-summary.json",
+          "sha256": "f38ea3c0beeb000f8bc82f2bb8e8a07d9914c1e7a9d0baa5a27758be411258a5"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+          "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/preparation-calculations.json",
+          "sha256": "05d3428a61f88a00bf29bab7c6ef506dd8eb211bbb6f04991876e75bd94749cc"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-cola.txt",
+          "sha256": "f8ebb22951e90e78e6d37cd30fe07c357e76b4c36479b98010459c689c1753c5"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligibility.txt",
+          "sha256": "13160ffc3ba82531a517e7e6f13d4b3df9a75f4a6afb4491a6701880c391c911"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-state.txt",
+          "sha256": "8bf6530c65b122cc7b36c4c0ceca308bb97610fb6fe203fbf6cd8d245335b33b"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligible-food.txt",
+          "sha256": "8fc837e4e8b3a2bc286843548fead789eba6a39d34c8317340f40cf932487a8d"
+        }
+      ]
+    },
+    {
+      "actionId": "N2",
+      "target": "/budget/aca-subsidy-calculator/",
+      "identity": {
+        "title": "ACA Subsidy Calculator for 2027 Marketplace Premiums",
+        "h1": "Affordable Care Act (ACA) Subsidy Calculator for 2027",
+        "pageType": "explainer",
+        "format": "calculator",
+        "medium": "interactive tool",
+        "register": "operator",
+        "bodyFloor": 1200,
+        "metaDescription": "Use the ACA subsidy calculator to estimate a 2027 federal premium credit from household income and plan premiums, with limits and the calculation shown."
+      },
+      "readerAndAnswer": {
+        "question": "How are ACA subsidies calculated? [PAA 0/0; ac 6/6 on-topic, calculation and income-basis questions]",
+        "answer": "figure: A conditional federal premium credit is the non-tobacco benchmark Silver premium minus the income-based contribution, capped by eligible enrollment premiums; 2027 calculations use 2026 poverty guidelines and the published 2027 percentage table.",
+        "placement": "section 1: How ACA Subsidies Are Calculated",
+        "audienceAndIntent": "Adults/families estimating federal Marketplace premium assistance for 2027, household1–8 in the contiguous48/DC; other eligibility conditions must be checked officially."
+      },
+      "keywordEvidence": "aca subsidy calculator: 1,900/month, KD54; aca subsidy income limits: 260/month, KD50; aca subsidy cliff: 210/month, KD18; aca subsidy income limits 2027: 0/month, KD0. SEMrushUS exact metrics checked2026-11-04, corroborated by live autocomplete. Supporting phrases become sections/FAQs, not duplicate pages. The2027 income-limit phrase has measured0; live completions support coverage.",
+      "serpAndQuestions": {
+        "findings": "Raw contested; AI Overview observed. ACA result set includes KFF calculators and HealthCare.gov; snapshots inspected.",
+        "actualCompetingPages": "[KFF current Marketplace calculator](https://www.kff.org/interactive/subsidy-calculator/) and [healthinsurance.org 2027 calculator](https://www.healthinsurance.org/obamacare/subsidy-calculator/) are actual calculator results. KFF requests geography and household details; our narrower tool will use entered benchmark/enrollment premiums and show the exact federal contribution arithmetic, without claiming a ZIP-based quote.",
+        "questions": [
+          "What is ACA subsidy based on?",
+          "How to qualify for ACA subsidy?",
+          "What is the maximum ACA subsidy?",
+          "What are the ACA subsidy income limits?",
+          "Is ACA subsidy based on adjusted gross income?"
+        ],
+        "limits": "PAA noise is explicit in the question tag. Off-topic politics, taxpayer-cost, unrelated nutrition/shopping rumors and unsupported state specifics are excluded. Observed program questions not answered as the opener are assigned to the listed FAQ/section, not invented."
+      },
+      "whyNewPage": "Coverage lookup returns no ACA subsidy-calculation page. /guides/how-to-budget-with-irregular-income/ explains budgeting insurance costs, not federal-credit math. Same-run ACA/Medicaid comparison defines the programs and application paths, not the personalized figure. No prior exact-slug source/history at local/pinned published revisions.",
+      "outline": [
+        {
+          "heading": "How ACA Subsidies Are Calculated",
+          "purpose": "Tool and benchmark-minus-contribution formula before background."
+        },
+        {
+          "heading": "The Income to Enter for 2027",
+          "purpose": "Expected coverage-year household modified adjusted gross income, required-filing family members, and tax household versus coverage family."
+        },
+        {
+          "heading": "ACA Subsidy Income Limits for 2027",
+          "purpose": "2026 FPL table and ordinary100–400% federal range; exact400% and one-dollar-above boundary; no unsupported eligibility guarantee."
+        },
+        {
+          "heading": "The Benchmark and Your Chosen Plan",
+          "purpose": "Second-lowest-cost Silver non-tobacco benchmark versus selected tax-credit-eligible enrollment premium; user-supplied actual figures."
+        },
+        {
+          "heading": "A Worked Federal Premium-Credit Calculation",
+          "purpose": "Two-person $50,000 income case and premium-cap case, with illustrative prices clearly distinguished from quotes."
+        },
+        {
+          "heading": "When the ACA Estimate Does Not Apply",
+          "purpose": "Medicaid/CHIP/Medicare, affordable employer coverage, filing/status/immigration conditions,2027 Medicaid-work-denial restriction and limited-Medicaid exception; official next step."
+        },
+        {
+          "heading": "Updating Income Before Tax Reconciliation",
+          "purpose": "Income changes and no post2025 repayment cap; prevent a credit estimate from implying a final tax determination."
+        },
+        {
+          "heading": "Frequently Asked Questions",
+          "purpose": "What is ACA subsidy based on?; How to qualify for ACA subsidy?; What is the maximum ACA subsidy?; What are the ACA subsidy income limits?; Is ACA subsidy based on adjusted gross income?"
+        }
+      ],
+      "contributionAndEvidence": {
+        "findingAndBasis": "Calculated sensitivity to income and premium caps, not a product test: a two-person household at$50,000 annual MAGI with illustrative$600 benchmark and$550 eligible plan premium has$268.85 monthly federal credit and$281.15 net premium, assuming all other conditions. At400%FPL=$86,560, illustrative$1,000 benchmark produces$262.80 credit; $1 above removes the ordinary modeled federal credit. Explain our arithmetic beside the inputs and avoid a claim that an income threshold alone establishes eligibility.",
+        "inspectedPrimarySources": "[irs-2027](https://www.irs.gov/irb/2026-31_irb); [irs-ptc](https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit); [hc-income](https://www.healthcare.gov/income-and-household-information/income/); [hc-poverty](https://www.healthcare.gov/glossary/federal-poverty-level-fpl/); [hc-medicaid-current](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/); [hc-limited](https://www.healthcare.gov/medicaid-limited-benefits/). All inspected 2026-11-04; exact captured records are bound in evidenceFiles.",
+        "provenance": "Calculated results identify our arithmetic, assumptions and nearby method; source-only synthesis names the actual agency. Preparation feasibility arithmetic is recorded, not a Phase3 implementation or Phase4 PASS."
+      },
+      "tablesToolsVisuals": "Client-side React island; inputs 2027 coverage fixed, household1–8, annual household MAGI, non-tobacco benchmark monthly premium, chosen eligible enrollment premium, and nonfinancial eligibility confirmation/unknown state. No ZIP database or fabricated premiums. 2026 FPL [15960,21640,27320,33000,38680,44360,50040,55720];2027 percentage bands <133:2.15%;133–150:3.23–4.30%;150–200:4.30–6.78%;200–250:6.78–8.66%;250–300:8.66–10.22%;300–400:10.22%. Linear interpolation within bands, monthly contribution=MAGI×rate/12, credit=min(enrollment premium,max(0,benchmark−contribution)). At<100/>400 or unknown/excluded eligibility show scoped explanation instead of approval. Benchmark excludes tobacco rating; IRSQ26 permits actual smoker enrollment premium for cap. Federal credit only, no state subsidy/cost-sharing estimate. Copy/download figures with conditions. Test boundaries, rate steps, blank/negative/huge inputs, caps and zero premium.",
+      "testingAndReview": "Ordinary financial/program information, excluded from product TESTED format. Reuse existing Jonathan Velez byline without invented credentials/professional review. No clinical/personal eligibility claim. Fresh independent Phase4 review must cover exact final whole render, sources and all transformations. Tool-code validation is separate from product testing. The scope1–8/contiguous48+DC is visible beside inputs.",
+      "takeaway": "Federal-credit math requires a benchmark premium and correct annual MAGI, not take-home pay alone. Compare income scenarios before budgeting, update the Marketplace when income changes, and use its application for eligibility and exact prices. Employer/government eligibility, changed law or plan figures can reverse the result.",
+      "inboundLinks": {
+        "required": 1,
+        "target": 3,
+        "reasonBelowTarget": "Two strong existing placements are identified for each page. One is a relevant existing collection/hub. Do not force a third or count an uninspected future sibling as already present.",
+        "placements": [
+          {
+            "source": "/budget/",
+            "target": "/budget/aca-subsidy-calculator/",
+            "section": "Budget calculator spoke grid",
+            "anchor": "ACA subsidy calculator",
+            "purpose": "Reader moves from the inspected existing section to this exact decision",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          },
+          {
+            "source": "/guides/how-to-budget-with-irregular-income/",
+            "target": "/budget/aca-subsidy-calculator/",
+            "section": "How Do Freelancers Budget for Health Insurance Without an Employer Plan?",
+            "anchor": "estimate a federal premium credit",
+            "purpose": "Reader moves from the inspected existing section to this exact decision",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          }
+        ]
+      },
+      "outboundLinks": {
+        "placements": [
+          {
+            "source": "/budget/aca-subsidy-calculator/",
+            "target": "/guides/how-to-budget-with-irregular-income/",
+            "section": "Updating Income Before Tax Reconciliation",
+            "anchor": "budget with irregular income",
+            "purpose": "Existing destination inspected in link-source-records; supports the next budgeting action",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          },
+          {
+            "source": "/budget/aca-subsidy-calculator/",
+            "target": "/budget/household-budget-calculator/",
+            "section": "Updating Income Before Tax Reconciliation",
+            "anchor": "put the premium in a household budget",
+            "purpose": "Existing destination inspected in link-source-records; supports the next budgeting action",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          }
+        ]
+      },
+      "technicalAndMeasurement": "Astro static, self-canonical https://www.themodernwallet.com with trailing slash; exact title≤60 and description≤160. Reuse existing byline/source/schema components and honest dates. Astro sitemap and existing search-index builder. New-route baseline not-yet-published, age-matched unchanged cohort comparator; measure incremental Google clicks over first28/second28 complete live days after deployment, with reporting delay and unavailable data explicit. Register a budget spoke with dedicated React island, named-source constants and data-tool equal to the route last segment; mirror the existing /mileage-deduction/mileage-log-checker/ utility island wiring, no new calculator hub/header. Add route-scoped sections/disclaimer/stat suppression only for the two benefit slugs; every other rendered route must remain semantically unchanged.",
+      "evidenceFiles": [
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/metrics.json",
+          "sha256": "1b9ba89513d5e2a9c58168112d18e9ba61b3a302fe3fb66ba0ede17dbb38b555"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/serp.json",
+          "sha256": "1fab3ee648493fe6a4b4f3425cf9f928bcd9c6b124353fbfb2634ff8819896df"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/coverage.json",
+          "sha256": "63e5328e9d3c2f32d48f7eee76c1351045c8ec01ca6f57d1e061e7276b171a6c"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/coverage-tool-final-routes.json",
+          "sha256": "82ea5efe06ecd43ff43cdfae9f94e12585aaabacb745f2e871ae734d660ac3e4"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/history-summary.json",
+          "sha256": "f38ea3c0beeb000f8bc82f2bb8e8a07d9914c1e7a9d0baa5a27758be411258a5"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+          "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/preparation-calculations.json",
+          "sha256": "05d3428a61f88a00bf29bab7c6ef506dd8eb211bbb6f04991876e75bd94749cc"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/irs-2027.txt",
+          "sha256": "d7f56a6da8a66170be4f85b77031429e0db092df322b9035fb08388e828e9feb"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/irs-ptc.txt",
+          "sha256": "36963edce1f96077ad6b2494c17f68c267b84ab9e7f27c82e15b57f108d2a7f2"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-income.txt",
+          "sha256": "5dfb2032384557ce8f54bcc21c538eca2f52f072990ac98667858fdf74bf3bea"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-poverty.txt",
+          "sha256": "bbec81d0c481ed542c9517282241930d2443759b41197333e6f18692dc8ce7de"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-medicaid-current.txt",
+          "sha256": "5eccdbf370947aada7cad7c3162a0c7dc52e88753ead5be8c1395fc01dfcd983"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-limited.txt",
+          "sha256": "7244780bbf275cd871952c1c647f49dc98b83a2cba71452379e4254142d11436"
+        }
+      ]
+    },
+    {
+      "actionId": "N3",
+      "target": "/compare/snap-vs-wic/",
+      "identity": {
+        "title": "SNAP vs WIC Food Benefits Compared for U.S. Households",
+        "h1": "Supplemental Nutrition Assistance Program (SNAP) vs WIC",
+        "pageType": "comparison",
+        "format": "comparison table/database",
+        "medium": "comparison table/database",
+        "register": "reporter",
+        "bodyFloor": 1500,
+        "metaDescription": "Compare SNAP vs WIC on who qualifies, eligible foods, household rules, and applications. See why eligible families may receive both food benefits."
+      },
+      "readerAndAnswer": {
+        "question": "How are SNAP and WIC different? [PAA 0/6 on-intent; 6/6 off-intent: SNAP-only shopping or Connecticut WIC; ac 32 completions include program-difference questions]",
+        "answer": "definition/comparison: SNAP supplies household food-purchasing benefits, while WIC supplies specified foods and related nutrition services to eligible pregnant/postpartum/breastfeeding participants and children under5; qualifying families can use both.",
+        "placement": "section 1: SNAP and WIC Eligibility and Food Benefits",
+        "audienceAndIntent": "U.S. families checking which food-assistance application fits, especially households with a young child or pregnancy; no clinical recommendations."
+      },
+      "keywordEvidence": "snap vs wic: 1,300/month, KD24; snap benefits vs ebt: 70/month, KD39. SEMrushUS exact metrics checked2026-11-04, corroborated by live autocomplete. Supporting phrases become sections/FAQs, not duplicate pages.",
+      "serpAndQuestions": {
+        "findings": "Raw locked; AI Overview observed. SNAP result set includes SNAP Screener/state calculators or official application/program pages; redirect-heavy top10 is not a reliable lock count.",
+        "actualCompetingPages": "[Propel SNAP/WIC guide](https://www.propel.app/snap/snap-wic/) and [No Kid Hungry comparison](https://www.nokidhungry.org/blog/snap-vs-wic-difference-between-wic-and-snap) are actual comparison-guide results. Both discuss participants, eligible foods and applications. Our source-based table will keep the income-screening shortcut separate from remaining WIC requirements; no claim of competitor-wide uniqueness.",
+        "questions": [
+          "Are WIC and SNAP the same thing?",
+          "Does SNAP or WIC cover diapers?",
+          "What does SNAP and WIC cover?",
+          "Are food stamps the same as SNAP?",
+          "Can I receive SNAP and WIC together?"
+        ],
+        "limits": "PAA noise is explicit in the question tag. Off-topic politics, taxpayer-cost, unrelated nutrition/shopping rumors and unsupported state specifics are excluded. Observed program questions not answered as the opener are assigned to the listed FAQ/section, not invented."
+      },
+      "whyNewPage": "No lookup match, redirect or prior exact-slug history. Existing family-budget tool assigns spending but does not compare food-program eligibility. The proposed SNAP amount tool and application guide each answer a separate job, not the comparison.",
+      "outline": [
+        {
+          "heading": "SNAP and WIC Eligibility and Food Benefits",
+          "purpose": "Five-row side-by-side table: participants, household definition, benefit form, food choices/services, application route."
+        },
+        {
+          "heading": "Eligible Families Can Receive Both",
+          "purpose": "SNAP participation may establish WIC income eligibility but does not bypass participant category, local enrollment and nutrition assessment."
+        },
+        {
+          "heading": "Which Household Members Count",
+          "purpose": "Contrast food-purchasing/preparing household with WIC economic unit/pregnancy rules without a one-size-fits-all eligibility verdict."
+        },
+        {
+          "heading": "What Each Program Pays For",
+          "purpose": "Explain food restrictions, specified WIC foods and support services; never present benefits as cash or diaper money."
+        },
+        {
+          "heading": "How to Apply Through the Right Agency",
+          "purpose": "Separate SNAP state agency from local WIC enrollment, with official locators."
+        },
+        {
+          "heading": "The Next Step for Your Household",
+          "purpose": "Nonexclusive program choice, limits and the condition that changes the practical next step."
+        },
+        {
+          "heading": "Frequently Asked Questions",
+          "purpose": "Are WIC and SNAP the same thing?; Does SNAP or WIC cover diapers?; What does SNAP and WIC cover?; Are food stamps the same as SNAP?; Can I receive SNAP and WIC together?"
+        }
+      ],
+      "contributionAndEvidence": {
+        "findingAndBasis": "Reported-source synthesis of USDA program rules: the decision is often two separate applications, not choosing one winner. Map SNAP→possible WIC income qualification→remaining WIC criteria. Attribute the rules to USDA directly; do not claim we ran clinical or household eligibility tests.",
+        "inspectedPrimarySources": "[snap-eligibility](https://fns-prod.azureedge.us/snap/recipient/eligibility); [snap-state](https://fns-prod.azureedge.us/snap/state-directory); [snap-eligible-food](https://fns-prod.azureedge.us/snap/eligible-food-items); [wic-eligibility](https://fns-prod.azureedge.us/wic/eligibility); [wic-benefits](https://fns-prod.azureedge.us/wic/benefits); [wic-ca](https://myfamily.wic.ca.gov/Home/HowCanIGetWIC). All inspected 2026-11-04; exact captured records are bound in evidenceFiles.",
+        "provenance": "Calculated results identify our arithmetic, assumptions and nearby method; source-only synthesis names the actual agency. Preparation feasibility arithmetic is recorded, not a Phase3 implementation or Phase4 PASS."
+      },
+      "tablesToolsVisuals": "Completed finite comparison table in the existing ComparisonEntry shape, five criteria with factual source-linked cells and a nonexclusive next-step paragraph. No personalized assessment, nutritional scoring or benefit-dollar comparison with an unsupported single WIC amount. Define Special Supplemental Nutrition Program for Women, Infants, and Children on first prose use.",
+      "testingAndReview": "Ordinary financial/program information, excluded from product TESTED format. Reuse existing Jonathan Velez byline without invented credentials/professional review. No clinical/personal eligibility claim. Fresh independent Phase4 review must cover exact final whole render, sources and all transformations. Reporter register: direct source-supported answer and conditional factual takeaway; no experience tee-up.",
+      "takeaway": "A household with WIC-eligible members should check both programs rather than assume one replaces the other. SNAP receipt can simplify WIC income screening, but local WIC staff still confirm all remaining requirements. No WIC category member means the WIC application is not that household’s route.",
+      "inboundLinks": {
+        "required": 1,
+        "target": 3,
+        "reasonBelowTarget": "Two strong existing placements are identified for each page. One is a relevant existing collection/hub. Do not force a third or count an uninspected future sibling as already present.",
+        "placements": [
+          {
+            "source": "/compare/",
+            "target": "/compare/snap-vs-wic/",
+            "section": "Comparison card grid",
+            "anchor": "SNAP vs WIC",
+            "purpose": "Reader moves from the inspected existing section to this exact decision",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          },
+          {
+            "source": "/budget/household-budget-calculator/",
+            "target": "/compare/snap-vs-wic/",
+            "section": "Common mistakes, kid-related costs",
+            "anchor": "compare SNAP and WIC",
+            "purpose": "Reader moves from the inspected existing section to this exact decision",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          }
+        ]
+      },
+      "outboundLinks": {
+        "placements": [
+          {
+            "source": "/compare/snap-vs-wic/",
+            "target": "/budget/household-budget-calculator/",
+            "section": "The Next Step for Your Household",
+            "anchor": "plan household food spending",
+            "purpose": "Existing destination inspected in link-source-records; supports the next budgeting action",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          },
+          {
+            "source": "/compare/snap-vs-wic/",
+            "target": "/guides/how-to-make-a-budget/",
+            "section": "The Next Step for Your Household",
+            "anchor": "keep food assistance separate in your budget",
+            "purpose": "Existing destination inspected in link-source-records; supports the next budgeting action",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          }
+        ]
+      },
+      "technicalAndMeasurement": "Astro static, self-canonical https://www.themodernwallet.com with trailing slash; exact title≤60 and description≤160. Reuse existing byline/source/schema components and honest dates. Astro sitemap and existing search-index builder. New-route baseline not-yet-published, age-matched unchanged cohort comparator; measure incremental Google clicks over first28/second28 complete live days after deployment, with reporting delay and unavailable data explicit. Reuse ComparisonEntry and dynamic /compare/[slug].astro with neutral page-specific takeaway heading and final disclaimer scoped only to these two benefit comparisons.",
+      "evidenceFiles": [
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/metrics.json",
+          "sha256": "1b9ba89513d5e2a9c58168112d18e9ba61b3a302fe3fb66ba0ede17dbb38b555"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/serp.json",
+          "sha256": "1fab3ee648493fe6a4b4f3425cf9f928bcd9c6b124353fbfb2634ff8819896df"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/coverage.json",
+          "sha256": "63e5328e9d3c2f32d48f7eee76c1351045c8ec01ca6f57d1e061e7276b171a6c"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/coverage-tool-final-routes.json",
+          "sha256": "82ea5efe06ecd43ff43cdfae9f94e12585aaabacb745f2e871ae734d660ac3e4"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/history-summary.json",
+          "sha256": "f38ea3c0beeb000f8bc82f2bb8e8a07d9914c1e7a9d0baa5a27758be411258a5"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+          "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/preparation-calculations.json",
+          "sha256": "05d3428a61f88a00bf29bab7c6ef506dd8eb211bbb6f04991876e75bd94749cc"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligibility.txt",
+          "sha256": "13160ffc3ba82531a517e7e6f13d4b3df9a75f4a6afb4491a6701880c391c911"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-state.txt",
+          "sha256": "8bf6530c65b122cc7b36c4c0ceca308bb97610fb6fe203fbf6cd8d245335b33b"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligible-food.txt",
+          "sha256": "8fc837e4e8b3a2bc286843548fead789eba6a39d34c8317340f40cf932487a8d"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-eligibility.txt",
+          "sha256": "0641315415cf7a3b6a2f97843ff787d0ca2b845f319d7e1b98ad3b8751da1f78"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-benefits.txt",
+          "sha256": "38d49150f3cfb96399f89db81bea967370645c1405a53909d1c673b16ea2d12c"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-ca.txt",
+          "sha256": "c1eb248119ea632023ab2399c73f82297be1aca5dd38a842e8436d19edc084a2"
+        }
+      ]
+    },
+    {
+      "actionId": "N4",
+      "target": "/compare/aca-vs-medicaid/",
+      "identity": {
+        "title": "ACA vs Medicaid Coverage Compared for U.S. Households",
+        "h1": "Affordable Care Act (ACA) Marketplace Coverage vs Medicaid",
+        "pageType": "comparison",
+        "format": "comparison table/database",
+        "medium": "comparison table/database",
+        "register": "reporter",
+        "bodyFloor": 1500,
+        "metaDescription": "Compare ACA Marketplace coverage vs Medicaid on eligibility, premiums, applications, and subsidies. Learn which official application to use for your household."
+      },
+      "readerAndAnswer": {
+        "question": "Are Medicaid and ACA the same thing? [PAA 3/6 on-topic; 3/6 off-topic or broad policy: disadvantages, politics, taxpayer costs; ac 13 program-identity comparisons]",
+        "answer": "definition/comparison: The ACA is a law, Marketplace plans are private insurance, and Medicaid is a public coverage program; full-benefit Medicaid eligibility generally prevents Marketplace premium savings, with limited-benefit exceptions.",
+        "placement": "section 1: Marketplace Coverage and Medicaid Are Different",
+        "audienceAndIntent": "U.S. adults/families interpreting Marketplace and Medicaid options, including self-employed people; no provider/treatment recommendation."
+      },
+      "keywordEvidence": "aca vs medicaid: 390/month, KD37. SEMrushUS exact metrics checked2026-11-04, corroborated by live autocomplete. Supporting phrases become sections/FAQs, not duplicate pages.",
+      "serpAndQuestions": {
+        "findings": "Raw locked; AI Overview observed. ACA result set includes KFF calculators and HealthCare.gov; snapshots inspected.",
+        "actualCompetingPages": "[BenefitsUSA ACA/Medicaid comparison](https://benefitsusa.org/en/compare/aca-vs-medicaid) is an observed comparison result, alongside official [HealthCare.gov coverage guidance](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/). The inspected comparison uses broad income bands; our narrower contribution will preserve limited-benefit and2027 exception conditions rather than imply that income alone determines eligibility.",
+        "questions": [
+          "What is Obamacare insurance?",
+          "What is a coverage gap in health insurance?",
+          "What disqualifies you for Medicaid?",
+          "Is ACA or Medicaid better?",
+          "Can you have Medicaid and Marketplace insurance at the same time?"
+        ],
+        "limits": "PAA noise is explicit in the question tag. Off-topic politics, taxpayer-cost, unrelated nutrition/shopping rumors and unsupported state specifics are excluded. Observed program questions not answered as the opener are assigned to the listed FAQ/section, not invented."
+      },
+      "whyNewPage": "Strongest lookup /compare/medicare-vs-medicaid/ answers Medicare-versus-Medicaid, a different program identity and older/disability audience; do not link or inherit its misleading coverage advice. /elder-care/medicaid-spend-down-calculator/ concerns long-term-care assets, not Marketplace eligibility. No prior exact-slug changes; same-run subsidy tool answers a conditional dollar estimate.",
+      "outline": [
+        {
+          "heading": "Marketplace Coverage and Medicaid Are Different",
+          "purpose": "Explain ACA law versus private Marketplace versus Medicaid immediately, then five-row factual table."
+        },
+        {
+          "heading": "Eligibility Determines Premium Savings",
+          "purpose": "Ordinary full Medicaid/CHIP coverage blocks credit; limited-benefit exception and other federal credit criteria."
+        },
+        {
+          "heading": "Household Income Is Not the Only Test",
+          "purpose": "State/category differences, expected annual Marketplace MAGI, family members may follow different coverage paths."
+        },
+        {
+          "heading": "Applying Through the Marketplace or Your State",
+          "purpose": "Marketplace transfer to Medicaid agency and direct-state route; Medicaid enrollment is year-round."
+        },
+        {
+          "heading": "Rules to Check for 2027 Coverage",
+          "purpose": "Current official notice on work-requirement denial and savings restriction, immigration-status conditions, and exact official links; no predictions."
+        },
+        {
+          "heading": "The Next Step Before Choosing a Plan",
+          "purpose": "Use the official eligibility result, compare actual networks/premiums there, and avoid a universal winner or premature cancellation."
+        },
+        {
+          "heading": "Frequently Asked Questions",
+          "purpose": "What is Obamacare insurance?; What is a coverage gap in health insurance?; What disqualifies you for Medicaid?; Is ACA or Medicaid better?; Can you have Medicaid and Marketplace insurance at the same time?"
+        }
+      ],
+      "contributionAndEvidence": {
+        "findingAndBasis": "Reported-source synthesis separates a law from two coverage paths and prevents the false inference that a person can decline full Medicaid eligibility and receive federal premium credits instead. Incorporate the source’s limited-Medicaid exception and2027 denial condition. Attribute to HealthCare.gov/IRS, not invented professional experience.",
+        "inspectedPrimarySources": "[hc-medicaid-current](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/); [hc-limited](https://www.healthcare.gov/medicaid-limited-benefits/); [hc-marketplace](https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/); [irs-ptc](https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit); [hc-income](https://www.healthcare.gov/income-and-household-information/income/); [hc-poverty](https://www.healthcare.gov/glossary/federal-poverty-level-fpl/). All inspected 2026-11-04; exact captured records are bound in evidenceFiles.",
+        "provenance": "Calculated results identify our arithmetic, assumptions and nearby method; source-only synthesis names the actual agency. Preparation feasibility arithmetic is recorded, not a Phase3 implementation or Phase4 PASS."
+      },
+      "tablesToolsVisuals": "Finite source-linked table comparing identity/administration, eligibility factors, premium assistance, application route and enrollment timing. Existing comparison template with a page-specific neutral verdict heading. No insurer rankings, medical advice, national Medicaid eligibility calculation or made-up cost average.",
+      "testingAndReview": "Ordinary financial/program information, excluded from product TESTED format. Reuse existing Jonathan Velez byline without invented credentials/professional review. No clinical/personal eligibility claim. Fresh independent Phase4 review must cover exact final whole render, sources and all transformations. Reporter register: direct source-supported answer and conditional factual takeaway; no experience tee-up.",
+      "takeaway": "Use the Marketplace or state Medicaid application to determine the coverage route for each person. Medicaid and subsidized Marketplace insurance are not freely interchangeable, and limited-benefit Medicaid or a2027 work-rule denial can change the savings answer. Confirm replacement coverage before ending a plan.",
+      "inboundLinks": {
+        "required": 1,
+        "target": 3,
+        "reasonBelowTarget": "Two strong existing placements are identified for each page. One is a relevant existing collection/hub. Do not force a third or count an uninspected future sibling as already present.",
+        "placements": [
+          {
+            "source": "/compare/",
+            "target": "/compare/aca-vs-medicaid/",
+            "section": "Comparison card grid",
+            "anchor": "ACA Marketplace coverage vs Medicaid",
+            "purpose": "Reader moves from the inspected existing section to this exact decision",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          },
+          {
+            "source": "/guides/how-to-budget-with-irregular-income/",
+            "target": "/compare/aca-vs-medicaid/",
+            "section": "How Do Freelancers Budget for Health Insurance Without an Employer Plan?",
+            "anchor": "compare Marketplace coverage with Medicaid",
+            "purpose": "Reader moves from the inspected existing section to this exact decision",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          }
+        ]
+      },
+      "outboundLinks": {
+        "placements": [
+          {
+            "source": "/compare/aca-vs-medicaid/",
+            "target": "/guides/how-to-budget-with-irregular-income/",
+            "section": "The Next Step Before Choosing a Plan",
+            "anchor": "budget insurance with irregular income",
+            "purpose": "Existing destination inspected in link-source-records; supports the next budgeting action",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          },
+          {
+            "source": "/compare/aca-vs-medicaid/",
+            "target": "/budget/household-budget-calculator/",
+            "section": "The Next Step Before Choosing a Plan",
+            "anchor": "plan the monthly premium",
+            "purpose": "Existing destination inspected in link-source-records; supports the next budgeting action",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          }
+        ]
+      },
+      "technicalAndMeasurement": "Astro static, self-canonical https://www.themodernwallet.com with trailing slash; exact title≤60 and description≤160. Reuse existing byline/source/schema components and honest dates. Astro sitemap and existing search-index builder. New-route baseline not-yet-published, age-matched unchanged cohort comparator; measure incremental Google clicks over first28/second28 complete live days after deployment, with reporting delay and unavailable data explicit. Reuse ComparisonEntry and dynamic /compare/[slug].astro with neutral page-specific takeaway heading and final disclaimer scoped only to these two benefit comparisons.",
+      "evidenceFiles": [
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/metrics.json",
+          "sha256": "1b9ba89513d5e2a9c58168112d18e9ba61b3a302fe3fb66ba0ede17dbb38b555"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/serp.json",
+          "sha256": "1fab3ee648493fe6a4b4f3425cf9f928bcd9c6b124353fbfb2634ff8819896df"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/coverage.json",
+          "sha256": "63e5328e9d3c2f32d48f7eee76c1351045c8ec01ca6f57d1e061e7276b171a6c"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/coverage-tool-final-routes.json",
+          "sha256": "82ea5efe06ecd43ff43cdfae9f94e12585aaabacb745f2e871ae734d660ac3e4"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/history-summary.json",
+          "sha256": "f38ea3c0beeb000f8bc82f2bb8e8a07d9914c1e7a9d0baa5a27758be411258a5"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+          "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/preparation-calculations.json",
+          "sha256": "05d3428a61f88a00bf29bab7c6ef506dd8eb211bbb6f04991876e75bd94749cc"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-medicaid-current.txt",
+          "sha256": "5eccdbf370947aada7cad7c3162a0c7dc52e88753ead5be8c1395fc01dfcd983"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-limited.txt",
+          "sha256": "7244780bbf275cd871952c1c647f49dc98b83a2cba71452379e4254142d11436"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-marketplace.txt",
+          "sha256": "b6f5e73c146e6217293a88bf57f7db49dc5eba218a09f6b3ce89b8b2971ace1a"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/irs-ptc.txt",
+          "sha256": "36963edce1f96077ad6b2494c17f68c267b84ab9e7f27c82e15b57f108d2a7f2"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-income.txt",
+          "sha256": "5dfb2032384557ce8f54bcc21c538eca2f52f072990ac98667858fdf74bf3bea"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-poverty.txt",
+          "sha256": "bbec81d0c481ed542c9517282241930d2443759b41197333e6f18692dc8ce7de"
+        }
+      ]
+    },
+    {
+      "actionId": "N5",
+      "target": "/guides/how-to-apply-for-food-stamps/",
+      "identity": {
+        "title": "Apply for Food Stamps Through Your State SNAP Office",
+        "h1": "How to Apply for Food Stamps Through Your State",
+        "pageType": "explainer",
+        "format": "article",
+        "medium": "text",
+        "register": "operator",
+        "bodyFloor": 1200,
+        "metaDescription": "Apply for food stamps through your state SNAP agency. Follow the application, interview, and document steps, and learn when expedited service may apply."
+      },
+      "readerAndAnswer": {
+        "question": "How do I apply for food stamps? [PAA 0/0; ac 78 application-family completions, including documents and online steps]",
+        "answer": "mechanism: Find the SNAP agency for the state where you live, submit its application, complete the required interview and verification, and keep the agency notice; ask about expedited service if food is urgently needed.",
+        "placement": "section 1: Apply for Food Stamps in These Steps",
+        "audienceAndIntent": "U.S. first-time SNAP applicants who need a state-specific official path and a practical document/interview plan; article is not an application or case-status portal."
+      },
+      "keywordEvidence": "apply for food stamps: 40,500/month, KD58; snap benefits income limits: 1,300/month, KD44; snap benefits for seniors: 590/month, KD39. SEMrushUS exact metrics checked2026-11-04, corroborated by live autocomplete. Supporting phrases become sections/FAQs, not duplicate pages.",
+      "serpAndQuestions": {
+        "findings": "Raw locked; AI Overview observed. SNAP result set includes SNAP Screener/state calculators or official application/program pages; redirect-heavy top10 is not a reliable lock count.",
+        "actualCompetingPages": "Official [USAGov application instructions](https://www.usa.gov/food-stamps), [USDA state agency directory](https://fns-prod.azureedge.us/snap/state-directory), and state-application portals are the practical result type. A national guide cannot replace those portals; the proposed page answers filing/interview/verification steps and then deep-links the official state route.",
+        "questions": [
+          "What documents are needed to apply for food stamps?",
+          "Can you apply for food stamps online?",
+          "Can I apply for food stamps over the phone?",
+          "Who can apply for food stamps?",
+          "Where can I apply for food stamps in person?"
+        ],
+        "limits": "PAA noise is explicit in the question tag. Off-topic politics, taxpayer-cost, unrelated nutrition/shopping rumors and unsupported state specifics are excluded. Observed program questions not answered as the opener are assigned to the listed FAQ/section, not invented."
+      },
+      "whyNewPage": "No dedicated application guide in coverage, redirects, past charts or exact-slug history. /guides/how-to-make-a-budget/ records income/spending but does not explain SNAP filing. The amount calculator models dollars and WIC comparison explains program choice, so neither replaces these application steps.",
+      "outline": [
+        {
+          "heading": "Apply for Food Stamps in These Steps",
+          "purpose": "Numbered route: locate state agency, file, retain dated confirmation, interview, verification and notice."
+        },
+        {
+          "heading": "What to Have Ready for the SNAP Application",
+          "purpose": "Identification, household/income/resource and expense proof as requested by the state; distinguish a preparation checklist from universal required documents."
+        },
+        {
+          "heading": "Where to Apply Online or Get Help",
+          "purpose": "Official state directory, locally offered online/mail/in-person routes, written authorized representative where appropriate; no lead-capture form."
+        },
+        {
+          "heading": "What Happens After You Apply",
+          "purpose": "Agency interview/verification and normal30-day processing; eligible benefits date tied to application, not our estimate."
+        },
+        {
+          "heading": "When to Ask About Expedited SNAP Service",
+          "purpose": "Official7-day route and sourced resource/income examples; state decides, no promised approval."
+        },
+        {
+          "heading": "If Your Notice or Application Needs Follow-Up",
+          "purpose": "Use the agency and notice instructions for missing information, status, fair hearing and recertification; no claim to access cases."
+        },
+        {
+          "heading": "The Next Step for Your Food Budget",
+          "purpose": "Record actual award separately from cash, update documents as requested and use the official office for eligibility."
+        },
+        {
+          "heading": "Frequently Asked Questions",
+          "purpose": "What documents are needed to apply for food stamps?; Can you apply for food stamps online?; Can I apply for food stamps over the phone?; Who can apply for food stamps?; Where can I apply for food stamps in person?"
+        }
+      ],
+      "contributionAndEvidence": {
+        "findingAndBasis": "Reported-source practical synthesis keeps application filing, verification, expedited review and award separate. Explain why a calculator or third-party form does not file an application. Use a document-purpose table and a status/action table, not a thin directory wrapper; attribute process/timing to USDA/USAGov.",
+        "inspectedPrimarySources": "[snap-eligibility](https://fns-prod.azureedge.us/snap/recipient/eligibility); [snap-state](https://fns-prod.azureedge.us/snap/state-directory); [snap-apply](https://www.usa.gov/food-stamps); [snap-cola](https://fns-prod.azureedge.us/snap/allotment/cola). All inspected 2026-11-04; exact captured records are bound in evidenceFiles.",
+        "provenance": "Calculated results identify our arithmetic, assumptions and nearby method; source-only synthesis names the actual agency. Preparation feasibility arithmetic is recorded, not a Phase3 implementation or Phase4 PASS."
+      },
+      "tablesToolsVisuals": "Full article with numbered application sequence and a concise document-purpose checklist/table. No questionnaire collecting SSNs, no unofficial application form, no state benefit login imitation. All central source research is captured; no custom visual or calculator adds value to this process answer.",
+      "testingAndReview": "Ordinary financial/program information, excluded from product TESTED format. Reuse existing Jonathan Velez byline without invented credentials/professional review. No clinical/personal eligibility claim. Fresh independent Phase4 review must cover exact final whole render, sources and all transformations. Operator process voice, teeup-exempt because official filing steps need no company-experience claim.",
+      "takeaway": "Apply through the state where you live and keep the filing confirmation. Finish the agency’s interview/verification and ask about expedited processing when necessary. Eligibility, state channels and individual verification requests change the process; a calculator result never replaces the agency notice.",
+      "inboundLinks": {
+        "required": 1,
+        "target": 3,
+        "reasonBelowTarget": "Two strong existing placements are identified for each page. One is a relevant existing collection/hub. Do not force a third or count an uninspected future sibling as already present.",
+        "placements": [
+          {
+            "source": "/guides/",
+            "target": "/guides/how-to-apply-for-food-stamps/",
+            "section": "Guide card grid",
+            "anchor": "How to apply for food stamps",
+            "purpose": "Reader moves from the inspected existing section to this exact decision",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          },
+          {
+            "source": "/guides/how-to-make-a-budget/",
+            "target": "/guides/how-to-apply-for-food-stamps/",
+            "section": "The Four Steps to Build a Budget from Scratch",
+            "anchor": "SNAP application steps",
+            "purpose": "Reader moves from the inspected existing section to this exact decision",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          }
+        ]
+      },
+      "outboundLinks": {
+        "placements": [
+          {
+            "source": "/guides/how-to-apply-for-food-stamps/",
+            "target": "/guides/how-to-make-a-budget/",
+            "section": "The Next Step for Your Food Budget",
+            "anchor": "make a budget from actual statements",
+            "purpose": "Existing destination inspected in link-source-records; supports the next budgeting action",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          },
+          {
+            "source": "/guides/how-to-apply-for-food-stamps/",
+            "target": "/budget/household-budget-calculator/",
+            "section": "The Next Step for Your Food Budget",
+            "anchor": "plan household spending separately from food benefits",
+            "purpose": "Existing destination inspected in link-source-records; supports the next budgeting action",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+              "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+            }
+          }
+        ]
+      },
+      "technicalAndMeasurement": "Astro static, self-canonical https://www.themodernwallet.com with trailing slash; exact title≤60 and description≤160. Reuse existing byline/source/schema components and honest dates. Astro sitemap and existing search-index builder. New-route baseline not-yet-published, age-matched unchanged cohort comparator; measure incremental Google clicks over first28/second28 complete live days after deployment, with reporting delay and unavailable data explicit. Reuse Guide fields/dynamic guide page, with final financial-information disclaimer scoped to this new guide. No new lead form or consultation CTA; the Guide shape has none.",
+      "evidenceFiles": [
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/metrics.json",
+          "sha256": "1b9ba89513d5e2a9c58168112d18e9ba61b3a302fe3fb66ba0ede17dbb38b555"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/serp.json",
+          "sha256": "1fab3ee648493fe6a4b4f3425cf9f928bcd9c6b124353fbfb2634ff8819896df"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/coverage.json",
+          "sha256": "63e5328e9d3c2f32d48f7eee76c1351045c8ec01ca6f57d1e061e7276b171a6c"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/coverage-tool-final-routes.json",
+          "sha256": "82ea5efe06ecd43ff43cdfae9f94e12585aaabacb745f2e871ae734d660ac3e4"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/history-summary.json",
+          "sha256": "f38ea3c0beeb000f8bc82f2bb8e8a07d9914c1e7a9d0baa5a27758be411258a5"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+          "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/preparation-calculations.json",
+          "sha256": "05d3428a61f88a00bf29bab7c6ef506dd8eb211bbb6f04991876e75bd94749cc"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligibility.txt",
+          "sha256": "13160ffc3ba82531a517e7e6f13d4b3df9a75f4a6afb4491a6701880c391c911"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-state.txt",
+          "sha256": "8bf6530c65b122cc7b36c4c0ceca308bb97610fb6fe203fbf6cd8d245335b33b"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-apply.txt",
+          "sha256": "e86cb709edc18e4add040fd933d18e84ff3d4b1dc635719a99cc6b3722df6d0f"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-cola.txt",
+          "sha256": "f8ebb22951e90e78e6d37cd30fe07c357e76b4c36479b98010459c689c1753c5"
+        }
+      ]
+    }
+  ],
+  "emergingClusters": [
+    "snap benefits calculator (2,900/month SEMrushUS; support: snap benefits income limits, snap benefits for seniors) → create new content → /budget/snap-benefits-calculator/ [calculator]. Dedicated intent gap; not a claim of rising search volume.",
+    "aca subsidy calculator (1,900/month SEMrushUS; support: aca subsidy income limits, aca subsidy cliff, aca subsidy income limits 2027) → create new content → /budget/aca-subsidy-calculator/ [calculator]. Dedicated intent gap; not a claim of rising search volume.",
+    "snap vs wic (1,300/month SEMrushUS; support: snap benefits vs ebt) → create new content → /compare/snap-vs-wic/ [comparison table/database]. Dedicated intent gap; not a claim of rising search volume. QUESTION-EVIDENCE FLAG: all6 PAA are off the comparison intent; question is completion-backed.",
+    "aca vs medicaid (390/month SEMrushUS; support: program-identity questions) → create new content → /compare/aca-vs-medicaid/ [comparison table/database]. Dedicated intent gap; not a claim of rising search volume. QUESTION-EVIDENCE FLAG:3/6 PAA are off-intent or broad policy; question is completion-backed.",
+    "apply for food stamps (40,500/month SEMrushUS; support: snap benefits income limits, snap benefits for seniors) → create new content → /guides/how-to-apply-for-food-stamps/ [article]. Dedicated intent gap; not a claim of rising search volume."
+  ],
+  "exclusions": [
+    "No unrelated site expansion, treatment/medical advice, clinical tests, personalized benefits determination, unsupported professional-review claim or product TESTED format.",
+    "ACA income limits/cliff and SNAP limits/seniors are folded into the amount/process pages, not duplicate standalone URLs. SNAP versus EBT is a terminology answer in the program/application coverage.",
+    "ACA alternatives: real completions exist but this run excludes insurer/short-term-plan rankings and unsupported recommendations that require separate coverage analysis. SNAP alternatives completions refer mostly to Linux/Snapchat, so they are rejected; SNAP has no purchase price. Cost lens is satisfied by the ACA premium-credit tool and SNAP allotment table, not invented pricing.",
+    "Exclude state login/status/balance navigation, stale2025 shutdown/payment news, congressional predictions, political debates, and state-specific eligibility pages from this bounded first cluster. Current2027/fiscal2027 financial rules are sourced; source warnings on pending work/noncitizen updates prevent copying stale exemption lists.",
+    "No consolidation, redirects, canonical changes, existing metadata experiment, or substantive existing-body expansion. Existing pages receive only declared contextual links and honest visible updated dates; sitemap lastmod stays unchanged for link-only edits.",
+    "Do not use existing Medicare/Medicaid or early-retirement pages as new inbound/outbound sources because relevant inherited coverage statements would need additional correction. Preserve unrelated work. No paid-client/upsell review-release exception applies.",
+    "Budget hub/listing changes are generated by the two new spokes; header/nav remains unchanged. No global author, date, disclaimer, CTA or monetization rewrite."
+  ],
+  "executionPlan": [
+    {
+      "phase": 1,
+      "action": "Phase1: record no consolidation actions; preserve redirects/canonicals and existing routes."
+    },
+    {
+      "phase": 2,
+      "action": "Phase2: no existing metadata rows. Create only the approved metadata for the five new routes duringPhase3."
+    },
+    {
+      "phase": 3,
+      "action": "Phase3: create the five exact new routes/briefs through the configured API writer; build both real React calculators and exports underPhase3c, execute evidence/case retrieval and code validation, keep ordinary labels."
+    },
+    {
+      "phase": 4,
+      "action": "Phase4: fresh independent adversarial content/evidence/tool review, reproducible numerical replay and complete final-render audit after all transformations; at most two targeted substantive reworks, ordinary editorial stop policy."
+    },
+    {
+      "phase": 5,
+      "action": "Phase5: no substantive existing-body rows. Keep any necessary clarification to the exact approved link sentences, with no regenerated existing pages."
+    },
+    {
+      "phase": 6,
+      "action": "Phase6: apply L1–L3; register budget hub and guide/comparison collection links; implement the brief’s two existing inbound placements per new page and relevant inspected outbound links, without forced third links. Date only visibly changed records honestly."
+    },
+    {
+      "phase": 7,
+      "action": "Phase7: let Astro generate sitemap entries for all five canonical new routes, add their substantive lastmods using the existing serialization mechanism, rebuild search index, and prepare an eligible IndexNow list without submitting."
+    },
+    {
+      "phase": 8,
+      "action": "Phase8: report actual counts, evidence/provenance/model/fallback status and all exclusions; register contribution growth records without claiming SEO uplift; continue automatically after the approved scope passes."
+    },
+    {
+      "phase": 9,
+      "action": "Phase9: isolate only this run’s approved changes against the current published branch, build and independently review exact output, commit once and push to origin/main; preserve unrelated staged/dirty files. Verify host revision and every affected canonical render live, then submit only verified eligible URLs using the project IndexNow helper. Report actual SHA, failures and all verified new-page links."
+    }
+  ],
+  "publicationScope": {
+    "commit": true,
+    "push": true,
+    "liveVerification": true,
+    "indexNow": true
+  },
+  "preparation": {
+    "status": "PASS",
+    "readiness": {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/readiness.md",
+      "sha256": "ceaa91331ce1a539098ef9e457805b276c6ef1078a9c07a247662b7496ef1615"
+    }
+  },
+  "evidenceFiles": [
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/serp-inspection.md",
+      "sha256": "dcb129c5a6bb3c6a9191f4f8eaa9365a56a9a2d523d969bf5699731dfa25ee84"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/rule-application.json",
+      "sha256": "9818825f8f6450b9788ca23ec16e3a6b8ceabffa59e8b3ff241ace01a856e1f0"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/prior-outcomes.json",
+      "sha256": "b82bd416c6dfbb4f709e4c131fa5b143eee3a9b905705627de37d300e9538e4a"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/discovery-decisions.json",
+      "sha256": "bc3efb66aead4ae6111fedfda077424eeca638e6e1971f2d08d675ac40ab457d"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/metrics.json",
+      "sha256": "1b9ba89513d5e2a9c58168112d18e9ba61b3a302fe3fb66ba0ede17dbb38b555"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/fullsearch.json",
+      "sha256": "80edb7517ce51541cf171eb8c60e9ff4071273745e765acaef957cce0ff1cf53"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/autocomplete-aca.csv",
+      "sha256": "939c6135241b133a387b8362bfc6ab0756fa09e8d20f36af231cf1980a712243"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/autocomplete-snap.csv",
+      "sha256": "fbbdbc2d67099f83032c006d5c73a70411c42e8ffec36fade5c41a2d4e2c9d57"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/autocomplete-comparison-cost.csv",
+      "sha256": "bc29b9de5c917959ce8816581c902cdb805db9265bc609560e94789c54f4440c"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/autocomplete-head-questions.csv",
+      "sha256": "639023c99b42b302175090a5819141aff0922c9371d46ad635cccb914ff618fe"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/serp.json",
+      "sha256": "1fab3ee648493fe6a4b4f3425cf9f928bcd9c6b124353fbfb2634ff8819896df"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/coverage.json",
+      "sha256": "63e5328e9d3c2f32d48f7eee76c1351045c8ec01ca6f57d1e061e7276b171a6c"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/coverage-tool-final-routes.json",
+      "sha256": "82ea5efe06ecd43ff43cdfae9f94e12585aaabacb745f2e871ae734d660ac3e4"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/history-summary.json",
+      "sha256": "f38ea3c0beeb000f8bc82f2bb8e8a07d9914c1e7a9d0baa5a27758be411258a5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/technical-inspection.json",
+      "sha256": "2b548ec3c2f1ee09dea3b77a2018bbf344658c959fc622d0841c9dc4102c7427"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-inspections.json",
+      "sha256": "005ebced6f218c199578c561bdc078537aedc2cb03ef2052dcc50441054b34d9"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/preparation-calculations.json",
+      "sha256": "05d3428a61f88a00bf29bab7c6ef506dd8eb211bbb6f04991876e75bd94749cc"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/writer-preflight.json",
+      "sha256": "a310b74c3b1e4701af1cddea0d0558f3d7100d1598b28b4fcec6bf20b4aaeb42"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/index.json",
+      "sha256": "9d1f34a3f35fa10723fdcaae0029ccae44681e8b9a3887ac39f7f3b1e46b744b"
+    }
+  ]
+}

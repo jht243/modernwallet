@@ -1,0 +1,47 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "status": "instructions-current-awaiting-final-candidate",
+  "startup": {
+    "exitCode": 0,
+    "revision": "850b1e422607e8ed8ca999f6a1c8dcd98a6c10c8",
+    "runId": "d059491d93234c5fbd1a627c0704ac17"
+  },
+  "instructionHashes": {
+    ".claude/commands/_content-standard.md": "c100ce0716ab042e4ee80f0cd6764a51cbe75238416ba0d350402dfe87f83786",
+    ".claude/commands/_anti-ai-language.md": "59194cdd7f83f7423489faa07759e571c73ef993a681bd917faa8a6f1a6803ac",
+    ".claude/commands/_experience.md": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+    ".claude/commands/_testing-labels.md": "8a9dc3c646a583d7afe80339efb880be431a9f528e491ef0ea156bee4db053d9",
+    ".claude/commands/_decision-evidence.md": "6b47b8b4b6763f5b4ff303ca0443ecf67c01d5efae95c2b0c0e968131fb16d98",
+    ".claude/commands/_workflow-checkpoints.md": "a80daacfb208a9d1e1c95b4c199f4a7ae671b89ee54a9f4cc25cbb2689e0f43b",
+    ".claude/commands/_rendered-page-audit.md": "5e649fef4cb23a9c97806bce5f04cee59a329265534f683b40ade791b9cc06da",
+    ".claude/commands/_mindmap-execution.md": "2ee21c15b10e654b4c6126089d8c2d2259d7edbfcb512bc09bd06553b14d6253",
+    ".claude/commands/_remediation-ladder.md": "47ec87072c702d4fcca14bfb1d426e03427583b941415862820dc0f1865ee3e8"
+  },
+  "application": [
+    {
+      "rule": "Local excluded presentation",
+      "decision": "Program financial information and explanatory tools use ordinary format; code testing cannot enable TESTED; existing Jonathan Velez identity requires no invented professional review."
+    },
+    {
+      "rule": "Approved reader decisions",
+      "artifact": "reports/mindmap-pass/2026-11-04-aca-snap/approval-manifest.json",
+      "decision": "N1/N2 first-section mechanisms, N3/N4 source-reported distinctions, N5 state application mechanism. Preserve approved bounds and 1200/1500 prose floors."
+    },
+    {
+      "rule": "Sources and counterexamples",
+      "decision": "Independently inspected current IRS2027 table, Q26 enrollment tobacco vs benchmark distinction, Q31 uncapped repayment, HealthCaregov2027 Medicaid denial, USDAFY2027 allotment/deductions and SNAP filing30day/expedited7day guidance, WIC category/income/assessment. Recheck exact claims against full closed facts and sources when candidate arrives."
+    },
+    {
+      "rule": "Exact render",
+      "decision": "No content verdict or PASS receipts until final transformed snapshot/manifest plus real browser/tool observations. All5 new routes, L1\u2013L3 and every changed template/list variant need inventory and mechanical checks."
+    },
+    {
+      "rule": "Remediation",
+      "decision": "Mechanical repairs first; quote exact fix-in-place targets; preserve review counters and unchanged PASS. No client/upsell exception in this run."
+    },
+    {
+      "rule": "Deployment",
+      "decision": "Root authorized publish only after independent content/render PASS. Exact live comparison/actualhost proof precede IndexNow and measurement closure."
+    }
+  ]
+}

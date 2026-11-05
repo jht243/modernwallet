@@ -1,0 +1,22 @@
+{
+  "author": "root",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/budget/snap-benefits-calculator/",
+      "expectedUpdatedDate": "2026-11-04"
+    },
+    {
+      "path": "/budget/aca-subsidy-calculator/",
+      "expectedUpdatedDate": "2026-11-04"
+    },
+    {
+      "path": "/compare/snap-vs-wic/",
+      "expectedUpdatedDate": "2026-11-04"
+    },
+    {
+      "path": "/compare/aca-vs-medicaid/",
+      "expectedUpdatedDate": "2026-11-04"
+    }
+  ]
+}

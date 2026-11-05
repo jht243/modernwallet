@@ -1,0 +1,753 @@
+{
+  "bodyWords": 2281,
+  "sentences": [
+    {
+      "field": "introText",
+      "text": "Medicaid and the ACA are not the same thing: the Affordable Care Act (ACA) is a law, Marketplace plans are private health insurance, and Medicaid is a joint federal and state public coverage program.",
+      "words": 34
+    },
+    {
+      "field": "introText",
+      "text": "In an ACA vs Medicaid comparison, Marketplace plans are bought through the Health Insurance Marketplace, while each state runs Medicaid within federal guidelines.",
+      "words": 23
+    },
+    {
+      "field": "introText",
+      "text": "HealthCare.gov states that a person in a Medicaid program that counts as minimum essential coverage is not eligible for a premium tax credit or other savings on a Marketplace plan.",
+      "words": 30
+    },
+    {
+      "field": "introText",
+      "text": "Limited-benefit Medicaid works differently.",
+      "words": 4
+    },
+    {
+      "field": "introText",
+      "text": "A new 2027 Medicaid work requirement can also leave some adults with Marketplace access but no savings.",
+      "words": 17
+    },
+    {
+      "field": "introText",
+      "text": "The Marketplace or the state Medicaid agency makes the eligibility decision for each person in a household.",
+      "words": 17
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "text": "Marketplace coverage and Medicaid are two separate coverage paths: one is private insurance with income-based savings, and the other is a public program run jointly by the federal government and the states.",
+      "words": 32
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "text": "The Internal Revenue Service (IRS) describes the Marketplace as the place to find private health insurance options, buy a plan, and get help with premiums and out-of-pocket costs for those who are eligible.",
+      "words": 33
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "text": "Monthly premiums for a Marketplace plan go directly to the insurance company, not to the Marketplace.",
+      "words": 16
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "text": "Medicaid and the Children's Health Insurance Program (CHIP) provide free or low-cost coverage to eligible low-income adults, families and children, pregnant women, the elderly, and people with disabilities, according to HealthCare.gov.",
+      "words": 31
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "text": "Medicaid programs must follow federal guidelines, but eligible income levels, coverage and costs differ from state to state.",
+      "words": 18
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "text": "Some Medicaid programs pay for care directly, and others use private insurance companies to provide Medicaid coverage.",
+      "words": 17
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "text": "Benefits also follow different rules.",
+      "words": 5
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "text": "Medicaid benefits differ by state, though HealthCare.gov says all states provide comprehensive coverage.",
+      "words": 13
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "text": "Every Marketplace plan covers 10 benefit categories, including prescription drugs, emergency services, hospitalization, laboratory services, and mental health and substance use disorder services, along with pre-existing conditions and free preventive services from in-network providers.",
+      "words": 34
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "text": "Both paths count as qualifying health coverage.",
+      "words": 7
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "text": "HealthCare.gov lists Marketplace plans, Medicaid and CHIP among the coverage types that meet the law's minimum requirements for comprehensive health coverage.",
+      "words": 21
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "Eligibility for full-benefit Medicaid generally prevents a person from receiving federal premium savings on a Marketplace plan.",
+      "words": 17
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "The IRS lists this as a premium tax credit condition: the person enrolled in Marketplace coverage must not be eligible for coverage through a government program such as Medicaid or CHIP.",
+      "words": 31
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "HealthCare.gov puts it plainly: \"If you qualify for Medicaid, you aren't eligible for savings on a Marketplace plan.\"",
+      "words": 18
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "Declining Medicaid does not restore the savings.",
+      "words": 7
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "A person eligible for full Medicaid or CHIP who keeps a Marketplace plan pays full price for the premium and for covered services.",
+      "words": 23
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "A child may also lose CHIP eligibility if the family keeps the Marketplace plan.",
+      "words": 14
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "Limited-benefit Medicaid is one exception.",
+      "words": 5
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "Some limited types of Medicaid pay only for family planning, treatment of an emergency medical condition, or tuberculosis services.",
+      "words": 19
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "When a Medicaid program does not count as minimum essential coverage, the person may be eligible for premium tax credits and other Marketplace savings if they qualify based on income and other criteria.",
+      "words": 33
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "HealthCare.gov's Medicaid minimum essential coverage lookup shows, by state, whether a given Medicaid program counts and what action to take.",
+      "words": 20
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "People with limited Medicaid can also fill out a Marketplace application to find out whether they qualify for full-benefit Medicaid or a Marketplace plan with savings.",
+      "words": 26
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "Medicaid status is one of several federal tests.",
+      "words": 8
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "The IRS lists these premium tax credit requirements:",
+      "words": 8
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "Household income generally from 100 percent to 400 percent of the federal poverty level (FPL) for the family size.",
+      "words": 19
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "A filing status other than married filing separately, apart from a special rule for certain victims of domestic abuse or spousal abandonment.",
+      "words": 22
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "Not being claimable as a dependent by another person.",
+      "words": 9
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "No access to affordable employer coverage that provides minimum value for the person enrolled.",
+      "words": 14
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "Payment of the share of premiums not covered by advance credit payments.",
+      "words": 12
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "A timing rule applies when status changes mid-year.",
+      "words": 8
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "If the Marketplace found a person ineligible for Medicaid at enrollment and approved advance credit payments, the IRS generally treats that person as not eligible for Medicaid for the rest of the plan year, even if Medicaid later approves coverage.",
+      "words": 40
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "text": "The IRS still tells anyone who may be enrolled in both Medicaid and a Marketplace plan with advance credit payments to contact the Marketplace immediately.",
+      "words": 25
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "Household income alone does not decide whether a person gets Medicaid or Marketplace savings, because state rules and personal categories change the result.",
+      "words": 23
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "HealthCare.gov says each state's coverage options consider income, household size, family status such as pregnancy or caring for young children, disability, age and other factors.",
+      "words": 25
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "Some states expanded Medicaid to cover adults below a certain income level, and others did not.",
+      "words": 16
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "HealthCare.gov advises applying for Medicaid even when income looks too high.",
+      "words": 11
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "That advice applies especially to people who have children, are pregnant or have a disability.",
+      "words": 15
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "The federal poverty level is a yearly income measure used for both programs.",
+      "words": 13
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "HealthCare.gov's federal poverty level table lists 2026 amounts of $15,960 for one person and $33,000 for a family of four, with higher amounts in Alaska and Hawaii.",
+      "words": 27
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "Under its general bands, income below 138 percent of FPL may qualify for Medicaid in an expansion state, and income below 100 percent \"probably won't qualify for savings on a Marketplace plan\" but may qualify for Medicaid.",
+      "words": 37
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "Both programs measure income with modified adjusted gross income (MAGI).",
+      "words": 10
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "HealthCare.gov's income guide defines MAGI as adjusted gross income plus untaxed foreign income, non-taxable Social Security benefits and tax-exempt interest, without Supplemental Security Income.",
+      "words": 24
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "Marketplace savings are based on expected household income for the coverage year rather than last year's income.",
+      "words": 17
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "Self-employed applicants count the income they expect to make from the business after expenses.",
+      "words": 14
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "For income that is hard to predict, HealthCare.gov says to report current income, review the yearly estimate it shows, and update the application as changes happen.",
+      "words": 26
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "A wrong estimate carries a tax cost: for tax years after 2025, the IRS applies no repayment cap, so the full amount of advance credit payments above the allowed credit is added to the tax bill.",
+      "words": 36
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "Members of one household can end up in different programs.",
+      "words": 10
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "HealthCare.gov notes that children may qualify for CHIP even when a parent does not qualify for Medicaid.",
+      "words": 17
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "text": "In many cases, a parent who qualifies for Marketplace savings will have children who qualify for Medicaid or CHIP.",
+      "words": 19
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "A household can apply for Medicaid through a Marketplace application or directly through its state Medicaid agency, and either route can lead to the other program.",
+      "words": 26
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "On a Marketplace application, if anyone in the household looks eligible for Medicaid or CHIP, the Marketplace securely sends that information to the state agency, which then contacts the household about enrollment.",
+      "words": 32
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "The same Marketplace application shows whether anyone qualifies for cost savings on a Marketplace plan.",
+      "words": 15
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "The direct route starts with the state.",
+      "words": 7
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "HealthCare.gov's Medicaid and CHIP coverage page lists contact information for each state's Medicaid agency.",
+      "words": 14
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "A state denial feeds back into the Marketplace.",
+      "words": 8
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "In most cases, the state securely sends the person's contact information to the Marketplace, which mails a letter about Marketplace coverage.",
+      "words": 21
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "A denied applicant can apply and enroll in Marketplace coverage without waiting for that letter.",
+      "words": 15
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "Enrollment timing differs between the two:",
+      "words": 6
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "**Medicaid and CHIP:** apply any time of year, and coverage can start immediately.",
+      "words": 13
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "**Marketplace Open Enrollment:** November 1 to January 15.",
+      "words": 8
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "Enroll by December 15 for coverage that starts January 1, or by January 15 for coverage that starts February 1.",
+      "words": 20
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "**Marketplace outside Open Enrollment:** a qualifying life change opens a Special Enrollment Period.",
+      "words": 13
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "Medicaid may also help pay for medical care from the last 3 months, even before enrollment.",
+      "words": 16
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "Payment depends on the family's income and medical expenses at the time care was received.",
+      "words": 15
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "Marketplace applications can be filed online, by phone, with help from someone in the community, through an agent or broker, through certified enrollment partner websites, or on paper.",
+      "words": 28
+    },
+    {
+      "field": "Applying Through the Marketplace or Your State",
+      "text": "HealthCare.gov offers a checklist of what to gather before applying on its Marketplace quick guide.",
+      "words": 15
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "Two rule changes shape 2027 coverage decisions: a Medicaid work requirement in some states and immigration-status rules for full Medicaid and Marketplace savings.",
+      "words": 23
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "Both notices appear on HealthCare.gov's Medicaid and CHIP coverage page and its Marketplace quick guide.",
+      "words": 15
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "Starting January 1, 2027, adults in states that provide Medicaid based on income alone may need to meet a new monthly work requirement to qualify for Medicaid or keep it.",
+      "words": 30
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "HealthCare.gov states that a person who lost or was denied Medicaid for not meeting the state's work requirement may be able to get Marketplace coverage but won't qualify for savings to lower Marketplace plan costs.",
+      "words": 35
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "After an ordinary Medicaid denial, by contrast, HealthCare.gov says a person may qualify for the premium tax credit or other cost savings.",
+      "words": 22
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "The reason for a Medicaid denial therefore matters for the Marketplace budget.",
+      "words": 12
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "A household comparing plans after a work-requirement denial should expect full-price premiums when estimating monthly costs.",
+      "words": 16
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "HealthCare.gov says that due to a law change, only people with these immigration statuses are now eligible for full Medicaid or CHIP coverage:",
+      "words": 23
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "Lawful Permanent Resident (LPR, Green Card holder)",
+      "words": 7
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "Cuban or Haitian entrant",
+      "words": 4
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "Compact of Free Association (COFA) migrant",
+      "words": 6
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "Depending on the state, lawfully residing pregnant women and children may also be eligible for full Medicaid or CHIP.",
+      "words": 19
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "For Marketplace plans, starting January 1, 2027, only certain immigration statuses qualify for savings.",
+      "words": 14
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "People with other statuses may still be eligible for Marketplace coverage without savings.",
+      "words": 13
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "For 2027 Marketplace coverage starting January 1, the enrollment deadline is December 15.",
+      "words": 13
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "text": "Medicaid applications remain open year-round.",
+      "words": 5
+    },
+    {
+      "field": "verdict",
+      "text": "The next step is an official eligibility result for each person in the household, from a Marketplace application on HealthCare.gov or from the state Medicaid agency.",
+      "words": 26
+    },
+    {
+      "field": "verdict",
+      "text": "That result answers the ACA vs Medicaid question person by person.",
+      "words": 11
+    },
+    {
+      "field": "verdict",
+      "text": "Full-benefit Medicaid eligibility removes Marketplace savings, while limited-benefit Medicaid, an ordinary Medicaid denial and a work-requirement denial each lead to a different savings answer.",
+      "words": 24
+    },
+    {
+      "field": "verdict",
+      "text": "Neither option is the better choice for every household, because eligibility rules decide which coverage comes with financial help.",
+      "words": 19
+    },
+    {
+      "field": "verdict",
+      "text": "If the result points to a Marketplace plan, compare each plan's monthly premium and provider network in the Marketplace before enrolling.",
+      "words": 21
+    },
+    {
+      "field": "verdict",
+      "text": "A Marketplace plan starts only after the first premium is paid, if there is one.",
+      "words": 15
+    },
+    {
+      "field": "verdict",
+      "text": "Keep the current plan until replacement coverage is confirmed.",
+      "words": 9
+    },
+    {
+      "field": "verdict",
+      "text": "If Medicaid is approved while a Marketplace plan is active, HealthCare.gov says to end the Marketplace plan when Medicaid starts, unless you tell the state agency you want to keep both.",
+      "words": 31
+    },
+    {
+      "field": "verdict",
+      "text": "Once the premium amount is known, plan the monthly premium alongside other bills, and if income changes month to month, budget insurance with irregular income before you update the Marketplace income estimate.",
+      "words": 32
+    },
+    {
+      "field": "What is Obamacare insurance?",
+      "text": "The Affordable Care Act is a law, and Marketplace plans are private health insurance bought through the Health Insurance Marketplace.",
+      "words": 20
+    },
+    {
+      "field": "What is Obamacare insurance?",
+      "text": "HealthCare.gov uses the terms Marketplace and Marketplace plan.",
+      "words": 8
+    },
+    {
+      "field": "What is Obamacare insurance?",
+      "text": "Every Marketplace plan covers 10 benefit categories, including prescription drugs, emergency services and hospitalization, and covers pre-existing conditions.",
+      "words": 18
+    },
+    {
+      "field": "What is Obamacare insurance?",
+      "text": "Depending on expected household income, a buyer may qualify for a premium tax credit that lowers the monthly premium, plus extra savings on deductibles, copayments and coinsurance.",
+      "words": 27
+    },
+    {
+      "field": "What is Obamacare insurance?",
+      "text": "Medicaid is a separate public program run jointly by the federal government and the states.",
+      "words": 15
+    },
+    {
+      "field": "What is a coverage gap in health insurance?",
+      "text": "The cited HealthCare.gov pages do not define a coverage gap, but they describe situations where a person may get neither Medicaid nor Marketplace savings.",
+      "words": 24
+    },
+    {
+      "field": "What is a coverage gap in health insurance?",
+      "text": "HealthCare.gov says that in a state that has not expanded Medicaid, a person who is not eligible may have fewer coverage options and, depending on income, might not qualify for savings on a private plan.",
+      "words": 35
+    },
+    {
+      "field": "What is a coverage gap in health insurance?",
+      "text": "Its poverty-level guidance adds that income below 100 percent of FPL probably won't qualify for Marketplace savings.",
+      "words": 17
+    },
+    {
+      "field": "What is a coverage gap in health insurance?",
+      "text": "Starting in 2027, a work-requirement denial can produce a similar result: Marketplace access without savings.",
+      "words": 15
+    },
+    {
+      "field": "What is a coverage gap in health insurance?",
+      "text": "HealthCare.gov still advises applying for Medicaid in non-expansion states, because each state considers factors beyond income.",
+      "words": 16
+    },
+    {
+      "field": "What disqualifies you for Medicaid?",
+      "text": "No single factor disqualifies everyone, because each state sets its own Medicaid income levels and categories within federal guidelines.",
+      "words": 19
+    },
+    {
+      "field": "What disqualifies you for Medicaid?",
+      "text": "Income too high for Medicaid or an immigration status outside the eligible list can block full coverage, and living in a state that has not expanded Medicaid can mean fewer coverage options.",
+      "words": 32
+    },
+    {
+      "field": "What disqualifies you for Medicaid?",
+      "text": "Starting January 1, 2027, adults in states that cover people based on income alone may lose or be denied Medicaid for not meeting a monthly work requirement.",
+      "words": 27
+    },
+    {
+      "field": "What disqualifies you for Medicaid?",
+      "text": "HealthCare.gov still recommends applying when income looks too high, especially for people with children, a pregnancy or a disability.",
+      "words": 19
+    },
+    {
+      "field": "Is ACA or Medicaid better?",
+      "text": "Neither is better for every household, because eligibility rules decide which option comes with financial help.",
+      "words": 16
+    },
+    {
+      "field": "Is ACA or Medicaid better?",
+      "text": "A person eligible for full-benefit Medicaid gets free or low-cost coverage there, and would pay full price for a Marketplace plan.",
+      "words": 21
+    },
+    {
+      "field": "Is ACA or Medicaid better?",
+      "text": "A person denied Medicaid for ordinary reasons may qualify for a premium tax credit on a Marketplace plan, while a 2027 work-requirement denial allows Marketplace coverage without savings.",
+      "words": 28
+    },
+    {
+      "field": "Is ACA or Medicaid better?",
+      "text": "Medicaid benefits differ by state but are comprehensive in all states, and every Marketplace plan covers the same 10 benefit categories.",
+      "words": 21
+    },
+    {
+      "field": "Is ACA or Medicaid better?",
+      "text": "Compare actual premiums and provider networks after the eligibility result arrives.",
+      "words": 11
+    },
+    {
+      "field": "Can you have Medicaid and Marketplace insurance at the same time?",
+      "text": "Yes, a person can keep both, but full-benefit Medicaid means paying full price for the Marketplace plan premium and covered services.",
+      "words": 21
+    },
+    {
+      "field": "Can you have Medicaid and Marketplace insurance at the same time?",
+      "text": "HealthCare.gov says to tell the state agency if you want to keep both, and notes that a child may no longer qualify for CHIP if the family keeps the Marketplace plan.",
+      "words": 31
+    },
+    {
+      "field": "Can you have Medicaid and Marketplace insurance at the same time?",
+      "text": "Limited-benefit Medicaid is different: a person may still qualify for Marketplace savings based on income and other factors.",
+      "words": 18
+    },
+    {
+      "field": "Can you have Medicaid and Marketplace insurance at the same time?",
+      "text": "The IRS tells anyone who may be enrolled in both Medicaid and a Marketplace plan with advance credit payments to contact the Marketplace immediately.",
+      "words": 24
+    }
+  ],
+  "longRuns": [
+    {
+      "start": 100,
+      "first": "Every Marketplace plan covers 10 benefit categories, including prescription drugs, emergency services and hospitalization, and covers pre-existing conditions.",
+      "last": "Income too high for Medicaid or an immigration status outside the eligible list can block full coverage, and living in a state that has not expanded Medicaid can mean fewer coverage options.",
+      "lengths": [
+        18,
+        27,
+        15,
+        24,
+        35,
+        17,
+        15,
+        16,
+        19,
+        32
+      ]
+    },
+    {
+      "start": 101,
+      "first": "Depending on expected household income, a buyer may qualify for a premium tax credit that lowers the monthly premium, plus extra savings on deductibles, copayments and coinsurance.",
+      "last": "Starting January 1, 2027, adults in states that cover people based on income alone may lose or be denied Medicaid for not meeting a monthly work requirement.",
+      "lengths": [
+        27,
+        15,
+        24,
+        35,
+        17,
+        15,
+        16,
+        19,
+        32,
+        27
+      ]
+    },
+    {
+      "start": 102,
+      "first": "Medicaid is a separate public program run jointly by the federal government and the states.",
+      "last": "HealthCare.gov still recommends applying when income looks too high, especially for people with children, a pregnancy or a disability.",
+      "lengths": [
+        15,
+        24,
+        35,
+        17,
+        15,
+        16,
+        19,
+        32,
+        27,
+        19
+      ]
+    },
+    {
+      "start": 103,
+      "first": "The cited HealthCare.gov pages do not define a coverage gap, but they describe situations where a person may get neither Medicaid nor Marketplace savings.",
+      "last": "Neither is better for every household, because eligibility rules decide which option comes with financial help.",
+      "lengths": [
+        24,
+        35,
+        17,
+        15,
+        16,
+        19,
+        32,
+        27,
+        19,
+        16
+      ]
+    },
+    {
+      "start": 104,
+      "first": "HealthCare.gov says that in a state that has not expanded Medicaid, a person who is not eligible may have fewer coverage options and, depending on income, might not qualify for savings on a private plan.",
+      "last": "A person eligible for full-benefit Medicaid gets free or low-cost coverage there, and would pay full price for a Marketplace plan.",
+      "lengths": [
+        35,
+        17,
+        15,
+        16,
+        19,
+        32,
+        27,
+        19,
+        16,
+        21
+      ]
+    },
+    {
+      "start": 105,
+      "first": "Its poverty-level guidance adds that income below 100 percent of FPL probably won't qualify for Marketplace savings.",
+      "last": "A person denied Medicaid for ordinary reasons may qualify for a premium tax credit on a Marketplace plan, while a 2027 work-requirement denial allows Marketplace coverage without savings.",
+      "lengths": [
+        17,
+        15,
+        16,
+        19,
+        32,
+        27,
+        19,
+        16,
+        21,
+        28
+      ]
+    },
+    {
+      "start": 106,
+      "first": "Starting in 2027, a work-requirement denial can produce a similar result: Marketplace access without savings.",
+      "last": "Medicaid benefits differ by state but are comprehensive in all states, and every Marketplace plan covers the same 10 benefit categories.",
+      "lengths": [
+        15,
+        16,
+        19,
+        32,
+        27,
+        19,
+        16,
+        21,
+        28,
+        21
+      ]
+    }
+  ],
+  "distribution": {
+    "short": 17,
+    "medium": 20,
+    "long": 83
+  },
+  "paragraphsOver3": [
+    [
+      "What is Obamacare insurance?",
+      5
+    ],
+    [
+      "What is a coverage gap in health insurance?",
+      5
+    ],
+    [
+      "What disqualifies you for Medicaid?",
+      4
+    ],
+    [
+      "Is ACA or Medicaid better?",
+      5
+    ],
+    [
+      "Can you have Medicaid and Marketplace insurance at the same time?",
+      4
+    ]
+  ]
+}

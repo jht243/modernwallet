@@ -1,0 +1,10 @@
+{
+  "author": "root",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/compare/snap-vs-wic/",
+      "expectedUpdatedDate": "2026-11-04"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "status": "registered-before-publication",
+  "priorLedgerSha256": "ec29ae29b21f9ec93583af6dd0f0fb3346df8e54190d7b57d73e8eb7891d2957",
+  "contributions": [
+    {
+      "id": "2026-11-04-aca-snap:aca-subsidy-calculator",
+      "contributionId": "2026-11-04-aca-snap:aca-subsidy-calculator",
+      "path": "/budget/aca-subsidy-calculator/",
+      "originRoutine": "mindmap-pass",
+      "evidenceFile": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/aca-subsidy-calculator/evidence.json",
+      "growthFile": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/aca-subsidy-calculator/growth.json",
+      "status": "approved-awaiting-publication",
+      "registeredAt": "2026-11-05T04:15:23.524387+00:00",
+      "primaryMetric": "incremental Google clicks",
+      "hypothesis": "Clearer direct answer and scoped program math/process may earn incremental relevant Google clicks. Unproven.",
+      "outcomeStatus": "unknown"
+    },
+    {
+      "id": "2026-11-04-aca-snap:snap-benefits-calculator",
+      "contributionId": "2026-11-04-aca-snap:snap-benefits-calculator",
+      "path": "/budget/snap-benefits-calculator/",
+      "originRoutine": "mindmap-pass",
+      "evidenceFile": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/snap-benefits-calculator/evidence.json",
+      "growthFile": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/snap-benefits-calculator/growth.json",
+      "status": "approved-awaiting-publication",
+      "registeredAt": "2026-11-05T04:15:23.524787+00:00",
+      "primaryMetric": "incremental Google clicks",
+      "hypothesis": "Clearer direct answer and scoped program math/process may earn incremental relevant Google clicks. Unproven.",
+      "outcomeStatus": "unknown"
+    },
+    {
+      "id": "2026-11-04-aca-snap:aca-vs-medicaid",
+      "contributionId": "2026-11-04-aca-snap:aca-vs-medicaid",
+      "path": "/compare/aca-vs-medicaid/",
+      "originRoutine": "mindmap-pass",
+      "evidenceFile": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/aca-vs-medicaid/evidence.json",
+      "growthFile": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/aca-vs-medicaid/growth.json",
+      "status": "approved-awaiting-publication",
+      "registeredAt": "2026-11-05T04:15:23.524949+00:00",
+      "primaryMetric": "incremental Google clicks",
+      "hypothesis": "Clearer direct answer and scoped program math/process may earn incremental relevant Google clicks. Unproven.",
+      "outcomeStatus": "unknown"
+    },
+    {
+      "id": "2026-11-04-aca-snap:snap-vs-wic",
+      "contributionId": "2026-11-04-aca-snap:snap-vs-wic",
+      "path": "/compare/snap-vs-wic/",
+      "originRoutine": "mindmap-pass",
+      "evidenceFile": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/snap-vs-wic/evidence.json",
+      "growthFile": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/snap-vs-wic/growth.json",
+      "status": "approved-awaiting-publication",
+      "registeredAt": "2026-11-05T04:15:23.525112+00:00",
+      "primaryMetric": "incremental Google clicks",
+      "hypothesis": "Clearer direct answer and scoped program math/process may earn incremental relevant Google clicks. Unproven.",
+      "outcomeStatus": "unknown"
+    },
+    {
+      "id": "2026-11-04-aca-snap:how-to-apply-for-food-stamps",
+      "contributionId": "2026-11-04-aca-snap:how-to-apply-for-food-stamps",
+      "path": "/guides/how-to-apply-for-food-stamps/",
+      "originRoutine": "mindmap-pass",
+      "evidenceFile": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/how-to-apply-for-food-stamps/evidence.json",
+      "growthFile": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/how-to-apply-for-food-stamps/growth.json",
+      "status": "approved-awaiting-publication",
+      "registeredAt": "2026-11-05T04:15:23.525273+00:00",
+      "primaryMetric": "incremental Google clicks",
+      "hypothesis": "Clearer direct answer and scoped program math/process may earn incremental relevant Google clicks. Unproven.",
+      "outcomeStatus": "unknown"
+    }
+  ],
+  "scope": "Five run-owned stable ids appended; unrelated existing ledger rows preserved. Deployment updates the same ids after exact live verification."
+}

@@ -1,0 +1,32 @@
+{
+  "actor": "benefits_tools",
+  "runId": "d059491d93234c5fbd1a627c0704ac17",
+  "instructionHashes": {
+    ".claude/commands/_decision-evidence.md": "6b47b8b4b6763f5b4ff303ca0443ecf67c01d5efae95c2b0c0e968131fb16d98",
+    ".claude/commands/_testing-labels.md": "8a9dc3c646a583d7afe80339efb880be431a9f528e491ef0ea156bee4db053d9",
+    ".claude/commands/_content-standard.md": "c100ce0716ab042e4ee80f0cd6764a51cbe75238416ba0d350402dfe87f83786",
+    ".claude/commands/_anti-ai-language.md": "59194cdd7f83f7423489faa07759e571c73ef993a681bd917faa8a6f1a6803ac",
+    ".claude/commands/_experience.md": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+    ".claude/commands/_workflow-checkpoints.md": "a80daacfb208a9d1e1c95b4c199f4a7ae671b89ee54a9f4cc25cbb2689e0f43b",
+    ".claude/commands/_rendered-page-audit.md": "5e649fef4cb23a9c97806bce5f04cee59a329265534f683b40ade791b9cc06da",
+    ".claude/commands/_mindmap-execution.md": "2ee21c15b10e654b4c6126089d8c2d2259d7edbfcb512bc09bd06553b14d6253",
+    ".claude/commands/mindmap-pass/phase-3c-tool-build.md": "ee12eb40501758f034c4979de55634779ea45a6a49a2943c689453f7665c77dd"
+  },
+  "application": {
+    "scope": "Approved N1/N2 code only; no staging/publishing, template/data changes handled by root.",
+    "medium": "Existing client React utility island and stylesheet; no backend or new runtime dependency.",
+    "sources": "FY2027 USDA tables and deduction method; 2026 FPL; IRS Rev Proc2026-26 2027 contribution table and PTCQ24/Q26. Captured IRS8962 instructions support excluding nonessential enrollment charges.",
+    "evidence": "Code calculations are calculated/modeled. No product TESTED labels or invented professional review. Page prose/provenance handled by benefits_content.",
+    "eligibility": "SNAP high net reference suppresses amount unless explicit state eligibility confirmed. $25 minimum conditional1\u20132 only. ACA unknown/excluded or income outside100\u2013400 suppress credit.",
+    "inputs": "Cents-only finite nonnegative0\u2013100m precision guard;1\u20138 whole household, contiguous48/DC only; no local quotes or invented utility allowances.",
+    "outputs": "Named conditional calculations, breakdown, raw SNAP formula, full input+condition text copy/download, browser-only computation.",
+    "verification": "348 deterministic checks in scripts/test-benefits-tools.mjs; targeted TypeScript validation exit0. Includes annual-income exact ACA133% and adjacent cents for all8households plus other annual percentage thresholds. Independent reviewer found and recorded original floating ratio defect; fixed by integer annual-dollar/cents band selection, not rounding user percentages. Independent replay/rendered audit remains required."
+  },
+  "additionalSource": {
+    "url": "https://www.irs.gov/instructions/i8962",
+    "checked": "2026-11-04",
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/irs-8962-tools.txt",
+    "sha256": "72390a76662e661282561ab346df94616704c396e960121c1cb29200621f30ec",
+    "claim": "Enrollment premiums exclude premiums for nonessential benefits such as adult dental or vision. Current8962 instructions; not a2027 premium quote."
+  }
+}

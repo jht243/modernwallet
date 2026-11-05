@@ -1,0 +1,28 @@
+{
+  "actor": "benefits_content",
+  "route": "/budget/snap-benefits-calculator/",
+  "substantiveRework": 2,
+  "priorSubstantiveReworks": 1,
+  "priorTargetedFixRounds": 3,
+  "reset": false,
+  "scope": "Only the first-section eligible minimum sentence replaced; all other bytes retained",
+  "sourceReceipt": "audit/final-rhythm-correction.json",
+  "snippet": "drafts/n1-rhythm-rework2.md",
+  "snippetMeta": "drafts/n1-rhythm-rework2.md.meta.json",
+  "actualSentence": "FY2027 sets a $25 minimum for eligible one- or two-person households.",
+  "whitespaceWords": 11,
+  "wordTokensIncludingHyphenParts": 12,
+  "artifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/snap-benefits-calculator.json",
+      "beforeSha256": "a63b4ec3b99d601fd93ee0b363d01041f7a92055bb78c7695c39ca8a1fbab998",
+      "afterSha256": "da8044ae5f34c7e0bdb14b1760dbf15f637db1e6a54bc72d662221bc44ed1e9b"
+    },
+    {
+      "path": "src/data/benefits-spokes.ts",
+      "beforeSha256": "1bd8341827e90f7e803b1b1d3931250cff637d0068f71d19921c06c0e50c46ef",
+      "afterSha256": "279ca96d344b979f3f1b7ee8e9c97f7784fd73c6502f486b5dc1e121a082f26c"
+    }
+  ],
+  "ledgerAutoStage": false
+}

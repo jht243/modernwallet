@@ -1,0 +1,9 @@
+---
+interface Props { text: string; }
+const { text } = Astro.props;
+---
+<aside class="benefits-notice" role="note" aria-label="Financial Information"><p>{text}</p></aside>
+<style>
+  .benefits-notice { margin: 26px 0 8px; padding: 16px; background: #fff7e6; border: 1px solid #f0dda5; border-radius: 10px; }
+  .benefits-notice p { margin: 0; color: #3a3a3a; font-size: .95rem; line-height: 1.65; }
+</style>

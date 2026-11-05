@@ -1,0 +1,27 @@
+{
+  "originRoutine": "mindmap-pass",
+  "queryFamily": "snap vs wic: 1,300/month, KD24; snap benefits vs ebt: 70/month, KD39. SEMrushUS exact metrics checked2026-11-04, corroborated by live autocomplete. Supporting phrases become sections/FAQs, not duplicate pages.",
+  "hypothesis": "Clearer direct answer and scoped program math/process may earn incremental relevant Google clicks. Unproven.",
+  "primaryMetric": "incremental Google clicks",
+  "canonicalUrl": "https://www.themodernwallet.com/compare/snap-vs-wic/",
+  "baseline": {
+    "status": "not-yet-published",
+    "window": null,
+    "property": "sc-domain:themodernwallet.com"
+  },
+  "comparatorPlan": "Age-matched unchanged guide/comparison/tool cohort, matched by type/query intent; evaluate query/device/country changes separately.",
+  "changeScope": "/compare/snap-vs-wic/",
+  "sourceRefreshTrigger": "New federal tax-year tables, SNAP COLA or material official eligibility/application rule change",
+  "outcomeStatus": "unknown",
+  "deploymentStatus": "not-yet-published",
+  "day28": {
+    "window": "first28complete live days",
+    "status": "pending deployment"
+  },
+  "day56": {
+    "window": "second28complete live days",
+    "status": "pending deployment"
+  },
+  "reportingDelayDays": 3,
+  "productionCost": "Use draft.meta.json actual generator records, not estimated manually."
+}

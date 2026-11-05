@@ -1,0 +1,156 @@
+{
+  "status": "observed-browser-checks-completed-not-final-PASS",
+  "http": 200,
+  "errors": [],
+  "widths": {
+    "page": 390,
+    "viewport": 390,
+    "tableCount": 2
+  },
+  "toc": [
+    {
+      "href": "#benefits-section-1",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-2",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-3",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-4",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-5",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-6",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-7",
+      "exists": true
+    }
+  ],
+  "links": [
+    {
+      "text": "ModernWallet",
+      "href": "/"
+    },
+    {
+      "text": "Guides",
+      "href": "/guides/"
+    },
+    {
+      "text": "Jonathan Velez",
+      "href": "/about/"
+    },
+    {
+      "text": "USAGov",
+      "href": "https://www.usa.gov/food-stamps"
+    },
+    {
+      "text": "Household Budget Calculator→",
+      "href": "/budget/household-budget-calculator/"
+    },
+    {
+      "text": "Apply for Food Stamps in These Steps",
+      "href": "#benefits-section-1"
+    },
+    {
+      "text": "What to Have Ready for the SNAP Application",
+      "href": "#benefits-section-2"
+    },
+    {
+      "text": "Where to Apply Online or Get Help",
+      "href": "#benefits-section-3"
+    },
+    {
+      "text": "What Happens After You Apply",
+      "href": "#benefits-section-4"
+    },
+    {
+      "text": "When to Ask About Expedited SNAP Service",
+      "href": "#benefits-section-5"
+    },
+    {
+      "text": "If Your Notice or Application Needs Follow-Up",
+      "href": "#benefits-section-6"
+    },
+    {
+      "text": "The Next Step for Your Food Budget",
+      "href": "#benefits-section-7"
+    },
+    {
+      "text": "U.S. Department of Agriculture (USDA) Food and Nutrition Administration (FNA) state directory",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "FNA's eligibility page",
+      "href": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "text": "FNA's cost-of-living page",
+      "href": "https://fns-prod.azureedge.us/snap/allotment/cola"
+    },
+    {
+      "text": "make a budget from actual statements",
+      "href": "/guides/how-to-make-a-budget/"
+    },
+    {
+      "text": "plan household spending separately from food benefits",
+      "href": "/budget/household-budget-calculator/"
+    },
+    {
+      "text": "FNA state directory",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "USAGov",
+      "href": "https://www.usa.gov/food-stamps"
+    },
+    {
+      "text": "FNA state directory",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "eligibility page",
+      "href": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "text": "FNA state directory",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "calculator methodology",
+      "href": "/methodology/"
+    },
+    {
+      "text": "editorial policy",
+      "href": "/editorial-policy/"
+    },
+    {
+      "text": "USDA FNA: SNAP Eligibility",
+      "href": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "text": "USDA FNA: SNAP State Directory of Resources",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "USAGov: How to apply for food stamps (SNAP benefits) and check your balance",
+      "href": "https://www.usa.gov/food-stamps"
+    },
+    {
+      "text": "USDA FNA: SNAP Cost-of-Living Adjustment (COLA) Information",
+      "href": "https://fns-prod.azureedge.us/snap/allotment/cola"
+    }
+  ],
+  "faqOpened": true,
+  "heading": "How to Apply for Food Stamps Through Your State"
+}

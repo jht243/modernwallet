@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "aca_snap_chart_reviewer",
+  "verdict": "PASS",
+  "scope": "Independent preparation/chart review only; no Phase4 content approval and no Phase0 owner authorization.",
+  "manifestSha256": "1a328c05a13f76cf5fa61f05da7d861b18a5956f50244d9caeee77ea468c278d",
+  "readinessSha256": "ceaa91331ce1a539098ef9e457805b276c6ef1078a9c07a247662b7496ef1615",
+  "reviewedAt": "2026-11-05T00:29:46.733727+00:00",
+  "evidence": {
+    "instructions": "Own standalone startup passed run d059491d93234c5fbd1a627c0704ac17; independently loaded all62 audit/build/Phase0–9 chunks and all5 content-generation/keyword-ladder companion chunks, with completeness/current-source checks. Receipts are preflight-chart-review and preflight-chart-review-companions. Judgment below is based on inspected artifacts, not receipt alone.",
+    "demand": "Read metrics, expansion/relevance decisions, fullsearch keyword/volume rows, question CSV and raw SERP/PAA. Five selected heads have measured US demand: SNAP calculator2900/KD30, ACA calculator1900/KD54, SNAP/WIC1300/KD24, ACA/Medicaid390/KD37, application40500/KD58. Keep measured2027 phrase0; reject political/news/generic terms. Discovery is bounded, not exhaustive or evidence of growth. Redirect-heavy SERP domains cannot substantiate locked counts; actions preserve competition uncertainty and new serp-inspection.md gives page-specific observed results. N3 flags6/6off-intent PAA, N4 excludes broad disadvantages/politics/cost questions and flags3/6. Direct questions are completion-backed.",
+    "coverageAndHistory": "Independently reran final-route coverage (reviewer-coverage-budget-routes.json), inspected lookup matches and existing records, and checked exact-slug histories at local HEAD and pinned published850b1e422607e8ed8ca999f6a1c8dcd98a6c10c8. Saved reviewer-history-summary.json and five exact-route logs. Compensation/SSI/retirement/Medicaid spend-down/Medicare comparison intents do not answer the five new jobs. No exact target or prior source history found. Same-run calculation, comparison and application jobs remain distinct; limits/seniors/cliff folded into those homes.",
+    "primarySources": "Independently inspected captured IRS2027 percentage bands and IRS PTC Q24/Q26, current HealthCare.gov income/FPL/Marketplace/Medicaid/limited-benefits records; USDA SNAP FY2027 COLA, eligibility, food items, state directory; WIC eligibility/benefits and California corroboration; USAGov application process. Current2027 Medicaid-denial/immigration conditions are retained, not replaced by income-only eligibility. IRS Q26 confirms benchmark excludes tobacco loading but actual eligible enrollment premium can include it; parent correction accepted. SNAP eligibility worked example mixes old constants/arithmetic; current COLA and independently recomputed examples govern.",
+    "arithmetic": "Independent Decimal replay saved reviewer-preparation-replay.json: SNAP four-person$2000earnings/$1200shelter=>net856.50,30%roundedUP257,max1023=>766; $1400shelter=>826. ACA two-person$50000/benchmark600/plan550=>credit268.85 andnet281.15; exact400%FPL and cap cases agree. These are feasibility calculations, not tool implementation/testing. Conditional eligible1–2 minimum25 cannot imply approval above federal net reference without explicit state eligibility confirmation. Full-month1–8contiguous48/DC scope and out-of-scope/eligibility limitations are explicit.",
+    "links": "Read selected existing source records and exact contextual placements in link-inspections.json: irregular-income insurance section, household-budget how-it-works and how-to-make-budget benefit statements. Inspected collection rendering. Two strong existing inbound links per page satisfy minimum1 with explicit relevance-based reason below target3. Outbounds point to inspected existing budgeting resources. SNAP restricted food benefits must remain separate from cash income. Medicare/early-retirement contradictions are excluded from proposed source contexts.",
+    "technical": "Independently read package build/postprocessing script, actual CalculatorIsland.tsx map/custom override, relevant dynamic budget spoke render, site.ts domain/byline and template section/disclaimer branches. Dedicated budget spokes can use existing island overrides without adding CALCULATORS/header entries. Explicit route-scoped changes address section rendering, irrelevant stats, FAQ heading, neutral comparison heading and final financial notice. Final complete build/whole-render review after entity/affiliate/link transformations, changed-route inventory, semantic checks for existing shared-template outputs,390px/keyboard/boundary tests and exact live/host revision comparison remain future requirements.",
+    "readinessAndHonesty": "Full current readiness.md inspected. Prior21outcomes checked:13pending-push and8recentlive, no mature28/56evidence; no claimed uplift. Existing actual Jonathan Velez byline is reused without invented credentials/professional review. All five are ordinary source-based financial/program content, not TESTED. Calculated claims visibly disclose hypothetical inputs/method; source synthesis names actual agencies. No clinical advice, personalized approval, official portal imitation, fabricated testing or internal workflow labels. Phase0 is pending; build/write/audit/commit/push/live/IndexNow are proposed future scope only. Isolate approved run from unrelated dirty/staged/freshness work against published branch, preserving worktree. Full Phases1–9 and independent Phase4/two-rework stop remain.",
+    "integrity": "Final canonical hash recomputed with mindmap-gates.py and independent canonical JSON digest;101 artifact references across35unique files matched actual SHA256. All5action/brief target, format, medium, direct-question, answer and placement fields match. SEO titles50–54characters; descriptions within160. Readiness exact hash is bound above."
+  },
+  "decisions": [
+    {
+      "actionId": "N1",
+      "decision": "KEEP",
+      "reason": "Distinct conditional federal food-allotment tool; current FY2027 constants and scope; corrected takeaway allows maximum for zero net income."
+    },
+    {
+      "actionId": "N2",
+      "decision": "KEEP",
+      "reason": "Distinct2027 premium-credit arithmetic tool; correct prior-yearFPL, band interpolation, benchmark/enrollment distinction and exclusions."
+    },
+    {
+      "actionId": "N3",
+      "decision": "KEEP",
+      "reason": "Distinct program-difference decision; completion demand, official income-shortcut/remaining-WIC conditions and explicit PAA noise."
+    },
+    {
+      "actionId": "N4",
+      "decision": "KEEP",
+      "reason": "Distinct Marketplace/Medicaid identity and application decision; limited-benefit/current2027 exceptions and question noise preserved."
+    },
+    {
+      "actionId": "N5",
+      "decision": "KEEP",
+      "reason": "Distinct official filing/interview/verification process with state-specific routes and no eligibility/processing guarantee."
+    },
+    {
+      "actionId": "L1",
+      "decision": "KEEP",
+      "reason": "Existing irregular-income insurance context supports both ACA pages."
+    },
+    {
+      "actionId": "L2",
+      "decision": "KEEP",
+      "reason": "Existing food-budget context supports SNAP estimate and comparison with cash restriction clarified."
+    },
+    {
+      "actionId": "L3",
+      "decision": "KEEP",
+      "reason": "Existing government-benefit statements context supports the official SNAP application steps."
+    }
+  ],
+  "resolvedFindings": [
+    "Removed unsupported most-households distribution assertion; up-to maximum wording preserves zero-net case.",
+    "N3/N4SEOtitle floors corrected.",
+    "Replaced repeated mixed competitor boilerplate with page-specific inspected URLs/types.",
+    "N3/N4question evidence flags and omitted broad policy PAA resolved.",
+    "ACA2027zero-volume annotation now limited to ACAcalculator."
+  ],
+  "blockingFindings": [],
+  "limitations": [
+    "This is preparation approval only. No reader-facing page or calculator has been generated, built, rendered or independently audited by this receipt.",
+    "Final implementation must enforce conditional eligibility/minimum handling and validate current sources; source changes invalidate affected claims.",
+    "Phase0 manual approval remains required before execution; this PASS does not authorize publication."
+  ]
+}

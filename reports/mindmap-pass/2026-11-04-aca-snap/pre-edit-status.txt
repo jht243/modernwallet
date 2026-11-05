@@ -1,0 +1,177 @@
+ M .claude/commands/_ai-discoverability.md
+ M .claude/commands/_anti-ai-language.md
+ M .claude/commands/_content-generation.md
+ M .claude/commands/_content-standard.md
+ M .claude/commands/_decision-evidence.md
+ M .claude/commands/_keyword-demand-ladder.md
+ M .claude/commands/_keyword-gap-data-source.md
+ M .claude/commands/_remediation-ladder.md
+ M .claude/commands/_rendered-page-audit.md
+ M .claude/commands/_site-audit-autofix.md
+ M .claude/commands/_workflow-checkpoints.md
+ M .claude/commands/ahrefs-site-audit-auto.md
+ M .claude/commands/comparison-content-creator/phase-3-generate.md
+ M .claude/commands/comparison-content-creator/phase-3b-enrich.md
+ M .claude/commands/comparison-content-creator/phase-4-audit.md
+ M .claude/commands/comparison-content-creator/phase-5-publish.md
+ M .claude/commands/keyword-gap-pass.md
+ M .claude/commands/keyword-gap-pass/phase-build-keywords.md
+ M .claude/commands/mindmap-pass.md
+ M .claude/commands/mindmap-pass/phase-0-discover.md
+ M .claude/commands/mindmap-pass/phase-3-new-content.md
+ M .claude/commands/mindmap-pass/phase-3c-tool-build.md
+ M .claude/commands/mindmap-pass/phase-4-audit.md
+ M .claude/commands/mindmap-pass/phase-5-body.md
+ M .claude/commands/mindmap-pass/phase-8-summary.md
+ M .claude/commands/mindmap-pass/phase-9-commit-deliver.md
+ M .claude/commands/mindmap-pass/phase-build-brief.md
+ M .claude/scripts/rewrite-gate.py
+ M .claude/tools/no-background-agents.sh
+ M .claude/tools/rendered-audit.py
+ M .claude/tools/rendered-audit_test.py
+ M .claude/tools/workflow-preflight.py
+ M .claude/tools/worktree-freshness.py
+ M astro.config.mjs
+ M data/roundup-vendors.json
+ M reports/comparison-content-creator/cache.json
+ M reports/competitor-monitor/ledger.json
+ M reports/content-evidence.jsonl
+M  reports/content-gen-usage.jsonl
+ M reports/podcast-pain-pass/ledger.json
+ M reports/seo-research/target-keywords.md
+ M reports/standards-ledger.jsonl
+ M reports/tool-usage-pass/ledger.jsonl
+ M reports/trend-pass/ga4-page-audits.md
+ M reports/trend-pass/ledger.md
+ M reports/vendor-roundup/category-candidates.json
+ M reports/vendor-roundup/pool.json
+ M reports/vendor-roundup/rows/401k-providers-for-small-business.json
+ M reports/vendor-roundup/rows/accounting-software-for-freelancers.json
+ M reports/vendor-roundup/rows/ai-investing-apps.json
+ M reports/vendor-roundup/rows/ai-stock-pickers.json
+ M reports/vendor-roundup/rows/ai-trading-bots.json
+ M reports/vendor-roundup/rows/balance-transfer-credit-cards.json
+ M reports/vendor-roundup/rows/brokerage-accounts-for-interest-on-cash.json
+ M reports/vendor-roundup/rows/brokers-for-treasury-bonds.json
+ M reports/vendor-roundup/rows/budgeting-apps-for-couples.json
+ M reports/vendor-roundup/rows/budgeting-apps.json
+ M reports/vendor-roundup/rows/business-bank-accounts.json
+ M reports/vendor-roundup/rows/business-credit-cards.json
+ M reports/vendor-roundup/rows/business-line-of-credit-rates-by-lender.json
+ M reports/vendor-roundup/rows/cash-back-credit-cards.json
+ M reports/vendor-roundup/rows/credit-cards-for-fair-credit.json
+ M reports/vendor-roundup/rows/custodial-roth-ira-providers.json
+ M reports/vendor-roundup/rows/dataannotation-alternatives.json
+ M reports/vendor-roundup/rows/estate-planning-software.json
+ M reports/vendor-roundup/rows/high-yield-savings-accounts.json
+ M reports/vendor-roundup/rows/investment-apps-for-beginners.json
+ M reports/vendor-roundup/rows/invoice-factoring-companies.json
+ M reports/vendor-roundup/rows/invoicing-apps-for-freelancers.json
+ M reports/vendor-roundup/rows/ira-accounts.json
+ M reports/vendor-roundup/rows/living-trust-services.json
+ M reports/vendor-roundup/rows/merchant-cash-advance-companies.json
+ M reports/vendor-roundup/rows/mileage-tracker-apps.json
+ M reports/vendor-roundup/rows/money-market-accounts.json
+ M reports/vendor-roundup/rows/mortgage-lenders.json
+ M reports/vendor-roundup/rows/net-worth-tracker.json
+ M reports/vendor-roundup/rows/online-will-makers.json
+ M reports/vendor-roundup/rows/personal-loan-rates-by-lender.json
+ M reports/vendor-roundup/rows/portfolio-backtesting-and-analysis-tools.json
+ M reports/vendor-roundup/rows/robinhood-agentic-trading-alternatives.json
+ M reports/vendor-roundup/rows/robo-advisors.json
+ M reports/vendor-roundup/rows/same-day-business-loans.json
+ M reports/vendor-roundup/rows/secured-credit-cards.json
+ M reports/vendor-roundup/rows/student-credit-cards.json
+ M reports/vendor-roundup/rows/student-loan-refinance.json
+ M reports/vendor-roundup/rows/student-loans-bad-credit.json
+ M reports/vendor-roundup/rows/tax-relief-companies.json
+ M reports/vendor-roundup/rows/travel-credit-cards.json
+ M reports/x-trends/ledger.jsonl
+ M scripts/lib/content_gen.py
+ M scripts/lib/dataforseo.py
+ M scripts/lib/dfs_keyword_gap.py
+ M scripts/lib/keyword_data.py
+ M scripts/lib/keyword_data_test.py
+ M scripts/lib/serp.py
+ M scripts/podcast_pain_pass/validate_terms.py
+ M scripts/unlink_pitched.mjs
+ M src/components/CalculatorIsland.tsx
+ M src/components/FloridaAmendment3Calculator.tsx
+ M src/components/InflationCalculator.tsx
+ M src/components/LegalDisclaimer.astro
+ M src/components/LongTermCareCostCalculator.tsx
+ M src/components/ProbateHubCalculator.tsx
+ M src/components/SelfEmploymentTaxCalculator.tsx
+ M src/components/SiteFooter.astro
+ M src/components/SocialSecurityTaxableCalculator.tsx
+ M src/components/Sources.astro
+ M src/components/StockCapitalGainsCalculator.tsx
+ M src/components/ToolPicks.tsx
+ M src/data/calculators.ts
+ M src/data/comparisons.ts
+ M src/data/cross-links.ts
+ M src/data/guides.ts
+ M src/data/pro-services/best-bookkeeping-services-for-small-businesses.ts
+ M src/data/registry.ts
+ M src/data/se-hubs.ts
+ M src/data/spokes-checklists.ts
+ M src/data/spokes-elder-care.ts
+ M src/data/spokes-gig-drivers.ts
+ M src/data/spokes-gig-online.ts
+ M src/data/spokes-mortgage.ts
+ M src/data/spokes-probate.ts
+ M src/data/spokes-s-corp.ts
+ M src/data/spokes-self-employed.ts
+ M src/data/spokes.ts
+ M src/data/types.ts
+ M src/layouts/BaseLayout.astro
+ M src/lib/florida-amendment-3.ts
+ M src/lib/long-term-care-cost.ts
+ M src/lib/probate-hub.ts
+ M src/lib/richtext.ts
+ M src/lib/self-employment-tax.ts
+ M src/lib/stats.ts
+ M src/pages/[category]/[slug].astro
+ M src/pages/[category]/index.astro
+ M src/pages/calculators/index.astro
+ M src/pages/guides/[slug].astro
+ M src/pages/guides/index.astro
+ M src/pages/methodology.astro
+ M src/pages/roundup/index.astro
+?? .claude/commands/_approved-cases.json
+?? .claude/commands/_mindmap-execution.md
+?? .claude/tools/mindmap-gates.py
+?? .claude/tools/mindmap-gates_test.py
+?? .claude/tools/primary-freshness_test.py
+?? .github/workflows/content-gen-cli.yml
+?? evidence/brrrr-method/
+?? evidence/fed-rate-hike-savings-investments/
+?? evidence/hidden-cost-of-owning-a-home-calculator/
+?? evidence/hsa-triple-tax-advantage/
+?? evidence/medicare-part-d-2027-premiums/
+?? evidence/standard-deduction-vs-itemized-deduction/
+?? evidence/tax-loss-harvesting/
+?? public/images/
+?? reports/fleet-tools-deploy/
+?? reports/fleet-tools/
+?? reports/mindmap-pass/2026-10-31-fleet-tools/
+?? reports/mindmap-pass/2026-11-04-aca-snap.md
+?? reports/mindmap-pass/2026-11-04-aca-snap/
+?? reports/tool-deployment/
+?? reports/tool-seo/
+?? reports/tool-ux-audit/
+?? scripts/lib/content_gen_cli_test.py
+?? scripts/lib/semrush.py
+?? scripts/test-fleet-tools.mjs
+?? src/components/BiweeklyMortgageCalculator.tsx
+?? src/components/FleetFinanceTools.css
+?? src/components/FleetFinanceTools.tsx
+?? src/components/HiddenHomeCostCalculator.tsx
+?? src/components/PayoffVsInvestCalculator.tsx
+?? src/components/SubscriptionCancellationPlanner.css
+?? src/components/SubscriptionCancellationPlanner.tsx
+?? src/data/spokes-fleet-tools.ts
+?? src/lib/biweekly-mortgage.ts
+?? src/lib/fleet-tool-math.ts
+?? src/lib/home-ownership-costs.ts
+?? src/lib/payoff-vs-invest.ts

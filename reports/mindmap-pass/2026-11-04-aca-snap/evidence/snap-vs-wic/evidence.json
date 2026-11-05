@@ -1,0 +1,177 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "benefits_content",
+  "route": "/compare/snap-vs-wic/",
+  "readerQuestion": "How are SNAP and WIC different? [PAA 0/6 on-intent; 6/6 off-intent: SNAP-only shopping or Connecticut WIC; ac 32 completions include program-difference questions]",
+  "decisionGap": "No lookup match, redirect or prior exact-slug history. Existing family-budget tool assigns spending but does not compare food-program eligibility. The proposed SNAP amount tool and application guide each answer a separate job, not the comparison.",
+  "finding": "Reported-source synthesis of USDA program rules: the decision is often two separate applications, not choosing one winner. Map SNAP\u2192possible WIC income qualification\u2192remaining WIC criteria. Attribute the rules to USDA directly; do not claim we ran clinical or household eligibility tests.",
+  "conditions": "Completed finite comparison table in the existing ComparisonEntry shape, five criteria with factual source-linked cells and a nonexclusive next-step paragraph. No personalized assessment, nutritional scoring or benefit-dollar comparison with an unsupported single WIC amount. Define Special Supplemental Nutrition Program for Women, Infants, and Children on first prose use.",
+  "whatWouldChange": "A household with WIC-eligible members should check both programs rather than assume one replaces the other. SNAP receipt can simplify WIC income screening, but local WIC staff still confirm all remaining requirements. No WIC category member means the WIC application is not that household\u2019s route.",
+  "basis": "reported",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligibility.txt",
+      "sha256": "13160ffc3ba82531a517e7e6f13d4b3df9a75f4a6afb4491a6701880c391c911"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-state.txt",
+      "sha256": "8bf6530c65b122cc7b36c4c0ceca308bb97610fb6fe203fbf6cd8d245335b33b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligible-food.txt",
+      "sha256": "8fc837e4e8b3a2bc286843548fead789eba6a39d34c8317340f40cf932487a8d"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-eligibility.txt",
+      "sha256": "0641315415cf7a3b6a2f97843ff787d0ca2b845f319d7e1b98ad3b8751da1f78"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-benefits.txt",
+      "sha256": "38d49150f3cfb96399f89db81bea967370645c1405a53909d1c673b16ea2d12c"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-ca.txt",
+      "sha256": "c1eb248119ea632023ab2399c73f82297be1aca5dd38a842e8436d19edc084a2"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-apply.txt",
+      "sha256": "e86cb709edc18e4add040fd933d18e84ff3d4b1dc635719a99cc6b3722df6d0f"
+    }
+  ],
+  "sources": [
+    {
+      "id": "snap-eligibility",
+      "url": "https://fns-prod.azureedge.us/snap/recipient/eligibility",
+      "resolvedUrl": "https://fns-prod.azureedge.us/snap/recipient/eligibility",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligibility.txt",
+      "sha256": "13160ffc3ba82531a517e7e6f13d4b3df9a75f4a6afb4491a6701880c391c911"
+    },
+    {
+      "id": "snap-state",
+      "url": "https://fns-prod.azureedge.us/snap/state-directory",
+      "resolvedUrl": "https://fns-prod.azureedge.us/snap/state-directory",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-state.txt",
+      "sha256": "8bf6530c65b122cc7b36c4c0ceca308bb97610fb6fe203fbf6cd8d245335b33b"
+    },
+    {
+      "id": "snap-eligible-food",
+      "url": "https://fns-prod.azureedge.us/snap/eligible-food-items",
+      "resolvedUrl": "https://fns-prod.azureedge.us/snap/eligible-food-items",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligible-food.txt",
+      "sha256": "8fc837e4e8b3a2bc286843548fead789eba6a39d34c8317340f40cf932487a8d"
+    },
+    {
+      "id": "wic-eligibility",
+      "url": "https://fns-prod.azureedge.us/wic/eligibility",
+      "resolvedUrl": "https://fns-prod.azureedge.us/wic/eligibility",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-eligibility.txt",
+      "sha256": "0641315415cf7a3b6a2f97843ff787d0ca2b845f319d7e1b98ad3b8751da1f78"
+    },
+    {
+      "id": "wic-benefits",
+      "url": "https://fns-prod.azureedge.us/wic/benefits",
+      "resolvedUrl": "https://fns-prod.azureedge.us/wic/benefits",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-benefits.txt",
+      "sha256": "38d49150f3cfb96399f89db81bea967370645c1405a53909d1c673b16ea2d12c"
+    },
+    {
+      "id": "wic-ca",
+      "url": "https://myfamily.wic.ca.gov/Home/HowCanIGetWIC",
+      "resolvedUrl": "https://myfamily.wic.ca.gov/Home/HowCanIGetWIC",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-ca.txt",
+      "sha256": "c1eb248119ea632023ab2399c73f82297be1aca5dd38a842e8436d19edc084a2"
+    },
+    {
+      "id": "snap-apply",
+      "url": "https://www.usa.gov/food-stamps",
+      "resolvedUrl": "https://www.usa.gov/food-stamps",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-apply.txt",
+      "sha256": "e86cb709edc18e4add040fd933d18e84ff3d4b1dc635719a99cc6b3722df6d0f"
+    }
+  ],
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/snap-vs-wic/cases.json",
+    "sha256": "b7bb498440607661a3edba528576dcef702db457f5811cc0ee56cded127b8d2a"
+  },
+  "caseDecisions": [
+    {
+      "recordId": "client-bowlero-corporation",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "client-professional-bowlers-association-pba",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "owned-property-drones-defense",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "owned-property-medical-frontier",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "testimonial-gamestation",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "client-game-station",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "client-jane-goodall-institute",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "client-ethereal-collective",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    }
+  ],
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [
+      "snap-eligibility",
+      "snap-state",
+      "snap-eligible-food",
+      "wic-eligibility",
+      "wic-benefits",
+      "wic-ca",
+      "snap-apply"
+    ],
+    "scopeAndLimits": "Ordinary financial/program information, excluded from product TESTED format. Reuse existing Jonathan Velez byline without invented credentials/professional review. No clinical/personal eligibility claim. Fresh independent Phase4 review must cover exact final whole render, sources and all transformations. Reporter register: direct source-supported answer and conditional factual takeaway; no experience tee-up.",
+    "publicMethod": "Inline primary-source citations and program comparison/process tables",
+    "placement": "First answer, comparison/process sections and takeaway"
+  },
+  "plannedTakeaway": "A household with WIC-eligible members should check both programs rather than assume one replaces the other. SNAP receipt can simplify WIC income screening, but local WIC staff still confirm all remaining requirements. No WIC category member means the WIC application is not that household\u2019s route.",
+  "selectedMedium": "comparison table/database",
+  "mediumReason": "Completed finite comparison table in the existing ComparisonEntry shape, five criteria with factual source-linked cells and a nonexclusive next-step paragraph. No personalized assessment, nutritional scoring or benefit-dollar comparison with an unsupported single WIC amount. Define Special Supplemental Nutrition Program for Women, Infants, and Children on first prose use.",
+  "whyNoQuantitativeAnalysis": "Program identity, eligibility relationships and application sequences require sourced distinctions rather than arbitrary numerical scores.",
+  "reasoning": [
+    "definition/comparison: SNAP supplies household food-purchasing benefits, while WIC supplies specified foods and related nutrition services to eligible pregnant/postpartum/breastfeeding participants and children under5; qualifying families can use both.",
+    "Reported-source synthesis of USDA program rules: the decision is often two separate applications, not choosing one winner. Map SNAP\u2192possible WIC income qualification\u2192remaining WIC criteria. Attribute the rules to USDA directly; do not claim we ran clinical or household eligibility tests.",
+    "A household with WIC-eligible members should check both programs rather than assume one replaces the other. SNAP receipt can simplify WIC income screening, but local WIC staff still confirm all remaining requirements. No WIC category member means the WIC application is not that household\u2019s route.",
+    "USAGov directly states SNAP was previously known as food stamps, supporting the required FAQ without inferring the terminology from agency page titles."
+  ]
+}

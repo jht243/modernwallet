@@ -1,0 +1,38 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "snapshotSha256": "fab596725851d998fc23e14a28e3cd3d52700b177908f4ee3025802a8567cb7b",
+  "normalizedVisibleText": "identical on all13 routes to the independently captured prior snapshot",
+  "changedParagraphStructures": [
+    "/budget/snap-benefits-calculator/",
+    "/compare/snap-vs-wic/",
+    "/guides/how-to-apply-for-food-stamps/"
+  ],
+  "contexts": [
+    {
+      "route": "/budget/snap-benefits-calculator/",
+      "paragraph": "The calculator covers households of 1 to 8 people in the 48 contiguous states and the District of Columbia. Households in Alaska, Hawaii, Guam, or the U.S. Virgin Islands, and households of nine or more, get no estimate here and should use the FY2027 allotment and deduction tables instead."
+    },
+    {
+      "route": "/budget/snap-benefits-calculator/",
+      "paragraph": "SNAP income limits for FY2027 set gross monthly income at 130% of the federal poverty level and net monthly income at 100%, and most households must meet both limits. FNA publishes these limits for the 48 contiguous states, the District of Columbia, Guam, and the U.S. Virgin Islands."
+    },
+    {
+      "route": "/compare/snap-vs-wic/",
+      "paragraph": "Household size sets the income limit in both programs. USDA sets the SNAP gross monthly income limit at 130% of poverty for applications from Oct. 1, 2026, through Sept. 30, 2027."
+    },
+    {
+      "route": "/compare/snap-vs-wic/",
+      "paragraph": "In the 48 contiguous states, the District of Columbia, Guam and the U.S. Virgin Islands, that limit is $2,345 for two people, $2,960 for three and $3,575 for four, with higher limits in Alaska and Hawaii."
+    },
+    {
+      "route": "/guides/how-to-apply-for-food-stamps/",
+      "paragraph": "For applications from Oct. 1, 2026, through Sept. 30, 2027, the gross monthly income limit in the 48 contiguous states, the District of Columbia, Guam and the U.S. Virgin Islands is $1,729 for one person, $2,345 for two, $2,960 for three and $3,575 for four."
+    },
+    {
+      "route": "/guides/how-to-apply-for-food-stamps/",
+      "paragraph": "Your state agency decides eligibility and the award amount, and FNA adjusts income limits and maximum allotments at the start of each federal fiscal year on Oct. 1. Open the FNA state directory now, choose your state and apply for food stamps on that agency's own application."
+    }
+  ],
+  "selectedSourceFiles": 22,
+  "sourceHashes": "all matched"
+}

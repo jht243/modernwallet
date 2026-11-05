@@ -1,0 +1,81 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "route": "/budget/snap-benefits-calculator/",
+  "snapshotSha256": "8994e8e9b17f9c540db5a905d0309ed7564ec3c38c834d801d3fc30de405e4d2",
+  "verdict": "FIX-IN-PLACE",
+  "reworkAttempts": 0,
+  "findings": [
+    {
+      "field": "introText",
+      "quote": "If the state finds a household eligible, its full-month SNAP benefit is the maximum allotment minus 30% of SNAP net income, rounded up.",
+      "defect": "Rounding attaches ambiguously to the benefit rather than the30%income contribution.",
+      "replacement": "SNAP subtracts rounded-up 30% of net income from an eligible household's maximum allotment."
+    },
+    {
+      "field": "introText",
+      "quote": "At ModernWallet, we calculated the hypothetical full-month cases on this page from the federal fiscal year (FY) 2027 amounts, which apply from October 1, 2026, through September 30, 2027, and the worked-example table below lets you check each step.",
+      "defect": "39-word source-written sentence stacks ownership, fiscal scope, dates and method instructions.",
+      "replacement": "At ModernWallet, we calculated these hypothetical full-month cases using federal fiscal year (FY) 2027 amounts. FY2027 runs from October 1, 2026, through September 30, 2027. The worked-example table shows each step."
+    },
+    {
+      "field": "SNAP Income Limits Are a Federal Reference",
+      "quote": "and most households must stay under both.",
+      "defect": "Income limits include equality; under incorrectly excludes the threshold.",
+      "replacement": "and most households must be at or below both limits."
+    },
+    {
+      "field": "What are SNAP benefits income limits?",
+      "quote": "need gross monthly income under 130% of the poverty level and net income under 100%.",
+      "defect": "Income limits include equality; same defect in FAQ/derived schema.",
+      "replacement": "need gross monthly income at or below 130% of the poverty level and net income at or below 100%."
+    },
+    {
+      "field": "SNAP Income Limits Are a Federal Reference",
+      "quote": "Under BBCE, a household still needs income low enough to produce a SNAP benefit and must still meet the non-financial rules.",
+      "defect": "Measured10-sentence all-long-band run starts47\u201352 in reviewer-n1-depth-rhythm.json; useful sentence split resolves it with no padding.",
+      "replacement": "Under BBCE, household income still must be low enough to produce a SNAP benefit. Non-financial rules also apply."
+    },
+    {
+      "field": "SNAP Benefits for Older or Disabled Members",
+      "quote": "The household only has to meet the net income limit, so the gross income test does not apply.",
+      "defect": "Same measured all-long-band run persists through the older-household rules.",
+      "replacement": "The gross income test does not apply. The net income limit still applies."
+    },
+    {
+      "field": "What the Estimate Cannot Decide",
+      "quote": "Your estimate changes if your state uses a set utility amount, allows the child support deduction, or applies BBCE limits.",
+      "defect": "Measured second all-long-band run starts79\u201386; concise restatement of same conditions breaks monotony without adding facts.",
+      "replacement": "State utility allowances, child support deductions, or BBCE rules can change your estimate."
+    },
+    {
+      "field": "Your Next Step",
+      "quote": "Save the calculator's download with your inputs, then apply through the SNAP agency in the state where you live.",
+      "defect": "Measured second all-long-band run continues through next-step passage; natural two-step split.",
+      "replacement": "Save your inputs with the calculator's download. Apply through the SNAP agency in the state where you live."
+    },
+    {
+      "field": "Your Next Step",
+      "quote": "Allowed deductions and net income set a conditional amount, only your state agency decides eligibility, and a different state allowance, first-month date, or cost-of-living update changes the result, so run your own numbers above and take the downloaded result to your state application.",
+      "defect": "43-word comma splice chains four reader decisions; hard first-read/clause-stack failure.",
+      "replacement": "Allowed deductions and net income set a conditional amount. Only your state agency decides eligibility. State allowances, first-month dates, and cost-of-living updates can change the result. Run your numbers in the SNAP benefits calculator and take the downloaded result to your state application."
+    },
+    {
+      "field": "What the Estimate Cannot Decide",
+      "quote": "Work requirements and non-citizen eligibility, which the Working Families Tax Cuts Act changed.",
+      "defect": "First namedlaw occurrence has noinlineprimary-source link; surroundingnextsentence linksagencywarning but doesnotlinkfirstlawmention.",
+      "replacement": "Work requirements and non-citizen eligibility, which the [Working Families Tax Cuts Act](https://fns-prod.azureedge.us/snap/recipient/eligibility) changed."
+    }
+  ],
+  "mechanical": [
+    "Empty commonMistakes section and lowercase heading; root reports scoped suppression applied, not yet recaptured.",
+    "Plan the bigger picture H2; root reports scoped capitalization applied, not yet recaptured.",
+    "Tool first uses USDA acronym before prose expansion: rename linkedlabel USDA FY2027 amounts to FY2027 SNAP amounts, preserving officialCOLAlink."
+  ],
+  "observations": [
+    "Complete archived rendered reader path read; sources and hypothetical766/826 arithmetic agree with reviewed formulas.",
+    "Independent actual browser validated766default,826shelter, highincome suppression,confirmed25minimum,blank/negative validation,unsupportedregion,clipboard and keyboardTab; mobile390has nohorizontaloverflow and no pageerrors.",
+    "Body measurement2194prosewords before any repair, excluding metadata/headings; no depth issue.",
+    "Public source-basedbyline and finalfinancialnotice present; no TESTED label or inventedprofessionalcredit.",
+    "Not finalrenderPASS; allscopebinding/freshrecapture and claimlink checks required afterfix."
+  ]
+}

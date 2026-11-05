@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "root": "/Users/jonathanteplitsky/Desktop/Github Projects/Growth Sites/modernwallet",
+  "phase": "audit",
+  "instructions": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "files": {
+    ".claude/commands/_decision-evidence.md": "6b47b8b4b6763f5b4ff303ca0443ecf67c01d5efae95c2b0c0e968131fb16d98",
+    ".claude/commands/_testing-labels.md": "8a9dc3c646a583d7afe80339efb880be431a9f528e491ef0ea156bee4db053d9",
+    ".claude/commands/_content-standard.md": "c100ce0716ab042e4ee80f0cd6764a51cbe75238416ba0d350402dfe87f83786",
+    ".claude/commands/_anti-ai-language.md": "59194cdd7f83f7423489faa07759e571c73ef993a681bd917faa8a6f1a6803ac",
+    ".claude/commands/_experience.md": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+    ".claude/commands/_workflow-checkpoints.md": "a80daacfb208a9d1e1c95b4c199f4a7ae671b89ee54a9f4cc25cbb2689e0f43b",
+    ".claude/commands/_rendered-page-audit.md": "5e649fef4cb23a9c97806bce5f04cee59a329265534f683b40ade791b9cc06da",
+    ".claude/commands/_mindmap-execution.md": "2ee21c15b10e654b4c6126089d8c2d2259d7edbfcb512bc09bd06553b14d6253",
+    ".claude/commands/_remediation-ladder.md": "47ec87072c702d4fcca14bfb1d426e03427583b941415862820dc0f1865ee3e8",
+    "AGENTS.md": "f12a103dbaa9a528885b15e31438a59d7cf96115a9b02f373708785302530b1e",
+    "CLAUDE.md": "f12a103dbaa9a528885b15e31438a59d7cf96115a9b02f373708785302530b1e"
+  },
+  "parts": [
+    {
+      "path": "part-001.txt",
+      "sha256": "953fce4f76831b7c57060bbca678c2dec2915981216ea37a2b900a798ebfb2da"
+    },
+    {
+      "path": "part-002.txt",
+      "sha256": "25c09d2e50f6c30a582c1b79e6472a71a3f88c4b54b84eff4664d76e222463fe"
+    }
+  ],
+  "delivered": [
+    1,
+    2
+  ],
+  "actor": "benefits_final_reviewer",
+  "reused": [
+    ".claude/commands/_decision-evidence.md",
+    ".claude/commands/_testing-labels.md",
+    ".claude/commands/_content-standard.md",
+    ".claude/commands/_anti-ai-language.md",
+    ".claude/commands/_experience.md",
+    ".claude/commands/_workflow-checkpoints.md",
+    ".claude/commands/_rendered-page-audit.md",
+    ".claude/commands/_mindmap-execution.md",
+    ".claude/commands/_remediation-ladder.md"
+  ],
+  "reuse": {
+    "directory": "reports/mindmap-pass/2026-11-04-aca-snap/preflight-final-review",
+    "sha256": "6de5ed3fc069d72f7499d86aac8a3423022bbeea839c57e48c0b92561236d204"
+  }
+}

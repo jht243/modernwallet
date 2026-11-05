@@ -1,0 +1,92 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "route": "/budget/aca-subsidy-calculator/",
+  "snapshotSha256": "247c12d4566bacb917951418acde6e09cb0778a93fd5cf1350394b04765102ab",
+  "verdict": "FIX-IN-PLACE",
+  "reworkAttempts": 0,
+  "findings": [
+    {
+      "field": "introText",
+      "quote": "An Affordable Care Act (ACA) subsidy calculator gives a conditional estimate of your 2027 federal premium tax credit, not a personal eligibility decision. The credit is the benchmark Silver premium minus an income-based contribution, capped at your plan's premium. At ModernWallet, we built the calculator above to show each step of that federal formula beside your own inputs.\n\nIts default case is hypothetical: two people with $50,000 of yearly modified adjusted gross income (MAGI), a $600 benchmark, and a $550 plan. If every other eligibility condition is met, that case produces a $268.85 monthly credit and a $281.15 monthly premium.",
+      "replacement": "An Affordable Care Act (ACA) subsidy estimate subtracts an income-based contribution from the benchmark Silver premium, capped at the eligible plan premium. At ModernWallet, we calculated hypothetical ACA premium-credit cases to show how income and premiums affect the estimate. The default case is hypothetical: two people with $50,000 of yearly modified adjusted gross income (MAGI), a $600 benchmark, and a $550 plan. If every other eligibility condition is met, that case produces a $268.85 monthly credit and a $281.15 monthly premium.",
+      "defect": "First sentence defines calculator instead of answering how subsidy calculation works; compressed comma-antithesis. Companyteeup is sentence3 ratherthan2 and incorrectly calls calculator above while it renders below intro. Exactintro-onlyrepair preserves current case/facts."
+    },
+    {
+      "field": "A Worked Federal Premium-Credit Calculation",
+      "quote": "Keep two people, then set MAGI at $30,000, the benchmark at $900, and the chosen plan at $100 a month, assuming every other eligibility condition is met, including that no one is eligible for Medicaid.",
+      "replacement": "Use two people with $30,000 of MAGI, a $900 benchmark, and a $100 monthly plan premium. Assume every other eligibility condition is met, including that no one is eligible for Medicaid.",
+      "defect": "35wordnestedcase+eligibilitystack; splitcaseinputs frommaterialeligibilitycondition."
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "quote": "A person who lost or was denied Medicaid for not meeting that requirement may get Marketplace coverage but will not qualify for savings, so leave eligibility unconfirmed and the calculator shows an explanation in place of a credit.",
+      "replacement": "A person who lost or was denied Medicaid for not meeting that requirement may get Marketplace coverage but will not qualify for savings. Leave eligibility unconfirmed in the calculator to show an explanation instead of a credit.",
+      "defect": "38wordstackmixeseligibility,exceptionandUIinstruction. Preserve2027savingsrestriction."
+    },
+    {
+      "field": "How to qualify for ACA subsidy?",
+      "quote": "You qualify by meeting every IRS condition, not income alone.",
+      "replacement": "You must meet every IRS eligibility condition. Income alone cannot establish eligibility.",
+      "defect": "Compressed comma-antithesis."
+    },
+    {
+      "field": "How to qualify for ACA subsidy?",
+      "quote": "Household income must fall in the allowed range, you cannot file married filing separately (with a limited abuse or abandonment exception), and no one else can claim you as a dependent.",
+      "replacement": "Household income must fall in the allowed range. Married filing separately generally prevents the credit, with a limited abuse or abandonment exception. No one else can claim you as a dependent.",
+      "defect": "31wordcommasplicestack; splitsindependentfilingconditions."
+    },
+    {
+      "field": "How to qualify for ACA subsidy?",
+      "quote": "The person covered must be enrolled in a non-catastrophic Marketplace plan, lack affordable employer coverage, be ineligible for government coverage that counts as qualifying coverage, such as most Medicaid or Medicare (limited-benefit Medicaid that does not count is an exception), and pay the share of premiums the credit does not cover.",
+      "replacement": "The covered person must enroll in a non-catastrophic Marketplace plan and lack affordable employer coverage. Eligibility for qualifying government coverage, such as most Medicaid or Medicare, prevents the credit. Limited-benefit Medicaid that does not count as qualifying coverage is an exception. The covered person must pay the share of premiums the credit does not cover.",
+      "defect": "51wordnestedlistoffourconditions. Splitclarifiesconditions and resolvesmeasured10-sentencealllong-bandrun133\u2013142."
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "quote": "The estimate holds only with a correct benchmark premium and annual MAGI, not take-home pay alone.",
+      "replacement": "The estimate requires a correct benchmark premium and annual MAGI. Take-home pay alone cannot establish annual MAGI.",
+      "defect": "Compressed comma-antithesis."
+    },
+    {
+      "field": "Tool scope note",
+      "quote": "Starting premiums are illustrative amounts, not local plan quotes.",
+      "replacement": "Starting premiums are illustrative amounts.",
+      "defect": "Compressed comma-antithesis; clearhypotheticalscopepreserved."
+    },
+    {
+      "field": "Tool income help",
+      "quote": "Use expected annual [Marketplace household income](https://www.healthcare.gov/income-and-household-information/income/), not take-home pay.",
+      "replacement": "Use expected annual [Marketplace household income](https://www.healthcare.gov/income-and-household-information/income/). Take-home pay alone does not measure household MAGI.",
+      "defect": "Compressed comma-antithesis; keepdeepprimarylink."
+    }
+  ],
+  "mechanical": [
+    {
+      "field": "Tool eligibility hint",
+      "quote": "Medicaid, CHIP, Medicare",
+      "replacement": "Medicaid, the Children's Health Insurance Program (CHIP), Medicare",
+      "defect": "CHIP firstuse precedes expansionlaterbody."
+    },
+    {
+      "field": "Tool firstIRSanchor",
+      "quote": "IRS premium-tax-credit eligibility rules",
+      "replacement": "Internal Revenue Service (IRS) premium-tax-credit eligibility rules",
+      "defect": "IRS firstuse precedes expansionlaterbody."
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "quote": "IRS Form 1040",
+      "replacement": "[IRS Form 1040](https://www.healthcare.gov/income-and-household-information/income/)",
+      "defect": "First namedform lacksinlineprimarysource; governingMarketplaceincomeinstructionsalreadyinspectedandallowed."
+    }
+  ],
+  "observations": [
+    "Full archivedrendertext and actualsourcebasis reviewed; 2027publishedrates/2026FPL/benchmarkno-tobacco vs actualeligibleenrollmentcap consistent.",
+    "Counterexamples400%inclusive/above400%cliff and lower-income premiumcap are supportedand reproduced; no inventedlocalplanquote.",
+    "Sourcebody2629words beforetargetedrepair, no depthdeficiency.",
+    "Scopedfooterfinancialnotice, truthfulbyline, selfcanonical and dates2026-11-04 present.",
+    "Originalindependent552caseDecimalreplay and corrected348codechecks alreadypassed; actualN2browserinteractionreview remains next.",
+    "No finalfullrunrenderPASS issued.",
+    "Own actual browser observed defaultunknownwithhold; confirmed268.85/281.15;133%correct3.2300;400%inclusive262.80/onecentabovewithhold; lowerincome100credit0net; excludedwithhold; blankARIAinvalid; clipboard/download; keyboardTab;390pxnofullpageoverflow;pageerrorsnone. Artifactsreviewer-n2-browser.json,reviewer-n2-mobile-tool.png,reviewer-n2-desktop-full.png."
+  ]
+}

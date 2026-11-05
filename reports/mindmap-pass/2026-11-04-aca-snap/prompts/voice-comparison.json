@@ -1,0 +1,128 @@
+{
+  "slug": "hsa-vs-fsa",
+  "title": "HSA vs FSA: Which Account Saves You More?",
+  "metaDescription": "HSA vs FSA compared: contribution limits, rollover rules, investment options, and which pre-tax health savings account is right for you in 2025.",
+  "targetKeyword": "hsa vs fsa",
+  "optionA": "Health Savings Account (HSA)",
+  "optionB": "Flexible Spending Account (FSA)",
+  "h1": "HSA vs FSA: Which Pre-Tax Health Account Is Right for You?",
+  "introText": "An HSA lets you save pre-tax money for medical costs, invest it for long-term growth, and roll over the balance each year. However, you need a high-deductible health plan to qualify. An FSA also offers pre-tax savings without that eligibility restriction, but its \"use it or lose it\" rule means any unspent balance is forfeited at year-end. For those who qualify, that makes an HSA the better long-term choice.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "2025 contribution limit",
+        "a": "$4,300 individual / $8,550 family",
+        "b": "$3,300 (healthcare FSA)"
+      },
+      {
+        "dimension": "Account ownership",
+        "a": "You own it — portable when you leave your employer",
+        "b": "Employer-owned — typically forfeited when you leave"
+      },
+      {
+        "dimension": "Rollover / carryover",
+        "a": "Full balance rolls over every year, indefinitely",
+        "b": "\"Use it or lose it\" — up to $660 carryover OR 2.5-month grace period (employer's choice)"
+      },
+      {
+        "dimension": "Eligible health plan required",
+        "a": "Yes — must be enrolled in an HDHP",
+        "b": "No — available with most health plan types"
+      },
+      {
+        "dimension": "Investment option",
+        "a": "Yes — invest in stocks, ETFs, and mutual funds above the cash threshold",
+        "b": "No — cash-only, no investment component"
+      },
+      {
+        "dimension": "Tax advantage",
+        "a": "Triple: pre-tax contributions + tax-free growth + tax-free withdrawals",
+        "b": "Double: pre-tax contributions + tax-free qualified withdrawals (no growth)"
+      },
+      {
+        "dimension": "Funds available day 1",
+        "a": "Only what you've contributed so far this year",
+        "b": "Full annual election amount available on day 1 of coverage"
+      }
+    ]
+  },
+  "verdict": "Choose an HSA if your employer offers a high-deductible health plan — the triple tax advantage, unlimited rollover, and long-term investment potential make it one of the most powerful savings vehicles in the tax code. Choose an FSA if your health plan doesn't qualify for an HSA, you need the full year's funds available immediately in January, or you have predictable annual medical expenses you know you'll spend. If your employer offers a Limited-Purpose FSA (dental and vision only), you can pair it with an HSA to get benefits from both — but a standard healthcare FSA and an HSA cannot be held simultaneously.",
+  "sections": [
+    {
+      "heading": "How an HSA works",
+      "content": "A Health Savings Account (HSA) is a personal tax-advantaged account you own permanently. Contributions go in pre-tax, grow tax-free when invested, and come out tax-free when used for qualified medical expenses — the only triple tax advantage in the U.S. tax code.\n\nThe key eligibility requirement: you must be enrolled in a High-Deductible Health Plan (HDHP). In 2025, an HDHP is defined as a plan with a minimum deductible of $1,650 for self-only coverage or $3,300 for family coverage. If your employer doesn't offer an HDHP option, you can't open an HSA.\n\nThe rollover rule is the HSA's most underrated feature. Unlike an FSA, your full balance carries forward every year without limit. A 35-year-old who contributes $4,300/year for 30 years and invests at a historical 8% average return would accumulate over $525,000 — and all of it is tax-free for qualified medical expenses. Use the [investment calculator](/investing/) to model HSA growth at your contribution level.\n\nAt age 65, the HSA transforms into something resembling a Traditional IRA: you can withdraw for any purpose and pay ordinary income tax on non-medical withdrawals, with no additional penalty. Medicare premiums are always qualified HSA expenses, tax-free."
+    },
+    {
+      "heading": "How an FSA works",
+      "content": "A Flexible Spending Account (FSA) is an employer-sponsored benefit that lets you set aside pre-tax dollars for qualified medical, dental, and vision expenses without requiring a specific type of health plan. The key practical feature: your full annual election amount is available from day one — even before you've contributed those payroll deductions.\n\nThe trade-off is the \"use it or lose it\" rule. Unspent FSA balances at year-end revert to your employer. The IRS allows employers to offer one of two relief options — a carryover of up to $660 to the following plan year, or a 2.5-month grace period — but not both, and not every employer offers either.\n\nThe FSA is entirely employer-controlled. If you leave your job mid-year, your remaining FSA balance is generally forfeited unless you elect COBRA continuation coverage. This portability gap is the sharpest practical difference between the two accounts.\n\nFor families with known large annual medical expenses — scheduled surgeries, braces, or a new baby's pediatric costs — the FSA's front-loading can actually be an advantage. You can charge $3,300 in January and repay it through payroll the rest of the year, effectively getting an interest-free loan from your employer."
+    },
+    {
+      "heading": "The HSA as a long-term retirement savings tool",
+      "content": "The most underused HSA strategy is treating it as a \"stealth IRA\" for healthcare costs in retirement. The approach: max the HSA each year, invest the balance in a low-cost stock index fund, pay current medical expenses out of pocket, and save every receipt.\n\nAt retirement, you use those saved receipts to reimburse yourself from the HSA — tax-free, with no time limit on reimbursements for old expenses. Medicare premiums, long-term care insurance, and most healthcare costs in retirement are qualified HSA expenses and can be paid tax-free.\n\nThe compounding advantage is substantial. An HSA invested in an S&P 500 index fund from age 35 to 65 outperforms the same dollars in a taxable savings account by roughly 30–40% on an after-tax basis, solely from eliminating capital gains and dividend taxes along the way.\n\nA non-obvious implication: the HSA is the only savings account where you can contribute pre-tax, earn returns tax-free, AND withdraw tax-free — making its effective return higher than a Roth IRA for qualified medical expenses. See the [net worth calculator](/net-worth/) to factor healthcare costs into your long-term financial picture."
+    },
+    {
+      "heading": "When an FSA beats an HSA",
+      "content": "The FSA wins in several scenarios that most comparison articles overlook. First: predictable large early-year expenses. If you're scheduling a $3,000 surgery in January, the FSA lets you access the full $3,300 immediately and repay through payroll deductions — the HSA would only have what you'd contributed since January 1.\n\nSecond: when your employer's health plan doesn't qualify for an HSA. Many popular employer plans — PPOs with low deductibles, HMOs — don't meet the HDHP threshold. If your only option is a $1,000-deductible plan, HSA is off the table and FSA is the only pre-tax health savings option available.\n\nThird: predictable annual spend with no desire to invest. If you reliably spend exactly your FSA election on annual healthcare costs, the FSA's simplicity (no investment decisions, no investment threshold to manage) is genuinely adequate. The [triple tax advantage](/guides/hsa-triple-tax-advantage/) only matters if you have a long-enough time horizon for tax-free growth to accumulate.\n\nFor most people under 50 with an HDHP option, the HSA still wins on math. But the FSA wins on practicality when health plan constraints or near-term cash flow are the primary concern. Use the [retirement calculator](/retirement/) to factor both accounts into your long-term savings plan."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I have both an HSA and an FSA at the same time?",
+      "answer": "Not a standard healthcare FSA and an HSA simultaneously — IRS rules prohibit it. However, you can pair an HSA with a Limited-Purpose FSA (LPFSA), which covers only dental and vision expenses. You can also hold a Dependent Care FSA (for childcare costs) alongside an HSA — that's a different type of FSA entirely and has no conflict with HSA eligibility."
+    },
+    {
+      "question": "What happens to my HSA if I switch from an HDHP to a regular health plan?",
+      "answer": "Your existing HSA balance stays yours permanently. You just can't make new contributions while enrolled in a non-HDHP plan. The funds already in the account can still be used tax-free for qualified medical expenses at any age, with no deadline. If you switch back to an HDHP later, you can resume contributions."
+    },
+    {
+      "question": "What happens to my FSA if I leave my job?",
+      "answer": "Your FSA balance is generally forfeited when you leave your employer unless you elect COBRA continuation coverage to maintain FSA access through year-end. The FSA is employer-owned — unlike an HSA, you can't take it with you. This is one of the strongest arguments for spending your FSA down before leaving a job and for contributing conservatively if job security is uncertain."
+    },
+    {
+      "question": "Is an HSA or FSA better for taxes?",
+      "answer": "The HSA is better for taxes in almost every scenario where you qualify. It provides a triple tax advantage: pre-tax contributions reduce your taxable income, growth is tax-free when invested, and withdrawals for medical expenses are tax-free. An FSA gives you the first and third benefit but not tax-free growth (no investment option). For someone in the 22% tax bracket saving $4,300/year in an HSA, the immediate income tax savings alone is about $946 — plus investment growth over time."
+    },
+    {
+      "question": "What qualifies as a medical expense for HSA and FSA?",
+      "answer": "Both accounts cover the same IRS-defined list: doctor visits, prescription drugs, dental care, vision care (including LASIK), mental health services, surgery, hospital fees, and many medical devices. After the 2020 CARES Act, over-the-counter medications and menstrual care products are eligible for both without a prescription. Cosmetic procedures, gym memberships, and non-prescription vitamins are generally not qualified expenses. The full list is in IRS Publication 502."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS — Publication 969: Health Savings Accounts",
+      "url": "https://www.irs.gov/publications/p969"
+    },
+    {
+      "label": "IRS — Publication 502: Medical and Dental Expenses",
+      "url": "https://www.irs.gov/publications/p502"
+    },
+    {
+      "label": "IRS — HSA contribution limits 2025",
+      "url": "https://www.irs.gov/newsroom/irs-announces-2025-hsa-limits"
+    }
+  ],
+  "relatedComparisons": [
+    "401k-vs-roth-ira",
+    "brokerage-vs-ira",
+    "hysa-vs-money-market",
+    "hsa-vs-roth-ira"
+  ],
+  "calculatorLinks": [
+    {
+      "label": "Investment growth calculator",
+      "href": "/investing/"
+    },
+    {
+      "label": "Net worth calculator",
+      "href": "/net-worth/"
+    },
+    {
+      "label": "Retirement calculator",
+      "href": "/retirement/"
+    },
+    {
+      "label": "Average HSA balance by age",
+      "href": "/guides/average-hsa-balance-by-age/"
+    }
+  ]
+}

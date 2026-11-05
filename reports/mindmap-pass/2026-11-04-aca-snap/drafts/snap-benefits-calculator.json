@@ -1,0 +1,98 @@
+{
+  "calculator": "budget",
+  "slug": "snap-benefits-calculator",
+  "title": "SNAP Benefits Calculator for a Monthly Food Budget",
+  "metaDescription": "Estimate a full-month SNAP food benefit from household income and allowed deductions. See the federal math, current limits, and state-rule exceptions.",
+  "targetKeyword": "SNAP benefits calculator",
+  "h1": "Supplemental Nutrition Assistance Program (SNAP) Benefits Calculator",
+  "introText": "The base SNAP formula subtracts 30% of net income, rounded up, from the household maximum. At ModernWallet, we calculated these hypothetical full-month cases for the SNAP benefits calculator using federal fiscal year (FY) 2027 amounts. FY2027 runs from October 1, 2026, through September 30, 2027.\n\nThe worked-example table below shows each step. The calculator opens on a hypothetical four-person household earning $2,000 a month with $1,200 in rent, and our arithmetic gives that household $766 a month if the state finds it eligible.",
+  "howItWorks": "",
+  "sections": [
+    {
+      "heading": "How SNAP Benefits Are Calculated",
+      "body": "The base SNAP benefit before any eligible minimum equals the maximum monthly allotment for your household size minus 30% of your household's net income, with that 30% rounded up to the next whole dollar. The [U.S. Department of Agriculture (USDA) Food and Nutrition Administration (FNA)](https://fns-prod.azureedge.us/snap/recipient/eligibility) bases the 30% share on the expectation that SNAP households spend about 30% of their own resources on food. For FY2027 in the 48 contiguous states and the District of Columbia, the maximum allotment runs from $306 for one person to $1,841 for eight.\n\nThe calculator above works through six steps in this order:\n\n1. Add earned income and unearned income, such as Social Security, to get gross monthly income.\n2. Subtract 20% of earned income.\n3. Subtract the standard deduction for your household size.\n4. Subtract dependent care, child support where your state allows it, and medical costs over $35 for an elderly or disabled member.\n5. Subtract the part of shelter costs above half of that adjusted income, up to $769 unless a member is elderly or disabled.\n6. Multiply net income by 0.3, round up, and subtract the result from the maximum allotment.\n\nThe calculator labels its result as conditional because the formula only pays out once a state agency finds the household eligible. When net income lands above the federal net income limit for your household size, the calculator holds back a benefit amount unless you confirm that a state agency has already found the household eligible.\n\nFY2027 sets a $25 minimum for eligible one- or two-person households. The calculator shows that $25 floor on its own line, and it never turns a failed income screen into an award.\n\nThe calculator covers households of 1 to 8 people in the 48 contiguous states and the District of Columbia. Households in Alaska, Hawaii, Guam, or the U.S. Virgin Islands, and households of nine or more, get no estimate here and should use the [FY2027 allotment and deduction tables](https://fns-prod.azureedge.us/snap/allotment/cola) instead. You can copy or download the result with your inputs, and nothing you type is sent to a server."
+    },
+    {
+      "heading": "Income and Deductions for the SNAP Benefits Calculator",
+      "body": "Enter your household's monthly gross income in two parts, earned and unearned, because the 20% deduction applies to earned income. Wages go in the earned field. Social Security goes in the unearned field.\n\nThen enter the deductions SNAP allows. FNA lists these for FY2027:\n\n- A standard deduction of $217 for 1 to 3 people, $229 for 4, $268 for 5, and $308 for 6 or more, which the calculator applies from your household size.\n- Dependent care costs when the care is needed for work, training, or education.\n- Legally owed child support payments, in states that allow this deduction.\n- Medical costs for an elderly or disabled member above $35 a month, when insurance or someone else does not pay them.\n- Excess shelter costs, explained below.\n\nShelter costs include rent or mortgage payments, mortgage interest, and taxes on the home, so put property taxes in the housing field if you pay them. Allowable utility costs are heating and cooking fuel, electricity, water, and the basic fee for one telephone.\n\nSome states allow a set amount for utilities in place of actual bills. FNA does not publish one national figure for that set amount, so the utility field starts at $0. Enter only the utility amount your [state SNAP agency](https://fns-prod.azureedge.us/snap/state-directory) approves, and do not add actual bills on top of it.\n\nHouseholds experiencing homelessness can get a standard $205.66 homeless shelter deduction. The calculator has no field for it, so ask your agency through the [SNAP state directory](https://fns-prod.azureedge.us/snap/state-directory) how it applies to your case."
+    },
+    {
+      "heading": "SNAP Income Limits Are a Federal Reference",
+      "body": "SNAP income limits for FY2027 set gross monthly income at 130% of the federal poverty level and net monthly income at 100%, and most households must meet both limits. FNA publishes these limits for the 48 contiguous states, the District of Columbia, Guam, and the U.S. Virgin Islands. Alaska and Hawaii have higher limits.\n\n| Household size | Gross monthly limit (130%) | Net monthly limit (100%) |\n|---|---|---|\n| 1 | $1,729 | $1,330 |\n| 2 | $2,345 | $1,804 |\n| 3 | $2,960 | $2,277 |\n| 4 | $3,575 | $2,750 |\n| 5 | $4,191 | $3,224 |\n| 6 | $4,806 | $3,697 |\n| 7 | $5,421 | $4,170 |\n| 8 | $6,037 | $4,644 |\n| Each additional member | +$616 | +$474 |\n\nGross income is the household's total non-excluded income before any deductions. Net income is gross income minus the allowed deductions from the six calculator steps.\n\nThe table works as a reference line because state rules can change the result. A household where every member receives Temporary Assistance for Needy Families (TANF), Supplemental Security Income (SSI), or in some places general assistance may be categorically eligible. Most states also use broad-based categorical eligibility (BBCE), which lets a state align SNAP income and resource limits with its TANF-funded programs.\n\nUnder BBCE, household income still must be low enough to produce a SNAP benefit. Non-financial rules also apply. That is why the calculator lets you confirm a state eligibility determination when your net income sits above the federal figure."
+    },
+    {
+      "heading": "SNAP Benefits for Older or Disabled Members",
+      "body": "SNAP changes the benefit math in three ways when a household includes a member who is elderly or disabled:\n\n- The gross income test does not apply. The net income limit still applies.\n- Medical costs above $35 a month that insurance or someone else does not pay count as a deduction.\n- The excess shelter deduction has no $769 cap, so all shelter costs above half of adjusted income come off.\n\nTurn on the elderly or disabled setting in the calculator to apply the medical deduction and the uncapped shelter deduction. \n\n \n\nHouseholds with a member age 60 or older or disabled can also hold up to $4,750 in countable resources, compared with $3,000 for other households. A person 60 or older who cannot buy and prepare meals separately because of a permanent disability may form a separate SNAP household with a spouse. That applies only when the others they live with have income no higher than 165% of the poverty level, according to [FNA](https://fns-prod.azureedge.us/snap/recipient/eligibility)."
+    },
+    {
+      "heading": "A Full-Month SNAP Worked Example",
+      "body": "Our worked example gives a four-person household with $2,000 in monthly earnings and $1,200 in allowed shelter costs a full-month SNAP benefit of $766. The household has no unearned income, dependent care, child support, medical costs, or elderly or disabled member. The second column raises shelter costs to $1,400, and both columns are our own arithmetic on the FY2027 figures.\n\n| Step | $1,200 shelter | $1,400 shelter |\n|---|---|---|\n| Gross earned income | $2,000.00 | $2,000.00 |\n| 20% earned income deduction | $400.00 | $400.00 |\n| Standard deduction (4 people) | $229.00 | $229.00 |\n| Adjusted income | $1,371.00 | $1,371.00 |\n| Half of adjusted income | $685.50 | $685.50 |\n| Excess shelter deduction | $514.50 | $714.50 |\n| Net income | $856.50 | $656.50 |\n| 30% of net income, rounded up | $257 | $197 |\n| Maximum allotment (4 people) | $1,023 | $1,023 |\n| Full-month benefit | $766 | $826 |\n\nRaising allowed shelter costs by $200 raised the benefit by $60. Each added dollar of excess shelter lowers net income by a dollar and the household's 30% share by about 30 cents. Without an elderly or disabled member, the excess shelter deduction is capped at $769, so shelter costs beyond that cap no longer raise the benefit.\n\nThe household also clears both federal income references. Its $2,000 gross is under the $3,575 limit for four people, and its $856.50 net is under $2,750.\n\n \n\nThese are full-month amounts. If a state finds the household eligible, benefits count from the date the application was submitted, so the first month's payment can differ from the full-month figure."
+    },
+    {
+      "heading": "What the SNAP Benefits Calculator Cannot Decide",
+      "body": "The calculator runs the federal benefit formula and cannot decide whether your household is eligible for SNAP. Only the state agency where you live makes that decision, after an interview and proof of the information you give. The formula does not check these rules:\n\n- Countable resources, capped at $3,000, or $4,750 with a member age 60 or older or disabled. A home and lot, most retirement and pension plans, and resources of people receiving SSI or TANF do not count. Vehicles count, and each state decides how.\n- Student eligibility, which the [FNA eligibility page](https://fns-prod.azureedge.us/snap/recipient/eligibility) covers.\n- Work requirements and non-citizen eligibility, which the [Working Families Tax Cuts Act](https://fns-prod.azureedge.us/snap/recipient/eligibility) changed. The [FNA eligibility page](https://fns-prod.azureedge.us/snap/recipient/eligibility) says it is being updated with those changes.\n- Household membership. People who live together and buy and prepare meals together form one household, and spouses and most children under 22 count in the same household even if they shop and cook separately.\n\nA state set utility amount, the child support deduction, or BBCE limits can change your estimate. It also changes on October 1, 2027, when FNA adjusts maximum allotments, deductions, and income standards for the next fiscal year.\n\nIf the state denies your application or sets a benefit you disagree with, you can request a fair hearing within 90 days of the decision. You can make that request by phone, in writing, or in person at the local SNAP office."
+    },
+    {
+      "heading": "Your Next Step",
+      "body": "Save your inputs with the calculator's download. Apply through the SNAP agency in the state where you live. Each state has its own application form, and FNA does not process applications or see case information, so use the [SNAP state directory](https://fns-prod.azureedge.us/snap/state-directory) to find your state's office, website, or hotline. In most cases, the state agency sends an eligibility notice within 30 days, and a household with less than $100 in liquid resources and $150 in monthly gross income may get benefits within 7 days.\n\nApproved benefits load each month onto an Electronic Benefit Transfer (EBT) card that works like a debit card. SNAP [can buy food for the household](https://fns-prod.azureedge.us/snap/eligible-food-items), including produce, meat, dairy, bread, snack foods, and seeds that grow food. It cannot buy alcohol, tobacco, vitamins, supplements, hot foods, pet food, cleaning supplies, paper products, or hygiene items.\n\nTreat the SNAP amount as a grocery fund and keep it out of your cash take-home pay when you [plan the rest of your household budget](/budget/household-budget-calculator/). If you have never tracked spending, [build a budget from your statements](/guides/how-to-make-a-budget/) first so the grocery line reflects what you buy. Allowed deductions and net income set a conditional amount. Only your state agency decides eligibility. A different state allowance, first-month date, or cost-of-living update changes the result. Run your numbers in the SNAP benefits calculator and take the downloaded result to your state application."
+    }
+  ],
+  "commonMistakes": [],
+  "faqs": [
+    {
+      "question": "How do they calculate how much food stamps I get?",
+      "answer": "Your state SNAP agency subtracts allowed deductions from your gross income to get net income, multiplies net income by 0.3, rounds up, and subtracts that amount from the maximum allotment for your household size. For a four-person household with $856.50 in net income, that is $1,023 minus $257, or $766 for a full month."
+    },
+    {
+      "question": "What is the minimum SNAP benefit?",
+      "answer": "The FY2027 minimum SNAP benefit is $25 a month for eligible one- and two-person households in the 48 contiguous states and the District of Columbia. Other areas use the amounts in the [FY2027 cost-of-living adjustment (COLA) tables](https://fns-prod.azureedge.us/snap/allotment/cola). The minimum applies only after a household is found eligible."
+    },
+    {
+      "question": "How much can you get in SNAP benefits?",
+      "answer": "For FY2027 in the 48 contiguous states and the District of Columbia, the most a household can get is $306 for one person, $562 for two, $808 for three, $1,023 for four, $1,217 for five, $1,463 for six, $1,616 for seven, and $1,841 for eight. Households of nine or more can check the [FY2027 cost-of-living adjustment (COLA) tables](https://fns-prod.azureedge.us/snap/allotment/cola). Subtract 30% of net income, rounded up to the next whole dollar, from the maximum allotment. An otherwise eligible household with $0 net income receives the full maximum."
+    },
+    {
+      "question": "What are SNAP benefits income limits?",
+      "answer": "For FY2027, most households in the 48 contiguous states and the District of Columbia need to meet both the gross limit of 130% of the poverty level and the net limit of 100%. For four people, that is $3,575 gross and $2,750 net. Households with an elderly or disabled member only need to meet the net limit, and states using broad-based categorical eligibility can align limits with their TANF-funded programs."
+    },
+    {
+      "question": "Can seniors get food stamps?",
+      "answer": "Yes, people age 60 or older can get SNAP when their household meets the program rules, and special rules apply to them. A household with a member who is 60 or older or disabled only has to meet the net income limit, can deduct medical costs over $35 a month, and has no cap on the excess shelter deduction. It can also hold $4,750 in countable resources, compared with $3,000 for other households."
+    }
+  ],
+  "sources": [
+    {
+      "label": "USDA Food and Nutrition Administration: SNAP Cost-of-Living Adjustment (COLA) Information",
+      "url": "https://fns-prod.azureedge.us/snap/allotment/cola"
+    },
+    {
+      "label": "USDA Food and Nutrition Administration: SNAP Eligibility",
+      "url": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "label": "USDA Food and Nutrition Administration: SNAP State Directory of Resources",
+      "url": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "label": "USDA Food and Nutrition Administration: What Can SNAP Buy?",
+      "url": "https://fns-prod.azureedge.us/snap/eligible-food-items"
+    }
+  ],
+  "toolHeading": "Estimate Your SNAP Food Benefit",
+  "toolSubheading": "Federal fiscal year 2027 math for households of 1 to 8 people in the 48 contiguous states and the District of Columbia.",
+  "islandId": "snap-benefits",
+  "preset": {
+    "householdSize": 4,
+    "earnedIncome": 2000,
+    "unearnedIncome": 0,
+    "dependentCare": 0,
+    "childSupport": 0,
+    "elderlyOrDisabled": false,
+    "medicalCosts": 0,
+    "rentOrMortgage": 1200,
+    "utilityAllowance": 0,
+    "stateEligibilityConfirmed": false
+  },
+  "suppressRelatedFallback": true,
+  "disclaimerText": "This calculator gives an educational estimate from federal fiscal year 2027 SNAP figures, and only your state SNAP agency can decide eligibility and the benefit amount."
+}

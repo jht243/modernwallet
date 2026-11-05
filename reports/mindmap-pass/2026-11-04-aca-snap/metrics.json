@@ -1,0 +1,190 @@
+{
+ "rows": [
+  {
+   "keyword": "aca subsidy calculator",
+   "volume": 1900,
+   "volume_low": 1900,
+   "volume_high": 1900,
+   "kd": "54",
+   "cpc": "2.13",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "aca subsidy income limits",
+   "volume": 260,
+   "volume_low": 260,
+   "volume_high": 260,
+   "kd": "50",
+   "cpc": "0.94",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "aca subsidies",
+   "volume": 40500,
+   "volume_low": 40500,
+   "volume_high": 40500,
+   "kd": "65",
+   "cpc": "3.27",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "aca subsidy income limits 2027",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 0,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "aca subsidy cliff",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": "18",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "snap benefits calculator",
+   "volume": 2900,
+   "volume_low": 2900,
+   "volume_high": 2900,
+   "kd": "30",
+   "cpc": "2.75",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "snap benefits income limits",
+   "volume": 1300,
+   "volume_low": 1300,
+   "volume_high": 1300,
+   "kd": "44",
+   "cpc": "2.14",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "snap benefits for seniors",
+   "volume": 590,
+   "volume_low": 590,
+   "volume_high": 590,
+   "kd": "39",
+   "cpc": "1.04",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "apply for food stamps",
+   "volume": 40500,
+   "volume_low": 40500,
+   "volume_high": 40500,
+   "kd": "58",
+   "cpc": "1.36",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "snap vs wic",
+   "volume": 1300,
+   "volume_low": 1300,
+   "volume_high": 1300,
+   "kd": "24",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "snap benefits vs ebt",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": "39",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "aca vs medicaid",
+   "volume": 390,
+   "volume_low": 390,
+   "volume_high": 390,
+   "kd": "37",
+   "cpc": "5.38",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using semrush (quality order semrush > dataforseo)",
+  "semrush returned volume for 12/12 phrases",
+  "kd: using semrush (quality order semrush > dataforseo)",
+  "Autocomplete: 12/12 rows corroborated live"
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "route": "/budget/snap-benefits-calculator/",
+  "status": "targeted-precision-correction-not-final-PASS",
+  "findings": [
+    {
+      "field": "introText",
+      "quote": "For an eligible household, the full-month SNAP benefit is the maximum allotment minus 30% of SNAP net income, with that 30% rounded up.",
+      "replacement": "The base SNAP formula subtracts 30% of net income, rounded up, from the household maximum.",
+      "defect": "Qualify the raw formula as a base calculation; an otherwise eligible one- or two-person household can instead receive the $25 minimum."
+    },
+    {
+      "field": "How SNAP Benefits Are Calculated",
+      "quote": "A SNAP benefit equals the maximum monthly allotment for your household size minus 30% of your household's net income, with that 30% rounded up to the next whole dollar.",
+      "replacement": "The base SNAP benefit before any eligible minimum equals the maximum monthly allotment for your household size minus 30% of your household's net income, with that 30% rounded up to the next whole dollar.",
+      "defect": "Same base-formula versus minimum distinction; retain the existing detailed minimum explanation and correct tool behavior."
+    }
+  ]
+}

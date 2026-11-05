@@ -1,0 +1,1 @@
+No prior commits touch this exact route file; data-object coverage separately checked.

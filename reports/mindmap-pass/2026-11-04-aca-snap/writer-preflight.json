@@ -1,0 +1,11 @@
+[content_gen] primary   : claude-opus-5-5 (anthropic)
+[content_gen] fallback  : gemini-3.8-flash -> gpt-6-sol
+[content_gen] claude effort: high (adaptive thinking)
+[content_gen] thinking  : medium   max_tokens: 40000
+[content_gen] claude-opus-5-5        OK  key=CONTENT_ANTHROPIC_KEY(…XAAA) replied='OK'
+[content_gen] gemini-3.8-flash       OK  key=GEMINI_API_KEY(…s3YA) replied='OK'
+[content_gen] gpt-6-sol              FAIL — HTTP 403: {
+  "error": {
+    "message": "Project `proj_h7ZkxgMuJPuaRxl0KEfiGD1k` does not have access to model `gpt-6-sol`",
+    "type": "invalid_request_error"
+[content_gen] preflight OK

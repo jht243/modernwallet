@@ -1,0 +1,10 @@
+{
+  "actor": "benefits_content",
+  "preflight": "preflight-write-content/check delivery-complete-sources-current",
+  "author": "Jonathan Velez existing site byline",
+  "testing": "Ordinary excluded financial/program information; calculated/reported only, never TESTED",
+  "teeupExempt": "Official process N5 needs no company-experience assertion. N1/N2 specific real arithmetic attributed visibly. Reporter N3/N4 use agency attribution.",
+  "sources": "Exact approved manifest/source hashes preserved; source excerpts supplied in closed facts.",
+  "takeaways": "Exact approved brief takeaways in every prompt and evidence packet.",
+  "generatorPreflight": "writer-preflight.json reused same run: Claude primary OK, Gemini fallback OK, terminal GPT unavailable."
+}

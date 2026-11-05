@@ -1,0 +1,45 @@
+[
+  {
+    "path": "/budget/household-budget-calculator/",
+    "proseDifferences": [
+      {
+        "before": "June 25,",
+        "after": "November 4,"
+      },
+      {
+        "before": "",
+        "after": "You can estimate SNAP food benefits separately from cash income because SNAP can pay only for eligible food."
+      },
+      {
+        "before": "",
+        "after": "If food costs are hard to cover, compare SNAP and WIC for the assistance each program offers."
+      }
+    ]
+  },
+  {
+    "path": "/guides/how-to-budget-with-irregular-income/",
+    "proseDifferences": [
+      {
+        "before": "June 25,",
+        "after": "November 4,"
+      },
+      {
+        "before": "",
+        "after": "Use the calculator to estimate a federal premium credit and compare Marketplace coverage with Medicaid before planning your coverage costs."
+      }
+    ]
+  },
+  {
+    "path": "/guides/how-to-make-a-budget/",
+    "proseDifferences": [
+      {
+        "before": "October 29,",
+        "after": "November 4,"
+      },
+      {
+        "before": "",
+        "after": "If you need food assistance, follow the SNAP application steps through your state agency."
+      }
+    ]
+  }
+]

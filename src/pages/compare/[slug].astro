@@ -2,6 +2,8 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Byline from "../../components/Byline.astro";
 import Sources from "../../components/Sources.astro";
+import BenefitsNotice from "../../components/BenefitsNotice.astro";
+import { benefitBody, benefitParagraphs } from "../../lib/benefits-text";
 import { SITE, LAST_UPDATED } from "../../data/site";
 import { COMPARISONS } from "../../data/comparisons";
 import { linkify, linkifyInline, plain, paragraphs, richBody } from "../../lib/richtext";
@@ -21,6 +23,8 @@ export function getStaticPaths() {
 
 const { entry } = Astro.props;
 const canonicalUrl = new URL(`/compare/${entry.slug}/`, Astro.site).toString();
+const comparisonOpeningSection = entry.disclaimerText && entry.sections[0]?.heading === entry.tableHeading ? entry.sections[0] : null;
+const bodySections = comparisonOpeningSection ? entry.sections.slice(1) : entry.sections;
 
 const jsonLdBreadcrumb = {
   "@context": "https://schema.org",
@@ -60,7 +64,7 @@ const relatedEntries = entry.relatedComparisons
       .filter((c): c is NonNullable<typeof c> => c !== undefined)
   : [];
 ---
-<BaseLayout title={entry.title} description={entry.metaDescription}>
+<BaseLayout title={entry.title} description={entry.metaDescription} affiliateDisclosureText={entry.disclaimerText ? "Some links on this site are referral or affiliate links. We may earn a reward or commission at no cost to you." : undefined}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
   {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdPerson)} />
@@ -76,11 +80,14 @@ const relatedEntries = entry.relatedComparisons
     <header class="hero">
       <h1>{entry.h1}</h1>
       <Byline updated={entry.updated} />
-      {paragraphs(entry.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
+      {(entry.disclaimerText ? benefitParagraphs(entry.introText) : paragraphs(entry.introText)).map((para) => <p class="lede" set:html={linkify(para)} />)}
     </header>
 
-    <section class="section table-section" aria-label="Side-by-side comparison">
-      <h2>{entry.optionA} vs {entry.optionB}: Side-by-Side</h2>
+    {entry.disclaimerText && <nav class="benefits-toc" aria-label="On This Page"><strong>On This Page</strong><ol><li><a href="#benefits-comparison">{entry.tableHeading}</a></li>{bodySections.map((section, i) => <li><a href={`#benefits-section-${i + 1}`}>{section.heading}</a></li>)}<li><a href="#benefits-next-step">{entry.verdictHeading}</a></li></ol></nav>}
+
+    <section id={entry.disclaimerText ? "benefits-comparison" : undefined} class="section table-section" aria-label="Side-by-side comparison">
+      <h2>{entry.tableHeading ?? `${entry.optionA} vs ${entry.optionB}: Side-by-Side`}</h2>
+      {comparisonOpeningSection && <Fragment set:html={benefitBody(comparisonOpeningSection.content)} />}
       <div class="table-wrap">
         <table class="cmp-table">
           <thead>
@@ -106,28 +113,33 @@ const relatedEntries = entry.relatedComparisons
     {/* Advertise With Us (under the side-by-side table) */}
     <SponsorSlot path={`/compare/${entry.slug}/`} />
 
-    <section class="section verdict-section">
-      <h2>Which should you choose?</h2>
+    {!entry.disclaimerText && <section id={entry.disclaimerText ? "benefits-next-step" : undefined} class="section verdict-section">
+      <h2>{entry.verdictHeading ?? "Which should you choose?"}</h2>
       <div class="verdict-box">
-        {paragraphs(entry.verdict).map((para) => <p set:html={linkify(para)} />)}
+        {(entry.disclaimerText ? benefitParagraphs(entry.verdict) : paragraphs(entry.verdict)).map((para) => <p set:html={linkify(para)} />)}
       </div>
-    </section>
+    </section>}
 
-    {entry.sections.map((s) => (
-      <section class="section">
+    {bodySections.map((s, i) => (
+      <section id={entry.disclaimerText ? `benefits-section-${i + 1}` : undefined} class="section">
         <h2>{s.heading}</h2>
-        <Fragment set:html={richBody(s.content)} />
+        <Fragment set:html={entry.disclaimerText ? benefitBody(s.content) : richBody(s.content)} />
       </section>
     ))}
 
+    {entry.disclaimerText && <section id="benefits-next-step" class="section verdict-section">
+      <h2>{entry.verdictHeading}</h2>
+      <div class="verdict-box">{(entry.disclaimerText ? benefitParagraphs(entry.verdict) : paragraphs(entry.verdict)).map((para) => <p set:html={linkify(para)} />)}</div>
+    </section>}
+
     {entry.faqs.length > 0 && (
       <section class="section">
-        <h2>Frequently asked questions</h2>
+        <h2>{entry.disclaimerText ? "Frequently Asked Questions" : "Frequently asked questions"}</h2>
         <div class="faqs">
           {entry.faqs.map((f) => (
             <details class="faq">
               <summary><h3>{f.question}</h3></summary>
-              <p set:html={linkify(f.answer)} />
+              {entry.disclaimerText ? benefitParagraphs(f.answer).map((para) => <p set:html={linkify(para)} />) : <p set:html={linkify(f.answer)} />}
             </details>
           ))}
         </div>
@@ -136,7 +148,7 @@ const relatedEntries = entry.relatedComparisons
 
     {entry.calculatorLinks && entry.calculatorLinks.length > 0 && (
       <section class="section cta-section">
-        <h2>Free calculators to help you decide</h2>
+        <h2>{entry.disclaimerText ? "Related Resources" : "Free calculators to help you decide"}</h2>
         <div class="cta-grid">
           {entry.calculatorLinks.map((link) => (
             <a href={link.href} class="cta-card">
@@ -153,7 +165,7 @@ const relatedEntries = entry.relatedComparisons
 
     {relatedEntries.length > 0 && (
       <section class="section">
-        <h2>Related comparisons</h2>
+        <h2>{entry.disclaimerText ? "Related Comparisons" : "Related comparisons"}</h2>
         <div class="related-grid">
           {relatedEntries.map((r) => (
             <a href={`/compare/${r.slug}/`} class="related-card">
@@ -164,9 +176,13 @@ const relatedEntries = entry.relatedComparisons
         </div>
       </section>
     )}
+    {entry.disclaimerText && <BenefitsNotice text={entry.disclaimerText} />}
   </main>
 
   <style>
+    .benefits-toc { padding: 18px; margin: 20px 0; border: 1px solid #d8eee6; border-radius: 10px; }
+    .benefits-toc ol { padding-left: 22px; line-height: 1.8; margin-bottom: 0; }
+    [id^="benefits-"] { scroll-margin-top: 80px; }
     .page { max-width: 920px; margin: 0 auto; padding: 16px 20px 56px; }
     .crumb { font-size: 0.875rem; color: #666; padding: 8px 0 12px; }
     .crumb a { color: var(--primary-dark); text-decoration: none; }

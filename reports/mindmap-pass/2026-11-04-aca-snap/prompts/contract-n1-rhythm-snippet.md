@@ -1,0 +1,1 @@
+Return exactly ONE sentence as a single plain Markdown paragraph. No heading, labels, JSON, other prose, or formatting. Return the exact supplied reviewer replacement verbatim. This is a scope-limited same-fact sentence correction, not an article.

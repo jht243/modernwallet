@@ -1,0 +1,12 @@
+{
+  "build": "PASS",
+  "staticRoutes": 1094,
+  "selectedSiteFiles": 22,
+  "mechanicalSourceScope": "record-scope-check.json",
+  "linkSitemapSearch": "publication-build-checks.json",
+  "allExistingRoutes": "all-route-comparison.json",
+  "browser": "../final-browser/browser-checks.json",
+  "phase4": "PASS: independent final 13-route rendered review and five analysis gates",
+  "publication": "not yet committed or pushed",
+  "recordedBeforePublication": true
+}

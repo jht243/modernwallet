@@ -1,0 +1,60 @@
+{
+  "reviewer": "aca_snap_chart_reviewer",
+  "stage": "preliminary-evidence-inspection-not-chart-verdict",
+  "checked": "2026-11-05T00:15:33.455662+00:00",
+  "artifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/irs-2027.txt",
+      "sha256": "d7f56a6da8a66170be4f85b77031429e0db092df322b9035fb08388e828e9feb"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-poverty.txt",
+      "sha256": "bbec81d0c481ed542c9517282241930d2443759b41197333e6f18692dc8ce7de"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-income.txt",
+      "sha256": "5dfb2032384557ce8f54bcc21c538eca2f52f072990ac98667858fdf74bf3bea"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-cola.txt",
+      "sha256": "f8ebb22951e90e78e6d37cd30fe07c357e76b4c36479b98010459c689c1753c5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligibility.txt",
+      "sha256": "13160ffc3ba82531a517e7e6f13d4b3df9a75f4a6afb4491a6701880c391c911"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-eligibility.txt",
+      "sha256": "0641315415cf7a3b6a2f97843ff787d0ca2b845f319d7e1b98ad3b8751da1f78"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-ca.txt",
+      "sha256": "c1eb248119ea632023ab2399c73f82297be1aca5dd38a842e8436d19edc084a2"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/metrics.json",
+      "sha256": "1b9ba89513d5e2a9c58168112d18e9ba61b3a302fe3fb66ba0ede17dbb38b555"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/expand-aca.json",
+      "sha256": "5e1e5a7b1ab98cbc000a5f5c128e42a096353bf860a9090ecab0255cf8df5a60"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/expand-snap.json",
+      "sha256": "94bc42c5968fa0084b5ccd71ed8928a006ddb41fe0e34d0d3ef3d0fed5f10dfe"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/reviewer-coverage.json",
+      "sha256": "63e5328e9d3c2f32d48f7eee76c1351045c8ec01ca6f57d1e061e7276b171a6c"
+    }
+  ],
+  "observations": {
+    "metrics": "12 exact phrases use SEMrush volume and KD. Expansions capped20 provider +20 unique autocomplete each; broad irrelevant rows require explicit filtering/coverage account.",
+    "dedup": "Independent coverage has no existing dedicated ACA/SNAP/WIC pages; nearest Medicaid comparison is Medicare-versus-Medicaid, not Marketplace-versus-Medicaid. Same-run tool/comparison overlap can be distinct if intent stays bounded.",
+    "aca": "Rev Proc2026-26 section3 gives2027 premium applicable percentage table2.15%,3.23-4.3%,4.3-6.78%,6.78-8.66%,8.66-10.22%,10.22%. HealthCare.gov2026 poverty $15960 one-person, +$5680 additional applies2027 Marketplace savings; expected current coverage-year income used, not prior-year actual earnings.",
+    "snap": "FY2027 COLA effective2026-10-01 through2027-09-30: 48states/DC four-person max1023, one/two minimum25, four-person standard deduction229. Benefits subtract ceil(netIncome*0.3) from max. Eligibility has state BBCE and nonfinancial conditions. Federal source worked example has inconsistent deductions and arithmetic; must recompute.",
+    "wic": "National eligibility source supports categorical groups, nutrition assessment and SNAP/Medicaid/TANF income eligibility pathway. California program confirms actual CalFresh recipients can apply; preserve state-qualified scope.",
+    "publicSourceCaution": "SNAP eligibility page flags work/noncitizen text still being updated; do not copy stale exemptions. ACA broad HealthCare.gov100-400% statement alone cannot replace all IRS eligibility criteria.",
+    "existingSourceCaution": "Medicare-vs-Medicaid inherited verdict has broad age/income eligibility and adjust-reported-earnings wording. Avoid exposing reader to contradiction if edited as link source. Irregular-income guide has relevant ACA insurance section."
+  }
+}

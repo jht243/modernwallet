@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "aca-subsidy-calculator",
+    "historyArtifact": "reports/mindmap-pass/2026-11-04-aca-snap/reviewer-history-aca-subsidy-calculator.txt",
+    "result": "no prior commits touch exact slug in source route/data/config",
+    "bytes": 0
+  },
+  {
+    "slug": "snap-benefits-calculator",
+    "historyArtifact": "reports/mindmap-pass/2026-11-04-aca-snap/reviewer-history-snap-benefits-calculator.txt",
+    "result": "no prior commits touch exact slug in source route/data/config",
+    "bytes": 0
+  },
+  {
+    "slug": "how-to-apply-for-food-stamps",
+    "historyArtifact": "reports/mindmap-pass/2026-11-04-aca-snap/reviewer-history-how-to-apply-for-food-stamps.txt",
+    "result": "no prior commits touch exact slug in source route/data/config",
+    "bytes": 0
+  },
+  {
+    "slug": "snap-vs-wic",
+    "historyArtifact": "reports/mindmap-pass/2026-11-04-aca-snap/reviewer-history-snap-vs-wic.txt",
+    "result": "no prior commits touch exact slug in source route/data/config",
+    "bytes": 0
+  },
+  {
+    "slug": "aca-vs-medicaid",
+    "historyArtifact": "reports/mindmap-pass/2026-11-04-aca-snap/reviewer-history-aca-vs-medicaid.txt",
+    "result": "no prior commits touch exact slug in source route/data/config",
+    "bytes": 0
+  }
+]

@@ -1,0 +1,83 @@
+{
+  "pageCount": 5,
+  "pages": [
+    {
+      "slug": "snap-benefits-calculator",
+      "model": "claude-opus-5-5",
+      "provider": "anthropic",
+      "fallback_used": false,
+      "fallback_reason": null,
+      "words": 2404,
+      "floor": 1200,
+      "seconds": 239.0,
+      "est_cost_usd": 0.679,
+      "generated_at": "2026-11-04T21:45:52-0500"
+    },
+    {
+      "slug": "aca-subsidy-calculator",
+      "model": "claude-opus-5-5",
+      "provider": "anthropic",
+      "fallback_used": false,
+      "fallback_reason": null,
+      "words": 2835,
+      "floor": 1200,
+      "seconds": 277.9,
+      "est_cost_usd": 0.836,
+      "generated_at": "2026-11-04T21:52:05-0500"
+    },
+    {
+      "slug": "snap-vs-wic",
+      "model": "claude-opus-5-5",
+      "provider": "anthropic",
+      "fallback_used": false,
+      "fallback_reason": null,
+      "words": 2460,
+      "floor": 1500,
+      "seconds": 215.0,
+      "est_cost_usd": 0.6342,
+      "generated_at": "2026-11-04T21:57:50-0500"
+    },
+    {
+      "slug": "aca-vs-medicaid",
+      "model": "claude-opus-5-5",
+      "provider": "anthropic",
+      "fallback_used": false,
+      "fallback_reason": null,
+      "words": 2654,
+      "floor": 1500,
+      "seconds": 257.6,
+      "est_cost_usd": 0.7335,
+      "generated_at": "2026-11-04T22:06:21-0500"
+    },
+    {
+      "slug": "how-to-apply-for-food-stamps",
+      "model": "claude-opus-5-5",
+      "provider": "anthropic",
+      "fallback_used": false,
+      "fallback_reason": null,
+      "words": 2144,
+      "floor": 1200,
+      "seconds": 176.0,
+      "est_cost_usd": 0.5327,
+      "generated_at": "2026-11-04T22:14:21-0500"
+    }
+  ],
+  "allPagesUsedConfiguredPrimary": true,
+  "scope": "Actual writer metadata; targeted fixes and narrow rework retain separate full provenance. No product-testing claim.",
+  "additionalNarrowReworks": [
+    {
+      "artifact": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/n1-base-snippets.md.meta.json",
+      "model": "claude-opus-5-5",
+      "provider": "anthropic",
+      "fallback_used": false,
+      "kind": "section"
+    },
+    {
+      "artifact": "reports/mindmap-pass/2026-11-04-aca-snap/drafts/n1-rhythm-rework2.md.meta.json",
+      "model": "claude-opus-5-5",
+      "provider": "anthropic",
+      "fallback_used": false,
+      "kind": "section"
+    }
+  ]
+}

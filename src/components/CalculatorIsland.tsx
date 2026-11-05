@@ -86,12 +86,15 @@ import TaxBracketCalculator from "./TaxBracketCalculator";
 import ChecklistBuilder from "./ChecklistBuilder";
 import SubscriptionCancellationPlanner from "./SubscriptionCancellationPlanner";
 import ViewingChecklist from "./ViewingChecklist";
+import { SnapBenefitsCalculator, AcaSubsidyCalculator } from "./BenefitsCalculators";
 
 // Single React entry point for every calculator island. Astro imports THIS component literally
 // (a requirement for client:only) and passes `calculatorId`; the right calculator is picked here,
 // on the client. Phase 2 adds the other calculators to the map below.
 
 const ISLANDS: Record<string, React.ComponentType<any>> = {
+  "snap-benefits": SnapBenefitsCalculator,
+  "aca-subsidy": AcaSubsidyCalculator,
   "inherited-ira-withdrawal-calculator": InheritedIraWithdrawalCalculator,
   "medicare-irmaa-calculator": MedicareIrmaaCalculator,
   "mileage-log-checker": MileageLogChecker,

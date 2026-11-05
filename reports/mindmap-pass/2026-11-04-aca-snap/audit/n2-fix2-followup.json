@@ -1,0 +1,40 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "route": "/budget/aca-subsidy-calculator/",
+  "status": "SEO-source-followup-not-final-PASS",
+  "findings": [
+    {
+      "field": "introText",
+      "quote": "At ModernWallet, we calculated hypothetical ACA premium-credit cases to show how income and premiums affect the estimate.",
+      "replacement": "At ModernWallet, we calculated hypothetical cases for the ACA subsidy calculator to show how income and premiums affect the estimate.",
+      "defect": "Exactprimaryphrase missingfromfirstparagraphafterfix2."
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "quote": "Compare income scenarios in the calculator above, then [update your Marketplace application](https://www.healthcare.gov/income-and-household-information/income/) whenever your income changes.",
+      "replacement": "Compare income scenarios in the ACA subsidy calculator, then [update your Marketplace application](https://www.healthcare.gov/income-and-household-information/income/) whenever your income changes.",
+      "defect": "Exactprimaryphrase missingfromlastbodyactionafterfix2."
+    }
+  ],
+  "mechanical": [
+    {
+      "field": "section heading",
+      "quote": "The Income to Enter for 2027",
+      "replacement": "Income for the 2027 ACA Subsidy Calculator",
+      "defect": "Firstnaturalexactprimaryphraseheading; preserveapprovedanswerheading."
+    },
+    {
+      "field": "section heading",
+      "quote": "When the ACA Estimate Does Not Apply",
+      "replacement": "When the ACA Subsidy Calculator Does Not Apply",
+      "defect": "Secondnaturalexactprimaryphraseheading; preservecontent."
+    },
+    {
+      "field": "How to qualify for ACA subsidy? paragraphformat",
+      "quote": "No one else can claim you as a dependent. The covered person must enroll",
+      "replacement": "No one else can claim you as a dependent.\n\nThe covered person must enroll",
+      "defect": "Nine-sentenceFAQanswerneedsreadableparagraphsmax3; addbreaksalsoafter Income mustfallinallowedrange and after limited-benefitexception asappropriate,renderparagraphsbynewbenefitscope. No factualrewrite."
+    }
+  ],
+  "reworkAttempts": 0
+}

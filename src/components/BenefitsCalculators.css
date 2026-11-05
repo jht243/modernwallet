@@ -1,0 +1,5 @@
+.mw-benefits table{table-layout:fixed;width:100%}
+.mw-benefits th{width:62%;font-weight:600}
+.mw-benefits td,.mw-benefits th{overflow-wrap:anywhere}
+.mw-benefits caption{text-align:left;font-weight:600;margin:18px 0 8px}
+.mw-benefits .mw-utility-number{overflow-wrap:anywhere}

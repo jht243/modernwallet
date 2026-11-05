@@ -1,0 +1,548 @@
+[
+  {
+    "file": "src/data/guides.ts",
+    "route": "/guides/how-to-make-a-budget/",
+    "object": {
+      "published": "2026-10-20",
+      "updated": "2026-10-29",
+      "slug": "how-to-make-a-budget",
+      "title": "How to Make a Budget in Four Steps (Beginner Guide)",
+      "metaDescription": "How to make a budget in four steps: list income, track a month of spending, map bill due dates, then build a 50/30/20 or zero-based plan.",
+      "h1": "How to Make a Budget in Four Steps",
+      "cardBlurb": "Make a budget by listing your income, tracking a month of spending, mapping bill due dates, then assigning your pay to costs and savings.",
+      "introText": "Make a budget in four steps: list your income, track a month of spending, map your bill due dates, then assign your income to costs and savings. Learning how to make a budget in this order means you pick a method like 50/30/20 or zero-based after you know what comes in and what goes out.\n\nThe four steps come from the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/about-us/blog/budgeting-how-to-create-a-budget-and-stick-with-it/), which offers a tool for each one. You can start the first step today with your latest pay stub and a notepad.",
+      "sections": [
+        {
+          "heading": "The Four Steps to Build a Budget from Scratch",
+          "body": "A budget gets built in four steps, and the first three steps each answer a question the CFPB asks:\n\n1. Where does my money come from? Write down every source of income, including pay from each job, self-employment income, child support and government benefits. The CFPB offers an Income Tracker for this step.\n2. Where does my money go? Log your spending for a month and sort it into categories, so you can see what a typical month costs you. The CFPB offers a Spending Tracker for this step.\n3. What are all my bills and when are they due? Put every bill on a calendar by its due date. The CFPB offers a Bill Calendar to track due dates and spot tight weeks.\n4. Create your working budget. Combine your income, your spending and your bill timing into one realistic plan.\n\nStart step 1 today. Pull your latest pay stub and any benefit or support statements, then write down each amount and the date it arrives.\n\nStep 2 needs a full month of records. Do them in order anyway, since step 4 only works when it is built from the numbers you collected in steps 1 to 3."
+        },
+        {
+          "heading": "Where the Numbers Come from When You Make a Budget",
+          "body": "The spending numbers in your budget should come from a month of real bank and card statements rather than from memory. Download the last full month from every checking account and credit card you use. Copy each charge into a category such as housing, groceries, transport, debt payments or fun.\n\nIf a full month of statements feels overwhelming, the CFPB suggests reviewing your expenses one week at a time. Four weekly sessions cover the same month of spending in smaller pieces. Pick one evening a week and finish one week of charges in that sitting.\n\nFor income, write down take-home pay, the amount that lands in your account after deductions. The 50/30/20 split covered below is a share of take-home pay, so using a larger pre-deduction figure would make every share too big. If your pay changes from month to month, step 1 needs a different approach, and our guide on [how to budget with irregular income](/guides/how-to-budget-with-irregular-income/) walks through it.\n\nIf a recurring charge is one you want to stop, use the [subscription cancellation planner](/checklists/cancel-subscription-planner/) to identify the biller and keep a dated record."
+        },
+        {
+          "heading": "Choosing Between 50/30/20 and Zero-Based Budgets",
+          "body": "A 50/30/20 budget splits take-home pay into three fixed shares, while a zero-based budget assigns every dollar of income a job until nothing is left unassigned. Both methods need the numbers from the four steps above. Pick one after step 2, once you know what a real month costs.\n\nUnder 50/30/20, 50% of take-home pay goes to needs, 30% to wants and 20% to savings and debt payments beyond the minimums. For example, a hypothetical take-home pay of $4,000 a month splits into $2,000 for needs, $1,200 for wants and $800 for savings and extra debt payments ($4,000 x 0.50, 0.30 and 0.20). You can run your own figure through the [50/30/20 Budget Calculator](/budget/50-30-20-budget-calculator/).\n\nA zero-based budget gives the same hypothetical $4,000 a list of jobs instead of three shares. One version might look like this:\n\n- $2,150 for housing and bills\n- $600 for groceries and transport\n- $350 for minimum debt payments\n- $400 for wants\n- $500 for savings\n\nThose five amounts add up to $4,000, so income minus assignments equals zero. Your own figures will differ, and the [Zero-Based Budget Calculator](/budget/zero-based-budget-calculator/) does the subtraction for you.\n\nThe two examples show how needs can pass 50% of take-home pay. If you count groceries, transport and minimum payments as needs, the zero-based household spends $3,100 on needs ($2,150 + $600 + $350). That is 77.5% of $4,000, or $1,100 more than the $2,000 needs share under 50/30/20.\n\nHigh housing costs or heavy debt can push your needs past 50% the same way. Treat 50/30/20 as a starting split that will not fit every household.\n\n| Criteria | 50/30/20 | Zero-Based |\n| --- | --- | --- |\n| How income is split | 50% needs, 30% wants, 20% savings and extra debt payments | Every dollar assigned to spending, saving or debt until zero remains |\n| Hypothetical $4,000 example | $2,000 needs, $1,200 wants, $800 savings and extra debt | $2,150 bills, $600 groceries and transport, $350 minimums, $400 wants, $500 savings |\n| Fits when | Your needs take 50% of take-home pay or less | Your needs take more than 50%, or you want every dollar named |\n| Strains when | High housing costs or heavy debt push needs past 50% | You skip assigning some dollars, so the total no longer reaches zero |\n| Verdict | Simpler first budget when needs fit in half your pay | Better first budget when needs already take more than half |\n\nOur pick for a first budget comes down to one division. Total your needs from step 2 and divide by your take-home pay. If the result is 50% or less, start with 50/30/20, because three shares are fewer numbers to track.\n\nIf the result is above 50%, skip 50/30/20 and use a zero-based budget. Our answer would flip only if your needs later drop under half your pay, at which point the three-share split becomes the easier one to run. If your debts already exceed what your income can cover, a nonprofit credit counselor or a fee-only financial planner can review your specific situation before you pick either method."
+        },
+        {
+          "heading": "Fixed Costs, Flexible Costs and Pay-Yourself-First Timing",
+          "body": "Fixed costs go into your working budget first, and flexible costs fill in the space that remains. Fixed costs are bills like rent, insurance and minimum debt payments. Flexible costs are spending like food and fun, where the amount moves with your choices.\n\nWrite the fixed costs down at their full amounts before you assign a single dollar to flexible categories. Whatever remains after fixed costs is the real limit for groceries, eating out and entertainment combined. If that remainder looks too small, try the [Household Budget Calculator](/budget/household-budget-calculator/).\n\nSave a set amount on payday, before you spend, instead of saving whatever is left at the end of the month. Set up the transfer for the day your pay arrives, so the savings line in your budget happens first.\n\nBuild a small cash cushion before you start paying debt down aggressively. Our guide on [how much emergency fund you need](/guides/how-much-emergency-fund/) covers how large that cushion should be. Once the cushion exists, [debt snowball vs avalanche](/compare/debt-snowball-vs-avalanche/) compares two ways to order your extra debt payments."
+        },
+        {
+          "heading": "A Bill Calendar for Tight Weeks",
+          "body": "A bill calendar lists every bill by due date, so you can spot the weeks when more money goes out than comes in. This is step 3 of the CFPB method, and it fixes a gap a monthly total hides. A budget can balance for the month and still come up short in the week before payday.\n\nMark each payday on the same calendar as your bills. If two large bills land in the days before your next paycheck, set aside part of the earlier paycheck when it arrives. That way the money for those bills is sitting in your account on the due date.\n\nThe CFPB notes that late or missed payments can affect your credit score. A calendar with every due date written down shows which weeks are tight. Add a reminder ahead of each due date so you can move money if the balance looks low."
+        },
+        {
+          "heading": "Why Budgets Fail in the First Three Months",
+          "body": "New budgets usually need two or three months of adjustment before the categories match how you spend. Expect that from the start, and treat a missed category as information for next month's numbers. Three problems can show up in that stretch, and each one has a fix:\n\n- Categories set too tight. If groceries run over every week, raise that line and lower a looser category by the same amount, so the total still matches your income.\n- Forgotten irregular costs. When a forgotten cost shows up, add it as its own category and set aside a share of it each month.\n- No review. Pick a regular day to compare what you spent against each category.\n\nThe CFPB advises updating your budget after a change in employment or in your spending habits. It gives no fixed review schedule, so treat a job change or a change in how you spend as your signal to revisit the four steps. If higher prices keep breaking your categories, our guide on [how to budget when prices keep rising](/guides/how-to-budget-when-prices-keep-rising/) covers adjusting for that.\n\nIf every month ends with nothing left no matter how you adjust, compare your income with your fixed costs. Our guide on [how to stop living paycheck to paycheck](/guides/how-to-stop-living-paycheck-to-paycheck/) works through that situation step by step."
+        },
+        {
+          "heading": "Which Calculator Fits the Way You Make a Budget",
+          "body": "Each budget calculator on ModernWallet matches a different situation, and you need the numbers from steps 1 and 2 before any of them gives a useful result. Pick the one that matches where you are:\n\n- Building your first plan from a month of statements: the [Monthly Budget Calculator](/budget/monthly-budget-calculator/).\n- Wanting a quick overview of income against spending: the main [Budget Calculator](/budget/).\n- Testing whether your needs fit in half your pay: the [50/30/20 Budget Calculator](/budget/50-30-20-budget-calculator/).\n- Needs already above half your pay, or wanting every dollar named: the [Zero-Based Budget Calculator](/budget/zero-based-budget-calculator/).\n- Budgeting for a whole household with several categories: the [Household Budget Calculator](/budget/household-budget-calculator/).\n- Living on a student income: the [Student Budget Calculator](/budget/student-budget-calculator/), plus our guide on [how to budget for teens and college students](/guides/how-to-budget-for-teens-college-students/).\n\nMake your budget today: write down every income source from your latest pay stub, then enter it in the [Monthly Budget Calculator](/budget/monthly-budget-calculator/)."
+        }
+      ],
+      "tools": [
+        {
+          "href": "/budget/monthly-budget-calculator/",
+          "label": "Monthly Budget Calculator"
+        },
+        {
+          "href": "/budget/50-30-20-budget-calculator/",
+          "label": "50/30/20 Budget Calculator"
+        },
+        {
+          "href": "/budget/zero-based-budget-calculator/",
+          "label": "Zero-Based Budget Calculator"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How do I make a budget if I have never had one?",
+          "answer": "Follow the four CFPB steps in order: list your income, track a month of spending, put your bills on a calendar by due date, then build a working budget from those numbers. Start with your latest pay stub today, and use a month of bank and card statements for the spending step."
+        },
+        {
+          "question": "What is the easiest budgeting method for beginners?",
+          "answer": "The 50/30/20 split is the simpler method if your needs take half your take-home pay or less, because it has only three shares to track. If your needs take more than half, a zero-based budget fits better. Try the [50/30/20 Budget Calculator](/budget/50-30-20-budget-calculator/) with your own numbers."
+        },
+        {
+          "question": "How much of my income should go to savings in a budget?",
+          "answer": "The 50/30/20 method puts 20% of take-home pay toward savings and debt payments beyond the minimums. Treat that as a starting split, since high housing costs or heavy debt can leave less room. A fee-only financial planner can tailor the savings share to your situation."
+        },
+        {
+          "question": "How often should I update my budget?",
+          "answer": "Update your budget whenever your employment or spending habits change, which is the trigger the CFPB names. The CFPB gives no fixed review schedule. In the first two or three months, expect to adjust categories as your real spending shows up."
+        },
+        {
+          "question": "Should I budget by hand, in a spreadsheet or in an app?",
+          "answer": "Use the format you will open every week. Any format works once it holds your income, a month of spending and your bill due dates."
+        }
+      ],
+      "sources": [
+        {
+          "label": "CFPB: Budgeting: How to create a budget and stick with it",
+          "url": "https://www.consumerfinance.gov/about-us/blog/budgeting-how-to-create-a-budget-and-stick-with-it/"
+        }
+      ]
+    }
+  },
+  {
+    "file": "src/data/guides.ts",
+    "route": "/guides/how-to-budget-for-teens-college-students/",
+    "object": {
+      "published": "2026-08-07",
+      "updated": "2026-10-29",
+      "slug": "how-to-budget-for-teens-college-students",
+      "title": "How to Budget for Teens and College Students",
+      "metaDescription": "How to budget for teens and college students: a percentage framework for irregular pay and aid, dorm and textbook costs, and the debt traps to avoid.",
+      "h1": "How to Budget for Teens and College Students",
+      "cardBlurb": "A student-scaled percentage framework for irregular paychecks and aid refunds, dorm costs, and the two debt traps that catch first-timers.",
+      "introText": "As a teen or college student, budgeting often means managing irregular income (a part-time paycheck, a financial aid refund, or cash from family) rather than relying on one steady salary. This guide explains a simplified percentage framework scaled for a student budget, how to manage irregular income and aid disbursements, the two most common traps for first-time credit card and subscription users, and how to build an emergency fund habit before you need one.",
+      "sections": [
+        {
+          "heading": "Why a Student Budget Looks Different From an Adult Budget",
+          "body": "A student budget skips the biggest line items in a typical household budget, like a mortgage or a 401(k) contribution, and replaces them with costs unique to this stage of life. Dorm fees, a meal plan, textbooks, and splitting a lease with roommates take the place of rent and a full grocery budget.\n\nIncome looks different too. Instead of one predictable paycheck, a student's money often comes from several irregular sources: a part-time job, a twice-a-year financial aid refund, or occasional support from family. Building a budget around a single \"monthly income\" number, the way an adult budget does, usually doesn't fit a student's real cash flow.\n\nThe goal at this stage isn't a perfect budget — it's building the habit of tracking money in and out before the stakes get higher. Every habit built now carries forward into the bigger budgets that come with a first full-time job."
+        },
+        {
+          "heading": "Tracking Irregular Income: Paychecks, Aid Refunds, and Family Support",
+          "body": "Irregular income needs a different plan than a steady paycheck, because the same total dollars can either run out early or feel abundant depending on when they arrive. Start by listing every source separately: hourly pay from a job, any financial aid refund, and any recurring help from family.\n\nA financial aid refund is often the largest single deposit a student sees all semester, since it can include loan or grant money left over after tuition and fees are paid directly to the school. Treat that lump sum as money that has to stretch across the whole semester, not spending cash for the week it arrives — divide it by the number of weeks until the next expected deposit before deciding what's safe to spend.\n\nA part-time paycheck fluctuates with your scheduled hours, especially around exams when students often cut back their shifts. Use your lowest realistic pay period, not your best one, as the number your fixed costs — rent, phone bill, meal plan top-ups — are built around."
+        },
+        {
+          "heading": "A Simplified Percentage Framework Scaled for a Student Budget",
+          "body": "A percentage-based budget works well for students because it scales automatically with whatever income actually shows up that month. One common starting framework splits spending into needs, wants, and savings, a version of the [50/30/20 rule](/budget/50-30-20-budget-calculator/) most people have heard of for a full household budget.\n\nA student version usually shifts those percentages, since needs like housing, a meal plan, and a phone bill often eat a bigger share of a smaller income, and long-term goals like retirement savings don't apply yet the way they do for a working adult. A more realistic student split often runs closer to 60% needs, 25% wants, and 15% split between short-term savings and any debt payments — adjust the exact numbers to your own fixed costs rather than forcing a ratio that doesn't fit your situation.\n\nModernWallet's [monthly budget calculator](/budget/monthly-budget-calculator/) lets you plug in your own irregular income and see the split update automatically, which matters more for a student than for someone with one steady paycheck."
+        },
+        {
+          "heading": "The Credit Card Minimum-Payment Trap",
+          "body": "A credit card's minimum payment is deliberately small, and paying only that amount can take years to clear even a modest balance. Federal law requires every card statement to show a warning box explaining how much longer you'll carry the debt if you pay only the minimum, under rules the [CFPB](https://www.consumerfinance.gov/ask-cfpb/a-box-on-my-credit-card-bill-says-that-i-will-pay-off-the-balance-in-three-years-if-i-pay-a-certain-amount-what-does-that-mean-do-i-have-to-pay-that-much-if-i-pay-that-much-and-make-new-purchases-will-i-still-owe-nothing-after-three-years-en-36/) explains on its site.\n\nA first credit card is a genuinely useful tool for building credit history, which matters later for renting an apartment or getting a car loan. The trap isn't having a card — it's treating the minimum payment as the normal amount to pay, instead of paying the statement balance in full every month to avoid interest entirely.\n\nSee our full breakdown of [how long it actually takes to pay off a credit card](/guides/how-long-to-pay-off-credit-card/) at minimum payments for the real math behind why this trap gets so expensive. If you're not ready for a full credit card yet, a secured card or becoming an authorized user on a parent's card are both lower-risk ways to start building history."
+        },
+        {
+          "heading": "Subscription Creep: The Quiet Budget Killer",
+          "body": "Subscription creep happens when small recurring charges — a streaming service, a music app, a food-delivery membership — pile up faster than any single one feels worth budgeting for. Five $10 subscriptions add up to $50 a month, or $600 a year, an amount that feels invisible charge by charge but isn't invisible on a student income.\n\nA free trial that auto-renews into a paid subscription is the most common way this starts, since the charge shows up weeks after the decision to sign up is forgotten. Set a calendar reminder for every free trial's end date, or use a card that lets you freeze it easily if a trial is about to convert.\n\nReview your bank and card statements once a month specifically for recurring charges, not just big purchases. This single habit catches subscription creep before it becomes a permanent, invisible line in your budget.\n\nIf a recurring charge keeps coming after you ask to cancel, use the [subscription cancellation planner](/checklists/cancel-subscription-planner/) to identify the biller and document your next step."
+        },
+        {
+          "heading": "Building the Emergency Fund Habit Early",
+          "body": "An emergency fund at this stage doesn't need to be large to be useful — the habit of automatically saving something matters more than the starting dollar amount. Even $10 or $20 a week, moved automatically into a separate savings account, builds both a real cushion and a habit that carries into your first full-time job.\n\nA [high-yield savings account](/guides/high-yield-savings-account-for-kids-and-teens/) is a good home for this money, since it stays easy to reach for an actual emergency, like a car repair or a broken laptop, while earning more than a typical checking account. Keep it separate from spending cash so it doesn't quietly disappear into everyday purchases.\n\nA student's version of an emergency fund is a starter goal, not a finished one: a few hundred dollars that covers a real unplanned expense without reaching for a credit card. Build toward three to six months of expenses once income becomes steadier after graduation, following the same math in our guide on [how much to keep in an emergency fund](/guides/how-much-emergency-fund/)."
+        }
+      ],
+      "tools": [
+        {
+          "href": "/budget/50-30-20-budget-calculator/",
+          "label": "50/30/20 budget"
+        },
+        {
+          "href": "/budget/monthly-budget-calculator/",
+          "label": "Monthly budget"
+        },
+        {
+          "href": "/investing/high-yield-savings-calculator/",
+          "label": "High-yield savings"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How should a student budget irregular income?",
+          "answer": "Budget around your lowest realistic pay period, not your average, and list each income source separately: a part-time job, financial aid refunds, and family support. Treat a lump-sum aid refund as money that has to stretch across the whole semester, not spending cash for the week it arrives."
+        },
+        {
+          "question": "What percentage framework works for a student budget?",
+          "answer": "A needs, wants, and savings split works well, though the exact percentages usually shift from the standard 50/30/20 rule. A student version often runs closer to 60% needs, 25% wants, and 15% savings and debt payments, since fixed costs eat a bigger share of a smaller income."
+        },
+        {
+          "question": "How does a financial aid refund fit into a budget?",
+          "answer": "A financial aid refund is leftover loan or grant money after tuition and fees are paid directly to the school, and it's often the largest single deposit a student sees all semester. Divide it by the number of weeks until your next expected deposit to see what's actually safe to spend now."
+        },
+        {
+          "question": "Why is the credit card minimum payment a trap?",
+          "answer": "The minimum payment is set deliberately low, so paying only that amount can take years to clear even a small balance while interest keeps accruing. Federal law requires every statement to show a warning box explaining the real payoff timeline if you pay only the minimum."
+        },
+        {
+          "question": "How much should a student save for an emergency fund?",
+          "answer": "Start with a few hundred dollars that covers a real unplanned expense, like a car repair, without reaching for a credit card. Build toward three to six months of expenses once your income becomes steadier, usually after graduation."
+        },
+        {
+          "question": "Is a 50/30/20 budget realistic for a student?",
+          "answer": "The framework works, but the standard percentages often don't fit a student's cost structure. Housing, a meal plan, and a phone bill tend to eat more than 50% of a smaller student income, so a 60/25/15 split is often more realistic until income grows."
+        }
+      ],
+      "sources": [
+        {
+          "label": "CFPB — Managing Your Money for Students",
+          "url": "https://www.consumerfinance.gov/paying-for-college/financial-intuition/managing-your-money-part-1/"
+        },
+        {
+          "label": "CFPB — Understanding the Credit Card Minimum Payment Warning",
+          "url": "https://www.consumerfinance.gov/ask-cfpb/a-box-on-my-credit-card-bill-says-that-i-will-pay-off-the-balance-in-three-years-if-i-pay-a-certain-amount-what-does-that-mean-do-i-have-to-pay-that-much-if-i-pay-that-much-and-make-new-purchases-will-i-still-owe-nothing-after-three-years-en-36/"
+        },
+        {
+          "label": "CFPB — An Essential Guide to Building an Emergency Fund",
+          "url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/"
+        }
+      ]
+    }
+  },
+  {
+    "file": "src/data/spokes-budget.ts",
+    "route": "/budget/household-budget-calculator/",
+    "object": {
+      "calculator": "budget",
+      "slug": "household-budget-calculator",
+      "title": "Household Budget Calculator: Plan Family Spending",
+      "metaDescription": "Free household budget calculator. Combine your family's income and expenses to see needs, wants, and savings targets using the 50/30/20 rule.",
+      "targetKeyword": "household budget calculator",
+      "estimatedVolume": 1900,
+      "estimatedKD": 34,
+      "h1": "Household Budget Calculator",
+      "introText": "A household budget calculator adds up your family's total take-home income and expenses, showing where your money goes and how much you can save. Enter your household's monthly net pay and shared costs into the calculator above to see targets for needs, wants, and savings based on the 50/30/20 rule. With a combined take-home income of $7,500, that means $3,750 for needs, $2,250 for wants, and $1,500 for savings.",
+      "howItWorks": "A household budget works like an individual one, scaled to everyone under the roof. Add up all reliable take-home income — both partners' paychecks plus any steady side income — then list shared and personal expenses across needs, wants, and savings.\n\nThe calculator applies the 50/30/20 rule to your combined income: 50% for needs like housing, utilities, groceries, transportation, insurance, and minimum debt payments; 30% for wants; and 20% for savings and debt payoff. For families, the savings bucket often carries extra weight — an emergency fund sized to household expenses, retirement for two, and goals like a 529 college account. Because households have more moving parts, the most useful habit is a monthly review where both partners see the same numbers, comparing each bucket's actual spending against its target the same way our [budget variance guide](/guides/budget-variance-calculation-explained/) explains for a business budget. Once you know your savings target, plan the bigger picture: [check your net worth](/net-worth/) and [stay on track for retirement](/retirement/).",
+      "commonMistakes": [
+        "Counting income you don't reliably receive. Budget steady take-home pay; treat bonuses and variable side income as extra.",
+        "Tracking only one partner's spending. A household budget needs every account and card in the picture.",
+        "Underbudgeting kid-related costs — childcare, activities, and growing grocery bills add up fast.",
+        "Skipping a shared emergency fund. Size it to household monthly expenses, not a single income.",
+        "Not giving each partner a personal-spending line. A little autonomy makes the shared budget easier to keep."
+      ],
+      "workedExample": "Consider a two-income household bringing home $7,500 a month. The 50/30/20 rule sets targets of $3,750 for needs, $2,250 for wants, and $1,500 for savings. This family's actual needs — mortgage, utilities, groceries, two commutes, insurance, and minimum debts — come to $4,350, about $600 over the needs target and 58% of income. Their wants run light at $1,300, and they put $1,800 toward savings, a 24% savings rate. Because the wants bucket has room, the household still saves above 20% and ends the month with $50 left to assign — a healthy plan even though needs run high, which is typical for families in higher-cost areas.",
+      "faqs": [
+        {
+          "question": "What is a household budget calculator?",
+          "answer": "A household budget calculator combines all of a family's take-home income and expenses to show needs, wants, and savings targets. The calculator above applies the 50/30/20 rule to your combined income and flags any category running over its target."
+        },
+        {
+          "question": "How do you budget for a household with two incomes?",
+          "answer": "Add both partners' reliable take-home pay into one total, list all shared and personal expenses, and apply the same needs/wants/savings split. Treating income as one pool — while keeping a personal-spending line for each partner — keeps the plan fair and easy to follow."
+        },
+        {
+          "question": "What percentage of household income should go to housing?",
+          "answer": "Housing is the largest need for most families. A common guideline keeps total housing costs at or below about 28% of income, and within the 50/30/20 rule it should fit inside the 50% needs bucket alongside utilities, food, transportation, and insurance."
+        },
+        {
+          "question": "How much should a family save each month?",
+          "answer": "Target at least 20% of combined take-home pay across your emergency fund, retirement, and other goals — the savings share of the 50/30/20 rule. Families with childcare or high housing costs may start lower and raise the rate as those costs ease."
+        },
+        {
+          "question": "How do we stick to a household budget?",
+          "answer": "Hold a short monthly money meeting where both partners review the same numbers, give each person a personal-spending allowance, and automate savings transfers so the 20% leaves before it can be spent. Shared visibility is what makes a household budget last."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Consumer Financial Protection Bureau — Making a budget",
+          "url": "https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/teach/activities/creating-budget/"
+        },
+        {
+          "label": "U.S. Bureau of Labor Statistics — Consumer Expenditure Surveys",
+          "url": "https://www.bls.gov/cex/"
+        }
+      ],
+      "toolHeading": "Build your household budget",
+      "toolSubheading": "Combine your family's income and expenses to see your targets.",
+      "preset": {
+        "monthlyIncome": 7500,
+        "mode": "50-30-20",
+        "amounts": {
+          "housing": 2200,
+          "utilities": 320,
+          "groceries": 850,
+          "transportation": 450,
+          "insurance": 280,
+          "minimumDebt": 250,
+          "dining": 450,
+          "entertainment": 200,
+          "shopping": 350,
+          "funMisc": 300,
+          "emergencyFund": 400,
+          "retirement": 1000,
+          "extraDebt": 400
+        }
+      },
+      "relatedSlugs": [
+        "monthly-budget-calculator",
+        "50-30-20-budget-calculator",
+        "zero-based-budget-calculator"
+      ]
+    }
+  },
+  {
+    "file": "src/data/spokes-retirement.ts",
+    "route": "/retirement/early-retirement-calculator/",
+    "object": {
+      "calculator": "retirement",
+      "slug": "early-retirement-calculator",
+      "title": "Early Retirement Calculator: Can You Retire Now?",
+      "metaDescription": "Our early retirement calculator projects your savings gap, models a bridge to Social Security at 62, and shows IRS options for accessing funds before age 59½.",
+      "targetKeyword": "early retirement calculator",
+      "estimatedVolume": 4400,
+      "estimatedKD": 36,
+      "h1": "Early Retirement Calculator: Are You Ready to Retire Early?",
+      "introText": "Early retirement is financially viable if your projected portfolio balance can cover your spending (without a paycheck) from your planned retirement date until Social Security and Medicare fill the gap years later. Use the calculator above to see whether your current savings trajectory will reach that number by your target date. Then, read below to learn the rules for accessing tax-advantaged funds early.",
+      "howItWorks": "The calculator projects your savings to your target retirement age and estimates how many years your portfolio can sustain a given withdrawal rate. It does not automatically add Social Security income, because the earliest you can claim Social Security retired-worker benefits is age 62, and claiming that early reduces your benefit by up to 30% compared with your Full Retirement Age (FRA), according to the Social Security Administration.\n\nTwo IRS rules are critical for early retirees accessing tax-advantaged accounts before age 59½. First, the Rule of 55: if you separate from your employer in the calendar year you turn 55 or later, you can take penalty-free distributions from that employer's 401(k) plan (not IRAs). Second, IRS Section 72(t) Substantially Equal Periodic Payments (SEPP): you can take penalty-free IRA withdrawals at any age if you commit to a fixed payment schedule for at least five years or until age 59½, whichever is longer. For the FIRE-specific version of this question, see the [FIRE calculator](/retirement/fire-calculator/).",
+      "commonMistakes": [
+        "Assuming Social Security is available immediately after leaving work. The earliest claim age for retired-worker benefits is 62, and claiming at 62 permanently reduces your benefit by up to 30% versus your FRA benefit, per SSA rules.",
+        "Underestimating health insurance costs before Medicare at 65. Without employer coverage, marketplace premiums for a 55-year-old can easily exceed $1,000 per month per person, significantly affecting your withdrawal rate.",
+        "Misapplying the Rule of 55. The rule applies only to the 401(k) plan of your last employer — the one you separate from at age 55 or later. Old 401(k)s from prior employers and all IRAs require SEPP or age 59½ for penalty-free access.",
+        "Breaking a 72(t) SEPP payment schedule. Modifying or stopping SEPP payments before the required period ends triggers the 10% penalty retroactively on all prior distributions, plus interest.",
+        "Forgetting that 20 to 30 years of retirement changes the math. A 55-year-old who lives to 90 faces a 35-year drawdown — well beyond the 30 years modeled by the standard 4% rule research. A 3% to 3.5% withdrawal rate is more appropriate."
+      ],
+      "workedExample": "You are 50, want to retire at 55, and have $800,000 saved. You contribute $2,500 per month and expect 7% annual returns. The calculator projects your balance at 55 will be approximately $1,216,000. At a 3.5% withdrawal rate (appropriate for a 35-year horizon), that supports about $42,560 per year, or $3,547 per month. From 55 to 62, you bridge entirely on portfolio withdrawals. At 62 you could claim a reduced Social Security benefit; if your estimated FRA benefit is $2,200/month, claiming at 62 gives you roughly $1,540/month instead — permanently. Delaying to your FRA at 67 costs seven more years of portfolio-only withdrawals but preserves the full benefit and the higher survivor benefit for a spouse.\n\nA related scenario worth working through with its own numbers: can you retire at 50 with $875,000 in a 401(k) and $5,000 a month in expenses? $5,000 a month is $60,000 a year. A standard 4% initial withdrawal on $875,000 is $35,000 a year — about $2,917 a month — which falls roughly $25,000 a year ($2,083 a month) short of $60,000 in spending. So a plain 4%-rule withdrawal does not cover this budget on its own. Closing that gap generally takes some combination of: part-time or bridge income covering the shortfall directly; treating the years from 50 to 62 as a defined bridge rather than the start of a 35-to-40-year drawdown, since Social Security can supplement withdrawals once it starts and reduce what the portfolio alone has to produce; and tapering the withdrawal rate down toward the more conservative 3% to 3.5% range described above for the remaining decades once other income arrives. Whether $875,000 actually supports $5,000 a month at 50 depends on what other income — Social Security, a spouse's earnings, part-time work, a pension — is available to cover the pre-62 gap; it isn't something a 4%-rule calculation alone confirms as safe, so run your own numbers in the calculator above.",
+      "faqs": [
+        {
+          "question": "What is the earliest age I can collect Social Security retirement benefits?",
+          "answer": "The earliest you can claim Social Security retired-worker benefits is age 62, according to the Social Security Administration. Claiming at 62 permanently reduces your monthly benefit by up to 30% compared with your Full Retirement Age benefit (age 67 for those born in 1960 or later). Benefits are not available before 62 unless you qualify for Social Security Disability Insurance."
+        },
+        {
+          "question": "How does the IRS Rule of 55 work?",
+          "answer": "Under IRS rules, if you separate from your employer in the calendar year you turn 55 or older (age 50 for certain public safety employees), you may take penalty-free distributions from that employer's 401(k) or 403(b) plan. The 10% early withdrawal penalty is waived, but ordinary income tax still applies. This applies only to the plan of the employer you leave — not to old 401(k)s from prior jobs or to IRAs."
+        },
+        {
+          "question": "What is a 72(t) SEPP distribution?",
+          "answer": "IRS Section 72(t) allows penalty-free withdrawals from an IRA at any age if you take Substantially Equal Periodic Payments (SEPP) using one of three IRS-approved calculation methods. You must continue the payments for at least five years or until age 59½, whichever is longer. Breaking the schedule before the required period ends retroactively applies the 10% penalty on all prior distributions, plus interest."
+        },
+        {
+          "question": "How do I cover health insurance before Medicare at 65?",
+          "answer": "Early retirees under 65 are not eligible for Medicare. Options include COBRA continuation coverage from your former employer (often expensive), marketplace plans under the Affordable Care Act (premiums may qualify for subsidies if your income is low enough), a spouse's employer plan, or short-term health insurance. Healthcare costs are often the largest unplanned expense for early retirees and should be modeled explicitly in your budget."
+        },
+        {
+          "question": "What withdrawal rate is safe for a 35-year early retirement?",
+          "answer": "Research based on the Trinity Study and subsequent work suggests that a 3% to 3.5% withdrawal rate is more appropriate than the standard 4% rule for retirements lasting 35 to 40 years. A 3% rate requires approximately 33 times annual expenses in savings — a higher bar than standard FIRE's 25×, but it provides a larger buffer against sequence-of-returns risk and longevity."
+        },
+        {
+          "question": "Can I retire at 50 with $875,000 and $5,000 in monthly expenses?",
+          "answer": "It depends on what other income you have, but $875,000 alone doesn't fully cover it on a standard 4% withdrawal. A 4% withdrawal on $875,000 is $35,000 a year (about $2,917 a month), against $60,000 a year ($5,000 a month) in expenses — a shortfall of roughly $25,000 a year. Retiring at 50 in this scenario typically requires bridge or part-time income, lower expenses, or a plan to lean on Social Security once it starts to close that gap. It is not something a 4%-rule calculation confirms as safe on its own; run your own numbers, including any other income sources, in the calculator above."
+        }
+      ],
+      "sources": [
+        {
+          "label": "IRS Topic No. 558 — Additional Tax on Early Distributions From Retirement Plans (Rule of 55)",
+          "url": "https://www.irs.gov/taxtopics/tc558"
+        },
+        {
+          "label": "IRS — Retirement Plans FAQs: Substantially Equal Periodic Payments (Section 72(t))",
+          "url": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-substantially-equal-periodic-payments"
+        },
+        {
+          "label": "SSA — Benefits Planner: Retirement — Retirement Age and Benefit Reduction",
+          "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html"
+        }
+      ],
+      "toolHeading": "Will your savings support early retirement?",
+      "toolSubheading": "Project your balance at your target age and estimate how long it will last before Social Security kicks in.",
+      "preset": {
+        "mode": "projection",
+        "currentAge": 50,
+        "retirementAge": 55,
+        "currentSavings": 800000,
+        "monthlyContribution": 2500,
+        "annualReturnPct": 7
+      },
+      "relatedSlugs": [
+        "fire-calculator",
+        "retirement-savings-calculator",
+        "401k-early-withdrawal-calculator"
+      ]
+    }
+  },
+  {
+    "file": "src/data/guides.ts",
+    "route": "/guides/freelance-rate-calculator-uk-ir35-explained/",
+    "object": {
+      "slug": "freelance-rate-calculator-uk-ir35-explained",
+      "updated": "2026-09-16",
+      "title": "Freelance Rate Calculator UK and How IR35 Shapes Pay",
+      "metaDescription": "Calculate your rate with a freelance rate calculator UK guide. See how IR35 status, billable hours, and off-payroll rules change take-home pay.",
+      "h1": "Freelance Rate Calculator UK and How IR35 Affects Your Rates",
+      "cardBlurb": "Our main freelance rate calculator uses United States tax rules, but its underlying hours math is universal. IR35 status, not currency, is what actually shapes your United Kingdom take-home pay.",
+      "introText": "Our freelance rate calculator runs on 2026 United States federal self-employment tax rules, which means a United Kingdom contractor cannot use its tax output directly.\n\nAt ModernWallet, we design our calculators to help working professionals make clear money decisions based on real cash flow. The underlying math for billable hours, working weeks, and non-billable administrative time is universal across borders. What truly decides United Kingdom take-home pay is your status under [off-payroll working rules, known as IR35](https://www.gov.uk/guidance/understanding-off-payroll-working-ir35), rather than a United States self-employment tax percentage.\n\nSearching for a freelance rate calculator UK tool often lands contractors on platforms built around American tax deductions. Converting those numbers into an accurate day rate requires stripping out foreign tax models, establishing your IR35 position, and applying genuine United Kingdom tax principles.",
+      "sections": [
+        {
+          "heading": "Why US Tax Models Fail for United Kingdom Contractors",
+          "body": "United States rate calculators assume tax deductions and liabilities that have no equivalent under United Kingdom tax law. Our primary [freelance rate calculator](/freelance-rate/) works backward from target income using a 15.3 percent United States federal self-employment tax rate. It also applies the American Qualified Business Income (QBI) deduction, which has zero legal standing in the United Kingdom.\n\nAmerican tools often compare independent contractors to corporate employees through our [1099 vs W-2 calculator](/freelance-rate/1099-vs-w2-calculator/). That comparison represents a domestic United States worker classification and does not map onto United Kingdom contracting arrangements. Plugging United Kingdom billing figures into an American tax engine distorts your net earnings completely.\n\nYour actual retained revenue in Britain depends on whether an engagement is deemed employment or genuine commercial contracting. Rather than relying on static percentages from foreign models, British freelancers must look to their own tax framework. You need to identify your off-payroll status before you can settle on an accurate hourly or daily quote."
+        },
+        {
+          "heading": "Inside IR35 Compared to Outside IR35 Engagements",
+          "body": "The off-payroll working rules, commonly known as IR35, determine whether a contractor is treated as an employee for tax purposes. As detailed in official HM Revenue and Customs (HMRC) guidance on off-payroll working, the legislation tests whether a worker providing services through an intermediary would look like an employee if hired directly. That intermediary is typically the worker's own personal service company (PSC).\n\nAn engagement that falls inside IR35 is classified as deemed employment for tax. Under this classification, the party paying the worker, known as the fee-payer, must deduct Income Tax and employee National Insurance contributions from the invoice before paying the intermediary. The fee-payer must also account separately for employer National Insurance and the Apprenticeship Levy, which sharply reduces the net cash reaching your company bank account.\n\nWorking outside IR35 means you are recognized as genuinely self-employed for that specific contract. You receive the gross invoice amount and manage your own tax liabilities through Self Assessment or through your limited company using corporation tax and dividends. For more official regulatory context on these operational categories, consult the [off-payroll working detailed information collection](https://www.gov.uk/government/collections/off-payroll-working-ir35-detailed-information) published by the government."
+        },
+        {
+          "heading": "Status Determination Statements and the CEST Tool",
+          "body": "The legal responsibility for determining your IR35 status rests with your client unless that client qualifies as a small business. In both public-sector bodies and medium or large private-sector organizations, the client evaluates the working relationship. The hiring organization must issue a formal Status Determination Statement (SDS) detailing their decision and the operational reasoning behind it.\n\nWhen a private-sector client qualifies as a small business, the responsibility stays with the contractor's intermediary instead. In those situations, you evaluate your own working practices, contracts, and operational independence. You are then responsible for defending that position if tax authorities open an inquiry.\n\nTo help evaluate engagements, tax authorities provide an online system called [Check Employment Status for Tax (CEST)](https://www.gov.uk/guidance/check-employment-status-for-tax). Anyone involved in the supply chain can use the official CEST tool page to assess employment status for tax. While official guidance states the government will stand by a CEST determination if inputs are accurate and not contrived, the same guidance warns that parties should not rely on the output in isolation."
+        },
+        {
+          "heading": "Off-Payroll Working Reforms and 2026 Threshold Changes",
+          "body": "Private-sector contracting rules changed significantly on 6 April 2021 when the government shifted determination responsibilities to end clients. Before that reform, contractors working through personal service companies in the private sector evaluated their own status. Shifting the legal burden prompted medium and large organizations to implement blanket policies, which permanently altered how British contractors quote their rates.\n\nStatutory thresholds that define whether a client is small will increase starting 6 April 2026. As reported by contractor-compliance specialists at [Kingsbridge](https://www.kingsbridge.co.uk/blog/contractors/ir35/ir35-small-company-threshold-changes-2026/), the turnover threshold rises from 10.2 million pounds to 15 million pounds, and the balance sheet total increases from 5.1 million pounds to 7.5 million pounds. The employee headcount threshold remains unchanged at 50 workers.\n\nBecause small-company status depends on performance in previous financial years, compliance specialists note that the practical effects will not alter most contracts until the 2026/27 tax year. Furthermore, specialists report that new rules taking effect on 6 April 2026 will make recruitment agencies and end clients liable for Pay As You Earn (PAYE) underpayments on workers paid through umbrella companies. That liability applies even when the umbrella company manages payroll directly, which may push clients to re-examine all contractor payment structures."
+        },
+        {
+          "heading": "Universal Utilization Math for Billable Hours and Days",
+          "body": "While American tax calculations do not fit the British tax year, the math governing working capacity applies to every freelancer worldwide. You cannot bill 40 hours a week for 52 consecutive weeks. Factoring in holidays, sick leave, portfolio maintenance, invoicing, and business development reduces your available billable capacity significantly.\n\nOur specialized [billable hours calculator](/freelance-rate/billable-hours-calculator/) helps you isolate your true annual productive capacity. By entering realistic working weeks and expected utilization rates, you discover how many hours you can realistically charge out each month. Freelancers quoting daily agreements can apply that same capacity breakdown using our [day rate calculator](/freelance-rate/day-rate-calculator/).\n\nContractors in creative and technical sectors face distinct overhead demands that limit direct production time. If you work in design, branding, or copywriting, our [creative freelancer rate calculator](/freelance-rate/creative-freelancer-rate-calculator/) offers comparative capacity benchmarks. Pinning down your actual billable capacity prevents you from underpricing projects before local taxes even enter the picture."
+        },
+        {
+          "heading": "How to Calculate Your Rate as a United Kingdom Contractor",
+          "body": "Building an effective quote requires working backward from personal income goals, business overhead, and contract classification. First, determine your contract status by reviewing your client's Status Determination Statement or testing the engagement parameters through CEST. Knowing whether an engagement falls inside or outside IR35 tells you whether taxes will be withheld before payment reaches you.\n\nNext, calculate your total baseline costs by combining personal take-home requirements, software licenses, equipment costs, and professional insurance. Because individual tax circumstances vary, obtain current tax rates, National Insurance thresholds, dividend rates, and corporation tax rules directly from official government publications or your accountant. Once you know your target gross revenue, divide that sum by your billable days or hours using our capacity tools.\n\nThis guide provides general economic information about contracting structures rather than individualized tax, accounting, or legal advice. If you are preparing an upcoming client proposal, map your productive working weeks in our [billable hours calculator](/freelance-rate/billable-hours-calculator/) before you set your next quote."
+        }
+      ],
+      "tools": [
+        {
+          "href": "/freelance-rate/",
+          "label": "Freelance rate"
+        },
+        {
+          "href": "/freelance-rate/billable-hours-calculator/",
+          "label": "Billable hours"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use a US freelance rate calculator if I'm a UK freelancer?",
+          "answer": "You can use the capacity and utilization features of an American calculator, but you cannot rely on its tax outputs. American tools deduct United States self-employment taxes and local business deductions that do not exist under United Kingdom law. Use that calculator to establish your billable hours, then apply British tax rules separately."
+        },
+        {
+          "question": "What does IR35 mean for how much I take home?",
+          "answer": "Your IR35 classification determines whether tax is deducted before your invoice gets paid. Working inside IR35 means the fee-payer deducts employee Income Tax and National Insurance directly, while accounting for employer levies. Working outside IR35 allows you to receive gross payments and manage tax through your own company via Self Assessment, corporation tax, or dividends."
+        },
+        {
+          "question": "Who decides if I'm inside or outside IR35?",
+          "answer": "Public-sector bodies and medium or large private-sector clients are legally required to make the status determination for contractors they hire. If your private-sector client meets the statutory criteria for a small company, the determination responsibility remains with your own intermediary. Whoever makes the decision should provide a Status Determination Statement explaining the outcome."
+        },
+        {
+          "question": "What is HMRC's CEST tool?",
+          "answer": "The Check Employment Status for Tax tool is a free digital service provided by the British government to help assess employment status for tax. Hirers, agencies, and individual workers can use it to view an indication of whether IR35 applies to a contract. The government states it will stand by results from accurate data, though CEST should not be relied on alone."
+        },
+        {
+          "question": "What's changing with IR35 in April 2026?",
+          "answer": "Starting 6 April 2026, the turnover threshold defining a small private client rises to 15 million pounds and the balance sheet threshold rises to 7.5 million pounds. Because rules look at prior financial years, specialists note the practical effects will land in the 2026/27 tax year at the earliest. New rules will also make agencies and hirers liable for PAYE underpayments on umbrella workers."
+        },
+        {
+          "question": "How do I work out a day rate or hourly rate as a UK freelancer?",
+          "answer": "Start by identifying your IR35 status to establish whether you will receive gross or net payments. Next, calculate your annual personal financial requirement, business overhead, and expected tax obligations using current government figures. Finally, divide that total gross sum by your actual billable days or hours, leaving a buffer for holidays, sickness, and administration."
+        }
+      ],
+      "sources": [
+        {
+          "label": "HMRC Guidance on Off-Payroll Working (IR35)",
+          "url": "https://www.gov.uk/guidance/understanding-off-payroll-working-ir35"
+        },
+        {
+          "label": "Off-Payroll Working (IR35) Detailed Information",
+          "url": "https://www.gov.uk/government/collections/off-payroll-working-ir35-detailed-information"
+        },
+        {
+          "label": "HMRC Check Employment Status for Tax (CEST)",
+          "url": "https://www.gov.uk/guidance/check-employment-status-for-tax"
+        },
+        {
+          "label": "Kingsbridge, Small Company Threshold Changes 2026",
+          "url": "https://www.kingsbridge.co.uk/blog/contractors/ir35/ir35-small-company-threshold-changes-2026/"
+        }
+      ]
+    }
+  },
+  {
+    "file": "src/data/guides.ts",
+    "route": "/guides/how-to-budget-with-irregular-income/",
+    "object": {
+      "slug": "how-to-budget-with-irregular-income",
+      "title": "How to Budget With Irregular Income (Step by Step)",
+      "metaDescription": "Learn how to budget with irregular income using a real baseline month, a variability-based buffer fund, and quarterly estimated tax planning.",
+      "h1": "How to Budget With Irregular Income",
+      "cardBlurb": "A step-by-step way to budget, save, and pay taxes when your paycheck changes every month.",
+      "introText": "Build your budget around your lowest realistic month, not your average one. If you're a freelancer earning between $2,800 and $6,200 a month, base your core spending on $2,800. Then use anything above that for taxes, a buffer fund, and retirement savings. This guide explains how to choose a realistic baseline, calculate the size of your buffer fund, pay quarterly estimated taxes, and cover health care and retirement without an employer plan.",
+      "sections": [
+        {
+          "heading": "How Do You Find a Realistic Baseline Income When Pay Changes Every Month?",
+          "body": "Your baseline income is the lowest month you can realistically expect, not the average of all your months. Pull your last 12 months of take-home pay and sort them from low to high. Use the lowest month, or the average of your three lowest months, as the number your fixed budget is built on.\n\nSuppose a freelance designer earns between $2,800 and $6,200 a month. Over 12 months, her income adds up to $52,000, which averages to $4,333 a month. But four of those months come in under $4,000, and her single lowest month is $2,800.\n\nIf she builds her budget around the $4,333 average, she falls short four months out of the year. Building around $2,800 — the amount she can always count on — means rent and bills get paid even in a slow month. Extra income above that baseline becomes bonus money, not a hole to fill."
+        },
+        {
+          "heading": "How Do You Build a Zero-Based Budget Around a Baseline Number?",
+          "body": "A zero-based budget assigns every dollar of your baseline income a job before the month starts. List fixed costs first — rent, insurance, minimum debt payments — then variable essentials like groceries and gas. Every dollar of the baseline gets assigned somewhere, so nothing is left unaccounted for.\n\nModernWallet's [zero-based budget calculator](/budget/zero-based-budget-calculator/) is built for exactly this situation, since it forces income minus expenses to equal zero. Run it using your baseline number, not last month's actual income. That way the plan holds up even in your worst month, not just your best one.\n\nIf income swings by category — more client work some months, more retail hours in others — track categories separately. The [monthly budget calculator](/budget/monthly-budget-calculator/) and [household budget calculator](/budget/household-budget-calculator/) both handle this well. Rebuild the plan whenever your baseline shifts, such as after adding a new recurring client.\n\nA baseline budget is a living document, not a one-time worksheet."
+        },
+        {
+          "heading": "How Should a Buffer Fund Be Sized for Income That Goes Up and Down?",
+          "body": "A buffer fund for irregular income needs two separate numbers, not one flat multiple of expenses. The first is a smoothing buffer, sized to the income gap you expect several times a year. The second is a true emergency reserve: three to six months of your baseline expenses, for total loss of income.\n\nGoing back to the designer earning $2,800 to $6,200, her average month is $4,333 and her baseline is $2,800. That's a gap of about $1,533 a month. If she typically has four low months a year, her smoothing buffer needs roughly $6,133 to cover that gap.\n\nOn top of the smoothing buffer, she also needs a true emergency reserve for total income loss. That reserve should hold three to six months of her $2,800 baseline, or $8,400 to $16,800. The [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/) notes the right fund size depends on your own spending patterns and income stability.\n\nSomeone with steadier, higher-floor income needs a smaller reserve than someone whose income swings hard every month."
+        },
+        {
+          "heading": "How Do Quarterly Estimated Taxes Work for Self-Employed Income?",
+          "body": "Self-employed workers must pay estimated tax if they expect to owe $1,000 or more for the year. The [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes) requires these payments in four installments, because no employer withholds tax from freelance or gig income. Payments are due in April, June, September, and the following January.\n\nTo avoid a penalty, pay at least 90% of this year's tax, or 100% of last year's tax. High earners — those with prior-year adjusted gross income over $150,000 — must pay 110% instead of 100%. Most freelancers find the prior-year rule easier, since it skips guessing this year's income.\n\nA simple habit: set aside a fixed share of every payment you receive in a separate tax account, and move it out of checking the same day a client pays you, before it feels like spending money. The right share is narrower than the 25% to 30% rule of thumb suggests — it depends on your profit and on whether you also have a job, since freelance income stacks on top of a salary at your top marginal rate. Our [guide to how much to set aside for taxes](/self-employment-tax/how-much-to-set-aside-for-taxes/) works out the figure for your own situation. It covers both income tax and self-employment tax, which funds Social Security and Medicare."
+        },
+        {
+          "heading": "How Do Freelancers Budget for Health Insurance Without an Employer Plan?",
+          "body": "Freelancers without an employer plan can buy coverage through the ACA Health Insurance Marketplace at [HealthCare.gov](https://www.healthcare.gov/self-employed/). Premiums depend on your income, age, and state, and many self-employed workers qualify for subsidies that lower the monthly cost. Because your income changes, you report your estimated net self-employment income for the year, not last year's number.\n\nBuild the premium into your baseline budget as a fixed cost, the same as rent. If your income rises well above your estimate, update your Marketplace application, since a higher income can change your subsidy. Waiting until tax time to reconcile a big gap can mean owing money back.\n\nSome freelancers also budget a separate line for deductibles and copays, especially with a high-deductible plan. Treat this like the buffer fund: a specific amount, kept separate from daily spending money."
+        },
+        {
+          "heading": "How Can Self-Employed Workers Save for Retirement Without a 401(k) Match?",
+          "body": "Self-employed workers can save for retirement using a SEP-IRA or a solo 401(k) instead of an employer plan. A [SEP-IRA](https://www.irs.gov/retirement-plans/plan-sponsor/simplified-employee-pension-plan-sep) lets you contribute up to 25% of net self-employment earnings, capped by the IRS each year. A solo 401(k) allows similar limits and can also accept smaller Roth contributions, depending on the provider.\n\nWithout an employer match, the incentive to save has to come from your own budget. A workable rule: contribute a fixed percentage, such as 10%, of any month that comes in above baseline. Contributions are optional each month, which makes both plans a good fit for irregular income.\n\nSkipping retirement savings during lean years is common and understandable. Building it into the plan for above-baseline months, instead of treating it as an afterthought, makes it happen consistently."
+        },
+        {
+          "heading": "What's the Best Way to Handle Money During a Good Month?",
+          "body": "Extra money in a strong month should follow a set order, not a random spending decision. First, set aside the 25% to 30% tax portion described earlier. Second, refill the smoothing buffer if you drew from it during a recent slow month.\n\nThird, top off retirement contributions for months you skipped. Only after those three steps should extra income go toward discretionary spending or extra debt payoff. Writing this order down ahead of time removes the guesswork when a big check arrives.\n\nThis order matters because taxes and buffer refills are due whether or not you feel like paying them. A good month that gets fully spent leaves nothing to cover the next slow one. Treating windfalls as scheduled tasks, not free money, keeps a variable-income budget working long term."
+        },
+        {
+          "heading": "How Do You Track Financial Progress When Income Isn't Steady?",
+          "body": "Track progress with net worth, not monthly income, since net worth smooths out the ups and downs of irregular pay. Net worth is what you own minus what you owe, checked on the same day each month or quarter. A slow month that still grows your net worth is a sign your system is working.\n\nModernWallet's [guide to calculating net worth](/net-worth/how-to-calculate-net-worth/) walks through the full formula step by step. Update the same accounts each time — checking, savings, retirement, and debts — so the comparison stays accurate. Over a year, a rising trend line matters more than any single low month.\n\nChecking net worth quarterly, rather than daily, avoids the stress of watching balances jump around week to week. Irregular income naturally causes weekly noise. A quarterly view shows the real trend without that noise."
+        }
+      ],
+      "tools": [
+        {
+          "href": "/budget/zero-based-budget-calculator/",
+          "label": "Zero-Based Budget Calculator"
+        },
+        {
+          "href": "/budget/monthly-budget-calculator/",
+          "label": "Monthly Budget Calculator"
+        },
+        {
+          "href": "/budget/household-budget-calculator/",
+          "label": "Household Budget Calculator"
+        },
+        {
+          "href": "/net-worth/how-to-calculate-net-worth/",
+          "label": "How to Calculate Net Worth"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much of my freelance income should I set aside for taxes?",
+          "answer": "Set aside 25% to 30% of every payment for federal income tax and self-employment tax combined. The exact percentage depends on your tax bracket, state taxes, and deductions, so check it against last year's actual tax bill. Move the money to a separate account right away, before it gets mixed in with spending cash."
+        },
+        {
+          "question": "Should I budget based on my average income or my lowest month?",
+          "answer": "Budget based on your lowest realistic month, not your average. An average hides the months you fall short, while a baseline built on your lowest month covers your bills every time. Treat income above that baseline as extra, to be assigned to taxes, buffer savings, and retirement."
+        },
+        {
+          "question": "How big should an emergency fund be with irregular income?",
+          "answer": "Plan for two separate amounts, not one flat number. A smoothing buffer covers the routine gap between your average and lowest months, refilled after every strong month. A true emergency reserve, for total loss of work, should hold three to six months of your baseline expenses."
+        },
+        {
+          "question": "Do I still need to pay estimated taxes if a client withholds nothing?",
+          "answer": "Yes, if you expect to owe $1,000 or more for the year, the IRS requires quarterly estimated payments. This applies to freelance, gig, and contract income, since no employer withholds tax on your behalf. Missing these payments can trigger a penalty even if you pay in full at filing time."
+        },
+        {
+          "question": "What happens if I miss a quarterly estimated tax payment?",
+          "answer": "The IRS can charge an underpayment penalty, calculated separately for each missed or late quarter. Paying late in one quarter and catching up later still reduces, but does not eliminate, the penalty for that quarter. Paying at least 90% of this year's tax, or 100% of last year's, generally avoids the penalty altogether."
+        },
+        {
+          "question": "Can I contribute to a retirement account without an employer 401(k)?",
+          "answer": "Yes, a SEP-IRA or a solo 401(k) both let self-employed workers save for retirement without an employer plan. Both are opened through a regular brokerage, not through a job, and both allow contributions based on a percentage of net self-employment earnings. Contributions are optional each year, which suits income that changes month to month."
+        },
+        {
+          "question": "How often should I update my baseline income number?",
+          "answer": "Recalculate your baseline every six to twelve months, or right after a major change in your client base. Adding or losing a large recurring client can shift your realistic low month significantly. Using outdated numbers means budgeting for income you no longer have, or missing income you could safely count on."
+        }
+      ],
+      "sources": [
+        {
+          "label": "IRS — Estimated Taxes for Individuals and the Self-Employed",
+          "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes"
+        },
+        {
+          "label": "IRS — Simplified Employee Pension Plan (SEP)",
+          "url": "https://www.irs.gov/retirement-plans/plan-sponsor/simplified-employee-pension-plan-sep"
+        },
+        {
+          "label": "Consumer Financial Protection Bureau — An Essential Guide to Building an Emergency Fund",
+          "url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/"
+        },
+        {
+          "label": "HealthCare.gov — Health Coverage for Self-Employed People",
+          "url": "https://www.healthcare.gov/self-employed/"
+        }
+      ]
+    }
+  }
+]

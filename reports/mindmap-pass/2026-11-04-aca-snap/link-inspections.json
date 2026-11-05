@@ -1,0 +1,47 @@
+{
+  "checked": "2026-11-04",
+  "localSourceEvidence": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/link-source-records.json",
+    "sha256": "ea1e52a644f63c46bebec0e3993447c15f4d6bbfdd87f672f847912ed55088ad"
+  },
+  "templateEvidence": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/technical-inspection.json",
+    "sha256": "2b548ec3c2f1ee09dea3b77a2018bbf344658c959fc622d0841c9dc4102c7427"
+  },
+  "routes": {
+    "/budget/": {
+      "file": "src/pages/[category]/index.astro",
+      "section": "Budget calculator spoke grid",
+      "observation": "spokesForCalc(calc.id) renders every budget spoke as an ordinary card; no new top-level calculator or header item needed."
+    },
+    "/guides/how-to-budget-with-irregular-income/": {
+      "file": "src/data/guides.ts",
+      "section": "How Do Freelancers Budget for Health Insurance Without an Employer Plan?",
+      "observation": "Existing passage describes Marketplace premiums, estimated annual net self-employment income, and updating changed estimates. Add one contextual link sentence only; unrelated tax-rule inconsistency remains advisory."
+    },
+    "/budget/household-budget-calculator/": {
+      "file": "src/data/spokes-budget.ts",
+      "section": "How it works and common mistakes, kid-related costs",
+      "observation": "Existing family expense discussion includes groceries and childcare. Add two relevant links with a clear statement that food-restricted benefits are not cash income."
+    },
+    "/guides/how-to-make-a-budget/": {
+      "file": "src/data/guides.ts",
+      "section": "The Four Steps to Build a Budget from Scratch",
+      "observation": "Step1 mentions government benefit statements. Add a single SNAP application link sentence with truthful noncash-food-budget context; preserve existing budgeting method."
+    },
+    "/compare/": {
+      "file": "src/pages/compare/index.astro",
+      "section": "Comparison card grid",
+      "observation": "COMPARISONS.filter(!draft) maps every published entry to /compare/<slug>/; two new records produce exact card links automatically."
+    },
+    "/guides/": {
+      "file": "src/pages/guides/index.astro",
+      "section": "Guide card grid",
+      "observation": "GUIDES.map renders every record with its H1/cardBlurb and correct guide route."
+    }
+  },
+  "excludedSources": {
+    "/retirement/early-retirement-calculator/": "Do not use as a new inbound source: inherited Medicare-under65 generalization could affect health answer.",
+    "/compare/medicare-vs-medicaid/": "Do not use or link as an answer source: misleading income/Medicare and reported-income wording affects coverage decisions; separate editorial remediation needed."
+  }
+}

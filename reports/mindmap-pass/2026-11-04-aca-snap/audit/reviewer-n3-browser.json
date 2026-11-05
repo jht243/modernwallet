@@ -1,0 +1,189 @@
+{
+  "status": "observed-browser-checks-completed-not-final-PASS",
+  "http": 200,
+  "errors": [],
+  "widths": {
+    "page": 390,
+    "viewport": 390,
+    "tableWidth": 350,
+    "tableScroll": 350
+  },
+  "toc": [
+    {
+      "href": "#benefits-comparison",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-1",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-2",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-3",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-4",
+      "exists": true
+    },
+    {
+      "href": "#benefits-next-step",
+      "exists": true
+    }
+  ],
+  "links": [
+    {
+      "text": "ModernWallet",
+      "href": "/"
+    },
+    {
+      "text": "Jonathan Velez",
+      "href": "/about/"
+    },
+    {
+      "text": "Supplemental Nutrition Assistance Program (SNAP)",
+      "href": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "text": "Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)",
+      "href": "https://fns-prod.azureedge.us/wic/benefits"
+    },
+    {
+      "text": "U.S. Department of Agriculture (USDA) Food and Nutrition Administration (FNA)",
+      "href": "https://fns-prod.azureedge.us/wic/eligibility"
+    },
+    {
+      "text": "SNAP and WIC Eligibility and Food Benefits",
+      "href": "#benefits-comparison"
+    },
+    {
+      "text": "Eligible Families Can Receive Both",
+      "href": "#benefits-section-1"
+    },
+    {
+      "text": "Which Household Members Count",
+      "href": "#benefits-section-2"
+    },
+    {
+      "text": "What Each Program Pays For",
+      "href": "#benefits-section-3"
+    },
+    {
+      "text": "How to Apply Through the Right Agency",
+      "href": "#benefits-section-4"
+    },
+    {
+      "text": "The Next Step for Your Household",
+      "href": "#benefits-next-step"
+    },
+    {
+      "text": "SNAP eligibility",
+      "href": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "text": "what SNAP can buy",
+      "href": "https://fns-prod.azureedge.us/snap/eligible-food-items"
+    },
+    {
+      "text": "WIC eligibility",
+      "href": "https://fns-prod.azureedge.us/wic/eligibility"
+    },
+    {
+      "text": "WIC benefits",
+      "href": "https://fns-prod.azureedge.us/wic/benefits"
+    },
+    {
+      "text": "Advertise With Us →",
+      "href": "/sponsor?from=%2Fcompare%2Fsnap-vs-wic%2F"
+    },
+    {
+      "text": "California WIC Program",
+      "href": "https://myfamily.wic.ca.gov/Home/HowCanIGetWIC"
+    },
+    {
+      "text": "SNAP State Directory of Resources",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "Working Families Tax Cuts",
+      "href": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "text": "SNAP State Directory of Resources",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "WIC Eligibility Tool",
+      "href": "https://fns-prod.azureedge.us/wic/eligibility"
+    },
+    {
+      "text": "plan household food spending",
+      "href": "/budget/household-budget-calculator/"
+    },
+    {
+      "text": "keep food assistance separate in your budget",
+      "href": "/guides/how-to-make-a-budget/"
+    },
+    {
+      "text": "SNAP State Directory of Resources",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "USDA WIC eligibility page",
+      "href": "https://fns-prod.azureedge.us/wic/eligibility"
+    },
+    {
+      "text": "USAGov",
+      "href": "https://www.usa.gov/food-stamps"
+    },
+    {
+      "text": " Household budget calculator → ",
+      "href": "/budget/household-budget-calculator/"
+    },
+    {
+      "text": " How to make a budget → ",
+      "href": "/guides/how-to-make-a-budget/"
+    },
+    {
+      "text": " More financial comparisons → ",
+      "href": "/compare/"
+    },
+    {
+      "text": "calculator methodology",
+      "href": "/methodology/"
+    },
+    {
+      "text": "editorial policy",
+      "href": "/editorial-policy/"
+    },
+    {
+      "text": "USDA Food and Nutrition Administration: SNAP Eligibility",
+      "href": "https://fns-prod.azureedge.us/snap/recipient/eligibility"
+    },
+    {
+      "text": "USDA Food and Nutrition Administration: SNAP State Directory of Resources",
+      "href": "https://fns-prod.azureedge.us/snap/state-directory"
+    },
+    {
+      "text": "USDA Food and Nutrition Administration: What Can SNAP Buy?",
+      "href": "https://fns-prod.azureedge.us/snap/eligible-food-items"
+    },
+    {
+      "text": "USDA Food and Nutrition Administration: WIC Eligibility",
+      "href": "https://fns-prod.azureedge.us/wic/eligibility"
+    },
+    {
+      "text": "USDA Food and Nutrition Administration: WIC Benefits",
+      "href": "https://fns-prod.azureedge.us/wic/benefits"
+    },
+    {
+      "text": "California WIC Program: How Can I Get WIC?",
+      "href": "https://myfamily.wic.ca.gov/Home/HowCanIGetWIC"
+    }
+  ],
+  "faqOpened": true,
+  "heading": "Supplemental Nutrition Assistance Program (SNAP) vs WIC"
+}

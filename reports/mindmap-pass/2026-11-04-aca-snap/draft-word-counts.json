@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "snap-benefits-calculator",
+    "words": 2105,
+    "floor": 1200,
+    "measured": "source prose incl table values excludes headings/meta/disclaimer"
+  },
+  {
+    "slug": "aca-subsidy-calculator",
+    "words": 2528,
+    "floor": 1200,
+    "measured": "source prose incl table values excludes headings/meta/disclaimer"
+  },
+  {
+    "slug": "snap-vs-wic",
+    "words": 2220,
+    "floor": 1500,
+    "measured": "source prose incl table values excludes headings/meta/disclaimer"
+  },
+  {
+    "slug": "aca-vs-medicaid",
+    "words": 2402,
+    "floor": 1500,
+    "measured": "source prose incl table values excludes headings/meta/disclaimer"
+  },
+  {
+    "slug": "how-to-apply-for-food-stamps",
+    "words": 1858,
+    "floor": 1200,
+    "measured": "source prose incl table values excludes headings/meta/disclaimer"
+  }
+]

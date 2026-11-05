@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "internalLinksInspected": 3286,
+  "inboundRoutes": {
+    "/budget/snap-benefits-calculator/": [
+      "/budget/",
+      "/budget/household-budget-calculator/",
+      "/calculators/"
+    ],
+    "/budget/aca-subsidy-calculator/": [
+      "/budget/",
+      "/calculators/",
+      "/guides/how-to-budget-with-irregular-income/"
+    ],
+    "/compare/snap-vs-wic/": [
+      "/budget/household-budget-calculator/",
+      "/compare/"
+    ],
+    "/compare/aca-vs-medicaid/": [
+      "/compare/",
+      "/guides/how-to-budget-with-irregular-income/"
+    ],
+    "/guides/how-to-apply-for-food-stamps/": [
+      "/guides/",
+      "/guides/how-to-make-a-budget/"
+    ]
+  },
+  "sitemapNewDates": {
+    "/budget/snap-benefits-calculator/": "2026-11-04T00:00:00.000Z",
+    "/budget/aca-subsidy-calculator/": "2026-11-04T00:00:00.000Z",
+    "/compare/snap-vs-wic/": "2026-11-04T00:00:00.000Z",
+    "/compare/aca-vs-medicaid/": "2026-11-04T00:00:00.000Z",
+    "/guides/how-to-apply-for-food-stamps/": "2026-11-04T00:00:00.000Z"
+  },
+  "linkOnlySitemapDatesPreserved": [
+    "/budget/household-budget-calculator/",
+    "/guides/how-to-budget-with-irregular-income/",
+    "/guides/how-to-make-a-budget/"
+  ],
+  "nativeSearchNewRecords": [
+    "/budget/aca-subsidy-calculator",
+    "/budget/snap-benefits-calculator",
+    "/compare/aca-vs-medicaid",
+    "/compare/snap-vs-wic",
+    "/guides/how-to-apply-for-food-stamps"
+  ],
+  "failures": []
+}

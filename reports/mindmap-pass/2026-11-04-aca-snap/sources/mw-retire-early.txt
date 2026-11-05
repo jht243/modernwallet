@@ -1,0 +1,62 @@
+Early Retirement Calculator: Can You Retire Now?
+ModernWallet   Free Financial Calculators
+Calculators
+All calculators
+Auto LoanMortgageRetirementInvestingPortfolioReal EstateNet WorthBudgetTax ResolutionEstate PlanningProbateElder CareTrump Account529 College SavingsCoast FIREBusiness Loan PayoffPersonal LoanInterest Per DayTaxable vs. Tax-DeferredCredit Card PayoffIULMerchant Cash AdvanceInvoice FactoringBusiness Line of CreditPTO Cash-OutZakatLife Insurance NeedsSelf-Employment TaxOperating Cash FlowMileage DeductionCash Conversion CycleFreelance RateHELOCS-Corp TaxCommercial MortgageCD CalculatorEmergency FundDebt ConsolidationInflationExpense RatioSocial Security Break-EvenMileage ReimbursementPortfolio RebalancingHurricane DeductibleAnnuityCredit Card InterestLoan PaymentHYSA vs CDTrump Account vs 529Mortgage RecastSocial Security COLABiweekly MortgageRoth vs Traditional 401(k)Pay Off Mortgage or InvestFlorida Amendment 3Student Loan GarnishmentTax BracketDebt-to-Income RatioTaxable Social SecurityChecklistsCharitable Donation DeductionCar Loan Interest DeductionRent vs BuyStock Capital Gains TaxHidden Cost of Owning a Home
+×
+ModernWallet/Retirement/Early Retirement Calculator
+Early Retirement Calculator: Are You Ready to Retire Early?
+By Jonathan Velez, Personal Finance Writer & Editor · Reviewed against primary sources · Updated June 25, 2026
+Early retirement is financially viable if your projected portfolio balance can cover your spending (without a paycheck) from your planned retirement date until Social Security and Medicare fill the gap years later. Use the calculator above to see whether your current savings trajectory will reach that number by your target date.
+Then, read below to learn the rules for accessing tax-advantaged funds early.
+$1,294,564savings at retirement$4,315monthly income (4% rule)$344,564investment growth
+Share
+Interactive — edit any field
+How it's calculated
+The calculator projects your savings to your target retirement age and estimates how many years your portfolio can sustain a given withdrawal rate. It does not automatically add Social Security income, because the earliest you can claim Social Security retired-worker benefits is age 62, and claiming that early reduces your benefit by up to 30% compared with your Full Retirement Age (FRA), according to the Social Security Administration.
+Two IRS rules are critical for early retirees accessing tax-advantaged accounts before age 59½. First, the Rule of 55: if you separate from your employer in the calendar year you turn 55 or later, you can take penalty-free distributions from that employer's 401(k) plan (not IRAs). Second, IRS Section 72(t) Substantially Equal Periodic Payments (SEPP): you can take penalty-free IRA withdrawals at any age if you commit to a fixed payment schedule for at least five years or until age 59½, whichever is longer. For the FIRE-specific version of this question, see the FIRE calculator.
+A worked example
+You are 50, want to retire at 55, and have $800,000 saved. You contribute $2,500 per month and expect 7% annual returns. The calculator projects your balance at 55 will be approximately $1,216,000. At a 3.5% withdrawal rate (appropriate for a 35-year horizon), that supports about $42,560 per year, or $3,547 per month. From 55 to 62, you bridge entirely on portfolio withdrawals. At 62 you could claim a reduced Social Security benefit; if your estimated FRA benefit is $2,200/month, claiming at 62 gives you roughly $1,540/month instead — permanently. Delaying to your FRA at 67 costs seven more years of portfolio-only withdrawals but preserves the full benefit and the higher survivor benefit for a spouse.
+A related scenario worth working through with its own numbers: can you retire at 50 with $875,000 in a 401(k) and $5,000 a month in expenses? $5,000 a month is $60,000 a year. A standard 4% initial withdrawal on $875,000 is $35,000 a year — about $2,917 a month — which falls roughly $25,000 a year ($2,083 a month) short of $60,000 in spending. So a plain 4%-rule withdrawal does not cover this budget on its own. Closing that gap generally takes some combination of: part-time or bridge income covering the shortfall directly; treating the years from 50 to 62 as a defined bridge rather than the start of a 35-to-40-year drawdown, since Social Security can supplement withdrawals once it starts and reduce what the portfolio alone has to produce; and tapering the withdrawal rate down toward the more conservative 3% to 3.5% range described above for the remaining decades once other income arrives. Whether $875,000 actually supports $5,000 a month at 50 depends on what other income — Social Security, a spouse's earnings, part-time work, a pension — is available to cover the pre-62 gap; it isn't something a 4%-rule calculation alone confirms as safe, so run your own numbers in the calculator above.
+Common mistakes to avoid
+Assuming Social Security is available immediately after leaving work. The earliest claim age for retired-worker benefits is 62, and claiming at 62 permanently reduces your benefit by up to 30% versus your FRA benefit, per SSA rules.
+Underestimating health insurance costs before Medicare at 65. Without employer coverage, marketplace premiums for a 55-year-old can easily exceed $1,000 per month per person, significantly affecting your withdrawal rate.
+Misapplying the Rule of 55. The rule applies only to the 401(k) plan of your last employer — the one you separate from at age 55 or later. Old 401(k)s from prior employers and all IRAs require SEPP or age 59½ for penalty-free access.
+Breaking a 72(t) SEPP payment schedule. Modifying or stopping SEPP payments before the required period ends triggers the 10% penalty retroactively on all prior distributions, plus interest.
+Forgetting that 20 to 30 years of retirement changes the math. A 55-year-old who lives to 90 faces a 35-year drawdown — well beyond the 30 years modeled by the standard 4% rule research. A 3% to 3.5% withdrawal rate is more appropriate.
+Frequently asked questions
+What is the earliest age I can collect Social Security retirement benefits?
+The earliest you can claim Social Security retired-worker benefits is age 62, according to the Social Security Administration. Claiming at 62 permanently reduces your monthly benefit by up to 30% compared with your Full Retirement Age benefit (age 67 for those born in 1960 or later). Benefits are not available before 62 unless you qualify for Social Security Disability Insurance.
+How does the IRS Rule of 55 work?
+Under IRS rules, if you separate from your employer in the calendar year you turn 55 or older (age 50 for certain public safety employees), you may take penalty-free distributions from that employer's 401(k) or 403(b) plan. The 10% early withdrawal penalty is waived, but ordinary income tax still applies. This applies only to the plan of the employer you leave — not to old 401(k)s from prior jobs or to IRAs.
+What is a 72(t) SEPP distribution?
+IRS Section 72(t) allows penalty-free withdrawals from an IRA at any age if you take Substantially Equal Periodic Payments (SEPP) using one of three IRS-approved calculation methods. You must continue the payments for at least five years or until age 59½, whichever is longer. Breaking the schedule before the required period ends retroactively applies the 10% penalty on all prior distributions, plus interest.
+How do I cover health insurance before Medicare at 65?
+Early retirees under 65 are not eligible for Medicare. Options include COBRA continuation coverage from your former employer (often expensive), marketplace plans under the Affordable Care Act (premiums may qualify for subsidies if your income is low enough), a spouse's employer plan, or short-term health insurance. Healthcare costs are often the largest unplanned expense for early retirees and should be modeled explicitly in your budget.
+What withdrawal rate is safe for a 35-year early retirement?
+Research based on the Trinity Study and subsequent work suggests that a 3% to 3.5% withdrawal rate is more appropriate than the standard 4% rule for retirements lasting 35 to 40 years. A 3% rate requires approximately 33 times annual expenses in savings — a higher bar than standard FIRE's 25×, but it provides a larger buffer against sequence-of-returns risk and longevity.
+Can I retire at 50 with $875,000 and $5,000 in monthly expenses?
+It depends on what other income you have, but $875,000 alone doesn't fully cover it on a standard 4% withdrawal. A 4% withdrawal on $875,000 is $35,000 a year (about $2,917 a month), against $60,000 a year ($5,000 a month) in expenses — a shortfall of roughly $25,000 a year. Retiring at 50 in this scenario typically requires bridge or part-time income, lower expenses, or a plan to lean on Social Security once it starts to close that gap. It is not something a 4%-rule calculation confirms as safe on its own; run your own numbers, including any other income sources, in the calculator above.
+Sources
+We prioritize primary sources for rules, formulas, rates, limits, and definitions. See our
+calculator methodology and
+editorial policy.
+IRS Topic No. 558 — Additional Tax on Early Distributions From Retirement Plans (Rule of 55)
+IRS — Retirement Plans FAQs: Substantially Equal Periodic Payments (Section 72(t))
+SSA — Benefits Planner: Retirement — Retirement Age and Benefit Reduction
+Related retirement calculators
+FIRE Calculator Free · instant         Retirement Savings Calculator Free · instant         401k Early Withdrawal Calculator Free · instant
+See all retirement calculators, or browse
+every ModernWallet calculator.
+Plan the bigger picture
+When does waiting to claim Social Security pay off?→Roth or Traditional 401(k)? Compare after tax→Grow your investments→Pitched an IUL? Run the numbers→Track your net worth→Check your asset mix→Could you stop saving already?→Thinking about retiring early?→Is $3 million enough?→Shelter money from RMDs with a QLAC→
+ModernWallet
+Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results. 📣 Advertise With Us
+Calculators
+All calculators Auto LoanMortgageRetirementInvestingPortfolioReal EstateNet WorthBudgetTax ResolutionEstate PlanningProbateElder CareTrump Account529 College SavingsCoast FIREBusiness Loan PayoffPersonal LoanInterest Per DayTaxable vs. Tax-DeferredCredit Card PayoffIULMerchant Cash AdvanceInvoice FactoringBusiness Line of CreditPTO Cash-OutZakatLife Insurance NeedsSelf-Employment TaxOperating Cash FlowMileage DeductionCash Conversion CycleFreelance RateHELOCS-Corp TaxCommercial MortgageCD CalculatorEmergency FundDebt ConsolidationInflationExpense RatioSocial Security Break-EvenMileage ReimbursementPortfolio RebalancingHurricane DeductibleAnnuityCredit Card InterestLoan PaymentHYSA vs CDTrump Account vs 529Mortgage RecastSocial Security COLABiweekly MortgageRoth vs Traditional 401(k)Pay Off Mortgage or InvestFlorida Amendment 3Student Loan GarnishmentTax BracketDebt-to-Income RatioTaxable Social SecurityChecklistsCharitable Donation DeductionCar Loan Interest DeductionRent vs BuyStock Capital Gains TaxHidden Cost of Owning a Home    Comparisons
+All comparisons 401(k) vs Roth IRA Roth vs Traditional 401(k) 529 vs Roth IRA ETF vs Mutual Fund HSA vs FSA VA Loan vs Conventional 15 vs 30-Year Mortgage Fixed vs ARM Mortgage HYSA vs Money Market Stocks vs Bonds    Free Templates
+All templates Freelance Invoice Freelance Contract Statement of Work Retainer Agreement Mileage Log Expense Report S-Corp Tax Calculator QBI Deduction Explained LLC vs S Corp    Guides & Best-of
+All best-of roundups First-Time Home Buyer How to Buy a Car Best 401(k) Providers Best Budgeting Apps Best Money Market Accounts Best Net Worth Trackers Best Retirement Accounts Best Mileage Tracker Apps Best Freelance Accounting Software Best Invoicing Apps
+© 2026 ModernWallet · For educational purposes — not financial advice.
+Guides · About · Contact · Editorial Policy · Methodology · Privacy Policy · Powered by Layer3Labs
+Some links on this site are referral or affiliate links, including our Robinhood referral link — we may earn a reward or commission at no cost to you. This never affects our rankings or editorial coverage.

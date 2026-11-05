@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "beforeSnapshot": "fab596725851d998fc23e14a28e3cd3d52700b177908f4ee3025802a8567cb7b",
+  "afterSnapshot": "dcb58a71da4487025e6b14de11b3aa66e24dee6bc5a28511deee81f0e98518e3",
+  "changedRoutes": [
+    "/budget/snap-benefits-calculator/",
+    "/guides/how-to-apply-for-food-stamps/"
+  ],
+  "unchangedRoutes": 11,
+  "scope": "Two reviewed same-fact sentence edits only; other eleven full semantic fingerprints unchanged."
+}

@@ -1,0 +1,12 @@
+{
+  "oldSnapshot": "reports/mindmap-pass/2026-11-04-aca-snap/final-before-rhythm-correction.json",
+  "withdrawnRenderReview": "reports/mindmap-pass/2026-11-04-aca-snap/audit/render-review-before-rhythm-withdrawal.json",
+  "oldAnalysisReviews": [
+    "reports/mindmap-pass/2026-11-04-aca-snap/evidence/how-to-apply-for-food-stamps/analysis-review.before-rhythm-withdrawal.json",
+    "reports/mindmap-pass/2026-11-04-aca-snap/evidence/aca-subsidy-calculator/analysis-review.before-rhythm-withdrawal.json",
+    "reports/mindmap-pass/2026-11-04-aca-snap/evidence/snap-benefits-calculator/analysis-review.before-rhythm-withdrawal.json",
+    "reports/mindmap-pass/2026-11-04-aca-snap/evidence/aca-vs-medicaid/analysis-review.before-rhythm-withdrawal.json",
+    "reports/mindmap-pass/2026-11-04-aca-snap/evidence/snap-vs-wic/analysis-review.before-rhythm-withdrawal.json"
+  ],
+  "reason": "Actual sentence-band measurement correction; prior PASS withdrawn before any commit or push. Two exact same-fact sentences now corrected with preserved counters."
+}

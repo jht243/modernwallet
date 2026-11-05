@@ -91,6 +91,8 @@ export interface CalculatorDef {
 }
 
 export interface SpokeEntry {
+  /** Preserve an existing publication date when revision dates change. */
+  published?: string;
   /** ISO yyyy-mm-dd this page's content was last revised. Omit until the page is actually
    *  edited; the byline and schema fall back to the site-wide LAST_UPDATED. */
   updated?: string;
@@ -113,6 +115,8 @@ export interface SpokeEntry {
   howItWorks: string;
   /** Approved section headings for a route whose explanation is divided into distinct steps. */
   sectionHeadings?: string[];
+  /** Rich, multi-paragraph methodology sections for benefit tools. */
+  sections?: Array<{ heading: string; body: string }>;
   commonMistakes: string[];
   /** Optional narrative worked example (build-time numbers get injected around it). */
   workedExample?: string;

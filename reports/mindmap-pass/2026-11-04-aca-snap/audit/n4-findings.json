@@ -1,0 +1,169 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "route": "/compare/aca-vs-medicaid/",
+  "status": "complete-render-findings-awaiting-targeted-correction",
+  "reworkAttempts": 0,
+  "findings": [
+    {
+      "field": "introText",
+      "quote": "Medicaid and the ACA are not the same thing: the Affordable Care Act (ACA) is a law, Marketplace plans are private health insurance, and [Medicaid](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/) is a joint federal and state public coverage program. In an ACA vs Medicaid comparison, Marketplace plans are bought through the [Health Insurance Marketplace](https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/), while each state runs Medicaid within federal guidelines. [HealthCare.gov](https://www.healthcare.gov/medicaid-limited-benefits/) states that a person in a Medicaid program that counts as minimum essential coverage is not eligible for a premium tax credit or other savings on a Marketplace plan.\n\nLimited-benefit Medicaid works differently. A new 2027 Medicaid work requirement can also leave some adults with Marketplace access but no savings. The Marketplace or the state Medicaid agency makes the eligibility decision for each person in a household.",
+      "replacement": "The [Affordable Care Act (ACA)](https://www.nyc.gov/site/ochia/your-rights/affordable-care-act.page) is a law, and [Medicaid](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/) is a joint federal and state public coverage program. An ACA vs Medicaid comparison focuses on private [Marketplace plans](https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/) and Medicaid coverage rules. States administer Medicaid within federal guidelines.\n\n[HealthCare.gov](https://www.healthcare.gov/medicaid-limited-benefits/) states that full-benefit Medicaid generally prevents Marketplace premium savings. Limited-benefit Medicaid that does not count as qualifying coverage may still allow those savings. A 2027 Medicaid work-requirement denial can leave some adults with Marketplace access but no savings.\n\nThe Marketplace or state Medicaid agency makes the eligibility decision for each person in a household.",
+      "defect": "Densecolon openerchainslaw/private/public3identities; directfirstsentenceclarifieslaw/program withoutclaimingACAisinsurance. Limitedcoverageexceptionandtimingrulegeneralitypreserved;keywordfirstparagraphretained."
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "quote": "Both programs measure income with modified adjusted gross income (MAGI).",
+      "replacement": "Marketplace savings use expected household modified adjusted gross income (MAGI). Medicaid income rules vary by state and eligibility category.",
+      "defect": "UniversalMAGIclaimovergeneralizesMedicaidincludingaged/disabilitycategories. SourcecurrentHCpageestablishesstate/categoryvariation; keepinformationalboundaries."
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "quote": "Medicaid benefits differ by state, though HealthCare.gov says all states provide comprehensive coverage.",
+      "replacement": "Full-benefit Medicaid benefits differ by state, though HealthCare.gov says all states provide comprehensive coverage.",
+      "defect": "UnqualifiedMedicaidcomprehensivenesscontradictslimitedbenefitexception."
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "quote": "Both paths count as qualifying health coverage.",
+      "replacement": "Marketplace plans and full-benefit Medicaid count as qualifying health coverage.",
+      "defect": "Limited-benefitMedicaiddoesnotnecessarilycount;wholepagecoherence."
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "quote": "HealthCare.gov says that due to a law change, only people with these immigration statuses are now eligible for full Medicaid or CHIP coverage:",
+      "replacement": "For noncitizen applicants, HealthCare.gov lists these immigration statuses for full Medicaid or CHIP coverage following a law change:",
+      "defect": "UnqualifiedimmigrationlistcouldexcludeUScitizensandnationalsbyomission. Keepstateexceptionforlawfullyresidingpregnantwomenandchildrenimmediatelyafterlist."
+    },
+    {
+      "field": "What disqualifies you for Medicaid?",
+      "quote": "Income too high for Medicaid or an immigration status outside the eligible list can block full coverage, and living in a state that has not expanded Medicaid can mean fewer coverage options.",
+      "replacement": "Income above a category\u2019s limit can prevent Medicaid eligibility. For noncitizen applicants, immigration status also affects full-coverage eligibility. A state that has not expanded Medicaid may offer fewer coverage options.",
+      "defect": "Qualifierneededforimmigrationlistand32wordindependentconditionsstack; statepregnancy/childrenexceptionsremaininmainbody."
+    },
+    {
+      "field": "What is Obamacare insurance?",
+      "quote": "The Affordable Care Act is a law, and Marketplace plans are private health insurance bought through the Health Insurance Marketplace. HealthCare.gov uses the terms Marketplace and Marketplace plan.",
+      "replacement": "[Obamacare](https://www.nyc.gov/site/ochia/your-rights/affordable-care-act.page) is another name for the Affordable Care Act (ACA). Marketplace plans are private health insurance bought through the Health Insurance Marketplace.",
+      "defect": "OriginaldoesnotdefinequeriedObamacareterm. NewlycapturedNYCOCHIAsupplementexplicitlysupportsonlythisnamingfact."
+    },
+    {
+      "field": "What is a coverage gap in health insurance?",
+      "quote": "The cited HealthCare.gov pages do not define a coverage gap, but they describe situations where a person may get neither Medicaid nor Marketplace savings. HealthCare.gov says that in a state that has not expanded Medicaid, a person who is not eligible may have fewer coverage options and, depending on income, might not qualify for savings on a private plan. Its poverty-level guidance adds that income below 100 percent of FPL probably won't qualify for Marketplace savings. Starting in 2027, a work-requirement denial can produce a similar result: Marketplace access without savings. HealthCare.gov still advises applying for Medicaid in non-expansion states, because each state considers factors beyond income.",
+      "replacement": "In a non-expansion Medicaid coverage gap, some adults cannot get Medicaid or ordinary Marketplace savings. [HealthCare.gov](https://www.healthcare.gov/medicaid-chip/medicaid-expansion-and-you/) describes adults below 100% of the federal poverty level who do not qualify under their state\u2019s disability, age, or other Medicaid rules. Their incomes are too high for Medicaid in their state and below the range for ordinary Marketplace savings.\n\nStill submit a Marketplace application because state categories and detailed income can change the outcome. A 2027 Medicaid work-requirement denial can also prevent Marketplace savings, but it follows a separate rule.",
+      "defect": "Originalnarratesresearchfailureanddoesnotdefinegap. NewlycapturedofficialHCexpansionsourcepreciselysupportsthisconditionalnonexpansiondefinitionandstillapplyguidance. Keepsseparate2027denialrule; usefulshortsentencealsobreaksFAQalllongrhythmrun."
+    },
+    {
+      "field": "verdict",
+      "quote": "Once the premium amount is known, [plan the monthly premium](/budget/household-budget-calculator/) alongside other bills, and if income changes month to month, [budget insurance with irregular income](/guides/how-to-budget-with-irregular-income/) before you update the Marketplace income estimate.",
+      "replacement": "Once the premium is known, [plan it alongside other bills](/budget/household-budget-calculator/). If income changes month to month, [budget insurance with irregular income](/guides/how-to-budget-with-irregular-income/). Confirm your household\u2019s ACA vs Medicaid coverage result before updating the Marketplace income estimate.",
+      "defect": "Closingactionmissingexactprimaryphraseandchainsbudget/income/updateinstructions; preservesbothapprovedinternallinks."
+    },
+    {
+      "field": "Eligibility Determines Premium Savings",
+      "quote": "If the Marketplace found a person ineligible for Medicaid at enrollment and approved advance credit payments, the IRS generally treats that person as not eligible for Medicaid for the rest of the plan year, even if Medicaid later approves coverage.",
+      "replacement": "The Marketplace may find someone ineligible for Medicaid at enrollment and approve advance credit payments. In that case, the IRS generally treats the person as ineligible for Medicaid for the rest of the plan year, even if Medicaid later approves coverage.",
+      "defect": "40wordnestedtimingcondition. Targetedsplitpreservesinitialdetermination/advancepaymentandgenerality."
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "quote": "Under its general bands, income below 138 percent of FPL may qualify for Medicaid in an expansion state, and income below 100 percent \"probably won't qualify for savings on a Marketplace plan\" but may qualify for Medicaid.",
+      "replacement": "Under HealthCare.gov\u2019s general bands, income below 138 percent of FPL may qualify for Medicaid in an expansion state. Income below 100 percent probably will not qualify for Marketplace savings but may qualify for Medicaid.",
+      "defect": "37wordtwo-thresholdconditionalstack; keepsmay/probablyscopewithoutquotefragment."
+    },
+    {
+      "field": "Household Income Is Not the Only Test",
+      "quote": "A wrong estimate carries a tax cost: for tax years after 2025, the IRS applies no repayment cap, so the full amount of advance credit payments above the allowed credit is added to the tax bill.",
+      "replacement": "For tax years after 2025, the IRS applies no repayment cap. The full amount of advance credit payments above the allowed credit is added to the tax bill.",
+      "defect": "36wordcolonandcausechain; nochangeinrepaymentrule."
+    },
+    {
+      "field": "Marketplace Coverage and Medicaid Are Different",
+      "quote": "Monthly premiums for a Marketplace plan go directly to the insurance company, not to the Marketplace.",
+      "replacement": "Monthly premiums for a Marketplace plan go directly to the insurance company.",
+      "defect": "Compressedcomma-antithesis; removingcomparisonclausepreservesactualpaymentroute."
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "quote": "HealthCare.gov states that a person who lost or was denied Medicaid for not meeting the state's work requirement may be able to get Marketplace coverage but won't qualify for savings to lower Marketplace plan costs.",
+      "replacement": "HealthCare.gov says a person who lost or was denied Medicaid for not meeting the state\u2019s work requirement may get Marketplace coverage. That person will not qualify for savings to lower Marketplace plan costs.",
+      "defect": "35wordsource/condition/coverage/savingsstack; preservemay/willnotqualificationexactly."
+    },
+    {
+      "field": "Rules to Check for 2027 Coverage",
+      "quote": "For Marketplace plans, starting January 1, 2027, only certain immigration statuses qualify for savings.",
+      "replacement": "For noncitizens applying for Marketplace plans, only certain immigration statuses qualify for savings starting January 1, 2027.",
+      "defect": "Sameimmigrationlistqualification; avoidimplicationUScitizensmusthaveenumeratedimmigrationstatus."
+    },
+    {
+      "field": "comparisonTable Help with costs b",
+      "quote": "Free or low-cost coverage; full-benefit Medicaid eligibility rules out Marketplace premium savings",
+      "replacement": "Free or low-cost coverage; full-benefit Medicaid eligibility generally prevents Marketplace premium savings",
+      "defect": "QualifygeneralruletoagreewithIRSinitialMarketplace-assessmenttimingexceptionexplainedinsamearticle."
+    },
+    {
+      "field": "verdict",
+      "quote": "Full-benefit Medicaid eligibility removes Marketplace savings, while limited-benefit Medicaid, an ordinary Medicaid denial and a work-requirement denial each lead to a different savings answer.",
+      "replacement": "Full-benefit Medicaid eligibility generally removes Marketplace savings. Limited-benefit Medicaid, an ordinary Medicaid denial and a work-requirement denial each lead to a different savings answer.",
+      "defect": "SameIRSspecifictimingexception; generaltakeawaymustnotcontradictit."
+    },
+    {
+      "field": "verdict",
+      "quote": "Keep the current plan until replacement coverage is confirmed.",
+      "replacement": "If you already have coverage, confirm replacement coverage before ending the existing plan.",
+      "defect": "Imperativepresupposesreaderhascurrentplan; conditionalpreservesapprovedsafetyinstructionforcurrentenrollees."
+    },
+    {
+      "field": "Is ACA or Medicaid better?",
+      "quote": "Medicaid benefits differ by state but are comprehensive in all states, and every Marketplace plan covers the same 10 benefit categories.",
+      "replacement": "Full-benefit Medicaid coverage differs by state. Every state provides comprehensive full-benefit coverage, and every Marketplace plan covers the same 10 benefit categories.",
+      "defect": "UnqualifiedcomprehensiveMedicaidclaimconflictswithlimitedbenefitexception; splitkeepssourcefact."
+    }
+  ],
+  "mechanical": [
+    {
+      "field": "section heading",
+      "quote": "Eligibility Determines Premium Savings",
+      "replacement": "ACA vs Medicaid Eligibility and Savings",
+      "defect": "FirstnaturalexactprimaryphraseH2; preserveapprovedfirstanswerheading."
+    },
+    {
+      "field": "section heading",
+      "quote": "Household Income Is Not the Only Test",
+      "replacement": "ACA vs Medicaid Income Rules",
+      "defect": "SecondnaturalexactprimaryphraseH2; preservecontent."
+    },
+    {
+      "field": "sources",
+      "quote": "Original6sources",
+      "replacement": "AddactualNYCOCHIAandHCexpansion-gapsupplementcitationstostoredsources",
+      "defect": "NewFAQfactsneedvisibleprimarycitationsandpacketartifacthashes."
+    },
+    {
+      "field": "N4boldlistlabels",
+      "quote": "**...**",
+      "replacement": "plainlabelmarkerswithoutasterisks",
+      "defect": "SameN3rendererleavesrawboldMarkdown; scopeonlynewN4recordifnotrenderedcorrectly."
+    },
+    {
+      "field": "H1",
+      "quote": "Affordable Care Act (ACA) Marketplace Coverage vs Medicaid",
+      "replacement": "Affordable Care Act (ACA) vs Medicaid Coverage",
+      "defect": "CurrentH1doesnotcontaincontiguousprimaryphraseACA vs Medicaid; useplainmeaningpreservingH1orrecordapprovedscopedexceptionifkeepingoriginalH1issemanticallypreferable."
+    }
+  ],
+  "observations": [
+    "Current2281bodywordsclears1500floor. Snapshotandbrowserreviewnotyetperformed.",
+    "SupplementNYCidentityandHCconditionalgapdefinitionsreadindependently; nootherNYCstate-specificprotectionsinferred.",
+    "MarketplaceenrollmenttimingmatchescurrentcapturedHCquickguideNov1Jan15withDec15Jan1deadline; noarbitrarylawfutureprediction.",
+    "FAQalllongrhythmruns100\u2013106present; gapFAQanddisqualificationrewritesaddshort/mediumsentences; remeasureafteractualfix.",
+    "ExistingFAQparagraphformatrootreportsnewbenefitsscopefix; verifyrenderlater.",
+    "Fullrenderreadincluding5rowtable,FAQs,closing,sourcepanelandfooter; actualrawMarkdownlistmarkersconfirmed.",
+    "Freshsemanticrenderhascanonicalhttps://www.themodernwallet.com/compare/aca-vs-medicaid/,53chartitle/159description,Articlepublished/modified2026-11-04,defaultJonathanVelezidentity,noTESTED/professionalclaim.",
+    "Neutralgenericnewpageaffiliatedisclosureisnowrendered;previousN3footerclaimnotpresentonthisN4candidate.",
+    "Preliminarysource-onlyfindingsnowboundtorealwholepagefingerprint; N4ownbrowserlayoutchecktocome.",
+    "Ownactualbrowserreturned200,oneH1,6validTOCanchors,FAQopenbehavior,nopageerrors,page390scrollWidth390; visuallyinspectedall5table rowsand3columnsreadable. Evidence reviewer-n4-browser.json/reviewer-n4-mobile-table.png."
+  ],
+  "snapshotSha256": "b2d99be9f9bbfc0ed6234fbe45f58ef3e2bb11ec7f79e3f99d2423a31f199d65",
+  "fingerprint": "e400ddb83c923cae3b8ad0692b3e1ae9f8c0943a4437d5389ec07fa03d9869a9",
+  "verdict": "FIX-IN-PLACE"
+}

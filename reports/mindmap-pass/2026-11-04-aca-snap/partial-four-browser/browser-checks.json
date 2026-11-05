@@ -1,0 +1,117 @@
+{
+  "base": "http://127.0.0.1:4396",
+  "startedAt": "2026-11-05T03:13:52.676Z",
+  "externalRequestsBlocked": true,
+  "pages": [
+    {
+      "path": "/budget/snap-benefits-calculator/",
+      "title": "SNAP Benefits Calculator for a Monthly Food Budget",
+      "headings": [
+        "How SNAP Benefits Are Calculated",
+        "Income and Deductions for the SNAP Benefits Calculator",
+        "SNAP Income Limits Are a Federal Reference",
+        "SNAP Benefits for Older or Disabled Members",
+        "A Full-Month SNAP Worked Example",
+        "What the SNAP Benefits Calculator Cannot Decide",
+        "Your Next Step",
+        "Frequently Asked Questions",
+        "Sources",
+        "Plan the Bigger Picture"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [
+        "Default766",
+        "Shelter1400→826",
+        "High-income unknown suppresses amount",
+        "State-confirmed conditional minimum25",
+        "Unsupported region blocks result",
+        "Clipboard contains inputs and result",
+        "Downloaded text contains inputs and result"
+      ],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/partial-four-browser/dom/budget/snap-benefits-calculator/index.html",
+      "htmlLength": 77183
+    },
+    {
+      "path": "/budget/aca-subsidy-calculator/",
+      "title": "ACA Subsidy Calculator for 2027 Marketplace Premiums",
+      "headings": [
+        "How ACA Subsidies Are Calculated",
+        "Income for the 2027 ACA Subsidy Calculator",
+        "ACA Subsidy Income Limits for 2027",
+        "The Benchmark and Your Chosen Plan",
+        "A Worked Federal Premium-Credit Calculation",
+        "When the ACA Subsidy Calculator Does Not Apply",
+        "Updating Income Before Tax Reconciliation",
+        "Frequently Asked Questions",
+        "Sources",
+        "Plan the Bigger Picture"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [
+        "Unknown eligibility suppresses credit",
+        "Confirmed default268.85/net281.15",
+        "Exact133%correct3.23",
+        "400%credit262.80",
+        "Above400%withholds estimate",
+        "Clipboard contains inputs and result",
+        "Downloaded text contains inputs and result"
+      ],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/partial-four-browser/dom/budget/aca-subsidy-calculator/index.html",
+      "htmlLength": 81199
+    },
+    {
+      "path": "/compare/snap-vs-wic/",
+      "title": "SNAP vs WIC Food Benefits Compared for U.S. Households",
+      "headings": [
+        "SNAP and WIC Eligibility and Food Benefits",
+        "Eligible Families Can Receive Both",
+        "SNAP vs WIC Household Rules",
+        "SNAP vs WIC Food Benefits",
+        "How to Apply Through the Right Agency",
+        "The Next Step for Your Household",
+        "Frequently Asked Questions",
+        "Related Resources",
+        "Sources"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/partial-four-browser/dom/compare/snap-vs-wic/index.html",
+      "htmlLength": 62259
+    },
+    {
+      "path": "/compare/aca-vs-medicaid/",
+      "title": "ACA vs Medicaid Coverage Compared for U.S. Households",
+      "headings": [
+        "Marketplace Coverage and Medicaid Are Different",
+        "Eligibility Determines Premium Savings",
+        "Household Income Is Not the Only Test",
+        "Applying Through the Marketplace or Your State",
+        "Rules to Check for 2027 Coverage",
+        "The Next Step Before Choosing a Plan",
+        "Frequently Asked Questions",
+        "Related Resources",
+        "Sources"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/partial-four-browser/dom/compare/aca-vs-medicaid/index.html",
+      "htmlLength": 66351
+    }
+  ],
+  "checks": [],
+  "pageErrors": [],
+  "status": "PASS",
+  "completedAt": "2026-11-05T03:14:01.324Z"
+}

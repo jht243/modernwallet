@@ -1,0 +1,838 @@
+[
+  {
+    "id": "mindmap-2026-10-25:/checklists/home-buying-checklist/",
+    "route": "/checklists/home-buying-checklist/",
+    "deployment": "pending-push",
+    "outcome": "not-yet-published",
+    "growth": "reports/mindmap-pass/2026-10-25/evidence/home-buying-checklist/growth.json",
+    "growthRecord": {
+      "origin_routine": "mindmap-pass",
+      "query_family": "home buying checklist",
+      "hypothesis": "A customizable, printable checklist page with the full item list in HTML earns clicks on a low-KD SERP held by PDFs and local posts.",
+      "primary_metric": "incremental Google clicks (GSC)",
+      "baseline": "not-yet-published",
+      "canonical_url": "https://www.themodernwallet.com/checklists/home-buying-checklist/",
+      "comparator_plan": "age-matched cohort of other 2026-10 new tool pages",
+      "change_scope": "new route",
+      "source_refresh_trigger": "change to any cited federal rule or agency guidance",
+      "windows": {
+        "day28": "first 28 complete live days after verified deploy",
+        "day56": "second 28 complete live days"
+      },
+      "outcome_status": "not-yet-published",
+      "deployed": null
+    }
+  },
+  {
+    "id": "mindmap-2026-10-25:/checklists/home-selling-checklist/",
+    "route": "/checklists/home-selling-checklist/",
+    "deployment": "pending-push",
+    "outcome": "not-yet-published",
+    "growth": "reports/mindmap-pass/2026-10-25/evidence/home-selling-checklist/growth.json",
+    "growthRecord": {
+      "origin_routine": "mindmap-pass",
+      "query_family": "home selling checklist",
+      "hypothesis": "A customizable, printable checklist page with the full item list in HTML earns clicks on a low-KD SERP held by PDFs and local posts.",
+      "primary_metric": "incremental Google clicks (GSC)",
+      "baseline": "not-yet-published",
+      "canonical_url": "https://www.themodernwallet.com/checklists/home-selling-checklist/",
+      "comparator_plan": "age-matched cohort of other 2026-10 new tool pages",
+      "change_scope": "new route",
+      "source_refresh_trigger": "change to any cited federal rule or agency guidance",
+      "windows": {
+        "day28": "first 28 complete live days after verified deploy",
+        "day56": "second 28 complete live days"
+      },
+      "outcome_status": "not-yet-published",
+      "deployed": null
+    }
+  },
+  {
+    "id": "mindmap-2026-10-25:/checklists/renting-checklist/",
+    "route": "/checklists/renting-checklist/",
+    "deployment": "pending-push",
+    "outcome": "not-yet-published",
+    "growth": "reports/mindmap-pass/2026-10-25/evidence/renting-checklist/growth.json",
+    "growthRecord": {
+      "origin_routine": "mindmap-pass",
+      "query_family": "rental checklist",
+      "hypothesis": "A customizable, printable checklist page with the full item list in HTML earns clicks on a low-KD SERP held by PDFs and local posts.",
+      "primary_metric": "incremental Google clicks (GSC)",
+      "baseline": "not-yet-published",
+      "canonical_url": "https://www.themodernwallet.com/checklists/renting-checklist/",
+      "comparator_plan": "age-matched cohort of other 2026-10 new tool pages",
+      "change_scope": "new route",
+      "source_refresh_trigger": "change to any cited federal rule or agency guidance",
+      "windows": {
+        "day28": "first 28 complete live days after verified deploy",
+        "day56": "second 28 complete live days"
+      },
+      "outcome_status": "not-yet-published",
+      "deployed": null
+    }
+  },
+  {
+    "id": "mindmap-2026-10-25:/checklists/landlord-checklist/",
+    "route": "/checklists/landlord-checklist/",
+    "deployment": "pending-push",
+    "outcome": "not-yet-published",
+    "growth": "reports/mindmap-pass/2026-10-25/evidence/landlord-checklist/growth.json",
+    "growthRecord": {
+      "origin_routine": "mindmap-pass",
+      "query_family": "landlord checklist",
+      "hypothesis": "A customizable, printable checklist page with the full item list in HTML earns clicks on a low-KD SERP held by PDFs and local posts.",
+      "primary_metric": "incremental Google clicks (GSC)",
+      "baseline": "not-yet-published",
+      "canonical_url": "https://www.themodernwallet.com/checklists/landlord-checklist/",
+      "comparator_plan": "age-matched cohort of other 2026-10 new tool pages",
+      "change_scope": "new route",
+      "source_refresh_trigger": "change to any cited federal rule or agency guidance",
+      "windows": {
+        "day28": "first 28 complete live days after verified deploy",
+        "day56": "second 28 complete live days"
+      },
+      "outcome_status": "not-yet-published",
+      "deployed": null
+    }
+  },
+  {
+    "id": "mindmap-2026-10-25:/checklists/home-inspection-checklist/",
+    "route": "/checklists/home-inspection-checklist/",
+    "deployment": "pending-push",
+    "outcome": "not-yet-published",
+    "growth": "reports/mindmap-pass/2026-10-25/evidence/home-inspection-checklist/growth.json",
+    "growthRecord": {
+      "origin_routine": "mindmap-pass",
+      "query_family": "home inspection checklist",
+      "hypothesis": "A customizable, printable checklist page with the full item list in HTML earns clicks on a low-KD SERP held by PDFs and local posts.",
+      "primary_metric": "incremental Google clicks (GSC)",
+      "baseline": "not-yet-published",
+      "canonical_url": "https://www.themodernwallet.com/checklists/home-inspection-checklist/",
+      "comparator_plan": "age-matched cohort of other 2026-10 new tool pages",
+      "change_scope": "new route",
+      "source_refresh_trigger": "change to any cited federal rule or agency guidance",
+      "windows": {
+        "day28": "first 28 complete live days after verified deploy",
+        "day56": "second 28 complete live days"
+      },
+      "outcome_status": "not-yet-published",
+      "deployed": null
+    }
+  },
+  {
+    "id": "mindmap-2026-10-25:/checklists/final-walkthrough-checklist/",
+    "route": "/checklists/final-walkthrough-checklist/",
+    "deployment": "pending-push",
+    "outcome": "not-yet-published",
+    "growth": "reports/mindmap-pass/2026-10-25/evidence/final-walkthrough-checklist/growth.json",
+    "growthRecord": {
+      "origin_routine": "mindmap-pass",
+      "query_family": "final walkthrough checklist",
+      "hypothesis": "A customizable, printable checklist page with the full item list in HTML earns clicks on a low-KD SERP held by PDFs and local posts.",
+      "primary_metric": "incremental Google clicks (GSC)",
+      "baseline": "not-yet-published",
+      "canonical_url": "https://www.themodernwallet.com/checklists/final-walkthrough-checklist/",
+      "comparator_plan": "age-matched cohort of other 2026-10 new tool pages",
+      "change_scope": "new route",
+      "source_refresh_trigger": "change to any cited federal rule or agency guidance",
+      "windows": {
+        "day28": "first 28 complete live days after verified deploy",
+        "day56": "second 28 complete live days"
+      },
+      "outcome_status": "not-yet-published",
+      "deployed": null
+    }
+  },
+  {
+    "id": "mindmap-2026-10-25:/checklists/move-in-move-out-checklist/",
+    "route": "/checklists/move-in-move-out-checklist/",
+    "deployment": "pending-push",
+    "outcome": "not-yet-published",
+    "growth": "reports/mindmap-pass/2026-10-25/evidence/move-in-move-out-checklist/growth.json",
+    "growthRecord": {
+      "origin_routine": "mindmap-pass",
+      "query_family": "move in checklist",
+      "hypothesis": "A customizable, printable checklist page with the full item list in HTML earns clicks on a low-KD SERP held by PDFs and local posts.",
+      "primary_metric": "incremental Google clicks (GSC)",
+      "baseline": "not-yet-published",
+      "canonical_url": "https://www.themodernwallet.com/checklists/move-in-move-out-checklist/",
+      "comparator_plan": "age-matched cohort of other 2026-10 new tool pages",
+      "change_scope": "new route",
+      "source_refresh_trigger": "change to any cited federal rule or agency guidance",
+      "windows": {
+        "day28": "first 28 complete live days after verified deploy",
+        "day56": "second 28 complete live days"
+      },
+      "outcome_status": "not-yet-published",
+      "deployed": null
+    }
+  },
+  {
+    "id": "mindmap-2026-10-25:/checklists/first-apartment-checklist/",
+    "route": "/checklists/first-apartment-checklist/",
+    "deployment": "pending-push",
+    "outcome": "not-yet-published",
+    "growth": "reports/mindmap-pass/2026-10-25/evidence/first-apartment-checklist/growth.json",
+    "growthRecord": {
+      "origin_routine": "mindmap-pass",
+      "query_family": "first apartment checklist",
+      "hypothesis": "A customizable, printable checklist page with the full item list in HTML earns clicks on a low-KD SERP held by PDFs and local posts.",
+      "primary_metric": "incremental Google clicks (GSC)",
+      "baseline": "not-yet-published",
+      "canonical_url": "https://www.themodernwallet.com/checklists/first-apartment-checklist/",
+      "comparator_plan": "age-matched cohort of other 2026-10 new tool pages",
+      "change_scope": "new route",
+      "source_refresh_trigger": "change to any cited federal rule or agency guidance",
+      "windows": {
+        "day28": "first 28 complete live days after verified deploy",
+        "day56": "second 28 complete live days"
+      },
+      "outcome_status": "not-yet-published",
+      "deployed": null
+    }
+  },
+  {
+    "id": "mindmap-2026-10-25:/checklists/",
+    "route": "/checklists/",
+    "deployment": "pending-push",
+    "outcome": "not-yet-published",
+    "growth": "reports/mindmap-pass/2026-10-25/evidence/checklists-hub/growth.json",
+    "growthRecord": {
+      "origin_routine": "mindmap-pass",
+      "query_family": "house checklist",
+      "hypothesis": "A customizable, printable checklist page with the full item list in HTML earns clicks on a low-KD SERP held by PDFs and local posts.",
+      "primary_metric": "incremental Google clicks (GSC)",
+      "baseline": "not-yet-published",
+      "canonical_url": "https://www.themodernwallet.com/checklists/",
+      "comparator_plan": "age-matched cohort of other 2026-10 new tool pages",
+      "change_scope": "new route",
+      "source_refresh_trigger": "change to any cited federal rule or agency guidance",
+      "windows": {
+        "day28": "first 28 complete live days after verified deploy",
+        "day56": "second 28 complete live days"
+      },
+      "outcome_status": "not-yet-published",
+      "deployed": null
+    }
+  },
+  {
+    "id": "mindmap-2026-10-26:/checklists/moving-checklist/",
+    "route": "/checklists/moving-checklist/",
+    "deployment": "pending-push",
+    "outcome": "not-yet-published",
+    "growth": "reports/mindmap-pass/2026-10-26-moving/evidence/moving-checklist/growth.json",
+    "growthRecord": {
+      "origin_routine": "mindmap-pass",
+      "query_family": "moving checklist",
+      "hypothesis": "A customizable, printable moving checklist with the full item list in HTML earns clicks on a SERP held by mover blogs and static PDFs.",
+      "primary_metric": "incremental Google clicks (GSC)",
+      "baseline": "not-yet-published",
+      "canonical_url": "https://www.themodernwallet.com/checklists/moving-checklist/",
+      "comparator_plan": "age-matched cohort of the 2026-10 checklist tool pages",
+      "change_scope": "new route",
+      "source_refresh_trigger": "change to any cited federal rule or agency guidance",
+      "windows": {
+        "day28": "first 28 complete live days after verified deploy",
+        "day56": "second 28 complete live days"
+      },
+      "outcome_status": "not-yet-published",
+      "deployed": null
+    }
+  },
+  {
+    "id": "mindmap-2026-10-26:/checklists/house-viewing-checklist/",
+    "route": "/checklists/house-viewing-checklist/",
+    "deployment": "pending-push",
+    "outcome": "not-yet-published",
+    "growth": "reports/mindmap-pass/2026-10-26-house-viewing/evidence/growth.json",
+    "growthRecord": {
+      "origin_routine": "mindmap-pass",
+      "query_family": "questions to ask when viewing a house",
+      "hypothesis": "A short, comparable first-visit checklist earns clicks on a low-KD, forum-heavy SERP.",
+      "primary_metric": "incremental Google clicks (GSC)",
+      "baseline": "not-yet-published",
+      "canonical_url": "https://www.themodernwallet.com/checklists/house-viewing-checklist/",
+      "comparator_plan": "age-matched 2026-10 checklist pages",
+      "windows": {
+        "day28": "first 28 complete live days after verified deploy",
+        "day56": "second 28 complete live days"
+      },
+      "outcome_status": "not-yet-published",
+      "deployed": null
+    }
+  },
+  {
+    "id": "mindmap-2026-10-28-autocomplete:/rent-vs-buy-calculator/",
+    "route": "/rent-vs-buy-calculator/",
+    "deployment": "pending-push",
+    "outcome": "not-yet-published",
+    "growth": "evidence/rent-vs-buy-calculator/growth.json",
+    "growthRecord": {
+      "originRoutine": "autocomplete-pass-auto",
+      "route": "/rent-vs-buy-calculator/",
+      "queryFamily": "rent vs buy calculator",
+      "hypothesis": "A dedicated break-even calculator answers the query better than the qualitative comparison page.",
+      "primaryMetric": "Google clicks (GSC)",
+      "baseline": "not-yet-published; age-matched comparator pages",
+      "evidenceBasis": "modeled (internal modeling) + reported Freddie Mac rate",
+      "deployed": "pending verification",
+      "outcomeStatus": "not-yet-published",
+      "reviewWindows": {
+        "day28": "first 28 complete live days",
+        "day56": "second 28 complete live days"
+      },
+      "sourceRefreshTrigger": "Freddie Mac rate change of 0.5 point or more, or a model change"
+    }
+  },
+  {
+    "id": "mindmap-2026-10-28-autocomplete:/stock-capital-gains-tax-calculator/",
+    "route": "/stock-capital-gains-tax-calculator/",
+    "deployment": "pending-push",
+    "outcome": "not-yet-published",
+    "growth": "evidence/stock-capital-gains-tax-calculator/growth.json",
+    "growthRecord": {
+      "originRoutine": "autocomplete-pass-auto",
+      "route": "/stock-capital-gains-tax-calculator/",
+      "queryFamily": "capital gains tax calculator stocks",
+      "hypothesis": "A stock-specific calculator answers the query better than the rental-property calculator and the explainer.",
+      "primaryMetric": "Google clicks (GSC)",
+      "baseline": "not-yet-published; age-matched comparator pages",
+      "evidenceBasis": "calculated (internal calculation) + reported IRS rules",
+      "deployed": "pending verification",
+      "outcomeStatus": "not-yet-published",
+      "reviewWindows": {
+        "day28": "first 28 complete live days",
+        "day56": "second 28 complete live days"
+      },
+      "sourceRefreshTrigger": "IRS inflation-adjustment release for tax year 2027"
+    }
+  },
+  {
+    "id": "mindmap-2026-10-28-competitor:/guides/average-retirement-savings-by-age/",
+    "route": "/guides/average-retirement-savings-by-age/",
+    "deployment": "live-verified",
+    "outcome": "not-yet-measured (first 28 complete live days pending; GSC baseline unavailable)",
+    "growth": "reports/mindmap-pass/2026-10-28-competitor/evidence/average-retirement-savings-by-age/growth.json",
+    "growthRecord": {
+      "originRoutine": "competitor-monitor-auto",
+      "queryFamily": "average retirement savings by age",
+      "hypothesis": "dedicated page earns clicks for the query family",
+      "primaryMetric": "Google clicks",
+      "baseline": {
+        "status": "unavailable",
+        "reason": "No verified pre-change GSC extract in the run evidence; retry historical date-filtered extraction during the existing measurement routine.",
+        "priorSpecification": "not-yet-published; age-matched comparator pages"
+      },
+      "status": "live-verified",
+      "gsc": "unavailable",
+      "path": "/guides/average-retirement-savings-by-age/",
+      "contributionId": "reports/mindmap-pass/2026-10-28-competitor/evidence/average-retirement-savings-by-age/growth.json",
+      "growthFile": "reports/mindmap-pass/2026-10-28-competitor/evidence/average-retirement-savings-by-age/growth.json",
+      "evidenceFile": "reports/mindmap-pass/2026-10-28-competitor/evidence/average-retirement-savings-by-age/evidence.json",
+      "commit": "c3025a8e8f187662e61f7c43dcb7d8f2a4a71db6",
+      "firstVerifiedLiveAt": "2026-10-28T22:12:19.285079+00:00",
+      "verifiedAt": "2026-10-28T22:12:19.285079+00:00",
+      "snapshotSha256": "6ad9c0aa608c6d9dd1df58e7b82f1544e95835f2c28eaa98fb76be68204674df",
+      "deployment": {
+        "commit": "c3025a8e8f187662e61f7c43dcb7d8f2a4a71db6",
+        "status": "live",
+        "evidenceUrl": "https://www.themodernwallet.com/guides/student-loan-deferment/",
+        "verifiedAt": "2026-10-28T22:12:33Z",
+        "note": "No host API access in this run. Evidence: pushed to main (deploy-run-to-main.sh), all routes HTTP 200 at +3 min, and rendered-audit.py compare reported the live render matches the approved render (rendered-live.json)."
+      },
+      "windows": {
+        "days1to28": {
+          "start": "2026-10-29",
+          "end": "2026-11-25"
+        },
+        "days29to56": {
+          "start": "2026-11-26",
+          "end": "2026-12-23"
+        }
+      }
+    }
+  },
+  {
+    "id": "mindmap-2026-10-28-competitor:/guides/student-loan-deferment/",
+    "route": "/guides/student-loan-deferment/",
+    "deployment": "live-verified",
+    "outcome": "not-yet-measured (first 28 complete live days pending; GSC baseline unavailable)",
+    "growth": "reports/mindmap-pass/2026-10-28-competitor/evidence/student-loan-deferment/growth.json",
+    "growthRecord": {
+      "originRoutine": "competitor-monitor-auto",
+      "queryFamily": "student loan deferment",
+      "hypothesis": "dedicated page earns clicks for the query family",
+      "primaryMetric": "Google clicks",
+      "baseline": {
+        "status": "unavailable",
+        "reason": "No verified pre-change GSC extract in the run evidence; retry historical date-filtered extraction during the existing measurement routine.",
+        "priorSpecification": "not-yet-published; age-matched comparator pages"
+      },
+      "status": "live-verified",
+      "gsc": "unavailable",
+      "path": "/guides/student-loan-deferment/",
+      "contributionId": "reports/mindmap-pass/2026-10-28-competitor/evidence/student-loan-deferment/growth.json",
+      "growthFile": "reports/mindmap-pass/2026-10-28-competitor/evidence/student-loan-deferment/growth.json",
+      "evidenceFile": "reports/mindmap-pass/2026-10-28-competitor/evidence/student-loan-deferment/evidence.json",
+      "commit": "c3025a8e8f187662e61f7c43dcb7d8f2a4a71db6",
+      "firstVerifiedLiveAt": "2026-10-28T22:12:19.285079+00:00",
+      "verifiedAt": "2026-10-28T22:12:19.285079+00:00",
+      "snapshotSha256": "6ad9c0aa608c6d9dd1df58e7b82f1544e95835f2c28eaa98fb76be68204674df",
+      "deployment": {
+        "commit": "c3025a8e8f187662e61f7c43dcb7d8f2a4a71db6",
+        "status": "live",
+        "evidenceUrl": "https://www.themodernwallet.com/guides/student-loan-deferment/",
+        "verifiedAt": "2026-10-28T22:12:33Z",
+        "note": "No host API access in this run. Evidence: pushed to main (deploy-run-to-main.sh), all routes HTTP 200 at +3 min, and rendered-audit.py compare reported the live render matches the approved render (rendered-live.json)."
+      },
+      "windows": {
+        "days1to28": {
+          "start": "2026-10-29",
+          "end": "2026-11-25"
+        },
+        "days29to56": {
+          "start": "2026-11-26",
+          "end": "2026-12-23"
+        }
+      }
+    }
+  },
+  {
+    "id": "fleet-tools-2026-10-31:modernwallet:mileage-log-checker",
+    "route": "/mileage-deduction/mileage-log-checker/",
+    "deployment": "live-verified",
+    "outcome": null,
+    "growth": "reports/tool-deployment/2026-10-31/evidence/mileage-log-checker/growth.json",
+    "growthRecord": {
+      "originRoutine": "fleet-functional-tools-2026-10-31",
+      "route": "/mileage-deduction/mileage-log-checker/",
+      "canonicalUrl": "https://www.themodernwallet.com/mileage-deduction/mileage-log-checker/",
+      "contributionId": "fleet-tools-2026-10-31:modernwallet:mileage-log-checker",
+      "status": "live-verified",
+      "basis": "calculated or modeled functional utility; software validation is not product testing",
+      "hypothesis": "A dedicated usable tool may satisfy the researched reader task and earn incremental Google clicks; publication and tool usage do not establish uplift.",
+      "primaryMetric": "Google Search Console organic clicks to exact canonical URL",
+      "supportingMetrics": [
+        "impressions",
+        "query-level position",
+        "CTR",
+        "value-free tool view/use events"
+      ],
+      "baseline": {
+        "status": "not-yet-published",
+        "reason": "New route; no invented before-period zero. No verified URL-level pre-change GSC extract is available for this new canonical URL."
+      },
+      "comparator": {
+        "method": "age-matched same-site utility cohort and query-volume/device/country matching where defensible",
+        "status": "unavailable",
+        "reason": "No qualified age-matched cohort has yet been established. Existing measurement routine must report inconclusive if adequate comparator/volume is unavailable."
+      },
+      "reviewWindows": "First28complete live days and second28complete live days, populated only after exact live verification; reporting delay and concurrent changes must be recorded.",
+      "reviewStatus": "not-yet-eligible",
+      "sourceRefreshTrigger": "Material underlying IRS/CMS/SSA/manufacturer/reference changes, input/logic changes or verified user-error findings, as relevant to this specific utility.",
+      "productionEvidence": "reports/tool-deployment/2026-10-31/publication-plan.json",
+      "noScheduleChange": true,
+      "path": "/mileage-deduction/mileage-log-checker/",
+      "growthFile": "reports/tool-deployment/2026-10-31/evidence/mileage-log-checker/growth.json",
+      "evidenceFile": "reports/tool-deployment/2026-10-31/publication-plan.json",
+      "commit": "86ad18223117f7bcfea29d82544eea7d9c3f905a",
+      "firstVerifiedLiveAt": "2026-11-01T00:56:38.829224+00:00",
+      "verifiedAt": "2026-11-01T01:55:12.484348+00:00",
+      "snapshotSha256": "0c59bae04ae967bd1e534d4566144b0f9572b1a70d454077afadcb3ac88ff6d3",
+      "deployment": {
+        "commit": "86ad18223117f7bcfea29d82544eea7d9c3f905a",
+        "status": "live",
+        "evidenceUrl": "https://dashboard.render.com/web/srv-d901evv7f7vs739n02b0/deploys/dep-dbj9l6rncjis73dcuisg",
+        "verifiedAt": "2026-11-01T01:50:56.063340+00:00",
+        "serviceId": "srv-d901evv7f7vs739n02b0",
+        "deployId": "dep-dbj9l6rncjis73dcuisg"
+      },
+      "windows": {
+        "days1to28": {
+          "start": "2026-11-02",
+          "end": "2026-11-29"
+        },
+        "days29to56": {
+          "start": "2026-11-30",
+          "end": "2026-12-27"
+        }
+      },
+      "maintenance": [
+        {
+          "routine": "tool-seo/2026-10-31",
+          "commit": "dc10bc3a7bda39a5a1f2528aae9dc3bc91a98ad9",
+          "verifiedAt": "2026-11-01T03:34:13.171911+00:00",
+          "scope": "SharingimageURL/alt/dimensions only; searchcopy/UI/math/links unchanged",
+          "evidence": "reports/tool-seo/2026-10-31/final-closure.json",
+          "status": "live-verified",
+          "outcome": "unmeasured; original28/56windows unchanged"
+        }
+      ]
+    }
+  },
+  {
+    "id": "fleet-tools-2026-10-31:modernwallet:inherited-ira-withdrawal-calculator",
+    "route": "/retirement/inherited-ira-withdrawal-calculator/",
+    "deployment": "live-verified",
+    "outcome": null,
+    "growth": "reports/tool-deployment/2026-10-31/evidence/inherited-ira-withdrawal-calculator/growth.json",
+    "growthRecord": {
+      "originRoutine": "fleet-functional-tools-2026-10-31",
+      "route": "/retirement/inherited-ira-withdrawal-calculator/",
+      "canonicalUrl": "https://www.themodernwallet.com/retirement/inherited-ira-withdrawal-calculator/",
+      "contributionId": "fleet-tools-2026-10-31:modernwallet:inherited-ira-withdrawal-calculator",
+      "status": "live-verified",
+      "basis": "calculated or modeled functional utility; software validation is not product testing",
+      "hypothesis": "A dedicated usable tool may satisfy the researched reader task and earn incremental Google clicks; publication and tool usage do not establish uplift.",
+      "primaryMetric": "Google Search Console organic clicks to exact canonical URL",
+      "supportingMetrics": [
+        "impressions",
+        "query-level position",
+        "CTR",
+        "value-free tool view/use events"
+      ],
+      "baseline": {
+        "status": "not-yet-published",
+        "reason": "New route; no invented before-period zero. No verified URL-level pre-change GSC extract is available for this new canonical URL."
+      },
+      "comparator": {
+        "method": "age-matched same-site utility cohort and query-volume/device/country matching where defensible",
+        "status": "unavailable",
+        "reason": "No qualified age-matched cohort has yet been established. Existing measurement routine must report inconclusive if adequate comparator/volume is unavailable."
+      },
+      "reviewWindows": "First28complete live days and second28complete live days, populated only after exact live verification; reporting delay and concurrent changes must be recorded.",
+      "reviewStatus": "not-yet-eligible",
+      "sourceRefreshTrigger": "Material underlying IRS/CMS/SSA/manufacturer/reference changes, input/logic changes or verified user-error findings, as relevant to this specific utility.",
+      "productionEvidence": "reports/tool-deployment/2026-10-31/publication-plan.json",
+      "noScheduleChange": true,
+      "path": "/retirement/inherited-ira-withdrawal-calculator/",
+      "growthFile": "reports/tool-deployment/2026-10-31/evidence/inherited-ira-withdrawal-calculator/growth.json",
+      "evidenceFile": "reports/tool-deployment/2026-10-31/publication-plan.json",
+      "commit": "86ad18223117f7bcfea29d82544eea7d9c3f905a",
+      "firstVerifiedLiveAt": "2026-11-01T00:56:38.829224+00:00",
+      "verifiedAt": "2026-11-01T01:55:12.484348+00:00",
+      "snapshotSha256": "0c59bae04ae967bd1e534d4566144b0f9572b1a70d454077afadcb3ac88ff6d3",
+      "deployment": {
+        "commit": "86ad18223117f7bcfea29d82544eea7d9c3f905a",
+        "status": "live",
+        "evidenceUrl": "https://dashboard.render.com/web/srv-d901evv7f7vs739n02b0/deploys/dep-dbj9l6rncjis73dcuisg",
+        "verifiedAt": "2026-11-01T01:50:56.063340+00:00",
+        "serviceId": "srv-d901evv7f7vs739n02b0",
+        "deployId": "dep-dbj9l6rncjis73dcuisg"
+      },
+      "windows": {
+        "days1to28": {
+          "start": "2026-11-02",
+          "end": "2026-11-29"
+        },
+        "days29to56": {
+          "start": "2026-11-30",
+          "end": "2026-12-27"
+        }
+      },
+      "maintenance": [
+        {
+          "routine": "tool-seo/2026-10-31",
+          "commit": "dc10bc3a7bda39a5a1f2528aae9dc3bc91a98ad9",
+          "verifiedAt": "2026-11-01T03:34:13.171911+00:00",
+          "scope": "SharingimageURL/alt/dimensions only; searchcopy/UI/math/links unchanged",
+          "evidence": "reports/tool-seo/2026-10-31/final-closure.json",
+          "status": "live-verified",
+          "outcome": "unmeasured; original28/56windows unchanged"
+        }
+      ]
+    }
+  },
+  {
+    "id": "fleet-tools-2026-10-31:modernwallet:medicare-irmaa-calculator",
+    "route": "/retirement/medicare-irmaa-calculator/",
+    "deployment": "live-verified",
+    "outcome": null,
+    "growth": "reports/tool-deployment/2026-10-31/evidence/medicare-irmaa-calculator/growth.json",
+    "growthRecord": {
+      "originRoutine": "fleet-functional-tools-2026-10-31",
+      "route": "/retirement/medicare-irmaa-calculator/",
+      "canonicalUrl": "https://www.themodernwallet.com/retirement/medicare-irmaa-calculator/",
+      "contributionId": "fleet-tools-2026-10-31:modernwallet:medicare-irmaa-calculator",
+      "status": "live-verified",
+      "basis": "calculated or modeled functional utility; software validation is not product testing",
+      "hypothesis": "A dedicated usable tool may satisfy the researched reader task and earn incremental Google clicks; publication and tool usage do not establish uplift.",
+      "primaryMetric": "Google Search Console organic clicks to exact canonical URL",
+      "supportingMetrics": [
+        "impressions",
+        "query-level position",
+        "CTR",
+        "value-free tool view/use events"
+      ],
+      "baseline": {
+        "status": "not-yet-published",
+        "reason": "New route; no invented before-period zero. No verified URL-level pre-change GSC extract is available for this new canonical URL."
+      },
+      "comparator": {
+        "method": "age-matched same-site utility cohort and query-volume/device/country matching where defensible",
+        "status": "unavailable",
+        "reason": "No qualified age-matched cohort has yet been established. Existing measurement routine must report inconclusive if adequate comparator/volume is unavailable."
+      },
+      "reviewWindows": "First28complete live days and second28complete live days, populated only after exact live verification; reporting delay and concurrent changes must be recorded.",
+      "reviewStatus": "not-yet-eligible",
+      "sourceRefreshTrigger": "Material underlying IRS/CMS/SSA/manufacturer/reference changes, input/logic changes or verified user-error findings, as relevant to this specific utility.",
+      "productionEvidence": "reports/tool-deployment/2026-10-31/publication-plan.json",
+      "noScheduleChange": true,
+      "path": "/retirement/medicare-irmaa-calculator/",
+      "growthFile": "reports/tool-deployment/2026-10-31/evidence/medicare-irmaa-calculator/growth.json",
+      "evidenceFile": "reports/tool-deployment/2026-10-31/publication-plan.json",
+      "commit": "86ad18223117f7bcfea29d82544eea7d9c3f905a",
+      "firstVerifiedLiveAt": "2026-11-01T00:56:38.829224+00:00",
+      "verifiedAt": "2026-11-01T01:55:12.484348+00:00",
+      "snapshotSha256": "0c59bae04ae967bd1e534d4566144b0f9572b1a70d454077afadcb3ac88ff6d3",
+      "deployment": {
+        "commit": "86ad18223117f7bcfea29d82544eea7d9c3f905a",
+        "status": "live",
+        "evidenceUrl": "https://dashboard.render.com/web/srv-d901evv7f7vs739n02b0/deploys/dep-dbj9l6rncjis73dcuisg",
+        "verifiedAt": "2026-11-01T01:50:56.063340+00:00",
+        "serviceId": "srv-d901evv7f7vs739n02b0",
+        "deployId": "dep-dbj9l6rncjis73dcuisg"
+      },
+      "windows": {
+        "days1to28": {
+          "start": "2026-11-02",
+          "end": "2026-11-29"
+        },
+        "days29to56": {
+          "start": "2026-11-30",
+          "end": "2026-12-27"
+        }
+      },
+      "maintenance": [
+        {
+          "routine": "tool-seo/2026-10-31",
+          "commit": "dc10bc3a7bda39a5a1f2528aae9dc3bc91a98ad9",
+          "verifiedAt": "2026-11-01T03:34:13.171911+00:00",
+          "scope": "SharingimageURL/alt/dimensions only; searchcopy/UI/math/links unchanged",
+          "evidence": "reports/tool-seo/2026-10-31/final-closure.json",
+          "status": "live-verified",
+          "outcome": "unmeasured; original28/56windows unchanged"
+        }
+      ]
+    }
+  },
+  {
+    "id": "fleet-tools-2026-10-31:modernwallet:mileage-log-checker",
+    "route": "/mileage-deduction/mileage-log-checker/",
+    "deployment": "live-verified",
+    "outcome": null,
+    "growth": "reports/tool-deployment/2026-10-31/evidence/mileage-log-checker/growth.json",
+    "growthRecord": {
+      "originRoutine": "fleet-functional-tools-2026-10-31",
+      "route": "/mileage-deduction/mileage-log-checker/",
+      "canonicalUrl": "https://www.themodernwallet.com/mileage-deduction/mileage-log-checker/",
+      "contributionId": "fleet-tools-2026-10-31:modernwallet:mileage-log-checker",
+      "status": "live-verified",
+      "basis": "calculated or modeled functional utility; software validation is not product testing",
+      "hypothesis": "A dedicated usable tool may satisfy the researched reader task and earn incremental Google clicks; publication and tool usage do not establish uplift.",
+      "primaryMetric": "Google Search Console organic clicks to exact canonical URL",
+      "supportingMetrics": [
+        "impressions",
+        "query-level position",
+        "CTR",
+        "value-free tool view/use events"
+      ],
+      "baseline": {
+        "status": "not-yet-published",
+        "reason": "New route; no invented before-period zero. No verified URL-level pre-change GSC extract is available for this new canonical URL."
+      },
+      "comparator": {
+        "method": "age-matched same-site utility cohort and query-volume/device/country matching where defensible",
+        "status": "unavailable",
+        "reason": "No qualified age-matched cohort has yet been established. Existing measurement routine must report inconclusive if adequate comparator/volume is unavailable."
+      },
+      "reviewWindows": "First28complete live days and second28complete live days, populated only after exact live verification; reporting delay and concurrent changes must be recorded.",
+      "reviewStatus": "not-yet-eligible",
+      "sourceRefreshTrigger": "Material underlying IRS/CMS/SSA/manufacturer/reference changes, input/logic changes or verified user-error findings, as relevant to this specific utility.",
+      "productionEvidence": "reports/tool-deployment/2026-10-31/publication-plan.json",
+      "noScheduleChange": true,
+      "path": "/mileage-deduction/mileage-log-checker/",
+      "growthFile": "reports/tool-deployment/2026-10-31/evidence/mileage-log-checker/growth.json",
+      "evidenceFile": "reports/tool-deployment/2026-10-31/publication-plan.json",
+      "commit": "86ad18223117f7bcfea29d82544eea7d9c3f905a",
+      "firstVerifiedLiveAt": "2026-11-01T00:56:38.829224+00:00",
+      "verifiedAt": "2026-11-01T01:55:12.484348+00:00",
+      "snapshotSha256": "0c59bae04ae967bd1e534d4566144b0f9572b1a70d454077afadcb3ac88ff6d3",
+      "deployment": {
+        "commit": "86ad18223117f7bcfea29d82544eea7d9c3f905a",
+        "status": "live",
+        "evidenceUrl": "https://dashboard.render.com/web/srv-d901evv7f7vs739n02b0/deploys/dep-dbj9l6rncjis73dcuisg",
+        "verifiedAt": "2026-11-01T01:50:56.063340+00:00",
+        "serviceId": "srv-d901evv7f7vs739n02b0",
+        "deployId": "dep-dbj9l6rncjis73dcuisg"
+      },
+      "windows": {
+        "days1to28": {
+          "start": "2026-11-02",
+          "end": "2026-11-29"
+        },
+        "days29to56": {
+          "start": "2026-11-30",
+          "end": "2026-12-27"
+        }
+      },
+      "maintenance": [
+        {
+          "routine": "tool-seo/2026-10-31",
+          "commit": "dc10bc3a7bda39a5a1f2528aae9dc3bc91a98ad9",
+          "verifiedAt": "2026-11-01T03:34:13.171911+00:00",
+          "scope": "SharingimageURL/alt/dimensions only; searchcopy/UI/math/links unchanged",
+          "evidence": "reports/tool-seo/2026-10-31/final-closure.json",
+          "status": "live-verified",
+          "outcome": "unmeasured; original28/56windows unchanged"
+        }
+      ]
+    }
+  },
+  {
+    "id": "fleet-tools-2026-10-31:modernwallet:inherited-ira-withdrawal-calculator",
+    "route": "/retirement/inherited-ira-withdrawal-calculator/",
+    "deployment": "live-verified",
+    "outcome": null,
+    "growth": "reports/tool-deployment/2026-10-31/evidence/inherited-ira-withdrawal-calculator/growth.json",
+    "growthRecord": {
+      "originRoutine": "fleet-functional-tools-2026-10-31",
+      "route": "/retirement/inherited-ira-withdrawal-calculator/",
+      "canonicalUrl": "https://www.themodernwallet.com/retirement/inherited-ira-withdrawal-calculator/",
+      "contributionId": "fleet-tools-2026-10-31:modernwallet:inherited-ira-withdrawal-calculator",
+      "status": "live-verified",
+      "basis": "calculated or modeled functional utility; software validation is not product testing",
+      "hypothesis": "A dedicated usable tool may satisfy the researched reader task and earn incremental Google clicks; publication and tool usage do not establish uplift.",
+      "primaryMetric": "Google Search Console organic clicks to exact canonical URL",
+      "supportingMetrics": [
+        "impressions",
+        "query-level position",
+        "CTR",
+        "value-free tool view/use events"
+      ],
+      "baseline": {
+        "status": "not-yet-published",
+        "reason": "New route; no invented before-period zero. No verified URL-level pre-change GSC extract is available for this new canonical URL."
+      },
+      "comparator": {
+        "method": "age-matched same-site utility cohort and query-volume/device/country matching where defensible",
+        "status": "unavailable",
+        "reason": "No qualified age-matched cohort has yet been established. Existing measurement routine must report inconclusive if adequate comparator/volume is unavailable."
+      },
+      "reviewWindows": "First28complete live days and second28complete live days, populated only after exact live verification; reporting delay and concurrent changes must be recorded.",
+      "reviewStatus": "not-yet-eligible",
+      "sourceRefreshTrigger": "Material underlying IRS/CMS/SSA/manufacturer/reference changes, input/logic changes or verified user-error findings, as relevant to this specific utility.",
+      "productionEvidence": "reports/tool-deployment/2026-10-31/publication-plan.json",
+      "noScheduleChange": true,
+      "path": "/retirement/inherited-ira-withdrawal-calculator/",
+      "growthFile": "reports/tool-deployment/2026-10-31/evidence/inherited-ira-withdrawal-calculator/growth.json",
+      "evidenceFile": "reports/tool-deployment/2026-10-31/publication-plan.json",
+      "commit": "86ad18223117f7bcfea29d82544eea7d9c3f905a",
+      "firstVerifiedLiveAt": "2026-11-01T00:56:38.829224+00:00",
+      "verifiedAt": "2026-11-01T01:55:12.484348+00:00",
+      "snapshotSha256": "0c59bae04ae967bd1e534d4566144b0f9572b1a70d454077afadcb3ac88ff6d3",
+      "deployment": {
+        "commit": "86ad18223117f7bcfea29d82544eea7d9c3f905a",
+        "status": "live",
+        "evidenceUrl": "https://dashboard.render.com/web/srv-d901evv7f7vs739n02b0/deploys/dep-dbj9l6rncjis73dcuisg",
+        "verifiedAt": "2026-11-01T01:50:56.063340+00:00",
+        "serviceId": "srv-d901evv7f7vs739n02b0",
+        "deployId": "dep-dbj9l6rncjis73dcuisg"
+      },
+      "windows": {
+        "days1to28": {
+          "start": "2026-11-02",
+          "end": "2026-11-29"
+        },
+        "days29to56": {
+          "start": "2026-11-30",
+          "end": "2026-12-27"
+        }
+      },
+      "maintenance": [
+        {
+          "routine": "tool-seo/2026-10-31",
+          "commit": "dc10bc3a7bda39a5a1f2528aae9dc3bc91a98ad9",
+          "verifiedAt": "2026-11-01T03:34:13.171911+00:00",
+          "scope": "SharingimageURL/alt/dimensions only; searchcopy/UI/math/links unchanged",
+          "evidence": "reports/tool-seo/2026-10-31/final-closure.json",
+          "status": "live-verified",
+          "outcome": "unmeasured; original28/56windows unchanged"
+        }
+      ]
+    }
+  },
+  {
+    "id": "fleet-tools-2026-10-31:modernwallet:medicare-irmaa-calculator",
+    "route": "/retirement/medicare-irmaa-calculator/",
+    "deployment": "live-verified",
+    "outcome": null,
+    "growth": "reports/tool-deployment/2026-10-31/evidence/medicare-irmaa-calculator/growth.json",
+    "growthRecord": {
+      "originRoutine": "fleet-functional-tools-2026-10-31",
+      "route": "/retirement/medicare-irmaa-calculator/",
+      "canonicalUrl": "https://www.themodernwallet.com/retirement/medicare-irmaa-calculator/",
+      "contributionId": "fleet-tools-2026-10-31:modernwallet:medicare-irmaa-calculator",
+      "status": "live-verified",
+      "basis": "calculated or modeled functional utility; software validation is not product testing",
+      "hypothesis": "A dedicated usable tool may satisfy the researched reader task and earn incremental Google clicks; publication and tool usage do not establish uplift.",
+      "primaryMetric": "Google Search Console organic clicks to exact canonical URL",
+      "supportingMetrics": [
+        "impressions",
+        "query-level position",
+        "CTR",
+        "value-free tool view/use events"
+      ],
+      "baseline": {
+        "status": "not-yet-published",
+        "reason": "New route; no invented before-period zero. No verified URL-level pre-change GSC extract is available for this new canonical URL."
+      },
+      "comparator": {
+        "method": "age-matched same-site utility cohort and query-volume/device/country matching where defensible",
+        "status": "unavailable",
+        "reason": "No qualified age-matched cohort has yet been established. Existing measurement routine must report inconclusive if adequate comparator/volume is unavailable."
+      },
+      "reviewWindows": "First28complete live days and second28complete live days, populated only after exact live verification; reporting delay and concurrent changes must be recorded.",
+      "reviewStatus": "not-yet-eligible",
+      "sourceRefreshTrigger": "Material underlying IRS/CMS/SSA/manufacturer/reference changes, input/logic changes or verified user-error findings, as relevant to this specific utility.",
+      "productionEvidence": "reports/tool-deployment/2026-10-31/publication-plan.json",
+      "noScheduleChange": true,
+      "path": "/retirement/medicare-irmaa-calculator/",
+      "growthFile": "reports/tool-deployment/2026-10-31/evidence/medicare-irmaa-calculator/growth.json",
+      "evidenceFile": "reports/tool-deployment/2026-10-31/publication-plan.json",
+      "commit": "86ad18223117f7bcfea29d82544eea7d9c3f905a",
+      "firstVerifiedLiveAt": "2026-11-01T00:56:38.829224+00:00",
+      "verifiedAt": "2026-11-01T01:55:12.484348+00:00",
+      "snapshotSha256": "0c59bae04ae967bd1e534d4566144b0f9572b1a70d454077afadcb3ac88ff6d3",
+      "deployment": {
+        "commit": "86ad18223117f7bcfea29d82544eea7d9c3f905a",
+        "status": "live",
+        "evidenceUrl": "https://dashboard.render.com/web/srv-d901evv7f7vs739n02b0/deploys/dep-dbj9l6rncjis73dcuisg",
+        "verifiedAt": "2026-11-01T01:50:56.063340+00:00",
+        "serviceId": "srv-d901evv7f7vs739n02b0",
+        "deployId": "dep-dbj9l6rncjis73dcuisg"
+      },
+      "windows": {
+        "days1to28": {
+          "start": "2026-11-02",
+          "end": "2026-11-29"
+        },
+        "days29to56": {
+          "start": "2026-11-30",
+          "end": "2026-12-27"
+        }
+      },
+      "maintenance": [
+        {
+          "routine": "tool-seo/2026-10-31",
+          "commit": "dc10bc3a7bda39a5a1f2528aae9dc3bc91a98ad9",
+          "verifiedAt": "2026-11-01T03:34:13.171911+00:00",
+          "scope": "SharingimageURL/alt/dimensions only; searchcopy/UI/math/links unchanged",
+          "evidence": "reports/tool-seo/2026-10-31/final-closure.json",
+          "status": "live-verified",
+          "outcome": "unmeasured; original28/56windows unchanged"
+        }
+      ]
+    }
+  }
+]

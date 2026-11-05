@@ -1,0 +1,78 @@
+{
+  "calculator": "budget",
+  "slug": "household-budget-calculator",
+  "title": "Household Budget Calculator: Plan Family Spending",
+  "metaDescription": "Free household budget calculator. Combine your family's income and expenses to see needs, wants, and savings targets using the 50/30/20 rule.",
+  "targetKeyword": "household budget calculator",
+  "estimatedVolume": 1900,
+  "estimatedKD": 34,
+  "h1": "Household Budget Calculator",
+  "introText": "A household budget calculator adds up your family's total take-home income and expenses, showing where your money goes and how much you can save. Enter your household's monthly net pay and shared costs into the calculator above to see targets for needs, wants, and savings based on the 50/30/20 rule. With a combined take-home income of $7,500, that means $3,750 for needs, $2,250 for wants, and $1,500 for savings.",
+  "howItWorks": "A household budget works like an individual one, scaled to everyone under the roof. Add up all reliable take-home income \u2014 both partners' paychecks plus any steady side income \u2014 then list shared and personal expenses across needs, wants, and savings.\n\nThe calculator applies the 50/30/20 rule to your combined income: 50% for needs like housing, utilities, groceries, transportation, insurance, and minimum debt payments; 30% for wants; and 20% for savings and debt payoff. For families, the savings bucket often carries extra weight \u2014 an emergency fund sized to household expenses, retirement for two, and goals like a 529 college account. Because households have more moving parts, the most useful habit is a monthly review where both partners see the same numbers, comparing each bucket's actual spending against its target the same way our [budget variance guide](/guides/budget-variance-calculation-explained/) explains for a business budget. Once you know your savings target, plan the bigger picture: [check your net worth](/net-worth/) and [stay on track for retirement](/retirement/).",
+  "commonMistakes": [
+    "Counting income you don't reliably receive. Budget steady take-home pay; treat bonuses and variable side income as extra.",
+    "Tracking only one partner's spending. A household budget needs every account and card in the picture.",
+    "Underbudgeting kid-related costs \u2014 childcare, activities, and growing grocery bills add up fast.",
+    "Skipping a shared emergency fund. Size it to household monthly expenses, not a single income.",
+    "Not giving each partner a personal-spending line. A little autonomy makes the shared budget easier to keep."
+  ],
+  "workedExample": "Consider a two-income household bringing home $7,500 a month. The 50/30/20 rule sets targets of $3,750 for needs, $2,250 for wants, and $1,500 for savings. This family's actual needs \u2014 mortgage, utilities, groceries, two commutes, insurance, and minimum debts \u2014 come to $4,350, about $600 over the needs target and 58% of income. Their wants run light at $1,300, and they put $1,800 toward savings, a 24% savings rate. Because the wants bucket has room, the household still saves above 20% and ends the month with $50 left to assign \u2014 a healthy plan even though needs run high, which is typical for families in higher-cost areas.",
+  "faqs": [
+    {
+      "question": "What is a household budget calculator?",
+      "answer": "A household budget calculator combines all of a family's take-home income and expenses to show needs, wants, and savings targets. The calculator above applies the 50/30/20 rule to your combined income and flags any category running over its target."
+    },
+    {
+      "question": "How do you budget for a household with two incomes?",
+      "answer": "Add both partners' reliable take-home pay into one total, list all shared and personal expenses, and apply the same needs/wants/savings split. Treating income as one pool \u2014 while keeping a personal-spending line for each partner \u2014 keeps the plan fair and easy to follow."
+    },
+    {
+      "question": "What percentage of household income should go to housing?",
+      "answer": "Housing is the largest need for most families. A common guideline keeps total housing costs at or below about 28% of income, and within the 50/30/20 rule it should fit inside the 50% needs bucket alongside utilities, food, transportation, and insurance."
+    },
+    {
+      "question": "How much should a family save each month?",
+      "answer": "Target at least 20% of combined take-home pay across your emergency fund, retirement, and other goals \u2014 the savings share of the 50/30/20 rule. Families with childcare or high housing costs may start lower and raise the rate as those costs ease."
+    },
+    {
+      "question": "How do we stick to a household budget?",
+      "answer": "Hold a short monthly money meeting where both partners review the same numbers, give each person a personal-spending allowance, and automate savings transfers so the 20% leaves before it can be spent. Shared visibility is what makes a household budget last."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Consumer Financial Protection Bureau \u2014 Making a budget",
+      "url": "https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/teach/activities/creating-budget/"
+    },
+    {
+      "label": "U.S. Bureau of Labor Statistics \u2014 Consumer Expenditure Surveys",
+      "url": "https://www.bls.gov/cex/"
+    }
+  ],
+  "toolHeading": "Build your household budget",
+  "toolSubheading": "Combine your family's income and expenses to see your targets.",
+  "preset": {
+    "monthlyIncome": 7500,
+    "mode": "50-30-20",
+    "amounts": {
+      "housing": 2200,
+      "utilities": 320,
+      "groceries": 850,
+      "transportation": 450,
+      "insurance": 280,
+      "minimumDebt": 250,
+      "dining": 450,
+      "entertainment": 200,
+      "shopping": 350,
+      "funMisc": 300,
+      "emergencyFund": 400,
+      "retirement": 1000,
+      "extraDebt": 400
+    }
+  },
+  "relatedSlugs": [
+    "monthly-budget-calculator",
+    "50-30-20-budget-calculator",
+    "zero-based-budget-calculator"
+  ]
+}

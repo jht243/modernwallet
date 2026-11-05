@@ -1,0 +1,27 @@
+.claude/commands/mindmap-pass/phase-0-discover.md — characters 18000 onward
+
+row tagged `[verb-only — no PAA, no completions]` (the question is a guess, not a measurement) and every row tagged with half or more off-topic PAA (`[PAA 3/6 off-topic: lawyer salary]` — Google is not confident the phrase means what we think). Zero flags → print `Question evidence: every content row's question is PAA- or completion-backed.`
+- **Plan column**: must list the **actual targets and actions per row** — never just row numbers. Sourced from each chart row's `solution` / `target` columns, restated in one short clause per row, joined with semicolons. If a phase has zero rows, write `skipped — no rows` instead of leaving the cell blank.
+- **Omit rows whose count is 0** unless it's one of the always-present phases (4, 7, 8, 9). For 0-row buckets, write `skipped — no rows` in the Plan column instead of dropping the row.
+- **Ambiguous / skipped rows**: if any chart rows could not be classified, append a final row to the table:
+
+  | — | Ambiguous / skipped | {N} | "**HARD STOP** — list each ambiguous row + why it could not be classified. User must reclassify or remove before approving." |
+
+  If `N > 0` here, the gate cannot be approved until the user resolves them.
+
+### After printing the table
+
+Prompt the user with **exactly this question** (or its functional equivalent):
+> "Manifest above ({N} actionable rows across {M} phases, including {C} emerging search-pattern clusters). Approve to start Phase 1, or pause to revise the chart?"
+
+Acceptable approvals: "approve", "go", "start", "yes", or any clear affirmative.
+
+If the user declines or wants to revise: STOP cleanly. Do not start Phase 1. Wait for them to either edit the chart and re-run, or give new direction.
+
+Only after explicit approval, begin Phase 1.
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+<!-- mindmap-execution-v1 -->
+Load `_mindmap-execution.md` and validate/render this exact chart from its independently reviewed manifest before presenting it. Preserve every full brief and the single evidenced preparation row; revalidate imported charts rather than accepting missing detail. The existing Phase 0 approval remains the sole human gate.
+<!-- /mindmap-execution-v1 -->

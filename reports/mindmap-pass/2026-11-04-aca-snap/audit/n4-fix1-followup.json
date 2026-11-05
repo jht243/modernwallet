@@ -1,0 +1,57 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "route": "/compare/aca-vs-medicaid/",
+  "snapshotSha256": "ffe86aa4e9fbfb0429340e90819c1ad73183e45c728822a6d71373f9e00ed7bc",
+  "fingerprint": "1bb6f6697e4da0363a2e9cc312b7c4d8cb29f551731c59e61801a0005e1ff983",
+  "verdict": "FIX-IN-PLACE",
+  "reworkAttempts": 0,
+  "findings": [
+    {
+      "field": "introText",
+      "quote": "Medicaid and the ACA are not the same thing. The Affordable Care Act (ACA) is a law, and [Medicaid](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/) is a joint federal and state public coverage program. Marketplace plans are private health insurance. In an ACA vs Medicaid comparison, Marketplace plans are bought through the [Health Insurance Marketplace](https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/). States run Medicaid within federal guidelines. [HealthCare.gov](https://www.healthcare.gov/medicaid-limited-benefits/) states that a person in a Medicaid program that counts as minimum essential coverage is not eligible for a premium tax credit or other savings on a Marketplace plan.\n\nLimited-benefit Medicaid that does not count as minimum essential coverage may still allow those savings. A 2027 Medicaid work-requirement denial can also leave some adults with Marketplace access but no savings. The Marketplace or the state Medicaid agency makes the eligibility decision for each person in a household.",
+      "replacement": "The [Affordable Care Act (ACA)](https://www.nyc.gov/site/ochia/your-rights/affordable-care-act.page) is a law, while [Medicaid](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/) is a public coverage program. ACA vs Medicaid compares private [Marketplace plans](https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/) with joint federal-state Medicaid coverage.\n\nStates run Medicaid within federal guidelines. [HealthCare.gov](https://www.healthcare.gov/medicaid-limited-benefits/) says full-benefit Medicaid generally prevents Marketplace premium savings. Limited-benefit Medicaid that does not count as minimum essential coverage may still allow those savings.\n\nA 2027 Medicaid work-requirement denial can also leave some adults with Marketplace access but no savings. The Marketplace or state Medicaid agency makes the eligibility decision for each person in a household.",
+      "defect": "Three actual v2 survivors: first ACA law mention is unlinked; paragraph grouping places the primary phrase after the first rendered paragraph; the absolute savings statement contradicts the IRS initial-assessment exception. This intro-only correction preserves facts and has the keyword in sentence2."
+    },
+    {
+      "field": "ACA vs Medicaid Eligibility and Savings",
+      "quote": "A person eligible for full Medicaid or CHIP who keeps a Marketplace plan pays full price for the premium and for covered services.",
+      "replacement": "A person eligible for full Medicaid or CHIP who keeps a Marketplace plan generally pays full price for the premium and for covered services.",
+      "defect": "Qualify the general rule to agree with the explicitly explained IRS initial-assessment timing exception."
+    },
+    {
+      "field": "Is ACA or Medicaid better?",
+      "quote": "A person eligible for full-benefit Medicaid gets free or low-cost coverage there, and would pay full price for a Marketplace plan.",
+      "replacement": "A person eligible for full-benefit Medicaid gets free or low-cost coverage there, and would generally pay full price for a Marketplace plan.",
+      "defect": "Same general-rule qualification; do not imply the detailed IRS timing exception is impossible."
+    },
+    {
+      "field": "Can you have Medicaid and Marketplace insurance at the same time?",
+      "quote": "Yes, a person can keep both, but full-benefit Medicaid means paying full price for the Marketplace plan premium and covered services.",
+      "replacement": "Yes, a person can keep both, but full-benefit Medicaid generally means paying full price for the Marketplace plan premium and covered services.",
+      "defect": "Same general-rule qualification in the FAQ; limited-benefit and timing explanations remain intact."
+    },
+    {
+      "field": "verdict",
+      "quote": "If income changes month to month, [budget insurance with irregular income](/guides/how-to-budget-with-irregular-income/) before you update the Marketplace income estimate.",
+      "replacement": "If income changes month to month, [budget insurance with irregular income](/guides/how-to-budget-with-irregular-income/). [Update your Marketplace income estimate](https://www.healthcare.gov/income-and-household-information/income/) whenever expected income changes, then check how that affects your ACA vs Medicaid coverage.",
+      "defect": "Closing still lacks the exact primary phrase. Preserve the internal link, give a direct official update link and retain prompt income reporting without requiring a coverage result before updating."
+    }
+  ],
+  "mechanical": [
+    {
+      "field": "sources supplemental NYC label",
+      "quote": "NYC Office of Citywide Health Insurance Access: Affordable Care Act",
+      "replacement": "New York City Office of Citywide Health Insurance Access: Affordable Care Act",
+      "defect": "Expand the first NYC acronym occurrence."
+    }
+  ],
+  "confirmedFixed": [
+    "MAGI is correctly limited to Marketplace savings and Medicaid categories vary.",
+    "Full-benefit qualification now present in the main comprehensiveness statement, qualifying-coverage statement, table and verdict.",
+    "Noncitizen scope added to both immigration discussions; state pregnant/child exception preserved.",
+    "New direct Obamacare and non-expansion gap definitions match the two captured supplemental sources.",
+    "Original nested clauses, raw bold markers, H1 and later two keyword headings are corrected.",
+    "Generic disclosure, original source date policy and financial-information footer remain intact."
+  ],
+  "scope": "Actual surviving v2 targets only; not a full final rendered PASS."
+}

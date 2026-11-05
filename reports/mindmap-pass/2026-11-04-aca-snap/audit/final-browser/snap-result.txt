@@ -1,0 +1,33 @@
+Supplemental Nutrition Assistance Program (SNAP): Fiscal Year 2027 Full-Month Federal Calculation
+Scope: 1 to 8 members in the 48 contiguous states and District of Columbia, October 1 2026 to September 30 2027.
+Amounts are monthly US dollars.
+SNAP household members: 4
+Monthly earned income before taxes ($): 2000
+Monthly unearned income ($): 0
+Allowed monthly dependent care ($): 0
+State-allowed monthly child support deduction ($): 0
+Allowed monthly unreimbursed medical expenses ($): 0
+Monthly allowed rent, mortgage and other shelter costs ($): 1200
+State-approved monthly utility allowance ($): 0
+Elderly/disabled household member: No
+Eligibility selection: unknown
+Location: contiguous
+Gross monthly income: $2,000.00
+Earned-income deduction (20%): $400.00
+Standard deduction: $229.00
+Allowed dependent care: $0.00
+State-allowed child support deduction: $0.00
+Medical deduction above $35: $0.00
+Income before shelter deduction: $1,371.00
+Allowed shelter including utility allowance: $1,200.00
+Excess shelter deduction: $514.50
+Calculated net monthly income: $856.50
+30% of net, rounded up: $257.00
+Household maximum: $1,023.00
+Maximum minus contribution (before minimum): $766.00
+Federal gross-income reference: $3,575.00
+Federal net-income reference: $2,750.00
+Conditional full-month amount: $766.00
+Full-month federal estimate only if the household meets all state eligibility rules. This is not an eligibility decision or a benefit award.
+The $25 minimum applies only to otherwise eligible one- or two-member households. Not first-month proration, state supplements or an eligibility determination.
+Sources: https://fns-prod.azureedge.us/snap/allotment/cola and https://fns-prod.azureedge.us/snap/recipient/eligibility

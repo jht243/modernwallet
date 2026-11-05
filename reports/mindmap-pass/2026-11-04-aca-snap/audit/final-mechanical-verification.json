@@ -1,0 +1,28 @@
+{
+  "snapshotSha256": "b99d037d8b8116168a6c6e4b0d5e660cea5077f77a958320da0fbc55a688d894",
+  "independentSnapshotSha256": "b57f3efd49fcbde641aefa91e34a91835dd1266095ee0e9d5530de2d31ee37e6",
+  "matchingRoutes": [
+    "/",
+    "/budget/",
+    "/budget/aca-subsidy-calculator/",
+    "/budget/household-budget-calculator/",
+    "/budget/snap-benefits-calculator/",
+    "/calculators/",
+    "/compare/",
+    "/compare/aca-vs-medicaid/",
+    "/compare/snap-vs-wic/",
+    "/guides/",
+    "/guides/how-to-apply-for-food-stamps/",
+    "/guides/how-to-budget-with-irregular-income/",
+    "/guides/how-to-make-a-budget/"
+  ],
+  "missingInternalDestinations": [],
+  "selectedSource": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/internal/selected-source.json",
+    "sha256": "2a555d27917eeb02dc5512f8946e8546101011131e965847f5dec862f194aeeb"
+  },
+  "actualExportsChecked": [
+    "snap-result.txt",
+    "aca-result.txt"
+  ]
+}

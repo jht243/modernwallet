@@ -1,0 +1,626 @@
+{
+ "slug": "aca-vs-medicaid",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 2654,
+ "floor": 1500,
+ "input_tokens": 66180,
+ "output_tokens": 23439,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.7335,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Neither option is the better choice for every household, because eligibility rul'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2685,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    6,
+    16
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "Medicaid and the ACA are not the same thing: the Affordable Care Act (ACA) is a federal law, Marketplace plans are private health insurance, and [Medicaid](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/) is a joint federal and state public coverage program.",
+     "replacement": "Medicaid and the ACA are not the same thing: the Affordable Care Act (ACA) is a law, Marketplace plans are private health insurance, and [Medicaid](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/) is a joint federal and state public coverage program.",
+     "type": "unsupported",
+     "why": "SOURCE says the ACA is a law; 'federal' is not stated."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Two federal rule changes shape 2027 coverage decisions: a Medicaid work requirement in some states and narrower immigration-status rules for full Medicaid and Marketplace savings.",
+     "replacement": "Two rule changes shape 2027 coverage decisions: a Medicaid work requirement in some states and immigration-status rules for full Medicaid and Marketplace savings.",
+     "type": "unsupported",
+     "why": "SOURCE cites a 'law change' and state work requirement; 'federal' not stated."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Medicaid applications remain open year-round under both rule changes.",
+     "replacement": "Medicaid applications remain open year-round.",
+     "type": "inference",
+     "why": "SOURCE says apply any time of year; not tied to rule changes."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "\"Obamacare\" is an informal name for the Affordable Care Act, and \"Obamacare insurance\" refers to a private plan bought through the Health Insurance Marketplace.",
+     "replacement": "The Affordable Care Act is a law, and Marketplace plans are private health insurance bought through the Health Insurance Marketplace.",
+     "type": "unsupported",
+     "why": "SOURCE never mentions 'Obamacare' or defines the term."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "A coverage gap describes adults who cannot get Medicaid and also cannot get Marketplace savings.",
+     "replacement": "The cited HealthCare.gov pages do not define a coverage gap, but they describe situations where a person may get neither Medicaid nor Marketplace savings.",
+     "type": "unsupported",
+     "why": "SOURCE gives no definition of 'coverage gap'."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Income above the state's level for a person's category, an immigration status outside the eligible list, and living in a state that has not expanded Medicaid for adults can each block full coverage.",
+     "replacement": "Income too high for Medicaid or an immigration status outside the eligible list can block full coverage, and living in a state that has not expanded Medicaid can mean fewer coverage options.",
+     "type": "inference",
+     "why": "SOURCE says non-expansion states may mean fewer options, not blocked coverage."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [
+    {
+     "id": "introText",
+     "quote": "In an ACA vs Medicaid comparison, Marketplace plans are bought through the [Health Insurance Marketplace](https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/), while each state runs Medicaid within federal guidelines.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "comparisonTable.rows[0].b",
+     "quote": "Public coverage run jointly by the federal government and each state, with state-set income levels, coverage and costs inside federal guidelines",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "comparisonTable.rows[2].b",
+     "quote": "Free or low-cost coverage; full-benefit Medicaid eligibility rules out Marketplace premium savings",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "verdict",
+     "quote": "Neither option is the better choice for every household, because eligibility rules decide which coverage comes with financial help.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Declining Medicaid does not restore the savings.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "A child may also lose CHIP eligibility if the family keeps the Marketplace plan.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Household income alone does not decide whether a person gets Medicaid or Marketplace savings, because state rules and personal categories change the result.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "A wrong estimate carries a tax cost: for tax years after 2025, the IRS applies no repayment cap, so the full amount of advance credit payments above the allowed credit is added to the tax bill.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "HealthCare.gov's [Medicaid and CHIP coverage page](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/) lists contact information for each state's Medicaid agency.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "The reason for a Medicaid denial therefore matters for the Marketplace budget.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "A household comparing plans after a work-requirement denial should expect full-price premiums when estimating monthly costs.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "HealthCare.gov still advises applying for Medicaid in non-expansion states, because each state considers factors beyond income.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "No single factor disqualifies everyone, because each state sets its own Medicaid income levels and categories within federal guidelines.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Neither is better for every household, because eligibility rules decide which option comes with financial help.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Medicaid benefits differ by state but are comprehensive in all states, and every Marketplace plan covers the same 10 benefit categories.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "HealthCare.gov says to tell the state agency if you want to keep both, and notes that a child may no longer qualify for CHIP if the family keeps the Marketplace plan.",
+     "type": "inference",
+     "reason": "final pass over-flagged; not applied"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2688
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-04T22:17:35-0500",
+    "findings_file": "reports/mindmap-pass/2026-11-04-aca-snap/audit/n4-findings.json",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "Medicaid and the ACA are not the same thing: the Affordable Care Act (ACA) is a law, Marketplace plans are private health insurance, and [Medicaid](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/) is a joint federal and state public coverage program.",
+      "replacement": "Medicaid and the ACA are not the same thing. The Affordable Care Act (ACA) is a law, and [Medicaid](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/) is a joint federal and state public coverage program. Marketplace plans are private health insurance.",
+      "type": "introText dense colon opener",
+      "why": "Splits the three-identity colon chain into direct sentences; same supported meaning."
+     },
+     {
+      "id": "introText",
+      "quote": "In an ACA vs Medicaid comparison, Marketplace plans are bought through the [Health Insurance Marketplace](https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/), while each state runs Medicaid within federal guidelines.",
+      "replacement": "In an ACA vs Medicaid comparison, Marketplace plans are bought through the [Health Insurance Marketplace](https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/). States run Medicaid within federal guidelines.",
+      "type": "introText dense colon opener",
+      "why": "Removes the 'while' antithesis chain and keeps the keyword in the first paragraph."
+     },
+     {
+      "id": "introText",
+      "quote": "Limited-benefit Medicaid works differently.",
+      "replacement": "Limited-benefit Medicaid that does not count as minimum essential coverage may still allow those savings.",
+      "type": "introText limited-coverage exception",
+      "why": "Makes the limited-benefit exception explicit, as the source states."
+     },
+     {
+      "id": "introText",
+      "quote": "A new 2027 Medicaid work requirement can also leave some adults with Marketplace access but no savings.",
+      "replacement": "A 2027 Medicaid work-requirement denial can also leave some adults with Marketplace access but no savings.",
+      "type": "introText timing rule",
+      "why": "Ties the no-savings result to a work-requirement denial, per HealthCare.gov."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "Both programs measure income with modified adjusted gross income (MAGI).",
+      "replacement": "Marketplace savings use expected household modified adjusted gross income (MAGI). Medicaid income rules vary by state and eligibility category.",
+      "type": "Universal MAGI claim",
+      "why": "Overgeneralizes; Medicaid income rules vary by state and eligibility category."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "Medicaid benefits differ by state, though HealthCare.gov says all states provide comprehensive coverage.",
+      "replacement": "Full-benefit Medicaid benefits differ by state, though HealthCare.gov says all states provide comprehensive coverage.",
+      "type": "Unqualified Medicaid comprehensiveness",
+      "why": "Contradicts the limited-benefit exception; scope it to full-benefit Medicaid."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "Both paths count as qualifying health coverage.",
+      "replacement": "Marketplace plans and full-benefit Medicaid count as qualifying health coverage.",
+      "type": "Both paths qualifying coverage",
+      "why": "Limited-benefit Medicaid may not count as qualifying coverage."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "HealthCare.gov says that due to a law change, only people with these immigration statuses are now eligible for full Medicaid or CHIP coverage:",
+      "replacement": "For noncitizen applicants, HealthCare.gov lists these immigration statuses for full Medicaid or CHIP coverage following a law change:",
+      "type": "Unqualified immigration list",
+      "why": "As written, the list could appear to exclude U.S. citizens and nationals."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Income too high for Medicaid or an immigration status outside the eligible list can block full coverage, and living in a state that has not expanded Medicaid can mean fewer coverage options.",
+      "replacement": "Income above a category's limit can prevent Medicaid eligibility. For noncitizen applicants, immigration status also affects full-coverage eligibility. A state that has not expanded Medicaid may offer fewer coverage options.",
+      "type": "What disqualifies you: immigration qualifier and long stack",
+      "why": "Adds the noncitizen qualifier and splits the stacked conditions."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "The Affordable Care Act is a law, and Marketplace plans are private health insurance bought through the Health Insurance Marketplace.",
+      "replacement": "[Obamacare](https://www.nyc.gov/site/ochia/your-rights/affordable-care-act.page) is another name for the Affordable Care Act (ACA), a law. Marketplace plans are private health insurance bought through the Health Insurance Marketplace.",
+      "type": "Obamacare term not defined",
+      "why": "The NYC source supports only the Obamacare = ACA naming fact."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "HealthCare.gov uses the terms Marketplace and Marketplace plan.",
+      "replacement": "",
+      "type": "Obamacare term not defined",
+      "why": "Filler made redundant by the new definition."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "The cited HealthCare.gov pages do not define a coverage gap, but they describe situations where a person may get neither Medicaid nor Marketplace savings.",
+      "replacement": "In a state that has not expanded Medicaid, a coverage gap means some adults cannot get Medicaid or ordinary Marketplace savings.",
+      "type": "Coverage gap narrates research, no definition",
+      "why": "Narrates research; replace with the conditional non-expansion definition from the supplement."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "HealthCare.gov says that in a state that has not expanded Medicaid, a person who is not eligible may have fewer coverage options and, depending on income, might not qualify for savings on a private plan.",
+      "replacement": "[HealthCare.gov](https://www.healthcare.gov/medicaid-chip/medicaid-expansion-and-you/) describes adults below 100% of the federal poverty level who do not qualify under their state's Medicaid rules.",
+      "type": "Coverage gap definition",
+      "why": "Uses the newly captured HealthCare.gov expansion source with its conditions."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Its poverty-level guidance adds that income below 100 percent of FPL probably won't qualify for Marketplace savings.",
+      "replacement": "Their incomes are too high for Medicaid in their state and too low for ordinary Marketplace savings.",
+      "type": "Coverage gap definition",
+      "why": "Completes the gap definition: too much income for Medicaid, too little for savings."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Starting in 2027, a work-requirement denial can produce a similar result: Marketplace access without savings.",
+      "replacement": "A 2027 Medicaid work-requirement denial can also prevent Marketplace savings, but it follows a separate rule.",
+      "type": "Coverage gap separate 2027 rule",
+      "why": "Keeps the 2027 denial distinct from the coverage gap."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "HealthCare.gov still advises applying for Medicaid in non-expansion states, because each state considers factors beyond income.",
+      "replacement": "Still apply, because state categories and other factors can change the outcome.",
+      "type": "Coverage gap still-apply guidance",
+      "why": "A short, supported still-apply sentence that breaks the long-sentence rhythm."
+     },
+     {
+      "id": "verdict",
+      "quote": "Once the premium amount is known, [plan the monthly premium](/budget/household-budget-calculator/) alongside other bills, and if income changes month to month, [budget insurance with irregular income](/guides/how-to-budget-with-irregular-income/) before you update the Marketplace income estimate.",
+      "replacement": "Once the premium is known, [plan the monthly premium](/budget/household-budget-calculator/) alongside other bills. If income changes month to month, [budget insurance with irregular income](/guides/how-to-budget-with-irregular-income/) before you update the Marketplace income estimate.",
+      "type": "Closing chained instructions",
+      "why": "Splits the chained instructions and keeps both approved anchors."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "If the Marketplace found a person ineligible for Medicaid at enrollment and approved advance credit payments, the IRS generally treats that person as not eligible for Medicaid for the rest of the plan year, even if Medicaid later approves coverage.",
+      "replacement": "The Marketplace may find someone ineligible for Medicaid at enrollment and approve advance credit payments. In that case, the IRS generally treats the person as ineligible for Medicaid for the rest of the plan year, even if Medicaid later approves coverage.",
+      "type": "40-word nested timing condition",
+      "why": "Splits the sentence and preserves the condition and 'generally'."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "Under its general bands, income below 138 percent of FPL may qualify for Medicaid in an expansion state, and income below 100 percent \"probably won't qualify for savings on a Marketplace plan\" but may qualify for Medicaid.",
+      "replacement": "Under HealthCare.gov's general bands, income below 138 percent of FPL may qualify for Medicaid in an expansion state. Income below 100 percent probably will not qualify for Marketplace savings but may qualify for Medicaid.",
+      "type": "37-word two-threshold stack",
+      "why": "Splits the two thresholds and keeps the may/probably scope."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "A wrong estimate carries a tax cost: for tax years after 2025, the IRS applies no repayment cap, so the full amount of advance credit payments above the allowed credit is added to the tax bill.",
+      "replacement": "For tax years after 2025, the IRS applies no repayment cap. The full amount of advance credit payments above the allowed credit is added to the tax bill.",
+      "type": "36-word colon and cause chain",
+      "why": "Splits the chain; the repayment rule is unchanged."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "Monthly premiums for a Marketplace plan go directly to the insurance company, not to the Marketplace.",
+      "replacement": "Monthly premiums for a Marketplace plan go directly to the insurance company.",
+      "type": "Compressed comma-antithesis",
+      "why": "Drops the antithesis clause and keeps the payment route."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "HealthCare.gov states that a person who lost or was denied Medicaid for not meeting the state's work requirement may be able to get Marketplace coverage but won't qualify for savings to lower Marketplace plan costs.",
+      "replacement": "HealthCare.gov says a person who lost or was denied Medicaid for not meeting the state's work requirement may get Marketplace coverage. That person will not qualify for savings to lower Marketplace plan costs.",
+      "type": "35-word work-requirement stack",
+      "why": "Splits the sentence and preserves the may/will-not qualifiers."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "For Marketplace plans, starting January 1, 2027, only certain immigration statuses qualify for savings.",
+      "replacement": "For noncitizens applying for Marketplace plans, only certain immigration statuses qualify for savings starting January 1, 2027.",
+      "type": "Marketplace immigration qualifier",
+      "why": "As written, it implies U.S. citizens need an enumerated immigration status."
+     },
+     {
+      "id": "comparisonTable.rows[2].b",
+      "quote": "Free or low-cost coverage; full-benefit Medicaid eligibility rules out Marketplace premium savings",
+      "replacement": "Free or low-cost coverage; full-benefit Medicaid eligibility generally prevents Marketplace premium savings",
+      "type": "Table help-with-costs absolute",
+      "why": "Qualifies the rule to match the IRS Marketplace-assessment timing exception."
+     },
+     {
+      "id": "verdict",
+      "quote": "Full-benefit Medicaid eligibility removes Marketplace savings, while limited-benefit Medicaid, an ordinary Medicaid denial and a work-requirement denial each lead to a different savings answer.",
+      "replacement": "Full-benefit Medicaid eligibility generally removes Marketplace savings. Limited-benefit Medicaid, an ordinary Medicaid denial and a work-requirement denial each lead to a different savings answer.",
+      "type": "Verdict absolute rule",
+      "why": "Must not contradict the IRS timing exception; also splits the sentence."
+     },
+     {
+      "id": "verdict",
+      "quote": "Keep the current plan until replacement coverage is confirmed.",
+      "replacement": "If you already have coverage, confirm replacement coverage before ending the existing plan.",
+      "type": "Imperative presupposes current plan",
+      "why": "A conditional keeps the safety instruction for current enrollees."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "Medicaid benefits differ by state but are comprehensive in all states, and every Marketplace plan covers the same 10 benefit categories.",
+      "replacement": "Full-benefit Medicaid coverage differs by state. Every state provides comprehensive full-benefit coverage, and every Marketplace plan covers the same 10 benefit categories.",
+      "type": "Unqualified comprehensive Medicaid in FAQ",
+      "why": "Conflicts with the limited-benefit exception; scope it to full-benefit coverage."
+     },
+     {
+      "id": "sections[1].heading",
+      "quote": "Eligibility Determines Premium Savings",
+      "replacement": "ACA vs Medicaid Eligibility and Savings",
+      "type": "Mechanical: H2 exact primary phrase",
+      "why": "Adds the natural exact keyword phrase to the H2."
+     },
+     {
+      "id": "sections[2].heading",
+      "quote": "Household Income Is Not the Only Test",
+      "replacement": "ACA vs Medicaid Income Rules",
+      "type": "Mechanical: second H2 exact primary phrase",
+      "why": "Adds the exact keyword phrase while preserving the section topic."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "**Medicaid and CHIP:**",
+      "replacement": "Medicaid and CHIP:",
+      "type": "Mechanical: raw bold Markdown labels",
+      "why": "The renderer leaves the asterisks visible; use a plain label."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "**Marketplace Open Enrollment:**",
+      "replacement": "Marketplace Open Enrollment:",
+      "type": "Mechanical: raw bold Markdown labels",
+      "why": "The renderer leaves the asterisks visible; use a plain label."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "**Marketplace outside Open Enrollment:**",
+      "replacement": "Marketplace outside Open Enrollment:",
+      "type": "Mechanical: raw bold Markdown labels",
+      "why": "The renderer leaves the asterisks visible; use a plain label."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "Mechanical: add NYC and HC expansion-gap sources to source panel",
+      "why": "needs new substance: the source panel is not an editable unit.",
+      "replacement": null,
+      "reason": "no quote"
+     },
+     {
+      "id": "h1",
+      "quote": "Affordable Care Act (ACA) Marketplace Coverage vs Medicaid",
+      "finding": "Mechanical: H1 lacks contiguous primary phrase",
+      "why": "Approved identity requires the exact H1; record the scoped exception the auditor allows.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "verdict",
+       "quote": "Limited-benefit Medicaid, an ordinary Medicaid denial and a work-requirement denial each lead to a different savings answer.",
+       "type": "inference",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2663,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Limited-benefit Medicaid, an ordinary Medicaid denial and a work-requirement den'"
+    ]
+   },
+   {
+    "round": 2,
+    "at": "2026-11-04T22:29:51-0500",
+    "findings_file": "reports/mindmap-pass/2026-11-04-aca-snap/audit/n4-fix1-followup.json",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "Medicaid and the ACA are not the same thing.",
+      "replacement": "",
+      "type": "introText: keyword placement / paragraph grouping",
+      "why": "Audit rewrite opens on the law definition so the primary phrase appears in sentence two."
+     },
+     {
+      "id": "introText",
+      "quote": "The Affordable Care Act (ACA) is a law, and [Medicaid](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/) is a joint federal and state public coverage program.",
+      "replacement": "The [Affordable Care Act (ACA)](https://www.nyc.gov/site/ochia/your-rights/affordable-care-act.page) is a law, while [Medicaid](https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/) is a public coverage program.",
+      "type": "introText: first ACA law mention unlinked",
+      "why": "Link the first ACA mention to the approved supplemental naming source."
+     },
+     {
+      "id": "introText",
+      "quote": "Marketplace plans are private health insurance.",
+      "replacement": "ACA vs Medicaid compares private [Marketplace plans](https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/) with joint federal-state Medicaid coverage.",
+      "type": "introText: keyword placement",
+      "why": "Moves the primary phrase into the second sentence and keeps the private-insurance fact."
+     },
+     {
+      "id": "introText",
+      "quote": "In an ACA vs Medicaid comparison, Marketplace plans are bought through the [Health Insurance Marketplace](https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/).",
+      "replacement": "",
+      "type": "introText: keyword placement",
+      "why": "Duplicates the merged preceding sentence, which now carries the keyword and link."
+     },
+     {
+      "id": "introText",
+      "quote": "[HealthCare.gov](https://www.healthcare.gov/medicaid-limited-benefits/) states that a person in a Medicaid program that counts as minimum essential coverage is not eligible for a premium tax credit or other savings on a Marketplace plan.",
+      "replacement": "[HealthCare.gov](https://www.healthcare.gov/medicaid-limited-benefits/) says full-benefit Medicaid generally prevents Marketplace premium savings.",
+      "type": "introText: absolute savings statement",
+      "why": "Absolute wording contradicts the IRS initial-assessment exception; qualify it as general."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "A person eligible for full Medicaid or CHIP who keeps a Marketplace plan pays full price for the premium and for covered services.",
+      "replacement": "A person eligible for full Medicaid or CHIP who keeps a Marketplace plan generally pays full price for the premium and for covered services.",
+      "type": "ACA vs Medicaid Eligibility and Savings: absolute rule",
+      "why": "Qualify the general rule so it agrees with the IRS timing exception."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "A person eligible for full-benefit Medicaid gets free or low-cost coverage there, and would pay full price for a Marketplace plan.",
+      "replacement": "A person eligible for full-benefit Medicaid gets free or low-cost coverage there, and would generally pay full price for a Marketplace plan.",
+      "type": "Is ACA or Medicaid better?: absolute rule",
+      "why": "Same general-rule qualification as the IRS timing exception."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "Yes, a person can keep both, but full-benefit Medicaid means paying full price for the Marketplace plan premium and covered services.",
+      "replacement": "Yes, a person can keep both, but full-benefit Medicaid generally means paying full price for the Marketplace plan premium and covered services.",
+      "type": "Can you have both?: absolute rule",
+      "why": "Same general-rule qualification; the exceptions remain explained."
+     },
+     {
+      "id": "verdict",
+      "quote": "If income changes month to month, [budget insurance with irregular income](/guides/how-to-budget-with-irregular-income/) before you update the Marketplace income estimate.",
+      "replacement": "If income changes month to month, [budget insurance with irregular income](/guides/how-to-budget-with-irregular-income/). [Update your Marketplace income estimate](https://www.healthcare.gov/income-and-household-information/income/) whenever expected income changes, then check how that affects your ACA vs Medicaid coverage.",
+      "type": "verdict: closing lacks primary phrase and official update link",
+      "why": "Keeps the internal link, adds the official income-update link, and includes the keyword."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "mechanical: NYC acronym in sources label",
+      "why": "The sources label text is not among the supplied page units, so it cannot be edited here.",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      3
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "verdict",
+       "quote": "Limited-benefit Medicaid, an ordinary Medicaid denial and a work-requirement denial each lead to a different savings answer.",
+       "type": "inference",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[1].content",
+       "quote": "A child may also lose CHIP eligibility if the family keeps the Marketplace plan.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[4].answer",
+       "quote": "HealthCare.gov says to tell the state agency if you want to keep both, and notes that a child may no longer qualify for CHIP if the family keeps the Marketplace plan.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2653,
+    "flags": [
+     "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Limited-benefit Medicaid, an ordinary Medicaid denial and a work-requirement den'; 'A child may also lose CHIP eligibility if the family keeps the Marketplace plan.'; 'HealthCare.gov says to tell the state agency if you want to keep both, and notes'"
+    ]
+   },
+   {
+    "round": 3,
+    "at": "2026-11-04T22:37:19-0500",
+    "findings_file": "reports/mindmap-pass/2026-11-04-aca-snap/audit/n4-source-guard-adjudication.json",
+    "applied": [
+     {
+      "id": "verdict",
+      "quote": "Limited-benefit Medicaid, an ordinary Medicaid denial and a work-requirement denial each lead to a different savings answer.",
+      "replacement": "Limited-benefit Medicaid, an ordinary Medicaid denial and a work-requirement denial can lead to different savings outcomes.",
+      "type": "Targeted qualification needed",
+      "why": "Limited-benefit coverage and an ordinary denial can both permit savings, so three distinct outcomes are not guaranteed."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "A child may also lose CHIP eligibility if the family keeps the Marketplace plan.",
+      "replacement": "A child may also lose CHIP eligibility if the family keeps the Marketplace plan.",
+      "type": "Supported conditional claim; retain may",
+      "why": "HealthCare.gov's CHIP warning directly supports this conditional wording; no change needed."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "HealthCare.gov says to tell the state agency if you want to keep both, and notes that a child may no longer qualify for CHIP if the family keeps the Marketplace plan.",
+      "replacement": "HealthCare.gov says to tell the state agency if you want to keep both, and notes that a child may no longer qualify for CHIP if the family keeps the Marketplace plan.",
+      "type": "Supported conditional source summary",
+      "why": "The source directly supports both the agency instruction and the conditional CHIP warning; retained unchanged."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "verdict",
+       "quote": "Neither option is the better choice for every household, because eligibility rules decide which coverage comes with financial help.",
+       "type": "inference",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2654,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Neither option is the better choice for every household, because eligibility rul'"
+    ]
+   }
+  ]
+ },
+ "seconds": 257.6,
+ "response_id": "msg_011Cgj35XMxtMJrutSPjiNkb",
+ "generated_at": "2026-11-04T22:06:21-0500"
+}

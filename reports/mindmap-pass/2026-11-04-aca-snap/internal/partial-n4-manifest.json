@@ -1,0 +1,10 @@
+{
+  "author": "root",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/compare/aca-vs-medicaid/",
+      "expectedUpdatedDate": "2026-11-04"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "sourceReceipt": "audit/final-rhythm-correction.json",
+  "route": "/guides/how-to-apply-for-food-stamps/",
+  "scope": "Only this exact sentence; preserve all other field values and all existing counters. Use replacement verbatim, with no added words. The actual result must be under15words.",
+  "findings": [
+    {
+      "field": "If Your Notice or Application Needs Follow-Up",
+      "route": "/guides/how-to-apply-for-food-stamps/",
+      "quote": "Request a fair hearing by phone, in writing or in person at your local SNAP office.",
+      "replacement": "Request a fair hearing by phone, in writing or at your SNAP office.",
+      "reason": "The writer\u2019s actual alternative has16words and leaves a ten-sentence all-long run67\u201376. This13-word same-channel instruction breaks that run."
+    }
+  ]
+}

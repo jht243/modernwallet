@@ -1,0 +1,127 @@
+{
+  "actor": "root",
+  "runId": "d059491d93234c5fbd1a627c0704ac17",
+  "rules": [
+    {
+      "path": ".claude/commands/_decision-evidence.md",
+      "sha256": "6b47b8b4b6763f5b4ff303ca0443ecf67c01d5efae95c2b0c0e968131fb16d98",
+      "application": "Two feasible calculated tools with separate source records, actual preparation arithmetic, counterexamples, visible method/conditions; three source-based answers. No fabricated tests, clients or uplift."
+    },
+    {
+      "path": ".claude/commands/_testing-labels.md",
+      "sha256": "8a9dc3c646a583d7afe80339efb880be431a9f528e491ef0ea156bee4db053d9",
+      "application": "All five financial/program pages ordinary; no TESTED format from blanket owner wording, all public labels consistent."
+    },
+    {
+      "path": ".claude/commands/_content-standard.md",
+      "sha256": "c100ce0716ab042e4ee80f0cd6764a51cbe75238416ba0d350402dfe87f83786",
+      "application": "1200/1500 floors; direct answer in first section, source attribution, keyword metadata, honest labels, useful takeaway and final notice; scoped template support proposed."
+    },
+    {
+      "path": ".claude/commands/_anti-ai-language.md",
+      "sha256": "59194cdd7f83f7423489faa07759e571c73ef993a681bd917faa8a6f1a6803ac",
+      "application": "Writer system will carry full rules; no visitor-facing internal production/QA labels, no self-asserted independence or fabricated experience."
+    },
+    {
+      "path": ".claude/commands/_experience.md",
+      "sha256": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+      "application": "ModernWallet finance/calculator scope; no client roster or clinical testing; existing Jonathan Velez identity discovered in site.ts."
+    },
+    {
+      "path": ".claude/commands/_workflow-checkpoints.md",
+      "sha256": "a80daacfb208a9d1e1c95b4c199f4a7ae671b89ee54a9f4cc25cbb2689e0f43b",
+      "application": "62+5 complete preflight checks, all per-page briefs and this detailed report; independent preparation judgment before deterministic full chart."
+    },
+    {
+      "path": ".claude/commands/_rendered-page-audit.md",
+      "sha256": "5e649fef4cb23a9c97806bce5f04cee59a329265534f683b40ade791b9cc06da",
+      "application": "Whole final candidate after link/template/affiliate transforms, every shared affected route inventoried, exact live comparison before closure."
+    },
+    {
+      "path": ".claude/commands/_mindmap-execution.md",
+      "sha256": "2ee21c15b10e654b4c6126089d8c2d2259d7edbfcb512bc09bd06553b14d6253",
+      "application": "Structured full manifest, independent bound review and deterministic chart; actual assets/code after approval, no spec-only delivery."
+    },
+    {
+      "path": ".claude/commands/_keyword-demand-ladder.md",
+      "sha256": "98369b2d374360038c79564b3670696aafc30ab33d0c9b95d7daf2434697732d",
+      "application": "SEMrush first for every exact volume/KD, no Ahrefs, saved raw expand/fullsearch/autocomplete/SERP data and explicit uncertainty."
+    },
+    {
+      "path": ".claude/commands/mindmap-pass.md",
+      "sha256": "0e6d45646837781c078c08a2806b65a7401b7f1c083b332b4323329491a8580f",
+      "application": "Applicable phase is fully disclosed in Phases1\u20139; preserve exact approved targets, dependent ordering and automatic independent gates. See readiness.md and approval-manifest.json executionPlan."
+    },
+    {
+      "path": ".claude/commands/mindmap-pass/phase-build-brief.md",
+      "sha256": "312a6f523cccf1f1bb4ff1556e89d9755040419cdbeb7a09d4443fe23047a58a",
+      "application": "Applicable phase is fully disclosed in Phases1\u20139; preserve exact approved targets, dependent ordering and automatic independent gates. See readiness.md and approval-manifest.json executionPlan."
+    },
+    {
+      "path": ".claude/commands/mindmap-pass/phase-0-discover.md",
+      "sha256": "5478d08704438148cf3ed90bd8150d29703b5e7c7f979d008868866b12dc26ec",
+      "application": "Applicable phase is fully disclosed in Phases1\u20139; preserve exact approved targets, dependent ordering and automatic independent gates. See readiness.md and approval-manifest.json executionPlan."
+    },
+    {
+      "path": ".claude/commands/mindmap-pass/phase-1-consolidation.md",
+      "sha256": "2f1609919b5f4ef63840c97978cdba96d198d7c58a8fc41cbd121ddb4993d289",
+      "application": "Applicable phase is fully disclosed in Phases1\u20139; preserve exact approved targets, dependent ordering and automatic independent gates. See readiness.md and approval-manifest.json executionPlan."
+    },
+    {
+      "path": ".claude/commands/mindmap-pass/phase-2-metadata.md",
+      "sha256": "f86c609c1a0dde620a24d0dc508e88261edda8c8a07b9b374d13890b189b678a",
+      "application": "Applicable phase is fully disclosed in Phases1\u20139; preserve exact approved targets, dependent ordering and automatic independent gates. See readiness.md and approval-manifest.json executionPlan."
+    },
+    {
+      "path": ".claude/commands/mindmap-pass/phase-3-new-content.md",
+      "sha256": "19c8aac6b18ef5386eb1e5a6a3102433e5558383d2d8b622d4958d9e22d31749",
+      "application": "Applicable phase is fully disclosed in Phases1\u20139; preserve exact approved targets, dependent ordering and automatic independent gates. See readiness.md and approval-manifest.json executionPlan."
+    },
+    {
+      "path": ".claude/commands/mindmap-pass/phase-3c-tool-build.md",
+      "sha256": "ee12eb40501758f034c4979de55634779ea45a6a49a2943c689453f7665c77dd",
+      "application": "Applicable phase is fully disclosed in Phases1\u20139; preserve exact approved targets, dependent ordering and automatic independent gates. See readiness.md and approval-manifest.json executionPlan."
+    },
+    {
+      "path": ".claude/commands/mindmap-pass/phase-4-audit.md",
+      "sha256": "4114035ddf97264431d24a21ec8897d8aedaa8e462891b65533a0e41c1406e95",
+      "application": "Applicable phase is fully disclosed in Phases1\u20139; preserve exact approved targets, dependent ordering and automatic independent gates. See readiness.md and approval-manifest.json executionPlan."
+    },
+    {
+      "path": ".claude/commands/mindmap-pass/phase-5-body.md",
+      "sha256": "aa8f06f254b61d4b9b405824b2a4a78db180cd7d10f5cbad3e40190c95d854bc",
+      "application": "Applicable phase is fully disclosed in Phases1\u20139; preserve exact approved targets, dependent ordering and automatic independent gates. See readiness.md and approval-manifest.json executionPlan."
+    },
+    {
+      "path": ".claude/commands/mindmap-pass/phase-6-internal-linking.md",
+      "sha256": "90c80e9e201a7c6fa61c7ae2dafc4fbb47d15abf8bba8ac1379b8b2db9b396ed",
+      "application": "Applicable phase is fully disclosed in Phases1\u20139; preserve exact approved targets, dependent ordering and automatic independent gates. See readiness.md and approval-manifest.json executionPlan."
+    },
+    {
+      "path": ".claude/commands/mindmap-pass/phase-7-sitemap-indexnow.md",
+      "sha256": "3aed8fc8c4453f528df6e1be029d2009823f637d439e055eb2318c0157c62c16",
+      "application": "Applicable phase is fully disclosed in Phases1\u20139; preserve exact approved targets, dependent ordering and automatic independent gates. See readiness.md and approval-manifest.json executionPlan."
+    },
+    {
+      "path": ".claude/commands/mindmap-pass/phase-8-summary.md",
+      "sha256": "57231323902d00d499473d166a568227b5e6656eefa2ae60367e106b8f7b7ee2",
+      "application": "Applicable phase is fully disclosed in Phases1\u20139; preserve exact approved targets, dependent ordering and automatic independent gates. See readiness.md and approval-manifest.json executionPlan."
+    },
+    {
+      "path": ".claude/commands/mindmap-pass/phase-9-commit-deliver.md",
+      "sha256": "844a6fb4d0ef1616550eb4a5124d84c26aeb8d62ed8981ca120f5a9ddf2cffc6",
+      "application": "Applicable phase is fully disclosed in Phases1\u20139; preserve exact approved targets, dependent ordering and automatic independent gates. See readiness.md and approval-manifest.json executionPlan."
+    },
+    {
+      "path": ".claude/commands/_content-generation.md",
+      "sha256": "3906ce92275b5bc936f43de097539aeb30089bee8fb1674bfe78b8eecc29e5ab",
+      "application": "Configured API writer preflight succeeded; no in-context substantive page prose; exact manifest/packet flags required after approval."
+    },
+    {
+      "path": ".claude/commands/_remediation-ladder.md",
+      "sha256": "47ec87072c702d4fcca14bfb1d426e03427583b941415862820dc0f1865ee3e8",
+      "application": "Mechanical fixes first; targeted fixes and maximum2 substantive reworks, fresh exact-output audits; ordinary editorial no client/upsell exception."
+    }
+  ],
+  "userOverlay": "Latest2026-11-04 upsell release rule does not apply to this ordinary benefits editorial run."
+}

@@ -1,0 +1,9 @@
+Targeted fixes only. Retain at least1,500 substantivebodywords. No new scenarios or wholepage regeneration.
+1. Delete the paragraph beginning "USDA calculates a SNAP allotment" in What Each Program Pays For, including the agency's workedexample. Approved qualitativecomparison doesnot need benefitamountarithmetic, and the sourceworkedexamplehas inherited contradictions noted in preparation. No replacementnumericalscenario.
+2. "For many families comparing SNAP vs WIC" implies an unsupported prevalence. Narrow to householdsthatfitbothprograms. Keep useful twoapplicationfinding.
+3. First named U.S.DepartmentofAgricultureFoodandNutritionAdministration inintro must linkto approved primarysource. First WorkingFamiliesTaxCuts law mention also linkto existingofficialSNAPeligibilitysource. WICEligibilityTool firstmention must itselfbelinkedto approvedWICeligibilitypage.
+4. Avoid extra undefined CBD acronym and unrelated controlledsubstance detail. Narrow the SNAP exclusionbulletto approved necessaryfood/nonfoodscope. Use WICbenefitcard consistently insteadofunexplained eWIC if expanding its name is not supplied.
+5. Firstsentence canstay shortdirectanswer, but split longclauses in intro/FAQ without changing facts. Reporterregister remains no we/our/tested.
+6. The table benefitformWIC cell says all WICapprovedgrocery/farmersmarkets universally basedonCaliforniadetail. Attribute California-specific eWIC/market mechanics to California when applicable, or use nationalfact WICfoodbenefitsatapprovedretailers without generalizing a state's cardacceptance.
+
+7. Restore direct yes answer to “Are food stamps the same as SNAP?” with USAGov citation. Added verifiedprimarysource explicitly says SNAP was previouslyknownasfoodstamps. Do not use inferencefromagencylabels.

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "cause": "content_gen.py record() automatically stages the entire append-only usage ledger after every call.",
+  "scope": "Restored only this helper-mutated index entry to the exact original staged blob; working-file usage records remain intact.",
+  "originalStagedRows": 963,
+  "currentWorkingRows": 1001,
+  "addedRunRowsPreserved": 38,
+  "originalStagedBlob": "3a7b0610ffa7c6238ab41c731fb4b7191d3e5f9c",
+  "helperAutoStagedBlob": "e126f9db95bcc8f290d3c81ac385c91760a35f6f",
+  "stagedDiffSha256": "7569091c2ced7a862582663e3c06757d9bd82c4e509813f1af3d78a7b2e377e5",
+  "headPreserved": true,
+  "workingFileSha256": "b798a8e8af85616ae92534602fcfa1418e05e5a123737a0f1ff51203f0162c85"
+}

@@ -1,0 +1,14 @@
+{
+  "sourceSelection": "Only root-before/current deltas and explicitly owned new files against verified live published base.",
+  "evidenceSelection": "Run-specific chart, manifest, approval, research, source captures, prompts, draft provenance, calculations, audit receipts and rendered evidence. Exclude root-before snapshots containing unrelated work, temporary indexes and oversized PNG/PDF images.",
+  "primaryCheckout": "Preserve primary HEAD, exact index and unrelated working edits.",
+  "releaseConditions": [
+    "Independent final rendered audit PASS for exact complete scope",
+    "Fresh hydrated recapture",
+    "Build/data/bundle/link/sitemap checks",
+    "Verified source blobs and latest remote base",
+    "Host deploy names exact commit",
+    "All affected live routes return200 and match approved output",
+    "IndexNow only afterward"
+  ]
+}

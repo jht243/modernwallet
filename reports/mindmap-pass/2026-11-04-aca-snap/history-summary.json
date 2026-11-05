@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "aca-subsidy-calculator",
+    "targetPaths": [
+      "src/pages/aca-subsidy-calculator.astro",
+      "src/pages/guides/aca-subsidy-calculator.astro",
+      "src/pages/compare/aca-subsidy-calculator.astro"
+    ],
+    "directHistory": false,
+    "messageMatches": []
+  },
+  {
+    "slug": "snap-benefits-calculator",
+    "targetPaths": [
+      "src/pages/snap-benefits-calculator.astro",
+      "src/pages/guides/snap-benefits-calculator.astro",
+      "src/pages/compare/snap-benefits-calculator.astro"
+    ],
+    "directHistory": false,
+    "messageMatches": []
+  },
+  {
+    "slug": "how-to-apply-for-food-stamps",
+    "targetPaths": [
+      "src/pages/how-to-apply-for-food-stamps.astro",
+      "src/pages/guides/how-to-apply-for-food-stamps.astro",
+      "src/pages/compare/how-to-apply-for-food-stamps.astro"
+    ],
+    "directHistory": false,
+    "messageMatches": []
+  },
+  {
+    "slug": "snap-vs-wic",
+    "targetPaths": [
+      "src/pages/snap-vs-wic.astro",
+      "src/pages/guides/snap-vs-wic.astro",
+      "src/pages/compare/snap-vs-wic.astro"
+    ],
+    "directHistory": false,
+    "messageMatches": []
+  },
+  {
+    "slug": "aca-vs-medicaid",
+    "targetPaths": [
+      "src/pages/aca-vs-medicaid.astro",
+      "src/pages/guides/aca-vs-medicaid.astro",
+      "src/pages/compare/aca-vs-medicaid.astro"
+    ],
+    "directHistory": false,
+    "messageMatches": []
+  }
+]

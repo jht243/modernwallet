@@ -1,0 +1,7 @@
+.claude/commands/_rendered-page-audit.md — characters 9000 onward
+
+tays explicitly unavailable with a retry reason, never zero or silently deferred. Reuse an already recorded first-live timestamp when refreshing a contribution. Do not claim SEO uplift from deployment, impressions, or an unelapsed window. Existing eligible routines perform later measurement; do not invent or alter schedules.
+
+## Global and cloud installation
+
+Install this sibling contract and `rendered-audit.py`/its regression tests with the shared workflow contracts into the active repository, preserving local rules. Read the full phase bundle and verify freshness in the checkout actually rendering/publishing the content. Cloud uses the published default branch; unpublished laptop files do not satisfy it. A read-only reviewer may write its own internal evidence files, but cannot modify the candidate content. Missing tooling, unavailable rendered output or a failed audit blocks the affected publication; resolve it within the authorized run.

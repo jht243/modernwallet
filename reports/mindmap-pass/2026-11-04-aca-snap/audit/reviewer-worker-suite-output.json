@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "checks": 172,
+  "scope": "Deterministic calculator-code validation. Not product testing or an independent editorial audit.",
+  "cases": {
+    "snapDefault": {
+      "gross": 2000,
+      "earnedDeduction": 400,
+      "standardDeduction": 229,
+      "medicalDeduction": 0,
+      "adjusted": 1371,
+      "shelter": 1200,
+      "excessShelter": 514.5,
+      "shelterDeduction": 514.5,
+      "net": 856.5,
+      "contribution": 257,
+      "maximum": 1023,
+      "formulaAmount": 766,
+      "conditionalAmount": 766,
+      "aboveNetReference": false,
+      "netReference": 2750,
+      "grossReference": 3575,
+      "minimumApplied": false
+    },
+    "snapHighIncome": {
+      "gross": 10000,
+      "earnedDeduction": 2000,
+      "standardDeduction": 217,
+      "medicalDeduction": 0,
+      "adjusted": 7783,
+      "shelter": 0,
+      "excessShelter": 0,
+      "shelterDeduction": 0,
+      "net": 7783,
+      "contribution": 2335,
+      "maximum": 306,
+      "formulaAmount": 0,
+      "conditionalAmount": null,
+      "aboveNetReference": true,
+      "netReference": 1330,
+      "grossReference": 1729,
+      "minimumApplied": false
+    },
+    "acaConfirmed": {
+      "poverty": 21640,
+      "fplPercent": 231.0536044362292,
+      "inRange": true,
+      "percentage": 7.947615526802218,
+      "contribution": 331.1506469500924,
+      "credit": 268.8493530499076,
+      "netPremium": 281.1506469500924
+    },
+    "aca400Percent": {
+      "poverty": 21640,
+      "fplPercent": 400,
+      "inRange": true,
+      "percentage": 10.22,
+      "contribution": 737.2026666666667,
+      "credit": 262.7973333333333,
+      "netPremium": 737.2026666666667
+    }
+  }
+}

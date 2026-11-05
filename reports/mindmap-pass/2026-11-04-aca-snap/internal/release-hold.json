@@ -1,0 +1,13 @@
+{
+  "status": "resolved",
+  "recordedAt": "2026-11-05T04:01:43.922645+00:00",
+  "reason": "Independent reviewer withdrew N1/N5 PASS after corrected abbreviation-aware sentence-band measurement found two actual source-text violations.",
+  "finding": "audit/final-rhythm-correction.json",
+  "formerReview": "audit/render-review-before-rhythm-withdrawal.json",
+  "commitCreated": false,
+  "pushOccurred": false,
+  "requiredResolution": "Two exact same-fact API sentence corrections, fresh capture, independent reapproval and all gates.",
+  "resolvedAt": "2026-11-05T04:12:00.002016+00:00",
+  "resolution": "Independent final rendered PASS and five analysis gates passed after exact two-sentence corrections; historical withdrawn PASS/FAIL preserved.",
+  "finalSnapshot": "dcb58a71da4487025e6b14de11b3aa66e24dee6bc5a28511deee81f0e98518e3"
+}

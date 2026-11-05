@@ -1,0 +1,45 @@
+.claude/commands/mindmap-pass.md — characters 27000 onward
+
+claude/commands/mindmap-pass/phase-5-body.md` | reviewer checklist in file |
+| 6 — Internal linking | `.claude/commands/mindmap-pass/phase-6-internal-linking.md` | reviewer checklist in file |
+| 7 — Sitemap + IndexNow **prep** (no submit) | `.claude/commands/mindmap-pass/phase-7-sitemap-indexnow.md` | reviewer checklist in file |
+| 8 — Summary (informational) | `.claude/commands/mindmap-pass/phase-8-summary.md` | none — auto-continues to Phase 9 |
+| 9 — Commit + deliver + 200-verify + IndexNow submit (live URLs) | `.claude/commands/mindmap-pass/phase-9-commit-deliver.md` | reviewer checklist in file |
+
+## Phase Summary template (print after every phase, then immediately continue)
+```
+### Phase <n> — <name> — <PASS | FAIL | ESCALATED>
+- Rows actioned: <n>   Files touched: <list>
+- Reviewer verdict: <pass / rejected-then-fixed / hard-fail>
+- Ambiguous / skipped: <rows + why, or "none">
+- Continuing to Phase <n+1>...   ← then DO it; do not stop or ask
+```
+The "Continuing to Phase <n+1>" line is a statement of fact, NOT a question. After printing it, start the next phase in the same turn. The only exception is Stop 1 (Phase 0 manifest), where the line instead reads "Waiting for your approval before starting Phase 1." Phase 8 → Phase 9 is NOT an exception — print the summary and continue straight to the push.
+
+## Final report (after Phase 9)
+Totals by bucket, files created/modified, **the interpreted brief + the adjacent-demand clusters SEMRUSH surfaced and how each was actioned (new content / enriched page / metadata / flagged)**, consolidation losers, **Live verification (each created/changed URL → 200 OK or FAILED)**, IndexNow status, commit SHA / PR URL, and every "Ambiguous / skipped" row for the user to resolve manually.
+
+**The report MUST open with a `## Duplicate check` section** — one line copied from the Phase 0 manifest's Duplicate check row (`passed — N new-page rows checked, M matched an existing page`, or `FAILED — <rows>`). Any routine that wraps /mindmap-pass (X trends, search gap, chat requests, trend pass, hype radar, inbox, YouTube) puts this same section first in the email it sends.
+
+**The report MUST end with a `🔗 New pages` section**: a clickable markdown link (page title as text, full absolute `https://` URL as target) for EVERY newly created page that verified 200, so the user can open each page directly from the chat. Enriched existing pages get a separate `Updated pages` link list; failed/reverted pages a separate `⚠️ Not live` list. Nothing comes after this section. (Details in `phase-9-commit-deliver.md` step 8.)
+
+## IndexNow Fallback Key (workflow-wide)
+
+**Submit with the fleet helper first:** `python3 .claude/scripts/indexnow-submit.py --urls-file <list>` (or pass the URLs as arguments). It uses the key Bing accepts for this host (a few hosts are pinned to an older key, so the fleet key returns 403 there), tries api.indexnow.org, then www.bing.com, then yandex.com, and relays through layer3labs-web `/api/indexnow-relay` when the sandbox blocks those hosts. Exit 0 means accepted. Use the manual steps below only if that script is missing. Never POST to `api.indexnow.com`; that host does not exist.
+
+If any phase in this workflow hits an IndexNow error — the site's `public/<32-hex>.txt` challenge file is missing, the key can't be discovered, or the IndexNow API returns a key-verification error (403/422) — **fall back to this project-wide key**:
+
+- **env var name:** `INDEXNOW_KEY`
+- **key value (default):** `dc557f6bfced447aa1a71771d8a0d24a`
+
+When falling back:
+1. Create `public/dc557f6bfced447aa1a71771d8a0d24a.txt` with the content `dc557f6bfced447aa1a71771d8a0d24a` (filename = key = content) so search engines can verify.
+2. Commit + push it as part of the run (before the IndexNow POST fires) so the challenge file is live.
+3. After the deploy is verified, retry the IndexNow POST using this key.
+4. If retry still fails, note the HTTP status in the final report but do NOT block the rest of the run.
+
+This applies to **every phase that discovers or submits to IndexNow** in this workflow — Phase 0 (discovery), any prep phase that stages the IndexNow URL list, and the final submission phase. Prefer the env var if set; otherwise use the hard-coded default above.
+
+<!-- mindmap-execution-v1 -->
+Follow `_mindmap-execution.md` for mechanical chart rendering/validation, relevant same-run analysis, approved-case retrieval and final analysis/rendered checks. Revalidate an existing/imported chart against the complete current structured manifest; its existence is never a readiness exemption.
+<!-- /mindmap-execution-v1 -->

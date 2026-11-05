@@ -1,0 +1,744 @@
+{
+  "bodyWords": 2629,
+  "sentences": [
+    {
+      "field": "introText",
+      "text": "An Affordable Care Act (ACA) subsidy calculator gives a conditional estimate of your 2027 federal premium tax credit, not a personal eligibility decision.",
+      "words": 23
+    },
+    {
+      "field": "introText",
+      "text": "The credit is the benchmark Silver premium minus an income-based contribution, capped at your plan's premium.",
+      "words": 16
+    },
+    {
+      "field": "introText",
+      "text": "At ModernWallet, we built the calculator above to show each step of that federal formula beside your own inputs.",
+      "words": 19
+    },
+    {
+      "field": "introText",
+      "text": "Its default case is hypothetical: two people with $50,000 of yearly modified adjusted gross income (MAGI), a $600 benchmark, and a $550 plan.",
+      "words": 23
+    },
+    {
+      "field": "introText",
+      "text": "If every other eligibility condition is met, that case produces a $268.85 monthly credit and a $281.15 monthly premium.",
+      "words": 19
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "The federal premium tax credit equals the non-tobacco benchmark Silver premium minus an income-based contribution, and it can never be larger than the premium of the eligible plan you enroll in.",
+      "words": 31
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "The Internal Revenue Service (IRS) describes the credit this way.",
+      "words": 10
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "Revenue Procedure 2026-26 sets the 2027 percentages used for the contribution.",
+      "words": 11
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "The calculator runs five steps:",
+      "words": 5
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "Divide expected 2027 household MAGI by the 2026 federal poverty level (FPL) for your household size.",
+      "words": 16
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "Find that percentage of FPL in the 2027 table below, and interpolate in a straight line inside its band.",
+      "words": 19
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "Multiply MAGI by the applicable percentage, then divide by 12 for the monthly contribution.",
+      "words": 14
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "Subtract the monthly contribution from the monthly benchmark premium.",
+      "words": 9
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "A negative result counts as zero.",
+      "words": 6
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "Cap the result at the monthly premium of the plan you choose.",
+      "words": 12
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "Written as one line, the credit is the smaller of two numbers: your plan premium, or the benchmark minus your contribution (never below zero).",
+      "words": 24
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "Interpolation turns a band into an exact rate.",
+      "words": 8
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "At 231.05% of FPL, income sits 31.05 points into the 50-point band from 200% to 250%.",
+      "words": 16
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "The rate climbs the same share of the way from 6.78% to 8.66%, which lands at about 7.95%.",
+      "words": 18
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "The calculator keeps the dollar result hidden until you confirm the nonfinancial conditions listed under When the ACA Estimate Does Not Apply.",
+      "words": 22
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "Below 100% or above 400% of FPL, it shows an explanation in place of a credit.",
+      "words": 16
+    },
+    {
+      "field": "How ACA Subsidies Are Calculated",
+      "text": "It estimates the federal credit only, with no state subsidy and no estimate of discounts on your share of costs for covered services.",
+      "words": 23
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "Enter your household's expected MAGI for 2027, the full year you want coverage.",
+      "words": 13
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "HealthCare.gov states that Marketplace savings are based on expected household income for the coverage year.",
+      "words": 15
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "Last year's income is only a starting point: the HealthCare.gov glossary says to begin with your most recent adjusted gross income (AGI) and adjust it for expected changes.",
+      "words": 28
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "MAGI does not appear as a line on your tax return.",
+      "words": 11
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "Build it in two steps:",
+      "words": 5
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "Start with AGI, which is line 11 of IRS Form 1040.",
+      "words": 11
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "Add untaxed foreign income, non-taxable Social Security benefits, and tax-exempt interest.",
+      "words": 11
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "Leave out Supplemental Security Income (SSI).",
+      "words": 6
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "For many people, MAGI equals AGI or comes close.",
+      "words": 9
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "Take-home pay alone is the wrong input for this calculator.",
+      "words": 10
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "If your pay stub lists federal taxable wages, use that number.",
+      "words": 11
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "If it does not, HealthCare.gov says to start from gross income and subtract what your employer takes out for child care, health coverage, and retirement plans.",
+      "words": 26
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "Self-employment income goes in after business expenses.",
+      "words": 7
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "Some money stays out of the estimate entirely:",
+      "words": 8
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "child support",
+      "words": 2
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "gifts",
+      "words": 1
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "loan proceeds, such as student loans or home equity loans",
+      "words": 10
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "SSI",
+      "words": 1
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "veterans' disability payments",
+      "words": 3
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "workers' compensation",
+      "words": 2
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "Household size and household income follow tax rules.",
+      "words": 8
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "Your family for the credit is you, your spouse if you file jointly, and everyone you claim as a dependent, including dependents who do not need coverage.",
+      "words": 27
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "Household income adds the MAGI of each family member who is required to file a federal return, so a teenager's summer-job pay counts only if that teen must file.",
+      "words": 29
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "The coverage family is a smaller group.",
+      "words": 7
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "The IRS defines it as the family members enrolled through the Marketplace who cannot get Medicaid, Medicare, or affordable employer coverage.",
+      "words": 21
+    },
+    {
+      "field": "The Income to Enter for 2027",
+      "text": "Enter the full tax household size and income, and use a benchmark premium that applies to the coverage family.",
+      "words": 19
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "For 2027 coverage, the ordinary federal premium tax credit range is household income from 100% to 400% of the 2026 federal poverty level for your household size.",
+      "words": 27
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "The IRS bases each year's credit on the poverty guidelines most recently published when open enrollment begins, so the 2025 credit used 2024 figures and the 2027 credit uses 2026 figures.",
+      "words": 31
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "The rule that allowed credits above 400% applied to tax years 2021 through 2025 only.",
+      "words": 15
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "The top boundary is inclusive.",
+      "words": 5
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "The 2027 table runs to \"not more than 400%,\" so a two-person household at exactly $86,560 stays inside the range.",
+      "words": 20
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "In our calculation, that household's contribution is 10.22% of income, or $737.20 a month, and an illustrative $1,000 benchmark with a $1,000 plan premium leaves a $262.80 monthly credit.",
+      "words": 29
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "Add $1 of income and the same household reaches 400.0046% of FPL, which removes the credit in the ordinary federal model.",
+      "words": 21
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "If your income sits near the line, run the calculator at both your low and high estimates before you count on the credit.",
+      "words": 23
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "The table shows an income window.",
+      "words": 6
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "It does not establish eligibility by itself.",
+      "words": 7
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "HealthCare.gov says income below 100% of FPL probably will not qualify for Marketplace savings but may qualify for Medicaid, and income below 138% may qualify for Medicaid in states that expanded it.",
+      "words": 32
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "The calculator covers households of 1 to 8 people in the 48 contiguous states and the District of Columbia (DC).",
+      "words": 20
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "Poverty guidelines are higher in Alaska and Hawaii, and the 2026 table adds $5,680 for each person past eight.",
+      "words": 19
+    },
+    {
+      "field": "ACA Subsidy Income Limits for 2027",
+      "text": "Households in either group should rely on the Marketplace application for their figure.",
+      "words": 13
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "The benchmark is the monthly premium for the second-lowest-cost Silver plan that applies to your coverage family, and it sets the size of the credit.",
+      "words": 25
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "Your chosen plan's premium, which the IRS calls the enrollment premium, acts only as a ceiling.",
+      "words": 16
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "The calculator asks for both numbers because they do different jobs in the formula.",
+      "words": 14
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "The IRS settles two edge cases for the benchmark.",
+      "words": 9
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "If only one Silver plan is available where you live, that plan counts as the second-lowest-cost Silver plan.",
+      "words": 18
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "If the two cheapest Silver plans cost the same, that shared premium is the benchmark.",
+      "words": 15
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "Tobacco use changes only one of the two inputs.",
+      "words": 9
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "The benchmark leaves out tobacco surcharges, so enter the non-tobacco price.",
+      "words": 11
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "The enrollment premium is the amount you are charged, so a tobacco user enters the higher plan price.",
+      "words": 18
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "The IRS gives an example of both rules.",
+      "words": 8
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "A $900 non-smoker benchmark is used even though smokers are quoted $1,200 for that plan.",
+      "words": 15
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "A tobacco user charged $650 for the chosen plan uses $650 as the enrollment premium, even though the non-tobacco price is $500.",
+      "words": 22
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "The ceiling comes into play when you pick a cheaper plan.",
+      "words": 11
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "If the benchmark minus your contribution is more than your plan's premium, the credit stops at that premium. ",
+      "words": 18
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "The calculator has no ZIP code database and no built-in prices.",
+      "words": 11
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "Its $600 benchmark and $550 plan defaults are hypothetical numbers for the arithmetic.",
+      "words": 13
+    },
+    {
+      "field": "The Benchmark and Your Chosen Plan",
+      "text": "When you apply, the Marketplace estimates your credit from your family size, projected income, and other coverage, and the plan prices it shows are the figures to enter here.",
+      "words": 29
+    },
+    {
+      "field": "A Worked Federal Premium-Credit Calculation",
+      "text": "In our calculation, a two-person household with $50,000 of expected 2027 MAGI, a $600 benchmark, and a $550 chosen plan gets a $268.85 monthly federal credit and pays $281.15 a month.",
+      "words": 31
+    },
+    {
+      "field": "A Worked Federal Premium-Credit Calculation",
+      "text": "Both premiums are illustrative and come from no ZIP code quote.",
+      "words": 11
+    },
+    {
+      "field": "A Worked Federal Premium-Credit Calculation",
+      "text": "The arithmetic assumes every other eligibility condition is met.",
+      "words": 9
+    },
+    {
+      "field": "A Worked Federal Premium-Credit Calculation",
+      "text": "A second case shows the premium cap.",
+      "words": 7
+    },
+    {
+      "field": "A Worked Federal Premium-Credit Calculation",
+      "text": "Keep two people, then set MAGI at $30,000, the benchmark at $900, and the chosen plan at $100 a month, assuming every other eligibility condition is met, including that no one is eligible for Medicaid.",
+      "words": 35
+    },
+    {
+      "field": "A Worked Federal Premium-Credit Calculation",
+      "text": "Income is 138.63% of FPL, the applicable percentage is about 3.58%, and the monthly contribution is $89.61.",
+      "words": 17
+    },
+    {
+      "field": "A Worked Federal Premium-Credit Calculation",
+      "text": "The benchmark minus that contribution is far more than the $100 plan premium.",
+      "words": 13
+    },
+    {
+      "field": "A Worked Federal Premium-Credit Calculation",
+      "text": "The credit cannot exceed the $100 plan premium, so the credit is $100 and the net premium is $0.",
+      "words": 19
+    },
+    {
+      "field": "A Worked Federal Premium-Credit Calculation",
+      "text": "Read together, the two cases show how each input works.",
+      "words": 10
+    },
+    {
+      "field": "A Worked Federal Premium-Credit Calculation",
+      "text": "Income sets the contribution.",
+      "words": 4
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "The calculator's figure does not apply to anyone eligible for government coverage that counts as qualifying health coverage, anyone with affordable employer coverage, or a household that fails the IRS filing rules.",
+      "words": 32
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "The calculator asks you to confirm these conditions before it shows a credit.",
+      "words": 13
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "Government coverage: a person eligible for Medicaid, the Children's Health Insurance Program (CHIP), Medicare, or another government program that counts as qualifying health coverage cannot get the credit for that person's Marketplace coverage.",
+      "words": 33
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "Limited-benefit Medicaid that does not count is an exception.",
+      "words": 9
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "Employer offers: an offer for 2027 plan years is generally affordable if the employee's self-only premium share is no more than 10.22% of household income.",
+      "words": 25
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "The test uses the lowest-cost plan that covers at least 60% of expected costs, and family members' offers apply the same percentage to the family premium.",
+      "words": 26
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "Employer enrollment: enrolling in an employer plan, including retiree coverage, blocks the credit even if that plan is unaffordable.",
+      "words": 19
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "Coverage from a former employer, including retiree coverage, can be declined, and the credit may still be available.",
+      "words": 18
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "Filing rules: married couples who file separately generally cannot claim the credit, with an exception for certain victims of domestic abuse or spousal abandonment.",
+      "words": 24
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "A person who can be claimed as a dependent by someone else cannot claim it.",
+      "words": 15
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "A new Medicaid rule starts January 1, 2027.",
+      "words": 8
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "HealthCare.gov says states that cover adults based on income alone may require a monthly work requirement for Medicaid.",
+      "words": 18
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "A person who lost or was denied Medicaid for not meeting that requirement may get Marketplace coverage but will not qualify for savings, so leave eligibility unconfirmed and the calculator shows an explanation in place of a credit.",
+      "words": 38
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "Limited Medicaid works differently.",
+      "words": 4
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "Some programs pay only for family planning, emergency treatment, or tuberculosis services.",
+      "words": 12
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "If your state's program does not count as qualifying health coverage, you may still get the premium tax credit when you meet the income and other rules.",
+      "words": 27
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "The calculator does not evaluate immigration status or state programs.",
+      "words": 10
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "Three facts can reverse an estimate: an affordable employer offer, eligibility for Medicaid or another government program that counts as qualifying coverage, and changes in law or plan prices.",
+      "words": 29
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "The official next step is a Marketplace application.",
+      "words": 8
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "HealthCare.gov says the application sends your information to your state if anyone in the household may qualify for Medicaid or CHIP.",
+      "words": 21
+    },
+    {
+      "field": "When the ACA Estimate Does Not Apply",
+      "text": "It also tells you whether you qualify for savings on a Marketplace plan.",
+      "words": 13
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "Advance payments of the premium tax credit are an estimate, and your final 2027 credit is figured on your tax return from actual household income and family size.",
+      "words": 28
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "If the advance payments were larger than the final credit, the IRS sets no repayment cap for tax years after 2025.",
+      "words": 21
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "The full difference reduces your refund or raises your balance due, and if the final credit is larger, the difference goes to you.",
+      "words": 23
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "Reporting changes to the Marketplace as soon as they happen lets it adjust your advance payments.",
+      "words": 16
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "The IRS lists these events among those that can change the credit:",
+      "words": 12
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "a lump-sum Social Security or Social Security Disability Insurance payment",
+      "words": 10
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "a taxable lump-sum distribution from an individual retirement account or other retirement arrangement",
+      "words": 13
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "capital gains from selling stocks, bonds, or cryptocurrency",
+      "words": 8
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "canceled debt, such as forgiven credit card debt",
+      "words": 8
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "marriage, divorce, a birth or adoption, or a move",
+      "words": 9
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "gaining or losing eligibility for employer or government coverage",
+      "words": 9
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "Filing a return is required.",
+      "words": 5
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "Anyone with advance payments must file a federal return with Form 8962, and skipping that return ends advance payments in future years.",
+      "words": 22
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "Plan the premium around a range of incomes.",
+      "words": 8
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "Run the calculator at a low and a high 2027 income estimate, compare the two net premiums, and set aside the difference if your income can swing.",
+      "words": 27
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "Our guide on how to budget with irregular income covers health insurance costs without an employer plan, and you can put the premium in a household budget.",
+      "words": 27
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "The estimate holds only with a correct benchmark premium and annual MAGI, not take-home pay alone.",
+      "words": 16
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "An affordable employer offer, qualifying government coverage, or changed law or plan prices can reverse it.",
+      "words": 16
+    },
+    {
+      "field": "Updating Income Before Tax Reconciliation",
+      "text": "Compare income scenarios in the calculator above, then update your Marketplace application whenever your income changes.",
+      "words": 16
+    },
+    {
+      "field": "What is ACA subsidy based on?",
+      "text": "The ACA premium tax credit is based on expected household modified adjusted gross income (MAGI) compared with the federal poverty level for your household size, plus the benchmark Silver premium for your coverage family.",
+      "words": 34
+    },
+    {
+      "field": "What is ACA subsidy based on?",
+      "text": "The income sets your contribution, the benchmark minus that contribution sets the credit, and the premium of the plan you enroll in caps it.",
+      "words": 24
+    },
+    {
+      "field": "How to qualify for ACA subsidy?",
+      "text": "You qualify by meeting every IRS condition, not income alone.",
+      "words": 10
+    },
+    {
+      "field": "How to qualify for ACA subsidy?",
+      "text": "Household income must fall in the allowed range, you cannot file married filing separately (with a limited abuse or abandonment exception), and no one else can claim you as a dependent.",
+      "words": 31
+    },
+    {
+      "field": "How to qualify for ACA subsidy?",
+      "text": "The person covered must be enrolled in a non-catastrophic Marketplace plan, lack affordable employer coverage, be ineligible for government coverage that counts as qualifying coverage, such as most Medicaid or Medicare (limited-benefit Medicaid that does not count is an exception), and pay the share of premiums the credit does not cover.",
+      "words": 51
+    },
+    {
+      "field": "What is the maximum ACA subsidy?",
+      "text": "The ACA subsidy can be as large as the full premium of the plan you enroll in, because the IRS caps the credit at enrollment premiums.",
+      "words": 26
+    },
+    {
+      "field": "What is the maximum ACA subsidy?",
+      "text": "Below that cap, the size depends on how far the benchmark premium exceeds your income-based contribution.",
+      "words": 16
+    },
+    {
+      "field": "What is the maximum ACA subsidy?",
+      "text": "In our lower-income example, two people with $30,000 of MAGI, a $900 benchmark, and a $100 plan get a $100 credit and pay $0, assuming every other eligibility condition is met.",
+      "words": 31
+    },
+    {
+      "field": "What are the ACA subsidy income limits?",
+      "text": "For 2027 coverage, the ordinary range is 100% to 400% of the 2026 federal poverty level in the 48 contiguous states and DC.",
+      "words": 23
+    },
+    {
+      "field": "What are the ACA subsidy income limits?",
+      "text": "That is $15,960 to $63,840 for one person, $21,640 to $86,560 for two, and $33,000 to $132,000 for four.",
+      "words": 19
+    },
+    {
+      "field": "What are the ACA subsidy income limits?",
+      "text": "Alaska and Hawaii use higher poverty guidelines, and income inside the range does not establish eligibility on its own.",
+      "words": 19
+    },
+    {
+      "field": "Is ACA subsidy based on adjusted gross income?",
+      "text": "The ACA subsidy is based on modified adjusted gross income, which starts with adjusted gross income from line 11 of Form 1040.",
+      "words": 22
+    },
+    {
+      "field": "Is ACA subsidy based on adjusted gross income?",
+      "text": "You add untaxed foreign income, non-taxable Social Security benefits, and tax-exempt interest, and you leave out Supplemental Security Income.",
+      "words": 19
+    },
+    {
+      "field": "Is ACA subsidy based on adjusted gross income?",
+      "text": "For many people the two figures are the same or very close.",
+      "words": 12
+    }
+  ],
+  "longRuns": [
+    {
+      "start": 133,
+      "lengths": [
+        31,
+        51,
+        26,
+        16,
+        31,
+        23,
+        19,
+        19,
+        22,
+        19
+      ],
+      "first": "Household income must fall in the allowed range, you cannot file married filing separately (with a limited abuse or abandonment exception), and no one else can claim you as a dependent.",
+      "last": "You add untaxed foreign income, non-taxable Social Security benefits, and tax-exempt interest, and you leave out Supplemental Security Income."
+    }
+  ],
+  "distribution": {
+    "short": 27,
+    "medium": 37,
+    "long": 79
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "author": "root",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/budget/aca-subsidy-calculator/",
+      "expectedUpdatedDate": "2026-11-04"
+    }
+  ]
+}

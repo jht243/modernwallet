@@ -1,0 +1,173 @@
+{
+  "status": "observed-browser-checks-completed-not-final-PASS",
+  "http": 200,
+  "errors": [],
+  "widths": {
+    "page": 390,
+    "viewport": 390,
+    "tableWidth": 350,
+    "tableScroll": 350
+  },
+  "toc": [
+    {
+      "href": "#benefits-comparison",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-1",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-2",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-3",
+      "exists": true
+    },
+    {
+      "href": "#benefits-section-4",
+      "exists": true
+    },
+    {
+      "href": "#benefits-next-step",
+      "exists": true
+    }
+  ],
+  "links": [
+    {
+      "text": "ModernWallet",
+      "href": "/"
+    },
+    {
+      "text": "Jonathan Velez",
+      "href": "/about/"
+    },
+    {
+      "text": "Medicaid",
+      "href": "https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/"
+    },
+    {
+      "text": "Health Insurance Marketplace",
+      "href": "https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/"
+    },
+    {
+      "text": "HealthCare.gov",
+      "href": "https://www.healthcare.gov/medicaid-limited-benefits/"
+    },
+    {
+      "text": "Marketplace Coverage and Medicaid Are Different",
+      "href": "#benefits-comparison"
+    },
+    {
+      "text": "Eligibility Determines Premium Savings",
+      "href": "#benefits-section-1"
+    },
+    {
+      "text": "Household Income Is Not the Only Test",
+      "href": "#benefits-section-2"
+    },
+    {
+      "text": "Applying Through the Marketplace or Your State",
+      "href": "#benefits-section-3"
+    },
+    {
+      "text": "Rules to Check for 2027 Coverage",
+      "href": "#benefits-section-4"
+    },
+    {
+      "text": "The Next Step Before Choosing a Plan",
+      "href": "#benefits-next-step"
+    },
+    {
+      "text": "Internal Revenue Service (IRS)",
+      "href": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit"
+    },
+    {
+      "text": "Advertise With Us →",
+      "href": "/sponsor?from=%2Fcompare%2Faca-vs-medicaid%2F"
+    },
+    {
+      "text": "Medicaid minimum essential coverage lookup",
+      "href": "https://www.healthcare.gov/medicaid-limited-benefits/"
+    },
+    {
+      "text": "federal poverty level table",
+      "href": "https://www.healthcare.gov/glossary/federal-poverty-level-fpl/"
+    },
+    {
+      "text": "HealthCare.gov's income guide",
+      "href": "https://www.healthcare.gov/income-and-household-information/income/"
+    },
+    {
+      "text": "Medicaid and CHIP coverage page",
+      "href": "https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/"
+    },
+    {
+      "text": "Marketplace quick guide",
+      "href": "https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/"
+    },
+    {
+      "text": "Medicaid and CHIP coverage page",
+      "href": "https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/"
+    },
+    {
+      "text": "Marketplace quick guide",
+      "href": "https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/"
+    },
+    {
+      "text": "HealthCare.gov",
+      "href": "https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/"
+    },
+    {
+      "text": "plan the monthly premium",
+      "href": "/budget/household-budget-calculator/"
+    },
+    {
+      "text": "budget insurance with irregular income",
+      "href": "/guides/how-to-budget-with-irregular-income/"
+    },
+    {
+      "text": " Household budget calculator → ",
+      "href": "/budget/household-budget-calculator/"
+    },
+    {
+      "text": " How to budget with irregular income → ",
+      "href": "/guides/how-to-budget-with-irregular-income/"
+    },
+    {
+      "text": "calculator methodology",
+      "href": "/methodology/"
+    },
+    {
+      "text": "editorial policy",
+      "href": "/editorial-policy/"
+    },
+    {
+      "text": "HealthCare.gov: Medicaid and CHIP coverage",
+      "href": "https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/"
+    },
+    {
+      "text": "HealthCare.gov: Find out if your Medicaid program counts as minimum essential coverage",
+      "href": "https://www.healthcare.gov/medicaid-limited-benefits/"
+    },
+    {
+      "text": "HealthCare.gov: A quick guide to the Health Insurance Marketplace",
+      "href": "https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/"
+    },
+    {
+      "text": "IRS: Questions and answers on the Premium Tax Credit",
+      "href": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit"
+    },
+    {
+      "text": "HealthCare.gov: What to include as income",
+      "href": "https://www.healthcare.gov/income-and-household-information/income/"
+    },
+    {
+      "text": "HealthCare.gov: Federal poverty level (FPL)",
+      "href": "https://www.healthcare.gov/glossary/federal-poverty-level-fpl/"
+    }
+  ],
+  "faqOpened": true,
+  "heading": "Affordable Care Act (ACA) Marketplace Coverage vs Medicaid"
+}

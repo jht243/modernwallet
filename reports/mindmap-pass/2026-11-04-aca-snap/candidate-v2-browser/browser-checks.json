@@ -1,0 +1,340 @@
+{
+  "base": "http://127.0.0.1:4396",
+  "startedAt": "2026-11-05T03:25:20.031Z",
+  "externalRequestsBlocked": true,
+  "pages": [
+    {
+      "path": "/",
+      "title": "ModernWallet — Free Financial Calculators",
+      "headings": [
+        "Calculators",
+        "Popular calculators",
+        "Why trust these calculators"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/candidate-v2-browser/dom/index.html",
+      "htmlLength": 99230
+    },
+    {
+      "path": "/budget/",
+      "title": "Budget Calculator: Plan Your Monthly Spending",
+      "headings": [
+        "Budget calculators",
+        "How it works",
+        "Frequently asked questions",
+        "Sources",
+        "Plan the bigger picture"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/candidate-v2-browser/dom/budget/index.html",
+      "htmlLength": 90325
+    },
+    {
+      "path": "/budget/aca-subsidy-calculator/",
+      "title": "ACA Subsidy Calculator for 2027 Marketplace Premiums",
+      "headings": [
+        "How ACA Subsidies Are Calculated",
+        "Income for the 2027 ACA Subsidy Calculator",
+        "ACA Subsidy Income Limits for 2027",
+        "The Benchmark and Your Chosen Plan",
+        "A Worked Federal Premium-Credit Calculation",
+        "When the ACA Subsidy Calculator Does Not Apply",
+        "Updating Income Before Tax Reconciliation",
+        "Frequently Asked Questions",
+        "Sources",
+        "Plan the Bigger Picture"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [
+        "Unknown eligibility suppresses credit",
+        "Confirmed default268.85/net281.15",
+        "Exact133%correct3.23",
+        "400%credit262.80",
+        "Above400%withholds estimate",
+        "Clipboard contains inputs and result",
+        "Downloaded text contains inputs and result"
+      ],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/candidate-v2-browser/dom/budget/aca-subsidy-calculator/index.html",
+      "htmlLength": 81451
+    },
+    {
+      "path": "/budget/household-budget-calculator/",
+      "title": "Household Budget Calculator: Plan Family Spending",
+      "headings": [
+        "How it's calculated",
+        "A worked example",
+        "Common mistakes to avoid",
+        "Frequently asked questions",
+        "Sources",
+        "Related budget calculators",
+        "Plan the bigger picture"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/candidate-v2-browser/dom/budget/household-budget-calculator/index.html",
+      "htmlLength": 78104
+    },
+    {
+      "path": "/budget/snap-benefits-calculator/",
+      "title": "SNAP Benefits Calculator for a Monthly Food Budget",
+      "headings": [
+        "How SNAP Benefits Are Calculated",
+        "Income and Deductions for the SNAP Benefits Calculator",
+        "SNAP Income Limits Are a Federal Reference",
+        "SNAP Benefits for Older or Disabled Members",
+        "A Full-Month SNAP Worked Example",
+        "What the SNAP Benefits Calculator Cannot Decide",
+        "Your Next Step",
+        "Frequently Asked Questions",
+        "Sources",
+        "Plan the Bigger Picture"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [
+        "Default766",
+        "Shelter1400→826",
+        "High-income unknown suppresses amount",
+        "State-confirmed conditional minimum25",
+        "Unsupported region blocks result",
+        "Clipboard contains inputs and result",
+        "Downloaded text contains inputs and result"
+      ],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/candidate-v2-browser/dom/budget/snap-benefits-calculator/index.html",
+      "htmlLength": 77410
+    },
+    {
+      "path": "/calculators/",
+      "title": "All Financial Calculators — ModernWallet",
+      "headings": [
+        " Auto Loan Calculator  ",
+        " Mortgage Calculator  ",
+        " Retirement Calculator  ",
+        " Investing Calculator  ",
+        " Portfolio Calculator  ",
+        " Real Estate Calculator  ",
+        " Net Worth Calculator  ",
+        " Budget Calculator  ",
+        " Tax Resolution Calculator  ",
+        " Estate Planning Calculator  ",
+        " Probate Calculator  ",
+        " Elder Care Calculator  ",
+        " Trump Account Calculator  ",
+        " 529 College Savings Calculator  ",
+        " Coast FIRE Calculator  ",
+        " Business Loan Payoff Calculator  ",
+        " Personal Loan Calculator  ",
+        " Interest Per Day Calculator  ",
+        " Taxable vs. Tax-Deferred Calculator  ",
+        " Credit Card Payoff Calculator  ",
+        " IUL Calculator  ",
+        " Merchant Cash Advance Calculator  ",
+        " Invoice Factoring Calculator  ",
+        " Business Line of Credit Calculator  ",
+        " PTO Cash-Out Calculator  ",
+        " Zakat Calculator  ",
+        " Life Insurance Needs Calculator  ",
+        " Self-Employment Tax Calculator  ",
+        " Operating Cash Flow Calculator  ",
+        " Mileage Deduction Calculator  ",
+        " Cash Conversion Cycle Calculator  ",
+        " Freelance Rate Calculator  ",
+        " HELOC Calculator  ",
+        " S-Corp Tax Calculator  ",
+        " Commercial Mortgage Calculator  ",
+        " CD Calculator Calculator  ",
+        " Emergency Fund Calculator  ",
+        " Debt Consolidation Calculator  ",
+        " Inflation Calculator  ",
+        " Expense Ratio Calculator  ",
+        " Social Security Break-Even Calculator  ",
+        " Mileage Reimbursement Calculator  ",
+        " Portfolio Rebalancing Calculator  ",
+        " Hurricane Deductible Calculator  ",
+        " Annuity Calculator  ",
+        " Credit Card Interest Calculator  ",
+        " Loan Payment Calculator  ",
+        " HYSA vs CD Calculator  ",
+        " Trump Account vs 529 Calculator  ",
+        " Mortgage Recast Calculator  ",
+        " Social Security COLA Calculator  ",
+        " Biweekly Mortgage Calculator  ",
+        " Roth vs Traditional 401(k) Calculator  ",
+        " Pay Off Mortgage or Invest Calculator  ",
+        " Florida Amendment 3 Calculator  ",
+        " Student Loan Garnishment Calculator  ",
+        " Tax Bracket Calculator  ",
+        " Debt-to-Income Ratio Calculator  ",
+        " Taxable Social Security Calculator  ",
+        " Checklists Calculator  ",
+        " Charitable Donation Deduction Calculator  ",
+        " Car Loan Interest Deduction Calculator  ",
+        " Rent vs Buy Calculator  ",
+        " Stock Capital Gains Tax Calculator  ",
+        " Hidden Cost of Owning a Home Calculator  "
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/candidate-v2-browser/dom/calculators/index.html",
+      "htmlLength": 232763
+    },
+    {
+      "path": "/compare/",
+      "title": "Money Comparisons — ModernWallet",
+      "headings": [],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/candidate-v2-browser/dom/compare/index.html",
+      "htmlLength": 91743
+    },
+    {
+      "path": "/compare/aca-vs-medicaid/",
+      "title": "ACA vs Medicaid Coverage Compared for U.S. Households",
+      "headings": [
+        "Marketplace Coverage and Medicaid Are Different",
+        "ACA vs Medicaid Eligibility and Savings",
+        "ACA vs Medicaid Income Rules",
+        "Applying Through the Marketplace or Your State",
+        "Rules to Check for 2027 Coverage",
+        "The Next Step Before Choosing a Plan",
+        "Frequently Asked Questions",
+        "Related Resources",
+        "Sources"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/candidate-v2-browser/dom/compare/aca-vs-medicaid/index.html",
+      "htmlLength": 67681
+    },
+    {
+      "path": "/compare/snap-vs-wic/",
+      "title": "SNAP vs WIC Food Benefits Compared for U.S. Households",
+      "headings": [
+        "SNAP and WIC Eligibility and Food Benefits",
+        "Eligible Families Can Receive Both",
+        "SNAP vs WIC Household Rules",
+        "SNAP vs WIC Food Benefits",
+        "How to Apply Through the Right Agency",
+        "The Next Step for Your Household",
+        "Frequently Asked Questions",
+        "Related Resources",
+        "Sources"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/candidate-v2-browser/dom/compare/snap-vs-wic/index.html",
+      "htmlLength": 62540
+    },
+    {
+      "path": "/guides/",
+      "title": "Money Guides — Step-by-Step Guides by ModernWallet",
+      "headings": [],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/candidate-v2-browser/dom/guides/index.html",
+      "htmlLength": 197773
+    },
+    {
+      "path": "/guides/how-to-apply-for-food-stamps/",
+      "title": "Apply for Food Stamps Through Your State SNAP Office",
+      "headings": [
+        "Apply for Food Stamps in These Steps",
+        "What to Have Ready for the SNAP Application",
+        "Where to Apply Online or Get Help",
+        "What Happens After You Apply",
+        "When to Ask About Expedited SNAP Service",
+        "If Your Notice or Application Needs Follow-Up",
+        "The Next Step for Your Food Budget",
+        "Frequently Asked Questions",
+        "Sources"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/candidate-v2-browser/dom/guides/how-to-apply-for-food-stamps/index.html",
+      "htmlLength": 61099
+    },
+    {
+      "path": "/guides/how-to-budget-with-irregular-income/",
+      "title": "How to Budget With Irregular Income (Step by Step)",
+      "headings": [
+        "How Do You Find a Realistic Baseline Income When Pay Changes Every Month?",
+        "How Do You Build a Zero-Based Budget Around a Baseline Number?",
+        "How Should a Buffer Fund Be Sized for Income That Goes Up and Down?",
+        "How Do Quarterly Estimated Taxes Work for Self-Employed Income?",
+        "How Do Freelancers Budget for Health Insurance Without an Employer Plan?",
+        "How Can Self-Employed Workers Save for Retirement Without a 401(k) Match?",
+        "What's the Best Way to Handle Money During a Good Month?",
+        "How Do You Track Financial Progress When Income Isn't Steady?",
+        "Frequently asked questions",
+        "Sources"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/candidate-v2-browser/dom/guides/how-to-budget-with-irregular-income/index.html",
+      "htmlLength": 59344
+    },
+    {
+      "path": "/guides/how-to-make-a-budget/",
+      "title": "How to Make a Budget in Four Steps (Beginner Guide)",
+      "headings": [
+        "The Four Steps to Build a Budget from Scratch",
+        "Where the Numbers Come from When You Make a Budget",
+        "Choosing Between 50/30/20 and Zero-Based Budgets",
+        "Fixed Costs, Flexible Costs and Pay-Yourself-First Timing",
+        "A Bill Calendar for Tight Weeks",
+        "Why Budgets Fail in the First Three Months",
+        "Which Calculator Fits the Way You Make a Budget",
+        "Frequently asked questions",
+        "Sources"
+      ],
+      "width": {
+        "scroll": 390,
+        "viewport": 390
+      },
+      "toolTests": [],
+      "domFile": "reports/mindmap-pass/2026-11-04-aca-snap/candidate-v2-browser/dom/guides/how-to-make-a-budget/index.html",
+      "htmlLength": 57318
+    }
+  ],
+  "checks": [],
+  "pageErrors": [],
+  "status": "PASS",
+  "completedAt": "2026-11-05T03:25:51.171Z"
+}

@@ -2,6 +2,8 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Byline from "../../components/Byline.astro";
 import Sources from "../../components/Sources.astro";
+import BenefitsNotice from "../../components/BenefitsNotice.astro";
+import { benefitBody, benefitParagraphs } from "../../lib/benefits-text";
 import { SITE, LAST_UPDATED } from "../../data/site";
 import { GUIDES } from "../../data/guides";
 import { linkify, plain, paragraphs, richBody } from "../../lib/richtext";
@@ -35,7 +37,7 @@ const showSponsor =
   /(^best-|-vs-|alternatives|-review$)/.test(guide.slug) && !guide.slug.startsWith("how-to-");
 const preserveRobinhoodSourceLinks = guide.slug === "is-robinhood-gold-worth-it";
 const richTextOptions = { preserveSourceUrls: preserveRobinhoodSourceLinks ? (guide.sources ?? []).map((source) => source.url) : [] };
-const renderedSections = guide.sections.map((s) => ({ ...s, html: richBody(s.body, richTextOptions) }));
+const renderedSections = guide.sections.map((s) => ({ ...s, html: guide.disclaimerText ? benefitBody(s.body) : richBody(s.body, richTextOptions) }));
 const firstTableIdx = renderedSections.findIndex((s) => s.html.includes("<table"));
 const sponsorAfterIdx = showSponsor
   ? (firstTableIdx >= 0 ? firstTableIdx : renderedSections.length - 1)
@@ -70,7 +72,7 @@ const jsonLdArticle = articleSchema({
   sources: guide.sources,
 });
 ---
-<BaseLayout title={guide.title} description={guide.metaDescription} noAds={guide.noAds} affiliateDisclosureText={["how-to-make-a-budget", "how-to-budget-for-teens-college-students", "is-robinhood-gold-worth-it"].includes(guide.slug) ? "Some links on this site are referral or affiliate links. We may earn a reward or commission at no cost to you." : undefined}>
+<BaseLayout title={guide.title} description={guide.metaDescription} noAds={guide.noAds} affiliateDisclosureText={(Boolean(guide.disclaimerText) || ["how-to-make-a-budget", "how-to-budget-for-teens-college-students", "is-robinhood-gold-worth-it"].includes(guide.slug)) ? "Some links on this site are referral or affiliate links. We may earn a reward or commission at no cost to you." : undefined}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
   {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdPerson)} />
@@ -86,7 +88,7 @@ const jsonLdArticle = articleSchema({
     <header class="hero">
       <h1>{guide.h1}</h1>
       <Byline updated={guide.updated} />
-      {paragraphs(guide.introText).map((para) => <p class="lede" {...(guide.slug === "how-to-buy-anthropic-stock" ? { "data-no-entity-link": "" } : {})} set:html={linkify(para, richTextOptions)} />)}
+      {(guide.disclaimerText ? benefitParagraphs(guide.introText) : paragraphs(guide.introText)).map((para) => <p class="lede" {...(guide.slug === "how-to-buy-anthropic-stock" ? { "data-no-entity-link": "" } : {})} set:html={linkify(para, richTextOptions)} />)}
     </header>
 
     <section class="tools" aria-label="Tools for this journey">
@@ -98,10 +100,12 @@ const jsonLdArticle = articleSchema({
       </div>
     </section>
 
+    {guide.disclaimerText && <nav class="benefits-toc" aria-label="On This Page"><strong>On This Page</strong><ol>{renderedSections.map((section, i) => <li><a href={`#benefits-section-${i + 1}`}>{section.heading}</a></li>)}</ol></nav>}
+
     {renderedSections.map((s, i) => (
       <>
         <section class="section" {...(guide.slug === "how-to-buy-anthropic-stock" ? { "data-no-entity-link": "" } : {})}>
-          <h2 id={APPROVED_SECTION_ANCHORS[guide.slug]?.[s.heading]}>{s.heading}</h2>
+          <h2 id={guide.disclaimerText ? `benefits-section-${i + 1}` : APPROVED_SECTION_ANCHORS[guide.slug]?.[s.heading]}>{s.heading}</h2>
           <Fragment set:html={s.html} />
         </section>
         {i === sponsorAfterIdx && <SponsorSlot path={`/guides/${guide.slug}/`} />}
@@ -109,12 +113,12 @@ const jsonLdArticle = articleSchema({
     ))}
 
     <section class="section" {...(guide.slug === "how-to-buy-anthropic-stock" ? { "data-no-entity-link": "" } : {})}>
-      <h2>Frequently asked questions</h2>
+      <h2>{guide.disclaimerText ? "Frequently Asked Questions" : "Frequently asked questions"}</h2>
       <div class="faqs">
         {guide.faqs.map((f) => (
           <details class="faq">
             <summary><h3>{f.question}</h3></summary>
-            <p set:html={linkify(f.answer, richTextOptions)} />
+            {guide.disclaimerText ? benefitParagraphs(f.answer).map((para) => <p set:html={linkify(para, richTextOptions)} />) : <p set:html={linkify(f.answer, richTextOptions)} />}
           </details>
         ))}
       </div>
@@ -122,9 +126,13 @@ const jsonLdArticle = articleSchema({
 
     {BUSINESS_GUIDE_SLUGS.has(guide.slug) && <LeadForm heading="Ready to compare real financing offers?" />}
     <Sources sources={guide.sources} preserveEditorialSourceLinks={preserveRobinhoodSourceLinks} />
+    {guide.disclaimerText && <BenefitsNotice text={guide.disclaimerText} />}
   </main>
 
   <style>
+    .benefits-toc { padding: 18px; margin: 20px 0; border: 1px solid #d8eee6; border-radius: 10px; }
+    .benefits-toc ol { padding-left: 22px; line-height: 1.8; margin-bottom: 0; }
+    h2[id^="benefits-section-"] { scroll-margin-top: 80px; }
     .page { max-width: 920px; margin: 0 auto; padding: 16px 20px 56px; }
     .crumb { font-size: 0.875rem; color: #666; padding: 8px 0 12px; }
     .crumb a { color: var(--primary-dark); text-decoration: none; }

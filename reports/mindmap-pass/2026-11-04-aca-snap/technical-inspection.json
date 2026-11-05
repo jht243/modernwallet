@@ -1,0 +1,86 @@
+[
+  {
+    "path": "src/components/SiteHeader.astro",
+    "sha256": "40fc220cd3bf1e8e9a072d28e83ad14f5426b02aed8480db0f43ab576ec1dedf"
+  },
+  {
+    "path": "src/components/CalculatorIsland.tsx",
+    "sha256": "532ff319d5b958ae77865a13409d08dd9fad106ab85f697ff9a74aa462b483c9"
+  },
+  {
+    "path": "src/data/spokes-budget.ts",
+    "sha256": "72ba8da4b9d0b8cd21c59759ea40f03491c2777d7a9779820f01b3908685899e"
+  },
+  {
+    "path": "src/data/types.ts",
+    "sha256": "1b95ed0ae3b7885307ef49a8cc85e943d73b78c88efd6bb9c4d47bec49d07780"
+  },
+  {
+    "path": "src/data/calculators.ts",
+    "sha256": "715f3e60de89cf1398e94155c0fd66a836ca7144bc1d53b91391328f251d1337"
+  },
+  {
+    "path": "src/pages/[category]/[slug].astro",
+    "sha256": "9d0df287f65cc2452c69af1cdee942743008aeccd02d47307f1458395ea6263c"
+  },
+  {
+    "path": "src/pages/[category]/index.astro",
+    "sha256": "40205c79a3e01d16cdbc74763e05fbb2080c74855753435ef8147ef1432f33c6"
+  },
+  {
+    "path": "src/pages/guides/[slug].astro",
+    "sha256": "5b8df559564c159a40e3a69be0577b09ca6f720954f35acecf94d7bd57814a1f"
+  },
+  {
+    "path": "src/pages/guides/index.astro",
+    "sha256": "bde6a5662d88ed589c976e72b02ae8477cc03f471cdcd4d2b4aeec289eee6873"
+  },
+  {
+    "path": "src/pages/compare/[slug].astro",
+    "sha256": "99b94122b6deda4231f5b052957ec6c1a6e225569aa4bcc70d9b4f77b83b01b0"
+  },
+  {
+    "path": "src/pages/compare/index.astro",
+    "sha256": "5269279e97d932db1f9378fb4d9fa036f58e106682f5b357269970c3a09431bd"
+  },
+  {
+    "path": "src/pages/index.astro",
+    "sha256": "de4b1c23dce539fb8afefe638d54ec59ba5415c6988515a69451a666947b9941"
+  },
+  {
+    "path": "src/pages/calculators/index.astro",
+    "sha256": "de0ee992481fe946d15680aad824d5d6401920256dd35d90b46b398ac769509d"
+  },
+  {
+    "path": "src/layouts/BaseLayout.astro",
+    "sha256": "9f6bffd3ce23bc5501754aa296ef0a065253b2ae3627c7f703ceb7c6bc0b7253"
+  },
+  {
+    "path": "src/data/site.ts",
+    "sha256": "f906ce20d55bd805628e69d15dfaf13aceafd62c812add6853a21d872d45d357"
+  },
+  {
+    "path": "astro.config.mjs",
+    "sha256": "4408782726d963cc1e08cde0c9c3f0e7c0275c8c0739b410e731feeabe8c55dd"
+  },
+  {
+    "path": "package.json",
+    "sha256": "c406476a67999a8ef0022b8d20e23316f2c3d37e4cae956daef54c859f454402"
+  },
+  {
+    "path": "scripts/entity_links.mjs",
+    "sha256": "92c8df83c4a77c79e501c0d1d5b535d1a0326d8cf7ac0c10e9203916b6d34783"
+  },
+  {
+    "path": "data/entity-links.json",
+    "sha256": "d0fc4e0b484fb38354d0c2a671c9f93717a640babb014f7fc18ee645440f687a"
+  },
+  {
+    "path": "scripts/sponsorship_line.mjs",
+    "sha256": "c1be8d0585d1ec52bc1afba03b1d28e6388e5a129addae5731d8d31e9d46943f"
+  },
+  {
+    "path": ".claude/scripts/indexnow-submit.py",
+    "sha256": "91687a07908e7d025da9413d42cfe06e585d1c631dcdd667324c4354c513d7a8"
+  }
+]

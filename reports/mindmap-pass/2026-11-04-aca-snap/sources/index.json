@@ -1,0 +1,212 @@
+[
+  {
+    "id": "irs-2027",
+    "url": "https://www.irs.gov/irb/2026-31_irb",
+    "resolvedUrl": "https://www.irs.gov/irb/2026-31_irb",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/irs-2027.txt",
+    "sha256": "d7f56a6da8a66170be4f85b77031429e0db092df322b9035fb08388e828e9feb"
+  },
+  {
+    "id": "irs-ptc",
+    "url": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit",
+    "resolvedUrl": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/irs-ptc.txt",
+    "sha256": "36963edce1f96077ad6b2494c17f68c267b84ab9e7f27c82e15b57f108d2a7f2"
+  },
+  {
+    "id": "hc-income",
+    "url": "https://www.healthcare.gov/income-and-household-information/income/",
+    "resolvedUrl": "https://www.healthcare.gov/income-and-household-information/income/",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-income.txt",
+    "sha256": "5dfb2032384557ce8f54bcc21c538eca2f52f072990ac98667858fdf74bf3bea"
+  },
+  {
+    "id": "hc-poverty",
+    "url": "https://www.healthcare.gov/glossary/federal-poverty-level-fpl/",
+    "resolvedUrl": "https://www.healthcare.gov/glossary/federal-poverty-level-fpl/",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-poverty.txt",
+    "sha256": "bbec81d0c481ed542c9517282241930d2443759b41197333e6f18692dc8ce7de"
+  },
+  {
+    "id": "hc-medicaid",
+    "url": "https://www.healthcare.gov/medicaid-chip/qualifying-for-medicaid/",
+    "checked": "2026-11-04",
+    "status": "unavailable",
+    "reason": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "hc-limited",
+    "url": "https://www.healthcare.gov/medicaid-limited-benefits/",
+    "resolvedUrl": "https://www.healthcare.gov/medicaid-limited-benefits/",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-limited.txt",
+    "sha256": "7244780bbf275cd871952c1c647f49dc98b83a2cba71452379e4254142d11436"
+  },
+  {
+    "id": "snap-eligibility",
+    "url": "https://fns-prod.azureedge.us/snap/recipient/eligibility",
+    "resolvedUrl": "https://fns-prod.azureedge.us/snap/recipient/eligibility",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligibility.txt",
+    "sha256": "13160ffc3ba82531a517e7e6f13d4b3df9a75f4a6afb4491a6701880c391c911"
+  },
+  {
+    "id": "snap-cola",
+    "url": "https://fns-prod.azureedge.us/snap/allotment/cola",
+    "resolvedUrl": "https://fns-prod.azureedge.us/snap/allotment/cola",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-cola.txt",
+    "sha256": "f8ebb22951e90e78e6d37cd30fe07c357e76b4c36479b98010459c689c1753c5"
+  },
+  {
+    "id": "snap-state",
+    "url": "https://fns-prod.azureedge.us/snap/state-directory",
+    "resolvedUrl": "https://fns-prod.azureedge.us/snap/state-directory",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-state.txt",
+    "sha256": "8bf6530c65b122cc7b36c4c0ceca308bb97610fb6fe203fbf6cd8d245335b33b"
+  },
+  {
+    "id": "wic-eligibility",
+    "url": "https://fns-prod.azureedge.us/wic/eligibility",
+    "resolvedUrl": "https://fns-prod.azureedge.us/wic/eligibility",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-eligibility.txt",
+    "sha256": "0641315415cf7a3b6a2f97843ff787d0ca2b845f319d7e1b98ad3b8751da1f78"
+  },
+  {
+    "id": "snap-apply",
+    "url": "https://www.usa.gov/food-stamps",
+    "resolvedUrl": "https://www.usa.gov/food-stamps",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-apply.txt",
+    "sha256": "e86cb709edc18e4add040fd933d18e84ff3d4b1dc635719a99cc6b3722df6d0f"
+  },
+  {
+    "id": "wic-ca",
+    "url": "https://myfamily.wic.ca.gov/Home/HowCanIGetWIC",
+    "resolvedUrl": "https://myfamily.wic.ca.gov/Home/HowCanIGetWIC",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-ca.txt",
+    "sha256": "c1eb248119ea632023ab2399c73f82297be1aca5dd38a842e8436d19edc084a2"
+  },
+  {
+    "id": "hc-medicaid-current",
+    "url": "https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/",
+    "resolvedUrl": "https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-medicaid-current.txt",
+    "sha256": "5eccdbf370947aada7cad7c3162a0c7dc52e88753ead5be8c1395fc01dfcd983"
+  },
+  {
+    "id": "hc-marketplace",
+    "url": "https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/",
+    "resolvedUrl": "https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-marketplace.txt",
+    "sha256": "b6f5e73c146e6217293a88bf57f7db49dc5eba218a09f6b3ce89b8b2971ace1a"
+  },
+  {
+    "id": "wic-benefits",
+    "url": "https://fns-prod.azureedge.us/wic/benefits",
+    "resolvedUrl": "https://fns-prod.azureedge.us/wic/benefits",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/wic-benefits.txt",
+    "sha256": "38d49150f3cfb96399f89db81bea967370645c1405a53909d1c673b16ea2d12c"
+  },
+  {
+    "id": "snap-eligible-food",
+    "url": "https://fns-prod.azureedge.us/snap/eligible-food-items",
+    "resolvedUrl": "https://fns-prod.azureedge.us/snap/eligible-food-items",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/snap-eligible-food.txt",
+    "sha256": "8fc837e4e8b3a2bc286843548fead789eba6a39d34c8317340f40cf932487a8d"
+  },
+  {
+    "id": "kff-current-tool",
+    "url": "https://www.kff.org/interactive/subsidy-calculator/",
+    "resolvedUrl": "https://www.kff.org/interactive/subsidy-calculator/",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/kff-current-tool.txt",
+    "sha256": "e625880c075552f725c6248539d49da50612f1bc086fa8e69a3ffcade71a7543"
+  },
+  {
+    "id": "illinois-tool",
+    "url": "https://fscalc.dhs.illinois.gov/FSCalc/calculateFS.do",
+    "checked": "2026-11-04",
+    "status": "unavailable",
+    "reason": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "nwa-comparison",
+    "url": "https://media.nwica.org/wic%20vs%20snap%20fact%20sheet.pdf",
+    "checked": "2026-11-04",
+    "status": "unavailable",
+    "reason": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "mw-budget",
+    "url": "https://www.themodernwallet.com/guides/how-to-make-a-budget/",
+    "resolvedUrl": "https://www.themodernwallet.com/guides/how-to-make-a-budget/",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/mw-budget.txt",
+    "sha256": "b10c2038eff93d2fb14a0bf5206cd3a27c17422a8f60797ce2844195ee855d10"
+  },
+  {
+    "id": "mw-family-budget",
+    "url": "https://www.themodernwallet.com/budget/household-budget-calculator/",
+    "resolvedUrl": "https://www.themodernwallet.com/budget/household-budget-calculator/",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/mw-family-budget.txt",
+    "sha256": "4dd913811a7018117743ab6794a0ec4d0e69f51679860f9f194b65a3befd075b"
+  },
+  {
+    "id": "mw-retire-early",
+    "url": "https://www.themodernwallet.com/retirement/early-retirement-calculator/",
+    "resolvedUrl": "https://www.themodernwallet.com/retirement/early-retirement-calculator/",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/mw-retire-early.txt",
+    "sha256": "d94d0cd10845e6aea902f9f3da3dbc197a194d2d4dd151c7a1ec9e5872b3264c"
+  },
+  {
+    "id": "mw-guides",
+    "url": "https://www.themodernwallet.com/guides/",
+    "resolvedUrl": "https://www.themodernwallet.com/guides/",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/mw-guides.txt",
+    "sha256": "85986a0401ff87736ecf7aa348b6bc9326572e1bb61d58c476d104641a6a2d1e"
+  },
+  {
+    "id": "mw-calculators",
+    "url": "https://www.themodernwallet.com/calculators/",
+    "resolvedUrl": "https://www.themodernwallet.com/calculators/",
+    "checked": "2026-11-04",
+    "status": "captured",
+    "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/mw-calculators.txt",
+    "sha256": "c91ccedc830acd9eefbdf1d8227ebed40c2a19f9563c23c76af4652756bd8bea"
+  }
+]

@@ -1,0 +1,583 @@
+{
+  "rows": [
+    {
+      "seed": "ACA",
+      "keyword": "calulator",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "broad subsidy/general calculator term, no health-benefit intent"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidies",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "obamacare affordable care",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "subsidies",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "broad subsidy/general calculator term, no health-benefit intent"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "subsidy",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "broad subsidy/general calculator term, no health-benefit intent"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "calcuator",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "broad subsidy/general calculator term, no health-benefit intent"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "obama care",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "Valid ACA/Obamacare synonym; broad head intent unselected as separate URL, covered in ACA program explanation."
+    },
+    {
+      "seed": "ACA",
+      "keyword": "calc solver",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "broad subsidy/general calculator term, no health-benefit intent"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "how to calculate percent error",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "broad subsidy/general calculator term, no health-benefit intent"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "calclator",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "broad subsidy/general calculator term, no health-benefit intent"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "obamacare subsidies",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "closing costs calculator",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "broad subsidy/general calculator term, no health-benefit intent"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "date calculator between two dates",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "broad subsidy/general calculator term, no health-benefit intent"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "cauculater",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "broad subsidy/general calculator term, no health-benefit intent"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "healthcare subsidies",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "how much is health insurance",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "what is a subsidy",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "broad subsidy/general calculator term, no health-benefit intent"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "calcukator",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "broad subsidy/general calculator term, no health-benefit intent"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "cheapest health insurance",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "news for affordable care act",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy income limits 2027",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy calculator",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy income limits 2026",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy income limits",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy cliff",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy cliff 2026",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy calculator 2026",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy cliff 2026 family of 2",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy limits",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy amounts",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy assistance",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy amounts 2026",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidy agi",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidies after 2025",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidies abortion",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidies and government shutdown",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidies and congress",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidies annual cost",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "ACA",
+      "keyword": "aca subsidies and medicaid",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "ambiguous entity, not exclusively benefits"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "food stamps",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "my texas benefits",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "stamps",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "postage ambiguity"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "texas benefits",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "supplemental nutrition assistance program",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "apply for food stamps",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "ebt card",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "anchor program",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "New Jersey property-tax relief outside brief"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "fssa",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "agency navigation, no national benefits answer"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "lifeline program",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "telecom benefit outside focus"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits food stamps",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "what is snap",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "food stamp application",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap . site",
+      "source": "semrush",
+      "onTopic": false,
+      "reason": "ambiguous site-navigation query"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "what is ebt",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "ebt application",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "florida food stamps",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "food stamp office",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "food stamps florida",
+      "source": "semrush",
+      "onTopic": true,
+      "reason": "on-topic family; refined through exact metrics and full question sweep"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits login",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits phone number",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits application",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits number",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits requirements",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits income limits",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits calculator",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits for seniors",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits increase",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits app",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits apply",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits amount",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits application online",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits arizona",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits application status",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits apply online",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits alabama",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits account",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    },
+    {
+      "seed": "SNAP",
+      "keyword": "snap benefits balance",
+      "source": "estimate",
+      "onTopic": true,
+      "reason": "autocomplete phrasing kept as discovery only; figures are estimates, replaced by exact SEMrush candidate metrics where selected"
+    }
+  ],
+  "summary": {
+    "ACA": {
+      "providerReturned": 20,
+      "autocompleteReturned": 20,
+      "providerOnTopic": 8,
+      "providerRejected": 12,
+      "autocompleteOnTopic": 20
+    },
+    "SNAP": {
+      "providerReturned": 20,
+      "autocompleteReturned": 20,
+      "providerOnTopic": 14,
+      "providerRejected": 6,
+      "autocompleteOnTopic": 20
+    }
+  },
+  "limits": "20 per source for each of two seeds; neither page quota nor exhaustive coverage",
+  "stopReason": "Both provider caps reached. Completed free full question/alphabet sweeps (278/346 suggestions), fullsearch20 per seed, exact12 candidate checks and8 head SERPs; these identify amount, eligibility, application and comparison families. No further paid expansion needed for a bounded first benefits cluster. Political/news events, state portal navigation and future state pages are excluded or folded into supported pages rather than forced into extra URLs.",
+  "remainingUncertainty": "Snapshot not exhaustive. Provider Google redirect-heavy result-domain counts do not establish locked/winnable competition; explicit caveat retained."
+}

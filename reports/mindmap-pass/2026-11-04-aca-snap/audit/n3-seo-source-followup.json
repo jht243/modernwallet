@@ -1,0 +1,28 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "route": "/compare/snap-vs-wic/",
+  "status": "SEO-source-only-followup-not-content-audit",
+  "findings": [
+    {
+      "field": "introText",
+      "quote": "SNAP and WIC are two separate federal food programs, and a family that qualifies for both can receive both at the same time.",
+      "replacement": "The SNAP vs WIC difference is household grocery purchasing power versus food and nutrition benefits for eligible individual participants. A family that qualifies for both programs can receive both at the same time.",
+      "defect": "Primaryphrase missingfromfirstparagraph; answersapproveddifferenceintent beforecoexistence."
+    }
+  ],
+  "mechanical": [
+    {
+      "field": "section heading",
+      "quote": "Which Household Members Count",
+      "replacement": "SNAP vs WIC Household Rules",
+      "defect": "Firstnaturalexactprimaryphraseheading; preserveapprovedfirstanswerheading."
+    },
+    {
+      "field": "section heading",
+      "quote": "What Each Program Pays For",
+      "replacement": "SNAP vs WIC Food Benefits",
+      "defect": "Secondnaturalexactprimaryphraseheading; preservecontent."
+    }
+  ],
+  "note": "Introcurrentfirstparagraphalready4sentencesbeforethisreplacement; keepparagraphsmax3whenapplyingreplacement. NewfullparagraphcanbreakbeforeWICexpansionwithfirstparagraphcarryingprimaryphrase."
+}

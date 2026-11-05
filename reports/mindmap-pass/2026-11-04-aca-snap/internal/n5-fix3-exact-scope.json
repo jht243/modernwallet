@@ -1,0 +1,14 @@
+{
+  "actor": "benefits_content",
+  "route": "/guides/how-to-apply-for-food-stamps/",
+  "targetedFixRound": 3,
+  "substantiveReworks": 0,
+  "sourceReceipt": "audit/final-rhythm-correction.json",
+  "actualSentence": "Request a fair hearing by phone, in writing or at your SNAP office.",
+  "whitespaceWords": 13,
+  "wordTokensIncludingHyphenParts": 13,
+  "exactScopeVerified": "Only requested fair-hearing sentence changed in N5; all other fieldvalues retained",
+  "moduleBeforeSha256": "e50508adad00123a92017c6b1f8ec41e19963ae5e0c59bc760d5ba679917b6f3",
+  "moduleAfterSha256": "75c17c089c4e8b0a1c807b12f5751933e5af18914d904fd9f2239859d27de9b5",
+  "ledgerAutoStage": false
+}

@@ -1,0 +1,27 @@
+{
+  "originRoutine": "mindmap-pass",
+  "queryFamily": "aca subsidy calculator: 1,900/month, KD54; aca subsidy income limits: 260/month, KD50; aca subsidy cliff: 210/month, KD18; aca subsidy income limits 2027: 0/month, KD0. SEMrushUS exact metrics checked2026-11-04, corroborated by live autocomplete. Supporting phrases become sections/FAQs, not duplicate pages. The2027 income-limit phrase has measured0; live completions support coverage.",
+  "hypothesis": "Clearer direct answer and scoped program math/process may earn incremental relevant Google clicks. Unproven.",
+  "primaryMetric": "incremental Google clicks",
+  "canonicalUrl": "https://www.themodernwallet.com/budget/aca-subsidy-calculator/",
+  "baseline": {
+    "status": "not-yet-published",
+    "window": null,
+    "property": "sc-domain:themodernwallet.com"
+  },
+  "comparatorPlan": "Age-matched unchanged guide/comparison/tool cohort, matched by type/query intent; evaluate query/device/country changes separately.",
+  "changeScope": "/budget/aca-subsidy-calculator/",
+  "sourceRefreshTrigger": "New federal tax-year tables, SNAP COLA or material official eligibility/application rule change",
+  "outcomeStatus": "unknown",
+  "deploymentStatus": "not-yet-published",
+  "day28": {
+    "window": "first28complete live days",
+    "status": "pending deployment"
+  },
+  "day56": {
+    "window": "second28complete live days",
+    "status": "pending deployment"
+  },
+  "reportingDelayDays": 3,
+  "productionCost": "Use draft.meta.json actual generator records, not estimated manually."
+}

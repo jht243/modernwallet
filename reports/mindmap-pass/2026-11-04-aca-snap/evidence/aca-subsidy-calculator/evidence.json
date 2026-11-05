@@ -1,0 +1,212 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "benefits_content",
+  "route": "/budget/aca-subsidy-calculator/",
+  "readerQuestion": "How are ACA subsidies calculated? [PAA 0/0; ac 6/6 on-topic, calculation and income-basis questions]",
+  "decisionGap": "Coverage lookup returns no ACA subsidy-calculation page. /guides/how-to-budget-with-irregular-income/ explains budgeting insurance costs, not federal-credit math. Same-run ACA/Medicaid comparison defines the programs and application paths, not the personalized figure. No prior exact-slug source/history at local/pinned published revisions.",
+  "finding": "Calculated sensitivity to income and premium caps, not a product test: a two-person household at$50,000 annual MAGI with illustrative$600 benchmark and$550 eligible plan premium has$268.85 monthly federal credit and$281.15 net premium, assuming all other conditions. At400%FPL=$86,560, illustrative$1,000 benchmark produces$262.80 credit; $1 above removes the ordinary modeled federal credit. Explain our arithmetic beside the inputs and avoid a claim that an income threshold alone establishes eligibility.",
+  "conditions": "Client-side React island; inputs 2027 coverage fixed, household1\u20138, annual household MAGI, non-tobacco benchmark monthly premium, chosen eligible enrollment premium, and nonfinancial eligibility confirmation/unknown state. No ZIP database or fabricated premiums. 2026 FPL [15960,21640,27320,33000,38680,44360,50040,55720];2027 percentage bands <133:2.15%;133\u2013150:3.23\u20134.30%;150\u2013200:4.30\u20136.78%;200\u2013250:6.78\u20138.66%;250\u2013300:8.66\u201310.22%;300\u2013400:10.22%. Linear interpolation within bands, monthly contribution=MAGI\u00d7rate/12, credit=min(enrollment premium,max(0,benchmark\u2212contribution)). At<100/>400 or unknown/excluded eligibility show scoped explanation instead of approval. Benchmark excludes tobacco rating; IRSQ26 permits actual smoker enrollment premium for cap. Federal credit only, no state subsidy/cost-sharing estimate. Copy/download figures with conditions. Test boundaries, rate steps, blank/negative/huge inputs, caps and zero premium.",
+  "whatWouldChange": "Federal-credit math requires a benchmark premium and correct annual MAGI, not take-home pay alone. Compare income scenarios before budgeting, update the Marketplace when income changes, and use its application for eligibility and exact prices. Employer/government eligibility, changed law or plan figures can reverse the result.",
+  "basis": "calculated",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/irs-2027.txt",
+      "sha256": "d7f56a6da8a66170be4f85b77031429e0db092df322b9035fb08388e828e9feb"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/irs-ptc.txt",
+      "sha256": "36963edce1f96077ad6b2494c17f68c267b84ab9e7f27c82e15b57f108d2a7f2"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-income.txt",
+      "sha256": "5dfb2032384557ce8f54bcc21c538eca2f52f072990ac98667858fdf74bf3bea"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-poverty.txt",
+      "sha256": "bbec81d0c481ed542c9517282241930d2443759b41197333e6f18692dc8ce7de"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-medicaid-current.txt",
+      "sha256": "5eccdbf370947aada7cad7c3162a0c7dc52e88753ead5be8c1395fc01dfcd983"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-limited.txt",
+      "sha256": "7244780bbf275cd871952c1c647f49dc98b83a2cba71452379e4254142d11436"
+    }
+  ],
+  "sources": [
+    {
+      "id": "irs-2027",
+      "url": "https://www.irs.gov/irb/2026-31_irb",
+      "resolvedUrl": "https://www.irs.gov/irb/2026-31_irb",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/irs-2027.txt",
+      "sha256": "d7f56a6da8a66170be4f85b77031429e0db092df322b9035fb08388e828e9feb"
+    },
+    {
+      "id": "irs-ptc",
+      "url": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit",
+      "resolvedUrl": "https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/irs-ptc.txt",
+      "sha256": "36963edce1f96077ad6b2494c17f68c267b84ab9e7f27c82e15b57f108d2a7f2"
+    },
+    {
+      "id": "hc-income",
+      "url": "https://www.healthcare.gov/income-and-household-information/income/",
+      "resolvedUrl": "https://www.healthcare.gov/income-and-household-information/income/",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-income.txt",
+      "sha256": "5dfb2032384557ce8f54bcc21c538eca2f52f072990ac98667858fdf74bf3bea"
+    },
+    {
+      "id": "hc-poverty",
+      "url": "https://www.healthcare.gov/glossary/federal-poverty-level-fpl/",
+      "resolvedUrl": "https://www.healthcare.gov/glossary/federal-poverty-level-fpl/",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-poverty.txt",
+      "sha256": "bbec81d0c481ed542c9517282241930d2443759b41197333e6f18692dc8ce7de"
+    },
+    {
+      "id": "hc-medicaid-current",
+      "url": "https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/",
+      "resolvedUrl": "https://www.healthcare.gov/medicaid-chip/getting-medicaid-chip/",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-medicaid-current.txt",
+      "sha256": "5eccdbf370947aada7cad7c3162a0c7dc52e88753ead5be8c1395fc01dfcd983"
+    },
+    {
+      "id": "hc-limited",
+      "url": "https://www.healthcare.gov/medicaid-limited-benefits/",
+      "resolvedUrl": "https://www.healthcare.gov/medicaid-limited-benefits/",
+      "checked": "2026-11-04",
+      "status": "captured",
+      "textPath": "reports/mindmap-pass/2026-11-04-aca-snap/sources/hc-limited.txt",
+      "sha256": "7244780bbf275cd871952c1c647f49dc98b83a2cba71452379e4254142d11436"
+    }
+  ],
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/aca-subsidy-calculator/cases.json",
+    "sha256": "872e6f8968aa39e1b8ea74c8ce410d7bf53409256bf906a46e7903c072d9890b"
+  },
+  "caseDecisions": [
+    {
+      "recordId": "client-professional-bowlers-association-pba",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "owned-property-drones-defense",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "owned-property-medical-frontier",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "testimonial-gamestation",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "client-bowlero-corporation",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "client-game-station",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "client-jane-goodall-institute",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    },
+    {
+      "recordId": "client-ethereal-collective",
+      "selection": "rejected",
+      "reason": "No supported ACA/SNAP/WIC application or benefit arithmetic observation. Lexical match does not establish topical client experience; ModernWallet cannot claim Layer3Labs engagements."
+    }
+  ],
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "irs-2027",
+      "irs-ptc",
+      "hc-income",
+      "hc-poverty",
+      "hc-medicaid-current",
+      "hc-limited"
+    ],
+    "scopeAndLimits": "Ordinary financial/program information, excluded from product TESTED format. Reuse existing Jonathan Velez byline without invented credentials/professional review. No clinical/personal eligibility claim. Fresh independent Phase4 review must cover exact final whole render, sources and all transformations. Tool-code validation is separate from product testing. The scope1\u20138/contiguous48+DC is visible beside inputs.",
+    "publicMethod": "On-page formula and worked-input table",
+    "placement": "Worked example and closing takeaway"
+  },
+  "plannedTakeaway": "Federal-credit math requires a benchmark premium and correct annual MAGI, not take-home pay alone. Compare income scenarios before budgeting, update the Marketplace when income changes, and use its application for eligibility and exact prices. Employer/government eligibility, changed law or plan figures can reverse the result.",
+  "selectedMedium": "interactive tool",
+  "mediumReason": "Client-side React island; inputs 2027 coverage fixed, household1\u20138, annual household MAGI, non-tobacco benchmark monthly premium, chosen eligible enrollment premium, and nonfinancial eligibility confirmation/unknown state. No ZIP database or fabricated premiums. 2026 FPL [15960,21640,27320,33000,38680,44360,50040,55720];2027 percentage bands <133:2.15%;133\u2013150:3.23\u20134.30%;150\u2013200:4.30\u20136.78%;200\u2013250:6.78\u20138.66%;250\u2013300:8.66\u201310.22%;300\u2013400:10.22%. Linear interpolation within bands, monthly contribution=MAGI\u00d7rate/12, credit=min(enrollment premium,max(0,benchmark\u2212contribution)). At<100/>400 or unknown/excluded eligibility show scoped explanation instead of approval. Benchmark excludes tobacco rating; IRSQ26 permits actual smoker enrollment premium for cap. Federal credit only, no state subsidy/cost-sharing estimate. Copy/download figures with conditions. Test boundaries, rate steps, blank/negative/huge inputs, caps and zero premium.",
+  "method": "Deterministic published federal formulas applied to explicit hypothetical scenarios.",
+  "units": "USD monthly benefit/premium, annual ACA income and FPL percent",
+  "limitations": "Client-side React island; inputs 2027 coverage fixed, household1\u20138, annual household MAGI, non-tobacco benchmark monthly premium, chosen eligible enrollment premium, and nonfinancial eligibility confirmation/unknown state. No ZIP database or fabricated premiums. 2026 FPL [15960,21640,27320,33000,38680,44360,50040,55720];2027 percentage bands <133:2.15%;133\u2013150:3.23\u20134.30%;150\u2013200:4.30\u20136.78%;200\u2013250:6.78\u20138.66%;250\u2013300:8.66\u201310.22%;300\u2013400:10.22%. Linear interpolation within bands, monthly contribution=MAGI\u00d7rate/12, credit=min(enrollment premium,max(0,benchmark\u2212contribution)). At<100/>400 or unknown/excluded eligibility show scoped explanation instead of approval. Benchmark excludes tobacco rating; IRSQ26 permits actual smoker enrollment premium for cap. Federal credit only, no state subsidy/cost-sharing estimate. Copy/download figures with conditions. Test boundaries, rate steps, blank/negative/huge inputs, caps and zero premium.",
+  "counterexample": {
+    "ordinary": {
+      "fplPercent": 231.0536044362292,
+      "applicablePercent": 7.947615526802218,
+      "contribution": 331.1506469500924,
+      "credit": 268.8493530499076,
+      "netPremium": 281.1506469500924,
+      "otherEligibility": "assumed for arithmetic"
+    },
+    "at400": {
+      "fplPercent": 400.0,
+      "applicablePercent": 10.22,
+      "contribution": 737.2026666666667,
+      "credit": 262.7973333333333,
+      "netPremium": 737.2026666666667,
+      "otherEligibility": "assumed for arithmetic"
+    },
+    "above400": {
+      "fplPercent": 400.0046210720887,
+      "credit": 0,
+      "otherEligibility": "not determined"
+    },
+    "premiumCap": {
+      "fplPercent": 138.6321626617375,
+      "applicablePercent": 3.5844949440034783,
+      "contribution": 89.61237360008697,
+      "credit": 100,
+      "netPremium": 0,
+      "otherEligibility": "assumed for arithmetic"
+    }
+  },
+  "execution": {
+    "command": [
+      "/opt/homebrew/opt/python@3.12/bin/python3.12",
+      "reports/mindmap-pass/2026-11-04-aca-snap/evidence/calculate.py",
+      "reports/mindmap-pass/2026-11-04-aca-snap/evidence/inputs.json",
+      "reports/mindmap-pass/2026-11-04-aca-snap/evidence/calculation-output.json"
+    ],
+    "code": {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/calculate.py",
+      "sha256": "1758462c892c7a2c31b54585f7adf4d8d6d26b94f98ac4c68a6cdc78d31e2e66"
+    },
+    "inputs": [
+      {
+        "path": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/inputs.json",
+        "sha256": "218ad3c360a0eb5aedb3a45565ecd7eec8eb354c69e9b229c2cf44a2f8b4899b"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/2026-11-04-aca-snap/evidence/calculation-output.json",
+      "sha256": "7fe82f3f5591062973fc449e53c961ae2b7f40b2efe96f483bfe3080c8705966"
+    }
+  }
+}

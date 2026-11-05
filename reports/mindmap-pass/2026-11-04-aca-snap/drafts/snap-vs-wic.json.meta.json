@@ -1,0 +1,425 @@
+{
+ "slug": "snap-vs-wic",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 2460,
+ "floor": 1500,
+ "input_tokens": 60454,
+ "output_tokens": 19618,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.6342,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 2567,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    5
+   ],
+   "applied": [
+    {
+     "id": "sections[0].content",
+     "quote": "A SNAP EBT card buys any food for the household at authorized stores, with a short list of exclusions.",
+     "replacement": "A SNAP EBT card buys any food for the household at authorized stores, with listed exclusions.",
+     "type": "unsupported",
+     "why": "SOURCE lists exclusions but never characterizes the list as short."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "A WIC family that wants SNAP files a full SNAP application with its state agency.",
+     "replacement": "A WIC family that wants SNAP applies with its state SNAP agency.",
+     "type": "inference",
+     "why": "SOURCE never describes a 'full' application versus a shortened one."
+    },
+    {
+     "id": "verdict",
+     "quote": "It also helps to [keep food assistance separate in your budget](/guides/how-to-make-a-budget/) so the grocery spending that comes from your own cash stays visible.",
+     "replacement": "You can also [keep food assistance separate in your budget](/guides/how-to-make-a-budget/).",
+     "type": "inference",
+     "why": "Benefit of visibility is not stated in SOURCE."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "The USDA SNAP eligibility page names TANF, Supplemental Security Income (SSI) and, in some places, general assistance as programs that can make a household categorically eligible for SNAP, and WIC is not on that list.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Concluding that WIC adds no SNAP pathway is an inference beyond SOURCE."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "USDA's WIC pages say benefits are personalized using the nutrition assessment, and they do not publish a single national dollar amount per participant.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Source says the assessment personalizes benefits; no-dollar-amount claim is the writer's."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Your state agency, reached through the [SNAP State Directory of Resources](https://fns-prod.azureedge.us/snap/state-directory), applies the current rules to your application.",
+     "replacement": "For details, contact your state agency through the [SNAP State Directory of Resources](https://fns-prod.azureedge.us/snap/state-directory).",
+     "type": "unsupported",
+     "why": "SOURCE does not say the state applies the updated rules."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "If you mean the monthly grocery benefit a household spends with an EBT card, USDA's name for that program is SNAP.",
+     "replacement": "The monthly grocery benefit a household spends with an EBT card is called SNAP.",
+     "type": "unsupported",
+     "why": "SOURCE never mentions food stamps or links them to SNAP."
+    }
+   ],
+   "deleted_final": 5,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2656
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-04T22:00:33-0500",
+    "findings_file": "reports/mindmap-pass/2026-11-04-aca-snap/prompts/snap-wic-initial.findings.txt",
+    "applied": [
+     {
+      "id": "sections[3].content",
+      "quote": "USDA calculates a SNAP allotment by multiplying net monthly income by 0.3 and subtracting the result from the maximum allotment for the household size.",
+      "replacement": "",
+      "type": "1: delete allotment arithmetic paragraph",
+      "why": "Benefit-amount arithmetic is outside the approved qualitative comparison."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "In the 48 contiguous states and the District of Columbia, the maximum is $808 a month for three people and $1,023 for four.",
+      "replacement": "",
+      "type": "1: delete allotment arithmetic paragraph",
+      "why": "Benefit-dollar figures are not needed and are flagged for deletion."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "In USDA's worked example, a four-person household with $1,056.50 in net monthly income receives $706 ($1,023 minus $317).",
+      "replacement": "",
+      "type": "1: delete worked example",
+      "why": "The source worked example has inherited contradictions; no replacement scenario."
+     },
+     {
+      "id": "introText",
+      "quote": "For many families comparing SNAP vs WIC, the practical answer is to file two separate applications.",
+      "replacement": "For a household that fits both programs, the practical answer is to file two separate applications.",
+      "type": "2: unsupported prevalence",
+      "why": "Narrows the claim to households that fit both programs."
+     },
+     {
+      "id": "introText",
+      "quote": "The U.S. Department of Agriculture (USDA) Food and Nutrition Administration (FNA) publishes the federal rules for both programs.",
+      "replacement": "The [U.S. Department of Agriculture (USDA) Food and Nutrition Administration (FNA)](https://fns-prod.azureedge.us/wic/eligibility) publishes the federal rules for both programs.",
+      "type": "3: first USDA FNA mention needs link",
+      "why": "Links the agency name to an approved primary source."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "USDA's SNAP eligibility page notes that the Working Families Tax Cuts law changes certain SNAP rules, including work requirements and non-citizen eligibility, and that USDA is updating the page.",
+      "replacement": "USDA's SNAP eligibility page notes that the [Working Families Tax Cuts](https://fns-prod.azureedge.us/snap/recipient/eligibility) law changes certain SNAP rules, including work requirements and non-citizen eligibility, and that USDA is updating the page.",
+      "type": "3: Working Families Tax Cuts mention needs link",
+      "why": "Links the law mention to the official SNAP eligibility source."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "Use the WIC Eligibility Tool or the WIC locator on the [USDA WIC eligibility page](https://fns-prod.azureedge.us/wic/eligibility) to reach a local WIC agency.",
+      "replacement": "Use the [WIC Eligibility Tool](https://fns-prod.azureedge.us/wic/eligibility) or the WIC locator on the same USDA WIC eligibility page to reach a local WIC agency.",
+      "type": "3: WIC Eligibility Tool must be linked",
+      "why": "Links the tool name itself to the approved WIC eligibility page."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "- food and drinks containing controlled substances such as cannabis or CBD",
+      "replacement": "",
+      "type": "4: undefined CBD and controlled-substance detail",
+      "why": "Removes the unrelated detail and keeps the food/nonfood exclusions."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "Both benefits arrive on cards that work like debit cards at approved stores: an EBT card for SNAP and an eWIC card for WIC.",
+      "replacement": "Both benefits arrive on cards that work like debit cards at approved stores: an EBT card for SNAP and a WIC benefit card for WIC.",
+      "type": "4: unexplained eWIC",
+      "why": "Uses the term WIC benefit card consistently."
+     },
+     {
+      "id": "comparisonTable.rows[2].b",
+      "quote": "Benefits for WIC-listed foods on an eWIC card that works like a debit card at WIC-approved grocery stores and farmers' markets",
+      "replacement": "Benefits for WIC-listed foods on a WIC benefit card used at WIC-approved retailers",
+      "type": "6/4: generalized card acceptance; eWIC",
+      "why": "Uses the national fact of approved retailers and the consistent card term."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "The WIC card, called eWIC, buys foods on the WIC list at WIC-approved grocery stores and farmers' markets.",
+      "replacement": "The WIC benefit card buys foods on the WIC list at WIC-approved retailers.",
+      "type": "6/4: generalized card acceptance; eWIC",
+      "why": "Removes the universal market claim and the unexplained eWIC term."
+     },
+     {
+      "id": "introText",
+      "quote": "The [Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)](https://fns-prod.azureedge.us/wic/benefits) provides specific healthy foods, nutrition education, breastfeeding support and referrals to pregnant, postpartum and breastfeeding participants, infants, and children under 5.",
+      "replacement": "The [Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)](https://fns-prod.azureedge.us/wic/benefits) serves pregnant, postpartum and breastfeeding participants, infants, and children under 5. It provides specific healthy foods, nutrition education, breastfeeding support and referrals.",
+      "type": "5: split long intro clause",
+      "why": "Splits the sentence into two without changing facts."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "SNAP gives an eligible household a monthly grocery allotment on an EBT card, and WIC gives pregnant, postpartum and breastfeeding participants, infants and children under 5 specific healthy foods plus nutrition education, breastfeeding support and referrals.",
+      "replacement": "SNAP gives an eligible household a monthly grocery allotment on an EBT card. WIC gives pregnant, postpartum and breastfeeding participants, infants and children under 5 specific healthy foods. WIC also provides nutrition education, breastfeeding support and referrals.",
+      "type": "5: split long FAQ clause",
+      "why": "Splits the long sentence; the facts are unchanged."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "SNAP covers any food for the household, including fruits, vegetables, meat, dairy, bread, snacks and seeds or plants that grow food, but excludes alcohol, tobacco, hot foods, supplements and nonfood items.",
+      "replacement": "SNAP covers any food for the household, including fruits, vegetables, meat, dairy, bread, snacks and seeds or plants that grow food. It excludes alcohol, tobacco, hot foods, supplements and nonfood items.",
+      "type": "5: split long FAQ clause",
+      "why": "Splits the long sentence; the facts are unchanged."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "The monthly grocery benefit a household spends with an EBT card is called SNAP.",
+      "replacement": "Yes. [USAGov](https://www.usa.gov/food-stamps) says the Supplemental Nutrition Assistance Program (SNAP) was previously known as food stamps.",
+      "type": "7: restore direct yes answer with USAGov",
+      "why": "The verified USAGov source says SNAP was previously known as food stamps."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "USDA's SNAP eligibility and eligible-food pages use the SNAP name throughout.",
+      "replacement": "",
+      "type": "7: inference from agency labels",
+      "why": "The auditor rejects inference from page labels."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "EBT is the card that carries SNAP benefits, while WIC uses its own eWIC card.",
+      "replacement": "Each month, SNAP benefits are added to an Electronic Benefits Transfer (EBT) card.",
+      "type": "7/4: unexplained eWIC; keep sourced EBT fact",
+      "why": "Keeps the USAGov-supported EBT fact and drops the eWIC term."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 2469,
+    "flags": []
+   },
+   {
+    "round": 2,
+    "at": "2026-11-04T22:10:35-0500",
+    "findings_file": "reports/mindmap-pass/2026-11-04-aca-snap/audit/n3-findings.json",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "SNAP and WIC are two separate federal food programs, and a family that qualifies for both can receive both at the same time.",
+      "replacement": "The SNAP vs WIC difference is household grocery purchasing power versus food and nutrition benefits for eligible individual participants. A family that qualifies for both programs can receive both at the same time.",
+      "type": "Primary phrase missing from first paragraph",
+      "why": "Opener must use the primary phrase and answer the difference before coexistence."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "SNAP has two narrow exceptions to that grouping.",
+      "replacement": "Other SNAP rules affect separate-household status and eligibility for people receiving institutional meals.",
+      "type": "Unsupported 'two narrow exceptions' claim",
+      "why": "The institutional meals rule is not a household-grouping exception; the count is unsupported."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "A person 60 or older who cannot buy and prepare meals separately because of a permanent disability may form a separate SNAP household with a spouse, if the others they live with have income no higher than 165% of the poverty level.",
+      "replacement": "A person 60 or older who cannot buy and prepare meals separately because of a permanent disability may form a separate SNAP household with a spouse. The separate-household exception requires the other people in the home to have income no higher than 165% of the poverty level.",
+      "type": "42-word nested sentence",
+      "why": "Splitting it keeps every condition and improves readability."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "The USDA WIC eligibility page says that if you or children in your care receive Medicaid, SNAP or Temporary Assistance for Needy Families (TANF), you may already be income eligible for WIC and can skip the WIC income chart.",
+      "replacement": "If you or children in your care receive Medicaid, SNAP or Temporary Assistance for Needy Families (TANF), you may already be income eligible for WIC. The USDA WIC eligibility page says those applicants can skip the WIC income chart.",
+      "type": "39-word nested stack",
+      "why": "Splitting separates the income rule from the source attribution and the action."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "WIC leaves out loans, AmeriCorps income and certain military pay such as Basic Allowance for Housing and combat pay, and the USDA WIC page shows its income limits after you select a household size and state.",
+      "replacement": "WIC leaves out loans, AmeriCorps income and certain military pay such as Basic Allowance for Housing and combat pay. The USDA WIC page shows income limits after you select a household size and state.",
+      "type": "36-word list plus UI instruction",
+      "why": "Splitting separates the excluded-income list from the page instruction."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "Gather documents for the first appointment.",
+      "replacement": "Ask the local WIC office which documents to bring.",
+      "type": "Documents presented as mandatory",
+      "why": "The California source says staff 'may ask'; the local office decides which documents to bring."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "The California WIC Program lists identification for yourself and any children under 5, proof of address, proof of household income, proof of pregnancy and medical forms from a health care provider.",
+      "replacement": "The California WIC Program may ask for identification, proof of address and income, proof of pregnancy, and medical forms from a health care provider.",
+      "type": "Documents presented as mandatory",
+      "why": "The source says 'may ask'; keep it as an example, not a requirement."
+     },
+     {
+      "id": "verdict",
+      "quote": "When the youngest child reaches the fifth birthday and no one else fits a WIC category, WIC no longer applies to that household, while SNAP eligibility continues to follow its own household and income rules.",
+      "replacement": "WIC no longer applies when the youngest child turns 5 and no one else fits a WIC category. SNAP eligibility continues to follow its own household and income rules.",
+      "type": "35-word conditional contrast stack",
+      "why": "Splitting keeps the age condition and SNAP's independent rules."
+     },
+     {
+      "id": "verdict",
+      "quote": "To act on this SNAP vs WIC comparison today, open your state's entry in the [SNAP State Directory of Resources](https://fns-prod.azureedge.us/snap/state-directory) and the WIC locator on the [USDA WIC eligibility page](https://fns-prod.azureedge.us/wic/eligibility), then start the application for each program your household fits.",
+      "replacement": "Check SNAP vs WIC requirements with your [state SNAP agency](https://fns-prod.azureedge.us/snap/state-directory) and [local WIC agency](https://fns-prod.azureedge.us/wic/eligibility), then apply for each program your household fits.",
+      "type": "40-word self-referential ending",
+      "why": "The ending narrates the page; a shorter version keeps the keyword and both links."
+     },
+     {
+      "id": "sections[2].heading",
+      "quote": "Which Household Members Count",
+      "replacement": "SNAP vs WIC Household Rules",
+      "type": "Heading lacks primary phrase",
+      "why": "This should be the first natural heading using the exact primary phrase."
+     },
+     {
+      "id": "sections[3].heading",
+      "quote": "What Each Program Pays For",
+      "replacement": "SNAP vs WIC Food Benefits",
+      "type": "Heading lacks primary phrase",
+      "why": "This should be the second natural heading using the exact primary phrase."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "The table above draws on four USDA pages:",
+      "replacement": "The table below draws on four USDA pages:",
+      "type": "'above' is false",
+      "why": "The section now renders before the table."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "**Who qualifies.**",
+      "replacement": "Who qualifies.",
+      "type": "Raw bold Markdown visible",
+      "why": "Asterisks render literally."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "**What the card buys.**",
+      "replacement": "What the card buys.",
+      "type": "Raw bold Markdown visible",
+      "why": "Asterisks render literally."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "**What comes with the food.**",
+      "replacement": "What comes with the food.",
+      "type": "Raw bold Markdown visible",
+      "why": "Asterisks render literally."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "**Participant category.**",
+      "replacement": "Participant category.",
+      "type": "Raw bold Markdown visible",
+      "why": "Asterisks render literally."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "**Location.**",
+      "replacement": "Location.",
+      "type": "Raw bold Markdown visible",
+      "why": "Asterisks render literally."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "**Nutrition assessment.**",
+      "replacement": "Nutrition assessment.",
+      "type": "Raw bold Markdown visible",
+      "why": "Asterisks render literally."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "**Nutrition education:**",
+      "replacement": "Nutrition education:",
+      "type": "Raw bold Markdown visible",
+      "why": "Asterisks render literally."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "**Breastfeeding support:**",
+      "replacement": "Breastfeeding support:",
+      "type": "Raw bold Markdown visible",
+      "why": "Asterisks render literally."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "**Health and community resources:**",
+      "replacement": "Health and community resources:",
+      "type": "Raw bold Markdown visible",
+      "why": "Asterisks render literally."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "introText",
+      "quote": "It provides specific healthy foods, nutrition education, breastfeeding support and referrals.",
+      "finding": "Intro first paragraph exceeds 3 sentences",
+      "why": "Needs restructuring: a paragraph break, not a text replacement in this unit.",
+      "replacement": null,
+      "reason": "not fixable in place"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "Footer affiliate disclosure neutrality claim",
+      "why": "The footer text is not among the page units, so it cannot be edited in place here.",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 2460,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 215.0,
+ "response_id": "msg_011Cgj2Uz2cHpwDg3TYg2uev",
+ "generated_at": "2026-11-04T21:57:50-0500"
+}

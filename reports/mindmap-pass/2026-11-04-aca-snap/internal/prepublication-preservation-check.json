@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "headPreserved": true,
+  "originalStagedDiffPreserved": true,
+  "stagedDiffSha256": "7569091c2ced7a862582663e3c06757d9bd82c4e509813f1af3d78a7b2e377e5",
+  "usageLedgerAutoStagingReconciled": "usage-staging-reconciliation.json"
+}

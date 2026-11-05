@@ -1,0 +1,33 @@
+{
+  "reviewer": "benefits_final_reviewer",
+  "snapshotSha256": "b99d037d8b8116168a6c6e4b0d5e660cea5077f77a958320da0fbc55a688d894",
+  "verdict": "MECHANICAL FIX REQUIRED",
+  "source": "src/lib/benefits-text.ts",
+  "finding": "The benefits-only helper delegates to a sentence splitter that mistakes U.S., Oct. and Sept. for sentence endings. Preserve abbreviations without changing any content words.",
+  "instances": [
+    {
+      "route": "/budget/snap-benefits-calculator/",
+      "fingerprint": "5f99d024f21fc6af6c5e5ca7786bbbbdbb38f014466c0349c135efd8ca8f9e5c",
+      "paragraph": "The calculator covers households of 1 to 8 people in the 48 contiguous states and the District of Columbia. Households in Alaska, Hawaii, Guam, or the U.S.",
+      "nextParagraph": "Virgin Islands, and households of nine or more, get no estimate here and should use the FY2027 allotment and deduction tables instead. You can copy or download the result with your inputs, and nothing you type is sent to a server."
+    },
+    {
+      "route": "/budget/snap-benefits-calculator/",
+      "fingerprint": "5f99d024f21fc6af6c5e5ca7786bbbbdbb38f014466c0349c135efd8ca8f9e5c",
+      "paragraph": "SNAP income limits for FY2027 set gross monthly income at 130% of the federal poverty level and net monthly income at 100%, and most households must meet both limits. FNA publishes these limits for the 48 contiguous states, the District of Columbia, Guam, and the U.S.",
+      "nextParagraph": "Virgin Islands. Alaska and Hawaii have higher limits."
+    },
+    {
+      "route": "/compare/snap-vs-wic/",
+      "fingerprint": "bd6e365292fcc9a16a84e285b79ec18169866071befb416483686764e0609d06",
+      "paragraph": "Household size sets the income limit in both programs. USDA sets the SNAP gross monthly income limit at 130% of poverty for applications from Oct.",
+      "nextParagraph": "1, 2026, through Sept. 30, 2027."
+    },
+    {
+      "route": "/guides/how-to-apply-for-food-stamps/",
+      "fingerprint": "a0f5de62ee6234c5c0d7be70c78f210a613a2b804ff4837a7fdb32adc8193abe",
+      "paragraph": "For applications from Oct. 1, 2026, through Sept.",
+      "nextParagraph": "30, 2027, the gross monthly income limit in the 48 contiguous states, the District of Columbia, Guam and the U.S. Virgin Islands is $1,729 for one person, $2,345 for two, $2,960 for three and $3,575 for four."
+    }
+  ]
+}

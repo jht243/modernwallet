@@ -1,0 +1,15 @@
+{
+  "actor": "benefits_content",
+  "route": "/budget/snap-benefits-calculator/",
+  "substantiveRework": 1,
+  "priorTargetedFixRounds": 3,
+  "reset": false,
+  "scope": "Only2firstformula sentences replaced with API-generated baseformula qualifiers; allotherfields retained",
+  "reviewerFindings": "audit/n1-base-formula-precision.json",
+  "snippet": "drafts/n1-base-snippets.md",
+  "snippetMeta": "drafts/n1-base-snippets.md.meta.json",
+  "beforeSha256": "724516bc30e5f63a97513d86d5f0c13d37aca6b259257ae0019dbde8c208129d",
+  "afterSha256": "2a257362b2e25f37aabe695623b30e70a1434c579f2f475d47e9f61dd827a619",
+  "model": "claude-opus-5-5",
+  "fallbackUsed": false
+}
