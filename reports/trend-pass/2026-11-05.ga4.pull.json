@@ -1,0 +1,124 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-11-04",
+  "window_start": "2026-11-04",
+  "window_end": "2026-11-04",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/florida-amendment-3-calculator/",
+      "views": 74,
+      "sessions": 78,
+      "active_users": 69,
+      "clicks": 74
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 72,
+      "sessions": 76,
+      "active_users": 68,
+      "clicks": 72
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 46,
+      "sessions": 50,
+      "active_users": 42,
+      "clicks": 46
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 22,
+      "sessions": 24,
+      "active_users": 22,
+      "clicks": 22
+    },
+    {
+      "page": "/",
+      "views": 17,
+      "sessions": 16,
+      "active_users": 16,
+      "clicks": 17
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 12,
+      "sessions": 11,
+      "active_users": 11,
+      "clicks": 12
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 9,
+      "sessions": 8,
+      "active_users": 7,
+      "clicks": 9
+    },
+    {
+      "page": "/roundup/best-retirement-calculators/",
+      "views": 9,
+      "sessions": 8,
+      "active_users": 8,
+      "clicks": 9
+    },
+    {
+      "page": "/guides/irs-mileage-rate-history/",
+      "views": 7,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 7
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 7,
+      "sessions": 7,
+      "active_users": 7,
+      "clicks": 7
+    }
+  ],
+  "top10_pages_total_views": 275,
+  "top10_pages_total_clicks": 275,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 74,
+      "Direct": 2,
+      "Unassigned": 1
+    },
+    "/florida-amendment-3-calculator/": {
+      "Organic Search": 71,
+      "Direct": 7,
+      "Unassigned": 3
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 50,
+      "Unassigned": 4
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 24
+    },
+    "/": {
+      "Direct": 14,
+      "Organic Search": 1,
+      "Referral": 1
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 11,
+      "Unassigned": 1
+    },
+    "/roundup/best-retirement-calculators/": {
+      "Direct": 8
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 7,
+      "Direct": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 7
+    },
+    "/guides/irs-mileage-rate-history/": {
+      "Organic Search": 4,
+      "Direct": 2
+    }
+  }
+}

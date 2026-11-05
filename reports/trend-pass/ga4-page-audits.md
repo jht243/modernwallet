@@ -323,3 +323,7 @@
 | /mileage-deduction/irs-mileage-rate-2026/ | 2026-11-04 | 69 | 0/0/0/0/0 | 0 |
 | /guides/is-social-security-taxable/ | 2026-11-04 | 31 | 0/0/0/0/0 | 0 |
 | /florida-amendment-3-calculator/ | 2026-11-04 | 11 | 0/0/1/0/0 | 0 |
+| /guides/inherited-ira-taxes-explained/ | 2026-11-05 | 46 | 0/0/0/0/0 | 1 |
+| /guides/how-to-open-a-trump-account/ | 2026-11-05 | 9 | 0/0/0/0/0 | 0 |
+| /roundup/best-retirement-calculators/ | 2026-11-05 | 9 | 0/0/0/0/0 | 0 |
+| /guides/irs-mileage-rate-history/ | 2026-11-05 | 7 | 0/0/0/0/0 | 0 |
