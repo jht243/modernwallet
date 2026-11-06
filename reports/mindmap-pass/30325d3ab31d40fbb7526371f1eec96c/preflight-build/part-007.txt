@@ -1,0 +1,79 @@
+.claude/commands/_content-standard.md — characters 18000 onward
+
+finding and verified capabilities, following `_decision-evidence.md` and `_mindmap-execution.md`. Prose, finite tables, SVG charts, genuine screenshots, images/illustrations, downloadable data and interactive tools are supported when this run can actually produce them. Generated illustrations never establish product testing. Videos remain outside the Mindmap evidence workflow.
+
+Record `medium: <picked> → <resolved>` with the page's register and type. Assess inputs, logic, sources, implementation and feasibility before the approval chart. Prefer existing components and the smallest format that makes the answer useful. Keep the main answer readable without interaction.
+
+Build the approved asset and its framing page in Phase 3 and independently audit both in Phase 4. A spec, stub, placeholder or promise that a human will build it later is not completion. If a requested format cannot be produced with available authorized capabilities, narrow/exclude that asset before approval, or resolve to a useful complete supported format. Do not force a calculator or visual when it adds nothing. Preserve local scope, exclusions and publication permissions.
+
+---
+
+## SEO
+
+- Use the primary keyword in the SEO title, H1, first paragraph, the closing next-action sentence, and 2–3 H2/H3 headings. Do not add a Conclusion or Summary section to house the keyword.
+- Use secondary and semantic keywords naturally throughout the article. Avoid keyword stuffing.
+- Create an SEO title of 50–60 characters that is compelling and includes the primary keyword.
+- Improve the provided title if needed while keeping the core meaning.
+- Use a clear structure: H1, H2, and H3.
+- **Headings use Title Case.** Every H1 and every section heading (H2/H3) capitalizes the first letter of each major word — e.g. "What Setup Costs besides the Monthly Fee", NOT "What setup costs besides the monthly fee". Keep minor words lowercase (a, an, the, and, or, nor, but, for, to, of, in, on, at, by, with, from, vs, via, per, as) UNLESS they are the first or last word. Preserve acronyms and brand casing exactly (AI, API, SEO, CRM, ROI, GPT-5, iOS, macOS, eBay) — never lowercase them. FAQ `question` fields keep normal sentence casing (they are questions, not headings).
+- **Define every acronym on first use**, including ones you consider common (FTC, SMB, ROI, KPI, LLM). Full expansion followed by the acronym in parentheses, then the acronym alone thereafter. Applies to titles, meta descriptions, H1, intro, body, and FAQs.
+- Add a table of contents for articles over 2,000 words.
+- Use bullet points, numbered lists, FAQs, concise definitions, and comparison tables where useful.
+- Optimize for featured snippets.
+- Include relevant internal links to related {BUSINESS_NAME} hub, spoke, cluster, and blog pages.
+- Make sure all new pages are properly linked within the correct hub/spoke structure.
+- Don't dismiss a keyword just because tools show zero monthly searches — real demand often appears in GSC impressions weeks before search-volume tools register it. When a question-format zero-volume variant is genuinely the best fit for a heading or FAQ — i.e. no stronger, more-relevant keyword belongs in that slot — use it as the H2/H3 or FAQ question to capture long-tail demand. Sources: Google Autocomplete, People Also Ask, and the natural language customers use (e.g. "Can [tool] handle HIPAA compliance for small clinics?"). This is an OPTION to widen long-tail coverage, NOT a quota: never force a zero-volume keyword into a slot a better-targeted keyword belongs in. The 2–3 primary-keyword heading slots above remain non-negotiable.
+
+### Required page elements
+
+Every page carries these. They apply in **both** registers (see VOICE) unless noted.
+
+- **Lead with the direct answer.** The first body sentence answers the page's question outright, short and easy, before any elaboration. Operator: if there is a tee-up, it is the next sentence, not this one (VOICE). Reporter: this sentence is the news; there is no tee-up. Section openers are a different slot (AEO in QUALITY).
+- **Who this is not for.** Name at least one audience segment, use case, or budget the recommendation does NOT serve, and say plainly what they should do instead. Applies to any page that recommends, ranks, or picks a winner; skip on pages with no recommendation.
+- **What would change our answer.** State the condition under which the verdict would flip — a price move, a missing feature shipping, a compliance requirement, a scale threshold. Same applicability as above. This is how objectivity gets **shown**, which NEUTRALITY requires instead of claimed.
+- **Close on the concrete next action.** The last body sentence is a next step the reader can take. That sentence may carry the primary keyword. No summary recap, and no Conclusion or Summary heading (`_anti-ai-language.md` bans both).
+- **Disclaimers render at the BOTTOM, never the top.** Any legal, medical, financial, or "not advice" disclaimer this site requires is the LAST element on the rendered page, after the body and FAQ. Never in the title, subtitle, intro, or first section. A reader came for the answer; the disclaimer is a footer, not a greeting. If `_experience.md` marks this site YMYL with a required disclaimer, emit it once, at the end, in the template's disclaimer slot (or the final body element if there is no slot) — and never as the opening line.
+- **An `inlineCta`** where the project's page record supports one — the subtle, category-specific consultation nudge that renders below the first body section, distinct from the bottom CTA block. Shape: `inlineCta: { text, buttonLabel, buttonHref }`. `text` is at most two sentences and MUST name this page's actual subject (a generic line that would fit any page is a spec violation). `buttonLabel` is 2–4 words, default `"Book a Consultation"`. `buttonHref` is the project's consultation route — the routine's own phase file names it; never invent one. A record without a non-empty `inlineCta.text` is a spec violation.
+
+---
+
+## INTENT — answer the reason the reader is on the page, near the top (added 2026-09-22)
+
+Every page is opened by a person with ONE question, and it is usually a *doing* question, not a
+*defining* one. Someone who searches "law firm client onboarding automation" wants to know **how
+to build it** — what connects to what, what fires first, what to wire up before anything else.
+A page that opens by defining onboarding, drawing its boundaries, and classifying its stages has
+answered a question nobody asked, however well it did it.
+
+**The rule:**
+
+1. **Name the reader's question on the row**, as `reader question: "<the question, in the
+   reader's words>"`. It is DECIDED at chart-build time (mindmap-pass build-brief Step 4.6 —
+   question, then answer + shape, then placement — recorded as chart cols 10–12 and approved by
+   the user in the Phase 0 manifest); the writer and auditor consume it. Derive it from the
+   query's verb and the live PAA, not from the topic noun:
+   "how do I…", "which should I…", "is X worth…", "what does X cost". If the row cannot state it
+   in one sentence, the page has no reason to exist yet.
+2. **Answer that question in the first or second section**, before any scope, boundary,
+   background, taxonomy, or "what is X" material. Sentence 1 of the body is still the direct
+   answer (GATE Tee-up); this rule governs the *first sections*, which must deliver the working
+   answer — the mechanism, the recommendation, the number, the verdict — not set up for it.
+3. **A "how" question gets a "how" answer**: the trigger, the sequence of hops, the parts to
+   assemble, and the one thing to build first. Naming the categories of work without showing
+   how to do it does not satisfy a "how" question.
+4. Definitions, scope, and history may follow the answer, or sit at the end, or be cut. They
+   never lead.
+
+**Why this exists:** on 2026-09-22 five per-vertical `…-automation` guides shipped that each
+opened with a "Scope and Boundaries" section and walked the stages by automation bucket, and not
+one of them said what to connect to what, or named an automation layer. Every gate passed,
+because every gate checked the *quality* of the answer and none checked that it answered the
+reader's question. This section is that check, and the AUDITOR gate below enforces it.
+
+---
+
+## TESTED — first-hand format for roundups, reviews and comparisons (added 2026-10-20)
+
+**Applies to** operator-register pages whose `page type:` is a roundup ("best X", "X alternatives", any ranked list), a product or model review, or an "X vs Y" comparison. **Skip** pricing, how-to, explainer, definition, tool and news (reporter-register) pages. **Also skip** any page whose ranked or compared items fall outside what this site's `_experience.md` section G licenses as tested (for example medical treatments, clinics, drugs, legal or financial services). If the site's `_experience.md` has no section G, skip TESTED entirely.
+
+**Why.** Google's review gu
