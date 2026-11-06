@@ -327,3 +327,6 @@
 | /guides/how-to-open-a-trump-account/ | 2026-11-05 | 9 | 0/0/0/0/0 | 0 |
 | /roundup/best-retirement-calculators/ | 2026-11-05 | 9 | 0/0/0/0/0 | 0 |
 | /guides/irs-mileage-rate-history/ | 2026-11-05 | 7 | 0/0/0/0/0 | 0 |
+| /guides/social-security-changes-2027/ | 2026-11-06 | 18 | 0/0/0/0/0 | 0 |
+| /guides/senior-deduction-social-security/ | 2026-11-06 | 15 | 0/0/0/0/0 | 0 |
+| /guides/social-security-survivor-benefits-and-working/ | 2026-11-06 | 11 | 0/0/0/0/0 | 2 |

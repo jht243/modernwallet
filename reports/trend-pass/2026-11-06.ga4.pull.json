@@ -1,0 +1,129 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-11-05",
+  "window_start": "2026-11-05",
+  "window_end": "2026-11-05",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 53,
+      "sessions": 58,
+      "active_users": 53,
+      "clicks": 53
+    },
+    {
+      "page": "/florida-amendment-3-calculator/",
+      "views": 35,
+      "sessions": 32,
+      "active_users": 31,
+      "clicks": 35
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 26,
+      "sessions": 28,
+      "active_users": 25,
+      "clicks": 26
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 23,
+      "sessions": 25,
+      "active_users": 23,
+      "clicks": 23
+    },
+    {
+      "page": "/guides/social-security-changes-2027/",
+      "views": 18,
+      "sessions": 15,
+      "active_users": 15,
+      "clicks": 18
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 18,
+      "sessions": 17,
+      "active_users": 14,
+      "clicks": 18
+    },
+    {
+      "page": "/",
+      "views": 15,
+      "sessions": 13,
+      "active_users": 13,
+      "clicks": 15
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 15,
+      "sessions": 13,
+      "active_users": 11,
+      "clicks": 15
+    },
+    {
+      "page": "/guides/senior-deduction-social-security/",
+      "views": 15,
+      "sessions": 15,
+      "active_users": 14,
+      "clicks": 15
+    },
+    {
+      "page": "/guides/social-security-survivor-benefits-and-working/",
+      "views": 11,
+      "sessions": 10,
+      "active_users": 9,
+      "clicks": 11
+    }
+  ],
+  "top10_pages_total_views": 229,
+  "top10_pages_total_clicks": 229,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 56,
+      "Direct": 2,
+      "Unassigned": 1
+    },
+    "/florida-amendment-3-calculator/": {
+      "Organic Search": 32,
+      "Unassigned": 2
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 25,
+      "Unassigned": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 24,
+      "Direct": 2,
+      "Referral": 2,
+      "Unassigned": 1
+    },
+    "/guides/social-security-changes-2027/": {
+      "Organic Search": 15,
+      "Unassigned": 3
+    },
+    "/guides/senior-deduction-social-security/": {
+      "Organic Search": 14,
+      "Direct": 1
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 13,
+      "Unassigned": 1
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 13,
+      "Direct": 3,
+      "Unassigned": 2
+    },
+    "/": {
+      "Direct": 10,
+      "Organic Search": 2,
+      "Unassigned": 1
+    },
+    "/guides/social-security-survivor-benefits-and-working/": {
+      "Organic Search": 10,
+      "Unassigned": 1
+    }
+  }
+}
