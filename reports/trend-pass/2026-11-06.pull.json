@@ -1,0 +1,156 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window": {
+    "start": "2026-10-30",
+    "end": "2026-11-06",
+    "days": 7
+  },
+  "top_queries": [
+    {
+      "query": "best trust services",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "living trust services",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 78.5
+    },
+    {
+      "query": "nerdwallet auto loan calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 75.5
+    },
+    {
+      "query": "nerdwallet calculator retirement",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "query": "nerdwallet retirement calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    }
+  ],
+  "coverage_queries": [
+    {
+      "query": "best trust services",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 66
+    },
+    {
+      "query": "living trust services",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 78.5
+    },
+    {
+      "query": "nerdwallet auto loan calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 75.5
+    },
+    {
+      "query": "nerdwallet calculator retirement",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "query": "nerdwallet retirement calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 7.47
+    },
+    {
+      "page": "https://www.themodernwallet.com/about/",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/",
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0,
+      "position": 5.28
+    },
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 1.12
+    },
+    {
+      "page": "https://www.themodernwallet.com/budget/",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 6.12
+    },
+    {
+      "page": "https://www.themodernwallet.com/portfolio/",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 1.82
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 5.19
+    },
+    {
+      "page": "https://www.themodernwallet.com/methodology/",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://www.themodernwallet.com/probate/",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 7.47
+    },
+    {
+      "page": "https://www.themodernwallet.com/retirement/",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 17.57
+    }
+  ],
+  "top10_pages_total_clicks": 0,
+  "top10_queries_total_clicks": 0
+}
