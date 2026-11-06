@@ -1,0 +1,87 @@
+.claude/commands/paid-placement-publish.md — characters 27000 onward
+
+the vendor's site.
+   - `check_raw_html`: turn the tag into markdown (`[text](url)`, `**bold**`, a GFM pipe table).
+   - `check_data_files` duplicate key / parse error: the entry was pasted inside its neighbour; move it out so each
+     `_entries.push({...})` is whole.
+   - a `tsc` type error in a data file: fix the field the error names.
+3. **Exit 7 (infrastructure: clone, auth, registry).** The script already asked for a fresh build; re-check after
+   the next step. Twice in a row -> report `⚠️ host build failing (infrastructure)`, keep rows `queued`.
+4. **Exit 2** (no key / no service) -> say so in the report once; continue with URL polling as before.
+A page that is on main and still 404 is never "stalled", never left for the next run and never a reason to skip
+the rest of the queue without this check. `land-run.sh verify` runs the same check every 30s and exits 6/7 itself.
+
+### Order row (`ledger.json` -> `queued[]`), written by the partner routine's Pass P
+```
+{ "id": "<paymentId>", "queuedAt": "<UTC ISO>", "queuedBy": "<partner routine session url>",
+  "company": "Corpay", "firstName": "Sarah", "contact": "sarah@…", "threadId": "…", "replyToMessageId": "…",
+  "threadSubject": "…", "paymentId": "in_…", "invoiceNumber": "…", "amount": 500, "paidAt": "…", "payer": "…",
+  "pages": [ { "site": "www.layer3labs.io", "url": "https://www.layer3labs.io/comparisons/<slug>",
+               "lane": "A" | "B" | "C", "copy": ["paragraph", "paragraph"], "links": [ {"text":"…","href":"…"} ],
+               "placement": "alternatives section" | "", "heading": "Where Corpay Fits: …" | "" } ],
+  "deepDive": null | { "site": "…", "slug": "<company>-review" },
+  "notes": "anything P2 decided that P4 needs" }
+```
+Lane A = their own copy (insert verbatim), B = we write a short section, C = full deep-dive page.
+Lane C with `copy` filled (owner rule 2026-10-20, a guest post: the buyer sent their own full article) = use their
+article as the draft: keep their structure and points, edit it to `_content-standard.md` (every fact checked against
+their site, our link rules, no AI tells, no unsupported "#1 / best / only" claims), fill the review-page fields, then
+the normal P4b audit. Never publish it word for word.
+
+### Fix row (`fix-queue.json` -> list), written by the partner routine's Pass E
+```
+{ "id": "<threadId>", "queuedAt": "…", "site": "www.rankandpay.org", "pageUrl": "https://…/best-…/",
+  "company": "Kubrak Wealth Advisors", "firstName": "", "vendorEmail": "…", "threadId": "…",
+  "changes": [ {"field": "pricing", "old": "Not published", "new": "Flat-fee option or AUM fee schedule"} ],
+  "notApplied": ["one-physician differentiator"], "status": "queued" | "live" | "failed" | "notified",
+  "liveAt": null, "notifiedAt": null, "note": "" }
+```
+
+## Q1 — Build each order
+**Link contract (2026-10-28):** before editing, record each sold outbound link as `linkContracts:[{pageUrl,href,treatment:"dofollow"|"nofollow"|"sponsored",sourceMessageId,anchorText?}]`, taken from the actual agreement and that destination's supported insertion path. Distinguish a visible sponsorship label from the HTML rel attributes. Preserve explicitly agreed nofollow arrangements (e.g. AirPulse); never apply a later general rate card retroactively. A linkless mention has an explicit empty list and an agreement note. For older queued orders, recover the agreement from its thread now rather than inventing a default. The existing Phase 4 review must check these terms. A plain Markdown link is NOT proof of dofollow: a domain-level renderer rule can change its rel attributes.
+A row with `kind: "sponsorship"` is a category sponsorship: build it with **Q1s** below instead of P4-P5.
+Follow **P4 (publish), P4b (audit) and P5 (ad-free)** of `.claude/commands/paid-placement-fulfillment.md`
+exactly, in that site's checkout — they are unchanged, only the caller moved here. `mark` the repo
+before the first edit. One commit per repo: `Paid placement: <Company> on <n> page(s)`.
+
+## Q2 — Land, verify, record
+1. Gate per repo (layer3: `bash .claude/scripts/deploy-precheck.sh $(git diff --name-only origin/main HEAD)` — the
+   same data-file, raw-HTML and table-deferral gates the host's `prebuild` runs — then `npx tsc --noEmit`, Node 20;
+   Astro: `npm run build` when under ~5 min; JSON: `python3 -m json.tool`). A gate failure names the cell or entry:
+   fix it with the Q0b recipe before landing. `land` runs the same precheck and refuses with exit 4 otherwise.
+2. Run `.claude/scripts/land-run.sh land` as a standalone command (15-minute command timeout), save its output and inspect its actual exit code. Do not pipe it through tail/head/tee. Exit 0 = on main.
+   Exit 5 = pushed to a `claude/land/*` branch but not merged yet: leave the row `queued`, add
+   `"note": "landed-branch <name>, not merged"`, report `⚠️ not merged`, and the next run re-checks
+   (if origin/main contains the commit by then, continue from step 3). Exit 4 = the precheck named a cell or
+   entry this run wrote: fix it (Q0b recipe), commit, `land` again. Exit 3 = a real conflict with concurrent work:
+   leave the row `queued`, report `⚠️ <reason>`.
+3. Verify live: `RENDER_API_KEY=<key> .claude/scripts/land-run.sh verify <url>=<section heading or company name>`
+   for every page (VERIFY_DEADLINE 900; it cache-busts and asks the host every 30s). Exit 0: record `liveAt` = the
+   UTC time all pages passed. Exit 6: the host build failed on a gate, fix per Q0b in this run and verify again.
+   Exit 7: infrastructure, retried once already; poll again after the other work of this run, then report.
+   Exit 1 with the host still building: leave the row `queued` with `note: "landed <sha>, build in progress"`
+   and the next run records `liveAt` (Q0b step 1 shows when it is live).
+3b. **Verify the promised links, not just the company name.** After the actual public pages pass step 3, run `python3 scripts/paid_placements/link_contract.py --output /tmp/link-contract-audit.json` with `{"links":row.linkContracts}` on stdin. It must return `status:"pass", source:"live"` for every sold link; a fixture receipt never qualifies. Preserve the actual receipt as `linkContractAudit` on the fulfilled row. A missing link, changed target, mixed attributes or promised dofollow rendered sponsored/nofollow keeps the row queued for the existing repair/review path and blocks the delivery email. Fix the insertion path within the existing site permissions and agreed scope, then re-audit; never silently rewrite the agreement or add a site-wide exception that changes unrelated pages. This mechanical check complements, and never replaces, the existing independent/rendered-page audit. Explicit linkless orders require no link fetch.
+4. IndexNow the URLs (key in each repo; layer3 `dc557f6bfced447aa1a71771d8a0d24a`).
+5. In `/home/user/layer3labs` (fresh `git merge --ff-only origin/main` first): move the row from `queued`
+   to `fulfilled` with the fields P6 step 6 lists (`pages` = live URLs with `#section-id`, `adFree`,
+   `commits`, `fulfilledAt`, `liveAt`) and the P7 `clientEmail` object with `status: "pending"`,
+   `sendAfter` = liveAt + 3h and `livePages` (`[{url,title}]`). Commit `Ledger: <Company> live (<n> pages)`,
+   `land-run.sh land`. The partner routine's P9 sends the buyer email from that row.
+
+## Q1s — Build a CATEGORY SPONSORSHIP order (`queued` row with `kind: "sponsorship"`)
+**Owner rules 2026-10-14.** The vendor pays monthly to be on EVERY page in one category of one site. Every fleet site
+(all equal: same terms, same position) renders ONE large recommendation box in its in-body CTA slot (the slot of
+Metabolic Journal's Opt Health box / Layer3Labs' band after the first section) on each page an active sponsor lists in
+`data/category-sponsors.json`. On those pages the box REPLACES the slot's non-paid CTA and the page shows no other
+large promo box; the comparison table's "Featured" row ($100 product) stays. The box never says "Featured" or
+"Sponsored". Only `active: true` entries render; Q2c switches them off when they stop paying.
+1. **Pages.** Inventory the category on that site (Q2b step 2: `upsell_due.py --pages … --terms …` plus a grep of the
+   site's data/content) and keep every live (200) page that is genuinely about that category: its best-of / comparison /
+   alternatives pages, guides on choosing or using such tools, and the upsell page we built for them (upsell-queue row).
+   Not loosely related pages. Host-less paths (`/comparisons/<slug>`, `/guides/<slug>`, `/<hub>/<slug>/` as the site
+   serves them). If fewer than 3 pages qualify, include what there is and say so in the report.
+2. **Copy.** `headline` = a short plain hook (<=80 chars) in the voice of the box it replaces, naming what they help
+   with, e.g. "Track how AI search answers mention your brand" or "Military-friendly banking with early pay". `tagline` =
+   their own one-liner from the row if present, else ONE plain factual sentence (<=140 chars) about what the product
+   does, from t

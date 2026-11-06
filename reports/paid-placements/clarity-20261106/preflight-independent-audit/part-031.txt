@@ -1,0 +1,47 @@
+.claude/commands/roundup-correction-fix.md — characters 9000 onward
+
+age prose: the same `RoundupEntry`) |
+
+A site not in this table (a newer fleet site) -> find its repo by the domain in `src/lib/fleetSites.ts`
+(`baseUrl`) and the repo whose `data/placement-verticals.json` / README names that domain; if you can't
+be sure, don't edit: report `⚠️ repo unknown` and still send the reply.
+
+Look in this order and fix EVERY place the wrong fact appears for THIS company on THIS page:
+1. **The comparison table row.** Fleet sites: `data/roundup-vendors.json` -> key = the page path (e.g.
+   `/explainers/best-military-financial-advisors/`) -> the row whose `name` is the company. Fields:
+   `pricing`, `bestFor`, `summary`. layer3: the page's entry in `data/comparisons-new.ts` (or the
+   `comparisons*.ts` file that holds that slug) -> its `comparisonTable` row / tool entry.
+2. **The page's own prose**, when it lives in the repo: grep the company name in the file that renders
+   that page (Astro sites: `src/content/**/<slug>.md`; layer3: the same TS entry; Jinja sites:
+   `templates/**` for that slug). Only sentences about THIS company that state the wrong fact.
+3. Prose that is NOT in the repo (page text stored in a database, e.g. Rank and Pay explainers) is left
+   alone: fix the table row only and add `(page text lives in the database, not edited)` to the report line.
+
+## F3 — Edit — PUBLISHER ROUTINE
+- Replace ONLY the wrong words with the right ones, same style and length as the surrounding text
+  (`"near Tulum"` -> `"near Cancún"`; `"Not published"` -> `"Flat-fee option or AUM fee schedule"`).
+  Don't rewrite the sentence, don't add their marketing words, don't touch other companies, the ranking,
+  links, the meta, or any other page.
+- A row field that holds a fact AND sales text (e.g. `bestFor: "Physician-staffed private clinic near
+  Tulum"`) gets only the fact swapped (`... near Cancún`).
+- Keep JSON valid and TS strings escaped (`'` -> `\'` in single-quoted strings).
+- Already correct (a previous run fixed it)? Skip the edit, note `already fixed`.
+
+## F4 — Check, land, verify — PUBLISHER ROUTINE
+1. Gate: JSON edit -> `python3 -m json.tool <file> >/dev/null`; layer3 TS -> `npx tsc --noEmit` (Node 20);
+   Astro markdown -> frontmatter still parses (`npm run build` if the repo builds in under ~5 min).
+2. One commit per repo: `Roundup correction: <Company> on <page slug> (vendor-confirmed)` + the
+   Co-Authored-By line that repo uses.
+3. `.claude/scripts/land-run.sh land` (exit 0 = on main). Exit 5 -> keep the row `queued` with a
+   `note` (branch pushed, not merged); exit 3/4 -> fix if it is this run's change, else `status: "failed"`.
+4. Poll the live page (cache-busted, every 30s, up to 10 min) until the new value is in the HTML.
+   Not live by then -> report `⚠️ not live yet` (the deploy usually lands later), still send the reply.
+5. IndexNow the URL (key in the repo; layer3 `dc557f6bfced447aa1a71771d8a0d24a`).
+
+## F5 — Reporting
+Partner routine (after F1b): `🛠 Queued fix — <Company> · <page slug> · "<old> -> <new>"`; for
+`fixmixed` / `fixminor` add `   ↳ not applied (paid edit): <their sales asks, ≤8 words>`; a fix that was
+NOT queued (site disagrees, no page URL): `⚠️ Not queued — <Company> · <reason>` under FIXES TO MAKE.
+Publisher routine (after F4): `🛠 Fixed live — <Company> · <page slug> · "<old> -> <new>"` (append
+`(page text in DB, not edited)` when true) or `⚠️ Failed — <Company> · <reason>`.
+Partner routine Pass E2 (after the vendor note): `📣 Fix-live note — <name> · <Company>`.

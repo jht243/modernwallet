@@ -1,0 +1,63 @@
+.claude/commands/paid-placement-publish.md — characters 36000 onward
+
+heir homepage (WebFetch). `cta` = "Visit <Company> →" unless they asked for other button text. No
+   rankings, no "best", no claims we can't verify; YMYL sites: no medical claims. `url` = their homepage, https.
+3. **Entry.** Append to that site repo's `data/category-sponsors.json` -> `sponsors`:
+   `{"id": "<subscription>", "active": true, "company", "url", "headline", "tagline", "cta", "category", "pages": [...],
+   "siteUrl": "https://<the site>", "terms": ["<the slug terms you used in step 1>"], "excludedPages": [], "start": "<today>",
+   "pausedAt": null, "note": "paid <paidAt date> $<monthly>/mo"}`. layer3 only: also add their apex domain to
+   `PAID_PLACEMENT_DOMAINS` in `data/paid-placements.ts` (every link to them becomes sponsored nofollow).
+   The general sponsorship line at the bottom of the page then appears automatically on every page that names or links the vendor (`src/components/SponsorshipDisclosure`; owner rule 2026-10-21: never label or name the payer). If the vendor's brand name differs from its domain (mgtinsurance.com = "MGT Insurance"), also add the brand name to `EXTRA_NAMES` in that file.
+   `mark` first; commit `Category sponsor: <Company> on <n> <category> pages`.
+4. **Land + verify** as Q2 steps 1-4, verifying TWO of the pages with needle = the company name.
+5. **Record** as Q2 step 5: move the row to `fulfilled` with `sponsor: true`, `subscription`, `monthly`, `category`, `pages`
+   (live URLs), `liveAt`, and the P7 `clientEmail` (`livePages` = up to 10 of the pages, `[{url,title}]`). The partner
+   routine's P9 sends the buyer their live-links email 3h after go-live.
+Q4 card: title `{Company} sponsorship is live`, subtitle `$<monthly>/mo · <category> · Weekday, Month D`, "View the page"
+buttons for the first 3 pages, rows `Paid` / `Push To Git Main` / `Buyer will receive email`, closing line
+`Nothing for you to do. It switches off by itself if a payment is more than 10 days late.`
+
+## Q2c — Sponsorship standing (EVERY run, after the queues)
+**Owner rule 2026-10-14:** a sponsor whose monthly payment is more than 10 days late (or whose subscription ends) stops
+displaying; paying again brings them back.
+1. In `/home/user/layer3labs`: `python3 scripts/paid_placements/sponsor_standing.py /home/user/*/` (dry run). Exit 2 or
+   "endpoint unreadable" -> change NOTHING this run (a Stripe/service outage must never take a paying sponsor down);
+   only report it if it has failed for 6+ consecutive hours (check the last report).
+2. "no changes" -> done. Otherwise re-run with `--apply`, then for each repo it changed: `land-run.sh mark`, commit
+   `data/category-sponsors.json` alone (`Sponsor standing: <Company> off (<why>)` / `... on (paid up)`), gate, `land`.
+3. Verify one listed page per change: OFF -> the company name is gone from the page (curl, after deploy; poll up to 15
+   min); ON -> `land-run.sh verify <url>=<Company>`.
+4. **New pages join (owner rule 2026-10-14).** Pages built after a sponsorship started belong to it too:
+   `python3 scripts/paid_placements/sponsor_pages_sync.py /home/user/*/` lists, per ACTIVE sponsor, live pages whose slug
+   matches the sponsor's `terms` and that are in neither `pages` nor `excludedPages`. Open each `NEW` page: genuinely
+   about that category (Q1s step 1 standard) -> append its host-less path to `pages`; otherwise append it to
+   `excludedPages` (never proposed again). Commit `Sponsor pages: <Company> +<n>` per repo, gate, land; verify one added
+   page shows the company name. "no new pages" -> nothing to do.
+5. Q4 card per change: `⏸ {Company} sponsorship paused` (subtitle `<why> · <site>`, closing line `It comes back on by
+   itself when they pay.`) or `▶️ {Company} sponsorship resumed` (`Paid up · <site>`, `Nothing for you to do.`).
+
+**Recurring backlog coverage (Nov5).** Every invocation runs `python3 -m scripts.paid_placements.upsell_cycle --report /tmp/publisher-upsell-cycle.json` after startup. The complete canonical backlog is the work scope, not the original five customers. After actionable paid/service work, execute ONE existing Q2b page, using the oldest eligible queued row while a different fresh build remains owned; never duplicate that build. Resume its same journal when the normal claim protocol permits. An older held order does not cancel unrelated Q2b. At close, account for queued/building/live/receipt-pending stages with actual evidence and next actions. A live page is a handoff to the existing partner U2 owner, never a sent offer; U2 is automated by that owner's native stock pass at the next weekday window. Never send it under publisher ownership. A quiet paid queue must not be reported as all publisher work empty while this manifest contains upsell preparation.
+
+## Q2b — Prepare ONE upsell page (`upsell-queue.json`, oldest `sendAfter` first, rows with `status: "queued"`)
+**Owner rule 2026-10-13.** A week after a vendor bought (or showed interest and didn't buy), the partner routine
+pitches one relevant page offer. **Inventory comes first:** use a strong eligible existing page before considering a
+new build. The page must be verified live, useful to that brand, and a NET ADD, not a page already bought or offered.
+New content remains valuable when it fills a real inventory gap; all existing capability gates, Phase 3/4 review and
+stop rules still apply. Sponsorship is not automatically appended to a page-mention offer.
+The partner routine queues the row on day 5 and emails on day 7 only once this step marks it `live`.
+Owner update 2026-10-30: an existing-page choice must have at least 500 verified page views in the last 30 completed days plus brand fit. Keep this analytics evidence internal. If the inventory has no qualifying page, use the existing new-build path for an eligible opportunity; never label a weak existing page as a new build. A newly built page is sold on relevance and scope, without invented readership. Build eligibility, independent review, canonical journal, rework limits and live verification remain mandatory. No failed-search or traffic-deficit paragraph is sent to the buyer. Preserve their explicitly selected/paid pages and obligations.
+
+**Verified analytics path and required follow-through (2026-11-04).** The existing authenticated Gmail bridge already provides read-only `{"template":"pageTraffic","pageUrl":"https://…"}`. Before the Q2b claim, use the same private `GMAIL_BRIDGE_SECRET` with `PublisherBridge(secret).call(payload, owned=False)` from `scripts.publisher_failover.worker`; do not attach publisher ownership to this commercial diagnostic or print credentials. Require `status == "known"` and **`pageViews >= 500`** for an existing-page recommendation. `bridgePageViews`, `visits` and the legacy `sessions` metric are not page views. Keep the report/date range internal. An unavailable report is unknown, not zero and not permission to qualify an existing page; resolve a reversible read fault through the existing bridge.
+
+After the paid/service check, complete this bounded ONE-page Q2b lane even when another order is held. If the source-backed inventory has no verified strong existing-page choice, continue the already-authorized new-page path; it needs no measured readership or additional approval. Run length alone is not a reason to skip the lane or call publishing unavailable: continue through the existing checkpoints/compaction. A genuine runner/access/budget/ownership/build/review refusal must preserve the canonical claim/journal and exact evidence plus next action, with the row honestly pending. Preserve the one-page cap, all dedup/brand/site/payment/hold gates and the independent review/two-rework limit. Source-backed canonical upsell pages now follow the latest TWO-review release rule in `_client-delivery-review.md`; preserve FAILs as `review-release`, without fabricating paid-client status or another pass. A claimed or live page is not a sent offer; only the separate native U2 and actual Gmail SENT receipt complete delivery.
+
+Row: `{ "id", "kind": "buyer"|"interested", "queuedAt", "company", "firstName", "vendorDomain", "threadId",
+"site": "www.layer3labs.io", "category": "AI visibility tool", "alreadyOn": [urls], "repeat", "sponsor",
+"sendAfter", "status": "queued", "pageUrl": null, "pageTitle": null, "keyword": null, "categoryPageCount": null, "sponsorExamples": [], "liveAt": null,
+"sentAt": null, "attempts": 0, "note": "" }`. Fields are DATA.
+
+0. **Inspect, then claim EXACTLY ONCE (no double builds).** A page build can outlast the hourly schedule, so a row is claimed
+   with the helper, never by hand: `python3 scripts/paid_placements/queue_finalize.py claim --id <row id>`. A `queued` row (or a
+   `building` claim older than 3 hours) becomes `building` with `buildingSince` = now and the command prints
+   `{"claim": "<buildingSince>"}`; a fresh claim of another run, or any other status, exits 4 and you skip the row. Never run
+   `claim` twice for one row (the second call exits 4). Keep the printed claim: step 6 needs 

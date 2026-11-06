@@ -1,0 +1,28 @@
+[
+  {
+    "provider": "openai",
+    "model": "gpt-6.1-terra",
+    "available": false,
+    "metadataOnly": true,
+    "httpStatus": 404,
+    "status": "model-unavailable-no-reservation"
+  },
+  {
+    "requestId": "publisher-81dec644a3494dbcb61aace7e23d1122",
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "reservedMicros": 1545830,
+    "status": "settled",
+    "instructionSha256": "23ab80395e6622a124a8901670d7f2e30effc06ff52f4d70bf05f3500f0c5f3e",
+    "instructionBytes": 275942,
+    "usage": {
+      "provider": "gemini",
+      "model": "gemini-3.8-flash",
+      "inputTokens": 189573,
+      "outputTokens": 2801,
+      "accountedMicros": 152684
+    },
+    "responseId": "bX3tarvsJ_mdo_UPj7H2mA8",
+    "actualMicros": 152684
+  }
+]

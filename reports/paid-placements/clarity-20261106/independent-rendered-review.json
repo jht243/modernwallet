@@ -1,0 +1,43 @@
+{
+  "reviewer": "independent-gemini-3.8-flash-clarity-20261106",
+  "snapshotSha256": "26d02158a00b7b7ca17c787c0d9c406df747160fe7625ba2c030d01e95225d23",
+  "routes": [
+    {
+      "path": "/roundup/best-tax-relief-companies/",
+      "fingerprint": "dc15d2f6af75e506d5579a815e2587e9942f4293aadd01760e12d43feacb0422",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "The page maintains complete structural coherence. The updated Clarity Tax Relief table entry integrates naturally with the existing vendor comparison table without disrupting surrounding sections, criteria, or FAQs."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Angeline Balsitis, EA is verified directly from official source HTML (sources/official-about.html). The 30-day money-back guarantee with October 16, 2026 effective date and grandfathering clause is verified directly from official source HTML (sources/official-fee-terms.html)."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "Financial services are explicitly excluded from testing labels per _testing-labels.md and _experience.md Section G. The credential claim is transparently attributed ('per its site') without asserting independent licensing verification."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "Article schema datePublished ('2026-06-25') and dateModified ('2026-06-25') are intentionally and properly preserved, reflecting that the core editorial article was not overhauled. The temporal condition ('agreements signed on or after October 16, 2026') is accurately stated in table prose."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "The deep link to https://claritytaxrelief.com/client-bill-of-rights/ is properly rendered as a Markdown link inside the table cell with valid HTML attributes (target='_blank' rel='noopener'). Canonical URL and meta robots are correct and unchanged."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Production static build passes with zero errors across all 1094 pages. The table structure in the rendered HTML renders cleanly with proper tr/th/td tags, with no raw unescaped markdown or layout distortions."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "Modifications were strictly limited to the two authorized table cells for Clarity Tax Relief in data/roundup-vendors.json. No promotional ranking changes, additional links, or unrelated editorial rewrites occurred."
+        }
+      }
+    }
+  ],
+  "originalProviderReview": "independent-api-review.json",
+  "adapter": "Provider bound raw-file SHA256; exact file, semantic fingerprint and HTML hash verified. This maps to canonical snapshot digest without changing findings/verdict/checks."
+}

@@ -1,0 +1,45 @@
+.claude/commands/_client-delivery-review.md — characters 0 onward
+
+# Client delivery at the review limit — owner rule, 2026-11-04
+
+Jonathan instructed that a page made for a client must go live and be sent to the client when the internal two-rework limit is reached: the client can then request changes. This supersedes older blanket instructions to stop, request another internal review pass, or report an internal-review limit as a new owner decision **for the client deliverables below only**.
+
+## What qualifies
+
+An actual source-backed client deliverable in the existing canonical paid queue: a verified paid page mention, client article/Company Deep Dive, supplied article, or already explicitly owner-approved publish-first invoice order. Genuine canonical client-service factual corrections also qualify under the owner's November 5 clarification below, even when the correction is unpaid. Preserve the exact client, payment/order or service identity, destinations, scope, links, prices, original deadlines and existing destination capability. A caller's `isClient` flag, a test order, an unpaid sales inquiry or ordinary independent editorial content does not qualify. Source-backed canonical upsell pages use the separately authorized two-review lane below; never mislabel them as paid. A correction remains a service, not a new paid order, and any unresolved source hold such as Shepherd's remains protected.
+
+## Review and release
+
+1. Run the normal source work, independent complete-page review and existing maximum of TWO targeted writer reworks. Keep the independent reviewer separate. Do not add a third writer round, regenerate the page, reset persisted attempts, switch providers to evade the limit or restart the clock in another invocation.
+2. If the client candidate still has editorial findings at that limit, automatically release the exact latest candidate under `client-live-feedback-2026-11-04.1`. Do not ask Jonathan for another review-pass approval. Preserve the original FAIL verdicts, all findings, reviewed snapshots and rework counts. Record `client-review-release` separately from an editorial PASS; the client has not reviewed or approved it yet.
+3. Keep the candidate and whole rendered-page evidence intact through the ordinary scoped landing path. A resumed run must recover the actual latest candidate/reviews and match its semantic fingerprints; it must not buy a replacement draft or a new audit after the limit. Missing/stale artifacts are a technical reconciliation task, not permission to invent a receipt or silently regenerate.
+4. Mechanical build/parse, exact paid scope/links, ad removal, native ownership/fences, fresh source/payment/Gmail checks, exact candidate-versus-live output and normal deployment checks still decide whether publication technically succeeded. Fix a syntax/build defect within the existing authorization without treating it as a new editorial pass. A broken build or incorrect/missing sold link is never sent as completed work.
+5. The exception does not override a customer cancellation, explicit prepublication copy/budget approval promise, source hold, opt-out/owner hold, destination exclusion, required professional approval or evidence/test honesty. Never invent product testing, credentials, payments, medical claims or a passing review. Resolve those actual dependencies through their existing owners; do not disguise them as discretionary editorial findings.
+
+## Delivery and client feedback
+
+After real publication and live/link verification, move the SAME order to fulfilled and queue its existing native P9 completion automatically. Preserve first liveAt, original payment/deadline, the existing three-hour P9 floor, reply window, lease, caps and duplicate guards. Do not leave it parked as “review exhausted.” Reread the full current conversation/manual SENT/provider history immediately before sending. Send the actual live links and the normal offer to make requested changes; do not narrate internal reviews or failures to the customer. Acknowledge delivery only after actual Gmail SENT and canonical receipt landing. The live-links email is the invitation for client feedback, not proof that feedback or approval has already occurred. Subsequent requested corrections use the existing source-backed service path.
+
+No completed client order is rebuilt to validate this policy. No API cap, model choice, price, send window, excluded client/site or unrelated editorial workflow changes.
+
+## Client corrections — direct owner clarification, 2026-11-05
+
+Jonathan clarified this rule while the existing iLands factual correction was stopped after two repair attempts: "i already told you that when it's for a client or an upsell, you launch live after 2 attempts, why is this not fixed yet?" Do not exclude genuine client-service corrections merely because they are unpaid, or ask for another internal-pass approval at that limit.
+
+This covers an existing canonical correction/service row tied to an actual authored customer/business request, its original source message and thread, recipient, exact affected pages and requested corrections. It does not authorize new unpaid articles, placements, product tests, sales inquiries or unrelated editorial work. Recover the same saved candidate, exact source-backed findings and counters; do not regenerate, reset or buy another model/review cycle. Apply already-established factual replacements and necessary mechanical/attribution corrections without inventing a fresh editorial PASS. Retain the actual failed reviews and identify the owner-authorized release separately.
+
+The source, testing-honesty, professional, explicit prepublication-promise, opt-out/hold, build, whole-render, link, ownership, deadline and exact-live safeguards above still apply. An unresolved factual source dependency is not an editorial preference: preserve that exact hold and do not claim it was answered. The still-unverified Shepherd integration count, for example, is not made true by this clarification.
+
+After verified live correction, finish the SAME service row and send its existing native `fixlive`/service completion through its normal owner and reply window, then land the actual Gmail receipt. Do not create a payment, invoice, paid order, paid thank-you or a P9 clock for an unpaid correction. Completion requires the real requested corrections and actual delivery; an acknowledgment or release record alone is insufficient.
+
+## Canonical upsell pages — latest direct owner extension, 2026-11-04
+
+Jonathan explicitly instructed: "this is an upsell page, it has the same rules, 2 reviews, and then it goes live no matter waht". This supersedes older clauses excluding speculative upsell pages from release. It applies to source-backed canonical `partner.U2` / `agency.AU3` buyer/interested rows, with their real source, recipient, destination, prior-placement exclusions and one-offer protections. It grants no payment, placement acceptance or expanded destination permission.
+
+Run TWO independent reviews with at most one targeted correction between them. After review two, release the exact latest candidate without another editorial pass or correction. Existing preserved candidates already reviewed three times also qualify immediately; recover their exact draft/journal rather than reset or regenerate. Keep FAIL verdicts and the full immutable history. Record `review-release` / `upsell-live-feedback-2026-11-04.1`, never PASS or client approval.
+
+The canonical `content_review.py audit` automatically records release on the second actual review for a qualifying row. For an existing stopped candidate, use `content_review.py release-upsell --queue QUEUE --state CANONICAL_STATE --draft EXACT_SAVED_DRAFT`, then `queue_finalize.py resume-review-release --queue QUEUE --id ID --quality-state CANONICAL_STATE --draft EXACT_SAVED_DRAFT`. This resumes publication only; it preserves the old blocked state and findings in history and does not authorize a new generation or repair. Restore any mirrored journal at its original canonical path byte-for-byte, including audit/source snapshots; paths and context remain bound to the saved evidence.
+
+Before publication, run the normal mechanical build/lint and capture the complete exact candidate using `rendered-audit.py capture`; no new editorial audit is required at the limit. Preserve its full HTML/text captures. After publication and ordinary live link/indexability checks, capture the actual canonical live routes. Run `content_review.py verify-live --queue QUEUE --state CANONICAL_STATE --draft EXACT_SAVED_DRAFT --candidate-snapshot CANDIDATE --live-snapshot LIVE` to compare the full mechanical snapshots without relabeling the editorial verdict. Commit the original journal, all independent reports, sources and captures through the normal fenced landing path. Finalize the SAME opportunity with the usual fresh post-live Gmail check; finalizer requires this exact live-match evidence for a review-release.
+
+Only after actual publication does the existing native sales owner send U2 with

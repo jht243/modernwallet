@@ -1,0 +1,11 @@
+{
+  "providerReadAllCurrentContractHashes": true,
+  "actualProviderInputTokens": 189573,
+  "cliChunkDeliveryClaimed": false,
+  "independentFullContextReceipt": "independent-api-review.json reviewedContracts and actual model usage",
+  "contentVerdict": "PASS",
+  "sourceCorrectionStillOverdue": true,
+  "reviewerSLAPhraseRejected": "within SLA parameters is not true: original deadline Nov6 00:33:43Z retained; actual content review does not close service obligation.",
+  "visualLimit": "No visual screenshot/browser test; static rendered HTML/CSS structure only. No visual QA claim.",
+  "sourceAndNoTestingClaimsRetained": true
+}

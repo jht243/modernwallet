@@ -1,0 +1,41 @@
+.claude/commands/paid-placement-publish.md — characters 63000 onward
+
+nufacture an exact-URL exception. Where the renderer needs different treatment for the same href on different pages, use reusable page-context handling and test both pages plus an unrelated-page control; do not rewrite the agreement to fit an implementation shortcut. Follow the existing review/land/live-verification requirements. The independent complete-render check in `_rendered-page-audit.md` also applies to link/template changes without prose edits; it is not optional and the implementing publisher cannot sign its own review. Use that existing gate without adding a human approval step.
+
+**Customer edits (`kind: "customerEdit"`, owner rule 2026-10-19).** A paying customer asked for a small change on a
+page they paid for (Pass M). Same flow (find, edit, gate, land, verify live, mark `live`), with two differences from F3:
+- Apply each `changes` item as written: replace `old` with `new` in the `field` named (e.g. the Quick verdict), or
+  add `new` there when `old` is "". The customer's own words are allowed here. Keep the page's style: no "#1 / best /
+  only", no claims about competitors, no new links, nothing else on the page touched.
+- Their company already appears elsewhere on that page; the new sentence must agree with it. Can't find the `field`
+  or the text clashes with the page -> `status: "failed"` with a plain `note`.
+- Owner review 2026-10-25 (Kreavo / Condo Control rows queued 10-23, still not applied two days later): run
+  `python3 scripts/paid_placements/fix_queue_check.py --id <row id>` FIRST. It says per change whether `old` is on the
+  page the field names (curly quotes and a leading "- " do not count as differences). A change whose `old` is not there
+  but whose nearest live sentence clearly is the same sentence reworded (the check prints it with a similarity score)
+  is applied to THAT sentence when the customer's intent is unambiguous (Kreavo: "Only Creatify and Higgsfield insert
+  the actual product object into the shot." -> add Kreavo); otherwise the row is `failed` with the nearest sentence in
+  the `note` the same run, so the partner routine tells Jonathan. A queued row is never left untouched for a run: it
+  ends the run `live` or `failed`. A change whose field names another page than the row's `pageUrl` is applied there.
+
+## Q4 — Report (only if this run changed anything or hit a ⚠️)
+**Every report to Jonathan is a report card (owner-approved layout, 2026-10-13).** Write a card JSON to
+`/tmp/card.json` and render it with `python3 scripts/paid_placements/report_card.py /tmp/card.json --html /tmp/card.html
+--text /tmp/card.txt` (layer3labs checkout). Never hand-write the body. The card is: a bold title, one subtitle line
+(`$amount what · Weekday, Month D`), one "View the page" button per page, a short timeline (grey label, plain value,
+times only like `12:39 pm`; prefix a weekday only when a step is on a different day), and one closing line:
+`Nothing for you to do.` or, when Jonathan must act, one plain sentence saying what. No IDs, hashes, file paths,
+branch names or copy text anywhere in the card. Timeline labels, exactly:
+- Paid order: `Paid` (`12:39 pm · {first name}, {Company}`), `Push To Git Main` (`1:27 pm`, or `around 1:20 pm (scheduled)`
+  before it happens), `Buyer will receive email` (`around 4:30 pm (automatic)`; once sent: `Buyer received email` `4:46 pm`).
+- Vendor fix: `Vendor asked` (`9:59 pm`), `Push To Git Main`, `Vendor will receive email` (`next hour (automatic)`; once
+  sent: `Vendor received email`), then one row `Changed` (`{field}: {old} → {new}`).
+Titles: `{Company} is queued` / `{Company} is live` / `{Company} is completed` / `{Company} fix is live` /
+`⚠️ {Company} needs you`. Subjects: same as the title, with `✅` in front for live; the completion email's subject is
+`✅ COMPLETED: {Company} — ${amount}, {n} page(s) live, client emailed`.
+
+One card per order / fix this run handled (title `{Company} is live` or `{Company} fix is live`, subject with ✅;
+`⚠️ {Company} needs you` when it failed). Send each with the same renderer:
+`RESEND_API_KEY=… RESEND_FROM='Layer3Labs Routines <notifications@intake.layer3labs.io>'
+RESEND_TO='jonathan@pipelinemarketing.io' python3 scripts/paid_placements/report_card.py /tmp/card.json --send`
+(keys come from the routine prompt). Never email the vendor or buyer from this routine.

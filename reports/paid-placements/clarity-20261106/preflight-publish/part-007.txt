@@ -1,0 +1,59 @@
+.claude/commands/paid-placement-publish.md — characters 54000 onward
+
+review finding. Do not reset prior failures on the next hourly run.
+
+4. **Build it the site's normal new-comparison-page way** (same publication, or the specifically verified Layer3Labs destination in step
+   1b; partner.U2/partner.D3b retain their existing verified destinations. Owner update 2026-10-30 also permits agency.AU3 on Layer3Labs itself, using the same verified publisher repo and independent review/finalizer. Other agency destinations remain queued pending verified capability), autonomously: that repo's roundup playbook Phase 4b
+   STEPS 1-3 (layer3: `.claude/commands/vertical-roundup-auto.md`; fleet sites: `.claude/commands/vendor-roundup-auto.md`)
+   with the chosen title as the row (demand per the ladder is recorded but never blocks the page): research and fill the field (8+ verified providers, minimum 4), chart it
+   as `reports/mindmap-pass/<TODAY>-upsell-<slug>.md` (never the bare `<TODAY>.md`), then mindmap phase-3 writer,
+   phase-4 audit, phase-6 links, (layer3) 7b, phase-7 sitemap. **Leave the vendor itself OFF the page**: being
+   featured on it is what we offer them. Nothing on the page mentions them, the upsell or any sale.
+   **Credentials:** this routine has no `SUPABASE_*` / `DATAFORSEO_*` env keys, and the page does not need them. Skip
+   the playbook's preflight "confirm SUPABASE" stop and its outreach-pool commands (`add_research_vendors.py`,
+   `flag_roundup_vendors.mts`, `roundup_pool.mts`, `serp_roster_*`): research with WebSearch/WebFetch, then write the
+   spec and run the page builder (layer3: `npx tsx scripts/build_roundup_page.mts <vertical>`). The daily vendor-roundup
+   routine adds the new page's vendors to outreach later. A site whose pages live in a database (Rank and Pay) is
+   written through the attached Supabase MCP connector, exactly as its playbook says. Never fail a row for missing keys.
+5. **Land + verify** exactly as Q2 steps 1-4 (gate, `land-run.sh land`, `verify <url>=<H1>`, IndexNow).
+6. **Record publication, only publication** (owner decisions 2026-10-26). In `/home/user/layer3labs` (fresh
+   `git merge --ff-only origin/main` first) read the thread you will be emailing about with `get_thread` AFTER the page is
+   verified live, then run the helper (it re-reads the queue fresh and fails closed on any missing or invalid input):
+   `python3 scripts/paid_placements/queue_finalize.py finalize --id <row id> --claim <claim from step 0> --owner <the row's
+   owner, unchanged> --destination <host the page is on> --build ok --page-url <https url> --page-title "<the page's <title>
+   without the ` | Site` suffix, under ~70 chars>" --keyword "<head term>" --category-count <N> --live-at <UTC ISO the verify
+   passed> --thread-id <row threadId> --message-id <latest message id you read> --checked-at <UTC ISO of that read, at most 5 minutes before you run finalize: read the thread again if the build or verify took longer>
+   --thread-state open|replied|closed|rejected [--is-new true|false] [--quality-state STATE --draft DRAFT] [--sponsor-examples '[{"url":..,"title":..}]'] [--fast-path]`.
+   `N` = how many live pages on the site belong to `category` and would carry a category sponsorship (the step-2 inventory
+   checked by eye, plus the new page); the email says "about N pages", so never round up or guess. `--sponsor-examples` =
+   the TWO best existing pages of that inventory (live 200, on this site, not the new page, not in `alreadyOn`; titles
+   under ~70 chars). `--is-new true` for a page built in step 4, `false` for an RP-2 existing page. A new page requires `--quality-state STATE --draft DRAFT` from the passing exact-artifact independent review. Use `--build failed` for an infrastructure/build failure; use `--build audit-failed` only when the review loop is exhausted or blocked (step 7). The helper sets `status: "live"` only when the thread is `open`,
+   the account has no suppression or opt-out, and the row has no `sentAt` / `replySentAt`; otherwise it records the page
+   and sets `superseded` / `suppressed` so nothing is due. It keeps `owner`, `sendAfter`, `brand`, `sponsorExamples`,
+   `isNew` and writes `buildMinutes` (claim to `liveAt`; not for `--fast-path`) and `finalCheck` (thread, message, time).
+   **It never records an offer.** `profiles.py record-offer` happens only after the owner's CONFIRMED send, inside
+   `upsell_record.py mark-sent`. A non-zero exit changes nothing, or requeues with attempts+1 (7), or holds a mismatched /
+   undemonstrated destination (6): read its JSON, never edit the row by hand to get past it. Commit `Upsell page: <Company>
+   -> <slug>`, `land-run.sh land`. The owner named on the row emails from it, after re-checking its own eligibility;
+   `due_emails.py` prints `HOLD` rows in a separate "NOT TO SEND" section that is never counted as a send.
+7. **Failure.** A repairable audit finding stays inside the persistent review loop above, using targeted fixes and independent re-audit. A qualifying canonical upsell after TWO independent reviews uses `review-release` and publishes the exact latest candidate through the shared contract, preserving FAILs; do not terminally stop or request an extra pass. Nonqualifying/permission-blocked review -> `queue_finalize.py finalize --build audit-failed`: terminal `failed` + `auditBlocked`, evidence retained, no automatic reset. Infrastructure/build/land/live-verification failure -> `--build failed` (`attempts += 1`, back to `queued`; `failed` at 3). A `verify` exit 6 is not an
+   attempt: fix the gate (Q0b) in this run and verify again; a page already on main with the host still building
+   is not an attempt either (note it, the next run records it live). A half-built page is never left
+   on main: revert this run's commit before landing if the audit fails.
+
+Q4 card for a built page: title `{Company} upsell page is live`, subtitle `{pageTitle} · Weekday, Month D`, one
+"View the page" button, rows `Queued` / `Push To Git Main` / `Vendor will receive email` (`{sendAfter day}, inside
+business hours (automatic)`), closing line `Nothing for you to do.`
+
+## Q3 — Apply each fix
+**Durable rendered evidence (also applies to Q2/Q2b).** Retain the complete candidate and live HTML/text files named by each rendered snapshot, alongside the manifest, independent review and deployment receipt, through the existing scoped commit/land path. A JSON snapshot alone is not a retained capture. If those exact public-page evidence files are ignored, add those named files explicitly; never bulk-add ignored output or credentials. Before closing the row, confirm the committed evidence can be reopened from a fresh checkout and replay the existing `rendered-audit.py compare` against the approved render. Fixing missing evidence retention does not authorize rewriting content or fabricating/re-signing the review.
+For `serviceSla:true` / `publisherReview:true`, first follow the paid-customer-service contract above to resolve the original request items into reviewed changes. Preserve its original deadline, optional/preserve instructions and per-item live verification. Failed/reported is still open and must appear in SLA reporting, not disappear after an owner alert.
+Follow **F2 (find), F3 (edit) and F4 (check, land, verify)** of `.claude/commands/roundup-correction-fix.md`
+in that site's checkout, using `land-run.sh mark` / `land` in place of the deploy helper. Apply ONLY
+the row's `changes`; never anything in `notApplied`. Then in layer3 set the row `status: "live"`,
+`liveAt`, commit `Fix queue: <Company> live`, `land-run.sh land`. The partner routine's Pass E2 sends
+the vendor the "Quick update: we've corrected…" email with the page link. A fix that cannot be made
+(row already correct, repo not attached, land failed) -> `status: "failed"` with a plain `note`
+(the partner routine then tells Jonathan), unless the land is merely `not merged` yet -> keep `queued`.
+
+**Sold-link repairs:** a fix row with `linkContracts` must pass the same live `link_contract.py` check as Q2 step 3b before it is marked live or its completion is emailed. Record the receipt on the fix row. If `sourcePaymentId` identifies an existing fulfilled order, update that order's `linkContracts`, `linkContractAudit` and `linkRepairLiveAt` as well, preserving its original payment, publication and delivery history. The receipt must follow the latest actual publication or repair time; do not invent an original `liveAt` for a historical order or stamp a repair after its verification. Failed verification keeps the repair queued and the sales/service hold intact. For an attribute-only customer edit, identify the exact existing anchor by page URL, href and optional anchor text; use the link checker instead of fuzzy visible-text matching. Change only the agreed link's attributes on the agreed page, preserve other pages' terms, and do not add a new target or a site-wide domain exception. Preserve the agreed href, including its query and fragment: never invent a fragment or query parameter to ma

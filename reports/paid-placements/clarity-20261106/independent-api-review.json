@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "snapshotSha256": "42f66c7151ff3bd5d451fc8ce8b57c5f7464f033f09197fa27bc8d82490e7184",
+  "fingerprint": "dc15d2f6af75e506d5579a815e2587e9942f4293aadd01760e12d43feacb0422",
+  "htmlSha256": "32bb29b40eb4374af0e9a75cd62b33508854553f585ad32bb9214ce8d7b8b952",
+  "reviewedContracts": [
+    {
+      "path": ".claude/commands/_decision-evidence.md",
+      "sha256": "6b47b8b4b6763f5b4ff303ca0443ecf67c01d5efae95c2b0c0e968131fb16d98",
+      "application": "Confirmed reported basis for narrow factual corrections; verified no-addition branch applies with no simulated tests, calculators, or invented claims."
+    },
+    {
+      "path": ".claude/commands/_testing-labels.md",
+      "sha256": "8a9dc3c646a583d7afe80339efb880be431a9f528e491ef0ea156bee4db053d9",
+      "application": "Enforced local financial/professional service exclusions; confirmed no TESTED presentation, testing badges, or first-person testing claims were added to the page or row."
+    },
+    {
+      "path": ".claude/commands/_content-standard.md",
+      "sha256": "c100ce0716ab042e4ee80f0cd6764a51cbe75238416ba0d350402dfe87f83786",
+      "application": "Verified primary source linking on first mention, truthful attribution, absence of self-asserted neutrality statements, and adherence to operator roundup conventions."
+    },
+    {
+      "path": ".claude/commands/_anti-ai-language.md",
+      "sha256": "59194cdd7f83f7423489faa07759e571c73ef993a681bd917faa8a6f1a6803ac",
+      "application": "Scanned updated table cells and surrounding text for banned AI phrases, meta-narration, em-dashes, and coy abstractions; no tells detected."
+    },
+    {
+      "path": ".claude/commands/_experience.md",
+      "sha256": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+      "application": "Validated active site identity (The Modern Wallet); confirmed financial services exclusion under Section G was strictly respected."
+    },
+    {
+      "path": ".claude/commands/_workflow-checkpoints.md",
+      "sha256": "a80daacfb208a9d1e1c95b4c199f4a7ae671b89ee54a9f4cc25cbb2689e0f43b",
+      "application": "Checked preflight boundaries, complete instructions audit, and verification of exact production-rendered HTML output."
+    },
+    {
+      "path": ".claude/commands/_rendered-page-audit.md",
+      "sha256": "5e649fef4cb23a9c97806bce5f04cee59a329265534f683b40ade791b9cc06da",
+      "application": "Audited full rendered HTML and text, verifying JSON-LD metadata, semantic fingerprint, date consistency, and clean DOM hierarchy post-build."
+    },
+    {
+      "path": ".claude/commands/_mindmap-execution.md",
+      "sha256": "2ee21c15b10e654b4c6126089d8c2d2259d7edbfcb512bc09bd06553b14d6253",
+      "application": "Verified no-addition scope for non-mindmap corrective maintenance; confirmed no forced experiments or unnecessary asset generation."
+    },
+    {
+      "path": ".claude/commands/_remediation-ladder.md",
+      "sha256": "47ec87072c702d4fcca14bfb1d426e03427583b941415862820dc0f1865ee3e8",
+      "application": "Confirmed targeted Rung 1 fix-in-place execution without unnecessary writer regeneration or scope expansion."
+    },
+    {
+      "path": ".claude/commands/roundup-correction-fix.md",
+      "sha256": "b1f66a43c058dc961935c3ad15e2957c35806deefc35a30921e52572a8fb442e",
+      "application": "Audited narrow factual vendor correction: verified only factual fields (credential and refund policy) were altered; editorial and sales asks excluded."
+    },
+    {
+      "path": ".claude/commands/paid-customer-service.md",
+      "sha256": "54c5470d90be750284de67223a98e5179b9c60378b6787d0f894d276fa9d4de4",
+      "application": "Verified prompt resolution of customer correction request within SLA parameters, maintaining full evidentiary tracing."
+    },
+    {
+      "path": ".claude/commands/_client-delivery-review.md",
+      "sha256": "ff1394a6292ca10c521e630900bbe5ebf813ff47ed639864502f3a6eedee5678",
+      "application": "Confirmed adherence to client delivery standards and factual verification safeguards without improper promotion."
+    }
+  ],
+  "findings": [],
+  "checks": {
+    "wholePageCoherence": {
+      "status": "PASS",
+      "evidence": "The page maintains complete structural coherence. The updated Clarity Tax Relief table entry integrates naturally with the existing vendor comparison table without disrupting surrounding sections, criteria, or FAQs."
+    },
+    "sourceSupport": {
+      "status": "PASS",
+      "evidence": "Angeline Balsitis, EA is verified directly from official source HTML (sources/official-about.html). The 30-day money-back guarantee with October 16, 2026 effective date and grandfathering clause is verified directly from official source HTML (sources/official-fee-terms.html)."
+    },
+    "testingAndAttribution": {
+      "status": "PASS",
+      "evidence": "Financial services are explicitly excluded from testing labels per _testing-labels.md and _experience.md Section G. The credential claim is transparently attributed ('per its site') without asserting independent licensing verification."
+    },
+    "datesAndSchema": {
+      "status": "PASS",
+      "evidence": "Article schema datePublished ('2026-06-25') and dateModified ('2026-06-25') are intentionally and properly preserved, reflecting that the core editorial article was not overhauled. The temporal condition ('agreements signed on or after October 16, 2026') is accurately stated in table prose."
+    },
+    "linksAndIndexability": {
+      "status": "PASS",
+      "evidence": "The deep link to https://claritytaxrelief.com/client-bill-of-rights/ is properly rendered as a Markdown link inside the table cell with valid HTML attributes (target='_blank' rel='noopener'). Canonical URL and meta robots are correct and unchanged."
+    },
+    "renderedLayout": {
+      "status": "PASS",
+      "evidence": "Production static build passes with zero errors across all 1094 pages. The table structure in the rendered HTML renders cleanly with proper tr/th/td tags, with no raw unescaped markdown or layout distortions."
+    },
+    "scopeAndExclusions": {
+      "status": "PASS",
+      "evidence": "Modifications were strictly limited to the two authorized table cells for Clarity Tax Relief in data/roundup-vendors.json. No promotional ranking changes, additional links, or unrelated editorial rewrites occurred."
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.claude/commands/paid-placement-publish.md — characters 18000 onward
+
+enticated read_job/status and source research are reads.
+Do not backdate or clear ownership. Acquire normally for actual bounded local
+render/integration/publication work, and release normally afterward. Paid intake,
+due delivery during its allowed window, and saved record recovery keep priority.
+
+Resume the SAME canonical claim and generation/review journal. Reconcile existing
+local/hosted drafts and counters before a first hosted write, including Respeecher;
+never reset history by changing a claim/job identity. The native job ID is
+`upsell:<canonical row id>`. A completed spec records output branch and hashes in
+`completedSpecs`/`lastStep`: fetch the existing branch, verify exact hashes and
+integrate only its owned artifacts through the normal owner/landing path. Do not
+repeat completed or inFlight/uncertain calls. Prepare the next full-render audit
+spec from the actual rendered candidate; at most one correction and TWO independent
+reviews, then the exact latest candidate follows the Nov4 honest review-release
+rule, including retained FAIL findings. Finish mechanical/live/link/IndexNow and
+canonical page-live evidence before the existing partner U2/Gmail SENT/U3 path in
+its weekday send window. A branch, queued step, model result or schedule is not a
+published page or customer delivery. This is already-authorized implementation;
+no new owner approval or credential transfer is required. All source/professional
+review, exclusions, holds, promises, caps and coordination requirements remain.
+<!-- /hosted-upsell-resume-20261105 -->
+
+## Publisher ownership and independent recovery
+
+Before any publisher edit, claim the separate native publisher lease using the current Layer3 checkout's `python3 -m scripts.publisher_failover.primary claim`. A Claude primary uses `--provider claude`; operator work uses `--provider operator` and is not quota recovery. Keep its private lease file out of Git, model prompts, and logs. Renew before long steps and at least every 15 minutes, assert immediately before each publication/record landing, and release in a finally path. Another active owner or saved record intent blocks new publication: reconcile first, never force or backdate ownership. Existing Phase 3, independent Phase 4, two-rework cap, site permissions, paid scope, original service clocks, and actual live checks remain mandatory.
+
+Layer3 primary claims now register their exact private lease-file path locally, including custom `--lease-file` paths. Its existing landing helper asserts and renews that same owner after the build precheck, binds only committed blobs into a public token-free ownership receipt, and asserts again immediately before push. Trusted main verifies those exact blobs and the current native primary fence before merging and before each push retry. An expired/replaced owner stops the landing; never remove its registration, switch helpers, or reacquire merely to bypass a refusal. Reconcile current work and ownership normally. This ownership receipt is not an editorial review: all existing independent complete-render PASS and destination rules still apply. Other destination workflows still require their own existing ownership assertion; this Layer3 gate grants no additional site capability.
+
+**Claude unavailable does not stop paid fulfilment.** The hosted `publisher-failover.yml` uses the existing `content_gen` OpenAI-first/Gemini-second chain for Layer3 guide/comparison placements and purchased articles. Both native publisher activation and `PUBLISHER_FAILOVER_LIVE` must be enabled. It researches sources, creates typed page data, audits the complete render independently, lands only reviewed files under fenced ownership, compares the exact live output, verifies sold links/ad removal, and preserves native P9 with its original liveAt + 3-hour floor and Chicago send window. A queued row, model plan, successful job or live page without a real sent receipt is not completed customer delivery. Failed jobs retain records/rework history; recover these before another generation or send.
+
+The existing local recovery monitor handles other **already-supported** destination/type lanes using this complete Q workflow and each site's current instructions, not a fabricated hosted adapter. Use existing authenticated Git access; do not put a personal GitHub credential into Actions. Claim via `python3 -m scripts.publisher_failover.primary claim --provider openai --job-id <exact-canonical-id>` (or Gemini when OpenAI is unavailable). This command rereads published canonical work and preserves the same native 90-minute and hourly gates. A record-only grant permits only saved-operation reconciliation. The local worker requires the computer and Codex to be running; never present it as independent always-on cloud coverage.
+
+For local backup Phase 3, execute the **active site's existing generator** through the Layer3 accounting wrapper: `python3 -m scripts.publisher_failover.budget content-gen --repo <active-repo> -- <existing-content-gen-command-and-args>`. Use the verified active `WORKFLOW_RUN_ID`; run workflow-start and complete preflight contracts in that repository first. The wrapper permits no Claude/local provider, reserves/settles every OpenAI/Gemini call against the SAME existing monthly/run ceiling as sales, and refuses unresolved accounting. It creates no new budget. Use `budget audit --repo <repo> --system <complete-audit-contracts-file> --prompt <complete-render-and-evidence-file> --out <independent-review-file>` for a fresh reviewer request with no writer transcript. Never substitute a model's self-review or skip the site's existing review/schema/professional exclusions.
+
+After independent PASS, follow Q2 (and Q3/Q2b/Q1s as applicable) exactly. Preserve actual source/payment identities and sold link treatment; no scope substitution. Fresh native publisher ownership must still be asserted before landing. For native completion use `budget bridge --payload <private-native-payload.json> --out <private-receipt.json>`: only publisher templates are allowed, and the token is injected privately. Reread real Gmail/receipts/current canonical records first; verify the actual SENT body and land its exact receipt. Reconcile uncertain sends, never retry blindly. `budget pending-records` reads saved intents; `budget ack-records --payload <exact-published-record-proof.json>` requires the saved digest, actual main commit and exact published record hashes before acknowledgment. Never clear protective state to continue.
+
+## Q0 — Read the queues (fresh from main)
+In `/home/user/layer3labs`: `git fetch -q origin main && git merge -q --ff-only origin/main`, then read
+`scripts/paid_placements/ledger.json` -> `queued` (paid orders) and `scripts/paid_placements/fix-queue.json`
+(vendor factual corrections), and `scripts/paid_placements/upsell-queue.json` (pages to build for a one-week upsell).
+Read `.claude/commands/paid-customer-service.md` in full. Run `python3 scripts/paid_placements/service_queue.py worklist` and process its deadline-ordered paid orders and fixes (at most 2 orders and 5 fixes per run),
+then ONE upsell page (Q2b), then the sponsorship standing check (Q2c, EVERY run). Empty queues + no standing change = a
+normal quiet run: no email, exit 0.
+**Owner promise (2026-10-13): every order is live within 24 hours of payment.** Paid corrections share that 24-elapsed-hour deadline, measured from the original customer request. An older correction can precede a newer order; a row
+whose `paidAt` is over 18 hours old gets ⚠️ in the report so Jonathan sees it before the promise is missed.
+
+## Q0b — Deploy health (EVERY run, right after Q0, and again before each build)
+The sites deploy from main on Render, and one bad commit fails every build after it until someone reads the
+build log. On 2026-10-19 one comparison cell ("verify current prices at softr.io") tripped
+`scripts/check_table_deferrals.mjs`; six builds in a row failed, the Floot upsell page sat at 404 for two hours,
+and the run reported the host as "stalled" and built nothing. The build log had named the file, line and cell
+the whole time. So:
+1. In `/home/user/layer3labs` and in every repo this run is about to touch:
+   `RENDER_API_KEY=<key from the prompt> .claude/scripts/render-deploy-status.sh status` (layer3's copy takes a
+   repo dir as its 2nd argument for a repo that lacks the script). First line: `STATUS=live|build_in_progress|...`.
+2. **Exit 6 (a build gate or compile error failed the latest build).** The excerpt names the gate and the place.
+   Fix it IN THIS RUN, whoever's commit it was, then `land-run.sh mark`, commit `Build fix: <gate> (<slug>)`, `land`,
+   `verify`. Recipes, deterministic:
+   - `check_table_deferrals`: WebFetch that vendor's pricing page and put the real figures in the cell
+     (`Free; Basic $19/mo, Pro $99/mo, Business $329/mo`). Nothing published anywhere -> `Not published`
+     (`Quote-based` / `Contact sales` when that is what the site says). Never "see / check / verify" 

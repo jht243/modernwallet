@@ -1,0 +1,40 @@
+{
+  "author": "monitor-clarity-20261106",
+  "canonicalServiceId": "1a1a920394421fea",
+  "route": "/roundup/best-tax-relief-companies/",
+  "sourceMessageId": "1a1a920394421fea",
+  "originalDueAt": "2026-11-06T00:33:43Z",
+  "scope": "ONLY existing Clarity2tablecells: credential and fee-refundterms. No new placement, rankings, othercompanies, existinglinks, author orpageSEOmetadata changes.",
+  "changes": [
+    {
+      "old": "Tax professionals; NAEA member",
+      "new": "IRS Enrolled Agent on staff (Angeline Balsitis, EA), per its site"
+    },
+    {
+      "old": "Flat fee quoted in writing after free consultation",
+      "new": "Flat fee quoted in writing after free consultation. [30-day money-back guarantee on fees](https://claritytaxrelief.com/client-bill-of-rights/) for agreements signed on or after October 16, 2026. Earlier agreements retain their stated cancellation window."
+    }
+  ],
+  "basis": "reported",
+  "sourceSupport": {
+    "credential": "Current exact official About lists Angeline Balsitis,EA onstaff; sourcecapture retained. No independent IRS licence/employment verification claimed.",
+    "fee": "Current official ClientBillofRights30day fee-refund guarantee applies agreementsOct16,2026onward; earlierwindowpreserved. No tax-result guarantee orourcustomerrefundpolicy."
+  },
+  "testingDecision": "Financial/professional services excluded fromTESTED; no testing, producttrial, personalreviewer, caseresult, orperformanceclaim invented.",
+  "localRegister": "Existing operator-roundup voice preserved; narrowtablefactualcorrection doesnotstart a newarticle orre-rankthefield.",
+  "evidenceNoAddition": "No experiment, calculator, original-research claim, client case, newtakeaway, keywordresearch ornewURL needed to correct these2facts. Existing readerdecision context retained.",
+  "datePolicy": "Preserve original unchanged editorial article byline/schema date2026-06-25. Corrected rollingtable row retains originaladded2026-11-01. We do not imply all othercompanies/entireJunearticlewere fact-refreshed today; reviewer must verify exact preserved dates and source-supported temporal condition.",
+  "mandatoryReview": "Fresh independent complete-render audit after actual production build including all postbuild entitylinks/nofollow/sponsorship transformations. Retain findings, max2targetedreworks, ownerclientreviewrelease atlimit, liveexactmatch before nativecompletion.",
+  "publicationAuthority": "Existing same monitor authorized allownedfleet corrective service follow-through; separate native operatorpublisher ownership acquirednormally, notAPIbackup/Claudequota recovery.",
+  "sourceFreshness": {
+    "isolatedRunId": "b7a7b5b0eafc4d7faf1ab48de2479c51",
+    "preflight": "preflight-write35/35checkactualPASSdeliveryonly",
+    "sourceMetaWIPPreservation": "Only2guardlistedfiles temporarilyexactpub; original3unpublishedmetadatawordingedits backed up privately forrestoration. Notstaged/published.",
+    "inheritedWorkflowDependencies": "14exactlistedsourceinputs integrated; no inheritedinstruction/code publication."
+  },
+  "affectedFiles": [
+    "data/roundup-vendors.json"
+  ],
+  "beforeSha256": "971f33559a5ffff92cbcc62588e0fcf1fbc6dc9ffc6829f86ac9eb31cc592e51",
+  "candidateSha256": "a50a226ba1004cc4f75359f13f230ce2bf370b48ebcfd0089a3664428cf34306"
+}

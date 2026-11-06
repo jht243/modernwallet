@@ -1,0 +1,19 @@
+{
+  "author": "monitor-clarity-20261106",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/roundup/best-tax-relief-companies/",
+      "expectedUpdatedDate": "2026-06-25",
+      "requiredText": [
+        "IRS Enrolled Agent on staff (Angeline Balsitis, EA)",
+        "30-day money-back guarantee on fees",
+        "October 16, 2026",
+        "Earlier agreements retain their stated cancellation window."
+      ],
+      "forbiddenText": [
+        "Tax professionals; NAEA member"
+      ]
+    }
+  ]
+}

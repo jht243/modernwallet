@@ -1,0 +1,32 @@
+[
+  {
+    "name": "official-about",
+    "url": "https://claritytaxrelief.com/about/",
+    "finalUrl": "https://claritytaxrelief.com/about/",
+    "status": 200,
+    "bytes": 49295,
+    "sha256": "94341f1b60c61c18d12271eea44847a3d89959fad5e7791a088bf48caac9bab7",
+    "capturedAt": "2026-11-06T06:55:19.204566+00:00",
+    "complete": true
+  },
+  {
+    "name": "official-fee-terms",
+    "url": "https://claritytaxrelief.com/client-bill-of-rights/",
+    "finalUrl": "https://claritytaxrelief.com/client-bill-of-rights/",
+    "status": 200,
+    "bytes": 35358,
+    "sha256": "8c9ab9df8d40839f94d4bec8324973b4e4da70b1cded38f3ab64f3b8fd632060",
+    "capturedAt": "2026-11-06T06:55:19.728619+00:00",
+    "complete": true
+  },
+  {
+    "name": "before-live-page",
+    "url": "https://www.themodernwallet.com/roundup/best-tax-relief-companies/?clarity-source=20261106",
+    "finalUrl": "https://www.themodernwallet.com/roundup/best-tax-relief-companies/?clarity-source=20261106",
+    "status": 200,
+    "bytes": 81470,
+    "sha256": "fabd3a59c1743ecc6cb21eece335fa7829ff2921c25d55324cc007c740dccea5",
+    "capturedAt": "2026-11-06T06:55:20.347649+00:00",
+    "complete": true
+  }
+]

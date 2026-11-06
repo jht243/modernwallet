@@ -1,0 +1,4269 @@
+{
+  "capturedAt": "2026-11-06T07:13:44.938345+00:00",
+  "baseUrl": "http://127.0.0.1:4174",
+  "domDir": null,
+  "manifest": {
+    "author": "monitor-clarity-20261106",
+    "canonicalBase": "https://www.themodernwallet.com",
+    "routes": [
+      {
+        "path": "/roundup/best-tax-relief-companies/",
+        "expectedUpdatedDate": "2026-06-25",
+        "requiredText": [
+          "IRS Enrolled Agent on staff (Angeline Balsitis, EA)",
+          "30-day money-back guarantee on fees",
+          "October 16, 2026",
+          "Earlier agreements retain their stated cancellation window."
+        ],
+        "forbiddenText": [
+          "Tax professionals; NAEA member"
+        ]
+      }
+    ]
+  },
+  "routes": [
+    {
+      "path": "/roundup/best-tax-relief-companies/",
+      "status": 200,
+      "fingerprint": "dc15d2f6af75e506d5579a815e2587e9942f4293aadd01760e12d43feacb0422",
+      "semantic": {
+        "text": "ModernWallet Free Financial Calculators Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Biweekly Mortgage Roth vs Traditional 401(k) Pay Off Mortgage or Invest Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax Hidden Cost of Owning a Home × ModernWallet / Roundups / Best Tax Relief Companies 2026: Verified Picks Best Tax Relief Companies of 2026 By Jonathan Velez , Personal Finance Writer & Editor · Reviewed against primary sources · Updated June 25, 2026 The best tax relief companies have clean BBB records, verifiable staff credentials, transparent pricing, and no recent FTC action. By that standard, there are fewer safe picks in this category than most reviews suggest. We evaluated six national firms based on their years in business, BBB accreditation and complaint volume, staff mix (tax attorneys / CPAs / Enrolled Agents), pricing model, minimum debt threshold, and regulatory history. The FTC's consumer alert on tax-relief companies at consumer.ftc.gov/articles/tax-relief-companies remains live in 2026, and its core guidance is unchanged: don't pay a full fee upfront, most taxpayers don't qualify for the OIC or hardship program advertised, and the recommended first step is a direct payment plan with the IRS. Before engaging any of the firms below, run your numbers through the tax resolution calculator , the Offer in Compromise calculator , and the IRS payment plan calculator . Most cases at $50,000 or less don't need any of these companies at all, and knowing what the IRS's own math shows can keep you from overpaying. How we ranked these tax relief companies Rankings weighted: years in business (10%), BBB rating and complaint volume (25%), verified staff credentials (20%), pricing transparency (15%), minimum debt threshold and case fit (15%), regulatory history — FTC actions, class actions, state bar complaints (15%). Optima Tax Relief is included despite the 2022 FTC settlement to give readers the full picture; the settlement is disclosed in its listing below. #1 Precision Tax Relief Best for: Best overall — clean record, longest track, flat-fee pricing Coeur d'Alene, Idaho, founded 1967 (roughly 59 years in business). A+ BBB rating, accredited since 2011, and only 2 BBB complaints in the last 3 years — the cleanest complaint record among the six national firms reviewed. Precision Tax staffs Enrolled Agents (federally licensed IRS specialists) rather than attorneys or CPAs — the same unlimited practice rights before the IRS at typically lower cost. Precision has been named 'Best Overall' by Investopedia across multiple years and 'Best Customer Service' by CNBC Select in 2024. Strengths Cleanest complaint record among national tax-relief firms (2 BBB complaints in 3 years) Longest track record in the category — 59 years in business Flat-fee pricing with a 'Fair Quote Guarantee' — no phased or hidden fees Enrolled Agents on staff (federally licensed IRS specialists) Payment plans available for the fee itself Limitations No attorneys on staff — refers out for criminal exposure, Tax Court, or complex Innocent Spouse cases Case fees not published on the website — quoted after free eligibility assessment Pricing: Flat fee (custom-quoted per case); payment plans available. Free eligibility assessment. Case-fee ranges not published. #2 Community Tax Best for: Best for smaller balances — lowest investigation fee Chicago, Illinois, founded 2010 (approximately 16 years in business). A+ BBB rating, accredited. Staffs tax attorneys, CPAs, and Enrolled Agents. Community Tax uses a two-phase pricing model that's transparent on the initial investigation fee: roughly $295–$549 for individual cases and $595–$999 for business cases. A resolution fee follows the investigation phase, quoted after review. Community Tax refunds the investigation fee if no resolution is possible, which is unusual in the category. Strengths Lowest published investigation fee in the category ($295–$549 individual) Investigation-fee refund if no resolution is possible All three professional credentials on staff Minimum debt threshold around $7,000–$10,000 — accepts smaller cases than most competitors Limitations Resolution-phase fees are not published — quoted after investigation Standard service-quality complaints in BBB history (typical for the category) Pricing: Two-phase: investigation fee $295–$549 individual ($595–$999 business) + resolution fee quoted after review. #3 Larson Tax Relief Best for: Best for business tax problems (payroll, 941, business levies) Westminster, Colorado, family-owned for over 20 years. A+ BBB rating, accredited. Larson is unusual in the category for its $25,000 minimum debt threshold — higher than every other national firm — and its business-tax specialty. Roughly 80% of Larson's cases are payroll tax issues (Form 941), IRS levies on operating businesses, and trust fund recovery penalty cases. Very low complaint volume, no FTC or class-action history. Strengths Business tax specialist — 80% of cases are payroll/business tax Very low BBB complaint volume across 20+ years All three professional credentials on staff Family-owned and stable Limitations $25,000 minimum debt threshold — won't take smaller individual cases Fees custom-quoted; higher than category norm given business-case focus Pricing: Flat fee, custom-quoted per case. $25,000 minimum debt. #4 Fortress Tax Relief Best for: Best for complex or high-dollar attorney-required cases Bend, Oregon. Roughly 20 years in business. A+ BBB rating. Fortress is the only national firm reviewed where every case is worked by a licensed tax attorney — no sales-rep intake or case-manager handling. That makes it a fit for cases with criminal exposure, Tax Court petitions, complex Innocent Spouse Relief facts, or offshore reporting issues where attorney-client privilege matters. $20,000 minimum debt. Strengths Every case worked by a licensed tax attorney (attorney-client privilege applies) Handles cases up to $20 million Clean regulatory history — no FTC or class-action issues Fit for cases where CPAs/EAs cannot go (criminal, Tax Court, complex Innocent Spouse) Limitations Hourly billing rather than flat fee — higher cost on straightforward cases $20,000 minimum debt threshold Fees not published on the site — attorney rates typically $300–$600+/hour Pricing: Hourly attorney billing; $20,000 minimum debt threshold. Rates not published; attorney category rates apply. #5 Anthem Tax Services Best for: Best money-back guarantee Woodland Hills, California, founded 2010 (roughly 16 years in business). A+ BBB rating, accredited since February 2017. Anthem offers a 100% money-back guarantee on resolution work if the firm doesn't reduce the balance owed or restructure the payment plan (the guarantee excludes bookkeeping, tax prep, and a required minimum deposit). Staff credentials are not itemized specifically on the public site. Strengths 100% money-back guarantee on resolution work A+ BBB accreditation since 2017 16 years in business Limitations Minimum debt threshold not disclosed on the site Staff credential mix not itemized publicly (BBB shows 'tax professionals' without breakdown) Fees not disclosed on the site — quoted after consultation Pricing: Not disclosed on site. Money-back guarantee on resolution work with defined exclusions. #6 Optima Tax Relief Best for: Largest scale — but read the FTC-settlement disclosure Santa Ana, California, founded 2011 (roughly 15 years in business). A+ BBB rating, accredited. Largest firm by resolved-dollars claimed ($3 billion+). REGULATORY DISCLOSURE: Optima settled with the FTC in 2022 for $7 million in consumer redress (part of a broader $12 million package) over allegations of misrepresenting savings and refund practices. Optima has continued operating and rebuilt its process, but BBB complaint volume remains high (770+ in the last 3 years). If you're considering Optima, factor in the FTC history and heightened complaint volume against its scale and brand recognition. Strengths Largest scale in the category — $3B+ resolved Heavy brand recognition; 'America's #1 Most Trusted' by YouGov 2023 Tax attorneys + licensed tax professionals on staff 15-day money-back on investigation phase Limitations 2022 FTC settlement — $7M consumer redress over misrepresentation allegations 770+ BBB complaints in last 3 years Under-$10,000 leads are referred out to partner firms Case fees not published — industry-reported $4,000–$7,500+ Pricing: Two-phase: investigation + resolution. 15-day money-back on investigation phase. Fees not published. Comparison: 6 tax relief companies at a glance Option Company Min. Debt Staff Credential Pricing Years Regulatory Featured Your company here, pinned above every listing Get featured → Precision Tax Relief Free assessment Enrolled Agents Flat fee 59 Clean Community Tax ~$7,000–$10,000 Attorneys / CPAs / EAs Two-phase ($295+) 16 Clean Larson Tax Relief $25,000 Attorneys / CPAs / EAs Flat fee (custom) 20+ Clean Fortress Tax Relief $20,000 Attorneys only Hourly ~20 Clean Anthem Tax Services Not disclosed Not itemized Not disclosed; money-back 16 Clean Optima Tax Relief $10,000 Attorneys + tax pros Two-phase 15 2022 FTC settlement — $7M Omni Tax Help Not published Tax analysts, attorneys and enrolled agents Not published; free consultation offered 25+ years, per its site Not published Tax Experts of OC Not published CPA and enrolled agent Not published; quoted after free consultation Not published Not published Tax Response Center Not published Not published Not published Not published Not published Brightside Tax Relief Not published Licensed tax attorneys Flat fee, amounts not published; free consultation Not published Not published Tax Hardship Center Not published Enrolled agents, CPAs and attorneys Not published; free consultation Site states both 14+ and 20+ years BBB Accredited, per its site Jackson Hewitt Not published Not published Free consultation; resolution fees not published 45 (company overall) Most offices franchisee-owned; BBB and IRS e-file logos shown Tax Relief Center Not published Not published Free case review; fees not published Not published No license numbers shown on site Lexington Tax Group Not published Tax attorneys, enrolled agents and CPAs Free consultation; fees not published Not published BBB accredited, A rating per site Innovative Tax Relief Not published Enrolled Agents, CPAs and tax attorneys Most cases $2,000 to $7,500 total, billed in phases 10 (founded 2016) BBB Accredited, A+ per site; no license numbers listed TaxAudit Not published Not published Free consultation; assessment fees start at $400 (payroll tax debt) 30+ (TaxResources, Inc., since 1998) BBB-A badge shown; no license numbers listed Tax Relief Helpers Not published Tax attorney and enrolled agent on team Free consultation; no upfront fees; amounts not published Not published BBB profile linked; no license numbers listed Tax Relief Advocates Not published Licensed tax resolution professionals and attorneys; no credentials listed Free consultation; fees not published Not published BBB profile linked; no license numbers listed Washington Tax Services Not published Enrolled Agents and tax resolution experts Flat fee; amount not published 37 (since 1989) A+ BBB rating per site Advance Tax Relief $20,000 and up Tax attorneys, CPAs and enrolled agents, per site Not published; free consultation offered 13+ years BBB A+ rating stated on site Clarity Tax Relief Not published IRS Enrolled Agent on staff (Angeline Balsitis, EA), per its site Flat fee quoted in writing after free consultation. 30-day money-back guarantee on fees for agreements signed on or after October 16, 2026. Earlier agreements retain their stated cancellation window. Since 2018, per its site BBB accredited, A+ rating Defense Tax Partners Not published Federal tax lawyers and IRS tax attorneys Not published; free quote by form or callback Not published Not published Rates, fees and terms are as each company publishes them. Confirm current details before you apply. Listed here? Update your listing . 📣 Building in finance? Put your product in front of readers comparing options on this page. Advertise With Us → Our verdict: which should you choose? Precision Tax Relief is the best overall pick for most taxpayers — the cleanest complaint record, the longest track record, flat-fee pricing, and Enrolled Agents at rates below attorney-heavy firms. Community Tax is the right choice when your balance is on the smaller side ($7,000–$20,000) and you want the lowest published investigation fee. Larson Tax Relief is the pick for business tax problems (payroll, 941, business levies). Fortress Tax Relief is the pick when your case has criminal exposure, Tax Court potential, or complex Innocent Spouse facts that require attorney-client privilege. Anthem Tax Services is worth considering only if the money-back guarantee is the decisive factor for you. Optima Tax Relief is included for completeness — the 2022 FTC settlement and elevated complaint volume mean the burden of proof is on you to justify choosing them over the alternatives above. Before you hire any of these firms, run your specific numbers through our tax resolution hub — most straightforward cases (streamlined installment agreements, First Time Abate) don't need a paid firm at all. How to avoid tax-relief scams (FTC guidance) The FTC's consumer alert at consumer.ftc.gov/articles/tax-relief-companies has stayed live and unchanged in substance for years. The core warnings: (1) don't pay a full fee upfront; (2) no company can guarantee a specific outcome — Offer in Compromise acceptance rates are around 21% (7,199 of 33,591 in FY2025 per the IRS Data Book), not the 90%+ some ads suggest; (3) monthly 'maintenance fees' often stretch cases out for months or years without meaningful progress; (4) the IRS's own Online Payment Agreement for balances under $50,000 costs $22 to set up and doesn't need a paid firm at all. A practical filter: if a company won't tell you their fee before running your Reasonable Collection Potential math, walk away. Our Offer in Compromise calculator shows exactly what the IRS's Form 656-B worksheet returns for your specific numbers — a legitimate firm can match or improve on that, and shouldn't want to hide the underlying math. When you don't need a tax-relief company Most straightforward IRS collection cases don't require any of the firms in this roundup. A streamlined online installment agreement for balances of $50,000 or less costs $22 to set up (direct debit) and can be done through the IRS's Online Payment Agreement application in about 15 minutes. First Time Abate is available via a phone call to the toll-free number on your penalty notice if you've been penalty-free for the last 3 years. Currently Not Collectible status uses Form 433-F and is filed directly with the IRS. Hiring a professional makes sense when the case has real complexity: an Offer in Compromise (the RCP math is nuanced), a Partial Pay Installment Agreement (Form 433-F financials + 2-year mandatory reviews), a Collection Due Process appeal after Letter 1058, or an Innocent Spouse Relief case. For those, an Enrolled Agent ($150–$300/hour, $3,000–$7,500 for OIC) is usually the right hire — see our tax attorney vs CPA vs enrolled agent comparison for the specific problem-shape guidance. How we ranked Rankings weighted years in business (10%), BBB rating and complaint volume (25%), verified staff credentials (20%), pricing transparency (15%), minimum debt threshold and case fit (15%), and regulatory history including FTC actions, class actions, and state bar complaints (15%). Optima Tax Relief was included despite its 2022 FTC settlement to give readers the full picture; the settlement and elevated complaint volume are disclosed in its listing. Where a firm did not publish specific fees or credential mixes, we noted the gap rather than importing third-party estimates. Frequently asked questions Are tax relief companies worth it? Tax relief companies are worth it for genuinely complex cases — Offer in Compromise prep, Partial Pay Installment Agreements, Collection Due Process appeals, and Innocent Spouse Relief — where the numbers and paperwork justify a $3,000–$7,500 professional fee. They are usually not worth it for straightforward cases: streamlined online installment agreements (balance ≤ $50,000) cost $22 through the IRS Online Payment Agreement, and First Time Abate can be requested by phone. The FTC warns that most taxpayers don't qualify for the aggressive settlements these companies advertise, so run your specific numbers through our Offer in Compromise calculator before you hire anyone. Is IRS tax relief legit? IRS tax relief itself is real — Offer in Compromise, installment agreements, Currently Not Collectible status, and penalty abatement are all statutory programs the IRS administers under the Internal Revenue Code. The FY2025 IRS Data Book shows 7,199 of 33,591 offers were accepted (21.4%). Tax-relief companies that help clients access these programs are legitimate businesses. What isn't legitimate: firms promising 'pennies on the dollar' before ever seeing your Form 433 financials, or firms that charge upfront fees before doing any work. The FTC's Tax Relief Companies alert covers the specific patterns to avoid. How much does a tax relief company cost? Cost depends on the case type and the firm's pricing model. An Offer in Compromise typically runs $3,000–$7,500 (Enrolled Agents and CPAs at the lower end, tax attorneys at the higher end). A Partial Pay Installment Agreement runs $1,500–$3,500. A First Time Abate request runs $500–$1,500 (though for a First Time Abate, doing it yourself with a phone call to the IRS is usually the right call). Investigation phase fees (used by Community Tax and Optima) start around $295–$549 for individual cases. Flat-fee firms like Precision Tax quote after a free eligibility assessment. Are any tax relief companies backed by the IRS? No. The IRS does not endorse, back, or accredit any private tax-relief company. Any firm that implies IRS endorsement is violating IRS Circular 230 and FTC advertising rules. The IRS's own consumer resources — irs.gov/payments — are free. Some firms use marketing language like 'Fresh Start Program' or 'IRS Approved' that trades on the IRS's actual Fresh Start Initiative (a real 2012 IRS policy change that expanded OIC criteria) but implies more IRS involvement than exists. Which tax relief company should I use for my case? Match the firm to your case shape. For balances under $50,000 with straightforward W-2 income, do it yourself through the IRS Online Payment Agreement — no firm needed. For Offer in Compromise cases with W-2 income and modest assets, Precision Tax Relief (flat fee, Enrolled Agents) or Community Tax (lowest investigation fee) are the best value. For business tax problems (payroll, 941, trust fund recovery), Larson Tax Relief is the specialist. For complex cases with criminal exposure, Tax Court potential, or offshore issues, Fortress Tax Relief (attorney-only) is the fit. Our tax attorney vs CPA vs enrolled agent comparison walks through the specific problem shapes each professional handles best. Can I get my money back if a tax relief company doesn't help me? It depends on the firm's guarantee. Anthem Tax Services offers a 100% money-back guarantee on resolution work if they don't reduce your balance or restructure your payment plan (with specific exclusions). Optima Tax Relief has a 15-day money-back guarantee on the investigation phase only. Community Tax refunds the investigation fee if no resolution is possible. Precision Tax Relief has a satisfaction-focused approach but no explicit money-back guarantee posted. Larson and Fortress do not publish money-back guarantees. Read the specific guarantee terms carefully — many exclude bookkeeping, tax prep, and require a minimum deposit. Free calculators to help you decide Tax resolution calculator → Offer in compromise calculator → IRS payment plan calculator → Penalty abatement calculator → Sources We prioritize primary sources for rules, formulas, rates, limits, and definitions. See our calculator methodology and editorial policy . FTC — Tax Relief Companies (consumer alert) IRS — Offer in Compromise IRS — Payment plans (installment agreements) IRS Data Book FY2025 — Publication 55B IRS — Circular 230 (regulations governing practice before the IRS) Related comparisons Tax Attorney vs CPA or Enrolled Agent Tax Attorney vs CPA vs Enrolled Agent: Who to Hire ModernWallet Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results. 📣 Advertise With Us Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Biweekly Mortgage Roth vs Traditional 401(k) Pay Off Mortgage or Invest Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax Hidden Cost of Owning a Home Comparisons All comparisons 401(k) vs Roth IRA Roth vs Traditional 401(k) 529 vs Roth IRA ETF vs Mutual Fund HSA vs FSA VA Loan vs Conventional 15 vs 30-Year Mortgage Fixed vs ARM Mortgage HYSA vs Money Market Stocks vs Bonds Free Templates All templates Freelance Invoice Freelance Contract Statement of Work Retainer Agreement Mileage Log Expense Report S-Corp Tax Calculator QBI Deduction Explained LLC vs S Corp Guides & Best-of All best-of roundups First-Time Home Buyer How to Buy a Car Best 401(k) Providers Best Budgeting Apps Best Money Market Accounts Best Net Worth Trackers Best Retirement Accounts Best Mileage Tracker Apps Best Freelance Accounting Software Best Invoicing Apps © 2026 ModernWallet · For educational purposes — not financial advice. Guides · About · Contact · Editorial Policy · Methodology · Privacy Policy · Powered by Layer3Labs Some links on this site are referral or affiliate links, including our Robinhood referral link — we may earn a reward or commission at no cost to you. This never affects our rankings or editorial coverage.",
+        "h1": "Best Tax Relief Companies of 2026",
+        "title": "Best Tax Relief Companies 2026: Verified Picks",
+        "canonical": "https://www.themodernwallet.com/roundup/best-tax-relief-companies/",
+        "meta": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "generator": "Astro v4.16.19",
+          "description": "The best tax relief companies of 2026, ranked by BBB record, staff credentials, pricing transparency, and FTC-flagged issues. Not legal advice.",
+          "og:type": "website",
+          "og:site_name": "ModernWallet",
+          "og:title": "Best Tax Relief Companies 2026: Verified Picks",
+          "og:description": "The best tax relief companies of 2026, ranked by BBB record, staff credentials, pricing transparency, and FTC-flagged issues. Not legal advice.",
+          "og:url": "https://www.themodernwallet.com/roundup/best-tax-relief-companies/",
+          "og:image": "https://www.themodernwallet.com/favicon-192.png",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "Best Tax Relief Companies 2026: Verified Picks",
+          "twitter:description": "The best tax relief companies of 2026, ranked by BBB record, staff credentials, pricing transparency, and FTC-flagged issues. Not legal advice.",
+          "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+        },
+        "links": [
+          "/",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/biweekly-mortgage-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/pay-off-mortgage-or-invest-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/hidden-cost-of-owning-a-home-calculator/",
+          "/",
+          "/roundup/",
+          "/about/",
+          "/tax-resolution/",
+          "/tax-resolution/offer-in-compromise-calculator/",
+          "/tax-resolution/irs-payment-plan-calculator/",
+          "/sponsor/?from=%2Froundup%2Fbest-tax-relief-companies%2F",
+          "https://fortresstaxrelief.com/",
+          "https://taxresponsecenter.com",
+          "https://www.jacksonhewitt.com/",
+          "https://www.taxreliefcenter.org/",
+          "https://claritytaxrelief.com/",
+          "https://claritytaxrelief.com/client-bill-of-rights/",
+          "/update-listing/?from=%2Froundup%2Fbest-tax-relief-companies%2F",
+          "/sponsor?from=%2Froundup%2Fbest-tax-relief-companies%2F",
+          "/tax-resolution/",
+          "/tax-resolution/offer-in-compromise-calculator/",
+          "/compare/tax-attorney-vs-cpa-vs-enrolled-agent/",
+          "/tax-resolution/offer-in-compromise-calculator/",
+          "/compare/tax-attorney-vs-cpa-vs-enrolled-agent/",
+          "/tax-resolution/",
+          "/tax-resolution/offer-in-compromise-calculator/",
+          "/tax-resolution/irs-payment-plan-calculator/",
+          "/tax-resolution/penalty-abatement-calculator/",
+          "/methodology/",
+          "/editorial-policy/",
+          "https://consumer.ftc.gov/articles/tax-relief-companies",
+          "https://www.irs.gov/payments/offer-in-compromise",
+          "https://www.irs.gov/payments/payment-plans-installment-agreements",
+          "https://www.irs.gov/pub/irs-pdf/p55b.pdf",
+          "https://www.irs.gov/tax-professionals/circular-230-tax-professionals",
+          "/compare/tax-attorney-vs-cpa-vs-enrolled-agent/",
+          "/",
+          "/sponsor",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/biweekly-mortgage-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/pay-off-mortgage-or-invest-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/hidden-cost-of-owning-a-home-calculator/",
+          "/compare/",
+          "/compare/401k-vs-roth-ira/",
+          "/compare/roth-401k-vs-traditional-401k/",
+          "/compare/529-vs-roth-ira/",
+          "/compare/etf-vs-mutual-fund/",
+          "/compare/hsa-vs-fsa/",
+          "/compare/va-loan-vs-conventional-loan/",
+          "/compare/15-year-vs-30-year-mortgage/",
+          "/compare/fixed-vs-arm-mortgage/",
+          "/compare/hysa-vs-money-market/",
+          "/compare/stocks-vs-bonds/",
+          "/templates/",
+          "/templates/freelance-invoice-template/",
+          "/templates/freelance-contract-template/",
+          "/templates/statement-of-work-template/",
+          "/templates/retainer-agreement-template/",
+          "/templates/mileage-log-template/",
+          "/templates/expense-report-template/",
+          "/s-corp-tax/",
+          "/guides/qbi-deduction-explained/",
+          "/compare/llc-vs-s-corp/",
+          "/roundup/",
+          "/guides/first-time-home-buyer-guide/",
+          "/guides/how-to-buy-a-car/",
+          "/roundup/best-401k-providers-for-small-business/",
+          "/roundup/best-budgeting-apps-for-couples/",
+          "/roundup/best-money-market-accounts/",
+          "/roundup/best-net-worth-tracker/",
+          "/roundup/best-retirement-accounts-for-self-employed/",
+          "/roundup/best-mileage-tracker-apps/",
+          "/roundup/best-accounting-software-for-freelancers/",
+          "/roundup/best-invoicing-apps-for-freelancers/",
+          "/guides/",
+          "/about/",
+          "/contact/",
+          "/editorial-policy/",
+          "/methodology/",
+          "/privacy-policy/",
+          "https://www.layer3labs.io"
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.themodernwallet.com/#organization",
+            "name": "ModernWallet",
+            "url": "https://www.themodernwallet.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results.",
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "Layer3Labs",
+              "url": "https://www.layer3labs.io"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.themodernwallet.com/#website",
+            "url": "https://www.themodernwallet.com/",
+            "name": "ModernWallet",
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results."
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ModernWallet",
+                "item": "https://www.themodernwallet.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Roundups",
+                "item": "https://www.themodernwallet.com/roundup/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Best Tax Relief Companies 2026: Verified Picks",
+                "item": "https://www.themodernwallet.com/roundup/best-tax-relief-companies/"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Best Tax Relief Companies of 2026",
+            "description": "The best tax relief companies of 2026, ranked by BBB record, staff credentials, pricing transparency, and FTC-flagged issues. Not legal advice.",
+            "url": "https://www.themodernwallet.com/roundup/best-tax-relief-companies/",
+            "numberOfItems": 6,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Precision Tax Relief",
+                "description": "Best overall — clean record, longest track, flat-fee pricing"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Community Tax",
+                "description": "Best for smaller balances — lowest investigation fee"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Larson Tax Relief",
+                "description": "Best for business tax problems (payroll, 941, business levies)"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Fortress Tax Relief",
+                "description": "Best for complex or high-dollar attorney-required cases"
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Anthem Tax Services",
+                "description": "Best money-back guarantee"
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Optima Tax Relief",
+                "description": "Largest scale — but read the FTC-settlement disclosure"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Are tax relief companies worth it?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tax relief companies are worth it for genuinely complex cases — Offer in Compromise prep, Partial Pay Installment Agreements, Collection Due Process appeals, and Innocent Spouse Relief — where the numbers and paperwork justify a $3,000–$7,500 professional fee. They are usually not worth it for straightforward cases: streamlined online installment agreements (balance ≤ $50,000) cost $22 through the IRS Online Payment Agreement, and First Time Abate can be requested by phone. The FTC warns that most taxpayers don't qualify for the aggressive settlements these companies advertise, so run your specific numbers through our Offer in Compromise calculator before you hire anyone."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is IRS tax relief legit?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "IRS tax relief itself is real — Offer in Compromise, installment agreements, Currently Not Collectible status, and penalty abatement are all statutory programs the IRS administers under the Internal Revenue Code. The FY2025 IRS Data Book shows 7,199 of 33,591 offers were accepted (21.4%). Tax-relief companies that help clients access these programs are legitimate businesses. What isn't legitimate: firms promising 'pennies on the dollar' before ever seeing your Form 433 financials, or firms that charge upfront fees before doing any work. The FTC's Tax Relief Companies alert covers the specific patterns to avoid."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much does a tax relief company cost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Cost depends on the case type and the firm's pricing model. An Offer in Compromise typically runs $3,000–$7,500 (Enrolled Agents and CPAs at the lower end, tax attorneys at the higher end). A Partial Pay Installment Agreement runs $1,500–$3,500. A First Time Abate request runs $500–$1,500 (though for a First Time Abate, doing it yourself with a phone call to the IRS is usually the right call). Investigation phase fees (used by Community Tax and Optima) start around $295–$549 for individual cases. Flat-fee firms like Precision Tax quote after a free eligibility assessment."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are any tax relief companies backed by the IRS?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. The IRS does not endorse, back, or accredit any private tax-relief company. Any firm that implies IRS endorsement is violating IRS Circular 230 and FTC advertising rules. The IRS's own consumer resources — irs.gov/payments — are free. Some firms use marketing language like 'Fresh Start Program' or 'IRS Approved' that trades on the IRS's actual Fresh Start Initiative (a real 2012 IRS policy change that expanded OIC criteria) but implies more IRS involvement than exists."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which tax relief company should I use for my case?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Match the firm to your case shape. For balances under $50,000 with straightforward W-2 income, do it yourself through the IRS Online Payment Agreement — no firm needed. For Offer in Compromise cases with W-2 income and modest assets, Precision Tax Relief (flat fee, Enrolled Agents) or Community Tax (lowest investigation fee) are the best value. For business tax problems (payroll, 941, trust fund recovery), Larson Tax Relief is the specialist. For complex cases with criminal exposure, Tax Court potential, or offshore issues, Fortress Tax Relief (attorney-only) is the fit. Our tax attorney vs CPA vs enrolled agent comparison walks through the specific problem shapes each professional handles best."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I get my money back if a tax relief company doesn't help me?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It depends on the firm's guarantee. Anthem Tax Services offers a 100% money-back guarantee on resolution work if they don't reduce your balance or restructure your payment plan (with specific exclusions). Optima Tax Relief has a 15-day money-back guarantee on the investigation phase only. Community Tax refunds the investigation fee if no resolution is possible. Precision Tax Relief has a satisfaction-focused approach but no explicit money-back guarantee posted. Larson and Fortress do not publish money-back guarantees. Read the specific guarantee terms carefully — many exclude bookkeeping, tax prep, and require a minimum deposit."
+                }
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jonathan Velez",
+            "url": "https://www.themodernwallet.com/about/",
+            "jobTitle": "Personal Finance Writer & Editor",
+            "description": "Jonathan Velez writes and edits ModernWallet's personal-finance content, focused on loans, interest, and debt payoff. Every calculator page is reviewed against primary sources like the CFPB and Federal Reserve.",
+            "knowsAbout": [
+              "Auto loans",
+              "Loan amortization",
+              "Interest and APR",
+              "Debt payoff strategies",
+              "Personal finance"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Best Tax Relief Companies of 2026",
+            "description": "The best tax relief companies of 2026, ranked by BBB record, staff credentials, pricing transparency, and FTC-flagged issues. Not legal advice.",
+            "url": "https://www.themodernwallet.com/roundup/best-tax-relief-companies/",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "datePublished": "2026-06-25",
+            "dateModified": "2026-06-25",
+            "author": {
+              "@type": "Person",
+              "name": "Jonathan Velez",
+              "url": "https://www.themodernwallet.com/about/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.themodernwallet.com/favicon.svg"
+              }
+            },
+            "citation": [
+              {
+                "@type": "CreativeWork",
+                "name": "FTC — Tax Relief Companies (consumer alert)",
+                "url": "https://consumer.ftc.gov/articles/tax-relief-companies"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS — Offer in Compromise",
+                "url": "https://www.irs.gov/payments/offer-in-compromise"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS — Payment plans (installment agreements)",
+                "url": "https://www.irs.gov/payments/payment-plans-installment-agreements"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS Data Book FY2025 — Publication 55B",
+                "url": "https://www.irs.gov/pub/irs-pdf/p55b.pdf"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS — Circular 230 (regulations governing practice before the IRS)",
+                "url": "https://www.irs.gov/tax-professionals/circular-230-tax-professionals"
+              }
+            ]
+          }
+        ],
+        "structure": [
+          [
+            "html",
+            {}
+          ],
+          [
+            "body",
+            {}
+          ],
+          [
+            "header",
+            {
+              "class": "site-header"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "hdr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "brand-group"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "26",
+              "height": "26",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "19.8",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "22",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-name"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-divider",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-tagline"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "primary-nav",
+              "aria-label": "Primary"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-dd"
+            }
+          ],
+          [
+            "button",
+            {
+              "type": "button",
+              "class": "nav-trigger"
+            }
+          ],
+          [
+            "svg",
+            {
+              "class": "chev",
+              "viewbox": "0 0 24 24",
+              "width": "16",
+              "height": "16",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "polyline",
+            {
+              "points": "6 9 12 15 18 9"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-menu",
+              "role": "menu"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "menu-all",
+              "href": "/calculators/",
+              "role": "menuitem"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "menu-cols"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/biweekly-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pay-off-mortgage-or-invest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hidden-cost-of-owning-a-home-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__toggle",
+              "type": "button",
+              "aria-label": "Search"
+            }
+          ],
+          [
+            "svg",
+            {
+              "width": "18",
+              "height": "18",
+              "viewbox": "0 0 24 24",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "11",
+              "cy": "11",
+              "r": "7"
+            }
+          ],
+          [
+            "path",
+            {
+              "d": "m20 20-3.5-3.5"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__panel",
+              "hidden": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__box"
+            }
+          ],
+          [
+            "input",
+            {
+              "class": "ns__input",
+              "type": "search",
+              "placeholder": "Search calculators, guides…",
+              "aria-label": "Search the site",
+              "role": "combobox"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__close",
+              "type": "button",
+              "aria-label": "Close search"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__results",
+              "role": "listbox"
+            }
+          ],
+          [
+            "main",
+            {
+              "class": "page"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "crumb",
+              "aria-label": "Breadcrumb"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "crumb-current"
+            }
+          ],
+          [
+            "header",
+            {
+              "class": "hero"
+            }
+          ],
+          [
+            "h1",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "byline"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "by"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "sep",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "rev"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/offer-in-compromise-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/irs-payment-plan-calculator/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section criteria-section",
+              "aria-label": "How we ranked"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section option-section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "opt-rank"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "opt-bestfor"
+            }
+          ],
+          [
+            "strong",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "pros-cons"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "pros"
+            }
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "cons"
+            }
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "opt-pricing"
+            }
+          ],
+          [
+            "strong",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section option-section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "opt-rank"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "opt-bestfor"
+            }
+          ],
+          [
+            "strong",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "pros-cons"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "pros"
+            }
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "cons"
+            }
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "opt-pricing"
+            }
+          ],
+          [
+            "strong",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section option-section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "opt-rank"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "opt-bestfor"
+            }
+          ],
+          [
+            "strong",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "pros-cons"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "pros"
+            }
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "cons"
+            }
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "opt-pricing"
+            }
+          ],
+          [
+            "strong",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section option-section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "opt-rank"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "opt-bestfor"
+            }
+          ],
+          [
+            "strong",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "pros-cons"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "pros"
+            }
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "cons"
+            }
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "opt-pricing"
+            }
+          ],
+          [
+            "strong",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section option-section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "opt-rank"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "opt-bestfor"
+            }
+          ],
+          [
+            "strong",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "pros-cons"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "pros"
+            }
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "cons"
+            }
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "opt-pricing"
+            }
+          ],
+          [
+            "strong",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section option-section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "opt-rank"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "opt-bestfor"
+            }
+          ],
+          [
+            "strong",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "pros-cons"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "pros"
+            }
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "cons"
+            }
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "opt-pricing"
+            }
+          ],
+          [
+            "strong",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section table-section",
+              "aria-label": "Side-by-side comparison"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "table-wrap"
+            }
+          ],
+          [
+            "table",
+            {
+              "class": "cmp-table"
+            }
+          ],
+          [
+            "thead",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "tbody",
+            {}
+          ],
+          [
+            "tr",
+            {
+              "class": "is-featured is-placeholder"
+            }
+          ],
+          [
+            "td",
+            {
+              "colspan": "7"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "vt-promo"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "vt-promo-text"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "vt-tag"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "vt-promo-cta",
+              "href": "/sponsor/?from=%2Froundup%2Fbest-tax-relief-companies%2F",
+              "rel": "nofollow"
+            }
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://fortresstaxrelief.com/",
+              "target": "_blank",
+              "rel": "nofollow noopener",
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://taxresponsecenter.com",
+              "target": "_blank",
+              "rel": "nofollow noopener",
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.jacksonhewitt.com/",
+              "target": "_blank",
+              "rel": "nofollow noopener",
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.taxreliefcenter.org/",
+              "target": "_blank",
+              "rel": "nofollow noopener",
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://claritytaxrelief.com/",
+              "target": "_blank",
+              "rel": "nofollow noopener",
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://claritytaxrelief.com/client-bill-of-rights/",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {
+              "class": "astro-nx7ly24l"
+            }
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "vt-note"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/update-listing/?from=%2Froundup%2Fbest-tax-relief-companies%2F",
+              "rel": "nofollow"
+            }
+          ],
+          [
+            "aside",
+            {
+              "class": "sponsor-slot",
+              "aria-label": "Advertise with us"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "sponsor-slot__icon",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "sponsor-slot__copy"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "sponsor-slot__title"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "sponsor-slot__text"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "sponsor-slot__btn",
+              "href": "/sponsor?from=%2Froundup%2Fbest-tax-relief-companies%2F",
+              "rel": "nofollow"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section verdict-section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "verdict-box"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/offer-in-compromise-calculator/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/tax-attorney-vs-cpa-vs-enrolled-agent/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "faqs"
+            }
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/offer-in-compromise-calculator/"
+            }
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/tax-attorney-vs-cpa-vs-enrolled-agent/"
+            }
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section cta-section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "cta-grid"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/",
+              "class": "cta-card"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-label"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-arrow"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/offer-in-compromise-calculator/",
+              "class": "cta-card"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-label"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-arrow"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/irs-payment-plan-calculator/",
+              "class": "cta-card"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-label"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-arrow"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/penalty-abatement-calculator/",
+              "class": "cta-card"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-label"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-arrow"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section sources"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "source-note"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://consumer.ftc.gov/articles/tax-relief-companies",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/payments/offer-in-compromise",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/payments/payment-plans-installment-agreements",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/pub/irs-pdf/p55b.pdf",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/tax-professionals/circular-230-tax-professionals",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "related-grid"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/tax-attorney-vs-cpa-vs-enrolled-agent/",
+              "class": "related-card"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "related-vs"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "related-title"
+            }
+          ],
+          [
+            "footer",
+            {
+              "class": "site-footer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-left"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "22",
+              "height": "22",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "tagline"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "sponsor-pill",
+              "href": "/sponsor",
+              "rel": "nofollow"
+            }
+          ],
+          [
+            "span",
+            {
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-navs"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer calculators"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/calculators/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/biweekly-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pay-off-mortgage-or-invest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hidden-cost-of-owning-a-home-calculator/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer comparisons"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/401k-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/roth-401k-vs-traditional-401k/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/529-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/etf-vs-mutual-fund/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hsa-vs-fsa/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/va-loan-vs-conventional-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/15-year-vs-30-year-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/fixed-vs-arm-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hysa-vs-money-market/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/stocks-vs-bonds/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer templates"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-invoice-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-contract-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/statement-of-work-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/retainer-agreement-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/mileage-log-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/expense-report-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/qbi-deduction-explained/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/llc-vs-s-corp/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer guides"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/first-time-home-buyer-guide/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/how-to-buy-a-car/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-401k-providers-for-small-business/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-budgeting-apps-for-couples/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-money-market-accounts/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-net-worth-tracker/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-retirement-accounts-for-self-employed/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-mileage-tracker-apps/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-accounting-software-for-freelancers/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-invoicing-apps-for-freelancers/"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-legal"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "legal-left"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "legal-right"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/contact/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/privacy-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.layer3labs.io",
+              "target": "_blank",
+              "rel": "noopener noreferrer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-disclosure"
+            }
+          ],
+          [
+            "p",
+            {}
+          ]
+        ]
+      },
+      "failures": [],
+      "htmlSha256": "32bb29b40eb4374af0e9a75cd62b33508854553f585ad32bb9214ce8d7b8b952",
+      "htmlFile": "reports/paid-placements/clarity-20261106/candidate-snapshot.recapture/22015fe2c245ba5b6e56.html",
+      "textFile": "reports/paid-placements/clarity-20261106/candidate-snapshot.recapture/22015fe2c245ba5b6e56.txt",
+      "textSha256": "ca3a873b0ee0826a01e217b4d3438a859a16b74d832bb2b1acfaee1519e40be2"
+    }
+  ],
+  "snapshotSha256": "af64c2afd1cc3c268d4edc1bea32da766e24f4e3cda0348b02a9955cc6ac674b"
+}

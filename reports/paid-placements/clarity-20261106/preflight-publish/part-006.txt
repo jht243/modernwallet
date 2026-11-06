@@ -1,0 +1,78 @@
+.claude/commands/paid-placement-publish.md — characters 45000 onward
+
+it. First decide which path the row is on:
+   - **Select before claim:** perform the read-only brand/destination checks in steps 1/1b and the existing-page inventory first. Do not build or change content yet. If an eligible existing page is selected, verify it live now, then claim with `--build-kind existing --existing-page-url URL --existing-verified-at UTC` (within five minutes); commit/land the claim, verify live again after claim and go to step 6 with `--is-new false`. This is the RP-2 path; never first claim a new build and then relabel it existing.
+   - **Ordinary new build** (no eligible existing page selected): `claim --build-kind new`, commit `Upsell queue: building <Company>`, land it, THEN do remaining research and steps 2-5. If the current capability gate forbids this destination/owner build, leave queued and report before claiming.
+   - **Fast path** (already built, not yet recorded: a `queued` row whose `note` names a page slug that is on main, or whose
+     `attempts` > 0 with such a note): do not build. In this order: (a) `claim --build-kind new` once (no separate land; retain the canonical passing review for this previously built page), (b) `verify <url>=<H1>`
+     (Q0b first if it is not live), so the time it passes is after the claim, (c) `get_thread`, (d) step 6 with `--fast-path` and
+     the claim from (a). `finalize` rejects a `--live-at` earlier than the claim, which is why verify comes after the claim.
+     Only when it is live does the run move on to the next `queued` row.
+   On failure (step 7) the helper puts the row back to `queued`.
+1. **Know the vendor.** FIRST read the account profile (owner rule 2026-10-25): `python3 scripts/paid_placements/profiles.py
+   get --key <customerKey>` and `... candidates --key <customerKey> --brand "<row.brand or row.company>"` (layer3 checkout).
+   The brand entry carries audience, use cases, exclusions, evidence and the pages that brand already bought or was
+   offered. Research only what is missing or older than 30 days (`researchedAt`): WebFetch their homepage +
+   pricing/product page for what they sell, who they sell to, main use cases and best-known competitors, then write it
+   back with `profiles.py upsert` so no later pass repeats it. Score against THAT brand's targeting only (an agency's
+   other clients never lend their audience or exclusions). Site unreachable? Use the profile, the row's `category` and
+   the email thread; never fail a row only because their website can't be read (the page is about the CATEGORY).
+1b. **Brand + publication (owner decisions RP-1 / RP-2, 2026-10-25).** The row's `brand` (default: `company`) is the
+   promoted brand; `destinationSite` (default: `site`) is the publication the page goes on.
+   - **Publication:** stay on the row's `site` unless the row already carries `destinationSite`. A `destinationSite`
+     other than `site` is a cross-sell: it must be in the repo table at the top of this playbook AND be a publication
+     whose paid-placement fulfilment is demonstrated (reports/opportunity-routing-change-map-2026-10-25.md §0c:
+     the current `DEMONSTRATED_HOSTS` in `scripts/paid_placements/due_emails.py`). Any other `destinationSite` -> leave the
+     row `queued`, note `destination not yet verified`, report `⚠️ cross-sell destination pending`. Never pick a
+     destination yourself in this step: the partner routine sets it from the profile; this step only honors it.
+   - **Existing page instead of a build (RP-2):** the standard path when the row carries `allowExisting: true`. Before
+     claiming any new build, look for ONE live page on the destination that is clearly the strongest fit for this brand (audience +
+     use case, the brand not on it, not in the brand's `bought` / `offered`). Found -> skip step 4, record it in step
+     6 with `isNew: false` (the email then says "We have a page..."). Not found, or `allowExisting` absent:
+     * `destinationSite` == `site` (same publication) -> build as today (`isNew: true`). The AirOps path is unchanged.
+     * `destinationSite` != `site` (cross-sell), destination is Layer3Labs and owner is partner.U2 or agency.AU3 -> build through the verified Layer3 publisher path with the same canonical review/finalizer. AU3 must also satisfy its different-publication and delivered-placement clock before intake.
+     * Other cross-sell destinations -> **DO NOT BUILD.** Cross-site builds stay disabled until the
+       publisher's access and workflow on the destination are verified (change map §0b / §5). Leave the row `queued`,
+       `note: "cross-site build pending publisher verification"`, `attempts` unchanged, report
+       `⚠️ cross-sell build pending — {Company} → {destination}`. Except for the verified Layer3Labs build destination above, a cross-sell row ships only as an existing page.
+   - **Dedup by (brand, page):** a page the brand bought or was offered is never the page; a page carrying another of
+     the account's brands is fine if it fits this brand.
+2. **Inventory the site's category.** `python3 scripts/paid_placements/upsell_due.py --pages https://<destination>
+   --terms "<3-5 slug terms for the category>" --vendor "<brand>" --vendor-domain <domain>` (layer3 checkout;
+   it lists every matching page, newest first). Also grep the site repo's data / content files for the category.
+   This is the set the new page must NOT duplicate.
+3. **Choose the topic (the gate) -- for the VENDOR, not for search.** Owner rule 2026-10-13: this page exists to make
+   THIS vendor excited to be on it, almost clickbaity. Search demand does not matter here. Think like their marketing
+   team: what page would they screenshot, post on LinkedIn, put in a sales deck or forward to their CEO? List 5-10
+   candidates in their category, e.g.:
+   - `Rising Stars: 7 <category> Tools to Watch in 2026` / `<Category> Startups to Watch`
+   - `The <Category> Tools <their buyers> Are Switching To in 2026`
+   - `Best <category> for <the exact segment / industry they sell to>`
+   - `<Their biggest, best-known competitor> Alternatives: <n> Tools Worth a Look`
+   - `Best New <category> Tools of 2026` / `Editor's Picks: <category>` / `The Most Underrated <category> Tools`
+   - `<Category> Tools Built for <their standout use case>`
+   **THINK WIDE (owner rule 2026-10-16).** The page does NOT have to be a comparison of the vendor's own product
+   type. Also list AUDIENCE pages about the people the vendor sells to, where the vendor fits as one of several named
+   companies, resources or next steps, e.g. for a veteran-claims vendor on a veterans site:
+   - `The Top 5 Companies Every Veteran Needs to Know in 2026` / `<n> Companies Worth Knowing Before You File a VA Claim`
+   - `What Every Veteran Should Know When Getting Out of the Military` / `... Going In` / `... Retiring From the Military`
+   - `The <Audience> Toolkit: <n> Services That Make <their big life/work moment> Easier`
+   - `Resources Every <audience> Should Bookmark` / `<Audience> Checklist: <milestone>` with named providers
+   Sit these alongside the category angles above; a site's vertical or policy limits on PROVIDER COMPARISONS
+   (`data/placement-verticals.json` and the like) never rule out an audience page. "No net-new topic" is almost
+   never true: there are always audience, life-stage, milestone, and "companies to know" angles.
+   Prefer the angle that frames them best: next to bigger names, in their strongest niche, or as a "new / rising"
+   pick. Drop a candidate if ANY of these is true:
+   - it is the same angle as a page in `alreadyOn` (same category + same audience/angle, or a near-synonym), or it
+     would list mostly the same competitors for the same reader as a page they're already on: it must be a NET ADD
+     for them, something new and exciting, never a variation of what they already have;
+   - the site already has a page with that angle (step 2 inventory, mindmap's duplicate check vs the live sitemap);
+   - the vendor would not plausibly belong on it (wrong segment, wrong use case);
+   - the title needs a claim we can't back: no "tested", "we tried", rankings by usage/growth/revenue, or awards
+     unless they are true per `.claude/commands/_experience.md` and the research. "To watch", "worth a look",
+     "editor's picks", "new" and "built for" are fine.
+   Pick the one THIS vendor would be most excited to be featured on. Exciting title, honest page: the body is
+   still a real researched comparison under `_content-standard.md` and `_anti-ai-language.md`.
+   None survives -> go back and list 5 more AUDIENCE angles (think-wide list above) before giving up. Only if those
+   all fail too: row `status: "failed"`, `note: "no net-new topic: <the 10+ candidates tried and why each died>"`.
+4. **Persistent review loop (mandatory before generation).** Read `.claude/commands/paid-content-review.md` in full. Use its canonical journal and targeted `content_review.py repair` path for every new page; never regenerate a complete article to fix a local 
