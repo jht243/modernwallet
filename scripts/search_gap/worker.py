@@ -113,6 +113,9 @@ def validate_completion(packet, completion, check_render=True):
         approved = read(artifacts['approved'])
         host = urllib.parse.urlsplit(approved['manifest']['canonicalBase']).hostname or ''
         require(host.removeprefix('www.') == packet['site'].removeprefix('www.'), 'Cross-site render refused')
+        preview_host = urllib.parse.urlsplit(approved['baseUrl']).hostname or ''
+        require(preview_host and preview_host.removeprefix('www.') != host.removeprefix('www.'),
+                'Approved candidate must be rendered separately from production; two live captures cannot prove publication matches a reviewed preview')
         require(changed <= {r['path'] for r in approved['routes']}, 'Render does not cover published routes')
         if check_render:
             helper = str(Path('.claude/tools/rendered-audit.py'))

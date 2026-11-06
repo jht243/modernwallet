@@ -44,8 +44,23 @@ class Reliability(unittest.TestCase):
         from unittest.mock import Mock
         store=Mock();result=worker.finish(pth,cpath,store);self.assertFalse(result['ok']);store.resolve.assert_not_called()
     def test_render_commands_must_pass(self):
-        p,c=self.fixture();c['decisions'][0].update(status='published',paths=['/new']);r=worker.read(c['chartReview']);r['decisionsSha256']=hashlib.sha256(json.dumps(c['decisions'],sort_keys=True).encode()).hexdigest();Path(c['chartReview']).write_text(json.dumps(r));c['rendered']={'approved':self.write('render.json',{'manifest':{'canonicalBase':'https://one.test'},'routes':[{'path':'/new'}]}),'live':'live.json','review':'audit.json'}
+        p,c=self.fixture();c['decisions'][0].update(status='published',paths=['/new']);r=worker.read(c['chartReview']);r['decisionsSha256']=hashlib.sha256(json.dumps(c['decisions'],sort_keys=True).encode()).hexdigest();Path(c['chartReview']).write_text(json.dumps(r));c['rendered']={'approved':self.write('render.json',{'baseUrl':'http://127.0.0.1:8123','manifest':{'canonicalBase':'https://one.test'},'routes':[{'path':'/new'}]}),'live':'live.json','review':'audit.json'}
         import subprocess
         with patch.object(worker.subprocess,'run',side_effect=subprocess.CalledProcessError(1,'check')):
             self.assertRaises(subprocess.CalledProcessError,worker.validate_completion,p,c)
+    def test_two_live_captures_cannot_approve_publication(self):
+        p,c=self.fixture();c['decisions'][0].update(status='published',paths=['/new'])
+        r=worker.read(c['chartReview']);r['decisionsSha256']=hashlib.sha256(json.dumps(c['decisions'],sort_keys=True).encode()).hexdigest();Path(c['chartReview']).write_text(json.dumps(r))
+        c['rendered']={'approved':self.write('render.json',{'baseUrl':'https://www.one.test','manifest':{'canonicalBase':'https://one.test'},'routes':[{'path':'/new'}]}),'live':'live.json','review':'audit.json'}
+        with patch.object(worker.subprocess,'run') as native:
+            with self.assertRaisesRegex(ValueError,'two live captures'):
+                worker.validate_completion(p,c)
+            native.assert_not_called()
+    def test_separate_preview_runs_all_native_checks(self):
+        p,c=self.fixture();c['decisions'][0].update(status='published',paths=['/new'])
+        r=worker.read(c['chartReview']);r['decisionsSha256']=hashlib.sha256(json.dumps(c['decisions'],sort_keys=True).encode()).hexdigest();Path(c['chartReview']).write_text(json.dumps(r))
+        c['rendered']={'approved':self.write('render.json',{'baseUrl':'http://127.0.0.1:8123','manifest':{'canonicalBase':'https://one.test'},'routes':[{'path':'/new'}]}),'live':'live.json','review':'audit.json'}
+        with patch.object(worker.subprocess,'run') as native:
+            worker.validate_completion(p,c)
+            self.assertEqual([x.args[0][2] for x in native.call_args_list],['check','compare','capture','compare'])
 if __name__=='__main__':unittest.main()
