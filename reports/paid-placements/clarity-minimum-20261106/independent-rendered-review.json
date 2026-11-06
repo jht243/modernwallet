@@ -1,0 +1,41 @@
+{
+  "reviewer": "reviewer-claude-clarity-min",
+  "snapshotSha256": "900526293d81c735bb7eed601ba30eee5c65e27f558f76b653f641ea2660a6b4",
+  "routes": [
+    {
+      "path": "/roundup/best-tax-relief-companies/",
+      "fingerprint": "567c02af4408870fb932c1fcc6aef20f1187d4f2e84234b414ba9358af5bbeee",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Read the full captured text (intro, six ranked listings, 20-row comparison table, verdict, FAQ, sources, footer disclaimer). Clarity appears only in the table; no prose says its minimum is unpublished or contradicts the new cell. Intro lists \"minimum debt threshold\" as a ranking factor, consistent with a populated cell. Word-level diff against the earlier clarity-20261106 snapshot shows exactly one change: \"Not published\" replaced by \"Typically $5,000 or more, per its site\". Other cells in the Clarity row (staff, pricing/guarantee, years, regulatory) are unchanged."
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "WebFetch of https://claritytaxrelief.com on 2026-11-06 returned: \"Clarity typically works with tax balances of $5,000 or more.\" and that below $5,000 many people can resolve it on their own. Cell wording \"Typically $5,000 or more, per its site\" preserves the hedge \"typically\" and attributes to the site, so it is not a hard minimum. Matches column style of other sourced rows (\"$20,000 and up\", \"per its site\" suffix used elsewhere)."
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "No testing claims introduced; diff is a single table cell with no \"we tested\" language. Financial services are excluded from TESTED labels; page title, meta, byline and schema carry no testing format. Attribution \"per its site\" is accurate. Existing byline (Jonathan Velez, Personal Finance Writer & Editor) unchanged."
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "JSON-LD datePublished 2026-06-25 and dateModified 2026-06-25 (not before published); visible \"Updated June 25, 2026\" preserved; matches manifest expectedUpdatedDate. Title, canonical (https://www.themodernwallet.com/roundup/best-tax-relief-companies/), meta and schema are byte-identical to the prior snapshot (semantic comparison True)."
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Link list identical to prior snapshot. Clarity links unchanged: https://claritytaxrelief.com/ (rel nofollow noopener, target _blank) and https://claritytaxrelief.com/client-bill-of-rights/ (rel noopener). Sponsor/update-listing links keep rel nofollow. HTTP 200, canonical correct, no noindex in snapshot capture."
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Chromium (/opt/pw-browsers) against localhost:4399: at 1280px the Clarity Min. Debt cell renders \"Typically $5,000 or more, per its site\" at about 109px wide, wrapping within the table, no page horizontal scroll (scrollWidth 1280=innerWidth). At 390px the table scrolls inside its .table-wrap (overflow-x auto, 717 vs 350) and the page does not overflow (390=390). Row height driven by the pre-existing long pricing cell, unchanged."
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "git diff shows one file changed, one line: data/roundup-vendors.json Clarity values[0]. No ranking, placement, link, SEO metadata, schema or other-company change. New cell has no em dashes, semicolons or hype words (anti-AI list clean); style matches neighbors. Financial services testing exclusion respected. Untracked workflow command files and reports are not content."
+        }
+      }
+    }
+  ]
+}

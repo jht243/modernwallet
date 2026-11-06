@@ -1,0 +1,12 @@
+{
+  "author": "publisher-claude-clarity-min",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/roundup/best-tax-relief-companies/",
+      "expectedUpdatedDate": "2026-06-25",
+      "requiredText": ["Typically $5,000 or more, per its site", "30-day money-back guarantee on fees", "IRS Enrolled Agent on staff (Angeline Balsitis, EA)"],
+      "forbiddenText": []
+    }
+  ]
+}
