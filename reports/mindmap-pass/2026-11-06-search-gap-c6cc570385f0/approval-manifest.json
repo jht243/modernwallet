@@ -1,0 +1,87 @@
+{
+ "schemaVersion": 1,
+ "author": "search-gap-build-worker",
+ "date": "2026-11-06",
+ "source": "search-gap-content-auto: durable intake 90fb7297db134477a49ad6a6361dd233 (1 zero-result site search, themodernwallet.com)",
+ "interpretedBrief": "One zero-result site search made on /mileage-deduction/irs-mileage-rate-2026/ whose stored text is 18 question marks; the original characters were lost before storage, so no reader question is recoverable. Nothing is proposed.",
+ "chartPath": "reports/mindmap-pass/2026-11-06-search-gap.md",
+ "actions": [],
+ "newPageBriefs": [],
+ "preparation": {
+  "status": "PASS",
+  "readiness": {
+   "path": "reports/mindmap-pass/2026-11-06-search-gap-c6cc570385f0/readiness.md",
+   "sha256": "7e5f87bdb2dd530384966534472ffdee053e5c8334a9ea2499123e7c70a5d361"
+  }
+ },
+ "emergingClusters": "No emerging clusters detected this run.",
+ "exclusions": [
+  "Candidate a4f99dbeebeeda38c280b8d1418cc0629a097bd13f5e8736fb5fd631261d23ba (search, count 1, /mileage-deduction/irs-mileage-rate-2026/, event 423343ba-e125-4924-83c2-0f392551f267): DROPPED as unrecoverable. The term is 18 bytes of 0x3f; no reader question, language or topic can be stated. Coverage lookup lists /mileage-deduction/irs-mileage-rate-2026 and /guides/irs-mileage-rate-history, but those matches come from the page path, not the term. Duplicate check: passed - 0 new-page rows checked, 0 matched an existing page."
+ ],
+ "executionPlan": [
+  {
+   "phase": 1,
+   "action": "No action: no content rows were approved for this run."
+  },
+  {
+   "phase": 2,
+   "action": "No action: no content rows were approved for this run."
+  },
+  {
+   "phase": 3,
+   "action": "No action: no content rows were approved for this run."
+  },
+  {
+   "phase": 4,
+   "action": "No action: no content rows were approved for this run."
+  },
+  {
+   "phase": 5,
+   "action": "No action: no content rows were approved for this run."
+  },
+  {
+   "phase": 6,
+   "action": "No action: no content rows were approved for this run."
+  },
+  {
+   "phase": 7,
+   "action": "No action: no content rows were approved for this run."
+  },
+  {
+   "phase": 8,
+   "action": "No action: no content rows were approved for this run."
+  },
+  {
+   "phase": 9,
+   "action": "No action: no content rows were approved for this run."
+  }
+ ],
+ "publicationScope": {
+  "commit": false,
+  "push": false,
+  "liveVerification": false,
+  "indexNow": false
+ },
+ "evidenceFiles": [
+  {
+   "path": "reports/search-gap/intakes/90fb7297db134477a49ad6a6361dd233.json",
+   "sha256": "d087e3964bb1a15e24ce1416a2bd6e967b8112de939422a7c4d2c8fbc17cc35d"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-06-search-gap-c6cc570385f0/coverage-lookup.txt",
+   "sha256": "ac52d8824085000f54f4027367e345b475acb933cae59490bd7a55bc97d504ad"
+  },
+  {
+   "path": "scripts/search_gap/worker.py",
+   "sha256": "9947009260bc5bcc4987282ea0413875a18b53f3002f9bf26271982c73c00b5a"
+  },
+  {
+   "path": "scripts/search_gap/queue.sql",
+   "sha256": "aead71b798900990090539a76a5e3bdfc73474bc89188beba0b85b50aa004ca0"
+  },
+  {
+   "path": "src/components/NavSearch.astro",
+   "sha256": "abccda4eecc95f5799dd320a18f6592d10acf8e7670d480b207985c4cbb31c05"
+  }
+ ]
+}

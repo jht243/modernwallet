@@ -1,0 +1,11 @@
+{
+ "author": "search-gap-build-worker",
+ "reviewer": "search-gap-chart-reviewer",
+ "verdict": "PASS",
+ "chartSha256": "4d308e36bd3d47382830fc0409d7e6e51e513c86a365880ff985fff9f0cd6475",
+ "intakeSha256": "d087e3964bb1a15e24ce1416a2bd6e967b8112de939422a7c4d2c8fbc17cc35d",
+ "decisionsSha256": "6b4bd20848940971898e40c33ebab68bebe67b49bee80a13342693ef0bb98d7b",
+ "dispositionReview": {
+  "a4f99dbeebeeda38c280b8d1418cc0629a097bd13f5e8736fb5fd631261d23ba": "dropped: term is 18 literal U+003F, no raw original retained in queue/intake code, page at path is already the home, no reader question recoverable; independently approved"
+ }
+}

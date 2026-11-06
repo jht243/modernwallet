@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "site": "themodernwallet.com",
+  "runId": "90fb7297db134477a49ad6a6361dd233",
+  "candidateCount": 1,
+  "candidates": [
+    {
+      "id": "a4f99dbeebeeda38c280b8d1418cc0629a097bd13f5e8736fb5fd631261d23ba",
+      "term": "??????????????????",
+      "kind": "search",
+      "count": 1,
+      "paths": [
+        "/mileage-deduction/irs-mileage-rate-2026/"
+      ],
+      "eventIds": [
+        "423343ba-e125-4924-83c2-0f392551f267"
+      ],
+      "firstSeen": "2026-11-02T02:22:42.545678+00:00",
+      "lastSeen": "2026-11-02T02:22:42.545678+00:00"
+    }
+  ],
+  "bootstrapSince": "2026-11-01T00:00:00Z",
+  "pendingEventCount": 1
+}

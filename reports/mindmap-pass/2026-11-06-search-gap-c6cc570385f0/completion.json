@@ -1,0 +1,16 @@
+{
+  "site": "themodernwallet.com",
+  "runId": "90fb7297db134477a49ad6a6361dd233",
+  "intakeSha256": "d087e3964bb1a15e24ce1416a2bd6e967b8112de939422a7c4d2c8fbc17cc35d",
+  "chart": "reports/mindmap-pass/2026-11-06-search-gap.md",
+  "chartReview": "reports/mindmap-pass/2026-11-06-search-gap-c6cc570385f0/chart-review-receipt.json",
+  "decisions": [
+    {
+      "id": "a4f99dbeebeeda38c280b8d1418cc0629a097bd13f5e8736fb5fd631261d23ba",
+      "status": "dropped",
+      "reason": "Stored term is 18 literal question marks (0x3f); original characters were lost before storage, so no reader question, language or topic is recoverable. The queued payload is a copy of the same row, so no raw original exists. Coverage lookup matches come only from the page path. Enriching /mileage-deduction/irs-mileage-rate-2026 or creating a page would require inventing the question.",
+      "paths": []
+    }
+  ],
+  "rendered": null
+}

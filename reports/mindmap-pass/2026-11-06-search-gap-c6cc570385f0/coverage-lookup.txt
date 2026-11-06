@@ -1,0 +1,38 @@
+coverage_lookup: 1 candidate(s) vs 810 repo pages / 823 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1104 past-chart lines
+
+### /mileage-deduction/irs-mileage-rate-2026/  — row - · create new content
+keyword: ??????????????????
+reader question (new page intent): (unknown - term is only question marks)
+lookup terms: irs mileage rate   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /mileage-deduction/irs-mileage-rate-2026  [EXACT SLUG · in sitemap · src/data/spokes-mileage.ts · topic match 1.0 on irs mileage rate]
+    title: IRS Mileage Rate 2026: 72.5¢ and 76¢ Explained
+    desc:  The 2026 IRS mileage rate is 72.5 cents through June 30 and 76 cents from July 1. See both rates, why they changed mid-year, and how to split your miles.
+- /guides/irs-mileage-rate-history  [in sitemap · src/data/guides.ts · topic match 1.0 on irs mileage rate]
+    title: IRS Mileage Rate History: Rates by Year (2010 to 2026)
+    desc:  Complete IRS mileage rate history by year from 2010 to 2026. View historical rates for business, medical, moving, and charitable driving in one table.
+- /templates/mileage-log-template  [in sitemap · src/data/templates.ts · topic match 1.0 on irs mileage rate]
+    title: Free Mileage Log Template (2026 IRS Rates)
+    desc:  A free mileage log template built for 2026's two IRS rates — 72.5¢ through June and 76¢ from July. Includes the fields the IRS actually requires.
+- /guides/medical-charity-moving-mileage-rates-2026  [in sitemap · src/data/guides.ts · topic match 0.67 on mileage rate]
+    title: 2026 Medical Mileage Rate with Charity and Moving Rates
+    desc:  The 2026 medical mileage rate is 20.5 cents through June 30 and 23.5 cents from July 1. Military moving matches it. Charity is 14 cents.
+- /guides/mileage-reimbursement-rates-uk-canada-ireland-nz  [in sitemap · src/data/guides.ts · topic match 0.67 on mileage rate]
+    title: Mileage Allowance Calculator HMRC Rates and Global Rules
+    desc:  Calculate vehicle travel using a mileage allowance calculator HMRC guide covering official reimbursement rates in the UK, Canada, Ireland, and New Zealand.
+- /guides/state-mileage-reimbursement-law-california-texas-michigan  [in sitemap · src/data/guides.ts · topic match 0.67 on mileage rate]
+    title: Mileage Reimbursement Calculator California Rules and Rates
+    desc:  Calculate your payout under state labor rules. Our mileage reimbursement calculator California guide reviews laws across California, Texas, and Michigan.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-21-autocomplete.md [table] | 2 | Lens 2 adjacent (same seed). Cluster: 2026 tax brackets 201,000/mo KD 41; what are the new tax brackets for 2026 (PAA); tax bracket calculator for 2026 (Autocomplete). lookup: /guides/2027-tax-brackets-projected is
+- 2026-10-21-tool-usage.md [table] | 2 | Lens 1 (tool usage, real-estate — 15 people on /real-estate/capital-gains-calculator/). Persona: married landlord selling an 11-year rental (bought $185,000 + $4,000 closing, $15,000 roof, $310,000 offer). Walkthro
+- 2026-10-21-tool-usage.md [table] | 3 | Lens 1 (tool usage, real-estate — same persona, reading the body). The page's howItWorks states "For 2024, long-term CG rates are 0% (taxable income under ~$47,025 single / ~$94,050 married) … 20% (income above ~$5
+- 2026-10-21-tool-usage.md [exclusions] - **Mileage-deduction low use rate (6.3%, 680 views):** not picked — worked 2026-10-14 (people_7d 22 → 19, not doubled).
+- 2026-10-26-moving.md [table] | 1 | **Lens 1 (direct intent — the brief).** `moving checklist` **12,100/mo, KD 32** (dataforseo; close variants merged — "checklist for moving", "moving to do checklist", "moving list checklist" KD 16). Folded secondar
+- 2026-10-27-xtrends.md [table] | 1 | Lens 1 (direct intent, scout bullet "Car loan interest deduction calculator"). `car loan interest deduction` 12,100/mo, KD 6, CPC $0.03 (DataForSEO measured, US, 2026-10-27); `auto loan interest deduction` 4,400/mo
+Commits naming the topic: none
+Same run overlap: none
+
