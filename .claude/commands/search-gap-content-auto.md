@@ -27,9 +27,9 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 # /search-gap-content-auto — user questions → live content
 
-<!-- search-gap-durable-v1 -->
-**Search-gap reliability (2026-11-06):** Read `scripts/search_gap/CONTRACT.md` after startup and BEFORE Step 1. It supersedes this routine's older rolling-window, skip-on-error, lookup-only disposal and silent-on-unfinished wording. Use the durable worker intake and mandatory finish evidence gate; retain every unresolved observation and resume its original canonical job. The existing mindmap and independent reviewers still make all content decisions. No other routine or shared mindmap standard changes. Report operational failure for unfinished demand even if the scheduler says Succeeded.
-<!-- /search-gap-durable-v1 -->
+<!-- search-gap-durable-v3 -->
+**Permanent search-only reliability (2026-11-06):** After verified startup and before Step 1, read `scripts/search_gap/CONTRACT.md` including durable continuation and separate preview repairs. It supersedes this caller's older rolling-window, skip-on-error, HTTP-only verification, discard-after-audit and silent-on-unfinished wording. Use the existing adapter with `--owner <this invocation fresh workflow runId>`; it delegates to `job_worker.py`. Resume the exact server-stored job, restore its private checkpoint artifacts and original canonical identities/findings/counters; checkpoint actual stage results and renew the lease before publication. Different active owners must not duplicate work. Every candidate still goes through native mindmap and independent reviews. Only validated finish permits success; blocked/unfinished demand remains pending for scheduled recovery with an honest failure report. Lawfare's isolated public-data/signature preview and genuine Next font-input pin are search-only helpers; preserve independent full-render review and unchanged native exact comparison. Never edit mindmap-pass, shared phase/render helpers, other routines, schedules or site-local restrictions to implement this. No new human gate.
+<!-- /search-gap-durable-v3 -->
 
 <!-- workflow-checkpoints-v1 -->
 **Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
@@ -55,7 +55,7 @@ Returns `candidates: [{ term, kind, count, paths }]` — `kind:'search'` are zer
 
 `candidateCount: 0` → exit 0 silently.
 
-Requires `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`; missing → exit 0.
+Requires `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`; missing → nonzero operational failure, never empty.
 
 ## STEP 2 — There is no STEP 2. Send it all.
 **Do not filter. Do not classify. Do not judge. Do not skip.** The candidate list from STEP 1 goes into the brief whole, exactly as returned. Both streams. Junk, gibberish, probing, off-mission, things you are certain we already cover — all of it. Mindmap decides what becomes a page, what becomes an enrichment of the page in `paths`, and what gets dropped. That is its job and it is better at it than you are.
@@ -73,13 +73,13 @@ If the same term comes back tomorrow, it goes to mindmap again. Re-deciding a te
 Do not add synthetic "we should also have X" rows to the brief (missing hub pages, series completeness, keyword wishlists). Those belong to the keyword/trend routines. On layer3 a checklist block once put 9 synthetic rows ahead of 20 real questions and consumed the run. The brief is what visitors searched for. Nothing else goes in it.
 
 ## STEP 3 — Feed them to mindmap (the full pass, unattended)
-Write the surviving questions **and searches** into one brief and run **`/mindmap-pass` in full** — every phase, in order, the same way the X-trends routine does. **Read each phase file; do not paraphrase.**
+Write the complete intake questions **and searches** into one brief and run **`/mindmap-pass` in full** — every phase, in order, the same way the X-trends routine does. **Read each phase file; do not paraphrase.**
 
 Brief = the raw terms, verbatim, one per line, each tagged with its `kind` and the `paths` page it came from. Demand rule: a real person asked, so low search volume never vetoes a term on its own; SEMRUSH/DataForSEO (optional) sharpens the angle only. Everything else is mindmap's normal process — including its coverage lookup (duplicate protection) and its lever ladder (create / add to an existing page / drop as already covered).
 
 > Unattended run: save the chart to `reports/mindmap-pass/<YYYY-MM-DD>-search-gap.md` (this exact name, so it never collides with another mindmap run today), treat the Phase 0 manifest as approved, and continue to Phase 9 without stopping.
 
-Phases that matter most: `phase-build-brief.md` (coverage lookup + lever ladder) → `phase-3-new-content.md` (API writer, see the prose rule) → `phase-4-audit.md` (hard-fail after 2 reworks → drop that topic; do not record it anywhere, if it comes back tomorrow it gets another look) → **`phase-5-body.md` (the "add to an existing page" rows — this is where a question already half-answered by a page gets its missing section)** → `phase-6-internal-linking.md` → `phase-7-sitemap-indexnow.md` → `phase-9-commit-deliver.md` (commit → deploy → 200-verify → IndexNow).
+Phases that matter most: `phase-build-brief.md` (coverage lookup + lever ladder) → `phase-3-new-content.md` (API writer, see the prose rule) → `phase-4-audit.md` (at the existing audit/rework limit preserve the failed canonical topic, findings and counters as pending; follow existing release rules without resetting it) → **`phase-5-body.md` (the "add to an existing page" rows — this is where a question already half-answered by a page gets its missing section)** → `phase-6-internal-linking.md` → `phase-7-sitemap-indexnow.md` → `phase-9-commit-deliver.md` (commit → deploy → 200-verify → IndexNow).
 
 **No cap. Work the entire brief.** Every candidate gets addressed in this run — there is no per-run page limit, no "roll to the next run", and no stopping early because the list is long. Mindmap's own dedup decides new-page-vs-existing; that is its job, not yours.
 
