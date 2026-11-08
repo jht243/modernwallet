@@ -44,10 +44,11 @@
     },
     {
       "head": "credit for best buy card",
-      "volume": 1650000,
+      "volume": 2200000,
       "queries": [
         "credit for best buy card",
         "credit for best buy credit card",
+        "credit best buy card",
         "best buy credit card credit"
       ]
     },
@@ -62,7 +63,7 @@
     },
     {
       "head": "best rewards credit card",
-      "volume": 792000,
+      "volume": 841500,
       "queries": [
         "best rewards credit card",
         "best credit card rewards card",
@@ -79,6 +80,7 @@
         "credit card rewards best",
         "credit card best rewards",
         "best credit card rewards",
+        "best credit card reward card",
         "best credit card reward"
       ]
     },
@@ -178,6 +180,16 @@
       ]
     },
     {
+      "head": "pay for best buy credit card",
+      "volume": 296000,
+      "queries": [
+        "pay for best buy credit card",
+        "pay best buy credit card",
+        "best buy credit card pay",
+        "best buy pay credit card"
+      ]
+    },
+    {
       "head": "best buy my credit card",
       "volume": 271500,
       "queries": [
@@ -193,15 +205,6 @@
         "best card credit",
         "best credit card for credit",
         "credit card for best credit"
-      ]
-    },
-    {
-      "head": "pay for best buy credit card",
-      "volume": 222000,
-      "queries": [
-        "pay for best buy credit card",
-        "pay best buy credit card",
-        "best buy pay credit card"
       ]
     },
     {
@@ -265,21 +268,6 @@
       "volume": 110000,
       "queries": [
         "best credit card for travelling"
-      ]
-    },
-    {
-      "head": "best credit card for airline miles",
-      "volume": 108900,
-      "queries": [
-        "best credit card for airline miles",
-        "best credit card airline miles",
-        "best airline credit card miles",
-        "best airlines miles credit card",
-        "best credit card for airlines miles",
-        "airline miles credit card best",
-        "best airline credit card for miles",
-        "best airline mile credit card",
-        "best airline miles credit card"
       ]
     },
     {
@@ -351,17 +339,17 @@
       ]
     },
     {
-      "head": "credit card best miles",
+      "head": "best credit card for airline miles",
       "volume": 96800,
       "queries": [
-        "credit card best miles",
-        "best credit card miles",
-        "credit card for miles best",
-        "best credit card for miles",
-        "credit card best for miles",
-        "miles credit card best",
-        "best miles credit card",
-        "credit card miles best"
+        "best credit card for airline miles",
+        "best credit card airline miles",
+        "best airline credit card miles",
+        "best airlines miles credit card",
+        "best credit card for airlines miles",
+        "airline miles credit card best",
+        "best airline credit card for miles",
+        "best airline mile credit card"
       ]
     },
     {
@@ -382,7 +370,7 @@
     },
     {
       "head": "best software for accounting for small business",
-      "volume": 75600,
+      "volume": 81000,
       "queries": [
         "best software for accounting for small business",
         "best business accounting software for small business",
@@ -395,6 +383,7 @@
         "best small business software accounting",
         "best software for accounting small business",
         "best accounting software for small business",
+        "small business accounting software best",
         "best small business software for accounting",
         "best small business accounting app",
         "best small business accounting apps"
@@ -419,6 +408,18 @@
       "volume": 74000,
       "queries": [
         "best buy credit card pa"
+      ]
+    },
+    {
+      "head": "credit card best miles",
+      "volume": 72600,
+      "queries": [
+        "credit card best miles",
+        "best credit card miles",
+        "credit card for miles best",
+        "best credit card for miles",
+        "credit card best for miles",
+        "miles credit card best"
       ]
     },
     {
@@ -461,17 +462,6 @@
       ]
     },
     {
-      "head": "credit card best rewards no annual fee",
-      "volume": 60500,
-      "queries": [
-        "credit card best rewards no annual fee",
-        "best no annual fee rewards credit card",
-        "best rewards credit card no annual fee",
-        "best credit card no annual fee rewards",
-        "best reward credit card no annual fee"
-      ]
-    },
-    {
       "head": "small business best bank",
       "volume": 55200,
       "queries": [
@@ -502,6 +492,27 @@
       ]
     },
     {
+      "head": "best money back rewards credit card",
+      "volume": 49500,
+      "queries": [
+        "best money back rewards credit card"
+      ]
+    },
+    {
+      "head": "best points on credit card",
+      "volume": 49500,
+      "queries": [
+        "best points on credit card"
+      ]
+    },
+    {
+      "head": "best credit card award",
+      "volume": 49500,
+      "queries": [
+        "best credit card award"
+      ]
+    },
+    {
       "head": "best rewards credit card with no annual fee",
       "volume": 48400,
       "queries": [
@@ -509,6 +520,26 @@
         "credit card with the best rewards no annual fee",
         "best credit card with rewards and no annual fee",
         "best reward credit card with no annual fee"
+      ]
+    },
+    {
+      "head": "credit card best rewards no annual fee",
+      "volume": 48400,
+      "queries": [
+        "credit card best rewards no annual fee",
+        "best no annual fee rewards credit card",
+        "best rewards credit card no annual fee",
+        "best credit card no annual fee rewards"
+      ]
+    },
+    {
+      "head": "best mileage credit card",
+      "volume": 48400,
+      "queries": [
+        "best mileage credit card",
+        "mileage credit card best",
+        "best credit card mileage",
+        "best credit card for mileage"
       ]
     },
     {
@@ -553,12 +584,12 @@
       ]
     },
     {
-      "head": "best mileage credit card",
+      "head": "credit card with best airline miles",
       "volume": 36300,
       "queries": [
-        "best mileage credit card",
-        "best credit card mileage",
-        "best credit card for mileage"
+        "credit card with best airline miles",
+        "best credit card with airline miles",
+        "credit card with the best airline miles"
       ]
     },
     {
@@ -569,48 +600,7 @@
         "best 0 annual fee credit card",
         "best credit card 0 annual fee"
       ]
-    },
-    {
-      "head": "best credit card for airline mileage",
-      "volume": 36300,
-      "queries": [
-        "best credit card for airline mileage",
-        "best airline mileage credit card",
-        "best airlines mileage credit card"
-      ]
-    },
-    {
-      "head": "best business banking small business",
-      "volume": 34800,
-      "queries": [
-        "best business banking small business",
-        "best small business banking",
-        "small business banking best",
-        "best for small business banking",
-        "best banking for small business",
-        "best business banking for small business"
-      ]
-    },
-    {
-      "head": "best accounting programs for small business",
-      "volume": 32400,
-      "queries": [
-        "best accounting programs for small business",
-        "best accounting program for small business",
-        "best small business accounting programs",
-        "best program for small business accounting",
-        "best small business accounting program",
-        "best accounting program small business"
-      ]
-    },
-    {
-      "head": "best 0 percent interest credit card",
-      "volume": 29600,
-      "queries": [
-        "best 0 percent interest credit card",
-        "best credit card 0 percent interest"
-      ]
     }
   ],
-  "cost": "DataForSEO: 8 calls, $0.34968 of $2.00 budget"
+  "cost": "DataForSEO: 8 calls, $0.35256 of $2.00 budget"
 }

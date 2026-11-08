@@ -1,14 +1,25 @@
 {
-  "generated": "2026-11-04T16:09:26.890Z",
+  "generated": "2026-11-08T16:08:58.144Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
       "label": "AI training work platforms",
       "roundupSlug": "dataannotation-alternatives",
-      "route": "ACCRUE",
-      "qualified": 10,
+      "route": "ENRICH",
+      "qualified": 11,
       "listed": 10,
-      "missing": []
+      "missing": [
+        {
+          "domain": "swiftsalary.com",
+          "name": "swiftsalary.com",
+          "site_url": "https://swiftsalary.com",
+          "one_liner": "",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 4,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "ai-investing-apps",
@@ -34,21 +45,10 @@
       "vertical": "ai-trading-bots",
       "label": "AI trading bots",
       "roundupSlug": "best-ai-trading-bots",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 12,
-      "listed": 11,
-      "missing": [
-        {
-          "domain": "switchmarkets.com",
-          "name": "AlgoBuilder: Free AI Trading Bot Builder",
-          "site_url": "https://switchmarkets.com",
-          "one_liner": "Build automated trading bots using AI. Just chat and explain your strategy - no coding required. Free AlgoBuilder when you trade with Switch Markets.",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 15,
-          "primary_email": "support@switchmarkets.com"
-        }
-      ]
+      "listed": 12,
+      "missing": []
     },
     {
       "vertical": "ai-stock-pickers",
@@ -83,10 +83,41 @@
       "vertical": "mortgage-lenders",
       "label": "mortgage lenders",
       "roundupSlug": "best-mortgage-lenders",
-      "route": "ACCRUE",
-      "qualified": 17,
+      "route": "ENRICH",
+      "qualified": 20,
       "listed": 17,
-      "missing": []
+      "missing": [
+        {
+          "domain": "rocketreach.co",
+          "name": "Preferred Home Loans Competitors",
+          "site_url": "https://rocketreach.co",
+          "one_liner": "Preferred Home Loans's top competitors like AmeriSave Mortgage Corporation, Better, and Caliber Home Loans, Inc..",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 1,
+          "primary_email": null
+        },
+        {
+          "domain": "onlinemortgages.finimpact.com",
+          "name": "Secure & Efficient Mortgage Lenders",
+          "site_url": "https://onlinemortgages.finimpact.com",
+          "one_liner": "Mar 11, 2026 — Compare mortgage refinance options from top lenders to find the best rates and terms. Top Lenders Rocket Mortgage AmeriSave Quicken Loans. We ...",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 5,
+          "primary_email": "info@bestonlinemortgages.com"
+        },
+        {
+          "domain": "truehold.com",
+          "name": "Reverse Mortgage Alternatives Explained",
+          "site_url": "https://truehold.com",
+          "one_liner": "Sep 15, 2023 — Equity-based loans such as cash-out mortgages, home equity loans, and HELOCs are among the reverse mortgage financing alternatives available to ...",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 6,
+          "primary_email": "hello@truehold.com"
+        }
+      ]
     },
     {
       "vertical": "ira-accounts",
@@ -112,21 +143,10 @@
       "vertical": "investment-apps-for-beginners",
       "label": "investment apps",
       "roundupSlug": "best-investment-apps-for-beginners",
-      "route": "ENRICH",
-      "qualified": 6,
+      "route": "ACCRUE",
+      "qualified": 5,
       "listed": 5,
-      "missing": [
-        {
-          "domain": "invoicingpro.org",
-          "name": "I don't understand why invoicing apps cost $10/month",
-          "site_url": "https://invoicingpro.org/",
-          "one_liner": "Show HN: I don't understand why invoicing apps cost $10/month",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": null,
-          "primary_email": null
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "money-market-accounts",
@@ -163,9 +183,19 @@
       "label": "budgeting apps for couples",
       "roundupSlug": "best-budgeting-apps-for-couples",
       "route": "ENRICH",
-      "qualified": 17,
+      "qualified": 18,
       "listed": 16,
       "missing": [
+        {
+          "domain": "spendee.com",
+          "name": "spendee.com",
+          "site_url": "https://spendee.com",
+          "one_liner": "",
+          "site_kind": "vendor",
+          "has_pricing": true,
+          "serp_rank": 6,
+          "primary_email": null
+        },
         {
           "domain": "pennywise-app.com",
           "name": "Best Budget App for Couples: How to Track Shared Expenses ...",
@@ -200,21 +230,10 @@
       "vertical": "tax-relief-companies",
       "label": "tax relief companies",
       "roundupSlug": "best-tax-relief-companies",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 22,
-      "listed": 21,
-      "missing": [
-        {
-          "domain": "defensetax.com",
-          "name": "Best Tax Relief Company To Help With Back Taxes",
-          "site_url": "https://defensetax.com",
-          "one_liner": "Jul 6, 2020 — Defense Tax Partners is the best tax relief company to help with back taxes. If you need tax help, reach out to our lawyers today.",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 18,
-          "primary_email": "clientcare@partnerstg.com"
-        }
-      ]
+      "listed": 22,
+      "missing": []
     },
     {
       "vertical": "online-will-makers",
@@ -251,27 +270,17 @@
       "roundupSlug": "best-estate-planning-software",
       "route": "ENRICH",
       "qualified": 11,
-      "listed": 9,
+      "listed": 10,
       "missing": [
         {
-          "domain": "statular.com",
-          "name": "Best Estate Planning Software for Attorneys (2026)",
-          "site_url": "https://statular.com",
-          "one_liner": "Eleven platforms, and who each is best for. · Statular · WealthCounsel (Wealth Docx) · InterActive Legal · Gavel · Lawgic · HotDocs · Adapt · Fore! Trust Software. Read more",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 4,
-          "primary_email": "contact@statular.com"
-        },
-        {
-          "domain": "openlaw.com",
-          "name": "WealthCounsel vs Lexi: Estate Planning Documents vs Firm ...",
-          "site_url": "https://openlaw.com",
-          "one_liner": "May 21, 2026 — WealthCounsel is built for estate planning drafting, templates, and practice resources. Lexi is built for the operational path around the work: ... Read more",
+          "domain": "daviswillsandtrusts.com",
+          "name": "daviswillsandtrusts.com",
+          "site_url": "https://daviswillsandtrusts.com",
+          "one_liner": "",
           "site_kind": "unknown",
           "has_pricing": false,
-          "serp_rank": 5,
-          "primary_email": null
+          "serp_rank": 9,
+          "primary_email": "info@daviswillsandtrusts.com"
         }
       ]
     },
@@ -279,10 +288,21 @@
       "vertical": "budgeting-apps",
       "label": "budgeting apps",
       "roundupSlug": "best-budgeting-apps",
-      "route": "ACCRUE",
-      "qualified": 12,
+      "route": "ENRICH",
+      "qualified": 13,
       "listed": 12,
-      "missing": []
+      "missing": [
+        {
+          "domain": "pocketsmith.com",
+          "name": "pocketsmith.com",
+          "site_url": "https://pocketsmith.com",
+          "one_liner": "",
+          "site_kind": "vendor",
+          "has_pricing": true,
+          "serp_rank": 5,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "brokers-for-treasury-bonds",
@@ -395,7 +415,7 @@
       "roundupSlug": "personal-loan-rates-by-lender",
       "route": "ENRICH",
       "qualified": 22,
-      "listed": 19,
+      "listed": 20,
       "missing": [
         {
           "domain": "canvas.org",
@@ -415,16 +435,6 @@
           "site_kind": "unknown",
           "has_pricing": false,
           "serp_rank": 9,
-          "primary_email": null
-        },
-        {
-          "domain": "liberty-bank.com",
-          "name": "Personal Loans with Competitive Rates & Terms",
-          "site_url": "https://liberty-bank.com",
-          "one_liner": "Accomplish your financial goals with a personal loan designed for your needs. We offer competitive rates & flexible terms for qualified borrowers in CT.",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 18,
           "primary_email": null
         }
       ]
@@ -498,10 +508,21 @@
       "vertical": "portfolio-backtesting-and-analysis-tools",
       "label": "portfolio analysis tools",
       "roundupSlug": "best-portfolio-backtesting-and-analysis-tools",
-      "route": "ACCRUE",
-      "qualified": 19,
+      "route": "ENRICH",
+      "qualified": 20,
       "listed": 19,
-      "missing": []
+      "missing": [
+        {
+          "domain": "findmymoat.com",
+          "name": "Portfolio Visualizer Alternatives for Backtesting & Analysis",
+          "site_url": "https://findmymoat.com",
+          "one_liner": "Compare Portfolio Visualizer alternatives for portfolio backtesting, Monte Carlo simulations, optimization, factor analysis, correlations, and reports.",
+          "site_kind": "unknown",
+          "has_pricing": true,
+          "serp_rank": 8,
+          "primary_email": "support@findmymoat.com"
+        }
+      ]
     },
     {
       "vertical": "merchant-cash-advance-companies",
@@ -516,21 +537,10 @@
       "vertical": "invoice-factoring-companies",
       "label": "invoice factoring companies",
       "roundupSlug": "best-invoice-factoring-companies",
-      "route": "ENRICH",
-      "qualified": 32,
+      "route": "ACCRUE",
+      "qualified": 31,
       "listed": 31,
-      "missing": [
-        {
-          "domain": "cdlworker.com",
-          "name": "18 Factoring Companies That Can Help You Generate ...",
-          "site_url": "https://cdlworker.com",
-          "one_liner": "Feb 21, 2024 — Top 18 freight factoring companies for truckers · Compass Funding Solutions · OTR Solutions · eCapital Freight Factoring Inc. · Apex Capital Corp. Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 18,
-          "primary_email": "info@cdlworker.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "business-line-of-credit-rates-by-lender",
@@ -554,10 +564,21 @@
       "vertical": "same-day-business-loans",
       "label": "business lenders",
       "roundupSlug": "best-same-day-business-loans",
-      "route": "ACCRUE",
-      "qualified": 9,
+      "route": "ENRICH",
+      "qualified": 10,
       "listed": 9,
-      "missing": []
+      "missing": [
+        {
+          "domain": "goviceversa.com",
+          "name": "8 Best Types of Alternative Funding for Small Businesses",
+          "site_url": "https://goviceversa.com",
+          "one_liner": "Dec 4, 2024 — 1. Peer-to-Peer (P2P) Lending · 2. Crowdfunding · 3. Merchant Cash Advances (MCA) · 4. Invoice Financing · 5. Revenue-Based Financing (RBF) · 6. Read more",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": 4,
+          "primary_email": "info@goviceversa.com"
+        }
+      ]
     },
     {
       "vertical": "business-bank-accounts",
@@ -581,10 +602,21 @@
       "vertical": "accounting-software-for-freelancers",
       "label": "accounting software for freelancers",
       "roundupSlug": "best-accounting-software-for-freelancers",
-      "route": "ACCRUE",
-      "qualified": 23,
+      "route": "ENRICH",
+      "qualified": 24,
       "listed": 23,
-      "missing": []
+      "missing": [
+        {
+          "domain": "profitbooks.net",
+          "name": "Top Zoho Invoice Alternatives In India (2026 List)",
+          "site_url": "https://profitbooks.net",
+          "one_liner": "Top Zoho Invoice Alternatives in India · 1. ProfitBooks — The Small Business Whisperer ·. Square Invoice — The Ecosystem Player · 3. Bookipi — The Freelancer's ... Read more",
+          "site_kind": "vendor",
+          "has_pricing": true,
+          "serp_rank": 3,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "invoicing-apps-for-freelancers",
@@ -600,29 +632,9 @@
       "label": "bookkeeping services for small businesses",
       "roundupSlug": "best-bookkeeping-services-for-small-businesses",
       "route": "ENRICH",
-      "qualified": 30,
-      "listed": 27,
+      "qualified": 29,
+      "listed": 28,
       "missing": [
-        {
-          "domain": "slateridgefinance.com",
-          "name": "Top Online Bookkeeping Firms That Won't Break the Bank",
-          "site_url": "https://slateridgefinance.com",
-          "one_liner": "Discover affordable bookkeeping and accounting services online. Save 20+ hours/month, boost survival 313%, scale with expert virtual support for startups.",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 4,
-          "primary_email": "info@slateridgefinance.com"
-        },
-        {
-          "domain": "fastcorp.eu",
-          "name": "7 Best Accounting Services for Small Business (2026)",
-          "site_url": "https://fastcorp.eu",
-          "one_liner": "Aug 11, 2026 — 1. FastCorp · 2. Bench Accounting · 3. Pilot · 4. QuickBooks Live Bookkeeping (Intuit) · 5. Bookkeeper360 · 6. Xendoo · 7. Block Advisors by H&R Block. Read more",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 8,
-          "primary_email": "info@fastcorp.eu"
-        },
         {
           "domain": "ambersbookkeeping.com",
           "name": "Denver Bookkeeping Services for Service-Based Businesses",
@@ -639,10 +651,21 @@
       "vertical": "freelancer-tax-preparers",
       "label": "tax preparation services for freelancers and gig workers",
       "roundupSlug": "best-tax-preparation-services-for-freelancers",
-      "route": "ACCRUE",
-      "qualified": 16,
+      "route": "ENRICH",
+      "qualified": 17,
       "listed": 16,
-      "missing": []
+      "missing": [
+        {
+          "domain": "taxact.com",
+          "name": "taxact.com",
+          "site_url": "https://taxact.com",
+          "one_liner": "",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": 8,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "cpa-tax-advisers",
@@ -657,41 +680,19 @@
       "vertical": "california-independent-insurance-agencies",
       "label": "independent insurance agencies in California",
       "roundupSlug": "best-independent-insurance-agencies-in-california",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 16,
-      "listed": 15,
-      "missing": [
-        {
-          "domain": "aims4insurance.com",
-          "name": "Aims Insurance",
-          "site_url": "https://aims4insurance.com",
-          "one_liner": "Aims Insurance offers affordable auto, home, renters, and business insurance in California and beyond. Compare quotes, get SR‑22 assistance, ...",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 18,
-          "primary_email": "info@aims4insurance.com"
-        }
-      ]
+      "listed": 16,
+      "missing": []
     },
     {
       "vertical": "massachusetts-restaurant-hr-services",
       "label": "restaurant HR support services in Massachusetts",
       "roundupSlug": "best-restaurant-hr-support-services-in-massachusetts",
-      "route": "ENRICH",
-      "qualified": 20,
+      "route": "ACCRUE",
+      "qualified": 19,
       "listed": 19,
-      "missing": [
-        {
-          "domain": "masshirecentralcc.com",
-          "name": "Business Development",
-          "site_url": "https://masshirecentralcc.com",
-          "one_liner": "Mar 30, 2026 — As a federally and state-funded Massachusetts One-Stop Career Center, we provide services for both job seekers and employers. The City of ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 19,
-          "primary_email": "info@masshirecentralcc.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "healthcare-directive-services",

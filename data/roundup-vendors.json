@@ -1116,6 +1116,19 @@
       "Canadian couples wanting a joint account with shared goals (18+, Canada)"
      ],
      "added": "2026-10-26"
+    },
+    {
+     "name": "Spendee",
+     "domain": "spendee.com",
+     "url": "https://www.spendee.com/",
+     "values": [
+      "Free Basic; Plus $1.99/mo; Premium $5.99/mo",
+      "Shared wallets listed as a feature",
+      "Not stated for the free plan",
+      "Not stated",
+      "Partners who want separate shared wallets showing who paid"
+     ],
+     "added": "2026-11-08"
     }
    ]
   },
@@ -2690,6 +2703,18 @@
       "Paycheck households that prefer not to link a bank"
      ],
      "added": "2026-10-28"
+    },
+    {
+     "name": "PocketSmith",
+     "domain": "pocketsmith.com",
+     "url": "https://www.pocketsmith.com/",
+     "values": [
+      "Free plan; paid from $9.99/mo billed annually",
+      "No; free plan allows manual imports",
+      "Calendar-based budgets with optional rollover",
+      "Cash-flow forecasting and multi-currency budgets; projection length varies by plan"
+     ],
+     "added": "2026-11-08"
     }
    ]
   },
@@ -6328,6 +6353,18 @@
       "Freelancers, solopreneurs and S-Corps"
      ],
      "added": "2026-11-01"
+    },
+    {
+     "name": "TaxAct",
+     "domain": "taxact.com",
+     "url": "https://www.taxact.com/",
+     "values": [
+      "DIY software; expert-assisted filing also offered",
+      "Self-Employed edition from $109.99 federal; state extra",
+      "Not published",
+      "Freelancers, gig workers and sole proprietors who want to file themselves"
+     ],
+     "added": "2026-11-08"
     }
    ]
   },
