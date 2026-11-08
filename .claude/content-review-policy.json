@@ -1,0 +1,16 @@
+{
+  "version": "risk-review-budget-2026-11-08.1",
+  "siteId": "jht243/modernwallet",
+  "defaultProfile": "high",
+  "minimumProfile": "high",
+  "roundLimits": {
+    "light": 1,
+    "standard": 2,
+    "high": 3
+  },
+  "legacyInventory": {
+    "path": ".claude/content-review-policy-legacy.json",
+    "sha256": "bcb3617be22e7cfa00c018379d770133506741748ea21e6ead8e0decca42604b"
+  },
+  "scope": "Mindmap Pass and content-producing callers only. Preserve native paid-client/upsell exceptions, full SEO, exclusions and required professional review."
+}

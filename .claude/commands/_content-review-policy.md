@@ -1,0 +1,42 @@
+# Claim-based review depth and one per-page audit budget
+
+Owner instruction, 2026-11-08. Applies to Mindmap Pass and routines that hand content to it across the fleet. This contract supersedes older uniform factual depth, separate fix-round allowances and separate two-rework limits for ordinary editorial content. It does not change Phase 0 authorization, independent preparation/chart review, publication scope, full SEO, source/testing honesty, site exclusions, professional obligations or native paid-client/upsell release policies. Never use a budget cap as approval of material falsehoods.
+
+## Depth follows actual claims
+
+The site's `.claude/content-review-policy.json` supplies its default and floor. LIGHT has at most ONE independent content-review round; STANDARD at most TWO; HIGH at most THREE. These are ceilings, never targets: publish after the first genuine PASS once all normal release checks succeed.
+
+- LIGHT: ordinary grooming, reading and product-use guides. Check central facts, truthful evidence/testing language and the reader's answer. Do not perform clinical/legal investigations on content that makes no such claims.
+- STANDARD: general AI/software/product comparisons. Also verify material prices, availability, capabilities, important numbers and recommendation conditions from appropriate sources.
+- HIGH: medical/treatment, consequential legal/financial/investment/security/safety claims and stricter site floors. Add current primary sources, conditions/units/jurisdictions, contrary evidence and any genuinely required professional review. Three AI rounds never substitute for required professional review.
+
+Every level keeps the complete applicable SEO/intent/demand/deduplication, usefulness, attribution, testing-label, indexability, link, schema/date, rendered-layout and exact-live checks. Preserve specific local owner exemptions, including American Pivot's existing no-keyword/demand-gate scope. A health or safety claim on a nominally low-risk site escalates. A risk word occurring only in a related URL is not itself a consequential claim. Incidental visible mentions need exact-passage explanations, independently checked; missing/uncertain classification stays HIGH. Review all actual reader claims, including inherited text and descriptive metadata/schema. Do not hide a risky paragraph or reclassify genuine advice as incidental to obtain a cheaper profile.
+
+## One actual counter, including corrections
+
+The initial independent content audit is round 1. Every subsequent independent AI verification counts too, whether called `fix-in-place`, claim check, final QA, rework or re-audit. The three old fix rounds and two old rework attempts do NOT create extra allowances. Deterministic lint/build/link/hash checks and the separate preparation/chart review do not consume editorial rounds and cannot make an editorial PASS. A writer's internal validation does not replace the independent audit or create an additional independent-review budget.
+
+Track each canonical site/page in the append-only journal managed by `.claude/tools/content-review-policy.py`. Retain actual source-bound reports, findings, attempts and canonical job across retries/conversations; a different run ID or draft filename cannot reset the counter. Import actual pre-existing content-review reports in their real order on resumption. Never count a chart review as a content review, manufacture missing reports, omit prior failed reviews or convert a failure into PASS.
+
+After the limit, stop editorial work on that page. Preserve material unresolved errors and report it held; an authorized unattended run may continue with genuinely passing independent pages under its existing rules. Minor preferences may be advisory only when the actual reviewer finds the existing standard satisfied. Do not downgrade a genuine blocker merely because the budget is exhausted. No additional human gate is created.
+
+## Existing Phase 4 integration
+
+1. Mark the normal render manifest with `workflowKind: "mindmap-pass"` before capture. Use the existing production-path full capture after all content/template/link changes. Capture attaches the active policy hash; it is not approval.
+2. The independent auditor uses `content-review-policy.py classify --snapshot SNAPSHOT --route ROUTE` to see the site's provisional profile, actual risk passages and text hash. The reviewer writes a genuine `riskAssessment` with `textSha256`, a specific `rationale`, `consequentialClaims` (exact quote, category and reason) and `incidentalMentions` (exact contextual quote and reason). HIGH needs no repetitive explanation of every medical keyword; lower classifications must account for all flagged passages. Quotes/reasons must describe the actual page, not copied fixture answers.
+3. BEFORE the independent content audit, reserve its actual round:
+
+   `python3 .claude/tools/content-review-policy.py reserve --snapshot SNAPSHOT --route ROUTE --job-id ORIGINAL_JOB --reviewer ACTUAL_AUDITOR --out NEW_ADMISSION.json`
+
+   For a legacy unfinished job, repeat `--prior-review ACTUAL_OLD_REPORT.json` for every real previous content round. An already pending identical reservation is resumed; it is not permission to audit a changed draft without another slot. The first independent judgment can resolve a conservative provisional risk classification; later rounds cannot lower the established risk or erase history.
+4. The real rendered review keeps all existing seven checks, author/reviewer independence and exact fingerprints. Each route additionally carries `reviewProfile`, its actual independent `riskAssessment`, `reviewBudget: {path, sha256}` referencing the reservation, and evidence-backed `factualReview` fields. LIGHT requires `centralFacts`, `truthfulEvidence`; STANDARD adds `currentDetails`, `recommendationSupport`; HIGH adds `primarySources`, `consequentialClaims`, `limitationsAndJurisdiction`, `professionalReview`. All levels add `riskClassification` and `seoQuality`; sites already requiring `instructionUnderstanding` retain it. Use real observations, not generated PASS defaults. An inapplicable professional check needs a specific NA reason; a required one needs its real artifact.
+5. Record the actual per-route PASS/FAIL before applying another correction:
+
+   `python3 .claude/tools/content-review-policy.py record --review ACTUAL_RENDERED_REVIEW.json`
+
+   This records the review; it never generates a verdict. A changed candidate uses the next reservation under the SAME job and page journal. Keep the same independent reviewer where its genuine current context can be retained. Follow normal complete-reading, access/understanding and context-loss requirements.
+6. Run the existing rendered check and Mindmap analysis audit. Their policy hooks require the actual latest recorded PASS within budget. Publishing still uses the approved exact content and existing build/link/live/host checks. `rendered-audit.py record-deployment` closes the cycle only after verified publication; land the appended journal and its immutable admissions/reports with the normal internal receipts. A future genuinely new revision may then begin a new cycle. A failed/unpublished page cannot acquire a new budget by changing its job ID.
+
+If a multi-page review leaves a page held but others genuinely passed, retain those exact approvals with `python3 .claude/tools/content-review-policy.py project --snapshot SNAPSHOT --review ACTUAL_REVIEW --route PASSING_ROUTE --out-snapshot SUBSET_SNAPSHOT --out-review SUBSET_REVIEW` (repeat `--route` as needed). This is a mechanical subset of the same evidence, not a new audit or verdict; it cannot include a failed page or alter findings. Keep the original snapshot/review unchanged. Use `sources --review ACTUAL_REVIEW` to list the exact internal journal, admissions and frozen report dependencies to retain with normal publication receipts; retain the appended journal again after verified live closure. None belongs in visitor-facing files.
+
+Existing source-bound snapshot/review pairs enumerated before activation still run their ORIGINAL validators; the inventory is not a new PASS or a retrospective understanding attestation. New candidates must use this policy. Preserve any native client/upsell exception solely through its existing validating release path, with actual counters, eligibility and holds intact; an ordinary editorial caller cannot self-declare such an exception.

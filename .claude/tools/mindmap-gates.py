@@ -315,6 +315,12 @@ def audit_analysis(root, packet, review, replay):
     renderer = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(renderer)
     renderer.review_check(snapshot, rendered)
+    # Every substantive Mindmap action uses the portable budget, even if an
+    # older caller forgot to mark its render manifest. No-addition stays above.
+    if (root/'.claude/content-review-policy.json').is_file():
+        policy_spec=importlib.util.spec_from_file_location('mindmap_content_review_policy',root/'.claude/tools/content-review-policy.py')
+        review_policy=importlib.util.module_from_spec(policy_spec);policy_spec.loader.exec_module(review_policy)
+        review_policy.check_rendered(root,snapshot,rendered,force=True)
     require(rendered.get('reviewer') == review['reviewer'], 'Bind the analysis decision to its independent final rendered reviewer')
     require(rendered.get('snapshotSha256') == snapshot.get('snapshotSha256') and snapshot.get('snapshotSha256'),
             'Rendered review and snapshot disagree')

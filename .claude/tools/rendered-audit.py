@@ -25,6 +25,14 @@ def require(condition, message):
 def now(): return dt.datetime.now(dt.timezone.utc).isoformat()
 def clean(text): return re.sub(r'\s+', ' ', text).strip()
 
+def content_review_policy():
+    root=Path(__file__).resolve().parents[2]
+    if not (root/'.claude/content-review-policy.json').is_file(): return None
+    import importlib.util
+    spec=importlib.util.spec_from_file_location('portable_content_review_policy',Path(__file__).with_name('content-review-policy.py'))
+    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+    return module
+
 class Page(HTMLParser):
     def __init__(self, volatile_ads=None):
         super().__init__(convert_charrefs=True)
@@ -214,6 +222,9 @@ def capture(manifest, base, out, dom_dir=None):
         return result
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool: results=list(pool.map(one,manifest['routes']))
     payload={'capturedAt':now(),'baseUrl':base,'domDir':dom_dir,'manifest':manifest,'routes':results}
+    review_policy=content_review_policy()
+    if review_policy is not None and manifest.get('workflowKind')=='mindmap-pass':
+        payload['contentReviewPolicy']={'version':review_policy.VERSION,'sha256':review_policy.policy_hash(Path(__file__).resolve().parents[2])}
     payload['snapshotSha256']=digest(payload); save(out,payload)
     return payload
 
@@ -245,6 +256,10 @@ def review_check(s, review):
         for key,check in checks.items():
             require(check.get('status') in (['PASS'] if key in REQUIRED else ['PASS','NA']),r['path']+': failed '+key)
             require(isinstance(check.get('evidence'),str) and len(check['evidence'].strip())>=20,r['path']+': missing evidence for '+key)
+    # Portable Mindmap budgets are separate from native client/upsell contracts.
+    review_policy=content_review_policy()
+    if review_policy is not None:
+        review_policy.check_rendered(Path(__file__).resolve().parents[2],s,review)
 
 def compare(approved, live, review, require_live=True):
     review_check(approved,review); valid_snapshot(live)
@@ -277,6 +292,8 @@ def record(s, approved, review, commit, host, ledger):
     path.parent.mkdir(parents=True,exist_ok=True)
     with path.open('a') as f:
         for entry in output: f.write(json.dumps(entry,sort_keys=True)+'\n')
+    review_policy=content_review_policy()
+    if review_policy is not None: review_policy.mark_published(Path(__file__).resolve().parents[2],approved,review,commit,host)
     return len(output)
 
 def main():

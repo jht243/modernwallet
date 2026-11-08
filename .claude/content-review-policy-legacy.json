@@ -1,0 +1,121 @@
+{
+  "histories": [],
+  "pairs": [
+    {
+      "reviewObjectSha256": "e30e3a20a67bef981a8c980e047ce98cb9ec93b56554ece92b0c0fc157179f01",
+      "reviewPath": "reports/mindmap-pass/2026-10-28-autocomplete/audit/rendered-review.json",
+      "snapshotSha256": "245e2ae731f2b5c9bc64a1adaa95684465a7737373ca93cff1823b9b5114367d",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "b1932678cd17c41091e4e3a6512cd3608ac4b9be3abae76a63a4b95e2a6a81a1",
+      "reviewPath": "reports/mindmap-pass/2026-10-28-competitor/audit/rendered-review-r2.json",
+      "snapshotSha256": "38514a2223746bb4aecd8755597d021b56e50e197547326b89bc677c757f5f6e",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "b539d3309f6bc21f77dfc6586efce6d5a5eeb068f089e3acac9b62a3338e782c",
+      "reviewPath": "reports/mindmap-pass/2026-10-28-competitor/audit/rendered-review-r3.json",
+      "snapshotSha256": "27e2b4f963b178548ddad2ff4a93a9ac5219fa1231ded36ae2f91e56189fcaaa",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "d1a3712fa574de16b72d8547d7a973c6b82c2b2ff513eb47ba89551cdff87457",
+      "reviewPath": "reports/mindmap-pass/2026-10-28-competitor/audit/rendered-review-r4.json",
+      "snapshotSha256": "5d51c201e864d43598dc8060729154e6af36d92ad704b386e622fc466396a099",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "486993fa778e0f9211ee91b349872a24cbcffa2863118aaa22ce605b7b9abd4d",
+      "reviewPath": "reports/mindmap-pass/2026-10-28-competitor/audit/rendered-review-r5.json",
+      "snapshotSha256": "566cfbfdc8cb661e3f60784f0c97f1cd7b1ccc370c90e2883316fd44a27d3765",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "cdbb38f06773ed6a18eef9434526a9c2c55cbccbae339a0e933475f5034f4555",
+      "reviewPath": "reports/mindmap-pass/2026-10-28-competitor/audit/rendered-review.json",
+      "snapshotSha256": "c4cf8d6c505faff50ae86525745f7982e4ffe75f35d56474d7791434c1e04983",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "108ef77f07c83280dd0238cbdf5cf6062f081a77176aea0a269e4020f90125a1",
+      "reviewPath": "reports/mindmap-pass/2026-10-28/audit/review.json",
+      "snapshotSha256": "e1b9c347d47421ba88b963ecbca47455c3e6dbfcc89bf34e4697821de75aee31",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "77c74a7577a42cb903b7cdb1670b3da0939cbe11d8dbd5a001256a1fa8a6265d",
+      "reviewPath": "reports/mindmap-pass/2026-10-29-subscription-cancel/audit/chart-review-phase4.json",
+      "snapshotSha256": "f6998783aa6c529ae87507cf45603483a0895f04b03317036f17c36c3f0e8547",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "b27e6caa11c753211bfbe0f68acaebafca83e466c9313034bf5e8b3145c4a32d",
+      "reviewPath": "reports/mindmap-pass/2026-10-29-xtrends/audit/rendered-review.json",
+      "snapshotSha256": "f61a63fee4706ef6f222e170dcefa35cb1043a59ca3748e0955f8a14d2abb441",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "75e12c624dbafc4596d2b379e59d69c086c78438cfb9f5a14f54120518e6bc3c",
+      "reviewPath": "reports/mindmap-pass/2026-11-02/audit/review.json",
+      "snapshotSha256": "b012412a70e1fcc04fc3542589a82c6a47077f257ec74f6fe6b442e520967d5f",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "248682314b79e147334ddaed0ff277a4783db59915cdff27f929046d0b50706d",
+      "reviewPath": "reports/mindmap-pass/2026-11-04-aca-snap/audit/final-render-review-withdrawn-for-rhythm.json",
+      "snapshotSha256": "fab596725851d998fc23e14a28e3cd3d52700b177908f4ee3025802a8567cb7b",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "7479d5e60f074a66f6b75a1c91059358902e1abf3bb5ac11ab6cf7584c0ac396",
+      "reviewPath": "reports/mindmap-pass/2026-11-04-aca-snap/audit/render-review-before-rhythm-withdrawal.json",
+      "snapshotSha256": "fab596725851d998fc23e14a28e3cd3d52700b177908f4ee3025802a8567cb7b",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "fcdc1856529a20206ed5d8a8c031e8e53f22ab5b4cd265e96d9a9c60978e354c",
+      "reviewPath": "reports/mindmap-pass/2026-11-04-aca-snap/final-render-review.json",
+      "snapshotSha256": "dcb58a71da4487025e6b14de11b3aa66e24dee6bc5a28511deee81f0e98518e3",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "4868903d7dcef535534e1e026b7d963fc1b23375cceb1477a3d1f5206ade51ae",
+      "reviewPath": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/rendered-review.json",
+      "snapshotSha256": "ad5d6df0a1f0439b1a9a5af23cdbfb97d72d7e36f2e5802aa1a8a8ab552afbb3",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "c120ba97ab7c64bc08735df55e763a9bea2f764da27530bcf5b4c34229d44692",
+      "reviewPath": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/round1/rendered-review.json",
+      "snapshotSha256": "1c13f527f3b5e956debe3c6b8c3e6924507b4dfe91d8baaa6960c6c0f51506cb",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "ad38fd2a73fa8435cd04c2bed11106ed9aca3c1c0eb21140b2315b38765b7e1a",
+      "reviewPath": "reports/mindmap-pass/2026-11-04-podcast-recovery/audit/round2/rendered-review.json",
+      "snapshotSha256": "e5a0939c6899c740570392a5490950c482e696833dc8d3ba079f5769ece2f549",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "2b8207c697697aed68ee46c48eed8b733a694aeb02b29c07830479bd02407e97",
+      "reviewPath": "reports/mindmap-pass/2026-11-04-tool-usage/audit/rendered-review.json",
+      "snapshotSha256": "9481589b31925ad19ef665aec781e89867c647fc5396f343b98b98d972fb3346",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "dcb29c4b0b8f9b1eb49bebe88f4edf4044d407574c89c824667815addd28578a",
+      "reviewPath": "reports/paid-placements/clarity-20261106/independent-rendered-review.json",
+      "snapshotSha256": "26d02158a00b7b7ca17c787c0d9c406df747160fe7625ba2c030d01e95225d23",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    },
+    {
+      "reviewObjectSha256": "95015931fe097fc9760197d767c021db264172b68c6ebcc75f0f9d8d729377ca",
+      "reviewPath": "reports/paid-placements/clarity-minimum-20261106/independent-rendered-review.json",
+      "snapshotSha256": "900526293d81c735bb7eed601ba30eee5c65e27f558f76b653f641ea2660a6b4",
+      "sourceCommit": "fad4974e22ba7c37cc665b328342bd0bfd146d01"
+    }
+  ],
+  "scope": "Preactivation exact evidence inventory; original validators remain mandatory. Not a new approval.",
+  "version": "risk-review-budget-2026-11-08.1"
+}
