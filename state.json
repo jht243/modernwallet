@@ -50,6 +50,17 @@
       "repairs": [],
       "route": "/guides/how-to-make-a-financial-plan/"
     },
+    "c734f3e7e825de54fcccc0edf1f91742d4465690701003d92d71161624fe8b9e": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "competitor-9031ce2b2c89",
+      "previousJobs": [],
+      "repairs": [
+        "9faa0d4a292e712b2cc5dcd9ba344fca4f6af147d299abf7ec028b8e36ef740e"
+      ],
+      "route": "/guides/questions-to-ask-a-financial-advisor"
+    },
     "d44663880ab5a5ff293cffcf6c62918a5b9e895ab45cf2649f8387b59e2a48e1": {
       "generated": [
         "full"
