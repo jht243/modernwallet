@@ -36,6 +36,15 @@
       "previousJobs": [],
       "repairs": [],
       "route": "/guides/questions-to-ask-a-financial-advisor/"
+    },
+    "e426543a61846d63b8849e0b1c8728985071ee715f3ac98fb9c9e5be4a0b5a2f": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "competitor-9031ce2b2c89",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/guides/what-is-a-cfp/"
     }
   },
   "job": null,
