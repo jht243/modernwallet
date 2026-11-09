@@ -1,14 +1,10 @@
 {
-  "slug": "best-robo-advisors",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "inven.ai",
-      "why": "category 3 — AI software for M&A and consulting teams; no robo-advisor product"
-    },
-    {
-      "domain": "fintechblueprint.com",
-      "why": "category 1 — fintech research newsletter publisher, no investment product"
-    }
-  ]
+ "slug": "best-robo-advisors",
+ "rows": [],
+ "cut": [
+  {
+   "domain": "financialadvisortransitions.com",
+   "why": "category 1 \u2014 publisher/ranking article, no product"
+  }
+ ]
 }

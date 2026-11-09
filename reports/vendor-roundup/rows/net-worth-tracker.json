@@ -1,10 +1,18 @@
 {
-  "slug": "best-net-worth-tracker",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "creditdonkey.com",
-      "why": "category 1 \u2014 review and comparison site, no product of its own"
-    }
-  ]
+ "slug": "best-net-worth-tracker",
+ "rows": [
+  {
+   "name": "trak-yo-dolla$",
+   "domain": "trakyodollas.com",
+   "url": "https://trakyodollas.com/",
+   "values": [
+    "Free",
+    "Not published",
+    "Real estate is a supported account type",
+    "Not published",
+    "Free tracker with no bank login; CSV import"
+   ]
+  }
+ ],
+ "cut": []
 }

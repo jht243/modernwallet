@@ -986,6 +986,19 @@
       "Checks and debit; up to 6 withdrawals per month"
      ],
      "added": "2026-10-21"
+    },
+    {
+     "name": "Santander Bank",
+     "domain": "santanderbank.com",
+     "url": "https://www.santanderbank.com/us/personal/savings/money-market-savings",
+     "values": [
+      "Not published",
+      "$10; waived with Santander checking or $10,000 average daily balance",
+      "None; $25 to open",
+      "Member FDIC",
+      "Not published"
+     ],
+     "added": "2026-11-09"
     }
    ]
   },
@@ -1649,6 +1662,19 @@
       "Manual-entry users wanting monthly net worth snapshots without bank logins"
      ],
      "added": "2026-10-27"
+    },
+    {
+     "name": "trak-yo-dolla$",
+     "domain": "trakyodollas.com",
+     "url": "https://trakyodollas.com/",
+     "values": [
+      "Free",
+      "Not published",
+      "Real estate is a supported account type",
+      "Not published",
+      "Free tracker with no bank login; CSV import"
+     ],
+     "added": "2026-11-09"
     }
    ]
   },

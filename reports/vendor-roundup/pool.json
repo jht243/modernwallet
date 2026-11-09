@@ -1,25 +1,14 @@
 {
-  "generated": "2026-11-08T16:08:58.144Z",
+  "generated": "2026-11-09T16:11:28.933Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
       "label": "AI training work platforms",
       "roundupSlug": "dataannotation-alternatives",
-      "route": "ENRICH",
-      "qualified": 11,
+      "route": "ACCRUE",
+      "qualified": 10,
       "listed": 10,
-      "missing": [
-        {
-          "domain": "swiftsalary.com",
-          "name": "swiftsalary.com",
-          "site_url": "https://swiftsalary.com",
-          "one_liner": "",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 4,
-          "primary_email": null
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "ai-investing-apps",
@@ -63,61 +52,19 @@
       "vertical": "robinhood-agentic-trading-alternatives",
       "label": "AI trading assistants",
       "roundupSlug": "robinhood-agentic-trading-alternatives",
-      "route": "ENRICH",
-      "qualified": 16,
+      "route": "ACCRUE",
+      "qualified": 15,
       "listed": 15,
-      "missing": [
-        {
-          "domain": "startrader.com",
-          "name": "AI Trading Tools: What They Do and How to Use Them",
-          "site_url": "https://startrader.com",
-          "one_liner": "AI trading tools use machine learning and data analysis to enable traders to filter markets, patterns, and risk, but they are not magic profit generators. Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 4,
-          "primary_email": "info@startrader.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "mortgage-lenders",
       "label": "mortgage lenders",
       "roundupSlug": "best-mortgage-lenders",
-      "route": "ENRICH",
-      "qualified": 20,
+      "route": "ACCRUE",
+      "qualified": 17,
       "listed": 17,
-      "missing": [
-        {
-          "domain": "rocketreach.co",
-          "name": "Preferred Home Loans Competitors",
-          "site_url": "https://rocketreach.co",
-          "one_liner": "Preferred Home Loans's top competitors like AmeriSave Mortgage Corporation, Better, and Caliber Home Loans, Inc..",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 1,
-          "primary_email": null
-        },
-        {
-          "domain": "onlinemortgages.finimpact.com",
-          "name": "Secure & Efficient Mortgage Lenders",
-          "site_url": "https://onlinemortgages.finimpact.com",
-          "one_liner": "Mar 11, 2026 — Compare mortgage refinance options from top lenders to find the best rates and terms. Top Lenders Rocket Mortgage AmeriSave Quicken Loans. We ...",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 5,
-          "primary_email": "info@bestonlinemortgages.com"
-        },
-        {
-          "domain": "truehold.com",
-          "name": "Reverse Mortgage Alternatives Explained",
-          "site_url": "https://truehold.com",
-          "one_liner": "Sep 15, 2023 — Equity-based loans such as cash-out mortgages, home equity loans, and HELOCs are among the reverse mortgage financing alternatives available to ...",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 6,
-          "primary_email": "hello@truehold.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "ira-accounts",
@@ -153,9 +100,19 @@
       "label": "money market accounts",
       "roundupSlug": "best-money-market-accounts",
       "route": "ENRICH",
-      "qualified": 15,
+      "qualified": 16,
       "listed": 13,
       "missing": [
+        {
+          "domain": "53.com",
+          "name": "53.com",
+          "site_url": "https://53.com",
+          "one_liner": "",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": 2,
+          "primary_email": null
+        },
         {
           "domain": "bmo.com",
           "name": "Savings Accounts, Money Markets & CDs",
@@ -184,18 +141,8 @@
       "roundupSlug": "best-budgeting-apps-for-couples",
       "route": "ENRICH",
       "qualified": 18,
-      "listed": 16,
+      "listed": 17,
       "missing": [
-        {
-          "domain": "spendee.com",
-          "name": "spendee.com",
-          "site_url": "https://spendee.com",
-          "one_liner": "",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 6,
-          "primary_email": null
-        },
         {
           "domain": "pennywise-app.com",
           "name": "Best Budget App for Couples: How to Track Shared Expenses ...",
@@ -221,10 +168,21 @@
       "vertical": "net-worth-tracker",
       "label": "net worth trackers",
       "roundupSlug": "best-net-worth-tracker",
-      "route": "ACCRUE",
-      "qualified": 27,
+      "route": "ENRICH",
+      "qualified": 28,
       "listed": 27,
-      "missing": []
+      "missing": [
+        {
+          "domain": "trakyodollas.com",
+          "name": "Personal finance tracker",
+          "site_url": "https://trakyodollas.com/",
+          "one_liner": "Show HN: Personal finance tracker – CSV import, free, no bank login",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": null,
+          "primary_email": "contact@trakyodollas.com"
+        }
+      ]
     },
     {
       "vertical": "tax-relief-companies",
@@ -249,9 +207,19 @@
       "label": "living trust services",
       "roundupSlug": "best-living-trust-services",
       "route": "ENRICH",
-      "qualified": 36,
+      "qualified": 37,
       "listed": 35,
       "missing": [
+        {
+          "domain": "wethepeopleusa.com",
+          "name": "Living Trust Faq",
+          "site_url": "https://wethepeopleusa.com",
+          "one_liner": "A living trust is a legal document that you create before your death to specify what your wishes are regarding assets, heirs, and beneficiaries.",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 7,
+          "primary_email": null
+        },
         {
           "domain": "ethos.com",
           "name": "How to Create a Living Trust: Step-by-Step Guide",
@@ -289,18 +257,18 @@
       "label": "budgeting apps",
       "roundupSlug": "best-budgeting-apps",
       "route": "ENRICH",
-      "qualified": 13,
-      "listed": 12,
+      "qualified": 14,
+      "listed": 13,
       "missing": [
         {
-          "domain": "pocketsmith.com",
-          "name": "pocketsmith.com",
-          "site_url": "https://pocketsmith.com",
-          "one_liner": "",
+          "domain": "expenie.com",
+          "name": "Best Budget App Alternatives",
+          "site_url": "https://expenie.com",
+          "one_liner": "Discover the best free budget apps available in India. Compare Expenie, Walnut, Money Manager, and more to find the perfect expense tracker. Read more",
           "site_kind": "vendor",
           "has_pricing": true,
-          "serp_rank": 5,
-          "primary_email": null
+          "serp_rank": 14,
+          "primary_email": "hello@expenie.com"
         }
       ]
     },
@@ -356,10 +324,21 @@
       "vertical": "robo-advisors",
       "label": "robo-advisors",
       "roundupSlug": "best-robo-advisors",
-      "route": "ACCRUE",
-      "qualified": 2,
+      "route": "ENRICH",
+      "qualified": 3,
       "listed": 2,
-      "missing": []
+      "missing": [
+        {
+          "domain": "financialadvisortransitions.com",
+          "name": "Top 10 Robo-Advisors Ranked by Assets Under ...",
+          "site_url": "https://financialadvisortransitions.com",
+          "one_liner": "Jul 17, 2026 — Top 10 Robo-Advisors Ranked by Assets Under Management · 1. Vanguard Robo-Advisors · 2. Wealthfront · 3. Schwab Intelligent Portfolios · 4. Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 4,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "credit-cards-for-fair-credit",
@@ -414,7 +393,7 @@
       "label": "personal loan lenders",
       "roundupSlug": "personal-loan-rates-by-lender",
       "route": "ENRICH",
-      "qualified": 22,
+      "qualified": 23,
       "listed": 20,
       "missing": [
         {
@@ -436,6 +415,16 @@
           "has_pricing": false,
           "serp_rank": 9,
           "primary_email": null
+        },
+        {
+          "domain": "tenivel.com",
+          "name": "Tenivel",
+          "site_url": "https://tenivel.com",
+          "one_liner": "Show HN: Tenivel – Local-first personal finance manager, no cloud",
+          "site_kind": "vendor",
+          "has_pricing": true,
+          "serp_rank": null,
+          "primary_email": "info@tenivel.com"
         }
       ]
     },
@@ -528,19 +517,51 @@
       "vertical": "merchant-cash-advance-companies",
       "label": "merchant cash advance companies",
       "roundupSlug": "best-merchant-cash-advance-companies",
-      "route": "ACCRUE",
-      "qualified": 33,
+      "route": "ENRICH",
+      "qualified": 34,
       "listed": 33,
-      "missing": []
+      "missing": [
+        {
+          "domain": "noblebusinessloans.com",
+          "name": "noblebusinessloans.com",
+          "site_url": "https://noblebusinessloans.com",
+          "one_liner": "",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": 4,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "invoice-factoring-companies",
       "label": "invoice factoring companies",
       "roundupSlug": "best-invoice-factoring-companies",
-      "route": "ACCRUE",
-      "qualified": 31,
+      "route": "ENRICH",
+      "qualified": 33,
       "listed": 31,
-      "missing": []
+      "missing": [
+        {
+          "domain": "templatebox.win",
+          "name": "TemplateBox",
+          "site_url": "https://templatebox.win/",
+          "one_liner": "Show HN: TemplateBox – Free resume, invoice and mockup editors in the browser",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": null,
+          "primary_email": "hello@meridian.studio"
+        },
+        {
+          "domain": "xsdhub.com",
+          "name": "XSDHub",
+          "site_url": "https://xsdhub.com/e-invoice-validator",
+          "one_liner": "Show HN: XSDHub – checks correctness of invoice format and local standards",
+          "site_kind": "unknown",
+          "has_pricing": true,
+          "serp_rank": null,
+          "primary_email": "support@xsdhub.com"
+        }
+      ]
     },
     {
       "vertical": "business-line-of-credit-rates-by-lender",
@@ -603,7 +624,7 @@
       "label": "accounting software for freelancers",
       "roundupSlug": "best-accounting-software-for-freelancers",
       "route": "ENRICH",
-      "qualified": 24,
+      "qualified": 25,
       "listed": 23,
       "missing": [
         {
@@ -615,6 +636,16 @@
           "has_pricing": true,
           "serp_rank": 3,
           "primary_email": null
+        },
+        {
+          "domain": "epufix.at",
+          "name": "EPUfix",
+          "site_url": "https://epufix.at",
+          "one_liner": "Show HN: EPUfix – Invoicing software for the self-employed in Austria",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": null,
+          "primary_email": "contact@epufix.at"
         }
       ]
     },
@@ -632,7 +663,7 @@
       "label": "bookkeeping services for small businesses",
       "roundupSlug": "best-bookkeeping-services-for-small-businesses",
       "route": "ENRICH",
-      "qualified": 29,
+      "qualified": 30,
       "listed": 28,
       "missing": [
         {
@@ -644,6 +675,16 @@
           "has_pricing": false,
           "serp_rank": 19,
           "primary_email": null
+        },
+        {
+          "domain": "koody.com",
+          "name": "Koody for Business",
+          "site_url": "https://koody.com/business",
+          "one_liner": "Show HN: Koody for Business – AI bookkeeping for people who aren't accountants",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": null,
+          "primary_email": "hello@koody.com"
         }
       ]
     },
@@ -651,21 +692,10 @@
       "vertical": "freelancer-tax-preparers",
       "label": "tax preparation services for freelancers and gig workers",
       "roundupSlug": "best-tax-preparation-services-for-freelancers",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 17,
-      "listed": 16,
-      "missing": [
-        {
-          "domain": "taxact.com",
-          "name": "taxact.com",
-          "site_url": "https://taxact.com",
-          "one_liner": "",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 8,
-          "primary_email": null
-        }
-      ]
+      "listed": 17,
+      "missing": []
     },
     {
       "vertical": "cpa-tax-advisers",

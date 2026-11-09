@@ -1,18 +1,10 @@
 {
  "slug": "personal-loan-rates-by-lender",
- "rows": [
+ "rows": [],
+ "cut": [
   {
-   "name": "Liberty Bank",
-   "domain": "liberty-bank.com",
-   "url": "https://www.liberty-bank.com/personal-loans",
-   "values": [
-    "CT, MA and RI residents wanting an unsecured bank loan",
-    "$2,000 to $50,000",
-    "7.99% to 19.81% APR (as of Nov 2026)",
-    "No origination, application or prepayment fee; $10 late fee",
-    "About 24 hours after approval"
-   ]
+   "domain": "tenivel.com",
+   "why": "category 4 \u2014 German budgeting app, fits budgeting category"
   }
- ],
- "cut": []
+ ]
 }
