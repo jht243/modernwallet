@@ -1,0 +1,26 @@
+PAGE /guides/how-to-choose-a-financial-advisor/  | round 1 | reviewer phase4-auditor-1 | VERDICT FAIL | profile high
+Findings are source-checked against the captures in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/ and the row prompt fact list. Format per finding: QUOTE (verbatim from the draft/source), DEFECT, FIX.
+Apply with: python3 scripts/lib/content_gen.py fix --draft <draft> --findings <this file> --facts <row prompt> --floor 1200 (Rung 1) except where a finding says Rung 2 / needs added facts. Re-run Rung 0 lint and re-submit the whole page for round 2.
+
+F1 [inherited unsupported legal comparison next to the new inbound link (blocker under _rendered-page-audit.md)]  FIELD: src/data/guides.ts, slug how-to-choose-a-financial-advisor, section 'Know Which Type of Financial Professional You're Talking To'
+  QUOTE: "A broker-dealer representative can also call themselves a financial advisor, but is held only to Regulation Best Interest, the weaker standard covered in that same step, and is often paid a commission on what they sell."
+  DEFECT: The new Step 1 inbound sentence sends readers to a guide whose sources (SEC Chairman Clayton's statement) present Regulation Best Interest as its own standard and which deliberately does not rank it against the adviser duty. This page ranks it as 'the weaker standard' and says brokers are 'held only to' it, but Investor.gov (Form CRS page) says many firms are dual registrants offering advisory and brokerage accounts, so the standard depends on the service. Nothing in the fetched sources supports 'weaker'. The contradiction sits in the decision path of the revised page.
+  FIX: REPLACE with: "A broker-dealer representative can also call themselves a financial advisor, but is held to Regulation Best Interest, a separate SEC standard for broker-dealers, and is often paid a commission on what they sell."
+
+F2 [inherited advice contradicting the linked guide's sourced position]  FIELD: src/data/guides.ts, Step 1 and Step 5
+  QUOTE: "Ask any advisor in writing: 'Are you a fiduciary at all times, on all my accounts?' The answer should be a simple yes."
+  QUOTE: "Ask: Are you a fiduciary on all accounts and at all times, in writing?"
+  DEFECT: The linked fiduciary guide quotes Investor.gov that a dual registrant's combination of brokerage and advisory accounts 'may be a good choice' and tells readers to ask which standard covers each account. This page tells the same reader the only acceptable answer is 'a simple yes' for all accounts at all times, which would exclude every dual registrant.
+  FIX: REPLACE the first with: "Ask any advisor in writing which standard covers each of your accounts, and read the firm's Form CRS." and the Step 5 question with: "Which standard covers each of my accounts, in writing?"
+
+F3 [unsupported licensing statement about coaches and counselors]  FIELD: src/data/guides.ts, intro section and FAQ 'Is a financial coach the same as a financial advisor?'
+  QUOTE: "and often isn't licensed to manage a portfolio at all"
+  QUOTE: "and often isn't licensed to manage investments at all"
+  DEFECT: No fetched primary source says whether a financial coach or counselor is licensed or unlicensed (FINRA lists coach and counselor designations and says it does not endorse any; the CFPB only describes nonprofit credit counseling). The sibling guide this page now sits beside refuses that claim.
+  FIX: DELETE the quoted clauses (the preceding 'typically focuses on budgeting, debt payoff, and money habits rather than managing investments' can stay only if attributed; otherwise soften to 'Ask what that specific person provides').
+
+F4 [date policy for the fix]  FIELD: rendered page
+  QUOTE: "updated: "2026-06-25""
+  DEFECT: F1 to F3 change rendered body copy beyond links, so the 'no date bump' basis of the approved link-only scope no longer holds for this route.
+  FIX: If F1 to F3 are applied, bump this route's visible updated date and JSON-LD dateModified to 2026-11-09 and update its manifest expectedUpdatedDate; alternatively drop only the Step 1 inbound link and leave the page unchanged, which the owner must decide.
+

@@ -1,0 +1,11 @@
+{
+ "originRoutine": "competitor-monitor-auto",
+ "queryFamily": "what does a financial advisor do / financial counselor / financial coach",
+ "hypothesis": "A dedicated primary-source explainer earns clicks for the query family the site does not answer today; unproven",
+ "primaryMetric": "GSC clicks",
+ "baseline": "unavailable (new route, not zero)",
+ "comparatorPlan": "age-matched new guides",
+ "changeScope": "new route",
+ "sourceRefreshTrigger": "Rule or credential-requirement change at the cited bodies",
+ "outcomeStatus": "not-yet-published"
+}

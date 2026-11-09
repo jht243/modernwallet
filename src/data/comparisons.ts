@@ -9752,7 +9752,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       ],
     },
     verdict:
-      "The title alone tells you almost nothing — verify credentials and fiduciary status before you trust a job title. If your need is narrow, managing a specific portfolio, a fee-only, fiduciary financial advisor is enough. If your need is broad — retirement timing, insurance gaps, tax coordination, estate basics, and investments all at once — prioritize someone with the CFP credential, since it's the one signal that requires demonstrated competence across the full financial-planning process, not just investments. Either way, confirm fiduciary status in writing and verify the person on SEC IAPD or FINRA BrokerCheck before you hire them.",
+      "The title alone tells you almost nothing — verify credentials and fiduciary status before you trust a job title. If your need is narrow, managing a specific portfolio, a fee-only, fiduciary financial advisor is enough. If your need is broad — retirement timing, insurance gaps, tax coordination, estate basics, and investments all at once — prioritize someone with the CFP credential, since it's the one signal that requires demonstrated competence across the full financial-planning process, not just investments. Either way, confirm fiduciary status in writing and verify the person on SEC IAPD or FINRA BrokerCheck before you hire them. Our guide to [what a fiduciary is](/guides/what-is-a-fiduciary/) explains the standards.",
     sections: [
       {
         heading: "Why neither title is regulated",
@@ -9767,7 +9767,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "What a financial advisor typically focuses on",
         content:
-          "In practice, \"financial advisor\" is most often used by people whose core job is managing investments: building and maintaining a portfolio, choosing funds, and rebalancing over time. Many hold a Series 65 license or work for a Registered Investment Adviser (RIA) firm, which does trigger a fiduciary duty under the Investment Advisers Act of 1940 — but that duty comes from the RIA registration, not from the word \"advisor\" itself.\n\nSome financial advisors also hold the CFP credential and do full planning work; the titles overlap in practice more than the strict definitions suggest. That overlap is exactly why checking the underlying credential and registration matters more than the label on the title.",
+          "In practice, \"financial advisor\" is most often used by people whose core job is managing investments: building and maintaining a portfolio, choosing funds, and rebalancing over time. Many hold a Series 65 license or work for a Registered Investment Adviser (RIA) firm, which does trigger a fiduciary duty under the Investment Advisers Act of 1940 — but that duty comes from the RIA registration, not from the word \"advisor\" itself.\n\nSome financial advisors also hold the CFP credential and do full planning work; the titles overlap in practice more than the strict definitions suggest. That overlap is exactly why checking the underlying credential and registration matters more than the label on the title. For a plain-language list of the services an advisor provides, see [what a financial advisor does](/guides/what-does-a-financial-advisor-do/).",
       },
       {
         heading: "Which one should you actually hire",

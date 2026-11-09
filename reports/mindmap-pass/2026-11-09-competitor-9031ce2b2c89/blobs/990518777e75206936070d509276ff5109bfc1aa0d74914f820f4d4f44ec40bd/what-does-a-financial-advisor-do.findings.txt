@@ -1,0 +1,44 @@
+PAGE /guides/what-does-a-financial-advisor-do/  | round 1 | reviewer phase4-auditor-1 | VERDICT FAIL | profile high
+Findings are source-checked against the captures in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/ and the row prompt fact list. Format per finding: QUOTE (verbatim from the draft/source), DEFECT, FIX.
+Apply with: python3 scripts/lib/content_gen.py fix --draft <draft> --findings <this file> --facts <row prompt> --floor 1200 (Rung 1) except where a finding says Rung 2 / needs added facts. Re-run Rung 0 lint and re-submit the whole page for round 2.
+
+F1 [tee-up bolted-on / page self-reference]  FIELD: introText
+  QUOTE: "At ModernWallet, we publish free calculators and plain-language money guides, and every guide we write starts from the decision in front of you, which here is who to talk to about money."
+  DEFECT: Tee-up that is a 33-word stack ending in 'which here is who to talk to about money' (page self-reference, bolted on). Fails GATE Tee-up (one clear sentence; must not read as bolted-on).
+  FIX: DELETE the sentence. Record `teeup-exempt: source-attributed regulatory explainer; no licensed first-hand framing fits this topic` in the run notes (operator register; sentence 1 stays the answer).
+
+F2 [weak-opener]  FIELD: introText
+  QUOTE: "A financial advisor typically gives you ongoing advice on buying, selling and holding investments, then monitors how those investments perform against your goals, according to [Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers)."
+  DEFECT: Sentence 1 is 33 words with a trailing attribution clause. GATE Opening sentence: the answer must be short and easy.
+  FIX: REPLACE with: "A financial advisor typically gives you ongoing advice on buying, selling and holding investments and monitors how they perform. [Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers) describes the service this way."
+
+F3 [non-sequitur section opener / required element 'who this is not for' lost]  FIELD: sections[5].body (heading 'Who a Financial Advisor Is Not For and What Would Change the Answer')
+  QUOTE: "The CFPB describes nonprofit credit counselors as the people who advise on money and debts, help with budgets, develop debt management plans and offer money management workshops."
+  DEFECT: The claim check deleted the sentences that said who an advisor is not for ('If your main problem is debt...', 'For that job, start with a credit counselor.', 'An advisor also may not fit if you want a single answer...'). What is left opens the section with a sentence that names no excluded reader, followed by a stray blank paragraph with a leading space. The required 'who this is not for' answer is missing from the section that promises it. A removed recommendation still has to be answered: label it as our judgment instead of an inference from a source.
+  FIX: REPLACE the quote with: "Our read is that an advisor is the wrong first call if your main problem is debt or a budget, because the CFPB describes nonprofit credit counselors as the people who advise on money and debts, help with budgets, develop debt management plans and offer money management workshops." Also remove the stray empty paragraph and the leading space before 'Investor.gov describes the typical adviser relationship'. If the claim check strips it again, treat as Rung 2 (restore the required element in the fact list as an explicit editorial-judgment line).
+
+F4 [faq-direct-answer]  FIELD: faqs[3].answer (question: 'Do I need a financial advisor?')
+  QUOTE: "Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) weighs cost against value."
+  DEFECT: The FAQ answer is only a pointer to another page; it does not answer 'Do I need a financial advisor?' in its first sentence.
+  FIX: REPLACE with: "It depends on whether you want ongoing advice about buying, selling and holding investments, which Investor.gov says an adviser typically provides for a fee based on the value of the assets in your account. Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) weighs that cost against the value." (fact FA2).
+
+F5 [header over a two-sentence section / duplicate pointer]  FIELD: sections[3] (heading 'Whether You Need a Financial Advisor')
+  QUOTE: "Knowing what a financial advisor does tells you what the job includes, and it does not settle whether paying for that job makes sense for you."
+  DEFECT: The whole section is two sentences that point to the worth-it guide, which the 'Who ... Is Not For' section links again. Formatting slop plus a restated link (GATE formatting slop; restatement).
+  FIX: DELETE the section 'Whether You Need a Financial Advisor' and append its second sentence ('Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) works through that cost-against-value trade-off.') to the end of the 'Financial Advisor Fees and How Advisors Get Paid' section.
+
+F6 [faq question/answer scope mismatch]  FIELD: faqs[2] (question: 'Is financial counseling free?')
+  QUOTE: "Is financial counseling free?"
+  DEFECT: The question asks about financial counseling; every statement in the answer is the CFPB's description of credit counseling. FK7 says nothing is on any source about other counselor titles. The answer silently narrows the question.
+  FIX: REPLACE the question with "Is credit counseling free?" (answer's first sentence 'Credit counseling is not always free.' then answers it directly).
+
+F7 [unnamed/incomplete source example]  FIELD: sections[1].body
+  QUOTE: "One firm's Form CRS answers the question "How do your financial professionals make money?" by saying its professionals can be paid through commissions, advisory fees or both."
+  DEFECT: The example comes from sources/crs-sample.pdf, which is J.P. Morgan Securities LLC's Client Relationship Summary. The page does not name or link that firm, so the reader cannot verify it, and the paraphrase omits what the same form says: some professionals receive a monthly minimum salary plus product revenue, and others an annual salary and bonus. 'Commissions, advisory fees or both' is therefore an incomplete summary of the source.
+  FIX: REPLACE with: "One firm's Form CRS answers the question \"How do your financial professionals make money?\" by saying it pays its financial professionals in different ways, including commissions and advisory fees." (or name J.P. Morgan Securities LLC and link its CRS, which needs that URL added to the closed list).
+
+F8 [monotone-rhythm / overloaded sentences]  FIELD: body (FAQs and sections)
+  QUOTE: "The [National Foundation for Credit Counseling (NFCC)](https://www.nfcc.org) describes credit counseling that starts with a confidential consultation and a personalized action plan, and it lists more than 1,500 NFCC certified credit counselors."
+  DEFECT: Measured with a script over intro + sections + FAQ answers (list items counted, table excluded): 81 sentences, bands S/M/L = 13/16/52. Sentences 32 to 43 (12 in a row) are all 15+ words, and sentences 66 to 77 (12 in a row) are all 15+ words. 12 sentences exceed 30 words (e.g. 41 words: 'Coach and counselor titles appear in the Financial Industry Regulatory Authority (FINRA) professional designations database, including ...').
+  FIX: Vary real sentences (no padding). Examples: split S32 into "The [National Foundation for Credit Counseling (NFCC)](https://www.nfcc.org) describes credit counseling that starts with a confidential consultation and a personalized action plan. It lists more than 1,500 NFCC certified credit counselors." (keep the full-name first mention; link stays on first mention); split S33 into "Coach and counselor titles appear in the [FINRA professional designations database](https://www.finra.org/investors/professional-designations). Examples are CFCC, CWMC, CPRC, AFC and CFC." (spell each title out on first use as now); split S76 into "Beyond that duty, services vary by adviser. Investor.gov suggests comparing what you need with what the adviser provides, any limits, what you will pay, how the adviser gets paid and what conflicts the adviser has." Re-measure: no run of 10 single-band sentences.
+

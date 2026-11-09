@@ -1,0 +1,30 @@
+PAGE /guides/what-is-a-robo-advisor/  | round 1 | reviewer phase4-auditor-1 | VERDICT FAIL | profile high
+Findings are source-checked against the captures in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/ and the row prompt fact list. Format per finding: QUOTE (verbatim from the draft/source), DEFECT, FIX.
+Apply with: python3 scripts/lib/content_gen.py fix --draft <draft> --findings <this file> --facts <row prompt> --floor 1200 (Rung 1) except where a finding says Rung 2 / needs added facts. Re-run Rung 0 lint and re-submit the whole page for round 2.
+
+F1 [tee-up / page self-reference / mislabeled link]  FIELD: introText
+  QUOTE: "At ModernWallet, we write plain-language money guides, and this one rests on the [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/glossary/robo-adviser) glossary and the [U.S. Securities and Exchange Commission (SEC)](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) investor bulletin."
+  DEFECT: 'this one rests on' is page self-reference and the sentence is a bolted-on tee-up. Link defect: the anchor 'U.S. Securities and Exchange Commission (SEC) investor bulletin' points to Investor.gov's 'Working with an Investment Professional' page, not to the bulletin (https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45).
+  FIX: DELETE the sentence (Record `teeup-exempt: source-attributed regulatory explainer; no licensed first-hand framing fits this topic` in the run notes (operator register; sentence 1 stays the answer).) and, in section 1, change the first body mention to "The [U.S. Securities and Exchange Commission (SEC) Investor Bulletin on robo-advisers](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45), published February 23, 2017, ..." so SEC is expanded and linked at its first mention.
+
+F2 [broken 'two cases' / backward pronoun]  FIELD: sections[4].body
+  QUOTE: "Our answer changes in two cases. If its questionnaire asks about your debts, real estate and outside retirement accounts, the information objection shrinks, and our [best robo-advisors roundup](/roundup/best-robo-advisors/) ranks individual providers."
+  DEFECT: The sentence announces two cases and gives one (the claim check deleted the hybrid-human case). 'its' has no antecedent. The roundup clause is an unrelated tack-on. This is a required 'what would change our answer' element left broken.
+  FIX: REPLACE with: "Our answer changes in two cases. If a robo-advisor's questionnaire asks about your debts, real estate and outside retirement accounts, the information objection shrinks. If it offers a hybrid human adviser, or a person for accounts above a minimum size you meet, the downturn objection shrinks. Our [best robo-advisors roundup](/roundup/best-robo-advisors/) ranks individual providers." (facts FB3, FB4).
+
+F3 [restatement]  FIELD: introText, sections[0].body, sections[4].body
+  QUOTE: "Whether one suits you depends on how much you want to talk to someone and on whether the questionnaire asks about everything you own and owe."
+  QUOTE: "A robo-advisor is a poor fit if you want to talk to a person when markets fall, or if your finances include debts and assets its questionnaire never asks about."
+  DEFECT: The same fit/no-fit verdict is written four times: intro paragraph 3, section 1 ('It does not fit you if you want to speak with a person ...'), section 5 opening, and the Takeaway. Each repeat restates its predecessor in different words (restatement fail) and the section 5 sentence also repeats a table row.
+  FIX: DELETE both quoted sentences. Section 5 then opens with 'The SEC bulletin also notes that in some cases robo-advisers may not have been tested under stressed market conditions.' (reword its first clause so it stands alone) and the pointer to the worth-it guide stays.
+
+F4 [backward pronoun / first-read failure]  FIELD: sections[3].body (last paragraph)
+  QUOTE: "Investor.gov calls it "really risky to invest with someone who isn't licensed" and offers a free search tool that shows whether an investment professional is licensed and registered."
+  DEFECT: 'it' follows a sentence about robo-advisors offering services like a target date fund; a reader first takes 'it' to mean the robo-advisor or the service, not investing with an unlicensed professional.
+  FIX: REPLACE with: "Investor.gov warns that investing with someone who isn't licensed is \"really risky\" and offers a free search tool that shows whether an investment professional is licensed and registered."
+
+F5 [monotone-rhythm]  FIELD: introText + sections[0..1].body
+  QUOTE: "Robo-advisors often aim to charge lower costs and fees than traditional advisory programs, and some require lower account minimums."
+  DEFECT: Measured: 76 sentences, S/M/L = 9/13/54. Sentences 4 to 19 (16 in a row) are all 15+ words. GATE Sentence rhythm: any run of 10 in one band fails.
+  FIX: Vary real sentences without padding: split S5 into "Robo-advisors often aim to charge lower costs and fees than traditional advisory programs. Some require lower account minimums." (13 and 5 words); split S17 into "You answer the questionnaire. The robo-advisor uses those answers to build and manage your portfolio." (4 and 12); shorten S13 to "The same entry says services, approaches and features vary widely." (10). Re-measure.
+

@@ -1,0 +1,2440 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" data-undergoing-maintenance="false" lang="en"  >
+<!--<![endif]-->
+<head>
+    
+
+<!-- OneTrust Cookies Consent Notice start -->
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="019977a5-aa01-73a7-b926-a8bfd300fb1c"></script>
+<script type="text/javascript">
+    function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end -->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WHZSLZ9');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Start VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script type="text/plain" id="vwoCode" class="optanon-category-C0002">
+        window._vwo_code ||
+        (function () {
+        var w=window,
+        d=document;
+        var account_id=1177090,
+        version=2.2,
+        settings_tolerance=2000,
+        hide_element='body',
+        hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important';
+        /* DO NOT EDIT BELOW THIS LINE */
+        if(f=!1,v=d.querySelector('#vwoCode'),cc={},-1<d.URL.indexOf('__vwo_disable__')||w._vwo_code)return;try{var e=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=e&&'object'==typeof e?e:{}}catch(e){}function r(t){try{return decodeURIComponent(t)}catch(e){return t}}var s=function(){var e={combination:[],combinationChoose:[],split:[],exclude:[],uuid:null,consent:null,optOut:null},t=d.cookie||'';if(!t)return e;for(var n,i,o=/(?:^|;\s*)(?:(_vis_opt_exp_(\d+)_combi=([^;]*))|(_vis_opt_exp_(\d+)_combi_choose=([^;]*))|(_vis_opt_exp_(\d+)_split=([^:;]*))|(_vis_opt_exp_(\d+)_exclude=[^;]*)|(_vis_opt_out=([^;]*))|(_vwo_global_opt_out=[^;]*)|(_vwo_uuid=([^;]*))|(_vwo_consent=([^;]*)))/g;null!==(n=o.exec(t));)try{n[1]?e.combination.push({id:n[2],value:r(n[3])}):n[4]?e.combinationChoose.push({id:n[5],value:r(n[6])}):n[7]?e.split.push({id:n[8],value:r(n[9])}):n[10]?e.exclude.push({id:n[11]}):n[12]?e.optOut=r(n[13]):n[14]?e.optOut=!0:n[15]?e.uuid=r(n[16]):n[17]&&(i=r(n[18]),e.consent=i&&3<=i.length?i.substring(0,3):null)}catch(e){}return e}();function i(){var e=function(){if(w.VWO&&Array.isArray(w.VWO))for(var e=0;e<w.VWO.length;e++){var t=w.VWO[e];if(Array.isArray(t)&&('setVisitorId'===t[0]||'setSessionId'===t[0]))return!0}return!1}(),t='a='+account_id+'&u='+encodeURIComponent(w._vis_opt_url||d.URL)+'&vn='+version+'&ph=1'+('undefined'!=typeof platform?'&p='+platform:'')+'&st='+w.performance.now();e||((n=function(){var e,t=[],n={},i=w.VWO&&w.VWO.appliedCampaigns||{};for(e in i){var o=i[e]&&i[e].v;o&&(t.push(e+'-'+o+'-1'),n[e]=!0)}if(s&&s.combination)for(var r=0;r<s.combination.length;r++){var a=s.combination[r];n[a.id]||t.push(a.id+'-'+a.value)}return t.join('|')}())&&(t+='&c='+n),(n=function(){var e=[],t={};if(s&&s.combinationChoose)for(var n=0;n<s.combinationChoose.length;n++){var i=s.combinationChoose[n];e.push(i.id+'-'+i.value),t[i.id]=!0}if(s&&s.split)for(var o=0;o<s.split.length;o++)t[(i=s.split[o]).id]||e.push(i.id+'-'+i.value);return e.join('|')}())&&(t+='&cc='+n),(n=function(){var e={},t=[];if(w.VWO&&Array.isArray(w.VWO))for(var n=0;n<w.VWO.length;n++){var i=w.VWO[n];if(Array.isArray(i)&&'setVariation'===i[0]&&i[1]&&Array.isArray(i[1]))for(var o=0;o<i[1].length;o++){var r,a=i[1][o];a&&'object'==typeof a&&(r=a.e,a=a.v,r&&a&&(e[r]=a))}}for(r in e)t.push(r+'-'+e[r]);return t.join('|')}())&&(t+='&sv='+n)),s&&s.optOut&&(t+='&o='+s.optOut);var n=function(){var e=[],t={};if(s&&s.exclude)for(var n=0;n<s.exclude.length;n++){var i=s.exclude[n];t[i.id]||(e.push(i.id),t[i.id]=!0)}return e.join('|')}();return n&&(t+='&e='+n),s&&s.uuid&&(t+='&id='+s.uuid),s&&s.consent&&(t+='&consent='+s.consent),w.name&&-1<w.name.indexOf('_vis_preview')&&(t+='&pM=true'),w.VWO&&w.VWO.ed&&(t+='&ed='+w.VWO.ed),t}code={nonce:v&&v.nonce,library_tolerance:function(){return'undefined'!=typeof library_tolerance?library_tolerance:void 0},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return performance.getEntriesByName('first-contentful-paint')[0]?'':'string'==typeof cc.hE?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){var t;f||(f=!0,(t=d.getElementById('_vis_opt_path_hides'))&&t.parentNode.removeChild(t),e&&((new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e))},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript',e.src?t.src=e.src:t.text=e.text,v&&t.setAttribute('nonce',v.nonce),d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){t=t||{};var n=new XMLHttpRequest;n.open('GET',e,!0),n.withCredentials=!t.dSC,n.responseType=t.responseType||'text',n.onload=function(){if(t.onloadCb)return t.onloadCb(n,e);200===n.status?_vwo_code.addScript({text:n.responseText}):_vwo_code.finish('&e=loading_failure:'+e)},n.onerror=function(){if(t.onerrorCb)return t.onerrorCb(e);_vwo_code.finish('&e=loading_failure:'+e)},n.send()},init:function(){var e,t=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish()},t),'body'!==this.hide_element()?(n=d.createElement('style'),e=(t=this.hide_element())?t+this.hide_element_style():'',t=d.getElementsByTagName('head')[0],n.setAttribute('id','_vis_opt_path_hides'),v&&n.setAttribute('nonce',v.nonce),n.setAttribute('type','text/css'),n.styleSheet?n.styleSheet.cssText=e:n.appendChild(d.createTextNode(e)),t.appendChild(n)):(n=d.getElementsByTagName('head')[0],(e=d.createElement('div')).style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;',e.setAttribute('id','_vis_opt_path_hides'),e.classList.add('_vis_hide_layer'),n.parentNode.insertBefore(e,n.nextSibling));var n='https://dev.visualwebsiteoptimizer.com/j.php?'+i();-1!==w.location.search.indexOf('_vwo_xhr')?this.addScript({src:n}):this.load(n+'&x=true',{l:1})}};w._vwo_code=code;code.init();})();
+    </script>
+    <!-- End VWO Async SmartCode -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>CFP Code of Ethics and Standards of Conduct | CFP Board
+</title>
+    <meta name="description" content="Learn how CFP Board’s Code of Ethics and Standards of Conduct guide ethical, fiduciary, and professional behavior for all Certified Financial Planners." />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="auth0-enabled" content="true">
+
+    
+
+    <meta property="og:url" content="https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct" />
+<meta property="og:title" content="CFP Code of Ethics and Standards of Conduct" />
+<meta property="og:description" content="Learn how CFP Board’s Code of Ethics and Standards of Conduct guide ethical, fiduciary, and professional behavior for all Certified Financial Planners." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://www.cfp.net/-/media/images/cfp-board/photos/full-width/backgrounds/1008372432.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:height" content="1280" />
+<meta property="og:image:width" content="1920" />
+<meta property="og:image:alt" content="Shot of businesspeople having a meeting in an office" />
+<meta name="contextItemId" content="222840f9-488d-47ca-80e2-727375cab107" />
+<meta name="templateID" content="06aa8fc0-29b5-4a55-a291-d90835160bc5" />
+<meta name="templateName" content="Code of Ethics and Standards Page" />
+<meta name="itemBoost" content="" />
+<meta name="ss_excludefromsearch" content="false" />
+<meta name="VisitorType" content="Candiate for CFP® Certification||Media Representative" />
+<meta name="ContentType" content="Candidate Resources||Certification Process||CFP® Professional Resources" />
+<meta name="CertificationProcess" content="Ethics" />
+
+
+        <link rel="canonical" href="https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct" />
+    <link rel="stylesheet" href="/assets/css/style.css?v=aCljhUrs" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffcc33">
+    <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoaded" defer></script></head>
+<body class="">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHZSLZ9"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+<a href="#main-content" class="skip-to-main" role="navigation" aria-label="Skip to main content">Skip to main content</a>
+
+
+<!-- components/cta-banner/cta-banner.twig -->
+<article id="js-cta-banner-id-57FC28A8625E4437978318EDEF37F197"
+         class="cta-banner js-cta-banner"
+         data-theme="yellow"
+         data-sitecore-version-num="1"
+           data-token-lifetime="1" data-token-uom="h"  >
+    <div class="cta-banner-inner">
+        <div class="cta-banner-content">
+                <div class="cta-banner-icon"><img src="/-/media/images/cfp-board/icons/gear-turning-black.svg" alt=""></div>
+            <div class="cta-banner-text">
+                <p>
+                    <span>CFP.net will be undergoing scheduled system maintenance on Monday, November 9 from 6:00 p.m. &ndash; 7:00 p.m. ET. Some features will be unavailable.</span>
+                </p>
+            </div>
+        </div>
+        <button type="button" class="cta-banner-close js-cta-banner-close"><span class="sr-text">Close Alert</span></button>
+    </div>
+</article>
+<div class="page-container">
+    <div class="page-container-inner">
+        
+
+<div class="mobile-nav">
+    <div class="mobile-nav-header">
+        <a href="/">
+            <img src="/assets/images/logo-cfp-board-black-white.svg" alt="CFP Board Logo" class="mobile-nav-logo-img" width="241" height="48">
+        </a>
+
+        <button type="button" class="mobile-nav-toggle js js-open-mobile-nav icon-hamburger" aria-haspopup="true"><span class="sr-text">Open Menu</span></button>
+    </div>
+    <div class="mobile-nav-slideout">
+        <div class="mobile-nav-slideout-header">
+            <div class="mobile-nav-slideout-header-left">
+                    <a href="/account/auth0/login" class="mobile-nav-slideout-header-left-link">My Account</a>
+                                    <a href="/account-registration" class="mobile-nav-slideout-header-left-link">Join</a>
+                <a style="display: none;" class="mobile-nav-slideout-header-left-link logout-link -hideshow-logout-link">Logout</a>
+            </div>
+            <div class="mobile-nav-slideout-header-right">
+                    <button class="mobile-nav-search-button js js-mobile-search-toggle icon-search" type="button"><span class="sr-text">Search Toggle</span></button>
+                    <button class="mobile-nav-close-button js js-mobile-nav-close icon-plus" type="button"><span class="sr-text">Search Toggle</span></button>
+            </div>
+        </div>
+        <nav class="mobile-nav-main" aria-label="Mobile">
+            <div class="mobile-nav-primary-links slidebar-container">
+                <div class="mobile-nav-slidebar"></div>
+                <ul>
+                    <li class="mobile-nav-item -white">
+                        <a href="/" class="mobile-nav-link icon-home">Home</a>
+                    </li>
+                        <li class="mobile-nav-item -white">
+                            <a href="/certification-process" class="mobile-nav-link -home" target="">Get Certified</a>
+
+                                <a href="#" class="mobile-nav-open-next-level icon-caret-right" aria-haspopup="true"><span class="sr-text">Open Sub Menu</span></a>
+                                <div class="mobile-nav-level-two" data-opened="false">
+                                    <a href="#" class="mobile-nav-back-level">Back</a>
+                                    <ul class="mobile-nav-level-two-links slidebar-container">
+                                        <div class="mobile-nav-slidebar"></div>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process" class="mobile-nav-link" target="">Certification Process</a>
+                                                    <a href="#" class="mobile-nav-open-next-level icon-caret-right" aria-haspopup="true"><span class="sr-text">Open Sub Menu</span></a>
+                                                    <div class="mobile-nav-level-three" data-opened="false">
+                                                        <a href="#" class="mobile-nav-back-level">Back</a>
+                                                        <ul class="mobile-nav-level-three-links slidebar-container">
+                                                            <div class="mobile-nav-slidebar"></div>
+                                                                <li class="mobile-nav-item">
+                                                                    <a href="/certification-process/education-requirement" class="mobile-nav-link" target="">Education</a>
+                                                                </li>
+                                                                <li class="mobile-nav-item">
+                                                                    <a href="/certification-process/exam-requirement" class="mobile-nav-link" target="">Exam</a>
+                                                                </li>
+                                                                <li class="mobile-nav-item">
+                                                                    <a href="/certification-process/experience-requirement" class="mobile-nav-link" target="">Experience</a>
+                                                                </li>
+                                                                <li class="mobile-nav-item">
+                                                                    <a href="/certification-process/ethics-requirement" class="mobile-nav-link" target="">Ethics</a>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/education-requirement" class="mobile-nav-link" target="">Education</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/exam-requirement" class="mobile-nav-link" target="">Exam</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/experience-requirement" class="mobile-nav-link" target="">Experience</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/ethics" class="mobile-nav-link" target="">Ethics</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/final-steps" class="mobile-nav-link" target="">Final Steps</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="mobile-nav-item -white">
+                            <a href="/why-get-certified" class="mobile-nav-link -home" target="">Why Get Certified</a>
+
+                                <a href="#" class="mobile-nav-open-next-level icon-caret-right" aria-haspopup="true"><span class="sr-text">Open Sub Menu</span></a>
+                                <div class="mobile-nav-level-two" data-opened="false">
+                                    <a href="#" class="mobile-nav-back-level">Back</a>
+                                    <ul class="mobile-nav-level-two-links slidebar-container">
+                                        <div class="mobile-nav-slidebar"></div>
+                                            <li class="mobile-nav-item">
+                                                <a href="/why-get-certified/the-standard-of-excellence" class="mobile-nav-link" target="">The Standard of Excellence</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/why-get-certified" class="mobile-nav-link" target="">Why Get Certified</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/why-get-certified/a-career-in-financial-planning" class="mobile-nav-link" target="">A Career in Financial Planning</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/why-get-certified/financial-planner-salary-and-stats" class="mobile-nav-link" target="">Salary &amp; Stats</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/why-get-certified/newsletter-insights" class="mobile-nav-link" target="">Newsletter Insights</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="mobile-nav-item -white">
+                            <a href="/candidate-tools-and-resources" class="mobile-nav-link -home" target="">Candidate Resources</a>
+
+                                <a href="#" class="mobile-nav-open-next-level icon-caret-right" aria-haspopup="true"><span class="sr-text">Open Sub Menu</span></a>
+                                <div class="mobile-nav-level-two" data-opened="false">
+                                    <a href="#" class="mobile-nav-back-level">Back</a>
+                                    <ul class="mobile-nav-level-two-links slidebar-container">
+                                        <div class="mobile-nav-slidebar"></div>
+                                            <li class="mobile-nav-item">
+                                                <a href="/candidate-tools-and-resources/apply-for-a-scholarship" class="mobile-nav-link" target="">Scholarships</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/candidate-tools-and-resources" class="mobile-nav-link" target="">View All Resources</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/career-center" class="mobile-nav-link" target="">Jobs &amp; Internships</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/education-requirement/certification-coursework-requirement/find-an-education-program" class="mobile-nav-link" target="">Find an Education Program</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/exam-requirement/cfp-exam-preparation" class="mobile-nav-link" target="">Exam Prep &amp; Dates</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/candidate-tools-and-resources/find-a-mentor" class="mobile-nav-link" target="">Mentorship</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/track-your-progress" class="mobile-nav-link" target="">Track Your Progress</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/candidate-tools-and-resources/candidate-forum" class="mobile-nav-link" target="">Candidate Forum</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="mobile-nav-item -white">
+                            <a href="/for-cfp-pros" class="mobile-nav-link -home" target="">For CFP&#174; Pros</a>
+
+                                <a href="#" class="mobile-nav-open-next-level icon-caret-right" aria-haspopup="true"><span class="sr-text">Open Sub Menu</span></a>
+                                <div class="mobile-nav-level-two" data-opened="false">
+                                    <a href="#" class="mobile-nav-back-level">Back</a>
+                                    <ul class="mobile-nav-level-two-links slidebar-container">
+                                        <div class="mobile-nav-slidebar"></div>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/continuing-education" class="mobile-nav-link" target="">Continuing Education (CE)</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/industry-insights" class="mobile-nav-link" target="">Insights &amp; Trends</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/ethics/our-commitment" class="mobile-nav-link" target="">Ethics</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/market-yourself" class="mobile-nav-link" target="">Market Yourself</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/get-involved" class="mobile-nav-link" target="">Get Involved</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/stay-connected" class="mobile-nav-link" target="">Stay Connected</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/career-center" class="mobile-nav-link" target="">Career Center</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/financial-planner-compensation-trends" class="mobile-nav-link" target="">Compensation Trends</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros" class="mobile-nav-link" target="">View All Resources</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                        </li>
+                </ul>
+                <ul>
+                            <li class="mobile-nav-item -light-gray">
+                                <a href="/about-cfp-board" target="" class="mobile-nav-link">About CFP Board</a>
+                            </li>
+                                                <li class="mobile-nav-item -light-gray">
+                                <a href="/for-education-partners/registered-programs" target="" class="mobile-nav-link">For Registered Programs</a>
+                            </li>
+                            <li class="mobile-nav-item -light-gray">
+                                <a href="/for-education-partners/continuing-education-providers" target="" class="mobile-nav-link">For CE Providers</a>
+                            </li>
+                            <li class="mobile-nav-item -light-gray">
+                                <a href="/for-employers" target="" class="mobile-nav-link">For Employers</a>
+                            </li>
+                            <li class="mobile-nav-item -light-gray">
+                                <a href="/for-media" target="" class="mobile-nav-link">For Media</a>
+                            </li>
+                </ul>
+                <ul>
+                            <li class="mobile-nav-item -gray">
+                                <a href="/news" target="" class="mobile-nav-link">News</a>
+                            </li>
+                            <li class="mobile-nav-item -gray">
+                                <a href="/events" target="" class="mobile-nav-link">Events</a>
+                            </li>
+                            <li class="mobile-nav-item -gray">
+                                <a href="/verify-a-cfp-professional" target="" class="mobile-nav-link">Verify a CFP&#174; Professional</a>
+                            </li>
+                            <li class="mobile-nav-item -gray">
+                                <a href="/contact" target="" class="mobile-nav-link">Contact</a>
+                            </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mobile-nav-slideout-footer">
+                <a href="https://login.cfp.net/eweb/dynamicpage.aspx?webcode=OnlineDonation&formcode=CFPDonate" class="mobile-nav-slideout-footer-button -donate">Donate</a>
+                            <a href="https://www.letsmakeaplan.org/"
+                   target="_blank" class="mobile-nav-slideout-footer-button">Find a CFP&#174; Professional</a>
+        </div>
+    </div>
+    <div class="mobile-nav-search-slideout" data-mobile-search-open="false">
+        <div class="mobile-nav-slideout-header">
+            <div class="mobile-nav-slideout-header-left">
+                <div class="mobile-nav-slideout-header-left-text">Search CFP Board</div>
+            </div>
+            <div class="mobile-nav-slideout-header-right">
+                <button type="button" class="mobile-nav-close-button js js-mobile-search-close icon-plus"><span class="sr-text">Search Toggle</span></button>
+            </div>
+        </div>
+        <div class="mobile-nav-main">
+            <div class="mobile-nav-search" data-action="/search" data-method="get">
+                <div class="mobile-nav-search-inner">
+                        <input class="js-search-field" type="search" id="search-input-mobile" name="q"
+                               title="Search"
+                               placeholder="Search by keyword…"
+                               required>
+                        <button type="button" class="button js icon-search js-search-submit"><span class="sr-text">Submit</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="module" src="/assets/react/search/index.js?v=aCljhUrs"></script>
+
+        
+
+<!-- components/site-header/site-header.twig -->
+<header class="site-header" data-url-prefix="">
+    <div class="site-header-inner">
+        <div class="site-header-logo">
+            <a href="/">
+                <img src="/assets/images/logo-cfp-board-black-white.svg" loading="lazy" width="241" height="48" alt="CFP Board Logo" class="site-header-logo-img">
+                <div href="/" class="site-header-logo-sticky" aria-hidden="true">
+                    <img src="/assets/images/logo-cfp-board-yellow.svg" loading="lazy" width="206" height="41" alt="CFP Board Logo" class="site-header-logo-img-sticky">
+                </div>
+            </a>
+        </div>
+
+        <div class="site-header-right">
+            <ul class="site-header-right-top">
+
+                <!-- About Links -->
+                    <li class="site-header-main-nav-item -has-children">
+                            <button class="site-header-main-nav-link -has-children" type="button">About CFP Board</button>
+                                                    <div class="site-header-main-nav-dropdown">
+                                <div class="site-header-main-nav-dropdown-slidebar"></div>
+                                <ul>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board">Who We Are</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board/our-initiatives">Our Initiatives</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board/governance">Governance</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board/competency-standards">Competency Standards for CFP&#174; Certification</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board/our-initiatives/driving-public-policy">Public Policy</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/industry-insights/reports-and-statistics">Research &amp; Reports</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/cfp-board-center-for-financial-planning">CFP Board Center for Financial Planning</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board/financial-planning-hall-of-fame">Financial Planning Hall of Fame</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board/work-at-cfp-board">Careers at CFP Board</a>
+
+                                        </li>
+                                </ul>
+                                                            </div>
+                    </li>
+                                    <li class="site-header-right-top-welcome -hideshow-welcome">Welcome <span></span></li>
+                                    <li>
+                        <a href="/account/auth0/login" class="site-header-right-top-link -bold">My Account</a>
+                    </li>
+                                    <li>
+                        <a href="/account-registration" class="site-header-right-top-link -bold">Join</a>
+                    </li>
+
+                                    <li>
+                        <a href="https://login.cfp.net/eweb/dynamicpage.aspx?webcode=OnlineDonation&formcode=CFPDonate" class="site-header-right-top-link donate-btn">
+                            <span class='pulsing-icon'>
+                                <span class="button-ripple"></span>
+                                <svg class="icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7949 1.22336C12.1635 -0.407567 9.50961 -0.407567 7.87868 1.22336L7.49987 1.60196L7.12128 1.22336C5.49035 -0.407787 2.83622 -0.407787 1.2053 1.22336C-0.39252 2.82118 -0.402896 5.35389 1.18123 7.11484C2.62607 8.72038 6.88728 12.1891 7.06807 12.3359C7.19081 12.4357 7.3385 12.4842 7.4853 12.4842C7.49016 12.4842 7.49501 12.4842 7.49965 12.484C7.65153 12.4911 7.80451 12.439 7.93122 12.3359C8.11202 12.1891 12.3737 8.72038 13.8189 7.11462C15.4029 5.35389 15.3925 2.82118 13.7949 1.22336Z" fill="#FFCC33" />
+                                    <path d="M13.7949 1.22336C12.1635 -0.407567 9.50961 -0.407567 7.87868 1.22336L7.49987 1.60196L7.12128 1.22336C5.49035 -0.407788 2.83622 -0.407788 1.2053 1.22336C-0.39252 2.82118 -0.402896 5.35389 1.18123 7.11484C2.62607 8.72038 6.88728 12.1891 7.06807 12.3359C7.19081 12.4357 7.3385 12.4842 7.4853 12.4842C7.49016 12.4842 7.49501 12.4842 7.49965 12.484C7.65153 12.4911 7.80451 12.439 7.93122 12.3359C8.11202 12.1891 12.3737 8.72038 13.8189 7.11462C15.4029 5.35389 15.3925 2.82118 13.7949 1.22336ZM12.8344 6.22873C11.7079 7.48019 8.61136 10.0612 7.49965 10.9771C6.38793 10.0615 3.29208 7.48063 2.1658 6.22896C1.0607 5.00068 1.05033 3.25143 2.14173 2.16002C2.69914 1.60284 3.43116 1.32403 4.16318 1.32403C4.89519 1.32403 5.62721 1.60262 6.18462 2.16002L7.0173 2.9927C7.11642 3.09182 7.24137 3.15099 7.37249 3.17174C7.5853 3.21743 7.81621 3.15805 7.98177 2.99293L8.8149 2.16002C9.92993 1.04544 11.7436 1.04566 12.858 2.16002C13.9494 3.25143 13.939 5.00068 12.8344 6.22873Z" fill="#333333" />
+                                </svg>
+                            </span>
+                            Donate
+                        </a>
+                    </li>
+                <!-- Header Top Link (Find a CFP Professional)-->
+                <li>
+                    <a href="https://www.letsmakeaplan.org/" class="site-header-right-top-link -black -bold">Find a CFP&reg; Professional</a>
+                </li>
+
+            </ul>
+
+            <div class="site-header-right-bottom">
+                <!-- begin primary nav -->
+                <nav class="site-header-main-nav" aria-label="Primary">
+                    <ul class="site-header-main-nav-list">
+                            <li class="site-header-main-nav-item -has-children">
+                                    <button class="site-header-main-nav-link -has-children" type="button">Get Certified</button>
+                                                                    <div class="site-header-main-nav-dropdown -has-promo">
+                                        <div class="site-header-main-nav-dropdown-slidebar"></div>
+                                        <ul class="dropdown-ul">
+
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process">Certification Process</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/education-requirement">Education</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/exam-requirement">Exam</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/experience-requirement">Experience</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/ethics">Ethics</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/final-steps">Final Steps</a>
+
+
+                                                    </li>
+                                        </ul>
+                                            <div class="site-header-main-nav-promo js-card-link">
+                                                    <div class="icon icon-user" aria-hidden="true"></div>
+                                                <div class="text">
+                                                                                                            <h3>Track Your Progress</h3>
+
+                                                        <p>Start your journey to CFP&#174; certification</p>
+                                                                                                    </div>
+                                                    <a href="/account-registration" class="button">
+                                                        Create Your Free Account
+                                                    </a>
+                                            </div>
+                                                                            </div>
+                            </li>
+                            <li class="site-header-main-nav-item -has-children">
+                                    <button class="site-header-main-nav-link -has-children" type="button">Why Get Certified</button>
+                                                                    <div class="site-header-main-nav-dropdown -has-promo -i-am-a">
+                                        <div class="site-header-main-nav-dropdown-slidebar"></div>
+                                        <ul class="dropdown-ul">
+
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/why-get-certified/the-standard-of-excellence">The Standard of Excellence</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/why-get-certified">Why Get Certified</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/why-get-certified/a-career-in-financial-planning">A Career in Financial Planning</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/why-get-certified/financial-planner-salary-and-stats">Salary &amp; Stats</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/why-get-certified/newsletter-insights">Newsletter Insights</a>
+
+
+                                                    </li>
+                                        </ul>
+                                            <div class="site-header-main-nav-promo">
+                                                <div class="text">
+                                                        <div class="i-am-a-title">I am a...</div>
+                                                    
+                                                                                                            <ul class="promo-ul">
+                                                                <li>
+                                                                    <a href="/why-get-certified/for-students">Student</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/why-get-certified/for-career-changers">Career Changer</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/why-get-certified/for-financial-professionals">Financial Professional</a>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                                                            </div>
+                            </li>
+                            <li class="site-header-main-nav-item -has-children">
+                                    <button class="site-header-main-nav-link -has-children" type="button">Candidate Resources</button>
+                                                                    <div class="site-header-main-nav-dropdown -has-promo">
+                                        <div class="site-header-main-nav-dropdown-slidebar"></div>
+                                        <ul class="dropdown-ul">
+
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/candidate-tools-and-resources/apply-for-a-scholarship">Scholarships</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item -has-button-style">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/candidate-tools-and-resources">View All Resources</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/career-center">Jobs &amp; Internships</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/education-requirement/certification-coursework-requirement/find-an-education-program">Find an Education Program</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/exam-requirement/cfp-exam-preparation">Exam Prep &amp; Dates</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/candidate-tools-and-resources/find-a-mentor">Mentorship</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/track-your-progress">Track Your Progress</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/candidate-tools-and-resources/candidate-forum">Candidate Forum</a>
+
+
+                                                    </li>
+                                        </ul>
+                                            <div class="site-header-main-nav-promo js-card-link">
+                                                    <div class="icon icon-user" aria-hidden="true"></div>
+                                                <div class="text">
+                                                                                                            <h3>Continue Your CFP&#174; Certification</h3>
+
+                                                                                                    </div>
+                                                    <a href="https://www.cfp.net/account/auth0/login" class="button">
+                                                        Login to Your Account
+                                                    </a>
+                                            </div>
+                                                                            </div>
+                            </li>
+                            <li class="site-header-main-nav-item -has-children">
+                                    <button class="site-header-main-nav-link -has-children" type="button">For CFP&#174; Pros</button>
+                                                                    <div class="site-header-main-nav-dropdown -has-promo">
+                                        <div class="site-header-main-nav-dropdown-slidebar"></div>
+                                        <ul class="dropdown-ul">
+
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/continuing-education">Continuing Education (CE)</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/industry-insights">Insights &amp; Trends</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/ethics/our-commitment">Ethics</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/market-yourself">Market Yourself</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/get-involved">Get Involved</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/stay-connected">Stay Connected</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/career-center">Career Center</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/financial-planner-compensation-trends">Compensation Trends</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item -has-button-style">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros">View All Resources</a>
+
+
+                                                    </li>
+                                        </ul>
+                                            <div class="site-header-main-nav-promo js-card-link">
+                                                    <div class="icon icon-user" aria-hidden="true"></div>
+                                                <div class="text">
+                                                                                                            <h3>Understanding the New Competency Standards</h3>
+
+                                                        <p>What’s changing, when and who it affects.</p>
+                                                                                                    </div>
+                                                    <a href="/about-cfp-board/competency-standards" class="button">
+                                                        Learn More
+                                                    </a>
+                                            </div>
+                                                                            </div>
+                            </li>
+                    </ul>
+                </nav>
+
+
+				<div class="site-header-search">
+                        <button class="site-header-search-button js js-search-toggle icon-search" type="button"><span class="sr-text">Search Toggle</span></button>
+				</div>
+
+				<!-- Search -->
+				<div data-action="/search" data-method="get" class="site-header-search-container">
+					<div class="site-header-search-container-inner">
+						    <input class="js-search-field" type="text" id="search-input-header" name="q" title="Search" placeholder="Search by keyword...">
+						    <input class="button -black js-search-submit" type="button" title="Search" value="Search">
+						<a href="#" class="js-search-input-close icon-close"><span class="sr-text">Close Search</span></a>
+					</div>
+				</div>
+
+                <div class="site-header-utility-nav">
+                    <button class="site-header-utility-nav-button js-utility-nav-toggle js icon-hamburger" type="button"><span class="sr-text">Menu Toggle</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Utility nav dropdown -->
+<div class="site-header-main-nav-dropdown -utility-menu">
+
+    <a href="#" class="js-utility-nav-close icon-close"><span class="sr-text">Close Menu</span></a>
+    <div class="site-header-main-nav-dropdown-slidebar"></div>
+    <ul class="site-header-utility-nav-top">
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/for-education-partners/registered-programs" target="">For Registered Programs</a>
+            </li>
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/for-education-partners/continuing-education-providers" target="">For CE Providers</a>
+            </li>
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/for-employers" target="">For Employers</a>
+            </li>
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/for-media" target="">For Media</a>
+            </li>
+    </ul>
+    <ul class="site-header-utility-nav-bottom">
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/news" target="">News</a>
+            </li>
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/events" target="">Events</a>
+            </li>
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/verify-a-cfp-professional" target="">Verify a CFP&#174; Professional</a>
+            </li>
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/contact" target="">Contact</a>
+            </li>
+    </ul>
+        <div class="site-header-utility-nav-donate-button-item">
+            <a href="https://login.cfp.net/eweb/dynamicpage.aspx?webcode=OnlineDonation&formcode=CFPDonate" class="button site-header-utility-nav-donate-button">
+                <img src="/assets/images/heart.svg" aria-hidden="true" alt="">
+                Donate
+            </a>
+        </div>
+</div>
+<script type="module" src="/assets/react/search/index.js?v=aCljhUrs"></script>
+
+        <main id="main-content" aria-label="Page Content">
+            
+
+
+<div class="hero-detail" data-overlap="false" data-bc-length="full" data-bc-color="white" data-has-image="true">
+    
+
+
+<div class="breadcrumbs">
+    <div class="breadcrumbs-inner">
+        <ul class="breadcrumbs-container">
+            <li class="breadcrumbs-wrapper -home"><a href="/" class="breadcrumbs-link"><span class="sr-text">Home</span></a></li>
+                        <li class="breadcrumbs-wrapper -has-children">
+                            <a href="/ethics" class="breadcrumbs-link -has-children">Ethics</a>
+                                <ul class="breadcrumbs-dropdown">
+                                        <li class="breadcrumbs-child"><a href="/ethics/our-commitment" class="breadcrumbs-child-link" tabindex="0">Our Commitment</a></li>
+                                        <li class="breadcrumbs-child"><a href="/ethics/code-of-ethics-and-standards-of-conduct" class="breadcrumbs-child-link" tabindex="0">Code of Ethics and Standards of Conduct</a></li>
+                                        <li class="breadcrumbs-child"><a href="/ethics/compliance-resources" class="breadcrumbs-child-link" tabindex="0">Compliance Resources</a></li>
+                                        <li class="breadcrumbs-child"><a href="/ethics/enforcement" class="breadcrumbs-child-link" tabindex="0">Enforcement</a></li>
+                                        <li class="breadcrumbs-child"><a href="/ethics/file-a-complaint" class="breadcrumbs-child-link" tabindex="0">File a Complaint</a></li>
+                                        <li class="breadcrumbs-child"><a href="/ethics/reporting" class="breadcrumbs-child-link" tabindex="0">Reporting</a></li>
+                                </ul>
+                        </li>
+
+            <li class="breadcrumbs-wrapper -current">
+                <a href="/ethics/code-of-ethics-and-standards-of-conduct" class="breadcrumbs-link ">
+                    Code of Ethics and Standards of Conduct
+                </a>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+        <div class="hero-detail-bg" style="background-image: url('/-/media/images/cfp-board/photos/full-width/backgrounds/1008372432.jpg?cx=0&cy=0&cw=1920&ch=800&hash=BF93C51CA80C1FD91E1FDC4D398AE175');">
+            <div class="hero-detail-bg-left"></div>
+            <div class="hero-detail-bg-right"></div>
+        </div>
+
+    <div class="hero-detail-inner" style="">
+        <div class="hero-detail-content">
+            <div class="hero-detail-eyebrow">
+                            <div class="eyebrow -white -center">Ethics</div>
+            </div>
+            <h1 class="h2 -white hero-detail-title">
+Code of Ethics and Standards of Conduct            </h1>
+
+                    <div class="-white hero-detail-text wysiwyg-content">
+<p>CFP Board's <em>Code of Ethics and Standards of Conduct</em> reflects the commitment that all CFP&reg; professionals make to high standards of competency and ethics.</p>                    </div>
+
+
+
+        </div>
+        
+    </div>
+    
+
+</div>
+
+            
+
+
+<div class="content-with-sidebar">
+    <div class="content-with-sidebar-inner">
+        <article class="content-with-sidebar-main">
+            
+
+
+
+<div class="code-standards">
+    <a href="#" class="code-standards-toc-toggle">
+        Browse Sections<span class="code-standards-toc-toggle-icons"></span>
+    </a>
+
+    
+    <div class="code-standards-toc">
+        <div class="code-standards-toc-heading">
+            Table of Contents
+            <a href="#" class="js-close-toc icon-plus">
+                <span class="sr-text">
+                    Close Table of Contents
+                </span>
+            </a>
+        </div>
+        <ol class="code-standards-toc-parents">
+                <li>
+                    <a class="code-standards-toc-link"
+                       href="#Preamble">
+                        Preamble
+                    </a>
+
+
+                </li>
+                <li>
+                    <a class="code-standards-toc-link"
+                       href="#Code-of-Ethics">
+                        Code of Ethics
+                    </a>
+
+
+                </li>
+                <li>
+                    <a class="code-standards-toc-link"
+                       href="#Standards-of-Conduct">
+                        Standards of Conduct
+                    </a>
+
+
+                        <ol class="code-standards-toc-children">
+                                <li>
+                                    <a class="code-standards-toc-link"
+                                       href="#Duties-Owed-To-Clients">
+                                        Duties Owed To Clients
+                                    </a>
+
+
+                                        <ol class="code-standards-toc-grandchildren">
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Fiduciary-Duty">
+                                                        Fiduciary Duty
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Integrity">
+                                                        Integrity
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Competence">
+                                                        Competence
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Diligence">
+                                                        Diligence
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Disclose-and-Manage-Conflicts-of-Interest">
+                                                        Disclose and Manage Conflicts of Interest
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Sound-and-Objective-Professional-Judgment">
+                                                        Sound and Objective Professional Judgment
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Professionalism">
+                                                        Professionalism
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Comply-With-the-Law">
+                                                        Comply With the Law
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Confidentiality-and-Privacy">
+                                                        Confidentiality and Privacy
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Provide-Information-to-a-Client">
+                                                        Provide Information to a Client
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Duties-When-Communicating-With-a-Client">
+                                                        Duties When Communicating With a Client
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Duties-When-Representing-Compensation-Method">
+                                                        Duties When Representing Compensation Method
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#DutiesWhenRecommendingEngagingandWorkingWithAdditionalPersons">
+                                                        Duties When Recommending, Engaging, and Working With Additional Persons
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#DutiesWhenSelectingUsingandRecommendingTechnology">
+                                                        Duties When Selecting, Using, and Recommending Technology
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Refrain-From-Borrowing-or-Lending-Money-and-Commingling-Financial-Assets">
+                                                        Refrain From Borrowing or Lending Money and Commingling Financial Assets
+                                                    </a>
+                                                </li>
+
+                                        </ol>
+                                </li>
+                                <li>
+                                    <a class="code-standards-toc-link"
+                                       href="#Financial-Planning-and-Application-of-the-Practice-Standards-for-the-Financial-Planning-Process">
+                                        Financial Planning and Application of the Practice Standards for the Financial Planning Process
+                                    </a>
+
+
+                                        <ol class="code-standards-toc-grandchildren">
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Financial-Planning-Definition">
+                                                        Financial Planning Definition
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Examples-of-Relevant-Elements-of-the-Clients-Personal-and-Financial-Circumstances">
+                                                        Examples of Relevant Elements of the Client’s Personal and Financial Circumstances
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Application-of-Practice-Standards">
+                                                        Application of Practice Standards
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Integration-Factors">
+                                                        Integration Factors
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#CFP-Board-Evaluation">
+                                                        CFP Board Evaluation
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#No-Client-Agreement-to-Engage-for-Financial-Planning">
+                                                        No Client Agreement to Engage for Financial Planning
+                                                    </a>
+                                                </li>
+
+                                        </ol>
+                                </li>
+                                <li>
+                                    <a class="code-standards-toc-link"
+                                       href="#Practice-Standards-for-The-Financial-Planning-Process">
+                                        Practice Standards for The Financial Planning Process
+                                    </a>
+
+
+                                        <ol class="code-standards-toc-grandchildren">
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Understanding-the-Clients-Personal-and-Financial-Circumstances">
+                                                        Understanding the Client’s Personal and Financial Circumstances
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Identifying-and-Selecting-Goals">
+                                                        Identifying and Selecting Goals
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#AnalyzingtheClientsCurrentCourseofActionandPotentialAlternativeCoursesofAction">
+                                                        Analyzing the Client’s Current Course of Action and Potential Alternative Course(s) of Action
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#DevelopingtheFinancialPlanningRecommendations">
+                                                        Developing the Financial Planning Recommendation(s)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#PresentingtheFinancialPlanningRecommendations">
+                                                        Presenting the Financial Planning Recommendation(s)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#ImplementingtheFinancialPlanningRecommendations">
+                                                        Implementing the Financial Planning Recommendation(s)
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Monitoring-Progress-and-Updating">
+                                                        Monitoring Progress and Updating
+                                                    </a>
+                                                </li>
+
+                                        </ol>
+                                </li>
+                                <li>
+                                    <a class="code-standards-toc-link"
+                                       href="#Duties-Owed-to-Firms-and-Subordinates">
+                                        Duties Owed to Firms and Subordinates
+                                    </a>
+
+
+                                        <ol class="code-standards-toc-grandchildren">
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Use-Reasonable-Care-When-Supervising">
+                                                        Use Reasonable Care When Supervising
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Comply-with-Lawful-Objectives-of-CFP-Professionals-Firm">
+                                                        Comply with Lawful Objectives of CFP&#174; Professional’s Firm
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Provide-Notice-of-Public-Discipline">
+                                                        Provide Notice of Public Discipline
+                                                    </a>
+                                                </li>
+
+                                        </ol>
+                                </li>
+                                <li>
+                                    <a class="code-standards-toc-link"
+                                       href="#Duties-Owed-to-CFP-Board">
+                                        Duties Owed to CFP Board
+                                    </a>
+
+
+                                        <ol class="code-standards-toc-grandchildren">
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Definitions">
+                                                        Definitions
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Refrain-from-Adverse-Conduct">
+                                                        Refrain from Adverse Conduct
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Reporting">
+                                                        Reporting
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Provide-Narrative-Statement">
+                                                        Provide Narrative Statement
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Cooperation">
+                                                        Cooperation
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="code-standards-toc-link"
+                                                       href="#Compliance-with-Terms-and-Conditions-of-Certification-and-Trademark-License">
+                                                        Compliance with Terms and Conditions of Certification and Trademark License
+                                                    </a>
+                                                </li>
+
+                                        </ol>
+                                </li>
+                                <li>
+                                    <a class="code-standards-toc-link"
+                                       href="#Prohibition-on-Circumvention">
+                                        Prohibition on Circumvention
+                                    </a>
+
+
+                                </li>
+                        </ol>
+                </li>
+            <li>
+                
+                <a class="code-standards-toc-link"
+                   href="#glossary-section">
+                    Glossary
+                </a>
+            </li>
+        </ol>
+    </div>
+
+    
+    <div class="code-standards-inner">
+        <ol class="code-standards-parent-list">
+                <li>
+                        <h2 class="h3 -black code-standards-parent-list-heading"
+                            id="Preamble">
+                            Preamble
+                        </h2>
+                            <div class="code-standards-content wysiwyg-content">
+                                <p>CFP Board&rsquo;s <em>Code of Ethics and Standards of Conduct </em>reflects the commitment that all CFP&reg; professionals make to high standards of competency and ethics. CFP Board&rsquo;s <em>Code and Standards</em> benefits and protects the public, provides standards for delivering financial planning, and advances financial planning as a distinct and valuable profession. Compliance with the <em>Code and Standards</em> is a requirement of CFP&reg; certification that is critical to the integrity of the CFP&reg; marks. Violations of the <em>Code and Standards</em> may subject a CFP&reg; professional to discipline.</p>
+                            </div>
+
+
+                </li>
+                <li>
+                        <h2 class="h3 -black code-standards-parent-list-heading"
+                            id="Code-of-Ethics">
+                            Code of Ethics
+                        </h2>
+                            <div class="code-standards-content wysiwyg-content">
+                                <p>A CFP<sup>&reg;</sup> professional must:</p>
+<ul class="gray-blocks">
+    <li>1. Act with honesty, integrity, competence, and diligence.</li>
+    <li>2. Act in the client&rsquo;s best interests.</li>
+    <li>3. Exercise due care.</li>
+    <li>4. Avoid or disclose and manage conflicts of interest.</li>
+    <li>5. Maintain the confidentiality and protect the privacy of client information.</li>
+    <li>6. Act in a manner that reflects positively on the financial planning profession and CFP&reg; certification.</li>
+</ul>
+                            </div>
+
+
+                </li>
+                <li>
+                        <h2 class="h3 -black code-standards-parent-list-heading"
+                            id="Standards-of-Conduct">
+                            Standards of Conduct
+                        </h2>
+                            <div class="code-standards-content wysiwyg-content">
+                                &nbsp;
+                            </div>
+
+
+                        <ol type="A" class="code-standards-child-list">
+                                <li class="h4">
+                                        <h3 class="h4 code-standards-child-list-heading"
+                                            id="Duties-Owed-To-Clients">
+                                            Duties Owed To Clients
+                                        </h3>
+                                            <div class="code-standards-content wysiwyg-content">
+                                                <p>&nbsp;</p>
+                                            </div>
+
+
+                                        <ol class="code-standards-grandchild-list">
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Fiduciary-Duty">
+                                                            Fiduciary Duty
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>At all times when providing Financial Advice to a Client, a CFP<sup>&reg;</sup> professional must act as a fiduciary, and therefore, act in the best interests of the Client. The following duties must be fulfilled: </p>
+<ol>
+    <li><strong>Duty of Loyalty.</strong> A CFP<sup>&reg;</sup> professional must:
+    <ol>
+        <li>Place the interests of the Client above the interests of the CFP<sup>&reg;</sup> professional and the CFP<sup>&reg;</sup> Professional&rsquo;s Firm;</li>
+        <li>Avoid Conflicts of Interest, or fully disclose Material Conflicts of Interest to the Client, obtain the Client&rsquo;s informed consent, and properly manage the conflict; and</li>
+        <li>Act without regard to the financial or other interests of the CFP<sup>&reg;</sup> professional, the CFP<sup>&reg;</sup> Professional&rsquo;s Firm, or any individual or entity other than the Client, which means that a CFP<sup>&reg;</sup> professional acting under a Conflict of Interest continues to have a duty to act in the best interests of the Client and place the Client&rsquo;s interests above the CFP<sup>&reg;</sup> professional&rsquo;s.</li>
+    </ol>
+    </li>
+    <li><strong>Duty of Care.</strong> A CFP<sup>&reg;</sup> professional must act with the care, skill, prudence, and diligence that a prudent professional would exercise in light of the Client&rsquo;s goals, risk tolerance, objectives, and financial and personal circumstances.</li>
+    <li><strong>Duty to Follow Client Instructions.</strong> A CFP<sup>&reg;</sup> professional must comply with all objectives, policies, restrictions, and other terms of the Engagement and all reasonable and lawful directions of the Client.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Integrity">
+                                                            Integrity
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <ol>
+    <li>A CFP<sup>&reg;</sup> professional must perform Professional Services with integrity. Integrity demands honesty and candor, which may not be subordinated to personal gain or advantage. Allowance may be made for innocent error and legitimate differences of opinion, but integrity cannot co-exist with deceit or subordination of principle.</li>
+    <li>A CFP<sup>&reg;</sup> professional may not, directly or indirectly, in the conduct of Professional Services:
+    <ol>
+        <li>Employ any device, scheme, or artifice to defraud;</li>
+        <li>Make any untrue statement of a material fact or omit to state a material fact necessary in order to make the statements made, in the light of the circumstances under which they were made, not misleading; or</li>
+        <li>Engage in any act, practice, or course of business which operates or would operate as a fraud or deceit upon any person.</li>
+    </ol>
+    </li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Competence">
+                                                            Competence
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional must provide Professional Services with competence, which means with relevant knowledge and skill to apply that knowledge. When the CFP<sup>&reg;</sup> professional is not sufficiently competent in a particular area to provide the Professional Services required under the Engagement, the CFP<sup>&reg;</sup> professional must gain competence, obtain the assistance of a competent professional, limit or terminate the Engagement, and/or refer the Client to a competent professional. The CFP<sup>&reg;</sup> professional shall describe to the Client any requested Professional Services that the CFP<sup>&reg;</sup> professional will not be providing.</p>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Diligence">
+                                                            Diligence
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional must provide Professional Services, including responding to reasonable Client inquiries, in a timely and thorough manner.</p>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Disclose-and-Manage-Conflicts-of-Interest">
+                                                            Disclose and Manage Conflicts of Interest
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <ol>
+    <li><strong>Disclose Conflicts.</strong> When providing FinancialAdvice, a CFP<sup>&reg;</sup> professional must make full disclosure of all Material Conflicts of Interest with the CFP<sup>&reg;</sup> professional&rsquo;s Client that could affect the professional relationship. This obligation requires the CFP<sup>&reg;</sup> professional to provide the Client with sufficiently specific facts so that a reasonable Client would be able to understand the CFP<sup>&reg;</sup> professional&rsquo;s Material Conflicts of Interest and the business practices that give rise to the conflicts, and give informed consent to such conflicts or reject them. A sincere belief by a CFP<sup>&reg;</sup> professional with a Material Conflict of Interest that he or she is acting in the best interests of the Client is insufficient to excuse failure to make full disclosure.
+    <ol>
+        <li>A CFP<sup>&reg;</sup> professional must make full disclosure and obtain the consent of the Client before providing any Financial Advice regarding which the CFP<sup>&reg;</sup> professional has a Material Conflict of Interest.</li>
+        <li>In determining whether the disclosure about a Material Conflict of Interest provided to the Client was sufficient to infer that a Client has consented to a Material Conflict of Interest, CFP Board will evaluate whether a reasonable Client receiving the disclosure would have understood the conflict and how it could affect the advice the Client will receive from the CFP<sup>&reg;</sup> professional. The greater the potential harm the conflict presents to the Client, and the more significantly a business practice that gives rise to the conflict departs from commonly accepted practices among CFP<sup>&reg;</sup> professionals, the less likely it is that CFP Board will infer informed consent absent clear evidence of informed consent. Ambiguity in the disclosure provided to the Client will be interpreted in favor of the Client.</li>
+        <li>Evidence of oral disclosure of a conflict will be given such weight as CFP Board in its judgment deems appropriate. Written consent to a conflict is not required.</li>
+    </ol>
+    </li>
+    <li><strong>Manage Conflicts.</strong> A CFP<sup>&reg;</sup> professional must adopt and follow business practices reasonably designed to prevent Material Conflicts of Interest from compromising the CFP<sup>&reg;</sup> professional&rsquo;s ability to act in the Client&rsquo;s best interests.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Sound-and-Objective-Professional-Judgment">
+                                                            Sound and Objective Professional Judgment
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional must exercise professional judgment on behalf of the Client that is not subordinated to the interest of the CFP<sup>&reg;</sup> professional or others. A CFP<sup>&reg;</sup> professional may not solicit or accept any gift, gratuity, entertainment, non-cash compensation, or other consideration that reasonably could be expected to compromise the CFP<sup>&reg;</sup> professional&rsquo;s objectivity.</p>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Professionalism">
+                                                            Professionalism
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional must treat Clients, prospective Clients, fellow professionals, and others with dignity, courtesy, and respect.</p>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Comply-With-the-Law">
+                                                            Comply With the Law
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <ol>
+    <li>A CFP<sup>&reg;</sup> professional must comply with the laws, rules, and regulations governing Professional Services.</li>
+    <li>A CFP<sup>&reg;</sup> professional may not intentionally or recklessly participate or assist in another person&rsquo;s violation of these Standards or the laws, rules, or regulations governing Professional Services.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Confidentiality-and-Privacy">
+                                                            Confidentiality and Privacy
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <ol>
+    <li>A CFP<sup>&reg;</sup> professional must keep confidential and may not disclose any non-public personal information about any prospective, current, or former Client (&ldquo;client&rdquo;), except that the CFP<sup>&reg;</sup> professional may disclose information:
+    <ol>
+        <li>For ordinary business purposes:
+        <ol>
+            <li>With the client&rsquo;s consent, so long as the client has not withdrawn the consent;</li>
+            <li>To a CFP<sup>&reg;</sup> Professional&rsquo;s Firm or other persons with whom the CFP<sup>&reg;</sup> professional is providing services to or for the client, when necessary to perform those services;</li>
+            <li>As necessary to provide information to the CFP<sup>&reg;</sup> professional&rsquo;s attorneys, accountants, and auditors; and</li>
+            <li>To a person acting in a representative capacity on behalf of the client;</li>
+        </ol>
+        </li>
+        <li>For legal and enforcement purposes:
+        <ol>
+            <li>To law enforcement authorities concerning suspected unlawful activities, to the extent permitted by the law;</li>
+            <li>As required to comply with federal, state, or local law;</li>
+            <li>As required to comply with a properly authorized civil, criminal, or regulatory investigation or examination, or subpoena or summons, by a governmental authority;</li>
+            <li>As necessary to defend against allegations of wrongdoing made by a governmental authority;</li>
+            <li>As necessary to present a civil claim against, or defend against a civil claim raised by, a client;</li>
+            <li>As required to comply with a request from CFP Board concerning an investigation or adjudication; and</li>
+            <li>As necessary to provide information to professional organizations that are assessing the CFP<sup>&reg;</sup> professional&rsquo;s compliance with professional standards.</li>
+        </ol>
+        </li>
+    </ol>
+    </li>
+    <li>A CFP<sup>&reg;</sup> professional may not use any non-public personal information about a client for his or her direct or indirect personal benefit, whether or not it causes detriment to the client, unless the client consents.</li>
+    <li>A CFP<sup>&reg;</sup> professional, either directly or through the CFP<sup>&reg;</sup> Professional&rsquo;s Firm, must take reasonable steps to protect the security of non-public personal information about any client, including the security of information stored physically or electronically, from unauthorized access that could result in harm or inconvenience to the client.</li>
+    <li>A CFP<sup>&reg;</sup> professional, either directly or through the CFP<sup>&reg;</sup> Professional&rsquo;s Firm, must adopt and implement policies regarding the protection, handling, and sharing of a client&rsquo;s non-public personal information and must provide a client with written notice of those policies at the time of the Engagement and thereafter not less than annually (at least once in any 12-month period) unless (i) the CFP<sup>&reg;</sup> professional&rsquo;s policies have not changed since the last notice sent to a client; and (ii) the CFP<sup>&reg;</sup> professional does not disclose non-public personal information other than as permitted without a client&rsquo;s consent.</li>
+    <li>A CFP<sup>&reg;</sup> professional shall be deemed to comply with this Section if the CFP<sup>&reg;</sup> Professional&rsquo;s Firm is subject to, and the CFP<sup>&reg;</sup> professional complies with, Regulation S-P under the federal securities laws or substantially equivalent federal or state laws or rules.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Provide-Information-to-a-Client">
+                                                            Provide Information to a Client
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <ol>
+    <li><strong>When Providing Financial Advice.</strong> When providing or agreeing to provide Financial Advice that does not require Financial Planning in accordance with the Practice Standards, a CFP<sup>&reg;</sup> professional must provide the following information to the Client, prior to or at the time of the Engagement, and document that the information has been provided to the Client:
+    <ol>
+        <li>A description of the services and products to be provided;</li>
+        <li>How the Client pays for the products and services, and a description of the additional types of costs that the Client may incur, including product management fees, surrender charges, and sales loads;</li>
+        <li>How the CFP<sup>&reg;</sup> professional, the CFP<sup>&reg;</sup> Professional&rsquo;s Firm, and any Related Party are compensated for providing the products and services;</li>
+        <li>The existence of any public discipline or bankruptcy, and the location(s), if any, of the webpages of all relevant public websites of any governmental authority, self-regulatory organization, or professional organization that sets forth the CFP<sup>&reg;</sup> professional&rsquo;s public disciplinary history or any personal bankruptcy or business bankruptcy where the CFP<sup>&reg;</sup> professional was a Control Person;</li>
+        <li>The information required under Section A.5.a. (Conflict of Interest Disclosure);</li>
+        <li>The information required under Section A.9.d. (Written Notice Regarding Non-Public Personal Information);</li>
+        <li>The information required under Section A.13.a.ii. (Disclosure of Economic Benefit for Referral or Engagement of Additional Persons); and</li>
+        <li>Any other information about the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm that is Material to a Client&rsquo;s decision to engage or continue to engage the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm.</li>
+    </ol>
+    </li>
+    <li><strong>When Providing Financial Planning. </strong>When providing or required to provide Financial Planning in accordance with the Practice Standards, a CFP<sup>&reg;</sup> professional must provide the following information to the Client, prior to or at the time of the Engagement, in one or more written documents:
+    <ol>
+        <li>The information required to be provided in Sections A.10.a.i.-iv. and vi.-viii.; and</li>
+        <li>The terms of the Engagement between the Client and the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm, including the Scope of Engagement and any limitations, the period(s) during which the services will be provided, and the Client&rsquo;s responsibilities. A CFP<sup>&reg;</sup> professional is responsible for implementing, monitoring, and updating the Financial Planning recommendation(s) unless specifically excluded from the Scope of Engagement.</li>
+    </ol>
+    </li>
+    <li><strong>Updating Information.</strong> A CFP<sup>&reg;</sup> professional has an ongoing obligation to provide to the Client any information that is a Material change or update to the information required to be provided to the Client. Material changes and updates to public disciplinary history or bankruptcy information must be disclosed to the Client within ninety (90) days, together with the location(s) of the relevant webpages.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Duties-When-Communicating-With-a-Client">
+                                                            Duties When Communicating With a Client
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional must provide a Client with accurate information, in accordance with the Engagement, and in response to reasonable Client requests, in a manner and format that a Client reasonably may be expected to understand.</p>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Duties-When-Representing-Compensation-Method">
+                                                            Duties When Representing Compensation Method
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional may not make false or misleading representations regarding the CFP&reg; professional&rsquo;s or the CFP&reg; Professional&rsquo;s Firm&rsquo;s method(s) of compensation.</p>
+<ol>
+    <li><strong>Specific Representations</strong>
+    <ol>
+        <li><strong><span style="font-size: 0.8125rem;"></span>Fee-Only.</strong> A CFP<sup>&reg;</sup> professional may represent his or her or the CFP&reg; Professional&rsquo;s Firm&rsquo;s compensation method as &ldquo;fee-only&rdquo; only if:
+        <ol>
+            <li>The CFP<sup>&reg;</sup> professional and the CFP<sup>&reg;</sup> Professional&rsquo;s Firm receive no Sales-Related Compensation; and</li>
+            <li>Related Parties receive no Sales-Related Compensation in connection with any Professional Services the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm provides to Clients.</li>
+        </ol>
+        </li>
+        <li><strong>Fee-Based.</strong> CFP Board uses the term &ldquo;fee and commission&rdquo; to describe the compensation method of those who receive both fees and Sales-Related Compensation. A CFP<sup>&reg;</sup> professional who represents that his or her or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm&rsquo;s compensation method is &ldquo;fee- based&rdquo; or any other similar term that is not fee-only:
+        <ol>
+            <li>May not use the term in a manner that suggests the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm is fee-only; and</li>
+            <li>Must clearly state that either the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm earns fees and commissions, or that the CFP<sup>&reg;</sup> professional or the CFP&reg; Professional&rsquo;s Firm are not fee- only.</li>
+        </ol>
+        </li>
+        <li><strong>Sales-Related Compensation.</strong> Sales-Related Compensation is more than a de minimis economic benefit, including any bonus or portion of compensation, resulting from a Client purchasing or selling Financial Assets, from a Client holding Financial Assets for purposes other than receiving Financial Advice, or from the referral of a Client to any person or entity other than the CFP<sup>&reg;</sup> Professional&rsquo;s Firm. Sales-Related Compensation includes, for example, commissions, trailing commissions, 12b-1 fees, spreads, transaction fees, revenue sharing, referral or solicitor fees, or similar consideration. Sales-Related Compensation does not include:
+        <ol>
+            <li>Soft dollars (any research or other benefits received in connection with Client brokerage that qualifies for the &ldquo;safe harbor&rdquo; of Section 28(e) of the Securities Exchange Act of 1934);</li>
+            <li>Reasonable and customary fees for custodial or similar administrative services if the fee or amount of the fee is not determined based on the amount or value of Client transactions;</li>
+            <li>Non-monetary benefits provided by another service provider, including a custodian, that benefit the CFP<sup>&reg;</sup> professional&rsquo;s Clients by improving the CFP<sup>&reg;</sup> professional&rsquo;s delivery of Professional Services, and that are not determined based on the amount or value of Client transactions;</li>
+            <li>Reasonable and customary fees for Professional Services, other than for solicitations and referrals, the CFP<sup>&reg;</sup> professional or CFP<sup>&reg;</sup> Professional&rsquo;s Firm provides to a Client that are collected and distributed by another service provider, including under a Turnkey Asset Management Platform; or</li>
+            <li>A fee the Related Party solicitor receives for soliciting clients for the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm.</li>
+        </ol>
+        </li>
+        <li><strong>Related Party.</strong> A person or business entity (including a trust) whose receipt of Sales-Related Compensation a reasonable CFP<sup>&reg;</sup> professional would view as directly or indirectly benefiting the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm, including, for example, as a result of the CFP<sup>&reg;</sup> professional&rsquo;s ownership stake in the business entity. There is a rebuttable presumption that a Related Party includes:
+        <ol>
+            <li>Family Members. A member of the CFP<sup>&reg;</sup> professional&rsquo;s Family and any business entity that the Family or members of the Family Control; and</li>
+            <li>Business Entities. A business entity that the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm Controls, or that is Controlled by or is under common Control with, the CFP<sup>&reg;</sup> Professional&rsquo;s Firm.</li>
+        </ol>
+        </li>
+        <li><strong>In Connection with any Professional Services.</strong> Sales-Related Compensation received by a Related Party is &ldquo;in connection with any Professional Services&rdquo; if it results, directly or indirectly, from Client transactions referred or facilitated by the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm.</li>
+        <li><strong>Safe Harbor for Related Parties.</strong> Sales-Related Compensation received by a Related Party is not &ldquo;in connection with any Professional Services&rdquo; if the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm adopts and implements policies and procedures reasonably designed to prevent the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm from recommending that any Client purchase Financial Assets from or through, or refer any Clients to, the Related Party.</li>
+        <li><strong>Misrepresentations by a CFP<sup>&reg;</sup> Professional&rsquo;s Firm.</strong> A CFP<sup>&reg;</sup> professional who Controls the CFP<sup>&reg;</sup> Professional&rsquo;s Firm may not allow the CFP<sup>&reg;</sup> Professional&rsquo;s Firm to make a representation of compensation method that would be false or misleading if made by the CFP<sup>&reg;</sup> professional. A CFP<sup>&reg;</sup> professional who does not Control the CFP<sup>&reg;</sup> Professional&rsquo;s Firm must correct a CFP<sup>&reg;</sup> Professional&rsquo;s Firm&rsquo;s misrepresentations of compensation method by accurately representing the CFP<sup>&reg;</sup> professional&rsquo;s compensation method to the CFP<sup>&reg;</sup> professional&rsquo;s Clients.</li>
+    </ol>
+    </li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="DutiesWhenRecommendingEngagingandWorkingWithAdditionalPersons">
+                                                            Duties When Recommending, Engaging, and Working With Additional Persons
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <ol>
+    <li>When engaging or recommending the selection or retention of additional persons to provide financial or Professional Services for a Client, a CFP<sup>&reg;</sup> professional must:
+    <ol>
+        <li>Have a reasonable basis for the recommendation or Engagement based on the person&rsquo;s reputation, experience, and qualifications;</li>
+        <li>Disclose to the Client, at the time of the recommendation or prior to the Engagement, any arrangement by which someone who is not the Client will compensate or provide some other material economic benefit to the CFP<sup>&reg;</sup> professional, the CFP<sup>&reg;</sup> Professional&rsquo;s Firm, or a Related Party for the recommendation or Engagement; and</li>
+        <li>When engaging a person to provide services for a Client, exercise reasonable care to protect the Client&rsquo;s interests.</li>
+    </ol>
+    </li>
+    <li>When working with another financial or Professional Services provider on behalf of a Client, a CFP<sup>&reg;</sup> professional must:
+    <ol>
+        <li>Communicate with the other provider about the scope of their respective services and the allocation of responsibility between them; and</li>
+        <li>Inform the Client in a timely manner if the CFP<sup>&reg;</sup> professional has a reasonable belief that the other provider&rsquo;s services were not performed in accordance with the scope of services to be provided and the allocation of responsibilities.</li>
+    </ol>
+    </li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="DutiesWhenSelectingUsingandRecommendingTechnology">
+                                                            Duties When Selecting, Using, and Recommending Technology
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <ol>
+    <li>A CFP<sup>&reg;</sup> professional must exercise reasonable care and judgment when selecting, using, or recommending any software, digital advice tool, or other technology while providing Professional Services to a Client.</li>
+    <li>A CFP<sup>&reg;</sup> professional must have a reasonable level of understanding of the assumptions and outcomes of the technology employed.</li>
+    <li>A CFP<sup>&reg;</sup> professional must have a reasonable basis for believing that the technology produces reliable, objective, and appropriate outcomes.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Refrain-From-Borrowing-or-Lending-Money-and-Commingling-Financial-Assets">
+                                                            Refrain From Borrowing or Lending Money and Commingling Financial Assets
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <ol>
+    <li>A CFP<sup>&reg;</sup> professional may not, directly or indirectly, borrow money from or lend money to a Client unless:
+    <ol>
+        <li>The Client is a member of the CFP<sup>&reg;</sup> professional&rsquo;s Family; or</li>
+        <li>The lender is a business organization or legal entity in the business of lending money.</li>
+    </ol>
+    </li>
+    <li>A CFP<sup>&reg;</sup> professional may not commingle a Client&rsquo;s Financial Assets with the Financial Assets of the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                        </ol>
+                                </li>
+                                <li class="h4">
+                                        <h3 class="h4 code-standards-child-list-heading"
+                                            id="Financial-Planning-and-Application-of-the-Practice-Standards-for-the-Financial-Planning-Process">
+                                            Financial Planning and Application of the Practice Standards for the Financial Planning Process
+                                        </h3>
+                                            <div class="code-standards-content wysiwyg-content">
+                                                &nbsp;
+                                            </div>
+
+
+                                        <ol class="code-standards-grandchild-list">
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Financial-Planning-Definition">
+                                                            Financial Planning Definition
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>Financial Planning is a collaborative process that helps maximize a Client&rsquo;s potential for meeting life goals through Financial Advice that integrates relevant elements of the Client&rsquo;s personal and financial circumstances.</p>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Examples-of-Relevant-Elements-of-the-Clients-Personal-and-Financial-Circumstances">
+                                                            Examples of Relevant Elements of the Client’s Personal and Financial Circumstances
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>Relevant elements of personal and financial circumstances vary from Client to Client, and may include the Client&rsquo;s need for or desire to: develop goals, manage assets and liabilities, manage cash flow, identify and manage risks, identify and manage the financial effect of health considerations, provide for educational needs, achieve financial security, preserve or increase wealth, identify tax considerations, prepare for retirement, pursue philanthropic interests, and address estate and legacy matters.</p>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Application-of-Practice-Standards">
+                                                            Application of Practice Standards
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>The Practice Standards set forth the Financial Planning Process. A CFP<sup>&reg;</sup> professional must comply with the Practice Standards when:</p>
+<ol>
+    <li>The CFP<sup>&reg;</sup> professional agrees to provide or provides:
+    <ol>
+        <li>Financial Planning; or</li>
+        <li>Financial Advice that requires integration of relevant elements of the Client&rsquo;s personal and/ or financial circumstances in order to act in the Client&rsquo;s best interests (&ldquo;Financial Advice that Requires Financial Planning&rdquo;); or</li>
+    </ol>
+    </li>
+    <li>The Client has a reasonable basis to believe the CFP<sup>&reg;</sup> professional will provide or has provided Financial Planning.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Integration-Factors">
+                                                            Integration Factors
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>Among the factors that CFP Board will weigh in determining whether a CFP<sup>&reg;</sup> professional has agreed to provide or provided Financial Advice that Requires Financial Planning are:</p>
+<ol>
+    <li>The number of relevant elements of the Client&rsquo;s personal and financial circumstances that the Financial Advice may affect;</li>
+    <li>The portion and amount of the Client&rsquo;s Financial Assets that the Financial Advice may affect;</li>
+    <li>The length of time the Client&rsquo;s personal and financial circumstances may be affected by the Financial Advice;</li>
+    <li>The effect on the Client&rsquo;s overall exposure to risk if the Client implements the Financial Advice; and</li>
+    <li>The barriers to modifying the actions taken to implement the Financial Advice.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="CFP-Board-Evaluation">
+                                                            CFP Board Evaluation
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>In a disciplinary proceeding in which a CFP<sup>&reg;</sup> professional denies CFP Board&rsquo;s allegation that the CFP<sup>&reg;</sup> professional was required to comply with the Practice Standards, the CFP<sup>&reg;</sup> professional must demonstrate that compliance with the Practice Standards was not required.</p>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="No-Client-Agreement-to-Engage-for-Financial-Planning">
+                                                            No Client Agreement to Engage for Financial Planning
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>If a CFP<sup>&reg;</sup> professional otherwise must comply with the Practice Standards, but the Client does not agree to engage the CFP<sup>&reg;</sup> professional to provide Financial Planning, the CFP<sup>&reg;</sup> professional must either:</p>
+<ol>
+    <li>Not enter in to the Engagement;</li>
+    <li>Limit the Scope of Engagement to services that do not require application of the Practice Standards, and describe to the Client the services the Client requests that the CFP<sup>&reg;</sup> professional will not be performing;</li>
+    <li>Provide the requested services after informing the Client how Financial Planning would benefit the Client and how the decision not to engage the CFP<sup>&reg;</sup> professional to provide Financial Planning may limit the CFP<sup>&reg;</sup> professional&rsquo;s Financial Advice, in which case the CFP<sup>&reg;</sup> professional is not required to comply with the Practice Standards; or</li>
+    <li>Terminate the Engagement.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                        </ol>
+                                </li>
+                                <li class="h4">
+                                        <h3 class="h4 code-standards-child-list-heading"
+                                            id="Practice-Standards-for-The-Financial-Planning-Process">
+                                            Practice Standards for The Financial Planning Process
+                                        </h3>
+                                            <div class="code-standards-content wysiwyg-content">
+                                                <p>In complying with the Practice Standards, a CFP<sup>&reg;</sup> professional must act prudently in documenting information, as the facts and circumstances require, taking into account the significance of the information, the need to preserve the information in writing, the obligation to act in the Client&rsquo;s best interests, and the CFP<sup>&reg;</sup> Professional&rsquo;s Firm&rsquo;s policies and procedures.</p>
+                                            </div>
+
+
+                                        <ol class="code-standards-grandchild-list">
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Understanding-the-Clients-Personal-and-Financial-Circumstances">
+                                                            Understanding the Client’s Personal and Financial Circumstances
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <ol>
+    <li><strong>Obtaining Qualitative and Quantitative Information. </strong>A CFP<sup>&reg;</sup> professional must describe to the Client the qualitative and quantitative information concerning the Client&rsquo;s personal and financial circumstances needed to fulfill the Scope of Engagement and collaborate with the Client to obtain the information.
+    <ol>
+        <li>Examples of qualitative or subjective information include the Client&rsquo;s health, life expectancy, family circumstances, values, attitudes, expectations, earnings potential, risk tolerance, goals, needs, priorities, and current course of action.</li>
+        <li>Examples of quantitative or objective information include the Client&rsquo;s age, dependents, other professional advisors, income, expenses, cash flow, savings, assets, liabilities, available resources, liquidity, taxes, employee benefits, government benefits, insurance coverage, estate plans, education and retirement accounts and benefits, and capacity for risk.</li>
+    </ol>
+    </li>
+    <li><strong>Analyzing Information.</strong> A CFP<sup>&reg;</sup> professional must analyze the qualitative and quantitative information to assess the Client&rsquo;s personal and financial circumstances.</li>
+    <li><strong>Addressing Incomplete Information.</strong> If unable to obtain information necessary to fulfill the Scope of Engagement, the CFP<sup>&reg;</sup> professional must either limit the Scope of Engagement to those services the CFP<sup>&reg;</sup> professional is able to provide or terminate the Engagement.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Identifying-and-Selecting-Goals">
+                                                            Identifying and Selecting Goals
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <ol>
+    <li> <strong>Identifying Potential Goals.</strong> A CFP<sup>&reg;</sup> professional must discuss with the Client the CFP<sup>&reg;</sup> professional&rsquo;s assessment of the Client&rsquo;s financial and personal circumstances, and help the Client identify goals, noting the effect that selecting a particular goal may have on other goals. In helping the Client identify goals, the CFP<sup>&reg;</sup> professional must discuss with the Client, and apply, reasonable assumptions and estimates. These may include life expectancy, inflation rates, tax rates, investment returns, and other Material assumptions and estimates.</li>
+    <li><strong>Selecting and Prioritizing Goals.</strong> A CFP<sup>&reg;</sup> professional must help the Client select and prioritize goals. The CFP<sup>&reg;</sup> professional must discuss with the Client any goals the Client has selected that the CFP<sup>&reg;</sup> professional believes are not realistic.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="AnalyzingtheClientsCurrentCourseofActionandPotentialAlternativeCoursesofAction">
+                                                            Analyzing the Client’s Current Course of Action and Potential Alternative Course(s) of Action
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <ol>
+    <li><strong>Analyzing Current Course of Action.</strong> A CFP<sup>&reg;</sup> professional must analyze the Client&rsquo;s current course of action, including the material advantages and disadvantages of the current course and whether the current course maximizes the potential for meeting the Client&rsquo;s goals.</li>
+    <li><strong>Analyzing Potential Alternative Courses of Action. </strong>Where appropriate a CFP<sup>&reg;</sup> professional must consider and analyze one or more potential alternative courses of action, including the material advantages and disadvantages of each alternative, whether each alternative helps maximize the potential for meeting the Client&rsquo;s goals, and how each alternative integrates the relevant elements of the Client&rsquo;s personal and financial circumstances.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="DevelopingtheFinancialPlanningRecommendations">
+                                                            Developing the Financial Planning Recommendation(s)
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>From the potential courses of action, a CFP<sup>&reg;</sup> professional must select one or more recommendations designed to maximize the potential for meeting the Client&rsquo;s goals. The recommendation may be to continue the Client&rsquo;s current course of action. For each recommendation selected, the CFP<sup>&reg;</sup> professional must consider the following information:</p>
+<ol>
+    <li>The assumptions and estimates used to develop the recommendation;</li>
+    <li>The basis for making the recommendation, including how the recommendation is designed<br />
+    to maximize the potential to meet the Client&rsquo;s goals, the anticipated material effects of the recommendation on the Client&rsquo;s financial and personal circumstances, and how the recommendation integrates relevant elements of the Client&rsquo;s personal and financial circumstances;</li>
+    <li>The timing and priority of the recommendation; and</li>
+    <li>Whether the recommendation is independent or must be implemented with another recommendation.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="PresentingtheFinancialPlanningRecommendations">
+                                                            Presenting the Financial Planning Recommendation(s)
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional must present to the Client the selected recommendations and the information that was required to be considered when developing the recommendation(s).</p>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="ImplementingtheFinancialPlanningRecommendations">
+                                                            Implementing the Financial Planning Recommendation(s)
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <ol>
+    <li><strong>Addressing Implementation Responsibilities. </strong>A CFP<sup>&reg;</sup> professional must establish with the Client whether the CFP<sup>&reg;</sup> professional has implementation responsibilities. When the CFP<sup>&reg;</sup> professional has implementation responsibilities, the CFP<sup>&reg;</sup> professional must communicate to the Client the recommendation(s) being implemented and the responsibilities of the CFP<sup>&reg;</sup> professional, the Client, and any third party with respect to implementation.</li>
+    <li><strong>Identifying,Analyzing, and Selecting Actions, Products, and Services.</strong> A CFP<sup>&reg;</sup> professional who has implementation responsibilities must identify and analyze actions, products, and services designed to implement the recommendations. The CFP<sup>&reg;</sup> professional must consider the basis for each selection, which must include:
+    <ol>
+        <li>How the action, product, or service is designed to implement the CFP<sup>&reg;</sup> professional&rsquo;s recommendation; and</li>
+        <li>The advantages and disadvantages of the action, product, or service relative to reasonably available alternatives.</li>
+    </ol>
+    </li>
+    <li><strong>Recommending Actions, Products, and Services for Implementation.</strong> A CFP<sup>&reg;</sup> professional who has implementation responsibilities must recommend one or more actions, products and services to the Client. The CFP<sup>&reg;</sup> professional must discuss with the Client the basis for selecting an action, product, or service, the timing and priority of implementing the action, product, or service, and disclose and manage any Material Conflicts of Interest concerning the action, product, or service.</li>
+    <li><strong>Selecting and Implementing Actions, Products, or Services.</strong> A CFP<sup>&reg;</sup> professional who has implementation responsibilities must help the Client select and implement the actions, products, or services. The CFP<sup>&reg;</sup> professional must discuss with the Client any Client selection that deviates from the actions, products, and services the CFP<sup>&reg;</sup> professional recommended.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Monitoring-Progress-and-Updating">
+                                                            Monitoring Progress and Updating
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <ol>
+    <li><strong>Monitoring and Updating Responsibilities. </strong>A CFP<sup>&reg;</sup> professional must establish with the Client whether the CFP<sup>&reg;</sup> professional has monitoring and updating responsibilities. When the CFP<sup>&reg;</sup> professional has responsibilities for monitoring and updating, the CFP<sup>&reg;</sup> professional must communicate to the Client:
+    <ol>
+        <li>Which actions, products, and services are and are not subject to the CFP<sup>&reg;</sup> professional&rsquo;s monitoring responsibility;</li>
+        <li>How and when the CFP<sup>&reg;</sup> professional will monitor the actions, products, and services;</li>
+        <li>The Client&rsquo;s responsibility to inform the CFP<sup>&reg;</sup> professional of any Material changes to the Client&rsquo;s qualitative and quantitative information;</li>
+        <li>The CFP<sup>&reg;</sup> professional&rsquo;s responsibility to update the Financial Planning recommendations; and</li>
+        <li>How and when the CFP<sup>&reg;</sup> professional will update the Financial Planning recommendations.</li>
+    </ol>
+    </li>
+    <li><strong>Monitoring the Client&rsquo;s Progress.</strong> A CFP<sup>&reg;</sup> professional who has monitoring responsibilities must analyze, at appropriate intervals, the progress toward achieving the Client&rsquo;s goals. The CFP<sup>&reg;</sup> professional must review with the Client the results of the CFP<sup>&reg;</sup> professional&rsquo;s analysis.</li>
+    <li><strong>Obtaining Current Qualitative and Quantitative Information.</strong> A CFP<sup>&reg;</sup> professional who has monitoring responsibility must collaborate with the Client in an attempt to obtain current qualitative and quantitative information concerning the Client&rsquo;s personal and financial circumstances.</li>
+    <li><strong>Updating Goals, Recommendations, or Implementation Decisions.</strong> Where a CFP<sup>&reg;</sup> professional has updating responsibility, and circumstances warrant changes to the Client&rsquo;s goals, recommendations, or selections of actions, products or services, the CFP<sup>&reg;</sup> professional must update as appropriate in accordance with these Practice Standards.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                        </ol>
+                                </li>
+                                <li class="h4">
+                                        <h3 class="h4 code-standards-child-list-heading"
+                                            id="Duties-Owed-to-Firms-and-Subordinates">
+                                            Duties Owed to Firms and Subordinates
+                                        </h3>
+                                            <div class="code-standards-content wysiwyg-content">
+                                                &nbsp;
+                                            </div>
+
+
+                                        <ol class="code-standards-grandchild-list">
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Use-Reasonable-Care-When-Supervising">
+                                                            Use Reasonable Care When Supervising
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional must exercise reasonable care when supervising persons acting under the CFP<sup>&reg;</sup> professional&rsquo;s direction, including employees and other persons over whom the CFP<sup>&reg;</sup> professional has responsibility, with a view toward preventing violations of applicable laws, rules, regulations, and these Standards.</p>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Comply-with-Lawful-Objectives-of-CFP-Professionals-Firm">
+                                                            Comply with Lawful Objectives of CFP&#174; Professional’s Firm
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional:</p>
+<ol>
+    <li>Will be subject to discipline by CFP Board for violating policies and procedures of the CFP<sup>&reg;</sup> Professional&rsquo;s Firm that do not conflict with these Standards.</li>
+    <li>Will not be subject to discipline by CFP Board for violating policies and procedures of the CFP<sup>&reg;</sup> Professional&rsquo;s Firm that conflict with these Standards.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Provide-Notice-of-Public-Discipline">
+                                                            Provide Notice of Public Discipline
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional must promptly advise the CFP<sup>&reg;</sup> Professional&rsquo;s Firm, in writing, of any public discipline imposed by CFP Board.</p>
+                                                            </div>
+                                                </li>
+                                        </ol>
+                                </li>
+                                <li class="h4">
+                                        <h3 class="h4 code-standards-child-list-heading"
+                                            id="Duties-Owed-to-CFP-Board">
+                                            Duties Owed to CFP Board
+                                        </h3>
+                                            <div class="code-standards-content wysiwyg-content">
+                                                &nbsp;
+                                            </div>
+
+
+                                        <ol class="code-standards-grandchild-list">
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Definitions">
+                                                            Definitions
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>The following definitions apply:</p>
+<ol>
+    <li><strong>Felony. </strong>A felony offense, or for jurisdictions that do not differentiate between a felony and a misdemeanor, an offense punishable by a sentence of at least one-year imprisonment or a fine of at least $1,000.</li>
+    <li><strong>Relevant Misdemeanor. </strong>A criminal offense, that is not a Felony, for conduct involving fraud,theft, misrepresentation, other dishonest conduct, crimes of moral turpitude, violence, or a second (or more) alcohol and/or drug-related offense.</li>
+    <li><strong>Regulatory Investigation.</strong> An investigation initiated by a federal, state, local, or foreign governmental agency, self-regulatory organization, or other regulatory authority. A Regulatory Investigation does not include preliminary or routine regulatory inquiries or requests for information, deficiency letters, &ldquo;blue sheet&rdquo; requests or other trading questionnaires, or examinations.</li>
+    <li><strong>Regulatory Action. </strong>An action initiated by a federal, state, local, or foreign governmental agency, self- regulatory organization, or other regulatory authority.</li>
+    <li><strong>Civil Action.</strong> A lawsuit or arbitration.</li>
+    <li><strong>Finding. </strong>A finding includes an adverse final action and a consent decree in which the finding is neither admitted nor denied, but does not include a deficiency letter, examination report, memorandum of understanding, or similar informal resolution of a matter.</li>
+    <li><strong>Minor Rule Violation.</strong> A violation of a self-regulatory organization rule designated as a minor rule violation under a plan approved by the U.S. Securities and Exchange Commission. A rule violation may be designated as &ldquo;minor&rdquo; under a plan if the sanction imposed consists of a fine of $2,500 or less, and if the sanctioned person does not contest the fine.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Refrain-from-Adverse-Conduct">
+                                                            Refrain from Adverse Conduct
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional may not engage in conduct that reflects adversely on his or her integrity or fitness as a CFP<sup>&reg;</sup> professional, upon the CFP<sup>&reg;</sup> marks, or upon the profession. Such conduct includes, but is not limited to, conduct that results in:</p>
+<ol>
+    <li>A Felony or Relevant Misdemeanor conviction, or admission into a program that defers or with holds the entry of a judgment of conviction for a Felony or Relevant Misdemeanor;</li>
+    <li>A Finding in a Regulatory Action or a Civil Action that the CFP<sup>&reg;</sup> professional engaged in fraud, theft, misrepresentation, or other dishonest conduct;</li>
+    <li>A personal bankruptcy or business bankruptcy filing or adjudication where the CFP<sup>&reg;</sup> professional was a Control Person of the business, unless the CFP<sup>&reg;</sup> professional can rebut the presumption that the bankruptcy demonstrates an inability to manage responsibly the CFP<sup>&reg;</sup> professional&rsquo;s or the business&rsquo;s financial affairs;</li>
+    <li>A federal tax lien on property owned by the CFP<sup>&reg;</sup> professional, unless the CFP<sup>&reg;</sup> professional can rebut the presumption that the federal tax lien demonstrates an inability to manage responsibly the CFP<sup>&reg;</sup> professional&rsquo;s financial affairs; or</li>
+    <li>A non-federal tax lien, judgment lien, or civil judgment that has not been satisfied within a reasonable amount of time unless the CFP<sup>&reg;</sup> professional can rebut the presumption that the non- federal tax lien, judgment lien, or civil judgment demonstrates an inability to manage responsibly the CFP<sup>&reg;</sup> professional&rsquo;s financial affairs.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Reporting">
+                                                            Reporting
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional must provide written notice to CFP Board within thirty (30) calendar days after the CFP<sup>&reg;</sup> professional, or an entity over which the CFP<sup>&reg;</sup> professional was a Control Person, has:</p>
+<ol>
+    <li>Been charged with, convicted of, or admitted into a program that defers or withholds the entry of a judgment or conviction for, a Felony or Relevant Misdemeanor;</li>
+    <li>Been named as a subject of, or whose conduct is mentioned adversely in, a Regulatory Investigation or Regulatory Action alleging failure to comply with the laws, rules, or regulations governing Professional Services;</li>
+    <li>Had conduct mentioned adversely in a Finding in a Regulatory Action involving failure to comply with the laws, rules, or regulations governing Professional Services (except a Regulatory Action involving a Minor Rule Violation in a Regulatory Action brought by a self-regulatory organization);</li>
+    <li>Had conduct mentioned adversely in a Civil Action alleging failure to comply with the laws, rules, or regulations governing Professional Services;</li>
+    <li>Become aware of an adverse arbitration award or civil judgment, or a settlement agreement, in a Civil Action alleging failure to comply with the laws, rules, or regulations governing Professional Services, where the conduct of the CFP&reg; professional, or an entity over which the CFP<sup>&reg;</sup> professional was a Control Person, was mentioned adversely, other than a settlement for an amount less than $15,000;</li>
+    <li>Had conduct mentioned adversely in a Civil Action alleging fraud, theft, misrepresentation, or other dishonest conduct;</li>
+    <li>Been the subject of a Finding of fraud, theft, misrepresentation, or other dishonest conduct in a Regulatory Action or Civil Action;</li>
+    <li>Become aware of an adverse arbitration award or civil judgment, or a settlement agreement in a Civil Action alleging fraud, theft, misrepresentation, or other dishonest conduct, where the conduct of the CFP<sup>&reg;</sup> professional, or an entity over which the CFP<sup>&reg;</sup> professional was a Control Person, was mentioned adversely;</li>
+    <li>Had a professional license, certification, or membership suspended, revoked, or materially restricted because of a violation of rules or standards of conduct;</li>
+    <li>Been terminated for cause from employment or permitted to resign in lieu of termination when the cause of the termination or resignation involved allegations of dishonesty, unethical conduct, or compliance failures;</li>
+    <li>Been named as the subject of, or been identified as the broker/adviser of record in, any written, customer-initiated complaint that alleged the CFP<sup>&reg;</sup> professional was involved in:
+    <ol>
+        <li>Forgery, theft, misappropriation, or conversion of Financial Assets;</li>
+        <li>Sales practice violations and contained a claim for compensation of $5,000 or more; or</li>
+        <li>Sales practice violations and settled for an amount of $15,000 or more.</li>
+    </ol>
+    </li>
+    <li>Filed for or been the subject of a personal bankruptcy or business bankruptcy where the CFP<sup>&reg;</sup> professional was a Control Person;</li>
+    <li>Received notice of a federal tax lien on property owned by the CFP<sup>&reg;</sup> professional; or</li>
+    <li>Failed to satisfy a non-federal tax lien, judgment lien, or civil judgment within one year of its date of entry, unless payment arrangements have been agreed upon by all parties.</li>
+</ol>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Provide-Narrative-Statement">
+                                                            Provide Narrative Statement
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>The written notice must include a narrative statement that accurately and completely describes the Material facts and the outcome or status of the reportable matter.</p>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Cooperation">
+                                                            Cooperation
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional may not make false or misleading representations to CFP Board or obstruct CFP Board in the performance of its duties. A CFP<sup>&reg;</sup> professional must satisfy the cooperation requirements set forth in CFP Board&rsquo;s <em>Procedural Rules</em>, including by cooperating fully with CFP Board&rsquo;s requests, investigations, disciplinary proceedings, and disciplinary decisions.</p>
+                                                            </div>
+                                                </li>
+                                                <li class="h5">
+                                                        <h4 class="h5"
+                                                            id="Compliance-with-Terms-and-Conditions-of-Certification-and-Trademark-License">
+                                                            Compliance with Terms and Conditions of Certification and Trademark License
+                                                        </h4>
+                                                            <div class="code-standards-content wysiwyg-content">
+                                                                <p>A CFP<sup>&reg;</sup> professional must comply with the <em>Terms and Conditions of Certification and Trademark License</em>.</p>
+                                                            </div>
+                                                </li>
+                                        </ol>
+                                </li>
+                                <li class="h4">
+                                        <h3 class="h4 code-standards-child-list-heading"
+                                            id="Prohibition-on-Circumvention">
+                                            Prohibition on Circumvention
+                                        </h3>
+                                            <div class="code-standards-content wysiwyg-content">
+                                                <p>A CFP&reg; professional may not do indirectly, or through or by another person or entity, any act or thing that the <em>Code and Standards</em> prohibit the CFP&reg; professional from doing directly.</p>
+                                            </div>
+
+
+                                </li>
+                        </ol>
+                </li>
+        </ol>
+        <div class="code-standards-sticky-stop"></div>
+    </div>
+</div>
+
+
+
+
+<div class="glossary" id="glossary-section">
+    <div class="glossary-inner">
+        <h2 class="h3 -black glossary-title code-standards-parent-list-heading">
+            Glossary
+        </h2>
+        <div class="glossary-items">
+                    <div class="glossary-item">
+                        <div id="cfp&#174;-professional’s-firm(s)" class="glossary-item-title">CFP&#174; Professional’s Firm(s)</div>
+                        <div class="glossary-item-content wysiwyg-content"><p> Any entity on behalf of which a CFP<sup>&reg;</sup> professional provides Professional Services to a Client, and that has the authority to exercise control over the CFP<sup>&reg;</sup> professional&rsquo;s activities, including the CFP<sup>&reg;</sup> professional&rsquo;s employer, broker-dealer, registered investment adviser, insurance company, and insurance agency.</p></div>
+                    </div>
+                    <div class="glossary-item">
+                        <div id="client" class="glossary-item-title">Client</div>
+                        <div class="glossary-item-content wysiwyg-content"><p>Any person, including a natural person, business organization, or legal entity, to whom the CFP&reg; professional provides or agrees to provide Professional Services pursuant to an Engagement.</p></div>
+                    </div>
+                    <div class="glossary-item">
+                        <div id="conflict-of-interest" class="glossary-item-title">Conflict of Interest</div>
+                        <div class="glossary-item-content wysiwyg-content"><ol>
+    <li>When a CFP<sup>&reg;</sup> professional&rsquo;s interests (including the interests of the CFP<sup>&reg;</sup> Professional&rsquo;s Firm) are adverse to the CFP<sup>&reg;</sup> professional&rsquo;s duties to a Client, or</li>
+    <li>When a CFP<sup>&reg;</sup> professional has duties to one Client that are adverse to another Client.</li>
+</ol></div>
+                    </div>
+                    <div class="glossary-item">
+                        <div id="control" class="glossary-item-title">Control</div>
+                        <div class="glossary-item-content wysiwyg-content"><p>The power, directly or indirectly, to direct the management or policies of the entity at the relevant time, through ownership, by contract, or otherwise.</p></div>
+                    </div>
+                    <div class="glossary-item">
+                        <div id="control-person" class="glossary-item-title">Control Person</div>
+                        <div class="glossary-item-content wysiwyg-content"><p>A person who has Control.</p></div>
+                    </div>
+                    <div class="glossary-item">
+                        <div id="engagement" class="glossary-item-title">Engagement</div>
+                        <div class="glossary-item-content wysiwyg-content"><p>An oral or written agreement, arrangement, or understanding.</p></div>
+                    </div>
+                    <div class="glossary-item">
+                        <div id="family" class="glossary-item-title">Family</div>
+                        <div class="glossary-item-content wysiwyg-content"><p>Grandparent, parent, stepparent, father-in-law/mother-in-law, uncle/aunt, spouse, former spouse, spousal equivalent, domestic partner, brother/sister, stepsibling, brother-in-law/sister-in-law, cousin, son/ daughter, stepchild, son-in-law/daughter-in law, nephew/niece, grandchild, and any other person the CFP<sup>&reg;</sup> professional, directly or indirectly, supports financially to a material extent.</p></div>
+                    </div>
+                    <div class="glossary-item">
+                        <div id="financial-advice" class="glossary-item-title">Financial Advice</div>
+                        <div class="glossary-item-content wysiwyg-content"><ol>
+    <li>A communication that, based on its content, context, and presentation, would reasonably be viewed as a recommendation that the Client take or refrain from taking a particular course of action with respect to:
+    <ol>
+        <li>The development or implementation of a financial plan;</li>
+        <li>The value of or the advisability of investing in, purchasing, holding, gifting, or selling Financial Assets;</li>
+        <li>Investment policies or strategies, portfolio composition, the management of Financial Assets, or other financial matters; or</li>
+        <li>The selection and retention of other persons to provide financial or Professional Services to the Client; or</li>
+    </ol>
+    </li>
+    <li>The exercise of discretionary authority over the Financial Assets of a Client.</li>
+</ol>
+<p>The determination of whether Financial Advice has been provided is an objective rather than subjective inquiry. The more individually tailored the communication is to the Client, the more likely the communication will be viewed as Financial Advice. The provision of services or the furnishing or making available of marketing materials, general financial education materials, or general financial communications that a reasonable CFP<sup>&reg;</sup> professional would not view as Financial Advice, does not constitute Financial Advice.</p></div>
+                    </div>
+                    <div class="glossary-item">
+                        <div id="financial-assets" class="glossary-item-title">Financial Assets</div>
+                        <div class="glossary-item-content wysiwyg-content"><p>Securities, insurance products, real estate, bank instruments, commodities contracts, derivative contracts, collectibles, or other financial products.</p></div>
+                    </div>
+                    <div class="glossary-item">
+                        <div id="financial-planning" class="glossary-item-title">Financial Planning</div>
+                        <div class="glossary-item-content wysiwyg-content"><p>A collaborative process that helps maximize a Client&rsquo;s potential for meeting life goals through Financial Advice that integrates relevant elements of the Client&rsquo;s personal and financial circumstances.</p></div>
+                    </div>
+                    <div class="glossary-item">
+                        <div id="material" class="glossary-item-title">Material</div>
+                        <div class="glossary-item-content wysiwyg-content"><p>Information is material when a reasonable Client or prospective Client would consider the information important in making a decision.</p></div>
+                    </div>
+                    <div class="glossary-item">
+                        <div id="professional-services" class="glossary-item-title">Professional Services</div>
+                        <div class="glossary-item-content wysiwyg-content"><p>Financial Advice and related activities and services that are offered or provided, including, but not limited to, Financial Planning, legal, accounting, or business planning services.</p></div>
+                    </div>
+                    <div class="glossary-item">
+                        <div id="related-party" class="glossary-item-title">Related Party</div>
+                        <div class="glossary-item-content wysiwyg-content"><p>A person or business entity (including a trust) whose receipt of Sales-Related Compensation a reasonable CFP<sup>&reg;</sup> professional would view as benefiting the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm, including, for example, as a result of the CFP<sup>&reg;</sup> professional&rsquo;s ownership stake in the business entity. There is a rebuttable presumption that a Related Party includes:</p>
+<ol>
+    <li><strong>Family Members.</strong> A member of the CFP<sup>&reg;</sup> professional&rsquo;s Family and any business entity that the Family or members of the Family Control; and</li>
+    <li><strong>Business Entities.</strong> A business entity that the CFP<sup>&reg;</sup> professional or the CFP<sup>&reg;</sup> Professional&rsquo;s Firm Controls, or that is Controlled by or is under common Control with, the CFP<sup>&reg;</sup> Professional&rsquo;s Firm.</li>
+</ol></div>
+                    </div>
+                    <div class="glossary-item">
+                        <div id="scope-of-engagement" class="glossary-item-title">Scope of Engagement</div>
+                        <div class="glossary-item-content wysiwyg-content"><p>The Professional Services to be provided pursuant to an Engagement.</p></div>
+                    </div>
+        </div>
+    </div>
+
+</div>
+
+        </article>
+        <aside class="content-with-sidebar-sidebar">
+            
+
+
+
+<div class="right-rail-blocks" data-inner-background="gray-dark">
+        <div class="right-rail-blocks-image">
+            <picture>
+                <img alt="CFP Board Code &amp; Standards" height="200" loading="lazy" src="/-/media/images/cfp-board/infographics/code_and_standards_booklet.jpg?cx=0&amp;cy=0&amp;cw=375&amp;ch=200&amp;hash=C89DA374BA7EE3599EEC432438F692A9" width="375"></img>
+            </picture>
+        </div>
+    <div class="right-rail-blocks-inner">
+        <div class="h4 right-rail-blocks-title">Get the Booklet</div>
+        <div class="right-rails-blocks-wysiwyg wysiwyg-content">
+            <p>A printable version of CFP Board's <em>Code and Standards.</em></p>
+<span style="font-size: 1rem;"><a href="/-/media/files/cfp-board/standards-and-ethics/cfp-code-and-standards.pdf" class="-rte-cta-link -pdf">Download</a></span>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="right-rail-blocks" data-inner-background="gray">
+    <div class="right-rail-blocks-inner">
+        <div class="h4 right-rail-blocks-title">See Past Standards</div>
+        <div class="right-rails-blocks-wysiwyg wysiwyg-content">
+            <p>See the past <em>Standards</em>, effective prior to October 1, 2019.</p>
+<p><a href="/-/media/files/cfp-board/standards-and-ethics/compliance-resources/standards-of-professional-conduct.pdf" class="-rte-cta-link -pdf">View Document</a></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="right-rail-blocks" data-inner-background="yellow">
+    <div class="right-rail-blocks-inner">
+        <div class="h4 right-rail-blocks-title">Browse Our Compliance Resources Library</div>
+        <div class="right-rails-blocks-wysiwyg wysiwyg-content">
+            <a href="/ethics/compliance-resources" class=" -rte-cta-link">Browse the Library</a>
+        </div>
+    </div>
+</div>
+
+            
+        </aside>
+    </div>
+</div>
+
+        </main>
+        
+<!-- components/site-footer/site-footer.twig -->
+<footer class="site-footer">
+    <div class="site-footer-inner">
+        <div class="site-footer-main">
+            <div class="site-footer-main-inner">
+                <div class="site-footer-logo">
+                    <a href="/"><img src="/assets/images/logo-cfp-board-black-white.svg" width="241" height="48" loading="lazy" alt="CFP Board Logo" class="site-header-logo-img"></a>
+                </div>
+
+                <div class="site-footer-links">
+                    <div class="site-footer-nav-block-1">
+                        <ul class="site-footer-nav">
+                                    <li class="site-footer-nav-item">
+                                        <a href="/about-cfp-board" target="" class="h6 site-footer-nav-link">About CFP Board</a>
+                                    </li>
+                                    <li class="site-footer-nav-item">
+                                        <a href="/for-cfp-pros/career-center" target="" class="h6 site-footer-nav-link">Career Center</a>
+                                    </li>
+                                    <li class="site-footer-nav-item">
+                                        <a href="/cfp-board-center-for-financial-planning" target="" class="h6 site-footer-nav-link">CFP Board Center for Financial Planning</a>
+                                    </li>
+                                    <li class="site-footer-nav-item">
+                                        <a href="/account/my-account" class="h6 site-footer-nav-link icon-user">My Account / Create an Account</a>
+                                    </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="site-footer-nav-block-2">
+                        <ul class="site-footer-nav">
+                                    <li class="site-footer-nav-item">
+                                        <a href="https://cfpprostore.com/" target="_blank" class="h6 site-footer-nav-link">CFP Pro Store</a>
+                                    </li>
+                                    <li class="site-footer-nav-item">
+                                        <a href="/for-media" target="" class="h6 site-footer-nav-link">Media</a>
+                                    </li>
+                                    <li class="site-footer-nav-item">
+                                        <a href="/contact" target="" class="h6 site-footer-nav-link">Contact</a>
+                                    </li>
+                                    <li class="site-footer-nav-item">
+                                        <a href="https://www.letsmakeaplan.org/" target="_blank" class="h6 site-footer-nav-link">LetsMakeAPlan.org</a>
+                                    </li>
+                        </ul>
+                    </div>
+
+                    <div class="site-footer-nav-block site-footer-info">
+                        <address>
+                            <p class="site-footer-info-text">1425 K Street NW #800</p>
+                            <p class="site-footer-info-text">Washington, DC 20005</p>
+                            <p class="site-footer-info-text">
+                                <a href="/cdn-cgi/l/email-protection#dcb1bdb5b09cbfbaacbeb3bdaeb8f2b3aebb"><span class="__cf_email__" data-cfemail="adc0ccc4c1edcecbddcfc2ccdfc983c2dfca">[email&#160;protected]</span></a>
+                            </p>
+                        </address>
+                        <address>
+                            <p class="site-footer-info-text">
+                                <a href="tel:800-487-1497">800-487-1497 (Toll-Free)</a>
+                            </p>
+                            <p class="site-footer-info-text">
+                                <a href="tel:202-379-2200">202-379-2200</a>
+                            </p>
+                            <p class="site-footer-info-text">
+                                <a href="tel:202-379-2299">fax: 202-379-2299</a></a>
+                            </p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="site-footer-bottom-inner">
+                <div class="site-footer-bottom-links">
+                    <div class="site-footer-bottom-copyright">
+                        © 2026 CFP Board. All Rights Reserved. 
+                    </div>
+
+                    <div class="site-footer-legal-nav">
+                                <a href="/privacy-policy" target="" class="site-footer-legal-nav-link">Privacy Policy</a>
+                                <a href="/terms-of-use" target="" class="site-footer-legal-nav-link">Terms of Use</a>
+                                <a href="/accessibility" target="" class="site-footer-legal-nav-link">Accessibility</a>
+                                <a href="/sitemap" target="" class="site-footer-legal-nav-link">Sitemap</a>
+                                <!-- OneTrust cookies settings button start -->
+                                <span id="ot-sdk-btn" class="ot-sdk-show-settings">Do Not Sell or Share My Data</span>
+                                <!-- OneTrust cookies settings button end -->
+                    </div>
+                </div>
+                <div class="site-footer-social">
+                    <ul class="site-footer-social-links">
+                                <li><a href="https://www.facebook.com/cfpboard/" target="_blank" class="site-footer-social-link icon-facebook"><span class="sr-text">Facebook</span></a></li>
+
+                                <li><a href="https://twitter.com/cfpboard" target="_blank" class="site-footer-social-link icon-x"><span class="sr-text"></span></a></li>
+
+                                <li><a href="https://www.linkedin.com/company/cfpboard" target="_blank" class="site-footer-social-link icon-linkedin"><span class="sr-text">Linked In</span></a></li>
+
+                                <li><a href="https://www.youtube.com/user/CFPBoardOfStandards" target="_blank" class="site-footer-social-link icon-youtube"><span class="sr-text">YouTube</span></a></li>
+
+                                <li><a href="https://www.instagram.com/cfpboard" target="_blank" class="site-footer-social-link icon-instagram"><span class="sr-text"></span></a></li>
+
+                                <li><a href="https://www.tiktok.com/@cfpboard" target="_blank" class="site-footer-social-link icon-tiktok"><span class="sr-text"></span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        <div class="js-blocker"></div>
+    </div>
+</div>
+
+<!--components / login - form / login - form.twig-->
+<div id="modal-login-form"  class="modals mfp-hide login-form-modal">
+    <div class="login-form-inner">
+        <div class="login-form-container">
+    <img src="/assets/images/logo-cfp-board-black-white.svg" alt="CFP Board Logo" class="login-form-logo" width="241" height="48" loading="lazy">
+
+    <form action="/api/feature/account/authenticate" method="post" class="login-form-element" data-logging-in="false">
+        <div class="field-group">
+            <div class="field-container">
+                <label class="-small" for="login-email">Email Address</label>
+                <input type="email" name="login-email" id="login-email" required>
+            </div>
+        </div>
+
+        <div class="field-group login-form-password">
+            <div class="field-container">
+                <label class="-small" for="login-password">Password</label>
+                <input type="password" name="login-password" id="login-password" required>
+                <a href="https://login.cfp.net/eWeb/DynamicPage.aspx?WebCode=forgotpassword&amp;Site=Private" class="login-form-forgot -gray-line -small">Forgot Password?</a>
+            </div>
+        </div>
+
+        <div class="field-group login-form-submit">
+            <div class="field-container">
+                <input class="login-form-submit-button" type="submit" value="Login">
+                <button class="login-form-submit-loading button -loading">Logging In</button>
+            </div>
+
+            <div class="field-container checks" role="group" aria-label="Remember Username">
+                <div class="check">
+                    <input type="checkbox" name="remember-password" id="remember-password" checked="true">
+                    <label class="-small" for="remember-password">Remember me on this computer</label>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" name="hiddenreturnUrl" />
+    </form>
+    <div class="field-container credentials -hide-on-load">
+        <div class="error-message">Username or password is invalid.  Please check and try again.</div>
+    </div>
+    <div class="field-container exception -hide-on-load">
+        <div class="error-message">Exception encountered logging in.  Please check and try again.</div>
+    </div>
+    <hr>
+    <p class="login-form-container-p"><strong>Don't have an account?</strong>  <a href="/account-registration" class="-gray-line login-form-register">Create One Now</a></p>
+</div>
+
+    </div>
+</div>
+
+
+    
+    
+
+    <!-- /#wrapper -->
+    <!-- Vendor JavaScript -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Sitecore form scripts -->
+    
+
+    <!-- Custom JavaScript -->
+    <script src="/assets/js/bundle.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/modalhelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/cookiehelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/storagehelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/urlhelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/userhelper.js?v=aCljhUrs"></script>
+
+    <input type="hidden" id="eweb-keep-alive-url" value="https://login.cfp.net/eWeb/KeepAlive.ashx" />
+    <input type="hidden" value="wm1sdwk0009PE" name="machine" />
+
+      <script>
+        const PROD_CANONICAL_HOSTNAME = 'www.cfp.net';
+        // PROD sitekey, else NONPROD sitekey
+        const TURNSTILE_SITE_ID = window.location.hostname === PROD_CANONICAL_HOSTNAME ? '0x4AAAAAABJkQ_TUqTY-FVES' : '0x4AAAAAABnFJmc1bCoQtnWe';
+
+        const SITECORE_FORMS_SELECTOR = 'form[id^="fxb"]';
+        
+        // If the invisible widget must be rendered (rare cases in which interaction is required), do so in a compact fashion to ensure mobile friendliness
+        const TURNSTILE_NORMAL_SIZE_MIN_PX  = 429;
+        const TURNSTILE_SIZE_SETTING     = window.innerWidth >= TURNSTILE_NORMAL_SIZE_MIN_PX ? 'normal' : 'compact';
+        
+        const ERROR_MESSAGE              = 'Please complete the verification and submit the form again. If the issue persists, contact us via phone or email.';
+        const ERROR_CONTAINER_CLASS      = 'turnstile-error-message';
+        const ERROR_CONTAINER_STYLE      = 'display:block;max-width:150px;';
+        const WIDGET_VISIBLE_STYLE       = 'display:block;margin-bottom:25px;';
+
+        const ERROR_MESSAGE_CONTAINER_STYLE = 'display:block;max-width:150px;';
+        const ERROR_MESSAGE_CONTAINER_SELECTOR_CLASS = 'turnstile-error-message';
+        
+        const VISIBLE_ERROR_CONTAINER_CLASSES = 'error-message field-validation-error ' + ERROR_MESSAGE_CONTAINER_SELECTOR_CLASS;
+        const VISIBLE_WIDGET_CONTAINER_STYLES = 'display:block;margin-bottom:25px;';
+
+        window.bindAjaxHandlers = function(sitecoreForm) {
+          // Inject form failure handling for when siteverify fails. Append rather than replace in order not to blow away existing functionality.
+          const existingFailureHandler = (sitecoreForm.getAttribute("data-ajax-failure") || "").trim();
+          let needsSemicolon = existingFailureHandler && !existingFailureHandler.endsWith(";");
+          let separator = existingFailureHandler ? " " : "";
+          let newHandler = "window.handleFormFailure(arguments, this);";
+          sitecoreForm.setAttribute(
+            "data-ajax-failure",
+            (needsSemicolon ? existingFailureHandler + ";" : existingFailureHandler) + separator + newHandler
+          );
+        };
+
+        window.attachGlobalSitecoreFormObserver = function() {
+          const observer = new MutationObserver(mutations => {
+            mutations.forEach(mutation => {
+              mutation.removedNodes.forEach(node => {
+                if (
+                  node.nodeType === 1 &&
+                  node.tagName === 'FORM' &&
+                  node.id &&
+                  node.id.startsWith('fxb_')
+                ) {
+                  console.debug('A Sitecore form was removed:', node);
+                }
+              });
+        
+              // Added forms
+              mutation.addedNodes.forEach(node => {
+                // If the new node *is* a form
+                if (
+                  node.nodeType === 1 &&
+                  node.tagName === 'FORM' &&
+                  node.id &&
+                  node.id.startsWith('fxb_')
+                ) {
+                  console.debug('A new Sitecore form was added:', node);
+                  window.injectTurnstileWidget(node);
+                  window.bindAjaxHandlers(node);
+                }
+                // If the node *contains* new forms
+                else if (node.nodeType === 1) {
+                  const forms = node.querySelectorAll('form[id^="fxb_"]');
+                  forms.forEach(form => {
+                    console.log('A new Sitecore form was found inside a container:', form);
+                    window.injectTurnstileWidget(form);
+                    window.bindAjaxHandlers(form);
+                  });
+                }
+              });
+            });
+          });
+        
+          // Observe entire <body> for scenarios in which forms may be added or replaced for any reason
+          observer.observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        };
+
+        window.injectTurnstileWidget = function(sitecoreFormElement) {
+          const submitButton = sitecoreFormElement.querySelector('input[type="submit"], button[type="submit"]');
+          if (!submitButton){
+            // This can happen when the form is successfully submitted and is now displaying a thank you page
+            console.warn('Unable to locate submit button -- will not inject turnstile widget');
+            return;
+          }
+
+          const existingTurnstileWidget = sitecoreFormElement.querySelector('.turnstile-widget');
+          if (existingTurnstileWidget){
+            console.warn('Turnstile elements already present -- will not inject');
+            return;
+          }
+
+          const turnstileDiv = document.createElement("div");
+          turnstileDiv.className = sitecoreFormElement.id + "-turnstile turnstile-widget";
+          turnstileDiv.setAttribute("style", "display:none;");
+
+          submitButton.parentNode.insertBefore(turnstileDiv, submitButton);
+
+          let cdata = sitecoreFormElement.id
+            // Replace any characters that are NOT letters, numbers, underscores, or hyphens with a hyphen
+            .replace(/[^a-zA-Z0-9_-]/g, '-')
+            // Limit to 255 chars to comply with the Turnstile cData limit
+            .substring(0, 255);
+
+          const widgetId = turnstile.render(turnstileDiv, {
+            // https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#configurations
+            sitekey: TURNSTILE_SITE_ID,
+            callback: (token) => window.turnstileCallback(token),
+            'error-callback': (errorCode) => window.turnstileErrorCallback(turnstileDiv, errorCode),
+            'before-interactive-callback': () => window.turnstileBeforeInteractiveCallback(turnstileDiv),
+            'size': TURNSTILE_SIZE_SETTING, 
+            'cData': cdata,
+            'theme': 'light'
+          });
+
+          if (widgetId == undefined) {
+            // TODO: handle unsuccessful invocation of turnstile render
+            console.error("Failed to render turnstile on", { turnstileDiv } )
+          } 
+          else {
+            console.debug("Rendered turnstile", { widgetId });
+          }
+        };
+
+        window.turnstileCallback = function(token) {
+          console.debug('Turnstile challenge returned the token / value:', token);
+        };
+
+        window.displayTurnstileErrorMessage = function(sitecoreFormElement) {
+          const submitButton = sitecoreFormElement.querySelector('input[type="submit"], button[type="submit"]');
+          if (!submitButton){
+            // Can occur when displaying a second form page that does not have a submit button
+            // There may be a scenario in which this needs to be handled instead of returning early
+            console.debug("No submit button found -- will not display widget");
+            return;
+          }
+
+          const existingErrorMessage = sitecoreFormElement.querySelector('.' + ERROR_MESSAGE_CONTAINER_SELECTOR_CLASS);
+          if (!existingErrorMessage) {
+            const errorDiv = document.createElement("div");
+
+            errorDiv.className = VISIBLE_ERROR_CONTAINER_CLASSES;
+            errorDiv.innerText = ERROR_MESSAGE;
+            errorDiv.style = ERROR_MESSAGE_CONTAINER_STYLE;
+
+            submitButton.parentNode.insertBefore(errorDiv, submitButton);
+          }
+        };
+
+        // Invoked when there is an error (e.g. network error or the challenge failed).
+        // If an error callback returns with a non-falsy result, Turnstile will assume that the error callback handled the error accordingly.
+        window.turnstileErrorCallback = function(turnstileWidgetElement, errorCode) {
+          console.warn('An error occurred while fetching Turnstile token.', { turnstileWidgetElement }, { errorCode });
+
+          // Display the widget so that the user can see the error
+          turnstileWidgetElement.style = VISIBLE_WIDGET_CONTAINER_STYLES;
+
+          // Display error message calling for user to perform the verification
+          window.displayTurnstileErrorMessage(turnstileWidgetElement.closest('form')) 
+          
+          return false;
+        };
+
+        window.turnstileBeforeInteractiveCallback = function(turnstileWidgetElement) {
+          // Display the widget so that the user can interact with it
+          turnstileWidgetElement.style = VISIBLE_WIDGET_CONTAINER_STYLES;
+        };
+
+        
+
+        // Called when the form receives a non 200 response after submitting
+        window.handleFormFailure = function (args, contextElement) {
+          console.debug("Form submission failed", {args}, {contextElement});
+
+          const errorCode = args?.status;
+          const responseText = args?.responseText;
+
+          // TODO: consider case when status is something other than 400; particularly 500 errors
+          if (args?.status == "400" || args?.status == 400){
+            console.debug('Error response code', errorCode);
+            console.debug('Response text', responseText);
+          }
+
+          const form = contextElement?.closest?.('form');
+          if (!form) {
+            console.warn("Could not locate form from context element.");
+            return;
+          }
+
+          const submitButton = form.querySelector('input[type="submit"], button[type="submit"]');
+          if (!submitButton){
+            // Can occur when displaying a second form page that does not have a submit button
+            // There may be a scenario in which this needs to be handled instead of returning early
+            console.debug("No submit button found -- will not display widget");
+            return;
+          }
+
+          // Display the interactive widget either via window.injectTurnstileWidget(form); or by displaying the hidden managed widget
+          const widget = form.querySelector('.turnstile-widget');
+          if (widget){
+            turnstile.reset(widget);
+            widget.style = VISIBLE_WIDGET_CONTAINER_STYLES;
+          } else {
+            // TODO: handle
+            console.error('No turnstile present in the form');
+          }
+
+          window.displayTurnstileErrorMessage(form);
+
+          // Re-enable the button and change text back to "Submit"
+          submitButton.disabled = false;
+
+          if (submitButton.tagName === 'INPUT') {
+            submitButton.value = "Submit";
+          } else {
+            submitButton.innerText = "Submit";
+          }
+
+        };
+
+
+        window.onTurnstileLoaded = function () {
+
+          // Ensure the DOM is ready in case Turnstile loads fast on cache hit
+          const domReady = () =>
+            document.readyState === 'loading'
+              ? new Promise(res => document.addEventListener('DOMContentLoaded', res, { once: true }))
+              : Promise.resolve();
+        
+          domReady().then(() => {
+        
+            // Initial pass over any forms already on the page
+            document.querySelectorAll(SITECORE_FORMS_SELECTOR).forEach(form => {
+              window.injectTurnstileWidget(form);
+              window.bindAjaxHandlers(form);
+            });
+        
+            // Start observing for dynamically added / replaced forms
+            if (typeof window.attachGlobalSitecoreFormObserver === 'function') {
+              window.attachGlobalSitecoreFormObserver();
+            }
+          });
+        };
+        
+      </script>
+    <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a57fe0299f9f74e2',t:'MTc5NDI1OTM3NQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a57fe0299f9f74e2',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,99 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "competitor-orchestrator",
+ "route": "/guides/how-to-make-a-financial-plan/",
+ "readerQuestion": "How do I make a financial plan? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 8/22 on-topic question-sweep completions: how do you make a financial plan, what should a financial plan include, what are the 5 components of a financial plan, why make a financial plan; 14/22 off-topic: financial planner salary or career, business-plan senses, FP&A]",
+ "origin": "competitor-monitor-auto 2026-11-09 (frozen intake 9031ce2b2c89)",
+ "demandSource": "Google Autocomplete question sweep (estimate, NOT measured); SEMRUSH and DataForSEO keys unavailable, SERP unread",
+ "decisionGap": "Readers asking this question cannot get the primary-source answer and its conditions on this site; the nearest pages answer a neighboring decision (see coverage.txt).",
+ "finding": "The CFP Board's seven-step sequence works as a do-it-yourself method: gather facts, set goals, test the current course, choose actions, implement and monitor; the CFPB guide calls an emergency fund one of the first steps you can take to start saving.",
+ "conditions": "US individual or household planning; no tax or investment recommendations; the CFPB emergency fund page names the questions but the page read gives no universal target amount so none is asserted.",
+ "whatWouldChange": "A revised CFP Board process or new CFPB guidance.",
+ "basis": "reported",
+ "method": "Reported primary-source synthesis; no test or model.",
+ "whyNoQuantitativeAnalysis": "The reader decision is definitional or procedural and rests on regulator and credential-body statements; no defensible numerical input exists, so arithmetic would only restate source figures.",
+ "reasoning": "From the fetched primary pages listed in sources.md to the answer: The CFP Board's seven-step sequence works as a do-it-yourself method: gather facts, set goals, test the current course, choose actions, implement and monitor; the CFPB guide calls an emergency fund one of the first steps you can take to start saving.",
+ "sourceArtifacts": [
+  {
+   "path": "evidence/how-to-make-a-financial-plan/sources.md",
+   "sha256": "845e9debd1abb1bdf522632158f43c682e83858f922e5463183fe12fbba16e0c"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/key-facts.md",
+   "sha256": "8dc35e46b064987e06b19993407b8deb916fb19e448d7f66cd65ca2dc175a5c6"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfp-fiduciary.txt",
+   "sha256": "b7ac6ab927be2d3ae6713e5242ac107bc8c063da284f3592bfe91d793ce2a303"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfpb-emergency.txt",
+   "sha256": "4713c8f3c6903bf415bdaa82e044461af224674ef434bdba696c2da78e1c799b"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfpb-ymyg.txt",
+   "sha256": "80500f873c5c9f1830ad62573a360bf66a89e6138ec6f8f677d218516fab3b14"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfp-process.txt",
+   "sha256": "992f25adac67207c7ed1d6bdee1959a06896ae41ddeff17e211368b301b954ff"
+  }
+ ],
+ "caseSelection": {
+  "path": "evidence/how-to-make-a-financial-plan/cases.json",
+  "sha256": "7f9a6ef6f030993cc430cd7574ce39865bf4e3196ec8bc4c9dcc44f756e1a005"
+ },
+ "caseDecisions": "Retrieved approved-case candidates (0, 1, 2, 3, 4, 5, 6, 7) for the exact reader question; all concern other publishers, clients or unrelated topics and match only generic words. This site has no named-client claims in _experience.md, so none is used; no client conversation claim is made.",
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "CFP-code",
+   "CFPB-emergency",
+   "CFPB-ymyg",
+   "CFP-process"
+  ],
+  "scopeAndLimits": "US individual or household planning; no tax or investment recommendations; the CFPB emergency fund page names the questions but the page read gives no universal target amount so none is asserted.",
+  "publicMethod": "Sources linked in-line and in a Sources list; third-person attribution to the named body beside each finding.",
+  "placement": "Opening section and Takeaway name the regulator or credential body as the basis; no \"we tested\" or modeling claim."
+ },
+ "sources": [
+  {
+   "id": "CFP-code",
+   "url": "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "CFPB-emergency",
+   "url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "CFPB-ymyg",
+   "url": "https://www.consumerfinance.gov/consumer-tools/educator-tools/your-money-your-goals/",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "CFP-process",
+   "url": "https://www.cfp.net/get-certified/certification-process",
+   "checked": "2026-11-09"
+  }
+ ],
+ "counterexample": "A reader with high-interest debt may prioritize payoff alongside a small reserve; the sources read do not rank that tradeoff.",
+ "findings": [
+  {
+   "claim": "The CFP Board's seven-step sequence works as a do-it-yourself method: gather facts, set goals, test the current course, choose actions, implement and monitor; the CFPB guide calls an emergency fund one of the first steps you can take to start saving.",
+   "label": "reported",
+   "source": "CFP-code, CFPB-emergency, CFPB-ymyg, CFP-process"
+  }
+ ],
+ "exclusions": [
+  "No TESTED format: financial advice topics are outside _experience.md section G and no executed tests exist.",
+  "No client-conversation claims; no professional-review claim."
+ ],
+ "unknowns": [
+  "Search volume and live SERP/PAA (provider keys unavailable)"
+ ],
+ "selectedMedium": "text; ordered list where the answer is a list or sequence",
+ "testingLabel": "ordinary presentation (TESTED excluded; reason above)",
+ "takeawayPlan": "Treat a financial plan as a repeating cycle: list your finances, set dated goals, test your current course, act, then review, and start an emergency fund early, as the CFPB suggests. Applies to households starting a plan; complex tax, estate or investment decisions may need a professional. Evidence basis: reported (CFP Board, CFPB). Changes if you carry high-interest debt. Next step: write down your income, spending, savings and debts today and pick one dated goal."
+}

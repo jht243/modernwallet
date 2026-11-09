@@ -1,0 +1,161 @@
+{
+ "slug": "what-does-a-financial-advisor-do",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1987,
+ "floor": 1200,
+ "input_tokens": 36235,
+ "output_tokens": 18441,
+ "thinking_tokens": null,
+ "cached_tokens": 31074,
+ "est_cost_usd": 0.3957,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['What a Financial Advisor Does for You', 'Financial Advisor Fees and How Advisors Get Paid', 'Advisor, Credit Counselor and Coach Roles Compared', 'Whether You Need a Financial Advisor', 'How to Check Who You Are Talking To'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
+   "claim check: 2 claim(s) still unsupported after 2 pass(es) \u2014 auditor must cut or source: 'Someone who wants help with investments over time'; 'Someone whose main problem is debt or a budget'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1987,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 1000,
+   "floor": 1200,
+   "ratio": 0.83,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    7
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "Two advisers can therefore charge on the same basis and still give you different services, so ask each one which items on this list come with the account.",
+     "replacement": "Ask each adviser which items on this list come with the account.",
+     "type": "inference",
+     "why": "SOURCE does not say advisers charging the same basis give different services"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "A financial advisor is the wrong first call if your main problem is debt or a budget you cannot make work.",
+     "replacement": "If your main problem is debt or a budget you cannot make work, a nonprofit credit counselor may fit better than a financial advisor.",
+     "type": "unsupported",
+     "why": "SOURCE never calls an advisor the wrong choice for debt"
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Credit counseling can be free or low-cost, but it is not always free.",
+     "replacement": "Credit counseling is not always free.",
+     "type": "unsupported",
+     "why": "No fact says counseling can be free or low-cost; only fees for some services"
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Whether you need one comes down to what the fee buys compared with what you would do without the advice, and our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) works through that trade-off.",
+     "replacement": "Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) weighs cost against value.",
+     "type": "unsupported",
+     "why": "SOURCE states no basis for deciding whether you need an advisor"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "That second question means weighing the fee against what the advice would change in your finances.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not describe this cost-value reasoning"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If your main problem is debt or a budget you cannot make work, a nonprofit credit counselor may fit better than a financial advisor.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE makes no fit comparison between counselor and advisor"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "For that job, start with a credit counselor.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Recommendation not stated in SOURCE"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "An advisor also may not fit if you want a single answer to a single question.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not say advisers don't fit one-time questions"
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "If your need is debt help, a nonprofit credit counselor is the closer match.",
+     "replacement": "If your need is debt help, the CFPB describes nonprofit credit counselors who help with budgets and debts.",
+     "type": "inference",
+     "why": "SOURCE ranks no match; only describes counselor services"
+    }
+   ],
+   "deleted_final": 5,
+   "unapplied": [
+    {
+     "quote": "Someone who wants help with investments over time",
+     "type": "inference",
+     "why": "SOURCE does not state who an adviser fits",
+     "replacement": "Not published",
+     "id": "sections[2].body",
+     "reason": "replacement would change the table's columns"
+    },
+    {
+     "quote": "Someone whose main problem is debt or a budget",
+     "type": "inference",
+     "why": "SOURCE does not state audience; only describes services",
+     "replacement": "Not published",
+     "id": "sections[2].body",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "sections[2].body",
+     "quote": "Someone who wants help with investments over time",
+     "type": "inference",
+     "reason": "replacement would change the table's columns"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Someone whose main problem is debt or a budget",
+     "type": "inference",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2088
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 186.0,
+ "response_id": "msg_011Cgt64uzMMU7cs1oYxZH7N",
+ "generated_at": "2026-11-09T21:49:44+0000"
+}

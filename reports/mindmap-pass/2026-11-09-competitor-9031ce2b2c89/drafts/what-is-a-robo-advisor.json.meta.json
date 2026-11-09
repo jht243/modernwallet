@@ -1,0 +1,188 @@
+{
+ "slug": "what-is-a-robo-advisor",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1588,
+ "floor": 1200,
+ "input_tokens": 35589,
+ "output_tokens": 14945,
+ "thinking_tokens": null,
+ "cached_tokens": 31074,
+ "est_cost_usd": 0.3232,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1629,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 694,
+   "floor": 1200,
+   "ratio": 0.58,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    5
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we build our money guides from primary sources, and this one rests on",
+     "replacement": "At ModernWallet, we write plain-language money guides, and this one rests on",
+     "type": "unsupported",
+     "why": "Self-description says plain-language money guides; no primary-sources method claim."
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we write plain-language money guides, and this one rests on what the [U.S. Securities and Exchange Commission (SEC)](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) publishes on [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/glossary/robo-adviser).",
+     "replacement": "At ModernWallet, we write plain-language money guides, and this one rests on the [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/glossary/robo-adviser) glossary and the [U.S. Securities and Exchange Commission (SEC)](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) investor bulletin.",
+     "type": "unsupported",
+     "why": "Investor.gov glossary is not stated to be published by the SEC."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "In many cases the burden to update that information falls on you, so after a new job, a new loan or a change in goals, update your answers yourself.",
+     "replacement": "In many cases the burden to update that information falls on you.",
+     "type": "inference",
+     "why": "SOURCE does not name job, loan or goal-change triggers."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Ask for both documents before you sign up, because they describe the specific robo-advisor you are considering rather than robo-advisors in general.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE gives no such reasoning about the documents."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "In either case, weigh a human adviser before you sign up; our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) compares the two.",
+     "replacement": "Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) compares the two.",
+     "type": "unsupported",
+     "why": "Tells the reader to consider hiring an adviser; SOURCE gives no such advice."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "If a robo-advisor offers a hybrid human adviser, or a person for accounts above a minimum size you meet, the downturn objection no longer applies.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not say the objection fully disappears."
+    }
+   ],
+   "deleted_final": 5,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1705
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-09T22:43:10+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-is-a-robo-advisor.findings.txt",
+    "applied": [
+     {
+      "id": "sections[4].body",
+      "quote": "Our answer changes in two cases. If its questionnaire asks about your debts, real estate and outside retirement accounts, the information objection shrinks, and our [best robo-advisors roundup](/roundup/best-robo-advisors/) ranks individual providers.",
+      "replacement": "Our answer changes in two cases. If a robo-advisor's questionnaire asks about your debts, real estate and outside retirement accounts, the information objection shrinks. If it offers a hybrid human adviser, or a person for accounts above a minimum size you meet, the downturn objection shrinks. Our [best robo-advisors roundup](/roundup/best-robo-advisors/) ranks individual providers.",
+      "type": "F2 [broken 'two cases' / backward pronoun]",
+      "why": "Restore both cases, fix pronoun antecedent, and separate roundup clause."
+     },
+     {
+      "id": "introText",
+      "quote": "Whether one suits you depends on how much you want to talk to someone and on whether the questionnaire asks about everything you own and owe.",
+      "replacement": "",
+      "type": "F3 [restatement]",
+      "why": "Delete restatement of fit verdict."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "A robo-advisor is a poor fit if you want to talk to a person when markets fall, or if your finances include debts and assets its questionnaire never asks about.",
+      "replacement": "",
+      "type": "F3 [restatement]",
+      "why": "Delete restatement of fit verdict."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Investor.gov calls it \"really risky to invest with someone who isn't licensed\" and offers a free search tool that shows whether an investment professional is licensed and registered.",
+      "replacement": "Investor.gov warns that investing with someone who isn't licensed is \"really risky\" and offers a free search tool that shows whether an investment professional is licensed and registered.",
+      "type": "F4 [backward pronoun / first-read failure]",
+      "why": "Clarify ambiguous pronoun following target date fund mention."
+     },
+     {
+      "id": "introText",
+      "quote": "Robo-advisors often aim to charge lower costs and fees than traditional advisory programs, and some require lower account minimums.",
+      "replacement": "Robo-advisors often aim to charge lower costs and fees than traditional advisory programs. Some require lower account minimums.",
+      "type": "F5 [monotone-rhythm]",
+      "why": "Split sentence to break run of 15-plus word sentences."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "The same entry says the services, approaches to investing and features of robo-advisers vary widely.",
+      "replacement": "The same entry says services, approaches and features vary widely.",
+      "type": "F5 [monotone-rhythm]",
+      "why": "Shorten sentence to break monotone rhythm band."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "You answer the questionnaire, and the robo-advisor uses those answers to build and manage your portfolio.",
+      "replacement": "You answer the questionnaire. The robo-advisor uses those answers to build and manage your portfolio.",
+      "type": "F5 [monotone-rhythm]",
+      "why": "Split sentence to vary sentence lengths and improve rhythm."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we write plain-language money guides, and this one rests on the [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/glossary/robo-adviser) glossary and the [U.S. Securities and Exchange Commission (SEC)](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) investor bulletin.",
+      "finding": "F1 [tee-up / page self-reference / mislabeled link]",
+      "why": "Delete bolted-on tee-up and page self-reference with mislabeled link.",
+      "replacement": "",
+      "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "The [SEC Investor Bulletin on robo-advisers](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45), published February 23, 2017, asks readers to weigh how much human interaction matters to them and to consider their own level of financial literacy.",
+      "finding": "F1 [tee-up / page self-reference / mislabeled link]",
+      "why": "Expand and link SEC at first body mention.",
+      "replacement": "The [U.S. Securities and Exchange Commission (SEC) Investor Bulletin on robo-advisers](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45), published February 23, 2017, asks readers to weigh how much human interaction matters to them and to consider their own level of financial literacy.",
+      "reason": "replacement adds ['U.S', 'Exchange', 'Commission'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 1588,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 154.3,
+ "response_id": "msg_011Cgt6acpKw6AgxZc2dAEHU",
+ "generated_at": "2026-11-09T21:55:55+0000"
+}

@@ -1,0 +1,64 @@
+# ROW PROMPT (DATA ONLY)
+
+route: /guides/what-is-a-cfp/
+slug: what-is-a-cfp
+page type: explainer (depth floor 1200 body words)
+medium: text → text (one small GFM table; no calculator, no visual)
+register: operator  (we/you voice; sentence 1 is the answer; one-sentence tee-up next, drawn only from _experience.md DOMAIN framings such as "In the guides we publish here..."; first company claim reads "At ModernWallet, we ...")
+updated: 2026-11-09
+primary keyword: what is a certified financial planner (autocomplete estimate 250-2,500/mo, NOT measured)
+intent: informational with a deciding question; US reader
+
+reader question: "What is a Certified Financial Planner (CFP), and what does it take to earn the credential? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 15/22 on-topic question-sweep completions: what is / what do certified financial planners do / how become / how do they get paid / are they worth the money; 7/22 off-topic or non-US: how many in India, in the US count, salary and course variants]"
+answer: A CFP professional is a financial planner certified by the CFP Board after coursework, a bachelor degree (which may be finished up to five years after the exam), a 170-question exam, 6,000 hours of experience (or 4,000 apprenticeship hours) and an ethics declaration, and who must act as a fiduciary when giving financial advice. (definition with the requirements)
+answer placement: section 1 "What a CFP Professional Is and What It Takes to Earn It" (sentence 1 of the intro already states the core answer)
+
+## Section plan (headings Title Case, noun phrases; primary keyword in 2 to 3 headings)
+1. What a CFP Professional Is and What It Takes to Earn It — sentence 1 answers: a financial planner certified by the CFP Board after meeting four requirements (FR1) and who must act as a fiduciary when giving financial advice (FC1); sentence 2 notes the bachelor's degree may be finished up to five years after the exam (FR2).
+2. The Four Requirements in Detail — a GFM table or list: Education (FR2), Exam (FR3), Experience (FR4), Ethics (FR5).
+3. What a CFP Professional Does — the seven practice standards as a numbered list (FR6), one plain sentence each from the headings only.
+4. The Fiduciary Commitment and Its Limits — FC1, FC2; the credential describes competence and conduct for financial advice and does not state how a person is paid or whether they are registered as an adviser or broker; check registration (FA5) and the Form CRS; Tricky Titles (FA7).
+5. CFP, CFA and CTFA: Which Credential Fits — three sentences pointing to /guides/what-is-a-cfa/ and /guides/what-is-a-ctfa/ with no claims about them beyond their titles; who a CFP is not for (a reader who needs only trust administration or only investment analysis; point to those pages); what would change the answer (CFP Board changes to requirements).
+6. "Our Takeaway" (heading).
+FAQ: What does a CFP do? (FR6) How do CFPs get paid? (answer: the sources read do not say; ask the person and read the Form CRS, FQ4 as an example of a disclosure) Is a CFP worth it? (conditions only: the credential signals planning competence and a fiduciary commitment; verify) How do I become a CFP? (FR1 to FR5; coursework average 12 to 18 months, FR2)
+
+## Evidence basis and attribution (provenance)
+basis: reported (sources fetched 2026-11-09 listed in the fact list). NO internal testing, NO modeling claim, NO client conversations, NO professional-review claim. Attribute every rule to the named source in third-person phrasing ("Investor.gov says ...", "The CFP Board says ..."). Do not write "we tested" or "our analysis".
+
+## Planned takeaway (inside the "Our Takeaway" section)
+A CFP professional has met four published requirements and committed to act as a fiduciary when giving financial advice. It signals planning competence but not how the person is paid or registered, which you still verify. Evidence basis: reported (CFP Board). Changes if you need only trust work or investment analysis. Next step: verify the person on the CFP Board site and on Investor.gov before you hire.
+
+## CLOSED FACT LIST (everything the page may state; anything not on this list, you do not know. Never invent a figure, fee, date, rule or URL; if it is not on this list, say it is not covered here)
+FC3. CFP Board Code (checked 2026-11-09), "Provide Information to a Client When Providing Financial Advice": a CFP professional must tell the client, before or at the engagement, how the client pays for the products and services and how the CFP professional, the CFP professional's firm and any related party are compensated.
+FC4. CFP Board Code, "Duties When Representing Compensation Method": a CFP professional may not make false or misleading representations about the professional's or the firm's method of compensation. The Code limits use of the term "fee-only"; a professional whose firm is "fee-based" or similar must not use the term in a way that suggests fee-only and must clearly state that fees and commissions are earned or that the firm is not fee-only. CFP Board describes "fee and commission" as the method of those who receive both fees and sales-related compensation.
+FC5. The CFP credential does not set one way to be paid; a CFP professional may also be registered as an investment adviser, a broker-dealer representative or both, and that registration is checked separately (Investor.gov search; Form CRS). Say both: the Code requires compensation disclosure, and registration still has to be verified.
+FR1. CFP Board certification process page: the "4 E's" of CFP certification are Education, Exam, Experience and Ethics.
+FR2. Education: a two-part requirement: (1) coursework on financial planning through a CFP Board Registered Program, and (2) a bachelor's degree or higher (in any discipline) from an accredited college or university. You must complete the coursework before you can take the CFP exam. You have 5 years from the date you pass the exam to complete the bachelor's degree requirement. Average time to complete the coursework requirement: 12 to 18 months.
+FR3. Exam: the CFP exam is a 170-question, multiple-choice test that consists of two 3-hour sessions over one day. It includes stand-alone and scenario-based questions, as well as questions associated with case studies. (Do not state any pass rate: not on this list.)
+FR4. Experience: you need either 6,000 hours of professional experience related to the financial planning process, or 4,000 hours of apprenticeship experience that meets additional requirements. You can fulfill the experience requirement either before or after you take the exam. The experience must be completed within 10 years before and 5 years after successful completion of the exam. The requirement prepares you to provide personal financial planning to the public without supervision.
+FR5. Ethics: you must sign the Ethics Declaration (and the page lists a background check among the final requirements).
+FR6. CFP Board Code, practice standards headings (checked 2026-11-09): Understanding the Client's Personal and Financial Circumstances; Identifying and Selecting Goals; Analyzing the Client's Current Course of Action and Potential Alternative Course(s) of Action; Developing the Financial Planning Recommendation(s); Presenting the Financial Planning Recommendation(s); Implementing the Financial Planning Recommendation(s); Monitoring Progress and Updating. (Steps 1 to 3 and 6 to 7 are named on separate CFP Board pages; the Code page lists all of the standards.)
+FC1. CFP Board Code of Ethics and Standards of Conduct (checked 2026-11-09): "At all times when providing Financial Advice to a Client, a CFP professional must act as a fiduciary, and therefore, act in the best interests of the Client."
+FC2. CFP Board certification process page: the ethics requirement is the final step on the path to certification; it indicates you have agreed to adhere to high ethical and professional standards for the practice of financial planning, and to act as a fiduciary when providing financial advice to your client, always putting their best interests first. You sign the Ethics Declaration.
+FA5. Investor.gov, Working with an Investment Professional page: the most important question to consider before hiring an investment professional is whether the person is registered with the SEC or with a state securities regulator. It is "really risky to invest with someone who isn't licensed". Investor.gov has a free and simple search tool that shows whether your investment professional is licensed and registered.
+FA7. Investor.gov Working with an Investment Professional page, "Tricky Titles": if a broker or adviser has initials after their name, do not assume that makes that individual more qualified than another. The titles are not all the same and do not necessarily mean better service for you; the initials may mean the adviser or broker can only sell certain products. The page points to a FINRA list showing how some credentials are easy to obtain and others hard-earned.
+FQ4. J.P. Morgan Securities LLC's Form CRS (a broker-dealer also registered as an investment adviser; https://files.brokercheck.finra.org/crs_79.pdf, retrieved 2026-11-09), "How do your financial professionals make money?": the firm says it compensates its financial professionals in different ways depending on how it serves you; in certain cases they receive a monthly minimum salary along with product-related revenue in the form of commissions and advisory fees; in a full-service brokerage account the firm charges commissions on purchases and sales and "higher commissions, costs or fees could lead to higher compensation for a financial professional"; in advisory accounts it may credit a portion of the asset-based fee to its professionals, so they earn more based on assets enrolled. Name the firm and link the CRS when you use this as an example; say it is one firm's disclosure, not how every firm pays.
+
+## CLOSED URL LIST (the only external links allowed; link the FIRST mention of each organization)
+https://files.brokercheck.finra.org/crs_79.pdf  (J.P. Morgan Securities LLC Form CRS; link its name at first mention)
+https://www.cfp.net/get-certified/certification-process (CFP Board certification process; link first mention of 'CFP Board'); https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct (CFP Board Code); https://www.cfp.net/verify-a-cfp-professional; https://www.finra.org/investors/professional-designations (FINRA; link first mention of FINRA, expand Financial Industry Regulatory Authority); https://www.investor.gov/CRS (Form CRS, link at first mention); https://adviserinfo.sec.gov (link first mention of SEC); https://www.investor.gov/introduction-investing/getting-started/working-investment-professional (Investor.gov); https://adviserinfo.sec.gov
+
+## Internal links the page may use (real routes)
+/guides/what-is-a-cfa/ (section 5, required), /guides/what-is-a-ctfa/ (section 5, required), /compare/financial-advisor-vs-financial-planner/ (section 4, required), /guides/how-to-choose-a-financial-advisor/ (section 4)
+
+## Title and metadata
+- title: 50 to 60 characters; suggested "What a CFP Professional Is and What It Takes to Earn It". h1: "What Is a Certified Financial Planner (CFP)?". metaDescription up to 155 characters; suggested: A CFP professional has met education, exam, experience and ethics requirements and must act as a fiduciary when giving financial advice.
+- slug: what-is-a-cfp; updated: 2026-11-09. cardBlurb one sentence.
+
+## Other constraints
+- Operator register: sentence 1 answers the question; a one-sentence tee-up may follow only from _experience.md DOMAIN framings ("In the guides we publish here..."); first company claim reads "At ModernWallet, we ..." (once). No "we tested", no modeling or client claim: basis is REPORTED primary sources; attribute each rule to its named source in third person.
+- tools: use only [{"href":"/calculators/","label":"All financial calculators"}]. sources: only from the CLOSED URL LIST.
+- Not investment, legal or tax advice: describe rules, trade-offs and what would change the answer; never tell the reader to hire a specific person or buy a product. No fee percentages, no dollar fees, no salaries: none are on the fact list.
+- Never say a financial coach or financial counselor is regulated or unregulated, licensed or unlicensed (not on the fact list). Never compare Regulation Best Interest as weaker or stronger than the adviser duty.
+- No em-dashes, no "honest", no "X, not Y" flourish, no "the vendor/platform" stand-ins; follow the anti-AI WRITER list. Headings Title Case noun phrases; FAQ questions sentence case.
+- Include "Who this is not for" and "what would change our answer" inside the body (not as a recap section), and close the page's last body sentence on a concrete next action. No Conclusion or Summary heading.

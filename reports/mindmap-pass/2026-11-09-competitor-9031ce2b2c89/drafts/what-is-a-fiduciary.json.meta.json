@@ -1,0 +1,209 @@
+{
+ "slug": "what-is-a-fiduciary",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1889,
+ "floor": 1200,
+ "input_tokens": 35782,
+ "output_tokens": 18541,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.5139,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Rules outside SEC registration and the CFP Board, such as state rules and the ro'; 'A fiduciary duty comes from a registration or a credential, and Investor.gov war'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1865,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 724,
+   "floor": 1200,
+   "ratio": 0.6,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    3
+   ],
+   "applied": [
+    {
+     "id": "sections[1].body",
+     "quote": "Both can also advise on whether to sell or hold afterward, so the kind of advice you receive does not tell you which rule covers it.",
+     "replacement": "Both can also advise on whether to sell or hold afterward.",
+     "type": "inference",
+     "why": "SOURCE does not draw this consequence from FA8"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Pay is the first place to look for a conflict.",
+     "replacement": "Investor.gov ties these conflicts to the way advisers make money.",
+     "type": "unsupported",
+     "why": "SOURCE ranks no place to look first; FA1 only links pay to conflicts"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Titles do not prove fiduciary status.",
+     "replacement": "Titles and initials need a closer look.",
+     "type": "inference",
+     "why": "FA7 is about qualifications and products, not fiduciary status"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Search an adviser's name at [adviserinfo.sec.gov](https://adviserinfo.sec.gov) and a broker's name at [BrokerCheck](https://brokercheck.finra.org), run by the Financial Industry Regulatory Authority (FINRA).",
+     "replacement": "Search an adviser's name at [adviserinfo.sec.gov](https://adviserinfo.sec.gov) and a broker's name at [BrokerCheck](https://brokercheck.finra.org).",
+     "type": "unsupported",
+     "why": "SOURCE does not say who runs BrokerCheck"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Form CRS also includes conversation starters, which give you a ready list of questions for a first meeting.",
+     "replacement": "Form CRS also includes key questions to ask, called conversation starters.",
+     "type": "unsupported",
+     "why": "FA6 says key questions to ask; no first-meeting occasion"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "That arrangement fits someone who wants continuing oversight of their investments.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not say who the arrangement fits"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Conflicts of interest remain under every one of these standards, so read the firm's Form CRS and ask about them.",
+     "replacement": "Investor.gov says the way advisers make money creates some conflicts, so read the firm's Form CRS and ask about them.",
+     "type": "unsupported",
+     "why": "FA1 states conflicts only for investment advisers"
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Investor.gov says advisers typically give ongoing advice and monitor your investments, which fits someone who wants continuing oversight.",
+     "replacement": "Investor.gov says advisers typically give ongoing advice and monitor your investments.",
+     "type": "inference",
+     "why": "SOURCE does not say who this arrangement fits"
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The firm's Form CRS, which lists services and the standard for each",
+     "replacement": "The firm's Form CRS, which states the types of services and the required standard of conduct",
+     "type": "inference",
+     "why": "FA6 says Form CRS states the standard tied to services, not per service."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "This applies to anyone paying for investment advice.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "No source states the duty applies to anyone paying for advice."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "A financial advisor is a fiduciary only if registered as an investment adviser or if the advisor is a CFP professional giving financial advice.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Sources do not state these are the only cases."
+    }
+   ],
+   "deleted_final": 3,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1940
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-09T22:33:58+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-is-a-fiduciary.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we answer a question like what is a fiduciary with the rule itself and the name of the body that wrote it.",
+      "replacement": "",
+      "type": "F1 tee-up / meta-narration",
+      "why": "Generic tee-up narrating writing, not a licensed framing."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "A professional registered as a broker-dealer works under Regulation Best Interest, a separate SEC standard for brokers. Many firms are registered as both, so ask which standard applies to your account and read the firm's Form CRS.",
+      "replacement": "Some are, depending on how they are registered. An SEC-registered investment adviser owes a fiduciary duty of care and loyalty, and a CFP professional must act as a fiduciary when giving financial advice. A professional registered as a broker-dealer works under Regulation Best Interest, a separate SEC standard for brokers. Many firms are registered as both, so ask which standard applies to your account and read the firm's Form CRS.",
+      "type": "F2 faq-direct-answer",
+      "why": "Answer must lead with a direct answer to the question."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "The Certified Trust and Fiduciary Advisor (CTFA) is a separate credential from the American Bankers Association (ABA), covered in our [CTFA guide](/guides/what-is-a-ctfa/).",
+      "replacement": "The Certified Trust and Fiduciary Advisor (CTFA) is a separate credential, covered in our [CTFA guide](/guides/what-is-a-ctfa/).",
+      "type": "F3 unlinked-company",
+      "why": "ABA is not linked and has no URL on closed list."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "The answer changes if the person is registered only as a broker or holds neither registration.",
+      "replacement": "The answer changes if the person is registered only as a broker or holds neither registration. Rules outside SEC registration and the CFP Board, such as state rules and the roles of insurance agents, banks and trust companies, are not covered here.",
+      "type": "F4 applicability condition missing",
+      "why": "State rules, banks, and insurance agents are outside sources read."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Not necessarily. The SEC and Investor.gov sources cited here do not define \"financial planner\" as a title, and Investor.gov warns that titles and initials are not all the same.",
+      "replacement": "Not necessarily. A fiduciary duty comes from a registration or a credential, and Investor.gov warns that titles and initials are not all the same.",
+      "type": "F5 self-reference",
+      "why": "Removes self-reference to sources cited and hedged non-answer."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      2
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[5].body",
+       "quote": "Rules outside SEC registration and the CFP Board, such as state rules and the roles of insurance agents, banks and trust companies, are not covered here.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[1].answer",
+       "quote": "A fiduciary duty comes from a registration or a credential, and Investor.gov warns that titles and initials are not all the same.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1889,
+    "flags": [
+     "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Rules outside SEC registration and the CFP Board, such as state rules and the ro'; 'A fiduciary duty comes from a registration or a credential, and Investor.gov war'"
+    ]
+   }
+  ]
+ },
+ "seconds": 206.1,
+ "response_id": "msg_011Cgt5kwEXAy9xuKyRjbAnk",
+ "generated_at": "2026-11-09T21:45:59+0000"
+}

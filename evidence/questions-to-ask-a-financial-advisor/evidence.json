@@ -1,0 +1,109 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "competitor-orchestrator",
+ "route": "/guides/questions-to-ask-a-financial-advisor",
+ "readerQuestion": "What questions should I ask a financial advisor before hiring them? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 18 of the 23 completions are on-topic (before hiring, first meeting, retirement, investing, interview, potential/prospective/new advisor); 5 are locale or brand variants (Australia, UK x2, Canada, Dave Ramsey)]",
+ "origin": "competitor-monitor-auto 2026-11-09 (frozen intake 9031ce2b2c89)",
+ "demandSource": "Google Autocomplete question sweep (estimate, NOT measured); SEMRUSH and DataForSEO keys unavailable, SERP unread",
+ "decisionGap": "Readers asking this question cannot get the primary-source answer and its conditions on this site; the nearest pages answer a neighboring decision (see coverage.txt).",
+ "finding": "The SEC requires every registered broker-dealer and investment adviser to print standard conversation-starter questions on its relationship summary; those questions cover service type, investment selection, qualifications, fees on a $10,000 example, legal obligations, conflicts, compensation and disciplinary history, so a reader can compare firms with one list.",
+ "conditions": "Applies to registered investment advisers and broker-dealers serving US retail investors; insurance-only agents and banks may use other forms.",
+ "whatWouldChange": "A revision to Form CRS or the SEC conversation-starter list.",
+ "basis": "reported",
+ "method": "Reported primary-source synthesis; no test or model.",
+ "whyNoQuantitativeAnalysis": "The reader decision is definitional or procedural and rests on regulator and credential-body statements; no defensible numerical input exists, so arithmetic would only restate source figures.",
+ "reasoning": "From the fetched primary pages listed in sources.md to the answer: The SEC requires every registered broker-dealer and investment adviser to print standard conversation-starter questions on its relationship summary; those questions cover service type, investment selection, qualifications, fees on a $10,000 example, legal obligations, conflicts, compensation and disciplinary history, so a reader can compare firms with one list.",
+ "sourceArtifacts": [
+  {
+   "path": "evidence/questions-to-ask-a-financial-advisor/sources.md",
+   "sha256": "a308ab949c3c65d333f0f1252ee1df6efd0c982b31a4aa82700476094436b77b"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/key-facts.md",
+   "sha256": "8dc35e46b064987e06b19993407b8deb916fb19e448d7f66cd65ca2dc175a5c6"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/crs-sample.pdf",
+   "sha256": "5ebd259859b527ccd53703b0a2577b4801a162766ed22db1af4b38245f27a78f"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/form-crs.txt",
+   "sha256": "183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/working-with-pro.txt",
+   "sha256": "b767b5d82cb88f2ca63fbd349848e8ee82781c95202f223afa93dffab08d4134"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/adviser-vs-broker.txt",
+   "sha256": "3097f09d12f1911c5b97d30624c147d0d440ded32a60177e0329058f2ae2a4d2"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfp-fiduciary.txt",
+   "sha256": "b7ac6ab927be2d3ae6713e5242ac107bc8c063da284f3592bfe91d793ce2a303"
+  }
+ ],
+ "caseSelection": {
+  "path": "evidence/questions-to-ask-a-financial-advisor/cases.json",
+  "sha256": "52f9f4d58dbf93ea0afe2aeb733032d537eb88a8f01e5c74db2eb47e04dc0d52"
+ },
+ "caseDecisions": "Retrieved approved-case candidates (0, 1, 2, 3, 4, 5, 6, 7) for the exact reader question; all concern other publishers, clients or unrelated topics and match only generic words. This site has no named-client claims in _experience.md, so none is used; no client conversation claim is made.",
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "CRS-sample",
+   "INV-crs",
+   "INV-working",
+   "INV-advisers",
+   "CFP-code"
+  ],
+  "scopeAndLimits": "Applies to registered investment advisers and broker-dealers serving US retail investors; insurance-only agents and banks may use other forms.",
+  "publicMethod": "Sources linked in-line and in a Sources list; third-person attribution to the named body beside each finding.",
+  "placement": "Opening section and Takeaway name the regulator or credential body as the basis; no \"we tested\" or modeling claim."
+ },
+ "sources": [
+  {
+   "id": "CRS-sample",
+   "url": "https://files.brokercheck.finra.org/crs_79.pdf",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "INV-crs",
+   "url": "https://www.investor.gov/CRS",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "INV-working",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "INV-advisers",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "CFP-code",
+   "url": "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct",
+   "checked": "2026-11-09"
+  }
+ ],
+ "counterexample": "A fee-only adviser with a very small account may have no minimum-based quote, so the $10,000 example may be answered as a percentage.",
+ "findings": [
+  {
+   "claim": "The SEC requires every registered broker-dealer and investment adviser to print standard conversation-starter questions on its relationship summary; those questions cover service type, investment selection, qualifications, fees on a $10,000 example, legal obligations, conflicts, compensation and disciplinary history, so a reader can compare firms with one list.",
+   "label": "reported",
+   "source": "CRS-sample, INV-crs, INV-working, INV-advisers, CFP-code"
+  }
+ ],
+ "exclusions": [
+  "No TESTED format: financial advice topics are outside _experience.md section G and no executed tests exist.",
+  "No client-conversation claims; no professional-review claim."
+ ],
+ "unknowns": [
+  "Search volume and live SERP/PAA (provider keys unavailable)"
+ ],
+ "selectedMedium": "text; ordered list where the answer is a list or sequence",
+ "testingLabel": "ordinary presentation (TESTED excluded; reason above)",
+ "takeawayPlan": "Ask every candidate the same short list from the SEC relationship summary, then compare their written answers with their Form CRS and public record; walk away from anyone who is not registered; treat a missing Form CRS or a disciplinary record you cannot get explained as reasons to look elsewhere. Applies to anyone hiring an advisor or broker. Evidence basis: reported (SEC Form CRS as printed by a registered firm, Investor.gov). Changes if you need only a one-time answer. Next step: copy the list, send it before the first meeting and check the registration on Investor.gov."
+}

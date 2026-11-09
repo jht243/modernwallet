@@ -1,0 +1,180 @@
+{
+ "slug": "questions-to-ask-a-financial-advisor",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1934,
+ "floor": 1200,
+ "input_tokens": 35833,
+ "output_tokens": 17353,
+ "thinking_tokens": null,
+ "cached_tokens": 31074,
+ "est_cost_usd": 0.3723,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A clear answer gives two dollar figures that add up to $10,000.'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1951,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 856,
+   "floor": 1200,
+   "ratio": 0.71,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "Written answers are easier to line up against the firm's Form CRS after the meeting.",
+     "replacement": "Then compare the written answers with the firm's Form CRS after the meeting.",
+     "type": "inference",
+     "why": "SOURCE makes no claim that written answers are easier to compare"
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "If the person lists CFP (Certified Financial Planner) after their name, look the name up on the [CFP Board's verification page](https://www.cfp.net/verify-a-cfp-professional).",
+     "replacement": "If the person lists CFP after their name, look the name up on the [CFP Board's verification page](https://www.cfp.net/verify-a-cfp-professional).",
+     "type": "unsupported",
+     "why": "SOURCE never expands CFP as Certified Financial Planner"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1956
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-09T22:41:55+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/questions-to-ask-a-financial-advisor.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we start from that official list because each firm's summary uses similar headings in a similar order, so you can compare firms side by side.",
+      "replacement": "",
+      "type": "tee-up non sequitur / unlicensed claim",
+      "why": "Tee-up gives layout reasoning rather than licensed domain framing and asserts an unsupported method."
+     },
+     {
+      "id": "introText",
+      "quote": "[Securities and Exchange Commission (SEC)](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional)",
+      "replacement": "[Securities and Exchange Commission (SEC)](https://adviserinfo.sec.gov)",
+      "type": "link label points to the wrong page",
+      "why": "First SEC mention is linked to Investor.gov instead of an SEC URL."
+     },
+     {
+      "id": "introText",
+      "quote": "The questions to ask a financial advisor before hiring are the conversation starters on [Form CRS]",
+      "replacement": "The questions to ask a financial advisor before hiring come from the conversation starters printed on a firm's [Form CRS]",
+      "type": "source misstatement: 'eight conversation starters' and one-firm list generalized",
+      "why": "List varies across firms and is drawn from one dual registrant's summary."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "The firm whose form is quoted here says its professionals can be paid through commissions, advisory fees or both, and that higher commissions, costs or fees could lead to higher pay for the professional.",
+      "replacement": "The firm whose form is quoted here says it pays its financial professionals in different ways, including commissions and advisory fees, and that higher commissions, costs or fees could lead to higher pay for the professional.",
+      "type": "incomplete paraphrase of source (pay)",
+      "why": "Omits salary and bonus compensation models stated in the firm's Form CRS disclosure."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "so an unexplained entry is a reason to choose someone else",
+      "replacement": "We would treat an entry the person cannot explain as a reason to choose someone else.",
+      "type": "source-support overstated / red flags not labeled as editorial",
+      "why": "Investor.gov lists disciplinary history to weigh, so rejecting unexplained entries must be labeled editorial judgment."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "This page does not cover retirement account rules or contribution limits.",
+      "replacement": "Retirement account rules and contribution limits are outside these questions.",
+      "type": "page self-reference",
+      "why": "Removes self-referential writing narration."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "faqs[0].answer",
+      "quote": "Ask the eight conversation starters from Form CRS.",
+      "finding": "source misstatement: 'eight conversation starters' and one-firm list generalized",
+      "why": "Questions come from one dual registrant's form, not a universal list of eight.",
+      "replacement": "Ask the eight questions below, drawn from one dual registrant's Form CRS and Investor.gov's guidance. Read the Form CRS of the firm you are considering for its own list.",
+      "reason": "replacement adds [\"Investor.gov's\"] not in SOURCE"
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Ask every candidate the same eight questions from the SEC's relationship summary",
+      "finding": "source misstatement: 'eight conversation starters' and one-firm list generalized",
+      "why": "Generalizes one dual registrant's relationship summary questions as universal SEC questions.",
+      "replacement": "Ask every candidate the eight questions below, drawn from one dual registrant's Form CRS and Investor.gov's guidance",
+      "reason": "replacement adds [\"Investor.gov's\"] not in SOURCE"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Three answers are reasons to stop and look at other candidates, based on what Investor.gov says and what Form CRS must contain.",
+      "finding": "source-support overstated / red flags not labeled as editorial",
+      "why": "Items are situations, not answers, and two are editorial judgments rather than regulator warnings.",
+      "replacement": "Three situations are reasons to look at other candidates. The first rests on Investor.gov's warning. The other two are our judgment, built on what Form CRS must contain.",
+      "reason": "replacement adds [\"Investor.gov's\"] not in SOURCE"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "If the person lists CFP after their name",
+      "finding": "undefined acronym",
+      "why": "Acronym CFP must be spelled out on first mention.",
+      "replacement": "If the person lists CFP (Certified Financial Planner) after their name",
+      "reason": "replacement adds ['Certified', 'Planner'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[0].body",
+       "quote": "A clear answer gives two dollar figures that add up to $10,000.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1934,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A clear answer gives two dollar figures that add up to $10,000.'"
+    ]
+   }
+  ]
+ },
+ "seconds": 177.1,
+ "response_id": "msg_011Cgt6L7WotgFiUqKHA6SdN",
+ "generated_at": "2026-11-09T21:53:01+0000"
+}

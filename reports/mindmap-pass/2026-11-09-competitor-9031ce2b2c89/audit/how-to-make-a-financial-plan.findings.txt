@@ -1,0 +1,43 @@
+PAGE /guides/how-to-make-a-financial-plan/  | round 1 | reviewer phase4-auditor-1 | VERDICT FAIL | profile high
+Findings are source-checked against the captures in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/ and the row prompt fact list. Format per finding: QUOTE (verbatim from the draft/source), DEFECT, FIX.
+Apply with: python3 scripts/lib/content_gen.py fix --draft <draft> --findings <this file> --facts <row prompt> --floor 1200 (Rung 1) except where a finding says Rung 2 / needs added facts. Re-run Rung 0 lint and re-submit the whole page for round 2.
+
+F1 [original adaptation attributed to the CFP Board / missing visible attribution]  FIELD: sections[0].body
+  QUOTE: "The CFP Board's standards translate into seven steps a household can follow:"
+  DEFECT: The CFP Board's practice standards describe what a CFP professional does for a client. The household wording (for example 'Put the plan in writing and share it with anyone it affects', 'insurance and estate documents') is ModernWallet's own adaptation, but the sentence credits the translation to the CFP Board. evidence.json repeats the claim ('works as a do-it-yourself method'), which no source states. _decision-evidence.md section 3 requires our own contribution to be visibly attributed (what we did and how to check it).
+  FIX: REPLACE with: "We adapted the CFP Board's seven practice standards into household tasks. The wording of the tasks is ours, not CFP Board guidance, and the table below shows each task beside the standard it comes from:" Change FAQ 4 'you can run the same steps yourself' to 'you can adapt the same steps yourself'.
+
+F2 [central recommendation overreads its source and contradicts the page]  FIELD: introText, sections[0].body, sections[3] heading, step 6
+  QUOTE: "The first piece to build is an emergency fund, a cash reserve for surprise costs such as a car repair or a medical bill."
+  QUOTE: "The first action to take is an emergency fund, which the [CFPB](https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/) calls "one of the first steps you can take to start saving.""
+  QUOTE: "6. Carry out the changes, starting with an emergency fund."
+  DEFECT: The CFPB sentence says an emergency fund is 'one of the first steps you can take to start saving'. It says nothing about the first step of a financial plan, and the page itself says the sources do not rank debt payoff against a reserve. The page therefore asserts 'the first piece/action' (intro, section 1, step 6, table row and the heading 'An Emergency Fund as the First Action') and then admits it cannot rank it.
+  FIX: REPLACE 'The first piece to build is' with 'One early piece to build is'; 'The first action to take is an emergency fund, which the CFPB calls' with 'One early action is an emergency fund, which the CFPB calls'; step 6 and the matching table cell with 'Carry out the changes, such as starting an emergency fund'; heading with 'An Emergency Fund as an Early Step'.
+
+F3 [undefined acronyms]  FIELD: sections[0].body
+  QUOTE: "[CFPB](https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/)"
+  DEFECT: 'CFPB' is used with no expansion (and 'CFP Board' on first mention is the same defect). SEO rule: define every acronym on first use.
+  FIX: At first mention write 'the [Certified Financial Planner Board of Standards (CFP Board)](https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct)' and 'the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/)'.
+
+F4 [generic tee-up (portability test)]  FIELD: introText
+  QUOTE: "At ModernWallet, we publish free calculators and plain-language money guides."
+  DEFECT: The sentence could move unchanged to any page on the site and says nothing about this subject. Bolted-on tee-up fails GATE Tee-up.
+  FIX: DELETE the sentence. Record `teeup-exempt: source-attributed regulatory explainer; no licensed first-hand framing fits this topic` in the run notes (operator register; sentence 1 stays the answer).
+
+F5 [restatement (table repeats the list; FAQ 2 repeats FAQ 1)]  FIELD: sections[0].body, faqs[0..1]
+  QUOTE: "Each of the seven standards, listed by its official name, lines up with one household task:"
+  DEFECT: The seven-item numbered list is followed immediately by a table that gives the same seven tasks again (with the official names added). FAQ 'What are the components of a financial plan?' repeats FAQ 'What should a financial plan include?' (same facts, same 'do not set an official list' hedge twice). A table is allowed only where it carries data the prose does not.
+  FIX: Keep the table and DELETE the numbered list above it (or the reverse). In FAQ 2, keep the first sentence and DELETE 'The CFP Board organizes planning as seven steps, and its standards do not number a set of components.' and in FAQ 1 DELETE 'The CFP Board's standards describe steps in a process, and they do not set an official list of plan components.' (hedged restatements).
+
+F6 [monotone-rhythm]  FIELD: Our Takeaway + faqs
+  QUOTE: "Households with complex tax, estate or investment questions may need a professional to run the same steps with them."
+  DEFECT: Measured: 93 sentences, S/M/L = 11/34/48. Sentences 78 to 93 (16 in a row: end of the Takeaway and all four FAQ answers) are all 15+ words.
+  FIX: Vary real sentences: split Takeaway S80 into "Write down your income, spending, savings and debts today. Pick one goal with an amount and a date, and you can make a financial plan you can start this week."; shorten FAQ 1 S82 to "The CFP Board gives these as examples of what a planner gathers." (12 words); shorten FAQ 2 S87 to "The actions cover goals, testing, changes, carrying out and review." Re-measure.
+
+F7 [meta-narration ('the sources read') / tautology / incoherent label]  FIELD: sections[0], sections[4], sections[1], sections[5]
+  QUOTE: "the sources read do not rank one ahead of the other"
+  QUOTE: "Our [net worth guide](/net-worth/how-to-calculate-net-worth) covers net worth."
+  QUOTE: "Who this is not for: the do-it-yourself method fits a household starting a plan."
+  DEFECT: 'The sources read' narrates the research process to the reader. 'Our net worth guide covers net worth.' says nothing (restates its link text). 'Who this is not for:' is followed by a sentence about who it IS for, so the required who-not-for element is never stated.
+  FIX: REPLACE: 'because the sources read do not rank one ahead of the other' with 'because neither the CFP Board standards nor the CFPB emergency fund guide ranks one ahead of the other' (do the same in the debt section opener); 'Our net worth guide covers net worth.' with 'To total the assets and liabilities above, use our [net worth guide](/net-worth/how-to-calculate-net-worth).'; 'Who this is not for: the do-it-yourself method fits a household starting a plan.' with 'Who this is not for: a household with complex tax, estate or business questions, which may need a professional.' and drop the duplicate sentence after it.
+

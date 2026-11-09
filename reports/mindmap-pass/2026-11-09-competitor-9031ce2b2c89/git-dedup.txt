@@ -1,0 +1,7 @@
+git log -S checks run 2026-11-09 for each proposed slug:
+what-is-a-fiduciary: no prior commits touch this slug
+what-does-a-financial-advisor-do: no prior commits touch this slug
+questions-to-ask-a-financial-advisor: no prior commits touch this slug
+what-is-a-robo-advisor: no prior commits touch this slug
+what-is-a-cfp: no prior commits touch this slug
+how-to-make-a-financial-plan: no prior commits touch this slug

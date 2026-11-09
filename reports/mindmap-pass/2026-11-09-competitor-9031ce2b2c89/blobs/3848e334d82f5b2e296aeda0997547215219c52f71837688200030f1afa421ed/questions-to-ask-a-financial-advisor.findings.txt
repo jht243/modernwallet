@@ -1,0 +1,41 @@
+PAGE /guides/questions-to-ask-a-financial-advisor/  | round 1 | reviewer phase4-auditor-1 | VERDICT FAIL | profile high
+Findings are source-checked against the captures in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/ and the row prompt fact list. Format per finding: QUOTE (verbatim from the draft/source), DEFECT, FIX.
+Apply with: python3 scripts/lib/content_gen.py fix --draft <draft> --findings <this file> --facts <row prompt> --floor 1200 (Rung 1) except where a finding says Rung 2 / needs added facts. Re-run Rung 0 lint and re-submit the whole page for round 2.
+
+F1 [tee-up non sequitur / unlicensed claim]  FIELD: introText
+  QUOTE: "At ModernWallet, we start from that official list because each firm's summary uses similar headings in a similar order, so you can compare firms side by side."
+  DEFECT: The 'because' clause gives a reason about Form CRS layout, not about why we start from the list, so the sentence does not parse as a tee-up; it also states a method ('we start from') that no packet supports, and restates the next facts. Bolted-on tee-up fails GATE Tee-up.
+  FIX: DELETE the sentence. Record `teeup-exempt: source-attributed regulatory explainer; no licensed first-hand framing fits this topic` in the run notes (operator register; sentence 1 stays the answer).
+
+F2 [link label points to the wrong page]  FIELD: introText
+  QUOTE: "[Securities and Exchange Commission (SEC)](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional)"
+  DEFECT: The first mention of the SEC is linked to an Investor.gov page ('Working with an Investment Professional'), not to the SEC; the claim it supports ('prescribed by the SEC') is on investor.gov/CRS.
+  FIX: REPLACE the link target with the SEC's own URL (use https://adviserinfo.sec.gov, as the sibling guide does, or add https://www.sec.gov to the closed URL list) and keep 'Form CRS' linked to https://www.investor.gov/CRS.
+
+F3 [source misstatement: 'eight conversation starters' and one-firm list generalized]  FIELD: introText / sections[0] / faqs[0] / Our Takeaway
+  QUOTE: "The questions to ask a financial advisor before hiring are the conversation starters on [Form CRS]"
+  QUOTE: "Ask the eight conversation starters from Form CRS."
+  QUOTE: "Ask every candidate the same eight questions from the SEC's relationship summary"
+  DEFECT: The capture (sources/crs-sample.pdf, J.P. Morgan Securities LLC, a dual registrant) prints more prompts than eight: it also prints 'Who is my primary contact person? Is this person a representative of an investment adviser or a broker-dealer? Who can I talk to if I have concerns about how this person is treating me?'. 'Eight' is the page's own grouping, but the intro, FAQ 1 and Takeaway present it as the Form CRS list. Item 8 is not the printed wording either: the form prints 'As a financial professional, do you have any disciplinary history? For what type of conduct?' while the page says 'The wording below comes from the Form CRS of one firm'. The material condition (this is one dual registrant's version, advisory-or-brokerage question included) is stated only in section 1.
+  FIX: (a) Intro: "The questions to ask a financial advisor before hiring come from the conversation starters printed on a firm's [Form CRS]..." (b) FAQ 1 and Takeaway: replace 'the eight conversation starters from Form CRS' / 'the same eight questions from the SEC's relationship summary' with 'the eight questions below, drawn from one dual registrant's Form CRS and Investor.gov's guidance'. (c) Item 8: use the printed wording, or move it out of the quoted-from-the-form group, and add the primary-contact question or delete the word 'eight'. (d) Add to the first answer: 'Read the Form CRS of the firm you are considering for its own list.' (fact FA6).
+
+F4 [incomplete paraphrase of source (pay)]  FIELD: sections[0].body (item 7)
+  QUOTE: "The firm whose form is quoted here says its professionals can be paid through commissions, advisory fees or both, and that higher commissions, costs or fees could lead to higher pay for the professional."
+  DEFECT: The same form (J.P. Morgan Securities LLC) says some professionals receive a monthly minimum salary plus commissions and advisory fees and others an annual salary and cash bonus. 'Commissions, advisory fees or both' omits that. The firm is also unnamed and unlinked.
+  FIX: REPLACE with: "The firm whose form is quoted here says it pays its financial professionals in different ways, including commissions and advisory fees, and that higher commissions, costs or fees could lead to higher pay for the professional." (name and link the firm if its URL is added to the closed list).
+
+F5 [source-support overstated / red flags not labeled as editorial]  FIELD: sections[2].body (Red Flags and What To Do)
+  QUOTE: "Three answers are reasons to stop and look at other candidates, based on what Investor.gov says and what Form CRS must contain."
+  DEFECT: The three items are situations, not answers. Only the first rests on Investor.gov ('really risky ... isn't licensed'). Investor.gov lists legal or disciplinary history among things to weigh; it does not say an unexplained entry is a reason to choose someone else, and it does not tell readers to stop when a firm withholds a Form CRS. The approved chart (A3) said non-sourced red flags would be labeled as editorial judgment. They are not.
+  FIX: REPLACE with: "Three situations are reasons to look at other candidates. The first rests on Investor.gov's warning. The other two are our judgment, built on what Form CRS must contain." and, in the third bullet, replace 'so an unexplained entry is a reason to choose someone else' with 'We would treat an entry the person cannot explain as a reason to choose someone else.'
+
+F6 [undefined acronym]  FIELD: sections[1].body
+  QUOTE: "If the person lists CFP after their name"
+  DEFECT: 'CFP' is used with no expansion on this page (SEO rule: define every acronym on first use).
+  FIX: REPLACE with: "If the person lists CFP (Certified Financial Planner) after their name".
+
+F7 [page self-reference]  FIELD: sections[3].body
+  QUOTE: "This page does not cover retirement account rules or contribution limits."
+  DEFECT: 'This page' narrates the writing (anti-AI meta-narration / page self-reference).
+  FIX: REPLACE with: "Retirement account rules and contribution limits are outside these questions."
+

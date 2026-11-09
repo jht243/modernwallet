@@ -1,0 +1,80 @@
+y and source changes in their required wider review. Preserve genuine prior passes on exact unchanged pages. Mechanical output never creates an editorial PASS.
+
+Use one full generation for each original page/job. Correct the retained candidate from actual independent findings within its remaining review budget. A writer's internal claim checks follow the applicable risk ceiling and return unresolved doubts to the independent auditor. Different output directories do not justify regeneration. Keep build, full-render, link, source-ownership, hosting, exact-live and indexing checks on the native release path. Publication must finish automatically when its existing gates permit it.
+
+## Canonical stage handoffs
+
+On the portable protocol, WRITE, AUDIT and PUBLISH require --handoff CURRENT.json. Preserve the original canonical job across retries. Before dispatching a stage, save a draft handoff using the existing native record schema. Include version 1, siteId from this repository's content-review-policy.json, actual canonicalBase, jobId, producer, nextAction, routes, candidates, sources, findings and reviewCounters. candidates and sources use actual path/sha256 references. Each source retains its checkedAt, refreshWhen and scope. Each finding retains its stable id, status and concrete evidence. reviewCounters retains the actual reviews and reworks already performed. Reference the preceding handoff in previous with its actual hash. Never initialize new zero counters to evade history.
+
+Seal the worker's actual draft with python3 .claude/tools/workflow-handoff.py seal --draft DRAFT.json --out NEW_IMMUTABLE.json. The helper freezes exact underlying artifacts and validates scope/history. It never writes understanding, findings or a PASS. Supply the sealed path with the next stage's preflight --handoff. Preflight delivers a focused current task and checks the full underlying chain mechanically. The receiving worker inspects current artifacts and supporting sources. Old conversations and obsolete drafts remain retrievable without being loaded into every new worker.
+
+An AUDIT handoff retains a distinct producer and reviewer. PUBLISH additionally requires actual snapshot and review references, validated by the site's existing rendered-review and native release gates. Preserve qualifying paid-client/upsell exceptions and all their real evidence. Use workflow-handoff.py reconcile-findings only with an actual independent preparation PASS explicitly resolving those finding IDs. Never infer that a generic PASS resolves unrelated findings. No extra planned human gate is introduced.
+
+Canonical identity: the chart manifest and its actual independently authored preparation review must carry the same stable jobId as the canonical handoff. Retain that identity across retries; do not create a date-based replacement job or edit another reviewer’s findings/verdict to fill a missing field.
+
+Owner preparation/continuation correction 2026-11-09: Every preflight prepare needs the worker's actual context-id and context-epoch, including its first reading. Keep those identities across ordinary handoff or artifact revisions; change epoch after real context loss. On a missing-identity error, supply the correct actual flags and retain --reuse when access and understanding are still current. Prepare a new current-task bundle with --reuse OLD_READING and the NEW handoff, rather than rereading unchanged rules or using the old task as the current handoff. Same actor/context/epoch can retain unchanged source hashes across stages; new/changed applicable rules and the current task are delivered completely. Distinct authors/reviewers, native understanding/application receipts, full first readings and all existing review/release requirements remain.
+
+Before dispatching a writer, run the existing render-chart/validate-chart preparation checks. They check already-referenced current analysis packets, exact reader-question/case identities and the installed writer's canonical job scope together, without reserving paid generation. Keep the original jobId in both manifest and the actual independent review. Use the exact approved reader_question string, including internal evidence annotations, for packet.readerQuestion and deterministic case lookup; when it changes, regenerate that lookup and refresh its references in the same preparation correction. Keep these internal annotations out of public copy. Historical chart receipts retain their original structural validation scope.
+
+Join each native worker's terminal handback, including blocked/failure handbacks, before the next phase. Workers retain a current internal result on every exit through the existing handoff path. A dispatcher must not wait only for a successful content diff that will never appear after a blocked handback, or add fixed sleeps after completion. Use native completion or an artifact-aware blocking wait for the current terminal result; keep genuine deployment/readiness checks. No new human gate.
+
+[Source: reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/preflight-auditor/task.json]
+{
+  "version": 1,
+  "siteId": "jht243/modernwallet",
+  "canonicalBase": "https://themodernwallet.com",
+  "jobId": "competitor-9031ce2b2c89",
+  "routes": [
+    "/guides/what-is-a-fiduciary/",
+    "/guides/what-does-a-financial-advisor-do/",
+    "/guides/questions-to-ask-a-financial-advisor/",
+    "/guides/what-is-a-robo-advisor/",
+    "/guides/what-is-a-cfp/",
+    "/guides/how-to-make-a-financial-plan/"
+  ],
+  "producer": "competitor-orchestrator",
+  "nextAction": "Independently audit the exact rendered candidate for each new guide and the seven link-only edited pages under the HIGH-tier budget; record PASS or FAIL with concrete findings per route.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/111066431996b1d3a6906de00eec138125360ffcae46e1dc0b42072c8874af48/rendered-snapshot.json",
+      "sha256": "111066431996b1d3a6906de00eec138125360ffcae46e1dc0b42072c8874af48",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/rendered-snapshot.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/e356a9af770fb672e0e62b3d02da423ccdc172c59fc0fd2731f0d940b2327da1/rendered-manifest.json",
+      "sha256": "e356a9af770fb672e0e62b3d02da423ccdc172c59fc0fd2731f0d940b2327da1",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/rendered-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/23cf3b7cf6eb8e96cd8d7511f76c934cbf987cb99281e9720006e63291f2441e/approval-manifest.json",
+      "sha256": "23cf3b7cf6eb8e96cd8d7511f76c934cbf987cb99281e9720006e63291f2441e",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/314aec70853b9c0443f14c694bf6c504076f4e891bbaa0bf592cbf2e91506aa1/chart-review.json",
+      "sha256": "314aec70853b9c0443f14c694bf6c504076f4e891bbaa0bf592cbf2e91506aa1",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/fb0ce9daca2bf47099cdad72235f950353ef396feded20cfca2eb2b76cf52c9c/what-is-a-fiduciary.json",
+      "sha256": "fb0ce9daca2bf47099cdad72235f950353ef396feded20cfca2eb2b76cf52c9c",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-is-a-fiduciary.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/e5fb509bee7bb05e50019b4c87b3f0e285dcee5ccf0299b6a43f9953f1b88916/what-does-a-financial-advisor-do.json",
+      "sha256": "e5fb509bee7bb05e50019b4c87b3f0e285dcee5ccf0299b6a43f9953f1b88916",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-does-a-financial-advisor-do.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/1fb1f6f71564920c3a0974a577954fcedf8516e0245401740e73caf7a58798bc/questions-to-ask-a-financial-advisor.json",
+      "sha256": "1fb1f6f71564920c3a0974a577954fcedf8516e0245401740e73caf7a58798bc",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/questions-to-ask-a-financial-advisor.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/db69c424765de4075a70f7bc805c3f635e4b8aeb1cf98222c975e9a958e0ea75/what-is-a-robo-advisor.json",
+      "sha256": "db69c424765de4075a70f7bc805c3f635e4b8aeb1cf98222c975e9a958e0ea75",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-is-a-robo-advisor.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/28d75881a56b3417040c4b49fb644f2faef296df70e388bd20e5d274c3500181/what-is-a-cfp.json",
+      "sha256": "28d75881a56b3417040c4b

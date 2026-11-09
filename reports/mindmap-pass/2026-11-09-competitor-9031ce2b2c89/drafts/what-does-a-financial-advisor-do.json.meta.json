@@ -1,0 +1,245 @@
+{
+ "slug": "what-does-a-financial-advisor-do",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 2012,
+ "floor": 1200,
+ "input_tokens": 36235,
+ "output_tokens": 18441,
+ "thinking_tokens": null,
+ "cached_tokens": 31074,
+ "est_cost_usd": 0.3957,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1987,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 1000,
+   "floor": 1200,
+   "ratio": 0.83,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    7
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "Two advisers can therefore charge on the same basis and still give you different services, so ask each one which items on this list come with the account.",
+     "replacement": "Ask each adviser which items on this list come with the account.",
+     "type": "inference",
+     "why": "SOURCE does not say advisers charging the same basis give different services"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "A financial advisor is the wrong first call if your main problem is debt or a budget you cannot make work.",
+     "replacement": "If your main problem is debt or a budget you cannot make work, a nonprofit credit counselor may fit better than a financial advisor.",
+     "type": "unsupported",
+     "why": "SOURCE never calls an advisor the wrong choice for debt"
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Credit counseling can be free or low-cost, but it is not always free.",
+     "replacement": "Credit counseling is not always free.",
+     "type": "unsupported",
+     "why": "No fact says counseling can be free or low-cost; only fees for some services"
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Whether you need one comes down to what the fee buys compared with what you would do without the advice, and our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) works through that trade-off.",
+     "replacement": "Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) weighs cost against value.",
+     "type": "unsupported",
+     "why": "SOURCE states no basis for deciding whether you need an advisor"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "That second question means weighing the fee against what the advice would change in your finances.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not describe this cost-value reasoning"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If your main problem is debt or a budget you cannot make work, a nonprofit credit counselor may fit better than a financial advisor.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE makes no fit comparison between counselor and advisor"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "For that job, start with a credit counselor.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Recommendation not stated in SOURCE"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "An advisor also may not fit if you want a single answer to a single question.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not say advisers don't fit one-time questions"
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "If your need is debt help, a nonprofit credit counselor is the closer match.",
+     "replacement": "If your need is debt help, the CFPB describes nonprofit credit counselors who help with budgets and debts.",
+     "type": "inference",
+     "why": "SOURCE ranks no match; only describes counselor services"
+    }
+   ],
+   "deleted_final": 5,
+   "unapplied": [
+    {
+     "quote": "Someone who wants help with investments over time",
+     "type": "inference",
+     "why": "SOURCE does not state who an adviser fits",
+     "replacement": "Not published",
+     "id": "sections[2].body",
+     "reason": "replacement would change the table's columns"
+    },
+    {
+     "quote": "Someone whose main problem is debt or a budget",
+     "type": "inference",
+     "why": "SOURCE does not state audience; only describes services",
+     "replacement": "Not published",
+     "id": "sections[2].body",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "sections[2].body",
+     "quote": "Someone who wants help with investments over time",
+     "type": "inference",
+     "reason": "replacement would change the table's columns"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Someone whose main problem is debt or a budget",
+     "type": "inference",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2088
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-09T22:37:13+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-does-a-financial-advisor-do.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "At ModernWallet, we publish free calculators and plain-language money guides, and every guide we write starts from the decision in front of you, which here is who to talk to about money.",
+      "replacement": "",
+      "type": "tee-up bolted-on / page self-reference",
+      "why": "tee-up is bolted-on and self-referential"
+     },
+     {
+      "id": "introText",
+      "quote": "A financial advisor typically gives you ongoing advice on buying, selling and holding investments, then monitors how those investments perform against your goals, according to [Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers).",
+      "replacement": "A financial advisor typically gives you ongoing advice on buying, selling and holding investments and monitors how they perform. [Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers) describes the service this way.",
+      "type": "weak-opener",
+      "why": "opening sentence is too long with trailing attribution"
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "The CFPB describes nonprofit credit counselors as the people who advise on money and debts, help with budgets, develop debt management plans and offer money management workshops.",
+      "replacement": "Our read is that an advisor is the wrong first call if your main problem is debt or a budget, because the CFPB describes nonprofit credit counselors as the people who advise on money and debts, help with budgets, develop debt management plans and offer money management workshops.",
+      "type": "non-sequitur section opener / required element 'who this is not for' lost",
+      "why": "section lacks the required 'who this is not for' statement"
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) weighs cost against value.",
+      "replacement": "It depends on whether you want ongoing advice about buying, selling and holding investments, which Investor.gov says an adviser typically provides for a fee based on the value of the assets in your account. Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) weighs that cost against the value.",
+      "type": "faq-direct-answer",
+      "why": "FAQ answer does not directly answer the question in sentence 1"
+     },
+     {
+      "id": "faqs[2].question",
+      "quote": "Is financial counseling free?",
+      "replacement": "Is credit counseling free?",
+      "type": "faq question/answer scope mismatch",
+      "why": "question asks about financial counseling while answer only covers credit counseling"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "One firm's Form CRS answers the question \"How do your financial professionals make money?\" by saying its professionals can be paid through commissions, advisory fees or both.",
+      "replacement": "One firm's Form CRS answers the question \"How do your financial professionals make money?\" by saying it pays its financial professionals in different ways, including commissions and advisory fees.",
+      "type": "unnamed/incomplete source example",
+      "why": "incomplete summary of Form CRS disclosure"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "The [National Foundation for Credit Counseling (NFCC)](https://www.nfcc.org) describes credit counseling that starts with a confidential consultation and a personalized action plan, and it lists more than 1,500 NFCC certified credit counselors.",
+      "replacement": "The [National Foundation for Credit Counseling (NFCC)](https://www.nfcc.org) describes credit counseling that starts with a confidential consultation and a personalized action plan. It lists more than 1,500 NFCC certified credit counselors.",
+      "type": "monotone-rhythm / overloaded sentences",
+      "why": "breaks run of long sentences by splitting compound sentence"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Coach and counselor titles appear in the [Financial Industry Regulatory Authority (FINRA) professional designations database](https://www.finra.org/investors/professional-designations), including Certified Financial and Career Coach (CFCC), Certified Workplace Money Coach (CWMC), Certified Professional Retirement Coach (CPRC), Accredited Financial Counselor (AFC) and Certified Financial Counselor (CFC).",
+      "replacement": "Coach and counselor titles appear in the [Financial Industry Regulatory Authority (FINRA) professional designations database](https://www.finra.org/investors/professional-designations). Examples are Certified Financial and Career Coach (CFCC), Certified Workplace Money Coach (CWMC), Certified Professional Retirement Coach (CPRC), Accredited Financial Counselor (AFC) and Certified Financial Counselor (CFC).",
+      "type": "monotone-rhythm / overloaded sentences",
+      "why": "breaks up 41-word sentence into two varied sentences"
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Beyond that duty, services vary by adviser, so Investor.gov suggests comparing what you need with what the adviser provides, any limits, what you will pay, how the adviser gets paid and what conflicts the adviser has.",
+      "replacement": "Beyond that duty, services vary by adviser. Investor.gov suggests comparing what you need with what the adviser provides, any limits, what you will pay, how the adviser gets paid and what conflicts the adviser has.",
+      "type": "monotone-rhythm / overloaded sentences",
+      "why": "splits long sentence to improve rhythm"
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[3].body",
+      "quote": "Knowing what a financial advisor does tells you what the job includes, and it does not settle whether paying for that job makes sense for you.",
+      "finding": "header over a two-sentence section / duplicate pointer",
+      "why": "needs new substance",
+      "replacement": null,
+      "reason": "not fixable in place"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 2012,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 186.0,
+ "response_id": "msg_011Cgt64uzMMU7cs1oYxZH7N",
+ "generated_at": "2026-11-09T21:49:44+0000"
+}

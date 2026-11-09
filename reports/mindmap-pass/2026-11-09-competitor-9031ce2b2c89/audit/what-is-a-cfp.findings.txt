@@ -1,0 +1,43 @@
+PAGE /guides/what-is-a-cfp/  | round 1 | reviewer phase4-auditor-1 | VERDICT FAIL | profile high
+Findings are source-checked against the captures in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/ and the row prompt fact list. Format per finding: QUOTE (verbatim from the draft/source), DEFECT, FIX.
+Apply with: python3 scripts/lib/content_gen.py fix --draft <draft> --findings <this file> --facts <row prompt> --floor 1200 (Rung 1) except where a finding says Rung 2 / needs added facts. Re-run Rung 0 lint and re-submit the whole page for round 2.
+
+F1 [source silence contradicted by the page's own primary-source capture]  FIELD: sections[3].body, Our Takeaway, faqs[1].answer, faqs[2].answer
+  QUOTE: "It does not state how a person is paid or whether the person is registered as an investment adviser or a broker."
+  QUOTE: "The CFP Board's certification requirements and Code do not say how a CFP professional is paid, so ask the person directly."
+  QUOTE: "The credential does not show how the person is paid or whether the person is registered."
+  DEFECT: The central 'what the credential does not tell you' conclusion fails the strongest primary-source counterexample, which sits in the page's own source capture (sources/cfp-fiduciary.txt, the CFP Board Code the page cites). The Code has a section 'Provide Information to a Client When Providing Financial Advice' requiring the CFP professional to tell the client, before or at the engagement, 'How the Client pays for the products and services' and 'How the CFP professional, the CFP Professional's Firm, and any Related Party are compensated', and a section 'Duties When Representing Compensation Method' that bars false or misleading representations of compensation method and allows 'fee-only' only if the professional and firm receive no Sales-Related Compensation. So the Code does speak to pay, and the FAQ 'How do CFPs get paid?' tells readers the opposite. Source silence is also used as a universal negative here.
+  FIX: Needs two added facts from the capture (add to the closed fact list as FC3 and FC4, then regenerate or fix): FC3 = the compensation-disclosure duty quoted above; FC4 = the 'fee-only' representation rule. Then REPLACE the three sentences with, for example: "The credential does not set one way to be paid, but the CFP Board Code requires a CFP professional giving financial advice to tell you before or at the engagement how you pay and how the professional and firm are compensated." FAQ 'How do CFPs get paid?' must open with that direct answer, and 'registered as an adviser or a broker' stays as a separate, still-true limit (Form CRS and registration search). This is Rung 2 (new facts), not a pure fix-in-place.
+
+F2 [unlinked-company (two first mentions)]  FIELD: sections[3].body
+  QUOTE: "registered with the Securities and Exchange Commission (SEC) or with a state securities regulator"
+  QUOTE: "Investor.gov points to a FINRA list showing that some credentials are easy to obtain and others are hard-earned"
+  DEFECT: First mentions of the SEC and of FINRA are unlinked (GATE Links, hard fail). The same page links Investor.gov and adviserinfo.sec.gov elsewhere.
+  FIX: Link the SEC mention to https://adviserinfo.sec.gov (on the 'Securities and Exchange Commission (SEC)' words) and the FINRA mention to its professional-designations page (https://www.finra.org/investors/professional-designations is on the shared allowed-URL list; add it to this row's closed list), expanding 'Financial Industry Regulatory Authority (FINRA)' at first use.
+
+F3 [weak opener + missing tee-up with no exemption note]  FIELD: introText
+  QUOTE: "A certified financial planner (CFP) professional is a financial planner certified by the [CFP Board](https://www.cfp.net/get-certified/certification-process) after meeting four requirements, who must act as a fiduciary when giving you financial advice."
+  DEFECT: Sentence 1 is a 31-word clause stack ending in a dangling 'who must' relative clause. The generic tee-up was deleted by the claim check, and the run carries no `teeup-exempt:` note (GATE Tee-up: missing tee-up with no note fails).
+  FIX: REPLACE with: "A certified financial planner (CFP) professional is a financial planner that the [Certified Financial Planner Board of Standards (CFP Board)](https://www.cfp.net/get-certified/certification-process) has certified after four requirements. A CFP professional must also act as a fiduciary when giving you financial advice." Record `teeup-exempt: source-attributed regulatory explainer; no licensed first-hand framing fits this topic` in the run notes (operator register; sentence 1 stays the answer).
+
+F4 [heading promises a comparison the section does not give]  FIELD: sections[4] (heading 'CFP Compared with CFA and CTFA Credentials')
+  QUOTE: "Our [guide to the CFA credential](/guides/what-is-a-cfa/) covers the Chartered Financial Analyst (CFA) designation."
+  DEFECT: The section is two pointers and one sentence about the CFP Board Code's seven standards; nothing compares the three credentials. Heading-content mismatch; the 'seven planning standards' sentence also restates the practice-standards section.
+  FIX: REPLACE the heading with 'Where the CFA and CTFA Credentials Fit' and delete the sentence 'The CFP Board Code lists seven planning standards, from understanding circumstances and selecting goals through monitoring progress.'
+
+F5 [restatement / filler]  FIELD: sections[2].body
+  QUOTE: "Implementing the recommendation and monitoring progress are separate standards in the Code. Developing a recommendation and presenting it are also separate standards in the Code."
+  DEFECT: Both sentences restate the numbered list directly above them (items 4 to 7) and add no fact.
+  FIX: DELETE both sentences.
+
+F6 [incomplete paraphrase + unnamed firm]  FIELD: sections[3].body, faqs[1].answer
+  QUOTE: "One firm's Form CRS (Client Relationship Summary), for example, says its professionals can be paid through commissions, advisory fees or both, and that higher commissions, costs or fees could lead to higher compensation for a financial professional."
+  DEFECT: Same defect as the other pages: the form is J.P. Morgan Securities LLC's, unnamed and unlinked, and it also describes monthly minimum salary, annual salary and bonuses. 'Form CRS' is also unlinked at first mention on this page.
+  FIX: REPLACE 'say its professionals can be paid through commissions, advisory fees or both' (both occurrences) with 'says it pays its financial professionals in different ways, including commissions and advisory fees', and link Form CRS (https://www.investor.gov/CRS) at first mention.
+
+F7 [source-date misstatement]  FIELD: sections[4].body
+  QUOTE: "Our answer rests on the CFP Board's requirements as published in November 2026."
+  DEFECT: The CFP Board did not publish these requirements in November 2026. 2026-11-09 is the date this run fetched the page.
+  FIX: REPLACE with: "Our answer rests on the CFP Board's requirements as listed on its certification process page."
+
+NOTE (verified, no action): meta.guards.numbers_not_in_facts lists '2000'. It is the page's own arithmetic, 6,000 hours minus 4,000 apprenticeship hours = 2,000 fewer. Correct, derived, not an unsupported figure.

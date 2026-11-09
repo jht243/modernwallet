@@ -1,0 +1,292 @@
+{
+ "slug": "what-is-a-cfp",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1729,
+ "floor": 1200,
+ "input_tokens": 35297,
+ "output_tokens": 17046,
+ "thinking_tokens": null,
+ "cached_tokens": 31074,
+ "est_cost_usd": 0.364,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A certified financial planner (CFP) professional is a financial planner that the'; '[Investor.gov](https://www.investor.gov/introduction-investing/getting-started/w'; \"[J.P. Morgan Securities LLC's](https://files.brokercheck.finra.org/crs_79.pdf) [\"; 'Our [guide to the CFA credential](/guides/what-is-a-cfa/) covers the Chartered F'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1700,
+  "numbers_not_in_facts": [
+   "2000"
+  ],
+  "fact_budget": {
+   "fact_words": 602,
+   "floor": 1200,
+   "ratio": 0.5,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    5,
+    6
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we see readers get one thing wrong most often: they assume the CFP initials also say how a planner is paid, and the CFP Board's rules do not cover pay.",
+     "replacement": "At ModernWallet, we see readers get one thing wrong most often: they assume the CFP initials also say how a planner is paid, and the credential does not state that.",
+     "type": "unsupported",
+     "why": "SOURCE only says the credential does not state pay; rules' scope unstated"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The CFP Board Code lists seven practice standards, and their headings describe the planning work a CFP professional does with a client in sequence.",
+     "replacement": "The CFP Board Code lists seven practice standards, and their headings describe the planning work a CFP professional does with a client.",
+     "type": "unsupported",
+     "why": "SOURCE lists headings; never says the work happens in sequence"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Two of the seven standards come after the recommendation is presented: implementing it and monitoring progress.",
+     "replacement": "Implementing the recommendation and monitoring progress are separate standards in the Code.",
+     "type": "inference",
+     "why": "SOURCE does not state the order in which standards occur"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "The CFP is one of several financial credentials with similar-looking initials.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not compare CFP initials with other credentials"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "If you need only trust administration, the CFP is the wrong credential to filter on, so start with the CTFA guide.",
+     "replacement": "If you need only trust administration, start with the CTFA guide.",
+     "type": "unsupported",
+     "why": "SOURCE makes no claim the CFP is wrong for trust administration"
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we see readers get one thing wrong most often: they assume the CFP initials also say how a planner is paid, and the credential does not state that.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description licenses framing, not this fabricated specific reader observation."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "If you are deciding whom to hire, the credential tells you two things before a first meeting.",
+     "replacement": "If you are deciding whom to hire, the credential tells you two things.",
+     "type": "unsupported",
+     "why": "Source does not frame credential as telling things before a first meeting."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "The person cleared the CFP Board's published bar for planning education, testing and experience.",
+     "replacement": "The person met the CFP Board's education, exam and experience requirements.",
+     "type": "unsupported",
+     "why": "Source lists requirements; 'published bar' framing is evaluative."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Our [financial advisor vs. financial planner comparison](/compare/financial-advisor-vs-financial-planner/) covers how those titles differ.",
+     "replacement": "Our [financial advisor vs. financial planner comparison](/compare/financial-advisor-vs-financial-planner/) covers those titles.",
+     "type": "unsupported",
+     "why": "Source does not say these titles differ."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Investor.gov links to a list showing that some credentials are easy to obtain and others are hard-earned.",
+     "replacement": "Investor.gov points to a FINRA list showing that some credentials are easy to obtain and others are hard-earned.",
+     "type": "unsupported",
+     "why": "Source says the list is from FINRA; sentence is fine but 'even' is ok."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "A CFP professional fits a reader who wants help across all seven planning standards, from understanding circumstances and selecting goals through monitoring progress.",
+     "replacement": "The CFP Board Code lists seven planning standards, from understanding circumstances and selecting goals through monitoring progress.",
+     "type": "inference",
+     "why": "Source does not state who a CFP fits."
+    }
+   ],
+   "deleted_final": 6,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1773
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-09T22:51:57+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-is-a-cfp.findings.txt",
+    "applied": [
+     {
+      "id": "sections[3].body",
+      "quote": "It does not state how a person is paid or whether the person is registered as an investment adviser or a broker.",
+      "replacement": "The credential does not set one way to be paid, but the CFP Board Code requires a CFP professional giving financial advice to tell you before or at the engagement how you pay and how the professional and firm are compensated, while registration as an adviser or broker must still be checked separately.",
+      "type": "F1 [source silence contradicted by the page's own primary-source capture]",
+      "why": "Code requires compensation disclosure before or at engagement."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "The credential signals planning competence, but it does not show how the person is paid or whether the person is registered as an adviser or broker.",
+      "replacement": "The credential signals planning competence, but not how the person is paid or registered, which you still verify.",
+      "type": "F1 [source silence contradicted by the page's own primary-source capture]",
+      "why": "Credential does not set pay method; verify pay disclosure and registration."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "The CFP Board's certification requirements and Code do not say how a CFP professional is paid, so ask the person directly.",
+      "replacement": "The CFP credential does not set one way to be paid, but the CFP Board Code requires a CFP professional giving financial advice to tell you before or at the engagement how you pay and how the professional and firm are compensated.",
+      "type": "F1 [source silence contradicted by the page's own primary-source capture]",
+      "why": "CFP Board Code explicitly requires compensation disclosure to clients."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "The credential does not show how the person is paid or whether the person is registered.",
+      "replacement": "The credential does not set how the person is paid, and registration as an adviser or broker still has to be verified separately.",
+      "type": "F1 [source silence contradicted by the page's own primary-source capture]",
+      "why": "Credential does not set pay method; verify pay disclosure and registration."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "registered with the Securities and Exchange Commission (SEC) or with a state securities regulator",
+      "replacement": "registered with the [Securities and Exchange Commission (SEC)](https://adviserinfo.sec.gov) or with a state securities regulator",
+      "type": "F2 [unlinked-company (two first mentions)]",
+      "why": "First mention of SEC must be linked."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Investor.gov points to a FINRA list showing that some credentials are easy to obtain and others are hard-earned",
+      "replacement": "Investor.gov points to a [Financial Industry Regulatory Authority (FINRA)](https://www.finra.org/investors/professional-designations) list showing that some credentials are easy to obtain and others are hard-earned",
+      "type": "F2 [unlinked-company (two first mentions)]",
+      "why": "Expand and link FINRA on first mention."
+     },
+     {
+      "id": "introText",
+      "quote": "A certified financial planner (CFP) professional is a financial planner certified by the [CFP Board](https://www.cfp.net/get-certified/certification-process) after meeting four requirements, who must act as a fiduciary when giving you financial advice.",
+      "replacement": "A certified financial planner (CFP) professional is a financial planner that the [Certified Financial Planner Board of Standards (CFP Board)](https://www.cfp.net/get-certified/certification-process) has certified after four requirements. A CFP professional must also act as a fiduciary when giving you financial advice.",
+      "type": "F3 [weak opener + missing tee-up with no exemption note]",
+      "why": "Weak clause stack and dangling relative clause."
+     },
+     {
+      "id": "sections[4].heading",
+      "quote": "CFP Compared with CFA and CTFA Credentials",
+      "replacement": "Where the CFA and CTFA Credentials Fit",
+      "type": "F4 [heading promises a comparison the section does not give]",
+      "why": "Section does not compare credentials; rename to match content."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "The CFP Board Code lists seven planning standards, from understanding circumstances and selecting goals through monitoring progress. ",
+      "replacement": "",
+      "type": "F4 [heading promises a comparison the section does not give]",
+      "why": "Filler sentence restating practice standards section."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Implementing the recommendation and monitoring progress are separate standards in the Code. ",
+      "replacement": "",
+      "type": "F5 [restatement / filler]",
+      "why": "Restates practice standards list above."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Developing a recommendation and presenting it are also separate standards in the Code.",
+      "replacement": "",
+      "type": "F5 [restatement / filler]",
+      "why": "Restates practice standards list above."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "One firm's Form CRS (Client Relationship Summary), for example, says its professionals can be paid through commissions, advisory fees or both, and that higher commissions, costs or fees could lead to higher compensation for a financial professional.",
+      "replacement": "[J.P. Morgan Securities LLC's](https://files.brokercheck.finra.org/crs_79.pdf) [Form CRS](https://www.investor.gov/CRS) (Client Relationship Summary), for example, says it pays its financial professionals in different ways, including commissions and advisory fees, and that higher commissions, costs or fees could lead to higher compensation for a financial professional.",
+      "type": "F6 [incomplete paraphrase + unnamed firm]",
+      "why": "Name and link firm and Form CRS."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "One firm's Form CRS (Client Relationship Summary), for example, says its professionals can be paid through commissions, advisory fees or both.",
+      "replacement": "J.P. Morgan Securities LLC's Form CRS, for example, says it pays its financial professionals in different ways, including commissions and advisory fees.",
+      "type": "F6 [incomplete paraphrase + unnamed firm]",
+      "why": "Name firm and use accurate compensation phrasing."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Our answer rests on the CFP Board's requirements as published in November 2026.",
+      "replacement": "Our answer rests on the CFP Board's requirements as listed on its certification process page.",
+      "type": "F7 [source-date misstatement]",
+      "why": "November 2026 was fetch date, not publication date."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      5
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "introText",
+       "quote": "A certified financial planner (CFP) professional is a financial planner that the [Certified Financial Planner Board of Standards (CFP Board)](https://www.cfp.net/get-certified/certification-process) has certified after four requirements.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[3].body",
+       "quote": "[Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) says the most important question before hiring an investment professional is whether the person is registered with the [Securities and Exchange Commission (SEC)](https://adviserinfo.sec.gov) or with a state securities regulator.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[3].body",
+       "quote": "[J.P. Morgan Securities LLC's](https://files.brokercheck.finra.org/crs_79.pdf) [Form CRS](https://www.investor.gov/CRS) (Client Relationship Summary), for example, says it pays its financial professionals in different ways, including commissions and advisory fees, and that higher commissions, costs or fees could lead to higher compensation for a financial professional.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "Our [guide to the CFA credential](/guides/what-is-a-cfa/) covers the Chartered Financial Analyst (CFA) designation.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].body",
+       "quote": "Our [guide to the CTFA credential](/guides/what-is-a-ctfa/) covers the Certified Trust and Fiduciary Advisor (CTFA) designation.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1729,
+    "flags": [
+     "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'A certified financial planner (CFP) professional is a financial planner that the'; '[Investor.gov](https://www.investor.gov/introduction-investing/getting-started/w'; \"[J.P. Morgan Securities LLC's](https://files.brokercheck.finra.org/crs_79.pdf) [\"; 'Our [guide to the CFA credential](/guides/what-is-a-cfa/) covers the Chartered F'"
+    ]
+   }
+  ]
+ },
+ "seconds": 179.5,
+ "response_id": "msg_011Cgt6oKsxqrGQhSxz3vAcN",
+ "generated_at": "2026-11-09T21:59:12+0000"
+}

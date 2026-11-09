@@ -1,0 +1,11 @@
+OUTBOUND INSPECTION for /guides/questions-to-ask-a-financial-advisor (2026-11-09): destination existence, title and description from the page records
+
+destination /guides/how-to-choose-a-financial-advisor/ - title: How to Choose a Financial Advisor: A Decision Guide
+  description: Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+  section: Check the Answers Against Public Records; anchor: guide to choosing a financial advisor; purpose: overall hiring framework
+
+destination /guides/what-is-a-fiduciary/: sibling new page in this same run (action row for that route), section: The Questions To Ask a Financial Advisor, anchor: fiduciary, purpose: explains the duty question
+
+destination /guides/financial-advisor-worth-it/ - title: Is a Financial Advisor Worth It? What to Know
+  description: Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+  section: Who These Questions Are Not For; anchor: is a financial advisor worth it; purpose: decide whether to hire at all

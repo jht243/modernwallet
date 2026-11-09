@@ -1,0 +1,119 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "competitor-orchestrator",
+ "route": "/guides/what-is-a-fiduciary/",
+ "readerQuestion": "What is a fiduciary, and does my financial advisor have to be one? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 12/22 on-topic in the first 22 of 60 question-sweep completions: what is a fiduciary financial advisor / duty / responsibility / why is a fiduciary important / who needs a fiduciary; 8/22 off-topic legal-instrument senses: deed, bond, tax return, check, report, California, appointed, VA]",
+ "origin": "competitor-monitor-auto 2026-11-09 (frozen intake 9031ce2b2c89)",
+ "demandSource": "Google Autocomplete question sweep (estimate, NOT measured); SEMRUSH and DataForSEO keys unavailable, SERP unread",
+ "decisionGap": "Readers asking this question cannot get the primary-source answer and its conditions on this site; the nearest pages answer a neighboring decision (see coverage.txt).",
+ "finding": "Three different standards sit behind the word advisor: an adviser fiduciary duty (care and loyalty), the broker-dealer Regulation Best Interest standard, and the CFP Board fiduciary commitment; which applies depends on the registration and credential of the specific professional and is stated on that firm's Form CRS.",
+ "conditions": "US readers; investment advice about securities and financial planning. State rules, insurance agents, banks and trust companies are outside the sources read.",
+ "whatWouldChange": "A change to Regulation Best Interest or the SEC adviser interpretation, or CFP Board code revisions.",
+ "basis": "reported",
+ "method": "Reported primary-source synthesis; no test or model.",
+ "whyNoQuantitativeAnalysis": "The reader decision is definitional or procedural and rests on regulator and credential-body statements; no defensible numerical input exists, so arithmetic would only restate source figures.",
+ "reasoning": "From the fetched primary pages listed in sources.md to the answer: Three different standards sit behind the word advisor: an adviser fiduciary duty (care and loyalty), the broker-dealer Regulation Best Interest standard, and the CFP Board fiduciary commitment; which applies depends on the registration and credential of the specific professional and is stated on that firm's Form CRS.",
+ "sourceArtifacts": [
+  {
+   "path": "evidence/what-is-a-fiduciary/sources.md",
+   "sha256": "c3915cf0819834b23720a936bd43941e92a91885f5331c050769de038a834e63"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/key-facts.md",
+   "sha256": "8dc35e46b064987e06b19993407b8deb916fb19e448d7f66cd65ca2dc175a5c6"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/clayton-excerpt.txt",
+   "sha256": "49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/adviser-vs-broker.txt",
+   "sha256": "3097f09d12f1911c5b97d30624c147d0d440ded32a60177e0329058f2ae2a4d2"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfp-fiduciary.txt",
+   "sha256": "b7ac6ab927be2d3ae6713e5242ac107bc8c063da284f3592bfe91d793ce2a303"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfp-process.txt",
+   "sha256": "992f25adac67207c7ed1d6bdee1959a06896ae41ddeff17e211368b301b954ff"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/form-crs.txt",
+   "sha256": "183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/working-with-pro.txt",
+   "sha256": "b767b5d82cb88f2ca63fbd349848e8ee82781c95202f223afa93dffab08d4134"
+  }
+ ],
+ "caseSelection": {
+  "path": "evidence/what-is-a-fiduciary/cases.json",
+  "sha256": "778289348d58c9f1aabdf5aa07b74e7c55ed9aea0cf07e21b64e340829350d61"
+ },
+ "caseDecisions": "Retrieved approved-case candidates (0, 1, 2, 3, 4, 5, 6, 7) for the exact reader question; all concern other publishers, clients or unrelated topics and match only generic words. This site has no named-client claims in _experience.md, so none is used; no client conversation claim is made.",
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "SEC-clayton",
+   "INV-advisers",
+   "CFP-code",
+   "CFP-process",
+   "INV-crs",
+   "INV-working"
+  ],
+  "scopeAndLimits": "US readers; investment advice about securities and financial planning. State rules, insurance agents, banks and trust companies are outside the sources read.",
+  "publicMethod": "Sources linked in-line and in a Sources list; third-person attribution to the named body beside each finding.",
+  "placement": "Opening section and Takeaway name the regulator or credential body as the basis; no \"we tested\" or modeling claim."
+ },
+ "sources": [
+  {
+   "id": "SEC-clayton",
+   "url": "https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "INV-advisers",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "CFP-code",
+   "url": "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "CFP-process",
+   "url": "https://www.cfp.net/get-certified/certification-process",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "INV-crs",
+   "url": "https://www.investor.gov/CRS",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "INV-working",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional",
+   "checked": "2026-11-09"
+  }
+ ],
+ "counterexample": "A broker-dealer representative without a CFP is not an investment adviser fiduciary; a dual registrant can owe different standards on different accounts, so one title does not settle it.",
+ "findings": [
+  {
+   "claim": "Three different standards sit behind the word advisor: an adviser fiduciary duty (care and loyalty), the broker-dealer Regulation Best Interest standard, and the CFP Board fiduciary commitment; which applies depends on the registration and credential of the specific professional and is stated on that firm's Form CRS.",
+   "label": "reported",
+   "source": "SEC-clayton, INV-advisers, CFP-code, CFP-process, INV-crs, INV-working"
+  }
+ ],
+ "exclusions": [
+  "No TESTED format: financial advice topics are outside _experience.md section G and no executed tests exist.",
+  "No client-conversation claims; no professional-review claim."
+ ],
+ "unknowns": [
+  "Search volume and live SERP/PAA (provider keys unavailable)"
+ ],
+ "selectedMedium": "text; one small GFM table",
+ "testingLabel": "ordinary presentation (TESTED excluded; reason above)",
+ "takeawayPlan": "A fiduciary must act in your best interest; an SEC-registered investment adviser owes that as a duty of care and loyalty, a broker owes the separate Regulation Best Interest standard, and a CFP professional commits to it by code. Applies to anyone paying for investment advice; conflicts of interest remain, so read the firm relationship summary and ask. Evidence basis: reported (SEC, CFP Board, Investor.gov). Changes if the person is registered only as a broker or holds neither registration. Next step: search the person on Investor.gov and ask in writing which standard applies."
+}

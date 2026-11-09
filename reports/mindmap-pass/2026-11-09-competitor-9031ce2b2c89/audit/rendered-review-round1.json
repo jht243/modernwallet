@@ -1,0 +1,949 @@
+{
+ "reviewer": "phase4-auditor-1",
+ "snapshotSha256": "82d169bcef79936fa85f50ab3b53a65e7da6aed014896d87a47161415a282242",
+ "round": 1,
+ "routes": [
+  {
+   "path": "/guides/what-is-a-fiduciary/",
+   "fingerprint": "d4df91d0cc0869105d9a89419f6792215a357f88b257c065e4c7cb3882b892b4",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/what-is-a-fiduciary-round1-reservation.json",
+    "sha256": "6b9581aa047f8ecd8ae330d4a8a7e029e185e796ba486e544cbfa1484f0e49df"
+   },
+   "verdict": "FAIL",
+   "riskAssessment": {
+    "textSha256": "f7cc220f2e5f1806338df0f7cc9eb3ba107d3d2a42c049bccaa3ccc88beabb4c",
+    "rationale": "HIGH: personal-finance guide about advisers, fiduciary duty, fees and credentials that readers may act on when hiring or paying a financial professional; the site floor is HIGH and the page makes consequential investment-adviser claims.",
+    "consequentialClaims": [
+     {
+      "quote": "rnWallet / Guides / What Is a Fiduciary? What Is a Fiduciary? By Jonathan Velez , Personal Finance Writer & Editor · Rev",
+      "category": "investment",
+      "reason": "Reader-facing statement about fiduciary on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Opening sections answer the question (intro and section 1 name the three standards). FAQ 1, the first FAQ a reader checks, does not answer in its first sentence (F2); the intro tee-up narrates the writing (F1)."
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "Traced claims to FS1, FS2, FA1-FA8, FC1, FC2 and to the captures (clayton-excerpt.txt, adviser-vs-broker.txt, working-with-pro.txt, form-crs.txt, cfp-fiduciary.txt, cfp-process.txt); the quoted rules match. Failures: FAQ 1 does not answer its question (F2); the evidence packet's applicability condition (state rules, insurance agents, banks, trust companies not covered) is missing from the answer, FAQ and takeaway (F4)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Searched the rendered text for tested/testing/we tested/our testing/modeled/client/professional review: no such claim about our own work (the only hits are quoted source words such as 'the Client' in the CFP Code, and the SEC bulletin's 'not been tested under stressed market conditions'). TESTED is off per the approved manifest (financial advice is outside _experience.md section G). Attribution is third-person to the named bodies. Byline is the site's existing author Jonathan Velez, with the site-wide template label 'Reviewed against primary sources'; the label states a source check, not testing or professional review, and the Article JSON-LD has no reviewedBy. The label is accurate only once the sourceSupport findings are fixed."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 9, 2026'; JSON-LD Article datePublished and dateModified both 2026-11-09 (equal, not reversed); canonical https://www.themodernwallet.com/guides/what-is-a-fiduciary/; Article author is the existing Person Jonathan Velez (about page URL), no reviewedBy or credential added; FAQPage, BreadcrumbList, Organization and WebSite nodes present."
+    },
+    "linksAndIndexability": {
+     "status": "FAIL",
+     "evidence": "FAIL: 'American Bankers Association (ABA)' is named at first mention with no link (F3). Every other first mention (SEC, Investor.gov, CFP Board, Form CRS, BrokerCheck, adviserinfo.sec.gov) is linked. Internal links to /guides/what-is-a-cfp/, /guides/what-is-a-ctfa/, /guides/how-to-choose-a-financial-advisor/ and /compare/financial-advisor-vs-financial-planner/ return 200."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium 390px and 1280px: document scrollWidth equals clientWidth (390/390, 1280/1280), no page-level horizontal scroll. One GFM table (4 columns) sits in .table-wrap and fits (350px wide at 390px, 880px at desktop); two bullet lists and one numbered list render as ul/ol; no console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "New guide, informational YMYL scope, reported basis only, no testing format, no coach/counselor regulated-or-unregulated claim (checked: none on the page), no Regulation Best Interest weaker/stronger comparison (checked: none on the page), no fee figures beyond the $10,000 illustration where applicable, disclaimer in the template footer only."
+    }
+   },
+   "findingsFile": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-is-a-fiduciary.findings.txt",
+   "findingIds": "F1-F5"
+  },
+  {
+   "path": "/guides/what-does-a-financial-advisor-do/",
+   "fingerprint": "1c649c2a921d64b6a296a9bd7bbbbdd1cb041bcb4a1d9ff66ee595676421153c",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/what-does-a-financial-advisor-do-round1-reservation.json",
+    "sha256": "d76d23da9e0d5cc722f45d716afda878bd52423e3488859fc5fd95a8cf39eb6d"
+   },
+   "verdict": "FAIL",
+   "riskAssessment": {
+    "textSha256": "b581a66e26426740eb3ef6d6114f540f94771dc430b25852f55323c58d25d8f7",
+    "rationale": "HIGH: personal-finance guide about advisers, fiduciary duty, fees and credentials that readers may act on when hiring or paying a financial professional; the site floor is HIGH and the page makes consequential investment-adviser claims.",
+    "consequentialClaims": [
+     {
+      "quote": "ial advisor gives you ongoing investment advice and monitors how your investments perform, according to Investor.gov, wh",
+      "category": "investment",
+      "reason": "Reader-facing statement about investment advice on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Intro and section 1 give the working answer. The 'Who a Financial Advisor Is Not For' section opens with a non-sequitur and a stray paragraph (F3), the 'Whether You Need' section is two sentences (F5) and FAQ 'Do I need a financial advisor?' is a link only (F4)."
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "Statements trace to FA1-FA8, FK1-FK7 and the captures (cfpb-credit-counseling.txt, nfcc.txt, finra-credentials.txt, working-with-pro.txt). Coach statements stay within FINRA's list and no regulated/unregulated claim is made. Failures: the CRS pay example is an unnamed firm (J.P. Morgan Securities LLC) and omits salary and bonus language in crs-sample.pdf (F7); FAQ 'Is financial counseling free?' answers about credit counseling (F6); the 'who an advisor is not for' content was deleted (F3)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Searched the rendered text for tested/testing/we tested/our testing/modeled/client/professional review: no such claim about our own work (the only hits are quoted source words such as 'the Client' in the CFP Code, and the SEC bulletin's 'not been tested under stressed market conditions'). TESTED is off per the approved manifest (financial advice is outside _experience.md section G). Attribution is third-person to the named bodies. Byline is the site's existing author Jonathan Velez, with the site-wide template label 'Reviewed against primary sources'; the label states a source check, not testing or professional review, and the Article JSON-LD has no reviewedBy. The label is accurate only once the sourceSupport findings are fixed."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 9, 2026'; JSON-LD Article datePublished and dateModified both 2026-11-09 (equal, not reversed); canonical https://www.themodernwallet.com/guides/what-does-a-financial-advisor-do/; Article author is the existing Person Jonathan Velez (about page URL), no reviewedBy or credential added; FAQPage, BreadcrumbList, Organization and WebSite nodes present."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "PASS: first mentions of Investor.gov, CFPB, NFCC, FINRA, SEC and Form CRS are linked; all internal links (/guides/what-is-a-fiduciary/, /compare/financial-advisor-vs-financial-planner/, /guides/financial-advisor-worth-it/, /guides/how-to-choose-a-financial-advisor/) return 200; canonical present, no noindex. The unnamed one-firm CRS example (F7) is a sourcing defect, not a link defect."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium 390px and 1280px: no page-level horizontal scroll (390/390, 1280/1280). The 4-column roles table is 417px inside a 350px .table-wrap with its own horizontal scroll at 390px (contained, readable by scrolling); at 1280px it is 880px and fits. Lists render as ul/ol; no console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "New guide, informational YMYL scope, reported basis only, no testing format, no coach/counselor regulated-or-unregulated claim (checked: none on the page), no Regulation Best Interest weaker/stronger comparison (checked: none on the page), no fee figures beyond the $10,000 illustration where applicable, disclaimer in the template footer only."
+    }
+   },
+   "findingsFile": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-does-a-financial-advisor-do.findings.txt",
+   "findingIds": "F1-F8"
+  },
+  {
+   "path": "/guides/questions-to-ask-a-financial-advisor/",
+   "fingerprint": "16d68cf0426e17b10895eed7c93afc231ccf1e8495d8fa3db6240a5f90b5c60b",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/questions-to-ask-a-financial-advisor-round1-reservation.json",
+    "sha256": "7a13ace6dbddcfc400a58dac1dec8ee3e0385bc15b571b296e382c1779e9ce24"
+   },
+   "verdict": "FAIL",
+   "riskAssessment": {
+    "textSha256": "9869e56c42cc55381a4e34d13c745c1147158b66a65195699fbb3862f4987c57",
+    "rationale": "HIGH: personal-finance guide about advisers, fiduciary duty, fees and credentials that readers may act on when hiring or paying a financial professional; the site floor is HIGH and the page makes consequential investment-adviser claims.",
+    "consequentialClaims": [
+     {
+      "quote": "up to $10,000. \"What are your legal obligations to me when providing recommendations as my broker-dealer or when acting ",
+      "category": "investment",
+      "reason": "Reader-facing statement about legal obligations on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "The question list is delivered in section 1, which answers the reader question. Intro, FAQ and takeaway misdescribe the list as the Form CRS list of eight (F3); the intro tee-up does not parse (F1)."
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "The fee, registration and CRS-content statements trace to FA5, FA6, FQ1-FQ5 and crs-sample.pdf. Failures: crs-sample.pdf prints more than eight prompts (it adds the primary-contact questions) and prints the disciplinary prompt in different words, yet the page presents 'eight conversation starters from Form CRS' (F3); the pay paraphrase omits salary and bonus (F4); red flags are labeled as sourced when two are our judgment (F5)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Searched the rendered text for tested/testing/we tested/our testing/modeled/client/professional review: no such claim about our own work (the only hits are quoted source words such as 'the Client' in the CFP Code, and the SEC bulletin's 'not been tested under stressed market conditions'). TESTED is off per the approved manifest (financial advice is outside _experience.md section G). Attribution is third-person to the named bodies. Byline is the site's existing author Jonathan Velez, with the site-wide template label 'Reviewed against primary sources'; the label states a source check, not testing or professional review, and the Article JSON-LD has no reviewedBy. The label is accurate only once the sourceSupport findings are fixed."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 9, 2026'; JSON-LD Article datePublished and dateModified both 2026-11-09 (equal, not reversed); canonical https://www.themodernwallet.com/guides/questions-to-ask-a-financial-advisor/; Article author is the existing Person Jonathan Velez (about page URL), no reviewedBy or credential added; FAQPage, BreadcrumbList, Organization and WebSite nodes present."
+    },
+    "linksAndIndexability": {
+     "status": "FAIL",
+     "evidence": "FAIL: the first mention 'Securities and Exchange Commission (SEC)' links to an Investor.gov page rather than the SEC (F2). Other first mentions (Investor.gov, FINRA via BrokerCheck link, CFP Board, adviserinfo.sec.gov, Form CRS) are linked. Internal links return 200."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium 390px and 1280px: no page-level horizontal scroll (390/390, 1280/1280). The page has no table; the 8-item numbered list and three bullet lists render as ol/ul and wrap correctly; no console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "New guide, informational YMYL scope, reported basis only, no testing format, no coach/counselor regulated-or-unregulated claim (checked: none on the page), no Regulation Best Interest weaker/stronger comparison (checked: none on the page), no fee figures beyond the $10,000 illustration where applicable, disclaimer in the template footer only."
+    }
+   },
+   "findingsFile": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/questions-to-ask-a-financial-advisor.findings.txt",
+   "findingIds": "F1-F7"
+  },
+  {
+   "path": "/guides/what-is-a-robo-advisor/",
+   "fingerprint": "749c077436938e384e95c6396b2abe031079fe620ce87bad653051bc5030be8c",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/what-is-a-robo-advisor-round1-reservation.json",
+    "sha256": "e2f55346a9749113a164284ab7167d413055f3c95a2652594c53333283b762a0"
+   },
+   "verdict": "FAIL",
+   "riskAssessment": {
+    "textSha256": "e35499ac9cc74eae595c4e15d823580d46b9d712ba719503a47f1e3ded5bd1f4",
+    "rationale": "HIGH: personal-finance guide about advisers, fiduciary duty, fees and credentials that readers may act on when hiring or paying a financial professional; the site floor is HIGH and the page makes consequential investment-adviser claims.",
+    "consequentialClaims": [
+     {
+      "quote": "Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate El",
+      "category": "investment",
+      "reason": "Reader-facing statement about invest on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Opening sections answer what a robo-advisor is and who it fits. The 'what would change our answer' sentence says two cases and gives one (F2); the fit verdict is restated four times (F3); a pronoun reads wrongly (F4)."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Every statement traces to FB1-FB7 and robo-bulletin.txt / robo-glossary.txt (bulletin dated Feb. 23, 2017 is stated on the page; 'bionic', hybrid, questionnaire limits, tax-loss harvesting and cost warnings all match). The 'robo-advisers are investment advisers' statement is supported by the bulletin's text that robo-advisers must comply with the laws applicable to SEC or state-registered investment advisers. Defects here are structural (F2 broken 'two cases', F4 pronoun), not unsupported facts. Advisory: the central 'fit' conditions rest on a 2017 bulletin; the page names the date once in section 1 and in the takeaway, and the packet lists the hybrid counterexample."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Searched the rendered text for tested/testing/we tested/our testing/modeled/client/professional review: no such claim about our own work (the only hits are quoted source words such as 'the Client' in the CFP Code, and the SEC bulletin's 'not been tested under stressed market conditions'). TESTED is off per the approved manifest (financial advice is outside _experience.md section G). Attribution is third-person to the named bodies. Byline is the site's existing author Jonathan Velez, with the site-wide template label 'Reviewed against primary sources'; the label states a source check, not testing or professional review, and the Article JSON-LD has no reviewedBy. The label is accurate only once the sourceSupport findings are fixed."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 9, 2026'; JSON-LD Article datePublished and dateModified both 2026-11-09 (equal, not reversed); canonical https://www.themodernwallet.com/guides/what-is-a-robo-advisor/; Article author is the existing Person Jonathan Velez (about page URL), no reviewedBy or credential added; FAQPage, BreadcrumbList, Organization and WebSite nodes present."
+    },
+    "linksAndIndexability": {
+     "status": "FAIL",
+     "evidence": "FAIL: the anchor 'U.S. Securities and Exchange Commission (SEC) investor bulletin' points to Investor.gov's Working-with-an-Investment-Professional page, not the bulletin (F1). Internal links (/guides/how-to-choose-a-financial-advisor/, /guides/financial-advisor-worth-it/, /roundup/best-robo-advisors/, /guides/what-is-a-fiduciary/) return 200."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium 390px and 1280px: no page-level horizontal scroll (390/390, 1280/1280). The 3-column fit table fits inside .table-wrap (350px at 390px, 880px at desktop); numbered and bulleted lists render correctly; no console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "New guide, informational YMYL scope, reported basis only, no testing format, no coach/counselor regulated-or-unregulated claim (checked: none on the page), no Regulation Best Interest weaker/stronger comparison (checked: none on the page), no fee figures beyond the $10,000 illustration where applicable, disclaimer in the template footer only."
+    }
+   },
+   "findingsFile": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-is-a-robo-advisor.findings.txt",
+   "findingIds": "F1-F5"
+  },
+  {
+   "path": "/guides/what-is-a-cfp/",
+   "fingerprint": "6fd47b1b2eab6d31b1896c78535492c26393fa54d58df52e478b321e8d10e820",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/what-is-a-cfp-round1-reservation.json",
+    "sha256": "4fface2addd5237ed77ec98d05e03f8a281287d3dbc7472d8b23127645a93f7f"
+   },
+   "verdict": "FAIL",
+   "riskAssessment": {
+    "textSha256": "cc4097194b157f1d60bcc34582197445fb08132edcf0526a41eabe7011dc00f4",
+    "rationale": "HIGH: personal-finance guide about advisers, fiduciary duty, fees and credentials that readers may act on when hiring or paying a financial professional; the site floor is HIGH and the page makes consequential investment-adviser claims.",
+    "consequentialClaims": [
+     {
+      "quote": "quirements, who must act as a fiduciary when giving you financial advice. The CFP Board calls the four requirements the ",
+      "category": "investment",
+      "reason": "Reader-facing statement about fiduciary on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Opening sections answer what a CFP is. Section 4, the Takeaway and two FAQs state that the Code does not say how a CFP is paid, which contradicts the Code text in the capture (F1); the section titled as a comparison with CFA and CTFA contains no comparison (F4)."
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "CFP requirement figures match cfp-process.txt (170 questions, two 3-hour sessions, 6,000 or 4,000 hours, 10 years before to 5 after, 12 to 18 months, background check). The '2000' guard flag is the page's own 6,000 minus 4,000 arithmetic and is benign. FAIL: the claim that the CFP Board Code does not say how a CFP professional is paid is contradicted by cfp-fiduciary.txt, which has 'Provide Information to a Client When Providing Financial Advice' (how the client pays; how the professional and firm are compensated) and 'Duties When Representing Compensation Method' (fee-only rule) (F1)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Searched the rendered text for tested/testing/we tested/our testing/modeled/client/professional review: no such claim about our own work (the only hits are quoted source words such as 'the Client' in the CFP Code, and the SEC bulletin's 'not been tested under stressed market conditions'). TESTED is off per the approved manifest (financial advice is outside _experience.md section G). Attribution is third-person to the named bodies. Byline is the site's existing author Jonathan Velez, with the site-wide template label 'Reviewed against primary sources'; the label states a source check, not testing or professional review, and the Article JSON-LD has no reviewedBy. The label is accurate only once the sourceSupport findings are fixed."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 9, 2026'; JSON-LD Article datePublished and dateModified both 2026-11-09 (equal, not reversed); canonical https://www.themodernwallet.com/guides/what-is-a-cfp/; Article author is the existing Person Jonathan Velez (about page URL), no reviewedBy or credential added; FAQPage, BreadcrumbList, Organization and WebSite nodes present."
+    },
+    "linksAndIndexability": {
+     "status": "FAIL",
+     "evidence": "FAIL: first mentions of the SEC and FINRA are unlinked in 'The Fiduciary Commitment and Its Limits' and 'Form CRS' is unlinked (F2, F6). Internal links (/compare/financial-advisor-vs-financial-planner/, /guides/how-to-choose-a-financial-advisor/, /guides/what-is-a-cfa/, /guides/what-is-a-ctfa/) return 200."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium 390px and 1280px: no page-level horizontal scroll (390/390, 1280/1280). The 3-column requirements table fits inside .table-wrap (350px at 390px, 880px desktop); the 7-item numbered list renders as ol; no console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "New guide, informational YMYL scope, reported basis only, no testing format, no coach/counselor regulated-or-unregulated claim (checked: none on the page), no Regulation Best Interest weaker/stronger comparison (checked: none on the page), no fee figures beyond the $10,000 illustration where applicable, disclaimer in the template footer only."
+    }
+   },
+   "findingsFile": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-is-a-cfp.findings.txt",
+   "findingIds": "F1-F7"
+  },
+  {
+   "path": "/guides/how-to-make-a-financial-plan/",
+   "fingerprint": "d223c587e436f5d1b8b5710ecd4df6564342d803d1f22684c05b3bcc5e480d3b",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/how-to-make-a-financial-plan-round1-reservation.json",
+    "sha256": "1eab2c38775e799a279f5fae0886c2e43fbeb01120cbff6f1a517dbfe060b8ca"
+   },
+   "verdict": "FAIL",
+   "riskAssessment": {
+    "textSha256": "8024229bfa518c279f843bc5301493240afe64f357e7b8d9143aaea144c8bd7b",
+    "rationale": "HIGH: personal-finance guide about advisers, fiduciary duty, fees and credentials that readers may act on when hiring or paying a financial professional; the site floor is HIGH and the page makes consequential investment-adviser claims.",
+    "consequentialClaims": [
+     {
+      "quote": "ercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Milea",
+      "category": "financial",
+      "reason": "Reader-facing statement about emergency fund on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Section 1 gives the working method (seven steps and table). It credits the household translation to the CFP Board (F1), asserts an emergency fund as 'the first action' while stating the sources do not rank it (F2), repeats the steps in a list and a table (F5)."
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "CFP Board standards names (FP1, FP2) and CFPB emergency fund statements (FP3, FP4) match cfp-fiduciary.txt, cfp-7step.txt and cfpb-emergency.txt. Failures: the DIY household steps are our adaptation but are credited to the CFP Board and the packet finding 'works as a do-it-yourself method' has no source (F1); 'first piece/action' overreads the CFPB's 'one of the first steps you can take to start saving' and the page then says the sources do not rank it against debt payoff (F2)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Searched the rendered text for tested/testing/we tested/our testing/modeled/client/professional review: no such claim about our own work (the only hits are quoted source words such as 'the Client' in the CFP Code, and the SEC bulletin's 'not been tested under stressed market conditions'). TESTED is off per the approved manifest (financial advice is outside _experience.md section G). Attribution is third-person to the named bodies. Byline is the site's existing author Jonathan Velez, with the site-wide template label 'Reviewed against primary sources'; the label states a source check, not testing or professional review, and the Article JSON-LD has no reviewedBy. The label is accurate only once the sourceSupport findings are fixed."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 9, 2026'; JSON-LD Article datePublished and dateModified both 2026-11-09 (equal, not reversed); canonical https://www.themodernwallet.com/guides/how-to-make-a-financial-plan/; Article author is the existing Person Jonathan Velez (about page URL), no reviewedBy or credential added; FAQPage, BreadcrumbList, Organization and WebSite nodes present."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "PASS: CFP Board, CFPB and the credit-counseling page are linked at first mention (acronym expansion is a separate defect, F3). Internal links return 200, including /net-worth/how-to-calculate-net-worth (no trailing slash) and /guides/financial-planning-calculator/. Canonical present, no noindex."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium 390px and 1280px: no page-level horizontal scroll (390/390, 1280/1280). The 2-column standards table fits inside .table-wrap (350px at 390px, 880px desktop); numbered and bulleted lists render as ol/ul; no console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "New guide, informational YMYL scope, reported basis only, no testing format, no coach/counselor regulated-or-unregulated claim (checked: none on the page), no Regulation Best Interest weaker/stronger comparison (checked: none on the page), no fee figures beyond the $10,000 illustration where applicable, disclaimer in the template footer only."
+    }
+   },
+   "findingsFile": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/how-to-make-a-financial-plan.findings.txt",
+   "findingIds": "F1-F7"
+  },
+  {
+   "path": "/guides/how-to-choose-a-financial-advisor/",
+   "fingerprint": "bd2057452c8bf7dab43476f4d19c71b4c5f288935b620f8e41c236c8d93cc1d6",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_guides_how-to-choose-a-financial-advisor_-round1-reservation.json",
+    "sha256": "8f20a41606b159e68dbb82a9fcce502b55b6d670642e1413a7a9e7aacabf5b39"
+   },
+   "verdict": "FAIL",
+   "riskAssessment": {
+    "textSha256": "99f6ad9ac492faa3720afcf022167bb854aa3a5458d2bc7d9e87f6cead2aa625",
+    "rationale": "HIGH: personal-finance guide about advisers, fiduciary duty, fees and credentials that readers may act on when hiring or paying a financial professional; the site floor is HIGH and the page makes consequential investment-adviser claims.",
+    "consequentialClaims": [
+     {
+      "quote": "te regulator and owes you the fiduciary duty covered in Step 1 below, typically charging a fee tied to the assets under ",
+      "category": "investment",
+      "reason": "Reader-facing statement about fiduciary on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Read the full decision path. The new Step 1 inbound sentence points to the fiduciary guide while the same section calls Regulation Best Interest 'the weaker standard' and says the answer to 'fiduciary at all times, on all my accounts' should be 'a simple yes' (F1, F2). Both conflict with the linked guide's sourced position and with Investor.gov's dual-registrant statement."
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "'the weaker standard' and 'held only to Regulation Best Interest' have no support in the fetched captures (clayton-excerpt.txt, form-crs.txt); 'often isn't licensed to manage a portfolio at all' about financial coaches/counselors has none either (finra-credentials.txt, cfpb-credit-counseling.txt cover neither claim) (F1, F3)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing, modeling, client or professional-review claim in the rendered text (grep for tested/we tested/our testing returned none). Byline is the existing site author Jonathan Velez with the site-wide template label 'Reviewed against primary sources'; the label is inherited and unchanged by this edit; no reviewedBy or credential in JSON-LD."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated June 25, 2026' and JSON-LD datePublished/dateModified 2026-06-25 are unchanged (link-only, no bump) and equal. If F1 to F3 are applied the date must be bumped to 2026-11-09 (F4)."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "The three added inbound links (/guides/what-is-a-fiduciary/, /guides/what-is-a-cfp/, /guides/questions-to-ask-a-financial-advisor/) return 200 on the preview, use descriptive anchors and sit in the Step 1, Step 3 and Step 5 paragraphs they belong to; canonical present, no noindex."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium 390px and 1280px: no page-level horizontal scroll (390/390, 1280/1280); the page has no table; no console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only scope respected by the author; no medical, testing or professional-service exclusion triggered. The blocker is an inherited contradiction affecting the revised answer, not an author scope violation."
+    }
+   },
+   "findingsFile": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/edited_guides_how-to-choose-a-financial-advisor.findings.txt",
+   "findingIds": "F1-F4"
+  },
+  {
+   "path": "/guides/financial-advisor-worth-it/",
+   "fingerprint": "b1a46ae684a71a28fb7aa675a55c3542ce4f70044bfca128f527b26dfeabcf66",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_guides_financial-advisor-worth-it_-round1-reservation.json",
+    "sha256": "f9a987959a6b12c588c69d8ea5ee3287df989247d1249988d9442b2b925f8922"
+   },
+   "verdict": "PASS",
+   "riskAssessment": {
+    "textSha256": "3957cc2311b8edc0c5a42e4facdee25330e838b3f826165b180e8c43354cc9af",
+    "rationale": "HIGH: existing personal-finance page whose answer concerns paying for, choosing or investing through a financial product or professional; the edit adds only routing links but the page claims are consequential and the site floor is HIGH.",
+    "consequentialClaims": [
+     {
+      "quote": "let / Guides / Is a Financial Advisor Worth It? What the Research Actually Shows Is a Financial Advisor Worth It? What t",
+      "category": "investment",
+      "reason": "Reader-facing statement about advisor on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the whole rendered page and the added passage(s): 'To see what the fee pays for, read what a financial advisor does.' (end of Step 1, after the fee models) and 'Our questions to ask a financial advisor give you a script for those interviews.' (Step 5) and 'To see how robo-advisors work and who they fit, read what a robo-advisor is.' (end of the robo section). Each reads naturally in its paragraph, matches its destination's content and does not contradict the page's answer. Advisory, not blocking: the inherited robo section says a robo-advisor 'can't talk you out of a panic sell', while the new robo guide cites the SEC bulletin that some robo-advisors offer hybrid human access; the sentence is hedged elsewhere with 'typically' and does not change this page's answer. Inherited 'honestly' in Step 3 and unsourced fee ranges are pre-existing style/source items outside this run's link-only scope."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "The edit adds routing sentences with no new factual claim. I verified each destination exists and says what its anchor promises by reading the rendered destination guide. Inherited claims were read for contradictions with the new guides; none that changes this page's answer was found (see advisory)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No tested/we tested/our testing claim in the rendered text (the only 'test' hits are ordinary words such as testing direction or an exam description). Byline is the existing author Jonathan Velez with the site-wide template label 'Reviewed against primary sources', unchanged by this edit; JSON-LD Article has no reviewedBy. The label was not added by this run and I did not re-verify legacy source coverage for this page; flagged as a site-wide advisory."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated June 25, 2026' and JSON-LD datePublished and dateModified both 2026-06-25: unchanged, equal, no date bump, consistent with link-only scope and the manifest expectedUpdatedDate."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Added inbound link(s) return 200 on the preview, anchors are descriptive and point to the intended new guide(s); all 48 internal link targets found across the 13 routes returned 200; canonical present, no robots noindex."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium 390px and 1280px: no page-level horizontal scroll (scrollWidth equals clientWidth at both). The page has no table. No console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only scope held: no body claims added, no date change, no template or metadata change; no medical or testing exclusion triggered; reports/ai-answer-citation-pass/defended-pages.json lists no defended routes, so no DEFEND-LOCK applies."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Link-only edit. The page's central answer is untouched; the added sentence(s) make no factual claim: 'To see what the fee pays for, read what a financial advisor does.' (end of Step 1, after the fee models) and 'Our questions to ask a financial advisor give you a script for those interviews.' (Step 5) and 'To see how robo-advisors work and who they fit, read what a robo-advisor is.' (end of the robo section). Targets exist and cover what the anchors say (checked in the rendered text of the target guides)."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "No tested, modeled, client or professional-review claim added; rendered body and byline carry none. The page's own evidence statements are inherited and unchanged."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "No date, price, rate or rule is introduced by the edit. The edited page keeps its prior updated date, which matches the link-only scope; inherited figures were not re-verified and are outside the scope."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "The only new recommendation is to read a linked sibling guide, which is supported by that guide's content. The page's own recommendations are unchanged."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "The added sentences cite no source. The destination guides cite SEC, Investor.gov, CFP Board and CFPB pages captured on 2026-11-09 (see their own audits)."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "YMYL personal-finance page. I read the edited passage and the surrounding decision path for new consequential claims about fiduciary duty, fees or credentials and found none added by the edit. Pre-existing claims are noted in the advisory line of this review."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US-only scope is unchanged. The edit adds no new rule or jurisdiction claim."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "NA: no professional review is claimed or required for this link-only edit; the page's byline names the existing site author and no reviewer credential."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH (site floor and consequential-claim category). Applied to the exact rendered page text; see riskAssessment."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Anchor text is descriptive and matches its destination; the link sits in a relevant paragraph; no keyword stuffing; title, meta description and canonical unchanged; Title Case headings unchanged."
+    }
+   }
+  },
+  {
+   "path": "/compare/financial-advisor-vs-financial-planner/",
+   "fingerprint": "17b5569e6201922c71ebf4c4db6214e1be89f310204cd1d7c7be44452d4f5869",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_compare_financial-advisor-vs-financial-planner_-round1-reservation.json",
+    "sha256": "d790e4b9050b008b6c5964f90e5413a0518f6dfbda955e157df2e363114f6b9d"
+   },
+   "verdict": "PASS",
+   "riskAssessment": {
+    "textSha256": "032fcc8234c4c5777ac973f95fd16f09c9b7c005c42ca57ac20ace253c8b8bf8",
+    "rationale": "HIGH: existing personal-finance page whose answer concerns paying for, choosing or investing through a financial product or professional; the edit adds only routing links but the page claims are consequential and the site floor is HIGH.",
+    "consequentialClaims": [
+     {
+      "quote": "ells you whether someone is a fiduciary, how they're paid, or what they actually do for you. Financial Advisor vs Financ",
+      "category": "investment",
+      "reason": "Reader-facing statement about fiduciary on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the whole rendered page and the added passage(s): 'Our guide to what a fiduciary is explains the standards.' (end of 'Which should you choose?') and 'For a plain-language list of the services an advisor provides, see what a financial advisor does.' (end of 'What a financial advisor typically focuses on'). Each reads naturally in its paragraph, matches its destination's content and does not contradict the page's answer. Advisory, not blocking: inherited em-dashes and 'unregulated title' phrasing are pre-existing; none contradicts the two linked guides."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "The edit adds routing sentences with no new factual claim. I verified each destination exists and says what its anchor promises by reading the rendered destination guide. Inherited claims were read for contradictions with the new guides; none that changes this page's answer was found (see advisory)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No tested/we tested/our testing claim in the rendered text (the only 'test' hits are ordinary words such as testing direction or an exam description). Byline is the existing author Jonathan Velez with the site-wide template label 'Reviewed against primary sources', unchanged by this edit; JSON-LD Article has no reviewedBy. The label was not added by this run and I did not re-verify legacy source coverage for this page; flagged as a site-wide advisory."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated June 25, 2026' and JSON-LD datePublished and dateModified both 2026-06-25: unchanged, equal, no date bump, consistent with link-only scope and the manifest expectedUpdatedDate."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Added inbound link(s) return 200 on the preview, anchors are descriptive and point to the intended new guide(s); all 48 internal link targets found across the 13 routes returned 200; canonical present, no robots noindex."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium 390px and 1280px: no page-level horizontal scroll (scrollWidth equals clientWidth at both). Existing tables sit inside .table-wrap scroll containers (at 390px the roundup table is 548px inside a 350px container with its own horizontal scroll). No console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only scope held: no body claims added, no date change, no template or metadata change; no medical or testing exclusion triggered; reports/ai-answer-citation-pass/defended-pages.json lists no defended routes, so no DEFEND-LOCK applies."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Link-only edit. The page's central answer is untouched; the added sentence(s) make no factual claim: 'Our guide to what a fiduciary is explains the standards.' (end of 'Which should you choose?') and 'For a plain-language list of the services an advisor provides, see what a financial advisor does.' (end of 'What a financial advisor typically focuses on'). Targets exist and cover what the anchors say (checked in the rendered text of the target guides)."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "No tested, modeled, client or professional-review claim added; rendered body and byline carry none. The page's own evidence statements are inherited and unchanged."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "No date, price, rate or rule is introduced by the edit. The edited page keeps its prior updated date, which matches the link-only scope; inherited figures were not re-verified and are outside the scope."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "The only new recommendation is to read a linked sibling guide, which is supported by that guide's content. The page's own recommendations are unchanged."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "The added sentences cite no source. The destination guides cite SEC, Investor.gov, CFP Board and CFPB pages captured on 2026-11-09 (see their own audits)."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "YMYL personal-finance page. I read the edited passage and the surrounding decision path for new consequential claims about fiduciary duty, fees or credentials and found none added by the edit. Pre-existing claims are noted in the advisory line of this review."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US-only scope is unchanged. The edit adds no new rule or jurisdiction claim."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "NA: no professional review is claimed or required for this link-only edit; the page's byline names the existing site author and no reviewer credential."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH (site floor and consequential-claim category). Applied to the exact rendered page text; see riskAssessment."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Anchor text is descriptive and matches its destination; the link sits in a relevant paragraph; no keyword stuffing; title, meta description and canonical unchanged; Title Case headings unchanged."
+    }
+   }
+  },
+  {
+   "path": "/guides/what-is-a-cfa/",
+   "fingerprint": "d3e136e04dec5c4ddeed52477bbced7cad30b70f4cbe2e82c2a9e1b236125360",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_guides_what-is-a-cfa_-round1-reservation.json",
+    "sha256": "3dd7c55c1f4910d8908f014efc404e53c0a7ed3cdb502e330f291727c7df4442"
+   },
+   "verdict": "PASS",
+   "riskAssessment": {
+    "textSha256": "62509c1fa26fe5ec10bc2ed900e6a009a34ffde716326fa292981b3770ef1a71",
+    "rationale": "HIGH: existing personal-finance page whose answer concerns paying for, choosing or investing through a financial product or professional; the edit adds only routing links but the page claims are consequential and the site floor is HIGH.",
+    "consequentialClaims": [
+     {
+      "quote": "same thing as the SEC's legal fiduciary duty. The SEC applies fiduciary duty specifically to registered investment advis",
+      "category": "investment",
+      "reason": "Reader-facing statement about fiduciary on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the whole rendered page and the added passage(s): 'For what the CFP credential requires, see what a CFP is.' (end of the CFA vs. CFP section). Each reads naturally in its paragraph, matches its destination's content and does not contradict the page's answer. Advisory, not blocking: the edited paragraph carries inherited em-dashes; its CFP/fiduciary statements agree with the new CFP guide."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "The edit adds routing sentences with no new factual claim. I verified each destination exists and says what its anchor promises by reading the rendered destination guide. Inherited claims were read for contradictions with the new guides; none that changes this page's answer was found (see advisory)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No tested/we tested/our testing claim in the rendered text (the only 'test' hits are ordinary words such as testing direction or an exam description). Byline is the existing author Jonathan Velez with the site-wide template label 'Reviewed against primary sources', unchanged by this edit; JSON-LD Article has no reviewedBy. The label was not added by this run and I did not re-verify legacy source coverage for this page; flagged as a site-wide advisory."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated June 25, 2026' and JSON-LD datePublished and dateModified both 2026-06-25: unchanged, equal, no date bump, consistent with link-only scope and the manifest expectedUpdatedDate."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Added inbound link(s) return 200 on the preview, anchors are descriptive and point to the intended new guide(s); all 48 internal link targets found across the 13 routes returned 200; canonical present, no robots noindex."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium 390px and 1280px: no page-level horizontal scroll (scrollWidth equals clientWidth at both). The page has no table. No console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only scope held: no body claims added, no date change, no template or metadata change; no medical or testing exclusion triggered; reports/ai-answer-citation-pass/defended-pages.json lists no defended routes, so no DEFEND-LOCK applies."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Link-only edit. The page's central answer is untouched; the added sentence(s) make no factual claim: 'For what the CFP credential requires, see what a CFP is.' (end of the CFA vs. CFP section). Targets exist and cover what the anchors say (checked in the rendered text of the target guides)."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "No tested, modeled, client or professional-review claim added; rendered body and byline carry none. The page's own evidence statements are inherited and unchanged."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "No date, price, rate or rule is introduced by the edit. The edited page keeps its prior updated date, which matches the link-only scope; inherited figures were not re-verified and are outside the scope."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "The only new recommendation is to read a linked sibling guide, which is supported by that guide's content. The page's own recommendations are unchanged."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "The added sentences cite no source. The destination guides cite SEC, Investor.gov, CFP Board and CFPB pages captured on 2026-11-09 (see their own audits)."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "YMYL personal-finance page. I read the edited passage and the surrounding decision path for new consequential claims about fiduciary duty, fees or credentials and found none added by the edit. Pre-existing claims are noted in the advisory line of this review."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US-only scope is unchanged. The edit adds no new rule or jurisdiction claim."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "NA: no professional review is claimed or required for this link-only edit; the page's byline names the existing site author and no reviewer credential."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH (site floor and consequential-claim category). Applied to the exact rendered page text; see riskAssessment."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Anchor text is descriptive and matches its destination; the link sits in a relevant paragraph; no keyword stuffing; title, meta description and canonical unchanged; Title Case headings unchanged."
+    }
+   }
+  },
+  {
+   "path": "/roundup/best-robo-advisors/",
+   "fingerprint": "bf8df584595ac8aecd1f9b02e5c72ec03cd6e09cd2c8b6087c92821fef10a8e4",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_roundup_best-robo-advisors_-round1-reservation.json",
+    "sha256": "a0c3df4dba8d952ad0e4493ab05d6d39f2fecab182843511afe090528ef1db35"
+   },
+   "verdict": "PASS",
+   "riskAssessment": {
+    "textSha256": "3738eeb9de44ee5a8d7e0b9e9a1efe775375d1ba88d9f11ef99da29c7fab331b",
+    "rationale": "HIGH: existing personal-finance page whose answer concerns paying for, choosing or investing through a financial product or professional; the edit adds only routing links but the page claims are consequential and the site floor is HIGH.",
+    "consequentialClaims": [
+     {
+      "quote": "d September 30, 2026 The best robo-advisor for a standalone taxable account is the one that fits the balance you actuall",
+      "category": "investment",
+      "reason": "Reader-facing statement about robo-advisor on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the whole rendered page and the added passage(s): 'New to the term? What a robo-advisor is explains how the model works and who it fits.' (end of the intro's routing paragraph). Each reads naturally in its paragraph, matches its destination's content and does not contradict the page's answer. Advisory, not blocking: the added sentence opens with a rhetorical question and uses a nominalized subject, but it is an existing-page routing line, natural enough in the paragraph of 'if you're still deciding ...' pointers. Inherited 'We compared seven robo-advisors' claims are first-person comparison statements outside this run's scope."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "The edit adds routing sentences with no new factual claim. I verified each destination exists and says what its anchor promises by reading the rendered destination guide. Inherited claims were read for contradictions with the new guides; none that changes this page's answer was found (see advisory)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No tested/we tested/our testing claim in the rendered text (the only 'test' hits are ordinary words such as testing direction or an exam description). Byline is the existing author Jonathan Velez with the site-wide template label 'Reviewed against primary sources', unchanged by this edit; JSON-LD Article has no reviewedBy. The label was not added by this run and I did not re-verify legacy source coverage for this page; flagged as a site-wide advisory."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated September 30, 2026' and JSON-LD datePublished and dateModified both 2026-09-30: unchanged, equal, no date bump, consistent with link-only scope and the manifest expectedUpdatedDate."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Added inbound link(s) return 200 on the preview, anchors are descriptive and point to the intended new guide(s); all 48 internal link targets found across the 13 routes returned 200; canonical present, no robots noindex."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium 390px and 1280px: no page-level horizontal scroll (scrollWidth equals clientWidth at both). Existing tables sit inside .table-wrap scroll containers (at 390px the roundup table is 548px inside a 350px container with its own horizontal scroll). No console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only scope held: no body claims added, no date change, no template or metadata change; no medical or testing exclusion triggered; reports/ai-answer-citation-pass/defended-pages.json lists no defended routes, so no DEFEND-LOCK applies."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Link-only edit. The page's central answer is untouched; the added sentence(s) make no factual claim: 'New to the term? What a robo-advisor is explains how the model works and who it fits.' (end of the intro's routing paragraph). Targets exist and cover what the anchors say (checked in the rendered text of the target guides)."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "No tested, modeled, client or professional-review claim added; rendered body and byline carry none. The page's own evidence statements are inherited and unchanged."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "No date, price, rate or rule is introduced by the edit. The edited page keeps its prior updated date, which matches the link-only scope; inherited figures were not re-verified and are outside the scope."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "The only new recommendation is to read a linked sibling guide, which is supported by that guide's content. The page's own recommendations are unchanged."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "The added sentences cite no source. The destination guides cite SEC, Investor.gov, CFP Board and CFPB pages captured on 2026-11-09 (see their own audits)."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "YMYL personal-finance page. I read the edited passage and the surrounding decision path for new consequential claims about fiduciary duty, fees or credentials and found none added by the edit. Pre-existing claims are noted in the advisory line of this review."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US-only scope is unchanged. The edit adds no new rule or jurisdiction claim."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "NA: no professional review is claimed or required for this link-only edit; the page's byline names the existing site author and no reviewer credential."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH (site floor and consequential-claim category). Applied to the exact rendered page text; see riskAssessment."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Anchor text is descriptive and matches its destination; the link sits in a relevant paragraph; no keyword stuffing; title, meta description and canonical unchanged; Title Case headings unchanged."
+    }
+   }
+  },
+  {
+   "path": "/guides/financial-planning-calculator/",
+   "fingerprint": "9f8160d5c76f3286e1ee253f245c84b5ca487e78354cc53b410b43314fd31ee2",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_guides_financial-planning-calculator_-round1-reservation.json",
+    "sha256": "05b4c90b3f0e0c32f0a416cb29326c75648763b70d4696572e59d73a9b6bad8d"
+   },
+   "verdict": "PASS",
+   "riskAssessment": {
+    "textSha256": "e9bff374268959c03f78a09a41c01bce4b266dfcb64210c3e1e01d733d65e1c9",
+    "rationale": "HIGH: existing personal-finance page whose answer concerns paying for, choosing or investing through a financial product or professional; the edit adds only routing links but the page claims are consequential and the site floor is HIGH.",
+    "consequentialClaims": [
+     {
+      "quote": "alculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning",
+      "category": "financial",
+      "reason": "Reader-facing statement about retirement on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the whole rendered page and the added passage(s): 'To build the plan these numbers feed into, read how to make a financial plan.' (end of the snapshot-versus-projection paragraph). Each reads naturally in its paragraph, matches its destination's content and does not contradict the page's answer. None blocking. Note for the author: the destination guide describes this calculator page as turning income and goals into a savings rate, retirement-readiness or net worth number, which matches this page's own opening paragraph."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "The edit adds routing sentences with no new factual claim. I verified each destination exists and says what its anchor promises by reading the rendered destination guide. Inherited claims were read for contradictions with the new guides; none that changes this page's answer was found (see advisory)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No tested/we tested/our testing claim in the rendered text (the only 'test' hits are ordinary words such as testing direction or an exam description). Byline is the existing author Jonathan Velez with the site-wide template label 'Reviewed against primary sources', unchanged by this edit; JSON-LD Article has no reviewedBy. The label was not added by this run and I did not re-verify legacy source coverage for this page; flagged as a site-wide advisory."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated June 25, 2026' and JSON-LD datePublished and dateModified both 2026-06-25: unchanged, equal, no date bump, consistent with link-only scope and the manifest expectedUpdatedDate."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Added inbound link(s) return 200 on the preview, anchors are descriptive and point to the intended new guide(s); all 48 internal link targets found across the 13 routes returned 200; canonical present, no robots noindex."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium 390px and 1280px: no page-level horizontal scroll (scrollWidth equals clientWidth at both). The page has no table. No console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only scope held: no body claims added, no date change, no template or metadata change; no medical or testing exclusion triggered; reports/ai-answer-citation-pass/defended-pages.json lists no defended routes, so no DEFEND-LOCK applies."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Link-only edit. The page's central answer is untouched; the added sentence(s) make no factual claim: 'To build the plan these numbers feed into, read how to make a financial plan.' (end of the snapshot-versus-projection paragraph). Targets exist and cover what the anchors say (checked in the rendered text of the target guides)."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "No tested, modeled, client or professional-review claim added; rendered body and byline carry none. The page's own evidence statements are inherited and unchanged."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "No date, price, rate or rule is introduced by the edit. The edited page keeps its prior updated date, which matches the link-only scope; inherited figures were not re-verified and are outside the scope."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "The only new recommendation is to read a linked sibling guide, which is supported by that guide's content. The page's own recommendations are unchanged."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "The added sentences cite no source. The destination guides cite SEC, Investor.gov, CFP Board and CFPB pages captured on 2026-11-09 (see their own audits)."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "YMYL personal-finance page. I read the edited passage and the surrounding decision path for new consequential claims about fiduciary duty, fees or credentials and found none added by the edit. Pre-existing claims are noted in the advisory line of this review."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US-only scope is unchanged. The edit adds no new rule or jurisdiction claim."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "NA: no professional review is claimed or required for this link-only edit; the page's byline names the existing site author and no reviewer credential."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH (site floor and consequential-claim category). Applied to the exact rendered page text; see riskAssessment."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Anchor text is descriptive and matches its destination; the link sits in a relevant paragraph; no keyword stuffing; title, meta description and canonical unchanged; Title Case headings unchanged."
+    }
+   }
+  },
+  {
+   "path": "/guides/financial-planning-for-30-year-olds/",
+   "fingerprint": "8bf0b3b66da3b644b5ff3b7deadcee2a75ab5081b9e688b56e59523be7d6aea0",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_guides_financial-planning-for-30-year-olds_-round1-reservation.json",
+    "sha256": "fd178ae7a94437bec59caa7a14a6beb8286e9fcf2a45be2f29db5525a6c28eaf"
+   },
+   "verdict": "PASS",
+   "riskAssessment": {
+    "textSha256": "f6a9dca3bccc2455735c7d6b2dcf674d07b9b0bfb889f59d01ab57966021b615",
+    "rationale": "HIGH: existing personal-finance page whose answer concerns paying for, choosing or investing through a financial product or professional; the edit adds only routing links but the page claims are consequential and the site floor is HIGH.",
+    "consequentialClaims": [
+     {
+      "quote": "ercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Milea",
+      "category": "financial",
+      "reason": "Reader-facing statement about emergency fund on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the whole rendered page and the added passage(s): 'If you have no written plan yet, start with how to make a financial plan.' (end of the intro's second paragraph). Each reads naturally in its paragraph, matches its destination's content and does not contradict the page's answer. Advisory, not blocking: this page fixes an order (emergency fund, employer match, debt above 7% to 8%) while the linked plan guide says its sources do not rank debt payoff against a reserve. The link sits in the intro, before the ordered steps, and the plan guide's page-level fixes (F2) should remove its 'first piece/action' wording, which narrows the gap."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "The edit adds routing sentences with no new factual claim. I verified each destination exists and says what its anchor promises by reading the rendered destination guide. Inherited claims were read for contradictions with the new guides; none that changes this page's answer was found (see advisory)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No tested/we tested/our testing claim in the rendered text (the only 'test' hits are ordinary words such as testing direction or an exam description). Byline is the existing author Jonathan Velez with the site-wide template label 'Reviewed against primary sources', unchanged by this edit; JSON-LD Article has no reviewedBy. The label was not added by this run and I did not re-verify legacy source coverage for this page; flagged as a site-wide advisory."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated June 25, 2026' and JSON-LD datePublished and dateModified both 2026-06-25: unchanged, equal, no date bump, consistent with link-only scope and the manifest expectedUpdatedDate."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Added inbound link(s) return 200 on the preview, anchors are descriptive and point to the intended new guide(s); all 48 internal link targets found across the 13 routes returned 200; canonical present, no robots noindex."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium 390px and 1280px: no page-level horizontal scroll (scrollWidth equals clientWidth at both). The page has no table. No console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only scope held: no body claims added, no date change, no template or metadata change; no medical or testing exclusion triggered; reports/ai-answer-citation-pass/defended-pages.json lists no defended routes, so no DEFEND-LOCK applies."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Link-only edit. The page's central answer is untouched; the added sentence(s) make no factual claim: 'If you have no written plan yet, start with how to make a financial plan.' (end of the intro's second paragraph). Targets exist and cover what the anchors say (checked in the rendered text of the target guides)."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "No tested, modeled, client or professional-review claim added; rendered body and byline carry none. The page's own evidence statements are inherited and unchanged."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "No date, price, rate or rule is introduced by the edit. The edited page keeps its prior updated date, which matches the link-only scope; inherited figures were not re-verified and are outside the scope."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "The only new recommendation is to read a linked sibling guide, which is supported by that guide's content. The page's own recommendations are unchanged."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "The added sentences cite no source. The destination guides cite SEC, Investor.gov, CFP Board and CFPB pages captured on 2026-11-09 (see their own audits)."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "YMYL personal-finance page. I read the edited passage and the surrounding decision path for new consequential claims about fiduciary duty, fees or credentials and found none added by the edit. Pre-existing claims are noted in the advisory line of this review."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US-only scope is unchanged. The edit adds no new rule or jurisdiction claim."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "NA: no professional review is claimed or required for this link-only edit; the page's byline names the existing site author and no reviewer credential."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH (site floor and consequential-claim category). Applied to the exact rendered page text; see riskAssessment."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Anchor text is descriptive and matches its destination; the link sits in a relevant paragraph; no keyword stuffing; title, meta description and canonical unchanged; Title Case headings unchanged."
+    }
+   }
+  }
+ ]
+}

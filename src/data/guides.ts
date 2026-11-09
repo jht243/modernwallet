@@ -35,6 +35,514 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── mindmap-pass 2026-11-09 (competitor): how-to-make-a-financial-plan ──
+  {
+    "updated": "2026-11-09",
+    "slug": "how-to-make-a-financial-plan",
+    "title": "How to Make a Financial Plan Step by Step for Your Household",
+    "metaDescription": "Make a financial plan: list your finances, set dated goals, test your course, start an emergency fund, act and review on a schedule. Free calculators linked.",
+    "h1": "How to Make a Financial Plan",
+    "cardBlurb": "A seven-step way to make a financial plan on your own, built on the CFP Board's planning process and CFPB emergency fund guidance.",
+    "introText": "You make a financial plan by listing your finances, setting goals with dates, testing your current course, choosing actions, carrying them out and reviewing on a schedule. \n\nOne early piece to build is an emergency fund, a cash reserve for surprise costs such as a car repair or a medical bill. If you also carry high-interest debt, weigh paying it down alongside that reserve while you set up the rest of the plan.",
+    "sections": [
+      {
+        "heading": "How to Make a Financial Plan Step by Step",
+        "body": "You can make a financial plan by running the seven-step process that the [Certified Financial Planner Board of Standards (CFP Board)](https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct) sets out in its practice standards, with you acting as both planner and client. One early action is an emergency fund, whichthe [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/) calls \"one of the first steps you can take to start saving.\" If you carry high-interest debt too, weigh it alongside that reserve, because neither the CFP Board standards nor the CFPB emergency fund guide ranks one ahead of the other.\n\nWe adapted the CFP Board's seven practice standards into household tasks. The wording of the tasks is ours, not CFP Board guidance, and the table below shows each task beside the standard it comes from:\n\n1. Write down your income, spending, savings, debts, insurance and estate documents.\n2. Pick goals, each with an amount and a date.\n3. Compare the course you are on with other courses you could take.\n4. Choose the changes you will make.\n5. Put the plan in writing and share it with anyone it affects.\n6. Carry out the changes, such as starting an emergency fund.\n7. Track your progress and update the plan.\n\nThe CFP Board expanded its process from six steps to seven. A planner develops a recommendation and then presents it to the client. On your own, those two standards become choosing your changes and writing them down.\n\n\n\n| CFP Board practice standard | What you do on your own |\n|---|---|\n| Understanding the Client's Personal and Financial Circumstances | List income, spending, savings, debts, insurance and estate documents |\n| Identifying and Selecting Goals | Set goals with an amount and a date |\n| Analyzing the Client's Current Course of Action and Potential Alternative Courses of Action | Compare your current course with other options |\n| Developing the Financial Planning Recommendation(s) | Choose the changes you will make |\n| Presenting the Financial Planning Recommendation(s) | Write the plan down and share it with anyone it affects |\n| Implementing the Financial Planning Recommendation(s) | Carry out the changes, such as starting an emergency fund |\n| Monitoring Progress and Updating | Review on a set date and update the plan |"
+      },
+      {
+        "heading": "The Snapshot You Need to Make a Financial Plan",
+        "body": "A financial plan starts with a written record of your money today, because the CFP Board's first standard covers gathering both numbers and personal facts about the person being planned for. The CFP Board gives these examples of what a planner collects. Each one becomes a line in your snapshot:\n\n- Income: each paycheck and any other money that arrives during the month.\n- Expenses: what leaves your account, including bills that come once or twice a year.\n- Savings: the balance in each savings account.\n- Assets: what you own, such as a home, a car or retirement accounts.\n- Liabilities: every debt, with its balance and interest rate.\n- Insurance coverage: the health, auto, home or renters, life and disability policies you hold.\n- Estate plans: any will or beneficiary forms you have on file.\n\nThe CFP Board's list also covers your goals, your priorities and your risk tolerance. Write a sentence or two on each.\n\nThe CFP Board offers these as examples of what a planner gathers, so add anything else that touches your money. To total the assets and liabilities above, use our [net worth guide](/net-worth/how-to-calculate-net-worth)."
+      },
+      {
+        "heading": "Dated Goals and a Test of Your Current Course",
+        "body": "The CFPB's emergency fund guide builds a savings habit around three moves: set a goal, make consistent contributions and monitor progress. Use those same three moves for every goal you write down.\n\nWrite each goal as one line: what it is, how much it costs and when you want it. Then run the CFP Board's third standard, which compares your current course of action with alternative courses. In plain terms, ask where your money ends up if nothing changes.\n\nTo test a goal, use simple arithmetic:\n\n1. Subtract what you have already saved toward the goal from its amount.\n2. Divide what is left by the number of months until your date.\n3. Compare that monthly figure with what you set aside now.\n\nIf the monthly figure is higher than your current saving, sketch one or two alternatives. You could save more each month, cut an expense or move the date later. Our [financial planning calculator](/guides/financial-planning-calculator/) turns your income and goals into a savings rate, retirement-readiness or net worth number, so you can run each alternative.\n\nWhen goals compete for the same dollars, rank them with the priorities you wrote in your snapshot. The CFPB's [Your Money, Your Goals toolkit](https://www.consumerfinance.gov/consumer-tools/educator-tools/your-money-your-goals/) offers free tools for setting goals and working through money challenges."
+      },
+      {
+        "heading": "An Emergency Fund as an Early Step",
+        "body": "An emergency fund is a cash reserve set aside for unplanned expenses or financial emergencies, such as car repairs, home repairs, medical bills or a loss of income, according to the CFPB. The CFPB calls setting one up one of the first steps you can take to start saving. It also says even a small amount helps you recover quicker and stay on track toward larger savings goals.\n\nThe CFPB says how much you need depends on your situation. To set your own target, list the most common unexpected expenses you have had and what each one cost, then set a goal from that total. \n\nIf you are living paycheck to paycheck, the CFPB notes that putting any money aside can feel difficult. It adds that even a small amount can provide some financial security. The CFPB lists these ways to build the reserve:\n\n- Create a savings habit: set a goal, make consistent contributions and monitor your progress.\n- Manage your cash flow.\n- Put away a portion of your tax refund.\n- Set up automatic recurring transfers, which the CFPB calls often one of the easiest ways to save.\n\nPick the one you can start this week."
+      },
+      {
+        "heading": "High-Interest Debt Alongside the Reserve",
+        "body": "Neither the CFP Board standards nor the CFPB emergency fund guide ranks paying down high-interest debt against building a cash reserve, so you decide the order inside your own plan. Your snapshot already lists each debt with its balance and rate. In the course-testing step, write out two versions of the plan: one that sends extra money to the debt first, and one that builds the reserve first.\n\nCompare where each version leaves you by your goal dates. If the comparison does not settle it, a nonprofit credit counselor can look at your specifics, and the CFPB explains [what credit counseling is](https://www.consumerfinance.gov/ask-cfpb/what-is-credit-counseling-en-1451/). A financial professional can also work through the trade-off with you."
+      },
+      {
+        "heading": "Carrying Out and Reviewing Your Financial Plan",
+        "body": "A financial plan changes your money only after you carry it out, and the CFP Board's last two standards are implementing the recommendations and monitoring progress and updating. Turn each change into a task with a date. Open the savings account, set the automatic transfer and list the debt you will pay extra on.\n\nThen put a review date on your calendar. Choose one you will keep, such as the week you file your taxes, and add an extra review when your income, household or debts change. At each review, update your snapshot, check each goal against its date and adjust the plan.\n\nWho this is not for: a household with complex tax, estate or business questions, which may need a professional. Our guides on [what a CFP is](/guides/what-is-a-cfp/) and [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/) cover that decision. Our answer would change if the CFP Board revised its seven practice standards or the CFPB published new emergency fund guidance."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "Treat a financial plan as a repeating cycle: list your finances, set dated goals, test your current course, act, then review. Start an emergency fund early, as the CFPB suggests. If you carry high-interest debt, compare a debt-first and a reserve-first version of the plan before you choose.\n\nHouseholds with complex tax, estate or investment questions may need a professional to run the same steps with them. Write down your income, spending, savings and debts today. Pick one goal with an amount and a date, and you can make a financial plan you can start this week."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/calculators/",
+        "label": "All financial calculators"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What should a financial plan include?",
+        "answer": "A financial plan should include a written record of your income, expenses, savings, assets, liabilities, insurance coverage and estate plans, plus your goals, priorities and risk tolerance. The CFP Board gives these as examples of what a planner gathers. The plan then adds the actions from the later steps: the changes you chose, how you will carry them out and when you will review them."
+      },
+      {
+        "question": "What are the components of a financial plan?",
+        "answer": "The components of a financial plan are the facts you gather and the actions you choose, organized by the seven steps in the CFP Board's planning process. The facts include income, expenses, savings, assets, liabilities, insurance, estate plans, goals, priorities and risk tolerance. The actions cover goals, testing, changes, carrying out and review."
+      },
+      {
+        "question": "Why make a financial plan?",
+        "answer": "A financial plan gives each goal an amount, a date and a monthly action, so you can see whether your current course reaches it. The CFPB says even a small emergency fund helps you recover quicker from unplanned expenses and stay on track toward larger savings goals."
+      },
+      {
+        "question": "Do I need a financial planner to make a plan?",
+        "answer": "No rule in the CFP Board's standards or the CFPB's emergency fund guidance requires you to hire a planner to make a financial plan. The CFP Board's seven practice standards describe the process a planner follows, and you can adapt the same steps yourself. If your situation includes complex tax, estate or business questions, see our guide on [what a CFP is](/guides/what-is-a-cfp/) before you decide whether to hire help."
+      }
+    ],
+    "sources": [
+      {
+        "label": "CFP Board, Code of Ethics and Standards of Conduct",
+        "url": "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct"
+      },
+      {
+        "label": "CFPB, An Essential Guide to Building an Emergency Fund",
+        "url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/"
+      },
+      {
+        "label": "CFPB, Your Money, Your Goals Toolkit",
+        "url": "https://www.consumerfinance.gov/consumer-tools/educator-tools/your-money-your-goals/"
+      },
+      {
+        "label": "CFPB, What Is Credit Counseling?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-credit-counseling-en-1451/"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-11-09 (competitor): what-is-a-cfp ──
+  {
+    "updated": "2026-11-09",
+    "slug": "what-is-a-cfp",
+    "title": "Certified Financial Planner Requirements and Fiduciary Duty",
+    "metaDescription": "A Certified Financial Planner (CFP) has met education, exam, experience and ethics rules and must act as a fiduciary when giving financial advice.",
+    "h1": "What Is a Certified Financial Planner (CFP)?",
+    "cardBlurb": "How the CFP Board's education, exam, experience and ethics requirements work, what a CFP professional's fiduciary duty covers, and what to look up before hiring one.",
+    "introText": "A certified financial planner (CFP) professional is a financial planner that the [Certified Financial Planner Board of Standards (CFP Board)](https://www.cfp.net/get-certified/certification-process) has certified after four requirements. A CFP professional must also act as a fiduciary when giving you financial advice. \n\nThe CFP Board calls the four requirements the \"4 E's\": Education, Exam, Experience and Ethics. In practice that means financial planning coursework plus a bachelor's degree, a 170-question exam, 6,000 hours of experience (or 4,000 apprenticeship hours) and a signed Ethics Declaration. The degree can be finished up to five years after the exam, and the experience hours can come before or after it.",
+    "sections": [
+      {
+        "heading": "What a Certified Financial Planner Is and What It Takes to Earn It",
+        "body": "A CFP professional is a financial planner who has met the CFP Board's four requirements (education, exam, experience and ethics) and who must act as a fiduciary when giving financial advice. The CFP Board allows the bachelor's degree to be finished up to five years after the exam, so a planner can pass the exam before holding the degree.\n\nThe fiduciary duty comes from the CFP Board's [Code of Ethics and Standards of Conduct](https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct). The Code reads: \"At all times when providing Financial Advice to a Client, a CFP professional must act as a fiduciary, and therefore, act in the best interests of the Client.\"\n\nEarning the credential follows a set order. Coursework comes first, because the CFP Board requires it before you can take the exam. The experience hours can land before or after the exam, and the Ethics Declaration is the final step.\n\nIf you are deciding whom to hire, the credential tells you two things. The person met the CFP Board's education, exam and experience requirements. The person also agreed to put your best interests first when giving you financial advice."
+      },
+      {
+        "heading": "The Four CFP Certification Requirements in Detail",
+        "body": "The CFP Board's certification process page sets out four requirements, and each one has its own timing rule.\n\n| Requirement | What the CFP Board requires | Timing |\n|---|---|---|\n| Education | Coursework through a CFP Board Registered Program, plus a bachelor's degree or higher in any discipline from an accredited college or university | Coursework before the exam (average 12 to 18 months). Degree within 5 years after passing |\n| Exam | 170 multiple-choice questions in two 3-hour sessions over one day | After the coursework |\n| Experience | 6,000 hours of professional experience related to the financial planning process, or 4,000 apprenticeship hours that meet additional requirements | From 10 years before to 5 years after passing the exam |\n| Ethics | Sign the Ethics Declaration. A background check is among the final requirements | Final step |\n\nEducation has two parts. The coursework must come through a CFP Board Registered Program, and the CFP Board puts the average time to finish it at 12 to 18 months. The degree can be in any discipline, as long as it is a bachelor's or higher from an accredited college or university.\n\nThe exam runs two 3-hour sessions on one day, which adds up to 6 hours of testing. It mixes stand-alone questions, scenario-based questions and questions tied to case studies. All 170 questions are multiple choice.\n\nExperience has two paths. The standard path is 6,000 hours of professional experience related to the financial planning process. The apprenticeship path asks for 4,000 hours, which is 2,000 fewer, but those hours must meet additional requirements.\n\nThe experience window opens 10 years before the exam and closes 5 years after it, so the hours must fall inside a 15-year span. The CFP Board says the experience requirement prepares a planner to provide personal financial planning to the public without supervision. Passing the exam completes one of the four requirements, and certification needs all four."
+      },
+      {
+        "heading": "The Seven Practice Standards a Certified Financial Planner Follows",
+        "body": "The CFP Board Code lists seven practice standards, and their headings describe the planning work a CFP professional does with a client.\n\n1. The planner works to understand your personal and financial circumstances.\n2. The planner identifies and selects goals.\n3. The planner analyzes your current course of action and potential alternative courses of action.\n4. The planner develops the financial planning recommendation or recommendations.\n5. The planner presents the financial planning recommendation or recommendations.\n6. The planner implements the financial planning recommendation or recommendations.\n7. The planner monitors progress and updates.\n\n\n\nYou can turn the seven headings into first-meeting questions. Ask how the planner will learn your circumstances, how goals get selected, and how the planner will monitor progress and update the plan."
+      },
+      {
+        "heading": "The Fiduciary Commitment and Its Limits",
+        "body": "The CFP Board's ethics requirement commits a CFP professional to act as a fiduciary when providing financial advice to a client, always putting the client's best interests first. The certification process page calls this the final step on the path to certification. It says signing the Ethics Declaration shows the planner agreed to adhere to high ethical and professional standards for the practice of financial planning.\n\nThe credential describes competence and conduct for financial advice. The credential does not set one way to be paid, but the CFP Board Code requires a CFP professional giving financial advice to tell you before or at the engagement how you pay and how the professional and firm are compensated, while registration as an adviser or broker must still be checked separately. Our [financial advisor vs. financial planner comparison](/compare/financial-advisor-vs-financial-planner/) covers those titles.\n\n[Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) says the most important question before hiring an investment professional is whether the person is registered with the [Securities and Exchange Commission (SEC)](https://adviserinfo.sec.gov) or with a state securities regulator. Investor.gov warns that it is \"really risky to invest with someone who isn't licensed.\" It offers a free and simple search tool that shows whether an investment professional is licensed and registered.\n\nInvestor.gov also has a \"Tricky Titles\" warning. It says not to assume that initials after a broker's or adviser's name make that person more qualified than another, because the titles are not all the same and do not necessarily mean better service for you. The initials may even mean the person can sell only certain products, and Investor.gov points to a [Financial Industry Regulatory Authority (FINRA)](https://www.finra.org/investors/professional-designations) list showing that some credentials are easy to obtain and others are hard-earned.\n\nPay is the question the CFP initials leave open, so ask the person directly. [J.P. Morgan Securities LLC's](https://files.brokercheck.finra.org/crs_79.pdf) [Form CRS](https://www.investor.gov/CRS) (Client Relationship Summary), for example, says it pays its financial professionals in different ways, including commissions and advisory fees, and that higher commissions, costs or fees could lead to higher compensation for a financial professional. Our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) lists more questions to ask before you hire anyone."
+      },
+      {
+        "heading": "Where the CFA and CTFA Credentials Fit",
+        "body": "Our [guide to the CFA credential](/guides/what-is-a-cfa/) covers the Chartered Financial Analyst (CFA) designation. Our [guide to the CTFA credential](/guides/what-is-a-ctfa/) covers the Certified Trust and Fiduciary Advisor (CTFA) designation.\n\nIf you need only trust administration, start with the CTFA guide. If you need only investment analysis, start with the CFA guide.\n\nOur answer rests on the CFP Board's requirements as listed on its certification process page. If the CFP Board changes its education, exam, experience or ethics rules, the steps described here change too. The [CFP Board certification process page](https://www.cfp.net/get-certified/certification-process) shows the current version."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "A CFP professional has met four published requirements from the CFP Board and has committed to act as a fiduciary when giving financial advice. The credential signals planning competence, but not how the person is paid or registered, which you still verify. This takeaway rests on the CFP Board's published rules and Investor.gov guidance, and it shifts if you need only trust work or only investment analysis.\n\nBefore you hire a certified financial planner, look the person up on the [CFP Board verification page](https://www.cfp.net/verify-a-cfp-professional) and run the registration search on [Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) or [adviserinfo.sec.gov](https://adviserinfo.sec.gov)."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/calculators/",
+        "label": "All financial calculators"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What does a CFP do?",
+        "answer": "A CFP professional follows the seven practice standards in the CFP Board Code. They are understanding your personal and financial circumstances, identifying and selecting goals, analyzing your current course of action and alternatives, developing recommendations, presenting them, implementing them, and monitoring progress and updating. Whenever the planner gives you financial advice, the Code requires the planner to act as a fiduciary in your best interests."
+      },
+      {
+        "question": "How do CFPs get paid?",
+        "answer": "The CFP credential does not set one way to be paid, but the CFP Board Code requires a CFP professional giving financial advice to tell you before or at the engagement how you pay and how the professional and firm are compensated. J.P. Morgan Securities LLC's Form CRS, for example, says it pays its financial professionals in different ways, including commissions and advisory fees. The same form says higher commissions, costs or fees could lead to higher compensation for a financial professional, and that is one firm's disclosure rather than a rule for every firm."
+      },
+      {
+        "question": "Is a CFP worth it?",
+        "answer": "A CFP is worth looking for if you want a planner who has met the CFP Board's education, exam, experience and ethics requirements and has committed to act as a fiduciary when giving financial advice. The credential does not set how the person is paid, and registration as an adviser or broker still has to be verified separately. Look up registration with the search tool on [Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) before you hire."
+      },
+      {
+        "question": "How do I become a CFP?",
+        "answer": "You become a CFP professional by meeting the CFP Board's four requirements. Finish coursework through a CFP Board Registered Program (12 to 18 months on average), then pass the 170-question exam. Earn a bachelor's degree within five years of passing, log 6,000 experience hours or 4,000 apprenticeship hours, and sign the Ethics Declaration, as the [certification process page](https://www.cfp.net/get-certified/certification-process) lays out."
+      }
+    ],
+    "sources": [
+      {
+        "label": "CFP Board, Certification Process",
+        "url": "https://www.cfp.net/get-certified/certification-process"
+      },
+      {
+        "label": "CFP Board, Code of Ethics and Standards of Conduct",
+        "url": "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct"
+      },
+      {
+        "label": "CFP Board, Verify a CFP Professional",
+        "url": "https://www.cfp.net/verify-a-cfp-professional"
+      },
+      {
+        "label": "Investor.gov, Working with an Investment Professional",
+        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional"
+      },
+      {
+        "label": "SEC, adviserinfo.sec.gov",
+        "url": "https://adviserinfo.sec.gov"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-11-09 (competitor): what-is-a-robo-advisor ──
+  {
+    "updated": "2026-11-09",
+    "slug": "what-is-a-robo-advisor",
+    "title": "What a Robo-Advisor Is and When Using One Makes Sense",
+    "metaDescription": "A robo-advisor builds and manages a portfolio from an online questionnaire. See who it fits, what it cannot do and what to check first.",
+    "h1": "What Is a Robo-Advisor?",
+    "cardBlurb": "How a robo-advisor turns an online questionnaire into a managed portfolio, who it fits, and the six things the SEC suggests asking before you open an account.",
+    "introText": "A robo-advisor is an automated digital investment advisory program that builds and manages an investment portfolio for you from your answers to an online questionnaire. The [U.S. Securities and Exchange Commission (SEC)](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45) explains the model in an Investor Bulletin on robo-advisers, and the [Investor.gov glossary](https://www.investor.gov/introduction-investing/investing-basics/glossary/robo-adviser) gives the same definition.\n\nThe questionnaire asks about your financial goals, investment horizon, income, other assets and risk tolerance. Robo-advisors often aim to charge lower costs and fees than traditional advisory programs. Some require lower account minimums.\n\nIn exchange, some robo-advisors offer little or no contact with a person, and the advice can only use what the questionnaire collects.",
+    "sections": [
+      {
+        "heading": "What a Robo-Advisor Is and Who It Fits",
+        "body": "A robo-advisor fits you if you are comfortable answering an online questionnaire, reading its disclosures online and working with limited human contact. It does not fit you if you want to speak with a person during a market downturn, or if your finances include debts and assets its questionnaire does not ask about.\n\nInvestor.gov spells the term \"robo-adviser\" and describes it as an automated digital investment advisory program. In most cases it collects your financial goals, investment horizon, income, other assets and risk tolerance through an online questionnaire. \"Based on that information, it creates and manages an investment portfolio for you,\" the Investor.gov glossary entry says.\n\nThe same entry says services, approaches and features vary widely. Two robo-advisors can differ in what they ask you, what they invest in and how much human help they offer. The [SEC Investor Bulletin on robo-advisers](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45), published February 23, 2017, asks readers to weigh how much human interaction matters to them and to consider their own level of financial literacy."
+      },
+      {
+        "heading": "How a Robo-Advisor Works",
+        "body": "A robo-advisor lets you create and manage your investment account through a web portal or mobile application, sometimes with little or no interaction with a human being. You answer the questionnaire. The robo-advisor uses those answers to build and manage your portfolio. The SEC bulletin names lower costs than traditional advisory programs as the potential benefit of that setup.\n\nThe SEC bulletin says a robo-advisor's recommendation is limited by the information it requests and receives from you. Some robo-advisors obtain and consider only limited information. In many cases the burden to update that information falls on you.\n\nInvesting approaches differ from one robo-advisor to the next. Some offer several pre-determined portfolios that you may or may not be able to customize. Others use a limited range of products, such as broad-based exchange-traded funds (ETFs).\n\nThe SEC bulletin says a robo-advisor's services, approaches and features are described in its Form ADV Part 1 and Part 2 brochure."
+      },
+      {
+        "heading": "Hybrid, Limited or No Human Contact",
+        "body": "The amount of human contact varies from one robo-advisor to the next, and the SEC bulletin describes three arrangements.\n\n- Hybrid advice, sometimes called \"bionic\" advice, where you can contact an investment professional in addition to using the automated service.\n- Access to a person only for accounts that meet a minimum size.\n- Technical support staff only, with no investment professional to contact.\n\nUnlike a traditional adviser, a robo-advisor may have no initial or later conversation with you to gather information about your needs. The SEC bulletin asks whether you would like to speak with a person during market events such as downturns.\n\nIf your answer is yes, put hybrid access on your list of requirements and ask what account size it needs. If you would rather work with a person from the start, our guide on [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/) walks through that search."
+      },
+      {
+        "heading": "What to Check Before You Open an Account",
+        "body": "The SEC bulletin poses questions to ask before you open a robo-advisor account, and they fit into six checks.\n\n1. What information it uses. The bulletin suggests asking whether the questionnaire covers high-interest credit card debt or student loans, bank and savings accounts, real estate holdings, retirement accounts and other assets. Anything it does not ask about stays outside the advice.\n2. How it handles risk and rebalancing. The bulletin suggests asking how the robo-advisor takes your risk tolerance into account, including when it rebalances after a market decline, and how often it rebalances your account. Rebalancing can have tax implications, and some robo-advisors may be able to freeze sales during market volatility.\n3. Which account types it manages. The bulletin lists individual retirement accounts (IRAs), taxable accounts, 401(k) plans and college savings accounts as types to ask about.\n4. Whether it uses tax loss harvesting. The bulletin says its value depends on your tax situation and that it may implicate wash-sale rules, so it suggests considering a tax adviser.\n5. Your total costs. The bulletin says fees and other costs can greatly impact your return. A robo-advisor may offer lower-cost advice, but if it uses high-cost investment products, your total costs could still be high.\n6. Its registration. Investor.gov calls registration with the SEC or a state securities regulator the most important question before hiring an investment professional, and robo-advisers are investment advisers. Search the firm at [adviserinfo.sec.gov](https://adviserinfo.sec.gov) before you open an account.\n\nThe bulletin adds that in some cases a robo-advisor may offer services that are not much different from a traditional advisory program or from a single product such as a target date retirement fund. Investor.gov warns that investing with someone who isn't licensed is \"really risky\" and offers a free search tool that shows whether an investment professional is licensed and registered."
+      },
+      {
+        "heading": "Who a Robo-Advisor Does Not Fit",
+        "body": "Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) compares the two.\n\nThe SEC bulletin also notes that in some cases robo-advisers may not have been tested under stressed market conditions. If you want a person to talk to during a downturn, a robo-advisor that offers only technical support leaves you without one.\n\n| Your situation | Robo-advisor fit | Source |\n|---|---|---|\n| Comfortable with a questionnaire, online disclosures and limited human contact | Fits | SEC bulletin |\n| Want a person to talk to during downturns | Fits only with hybrid access | SEC bulletin |\n| Debts, real estate or retirement accounts the questionnaire skips | The advice leaves them out | SEC bulletin |\n| Want lower fees and lower minimums | Often fits. Add up total costs first | Investor.gov glossary, SEC bulletin |\n\nOur answer changes in two cases. If a robo-advisor's questionnaire asks about your debts, real estate and outside retirement accounts, the information objection shrinks. If it offers a hybrid human adviser, or a person for accounts above a minimum size you meet, the downturn objection shrinks. Our [best robo-advisors roundup](/roundup/best-robo-advisors/) ranks individual providers."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "A robo-advisor fits an investor who is comfortable with an online questionnaire, online disclosures and limited human contact. It does not fit someone who wants a person during market stress, or whose finances a questionnaire cannot capture, unless the provider offers a hybrid human adviser. This read rests on the Investor.gov glossary and the SEC's 2017 investor bulletin.\n\nOnce you know what a robo-advisor is, run the six checks above on each provider you are considering. Start by searching the firm at [adviserinfo.sec.gov](https://adviserinfo.sec.gov), then ask for its Form ADV Part 2 brochure and compare providers in our [best robo-advisors list](/roundup/best-robo-advisors/)."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/calculators/",
+        "label": "All financial calculators"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Are robo advisors good?",
+        "answer": "A robo-advisor can be a good fit when you are comfortable with an online questionnaire, online disclosures and limited human contact. Investor.gov names the benefits: advice that often costs less than traditional advisory programs and, in some cases, lower account minimums. The SEC bulletin names the limits: advice bounded by what the questionnaire asks, human contact that varies by provider and, in some cases, no testing under stressed market conditions."
+      },
+      {
+        "question": "Is a robo advisor worth it?",
+        "answer": "A robo-advisor is worth it when its lower cost holds up after you add the advice fee to the cost of the investment products it uses, and when you do not need a person to talk to. The SEC bulletin warns that total costs can still be high if a robo-advisor uses high-cost products. It also says some robo-advisors offer services not much different from a traditional advisory program or a target date retirement fund."
+      },
+      {
+        "question": "Why do some people say robo advisors are bad?",
+        "answer": "The SEC bulletin lists three limits behind that view. A robo-advisor's recommendation is limited by the information its questionnaire collects, and keeping that information current is often up to you. Some offer only technical support staff, with no investment professional to call during a downturn. In some cases, robo-advisers may not have been tested under stressed market conditions."
+      },
+      {
+        "question": "Is a robo-advisor a fiduciary?",
+        "answer": "A robo-advisor is an investment adviser, and Investor.gov says investment advisers are required to act in your best interest and not put their interest ahead of yours. Investor.gov also says the way advisers make money creates some conflicts with your interests, so ask any robo-advisor about those conflicts. Our guide on [what a fiduciary is](/guides/what-is-a-fiduciary/) explains the term."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Investor.gov, Robo-Adviser Glossary Entry",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/robo-adviser"
+      },
+      {
+        "label": "SEC Investor Bulletin: Robo-Advisers",
+        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45"
+      },
+      {
+        "label": "Investor.gov, Working with an Investment Professional",
+        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional"
+      },
+      {
+        "label": "SEC adviser registration search, adviserinfo.sec.gov",
+        "url": "https://adviserinfo.sec.gov"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-11-09 (competitor): questions-to-ask-a-financial-advisor ──
+  {
+    "updated": "2026-11-09",
+    "slug": "questions-to-ask-a-financial-advisor",
+    "title": "Questions To Ask a Financial Advisor Before You Hire",
+    "metaDescription": "Ask these questions before hiring a financial advisor: how they are paid, their duty to you, fees on $10,000 and any disciplinary history.",
+    "h1": "Questions To Ask a Financial Advisor",
+    "cardBlurb": "Eight questions from the SEC's Form CRS to ask an advisor or broker before you hire, plus how to check the answers against public records.",
+    "introText": "The questions to ask a financial advisor before hiring come from the conversation starters printed on a firm's [Form CRS](https://www.investor.gov/CRS), the Client Relationship Summary prescribed by the [Securities and Exchange Commission (SEC)](https://adviserinfo.sec.gov). Registered broker-dealers and registered investment advisers are required to give retail investors this summary.\n\nAsk how you will pay, whether an advisory or brokerage service fits you, and what legal duty the person owes you. Ask how much of $10,000 would go to fees, how they choose investments, what their qualifications mean, how the firm makes money and whether anyone has a disciplinary history. Before any of that, [Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) says the most important question is whether the person is registered with the SEC or with a state securities regulator.",
+    "sections": [
+      {
+        "heading": "The Questions To Ask a Financial Advisor",
+        "body": "There are eight questions to ask a financial advisor, and each one appears on Form CRS or in Investor.gov's guidance about it. The wording below comes from the Form CRS of one firm registered as both a broker-dealer and an investment adviser, retrieved on November 9, 2026. Under each question is what a clear answer should cover.\n\n1. \"Given my financial situation, should I choose an investment advisory service? Should I choose a brokerage service? Should I choose both types of services? Why or why not?\" The [Investor.gov Form CRS page](https://www.investor.gov/CRS) says brokers and advisers can both advise on buying a stock or an index fund and on whether to sell or hold it later. A clear answer explains which type of service, or which combination, fits your goals, preferences and needs.\n2. \"How will you choose investments to recommend to me?\" The Investor.gov [investment advisers page](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers) says an adviser typically gives ongoing advice and monitors how your investments perform and how they line up with your overall objectives. A clear answer says what the person looks at when picking an investment and how they review it afterward.\n3. \"What is your relevant experience, including your licenses, education and other qualifications? What do these qualifications mean?\" Investor.gov warns that initials after a name do not make one person more qualified than another, and that some initials mean the person can only sell certain products. A clear answer names each credential and says what it lets the person sell or do for you.\n4. \"Help me understand how these fees and costs might affect my investments. If I give you $10,000 to invest, how much will go to fees and costs, and how much will be invested for me?\" The Form CRS notes that fees and costs reduce what you make on your investments over time, and that you pay them whether you make or lose money.\n5. \"What are your legal obligations to me when providing recommendations as my broker-dealer or when acting as my investment adviser?\" Investor.gov says investment advisers are required to act in your best interest and not put their interest ahead of yours. A clear answer states the duty for each role the person could play with your account, and our guide on [what a fiduciary is](/guides/what-is-a-fiduciary/) explains the adviser side of that duty.\n6. \"How else does your firm make money, and what conflicts of interest do you have?\" Follow it with the form's own prompt: \"How might your conflicts of interest affect me, and how will you address them?\" Investor.gov says the way advisers make money creates some conflicts with your interests, and those conflicts can affect the advice you get. A clear answer names each conflict and what the firm does about it.\n7. \"How do your financial professionals make money?\" The firm whose form is quoted here says it pays its financial professionals in different ways, including commissions and advisory fees, and that higher commissions, costs or fees could lead to higher pay for the professional. That is one firm's disclosure, so ask the person in front of you to describe their own pay.\n8. Do you or your firm have any legal or disciplinary history, and for what type of conduct? Investor.gov says a Form CRS has to state whether the firm and its financial professionals have reportable legal or disciplinary history. A clear answer matches what the form says and explains the conduct behind any entry.\n\nAsk for the answers in writing where you can. Then compare the written answers with the firm's Form CRS after the meeting."
+      },
+      {
+        "heading": "Public Record Checks on Registration and History",
+        "body": "The answers about registration and disciplinary history can be checked against public records before you hire anyone. Investor.gov calls registration with the SEC or a state securities regulator the most important question to settle first. Its [Working with an Investment Professional page](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) offers a free and simple search that shows whether an investment professional is licensed and registered.\n\nYou can also run a name through [adviserinfo.sec.gov](https://adviserinfo.sec.gov) and through BrokerCheck from the [Financial Industry Regulatory Authority (FINRA)](https://brokercheck.finra.org). If the person lists the Certified Financial Planner (CFP) credential, look the name up on the [CFP Board's verification page](https://www.cfp.net/verify-a-cfp-professional). Investor.gov also points to a FINRA list showing that some credentials are easy to obtain and others are hard-earned.\n\nNext, set the person's spoken answers beside the firm's [Form CRS](https://www.investor.gov/CRS). Investor.gov says every relationship summary covers the firm's services, fees and costs, conflicts of interest, required standard of conduct, and legal or disciplinary history, using similar headings and order of topics.\n\nIf a spoken fee or conflict answer does not match the form, ask which one is correct and get the reply in writing. Our guide on [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/) covers the wider comparison between firms once each candidate has answered the same eight questions."
+      },
+      {
+        "heading": "Red Flags and What To Do",
+        "body": "Three answers are reasons to stop and look at other candidates, based on what Investor.gov says and what Form CRS must contain.\n\n- The person is not registered with the SEC or a state securities regulator. Investor.gov says it is \"really risky to invest with someone who isn't licensed,\" so move on to another candidate.\n- The firm will not give you a Form CRS. Registered broker-dealers and registered investment advisers are required to give one to retail investors, so ask once in writing and keep looking if it still does not arrive.\n- The record shows legal or disciplinary history the person cannot explain. Investor.gov lists that history, and the type of conduct behind it, among the things to weigh before selecting an adviser. We would treat an entry the person cannot explain as a reason to choose someone else.\n\nA clean record does not settle the other questions on the list. Keep the fee, duty and conflict answers in your comparison even for a candidate with no history."
+      },
+      {
+        "heading": "Questions To Ask a Financial Advisor in Special Situations",
+        "body": "If you want more than investment recommendations, add questions about planning services and about which accounts and products the person can offer. Investor.gov says advisers may also give advice about market trends or asset allocation, or offer financial planning services. It also tells you to weigh the services and products you need against what the adviser can provide and any limits on it.\n\n- Do you offer financial planning services, or advice on asset allocation?\n- Which services and products can you provide, and what can you not provide?\n- Can your firm offer both advisory and brokerage accounts? Investor.gov notes that many firms are registered as both a broker and an adviser and offer both types of account.\n- How much will I pay for services, and how much for each transaction?\n\nFor retirement savings, use the same eight questions and add which retirement account types the person handles. Retirement account rules and contribution limits are outside these questions."
+      },
+      {
+        "heading": "Who These Questions Are Not For and What Would Change the List",
+        "body": "These questions fit someone choosing an ongoing relationship with an adviser or broker. Investor.gov says advisers typically provide ongoing advice, and that the adviser's fee is typically based on the value of all the assets in your account, with other fees and costs possible on top. If you need only a one-time answer to a single money question, read our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) before you sit through a full interview.\n\nTwo things would change this list. If the SEC changes the conversation starters printed on Form CRS, we would rebuild the list from the new form. If a candidate fails the registration question, you can skip the rest of the list for that person, because Investor.gov treats registration as the first test."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "Ask every candidate the same eight questions from one firm's Form CRS, then compare their written answers with their Form CRS and their public record. Look elsewhere if the person is not registered or cannot explain a disciplinary record.\n\nThe same list works whether the person is an investment adviser, a broker or part of a firm that is both. Copy these questions to ask a financial advisor, send them before the first meeting, and check the person's registration with the free search on [Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional)."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/calculators/",
+        "label": "All financial calculators"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What questions should I ask a financial advisor before hiring them?",
+        "answer": "Ask the eight conversation starters from Form CRS. They cover advisory or brokerage service, how they choose investments, what their qualifications mean, fees on $10,000, their legal obligations to you, how the firm makes money and its conflicts, how its professionals are paid, and any disciplinary history. Investor.gov puts registration with the SEC or a state securities regulator ahead of all of them."
+      },
+      {
+        "question": "What should I ask in a first meeting?",
+        "answer": "Start with registration and the Form CRS. Ask the person to confirm they are registered with the SEC or a state securities regulator, and ask for the firm's relationship summary if you do not have it yet. Then ask the $10,000 fee question and the legal obligations question, and request written answers so you can compare them with the form after the meeting."
+      },
+      {
+        "question": "What questions should I ask a financial advisor about retirement?",
+        "answer": "Use the same eight questions, then add which retirement account types the person handles. Investor.gov suggests weighing the services and products you need against what the adviser can provide and any limits on what they can offer. Also ask whether financial planning is part of the service, since Investor.gov says advisers may offer financial planning services."
+      },
+      {
+        "question": "What should I ask a prospective advisor about fees?",
+        "answer": "Ask the Form CRS question word for word: \"If I give you $10,000 to invest, how much will go to fees and costs, and how much will be invested for me?\" Investor.gov says an adviser's fee is typically based on the value of all the assets in your account, and you may pay other fees for servicing the account and for the investments you buy, sell or hold. Also ask how the person is paid, since one firm's form says higher commissions, costs or fees could mean higher pay for its professionals."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Investor.gov, Form CRS (Client Relationship Summary)",
+        "url": "https://www.investor.gov/CRS"
+      },
+      {
+        "label": "Investor.gov, Working with an Investment Professional",
+        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional"
+      },
+      {
+        "label": "Investor.gov, Investment Advisers",
+        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers"
+      },
+      {
+        "label": "SEC, Investment Adviser Public Disclosure",
+        "url": "https://adviserinfo.sec.gov"
+      },
+      {
+        "label": "FINRA BrokerCheck",
+        "url": "https://brokercheck.finra.org"
+      },
+      {
+        "label": "CFP Board, Verify a CFP Professional",
+        "url": "https://www.cfp.net/verify-a-cfp-professional"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-11-09 (competitor): what-does-a-financial-advisor-do ──
+  {
+    "updated": "2026-11-09",
+    "slug": "what-does-a-financial-advisor-do",
+    "title": "What Does a Financial Advisor Do Versus a Credit Counselor",
+    "metaDescription": "A financial advisor gives ongoing investment advice, monitors your holdings and may add planning. Credit counselors help with budgets and debts.",
+    "h1": "What Does a Financial Advisor Do?",
+    "cardBlurb": "What a financial advisor does for you, how advisers get paid, and how nonprofit credit counselors and financial coaches differ, based on Investor.gov and CFPB pages.",
+    "introText": "A financial advisor typically gives you ongoing advice on buying, selling and holding investments and monitors how they perform. [Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers) describes the service this way. \n\nSome advisers also give asset allocation advice or offer financial planning. If your money problem is debt, the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/ask-cfpb/what-is-credit-counseling-en-1451/) describes a different professional: the nonprofit credit counselor, who helps with budgets, debts and debt management plans. No primary source we read defines what a financial coach does, so with a coach you ask what that specific person provides.",
+    "sections": [
+      {
+        "heading": "What a Financial Advisor Does for You",
+        "body": "A financial advisor gives you ongoing investment advice and monitors how your investments perform, according to Investor.gov, which spells the title \"adviser\". The services Investor.gov lists for investment advisers are:\n\n- Ongoing advice about buying, selling or holding investments.\n- Monitoring of how your investments perform.\n- Checks that your investments still match your overall investment objectives.\n- Advice about market trends or asset allocation, which some advisers offer.\n- Financial planning services, which some advisers offer.\n\nInvestor.gov presents the first three as what advisers typically provide and the last two as services an adviser \"also may\" offer. Ask each adviser which items on this list come with the account.\n\nBrokers overlap with advisers on part of this work. Investor.gov's page on [Form CRS (the customer relationship summary)](https://www.investor.gov/CRS) says both brokers and advisers can give advice about buying investments, such as stock in a company or an index fund, and about whether to sell or hold afterward. Many firms are registered as both a broker and an adviser (dual registrants), and Investor.gov says a combination of advisory and brokerage accounts may be a good choice depending on your goals, preferences and needs.\n\nBefore a first meeting, write down which of the five services above you want. Then compare that list with what each advisor says it provides."
+      },
+      {
+        "heading": "Financial Advisor Fees and How Advisors Get Paid",
+        "body": "An investment adviser's fee is typically based on the value of all the assets held in your account with that adviser, according to Investor.gov. You may also pay other fees and costs for servicing the account and for the investments you buy, sell or hold. Investor.gov does not publish typical fee percentages on its Investment Advisers page, so ask each adviser for every fee and cost in writing.\n\nInvestor.gov says investment advisers are required to act in your best interest and not put their interest ahead of yours. The same page says the way advisers make money creates some conflicts with your interests, and those conflicts can affect the investment advice you receive. Our guide to [what a fiduciary is](/guides/what-is-a-fiduciary/) covers that best-interest duty on its own.\n\nA relationship summary shows what a pay disclosure looks like on paper. One firm's Form CRS answers the question \"How do your financial professionals make money?\" by saying it pays its financial professionals in different ways, including commissions and advisory fees. The same firm says higher commissions, costs or fees could lead to higher pay for a financial professional, which is the kind of conflict Investor.gov tells you to ask about."
+      },
+      {
+        "heading": "Advisor, Credit Counselor and Coach Roles Compared",
+        "body": "A financial advisor, a nonprofit credit counselor and a financial coach do different jobs, and Investor.gov and the CFPB describe only the first two.\n\n| Role | What the sources say | Who it fits | What to ask |\n|---|---|---|---|\n| Investment adviser | Ongoing advice on buying, selling or holding investments, plus monitoring. Some add asset allocation advice or financial planning (Investor.gov) | Someone who wants help with investments over time | How is your fee calculated, which services are included, and what conflicts do you have? |\n| Nonprofit credit counselor | Advice on money and debts, budget help, debt management plans and money management workshops. Counselors certified and trained in consumer credit, debt management and budgeting (CFPB) | Someone whose main problem is debt or a budget | What does each service cost, in writing, and how are your employees paid? |\n| Financial coach | No primary source we read defines the job. Coach titles appear in a credentials database covered below | Not described by any source we read | What exactly do you provide, what does it cost, and what registration or designation do you hold? |\n\nUnder a debt management plan, the CFPB says, you make a single payment to the credit counseling organization each month or pay period, and the organization pays each of your creditors. The CFPB says such a plan typically lowers monthly payments, interest charges and fees. The [National Foundation for Credit Counseling (NFCC)](https://www.nfcc.org) describes credit counseling that starts with a confidential consultation and a personalized action plan. It lists more than 1,500 NFCC certified credit counselors.\n\nCoach and counselor titles appear in the [Financial Industry Regulatory Authority (FINRA) professional designations database](https://www.finra.org/investors/professional-designations). Examples are Certified Financial and Career Coach (CFCC), Certified Workplace Money Coach (CWMC), Certified Professional Retirement Coach (CPRC), Accredited Financial Counselor (AFC) and Certified Financial Counselor (CFC). FINRA says it does not approve or endorse any professional credential or designation, so a listing in that database is not a FINRA endorsement of the title.\n\nInvestor.gov warns that initials after a broker's or adviser's name do not make that person more qualified than another, and they do not necessarily mean better service for you. Some initials may mean the person can sell only certain products, and the FINRA list shows that some credentials are easy to obtain while others are hard-earned. If you are weighing an advisor against a planner, our [financial advisor vs financial planner comparison](/compare/financial-advisor-vs-financial-planner/) covers that pair."
+      },
+      {
+        "heading": "How to Check Who You Are Talking To",
+        "body": "Investor.gov says the most important question before you hire an investment professional is whether that person is registered with the [Securities and Exchange Commission (SEC)](https://adviserinfo.sec.gov) or with a state securities regulator. Its [Working with an Investment Professional page](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) calls it \"really risky\" to invest with someone who isn't licensed. The same page points to a free search tool that shows whether a professional is licensed and registered.\n\nRegistered broker-dealers and registered investment advisers are required to give retail investors a Form CRS. Investor.gov says each one covers:\n\n- The types of services the firm offers.\n- The fees and costs you will pay.\n- Conflicts of interest a broker or adviser may have.\n- The required standard of conduct for the services.\n- Whether the firm and its financial professionals have reportable legal or disciplinary history.\n- Conversation starters, which are questions to ask.\n\nThese summaries use similar headings in a similar order, so you can set two firms' summaries side by side and compare them topic by topic. Investor.gov's checklist for selecting an adviser adds questions of your own: what services and products you need, any limits on what the adviser can provide, and, if there is legal or disciplinary history, what type of conduct it involved. Our guide on [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/) covers that selection process.\n\nCredit counselors come with a different checklist from the CFPB. The CFPB says a reputable organization should send free information without asking for details about your situation, and if it will not, you should go elsewhere. It also tells you to:\n\n- Get a specific price quote in writing.\n- Read anything before you sign it.\n- Avoid any organization that pushes a debt management plan as your only option before it analyzes your situation.\n- Ask whether the counselor is accredited or certified, what training the counselor has, and how employees are paid.\n\nThe [CFPB's credit counseling page](https://www.consumerfinance.gov/ask-cfpb/what-is-credit-counseling-en-1451/) also names your state attorney general and state consumer protection agency as places to check on an organization."
+      },
+      {
+        "heading": "Who a Financial Advisor Is Not For and What Would Change the Answer",
+        "body": "Our read is that an advisor is the wrong first call if your main problem is debt or a budget, because the CFPB describes nonprofit credit counselors as the people who advise on money and debts, help with budgets, develop debt management plans and offer money management workshops.  Investor.gov describes the typical adviser relationship as ongoing advice paid through a fee based on your account assets, so ask any advisor you contact whether it offers anything shorter and what that costs, in writing. If the question is whether the ongoing fee pays for itself, our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) handles that decision.\n\nOur answer would change if the rules behind it changed. Everything above about advisers rests on Investor.gov's description of a best-interest duty, fees typically tied to assets and the Form CRS requirement, so a change to adviser registration or disclosure rules would change what you can expect. For coaches, our answer would change if a primary source published a definition of the job, and until one does, the description of a coach's work to rely on is the one that coach gives you in writing."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "A financial advisor typically gives and monitors investment advice for a fee usually tied to the assets in your account, and some advisers add asset allocation advice or financial planning. A nonprofit credit counselor helps with budgets, debts and debt management plans, and for a financial coach you ask what exactly that person provides.\n\nIf your need is debt help, the CFPB describes nonprofit credit counselors who help with budgets and debts. Write down the job you need done, then ask each candidate, in writing, which services they provide and how they are paid."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/calculators/",
+        "label": "All financial calculators"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What does a financial advisor do for you?",
+        "answer": "A financial advisor typically gives you ongoing advice about buying, selling or holding investments and monitors how those investments perform against your overall objectives, according to Investor.gov. Some advisers also give advice on market trends or asset allocation, or offer financial planning services. The fee is typically based on the value of the assets in your account with that adviser."
+      },
+      {
+        "question": "What should a financial advisor do for me?",
+        "answer": "A financial advisor should act in your best interest and not put their interest ahead of yours, which Investor.gov says investment advisers are required to do. Beyond that duty, services vary by adviser. Investor.gov suggests comparing what you need with what the adviser provides, any limits, what you will pay, how the adviser gets paid and what conflicts the adviser has. The adviser's Form CRS lists services, fees, conflicts and any reportable legal or disciplinary history in a standard order."
+      },
+      {
+        "question": "Is credit counseling free?",
+        "answer": "Credit counseling is not always free. The CFPB says most credit counseling organizations are non-profits, yet credit counselors may charge fees for some of their services. A reputable organization should send you free information without asking for details about your situation, and you should get a specific price quote in writing before you sign anything."
+      },
+      {
+        "question": "Do I need a financial advisor?",
+        "answer": "It depends on whether you want ongoing advice about buying, selling and holding investments, which Investor.gov says an adviser typically provides for a fee based on the value of the assets in your account. Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) weighs that cost against the value."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Investor.gov, Investment Advisers",
+        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers"
+      },
+      {
+        "label": "Investor.gov, Working with an Investment Professional",
+        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional"
+      },
+      {
+        "label": "Investor.gov, Form CRS (Customer Relationship Summary)",
+        "url": "https://www.investor.gov/CRS"
+      },
+      {
+        "label": "CFPB, What Is Credit Counseling?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-credit-counseling-en-1451/"
+      },
+      {
+        "label": "National Foundation for Credit Counseling (NFCC)",
+        "url": "https://www.nfcc.org"
+      },
+      {
+        "label": "FINRA, Professional Designations",
+        "url": "https://www.finra.org/investors/professional-designations"
+      },
+      {
+        "label": "SEC, Investment Adviser Public Disclosure",
+        "url": "https://adviserinfo.sec.gov"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-11-09 (competitor): what-is-a-fiduciary ──
+  {
+    "updated": "2026-11-09",
+    "slug": "what-is-a-fiduciary",
+    "title": "What Is a Fiduciary and Which Advisors Must Act for You",
+    "metaDescription": "A fiduciary must act in your best interest. See which standard binds advisers, brokers and Certified Financial Planner professionals, and how to check.",
+    "h1": "What Is a Fiduciary?",
+    "cardBlurb": "Which standard applies to an investment adviser, a broker-dealer or a Certified Financial Planner professional, and how to check before you hire.",
+    "introText": "A fiduciary is a professional who must act in your best interest, and some financial advisors are required to be one. \n\nThree rules decide who owes you what. The [Securities and Exchange Commission (SEC)](https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty) holds registered investment advisers to a fiduciary duty and holds broker-dealers to a separate standard called Regulation Best Interest. A Certified Financial Planner (CFP) professional must act as a fiduciary whenever giving financial advice to a client.\n\nMany firms are registered as both a broker and an adviser, so the person you hire may offer accounts under either rule. The firm's customer or client relationship summary, called [Form CRS](https://www.investor.gov/CRS), states the standard of conduct tied to its services.",
+    "sections": [
+      {
+        "heading": "What a Fiduciary Is and Who Has to Be One",
+        "body": "A fiduciary is a professional who must act in your best interest and may not put their own interest ahead of yours. [Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers) states the rule for investment advisers this way: advisers \"are required to act in your best interest and not put their interest ahead of yours.\" The rule reads differently for investment advisers, broker-dealers and CFP professionals.\n\nRegistered investment advisers owe a fiduciary duty with two parts. In a July 8, 2019 statement, SEC Chairman Jay Clayton said the duty is \"comprised of both a duty of care and a duty of loyalty.\" It requires an adviser to act in the client's best interest and not subordinate that interest to the adviser's own.\n\nInvestor.gov says advisers typically give ongoing advice about buying, selling or holding investments. They also monitor how those investments perform and whether they still fit your overall objectives.\n\nBroker-dealers follow Regulation Best Interest, which the same SEC statement says \"imposes a new standard of conduct specifically for broker-dealers.\" The rule requires a broker to act in the \"best interest of their retail customers\" and to meet four component obligations:\n\n- Disclosure\n- Care\n- Conflict of Interest\n- Compliance\n\nThe SEC statement presents Regulation Best Interest as its own standard for brokers, apart from the adviser fiduciary duty.\n\nCFP professionals take on a fiduciary duty through certification. The [Certified Financial Planner Board of Standards (CFP Board)](https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct) Code of Ethics and Standards of Conduct says: \"At all times when providing Financial Advice to a Client, a CFP professional must act as a fiduciary, and therefore, act in the best interests of the Client.\"\n\nThe CFP Board describes the ethics requirement as the final step on the path to certification, when the candidate signs the Ethics Declaration. Our [guide to the CFP credential](/guides/what-is-a-cfp/) explains what the certification involves."
+      },
+      {
+        "heading": "Which Standard Applies to an Adviser, Broker or Dual Registrant",
+        "body": "The standard that applies depends on how the professional and the firm are registered, and the firm's Form CRS states it in writing. Investor.gov says both brokers and advisers can give advice about buying investments like stock in a company or an index fund. Both can also advise on whether to sell or hold afterward.\n\n| Professional | Standard named by the source | Where to see it |\n|---|---|---|\n| SEC-registered investment adviser | Fiduciary duty of care and loyalty (SEC statement, Investor.gov) | The firm's Form CRS, which states the required standard of conduct |\n| Broker-dealer | Regulation Best Interest, with Disclosure, Care, Conflict of Interest and Compliance obligations (SEC statement) | The firm's Form CRS |\n| Dual registrant (registered as both broker and adviser) | The standard tied to each service the firm offers | The firm's Form CRS, which states the types of services and the required standard of conduct |\n| CFP professional | Must act as a fiduciary when providing financial advice (CFP Board Code) | The [CFP Board verification page](https://www.cfp.net/verify-a-cfp-professional) |\n\nInvestor.gov says many firms are registered as both a broker and an adviser. These dual registrants offer both advisory and brokerage services and accounts.\n\nInvestor.gov adds that a combination may be a good choice in some cases, depending on your goals, preferences and needs. If you open more than one account at a dual registrant, ask which standard covers each account."
+      },
+      {
+        "heading": "Conflicts and Titles That a Fiduciary Duty Leaves in Place",
+        "body": "A fiduciary duty does not remove conflicts of interest, and Investor.gov says so on its investment adviser page. Right after stating the best-interest rule, the page adds: \"At the same time, the way advisers make money creates some conflicts with your interests.\" Investor.gov says you should understand these conflicts and ask an adviser about them, because they can affect the advice you get.\n\nInvestor.gov ties these conflicts to the way advisers make money. Investor.gov says an adviser's fee is typically based on the value of all the assets in your account with that adviser. You may also pay other fees and costs for servicing the account and for the investments you buy, sell or hold.\n\nThe firm's Form CRS lists its fees and costs and its conflicts of interest. It also says whether the firm and its financial professionals have reportable legal or disciplinary history.\n\nTitles and initials need a closer look. Investor.gov's \"Tricky Titles\" guidance says not to assume that initials after a broker's or adviser's name make that person more qualified than another. The titles are not all the same, and some initials mean the person can only sell certain products.\n\nInvestor.gov also points to a list showing that some credentials are easy to obtain while others are hard-earned. The Certified Trust and Fiduciary Advisor (CTFA) is a separate credential, covered in our [CTFA guide](/guides/what-is-a-ctfa/). Whatever the title, look up the person's registration at [adviserinfo.sec.gov](https://adviserinfo.sec.gov) before relying on the letters."
+      },
+      {
+        "heading": "How to Check a Financial Professional Before You Hire",
+        "body": "Registration is the first thing to check, because Investor.gov says the most important question before hiring an investment professional is whether the person is registered with the SEC or a state securities regulator. Investor.gov also says it is \"really risky to invest with someone who isn't licensed.\" Four checks cover the standards described here:\n\n1. Search an adviser's name at [adviserinfo.sec.gov](https://adviserinfo.sec.gov) and a broker's name at [BrokerCheck](https://brokercheck.finra.org).\n2. Confirm any CFP claim on the [CFP Board's verification page](https://www.cfp.net/verify-a-cfp-professional).\n3. Ask for the firm's [Form CRS](https://www.investor.gov/CRS) and read its standard of conduct, fees and costs, conflicts of interest and disciplinary history. Investor.gov says these summaries use similar headings in the same order, so you can lay two firms' summaries side by side.\n4. Ask in writing which standard applies to your account: the adviser fiduciary duty, Regulation Best Interest, or the CFP Board fiduciary requirement.\n\nInvestor.gov's guidance on selecting an adviser lists what to weigh before you choose:\n\n- What services and products you need\n- What services and products the adviser can provide, and any limits on them\n- How much you will pay for services and transactions\n- How the adviser gets paid\n- What conflicts of interest the adviser may have\n- Whether the adviser has legal or disciplinary history, and for what type of conduct\n\nForm CRS also includes key questions to ask, called conversation starters. Our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) walks through the rest of the decision."
+      },
+      {
+        "heading": "Who a Fiduciary Is Not For and What Would Change the Answer",
+        "body": "Ongoing fiduciary advice may be more than you need if you want a one-time answer or manage a simple portfolio on your own. Investor.gov describes the typical adviser arrangement as ongoing advice with monitoring, paid by a fee typically based on the value of the assets in your account. \n\nIf you want help with a single decision, read a firm's Form CRS first to see which services it offers. Investor.gov notes that advisers may also give advice about market trends or asset allocation, or offer financial planning services.\n\nThis answer rests on published rules, so any of these changes would change it:\n\n- The SEC amends Regulation Best Interest or its interpretation of the adviser fiduciary duty.\n- The CFP Board changes its Code of Ethics and Standards of Conduct.\n- The person you are considering is registered only as a broker, so Regulation Best Interest applies instead of the adviser duty.\n- The person holds no registration, which Investor.gov calls \"really risky\" to invest with.\n\nIf your question is about job titles rather than legal standards, our [financial advisor vs. financial planner comparison](/compare/financial-advisor-vs-financial-planner/) covers the two titles."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "A fiduciary must act in your best interest. An SEC-registered investment adviser owes that as a duty of care and loyalty, a broker-dealer owes the separate Regulation Best Interest standard, and a CFP professional commits to fiduciary duty in the CFP Board Code. \n\nInvestor.gov says the way advisers make money creates some conflicts, so read the firm's Form CRS and ask about them. The answer changes if the person is registered only as a broker or holds neither registration. Rules outside SEC registration and the CFP Board, such as state rules and the roles of insurance agents, banks and trust companies, are not covered here.\n\nBefore you hire anyone, search the person on [adviserinfo.sec.gov](https://adviserinfo.sec.gov) or [BrokerCheck](https://brokercheck.finra.org), then ask in writing which standard applies to your account. Our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) lists the next questions to ask."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/calculators/",
+        "label": "All financial calculators"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is a financial advisor a fiduciary?",
+        "answer": "Some are, depending on how they are registered. An SEC-registered investment adviser owes a fiduciary duty of care and loyalty, and a CFP professional must act as a fiduciary when giving financial advice. A professional registered as a broker-dealer works under Regulation Best Interest, a separate SEC standard for brokers. Many firms are registered as both, so ask which standard applies to your account and read the firm's Form CRS."
+      },
+      {
+        "question": "Is a fiduciary the same as a financial planner?",
+        "answer": "Not necessarily. A fiduciary duty comes from a registration or a credential, and Investor.gov warns that titles and initials are not all the same. A CFP professional is different, because the CFP Board Code says a CFP professional must act as a fiduciary when providing financial advice to a client."
+      },
+      {
+        "question": "Why is a fiduciary important?",
+        "answer": "A fiduciary must act in your best interest and not put their own interest ahead of yours, according to Investor.gov. That duty does not remove conflicts of interest, since Investor.gov says the way advisers make money creates some conflicts with your interests. The firm's Form CRS lists those conflicts so you can ask about them before you hire."
+      },
+      {
+        "question": "Who needs a fiduciary?",
+        "answer": "Anyone paying for investment advice should know whether the person giving it owes a fiduciary duty or another standard. Investor.gov says advisers typically give ongoing advice and monitor your investments. If you need a single answer or manage a simple portfolio yourself, ongoing advice may be more than you need."
+      }
+    ],
+    "sources": [
+      {
+        "label": "SEC, Statement on Regulation Best Interest and the Investment Adviser Fiduciary Duty (Chairman Jay Clayton, July 8, 2019)",
+        "url": "https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty"
+      },
+      {
+        "label": "Investor.gov, Investment Advisers",
+        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers"
+      },
+      {
+        "label": "Investor.gov, Form CRS",
+        "url": "https://www.investor.gov/CRS"
+      },
+      {
+        "label": "CFP Board, Code of Ethics and Standards of Conduct",
+        "url": "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct"
+      },
+      {
+        "label": "CFP Board, Verify a CFP Professional",
+        "url": "https://www.cfp.net/verify-a-cfp-professional"
+      },
+      {
+        "label": "SEC, Investment Adviser Search",
+        "url": "https://adviserinfo.sec.gov"
+      },
+      {
+        "label": "FINRA BrokerCheck",
+        "url": "https://brokercheck.finra.org"
+      }
+    ]
+  },
   ...BENEFIT_GUIDES,
   // ── mindmap-pass 2026-11-04 (podcast recovery): brrrr-method ──
   {
@@ -9551,6 +10059,8 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "how-to-choose-a-financial-advisor",
+    published: "2026-06-25",
+    updated: "2026-11-09",
     title: "How to Choose a Financial Advisor: A Decision Guide",
     metaDescription:
       "Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.",
@@ -9559,12 +10069,12 @@ export const GUIDES: Guide[] = [
     introText:
       "Choosing a financial advisor starts with understanding the standard they follow, not the pitch they give. Some advisors are fiduciaries, meaning they must put your interests first. Others only need to recommend something suitable, which is a weaker rule. This guide covers the standards, fee models, the CFP credential, how to verify an advisor, and what to ask during your first call.",
     sections: [
-      { heading: "Know Which Type of Financial Professional You're Talking To", body: "\"Financial advisor\" is a loose umbrella term, and the specific job title someone uses often says more about how they're paid and regulated than the word \"advisor\" itself does. An investment adviser registers with the SEC or a state regulator and owes you the fiduciary duty covered in Step 1 below, typically charging a fee tied to the assets under management. A broker-dealer representative can also call themselves a financial advisor, but is held only to Regulation Best Interest, the weaker standard covered in that same step, and is often paid a commission on what they sell.\n\nA few other titles are worth naming directly. A wealth advisor usually follows the same fiduciary model as an investment adviser, aimed at [higher-net-worth clients with higher account minimums](/compare/financial-advisor-vs-wealth-manager/). A financial coach or financial counselor typically focuses on budgeting, debt payoff, and money habits rather than managing investments, and often isn't licensed to manage a portfolio at all. A [CPA who also advises on investments](/compare/financial-advisor-vs-cpa/) needs a separate license to do so legally, since the CPA credential itself covers tax and accounting work, not investment management. A robo-advisor replaces the human with an algorithm that builds and rebalances a portfolio automatically, usually at a much lower fee. Our [robo-advisor vs. financial advisor breakdown](/guides/financial-advisor-worth-it/) covers when that trade-off makes sense.\n\nTwo more titles show up mostly at larger firms or in specific situations. A portfolio or asset manager runs the investment decisions inside a fund or a large account. That person often never speaks directly to the end client, since a financial advisor is usually the relationship-facing role sitting between that manager and you. A financial therapist works on the emotional and behavioral side of money instead, like anxiety around spending or conflict with a partner over finances. That role typically isn't licensed to manage investments or give specific investment advice at all.\n\nThe CFP credential from Step 3 below cuts across most of these titles, and so does the related but less common ChFC (Chartered Financial Consultant) designation. Each is a personal qualification a person earns, separate from which of the business models above they actually work under. A CFP or ChFC can work as a fee-only investment adviser, inside a wealth-management firm, or, less commonly, as a broker-dealer representative, and the fiduciary duty from Step 1 tracks that underlying role every time." },
-      { heading: "Step 1: Understand fiduciary vs suitability", body: "The single most important test is the standard your advisor follows. A fiduciary is required by law to act in your best interest, disclose conflicts, and avoid self-dealing. The SEC applies this fiduciary duty to registered investment advisers under the Investment Advisers Act of 1940.\n\nBrokers historically only had to recommend something suitable, a weaker rule that allowed higher-fee products when a cheaper option would also fit. Regulation Best Interest now raises the broker standard, but it is still not the same as fiduciary duty. Ask any advisor in writing: 'Are you a fiduciary at all times, on all my accounts?' The answer should be a simple yes." },
+      { heading: "Know Which Type of Financial Professional You're Talking To", body: "\"Financial advisor\" is a loose umbrella term, and the specific job title someone uses often says more about how they're paid and regulated than the word \"advisor\" itself does. An investment adviser registers with the SEC or a state regulator and owes you the fiduciary duty covered in Step 1 below, typically charging a fee tied to the assets under management. A broker-dealer representative can also call themselves a financial advisor, but is held to Regulation Best Interest, a separate SEC standard for broker-dealers, and is often paid a commission on what they sell.\n\nA few other titles are worth naming directly. A wealth advisor usually follows the same fiduciary model as an investment adviser, aimed at [higher-net-worth clients with higher account minimums](/compare/financial-advisor-vs-wealth-manager/). A financial coach or financial counselor typically focuses on budgeting, debt payoff, and money habits rather than managing investments. A [CPA who also advises on investments](/compare/financial-advisor-vs-cpa/) needs a separate license to do so legally, since the CPA credential itself covers tax and accounting work, not investment management. A robo-advisor replaces the human with an algorithm that builds and rebalances a portfolio automatically, usually at a much lower fee. Our [robo-advisor vs. financial advisor breakdown](/guides/financial-advisor-worth-it/) covers when that trade-off makes sense.\n\nTwo more titles show up mostly at larger firms or in specific situations. A portfolio or asset manager runs the investment decisions inside a fund or a large account. That person often never speaks directly to the end client, since a financial advisor is usually the relationship-facing role sitting between that manager and you. A financial therapist works on the emotional and behavioral side of money instead, like anxiety around spending or conflict with a partner over finances. That role typically isn't licensed to manage investments or give specific investment advice at all.\n\nThe CFP credential from Step 3 below cuts across most of these titles, and so does the related but less common ChFC (Chartered Financial Consultant) designation. Each is a personal qualification a person earns, separate from which of the business models above they actually work under. A CFP or ChFC can work as a fee-only investment adviser, inside a wealth-management firm, or, less commonly, as a broker-dealer representative, and the fiduciary duty from Step 1 tracks that underlying role every time." },
+      { heading: "Step 1: Understand fiduciary vs suitability", body: "The single most important test is the standard your advisor follows. A fiduciary is required by law to act in your best interest, disclose conflicts, and avoid self-dealing. The SEC applies this fiduciary duty to registered investment advisers under the Investment Advisers Act of 1940.\n\nBrokers historically only had to recommend something suitable, a weaker rule that allowed higher-fee products when a cheaper option would also fit. Regulation Best Interest now raises the broker standard, but it is still not the same as fiduciary duty. Ask any advisor in writing which standard covers each of your accounts, and read the firm's Form CRS.\n\nOur guide to [what a fiduciary is](/guides/what-is-a-fiduciary/) explains which standard applies to advisers, brokers and CFP professionals." },
       { heading: "Step 2: Compare fee-only, commission, and hybrid", body: "How an advisor is paid shapes what they recommend. Fee-only advisors are paid only by you, either as a percentage of assets managed (often around 1% per year), a flat fee, or an hourly rate. This model reduces conflicts because their pay does not depend on which product you buy.\n\nCommission-based advisors earn from the products they sell you, like mutual funds, annuities, or insurance. Hybrid advisors can charge both. The SEC recommends comparing fees in actual dollars, not just percentages. A 1% fee on $500,000 is $5,000 a year, which needs to buy real value to be worth it." },
-      { heading: "Step 3: Look for the CFP credential", body: "The CFP (Certified Financial Planner) is the most respected credential in personal financial planning. CFP professionals must complete college-level coursework, pass a rigorous exam, meet an experience requirement, and follow a code of ethics. CFP Board rules require them to act as fiduciaries when giving financial advice.\n\nOther credentials exist and vary widely in rigor. The SEC warns that professional designations do not all require the same difficulty, and some may indicate product limitations. A CFP with a fee-only fiduciary practice is a strong starting point for most families. If you're sizing up a fund manager rather than hiring a personal planner, see [what a CFA charter actually means](/guides/what-is-a-cfa/) and how it differs from a CFP." },
+      { heading: "Step 3: Look for the CFP credential", body: "The CFP (Certified Financial Planner) is the most respected credential in personal financial planning. CFP professionals must complete college-level coursework, pass a rigorous exam, meet an experience requirement, and follow a code of ethics. CFP Board rules require them to act as fiduciaries when giving financial advice. Our guide to [what a CFP is and what it takes to earn one](/guides/what-is-a-cfp/) lists the four certification requirements.\n\nOther credentials exist and vary widely in rigor. The SEC warns that professional designations do not all require the same difficulty, and some may indicate product limitations. A CFP with a fee-only fiduciary practice is a strong starting point for most families. If you're sizing up a fund manager rather than hiring a personal planner, see [what a CFA charter actually means](/guides/what-is-a-cfa/) and how it differs from a CFP." },
       { heading: "Step 4: Verify the advisor before you hire", body: "Never hire an advisor without checking their record. The SEC provides two free tools you should always use. Investment Adviser Public Disclosure (IAPD) at adviserinfo.sec.gov shows the firm's Form ADV, services, fees, conflicts, and any disciplinary history. FINRA's BrokerCheck at brokercheck.finra.org covers brokers.\n\nThe SEC also requires most advisors to give you Form CRS, the Customer Relationship Summary. It discloses services, fees, conflicts, and any disciplinary events in plain language. If someone will not send you a Form CRS or ADV, walk away." },
-      { heading: "Step 5: Questions to ask on the first call", body: "Bring the same short list to every advisor you interview. Ask: Are you a fiduciary on all accounts and at all times, in writing? How are you paid, exactly, and what will my total annual cost be in dollars? What credentials do you hold, and is one the CFP?\n\nAlso ask: Who is your typical client, and do they look like me? How often will we meet, and who is my main contact? What happens to my accounts if you leave or retire? A good advisor answers each question directly. A vague or evasive answer is your signal to keep looking." },
+      { heading: "Step 5: Questions to ask on the first call", body: "Bring the same short list to every advisor you interview. Ask: Which standard covers each of my accounts, in writing? How are you paid, exactly, and what will my total annual cost be in dollars? What credentials do you hold, and is one the CFP?\n\nAlso ask: Who is your typical client, and do they look like me? How often will we meet, and who is my main contact? What happens to my accounts if you leave or retire? A good advisor answers each question directly. A vague or evasive answer is your signal to keep looking.\n\nFor the full interview script, see our [questions to ask a financial advisor](/guides/questions-to-ask-a-financial-advisor/)." },
     ],
     tools: [
       { href: "/guides/what-is-a-registered-investment-advisor/", label: "What is a registered investment advisor" },
@@ -9582,7 +10092,7 @@ export const GUIDES: Guide[] = [
       { question: "How much does a financial advisor cost?", answer: "Costs vary by model. A fee-only advisor may charge about 1% of assets managed per year, a flat annual fee of a few thousand dollars, or an hourly rate. On $500,000, a 1% fee is $5,000 a year, so compare fees in actual dollars, not just percentages." },
       { question: "Where can I find a financial advisor?", answer: "Start with SEC Investment Adviser Public Disclosure (IAPD) at adviserinfo.sec.gov or FINRA BrokerCheck at brokercheck.finra.org, which let you search for advisors directly by name or firm instead of relying on an ad. The CFP Board also maintains a directory of CFP professionals. Wherever you find candidates, run them through the same verification steps before you hire anyone." },
       { question: "What's the difference between a financial advisor and a wealth advisor?", answer: "Little in regulation, since a wealth advisor usually follows the same fiduciary standard as an investment adviser. The real difference is who they serve: a wealth advisor typically targets higher-net-worth clients and sets a higher account minimum, often $500,000 or more, while a general financial advisor works with a broader range of account sizes." },
-      { question: "Is a financial coach the same as a financial advisor?", answer: "No. A financial coach or financial counselor typically helps with budgeting, debt payoff, and money habits, and often isn't licensed to manage investments at all. A financial advisor who manages a portfolio needs to be registered as an investment adviser or a broker-dealer representative, a different regulatory category entirely." },
+      { question: "Is a financial coach the same as a financial advisor?", answer: "No. A financial coach or financial counselor typically helps with budgeting, debt payoff, and money habits. A financial advisor who manages a portfolio needs to be registered as an investment adviser or a broker-dealer representative, a different regulatory category entirely." },
     ],
     sources: [
       { label: "SEC Investor.gov — Choosing an Investment Professional", url: "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional" },
@@ -9601,12 +10111,12 @@ export const GUIDES: Guide[] = [
     introText:
       "A financial advisor is worth the cost when the value they add (through smarter investment behavior, tax-aware moves, and a plan you actually follow) exceeds the fee you pay. [Vanguard](https://advisors.vanguard.com/content/dam/fas/pdfs/IARCQAA.pdf)'s own research estimates that potential value at close to 3% a year for many investors. This guide explains what advisors actually cost, what the research says about the value they can add, and the specific situations in which paying for one is worth it, or doing it yourself is the smarter call.",
     sections: [
-      { heading: "Step 1: What a financial advisor actually costs", body: "Most fee-only financial advisors charge a percentage of assets under management (AUM), commonly around 1% a year. On a $250,000 portfolio, that is $2,500 a year; on $1,000,000, it is $10,000 a year — real money that compounds against you the same way investment growth compounds for you.\n\nFlat-fee and hourly advisors are a growing alternative. Flat annual retainers commonly run $2,000 to $7,500 depending on complexity, and hourly planning runs roughly $150 to $400 an hour for a handful of sessions. Robo-advisors sit at the low end, often charging around 0.25% of assets with no dedicated human advisor attached. See our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) for how fee models compare in more detail." },
+      { heading: "Step 1: What a financial advisor actually costs", body: "Most fee-only financial advisors charge a percentage of assets under management (AUM), commonly around 1% a year. On a $250,000 portfolio, that is $2,500 a year; on $1,000,000, it is $10,000 a year — real money that compounds against you the same way investment growth compounds for you.\n\nFlat-fee and hourly advisors are a growing alternative. Flat annual retainers commonly run $2,000 to $7,500 depending on complexity, and hourly planning runs roughly $150 to $400 an hour for a handful of sessions. Robo-advisors sit at the low end, often charging around 0.25% of assets with no dedicated human advisor attached. See our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) for how fee models compare in more detail. To see what the fee pays for, read [what a financial advisor does](/guides/what-does-a-financial-advisor-do/)." },
       { heading: "Step 2: What the research says an advisor adds", body: "Vanguard's Advisor's Alpha research estimates that good advice can add on the order of 3 percentage points a year in net value, though the exact figure varies by investor and Vanguard is careful to note it is not earned evenly every year. The value comes less from picking winning investments and more from behavior: staying invested through downturns, rebalancing on a schedule instead of on emotion, and using tax-efficient moves like asset location and tax-loss harvesting.\n\nThe biggest single piece is usually behavioral coaching. Investors who sell in a panic during a downturn and buy back in late lock in losses that a disciplined, hands-off investor avoids entirely. An advisor's real job in a bad year is often simply talking a client out of a costly mistake, something a spreadsheet alone can't do." },
       { heading: "Step 3: When paying for a financial advisor is worth it", body: "A financial advisor tends to earn their fee when your situation has real complexity: a business sale, an inheritance, stock compensation with vesting and tax timing decisions, a pending retirement with Social Security claiming and withdrawal-order questions, or simply not having the time or temperament to manage investments yourself. High-net-worth households, roughly $1 million or more in investable assets, often layer on estate and tax coordination that is hard to DIY well.\n\nAn advisor is also worth it if you know, honestly, that you panic-sell during downturns or chase performance after the fact. That behavioral gap alone can cost more than any advisor fee over a full market cycle." },
       { heading: "Step 4: When DIY investing is the smarter choice", body: "If your situation is simple — one or two retirement accounts, no complex tax events, and the discipline to keep contributing on autopilot — a low-cost target-date fund or a robo-advisor at roughly 0.25% can capture most of the same diversification benefit at a fraction of the cost. Our [investing hub](/investing/) and [portfolio calculator](/portfolio/) can model the same allocation math a paid advisor would run.\n\nSmall balances are the clearest DIY case. A 1% fee on a $20,000 account is $200 a year, which needs to buy real behavioral or tax value to be worth it. As the dollar amount and the complexity both grow, the math shifts in the advisor's favor." },
-      { heading: "Step 5: Run your own break-even math", body: "Compare the dollar cost of the fee to a realistic estimate of the value an advisor adds for your specific situation, not the average 3% figure. On $500,000, a 1% fee is $5,000 a year. If a disciplined plan and better tax placement genuinely save you more than $5,000 a year in avoided mistakes and tax drag, the advisor pays for themselves; if your situation is simple enough that you would not make those mistakes anyway, the fee is a pure cost.\n\nOnce you decide an advisor is worth it, our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) walks through fiduciary status, fee models, the CFP credential, and how to verify anyone before you hire them." },
-      { heading: "Robo-advisor vs. financial advisor: a quick side-by-side", body: "A robo-advisor and a financial advisor solve the same core problem, building and managing a portfolio, at very different price points and service levels. Cost is the starkest difference: a robo-advisor typically charges around 0.25% of assets with no dedicated human attached, while a traditional fee-only financial advisor charges roughly 1% AUM, about four times more, for a relationship with an actual person.\n\nThat extra cost buys judgment a robo-advisor's algorithm can't replicate: behavioral coaching during a downturn, tax-aware moves like asset location and loss harvesting timed to your specific situation, and guidance through one-time events like a business sale or inheritance. A robo-advisor rebalances on schedule and diversifies well, but it can't talk you out of a panic sell or plan around a stock-compensation vesting schedule.\n\nPick a robo-advisor if your situation is simple, one or two retirement accounts with no complex tax events, and you mainly need low-cost diversification and rebalancing. Pick a financial advisor once your situation has real complexity, or if you know you tend to make emotional investment decisions during volatility; the behavioral coaching alone is often worth more than the extra fee. See our [financial advisor vs financial planner](/compare/financial-advisor-vs-financial-planner/) comparison for the difference between those two credentials once you decide a human advisor is the right call." },
+      { heading: "Step 5: Run your own break-even math", body: "Compare the dollar cost of the fee to a realistic estimate of the value an advisor adds for your specific situation, not the average 3% figure. On $500,000, a 1% fee is $5,000 a year. If a disciplined plan and better tax placement genuinely save you more than $5,000 a year in avoided mistakes and tax drag, the advisor pays for themselves; if your situation is simple enough that you would not make those mistakes anyway, the fee is a pure cost.\n\nOnce you decide an advisor is worth it, our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) walks through fiduciary status, fee models, the CFP credential, and how to verify anyone before you hire them. Our [questions to ask a financial advisor](/guides/questions-to-ask-a-financial-advisor/) give you a script for those interviews." },
+      { heading: "Robo-advisor vs. financial advisor: a quick side-by-side", body: "A robo-advisor and a financial advisor solve the same core problem, building and managing a portfolio, at very different price points and service levels. Cost is the starkest difference: a robo-advisor typically charges around 0.25% of assets with no dedicated human attached, while a traditional fee-only financial advisor charges roughly 1% AUM, about four times more, for a relationship with an actual person.\n\nThat extra cost buys judgment a robo-advisor's algorithm can't replicate: behavioral coaching during a downturn, tax-aware moves like asset location and loss harvesting timed to your specific situation, and guidance through one-time events like a business sale or inheritance. A robo-advisor rebalances on schedule and diversifies well, but it can't talk you out of a panic sell or plan around a stock-compensation vesting schedule.\n\nPick a robo-advisor if your situation is simple, one or two retirement accounts with no complex tax events, and you mainly need low-cost diversification and rebalancing. Pick a financial advisor once your situation has real complexity, or if you know you tend to make emotional investment decisions during volatility; the behavioral coaching alone is often worth more than the extra fee. See our [financial advisor vs financial planner](/compare/financial-advisor-vs-financial-planner/) comparison for the difference between those two credentials once you decide a human advisor is the right call.\n\nTo see how robo-advisors work and who they fit, read [what a robo-advisor is](/guides/what-is-a-robo-advisor/)." },
     ],
     tools: [
       { href: "/guides/what-is-a-registered-investment-advisor/", label: "What is a registered investment advisor" },
@@ -12857,7 +13367,7 @@ export const GUIDES: Guide[] = [
     h1: "Financial Planning for 30 Year Olds: What to Do First",
     cardBlurb: "The right order for emergency fund, investing, good vs. bad debt, insurance, and 529s — with the actual numbers behind each step.",
     introText:
-      "Financial planning in your 30s works best when you follow a specific order: build an emergency fund, get the employer match, pay down debt by interest rate, then add protection. Doing these steps out of order (like buying life insurance before saving 3 months of expenses) means smaller risks get handled while bigger ones remain uncovered. This guide explains the numbers behind each step, so a 30-year-old with a typical mix of income, some debt, and maybe kids can see exactly where to focus next.",
+      "Financial planning in your 30s works best when you follow a specific order: build an emergency fund, get the employer match, pay down debt by interest rate, then add protection. Doing these steps out of order (like buying life insurance before saving 3 months of expenses) means smaller risks get handled while bigger ones remain uncovered. This guide explains the numbers behind each step, so a 30-year-old with a typical mix of income, some debt, and maybe kids can see exactly where to focus next. If you have no written plan yet, start with [how to make a financial plan](/guides/how-to-make-a-financial-plan/).",
     sections: [
       { heading: "Step 1: Build the emergency fund before anything else compounds", body: "A 30-year-old's first priority is 3 to 6 months of essential expenses in an accessible account, not invested in the market — see our [emergency fund guide](/guides/how-much-emergency-fund/) for the exact math on your own number. Without this cushion, an unexpected job loss or medical bill often gets paid for with high-interest credit card debt, undoing months of other progress in a single event.\n\nA [high-yield savings account](/investing/high-yield-savings-calculator/) is the right home for this money — accessible within a day or two, [FDIC-insured](https://www.fdic.gov/resources/deposit-insurance/) up to $250,000, and earning meaningfully more than a traditional checking or savings account while you build it up." },
       { heading: "Step 2: Capture the full employer match, then choose Roth or Traditional", body: "Once the emergency fund is funded, contribute at least enough to your 401(k) to capture 100% of any employer match — an immediate, guaranteed return no other move can beat. From there, the Roth-vs-Traditional decision usually comes down to your current tax bracket versus your expected bracket in retirement; see our [401(k) vs Roth IRA comparison](/compare/401k-vs-roth-ira/) for the full tradeoff.\n\nMany 30-year-olds in a moderate bracket today, expecting income (and taxes) to rise over their career, lean toward Roth contributions now to lock in today's lower rate — but there's no universal answer, and splitting contributions between both account types is a reasonable hedge if you're unsure." },
@@ -14927,7 +15437,7 @@ export const GUIDES: Guide[] = [
       },
       {
         heading: "CFA vs. CFP: Which One Actually Matters for Your Situation",
-        body: "The CFA and the CFP solve different problems, and confusing them is the most common mistake people make when sizing up an advisor's credentials. The CFA is built around investment analysis and portfolio management — the skill set behind picking and running the securities inside a fund or an institutional account. The CFP, or Certified Financial Planner, is administered by the [CFP Board](https://www.cfp.net/) and built around personal financial planning — retirement, tax, insurance, and estate questions for one household at a time — and CFP Board's own standards require CFP professionals to act as fiduciaries whenever they give financial advice.\n\nIf you're hiring someone to build and manage your household's full financial plan, a CFP is usually the more directly relevant credential for that job than a CFA. If you're trying to judge who's actually running a mutual fund or ETF you own, a CFA-charterholder portfolio manager is the more relevant signal. Plenty of advisors hold both, and neither credential alone tells you whether the specific person or firm in front of you is a fiduciary — that still has to be verified separately. Our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) covers exactly how to check that, using the SEC's own [Investment Adviser Public Disclosure](https://adviserinfo.sec.gov/) database and [FINRA's BrokerCheck](https://brokercheck.finra.org/).",
+        body: "The CFA and the CFP solve different problems, and confusing them is the most common mistake people make when sizing up an advisor's credentials. The CFA is built around investment analysis and portfolio management — the skill set behind picking and running the securities inside a fund or an institutional account. The CFP, or Certified Financial Planner, is administered by the [CFP Board](https://www.cfp.net/) and built around personal financial planning — retirement, tax, insurance, and estate questions for one household at a time — and CFP Board's own standards require CFP professionals to act as fiduciaries whenever they give financial advice.\n\nIf you're hiring someone to build and manage your household's full financial plan, a CFP is usually the more directly relevant credential for that job than a CFA. If you're trying to judge who's actually running a mutual fund or ETF you own, a CFA-charterholder portfolio manager is the more relevant signal. Plenty of advisors hold both, and neither credential alone tells you whether the specific person or firm in front of you is a fiduciary — that still has to be verified separately. Our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) covers exactly how to check that, using the SEC's own [Investment Adviser Public Disclosure](https://adviserinfo.sec.gov/) database and [FINRA's BrokerCheck](https://brokercheck.finra.org/). For what the CFP credential requires, see [what a CFP is](/guides/what-is-a-cfp/).",
       },
       {
         heading: "Bottom Line",
@@ -17711,7 +18221,7 @@ export const GUIDES: Guide[] = [
     sections: [
       {
         heading: "What a Financial Planning Calculator Calculates",
-        body: "A financial planning calculator converts a set of inputs, income, current savings, a monthly contribution, an assumed return, a time horizon, into a single projected outcome. The math behind most of them is compound growth: your money grows a little each period, and that growth itself starts growing too. The [U.S. Securities and Exchange Commission's compound interest calculator](https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator) walks through this same mechanism, since compounding is the core of nearly every long-term financial projection.\n\n$10,000 invested today at a 7% average annual return grows to about $19,672 in ten years without another dollar added. A flat, non-compounding 7% a year on the same $10,000 would total only $17,000 over that decade. The extra $2,672 is growth compounding on top of prior growth, not a bigger annual gain. That gap widens every year the money stays invested, which is why a financial planning calculator built on compound growth gives a more realistic number than simple multiplication.\n\nNot every calculator projects the future. Some measure where you stand right now instead, like a net worth calculator or a savings-rate calculator. A useful financial plan runs both kinds: a snapshot of today's number, and a projection of where today's habits lead.",
+        body: "A financial planning calculator converts a set of inputs, income, current savings, a monthly contribution, an assumed return, a time horizon, into a single projected outcome. The math behind most of them is compound growth: your money grows a little each period, and that growth itself starts growing too. The [U.S. Securities and Exchange Commission's compound interest calculator](https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator) walks through this same mechanism, since compounding is the core of nearly every long-term financial projection.\n\n$10,000 invested today at a 7% average annual return grows to about $19,672 in ten years without another dollar added. A flat, non-compounding 7% a year on the same $10,000 would total only $17,000 over that decade. The extra $2,672 is growth compounding on top of prior growth, not a bigger annual gain. That gap widens every year the money stays invested, which is why a financial planning calculator built on compound growth gives a more realistic number than simple multiplication.\n\nNot every calculator projects the future. Some measure where you stand right now instead, like a net worth calculator or a savings-rate calculator. A useful financial plan runs both kinds: a snapshot of today's number, and a projection of where today's habits lead. To build the plan these numbers feed into, read [how to make a financial plan](/guides/how-to-make-a-financial-plan/).",
       },
       {
         heading: "Start with Your Savings Rate",

@@ -1,0 +1,30 @@
+PAGE /guides/what-is-a-fiduciary/  | round 1 | reviewer phase4-auditor-1 | VERDICT FAIL | profile high
+Findings are source-checked against the captures in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/ and the row prompt fact list. Format per finding: QUOTE (verbatim from the draft/source), DEFECT, FIX.
+Apply with: python3 scripts/lib/content_gen.py fix --draft <draft> --findings <this file> --facts <row prompt> --floor 1200 (Rung 1) except where a finding says Rung 2 / needs added facts. Re-run Rung 0 lint and re-submit the whole page for round 2.
+
+F1 [tee-up / meta-narration]  FIELD: introText
+  QUOTE: "At ModernWallet, we answer a question like what is a fiduciary with the rule itself and the name of the body that wrote it."
+  DEFECT: Generic tee-up that narrates the writing ('we answer a question like ...'), is not one of the licensed _experience.md DOMAIN framings, and would fit any page (portability test). GATE Tee-up: bolted-on tee-up fails like a missing one.
+  FIX: DELETE the sentence (paragraph 1 keeps only its answer sentence). Record `teeup-exempt: source-attributed regulatory explainer; no licensed first-hand framing fits this topic` in the run notes (operator register; sentence 1 stays the answer).
+
+F2 [faq-direct-answer / source support]  FIELD: faqs[0].answer (question: 'Is a financial advisor a fiduciary?')
+  QUOTE: "A professional registered as a broker-dealer works under Regulation Best Interest, a separate SEC standard for brokers. Many firms are registered as both, so ask which standard applies to your account and read the firm's Form CRS."
+  DEFECT: The FAQ answer does not answer its own question in its first sentence (the claim check deleted the sentence that did). A reader asking 'Is a financial advisor a fiduciary?' is told only what brokers do. Every FAQ answer must lead with the direct answer.
+  FIX: REPLACE with: "Some are, depending on how they are registered. An SEC-registered investment adviser owes a fiduciary duty of care and loyalty, and a CFP professional must act as a fiduciary when giving financial advice. A professional registered as a broker-dealer works under Regulation Best Interest, a separate SEC standard for brokers. Many firms are registered as both, so ask which standard applies to your account and read the firm's Form CRS." (facts FS1, FC1, FS2, FA8; no 'only if' universal, which the claim check had removed as inference).
+
+F3 [unlinked-company]  FIELD: sections[2].body
+  QUOTE: "The Certified Trust and Fiduciary Advisor (CTFA) is a separate credential from the American Bankers Association (ABA), covered in our [CTFA guide](/guides/what-is-a-ctfa/)."
+  DEFECT: First mention of an organization ('American Bankers Association (ABA)') is not linked. GATE Links: hard fail. No ABA URL is on this row's closed URL list.
+  FIX: REPLACE with: "The Certified Trust and Fiduciary Advisor (CTFA) is a separate credential, covered in our [CTFA guide](/guides/what-is-a-ctfa/)." (drops the unlinked organization; the row prompt allows 'no other claim' about CTFA).
+
+F4 [applicability condition missing (evidence packet 'conditions' not on page)]  FIELD: sections[5].body (Our Takeaway) and faqs[3].answer
+  QUOTE: "The answer changes if the person is registered only as a broker or holds neither registration."
+  DEFECT: evidence.json states the conclusion's condition: 'State rules, insurance agents, banks and trust companies are outside the sources read.' That limit appears nowhere on the page, so the headline answer reads as covering every professional called an advisor. Material applicability conditions must be in the first answer, FAQ or takeaway (owner source/attribution clarification 2026-11-09).
+  FIX: APPEND to that Takeaway sentence: " Rules outside SEC registration and the CFP Board, such as state rules and the roles of insurance agents, banks and trust companies, are not covered here." (states non-coverage only; adds no new rule).
+
+F5 [self-reference / source silence narrated]  FIELD: faqs[1].answer (question: 'Is a fiduciary the same as a financial planner?')
+  QUOTE: "Not necessarily. The SEC and Investor.gov sources cited here do not define "financial planner" as a title, and Investor.gov warns that titles and initials are not all the same."
+  DEFECT: Page self-reference ('sources cited here') and a hedged non-answer built from source silence. The reader's question is left unresolved until the CFP sentence.
+  FIX: REPLACE with: "Not necessarily. A fiduciary duty comes from a registration or a credential, and Investor.gov warns that titles and initials are not all the same." (keep the following CFP sentence unchanged).
+
+ADVISORY (non-blocking): H2 'Frequently asked questions' is a site-wide template heading, not Title Case.

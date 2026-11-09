@@ -1,0 +1,144 @@
+{
+ "slug": "what-is-a-fiduciary",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1865,
+ "floor": 1200,
+ "input_tokens": 35782,
+ "output_tokens": 18541,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.5139,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['What a Fiduciary Is and Who Has to Be One', 'Which Standard Applies to an Adviser, Broker or Dual Registrant', 'Conflicts and Titles That a Fiduciary Duty Leaves in Place', 'How to Check a Financial Professional Before You Hire', 'Who a Fiduciary Is Not For and What Would Change the Answer'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1865,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 724,
+   "floor": 1200,
+   "ratio": 0.6,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    3
+   ],
+   "applied": [
+    {
+     "id": "sections[1].body",
+     "quote": "Both can also advise on whether to sell or hold afterward, so the kind of advice you receive does not tell you which rule covers it.",
+     "replacement": "Both can also advise on whether to sell or hold afterward.",
+     "type": "inference",
+     "why": "SOURCE does not draw this consequence from FA8"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Pay is the first place to look for a conflict.",
+     "replacement": "Investor.gov ties these conflicts to the way advisers make money.",
+     "type": "unsupported",
+     "why": "SOURCE ranks no place to look first; FA1 only links pay to conflicts"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Titles do not prove fiduciary status.",
+     "replacement": "Titles and initials need a closer look.",
+     "type": "inference",
+     "why": "FA7 is about qualifications and products, not fiduciary status"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Search an adviser's name at [adviserinfo.sec.gov](https://adviserinfo.sec.gov) and a broker's name at [BrokerCheck](https://brokercheck.finra.org), run by the Financial Industry Regulatory Authority (FINRA).",
+     "replacement": "Search an adviser's name at [adviserinfo.sec.gov](https://adviserinfo.sec.gov) and a broker's name at [BrokerCheck](https://brokercheck.finra.org).",
+     "type": "unsupported",
+     "why": "SOURCE does not say who runs BrokerCheck"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Form CRS also includes conversation starters, which give you a ready list of questions for a first meeting.",
+     "replacement": "Form CRS also includes key questions to ask, called conversation starters.",
+     "type": "unsupported",
+     "why": "FA6 says key questions to ask; no first-meeting occasion"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "That arrangement fits someone who wants continuing oversight of their investments.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not say who the arrangement fits"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Conflicts of interest remain under every one of these standards, so read the firm's Form CRS and ask about them.",
+     "replacement": "Investor.gov says the way advisers make money creates some conflicts, so read the firm's Form CRS and ask about them.",
+     "type": "unsupported",
+     "why": "FA1 states conflicts only for investment advisers"
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Investor.gov says advisers typically give ongoing advice and monitor your investments, which fits someone who wants continuing oversight.",
+     "replacement": "Investor.gov says advisers typically give ongoing advice and monitor your investments.",
+     "type": "inference",
+     "why": "SOURCE does not say who this arrangement fits"
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "The firm's Form CRS, which lists services and the standard for each",
+     "replacement": "The firm's Form CRS, which states the types of services and the required standard of conduct",
+     "type": "inference",
+     "why": "FA6 says Form CRS states the standard tied to services, not per service."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "This applies to anyone paying for investment advice.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "No source states the duty applies to anyone paying for advice."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "A financial advisor is a fiduciary only if registered as an investment adviser or if the advisor is a CFP professional giving financial advice.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Sources do not state these are the only cases."
+    }
+   ],
+   "deleted_final": 3,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1940
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 206.1,
+ "response_id": "msg_011Cgt5kwEXAy9xuKyRjbAnk",
+ "generated_at": "2026-11-09T21:45:59+0000"
+}

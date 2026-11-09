@@ -1,0 +1,55 @@
+At": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "CFPB credit counseling page",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfpb-credit-counseling.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/789432b88c2e513a83d57a3c4adf77bdc8b2192609c7485b8571c82dd0005fb0/nfcc.txt",
+      "sha256": "789432b88c2e513a83d57a3c4adf77bdc8b2192609c7485b8571c82dd0005fb0",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "NFCC counseling overview",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/nfcc.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/4713c8f3c6903bf415bdaa82e044461af224674ef434bdba696c2da78e1c799b/cfpb-emergency.txt",
+      "sha256": "4713c8f3c6903bf415bdaa82e044461af224674ef434bdba696c2da78e1c799b",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "CFPB emergency fund guide",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfpb-emergency.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/5ebd259859b527ccd53703b0a2577b4801a162766ed22db1af4b38245f27a78f/crs-sample.pdf",
+      "sha256": "5ebd259859b527ccd53703b0a2577b4801a162766ed22db1af4b38245f27a78f",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "Registered firm Form CRS conversation starters",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/crs-sample.pdf"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "findings": [
+    {
+      "id": "phase4-advisory-1",
+      "status": "open",
+      "evidence": "Phase 4 must check intent-answered-late, Title Case headings, 1,200-word floors, no regulated/unregulated claim about coaches or counselors, A6 H2s match the title, A3 labels non-sourced red flags as editorial judgment (chart-review.json evidence)."
+    }
+  ],
+  "resolvedFindingIds": [
+    "chart-review-round1-F1",
+    "chart-review-round1-F2",
+    "chart-review-round1-F3",
+    "chart-review-round1-F4",
+    "chart-review-round1-F5",
+    "chart-review-round1-F6"
+  ],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/writer-handoff.json",
+    "sha256": "cc570ed7722575160ceb96af68ad767ba3e0c9c066f27d27aca71e1afbfa94a8"
+  }
+}
+

@@ -1,0 +1,1546 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" data-undergoing-maintenance="false" lang="en"  >
+<!--<![endif]-->
+<head>
+    
+
+<!-- OneTrust Cookies Consent Notice start -->
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="019977a5-aa01-73a7-b926-a8bfd300fb1c"></script>
+<script type="text/javascript">
+    function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end -->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WHZSLZ9');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Start VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script type="text/plain" id="vwoCode" class="optanon-category-C0002">
+        window._vwo_code ||
+        (function () {
+        var w=window,
+        d=document;
+        var account_id=1177090,
+        version=2.2,
+        settings_tolerance=2000,
+        hide_element='body',
+        hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important';
+        /* DO NOT EDIT BELOW THIS LINE */
+        if(f=!1,v=d.querySelector('#vwoCode'),cc={},-1<d.URL.indexOf('__vwo_disable__')||w._vwo_code)return;try{var e=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=e&&'object'==typeof e?e:{}}catch(e){}function r(t){try{return decodeURIComponent(t)}catch(e){return t}}var s=function(){var e={combination:[],combinationChoose:[],split:[],exclude:[],uuid:null,consent:null,optOut:null},t=d.cookie||'';if(!t)return e;for(var n,i,o=/(?:^|;\s*)(?:(_vis_opt_exp_(\d+)_combi=([^;]*))|(_vis_opt_exp_(\d+)_combi_choose=([^;]*))|(_vis_opt_exp_(\d+)_split=([^:;]*))|(_vis_opt_exp_(\d+)_exclude=[^;]*)|(_vis_opt_out=([^;]*))|(_vwo_global_opt_out=[^;]*)|(_vwo_uuid=([^;]*))|(_vwo_consent=([^;]*)))/g;null!==(n=o.exec(t));)try{n[1]?e.combination.push({id:n[2],value:r(n[3])}):n[4]?e.combinationChoose.push({id:n[5],value:r(n[6])}):n[7]?e.split.push({id:n[8],value:r(n[9])}):n[10]?e.exclude.push({id:n[11]}):n[12]?e.optOut=r(n[13]):n[14]?e.optOut=!0:n[15]?e.uuid=r(n[16]):n[17]&&(i=r(n[18]),e.consent=i&&3<=i.length?i.substring(0,3):null)}catch(e){}return e}();function i(){var e=function(){if(w.VWO&&Array.isArray(w.VWO))for(var e=0;e<w.VWO.length;e++){var t=w.VWO[e];if(Array.isArray(t)&&('setVisitorId'===t[0]||'setSessionId'===t[0]))return!0}return!1}(),t='a='+account_id+'&u='+encodeURIComponent(w._vis_opt_url||d.URL)+'&vn='+version+'&ph=1'+('undefined'!=typeof platform?'&p='+platform:'')+'&st='+w.performance.now();e||((n=function(){var e,t=[],n={},i=w.VWO&&w.VWO.appliedCampaigns||{};for(e in i){var o=i[e]&&i[e].v;o&&(t.push(e+'-'+o+'-1'),n[e]=!0)}if(s&&s.combination)for(var r=0;r<s.combination.length;r++){var a=s.combination[r];n[a.id]||t.push(a.id+'-'+a.value)}return t.join('|')}())&&(t+='&c='+n),(n=function(){var e=[],t={};if(s&&s.combinationChoose)for(var n=0;n<s.combinationChoose.length;n++){var i=s.combinationChoose[n];e.push(i.id+'-'+i.value),t[i.id]=!0}if(s&&s.split)for(var o=0;o<s.split.length;o++)t[(i=s.split[o]).id]||e.push(i.id+'-'+i.value);return e.join('|')}())&&(t+='&cc='+n),(n=function(){var e={},t=[];if(w.VWO&&Array.isArray(w.VWO))for(var n=0;n<w.VWO.length;n++){var i=w.VWO[n];if(Array.isArray(i)&&'setVariation'===i[0]&&i[1]&&Array.isArray(i[1]))for(var o=0;o<i[1].length;o++){var r,a=i[1][o];a&&'object'==typeof a&&(r=a.e,a=a.v,r&&a&&(e[r]=a))}}for(r in e)t.push(r+'-'+e[r]);return t.join('|')}())&&(t+='&sv='+n)),s&&s.optOut&&(t+='&o='+s.optOut);var n=function(){var e=[],t={};if(s&&s.exclude)for(var n=0;n<s.exclude.length;n++){var i=s.exclude[n];t[i.id]||(e.push(i.id),t[i.id]=!0)}return e.join('|')}();return n&&(t+='&e='+n),s&&s.uuid&&(t+='&id='+s.uuid),s&&s.consent&&(t+='&consent='+s.consent),w.name&&-1<w.name.indexOf('_vis_preview')&&(t+='&pM=true'),w.VWO&&w.VWO.ed&&(t+='&ed='+w.VWO.ed),t}code={nonce:v&&v.nonce,library_tolerance:function(){return'undefined'!=typeof library_tolerance?library_tolerance:void 0},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return performance.getEntriesByName('first-contentful-paint')[0]?'':'string'==typeof cc.hE?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){var t;f||(f=!0,(t=d.getElementById('_vis_opt_path_hides'))&&t.parentNode.removeChild(t),e&&((new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e))},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript',e.src?t.src=e.src:t.text=e.text,v&&t.setAttribute('nonce',v.nonce),d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){t=t||{};var n=new XMLHttpRequest;n.open('GET',e,!0),n.withCredentials=!t.dSC,n.responseType=t.responseType||'text',n.onload=function(){if(t.onloadCb)return t.onloadCb(n,e);200===n.status?_vwo_code.addScript({text:n.responseText}):_vwo_code.finish('&e=loading_failure:'+e)},n.onerror=function(){if(t.onerrorCb)return t.onerrorCb(e);_vwo_code.finish('&e=loading_failure:'+e)},n.send()},init:function(){var e,t=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish()},t),'body'!==this.hide_element()?(n=d.createElement('style'),e=(t=this.hide_element())?t+this.hide_element_style():'',t=d.getElementsByTagName('head')[0],n.setAttribute('id','_vis_opt_path_hides'),v&&n.setAttribute('nonce',v.nonce),n.setAttribute('type','text/css'),n.styleSheet?n.styleSheet.cssText=e:n.appendChild(d.createTextNode(e)),t.appendChild(n)):(n=d.getElementsByTagName('head')[0],(e=d.createElement('div')).style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;',e.setAttribute('id','_vis_opt_path_hides'),e.classList.add('_vis_hide_layer'),n.parentNode.insertBefore(e,n.nextSibling));var n='https://dev.visualwebsiteoptimizer.com/j.php?'+i();-1!==w.location.search.indexOf('_vwo_xhr')?this.addScript({src:n}):this.load(n+'&x=true',{l:1})}};w._vwo_code=code;code.init();})();
+    </script>
+    <!-- End VWO Async SmartCode -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>How to Become a Certified Financial Planner: The Process | CFP Board
+</title>
+    <meta name="description" content="Become a certified financial planner by completing the 4 Es: Education, Exam, Experience and Ethics. Understand the CFP&#174; certification process and start your career in financial planning." />
+    <meta name="keywords" content="how to become a financial advisor, how to become financial advisor, financial advisor training, financial advisor qualifications, steps to becoming a financial advisor" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="auth0-enabled" content="true">
+
+    
+
+    <meta property="og:url" content="https://www.cfp.net/certification-process" />
+<meta property="og:title" content="How to Become a Certified Financial Planner: The Process" />
+<meta property="og:description" content="Become a certified financial planner by completing the 4 Es: Education, Exam, Experience and Ethics. Understand the CFP® certification process and start your career in financial planning." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://www.cfp.net/-/media/images/cfp-board/photos/full-width/2-people/1041147124.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:height" content="1280" />
+<meta property="og:image:width" content="1920" />
+<meta property="og:image:alt" content="" />
+<meta name="contextItemId" content="90b34ca7-e3f5-4f5b-b661-c2bda2eca777" />
+<meta name="templateID" content="912aac08-c3e1-48eb-9389-ed473c797ee8" />
+<meta name="templateName" content="Standard Landing Page" />
+<meta name="itemBoost" content="2" />
+<meta name="ss_excludefromsearch" content="false" />
+<meta name="VisitorType" content="Candiate for CFP® Certification" />
+<meta name="ContentType" content="Candidate Resources||Certification Process" />
+
+
+        <link rel="canonical" href="https://www.cfp.net/certification-process" />
+    <link rel="stylesheet" href="/assets/css/style.css?v=aCljhUrs" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffcc33">
+    <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoaded" defer></script></head>
+<body class="">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHZSLZ9"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+<a href="#main-content" class="skip-to-main" role="navigation" aria-label="Skip to main content">Skip to main content</a>
+
+
+<!-- components/cta-banner/cta-banner.twig -->
+<article id="js-cta-banner-id-57FC28A8625E4437978318EDEF37F197"
+         class="cta-banner js-cta-banner"
+         data-theme="yellow"
+         data-sitecore-version-num="1"
+           data-token-lifetime="1" data-token-uom="h"  >
+    <div class="cta-banner-inner">
+        <div class="cta-banner-content">
+                <div class="cta-banner-icon"><img src="/-/media/images/cfp-board/icons/gear-turning-black.svg" alt=""></div>
+            <div class="cta-banner-text">
+                <p>
+                    <span>CFP.net will be undergoing scheduled system maintenance on Monday, November 9 from 6:00 p.m. &ndash; 7:00 p.m. ET. Some features will be unavailable.</span>
+                </p>
+            </div>
+        </div>
+        <button type="button" class="cta-banner-close js-cta-banner-close"><span class="sr-text">Close Alert</span></button>
+    </div>
+</article>
+<div class="page-container">
+    <div class="page-container-inner">
+        
+
+<div class="mobile-nav">
+    <div class="mobile-nav-header">
+        <a href="/">
+            <img src="/assets/images/logo-cfp-board-black-white.svg" alt="CFP Board Logo" class="mobile-nav-logo-img" width="241" height="48">
+        </a>
+
+        <button type="button" class="mobile-nav-toggle js js-open-mobile-nav icon-hamburger" aria-haspopup="true"><span class="sr-text">Open Menu</span></button>
+    </div>
+    <div class="mobile-nav-slideout">
+        <div class="mobile-nav-slideout-header">
+            <div class="mobile-nav-slideout-header-left">
+                    <a href="/account/auth0/login" class="mobile-nav-slideout-header-left-link">My Account</a>
+                                    <a href="/account-registration" class="mobile-nav-slideout-header-left-link">Join</a>
+                <a style="display: none;" class="mobile-nav-slideout-header-left-link logout-link -hideshow-logout-link">Logout</a>
+            </div>
+            <div class="mobile-nav-slideout-header-right">
+                    <button class="mobile-nav-search-button js js-mobile-search-toggle icon-search" type="button"><span class="sr-text">Search Toggle</span></button>
+                    <button class="mobile-nav-close-button js js-mobile-nav-close icon-plus" type="button"><span class="sr-text">Search Toggle</span></button>
+            </div>
+        </div>
+        <nav class="mobile-nav-main" aria-label="Mobile">
+            <div class="mobile-nav-primary-links slidebar-container">
+                <div class="mobile-nav-slidebar"></div>
+                <ul>
+                    <li class="mobile-nav-item -white">
+                        <a href="/" class="mobile-nav-link icon-home">Home</a>
+                    </li>
+                        <li class="mobile-nav-item -white">
+                            <a href="/certification-process" class="mobile-nav-link -home" target="">Get Certified</a>
+
+                                <a href="#" class="mobile-nav-open-next-level icon-caret-right" aria-haspopup="true"><span class="sr-text">Open Sub Menu</span></a>
+                                <div class="mobile-nav-level-two" data-opened="false">
+                                    <a href="#" class="mobile-nav-back-level">Back</a>
+                                    <ul class="mobile-nav-level-two-links slidebar-container">
+                                        <div class="mobile-nav-slidebar"></div>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process" class="mobile-nav-link" target="">Certification Process</a>
+                                                    <a href="#" class="mobile-nav-open-next-level icon-caret-right" aria-haspopup="true"><span class="sr-text">Open Sub Menu</span></a>
+                                                    <div class="mobile-nav-level-three" data-opened="false">
+                                                        <a href="#" class="mobile-nav-back-level">Back</a>
+                                                        <ul class="mobile-nav-level-three-links slidebar-container">
+                                                            <div class="mobile-nav-slidebar"></div>
+                                                                <li class="mobile-nav-item">
+                                                                    <a href="/certification-process/education-requirement" class="mobile-nav-link" target="">Education</a>
+                                                                </li>
+                                                                <li class="mobile-nav-item">
+                                                                    <a href="/certification-process/exam-requirement" class="mobile-nav-link" target="">Exam</a>
+                                                                </li>
+                                                                <li class="mobile-nav-item">
+                                                                    <a href="/certification-process/experience-requirement" class="mobile-nav-link" target="">Experience</a>
+                                                                </li>
+                                                                <li class="mobile-nav-item">
+                                                                    <a href="/certification-process/ethics-requirement" class="mobile-nav-link" target="">Ethics</a>
+                                                                </li>
+                                                        </ul>
+                                                    </div>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/education-requirement" class="mobile-nav-link" target="">Education</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/exam-requirement" class="mobile-nav-link" target="">Exam</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/experience-requirement" class="mobile-nav-link" target="">Experience</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/ethics" class="mobile-nav-link" target="">Ethics</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/final-steps" class="mobile-nav-link" target="">Final Steps</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="mobile-nav-item -white">
+                            <a href="/why-get-certified" class="mobile-nav-link -home" target="">Why Get Certified</a>
+
+                                <a href="#" class="mobile-nav-open-next-level icon-caret-right" aria-haspopup="true"><span class="sr-text">Open Sub Menu</span></a>
+                                <div class="mobile-nav-level-two" data-opened="false">
+                                    <a href="#" class="mobile-nav-back-level">Back</a>
+                                    <ul class="mobile-nav-level-two-links slidebar-container">
+                                        <div class="mobile-nav-slidebar"></div>
+                                            <li class="mobile-nav-item">
+                                                <a href="/why-get-certified/the-standard-of-excellence" class="mobile-nav-link" target="">The Standard of Excellence</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/why-get-certified" class="mobile-nav-link" target="">Why Get Certified</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/why-get-certified/a-career-in-financial-planning" class="mobile-nav-link" target="">A Career in Financial Planning</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/why-get-certified/financial-planner-salary-and-stats" class="mobile-nav-link" target="">Salary &amp; Stats</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/why-get-certified/newsletter-insights" class="mobile-nav-link" target="">Newsletter Insights</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="mobile-nav-item -white">
+                            <a href="/candidate-tools-and-resources" class="mobile-nav-link -home" target="">Candidate Resources</a>
+
+                                <a href="#" class="mobile-nav-open-next-level icon-caret-right" aria-haspopup="true"><span class="sr-text">Open Sub Menu</span></a>
+                                <div class="mobile-nav-level-two" data-opened="false">
+                                    <a href="#" class="mobile-nav-back-level">Back</a>
+                                    <ul class="mobile-nav-level-two-links slidebar-container">
+                                        <div class="mobile-nav-slidebar"></div>
+                                            <li class="mobile-nav-item">
+                                                <a href="/candidate-tools-and-resources/apply-for-a-scholarship" class="mobile-nav-link" target="">Scholarships</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/candidate-tools-and-resources" class="mobile-nav-link" target="">View All Resources</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/career-center" class="mobile-nav-link" target="">Jobs &amp; Internships</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/education-requirement/certification-coursework-requirement/find-an-education-program" class="mobile-nav-link" target="">Find an Education Program</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/exam-requirement/cfp-exam-preparation" class="mobile-nav-link" target="">Exam Prep &amp; Dates</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/candidate-tools-and-resources/find-a-mentor" class="mobile-nav-link" target="">Mentorship</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/certification-process/track-your-progress" class="mobile-nav-link" target="">Track Your Progress</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/candidate-tools-and-resources/candidate-forum" class="mobile-nav-link" target="">Candidate Forum</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="mobile-nav-item -white">
+                            <a href="/for-cfp-pros" class="mobile-nav-link -home" target="">For CFP&#174; Pros</a>
+
+                                <a href="#" class="mobile-nav-open-next-level icon-caret-right" aria-haspopup="true"><span class="sr-text">Open Sub Menu</span></a>
+                                <div class="mobile-nav-level-two" data-opened="false">
+                                    <a href="#" class="mobile-nav-back-level">Back</a>
+                                    <ul class="mobile-nav-level-two-links slidebar-container">
+                                        <div class="mobile-nav-slidebar"></div>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/continuing-education" class="mobile-nav-link" target="">Continuing Education (CE)</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/industry-insights" class="mobile-nav-link" target="">Insights &amp; Trends</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/ethics/our-commitment" class="mobile-nav-link" target="">Ethics</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/market-yourself" class="mobile-nav-link" target="">Market Yourself</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/get-involved" class="mobile-nav-link" target="">Get Involved</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/stay-connected" class="mobile-nav-link" target="">Stay Connected</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/career-center" class="mobile-nav-link" target="">Career Center</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros/financial-planner-compensation-trends" class="mobile-nav-link" target="">Compensation Trends</a>
+                                            </li>
+                                            <li class="mobile-nav-item">
+                                                <a href="/for-cfp-pros" class="mobile-nav-link" target="">View All Resources</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                        </li>
+                </ul>
+                <ul>
+                            <li class="mobile-nav-item -light-gray">
+                                <a href="/about-cfp-board" target="" class="mobile-nav-link">About CFP Board</a>
+                            </li>
+                                                <li class="mobile-nav-item -light-gray">
+                                <a href="/for-education-partners/registered-programs" target="" class="mobile-nav-link">For Registered Programs</a>
+                            </li>
+                            <li class="mobile-nav-item -light-gray">
+                                <a href="/for-education-partners/continuing-education-providers" target="" class="mobile-nav-link">For CE Providers</a>
+                            </li>
+                            <li class="mobile-nav-item -light-gray">
+                                <a href="/for-employers" target="" class="mobile-nav-link">For Employers</a>
+                            </li>
+                            <li class="mobile-nav-item -light-gray">
+                                <a href="/for-media" target="" class="mobile-nav-link">For Media</a>
+                            </li>
+                </ul>
+                <ul>
+                            <li class="mobile-nav-item -gray">
+                                <a href="/news" target="" class="mobile-nav-link">News</a>
+                            </li>
+                            <li class="mobile-nav-item -gray">
+                                <a href="/events" target="" class="mobile-nav-link">Events</a>
+                            </li>
+                            <li class="mobile-nav-item -gray">
+                                <a href="/verify-a-cfp-professional" target="" class="mobile-nav-link">Verify a CFP&#174; Professional</a>
+                            </li>
+                            <li class="mobile-nav-item -gray">
+                                <a href="/contact" target="" class="mobile-nav-link">Contact</a>
+                            </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mobile-nav-slideout-footer">
+                <a href="https://login.cfp.net/eweb/dynamicpage.aspx?webcode=OnlineDonation&formcode=CFPDonate" class="mobile-nav-slideout-footer-button -donate">Donate</a>
+                            <a href="https://www.letsmakeaplan.org/"
+                   target="_blank" class="mobile-nav-slideout-footer-button">Find a CFP&#174; Professional</a>
+        </div>
+    </div>
+    <div class="mobile-nav-search-slideout" data-mobile-search-open="false">
+        <div class="mobile-nav-slideout-header">
+            <div class="mobile-nav-slideout-header-left">
+                <div class="mobile-nav-slideout-header-left-text">Search CFP Board</div>
+            </div>
+            <div class="mobile-nav-slideout-header-right">
+                <button type="button" class="mobile-nav-close-button js js-mobile-search-close icon-plus"><span class="sr-text">Search Toggle</span></button>
+            </div>
+        </div>
+        <div class="mobile-nav-main">
+            <div class="mobile-nav-search" data-action="/search" data-method="get">
+                <div class="mobile-nav-search-inner">
+                        <input class="js-search-field" type="search" id="search-input-mobile" name="q"
+                               title="Search"
+                               placeholder="Search by keyword…"
+                               required>
+                        <button type="button" class="button js icon-search js-search-submit"><span class="sr-text">Submit</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="module" src="/assets/react/search/index.js?v=aCljhUrs"></script>
+
+        
+
+<!-- components/site-header/site-header.twig -->
+<header class="site-header" data-url-prefix="">
+    <div class="site-header-inner">
+        <div class="site-header-logo">
+            <a href="/">
+                <img src="/assets/images/logo-cfp-board-black-white.svg" loading="lazy" width="241" height="48" alt="CFP Board Logo" class="site-header-logo-img">
+                <div href="/" class="site-header-logo-sticky" aria-hidden="true">
+                    <img src="/assets/images/logo-cfp-board-yellow.svg" loading="lazy" width="206" height="41" alt="CFP Board Logo" class="site-header-logo-img-sticky">
+                </div>
+            </a>
+        </div>
+
+        <div class="site-header-right">
+            <ul class="site-header-right-top">
+
+                <!-- About Links -->
+                    <li class="site-header-main-nav-item -has-children">
+                            <button class="site-header-main-nav-link -has-children" type="button">About CFP Board</button>
+                                                    <div class="site-header-main-nav-dropdown">
+                                <div class="site-header-main-nav-dropdown-slidebar"></div>
+                                <ul>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board">Who We Are</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board/our-initiatives">Our Initiatives</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board/governance">Governance</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board/competency-standards">Competency Standards for CFP&#174; Certification</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board/our-initiatives/driving-public-policy">Public Policy</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/industry-insights/reports-and-statistics">Research &amp; Reports</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/cfp-board-center-for-financial-planning">CFP Board Center for Financial Planning</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board/financial-planning-hall-of-fame">Financial Planning Hall of Fame</a>
+
+                                        </li>
+                                        <li class="site-header-main-nav-dropdown-item">
+                                            <a class="site-header-main-nav-dropdown-link" href="/about-cfp-board/work-at-cfp-board">Careers at CFP Board</a>
+
+                                        </li>
+                                </ul>
+                                                            </div>
+                    </li>
+                                    <li class="site-header-right-top-welcome -hideshow-welcome">Welcome <span></span></li>
+                                    <li>
+                        <a href="/account/auth0/login" class="site-header-right-top-link -bold">My Account</a>
+                    </li>
+                                    <li>
+                        <a href="/account-registration" class="site-header-right-top-link -bold">Join</a>
+                    </li>
+
+                                    <li>
+                        <a href="https://login.cfp.net/eweb/dynamicpage.aspx?webcode=OnlineDonation&formcode=CFPDonate" class="site-header-right-top-link donate-btn">
+                            <span class='pulsing-icon'>
+                                <span class="button-ripple"></span>
+                                <svg class="icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7949 1.22336C12.1635 -0.407567 9.50961 -0.407567 7.87868 1.22336L7.49987 1.60196L7.12128 1.22336C5.49035 -0.407787 2.83622 -0.407787 1.2053 1.22336C-0.39252 2.82118 -0.402896 5.35389 1.18123 7.11484C2.62607 8.72038 6.88728 12.1891 7.06807 12.3359C7.19081 12.4357 7.3385 12.4842 7.4853 12.4842C7.49016 12.4842 7.49501 12.4842 7.49965 12.484C7.65153 12.4911 7.80451 12.439 7.93122 12.3359C8.11202 12.1891 12.3737 8.72038 13.8189 7.11462C15.4029 5.35389 15.3925 2.82118 13.7949 1.22336Z" fill="#FFCC33" />
+                                    <path d="M13.7949 1.22336C12.1635 -0.407567 9.50961 -0.407567 7.87868 1.22336L7.49987 1.60196L7.12128 1.22336C5.49035 -0.407788 2.83622 -0.407788 1.2053 1.22336C-0.39252 2.82118 -0.402896 5.35389 1.18123 7.11484C2.62607 8.72038 6.88728 12.1891 7.06807 12.3359C7.19081 12.4357 7.3385 12.4842 7.4853 12.4842C7.49016 12.4842 7.49501 12.4842 7.49965 12.484C7.65153 12.4911 7.80451 12.439 7.93122 12.3359C8.11202 12.1891 12.3737 8.72038 13.8189 7.11462C15.4029 5.35389 15.3925 2.82118 13.7949 1.22336ZM12.8344 6.22873C11.7079 7.48019 8.61136 10.0612 7.49965 10.9771C6.38793 10.0615 3.29208 7.48063 2.1658 6.22896C1.0607 5.00068 1.05033 3.25143 2.14173 2.16002C2.69914 1.60284 3.43116 1.32403 4.16318 1.32403C4.89519 1.32403 5.62721 1.60262 6.18462 2.16002L7.0173 2.9927C7.11642 3.09182 7.24137 3.15099 7.37249 3.17174C7.5853 3.21743 7.81621 3.15805 7.98177 2.99293L8.8149 2.16002C9.92993 1.04544 11.7436 1.04566 12.858 2.16002C13.9494 3.25143 13.939 5.00068 12.8344 6.22873Z" fill="#333333" />
+                                </svg>
+                            </span>
+                            Donate
+                        </a>
+                    </li>
+                <!-- Header Top Link (Find a CFP Professional)-->
+                <li>
+                    <a href="https://www.letsmakeaplan.org/" class="site-header-right-top-link -black -bold">Find a CFP&reg; Professional</a>
+                </li>
+
+            </ul>
+
+            <div class="site-header-right-bottom">
+                <!-- begin primary nav -->
+                <nav class="site-header-main-nav" aria-label="Primary">
+                    <ul class="site-header-main-nav-list">
+                            <li class="site-header-main-nav-item -has-children">
+                                    <button class="site-header-main-nav-link -has-children" type="button">Get Certified</button>
+                                                                    <div class="site-header-main-nav-dropdown -has-promo">
+                                        <div class="site-header-main-nav-dropdown-slidebar"></div>
+                                        <ul class="dropdown-ul">
+
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process">Certification Process</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/education-requirement">Education</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/exam-requirement">Exam</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/experience-requirement">Experience</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/ethics">Ethics</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/final-steps">Final Steps</a>
+
+
+                                                    </li>
+                                        </ul>
+                                            <div class="site-header-main-nav-promo js-card-link">
+                                                    <div class="icon icon-user" aria-hidden="true"></div>
+                                                <div class="text">
+                                                                                                            <h3>Track Your Progress</h3>
+
+                                                        <p>Start your journey to CFP&#174; certification</p>
+                                                                                                    </div>
+                                                    <a href="/account-registration" class="button">
+                                                        Create Your Free Account
+                                                    </a>
+                                            </div>
+                                                                            </div>
+                            </li>
+                            <li class="site-header-main-nav-item -has-children">
+                                    <button class="site-header-main-nav-link -has-children" type="button">Why Get Certified</button>
+                                                                    <div class="site-header-main-nav-dropdown -has-promo -i-am-a">
+                                        <div class="site-header-main-nav-dropdown-slidebar"></div>
+                                        <ul class="dropdown-ul">
+
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/why-get-certified/the-standard-of-excellence">The Standard of Excellence</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/why-get-certified">Why Get Certified</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/why-get-certified/a-career-in-financial-planning">A Career in Financial Planning</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/why-get-certified/financial-planner-salary-and-stats">Salary &amp; Stats</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/why-get-certified/newsletter-insights">Newsletter Insights</a>
+
+
+                                                    </li>
+                                        </ul>
+                                            <div class="site-header-main-nav-promo">
+                                                <div class="text">
+                                                        <div class="i-am-a-title">I am a...</div>
+                                                    
+                                                                                                            <ul class="promo-ul">
+                                                                <li>
+                                                                    <a href="/why-get-certified/for-students">Student</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/why-get-certified/for-career-changers">Career Changer</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/why-get-certified/for-financial-professionals">Financial Professional</a>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                                                            </div>
+                            </li>
+                            <li class="site-header-main-nav-item -has-children">
+                                    <button class="site-header-main-nav-link -has-children" type="button">Candidate Resources</button>
+                                                                    <div class="site-header-main-nav-dropdown -has-promo">
+                                        <div class="site-header-main-nav-dropdown-slidebar"></div>
+                                        <ul class="dropdown-ul">
+
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/candidate-tools-and-resources/apply-for-a-scholarship">Scholarships</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item -has-button-style">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/candidate-tools-and-resources">View All Resources</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/career-center">Jobs &amp; Internships</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/education-requirement/certification-coursework-requirement/find-an-education-program">Find an Education Program</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/exam-requirement/cfp-exam-preparation">Exam Prep &amp; Dates</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/candidate-tools-and-resources/find-a-mentor">Mentorship</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/certification-process/track-your-progress">Track Your Progress</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/candidate-tools-and-resources/candidate-forum">Candidate Forum</a>
+
+
+                                                    </li>
+                                        </ul>
+                                            <div class="site-header-main-nav-promo js-card-link">
+                                                    <div class="icon icon-user" aria-hidden="true"></div>
+                                                <div class="text">
+                                                                                                            <h3>Continue Your CFP&#174; Certification</h3>
+
+                                                                                                    </div>
+                                                    <a href="https://www.cfp.net/account/auth0/login" class="button">
+                                                        Login to Your Account
+                                                    </a>
+                                            </div>
+                                                                            </div>
+                            </li>
+                            <li class="site-header-main-nav-item -has-children">
+                                    <button class="site-header-main-nav-link -has-children" type="button">For CFP&#174; Pros</button>
+                                                                    <div class="site-header-main-nav-dropdown -has-promo">
+                                        <div class="site-header-main-nav-dropdown-slidebar"></div>
+                                        <ul class="dropdown-ul">
+
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/continuing-education">Continuing Education (CE)</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/industry-insights">Insights &amp; Trends</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/ethics/our-commitment">Ethics</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/market-yourself">Market Yourself</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/get-involved">Get Involved</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/stay-connected">Stay Connected</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/career-center">Career Center</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros/financial-planner-compensation-trends">Compensation Trends</a>
+
+
+                                                    </li>
+                                                    <li class="site-header-main-nav-dropdown-item -has-button-style">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/for-cfp-pros">View All Resources</a>
+
+
+                                                    </li>
+                                        </ul>
+                                            <div class="site-header-main-nav-promo js-card-link">
+                                                    <div class="icon icon-user" aria-hidden="true"></div>
+                                                <div class="text">
+                                                                                                            <h3>Understanding the New Competency Standards</h3>
+
+                                                        <p>What’s changing, when and who it affects.</p>
+                                                                                                    </div>
+                                                    <a href="/about-cfp-board/competency-standards" class="button">
+                                                        Learn More
+                                                    </a>
+                                            </div>
+                                                                            </div>
+                            </li>
+                    </ul>
+                </nav>
+
+
+				<div class="site-header-search">
+                        <button class="site-header-search-button js js-search-toggle icon-search" type="button"><span class="sr-text">Search Toggle</span></button>
+				</div>
+
+				<!-- Search -->
+				<div data-action="/search" data-method="get" class="site-header-search-container">
+					<div class="site-header-search-container-inner">
+						    <input class="js-search-field" type="text" id="search-input-header" name="q" title="Search" placeholder="Search by keyword...">
+						    <input class="button -black js-search-submit" type="button" title="Search" value="Search">
+						<a href="#" class="js-search-input-close icon-close"><span class="sr-text">Close Search</span></a>
+					</div>
+				</div>
+
+                <div class="site-header-utility-nav">
+                    <button class="site-header-utility-nav-button js-utility-nav-toggle js icon-hamburger" type="button"><span class="sr-text">Menu Toggle</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Utility nav dropdown -->
+<div class="site-header-main-nav-dropdown -utility-menu">
+
+    <a href="#" class="js-utility-nav-close icon-close"><span class="sr-text">Close Menu</span></a>
+    <div class="site-header-main-nav-dropdown-slidebar"></div>
+    <ul class="site-header-utility-nav-top">
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/for-education-partners/registered-programs" target="">For Registered Programs</a>
+            </li>
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/for-education-partners/continuing-education-providers" target="">For CE Providers</a>
+            </li>
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/for-employers" target="">For Employers</a>
+            </li>
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/for-media" target="">For Media</a>
+            </li>
+    </ul>
+    <ul class="site-header-utility-nav-bottom">
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/news" target="">News</a>
+            </li>
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/events" target="">Events</a>
+            </li>
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/verify-a-cfp-professional" target="">Verify a CFP&#174; Professional</a>
+            </li>
+            <li class="site-header-main-nav-dropdown-item">
+                <a class="site-header-main-nav-dropdown-link" href="/contact" target="">Contact</a>
+            </li>
+    </ul>
+        <div class="site-header-utility-nav-donate-button-item">
+            <a href="https://login.cfp.net/eweb/dynamicpage.aspx?webcode=OnlineDonation&formcode=CFPDonate" class="button site-header-utility-nav-donate-button">
+                <img src="/assets/images/heart.svg" aria-hidden="true" alt="">
+                Donate
+            </a>
+        </div>
+</div>
+<script type="module" src="/assets/react/search/index.js?v=aCljhUrs"></script>
+
+        <main id="main-content" aria-label="Page Content">
+            
+
+
+
+
+
+<div class="hero-image -video">
+
+    
+
+
+<div class="breadcrumbs">
+    <div class="breadcrumbs-inner">
+        <ul class="breadcrumbs-container">
+            <li class="breadcrumbs-wrapper -home"><a href="/" class="breadcrumbs-link"><span class="sr-text">Home</span></a></li>
+
+            <li class="breadcrumbs-wrapper -has-children">
+                <a href="/certification-process" class="breadcrumbs-link -has-children">
+                    The Certification Process
+                </a>
+                
+                    <ul class="breadcrumbs-dropdown">
+                            <li class="breadcrumbs-child"><a href="/certification-process/education-requirement" class="breadcrumbs-child-link">Education</a></li>
+                            <li class="breadcrumbs-child"><a href="/certification-process/exam-requirement" class="breadcrumbs-child-link">Exam</a></li>
+                            <li class="breadcrumbs-child"><a href="/certification-process/experience-requirement" class="breadcrumbs-child-link">Experience</a></li>
+                            <li class="breadcrumbs-child"><a href="/certification-process/ethics-requirement" class="breadcrumbs-child-link">Ethics</a></li>
+                            <li class="breadcrumbs-child"><a href="/certification-process/final-steps" class="breadcrumbs-child-link">Final Steps</a></li>
+                            <li class="breadcrumbs-child"><a href="/certification-process/practice-analysis-study" class="breadcrumbs-child-link">Practice Analysis Study</a></li>
+                            <li class="breadcrumbs-child"><a href="/certification-process/track-your-progress" class="breadcrumbs-child-link">Track Your Progress</a></li>
+                    </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+    <div class="hero-image-bg">
+        <div class="hero-image-bg-left">
+            <div class="hero-image-bg-left-slant">
+            </div>
+        </div>
+            <div class="hero-image-bg-right"></div>
+    </div>
+
+    <div class="hero-image-inner">
+            <div class="video-embed js-video-embed">
+                <div class="video-embed-inner">
+                    <div class="video-container">
+                        <div class="video-poster" style="background-image: url('/-/media/images/cfp-board/photos/full-width/2-people/1041147124.jpg?cx=0&cy=0&cw=1100&ch=600&hash=FAFD4EA35107EB415C7509BEFFBBDDCF');">
+                            <button type="button" class="youtube-button" aria-label="Play video"></button>
+                        </div>
+
+                            <iframe id="video-iframe" width="560" height="315" data-src="https://www.youtube.com/embed/viCf2Sf5GBc?si=yVIn6F5RkmPcaiFd"
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                                    title="YouTube Video Embed" class="video-iframe optanon-category-C0004">
+                            </iframe>
+                    </div>
+                </div>
+            </div>
+
+        <div class="hero-image-left">
+            <div class="hero-image-left-content">
+                        <div class="hero-image-left-eyebrow eyebrow">Get Certified</div>
+
+                <h1 class="h1 -gray-dark hero-image-left-title">
+The Certification Process                </h1>
+
+                        <div class="-gray-dark hero-image-left-text wysiwyg-content" style="">
+<p>Competence. Credibility. Confidence. The path to CFP&reg; certification is a rigorous but rewarding process that gives you the knowledge and skills you need for a fulfilling career.</p>                        </div>
+
+
+                        <div class="hero-image-links">
+
+                                <a href="/account-registration" target="" class="-cta-link">
+                                    <span>Get Started with a Free Account</span>
+                                </a>
+                        </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            
+
+
+
+<div class="text-rotator" >
+    <div class="text-rotator-inner">
+        <div class="text-rotator-intro">
+            <h2 class="h2 text-rotator-title -center">CERTIFIED FINANCIAL PLANNER&#174; Certification Requirements&#160;</h2>
+            <p class="-center">The "4 E's" of CFP® certification equip you to provide comprehensive advice to your clients, so you can help them achieve confidence today and a more secure tomorrow.</p>
+        </div>
+
+        <div class="text-rotator-container">
+            <div class="text-rotator-tab-container">
+
+
+                    <div class="text-rotator-tab">
+                        <a href="#" class="h2 text-rotator-tab-link" data-index="0">
+                            <span>Education</span>
+                        </a>
+                        <div class="text-rotator-accordion -tabbed">
+                                <div class="text-rotator-accordion-text">
+                                    <h5 class="h5 text-rotator-accordion-title">The Education Requirement</h5>
+                                    <div class="text-rotator-accordion-text-content">
+                                        <p>The two-part education requirement includes both (1) completing coursework on financial planning through a CFP Board Registered Program, and (2) holding a bachelor's degree or higher (in any discipline) from an accredited college or university. <br/><br/>You must complete the coursework before you can take the CFP® exam.  You have 5 years from the date you pass the CFP® exam to complete the bachelor's degree requirement.</p>
+                                    </div>
+                                    <div class="text-rotator-accordion-links">
+<a class="-cta-link" href="/certification-process/education-requirement">                                            <span>More on the Education Requirement</span>
+</a>                                        <a class="-cta-link" href="/certification-process/education-requirement/certification-coursework-requirement/find-an-education-program">                                            <span>Find a CFP Board Registered Program</span>
+</a>                                    </div>
+                                </div>
+
+                            <div class="text-rotator-accordion-sidebar">
+                                <h5 class="h5 -white text-rotator-accordion-sidebar-title">Quick Facts</h5>
+                                <div class="text-rotator-accordion-sidebar-blocks">
+                                        <p class="-white wysiwyg-content">Average time to complete the coursework requirement: 12-18 months.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-rotator-tab">
+                        <a href="#" class="h2 text-rotator-tab-link" data-index="1">
+                            <span>Exam</span>
+                        </a>
+                        <div class="text-rotator-accordion -tabbed">
+                                <div class="text-rotator-accordion-text">
+                                    <h5 class="h5 text-rotator-accordion-title">The Exam Requirement</h5>
+                                    <div class="text-rotator-accordion-text-content">
+                                        <p>Passing the CFP® exam demonstrates that you've attained the knowledge and competency necessary to provide comprehensive personal financial planning advice. The CFP® exam is a 170-question, multiple-choice test that consists of two 3-hour sessions over one day. The exam includes stand-alone and scenario-based questions, as well as questions associated with case studies. </p>
+                                    </div>
+                                    <div class="text-rotator-accordion-links">
+<a class="-cta-link" href="/certification-process/exam-requirement">                                            <span>More on the Exam Requirement</span>
+</a>                                        <a class="-cta-link" href="/certification-process/exam-requirement/cfp-exam-preparation/exam-prep-resources">                                            <span>Find Exam Resources</span>
+</a>                                    </div>
+                                </div>
+
+                            <div class="text-rotator-accordion-sidebar">
+                                <h5 class="h5 -white text-rotator-accordion-sidebar-title">Quick Facts</h5>
+                                <div class="text-rotator-accordion-sidebar-blocks">
+                                        <p class="-white wysiwyg-content">You must complete the certification coursework through a CFP Board Registered Program before you can sit for the exam.  In 2019, the pass rate for first-time exam takers was approximately 67%.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-rotator-tab">
+                        <a href="#" class="h2 text-rotator-tab-link" data-index="2">
+                            <span>Experience</span>
+                        </a>
+                        <div class="text-rotator-accordion -tabbed">
+                                <div class="text-rotator-accordion-text">
+                                    <h5 class="h5 text-rotator-accordion-title">The Experience Requirement</h5>
+                                    <div class="text-rotator-accordion-text-content">
+                                        <p>The experience requirement prepares you to provide personal financial planning to the public without supervision. You can fulfill the experience requirement either before or after you take the exam. You need to complete either 6,000 hours of professional experience related to the financial planning process, or 4,000 hours of apprenticeship experience that meets additional requirements.</p>
+                                    </div>
+                                    <div class="text-rotator-accordion-links">
+<a class="-cta-link" href="/certification-process/experience-requirement">                                            <span>More on the Experience Requirement</span>
+</a>                                        <a class="-cta-link" href="/certification-process/experience-requirement/report-your-experience">                                            <span>Report Your Experience</span>
+</a>                                    </div>
+                                </div>
+
+                            <div class="text-rotator-accordion-sidebar">
+                                <h5 class="h5 -white text-rotator-accordion-sidebar-title">Quick Facts</h5>
+                                <div class="text-rotator-accordion-sidebar-blocks">
+                                        <p class="-white wysiwyg-content">Experience must be completed within 10 years before and 5 years after successful completion of the CFP® exam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-rotator-tab">
+                        <a href="#" class="h2 text-rotator-tab-link" data-index="3">
+                            <span>Ethics</span>
+                        </a>
+                        <div class="text-rotator-accordion -tabbed">
+                                <div class="text-rotator-accordion-text">
+                                    <h5 class="h5 text-rotator-accordion-title">The Ethics Requirement</h5>
+                                    <div class="text-rotator-accordion-text-content">
+                                        <p>The ethics requirement is the final step on your path to CFP® certification. It indicates you've agreed to adhere to high ethical and professional standards for the practice of financial planning, and to act as a fiduciary when providing financial advice to your client, always putting their best interests first.</p>
+                                    </div>
+                                    <div class="text-rotator-accordion-links">
+<a class="-cta-link" href="/certification-process/ethics-requirement">                                            <span>More on the Ethics Requirement</span>
+</a>                                        <a class="-cta-link" href="/ethics/our-commitment">                                            <span>More on Our Commitment</span>
+</a>                                    </div>
+                                </div>
+
+                            <div class="text-rotator-accordion-sidebar">
+                                <h5 class="h5 -white text-rotator-accordion-sidebar-title">Quick Facts</h5>
+                                <div class="text-rotator-accordion-sidebar-blocks">
+                                        <p class="-white wysiwyg-content">You'll need to sign the Ethics Declaration, and CFP Board will conduct a background check.</p>
+                                        <p class="-white wysiwyg-content">The <em>Fitness Standards</em> may affect your ability to obtain certification.  For more information on the types of conduct that will disqualify a candidate for CFP&reg; certification, please review the <em><a class="-white" href="/get-certified/certification-process/ethics-requirement/fitness-standards">Fitness Standards</a></em>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="text-rotator-accordion -single">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<article class="choose-your-path">
+    <div class="choose-your-path-inner">
+        <div class="choose-your-path-left">
+            <div class="choose-your-path-content -text">
+                <img src="/Assets/images/icons/steps-icon.svg" alt="" class="choose-your-path-icon" loading="lazy" width="74" height="68">
+                <h2 class="h2">The Steps to Certification</h2>
+                <div class="-gray-dark wysiwyg-content">
+                    <p>Here are some of the most common paths to CFP&reg; certification. The certification process offers flexibility so you can make it work for you &mdash; many steps can be done at any time in your process.</p>
+<p class="\"><strong>Typical length:</strong> 18-24 months</p>
+<p><a href="https://www.cfp.net/account/my-account" class="button">Track Your Progress</a></p>
+<p><a href="/-/media/files/cfp-board/cfp-certification/education/cfpr-certification-faqs-flyer.pdf" class="-rte-cta-link" target="_blank">View CFP&reg; Certification FAQs</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="choose-your-path-right">
+            <div class="choose-your-path-content">
+                <ul class="choose-your-path-ul">
+                        <li class="choose-your-path-li">
+                            <h4 class="title">Complete a CFP Board Registered Education Program</h4>
+                                <p>Complete the certification coursework through a CFP Board Registered Program before you take the CFP® exam.</p>
+                        </li>
+                        <li class="choose-your-path-li">
+                            <h4 class="title">Pass the CFP&#174; Exam</h4>
+                                <p>Sit for the CFP® exam after completing your coursework.</p>
+                        </li>
+                        <li class="choose-your-path-li">
+                            <h4 class="title">Hold or Earn a 4-year Degree</h4>
+                                <p>Earn your degree in any discipline up to 5 years after passing the CFP® exam.</p>
+                        </li>
+                        <li class="choose-your-path-li">
+                            <h4 class="title">Demonstrate Financial Planning Experience</h4>
+                                <p>Work in a qualifying financial planning job before or after you take the CFP® exam.</p>
+                        </li>
+                        <li class="choose-your-path-li">
+                            <h4 class="title">Meet the Ethics Requirements</h4>
+                                <p>For your final step, you must sign an ethics declaration and undergo a background check.</p>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How To Schema",
+  "description": "The path to CFP® certification is a rigorous but rewarding process that gives you the knowledge and skills you need for a fulfilling career.",
+  "totalTime": "P18M",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Complete a CFP Board Reg Edu Program",
+      "text": "Complete the certification coursework through a CFP Board Registered Program before you take the CFP® exam. Average time to complete: 12-18 months.",
+      "url": "/certification-process/education-requirement"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Demonstrate Financial Planning Experience",
+      "text": "Complete either 6,000 hours of professional experience related to the financial planning process, or 4,000 hours of apprenticeship experience.",
+      "url": "/certification-process/experience-requirement"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Hold or Earn a 4-Year Degree",
+      "text": "Earn your degree in any discipline up to 5 years after passing the CFP® exam.",
+      "url": "/certification-process/education-requirement/bachelors-degree-requirement"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "How to Become a CFP",
+      "text": "The path to CFP® certification is a rigorous but rewarding process that gives you the knowledge and skills you need for a fulfilling career.",
+      "url": "/certification-process"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Meet the Ethics Requirements",
+      "text": "Sign the Ethics Declaration and undergo a background check conducted by CFP Board.",
+      "url": "/certification-process/ethics-requirement"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Pass the CFP Exam",
+      "text": "Sit for the CFP® exam after completing your coursework. The exam is a 170-question, multiple-choice test consisting of two 3-hour sessions over one day.",
+      "url": "/certification-process/exam-requirement"
+    }
+  ]
+}
+</script>
+<div class="columns-four-up"  data-background="gray">
+    <div class="columns-four-up-inner">
+        <div class="columns-four-up-header">
+            <h2 class="columns-four-up-title h2 -center">We&#39;re Here To Help</h2>
+            <div class="columns-four-up-description -center wysiwyg-content">
+                <p>CFP Board offers the guidance, tools and support you need to successfully become a CFP&reg; professional, no matter what stage of the process you're in. <a rel="noopener noreferrer" href="https://www.youtube.com/watch?v=laPhniAT0CI" target="_blank">Watch this video to see how CFP Board can support you</a>.</p>
+<p><a href="/candidate-tools-and-resources" class="button">Go to All Tools and Resources</a></p>
+            </div>
+            
+        </div>
+        <div class="columns-four-up-wrapper">
+                    <div class="columns-four-up-item js-card-link">
+<a class="columns-four-up-item-heading" href="/certification-process/exam-requirement/cfp-exam-preparation/exam-prep-resources"> <h3 class='h5'>Exam Preparation</h3></a>                            <div class="columns-four-up-item-description wysiwyg-content">
+                                <p>Learn about what's on the CFP® exam, take practice exams with real questions from past exams and get tips on how to be ready for exam day.</p>
+                            </div>
+                    </div>
+                    <div class="columns-four-up-item js-card-link">
+<a class="columns-four-up-item-heading" href="/candidate-tools-and-resources/apply-for-a-scholarship"> <h3 class='h5'>Financial Aid</h3></a>                            <div class="columns-four-up-item-description wysiwyg-content">
+                                <p>To diversify the financial planning workforce, the CFP Board Center for Financial Planning offers scholarships for coursework and for the CFP® exam.</p>
+                            </div>
+                    </div>
+                    <div class="columns-four-up-item js-card-link">
+<a class="columns-four-up-item-heading" href="https://candidateforum.cfp.net/home"> <h3 class='h5'>Connect with Candidates</h3></a>                            <div class="columns-four-up-item-description wysiwyg-content">
+                                <p>Use our candidate forum to connect with others who are at various stages on their path to CFP® certification. Whether you have a question, need advice or are just looking for support, we welcome you to join in.</p>
+                            </div>
+                    </div>
+                    <div class="columns-four-up-item js-card-link">
+<a class="columns-four-up-item-heading" href="/candidate-tools-and-resources/find-a-mentor"> <h3 class='h5'>Guidance and Mentorship</h3></a>                            <div class="columns-four-up-item-description wysiwyg-content">
+                                <p>Find a CFP® professional mentor who can offer real-world advice, help you stay motivated and guide you on your path to CFP® certification.</p>
+                            </div>
+                    </div>
+        </div>
+    </div>
+</div>
+
+<div class="promo-full" >
+    <div class="promo-full-bg">
+        <div class="promo-full-bg-left"><div class="promo-full-bg-left-slant"></div></div>
+        <div class="promo-full-bg-right" style="background-image: url('/-/media/images/cfp-board/photos/full-width/individuals/1126799699.jpg?cx=0&amp;cy=0&amp;cw=1200&amp;ch=720&amp;hash=F44BFE8B95274B118E85CA59F1BFFE9F');"><span class="sr-text"></span></div>
+    </div>
+    <div class="promo-full-inner">
+        <div class="promo-full-content">
+            <div class="promo-full-content-inner">
+                <h2 class="h2 -white promo-full-title">Start Your Journey to CFP&#174; Certification</h2>
+                <div class="promo-full-wysiwyg wysiwyg-content"><ul>
+    <li>Track your progress with the CFP<sup>®</sup> Certification Tracker </li>
+    <li>Post your resume at the Career Center</li>
+    <li>Connect with a mentor who can guide you </li>
+    <li>Register and prepare for the exam </li>
+    <li>Find career and financial support </li>
+    <li>Connect with other candidates at our online forum</li>
+</ul></div>
+
+                <div class="promo-full-button-container">
+                    <a class="button" href="/account-registration">Create a Free Account</a>
+                </div>
+            </div>
+        </div>
+        <div class="promo-full-mobile-image" style="background-image: url('/-/media/images/cfp-board/photos/full-width/individuals/1126799699.jpg?cx=0&amp;cy=0&amp;cw=1200&amp;ch=720&amp;hash=F44BFE8B95274B118E85CA59F1BFFE9F');"></div>
+    </div>
+</div>
+
+        </main>
+        
+<!-- components/site-footer/site-footer.twig -->
+<footer class="site-footer">
+    <div class="site-footer-inner">
+        <div class="site-footer-main">
+            <div class="site-footer-main-inner">
+                <div class="site-footer-logo">
+                    <a href="/"><img src="/assets/images/logo-cfp-board-black-white.svg" width="241" height="48" loading="lazy" alt="CFP Board Logo" class="site-header-logo-img"></a>
+                </div>
+
+                <div class="site-footer-links">
+                    <div class="site-footer-nav-block-1">
+                        <ul class="site-footer-nav">
+                                    <li class="site-footer-nav-item">
+                                        <a href="/about-cfp-board" target="" class="h6 site-footer-nav-link">About CFP Board</a>
+                                    </li>
+                                    <li class="site-footer-nav-item">
+                                        <a href="/for-cfp-pros/career-center" target="" class="h6 site-footer-nav-link">Career Center</a>
+                                    </li>
+                                    <li class="site-footer-nav-item">
+                                        <a href="/cfp-board-center-for-financial-planning" target="" class="h6 site-footer-nav-link">CFP Board Center for Financial Planning</a>
+                                    </li>
+                                    <li class="site-footer-nav-item">
+                                        <a href="/account/my-account" class="h6 site-footer-nav-link icon-user">My Account / Create an Account</a>
+                                    </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="site-footer-nav-block-2">
+                        <ul class="site-footer-nav">
+                                    <li class="site-footer-nav-item">
+                                        <a href="https://cfpprostore.com/" target="_blank" class="h6 site-footer-nav-link">CFP Pro Store</a>
+                                    </li>
+                                    <li class="site-footer-nav-item">
+                                        <a href="/for-media" target="" class="h6 site-footer-nav-link">Media</a>
+                                    </li>
+                                    <li class="site-footer-nav-item">
+                                        <a href="/contact" target="" class="h6 site-footer-nav-link">Contact</a>
+                                    </li>
+                                    <li class="site-footer-nav-item">
+                                        <a href="https://www.letsmakeaplan.org/" target="_blank" class="h6 site-footer-nav-link">LetsMakeAPlan.org</a>
+                                    </li>
+                        </ul>
+                    </div>
+
+                    <div class="site-footer-nav-block site-footer-info">
+                        <address>
+                            <p class="site-footer-info-text">1425 K Street NW #800</p>
+                            <p class="site-footer-info-text">Washington, DC 20005</p>
+                            <p class="site-footer-info-text">
+                                <a href="/cdn-cgi/l/email-protection#cda0aca4a18daeabbdafa2acbfa9e3a2bfaa"><span class="__cf_email__" data-cfemail="fb969a9297bb989d8b99949a899fd594899c">[email&#160;protected]</span></a>
+                            </p>
+                        </address>
+                        <address>
+                            <p class="site-footer-info-text">
+                                <a href="tel:800-487-1497">800-487-1497 (Toll-Free)</a>
+                            </p>
+                            <p class="site-footer-info-text">
+                                <a href="tel:202-379-2200">202-379-2200</a>
+                            </p>
+                            <p class="site-footer-info-text">
+                                <a href="tel:202-379-2299">fax: 202-379-2299</a></a>
+                            </p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="site-footer-bottom-inner">
+                <div class="site-footer-bottom-links">
+                    <div class="site-footer-bottom-copyright">
+                        © 2026 CFP Board. All Rights Reserved. 
+                    </div>
+
+                    <div class="site-footer-legal-nav">
+                                <a href="/privacy-policy" target="" class="site-footer-legal-nav-link">Privacy Policy</a>
+                                <a href="/terms-of-use" target="" class="site-footer-legal-nav-link">Terms of Use</a>
+                                <a href="/accessibility" target="" class="site-footer-legal-nav-link">Accessibility</a>
+                                <a href="/sitemap" target="" class="site-footer-legal-nav-link">Sitemap</a>
+                                <!-- OneTrust cookies settings button start -->
+                                <span id="ot-sdk-btn" class="ot-sdk-show-settings">Do Not Sell or Share My Data</span>
+                                <!-- OneTrust cookies settings button end -->
+                    </div>
+                </div>
+                <div class="site-footer-social">
+                    <ul class="site-footer-social-links">
+                                <li><a href="https://www.facebook.com/cfpboard/" target="_blank" class="site-footer-social-link icon-facebook"><span class="sr-text">Facebook</span></a></li>
+
+                                <li><a href="https://twitter.com/cfpboard" target="_blank" class="site-footer-social-link icon-x"><span class="sr-text"></span></a></li>
+
+                                <li><a href="https://www.linkedin.com/company/cfpboard" target="_blank" class="site-footer-social-link icon-linkedin"><span class="sr-text">Linked In</span></a></li>
+
+                                <li><a href="https://www.youtube.com/user/CFPBoardOfStandards" target="_blank" class="site-footer-social-link icon-youtube"><span class="sr-text">YouTube</span></a></li>
+
+                                <li><a href="https://www.instagram.com/cfpboard" target="_blank" class="site-footer-social-link icon-instagram"><span class="sr-text"></span></a></li>
+
+                                <li><a href="https://www.tiktok.com/@cfpboard" target="_blank" class="site-footer-social-link icon-tiktok"><span class="sr-text"></span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        <div class="js-blocker"></div>
+    </div>
+</div>
+
+<!--components / login - form / login - form.twig-->
+<div id="modal-login-form"  class="modals mfp-hide login-form-modal">
+    <div class="login-form-inner">
+        <div class="login-form-container">
+    <img src="/assets/images/logo-cfp-board-black-white.svg" alt="CFP Board Logo" class="login-form-logo" width="241" height="48" loading="lazy">
+
+    <form action="/api/feature/account/authenticate" method="post" class="login-form-element" data-logging-in="false">
+        <div class="field-group">
+            <div class="field-container">
+                <label class="-small" for="login-email">Email Address</label>
+                <input type="email" name="login-email" id="login-email" required>
+            </div>
+        </div>
+
+        <div class="field-group login-form-password">
+            <div class="field-container">
+                <label class="-small" for="login-password">Password</label>
+                <input type="password" name="login-password" id="login-password" required>
+                <a href="https://login.cfp.net/eWeb/DynamicPage.aspx?WebCode=forgotpassword&amp;Site=Private" class="login-form-forgot -gray-line -small">Forgot Password?</a>
+            </div>
+        </div>
+
+        <div class="field-group login-form-submit">
+            <div class="field-container">
+                <input class="login-form-submit-button" type="submit" value="Login">
+                <button class="login-form-submit-loading button -loading">Logging In</button>
+            </div>
+
+            <div class="field-container checks" role="group" aria-label="Remember Username">
+                <div class="check">
+                    <input type="checkbox" name="remember-password" id="remember-password" checked="true">
+                    <label class="-small" for="remember-password">Remember me on this computer</label>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" name="hiddenreturnUrl" />
+    </form>
+    <div class="field-container credentials -hide-on-load">
+        <div class="error-message">Username or password is invalid.  Please check and try again.</div>
+    </div>
+    <div class="field-container exception -hide-on-load">
+        <div class="error-message">Exception encountered logging in.  Please check and try again.</div>
+    </div>
+    <hr>
+    <p class="login-form-container-p"><strong>Don't have an account?</strong>  <a href="/account-registration" class="-gray-line login-form-register">Create One Now</a></p>
+</div>
+
+    </div>
+</div>
+
+
+    
+    
+<!-- components/create-account-link/create-account-link.twig -->
+<div class="create-account-link-wrapper">
+    <a href="/account-registration" class="create-account-link button">
+        Create an Account
+    </a>
+</div>
+
+    <!-- /#wrapper -->
+    <!-- Vendor JavaScript -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Sitecore form scripts -->
+    
+
+    <!-- Custom JavaScript -->
+    <script src="/assets/js/bundle.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/modalhelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/cookiehelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/storagehelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/urlhelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/userhelper.js?v=aCljhUrs"></script>
+
+    <input type="hidden" id="eweb-keep-alive-url" value="https://login.cfp.net/eWeb/KeepAlive.ashx" />
+    <input type="hidden" value="wm1sdwk0009XJ" name="machine" />
+
+      <script>
+        const PROD_CANONICAL_HOSTNAME = 'www.cfp.net';
+        // PROD sitekey, else NONPROD sitekey
+        const TURNSTILE_SITE_ID = window.location.hostname === PROD_CANONICAL_HOSTNAME ? '0x4AAAAAABJkQ_TUqTY-FVES' : '0x4AAAAAABnFJmc1bCoQtnWe';
+
+        const SITECORE_FORMS_SELECTOR = 'form[id^="fxb"]';
+        
+        // If the invisible widget must be rendered (rare cases in which interaction is required), do so in a compact fashion to ensure mobile friendliness
+        const TURNSTILE_NORMAL_SIZE_MIN_PX  = 429;
+        const TURNSTILE_SIZE_SETTING     = window.innerWidth >= TURNSTILE_NORMAL_SIZE_MIN_PX ? 'normal' : 'compact';
+        
+        const ERROR_MESSAGE              = 'Please complete the verification and submit the form again. If the issue persists, contact us via phone or email.';
+        const ERROR_CONTAINER_CLASS      = 'turnstile-error-message';
+        const ERROR_CONTAINER_STYLE      = 'display:block;max-width:150px;';
+        const WIDGET_VISIBLE_STYLE       = 'display:block;margin-bottom:25px;';
+
+        const ERROR_MESSAGE_CONTAINER_STYLE = 'display:block;max-width:150px;';
+        const ERROR_MESSAGE_CONTAINER_SELECTOR_CLASS = 'turnstile-error-message';
+        
+        const VISIBLE_ERROR_CONTAINER_CLASSES = 'error-message field-validation-error ' + ERROR_MESSAGE_CONTAINER_SELECTOR_CLASS;
+        const VISIBLE_WIDGET_CONTAINER_STYLES = 'display:block;margin-bottom:25px;';
+
+        window.bindAjaxHandlers = function(sitecoreForm) {
+          // Inject form failure handling for when siteverify fails. Append rather than replace in order not to blow away existing functionality.
+          const existingFailureHandler = (sitecoreForm.getAttribute("data-ajax-failure") || "").trim();
+          let needsSemicolon = existingFailureHandler && !existingFailureHandler.endsWith(";");
+          let separator = existingFailureHandler ? " " : "";
+          let newHandler = "window.handleFormFailure(arguments, this);";
+          sitecoreForm.setAttribute(
+            "data-ajax-failure",
+            (needsSemicolon ? existingFailureHandler + ";" : existingFailureHandler) + separator + newHandler
+          );
+        };
+
+        window.attachGlobalSitecoreFormObserver = function() {
+          const observer = new MutationObserver(mutations => {
+            mutations.forEach(mutation => {
+              mutation.removedNodes.forEach(node => {
+                if (
+                  node.nodeType === 1 &&
+                  node.tagName === 'FORM' &&
+                  node.id &&
+                  node.id.startsWith('fxb_')
+                ) {
+                  console.debug('A Sitecore form was removed:', node);
+                }
+              });
+        
+              // Added forms
+              mutation.addedNodes.forEach(node => {
+                // If the new node *is* a form
+                if (
+                  node.nodeType === 1 &&
+                  node.tagName === 'FORM' &&
+                  node.id &&
+                  node.id.startsWith('fxb_')
+                ) {
+                  console.debug('A new Sitecore form was added:', node);
+                  window.injectTurnstileWidget(node);
+                  window.bindAjaxHandlers(node);
+                }
+                // If the node *contains* new forms
+                else if (node.nodeType === 1) {
+                  const forms = node.querySelectorAll('form[id^="fxb_"]');
+                  forms.forEach(form => {
+                    console.log('A new Sitecore form was found inside a container:', form);
+                    window.injectTurnstileWidget(form);
+                    window.bindAjaxHandlers(form);
+                  });
+                }
+              });
+            });
+          });
+        
+          // Observe entire <body> for scenarios in which forms may be added or replaced for any reason
+          observer.observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        };
+
+        window.injectTurnstileWidget = function(sitecoreFormElement) {
+          const submitButton = sitecoreFormElement.querySelector('input[type="submit"], button[type="submit"]');
+          if (!submitButton){
+            // This can happen when the form is successfully submitted and is now displaying a thank you page
+            console.warn('Unable to locate submit button -- will not inject turnstile widget');
+            return;
+          }
+
+          const existingTurnstileWidget = sitecoreFormElement.querySelector('.turnstile-widget');
+          if (existingTurnstileWidget){
+            console.warn('Turnstile elements already present -- will not inject');
+            return;
+          }
+
+          const turnstileDiv = document.createElement("div");
+          turnstileDiv.className = sitecoreFormElement.id + "-turnstile turnstile-widget";
+          turnstileDiv.setAttribute("style", "display:none;");
+
+          submitButton.parentNode.insertBefore(turnstileDiv, submitButton);
+
+          let cdata = sitecoreFormElement.id
+            // Replace any characters that are NOT letters, numbers, underscores, or hyphens with a hyphen
+            .replace(/[^a-zA-Z0-9_-]/g, '-')
+            // Limit to 255 chars to comply with the Turnstile cData limit
+            .substring(0, 255);
+
+          const widgetId = turnstile.render(turnstileDiv, {
+            // https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#configurations
+            sitekey: TURNSTILE_SITE_ID,
+            callback: (token) => window.turnstileCallback(token),
+            'error-callback': (errorCode) => window.turnstileErrorCallback(turnstileDiv, errorCode),
+            'before-interactive-callback': () => window.turnstileBeforeInteractiveCallback(turnstileDiv),
+            'size': TURNSTILE_SIZE_SETTING, 
+            'cData': cdata,
+            'theme': 'light'
+          });
+
+          if (widgetId == undefined) {
+            // TODO: handle unsuccessful invocation of turnstile render
+            console.error("Failed to render turnstile on", { turnstileDiv } )
+          } 
+          else {
+            console.debug("Rendered turnstile", { widgetId });
+          }
+        };
+
+        window.turnstileCallback = function(token) {
+          console.debug('Turnstile challenge returned the token / value:', token);
+        };
+
+        window.displayTurnstileErrorMessage = function(sitecoreFormElement) {
+          const submitButton = sitecoreFormElement.querySelector('input[type="submit"], button[type="submit"]');
+          if (!submitButton){
+            // Can occur when displaying a second form page that does not have a submit button
+            // There may be a scenario in which this needs to be handled instead of returning early
+            console.debug("No submit button found -- will not display widget");
+            return;
+          }
+
+          const existingErrorMessage = sitecoreFormElement.querySelector('.' + ERROR_MESSAGE_CONTAINER_SELECTOR_CLASS);
+          if (!existingErrorMessage) {
+            const errorDiv = document.createElement("div");
+
+            errorDiv.className = VISIBLE_ERROR_CONTAINER_CLASSES;
+            errorDiv.innerText = ERROR_MESSAGE;
+            errorDiv.style = ERROR_MESSAGE_CONTAINER_STYLE;
+
+            submitButton.parentNode.insertBefore(errorDiv, submitButton);
+          }
+        };
+
+        // Invoked when there is an error (e.g. network error or the challenge failed).
+        // If an error callback returns with a non-falsy result, Turnstile will assume that the error callback handled the error accordingly.
+        window.turnstileErrorCallback = function(turnstileWidgetElement, errorCode) {
+          console.warn('An error occurred while fetching Turnstile token.', { turnstileWidgetElement }, { errorCode });
+
+          // Display the widget so that the user can see the error
+          turnstileWidgetElement.style = VISIBLE_WIDGET_CONTAINER_STYLES;
+
+          // Display error message calling for user to perform the verification
+          window.displayTurnstileErrorMessage(turnstileWidgetElement.closest('form')) 
+          
+          return false;
+        };
+
+        window.turnstileBeforeInteractiveCallback = function(turnstileWidgetElement) {
+          // Display the widget so that the user can interact with it
+          turnstileWidgetElement.style = VISIBLE_WIDGET_CONTAINER_STYLES;
+        };
+
+        
+
+        // Called when the form receives a non 200 response after submitting
+        window.handleFormFailure = function (args, contextElement) {
+          console.debug("Form submission failed", {args}, {contextElement});
+
+          const errorCode = args?.status;
+          const responseText = args?.responseText;
+
+          // TODO: consider case when status is something other than 400; particularly 500 errors
+          if (args?.status == "400" || args?.status == 400){
+            console.debug('Error response code', errorCode);
+            console.debug('Response text', responseText);
+          }
+
+          const form = contextElement?.closest?.('form');
+          if (!form) {
+            console.warn("Could not locate form from context element.");
+            return;
+          }
+
+          const submitButton = form.querySelector('input[type="submit"], button[type="submit"]');
+          if (!submitButton){
+            // Can occur when displaying a second form page that does not have a submit button
+            // There may be a scenario in which this needs to be handled instead of returning early
+            console.debug("No submit button found -- will not display widget");
+            return;
+          }
+
+          // Display the interactive widget either via window.injectTurnstileWidget(form); or by displaying the hidden managed widget
+          const widget = form.querySelector('.turnstile-widget');
+          if (widget){
+            turnstile.reset(widget);
+            widget.style = VISIBLE_WIDGET_CONTAINER_STYLES;
+          } else {
+            // TODO: handle
+            console.error('No turnstile present in the form');
+          }
+
+          window.displayTurnstileErrorMessage(form);
+
+          // Re-enable the button and change text back to "Submit"
+          submitButton.disabled = false;
+
+          if (submitButton.tagName === 'INPUT') {
+            submitButton.value = "Submit";
+          } else {
+            submitButton.innerText = "Submit";
+          }
+
+        };
+
+
+        window.onTurnstileLoaded = function () {
+
+          // Ensure the DOM is ready in case Turnstile loads fast on cache hit
+          const domReady = () =>
+            document.readyState === 'loading'
+              ? new Promise(res => document.addEventListener('DOMContentLoaded', res, { once: true }))
+              : Promise.resolve();
+        
+          domReady().then(() => {
+        
+            // Initial pass over any forms already on the page
+            document.querySelectorAll(SITECORE_FORMS_SELECTOR).forEach(form => {
+              window.injectTurnstileWidget(form);
+              window.bindAjaxHandlers(form);
+            });
+        
+            // Start observing for dynamically added / replaced forms
+            if (typeof window.attachGlobalSitecoreFormObserver === 'function') {
+              window.attachGlobalSitecoreFormObserver();
+            }
+          });
+        };
+        
+      </script>
+    <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a57fdf3d298cb842',t:'MTc5NDI1OTMzNw=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a57fdf3d298cb842',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

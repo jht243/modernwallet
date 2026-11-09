@@ -1,0 +1,1169 @@
+{
+ "schemaVersion": 1,
+ "jobId": "competitor-9031ce2b2c89",
+ "author": "competitor-orchestrator",
+ "date": "2026-11-09",
+ "source": "competitor-monitor-auto 2026-11-09: ten competitor items (Bankrate, NerdWallet) from frozen intake 9031ce2b2c89; scheduled routine authorization recorded in readiness.md",
+ "interpretedBrief": "Competitor publishers released or updated ten personal-finance pages: nine NerdWallet financial-advisor explainers (fiduciary, financial plan, CFP, counselor, coach, questions to ask, robo-advisor, what an advisor does, finding a Black advisor) and one Bankrate VA-loan story. The site covers hiring, worth-it and title comparisons but has no explainers for what a fiduciary is, what an advisor does, the question list, robo-advisors, the CFP or how to make a plan. This run builds six original primary-source explainers for US readers; competitor text is topic evidence only. The VA story and the identity-directory item get independent skip decisions.",
+ "chartPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89.md",
+ "actions": [
+  {
+   "id": "A1",
+   "problem": "Lens 1 direct intent (competitor monitor: NerdWallet fiduciary). Head 'what is a fiduciary / what is a fiduciary financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/what-is-a-ctfa/ - reader wants the ABA trust-and-fiduciary credential, not the duty itself; no prior commits create /guides/what-is-a-fiduciary.",
+   "solution": "Create /guides/what-is-a-fiduciary targeting 'what is a fiduciary' [article, answer-first, primary-source reported]",
+   "bucket": "create new content",
+   "target": "/guides/what-is-a-fiduciary",
+   "format": "article",
+   "best_medium": "text",
+   "resolved_deliverable": "text",
+   "serp_verdict": "unread",
+   "serp_evidence": "SERP not read: DataForSEO unavailable (no credentials); no PAA",
+   "reader_question": "What is a fiduciary, and does my financial advisor have to be one? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 12/22 on-topic in the first 22 of 60 question-sweep completions: what is a fiduciary financial advisor / duty / responsibility / why is a fiduciary important / who needs a fiduciary; 8/22 off-topic legal-instrument senses: deed, bond, tax return, check, report, California, appointed, VA]",
+   "answer": "A fiduciary is a professional bound to act in your best interest: SEC-registered investment advisers owe a fiduciary duty of care and loyalty, broker-dealers owe the separate Regulation Best Interest standard, and a CFP professional must act as a fiduciary when giving financial advice, so ask which standard applies to the person you hire and read their Form CRS. (definition with the who-is-bound verdict)",
+   "answer_placement": "section 1 \"What a Fiduciary Is and Who Has to Be One\""
+  },
+  {
+   "id": "A2",
+   "problem": "Lens 1 direct intent (competitor monitor: NerdWallet what-does-a-financial-advisor-do). Head 'what does a financial advisor do / financial counselor / financial coach': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/how-to-choose-a-financial-advisor/ - reader is picking and vetting an advisor, not learning the job; no prior commits create /guides/what-does-a-financial-advisor-do.",
+   "solution": "Create /guides/what-does-a-financial-advisor-do targeting 'what does a financial advisor do' [article, answer-first, primary-source reported]",
+   "bucket": "create new content",
+   "target": "/guides/what-does-a-financial-advisor-do",
+   "format": "article",
+   "best_medium": "text",
+   "resolved_deliverable": "text",
+   "serp_verdict": "unread",
+   "serp_evidence": "SERP not read: DataForSEO unavailable (no credentials); no PAA",
+   "reader_question": "What does a financial advisor do for you, and how do credit counselors and coaches differ? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 9 of the 20 completions in the advisor sweep are on-topic job-description questions (what does a financial advisor do for you / for me / day to day, what should / will a financial advisor do for me) and the others are employer-specific, UK, Australia or Reddit variants or need-an-advisor questions answered by the worth-it page; counselor and coach sweeps: what is financial counselor, what is accredited financial counselor, what does a financial counsellor do, is financial counseling free, what is financial coaching, how much do financial coaches charge]",
+   "answer": "A financial advisor typically gives ongoing advice on buying, selling and holding investments, monitors them against your goals and may add asset allocation or financial planning services (Investor.gov); nonprofit credit counselors help with budgets, debts and debt management plans (CFPB), and no fetched primary source defines what a financial coach does, so ask what a specific coach provides and verify the person. (list of services with the boundary)",
+   "answer_placement": "section 1 \"What a Financial Advisor Does for You\""
+  },
+  {
+   "id": "A3",
+   "problem": "Lens 1 direct intent (competitor monitor: NerdWallet questions-ask-financial-advisor). Head 'questions to ask a financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/how-to-choose-a-financial-advisor/ - reader is making the hire decision; Step 5 is a short question list inside a five-step guide; no prior commits create /guides/questions-to-ask-a-financial-advisor.",
+   "solution": "Create /guides/questions-to-ask-a-financial-advisor targeting 'questions to ask a financial advisor' [article, answer-first, primary-source reported]",
+   "bucket": "create new content",
+   "target": "/guides/questions-to-ask-a-financial-advisor",
+   "format": "article",
+   "best_medium": "text",
+   "resolved_deliverable": "text",
+   "serp_verdict": "unread",
+   "serp_evidence": "SERP not read: DataForSEO unavailable (no credentials); no PAA",
+   "reader_question": "What questions should I ask a financial advisor before hiring them? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 18 of the 23 completions are on-topic (before hiring, first meeting, retirement, investing, interview, potential/prospective/new advisor); 5 are locale or brand variants (Australia, UK x2, Canada, Dave Ramsey)]",
+   "answer": "Ask the advisor how you will pay, whether they are an investment adviser or broker and what legal duty they owe you, what fees come out of $10,000 you invest, how they choose investments, what their qualifications mean, how they make money and what conflicts that creates, and whether they have disciplinary history; the SEC requires firms to print these on Form CRS. (list)",
+   "answer_placement": "section 1 \"The Questions To Ask a Financial Advisor\""
+  },
+  {
+   "id": "A4",
+   "problem": "Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-robo-advisor). Head 'what is a robo advisor / robo advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /roundup/best-robo-advisors/ - reader wants ranked picks with fees; no definition-first explainer; no prior commits create /guides/what-is-a-robo-advisor.",
+   "solution": "Create /guides/what-is-a-robo-advisor targeting 'what is a robo advisor' [article, answer-first, primary-source reported]",
+   "bucket": "create new content",
+   "target": "/guides/what-is-a-robo-advisor",
+   "format": "article",
+   "best_medium": "text",
+   "resolved_deliverable": "text",
+   "serp_verdict": "unread",
+   "serp_evidence": "SERP not read: DataForSEO unavailable (no credentials); no PAA",
+   "reader_question": "What is a robo-advisor, and is one right for me? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 8/20 on-topic question-sweep completions: what is a robo advisor, are robo advisors good, is robo advisor worth it, why robo advisors are bad, which robo advisor is best; 12/20 are advisor-generic (what financial advisor do/fees) or brand-specific (Revolut, Vanguard, Schwab, SoFi, Fidelity)]",
+   "answer": "A robo-advisor is an automated digital advisory program that builds and manages a portfolio from your online questionnaire, often for lower fees and minimums than a traditional adviser; it fits you if you are comfortable with limited human contact and online disclosures, and it does not fit you if you want a person to talk to in a downturn or have a situation a questionnaire cannot capture. (verdict with its boundary)",
+   "answer_placement": "section 1 \"What a Robo-Advisor Is and Who It Fits\""
+  },
+  {
+   "id": "A5",
+   "problem": "Lens 1 direct intent (competitor monitor: NerdWallet certified-financial-planner). Head 'what is a certified financial planner / what is a cfp': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/what-is-a-cfa/ - reader wants the CFA charter; contains a CFA vs CFP section; no prior commits create /guides/what-is-a-cfp.",
+   "solution": "Create /guides/what-is-a-cfp targeting 'what is a certified financial planner' [article, answer-first, primary-source reported]",
+   "bucket": "create new content",
+   "target": "/guides/what-is-a-cfp",
+   "format": "article",
+   "best_medium": "text",
+   "resolved_deliverable": "text",
+   "serp_verdict": "unread",
+   "serp_evidence": "SERP not read: DataForSEO unavailable (no credentials); no PAA",
+   "reader_question": "What is a Certified Financial Planner (CFP), and what does it take to earn the credential? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 15/22 on-topic question-sweep completions: what is / what do certified financial planners do / how become / how do they get paid / are they worth the money; 7/22 off-topic or non-US: how many in India, in the US count, salary and course variants]",
+   "answer": "A CFP professional is a financial planner certified by the CFP Board after coursework, a bachelor degree (which may be finished up to five years after the exam), a 170-question exam, 6,000 hours of experience (or 4,000 apprenticeship hours) and an ethics declaration, and who must act as a fiduciary when giving financial advice. (definition with the requirements)",
+   "answer_placement": "section 1 \"What a CFP Professional Is and What It Takes to Earn It\""
+  },
+  {
+   "id": "A6",
+   "problem": "Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-financial-plan). Head 'how to make a financial plan': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/financial-planning-calculator/ - reader wants to use calculators to compute numbers, not the planning sequence; no prior commits create /guides/how-to-make-a-financial-plan.",
+   "solution": "Create /guides/how-to-make-a-financial-plan targeting 'how to make a financial plan' [article, answer-first, primary-source reported]",
+   "bucket": "create new content",
+   "target": "/guides/how-to-make-a-financial-plan",
+   "format": "article",
+   "best_medium": "text",
+   "resolved_deliverable": "text",
+   "serp_verdict": "unread",
+   "serp_evidence": "SERP not read: DataForSEO unavailable (no credentials); no PAA",
+   "reader_question": "How do I make a financial plan? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 8/22 on-topic question-sweep completions: how do you make a financial plan, what should a financial plan include, what are the 5 components of a financial plan, why make a financial plan; 14/22 off-topic: financial planner salary or career, business-plan senses, FP&A]",
+   "answer": "Make a financial plan by following the CFP Board planning sequence yourself: list your income, spending, savings, debts and insurance, set specific goals, test your current course against them, choose actions, carry them out and review on a schedule; the CFPB calls an emergency fund one of the first steps to take, and if you carry high-interest debt weigh it alongside that reserve because the sources read do not rank the two. (mechanism: sequence of steps with the first one to build)",
+   "answer_placement": "section 1 \"How To Make a Financial Plan Step by Step\""
+  }
+ ],
+ "newPageBriefs": [
+  {
+   "actionId": "A1",
+   "target": "/guides/what-is-a-fiduciary",
+   "identity": {
+    "title": "A Fiduciary Must Act in Your Best Interest. Who Has To Be One?",
+    "h1": "What Is a Fiduciary?",
+    "metaDescription": "A fiduciary must act in your best interest. See which advisers, brokers and CFP professionals owe that duty, and how to check before you hire.",
+    "pageType": "explainer (floor 1,200 words)",
+    "format": "article",
+    "medium": "text"
+   },
+   "readerAndAnswer": {
+    "question": "What is a fiduciary, and does my financial advisor have to be one? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 12/22 on-topic in the first 22 of 60 question-sweep completions: what is a fiduciary financial advisor / duty / responsibility / why is a fiduciary important / who needs a fiduciary; 8/22 off-topic legal-instrument senses: deed, bond, tax return, check, report, California, appointed, VA]",
+    "answer": "A fiduciary is a professional bound to act in your best interest: SEC-registered investment advisers owe a fiduciary duty of care and loyalty, broker-dealers owe the separate Regulation Best Interest standard, and a CFP professional must act as a fiduciary when giving financial advice, so ask which standard applies to the person you hire and read their Form CRS. (definition with the who-is-bound verdict)",
+    "placement": "section 1 \"What a Fiduciary Is and Who Has to Be One\"",
+    "audience": "US readers deciding who to trust with money questions; includes first-time readers and current clients of an advisor.",
+    "searchIntent": "informational with a deciding question"
+   },
+   "keywordEvidence": "No measured volume: SEMRUSH and DataForSEO unavailable 2026-11-09 (no keys); KEYWORD_PROVIDERS=semrush,dataforseo pin retained. Head phrase 'what is a fiduciary / what is a fiduciary financial advisor' carries a Google Autocomplete estimate band (volumes.json, source: estimate, NOT measured). Question sweep saved to autocomplete.what-is-a-fiduciary.csv. Seeds: what is a fiduciary; what is a fiduciary financial advisor; what is a fiduciary duty; what is a fiduciary responsibility; why is a fiduciary important; who needs a fiduciary; what is a true fiduciary. Stop reason: free sweep complete; no paid provider usable. Competitor signal: NerdWallet published/updated fiduciary on 2026-11-09 (intake).",
+   "serpAndQuestions": "SERP not read (DataForSEO unavailable; serp.json verdict unread for all heads). PAA unavailable. Question evidence is the autocomplete question sweep cited in the reader question. Opportunity unknown; FAQ spec = on-topic sweep questions verbatim.",
+   "whyNewPage": "coverage.txt lists /guides/what-is-a-ctfa (a credential page whose reader wants who awards the CTFA) and /guides/how-to-choose-a-financial-advisor (hiring checklist, fiduciary is Step 1 of five). Neither answers \"what is a fiduciary and does mine have to be one\"; no route or commit exists (git log -S \"what-is-a-fiduciary\" empty). Independent duplicate review decision recorded in chart-review.json.",
+   "outline": [
+    "1 What a Fiduciary Is and Who Has to Be One: best-interest duty in plain words; SEC statement (care + loyalty) for investment advisers; Regulation Best Interest for broker-dealers; CFP professionals must act as fiduciaries (CFP Board Code); direct answer in sentences 1-2",
+    "2 Adviser, Broker or Dual Registrant: Which Standard Applies to You: SEC investor.gov adviser vs broker description; dual registrants; Form CRS states the standard of conduct; small table of who owes what",
+    "3 What a Fiduciary Duty Does Not Remove: conflicts of interest remain (investor.gov: the way advisers make money creates conflicts) so ask about them; titles and initials do not prove status (Investor.gov Tricky Titles)",
+    "4 How to Check a Financial Professional Before You Hire Them: registration search on Investor.gov (IAPD/BrokerCheck), Form CRS, ask in writing",
+    "5 Who a Fiduciary Is Not For and What Would Change the Advice: a reader with a simple index-fund plan may not need ongoing advice; rule changes at the SEC would change the standards",
+    "FAQ (verbatim from autocomplete sweep): Is a financial advisor a fiduciary? Is a fiduciary the same as a financial planner? Why is a fiduciary important? Who needs a fiduciary?"
+   ],
+   "contributionAndEvidence": "Basis reported. Sources fetched 2026-11-09: SEC-clayton, INV-advisers, CFP-code, CFP-process, INV-crs, INV-working (evidence/what-is-a-fiduciary/sources.md; captures under reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/). Contribution: the primary-source answer and its conditions in one place, with who it does not fit and what would change it; no modeling or test. Packet: evidence/what-is-a-fiduciary/evidence.json.",
+   "tablesToolsVisuals": "Prose with one small GFM table (who owes which standard / who does which job). No calculator or visual adds value for a definitional/procedural answer; existing calculators are linked instead.",
+   "testingAndReview": "TESTED excluded: financial advice topics are outside _experience.md section G and no executed tests exist. Ordinary presentation; no \"we tested\" or modeling attribution; attribution is third-person to the named regulator or credential body. Byline via the existing template; no professional-review claim; YMYL not-advice disclaimer at the bottom only.",
+   "takeaway": "A fiduciary must act in your best interest; an SEC-registered investment adviser owes that as a duty of care and loyalty, a broker owes the separate Regulation Best Interest standard, and a CFP professional commits to it by code. Applies to anyone paying for investment advice; conflicts of interest remain, so read the firm relationship summary and ask. Evidence basis: reported (SEC, CFP Board, Investor.gov). Changes if the person is registered only as a broker or holds neither registration. Next step: search the person on Investor.gov and ask in writing which standard applies.",
+   "inboundLinks": {
+    "required": 2,
+    "placements": [
+     {
+      "source": "/guides/how-to-choose-a-financial-advisor/",
+      "target": "/guides/what-is-a-fiduciary",
+      "section": "Step 1: Understand fiduciary vs suitability",
+      "anchor": "fiduciary",
+      "purpose": "the step names the duty in two sentences; the new page explains who owes which standard",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-inbound-what-is-a-fiduciary.txt",
+       "sha256": "65e0d72f248d7fc648f9b450eee6c141d740d670a2313d4ee082ffeecb9f74f7"
+      }
+     },
+     {
+      "source": "/compare/financial-advisor-vs-financial-planner/",
+      "target": "/guides/what-is-a-fiduciary",
+      "section": "Which one should you actually hire (fiduciary sentence)",
+      "anchor": "fiduciary",
+      "purpose": "the sentence tells readers to confirm fiduciary status; the new page explains what that means",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-inbound-what-is-a-fiduciary.txt",
+       "sha256": "65e0d72f248d7fc648f9b450eee6c141d740d670a2313d4ee082ffeecb9f74f7"
+      }
+     }
+    ]
+   },
+   "outboundLinks": {
+    "placements": [
+     {
+      "source": "/guides/what-is-a-fiduciary",
+      "target": "/guides/how-to-choose-a-financial-advisor/",
+      "section": "How to Check a Financial Professional Before You Hire Them",
+      "anchor": "guide to choosing a financial advisor",
+      "purpose": "full hiring steps",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-what-is-a-fiduciary.txt",
+       "sha256": "3029204268e9a9665b9b01a8e0095c5e21a61eec9f82e74790bbfd4f79d95c33"
+      }
+     },
+     {
+      "source": "/guides/what-is-a-fiduciary",
+      "target": "/guides/what-is-a-ctfa/",
+      "section": "Adviser, Broker or Dual Registrant",
+      "anchor": "Certified Trust and Fiduciary Advisor",
+      "purpose": "credential that uses the word fiduciary",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-what-is-a-fiduciary.txt",
+       "sha256": "3029204268e9a9665b9b01a8e0095c5e21a61eec9f82e74790bbfd4f79d95c33"
+      }
+     },
+     {
+      "source": "/guides/what-is-a-fiduciary",
+      "target": "/guides/what-is-a-cfp/",
+      "section": "What a Fiduciary Is and Who Has to Be One",
+      "anchor": "CFP professional",
+      "purpose": "sibling new page on the credential",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-what-is-a-fiduciary.txt",
+       "sha256": "3029204268e9a9665b9b01a8e0095c5e21a61eec9f82e74790bbfd4f79d95c33"
+      }
+     }
+    ]
+   },
+   "technicalAndMeasurement": "New entry in src/data/guides.ts (existing Guide template; JSON-LD, canonical, sitemap derive from it), published 2026-11-09; link-only edits to existing pages without date bump; IndexNow after exact live verification. growth.json: baseline unavailable (not zero), primary metric GSC clicks, no uplift claimed.",
+   "evidenceFiles": [
+    {
+     "path": "evidence/what-is-a-fiduciary/sources.md",
+     "sha256": "cc2b822bd51f5c0e49f900f7368c1a0aecbcac801892c94b9e3bb7e59b56d8ea"
+    },
+    {
+     "path": "evidence/what-is-a-fiduciary/evidence.json",
+     "sha256": "a74687065369c7bb604fb7e11c20c29a4d3bc3ab40791591a17cf5cef3b5048a"
+    },
+    {
+     "path": "evidence/what-is-a-fiduciary/cases.json",
+     "sha256": "778289348d58c9f1aabdf5aa07b74e7c55ed9aea0cf07e21b64e340829350d61"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/coverage.txt",
+     "sha256": "6bcd8ea48436503d860cd1a9e2b9fe57b771bddd7319b415e25882835c843aa0"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/volumes.json",
+     "sha256": "3258fec98b0d3f9dc862fb9b5991d0efb07c524194a57c7bb3106481b3826655"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/serp.json",
+     "sha256": "cab89a7987575f6accdc42e9ee22592c1f150768c10dc44078bbe3a179d3cbe1"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.what-is-a-fiduciary.csv",
+     "sha256": "960057133e8e892428b0bc5615950766ba992391f17994a9368f60b00c4d5eb6"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/git-dedup.txt",
+     "sha256": "dbb5085bb516c5e9839a26e83686898481bb105ef912e001b7d58466b2064a33"
+    }
+   ]
+  },
+  {
+   "actionId": "A2",
+   "target": "/guides/what-does-a-financial-advisor-do",
+   "identity": {
+    "title": "What a Financial Advisor Does, and How Counselors and Coaches Differ",
+    "h1": "What Does a Financial Advisor Do?",
+    "metaDescription": "A financial advisor gives investment advice, builds a plan and monitors it. See what each service costs you, and how counselors and coaches differ.",
+    "pageType": "explainer (floor 1,200 words)",
+    "format": "article",
+    "medium": "text"
+   },
+   "readerAndAnswer": {
+    "question": "What does a financial advisor do for you, and how do credit counselors and coaches differ? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 9 of the 20 completions in the advisor sweep are on-topic job-description questions (what does a financial advisor do for you / for me / day to day, what should / will a financial advisor do for me) and the others are employer-specific, UK, Australia or Reddit variants or need-an-advisor questions answered by the worth-it page; counselor and coach sweeps: what is financial counselor, what is accredited financial counselor, what does a financial counsellor do, is financial counseling free, what is financial coaching, how much do financial coaches charge]",
+    "answer": "A financial advisor typically gives ongoing advice on buying, selling and holding investments, monitors them against your goals and may add asset allocation or financial planning services (Investor.gov); nonprofit credit counselors help with budgets, debts and debt management plans (CFPB), and no fetched primary source defines what a financial coach does, so ask what a specific coach provides and verify the person. (list of services with the boundary)",
+    "placement": "section 1 \"What a Financial Advisor Does for You\"",
+    "audience": "US readers deciding who to trust with money questions; includes first-time readers and current clients of an advisor.",
+    "searchIntent": "informational with a deciding question"
+   },
+   "keywordEvidence": "No measured volume: SEMRUSH and DataForSEO unavailable 2026-11-09 (no keys); KEYWORD_PROVIDERS=semrush,dataforseo pin retained. Head phrase 'what does a financial advisor do / financial counselor / financial coach' carries a Google Autocomplete estimate band (volumes.json, source: estimate, NOT measured). Question sweep saved to autocomplete.what-does-a-financial-advisor-do.csv. Seeds: what does a financial advisor do for you; what does a financial advisor do day to day; what should a financial advisor do for you; what is financial counselor; what does a financial counsellor do; is financial counseling free; what is financial coaching. Stop reason: free sweep complete; no paid provider usable. Competitor signal: NerdWallet published/updated what-does-a-financial-advisor-do, financial-counselor, financial-coach on 2026-11-09 (intake).",
+   "serpAndQuestions": "SERP not read (DataForSEO unavailable; serp.json verdict unread for all heads). PAA unavailable. Question evidence is the autocomplete question sweep cited in the reader question. Opportunity unknown; FAQ spec = on-topic sweep questions verbatim.",
+   "whyNewPage": "coverage.txt: three existing advisor pages answer hiring (how-to-choose), value (worth-it) and title comparison (vs-financial-planner); none states what services the advisor performs for the client, and none covers credit counselors. The NerdWallet counselor and coach items are folded here because the reader goal is the same job-description question; a stand-alone coach or counselor page would need AFCPE and coach-practice sources that returned 403 today. No route or commit exists. Independent duplicate review decision recorded in chart-review.json.",
+   "outline": [
+    "1 What a Financial Advisor Does for You: investment advice (buy, sell, hold), monitoring, asset allocation, planning services (Investor.gov), fee typically based on assets; sentence 1 answers the question",
+    "2 What You Pay and How the Advisor Gets Paid: asset-based fee, other servicing costs, conflicts (Investor.gov, Form CRS fee and compensation headings); no invented fee percentages",
+    "3 Advisor, Credit Counselor and Coach: Which Job Fits: Investor.gov Tricky Titles (initials differ and do not prove qualification); CFPB and NFCC description of nonprofit credit counseling (budgets, debts, debt management plans); coach: FINRA credential database lists several designations using the word coach and states FINRA does not endorse any, and no fetched primary source defines a coach job, so the page says to ask what a specific coach provides; no claims about coach pricing, licensing or regulation, and no claim that counselors or coaches are regulated or unregulated",
+    "4 Need More Than a Description?: one sentence and a link to the worth-it page for the cost-and-value decision; no need verdict on this page",
+    "5 Who an Advisor Is Not For and What Would Change the Advice",
+    "FAQ: What does a financial advisor do for you? What should a financial advisor do for me? Is financial counseling free? (CFPB: counseling can be free or low-cost; fees allowed) Do I need a financial advisor? answered in one sentence with a link to the worth-it page"
+   ],
+   "contributionAndEvidence": "Basis reported. Sources fetched 2026-11-09: INV-advisers, INV-working, INV-crs, FINRA-designations, CFPB-credit-counseling, NFCC (evidence/what-does-a-financial-advisor-do/sources.md; captures under reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/). Contribution: the primary-source answer and its conditions in one place, with who it does not fit and what would change it; no modeling or test. Packet: evidence/what-does-a-financial-advisor-do/evidence.json.",
+   "tablesToolsVisuals": "Prose with one small GFM table (who owes which standard / who does which job). No calculator or visual adds value for a definitional/procedural answer; existing calculators are linked instead.",
+   "testingAndReview": "TESTED excluded: financial advice topics are outside _experience.md section G and no executed tests exist. Ordinary presentation; no \"we tested\" or modeling attribution; attribution is third-person to the named regulator or credential body. Byline via the existing template; no professional-review claim; YMYL not-advice disclaimer at the bottom only.",
+   "takeaway": "A financial advisor typically gives and monitors investment advice for a fee usually tied to your assets, and some add planning; nonprofit credit counselors help with budgets and debts, and for a coach you ask what exactly they provide. Applies to readers deciding who to talk to about money. Evidence basis: reported (Investor.gov, CFPB, FINRA). Changes if your need is debt help (a nonprofit credit counselor). Next step: write down the job you need and ask each candidate which services they provide.",
+   "inboundLinks": {
+    "required": 2,
+    "placements": [
+     {
+      "source": "/guides/financial-advisor-worth-it/",
+      "target": "/guides/what-does-a-financial-advisor-do",
+      "section": "Step 1: What a financial advisor actually costs",
+      "anchor": "what a financial advisor does",
+      "purpose": "the section prices the service; the new page lists what the service is",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-inbound-what-does-a-financial-advisor-do.txt",
+       "sha256": "18947e4dcc50ca3787b3decf7cbd0fc17b1f5298e490ce9fb296d604347bf269"
+      }
+     },
+     {
+      "source": "/compare/financial-advisor-vs-financial-planner/",
+      "target": "/guides/what-does-a-financial-advisor-do",
+      "section": "What a financial advisor typically focuses on",
+      "anchor": "financial advisor",
+      "purpose": "the section summarizes focus; the new page details services",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-inbound-what-does-a-financial-advisor-do.txt",
+       "sha256": "18947e4dcc50ca3787b3decf7cbd0fc17b1f5298e490ce9fb296d604347bf269"
+      }
+     }
+    ]
+   },
+   "outboundLinks": {
+    "placements": [
+     {
+      "source": "/guides/what-does-a-financial-advisor-do",
+      "target": "/guides/financial-advisor-worth-it/",
+      "section": "Need More Than a Description?",
+      "anchor": "is a financial advisor worth it",
+      "purpose": "break-even math",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-what-does-a-financial-advisor-do.txt",
+       "sha256": "1cd4c962cead96a2b736c816e3dc373338074dd996b22c956f9ae206768a2c67"
+      }
+     },
+     {
+      "source": "/guides/what-does-a-financial-advisor-do",
+      "target": "/guides/how-to-choose-a-financial-advisor/",
+      "section": "Need More Than a Description?",
+      "anchor": "how to choose a financial advisor",
+      "purpose": "verification steps",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-what-does-a-financial-advisor-do.txt",
+       "sha256": "1cd4c962cead96a2b736c816e3dc373338074dd996b22c956f9ae206768a2c67"
+      }
+     },
+     {
+      "source": "/guides/what-does-a-financial-advisor-do",
+      "target": "/compare/financial-advisor-vs-financial-planner/",
+      "section": "Advisor, Credit Counselor and Coach",
+      "anchor": "financial advisor vs financial planner",
+      "purpose": "title comparison",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-what-does-a-financial-advisor-do.txt",
+       "sha256": "1cd4c962cead96a2b736c816e3dc373338074dd996b22c956f9ae206768a2c67"
+      }
+     }
+    ]
+   },
+   "technicalAndMeasurement": "New entry in src/data/guides.ts (existing Guide template; JSON-LD, canonical, sitemap derive from it), published 2026-11-09; link-only edits to existing pages without date bump; IndexNow after exact live verification. growth.json: baseline unavailable (not zero), primary metric GSC clicks, no uplift claimed.",
+   "evidenceFiles": [
+    {
+     "path": "evidence/what-does-a-financial-advisor-do/sources.md",
+     "sha256": "70545dab1f34bdfcc6a46733f4909b812b0c099d7951a5480d00b9325cf424bd"
+    },
+    {
+     "path": "evidence/what-does-a-financial-advisor-do/evidence.json",
+     "sha256": "25b1196b5bf8e48a7e0495a04c913458e0a01286b2d68a9dfee1f5bee0ca6bdb"
+    },
+    {
+     "path": "evidence/what-does-a-financial-advisor-do/cases.json",
+     "sha256": "1e7dca34929ee1bbd7e2298ef194077616b8bc1a3a73d64064510fb6ff356d2c"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/coverage.txt",
+     "sha256": "6bcd8ea48436503d860cd1a9e2b9fe57b771bddd7319b415e25882835c843aa0"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/volumes.json",
+     "sha256": "3258fec98b0d3f9dc862fb9b5991d0efb07c524194a57c7bb3106481b3826655"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/serp.json",
+     "sha256": "cab89a7987575f6accdc42e9ee22592c1f150768c10dc44078bbe3a179d3cbe1"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.what-does-a-financial-advisor-do.csv",
+     "sha256": "ecf901e7bff356399263f3152955edb45d8258f246e67df2e8f6345e8476dce8"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/git-dedup.txt",
+     "sha256": "dbb5085bb516c5e9839a26e83686898481bb105ef912e001b7d58466b2064a33"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.financial-counselor.csv",
+     "sha256": "570dede979aacdf6ce62c91cbba2c97d3159cd2c8d77f2c7bddd46990a0c77e6"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.financial-coach.csv",
+     "sha256": "7fff1602cf3beabd88726586a21bcae716e467d009353c19cfdf8ffb66868b35"
+    }
+   ]
+  },
+  {
+   "actionId": "A3",
+   "target": "/guides/questions-to-ask-a-financial-advisor",
+   "identity": {
+    "title": "Questions To Ask a Financial Advisor Before You Hire Them",
+    "h1": "Questions To Ask a Financial Advisor",
+    "metaDescription": "Ask these questions before hiring a financial advisor: how they are paid, their duty to you, fees on $10,000 and any disciplinary history.",
+    "pageType": "explainer (floor 1,200 words)",
+    "format": "article",
+    "medium": "text"
+   },
+   "readerAndAnswer": {
+    "question": "What questions should I ask a financial advisor before hiring them? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 18 of the 23 completions are on-topic (before hiring, first meeting, retirement, investing, interview, potential/prospective/new advisor); 5 are locale or brand variants (Australia, UK x2, Canada, Dave Ramsey)]",
+    "answer": "Ask the advisor how you will pay, whether they are an investment adviser or broker and what legal duty they owe you, what fees come out of $10,000 you invest, how they choose investments, what their qualifications mean, how they make money and what conflicts that creates, and whether they have disciplinary history; the SEC requires firms to print these on Form CRS. (list)",
+    "placement": "section 1 \"The Questions To Ask a Financial Advisor\"",
+    "audience": "US readers deciding who to trust with money questions; includes first-time readers and current clients of an advisor.",
+    "searchIntent": "informational with a deciding question"
+   },
+   "keywordEvidence": "No measured volume: SEMRUSH and DataForSEO unavailable 2026-11-09 (no keys); KEYWORD_PROVIDERS=semrush,dataforseo pin retained. Head phrase 'questions to ask a financial advisor' carries a Google Autocomplete estimate band (volumes.json, source: estimate, NOT measured). Question sweep saved to autocomplete.questions-to-ask-a-financial-advisor.csv. Seeds: questions to ask a financial advisor; questions to ask a financial advisor before hiring; questions to ask a financial advisor first meeting; questions to ask a financial advisor about retirement; questions to ask a potential financial advisor. Stop reason: free sweep complete; no paid provider usable. Competitor signal: NerdWallet published/updated questions-ask-financial-advisor on 2026-11-09 (intake).",
+   "serpAndQuestions": "SERP not read (DataForSEO unavailable; serp.json verdict unread for all heads). PAA unavailable. Question evidence is the autocomplete question sweep cited in the reader question. Opportunity unknown; FAQ spec = on-topic sweep questions verbatim.",
+   "whyNewPage": "coverage.txt lists /guides/how-to-choose-a-financial-advisor whose Step 5 holds a short question list; the reader of the new page wants the full interview script with the SEC conversation starters and what a good answer sounds like. Distinct reader goal (script vs decision framework); the guide keeps the five steps and links here. The NerdWallet find-a-Black-financial-advisor item is dispositioned in candidateDispositions as not a new page. Independent duplicate review decision recorded in chart-review.json.",
+   "outline": [
+    "1 The Questions To Ask a Financial Advisor: numbered list of 8-10 questions from the SEC Form CRS conversation starters (advisory vs brokerage service, how will you choose investments, experience and qualifications, fees on $10,000, legal obligations, conflicts, how professionals make money, disciplinary history), each with what a clear answer sounds like",
+    "2 Check the Answers Against Public Records: Form CRS, Investor.gov search for registration and disciplinary history (INV-working), CFP Board verification",
+    "3 Red Flags and What To Do: only sourced items: not registered (Investor.gov: very risky), will not provide a Form CRS or Form ADV, disciplinary history on the Investor.gov or BrokerCheck record; any other signal is labelled editorial judgment without regulator attribution; next action for each",
+    "4 Extra Questions for Retirement and Special Situations: only items supported by sources (Social Security timing is out of scope); keep to documented items or omit",
+    "5 Who These Questions Are Not For and What Would Change the List",
+    "FAQ: What questions should I ask a financial advisor before hiring them? What should I ask in a first meeting? What to ask about retirement? (answers drawn from the sourced list only)"
+   ],
+   "contributionAndEvidence": "Basis reported. Sources fetched 2026-11-09: CRS-sample, INV-crs, INV-working, INV-advisers, CFP-code (evidence/questions-to-ask-a-financial-advisor/sources.md; captures under reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/). Contribution: the primary-source answer and its conditions in one place, with who it does not fit and what would change it; no modeling or test. Packet: evidence/questions-to-ask-a-financial-advisor/evidence.json.",
+   "tablesToolsVisuals": "Prose with an ordered list where the answer is a list or sequence. No calculator or visual adds value for a definitional/procedural answer; existing calculators are linked instead.",
+   "testingAndReview": "TESTED excluded: financial advice topics are outside _experience.md section G and no executed tests exist. Ordinary presentation; no \"we tested\" or modeling attribution; attribution is third-person to the named regulator or credential body. Byline via the existing template; no professional-review claim; YMYL not-advice disclaimer at the bottom only.",
+   "takeaway": "Ask every candidate the same short list from the SEC relationship summary, then compare their written answers with their Form CRS and public record; walk away from anyone who is not registered; treat a missing Form CRS or a disciplinary record you cannot get explained as reasons to look elsewhere. Applies to anyone hiring an advisor or broker. Evidence basis: reported (SEC Form CRS as printed by a registered firm, Investor.gov). Changes if you need only a one-time answer. Next step: copy the list, send it before the first meeting and check the registration on Investor.gov.",
+   "inboundLinks": {
+    "required": 2,
+    "placements": [
+     {
+      "source": "/guides/how-to-choose-a-financial-advisor/",
+      "target": "/guides/questions-to-ask-a-financial-advisor",
+      "section": "Step 5: Questions to ask on the first call",
+      "anchor": "questions to ask a financial advisor",
+      "purpose": "the step has a short list; the new page is the full interview script",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-inbound-questions-to-ask-a-financial-advisor.txt",
+       "sha256": "26ce511649a8b6db8f059abd478c0905a2cd12fd9bcf09e4a23ff9408fbda16d"
+      }
+     },
+     {
+      "source": "/guides/financial-advisor-worth-it/",
+      "target": "/guides/questions-to-ask-a-financial-advisor",
+      "section": "Once you decide an advisor is worth it, our guide to choosing... (closing sentence)",
+      "anchor": "questions to ask",
+      "purpose": "next action after deciding to hire",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-inbound-questions-to-ask-a-financial-advisor.txt",
+       "sha256": "26ce511649a8b6db8f059abd478c0905a2cd12fd9bcf09e4a23ff9408fbda16d"
+      }
+     }
+    ]
+   },
+   "outboundLinks": {
+    "placements": [
+     {
+      "source": "/guides/questions-to-ask-a-financial-advisor",
+      "target": "/guides/how-to-choose-a-financial-advisor/",
+      "section": "Check the Answers Against Public Records",
+      "anchor": "guide to choosing a financial advisor",
+      "purpose": "overall hiring framework",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-questions-to-ask-a-financial-advisor.txt",
+       "sha256": "c1e7c1fc81d247cde1c569b1016957fa3fccd43dd2d28609e61399714c7ec1b7"
+      }
+     },
+     {
+      "source": "/guides/questions-to-ask-a-financial-advisor",
+      "target": "/guides/what-is-a-fiduciary/",
+      "section": "The Questions To Ask a Financial Advisor",
+      "anchor": "fiduciary",
+      "purpose": "explains the duty question",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-questions-to-ask-a-financial-advisor.txt",
+       "sha256": "c1e7c1fc81d247cde1c569b1016957fa3fccd43dd2d28609e61399714c7ec1b7"
+      }
+     },
+     {
+      "source": "/guides/questions-to-ask-a-financial-advisor",
+      "target": "/guides/financial-advisor-worth-it/",
+      "section": "Who These Questions Are Not For",
+      "anchor": "is a financial advisor worth it",
+      "purpose": "decide whether to hire at all",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-questions-to-ask-a-financial-advisor.txt",
+       "sha256": "c1e7c1fc81d247cde1c569b1016957fa3fccd43dd2d28609e61399714c7ec1b7"
+      }
+     }
+    ]
+   },
+   "technicalAndMeasurement": "New entry in src/data/guides.ts (existing Guide template; JSON-LD, canonical, sitemap derive from it), published 2026-11-09; link-only edits to existing pages without date bump; IndexNow after exact live verification. growth.json: baseline unavailable (not zero), primary metric GSC clicks, no uplift claimed.",
+   "evidenceFiles": [
+    {
+     "path": "evidence/questions-to-ask-a-financial-advisor/sources.md",
+     "sha256": "a308ab949c3c65d333f0f1252ee1df6efd0c982b31a4aa82700476094436b77b"
+    },
+    {
+     "path": "evidence/questions-to-ask-a-financial-advisor/evidence.json",
+     "sha256": "50252bae56a3483b225cc29acf3d2806e6a965329c7716b0112c49637114ac0b"
+    },
+    {
+     "path": "evidence/questions-to-ask-a-financial-advisor/cases.json",
+     "sha256": "52f9f4d58dbf93ea0afe2aeb733032d537eb88a8f01e5c74db2eb47e04dc0d52"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/coverage.txt",
+     "sha256": "6bcd8ea48436503d860cd1a9e2b9fe57b771bddd7319b415e25882835c843aa0"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/volumes.json",
+     "sha256": "3258fec98b0d3f9dc862fb9b5991d0efb07c524194a57c7bb3106481b3826655"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/serp.json",
+     "sha256": "cab89a7987575f6accdc42e9ee22592c1f150768c10dc44078bbe3a179d3cbe1"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.questions-to-ask-a-financial-advisor.csv",
+     "sha256": "874b0c6d0a40f18553ac0c56186c0ab90015667385fdf46f736743970e2d6aaf"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/git-dedup.txt",
+     "sha256": "dbb5085bb516c5e9839a26e83686898481bb105ef912e001b7d58466b2064a33"
+    }
+   ]
+  },
+  {
+   "actionId": "A4",
+   "target": "/guides/what-is-a-robo-advisor",
+   "identity": {
+    "title": "What a Robo-Advisor Is and When One Fits You",
+    "h1": "What Is a Robo-Advisor?",
+    "metaDescription": "A robo-advisor builds and manages a portfolio from an online questionnaire. See who it fits, what it cannot do and what to check first.",
+    "pageType": "explainer (floor 1,200 words)",
+    "format": "article",
+    "medium": "text"
+   },
+   "readerAndAnswer": {
+    "question": "What is a robo-advisor, and is one right for me? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 8/20 on-topic question-sweep completions: what is a robo advisor, are robo advisors good, is robo advisor worth it, why robo advisors are bad, which robo advisor is best; 12/20 are advisor-generic (what financial advisor do/fees) or brand-specific (Revolut, Vanguard, Schwab, SoFi, Fidelity)]",
+    "answer": "A robo-advisor is an automated digital advisory program that builds and manages a portfolio from your online questionnaire, often for lower fees and minimums than a traditional adviser; it fits you if you are comfortable with limited human contact and online disclosures, and it does not fit you if you want a person to talk to in a downturn or have a situation a questionnaire cannot capture. (verdict with its boundary)",
+    "placement": "section 1 \"What a Robo-Advisor Is and Who It Fits\"",
+    "audience": "US readers deciding who to trust with money questions; includes first-time readers and current clients of an advisor.",
+    "searchIntent": "informational with a deciding question"
+   },
+   "keywordEvidence": "No measured volume: SEMRUSH and DataForSEO unavailable 2026-11-09 (no keys); KEYWORD_PROVIDERS=semrush,dataforseo pin retained. Head phrase 'what is a robo advisor / robo advisor' carries a Google Autocomplete estimate band (volumes.json, source: estimate, NOT measured). Question sweep saved to autocomplete.robo-advisor.csv. Seeds: what is a robo advisor; are robo advisors good; is robo advisor worth it; why robo advisors are bad; which robo advisor is the best. Stop reason: free sweep complete; no paid provider usable. Competitor signal: NerdWallet published/updated what-is-a-robo-advisor on 2026-11-09 (intake).",
+   "serpAndQuestions": "SERP not read (DataForSEO unavailable; serp.json verdict unread for all heads). PAA unavailable. Question evidence is the autocomplete question sweep cited in the reader question. Opportunity unknown; FAQ spec = on-topic sweep questions verbatim.",
+   "whyNewPage": "coverage.txt: /roundup/best-robo-advisors (picks and fee comparison) and /guides/financial-advisor-worth-it (one robo-vs-human section). No page answers \"what is a robo-advisor and is it right for me\" with the SEC decision criteria; the explainer links to the roundup for picks rather than duplicating it. No route or commit exists. Independent duplicate review decision recorded in chart-review.json.",
+   "outline": [
+    "1 What a Robo-Advisor Is and Who It Fits: SEC definition, questionnaire-based portfolio, lower cost and minimums often; fits/does-not-fit boundary in the first two sentences",
+    "2 How a Robo-Advisor Works: questionnaire inputs (goals, horizon, income, risk tolerance), portfolio built and managed, Form ADV Parts 1 and 2 hold services and fees (SEC bulletin)",
+    "3 Human Contact: Hybrid, Limited or None: SEC \"bionic\" hybrid, minimum-balance access to a person, who answers in a downturn",
+    "4 What To Check Before You Open an Account: information the tool considers (debts, accounts, real estate), risk tolerance and rebalancing, update burden on you, regulator registration search (SEC bulletin questions)",
+    "5 Who a Robo-Advisor Is Not For and What Would Change the Answer: complex tax or estate needs, preference for a person; link to worth-it page and the best robo-advisors roundup for picks",
+    "FAQ: Are robo advisors good? Is a robo advisor worth it? Why do some say robo advisors are bad? (answers from SEC bulletin conditions only, no fee figures)"
+   ],
+   "contributionAndEvidence": "Basis reported. Sources fetched 2026-11-09: INV-robo-glossary, INV-robo-bulletin, INV-working, INV-advisers, SEC-clayton (evidence/what-is-a-robo-advisor/sources.md; captures under reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/). Contribution: the primary-source answer and its conditions in one place, with who it does not fit and what would change it; no modeling or test. Packet: evidence/what-is-a-robo-advisor/evidence.json.",
+   "tablesToolsVisuals": "Prose with an ordered list where the answer is a list or sequence. No calculator or visual adds value for a definitional/procedural answer; existing calculators are linked instead.",
+   "testingAndReview": "TESTED excluded: financial advice topics are outside _experience.md section G and no executed tests exist. Ordinary presentation; no \"we tested\" or modeling attribution; attribution is third-person to the named regulator or credential body. Byline via the existing template; no professional-review claim; YMYL not-advice disclaimer at the bottom only.",
+   "takeaway": "A robo-advisor fits an investor who is comfortable with a questionnaire, online disclosures and limited human contact, and does not fit someone who wants a person during market stress or whose finances a questionnaire cannot capture. Evidence basis: reported (SEC Investor.gov glossary and 2017 bulletin). Changes if the provider offers a hybrid human adviser. Next step: read the provider Form ADV Part 2 and compare the best robo-advisors list.",
+   "inboundLinks": {
+    "required": 2,
+    "placements": [
+     {
+      "source": "/roundup/best-robo-advisors/",
+      "target": "/guides/what-is-a-robo-advisor",
+      "section": "Introduction (sentence comparing robo-advisor with human planner)",
+      "anchor": "what a robo-advisor is",
+      "purpose": "the roundup assumes the reader knows the term; the new page defines it and the fit conditions",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-inbound-what-is-a-robo-advisor.txt",
+       "sha256": "7c20bbd62f71ee9fce9d89a837955af629a586ca98aae7e0ad5906e3173cec34"
+      }
+     },
+     {
+      "source": "/guides/financial-advisor-worth-it/",
+      "target": "/guides/what-is-a-robo-advisor",
+      "section": "Robo-advisor vs. financial advisor: a quick side-by-side",
+      "anchor": "robo-advisor",
+      "purpose": "the section compares cost; the new page explains the model and limits",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-inbound-what-is-a-robo-advisor.txt",
+       "sha256": "7c20bbd62f71ee9fce9d89a837955af629a586ca98aae7e0ad5906e3173cec34"
+      }
+     }
+    ]
+   },
+   "outboundLinks": {
+    "placements": [
+     {
+      "source": "/guides/what-is-a-robo-advisor",
+      "target": "/roundup/best-robo-advisors/",
+      "section": "What To Check Before You Open an Account",
+      "anchor": "best robo advisors",
+      "purpose": "ranked picks",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-what-is-a-robo-advisor.txt",
+       "sha256": "ed80cd85b3f404cbbee04a9c272b620120c204522666f64c0c4d8221b010985b"
+      }
+     },
+     {
+      "source": "/guides/what-is-a-robo-advisor",
+      "target": "/guides/financial-advisor-worth-it/",
+      "section": "Who a Robo-Advisor Is Not For",
+      "anchor": "is a financial advisor worth it",
+      "purpose": "human vs robo cost",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-what-is-a-robo-advisor.txt",
+       "sha256": "ed80cd85b3f404cbbee04a9c272b620120c204522666f64c0c4d8221b010985b"
+      }
+     },
+     {
+      "source": "/guides/what-is-a-robo-advisor",
+      "target": "/guides/how-to-choose-a-financial-advisor/",
+      "section": "Human Contact: Hybrid, Limited or None",
+      "anchor": "choosing a financial advisor",
+      "purpose": "verify and compare people",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-what-is-a-robo-advisor.txt",
+       "sha256": "ed80cd85b3f404cbbee04a9c272b620120c204522666f64c0c4d8221b010985b"
+      }
+     }
+    ]
+   },
+   "technicalAndMeasurement": "New entry in src/data/guides.ts (existing Guide template; JSON-LD, canonical, sitemap derive from it), published 2026-11-09; link-only edits to existing pages without date bump; IndexNow after exact live verification. growth.json: baseline unavailable (not zero), primary metric GSC clicks, no uplift claimed.",
+   "evidenceFiles": [
+    {
+     "path": "evidence/what-is-a-robo-advisor/sources.md",
+     "sha256": "5f234790b299f5b541e66f851b2aec188b58f0dbaef17e597b6c23c7c0bb0bfb"
+    },
+    {
+     "path": "evidence/what-is-a-robo-advisor/evidence.json",
+     "sha256": "51fafa6f187424f48e76e3362e1c4b83873d3f7583b787956953fb946c71ce4c"
+    },
+    {
+     "path": "evidence/what-is-a-robo-advisor/cases.json",
+     "sha256": "64508518bf3c6ea969e72a850899fc1cb872b4f85aab93b3b31565b9cde739d4"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/coverage.txt",
+     "sha256": "6bcd8ea48436503d860cd1a9e2b9fe57b771bddd7319b415e25882835c843aa0"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/volumes.json",
+     "sha256": "3258fec98b0d3f9dc862fb9b5991d0efb07c524194a57c7bb3106481b3826655"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/serp.json",
+     "sha256": "cab89a7987575f6accdc42e9ee22592c1f150768c10dc44078bbe3a179d3cbe1"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.robo-advisor.csv",
+     "sha256": "5b52612c3e02b1fd7285aa130afb9fd36b6134de7b13edcaa193208456bd2873"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/git-dedup.txt",
+     "sha256": "dbb5085bb516c5e9839a26e83686898481bb105ef912e001b7d58466b2064a33"
+    }
+   ]
+  },
+  {
+   "actionId": "A5",
+   "target": "/guides/what-is-a-cfp",
+   "identity": {
+    "title": "What a Certified Financial Planner (CFP) Is and What It Takes",
+    "h1": "What Is a Certified Financial Planner (CFP)?",
+    "metaDescription": "A CFP professional has passed a 170-question exam, met experience hours and pledged fiduciary duty. See what a CFP does and when it matters.",
+    "pageType": "explainer (floor 1,200 words)",
+    "format": "article",
+    "medium": "text"
+   },
+   "readerAndAnswer": {
+    "question": "What is a Certified Financial Planner (CFP), and what does it take to earn the credential? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 15/22 on-topic question-sweep completions: what is / what do certified financial planners do / how become / how do they get paid / are they worth the money; 7/22 off-topic or non-US: how many in India, in the US count, salary and course variants]",
+    "answer": "A CFP professional is a financial planner certified by the CFP Board after coursework, a bachelor degree (which may be finished up to five years after the exam), a 170-question exam, 6,000 hours of experience (or 4,000 apprenticeship hours) and an ethics declaration, and who must act as a fiduciary when giving financial advice. (definition with the requirements)",
+    "placement": "section 1 \"What a CFP Professional Is and What It Takes to Earn It\"",
+    "audience": "US readers deciding who to trust with money questions; includes first-time readers and current clients of an advisor.",
+    "searchIntent": "informational with a deciding question"
+   },
+   "keywordEvidence": "No measured volume: SEMRUSH and DataForSEO unavailable 2026-11-09 (no keys); KEYWORD_PROVIDERS=semrush,dataforseo pin retained. Head phrase 'what is a certified financial planner / what is a cfp' carries a Google Autocomplete estimate band (volumes.json, source: estimate, NOT measured). Question sweep saved to autocomplete.certified-financial-planner.csv. Seeds: what is certified financial planner; what do certified financial planners do; how become certified financial planner; how do certified financial planners get paid; are certified financial planners worth the money. Stop reason: free sweep complete; no paid provider usable. Competitor signal: NerdWallet published/updated certified-financial-planner on 2026-11-09 (intake).",
+   "serpAndQuestions": "SERP not read (DataForSEO unavailable; serp.json verdict unread for all heads). PAA unavailable. Question evidence is the autocomplete question sweep cited in the reader question. Opportunity unknown; FAQ spec = on-topic sweep questions verbatim.",
+   "whyNewPage": "coverage.txt: /compare/financial-advisor-vs-financial-planner (title comparison) and /guides/what-is-a-cfa (CFA with a CFP comparison section). The site already has credential pages for CFA and CTFA but none for the CFP, the credential its own guides tell readers to look for. No route or commit exists. Independent duplicate review decision recorded in chart-review.json.",
+   "outline": [
+    "1 What a CFP Professional Is and What It Takes to Earn It: CFP Board certification, the four requirements (education, exam, experience, ethics) in the first two sentences",
+    "2 The Four Requirements in Detail: coursework 12-18 months average plus bachelor degree (5 years after exam to finish degree), 170-question exam in two 3-hour sessions, 6,000 or 4,000 hours (within 10 years before and 5 after), ethics declaration and background check",
+    "3 What a CFP Professional Does: the Practice Standards steps (understand circumstances, goals, analyze, develop/present, implement, monitor) from the CFP Board code",
+    "4 Fiduciary Commitment and Its Limits: CFP must act as fiduciary when giving financial advice (CFP Board code); the credential does not by itself tell how the person is paid; check registration; Investor.gov Tricky Titles",
+    "5 CFP vs CFA vs CTFA and Who a CFP Is Not For: link to the existing pages; when a CFP is not needed",
+    "FAQ: What does a CFP do? How do CFPs get paid (answer limited to: depends on the firm, ask for the fee in writing; no fee figures)? Is a CFP worth it?"
+   ],
+   "contributionAndEvidence": "Basis reported. Sources fetched 2026-11-09: CFP-process, CFP-code, INV-working, FINRA-designations, INV-advisers (evidence/what-is-a-cfp/sources.md; captures under reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/). Contribution: the primary-source answer and its conditions in one place, with who it does not fit and what would change it; no modeling or test. Packet: evidence/what-is-a-cfp/evidence.json.",
+   "tablesToolsVisuals": "Prose with an ordered list where the answer is a list or sequence. No calculator or visual adds value for a definitional/procedural answer; existing calculators are linked instead.",
+   "testingAndReview": "TESTED excluded: financial advice topics are outside _experience.md section G and no executed tests exist. Ordinary presentation; no \"we tested\" or modeling attribution; attribution is third-person to the named regulator or credential body. Byline via the existing template; no professional-review claim; YMYL not-advice disclaimer at the bottom only.",
+   "takeaway": "A CFP professional has met four published requirements and committed to act as a fiduciary when giving financial advice; it signals planning competence but not compensation or registration, which you still verify. Evidence basis: reported (CFP Board). Changes if you need narrow investment management only (a CFA may fit) or trust work (CTFA). Next step: verify the person on the CFP Board site and Investor.gov before you hire.",
+   "inboundLinks": {
+    "required": 2,
+    "placements": [
+     {
+      "source": "/guides/what-is-a-cfa/",
+      "target": "/guides/what-is-a-cfp",
+      "section": "CFA vs. CFP: Which One Actually Matters for Your Situation",
+      "anchor": "CFP",
+      "purpose": "the section compares the CFA with the CFP; the new page defines the CFP in full",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-inbound-what-is-a-cfp.txt",
+       "sha256": "5d9e07f3fa29543f9954ee1acbdb56788f49ab92fde1453ae7120a0d94e8a9b3"
+      }
+     },
+     {
+      "source": "/guides/how-to-choose-a-financial-advisor/",
+      "target": "/guides/what-is-a-cfp",
+      "section": "Step 3: Look for the CFP credential",
+      "anchor": "CFP credential",
+      "purpose": "the step tells readers to look for it; the new page says what it requires",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-inbound-what-is-a-cfp.txt",
+       "sha256": "5d9e07f3fa29543f9954ee1acbdb56788f49ab92fde1453ae7120a0d94e8a9b3"
+      }
+     }
+    ]
+   },
+   "outboundLinks": {
+    "placements": [
+     {
+      "source": "/guides/what-is-a-cfp",
+      "target": "/guides/what-is-a-cfa/",
+      "section": "CFP vs CFA vs CTFA and Who a CFP Is Not For",
+      "anchor": "Chartered Financial Analyst",
+      "purpose": "sibling credential",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-what-is-a-cfp.txt",
+       "sha256": "652fa92f170474624b9d458091b81c5935e8cb89ffa043e48573caf429184727"
+      }
+     },
+     {
+      "source": "/guides/what-is-a-cfp",
+      "target": "/guides/what-is-a-ctfa/",
+      "section": "CFP vs CFA vs CTFA and Who a CFP Is Not For",
+      "anchor": "Certified Trust and Fiduciary Advisor",
+      "purpose": "sibling credential",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-what-is-a-cfp.txt",
+       "sha256": "652fa92f170474624b9d458091b81c5935e8cb89ffa043e48573caf429184727"
+      }
+     },
+     {
+      "source": "/guides/what-is-a-cfp",
+      "target": "/compare/financial-advisor-vs-financial-planner/",
+      "section": "Fiduciary Commitment and Its Limits",
+      "anchor": "financial advisor vs financial planner",
+      "purpose": "title comparison",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-what-is-a-cfp.txt",
+       "sha256": "652fa92f170474624b9d458091b81c5935e8cb89ffa043e48573caf429184727"
+      }
+     }
+    ]
+   },
+   "technicalAndMeasurement": "New entry in src/data/guides.ts (existing Guide template; JSON-LD, canonical, sitemap derive from it), published 2026-11-09; link-only edits to existing pages without date bump; IndexNow after exact live verification. growth.json: baseline unavailable (not zero), primary metric GSC clicks, no uplift claimed.",
+   "evidenceFiles": [
+    {
+     "path": "evidence/what-is-a-cfp/sources.md",
+     "sha256": "750b1fdfad84cc39eaf0b13472c8db19a8ab75002aa77058f4ad9b9d120c906a"
+    },
+    {
+     "path": "evidence/what-is-a-cfp/evidence.json",
+     "sha256": "7aa0077d3d3527ca2153b71c5170469164446a2960dc5f1af1e3325735ad17d5"
+    },
+    {
+     "path": "evidence/what-is-a-cfp/cases.json",
+     "sha256": "e020a94b840616f3d7154f6d8da992c41980a65cf87282bea455d0b53b432279"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/coverage.txt",
+     "sha256": "6bcd8ea48436503d860cd1a9e2b9fe57b771bddd7319b415e25882835c843aa0"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/volumes.json",
+     "sha256": "3258fec98b0d3f9dc862fb9b5991d0efb07c524194a57c7bb3106481b3826655"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/serp.json",
+     "sha256": "cab89a7987575f6accdc42e9ee22592c1f150768c10dc44078bbe3a179d3cbe1"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.certified-financial-planner.csv",
+     "sha256": "4563e747be2f97a72979946c5e34192bc96dd7881bca1c26fc78a8982632c760"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/git-dedup.txt",
+     "sha256": "dbb5085bb516c5e9839a26e83686898481bb105ef912e001b7d58466b2064a33"
+    }
+   ]
+  },
+  {
+   "actionId": "A6",
+   "target": "/guides/how-to-make-a-financial-plan",
+   "identity": {
+    "title": "How To Make a Financial Plan Step by Step",
+    "h1": "How To Make a Financial Plan",
+    "metaDescription": "Make a financial plan: list your finances, set dated goals, test your course, act and review on a schedule. Free calculators linked.",
+    "pageType": "explainer (floor 1,200 words)",
+    "format": "article",
+    "medium": "text"
+   },
+   "readerAndAnswer": {
+    "question": "How do I make a financial plan? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 8/22 on-topic question-sweep completions: how do you make a financial plan, what should a financial plan include, what are the 5 components of a financial plan, why make a financial plan; 14/22 off-topic: financial planner salary or career, business-plan senses, FP&A]",
+    "answer": "Make a financial plan by following the CFP Board planning sequence yourself: list your income, spending, savings, debts and insurance, set specific goals, test your current course against them, choose actions, carry them out and review on a schedule; the CFPB calls an emergency fund one of the first steps to take, and if you carry high-interest debt weigh it alongside that reserve because the sources read do not rank the two. (mechanism: sequence of steps with the first one to build)",
+    "placement": "section 1 \"How To Make a Financial Plan Step by Step\"",
+    "audience": "US readers deciding who to trust with money questions; includes first-time readers and current clients of an advisor.",
+    "searchIntent": "informational with a deciding question"
+   },
+   "keywordEvidence": "No measured volume: SEMRUSH and DataForSEO unavailable 2026-11-09 (no keys); KEYWORD_PROVIDERS=semrush,dataforseo pin retained. Head phrase 'how to make a financial plan' carries a Google Autocomplete estimate band (volumes.json, source: estimate, NOT measured). Question sweep saved to autocomplete.financial-plan.csv. Seeds: how do you make a financial plan; what should a financial plan include; what are the 5 components of a financial plan; why make a financial plan. Stop reason: free sweep complete; no paid provider usable. Competitor signal: NerdWallet published/updated what-is-a-financial-plan on 2026-11-09 (intake).",
+   "serpAndQuestions": "SERP not read (DataForSEO unavailable; serp.json verdict unread for all heads). PAA unavailable. Question evidence is the autocomplete question sweep cited in the reader question. Opportunity unknown; FAQ spec = on-topic sweep questions verbatim.",
+   "whyNewPage": "coverage.txt: /guides/financial-planning-calculator (tools, not the process) and the age guide; the coverage tool returned unrelated how-to pages for \"step by step\". No page answers \"how do I make a financial plan\" as a method; no route or commit exists. Independent duplicate review decision recorded in chart-review.json.",
+   "outline": [
+    "1 How To Make a Financial Plan Step by Step: seven-step sequence adapted from the CFP Board practice standards (understand circumstances, identify goals, analyze current course, develop recommendations, present, implement, monitor) with the first thing to build named (cash reserve) in sentences 1-2",
+    "2 Step 1: Write Down Where You Stand: income, expenses, savings, debts, insurance, estate documents (CFP Board information list); link to net worth guide/tool",
+    "3 Step 2: Set Goals and Test Your Current Course: goal with amount and date; compare current savings rate; link to planning calculators",
+    "4 Step 3: Start an Emergency Fund: CFPB calls it one of the first steps to start saving; what, how much, where; note high-interest debt may compete (sources do not rank the two)",
+    "5 Step 4: Act and Review: implementation, monitoring cadence, when to hire help (CFP verification); who this method is not for and what would change it",
+    "FAQ: What should a financial plan include? What are the components? Why make a financial plan? (answers limited to the sourced list; no invented \"5 components\")"
+   ],
+   "contributionAndEvidence": "Basis reported. Sources fetched 2026-11-09: CFP-code, CFPB-emergency, CFPB-ymyg, CFP-process (evidence/how-to-make-a-financial-plan/sources.md; captures under reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/). Contribution: the primary-source answer and its conditions in one place, with who it does not fit and what would change it; no modeling or test. Packet: evidence/how-to-make-a-financial-plan/evidence.json.",
+   "tablesToolsVisuals": "Prose with an ordered list where the answer is a list or sequence. No calculator or visual adds value for a definitional/procedural answer; existing calculators are linked instead.",
+   "testingAndReview": "TESTED excluded: financial advice topics are outside _experience.md section G and no executed tests exist. Ordinary presentation; no \"we tested\" or modeling attribution; attribution is third-person to the named regulator or credential body. Byline via the existing template; no professional-review claim; YMYL not-advice disclaimer at the bottom only.",
+   "takeaway": "Treat a financial plan as a repeating cycle: list your finances, set dated goals, test your current course, act, then review, and start an emergency fund early, as the CFPB suggests. Applies to households starting a plan; complex tax, estate or investment decisions may need a professional. Evidence basis: reported (CFP Board, CFPB). Changes if you carry high-interest debt. Next step: write down your income, spending, savings and debts today and pick one dated goal.",
+   "inboundLinks": {
+    "required": 2,
+    "placements": [
+     {
+      "source": "/guides/financial-planning-calculator/",
+      "target": "/guides/how-to-make-a-financial-plan",
+      "section": "What a Financial Planning Calculator Calculates",
+      "anchor": "financial plan",
+      "purpose": "the guide talks about plans built from calculators; the new page gives the process",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-inbound-how-to-make-a-financial-plan.txt",
+       "sha256": "890d1afdf0e33eefbf7739ec23fe3b4a8fdbbb287da35ad41f04191520719041"
+      }
+     },
+     {
+      "source": "/guides/financial-planning-for-30-year-olds/",
+      "target": "/guides/how-to-make-a-financial-plan",
+      "section": "introduction (financial planning sentence)",
+      "anchor": "make a financial plan",
+      "purpose": "the age guide assumes a plan exists; the new page shows how to start one",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-inbound-how-to-make-a-financial-plan.txt",
+       "sha256": "890d1afdf0e33eefbf7739ec23fe3b4a8fdbbb287da35ad41f04191520719041"
+      }
+     }
+    ]
+   },
+   "outboundLinks": {
+    "placements": [
+     {
+      "source": "/guides/how-to-make-a-financial-plan",
+      "target": "/guides/financial-planning-calculator/",
+      "section": "Step 2: Set Goals and Test Your Current Course",
+      "anchor": "financial planning calculator",
+      "purpose": "run the numbers",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-how-to-make-a-financial-plan.txt",
+       "sha256": "3936371f588a2dcce7857f1689edb09e1aa39900b6f567fef4ef86bf54985ad6"
+      }
+     },
+     {
+      "source": "/guides/how-to-make-a-financial-plan",
+      "target": "/net-worth/how-to-calculate-net-worth",
+      "section": "Step 1: Write Down Where You Stand",
+      "anchor": "calculate your net worth",
+      "purpose": "compute the starting number",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-how-to-make-a-financial-plan.txt",
+       "sha256": "3936371f588a2dcce7857f1689edb09e1aa39900b6f567fef4ef86bf54985ad6"
+      }
+     },
+     {
+      "source": "/guides/how-to-make-a-financial-plan",
+      "target": "/guides/what-is-a-cfp/",
+      "section": "Step 4: Act and Review",
+      "anchor": "Certified Financial Planner",
+      "purpose": "when to hire help",
+      "inspection": {
+       "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/inspections-outbound-how-to-make-a-financial-plan.txt",
+       "sha256": "3936371f588a2dcce7857f1689edb09e1aa39900b6f567fef4ef86bf54985ad6"
+      }
+     }
+    ]
+   },
+   "technicalAndMeasurement": "New entry in src/data/guides.ts (existing Guide template; JSON-LD, canonical, sitemap derive from it), published 2026-11-09; link-only edits to existing pages without date bump; IndexNow after exact live verification. growth.json: baseline unavailable (not zero), primary metric GSC clicks, no uplift claimed.",
+   "evidenceFiles": [
+    {
+     "path": "evidence/how-to-make-a-financial-plan/sources.md",
+     "sha256": "47354f0feb52005270c399682f65b85ec082709c72a83062b9f01e7e2945248f"
+    },
+    {
+     "path": "evidence/how-to-make-a-financial-plan/evidence.json",
+     "sha256": "3f5e5774c636004bb9607df4fdda5ef2fa70eb400d6fcaab08a93b1d5539a3a0"
+    },
+    {
+     "path": "evidence/how-to-make-a-financial-plan/cases.json",
+     "sha256": "7f9a6ef6f030993cc430cd7574ce39865bf4e3196ec8bc4c9dcc44f756e1a005"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/coverage.txt",
+     "sha256": "6bcd8ea48436503d860cd1a9e2b9fe57b771bddd7319b415e25882835c843aa0"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/volumes.json",
+     "sha256": "3258fec98b0d3f9dc862fb9b5991d0efb07c524194a57c7bb3106481b3826655"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/serp.json",
+     "sha256": "cab89a7987575f6accdc42e9ee22592c1f150768c10dc44078bbe3a179d3cbe1"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.financial-plan.csv",
+     "sha256": "b2c375b264edfba042a83bc4e9c23a0cc1fb7f53f24204962f49ce4f64d4b100"
+    },
+    {
+     "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/git-dedup.txt",
+     "sha256": "dbb5085bb516c5e9839a26e83686898481bb105ef912e001b7d58466b2064a33"
+    }
+   ]
+  }
+ ],
+ "preparation": {
+  "status": "PASS",
+  "readiness": {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/readiness.md",
+   "sha256": "3261487a7295ec4821c3c9af9c434417e355550640aa81b17f080db9e8350f35"
+  }
+ },
+ "evidenceFiles": [
+  {
+   "path": "reports/competitor-monitor/intakes/9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d.json",
+   "sha256": "9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/coverage.txt",
+   "sha256": "6bcd8ea48436503d860cd1a9e2b9fe57b771bddd7319b415e25882835c843aa0"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/git-dedup.txt",
+   "sha256": "dbb5085bb516c5e9839a26e83686898481bb105ef912e001b7d58466b2064a33"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/volumes.json",
+   "sha256": "3258fec98b0d3f9dc862fb9b5991d0efb07c524194a57c7bb3106481b3826655"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/serp.json",
+   "sha256": "cab89a7987575f6accdc42e9ee22592c1f150768c10dc44078bbe3a179d3cbe1"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/key-facts.md",
+   "sha256": "8dc35e46b064987e06b19993407b8deb916fb19e448d7f66cd65ca2dc175a5c6"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.what-is-a-fiduciary.csv",
+   "sha256": "960057133e8e892428b0bc5615950766ba992391f17994a9368f60b00c4d5eb6"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.what-does-a-financial-advisor-do.csv",
+   "sha256": "ecf901e7bff356399263f3152955edb45d8258f246e67df2e8f6345e8476dce8"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.questions-to-ask-a-financial-advisor.csv",
+   "sha256": "874b0c6d0a40f18553ac0c56186c0ab90015667385fdf46f736743970e2d6aaf"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.robo-advisor.csv",
+   "sha256": "5b52612c3e02b1fd7285aa130afb9fd36b6134de7b13edcaa193208456bd2873"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.certified-financial-planner.csv",
+   "sha256": "4563e747be2f97a72979946c5e34192bc96dd7881bca1c26fc78a8982632c760"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/autocomplete.financial-plan.csv",
+   "sha256": "b2c375b264edfba042a83bc4e9c23a0cc1fb7f53f24204962f49ce4f64d4b100"
+  },
+  {
+   "path": "evidence/what-is-a-fiduciary/evidence.json",
+   "sha256": "a74687065369c7bb604fb7e11c20c29a4d3bc3ab40791591a17cf5cef3b5048a"
+  },
+  {
+   "path": "evidence/what-does-a-financial-advisor-do/evidence.json",
+   "sha256": "25b1196b5bf8e48a7e0495a04c913458e0a01286b2d68a9dfee1f5bee0ca6bdb"
+  },
+  {
+   "path": "evidence/questions-to-ask-a-financial-advisor/evidence.json",
+   "sha256": "50252bae56a3483b225cc29acf3d2806e6a965329c7716b0112c49637114ac0b"
+  },
+  {
+   "path": "evidence/what-is-a-robo-advisor/evidence.json",
+   "sha256": "51fafa6f187424f48e76e3362e1c4b83873d3f7583b787956953fb946c71ce4c"
+  },
+  {
+   "path": "evidence/what-is-a-cfp/evidence.json",
+   "sha256": "7aa0077d3d3527ca2153b71c5170469164446a2960dc5f1af1e3325735ad17d5"
+  },
+  {
+   "path": "evidence/how-to-make-a-financial-plan/evidence.json",
+   "sha256": "3f5e5774c636004bb9607df4fdda5ef2fa70eb400d6fcaab08a93b1d5539a3a0"
+  }
+ ],
+ "candidateDispositions": [
+  {
+   "candidate": "https://www.bankrate.com/mortgages/homebuying-in-america-va-loan",
+   "decision": "skip",
+   "reason": "A first-person homebuyer story with no distinct search question; the topic (VA loans) is already served by /calculators VA loan calculator and the VA vs conventional and FHA vs VA comparison pages (coverage.txt). Nothing to add without republishing a personal story."
+  },
+  {
+   "candidate": "https://www.nerdwallet.com/financial-advisors/learn/find-a-black-financial-advisor",
+   "decision": "skip",
+   "reason": "An identity-specific directory/advice page. The reader job (find and vet an advisor) is covered by the new questions-to-ask page and the existing how-to-choose guide; an objective list of advisors by demographic would need a primary directory dataset and verified listings we do not have, so no page is created. Not a hold or time excuse; the independent chart reviewer judges this decision."
+  },
+  {
+   "candidate": "https://www.nerdwallet.com/financial-advisors/learn/fiduciary",
+   "decision": "create",
+   "reason": "No dedicated page exists; reader intent distinct from the nearest existing pages per coverage.txt; new original page from primary sources.",
+   "target": "/guides/what-is-a-fiduciary"
+  },
+  {
+   "candidate": "https://www.nerdwallet.com/financial-advisors/learn/what-does-a-financial-advisor-do",
+   "decision": "create",
+   "reason": "No dedicated page exists; reader intent distinct from the nearest existing pages per coverage.txt; new original page from primary sources.",
+   "target": "/guides/what-does-a-financial-advisor-do"
+  },
+  {
+   "candidate": "https://www.nerdwallet.com/financial-advisors/learn/financial-counselor",
+   "decision": "merge",
+   "reason": "Folded into the new what-does-a-financial-advisor-do page (section 3 Advisor, Credit Counselor and Coach): same reader job as the advisor description; stand-alone pages would need AFCPE and coach sources that were not retrievable today.",
+   "target": "/guides/what-does-a-financial-advisor-do"
+  },
+  {
+   "candidate": "https://www.nerdwallet.com/financial-advisors/learn/financial-coach",
+   "decision": "merge",
+   "reason": "Folded into the new what-does-a-financial-advisor-do page (section 3 Advisor, Credit Counselor and Coach): same reader job as the advisor description; stand-alone pages would need AFCPE and coach sources that were not retrievable today.",
+   "target": "/guides/what-does-a-financial-advisor-do"
+  },
+  {
+   "candidate": "https://www.nerdwallet.com/financial-advisors/learn/questions-ask-financial-advisor",
+   "decision": "create",
+   "reason": "No dedicated page exists; reader intent distinct from the nearest existing pages per coverage.txt; new original page from primary sources.",
+   "target": "/guides/questions-to-ask-a-financial-advisor"
+  },
+  {
+   "candidate": "https://www.nerdwallet.com/financial-advisors/learn/what-is-a-robo-advisor",
+   "decision": "create",
+   "reason": "No dedicated page exists; reader intent distinct from the nearest existing pages per coverage.txt; new original page from primary sources.",
+   "target": "/guides/what-is-a-robo-advisor"
+  },
+  {
+   "candidate": "https://www.nerdwallet.com/financial-advisors/learn/certified-financial-planner",
+   "decision": "create",
+   "reason": "No dedicated page exists; reader intent distinct from the nearest existing pages per coverage.txt; new original page from primary sources.",
+   "target": "/guides/what-is-a-cfp"
+  },
+  {
+   "candidate": "https://www.nerdwallet.com/financial-advisors/learn/what-is-a-financial-plan",
+   "decision": "create",
+   "reason": "No dedicated page exists; reader intent distinct from the nearest existing pages per coverage.txt; new original page from primary sources.",
+   "target": "/guides/how-to-make-a-financial-plan"
+  }
+ ],
+ "emergingClusters": [
+  {
+   "cluster": "Financial advisor explainers A1",
+   "members": "what is a fiduciary; what is a fiduciary financial advisor; what is a fiduciary duty; what is a fiduciary responsibility; why is a fiduciary important; who needs a fiduciary; what is a true fiduciary",
+   "why": "coverage gap at theme level (hiring/worth-it/title pages exist; this explainer does not)",
+   "coverage": "partial",
+   "lever": "create new content",
+   "target": "/guides/what-is-a-fiduciary",
+   "format": "article",
+   "medium": "text",
+   "serp": "unread"
+  },
+  {
+   "cluster": "Financial advisor explainers A2",
+   "members": "what does a financial advisor do for you; what does a financial advisor do day to day; what should a financial advisor do for you; what is financial counselor; what does a financial counsellor do; is financial counseling free; what is financial coaching",
+   "why": "coverage gap at theme level (hiring/worth-it/title pages exist; this explainer does not)",
+   "coverage": "partial",
+   "lever": "create new content",
+   "target": "/guides/what-does-a-financial-advisor-do",
+   "format": "article",
+   "medium": "text",
+   "serp": "unread"
+  },
+  {
+   "cluster": "Financial advisor explainers A3",
+   "members": "questions to ask a financial advisor; questions to ask a financial advisor before hiring; questions to ask a financial advisor first meeting; questions to ask a financial advisor about retirement; questions to ask a potential financial advisor",
+   "why": "coverage gap at theme level (hiring/worth-it/title pages exist; this explainer does not)",
+   "coverage": "partial",
+   "lever": "create new content",
+   "target": "/guides/questions-to-ask-a-financial-advisor",
+   "format": "article",
+   "medium": "text",
+   "serp": "unread"
+  },
+  {
+   "cluster": "Financial advisor explainers A4",
+   "members": "what is a robo advisor; are robo advisors good; is robo advisor worth it; why robo advisors are bad; which robo advisor is the best",
+   "why": "coverage gap at theme level (hiring/worth-it/title pages exist; this explainer does not)",
+   "coverage": "partial",
+   "lever": "create new content",
+   "target": "/guides/what-is-a-robo-advisor",
+   "format": "article",
+   "medium": "text",
+   "serp": "unread"
+  },
+  {
+   "cluster": "Financial advisor explainers A5",
+   "members": "what is certified financial planner; what do certified financial planners do; how become certified financial planner; how do certified financial planners get paid; are certified financial planners worth the money",
+   "why": "coverage gap at theme level (hiring/worth-it/title pages exist; this explainer does not)",
+   "coverage": "partial",
+   "lever": "create new content",
+   "target": "/guides/what-is-a-cfp",
+   "format": "article",
+   "medium": "text",
+   "serp": "unread"
+  },
+  {
+   "cluster": "Financial advisor explainers A6",
+   "members": "how do you make a financial plan; what should a financial plan include; what are the 5 components of a financial plan; why make a financial plan",
+   "why": "coverage gap at theme level (hiring/worth-it/title pages exist; this explainer does not)",
+   "coverage": "partial",
+   "lever": "create new content",
+   "target": "/guides/how-to-make-a-financial-plan",
+   "format": "article",
+   "medium": "text",
+   "serp": "unread"
+  }
+ ],
+ "exclusions": [
+  "Bankrate VA-loan homebuying story: skipped, covered by VA loan calculator and VA comparison pages; a personal story has no distinct query.",
+  "NerdWallet find-a-Black-financial-advisor: skipped as an identity-specific directory we cannot verify objectively; reader job served by A3 and the existing how-to-choose guide.",
+  "NerdWallet financial counselor and financial coach: merged into A2 section 3; stand-alone pages blocked by unretrievable AFCPE/coach sources (not fabricated).",
+  "Lens 3 vs/alternatives/pricing: advisor-category entities (robo-advisors) already covered by /roundup/best-robo-advisors; no named vendor in the brief, so no vs/pricing rows forced.",
+  "Measured volumes, KD and SERP/PAA unavailable (provider keys); labelled estimate only."
+ ],
+ "executionPlan": [
+  {
+   "phase": 1,
+   "action": "Skip: no consolidation rows; advisory only"
+  },
+  {
+   "phase": 2,
+   "action": "Skip: no metadata rows"
+  },
+  {
+   "phase": 3,
+   "action": "Generate /guides/what-is-a-fiduciary/, what-does-a-financial-advisor-do, questions-to-ask-a-financial-advisor, what-is-a-robo-advisor, what-is-a-cfp and how-to-make-a-financial-plan with content_gen.py write using each approved row prompt, closed fact list, closed URL list and the manifest/review/packet flags; template into src/data/guides.ts"
+  },
+  {
+   "phase": 4,
+   "action": "Independent Phase 4 audit of each exact built page, rendered snapshot and review, analysis-packet review; up to the HIGH-tier budget of three audits per page, defer any page that still fails"
+  },
+  {
+   "phase": 5,
+   "action": "Skip: no body rows"
+  },
+  {
+   "phase": 6,
+   "action": "Add the inbound link-only edits listed in each brief to existing guides, comparison and roundup pages without date bump"
+  },
+  {
+   "phase": 7,
+   "action": "Add the six routes to the sitemap and prepare the IndexNow URL list (submit only after live verification)"
+  },
+  {
+   "phase": 8,
+   "action": "Print the summary table and continue"
+  },
+  {
+   "phase": 9,
+   "action": "Commit and push to main (fetch, rebase, fast-forward), verify exact live output with rendered-audit.py and HTTP 200, submit verified URLs to IndexNow, record scraper dispositions and baseline"
+  }
+ ],
+ "publicationScope": {
+  "commit": true,
+  "push": true,
+  "liveVerification": true,
+  "indexNow": true
+ }
+}

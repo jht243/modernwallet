@@ -1,0 +1,32 @@
+INBOUND INSPECTION for /guides/what-is-a-cfp (2026-11-09)
+
+source /guides/what-is-a-cfa/ - title: What Is a Chartered Financial Analyst (CFA)?
+section: CFA vs. CFP: Which One Actually Matters for Your Situation
+anchor: CFP
+purpose: the section compares the CFA with the CFP; the new page defines the CFP in full
+relevant existing sentences (from the page record):
+  - The Exam, Cost, and What the Charter Means",
+    cardBlurb: "The three exam levels, real pass rates and total cost, what charterholders actually do, and when a CFA matters more than a CFP for your money.",
+    introText:
+      "A Chartered Financial Analyst, or CFA, is a professional who has passed 
+  - CFP: Which One Actually Matters for Your Situation",
+        body: "The CFA and the CFP solve different problems, and confusing them is the most common mistake people make when sizing up an advisor's credentials.
+  - The CFP, or Certified Financial Planner, is administered by the [CFP Board](https://www.cfp.net/) and built around personal financial planning — retirement, tax, insurance, and estate questions for one household at a time — and CFP Board's own standards require CFP professionals to act as fiduciarie
+  - If you're hiring someone to build and manage your household's full financial plan, a CFP is usually the more directly relevant credential for that job than a CFA.
+
+source /guides/how-to-choose-a-financial-advisor/ - title: How to Choose a Financial Advisor: A Decision Guide
+section: Step 3: Look for the CFP credential
+anchor: CFP credential
+purpose: the step tells readers to look for it; the new page says what it requires
+relevant existing sentences (from the page record):
+  - slug: "how-to-choose-a-financial-advisor",
+    title: "How to Choose a Financial Advisor: A Decision Guide",
+    metaDescription:
+      "Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.",
+    h1: "
+  - This guide covers the standards, fee models, the CFP credential, how to verify an advisor, and what to ask during your first call.",
+    sections: [
+      { heading: "Know Which Type of Financial Professional You're Talking To", body: "\"Financial advisor\" is a loose umbrella term, and the specific
+  - The CFP credential from Step 3 below cuts across most of these titles, and so does the related but less common ChFC (Chartered Financial Consultant) designation.
+  - A CFP or ChFC can work as a fee-only investment adviser, inside a wealth-management firm, or, less commonly, as a broker-dealer representative, and the fiduciary duty from Step 1 tracks that underlying role every time." },
+      { heading: "Step 1: Understand fiduciary vs suitability", body: "The si

@@ -1,0 +1,200 @@
+{
+ "slug": "how-to-make-a-financial-plan",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 1870,
+ "floor": 1200,
+ "input_tokens": 35177,
+ "output_tokens": 19364,
+ "thinking_tokens": null,
+ "cached_tokens": 31074,
+ "est_cost_usd": 0.4099,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['How to Make a Financial Plan Step by Step', 'The Snapshot You Need to Make a Financial Plan', 'Dated Goals and a Test of Your Current Course', 'An Emergency Fund as the First Action', 'High-Interest Debt Alongside the Reserve'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1870,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 412,
+   "floor": 1200,
+   "ratio": 0.34,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    11,
+    8
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "You can make a financial plan by running the seven-step process that the [Certified Financial Planner Board of Standards (CFP Board)](https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct) sets out in its practice standards, with you acting as both planner and client.",
+     "replacement": "You can make a financial plan by running the seven-step process that the [CFP Board](https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct) sets out in its practice standards, with you acting as both planner and client.",
+     "type": "unsupported",
+     "why": "SOURCE names only 'CFP Board'; the full expanded name is not listed"
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "The first action to take is an emergency fund, which the [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/) calls \"one of the first steps you can take to start saving.\"",
+     "replacement": "The first action to take is an emergency fund, which the [CFPB](https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/) calls \"one of the first steps you can take to start saving.\"",
+     "type": "unsupported",
+     "why": "SOURCE names only 'CFPB'; the full expanded name is not listed"
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Risk tolerance means how big a drop in an investment's value you can live with.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE gives no definition of risk tolerance"
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Write a sentence or two on each, since the numbers alone will not tell you which goal to fund first.",
+     "replacement": "Write a sentence or two on each.",
+     "type": "inference",
+     "why": "SOURCE does not state the numbers cannot rank goals"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Our [financial planning calculator](/guides/financial-planning-calculator/) turns your income and goals into a savings rate, retirement-readiness or net worth number, so you can run each alternative quickly.",
+     "replacement": "Our [financial planning calculator](/guides/financial-planning-calculator/) turns your income and goals into a savings rate, retirement-readiness or net worth number, so you can run each alternative.",
+     "type": "unsupported",
+     "why": "SOURCE does not say the calculator is quick"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Your bank and card statements from the past year are a good place to find those costs.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention bank or card statements"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Manage your cash flow so you know when money comes in and when it goes out.",
+     "replacement": "Manage your cash flow.",
+     "type": "unsupported",
+     "why": "CFPB strategy is only 'managing your cash flow'; explanation not in SOURCE"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "An automatic transfer on payday moves money into the reserve without a fresh decision each month.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE only says automatic transfers are often one of the easiest ways"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "A financial plan changes your money only after you carry it out, which is why the CFP Board's last two standards are implementing the recommendations and monitoring progress and updating.",
+     "replacement": "A financial plan changes your money only after you carry it out, and the CFP Board's last two standards are implementing the recommendations and monitoring progress and updating.",
+     "type": "inference",
+     "why": "SOURCE gives no reason for the CFP Board's choice of standards"
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Our answer would change if the CFP Board revised its seven practice standards or the CFPB published new emergency fund guidance, since either would reset the order of the steps.",
+     "replacement": "Our answer would change if the CFP Board revised its seven practice standards or the CFPB published new emergency fund guidance.",
+     "type": "inference",
+     "why": "SOURCE does not say revisions would reset the step order"
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Starting the plan with that reserve puts both benefits to work from the first month.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE states no first-month timing or combined benefit"
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we publish free calculators and plain-language money guides, and every guide we write starts from the numbers you already have.",
+     "replacement": "At ModernWallet, we publish free calculators and plain-language money guides.",
+     "type": "unsupported",
+     "why": "Self-description licenses the framing, not the specific claim about the reader's numbers."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "If you carry high-interest debt too, weigh it alongside that reserve, because the CFPB's emergency fund guide does not rank one ahead of the other.",
+     "replacement": "If you carry high-interest debt too, weigh it alongside that reserve, because the sources read do not rank one ahead of the other.",
+     "type": "inference",
+     "why": "FP6 says Investor.gov and CFPB sources do not rank them, not only the guide."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Your assets minus your liabilities give you your net worth, one number you can track at every review.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Net worth definition not on fact list."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Our [net worth guide](/net-worth/how-to-calculate-net-worth) walks through that subtraction line by line.",
+     "replacement": "Our [net worth guide](/net-worth/how-to-calculate-net-worth) covers net worth.",
+     "type": "unsupported",
+     "why": "Content of the net worth guide is not described in SOURCE."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "A goal belongs in a financial plan once it has an amount and a date, because only then can you test whether your current habits reach it.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not state this causal rule."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "The CFPB's emergency fund guide does not rank paying down high-interest debt against building a cash reserve, so you decide the order inside your own plan.",
+     "replacement": "The sources read do not rank paying down high-interest debt against building a cash reserve, so you decide the order inside your own plan.",
+     "type": "inference",
+     "why": "FP6 attributes this to Investor.gov and CFPB sources, not the emergency fund guide alone."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "The CFP Board's seven practice standards describe the process a CFP professional follows, and you can run the same steps yourself.",
+     "replacement": "The CFP Board's seven practice standards describe the process a planner follows, and you can run the same steps yourself.",
+     "type": "unsupported",
+     "why": "SOURCE says the process a planner follows, not specifically a CFP professional."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "If your situation includes complex tax, estate or business questions, our guide on [what a CFP is](/guides/what-is-a-cfp/) explains the credential before you decide whether to hire help.",
+     "replacement": "If your situation includes complex tax, estate or business questions, see our guide on [what a CFP is](/guides/what-is-a-cfp/) before you decide whether to hire help.",
+     "type": "unsupported",
+     "why": "Content of the CFP guide is not described in SOURCE."
+    }
+   ],
+   "deleted_final": 8,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2048
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 216.8,
+ "response_id": "msg_011Cgt742Gxgsh6Yikk3QbFp",
+ "generated_at": "2026-11-09T22:03:09+0000"
+}

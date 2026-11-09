@@ -1,0 +1,115 @@
+{
+ "rows": [
+  {
+   "keyword": "what is a fiduciary",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 10 live autocomplete completions (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "what does a financial advisor do",
+   "volume": 250,
+   "volume_low": 250,
+   "volume_high": 2500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 250-2500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "questions to ask a financial advisor",
+   "volume": 250,
+   "volume_low": 250,
+   "volume_high": 2500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 250-2500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "what is a robo advisor",
+   "volume": 250,
+   "volume_low": 250,
+   "volume_high": 2500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 250-2500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "what is a certified financial planner",
+   "volume": 250,
+   "volume_low": 250,
+   "volume_high": 2500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 250-2500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how to make a financial plan",
+   "volume": 250,
+   "volume_low": 250,
+   "volume_high": 2500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 250-2500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "financial coach vs financial counselor",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": false
+   }
+  }
+ ],
+ "notes": [
+  "semrush unusable (no SEMRUSH_API_KEY)",
+  "volume: no provider usable \u2014 autocomplete estimate only",
+  "No tool volume for 7 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 6/7 rows corroborated live"
+ ]
+}

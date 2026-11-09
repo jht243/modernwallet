@@ -1,0 +1,1041 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" data-undergoing-maintenance="false" lang="en"  >
+<!--<![endif]-->
+<head>
+    
+
+<!-- OneTrust Cookies Consent Notice start -->
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="019977a5-ff80-7b6c-897b-abd7625c33a9"></script>
+<script type="text/javascript">
+    function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end -->
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M2FBS38');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Start VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script type="text/plain" id="vwoCode" class="optanon-category-C0002">
+        window._vwo_code ||
+        (function () {
+        var w=window,
+        d=document;
+        var account_id=1177090,
+        version=2.2,
+        settings_tolerance=2000,
+        hide_element='body',
+        hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important';
+        /* DO NOT EDIT BELOW THIS LINE */
+        if(f=!1,v=d.querySelector('#vwoCode'),cc={},-1<d.URL.indexOf('__vwo_disable__')||w._vwo_code)return;try{var e=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=e&&'object'==typeof e?e:{}}catch(e){}function r(t){try{return decodeURIComponent(t)}catch(e){return t}}var s=function(){var e={combination:[],combinationChoose:[],split:[],exclude:[],uuid:null,consent:null,optOut:null},t=d.cookie||'';if(!t)return e;for(var n,i,o=/(?:^|;\s*)(?:(_vis_opt_exp_(\d+)_combi=([^;]*))|(_vis_opt_exp_(\d+)_combi_choose=([^;]*))|(_vis_opt_exp_(\d+)_split=([^:;]*))|(_vis_opt_exp_(\d+)_exclude=[^;]*)|(_vis_opt_out=([^;]*))|(_vwo_global_opt_out=[^;]*)|(_vwo_uuid=([^;]*))|(_vwo_consent=([^;]*)))/g;null!==(n=o.exec(t));)try{n[1]?e.combination.push({id:n[2],value:r(n[3])}):n[4]?e.combinationChoose.push({id:n[5],value:r(n[6])}):n[7]?e.split.push({id:n[8],value:r(n[9])}):n[10]?e.exclude.push({id:n[11]}):n[12]?e.optOut=r(n[13]):n[14]?e.optOut=!0:n[15]?e.uuid=r(n[16]):n[17]&&(i=r(n[18]),e.consent=i&&3<=i.length?i.substring(0,3):null)}catch(e){}return e}();function i(){var e=function(){if(w.VWO&&Array.isArray(w.VWO))for(var e=0;e<w.VWO.length;e++){var t=w.VWO[e];if(Array.isArray(t)&&('setVisitorId'===t[0]||'setSessionId'===t[0]))return!0}return!1}(),t='a='+account_id+'&u='+encodeURIComponent(w._vis_opt_url||d.URL)+'&vn='+version+'&ph=1'+('undefined'!=typeof platform?'&p='+platform:'')+'&st='+w.performance.now();e||((n=function(){var e,t=[],n={},i=w.VWO&&w.VWO.appliedCampaigns||{};for(e in i){var o=i[e]&&i[e].v;o&&(t.push(e+'-'+o+'-1'),n[e]=!0)}if(s&&s.combination)for(var r=0;r<s.combination.length;r++){var a=s.combination[r];n[a.id]||t.push(a.id+'-'+a.value)}return t.join('|')}())&&(t+='&c='+n),(n=function(){var e=[],t={};if(s&&s.combinationChoose)for(var n=0;n<s.combinationChoose.length;n++){var i=s.combinationChoose[n];e.push(i.id+'-'+i.value),t[i.id]=!0}if(s&&s.split)for(var o=0;o<s.split.length;o++)t[(i=s.split[o]).id]||e.push(i.id+'-'+i.value);return e.join('|')}())&&(t+='&cc='+n),(n=function(){var e={},t=[];if(w.VWO&&Array.isArray(w.VWO))for(var n=0;n<w.VWO.length;n++){var i=w.VWO[n];if(Array.isArray(i)&&'setVariation'===i[0]&&i[1]&&Array.isArray(i[1]))for(var o=0;o<i[1].length;o++){var r,a=i[1][o];a&&'object'==typeof a&&(r=a.e,a=a.v,r&&a&&(e[r]=a))}}for(r in e)t.push(r+'-'+e[r]);return t.join('|')}())&&(t+='&sv='+n)),s&&s.optOut&&(t+='&o='+s.optOut);var n=function(){var e=[],t={};if(s&&s.exclude)for(var n=0;n<s.exclude.length;n++){var i=s.exclude[n];t[i.id]||(e.push(i.id),t[i.id]=!0)}return e.join('|')}();return n&&(t+='&e='+n),s&&s.uuid&&(t+='&id='+s.uuid),s&&s.consent&&(t+='&consent='+s.consent),w.name&&-1<w.name.indexOf('_vis_preview')&&(t+='&pM=true'),w.VWO&&w.VWO.ed&&(t+='&ed='+w.VWO.ed),t}code={nonce:v&&v.nonce,library_tolerance:function(){return'undefined'!=typeof library_tolerance?library_tolerance:void 0},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return performance.getEntriesByName('first-contentful-paint')[0]?'':'string'==typeof cc.hE?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){var t;f||(f=!0,(t=d.getElementById('_vis_opt_path_hides'))&&t.parentNode.removeChild(t),e&&((new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e))},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript',e.src?t.src=e.src:t.text=e.text,v&&t.setAttribute('nonce',v.nonce),d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){t=t||{};var n=new XMLHttpRequest;n.open('GET',e,!0),n.withCredentials=!t.dSC,n.responseType=t.responseType||'text',n.onload=function(){if(t.onloadCb)return t.onloadCb(n,e);200===n.status?_vwo_code.addScript({text:n.responseText}):_vwo_code.finish('&e=loading_failure:'+e)},n.onerror=function(){if(t.onerrorCb)return t.onerrorCb(e);_vwo_code.finish('&e=loading_failure:'+e)},n.send()},init:function(){var e,t=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish()},t),'body'!==this.hide_element()?(n=d.createElement('style'),e=(t=this.hide_element())?t+this.hide_element_style():'',t=d.getElementsByTagName('head')[0],n.setAttribute('id','_vis_opt_path_hides'),v&&n.setAttribute('nonce',v.nonce),n.setAttribute('type','text/css'),n.styleSheet?n.styleSheet.cssText=e:n.appendChild(d.createTextNode(e)),t.appendChild(n)):(n=d.getElementsByTagName('head')[0],(e=d.createElement('div')).style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;',e.setAttribute('id','_vis_opt_path_hides'),e.classList.add('_vis_hide_layer'),n.parentNode.insertBefore(e,n.nextSibling));var n='https://dev.visualwebsiteoptimizer.com/j.php?'+i();-1!==w.location.search.indexOf('_vwo_xhr')?this.addScript({src:n}):this.load(n+'&x=true',{l:1})}};w._vwo_code=code;code.init();})();
+    </script>
+    <!-- End VWO Async SmartCode -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Error 404 | CFP - Let's Make a Plan
+</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:url" content="https://www.letsmakeaplan.org/error/error-404" />
+<meta property="og:title" content="Error 404" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://www.letsmakeaplan.org/-/media/images/lmap/logos/cfp-lets-make-a-plan-logo.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:height" content="627" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:alt" content="CFP Let's Make a Plan Logo" />
+<meta name="contextItemId" content="0d208a97-af53-43b4-ad13-2f7313c1e191" />
+<meta name="templateID" content="f59d2f3b-2a62-4dac-92d7-4fbd774e8640" />
+<meta name="templateName" content="Error 404" />
+<meta name="itemBoost" content="" />
+<meta name="ss_excludefromsearch" content="false" />
+
+
+
+
+    <link rel="canonical" href="https://www.letsmakeaplan.org/error/error-404" />
+    <link rel="stylesheet" href="/assets/css/lmap-style.css?v=aCljhUrs" />
+    <link rel="stylesheet" href="/assets/react/quiz/index.css?v=aCljhUrs" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffcc33">
+    <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <meta name="format-detection" content="telephone=no">
+
+    
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoaded" defer></script></head>
+<body class="">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2FBS38"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+<a href="#main-content" class="skip-to-main" aria-label="Skip to main content">Skip to main content</a>
+
+
+<!-- components/cta-banner/cta-banner.twig -->
+<article id="js-cta-banner-id-64985E2613C749ED95E24F4D481842B5"
+         class="cta-banner js-cta-banner"
+         data-theme="yellow"
+         data-sitecore-version-num="1"
+           data-token-lifetime="1" data-token-uom="h"  >
+    <div class="cta-banner-inner">
+        <div class="cta-banner-content">
+                <div class="cta-banner-icon"><img src="/-/media/images/cfp-board/icons/gear-turning-black.svg" alt=""></div>
+            <div class="cta-banner-text">
+                <p>
+                    <span>LetsMakeAPlan.org will be undergoing scheduled system maintenance on Monday, November 9 from 6:00 p.m. &ndash; 7:00 p.m. ET. Some features will be unavailable.</span>
+                </p>
+            </div>
+        </div>
+        <button type="button" class="cta-banner-close js-cta-banner-close"><span class="sr-text">Close Alert</span></button>
+    </div>
+</article>
+<div class="page-container">
+    <div class="page-container-inner">
+        
+<!-- components/mobile-nav/mobile-nav.twig -->
+<div class="mobile-nav">
+    <div class="mobile-nav-header">
+        <a href="/">
+            <img src="/assets/images/logo-cfp-lmap-horizontal-w-tagline.svg" alt="CFP Board LMAP Logo" class="mobile-nav-logo-img" width="250" height="119">
+        </a>
+        <div class="mobile-nav-right">
+            
+<a href="/find-a-cfp-professional/favorites" class="mobile-nav-favorite">
+    <span>
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 6.88272L11.1863 6.5005L8.99681 1L6.80734 6.5005L1 6.88272L5.45419 10.6648L3.99256 16.4019L8.99681 13.2388L14.0011 16.4019L12.5395 10.6648L17 6.88272Z" fill="#FFCC33" stroke="#333333" stroke-width="2" stroke-linejoin="round" />
+    </svg>
+</span> <span>Favorites</span>
+
+</a>
+            <button class="mobile-nav-toggle js js-open-mobile-nav icon-hamburger" aria-haspopup="true" type="button"><span class="sr-text">Open Menu</span></button>
+        </div>
+    </div>
+    <div class="mobile-nav-slideout">
+        <div class="mobile-nav-slideout-header">
+            <div class="mobile-nav-slideout-header-left">
+                <a href="/" class="mobile-nav-slideout-header-left-link icon-home">Home</a>
+            </div>
+            <div class="mobile-nav-slideout-header-right">
+                    <button class="mobile-nav-search-button js js-mobile-search-toggle icon-search" type="button"><span class="sr-text">Search Toggle</span></button>
+                    <button class="mobile-nav-close-button js js-mobile-nav-close icon-plus" type="button"><span class="sr-text">Search Toggle</span></button>
+            </div>
+        </div>
+        <nav class="mobile-nav-main" aria-label="Primary Mobile">
+            <div class="mobile-nav-primary-links slidebar-container">
+                <div class="mobile-nav-slidebar"></div>
+                <ul>
+                        <li class="mobile-nav-item -white">
+                            <a href="/getting-prepared" class="mobile-nav-link" target="">Getting Prepared</a>
+
+                                <a href="#" class="mobile-nav-open-next-level icon-caret-right" aria-haspopup="true"><span class="sr-text">Open Sub Menu</span></a>
+                                <div class="mobile-nav-level-two" data-opened="false">
+                                    <a href="#" class="mobile-nav-back-level">Back</a>
+
+                                    <ul class="mobile-nav-level-two-links slidebar-container">
+                                        <div class="mobile-nav-slidebar"></div>
+
+                                            <li class="mobile-nav-item">
+
+                                                    <a href="/getting-prepared/the-value-of-financial-planning" class="mobile-nav-link" target="">
+                                                        The Value of Planning
+                                                    </a>
+
+                                            </li>
+                                            <li class="mobile-nav-item">
+
+                                                    <a href="/getting-prepared/set-your-financial-goals" class="mobile-nav-link" target="">
+                                                        Set Your Financial Goals
+                                                    </a>
+
+                                            </li>
+                                            <li class="mobile-nav-item">
+
+                                                    <a href="/getting-prepared/when-you-should-make-a-financial-plan" class="mobile-nav-link" target="">
+                                                        When You Should Make a Plan
+                                                    </a>
+
+                                            </li>
+                                            <li class="mobile-nav-item">
+
+                                                    <a href="/getting-prepared/the-financial-planning-process" class="mobile-nav-link" target="">
+                                                        The Planning Process
+                                                    </a>
+
+                                            </li>
+                                            <li class="mobile-nav-item">
+
+                                                    <a href="/getting-prepared/checklist-for-your-first-visit-with-a-financial-planner" class="mobile-nav-link" target="">
+                                                        Checklist For Your First Visit
+                                                    </a>
+
+                                            </li>
+                                                                            </ul>
+                                </div>
+                        </li>
+                        <li class="mobile-nav-item -white">
+                            <a href="/choosing-a-planner" class="mobile-nav-link" target=""> Choosing a Planner</a>
+
+                                <a href="#" class="mobile-nav-open-next-level icon-caret-right" aria-haspopup="true"><span class="sr-text">Open Sub Menu</span></a>
+                                <div class="mobile-nav-level-two" data-opened="false">
+                                    <a href="#" class="mobile-nav-back-level">Back</a>
+
+                                    <ul class="mobile-nav-level-two-links slidebar-container">
+                                        <div class="mobile-nav-slidebar"></div>
+
+                                            <li class="mobile-nav-item">
+
+                                                    <a href="/choosing-a-planner/why-choose-a-cfp-professional" class="mobile-nav-link" target="">
+                                                        Why Choose a CFP&#174; Professional
+                                                    </a>
+
+                                            </li>
+                                            <li class="mobile-nav-item">
+
+                                                    <a href="/choosing-a-planner/10-questions-to-ask-your-financial-advisor" class="mobile-nav-link" target="">
+                                                        10 Questions to Ask Your Financial Advisor
+                                                    </a>
+
+                                            </li>
+                                            <li class="mobile-nav-item">
+
+                                                    <a href="/choosing-a-planner/types-of-services" class="mobile-nav-link" target="">
+                                                        Types of Services
+                                                    </a>
+
+                                            </li>
+                                            <li class="mobile-nav-item">
+
+                                                    <a href="/choosing-a-planner/types-of-advisors" class="mobile-nav-link" target="">
+                                                        Types of Advisors
+                                                    </a>
+
+                                            </li>
+                                            <li class="mobile-nav-item">
+
+                                                    <a href="/choosing-a-planner/paying-your-advisor" class="mobile-nav-link" target="">
+                                                        Paying Your Advisor
+                                                    </a>
+
+                                            </li>
+                                            <li class="mobile-nav-item">
+
+                                                    <a href="/choosing-a-planner/fiduciary-duty-your-interests-should-come-first" class="mobile-nav-link" target="">
+                                                        Fiduciary Duty: Your Interests Should Come First
+                                                    </a>
+
+                                            </li>
+                                            <li class="mobile-nav-item">
+
+                                                    <a href="/file-a-complaint" class="mobile-nav-link" target="">
+                                                        File a Complaint
+                                                    </a>
+
+                                            </li>
+                                                                            </ul>
+                                </div>
+                        </li>
+                        <li class="mobile-nav-item -white">
+                            <a href="/financial-topics" class="mobile-nav-link" target="">Financial Topics</a>
+
+                                <a href="#" class="mobile-nav-open-next-level icon-caret-right" aria-haspopup="true"><span class="sr-text">Open Sub Menu</span></a>
+                                <div class="mobile-nav-level-two" data-opened="false">
+                                    <a href="#" class="mobile-nav-back-level">Back</a>
+
+                                    <ul class="mobile-nav-level-two-links slidebar-container">
+                                        <div class="mobile-nav-slidebar"></div>
+
+                                            <li class="mobile-nav-item">
+
+                                                    <div class="mobile-nav-link">
+                                                        Financial Goals
+                                                    </div>
+
+                                                    <ul class="mobile-nav-grandchildren">
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/retirement-planning" class="mobile-nav-grandchildren-link" target="">Retirement Planning</a>
+                                                            </li>
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/investing" class="mobile-nav-grandchildren-link" target="">Investing</a>
+                                                            </li>
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/budgeting" class="mobile-nav-grandchildren-link" target="">Budgeting</a>
+                                                            </li>
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/tax-planning" class="mobile-nav-grandchildren-link" target="">Tax Planning</a>
+                                                            </li>
+                                                    </ul>
+                                            </li>
+                                            <li class="mobile-nav-item">
+
+                                                    <div class="mobile-nav-link">
+                                                        Special Topics
+                                                    </div>
+
+                                                    <ul class="mobile-nav-grandchildren">
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/financial-uncertainty" class="mobile-nav-grandchildren-link" target="">Financial Uncertainty</a>
+                                                            </li>
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/divorce" class="mobile-nav-grandchildren-link" target="">Divorce</a>
+                                                            </li>
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/veterans" class="mobile-nav-grandchildren-link" target="">Veterans</a>
+                                                            </li>
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/planning-for-lgbtq-individuals-and-couples" class="mobile-nav-grandchildren-link" target="">LGBTQ</a>
+                                                            </li>
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/women" class="mobile-nav-grandchildren-link" target="">Women</a>
+                                                            </li>
+                                                    </ul>
+                                            </li>
+                                            <li class="mobile-nav-item">
+
+                                                    <div class="mobile-nav-link">
+                                                        Life Stages
+                                                    </div>
+
+                                                    <ul class="mobile-nav-grandchildren">
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/starting-out" class="mobile-nav-grandchildren-link" target="">Starting Out</a>
+                                                            </li>
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/settling-down" class="mobile-nav-grandchildren-link" target="">Settling Down</a>
+                                                            </li>
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/entering-midlife" class="mobile-nav-grandchildren-link" target="">Entering Midlife</a>
+                                                            </li>
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/near-retirement" class="mobile-nav-grandchildren-link" target="">Near Retirement</a>
+                                                            </li>
+                                                            <li class="mobile-nav-grandchildren-item">
+                                                                <a href="/financial-topics/topics-a-z/enjoying-retirement" class="mobile-nav-grandchildren-link" target="">Enjoying Retirement</a>
+                                                            </li>
+                                                    </ul>
+                                            </li>
+                                                                                    <li class="mobile-nav-item">
+                                                <a href="/financial-topics/topics-a-z" class="mobile-nav-link" target="">Browse all topics</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                        </li>
+                    <li class="mobile-nav-item -button">
+                        
+                        <button class="mobile-nav-button">Find a CFP&reg; Professional</button>
+                    </li>
+                </ul>
+                <ul>
+                </ul>
+                <ul>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="mobile-nav-search-slideout" data-mobile-search-open="false">
+        <div class="mobile-nav-slideout-header">
+            <div class="mobile-nav-slideout-header-left">
+                <div class="mobile-nav-slideout-header-left-text">Search Let's Make a Plan</div>
+            </div>
+            <div class="mobile-nav-slideout-header-right">
+                <button type="button" class="mobile-nav-close-button js js-mobile-search-close icon-plus"><span class="sr-text">Search Toggle</span></button>
+            </div>
+        </div>
+        <div class="mobile-nav-main">
+            <div class="mobile-nav-search" data-action="/search" data-method="get">
+                <div class="mobile-nav-search-inner">
+                        <input class="js-search-field" type="search" id="search-input-mobile" name="q"
+                               title="Search"
+                               placeholder="Search by Keyword..."
+                               required>
+                        <button type="button" class="button js icon-search js-search-submit"><span class="sr-text">Submit</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav-form-slideout" data-mobile-search-open="false">
+        <div class="mobile-nav-slideout-header">
+            <div class="mobile-nav-slideout-header-left">
+                
+                <div class="mobile-nav-slideout-header-left-text">Find a CFP&reg; Professional</div>
+            </div>
+            <div class="mobile-nav-slideout-header-right">
+                
+                <button class="mobile-nav-close-button js js-mobile-form-close icon-plus" type="button"><span class="sr-text">Find a CFP® Professional Form Toggle</span></button>
+            </div>
+        </div>
+        <div class="mobile-nav-main">
+            <div class="mobile-nav-form">
+                <div class="mobile-nav-form-inner">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="module" src="/assets/react/search/index.js?v=aCljhUrs"></script>
+
+        
+
+<header class="site-header">
+    <div class="site-header-inner">
+        <div class="site-header-logo">
+            <a href="/">
+                <img src="/assets/images/logo-cfp-lmap-horizontal-w-tagline.svg" alt="Financial Planning - CFP Let's Make a Plan" class="site-header-logo-img" width="250" height="119">
+            </a>
+        </div>
+        <div class="site-header-right">
+            <nav class="site-header-main-nav" aria-label="Primary">
+                <ul class="site-header-main-nav-list">
+                        <li class="site-header-main-nav-item -has-children">
+                            <a class="site-header-main-nav-link" href="/getting-prepared" target="">Getting Prepared</a>
+                                    <div class="site-header-main-nav-dropdown">
+                                        <div class="site-header-main-nav-dropdown-slidebar"></div>
+
+                                        <ul>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/getting-prepared/the-value-of-financial-planning" target="">The Value of Planning</a>
+                                                                                                            </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/getting-prepared/set-your-financial-goals" target="">Set Your Financial Goals</a>
+                                                                                                            </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/getting-prepared/when-you-should-make-a-financial-plan" target="">When You Should Make a Plan</a>
+                                                                                                            </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/getting-prepared/the-financial-planning-process" target="">The Planning Process</a>
+                                                                                                            </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/getting-prepared/checklist-for-your-first-visit-with-a-financial-planner" target="">Checklist For Your First Visit</a>
+                                                                                                            </li>
+                                        </ul>
+                                    </div>
+                        </li>
+                        <li class="site-header-main-nav-item -has-children">
+                            <a class="site-header-main-nav-link" href="/choosing-a-planner" target=""> Choosing a Planner</a>
+                                    <div class="site-header-main-nav-dropdown">
+                                        <div class="site-header-main-nav-dropdown-slidebar"></div>
+
+                                        <ul>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/choosing-a-planner/why-choose-a-cfp-professional" target="">Why Choose a CFP&#174; Professional</a>
+                                                                                                            </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/choosing-a-planner/10-questions-to-ask-your-financial-advisor" target="">10 Questions to Ask Your Financial Advisor</a>
+                                                                                                            </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/choosing-a-planner/types-of-services" target="">Types of Services</a>
+                                                                                                            </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/choosing-a-planner/types-of-advisors" target="">Types of Advisors</a>
+                                                                                                            </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/choosing-a-planner/paying-your-advisor" target="">Paying Your Advisor</a>
+                                                                                                            </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/choosing-a-planner/fiduciary-duty-your-interests-should-come-first" target="">Fiduciary Duty: Your Interests Should Come First</a>
+                                                                                                            </li>
+                                                    <li class="site-header-main-nav-dropdown-item">
+                                                        <a class="site-header-main-nav-dropdown-link" href="/file-a-complaint" target="">File a Complaint</a>
+                                                                                                            </li>
+                                        </ul>
+                                    </div>
+                        </li>
+                        <li class="site-header-main-nav-item -has-children">
+                            <a class="site-header-main-nav-link" href="/financial-topics" target="">Financial Topics</a>
+                                <div class="site-header-main-nav-dropdown -columns">
+                                    <div class="site-header-main-nav-dropdown-columns">
+                                            <div class="site-header-main-nav-dropdown-column">
+                                                
+                                                <span class="site-header-main-nav-dropdown-link">Financial Goals</span>
+
+                                                    <ul class="site-header-main-nav-grandchildren">
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/retirement-planning" target="">Retirement Planning</a>
+                                                            </li>
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/investing" target="">Investing</a>
+                                                            </li>
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/budgeting" target="">Budgeting</a>
+                                                            </li>
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/tax-planning" target="">Tax Planning</a>
+                                                            </li>
+                                                    </ul>
+                                            </div>
+                                            <div class="site-header-main-nav-dropdown-column">
+                                                
+                                                <span class="site-header-main-nav-dropdown-link">Special Topics</span>
+
+                                                    <ul class="site-header-main-nav-grandchildren">
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/financial-uncertainty" target="">Financial Uncertainty</a>
+                                                            </li>
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/divorce" target="">Divorce</a>
+                                                            </li>
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/veterans" target="">Veterans</a>
+                                                            </li>
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/planning-for-lgbtq-individuals-and-couples" target="">LGBTQ</a>
+                                                            </li>
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/women" target="">Women</a>
+                                                            </li>
+                                                    </ul>
+                                            </div>
+                                            <div class="site-header-main-nav-dropdown-column">
+                                                
+                                                <span class="site-header-main-nav-dropdown-link">Life Stages</span>
+
+                                                    <ul class="site-header-main-nav-grandchildren">
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/starting-out" target="">Starting Out</a>
+                                                            </li>
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/settling-down" target="">Settling Down</a>
+                                                            </li>
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/entering-midlife" target="">Entering Midlife</a>
+                                                            </li>
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/near-retirement" target="">Near Retirement</a>
+                                                            </li>
+                                                            <li class="site-header-main-nav-grandchildren-item">
+                                                                <a class="site-header-main-nav-grandchildren-link" href="/financial-topics/topics-a-z/enjoying-retirement" target="">Enjoying Retirement</a>
+                                                            </li>
+                                                    </ul>
+                                            </div>
+                                    </div>
+                                        <div class="site-header-main-nav-dropdown-additional-link">
+                                            <a class="site-header-main-nav-dropdown-column-link" href="/financial-topics" DisableWebEdit="True">More Financial Topics</a>
+                                        </div>
+                                </div>
+                        </li>
+                </ul>
+            </nav>
+            
+<a href="/find-a-cfp-professional/favorites" class="site-header-favorite">
+    <span>
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 6.88272L11.1863 6.5005L8.99681 1L6.80734 6.5005L1 6.88272L5.45419 10.6648L3.99256 16.4019L8.99681 13.2388L14.0011 16.4019L12.5395 10.6648L17 6.88272Z" fill="#FFCC33" stroke="#333333" stroke-width="2" stroke-linejoin="round" />
+    </svg>
+</span> <span>Favorites</span>
+
+</a>
+            <div class="site-header-search">
+                    <button type="button" class="site-header-search-button js js-search-toggle icon-search"><span class="sr-text">Search Toggle</span></button>
+            </div>
+            <div class="site-header-find-pro">
+                <div class="site-header-find-pro-inner">
+                    <button href="#" class="button -black site-header-button js-find-cfp-form-toggle">Find a CFP&#174; Professional</button>
+                    <div class="site-header-main-nav-dropdown site-header-find-pro-dropdown">
+                        
+
+<!-- components/find-cfp-form/find-cfp-form.twig -->
+<form class="find-cfp-form" action="/find-a-cfp-professional">
+        <label for="header-find-pro-location">Location</label>
+        <div class="field-container -name-distance">
+            <div class="location-search-container">
+                <input type="text"
+                       class="js-location-search"
+                       id="header-find-pro-location"
+                       name="Location"
+                       value=""
+                       title="Location"
+                       placeholder="Enter an Address OR a City &amp; State">
+                <button type="button" class="js location-search-clear icon-close" title="Clear Location"><span class="sr-text">Clear Location</span></button>
+                <div class="location-search-error error-message">Please select a location from the dropdown.</div>
+                <input type="hidden" name="limit" value="10">
+                <input type="hidden" name="pg" value="1">
+                <input type="hidden" name="sort" value="random">
+                <input type="hidden" name="randomKey" value="1">
+                <input type="hidden" name="latitude">
+                <input type="hidden" name="longitude">
+                <input type="hidden" name="location_name">
+                <input type="hidden" name="postalCodeExact">
+                <input type="hidden" name="cityExact">
+                <input type="hidden" name="stateExact">
+            </div>
+
+            <select name="distance" id="header-find-pro-distance" aria-label="Search Radius" title="Search Radius">
+                    <option value="10" >10 Miles</option>
+                    <option value="5" >5 Miles</option>
+                    <option value="25" >25 Miles</option>
+                    <option value="50" >50 Miles</option>
+                    <option value="100" >100 Miles</option>
+            </select>
+        </div>
+
+
+            <div class="field-container">
+                <label for="header-planning_services">Planning Services</label>
+                <select id="header-planning_services" name="planning_services" title="Planning Services" >
+                        <option value="" selected="">All Services</option>
+                                            <option value="eb1add2c-13b9-48c4-9cb1-8a05bea18af2">Budgeting</option>
+                        <option value="9612c2d5-6728-419a-8e9b-d84fb24c65c5">Business Succession Planning</option>
+                        <option value="42a97d64-d0a4-4e8e-964c-b1deff188ac1">Comprehensive Financial Planning</option>
+                        <option value="e8d41a3a-c108-495b-a0db-a7e6d549fe7b">Debt Management</option>
+                        <option value="9177c72c-f4a7-45e0-b236-203ab9566472">Divorce Planning</option>
+                        <option value="b38ed0a4-5636-4fb8-91c2-6556643c22ee">Education Planning</option>
+                        <option value="d9f820d5-a050-485e-8005-e3b0c52d7f5e">Elder Care</option>
+                        <option value="bbd4283e-36a3-4c35-88ad-6ef23261237b">Employee and Employer Plan Benefits</option>
+                        <option value="8bbdc270-290d-43ca-99d9-8e430c136f91">Estate Planning</option>
+                        <option value="ba92f41c-0df5-44a7-aef8-4935bd0e3dcf">Faith-Based Investing</option>
+                        <option value="75250742-f824-40bd-a681-b0acc137fe26">Health Care</option>
+                        <option value="31429e0a-2054-4616-bb57-dd81276a8a1a">Inheritance</option>
+                        <option value="0c28dada-3268-48e5-acb0-c76f9db5a042">Insurance Planning</option>
+                        <option value="c56b5faf-16bc-43b8-b400-6952868cf745">Investment Planning</option>
+                        <option value="8322c7eb-7166-469f-896b-45426e453d64">Life Transitions</option>
+                        <option value="c27db721-6123-439e-a87e-1dc2c8c06288">Long-term Care</option>
+                        <option value="254071a8-6829-48ce-8375-f5cf4675d666">Retirement Income Management</option>
+                        <option value="f42d193a-baea-4329-aee0-4d287c321ea4">Retirement Planning</option>
+                        <option value="ae5d9fa5-d51b-475d-ad16-f02a409a2519">Small Business Planning</option>
+                        <option value="35329167-c8bb-450f-8860-a2bc968560f8">Social Security Planning</option>
+                        <option value="616acbeb-e3a6-482a-abdb-36f86413c280">Socially Responsible Investing</option>
+                        <option value="4aed2b82-a2d0-4cfa-ada3-ae5d57e08305">Tax Planning</option>
+                </select>
+            </div>
+            <div class="field-container">
+                <label for="header-last_name">Advisor&#39;s Last Name</label>
+                <input type="text"
+                       id="header-last_name"
+                       name="last_name"
+                       value=""
+                       
+                       title="Advisor&#39;s Last Name"
+                       placeholder="If searching for a specific planner" />
+            </div>
+            <div class="field-container find-cfp-form-post">
+            <label class="search-location-name-form-terms-conditions">
+<span class="search-location-name-form-errors error-message terms-form-error-message">
+Please agree to the Terms and Conditions below to continue
+</span>
+<input type="checkbox" name="terms-and-conditions" required />
+<span>
+I agree to <a href="#" data-mfp-src="#modal-disclaimers" class="modal-trigger">Terms and Conditions</a> for the Find a CERTIFIED FINANCIAL PLANNER&reg;&nbsp;Professional Search<a href="#" data-mfp-src="#modal-disclaimers" class="modal-trigger"></a>
+</span>
+</label>
+        </div>
+    <div class="field-container find-cfp-form-submit">
+        <button type="submit" class="find-cfp-form-submit-button">Find Your CFP® Professional</button>
+        
+        <div class="find-cfp-form-submit-cancel-container">
+            <a href="#" class="find-cfp-form-submit-cancel">Cancel</a>
+        </div>
+    </div>
+</form>
+
+                    </div>
+                </div>
+            </div>
+            <div data-action="/search" data-method="get" class="site-header-search-container">
+                <div class="site-header-search-container-inner">
+                        <input class="js-search-field" type="text" id="search-input-header" name="q" title="Search" placeholder="Search by keyword…">
+                        <input class="button -black js-search-submit" type="button" title="Search" value="Search">
+                    <a href="#" class="js-search-input-close icon-close"><span class="sr-text">Close Search</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script type="module" src="/assets/react/search/index.js?v=aCljhUrs"></script>
+
+        <main id="main-content" aria-label="Page Content">
+            
+            
+<!-- components/error-pages/error-###.twig -->
+<div class="error-page error-404">
+    <div class="error-page-inner">
+        <div class="error-page-container">
+            <h1 class="h2">404 Not Found</h1>
+            <p>Please visit our home page or use the search in the top right of our menu to find specific content. If you believe there is a non-functioning link or tool on this site, please notify us at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7f121e16133f1c190f1d101e0d1b51100d18">[email&#160;protected]</a>. To help us assist you as quickly and effectively as possible, please mention your browser type and any error messages you encounter. </p>
+            <a class="btn" href="https://www.cfp.net/">Back to Home</a>
+        </div>
+    </div>
+</div>
+        </main>
+        
+<!-- components/site-footer/site-footer.twig -->
+<footer class="site-footer">
+    <div class="site-footer-inner">
+        <div class="site-footer-right">
+            <div class="site-footer-social">
+                <div class="site-footer-copyright">© 2026 CFP Board. All Rights Reserved.</div>
+                <div class="site-footer-social-inner">
+                    <ul class="site-footer-social-links">
+                                <li><a href="https://www.facebook.com/CFPLetsMakeAPlan" target="_blank" class="site-footer-social-link icon-facebook"><span class="sr-text">Facebook</span></a></li>
+
+                        
+                                <li><a href="https://twitter.com/CFPBoard" target="_blank" class="site-footer-social-link icon-x"><span class="sr-text">Twitter</span></a></li>
+
+                                <li><a href="https://www.linkedin.com/company/48361/" target="_blank" class="site-footer-social-link icon-linkedin"><span class="sr-text">LinkedIn</span></a></li>
+
+                        
+                    </ul>
+                        <ul class="site-footer-secondary">
+                                <li>
+                                    <a href="/contact-us" target="" class="site-footer-secondary-link">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.cfp.net/terms-of-use" target="_blank" class="site-footer-secondary-link">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="/accessibility" target="" class="site-footer-secondary-link">Accessibility</a>
+                                </li>
+
+                                <!-- OneTrust cookies settings button start -->
+                                <li><span id="ot-sdk-btn" class="ot-sdk-show-settings">Do Not Sell or Share My Data</span></li>
+                                <!-- OneTrust cookies settings button end -->
+                        </ul>
+                </div>
+            </div>
+            <ul class="site-footer-nav">
+                        <li class="site-footer-nav-item">
+                            <a href="https://www.cfp.net" target="_blank" class="h6 site-footer-nav-link">cfp.net</a>
+                        </li>
+                        <li class="site-footer-nav-item">
+                            <a href="https://www.cfp.net/get-certified/certification-process" target="_blank" class="h6 site-footer-nav-link">Get Certified</a>
+                        </li>
+                        <li class="site-footer-nav-item">
+                            <a href="/sitemap" target="" class="h6 site-footer-nav-link">Sitemap</a>
+                        </li>
+                        <li class="site-footer-nav-item">
+                            <a href="https://www.cfp.net/privacy-policy" target="_blank" class="h6 site-footer-nav-link">Privacy Policy</a>
+                        </li>
+                        <li class="site-footer-nav-item">
+                            <a href="/about-us" target="" class="h6 site-footer-nav-link">About Us</a>
+                        </li>
+                        <li class="site-footer-nav-item">
+                            <a href="/file-a-complaint" target="" class="h6 site-footer-nav-link">File a Complaint</a>
+                        </li>
+                        <li class="site-footer-nav-item">
+                            <a href="/contact-us" target="" class="h6 site-footer-nav-link">Contact Us</a>
+                        </li>
+            </ul>
+
+            <div class="site-footer-bottom">
+                <div class="site-footer-copyright">© 2026 CFP Board. All Rights Reserved.</div>
+            </div>
+
+        </div>
+        <div class="site-footer-logo">
+            <div class="site-footer-logo-inner">
+                <a href="/">
+                    <img src="/assets/images/logo-cfp-lmap-horizontal.svg" alt="CFP Board LMAP Logo" class="site-header-logo-img" width="249" height="70" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        <div class="js-blocker"></div>
+    </div>
+</div>
+
+
+
+    <!-- /#wrapper -->
+    <!-- Vendor JavaScript -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    
+    
+
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACXuozP3lKVlyJ1ECthtWkF6QkjptVqiA&libraries=places"></script>
+    <script src="/assets/js/lmap-bundle.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/modalhelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/cookiehelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/storagehelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/urlhelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/geoiphelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/appointmentrequesthelper.js?v=aCljhUrs"></script>
+    <script src="/scripts/helpers/cfpnearmehelper.js?v=aCljhUrs"></script>
+    <input type="hidden" value="wm1sdwk0009XJ" name="machine" />
+
+      <script>
+        const PROD_CANONICAL_HOSTNAME = 'www.letsmakeaplan.org';
+        // PROD sitekey, else NONPROD sitekey
+        const TURNSTILE_SITE_ID = window.location.hostname === PROD_CANONICAL_HOSTNAME ? '0x4AAAAAABl2Q2fof4KdXnRX' : '0x4AAAAAABnFJmc1bCoQtnWe';
+
+        const SITECORE_FORMS_SELECTOR = 'form[id^="fxb"]';
+        
+        // If the invisible widget must be rendered (rare cases in which interaction is required), do so in a compact fashion to ensure mobile friendliness
+        const TURNSTILE_NORMAL_SIZE_MIN_PX  = 429;
+        const TURNSTILE_SIZE_SETTING     = window.innerWidth >= TURNSTILE_NORMAL_SIZE_MIN_PX ? 'normal' : 'compact';
+        
+        const ERROR_MESSAGE              = 'Please complete the verification and submit the form again. If the issue persists, contact us via phone or email.';
+        const ERROR_CONTAINER_CLASS      = 'turnstile-error-message';
+        const ERROR_CONTAINER_STYLE      = 'display:block;max-width:150px;';
+        const WIDGET_VISIBLE_STYLE       = 'display:block;margin-bottom:25px;';
+
+        const ERROR_MESSAGE_CONTAINER_STYLE = 'display:block;max-width:150px;';
+        const ERROR_MESSAGE_CONTAINER_SELECTOR_CLASS = 'turnstile-error-message';
+        
+        const VISIBLE_ERROR_CONTAINER_CLASSES = 'error-message field-validation-error ' + ERROR_MESSAGE_CONTAINER_SELECTOR_CLASS;
+        const VISIBLE_WIDGET_CONTAINER_STYLES = 'display:block;margin-bottom:25px;';
+
+        window.bindAjaxHandlers = function(sitecoreForm) {
+          // Inject form failure handling for when siteverify fails. Append rather than replace in order not to blow away existing functionality.
+          const existingFailureHandler = (sitecoreForm.getAttribute("data-ajax-failure") || "").trim();
+          let needsSemicolon = existingFailureHandler && !existingFailureHandler.endsWith(";");
+          let separator = existingFailureHandler ? " " : "";
+          let newHandler = "window.handleFormFailure(arguments, this);";
+          sitecoreForm.setAttribute(
+            "data-ajax-failure",
+            (needsSemicolon ? existingFailureHandler + ";" : existingFailureHandler) + separator + newHandler
+          );
+        };
+
+        window.attachGlobalSitecoreFormObserver = function() {
+          const observer = new MutationObserver(mutations => {
+            mutations.forEach(mutation => {
+              mutation.removedNodes.forEach(node => {
+                if (
+                  node.nodeType === 1 &&
+                  node.tagName === 'FORM' &&
+                  node.id &&
+                  node.id.startsWith('fxb_')
+                ) {
+                  console.debug('A Sitecore form was removed:', node);
+                }
+              });
+        
+              // Added forms
+              mutation.addedNodes.forEach(node => {
+                // If the new node *is* a form
+                if (
+                  node.nodeType === 1 &&
+                  node.tagName === 'FORM' &&
+                  node.id &&
+                  node.id.startsWith('fxb_')
+                ) {
+                  console.debug('A new Sitecore form was added:', node);
+                  window.injectTurnstileWidget(node);
+                  window.bindAjaxHandlers(node);
+                }
+                // If the node *contains* new forms
+                else if (node.nodeType === 1) {
+                  const forms = node.querySelectorAll('form[id^="fxb_"]');
+                  forms.forEach(form => {
+                    console.log('A new Sitecore form was found inside a container:', form);
+                    window.injectTurnstileWidget(form);
+                    window.bindAjaxHandlers(form);
+                  });
+                }
+              });
+            });
+          });
+        
+          // Observe entire <body> for scenarios in which forms may be added or replaced for any reason
+          observer.observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        };
+
+        window.injectTurnstileWidget = function(sitecoreFormElement) {
+          const submitButton = sitecoreFormElement.querySelector('input[type="submit"], button[type="submit"]');
+          if (!submitButton){
+            // This can happen when the form is successfully submitted and is now displaying a thank you page
+            console.warn('Unable to locate submit button -- will not inject turnstile widget');
+            return;
+          }
+
+          const existingTurnstileWidget = sitecoreFormElement.querySelector('.turnstile-widget');
+          if (existingTurnstileWidget){
+            console.warn('Turnstile elements already present -- will not inject');
+            return;
+          }
+
+          const turnstileDiv = document.createElement("div");
+          turnstileDiv.className = sitecoreFormElement.id + "-turnstile turnstile-widget";
+          turnstileDiv.setAttribute("style", "display:none;");
+
+          submitButton.parentNode.insertBefore(turnstileDiv, submitButton);
+
+          let cdata = sitecoreFormElement.id
+            // Replace any characters that are NOT letters, numbers, underscores, or hyphens with a hyphen
+            .replace(/[^a-zA-Z0-9_-]/g, '-')
+            // Limit to 255 chars to comply with the Turnstile cData limit
+            .substring(0, 255);
+
+          const widgetId = turnstile.render(turnstileDiv, {
+            // https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/#configurations
+            sitekey: TURNSTILE_SITE_ID,
+            callback: (token) => window.turnstileCallback(token),
+            'error-callback': (errorCode) => window.turnstileErrorCallback(turnstileDiv, errorCode),
+            'before-interactive-callback': () => window.turnstileBeforeInteractiveCallback(turnstileDiv),
+            'size': TURNSTILE_SIZE_SETTING, 
+            'cData': cdata,
+            'theme': 'light'
+          });
+
+          if (widgetId == undefined) {
+            // TODO: handle unsuccessful invocation of turnstile render
+            console.error("Failed to render turnstile on", { turnstileDiv } )
+          } 
+          else {
+            console.debug("Rendered turnstile", { widgetId });
+          }
+        };
+
+        window.turnstileCallback = function(token) {
+          console.debug('Turnstile challenge returned the token / value:', token);
+        };
+
+        window.displayTurnstileErrorMessage = function(sitecoreFormElement) {
+          const submitButton = sitecoreFormElement.querySelector('input[type="submit"], button[type="submit"]');
+          if (!submitButton){
+            // Can occur when displaying a second form page that does not have a submit button
+            // There may be a scenario in which this needs to be handled instead of returning early
+            console.debug("No submit button found -- will not display widget");
+            return;
+          }
+
+          const existingErrorMessage = sitecoreFormElement.querySelector('.' + ERROR_MESSAGE_CONTAINER_SELECTOR_CLASS);
+          if (!existingErrorMessage) {
+            const errorDiv = document.createElement("div");
+
+            errorDiv.className = VISIBLE_ERROR_CONTAINER_CLASSES;
+            errorDiv.innerText = ERROR_MESSAGE;
+            errorDiv.style = ERROR_MESSAGE_CONTAINER_STYLE;
+
+            submitButton.parentNode.insertBefore(errorDiv, submitButton);
+          }
+        };
+
+        // Invoked when there is an error (e.g. network error or the challenge failed).
+        // If an error callback returns with a non-falsy result, Turnstile will assume that the error callback handled the error accordingly.
+        window.turnstileErrorCallback = function(turnstileWidgetElement, errorCode) {
+          console.warn('An error occurred while fetching Turnstile token.', { turnstileWidgetElement }, { errorCode });
+
+          // Display the widget so that the user can see the error
+          turnstileWidgetElement.style = VISIBLE_WIDGET_CONTAINER_STYLES;
+
+          // Display error message calling for user to perform the verification
+          window.displayTurnstileErrorMessage(turnstileWidgetElement.closest('form')) 
+          
+          return false;
+        };
+
+        window.turnstileBeforeInteractiveCallback = function(turnstileWidgetElement) {
+          // Display the widget so that the user can interact with it
+          turnstileWidgetElement.style = VISIBLE_WIDGET_CONTAINER_STYLES;
+        };
+
+        
+
+        // Called when the form receives a non 200 response after submitting
+        window.handleFormFailure = function (args, contextElement) {
+          console.debug("Form submission failed", {args}, {contextElement});
+
+          const errorCode = args?.status;
+          const responseText = args?.responseText;
+
+          // TODO: consider case when status is something other than 400; particularly 500 errors
+          if (args?.status == "400" || args?.status == 400){
+            console.debug('Error response code', errorCode);
+            console.debug('Response text', responseText);
+          }
+
+          const form = contextElement?.closest?.('form');
+          if (!form) {
+            console.warn("Could not locate form from context element.");
+            return;
+          }
+
+          const submitButton = form.querySelector('input[type="submit"], button[type="submit"]');
+          if (!submitButton){
+            // Can occur when displaying a second form page that does not have a submit button
+            // There may be a scenario in which this needs to be handled instead of returning early
+            console.debug("No submit button found -- will not display widget");
+            return;
+          }
+
+          // Display the interactive widget either via window.injectTurnstileWidget(form); or by displaying the hidden managed widget
+          const widget = form.querySelector('.turnstile-widget');
+          if (widget){
+            turnstile.reset(widget);
+            widget.style = VISIBLE_WIDGET_CONTAINER_STYLES;
+          } else {
+            // TODO: handle
+            console.error('No turnstile present in the form');
+          }
+
+          window.displayTurnstileErrorMessage(form);
+
+          // Re-enable the button and change text back to "Submit"
+          submitButton.disabled = false;
+
+          if (submitButton.tagName === 'INPUT') {
+            submitButton.value = "Submit";
+          } else {
+            submitButton.innerText = "Submit";
+          }
+
+        };
+
+
+        window.onTurnstileLoaded = function () {
+
+          // Ensure the DOM is ready in case Turnstile loads fast on cache hit
+          const domReady = () =>
+            document.readyState === 'loading'
+              ? new Promise(res => document.addEventListener('DOMContentLoaded', res, { once: true }))
+              : Promise.resolve();
+        
+          domReady().then(() => {
+        
+            // Initial pass over any forms already on the page
+            document.querySelectorAll(SITECORE_FORMS_SELECTOR).forEach(form => {
+              window.injectTurnstileWidget(form);
+              window.bindAjaxHandlers(form);
+            });
+        
+            // Start observing for dynamically added / replaced forms
+            if (typeof window.attachGlobalSitecoreFormObserver === 'function') {
+              window.attachGlobalSitecoreFormObserver();
+            }
+          });
+        };
+        
+      </script>
+    <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a57fe02e9d358238',t:'MTc5NDI1OTM3Ng=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a57fe02e9d358238',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

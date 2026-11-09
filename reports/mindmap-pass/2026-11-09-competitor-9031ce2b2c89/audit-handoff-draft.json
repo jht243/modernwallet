@@ -1,0 +1,314 @@
+{
+ "version": 1,
+ "siteId": "jht243/modernwallet",
+ "canonicalBase": "https://themodernwallet.com",
+ "jobId": "competitor-9031ce2b2c89",
+ "routes": [
+  "/guides/what-is-a-fiduciary/",
+  "/guides/what-does-a-financial-advisor-do/",
+  "/guides/questions-to-ask-a-financial-advisor/",
+  "/guides/what-is-a-robo-advisor/",
+  "/guides/what-is-a-cfp/",
+  "/guides/how-to-make-a-financial-plan/"
+ ],
+ "producer": "competitor-orchestrator",
+ "nextAction": "Independently audit the exact rendered candidate for each new guide and the seven link-only edited pages under the HIGH-tier budget; record PASS or FAIL with concrete findings per route.",
+ "previous": {
+  "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/writer-handoff.json",
+  "sha256": "cc570ed7722575160ceb96af68ad767ba3e0c9c066f27d27aca71e1afbfa94a8"
+ },
+ "candidates": [
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/rendered-snapshot.json",
+   "sha256": "111066431996b1d3a6906de00eec138125360ffcae46e1dc0b42072c8874af48"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/rendered-manifest.json",
+   "sha256": "e356a9af770fb672e0e62b3d02da423ccdc172c59fc0fd2731f0d940b2327da1"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/approval-manifest.json",
+   "sha256": "23cf3b7cf6eb8e96cd8d7511f76c934cbf987cb99281e9720006e63291f2441e"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/chart-review.json",
+   "sha256": "314aec70853b9c0443f14c694bf6c504076f4e891bbaa0bf592cbf2e91506aa1"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-is-a-fiduciary.json",
+   "sha256": "fb0ce9daca2bf47099cdad72235f950353ef396feded20cfca2eb2b76cf52c9c"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-does-a-financial-advisor-do.json",
+   "sha256": "e5fb509bee7bb05e50019b4c87b3f0e285dcee5ccf0299b6a43f9953f1b88916"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/questions-to-ask-a-financial-advisor.json",
+   "sha256": "1fb1f6f71564920c3a0974a577954fcedf8516e0245401740e73caf7a58798bc"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-is-a-robo-advisor.json",
+   "sha256": "db69c424765de4075a70f7bc805c3f635e4b8aeb1cf98222c975e9a958e0ea75"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-is-a-cfp.json",
+   "sha256": "28d75881a56b3417040c4b49fb644f2faef296df70e388bd20e5d274c3500181"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/how-to-make-a-financial-plan.json",
+   "sha256": "5830e4fcaccd2b5578594e12dc69ea4f6e590d2adba177ece0f53d420b3100d7"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-is-a-fiduciary.json.meta.json",
+   "sha256": "a72469d210090e24ece7f4ddaa2aff1e7df1a51197a8c0d0a92177c74fba486d"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-does-a-financial-advisor-do.json.meta.json",
+   "sha256": "bc09222e8c92b92ef06b2fa9cd14fb8691db12f2a85f555e1075fd752a374ad5"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/questions-to-ask-a-financial-advisor.json.meta.json",
+   "sha256": "26223d96aa40f3181849df082b77bd215bf9a741f948a0931268864f6286aa7e"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-is-a-robo-advisor.json.meta.json",
+   "sha256": "2c02abca29de459e38f009d04eed7c887f302c50c9e9b19ade8f8b902352ac62"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-is-a-cfp.json.meta.json",
+   "sha256": "02212bf854de11b662df31b190b8cb8d3cb45809e2faa128b7241a7b4a8cc552"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/how-to-make-a-financial-plan.json.meta.json",
+   "sha256": "120eae2964e8edb1585259d6128e40e65b6d5aa54423c14153dd5dbcff99c69c"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/prompts/what-is-a-fiduciary.prompt.md",
+   "sha256": "66b9eb870d53c2988ce64e1dafffa8cfd3d5dd00202adcb27aec8355340e58de"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/prompts/what-does-a-financial-advisor-do.prompt.md",
+   "sha256": "443047183382455954b7dcd2b0d59f54db0776cb75d4c1d85d81cb031dbd47fd"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/prompts/questions-to-ask-a-financial-advisor.prompt.md",
+   "sha256": "c5db75775a490254aaa3326843811d3eb4a1d4b90bebb37d9803d08f02a0cf0c"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/prompts/what-is-a-robo-advisor.prompt.md",
+   "sha256": "ea57d33e0315e13a11449667c18d600d7451b9156b388509df67f69a3883bb08"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/prompts/what-is-a-cfp.prompt.md",
+   "sha256": "a786e283c4c0615c1a1ab3691fb695b68a8c65f2de75cd48b99283ab2bea0572"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/prompts/how-to-make-a-financial-plan.prompt.md",
+   "sha256": "a91126a4b69382c7721ed57bbbe0586d31db0e7ee9865a93f3970222242c5452"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/prompts/allowed-urls.txt",
+   "sha256": "22001220923bccfad78cfbfe5fea101850d30e80204a293c8c2f6c45d9c23043"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/rung0-repairs.txt",
+   "sha256": "8c6e49f35b22ca52b1901de22493055fa77a9e4c91e271c979f8073ee43ebd9e"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_compare_financial-advisor-vs-financial-planner_-round1-reservation.json",
+   "sha256": "d790e4b9050b008b6c5964f90e5413a0518f6dfbda955e157df2e363114f6b9d"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_guides_financial-advisor-worth-it_-round1-reservation.json",
+   "sha256": "f9a987959a6b12c588c69d8ea5ee3287df989247d1249988d9442b2b925f8922"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_guides_financial-planning-calculator_-round1-reservation.json",
+   "sha256": "05b4c90b3f0e0c32f0a416cb29326c75648763b70d4696572e59d73a9b6bad8d"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_guides_financial-planning-for-30-year-olds_-round1-reservation.json",
+   "sha256": "fd178ae7a94437bec59caa7a14a6beb8286e9fcf2a45be2f29db5525a6c28eaf"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_guides_how-to-choose-a-financial-advisor_-round1-reservation.json",
+   "sha256": "8f20a41606b159e68dbb82a9fcce502b55b6d670642e1413a7a9e7aacabf5b39"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_guides_what-is-a-cfa_-round1-reservation.json",
+   "sha256": "3dd7c55c1f4910d8908f014efc404e53c0a7ed3cdb502e330f291727c7df4442"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/edited_roundup_best-robo-advisors_-round1-reservation.json",
+   "sha256": "a0c3df4dba8d952ad0e4493ab05d6d39f2fecab182843511afe090528ef1db35"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/how-to-make-a-financial-plan-round1-reservation.json",
+   "sha256": "1eab2c38775e799a279f5fae0886c2e43fbeb01120cbff6f1a517dbfe060b8ca"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/questions-to-ask-a-financial-advisor-round1-reservation.json",
+   "sha256": "7a13ace6dbddcfc400a58dac1dec8ee3e0385bc15b571b296e382c1779e9ce24"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/what-does-a-financial-advisor-do-round1-reservation.json",
+   "sha256": "d76d23da9e0d5cc722f45d716afda878bd52423e3488859fc5fd95a8cf39eb6d"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/what-is-a-cfp-round1-reservation.json",
+   "sha256": "4fface2addd5237ed77ec98d05e03f8a281287d3dbc7472d8b23127645a93f7f"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/what-is-a-fiduciary-round1-reservation.json",
+   "sha256": "6b9581aa047f8ecd8ae330d4a8a7e029e185e796ba486e544cbfa1484f0e49df"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/what-is-a-robo-advisor-round1-reservation.json",
+   "sha256": "e2f55346a9749113a164284ab7167d413055f3c95a2652594c53333283b762a0"
+  }
+ ],
+ "sources": [
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/clayton-excerpt.txt",
+   "sha256": "49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, credential-requirement or page change at the cited body",
+   "scope": "SEC statement on adviser fiduciary duty and Regulation Best Interest"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/adviser-vs-broker.txt",
+   "sha256": "3097f09d12f1911c5b97d30624c147d0d440ded32a60177e0329058f2ae2a4d2",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, credential-requirement or page change at the cited body",
+   "scope": "Investor.gov investment adviser description and best-interest sentence"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/working-with-pro.txt",
+   "sha256": "b767b5d82cb88f2ca63fbd349848e8ee82781c95202f223afa93dffab08d4134",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, credential-requirement or page change at the cited body",
+   "scope": "Investor.gov registration check, Form CRS, tricky titles"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/form-crs.txt",
+   "sha256": "183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, credential-requirement or page change at the cited body",
+   "scope": "Investor.gov relationship summary contents"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/robo-bulletin.txt",
+   "sha256": "ea2247a0e610fc9c900ecaabd28610061a6acccef298571cde8adeeeafba87fc",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, credential-requirement or page change at the cited body",
+   "scope": "SEC robo-adviser investor bulletin 2017"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/robo-glossary.txt",
+   "sha256": "bd4701a5d263890807e0e89e4ad7057c21e63576713c54b36b6d84c8cdd2ad68",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, credential-requirement or page change at the cited body",
+   "scope": "Investor.gov robo-adviser definition"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfp-process.txt",
+   "sha256": "992f25adac67207c7ed1d6bdee1959a06896ae41ddeff17e211368b301b954ff",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, credential-requirement or page change at the cited body",
+   "scope": "CFP Board certification requirements"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfp-fiduciary.txt",
+   "sha256": "b7ac6ab927be2d3ae6713e5242ac107bc8c063da284f3592bfe91d793ce2a303",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, credential-requirement or page change at the cited body",
+   "scope": "CFP Board code and practice standards"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/finra-credentials.txt",
+   "sha256": "e89529a8c530b38ec94c8c7cfaf181fef85ce35c2e6be592576bec356b26c090",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, credential-requirement or page change at the cited body",
+   "scope": "FINRA professional designations database"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfpb-credit-counseling.txt",
+   "sha256": "1074249df529d6ad93a2c75888e13cd494c60c8c9d876ad7fdb96f6b85cd5e9f",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, credential-requirement or page change at the cited body",
+   "scope": "CFPB credit counseling page"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/nfcc.txt",
+   "sha256": "789432b88c2e513a83d57a3c4adf77bdc8b2192609c7485b8571c82dd0005fb0",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, credential-requirement or page change at the cited body",
+   "scope": "NFCC counseling overview"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfpb-emergency.txt",
+   "sha256": "4713c8f3c6903bf415bdaa82e044461af224674ef434bdba696c2da78e1c799b",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, credential-requirement or page change at the cited body",
+   "scope": "CFPB emergency fund guide"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/crs-sample.pdf",
+   "sha256": "5ebd259859b527ccd53703b0a2577b4801a162766ed22db1af4b38245f27a78f",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, credential-requirement or page change at the cited body",
+   "scope": "Registered firm Form CRS conversation starters"
+  }
+ ],
+ "findings": [
+  {
+   "id": "chart-review-round1-F1",
+   "status": "resolved",
+   "evidence": "Resolved before writing; see reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/chart-review-FAIL-round1.md and the passing re-review in chart-review.json."
+  },
+  {
+   "id": "chart-review-round1-F2",
+   "status": "resolved",
+   "evidence": "Resolved before writing; see reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/chart-review-FAIL-round1.md and the passing re-review in chart-review.json."
+  },
+  {
+   "id": "chart-review-round1-F3",
+   "status": "resolved",
+   "evidence": "Resolved before writing; see reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/chart-review-FAIL-round1.md and the passing re-review in chart-review.json."
+  },
+  {
+   "id": "chart-review-round1-F4",
+   "status": "resolved",
+   "evidence": "Resolved before writing; see reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/chart-review-FAIL-round1.md and the passing re-review in chart-review.json."
+  },
+  {
+   "id": "chart-review-round1-F5",
+   "status": "resolved",
+   "evidence": "Resolved before writing; see reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/chart-review-FAIL-round1.md and the passing re-review in chart-review.json."
+  },
+  {
+   "id": "chart-review-round1-F6",
+   "status": "resolved",
+   "evidence": "Resolved before writing; see reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/chart-review-FAIL-round1.md and the passing re-review in chart-review.json."
+  },
+  {
+   "id": "phase4-advisory-1",
+   "status": "open",
+   "evidence": "Phase 4 must check intent-answered-late, Title Case headings, 1,200-word floors, no regulated/unregulated claim about coaches or counselors, A6 H2s match the title, A3 labels non-sourced red flags as editorial judgment (chart-review.json evidence)."
+  },
+  {
+   "id": "writer-flag-claimcheck-emptied",
+   "status": "open",
+   "evidence": "content_gen meta.guards.flags for every page says sections were emptied by the claim check; sections do contain text now, but the auditor must read every section for sentences the claim check removed leaving gaps or non-answers (e.g. what-is-a-fiduciary FAQ first answer does not directly answer the question)."
+  },
+  {
+   "id": "writer-flag-number-2000",
+   "status": "open",
+   "evidence": "what-is-a-cfp meta.guards.numbers_not_in_facts lists 2000; verify it is not an unsupported figure."
+  }
+ ],
+ "reviewCounters": {
+  "reviews": 0,
+  "reworks": 0
+ }
+}

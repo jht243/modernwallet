@@ -1,0 +1,229 @@
+coverage_lookup: 6 candidate(s) vs 816 repo pages / 829 sitemap routes (https://themodernwallet.com) / 0 redirects / 1119 past-chart lines
+
+### /guides/what-is-a-fiduciary  — row - · create new content
+keyword: what is a fiduciary / what is a fiduciary financial advisor
+reader question (new page intent): What is a fiduciary, and does my financial advisor have to be one?
+lookup terms: fiduciary financial advisor   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/what-is-a-fiduciary  [EXACT SLUG · in sitemap · src/data/guides.ts · topic match 0.67 on fiduciary advisor]
+    title: What Is a Fiduciary and Which Advisors Must Act for You
+    desc:  A fiduciary must act in your best interest. See which standard binds advisers, brokers and Certified Financial Planner professionals, and how to check.
+- /guides/what-does-a-financial-advisor-do  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on financial advisor]
+    title: What Does a Financial Advisor Do Versus a Credit Counselor
+    desc:  A financial advisor gives ongoing investment advice, monitors your holdings and may add planning. Credit counselors help with budgets and debts.
+- /guides/how-to-choose-a-financial-advisor  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on financial advisor]
+    title: How to Choose a Financial Advisor: A Decision Guide
+    desc:  Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+- /guides/financial-advisor-worth-it  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on financial advisor]
+    title: Is a Financial Advisor Worth It? What to Know
+    desc:  Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+- /compare/financial-advisor-vs-financial-planner  [in sitemap · src/data/comparisons.ts · topic match 0.67 on financial advisor]
+    title: Financial Advisor vs Financial Planner: Key Differences
+    desc:  Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+- /compare/financial-advisor-vs-cpa  [in sitemap · src/data/comparisons.ts · topic match 0.67 on financial advisor]
+    title: Financial Advisor vs CPA: Who Should You Hire?
+    desc:  Financial advisor vs CPA: investment management versus tax and accounting expertise, plus when the CPA/PFS credential means one person can do both.
+- /guides/what-is-a-cfp  [in sitemap · src/data/guides.ts · topic match 0.67 on fiduciary financial]
+    title: Certified Financial Planner Requirements and Fiduciary Duty
+    desc:  A Certified Financial Planner (CFP) has met education, exam, experience and ethics rules and must act as a fiduciary when giving financial advice.
+- /guides/what-is-a-ctfa  [in sitemap · src/data/guides.ts · topic match 0.67 on fiduciary advisor]
+    title: What Is a Certified Trust and Fiduciary Advisor (CTFA)?
+    desc:  What is a CTFA (Certified Trust and Fiduciary Advisor)? See who awards it and how it differs from a CFP, CFA, or ChFC.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet fiduciary). Head 'what is a fiduciary / what is a fiduciary financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/what-is-
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-does-a-financial-advisor-do). Head 'what does a financial advisor do / financial counselor / financial coach': autocomplete estimate only, NOT measured (no prov
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet questions-ask-financial-advisor). Head 'questions to ask a financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/how-to-ch
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-robo-advisor). Head 'what is a robo advisor / robo advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /roundup/best-robo-adviso
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet certified-financial-planner). Head 'what is a certified financial planner / what is a cfp': autocomplete estimate only, NOT measured (no provider keys). lookup: /gui
+- 2026-11-09-competitor-9031ce2b2c89.md [exclusions] - NerdWallet find-a-Black-financial-advisor: skipped as an identity-specific directory we cannot verify objectively; reader job served by A3 and the existing how-to-choose guide.
+Commits naming the topic: none
+Same run overlap: row - /guides/what-does-a-financial-advisor-do (0.67); row - /guides/questions-to-ask-a-financial-advisor (0.67)
+
+### /guides/what-does-a-financial-advisor-do  — row - · create new content
+keyword: what does a financial advisor do / financial counselor / financial coach
+reader question (new page intent): What does a financial advisor do for you, and how do credit counselors and coaches differ?
+lookup terms: financial advisor counselor coach   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/what-does-a-financial-advisor-do  [EXACT SLUG · in sitemap · src/data/guides.ts · topic match 0.75 on financial advisor counselor]
+    title: What Does a Financial Advisor Do Versus a Credit Counselor
+    desc:  A financial advisor gives ongoing investment advice, monitors your holdings and may add planning. Credit counselors help with budgets and debts.
+- /guides/how-to-choose-a-financial-advisor  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.5 on financial advisor]
+    title: How to Choose a Financial Advisor: A Decision Guide
+    desc:  Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+- /guides/financial-advisor-worth-it  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.5 on financial advisor]
+    title: Is a Financial Advisor Worth It? What to Know
+    desc:  Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+- /compare/financial-advisor-vs-financial-planner  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial advisor]
+    title: Financial Advisor vs Financial Planner: Key Differences
+    desc:  Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+- /compare/financial-advisor-vs-cpa  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial advisor]
+    title: Financial Advisor vs CPA: Who Should You Hire?
+    desc:  Financial advisor vs CPA: investment management versus tax and accounting expertise, plus when the CPA/PFS credential means one person can do both.
+- /compare/financial-advisor-vs-wealth-manager  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial advisor]
+    title: Financial Advisor vs Wealth Manager: What's Different
+    desc:  Financial advisor vs wealth manager: minimums, services, and cost compared, so you know which one actually fits your net worth and needs.
+- /guides/questions-to-ask-a-financial-advisor  [in sitemap · src/data/guides.ts · topic match 0.5 on financial advisor]
+    title: Questions To Ask a Financial Advisor Before You Hire
+    desc:  Ask these questions before hiring a financial advisor: how they are paid, their duty to you, fees on $10,000 and any disciplinary history.
+- /guides/financial-advisor-conflicts-of-interest  [in sitemap · src/data/guides.ts · topic match 0.5 on financial advisor]
+    title: How to Spot Financial Advisor Conflicts of Interest
+    desc:  Learn how financial advisor conflicts of interest work, fee-only vs fee-based differences, disclosure forms, and the exact questions to ask.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet fiduciary). Head 'what is a fiduciary / what is a fiduciary financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/what-is-
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-does-a-financial-advisor-do). Head 'what does a financial advisor do / financial counselor / financial coach': autocomplete estimate only, NOT measured (no prov
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet questions-ask-financial-advisor). Head 'questions to ask a financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/how-to-ch
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-robo-advisor). Head 'what is a robo advisor / robo advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /roundup/best-robo-adviso
+- 2026-11-09-competitor-9031ce2b2c89.md [exclusions] - NerdWallet find-a-Black-financial-advisor: skipped as an identity-specific directory we cannot verify objectively; reader job served by A3 and the existing how-to-choose guide.
+- 2026-11-09-competitor-9031ce2b2c89.md [exclusions] - NerdWallet financial counselor and financial coach: merged into A2 section 3; stand-alone pages blocked by unretrievable AFCPE/coach sources (not fabricated).
+Commits naming the topic: none
+Same run overlap: row - /guides/what-is-a-fiduciary (0.5); row - /guides/questions-to-ask-a-financial-advisor (0.5)
+
+### /guides/questions-to-ask-a-financial-advisor  — row - · create new content
+keyword: questions to ask a financial advisor
+reader question (new page intent): What questions should I ask a financial advisor before hiring them?
+lookup terms: question ask financial advisor   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/questions-to-ask-a-financial-advisor  [EXACT SLUG · in sitemap · src/data/guides.ts · topic match 1.0 on question ask financial advisor]
+    title: Questions To Ask a Financial Advisor Before You Hire
+    desc:  Ask these questions before hiring a financial advisor: how they are paid, their duty to you, fees on $10,000 and any disciplinary history.
+- /guides/what-does-a-financial-advisor-do  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.5 on financial advisor]
+    title: What Does a Financial Advisor Do Versus a Credit Counselor
+    desc:  A financial advisor gives ongoing investment advice, monitors your holdings and may add planning. Credit counselors help with budgets and debts.
+- /guides/how-to-choose-a-financial-advisor  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.5 on financial advisor]
+    title: How to Choose a Financial Advisor: A Decision Guide
+    desc:  Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+- /guides/financial-advisor-worth-it  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.5 on financial advisor]
+    title: Is a Financial Advisor Worth It? What to Know
+    desc:  Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+- /compare/financial-advisor-vs-financial-planner  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial advisor]
+    title: Financial Advisor vs Financial Planner: Key Differences
+    desc:  Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+- /compare/financial-advisor-vs-cpa  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial advisor]
+    title: Financial Advisor vs CPA: Who Should You Hire?
+    desc:  Financial advisor vs CPA: investment management versus tax and accounting expertise, plus when the CPA/PFS credential means one person can do both.
+- /compare/financial-advisor-vs-wealth-manager  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial advisor]
+    title: Financial Advisor vs Wealth Manager: What's Different
+    desc:  Financial advisor vs wealth manager: minimums, services, and cost compared, so you know which one actually fits your net worth and needs.
+- /guides/questions-to-ask-a-mortgage-lender  [in sitemap · src/data/guides.ts · topic match 0.5 on question ask]
+    title: Questions to Ask a Mortgage Lender Before You Apply
+    desc:  Learn the essential questions to ask a mortgage lender. Compare loan programs, fees, rate locks, and closing costs using standard Loan Estimates.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-does-a-financial-advisor-do). Head 'what does a financial advisor do / financial counselor / financial coach': autocomplete estimate only, NOT measured (no prov
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet questions-ask-financial-advisor). Head 'questions to ask a financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/how-to-ch
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-robo-advisor). Head 'what is a robo advisor / robo advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /roundup/best-robo-adviso
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet certified-financial-planner). Head 'what is a certified financial planner / what is a cfp': autocomplete estimate only, NOT measured (no provider keys). lookup: /gui
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-financial-plan). Head 'how to make a financial plan': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/financial-planning-calcu
+- 2026-11-09-competitor-9031ce2b2c89.md [exclusions] - NerdWallet find-a-Black-financial-advisor: skipped as an identity-specific directory we cannot verify objectively; reader job served by A3 and the existing how-to-choose guide.
+Commits naming the topic: none
+Same run overlap: row - /guides/what-is-a-fiduciary (0.5); row - /guides/what-does-a-financial-advisor-do (0.5)
+
+### /guides/what-is-a-robo-advisor  — row - · create new content
+keyword: what is a robo advisor / robo advisor
+reader question (new page intent): What is a robo-advisor, and is one right for me?
+lookup terms: robo advisor   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/what-is-a-robo-advisor  [EXACT SLUG · in sitemap · src/data/guides.ts · topic match 1.0 on robo advisor]
+    title: What a Robo-Advisor Is and When Using One Makes Sense
+    desc:  A robo-advisor builds and manages a portfolio from an online questionnaire. See who it fits, what it cannot do and what to check first.
+- /roundup/best-robo-advisors  [in sitemap · src/data/roundups.ts · topic match 1.0 on robo advisor]
+    title: Best Robo Advisors of 2026: Fees and Minimums Compared
+    desc:  Compare the best robo advisors of 2026 by advisory fee, account minimum, tax-loss harvesting threshold, and what adding a human CFP costs.
+- /compare/ai-investing-vs-robo-advisors  [in sitemap · src/data/comparisons.ts · topic match 1.0 on robo advisor]
+    title: AI Investing vs Robo-Advisor: Which Fits Your Goals?
+    desc:  Compare AI investing apps and robo-advisors on fees, control, and automation to see which setup matches your portfolio goals and trading style.
+- /compare/betterment-vs-wealthfront  [in sitemap · src/data/comparisons.ts · topic match 1.0 on robo advisor]
+    title: Betterment vs Wealthfront: Robo-Advisor Fees Compared
+    desc:  Betterment vs Wealthfront compared on management fees, account minimums, direct indexing, and advisor access so you can pick the right robo-advisor.
+- /guides/what-does-a-financial-advisor-do  [in sitemap · src/data/guides.ts · topic match 0.5 on advisor]
+    title: What Does a Financial Advisor Do Versus a Credit Counselor
+    desc:  A financial advisor gives ongoing investment advice, monitors your holdings and may add planning. Credit counselors help with budgets and debts.
+- /guides/what-is-a-fiduciary  [in sitemap · src/data/guides.ts · topic match 0.5 on advisor]
+    title: What Is a Fiduciary and Which Advisors Must Act for You
+    desc:  A fiduciary must act in your best interest. See which standard binds advisers, brokers and Certified Financial Planner professionals, and how to check.
+- /guides/how-to-choose-a-financial-advisor  [in sitemap · src/data/guides.ts · topic match 0.5 on advisor]
+    title: How to Choose a Financial Advisor: A Decision Guide
+    desc:  Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+- /guides/financial-advisor-worth-it  [in sitemap · src/data/guides.ts · topic match 0.5 on advisor]
+    title: Is a Financial Advisor Worth It? What to Know
+    desc:  Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet fiduciary). Head 'what is a fiduciary / what is a fiduciary financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/what-is-
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-does-a-financial-advisor-do). Head 'what does a financial advisor do / financial counselor / financial coach': autocomplete estimate only, NOT measured (no prov
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet questions-ask-financial-advisor). Head 'questions to ask a financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/how-to-ch
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-robo-advisor). Head 'what is a robo advisor / robo advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /roundup/best-robo-adviso
+- 2026-11-09-competitor-9031ce2b2c89.md [exclusions] - NerdWallet find-a-Black-financial-advisor: skipped as an identity-specific directory we cannot verify objectively; reader job served by A3 and the existing how-to-choose guide.
+- 2026-11-09-competitor-9031ce2b2c89.md [exclusions] - Lens 3 vs/alternatives/pricing: advisor-category entities (robo-advisors) already covered by /roundup/best-robo-advisors; no named vendor in the brief, so no vs/pricing rows forced.
+Commits naming the topic: none
+Same run overlap: row - /guides/what-is-a-fiduciary (0.5); row - /guides/what-does-a-financial-advisor-do (0.5); row - /guides/questions-to-ask-a-financial-advisor (0.5)
+
+### /guides/what-is-a-cfp  — row - · create new content
+keyword: what is a certified financial planner / what is a cfp
+reader question (new page intent): What is a Certified Financial Planner (CFP), and what does it take to earn the credential?
+lookup terms: cfp certified financial planner   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/what-is-a-cfp  [EXACT SLUG · in sitemap · src/data/guides.ts · topic match 1.0 on cfp certified financial planner]
+    title: Certified Financial Planner Requirements and Fiduciary Duty
+    desc:  A Certified Financial Planner (CFP) has met education, exam, experience and ethics rules and must act as a fiduciary when giving financial advice.
+- /compare/financial-advisor-vs-financial-planner  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial planner]
+    title: Financial Advisor vs Financial Planner: Key Differences
+    desc:  Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-09.md [table] | 6 | **Lens 2 — AI financial advisors (adjacent audience: people wanting AI advice, not a bot).** "ai financial advisor" 1900/kd30 (CPC $23), "ai wealth management" 880/kd3 (consumer slice). **Gate RECLASSIFY:** a stand
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet fiduciary). Head 'what is a fiduciary / what is a fiduciary financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/what-is-
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet certified-financial-planner). Head 'what is a certified financial planner / what is a cfp': autocomplete estimate only, NOT measured (no provider keys). lookup: /gui
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-financial-plan). Head 'how to make a financial plan': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/financial-planning-calcu
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/how-to-make-a-financial-plan  — row - · create new content
+keyword: how to make a financial plan
+reader question (new page intent): How do I make a financial plan?
+lookup terms: financial   format cues: pricing
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/how-to-make-a-financial-plan  [EXACT SLUG · in sitemap · src/data/guides.ts · topic match 1.0 on financial · same format: pricing]
+    title: How to Make a Financial Plan Step by Step for Your Household
+    desc:  Make a financial plan: list your finances, set dated goals, test your course, start an emergency fund, act and review on a schedule. Free calculators linked.
+- /guides/what-is-a-cfa  [in sitemap · src/data/guides.ts · topic match 1.0 on financial · same format: pricing]
+    title: What Is a Chartered Financial Analyst (CFA)?
+    desc:  What is a CFA? See the exam structure, real pass rates, total cost, eligibility rules, and when the charter actually matters for choosing an advisor.
+- /guides/what-is-a-cfp  [in sitemap · src/data/guides.ts · topic match 1.0 on financial]
+    title: Certified Financial Planner Requirements and Fiduciary Duty
+    desc:  A Certified Financial Planner (CFP) has met education, exam, experience and ethics rules and must act as a fiduciary when giving financial advice.
+- /guides/what-does-a-financial-advisor-do  [in sitemap · src/data/guides.ts · topic match 1.0 on financial]
+    title: What Does a Financial Advisor Do Versus a Credit Counselor
+    desc:  A financial advisor gives ongoing investment advice, monitors your holdings and may add planning. Credit counselors help with budgets and debts.
+- /guides/how-to-choose-a-financial-advisor  [in sitemap · src/data/guides.ts · topic match 1.0 on financial]
+    title: How to Choose a Financial Advisor: A Decision Guide
+    desc:  Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+- /guides/financial-advisor-worth-it  [in sitemap · src/data/guides.ts · topic match 1.0 on financial]
+    title: Is a Financial Advisor Worth It? What to Know
+    desc:  Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+- /guides/financial-planning-calculator  [in sitemap · src/data/guides.ts · topic match 1.0 on financial]
+    title: How to Use a Financial Planning Calculator
+    desc:  A financial planning calculator turns your income and goals into one number: your savings rate, retirement readiness, or net worth. Free tools inside.
+- /retirement/fire-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 1.0 on financial]
+    title: FIRE Calculator: Find Your FIRE Number
+    desc:  Use our FIRE calculator to find your Financial Independence number, project your early retirement date, and compare lean FIRE, FIRE, and fat FIRE targets.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-financial-plan). Head 'how to make a financial plan': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/financial-planning-calcu
+Commits naming the topic: none
+Same run overlap: row - /guides/what-is-a-fiduciary (1.0); row - /guides/what-does-a-financial-advisor-do (1.0); row - /guides/questions-to-ask-a-financial-advisor (1.0); row - /guides/what-is-a-cfp (1.0)
+

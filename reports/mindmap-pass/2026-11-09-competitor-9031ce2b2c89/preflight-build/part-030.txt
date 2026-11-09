@@ -1,0 +1,45 @@
+e same reader intent, or that omits a `lookup:` entry, fails the gate. The tool runs the same everywhere (cloud included), so when no reviewer subagent can be spawned the orchestrator runs it inline and records that it did.
+2. For each row, decide whether the work is **already shipped** per the three-bucket duplicate definitions (page created / body section added / metadata rewritten for that term).
+3. Return `KEEP` or `DROP — already shipped in <SHA>`, SHA cited.
+4. **Cluster rows get TWO extra checks (Lens 2 integrity):**
+   - **Real evidence:** the cluster's member phrases must actually come from SEMRUSH/Autocomplete/the brief — not invented. A cluster built on unsupported phrases → `DROP — unsupported`.
+   - **Right lever:** verify no existing page is already the dedicated, intent-matched answer. If one is, `create new content` is wrong → `RECLASSIFY — <correct bucket>` (or `DROP` if fully served). Conversely, if a row enriches a page that isn't a reasonable home, `RECLASSIFY — create new content`.
+   - Every cluster row in the main table must have a matching row in the `## Emerging search patterns (clusters)` block (same bucket + target). A mismatch fails the gate.
+
+**Gate rule:** if the reviewer flags ANY row as already-shipped or unsupported, remove it from the table (and clusters block) and record it under exclusions. Apply any `RECLASSIFY` in BOTH the table and the block. Re-run the reviewer on the revised chart. **Max 2 rework attempts.** The chart saves only once the reviewer confirms **zero** surviving rows duplicate shipped work, every cluster row is evidence-supported and correctly leveled, and table + block agree. A row without a cited SHA (or "no prior commits touch this file/route") is unverified and fails the gate. If issues remain after 2 attempts, STOP and report rather than saving a known-bad chart.
+
+## After saving
+Print: `Chart saved to reports/mindmap-pass/<TODAY>.md ({N} proposed rows, {C} emerging clusters). Interpreted brief: <one line>.` Control returns to Phase 0, which loads this file, runs the staleness check (passes — brand new), and presents the manifest gate.
+
+<!-- mindmap-execution-v1 -->
+Follow `_mindmap-execution.md` to save the full structured approval manifest, complete inspected per-page briefs and link placements, and independent preparation review. Render the actual chart using `mindmap-gates.py`; no handwritten abbreviated substitute. Complete feasibility/source research first; do not claim Phase 3 execution has occurred.
+<!-- /mindmap-execution-v1 -->
+
+[Source: .claude/commands/_workflow-efficiency.md]
+# Mindmap efficiency, owner rollout 2026-11-09
+
+Apply these optimizations inside the existing workflow and native publication path. Keep each site's instructions, authorizations, exclusions, professional-review requirements and release exceptions.
+
+Read complete applicable rules on the first visit. Preflight compiles only byte-identical paragraphs once, preserves every original source hash and verifies complete delivery. It never summarizes unique rules. Use workflow-delivery-serial.local.py for each unread part. Request parts 1 and 2 as TWO separate Bash tool calls in one assistant message, then 3 and 4, continuing in order. Each result contains one complete bounded part. Never concatenate, truncate or pipe instruction output.
+
+Keep the actual actor, phase, conversation and context epoch. Supply --context-id and --context-epoch to preflight prepare when using the portable protocol. Use --reuse only for this same role's completed reading in its actual uninterrupted context. Confirm in current words that rules remain accessible and understood and explain changed task application. Retain original explanations for unchanged instructions where an existing explanation protocol applies. New rules need reading and fresh explanations. Context loss, compaction or another worker requires a fresh reading. Independent reviewers retain their own context for corrections. No new per-document explanation gate is added.
+
+The main conversation dispatches work. Fresh research, writing, independent audit and mechanical publication stages receive their complete applicable instructions, original scope, current source evidence, latest candidate, unresolved findings and counters. Transfer these artifacts through existing canonical job records. Keep old versions retrievable without automatically loading whole conversations or superseded research. Preserve all original intake candidates and chart dispositions. Inspect underlying evidence, not only a handoff summary. Native foreground workers are preferred; asynchronous runtimes must consume actual completion notifications and continue automatically.
+
+Research existing coverage before opening vendor pages. Preserve the original target and reader intent. Already covered additions can reach an independently reviewed no-addition decision. New products, news, price changes, stale or contradictory evidence still need research. A failed lookup proves nothing and must not invalidate other independently verified coverage.
+
+Use the site's current LIGHT/STANDARD/HIGH profile and escalate consequential claims. Preserve full SEO. The 1/2/3 audit limits are ceilings including every recheck, not targets. Resume the same candidate, findings and counters after interruptions. Never reset a limit with a new filename or job. Use content-correction-scope.py for eligible small corrections. Keep factual, structural, safety and source changes in their required wider review. Preserve genuine prior passes on exact unchanged pages. Mechanical output never creates an editorial PASS.
+
+Use one full generation for each original page/job. Correct the retained candidate from actual independent findings within its remaining review budget. A writer's internal claim checks follow the applicable risk ceiling and return unresolved doubts to the independent auditor. Different output directories do not justify regeneration. Keep build, full-render, link, source-ownership, hosting, exact-live and indexing checks on the native release path. Publication must finish automatically when its existing gates permit it.
+
+## Canonical stage handoffs
+
+On the portable protocol, WRITE, AUDIT and PUBLISH require --handoff CURRENT.json. Preserve the original canonical job across retries. Before dispatching a stage, save a draft handoff using the existing native record schema. Include version 1, siteId from this repository's content-review-policy.json, actual canonicalBase, jobId, producer, nextAction, routes, candidates, sources, findings and reviewCounters. candidates and sources use actual path/sha256 references. Each source retains its checkedAt, refreshWhen and scope. Each finding retains its stable id, status and concrete evidence. reviewCounters retains the actual reviews and reworks already performed. Reference the preceding handoff in previous with its actual hash. Never initialize new zero counters to evade history.
+
+Seal the worker's actual draft with python3 .claude/tools/workflow-handoff.py seal --draft DRAFT.json --out NEW_IMMUTABLE.json. The helper freezes exact underlying artifacts and validates scope/history. It never writes understanding, findings or a PASS. Supply the sealed path with the next stage's preflight --handoff. Preflight delivers a focused current task and checks the full underlying chain mechanically. The receiving worker inspects current artifacts and supporting sources. Old conversations and obsolete drafts remain retrievable without being loaded into every new worker.
+
+An AUDIT handoff retains a distinct producer and reviewer. PUBLISH additionally requires actual snapshot and review references, validated by the site's existing rendered-review and native release gates. Preserve qualifying paid-client/upsell exceptions and all their real evidence. Use workflow-handoff.py reconcile-findings only with an actual independent preparation PASS explicitly resolving those finding IDs. Never infer that a generic PASS resolves unrelated findings. No extra planned human gate is introduced.
+
+Canonical identity: the chart manifest and its actual independently authored preparation review must carry the same stable jobId as the canonical handoff. Retain that identity across retries; do not create a date-based replacement job or edit another reviewer’s findings/verdict to fill a missing field.
+
+Owner preparation/continuation correction 2026-11-09: Every preflight prepare needs the worker's actual context-id and context-epoch, including its first reading. Keep those identities across ordinary handoff or artifact revisions; change epoch after real context loss. On a missing-identity error, supply the correct actual flags and retain --reuse when access and understanding are still current. Prepare a new current-task bundle with --reuse OLD_READING and the NEW handoff, rather than rereading unchanged rules or using the old task as the current handoff. Same actor/context/epoch can retain unchanged source hash

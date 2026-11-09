@@ -1,0 +1,157 @@
+{
+ "author": "competitor-orchestrator",
+ "canonicalBase": "https://www.themodernwallet.com",
+ "routes": [
+  {
+   "path": "/guides/what-is-a-fiduciary/",
+   "expectedUpdatedDate": "2026-11-09",
+   "requiredText": [
+    "What Is a Fiduciary",
+    "Our Takeaway"
+   ],
+   "forbiddenText": [
+    "we tested",
+    "We tested",
+    "our testing",
+    "In our internal",
+    "Tested and reviewed"
+   ],
+   "growthFile": "evidence/what-is-a-fiduciary/growth.json",
+   "evidenceFile": "evidence/what-is-a-fiduciary/evidence.json"
+  },
+  {
+   "path": "/guides/what-does-a-financial-advisor-do/",
+   "expectedUpdatedDate": "2026-11-09",
+   "requiredText": [
+    "What Does a Financial Advisor Do",
+    "Our Takeaway"
+   ],
+   "forbiddenText": [
+    "we tested",
+    "We tested",
+    "our testing",
+    "In our internal",
+    "Tested and reviewed"
+   ],
+   "growthFile": "evidence/what-does-a-financial-advisor-do/growth.json",
+   "evidenceFile": "evidence/what-does-a-financial-advisor-do/evidence.json"
+  },
+  {
+   "path": "/guides/questions-to-ask-a-financial-advisor/",
+   "expectedUpdatedDate": "2026-11-09",
+   "requiredText": [
+    "Questions To Ask a Financial Advisor",
+    "Our Takeaway"
+   ],
+   "forbiddenText": [
+    "we tested",
+    "We tested",
+    "our testing",
+    "In our internal",
+    "Tested and reviewed"
+   ],
+   "growthFile": "evidence/questions-to-ask-a-financial-advisor/growth.json",
+   "evidenceFile": "evidence/questions-to-ask-a-financial-advisor/evidence.json"
+  },
+  {
+   "path": "/guides/what-is-a-robo-advisor/",
+   "expectedUpdatedDate": "2026-11-09",
+   "requiredText": [
+    "What Is a Robo-Advisor",
+    "Our Takeaway"
+   ],
+   "forbiddenText": [
+    "we tested",
+    "We tested",
+    "our testing",
+    "In our internal",
+    "Tested and reviewed"
+   ],
+   "growthFile": "evidence/what-is-a-robo-advisor/growth.json",
+   "evidenceFile": "evidence/what-is-a-robo-advisor/evidence.json"
+  },
+  {
+   "path": "/guides/what-is-a-cfp/",
+   "expectedUpdatedDate": "2026-11-09",
+   "requiredText": [
+    "What Is a Certified Financial Planner (CFP)",
+    "Our Takeaway"
+   ],
+   "forbiddenText": [
+    "we tested",
+    "We tested",
+    "our testing",
+    "In our internal",
+    "Tested and reviewed"
+   ],
+   "growthFile": "evidence/what-is-a-cfp/growth.json",
+   "evidenceFile": "evidence/what-is-a-cfp/evidence.json"
+  },
+  {
+   "path": "/guides/how-to-make-a-financial-plan/",
+   "expectedUpdatedDate": "2026-11-09",
+   "requiredText": [
+    "How to Make a Financial Plan",
+    "Our Takeaway"
+   ],
+   "forbiddenText": [
+    "we tested",
+    "We tested",
+    "our testing",
+    "In our internal",
+    "Tested and reviewed"
+   ],
+   "growthFile": "evidence/how-to-make-a-financial-plan/growth.json",
+   "evidenceFile": "evidence/how-to-make-a-financial-plan/evidence.json"
+  },
+  {
+   "path": "/guides/how-to-choose-a-financial-advisor/",
+   "requiredText": [
+    "what a fiduciary is",
+    "what a CFP is and what it takes to earn one",
+    "questions to ask a financial advisor"
+   ],
+   "expectedUpdatedDate": "2026-11-09"
+  },
+  {
+   "path": "/guides/financial-advisor-worth-it/",
+   "requiredText": [
+    "what a financial advisor does",
+    "questions to ask a financial advisor",
+    "what a robo-advisor is"
+   ]
+  },
+  {
+   "path": "/compare/financial-advisor-vs-financial-planner/",
+   "requiredText": [
+    "what a fiduciary is",
+    "what a financial advisor does"
+   ]
+  },
+  {
+   "path": "/guides/what-is-a-cfa/",
+   "requiredText": [
+    "what a CFP is"
+   ]
+  },
+  {
+   "path": "/roundup/best-robo-advisors/",
+   "requiredText": [
+    "What a robo-advisor is"
+   ]
+  },
+  {
+   "path": "/guides/financial-planning-calculator/",
+   "requiredText": [
+    "how to make a financial plan"
+   ]
+  },
+  {
+   "path": "/guides/financial-planning-for-30-year-olds/",
+   "requiredText": [
+    "how to make a financial plan"
+   ]
+  }
+ ],
+ "workflowKind": "mindmap-pass"
+}

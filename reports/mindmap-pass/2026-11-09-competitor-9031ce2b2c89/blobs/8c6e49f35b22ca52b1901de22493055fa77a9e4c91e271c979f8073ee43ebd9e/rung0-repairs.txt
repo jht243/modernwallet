@@ -1,0 +1,3 @@
+what-does-a-financial-advisor-do [Advisor, Credit Counselor and Coach Roles Compared]: semicolons in table cells replaced with sentence breaks (Rung 0 mechanical)
+what-is-a-robo-advisor [Who a Robo-Advisor Does Not Fit]: semicolons in table cells replaced with sentence breaks (Rung 0 mechanical)
+what-is-a-cfp [The Four CFP Certification Requirements in Detail]: semicolons in table cells replaced with sentence breaks (Rung 0 mechanical)

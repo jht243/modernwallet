@@ -1,0 +1,109 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "competitor-orchestrator",
+ "route": "/guides/what-is-a-robo-advisor",
+ "readerQuestion": "What is a robo-advisor, and is one right for me? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 8/20 on-topic question-sweep completions: what is a robo advisor, are robo advisors good, is robo advisor worth it, why robo advisors are bad, which robo advisor is best; 12/20 are advisor-generic (what financial advisor do/fees) or brand-specific (Revolut, Vanguard, Schwab, SoFi, Fidelity)]",
+ "origin": "competitor-monitor-auto 2026-11-09 (frozen intake 9031ce2b2c89)",
+ "demandSource": "Google Autocomplete question sweep (estimate, NOT measured); SEMRUSH and DataForSEO keys unavailable, SERP unread",
+ "decisionGap": "Readers asking this question cannot get the primary-source answer and its conditions on this site; the nearest pages answer a neighboring decision (see coverage.txt).",
+ "finding": "A robo-adviser's recommendation is limited to what its questionnaire asks, the human contact varies from none to hybrid, and the burden to update personal information usually falls on the client; those three conditions decide fit more than any fee difference.",
+ "conditions": "US retail investors using SEC- or state-registered robo-advisers; the SEC bulletin dates from Feb. 23, 2017 and the glossary page is current; no fee figures asserted.",
+ "whatWouldChange": "A new SEC bulletin on robo-advisers or a rule change for automated advice.",
+ "basis": "reported",
+ "method": "Reported primary-source synthesis; no test or model.",
+ "whyNoQuantitativeAnalysis": "The reader decision is definitional or procedural and rests on regulator and credential-body statements; no defensible numerical input exists, so arithmetic would only restate source figures.",
+ "reasoning": "From the fetched primary pages listed in sources.md to the answer: A robo-adviser's recommendation is limited to what its questionnaire asks, the human contact varies from none to hybrid, and the burden to update personal information usually falls on the client; those three conditions decide fit more than any fee difference.",
+ "sourceArtifacts": [
+  {
+   "path": "evidence/what-is-a-robo-advisor/sources.md",
+   "sha256": "5f234790b299f5b541e66f851b2aec188b58f0dbaef17e597b6c23c7c0bb0bfb"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/key-facts.md",
+   "sha256": "8dc35e46b064987e06b19993407b8deb916fb19e448d7f66cd65ca2dc175a5c6"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/robo-glossary.txt",
+   "sha256": "bd4701a5d263890807e0e89e4ad7057c21e63576713c54b36b6d84c8cdd2ad68"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/robo-bulletin.txt",
+   "sha256": "ea2247a0e610fc9c900ecaabd28610061a6acccef298571cde8adeeeafba87fc"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/working-with-pro.txt",
+   "sha256": "b767b5d82cb88f2ca63fbd349848e8ee82781c95202f223afa93dffab08d4134"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/adviser-vs-broker.txt",
+   "sha256": "3097f09d12f1911c5b97d30624c147d0d440ded32a60177e0329058f2ae2a4d2"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/clayton-excerpt.txt",
+   "sha256": "49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3"
+  }
+ ],
+ "caseSelection": {
+  "path": "evidence/what-is-a-robo-advisor/cases.json",
+  "sha256": "64508518bf3c6ea969e72a850899fc1cb872b4f85aab93b3b31565b9cde739d4"
+ },
+ "caseDecisions": "Retrieved approved-case candidates (0, 1, 2, 3, 4, 5, 6, 7) for the exact reader question; all concern other publishers, clients or unrelated topics and match only generic words. This site has no named-client claims in _experience.md, so none is used; no client conversation claim is made.",
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "INV-robo-glossary",
+   "INV-robo-bulletin",
+   "INV-working",
+   "INV-advisers",
+   "SEC-clayton"
+  ],
+  "scopeAndLimits": "US retail investors using SEC- or state-registered robo-advisers; the SEC bulletin dates from Feb. 23, 2017 and the glossary page is current; no fee figures asserted.",
+  "publicMethod": "Sources linked in-line and in a Sources list; third-person attribution to the named body beside each finding.",
+  "placement": "Opening section and Takeaway name the regulator or credential body as the basis; no \"we tested\" or modeling claim."
+ },
+ "sources": [
+  {
+   "id": "INV-robo-glossary",
+   "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/robo-adviser",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "INV-robo-bulletin",
+   "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "INV-working",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "INV-advisers",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers",
+   "checked": "2026-11-09"
+  },
+  {
+   "id": "SEC-clayton",
+   "url": "https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty",
+   "checked": "2026-11-09"
+  }
+ ],
+ "counterexample": "A robo-adviser that offers a hybrid human adviser may give a person to talk to; investors with tax-lot or estate questions may need a human regardless.",
+ "findings": [
+  {
+   "claim": "A robo-adviser's recommendation is limited to what its questionnaire asks, the human contact varies from none to hybrid, and the burden to update personal information usually falls on the client; those three conditions decide fit more than any fee difference.",
+   "label": "reported",
+   "source": "INV-robo-glossary, INV-robo-bulletin, INV-working, INV-advisers, SEC-clayton"
+  }
+ ],
+ "exclusions": [
+  "No TESTED format: financial advice topics are outside _experience.md section G and no executed tests exist.",
+  "No client-conversation claims; no professional-review claim."
+ ],
+ "unknowns": [
+  "Search volume and live SERP/PAA (provider keys unavailable)"
+ ],
+ "selectedMedium": "text; ordered list where the answer is a list or sequence",
+ "testingLabel": "ordinary presentation (TESTED excluded; reason above)",
+ "takeawayPlan": "A robo-advisor fits an investor who is comfortable with a questionnaire, online disclosures and limited human contact, and does not fit someone who wants a person during market stress or whose finances a questionnaire cannot capture. Evidence basis: reported (SEC Investor.gov glossary and 2017 bulletin). Changes if the provider offers a hybrid human adviser. Next step: read the provider Form ADV Part 2 and compare the best robo-advisors list."
+}
