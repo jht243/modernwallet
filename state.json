@@ -19,6 +19,17 @@
       "repairs": [],
       "route": "/guides/what-is-a-robo-advisor/"
     },
+    "bed37d508389c2b2065cc85850c7a605c3b988220bc991c7f1df6c00c5145d03": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "competitor-9031ce2b2c89",
+      "previousJobs": [],
+      "repairs": [
+        "9faa0d4a292e712b2cc5dcd9ba344fca4f6af147d299abf7ec028b8e36ef740e"
+      ],
+      "route": "/guides/what-is-a-fiduciary"
+    },
     "c556a6e80cfbcd3849f23e20d8312e223a80f7c78b9d128c43b5248e9215a2ef": {
       "generated": [
         "full"
